@@ -1,0 +1,43 @@
+---
+title: "operator THIS"
+ms.custom: na
+ms.date: 10/03/2016
+ms.devlang: 
+  - C++
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - devlang-cpp
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: d795aa0e-6c01-49b7-8c64-8ab111fd82d3
+caps.latest.revision: 6
+manager: ghogen
+translation.priority.ht: 
+  - cs-cz
+  - de-de
+  - es-es
+  - fr-fr
+  - it-it
+  - ja-jp
+  - ko-kr
+  - pl-pl
+  - pt-br
+  - ru-ru
+  - tr-tr
+  - zh-cn
+  - zh-tw
+---
+# operator THIS
+Returns an operand of specified `type` whose offset and segment values are equal to the current location counter value.  
+  
+## Syntax  
+  
+```  
+  
+THIS type  
+```  
+  
+## See Also  
+ [Operators Reference](../VS_visualcpp/Operators-Reference.md)

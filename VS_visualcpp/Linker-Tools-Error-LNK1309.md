@@ -1,0 +1,41 @@
+---
+title: "Linker Tools Error LNK1309"
+ms.custom: na
+ms.date: 10/03/2016
+ms.devlang: 
+  - C++
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - devlang-cpp
+ms.tgt_pltfrm: na
+ms.topic: error-reference
+ms.assetid: 10146071-883f-4849-97d1-c7468f90efbb
+caps.latest.revision: 7
+manager: ghogen
+translation.priority.ht: 
+  - cs-cz
+  - de-de
+  - es-es
+  - fr-fr
+  - it-it
+  - ja-jp
+  - ko-kr
+  - pl-pl
+  - pt-br
+  - ru-ru
+  - tr-tr
+  - zh-cn
+  - zh-tw
+---
+# Linker Tools Error LNK1309
+type1 module detected; invalid with switch /CLRIMAGETYPE:type2  
+  
+ A CLR image type was requested with **/CLRIMAGETYPE** but the linker could not produce an image of that type because one or more modules were incompatible with that type.  
+  
+ For example, you will see LNK1309 if you specify **/CLRIMAGETYPE:safe** and you pass a module built with **/clr:pure**.  
+  
+ You will also see LNK1309 if you attempt to build a partially trusted CLR pure application using ptrustu[d].lib. For information on how to create a partially trusted application, see [How to: Create a Partially Trusted Application by Removing Dependency on the CRT Library DLL](../VS_visualcpp/How-to--Create-a-Partially-Trusted-Application-by-Removing-Dependency-on-the-CRT-Library-DLL.md).  
+  
+ For more information, see [/clr (Common Language Runtime Compilation)](../VS_visualcpp/-clr--Common-Language-Runtime-Compilation-.md) and [/CLRIMAGETYPE (Specify Type of CLR Image)](../VS_visualcpp/-CLRIMAGETYPE--Specify-Type-of-CLR-Image-.md).

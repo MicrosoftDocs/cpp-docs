@@ -1,0 +1,47 @@
+---
+title: "Calls with a Variable Number of Arguments"
+ms.custom: na
+ms.date: 10/03/2016
+ms.devlang: 
+  - C++
+  - C
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - devlang-cpp
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: 8808fb26-4822-42f5-aba3-ac64b54e151b
+caps.latest.revision: 7
+manager: ghogen
+translation.priority.ht: 
+  - cs-cz
+  - de-de
+  - es-es
+  - fr-fr
+  - it-it
+  - ja-jp
+  - ko-kr
+  - pl-pl
+  - pt-br
+  - ru-ru
+  - tr-tr
+  - zh-cn
+  - zh-tw
+---
+# Calls with a Variable Number of Arguments
+A partial parameter list can be terminated by the ellipsis notation, a comma followed by three periods (**, ...**), to indicate that there may be more arguments passed to the function, but no more information is given about them. Type checking is not performed on such arguments. At least one parameter must precede the ellipsis notation and the ellipsis notation must be the last token in the parameter list. Without the ellipsis notation, the behavior of a function is undefined if it receives parameters in addition to those declared in the parameter list.  
+  
+ To call a function with a variable number of arguments, simply specify any number of arguments in the function call. An example is the `printf` function from the C run-time library. The function call must include one argument for each type name declared in the parameter list or the list of argument types.  
+  
+ All the arguments specified in the function call are placed on the stack unless the `__fastcall` calling convention is specified. The number of parameters declared for the function determines how many of the arguments are taken from the stack and assigned to the parameters. You are responsible for retrieving any additional arguments from the stack and for determining how many arguments are present. The STDARG.H file contains ANSI-style macros for accessing arguments of functions which take a variable number of arguments. Also, the XENIX-style macros in VARARGS.H are still supported.  
+  
+ This sample declaration is for a function that calls a variable number of arguments:  
+  
+```  
+int average( int first, ...);  
+```  
+  
+## See Also  
+ [Function Calls](../VS_visualcpp/Function-Calls.md)

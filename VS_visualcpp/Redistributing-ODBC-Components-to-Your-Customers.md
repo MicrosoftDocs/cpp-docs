@@ -1,0 +1,51 @@
+---
+title: "Redistributing ODBC Components to Your Customers"
+ms.custom: na
+ms.date: 10/03/2016
+ms.devlang: 
+  - C++
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - devlang-cpp
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: 17b065b4-a307-4b89-99ac-d05831cfab87
+caps.latest.revision: 7
+manager: ghogen
+translation.priority.ht: 
+  - cs-cz
+  - de-de
+  - es-es
+  - fr-fr
+  - it-it
+  - ja-jp
+  - ko-kr
+  - pl-pl
+  - pt-br
+  - ru-ru
+  - tr-tr
+  - zh-cn
+  - zh-tw
+---
+# Redistributing ODBC Components to Your Customers
+If you incorporate the functionality of the ODBC Administrator programs into your application, you must also distribute to your users the files that run these programs. These ODBC files reside in the \OS\System directory of the Visual C++ CD-ROM. The Redistrb.wri file and the license agreement in the same directory contain a list of ODBC files that you can redistribute.  
+  
+ Consult the documentation for any ODBC drivers you plan to ship. You need to determine which DLLs and other files to ship.  
+  
+ You should also read [Installing Database Support](../VS_visualcpp/Installing-Database-Support--MFC-ATL-.md) for information about ODBC components and drivers and read [Redistributing Controls](../VS_visualcpp/Redistributing-Controls.md), which explains how to redistribute ActiveX controls.  
+  
+ In addition, you need to include one other file in most cases. The Odbccr32.dll is the ODBC Cursor Library. This library gives Level 1 drivers the capability of forward and backward scrolling. It also provides the capability of supporting snapshots. For more information about the ODBC Cursor Library, see [ODBC: The ODBC Cursor Library](../VS_visualcpp/ODBC--The-ODBC-Cursor-Library.md).  
+  
+ The following topics provide more information about using ODBC with the database classes:  
+  
+-   [ODBC: The ODBC Cursor Library](../VS_visualcpp/ODBC--The-ODBC-Cursor-Library.md)  
+  
+-   [ODBC: Configuring an ODBC Data Source](../VS_visualcpp/ODBC--Configuring-an-ODBC-Data-Source.md)  
+  
+-   [ODBC: Calling ODBC API Functions Directly](../VS_visualcpp/ODBC--Calling-ODBC-API-Functions-Directly.md)  
+  
+## See Also  
+ [ODBC Basics](../VS_visualcpp/ODBC-Basics.md)   
+ [ODBC Administrator](../VS_visualcpp/ODBC-Administrator.md)

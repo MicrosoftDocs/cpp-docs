@@ -1,0 +1,53 @@
+---
+title: "Compiler Warning (level 1 and level 4) C4949"
+ms.custom: na
+ms.date: 10/03/2016
+ms.devlang: 
+  - C++
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - devlang-cpp
+ms.tgt_pltfrm: na
+ms.topic: error-reference
+ms.assetid: 34f45a05-c115-49cb-9f67-0bd4f0735d9b
+caps.latest.revision: 8
+manager: ghogen
+translation.priority.ht: 
+  - cs-cz
+  - de-de
+  - es-es
+  - fr-fr
+  - it-it
+  - ja-jp
+  - ko-kr
+  - pl-pl
+  - pt-br
+  - ru-ru
+  - tr-tr
+  - zh-cn
+  - zh-tw
+---
+# Compiler Warning (level 1 and level 4) C4949
+pragmas 'managed' and 'unmanaged' are meaningful only when compiled with '/clr[:option]'  
+  
+ The compiler ignores the [managed](../VS_visualcpp/managed--unmanaged.md) and unmanaged pragmas if the source code is not compiled with [/clr](../VS_visualcpp/-clr--Common-Language-Runtime-Compilation-.md). This warning is informational.  
+  
+ The following sample generates C4949:  
+  
+```  
+// C4949.cpp  
+// compile with: /LD /W1  
+#pragma managed   // C4949  
+```  
+  
+ When **#pragma unmanaged** is used without **/clr**, C4949 is a level 4 warning.  
+  
+ The following sample generates C4949:  
+  
+```  
+// C4949b.cpp  
+// compile with: /LD /W4  
+#pragma unmanaged   // C4949  
+```

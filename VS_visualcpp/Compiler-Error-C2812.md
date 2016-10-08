@@ -1,0 +1,44 @@
+---
+title: "Compiler Error C2812"
+ms.custom: na
+ms.date: 10/03/2016
+ms.devlang: 
+  - C++
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - devlang-cpp
+ms.tgt_pltfrm: na
+ms.topic: error-reference
+ms.assetid: 22aadb8c-7232-489d-a3ad-60662dda30a8
+caps.latest.revision: 6
+manager: ghogen
+translation.priority.ht: 
+  - cs-cz
+  - de-de
+  - es-es
+  - fr-fr
+  - it-it
+  - ja-jp
+  - ko-kr
+  - pl-pl
+  - pt-br
+  - ru-ru
+  - tr-tr
+  - zh-cn
+  - zh-tw
+---
+# Compiler Error C2812
+\#import is not supported with /clr:pure and /clr:safe  
+  
+ [#import Directive](../VS_visualcpp/#import-Directive--C---.md) is not supported with **/clr:pure** and **/clr:safe** because `#import` requires the use of native compiler support libraries.  
+  
+## Example  
+ The following sample generates C2812.  
+  
+```  
+// C2812.cpp  
+// compile with: /clr:pure /c  
+#import "importlib.tlb"   // C2812  
+```
