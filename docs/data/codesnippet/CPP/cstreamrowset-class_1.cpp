@@ -1,0 +1,1 @@
+   CCommand< CAccessor<CCustomerAccessor>, CStreamRowset > myCmd;

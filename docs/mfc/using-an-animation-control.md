@@ -1,0 +1,54 @@
+---
+title: "Using an Animation Control"
+ms.custom: na
+ms.date: "10/14/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "controls [MFC], animation"
+  - "CAnimateCtrl class, animation controls"
+  - "animation controls [C++]"
+ms.assetid: a009a464-e12d-4112-bf52-04a09b28dd88
+caps.latest.revision: 8
+ms.author: "mblome"
+manager: "ghogen"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Using an Animation Control
+Typical usage of an animation control follows the pattern below:  
+  
+-   The control is created. If the control is specified in a dialog box template, creation is automatic when the dialog box is created. (You should have a [CAnimateCtrl](../mfcref/canimatectrl-class.md) member in your dialog class that corresponds to the animation control.) Alternatively, you can use the [Create](../Topic/CAnimateCtrl::Create.md) member function to create the control as a child window of any window.  
+  
+-   Load an AVI clip into the animation control by calling the [Open](../Topic/CAnimateCtrl::Open.md) member function. If your animation control is in a dialog box, a good place to do this is in the dialog class's [OnInitDialog](../Topic/CDialog::OnInitDialog.md) function.  
+  
+-   Play the clip by calling the [Play](../Topic/CAnimateCtrl::Play.md) member function. If your animation control is in a dialog box, a good place to do this is in the dialog class's **OnInitDialog** function. Calling **Play** is not necessary if the animation control has the `ACS_AUTOPLAY` style set.  
+  
+-   If you want to display portions of the clip or play it frame by frame, use the `Seek` member function. To stop a clip that is playing, use the `Stop` member function.  
+  
+-   If you are not going to destroy the control right away, remove the clip from memory by calling the **Close** member function.  
+  
+-   If the animation control is in a dialog box, it and the `CAnimateCtrl` object will be destroyed automatically. If not, you need to ensure that both the control and the `CAnimateCtrl` object are properly destroyed. Destroying the control automatically closes the AVI clip.  
+  
+## See Also  
+ [Using CAnimateCtrl](../mfc/using-canimatectrl.md)   
+ [Controls](../mfc/controls--mfc-.md)

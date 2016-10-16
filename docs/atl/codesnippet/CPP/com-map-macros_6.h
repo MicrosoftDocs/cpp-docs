@@ -1,0 +1,3 @@
+BEGIN_COM_MAP(COuter3)
+   COM_INTERFACE_ENTRY_AUTOAGGREGATE(__uuidof(IAutoAgg), m_punkAutoAgg, CLSID_CAutoAgg)
+END_COM_MAP()

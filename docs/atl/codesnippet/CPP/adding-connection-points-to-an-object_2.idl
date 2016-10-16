@@ -1,0 +1,5 @@
+   coclass Buddy
+   {
+      [default] interface IBuddy;
+      [default,source] dispinterface DBuddyEvents;
+   };

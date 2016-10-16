@@ -1,0 +1,1 @@
+            CFileException::ThrowOsError(ERROR_ACCESS_DENIED);  // "access denied"         

@@ -1,0 +1,1 @@
+      m_ListCtrl.SetExtendedStyle(LVS_EX_TRACKSELECT | LVS_EX_ONECLICKACTIVATE);

@@ -1,0 +1,4 @@
+void CMainFrame::OnWindowManager()
+{
+	ShowWindowsDialog();
+}

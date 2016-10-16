@@ -1,0 +1,1 @@
+   CString strName = _T("Name");   

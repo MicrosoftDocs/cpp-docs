@@ -1,0 +1,54 @@
+---
+title: "cannot send error report automatically"
+ms.custom: na
+ms.date: "10/13/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "bc2027"
+  - "vbc2027"
+helpviewer_keywords: 
+  - "BC2027"
+ms.assetid: 84ba8580-2234-46d1-b4a5-94b03f64c0c7
+caps.latest.revision: 4
+ms.author: "billchi"
+manager: "douge"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# cannot send error report automatically
+cannot send error report automatically. Please visit 'http://go.microsoft.com/fwlink/?LinkId=42039' to configure send error report settings.  
+  
+ You specified the `/errorreport:send` compiler option, but the computer is not configured to send error reports automatically. No information will be sent about internal errors in the Visual Basic compiler.  
+  
+ **Error ID:** BC2027  
+  
+### To correct this error  
+  
+-   Remove the `/errorreport:send` compiler option, or replace it with `/errorreport:queue`, `/errorreport:prompt`, or `/errorreport:none`.  
+  
+     — or —  
+  
+-   Enable automatic error reporting by following the instructions at [http://go.microsoft.com/fwlink/?LinkId=42039](http://go.microsoft.com/fwlink/?LinkId=42039).  
+  
+## See Also  
+ [/errorreport](../Topic/-errorreport.md)   
+ [http://go.microsoft.com/fwlink/?LinkId=42039](http://go.microsoft.com/fwlink/?LinkId=42039)

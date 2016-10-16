@@ -1,0 +1,1 @@
+   AtlAxCreateControlEx(lpszName, hWnd, pStream, NULL, NULL, GUID_NULL, NULL);

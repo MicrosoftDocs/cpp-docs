@@ -1,0 +1,1 @@
+	CMFCDesktopAlertWndButton	m_btnFlag;

@@ -1,0 +1,1 @@
+	CMFCTabCtrl	m_wndTabs;
