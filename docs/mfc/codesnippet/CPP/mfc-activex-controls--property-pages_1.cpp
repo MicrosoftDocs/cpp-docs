@@ -1,0 +1,1 @@
+   DDP_Text(pDX, IDC_CAPTION, m_caption, _T("Caption"));

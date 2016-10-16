@@ -1,0 +1,1 @@
+#define _ATL_STATIC_REGISTRY

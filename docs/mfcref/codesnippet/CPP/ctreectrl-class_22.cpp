@@ -1,0 +1,1 @@
+   COLORREF cr = m_TreeCtrl.GetLineColor();

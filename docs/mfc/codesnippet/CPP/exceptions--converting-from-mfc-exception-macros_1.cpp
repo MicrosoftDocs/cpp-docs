@@ -1,0 +1,1 @@
+   CATCH(CException, e)

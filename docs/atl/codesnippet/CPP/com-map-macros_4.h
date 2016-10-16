@@ -1,0 +1,3 @@
+BEGIN_COM_MAP(COuter1)
+   COM_INTERFACE_ENTRY_AGGREGATE(__uuidof(IAgg), m_punkAgg)
+END_COM_MAP()

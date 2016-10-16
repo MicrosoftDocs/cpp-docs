@@ -1,0 +1,1 @@
+BEGIN_PROPPAGEIDS(CMyAxPicCtrl, 2)

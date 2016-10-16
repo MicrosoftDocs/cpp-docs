@@ -1,0 +1,1 @@
+	CMFCColorButton	m_wndTextColor;
