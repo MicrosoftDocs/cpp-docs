@@ -1,0 +1,1 @@
+   m_myImageList.Create(32, 32, ILC_COLOR8, 0, 4);

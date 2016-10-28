@@ -1,0 +1,1 @@
+      CString csPane0TipText = m_wndSBC.GetTipText(0);

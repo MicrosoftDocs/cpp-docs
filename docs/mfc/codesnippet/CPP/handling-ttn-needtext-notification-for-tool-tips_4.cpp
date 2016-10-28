@@ -1,0 +1,1 @@
+   EnableToolTips(TRUE);

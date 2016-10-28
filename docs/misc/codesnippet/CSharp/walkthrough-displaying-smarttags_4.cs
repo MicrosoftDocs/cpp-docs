@@ -1,0 +1,1 @@
+internal class TestSmartTagger : ITagger<TestSmartTag>, IDisposable

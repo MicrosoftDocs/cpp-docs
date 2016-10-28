@@ -1,0 +1,11 @@
+<ui:DialogWindow x:Class="Microsoft.VSModalDialog.MyModalDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.11.0"
+    Title="MyModalDialog" Height="100" Width="320">
+    <Grid Height="60" Width="300">
+        <Label Content="Would you like to view this dialog with Help enabled?" Height="25" Name="label1" VerticalAlignment="Top" />
+        <Button Content="Yes" Name="btnYes" Click="btnYes_Click" Height="25" Width="75" HorizontalAlignment="Left" Margin="0,30,0,0" />
+        <Button Content="No" Name="btnNo" Click="btnNo_Click" Height="25" Width="75" HorizontalAlignment="Left" Margin="80,30,0,0" />
+    </Grid>
+</ui:DialogWindow>

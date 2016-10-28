@@ -1,0 +1,7 @@
+        [eventadd]
+        HRESULT PrimeNumberFound(
+            [in] PrimeNumberEvent* eventHandler, 
+            [out, retval] EventRegistrationToken* eventCookie);
+        [eventremove] 
+        HRESULT PrimeNumberFound(
+            [in] EventRegistrationToken eventCookie);

@@ -1,0 +1,1 @@
+	CMFCReBar				m_wndReBar;
