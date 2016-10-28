@@ -1,0 +1,50 @@
+---
+title: "Compiler Warning (level 4) C4985"
+ms.custom: na
+ms.date: "10/14/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C4985"
+ms.assetid: 832f001c-afe7-403d-a8b4-02334724c79e
+caps.latest.revision: 6
+ms.author: "corob"
+manager: "douge"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Warning (level 4) C4985
+'symbol name': attributes not present on previous declaration.  
+  
+ The Microsoft source code annotation language (SAL) annotations on the current method declaration or definition differ from the annotations on an earlier declaration. The same SAL annotations must be used in the definition and declarations of a method.  
+  
+ The SAL provides a set of annotations that you can use to describe how a function uses its parameters, the assumptions it makes about them, and the guarantees it makes on finishing. The annotations are defined in the sal.h header file.  
+  
+ Notice that the SAL macros will not expand unless the project has the [/analyze](../buildref/-analyze--code-analysis-.md) flag specified. When you specify **/analyze**, the compiler can throw C4985, even if no warnings or errors appeared without **/analyze**.  
+  
+### To correct this error  
+  
+1.  Use the same SAL annotations on the definition of a method and all its declarations.  
+  
+## See Also  
+ [SAL Annotations](../crt/sal-annotations.md)
