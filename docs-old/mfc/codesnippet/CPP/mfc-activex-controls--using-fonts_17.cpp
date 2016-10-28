@@ -1,0 +1,1 @@
+   PROPPAGEID(CLSID_CFontPropPage)

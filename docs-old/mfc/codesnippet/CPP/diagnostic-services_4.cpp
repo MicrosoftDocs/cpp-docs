@@ -1,0 +1,1 @@
+   ASSERT(pDocument->IsKindOf(RUNTIME_CLASS(CMyDoc)));

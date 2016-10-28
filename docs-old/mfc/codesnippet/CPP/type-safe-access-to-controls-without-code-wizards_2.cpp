@@ -1,0 +1,1 @@
+      GetMyCheckbox()->SetCheck(BST_CHECKED);

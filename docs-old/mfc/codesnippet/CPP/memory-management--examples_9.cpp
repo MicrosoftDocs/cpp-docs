@@ -1,0 +1,1 @@
+         CMyClass* myClass = new CMyClass("Joe Smith");

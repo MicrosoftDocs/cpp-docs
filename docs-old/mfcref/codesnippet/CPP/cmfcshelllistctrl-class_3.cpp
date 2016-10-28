@@ -1,0 +1,1 @@
+	m_wndList.DisplayParentFolder ();

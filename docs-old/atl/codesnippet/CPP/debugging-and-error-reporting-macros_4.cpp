@@ -1,0 +1,1 @@
+   ATLTRACE2(MY_CATEGORY, 2, _T("a message in a custom category"));

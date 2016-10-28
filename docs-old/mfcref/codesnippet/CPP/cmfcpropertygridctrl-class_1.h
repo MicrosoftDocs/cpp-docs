@@ -1,0 +1,1 @@
+	CMFCPropertyGridCtrl m_wndPropList;

@@ -1,0 +1,113 @@
+---
+title: "hash_map::load_factor (STL-CLR)"
+ms.custom: na
+ms.date: "10/14/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "cliext::hash_map::load_factor"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "load_factor member [STL/CLR]"
+ms.assetid: e3a29b1f-ea20-4153-87b0-3935044d4d7a
+caps.latest.revision: 6
+ms.author: "mblome"
+manager: "ghogen"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# hash_map::load_factor (STL/CLR)
+Counts the average elements per bucket.  
+  
+## Syntax  
+  
+```  
+float load_factor();  
+```  
+  
+## Remarks  
+ The member function returns `(float)`[hash_map::size (STL/CLR)](../cli/hash_map--size--stl-clr-.md)`() /` [hash_map::bucket_count (STL/CLR)](../cli/hash_map--bucket_count--stl-clr-.md)`()`. You use it to determine the average bucket size.  
+  
+## Example  
+  
+```  
+// cliext_hash_map_load_factor.cpp   
+// compile with: /clr   
+#include <cliext/hash_map>   
+  
+typedef cliext::hash_map<wchar_t, int> Myhash_map;   
+int main()   
+    {   
+    Myhash_map c1 = gcnew Myhash_map;   
+    c1.insert(Myhash_map::make_value(L'a', 1));   
+    c1.insert(Myhash_map::make_value(L'b', 2));   
+    c1.insert(Myhash_map::make_value(L'c', 3));   
+  
+// display contents " [a 1] [b 2] [c 3]"   
+    for each (Myhash_map::value_type elem in c1)   
+        System::Console::Write(" [{0} {1}]", elem->first, elem->second);   
+    System::Console::WriteLine();   
+  
+// inspect current parameters   
+    System::Console::WriteLine("bucket_count() = {0}", c1.bucket_count());   
+    System::Console::WriteLine("load_factor() = {0}", c1.load_factor());   
+    System::Console::WriteLine("max_load_factor() = {0}",   
+        c1.max_load_factor());   
+    System::Console::WriteLine();   
+  
+// change max_load_factor and redisplay   
+    c1.max_load_factor(0.25f);   
+    System::Console::WriteLine("bucket_count() = {0}", c1.bucket_count());   
+    System::Console::WriteLine("load_factor() = {0}", c1.load_factor());   
+    System::Console::WriteLine("max_load_factor() = {0}",   
+        c1.max_load_factor());   
+    System::Console::WriteLine();   
+  
+// rehash and redisplay   
+    c1.rehash(100);   
+    System::Console::WriteLine("bucket_count() = {0}", c1.bucket_count());   
+    System::Console::WriteLine("load_factor() = {0}", c1.load_factor());   
+    System::Console::WriteLine("max_load_factor() = {0}",   
+        c1.max_load_factor());   
+    return (0);   
+    }  
+  
+```  
+  
+  **[a 1] [b 2] [c 3]**  
+**bucket_count() = 16**  
+**load_factor() = 0.1875**  
+**max_load_factor() = 4**  
+**bucket_count() = 16**  
+**load_factor() = 0.1875**  
+**max_load_factor() = 0.25**  
+**bucket_count() = 128**  
+**load_factor() = 0.0234375**  
+**max_load_factor() = 0.25**   
+## Requirements  
+ **Header:** \<cliext/hash_map>  
+  
+ **Namespace:** cliext  
+  
+## See Also  
+ [hash_map (STL/CLR)](../cli/hash_map--stl-clr-.md)   
+ [hash_map::bucket_count (STL/CLR)](../cli/hash_map--bucket_count--stl-clr-.md)   
+ [hash_map::max_load_factor (STL/CLR)](../cli/hash_map--max_load_factor--stl-clr-.md)

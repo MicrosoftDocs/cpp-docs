@@ -1,0 +1,54 @@
+---
+title: "&#39;#ElseIf&#39;, &#39;#Else&#39;, or &#39;#End If&#39; must be preceded by a matching &#39;#If&#39;"
+ms.custom: na
+ms.date: "10/13/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30013"
+  - "bc30013"
+helpviewer_keywords: 
+  - "BC30013"
+ms.assetid: 8fe2d23c-8b8f-46d8-90f2-7f8857ea43bb
+caps.latest.revision: 11
+ms.author: "billchi"
+manager: "douge"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# &#39;#ElseIf&#39;, &#39;#Else&#39;, or &#39;#End If&#39; must be preceded by a matching &#39;#If&#39;
+`#ElseIf`, `#Else`, and `#End If` are conditional compilation directives. The `#ElseIf`, `#Else`, or `#End If` is not preceded by a corresponding `#If` directive.  
+  
+ **Error ID:** BC30013  
+  
+### To correct this error  
+  
+1.  Check that the intended `#If` is not separated from the clause in question by an intervening conditional compilation block or an incorrectly placed `#End If`.  
+  
+    > [!NOTE]
+    >  Only one `#Else` is permitted in each `#If` block, so two successive `#Else` directives cause this error.  
+  
+2.  Check that the leading `#` is not missing from an earlier `#If` directive.  
+  
+3.  If everything else is in order, add an `#If` directive to the beginning of the conditional compilation block.  
+  
+## See Also  
+ [#If...Then...#Else Directives](../Topic/%23If...Then...%23Else%20Directives.md)

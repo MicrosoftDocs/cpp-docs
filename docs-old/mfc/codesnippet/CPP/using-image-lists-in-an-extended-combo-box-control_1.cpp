@@ -1,0 +1,1 @@
+      m_ComboImageList.Create(16, 16, ILC_COLOR, 2, 2);
