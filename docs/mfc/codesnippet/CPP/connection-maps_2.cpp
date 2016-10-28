@@ -1,3 +1,0 @@
-BEGIN_CONNECTION_MAP(CMyClass, CCmdTarget)
-    CONNECTION_PART(CMyClass, IID_ISampleSink, SampleConnPt)
-END_CONNECTION_MAP()

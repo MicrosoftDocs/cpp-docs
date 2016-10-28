@@ -1,1 +1,0 @@
-   int iMargin = m_myHeaderCtrl.GetBitmapMargin();

@@ -1,1 +1,0 @@
-   CWin32Heap MyHeap(HEAP_NO_SERIALIZE, SomeInitialSize);   

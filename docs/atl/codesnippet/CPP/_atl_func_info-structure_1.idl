@@ -1,1 +1,0 @@
-   HRESULT SomeFunction([in] long Number, [in] BSTR String);

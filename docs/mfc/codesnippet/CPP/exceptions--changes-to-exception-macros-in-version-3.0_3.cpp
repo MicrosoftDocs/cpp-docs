@@ -1,1 +1,0 @@
-      e->IsKindOf(RUNTIME_CLASS(CException));

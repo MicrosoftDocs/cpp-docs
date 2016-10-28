@@ -1,1 +1,0 @@
-   CListCtrl& listCtrl = GetListCtrl();

@@ -1,1 +1,0 @@
-         CPerson* thePerson = myArray[i];

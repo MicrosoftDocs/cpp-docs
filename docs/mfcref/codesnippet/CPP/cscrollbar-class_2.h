@@ -1,1 +1,0 @@
-   CScrollBar m_ScrollBarHorz;
