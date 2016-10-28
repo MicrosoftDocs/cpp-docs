@@ -1,0 +1,44 @@
+---
+title: "Troubleshooting Exceptions: System.ComponentModel.Win32Exception"
+ms.custom: na
+ms.date: "10/13/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Win32Exception exception"
+  - "System.ComponentModel.Win32Exception exception"
+ms.assetid: 6d5facbd-34f0-4f04-a7df-2bf62d676529
+caps.latest.revision: 4
+ms.author: "mblome"
+manager: "douge"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Troubleshooting Exceptions: System.ComponentModel.Win32Exception
+The exception that is thrown for a Win32 error code.  
+  
+## Remarks  
+ Win32 error codes are translated from their numeric representations into a system message when they are displayed. Use the \<xref:System.ComponentModel.Win32Exception.NativeErrorCode*> property to access the numeric representation of the error code.  
+  
+## See Also  
+ \<xref:System.ComponentModel.Win32Exception>   
+ [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
+ [Where Can I Look Up Win32 Error Codes?](../Topic/Where%20Can%20I%20Look%20Up%20Win32%20Error%20Codes?.md)

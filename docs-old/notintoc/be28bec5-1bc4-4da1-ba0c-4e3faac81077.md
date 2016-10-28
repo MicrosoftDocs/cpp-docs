@@ -1,0 +1,48 @@
+---
+title: "&#39;GoTo &lt;labelname&gt;&#39; is not valid because &#39;&lt;labelname&gt;&#39; is inside a &#39;For&#39; or &#39;For Each&#39; statement that does not contain this statement"
+ms.custom: na
+ms.date: "10/13/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30757"
+  - "bc30757"
+helpviewer_keywords: 
+  - "BC30757"
+ms.assetid: be28bec5-1bc4-4da1-ba0c-4e3faac81077
+caps.latest.revision: 9
+ms.author: "billchi"
+manager: "douge"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# &#39;GoTo &lt;labelname&gt;&#39; is not valid because &#39;&lt;labelname&gt;&#39; is inside a &#39;For&#39; or &#39;For Each&#39; statement that does not contain this statement
+`GoTo` statements are restricted to jumps within the current block of code.  
+  
+ **Error ID:** BC30757  
+  
+### To correct this error  
+  
+-   Restructure your code so that the `GoTo` statement and the label are both inside the `For` block.  
+  
+## See Also  
+ [GoTo Statement](../Topic/GoTo%20Statement.md)   
+ [For (Visual Basic)](assetId:///c470a263-9b49-4308-8fd6-8592b84a7980)

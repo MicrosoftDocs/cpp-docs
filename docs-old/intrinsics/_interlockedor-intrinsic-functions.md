@@ -1,0 +1,245 @@
+---
+title: "_InterlockedOr Intrinsic Functions"
+ms.custom: na
+ms.date: "10/14/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "_InterlockedOr8_nf"
+  - "_InterlockedOr_HLEAcquire"
+  - "_InterlockedOr16_nf"
+  - "_InterlockedOr64"
+  - "_InterlockedOr8_np"
+  - "_InterlockedOr64_cpp"
+  - "_InterlockedOr8_acq"
+  - "_InterlockedOr_nf"
+  - "_InterlockedOr64_acq"
+  - "_InterlockedOr_np"
+  - "_InterlockedOr8"
+  - "_InterlockedOr"
+  - "_InterlockedOr64_np"
+  - "_InterlockedOr_acq"
+  - "_InterlockedOr64_HLERelease"
+  - "_InterlockedOr16_np"
+  - "_InterlockedOr_cpp"
+  - "_InterlockedOr8_rel"
+  - "_InterlockedOr64_rel"
+  - "_InterlockedOr16_acq"
+  - "_InterlockedOr_rel"
+  - "_InterlockedOr16_rel"
+  - "_InterlockedOr_HLERelease"
+  - "_InterlockedOr64_HLEAcquire"
+  - "_InterlockedOr16"
+  - "_InterlockedOr64_nf"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "_InterlockedOr_acq intrinsic"
+  - "InterlockedOr64 intrinsic"
+  - "_InterlockedOr_nf intrinsic"
+  - "_InterlockedOr intrinsic"
+  - "_InterlockedOr64_HLERelease intrinsic"
+  - "_InterlockedOr8_rel intrinsic"
+  - "_InterlockedOr8_np intrinsic"
+  - "_InterlockedOr64_nf intrinsic"
+  - "_InterlockedOr_HLERelease intrinsic"
+  - "_InterlockedOr16_np intrinsic"
+  - "InterlockedOr intrinsic"
+  - "_InterlockedOr8_nf intrinsic"
+  - "_InterlockedOr16_nf intrinsic"
+  - "_InterlockedOr8_acq intrinsic"
+  - "_InterlockedOr64 intrinsic"
+  - "_InterlockedOr16 intrinsic"
+  - "_InterlockedOr64_acq intrinsic"
+  - "_InterlockedOr64_HLEAcquire intrinsic"
+  - "_InterlockedOr_np intrinsic"
+  - "_InterlockedOr64_rel intrinsic"
+  - "_InterlockedOr64_np intrinsic"
+  - "_InterlockedOr_rel intrinsic"
+  - "_InterlockedOr8 intrinsic"
+  - "_InterlockedOr16_acq intrinsic"
+  - "_InterlockedOr16_rel intrinsic"
+  - "_InterlockedOr_HLEAcquire intrinsic"
+ms.assetid: 5f265240-7af8-44b7-b952-19f3a9c56186
+caps.latest.revision: 17
+ms.author: "corob"
+manager: "ghogen"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# _InterlockedOr Intrinsic Functions
+**Microsoft Specific**  
+  
+ Perform an atomic bitwise or operation on a variable shared by multiple threads.  
+  
+## Syntax  
+  
+```  
+long _InterlockedOr(  
+   long volatile * Value,  
+   long Mask  
+);  
+long _InterlockedOr_acq(  
+   long volatile * Value,  
+   long Mask  
+);  
+long _InterlockedOr_HLEAcquire(  
+   long volatile * Value,  
+   long Mask  
+);  
+long _InterlockedOr_HLERelease(  
+   long volatile * Value,  
+   long Mask  
+);  
+long _InterlockedOr_nf(  
+   long volatile * Value,  
+   long Mask  
+);  
+long _InterlockedOr_np(  
+   long volatile * Value,  
+   long Mask  
+);  
+long _InterlockedOr_rel(  
+   long volatile * Value,  
+   long Mask  
+);  
+char _InterlockedOr8(  
+   char volatile * Value,  
+   long Mask  
+);  
+char _InterlockedOr8_acq(  
+   char volatile * Value,  
+   char Mask  
+);  
+char _InterlockedOr8_nf(  
+   char volatile * Value,  
+   char Mask  
+);  
+char _InterlockedOr8_np(  
+   char volatile * Value,  
+   char Mask  
+);  
+char _InterlockedOr8_rel(  
+   char volatile * Value,  
+   char Mask  
+);  
+short _InterlockedOr16(  
+   short volatile * Value,  
+   short Mask  
+);  
+short _InterlockedOr16_acq(  
+   short volatile * Value,  
+   short Mask  
+);  
+short _InterlockedOr16_nf(  
+   short volatile * Value,  
+   short Mask  
+);  
+short _InterlockedOr16_np(  
+   short volatile * Value,  
+   short Mask  
+);  
+short _InterlockedOr16_rel(  
+   short volatile * Value,  
+   short Mask  
+);  
+__int64 _InterlockedOr64(  
+   __int64 volatile * Value,  
+   __int64 Mask  
+);  
+__int64 _InterlockedOr64_acq(  
+   __int64 volatile * Value,  
+   __int64 Mask  
+);   
+__int64 _InterlockedOr64_HLEAcquire(  
+   __int64 volatile * Value,  
+   __int64 Mask  
+);  
+__int64 _InterlockedOr64_HLERelease(  
+   __int64 volatile * Value,  
+   __int64 Mask  
+);   
+__int64 _InterlockedOr64_nf(  
+   __int64 volatile * Value,  
+   __int64 Mask  
+);  
+__int64 _InterlockedOr64_np(  
+   __int64 volatile * Value,  
+   __int64 Mask  
+);  
+__int64 _InterlockedOr64_rel(  
+   __int64 volatile * Value,  
+   __int64 Mask  
+);  
+```  
+  
+#### Parameters  
+ [in, out] `Value`  
+ A pointer to the first operand, to be replaced by the result.  
+  
+ [in] `Mask`  
+ The second operand.  
+  
+## Return Value  
+ The original value pointed to by the first parameter.  
+  
+## Requirements  
+  
+|Intrinsic|Architecture|Header|  
+|---------------|------------------|------------|  
+|`_InterlockedOr`, `_InterlockedOr8`, `_InterlockedOr16`, `_InterlockedOr64`|x86, ARM, [!INCLUDE[vcprx64](../build/includes/vcprx64_md.md)]|\<intrin.h>|  
+|`_InterlockedOr_acq`, `_InterlockedOr_nf`, `_InterlockedOr_rel`, `_InterlockedOr8_acq`, `_InterlockedOr8_nf`, `_InterlockedOr8_rel`, `_InterlockedOr16_acq`, `_InterlockedOr16_nf`, `_InterlockedOr16_rel`, `_InterlockedOr64_acq`, `_InterlockedOr64_nf`, `_InterlockedOr64_rel`|ARM|\<intrin.h>|  
+|`_InterlockedOr_np`, `_InterlockedOr8_np`, `_InterlockedOr16_np`, `_InterlockedOr64_np`|[!INCLUDE[vcprx64](../build/includes/vcprx64_md.md)]|\<intrin.h>|  
+|`_InterlockedOr_HLEAcquire`, `_InterlockedOr_HLERelease`, `_InterlockedOr64_HLEAcquire`, `_InterlockedOr64_HLERelease`|x86, [!INCLUDE[vcprx64](../build/includes/vcprx64_md.md)]|\<immintrin.h>|  
+  
+## Remarks  
+ The number in the name of each function specifies the bit size of the arguments.  
+  
+ On ARM platforms, use the intrinsics with `_acq` and `_rel` suffixes if you need acquire and release semantics, such as at the beginning and end of a critical section. The ARM intrinsics with an `_nf` ("no fence") suffix do not act as a memory barrier.  
+  
+ The intrinsics with an `_np` ("no prefetch") suffix prevent a possible prefetch operation from being inserted by the compiler.  
+  
+ On Intel platforms that support Hardware Lock Elision (HLE) instructions, the intrinsics with `_HLEAcquire` and `_HLERelease` suffixes include a hint to the processor that can accelerate performance by eliminating a lock write step in hardware. If these intrinsics are called on platforms that do not support HLE, the hint is ignored.  
+  
+## Example  
+  
+```  
+// _InterlockedOr.cpp  
+#include <stdio.h>  
+#include <intrin.h>  
+  
+#pragma intrinsic(_InterlockedOr)  
+  
+int main()  
+{  
+        long data1 = 0xFF00FF00;  
+        long data2 = 0x00FFFF00;  
+        long retval;  
+        retval = _InterlockedOr(&data1, data2);  
+        printf_s("0x%x 0x%x 0x%x", data1, data2, retval);   
+}  
+```  
+  
+ **0xffffff00 0xffff00 0xff00ff00**   
+## END Microsoft Specific  
+  
+## See Also  
+ [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   
+ [Conflicts with the x86 Compiler](../build/conflicts-with-the-x86-compiler.md)
