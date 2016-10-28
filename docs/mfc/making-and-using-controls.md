@@ -1,13 +1,13 @@
 ---
 title: "Making and Using Controls"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "Windows common controls [C++], about common controls"
   - "common controls [C++], about common controls"
 ms.assetid: a252acad-3cc0-440e-bbc6-43eaaf8cb7bb
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,7 +38,7 @@ translation.priority.ht:
 # Making and Using Controls
 You make most controls for dialog boxes in the Visual C++ [dialog editor](../mfc/dialog-editor.md). But you can also create controls in any dialog box or window.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Using common controls in a dialog box](../mfc/using-common-controls-in-a-dialog-box.md)  
   
@@ -55,11 +56,12 @@ You make most controls for dialog boxes in the Visual C++ [dialog editor](../mfc
   
 -   [Type-Safe Access to Controls With Code Wizards](../mfc/type-safe-access-to-controls-with-code-wizards.md)  
   
--   Individual controls: see [Controls](../mfc/controls--mfc-.md) for links to all common controls  
+-   Individual controls: see [Controls](../mfc/controls-mfc.md) for links to all common controls  
   
 -   [Dialog boxes](../mfc/dialog-boxes.md)  
   
 -   [Dialog bars](../mfc/dialog-bars.md)  
   
 ## See Also  
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

@@ -1,13 +1,13 @@
 ---
 title: "Subscripting"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "operator overloading, examples"
   - "subscript operator"
 ms.assetid: eb151281-6733-401d-9787-39ab6754c62c
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -92,19 +93,22 @@ int main() {
 }  
 ```  
   
- **Array bounds violation.**  
-**Element: [0] = 0**  
-**Element: [1] = 1**  
-**Element: [2] = 2**  
-**Element: [3] = 9**  
-**Element: [4] = 4**  
-**Element: [5] = 5**  
-**Element: [6] = 6**  
-**Element: [7] = 7**  
-**Element: [8] = 8**  
-**Element: [9] = 9**  
-**Array bounds violation.**  
-**Element: [10] = 10**   
+```Output  
+Array bounds violation.  
+Element: [0] = 0  
+Element: [1] = 1  
+Element: [2] = 2  
+Element: [3] = 9  
+Element: [4] = 4  
+Element: [5] = 5  
+Element: [6] = 6  
+Element: [7] = 7  
+Element: [8] = 8  
+Element: [9] = 9  
+Array bounds violation.  
+Element: [10] = 10  
+```  
+  
 ## Comments  
  When `i` reaches 10 in the preceding program, `operator[]` detects that an out-of-bounds subscript is being used and issues an error message.  
   

@@ -1,13 +1,13 @@
 ---
 title: "Using an Image List with a Rebar Control"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "image lists [C++], rebar controls"
   - "rebar controls, image lists"
 ms.assetid: 1a5836ac-019a-46aa-8741-b35c3376b839
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ Each rebar band can contain, among other things, an image from an associated ima
   
 ### To display images in a rebar band  
   
-1.  Attach an image list to your rebar control object by making a call to [SetImageList](../Topic/CReBarCtrl::SetImageList.md), passing a pointer to an existing image list.  
+1.  Attach an image list to your rebar control object by making a call to [SetImageList](../mfc/reference/crebarctrl-class.md#setimagelist), passing a pointer to an existing image list.  
   
 2.  Modify the **REBARBANDINFO** structure to assign an image to a rebar band:  
   
@@ -48,12 +49,13 @@ Each rebar band can contain, among other things, an image from an associated ima
   
 3.  Initialize any remaining data members, such as the size, text, and handle of the contained child window, with the necessary information.  
   
-4.  Insert the new band (with the image) with a call to [CReBarCtrl::InsertBand](../Topic/CReBarCtrl::InsertBand.md), passing the **REBARBANDINFO** structure.  
+4.  Insert the new band (with the image) with a call to [CReBarCtrl::InsertBand](../mfc/reference/crebarctrl-class.md#crebarctrl__insertband), passing the **REBARBANDINFO** structure.  
   
  The following example assumes that an existing image list object with two images was attached to the rebar control object (`m_wndReBar`). A new rebar band (defined by `rbi`), containing the first image, is added with a call to `InsertBand`:  
   
- [!code[NVC_MFCControlLadenDialog#28](../mfc/codesnippet/CPP/using-an-image-list-with-a-rebar-control_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#28](../mfc/codesnippet/CPP/using-an-image-list-with-a-rebar-control_1.cpp)]  
   
 ## See Also  
  [Using CReBarCtrl](../mfc/using-crebarctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

@@ -1,13 +1,13 @@
 ---
 title: "Automation"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -30,7 +30,8 @@ helpviewer_keywords:
   - "MFC COM, Automation"
   - "methods [MFC], Automation"
 ms.assetid: 329117f0-c1aa-4680-a901-bfb71277dfba
-caps.latest.revision: 12
+caps.latest.revision: 13
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -66,28 +67,28 @@ Automation (formerly known as OLE Automation) makes it possible for one applicat
   
  More important is the support Automation provides to users and solution providers. By exposing application functionality through a common, well-defined interface, Automation makes it possible to build comprehensive solutions in a single general programming language, such as Microsoft Visual Basic, instead of in diverse application-specific macro languages.  
   
- Many commercial applications, such as Microsoft Excel and Microsoft Visual C++, allow you to automate much of their functionality. For example, in Visual C++, you can write [VBScript](vtoriVBScript) macros to automate builds, aspects of code editing, or debugging tasks.  
+ Many commercial applications, such as Microsoft Excel and Microsoft Visual C++, allow you to automate much of their functionality. For example, in Visual C++, you can write VBScript macros to automate builds, aspects of code editing, or debugging tasks.  
   
 ##  <a name="_core_passing_parameters_in_automation"></a> Passing Parameters in Automation  
  One difficulty in creating Automation methods is helping to provide a uniform "safe" mechanism to pass data between automation servers and clients. Automation uses the **VARIANT** type to pass data. The **VARIANT** type is a tagged union. It has a data member for the value (this is an anonymous C++ union) and a data member indicating the type of information stored in the union. The **VARIANT** type supports a number of standard data types: 2- and 4-byte integers, 4- and 8-byte floating-point numbers, strings, and Boolean values. In addition, it supports the `HRESULT` (OLE error codes), **CURRENCY** (a fixed-point numeric type), and **DATE** (absolute date and time) types, as well as pointers to **IUnknown** and `IDispatch` interfaces.  
   
- The **VARIANT** type is encapsulated in the [COleVariant](../mfcref/colevariant-class.md) class. The supporting **CURRENCY** and **DATE** classes are encapsulated in the [COleCurrency](../mfcref/colecurrency-class.md) and [COleDateTime](../atl/coledatetime-class.md) classes.  
+ The **VARIANT** type is encapsulated in the [COleVariant](../mfc/reference/colevariant-class.md) class. The supporting **CURRENCY** and **DATE** classes are encapsulated in the [COleCurrency](../mfc/reference/colecurrency-class.md) and [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) classes.  
   
 ## Automation Samples  
   
--   [AUTOCLIK](../top/visual-c---samples.md) Use this sample to learn Automation techniques and as a foundation for learning Remote Automation.  
+-   [AUTOCLIK](../top/visual-cpp-samples.md) Use this sample to learn Automation techniques and as a foundation for learning Remote Automation.  
   
--   [ACDUAL](../top/visual-c---samples.md) Adds dual interfaces to an Automation server application.  
+-   [ACDUAL](../top/visual-cpp-samples.md) Adds dual interfaces to an Automation server application.  
   
--   [CALCDRIV](../top/visual-c---samples.md) Automation client application driving MFCCALC.  
+-   [CALCDRIV](../top/visual-cpp-samples.md) Automation client application driving MFCCALC.  
   
--   [INPROC](../top/visual-c---samples.md) Demonstrates an In-Process Automation server application.  
+-   [INPROC](../top/visual-cpp-samples.md) Demonstrates an In-Process Automation server application.  
   
--   [IPDRIVE](../top/visual-c---samples.md) Automation client application driving INPROC.  
+-   [IPDRIVE](../top/visual-cpp-samples.md) Automation client application driving INPROC.  
   
--   [MFCCALC](../top/visual-c---samples.md) Demonstrates an Automation client application.  
+-   [MFCCALC](../top/visual-cpp-samples.md) Demonstrates an Automation client application.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Automation Clients](../mfc/automation-clients.md)  
   
@@ -99,11 +100,11 @@ Automation (formerly known as OLE Automation) makes it possible for one applicat
   
 -   [Active Technology](../mfc/mfc-com.md)  
   
-## What do you want to do?  
+## What do you want to do  
   
 -   [Add an Automation class](../mfc/automation-servers.md)  
   
--   [Use type libraries](../mfc/automation-clients--using-type-libraries.md)  
+-   [Use type libraries](../mfc/automation-clients-using-type-libraries.md)  
   
 -   [Pass parameters in Automation](#_core_automation_topics)  
   

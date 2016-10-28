@@ -1,13 +1,13 @@
 ---
 title: "Class Member Overview"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "class members"
 ms.assetid: 8802cfa9-705d-4f37-acde-245d6838010c
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,9 +44,9 @@ A class or struct consists of its members. The work that a class does is perform
   
 -   Special Member functions.  
   
--   [Member functions](../notintoc/member-functions--c---.md).  
+-   [Member functions](../misc/member-functions-cpp.md).  
   
--   [Data members](../cpp/static-members--c---.md) including built-in types and other user defined types.  
+-   [Data members](../cpp/static-members-cpp.md) including built-in types and other user defined types.  
   
 -   Operators  
   
@@ -53,13 +54,13 @@ A class or struct consists of its members. The work that a class does is perform
   
 -   [Unions](../cpp/unions.md)  
   
--   [Enumerations](../cpp/enumerations--c---.md).  
+-   [Enumerations](../cpp/enumerations-cpp.md).  
   
--   [Bit fields](../cpp/c---bit-fields.md).  
+-   [Bit fields](../cpp/cpp-bit-fields.md).  
   
--   [Friends](../cpp/friend--c---.md).  
+-   [Friends](../cpp/friend-cpp.md).  
   
--   [Aliases and typedefs](../cpp/aliases-and-typedefs--c---.md).  
+-   [Aliases and typedefs](../cpp/aliases-and-typedefs-cpp.md).  
   
     > [!NOTE]
     >  Friends are included in the preceding list because they are contained in the class declaration. However, they are not true class members, because they are not in the scope of the class.  
@@ -109,10 +110,10 @@ int TestRun::_instances{ 0 };
 ```  
   
 ## Member accessibility  
- The members of a class are declared in the member list. The member list of a class may be divided into any number of `private`, `protected` and **public** sections using keywords known as access specifiers.  A colon **:** must follow the access specifier.  These sections need not be contiguous, that is, any of these keywords may appear several times in the member list.  The keyword designates the access of all members up until the next access specifier or the closing brace. For more information, see [Member Access Control (C++)](../cpp/member-access-control--c---.md).  
+ The members of a class are declared in the member list. The member list of a class may be divided into any number of `private`, `protected` and **public** sections using keywords known as access specifiers.  A colon **:** must follow the access specifier.  These sections need not be contiguous, that is, any of these keywords may appear several times in the member list.  The keyword designates the access of all members up until the next access specifier or the closing brace. For more information, see [Member Access Control (C++)](../cpp/member-access-control-cpp.md).  
   
 ## Static members  
- A data member may be declared as static, which means all objects of the class have access to the same copy of it. A member function may be declared as static, in which case it can only access static data members of the class (and has no *this* pointer). For more information, see [Static Data Members](../cpp/static-members--c---.md).  
+ A data member may be declared as static, which means all objects of the class have access to the same copy of it. A member function may be declared as static, in which case it can only access static data members of the class (and has no *this* pointer). For more information, see [Static Data Members](../cpp/static-members-cpp.md).  
   
 ## Special member functions  
  Special member functions are functions that are automatically provided by the compiler if you do not specify them in your source code.  
@@ -155,7 +156,7 @@ int main()
   
  If a member is assigned a value in a constructor, that value overwrites the value with which the member was initialized at the point of declaration.  
   
- There is only one shared copy of static data members for all objects of a given class type. Static data members must be defined and can be initialized at file scope. (For more information about static data members, see [Static Data Members](../cpp/static-members--c---.md).) The following example shows how to perform these initializations:  
+ There is only one shared copy of static data members for all objects of a given class type. Static data members must be defined and can be initialized at file scope. (For more information about static data members, see [Static Data Members](../cpp/static-members-cpp.md).) The following example shows how to perform these initializations:  
   
 ```  
 // class_members2.cpp  
@@ -184,4 +185,4 @@ int CanInit2::j = i;
 >  The class name, `CanInit2`, must precede `i` to specify that the `i` being defined is a member of class `CanInit2`.  
   
 ## See Also  
- [Classes and Structs](../cpp/classes-and-structs--c---.md)
+ [Classes and Structs](../cpp/classes-and-structs-cpp.md)

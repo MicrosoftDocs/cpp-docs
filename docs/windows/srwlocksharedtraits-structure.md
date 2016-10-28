@@ -1,13 +1,13 @@
 ---
 title: "SRWLockSharedTraits Structure"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SRWLockSharedTraits"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "SRWLockSharedTraits structure"
 ms.assetid: 709cb51e-d70c-40b6-bdb4-d8eacf3af495
 caps.latest.revision: 3
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -56,8 +57,8 @@ struct SRWLockSharedTraits;
   
 |Name|Description|  
 |----------|-----------------|  
-|[SRWLockSharedTraits::GetInvalidValue Method](../windows/srwlocksharedtraits--getinvalidvalue-method.md)|Retrieves an SRWLockSharedTraits object that is always invalid.|  
-|[SRWLockSharedTraits::Unlock Method](../windows/srwlocksharedtraits--unlock-method.md)|Releases exclusive control of the specified SRWLock object.|  
+|[SRWLockSharedTraits::GetInvalidValue Method](../windows/srwlocksharedtraits-getinvalidvalue-method.md)|Retrieves an SRWLockSharedTraits object that is always invalid.|  
+|[SRWLockSharedTraits::Unlock Method](../windows/srwlocksharedtraits-unlock-method.md)|Releases exclusive control of the specified SRWLock object.|  
   
 ## Inheritance Hierarchy  
  `SRWLockSharedTraits`  
@@ -68,4 +69,4 @@ struct SRWLockSharedTraits;
  **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
   
 ## See Also  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft--wrl--wrappers--handletraits-namespace.md)
+ [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

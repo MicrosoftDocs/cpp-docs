@@ -1,13 +1,13 @@
 ---
 title: "Debugging Support Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.classes.debug"
@@ -22,7 +22,8 @@ helpviewer_keywords:
   - "debugging [MFC], memory leaks"
   - "memory leaks, MFC debug classes"
 ms.assetid: d79e084a-8326-4251-8700-4efac07c511e
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,11 +44,12 @@ translation.priority.ht:
 # Debugging Support Classes
 MFC provides the following classes to help you debug dynamic memory allocation problems.  
   
- [CDumpContext](../mfcref/cdumpcontext-class.md)  
+ [CDumpContext](../mfc/reference/cdumpcontext-class.md)  
  Provides a destination for diagnostic dumps.  
   
- [CMemoryState](../mfcref/cmemorystate-structure.md)  
+ [CMemoryState](../mfc/reference/cmemorystate-structure.md)  
  Structure that provides snapshots of memory use. Also used to compare earlier and later memory snapshots.  
   
 ## See Also  
  [Class Overview](../mfc/class-library-overview.md)
+

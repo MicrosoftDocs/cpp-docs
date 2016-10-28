@@ -1,13 +1,13 @@
 ---
 title: "Adding an Entry to an Accelerator Table"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "accelerator tables [C++], adding entries"
   - "New Accelerator command"
 ms.assetid: 559c2415-8323-4339-9447-6966665f8288
-caps.latest.revision: 10
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,11 +40,11 @@ translation.priority.ht:
 1.  Open the accelerator table by double-clicking its icon in [Resource View](../windows/resource-view-window.md).  
   
     > [!NOTE]
-    >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to--create-a-resource-script-file.md).  
+    >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
 2.  Right-click within the accelerator table and choose **New Accelerator** from the shortcut menu, or click on the empty row entry at the bottom of the table.  
   
-3.  Select an ID from the drop-down list in the ID box or type a new ID in the **ID** box.  
+3.  Select an [ID](Id%20Property.xml) from the drop-down list in the ID box or type a new ID in the **ID** box.  
   
 4.  Type the [Key](../windows/accelerator-key-property.md) you want to use as an accelerator or right-click and choose **Next Key Typed** from the shortcut menu to set a key combination (the **Next Key Typed** command is also available from the **Edit** menu).  
   

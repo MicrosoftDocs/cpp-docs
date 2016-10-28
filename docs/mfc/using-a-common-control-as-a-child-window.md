@@ -1,13 +1,13 @@
 ---
 title: "Using a Common Control as a Child Window"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "common controls [C++], child windows"
   - "Windows common controls [C++], child windows"
 ms.assetid: 608f7d47-7854-4fce-bde9-856c51e76753
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,12 +44,13 @@ Any of the Windows common controls can be used as a child window of any other wi
   
 1.  Define the control in the related class or handler.  
   
-2.  Use the control's override of the [CWnd::Create](../Topic/CWnd::Create.md) method to create the Windows control.  
+2.  Use the control's override of the [CWnd::Create](../mfc/reference/cwnd-class.md#cwnd__create) method to create the Windows control.  
   
-3.  After the control has been created (as early as the `OnCreate` handler if you subclass the control), you can manipulate the control using its member functions. See the descriptions of individual controls at [Controls](../mfc/controls--mfc-.md) for details on methods.  
+3.  After the control has been created (as early as the `OnCreate` handler if you subclass the control), you can manipulate the control using its member functions. See the descriptions of individual controls at [Controls](../mfc/controls-mfc.md) for details on methods.  
   
-4.  When you are finished with the control, use [CWnd::DestroyWindow](../Topic/CWnd::DestroyWindow.md) to destroy the control.  
+4.  When you are finished with the control, use [CWnd::DestroyWindow](../mfc/reference/cwnd-class.md#cwnd__destroywindow) to destroy the control.  
   
 ## See Also  
  [Making and Using Controls](../mfc/making-and-using-controls.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

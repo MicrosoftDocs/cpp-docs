@@ -1,13 +1,13 @@
 ---
 title: "COM Modules Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.atl.COM"
@@ -16,7 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COM modules classes"
 ms.assetid: 0a8a82dd-a153-47cd-9bbe-1a1ad5d1a6ff
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,23 +38,23 @@ translation.priority.ht:
 # COM Modules Classes
 The following classes provide support for a COM module:  
   
--   [CAtlBaseModule](../atl/catlbasemodule-class.md) This class is instantiated in every ATL project.  
+-   [CAtlBaseModule](../atl/reference/catlbasemodule-class.md) This class is instantiated in every ATL project.  
   
--   [CAtlComModule](../atl/catlcommodule-class.md) This class implements a COM server module.  
+-   [CAtlComModule](../atl/reference/catlcommodule-class.md) This class implements a COM server module.  
   
--   [CAtlModule](../atl/catlmodule-class.md) This class provides methods used by several ATL module classes.  
+-   [CAtlModule](../atl/reference/catlmodule-class.md) This class provides methods used by several ATL module classes.  
   
--   [CAtlModuleT](../atl/catlmodulet-class.md) This class implements an ATL module.  
+-   [CAtlModuleT](../atl/reference/catlmodulet-class.md) This class implements an ATL module.  
   
--   [CAtlExeModuleT](../atl/catlexemodulet-class.md) This class represents the module for an application.  
+-   [CAtlExeModuleT](../atl/reference/catlexemodulet-class.md) This class represents the module for an application.  
   
--   [CAtlServiceModuleT](../atl/catlservicemodulet-class.md) This class implements a service.  
+-   [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) This class implements a service.  
   
--   [CAtlWinModule](../atl/catlwinmodule-class.md) This class provides support for ATL windowing components.  
+-   [CAtlWinModule](../atl/reference/catlwinmodule-class.md) This class provides support for ATL windowing components.  
   
--   [CComModule](../atl/ccommodule-class.md) This class implements a DLL or EXE module. Obsolete in ATL 7.0.  
+-   [CComModule](../atl/reference/ccommodule-class.md) This class implements a DLL or EXE module. Obsolete in ATL 7.0.  
   
--   [CComAutoThreadModule](../atl/ccomautothreadmodule-class.md) This class implements an EXE module, with support for multiple thread-pooled apartments. Obsolete in ATL 7.0.  
+-   [CComAutoThreadModule](../atl/reference/ccomautothreadmodule-class.md) This class implements an EXE module, with support for multiple thread-pooled apartments. Obsolete in ATL 7.0.  
   
 ## Related Articles  
  [ATL Module Classes](../atl/atl-module-classes.md)  
@@ -61,3 +62,4 @@ The following classes provide support for a COM module:
 ## See Also  
  [Class Overview](../atl/atl-class-overview.md)   
  [Module Classes](../atl/atl-module-classes.md)
+

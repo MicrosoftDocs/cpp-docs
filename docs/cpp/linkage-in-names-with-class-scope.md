@@ -1,13 +1,13 @@
 ---
 title: "Linkage in Names with Class Scope"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -23,6 +23,7 @@ helpviewer_keywords:
   - "class scope [C++], linkage in names with"
 ms.assetid: 45275ff3-6e94-4967-82c8-ba540ef4da28
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -56,4 +57,4 @@ The following linkage rules apply to names with class scope:
  **END Microsoft Specific**  
   
 ## See Also  
- [Program and Linkage](../cpp/program-and-linkage---c---.md)
+ [Program and Linkage](../cpp/program-and-linkage-cpp.md)

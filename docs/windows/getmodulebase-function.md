@@ -1,13 +1,13 @@
 ---
 title: "GetModuleBase Function"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "implements/Microsoft::WRL::GetModuleBase"
@@ -15,6 +15,7 @@ dev_langs:
   - "C++"
 ms.assetid: 123d3b14-2eaf-4e02-8dcd-b6567917c6a6
 caps.latest.revision: 2
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -48,7 +49,7 @@ inline Details::ModuleBase* GetModuleBase() throw()
 ## Remarks  
  This function is used internally to increment and decrement object reference counts.  
   
- You can use this function to control reference counts by calling [ModuleBase::IncrementObjectCount](../windows/modulebase--incrementobjectcount-method.md) and [ModuleBase::DecrementObjectCount](../windows/modulebase--decrementobjectcount-method.md).  
+ You can use this function to control reference counts by calling [ModuleBase::IncrementObjectCount](../windows/modulebase-incrementobjectcount-method.md) and [ModuleBase::DecrementObjectCount](../windows/modulebase-decrementobjectcount-method.md).  
   
 ## Requirements  
  **Header:** implements.h  
@@ -56,4 +57,4 @@ inline Details::ModuleBase* GetModuleBase() throw()
  **Namespace:** Microsoft::WRL  
   
 ## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft--wrl-namespace.md)
+ [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

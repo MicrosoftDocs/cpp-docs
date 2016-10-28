@@ -1,13 +1,13 @@
 ---
 title: "Internationalization Strategies"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -22,6 +22,7 @@ helpviewer_keywords:
   - "localization [C++], character sets"
 ms.assetid: b09d9854-0709-4b9a-a00c-b0b8bc4199b1
 caps.latest.revision: 8
+author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 translation.priority.ht: 
@@ -50,7 +51,7 @@ Depending on your target operating systems and markets, you have several interna
   
      You use MBCS-specific functionality. Strings can contain single-byte characters, double-byte characters, or both. The C run-time library provides functions, macros, and data types for MBCS-only programming. MFC is fully MBCS-enabled.  
   
--   The source code for your application is written for complete portability — by recompiling with the symbol **_UNICODE** or the symbol **_MBCS** defined, you can produce versions that use either. For more information, see [Generic-Text Mappings in Tchar.h](../text/generic-text-mappings-in-tchar.h.md).  
+-   The source code for your application is written for complete portability — by recompiling with the symbol **_UNICODE** or the symbol **_MBCS** defined, you can produce versions that use either. For more information, see [Generic-Text Mappings in Tchar.h](../text/generic-text-mappings-in-tchar-h.md).  
   
 -   Your application uses a wrapper library for missing Unicode functions on Windows 95, Windows 98, and Windows ME like the one described in [Design a Single Unicode App that Runs on Both Windows 98 and Windows 2000](http://go.microsoft.com/fwlink/p/?LinkId=250770). Wrapper libraries are also available commercially.  
   

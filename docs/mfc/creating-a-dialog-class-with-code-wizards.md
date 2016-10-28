@@ -1,13 +1,13 @@
 ---
 title: "Creating a Dialog Class with Code Wizards"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "code wizards"
   - "dialog classes, creating"
 ms.assetid: a7157b9d-f1a8-4381-a4cf-180cd2c7f1b2
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -48,7 +49,7 @@ The following table lists dialog-related tasks that Code Wizards help you manage
 |Specify [how data is to be exchanged](../mfc/dialog-data-exchange-and-validation.md) between the controls and the member variables.|Each control you want to access from your program.|  
 |Specify [validation rules](../mfc/dialog-data-exchange-and-validation.md) for the member variables.|Each control that yields a text or numeric value, if desired.|  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Creating your dialog class](../mfc/creating-your-dialog-class.md)  
   
@@ -59,3 +60,4 @@ The following table lists dialog-related tasks that Code Wizards help you manage
 ## See Also  
  [Dialog Boxes](../mfc/dialog-boxes.md)   
  [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
+

@@ -1,13 +1,13 @@
 ---
 title: "rdx"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "vc-attr.rdx"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "rdx attribute"
 ms.assetid: ff8e4312-c1ad-4934-bdaa-86f54409651e
 caps.latest.revision: 14
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -61,7 +62,7 @@ Creates a registry key or modifies an existing registry key.
 ## Remarks  
  The **rdx** C++ attribute creates or modifies an existing registry key for a COM component. The attribute adds a BEGIN_RDX_MAP macro to the object that implements the target member. `RegistryDataExchange`, a function injected as a result of the BEGIN_RDX_MAP macro, can be used to transfer data between the registry and the data members  
   
- This attribute can be used in conjunction with the [coclass](../windows/coclass.md), [progid](../windows/progid.md), or [vi_progid](../windows/vi_progid.md) attributes or other attributes that implies one of these.  
+ This attribute can be used in conjunction with the [coclass](../windows/coclass.md), [progid](../windows/progid.md), or [vi_progid](../windows/vi-progid.md) attributes or other attributes that implies one of these.  
   
 ## Requirements  
   
@@ -100,5 +101,5 @@ public:
   
 ## See Also  
  [COM Attributes](../windows/com-attributes.md)   
- [registration_script](../windows/registration_script.md)   
- [Attributes Samples](assetId:///558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [registration_script](../windows/registration-script.md)   
+ [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

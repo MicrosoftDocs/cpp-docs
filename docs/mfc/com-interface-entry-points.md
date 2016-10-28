@@ -1,13 +1,13 @@
 ---
 title: "COM Interface Entry Points"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "MFC, managing state data"
   - "COM interfaces, entry points"
 ms.assetid: 9e7421dc-0731-4748-9e1b-90acbaf26d77
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -42,9 +43,9 @@ For member functions of a COM interface, use the [METHOD_PROLOGUE](../Topic/METH
   
  Typically, member functions of interfaces implemented by `CCmdTarget`-derived objects already use this macro to provide automatic initialization of the `pThis` pointer. For example:  
   
- [!code[NVC_MFCConnectionPoints#5](../mfc/codesnippet/CPP/com-interface-entry-points_1.cpp)]  
+ [!code-cpp[NVC_MFCConnectionPoints#5](../mfc/codesnippet/CPP/com-interface-entry-points_1.cpp)]  
   
- For additional information, see [Technical Note 38](../mfc/tn038--mfc-ole-iunknown-implementation.md) on MFC/OLE **IUnknown** implementation.  
+ For additional information, see [Technical Note 38](../mfc/tn038-mfc-ole-iunknown-implementation.md) on MFC/OLE **IUnknown** implementation.  
   
  The `METHOD_PROLOGUE` macro is defined as:  
   
@@ -64,3 +65,4 @@ For member functions of a COM interface, use the [METHOD_PROLOGUE](../Topic/METH
   
 ## See Also  
  [Managing the State Data of MFC Modules](../mfc/managing-the-state-data-of-mfc-modules.md)
+

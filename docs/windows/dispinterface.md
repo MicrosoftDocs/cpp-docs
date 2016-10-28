@@ -1,13 +1,13 @@
 ---
 title: "dispinterface"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "vc-attr.dispinterface"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "dispinterface attribute"
 ms.assetid: 61c5a4a1-ae92-47e9-8ee4-f847be90172b
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -79,9 +80,9 @@ dispinterface helloPro
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Attributes by Usage](../windows/attributes-by-usage.md)   
- [uuid](../windows/uuid--c---attributes-.md)   
+ [uuid](../windows/uuid-cpp-attributes.md)   
  [dual](../windows/dual.md)   
- [custom](../windows/custom--c---.md)   
- [object](../windows/object--c---.md)   
- [__interface](../cpp/__interface.md)   
- [Attributes Samples](assetId:///558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [custom](../windows/custom-cpp.md)   
+ [object](../windows/object-cpp.md)   
+ [__interface](../cpp/interface.md)   
+ [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

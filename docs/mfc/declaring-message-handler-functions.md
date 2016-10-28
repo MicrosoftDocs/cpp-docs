@@ -1,20 +1,21 @@
 ---
 title: "Declaring Message Handler Functions"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "declaring functions, message handler functions"
 ms.assetid: f8d3dbc1-4500-4f1e-a18d-7371edf36386
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -45,3 +46,4 @@ Certain rules and conventions govern the names of your message-handler functions
   
 ## See Also  
  [Message Handling and Mapping](../mfc/message-handling-and-mapping.md)
+

@@ -1,13 +1,13 @@
 ---
 title: "Restrictions on Termination Handlers"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "try-catch keyword [C++], termination handlers"
 ms.assetid: 8b1cb481-303f-4e79-b409-57a002a9fa9e
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,4 +44,4 @@ You cannot use a `goto` statement to jump into a `__try` statement block or a `_
   
 ## See Also  
  [Writing a Termination Handler](../cpp/writing-a-termination-handler.md)   
- [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling--c-c---.md)
+ [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

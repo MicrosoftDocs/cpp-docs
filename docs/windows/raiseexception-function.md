@@ -1,13 +1,13 @@
 ---
 title: "RaiseException Function"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "internal/Microsoft::WRL::Details::RaiseException"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "RaiseException function"
 ms.assetid: f9c74f6d-112a-4d2e-900f-622f795d5dbf
 caps.latest.revision: 5
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -64,4 +65,4 @@ inline void __declspec(noreturn)   RaiseException(
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft--wrl--details-namespace.md)
+ [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

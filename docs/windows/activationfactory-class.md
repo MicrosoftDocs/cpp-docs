@@ -1,13 +1,13 @@
 ---
 title: "ActivationFactory Class"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "module/Microsoft::WRL::ActivationFactory"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "ActivationFactory class"
 ms.assetid: 5faddf1f-43b6-4f8a-97de-8c9d3ae1e1ff
 caps.latest.revision: 4
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -64,7 +65,7 @@ class ActivationFactory : public Details::RuntimeClass<typename Details::Interfa
   
  The following code fragment symbolically illustrates how to use ActivationFactory.  
   
- [!code[wrl-microsoft__wrl__activationfactory#1](../windows/codesnippet/CPP/activationfactory-class_1.cpp)]  
+ [!code-cpp[wrl-microsoft__wrl__activationfactory#1](../windows/codesnippet/CPP/activationfactory-class_1.cpp)]  
   
  The following code fragment shows how to use the [Implements](../windows/implements-structure.md) structure to specify more than three interface IDs.  
   
@@ -76,18 +77,18 @@ class ActivationFactory : public Details::RuntimeClass<typename Details::Interfa
   
 |Name|Description|  
 |----------|-----------------|  
-|[ActivationFactory::ActivationFactory Constructor](../windows/activationfactory--activationfactory-constructor.md)|Initializes the ActivationFactory class.|  
+|[ActivationFactory::ActivationFactory Constructor](../windows/activationfactory-activationfactory-constructor.md)|Initializes the ActivationFactory class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[ActivationFactory::AddRef Method](../windows/activationfactory--addref-method.md)|Increments the reference count of the current ActivationFactory object.|  
-|[ActivationFactory::GetIids Method](../windows/activationfactory--getiids-method.md)|Retrieves an array of implemented interface IDs.|  
-|[ActivationFactory::GetRuntimeClassName Method](../windows/activationfactory--getruntimeclassname-method.md)|Gets the runtime class name of the object that the current ActivationFactory instantiates.|  
-|[ActivationFactory::GetTrustLevel Method](../windows/activationfactory--gettrustlevel-method.md)|Gets the trust level of the object that the current ActivationFactory instantiates.|  
-|[ActivationFactory::QueryInterface Method](../windows/activationfactory--queryinterface-method.md)|Retrieves a pointer to the specified interface.|  
-|[ActivationFactory::Release Method](../windows/activationfactory--release-method.md)|Decrements the reference count of the current ActivationFactory object.|  
+|[ActivationFactory::AddRef Method](../windows/activationfactory-addref-method.md)|Increments the reference count of the current ActivationFactory object.|  
+|[ActivationFactory::GetIids Method](../windows/activationfactory-getiids-method.md)|Retrieves an array of implemented interface IDs.|  
+|[ActivationFactory::GetRuntimeClassName Method](../windows/activationfactory-getruntimeclassname-method.md)|Gets the runtime class name of the object that the current ActivationFactory instantiates.|  
+|[ActivationFactory::GetTrustLevel Method](../windows/activationfactory-gettrustlevel-method.md)|Gets the trust level of the object that the current ActivationFactory instantiates.|  
+|[ActivationFactory::QueryInterface Method](../windows/activationfactory-queryinterface-method.md)|Retrieves a pointer to the specified interface.|  
+|[ActivationFactory::Release Method](../windows/activationfactory-release-method.md)|Decrements the reference count of the current ActivationFactory object.|  
   
 ## Inheritance Hierarchy  
  `I0`  
@@ -116,4 +117,4 @@ class ActivationFactory : public Details::RuntimeClass<typename Details::Interfa
  **Namespace:** Microsoft::WRL  
   
 ## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft--wrl-namespace.md)
+ [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

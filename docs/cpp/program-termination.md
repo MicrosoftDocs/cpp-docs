@@ -1,13 +1,13 @@
 ---
 title: "Program Termination"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "programs [C++], terminating"
 ms.assetid: fa0ba9de-b5f1-4e7b-aa65-e7932068b48c
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -42,7 +43,7 @@ In C++, there are several ways to exit a program:
   
 -   Call the [abort](../cpp/abort-function.md) function.  
   
--   Execute a [return](../cpp/return-statement-in-program-termination--c---.md) statement from **main**.  
+-   Execute a [return](../cpp/return-statement-in-program-termination-cpp.md) statement from **main**.  
   
 ## See Also  
- [main: Program Startup](../cpp/main--program-startup.md)
+ [main: Program Startup](../cpp/main-program-startup.md)

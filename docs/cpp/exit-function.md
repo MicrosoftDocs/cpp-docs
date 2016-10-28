@@ -1,13 +1,13 @@
 ---
 title: "exit Function"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "Exit"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "exit function"
 ms.assetid: 26ce439f-81e2-431c-9ff8-a09a96f32127
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -44,7 +45,7 @@ The **exit** function, declared in the standard include file STDLIB.H, terminate
   
  Issuing a `return` statement from the **main** function is equivalent to calling the **exit** function with the return value as its argument.  
   
- For more information, see [exit](../crt/exit--_exit--_exit.md) in the *Run-Time Library Reference*.  
+ For more information, see [exit](../c-runtime-library/reference/exit-exit-exit.md) in the *Run-Time Library Reference*.  
   
 ## See Also  
  [Program Termination](../cpp/program-termination.md)

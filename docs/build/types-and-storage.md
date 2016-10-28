@@ -1,18 +1,19 @@
 ---
 title: "Types and Storage"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 ms.assetid: 7fe008b2-520f-4b71-8cb5-35fd513146ce
 caps.latest.revision: 9
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -31,7 +32,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Types and Storage
-This section describes the enumeration and storage of data types for the [!INCLUDE[vcprx64](../build/includes/vcprx64_md.md)] architecture.  
+This section describes the enumeration and storage of data types for the [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] architecture.  
   
 -   [Scalar Types](../build/scalar-types.md)  
   

@@ -1,13 +1,13 @@
 ---
 title: "Changing a Symbol&#39;s Numeric Value"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.editors.symbol.changing.value"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "numeric values, changing symbols"
 ms.assetid: 468e903b-9c07-4251-ae09-3b6cb754cc2b
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -44,7 +45,7 @@ For symbols associated with a single resource, you can use the [Properties Windo
 1.  In [Resource View](../windows/resource-view-window.md), select the resource.  
   
     > [!NOTE]
-    >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to--create-a-resource-script-file.md).  
+    >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
 2.  In the **Properties** window, type the symbol name followed by an equal sign and an integer in the **ID** box, for example:  
   

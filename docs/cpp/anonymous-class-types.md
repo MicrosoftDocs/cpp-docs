@@ -1,13 +1,13 @@
 ---
 title: "Anonymous Class Types"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "anonymous class types"
 ms.assetid: 9ba667b2-8c2a-4c29-82a6-fa120b9233c8
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -114,4 +115,4 @@ int main()
 ### END Microsoft Specific  
   
 ## See Also  
- [(NOTINBUILD) Defining Class Types](assetId:///e8c65425-0f3a-4dca-afc2-418c3b1e57da)
+ [(NOTINBUILD) Defining Class Types](http://msdn.microsoft.com/en-us/e8c65425-0f3a-4dca-afc2-418c3b1e57da)

@@ -1,13 +1,13 @@
 ---
 title: "Using IDispEventImpl"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "IDispEventImpl"
@@ -16,7 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IDispEventImpl class, using"
 ms.assetid: 82d53b61-9d0d-45c5-aff9-2fafa468a9ca
-caps.latest.revision: 10
+caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,7 +38,7 @@ translation.priority.ht:
 # Using IDispEventImpl
 When using `IDispEventImpl` to handle events, you will need to:  
   
--   Derive your class from [IDispEventImpl](../atl/idispeventimpl-class.md).  
+-   Derive your class from [IDispEventImpl](../atl/reference/idispeventimpl-class.md).  
   
 -   Add an [event sink map](../Topic/BEGIN_SINK_MAP.md) to your class.  
   
@@ -50,7 +51,7 @@ When using `IDispEventImpl` to handle events, you will need to:
 ## Example  
  The example below shows how to handle the **DocumentChange** event fired by Word's **Application** object. This event is defined as a method on the **ApplicationEvents** dispinterface.  
   
- The example is from the [ATLEventHandling sample](../top/visual-c---samples.md).  
+ The example is from the [ATLEventHandling sample](../top/visual-cpp-samples.md).  
   
  `[`  
   
@@ -82,12 +83,13 @@ When using `IDispEventImpl` to handle events, you will need to:
   
  The example uses `#import` to generate the required header files from Word's type library. If you want to use this example with other versions of Word, you must specify the correct mso dll file. For example, Office 2000 provides mso9.dll and OfficeXP provides mso.dll. This code is simplified from stdafx.h:  
   
- [!code[NVC_ATL_EventHandlingSample#1](../atl/codesnippet/CPP/using-idispeventimpl_1.h)]  
+ [!code-cpp[NVC_ATL_EventHandlingSample#1](../atl/codesnippet/CPP/using-idispeventimpl_1.h)]  
   
  The following code appears in NotSoSimple.h. The relevant code is noted by comments:  
   
- [!code[NVC_ATL_EventHandlingSample#2](../atl/codesnippet/CPP/using-idispeventimpl_2.h)]  
+ [!code-cpp[NVC_ATL_EventHandlingSample#2](../atl/codesnippet/CPP/using-idispeventimpl_2.h)]  
   
 ## See Also  
  [Event Handling](../atl/event-handling-and-atl.md)   
- [ATLEventHandling Sample](../top/visual-c---samples.md)
+ [ATLEventHandling Sample](../top/visual-cpp-samples.md)
+

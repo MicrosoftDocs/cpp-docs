@@ -1,13 +1,13 @@
 ---
 title: "defaultvalue"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "vc-attr.defaultvalue"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "defaultvalue attribute"
 ms.assetid: efa5d050-b2cc-4d9e-9b8e-79954f218d3a
 caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -92,9 +93,9 @@ __interface IFireTabCtrl : IDispatch {
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Parameter Attributes](../windows/parameter-attributes.md)   
- [out](../windows/out--c---.md)   
+ [out](../windows/out-cpp.md)   
  [retval](../windows/retval.md)   
- [in](../windows/in--c---.md)   
- [pointer_default](../windows/pointer_default.md)   
- [unique](../windows/unique--c---.md)   
- [Attributes Samples](assetId:///558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [in](../windows/in-cpp.md)   
+ [pointer_default](../windows/pointer-default.md)   
+ [unique](../windows/unique-cpp.md)   
+ [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

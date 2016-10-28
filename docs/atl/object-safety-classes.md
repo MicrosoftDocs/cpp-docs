@@ -1,13 +1,13 @@
 ---
 title: "Object Safety Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.atl.objects.safety"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "safety classes"
   - "object safety classes"
 ms.assetid: 00060b28-49e2-4ec1-9a22-f501e07821d6
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,10 +39,11 @@ translation.priority.ht:
 # Object Safety Classes
 The following class provides support for object safety:  
   
--   [IObjectSafetyImpl](../atl/iobjectsafetyimpl-class.md) Allows an object to be marked as safe for initialization or safe for scripting.  
+-   [IObjectSafetyImpl](../atl/reference/iobjectsafetyimpl-class.md) Allows an object to be marked as safe for initialization or safe for scripting.  
   
 ## Related Articles  
- [ATL Tutorial](../atl/active-template-library--atl--tutorial.md)  
+ [ATL Tutorial](../atl/active-template-library-atl-tutorial.md)  
   
 ## See Also  
  [Class Overview](../atl/atl-class-overview.md)
+

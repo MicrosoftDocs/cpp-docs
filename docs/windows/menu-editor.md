@@ -1,13 +1,13 @@
 ---
 title: "Menu Editor"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.editors.menu.F1"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "Menu editor"
   - "menus, Menu editor"
 ms.assetid: 421fb215-6e12-4ec9-a3af-82d77f87bfa6
-caps.latest.revision: 11
+caps.latest.revision: 13
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -73,9 +74,9 @@ Menus allow you to arrange commands in a logical and easy-to-find fashion. With 
     >  While using the Menu editor, in many instances, you can click the right mouse button to display a pop-up menu of frequently used commands. The commands available depend on what the pointer is pointing to.  
   
     > [!NOTE]
-    >  For Microsoft Foundation Class Library (MFC) programs and ATL programs, you can use Code Wizards to hook menu commands to code. For more information, see [Adding an Event](../ide/adding-an-event--visual-c---.md).  
+    >  For Microsoft Foundation Class Library (MFC) programs and ATL programs, you can use Code Wizards to hook menu commands to code. For more information, see [Adding an Event](../ide/adding-an-event-visual-cpp.md).  
   
- For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](assetId:///9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
+ For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
   
 ## Requirements  
  Win32  
@@ -84,5 +85,6 @@ Menus allow you to arrange commands in a logical and easy-to-find fashion. With 
  [Working with Resource Files](../mfc/working-with-resource-files.md)   
  [Resource Editors](../mfc/resource-editors.md)   
  [User-Interface Objects and Command IDs](../mfc/user-interface-objects-and-command-ids.md)   
- [Menus](../mfc/menus--mfc-.md)   
+ [Menus](../mfc/menus-mfc.md)   
  [Menus](http://msdn.microsoft.com/library/windows/desktop/ms646977.aspx)
+

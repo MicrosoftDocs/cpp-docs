@@ -1,13 +1,13 @@
 ---
 title: "Based Addressing"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "addresses [C++], based"
 ms.assetid: e80527b0-2303-4755-a52e-3e07e17232da
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,9 +38,9 @@ translation.priority.ht:
 # Based Addressing
 This section includes the following topics:  
   
--   [__based Grammar](../cpp/__based-grammar.md)  
+-   [__based Grammar](../cpp/based-grammar.md)  
   
--   [Based Pointers](../cpp/based-pointers--c---.md)  
+-   [Based Pointers](../cpp/based-pointers-cpp.md)  
   
 ## See Also  
  [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md)

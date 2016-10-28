@@ -1,13 +1,13 @@
 ---
 title: "Standard Conversions"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "conversions, standard"
 ms.assetid: ce7ac8d3-5c99-4674-8229-0672de05528d
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -36,7 +37,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Standard Conversions
-The C++ language defines conversions between its fundamental types. It also defines conversions for pointer, reference, and pointer-to-member derived types. These conversions are called "standard conversions." (For more information about types, standard types, and derived types, see [Types](assetId:///6882ee83-ea32-4373-8d57-c3efbbc15af0).)  
+The C++ language defines conversions between its fundamental types. It also defines conversions for pointer, reference, and pointer-to-member derived types. These conversions are called "standard conversions." (For more information about types, standard types, and derived types, see [Types](http://msdn.microsoft.com/en-us/6882ee83-ea32-4373-8d57-c3efbbc15af0).)  
   
  This section discusses the following standard conversions:  
   
@@ -57,7 +58,7 @@ The C++ language defines conversions between its fundamental types. It also defi
 -   Pointer-to-member conversions  
   
     > [!NOTE]
-    >  User-defined types can specify their own conversions. Conversion of user-defined types is covered in [Constructors](../cpp/constructors--c---.md) and [Conversions](../cpp/user-defined-type-conversions--c---.md).  
+    >  User-defined types can specify their own conversions. Conversion of user-defined types is covered in [Constructors](../cpp/constructors-cpp.md) and [Conversions](../cpp/user-defined-type-conversions-cpp.md).  
   
  The following code causes conversions (in this example, integral promotions):  
   
@@ -226,11 +227,11 @@ Inheritance Graph for Illustration of Base-Class Accessibility
 ||Protected|Yes|  
 ||Public|Yes|  
   
- The second case in which a pointer to a class can be converted to a pointer to a base class is when you use an explicit type conversion. (See [Expressions with Explicit Type Conversions](assetId:///060ad6b4-9592-4f3e-8509-a20ac84a85ae) for more information about explicit type conversions.)  
+ The second case in which a pointer to a class can be converted to a pointer to a base class is when you use an explicit type conversion. (See [Expressions with Explicit Type Conversions](http://msdn.microsoft.com/en-us/060ad6b4-9592-4f3e-8509-a20ac84a85ae) for more information about explicit type conversions.)  
   
  The result of such a conversion is a pointer to the "subobject," the portion of the object that is completely described by the base class.  
   
- The following code defines two classes, `A` and `B`, where `B` is derived from `A`. (For more information on inheritance, see [Derived Classes](../cpp/inheritance---c---.md).) It then defines `bObject`, an object of type `B`, and two pointers (`pA` and `pB`) that point to the object.  
+ The following code defines two classes, `A` and `B`, where `B` is derived from `A`. (For more information on inheritance, see [Derived Classes](../cpp/inheritance-cpp.md).) It then defines `bObject`, an object of type `B`, and two pointers (`pA` and `pB`) that point to the object.  
   
 ```  
 // C2039 expected  
@@ -265,7 +266,7 @@ int main()
  A pointer to a function can be converted to type **void \***, if type **void \*** is large enough to hold that pointer.  
   
 ### Pointer to void  
- Pointers to type `void` can be converted to pointers to any other type, but only with an explicit type cast (unlike in C). (See [Expressions with Explicit Type Conversions](assetId:///060ad6b4-9592-4f3e-8509-a20ac84a85ae) for more information about type casts.) A pointer to any type can be converted implicitly to a pointer to type `void`.A pointer to an incomplete object of a type can be converted to a pointer to `void` (implicitly) and back (explicitly). The result of such a conversion is equal to the value of the original pointer. An object is considered incomplete if it is declared, but there is insufficient information available to determine its size or base class.  
+ Pointers to type `void` can be converted to pointers to any other type, but only with an explicit type cast (unlike in C). (See [Expressions with Explicit Type Conversions](http://msdn.microsoft.com/en-us/060ad6b4-9592-4f3e-8509-a20ac84a85ae) for more information about type casts.) A pointer to any type can be converted implicitly to a pointer to type `void`.A pointer to an incomplete object of a type can be converted to a pointer to `void` (implicitly) and back (explicitly). The result of such a conversion is equal to the value of the original pointer. An object is considered incomplete if it is declared, but there is insufficient information available to determine its size or base class.  
   
  A pointer to any object that is not **const** or `volatile` can be implicitly converted to a pointer of type **void \***.  
   
@@ -273,7 +274,7 @@ int main()
  C++ does not supply a standard conversion from a **const** or `volatile` type to a type that is not **const** or `volatile`. However, any sort of conversion can be specified using explicit type casts (including conversions that are unsafe).  
   
 > [!NOTE]
->  C++ pointers to members, except pointers to static members, are different from normal pointers and do not have the same standard conversions. Pointers to static members are normal pointers and have the same conversions as normal pointers. (See [(NOTINBUILD) Directly Derived Types](assetId:///d2d611d1-dbff-4fb4-9858-e1572544f5c3) for more information.)  
+>  C++ pointers to members, except pointers to static members, are different from normal pointers and do not have the same standard conversions. Pointers to static members are normal pointers and have the same conversions as normal pointers. (See [(NOTINBUILD) Directly Derived Types](http://msdn.microsoft.com/en-us/d2d611d1-dbff-4fb4-9858-e1572544f5c3) for more information.)  
   
 ### null pointer conversions  
  An integral constant expression that evaluates to zero, or such an expression cast to a pointer type, is converted to a pointer called the "null pointer." This pointer is guaranteed to compare unequal to a pointer to any valid object or function (except for pointers to based objects, which can have the same offset and still point to different objects).  
@@ -297,7 +298,7 @@ char *pszPath = szPath; // Equals &szPath[0].
 ## Reference conversions  
  A reference to a class can be converted to a reference to a base class in the following cases:  
   
--   The specified base class is accessible (as defined in [Pointers to Classes](../notintoc/pointers-to-classes.md)).  
+-   The specified base class is accessible (as defined in [Pointers to Classes](../misc/pointers-to-classes.md)).  
   
 -   The conversion is unambiguous. (See [Multiple Base Classes](../cpp/multiple-base-classes.md) for more information about ambiguous base-class references.)  
   
@@ -339,4 +340,4 @@ int main()
 ```  
   
 ## See Also  
- [C++ Language Reference](../cpp/c---language-reference.md)
+ [C++ Language Reference](../cpp/cpp-language-reference.md)

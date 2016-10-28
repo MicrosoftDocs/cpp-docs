@@ -1,13 +1,13 @@
 ---
 title: "Raising Software Exceptions"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -24,6 +24,7 @@ helpviewer_keywords:
   - "formats [C++], exception codes"
 ms.assetid: be1376c3-c46a-4f52-ad1d-c2362840746a
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -79,7 +80,7 @@ if (lpstr == NULL)
     RaiseException( STATUS_INSUFFICIENT_MEM, 0, 0, 0);  
 ```  
   
- If you want to simply raise an exception, you can set the last three parameters to 0. The three last parameters are useful for passing additional information and setting a flag that prevents handlers from continuing execution. See the [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552) function in the [!INCLUDE[winsdkshort](../atl/includes/winsdkshort_md.md)] for more information.  
+ If you want to simply raise an exception, you can set the last three parameters to 0. The three last parameters are useful for passing additional information and setting a flag that prevents handlers from continuing execution. See the [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552) function in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] for more information.  
   
  In your exception-handling filters, you can then test for the codes you've defined. For example:  
   
@@ -93,4 +94,4 @@ __except (GetExceptionCode() == STATUS_INSUFFICIENT_MEM ||
   
 ## See Also  
  [Writing an Exception Handler](../cpp/writing-an-exception-handler.md)   
- [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling--c-c---.md)
+ [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

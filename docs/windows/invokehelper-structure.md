@@ -1,13 +1,13 @@
 ---
 title: "InvokeHelper Structure"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "event/Microsoft::WRL::Details::InvokeHelper"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "InvokeHelper structure"
 ms.assetid: 555ad2bc-4dd6-4e65-a2e2-1242c395f0e5
 caps.latest.revision: 5
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -122,19 +123,19 @@ struct InvokeHelper<TDelegateInterface, TCallback, 9> : Microsoft::WRL::RuntimeC
   
 |Name|Description|  
 |----------|-----------------|  
-|[InvokeHelper::InvokeHelper Constructor](../windows/invokehelper--invokehelper-constructor.md)|Initializes a new instance of the InvokeHelper class.|  
+|[InvokeHelper::InvokeHelper Constructor](../windows/invokehelper-invokehelper-constructor.md)|Initializes a new instance of the InvokeHelper class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[InvokeHelper::Invoke Method](../windows/invokehelper--invoke-method.md)|Calls the event handler whose signature contains the specified number of arguments.|  
+|[InvokeHelper::Invoke Method](../windows/invokehelper-invoke-method.md)|Calls the event handler whose signature contains the specified number of arguments.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[InvokeHelper::callback_ Data Member](../windows/invokehelper--callback_-data-member.md)|Represents the event handler to call when an event occurs.|  
+|[InvokeHelper::callback_ Data Member](../windows/invokehelper-callback-data-member.md)|Represents the event handler to call when an event occurs.|  
   
 ## Inheritance Hierarchy  
  `InvokeHelper`  
@@ -145,4 +146,4 @@ struct InvokeHelper<TDelegateInterface, TCallback, 9> : Microsoft::WRL::RuntimeC
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft--wrl--details-namespace.md)
+ [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

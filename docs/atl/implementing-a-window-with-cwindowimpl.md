@@ -1,13 +1,13 @@
 ---
 title: "Implementing a Window with CWindowImpl"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "CWindowImpl"
@@ -21,7 +21,8 @@ helpviewer_keywords:
   - "subclassing ATL window classes"
   - "superclassing, ATL"
 ms.assetid: 3fc40550-f1d6-4702-8b7c-4cf682b6a855
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -49,7 +50,7 @@ To implement a window, derive a class from `CWindowImpl`. In your derived class,
 -   [Subclass an existing window](#_atl_subclassing_an_existing_window)  
   
 ##  <a name="_atl_creating_a_window_based_on_a_new_windows_class"></a> Creating a Window Based on a New Windows Class  
- `CWindowImpl` contains the [DECLARE_WND_CLASS](../Topic/DECLARE_WND_CLASS.md) macro to declare Windows class information. This macro implements the `GetWndClassInfo` function, which uses [CWndClassInfo](../atl/cwndclassinfo-class.md) to define the information of a new Windows class. When `CWindowImpl::Create` is called, this Windows class is registered and a new window is created.  
+ `CWindowImpl` contains the [DECLARE_WND_CLASS](../Topic/DECLARE_WND_CLASS.md) macro to declare Windows class information. This macro implements the `GetWndClassInfo` function, which uses [CWndClassInfo](../atl/reference/cwndclassinfo-class.md) to define the information of a new Windows class. When `CWindowImpl::Create` is called, this Windows class is registered and a new window is created.  
   
 > [!NOTE]
 >  `CWindowImpl` passes **NULL** to the `DECLARE_WND_CLASS` macro, which means ATL will generate a Windows class name. To specify your own name, pass a string to `DECLARE_WND_CLASS` in your `CWindowImpl`-derived class.  
@@ -57,7 +58,7 @@ To implement a window, derive a class from `CWindowImpl`. In your derived class,
 ## Example  
  Following is an example of a class that implements a window based on a new Windows class:  
   
- [!code[NVC_ATL_Windowing#64](../atl/codesnippet/CPP/implementing-a-window-with-cwindowimpl_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#64](../atl/codesnippet/CPP/implementing-a-window-with-cwindowimpl_1.h)]  
   
  To create a window, create an instance of `CMyWindow` and then call the **Create** method.  
   
@@ -72,7 +73,7 @@ To implement a window, derive a class from `CWindowImpl`. In your derived class,
 ## Example  
  Following is an example of a class that superclasses the standard Edit class:  
   
- [!code[NVC_ATL_Windowing#65](../atl/codesnippet/CPP/implementing-a-window-with-cwindowimpl_2.h)]  
+ [!code-cpp[NVC_ATL_Windowing#65](../atl/codesnippet/CPP/implementing-a-window-with-cwindowimpl_2.h)]  
   
  To create the superclassed Edit window, create an instance of `CMyEdit` and then call the **Create** method.  
   
@@ -83,3 +84,4 @@ To implement a window, derive a class from `CWindowImpl`. In your derived class,
   
 ## See Also  
  [Implementing a Window](../atl/implementing-a-window.md)
+

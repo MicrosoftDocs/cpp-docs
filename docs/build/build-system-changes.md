@@ -1,13 +1,13 @@
 ---
 title: "Build System Changes"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.msbuild.changes"
@@ -23,6 +23,7 @@ helpviewer_keywords:
   - "Build system changes, $(NoInherit)"
 ms.assetid: e564d95f-a6cc-4d97-b57e-1a71daf66f4a
 caps.latest.revision: 13
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -62,7 +63,7 @@ The MSBuild system is used to build Visual C++ projects. However, in Visual Stud
 >  In the current release, the [!INCLUDE[TLA2#tla_ide](../build/includes/tla2sharptla_ide_md.md)] does not support the creation of new rules. For that reason, the easiest way to use a rule file from a project that was created by using an earlier release of Visual C++ is to migrate the project to the current release.  
   
 ## Inheritance Macros  
- In earlier releases, the **$(Inherit)** macro specifies the order in which inherited properties appear on the command line that is composed by the project build system. The **$(NoInherit)** macro causes any occurrences of $(Inherit) to be ignored and causes any properties that would otherwise be inherited, not to be inherited. For example, by default the $(Inherit) macro causes files specified by using the [/I (Additional Include Directories)](../buildref/-i--additional-include-directories-.md) compiler option to be appended to the command line.  
+ In earlier releases, the **$(Inherit)** macro specifies the order in which inherited properties appear on the command line that is composed by the project build system. The **$(NoInherit)** macro causes any occurrences of $(Inherit) to be ignored and causes any properties that would otherwise be inherited, not to be inherited. For example, by default the $(Inherit) macro causes files specified by using the [/I (Additional Include Directories)](../build/reference/i-additional-include-directories.md) compiler option to be appended to the command line.  
   
  In the current release, inheritance is supported by specifying the value of a property as the concatenation of one or more literal values and property macros. The **$(Inherit)** and **$(NoInherit)** macros are not supported.  
   
@@ -79,11 +80,11 @@ Property=<value>;$(MyProperty)
  When **Solution Explorer** is used to add a file to a project, the filters file (.vcxproj.filters) defines where in the **Solution Explorer** tree view the file is added, based on its file name extension.  
   
 ## VC++ Directories Settings  
- Visual C++ directories settings are specified on the [VC++ Directories Property Page](../ide/vc---directories-property-page.md). In earlier releases of Visual Studio, directories settings apply per-user and the list of excluded directories is specified in the sysincl.dat file.  
+ Visual C++ directories settings are specified on the [VC++ Directories Property Page](../ide/vcpp-directories-property-page.md). In earlier releases of Visual Studio, directories settings apply per-user and the list of excluded directories is specified in the sysincl.dat file.  
   
  You cannot change the VC++ directories settings if you run [devenv /resetsettings](../Topic/-ResetSettings%20\(devenv.exe\).md) at the command line. You also cannot change the settings if you open the **Tools** menu, click **Import and Export Settings**, and then select the **Reset all settings** option.  
   
  Migrate VC++ directories settings from a .vssettings file that is created by an earlier release of Visual C++. Open the **Tools** menu, click **Import and Export Settings**, select **Import selected environment settings**, and then follow the directions in the wizard. Or when you start Visual Studio for the first time, on the **Choose Default Environment Settings** dialog box, select **Migrate my eligible settings from a previous version and apply them in addition to the default settings selected below**.  
   
 ## See Also  
- [MSBuild (Visual C++)](../build/msbuild--visual-c---.md)
+ [MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)

@@ -1,13 +1,13 @@
 ---
 title: "SetCommonPchSettings"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "SetCommonPchSettings"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "SetCommonPchSettings method"
 ms.assetid: 12f5524b-f654-4222-b979-8ee0d9f58c14
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -53,11 +54,11 @@ Establishes the precompiled header settings for the project.
 ## Remarks  
  Call this function to establish the precompiled header settings for the project.  
   
- This function sets the \<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UsePrecompiledHeader*> property to the following:  
+ This function sets the <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UsePrecompiledHeader*> property to the following:  
   
--   **pchUseUsingSpecific** Uses the [/Yu (Use Precompiled Header File)](../buildref/-yu--use-precompiled-header-file-.md) compiler setting.  
+-   **pchUseUsingSpecific** Uses the [/Yu (Use Precompiled Header File)](../build/reference/yu-use-precompiled-header-file.md) compiler setting.  
   
--   **pchCreateUsingSpecific** Uses the [/Yc (Create Precompiled Header File)](../buildref/-yc--create-precompiled-header-file-.md) compiler setting.  
+-   **pchCreateUsingSpecific** Uses the [/Yc (Create Precompiled Header File)](../build/reference/yc-create-precompiled-header-file.md) compiler setting.  
   
 ## Example  
   
@@ -76,8 +77,8 @@ else
 ```  
   
 ## See Also  
- [Customizing C++ Wizards with Common JScript Functions](../ide/customizing-c---wizards-with-common-jscript-functions.md)   
- [JScript Functions for C++ Wizards](../ide/jscript-functions-for-c---wizards.md)   
+ [Customizing C++ Wizards with Common JScript Functions](../ide/customizing-cpp-wizards-with-common-jscript-functions.md)   
+ [JScript Functions for C++ Wizards](../ide/jscript-functions-for-cpp-wizards.md)   
  [Creating a Custom Wizard](../ide/creating-a-custom-wizard.md)   
  [Designing a Wizard](../ide/designing-a-wizard.md)   
  [SetNoPchSettings](../ide/setnopchsettings.md)   

@@ -1,13 +1,13 @@
 ---
 title: "Making Owner-Drawn Header Controls"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "controls [MFC], header"
   - "owner-drawn header controls"
 ms.assetid: 455c113b-e8d0-400c-8690-dbb92cba0d05
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,8 +38,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Making Owner-Drawn Header Controls
-You can define individual items of a header control ([CHeaderCtrl](../mfcref/cheaderctrl-class.md)) to be owner-drawn items. For more information, see [Owner-Drawn Header Controls](http://msdn.microsoft.com/library/windows/desktop/bb775238) in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+You can define individual items of a header control ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) to be owner-drawn items. For more information, see [Owner-Drawn Header Controls](http://msdn.microsoft.com/library/windows/desktop/bb775238) in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
   
 ## See Also  
  [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

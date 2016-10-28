@@ -1,13 +1,13 @@
 ---
 title: "Aggregates and Unions"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "aggregates [C++], and unions"
 ms.assetid: 859fc211-b111-4f12-af98-de78e48f9b92
 caps.latest.revision: 7
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -73,7 +74,7 @@ Other types such as arrays, structs, and unions have stricter alignment requirem
   
 -   It is possible to align data in such a way as to be greater than the alignment requirements as long as the previous rules are maintained.  
   
--   An individual compiler may adjust the packing of a structure for size reasons. For example [/Zp (Struct Member Alignment)](../buildref/-zp--struct-member-alignment-.md) allows for adjusting the packing of structures.  
+-   An individual compiler may adjust the packing of a structure for size reasons. For example [/Zp (Struct Member Alignment)](../build/reference/zp-struct-member-alignment.md) allows for adjusting the packing of structures.  
   
 ## See Also  
  [Types and Storage](../build/types-and-storage.md)

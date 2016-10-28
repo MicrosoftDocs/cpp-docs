@@ -1,13 +1,13 @@
 ---
 title: "Programming with ATL and C Run-Time Code"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "_ATL_MIN_CRT macro"
   - "ATL, C Run-Time library (CRT)"
 ms.assetid: 20f03b66-1eb7-4add-84a2-6047db0911eb
-caps.latest.revision: 10
+caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -46,14 +47,15 @@ This section discusses the benefits of using the C Run-Time Library (CRT) with e
  Discusses the project settings and linker options for linking to the CRT; also provides details on how linking to the CRT affects your program image.  
   
 ## Related Sections  
- [ATL](../atl/active-template-library--atl--concepts.md)  
+ [ATL](../atl/active-template-library-atl-concepts.md)  
  Provides links to conceptual topics on how to program using the Active Template Library.  
   
  [Run-Time Library Behavior](../build/run-time-library-behavior.md)  
  Provides details on how the CRT startup code works.  
   
- [C Run-Time Libraries](../crt/crt-library-features.md)  
+ [C Run-Time Libraries](../c-runtime-library/crt-library-features.md)  
  Discusses the various .lib files that comprise the C run-time libraries and lists their associated compiler options and preprocessor directives.  
   
 ## See Also  
- [Concepts](../atl/active-template-library--atl--concepts.md)
+ [Concepts](../atl/active-template-library-atl-concepts.md)
+

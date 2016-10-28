@@ -1,13 +1,13 @@
 ---
 title: "Dynamic-Link Library Support"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "USRDLLs, DLL support"
   - "NAFXDWD.LIB"
 ms.assetid: cc31c69f-3c78-4db1-9ecd-0fd8dc3217e3
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,7 +39,8 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Dynamic-Link Library Support
-The NAFXCW.lib and NAFXCWD.lib libraries (listed in the Static-Link Library Naming Conventions table in [Library Naming Conventions](../mfc/library-naming-conventions.md)) create your project as a dynamic-link library, called a "Regular DLL" (formerly a "USRDLL") that can be used with applications not built with the class library. This DLL support is not the same as MFCx0.DLL and MFCx0D.DLL (known as AFXDLL), which contain the entire class library in a DLL. For more information, see [DLLs](../build/dlls-in-visual-c--.md). For a table of DLL names, see [Naming Conventions for MFC DLLs](../build/naming-conventions-for-mfc-dlls.md).  
+The NAFXCW.lib and NAFXCWD.lib libraries (listed in the Static-Link Library Naming Conventions table in [Library Naming Conventions](../mfc/library-naming-conventions.md)) create your project as a dynamic-link library, called a "Regular DLL" (formerly a "USRDLL") that can be used with applications not built with the class library. This DLL support is not the same as MFCx0.DLL and MFCx0D.DLL (known as AFXDLL), which contain the entire class library in a DLL. For more information, see [DLLs](../build/dlls-in-visual-cpp.md). For a table of DLL names, see [Naming Conventions for MFC DLLs](../build/naming-conventions-for-mfc-dlls.md).  
   
 ## See Also  
  [MFC Library Versions](../mfc/mfc-library-versions.md)
+

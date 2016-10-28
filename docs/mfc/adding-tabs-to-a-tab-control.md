@@ -1,13 +1,13 @@
 ---
 title: "Adding Tabs to a Tab Control"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "CTabCtrl class, adding tabs"
   - "tabs, adding to CTabCtrl class"
 ms.assetid: 7f3d9340-e3c7-4c71-9912-be57534ecc78
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -36,13 +37,13 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Adding Tabs to a Tab Control
-After creating the tab control ([CTabCtrl](../mfcref/ctabctrl-class.md)), add as many tabs as you need.  
+After creating the tab control ([CTabCtrl](../mfc/reference/ctabctrl-class.md)), add as many tabs as you need.  
   
 ### To add a tab item  
   
 1.  Prepare a [TCITEM](http://msdn.microsoft.com/library/windows/desktop/bb760554) structure.  
   
-2.  Call [CTabCtrl::InsertItem](../Topic/CTabCtrl::InsertItem.md), passing the structure.  
+2.  Call [CTabCtrl::InsertItem](../mfc/reference/ctabctrl-class.md#ctabctrl__insertitem), passing the structure.  
   
 3.  Repeat steps 1 and 2 for additional tab items.  
   
@@ -50,4 +51,5 @@ After creating the tab control ([CTabCtrl](../mfcref/ctabctrl-class.md)), add as
   
 ## See Also  
  [Using CTabCtrl](../mfc/using-ctabctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

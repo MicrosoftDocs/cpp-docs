@@ -1,18 +1,19 @@
 ---
 title: "Unwind Procedure"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 ms.assetid: 82c5d0ca-70be-4d1a-a306-bfe01c29159f
 caps.latest.revision: 11
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -54,4 +55,4 @@ The unwind code array is sorted into descending order. When an exception occurs,
  The smallest set of unwind data is 8 bytes. This would represent a function that only allocated 128 bytes of stack or less, and possibly saved one nonvolatile register. This is also the size of a chained unwind info structure for a zero-length prolog with no unwind codes.  
   
 ## See Also  
- [Exception Handling (x64)](../build/exception-handling--x64-.md)
+ [Exception Handling (x64)](../build/exception-handling-x64.md)

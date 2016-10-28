@@ -1,13 +1,13 @@
 ---
 title: "Design Principles for Collection and Enumerator Interfaces"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "enumerator interfaces"
   - "collection interfaces"
 ms.assetid: ea19a39e-6333-41a1-be62-5435c236640e
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -44,3 +45,4 @@ There are different design principles behind each type of interface:
   
 ## See Also  
  [Collections and Enumerators](../atl/atl-collections-and-enumerators.md)
+

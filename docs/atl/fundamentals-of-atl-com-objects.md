@@ -1,13 +1,13 @@
 ---
 title: "Fundamentals of ATL COM Objects"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "ATL COM objects"
   - "COM objects, ATL"
 ms.assetid: 0f9c9d98-cc28-45da-89ac-dc94cee422fe
-caps.latest.revision: 23
+caps.latest.revision: 25
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,7 +44,7 @@ The following illustration depicts the relationship among the classes and interf
 > [!NOTE]
 >  This diagram shows that `CComObject` is derived from `CYourClass` whereas `CComAggObject` and `CComPolyObject` include `CYourClass` as a member variable.  
   
- There are three ways to define an ATL COM object. The standard option is to use the `CComObject` class which is derived from `CYourClass`. The second option is to create an aggregated object by using the `CComAggObject` class. The third option is to use the `CComPolyObject` class. `CComPolyObject` acts as a hybrid: it can function as a `CComObject` class or as a `CComAggObject` class, depending on how it is first created. For more information about how to use the `CComPolyObject` class, see [CComPolyObject Class](../atl/ccompolyobject-class.md).  
+ There are three ways to define an ATL COM object. The standard option is to use the `CComObject` class which is derived from `CYourClass`. The second option is to create an aggregated object by using the `CComAggObject` class. The third option is to use the `CComPolyObject` class. `CComPolyObject` acts as a hybrid: it can function as a `CComObject` class or as a `CComAggObject` class, depending on how it is first created. For more information about how to use the `CComPolyObject` class, see [CComPolyObject Class](../atl/reference/ccompolyobject-class.md).  
   
  When you use standard ATL COM, you use two objects: an outer object and an inner object. External clients access the functionality of the inner object through the wrapper functions that are defined in the outer object. The outer object is of type `CComObject`.  
   
@@ -53,23 +54,23 @@ The following illustration depicts the relationship among the classes and interf
   
  ATL implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) in two phases:  
   
--   [CComObject](../atl/ccomobject-class.md), [CComAggObject](../atl/ccomaggobject-class.md), or [CComPolyObject](../atl/ccompolyobject-class.md) implements the **IUnknown** methods.  
+-   [CComObject](../atl/reference/ccomobject-class.md), [CComAggObject](../atl/reference/ccomaggobject-class.md), or [CComPolyObject](../atl/reference/ccompolyobject-class.md) implements the **IUnknown** methods.  
   
--   [CComObjectRoot](../atl/ccomobjectroot-class.md) or [CComObjectRootEx](../atl/ccomobjectrootex-class.md) manages the reference count and outer pointers of **IUnknown**.  
+-   [CComObjectRoot](../atl/reference/ccomobjectroot-class.md) or [CComObjectRootEx](../atl/reference/ccomobjectrootex-class.md) manages the reference count and outer pointers of **IUnknown**.  
   
  Other aspects of your ATL COM object are handled by other classes:  
   
--   [CComCoClass](../atl/ccomcoclass-class.md) defines the object's default class factory and aggregation model.  
+-   [CComCoClass](../atl/reference/ccomcoclass-class.md) defines the object's default class factory and aggregation model.  
   
--   [IDispatchImpl](../atl/idispatchimpl-class.md) provides a default implementation of the `IDispatch Interface` portion of any dual interfaces on the object.  
+-   [IDispatchImpl](../atl/reference/idispatchimpl-class.md) provides a default implementation of the `IDispatch Interface` portion of any dual interfaces on the object.  
   
--   [ISupportErrorInfoImpl](../atl/isupporterrorinfoimpl-class.md) implements the **ISupportErrorInfo** interface that ensures error information can be propagated up the call chain correctly.  
+-   [ISupportErrorInfoImpl](../atl/reference/isupporterrorinfoimpl-class.md) implements the **ISupportErrorInfo** interface that ensures error information can be propagated up the call chain correctly.  
   
 ## In This Section  
  [Implementing CComObjectRootEx](../atl/implementing-ccomobjectrootex.md)  
  Show example COM map entries for implementing `CComObjectRootEx`.  
   
- [Implementing CComObject, CComAggObject, and CComPolyObject](../atl/implementing-ccomobject--ccomaggobject--and-ccompolyobject.md)  
+ [Implementing CComObject, CComAggObject, and CComPolyObject](../atl/implementing-ccomobject-ccomaggobject-and-ccompolyobject.md)  
  Discusses how the **DECLARE_\*_AGGREGATABLE** macros affect the use of `CComObject`, `CComAggObject`, and `CComPolyObject`.  
   
  [Supporting IDispatch and IErrorInfo](../atl/supporting-idispatch-and-ierrorinfo.md)  
@@ -85,11 +86,12 @@ The following illustration depicts the relationship among the classes and interf
  Lists the steps for creating an aggregated object.  
   
 ## Related Sections  
- [Creating an ATL Project](../atl/creating-an-atl-project.md)  
+ [Creating an ATL Project](../atl/reference/creating-an-atl-project.md)  
  Provides information about creating an ATL COM object.  
   
- [ATL](../atl/active-template-library--atl--concepts.md)  
+ [ATL](../atl/active-template-library-atl-concepts.md)  
  Provides links to conceptual topics on how to program using the Active Template Library.  
   
 ## See Also  
- [Concepts](../atl/active-template-library--atl--concepts.md)
+ [Concepts](../atl/active-template-library-atl-concepts.md)
+

@@ -1,13 +1,13 @@
 ---
 title: "Containers"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "containers [C++], OLE container applications"
   - "containers [C++], container applications"
 ms.assetid: b19d7c05-4d02-44bd-b76a-4a6c25994a62
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,18 +41,19 @@ translation.priority.ht:
 A container application is an application that can incorporate embedded or linked items into its own documents. The documents managed by a container application must be able to store and display OLE compound document components as well as data created by the application itself. A container application must also allow users to insert new items or edit existing items.  
   
 ## In This Section  
- [Implement a Container](../mfc/containers--implementing-a-container.md)  
+ [Implement a Container](../mfc/containers-implementing-a-container.md)  
   
- [Container Client Items](../mfc/containers--client-items.md)  
+ [Container Client Items](../mfc/containers-client-items.md)  
   
- [Use Compound Files](../mfc/containers--compound-files.md)  
+ [Use Compound Files](../mfc/containers-compound-files.md)  
   
- [Container User-Interface Issues](../mfc/containers--user-interface-issues.md)  
+ [Container User-Interface Issues](../mfc/containers-user-interface-issues.md)  
   
- [Advanced Features of Containers](../mfc/containers--advanced-features.md)  
+ [Advanced Features of Containers](../mfc/containers-advanced-features.md)  
   
 ## See Also  
  [OLE](../mfc/ole-in-mfc.md)   
  [Servers](../mfc/servers.md)   
- [Activation](../mfc/activation--c---.md)   
- [Menus and Resources (OLE)](../mfc/menus-and-resources--ole-.md)
+ [Activation](../mfc/activation-cpp.md)   
+ [Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)
+

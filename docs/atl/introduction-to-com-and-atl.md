@@ -1,13 +1,13 @@
 ---
 title: "Introduction to COM and ATL"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "index-page "
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "ATL, COM"
   - "COM objects, ATL"
 ms.assetid: 35d6ae9c-abbb-42f0-9344-33f3c19ac3ce
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -48,8 +49,9 @@ This section provides a brief introduction to COM and ATL.
  [The Component Object Model](http://msdn.microsoft.com/library/windows/desktop/ms694363)  
  The [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)] material on COM.  
   
- [ATL](../atl/active-template-library--atl--concepts.md)  
+ [ATL](../atl/active-template-library-atl-concepts.md)  
  Provides links to conceptual topics on how to program using the Active Template Library.  
   
  [ATL Class Overview](../atl/atl-class-overview.md)  
  Provides reference information and links to the ATL classes.
+

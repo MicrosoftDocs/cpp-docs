@@ -1,13 +1,13 @@
 ---
 title: "Hosting ActiveX Controls Using ATL AXHost"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "hosting ActiveX controls"
   - "AXHost method"
 ms.assetid: 2c1200ec-effb-4814-820a-509519699468
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Hosting ActiveX Controls Using ATL AXHost
-The sample in this topic shows how to create AXHost and how to host an ActiveX control using various ATL functions. It also shows how to access the control and sink events (using [IDispEventImpl](../atl/idispeventimpl-class.md)) from the control that is hosted. The sample hosts the Calendar control in a main window or in a child window.  
+The sample in this topic shows how to create AXHost and how to host an ActiveX control using various ATL functions. It also shows how to access the control and sink events (using [IDispEventImpl](../atl/reference/idispeventimpl-class.md)) from the control that is hosted. The sample hosts the Calendar control in a main window or in a child window.  
   
  Notice the definition of the `USE_METHOD` symbol. You can change the value of this symbol to vary between 1 and 8. The value of the symbol determines how the control will be created:  
   
@@ -59,7 +60,7 @@ The sample in this topic shows how to create AXHost and how to host an ActiveX c
 |7|Child window|Multiple steps|CreateControl|  
 |8|Main window|Multiple steps|AtlAxCreateControl|  
   
- [!code[NVC_ATL_AxHost#1](../atl/codesnippet/CPP/hosting-activex-controls-using-atl-axhost_1.cpp)]  
+ [!code-cpp[NVC_ATL_AxHost#1](../atl/codesnippet/CPP/hosting-activex-controls-using-atl-axhost_1.cpp)]  
   
 ## See Also  
  [Control Containment FAQ](../atl/atl-control-containment-faq.md)   
@@ -67,5 +68,6 @@ The sample in this topic shows how to create AXHost and how to host an ActiveX c
  [AtlAxCreateControlEx](../Topic/AtlAxCreateControlEx.md)   
  [AtlAxCreateControlLic](../Topic/AtlAxCreateControlLic.md)   
  [AtlAxCreateControlLicEx](../Topic/AtlAxCreateControlLicEx.md)   
- [CAxWindow2T Class](../atl/caxwindow2t-class.md)   
- [IAxWinHostWindowLic Interface](../atl/iaxwinhostwindowlic-interface.md)
+ [CAxWindow2T Class](../atl/reference/caxwindow2t-class.md)   
+ [IAxWinHostWindowLic Interface](../atl/reference/iaxwinhostwindowlic-interface.md)
+

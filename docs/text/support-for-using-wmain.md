@@ -1,13 +1,13 @@
 ---
 title: "Support for Using wmain"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "wWinMain"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "wmain function"
 ms.assetid: 41213c41-668c-40a4-8a1e-77d9eded720d
 caps.latest.revision: 9
+author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 translation.priority.ht: 
@@ -44,7 +45,7 @@ wmain( int argc, wchar_t *argv[ ], wchar_t *envp[ ] )
 ```  
   
 > [!NOTE]
->  MFC Unicode applications use **wWinMain** as the entry point. In this case, `CWinApp::m_lpCmdLine` is a Unicode string. Be sure to set **wWinMainCRTStartup** with the [/ENTRY](../buildref/-entry--entry-point-symbol-.md) linker option.  
+>  MFC Unicode applications use **wWinMain** as the entry point. In this case, `CWinApp::m_lpCmdLine` is a Unicode string. Be sure to set **wWinMainCRTStartup** with the [/ENTRY](../build/reference/entry-entry-point-symbol.md) linker option.  
   
  If your program uses a **main** function, the multibyte-character environment is created by the run-time library at program startup. A wide-character copy of the environment is created only when needed (for example, by a call to the `_wgetenv` or `_wputenv` functions). On the first call to `_wputenv`, or on the first call to `_wgetenv` if an MBCS environment already exists, a corresponding wide-character string environment is created. The environment is then pointed to by the `_wenviron` global variable, which is a wide-character version of the `_environ` global variable. At this point, two copies of the environment (MBCS and Unicode) exist simultaneously and are maintained by the run-time system throughout the life of the program.  
   

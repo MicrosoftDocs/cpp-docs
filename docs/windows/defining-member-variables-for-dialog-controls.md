@@ -1,13 +1,13 @@
 ---
 title: "Defining Member Variables for Dialog Controls"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "controls [C++], member variables"
   - "Dialog editor, defining member variables for controls"
 ms.assetid: 84347c63-c33c-4b04-91f5-6d008c45ba58
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -66,11 +67,12 @@ To define a member variable for any dialog box control except buttons, you can u
  MFC  
   
 ## See Also  
- [Mapping Messages to Functions](../mfcref/mapping-messages-to-functions.md)   
- [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards--c---.md)   
- [MFC Class Wizard](../mfcref/mfc-class-wizard.md)   
- [Adding a Class](../ide/adding-a-class--visual-c---.md)   
- [Adding a Member Function](../ide/adding-a-member-function--visual-c---.md)   
- [Adding a Member Variable](../ide/adding-a-member-variable---visual-c---.md)   
- [Overriding a Virtual Function](../ide/overriding-a-virtual-function--visual-c---.md)   
- [MFC Message Handler](../mfcref/adding-an-mfc-message-handler.md)
+ [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)   
+ [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)   
+ [MFC Class Wizard](../mfc/reference/mfc-class-wizard.md)   
+ [Adding a Class](../ide/adding-a-class-visual-cpp.md)   
+ [Adding a Member Function](../ide/adding-a-member-function-visual-cpp.md)   
+ [Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)   
+ [Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)   
+ [MFC Message Handler](../mfc/reference/adding-an-mfc-message-handler.md)
+

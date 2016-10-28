@@ -1,13 +1,13 @@
 ---
 title: "ConvertStringToBSTR"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "ConvertStringToBSTR"
@@ -16,7 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ConvertStringToBSTR function"
 ms.assetid: 071f9b3b-9643-4e06-a1e5-de96ed15bab2
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -73,14 +74,17 @@ int main() {
 }  
 ```  
   
- **char \* text: Test**  
-**BSTR text: Test**   
+```Output  
+char * text: Test  
+BSTR text: Test  
+```  
+  
 ## END Microsoft Specific  
   
 ## Requirements  
  **Header:** comutil.h  
   
- **Lib:** comsuppw.lib or comsuppwd.lib (see [/Zc:wchar_t (wchar_t Is Native Type)](../buildref/-zc-wchar_t--wchar_t-is-native-type-.md) for more information)  
+ **Lib:** comsuppw.lib or comsuppwd.lib (see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) for more information)  
   
 ## See Also  
  [Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)

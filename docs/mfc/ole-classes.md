@@ -1,13 +1,13 @@
 ---
 title: "OLE Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.classes.ole"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "OLE classes [C++]"
   - "OLE [C++], classes"
 ms.assetid: 4c2b2bca-fafb-4d2d-8498-9ed1e04011d2
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -72,3 +73,4 @@ The OLE classes work with the other application framework classes to provide eas
   
 ## See Also  
  [Class Overview](../mfc/class-library-overview.md)
+

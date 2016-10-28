@@ -1,13 +1,13 @@
 ---
 title: "bindable"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "vc-attr.bindable"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "bindable attribute"
 ms.assetid: a2360f92-927b-4af8-98cc-6eca7f4ec954
 caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -50,11 +51,11 @@ Indicates that the property supports data binding.
   
  The following MFC samples show the use of **bindable**:  
   
--   [Controls Samples: MFC-Based ActiveX Controls](assetId:///a44adf86-0ba0-4504-bedb-512b6cba2e63)  
+-   [Controls Samples: MFC-Based ActiveX Controls](http://msdn.microsoft.com/en-us/a44adf86-0ba0-4504-bedb-512b6cba2e63)  
   
--   [CIRC Sample: ActiveX Control](assetId:///9ba34d04-280e-49f4-90ae-41a6be44c95b)  
+-   [CIRC Sample: ActiveX Control](http://msdn.microsoft.com/en-us/9ba34d04-280e-49f4-90ae-41a6be44c95b)  
   
--   [TESTHELP Sample: ActiveX Control with Tooltips and Help](assetId:///d822861d-c6f0-4d0a-ad11-970eebb1e8cd)  
+-   [TESTHELP Sample: ActiveX Control with Tooltips and Help](http://msdn.microsoft.com/en-us/d822861d-c6f0-4d0a-ad11-970eebb1e8cd)  
   
 ## Example  
  The following code shows how you can use **bindable** on a property:  
@@ -100,4 +101,4 @@ __interface IPropDemo : IDispatch {
  [displaybind](../windows/displaybind.md)   
  [immediatebind](../windows/immediatebind.md)   
  [requestedit](../windows/requestedit.md)   
- [Attributes Samples](assetId:///558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

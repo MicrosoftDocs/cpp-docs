@@ -1,13 +1,13 @@
 ---
 title: "CommandHandler"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "CommandHandler"
@@ -16,7 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CommandHandler function"
 ms.assetid: 662bc7bf-4a10-42b3-986d-d8bae4f63551
-caps.latest.revision: 11
+caps.latest.revision: 13
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,15 +41,14 @@ translation.priority.ht:
 ## Syntax  
   
 ```  
-  
-      LRESULT   
-      CommandHandler  
-      (  
-   WORD wNotifyCode,  
-   WORD wID,  
-   HWND hWndCtl,  
-   BOOL& bHandled   
-);  
+ 
+    LRESULT 
+    CommandHandler 
+ (
+    WORD wNotifyCode,  
+    WORD wID,  
+    HWND hWndCtl,  
+    BOOL& bHandled);
 ```  
   
 #### Parameters  
@@ -72,5 +72,6 @@ translation.priority.ht:
   
 ## See Also  
  [Implementing a Window](../atl/implementing-a-window.md)   
- [Message Maps](../atl/message-maps--atl-.md)   
+ [Message Maps](../atl/message-maps-atl.md)   
  [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583)
+

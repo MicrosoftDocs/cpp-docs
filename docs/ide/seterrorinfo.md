@@ -1,13 +1,13 @@
 ---
 title: "SetErrorInfo"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "SetErrorInfo"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "SetErrorInfo method"
 ms.assetid: 78bca763-3f90-4e04-b566-b4b7fe2431b1
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -51,10 +52,10 @@ Called by [OnWizFinish](../ide/onwizfinish.md) and [CanUseFileName](../ide/canus
  The error object.  
   
 ## Remarks  
- Called by [OnWizFinish](../ide/onwizfinish.md) and [CanUseFileName](../ide/canusefilename.md) to provide current error information. See \<xref:Microsoft.VisualStudio.VsWizard.VCWizCtlClass.SetErrorInfo*> in the Visual C++ Wizard Model documentation for more information.  
+ Called by [OnWizFinish](../ide/onwizfinish.md) and [CanUseFileName](../ide/canusefilename.md) to provide current error information. See <xref:Microsoft.VisualStudio.VsWizard.VCWizCtlClass.SetErrorInfo*> in the Visual C++ Wizard Model documentation for more information.  
   
 ## See Also  
- [Customizing C++ Wizards with Common JScript Functions](../ide/customizing-c---wizards-with-common-jscript-functions.md)   
- [JScript Functions for C++ Wizards](../ide/jscript-functions-for-c---wizards.md)   
+ [Customizing C++ Wizards with Common JScript Functions](../ide/customizing-cpp-wizards-with-common-jscript-functions.md)   
+ [JScript Functions for C++ Wizards](../ide/jscript-functions-for-cpp-wizards.md)   
  [Creating a Custom Wizard](../ide/creating-a-custom-wizard.md)   
  [Designing a Wizard](../ide/designing-a-wizard.md)

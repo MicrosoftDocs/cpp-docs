@@ -1,13 +1,13 @@
 ---
 title: "Implements Structure"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "implements/Microsoft::WRL::Implements"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "Implements structure"
 ms.assetid: 29b13e90-34d4-4a0b-babd-5187c9eb0c36
 caps.latest.revision: 5
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -120,15 +121,15 @@ struct __declspec(novtable) Implements<RuntimeClassFlags<flags>, I0, I1, I2, I3,
   
 |Name|Description|  
 |----------|-----------------|  
-|[Implements::CanCastTo Method](../windows/implements--cancastto-method.md)|Gets a pointer to the specified interface.|  
-|[Implements::CastToUnknown Method](../windows/implements--casttounknown-method.md)|Gets a pointer to the underlying IUnknown interface.|  
-|[Implements::FillArrayWithIid Method](../windows/implements--fillarraywithiid-method.md)|Inserts the interface ID specified by the current zeroth template parameter into the specified array element.|  
+|[Implements::CanCastTo Method](../windows/implements-cancastto-method.md)|Gets a pointer to the specified interface.|  
+|[Implements::CastToUnknown Method](../windows/implements-casttounknown-method.md)|Gets a pointer to the underlying IUnknown interface.|  
+|[Implements::FillArrayWithIid Method](../windows/implements-fillarraywithiid-method.md)|Inserts the interface ID specified by the current zeroth template parameter into the specified array element.|  
   
 ### Protected Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[Implements::IidCount Constant](../windows/implements--iidcount-constant.md)|Holds the number of implemented interface IDs.|  
+|[Implements::IidCount Constant](../windows/implements-iidcount-constant.md)|Holds the number of implemented interface IDs.|  
   
 ## Inheritance Hierarchy  
  `I0`  
@@ -149,4 +150,4 @@ struct __declspec(novtable) Implements<RuntimeClassFlags<flags>, I0, I1, I2, I3,
  **Namespace:** Microsoft::WRL  
   
 ## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft--wrl-namespace.md)
+ [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

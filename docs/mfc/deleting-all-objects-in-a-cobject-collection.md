@@ -1,13 +1,13 @@
 ---
 title: "Deleting All Objects in a CObject Collection"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "objects in CObject collections"
   - "collection classes, shared objects"
 ms.assetid: 81d2c1d5-a0a5-46e1-8ab9-82b45cf7afd2
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -64,7 +65,7 @@ This article explains how to delete all objects in a collection (without deletin
   
  The following example shows how to delete all objects from a list of `CPerson` objects. Each object in the list is a pointer to a `CPerson` object that was originally allocated on the heap.  
   
- [!code[NVC_MFCCollections#17](../mfc/codesnippet/CPP/deleting-all-objects-in-a-cobject-collection_1.cpp)]  
+ [!code-cpp[NVC_MFCCollections#17](../mfc/codesnippet/CPP/deleting-all-objects-in-a-cobject-collection_1.cpp)]  
   
  The last function call, `RemoveAll`, is a list member function that removes all elements from the list. The member function `RemoveAt` removes a single element.  
   
@@ -80,7 +81,7 @@ This article explains how to delete all objects in a collection (without deletin
   
      The code for deleting all elements of an array is as follows:  
   
-     [!code[NVC_MFCCollections#18](../mfc/codesnippet/CPP/deleting-all-objects-in-a-cobject-collection_2.cpp)]  
+     [!code-cpp[NVC_MFCCollections#18](../mfc/codesnippet/CPP/deleting-all-objects-in-a-cobject-collection_2.cpp)]  
   
  As with the list example above, you can call `RemoveAll` to remove all elements in an array or `RemoveAt` to remove an individual element.  
   
@@ -94,9 +95,10 @@ This article explains how to delete all objects in a collection (without deletin
   
      The code for deleting all elements of a `CMap` collection is as follows. Each element in the map has a string as the key and a `CPerson` object (derived from `CObject`) as the value.  
   
-     [!code[NVC_MFCCollections#19](../mfc/codesnippet/CPP/deleting-all-objects-in-a-cobject-collection_3.cpp)]  
+     [!code-cpp[NVC_MFCCollections#19](../mfc/codesnippet/CPP/deleting-all-objects-in-a-cobject-collection_3.cpp)]  
   
  You can call `RemoveAll` to remove all elements in a map or `RemoveKey` to remove an individual element with the specified key.  
   
 ## See Also  
  [Accessing All Members of a Collection](../mfc/accessing-all-members-of-a-collection.md)
+

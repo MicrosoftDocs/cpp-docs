@@ -1,13 +1,13 @@
 ---
 title: "MFC Library Versions"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "MFC, library versions"
   - "libraries, versions"
 ms.assetid: 3d7a8ae1-e276-4cf8-ba63-360c2f85ad0e
-caps.latest.revision: 10
+caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -51,3 +52,4 @@ This article provides information on available versions of the Microsoft Foundat
   
 ## See Also  
  [General MFC Topics](../mfc/general-mfc-topics.md)
+

@@ -1,13 +1,13 @@
 ---
 title: "this Pointer"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "this"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "pointers, to class instance"
   - "this pointer"
 ms.assetid: 92e3256a-4ad9-4d46-8be1-d77fad90791f
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -155,8 +156,11 @@ int main()
 }  
 ```  
   
- **my buffer**  
-**your buffer**   
+```Output  
+my buffer  
+your buffer  
+```  
+  
 ## Type of the this pointer  
  The **this** pointer's type can be modified in the function declaration by the **const** and `volatile` keywords. To declare a function as having the attributes of one or more of these keywords, add the keyword(s) after the function argument list.  
   
@@ -209,6 +213,6 @@ int main()
 >  Constructors and destructors cannot be declared as **const** or `volatile`. They can, however, be invoked on **const** or `volatile` objects.  
   
 ## See Also  
- [Keywords](../cpp/keywords--c---.md)   
- [Type of this Pointer](../notintoc/type-of-this-pointer.md)   
- [Argument Matching and the this Pointer](../notintoc/argument-matching-and-the-this-pointer.md)
+ [Keywords](../cpp/keywords-cpp.md)   
+ [Type of this Pointer](../misc/type-of-this-pointer.md)   
+ [Argument Matching and the this Pointer](../misc/argument-matching-and-the-this-pointer.md)

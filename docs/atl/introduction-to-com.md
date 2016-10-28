@@ -1,20 +1,21 @@
 ---
 title: "Introduction to COM"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "index-page "
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "COM"
 ms.assetid: 120735d9-db71-4ad3-a730-ce576ea2354e
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,7 +38,7 @@ COM is the fundamental "object model" on which ActiveX Controls and OLE are buil
   
  Fundamental to COM are these concepts:  
   
--   [Interfaces](../atl/interfaces--atl-.md) — the mechanism through which an object exposes its functionality.  
+-   [Interfaces](../atl/interfaces-atl.md) — the mechanism through which an object exposes its functionality.  
   
 -   [IUnknown](../atl/iunknown.md) — the basic interface on which all others are based. It implements the reference counting and interface querying mechanisms running through COM.  
   
@@ -52,3 +53,4 @@ COM is the fundamental "object model" on which ActiveX Controls and OLE are buil
 ## See Also  
  [Introduction to COM and ATL](../atl/introduction-to-com-and-atl.md)   
  [The Component Object Model](http://msdn.microsoft.com/library/windows/desktop/ms694363)
+

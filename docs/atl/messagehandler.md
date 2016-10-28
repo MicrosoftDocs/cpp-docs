@@ -1,13 +1,13 @@
 ---
 title: "MessageHandler"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "MessageHandler"
@@ -16,7 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "MessageHandler function"
 ms.assetid: 8a0acf97-1b0d-4226-91b9-75446634a03c
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,15 +41,14 @@ translation.priority.ht:
 ## Syntax  
   
 ```  
-  
-      LRESULT   
-      MessageHandler  
-      (  
-   UINT uMsg,  
-   WPARAM wParam,  
-   LPARAM lParam,  
-   BOOL& bHandled  
-);  
+ 
+    LRESULT 
+    MessageHandler 
+ (
+    UINT uMsg,  
+    WPARAM wParam,  
+    LPARAM lParam,  
+    BOOL& bHandled);
 ```  
   
 #### Parameters  
@@ -72,5 +72,6 @@ translation.priority.ht:
   
 ## See Also  
  [Implementing a Window](../atl/implementing-a-window.md)   
- [Message Maps](../atl/message-maps--atl-.md)   
+ [Message Maps](../atl/message-maps-atl.md)   
  [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583)
+

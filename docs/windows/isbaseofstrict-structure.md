@@ -1,13 +1,13 @@
 ---
 title: "IsBaseOfStrict Structure"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "internal/Microsoft::WRL::Details::IsBaseOfStrict"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "IsBaseOfStrict structure"
 ms.assetid: 6fed7366-c8d4-4991-b4fb-43ed93f8e1bf
 caps.latest.revision: 5
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -71,7 +72,7 @@ struct IsBaseOfStrict<Base, Base>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[IsBaseOfStrict::value Constant](../windows/isbaseofstrict--value-constant.md)|Indicates whether one type is the base of another.|  
+|[IsBaseOfStrict::value Constant](../windows/isbaseofstrict-value-constant.md)|Indicates whether one type is the base of another.|  
   
 ## Inheritance Hierarchy  
  `IsBaseOfStrict`  
@@ -82,4 +83,4 @@ struct IsBaseOfStrict<Base, Base>;
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft--wrl--details-namespace.md)
+ [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

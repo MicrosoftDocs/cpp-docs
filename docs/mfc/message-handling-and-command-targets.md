@@ -1,13 +1,13 @@
 ---
 title: "Message Handling and Command Targets"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "IOleCommandTarget"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "IOleCommandTarget interface"
   - "command routing, command targets"
 ms.assetid: e45ce14c-e6b6-4262-8f3b-4e891e0ec2a3
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -82,3 +83,4 @@ The command dispatch interface `IOleCommandTarget` defines a simple and extensib
   
 ## See Also  
  [Active Document Containers](../mfc/active-document-containers.md)
+

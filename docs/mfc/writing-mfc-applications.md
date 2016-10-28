@@ -1,13 +1,13 @@
 ---
 title: "Writing MFC Applications"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "application wizards [C++], Internet applications"
   - "MFC [C++], application development"
 ms.assetid: 6a8d8a03-abfa-4976-86c2-c5773a4b7179
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,15 +39,15 @@ translation.priority.ht:
 # Writing MFC Applications
 This article explains the initial steps you take to develop your application. First, you must decide what kind of application you are writing. Several of the choices were discussed in [Application Design Choices](../mfc/application-design-choices.md). Will your application be:  
   
--   Running on the Internet or an intranet?  
+-   Running on the Internet or an intranet  
   
--   Running on a client or on a server?  
+-   Running on a client or on a server  
   
--   Running in a browser or as a stand-alone application?  
+-   Running in a browser or as a stand-alone application  
   
--   Using COM or Active technology?  
+-   Using COM or Active technology  
   
--   Downloading data using WinInet or asynchronous monikers?  
+-   Downloading data using WinInet or asynchronous monikers  
   
  Your decisions determine which classes are appropriate for your application. Your answers also help determine the selections you make when you run the Application Wizard to begin constructing your application.  
   
@@ -67,3 +68,4 @@ This article explains the initial steps you take to develop your application. Fi
 ## See Also  
  [MFC Internet Programming Tasks](../mfc/mfc-internet-programming-tasks.md)   
  [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
+

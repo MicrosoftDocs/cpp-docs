@@ -1,13 +1,13 @@
 ---
 title: "pragma"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "vc-attr.pragma"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "pragma attribute"
 ms.assetid: 3f90d023-b8b5-4007-8311-008bb72cbea1
 caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -85,5 +86,5 @@ __interface A
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Stand-Alone Attributes](../windows/stand-alone-attributes.md)   
- [pack](../c/pack.md)   
- [Attributes Samples](assetId:///558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [pack](../preprocessor/pack.md)   
+ [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

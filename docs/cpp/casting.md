@@ -1,13 +1,13 @@
 ---
 title: "Casting"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -21,6 +21,7 @@ helpviewer_keywords:
   - "classes [C++], polymorphism"
 ms.assetid: 3dbeb06e-2f4b-4693-832d-624bc8ec95de
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -53,9 +54,9 @@ Class C with B Subobject and A Subobject
   
  Given an instance of class `C`, there is a `B` subobject and an `A` subobject. The instance of `C`, including the `A` and `B` subobjects, is the "complete object."  
   
- Using run-time type information, it is possible to check whether a pointer actually points to a complete object and can be safely cast to point to another object in its hierarchy. The [dynamic_cast](../cpp/dynamic_cast-operator.md) operator can be used to make these types of casts. It also performs the run-time check necessary to make the operation safe.  
+ Using run-time type information, it is possible to check whether a pointer actually points to a complete object and can be safely cast to point to another object in its hierarchy. The [dynamic_cast](../cpp/dynamic-cast-operator.md) operator can be used to make these types of casts. It also performs the run-time check necessary to make the operation safe.  
   
- For conversion of nonpolymorphic types, you can use the [static_cast](../cpp/static_cast-operator.md) operator (this topic explains the difference between static and dynamic casting conversions, and when it is appropriate to use each).  
+ For conversion of nonpolymorphic types, you can use the [static_cast](../cpp/static-cast-operator.md) operator (this topic explains the difference between static and dynamic casting conversions, and when it is appropriate to use each).  
   
  This section covers the following topics:  
   
@@ -64,4 +65,4 @@ Class C with B Subobject and A Subobject
 -   [Run-time type information](../cpp/run-time-type-information.md)  
   
 ## See Also  
- [Expressions](../cpp/expressions--c---.md)
+ [Expressions](../cpp/expressions-cpp.md)

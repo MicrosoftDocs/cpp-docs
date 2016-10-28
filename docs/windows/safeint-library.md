@@ -1,13 +1,13 @@
 ---
 title: "SafeInt Library"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "index-page "
 f1_keywords: 
   - "SafeInt"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "SafeInt library"
 ms.assetid: 5321e875-67c5-49d7-9650-85a876552d14
 caps.latest.revision: 10
+author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 translation.priority.ht: 
@@ -50,4 +51,4 @@ The SafeInt library helps prevent integer overflows that might result when the a
   
 |Section|Description|  
 |-------------|-----------------|  
-|[C/C++ Language and Standard Libraries](../Topic/C-C++%20Language%20and%20Standard%20Libraries.md)|Reference and conceptual content for the C and C++ languages and standard libraries.|
+|[C/C++ Language and Standard Libraries](../cpp/c-cpp-language-and-standard-libraries.md)|Reference and conceptual content for the C and C++ languages and standard libraries.|

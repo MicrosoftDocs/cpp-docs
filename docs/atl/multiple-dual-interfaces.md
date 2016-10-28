@@ -1,13 +1,13 @@
 ---
 title: "Multiple Dual Interfaces"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "IDispatchImpl class, multiple dual interfaces"
   - "COM_INTERFACE_ENTRY_IID macro"
 ms.assetid: 7fea86e6-247f-4063-be6e-85588a9e3719
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -45,7 +46,7 @@ You may want to combine the advantages of a dual interface (that is, the flexibi
 ## Exposing a Single IDispatch Interface  
  It is possible to expose multiple dual interfaces on a single object by deriving from two or more specializations of `IDispatchImpl`. However, if you allow clients to query for the `IDispatch` interface, you will need to use the [COM_INTERFACE_ENTRY2](../Topic/COM_INTERFACE_ENTRY2.md) macro (or [COM_INTERFACE_ENTRY_IID](../Topic/COM_INTERFACE_ENTRY_IID.md)) to specify which base class to use for the implementation of `IDispatch`.  
   
- [!code[NVC_ATL_COM#23](../atl/codesnippet/CPP/multiple-dual-interfaces_1.h)]  
+ [!code-cpp[NVC_ATL_COM#23](../atl/codesnippet/CPP/multiple-dual-interfaces_1.h)]  
   
  Because only one `IDispatch` interface is exposed, clients that can only access your objects through the `IDispatch` interface will not be able to access the methods or properties in any other interface.  
   
@@ -56,3 +57,4 @@ You may want to combine the advantages of a dual interface (that is, the flexibi
   
 ## See Also  
  [Dual Interfaces and ATL](../atl/dual-interfaces-and-atl.md)
+

@@ -1,13 +1,13 @@
 ---
 title: "Deployment Concepts"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "libraries [C++], application deployment issues"
 ms.assetid: ebd7f246-ab54-40e8-87fa-dac02c0047b3
 caps.latest.revision: 11
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -60,9 +61,9 @@ This section discusses the main considerations for deploying C++ applications.
   
 -   [Deployment Examples](../ide/deployment-examples.md).  
   
--   [Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies](../build/troubleshooting-c-c---isolated-applications-and-side-by-side-assemblies.md).  
+-   [Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md).  
   
 ## See Also  
- [Deploying Desktop Applications](../ide/deploying-native-desktop-applications--visual-c---.md)   
- [Understanding the Dependencies of a Visual C++ Application](../ide/understanding-the-dependencies-of-a-visual-c---application.md)   
- [Windows Installer Deployment](assetId:///121be21b-b916-43e2-8f10-8b080516d2a0)
+ [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)   
+ [Understanding the Dependencies of a Visual C++ Application](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md)   
+ [Windows Installer Deployment](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)

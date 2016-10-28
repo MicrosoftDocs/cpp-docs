@@ -1,13 +1,13 @@
 ---
 title: "Project Files"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "project files [C++], .vcproj file format"
 ms.assetid: 5261cf45-3136-40a6-899e-dc1339551401
 caps.latest.revision: 13
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -140,5 +141,5 @@ A Visual C++ project file is an XML-based file that has the .vcxproj file name e
 ```  
   
 ## See Also  
- [Building C++ Projects in Visual Studio](../ide/building-c---projects-in-visual-studio.md)   
+ [Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md)   
  [Working with Project Properties](../ide/working-with-project-properties.md)

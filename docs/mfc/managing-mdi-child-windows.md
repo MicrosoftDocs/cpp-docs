@@ -1,13 +1,13 @@
 ---
 title: "Managing MDI Child Windows"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "MDICLIENT"
@@ -22,7 +22,8 @@ helpviewer_keywords:
   - "child windows"
   - "MDI [C++], frame windows"
 ms.assetid: 1828d96e-a561-48ae-a661-ba9701de6bee
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -50,11 +51,12 @@ MDI Frame Windows and Children
   
  An MDI frame window also works in conjunction with the current MDI child window, if there is one. The MDI frame window delegates command messages to the MDI child before it tries to handle them itself.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Creating document frame windows](../mfc/creating-document-frame-windows.md)  
   
--   [Frame-window styles](../mfc/frame-window-styles--c---.md)  
+-   [Frame-window styles](../mfc/frame-window-styles-cpp.md)  
   
 ## See Also  
  [Using Frame Windows](../mfc/using-frame-windows.md)
+

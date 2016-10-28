@@ -1,13 +1,13 @@
 ---
 title: "ChainInterfaces Structure"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "implements/Microsoft::WRL::ChainInterfaces"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "ChainInterfaces structure"
 ms.assetid: d7415b59-5468-4bef-a3fd-8d82b12f0e9c
 caps.latest.revision: 3
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -117,16 +118,16 @@ struct ChainInterfaces<MixIn<DerivedType, BaseType, hasImplements>, I1, I2, I3, 
   
 |Name|Description|  
 |----------|-----------------|  
-|[ChainInterfaces::CanCastTo Method](../windows/chaininterfaces--cancastto-method.md)|Indicates whether the specified interface ID can be cast to each of the specializations defined by the ChainInterface template parameters.|  
-|[ChainInterfaces::CastToUnknown Method](../windows/chaininterfaces--casttounknown-method.md)|Casts the interface pointer of the type defined by the `I0` template parameter to a pointer to IUnknown.|  
-|[ChainInterfaces::FillArrayWithIid Method](../windows/chaininterfaces--fillarraywithiid-method.md)|Stores the interface ID defined by the `I0` template parameter into a specified location in a specified array of interface IDs.|  
-|[ChainInterfaces::Verify Method](../windows/chaininterfaces--verify-method.md)|Verifies that each interface defined by template parameters `I0` through `I9` inherits from IUnknown and/or IInspectable, and that `I0` inherits from `I1` through `I9`.|  
+|[ChainInterfaces::CanCastTo Method](../windows/chaininterfaces-cancastto-method.md)|Indicates whether the specified interface ID can be cast to each of the specializations defined by the ChainInterface template parameters.|  
+|[ChainInterfaces::CastToUnknown Method](../windows/chaininterfaces-casttounknown-method.md)|Casts the interface pointer of the type defined by the `I0` template parameter to a pointer to IUnknown.|  
+|[ChainInterfaces::FillArrayWithIid Method](../windows/chaininterfaces-fillarraywithiid-method.md)|Stores the interface ID defined by the `I0` template parameter into a specified location in a specified array of interface IDs.|  
+|[ChainInterfaces::Verify Method](../windows/chaininterfaces-verify-method.md)|Verifies that each interface defined by template parameters `I0` through `I9` inherits from IUnknown and/or IInspectable, and that `I0` inherits from `I1` through `I9`.|  
   
 ### Protected Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[ChainInterfaces::IidCount Constant](../windows/chaininterfaces--iidcount-constant.md)|The total number of interface IDs contained in the interfaces specified by template parameters `I0` through `I9`.|  
+|[ChainInterfaces::IidCount Constant](../windows/chaininterfaces-iidcount-constant.md)|The total number of interface IDs contained in the interfaces specified by template parameters `I0` through `I9`.|  
   
 ## Inheritance Hierarchy  
  `I0`  
@@ -139,4 +140,4 @@ struct ChainInterfaces<MixIn<DerivedType, BaseType, hasImplements>, I1, I2, I3, 
  **Namespace:** Microsoft::WRL  
   
 ## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft--wrl-namespace.md)
+ [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

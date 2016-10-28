@@ -1,13 +1,13 @@
 ---
 title: "MFC MBCS DLL Add-on"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "MBCS"
   - "MFC"
 ms.assetid: bebec0ff-e019-42ca-b5df-8c218ac5b54a
-caps.latest.revision: 15
+caps.latest.revision: 17
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -41,3 +42,4 @@ In Visual Studio 2015, the MFC library for multibyte character encoding (MBCS) i
   
 ## See Also  
  [MFC Library Versions](../mfc/mfc-library-versions.md)
+

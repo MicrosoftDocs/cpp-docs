@@ -1,13 +1,13 @@
 ---
 title: "Creating a Custom Wizard"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "custom wizards, creating in Visual C++ projects"
 ms.assetid: e9644201-c496-44d8-a7cf-e589b20f533a
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -46,7 +47,7 @@ The Visual C++ Custom Wizard is the tool to use when you need to create a new cu
   
 2.  In the **New Project** dialog box, select the **Custom Wizard** icon in the **Visual C++ &#124; General** templates pane to open the Custom Wizard.  
   
-3.  Define your [application settings](../ide/application-settings--custom-wizard.md) using the Custom Wizard.  
+3.  Define your [application settings](../ide/application-settings-custom-wizard.md) using the Custom Wizard.  
   
 4.  Click **Finish** to close the wizard and open your new project in the development environment.  
   

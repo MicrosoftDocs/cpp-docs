@@ -1,13 +1,13 @@
 ---
 title: "Module States of a Regular DLL Dynamically Linked to MFC"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "DLLs [C++], module states"
 ms.assetid: b4493e79-d25e-4b7f-a565-60de5b32c723
 caps.latest.revision: 7
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -45,7 +46,7 @@ The ability to dynamically link a regular DLL to the MFC DLL allows some configu
   
  But with the ability to dynamically link a regular DLL to the MFC DLL, it is now possible to have two or more `CWinApp` objects in a process — and also two or more sets of handle maps. How does MFC keep track of which ones it should be using?  
   
- The solution is to give each module (application or regular DLL) its own copy of this global state information. Thus, a call to **AfxGetApp** in the regular DLL returns a pointer to the `CWinApp` object in the DLL, not the one in the executable. This per-module copy of the MFC global data is known as a module state and is described in [MFC Tech Note 58](../mfc/tn058--mfc-module-state-implementation.md).  
+ The solution is to give each module (application or regular DLL) its own copy of this global state information. Thus, a call to **AfxGetApp** in the regular DLL returns a pointer to the `CWinApp` object in the DLL, not the one in the executable. This per-module copy of the MFC global data is known as a module state and is described in [MFC Tech Note 58](../mfc/tn058-mfc-module-state-implementation.md).  
   
  The MFC common window procedure automatically switches to the correct module state, so you do not need to worry about it in any message handlers implemented in your regular DLL. But when your executable calls into the regular DLL, you do need to explicitly set the current module state to the one for the DLL. To do this, use the **AFX_MANAGE_STATE** macro in every function exported from the DLL. This is done by adding the following line of code to the beginning of functions exported from the DLL:  
   
@@ -59,7 +60,7 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
   
 -   [Regular DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
--   [Extension DLLs](../build/extension-dlls--overview.md)  
+-   [Extension DLLs](../build/extension-dlls-overview.md)  
   
 ## See Also  
- [DLLs in Visual C++](../build/dlls-in-visual-c--.md)
+ [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

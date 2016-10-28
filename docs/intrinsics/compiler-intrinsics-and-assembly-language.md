@@ -1,18 +1,19 @@
 ---
 title: "Compiler Intrinsics and Assembly Language"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 ms.assetid: ddd51620-d01b-44cf-853b-e11420d13137
 caps.latest.revision: 7
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ This section of the documentation contains information about compiler intrinsics
 |Title|Description|  
 |-----------|-----------------|  
 |[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)|Describes intrinsic functions that are available in Microsoft C and C++ for x86, ARM, and x64 architectures.|  
-|[Inline Assembler](../intrinsics/inline-assembler.md)|Explains how to use the Visual C/C++ inline assembler with x86 processors.|  
-|[ARM Assembler Reference](../intrinsics/arm-assembler-reference.md)|Provides reference material for the Microsoft ARM assembler (armasm) and related tools.|  
-|[Microsoft Macro Assembler Reference](../intrinsics/microsoft-macro-assembler-reference.md)|Provides reference material for the Microsoft Macro assembler (masm).|  
-|[Visual C++](../top/visual-c---in-visual-studio-2015.md)|The top-level article for Visual C++ documentation.|
+|[Inline Assembler](../assembler/inline/inline-assembler.md)|Explains how to use the Visual C/C++ inline assembler with x86 processors.|  
+|[ARM Assembler Reference](../assembler/arm/arm-assembler-reference.md)|Provides reference material for the Microsoft ARM assembler (armasm) and related tools.|  
+|[Microsoft Macro Assembler Reference](../assembler/masm/microsoft-macro-assembler-reference.md)|Provides reference material for the Microsoft Macro assembler (masm).|  
+|[Visual C++](../top/visual-cpp-in-visual-studio-2015.md)|The top-level article for Visual C++ documentation.|

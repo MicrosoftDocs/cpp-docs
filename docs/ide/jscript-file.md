@@ -1,13 +1,13 @@
 ---
 title: "JScript File"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -33,6 +33,7 @@ helpviewer_keywords:
   - "AddFilesToCustomProj method"
 ms.assetid: 7841a09e-2dd2-4f1a-a13a-39ac53f24315
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -51,7 +52,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # JScript File
-The [Custom Wizard](../ide/custom-wizard.md) accesses the script engine and creates a JScript file called Default.js for each project. It also includes [Common.js](../ide/customizing-c---wizards-with-common-jscript-functions.md). These files contain JScript functions that give you access to the Visual Studio and Visual C++ object models to customize a wizard. (See [Designing a Wizard](../ide/designing-a-wizard.md) for a list of these models.) You can add your own functions to the wizard project's Default.js file. To access properties and methods in the wizard object model or the environment model from a JScript file, prepend the object model item with "wizard." and "dte.", respectively.  
+The [Custom Wizard](../ide/custom-wizard.md) accesses the script engine and creates a JScript file called Default.js for each project. It also includes [Common.js](../ide/customizing-cpp-wizards-with-common-jscript-functions.md). These files contain JScript functions that give you access to the Visual Studio and Visual C++ object models to customize a wizard. (See [Designing a Wizard](../ide/designing-a-wizard.md) for a list of these models.) You can add your own functions to the wizard project's Default.js file. To access properties and methods in the wizard object model or the environment model from a JScript file, prepend the object model item with "wizard." and "dte.", respectively.  
   
  For example:  
   
@@ -80,7 +81,7 @@ var strProjTemplate = '';
 |**AddFilesToCustomProj**|When the user clicks **Finish**, adds the specified files to the project.|  
 |**AddFilters**|When the user clicks **Finish**, adds the specified source filters to the project.|  
 |**CreateCustomProject**|When the user clicks **Finish**, creates the project at the specified location.|  
-|**CreateCustomInfFile**|Creates the project's [Templates.inf file](../ide/templates.inf-file.md).|  
+|**CreateCustomInfFile**|Creates the project's [Templates.inf file](../ide/templates-inf-file.md).|  
 |**DelFile**|Deletes the specified file.|  
 |**GetTargetName**|Get the name of the specified file.|  
 |**OnFinish**|Called by the wizard when the user clicks **Finish** to create the project, add files and filters, render templates, and set the configuration.|  
@@ -88,17 +89,17 @@ var strProjTemplate = '';
   
  Each wizard has a unique Default.js file, which includes TODO comments to help you identify where you must customize the file.  
   
- Visual C++ also includes [Common.js](../ide/customizing-c---wizards-with-common-jscript-functions.md), a file shared among all wizards and included in your wizard project. You can use the functions in Common.js.  
+ Visual C++ also includes [Common.js](../ide/customizing-cpp-wizards-with-common-jscript-functions.md), a file shared among all wizards and included in your wizard project. You can use the functions in Common.js.  
   
 > [!NOTE]
 >  Common.js contains descriptions of each function and its parameters. See the comments in Common.js for more information.  
   
- If you have functions that you want to share between your wizard projects, you can add them to Common.js. Create your own version of Common.js and save it in a common path, and then set the SCRIPT_COMMON_PATH to this path in your [.vsz file](../ide/.vsz-file--project-control-.md).  
+ If you have functions that you want to share between your wizard projects, you can add them to Common.js. Create your own version of Common.js and save it in a common path, and then set the SCRIPT_COMMON_PATH to this path in your [.vsz file](../ide/dot-vsz-file-project-control.md).  
   
 > [!NOTE]
 >  The wizards included with Visual C++ use the JScript functions in Common.js. If you change these functions, the Visual C++ wizards can behave unexpectedly.  
   
- For more information about JScript, see [Writing, Compiling, and Debugging JScript Code](assetId:///13e57e7d-4867-4555-b9e4-fc24aa75e628).  
+ For more information about JScript, see [Writing, Compiling, and Debugging JScript Code](http://msdn.microsoft.com/en-us/13e57e7d-4867-4555-b9e4-fc24aa75e628).  
   
 ## Debugging Script  
  To debug script in wizard html files, you must enable script debugging.  

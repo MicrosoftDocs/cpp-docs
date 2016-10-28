@@ -1,13 +1,13 @@
 ---
 title: "Types of Linkage"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -20,6 +20,7 @@ helpviewer_keywords:
   - "external linkage, linkage types"
 ms.assetid: 41326c7f-4602-4bad-a648-697604858ba0
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -63,4 +64,4 @@ The way the names of objects and functions are shared between translation units 
 -   No linkage, in which case they refer to unique entities. The same name in another scope may not refer to the same object. An example is an enumeration. (Note, however, that you can pass a pointer to an object with no linkage. This makes the object accessible in other translation units.)  
   
 ## See Also  
- [Program and Linkage](../cpp/program-and-linkage---c---.md)
+ [Program and Linkage](../cpp/program-and-linkage-cpp.md)

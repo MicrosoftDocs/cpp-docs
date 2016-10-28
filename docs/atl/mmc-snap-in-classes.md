@@ -1,13 +1,13 @@
 ---
 title: "MMC Snap-In Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.atl.MMC"
@@ -16,7 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "MMC Snap-In classes"
 ms.assetid: 4af1d5af-687f-48b1-b2c5-fa252241b4d6
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,10 +38,11 @@ translation.priority.ht:
 # MMC Snap-In Classes
 The following classes provide support for developing Microsoft Management Console (MMC) snap-in components:  
   
--   [CSnapInItemImpl](../atl/csnapinitemimpl-class.md) Implements a snap-in node object, such as adding menu items and toolbars, and forwarding commands for the snap-in node to the appropriate handler function.  
+-   [CSnapInItemImpl](../atl/reference/csnapinitemimpl-class.md) Implements a snap-in node object, such as adding menu items and toolbars, and forwarding commands for the snap-in node to the appropriate handler function.  
   
--   [CSnapInPropertyPageImpl](../atl/csnapinpropertypageimpl-class.md) Implements a snap-in property page object.  
+-   [CSnapInPropertyPageImpl](../atl/reference/csnapinpropertypageimpl-class.md) Implements a snap-in property page object.  
   
 ## See Also  
  [Class Overview](../atl/atl-class-overview.md)   
- [Snap-In Object Macros](../atl/snap-in-object-macros.md)
+ [Snap-In Object Macros](../atl/reference/snap-in-object-macros.md)
+

@@ -1,13 +1,13 @@
 ---
 title: "SRWLock Class"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "corewrappers/Microsoft::WRL::Wrappers::SRWLock"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "SRWLock class"
 ms.assetid: 4fa250e3-5f29-4b06-ac24-61b6c04ade93
 caps.latest.revision: 5
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -45,7 +46,7 @@ class SRWLock;
 ```  
   
 ## Remarks  
- A slim reader/writer lock is used to synchronize access across threads to an object or resource. For more information, see [Synchronization Functions](assetId:///9b6359c2-0113-49b6-83d0-316ad95aba1b) in the MSDN Library.  
+ A slim reader/writer lock is used to synchronize access across threads to an object or resource. For more information, see [Synchronization Functions](http://msdn.microsoft.com/en-us/9b6359c2-0113-49b6-83d0-316ad95aba1b) in the MSDN Library.  
   
 ## Members  
   
@@ -60,23 +61,23 @@ class SRWLock;
   
 |Name|Description|  
 |----------|-----------------|  
-|[SRWLock::SRWLock Constructor](../windows/srwlock--srwlock-constructor.md)|Initializes a new instance of the SRWLock class.|  
-|[SRWLock::~SRWLock Destructor](../windows/srwlock--~srwlock-destructor.md)|Deinitializes an instance of the SRWLock class.|  
+|[SRWLock::SRWLock Constructor](../windows/srwlock-srwlock-constructor.md)|Initializes a new instance of the SRWLock class.|  
+|[SRWLock::~SRWLock Destructor](../windows/srwlock-tilde-srwlock-destructor.md)|Deinitializes an instance of the SRWLock class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[SRWLock::LockExclusive Method](../windows/srwlock--lockexclusive-method.md)|Acquires an SRWLock object in exclusive mode.|  
-|[SRWLock::LockShared Method](../windows/srwlock--lockshared-method.md)|Acquires an SRWLock object in shared mode.|  
-|[SRWLock::TryLockExclusive Method](../windows/srwlock--trylockexclusive-method.md)|Attempts to acquire a SRWLock object in exclusive mode for the current or specified SRWLock object.|  
-|[SRWLock::TryLockShared Method](../windows/srwlock--trylockshared-method.md)|Attempts to acquire a SRWLock object in shared mode for the current or specified SRWLock object.|  
+|[SRWLock::LockExclusive Method](../windows/srwlock-lockexclusive-method.md)|Acquires an SRWLock object in exclusive mode.|  
+|[SRWLock::LockShared Method](../windows/srwlock-lockshared-method.md)|Acquires an SRWLock object in shared mode.|  
+|[SRWLock::TryLockExclusive Method](../windows/srwlock-trylockexclusive-method.md)|Attempts to acquire a SRWLock object in exclusive mode for the current or specified SRWLock object.|  
+|[SRWLock::TryLockShared Method](../windows/srwlock-trylockshared-method.md)|Attempts to acquire a SRWLock object in shared mode for the current or specified SRWLock object.|  
   
 ### Protected Data Member  
   
 |Name|Description|  
 |----------|-----------------|  
-|[SRWLock::SRWLock_ Data Member](../windows/srwlock--srwlock_-data-member.md)|Contains the underlying lock variable for the current SRWLock object.|  
+|[SRWLock::SRWLock_ Data Member](../windows/srwlock-srwlock-data-member.md)|Contains the underlying lock variable for the current SRWLock object.|  
   
 ## Inheritance Hierarchy  
  `SRWLock`  
@@ -87,4 +88,4 @@ class SRWLock;
  **Namespace:** Microsoft::WRL::Wrappers  
   
 ## See Also  
- [Microsoft::WRL::Wrappers Namespace](../windows/microsoft--wrl--wrappers-namespace.md)
+ [Microsoft::WRL::Wrappers Namespace](../windows/microsoft-wrl-wrappers-namespace.md)

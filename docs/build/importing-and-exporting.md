@@ -1,13 +1,13 @@
 ---
 title: "Importing and Exporting"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "__declspec(dllimport) keyword [C++]"
 ms.assetid: 7c44c2aa-2117-4cec-9615-a65bfd3f8f7b
 caps.latest.revision: 8
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -59,9 +60,9 @@ You can import public symbols into an application or export functions from a DLL
   
 ## What do you want to do?  
   
--   [Import into an Application](../build/importing-into-an-application-using-__declspec-dllimport-.md)  
+-   [Import into an Application](../build/importing-into-an-application-using-declspec-dllimport.md)  
   
 -   [Export from a DLL](../build/exporting-from-a-dll.md)  
   
 ## See Also  
- [DLLs in Visual C++](../build/dlls-in-visual-c--.md)
+ [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

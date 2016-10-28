@@ -1,13 +1,13 @@
 ---
 title: "NMake Property Page"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "VC.Project.VCNMakeTool.ReBuildCommandLine"
@@ -20,6 +20,7 @@ helpviewer_keywords:
   - "NMake property page"
 ms.assetid: bd20cb52-9f1d-4240-b4fc-4f43205ac94b
 caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -75,10 +76,10 @@ The **NMake** property page lets you specify build settings for NMake projects.
  **Additional Options**  
  Specifies any additional compiler switches for IntelliSense to use when it parses C++ files.  
   
- For information about how to access the **NMake** property page, see [How to: Specify Project Properties with Property Pages](../notintoc/how-to--specify-project-properties-with-property-pages.md).  
+ For information about how to access the **NMake** property page, see [How to: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md).  
   
- For information about how to programmatically access members of this object, see \<xref:Microsoft.VisualStudio.VCProjectEngine.VCNMakeTool>.  
+ For information about how to programmatically access members of this object, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCNMakeTool>.  
   
 ## See Also  
- [Property Pages](../ide/property-pages--visual-c---.md)   
- [How to: Enable IntelliSense for Makefile Projects](../ide/how-to--enable-intellisense-for-makefile-projects.md)
+ [Property Pages](../ide/property-pages-visual-cpp.md)   
+ [How to: Enable IntelliSense for Makefile Projects](../ide/how-to-enable-intellisense-for-makefile-projects.md)

@@ -1,13 +1,13 @@
 ---
 title: "General MFC Topics"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "class libraries, MFC"
   - "MFC, application development"
 ms.assetid: 617e9945-9bb3-471d-a3ba-e235fcfb55d1
-caps.latest.revision: 15
+caps.latest.revision: 17
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,12 +38,12 @@ translation.priority.ht:
 # General MFC Topics
 This family of articles includes technical details about the Microsoft Foundation Class (MFC) Library and provides an overview of the MFC framework and its key components and subsystems.  
   
- The Microsoft Foundation Class Library is an application framework for programming in Microsoft Windows. Written in C++, MFC provides much of the code necessary for managing windows, menus, and dialog boxes; performing basic input/output; storing collections of data objects; and so on. All you need to do is add your application-specific code into this framework. Given the nature of C++ class programming, it is easy to extend or override the basic functionality that [the MFC framework](../mfc/framework--mfc-.md) supplies.  
+ The Microsoft Foundation Class Library is an application framework for programming in Microsoft Windows. Written in C++, MFC provides much of the code necessary for managing windows, menus, and dialog boxes; performing basic input/output; storing collections of data objects; and so on. All you need to do is add your application-specific code into this framework. Given the nature of C++ class programming, it is easy to extend or override the basic functionality that [the MFC framework](../mfc/framework-mfc.md) supplies.  
   
  The MFC framework is a powerful approach that lets you build upon the work of expert programmers for Windows. MFC shortens development time; makes code more portable; provides tremendous support without reducing programming freedom and flexibility; and gives easy access to "hard to program" user-interface elements and technologies, like Active technology, OLE, and Internet programming. Furthermore, MFC simplifies database programming through Data Access Objects (DAO) and Open Database Connectivity (ODBC), and network programming through Windows Sockets. MFC makes it easy to program features like property sheets ("tab dialogs"), print preview, and floating, customizable toolbars.  
   
 ## In This Section  
- `MFC Samples`, which are supplied in [Visual C++ Samples](../top/visual-c---samples.md)  
+ `MFC Samples`, which are supplied in [Visual C++ Samples](../top/visual-cpp-samples.md)  
   
  [Using the MFC Source Files](../mfc/using-the-mfc-source-files.md)  
   
@@ -52,7 +53,7 @@ This family of articles includes technical details about the Microsoft Foundatio
   
  [Building on the Framework](../mfc/building-on-the-framework.md)  
   
- [CWinApp: The Application Class](../mfc/cwinapp--the-application-class.md)  
+ [CWinApp: The Application Class](../mfc/cwinapp-the-application-class.md)  
   
  [Document Templates and the Document/View Creation Process](../mfc/document-templates-and-the-document-view-creation-process.md)  
   
@@ -66,7 +67,7 @@ This family of articles includes technical details about the Microsoft Foundatio
   
  [Build Requirements for Windows Vista Common Controls](../mfc/build-requirements-for-windows-vista-common-controls.md)  
   
- [How to: Add Restart Manager Support](../mfc/how-to--add-restart-manager-support.md)  
+ [How to: Add Restart Manager Support](../mfc/how-to-add-restart-manager-support.md)  
   
  [Dynamic Layout](../mfc/dynamic-layout.md)  
   
@@ -76,3 +77,4 @@ This family of articles includes technical details about the Microsoft Foundatio
   
 ## See Also  
  [Working with Window Objects](../mfc/working-with-window-objects.md)
+

@@ -1,13 +1,13 @@
 ---
 title: "Regular DLLs Dynamically Linked to MFC"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "dynamically linked DLLs [C++]"
 ms.assetid: b4f7ab92-8723-42a5-890e-214f4e29dcd0
 caps.latest.revision: 9
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -99,7 +100,7 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
   
  The **AFX_MANAGE_STATE** macro should not be used in regular DLLs that statically link to MFC or in extension DLLs. For more information, see [Managing the State Data of MFC Modules](../mfc/managing-the-state-data-of-mfc-modules.md).  
   
- For an example of how to write, build, and use a regular DLL, see the sample [DLLScreenCap](assetId:///2171291d-3a50-403b-90a1-d93c2acb4f4a). For more information about regular DLLs that dynamically link to MFC, see the section titled "Converting DLLScreenCap to Dynamically Link with the MFC DLL" in the abstract for the sample.  
+ For an example of how to write, build, and use a regular DLL, see the sample [DLLScreenCap](http://msdn.microsoft.com/en-us/2171291d-3a50-403b-90a1-d93c2acb4f4a). For more information about regular DLLs that dynamically link to MFC, see the section titled "Converting DLLScreenCap to Dynamically Link with the MFC DLL" in the abstract for the sample.  
   
 ## What do you want to do?  
   
@@ -111,9 +112,9 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
   
 -   [Managing the state data of MFC modules](../mfc/managing-the-state-data-of-mfc-modules.md)  
   
--   [Using Database, OLE, and Sockets Extension DLLs in Regular DLLs](../build/using-database--ole--and-sockets-extension-dlls-in-regular-dlls.md)  
+-   [Using Database, OLE, and Sockets Extension DLLs in Regular DLLs](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)  
   
--   [Using MFC as Part of a DLL](../mfc/tn011--using-mfc-as-part-of-a-dll.md)  
+-   [Using MFC as Part of a DLL](../mfc/tn011-using-mfc-as-part-of-a-dll.md)  
   
 ## See Also  
  [Kinds of DLLs](../build/kinds-of-dlls.md)

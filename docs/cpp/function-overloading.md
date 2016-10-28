@@ -1,13 +1,13 @@
 ---
 title: "Function Overloading"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "declaring functions, overloading"
 ms.assetid: 3c9884cb-1d5e-42e8-9a49-6f46141f929e
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -132,7 +133,7 @@ return cout.good();
   
  Default arguments cannot be supplied for overloaded operators.  
   
- For restrictions on overloading and information on how overloading affects other elements of C++, see [Overloading](../notintoc/overloading---c---.md).  
+ For restrictions on overloading and information on how overloading affects other elements of C++, see [Overloading](../misc/overloading-cpp.md).  
   
 ## Argument Matching  
  Overloaded functions are selected for the best match of function declarations in the current scope to the arguments supplied in the function call. If a suitable function is found, that function is called. "Suitable" in this context means one of the following:  
@@ -540,4 +541,4 @@ double Account::Deposit( double dAmount, char *szPassword )
 ```  
   
 ## See Also  
- [Functions (C++)](../cpp/functions--c---.md)
+ [Functions (C++)](../cpp/functions-cpp.md)

@@ -1,13 +1,13 @@
 ---
 title: "ATL Program or Control Source and Header Files"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "file types [C++], ATL source and headers"
 ms.assetid: cb65372f-4880-4007-b582-a52eaa568fd1
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -46,6 +47,6 @@ The following files are created when you create an ATL project in Visual Studio,
 |StdAfx.h|Includes the ATL header files.|  
   
 ## See Also  
- [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-c---projects.md)   
+ [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)   
  [MFC Program or Control Source and Header Files](../ide/mfc-program-or-control-source-and-header-files.md)   
  [CLR Projects](../ide/files-created-for-clr-projects.md)

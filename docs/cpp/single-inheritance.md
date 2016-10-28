@@ -1,13 +1,13 @@
 ---
 title: "Single Inheritance"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "single inheritance_cpp"
@@ -24,6 +24,7 @@ helpviewer_keywords:
   - "inheritance, single"
 ms.assetid: 1cb946ed-8b1b-4cf1-bde0-d9cecbfdc622
 caps.latest.revision: 13
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -67,7 +68,7 @@ class PaperbackBook : public Book {};
   
  The base class from which each class is derived is declared before the declaration of the derived class. It is not sufficient to provide a forward-referencing declaration for a base class; it must be a complete declaration.  
   
- In the preceding example, the access specifier **public** is used. The meaning of public, protected, and private inheritance is described in [Member-Access Control.](../cpp/member-access-control--c---.md)  
+ In the preceding example, the access specifier **public** is used. The meaning of public, protected, and private inheritance is described in [Member-Access Control.](../cpp/member-access-control-cpp.md)  
   
  A class can serve as the base class for many specific classes, as illustrated in the following figure.  
   
@@ -77,7 +78,7 @@ Sample of Directed Acyclic Graph
  In the diagram shown above, called a "directed acyclic graph" (or "DAG"), some of the classes are base classes for more than one derived class. However, the reverse is not true: there is only one direct base class for any given derived class. The graph in the figure depicts a "single inheritance" structure.  
   
 > [!NOTE]
->  Directed acyclic graphs are not unique to single inheritance. They are also used to depict multiple-inheritance graphs. This topic is covered in [Multiple Inheritance](assetId:///3b74185e-2beb-4e29-8684-441e51d2a2ca).  
+>  Directed acyclic graphs are not unique to single inheritance. They are also used to depict multiple-inheritance graphs. This topic is covered in [Multiple Inheritance](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca).  
   
  In inheritance, the derived class contains the members of the base class plus any new members you add. As a result, a derived class can refer to members of the base class (unless those members are redefined in the derived class). The scope-resolution operator (`::`) can be used to refer to members of direct or indirect base classes when those members have been redefined in the derived class. Consider this example:  
   
@@ -178,5 +179,5 @@ int main() {
 >  Forcing the base class to implement a function such as `PrintNameOf` is often not the best design. [Virtual Functions](../cpp/virtual-functions.md) offers other design alternatives.  
   
 ## See Also  
- [Overview of Derived Classes](../notintoc/overview-of-derived-classes.md)   
- [(NOTINBUILD) Multiple Inheritance](assetId:///3b74185e-2beb-4e29-8684-441e51d2a2ca)
+ [Overview of Derived Classes](../misc/overview-of-derived-classes.md)   
+ [(NOTINBUILD) Multiple Inheritance](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca)

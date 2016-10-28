@@ -1,13 +1,13 @@
 ---
 title: "emitidl"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "vc-attr.emitidl"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "emitidl attribute"
 ms.assetid: 85b80c56-578e-4392-ac03-8443c74ebb7d
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -54,7 +55,7 @@ Determines whether all subsequent IDL attributes will be processed and placed in
   
 -   If **false**, any IDL category attributes encountered in a source code file will not be placed in the generated .idl file.  
   
--   If **restricted**, allows IDL attributes to be in the file without a [module](../windows/module--c---.md) attribute. The compiler will not generate an .idl file.  
+-   If **restricted**, allows IDL attributes to be in the file without a [module](../windows/module-cpp.md) attribute. The compiler will not generate an .idl file.  
   
 -   If **forced**, overrides a subsequent **restricted** attribute, which requires a file to have a **module** attribute if there are IDL attributes in the file.  
   
@@ -88,4 +89,4 @@ Determines whether all subsequent IDL attributes will be processed and placed in
 ## See Also  
  [Compiler Attributes](../windows/compiler-attributes.md)   
  [Stand-Alone Attributes](../windows/stand-alone-attributes.md)   
- [Attributes Samples](assetId:///558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

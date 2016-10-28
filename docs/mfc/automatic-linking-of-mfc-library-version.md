@@ -1,13 +1,13 @@
 ---
 title: "Automatic Linking of MFC Library Version"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "defaultlib"
@@ -22,7 +22,8 @@ helpviewer_keywords:
   - "linking [C++], of MFC"
   - "MFC libraries, versions"
 ms.assetid: 02af4a20-2034-4fce-b200-c2202c3c8311
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -75,3 +76,4 @@ In versions of MFC before version 3.0 (before Visual C++ version 2.0), you had t
   
 ## See Also  
  [MFC Library Versions](../mfc/mfc-library-versions.md)
+

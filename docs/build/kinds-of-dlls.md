@@ -1,13 +1,13 @@
 ---
 title: "Kinds of DLLs"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "DLLs [C++], MFC"
 ms.assetid: f6a30db9-6138-4b2c-90cc-a17855e499a6
 caps.latest.revision: 8
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -50,13 +51,13 @@ This topic provides information to help you determine the kind of DLL to build.
   
 ### What do you want to know more about?  
   
--   [Non-MFC DLLs: Overview](../build/non-mfc-dlls--overview.md)  
+-   [Non-MFC DLLs: Overview](../build/non-mfc-dlls-overview.md)  
   
 -   [Regular DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)  
   
 -   [Regular DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
--   [Extension DLLs: Overview](../build/extension-dlls--overview.md)  
+-   [Extension DLLs: Overview](../build/extension-dlls-overview.md)  
   
 -   [Which kind of DLL to use](#_core_which_kind_of_dll_to_use)  
   
@@ -77,13 +78,13 @@ This topic provides information to help you determine the kind of DLL to build.
   
 ### What do you want to know more about?  
   
--   [Non-MFC DLLs: Overview](../build/non-mfc-dlls--overview.md)  
+-   [Non-MFC DLLs: Overview](../build/non-mfc-dlls-overview.md)  
   
 -   [Regular DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)  
   
 -   [Regular DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
--   [Extension DLLs: Overview](../build/extension-dlls--overview.md)  
+-   [Extension DLLs: Overview](../build/extension-dlls-overview.md)  
   
 ## See Also  
- [DLLs in Visual C++](../build/dlls-in-visual-c--.md)
+ [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

@@ -1,13 +1,13 @@
 ---
 title: "Using the MFC Source Files"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -21,7 +21,8 @@ helpviewer_keywords:
   - "protected member access"
   - "source files, MFC"
 ms.assetid: 3230e8fb-3b69-4ddf-9538-365ac7ea5e72
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -62,15 +63,16 @@ The Microsoft Foundation Class (MFC) Library supplies full source code. Header f
   
 -   [An example of the comments](../mfc/an-example-of-the-comments.md)  
   
--   [The // Implementation comment](../mfc/---implementation-comment.md)  
+-   [The // Implementation comment](../mfc/decrement-implementation-comment.md)  
   
--   [The // Constructors comment](../mfc/---constructors-comment.md)  
+-   [The // Constructors comment](../mfc/decrement-constructors-comment.md)  
   
--   [The // Attributes comment](../mfc/---attributes-comment.md)  
+-   [The // Attributes comment](../mfc/decrement-attributes-comment.md)  
   
--   [The // Operations comment](../mfc/---operations-comment.md)  
+-   [The // Operations comment](../mfc/decrement-operations-comment.md)  
   
--   [The // Overridables comment](../mfc/---overridables-comment.md)  
+-   [The // Overridables comment](../mfc/decrement-overridables-comment.md)  
   
 ## See Also  
  [General MFC Topics](../mfc/general-mfc-topics.md)
+

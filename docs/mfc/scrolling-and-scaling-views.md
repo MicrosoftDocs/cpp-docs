@@ -1,13 +1,13 @@
 ---
 title: "Scrolling and Scaling Views"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "scroll bars, messages"
   - "scrolling views"
 ms.assetid: f98a3421-c336-407e-97ee-dbb2ffd76fbd
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,9 +40,9 @@ translation.priority.ht:
 # Scrolling and Scaling Views
 MFC supports views that scroll and views that are automatically scaled to the size of the frame window that displays them. Class `CScrollView` supports both kinds of views.  
   
- For more information about scrolling and scaling, see class [CScrollView](../mfcref/cscrollview-class.md) in the *MFC Reference*. For a scrolling example, see the [Scribble sample](../top/visual-c---samples.md).  
+ For more information about scrolling and scaling, see class [CScrollView](../mfc/reference/cscrollview-class.md) in the *MFC Reference*. For a scrolling example, see the [Scribble sample](../top/visual-cpp-samples.md).  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   Scrolling a view  
   
@@ -67,3 +68,4 @@ MFC supports views that scroll and views that are automatically scaled to the si
   
 ## See Also  
  [Using Views](../mfc/using-views.md)
+

@@ -1,13 +1,13 @@
 ---
 title: "Storing and Loading CObjects via an Archive"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "CObject"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "CObject class, CArchive objects"
   - "CObjects"
 ms.assetid: a829b6dd-bc31-47e0-8108-fbb946722db9
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -52,11 +53,12 @@ Storing and loading `CObject`s via an archive requires extra consideration. In c
   
  The following example illustrates the cases:  
   
- [!code[NVC_MFCSerialization#36](../mfc/codesnippet/CPP/storing-and-loading-cobjects-via-an-archive_1.h)]  
+ [!code-cpp[NVC_MFCSerialization#36](../mfc/codesnippet/CPP/storing-and-loading-cobjects-via-an-archive_1.h)]  
   
- [!code[NVC_MFCSerialization#37](../mfc/codesnippet/CPP/storing-and-loading-cobjects-via-an-archive_2.cpp)]  
+ [!code-cpp[NVC_MFCSerialization#37](../mfc/codesnippet/CPP/storing-and-loading-cobjects-via-an-archive_2.cpp)]  
   
  In summary, if your serializable class defines an embedded **CObjec**t as a member, you should *not* use the `CArchive` **<\<** and **>>** operators for that object, but should call the `Serialize` function instead. Also, if your serializable class defines a pointer to a `CObject` (or an object derived from `CObject`) as a member, but constructs this other object in its own constructor, you should also call `Serialize`.  
   
 ## See Also  
- [Serialization: Serializing an Object](../mfc/serialization--serializing-an-object.md)
+ [Serialization: Serializing an Object](../mfc/serialization-serializing-an-object.md)
+

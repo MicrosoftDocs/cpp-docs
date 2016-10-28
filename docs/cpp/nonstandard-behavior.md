@@ -1,13 +1,13 @@
 ---
 title: "Nonstandard Behavior"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "nonstandard behavior, compliance and compatibility"
 ms.assetid: a57dea27-dc79-4f64-8a83-017e84841773
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,7 +41,7 @@ The following sections list some of the places where the Visual C++ implementati
  The list of compiler limits that differ from those defined in the C++ standard is given in [Compiler Limits](../cpp/compiler-limits.md).  
   
 ## Covariant Return Types  
- Virtual base classes are not supported as covariant return types when the virtual function has a variable number of arguments. This does not comply with section 10.3, paragraph 7 of the C++ ISO specification. The following sample does not compile, giving compiler error [C2688](../compilererrors2/compiler-error-c2688.md)  
+ Virtual base classes are not supported as covariant return types when the virtual function has a variable number of arguments. This does not comply with section 10.3, paragraph 7 of the C++ ISO specification. The following sample does not compile, giving compiler error [C2688](../error-messages/compiler-errors-2/compiler-error-c2688.md)  
   
 ```cpp  
 // CovariantReturn.cpp  
@@ -89,7 +90,7 @@ void f() throw(int); // parsed but not used
 void g() throw();    // parsed and used  
 ```  
   
- For more information on exception specifications, see [Exception Specifications](../cpp/exception-specifications--throw---c---.md).  
+ For more information on exception specifications, see [Exception Specifications](../cpp/exception-specifications-throw-cpp.md).  
   
 ## char_traits::eof()  
  The C++ standard states that [char_traits::eof](../Topic/char_traits::eof.md) must not correspond to a valid `char_type` value. The Visual C++ compiler enforces this constraint for type `char`, but not for type `wchar_t`. This does not comply with the requirement in Table 62 in section 12.1.1 of the C++ ISO specification. The example below demonstrates this.  

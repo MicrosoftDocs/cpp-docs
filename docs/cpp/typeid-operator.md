@@ -1,13 +1,13 @@
 ---
 title: "typeid Operator"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "typeid operator"
 ms.assetid: 8871cee6-d6b9-4301-a5cb-bf3dc9798d61
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -46,9 +47,9 @@ typeid( expression )
 ## Remarks  
  The `typeid` operator allows the type of an object to be determined at run time.  
   
- The result of `typeid` is a **const type_info&**. The value is a reference to a **type_info** object that represents either the *type-id* or the type of the *expression*, depending on which form of `typeid` is used. See [type_info Class](../cpp/type_info-class.md) for more information.  
+ The result of `typeid` is a **const type_info&**. The value is a reference to a **type_info** object that represents either the *type-id* or the type of the *expression*, depending on which form of `typeid` is used. See [type_info Class](../cpp/type-info-class.md) for more information.  
   
- The `typeid` operator  does not work with managed types (abstract declarators or instances), see [typeid](../windows/typeid---c---component-extensions-.md) for information on getting the \<xref:System.Type> of a specified type.  
+ The `typeid` operator  does not work with managed types (abstract declarators or instances), see [typeid](../windows/typeid-cpp-component-extensions.md) for information on getting the <xref:System.Type> of a specified type.  
   
  The `typeid` operator does a run-time check when applied to an l-value of a polymorphic class type, where the true type of the object cannot be determined by the static information provided. Such cases are:  
   
@@ -85,7 +86,7 @@ int main() {
 }  
 ```  
   
- If the *expression* is dereferencing a pointer, and that pointer's value is zero, **typeid** throws a [bad_typeid exception](../cpp/bad_typeid-exception.md). If the pointer does not point to a valid object, a `__non_rtti_object` exception is thrown, indicating an attempt to analyze the RTTI that triggered a fault (like access violation), because the object is somehow invalid (bad pointer or the code wasn't compiled with [/GR](../buildref/-gr--enable-run-time-type-information-.md)).  
+ If the *expression* is dereferencing a pointer, and that pointer's value is zero, **typeid** throws a [bad_typeid exception](../cpp/bad-typeid-exception.md). If the pointer does not point to a valid object, a `__non_rtti_object` exception is thrown, indicating an attempt to analyze the RTTI that triggered a fault (like access violation), because the object is somehow invalid (bad pointer or the code wasn't compiled with [/GR](../build/reference/gr-enable-run-time-type-information.md)).  
   
  If the *expression* is neither a pointer nor a reference to a base class of the object, the result is a **type_info** reference representing the static type of the *expression*. The *static type* of an expression refers to the type of an expression as it is known at compile time. Execution semantics are ignored when evaluating the static type of an expression. Furthermore, references are ignored when possible when determining the static type of an expression:  
   
@@ -114,4 +115,4 @@ T max( T arg1, T arg2 ) {
   
 ## See Also  
  [Run-Time Type Information](../cpp/run-time-type-information.md)   
- [Keywords](../cpp/keywords--c---.md)
+ [Keywords](../cpp/keywords-cpp.md)

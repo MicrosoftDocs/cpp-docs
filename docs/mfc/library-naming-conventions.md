@@ -1,13 +1,13 @@
 ---
 title: "Library Naming Conventions"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -23,7 +23,8 @@ helpviewer_keywords:
   - "conventions [C++], MFC library names"
   - "MFC libraries, naming conventions"
 ms.assetid: 39fe7d93-5a14-4c6a-b16c-bf318fa01278
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -74,3 +75,4 @@ Object-code libraries for MFC use the following naming conventions. The library 
   
 ## See Also  
  [MFC Library Versions](../mfc/mfc-library-versions.md)
+

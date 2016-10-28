@@ -1,13 +1,13 @@
 ---
 title: "ATL Class Overview"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.atl.classes"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "classes [C++], ATL"
   - "ATL, class reference"
 ms.assetid: c38ac93d-c3a2-4ce7-8153-f1d34c0f0fa6
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -47,7 +48,7 @@ Classes in the Active Template Library (ATL) can be categorized as follows:
 |[Composite Controls](../atl/composite-controls-classes.md)|[Properties and Property Pages](../atl/properties-and-property-pages-classes.md)|  
 |[Connection Points](../atl/connection-points-classes.md)|[Registry Support](../atl/registry-support-classes.md)|  
 |[Control Containment](../atl/control-containment-classes.md)|[Running Objects](../atl/running-objects-classes.md)|  
-|[Controls: General Support](../atl/controls--general-support-classes.md)|[Security](../atl/security-classes.md)|  
+|[Controls: General Support](../atl/controls-general-support-classes.md)|[Security](../atl/security-classes.md)|  
 |[Data Transfer](../atl/data-transfer-classes.md)|[Service Provider Support](../atl/service-provider-support-classes.md)|  
 |[Data Types](../atl/data-types-classes.md)|[Site Information](../atl/site-information-classes.md)|  
 |[Debugging and Exception](../atl/debugging-and-exceptions-classes.md)|[String and Text](../atl/string-and-text-classes.md)|  
@@ -58,13 +59,14 @@ Classes in the Active Template Library (ATL) can be categorized as follows:
 |[Interface Pointers](../atl/interface-pointers-classes.md)|[Windows Support](../atl/windows-support-classes.md)|  
 |[IUnknown Implementation](../atl/iunknown-implementation-classes.md)|[Utility](../atl/utility-classes.md)|  
   
- For additional classes that can be used in ATL projects, see [Shared Classes](../atl/atl-mfc-shared-classes.md).  
+ For additional classes that can be used in ATL projects, see [Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md).  
   
 ## See Also  
- [Classes](../atl/atl-classes.md)   
+ [Classes](../atl/reference/atl-classes.md)   
  [ATL COM Desktop Components](../atl/atl-com-desktop-components.md)   
- [Functions](../atl/atl-functions.md)   
- [Global Variables](../atl/atl-global-variables.md)   
- [Macros](../atl/atl-macros.md)   
- [Structures](../atl/atl-structures.md)   
- [Typedefs](../atl/atl-typedefs.md)
+ [Functions](../atl/reference/atl-functions.md)   
+ [Global Variables](../atl/reference/atl-global-variables.md)   
+ [Macros](../atl/reference/atl-macros.md)   
+ [Structures](../atl/reference/atl-structures.md)   
+ [Typedefs](../atl/reference/atl-typedefs.md)
+

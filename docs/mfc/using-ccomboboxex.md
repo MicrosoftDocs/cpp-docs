@@ -1,13 +1,13 @@
 ---
 title: "Using CComboBoxEx"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "CComboBoxEx"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "combo boxes, CComboBoxEx class"
   - "CComboBox class, extended"
 ms.assetid: c23cbfe8-75d2-4f98-a753-c942416eda52
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -42,7 +43,7 @@ The extended combo box control is an extension of the standard combo box control
   
  Use this control to provide the functionality of a combo box without having to manually draw item graphics.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Creating an Extended Combo Box Control](../mfc/creating-an-extended-combo-box-control.md)  
   
@@ -53,4 +54,5 @@ The extended combo box control is an extension of the standard combo box control
 -   [Processing Notification Messages in Extended Combo Box Controls](../mfc/processing-notification-messages-in-extended-combo-box-controls.md)  
   
 ## See Also  
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

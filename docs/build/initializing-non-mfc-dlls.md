@@ -1,13 +1,13 @@
 ---
 title: "Initializing Non-MFC DLLs"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "DLLs [C++], non-MFC"
 ms.assetid: 2622b32a-28f9-4d61-9e46-6c19aaf8b7ad
 caps.latest.revision: 8
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -57,7 +58,7 @@ BOOL APIENTRY DllMain(HANDLE hModule,
 ```  
   
 > [!NOTE]
->  The [!INCLUDE[winsdkshort](../atl/includes/winsdkshort_md.md)] documentation for **DllEntryPoint** says that the actual name of the entry-point function must be specified on the linker command-line with the /ENTRY option. With Visual C++, you do not need to use the /ENTRY option if the name of your entry-point function is `DllMain`. In fact, if you do use the /ENTRY option and name your entry-point function something other than `DllMain`, the C run-time library will not get initialized properly.  
+>  The [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] documentation for **DllEntryPoint** says that the actual name of the entry-point function must be specified on the linker command-line with the /ENTRY option. With Visual C++, you do not need to use the /ENTRY option if the name of your entry-point function is `DllMain`. In fact, if you do use the /ENTRY option and name your entry-point function something other than `DllMain`, the C run-time library will not get initialized properly.  
   
 ## What do you want to know more about?  
   

@@ -1,13 +1,13 @@
 ---
 title: "Managed Resources Property Page"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "VC.Project.VCManagedResourceCompilerTool.ResourceFileName"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "Managed Resources property page"
 ms.assetid: 80b80384-ee55-494d-9f0e-907bb98cfc19
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -50,9 +51,9 @@ Enables settings for the resource compiler.
  **Default Localized Resources**  
  Specifies whether the given .resx file contributes to the default resources or to a satellite .dll.  
   
- For information on how to access the **Managed Resources** property page, see [How to: Specify Project Properties with Property Pages](../notintoc/how-to--specify-project-properties-with-property-pages.md).  
+ For information on how to access the **Managed Resources** property page, see [How to: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md).  
   
 ## See Also  
  [Using RC (The RC Command Line)](http://msdn.microsoft.com/library/windows/desktop/aa381055)   
- [Property Pages](../ide/property-pages--visual-c---.md)   
- [/ASSEMBLYRESOURCE (Embed a Managed Resource)](../buildref/-assemblyresource--embed-a-managed-resource-.md)
+ [Property Pages](../ide/property-pages-visual-cpp.md)   
+ [/ASSEMBLYRESOURCE (Embed a Managed Resource)](../build/reference/assemblyresource-embed-a-managed-resource.md)

@@ -1,13 +1,13 @@
 ---
 title: "allocate"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "allocate"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "allocate __declspec keyword"
 ms.assetid: 67828b31-de60-4c0e-b0a6-ef3aab22641d
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -53,15 +54,15 @@ segname
 ## Remarks  
  The name *segname* must be declared using one of the following pragmas:  
   
--   [code_seg](../c/code_seg.md)  
+-   [code_seg](../preprocessor/code-seg.md)  
   
--   [const_seg](../c/const_seg.md)  
+-   [const_seg](../preprocessor/const-seg.md)  
   
--   [data_seg](../c/data_seg.md)  
+-   [data_seg](../preprocessor/data-seg.md)  
   
--   [init_seg](../c/init_seg.md)  
+-   [init_seg](../preprocessor/init-seg.md)  
   
--   [section](../c/section.md)  
+-   [section](../preprocessor/section.md)  
   
 ## Example  
   
@@ -77,5 +78,5 @@ int main() {
  **END Microsoft Specific**  
   
 ## See Also  
- [__declspec](../cpp/__declspec.md)   
- [Keywords](../cpp/keywords--c---.md)
+ [__declspec](../cpp/declspec.md)   
+ [Keywords](../cpp/keywords-cpp.md)

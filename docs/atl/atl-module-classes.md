@@ -1,13 +1,13 @@
 ---
 title: "ATL Module Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "ATL, module classes"
   - "module classes"
 ms.assetid: fd75382d-c955-46ba-a38e-37728b7fa00f
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,21 +41,21 @@ This topic discusses the module classes that were new in ATL 7.0.
 ## CComModule Replacement Classes  
  Earlier versions of ATL used `CComModule`. In ATL 7.0, `CComModule` functionality is replaced by several classes:  
   
--   [CAtlBaseModule](../atl/catlbasemodule-class.md) Contains information required by most applications that use ATL. Contains the HINSTANCE of the module and the resource instance.  
+-   [CAtlBaseModule](../atl/reference/catlbasemodule-class.md) Contains information required by most applications that use ATL. Contains the HINSTANCE of the module and the resource instance.  
   
--   [CAtlComModule](../atl/catlcommodule-class.md) Contains information required by the COM classes in ATL.  
+-   [CAtlComModule](../atl/reference/catlcommodule-class.md) Contains information required by the COM classes in ATL.  
   
--   [CAtlWinModule](../atl/catlwinmodule-class.md) Contains information required by the windowing classes in ATL.  
+-   [CAtlWinModule](../atl/reference/catlwinmodule-class.md) Contains information required by the windowing classes in ATL.  
   
--   [CAtlDebugInterfacesModule](../atl/catldebuginterfacesmodule-class.md) Contains support for interface debugging.  
+-   [CAtlDebugInterfacesModule](../atl/reference/catldebuginterfacesmodule-class.md) Contains support for interface debugging.  
   
--   [CAtlModule](../atl/catlmodule-class.md) The following `CAtlModule`-derived classes are customized to contain information required in a particular application type. Most members in these classes can be overridden:  
+-   [CAtlModule](../atl/reference/catlmodule-class.md) The following `CAtlModule`-derived classes are customized to contain information required in a particular application type. Most members in these classes can be overridden:  
   
-    -   [CAtlDllModuleT](../atl/catldllmodulet-class.md) Used in DLL applications. Provides code for the standard exports.  
+    -   [CAtlDllModuleT](../atl/reference/catldllmodulet-class.md) Used in DLL applications. Provides code for the standard exports.  
   
-    -   [CAtlExeModuleT](../atl/catlexemodulet-class.md) Used in EXE applications. Provides code required in an EXE.  
+    -   [CAtlExeModuleT](../atl/reference/catlexemodulet-class.md) Used in EXE applications. Provides code required in an EXE.  
   
-    -   [CAtlServiceModuleT](../atl/catlservicemodulet-class.md) Provides support to create Windows NT and Windows 2000 Services.  
+    -   [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) Provides support to create Windows NT and Windows 2000 Services.  
   
  `CComModule` is still available for backward compatibility.  
   
@@ -74,5 +75,6 @@ This topic discusses the module classes that were new in ATL 7.0.
      Init and Term methods have moved into the constructors and destructors for the module classes; there is no longer a need to call Init and Term.  
   
 ## See Also  
- [Concepts](../atl/active-template-library--atl--concepts.md)   
+ [Concepts](../atl/active-template-library-atl-concepts.md)   
  [Class Overview](../atl/atl-class-overview.md)
+

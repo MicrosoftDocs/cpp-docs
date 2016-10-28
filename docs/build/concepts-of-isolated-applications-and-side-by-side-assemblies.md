@@ -1,13 +1,13 @@
 ---
 title: "Concepts of Isolated Applications and Side-by-side Assemblies"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "isolated assemblies [C++]"
 ms.assetid: 945a885f-cb3e-4c8a-a0b9-2c2e3e02cc50
 caps.latest.revision: 21
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -49,7 +50,7 @@ An application is considered an [isolated application](http://msdn.microsoft.com
  You can change side-by-side assembly dependencies after an application has been deployed by modifying the [Publisher Configuration Files](http://msdn.microsoft.com/library/aa375682) and [Application Configuration Files](http://msdn.microsoft.com/library/aa374182). A publisher configuration file, also known as a publisher policy file, is an XML file that globally redirects applications and assemblies from using one version of a side-by-side assembly to using another version of the same assembly. For example, you could change a dependency when a bug fix or security fix is deployed for a side-by-side assembly and you want to redirect all applications to use the fixed version. An application configuration file is an XML file that redirects a specific application from using one version of a side-by-side assembly to using another version of the same assembly. You can use an application configuration file to redirect a particular application to use a version of a side-by-side assembly that's different from the one that's defined in the publisher configuration file. For more information, see [Configuration](http://msdn.microsoft.com/library/aa375123).  
   
 ## Visual C++ libraries  
- In Visual Studio 2005 and Visual Studio 2008, redistributable libraries such as ATL, MFC, CRT, Standard C++, OpenMP, and MSDIA were deployed as shared side-by-side assemblies to the native assembly cache. In the current version, the redistributable libraries use central deployment. By default, all applications that are built by using Visual C++ are built with the manifest embedded in the final binary, and the manifest describes the dependencies of the binary on the Visual C++ libraries. To understand manifest generation for Visual C++ applications, see [Understanding Manifest Generation for C/C++ Programs](../build/understanding-manifest-generation-for-c-c---programs.md). A manifest is not required for applications that are statically linked to the libraries that they use, or that use local deployment. For more information about deployment, see [Deployment in Visual C++](../ide/deployment-in-visual-c--.md).  
+ In Visual Studio 2005 and Visual Studio 2008, redistributable libraries such as ATL, MFC, CRT, Standard C++, OpenMP, and MSDIA were deployed as shared side-by-side assemblies to the native assembly cache. In the current version, the redistributable libraries use central deployment. By default, all applications that are built by using Visual C++ are built with the manifest embedded in the final binary, and the manifest describes the dependencies of the binary on the Visual C++ libraries. To understand manifest generation for Visual C++ applications, see [Understanding Manifest Generation for C/C++ Programs](../build/understanding-manifest-generation-for-c-cpp-programs.md). A manifest is not required for applications that are statically linked to the libraries that they use, or that use local deployment. For more information about deployment, see [Deployment in Visual C++](../ide/deployment-in-visual-cpp.md).  
   
 ## See Also  
- [Building C/C++ Isolated Applications and Side-by-side Assemblies](../build/building-c-c---isolated-applications-and-side-by-side-assemblies.md)
+ [Building C/C++ Isolated Applications and Side-by-side Assemblies](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

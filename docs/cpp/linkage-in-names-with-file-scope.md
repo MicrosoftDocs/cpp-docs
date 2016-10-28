@@ -1,13 +1,13 @@
 ---
 title: "Linkage in Names with File Scope"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -23,6 +23,7 @@ helpviewer_keywords:
   - "static variables, external declarations"
 ms.assetid: 38d3fa5e-1861-466e-a590-84b86f7b184e
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -62,4 +63,4 @@ The following linkage rules apply to names (other than `typedef` and enumerator 
 -   Is not used in the declaration of another name that has external linkage. This constraint means that objects of class type that are passed to functions with external linkage cause the class to have external linkage.  
   
 ## See Also  
- [Program and Linkage](../cpp/program-and-linkage---c---.md)
+ [Program and Linkage](../cpp/program-and-linkage-cpp.md)

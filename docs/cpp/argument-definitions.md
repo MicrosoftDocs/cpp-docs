@@ -1,13 +1,13 @@
 ---
 title: "Argument Definitions"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "argc argument"
 ms.assetid: 6148cbf3-ebe8-44f2-b277-de4b723991c7
 caps.latest.revision: 13
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -51,7 +52,7 @@ argc[ ,char*argv[] [,char*envp[] ] ] );intwmain(intargc[ ,wchar_t*argv[] [,wchar
  An integer that contains the count of arguments that follow in `argv`. The `argc` parameter is always greater than or equal to 1.  
   
  `argv`  
- An array of null-terminated strings representing command-line arguments entered by the user of the program. By convention, `argv`**[0]** is the command with which the program is invoked, `argv`**[1]** is the first command-line argument, and so on, until `argv`**[**`argc`**]**, which is always **NULL**. See [Customizing Command Line Processing](../cpp/customizing-c---command-line-processing.md) for information on suppressing command-line processing.  
+ An array of null-terminated strings representing command-line arguments entered by the user of the program. By convention, `argv`**[0]** is the command with which the program is invoked, `argv`**[1]** is the first command-line argument, and so on, until `argv`**[**`argc`**]**, which is always **NULL**. See [Customizing Command Line Processing](../cpp/customizing-cpp-command-line-processing.md) for information on suppressing command-line processing.  
   
  The first command-line argument is always `argv`**[1]** and the last one is `argv`**[**`argc` – 1**]**.  
   
@@ -60,7 +61,7 @@ argc[ ,char*argv[] [,char*envp[] ] ] );intwmain(intargc[ ,wchar_t*argv[] [,wchar
   
 ## Microsoft Specific  
  `envp`  
- The `envp` array, which is a common extension in many UNIX systems, is used in Microsoft C++. It is an array of strings representing the variables set in the user's environment. This array is terminated by a **NULL** entry. It can be declared as an array of pointers to **char (char** \*envp[ ]**)** or as a pointer to pointers to **char (char** \*\*envp**)**. If your program uses **wmain** instead of **main**, use the `wchar_t` data type instead of `char`. The environment block passed to **main** and **wmain** is a "frozen" copy of the current environment. If you subsequently change the environment via a call to **putenv** or `_wputenv`, the current environment (as returned by `getenv`/`_wgetenv` and the `_environ`/ `_wenviron` variable) will change, but the block pointed to by envp will not change. See [Customizing Command Line Processing](../cpp/customizing-c---command-line-processing.md) for information on suppressing environment processing. This argument is ANSI compatible in C, but not in C++.  
+ The `envp` array, which is a common extension in many UNIX systems, is used in Microsoft C++. It is an array of strings representing the variables set in the user's environment. This array is terminated by a **NULL** entry. It can be declared as an array of pointers to **char (char** \*envp[ ]**)** or as a pointer to pointers to **char (char** \*\*envp**)**. If your program uses **wmain** instead of **main**, use the `wchar_t` data type instead of `char`. The environment block passed to **main** and **wmain** is a "frozen" copy of the current environment. If you subsequently change the environment via a call to **putenv** or `_wputenv`, the current environment (as returned by `getenv`/`_wgetenv` and the `_environ`/ `_wenviron` variable) will change, but the block pointed to by envp will not change. See [Customizing Command Line Processing](../cpp/customizing-cpp-command-line-processing.md) for information on suppressing environment processing. This argument is ANSI compatible in C, but not in C++.  
   
 ## END Microsoft Specific  
   
@@ -92,4 +93,4 @@ int main( int argc, char *argv[], char *envp[] ) {
 ```  
   
 ## See Also  
- [main: Program Startup](../cpp/main--program-startup.md)
+ [main: Program Startup](../cpp/main-program-startup.md)

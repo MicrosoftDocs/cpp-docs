@@ -1,13 +1,13 @@
 ---
 title: "Detaching a CWnd from Its HWND"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "CWnd"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "detaching CWnds from HWNDs"
   - "Detach method (CWnd class)"
 ms.assetid: 6efadf84-0517-4a3f-acfd-216e088f19c6
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,9 +40,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Detaching a CWnd from Its HWND
-If you need to circumvent the object-`HWND` relationship, MFC provides another `CWnd` member function, [Detach](../Topic/CWnd::Detach.md), which disconnects the C++ window object from the Windows window. This prevents the destructor from destroying the Windows window when the object is destroyed.  
+If you need to circumvent the object-`HWND` relationship, MFC provides another `CWnd` member function, [Detach](../mfc/reference/cwnd-class.md#detach), which disconnects the C++ window object from the Windows window. This prevents the destructor from destroying the Windows window when the object is destroyed.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Creating windows](../mfc/creating-windows.md)  
   
@@ -51,3 +52,4 @@ If you need to circumvent the object-`HWND` relationship, MFC provides another `
   
 ## See Also  
  [Window Objects](../mfc/window-objects.md)
+

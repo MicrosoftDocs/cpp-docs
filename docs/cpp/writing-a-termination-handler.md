@@ -1,13 +1,13 @@
 ---
 title: "Writing a Termination Handler"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -22,6 +22,7 @@ helpviewer_keywords:
   - "try-catch keyword [C++], termination handlers"
 ms.assetid: 52aa1f8f-f8dd-44b8-be94-5e2fc88d44fb
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -50,9 +51,9 @@ Unlike an exception handler, a termination handler is always executed, regardles
   
 -   [Cleaning up resources](../cpp/cleaning-up-resources.md)  
   
--   [Timing of actions in exception handling](../cpp/timing-of-exception-handling--a-summary.md)  
+-   [Timing of actions in exception handling](../cpp/timing-of-exception-handling-a-summary.md)  
   
 -   [Restrictions on termination handlers](../cpp/restrictions-on-termination-handlers.md)  
   
 ## See Also  
- [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling--c-c---.md)
+ [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

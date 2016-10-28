@@ -1,13 +1,13 @@
 ---
 title: "Message Categories"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "messages [C++], Windows"
   - "message handling [C++], message types"
 ms.assetid: 68e1db75-9da6-4a4d-b2c2-dc4d59f8d87b
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,7 +40,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Message Categories
-What kinds of messages do you write handlers for? There are three main categories:  
+What kinds of messages do you write handlers for There are three main categories:  
   
 1.  Windows messages  
   
@@ -63,3 +64,4 @@ What kinds of messages do you write handlers for? There are three main categorie
   
 ## See Also  
  [Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md)
+

@@ -1,13 +1,13 @@
 ---
 title: "Interpreting User Input Through a View"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "CView class, interpreting user input"
   - "user input, interpreting through view class"
 ms.assetid: f0302a70-661f-4781-8fe7-78f082bef2a5
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -61,3 +62,4 @@ Other member functions of the view handle and interpret all user input. You will
   
 ## See Also  
  [Using Views](../mfc/using-views.md)
+

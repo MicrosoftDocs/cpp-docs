@@ -1,13 +1,13 @@
 ---
 title: "Event Handling"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "event handling, Visual C++"
 ms.assetid: 82de3f9a-2d88-470c-9527-8a5b54c8ced4
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,7 +38,7 @@ translation.priority.ht:
 # Event Handling
 Event handling is primarily supported for COM classes (C++ classes that implement COM objects, typically using ATL classes or the [coclass](../windows/coclass.md) attribute).  For more information, see [Event Handling in COM](../cpp/event-handling-in-com.md).  
   
- Event handling is also supported for native C++ classes (C++ classes that do not implement COM objects), however, that support is deprecated and will be removed in a future release.  For more information, see [Event Handling in Native C++](../cpp/event-handling-in-native-c--.md).  
+ Event handling is also supported for native C++ classes (C++ classes that do not implement COM objects), however, that support is deprecated and will be removed in a future release.  For more information, see [Event Handling in Native C++](../cpp/event-handling-in-native-cpp.md).  
   
  Event handling supports single- and multithreaded usage and protects data from simultaneous multithread access. It also allows you to derive subclasses from event source or receiver classes and support extended event sourcing/receiving in the derived class.  
   
@@ -45,14 +46,14 @@ Event handling is primarily supported for COM classes (C++ classes that implemen
   
 |Topic|Description|  
 |-----------|-----------------|  
-|[event_source](../windows/event_source.md)|Creates an event source.|  
-|[event_receiver](../windows/event_receiver.md)|Creates an event receiver (sink).|  
-|[__event](../cpp/__event.md)|Declares an event.|  
-|[__raise](../cpp/__raise.md)|Emphasizes the call site of an event.|  
-|[__hook](../cpp/__hook.md)|Associates a handler method with an event.|  
-|[__unhook](../cpp/__unhook.md)|Dissociates a handler method from an event.|  
+|[event_source](../windows/event-source.md)|Creates an event source.|  
+|[event_receiver](../windows/event-receiver.md)|Creates an event receiver (sink).|  
+|[__event](../cpp/event.md)|Declares an event.|  
+|[__raise](../cpp/raise.md)|Emphasizes the call site of an event.|  
+|[__hook](../cpp/hook.md)|Associates a handler method with an event.|  
+|[__unhook](../cpp/unhook.md)|Dissociates a handler method from an event.|  
   
 ## See Also  
- [C++ Language Reference](../cpp/c---language-reference.md)   
- [Keywords](../cpp/keywords--c---.md)   
- [Event Handling Samples](assetId:///cc0287d4-f92b-4da5-85fc-a0f186e16424)
+ [C++ Language Reference](../cpp/cpp-language-reference.md)   
+ [Keywords](../cpp/keywords-cpp.md)   
+ [Event Handling Samples](http://msdn.microsoft.com/en-us/cc0287d4-f92b-4da5-85fc-a0f186e16424)

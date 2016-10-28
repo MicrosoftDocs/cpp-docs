@@ -1,13 +1,13 @@
 ---
 title: "Support for Unicode"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -21,6 +21,7 @@ helpviewer_keywords:
   - "Unicode [C++], installing support"
 ms.assetid: 180f1d10-8543-4f79-85ce-293d3cb443bb
 caps.latest.revision: 10
+author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,7 +40,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Support for Unicode
-Unicode is a specification for supporting all character sets, including those that cannot be represented in just one byte. If you are programming for an international market, we recommend that you use either Unicode or [multibyte character sets](../text/support-for-multibyte-character-sets--mbcss-.md) (MBCSs), or enable your program so you can build it for either by changing a switch.  
+Unicode is a specification for supporting all character sets, including those that cannot be represented in just one byte. If you are programming for an international market, we recommend that you use either Unicode or [multibyte character sets](../text/support-for-multibyte-character-sets-mbcss.md) (MBCSs), or enable your program so you can build it for either by changing a switch.  
   
  A wide character is a 2-byte multilingual character code. Most characters used in modern computing worldwide, including technical symbols and special publishing characters, can be represented according to the Unicode specification as a wide character. Characters that cannot be represented in just one wide character can be represented in a Unicode pair by using the Unicode surrogate feature. Because every wide character is represented in a fixed size of 16 bits, using wide characters simplifies programming with international character sets.  
   
@@ -75,8 +76,8 @@ Unicode is a specification for supporting all character sets, including those th
   
 -   [See a summary of Unicode programming](../text/unicode-programming-summary.md)  
   
--   [Learn about generic-text mappings for byte-width portability](../text/generic-text-mappings-in-tchar.h.md)  
+-   [Learn about generic-text mappings for byte-width portability](../text/generic-text-mappings-in-tchar-h.md)  
   
 ## See Also  
- [Text and Strings](../text/text-and-strings-in-visual-c--.md)   
+ [Text and Strings](../text/text-and-strings-in-visual-cpp.md)   
  [Support for Using wmain](../text/support-for-using-wmain.md)
