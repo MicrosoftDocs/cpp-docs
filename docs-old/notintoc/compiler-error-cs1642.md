@@ -1,0 +1,63 @@
+---
+title: "Compiler Error CS1642"
+ms.custom: na
+ms.date: "10/13/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS1642"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1642"
+ms.assetid: 2efeedf1-1839-485d-8b8c-9045df1951f0
+caps.latest.revision: 10
+ms.author: "billchi"
+manager: "douge"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS1642
+Fixed size buffer fields may only be members of structs.  
+  
+ This error occurs if you use a fixed size buffer field in a `class`, instead of a `struct`. To resolve this error, change the `class` to a `struct` or declare the field as an ordinary array.  
+  
+## Example  
+ The following sample generates CS1642.  
+  
+```  
+// CS1642.cs  
+// compile with: /unsafe /target:library  
+unsafe class C  
+{  
+   fixed int a[10];   // CS1642  
+}  
+  
+unsafe struct D  
+{  
+    fixed int a[10];  
+}  
+  
+unsafe class E  
+{  
+   public int[] a = null;  
+}  
+```

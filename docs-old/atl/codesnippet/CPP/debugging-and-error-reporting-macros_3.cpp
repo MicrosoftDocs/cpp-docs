@@ -1,0 +1,1 @@
+CTraceCategory MY_CATEGORY(_T("MyCategoryName"), 1);

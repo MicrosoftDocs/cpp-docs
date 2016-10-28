@@ -1,0 +1,4 @@
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <ProgressRing x:Name="Progress"/>
+        <TextBlock x:Name="Results" FontSize="16"/>
+    </Grid>

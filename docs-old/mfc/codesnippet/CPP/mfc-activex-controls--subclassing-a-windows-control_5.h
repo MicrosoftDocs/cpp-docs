@@ -1,0 +1,2 @@
+class CMyAxSubCtrl : public COleControl
+{

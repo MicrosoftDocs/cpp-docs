@@ -1,0 +1,1 @@
+   CWin32Heap MyHeap(GetProcessHeap());   
