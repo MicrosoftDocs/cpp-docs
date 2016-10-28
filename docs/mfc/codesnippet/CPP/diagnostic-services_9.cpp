@@ -1,1 +1,0 @@
-      afxMemDF = allocMemDF | checkAlwaysMemDF;   

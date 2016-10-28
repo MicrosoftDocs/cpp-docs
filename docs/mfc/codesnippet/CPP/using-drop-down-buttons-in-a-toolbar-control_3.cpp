@@ -1,1 +1,0 @@
-   ON_NOTIFY(TBN_DROPDOWN, IDC_TOOLBAR1, &CMyDialog::OnTbnDropDownToolBar1)
