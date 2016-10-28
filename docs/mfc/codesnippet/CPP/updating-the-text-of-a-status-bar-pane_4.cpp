@@ -1,0 +1,1 @@
+   ON_UPDATE_COMMAND_UI(ID_INDICATOR_PAGE, &CMainFrame::OnUpdatePage)
