@@ -1,0 +1,56 @@
+---
+title: "Compiler Error CS0692"
+ms.custom: na
+ms.date: "10/13/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS0692"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0692"
+ms.assetid: d2fd650b-1f84-44b1-8c7e-471cad92a85e
+caps.latest.revision: 7
+ms.author: "billchi"
+manager: "douge"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error CS0692
+Duplicate type parameter 'identifier'  
+  
+ The same name may not be used more than once in a type parameter list. Rename or remove the duplicate type parameter(s).  
+  
+## Example  
+ The following sample generates CS0692:  
+  
+```  
+// CS0692.cs  
+// compile with: /target:library  
+class C <T, A, T>   // CS0692  
+{  
+}  
+  
+class D <T, T>   // CS0692  
+{  
+}  
+```

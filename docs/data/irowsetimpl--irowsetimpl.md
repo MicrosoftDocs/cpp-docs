@@ -1,0 +1,59 @@
+---
+title: "IRowsetImpl::IRowsetImpl"
+ms.custom: na
+ms.date: "10/14/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "IRowsetImpl.IRowsetImpl"
+  - "ATL::IRowsetImpl::IRowsetImpl"
+  - "ATL.IRowsetImpl.IRowsetImpl"
+  - "IRowsetImpl::IRowsetImpl"
+  - "IRowsetImpl"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IRowsetImpl constructor"
+ms.assetid: 44ef30c8-9fa5-492b-b90b-40723745dc20
+caps.latest.revision: 8
+ms.author: "mblome"
+manager: "ghogen"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# IRowsetImpl::IRowsetImpl
+The constructor.  
+  
+## Syntax  
+  
+```  
+  
+IRowsetImpl( );  
+  
+```  
+  
+## Remarks  
+ You usually do not need to call this method directly.  
+  
+## Requirements  
+ **Header:** atldb.h  
+  
+## See Also  
+ [IRowsetImpl Class](../data/irowsetimpl-class.md)
