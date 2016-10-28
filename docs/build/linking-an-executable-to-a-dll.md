@@ -1,13 +1,13 @@
 ---
 title: "Linking an Executable to a DLL"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -22,6 +22,7 @@ helpviewer_keywords:
   - "loading DLLs [C++]"
 ms.assetid: 7592e276-dd6e-4a74-90c8-e1ee35598ea3
 caps.latest.revision: 8
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -56,11 +57,11 @@ An executable file links to (or loads) a DLL in one of two ways:
   
 ## What do you want to know more about?  
   
--   [Working with Import Libraries and Export Files](../buildref/working-with-import-libraries-and-export-files.md)  
+-   [Working with Import Libraries and Export Files](../build/reference/working-with-import-libraries-and-export-files.md)  
   
 -   [Determining which linking method to use](../build/determining-which-linking-method-to-use.md)  
   
 -   [The search path used by Windows to locate a DLL](../build/search-path-used-by-windows-to-locate-a-dll.md)  
   
 ## See Also  
- [DLLs in Visual C++](../build/dlls-in-visual-c--.md)
+ [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

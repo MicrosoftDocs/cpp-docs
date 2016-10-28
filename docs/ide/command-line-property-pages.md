@@ -1,13 +1,13 @@
 ---
 title: "Command Line Property Pages"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.project.AdditionalOptionsPage"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "Command Line property pages"
 ms.assetid: e1721b6c-8b39-4b44-a41e-69b5bb470cc9
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,8 +40,8 @@ Most property page folders contain a **Command Line** property page. This page d
   
  Any command that you enter in the edit box will be passed through to the tool for the folder. No verification or checks will be done on the input, nor will there be any dependency checking.  
   
- For information on how to access the **Command Line** property pages, see [How To: Specify Project Properties with Property Pages](../notintoc/how-to--specify-project-properties-with-property-pages.md).  
+ For information on how to access the **Command Line** property pages, see [How To: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md).  
   
 ## See Also  
- [Property Pages](../ide/property-pages--visual-c---.md)   
- [.Lib Files as Linker Input](../buildref/.lib-files-as-linker-input.md)
+ [Property Pages](../ide/property-pages-visual-cpp.md)   
+ [.Lib Files as Linker Input](../build/reference/dot-lib-files-as-linker-input.md)

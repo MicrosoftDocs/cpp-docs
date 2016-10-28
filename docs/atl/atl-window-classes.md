@@ -1,13 +1,13 @@
 ---
 title: "ATL Window Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "superclassing"
   - "superclassing, ATL"
 ms.assetid: 1d12b708-de3e-49d5-9e41-42fe4769fa62
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -64,8 +65,9 @@ ATL includes several classes that allow you to use and implement windows. These 
  Discusses window traits classes in ATL. These classes provide a simple method for standardizing the styles used for the creation of a window object.  
   
 ## Related Sections  
- [ATL](../atl/active-template-library--atl--concepts.md)  
+ [ATL](../atl/active-template-library-atl-concepts.md)  
  Provides links to conceptual topics on how to program using the Active Template Library.  
   
  [Windows Support Classes](../atl/windows-support-classes.md)  
  Lists additional ATL classes that support windows and message maps in ATL.
+

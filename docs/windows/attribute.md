@@ -1,13 +1,13 @@
 ---
 title: "attribute"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "vc-attr.attribute"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "attribute attribute"
   - "attributes [C++], custom"
 ms.assetid: 8cb3489f-65c4-44ea-b0aa-3c3c6b15741d
-caps.latest.revision: 16
+caps.latest.revision: 18
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -64,9 +65,9 @@ Allows you to create a custom attribute.
 ## Remarks  
   
 > [!NOTE]
->  The `attribute` attribute is now deprecated.  Use the common language runtime attribute System.Attribute to directly to create user-defined attirbutes.  For more information, see [User-Defined Attributes](../windows/user-defined-attributes---c---component-extensions-.md).  
+>  The `attribute` attribute is now deprecated.  Use the common language runtime attribute System.Attribute to directly to create user-defined attirbutes.  For more information, see [User-Defined Attributes](../windows/user-defined-attributes-cpp-component-extensions.md).  
   
- You define a [custom attribute](../windows/custom-attributes--c---.md) by placing the `attribute` attribute on a managed class or struct definition. The name of the class is the custom attribute. For example:  
+ You define a [custom attribute](../windows/custom-attributes-cpp.md) by placing the `attribute` attribute on a managed class or struct definition. The name of the class is the custom attribute. For example:  
   
 ```  
 [ attribute(Parameter) ]  
@@ -122,9 +123,9 @@ public:
 ref class ClassC {};  
 ```  
   
- For a list of possible attribute parameter types, see [Custom Attributes](../windows/custom-attributes--c---.md).  
+ For a list of possible attribute parameter types, see [Custom Attributes](../windows/custom-attributes-cpp.md).  
   
- See [User-Defined Attributes](../windows/user-defined-attributes---c---component-extensions-.md) for a discussion on attribute targets.  
+ See [User-Defined Attributes](../windows/user-defined-attributes-cpp-component-extensions.md) for a discussion on attribute targets.  
   
  The `attribute` attribute has an `AllowMultiple` parameter that specifies whether the custom attribute is single use or multiuse (can appear more than once on the same entity).  
   
@@ -141,7 +142,7 @@ ref struct MyAttr {
 ref class ClassA {};  
 ```  
   
- Custom attribute classes are derived directly or indirectly from \<xref:System.ComponentModel.AttributeCollection.#ctor*>, which makes identifying attribute definitions in metadata fast and easy. The `attribute` attribute implies inheritance from System::Attribute, so explicit derivation is not necessary:  
+ Custom attribute classes are derived directly or indirectly from <xref:System.ComponentModel.AttributeCollection.#ctor*>, which makes identifying attribute definitions in metadata fast and easy. The `attribute` attribute implies inheritance from System::Attribute, so explicit derivation is not necessary:  
   
 ```  
 [ attribute(Class) ]  
@@ -155,7 +156,7 @@ ref class MyAttr
 ref class MyAttr : System::Attribute   // OK, but redundant.  
 ```  
   
- `attribute` is an alias for \<xref:System.AttributeUsageAttribute?displayProperty=fullName> (not AttributeAttribute; this is an exception to the attribute naming rule).  
+ `attribute` is an alias for <xref:System.AttributeUsageAttribute?displayProperty=fullName> (not AttributeAttribute; this is an exception to the attribute naming rule).  
   
 ## Requirements  
   
@@ -222,7 +223,10 @@ int main() {
 }  
 ```  
   
- **2**   
+```Output  
+2  
+```  
+  
 ## See Also  
  [Attributes Alphabetical Reference](../windows/attributes-alphabetical-reference.md)   
- [Custom Attributes](assetId:///558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Custom Attributes](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

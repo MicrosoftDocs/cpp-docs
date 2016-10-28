@@ -1,13 +1,13 @@
 ---
 title: "Importing and Exporting Inline Functions"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -23,6 +23,7 @@ helpviewer_keywords:
   - "functions [C++], exporting"
 ms.assetid: 89f488f8-b078-40fe-afd7-80bd7840057b
 caps.latest.revision: 7
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -54,15 +55,15 @@ Imported functions can be defined as inline. The effect is roughly the same as d
   
 -   [Export from a DLL using .DEF files](../build/exporting-from-a-dll-using-def-files.md)  
   
--   [Export from a DLL using __declspec(dllexport)](../build/exporting-from-a-dll-using-__declspec-dllexport-.md)  
+-   [Export from a DLL using __declspec(dllexport)](../build/exporting-from-a-dll-using-declspec-dllexport.md)  
   
--   [Export and import using AFX_EXT_CLASS](../build/exporting-and-importing-using-afx_ext_class.md)  
+-   [Export and import using AFX_EXT_CLASS](../build/exporting-and-importing-using-afx-ext-class.md)  
   
--   [Export C++ functions for use in C-language executables](../build/exporting-c---functions-for-use-in-c-language-executables.md)  
+-   [Export C++ functions for use in C-language executables](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)  
   
 -   [Determine which exporting method to use](../build/determining-which-exporting-method-to-use.md)  
   
--   [Import into an application using __declspec(dllimport)](../build/importing-into-an-application-using-__declspec-dllimport-.md)  
+-   [Import into an application using __declspec(dllimport)](../build/importing-into-an-application-using-declspec-dllimport.md)  
   
 ## See Also  
  [Importing and Exporting](../build/importing-and-exporting.md)

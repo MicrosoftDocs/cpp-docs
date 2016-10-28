@@ -1,13 +1,13 @@
 ---
 title: "Closing Files"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "MFC [C++], file operations"
   - "files [C++], closing"
 ms.assetid: 8415a3a8-3c75-45b0-ac2a-d5385f49bdb3
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,7 +41,8 @@ As usual in I/O operations, once you finish with a file, you must close it.
   
 1.  Use the **Close** member function. This function closes the file-system file and flushes buffers if necessary.  
   
- If you allocated the [CFile](../mfcref/cfile-class.md) object on the frame (as in the example shown in [Opening Files](../mfc/opening-files.md)), the object will automatically be closed and then destroyed when it goes out of scope. Note that deleting the `CFile` object does not delete the physical file in the file system.  
+ If you allocated the [CFile](../mfc/reference/cfile-class.md) object on the frame (as in the example shown in [Opening Files](../mfc/opening-files.md)), the object will automatically be closed and then destroyed when it goes out of scope. Note that deleting the `CFile` object does not delete the physical file in the file system.  
   
 ## See Also  
  [Files](../mfc/files-in-mfc.md)
+

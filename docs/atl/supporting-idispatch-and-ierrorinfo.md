@@ -1,13 +1,13 @@
 ---
 title: "Supporting IDispatch and IErrorInfo"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "IErrorInfo"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "IDispatchImpl class"
   - "IDispatch class support in ATL"
 ms.assetid: 7db2220f-319d-4ce9-9382-d340019f14f7
-caps.latest.revision: 14
+caps.latest.revision: 16
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,9 +41,10 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Supporting IDispatch and IErrorInfo
-You can use the template class [IDispatchImpl](../atl/idispatchimpl-class.md) to provide a default implementation of the `IDispatch Interface` portion of any dual interfaces on your object.  
+You can use the template class [IDispatchImpl](../atl/reference/idispatchimpl-class.md) to provide a default implementation of the `IDispatch Interface` portion of any dual interfaces on your object.  
   
- If your object uses the `IErrorInfo` interface to report errors back to the client, then your object must support the `ISupportErrorInfo Interface` interface. The template class [ISupportErrorInfoImpl](../atl/isupporterrorinfoimpl-class.md) provides an easy way to implement this if you only have a single interface that generates errors on your object.  
+ If your object uses the `IErrorInfo` interface to report errors back to the client, then your object must support the `ISupportErrorInfo Interface` interface. The template class [ISupportErrorInfoImpl](../atl/reference/isupporterrorinfoimpl-class.md) provides an easy way to implement this if you only have a single interface that generates errors on your object.  
   
 ## See Also  
  [Fundamentals of ATL COM Objects](../atl/fundamentals-of-atl-com-objects.md)
+

@@ -1,13 +1,13 @@
 ---
 title: "try-except Statement"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "_abnormal_termination_cpp"
@@ -36,6 +36,7 @@ helpviewer_keywords:
   - "_abnormal_termination keyword [C++]"
 ms.assetid: 30d60071-ea49-4bfb-a8e6-7a420de66381
 caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -80,7 +81,7 @@ __except ( expression )
  Exceptions can be either hardware-based or software-based. Even when applications cannot completely recover from hardware or software exceptions, structured exception handling makes it possible to display error information and trap the internal state of the application to help diagnose the problem. This is especially useful for intermittent problems that cannot be reproduced easily.  
   
 > [!NOTE]
->  Structured exception handling works with Win32 for both C and C++ source files. However, it is not specifically designed for C++. You can ensure that your code is more portable by using C++ exception handling. Also, C++ exception handling is more flexible, in that it can handle exceptions of any type. For C++ programs, it is recommended that you use the C++ exception-handling mechanism ([try, catch, and throw](../cpp/try--throw--and-catch-statements--c---.md) statements).  
+>  Structured exception handling works with Win32 for both C and C++ source files. However, it is not specifically designed for C++. You can ensure that your code is more portable by using C++ exception handling. Also, C++ exception handling is more flexible, in that it can handle exceptions of any type. For C++ programs, it is recommended that you use the C++ exception-handling mechanism ([try, catch, and throw](../cpp/try-throw-and-catch-statements-cpp.md) statements).  
   
  The compound statement after the `__try` clause is the body or guarded section. The compound statement after the `__except` clause is the exception handler. The handler specifies a set of actions to be taken if an exception is raised during execution of the body of the guarded section. Execution proceeds as follows:  
   
@@ -223,5 +224,5 @@ world
   
 ## See Also  
  [Writing an Exception Handler](../cpp/writing-an-exception-handler.md)   
- [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling--c-c---.md)   
- [Keywords](../cpp/keywords--c---.md)
+ [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)   
+ [Keywords](../cpp/keywords-cpp.md)

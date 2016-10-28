@@ -1,13 +1,13 @@
 ---
 title: "Ready-to-Use Map Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.classes.map"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "classes [C++], map"
   - "map classes"
 ms.assetid: 3f0b1c05-2243-4d4d-98d4-429fc3310c9f
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,26 +40,27 @@ translation.priority.ht:
 # Ready-to-Use Map Classes
 The following classes are ready-to-use map classes.  
   
- [CMapPtrToPtr](../mfcref/cmapptrtoptr-class.md)  
+ [CMapPtrToPtr](../mfc/reference/cmapptrtoptr-class.md)  
  Uses `void` pointers as keys for finding other `void` pointers.  
   
- [CMapPtrToWord](../mfcref/cmapptrtoword-class.md)  
+ [CMapPtrToWord](../mfc/reference/cmapptrtoword-class.md)  
  Uses `void` pointers as keys for finding data of type **WORD**.  
   
- [CMapStringToOb](../mfcref/cmapstringtoob-class.md)  
+ [CMapStringToOb](../mfc/reference/cmapstringtoob-class.md)  
  Uses `CString` objects as keys for finding `CObject` pointers.  
   
- [CMapStringToPtr](../mfcref/cmapstringtoptr-class.md)  
+ [CMapStringToPtr](../mfc/reference/cmapstringtoptr-class.md)  
  Uses `CString` objects as keys for finding `void` pointers.  
   
- [CMapStringToString](../mfcref/cmapstringtostring-class.md)  
+ [CMapStringToString](../mfc/reference/cmapstringtostring-class.md)  
  Uses `CString` objects as keys for finding other `CString` objects.  
   
- [CMapWordToOb](../mfcref/cmapwordtoob-class.md)  
+ [CMapWordToOb](../mfc/reference/cmapwordtoob-class.md)  
  Uses data of type **WORD** to find `CObject` pointers.  
   
- [CMapWordToPtr](../mfcref/cmapwordtoptr-class.md)  
+ [CMapWordToPtr](../mfc/reference/cmapwordtoptr-class.md)  
  Uses data of type **WORD** to find `void` pointers.  
   
 ## See Also  
  [Class Overview](../mfc/class-library-overview.md)
+

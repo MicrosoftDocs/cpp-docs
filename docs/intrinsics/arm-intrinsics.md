@@ -1,13 +1,13 @@
 ---
 title: "ARM Intrinsics"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "arm_neon/vsetq_lane_p8"
@@ -1942,6 +1942,7 @@ helpviewer_keywords:
   - "intrinsics, ARM"
 ms.assetid: d3d7dadd-7bd5-4508-8bff-371a66913e20
 caps.latest.revision: 15
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -2195,7 +2196,7 @@ __iso_volatile_store32(p, a);        // equivalent to: *(volatile __int32*)p = a
   
  Notice that the intrinsics take volatile pointers to accommodate volatile variables. However, there is no requirement or recommendation to use volatile pointers as arguments; the semantics of these operations are exactly the same if a regular, non-volatile type is used.  
   
- For more information about the **/volatile:iso** command-line argument, see [/volatile (volatile Keyword Interpretation)](../buildref/-volatile--volatile-keyword-interpretation-.md).  
+ For more information about the **/volatile:iso** command-line argument, see [/volatile (volatile Keyword Interpretation)](../build/reference/volatile-volatile-keyword-interpretation.md).  
   
 ###  <a name="MoveFromCo"></a> _MoveFromCoprocessor, _MoveFromCoprocessor2  
  These intrinsic functions read data from ARM coprocessors by using the coprocessor data transfer instructions.  
@@ -2592,5 +2593,5 @@ void _MoveFromCoprocessor64(
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   
- [ARM Assembler Reference](../intrinsics/arm-assembler-reference.md)   
- [C++ Language Reference](../cpp/c---language-reference.md)
+ [ARM Assembler Reference](../assembler/arm/arm-assembler-reference.md)   
+ [C++ Language Reference](../cpp/cpp-language-reference.md)

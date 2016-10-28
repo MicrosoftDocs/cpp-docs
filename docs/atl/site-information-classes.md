@@ -1,13 +1,13 @@
 ---
 title: "Site Information Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.atl.site"
@@ -16,7 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "site information classes"
 ms.assetid: 102eae20-7953-4efb-b27b-409885c9c064
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,9 +38,10 @@ translation.priority.ht:
 # Site Information Classes
 The following classes allow an object to communicate with its site:  
   
--   [IObjectWithSiteImpl](../atl/iobjectwithsiteimpl-class.md) Retrieves and sets a pointer to an object's site. Used for objects that are not controls.  
+-   [IObjectWithSiteImpl](../atl/reference/iobjectwithsiteimpl-class.md) Retrieves and sets a pointer to an object's site. Used for objects that are not controls.  
   
--   [IOleObjectImpl](../atl/ioleobjectimpl-class.md) Retrieves and sets a pointer to an object's site. Used for controls.  
+-   [IOleObjectImpl](../atl/reference/ioleobjectimpl-class.md) Retrieves and sets a pointer to an object's site. Used for controls.  
   
 ## See Also  
  [Class Overview](../atl/atl-class-overview.md)
+

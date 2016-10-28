@@ -1,13 +1,13 @@
 ---
 title: "Linkage in Names with Block Scope"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "external linkage, scope linkage rules"
 ms.assetid: 73efa91a-f761-47f7-bbd9-9f9e3508e218
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -44,4 +45,4 @@ The following linkage rules apply to names with block scope (local names):
 -   All other names with block scope have no linkage.  
   
 ## See Also  
- [Program and Linkage](../cpp/program-and-linkage---c---.md)
+ [Program and Linkage](../cpp/program-and-linkage-cpp.md)

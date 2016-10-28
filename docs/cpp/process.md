@@ -1,13 +1,13 @@
 ---
 title: "process"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "Process"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "process __declspec keyword"
 ms.assetid: 60eecc2f-4eef-4567-b9db-aaed34733023
 caps.latest.revision: 16
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,12 +44,12 @@ Specifies that your managed application process should have a single copy of a p
   
  When compiling with **/clr:pure**, variables marked as per process must also be declared as `const`. This ensures that per process variables are not changed in one application domain, and giving unexpected results in another application domain. The primary intended use of `__declspec(process)` is to enable compile time initialization of a global variable, static member variable, or static local variable under **/clr:pure**.  
   
- `process` is only valid when compiling with [/clr](../buildref/-clr--common-language-runtime-compilation-.md) or **/clr:pure** and is not valid when compiling with **/clr:safe**.  
+ `process` is only valid when compiling with [/clr](../build/reference/clr-common-language-runtime-compilation.md) or **/clr:pure** and is not valid when compiling with **/clr:safe**.  
   
  If you want each application domain to have its own copy of a global variable, use [appdomain](../cpp/appdomain.md).  
   
- See [Application Domains and Visual C++](../cli/application-domains-and-visual-c--.md) for more information.  
+ See [Application Domains and Visual C++](../dotnet/application-domains-and-visual-cpp.md) for more information.  
   
 ## See Also  
- [__declspec](../cpp/__declspec.md)   
- [Keywords](../cpp/keywords--c---.md)
+ [__declspec](../cpp/declspec.md)   
+ [Keywords](../cpp/keywords-cpp.md)

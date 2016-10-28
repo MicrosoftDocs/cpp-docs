@@ -1,13 +1,13 @@
 ---
 title: "Byte Indices"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "byte indices [C++]"
 ms.assetid: f6e7774a-86c6-41c2-89e3-74fd46432e47
 caps.latest.revision: 7
+author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 translation.priority.ht: 
@@ -45,7 +46,7 @@ Use the following tips:
   
      This might index a trail byte, not a lead byte, and thus it might not point to a `character`.  
   
--   Use the [_mbclen](../crt/_mbclen--mblen--_mblen_l.md) function to solve the preceding problem:  
+-   Use the [_mbclen](../c-runtime-library/reference/mbclen-mblen-mblen-l.md) function to solve the preceding problem:  
   
     ```  
     while ( rgch[ i ] != '\\' )  

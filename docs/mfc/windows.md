@@ -1,13 +1,13 @@
 ---
 title: "Windows"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "MFC [C++], windows"
   - "window objects [C++], MFC Framework"
 ms.assetid: dd92bf34-842e-40fe-8aea-3028b55314d5
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -36,18 +37,18 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Windows
-This family of articles covers window objects in the MFC framework. All MFC windows derive from class [CWnd](../mfcref/cwnd-class.md), including frame windows, views, dialog boxes, and controls.  
+This family of articles covers window objects in the MFC framework. All MFC windows derive from class [CWnd](../mfc/reference/cwnd-class.md), including frame windows, views, dialog boxes, and controls.  
   
  The first group of articles describes [window objects](../mfc/window-objects.md) in general. Refer to this group for general information about C++ window objects, how they encapsulate an HWND, and how you use them when creating your own windows, such as child windows.  
   
  The second group of articles describes [frame windows](../mfc/frame-windows.md)—windows that put a frame around content — in particular. Refer to this group for information about how the MFC framework manages frame windows and the contents that they frame, including control bars and views.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
  *Topics on Window Objects in General*  
   
 -   [Window objects](../mfc/window-objects.md)  
   
--   [Relationship between a C++ window objects and HWND handles](../mfc/relationship-between-a-c---window-object-and-an-hwnd.md)  
+-   [Relationship between a C++ window objects and HWND handles](../mfc/relationship-between-a-cpp-window-object-and-an-hwnd.md)  
   
 -   [Derived Window classes](../mfc/derived-window-classes.md)  
   
@@ -71,7 +72,7 @@ This family of articles covers window objects in the MFC framework. All MFC wind
   
 -   [Frame-window classes](../mfc/frame-window-classes.md)  
   
--   [Frame-window styles](../mfc/frame-window-styles--c---.md)  
+-   [Frame-window styles](../mfc/frame-window-styles-cpp.md)  
   
 -   [Changing the styles of a window created by MFC](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)  
   
@@ -81,17 +82,17 @@ This family of articles covers window objects in the MFC framework. All MFC wind
   
 -   [Managing MD/Child windows (the MDICLIENT window)](../mfc/managing-mdi-child-windows.md)  
   
--   [Managing menus, control bars, and accelerators](../mfc/managing-menus--control-bars--and-accelerators.md)  
+-   [Managing menus, control bars, and accelerators](../mfc/managing-menus-control-bars-and-accelerators.md)  
   
--   [CFrameWnd](../mfcref/cframewnd-class.md)  
+-   [CFrameWnd](../mfc/reference/cframewnd-class.md)  
   
--   [CMDIFrameWnd](../mfcref/cmdiframewnd-class.md)  
+-   [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md)  
   
--   [CMDIChildWnd](../mfcref/cmdichildwnd-class.md)  
+-   [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md)  
   
 -   [Using Views](../mfc/using-views.md)  
   
--   [Multiple Document Types, Views, and Frame Windows (Splitter windows)](../mfc/multiple-document-types--views--and-frame-windows.md)  
+-   [Multiple Document Types, Views, and Frame Windows (Splitter windows)](../mfc/multiple-document-types-views-and-frame-windows.md)  
   
 -   [Messages (maps and handler functions)](../mfc/messages.md)  
   
@@ -107,7 +108,7 @@ This family of articles covers window objects in the MFC framework. All MFC wind
   
  *Create Splitter Windows*  
   
--   [Create splitter windows](../mfc/multiple-document-types--views--and-frame-windows.md)  
+-   [Create splitter windows](../mfc/multiple-document-types-views-and-frame-windows.md)  
   
  *Manage Child Windows and the Current View*  
   
@@ -115,7 +116,7 @@ This family of articles covers window objects in the MFC framework. All MFC wind
   
 -   [Manage the current view](../mfc/managing-the-current-view.md)  
   
--   [Manage menus, control bars, and accelerators](../mfc/managing-menus--control-bars--and-accelerators.md)  
+-   [Manage menus, control bars, and accelerators](../mfc/managing-menus-control-bars-and-accelerators.md)  
   
  *Work with Device Contexts and Window Styles*  
   
@@ -124,8 +125,9 @@ This family of articles covers window objects in the MFC framework. All MFC wind
 -   [Change the styles of a window created by MFC](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)  
   
 ## See Also  
- [User Interface Elements](../mfc/user-interface-elements--mfc-.md)   
+ [User Interface Elements](../mfc/user-interface-elements-mfc.md)   
  [Dialog Boxes](../mfc/dialog-boxes.md)   
  [Toolbars](../mfc/toolbars.md)   
  [Status Bars](../mfc/status-bars.md)   
  [Dialog Bars](../mfc/dialog-bars.md)
+

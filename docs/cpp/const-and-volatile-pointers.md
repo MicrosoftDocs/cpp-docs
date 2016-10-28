@@ -1,13 +1,13 @@
 ---
 title: "const and volatile Pointers"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "const keyword [C++], volatile pointers"
 ms.assetid: 0c92dc6c-400e-4342-b345-63ddfe649d7e
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -36,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # const and volatile Pointers
-The [const](../cpp/const--c---.md) and [volatile](../cpp/volatile--c---.md) keywords change how pointers are treated. The **const** keyword specifies that the pointer cannot be modified after initialization; the pointer is protected from modification thereafter.  
+The [const](../cpp/const-cpp.md) and [volatile](../cpp/volatile-cpp.md) keywords change how pointers are treated. The **const** keyword specifies that the pointer cannot be modified after initialization; the pointer is protected from modification thereafter.  
   
  The `volatile` keyword specifies that the value associated with the name that follows can be modified by actions other than those in the user application. Therefore, the `volatile` keyword is useful for declaring objects in shared memory that can be accessed by multiple processes or global data areas used for communication with interrupt service routines.  
   
@@ -104,10 +105,10 @@ pch4 = &ch;   // Error: pointer declared const
 errno_t strcpy_s( char *strDestination, size_t numberOfElements, const char *strSource );  
 ```  
   
- The preceding statement declares a function, [strcpy_s](../crt/strcpy_s--wcscpy_s--_mbscpy_s.md), where two of the three arguments are of type pointer to `char`. Because the arguments are passed by reference and not by value, the function would be free to modify both `strDestination` and `strSource` if `strSource` were not declared as **const**. The declaration of `strSource` as **const** assures the caller that `strSource` cannot be changed by the called function.  
+ The preceding statement declares a function, [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md), where two of the three arguments are of type pointer to `char`. Because the arguments are passed by reference and not by value, the function would be free to modify both `strDestination` and `strSource` if `strSource` were not declared as **const**. The declaration of `strSource` as **const** assures the caller that `strSource` cannot be changed by the called function.  
   
 > [!NOTE]
->  Because there is a standard conversion from *typename* **\*** to **const** *typename* **\***, it is legal to pass an argument of type **char \*** to [strcpy_s](../crt/strcpy_s--wcscpy_s--_mbscpy_s.md). However, the reverse is not true; no implicit conversion exists to remove the **const** attribute from an object or pointer.  
+>  Because there is a standard conversion from *typename* **\*** to **const** *typename* **\***, it is legal to pass an argument of type **char \*** to [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md). However, the reverse is not true; no implicit conversion exists to remove the **const** attribute from an object or pointer.  
   
  A **const** pointer of a given type can be assigned to a pointer of the same type. However, a pointer that is not **const** cannot be assigned to a **const** pointer. The following code shows correct and incorrect assignments:  
   
@@ -145,4 +146,4 @@ int main() {
 ```  
   
 ## See Also  
- [Pointers](../cpp/pointers--c---.md)
+ [Pointers](../cpp/pointers-cpp.md)

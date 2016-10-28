@@ -1,13 +1,13 @@
 ---
 title: "Application Design Choices"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -21,7 +21,8 @@ helpviewer_keywords:
   - "server applications, vs. client applications on Internet"
   - "client applications [C++], vs. server applications on Internet"
 ms.assetid: 9b96172c-b4d4-4c69-bfb2-226ce0de6d08
-caps.latest.revision: 10
+caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -96,12 +97,13 @@ This article discusses some of the design issues to consider when programming fo
   
 |Use this protocol|Under these conditions|Using these classes|  
 |-----------------------|----------------------------|-------------------------|  
-|[Internet Downloading Using Asynchronous Monikers](../mfc/asynchronous-monikers-on-the-internet.md)|For asynchronous transfer using COM, ActiveX controls, and any Internet protocol.|[CAsyncMonikerFile](../mfcref/casyncmonikerfile-class.md), [CDataPathProperty](../mfcref/cdatapathproperty-class.md)|  
-|[WinInet](../mfc/win32-internet-extensions--wininet-.md)|For Internet protocols for HTTP, FTP, and gopher. Data can be transferred synchronously or asynchronously and is stored in a system-wide cache.|[CInternetSession](../mfcref/cinternetsession-class.md), [CFtpFileFind](../mfcref/cftpfilefind-class.md), [CGopherFileFind](../mfcref/cgopherfilefind-class.md), and many more.|  
-|[WinSock](../mfc/windows-sockets-in-mfc.md)|For maximum efficiency and control. Requires understanding of sockets and TCP/IP protocols.|[CSocket](../mfcref/csocket-class.md), [CAsyncSocket](../mfcref/casyncsocket-class.md)|  
+|[Internet Downloading Using Asynchronous Monikers](../mfc/asynchronous-monikers-on-the-internet.md)|For asynchronous transfer using COM, ActiveX controls, and any Internet protocol.|[CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md), [CDataPathProperty](../mfc/reference/cdatapathproperty-class.md)|  
+|[WinInet](../mfc/win32-internet-extensions-wininet.md)|For Internet protocols for HTTP, FTP, and gopher. Data can be transferred synchronously or asynchronously and is stored in a system-wide cache.|[CInternetSession](../mfc/reference/cinternetsession-class.md), [CFtpFileFind](../mfc/reference/cftpfilefind-class.md), [CGopherFileFind](../mfc/reference/cgopherfilefind-class.md), and many more.|  
+|[WinSock](../mfc/windows-sockets-in-mfc.md)|For maximum efficiency and control. Requires understanding of sockets and TCP/IP protocols.|[CSocket](../mfc/reference/csocket-class.md), [CAsyncSocket](../mfc/reference/casyncsocket-class.md)|  
   
 ## See Also  
  [MFC Internet Programming Tasks](../mfc/mfc-internet-programming-tasks.md)   
  [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)   
- [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions--wininet-.md)   
+ [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)   
  [Asynchronous Monikers on the Internet](../mfc/asynchronous-monikers-on-the-internet.md)
+

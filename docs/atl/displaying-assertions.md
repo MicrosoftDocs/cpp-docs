@@ -1,13 +1,13 @@
 ---
 title: "Displaying Assertions"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "debugging assertions"
   - "assertions, debugging"
 ms.assetid: fa353fe8-4656-4384-a5d2-8866bc977f06
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -42,3 +43,4 @@ If the client connected to your service appears to stop responding, the service 
   
 ## See Also  
  [Debugging Tips](../atl/debugging-tips.md)
+

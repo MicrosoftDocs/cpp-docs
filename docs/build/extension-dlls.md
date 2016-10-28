@@ -1,13 +1,13 @@
 ---
 title: "Extension DLLs"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "afxdll"
@@ -26,6 +26,7 @@ helpviewer_keywords:
   - "extension DLLs [C++], about extension DLLs"
 ms.assetid: f69ac3d4-e474-4b1c-87a1-6738843a135c
 caps.latest.revision: 7
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -102,11 +103,11 @@ An MFC extension DLL is a DLL that typically implements reusable classes derived
   
  Walking the list has the disadvantages that it is slightly slower and requires managing resource ID ranges. It has the advantage that a client application that links to several extension DLLs can use any DLL-provided resource without having to specify the DLL instance handle. `AfxFindResourceHandle` is an API used for walking the resource list to look for a given match. It takes the name and type of a resource and returns the resource handle where it was first found (or NULL).  
   
- If you do not want to walk the list and only load resources from a specific place, use the functions `AfxGetResourceHandle` and `AfxSetResourceHandle` to save the old handle and set the new handle. Be sure to restore the old resource handle before you return to the client application. For an example of using this approach to explicitly load a menu, see Testdll2 .cpp in the MFC sample [DLLHUSK](assetId:///dfcaa6ff-b8e2-4efd-8100-ee3650071f90).  
+ If you do not want to walk the list and only load resources from a specific place, use the functions `AfxGetResourceHandle` and `AfxSetResourceHandle` to save the old handle and set the new handle. Be sure to restore the old resource handle before you return to the client application. For an example of using this approach to explicitly load a menu, see Testdll2 .cpp in the MFC sample [DLLHUSK](http://msdn.microsoft.com/en-us/dfcaa6ff-b8e2-4efd-8100-ee3650071f90).  
   
  Dynamic creation of MFC objects given an MFC name is similar. The MFC object deserialization mechanism needs to have all of the `CRuntimeClass` objects registered so that it can reconstruct by dynamically creating C++ objects of the required type based on what was stored earlier.  
   
- In the case of the MFC sample [DLLHUSK](assetId:///dfcaa6ff-b8e2-4efd-8100-ee3650071f90), the list looks something like:  
+ In the case of the MFC sample [DLLHUSK](http://msdn.microsoft.com/en-us/dfcaa6ff-b8e2-4efd-8100-ee3650071f90), the list looks something like:  
   
 ```  
 head ->   DLLHUSK.EXE   - or -   DLLHUSK.EXE  
@@ -128,7 +129,7 @@ head ->   DLLHUSK.EXE   - or -   DLLHUSK.EXE
   
  Merging the resources and class names of all DLLs into the client application's name space has the disadvantage of requiring you to be careful with what IDs or names you pick.  
   
- The [DLLHUSK](assetId:///dfcaa6ff-b8e2-4efd-8100-ee3650071f90) sample manages the shared resource name space by using multiple header files.  
+ The [DLLHUSK](http://msdn.microsoft.com/en-us/dfcaa6ff-b8e2-4efd-8100-ee3650071f90) sample manages the shared resource name space by using multiple header files.  
   
  If your MFC extension DLL needs to maintain extra data for each application, you can derive a new class from **CDynLinkLibrary** and create it in `DllMain`. When running, the DLL can check the current application's list of **CDynLinkLibrary** objects to find the one for that particular extension DLL.  
   
@@ -138,15 +139,15 @@ head ->   DLLHUSK.EXE   - or -   DLLHUSK.EXE
   
 ### What do you want to know more about?  
   
--   [Tips on using shared resource files](../mfc/tn035--using-multiple-resource-files-and-header-files-with-visual-c--.md)  
+-   [Tips on using shared resource files](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)  
   
--   [DLL Version of MFC](../mfc/tn033--dll-version-of-mfc.md)  
+-   [DLL Version of MFC](../mfc/tn033-dll-version-of-mfc.md)  
   
 -   [Regular DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)  
   
 -   [Regular DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
--   [Using Database, OLE, and Sockets Extension DLLs in Regular DLLs](../build/using-database--ole--and-sockets-extension-dlls-in-regular-dlls.md)  
+-   [Using Database, OLE, and Sockets Extension DLLs in Regular DLLs](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)  
   
 ## See Also  
- [DLLs in Visual C++](../build/dlls-in-visual-c--.md)
+ [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

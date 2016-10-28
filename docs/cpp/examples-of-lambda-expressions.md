@@ -1,20 +1,21 @@
 ---
 title: "Examples of Lambda Expressions"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "lambda expressions [C++], examples"
 ms.assetid: 52506b15-0771-4190-a966-2f302049ca86
-caps.latest.revision: 20
+caps.latest.revision: 22
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -33,12 +34,12 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Examples of Lambda Expressions
-This article shows how to use lambda expressions in your programs. For an overview of lambda expressions, see [Lambda Expressions](../cpp/lambda-expressions-in-c--.md). For more information about the structure of a lambda expression, see [Lambda Expression Syntax](../cpp/lambda-expression-syntax.md).  
+This article shows how to use lambda expressions in your programs. For an overview of lambda expressions, see [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md). For more information about the structure of a lambda expression, see [Lambda Expression Syntax](../cpp/lambda-expression-syntax.md).  
   
 ##  <a name="declaringLambdaExpressions"></a> Declaring Lambda Expressions  
   
 ### Example 1  
- Because a lambda expression is typed, you can assign it to an `auto` variable or to a [function](../stdcpplib/function-class.md) object, as shown here:  
+ Because a lambda expression is typed, you can assign it to an `auto` variable or to a [function](../standard-library/function-class.md) object, as shown here:  
   
 ### Code  
   
@@ -66,10 +67,14 @@ int main()
 ```  
   
 ### Output  
- **5**  
-**7**   
+  
+```Output  
+5  
+7  
+```  
+  
 ### Remarks  
- For more information, see [auto](../cpp/auto--c---.md), [function Class](../stdcpplib/function-class.md), and [Function Call](../cpp/function-call--c---.md).  
+ For more information, see [auto](../cpp/auto-cpp.md), [function Class](../standard-library/function-class.md), and [Function Call](../cpp/function-call-cpp.md).  
   
  Although lambda expressions are most often declared in the body of a function, you can declare them anywhere that you can initialize a variable.  
   
@@ -105,7 +110,12 @@ int main()
 ```  
   
 ### Output  
- **47** [[In This Article](#top)]  
+  
+```Output  
+47  
+```  
+  
+ [[In This Article](#top)]  
   
 ##  <a name="callingLambdaExpressions"></a> Calling Lambda Expressions  
  You can call a lambda expression immediately, as shown in the next code snippet. The second snippet shows how to pass a lambda as an argument to Standard Template Library (STL) algorithms such as `find_if`.  
@@ -129,7 +139,11 @@ int main()
 ```  
   
 ### Output  
- **9**   
+  
+```Output  
+9  
+```  
+  
 ### Example 2  
  This example passes a lambda expression as an argument to the `find_if` function. The lambda expression returns `true` if its parameter is an even number.  
   
@@ -169,9 +183,13 @@ int main()
 ```  
   
 ### Output  
- **The first even number in the list is 42.**   
+  
+```Output  
+The first even number in the list is 42.  
+```  
+  
 ### Remarks  
- For more information about the `find_if` function, see [find_if](../Topic/find_if.md). For more information about the STL functions that perform common algorithms, see [\<algorithm>](../stdcpplib/-algorithm-.md).  
+ For more information about the `find_if` function, see [find_if](../Topic/find_if.md). For more information about the STL functions that perform common algorithms, see [\<algorithm>](../standard-library/algorithm.md).  
   
  [[In This Article](#top)]  
   
@@ -202,7 +220,11 @@ int main()
 ```  
   
 ### Output  
- **13**   
+  
+```Output  
+13  
+```  
+  
 ### Remarks  
  In this example, `[](int y) { return y * 2; }` is the nested lambda expression.  
   
@@ -211,7 +233,7 @@ int main()
 ##  <a name="higherOrderLambdaExpressions"></a> Higher-Order Lambda Functions  
   
 ### Example  
- Many programming languages support the concept of a *higher-order function.* A higher-order function is a lambda expression that takes another lambda expression as its argument or returns a lambda expression. You can use the [function](../stdcpplib/function-class.md) class to enable a C++ lambda expression to behave like a higher-order function. The following example shows a lambda expression that returns a `function` object and a lambda expression that takes a `function` object as its argument.  
+ Many programming languages support the concept of a *higher-order function.* A higher-order function is a lambda expression that takes another lambda expression as its argument or returns a lambda expression. You can use the [function](../standard-library/function-class.md) class to enable a C++ lambda expression to behave like a higher-order function. The following example shows a lambda expression that returns a `function` object and a lambda expression that takes a `function` object as its argument.  
   
 ### Code  
   
@@ -250,7 +272,12 @@ int main()
 ```  
   
 ### Output  
- **30** [[In This Article](#top)]  
+  
+```Output  
+30  
+```  
+  
+ [[In This Article](#top)]  
   
 ##  <a name="methodLambdaExpressions"></a> Using a Lambda Expression in a Function  
   
@@ -322,10 +349,15 @@ int main()
 ```  
   
 ### Output  
- **3**  
-**6**  
-**9**  
-**12**   
+  
+```Output  
+3  
+6  
+9  
+12  
+  
+```  
+  
 ### Remarks  
  The `ApplyScale` function uses a lambda expression to print the product of the scale value and each element in a `vector` object. The lambda expression implicitly captures `this` so that it can access the `_scale` member.  
   
@@ -378,15 +410,20 @@ int main()
 ```  
   
 ### Output  
- **34**  
-**-43**  
-**56**  
-**After negate_all():**  
-**-34**  
-**43**  
-**-56**   
+  
+```Output  
+34  
+-43  
+56  
+After negate_all():  
+-34  
+43  
+-56  
+  
+```  
+  
 ### Remarks  
- For more information about C++ templates, see [Templates](../cpp/templates--c---.md).  
+ For more information about C++ templates, see [Templates](../cpp/templates-cpp.md).  
   
  [[In This Article](#top)]  
   
@@ -434,16 +471,20 @@ int main()
 ```  
   
 ### Output  
- **Caught 'invalid vector\<T> subscript'.**   
+  
+```Output  
+Caught 'invalid vector<T> subscript'.  
+```  
+  
 ### Remarks  
- For more information about exception handling, see [Exception Handling](../cpp/exception-handling-in-visual-c--.md).  
+ For more information about exception handling, see [Exception Handling](../cpp/exception-handling-in-visual-cpp.md).  
   
  [[In This Article](#top)]  
   
 ##  <a name="managedLambdaExpressions"></a> Using Lambda Expressions with Managed Types (C++/CLI)  
   
 ### Example  
- The capture clause of a lambda expression cannot contain a variable that has a managed type. However, you can pass an argument that has a managed type to the parameter list of a lambda expression. The following example contains a lambda expression that captures the local unmanaged variable `ch` by value and takes a \<xref:System.String?displayProperty=fullName> object as its parameter.  
+ The capture clause of a lambda expression cannot contain a variable that has a managed type. However, you can pass an argument that has a managed type to the parameter list of a lambda expression. The following example contains a lambda expression that captures the local unmanaged variable `ch` by value and takes a <xref:System.String?displayProperty=fullName> object as its parameter.  
   
 ### Code  
   
@@ -466,9 +507,13 @@ int main()
 ```  
   
 ### Output  
- **Hello!**   
+  
+```Output  
+Hello!  
+```  
+  
 ### Remarks  
- You can also use lambda expressions with the STL/CLR library. For more information, see [STL/CLR Library Reference](../cli/stl-clr-library-reference.md).  
+ You can also use lambda expressions with the STL/CLR library. For more information, see [STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md).  
   
 > [!IMPORTANT]
 >  Lambdas are not supported in these common language runtime (CLR) managed entities: `ref class`, `ref struct`, `value class`, and `value struct`.  
@@ -476,13 +521,13 @@ int main()
  [[In This Article](#top)]  
   
 ## See Also  
- [Lambda Expressions](../cpp/lambda-expressions-in-c--.md)   
+ [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md)   
  [Lambda Expression Syntax](../cpp/lambda-expression-syntax.md)   
- [auto](../cpp/auto--c---.md)   
- [function Class](../stdcpplib/function-class.md)   
+ [auto](../cpp/auto-cpp.md)   
+ [function Class](../standard-library/function-class.md)   
  [find_if](../Topic/find_if.md)   
- [\<algorithm>](../stdcpplib/-algorithm-.md)   
- [Function Call](../cpp/function-call--c---.md)   
- [Templates](../cpp/templates--c---.md)   
- [Exception Handling](../cpp/exception-handling-in-visual-c--.md)   
- [STL/CLR Library Reference](../cli/stl-clr-library-reference.md)
+ [\<algorithm>](../standard-library/algorithm.md)   
+ [Function Call](../cpp/function-call-cpp.md)   
+ [Templates](../cpp/templates-cpp.md)   
+ [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)   
+ [STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md)

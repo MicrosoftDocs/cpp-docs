@@ -1,13 +1,13 @@
 ---
 title: "DAO Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.classes.data"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "database classes [C++], DAO"
   - "DAO [C++], classes"
 ms.assetid: b15d0cd6-328b-4288-9c19-d037a795db57
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,42 +44,43 @@ These classes work with the other application framework classes to give easy acc
 > [!NOTE]
 >  As of Visual C++ .NET, the Visual C++ environment and wizards no longer support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use ODBC for new MFC projects. You should only use DAO in maintaining existing applications.  
   
- [CDaoWorkspace](../mfcref/cdaoworkspace-class.md)  
+ [CDaoWorkspace](../mfc/reference/cdaoworkspace-class.md)  
  Manages a named, password-protected database session from login to logoff. Most programs use the default workspace.  
   
- [CDaoDatabase](../mfcref/cdaodatabase-class.md)  
+ [CDaoDatabase](../mfc/reference/cdaodatabase-class.md)  
  A connection to a database through which you can operate on the data.  
   
- [CDaoRecordset](../mfcref/cdaorecordset-class.md)  
+ [CDaoRecordset](../mfc/reference/cdaorecordset-class.md)  
  Represents a set of records selected from a data source.  
   
- [CDaoRecordView](../mfcref/cdaorecordview-class.md)  
+ [CDaoRecordView](../mfc/reference/cdaorecordview-class.md)  
  A view that displays database records in controls.  
   
- [CDaoQueryDef](../mfcref/cdaoquerydef-class.md)  
+ [CDaoQueryDef](../mfc/reference/cdaoquerydef-class.md)  
  Represents a query definition, usually one saved in a database.  
   
- [CDaoTableDef](../mfcref/cdaotabledef-class.md)  
+ [CDaoTableDef](../mfc/reference/cdaotabledef-class.md)  
  Represents the stored definition of a base table or an attached table.  
   
- [CDaoException](../mfcref/cdaoexception-class.md)  
+ [CDaoException](../mfc/reference/cdaoexception-class.md)  
  Represents an exception condition arising from the DAO classes.  
   
- [CDaoFieldExchange](../mfcref/cdaofieldexchange-class.md)  
+ [CDaoFieldExchange](../mfc/reference/cdaofieldexchange-class.md)  
  Supports the DAO record field exchange (DFX) routines used by the DAO database classes. You will normally not directly use this class.  
   
 ## Related Classes  
- [CLongBinary](../mfcref/clongbinary-class.md)  
+ [CLongBinary](../mfc/reference/clongbinary-class.md)  
  Encapsulates a handle to storage for a binary large object (BLOB), such as a bitmap. `CLongBinary` objects are used to manage large data objects stored in database tables.  
   
- [COleCurrency](../mfcref/colecurrency-class.md)  
+ [COleCurrency](../mfc/reference/colecurrency-class.md)  
  Wrapper for the OLE automation type **CURRENCY**, a fixed-point arithmetic type, with 15 digits before the decimal point and 4 digits after.  
   
- [COleDateTime](../atl/coledatetime-class.md)  
+ [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md)  
  Wrapper for the OLE automation type **DATE**. Represents date and time values.  
   
- [COleVariant](../mfcref/colevariant-class.md)  
+ [COleVariant](../mfc/reference/colevariant-class.md)  
  Wrapper for the OLE automation type **VARIANT**. Data in **VARIANT**s can be stored in many formats.  
   
 ## See Also  
  [Class Overview](../mfc/class-library-overview.md)
+

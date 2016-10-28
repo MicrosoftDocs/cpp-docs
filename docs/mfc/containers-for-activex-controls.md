@@ -1,20 +1,21 @@
 ---
 title: "Containers for ActiveX Controls"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "ActiveX control containers [C++], application support"
 ms.assetid: 5ff0bf37-07f4-49aa-ad9c-c63d3756243a
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -72,3 +73,4 @@ You can use ActiveX controls developed in Visual C++ in other applications, as l
   
 ## See Also  
  [ActiveX Control Containers](../mfc/activex-control-containers.md)
+

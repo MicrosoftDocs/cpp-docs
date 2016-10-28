@@ -1,13 +1,13 @@
 ---
 title: "Search Path Used by Windows to Locate a DLL"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -21,6 +21,7 @@ helpviewer_keywords:
   - "search paths [C++]"
 ms.assetid: 84bfb380-ad7b-4962-b2d0-51b19a45f1bb
 caps.latest.revision: 8
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -63,4 +64,4 @@ With both implicit and explicit linking, Windows first searches for "known DLLs"
 -   [Determine which linking method to use](../build/determining-which-linking-method-to-use.md)  
   
 ## See Also  
- [DLLs in Visual C++](../build/dlls-in-visual-c--.md)
+ [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

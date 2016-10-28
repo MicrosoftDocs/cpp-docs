@@ -1,13 +1,13 @@
 ---
 title: "Selecting a Graphic Object into a Device Context"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "device contexts, selecting graphic objects into"
   - "device contexts, graphic objects"
 ms.assetid: cf54a330-63ef-421f-83eb-90ec7bd82eef
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,12 +41,12 @@ translation.priority.ht:
 # Selecting a Graphic Object into a Device Context
 This topic applies to using graphic objects in a window's device context. After you [create a drawing object](../mfc/one-stage-and-two-stage-construction-of-objects.md), you must select it into the device context in place of the default object stored there:  
   
- [!code[NVC_MFCDocViewSDI#7](../mfc/codesnippet/CPP/selecting-a-graphic-object-into-a-device-context_1.cpp)]  
+ [!code-cpp[NVC_MFCDocViewSDI#7](../mfc/codesnippet/CPP/selecting-a-graphic-object-into-a-device-context_1.cpp)]  
   
 ## Lifetime of Graphic Objects  
- The graphic object returned by [SelectObject](../Topic/CDC::SelectObject.md) is "temporary." That is, it will be deleted by the [OnIdle](../Topic/CWinApp::OnIdle.md) member function of class `CWinApp` the next time the program gets idle time. As long as you use the object returned by `SelectObject` in a single function without returning control to the main message loop, you will have no problem.  
+ The graphic object returned by [SelectObject](../mfc/reference/cdc-class.md#selectobject) is "temporary." That is, it will be deleted by the [OnIdle](../mfc/reference/cwinapp-class.md#onidle) member function of class `CWinApp` the next time the program gets idle time. As long as you use the object returned by `SelectObject` in a single function without returning control to the main message loop, you will have no problem.  
   
-### What do you want to know more about?  
+### What do you want to know more about  
   
 -   [Graphic objects](../mfc/graphic-objects.md)  
   
@@ -57,3 +58,4 @@ This topic applies to using graphic objects in a window's device context. After 
   
 ## See Also  
  [Graphic Objects](../mfc/graphic-objects.md)
+

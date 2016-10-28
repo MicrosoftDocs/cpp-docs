@@ -1,13 +1,13 @@
 ---
 title: "Creating Document Frame Windows"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "document frame windows, creating"
   - "MFC [C++], frame windows"
 ms.assetid: 8671e239-b76f-4dea-afa8-7024e6e58ff5
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,15 +40,15 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Creating Document Frame Windows
-[Document/View Creation](../mfc/document-view-creation.md) shows how the [CDocTemplate](../mfcref/cdoctemplate-class.md) object orchestrates creating the frame window, document, and view and connecting them all together. Three [CRuntimeClass](../mfcref/cruntimeclass-structure.md) arguments to the `CDocTemplate` constructor specify the frame window, document, and view classes that the document template creates dynamically in response to user commands such as the New command on the File menu or the New Window command on an MDI Window menu. The document template stores this information for later use when it creates a frame window for a view and document.  
+[Document/View Creation](../mfc/document-view-creation.md) shows how the [CDocTemplate](../mfc/reference/cdoctemplate-class.md) object orchestrates creating the frame window, document, and view and connecting them all together. Three [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) arguments to the `CDocTemplate` constructor specify the frame window, document, and view classes that the document template creates dynamically in response to user commands such as the New command on the File menu or the New Window command on an MDI Window menu. The document template stores this information for later use when it creates a frame window for a view and document.  
   
- For the [RUNTIME_CLASS](../Topic/RUNTIME_CLASS.md) mechanism to work correctly, your derived frame-window classes must be declared with the [DECLARE_DYNCREATE](../Topic/DECLARE_DYNCREATE.md) macro. This is because the framework needs to create document frame windows using the dynamic construction mechanism of class `CObject`.  
+ For the [RUNTIME_CLASS](../mfc/reference/run-time-object-model-services.md#runtime_class) mechanism to work correctly, your derived frame-window classes must be declared with the [DECLARE_DYNCREATE](../mfc/reference/run-time-object-model-services.md#declare_dyncreate) macro. This is because the framework needs to create document frame windows using the dynamic construction mechanism of class `CObject`.  
   
- When the user chooses a command that creates a document, the framework calls upon the document template to create the document object, its view, and the frame window that will display the view. When it creates the document frame window, the document template creates an object of the appropriate class — a class derived from [CFrameWnd](../mfcref/cframewnd-class.md) for an SDI application or from [CMDIChildWnd](../mfcref/cmdichildwnd-class.md) for an MDI application. The framework then calls the frame-window object's [LoadFrame](../Topic/CFrameWnd::LoadFrame.md) member function to get creation information from resources and to create the Windows window. The framework attaches the window handle to the frame-window object. Then it creates the view as a child window of the document frame window.  
+ When the user chooses a command that creates a document, the framework calls upon the document template to create the document object, its view, and the frame window that will display the view. When it creates the document frame window, the document template creates an object of the appropriate class — a class derived from [CFrameWnd](../mfc/reference/cframewnd-class.md) for an SDI application or from [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md) for an MDI application. The framework then calls the frame-window object's [LoadFrame](../mfc/reference/cframewnd-class.md#loadframe) member function to get creation information from resources and to create the Windows window. The framework attaches the window handle to the frame-window object. Then it creates the view as a child window of the document frame window.  
   
  Use caution in deciding [when to initialize](../mfc/when-to-initialize-cwnd-objects.md) your `CWnd`-derived object.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Deriving a Class from CObject (its dynamic creation mechanism)](../mfc/deriving-a-class-from-cobject.md)  
   
@@ -57,3 +58,4 @@ translation.priority.ht:
   
 ## See Also  
  [Using Frame Windows](../mfc/using-frame-windows.md)
+

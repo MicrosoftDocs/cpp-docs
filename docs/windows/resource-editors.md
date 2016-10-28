@@ -1,13 +1,13 @@
 ---
 title: "Resource Editors"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vs.editors.resource"
@@ -21,7 +21,8 @@ helpviewer_keywords:
   - "resource editors"
   - "Windows [C++], application resource editing"
 ms.assetid: e20a29ec-d6fb-4ead-98f3-431a0e23aaaf
-caps.latest.revision: 14
+caps.latest.revision: 16
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -47,7 +48,7 @@ A Resource editor is a specialized environment for creating or modifying resourc
   
  **Note** Because managed projects do not use resource script files, you must open your resources from **Solution Explorer**. You can use the [Image editor](../mfc/image-editor-for-icons.md) and the [Binary editor](../mfc/binary-editor.md) to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.  
   
- For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](assetId:///9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
+ For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
   
 |Use the...|To edit...|  
 |----------------|----------------|  
@@ -57,7 +58,7 @@ A Resource editor is a specialized environment for creating or modifying resourc
 |[HTML Designer](../Topic/HTML%20Designer.md)|HTML pages in both Design view and HTML view. Caveat: You cannot make changes to HTML pages that are in EXEs or DLLs because the changes are not imported back into the EXE or DLL.|  
 |[Image Editor](../mfc/image-editor-for-icons.md)|Bitmaps, icons, cursors, and other image files in Visual C++, Visual Basic, or Visual C# projects.|  
 |[Menu Editor](../mfc/menu-editor.md)|Menu resources in Visual C++ projects.|  
-|[Ribbon Editor](../mfc/ribbon-designer--mfc-.md)|Ribbon resources in MFC projects.|  
+|[Ribbon Editor](../mfc/ribbon-designer-mfc.md)|Ribbon resources in MFC projects.|  
 |[String Editor](../mfc/string-editor.md)|String tables in Visual C++ projects.|  
 |[Toolbar Editor](../mfc/toolbar-editor.md)|Toolbar resources in Visual C++ projects. The Toolbar editor is part of the Image editor.|  
 |[Version Information Editor](../mfc/version-information-editor.md)|Version information in Visual C++ projects.|  
@@ -67,6 +68,7 @@ A Resource editor is a specialized environment for creating or modifying resourc
   
 ## See Also  
  [Working with Resource Files](../mfc/working-with-resource-files.md)   
- [Resource Files](../mfc/resource-files--visual-studio-.md)   
- [Symbols: Resource Identifiers](../mfc/symbols--resource-identifiers.md)   
+ [Resource Files](../mfc/resource-files-visual-studio.md)   
+ [Symbols: Resource Identifiers](../mfc/symbols-resource-identifiers.md)   
  [Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
+

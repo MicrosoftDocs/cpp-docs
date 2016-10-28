@@ -1,13 +1,13 @@
 ---
 title: "SafeCast"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "SafeCast"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "SafeCast function"
 ms.assetid: 55316729-8456-403a-9f96-59d4038f67af
 caps.latest.revision: 7
+author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 translation.priority.ht: 

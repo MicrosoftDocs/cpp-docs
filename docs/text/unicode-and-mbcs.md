@@ -1,13 +1,13 @@
 ---
 title: "Unicode and MBCS"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "_mbcs"
@@ -24,6 +24,7 @@ helpviewer_keywords:
   - "runtime [C++], language portability"
 ms.assetid: 677baec6-71b4-4579-94df-64f18bc117c4
 caps.latest.revision: 9
+author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 translation.priority.ht: 
@@ -58,7 +59,7 @@ The Microsoft Foundation Classes (MFC) library, the C run-time library for Visua
   
 -   Support for tools that simplify MBCS programming of applications written for international markets.  
   
-     When run on an MBCS-enabled version of the Windows operating system, the Visual C++ development system — including the integrated source code editor, debugger, and command-line tools — is completely MBCS-enabled. For more information, see [MBCS Support in Visual C++](../text/mbcs-support-in-visual-c--.md).  
+     When run on an MBCS-enabled version of the Windows operating system, the Visual C++ development system — including the integrated source code editor, debugger, and command-line tools — is completely MBCS-enabled. For more information, see [MBCS Support in Visual C++](../text/mbcs-support-in-visual-cpp.md).  
   
 > [!NOTE]
 >  In this documentation, MBCS is used to describe all non-Unicode support for multibyte characters. In Visual C++, MBCS always means DBCS. Character sets wider than 2 bytes are not supported.  
@@ -66,5 +67,5 @@ The Microsoft Foundation Classes (MFC) library, the C run-time library for Visua
  By definition, the ASCII character set is a subset of all multibyte-character sets. In many multibyte character sets, each character in the range 0x00 – 0x7F is identical to the character that has the same value in the ASCII character set. For example, in both ASCII and MBCS character strings, the 1-byte **NULL** character ('\0') has value 0x00 and indicates the terminating null character.  
   
 ## See Also  
- [Text and Strings](../text/text-and-strings-in-visual-c--.md)   
+ [Text and Strings](../text/text-and-strings-in-visual-cpp.md)   
  [International Enabling](../text/international-enabling.md)

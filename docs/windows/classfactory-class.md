@@ -1,13 +1,13 @@
 ---
 title: "ClassFactory Class"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "module/Microsoft::WRL::ClassFactory"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "ClassFactory class"
 ms.assetid: f13e6bce-722b-4f18-b7cf-3ffa6345c1db
 caps.latest.revision: 4
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -79,16 +80,16 @@ class ClassFactory : public Details::RuntimeClass<
   
 |Name|Description|  
 |----------|-----------------|  
-|[ClassFactory::ClassFactory Constructor](../windows/classfactory--classfactory-constructor.md)||  
+|[ClassFactory::ClassFactory Constructor](../windows/classfactory-classfactory-constructor.md)||  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[ClassFactory::AddRef Method](../windows/classfactory--addref-method.md)|Increments the reference count for the current ClassFactory object.|  
-|[ClassFactory::LockServer Method](../windows/classfactory--lockserver-method.md)|Increments or decrements the number of underlying objects that are tracked by the current ClassFactory object.|  
-|[ClassFactory::QueryInterface Method](../windows/classfactory--queryinterface-method.md)|Retrieves a pointer to the interface specified by parameter.|  
-|[ClassFactory::Release Method](../windows/classfactory--release-method.md)|Decrements the reference count for the current ClassFactory object.|  
+|[ClassFactory::AddRef Method](../windows/classfactory-addref-method.md)|Increments the reference count for the current ClassFactory object.|  
+|[ClassFactory::LockServer Method](../windows/classfactory-lockserver-method.md)|Increments or decrements the number of underlying objects that are tracked by the current ClassFactory object.|  
+|[ClassFactory::QueryInterface Method](../windows/classfactory-queryinterface-method.md)|Retrieves a pointer to the interface specified by parameter.|  
+|[ClassFactory::Release Method](../windows/classfactory-release-method.md)|Decrements the reference count for the current ClassFactory object.|  
   
 ## Inheritance Hierarchy  
  `I0`  
@@ -117,5 +118,5 @@ class ClassFactory : public Details::RuntimeClass<
  **Namespace:** Microsoft::WRL  
   
 ## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft--wrl-namespace.md)   
+ [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)   
  [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md)

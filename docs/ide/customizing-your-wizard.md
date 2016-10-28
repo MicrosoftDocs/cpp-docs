@@ -1,13 +1,13 @@
 ---
 title: "Customizing Your Wizard"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "custom wizards"
 ms.assetid: a3ff1c81-3eef-41e7-a6bc-2f98e4bf423f
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -34,15 +35,15 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Customizing Your Wizard
-You must consider the following common tasks as you customize the wizard you created with the [Custom Wizard](../ide/application-settings--custom-wizard.md).  
+You must consider the following common tasks as you customize the wizard you created with the [Custom Wizard](../ide/application-settings-custom-wizard.md).  
   
--   In the .vsz file, specify any custom parameters necessary for your wizard to work. See [The .vsz File (Project Control)](../ide/.vsz-file--project-control-.md) and [Predefined Custom Wizard Symbols](../ide/custom-parameters-in-the-wizard-.vsz-file.md) for more information.  
+-   In the .vsz file, specify any custom parameters necessary for your wizard to work. See [The .vsz File (Project Control)](../ide/dot-vsz-file-project-control.md) and [Predefined Custom Wizard Symbols](../ide/custom-parameters-in-the-wizard-dot-vsz-file.md) for more information.  
   
      If you localize your wizard to several different languages, add those language parameters to the .vsz file. See [Localizing a Wizard to Multiple Languages](../ide/localizing-a-wizard-to-multiple-languages.md) for more information.  
   
--   Customize the [template files](../ide/template-files.md) (and [Templates.inf](../ide/templates.inf-file.md)) to specify the directives for user selections.  
+-   Customize the [template files](../ide/template-files.md) (and [Templates.inf](../ide/templates-inf-file.md)) to specify the directives for user selections.  
   
--   Customize the [Default.js file](../ide/jscript-file.md) to specify additional special handling for your wizard. You can write your own functions, and you can use functions provided in [Common.js](../ide/customizing-c---wizards-with-common-jscript-functions.md).  
+-   Customize the [Default.js file](../ide/jscript-file.md) to specify additional special handling for your wizard. You can write your own functions, and you can use functions provided in [Common.js](../ide/customizing-cpp-wizards-with-common-jscript-functions.md).  
   
 -   Design icons and other images that your HTML user interface will use.  
   
@@ -69,7 +70,7 @@ You must consider the following common tasks as you customize the wizard you cre
     ```  
   
     > [!NOTE]
-    >  The methods, properties, and events exposed through [Automation and Extensibility for Visual Studio](../Topic/Automation%20and%20Extensibility%20for%20Visual%20Studio.md), [Visual C++ Code Model](assetId:///dd6452c2-1054-44a1-b0eb-639a94a1216b), [Project Model](assetId:///06c1bbd9-4c79-4f97-ad6d-2b1dea8ecd1f), and [Wizard Model](assetId:///159395ac-33c7-47bf-ad42-4e1435ddc758) allow you to programmatically manage all aspects of the wizard project, from creation through build, in both the JScript files and .htm files.  
+    >  The methods, properties, and events exposed through [Automation and Extensibility for Visual Studio](../Topic/Automation%20and%20Extensibility%20for%20Visual%20Studio.md), [Visual C++ Code Model](http://msdn.microsoft.com/en-us/dd6452c2-1054-44a1-b0eb-639a94a1216b), [Project Model](http://msdn.microsoft.com/en-us/06c1bbd9-4c79-4f97-ad6d-2b1dea8ecd1f), and [Wizard Model](http://msdn.microsoft.com/en-us/159395ac-33c7-47bf-ad42-4e1435ddc758) allow you to programmatically manage all aspects of the wizard project, from creation through build, in both the JScript files and .htm files.  
   
 -   If necessary, customize the [.vsdir file](../Topic/Adding%20Wizards%20to%20the%20Add%20Item%20and%20New%20Project%20Dialog%20Boxes%20by%20Using%20.Vsdir%20Files.md), allowing information about the .vsz file and all other templates to be understood by the shell. For example, indicate the icon resource ID, flags, localized names, and so on.  
   

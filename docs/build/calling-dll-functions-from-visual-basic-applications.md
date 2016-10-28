@@ -1,13 +1,13 @@
 ---
 title: "Calling DLL Functions from Visual Basic Applications"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -21,6 +21,7 @@ helpviewer_keywords:
   - "DLL functions [C++], calling"
 ms.assetid: 282f7fbf-a0f2-4b9f-b277-1982710be56c
 caps.latest.revision: 7
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -57,7 +58,7 @@ _func@12
   
  The C calling convention (`__cdecl`) decorates the name as `_func`.  
   
- To get the decorated name, use [/MAP](../buildref/-map--generate-mapfile-.md). Use of **__declspec(dllexport)** does the following:  
+ To get the decorated name, use [/MAP](../build/reference/map-generate-mapfile.md). Use of **__declspec(dllexport)** does the following:  
   
 -   If the function is exported with the C calling convention (**_cdecl**), it strips the leading underscore (_) when the name is exported.  
   
@@ -86,13 +87,13 @@ EXPORTS
   
 -   [Exporting from a DLL using .DEF files](../build/exporting-from-a-dll-using-def-files.md)  
   
--   [Exporting from a DLL using __declspec(dllexport)](../build/exporting-from-a-dll-using-__declspec-dllexport-.md)  
+-   [Exporting from a DLL using __declspec(dllexport)](../build/exporting-from-a-dll-using-declspec-dllexport.md)  
   
--   [Exporting C++ functions for use in C-language executables](../build/exporting-c---functions-for-use-in-c-language-executables.md)  
+-   [Exporting C++ functions for use in C-language executables](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)  
   
 -   [Determining which exporting method to use](../build/determining-which-exporting-method-to-use.md)  
   
--   [Decorated names](../buildref/decorated-names.md)  
+-   [Decorated names](../build/reference/decorated-names.md)  
   
 ## See Also  
- [DLLs in Visual C++](../build/dlls-in-visual-c--.md)
+ [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

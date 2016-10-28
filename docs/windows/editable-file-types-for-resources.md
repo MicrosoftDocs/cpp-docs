@@ -1,13 +1,13 @@
 ---
 title: "Editable File Types for Resources"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.editors.resource"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "files [C++], editable types"
 ms.assetid: c40f9204-f2f2-400b-9f53-53b7bf291356
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -55,4 +56,4 @@ You can open the following types of files and edit the resources they contain.
  Win32  
   
 ## See Also  
- [Resource Files](../mfc/resource-files--visual-studio-.md)
+ [Resource Files](../mfc/resource-files-visual-studio.md)

@@ -1,13 +1,13 @@
 ---
 title: "Dialog Box Controls and Variable Types"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "variables, dialog box control member variables"
 ms.assetid: f9cd9cea-45a6-4349-8358-e5efbcdcff76
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -41,24 +42,24 @@ You can use the [Add Member Variable Wizard](../ide/add-member-variable-wizard.m
   
 |Control|Control type|Control variable type|Value variable type|Min/max values (value type only)|  
 |-------------|------------------|---------------------------|-------------------------|-----------------------------------------|  
-|Animation control|SysAnimate32|[CAnimateCtrl](../mfcref/canimatectrl-class.md)|None; control only|N/A|  
-|Button|BUTTON|[CButton](../mfcref/cbutton-class.md)|None; control only|N/A|  
-|Check box|CHECK|[CButton](../mfcref/cbutton-class.md)|**BOOL**|Min value/Max value|  
-|Combo box|COMBOBOX|[CComboBox](../mfcref/ccombobox-class.md)|[CString](../atl/cstringt-class.md)|Max characters|  
-|Date time picker control|SysDateTimePick32|[CDateTimeCtrl](../mfcref/cdatetimectrl-class.md)|[CTime](../atl/ctime-class.md)|Min value/max value|  
-|Edit box|EDIT|[CEdit](../mfcref/cedit-class.md)|`CString`, int, UINT, long, DWORD, float, double, BYTE, short, BOOL, `COleDateTime`, or **COleCurrency**|Min value/max value; some support max characters|  
-|Hotkey control|msctls_hotkey32|[CHotKeyCtrl](../mfcref/chotkeyctrl-class.md)|None; control only|N/A|  
-|List box|LISTBOX|[CListBox](../mfcref/clistbox-class.md)|`CString`|Max characters|  
-|List control|SysListView32|[CListCtrl](../mfcref/clistctrl-class.md)|None; control only|N/A|  
-|Month Calendar control|SysMonthCal32|[CMonthCalCtrl](../mfcref/cmonthcalctrl-class.md)|`CTime`|Min value/max value|  
-|Progress control|msctls_progress32|[CProgressCtrl](../mfcref/cprogressctrl-class.md)|None; control only|N/A|  
-|Rich Edit 2 control|RichEdit20A|[CRichEditCtrl](../mfcref/cricheditctrl-class.md)|`CString`|Max characters|  
+|Animation control|SysAnimate32|[CAnimateCtrl](../mfc/reference/canimatectrl-class.md)|None; control only|N/A|  
+|Button|BUTTON|[CButton](../mfc/reference/cbutton-class.md)|None; control only|N/A|  
+|Check box|CHECK|[CButton](../mfc/reference/cbutton-class.md)|**BOOL**|Min value/Max value|  
+|Combo box|COMBOBOX|[CComboBox](../mfc/reference/ccombobox-class.md)|[CString](../atl-mfc-shared/reference/cstringt-class.md)|Max characters|  
+|Date time picker control|SysDateTimePick32|[CDateTimeCtrl](../mfc/reference/cdatetimectrl-class.md)|[CTime](../atl-mfc-shared/reference/ctime-class.md)|Min value/max value|  
+|Edit box|EDIT|[CEdit](../mfc/reference/cedit-class.md)|`CString`, int, UINT, long, DWORD, float, double, BYTE, short, BOOL, `COleDateTime`, or **COleCurrency**|Min value/max value; some support max characters|  
+|Hotkey control|msctls_hotkey32|[CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md)|None; control only|N/A|  
+|List box|LISTBOX|[CListBox](../mfc/reference/clistbox-class.md)|`CString`|Max characters|  
+|List control|SysListView32|[CListCtrl](../mfc/reference/clistctrl-class.md)|None; control only|N/A|  
+|Month Calendar control|SysMonthCal32|[CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.md)|`CTime`|Min value/max value|  
+|Progress control|msctls_progress32|[CProgressCtrl](../mfc/reference/cprogressctrl-class.md)|None; control only|N/A|  
+|Rich Edit 2 control|RichEdit20A|[CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)|`CString`|Max characters|  
 |Rich Edit control|RICHEDIT|`CRichEditCtrl`|`CString`|Max characters|  
-|Scroll bar (vertical or horizontal|SCROLLBAR|[CScrollBar](../mfcref/cscrollbar-class.md)|`int`|Min value/max value|  
-|Slider control|msctls_trackbar32|[CSliderCtrl](../mfcref/csliderctrl-class.md)|`int`|Min value/max value|  
-|Spin control|msctls_updown32|[CSpinButtonCtrl](../mfcref/cspinbuttonctrl-class.md)|None; control only|N/A|  
-|Tab control|SysTabControl32|[CTabCtrl](../mfcref/ctabctrl-class.md)|None; control only|N/A|  
-|Tree control|SysTreeView32|[CTreeCtrl](../mfcref/ctreectrl-class.md)|None; control only|N/A|  
+|Scroll bar (vertical or horizontal|SCROLLBAR|[CScrollBar](../mfc/reference/cscrollbar-class.md)|`int`|Min value/max value|  
+|Slider control|msctls_trackbar32|[CSliderCtrl](../mfc/reference/csliderctrl-class.md)|`int`|Min value/max value|  
+|Spin control|msctls_updown32|[CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)|None; control only|N/A|  
+|Tab control|SysTabControl32|[CTabCtrl](../mfc/reference/ctabctrl-class.md)|None; control only|N/A|  
+|Tree control|SysTreeView32|[CTreeCtrl](../mfc/reference/ctreectrl-class.md)|None; control only|N/A|  
   
 ## See Also  
- [Adding a Member Variable](../ide/adding-a-member-variable---visual-c---.md)
+ [Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)

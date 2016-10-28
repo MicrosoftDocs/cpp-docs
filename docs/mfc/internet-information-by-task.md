@@ -1,20 +1,21 @@
 ---
 title: "Internet Information by Task"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "MFC, Internet applications"
 ms.assetid: da078bf5-53c3-4167-b1ef-509b5a544ad9
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -41,7 +42,7 @@ The tasks listed in this topic are sorted based on the task you want to accompli
   
 -   [WinInet Tasks](#_core_wininet_tasks)  
   
-## What do you want to do?  
+## What do you want to do  
   
 ###  <a name="_core_activex_controls.2c_.documents_and_asynchronous_moniker_tasks"></a> ActiveX Controls, Documents and Asynchronous Moniker Tasks  
   
@@ -53,15 +54,15 @@ The tasks listed in this topic are sorted based on the task you want to accompli
   
 -   [Learn about Active documents in the Internet context](../mfc/active-documents-on-the-internet.md)  
   
--   [Optimize an ActiveX control](../mfc/mfc-activex-controls--optimization.md)  
+-   [Optimize an ActiveX control](../mfc/mfc-activex-controls-optimization.md)  
   
--   [Create Signed CAB Files for MFC and ATL Controls](assetId:///14e50724-2505-4258-ae6b-326b706de409)  
+-   [Create Signed CAB Files for MFC and ATL Controls](http://msdn.microsoft.com/en-us/14e50724-2505-4258-ae6b-326b706de409)  
   
 ###  <a name="_core_wininet_tasks"></a> WinInet Tasks  
   
 -   [Learn about WinInet, the Win32 API functions for Internet access](../mfc/wininet-basics.md)  
   
--   [Review what's involved with WinInet programming](../mfc/win32-internet-extensions--wininet-.md)  
+-   [Review what's involved with WinInet programming](../mfc/win32-internet-extensions-wininet.md)  
   
 -   [Write an Internet client application, using MFC WinInet classes](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)  
   
@@ -73,3 +74,4 @@ The tasks listed in this topic are sorted based on the task you want to accompli
   
 ## See Also  
  [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
+

@@ -1,13 +1,13 @@
 ---
 title: "CanAddClass"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "CanAddClass"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CanAddClass method"
 ms.assetid: 76739742-1e34-470c-910d-8784f0adfbf0
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -58,9 +59,9 @@ Called by the wizard to verify that the project is compatible with the code wiza
  **true** if the class can be added; otherwise **false**.  
   
 ## Remarks  
- The wizard calls this function when the parameter PREPROCESS_FUNCTION is in the [project control's .vsz file](../ide/.vsz-file--project-control-.md).  
+ The wizard calls this function when the parameter PREPROCESS_FUNCTION is in the [project control's .vsz file](../ide/dot-vsz-file-project-control.md).  
   
- It verifies if the [Visual C++ Code Model](assetId:///dd6452c2-1054-44a1-b0eb-639a94a1216b) object is available. If the code model is not available, the function reports an error and returns **false**.  
+ It verifies if the [Visual C++ Code Model](http://msdn.microsoft.com/en-us/dd6452c2-1054-44a1-b0eb-639a94a1216b) object is available. If the code model is not available, the function reports an error and returns **false**.  
   
 ## Example  
   
@@ -73,8 +74,8 @@ if (CanAddClass(selProj, selObj))
 ```  
   
 ## See Also  
- [Customizing C++ Wizards with Common JScript Functions](../ide/customizing-c---wizards-with-common-jscript-functions.md)   
- [JScript Functions for C++ Wizards](../ide/jscript-functions-for-c---wizards.md)   
+ [Customizing C++ Wizards with Common JScript Functions](../ide/customizing-cpp-wizards-with-common-jscript-functions.md)   
+ [JScript Functions for C++ Wizards](../ide/jscript-functions-for-cpp-wizards.md)   
  [Creating a Custom Wizard](../ide/creating-a-custom-wizard.md)   
  [Designing a Wizard](../ide/designing-a-wizard.md)   
  [CanAddMFCClass](../ide/canaddmfcclass.md)   

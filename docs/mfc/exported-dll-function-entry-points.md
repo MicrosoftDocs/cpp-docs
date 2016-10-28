@@ -1,13 +1,13 @@
 ---
 title: "Exported DLL Function Entry Points"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "MFC, managing state data"
   - "state management, exported DLLs"
 ms.assetid: 3268666e-d24b-44f2-80e8-7c80f73b93ca
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,7 +44,7 @@ For exported functions of a DLL, use the [AFX_MANAGE_STATE](../Topic/AFX_MANAGE_
   
  If you have an exported function, such as one that launches a dialog box in your DLL, you need to add the following code to the beginning of the function:  
   
- [!code[NVC_MFCConnectionPoints#6](../mfc/codesnippet/CPP/exported-dll-function-entry-points_1.cpp)]  
+ [!code-cpp[NVC_MFCConnectionPoints#6](../mfc/codesnippet/CPP/exported-dll-function-entry-points_1.cpp)]  
   
  This swaps the current module state with the state returned from [AfxGetStaticModuleState](../Topic/AfxGetStaticModuleState.md) until the end of the current scope.  
   
@@ -53,3 +54,4 @@ For exported functions of a DLL, use the [AFX_MANAGE_STATE](../Topic/AFX_MANAGE_
   
 ## See Also  
  [Managing the State Data of MFC Modules](../mfc/managing-the-state-data-of-mfc-modules.md)
+

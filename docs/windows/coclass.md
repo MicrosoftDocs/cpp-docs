@@ -1,13 +1,13 @@
 ---
 title: "coclass"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "vc-attr.coclass"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "coclass attribute"
 ms.assetid: 42da6a10-3af9-4b43-9a1d-689d00b61eb3
 caps.latest.revision: 13
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -48,7 +49,7 @@ Creates a COM object, which can implement a COM interface.
 ## Remarks  
  The **coclass** C++ attribute places a coclass construct in the generated .idl file.  
   
- When defining a coclass, you can also specify the [uuid](../windows/uuid--c---attributes-.md), [version](../windows/version--c---.md), [threading](../windows/threading--c---.md), [vi_progid](../windows/vi_progid.md), and [progid](../windows/progid.md) attributes. If any one of them is not specified, it will be generated.  
+ When defining a coclass, you can also specify the [uuid](../windows/uuid-cpp-attributes.md), [version](../windows/version-cpp.md), [threading](../windows/threading-cpp.md), [vi_progid](../windows/vi-progid.md), and [progid](../windows/progid.md) attributes. If any one of them is not specified, it will be generated.  
   
  If two header files contain classes with the **coclass** attribute and don't specify a GUID, the compiler will use the same GUID for both classes, and that will result in a MIDL error.  Therefore, you should use the `uuid` attribute when you use **coclass**.  
   
@@ -64,13 +65,13 @@ Creates a COM object, which can implement a COM interface.
   
  Specifically, the following base classes are added to the target object:  
   
--   [CComCoClass Class](../atl/ccomcoclass-class.md) provides the default class factory and aggregation model for the object.  
+-   [CComCoClass Class](../atl/reference/ccomcoclass-class.md) provides the default class factory and aggregation model for the object.  
   
--   [CComObjectRootEx Class](../atl/ccomobjectrootex-class.md) has a template based on the threading model class specified by the [threading](../windows/threading--c---.md) attribute. If the **threading** attribute is not specified, the default threading model is apartment.  
+-   [CComObjectRootEx Class](../atl/reference/ccomobjectrootex-class.md) has a template based on the threading model class specified by the [threading](../windows/threading-cpp.md) attribute. If the **threading** attribute is not specified, the default threading model is apartment.  
   
--   [IProvideClassInfo2Impl](../atl/iprovideclassinfo2impl-class.md) is added if the [noncreatable](../windows/noncreatable.md) attribute is not specified for the target object.  
+-   [IProvideClassInfo2Impl](../atl/reference/iprovideclassinfo2impl-class.md) is added if the [noncreatable](../windows/noncreatable.md) attribute is not specified for the target object.  
   
- Finally, any dual interface that is not defined using embedded IDL is replaced with the corresponding [IDispatchImpl](../atl/idispatchimpl-class.md) class. If the dual interface is defined in embedded IDL, the particular interface in the base list is not modified.  
+ Finally, any dual interface that is not defined using embedded IDL is replaced with the corresponding [IDispatchImpl](../atl/reference/idispatchimpl-class.md) class. If the dual interface is defined in embedded IDL, the particular interface in the base list is not modified.  
   
  The **coclass** attribute also makes the following functions available via injected code, or in the case of `GetObjectCLSID`, as a static method in the base class `CComCoClass`:  
   
@@ -82,13 +83,13 @@ Creates a COM object, which can implement a COM interface.
   
 -   **GetProgID**, which is related to registration, returns the string specified with the [progid](../windows/progid.md) attribute.  
   
--   **GetVersionIndependentProgID** has the same functionality as **GetProgID**, but it returns the string specified with [vi_progid](../windows/vi_progid.md).  
+-   **GetVersionIndependentProgID** has the same functionality as **GetProgID**, but it returns the string specified with [vi_progid](../windows/vi-progid.md).  
   
  The following changes, which are related to the COM map, are made to the target class:  
   
 -   A COM map is added with entries for all interfaces the target class derives from and all entries specified by the [COM Interface Entry Points](../mfc/com-interface-entry-points.md) attribute or those required by the [aggregates](../windows/aggregates.md) attribute.  
   
--   An [OBJECT_ENTRY_AUTO](../Topic/OBJECT_ENTRY_AUTO.md) macro is inserted into the COM map. This macro is similar to [OBJECT_ENTRY](assetId:///abd10ee2-54f0-4f94-9ec2-ddf8f4c8c8cd) in terms of functionality but does not need to be part of the COM map of the target class.  
+-   An [OBJECT_ENTRY_AUTO](../Topic/OBJECT_ENTRY_AUTO.md) macro is inserted into the COM map. This macro is similar to [OBJECT_ENTRY](http://msdn.microsoft.com/en-us/abd10ee2-54f0-4f94-9ec2-ddf8f4c8c8cd) in terms of functionality but does not need to be part of the COM map of the target class.  
   
  The name of the coclass generated in the .idl file for the class will have the same name as the class.  For example, and referring to the following sample, to access the class ID for a coclass CMyClass, in a client through the MIDL-generated header file, use CLSID_CMyClass.  
   
@@ -111,7 +112,7 @@ appobject, uuid("9E66A294-4365-11D2-A997-00C04FA37DDB")]
 class CMyClass : public I {};  
 ```  
   
- The following sample shows how to override the default implementation of a function that appears in the code injected by the **coclass** attribute. See [/Fx](../buildref/-fx--merge-injected-code-.md) for more information on viewing injected code. Any base classes or interfaces that you use for a class will be appear in the injected code.   Further, if a class is included by default in the injected code and you explicitly specify that class as a base for your coclass, the attribute provider will use the form specified in your code.  
+ The following sample shows how to override the default implementation of a function that appears in the code injected by the **coclass** attribute. See [/Fx](../build/reference/fx-merge-injected-code.md) for more information on viewing injected code. Any base classes or interfaces that you use for a class will be appear in the injected code.   Further, if a class is included by default in the injected code and you explicitly specify that class as a base for your coclass, the attribute provider will use the form specified in your code.  
   
 ```  
 // cpp_attr_ref_coclass2.cpp  
@@ -164,5 +165,5 @@ public:
  [IDL Attributes](../windows/idl-attributes.md)   
  [COM Attributes](../windows/com-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
- [Typedef, Enum, Union, and Struct Attributes](../windows/typedef--enum--union--and-struct-attributes.md)   
+ [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
  [appobject](../windows/appobject.md)

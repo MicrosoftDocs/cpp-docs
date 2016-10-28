@@ -1,13 +1,13 @@
 ---
 title: "Adding Connection Points to an Object"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "connection points [C++], adding to ATL objects"
   - "Implement Connection Point ATL wizard"
 ms.assetid: 843531be-4a36-4db0-9d54-e029b1a72a8b
-caps.latest.revision: 10
+caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -34,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Adding Connection Points to an Object
-The [ATL Tutorial](../atl/active-template-library--atl--tutorial.md) demonstrates how to create a control with support for connection points, how to add events, and then how to implement the connection point. ATL implements connection points with the [IConnectionPointImpl](../atl/iconnectionpointimpl-class.md) class.  
+The [ATL Tutorial](../atl/active-template-library-atl-tutorial.md) demonstrates how to create a control with support for connection points, how to add events, and then how to implement the connection point. ATL implements connection points with the [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md) class.  
   
  To implement a connection point, you have two choices:  
   
@@ -48,15 +49,15 @@ The [ATL Tutorial](../atl/active-template-library--atl--tutorial.md) demonstrate
   
 1.  Define a dispinterface in the library block of the .idl file. If you enabled support for connection points when you created the control with the ATL Control Wizard, the dispinterface will already be created. If you did not enable support for connection points when you created the control, you must manually add a dispinterface to the .idl file. The following is an example of a dispinterface. Outgoing interfaces are not required to be dispatch interfaces but many scripting languages such as VBScript and JScript require this, so this example uses two dispinterfaces:  
   
-     [!code[NVC_ATL_Windowing#81](../atl/codesnippet/CPP/adding-connection-points-to-an-object_1.idl)]  
+     [!code-cpp[NVC_ATL_Windowing#81](../atl/codesnippet/CPP/adding-connection-points-to-an-object_1.idl)]  
   
      Use either the uuidgen.exe or guidgen.exe utility to generate a GUID.  
   
 2.  Add the dispinterface as the `[default,source]` interface in the coclass for the object in the project's .idl file. Again, if you enabled support for connection points when you created the control, the ATL Control Wizard will create the `[default,source`] entry. To manually add this entry, add the line in bold:  
   
-     [!code[NVC_ATL_Windowing#82](../atl/codesnippet/CPP/adding-connection-points-to-an-object_2.idl)]  
+     [!code-cpp[NVC_ATL_Windowing#82](../atl/codesnippet/CPP/adding-connection-points-to-an-object_2.idl)]  
   
-     See the .idl file in the [Circ](../top/visual-c---samples.md) ATL sample for an example.  
+     See the .idl file in the [Circ](../top/visual-cpp-samples.md) ATL sample for an example.  
   
 3.  Use Class View to add methods and properties to the event interface. Right-click the class in Class View, point to **Add** on the shortcut menu, and click **Add Connection Point**.  
   
@@ -82,3 +83,4 @@ The [ATL Tutorial](../atl/active-template-library--atl--tutorial.md) demonstrate
   
 ## See Also  
  [Connection Point](../atl/atl-connection-points.md)
+

@@ -1,13 +1,13 @@
 ---
 title: "Win32 Application Wizard"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.appwiz.win32.overview"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "Win32 Project Wizard"
 ms.assetid: 5d7b3a5e-8461-479a-969a-67b7883725b9
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -60,15 +61,15 @@ The Visual C++ Win32 Application Wizard allows you to create any of four types o
   
 -   The project includes support for neither MFC nor ATL.  
   
- To change these defaults, click the [Application Settings](../windows/application-settings--win-32-project-wizard.md) tab in the left column of the wizard and make the desired changes.  
+ To change these defaults, click the [Application Settings](../windows/application-settings-win-32-project-wizard.md) tab in the left column of the wizard and make the desired changes.  
   
- Once you have created a Windows desktop application, you can add generic C++ classes using the [Generic](../ide/generic-c---class-wizard.md) Code Wizard. You can add other items, such as HTML files, header files, resources, or text files.  
+ Once you have created a Windows desktop application, you can add generic C++ classes using the [Generic](../ide/generic-cpp-class-wizard.md) Code Wizard. You can add other items, such as HTML files, header files, resources, or text files.  
   
 > [!NOTE]
 >  You cannot add ATL classes, and you can add MFC classes only to those Windows desktop application types that support MFC (see the previous table).  
   
- You can view the files the wizard creates for your project in **Solution Explorer**. For more information about the files the wizard creates for your project, see the project-generated file ReadMe.txt. For more information about the file types, [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-c---projects.md).  
+ You can view the files the wizard creates for your project in **Solution Explorer**. For more information about the files the wizard creates for your project, see the project-generated file ReadMe.txt. For more information about the file types, [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md).  
   
 ## See Also  
  [Creating an Empty Windows Desktop Application](../windows/creating-an-empty-windows-desktop-application.md)   
- [Visual C++ Project Types](../ide/visual-c---project-types.md)
+ [Visual C++ Project Types](../ide/visual-cpp-project-types.md)

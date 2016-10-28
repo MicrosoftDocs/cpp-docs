@@ -1,13 +1,13 @@
 ---
 title: "ActivateInstance Function"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "client/Windows::Foundation::ActivateInstance"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "ActivateInstance function"
 ms.assetid: 8cfd1dd9-5fda-4cc2-acf8-d40e783b3875
 caps.latest.revision: 3
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -70,4 +71,4 @@ inline HRESULT ActivateInstance(
  **Namespace:** Windows::Foundation  
   
 ## See Also  
- [Windows::Foundation Namespace](../windows/windows--foundation-namespace.md)
+ [Windows::Foundation Namespace](../windows/windows-foundation-namespace.md)

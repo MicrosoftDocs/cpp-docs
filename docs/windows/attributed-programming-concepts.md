@@ -1,13 +1,13 @@
 ---
 title: "Attributed Programming Concepts"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "index-page "
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "programming [C++], attributed programming"
 ms.assetid: 563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e
 caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -56,14 +57,14 @@ Visual C++ includes a variety of material to help you use attributes in your pro
  Answers frequently asked questions about attributed programming.  
   
 ## Related Sections  
- [Attributes Reference](../windows/c---attributes-reference.md)  
+ [Attributes Reference](../windows/cpp-attributes-reference.md)  
  Provides links to reference topic describing the individual attributes and their use.  
   
  [Debugging Injected Code](../Topic/How%20to:%20Debug%20Injected%20Code.md)  
  Describes debugging attributed programs.  
   
- [__super](../cpp/__super.md)and [__interface](../cpp/__interface.md)  
+ [__super](../cpp/super.md)and [__interface](../cpp/interface.md)  
  Links to new C++ keywords related to attributed programming.  
   
- [(NOTINBUILD)Visual C++ Programming Methodologies](assetId:///0822f806-fa81-4b65-bf0f-1e2921f30c95)  
+ [(NOTINBUILD)Visual C++ Programming Methodologies](http://msdn.microsoft.com/en-us/0822f806-fa81-4b65-bf0f-1e2921f30c95)  
  Provides links to topics describing conceptual information about the Visual C++ libraries and topics discussing various coding technologies and techniques.

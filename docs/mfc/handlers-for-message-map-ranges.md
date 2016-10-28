@@ -1,13 +1,13 @@
 ---
 title: "Handlers for Message-Map Ranges"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -32,7 +32,8 @@ helpviewer_keywords:
   - "handler functions, declaring"
   - "message ranges, mapping"
 ms.assetid: a271478b-5e1c-46f5-9f29-e5be44b27d08
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -76,7 +77,7 @@ This article explains how to map a range of messages to a single message handler
 ##  <a name="_core_writing_the_message.2d.map_entry"></a> Writing the Message-Map Entry  
  In the .CPP file, add your message-map entry, as shown in the following example:  
   
- [!code[NVC_MFCMessageHandling#6](../mfc/codesnippet/CPP/handlers-for-message-map-ranges_1.cpp)]  
+ [!code-cpp[NVC_MFCMessageHandling#6](../mfc/codesnippet/CPP/handlers-for-message-map-ranges_1.cpp)]  
   
  The message-map entry consists of the following items:  
   
@@ -105,16 +106,16 @@ This article explains how to map a range of messages to a single message handler
 ##  <a name="_core_declaring_the_handler_function"></a> Declaring the Handler Function  
  Add your handler function declaration in the .H file. The following code shows how this might look, as shown below:  
   
- [!code[NVC_MFCMessageHandling#7](../mfc/codesnippet/CPP/handlers-for-message-map-ranges_2.h)]  
+ [!code-cpp[NVC_MFCMessageHandling#7](../mfc/codesnippet/CPP/handlers-for-message-map-ranges_2.h)]  
   
  Handler functions for single commands normally take no parameters. With the exception of update handler functions, handler functions for message-map ranges require an extra parameter, `nID`, of type **UINT**. This parameter is the first parameter. The extra parameter accommodates the extra command ID needed to specify which command the user actually chose.  
   
  For more information about parameter requirements for updating handler functions, see [Example for a Range of Command IDs](#_core_example_for_a_range_of_command_ids).  
   
 ##  <a name="_core_example_for_a_range_of_command_ids"></a> Example for a Range of Command IDs  
- When might you use ranges? One example is in handling commands like the Zoom command in the MFC sample [HIERSVR](../top/visual-c---samples.md). This command zooms the view, scaling it between 25% and 300% of its normal size. HIERSVR's view class uses a range to handle the Zoom commands with a message-map entry resembling this:  
+ When might you use ranges One example is in handling commands like the Zoom command in the MFC sample [HIERSVR](../top/visual-cpp-samples.md). This command zooms the view, scaling it between 25% and 300% of its normal size. HIERSVR's view class uses a range to handle the Zoom commands with a message-map entry resembling this:  
   
- [!code[NVC_MFCMessageHandling#8](../mfc/codesnippet/CPP/handlers-for-message-map-ranges_3.cpp)]  
+ [!code-cpp[NVC_MFCMessageHandling#8](../mfc/codesnippet/CPP/handlers-for-message-map-ranges_3.cpp)]  
   
  When you write the message-map entry, you specify:  
   
@@ -128,7 +129,7 @@ This article explains how to map a range of messages to a single message handler
   
  The function declaration would resemble this:  
   
- [!code[NVC_MFCMessageHandling#9](../mfc/codesnippet/CPP/handlers-for-message-map-ranges_4.h)]  
+ [!code-cpp[NVC_MFCMessageHandling#9](../mfc/codesnippet/CPP/handlers-for-message-map-ranges_4.h)]  
   
  The case of update handler functions is similar, and likely to be more widely useful. It's quite common to write `ON_UPDATE_COMMAND_UI` handlers for a number of commands and find yourself writing, or copying, the same code over and over. The solution is to map a range of command IDs to one update handler function using the `ON_UPDATE_COMMAND_UI_RANGE` macro. The command IDs must form a contiguous range. For an example, see the **OnUpdateZoom** handler and its `ON_UPDATE_COMMAND_UI_RANGE` message-map entry in the HIERSVR sample's view class.  
   
@@ -137,7 +138,7 @@ This article explains how to map a range of messages to a single message handler
 ##  <a name="_core_example_for_a_range_of_control_ids"></a> Example for a Range of Control IDs  
  Another interesting case is mapping control-notification messages for a range of control IDs to a single handler. Suppose the user can click any of 10 buttons. To map all 10 buttons to one handler, your message-map entry would look like this:  
   
- [!code[NVC_MFCMessageHandling#10](../mfc/codesnippet/CPP/handlers-for-message-map-ranges_5.cpp)]  
+ [!code-cpp[NVC_MFCMessageHandling#10](../mfc/codesnippet/CPP/handlers-for-message-map-ranges_5.cpp)]  
   
  When you write the `ON_CONTROL_RANGE` macro in your message map, you specify:  
   
@@ -155,7 +156,7 @@ This article explains how to map a range of messages to a single message handler
   
  When you write the handler function, specify the extra **UINT** parameter, as shown in the following:  
   
- [!code[NVC_MFCMessageHandling#11](../mfc/codesnippet/CPP/handlers-for-message-map-ranges_6.cpp)]  
+ [!code-cpp[NVC_MFCMessageHandling#11](../mfc/codesnippet/CPP/handlers-for-message-map-ranges_6.cpp)]  
   
  The `OnButtonClicked` handler for a single **BN_CLICKED** message takes no parameters. The same handler for a range of buttons takes one **UINT**. The extra parameter allows for identifying the particular control responsible for generating the **BN_CLICKED** message.  
   

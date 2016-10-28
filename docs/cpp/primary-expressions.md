@@ -1,13 +1,13 @@
 ---
 title: "Primary Expressions"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "expressions [C++], qualified names"
 ms.assetid: 8ef9a814-6058-4b93-9b6e-e8eb8350b1ca
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -46,7 +47,7 @@ Primary expressions are the building blocks of more complex expressions. They ar
 :: namename( expression )  
 ```  
   
- A *literal* is a constant primary expression. Its type depends on the form of its specification. See [Literals](../cpp/numeric--boolean-and-pointer-literals---c---.md) for complete information about specifying literals.  
+ A *literal* is a constant primary expression. Its type depends on the form of its specification. See [Literals](../cpp/numeric-boolean-and-pointer-literals-cpp.md) for complete information about specifying literals.  
   
  The **this** keyword is a pointer to a class object. It is available within nonstatic member functions and points to the instance of the class for which the function was invoked. The **this** keyword cannot be used outside the body of a class-member function.  
   
@@ -64,13 +65,13 @@ public:
 };  
 ```  
   
- See [Type of this Pointer](../notintoc/type-of-this-pointer.md) for more information about modifying the type of the **this** pointer.  
+ See [Type of this Pointer](../misc/type-of-this-pointer.md) for more information about modifying the type of the **this** pointer.  
   
- The scope-resolution operator (`::`) followed by a name constitutes a primary expression.  Such names must be names at global scope, not member names.  The type of this expression is determined by the declaration of the name. It is an l-value (that is, it can appear on the left hand side of an assignment operator expression) if the declaring name is an l-value. The scope-resolution operator allows a global name to be referred to, even if that name is hidden in the current scope. See [Scope](../cpp/scope--visual-c---.md) for an example of how to use the scope-resolution operator.  
+ The scope-resolution operator (`::`) followed by a name constitutes a primary expression.  Such names must be names at global scope, not member names.  The type of this expression is determined by the declaration of the name. It is an l-value (that is, it can appear on the left hand side of an assignment operator expression) if the declaring name is an l-value. The scope-resolution operator allows a global name to be referred to, even if that name is hidden in the current scope. See [Scope](../cpp/scope-visual-cpp.md) for an example of how to use the scope-resolution operator.  
   
  An expression enclosed in parentheses is a primary expression whose type and value are identical to those of the unparenthesized expression. It is an l-value if the unparenthesized expression is an l-value.  
   
- In the context of the primary expression syntax given above, *name* means anything in the syntax described for [Names](assetId:///1c49cc24-08d5-4884-b170-ba8ed42d80db), although when using the scope-resolution operator before the name, types of names that can only occur in a class are not allowed.  This includes user-defined conversion function names, and destructor names.  
+ In the context of the primary expression syntax given above, *name* means anything in the syntax described for [Names](http://msdn.microsoft.com/en-us/1c49cc24-08d5-4884-b170-ba8ed42d80db), although when using the scope-resolution operator before the name, types of names that can only occur in a class are not allowed.  This includes user-defined conversion function names, and destructor names.  
   
  Examples of primary expressions include:  
   

@@ -1,13 +1,13 @@
 ---
 title: "RoInitializeWrapper Class"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "corewrappers/Microsoft::WRL::Wrappers::RoInitializeWrapper"
@@ -15,6 +15,7 @@ dev_langs:
   - "C++"
 ms.assetid: 4055fbe0-63a7-4c06-b5a0-414fda5640e5
 caps.latest.revision: 2
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -34,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # RoInitializeWrapper Class
-Initializes the [!INCLUDE[wrt](../atl/includes/wrt_md.md)].  
+Initializes the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)].  
   
 ## Syntax  
   
@@ -43,7 +44,7 @@ class RoInitializeWrapper
 ```  
   
 ## Remarks  
- RoInitializeWrapper is a convenience that initializes the [!INCLUDE[wrt](../atl/includes/wrt_md.md)] and returns an HRESULT that indicates whether the operation was successful.  
+ RoInitializeWrapper is a convenience that initializes the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] and returns an HRESULT that indicates whether the operation was successful.  
   
 ## Members  
   
@@ -51,14 +52,14 @@ class RoInitializeWrapper
   
 |Name|Description|  
 |----------|-----------------|  
-|[RoInitializeWrapper::RoInitializeWrapper Constructor](../windows/roinitializewrapper--roinitializewrapper-constructor.md)|Initializes a new instance of the RoInitializeWrapper class.|  
-|[RoInitializeWrapper::~RoInitializeWrapper Destructor](../windows/roinitializewrapper--~roinitializewrapper-destructor.md)|Destroys the current instance of the RoInitializeWrapper class.|  
+|[RoInitializeWrapper::RoInitializeWrapper Constructor](../windows/roinitializewrapper-roinitializewrapper-constructor.md)|Initializes a new instance of the RoInitializeWrapper class.|  
+|[RoInitializeWrapper::~RoInitializeWrapper Destructor](../windows/roinitializewrapper-tilde-roinitializewrapper-destructor.md)|Destroys the current instance of the RoInitializeWrapper class.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[RoInitializeWrapper::HRESULT() Operator](../windows/roinitializewrapper--hresult---operator.md)|Retrieves the HRESULT produced by the RoInitializeWrapper constructor.|  
+|[RoInitializeWrapper::HRESULT() Operator](../windows/roinitializewrapper-hresult-parens-operator.md)|Retrieves the HRESULT produced by the RoInitializeWrapper constructor.|  
   
 ## Inheritance Hierarchy  
  `RoInitializeWrapper`  
@@ -69,4 +70,4 @@ class RoInitializeWrapper
  **Namespace:** Microsoft::WRL::Wrappers  
   
 ## See Also  
- [Microsoft::WRL::Wrappers Namespace](../windows/microsoft--wrl--wrappers-namespace.md)
+ [Microsoft::WRL::Wrappers Namespace](../windows/microsoft-wrl-wrappers-namespace.md)

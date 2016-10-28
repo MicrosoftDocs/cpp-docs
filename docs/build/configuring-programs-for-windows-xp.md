@@ -1,18 +1,19 @@
 ---
 title: "Configuring Programs for Windows XP"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 ms.assetid: 1e4487b3-d815-4123-878b-5718b22f0fd5
 caps.latest.revision: 14
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -67,7 +68,7 @@ Because Visual Studio supports multiple platform toolsets, you can target operat
   
 -   **C++ language features**  
   
-     Only C++ language features implemented in [!INCLUDE[vs_dev11_long](../build/includes/vs_dev11_long_md.md)] are supported in apps that use the v110_xp platform toolset. Only C++ language features implemented in [!INCLUDE[vs_dev12](../atl/includes/vs_dev12_md.md)] are supported in apps that use the v120_xp platform toolset. Visual Studio uses the corresponding compiler when it builds using the older platform toolsets. Use the most recent Windows XP platform toolset to take advantage of additional C++ language features implemented in that version of the compiler.  
+     Only C++ language features implemented in [!INCLUDE[vs_dev11_long](../build/includes/vs_dev11_long_md.md)] are supported in apps that use the v110_xp platform toolset. Only C++ language features implemented in [!INCLUDE[vs_dev12](../atl-mfc-shared/includes/vs_dev12_md.md)] are supported in apps that use the v120_xp platform toolset. Visual Studio uses the corresponding compiler when it builds using the older platform toolsets. Use the most recent Windows XP platform toolset to take advantage of additional C++ language features implemented in that version of the compiler.  
   
 -   **Remote debugging**  
   

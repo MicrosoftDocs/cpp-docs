@@ -1,13 +1,13 @@
 ---
 title: "HANDLETraits Structure"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "HANDLETraits structure"
 ms.assetid: 22963e88-d857-4624-9182-7c986daff722
 caps.latest.revision: 4
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -56,8 +57,8 @@ struct HANDLETraits;
   
 |Name|Description|  
 |----------|-----------------|  
-|[HANDLETraits::Close Method](../windows/handletraits--close-method.md)|Closes the specified handle.|  
-|[HANDLETraits::GetInvalidValue Method](../windows/handletraits--getinvalidvalue-method.md)|Represents an invalid handle.|  
+|[HANDLETraits::Close Method](../windows/handletraits-close-method.md)|Closes the specified handle.|  
+|[HANDLETraits::GetInvalidValue Method](../windows/handletraits-getinvalidvalue-method.md)|Represents an invalid handle.|  
   
 ## Inheritance Hierarchy  
  `HANDLETraits`  
@@ -68,4 +69,4 @@ struct HANDLETraits;
  **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
   
 ## See Also  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft--wrl--wrappers--handletraits-namespace.md)
+ [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

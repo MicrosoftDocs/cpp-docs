@@ -1,13 +1,13 @@
 ---
 title: "Commonly Overridden Member Functions"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "OnOK function"
   - "MFC dialog boxes, overriding member functions"
 ms.assetid: 78eb566c-e361-4c86-8db5-c7e2791b249a
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -57,7 +58,7 @@ The following table lists the most likely member functions to override in your `
   
  `OnCancel` is usually overridden for modeless dialog boxes.  
   
- For more information about these member functions, see class [CDialog](../mfcref/cdialog-class.md) in the *MFC Reference* and the discussion on [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md).  
+ For more information about these member functions, see class [CDialog](../mfc/reference/cdialog-class.md) in the *MFC Reference* and the discussion on [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md).  
   
 ## See Also  
  [Dialog Boxes](../mfc/dialog-boxes.md)   

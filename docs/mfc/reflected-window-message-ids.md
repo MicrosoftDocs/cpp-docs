@@ -1,13 +1,13 @@
 ---
 title: "Reflected Window Message IDs"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "OCM_CTLCOLORBTN"
@@ -56,7 +56,8 @@ helpviewer_keywords:
   - "OCM_NOTIFY message"
   - "reflected messages"
 ms.assetid: 3417ff51-ff9f-458c-bff4-17c200f00d96
-caps.latest.revision: 7
+caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -75,9 +76,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Reflected Window Message IDs
-A quick way to create an ActiveX control, or other specialized control, is to subclass a window. For more information, see [MFC ActiveX Controls: Subclassing a Windows Control](../mfc/mfc-activex-controls--subclassing-a-windows-control.md).  
+A quick way to create an ActiveX control, or other specialized control, is to subclass a window. For more information, see [MFC ActiveX Controls: Subclassing a Windows Control](../mfc/mfc-activex-controls-subclassing-a-windows-control.md).  
   
- To prevent the control's container from receiving the window messages sent by a subclassed Windows control, [COleControl](../mfcref/colecontrol-class.md) creates a "reflector" window to intercept certain window messages and send them back to the control. The control, in its window procedure, can then process these reflected messages by taking actions appropriate for an ActiveX control.  
+ To prevent the control's container from receiving the window messages sent by a subclassed Windows control, [COleControl](../mfc/reference/colecontrol-class.md) creates a "reflector" window to intercept certain window messages and send them back to the control. The control, in its window procedure, can then process these reflected messages by taking actions appropriate for an ActiveX control.  
   
  The following table shows the messages that are intercepted and the corresponding messages that the reflector window sends.  
   
@@ -98,12 +99,13 @@ A quick way to create an ActiveX control, or other specialized control, is to su
 |[WM_COMPAREITEM](http://msdn.microsoft.com/library/windows/desktop/bb775921)|**OCM_COMPAREITEM**|  
 |[WM_HSCROLL](http://msdn.microsoft.com/library/windows/desktop/bb787575)|**OCM_HSCROLL**|  
 |[WM_VSCROLL](http://msdn.microsoft.com/library/windows/desktop/bb787577)|**OCM_VSCROLL**|  
-|[WM_PARENTNOTIFY](https://msdn.microsoft.com/en-us/library/ms632638.aspx)|**OCM_PARENTNOTIFY**|  
+|[WM_PARENTNOTIFY](https://msdn.microsoft.com/library/ms632638.aspx)|**OCM_PARENTNOTIFY**|  
 |[WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583)|**OCM_NOTIFY**|  
   
 > [!NOTE]
 >  If the control runs on a Win32 system, there are several types of **WM_CTLCOLOR\*** messages it may receive. For more information, see **WM_CTLCOLORBTN**, **WM_CTLCOLORDLG**, **WM_CTLCOLOREDIT**, **WM_CTLCOLORLISTBOX**, **WM_CTLCOLORMSGBOX**, **WM_CTLCOLORSCROLLBAR**, **WM_CTLCOLORSTATIC**.  
   
 ## See Also  
- [MFC ActiveX Controls: Subclassing a Windows Control](../mfc/mfc-activex-controls--subclassing-a-windows-control.md)   
- [TN062: Message Reflection for Windows Controls](../mfc/tn062--message-reflection-for-windows-controls.md)
+ [MFC ActiveX Controls: Subclassing a Windows Control](../mfc/mfc-activex-controls-subclassing-a-windows-control.md)   
+ [TN062: Message Reflection for Windows Controls](../mfc/tn062-message-reflection-for-windows-controls.md)
+

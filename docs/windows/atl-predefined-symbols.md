@@ -1,13 +1,13 @@
 ---
 title: "ATL Predefined Symbols"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "ATL symbols"
 ms.assetid: 60d8f4e6-6ed9-47f3-9051-e4bf34384456
 caps.latest.revision: 5
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -54,4 +55,4 @@ These symbols are defined in the ATL header files, but they support standard Win
   
 ## See Also  
  [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)   
- [Symbols: Resource Identifiers](../mfc/symbols--resource-identifiers.md)
+ [Symbols: Resource Identifiers](../mfc/symbols-resource-identifiers.md)

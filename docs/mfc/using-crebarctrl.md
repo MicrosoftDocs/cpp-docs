@@ -1,13 +1,13 @@
 ---
 title: "Using CReBarCtrl"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "CReBarCtrl"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "combo boxes, in rebar controls"
   - "rebar controls"
 ms.assetid: 2c0aeec2-ffc3-44b8-97b5-0f56e116a338
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,9 +44,9 @@ A rebar control acts as a container for child windows. These child windows, ofte
   
  ![Rebar control that has two bands](../mfc/media/vc4ruz1.gif "vc4RUZ1")  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
--   [CReBar vs. CReBarCtrl](../mfc/crebar-vs.-crebarctrl.md)  
+-   [CReBar vs. CReBarCtrl](../mfc/crebar-vs-crebarctrl.md)  
   
 -   [Creating a Rebar Control](../mfc/creating-a-rebar-control.md)  
   
@@ -58,4 +59,5 @@ A rebar control acts as a container for child windows. These child windows, ofte
 -   [Processing Notification Messages in a Rebar Control](../mfc/processing-notification-messages-in-a-rebar-control.md)  
   
 ## See Also  
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

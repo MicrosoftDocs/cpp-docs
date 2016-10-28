@@ -1,13 +1,13 @@
 ---
 title: "MAPI"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "MAPI, MFC"
   - "enabling applications for mail"
 ms.assetid: 193449f7-b131-4ab0-9301-8d4f6cd1e7c4
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -51,6 +52,7 @@ This article describes the Microsoft Messaging Application Programming Interface
  [MAPI Support in MFC](../mfc/mapi-support-in-mfc.md)  
   
 ## See Also  
- [CDocument::OnFileSendMail](../Topic/CDocument::OnFileSendMail.md)   
- [CDocument::OnUpdateFileSendMail](../Topic/CDocument::OnUpdateFileSendMail.md)   
- [COleDocument::OnFileSendMail](../Topic/COleDocument::OnFileSendMail.md)
+ [CDocument::OnFileSendMail](../mfc/reference/cdocument-class.md#cdocument__onfilesendmail)   
+ [CDocument::OnUpdateFileSendMail](../mfc/reference/cdocument-class.md#cdocument__onupdatefilesendmail)   
+ [COleDocument::OnFileSendMail](../mfc/reference/coledocument-class.md#coledocument__onfilesendmail)
+

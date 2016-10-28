@@ -1,13 +1,13 @@
 ---
 title: "MDI Tabbed Groups"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "mdi, tabbed groups"
   - "tabbed groups"
 ms.assetid: 0a464f36-39b7-4e68-8b67-ec175de28377
-caps.latest.revision: 16
+caps.latest.revision: 18
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -60,7 +61,7 @@ The multiple document interface (MDI) tabbed groups feature enables multiple doc
 ### Using MDI Tabbed Groups  
  The following are tasks commonly performed with MDI tabbed groups:  
   
--   To enable MDI tabbed groups for a main frame window, call [CMDIFrameWndEx::EnableMDITabbedGroups](../Topic/CMDIFrameWndEx::EnableMDITabbedGroups.md). The second parameter of this method is an instance of the `CMDITabInfo` class. You can use the default parameters or modify them before you call `CMDIFrameWndEx::EnableMDITabbedGroups`.  
+-   To enable MDI tabbed groups for a main frame window, call [CMDIFrameWndEx::EnableMDITabbedGroups](../mfc/reference/cmdiframewndex-class.md#cmdiframewndex__enablemditabbedgroups). The second parameter of this method is an instance of the `CMDITabInfo` class. You can use the default parameters or modify them before you call `CMDIFrameWndEx::EnableMDITabbedGroups`.  
   
 -   To modify the properties of an MDI tabbed group at run time, create or modify a `CMDITabInfo` object and call `CMDIFrameWndEx::EnableMDITabbedGroups` again  
   
@@ -76,10 +77,10 @@ The multiple document interface (MDI) tabbed groups feature enables multiple doc
   
 -   To display a shortcut menu when the user clicks a tab or drags it to another MDI tabbed group, override `CMDIFrameWndEx::OnShowMDITabContextMenu` in the `CMDIFrameWndEx`-derived class. If you do not implement this method, the application will not display the shortcut menu.  
   
--   To save the layout of MDI tabbed groups in an application, call `CMDIFrameWndEx::SaveMDIState`. To load a previously saved MDI tabbed group profile, call `CMDIFrameWndEx::LoadMDIState`. You can also call these methods to load or save the list of opened documents in an MDI application. For more information about saving and loading MDI state, see [CMDIFrameWndEx::LoadMDIState](../Topic/CMDIFrameWndEx::LoadMDIState.md).  
+-   To save the layout of MDI tabbed groups in an application, call `CMDIFrameWndEx::SaveMDIState`. To load a previously saved MDI tabbed group profile, call `CMDIFrameWndEx::LoadMDIState`. You can also call these methods to load or save the list of opened documents in an MDI application. For more information about saving and loading MDI state, see [CMDIFrameWndEx::LoadMDIState](../mfc/reference/cmdiframewndex-class.md#cmdiframewndex__loadmdistate).  
   
 ## See Also  
- [User Interface Elements](../mfc/user-interface-elements--mfc-.md)   
- [CMDIFrameWndEx Class](../mfcref/cmdiframewndex-class.md)   
- [CMDIChildWndEx Class](../mfcref/cmdichildwndex-class.md)   
- [CMDITabInfo Class](../mfcref/cmditabinfo-class.md)
+ [User Interface Elements](../mfc/user-interface-elements-mfc.md)   
+ [CMDIFrameWndEx Class](../mfc/reference/cmdiframewndex-class.md)   
+ [CMDIChildWndEx Class](../mfc/reference/cmdichildwndex-class.md)   
+ [CMDITabInfo Class](../mfc/reference/cmditabinfo-class.md)

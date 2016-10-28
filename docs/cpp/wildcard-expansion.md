@@ -1,13 +1,13 @@
 ---
 title: "Wildcard Expansion"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "_setargv"
@@ -22,6 +22,7 @@ helpviewer_keywords:
   - "question mark, wildcard"
 ms.assetid: 1a543398-607b-4404-93d1-45d290bde638
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,9 +44,9 @@ translation.priority.ht:
 ## Microsoft Specific  
  You can use wildcards — the question mark (?) and asterisk (*) — to specify filename and path arguments on the command-line.  
   
- Command-line arguments are handled by a routine called **_setargv** (or **_wsetargv** in the wide-character environment), which by default does not expand wildcards into separate strings in the `argv` string array. For more information on enabling wildcard expansion, refer to [Expanding Wildcard Arguments](../c/expanding-wildcard-arguments.md).  
+ Command-line arguments are handled by a routine called **_setargv** (or **_wsetargv** in the wide-character environment), which by default does not expand wildcards into separate strings in the `argv` string array. For more information on enabling wildcard expansion, refer to [Expanding Wildcard Arguments](../c-language/expanding-wildcard-arguments.md).  
   
 ## END Microsoft Specific  
   
 ## See Also  
- [main: Program Startup](../cpp/main--program-startup.md)
+ [main: Program Startup](../cpp/main-program-startup.md)

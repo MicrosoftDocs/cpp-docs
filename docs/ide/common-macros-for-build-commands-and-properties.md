@@ -1,13 +1,13 @@
 ---
 title: "Common Macros for Build Commands and Properties"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "VC.Project.VCCLCompilerTool.GenerateXMLDocumentationFiles"
@@ -102,7 +102,8 @@ helpviewer_keywords:
   - "$(PlatformName) macro"
   - "SolutionPath macro $(SolutionPath)"
 ms.assetid: 239bd708-2ea9-4687-b264-043f1febf98b
-caps.latest.revision: 21
+caps.latest.revision: 22
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -124,11 +125,11 @@ translation.priority.mt:
 # Common Macros for Build Commands and Properties
 Depending on your installation options, Visual Studio can make hundreds of macros available to you. These correspond to the MSBuild properties that are set by default, or in .props or .targets files, or in your project settings. You can use these macros anywhere in a project's **Property Pages** dialog box where strings are accepted. These macros are not case sensitive.  
   
- To display the currently available macros, in the column to the right of a property name, click the drop-down arrow. If **Edit** is available, click it and then in the edit dialog box, click **Macros**. For more information, see the **Specifying User-Defined Values** section of [Property Pages](../ide/property-pages--visual-c---.md).  
+ To display the currently available macros, in the column to the right of a property name, click the drop-down arrow. If **Edit** is available, click it and then in the edit dialog box, click **Macros**. For more information, see the **Specifying User-Defined Values** section of [Property Pages](../ide/property-pages-visual-cpp.md).  
   
  Macros that are marked "Deprecated" are no longer used or have been replaced by an equivalent [item metadata macro](../Topic/ItemMetadata%20Element%20\(MSBuild\).md) (**%(***name***)**). Macros that are marked "Deprecated; migrated" are also deprecated. And in addition, if the project that contains the macro is migrated from Visual Studio 2008, Visual Studio converts the macro to the equivalent current macro.  
   
- The following table describes a commonly used subset of the available macros. This list is not exhaustive. For details on how MSBuild property definitions are created and used as macros in .props, .targets, and .vcxproj files, see MSBuild Properties.  
+ The following table describes a commonly used subset of the available macros. This list is not exhaustive. For details on how MSBuild property definitions are created and used as macros in .props, .targets, and .vcxproj files, see [MSBuild Properties](MSBuild%20Properties.md).  
   
 |Macro|Description|  
 |-----------|-----------------|  
@@ -165,7 +166,7 @@ Depending on your installation options, Visual Studio can make hundreds of macro
 |**$(FrameworkDir)**|The directory into which the .NET Framework was installed.|  
 |**$(FrameworkVersion)**|The version of the .NET Framework used by Visual Studio. Combined with **$(FrameworkDir)**, the full path to the version of the .NET Framework use by Visual Studio.|  
 |**$(FrameworkSDKDir)**|The directory into which you installed the .NET Framework. The .NET Framework could have been installed as part of Visual Studio or separately.|  
-|**$(WebDeployPath)**|The relative path from the web deployment root to where the project outputs belong. Returns the same value as \<xref:Microsoft.VisualStudio.VCProjectEngine.VCWebDeploymentTool.RelativePath*>.|  
+|**$(WebDeployPath)**|The relative path from the web deployment root to where the project outputs belong. Returns the same value as <xref:Microsoft.VisualStudio.VCProjectEngine.VCWebDeploymentTool.RelativePath*>.|  
 |**$(WebDeployRoot)**|The absolute path to the location of **\<localhost>**. For example, c:\inetpub\wwwroot.|  
 |**$(SafeParentName)**|(Deprecated.) The name of the immediate parent in valid name format. For example, a form is the parent of a .resx file.|  
 |**$(SafeInputName)**|(Deprecated.) The name of the file as a valid class name, minus file extension.|  
@@ -173,4 +174,4 @@ Depending on your installation options, Visual Studio can make hundreds of macro
 |**$(FxCopDir)**|The path to the fxcop.cmd file. The fxcop.cmd file is not installed with all Visual C++ editions.|  
   
 ## See Also  
- [Building C++ Projects in Visual Studio](../ide/building-c---projects-in-visual-studio.md)
+ [Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md)

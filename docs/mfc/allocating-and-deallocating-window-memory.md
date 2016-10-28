@@ -1,13 +1,13 @@
 ---
 title: "Allocating and Deallocating Window Memory"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "window objects, deallocating memory for"
   - "storage for window objects, allocating"
 ms.assetid: 7c962539-8461-4846-b5ca-fe3b15c313dc
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,7 +41,7 @@ translation.priority.ht:
 # Allocating and Deallocating Window Memory
 Do not use the C++ **delete** operator to destroy a frame window or view. Instead, call the `CWnd` member function `DestroyWindow`. Frame windows, therefore, should be allocated on the heap with operator **new**. Be careful when allocating frame windows on the stack frame or globally. Other windows should be allocated on the stack frame whenever possible.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Creating windows](../mfc/creating-windows.md)  
   
@@ -50,3 +51,4 @@ Do not use the C++ **delete** operator to destroy a frame window or view. Instea
   
 ## See Also  
  [Destroying Window Objects](../mfc/destroying-window-objects.md)
+

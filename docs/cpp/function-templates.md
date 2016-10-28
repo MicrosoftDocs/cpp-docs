@@ -1,13 +1,13 @@
 ---
 title: "Function Templates"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "function templates, about function templates"
 ms.assetid: 59b56a4b-0689-4161-9c07-25021562e2a7
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -78,7 +79,7 @@ int main(int j) {
  When the template argument is explicitly specified, normal implicit conversions are done to convert the function argument to the type of the corresponding function template parameters. In the above example, the compiler will convert (`char j`) to type `int`.  
   
 ## See Also  
- [Templates](../cpp/templates--c---.md)   
+ [Templates](../cpp/templates-cpp.md)   
  [Function Template Instantiation](../cpp/function-template-instantiation.md)   
  [Explicit Instantiation](../cpp/explicit-instantiation.md)   
  [Explicit Specialization of Function Templates](../cpp/explicit-specialization-of-function-templates.md)

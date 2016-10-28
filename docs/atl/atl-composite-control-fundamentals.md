@@ -1,20 +1,21 @@
 ---
 title: "ATL Composite Control Fundamentals"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "composite controls, about composite controls"
 ms.assetid: 2ac78cdd-1ec4-4d78-871c-1bcc23b5253e
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,7 +38,7 @@ A composite control is a type of ActiveX control that can contain (similar to a 
   
  The ATL Project Wizard and **Add Class** dialog box automate the process of creating and implementing a composite control project, similar to the result of running the Application Wizard to create an MFC application framework. The development process consists of five steps:  
   
--   [Creating an ATL project](../atl/creating-an-atl-project.md)  
+-   [Creating an ATL project](../atl/reference/creating-an-atl-project.md)  
   
 -   [Inserting a composite control](../atl/inserting-a-composite-control.md)  
   
@@ -48,6 +49,7 @@ A composite control is a type of ActiveX control that can contain (similar to a 
 -   [Building and testing the ATL project](../atl/building-and-testing-the-atl-project.md)  
   
 ## See Also  
- [Concepts](../atl/active-template-library--atl--concepts.md)   
- [Composite Control Global Functions](../atl/composite-control-global-functions.md)   
- [Composite Control Macros](../atl/composite-control-macros.md)
+ [Concepts](../atl/active-template-library-atl-concepts.md)   
+ [Composite Control Global Functions](../atl/reference/composite-control-global-functions.md)   
+ [Composite Control Macros](../atl/reference/composite-control-macros.md)
+

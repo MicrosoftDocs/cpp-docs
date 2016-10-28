@@ -1,13 +1,13 @@
 ---
 title: "Additional Termination Considerations"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "programs [C++], terminating"
 ms.assetid: acbe2332-9d8a-4a58-a471-dd652a837384
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,4 +39,4 @@ translation.priority.ht:
 You can terminate a C++ program by using **exit**, `return`, or **abort**. You can add exit processing using the `atexit` function. These are discussed in the following sections.  
   
 ## See Also  
- [Startup and Termination](../cpp/startup-and-termination--c---.md)
+ [Startup and Termination](../cpp/startup-and-termination-cpp.md)

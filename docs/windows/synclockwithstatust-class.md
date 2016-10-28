@@ -1,13 +1,13 @@
 ---
 title: "SyncLockWithStatusT Class"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT"
@@ -16,7 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "SyncLockWithStatusT class"
 ms.assetid: 4832fd93-0ac8-4168-9404-b43fefea7476
-caps.latest.revision: 6
+caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -54,7 +55,7 @@ class SyncLockWithStatusT : public SyncLockT<SyncTraits>;
 ## Remarks  
  Represents a type that can take exclusive or shared ownership of a resource.  
   
- The SyncLockWithStatusT class is used to implement the [Mutex](../windows/mutex-class1.md) and "Semaphore" classes.  
+ The SyncLockWithStatusT class is used to implement the [Mutex](../windows/mutex-class1.md) and [Semaphore](../windows/semaphore-class.md) classes.  
   
 ## Members  
   
@@ -62,26 +63,26 @@ class SyncLockWithStatusT : public SyncLockT<SyncTraits>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[SyncLockWithStatusT::SyncLockWithStatusT Constructor](../windows/synclockwithstatust--synclockwithstatust-constructor.md)|Initializes a new instance of the SyncLockWithStatusT class.|  
+|[SyncLockWithStatusT::SyncLockWithStatusT Constructor](../windows/synclockwithstatust-synclockwithstatust-constructor.md)|Initializes a new instance of the SyncLockWithStatusT class.|  
   
 ### Protected Constructors  
   
 |Name|Description|  
 |----------|-----------------|  
-|[SyncLockWithStatusT::SyncLockWithStatusT Constructor](../windows/synclockwithstatust--synclockwithstatust-constructor.md)|Initializes a new instance of the SyncLockWithStatusT class.|  
+|[SyncLockWithStatusT::SyncLockWithStatusT Constructor](../windows/synclockwithstatust-synclockwithstatust-constructor.md)|Initializes a new instance of the SyncLockWithStatusT class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[SyncLockWithStatusT::GetStatus Method](../windows/synclockwithstatust--getstatus-method.md)|Retrieves the wait status of the current SyncLockWithStatusT object.|  
-|[SyncLockWithStatusT::IsLocked Method](../windows/synclockwithstatust--islocked-method.md)|Indicates whether the current SyncLockWithStatusT object owns a resource; that is, the SyncLockWithStatusT object is *locked*.|  
+|[SyncLockWithStatusT::GetStatus Method](../windows/synclockwithstatust-getstatus-method.md)|Retrieves the wait status of the current SyncLockWithStatusT object.|  
+|[SyncLockWithStatusT::IsLocked Method](../windows/synclockwithstatust-islocked-method.md)|Indicates whether the current SyncLockWithStatusT object owns a resource; that is, the SyncLockWithStatusT object is *locked*.|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[SyncLockWithStatusT::status_ Data Member](../windows/synclockwithstatust--status_-data-member.md)|Holds the result of the underlying wait operation after a lock operation on an object based on the current SyncLockWithStatusT object.|  
+|[SyncLockWithStatusT::status_ Data Member](../windows/synclockwithstatust-status-data-member.md)|Holds the result of the underlying wait operation after a lock operation on an object based on the current SyncLockWithStatusT object.|  
   
 ## Inheritance Hierarchy  
  `SyncLockT`  
@@ -94,4 +95,4 @@ class SyncLockWithStatusT : public SyncLockT<SyncTraits>;
  **Namespace:** Microsoft::WRL::Wrappers::Details  
   
 ## See Also  
- [Microsoft::WRL::Wrappers::Details Namespace](../windows/microsoft--wrl--wrappers--details-namespace.md)
+ [Microsoft::WRL::Wrappers::Details Namespace](../windows/microsoft-wrl-wrappers-details-namespace.md)

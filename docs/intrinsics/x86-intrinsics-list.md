@@ -1,13 +1,13 @@
 ---
 title: "x86 Intrinsics List"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "intrinsics, x86"
 ms.assetid: cd50666a-0f46-4ba1-8308-3a4d3fa43be5
 caps.latest.revision: 15
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -51,7 +52,7 @@ This document lists intrinsics that the Visual C++ compiler supports when x86 is
   
 -   [AMD Developer Guides & Manuals](http://go.microsoft.com/fwlink/p/?LinkId=251203)  
   
- The following table lists the intrinsics available on x86 processors. The Technology column lists required instruction-set support. Use the [__cpuid](../intrinsics/__cpuid--__cpuidex.md) intrinsic to determine instruction-set support at run time. If two entries are in one row, they represent different entry points for the same intrinsic. A [1] indicates the intrinsic is available only on AMD processors. A [2] indicates the intrinsic is available only on Intel processors. A [3] indicates the prototype is a macro. The header required for the function prototype is listed in the Header column. The intrin.h header includes both immintrin.h and ammintrin.h for simplicity.  
+ The following table lists the intrinsics available on x86 processors. The Technology column lists required instruction-set support. Use the [__cpuid](../intrinsics/cpuid-cpuidex.md) intrinsic to determine instruction-set support at run time. If two entries are in one row, they represent different entry points for the same intrinsic. A [1] indicates the intrinsic is available only on AMD processors. A [2] indicates the intrinsic is available only on Intel processors. A [3] indicates the prototype is a macro. The header required for the function prototype is listed in the Header column. The intrin.h header includes both immintrin.h and ammintrin.h for simplicity.  
   
 |Intrinsic name|Technology|Header|Function prototype|  
 |--------------------|----------------|------------|------------------------|  
@@ -59,19 +60,19 @@ This document lists intrinsics that the Visual C++ compiler supports when x86 is
 |[_addcarry_u32](http://go.microsoft.com/fwlink/p/?LinkId=512130)||intrin.h|unsigned char _addcarry_u32(unsigned char c_in,unsigned int src1,unsigned int src2,unsigned int *sum)|  
 |_addcarry_u8||intrin.h|unsigned char _addcarry_u8(unsigned char c_in,unsigned char src1,unsigned char src2,unsigned char *sum)|  
 |[_addcarryx_u32](http://go.microsoft.com/fwlink/p/?LinkId=512130)|ADX [2]|immintrin.h|unsigned char _addcarryx_u32(unsigned char c_in,unsigned int src1,unsigned int src2,unsigned int *sum)|  
-|[__addfsbyte](../intrinsics/__addfsbyte--__addfsword--__addfsdword.md)||intrin.h|void __addfsbyte(unsigned long,unsigned char)|  
-|[__addfsdword](../intrinsics/__addfsbyte--__addfsword--__addfsdword.md)||intrin.h|void __addfsdword(unsigned long,unsigned long)|  
-|[__addfsword](../intrinsics/__addfsbyte--__addfsword--__addfsdword.md)||intrin.h|void __addfsword(unsigned long,unsigned short)|  
-|[_AddressOfReturnAddress](../intrinsics/_addressofreturnaddress.md)||intrin.h|void * _AddressOfReturnAddress(void)|  
+|[__addfsbyte](../intrinsics/addfsbyte-addfsword-addfsdword.md)||intrin.h|void __addfsbyte(unsigned long,unsigned char)|  
+|[__addfsdword](../intrinsics/addfsbyte-addfsword-addfsdword.md)||intrin.h|void __addfsdword(unsigned long,unsigned long)|  
+|[__addfsword](../intrinsics/addfsbyte-addfsword-addfsdword.md)||intrin.h|void __addfsword(unsigned long,unsigned short)|  
+|[_AddressOfReturnAddress](../intrinsics/addressofreturnaddress.md)||intrin.h|void * _AddressOfReturnAddress(void)|  
 |_andn_u32|BMI [1]|ammintrin.h|unsigned int _andn_u32(unsigned int,unsigned int)|  
 |[_bextr_u32](http://go.microsoft.com/fwlink/p/?LinkId=512130)|BMI|ammintrin.h, immintrin.h|unsigned int _bextr_u32(unsigned int,unsigned int,unsigned int)|  
 |_bextri_u32|ABM [1]|ammintrin.h|unsigned int _bextri_u32(unsigned int,unsigned int)|  
-|[_BitScanForward](../intrinsics/_bitscanforward--_bitscanforward64.md)||intrin.h|BOOLEAN _BitScanForward(OUT ULONG* Index,IN ULONG Mask)|  
-|[_BitScanReverse](../intrinsics/_bitscanreverse--_bitscanreverse64.md)||intrin.h|BOOLEAN _BitScanReverse(OUT ULONG* Index,IN ULONG Mask)|  
-|[_bittest](../intrinsics/_bittest--_bittest64.md)||intrin.h|unsigned char _bittest(long const *a,long b)|  
-|[_bittestandcomplement](../intrinsics/_bittestandcomplement--_bittestandcomplement64.md)||intrin.h|unsigned char _bittestandcomplement(long *a,long b)|  
-|[_bittestandreset](../intrinsics/_bittestandreset--_bittestandreset64.md)||intrin.h|unsigned char _bittestandreset(long *a,long b)|  
-|[_bittestandset](../intrinsics/_bittestandset--_bittestandset64.md)||intrin.h|unsigned char _bittestandset(long *a,long b)|  
+|[_BitScanForward](../intrinsics/bitscanforward-bitscanforward64.md)||intrin.h|BOOLEAN _BitScanForward(OUT ULONG* Index,IN ULONG Mask)|  
+|[_BitScanReverse](../intrinsics/bitscanreverse-bitscanreverse64.md)||intrin.h|BOOLEAN _BitScanReverse(OUT ULONG* Index,IN ULONG Mask)|  
+|[_bittest](../intrinsics/bittest-bittest64.md)||intrin.h|unsigned char _bittest(long const *a,long b)|  
+|[_bittestandcomplement](../intrinsics/bittestandcomplement-bittestandcomplement64.md)||intrin.h|unsigned char _bittestandcomplement(long *a,long b)|  
+|[_bittestandreset](../intrinsics/bittestandreset-bittestandreset64.md)||intrin.h|unsigned char _bittestandreset(long *a,long b)|  
+|[_bittestandset](../intrinsics/bittestandset-bittestandset64.md)||intrin.h|unsigned char _bittestandset(long *a,long b)|  
 |_blcfill_u32|ABM [1]|ammintrin.h|unsigned int _blcfill_u32(unsigned int)|  
 |_blci_u32|ABM [1]|ammintrin.h|unsigned int _blci_u32(unsigned int)|  
 |_blcic_u32|ABM [1]|ammintrin.h|unsigned int _blcic_u32(unsigned int)|  
@@ -84,92 +85,92 @@ This document lists intrinsics that the Visual C++ compiler supports when x86 is
 |[_blsr_u32](http://go.microsoft.com/fwlink/p/?LinkId=512130)|BMI|ammintrin.h, immintrin.h|unsigned int _blsr_u32(unsigned int)|  
 |[_bzhi_u32](http://go.microsoft.com/fwlink/p/?LinkId=512130)|BMI [2]|immintrin.h|unsigned int _bzhi_u32(unsigned int,unsigned int)|  
 |_clac|SMAP|intrin.h|void _clac(void)|  
-|[__cpuid](../intrinsics/__cpuid--__cpuidex.md)||intrin.h|void __cpuid(int *a,int b)|  
-|[__cpuidex](../intrinsics/__cpuid--__cpuidex.md)||intrin.h|void __cpuidex(int *a,int b,int c)|  
-|[__debugbreak](../intrinsics/__debugbreak.md)||intrin.h|void __debugbreak(void)|  
-|[_disable](../intrinsics/_disable.md)||intrin.h|void _disable(void)|  
-|[__emul](../intrinsics/__emul--__emulu.md)||intrin.h|__int64 [pascal/cdecl] \__emul(int,int)|  
-|[__emulu](../intrinsics/__emul--__emulu.md)||intrin.h|unsigned __int64 [pascal/cdecl]\__emulu(unsigned int,unsigned int)|  
-|[_enable](../intrinsics/_enable.md)||intrin.h|void _enable(void)|  
-|[__fastfail](../intrinsics/__fastfail.md)||intrin.h|void __fastfail(unsigned int)|  
+|[__cpuid](../intrinsics/cpuid-cpuidex.md)||intrin.h|void __cpuid(int *a,int b)|  
+|[__cpuidex](../intrinsics/cpuid-cpuidex.md)||intrin.h|void __cpuidex(int *a,int b,int c)|  
+|[__debugbreak](../intrinsics/debugbreak.md)||intrin.h|void __debugbreak(void)|  
+|[_disable](../intrinsics/disable.md)||intrin.h|void _disable(void)|  
+|[__emul](../intrinsics/emul-emulu.md)||intrin.h|__int64 [pascal/cdecl] \__emul(int,int)|  
+|[__emulu](../intrinsics/emul-emulu.md)||intrin.h|unsigned __int64 [pascal/cdecl]\__emulu(unsigned int,unsigned int)|  
+|[_enable](../intrinsics/enable.md)||intrin.h|void _enable(void)|  
+|[__fastfail](../intrinsics/fastfail.md)||intrin.h|void __fastfail(unsigned int)|  
 |[_fxrstor](http://go.microsoft.com/fwlink/p/?LinkId=512130)|FXSR [2]|immintrin.h|void _fxrstor(void const*)|  
 |[_fxsave](http://go.microsoft.com/fwlink/p/?LinkId=512130)|FXSR [2]|immintrin.h|void _fxsave(void*)|  
-|[__getcallerseflags](../intrinsics/__getcallerseflags.md)||intrin.h|(unsigned int __getcallerseflags())|  
-|[__halt](../intrinsics/__halt.md)||intrin.h|void __halt(void)|  
-|[__inbyte](../intrinsics/__inbyte.md)||intrin.h|unsigned char __inbyte(unsigned short Port)|  
-|[__inbytestring](../intrinsics/__inbytestring.md)||intrin.h|void __inbytestring(unsigned short Port,unsigned char *Buffer,unsigned long Count)|  
-|[__incfsbyte](../intrinsics/__incfsbyte--__incfsword--__incfsdword.md)||intrin.h|void __incfsbyte(unsigned long)|  
-|[__incfsdword](../intrinsics/__incfsbyte--__incfsword--__incfsdword.md)||intrin.h|void __incfsdword(unsigned long)|  
-|[__incfsword](../intrinsics/__incfsbyte--__incfsword--__incfsdword.md)||intrin.h|void __incfsword(unsigned long)|  
-|[__indword](../intrinsics/__indword.md)||intrin.h|unsigned long __indword(unsigned short Port)|  
-|[__indwordstring](../intrinsics/__indwordstring.md)||intrin.h|void __indwordstring(unsigned short Port,unsigned long *Buffer,unsigned long Count)|  
-|[__int2c](../intrinsics/__int2c.md)||intrin.h|void __int2c(void)|  
-|[_InterlockedAddLargeStatistic](../intrinsics/_interlockedaddlargestatistic.md)||intrin.h|long _InterlockedAddLargeStatistic(\__int64 volatile *,long)|  
-|[_InterlockedAnd](../intrinsics/_interlockedand-intrinsic-functions.md)||intrin.h|long _InterlockedAnd(long volatile *,long)|  
-|[_InterlockedAnd_HLEAcquire](../intrinsics/_interlockedand-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedAnd_HLEAcquire(long volatile *,long)|  
-|[_InterlockedAnd_HLERelease](../intrinsics/_interlockedand-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedAnd_HLERelease(long volatile *,long)|  
-|[_InterlockedAnd16](../intrinsics/_interlockedand-intrinsic-functions.md)||intrin.h|short _InterlockedAnd16(short volatile *,short)|  
-|[_InterlockedAnd8](../intrinsics/_interlockedand-intrinsic-functions.md)||intrin.h|char _InterlockedAnd8(char volatile *,char)|  
-|[_interlockedbittestandreset](../intrinsics/_interlockedbittestandreset-intrinsic-functions.md)||intrin.h|unsigned char _interlockedbittestandreset(long *a,long b)|  
-|[_interlockedbittestandreset_HLEAcquire](../intrinsics/_interlockedbittestandreset-intrinsic-functions.md)|HLE [2]|immintrin.h|unsigned char _interlockedbittestandreset_HLEAcquire(long *a,long b)|  
-|[_interlockedbittestandreset_HLERelease](../intrinsics/_interlockedbittestandreset-intrinsic-functions.md)|HLE [2]|immintrin.h|unsigned char _interlockedbittestandreset_HLERelease(long *a,long b)|  
-|[_interlockedbittestandset](../intrinsics/_interlockedbittestandset-intrinsic-functions.md)||intrin.h|unsigned char _interlockedbittestandset(long *a,long b)|  
-|[_interlockedbittestandset_HLEAcquire](../intrinsics/_interlockedbittestandset-intrinsic-functions.md)|HLE [2]|immintrin.h|unsigned char _interlockedbittestandset_HLEAcquire(long *a,long b)|  
-|[_interlockedbittestandset_HLERelease](../intrinsics/_interlockedbittestandset-intrinsic-functions.md)|HLE [2]|immintrin.h|unsigned char _interlockedbittestandset_HLERelease(long *a,long b)|  
-|[_InterlockedCompareExchange](../intrinsics/_interlockedcompareexchange-intrinsic-functions.md)||intrin.h|long _InterlockedCompareExchange (long volatile *,long,long)|  
-|[_InterlockedCompareExchange_HLEAcquire](../intrinsics/_interlockedcompareexchange-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedCompareExchange_HLEAcquire(long volatile *,long,long)|  
-|[_InterlockedCompareExchange_HLERelease](../intrinsics/_interlockedcompareexchange-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedCompareExchange_HLERelease(long volatile *,long,long)|  
-|[_InterlockedCompareExchange16](../intrinsics/_interlockedcompareexchange-intrinsic-functions.md)||intrin.h|short _InterlockedCompareExchange16(short volatile *Destination,short Exchange,short Comparand)|  
-|[_InterlockedCompareExchange64](../intrinsics/_interlockedcompareexchange-intrinsic-functions.md)||intrin.h|__int64 _InterlockedCompareExchange64(\__int64 volatile *,\__int64,\__int64)|  
-|[_InterlockedCompareExchange64_HLEAcquire](../intrinsics/_interlockedcompareexchange-intrinsic-functions.md)|HLE [2]|immintrin.h|__int64 _InterlockedCompareExchange64_HLEAcquire(\__int64 volatile *,\__int64,\__int64)|  
-|[_InterlockedCompareExchange64_HLERelease](../intrinsics/_interlockedcompareexchange-intrinsic-functions.md)|HLE [2]|immintrin.h|__int64 _InterlockedCompareExchange64_HLERelease(\__int64 volatile *,\__int64,\__int64)|  
-|[_InterlockedCompareExchange8](../intrinsics/_interlockedcompareexchange-intrinsic-functions.md)||intrin.h|char _InterlockedCompareExchange8(char volatile *Destination,char Exchange,char Comparand)|  
-|[_InterlockedCompareExchangePointer](../intrinsics/_interlockedcompareexchangepointer-intrinsic-functions.md)||intrin.h|void *_InterlockedCompareExchangePointer (void \*volatile \*,void \*,void \*)|  
-|[_InterlockedCompareExchangePointer_HLEAcquire](../intrinsics/_interlockedcompareexchangepointer-intrinsic-functions.md)|HLE [2]|immintrin.h|void *_InterlockedCompareExchangePointer_HLEAcquire(void \*volatile \*,void \*,void \*)|  
-|[_InterlockedCompareExchangePointer_HLERelease](../intrinsics/_interlockedcompareexchangepointer-intrinsic-functions.md)|HLE [2]|immintrin.h|void *_InterlockedCompareExchangePointer_HLERelease(void \*volatile \*,void \*,void \*)|  
-|[_InterlockedDecrement](../intrinsics/_interlockeddecrement-intrinsic-functions.md)||intrin.h|long _InterlockedDecrement(long volatile *)|  
-|[_InterlockedDecrement16](../intrinsics/_interlockeddecrement-intrinsic-functions.md)||intrin.h|short _InterlockedDecrement16(short volatile *Addend)|  
-|[_InterlockedExchange](../intrinsics/_interlockedexchange-intrinsic-functions.md)||intrin.h|long _InterlockedExchange(long volatile *,long)|  
-|[_InterlockedExchange_HLEAcquire](../intrinsics/_interlockedexchange-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedExchange_HLEAcquire(long volatile *,long)|  
-|[_InterlockedExchange_HLERelease](../intrinsics/_interlockedexchange-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedExchange_HLERelease(long volatile *,long)|  
-|[_InterlockedExchange16](../intrinsics/_interlockedexchange-intrinsic-functions.md)||intrin.h|short _InterlockedExchange16(short volatile *,short)|  
-|[_InterlockedExchange8](../intrinsics/_interlockedexchange-intrinsic-functions.md)||intrin.h|char _InterlockedExchange8(char volatile *,char)|  
-|[_InterlockedExchangeAdd](../intrinsics/_interlockedexchangeadd-intrinsic-functions.md)||intrin.h|long _InterlockedExchangeAdd(long volatile *,long)|  
-|[_InterlockedExchangeAdd_HLEAcquire](../intrinsics/_interlockedexchangeadd-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedExchangeAdd_HLEAcquire(long volatile *,long)|  
-|[_InterlockedExchangeAdd_HLERelease](../intrinsics/_interlockedexchangeadd-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedExchangeAdd_HLERelease(long volatile *,long)|  
-|[_InterlockedExchangeAdd16](../intrinsics/_interlockedexchangeadd-intrinsic-functions.md)||intrin.h|short _InterlockedExchangeAdd16(short volatile *,short)|  
-|[_InterlockedExchangeAdd8](../intrinsics/_interlockedexchangeadd-intrinsic-functions.md)||intrin.h|char _InterlockedExchangeAdd8(char volatile *,char)|  
-|[_InterlockedExchangePointer](../intrinsics/_interlockedexchangepointer-intrinsic-functions.md)||intrin.h|void * _InterlockedExchangePointer(void \*volatile \*,void \*)|  
-|[_InterlockedExchangePointer_HLEAcquire](../intrinsics/_interlockedexchangepointer-intrinsic-functions.md)|HLE [2]|immintrin.h|void * _InterlockedExchangePointer_HLEAcquire(void \*volatile \*,void \*)|  
-|[_InterlockedExchangePointer_HLERelease](../intrinsics/_interlockedexchangepointer-intrinsic-functions.md)|HLE [2]|immintrin.h|void * _InterlockedExchangePointer_HLERelease(void \*volatile \*,void \*)|  
-|[_InterlockedIncrement](../intrinsics/_interlockedincrement-intrinsic-functions.md)||intrin.h|long _InterlockedIncrement(long volatile *)|  
-|[_InterlockedIncrement16](../intrinsics/_interlockedincrement-intrinsic-functions.md)||intrin.h|short _InterlockedIncrement16(short volatile *Addend)|  
-|[_InterlockedOr](../intrinsics/_interlockedor-intrinsic-functions.md)||intrin.h|long _InterlockedOr(long volatile *,long)|  
-|[_InterlockedOr_HLEAcquire](../intrinsics/_interlockedor-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedOr_HLEAcquire(long volatile *,long)|  
-|[_InterlockedOr_HLERelease](../intrinsics/_interlockedor-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedOr_HLERelease(long volatile *,long)|  
-|[_InterlockedOr16](../intrinsics/_interlockedor-intrinsic-functions.md)||intrin.h|short _InterlockedOr16(short volatile *,short)|  
-|[_InterlockedOr8](../intrinsics/_interlockedor-intrinsic-functions.md)||intrin.h|char _InterlockedOr8(char volatile *,char)|  
-|[_InterlockedXor](../intrinsics/_interlockedxor-intrinsic-functions.md)||intrin.h|long _InterlockedXor(long volatile *,long)|  
-|[_InterlockedXor_HLEAcquire](../intrinsics/_interlockedxor-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedXor_HLEAcquire(long volatile *,long)|  
-|[_InterlockedXor_HLERelease](../intrinsics/_interlockedxor-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedXor_HLERelease(long volatile *,long)|  
-|[_InterlockedXor16](../intrinsics/_interlockedxor-intrinsic-functions.md)||intrin.h|short _InterlockedXor16(short volatile *,short)|  
-|[_InterlockedXor8](../intrinsics/_interlockedxor-intrinsic-functions.md)||intrin.h|char _InterlockedXor8(char volatile *,char)|  
-|[__invlpg](../intrinsics/__invlpg.md)||intrin.h|void __invlpg(void*)|  
+|[__getcallerseflags](../intrinsics/getcallerseflags.md)||intrin.h|(unsigned int __getcallerseflags())|  
+|[__halt](../intrinsics/halt.md)||intrin.h|void __halt(void)|  
+|[__inbyte](../intrinsics/inbyte.md)||intrin.h|unsigned char __inbyte(unsigned short Port)|  
+|[__inbytestring](../intrinsics/inbytestring.md)||intrin.h|void __inbytestring(unsigned short Port,unsigned char *Buffer,unsigned long Count)|  
+|[__incfsbyte](../intrinsics/incfsbyte-incfsword-incfsdword.md)||intrin.h|void __incfsbyte(unsigned long)|  
+|[__incfsdword](../intrinsics/incfsbyte-incfsword-incfsdword.md)||intrin.h|void __incfsdword(unsigned long)|  
+|[__incfsword](../intrinsics/incfsbyte-incfsword-incfsdword.md)||intrin.h|void __incfsword(unsigned long)|  
+|[__indword](../intrinsics/indword.md)||intrin.h|unsigned long __indword(unsigned short Port)|  
+|[__indwordstring](../intrinsics/indwordstring.md)||intrin.h|void __indwordstring(unsigned short Port,unsigned long *Buffer,unsigned long Count)|  
+|[__int2c](../intrinsics/int2c.md)||intrin.h|void __int2c(void)|  
+|[_InterlockedAddLargeStatistic](../intrinsics/interlockedaddlargestatistic.md)||intrin.h|long _InterlockedAddLargeStatistic(\__int64 volatile *,long)|  
+|[_InterlockedAnd](../intrinsics/interlockedand-intrinsic-functions.md)||intrin.h|long _InterlockedAnd(long volatile *,long)|  
+|[_InterlockedAnd_HLEAcquire](../intrinsics/interlockedand-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedAnd_HLEAcquire(long volatile *,long)|  
+|[_InterlockedAnd_HLERelease](../intrinsics/interlockedand-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedAnd_HLERelease(long volatile *,long)|  
+|[_InterlockedAnd16](../intrinsics/interlockedand-intrinsic-functions.md)||intrin.h|short _InterlockedAnd16(short volatile *,short)|  
+|[_InterlockedAnd8](../intrinsics/interlockedand-intrinsic-functions.md)||intrin.h|char _InterlockedAnd8(char volatile *,char)|  
+|[_interlockedbittestandreset](../intrinsics/interlockedbittestandreset-intrinsic-functions.md)||intrin.h|unsigned char _interlockedbittestandreset(long *a,long b)|  
+|[_interlockedbittestandreset_HLEAcquire](../intrinsics/interlockedbittestandreset-intrinsic-functions.md)|HLE [2]|immintrin.h|unsigned char _interlockedbittestandreset_HLEAcquire(long *a,long b)|  
+|[_interlockedbittestandreset_HLERelease](../intrinsics/interlockedbittestandreset-intrinsic-functions.md)|HLE [2]|immintrin.h|unsigned char _interlockedbittestandreset_HLERelease(long *a,long b)|  
+|[_interlockedbittestandset](../intrinsics/interlockedbittestandset-intrinsic-functions.md)||intrin.h|unsigned char _interlockedbittestandset(long *a,long b)|  
+|[_interlockedbittestandset_HLEAcquire](../intrinsics/interlockedbittestandset-intrinsic-functions.md)|HLE [2]|immintrin.h|unsigned char _interlockedbittestandset_HLEAcquire(long *a,long b)|  
+|[_interlockedbittestandset_HLERelease](../intrinsics/interlockedbittestandset-intrinsic-functions.md)|HLE [2]|immintrin.h|unsigned char _interlockedbittestandset_HLERelease(long *a,long b)|  
+|[_InterlockedCompareExchange](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)||intrin.h|long _InterlockedCompareExchange (long volatile *,long,long)|  
+|[_InterlockedCompareExchange_HLEAcquire](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedCompareExchange_HLEAcquire(long volatile *,long,long)|  
+|[_InterlockedCompareExchange_HLERelease](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedCompareExchange_HLERelease(long volatile *,long,long)|  
+|[_InterlockedCompareExchange16](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)||intrin.h|short _InterlockedCompareExchange16(short volatile *Destination,short Exchange,short Comparand)|  
+|[_InterlockedCompareExchange64](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)||intrin.h|__int64 _InterlockedCompareExchange64(\__int64 volatile *,\__int64,\__int64)|  
+|[_InterlockedCompareExchange64_HLEAcquire](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)|HLE [2]|immintrin.h|__int64 _InterlockedCompareExchange64_HLEAcquire(\__int64 volatile *,\__int64,\__int64)|  
+|[_InterlockedCompareExchange64_HLERelease](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)|HLE [2]|immintrin.h|__int64 _InterlockedCompareExchange64_HLERelease(\__int64 volatile *,\__int64,\__int64)|  
+|[_InterlockedCompareExchange8](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)||intrin.h|char _InterlockedCompareExchange8(char volatile *Destination,char Exchange,char Comparand)|  
+|[_InterlockedCompareExchangePointer](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)||intrin.h|void *_InterlockedCompareExchangePointer (void \*volatile \*,void \*,void \*)|  
+|[_InterlockedCompareExchangePointer_HLEAcquire](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)|HLE [2]|immintrin.h|void *_InterlockedCompareExchangePointer_HLEAcquire(void \*volatile \*,void \*,void \*)|  
+|[_InterlockedCompareExchangePointer_HLERelease](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)|HLE [2]|immintrin.h|void *_InterlockedCompareExchangePointer_HLERelease(void \*volatile \*,void \*,void \*)|  
+|[_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md)||intrin.h|long _InterlockedDecrement(long volatile *)|  
+|[_InterlockedDecrement16](../intrinsics/interlockeddecrement-intrinsic-functions.md)||intrin.h|short _InterlockedDecrement16(short volatile *Addend)|  
+|[_InterlockedExchange](../intrinsics/interlockedexchange-intrinsic-functions.md)||intrin.h|long _InterlockedExchange(long volatile *,long)|  
+|[_InterlockedExchange_HLEAcquire](../intrinsics/interlockedexchange-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedExchange_HLEAcquire(long volatile *,long)|  
+|[_InterlockedExchange_HLERelease](../intrinsics/interlockedexchange-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedExchange_HLERelease(long volatile *,long)|  
+|[_InterlockedExchange16](../intrinsics/interlockedexchange-intrinsic-functions.md)||intrin.h|short _InterlockedExchange16(short volatile *,short)|  
+|[_InterlockedExchange8](../intrinsics/interlockedexchange-intrinsic-functions.md)||intrin.h|char _InterlockedExchange8(char volatile *,char)|  
+|[_InterlockedExchangeAdd](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)||intrin.h|long _InterlockedExchangeAdd(long volatile *,long)|  
+|[_InterlockedExchangeAdd_HLEAcquire](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedExchangeAdd_HLEAcquire(long volatile *,long)|  
+|[_InterlockedExchangeAdd_HLERelease](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedExchangeAdd_HLERelease(long volatile *,long)|  
+|[_InterlockedExchangeAdd16](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)||intrin.h|short _InterlockedExchangeAdd16(short volatile *,short)|  
+|[_InterlockedExchangeAdd8](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)||intrin.h|char _InterlockedExchangeAdd8(char volatile *,char)|  
+|[_InterlockedExchangePointer](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)||intrin.h|void * _InterlockedExchangePointer(void \*volatile \*,void \*)|  
+|[_InterlockedExchangePointer_HLEAcquire](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)|HLE [2]|immintrin.h|void * _InterlockedExchangePointer_HLEAcquire(void \*volatile \*,void \*)|  
+|[_InterlockedExchangePointer_HLERelease](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)|HLE [2]|immintrin.h|void * _InterlockedExchangePointer_HLERelease(void \*volatile \*,void \*)|  
+|[_InterlockedIncrement](../intrinsics/interlockedincrement-intrinsic-functions.md)||intrin.h|long _InterlockedIncrement(long volatile *)|  
+|[_InterlockedIncrement16](../intrinsics/interlockedincrement-intrinsic-functions.md)||intrin.h|short _InterlockedIncrement16(short volatile *Addend)|  
+|[_InterlockedOr](../intrinsics/interlockedor-intrinsic-functions.md)||intrin.h|long _InterlockedOr(long volatile *,long)|  
+|[_InterlockedOr_HLEAcquire](../intrinsics/interlockedor-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedOr_HLEAcquire(long volatile *,long)|  
+|[_InterlockedOr_HLERelease](../intrinsics/interlockedor-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedOr_HLERelease(long volatile *,long)|  
+|[_InterlockedOr16](../intrinsics/interlockedor-intrinsic-functions.md)||intrin.h|short _InterlockedOr16(short volatile *,short)|  
+|[_InterlockedOr8](../intrinsics/interlockedor-intrinsic-functions.md)||intrin.h|char _InterlockedOr8(char volatile *,char)|  
+|[_InterlockedXor](../intrinsics/interlockedxor-intrinsic-functions.md)||intrin.h|long _InterlockedXor(long volatile *,long)|  
+|[_InterlockedXor_HLEAcquire](../intrinsics/interlockedxor-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedXor_HLEAcquire(long volatile *,long)|  
+|[_InterlockedXor_HLERelease](../intrinsics/interlockedxor-intrinsic-functions.md)|HLE [2]|immintrin.h|long _InterlockedXor_HLERelease(long volatile *,long)|  
+|[_InterlockedXor16](../intrinsics/interlockedxor-intrinsic-functions.md)||intrin.h|short _InterlockedXor16(short volatile *,short)|  
+|[_InterlockedXor8](../intrinsics/interlockedxor-intrinsic-functions.md)||intrin.h|char _InterlockedXor8(char volatile *,char)|  
+|[__invlpg](../intrinsics/invlpg.md)||intrin.h|void __invlpg(void*)|  
 |[_invpcid](http://go.microsoft.com/fwlink/p/?LinkId=512130)|INVPCID [2]|immintrin.h|void _invpcid(unsigned int,void *)|  
-|[__inword](../intrinsics/__inword.md)||intrin.h|unsigned short __inword(unsigned short Port)|  
-|[__inwordstring](../intrinsics/__inwordstring.md)||intrin.h|void __inwordstring(unsigned short Port,unsigned short *Buffer,unsigned long Count)|  
+|[__inword](../intrinsics/inword.md)||intrin.h|unsigned short __inword(unsigned short Port)|  
+|[__inwordstring](../intrinsics/inwordstring.md)||intrin.h|void __inwordstring(unsigned short Port,unsigned short *Buffer,unsigned long Count)|  
 |_lgdt||intrin.h|void _lgdt(void*)|  
-|[__lidt](../intrinsics/__lidt.md)||intrin.h|void __lidt(void*)|  
-|[__ll_lshift](../intrinsics/__ll_lshift.md)||intrin.h|unsigned __int64 [pascal/cdecl] \__ll_lshift(unsigned \__int64,int)|  
-|[__ll_rshift](../intrinsics/__ll_rshift.md)||intrin.h|__int64 [pascal/cdecl] \__ll_rshift(\__int64,int)|  
+|[__lidt](../intrinsics/lidt.md)||intrin.h|void __lidt(void*)|  
+|[__ll_lshift](../intrinsics/ll-lshift.md)||intrin.h|unsigned __int64 [pascal/cdecl] \__ll_lshift(unsigned \__int64,int)|  
+|[__ll_rshift](../intrinsics/ll-rshift.md)||intrin.h|__int64 [pascal/cdecl] \__ll_rshift(\__int64,int)|  
 |_load_be_u16<br /><br /> [_loadbe_i16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_loadbe_i16&expand=3071)|MOVBE|immintrin.h|unsigned short _load_be_u16(void const*);<br /><br /> short _loadbe_i16(void const\*); [3]|  
 |_load_be_u32<br /><br /> [_loadbe_i32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_loadbe_i32&expand=3072)|MOVBE|immintrin.h|unsigned int _load_be_u32(void const*);<br /><br /> int _loadbe_i32(void const\*); [3]|  
 |__llwpcb|LWP [1]|ammintrin.h|void __llwpcb(void *)|  
 |__lwpins32|LWP [1]|ammintrin.h|unsigned char __lwpins32(unsigned int,unsigned int,unsigned int)|  
 |__lwpval32|LWP [1]|ammintrin.h|void __lwpval32(unsigned int,unsigned int,unsigned int)|  
-|[__lzcnt](../intrinsics/__lzcnt16--__lzcnt--__lzcnt64.md)|LZCNT|intrin.h|unsigned int __lzcnt(unsigned int)|  
+|[__lzcnt](../intrinsics/lzcnt16-lzcnt-lzcnt64.md)|LZCNT|intrin.h|unsigned int __lzcnt(unsigned int)|  
 |[_lzcnt_u32](http://go.microsoft.com/fwlink/p/?LinkId=512130)|BMI|ammintrin.h, immintrin.h|unsigned int _lzcnt_u32(unsigned int)|  
-|[__lzcnt16](../intrinsics/__lzcnt16--__lzcnt--__lzcnt64.md)|LZCNT|intrin.h|unsigned short __lzcnt16(unsigned short)|  
+|[__lzcnt16](../intrinsics/lzcnt16-lzcnt-lzcnt64.md)|LZCNT|intrin.h|unsigned short __lzcnt16(unsigned short)|  
 |[_m_empty](http://go.microsoft.com/fwlink/p/?LinkId=512130)|MMX|intrin.h|void _m_empty(void)|  
 |_m_femms|3DNOW|intrin.h|void _m_femms(void)|  
 |_m_from_float|3DNOW|intrin.h|__m64 _m_from_float(float)|  
@@ -477,8 +478,8 @@ This document lists intrinsics that the Visual C++ compiler supports when x86 is
 |[_mm_extract_epi32](http://go.microsoft.com/fwlink/p/?LinkId=512130)|SSE41|intrin.h|int   _mm_extract_epi32(\__m128i,const int )|  
 |[_mm_extract_epi8](http://go.microsoft.com/fwlink/p/?LinkId=512130)|SSE41|intrin.h|int   _mm_extract_epi8 (\__m128i,const int )|  
 |[_mm_extract_ps](http://go.microsoft.com/fwlink/p/?LinkId=512130)|SSE41|intrin.h|int _mm_extract_ps(\__m128,const int )|  
-|[_mm_extract_si64](../intrinsics/_mm_extract_si64--_mm_extracti_si64.md)|SSE4a|intrin.h|__m128i _mm_extract_si64(\__m128i,\__m128i)|  
-|[_mm_extracti_si64](../intrinsics/_mm_extract_si64--_mm_extracti_si64.md)|SSE4a|intrin.h|__m128i _mm_extracti_si64(\__m128i,int,int)|  
+|[_mm_extract_si64](../intrinsics/mm-extract-si64-mm-extracti-si64.md)|SSE4a|intrin.h|__m128i _mm_extract_si64(\__m128i,\__m128i)|  
+|[_mm_extracti_si64](../intrinsics/mm-extract-si64-mm-extracti-si64.md)|SSE4a|intrin.h|__m128i _mm_extracti_si64(\__m128i,int,int)|  
 |[_mm_fmadd_pd](http://go.microsoft.com/fwlink/p/?LinkId=512130)|FMA [2]|immintrin.h|__m128d _mm_fmadd_pd (\__m128d a,\__m128d b,\__m128d c)|  
 |[_mm_fmadd_ps](http://go.microsoft.com/fwlink/p/?LinkId=512130)|FMA [2]|immintrin.h|__m128 _mm_fmadd_ps (\__m128 a,\__m128 b,\__m128 c)|  
 |[_mm_fmadd_sd](http://go.microsoft.com/fwlink/p/?LinkId=512130)|FMA [2]|immintrin.h|__m128d _mm_fmadd_sd (\__m128d a,\__m128d b,\__m128d c)|  
@@ -547,8 +548,8 @@ This document lists intrinsics that the Visual C++ compiler supports when x86 is
 |[_mm_insert_epi32](http://go.microsoft.com/fwlink/p/?LinkId=512130)|SSE41|intrin.h|__m128i _mm_insert_epi32(\__m128i,int,const int )|  
 |[_mm_insert_epi8](http://go.microsoft.com/fwlink/p/?LinkId=512130)|SSE41|intrin.h|__m128i _mm_insert_epi8 (\__m128i,int,const int )|  
 |[_mm_insert_ps](http://go.microsoft.com/fwlink/p/?LinkId=512130)|SSE41|intrin.h|__m128 _mm_insert_ps(\__m128,\__m128,const int )|  
-|[_mm_insert_si64](../intrinsics/_mm_insert_si64--_mm_inserti_si64.md)|SSE4a|intrin.h|__m128i _mm_insert_si64(\__m128i,\__m128i)|  
-|[_mm_inserti_si64](../intrinsics/_mm_insert_si64--_mm_inserti_si64.md)|SSE4a|intrin.h|__m128i _mm_inserti_si64(\__m128i,\__m128i,int,int)|  
+|[_mm_insert_si64](../intrinsics/mm-insert-si64-mm-inserti-si64.md)|SSE4a|intrin.h|__m128i _mm_insert_si64(\__m128i,\__m128i)|  
+|[_mm_inserti_si64](../intrinsics/mm-insert-si64-mm-inserti-si64.md)|SSE4a|intrin.h|__m128i _mm_inserti_si64(\__m128i,\__m128i,int,int)|  
 |[_mm_lddqu_si128](http://go.microsoft.com/fwlink/p/?LinkId=512130)|SSE3|intrin.h|__m128i _mm_lddqu_si128(\__m128i const*)|  
 |[_mm_lfence](http://go.microsoft.com/fwlink/p/?LinkId=512130)|SSE2|intrin.h|void _mm_lfence(void)|  
 |[_mm_load_pd](http://go.microsoft.com/fwlink/p/?LinkId=512130)|SSE2|intrin.h|__m128d _mm_load_pd(double*)|  
@@ -811,10 +812,10 @@ This document lists intrinsics that the Visual C++ compiler supports when x86 is
 |[_mm_stream_pd](http://go.microsoft.com/fwlink/p/?LinkId=512130)|SSE2|intrin.h|void _mm_stream_pd(double*,\__m128d)|  
 |[_mm_stream_pi](http://go.microsoft.com/fwlink/p/?LinkId=512130)|SSE|intrin.h|void _mm_stream_pi(\__m64*,\__m64)|  
 |[_mm_stream_ps](http://go.microsoft.com/fwlink/p/?LinkId=512130)|SSE|intrin.h|void _mm_stream_ps(float*,\__m128)|  
-|[_mm_stream_sd](../intrinsics/_mm_stream_sd.md)|SSE4a|intrin.h|void _mm_stream_sd(double*,\__m128d)|  
+|[_mm_stream_sd](../intrinsics/mm-stream-sd.md)|SSE4a|intrin.h|void _mm_stream_sd(double*,\__m128d)|  
 |[_mm_stream_si128](http://go.microsoft.com/fwlink/p/?LinkId=512130)|SSE2|intrin.h|void _mm_stream_si128(\__m128i*,\__m128i)|  
 |[_mm_stream_si32](http://go.microsoft.com/fwlink/p/?LinkId=512130)|SSE2|intrin.h|void _mm_stream_si32(int*,int)|  
-|[_mm_stream_ss](../intrinsics/_mm_stream_ss.md)|SSE4a|intrin.h|void _mm_stream_ss(float*,\__m128)|  
+|[_mm_stream_ss](../intrinsics/mm-stream-ss.md)|SSE4a|intrin.h|void _mm_stream_ss(float*,\__m128)|  
 |[_mm_sub_epi16](http://go.microsoft.com/fwlink/p/?LinkId=512130)|SSE2|intrin.h|__m128i _mm_sub_epi16(\__m128i,\__m128i)|  
 |[_mm_sub_epi32](http://go.microsoft.com/fwlink/p/?LinkId=512130)|SSE2|intrin.h|__m128i _mm_sub_epi32(\__m128i,\__m128i)|  
 |[_mm_sub_epi64](http://go.microsoft.com/fwlink/p/?LinkId=512130)|SSE2|intrin.h|__m128i _mm_sub_epi64(\__m128i,\__m128i)|  
@@ -1187,94 +1188,94 @@ This document lists intrinsics that the Visual C++ compiler supports when x86 is
 |[_mm256_xor_si256](http://go.microsoft.com/fwlink/p/?LinkId=512130)|AVX2 [2]|immintrin.h|__m256i _mm256_xor_si256(\__m256i,\__m256i)|  
 |[_mm256_zeroall](http://go.microsoft.com/fwlink/p/?LinkId=512130)|AVX [2]|immintrin.h|void _mm256_zeroall(void)|  
 |[_mm256_zeroupper](http://go.microsoft.com/fwlink/p/?LinkId=512130)|AVX [2]|immintrin.h|void _mm256_zeroupper(void)|  
-|[__movsb](../intrinsics/__movsb.md)||intrin.h|VOID __movsb(IN PBYTE,IN BYTE const *,IN SIZE_T)|  
-|[__movsd](../intrinsics/__movsd.md)||intrin.h|VOID __movsd(IN PDWORD,IN DWORD const *,IN SIZE_T)|  
-|[__movsw](../intrinsics/__movsw.md)||intrin.h|VOID __movsw(IN PWORD,IN WORD const *,IN SIZE_T)|  
+|[__movsb](../intrinsics/movsb.md)||intrin.h|VOID __movsb(IN PBYTE,IN BYTE const *,IN SIZE_T)|  
+|[__movsd](../intrinsics/movsd.md)||intrin.h|VOID __movsd(IN PDWORD,IN DWORD const *,IN SIZE_T)|  
+|[__movsw](../intrinsics/movsw.md)||intrin.h|VOID __movsw(IN PWORD,IN WORD const *,IN SIZE_T)|  
 |_mulx_u32|BMI [2]|immintrin.h|unsigned int _mulx_u32(unsigned int,unsigned int,unsigned int*)|  
-|[__nop](../intrinsics/__nop.md)||intrin.h|void __nop(void)|  
+|[__nop](../intrinsics/nop.md)||intrin.h|void __nop(void)|  
 |__nvreg_restore_fence||intrin.h|void __nvreg_restore_fence(void)|  
 |__nvreg_save_fence||intrin.h|void __nvreg_save_fence(void)|  
-|[__outbyte](../intrinsics/__outbyte.md)||intrin.h|void __outbyte(unsigned short Port,unsigned char Data)|  
-|[__outbytestring](../intrinsics/__outbytestring.md)||intrin.h|void __outbytestring(unsigned short Port,unsigned char *Buffer,unsigned long Count)|  
-|[__outdword](../intrinsics/__outdword.md)||intrin.h|void __outdword(unsigned short Port,unsigned long Data)|  
-|[__outdwordstring](../intrinsics/__outdwordstring.md)||intrin.h|void __outdwordstring(unsigned short Port,unsigned long *Buffer,unsigned long Count)|  
-|[__outword](../intrinsics/__outword.md)||intrin.h|void __outword(unsigned short Port,unsigned short Data)|  
-|[__outwordstring](../intrinsics/__outwordstring.md)||intrin.h|void __outwordstring(unsigned short Port,unsigned short *Buffer,unsigned long Count)|  
+|[__outbyte](../intrinsics/outbyte.md)||intrin.h|void __outbyte(unsigned short Port,unsigned char Data)|  
+|[__outbytestring](../intrinsics/outbytestring.md)||intrin.h|void __outbytestring(unsigned short Port,unsigned char *Buffer,unsigned long Count)|  
+|[__outdword](../intrinsics/outdword.md)||intrin.h|void __outdword(unsigned short Port,unsigned long Data)|  
+|[__outdwordstring](../intrinsics/outdwordstring.md)||intrin.h|void __outdwordstring(unsigned short Port,unsigned long *Buffer,unsigned long Count)|  
+|[__outword](../intrinsics/outword.md)||intrin.h|void __outword(unsigned short Port,unsigned short Data)|  
+|[__outwordstring](../intrinsics/outwordstring.md)||intrin.h|void __outwordstring(unsigned short Port,unsigned short *Buffer,unsigned long Count)|  
 |[_pdep_u32](http://go.microsoft.com/fwlink/p/?LinkId=512130)|BMI [2]|immintrin.h|unsigned int _pdep_u32(unsigned int,unsigned int)|  
 |[_pext_u32](http://go.microsoft.com/fwlink/p/?LinkId=512130)|BMI [2]|immintrin.h|unsigned int _pext_u32(unsigned int,unsigned int)|  
-|[__popcnt](../intrinsics/__popcnt16--__popcnt--__popcnt64.md)|POPCNT|intrin.h|unsigned int __popcnt(unsigned int)|  
-|[__popcnt16](../intrinsics/__popcnt16--__popcnt--__popcnt64.md)|POPCNT|intrin.h|unsigned short __popcnt16(unsigned short)|  
+|[__popcnt](../intrinsics/popcnt16-popcnt-popcnt64.md)|POPCNT|intrin.h|unsigned int __popcnt(unsigned int)|  
+|[__popcnt16](../intrinsics/popcnt16-popcnt-popcnt64.md)|POPCNT|intrin.h|unsigned short __popcnt16(unsigned short)|  
 |[_rdrand16_step](http://go.microsoft.com/fwlink/p/?LinkId=512130)|RDRAND [2]|immintrin.h|int _rdrand16_step(unsigned short *)|  
 |[_rdrand32_step](http://go.microsoft.com/fwlink/p/?LinkId=512130)|RDRAND [2]|immintrin.h|int _rdrand32_step(unsigned int *)|  
 |[_rdseed16_step](http://go.microsoft.com/fwlink/p/?LinkId=512130)|RDSEED [2]|immintrin.h|int _rdseed16_step(unsigned short *)|  
 |[_rdseed32_step](http://go.microsoft.com/fwlink/p/?LinkId=512130)|RDSEED [2]|immintrin.h|int _rdseed32_step(unsigned int *)|  
-|[__rdtsc](../intrinsics/__rdtsc.md)||intrin.h|unsigned __int64 \__rdtsc(void)|  
-|[__rdtscp](../intrinsics/__rdtscp.md)|RDTSCP|intrin.h|unsigned __int64 \__rdtscp(unsigned int*)|  
-|[_ReadBarrier](../intrinsics/_readbarrier.md)||intrin.h|void _ReadBarrier(void)|  
-|[__readcr0](../intrinsics/__readcr0.md)||intrin.h|unsigned long __readcr0(void)|  
-|[__readcr2](../intrinsics/__readcr2.md)||intrin.h|unsigned long __readcr2(void)|  
-|[__readcr3](../intrinsics/__readcr3.md)||intrin.h|unsigned long __readcr3(void)|  
-|[__readcr4](../intrinsics/__readcr4.md)||intrin.h|unsigned long __readcr4(void)|  
-|[__readcr8](../intrinsics/__readcr8.md)||intrin.h|unsigned long __readcr8(void)|  
-|[__readdr](../intrinsics/__readdr.md)||intrin.h|unsigned __readdr(unsigned)|  
-|[__readeflags](../intrinsics/__readeflags.md)||intrin.h|unsigned __readeflags(void)|  
-|[__readfsbyte](../intrinsics/__readfsbyte--__readfsdword--__readfsqword--__readfsword.md)||intrin.h|unsigned char __readfsbyte(unsigned long Offset)|  
-|[__readfsdword](../intrinsics/__readfsbyte--__readfsdword--__readfsqword--__readfsword.md)||intrin.h|unsigned long __readfsdword(unsigned long Offset)|  
-|[__readfsword](../intrinsics/__readfsbyte--__readfsdword--__readfsqword--__readfsword.md)||intrin.h|unsigned short __readfsword(unsigned long Offset)|  
-|[__readmsr](../intrinsics/__readmsr.md)||intrin.h|unsigned __int64 \__readmsr(unsigned long)|  
-|[__readpmc](../intrinsics/__readpmc.md)||intrin.h|unsigned __int64 \__readpmc(unsigned long a)|  
-|[_ReadWriteBarrier](../intrinsics/_readwritebarrier.md)||intrin.h|void _ReadWriteBarrier(void)|  
-|[_ReturnAddress](../intrinsics/_returnaddress.md)||intrin.h|void * _ReturnAddress(void)|  
+|[__rdtsc](../intrinsics/rdtsc.md)||intrin.h|unsigned __int64 \__rdtsc(void)|  
+|[__rdtscp](../intrinsics/rdtscp.md)|RDTSCP|intrin.h|unsigned __int64 \__rdtscp(unsigned int*)|  
+|[_ReadBarrier](../intrinsics/readbarrier.md)||intrin.h|void _ReadBarrier(void)|  
+|[__readcr0](../intrinsics/readcr0.md)||intrin.h|unsigned long __readcr0(void)|  
+|[__readcr2](../intrinsics/readcr2.md)||intrin.h|unsigned long __readcr2(void)|  
+|[__readcr3](../intrinsics/readcr3.md)||intrin.h|unsigned long __readcr3(void)|  
+|[__readcr4](../intrinsics/readcr4.md)||intrin.h|unsigned long __readcr4(void)|  
+|[__readcr8](../intrinsics/readcr8.md)||intrin.h|unsigned long __readcr8(void)|  
+|[__readdr](../intrinsics/readdr.md)||intrin.h|unsigned __readdr(unsigned)|  
+|[__readeflags](../intrinsics/readeflags.md)||intrin.h|unsigned __readeflags(void)|  
+|[__readfsbyte](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)||intrin.h|unsigned char __readfsbyte(unsigned long Offset)|  
+|[__readfsdword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)||intrin.h|unsigned long __readfsdword(unsigned long Offset)|  
+|[__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)||intrin.h|unsigned short __readfsword(unsigned long Offset)|  
+|[__readmsr](../intrinsics/readmsr.md)||intrin.h|unsigned __int64 \__readmsr(unsigned long)|  
+|[__readpmc](../intrinsics/readpmc.md)||intrin.h|unsigned __int64 \__readpmc(unsigned long a)|  
+|[_ReadWriteBarrier](../intrinsics/readwritebarrier.md)||intrin.h|void _ReadWriteBarrier(void)|  
+|[_ReturnAddress](../intrinsics/returnaddress.md)||intrin.h|void * _ReturnAddress(void)|  
 |_rorx_u32|BMI [2]|immintrin.h|unsigned int _rorx_u32(unsigned int,const unsigned int)|  
-|[_rotl16](../intrinsics/_rotl8--_rotl16.md)||intrin.h|unsigned short _rotl16(unsigned short value,unsigned char shift)|  
-|[_rotl8](../intrinsics/_rotl8--_rotl16.md)||intrin.h|unsigned char _rotl8(unsigned char value,unsigned char shift)|  
-|[_rotr16](../intrinsics/_rotr8--_rotr16.md)||intrin.h|unsigned short _rotr16(unsigned short value,unsigned char shift)|  
-|[_rotr8](../intrinsics/_rotr8--_rotr16.md)||intrin.h|unsigned char _rotr8(unsigned char value,unsigned char shift)|  
+|[_rotl16](../intrinsics/rotl8-rotl16.md)||intrin.h|unsigned short _rotl16(unsigned short value,unsigned char shift)|  
+|[_rotl8](../intrinsics/rotl8-rotl16.md)||intrin.h|unsigned char _rotl8(unsigned char value,unsigned char shift)|  
+|[_rotr16](../intrinsics/rotr8-rotr16.md)||intrin.h|unsigned short _rotr16(unsigned short value,unsigned char shift)|  
+|[_rotr8](../intrinsics/rotr8-rotr16.md)||intrin.h|unsigned char _rotr8(unsigned char value,unsigned char shift)|  
 |_rsm||intrin.h|void _rsm(void)|  
 |_sarx_i32|BMI [2]|immintrin.h|int _sarx_i32(int,unsigned int)|  
-|[__segmentlimit](../intrinsics/__segmentlimit.md)||intrin.h|unsigned long __segmentlimit(unsigned long a)|  
+|[__segmentlimit](../intrinsics/segmentlimit.md)||intrin.h|unsigned long __segmentlimit(unsigned long a)|  
 |_sgdt||intrin.h|void _sgdt(void*)|  
 |_shlx_u32|BMI [2]|immintrin.h|unsigned int _shlx_u32(unsigned int,unsigned int)|  
 |_shrx_u32|BMI [2]|immintrin.h|unsigned int _shrx_u32(unsigned int,unsigned int)|  
-|[__sidt](../intrinsics/__sidt.md)||intrin.h|void __sidt(void*)|  
+|[__sidt](../intrinsics/sidt.md)||intrin.h|void __sidt(void*)|  
 |__slwpcb|LWP [1]|ammintrin.h|void *__slwpcb(void)|  
 |_stac|SMAP|intrin.h|void _stac(void)|  
 |_store_be_u16<br /><br /> [_storebe_i16](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_storebe_i16&expand=5141)|MOVBE|immintrin.h|void _store_be_u16(void *, unsigned short);<br /><br /> void _storebe_i16(void \*, short); [3]|  
 |_store_be_u32<br /><br /> [_storebe_i32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_storebe_i32&expand=5142)|MOVBE|immintrin.h|void _store_be_u32(void *, unsigned int);<br /><br /> void _storebe_i32(void \*, int); [3]|  
 |_Store_HLERelease|HLE [2]|immintrin.h|void _Store_HLERelease(long volatile *,long)|  
 |_StorePointer_HLERelease|HLE [2]|immintrin.h|void _StorePointer_HLERelease(void * volatile \*,void \*)|  
-|[__stosb](../intrinsics/__stosb.md)||intrin.h|void __stosb(IN PBYTE,IN BYTE,IN SIZE_T)|  
-|[__stosd](../intrinsics/__stosd.md)||intrin.h|void __stosd(IN PDWORD,IN DWORD,IN SIZE_T)|  
-|[__stosw](../intrinsics/__stosw.md)||intrin.h|void __stosw(IN PWORD,IN WORD,IN SIZE_T)|  
+|[__stosb](../intrinsics/stosb.md)||intrin.h|void __stosb(IN PBYTE,IN BYTE,IN SIZE_T)|  
+|[__stosd](../intrinsics/stosd.md)||intrin.h|void __stosd(IN PDWORD,IN DWORD,IN SIZE_T)|  
+|[__stosw](../intrinsics/stosw.md)||intrin.h|void __stosw(IN PWORD,IN WORD,IN SIZE_T)|  
 |_subborrow_u16||intrin.h|unsigned char _subborrow_u16(unsigned char b_in,unsigned short src1,unsigned short src2,unsigned short *diff)|  
 |[_subborrow_u32](http://go.microsoft.com/fwlink/p/?LinkId=512130)||intrin.h|unsigned char _subborrow_u32(unsigned char b_in,unsigned int src1,unsigned int src2,unsigned int *diff)|  
 |_subborrow_u8||intrin.h|unsigned char _subborrow_u8(unsigned char b_in,unsigned char src1,unsigned char src2,unsigned char *diff)|  
-|[__svm_clgi](../intrinsics/__svm_clgi.md)||intrin.h|void __svm_clgi(void)|  
-|[__svm_invlpga](../intrinsics/__svm_invlpga.md)||intrin.h|void __svm_invlpga(void*,int)|  
-|[__svm_skinit](../intrinsics/__svm_skinit.md)||intrin.h|void __svm_skinit(int)|  
-|[__svm_stgi](../intrinsics/__svm_stgi.md)||intrin.h|void __svm_stgi(void)|  
-|[__svm_vmload](../intrinsics/__svm_vmload.md)||intrin.h|void __svm_vmload(size_t)|  
-|[__svm_vmrun](../intrinsics/__svm_vmrun.md)||intrin.h|void __svm_vmrun(size_t)|  
-|[__svm_vmsave](../intrinsics/__svm_vmsave.md)||intrin.h|void __svm_vmsave(size_t)|  
+|[__svm_clgi](../intrinsics/svm-clgi.md)||intrin.h|void __svm_clgi(void)|  
+|[__svm_invlpga](../intrinsics/svm-invlpga.md)||intrin.h|void __svm_invlpga(void*,int)|  
+|[__svm_skinit](../intrinsics/svm-skinit.md)||intrin.h|void __svm_skinit(int)|  
+|[__svm_stgi](../intrinsics/svm-stgi.md)||intrin.h|void __svm_stgi(void)|  
+|[__svm_vmload](../intrinsics/svm-vmload.md)||intrin.h|void __svm_vmload(size_t)|  
+|[__svm_vmrun](../intrinsics/svm-vmrun.md)||intrin.h|void __svm_vmrun(size_t)|  
+|[__svm_vmsave](../intrinsics/svm-vmsave.md)||intrin.h|void __svm_vmsave(size_t)|  
 |_t1mskc_u32|ABM [1]|ammintrin.h|unsigned int _t1mskc_u32(unsigned int)|  
 |[_tzcnt_u32](http://go.microsoft.com/fwlink/p/?LinkId=512130)|BMI|ammintrin.h, immintrin.h|unsigned int _tzcnt_u32(unsigned int)|  
 |_tzmsk_u32|ABM [1]|ammintrin.h|unsigned int _tzmsk_u32(unsigned int)|  
-|[__ud2](../intrinsics/__ud2.md)||intrin.h|void __ud2(void)|  
-|[__ull_rshift](../intrinsics/__ull_rshift.md)||intrin.h|unsigned __int64 [pascal/cdecl] \__ull_rshift(unsigned \__int64,int)|  
-|[__vmx_off](../intrinsics/__vmx_off.md)||intrin.h|void __vmx_off(void)|  
-|[__vmx_vmptrst](../intrinsics/__vmx_vmptrst.md)||intrin.h|void __vmx_vmptrst(unsigned \__int64 *)|  
-|[__wbinvd](../intrinsics/__wbinvd.md)||intrin.h|void __wbinvd(void)|  
-|[_WriteBarrier](../intrinsics/_writebarrier.md)||intrin.h|void _WriteBarrier(void)|  
-|[__writecr0](../intrinsics/__writecr0.md)||intrin.h|void __writecr0(unsigned long)|  
-|[__writecr3](../intrinsics/__writecr3.md)||intrin.h|void __writecr3(unsigned long)|  
-|[__writecr4](../intrinsics/__writecr4.md)||intrin.h|void __writecr4(unsigned long)|  
-|[__writecr8](../intrinsics/__writecr8.md)||intrin.h|void __writecr8(unsigned long)|  
-|[__writedr](../intrinsics/__writedr.md)||intrin.h|void __writedr(unsigned,unsigned)|  
-|[__writeeflags](../intrinsics/__writeeflags.md)||intrin.h|void __writeeflags(unsigned)|  
-|[__writefsbyte](../intrinsics/__writefsbyte--__writefsdword--__writefsqword--__writefsword.md)||intrin.h|void __writefsbyte(unsigned long Offset,unsigned char Data)|  
-|[__writefsdword](../intrinsics/__writefsbyte--__writefsdword--__writefsqword--__writefsword.md)||intrin.h|void __writefsdword(unsigned long Offset,unsigned long Data)|  
-|[__writefsword](../intrinsics/__writefsbyte--__writefsdword--__writefsqword--__writefsword.md)||intrin.h|void __writefsword(unsigned long Offset,unsigned short Data)|  
-|[__writemsr](../intrinsics/__writemsr.md)||intrin.h|void __writemsr(unsigned long,unsigned \__int64)|  
+|[__ud2](../intrinsics/ud2.md)||intrin.h|void __ud2(void)|  
+|[__ull_rshift](../intrinsics/ull-rshift.md)||intrin.h|unsigned __int64 [pascal/cdecl] \__ull_rshift(unsigned \__int64,int)|  
+|[__vmx_off](../intrinsics/vmx-off.md)||intrin.h|void __vmx_off(void)|  
+|[__vmx_vmptrst](../intrinsics/vmx-vmptrst.md)||intrin.h|void __vmx_vmptrst(unsigned \__int64 *)|  
+|[__wbinvd](../intrinsics/wbinvd.md)||intrin.h|void __wbinvd(void)|  
+|[_WriteBarrier](../intrinsics/writebarrier.md)||intrin.h|void _WriteBarrier(void)|  
+|[__writecr0](../intrinsics/writecr0.md)||intrin.h|void __writecr0(unsigned long)|  
+|[__writecr3](../intrinsics/writecr3.md)||intrin.h|void __writecr3(unsigned long)|  
+|[__writecr4](../intrinsics/writecr4.md)||intrin.h|void __writecr4(unsigned long)|  
+|[__writecr8](../intrinsics/writecr8.md)||intrin.h|void __writecr8(unsigned long)|  
+|[__writedr](../intrinsics/writedr.md)||intrin.h|void __writedr(unsigned,unsigned)|  
+|[__writeeflags](../intrinsics/writeeflags.md)||intrin.h|void __writeeflags(unsigned)|  
+|[__writefsbyte](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)||intrin.h|void __writefsbyte(unsigned long Offset,unsigned char Data)|  
+|[__writefsdword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)||intrin.h|void __writefsdword(unsigned long Offset,unsigned long Data)|  
+|[__writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)||intrin.h|void __writefsword(unsigned long Offset,unsigned short Data)|  
+|[__writemsr](../intrinsics/writemsr.md)||intrin.h|void __writemsr(unsigned long,unsigned \__int64)|  
 |[_xabort](http://go.microsoft.com/fwlink/p/?LinkId=512130)|RTM [2]|immintrin.h|void _xabort(unsigned int)|  
 |[_xbegin](http://go.microsoft.com/fwlink/p/?LinkId=512130)|RTM [2]|immintrin.h|unsigned _xbegin(void)|  
 |[_xend](http://go.microsoft.com/fwlink/p/?LinkId=512130)|RTM [2]|immintrin.h|void _xend(void)|  
@@ -1288,4 +1289,4 @@ This document lists intrinsics that the Visual C++ compiler supports when x86 is
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   
  [ARM Intrinsics](../intrinsics/arm-intrinsics.md)   
- [x64 (amd64) Intrinsics](../intrinsics/x64--amd64--intrinsics-list.md)
+ [x64 (amd64) Intrinsics](../intrinsics/x64-amd64-intrinsics-list.md)

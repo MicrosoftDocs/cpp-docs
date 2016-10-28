@@ -1,13 +1,13 @@
 ---
 title: "WeakReference Class1"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "implements/Microsoft::WRL::Details::WeakReference"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "WeakReference class"
 ms.assetid: 3f4c956b-dbbd-49b1-8cfa-9509a9956c97
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -59,17 +60,17 @@ class WeakReference;
   
 |Name|Description|  
 |----------|-----------------|  
-|[WeakReference::WeakReference Constructor](../windows/weakreference--weakreference-constructor.md)|Initializes a new instance of the WeakReference class.|  
-|[WeakReference::~WeakReference Destructor](../windows/weakreference--~weakreference-destructor.md)|Deinitializes (destroys) the current instance of the WeakReference class.|  
+|[WeakReference::WeakReference Constructor](../windows/weakreference-weakreference-constructor.md)|Initializes a new instance of the WeakReference class.|  
+|[WeakReference::~WeakReference Destructor](../windows/weakreference-tilde-weakreference-destructor.md)|Deinitializes (destroys) the current instance of the WeakReference class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[WeakReference::DecrementStrongReference Method](../windows/weakreference--decrementstrongreference-method.md)|Decrements the strong reference count of the current WeakReference object.|  
-|[WeakReference::IncrementStrongReference Method](../windows/weakreference--incrementstrongreference-method.md)|Increments the strong reference count of the current WeakReference object.|  
-|[WeakReference::Resolve Method](../windows/weakreference--resolve-method.md)|Sets the specified pointer to the current strong reference value if the strong reference count is nonzero.|  
-|[WeakReference::SetUnknown Method](../windows/weakreference--setunknown-method.md)|Sets the strong reference of the current WeakReference object to the specified interface pointer.|  
+|[WeakReference::DecrementStrongReference Method](../windows/weakreference-decrementstrongreference-method.md)|Decrements the strong reference count of the current WeakReference object.|  
+|[WeakReference::IncrementStrongReference Method](../windows/weakreference-incrementstrongreference-method.md)|Increments the strong reference count of the current WeakReference object.|  
+|[WeakReference::Resolve Method](../windows/weakreference-resolve-method.md)|Sets the specified pointer to the current strong reference value if the strong reference count is nonzero.|  
+|[WeakReference::SetUnknown Method](../windows/weakreference-setunknown-method.md)|Sets the strong reference of the current WeakReference object to the specified interface pointer.|  
   
 ## Inheritance Hierarchy  
  `WeakReference`  
@@ -80,4 +81,4 @@ class WeakReference;
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft--wrl--details-namespace.md)
+ [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

@@ -1,20 +1,21 @@
 ---
 title: "Running Remote Automation Using AUTOCLIK and AUTODRIV"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "AUTOCLIK sample [MFC]"
 ms.assetid: 8900c0de-8dba-4f0a-8d9e-7db77a1f4f46
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,7 +38,7 @@ AUTOCLIK is a simple Automation server sample application that you can use as a 
   
 #### To install AUTOCLIK.EXE on two machines and drive it using Remote Automation  
   
-1.  Install the [AUTOCLIK](../top/visual-c---samples.md) sample application onto your development machine.  
+1.  Install the [AUTOCLIK](../top/visual-cpp-samples.md) sample application onto your development machine.  
   
 2.  Build AUTOCLIK.EXE.  
   
@@ -45,7 +46,7 @@ AUTOCLIK is a simple Automation server sample application that you can use as a 
   
 4.  Copy AUTOCLIK.EXE to a remote machine, run it there, and then shut it down.  
   
-5.  Run AUTODRIV.EXE on the local machine and verify that running it starts AUTOCLIK.EXE. To find out more about AUTODRIV.EXE, see [AUTOCLIK](../top/visual-c---samples.md).  
+5.  Run AUTODRIV.EXE on the local machine and verify that running it starts AUTOCLIK.EXE. To find out more about AUTODRIV.EXE, see [AUTOCLIK](../top/visual-cpp-samples.md).  
   
 6.  On the remote machine, start AUTMGR32.EXE (Automation Manager).  
   
@@ -67,3 +68,4 @@ AUTOCLIK is a simple Automation server sample application that you can use as a 
   
 ## See Also  
  [Remote Automation](../mfc/remote-automation.md)
+

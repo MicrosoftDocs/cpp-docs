@@ -1,13 +1,13 @@
 ---
 title: "MIDL Property Pages"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "property pages, MIDL"
 ms.assetid: 57498a01-fccc-4a0e-a036-6ff702f83126
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,13 +38,13 @@ translation.priority.ht:
 # MIDL Property Pages
 The **MIDL** node contains several property pages. To access them. right-click on the .idl file in **Solution Explorer**.  
   
--   [MIDL Property Pages: General](../ide/midl-property-pages--general.md)  
+-   [MIDL Property Pages: General](../ide/midl-property-pages-general.md)  
   
--   [MIDL Property Pages: Output](../ide/midl-property-pages--output.md)  
+-   [MIDL Property Pages: Output](../ide/midl-property-pages-output.md)  
   
--   [MIDL Property Pages: Advanced](../ide/midl-property-pages--advanced.md)  
+-   [MIDL Property Pages: Advanced](../ide/midl-property-pages-advanced.md)  
   
- For information on how to programmatically access MIDL options for C++ projects, see \<xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool>  
+ For information on how to programmatically access MIDL options for C++ projects, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool>  
   
 ## See Also  
- [Property Pages](../ide/property-pages--visual-c---.md)
+ [Property Pages](../ide/property-pages-visual-cpp.md)

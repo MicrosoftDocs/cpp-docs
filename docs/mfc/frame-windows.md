@@ -1,13 +1,13 @@
 ---
 title: "Frame Windows"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -25,7 +25,8 @@ helpviewer_keywords:
   - "MDI [C++], frame windows"
   - "splitter windows, and frame windows"
 ms.assetid: 40677339-8135-4f5e-aba6-3fced3078077
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -53,9 +54,9 @@ When an application runs under Windows, the user interacts with documents displa
 Frame Window and View  
   
 ## Frame Windows and Splitter Windows  
- Another common arrangement is for the frame window to frame multiple views, usually using a [splitter window](../mfc/multiple-document-types--views--and-frame-windows.md). In a splitter window, the frame window's client area is occupied by a splitter window, which in turn has multiple child windows, called panes, which are views.  
+ Another common arrangement is for the frame window to frame multiple views, usually using a [splitter window](../mfc/multiple-document-types-views-and-frame-windows.md). In a splitter window, the frame window's client area is occupied by a splitter window, which in turn has multiple child windows, called panes, which are views.  
   
-### What do you want to know more about?  
+### What do you want to know more about  
  **General Frame Window Topics**  
   
 -   [Window objects](../mfc/window-objects.md)  
@@ -64,7 +65,7 @@ Frame Window and View
   
 -   [The Frame-Window classes created by the Application Wizard](../mfc/frame-window-classes-created-by-the-application-wizard.md)  
   
--   [Frame window styles](../mfc/frame-window-styles--c---.md)  
+-   [Frame window styles](../mfc/frame-window-styles-cpp.md)  
   
 -   [What frame windows do](../mfc/what-frame-windows-do.md)  
   
@@ -80,13 +81,13 @@ Frame Window and View
   
 -   [Managing the current view](../mfc/managing-the-current-view.md) in a frame window that contains more than one view  
   
--   [Managing menus, control bars, and accelerators (other objects that share the frame window's space)](../mfc/managing-menus--control-bars--and-accelerators.md)  
+-   [Managing menus, control bars, and accelerators (other objects that share the frame window's space)](../mfc/managing-menus-control-bars-and-accelerators.md)  
   
  **Topics on Special Frame Window Capabilities**  
   
 -   [Dragging and dropping files](../mfc/dragging-and-dropping-files-in-a-frame-window.md) from File Explorer or File Manager into a frame window  
   
--   [Responding to dynamic data exchange (DDE)](../mfc/responding-to-dynamic-data-exchange--dde-.md)  
+-   [Responding to dynamic data exchange (DDE)](../mfc/responding-to-dynamic-data-exchange-dde.md)  
   
 -   [Semimodal states: Context-sensitive Windows Help (Orchestrating other window actions)](../mfc/orchestrating-other-window-actions.md)  
   
@@ -98,7 +99,8 @@ Frame Window and View
   
 -   [Dialog boxes](../mfc/dialog-boxes.md)  
   
--   [Controls](../mfc/controls--mfc-.md)  
+-   [Controls](../mfc/controls-mfc.md)  
   
 ## See Also  
  [Windows](../mfc/windows.md)
+

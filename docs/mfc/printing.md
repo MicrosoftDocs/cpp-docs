@@ -1,13 +1,13 @@
 ---
 title: "Printing"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "printing [MFC], from framework"
   - "printing [MFC]"
 ms.assetid: be465e8d-b0c9-4fc5-9fa8-d10486064f76
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -53,17 +54,17 @@ Microsoft Windows implements device-independent display. In MFC, this means that
   
 -   Display the **Print** dialog box.  
   
--   Create a [CDC](../mfcref/cdc-class.md) object for the printer.  
+-   Create a [CDC](../mfc/reference/cdc-class.md) object for the printer.  
   
--   Call the [StartDoc](../Topic/CDC::StartDoc.md) and [EndDoc](../Topic/CDC::EndDoc.md) member functions of the `CDC` object.  
+-   Call the [StartDoc](../mfc/reference/cdc-class.md#startdoc) and [EndDoc](../mfc/reference/cdc-class.md#enddoc) member functions of the `CDC` object.  
   
--   Repeatedly call the [StartPage](../Topic/CDC::StartPage.md) member function of the `CDC` object, inform the view class which page should be printed, and call the [EndPage](../Topic/CDC::EndPage.md) member function of the `CDC` object.  
+-   Repeatedly call the [StartPage](../mfc/reference/cdc-class.md#startpage) member function of the `CDC` object, inform the view class which page should be printed, and call the [EndPage](../mfc/reference/cdc-class.md#endpage) member function of the `CDC` object.  
   
 -   Call overridable functions in the view at the appropriate times.  
   
  The following articles discuss how the framework supports printing and print preview:  
   
-### What do you want to know more about?  
+### What do you want to know more about  
   
 -   [How default printing is done](../mfc/how-default-printing-is-done.md)  
   
@@ -77,3 +78,4 @@ Microsoft Windows implements device-independent display. In MFC, this means that
   
 ## See Also  
  [Printing and Print Preview](../mfc/printing-and-print-preview.md)
+

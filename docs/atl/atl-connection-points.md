@@ -1,13 +1,13 @@
 ---
 title: "ATL Connection Points"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "ATL, connection points"
   - "connection points [C++], about connection points"
 ms.assetid: 17d76165-5f83-4f95-b36d-483821c247a1
-caps.latest.revision: 10
+caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -52,8 +53,9 @@ A connectable object is one that supports outgoing interfaces. An outgoing inter
  Provides an example of declaring a connection point.  
   
 ## Related Sections  
- [ATL](../atl/active-template-library--atl--concepts.md)  
+ [ATL](../atl/active-template-library-atl-concepts.md)  
  Provides links to conceptual topics on how to program using the Active Template Library.  
   
 ## See Also  
- [Concepts](../atl/active-template-library--atl--concepts.md)
+ [Concepts](../atl/active-template-library-atl-concepts.md)
+

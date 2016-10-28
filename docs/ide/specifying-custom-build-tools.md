@@ -1,13 +1,13 @@
 ---
 title: "Specifying Custom Build Tools"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "VC.Project.VCCustomBuildTool.CustomBuildToolBeforeTargets"
@@ -27,6 +27,7 @@ helpviewer_keywords:
   - "builds (C++), custom build tools"
 ms.assetid: e5161946-8002-418d-991e-219e6a8586f5
 caps.latest.revision: 11
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -71,7 +72,7 @@ A *custom build tool* provides the build system with the information it needs to
   
     -   In **Command Line**, specify a command as if you were specifying it at the command prompt. Specify a valid command or batch file, and any required input or output files. Specify the **call** batch command before the name of a batch file to guarantee that all subsequent commands are executed.  
   
-         Multiple input and output files can be specified symbolically with MSBuild macros. [!INCLUDE[crabout](../buildref/includes/crabout_md.md)] specifying the location of files, or the names of sets of files, see [Common Macros for Build Commands and Properties](../ide/common-macros-for-build-commands-and-properties.md).  
+         Multiple input and output files can be specified symbolically with MSBuild macros. [!INCLUDE[crabout](../build/reference/includes/crabout_md.md)] specifying the location of files, or the names of sets of files, see [Common Macros for Build Commands and Properties](../ide/common-macros-for-build-commands-and-properties.md).  
   
          Because the '%' character is reserved by MSBuild, if you specify an environment variable replace each **%** escape character with the **%25** hexadecimal escape sequence. For example, replace **%WINDIR%** with **%25WINDIR%25**. MSBuild replaces each **%25** sequence with the **%** character before it accesses the environment variable.  
   

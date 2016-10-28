@@ -1,20 +1,21 @@
 ---
 title: "ATL Event Handling Summary"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "event handling, implementing"
 ms.assetid: e8b47ef0-0bdc-47ff-9dd6-34df11dde9a2
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -48,22 +49,23 @@ In general, handling COM events is a relatively simple process. There are three 
 |Derive from|Suitable for Interface type|Requires you to implement all methods*|Requires a type library at run time|  
 |-----------------|---------------------------------|---------------------------------------------|-----------------------------------------|  
 |The interface|Vtable|Yes|No|  
-|[IDispatchImpl](../atl/idispatchimpl-class.md)|Dual|Yes|Yes|  
-|[IDispEventImpl](../atl/idispeventimpl-class.md)|Dispinterface|No|Yes|  
-|[IDispEventSimpleImpl](../atl/idispeventsimpleimpl-class.md)|Dispinterface|No|No|  
+|[IDispatchImpl](../atl/reference/idispatchimpl-class.md)|Dual|Yes|Yes|  
+|[IDispEventImpl](../atl/reference/idispeventimpl-class.md)|Dispinterface|No|Yes|  
+|[IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md)|Dispinterface|No|No|  
   
  \* When using ATL support classes, you are never required to implement the **IUnknown** or `IDispatch` methods manually.  
   
 ## Advising and Unadvising the Event Source  
  There are three main ways of advising and unadvising an event source using ATL.  
   
-|Advise function|Unadvise function|Most suitable for use with|Requires you to keep track of a cookie?|Comments|  
+|Advise function|Unadvise function|Most suitable for use with|Requires you to keep track of a cookie|Comments|  
 |---------------------|-----------------------|--------------------------------|---------------------------------------------|--------------|  
-|[AtlAdvise](../Topic/AtlAdvise.md), [CComPtrBase::Advise](../Topic/CComPtrBase::Advise.md)|[AtlUnadvise](../Topic/AtlUnadvise.md)|Vtable or dual interfaces|Yes|`AtlAdvise` is a global ATL function. `CComPtrBase::Advise` is used by [CComPtr](../atl/ccomptr-class.md) and [CComQIPtr](../atl/ccomqiptr-class.md).|  
-|[IDispEventSimpleImpl::DispEventAdvise](../Topic/IDispEventSimpleImpl::DispEventAdvise.md)|[IDispEventSimpleImpl::DispEventUnadvise](../Topic/IDispEventSimpleImpl::DispEventUnadvise.md)|[IDispEventImpl](../atl/idispeventimpl-class.md) or [IDispEventSimpleImpl](../atl/idispeventsimpleimpl-class.md)|No|Fewer parameters than `AtlAdvise` since the base class does more work.|  
-|[CComCompositeControl::AdviseSinkMap(TRUE)](../Topic/CComCompositeControl::AdviseSinkMap.md)|[CComCompositeControl::AdviseSinkMap(FALSE)](../Topic/CComCompositeControl::AdviseSinkMap.md)|ActiveX controls in Composite controls|No|`CComCompositeControl::AdviseSinkMap` advises all entries in the event sink map. The same function unadvises the entries. This method is called automatically by the `CComCompositeControl` class.|  
-|[CAxDialogImpl::AdviseSinkMap(TRUE)](../Topic/CAxDialogImpl::AdviseSinkMap.md)|[CAxDialogImpl::AdviseSinkMap(FALSE)](../Topic/CAxDialogImpl::AdviseSinkMap.md)|ActiveX controls in a dialog box|No|`CAxDialogImpl::AdviseSinkMap` advises and unadvises all ActiveX controls in the dialog resource. This is done automatically for you.|  
+|[AtlAdvise](../Topic/AtlAdvise.md), [CComPtrBase::Advise](../atl/reference/ccomptrbase-class.md#advise)|[AtlUnadvise](../Topic/AtlUnadvise.md)|Vtable or dual interfaces|Yes|`AtlAdvise` is a global ATL function. `CComPtrBase::Advise` is used by [CComPtr](../atl/reference/ccomptr-class.md) and [CComQIPtr](../atl/reference/ccomqiptr-class.md).|  
+|[IDispEventSimpleImpl::DispEventAdvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventadvise)|[IDispEventSimpleImpl::DispEventUnadvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventunadvise)|[IDispEventImpl](../atl/reference/idispeventimpl-class.md) or [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md)|No|Fewer parameters than `AtlAdvise` since the base class does more work.|  
+|[CComCompositeControl::AdviseSinkMap(TRUE)](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap)|[CComCompositeControl::AdviseSinkMap(FALSE)](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap)|ActiveX controls in Composite controls|No|`CComCompositeControl::AdviseSinkMap` advises all entries in the event sink map. The same function unadvises the entries. This method is called automatically by the `CComCompositeControl` class.|  
+|[CAxDialogImpl::AdviseSinkMap(TRUE)](../atl/reference/caxdialogimpl-class.md#advisesinkmap)|[CAxDialogImpl::AdviseSinkMap(FALSE)](../atl/reference/caxdialogimpl-class.md#advisesinkmap)|ActiveX controls in a dialog box|No|`CAxDialogImpl::AdviseSinkMap` advises and unadvises all ActiveX controls in the dialog resource. This is done automatically for you.|  
   
 ## See Also  
  [Event Handling](../atl/event-handling-and-atl.md)   
  [Supporting IDispEventImpl](../atl/supporting-idispeventimpl.md)
+

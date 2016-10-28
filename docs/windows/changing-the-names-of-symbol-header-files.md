@@ -1,13 +1,13 @@
 ---
 title: "Changing the Names of Symbol Header Files"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.editors.symbol.changing.header"
@@ -24,6 +24,7 @@ helpviewer_keywords:
   - "Resource.h"
 ms.assetid: b948284a-7899-402e-ab12-9f2c8480ca9d
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -49,7 +50,7 @@ Normally all symbol definitions are saved in Resource.h. However, you may need t
 1.  In [Resource View](../windows/resource-view-window.md), right-click your .rc file and choose [Resource Includes](../windows/resource-includes-dialog-box.md) from the shortcut menu.  
   
     > [!NOTE]
-    >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to--create-a-resource-script-file.md).  
+    >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
 2.  In the **Symbol header file** box, type the new name for the include file.  
   

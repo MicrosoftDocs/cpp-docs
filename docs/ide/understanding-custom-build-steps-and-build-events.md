@@ -1,13 +1,13 @@
 ---
 title: "Understanding Custom Build Steps and Build Events"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -22,6 +22,7 @@ helpviewer_keywords:
   - "builds [C++], custom build steps"
 ms.assetid: beb2f017-3e9f-4b2c-9b57-2572fd2628e4
 caps.latest.revision: 12
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,10 +44,10 @@ translation.priority.ht:
 From within the Visual C++ development environment, there are three basic ways to customize the build process:  
   
  **Custom Build Steps**  
- A custom build step is a build rule associated with a project. A custom build step can specify a command line to execute, any additional input or output files, and a message to display. For more information, see [How to: Add a Custom Build Step to MSBuild Projects](../build/how-to--add-a-custom-build-step-to-msbuild-projects.md).  
+ A custom build step is a build rule associated with a project. A custom build step can specify a command line to execute, any additional input or output files, and a message to display. For more information, see [How to: Add a Custom Build Step to MSBuild Projects](../build/how-to-add-a-custom-build-step-to-msbuild-projects.md).  
   
  **Custom Build Tools**  
- A custom build tool is a build rule associated with one or more files. A custom build step can pass input files to a custom build tool, which results in one or more output files. For example, the help files in an MFC application are built with a custom build tool. For more information, see [How to: Add Custom Build Tools to MSBuild Projects](../build/how-to--add-custom-build-tools-to-msbuild-projects.md) and [Specifying Custom Build Tools](../ide/specifying-custom-build-tools.md).  
+ A custom build tool is a build rule associated with one or more files. A custom build step can pass input files to a custom build tool, which results in one or more output files. For example, the help files in an MFC application are built with a custom build tool. For more information, see [How to: Add Custom Build Tools to MSBuild Projects](../build/how-to-add-custom-build-tools-to-msbuild-projects.md) and [Specifying Custom Build Tools](../ide/specifying-custom-build-tools.md).  
   
  **Build Events**  
  Build events let you customize a project's build. There are three build events: *pre-build*, *pre-link*, and *post-build*. A build event lets you specify an action to occur at a specific time in the build process. For example, you could use a build event to register a file with **regsvr32.exe** after the project finishes building. For more information, see [Specifying Build Events](../ide/specifying-build-events.md).  
@@ -82,6 +83,6 @@ From within the Visual C++ development environment, there are three basic ways t
  The `custom build step on the project` and a `post-build event` run sequentially after all other build processes finish.  
   
 ## See Also  
- [Building C++ Projects in Visual Studio](../ide/building-c---projects-in-visual-studio.md)   
+ [Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md)   
  [Common Macros for Build Commands and Properties](../ide/common-macros-for-build-commands-and-properties.md)   
- [Tool Build Order Dialog Box](assetId:///6204c5b1-7ce9-4948-9ff6-0268642ee14c)
+ [Tool Build Order Dialog Box](http://msdn.microsoft.com/en-us/6204c5b1-7ce9-4948-9ff6-0268642ee14c)

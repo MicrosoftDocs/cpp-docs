@@ -1,13 +1,13 @@
 ---
 title: "Control Containment Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.atl.controls.containment"
@@ -16,7 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "control containment classes"
 ms.assetid: e0812aee-c078-4ced-b967-247976552b9a
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,16 +38,17 @@ translation.priority.ht:
 # Control Containment Classes
 The following classes provide containment support for hosting controls:  
   
--   [CAxWindow](../atl/caxwindow-class.md) Provides methods for manipulating a window that hosts an ActiveX control.  
+-   [CAxWindow](../atl/reference/caxwindow-class.md) Provides methods for manipulating a window that hosts an ActiveX control.  
   
--   [CAxWindow2T](../atl/caxwindow2t-class.md) Provides methods for manipulating a window that hosts an ActiveX control and also has support for hosting licensed ActiveX controls.  
+-   [CAxWindow2T](../atl/reference/caxwindow2t-class.md) Provides methods for manipulating a window that hosts an ActiveX control and also has support for hosting licensed ActiveX controls.  
   
--   [IAxWinAmbientDispatch](../atl/iaxwinambientdispatch-interface.md) Call the methods on this interface to set the ambient properties available to a hosted control.  
+-   [IAxWinAmbientDispatch](../atl/reference/iaxwinambientdispatch-interface.md) Call the methods on this interface to set the ambient properties available to a hosted control.  
   
--   [IAxWinHostWindow](../atl/iaxwinhostwindow-interface.md) Call the methods on this interface to create and/or attach a control to a host object, or to get an interface from a hosted control.  
+-   [IAxWinHostWindow](../atl/reference/iaxwinhostwindow-interface.md) Call the methods on this interface to create and/or attach a control to a host object, or to get an interface from a hosted control.  
   
 ## Related Articles  
  [ATL Control Containment FAQ](../atl/atl-control-containment-faq.md)  
   
 ## See Also  
  [Class Overview](../atl/atl-class-overview.md)
+

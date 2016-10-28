@@ -1,13 +1,13 @@
 ---
 title: "SemaphoreTraits Structure"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SemaphoreTraits"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "SemaphoreTraits structure"
 ms.assetid: eddb8576-d063-409b-9201-cc87ca5d111e
 caps.latest.revision: 3
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -50,7 +51,7 @@ struct SemaphoreTraits : HANDLENullTraits;
   
 |Name|Description|  
 |----------|-----------------|  
-|[SemaphoreTraits::Unlock Method](../windows/semaphoretraits--unlock-method.md)|Releases control of a shared resource.|  
+|[SemaphoreTraits::Unlock Method](../windows/semaphoretraits-unlock-method.md)|Releases control of a shared resource.|  
   
 ## Inheritance Hierarchy  
  `HANDLENullTraits`  
@@ -63,4 +64,4 @@ struct SemaphoreTraits : HANDLENullTraits;
  **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
   
 ## See Also  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft--wrl--wrappers--handletraits-namespace.md)
+ [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

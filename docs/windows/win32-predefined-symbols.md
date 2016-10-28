@@ -1,13 +1,13 @@
 ---
 title: "Win32 Predefined Symbols"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "Windows API [C++], predefined symbols"
 ms.assetid: 45c8e193-ee2a-4024-bfc2-34d1ec9c9239
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -59,4 +60,4 @@ These symbols are defined in the Win32 header files, and they support standard W
   
 ## See Also  
  [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)   
- [Symbols: Resource Identifiers](../mfc/symbols--resource-identifiers.md)
+ [Symbols: Resource Identifiers](../mfc/symbols-resource-identifiers.md)

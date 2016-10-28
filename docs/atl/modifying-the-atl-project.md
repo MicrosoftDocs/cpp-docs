@@ -1,13 +1,13 @@
 ---
 title: "Modifying the ATL Project"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "Dialog editor, working with composite controls"
   - "composite controls, adding controls"
 ms.assetid: 59984518-748f-4b8b-875f-3e97d22d0b0f
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,4 +44,5 @@ At this point, your composite control project implements the necessary objects f
   
 ## See Also  
  [Composite Control Fundamentals](../atl/atl-composite-control-fundamentals.md)   
- [How to: Create a Resource Script File](../windows/how-to--create-a-resource-script-file.md)
+ [How to: Create a Resource Script File](../windows/how-to-create-a-resource-script-file.md)
+

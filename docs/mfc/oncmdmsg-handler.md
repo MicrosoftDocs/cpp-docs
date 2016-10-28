@@ -1,13 +1,13 @@
 ---
 title: "OnCmdMsg Handler"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "OnCmdMsg"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "handlers, OnCmdMessage"
   - "OnCmdMessage method"
 ms.assetid: 8df07024-506f-47e7-bba9-1c3bc5ad8ab6
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -47,3 +48,4 @@ To accomplish the routing of commands, each command target calls the `OnCmdMsg` 
   
 ## See Also  
  [How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)
+

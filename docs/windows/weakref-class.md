@@ -1,13 +1,13 @@
 ---
 title: "WeakRef Class"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "client/Microsoft::WRL::WeakRef"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "WeakRef class"
 ms.assetid: 572be703-c641-496c-8af5-ad6164670ba1
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -49,7 +50,7 @@ class WeakRef : public ComPtr<IWeakReference>
   
  A WeakRef object is typically used to represent an object whose existence is controlled by an external thread or application. For example, construct a WeakRef object from a reference to a file object. While the file is open, the strong reference is valid. But if the file is closed, the strong reference becomes invalid.  
   
- Note that there is a behavior change in the [As](../windows/weakref--as-method.md), [AsIID](../windows/weakref--asiid-method.md) and [CopyTo](../windows/weakref--copyto-method.md) methods in the Windows 10 SDK. Previously, after calling any of these methods, you could check the WeakRef for `nullptr` to determine if a strong reference was successfully obtained, as in the following code:  
+ Note that there is a behavior change in the [As](../windows/weakref-as-method.md), [AsIID](../windows/weakref-asiid-method.md) and [CopyTo](../windows/weakref-copyto-method.md) methods in the Windows 10 SDK. Previously, after calling any of these methods, you could check the WeakRef for `nullptr` to determine if a strong reference was successfully obtained, as in the following code:  
   
 ```cpp  
 WeakRef wr;  
@@ -85,22 +86,22 @@ if (strongRef == nullptr)
   
 |Name|Description|  
 |----------|-----------------|  
-|[WeakRef::WeakRef Constructor](../windows/weakref--weakref-constructor.md)|Initializes a new instance of the WeakRef class.|  
-|[WeakRef::~WeakRef Destructor](../windows/weakref--~weakref-destructor.md)|Deinitializes the current instance of the WeakRef class.|  
+|[WeakRef::WeakRef Constructor](../windows/weakref-weakref-constructor.md)|Initializes a new instance of the WeakRef class.|  
+|[WeakRef::~WeakRef Destructor](../windows/weakref-tilde-weakref-destructor.md)|Deinitializes the current instance of the WeakRef class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[WeakRef::As Method](../windows/weakref--as-method.md)|Sets the specified ComPtr pointer parameter to represent the specified interface.|  
-|[WeakRef::AsIID Method](../windows/weakref--asiid-method.md)|Sets the specified ComPtr pointer parameter to represent the specified interface ID.|  
-|[WeakRef::CopyTo Method](../windows/weakref--copyto-method.md)|Assigns a pointer to an interface, if available, to the specified pointer variable.|  
+|[WeakRef::As Method](../windows/weakref-as-method.md)|Sets the specified ComPtr pointer parameter to represent the specified interface.|  
+|[WeakRef::AsIID Method](../windows/weakref-asiid-method.md)|Sets the specified ComPtr pointer parameter to represent the specified interface ID.|  
+|[WeakRef::CopyTo Method](../windows/weakref-copyto-method.md)|Assigns a pointer to an interface, if available, to the specified pointer variable.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[WeakRef::operator& Operator](../windows/weakref--operator--operator.md)|Returns a ComPtrRef object that represents the current WeakRef object.|  
+|[WeakRef::operator& Operator](../windows/weakref-operator-ampersand-operator.md)|Returns a ComPtrRef object that represents the current WeakRef object.|  
   
 ## Inheritance Hierarchy  
  `ComPtr`  
@@ -113,4 +114,4 @@ if (strongRef == nullptr)
  **Namespace:** Microsoft::WRL  
   
 ## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft--wrl-namespace.md)
+ [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

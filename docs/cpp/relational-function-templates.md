@@ -1,13 +1,13 @@
 ---
 title: "Relational Function Templates"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "relational function templates"
 ms.assetid: 57893a51-9adb-41fc-941d-2ca97687db2a
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -108,4 +109,4 @@ template<typename _Interface,
  **END Microsoft Specific**  
   
 ## See Also  
- [_com_ptr_t Class](../cpp/_com_ptr_t-class.md)
+ [_com_ptr_t Class](../cpp/com-ptr-t-class.md)

@@ -1,13 +1,13 @@
 ---
 title: "Differences Between Applications and DLLs"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "applications [C++], vs. DLLs"
 ms.assetid: 8f271523-d8d0-4ad1-84d2-0c5645d7fd5b
 caps.latest.revision: 8
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -53,13 +54,13 @@ Even though DLLs and applications are both executable program modules, they diff
   
 -   [The advantages of using DLLs](../build/advantages-of-using-dlls.md)  
   
--   [Non-MFC DLLs: Overview](../build/non-mfc-dlls--overview.md)  
+-   [Non-MFC DLLs: Overview](../build/non-mfc-dlls-overview.md)  
   
 -   [Regular DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)  
   
 -   [Regular DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
--   [Extension DLLs: Overview](../build/extension-dlls--overview.md)  
+-   [Extension DLLs: Overview](../build/extension-dlls-overview.md)  
   
 ## See Also  
- [DLLs in Visual C++](../build/dlls-in-visual-c--.md)
+ [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

@@ -1,13 +1,13 @@
 ---
 title: "Results of Calling Example"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "results, __stdcall call"
 ms.assetid: aa70a7cb-ba1d-4aa6-bd0a-ba783da2e642
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -61,4 +62,4 @@ The __fastcall calling convention
 ### END Microsoft Specific  
   
 ## See Also  
- [Calling Example: Function Prototype and Call](../cpp/calling-example--function-prototype-and-call.md)
+ [Calling Example: Function Prototype and Call](../cpp/calling-example-function-prototype-and-call.md)

@@ -1,20 +1,21 @@
 ---
 title: "Customization for MFC"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "customizations, MFC Extensions"
 ms.assetid: 3b1b7532-8cc9-48dc-9bbe-7fd4060530b5
-caps.latest.revision: 19
+caps.latest.revision: 21
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -41,13 +42,13 @@ This topic provides tips for customizing an MFC application.
 ## Class-Specific Customizations  
  Additional customization tips can be found in the following topics:  
   
--   [CBasePane Class](../mfcref/cbasepane-class.md)  
+-   [CBasePane Class](../mfc/reference/cbasepane-class.md)  
   
--   [CDockablePane Class](../mfcref/cdockablepane-class.md)  
+-   [CDockablePane Class](../mfc/reference/cdockablepane-class.md)  
   
--   [CDockingManager Class](../mfcref/cdockingmanager-class.md)  
+-   [CDockingManager Class](../mfc/reference/cdockingmanager-class.md)  
   
--   [CMFCBaseTabCtrl Class](../mfcref/cmfcbasetabctrl-class.md)  
+-   [CMFCBaseTabCtrl Class](../mfc/reference/cmfcbasetabctrl-class.md)  
   
 ## Additional Customization Tips  
  [Keyboard and Mouse Customization](../mfc/keyboard-and-mouse-customization.md)  
@@ -57,3 +58,4 @@ This topic provides tips for customizing an MFC application.
 ## See Also  
  [MFC Desktop Applications](../mfc/mfc-desktop-applications.md)   
  [Security Implications of Customization](../mfc/security-implications-of-customization.md)
+

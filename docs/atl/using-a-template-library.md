@@ -1,20 +1,21 @@
 ---
 title: "Using a Template Library"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "template libraries"
 ms.assetid: 5e80ec6e-a61c-41ce-b34b-9a6252c46265
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,3 +40,4 @@ A template is somewhat like a macro. As with a macro, invoking a template causes
   
 ## See Also  
  [Introduction to ATL](../atl/introduction-to-atl.md)
+

@@ -1,13 +1,13 @@
 ---
 title: "Initializers"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "initializers, array element"
 ms.assetid: ce301ed8-aa1c-47b2-bb39-9f0541b4af85
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -106,7 +107,7 @@ An initializer specifies the initial value of a variable. You can initialize var
   
 -   Pointers are initialized to `nullptr`.  
   
--   Arrays, [POD](../stdcpplib/is_pod-class.md) classes, structs, and unions have their members initialized to a zero value.  
+-   Arrays, [POD](../standard-library/is-pod-class.md) classes, structs, and unions have their members initialized to a zero value.  
   
  Zero initialization is performed at different times:  
   
@@ -283,7 +284,7 @@ regex r = "a.*b"; // the constructor is explicit; same error
 shared_ptr<int> sp = new int(1729); // the constructor is explicit; same error  
 ```  
   
- In some cases, if the copy constructor of the class is deleted or inaccessible, copy initialization causes a compiler error. See [(NOTINBUILD) Explicit Initialization](assetId:///c89724f8-ddd3-4d77-b86d-77fcd8bd8595) for more information.  
+ In some cases, if the copy constructor of the class is deleted or inaccessible, copy initialization causes a compiler error. See [(NOTINBUILD) Explicit Initialization](http://msdn.microsoft.com/en-us/c89724f8-ddd3-4d77-b86d-77fcd8bd8595) for more information.  
   
 ### Direct initialization  
  Direct initialization is initialization using (non-empty) braces or parentheses. Unlike copy initialization, it can invoke explicit constructors. It occurs in the following cases:  
@@ -542,7 +543,7 @@ Decision Graph for Initialization of Reference Types
  References that are not qualified with either the **const** or `volatile` keyword can be initialized only with objects declared as neither **const** nor `volatile`.  
   
 ### Initialization of external variables  
- Declarations of automatic, register, static, and external variables can contain initializers. However, declarations of external variables can contain initializers only if the variables are not declared as `extern`. For more information, see [External](../notintoc/external.md).  
+ Declarations of automatic, register, static, and external variables can contain initializers. However, declarations of external variables can contain initializers only if the variables are not declared as `extern`. For more information, see [External](../misc/external.md).  
   
 ## See Also  
- [(NOTINBUILD)Declarators](assetId:///8a7b9b51-92bd-4ac0-b3fe-0c4abe771838)
+ [(NOTINBUILD)Declarators](http://msdn.microsoft.com/en-us/8a7b9b51-92bd-4ac0-b3fe-0c4abe771838)

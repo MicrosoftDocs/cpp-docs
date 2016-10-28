@@ -1,13 +1,13 @@
 ---
 title: "DCOMCNFG"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "DCOMCNFG"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "DCOMCNFG utility"
   - "DCOM, configuring in ATL"
 ms.assetid: 5a8126e9-ef27-40fb-a66e-9dce8d1a7e80
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -62,3 +63,4 @@ translation.priority.ht:
   
 ## See Also  
  [Services](../atl/atl-services.md)
+

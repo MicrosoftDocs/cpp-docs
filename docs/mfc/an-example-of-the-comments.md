@@ -1,13 +1,13 @@
 ---
 title: "An Example of the Comments"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "comments, MFC"
   - "examples [MFC], code comments"
 ms.assetid: eb8ddea2-74de-4d5c-93d6-596f7c5e58a7
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,14 +39,15 @@ translation.priority.ht:
 # An Example of the Comments
 The following partial listing of class `CChildFrame` uses most of the standard comments that MFC employs in its classes to divide class members by the ways they are used:  
   
- [!code[NVC_MFCListView#5](../atl/codesnippet/CPP/an-example-of-the-comments_1.h)]  
+ [!code-cpp[NVC_MFCListView#5](../atl/reference/codesnippet/CPP/an-example-of-the-comments_1.h)]  
   
  These comments consistently mark sections of the class declaration that contain similar kinds of class members. Keep in mind that these are MFC conventions, not set rules.  
   
 ## See Also  
  [Using the MFC Source Files](../mfc/using-the-mfc-source-files.md)   
- [// Implementation Comment](../mfc/---implementation-comment.md)   
- [// Constructors Comment](../mfc/---constructors-comment.md)   
- [// Attributes Comment](../mfc/---attributes-comment.md)   
- [// Operations Comment](../mfc/---operations-comment.md)   
- [// Overridables Comment](../mfc/---overridables-comment.md)
+ [// Implementation Comment](../mfc/decrement-implementation-comment.md)   
+ [// Constructors Comment](../mfc/decrement-constructors-comment.md)   
+ [// Attributes Comment](../mfc/decrement-attributes-comment.md)   
+ [// Operations Comment](../mfc/decrement-operations-comment.md)   
+ [// Overridables Comment](../mfc/decrement-overridables-comment.md)
+

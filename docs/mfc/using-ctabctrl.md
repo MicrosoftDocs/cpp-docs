@@ -1,13 +1,13 @@
 ---
 title: "Using CTabCtrl"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "CTabCtrl"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "CTabCtrl class, using"
   - "tab controls, using"
 ms.assetid: 6bda6798-0085-4c09-a5ea-fe0e97af5c95
-caps.latest.revision: 11
+caps.latest.revision: 13
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -36,11 +37,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Using CTabCtrl
-A "tab control" is analogous to the dividers in a notebook or the labeled folders in a file cabinet. Use the tab control, represented by class [CTabCtrl](../mfcref/ctabctrl-class.md), to show multiple pages of information or controls to a user, one at a time, in a format that suggests a peer or logical relationship between each page.  
+A "tab control" is analogous to the dividers in a notebook or the labeled folders in a file cabinet. Use the tab control, represented by class [CTabCtrl](../mfc/reference/ctabctrl-class.md), to show multiple pages of information or controls to a user, one at a time, in a format that suggests a peer or logical relationship between each page.  
   
  For more information on tab controls, see [Tab Controls](http://msdn.microsoft.com/library/windows/desktop/bb760550) in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Tab Controls and Property Sheets](../mfc/tab-controls-and-property-sheets.md)  
   
@@ -57,4 +58,5 @@ A "tab control" is analogous to the dividers in a notebook or the labeled folder
 -   [Processing Tab Control Notification Messages](../mfc/processing-tab-control-notification-messages.md)  
   
 ## See Also  
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

@@ -1,13 +1,13 @@
 ---
 title: "Commonly Added Member Functions"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "MFC dialog boxes, control-notification messages"
   - "dialog classes, commonly added member functions"
 ms.assetid: f6bd50e8-872a-4039-9996-a85bfccea18d
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Commonly Added Member Functions
-If your dialog box contains pushbuttons other than OK or Cancel, you need to write message-handler member functions in your dialog class to respond to the control-notification messages they generate. For an example, see the [Scribble](../top/visual-c---samples.md) sample program. You can also handle control-notification messages from other controls in your dialog box.  
+If your dialog box contains pushbuttons other than OK or Cancel, you need to write message-handler member functions in your dialog class to respond to the control-notification messages they generate. For an example, see the [Scribble](../top/visual-cpp-samples.md) sample program. You can also handle control-notification messages from other controls in your dialog box.  
   
 ## See Also  
  [Dialog Boxes](../mfc/dialog-boxes.md)   

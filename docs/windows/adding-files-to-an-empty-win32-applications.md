@@ -1,13 +1,13 @@
 ---
 title: "Adding Files to an Empty Win32 Applications"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "files [C++], adding to projects"
 ms.assetid: 070098e8-0396-49fe-a697-3daa2f1be6de
 caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -50,8 +51,8 @@ translation.priority.mt:
  To add files that are neither source, header, or resource files to your project, right-click the Solution node in Solution Explorer and add the files to the project in the same manner. A Miscellaneous folder will be created to hold the other files in your project.  
   
 > [!NOTE]
->  Before building your project, you will need to specify build options for these files so that they are included correctly in your finished application. For more information, see [Specifying Project Settings with Property Pages](../ide/property-pages--visual-c---.md) and [Building a C/C++ Program](../Topic/Building%20C-C++%20Programs.md).  
+>  Before building your project, you will need to specify build options for these files so that they are included correctly in your finished application. For more information, see [Specifying Project Settings with Property Pages](../ide/property-pages-visual-cpp.md) and [Building a C/C++ Program](../build/building-c-cpp-programs.md).  
   
 ## See Also  
  [Creating an Empty Windows Desktop Application](../windows/creating-an-empty-windows-desktop-application.md)   
- [Deploying Applications](assetId:///4ff8881d-0daf-47e7-bfe7-774c625031b4)
+ [Deploying Applications](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)

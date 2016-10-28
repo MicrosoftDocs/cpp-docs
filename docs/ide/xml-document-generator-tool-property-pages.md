@@ -1,13 +1,13 @@
 ---
 title: "XML Document Generator Tool Property Pages"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "VC.Project.VCXDCMakeTool.ValidateIntelliSense"
@@ -19,6 +19,7 @@ dev_langs:
   - "C++"
 ms.assetid: 645912b5-197a-4c36-ba58-64df09444ca0
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # XML Document Generator Tool Property Pages
-The XML Document Generator Tool property page exposes the functionality of xdcmake.exe. xdcmake.exe merges .xdc files into an .xml file when your source code contains documentation comments and [/doc (Process Documentation Comments) (C/C++)](../buildref/-doc--process-documentation-comments---c-c---.md) is specified,. See [Recommended Tags for Documentation Comments](../ide/recommended-tags-for-documentation-comments--visual-c---.md) for information on adding documentation comments to source code.  
+The XML Document Generator Tool property page exposes the functionality of xdcmake.exe. xdcmake.exe merges .xdc files into an .xml file when your source code contains documentation comments and [/doc (Process Documentation Comments) (C/C++)](../build/reference/doc-process-documentation-comments-c-cpp.md) is specified,. See [Recommended Tags for Documentation Comments](../ide/recommended-tags-for-documentation-comments-visual-cpp.md) for information on adding documentation comments to source code.  
   
 > [!NOTE]
 >  xdcmake.exe options in the development environment (property pages) differ from the options when xdcmake.exe is used at the command line. For information on using xdcmake.exe at the command line, see [XDCMake Reference](../ide/xdcmake-reference.md).  
@@ -56,5 +57,5 @@ The XML Document Generator Tool property page exposes the functionality of xdcma
  If your project has a dependency on a .lib project in the solution, you can process .xdc files from the .lib project into the .xml files for the current project.  
   
 ## See Also  
- [Property Pages](../ide/property-pages--visual-c---.md)   
- [Property Pages](../ide/property-pages--visual-c---.md)
+ [Property Pages](../ide/property-pages-visual-cpp.md)   
+ [Property Pages](../ide/property-pages-visual-cpp.md)

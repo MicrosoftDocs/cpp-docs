@@ -1,13 +1,13 @@
 ---
 title: "sizeof Operator"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "sizeof_cpp"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "sizeof operator"
 ms.assetid: 8bc3b6fb-54a1-4eb7-ada0-05f8c5efc532
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -91,7 +92,7 @@ The length of Hello, world! is: 14
 The size of the pointer is 4  
 ```  
   
- When the `sizeof` operator is applied to a `class`, `struct`, or `union` type, the result is the number of bytes in an object of that type, plus any padding added to align members on word boundaries. The result does not necessarily correspond to the size calculated by adding the storage requirements of the individual members. The [/Zp](../buildref/-zp--struct-member-alignment-.md) compiler option and the [pack](../c/pack.md) pragma affect alignment boundaries for members.  
+ When the `sizeof` operator is applied to a `class`, `struct`, or `union` type, the result is the number of bytes in an object of that type, plus any padding added to align members on word boundaries. The result does not necessarily correspond to the size calculated by adding the storage requirements of the individual members. The [/Zp](../build/reference/zp-struct-member-alignment.md) compiler option and the [pack](../preprocessor/pack.md) pragma affect alignment boundaries for members.  
   
  The `sizeof` operator never yields 0, even for an empty class.  
   
@@ -125,4 +126,4 @@ sizeof array / sizeof array[0]
   
 ## See Also  
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   
- [Keywords](../cpp/keywords--c---.md)
+ [Keywords](../cpp/keywords-cpp.md)

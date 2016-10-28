@@ -1,18 +1,19 @@
 ---
 title: "Name Resolution for Locally Declared Names"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
 ms.assetid: 743b88f3-de11-48f4-ae83-931449ea3886
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -103,7 +104,10 @@ int main() {
 }  
 ```  
   
- **Z::Z()**   
+```Output  
+Z::Z()  
+```  
+  
 ## Example  
  When defining a template function or member function outside the namespace in which the template was declared, the template argument takes precedence over the names of other members of the namespace.  
   
@@ -133,7 +137,10 @@ int main() {
 }  
 ```  
   
- **C\<T>::g**   
+```Output  
+C<T>::g  
+```  
+  
 ## Example  
  In definitions that are outside of the template class declaration, if a template class has a base class that does not depend on a template argument and if the base class or one of its members has the same name as a template argument, then the base class or member name hides the template argument.  
   
@@ -166,7 +173,10 @@ int main() {
 }  
 ```  
   
- **Base**  
-**1**   
+```Output  
+Base  
+1  
+```  
+  
 ## See Also  
  [Name Resolution](../cpp/templates-and-name-resolution.md)

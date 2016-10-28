@@ -1,13 +1,13 @@
 ---
 title: "Using CImageList"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "CImageList"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "image list control"
   - "CImageList class, using"
 ms.assetid: 3d2a909e-d641-46b7-aada-81cab1a29b41
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -36,11 +37,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Using CImageList
-An image list, represented by class [CImageList](../mfcref/cimagelist-class.md), is a collection of same-sized images, each of which can be referred to by its index. Image lists are used to efficiently manage large sets of icons or bitmaps. Image lists are not themselves controls since they are not windows; however, they are used with several different types of controls, including list controls ([CListCtrl](../mfcref/clistctrl-class.md)), tree controls ([CTreeCtrl](../mfcref/ctreectrl-class.md)), and tab controls ([CTabCtrl](../mfcref/ctabctrl-class.md)).  
+An image list, represented by class [CImageList](../mfc/reference/cimagelist-class.md), is a collection of same-sized images, each of which can be referred to by its index. Image lists are used to efficiently manage large sets of icons or bitmaps. Image lists are not themselves controls since they are not windows; however, they are used with several different types of controls, including list controls ([CListCtrl](../mfc/reference/clistctrl-class.md)), tree controls ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)), and tab controls ([CTabCtrl](../mfc/reference/ctabctrl-class.md)).  
   
  All images in an image list are contained in a single, wide bitmap in screen-device format. An image list may also include a monochrome bitmap that contains masks used to draw images transparently (icon style). `CImageList` provides member functions that enable you to draw images, create and destroy image lists, add and remove images, replace images, merge images, and drag images.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Types of Image Lists](../mfc/types-of-image-lists.md)  
   
@@ -57,4 +58,5 @@ An image list, represented by class [CImageList](../mfcref/cimagelist-class.md),
 -   [Image Information in Image Lists](../mfc/image-information-in-image-lists.md)  
   
 ## See Also  
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

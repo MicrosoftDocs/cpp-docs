@@ -1,13 +1,13 @@
 ---
 title: "Exporting from a DLL Using DEF Files"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "exporting DLLs [C++], DEF files"
 ms.assetid: 9d31eda2-184e-47de-a2ee-a93ebd603f8e
 caps.latest.revision: 7
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -54,11 +55,11 @@ EXPORTS
    Min   @4  
 ```  
   
- If you use the [MFC DLL Wizard](../mfcref/mfc-dll-wizard.md) to create an MFC DLL, the wizard creates a skeleton .def file for you and automatically adds it to your project. Add the names of the functions to be exported to this file. For non-MFC DLLs, you must create the .def file yourself and add it to your project.  
+ If you use the [MFC DLL Wizard](../mfc/reference/mfc-dll-wizard.md) to create an MFC DLL, the wizard creates a skeleton .def file for you and automatically adds it to your project. Add the names of the functions to be exported to this file. For non-MFC DLLs, you must create the .def file yourself and add it to your project.  
   
- If you are exporting functions in a C++ file, you have to either place the decorated names in the .def file or define your exported functions with standard C linkage by using extern "C". If you need to place the decorated names in the .def file, you can obtain them by using the [DUMPBIN](../buildref/dumpbin-reference.md) tool or by using the linker [/MAP](../buildref/-map--generate-mapfile-.md) option. Note that the decorated names produced by the compiler are compiler specific. If you place the decorated names produced by the Visual C++ compiler into a .def file, applications that link to your DLL must also be built using the same version of Visual C++ so that the decorated names in the calling application match the exported names in the DLL's .def file.  
+ If you are exporting functions in a C++ file, you have to either place the decorated names in the .def file or define your exported functions with standard C linkage by using extern "C". If you need to place the decorated names in the .def file, you can obtain them by using the [DUMPBIN](../build/reference/dumpbin-reference.md) tool or by using the linker [/MAP](../build/reference/map-generate-mapfile.md) option. Note that the decorated names produced by the compiler are compiler specific. If you place the decorated names produced by the Visual C++ compiler into a .def file, applications that link to your DLL must also be built using the same version of Visual C++ so that the decorated names in the calling application match the exported names in the DLL's .def file.  
   
- If you are building an [extension DLL](../build/extension-dlls--overview.md), and exporting using a .def file, place the following code at the beginning and end of your header files that contain the exported classes:  
+ If you are building an [extension DLL](../build/extension-dlls-overview.md), and exporting using a .def file, place the following code at the beginning and end of your header files that contain the exported classes:  
   
 ```  
 #undef AFX_DATA  
@@ -76,27 +77,27 @@ EXPORTS
   
 ## What do you want to do?  
   
--   [Export from a DLL using __declspec(dllexport)](../build/exporting-from-a-dll-using-__declspec-dllexport-.md)  
+-   [Export from a DLL using __declspec(dllexport)](../build/exporting-from-a-dll-using-declspec-dllexport.md)  
   
--   [Export and import using AFX_EXT_CLASS](../build/exporting-and-importing-using-afx_ext_class.md)  
+-   [Export and import using AFX_EXT_CLASS](../build/exporting-and-importing-using-afx-ext-class.md)  
   
--   [Export C++ functions for use in C-language executables](../build/exporting-c---functions-for-use-in-c-language-executables.md)  
+-   [Export C++ functions for use in C-language executables](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)  
   
--   [Export C functions for use in C or C++-language executables](../build/exporting-c-functions-for-use-in-c-or-c---language-executables.md)  
+-   [Export C functions for use in C or C++-language executables](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)  
   
 -   [Determine which exporting method to use](../build/determining-which-exporting-method-to-use.md)  
   
--   [Import into an application using __declspec(dllimport)](../build/importing-into-an-application-using-__declspec-dllimport-.md)  
+-   [Import into an application using __declspec(dllimport)](../build/importing-into-an-application-using-declspec-dllimport.md)  
   
 -   [Initialize a DLL](../build/initializing-a-dll.md)  
   
 ## What do you want to know more about?  
   
--   [.def files](../buildref/module-definition--.def--files.md)  
+-   [.def files](../build/reference/module-definition-dot-def-files.md)  
   
--   [Rules for module-definition statements](../buildref/rules-for-module-definition-statements.md)  
+-   [Rules for module-definition statements](../build/reference/rules-for-module-definition-statements.md)  
   
--   [Decorated names](../buildref/decorated-names.md)  
+-   [Decorated names](../build/reference/decorated-names.md)  
   
 -   [Importing and exporting inline functions](../build/importing-and-exporting-inline-functions.md)  
   

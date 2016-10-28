@@ -1,13 +1,13 @@
 ---
 title: "Using Frame Windows"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "frame windows [C++], using"
   - "MFC [C++], frame windows"
 ms.assetid: 4d773238-11f6-4ccf-8114-57310c5aaa2d
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,7 +38,7 @@ translation.priority.ht:
 # Using Frame Windows
 The MFC framework creates document frame windows — and their views and documents — as part of its implementation of the New and Open commands on the File menu. Because the framework does most of the frame-window work for you, you play only a small role in creating, using, and destroying those windows. You can, however, explicitly create your own frame windows and child windows for special purposes.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Creating document frame windows](../mfc/creating-document-frame-windows.md)  
   
@@ -49,11 +50,11 @@ The MFC framework creates document frame windows — and their views and documen
   
 -   [Managing the current view](../mfc/managing-the-current-view.md)  
   
--   [Managing menus, control bars, and accelerators](../mfc/managing-menus--control-bars--and-accelerators.md)  
+-   [Managing menus, control bars, and accelerators](../mfc/managing-menus-control-bars-and-accelerators.md)  
   
 -   [Dragging and dropping files in a frame window](../mfc/dragging-and-dropping-files-in-a-frame-window.md)  
   
--   [Responding to dynamic data exchange (DDE)](../mfc/responding-to-dynamic-data-exchange--dde-.md)  
+-   [Responding to dynamic data exchange (DDE)](../mfc/responding-to-dynamic-data-exchange-dde.md)  
   
 -   [Orchestrating other window actions](../mfc/orchestrating-other-window-actions.md)  
   
@@ -63,3 +64,4 @@ The MFC framework creates document frame windows — and their views and documen
   
 ## See Also  
  [Frame Windows](../mfc/frame-windows.md)
+

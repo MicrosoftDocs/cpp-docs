@@ -1,13 +1,13 @@
 ---
 title: "Include Files for Multithreading"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "multithreading [C++], include files"
 ms.assetid: 98d764f9-71f4-4da5-8f3a-8d2d26e96799
 caps.latest.revision: 8
-ms.author: "mithom"
+author: "mikeblome"
+ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
   - "cs-cz"
@@ -35,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Include Files for Multithreading
-Standard include files declare C run-time library functions as they are implemented in the libraries. If you use the [Full Optimization](../buildref/-ox--full-optimization-.md) (/Ox) or [fastcall Calling Convention](../buildref/-gd---gr---gv---gz--calling-convention-.md) (/Gr) option, the compiler assumes that all functions should be called using the register calling convention. The run-time library functions were compiled using the C calling convention, and the declarations in the standard include files tell the compiler to generate correct external references to these functions.  
+Standard include files declare C run-time library functions as they are implemented in the libraries. If you use the [Full Optimization](../build/reference/ox-full-optimization.md) (/Ox) or [fastcall Calling Convention](../build/reference/gd-gr-gv-gz-calling-convention.md) (/Gr) option, the compiler assumes that all functions should be called using the register calling convention. The run-time library functions were compiled using the C calling convention, and the declarations in the standard include files tell the compiler to generate correct external references to these functions.  
   
 ## See Also  
  [Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)

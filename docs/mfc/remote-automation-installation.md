@@ -1,13 +1,13 @@
 ---
 title: "Remote Automation Installation"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "Remote Automation, installation"
   - "installing Remote Automation"
 ms.assetid: 9a02c9f6-dfc6-4489-b240-a1afe25fa0c5
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -52,7 +53,7 @@ Remote Automation has relatively few components:
 >  Versions of RAC Manager before Visual C++ 5.0 required GUAGE32.OCX and TABCTL32.OCX. Neither of these is required for the version of RAC Manager that ships with Visual C++ Enterprise Edition, version 5.0 or later.  
   
 ## In This Section  
- [The Automation Manager](../mfc/automation-manager--mfc-.md)  
+ [The Automation Manager](../mfc/automation-manager-mfc.md)  
   
  [The Remote Automation Connection Manager](../mfc/remote-automation-connection-manager.md)  
   
@@ -60,3 +61,4 @@ Remote Automation has relatively few components:
   
 ## See Also  
  [Remote Automation](../mfc/remote-automation.md)
+

@@ -1,13 +1,13 @@
 ---
 title: "Working with Project Properties"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "Visual C++ projects, properties"
   - "projects [C++], properties"
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
-caps.latest.revision: 44
+caps.latest.revision: 45
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -60,7 +61,7 @@ In the IDE, all information that is needed to build a project is exposed as     
 ## Build configurations  
  A configuration is just an arbitrary group of properties that are given a name. Visual Studio provides Debug and Release configurations and each sets various properties appropriately for a debug build or release build. You can use the                  **Configuration Manager** to define custom configurations as a convenient way to group properties for a specific flavor of build.  The Property Manager is used for advanced work with properties, but we introduce it here because it helps visualize property configurations. You access it from                  **View &#124;  Property Manager** or                  **View &#124; Other Windows &#124; Property Manager** depending on your settings. It has nodes for each configuration/platform pair in the project. Under each of these nodes are nodes for property sheets (.props files) that set some specific properties for that configuration.  
   
- ![Property Manager](../notintoc/property-manager.md "Property Manager")  
+ ![Property Manager](../misc/property-manager.md "Property Manager")  
   
  If you go to the General pane in the Property Pages (see the illustration above) and set the Character Set property to "Not Set" instead of "Use Unicode" and click                  **OK**,  Property Manager will  show no                  **Unicode Support** property sheet for the current configuration, but it will still be there for other configurations.  
   
@@ -72,10 +73,10 @@ In the IDE, all information that is needed to build a project is exposed as     
 ## Target platforms  
  *Target platform* refers to the kind of device and/or operating system that the executable will run on. You can build a project for more than one platform. The available target platforms for C++ projects depend on the kind of project; they include but are not limited to Win32, x64, ARM, Android, and iOS.     The                   **x86** target platform that you might see in                  **Configuration Manager** is identical to                  **Win32** in native C++ projects. Win32 means 32-bit Windows and                  **x64** means 64-bit Windows.  For more information about these two platforms, see                  [Running 32-bit applications](https://msdn.microsoft.com/library/windows/desktop/aa384249\(v=vs.85\).aspx).  
   
- The                  **Any CPU** target platform value that you might see in                  **Configuration Manager** has no effect on native C++ projects; it is relevant for C++/CLI and other .NET project types. For more information, see                  [/CLRIMAGETYPE (Specify Type of CLR Image)](../buildref/-clrimagetype--specify-type-of-clr-image-.md).  
+ The                  **Any CPU** target platform value that you might see in                  **Configuration Manager** has no effect on native C++ projects; it is relevant for C++/CLI and other .NET project types. For more information, see                  [/CLRIMAGETYPE (Specify Type of CLR Image)](../build/reference/clrimagetype-specify-type-of-clr-image.md).  
   
 ## Property pages  
- As stated earlier, the Visual C++ project system is based on                  MSBuild and the values are stored in the XML project file, default .props and .targets files that (for Visual Studio 2015) are located in                     **\<drive>\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140** and in custom .props files that you might add. We highly recommend that you use NOT edit those files manually, and instead use the property pages in the IDE  to modify all properties, especially those that participate in inheritance, unless you have a very good understanding of MSBuild.  
+ As stated earlier, the Visual C++ project system is based on                  [MSBuild](MSBuild%20Properties.md) and the values are stored in the XML project file, default .props and .targets files that (for Visual Studio 2015) are located in                     **\<drive>\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140** and in custom .props files that you might add. We highly recommend that you use NOT edit those files manually, and instead use the property pages in the IDE  to modify all properties, especially those that participate in inheritance, unless you have a very good understanding of MSBuild.  
   
  The following illustration shows the property pages for a Visual C++ project. In the left pane, the                  **VC++ Directories***rule* is selected, and the right pane lists the properties that are associated with that rule. The                  `$(...)` values are unfortunately called                  *macros*. These are                  *not* C/C++ macros but simply compile-time constants. Macros are discussed in the                  [Property page macros](#bkmkPropertiesVersusMacros) section later in this article.)  
   
@@ -96,9 +97,9 @@ In the IDE, all information that is needed to build a project is exposed as     
   
  You can find more information about each Property Page in these topics:  
   
--   [General Property Page (Project)](../ide/general-property-page--project-.md)  
+-   [General Property Page (Project)](../ide/general-property-page-project.md)  
   
--   [General Property Page (File)](../ide/general-property-page--file-.md)  
+-   [General Property Page (File)](../ide/general-property-page-file.md)  
   
 -   [Command Line Property Pages](../ide/command-line-property-pages.md)  
   
@@ -233,13 +234,13 @@ In the IDE, all information that is needed to build a project is exposed as     
   
 7.  Items (files) together with their metadata. These are always the last word in MSBuild evaluation rules, even if they occur before other properties and imports.  
   
- For more information, see                  MSBuild Properties.  
+ For more information, see                  [MSBuild Properties](MSBuild%20Properties.md).  
   
 ## Adding an include directory to the set of default directories  
  When you add an include directory to a project, it is important not to override all the default directories. The correct way to add a directory is to append the new path, for example “C:\MyNewIncludeDir\”, and then to Append the                  **$(IncludePath)** macro to the property value.  
   
 ## Setting environment variables for a build  
- The Visual C++ compiler (cl.exe) recognizes certain environment variables, specifically LIB, LIBPATH, PATH, and INCLUDE. When you build with the IDE, the properties that are set in the                  [VC++ Directories Property Page](../ide/vc---directories-property-page.md) property page are used to set those environment variables. If LIB, LIBPATH, and INCLUDE values have already been set, for example by a Developer Command Prompt, they are replaced with the values of the corresponding MSBuild properties. The build then prepends the value of the VC++ Directories executable directories property to PATH. You can set a user-defined environment variable by created a user-defined macro and then checking the box that says                  **Set this macro as an environment variable in the build environment**.  
+ The Visual C++ compiler (cl.exe) recognizes certain environment variables, specifically LIB, LIBPATH, PATH, and INCLUDE. When you build with the IDE, the properties that are set in the                  [VC++ Directories Property Page](../ide/vcpp-directories-property-page.md) property page are used to set those environment variables. If LIB, LIBPATH, and INCLUDE values have already been set, for example by a Developer Command Prompt, they are replaced with the values of the corresponding MSBuild properties. The build then prepends the value of the VC++ Directories executable directories property to PATH. You can set a user-defined environment variable by created a user-defined macro and then checking the box that says                  **Set this macro as an environment variable in the build environment**.  
   
 ## Setting environment variables for a debugging session  
  In the left pane of the project's                  **Property Pages** dialog box, expand                  **Configuration Properties** and then select                  **Debugging**.  
@@ -247,4 +248,4 @@ In the IDE, all information that is needed to build a project is exposed as     
  In the right pane, modify the                  **Environment** or                  **Merge Environment** project settings and then choose the                  **OK** button.  
   
 ## See Also  
- [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-c---projects.md)
+ [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)

@@ -1,13 +1,13 @@
 ---
 title: "Active Documents on the Internet"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "application wizards [C++]"
   - "active documents [C++], using application wizards"
 ms.assetid: a46bd8a0-e27a-4116-b1bf-dacdb7ae78d1
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -60,7 +61,7 @@ Active documents provide an extension to traditional embedded objects. The Activ
 -   All applications are displayed in a common frame.  
   
 ## Requirements for Active Documents  
- The interfaces listed in the table below include interfaces already required for embedded servers and several new interfaces specific to Active documents. MFC provides default implementations for most of these interfaces in the [COleServerDoc](../mfcref/coleserverdoc-class.md) class.  
+ The interfaces listed in the table below include interfaces already required for embedded servers and several new interfaces specific to Active documents. MFC provides default implementations for most of these interfaces in the [COleServerDoc](../mfc/reference/coleserverdoc-class.md) class.  
   
 |A document that ...|Implements these interfaces|  
 |-------------------------|---------------------------------|  
@@ -87,3 +88,4 @@ Active documents provide an extension to traditional embedded objects. The Activ
 ## See Also  
  [MFC Internet Programming Tasks](../mfc/mfc-internet-programming-tasks.md)   
  [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
+

@@ -1,13 +1,13 @@
 ---
 title: "AgileActivationFactory Class"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "module/Microsoft::WRL::AgileActivationFactory"
@@ -15,6 +15,7 @@ dev_langs:
   - "C++"
 ms.assetid: fab98f32-bb93-4c0f-badb-49fbddb194b0
 caps.latest.revision: 2
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -54,5 +55,5 @@ class AgileActivationFactory :
  **Namespace:** Microsoft::WRL  
   
 ## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft--wrl-namespace.md)   
+ [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)   
  [ActivationFactory Class](../windows/activationfactory-class.md)

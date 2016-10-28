@@ -1,13 +1,13 @@
 ---
 title: "Data Member Attributes"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "data members [C++]"
 ms.assetid: 95b2397d-1daf-4ae4-8cd0-06956d005b13
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,18 +40,18 @@ The following attributes apply to the data members in a class, coclass, or inter
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|[db_accessor](../windows/db_accessor.md)|Groups **db_column** attributes that participate in `IAccessor`-based binding.|  
-|[db_column](../windows/db_column.md)|Binds a specified column to the rowset.|  
-|[db_command](../windows/db_command.md)|Creates an OLE DB command.|  
-|[db_param](../windows/db_param.md)|Associates the specified member variable with an input or output parameter and delimits the variable.|  
-|[db_source](../windows/db_source.md)|Creates a connection to a data source.|  
-|[db_table](../windows/db_table.md)|Opens an OLE DB table.|  
+|[db_accessor](../windows/db-accessor.md)|Groups **db_column** attributes that participate in `IAccessor`-based binding.|  
+|[db_column](../windows/db-column.md)|Binds a specified column to the rowset.|  
+|[db_command](../windows/db-command.md)|Creates an OLE DB command.|  
+|[db_param](../windows/db-param.md)|Associates the specified member variable with an input or output parameter and delimits the variable.|  
+|[db_source](../windows/db-source.md)|Creates a connection to a data source.|  
+|[db_table](../windows/db-table.md)|Opens an OLE DB table.|  
 |[defaultbind](../windows/defaultbind.md)|Indicates the single, bindable property that best represents the object.|  
 |[displaybind](../windows/displaybind.md)|Indicates a property that should be displayed to the user as bindable.|  
 |[id](../windows/id.md)|Specifies a DISPID for a member function (either a property or a method, in an interface or dispinterface).|  
-|[range](../windows/range--c---.md)|Specifies a range of allowable values for arguments or fields whose values are set at run time.|  
+|[range](../windows/range-cpp.md)|Specifies a range of allowable values for arguments or fields whose values are set at run time.|  
 |[rdx](../windows/rdx.md)|Creates a registry key or modifies an existing registry key.|  
-|[readonly](../windows/readonly--c---.md)|Prohibits assignment to a data member.|  
+|[readonly](../windows/readonly-cpp.md)|Prohibits assignment to a data member.|  
 |[requestedit](../windows/requestedit.md)|Indicates that the property supports the **OnRequestEdit** notification.|  
   
 ## See Also  

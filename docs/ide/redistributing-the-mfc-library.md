@@ -1,13 +1,13 @@
 ---
 title: "Redistributing the MFC Library"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "redistributing MFC library"
 ms.assetid: 72714ce1-385e-4c1c-afa5-96b03e873866
 caps.latest.revision: 32
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -45,24 +46,24 @@ If you dynamically link your application to the MFC library, you must redistribu
   
  If you statically link your application to MFC (that is, if you specify **Use MFC in a Static Library** on the **General** tab in the **Property Pages** dialog box), you do not have to redistribute an MFC DLL. However, although static linking may work for testing and internal deployment of applications, we recommend that you do not use it to redistribute MFC. For more information about the recommended strategies for deploying Visual C++ libraries, see [Choosing a Deployment Method](../ide/choosing-a-deployment-method.md).  
   
- If your application uses the MFC classes that implement the WebBrowser control (for example, [CHtmlView Class](../mfcref/chtmlview-class.md) or [CHtmlEditView Class](../mfcref/chtmleditview-class.md)), we recommend that you also install the most current version of Microsoft Internet Explorer so that the target computer will have the most current common control files. (At a minimum, Internet Explorer 4.0 is required.) Information about how to install Internet Explorer components is available in "Article 185375: How To Create a Single EXE Install of Internet Explorer" on the Microsoft Support website.  
+ If your application uses the MFC classes that implement the WebBrowser control (for example, [CHtmlView Class](../mfc/reference/chtmlview-class.md) or [CHtmlEditView Class](../mfc/reference/chtmleditview-class.md)), we recommend that you also install the most current version of Microsoft Internet Explorer so that the target computer will have the most current common control files. (At a minimum, Internet Explorer 4.0 is required.) Information about how to install Internet Explorer components is available in "Article 185375: How To Create a Single EXE Install of Internet Explorer" on the Microsoft Support website.  
   
- If your application uses the MFC database classes (for example, [CRecordset Class](../mfcref/crecordset-class.md) and [CRecordView Class](../mfcref/crecordview-class.md)), you must redistribute ODBC and any ODBC drivers that your application uses. For more information, see [Redistributing Database Support Files](../ide/redistributing-database-support-files.md).  
+ If your application uses the MFC database classes (for example, [CRecordset Class](../mfc/reference/crecordset-class.md) and [CRecordView Class](../mfc/reference/crecordview-class.md)), you must redistribute ODBC and any ODBC drivers that your application uses. For more information, see [Redistributing Database Support Files](../ide/redistributing-database-support-files.md).  
   
  If your MFC application uses Windows Forms controls, you must redistribute mfcmifc80.dll with your application. This DLL is a strong-name-signed .NET assembly that can be redistributed with an application in its application local folder or by deploying it to the Global Assembly Cache (GAC) by using the [Gacutil.exe (Global Assembly Cache Tool)](../Topic/Gacutil.exe%20\(Global%20Assembly%20Cache%20Tool\).md).  
   
  If you redistribute an MFC DLL, make sure to redistribute the retail version and not the debug version. Debug versions of the DLLs are not redistributable. The names of debug versions of the MFC DLLs end with a "d", for example, Mfc140d.dll.  
   
- You can redistribute MFC by using either VCRedist_*architecture*.exe, merge modules that are installed with Visual Studio, or by deploying the MFC DLL to the same folder as your application. For more information about how to redistribute MFC, see [Redistributing Visual C++ Files](../ide/redistributing-visual-c---files.md).  
+ You can redistribute MFC by using either VCRedist_*architecture*.exe, merge modules that are installed with Visual Studio, or by deploying the MFC DLL to the same folder as your application. For more information about how to redistribute MFC, see [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md).  
   
 ## Installation of Localized MFC Components  
  If you decide to localize your application by installing an MFC localization DLL, you must use the redistributable merge files (.msm). For example, if you want to localize your application on an x86 computer, you must merge Microsoft_VC`<version>`_MFCLOC_x86.msm into the installation package for an x86 computer.  
   
  The redistributable .msm files contain the DLLs that are used for localization. There is one DLL for each supported language. The installation process installs these DLLs in the %windir%\system32\ folder on the target computer.  
   
- For more information about how to localize MFC applications, see [TN057: Localization of MFC Components](../mfc/tn057--localization-of-mfc-components.md), and also [Article 208983: How to Using MFC LOC DLLs](http://go.microsoft.com/fwlink/?LinkId=198025) on the Microsoft Support website.  
+ For more information about how to localize MFC applications, see [TN057: Localization of MFC Components](../mfc/tn057-localization-of-mfc-components.md), and also [Article 208983: How to Using MFC LOC DLLs](http://go.microsoft.com/fwlink/?LinkId=198025) on the Microsoft Support website.  
   
- You can redistribute MFC localization DLLs by deploying the MFC DLL in your application local folder. For more information about how to redistribute Visual C++ libraries, see [Redistributing Visual C++ Files](../ide/redistributing-visual-c---files.md).  
+ You can redistribute MFC localization DLLs by deploying the MFC DLL in your application local folder. For more information about how to redistribute Visual C++ libraries, see [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md).  
   
 ## See Also  
- [Redistributing Visual C++ Files](../ide/redistributing-visual-c---files.md)
+ [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md)

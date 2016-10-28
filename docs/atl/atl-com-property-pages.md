@@ -1,13 +1,13 @@
 ---
 title: "ATL COM Property Pages"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "COM objects, ATL"
   - "ATL property pages"
 ms.assetid: 663c7caa-2e5e-4b5c-b8ea-fd434ceb1654
-caps.latest.revision: 11
+caps.latest.revision: 13
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -54,11 +55,12 @@ COM property pages provide a user interface for setting the properties (or calli
  Lists the steps for implementing property pages, including methods to override. Walks you through a complete example based on the ATLPages sample program.  
   
 ## Related Sections  
- [ATLPages Sample](../top/visual-c---samples.md)  
+ [ATLPages Sample](../top/visual-cpp-samples.md)  
  The sample abstract for the ATLPages sample, which implements a property page using `IPropertyPageImpl`.  
   
- [ATL](../atl/active-template-library--atl--concepts.md)  
+ [ATL](../atl/active-template-library-atl-concepts.md)  
  Provides links to conceptual topics on how to program using the Active Template Library.  
   
 ## See Also  
- [Concepts](../atl/active-template-library--atl--concepts.md)
+ [Concepts](../atl/active-template-library-atl-concepts.md)
+

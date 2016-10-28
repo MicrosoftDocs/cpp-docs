@@ -1,18 +1,19 @@
 ---
 title: "Overview of ARM ABI Conventions"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 ms.assetid: 23f4ae8c-3148-4657-8c47-e933a9f387de
 caps.latest.revision: 6
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -207,7 +208,7 @@ The application binary interface (ABI) for code compiled for Windows on ARM proc
  `wchar_t` is defined to be equivalent to `unsigned short`, to preserve compatibility with other platforms.  
   
 ## Stack Walking  
- Windows code is compiled with frame pointers enabled ([/Oy (Frame-Pointer Omission)](../buildref/-oy--frame-pointer-omission-.md)) to enable fast stack walking. Generally, the r11 register points to the next link in the chain, which is an {r11, lr} pair that specifies the pointer to the previous frame on the stack and the return address. We recommend that your code also enable frame pointers for improved profiling and tracing.  
+ Windows code is compiled with frame pointers enabled ([/Oy (Frame-Pointer Omission)](../build/reference/oy-frame-pointer-omission.md)) to enable fast stack walking. Generally, the r11 register points to the next link in the chain, which is an {r11, lr} pair that specifies the pointer to the previous frame on the stack and the return address. We recommend that your code also enable frame pointers for improved profiling and tracing.  
   
 ## Exception Unwinding  
  Stack unwinding during exception handling is enabled by the use of unwind codes. The unwind codes are a sequence of bytes stored in the .xdata section of the executable image. They describe the operation of the function prologue and epilogue code in an abstract manner, so that the effects of a function’s prologue can be undone in preparation for unwinding to the caller’s stack frame.  
@@ -222,5 +223,5 @@ The application binary interface (ABI) for code compiled for Windows on ARM proc
  The counter is a true cycle counter, not a clock; therefore, the counting frequency varies with the processor frequency. If you want to measure elapsed clock time, use `QueryPerformanceCounter`.  
   
 ## See Also  
- [Common Visual C++ ARM Migration Issues](../build/common-visual-c---arm-migration-issues.md)   
+ [Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md)   
  [ARM Exception Handling](../build/arm-exception-handling.md)

@@ -1,13 +1,13 @@
 ---
 title: "Standard Commands"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -25,7 +25,8 @@ helpviewer_keywords:
   - "Help, menus"
   - "programmer-defined IDs [C++]"
 ms.assetid: 88cf3ab4-79b3-4ac6-9365-8ac561036fbf
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -72,7 +73,8 @@ The framework defines many standard command messages. The IDs for these commands
   
  The framework provides varying levels of support for these commands. Some commands are supported only as defined command IDs, while others are supported with thorough implementations. For example, the framework implements the Open command on the File menu by creating a new document object, displaying an Open dialog box, and opening and reading the file. In contrast, you must implement commands on the Edit menu yourself, since commands like **ID_EDIT_COPY** depend on the nature of the data you are copying.  
   
- For more information about the commands supported and the level of implementation provided, see [Technical Note 22](../mfc/tn022--standard-commands-implementation.md). The standard commands are defined in the file AFXRES.H.  
+ For more information about the commands supported and the level of implementation provided, see [Technical Note 22](../mfc/tn022-standard-commands-implementation.md). The standard commands are defined in the file AFXRES.H.  
   
 ## See Also  
  [User-Interface Objects and Command IDs](../mfc/user-interface-objects-and-command-ids.md)
+

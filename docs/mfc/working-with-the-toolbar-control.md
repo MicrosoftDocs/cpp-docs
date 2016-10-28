@@ -1,13 +1,13 @@
 ---
 title: "Working with the Toolbar Control"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "CToolBarCtrl class, accessing toolbar"
   - "toolbar controls [MFC], accessing"
 ms.assetid: b19409d5-3831-42c7-80ae-195c49dc9085
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -36,22 +37,22 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Working with the Toolbar Control
-This article explains how you can access the [CToolBarCtrl](../mfcref/ctoolbarctrl-class.md) object underlying a [CToolBar](../mfcref/ctoolbar-class.md) for greater control over your toolbars. This is an advanced topic.  
+This article explains how you can access the [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) object underlying a [CToolBar](../mfc/reference/ctoolbar-class.md) for greater control over your toolbars. This is an advanced topic.  
   
 ## Procedures  
   
 #### To access the toolbar common control underlying your CToolBar object  
   
-1.  Call [CToolBar::GetToolBarCtrl](../Topic/CToolBar::GetToolBarCtrl.md).  
+1.  Call [CToolBar::GetToolBarCtrl](../mfc/reference/ctoolbar-class.md#ctoolbar__gettoolbarctrl).  
   
- `GetToolBarCtrl` returns a reference to a [CToolBarCtrl](../mfcref/ctoolbarctrl-class.md) object. You can use the reference to call member functions of the toolbar control class.  
+ `GetToolBarCtrl` returns a reference to a [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) object. You can use the reference to call member functions of the toolbar control class.  
   
 > [!CAUTION]
 >  While calling `CToolBarCtrl` **Get** functions is safe, use caution if you call the **Set** functions. This is an advanced topic. Normally you shouldn't need to access the underlying toolbar control.  
   
-### What do you want to know more about?  
+### What do you want to know more about  
   
--   [Controls (Windows common controls)](../mfc/controls--mfc-.md)  
+-   [Controls (Windows common controls)](../mfc/controls-mfc.md)  
   
 -   [Toolbar fundamentals](../mfc/toolbar-fundamentals.md)  
   
@@ -65,7 +66,7 @@ This article explains how you can access the [CToolBarCtrl](../mfcref/ctoolbarct
   
 -   [Handling tool tip notifications](../mfc/handling-tool-tip-notifications.md)  
   
--   The [CToolBar](../mfcref/ctoolbar-class.md) and [CToolBarCtrl](../mfcref/ctoolbarctrl-class.md) classes  
+-   The [CToolBar](../mfc/reference/ctoolbar-class.md) and [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) classes  
   
 -   [Handling customization notifications](../mfc/handling-customization-notifications.md)  
   
@@ -79,3 +80,4 @@ This article explains how you can access the [CToolBarCtrl](../mfcref/ctoolbarct
   
 ## See Also  
  [MFC Toolbar Implementation](../mfc/mfc-toolbar-implementation.md)
+

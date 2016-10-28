@@ -1,13 +1,13 @@
 ---
 title: "try-finally Statement"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "__try"
@@ -29,6 +29,7 @@ helpviewer_keywords:
   - "structured exception handling, try-finally"
 ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
 caps.latest.revision: 14
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -69,10 +70,10 @@ __finally {
   
  The `try-finally` statement is a Microsoft extension to the C and C++ languages that enables target applications to guarantee execution of cleanup code when execution of a block of code is interrupted. Cleanup consists of such tasks as deallocating memory, closing files, and releasing file handles. The `try-finally` statement is especially useful for routines that have several places where a check is made for an error that could cause premature return from the routine.  
   
- For related information and a code sample, see [try-except Statement](../cpp/try-except-statement.md). For more information on structured exception handling in general, see [Structured Exception Handling](../cpp/structured-exception-handling--c-c---.md). For more information on handling exceptions in managed applications, see [Exception Handling under /clr](../windows/exception-handling---c---component-extensions-.md).  
+ For related information and a code sample, see [try-except Statement](../cpp/try-except-statement.md). For more information on structured exception handling in general, see [Structured Exception Handling](../cpp/structured-exception-handling-c-cpp.md). For more information on handling exceptions in managed applications, see [Exception Handling under /clr](../windows/exception-handling-cpp-component-extensions.md).  
   
 > [!NOTE]
->  Structured exception handling works with Win32 for both C and C++ source files. However, it is not specifically designed for C++. You can ensure that your code is more portable by using C++ exception handling. Also, C++ exception handling is more flexible, in that it can handle exceptions of any type. For C++ programs, it is recommended that you use the C++ exception-handling mechanism ([try, catch, and throw](../cpp/try--throw--and-catch-statements--c---.md) statements).  
+>  Structured exception handling works with Win32 for both C and C++ source files. However, it is not specifically designed for C++. You can ensure that your code is more portable by using C++ exception handling. Also, C++ exception handling is more flexible, in that it can handle exceptions of any type. For C++ programs, it is recommended that you use the C++ exception-handling mechanism ([try, catch, and throw](../cpp/try-throw-and-catch-statements-cpp.md) statements).  
   
  The compound statement after the `__try` clause is the guarded section. The compound statement after the `__finally` clause is the termination handler. The handler specifies a set of actions that execute when the guarded section is exited, regardless of whether the guarded section is exited by an exception (abnormal termination), or by standard fall through (normal termination).  
   
@@ -100,7 +101,7 @@ Order of Termination-Handler Execution
  A `goto` statement can also jump out of the guarded section, but it degrades performance because it invokes stack unwinding. The `__leave` statement is more efficient because it does not cause stack unwinding.  
   
 ## Abnormal Termination  
- Exiting a `try-finally` statement using the [longjmp](../crt/longjmp.md) run-time function is considered abnormal termination. It is illegal to jump into a `__try` statement, but legal to jump out of one. All `__finally` statements that are active between the point of departure (normal termination of the `__try` block) and the destination (the `__except` block that handles the exception) must be run. This is called a local unwind.  
+ Exiting a `try-finally` statement using the [longjmp](../c-runtime-library/reference/longjmp.md) run-time function is considered abnormal termination. It is illegal to jump into a `__try` statement, but legal to jump out of one. All `__finally` statements that are active between the point of departure (normal termination of the `__try` block) and the destination (the `__except` block that handles the exception) must be run. This is called a local unwind.  
   
  If a **try** block is prematurely terminated for any reason, including a jump out of the block, the system executes the associated **finally** block as a part of the process of unwinding the stack. In such cases, the [AbnormalTermination](http://msdn.microsoft.com/library/windows/desktop/ms679265) function returns TRUE if called from within the **finally** block; otherwise, it returns FALSE.  
   
@@ -110,6 +111,6 @@ Order of Termination-Handler Execution
   
 ## See Also  
  [Writing a Termination Handler](../cpp/writing-a-termination-handler.md)   
- [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling--c-c---.md)   
- [Keywords](../cpp/keywords--c---.md)   
+ [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)   
+ [Keywords](../cpp/keywords-cpp.md)   
  [Termination-Handler Syntax](http://msdn.microsoft.com/library/windows/desktop/ms681393)

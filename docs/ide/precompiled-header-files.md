@@ -1,13 +1,13 @@
 ---
 title: "Precompiled Header Files"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - ""stdafx.h""
@@ -22,6 +22,7 @@ helpviewer_keywords:
   - "stdafx.cpp"
 ms.assetid: 8228d87a-5609-41f3-9697-b16094c000e5
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -51,5 +52,5 @@ These files are used to build a precompiled header file *Projname*.pch and a pre
 |Stdafx.cpp|Contains the preprocessor directive `#include "stdafx.h"` and adds include files for precompiled types. Precompiled files of any type, including header files, support faster compilation times by restricting compilation only to those files that require it. Once your project is built the first time, you will notice much faster build times on subsequent builds because of the presence of the precompiled header files.|  
   
 ## See Also  
- [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-c---projects.md)   
- [How to: Specify Project Properties with Property Pages](../notintoc/how-to--specify-project-properties-with-property-pages.md)
+ [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)   
+ [How to: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md)

@@ -1,13 +1,13 @@
 ---
 title: "Data Types Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.atl.datatypes"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "data types classes [C++]"
   - "data types [C++], classes"
 ms.assetid: 29882bab-9174-4dfa-8227-ccfeba80b865
-caps.latest.revision: 11
+caps.latest.revision: 13
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,11 +39,12 @@ translation.priority.ht:
 # Data Types Classes
 The following classes wrap C++ data types:  
   
--   [CComBSTR](../atl/ccombstr-class.md) Wraps the `BSTR` data type.  
+-   [CComBSTR](../atl/reference/ccombstr-class.md) Wraps the `BSTR` data type.  
   
--   [CComVariant](../atl/ccomvariant-class.md) Wraps the **VARIANT** data type.  
+-   [CComVariant](../atl/reference/ccomvariant-class.md) Wraps the **VARIANT** data type.  
   
--   [CComCurrency](../atl/ccomcurrency-class.md) Includes methods and operators for creating and managing a `CURRENCY` object.  
+-   [CComCurrency](../atl/reference/ccomcurrency-class.md) Includes methods and operators for creating and managing a `CURRENCY` object.  
   
 ## See Also  
  [Class Overview](../atl/atl-class-overview.md)
+

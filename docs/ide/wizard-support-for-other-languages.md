@@ -1,13 +1,13 @@
 ---
 title: "Wizard Support for Other Languages"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.appwiz.EastAsianLanguages"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "projects [C++], language support"
 ms.assetid: b653c673-0687-455c-885f-15d7e2f4149d
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Wizard Support for Other Languages
-When you install Visual Studio, the setup application detects the locale listed in your system and installs the appropriate language template or templates for that locale. For example, for Western European locales, setup installs English, French, Italian, Spanish, and German. These languages appear in the **Resource language** list on the [Application Type](../mfcref/application-type--mfc-application-wizard.md) page of the MFC Application Wizard.  
+When you install Visual Studio, the setup application detects the locale listed in your system and installs the appropriate language template or templates for that locale. For example, for Western European locales, setup installs English, French, Italian, Spanish, and German. These languages appear in the **Resource language** list on the [Application Type](../mfc/reference/application-type-mfc-application-wizard.md) page of the MFC Application Wizard.  
   
 ## Language Templates  
  Not all templates are installed on all systems, because the templates are ANSI encoding based, and not all resources can be edited on all systems. For example, by default, you cannot edit Japanese resources on a French system.  
@@ -69,5 +70,5 @@ When you install Visual Studio, the setup application detects the locale listed 
  This behavior differs from systems set up such that the system locale is the same as the language version of Visual Studio. In this case, project files will be created in ANSI in the system code page.  
   
 ## See Also  
- [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-c---projects.md)   
- [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-c---projects.md)
+ [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)   
+ [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)

@@ -1,13 +1,13 @@
 ---
 title: "Class Library Overview"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.classes.mfc"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "class libraries, MFC"
   - "class libraries"
 ms.assetid: 9b0e3152-ac39-4f52-91b4-f20aa3a674aa
-caps.latest.revision: 10
+caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,7 +44,7 @@ This overview categorizes and describes the classes in the Microsoft Foundation 
   
  The library's classes are presented here in the following categories:  
   
--   [Root Class: CObject](../mfc/root-class--cobject.md)  
+-   [Root Class: CObject](../mfc/root-class-cobject.md)  
   
 -   [MFC Application Architecture Classes](../mfc/mfc-application-architecture-classes.md)  
   
@@ -53,17 +54,17 @@ This overview categorizes and describes the classes in the Microsoft Foundation 
   
     -   [Document Classes](../mfc/document-classes.md)  
   
-    -   [View Classes (Architecture)](../mfc/view-classes--architecture-.md)  
+    -   [View Classes (Architecture)](../mfc/view-classes-architecture.md)  
   
-    -   [Frame Window Classes (Architecture)](../mfc/frame-window-classes--architecture-.md)  
+    -   [Frame Window Classes (Architecture)](../mfc/frame-window-classes-architecture.md)  
   
     -   [Document-Template Classes](../mfc/document-template-classes.md)  
   
--   [Window, Dialog, and Control Classes](../mfc/window--dialog--and-control-classes.md)  
+-   [Window, Dialog, and Control Classes](../mfc/window-dialog-and-control-classes.md)  
   
-    -   [Frame Window Classes (Windows)](../mfc/frame-window-classes--windows-.md)  
+    -   [Frame Window Classes (Windows)](../mfc/frame-window-classes-windows.md)  
   
-    -   [View Classes (Windows)](../mfc/view-classes--windows-.md)  
+    -   [View Classes (Windows)](../mfc/view-classes-windows.md)  
   
     -   [Dialog Box Classes](../mfc/dialog-box-classes.md)  
   
@@ -73,15 +74,15 @@ This overview categorizes and describes the classes in the Microsoft Foundation 
   
 -   [Drawing and Printing Classes](../mfc/drawing-and-printing-classes.md)  
   
-    -   [Output (Device Context) Classes](../mfc/output--device-context--classes.md)  
+    -   [Output (Device Context) Classes](../mfc/output-device-context-classes.md)  
   
     -   [Drawing Tool Classes](../mfc/drawing-tool-classes.md)  
   
 -   [Simple Data Type Classes](../mfc/simple-data-type-classes.md)  
   
--   [Array, List, and Map Classes](../mfc/array--list--and-map-classes.md)  
+-   [Array, List, and Map Classes](../mfc/array-list-and-map-classes.md)  
   
-    -   [Template Classes for Arrays, Lists, and Maps](../mfc/template-classes-for-arrays--lists--and-maps.md)  
+    -   [Template Classes for Arrays, Lists, and Maps](../mfc/template-classes-for-arrays-lists-and-maps.md)  
   
     -   [Ready-to-Use Array Classes](../mfc/ready-to-use-array-classes.md)  
   
@@ -135,7 +136,8 @@ This overview categorizes and describes the classes in the Microsoft Foundation 
   
  To see the inheritance of a class, use the [Class Hierarchy Chart](../mfc/hierarchy-chart.md).  
   
- In addition to the classes listed in this overview, the MFC Library contains a number of global functions, global variables, and macros. There is an overview and detailed listing of these in the topic [MFC Macros and Globals](../mfcref/mfc-macros-and-globals.md), which follows the alphabetical reference to the MFC classes.  
+ In addition to the classes listed in this overview, the MFC Library contains a number of global functions, global variables, and macros. There is an overview and detailed listing of these in the topic [MFC Macros and Globals](../mfc/reference/mfc-macros-and-globals.md), which follows the alphabetical reference to the MFC classes.  
   
 ## See Also  
  [MFC Desktop Applications](../mfc/mfc-desktop-applications.md)
+

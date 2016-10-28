@@ -1,13 +1,13 @@
 ---
 title: "Creating the Image Lists"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "image lists [C++], creating for CListCtrl"
   - "lists [C++], image"
 ms.assetid: c2768515-deba-49e8-a6f3-5be6482afb19
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,15 +36,16 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Creating the Image Lists
-Creating image lists is the same whether you use [CListView](../mfcref/clistview-class.md) or [CListCtrl](../mfcref/clistctrl-class.md).  
+Creating image lists is the same whether you use [CListView](../mfc/reference/clistview-class.md) or [CListCtrl](../mfc/reference/clistctrl-class.md).  
   
 > [!NOTE]
 >  You only need image lists if your list control includes the `LVS_ICON` style.  
   
- Use class `CImageList` to create one or more image lists (for full-size icons, small icons, and states). See [CImageList](../mfcref/cimagelist-class.md), and see [List View Image Lists](http://msdn.microsoft.com/library/windows/desktop/bb774736) in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ Use class `CImageList` to create one or more image lists (for full-size icons, small icons, and states). See [CImageList](../mfc/reference/cimagelist-class.md), and see [List View Image Lists](http://msdn.microsoft.com/library/windows/desktop/bb774736) in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
   
- Call [CListCtrl::SetImageList](../Topic/CListCtrl::SetImageList.md) for each image list; pass a pointer to the appropriate `CImageList` object.  
+ Call [CListCtrl::SetImageList](../mfc/reference/clistctrl-class.md#clistctrl__setimagelist) for each image list; pass a pointer to the appropriate `CImageList` object.  
   
 ## See Also  
  [Using CListCtrl](../mfc/using-clistctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

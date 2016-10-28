@@ -1,13 +1,13 @@
 ---
 title: "InterfaceTraits Structure"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "implements/Microsoft::WRL::Details::InterfaceTraits"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "InterfaceTraits structure"
 ms.assetid: ede0c284-19a7-4892-9738-ff3da4923d0a
 caps.latest.revision: 5
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -78,17 +79,17 @@ struct __declspec(novtable) InterfaceTraits<Nil>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[InterfaceTraits::CanCastTo Method](../windows/interfacetraits--cancastto-method.md)|Indicates whether the specified pointer can be cast to a pointer to `Base`.|  
-|[InterfaceTraits::CastToBase Method](../windows/interfacetraits--casttobase-method.md)|Casts the specified pointer to a pointer to `Base`.|  
-|[InterfaceTraits::CastToUnknown Method](../windows/interfacetraits--casttounknown-method.md)|Casts the specified pointer to a pointer to IUnknown.|  
-|[InterfaceTraits::FillArrayWithIid Method](../windows/interfacetraits--fillarraywithiid-method.md)|Assigns the interface ID of `Base` to the array element specified by the index argument.|  
-|[InterfaceTraits::Verify Method](../windows/interfacetraits--verify-method.md)|Verifies that Base is properly derived.|  
+|[InterfaceTraits::CanCastTo Method](../windows/interfacetraits-cancastto-method.md)|Indicates whether the specified pointer can be cast to a pointer to `Base`.|  
+|[InterfaceTraits::CastToBase Method](../windows/interfacetraits-casttobase-method.md)|Casts the specified pointer to a pointer to `Base`.|  
+|[InterfaceTraits::CastToUnknown Method](../windows/interfacetraits-casttounknown-method.md)|Casts the specified pointer to a pointer to IUnknown.|  
+|[InterfaceTraits::FillArrayWithIid Method](../windows/interfacetraits-fillarraywithiid-method.md)|Assigns the interface ID of `Base` to the array element specified by the index argument.|  
+|[InterfaceTraits::Verify Method](../windows/interfacetraits-verify-method.md)|Verifies that Base is properly derived.|  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[InterfaceTraits::IidCount Constant](../windows/interfacetraits--iidcount-constant.md)|Holds the number of interface IDs associated with the current InterfaceTraits object.|  
+|[InterfaceTraits::IidCount Constant](../windows/interfacetraits-iidcount-constant.md)|Holds the number of interface IDs associated with the current InterfaceTraits object.|  
   
 ## Inheritance Hierarchy  
  `InterfaceTraits`  
@@ -99,4 +100,4 @@ struct __declspec(novtable) InterfaceTraits<Nil>;
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft--wrl--details-namespace.md)
+ [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

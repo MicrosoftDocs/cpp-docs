@@ -1,13 +1,13 @@
 ---
 title: "Command Routing Illustration"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "command handling, routing commands"
   - "command routing, OnCmdMsg handler"
 ms.assetid: 4b7b4741-565f-4878-b076-fd85c670f87f
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -51,3 +52,4 @@ To illustrate, consider a command message from a Clear All menu item in an MDI a
   
 ## See Also  
  [How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)
+

@@ -1,13 +1,14 @@
 ---
 title: "Attributes2"
-ms.custom: na
-ms.date: "10/14/2016"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: ""
+ms.date: "10/28/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
 caps.latest.revision: 11
+manager: "ghogen"
 ---
 # Attributes
 In C++11, attributes provide a standardized way to annotate C++ constructs (including but not limited to classes, functions, variables, and blocks) with additional information that may or may not be vendor-specific. A compiler can use this information to generate informational messages, or to apply special logic when compiling the attributed code. The compiler ignores any attributes that it does not recognize, which means that you cannot define your own custom attributes using this syntax. Attributes are enclosed by double square brackets:  

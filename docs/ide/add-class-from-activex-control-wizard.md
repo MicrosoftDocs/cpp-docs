@@ -1,13 +1,13 @@
 ---
 title: "Add Class From ActiveX Control Wizard"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.codewiz.class.axcontrol"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "Add Class from ActiveX Control Wizard [C++]"
 ms.assetid: 668d801c-5fb6-4176-9191-5c38995a4713
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -47,7 +48,7 @@ Use this wizard to add an MFC class from an available ActiveX control. The wizar
 |**File**|The type library is not necessarily registered in the system but is contained in a file. You must provide the file location in **Location**.|  
   
  **Available ActiveX controls**  
- Specifies the ActiveX controls currently registered in the system. Select an ActiveX control from this list to display its interfaces in the **Interfaces** list. See [MFC ActiveX Controls: Distributing ActiveX Controls](../mfc/mfc-activex-controls--distributing-activex-controls.md) for more information about registering ActiveX controls.  
+ Specifies the ActiveX controls currently registered in the system. Select an ActiveX control from this list to display its interfaces in the **Interfaces** list. See [MFC ActiveX Controls: Distributing ActiveX Controls](../mfc/mfc-activex-controls-distributing-activex-controls.md) for more information about registering ActiveX controls.  
   
  If you click **File** under **Add Class From**, this box is unavailable for change.  
   
@@ -85,5 +86,5 @@ Use this wizard to add an MFC class from an available ActiveX control. The wizar
  The wizard does not overwrite a file. If you select the name of an existing file, when you click **Finish**, the wizard prompts you to indicate whether the class implementation should be appended to the contents of the file. Click **Yes** to append the file; click **No** to return to the wizard and specify another file name.  
   
 ## See Also  
- [Adding a Class from an ActiveX Control](../ide/adding-a-class-from-an-activex-control--visual-c---.md)   
- [Automation Clients: Using Type Libraries](../mfc/automation-clients--using-type-libraries.md)
+ [Adding a Class from an ActiveX Control](../ide/adding-a-class-from-an-activex-control-visual-cpp.md)   
+ [Automation Clients: Using Type Libraries](../mfc/automation-clients-using-type-libraries.md)

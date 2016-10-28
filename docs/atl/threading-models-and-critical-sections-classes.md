@@ -1,13 +1,13 @@
 ---
 title: "Threading Models and Critical Sections Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.atl.threads.models"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "threading [ATL], models"
   - "critical sections"
 ms.assetid: 759f05ef-6285-4be6-a2cc-78572dd75146
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,29 +41,30 @@ translation.priority.ht:
 # Threading Models and Critical Sections Classes
 The following classes define a threading model and critical section:  
   
--   [CAtlAutoThreadModule](../atl/catlautothreadmodule-class.md) Implements a thread-pooled, apartment-model COM server.  
+-   [CAtlAutoThreadModule](../atl/reference/catlautothreadmodule-class.md) Implements a thread-pooled, apartment-model COM server.  
   
--   [CAtlAutoThreadModuleT](../atl/catlautothreadmodulet-class.md) Provides methods for implementing a thread-pooled, apartment-model COM server.  
+-   [CAtlAutoThreadModuleT](../atl/reference/catlautothreadmodulet-class.md) Provides methods for implementing a thread-pooled, apartment-model COM server.  
   
--   [CComMultiThreadModel](../atl/ccommultithreadmodel-class.md) Provides thread-safe methods for incrementing and decrementing a variable. Provides a critical section.  
+-   [CComMultiThreadModel](../atl/reference/ccommultithreadmodel-class.md) Provides thread-safe methods for incrementing and decrementing a variable. Provides a critical section.  
   
--   [CComMultiThreadModelNoCS](../atl/ccommultithreadmodelnocs-class.md) Provides thread-safe methods for incrementing and decrementing a variable. Does not provide a critical section.  
+-   [CComMultiThreadModelNoCS](../atl/reference/ccommultithreadmodelnocs-class.md) Provides thread-safe methods for incrementing and decrementing a variable. Does not provide a critical section.  
   
--   [CComSingleThreadModel](../atl/ccomsinglethreadmodel-class.md) Provides methods for incrementing and decrementing a variable. Does not provide a critical section.  
+-   [CComSingleThreadModel](../atl/reference/ccomsinglethreadmodel-class.md) Provides methods for incrementing and decrementing a variable. Does not provide a critical section.  
   
 -   [CComObjectThreadModel](../Topic/CComObjectThreadModel.md) Determines the appropriate threading-model class for a single object class.  
   
 -   [CComGlobalsThreadModel](../Topic/CComGlobalsThreadModel.md) Determines the appropriate threading-model class for an object that is globally available.  
   
--   [CComAutoCriticalSection](../atl/ccomautocriticalsection-class.md) Contains methods for obtaining and releasing a critical section. The critical section is automatically initialized.  
+-   [CComAutoCriticalSection](../atl/reference/ccomautocriticalsection-class.md) Contains methods for obtaining and releasing a critical section. The critical section is automatically initialized.  
   
--   [CComCriticalSection](../atl/ccomcriticalsection-class.md) Contains methods for obtaining and releasing a critical section. The critical section must be explicitly initialized.  
+-   [CComCriticalSection](../atl/reference/ccomcriticalsection-class.md) Contains methods for obtaining and releasing a critical section. The critical section must be explicitly initialized.  
   
--   [CComFakeCriticalSection](../atl/ccomfakecriticalsection-class.md) Mirrors the methods in `CComCriticalSection` without providing a critical section. The methods in `CComFakeCriticalSection` do nothing.  
+-   [CComFakeCriticalSection](../atl/reference/ccomfakecriticalsection-class.md) Mirrors the methods in `CComCriticalSection` without providing a critical section. The methods in `CComFakeCriticalSection` do nothing.  
   
--   [CRTThreadTraits](../atl/crtthreadtraits-class.md) Provides the creation function for a CRT thread. Use this class if the thread will use CRT functions.  
+-   [CRTThreadTraits](../atl/reference/crtthreadtraits-class.md) Provides the creation function for a CRT thread. Use this class if the thread will use CRT functions.  
   
--   [Win32ThreadTraits](../atl/win32threadtraits-class.md) Provides the creation function for a Windows thread. Use this class if the thread will not use CRT functions.  
+-   [Win32ThreadTraits](../atl/reference/win32threadtraits-class.md) Provides the creation function for a Windows thread. Use this class if the thread will not use CRT functions.  
   
 ## See Also  
  [Class Overview](../atl/atl-class-overview.md)
+

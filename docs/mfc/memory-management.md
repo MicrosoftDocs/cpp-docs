@@ -1,13 +1,13 @@
 ---
 title: "Memory Management"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "memory, managing"
   - "memory allocation, MFC"
 ms.assetid: 934ac81b-d630-4232-88e5-ea74f7187987
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,22 +44,23 @@ This group of articles describes how to take advantage of the general-purpose se
   
  For non-MFC information about memory management in programs for Windows, see [Memory Management](http://msdn.microsoft.com/library/windows/desktop/aa366779) in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
--   [Frame allocation](../mfc/memory-management--frame-allocation.md)  
+-   [Frame allocation](../mfc/memory-management-frame-allocation.md)  
   
--   [Heap allocation](../mfc/memory-management--heap-allocation.md)  
+-   [Heap allocation](../mfc/memory-management-heap-allocation.md)  
   
--   [Allocating memory for an array](../mfc/memory-management--examples.md)  
+-   [Allocating memory for an array](../mfc/memory-management-examples.md)  
   
--   [Deallocating memory for an array from the heap](../mfc/memory-management--examples.md)  
+-   [Deallocating memory for an array from the heap](../mfc/memory-management-examples.md)  
   
--   [Allocating memory for a data structure](../mfc/memory-management--examples.md)  
+-   [Allocating memory for a data structure](../mfc/memory-management-examples.md)  
   
--   [Allocating memory for an object](../mfc/memory-management--examples.md)  
+-   [Allocating memory for an object](../mfc/memory-management-examples.md)  
   
--   [Resizable memory blocks](../mfc/memory-management--resizable-memory-blocks.md)  
+-   [Resizable memory blocks](../mfc/memory-management-resizable-memory-blocks.md)  
   
 ## See Also  
  [Concepts](../mfc/mfc-concepts.md)   
  [General MFC Topics](../mfc/general-mfc-topics.md)
+

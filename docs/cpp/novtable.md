@@ -1,13 +1,13 @@
 ---
 title: "novtable"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "novtable"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "novtable __declspec keyword"
   - "__declspec keyword [C++], novtable"
 ms.assetid: cfef09c5-8c1e-4b14-8a72-7d726ded4484
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -69,9 +70,12 @@ int main() {
 }  
 ```  
   
- **In Y**   
+```Output  
+In Y  
+```  
+  
 ## END Microsoft Specific  
   
 ## See Also  
- [__declspec](../cpp/__declspec.md)   
- [Keywords](../cpp/keywords--c---.md)
+ [__declspec](../cpp/declspec.md)   
+ [Keywords](../cpp/keywords-cpp.md)

@@ -1,13 +1,13 @@
 ---
 title: "MFC Internet Programming Basics"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -26,7 +26,8 @@ helpviewer_keywords:
   - "Internet content [C++]"
   - "WinInet classes"
 ms.assetid: 6df2dfd0-6e3f-4587-9d01-2a32f00f8a6f
-caps.latest.revision: 16
+caps.latest.revision: 18
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -49,7 +50,7 @@ Microsoft provides many APIs for programming both client and server applications
   
  ![Client and server applications](../mfc/media/vc38bq1.gif "vc38BQ1")  
   
- MFC provides classes that support Internet programming. You can use [COleControl](../mfcref/colecontrol-class.md) and [CDocObjectServer](../mfcref/cdocobjectserver-class.md) and related MFC classes to write ActiveX controls and Active documents. You can use MFC classes such as [CInternetSession](../mfcref/cinternetsession-class.md), [CFtpConnection](../mfcref/cftpconnection-class.md), and [CAsyncMonikerFile](../mfcref/casyncmonikerfile-class.md) to retrieve files and information using Internet protocols such as FTP, HTTP, and gopher.  
+ MFC provides classes that support Internet programming. You can use [COleControl](../mfc/reference/colecontrol-class.md) and [CDocObjectServer](../mfc/reference/cdocobjectserver-class.md) and related MFC classes to write ActiveX controls and Active documents. You can use MFC classes such as [CInternetSession](../mfc/reference/cinternetsession-class.md), [CFtpConnection](../mfc/reference/cftpconnection-class.md), and [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md) to retrieve files and information using Internet protocols such as FTP, HTTP, and gopher.  
   
 ## In This Section  
   
@@ -75,7 +76,7 @@ Microsoft provides many APIs for programming both client and server applications
   
 -   [Asynchronous Monikers on the Internet](../mfc/asynchronous-monikers-on-the-internet.md)  
   
--   [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions--wininet-.md)  
+-   [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)  
   
 -   [MFC Internet Programming Tasks](../mfc/mfc-internet-programming-tasks.md)  
   
@@ -85,19 +86,20 @@ Microsoft provides many APIs for programming both client and server applications
   
 -   [Testing Internet Applications](../mfc/testing-internet-applications.md)  
   
--   [Internet Security](../mfc/internet-security--c---.md)  
+-   [Internet Security](../mfc/internet-security-cpp.md)  
   
 -   [ATL Support for DHTML Controls](../atl/atl-support-for-dhtml-controls.md)  
   
 ##  <a name="_core_web_sites_for_more_information"></a> Web Sites for More Information  
- For additional information about Microsoft Internet technology, see the [Microsoft Developer Network (MSDN)](http://go.microsoft.com/fwlink/?LinkID=56322) Web site. (Links may change without notice.)  
+ For additional information about Microsoft Internet technology, see the [Microsoft Developer Network (MSDN)](http://go.microsoft.com/fwlink/LinkID=56322) Web site. (Links may change without notice.)  
   
  This Web site for developers contains information on using Microsoft development tools and technologies, and top stories about recent and upcoming conferences. From this page, you can jump to many related developer sites, including the .NET, and XML Developer Centers. You can also download beta SDKs and samples.  
   
- The [World Wide Web Consortium (W3C)](http://go.microsoft.com/fwlink/?LinkID=37125) publishes specifications for HTML, HTTP, CGI, and other World Wide Web technologies.  
+ The [World Wide Web Consortium (W3C)](http://go.microsoft.com/fwlink/LinkID=37125) publishes specifications for HTML, HTTP, CGI, and other World Wide Web technologies.  
   
 ##  <a name="_core_more_internet_help"></a> More Internet Help  
  The OLE section of the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)] contains additional information about OLE programming. This information provides details about using the Win32 WinInet functions directly, rather than through the MFC classes. It also contains overview information about Internet technologies.  
   
 ## See Also  
- [MFC Internet Programming (NIB)](assetId:///0f7a1f3a-385b-4d56-a55b-0d766840c58a)
+ [MFC Internet Programming (NIB)](http://msdn.microsoft.com/en-us/0f7a1f3a-385b-4d56-a55b-0d766840c58a)
+

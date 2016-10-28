@@ -1,13 +1,13 @@
 ---
 title: "Status Bars"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "status bars"
   - "control bars, status bar"
 ms.assetid: fcbc5029-1aab-4e14-adf7-419038a4935e
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ Status bars give your application a place to display messages and useful informa
   
  Create a status bar in your program by selecting the **Initial Status Bar** option in the MFC Application Wizard.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Status bar implementation in MFC](../mfc/status-bar-implementation-in-mfc.md)  
   
@@ -48,7 +49,7 @@ Status bars give your application a place to display messages and useful informa
   
 -   [Making a status-bar pane display text (Updating the text of a status bar pane)](../mfc/updating-the-text-of-a-status-bar-pane.md)  
   
--   [Display command information in the status bar](../mfc/how-to--display-command-information-in-the-status-bar.md)  
+-   [Display command information in the status bar](../mfc/how-to-display-command-information-in-the-status-bar.md)  
   
 ## See Also  
- [User Interface Elements](../mfc/user-interface-elements--mfc-.md)
+ [User Interface Elements](../mfc/user-interface-elements-mfc.md)

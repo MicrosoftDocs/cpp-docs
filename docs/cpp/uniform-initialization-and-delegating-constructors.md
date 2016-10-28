@@ -1,18 +1,19 @@
 ---
 title: "Uniform Initialization and Delegating Constructors"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 ms.assetid: aa4daa64-eaec-4a3c-ade4-d9325e31e9d4
 caps.latest.revision: 3
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -113,14 +114,14 @@ return { 4.5 };
 ```  
   
 ## initializer_list Constructors  
- The [initializer_list Class](../stdcpplib/initializer_list-class.md) represents a list of objects of a specified type that can be used in a constructor, and in other contexts. You can construct an initializer_list by using brace initialization:  
+ The [initializer_list Class](../standard-library/initializer-list-class.md) represents a list of objects of a specified type that can be used in a constructor, and in other contexts. You can construct an initializer_list by using brace initialization:  
   
 ```cpp  
 initializer_list<int> int_list{5, 6, 7};  
 ```  
   
 > [!IMPORTANT]
->  To use this class, you must include the [<initializer_list>](../stdcpplib/-initializer_list-.md) header.  
+>  To use this class, you must include the [<initializer_list>](../standard-library/initializer-list.md) header.  
   
  An `initializer_list` can be copied. In this case, the members of the new list are references to the members of the original list:  
   

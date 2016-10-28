@@ -1,13 +1,13 @@
 ---
 title: "ActivatableClass Macros"
-ms.custom: na
-ms.date: "10/14/2016"
+ms.custom: ""
+ms.date: "10/28/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "ActivatableClass"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "ActivatableClass"
   - "ActivatableClassWithFactoryEx"
 ms.assetid: 9bd64709-ec2c-4678-8c96-ea5982622bdd
-caps.latest.revision: 5
+caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -79,3 +80,6 @@ ActivatableClassWithFactoryEx(
  **Header:** module.h  
   
  **Namespace:** Microsoft::WRL
+ 
+ ## See Also
+ [Module Class](../windows/module-class.md)
