@@ -1,0 +1,1 @@
+   CFont* pOldHeadingFont;

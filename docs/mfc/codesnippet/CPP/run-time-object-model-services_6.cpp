@@ -1,0 +1,1 @@
+IMPLEMENT_DYNCREATE(CMyDynCreateObj, CObject)

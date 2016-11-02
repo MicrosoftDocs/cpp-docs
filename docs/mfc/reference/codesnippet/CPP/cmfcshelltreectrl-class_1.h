@@ -1,0 +1,1 @@
+	CMFCShellTreeCtrl	m_wndShellTree;

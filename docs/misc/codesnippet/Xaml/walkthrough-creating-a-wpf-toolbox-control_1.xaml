@@ -1,0 +1,3 @@
+        <Button Content="Reset" Name="button1" Click="button1_Click" Grid.Row="1" Grid.ColumnSpan="2" />
+        <Label Content="{Binding Text}" Grid.Row="0" Grid.Column="0" Name="label1" />
+        <Label Content="{Binding Count}" Grid.Row="0" Grid.Column="1" Name="label2" />

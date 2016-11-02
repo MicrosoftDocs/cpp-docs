@@ -1,0 +1,1 @@
+   theTime = CTime::GetCurrentTime();
