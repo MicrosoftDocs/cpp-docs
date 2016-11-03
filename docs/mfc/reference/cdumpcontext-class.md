@@ -1,7 +1,7 @@
 ---
-title: "CDumpContext Class"
+title: "CDumpContext Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -91,7 +91,7 @@ class CDumpContext
   
  Before you create your own `CDumpContext` object, you must create a `CFile` object that serves as the dump destination.  
   
- For more information on `CDumpContext`, see [Debugging MFC Applications](../Topic/MFC%20Debugging%20Techniques.md).  
+ For more information on `CDumpContext`, see [Debugging MFC Applications](/visual-studio/debugger/mfc-debugging-techniques).  
   
  **#define _DEBUG**  
   

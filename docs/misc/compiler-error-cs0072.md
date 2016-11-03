@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0072"
+title: "Compiler Error CS0072 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0072
 'event' : cannot override; 'method' is not an event  
   
- An [event](../Topic/event%20\(C%23%20Reference\).md) can only override another event. For more information, see [Events](../Topic/Events%20\(C%23%20Programming%20Guide\).md).  
+ An [event](/dotnet/csharp/language-reference/keywords/event) can only override another event. For more information, see [Events](/dotnet/csharp/programming-guide/events/index).  
   
  The following sample generates CS0072:  
   

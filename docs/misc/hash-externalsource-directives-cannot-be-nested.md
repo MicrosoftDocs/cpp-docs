@@ -1,5 +1,5 @@
 ---
-title: "&#39;#ExternalSource&#39; directives cannot be nested"
+title: "&#39;#ExternalSource&#39; directives cannot be nested | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ You attempted to place an `#ExternalSource` directive within another `#ExternalS
 -   Move the inner `#ExternalSource` directive outside the enclosing `#ExternalSource` block.  
   
 ## See Also  
- [#ExternalSource Directive](../Topic/%23ExternalSource%20Directive.md)   
+ [#ExternalSource Directive](/dotnet/visual-basic/language-reference/directives/externalsource-directive)   
  [NOTINBUILD Conditional Compilation (Visual Basic)](http://msdn.microsoft.com/en-us/ad1e35e0-935e-4a35-a2ae-738bcf2a9240)

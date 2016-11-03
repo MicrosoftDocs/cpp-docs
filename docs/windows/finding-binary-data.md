@@ -1,7 +1,7 @@
 ---
-title: "Finding Binary Data"
+title: "Finding Binary Data | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -44,7 +44,7 @@ You can search for either ASCII strings or hexadecimal bytes. For example, to fi
   
 ### To find binary data  
   
-1.  From the **Edit** menu, click [Find](../Topic/Find%20Command.md).  
+1.  From the **Edit** menu, click [Find](/visual-studio/ide/reference/find-command).  
   
 2.  In the **Find What** box, select a previous search string from the drop-down list or type the data you want to find.  
   

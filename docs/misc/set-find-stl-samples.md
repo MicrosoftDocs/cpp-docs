@@ -1,7 +1,7 @@
 ---
-title: "set::find (STL Samples)"
+title: "set::find (STL Samples) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/27/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

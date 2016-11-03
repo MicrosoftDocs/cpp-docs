@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS2002"
+title: "Compiler Warning (level 1) CS2002 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,7 +40,7 @@ Source file 'file' specified multiple times
   
  A source file name was passed to the compiler more than once. You can only specify a file once to the compiler to build an output file.  
   
- This warning cannot be suppressed by the [/nowarn](../Topic/-nowarn%20\(C%23%20Compiler%20Options\).md) option.  
+ This warning cannot be suppressed by the [/nowarn](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option) option.  
   
  The following sample generates CS2002:  
   

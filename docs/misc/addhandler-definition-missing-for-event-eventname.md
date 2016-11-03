@@ -1,5 +1,5 @@
 ---
-title: "&#39;AddHandler&#39; definition missing for event &#39;&lt;eventname&gt;&#39;"
+title: "&#39;AddHandler&#39; definition missing for event &#39;&lt;eventname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ If an event is declared as `Custom`, it must supply a procedure for adding an ev
 2.  Verify that other procedures within the event declaration end correctly.  
   
 ## See Also  
- [AddHandler Statement](../Topic/AddHandler%20Statement.md)   
- [Event Statement](../Topic/Event%20Statement.md)
+ [AddHandler Statement](/dotnet/visual-basic/language-reference/statements/addhandler-statement)   
+ [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)

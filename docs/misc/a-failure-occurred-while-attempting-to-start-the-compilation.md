@@ -1,7 +1,7 @@
 ---
-title: "A failure occurred while attempting to start the compilation"
+title: "A failure occurred while attempting to start the compilation | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

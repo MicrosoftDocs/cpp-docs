@@ -1,7 +1,7 @@
 ---
-title: "CThreadPool Class"
+title: "CThreadPool Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -79,7 +79,7 @@ template <class Worker, class ThreadTraits = DefaultThreadTraits>
 |[CThreadPool::Release](../Topic/CThreadPool::Release.md)|Implementation of `IUnknown::Release`.|  
 |[CThreadPool::SetSize](../Topic/CThreadPool::SetSize.md)|Call this method to set the number of threads in the pool.|  
 |[CThreadPool::SetTimeout](../Topic/CThreadPool::SetTimeout.md)|Call this method to set the maximum time in milliseconds that the thread pool will wait for a thread to shut down.|  
-|[CThreadPool::Shutdown](../Topic/CThreadPool::Shutdown.md)|Call this method to shut down the thread pool.|  
+|[CThreadPool::Shutdown](/visual-studio/profiling/shutdown)|Call this method to shut down the thread pool.|  
   
 ## Remarks  
  Threads in the pool are created and destroyed when the pool is initialized, resized, or shut down. An instance of class *Worker* will be created on the stack of each worker thread in the pool. Each instance will live for the lifetime of the thread.  
@@ -133,7 +133,7 @@ CThreadPool() throw();
 ```  
   
 ### Remarks  
- Calls [CThreadPool::Shutdown](../Topic/CThreadPool::Shutdown.md).  
+ Calls [CThreadPool::Shutdown](/visual-studio/profiling/shutdown).  
   
 ##  <a name="cthreadpool__getnumthreads"></a>  CThreadPool::GetNumThreads  
  Call this method to get the number of threads in the pool.  
@@ -184,7 +184,7 @@ HRESULT STDMETHODCALLTYPE GetTimeout(DWORD* pdwMaxWait) throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This timeout value is used by [CThreadPool::Shutdown](../Topic/CThreadPool::Shutdown.md) if no other value is supplied to that method.  
+ This timeout value is used by [CThreadPool::Shutdown](/visual-studio/profiling/shutdown) if no other value is supplied to that method.  
   
 ##  <a name="cthreadpool__initialize"></a>  CThreadPool::Initialize  
  Call this method to initialize the thread pool.  

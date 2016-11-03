@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB1022"
+title: "MSBuild Error MSB1022 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -44,4 +44,4 @@ translation.priority.mt:
 1.  Check that the response file exists in the specified directory if you have specified the absolute or relative location of the response file.  
   
 ## See Also  
- [Command-Line Reference](../Topic/MSBuild%20Command-Line%20Reference.md)
+ [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)

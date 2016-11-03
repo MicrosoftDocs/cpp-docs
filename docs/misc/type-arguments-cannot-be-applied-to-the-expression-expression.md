@@ -1,5 +1,5 @@
 ---
-title: "Type arguments cannot be applied to the expression &#39;&lt;expression&gt;&#39;"
+title: "Type arguments cannot be applied to the expression &#39;&lt;expression&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Type arguments cannot be applied to the expression &#39;&lt;expression&gt;&#39;
-An import alias is defined with an [Of](../Topic/Of%20Clause%20\(Visual%20Basic\).md) clause that passes type arguments to the import alias.  
+An import alias is defined with an [Of](/dotnet/visual-basic/language-reference/statements/of-clause) clause that passes type arguments to the import alias.  
   
  Type arguments are used for generic types, and only classes, structures, interfaces, procedures, and delegates can be generic. Neither namespaces nor import aliases can be generic.  
   
@@ -47,8 +47,8 @@ An import alias is defined with an [Of](../Topic/Of%20Clause%20\(Visual%20Basic\
 -   Remove the `Of` clause and its type arguments from the import alias.  
   
 ## See Also  
- [Imports Statement (.NET Namespace and Type)](../Topic/Imports%20Statement%20\(.NET%20Namespace%20and%20Type\).md)   
- [References and the Imports Statement](../Topic/References%20and%20the%20Imports%20Statement%20\(Visual%20Basic\).md)   
+ [Imports Statement (.NET Namespace and Type)](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)   
+ [References and the Imports Statement](/dotnet/visual-basic/programming-guide/program-structure/references-and-the-imports-statement)   
  [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Type List](../Topic/Type%20List%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Type List](/dotnet/visual-basic/language-reference/statements/type-list)

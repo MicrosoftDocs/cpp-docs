@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0152"
+title: "Compiler Error CS0152 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0152
 The label 'label' already occurs in this switch statement  
   
- A label was repeated in a [switch](../Topic/switch%20\(C%23%20Reference\).md) statement. For more information, see [switch](../Topic/switch%20\(C%23%20Reference\).md).  
+ A label was repeated in a [switch](/dotnet/csharp/language-reference/keywords/switch) statement. For more information, see [switch](/dotnet/csharp/language-reference/keywords/switch).  
   
  The following sample generates CS0152:  
   

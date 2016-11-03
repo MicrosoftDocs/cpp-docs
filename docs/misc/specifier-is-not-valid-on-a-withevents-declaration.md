@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;specifier&gt;&#39; is not valid on a WithEvents declaration"
+title: "&#39;&lt;specifier&gt;&#39; is not valid on a WithEvents declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ A `Dim` statement contains a keyword, such as `ReadOnly`, that is invalid in com
 1.  Remove the invalid keyword from the `Dim` statement.  
   
 ## See Also  
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)   
- [WithEvents](../Topic/WithEvents%20\(Visual%20Basic\).md)
+ [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
+ [WithEvents](/dotnet/visual-basic/language-reference/modifiers/withevents)

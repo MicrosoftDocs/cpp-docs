@@ -1,5 +1,5 @@
 ---
-title: "Source file &lt;filename&gt; specified multiple times"
+title: "Source file &lt;filename&gt; specified multiple times | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ A file has been specified multiple times.
 -   Remove redundant file specifiers.  
   
 ## See Also  
- [My.Computer.FileSystem Object](../Topic/My.Computer.FileSystem%20Object.md)
+ [My.Computer.FileSystem Object](/dotnet/visual-basic/language-reference/objects/my-computer-filesystem-object)

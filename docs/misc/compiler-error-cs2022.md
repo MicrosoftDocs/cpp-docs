@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS2022"
+title: "Compiler Error CS2022 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS2022
 Options '/out' and '/target' must appear before source file names  
   
- The [/out (Set Output Filename)](../Topic/-out%20\(C%23%20Compiler%20Options\).md) and [/target (Specify Output File Format)](../Topic/-target%20\(C%23%20Compiler%20Options\).md) compiler options, when specified on the command line, must precede the source code files.
+ The [/out (Set Output Filename)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option) and [/target (Specify Output File Format)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option) compiler options, when specified on the command line, must precede the source code files.

@@ -1,5 +1,5 @@
 ---
-title: "Security attribute &#39;&lt;attributename&gt;&#39; cannot be applied to a module"
+title: "Security attribute &#39;&lt;attributename&gt;&#39; cannot be applied to a module | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

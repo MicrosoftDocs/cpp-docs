@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0539"
+title: "Compiler Error CS0539 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0539
 'member' in explicit interface declaration is not a member of interface  
   
- An attempt was made to explicitly declare an [interface](../Topic/interface%20\(C%23%20Reference\).md) member that does not exist. You should either delete the declaration or change it so that it refers to a valid interface member.  
+ An attempt was made to explicitly declare an [interface](/dotnet/csharp/language-reference/keywords/interface) member that does not exist. You should either delete the declaration or change it so that it refers to a valid interface member.  
   
  The following sample generates CS0539:  
   

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS2007"
+title: "Compiler Error CS2007 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS2007
 Unrecognized command-line option: 'option'  
   
- The compiler was passed a string that was not a [compiler option](../Topic/C%23%20Compiler%20Options.md), even though it began with a forward slash (/).  
+ The compiler was passed a string that was not a [compiler option](/dotnet/csharp/language-reference/compiler-options/index), even though it began with a forward slash (/).  
   
  The following sample generates CS2007:  
   

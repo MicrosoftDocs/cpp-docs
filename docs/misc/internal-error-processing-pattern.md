@@ -1,7 +1,7 @@
 ---
-title: "Internal error processing pattern."
+title: "Internal error processing pattern. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,9 +38,9 @@ This error generally occurs when a regular expression has been included in a sea
   
 ### To correct this error  
   
-1.  Re-enter the search string using the correct regular expression syntax. For more information, see [Regular Expressions](../Topic/Using%20Regular%20Expressions%20in%20Visual%20Studio.md).  
+1.  Re-enter the search string using the correct regular expression syntax. For more information, see [Regular Expressions](/visual-studio/ide/using-regular-expressions-in-visual-studio).  
   
 ## See Also  
- [Finding and Replacing Text](../Topic/Finding%20and%20Replacing%20Text.md)   
- [Using Regular Expressions in Visual Studio](../Topic/Using%20Regular%20Expressions%20in%20Visual%20Studio.md)   
+ [Finding and Replacing Text](/visual-studio/ide/finding-and-replacing-text)   
+ [Using Regular Expressions in Visual Studio](/visual-studio/ide/using-regular-expressions-in-visual-studio)   
  [Wildcards (Visual Studio)](http://msdn.microsoft.com/en-us/9745c56f-0b73-44e1-b393-c17e39670c26)

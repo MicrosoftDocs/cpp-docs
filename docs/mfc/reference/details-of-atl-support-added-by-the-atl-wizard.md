@@ -1,7 +1,7 @@
 ---
-title: "Details of ATL Support Added by the ATL Wizard"
+title: "Details of ATL Support Added by the ATL Wizard | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

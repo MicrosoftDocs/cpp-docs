@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1529"
+title: "Compiler Error CS1529 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1529
 A using clause must precede all other elements defined in the namespace except extern alias declarations  
   
- A [using](../Topic/using%20\(C%23%20Reference\).md) clause must appear first in a namespace.  
+ A [using](/dotnet/csharp/language-reference/keywords/using) clause must appear first in a namespace.  
   
 ## Example  
  The following sample generates CS1529:  

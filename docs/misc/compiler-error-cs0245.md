@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0245"
+title: "Compiler Error CS0245 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0245
 Destructors and object.Finalize cannot be called directly. Consider calling IDisposable.Dispose if available.  
   
- For more information, see [Programming Essentials for Garbage Collection](../Topic/Garbage%20Collection.md) and [Destructors](../Topic/Destructors%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see [Programming Essentials for Garbage Collection](../Topic/Garbage%20Collection.md) and [Destructors](/dotnet/csharp/programming-guide/classes-and-structs/destructors).  
   
  The following sample generates CS0245:  
   

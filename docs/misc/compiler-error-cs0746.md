@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0746"
+title: "Compiler Error CS0746 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -68,4 +68,4 @@ public class C
 ```  
   
 ## See Also  
- [Anonymous Types](../Topic/Anonymous%20Types%20\(C%23%20Programming%20Guide\).md)
+ [Anonymous Types](/dotnet/csharp/programming-guide/classes-and-structs/anonymous-types)

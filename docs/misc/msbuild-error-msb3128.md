@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB3128"
+title: "MSBuild Error MSB3128 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -48,4 +48,4 @@ translation.priority.mt:
 3.  Set the **Hash** value to **Include** for all files that are to be published.  
   
 ## See Also  
- [Publish Page, Project Designer](../Topic/Publish%20Page,%20Project%20Designer.md)
+ [Publish Page, Project Designer](/visual-studio/ide/reference/publish-page-project-designer)

@@ -1,7 +1,7 @@
 ---
-title: "Resource View Window"
+title: "Resource View Window | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -46,7 +46,7 @@ translation.priority.ht:
 >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
 > [!TIP]
->  You can right-click on the Resource View window to launch a shortcut menu of commands. You can also double-click on the title bar to dock or undock the window. Right-clicking on the title bar will give you additional commands that allow you to control the behavior of the window. For more information, see [Windows Management](../Topic/Customizing%20window%20layouts%20in%20Visual%20Studio.md).  
+>  You can right-click on the Resource View window to launch a shortcut menu of commands. You can also double-click on the title bar to dock or undock the window. Right-clicking on the title bar will give you additional commands that allow you to control the behavior of the window. For more information, see [Windows Management](/visual-studio/ide/customizing-window-layouts-in-visual-studio).  
   
 #### To open the resource view window  
   

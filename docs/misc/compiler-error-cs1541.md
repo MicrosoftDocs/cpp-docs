@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1541"
+title: "Compiler Error CS1541 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,6 +38,6 @@ translation.priority.mt:
 # Compiler Error CS1541
 Invalid reference option: 'symbol' — cannot reference directories  
   
- The compiler detected an attempt to specify a directory rather than a specific file. For example, when you use the [/reference](../Topic/-reference%20\(C%23%20Compiler%20Options\).md) compiler option, you must specify a file; it is not possible to specify a directory.  
+ The compiler detected an attempt to specify a directory rather than a specific file. For example, when you use the [/reference](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option) compiler option, you must specify a file; it is not possible to specify a directory.  
   
  For example, passing `/reference:c:\` to the compiler would generate CS1541.

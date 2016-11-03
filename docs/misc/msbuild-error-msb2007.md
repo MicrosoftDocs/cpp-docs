@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB2007"
+title: "MSBuild Error MSB2007 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -44,4 +44,4 @@ translation.priority.mt:
 1.  Check the spelling of the project file name.  
   
 ## See Also  
- [Project File Schema Reference](../Topic/MSBuild%20Project%20File%20Schema%20Reference.md)
+ [Project File Schema Reference](/visual-studio/msbuild/msbuild-project-file-schema-reference)

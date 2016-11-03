@@ -1,5 +1,5 @@
 ---
-title: "Off (Visual Basic)"
+title: "Off (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -42,11 +42,11 @@ Turns a compiler option off.
 ## Remarks  
  The `Off` keyword can be used in these contexts:  
   
- [Option Explicit Statement](../Topic/Option%20Explicit%20Statement%20\(Visual%20Basic\).md)  
+ [Option Explicit Statement](/dotnet/visual-basic/language-reference/statements/option-explicit-statement)  
   
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)  
+ [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)  
   
- [Option Infer Statement](../Topic/Option%20Infer%20Statement.md)  
+ [Option Infer Statement](/dotnet/visual-basic/language-reference/statements/option-infer-statement)  
   
 ## See Also  
- [Keywords](../Topic/Keywords%20\(Visual%20Basic\).md)
+ [Keywords](/dotnet/visual-basic/language-reference/keywords/index)

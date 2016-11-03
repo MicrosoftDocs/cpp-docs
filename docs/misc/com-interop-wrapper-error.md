@@ -1,7 +1,7 @@
 ---
-title: "COM Interop Wrapper Error"
+title: "COM Interop Wrapper Error | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # COM Interop Wrapper Error
-This message box is displayed when the project system could not create a COM interop wrapper for a particular component.  COM interop wrappers are required by the common language runtime (CLR) to manage and communicate with COM components.  For more information, see [COM Interoperability in Visual Basic and Visual C#](../Topic/COM%20Interoperability%20in%20.NET%20Framework%20Applications%20\(Visual%20Basic\).md).  
+This message box is displayed when the project system could not create a COM interop wrapper for a particular component.  COM interop wrappers are required by the common language runtime (CLR) to manage and communicate with COM components.  For more information, see [COM Interoperability in Visual Basic and Visual C#](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications).  
   
  Common causes for the failure include:  
   
@@ -54,6 +54,6 @@ This message box is displayed when the project system could not create a COM int
 ## See Also  
  [Component Model Namespaces in Visual Studio](http://msdn.microsoft.com/en-us/705d0add-0707-44ba-a6de-637381d9c937)   
  [Component Authoring](../Topic/Component%20Authoring.md)   
- [COM Interop](../Topic/COM%20Interop%20\(Visual%20Basic\).md)   
+ [COM Interop](/dotnet/visual-basic/programming-guide/com-interop/index)   
  [Common Language Runtime](../Topic/Common%20Language%20Runtime%20\(CLR\).md)   
- [COM Interoperability in .NET Framework Applications](../Topic/COM%20Interoperability%20in%20.NET%20Framework%20Applications%20\(Visual%20Basic\).md)
+ [COM Interoperability in .NET Framework Applications](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications)

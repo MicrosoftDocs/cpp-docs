@@ -1,5 +1,5 @@
 ---
-title: "Range variable &lt;variable&gt; hides a variable in an enclosing block or a range variable previously defined in the query expression."
+title: "Range variable &lt;variable&gt; hides a variable in an enclosing block or a range variable previously defined in the query expression. | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ A range variable in a query has the same name as a variable previously defined w
 -   Enclose nested queries with duplicate control variable names in parentheses, separating the scope for each range variable.  
   
 ## See Also  
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [LINQ](../Topic/LINQ%20in%20Visual%20Basic.md)
+ [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)

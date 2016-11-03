@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1555"
+title: "Compiler Error CS1555 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS1555
 Could not find 'class' specified for Main method  
   
- A class was specified to the [/main](../Topic/-main%20\(C%23%20Compiler%20Options\).md) compiler option, but the class name was not found in the source code.
+ A class was specified to the [/main](/dotnet/csharp/language-reference/compiler-options/main-compiler-option) compiler option, but the class name was not found in the source code.

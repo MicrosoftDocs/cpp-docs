@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0744"
+title: "Compiler Error CS0744 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -73,5 +73,5 @@ public class C
 ```  
   
 ## See Also  
- [LINQ Query Expressions](../Topic/LINQ%20Query%20Expressions%20\(C%23%20Programming%20Guide\).md)   
- [join clause](../Topic/join%20clause%20\(C%23%20Reference\).md)
+ [LINQ Query Expressions](/dotnet/csharp/programming-guide/linq-query-expressions/index)   
+ [join clause](/dotnet/csharp/language-reference/keywords/join-clause)

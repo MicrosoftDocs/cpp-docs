@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) C4656"
+title: "Compiler Warning (level 1) C4656 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,7 +40,7 @@ translation.priority.ht:
   
  You added or changed a data type, making it new to your source code since the last successful build. Edit and Continue does not support changes to existing data types.  
   
- This warning will always be followed by [Fatal Error C1092](../../error-messages/compiler-errors-1/fatal-error-c1092.md). For further information, see the [Supported Code Changes](../Topic/Supported%20Code%20Changes%20\(C++\).md).  
+ This warning will always be followed by [Fatal Error C1092](../../error-messages/compiler-errors-1/fatal-error-c1092.md). For further information, see the [Supported Code Changes](/visual-studio/debugger/supported-code-changes-cpp).  
   
 ### To remove this warning without ending the current debug session  
   

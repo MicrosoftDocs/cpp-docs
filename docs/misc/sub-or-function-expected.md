@@ -1,5 +1,5 @@
 ---
-title: "&#39;Sub&#39; or &#39;Function&#39; expected"
+title: "&#39;Sub&#39; or &#39;Function&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ A `Declare` statement does not specify either `Sub` or `Function`. `Declare` ide
 -   Add either the `Sub` or `Function` keyword to the `Declare` statement.  
   
 ## See Also  
- [Declare Statement](../Topic/Declare%20Statement.md)
+ [Declare Statement](/dotnet/visual-basic/language-reference/statements/declare-statement)

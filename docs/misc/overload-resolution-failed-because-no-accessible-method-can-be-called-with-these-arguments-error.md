@@ -1,5 +1,5 @@
 ---
-title: "Overload resolution failed because no accessible &#39;&lt;method&gt;&#39; can be called with these arguments:&lt;error&gt;"
+title: "Overload resolution failed because no accessible &#39;&lt;method&gt;&#39; can be called with these arguments:&lt;error&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You have made a call to an overloaded method, but the compiler cannot find a met
 -   Check the argument list you have supplied.  
   
 ## See Also  
- [Overloaded Properties and Methods](../Topic/Overloaded%20Properties%20and%20Methods%20\(Visual%20Basic\).md)
+ [Overloaded Properties and Methods](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/overloaded-properties-and-methods)

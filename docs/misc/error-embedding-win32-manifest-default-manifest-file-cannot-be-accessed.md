@@ -1,5 +1,5 @@
 ---
-title: "Error embedding Win32 manifest: Default manifest file cannot be accessed."
+title: "Error embedding Win32 manifest: Default manifest file cannot be accessed. | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

@@ -1,7 +1,7 @@
 ---
-title: "Opening a Tool Window Programmatically"
+title: "Opening a Tool Window Programmatically | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -39,7 +39,7 @@ Tool windows are typically opened by clicking a command on a menu, or by pressin
   
 ### To open a tool window programmatically  
   
-1.  Create the tool window pane, frame, and the VSPackage that implements them. For more information, see [Adding a Tool Window](../Topic/Adding%20a%20Tool%20Window.md).  
+1.  Create the tool window pane, frame, and the VSPackage that implements them. For more information, see [Adding a Tool Window](/visual-studio/extensibility/adding-a-tool-window).  
   
 2.  Add the <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> to the VSPackage that provides it.  
   
@@ -53,7 +53,7 @@ Tool windows are typically opened by clicking a command on a menu, or by pressin
     {  
     ```  
   
-     This registers the tool window PersistedWindowPane to be opened as docked to **Solution Explorer**. For more information, see [Registering a Tool Window](../Topic/Registering%20a%20Tool%20Window.md).  
+     This registers the tool window PersistedWindowPane to be opened as docked to **Solution Explorer**. For more information, see [Registering a Tool Window](/visual-studio/extensibility/registering-a-tool-window).  
   
 3.  Use <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow*> to find the tool window pane or to create it if it does not already exist.  
   

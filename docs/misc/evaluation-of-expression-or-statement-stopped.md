@@ -1,5 +1,5 @@
 ---
-title: "Evaluation of expression or statement stopped"
+title: "Evaluation of expression or statement stopped | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ The **Stop Evaluation** menu item was selected, causing evaluation to stop.
 -   Allow execution to continue without selecting **Stop Evaluation**.  
   
 ## See Also  
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)

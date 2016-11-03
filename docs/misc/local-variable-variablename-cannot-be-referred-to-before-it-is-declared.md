@@ -1,5 +1,5 @@
 ---
-title: "Local variable &#39;&lt;variablename&gt;&#39; cannot be referred to before it is declared"
+title: "Local variable &#39;&lt;variablename&gt;&#39; cannot be referred to before it is declared | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ A variable inside a procedure is used before its declaration.
 -   Move the declaration to precede the first reference to the variable.  
   
 ## See Also  
- [Variable Declaration](../Topic/Variable%20Declaration%20in%20Visual%20Basic.md)
+ [Variable Declaration](/dotnet/visual-basic/programming-guide/language-features/variables/variable-declaration)

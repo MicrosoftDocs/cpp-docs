@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0263"
+title: "Compiler Error CS0263 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0263
 Partial declarations of 'type' must not specify different base classes  
   
- When defining a type in partial declarations, specify the same base types in each of the partial declarations. For more information, see [Partial Classes and Methods](../Topic/Partial%20Classes%20and%20Methods%20\(C%23%20Programming%20Guide\).md).  
+ When defining a type in partial declarations, specify the same base types in each of the partial declarations. For more information, see [Partial Classes and Methods](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).  
   
  The following sample generates CS0263:  
   

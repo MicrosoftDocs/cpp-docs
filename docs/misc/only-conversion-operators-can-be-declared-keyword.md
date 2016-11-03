@@ -1,5 +1,5 @@
 ---
-title: "Only conversion operators can be declared &#39;&lt;keyword&gt;&#39;"
+title: "Only conversion operators can be declared &#39;&lt;keyword&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -36,11 +36,11 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Only conversion operators can be declared &#39;&lt;keyword&gt;&#39;
-An [Operator Statement](../Topic/Operator%20Statement.md) specifies [Widening](../Topic/Widening%20\(Visual%20Basic\).md) or [Narrowing](../Topic/Narrowing%20\(Visual%20Basic\).md) when the operator is not a conversion operator.  
+An [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement) specifies [Widening](/dotnet/visual-basic/language-reference/modifiers/widening) or [Narrowing](/dotnet/visual-basic/language-reference/modifiers/narrowing) when the operator is not a conversion operator.  
   
- Every operator must be declared as both [Public](../Topic/Public%20\(Visual%20Basic\).md) and [Shared](../Topic/Shared%20\(Visual%20Basic\).md). However, only a conversion operator can be declared with [Widening](../Topic/Widening%20\(Visual%20Basic\).md) or [Narrowing](../Topic/Narrowing%20\(Visual%20Basic\).md), but not both.  
+ Every operator must be declared as both [Public](/dotnet/visual-basic/language-reference/modifiers/public) and [Shared](/dotnet/visual-basic/language-reference/modifiers/shared). However, only a conversion operator can be declared with [Widening](/dotnet/visual-basic/language-reference/modifiers/widening) or [Narrowing](/dotnet/visual-basic/language-reference/modifiers/narrowing), but not both.  
   
- An operator definition can optionally include the [Overloads](../Topic/Overloads%20\(Visual%20Basic\).md) and [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md) keywords. No other keywords are permitted in an [Operator Statement](../Topic/Operator%20Statement.md).  
+ An operator definition can optionally include the [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads) and [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows) keywords. No other keywords are permitted in an [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement).  
   
  **Error ID:** BC33019  
   
@@ -49,8 +49,8 @@ An [Operator Statement](../Topic/Operator%20Statement.md) specifies [Widening](.
 1.  Remove the `Widening` or `Narrowing` keyword from the operator definition. These do not apply, because no type conversion is taking place.  
   
 ## See Also  
- [Operator Procedures](../Topic/Operator%20Procedures%20\(Visual%20Basic\).md)   
- [Operator Statement](../Topic/Operator%20Statement.md)   
+ [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
+ [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)   
  [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
  [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)   
- [Type Conversions in Visual Basic](../Topic/Type%20Conversions%20in%20Visual%20Basic.md)
+ [Type Conversions in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/type-conversions)

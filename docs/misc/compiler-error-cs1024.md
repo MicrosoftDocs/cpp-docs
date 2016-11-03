@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1024"
+title: "Compiler Error CS1024 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1024
 Preprocessor directive expected  
   
- A line began with the pound symbol (#), but the subsequent string was not a valid [preprocessor directive](../Topic/C%23%20Preprocessor%20Directives.md).  
+ A line began with the pound symbol (#), but the subsequent string was not a valid [preprocessor directive](/dotnet/csharp/language-reference/preprocessor-directives/index).  
   
  The following sample generates CS1024:  
   

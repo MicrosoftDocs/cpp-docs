@@ -1,5 +1,5 @@
 ---
-title: "Delegates cannot implement interface methods"
+title: "Delegates cannot implement interface methods | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -46,6 +46,6 @@ A delegate is a reference type that points to a shared procedure or to an instan
   
 ## See Also  
  [NOT IN BUILD: Delegates and the AddressOf Operator](http://msdn.microsoft.com/en-us/7b2ed932-8598-4355-b2f7-5cedb23ee86f)   
- [Delegate Statement](../Topic/Delegate%20Statement.md)   
- [Handles](../Topic/Handles%20Clause%20\(Visual%20Basic\).md)   
- [Implements Statement](../Topic/Implements%20Statement.md)
+ [Delegate Statement](/dotnet/visual-basic/language-reference/statements/delegate-statement)   
+ [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause)   
+ [Implements Statement](/dotnet/visual-basic/language-reference/statements/implements-statement)

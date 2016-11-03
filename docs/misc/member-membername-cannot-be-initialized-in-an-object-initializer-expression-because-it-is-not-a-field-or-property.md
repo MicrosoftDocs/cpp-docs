@@ -1,5 +1,5 @@
 ---
-title: "Member &#39;&lt;membername&gt;&#39; cannot be initialized in an object initializer expression because it is not a field or property"
+title: "Member &#39;&lt;membername&gt;&#39; cannot be initialized in an object initializer expression because it is not a field or property | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -50,4 +50,4 @@ An object initializer list cannot include shared members, constants, or method c
  [NOT IN BUILD: Properties and Property Procedures](http://msdn.microsoft.com/en-us/23e2a1ec-7e9d-4109-8940-c703d981077b)   
  [NOT IN BUILD: Default Properties](http://msdn.microsoft.com/en-us/a70f2a27-8176-4858-935e-f25afdd43ab5)   
  [NotInBuild:Object Members](http://msdn.microsoft.com/en-us/dfc2cc12-0e66-44fb-a78e-14f931db2309)   
- [Const Statement](../Topic/Const%20Statement%20\(Visual%20Basic\).md)
+ [Const Statement](/dotnet/visual-basic/language-reference/statements/const-statement)

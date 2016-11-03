@@ -1,5 +1,5 @@
 ---
-title: "Unable to open resource file &#39;&lt;filename&gt;&#39;: &lt;error&gt;"
+title: "Unable to open resource file &#39;&lt;filename&gt;&#39;: &lt;error&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ There was an error opening the specified resource file.
 2.  Verify that the file is not damaged or corrupt.  
   
 ## See Also  
- [/linkresource (Visual Basic)](../Topic/-linkresource%20\(Visual%20Basic\).md)   
- [/resource (Visual Basic)](../Topic/-resource%20\(Visual%20Basic\).md)
+ [/linkresource (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/linkresource)   
+ [/resource (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/resource)

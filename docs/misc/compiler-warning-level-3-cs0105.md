@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 3) CS0105"
+title: "Compiler Warning (level 3) CS0105 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 3) CS0105
 The using directive for 'namespace' appeared previously in this namespace  
   
- A [namespace](../Topic/namespace%20\(C%23%20Reference\).md), which should only be declared once, was declared more than once; remove all duplicate namespace declarations.  
+ A [namespace](/dotnet/csharp/language-reference/keywords/namespace), which should only be declared once, was declared more than once; remove all duplicate namespace declarations.  
   
  The following sample generates CS0105:  
   

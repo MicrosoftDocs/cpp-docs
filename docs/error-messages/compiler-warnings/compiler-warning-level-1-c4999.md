@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) C4999"
+title: "Compiler Warning (level 1) C4999 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -39,4 +39,4 @@ translation.priority.mt:
 # Compiler Warning (level 1) C4999
 UNKNOWN WARNING From the Help menu choose the Technical Support command or open the Technical Support help file for more information  
   
- Note the circumstances of the error, try to isolate the problem and create a reproducible test case, then contact [Microsoft Product Support Services](../Topic/Talk%20to%20Us.md).
+ Note the circumstances of the error, try to isolate the problem and create a reproducible test case, then contact [Microsoft Product Support Services](/visual-studio/ide/talk-to-us).

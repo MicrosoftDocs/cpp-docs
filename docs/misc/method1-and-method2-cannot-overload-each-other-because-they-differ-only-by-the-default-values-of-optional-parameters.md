@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;method1&gt;&#39; and &#39;&lt;method2&gt;&#39; cannot overload each other because they differ only by the default values of optional parameters"
+title: "&#39;&lt;method1&gt;&#39; and &#39;&lt;method2&gt;&#39; cannot overload each other because they differ only by the default values of optional parameters | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ You have attempted to overload a method with another method that differs from th
 -   Ensure that the methods are differentiated by more than only optional parameters.  
   
 ## See Also  
- [Procedure Overloading](../Topic/Procedure%20Overloading%20\(Visual%20Basic\).md)   
- [Considerations in Overloading Procedures](../Topic/Considerations%20in%20Overloading%20Procedures%20\(Visual%20Basic\).md)
+ [Procedure Overloading](/dotnet/visual-basic/language-reference/procedures/procedure-overloading)   
+ [Considerations in Overloading Procedures](/dotnet/visual-basic/language-reference/procedures/considerations-in-overloading-procedures)

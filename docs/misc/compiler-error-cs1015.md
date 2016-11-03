@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1015"
+title: "Compiler Error CS1015 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1015
 An object, string, or class type expected  
   
- An attempt was made to pass a predefined data type into a [catch](../Topic/try-catch%20\(C%23%20Reference\).md) block. Only data types that derive from <xref:System.Exception?displayProperty=fullName> can be passed into a `catch` block. For more information on exceptions, see [Exception Handling Statements](../Topic/Exception%20Handling%20Statements%20\(C%23%20Reference\).md).  
+ An attempt was made to pass a predefined data type into a [catch](/dotnet/csharp/language-reference/keywords/try-catch) block. Only data types that derive from <xref:System.Exception?displayProperty=fullName> can be passed into a `catch` block. For more information on exceptions, see [Exception Handling Statements](/dotnet/csharp/language-reference/keywords/exception-handling-statements).  
   
 ## Example  
  The following sample generates CS1015:  

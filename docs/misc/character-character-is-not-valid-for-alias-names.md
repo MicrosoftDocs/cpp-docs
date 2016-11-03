@@ -1,7 +1,7 @@
 ---
-title: "Character &lt;character&gt; is not valid for alias names."
+title: "Character &lt;character&gt; is not valid for alias names. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,5 +41,5 @@ This error generally occurs when an incorrect character is entered as part of an
 1.  Re-enter the alias name, omitting the incorrect character.  
   
 ## See Also  
- [Alias Command](../Topic/Alias%20Command.md)   
- [Visual Studio Command Aliases](../Topic/Visual%20Studio%20Command%20Aliases.md)
+ [Alias Command](/visual-studio/ide/reference/alias-command)   
+ [Visual Studio Command Aliases](/visual-studio/ide/reference/visual-studio-command-aliases)

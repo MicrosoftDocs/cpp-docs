@@ -1,5 +1,5 @@
 ---
-title: "&#39;Implements&#39; not valid in Modules"
+title: "&#39;Implements&#39; not valid in Modules | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ An `Implements` statement or clause occurs inside a module. Modules cannot imple
 -   Remove the `Implements` statement or clause, or retype the module as a class.  
   
 ## See Also  
- [Implements Statement](../Topic/Implements%20Statement.md)   
- [Module Statement](../Topic/Module%20Statement.md)
+ [Implements Statement](/dotnet/visual-basic/language-reference/statements/implements-statement)   
+ [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)

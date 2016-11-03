@@ -1,5 +1,5 @@
 ---
-title: "Methods or events that implement interface members cannot be declared &#39;Shared&#39;"
+title: "Methods or events that implement interface members cannot be declared &#39;Shared&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You have attempted to declare as `Shared` a method or event that implements an i
 -   Remove the `Shared` keyword.  
   
 ## See Also  
- [Shared](../Topic/Shared%20\(Visual%20Basic\).md)
+ [Shared](/dotnet/visual-basic/language-reference/modifiers/shared)

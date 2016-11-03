@@ -1,5 +1,5 @@
 ---
-title: "XML elements cannot be selected from type &#39;type&#39;"
+title: "XML elements cannot be selected from type &#39;type&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # XML elements cannot be selected from type &#39;type&#39;
-An XML child element has been referenced for an object that is not of type <xref:System.Xml.Linq.XElement>, <xref:System.Xml.Linq.XDocument>, or `IEnumerable(Of XElement)`. For more information, see [XML Child Axis Property](../Topic/XML%20Child%20Axis%20Property%20\(Visual%20Basic\).md).  
+An XML child element has been referenced for an object that is not of type <xref:System.Xml.Linq.XElement>, <xref:System.Xml.Linq.XDocument>, or `IEnumerable(Of XElement)`. For more information, see [XML Child Axis Property](/dotnet/visual-basic/language-reference/xml-axis/xml-child-axis-property).  
   
 ```vb#  
 ' Generates an error.  
@@ -57,6 +57,6 @@ Dim var = "sample text".<child>
     ```  
   
 ## See Also  
- [XML Child Axis Property](../Topic/XML%20Child%20Axis%20Property%20\(Visual%20Basic\).md)   
- [XML Axis Properties](../Topic/XML%20Axis%20Properties%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [XML Child Axis Property](/dotnet/visual-basic/language-reference/xml-axis/xml-child-axis-property)   
+ [XML Axis Properties](/dotnet/visual-basic/language-reference/xml-axis/xml-axis-properties)   
+ [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)

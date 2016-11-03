@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS2036"
+title: "Compiler Error CS2036 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -63,5 +63,5 @@ class Test
 ```  
   
 ## See Also  
- [/pdb (C# Compiler Options)](../Topic/-pdb%20\(C%23%20Compiler%20Options\).md)   
- [/debug (C# Compiler Options)](../Topic/-debug%20\(C%23%20Compiler%20Options\).md)
+ [/pdb (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/pdb-compiler-option)   
+ [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)

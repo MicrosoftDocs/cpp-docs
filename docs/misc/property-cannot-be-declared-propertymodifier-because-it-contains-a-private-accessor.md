@@ -1,5 +1,5 @@
 ---
-title: "Property cannot be declared &#39;&lt;propertymodifier&gt;&#39; because it contains a &#39;Private&#39; accessor"
+title: "Property cannot be declared &#39;&lt;propertymodifier&gt;&#39; because it contains a &#39;Private&#39; accessor | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -36,16 +36,16 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Property cannot be declared &#39;&lt;propertymodifier&gt;&#39; because it contains a &#39;Private&#39; accessor
-A property with a `Private` property procedure (`Get` or `Set`) is marked [Overridable](../Topic/Overridable%20\(Visual%20Basic\).md).  
+A property with a `Private` property procedure (`Get` or `Set`) is marked [Overridable](/dotnet/visual-basic/language-reference/modifiers/overridable).  
   
- If a base class property or procedure is declared [Private](../Topic/Private%20\(Visual%20Basic\).md), a derived class cannot override that property or procedure because it cannot access it. Because of this, you cannot use `Private` in combination with `Overridable`. This applies not only to the property itself but to the individual property procedures as well.  
+ If a base class property or procedure is declared [Private](/dotnet/visual-basic/language-reference/modifiers/private), a derived class cannot override that property or procedure because it cannot access it. Because of this, you cannot use `Private` in combination with `Overridable`. This applies not only to the property itself but to the individual property procedures as well.  
   
  **Error ID:** BC31108  
   
 ### To correct this error  
   
--   Remove the `Overridable` keyword from the [Property Statement](../Topic/Property%20Statement.md), or remove the `Private` keyword from the [Get Statement](../Topic/Get%20Statement.md) or the [Set Statement](../Topic/Set%20Statement%20\(Visual%20Basic\).md).  
+-   Remove the `Overridable` keyword from the [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement), or remove the `Private` keyword from the [Get Statement](/dotnet/visual-basic/language-reference/statements/get-statement) or the [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement).  
   
 ## See Also  
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)   
+ [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)   
  [How to: Declare a Property with Mixed Access Levels](../Topic/How%20to:%20Declare%20a%20Property%20with%20Mixed%20Access%20Levels%20\(Visual%20Basic\).md)

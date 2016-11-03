@@ -1,5 +1,5 @@
 ---
-title: "Full width characters are not valid as XML delimiters"
+title: "Full width characters are not valid as XML delimiters | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ An XML literal has been defined that includes a full-width character as a delimi
 -   Remove the full-width character from the XML literal definition and replace it with a valid ANSI delimiter character. Valid delimiter characters include the following: `<`, `>`, `=`, `:`, `/`.  
   
 ## See Also  
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
+ [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
  [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)

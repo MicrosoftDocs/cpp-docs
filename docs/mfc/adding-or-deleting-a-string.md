@@ -1,7 +1,7 @@
 ---
-title: "Adding or Deleting a String"
+title: "Adding or Deleting a String | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -39,7 +39,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Adding or Deleting a String
-You can quickly insert new entries into the string table using the String editor. New strings are placed at the end of the table and are given the next available identifier. You can then edit the ID, Value, or Caption properties in the [Properties window](../Topic/Properties%20Window.md) as needed.  
+You can quickly insert new entries into the string table using the String editor. New strings are placed at the end of the table and are given the next available identifier. You can then edit the ID, Value, or Caption properties in the [Properties window](/visual-studio/ide/reference/properties-window) as needed.  
   
  The String editor makes sure you do not use an ID that's already in use. If you select an ID already in use, the String editor will notify you and then assign a generic unique ID, for example IDS_STRING58113.  
   

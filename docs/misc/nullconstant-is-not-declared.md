@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;nullconstant&gt;&#39; is not declared"
+title: "&#39;&lt;nullconstant&gt;&#39; is not declared | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -63,7 +63,7 @@ translation.priority.mt:
     End Sub  
     ```  
   
-2.  Use the [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md) keyword for assignments and comparisons when you use object variables. The following example demonstrates this.  
+2.  Use the [Nothing](/dotnet/visual-basic/language-reference/nothing) keyword for assignments and comparisons when you use object variables. The following example demonstrates this.  
   
     ```  
     Sub TestNothing()  
@@ -78,5 +78,5 @@ translation.priority.mt:
   
 ## See Also  
  <xref:System.DBNull>   
- [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md)   
+ [Nothing](/dotnet/visual-basic/language-reference/nothing)   
  [Programming Element Support Changes Summary](http://msdn.microsoft.com/en-us/0483590a-6309-449c-a2fa-effa26a03b95)

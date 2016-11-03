@@ -1,7 +1,7 @@
 ---
-title: "How to: Search for Symbols in Resources"
+title: "How to: Search for Symbols in Resources | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -42,7 +42,7 @@ translation.priority.ht:
 2.  In the [Find Symbol dialog box](http://msdn.microsoft.com/en-us/63e93d9c-784f-418d-a76a-723da5ff5d96), in the **Find What** box, select a previous search string from the drop-down list or type the accelerator key you want to find (for example, ID_ACCEL1).  
   
     > [!TIP]
-    >  To use [regular expressions](../Topic/Using%20Regular%20Expressions%20in%20Visual%20Studio.md) for your search, you must use the [Find in Files command](../Topic/Find%20Command.md) from the **Edit** menu instead of the **Find Symbol** command. To enable regular expressions, you must have the **Use: Regular Expressions** check box selected in the [Find dialog box](http://msdn.microsoft.com/en-us/dad03582-4931-4893-83ba-84b37f5b1600). Then you can click the right-arrow button to the right of the **Find What** box to display a list of regular search expressions. When you select an expression from this list, it is substituted as the search text in the **Find What** box.  
+    >  To use [regular expressions](/visual-studio/ide/using-regular-expressions-in-visual-studio) for your search, you must use the [Find in Files command](/visual-studio/ide/reference/find-command) from the **Edit** menu instead of the **Find Symbol** command. To enable regular expressions, you must have the **Use: Regular Expressions** check box selected in the [Find dialog box](http://msdn.microsoft.com/en-us/dad03582-4931-4893-83ba-84b37f5b1600). Then you can click the right-arrow button to the right of the **Find What** box to display a list of regular search expressions. When you select an expression from this list, it is substituted as the search text in the **Find What** box.  
   
 3.  Select any of the **Find** options.  
   

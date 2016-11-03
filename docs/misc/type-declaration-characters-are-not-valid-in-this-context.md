@@ -1,5 +1,5 @@
 ---
-title: "Type declaration characters are not valid in this context"
+title: "Type declaration characters are not valid in this context | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You attempted to use a character that is not valid in this context, such as $.
 1.  Remove the character.  
   
 ## See Also  
- [Type Characters](../Topic/Type%20Characters%20\(Visual%20Basic\).md)
+ [Type Characters](/dotnet/visual-basic/programming-guide/language-features/data-types/type-characters)

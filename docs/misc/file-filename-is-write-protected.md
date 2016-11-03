@@ -1,5 +1,5 @@
 ---
-title: "File &#39;&lt;filename&gt;&#39; is write protected"
+title: "File &#39;&lt;filename&gt;&#39; is write protected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

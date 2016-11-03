@@ -1,7 +1,7 @@
 ---
-title: "How to: Rearrange Element Data Ordering - redirection"
+title: "How to: Rearrange Element Data Ordering - redirection | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -23,4 +23,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Rearrange Element Data Ordering - redirection
-This topic has been consolidated with another topic. Please go to [Customizing File Storage and XML Serialization](../Topic/Customizing%20File%20Storage%20and%20XML%20Serialization.md).
+This topic has been consolidated with another topic. Please go to [Customizing File Storage and XML Serialization](/visual-studio/modeling/customizing-file-storage-and-xml-serialization).

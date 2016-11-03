@@ -1,5 +1,5 @@
 ---
-title: "File I-O of a structure with field &#39;&lt;fieldname&gt;&#39; of type &#39;&lt;typename&gt;&#39; is not valid"
+title: "File I-O of a structure with field &#39;&lt;fieldname&gt;&#39; of type &#39;&lt;typename&gt;&#39; is not valid | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -41,4 +41,4 @@ The structure you are attempting to write to a file contains an unsupported type
   
 ## See Also  
  [My.Computer.FileSystem.WriteAllBytes Method](http://msdn.microsoft.com/en-us/b1a24dc1-eac8-4e22-8ffa-cc3bacbaf826)   
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

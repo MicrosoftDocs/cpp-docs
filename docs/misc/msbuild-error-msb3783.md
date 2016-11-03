@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB3783"
+title: "MSBuild Error MSB3783 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

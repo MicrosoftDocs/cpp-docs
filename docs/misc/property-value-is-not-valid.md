@@ -1,5 +1,5 @@
 ---
-title: "Property value is not valid"
+title: "Property value is not valid | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,4 +40,4 @@ One of the properties of an object or control was set to a value outside its ran
 -   Change the property value to a valid setting.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

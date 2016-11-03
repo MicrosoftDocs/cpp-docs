@@ -1,7 +1,7 @@
 ---
-title: "Walkthrough: Displaying SmartTags"
+title: "Walkthrough: Displaying SmartTags | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -43,7 +43,7 @@ Smart tags are deprecated in favor of light bulbs. See [Walkthrough: Displaying 
  The following walkthrough shows how to create a smart tag that appears on the current word and has two suggested actions: **Convert to upper case** and **Convert to lower case**.  
   
 ## Prerequisites  
- To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](../Topic/Visual%20Studio%20SDK.md).  
+ To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](/visual-studio/extensibility/visual-studio-sdk).  
   
 ## Creating a Managed Extensibility Framework (MEF) Project  
   

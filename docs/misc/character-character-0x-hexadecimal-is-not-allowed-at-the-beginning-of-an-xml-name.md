@@ -1,5 +1,5 @@
 ---
-title: "Character &#39;character&#39; (0x&lt;hexadecimal&gt;) is not allowed at the beginning of an XML name"
+title: "Character &#39;character&#39; (0x&lt;hexadecimal&gt;) is not allowed at the beginning of an XML name | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ An unsupported character is included at the beginning of the name of an XML lite
 -   Remove the unsupported character from the beginning of the name of the XML literal or XML axis property.  
   
 ## See Also  
- [Names of Declared XML Elements and Attributes](../Topic/Names%20of%20Declared%20XML%20Elements%20and%20Attributes%20\(Visual%20Basic\).md)   
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [Names of Declared XML Elements and Attributes](/dotnet/visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes)   
+ [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)

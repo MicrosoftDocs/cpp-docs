@@ -1,5 +1,5 @@
 ---
-title: "Index &#39;&lt;indexnumber&gt;&#39; for dimension &#39;&lt;dimensionnumber&gt;&#39; is out of range"
+title: "Index &#39;&lt;indexnumber&gt;&#39; for dimension &#39;&lt;dimensionnumber&gt;&#39; is out of range | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ One of the indexes exceeds the range defined.
 -   Redefine the array to allow a wider range of values.  
   
 ## See Also  
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)

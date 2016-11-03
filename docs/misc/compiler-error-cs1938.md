@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1938"
+title: "Compiler Error CS1938 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -67,4 +67,4 @@ class Test
 ```  
   
 ## See Also  
- [join clause](../Topic/join%20clause%20\(C%23%20Reference\).md)
+ [join clause](/dotnet/csharp/language-reference/keywords/join-clause)

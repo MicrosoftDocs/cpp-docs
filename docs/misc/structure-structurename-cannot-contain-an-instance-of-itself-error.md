@@ -1,5 +1,5 @@
 ---
-title: "Structure &#39;&lt;structurename&gt;&#39; cannot contain an instance of itself: &lt;error&gt;"
+title: "Structure &#39;&lt;structurename&gt;&#39; cannot contain an instance of itself: &lt;error&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,5 +49,5 @@ A structure declares a variable and initializes it with an instance of itself.
 2.  If you intend to create another instance of the same structure, you must declare and create it outside the structure.  
   
 ## See Also  
- [Structures](../Topic/Structures%20\(Visual%20Basic\).md)   
- [Structure Statement](../Topic/Structure%20Statement.md)
+ [Structures](/dotnet/visual-basic/programming-guide/language-features/data-types/structures)   
+ [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)

@@ -1,5 +1,5 @@
 ---
-title: "Property &lt;propertyname&gt; cannot be set to an empty string or Nothing"
+title: "Property &lt;propertyname&gt; cannot be set to an empty string or Nothing | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -38,6 +38,6 @@ The property requires a value other than an empty string ("") or `Nothing`. This
 -   Supply a valid value.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)   
- [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md)   
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)   
+ [Nothing](/dotnet/visual-basic/language-reference/nothing)   
  [Troubleshooting Exceptions: System.NullReferenceException](../misc/troubleshooting-exceptions-system-nullreferenceexception.md)

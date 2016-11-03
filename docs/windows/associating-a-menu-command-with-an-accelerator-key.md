@@ -1,7 +1,7 @@
 ---
-title: "Associating a Menu Command with an Accelerator Key"
+title: "Associating a Menu Command with an Accelerator Key | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -43,7 +43,7 @@ There are often times you want a menu command and a keyboard combination to issu
   
 1.  In the **Menu** editor, select the menu command you want.  
   
-2.  In the [Properties Window](../Topic/Properties%20Window.md), add the name of the accelerator key to the **Caption** property:  
+2.  In the [Properties Window](/visual-studio/ide/reference/properties-window), add the name of the accelerator key to the **Caption** property:  
   
     -   Following the menu caption, type the escape sequence for a tab (\t), so that all the menu's accelerator keys are left aligned.  
   

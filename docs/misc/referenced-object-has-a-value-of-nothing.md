@@ -1,5 +1,5 @@
 ---
-title: "Referenced object has a value of &#39;Nothing&#39;"
+title: "Referenced object has a value of &#39;Nothing&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -50,5 +50,5 @@ The object being used has the value `Nothing`, but a usable value is expected. `
     >  The value `Nothing` is not the same as zero or an empty string. You can use `IsNothing` to check to see if an object contains the value `Nothing`.  
   
 ## See Also  
- [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md)   
+ [Nothing](/dotnet/visual-basic/language-reference/nothing)   
  [NOT IN BUILD: IsNothing Function](http://msdn.microsoft.com/en-us/5b2a4626-e6a9-49d1-b9b1-fcc6a1302319)

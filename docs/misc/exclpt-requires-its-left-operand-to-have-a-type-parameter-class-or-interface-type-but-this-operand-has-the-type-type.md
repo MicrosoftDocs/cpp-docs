@@ -1,5 +1,5 @@
 ---
-title: "&#39;!&#39; requires its left operand to have a type parameter, class or interface type, but this operand has the type &#39;&lt;type&gt;&#39;"
+title: "&#39;!&#39; requires its left operand to have a type parameter, class or interface type, but this operand has the type &#39;&lt;type&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ Dictionary member access, which uses an exclamation point (`!`) instead of a per
 -   Replace the expression on the left of the exclamation point with one that evaluates to a defined class or interface type.  
   
 ## See Also  
- [Special Characters in Code](../Topic/Special%20Characters%20in%20Code%20\(Visual%20Basic\).md)
+ [Special Characters in Code](/dotnet/visual-basic/programming-guide/program-structure/special-characters-in-code)

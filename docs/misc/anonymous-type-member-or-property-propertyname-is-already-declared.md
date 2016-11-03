@@ -1,5 +1,5 @@
 ---
-title: "Anonymous type member or property &#39;&lt;propertyname&gt;&#39; is already declared"
+title: "Anonymous type member or property &#39;&lt;propertyname&gt;&#39; is already declared | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -66,5 +66,5 @@ A property name can be established only once in the declaration of an anonymous 
     ```  
   
 ## See Also  
- [Anonymous Types](../Topic/Anonymous%20Types%20\(Visual%20Basic\).md)   
+ [Anonymous Types](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types)   
  [How to: Infer Property Names and Types in Anonymous Type Declarations](../Topic/How%20to:%20Infer%20Property%20Names%20and%20Types%20in%20Anonymous%20Type%20Declarations%20\(Visual%20Basic\).md)

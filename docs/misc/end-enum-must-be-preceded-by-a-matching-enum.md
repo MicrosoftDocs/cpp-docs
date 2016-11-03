@@ -1,5 +1,5 @@
 ---
-title: "&#39;End Enum&#39; must be preceded by a matching &#39;Enum&#39;"
+title: "&#39;End Enum&#39; must be preceded by a matching &#39;Enum&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ An `End Enum` statement occurs without a corresponding `Enum` statement. `End En
 2.  Ensure that the `Enum` members are correctly formatted.  
   
 ## See Also  
- [Enum Statement](../Topic/Enum%20Statement%20\(Visual%20Basic\).md)
+ [Enum Statement](/dotnet/visual-basic/language-reference/statements/enum-statement)

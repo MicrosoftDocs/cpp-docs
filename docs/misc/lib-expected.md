@@ -1,5 +1,5 @@
 ---
-title: "&#39;Lib&#39; expected"
+title: "&#39;Lib&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ A `Declare` statement specifies a library name without using the `Lib` keyword.
 -   Add the `Lib` keyword before the library name.  
   
 ## See Also  
- [Declare Statement](../Topic/Declare%20Statement.md)
+ [Declare Statement](/dotnet/visual-basic/language-reference/statements/declare-statement)

@@ -1,5 +1,5 @@
 ---
-title: "Partial methods must have empty method bodies"
+title: "Partial methods must have empty method bodies | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -59,4 +59,4 @@ End Sub
 -   Remove any code from the partial method declaration.  
   
 ## See Also  
- [Partial Methods](../Topic/Partial%20Methods%20\(Visual%20Basic\).md)
+ [Partial Methods](/dotnet/visual-basic/language-reference/procedures/partial-methods)

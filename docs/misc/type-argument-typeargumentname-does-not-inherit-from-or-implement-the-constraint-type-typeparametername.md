@@ -1,5 +1,5 @@
 ---
-title: "Type argument &#39;&lt;typeargumentname&gt;&#39; does not inherit from or implement the constraint type &#39;&lt;typeparametername&gt;&#39;"
+title: "Type argument &#39;&lt;typeargumentname&gt;&#39; does not inherit from or implement the constraint type &#39;&lt;typeparametername&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -53,5 +53,5 @@ A type argument supplied to a generic type does not satisfy the inheritance or i
 -   Select a type argument of a type that implements every interface specified for the type parameter, and that inherits from the specified class if there is one.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
  [How to: Use a Generic Class](../Topic/How%20to:%20Use%20a%20Generic%20Class%20\(Visual%20Basic\).md)

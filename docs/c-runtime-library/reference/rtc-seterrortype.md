@@ -1,7 +1,7 @@
 ---
-title: "_RTC_SetErrorType"
+title: "_RTC_SetErrorType | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -81,7 +81,7 @@ Associates an error that is detected by run-time error checks (RTCs) with a type
 ## Remarks  
  By default, all errors are set to *ErrType* = 1, which corresponds to **_CRT_ERROR**. For more information about the default error types such as **_CRT_ERROR**, see [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md).  
   
- Before you can call this function, you must first call one of the run-time error check initialization functions; see [Using Run-Time Checks without the C Run-Time Library](../Topic/Using%20Run-Time%20Checks%20Without%20the%20C%20Run-Time%20Library.md)  
+ Before you can call this function, you must first call one of the run-time error check initialization functions; see [Using Run-Time Checks without the C Run-Time Library](/visual-studio/debugger/using-run-time-checks-without-the-c-run-time-library)  
   
 ## Requirements  
   

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0236"
+title: "Compiler Error CS0236 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0236
 A field initializer cannot reference the nonstatic field, method, or property 'field'  
   
- Instance fields cannot be used to initialize other instance fields outside a method. If you are trying to initialize a variable outside a method, consider performing the initialization inside the class constructor. For more information, see [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md).  
+ Instance fields cannot be used to initialize other instance fields outside a method. If you are trying to initialize a variable outside a method, consider performing the initialization inside the class constructor. For more information, see [Methods](/dotnet/csharp/programming-guide/classes-and-structs/methods).  
   
  The following sample generates CS0236:  
   

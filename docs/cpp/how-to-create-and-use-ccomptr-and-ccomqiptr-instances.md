@@ -1,7 +1,7 @@
 ---
-title: "How to: Create and Use CComPtr and CComQIPtr Instances"
+title: "How to: Create and Use CComPtr and CComQIPtr Instances | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

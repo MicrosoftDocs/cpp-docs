@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0548"
+title: "Compiler Error CS0548 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,7 +40,7 @@ translation.priority.mt:
   
  A property must have at least one accessor (get or set) method.  
   
- For more information, see and [Using Properties](../Topic/Using%20Properties%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see and [Using Properties](/dotnet/csharp/programming-guide/classes-and-structs/using-properties).  
   
 ## Example  
  The following sample generates CS0548.  

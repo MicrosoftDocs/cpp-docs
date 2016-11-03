@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0585"
+title: "Compiler Error CS0585 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS0585
 Internal Compiler Error: stage 'stage'  
   
- Try to determine if the compiler is failing due to its inability to parse unexpected syntax. If that is not the case, try [Talk to Us](../Topic/Talk%20to%20Us.md).
+ Try to determine if the compiler is failing due to its inability to parse unexpected syntax. If that is not the case, try [Talk to Us](/visual-studio/ide/talk-to-us).

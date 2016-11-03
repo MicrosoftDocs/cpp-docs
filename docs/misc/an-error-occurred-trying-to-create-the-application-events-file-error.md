@@ -1,7 +1,7 @@
 ---
-title: "An error occurred trying to create the application events file. &#39;&lt;error&gt;&#39;"
+title: "An error occurred trying to create the application events file. &#39;&lt;error&gt;&#39; | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -42,6 +42,6 @@ This error occurs when you are creating a WPF Browser Application and Visual Stu
 -   Save and close the solution.  
   
 ## See Also  
- [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md)   
+ [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)   
  [There was an error trying to open or create the application definition file for this project. '\<error>'](../misc/there-was-an-error-trying-to-open-or-create-the-application-definition-file-for-this-project-error.md)   
  [The application definition file is already opened in an incompatible editor](../misc/the-application-definition-file-is-already-opened-in-an-incompatible-editor.md)

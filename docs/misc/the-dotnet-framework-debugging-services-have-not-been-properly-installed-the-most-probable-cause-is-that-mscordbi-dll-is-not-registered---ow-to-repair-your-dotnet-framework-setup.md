@@ -1,7 +1,7 @@
 ---
-title: "The .NET Framework debugging services have not been properly installed. The most probable cause is that mscordbi.dll is not registered correctly. Click Help for more information on how to repair your .NET Framework Setup."
+title: "The .NET Framework debugging services have not been properly installed. The most probable cause is that mscordbi.dll is not registered correctly. Click Help for more information on how to repair your .NET Framework Setup. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,4 +40,4 @@ This error generally occurs when Visual Studio cannot find the file mscordbi.dll
 -   Repair the .NET Framework installation on your machine.  
   
 ## See Also  
- [Installing Visual Studio 2015](../Topic/Installing%20Visual%20Studio%202015.md)
+ [Installing Visual Studio 2015](/visual-studio/install/installing-visual-studio-2015)

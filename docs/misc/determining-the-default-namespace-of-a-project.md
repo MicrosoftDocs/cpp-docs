@@ -1,7 +1,7 @@
 ---
-title: "Determining the Default Namespace of a Project"
+title: "Determining the Default Namespace of a Project | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -31,7 +31,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Determining the Default Namespace of a Project
-For [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)], if the `CustomToolNamespace` property is set on the input file, then the value of `CustomToolNamespace` becomes the value of the default namespace parameter passed to the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate*> method. Otherwise, the `wszDefaultNamespace` parameter passed to `Generate` is always equal to the root namespace. For more information on namespaces, see [Namespace Keywords](../Topic/Namespace%20Keywords%20\(C%23%20Reference\).md).  
+For [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)], if the `CustomToolNamespace` property is set on the input file, then the value of `CustomToolNamespace` becomes the value of the default namespace parameter passed to the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate*> method. Otherwise, the `wszDefaultNamespace` parameter passed to `Generate` is always equal to the root namespace. For more information on namespaces, see [Namespace Keywords](/dotnet/csharp/language-reference/keywords/namespace-keywords).  
   
  [!INCLUDE[csprcs](../ide/includes/csprcs_md.md)] uses folder-based namespaces. That is, the namespace consists of the root namespace, plus names of any folders containing the custom tool. Each folder name is converted into a valid identifier, and periods separate all names. For example, if the input file is FolderA\FolderB\FolderC\MyInput.txt, and the root namespace is CL9, then the computed default namespace would be **CL9.FolderA.FolderB.FolderC**.  
   
@@ -48,6 +48,6 @@ rootNamespace.webReferenceFolder.containedFolder.containedFolder ...
 ```  
   
 ## See Also  
- [Implementing Single-File Generators](../Topic/Implementing%20Single-File%20Generators.md)   
- [Registering Single File Generators](../Topic/Registering%20Single%20File%20Generators.md)   
- [Exposing Types to Visual Designers](../Topic/Exposing%20Types%20to%20Visual%20Designers.md)
+ [Implementing Single-File Generators](/visual-studio/extensibility/internals/implementing-single-file-generators)   
+ [Registering Single File Generators](/visual-studio/extensibility/internals/registering-single-file-generators)   
+ [Exposing Types to Visual Designers](/visual-studio/extensibility/internals/exposing-types-to-visual-designers)

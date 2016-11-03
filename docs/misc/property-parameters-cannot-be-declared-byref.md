@@ -1,5 +1,5 @@
 ---
-title: "&lt;Property&gt; parameters cannot be declared &#39;ByRef&#39;"
+title: "&lt;Property&gt; parameters cannot be declared &#39;ByRef&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ Parameters for properties must be declared using the `ByVal` modifier.
 -   Define property parameters as `ByVal`.  
   
 ## See Also  
- [ByVal](../Topic/ByVal%20\(Visual%20Basic\).md)   
- [ByRef](../Topic/ByRef%20\(Visual%20Basic\).md)
+ [ByVal](/dotnet/visual-basic/language-reference/modifiers/byval)   
+ [ByRef](/dotnet/visual-basic/language-reference/modifiers/byref)

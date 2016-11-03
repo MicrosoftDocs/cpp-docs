@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;membername1&gt;&#39; and &#39;&lt;membername2&gt;&#39; cannot overload each other because they differ only by the types of optional parameters"
+title: "&#39;&lt;membername1&gt;&#39; and &#39;&lt;membername2&gt;&#39; cannot overload each other because they differ only by the types of optional parameters | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ Overloaded members must have different data types for one or more required param
 -   Define at least one required parameter as a different data type.  
   
 ## See Also  
- [Overloads](../Topic/Overloads%20\(Visual%20Basic\).md)
+ [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads)

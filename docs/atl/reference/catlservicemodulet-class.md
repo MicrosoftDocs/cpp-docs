@@ -1,7 +1,7 @@
 ---
-title: "CAtlServiceModuleT Class"
+title: "CAtlServiceModuleT Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -85,7 +85,7 @@ template <class T,  UINT nServiceNameID>  class ATL_NO_VTABLE CAtlServiceModuleT
 |[CAtlServiceModuleT::Run](../Topic/CAtlServiceModuleT::Run.md)|Runs the service.|  
 |[CAtlServiceModuleT::ServiceMain](../Topic/CAtlServiceModuleT::ServiceMain.md)|The method called by the Service Control Manager.|  
 |[CAtlServiceModuleT::SetServiceStatus](../Topic/CAtlServiceModuleT::SetServiceStatus.md)|Updates the service status.|  
-|[CAtlServiceModuleT::Start](../Topic/CAtlServiceModuleT::Start.md)|Called by `CAtlServiceModuleT::WinMain` when the service starts.|  
+|[CAtlServiceModuleT::Start](/visual-studio/profiling/start)|Called by `CAtlServiceModuleT::WinMain` when the service starts.|  
 |[CAtlServiceModuleT::Uninstall](../Topic/CAtlServiceModuleT::Uninstall.md)|Stops and removes the service.|  
 |[CAtlServiceModuleT::Unlock](../Topic/CAtlServiceModuleT::Unlock.md)|Decrements the service's lock count.|  
 |[CAtlServiceModuleT::UnregisterAppId](../Topic/CAtlServiceModuleT::UnregisterAppId.md)|Removes the service from the registry.|  
@@ -484,7 +484,7 @@ int WinMain(int nShowCmd) throw();
  Returns the service's return value.  
   
 ### Remarks  
- This method processes the command line (with [CAtlServiceModuleT::ParseCommandLine](../Topic/CAtlServiceModuleT::ParseCommandLine.md)) and then starts the service (using [CAtlServiceModuleT::Start](../Topic/CAtlServiceModuleT::Start.md)).  
+ This method processes the command line (with [CAtlServiceModuleT::ParseCommandLine](../Topic/CAtlServiceModuleT::ParseCommandLine.md)) and then starts the service (using [CAtlServiceModuleT::Start](/visual-studio/profiling/start)).  
   
 ## See Also  
  [CAtlExeModuleT Class](../../atl/reference/catlexemodulet-class.md)   

@@ -1,7 +1,7 @@
 ---
-title: "New project platforms cannot be created because this new solution platform is not supported by any of the projects."
+title: "New project platforms cannot be created because this new solution platform is not supported by any of the projects. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

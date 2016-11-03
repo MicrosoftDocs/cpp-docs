@@ -1,5 +1,5 @@
 ---
-title: "&#39;Do&#39; must end with a matching &#39;Loop&#39;"
+title: "&#39;Do&#39; must end with a matching &#39;Loop&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ A `Do` statement occurs without a corresponding `Loop` statement. A `Loop` state
 -   Add a `Loop` statement to the end of the `Do` loop.  
   
 ## See Also  
- [Do...Loop Statement](../Topic/Do...Loop%20Statement%20\(Visual%20Basic\).md)
+ [Do...Loop Statement](/dotnet/visual-basic/language-reference/statements/do-loop-statement)

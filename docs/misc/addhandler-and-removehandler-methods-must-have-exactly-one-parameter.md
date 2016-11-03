@@ -1,5 +1,5 @@
 ---
-title: "&#39;AddHandler&#39; and &#39;RemoveHandler&#39; methods must have exactly one parameter"
+title: "&#39;AddHandler&#39; and &#39;RemoveHandler&#39; methods must have exactly one parameter | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -50,7 +50,7 @@ A custom event declaration must have `AddHandler` or `RemoveHandler` declaration
  [!code-vb[VbVbalrEventError#1](../misc/codesnippet/VisualBasic/addhandler-and-removehandler-methods-must-have-exactly-one-parameter_1.vb)]  
   
 ## See Also  
- [Event Statement](../Topic/Event%20Statement.md)   
+ [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)   
  [AddHandler - delete](http://msdn.microsoft.com/en-us/fc464cf8-582c-48a6-a9c2-185c4c3d5ff8)   
  [RemoveHandler - delete](http://msdn.microsoft.com/en-us/35c17f61-6e22-4b87-b6e1-3ed0c27a88a0)   
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)

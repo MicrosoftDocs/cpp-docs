@@ -1,5 +1,5 @@
 ---
-title: "Arrays used as attribute arguments are required to explicitly specify values for all elements"
+title: "Arrays used as attribute arguments are required to explicitly specify values for all elements | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ An array used as an attribute argument has an element with an unspecified value.
 -   Specify all element values.  
   
 ## See Also  
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)   
- [Troubleshooting Arrays](../Topic/Troubleshooting%20Arrays%20\(Visual%20Basic\).md)
+ [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)   
+ [Troubleshooting Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays)

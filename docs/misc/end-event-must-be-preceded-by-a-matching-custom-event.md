@@ -1,5 +1,5 @@
 ---
-title: "&#39;End Event&#39; must be preceded by a matching &#39;Custom Event&#39;"
+title: "&#39;End Event&#39; must be preceded by a matching &#39;Custom Event&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ An `End Event` statement occurs without a corresponding `Custom Event` statement
 -   Ensure that a preceding `Custom Event` statement is valid and correctly spelled.  
   
 ## See Also  
- [Event Statement](../Topic/Event%20Statement.md)
+ [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)

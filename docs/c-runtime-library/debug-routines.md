@@ -1,7 +1,7 @@
 ---
-title: "Debug Routines"
+title: "Debug Routines | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -52,7 +52,7 @@ The debug version of the C run-time library supplies many diagnostic services th
   
 -   Report debug messages to the user  
   
- To use these routines, the [_DEBUG](../c-runtime-library/debug.md) flag must be defined. All of these routines do nothing in a retail build of an application. For more information on how to use the new debug routines, see [CRT Debugging Techniques](../Topic/CRT%20Debugging%20Techniques.md).  
+ To use these routines, the [_DEBUG](../c-runtime-library/debug.md) flag must be defined. All of these routines do nothing in a retail build of an application. For more information on how to use the new debug routines, see [CRT Debugging Techniques](/visual-studio/debugger/crt-debugging-techniques).  
   
 ### Debug Versions of the C Run-Time Library Routines  
   

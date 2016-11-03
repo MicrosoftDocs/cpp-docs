@@ -1,7 +1,7 @@
 ---
-title: "discrete_distribution::probabilities"
+title: "discrete_distribution::probabilities | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/27/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

@@ -1,5 +1,5 @@
 ---
-title: "Another event log has already registered a source with this name"
+title: "Another event log has already registered a source with this name | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -42,6 +42,6 @@ An attempt was made to write an entry to an event log where the specified source
 2.  Register the source with the new log.  
   
 ## See Also  
- [My.Application.Log Object](../Topic/My.Application.Log%20Object.md)   
+ [My.Application.Log Object](/dotnet/visual-basic/language-reference/objects/my-application-log-object)   
  [How to: Remove an Event Source](http://msdn.microsoft.com/en-us/bc66c900-4b8a-426a-b8e2-17031a20167e)   
  [How to: Add Your Application as a Source of Event Log Entries](http://msdn.microsoft.com/en-us/948ff920-a739-4e66-a191-ee951512d42c)

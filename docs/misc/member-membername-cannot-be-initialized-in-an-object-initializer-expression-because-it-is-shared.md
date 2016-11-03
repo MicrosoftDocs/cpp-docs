@@ -1,5 +1,5 @@
 ---
-title: "Member &#39;&lt;membername&gt;&#39; cannot be initialized in an object initializer expression because it is shared"
+title: "Member &#39;&lt;membername&gt;&#39; cannot be initialized in an object initializer expression because it is shared | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Member &#39;&lt;membername&gt;&#39; cannot be initialized in an object initializer expression because it is shared
-Object initializers cannot be used to initialize any member of a class that is declared as shared. For more information, see [Shared](../Topic/Shared%20\(Visual%20Basic\).md).  
+Object initializers cannot be used to initialize any member of a class that is declared as shared. For more information, see [Shared](/dotnet/visual-basic/language-reference/modifiers/shared).  
   
  **Error ID:** BC30991  
   
@@ -66,5 +66,5 @@ End Class
   
 ## See Also  
  [Object Initializers: Named and Anonymous Types](../Topic/Object%20Initializers:%20Named%20and%20Anonymous%20Types%20\(Visual%20Basic\).md)   
- [Shared](../Topic/Shared%20\(Visual%20Basic\).md)   
+ [Shared](/dotnet/visual-basic/language-reference/modifiers/shared)   
  [NOT IN BUILD: Shared Members in Visual Basic](http://msdn.microsoft.com/en-us/dbc3783f-83a2-4225-995d-c2d6d025663d)

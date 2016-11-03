@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1526"
+title: "Compiler Error CS1526 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1526
 A new expression requires (), [], or {} after type  
   
- The [new](../Topic/new%20\(C%23%20Reference\).md) operator, used to dynamically allocate memory for an object, was not specified correctly.  
+ The [new](/dotnet/csharp/language-reference/keywords/new) operator, used to dynamically allocate memory for an object, was not specified correctly.  
   
 ## Example  
  The following sample shows how to use `new` to allocate space for an array and an object.  

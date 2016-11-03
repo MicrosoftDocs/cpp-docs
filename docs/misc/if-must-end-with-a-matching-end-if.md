@@ -1,5 +1,5 @@
 ---
-title: "&#39;If&#39; must end with a matching &#39;End If&#39;"
+title: "&#39;If&#39; must end with a matching &#39;End If&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ An `If` statement occurs without a corresponding `End If` statement. An `End If`
 2.  Add an `End If` statement to the end of the `If` block.  
   
 ## See Also  
- [If...Then...Else Statement](../Topic/If...Then...Else%20Statement%20\(Visual%20Basic\).md)
+ [If...Then...Else Statement](/dotnet/visual-basic/language-reference/statements/if-then-else-statement)

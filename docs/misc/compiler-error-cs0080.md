@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0080"
+title: "Compiler Error CS0080 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0080
 Constraints are not allowed on non-generic declarations  
   
- The syntax found may only be used in a generic declaration to apply constraints to the type parameter. For more information, see [Generics](../Topic/Generics%20\(C%23%20Programming%20Guide\).md).  
+ The syntax found may only be used in a generic declaration to apply constraints to the type parameter. For more information, see [Generics](/dotnet/csharp/programming-guide/generics/index).  
   
  The following sample generates CS0080 because MyClass is not a generic class and Foo is not a generic method.  
   

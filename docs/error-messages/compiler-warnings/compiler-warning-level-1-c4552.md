@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) C4552"
+title: "Compiler Warning (level 1) C4552 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

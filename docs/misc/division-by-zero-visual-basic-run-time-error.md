@@ -1,5 +1,5 @@
 ---
-title: "Division by zero (Visual Basic Run-Time Error)"
+title: "Division by zero (Visual Basic Run-Time Error) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -42,5 +42,5 @@ An expression being used as a divisor has a value of zero.
 2.  Check previous operations on variables in the expression, especially those passed into the procedure as arguments from other procedures.  
   
 ## See Also  
- [Passing Arguments by Value and by Reference](../Topic/Passing%20Arguments%20by%20Value%20and%20by%20Reference%20\(Visual%20Basic\).md)   
+ [Passing Arguments by Value and by Reference](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)   
  [Parameter Passing Mechanism Changes in Visual Basic](http://msdn.microsoft.com/en-us/0fa2b0dc-aa1c-4797-bbd6-aa13c611cab2)

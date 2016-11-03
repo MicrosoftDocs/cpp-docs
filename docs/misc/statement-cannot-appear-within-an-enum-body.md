@@ -1,5 +1,5 @@
 ---
-title: "Statement cannot appear within an Enum body"
+title: "Statement cannot appear within an Enum body | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,4 +49,4 @@ Statement cannot occur within an Enum body. End of Enum assumed.
 2.  Make sure that the interface definition ends with an `End Enum` construct.  
   
 ## See Also  
- [Enum Statement](../Topic/Enum%20Statement%20\(Visual%20Basic\).md)
+ [Enum Statement](/dotnet/visual-basic/language-reference/statements/enum-statement)

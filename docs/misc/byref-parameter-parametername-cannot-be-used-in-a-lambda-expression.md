@@ -1,5 +1,5 @@
 ---
-title: "&#39;ByRef&#39; parameter &#39;&lt;parametername&gt;&#39; cannot be used in a lambda expression"
+title: "&#39;ByRef&#39; parameter &#39;&lt;parametername&gt;&#39; cannot be used in a lambda expression | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -63,4 +63,4 @@ A lambda expression declared within a `Sub` or function cannot use any `ByRef` p
     ```  
   
 ## See Also  
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md)
+ [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)

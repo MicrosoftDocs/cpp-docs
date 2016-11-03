@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;modifier&gt;&#39; is not valid on a method declaration"
+title: "&#39;&lt;modifier&gt;&#39; is not valid on a method declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ A `Function` or `Sub` statement contains an invalid keyword.
 -   Remove the invalid keyword from the `Function` or `Sub` statement.  
   
 ## See Also  
- [Function Statement](../Topic/Function%20Statement%20\(Visual%20Basic\).md)   
- [Sub Statement](../Topic/Sub%20Statement%20\(Visual%20Basic\).md)
+ [Function Statement](/dotnet/visual-basic/language-reference/statements/function-statement)   
+ [Sub Statement](/dotnet/visual-basic/language-reference/statements/sub-statement)

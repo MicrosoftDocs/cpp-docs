@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0069"
+title: "Compiler Error CS0069 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0069
 An event in an interface cannot have add or remove accessors  
   
- You cannot define an event's accessor functions in an [interface](../Topic/interface%20\(C%23%20Reference\).md). For more information, see [Events](../Topic/Events%20\(C%23%20Programming%20Guide\).md) and [Interfaces](../Topic/Interfaces%20\(C%23%20Programming%20Guide\).md).  
+ You cannot define an event's accessor functions in an [interface](/dotnet/csharp/language-reference/keywords/interface). For more information, see [Events](/dotnet/csharp/programming-guide/events/index) and [Interfaces](/dotnet/csharp/programming-guide/interfaces/index).  
   
  The following sample generates CS0069:  
   

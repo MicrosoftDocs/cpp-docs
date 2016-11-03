@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;name&gt;&#39; is not a member of &#39;&lt;classname&gt;&#39;"
+title: "&#39;&lt;name&gt;&#39; is not a member of &#39;&lt;classname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

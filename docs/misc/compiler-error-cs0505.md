@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0505"
+title: "Compiler Error CS0505 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0505
 'member1': cannot override because 'member2' is not a function  
   
- A class declaration attempted to override a non-method in a base class. Overrides must match the member type. If a method with the same name as a method in a base class is desired, use [new](../Topic/new%20\(C%23%20Reference\).md) (and not [override](../Topic/override%20\(C%23%20Reference\).md)) on the method declaration in the base class.  
+ A class declaration attempted to override a non-method in a base class. Overrides must match the member type. If a method with the same name as a method in a base class is desired, use [new](/dotnet/csharp/language-reference/keywords/new) (and not [override](/dotnet/csharp/language-reference/keywords/override)) on the method declaration in the base class.  
   
  The following sample generates CS0505:  
   

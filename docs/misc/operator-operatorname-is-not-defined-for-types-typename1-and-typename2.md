@@ -1,5 +1,5 @@
 ---
-title: "Operator &#39;&lt;operatorname&gt;&#39; is not defined for types &#39;&lt;typename1&gt;&#39; and &#39;&lt;typename2&gt;&#39;"
+title: "Operator &#39;&lt;operatorname&gt;&#39; is not defined for types &#39;&lt;typename1&gt;&#39; and &#39;&lt;typename2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -51,6 +51,6 @@ Operator '\<operatorname>' is not defined for types '\<typename1>' and '\<typena
      [!code-vb[VbVbalrOOP#89](../misc/codesnippet/VisualBasic/operator-operatorname-is-not-defined-for-types-typename1-and-typename2_1.vb)]  
   
 ## See Also  
- [Is Operator](../Topic/Is%20Operator%20\(Visual%20Basic\).md)   
- [= Operator](../Topic/=%20Operator%20\(Visual%20Basic\).md)   
- [Not Operator](../Topic/Not%20Operator%20\(Visual%20Basic\).md)
+ [Is Operator](/dotnet/visual-basic/language-reference/operators/is-operator)   
+ [= Operator](/dotnet/visual-basic/language-reference/operators/assignment-operator)   
+ [Not Operator](/dotnet/visual-basic/language-reference/operators/not-operator)

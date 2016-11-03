@@ -1,7 +1,7 @@
 ---
-title: "CRegKey Class"
+title: "CRegKey Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -66,12 +66,12 @@ class CRegKey
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRegKey::Attach](../Topic/CRegKey::Attach.md)|Call this method to attach an HKEY to the `CRegKey` object by setting the [m_hKey](../Topic/CRegKey::m_hKey.md) member handle to `hKey`.|  
+|[CRegKey::Attach](/visual-studio/profiling/attach)|Call this method to attach an HKEY to the `CRegKey` object by setting the [m_hKey](../Topic/CRegKey::m_hKey.md) member handle to `hKey`.|  
 |[CRegKey::Close](../Topic/CRegKey::Close.md)|Call this method to release the [m_hKey](../Topic/CRegKey::m_hKey.md) member handle and set it to NULL.|  
 |[CRegKey::Create](../Topic/CRegKey::Create.md)|Call this method to create the specified key, if it does not exist as a subkey of `hKeyParent`.|  
 |[CRegKey::DeleteSubKey](../Topic/CRegKey::DeleteSubKey.md)|Call this method to remove the specified key from the registry.|  
 |[CRegKey::DeleteValue](../Topic/CRegKey::DeleteValue.md)|Call this method to remove a value field from [m_hKey](../Topic/CRegKey::m_hKey.md).|  
-|[CRegKey::Detach](../Topic/CRegKey::Detach.md)|Call this method to detach the [m_hKey](../Topic/CRegKey::m_hKey.md) member handle from the `CRegKey` object and set `m_hKey` to NULL.|  
+|[CRegKey::Detach](/visual-studio/profiling/detach)|Call this method to detach the [m_hKey](../Topic/CRegKey::m_hKey.md) member handle from the `CRegKey` object and set `m_hKey` to NULL.|  
 |[CRegKey::EnumKey](../Topic/CRegKey::EnumKey.md)|Call this method to enumerate the subkeys of the open registry key.|  
 |[CRegKey::Flush](../Topic/CRegKey::Flush.md)|Call this method to write all of the attributes of the open registry key into the registry.|  
 |[CRegKey::GetKeySecurity](../Topic/CRegKey::GetKeySecurity.md)|Call this method to retrieve a copy of the security descriptor protecting the open registry key.|  

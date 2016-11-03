@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0036"
+title: "Compiler Error CS0036 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0036
 An out parameter cannot have the '[In]' attribute  
   
- Currently, the **In** attribute is not permitted on an [out](../Topic/out%20\(C%23%20Reference\).md) parameter.  
+ Currently, the **In** attribute is not permitted on an [out](/dotnet/csharp/language-reference/keywords/out) parameter.  
   
  The following sample generates CS0036:  
   

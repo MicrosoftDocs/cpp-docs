@@ -1,5 +1,5 @@
 ---
-title: "Cannot infer a common type for the first and second operands of the binary &#39;If&#39; operator"
+title: "Cannot infer a common type for the first and second operands of the binary &#39;If&#39; operator | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -68,6 +68,6 @@ Dim second As String = "First is Nothing"
     ```  
   
 ## See Also  
- [If Operator](../Topic/If%20Operator%20\(Visual%20Basic\).md)   
- [Widening and Narrowing Conversions](../Topic/Widening%20and%20Narrowing%20Conversions%20\(Visual%20Basic\).md)   
- [If...Then...Else Statement](../Topic/If...Then...Else%20Statement%20\(Visual%20Basic\).md)
+ [If Operator](/dotnet/visual-basic/language-reference/operators/if-operator)   
+ [Widening and Narrowing Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)   
+ [If...Then...Else Statement](/dotnet/visual-basic/language-reference/statements/if-then-else-statement)

@@ -1,7 +1,7 @@
 ---
-title: "CComGITPtr Class"
+title: "CComGITPtr Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -65,9 +65,9 @@ template <class T>  class CComGITPtr
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComGITPtr::Attach](../Topic/CComGITPtr::Attach.md)|Call this method to register the interface pointer in the global interface table (GIT).|  
+|[CComGITPtr::Attach](/visual-studio/profiling/attach)|Call this method to register the interface pointer in the global interface table (GIT).|  
 |[CComGITPtr::CopyTo](../Topic/CComGITPtr::CopyTo.md)|Call this method to copy the interface from the global interface table (GIT) to the passed pointer.|  
-|[CComGITPtr::Detach](../Topic/CComGITPtr::Detach.md)|Call this method to disassociate the interface from the `CComGITPtr` object.|  
+|[CComGITPtr::Detach](/visual-studio/profiling/detach)|Call this method to disassociate the interface from the `CComGITPtr` object.|  
 |[CComGITPtr::GetCookie](../Topic/CComGITPtr::GetCookie.md)|Call this method to return the cookie from the `CComGITPtr` object.|  
 |[CComGITPtr::Revoke](../Topic/CComGITPtr::Revoke.md)|Call this method to remove the interface from the global interface table (GIT).|  
   

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0079"
+title: "Compiler Error CS0079 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0079
 The event 'event' can only appear on the left hand side of += or -=  
   
- An [event](../Topic/event%20\(C%23%20Reference\).md) was called incorrectly. For more information, see [Events](../Topic/Events%20\(C%23%20Programming%20Guide\).md) and [Delegates](../Topic/Delegates%20\(C%23%20Programming%20Guide\).md).  
+ An [event](/dotnet/csharp/language-reference/keywords/event) was called incorrectly. For more information, see [Events](/dotnet/csharp/programming-guide/events/index) and [Delegates](/dotnet/csharp/programming-guide/delegates/index).  
   
  The following sample generates CS0079:  
   

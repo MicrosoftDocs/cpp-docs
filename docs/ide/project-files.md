@@ -1,7 +1,7 @@
 ---
-title: "Project Files"
+title: "Project Files | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,7 +40,7 @@ translation.priority.ht:
 A Visual C++ project file is an XML-based file that has the .vcxproj file name extension and contains information that is required to build a Visual C++ project.  
   
 ## Example  
- The following sample .vcxproj file was produced by specifying a **Win32 Console Application** in the **New Project** dialog box. To process a project file use either the msbuild.exe tool at the command line, or the **Build** command in the [!INCLUDE[TLA2#tla_ide](../build/includes/tla2sharptla_ide_md.md)]. (This sample cannot be processed because the required source and header files are not provided.) For more information about the XML elements in a project file, see [Project File Schema Reference](../Topic/MSBuild%20Project%20File%20Schema%20Reference.md).  
+ The following sample .vcxproj file was produced by specifying a **Win32 Console Application** in the **New Project** dialog box. To process a project file use either the msbuild.exe tool at the command line, or the **Build** command in the [!INCLUDE[TLA2#tla_ide](../build/includes/tla2sharptla_ide_md.md)]. (This sample cannot be processed because the required source and header files are not provided.) For more information about the XML elements in a project file, see [Project File Schema Reference](/visual-studio/msbuild/msbuild-project-file-schema-reference).  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  

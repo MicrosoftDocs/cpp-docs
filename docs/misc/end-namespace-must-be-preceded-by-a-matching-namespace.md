@@ -1,5 +1,5 @@
 ---
-title: "&#39;End Namespace&#39; must be preceded by a matching &#39;Namespace&#39;"
+title: "&#39;End Namespace&#39; must be preceded by a matching &#39;Namespace&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ Namespace blocks begin with a `Namespace` statement and end with an `End Namespa
 -   Make sure that the namespace block begins with a `Namespace` statement.  
   
 ## See Also  
- [Namespace Statement](../Topic/Namespace%20Statement.md)   
- [Namespaces in Visual Basic](../Topic/Namespaces%20in%20Visual%20Basic.md)
+ [Namespace Statement](/dotnet/visual-basic/language-reference/statements/namespace-statement)   
+ [Namespaces in Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces)

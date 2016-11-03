@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;methodname&gt;&#39; cannot override a method that has been shadowed"
+title: "&#39;&lt;methodname&gt;&#39; cannot override a method that has been shadowed | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ A method attempted to override a method that shadows another member.
 -   Use the `Shadows` modifier to override shadowed members.  
   
 ## See Also  
- [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)   
- [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md)
+ [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)   
+ [Overrides](/dotnet/visual-basic/language-reference/modifiers/overrides)

@@ -1,7 +1,7 @@
 ---
-title: "volatile (C++)"
+title: "volatile (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -71,7 +71,7 @@ volatile declarator ;
  Objects that are declared as `volatile` are not used in certain optimizations because their values can change at any time.  The system always reads the current value of a volatile object when it is requested, even if a previous instruction asked for a value from the same object.  Also, the value of the object is written immediately on assignment.  
   
 ## ISO Compliant  
- If you are familiar with the [C# volatile](../Topic/volatile%20\(C%23%20Reference\).md) keyword, or familiar with the behavior of `volatile` in earlier versions of Visual C++, be aware that the C++11 ISO Standard `volatile` keyword is different and is supported in Visual Studio when the [/volatile:iso](../build/reference/volatile-volatile-keyword-interpretation.md) compiler option is specified. (For ARM, it's specified by default). The `volatile` keyword in C++11 ISO Standard code is to be used only for hardware access; do not use it for inter-thread communication. For inter-thread communication, use mechanisms such as [std::atomic\<T>](../standard-library/atomic.md) from the [C++ Standard Template Library](../standard-library/cpp-standard-library-reference.md).  
+ If you are familiar with the [C# volatile](/dotnet/csharp/language-reference/keywords/volatile) keyword, or familiar with the behavior of `volatile` in earlier versions of Visual C++, be aware that the C++11 ISO Standard `volatile` keyword is different and is supported in Visual Studio when the [/volatile:iso](../build/reference/volatile-volatile-keyword-interpretation.md) compiler option is specified. (For ARM, it's specified by default). The `volatile` keyword in C++11 ISO Standard code is to be used only for hardware access; do not use it for inter-thread communication. For inter-thread communication, use mechanisms such as [std::atomic\<T>](../standard-library/atomic.md) from the [C++ Standard Template Library](../standard-library/cpp-standard-library-reference.md).  
   
 ## End of ISO Compliant  
   

@@ -1,7 +1,7 @@
 ---
-title: "Porting Guide: MFC Scribble"
+title: "Porting Guide: MFC Scribble | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,7 +41,7 @@ This topic is the first of several topics that introduce you to the upgrade proc
   
  Before attempting to upgrade, we back up our entire solution and all its contents. Next, we needed to decide on the specific method of upgrade. For more complex solutions and projects that haven't been upgraded for a long time, you should consider upgrading one version of Visual Studio at a time. That way, you can narrow down which version of Visual Studio introduced a problem. For a simple project, it's worth trying to open it in the latest version of Visual Studio and allowing the wizard to convert the project. If that doesn't work, you can try upgrading one version at a time, if you have access to the appropriate versions of Visual Studio.  
   
- Note that you can also run devenv at the command line, using the `/Upgrade` option, instead of using the wizard to upgrade your projects. See [/Upgrade (devenv.exe)](../Topic/-Upgrade%20\(devenv.exe\).md). That could be helpful in automating the upgrade process for a large number of projects.  
+ Note that you can also run devenv at the command line, using the `/Upgrade` option, instead of using the wizard to upgrade your projects. See [/Upgrade (devenv.exe)](/visual-studio/ide/reference/upgrade-devenv-exe). That could be helpful in automating the upgrade process for a large number of projects.  
   
 ### Step 1. Converting the Project File  
  When you open an old project file in Visual Studio 2015, Visual Studio offers to convert the project file to the most recent version, which we accepted. The following dialog box appeared:  

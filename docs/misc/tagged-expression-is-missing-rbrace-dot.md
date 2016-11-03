@@ -1,7 +1,7 @@
 ---
-title: "Tagged expression is missing &#39;}&#39;."
+title: "Tagged expression is missing &#39;}&#39;. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -43,6 +43,6 @@ This error generally occurs when an opening brace (`{`) has been specified but t
 2.  To tag an expression, enter the missing `}`.  
   
 ## See Also  
- [Using Regular Expressions in Visual Studio](../Topic/Using%20Regular%20Expressions%20in%20Visual%20Studio.md)   
+ [Using Regular Expressions in Visual Studio](/visual-studio/ide/using-regular-expressions-in-visual-studio)   
  [NIB: Find and Replace, Quick Find](http://msdn.microsoft.com/en-us/dad03582-4931-4893-83ba-84b37f5b1600)   
- [Find in Files](../Topic/Find%20in%20Files.md)
+ [Find in Files](/visual-studio/ide/find-in-files)

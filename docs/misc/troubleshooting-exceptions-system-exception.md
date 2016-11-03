@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.Exception"
+title: "Troubleshooting Exceptions: System.Exception | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -42,11 +42,11 @@ Represents errors that occur during application execution. This is the base clas
  To fix the error, you might need information about the inner (or previous) exception that led to the current exception. The current exception's <xref:System.Exception.InnerException*> property contains the inner exception. You can use the **View Detail** link in the **Exception Assistant** dialog box to access the <xref:System.Exception.InnerException*> property.  
   
  **Temporarily turn off Just My Code debugging.**  
- The exception may have occurred in code that you did not write. To debug that code, you may have to turn off Just My Code debugging. For more information, see [General, Debugging, Options Dialog Box](../Topic/General,%20Debugging,%20Options%20Dialog%20Box.md).  
+ The exception may have occurred in code that you did not write. To debug that code, you may have to turn off Just My Code debugging. For more information, see [General, Debugging, Options Dialog Box](/visual-studio/debugger/general-debugging-options-dialog-box).  
   
 ## See Also  
  <xref:System.Exception>   
  <xref:System.Exception.InnerException*>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
  [How to: Break When an Exception is Thrown](../misc/how-to-break-when-an-exception-is-thrown.md)   
- [General, Debugging, Options Dialog Box](../Topic/General,%20Debugging,%20Options%20Dialog%20Box.md)
+ [General, Debugging, Options Dialog Box](/visual-studio/debugger/general-debugging-options-dialog-box)

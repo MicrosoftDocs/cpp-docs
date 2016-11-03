@@ -1,5 +1,5 @@
 ---
-title: "Friend declaration &lt;declaration&gt; is invalid and cannot be resolved"
+title: "Friend declaration &lt;declaration&gt; is invalid and cannot be resolved | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "You must specify a file name"
+title: "You must specify a file name | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -41,5 +41,5 @@ You attempted an operation, such as moving or copying a file, which requires sup
   
 ## See Also  
  [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
- [My.Computer.FileSystem Object](../Topic/My.Computer.FileSystem%20Object.md)   
- [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md)
+ [My.Computer.FileSystem Object](/dotnet/visual-basic/language-reference/objects/my-computer-filesystem-object)   
+ [File Access with Visual Basic](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/file-access)

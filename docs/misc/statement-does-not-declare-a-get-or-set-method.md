@@ -1,5 +1,5 @@
 ---
-title: "Statement does not declare a &#39;Get&#39; or &#39;Set&#39; method"
+title: "Statement does not declare a &#39;Get&#39; or &#39;Set&#39; method | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ Your statement fails to supply either a `Get` or `Set` declaration statement aro
 -   Supply a `Get` or `Set` declaration statement.  
   
 ## See Also  
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)
+ [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)

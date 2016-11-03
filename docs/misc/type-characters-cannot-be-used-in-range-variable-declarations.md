@@ -1,5 +1,5 @@
 ---
-title: "Type characters cannot be used in range variable declarations"
+title: "Type characters cannot be used in range variable declarations | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,8 +45,8 @@ A type character has been included at the end of the name of a range variable de
 1.  Remove the type character from the range variable declaration.  
   
 ## See Also  
- [Type Characters](../Topic/Type%20Characters%20\(Visual%20Basic\).md)   
- [Aggregate Clause](../Topic/Aggregate%20Clause%20\(Visual%20Basic\).md)   
- [From Clause](../Topic/From%20Clause%20\(Visual%20Basic\).md)   
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [LINQ](../Topic/LINQ%20in%20Visual%20Basic.md)
+ [Type Characters](/dotnet/visual-basic/programming-guide/language-features/data-types/type-characters)   
+ [Aggregate Clause](/dotnet/visual-basic/language-reference/queries/aggregate-clause)   
+ [From Clause](/dotnet/visual-basic/language-reference/queries/from-clause)   
+ [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)

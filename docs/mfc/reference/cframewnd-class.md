@@ -1,7 +1,7 @@
 ---
-title: "CFrameWnd Class"
+title: "CFrameWnd Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

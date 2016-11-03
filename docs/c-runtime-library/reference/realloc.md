@@ -1,7 +1,7 @@
 ---
-title: "realloc"
+title: "realloc | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -106,7 +106,7 @@ _set_new_mode(1)
   
  early in ones program, or link with NEWMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)).  
   
- When the application is linked with a debug version of the C run-time libraries, `realloc` resolves to [_realloc_dbg](../../c-runtime-library/reference/realloc-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](../Topic/CRT%20Debug%20Heap%20Details.md).  
+ When the application is linked with a debug version of the C run-time libraries, `realloc` resolves to [_realloc_dbg](../../c-runtime-library/reference/realloc-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visual-studio/debugger/crt-debug-heap-details).  
   
  `realloc` is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables, and that the pointer returned is not aliased. For more information, see [noalias](../../cpp/noalias.md) and [restrict](../../cpp/restrict.md).  
   

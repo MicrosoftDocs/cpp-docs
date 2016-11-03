@@ -1,7 +1,7 @@
 ---
-title: "How to: Modify Reference Class in a Native Function"
+title: "How to: Modify Reference Class in a Native Function | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

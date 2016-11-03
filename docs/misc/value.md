@@ -1,7 +1,7 @@
 ---
-title: "__value"
+title: "__value | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -85,8 +85,8 @@ __nogc pointer-specifier
   
 |Managed Extensions for C++|C#|For more information|  
 |----------------------------------|---------|--------------------------|  
-|__gc struct<br /><br /> -or-<br /><br /> \__gc class|class|[class](../Topic/class%20\(C%23%20Reference\).md) keyword|  
-|__value struct<br /><br /> -or-<br /><br /> \__value class|struct|[struct](../Topic/struct%20\(C%23%20Reference\).md) keyword|  
+|__gc struct<br /><br /> -or-<br /><br /> \__gc class|class|[class](/dotnet/csharp/language-reference/keywords/class) keyword|  
+|__value struct<br /><br /> -or-<br /><br /> \__value class|struct|[struct](/dotnet/csharp/language-reference/keywords/struct) keyword|  
   
 ## Example  
  In the following example, a `__value` type (`V`) is declared and then two instances of the `__value` type are manipulated:  

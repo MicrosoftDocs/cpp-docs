@@ -1,7 +1,7 @@
 ---
-title: "&lt;name&gt; is not a valid switch for this command."
+title: "&lt;name&gt; is not a valid switch for this command. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,4 +41,4 @@ This error generally occurs when a incorrect switch or combination of single cha
 1.  Check the documentation for the correct syntax for the command and try again.  
   
 ## See Also  
- [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md)
+ [Visual Studio Commands](/visual-studio/ide/reference/visual-studio-commands)

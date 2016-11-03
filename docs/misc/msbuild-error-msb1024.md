@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB1024"
+title: "MSBuild Error MSB1024 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -44,4 +44,4 @@ translation.priority.mt:
 1.  Specify only one schema to validate the project against using the format `/validate:<schema>`, for example, `/validate:MyExtendedBuildSchema.xsd`  
   
 ## See Also  
- [Command-Line Reference](../Topic/MSBuild%20Command-Line%20Reference.md)
+ [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)

@@ -1,5 +1,5 @@
 ---
-title: "&#39;AddHandler&#39; is already declared"
+title: "&#39;AddHandler&#39; is already declared | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ More than one `AddHandler` declaration appears in a custom event declaration. An
 -   Remove the redundant `AddHandler` statement.  
   
 ## See Also  
- [AddHandler Statement](../Topic/AddHandler%20Statement.md)   
- [Event Statement](../Topic/Event%20Statement.md)
+ [AddHandler Statement](/dotnet/visual-basic/language-reference/statements/addhandler-statement)   
+ [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)

@@ -1,7 +1,7 @@
 ---
-title: "Editing Properties for an ActiveX Control"
+title: "Editing Properties for an ActiveX Control | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Editing Properties for an ActiveX Control
-ActiveX controls supplied by independent vendors may come equipped with their own properties and characteristics. Properties for ActiveX controls are displayed in the Properties window. In addition, any property pages created by the writers of the ActiveX control are displayed in the **Properties Pages** dialog box (to view the Property Page for a specific ActiveX control, click the Property Page button in the [Properties Window](../Topic/Properties%20Window.md)).  
+ActiveX controls supplied by independent vendors may come equipped with their own properties and characteristics. Properties for ActiveX controls are displayed in the Properties window. In addition, any property pages created by the writers of the ActiveX control are displayed in the **Properties Pages** dialog box (to view the Property Page for a specific ActiveX control, click the Property Page button in the [Properties Window](/visual-studio/ide/reference/properties-window)).  
   
  Various tabs are displayed in the property page for an ActiveX control, depending on the property sheets that come as part of the ActiveX control.  
   

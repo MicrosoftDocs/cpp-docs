@@ -1,5 +1,5 @@
 ---
-title: "&#39;Sub New&#39; cannot implement interface members"
+title: "&#39;Sub New&#39; cannot implement interface members | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ translation.priority.mt:
 -   Remove `Implements` statements from `Sub New` procedures.  
   
 ## See Also  
- [Interfaces](../Topic/Interfaces%20\(Visual%20Basic\).md)   
- [Implements](../Topic/Implements%20Clause%20\(Visual%20Basic\).md)
+ [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)   
+ [Implements](/dotnet/visual-basic/language-reference/statements/implements-clause)

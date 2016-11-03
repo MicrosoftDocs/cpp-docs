@@ -1,5 +1,5 @@
 ---
-title: "Named argument &#39;&lt;argumentname&gt;&#39; specified multiple times"
+title: "Named argument &#39;&lt;argumentname&gt;&#39; specified multiple times | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,4 +40,4 @@ You specified a named argument more than once.
 -   Remove all but one of the specifications.  
   
 ## See Also  
- [Passing Arguments by Position and by Name](../Topic/Passing%20Arguments%20by%20Position%20and%20by%20Name%20\(Visual%20Basic\).md)
+ [Passing Arguments by Position and by Name](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name)

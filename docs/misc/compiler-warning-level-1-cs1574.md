@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS1574"
+title: "Compiler Warning (level 1) CS1574 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,7 +40,7 @@ XML comment on 'construct' has syntactically incorrect cref attribute 'name'
   
  A string passed to a cref tag, for example, within an \<exception> tag, referred to a member that is not available within the current build environment. The string that you pass to a cref tag must be the syntactically correct name of a member or field.  
   
- For more information, see [Recommended Tags for Documentation Comments](../Topic/Recommended%20Tags%20for%20Documentation%20Comments%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see [Recommended Tags for Documentation Comments](/dotnet/csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments).  
   
  The following sample generates CS1574:  
   

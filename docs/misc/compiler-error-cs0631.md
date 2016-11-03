@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0631"
+title: "Compiler Error CS0631 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0631
 ref and out are not valid in this context  
   
- The declaration for an [indexer](../Topic/Indexers%20\(C%23%20Programming%20Guide\).md) cannot include the use of [ref](../Topic/ref%20\(C%23%20Reference\).md) or [out](../Topic/out%20\(C%23%20Reference\).md) parameters.  
+ The declaration for an [indexer](/dotnet/csharp/programming-guide/indexers/index) cannot include the use of [ref](/dotnet/csharp/language-reference/keywords/ref) or [out](/dotnet/csharp/language-reference/keywords/out) parameters.  
   
 ## Example  
  The following sample generates CS0631:  

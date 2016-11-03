@@ -1,7 +1,7 @@
 ---
-title: "The application cannot run."
+title: "The application cannot run. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -46,4 +46,4 @@ There is not enough memory for Visual Studio to run.
      Re-install Visual Studio.  
   
 ## See Also  
- [Installing Visual Studio 2015](../Topic/Installing%20Visual%20Studio%202015.md)
+ [Installing Visual Studio 2015](/visual-studio/install/installing-visual-studio-2015)

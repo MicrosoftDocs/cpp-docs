@@ -1,5 +1,5 @@
 ---
-title: "Public member &#39;&lt;membername&gt;&#39; on type &#39;&lt;typename&gt;&#39; not found"
+title: "Public member &#39;&lt;membername&gt;&#39; on type &#39;&lt;typename&gt;&#39; not found | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,5 +40,5 @@ The member you are trying to access cannot be found. This error can occur when a
 1.  If the member exists, ensure that it is declared as `Public`.  
   
 ## See Also  
- [Public](../Topic/Public%20\(Visual%20Basic\).md)   
- [Early and Late Binding](../Topic/Early%20and%20Late%20Binding%20\(Visual%20Basic\).md)
+ [Public](/dotnet/visual-basic/language-reference/modifiers/public)   
+ [Early and Late Binding](/dotnet/visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding)

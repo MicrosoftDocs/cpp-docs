@@ -1,7 +1,7 @@
 ---
-title: "-Zo (Enhance Optimized Debugging)"
+title: "-Zo (Enhance Optimized Debugging) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -69,4 +69,4 @@ Generate enhanced debugging information for optimized code in non-debug builds.
 ## See Also  
  [/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)   
  [/Z7, /Zi, /ZI (Debug Information Format)](../../build/reference/z7-zi-zi-debug-information-format.md)   
- [Edit and Continue](../Topic/Edit%20and%20Continue.md)
+ [Edit and Continue](/visual-studio/debugger/edit-and-continue)

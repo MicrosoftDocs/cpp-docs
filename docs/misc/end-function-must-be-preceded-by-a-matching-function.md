@@ -1,5 +1,5 @@
 ---
-title: "&#39;End Function&#39; must be preceded by a matching &#39;Function&#39;"
+title: "&#39;End Function&#39; must be preceded by a matching &#39;Function&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,5 +49,5 @@ An `End Function` statement appears in your code with no matching `Function` pro
 3.  Move the `End Function` to the appropriate place in the code.  
   
 ## See Also  
- [Function Procedures](../Topic/Function%20Procedures%20\(Visual%20Basic\).md)   
+ [Function Procedures](/dotnet/visual-basic/language-reference/procedures/function-procedures)   
  [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)

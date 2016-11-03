@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;procedurename&gt;&#39; method for event &#39;&lt;eventname&gt;&#39; cannot be marked CLS compliant because its containing type &#39;&lt;typename&gt;&#39; is not CLS compliant"
+title: "&#39;&lt;procedurename&gt;&#39; method for event &#39;&lt;eventname&gt;&#39; cannot be marked CLS compliant because its containing type &#39;&lt;typename&gt;&#39; is not CLS compliant | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -42,7 +42,7 @@ A custom event declares an `AddHandler` or `RemoveHandler` procedure and marks i
   
  If you do not apply <xref:System.CLSCompliantAttribute> to an element, it is considered to be noncompliant.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40053  
   

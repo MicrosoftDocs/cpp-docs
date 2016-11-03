@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0543"
+title: "Compiler Error CS0543 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0543
 'enumeration' : the enumerator value is too large to fit in its type  
   
- A value that was assigned to an element in an [enumeration](../Topic/enum%20\(C%23%20Reference\).md) is outside the range of the data type.  
+ A value that was assigned to an element in an [enumeration](/dotnet/csharp/language-reference/keywords/enum) is outside the range of the data type.  
   
  The following sample generates CS0543:  
   

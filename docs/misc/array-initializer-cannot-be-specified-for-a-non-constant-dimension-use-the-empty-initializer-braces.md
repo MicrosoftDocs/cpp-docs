@@ -1,5 +1,5 @@
 ---
-title: "Array initializer cannot be specified for a non constant dimension; use the empty initializer &#39;{}&#39;"
+title: "Array initializer cannot be specified for a non constant dimension; use the empty initializer &#39;{}&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -64,7 +64,7 @@ Next i
 -   If you cannot specify a constant dimension, then you must initialize the array using a loop when the nonconstant dimension becomes known.  
   
 ## See Also  
- [For Each...Next Statement](../Topic/For%20Each...Next%20Statement%20\(Visual%20Basic\).md)   
+ [For Each...Next Statement](/dotnet/visual-basic/language-reference/statements/for-each-next-statement)   
  [NOTINBUILD Overview of Arrays in Visual Basic](http://msdn.microsoft.com/en-us/ca50e2f2-b4d2-4c57-9169-9abbcc3392d8)   
  [How to: Initialize an Array Variable in Visual Basic](../Topic/How%20to:%20Initialize%20an%20Array%20Variable%20in%20Visual%20Basic.md)   
  [NOTINBUILD How to: Initialize a Multidimensional Array](http://msdn.microsoft.com/en-us/502dcf8b-d86c-46f1-ad7d-3ce809645774)

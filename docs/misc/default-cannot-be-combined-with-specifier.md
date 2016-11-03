@@ -1,5 +1,5 @@
 ---
-title: "&#39;Default&#39; cannot be combined with &#39;&lt;specifier&gt;&#39;"
+title: "&#39;Default&#39; cannot be combined with &#39;&lt;specifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,4 +49,4 @@ You have attempted to combine the `Default` keyword with a specifier, such as `S
 -   Remove the conflicting specifier.  
   
 ## See Also  
- [Default](../Topic/Default%20\(Visual%20Basic\).md)
+ [Default](/dotnet/visual-basic/language-reference/modifiers/default)

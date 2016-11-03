@@ -1,7 +1,7 @@
 ---
-title: "CComAutoThreadModule Class"
+title: "CComAutoThreadModule Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -62,7 +62,7 @@ template <class   ThreadAllocator = CComSimpleThreadAllocator>
 |-|-|  
 |[CreateInstance](../Topic/CComAutoThreadModule::CreateInstance.md)|Selects a thread and then creates an object in the associated apartment.|  
 |[GetDefaultThreads](../Topic/CComAutoThreadModule::GetDefaultThreads.md)|(Static) Dynamically calculates the number of threads for the module based on the number of processors.|  
-|[Init](../Topic/CComAutoThreadModule::Init.md)|Creates the module's threads.|  
+|[Init](/visual-studio/debugger/init)|Creates the module's threads.|  
 |[Lock](../Topic/CComAutoThreadModule::Lock.md)|Increments the lock count on the module and on the current thread.|  
 |[Unlock](../Topic/CComAutoThreadModule::Unlock.md)|Decrements the lock count on the module and on the current thread.|  
   
@@ -155,7 +155,7 @@ static int GetDefaultThreads();
  The number of threads to be created in the EXE module.  
   
 ### Remarks  
- This static function dynamically calculates the maximum number of threads for the EXE module, based on the number of processors. By default, this return value is passed to the [Init](../Topic/CComAutoThreadModule::Init.md) method to create the threads.  
+ This static function dynamically calculates the maximum number of threads for the EXE module, based on the number of processors. By default, this return value is passed to the [Init](/visual-studio/debugger/init) method to create the threads.  
   
 ##  <a name="ccomautothreadmodule__init"></a>  CComAutoThreadModule::Init  
  As of ATL 7.0, `CComAutoThreadModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -216,7 +216,7 @@ int m_nThreads;
 ```  
   
 ### Remarks  
- Contains the number of threads in the EXE module. When [Init](../Topic/CComAutoThreadModule::Init.md) is called, `m_nThreads` is set to the `nThreads` parameter value. Each thread's associated apartment is managed by a [CComApartment](../../atl/reference/ccomapartment-class.md) object.  
+ Contains the number of threads in the EXE module. When [Init](/visual-studio/debugger/init) is called, `m_nThreads` is set to the `nThreads` parameter value. Each thread's associated apartment is managed by a [CComApartment](../../atl/reference/ccomapartment-class.md) object.  
   
 ##  <a name="ccomautothreadmodule__m_papartments"></a>  CComAutoThreadModule::m_pApartments  
  As of ATL 7.0, `CComAutoThreadModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  

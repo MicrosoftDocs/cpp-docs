@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB3165"
+title: "MSBuild Error MSB3165 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -42,4 +42,4 @@ translation.priority.mt:
   
 ## See Also  
  [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)   
- [Product and Package Schema Reference](../Topic/Product%20and%20Package%20Schema%20Reference.md)
+ [Product and Package Schema Reference](/visual-studio/deployment/product-and-package-schema-reference)

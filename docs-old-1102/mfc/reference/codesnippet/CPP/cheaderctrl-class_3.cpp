@@ -1,0 +1,1 @@
+   int iFilt = m_myHeaderCtrl.ClearFilter(1);

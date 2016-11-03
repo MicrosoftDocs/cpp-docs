@@ -1,0 +1,1 @@
+   VERIFY(m_wndSBC.SetText(_T("Text For Pane 1"), 1, 0));

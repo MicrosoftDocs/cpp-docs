@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0225"
+title: "Compiler Error CS0225 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0225
 The params parameter must be a single dimensional array  
   
- When using the [params](../Topic/params%20\(C%23%20Reference\).md) keyword, you must specify a single-dimensional array of the data type. For more information, see [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md).  
+ When using the [params](/dotnet/csharp/language-reference/keywords/params) keyword, you must specify a single-dimensional array of the data type. For more information, see [Methods](/dotnet/csharp/programming-guide/classes-and-structs/methods).  
   
 ## Example  
  The following sample generates CS0225:  

@@ -1,5 +1,5 @@
 ---
-title: "Method &#39;&lt;methodname1&gt;&#39; cannot implement partial method &#39;&lt;methodname2&gt;&#39; because &#39;&lt;methodname3&gt;&#39; already implements it"
+title: "Method &#39;&lt;methodname1&gt;&#39; cannot implement partial method &#39;&lt;methodname2&gt;&#39; because &#39;&lt;methodname3&gt;&#39; already implements it | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -69,4 +69,4 @@ End Class
  **Error ID:** BC31434  
   
 ## See Also  
- [Partial Methods](../Topic/Partial%20Methods%20\(Visual%20Basic\).md)
+ [Partial Methods](/dotnet/visual-basic/language-reference/procedures/partial-methods)

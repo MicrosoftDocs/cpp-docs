@@ -1,5 +1,5 @@
 ---
-title: "Specifiers and attributes are not valid on &#39;Namespace&#39; statements"
+title: "Specifiers and attributes are not valid on &#39;Namespace&#39; statements | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,7 +45,7 @@ Namespaces are used for hierarchical organization of program blocks and programm
 -   Remove all keywords and attribute blocks from the `Namespace` statement.  
   
 ## See Also  
- [Namespaces in Visual Basic](../Topic/Namespaces%20in%20Visual%20Basic.md)   
- [Namespace Statement](../Topic/Namespace%20Statement.md)   
+ [Namespaces in Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces)   
+ [Namespace Statement](/dotnet/visual-basic/language-reference/statements/namespace-statement)   
  [NOT IN BUILD: Attributes Overview in Visual Basic](http://msdn.microsoft.com/en-us/0d0cff64-892d-4f57-83bd-bef388553d4f)   
  [NOT IN BUILD: Application of Attributes](http://msdn.microsoft.com/en-us/2b1703ed-4437-49b3-bc0b-568094324f47)

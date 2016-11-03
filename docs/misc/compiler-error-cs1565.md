@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1565"
+title: "Compiler Error CS1565 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS1565
 Conflicting options specified: Win32 resource file; Win32 icon  
   
- It is not valid to specify both the [/win32res](../Topic/-win32res%20\(C%23%20Compiler%20Options\).md) compiler option and the [/win32ico](../Topic/-win32icon%20\(C%23%20Compiler%20Options\).md) compiler option in the same compilation.
+ It is not valid to specify both the [/win32res](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option) compiler option and the [/win32ico](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option) compiler option in the same compilation.

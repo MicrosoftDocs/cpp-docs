@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error C2871"
+title: "Compiler Error C2871 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.ht:
 # Compiler Error C2871
 'name' : a namespace with this name does not exist  
   
- This error will occur when you pass an identifier that is not a namespace to a [using](../Topic/using%20Directive%20\(C%23%20Reference\).md) directive.  
+ This error will occur when you pass an identifier that is not a namespace to a [using](/dotnet/csharp/language-reference/keywords/using-directive) directive.  
   
  The following sample generates C2871:  
   

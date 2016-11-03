@@ -1,7 +1,7 @@
 ---
-title: "CHandle Class"
+title: "CHandle Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -59,9 +59,9 @@ class CHandle
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHandle::Attach](../Topic/CHandle::Attach.md)|Call this method to attach the `CHandle` object to an existing handle.|  
+|[CHandle::Attach](/visual-studio/profiling/attach)|Call this method to attach the `CHandle` object to an existing handle.|  
 |[CHandle::Close](../Topic/CHandle::Close.md)|Call this method to close a `CHandle` object.|  
-|[CHandle::Detach](../Topic/CHandle::Detach.md)|Call this method to detach a handle from a `CHandle` object.|  
+|[CHandle::Detach](/visual-studio/profiling/detach)|Call this method to detach a handle from a `CHandle` object.|  
   
 ### Public Operators  
   
@@ -80,7 +80,7 @@ class CHandle
  A `CHandle` object can be used whenever a handle is required: the main difference is that the `CHandle` object will automatically be deleted.  
   
 > [!NOTE]
->  Some API functions will use NULL as an empty or invalid handle, while others use INVALID_HANDLE_VALUE. `CHandle` only uses NULL and will treat INVALID_HANDLE_VALUE as a real handle. If you call an API which can return INVALID_HANDLE_VALUE, you should check for this value before calling [CHandle::Attach](../Topic/CHandle::Attach.md) or passing it to the `CHandle` constructor, and instead pass NULL.  
+>  Some API functions will use NULL as an empty or invalid handle, while others use INVALID_HANDLE_VALUE. `CHandle` only uses NULL and will treat INVALID_HANDLE_VALUE as a real handle. If you call an API which can return INVALID_HANDLE_VALUE, you should check for this value before calling [CHandle::Attach](/visual-studio/profiling/attach) or passing it to the `CHandle` constructor, and instead pass NULL.  
   
 ## Requirements  
  **Header:** atlbase.h  

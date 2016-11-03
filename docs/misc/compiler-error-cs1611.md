@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1611"
+title: "Compiler Error CS1611 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1611
 The params parameter cannot be declared as ref or out  
   
- The keywords [ref](../Topic/ref%20\(C%23%20Reference\).md) or [out](../Topic/out%20\(C%23%20Reference\).md) cannot be used with the [params](../Topic/params%20\(C%23%20Reference\).md) keyword.  
+ The keywords [ref](/dotnet/csharp/language-reference/keywords/ref) or [out](/dotnet/csharp/language-reference/keywords/out) cannot be used with the [params](/dotnet/csharp/language-reference/keywords/params) keyword.  
   
  The following sample generates CS1611:  
   

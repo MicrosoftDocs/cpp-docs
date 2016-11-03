@@ -1,5 +1,5 @@
 ---
-title: "Could not find library &#39;&lt;libraryname&gt;&#39;"
+title: "Could not find library &#39;&lt;libraryname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ The specified library could not be found.
 -   Check the library name to make sure it is correct.  
   
 ## See Also  
- [Debugger Basics](../Topic/Debugger%20Basics.md)
+ [Debugger Basics](/visual-studio/debugger/debugger-basics)

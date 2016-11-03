@@ -1,7 +1,7 @@
 ---
-title: "How to: Force a VSPackage to Load"
+title: "How to: Force a VSPackage to Load | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -45,8 +45,8 @@ VSPackages are ordinarily loaded only when their accompanying functionality is r
      When the VSPackage is initialized, it will force `PackageToBeLoaded` to load.  
   
 ## Robust Programming  
- Force loading should not be used for VSPackage communication. Use [Using and Providing Services](../Topic/Using%20and%20Providing%20Services.md) instead.  
+ Force loading should not be used for VSPackage communication. Use [Using and Providing Services](/visual-studio/extensibility/using-and-providing-services) instead.  
   
 ## See Also  
- [Managing VSPackages](../Topic/Managing%20VSPackages.md)   
- [VSPackages](../Topic/VSPackages.md)
+ [Managing VSPackages](/visual-studio/extensibility/managing-vspackages)   
+ [VSPackages](/visual-studio/extensibility/internals/vspackages)

@@ -1,5 +1,5 @@
 ---
-title: "&#39;Select Case&#39; must end with a matching &#39;End Select&#39;"
+title: "&#39;Select Case&#39; must end with a matching &#39;End Select&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ A `Select` or `Select Case` statement occurs without a corresponding `End Select
 2.  Add an `End Select` statement to the end of the `Select` block.  
   
 ## See Also  
- [Select...Case Statement](../Topic/Select...Case%20Statement%20\(Visual%20Basic\).md)
+ [Select...Case Statement](/dotnet/visual-basic/language-reference/statements/select-case-statement)

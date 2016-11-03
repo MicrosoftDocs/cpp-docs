@@ -1,7 +1,7 @@
 ---
-title: "Visual Studio IDE Concepts"
+title: "Visual Studio IDE Concepts | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,10 +41,10 @@ The topics in this section describe the overall structure of [!INCLUDE[vsprvs](.
  [Implementation Strategies](../misc/implementation-strategies.md)  
  Describes the extension of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] by using add-ins or VSPackages, or a combination of both.  
   
- [The Experimental Instance](../Topic/The%20Experimental%20Instance.md)  
+ [The Experimental Instance](/visual-studio/extensibility/the-experimental-instance)  
  Explains the experimental build of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)]. When you develop an application that might change [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)], the [!INCLUDE[vsipsdk](../mfc/includes/vsipsdk_md.md)] provides the experimental build for you to use instead of the released build.  
   
- [Visual Studio Shell](../Topic/Visual%20Studio%20Shell.md)  
+ [Visual Studio Shell](/visual-studio/extensibility/internals/visual-studio-shell)  
  Describes the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] IDE, which is the primary agent of integration in [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].  
   
  [Visual Studio SDK and Automation](../Topic/Visual%20Studio%20SDK%20and%20Automation.md)  
@@ -54,5 +54,5 @@ The topics in this section describe the overall structure of [!INCLUDE[vsprvs](.
  Compares the different ways to write a VSPackage in managed code.  
   
 ## Related Sections  
- [VSSDK Utilities](../Topic/VSSDK%20Utilities.md)  
+ [VSSDK Utilities](/visual-studio/extensibility/internals/vssdk-utilities)  
  Describes [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] and its IDE, and introduces strategies and techniques for extending the IDE.

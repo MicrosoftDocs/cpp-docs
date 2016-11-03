@@ -1,5 +1,5 @@
 ---
-title: "Connection to type library or object library for remote process has been lost"
+title: "Connection to type library or object library for remote process has been lost | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -46,4 +46,4 @@ You lost your connection to the remote process's object library or type library.
 4.  In the **References** dialog box, select the check box for the `Application` object.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

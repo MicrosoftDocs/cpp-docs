@@ -1,7 +1,7 @@
 ---
-title: "CMemoryState Structure"
+title: "CMemoryState Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -82,7 +82,7 @@ struct CMemoryState
   
  If simply knowing where the imbalance in allocation and deallocation occurs does not provide enough information, you can use the `DumpAllObjectsSince` function to dump all objects allocated since the previous call to `Checkpoint`. This dump shows the order of allocation, the source file and line where the object was allocated (if you are using `DEBUG_NEW` for allocation), and the derivation of the object, its address, and its size. `DumpAllObjectsSince` also calls each object's `Dump` function to provide information about its current state.  
   
- For more information about how to use `CMemoryState` and other diagnostics, see [Debugging MFC Applications](../Topic/MFC%20Debugging%20Techniques.md).  
+ For more information about how to use `CMemoryState` and other diagnostics, see [Debugging MFC Applications](/visual-studio/debugger/mfc-debugging-techniques).  
   
 > [!NOTE]
 >  Declarations of objects of type `CMemoryState` and calls to member functions should be bracketed by `#if defined(_DEBUG)/#endif` directives. This causes memory diagnostics to be included only in debugging builds of your program.  

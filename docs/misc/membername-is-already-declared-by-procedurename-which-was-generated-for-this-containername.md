@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;membername&gt;&#39; is already declared by &#39;&lt;procedurename&gt;&#39;, which was generated for this &lt;containername&gt;"
+title: "&#39;&lt;membername&gt;&#39; is already declared by &#39;&lt;procedurename&gt;&#39;, which was generated for this &lt;containername&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ A member was declared that has the same name as a member that is declared by the
 -   Change the name of the member to remove the conflict.  
   
 ## See Also  
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)

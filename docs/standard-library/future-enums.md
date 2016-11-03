@@ -1,7 +1,7 @@
 ---
-title: "&lt;future&gt; enums"
+title: "&lt;future&gt; enums | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""

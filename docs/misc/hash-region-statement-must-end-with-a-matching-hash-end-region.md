@@ -1,5 +1,5 @@
 ---
-title: "&#39;#Region&#39; statement must end with a matching &#39;#End Region&#39;"
+title: "&#39;#Region&#39; statement must end with a matching &#39;#End Region&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ Use the `#Region` directive to specify a block of code that you can expand or co
 1.  Insert `#End Region` at the appropriate place in the code after the `#Region` statement.  
   
 ## See Also  
- [#Region Directive](../Topic/%23Region%20Directive.md)
+ [#Region Directive](/dotnet/visual-basic/language-reference/directives/region-directive)

@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;variablename&gt;&#39; is not a local variable or parameter, and so cannot be used as a &#39;Catch&#39; variable"
+title: "&#39;&lt;variablename&gt;&#39; is not a local variable or parameter, and so cannot be used as a &#39;Catch&#39; variable | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ Variables in `Try...Catch...Finally` statements must be declared locally, or be 
 1.  Declare local variables or parameters for `Try...Catch...Finally` statements.  
   
 ## See Also  
- [Try...Catch...Finally Statement](../Topic/Try...Catch...Finally%20Statement%20\(Visual%20Basic\).md)
+ [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)

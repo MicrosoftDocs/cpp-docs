@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;functionname&gt;&#39; is not declared (Visual Basic Error)"
+title: "&#39;&lt;functionname&gt;&#39; is not declared (Visual Basic Error) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ translation.priority.mt:
 -   Use the file I/O functions defined in `My.Computer.FileSystem`, the `System.IO` namespace, Visual Basic run-time functions, or the `Microsoft.VisualBasic.FileSystem` object.  
   
 ## See Also  
- [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md)   
- [My.Computer.FileSystem Object](../Topic/My.Computer.FileSystem%20Object.md)
+ [File Access with Visual Basic](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/file-access)   
+ [My.Computer.FileSystem Object](/dotnet/visual-basic/language-reference/objects/my-computer-filesystem-object)

@@ -1,5 +1,5 @@
 ---
-title: "Argument &#39;&lt;argumentname&gt;&#39; is Nothing"
+title: "Argument &#39;&lt;argumentname&gt;&#39; is Nothing | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -42,5 +42,5 @@ An expression contains a null argument.
 2.  Check previous operations on variables in the expression, especially those passed into the procedure as arguments from other procedures.  
   
 ## See Also  
- [Passing Arguments by Value and by Reference](../Topic/Passing%20Arguments%20by%20Value%20and%20by%20Reference%20\(Visual%20Basic\).md)   
+ [Passing Arguments by Value and by Reference](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)   
  [Parameter Passing Mechanism for Visual Basic 6.0 Users](http://msdn.microsoft.com/en-us/0fa2b0dc-aa1c-4797-bbd6-aa13c611cab2)

@@ -1,7 +1,7 @@
 ---
-title: "Image Editor for Icons"
+title: "Image Editor for Icons | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -63,7 +63,7 @@ The Image editor has an extensive set of tools for creating and editing images, 
 >  Using the Image Editor, you can view 32-bit images, but you cannot edit them.  
   
 ## Visual Studio Image Library  
- You can download at no cost the Visual Studio Image Library which contains many animations, bitmaps, and icons that you can use in your applications. For more information about how to download the library, see [The Visual Studio Image Library](../Topic/The%20Visual%20Studio%20Image%20Library.md).  
+ You can download at no cost the Visual Studio Image Library which contains many animations, bitmaps, and icons that you can use in your applications. For more information about how to download the library, see [The Visual Studio Image Library](/visual-studio/designers/the-visual-studio-image-library).  
   
 ## Managed Resources  
  You can use the Image editor and the [Binary editor](../mfc/binary-editor.md) to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.  

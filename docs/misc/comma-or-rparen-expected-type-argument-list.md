@@ -1,5 +1,5 @@
 ---
-title: "Comma or &#39;)&#39; expected (Type Argument List)"
+title: "Comma or &#39;)&#39; expected (Type Argument List) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ A type argument list contains an unexpected element. Use commas (`,`) to separat
 -   Add a comma and continue the type argument list, or add a closing parenthesis character to terminate the list.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Type List](../Topic/Type%20List%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Type List](/dotnet/visual-basic/language-reference/statements/type-list)

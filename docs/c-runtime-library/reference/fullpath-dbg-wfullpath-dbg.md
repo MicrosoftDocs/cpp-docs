@@ -1,7 +1,7 @@
 ---
-title: "_fullpath_dbg, _wfullpath_dbg"
+title: "_fullpath_dbg, _wfullpath_dbg | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -108,7 +108,7 @@ wchar_t *_wfullpath_dbg(
 ## Remarks  
  The `_fullpath_dbg` and `_wfullpath_dbg` functions are identical to `_fullpath` and `_wfullpath` except that, when **_**`DEBUG`is defined, these functions use the debug version of `malloc`, `_malloc_dbg`, to allocate memory if NULL is passed as the first parameter. For information on the debugging features of `_malloc_dbg`, see [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md).  
   
- You do not need to call these functions explicitly in most cases. Instead, you can define the `_CRTDBG_MAP_ALLOC` flag. When `_CRTDBG_MAP_ALLOC`is defined, calls to `_fullpath` and `_wfullpath`are remapped to `_fullpath_dbg` and `_wfullpath_dbg`, respectively, with the `blockType` set to `_NORMAL_BLOCK`. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as `_CLIENT_BLOCK`. For more information, see [Types of blocks on the debug heap](../Topic/CRT%20Debug%20Heap%20Details.md#BKMK_Types_of_blocks_on_the_debug_heap).  
+ You do not need to call these functions explicitly in most cases. Instead, you can define the `_CRTDBG_MAP_ALLOC` flag. When `_CRTDBG_MAP_ALLOC`is defined, calls to `_fullpath` and `_wfullpath`are remapped to `_fullpath_dbg` and `_wfullpath_dbg`, respectively, with the `blockType` set to `_NORMAL_BLOCK`. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as `_CLIENT_BLOCK`. For more information, see [Types of blocks on the debug heap](/visual-studio/debugger/crt-debug-heap-details).  
   
 ### Generic-Text Routine Mappings  
   
@@ -131,4 +131,4 @@ wchar_t *_wfullpath_dbg(
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   
  [_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)   
- [Debug Versions of Heap Allocation Functions](../Topic/Debug%20Versions%20of%20Heap%20Allocation%20Functions.md)
+ [Debug Versions of Heap Allocation Functions](/visual-studio/debugger/debug-versions-of-heap-allocation-functions)

@@ -1,7 +1,7 @@
 ---
-title: "Branding Overview"
+title: "Branding Overview | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -57,8 +57,8 @@ To show product information in the splash screen or **Help About** dialog box, y
     > [!NOTE]
     >  The same icon resource is used for the splash screen and the **Help About** dialog box. Your VSPackage icon resource should include a 16 × 16 image for the splash screen and a 32 × 32 image for the **Help About** dialog box. If you provide only one image size, it will be resized as needed, but the visual results will be suboptimal.  
   
- For a list of related tasks, see[VSPackages](../Topic/VSPackages.md).  
+ For a list of related tasks, see[VSPackages](/visual-studio/extensibility/internals/vspackages).  
   
 ## See Also  
- [VSPackages](../Topic/VSPackages.md)   
+ [VSPackages](/visual-studio/extensibility/internals/vspackages)   
  [Visual Studio Library Overview](../misc/visual-studio-library-overview.md)

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0081"
+title: "Compiler Error CS0081 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0081
 Type parameter declaration must be an identifier not a type  
   
- When you declare a generic method or type, specify the type parameter as an identifier, for example "T" or "inputType". When client code calls the method, it supplies the type, which replaces each occurrence of the identifier in the method or class body. For more information, see [Generic Type Parameters](../Topic/Generic%20Type%20Parameters%20\(C%23%20Programming%20Guide\).md).  
+ When you declare a generic method or type, specify the type parameter as an identifier, for example "T" or "inputType". When client code calls the method, it supplies the type, which replaces each occurrence of the identifier in the method or class body. For more information, see [Generic Type Parameters](/dotnet/csharp/programming-guide/generics/generic-type-parameters).  
   
 ```  
 // CS0081.cs  
@@ -57,4 +57,4 @@ class MyClass
 ```  
   
 ## See Also  
- [Generics](../Topic/Generics%20\(C%23%20Programming%20Guide\).md)
+ [Generics](/dotnet/csharp/programming-guide/generics/index)

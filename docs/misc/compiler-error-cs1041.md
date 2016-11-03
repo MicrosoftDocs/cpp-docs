@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1041"
+title: "Compiler Error CS1041 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1041
 Identifier expected, 'keyword' is a keyword  
   
- A reserved word for the C# language was found where an identifier was expected. Replace the [keyword](../Topic/C%23%20Keywords.md) with a user-specified identifier.  
+ A reserved word for the C# language was found where an identifier was expected. Replace the [keyword](/dotnet/csharp/language-reference/keywords/index) with a user-specified identifier.  
   
 ## Example  
  The following sample generates CS1041:  

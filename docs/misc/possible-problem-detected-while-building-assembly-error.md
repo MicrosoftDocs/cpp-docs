@@ -1,5 +1,5 @@
 ---
-title: "Possible problem detected while building assembly: &lt;error&gt;"
+title: "Possible problem detected while building assembly: &lt;error&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Possible problem detected while building assembly: &lt;error&gt;
 The ALink tool, called by the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] compiler, reports an error building the assembly. One possible cause is a signed assembly making reference to an unsigned assembly.  
   
- This message is a warning. The compiler is continuing to generate the assembly. For more information on hiding warnings or treating warnings as errors, please see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ This message is a warning. The compiler is continuing to generate the assembly. For more information on hiding warnings or treating warnings as errors, please see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40009  
   

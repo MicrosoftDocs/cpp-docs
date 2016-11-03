@@ -1,7 +1,7 @@
 ---
-title: "What&#39;s New in Office Developer Tools for Visual Studio 2013 – March 2014 Update"
+title: "What&#39;s New in Office Developer Tools for Visual Studio 2013 – March 2014 Update | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

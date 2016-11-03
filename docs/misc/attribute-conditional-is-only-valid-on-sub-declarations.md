@@ -1,5 +1,5 @@
 ---
-title: "Attribute &#39;Conditional&#39; is only valid on &#39;Sub&#39; declarations"
+title: "Attribute &#39;Conditional&#39; is only valid on &#39;Sub&#39; declarations | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -46,4 +46,4 @@ The <xref:System.Diagnostics.ConditionalAttribute> attribute has been applied to
   
 ## See Also  
  <xref:System.Diagnostics.ConditionalAttribute>   
- [Sub Statement](../Topic/Sub%20Statement%20\(Visual%20Basic\).md)
+ [Sub Statement](/dotnet/visual-basic/language-reference/statements/sub-statement)

@@ -1,5 +1,5 @@
 ---
-title: "Declare statements in a Module cannot be declared &#39;&lt;specifier&gt;&#39;"
+title: "Declare statements in a Module cannot be declared &#39;&lt;specifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ A `Declare` declaration has a specifier that is not valid within a `Module` decl
 -   Remove the specifier.  
   
 ## See Also  
- [Delegate Statement](../Topic/Delegate%20Statement.md)   
- [Module Statement](../Topic/Module%20Statement.md)
+ [Delegate Statement](/dotnet/visual-basic/language-reference/statements/delegate-statement)   
+ [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)

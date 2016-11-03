@@ -1,7 +1,7 @@
 ---
-title: "Changing a Symbol or Symbol Name (ID)"
+title: "Changing a Symbol or Symbol Name (ID) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Changing a Symbol or Symbol Name (ID)
-When you create a new resource or resource object, the development environment assigns it a default symbol name, for example, IDD_DIALOG1. You can use the [Properties Window](../Topic/Properties%20Window.md) to change the default symbol name or to change the name of any symbol already associated with a resource.  
+When you create a new resource or resource object, the development environment assigns it a default symbol name, for example, IDD_DIALOG1. You can use the [Properties Window](/visual-studio/ide/reference/properties-window) to change the default symbol name or to change the name of any symbol already associated with a resource.  
   
 ### To change a resource's symbol name  
   

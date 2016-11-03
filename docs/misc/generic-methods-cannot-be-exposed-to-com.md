@@ -1,5 +1,5 @@
 ---
-title: "Generic methods cannot be exposed to COM"
+title: "Generic methods cannot be exposed to COM | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ A [!INCLUDE[dnprdnshort](../error-messages/tool-errors/includes/dnprdnshort_md.m
 -   Remove the generic procedure or procedures from the [!INCLUDE[dnprdnshort](../error-messages/tool-errors/includes/dnprdnshort_md.md)] component, or do not use it for COM interop.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [COM Interop](../Topic/COM%20Interop%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [COM Interop](/dotnet/visual-basic/programming-guide/com-interop/index)

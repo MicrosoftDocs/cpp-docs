@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;membername&gt; has the same name as a type parameter"
+title: "&#39;&lt;membername&gt; has the same name as a type parameter | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ A member of a generic class or structure has the same name as a type parameter o
 -   Change the name of the class or structure member so that it is different from every type parameter name.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Type List](../Topic/Type%20List%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Type List](/dotnet/visual-basic/language-reference/statements/type-list)

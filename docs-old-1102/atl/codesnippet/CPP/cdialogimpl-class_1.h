@@ -1,0 +1,1 @@
+   enum { IDD = IDD_MYDLG };

@@ -1,7 +1,7 @@
 ---
-title: "CHeapPtrBase Class"
+title: "CHeapPtrBase Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -69,8 +69,8 @@ template <class T,  class Allocator = CCRTAllocator> class CHeapPtrBase
 |Name|Description|  
 |----------|-----------------|  
 |[CHeapPtrBase::AllocateBytes](../Topic/CHeapPtrBase::AllocateBytes.md)|Call this method to allocate memory.|  
-|[CHeapPtrBase::Attach](../Topic/CHeapPtrBase::Attach.md)|Call this method to take ownership of an existing pointer.|  
-|[CHeapPtrBase::Detach](../Topic/CHeapPtrBase::Detach.md)|Call this method to release ownership of a pointer.|  
+|[CHeapPtrBase::Attach](/visual-studio/profiling/attach)|Call this method to take ownership of an existing pointer.|  
+|[CHeapPtrBase::Detach](/visual-studio/profiling/detach)|Call this method to release ownership of a pointer.|  
 |[CHeapPtrBase::Free](../Topic/CHeapPtrBase::Free.md)|Call this method to delete an object pointed to by a `CHeapPtrBase`.|  
 |[CHeapPtrBase::ReallocateBytes](../Topic/CHeapPtrBase::ReallocateBytes.md)|Call this method to reallocate memory.|  
   

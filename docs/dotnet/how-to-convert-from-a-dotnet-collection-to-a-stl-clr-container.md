@@ -1,7 +1,7 @@
 ---
-title: "How to: Convert from a .NET Collection to a STL-CLR Container"
+title: "How to: Convert from a .NET Collection to a STL-CLR Container | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

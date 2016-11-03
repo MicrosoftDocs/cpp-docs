@@ -1,7 +1,7 @@
 ---
-title: "CComCriticalSection Class"
+title: "CComCriticalSection Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -58,7 +58,7 @@ class CComCriticalSection
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCriticalSection::Init](../Topic/CComCriticalSection::Init.md)|Creates and initializes a critical section object.|  
+|[CComCriticalSection::Init](/visual-studio/debugger/init)|Creates and initializes a critical section object.|  
 |[CComCriticalSection::Lock](../Topic/CComCriticalSection::Lock.md)|Obtains ownership of the critical section object.|  
 |[CComCriticalSection::Term](../Topic/CComCriticalSection::Term.md)|Releases system resources used by the critical section object.|  
 |[CComCriticalSection::Unlock](../Topic/CComCriticalSection::Unlock.md)|Releases ownership of the critical section object.|  
@@ -110,7 +110,7 @@ HRESULT Lock() throw();
  Returns `S_OK` on success, **E_OUTOFMEMORY** or **E_FAIL** on failure.  
   
 ### Remarks  
- The critical section object must first be initialized with a call to the [Init](../Topic/CComCriticalSection::Init.md) method. When the protected code has finished executing, the thread must call [Unlock](../Topic/CComCriticalSection::Unlock.md) to release ownership of the critical section.  
+ The critical section object must first be initialized with a call to the [Init](/visual-studio/debugger/init) method. When the protected code has finished executing, the thread must call [Unlock](../Topic/CComCriticalSection::Unlock.md) to release ownership of the critical section.  
   
 ##  <a name="ccomcriticalsection__m_sec"></a>  CComCriticalSection::m_sec  
  Contains a critical section object that is used by all `CComCriticalSection` methods.  

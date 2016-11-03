@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB3173"
+title: "MSBuild Error MSB3173 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,7 +41,7 @@ translation.priority.mt:
   
 ### To correct this error  
   
--   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md).  
+-   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources).  
   
 ## See Also  
  [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)

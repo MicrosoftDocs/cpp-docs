@@ -1,5 +1,5 @@
 ---
-title: "Codepage &#39;&lt;name&gt;&#39; is invalid or not installed"
+title: "Codepage &#39;&lt;name&gt;&#39; is invalid or not installed | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ The specified codepage is not valid or cannot be found.
 -   Examine your code and determine the solution that is appropriate to your specific case  
   
 ## See Also  
- [Debugger Basics](../Topic/Debugger%20Basics.md)
+ [Debugger Basics](/visual-studio/debugger/debugger-basics)

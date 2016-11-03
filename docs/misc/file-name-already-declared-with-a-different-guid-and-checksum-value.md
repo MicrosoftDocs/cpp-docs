@@ -1,5 +1,5 @@
 ---
-title: "File name already declared with a different GUID and checksum value"
+title: "File name already declared with a different GUID and checksum value | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ An attempt has been made to declare a file, but the file already exists with a d
 -   Delete the redundant file if it is not needed.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

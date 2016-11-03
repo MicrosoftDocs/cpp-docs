@@ -1,5 +1,5 @@
 ---
-title: "Expression is of type &#39;&lt;typename&gt;&#39;, which is not a collection type"
+title: "Expression is of type &#39;&lt;typename&gt;&#39;, which is not a collection type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -46,5 +46,5 @@ The group variable specified in a `For Each` statement is not a collection objec
   
 ## See Also  
  <xref:System.Collections.IEnumerable>   
- [For Each...Next Statement](../Topic/For%20Each...Next%20Statement%20\(Visual%20Basic\).md)   
+ [For Each...Next Statement](/dotnet/visual-basic/language-reference/statements/for-each-next-statement)   
  [Visual Basic Collection Class](http://msdn.microsoft.com/en-us/0cb2d1ad-c58d-42c0-8e69-d81f5a15e532)

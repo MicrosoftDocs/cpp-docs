@@ -1,5 +1,5 @@
 ---
-title: "&lt;type1&gt; &#39;&lt;typename&gt;&#39; cannot be declared &#39;Overrides&#39; because it does not override a &lt;type1&gt; in a base &lt;type2&gt;"
+title: "&lt;type1&gt; &#39;&lt;typename&gt;&#39; cannot be declared &#39;Overrides&#39; because it does not override a &lt;type1&gt; in a base &lt;type2&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

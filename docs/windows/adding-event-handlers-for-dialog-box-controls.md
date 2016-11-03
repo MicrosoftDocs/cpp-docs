@@ -1,7 +1,7 @@
 ---
-title: "Adding Event Handlers for Dialog Box Controls"
+title: "Adding Event Handlers for Dialog Box Controls | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -49,7 +49,7 @@ For project dialog boxes that are already associated with a class, you can take 
   
 1.  Click the control for which you want to handle the notification event.  
   
-2.  In the [Properties window](../Topic/Properties%20Window.md), click the **ControlEvents** button to display the list of common Windows events associated with the control. For example, the standard **OK** button on the **About** dialog box lists the following notification events:  
+2.  In the [Properties window](/visual-studio/ide/reference/properties-window), click the **ControlEvents** button to display the list of common Windows events associated with the control. For example, the standard **OK** button on the **About** dialog box lists the following notification events:  
   
  **BN_CLICKED**  
   

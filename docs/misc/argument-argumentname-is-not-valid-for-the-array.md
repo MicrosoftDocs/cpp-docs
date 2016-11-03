@@ -1,5 +1,5 @@
 ---
-title: "Argument &#39;&lt;argumentname&gt;&#39; is not valid for the array"
+title: "Argument &#39;&lt;argumentname&gt;&#39; is not valid for the array | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,5 +40,5 @@ An array contains an argument that is not valid.
 -   Check the spelling of arguments in the expression. A misspelled variable name can implicitly create a numeric variable that is initialized to zero.  
   
 ## See Also  
- [Passing Arguments by Value and by Reference](../Topic/Passing%20Arguments%20by%20Value%20and%20by%20Reference%20\(Visual%20Basic\).md)   
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Passing Arguments by Value and by Reference](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)   
+ [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)

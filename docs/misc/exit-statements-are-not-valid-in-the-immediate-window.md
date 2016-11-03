@@ -1,5 +1,5 @@
 ---
-title: "&#39;Exit&#39; statements are not valid in the Immediate window"
+title: "&#39;Exit&#39; statements are not valid in the Immediate window | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ translation.priority.mt:
 -   Remove `Exit` statements from the debugging code.  
   
 ## See Also  
- [Exit Statement](../Topic/Exit%20Statement%20\(Visual%20Basic\).md)   
- [End Statement](../Topic/End%20Statement.md)   
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Exit Statement](/dotnet/visual-basic/language-reference/statements/exit-statement)   
+ [End Statement](/dotnet/visual-basic/language-reference/statements/end-statement)   
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)

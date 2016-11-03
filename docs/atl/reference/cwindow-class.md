@@ -1,7 +1,7 @@
 ---
-title: "CWindow Class"
+title: "CWindow Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -62,7 +62,7 @@ class CWindow
 |Name|Description|  
 |----------|-----------------|  
 |[CWindow::ArrangeIconicWindows](../Topic/CWindow::ArrangeIconicWindows.md)|Arranges all minimized child windows.|  
-|[CWindow::Attach](../Topic/CWindow::Attach.md)|Attaches a window to the `CWindow` object.|  
+|[CWindow::Attach](/visual-studio/profiling/attach)|Attaches a window to the `CWindow` object.|  
 |[CWindow::BeginPaint](../Topic/CWindow::BeginPaint.md)|Prepares the window for painting.|  
 |[CWindow::BringWindowToTop](../Topic/CWindow::BringWindowToTop.md)|Brings the window to the top of the Z order.|  
 |[CWindow::CenterWindow](../Topic/CWindow::CenterWindow.md)|Centers the window against a given window.|  
@@ -78,7 +78,7 @@ class CWindow
 |[CWindow::CreateSolidCaret](../Topic/CWindow::CreateSolidCaret.md)|Creates a solid rectangle for the system caret.|  
 |[CWindow::DeferWindowPos](../Topic/CWindow::DeferWindowPos.md)|Updates the specified multiple-window-position structure for the specified window.|  
 |[CWindow::DestroyWindow](../Topic/CWindow::DestroyWindow.md)|Destroys the window associated with the `CWindow` object.|  
-|[CWindow::Detach](../Topic/CWindow::Detach.md)|Detaches the window from the `CWindow` object.|  
+|[CWindow::Detach](/visual-studio/profiling/detach)|Detaches the window from the `CWindow` object.|  
 |[CWindow::DlgDirList](../Topic/CWindow::DlgDirList.md)|Fills a list box with the names of all files matching a specified path or file name.|  
 |[CWindow::DlgDirListComboBox](../Topic/CWindow::DlgDirListComboBox.md)|Fills a combo box with the names of all files matching a specified path or file name.|  
 |[CWindow::DlgDirSelect](../Topic/CWindow::DlgDirSelect.md)|Retrieves the current selection from a list box.|  

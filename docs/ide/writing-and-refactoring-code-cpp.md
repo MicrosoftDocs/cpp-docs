@@ -1,7 +1,7 @@
 ---
-title: "Writing and refactoring code (C++)"
+title: "Writing and refactoring code (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -44,10 +44,10 @@ The Visual C++ code editor and IDE provide many coding aids. Some are unique to 
   
  ![C&#43;&#43; member list drop down](../ide/media/vs2015_cpp_statement_completion.png "vs2015_cpp_statement_completion")  
   
- For complete information see [Visual C++ Intellisense](../Topic/Visual%20C++%20Intellisense.md).  
+ For complete information see [Visual C++ Intellisense](/visual-studio/ide/visual-cpp-intellisense).  
   
 ### Insert Snippets  
- A snippet is a predefined piece of source code. Right-click on a single point or on selected text to either insert a snippet or surround the selected text with the snippet. The following illustration shows the three steps to surround a selected statement with a for loop. The yellow highlights in the final image are editable fields that you access with the tab key. For more information, see [Code Snippets](../Topic/Code%20Snippets.md).  
+ A snippet is a predefined piece of source code. Right-click on a single point or on selected text to either insert a snippet or surround the selected text with the snippet. The following illustration shows the three steps to surround a selected statement with a for loop. The yellow highlights in the final image are editable fields that you access with the tab key. For more information, see [Code Snippets](/visual-studio/ide/code-snippets).  
   
  ![Visual C&#43;&#43; Insert Snippet Drop&#45;down](../ide/media/vs2015_cpp_surround_with.png "vs2015_cpp_surround_with")  
   
@@ -62,7 +62,7 @@ The Visual C++ code editor and IDE provide many coding aids. Some are unique to 
  ![Visual C&#43;&#43; Class Wizard](../ide/media/vs2015_cpp_class_wizard.png "vs2015_cpp_class_wizard")  
   
 ## Refactoring  
- Refactorings are available under the Quick Action context menu item, or by clicking on a [light bulb](../Topic/Perform%20quick%20actions%20with%20light%20bulbs.md) in the editor.  
+ Refactorings are available under the Quick Action context menu item, or by clicking on a [light bulb](/visual-studio/ide/perform-quick-actions-with-light-bulbs) in the editor.  
   
 ### Rename  
  Rename a type or function or variable wherever it is used in the specified scope. In the following illustration, the `Eat` method will be renamed to `Devour` in both the derived and base class.  
@@ -115,7 +115,7 @@ The Visual C++ code editor and IDE provide many coding aids. Some are unique to 
  Hover over a variable or function declaration, right-click, then choose **Go To Definition** to open the document where the object is defined.  
   
 ### View Call Hierarchy  
- Right click on any function call and view a resursive list of all the functions that it calls, and all the functions that call it. Each function in the list can be expanded in the same way. For more information, see [Call Hierarchy](../Topic/Call%20Hierarchy.md).  
+ Right click on any function call and view a resursive list of all the functions that it calls, and all the functions that call it. Each function in the list can be expanded in the same way. For more information, see [Call Hierarchy](/visual-studio/ide/reference/call-hierarchy).  
   
  ![Visual C&#43;&#43; Call Hierarchy](../ide/media/vs2015_cpp_call_hierarchy.png "vs2015_cpp_call_hierarchy")  
   
@@ -123,7 +123,7 @@ The Visual C++ code editor and IDE provide many coding aids. Some are unique to 
  Right-click and choose Toggle Header / Code File to switch back and forth between a header file and its associated code file.  
   
 ### Outlining  
- Right-click anywhere in a source code file and choose **Outlining** to collapse or expand definitions and/or custom regions to make it easier to browse only the parts you are interested in. For more information, see [Outlining](../Topic/Outlining.md).  
+ Right-click anywhere in a source code file and choose **Outlining** to collapse or expand definitions and/or custom regions to make it easier to browse only the parts you are interested in. For more information, see [Outlining](/visual-studio/ide/outlining).  
   
  ![Visual C&#43;&#43; Outlining](../ide/media/vs2015_cpp_outlining.png "vs2015_cpp_outlining")  
   

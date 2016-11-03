@@ -1,5 +1,5 @@
 ---
-title: "&#39;(&#39; expected"
+title: "&#39;(&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ An argument list in a procedure call does not begin with an opening parenthesis 
 -   Add an opening parenthesis character to the beginning of the list.  
   
 ## See Also  
- [Procedure Parameters and Arguments](../Topic/Procedure%20Parameters%20and%20Arguments%20\(Visual%20Basic\).md)
+ [Procedure Parameters and Arguments](/dotnet/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)

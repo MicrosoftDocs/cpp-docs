@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.DivideByZeroException"
+title: "Troubleshooting Exceptions: System.DivideByZeroException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -46,5 +46,5 @@ A <xref:System.DivideByZeroException> exception is thrown when there is an attem
   
 ## See Also  
  <xref:System.DivideByZeroException>   
- [Arithmetic Operators in Visual Basic](../Topic/Arithmetic%20Operators%20in%20Visual%20Basic.md)   
+ [Arithmetic Operators in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators)   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)

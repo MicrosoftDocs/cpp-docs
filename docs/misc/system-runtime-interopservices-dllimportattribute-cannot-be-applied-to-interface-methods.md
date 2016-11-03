@@ -1,5 +1,5 @@
 ---
-title: "&#39;System.Runtime.InteropServices.DllImportAttribute&#39; cannot be applied to interface methods"
+title: "&#39;System.Runtime.InteropServices.DllImportAttribute&#39; cannot be applied to interface methods | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -50,4 +50,4 @@ A procedure is defined inside an interface, but the procedure definition applies
   
 ## See Also  
  <xref:System.Runtime.InteropServices.DllImportAttribute>   
- [Interface Statement](../Topic/Interface%20Statement%20\(Visual%20Basic\).md)
+ [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)

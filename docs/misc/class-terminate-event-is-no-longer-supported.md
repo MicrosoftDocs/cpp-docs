@@ -1,5 +1,5 @@
 ---
-title: "&#39;Class_Terminate&#39; event is no longer supported"
+title: "&#39;Class_Terminate&#39; event is no longer supported | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,7 +40,7 @@ translation.priority.mt:
   
  The `Class_Terminate` event of previous versions of Visual Basic is replaced by class destructors.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42002  
   

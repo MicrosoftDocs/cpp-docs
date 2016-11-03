@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1945"
+title: "Compiler Error CS1945 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -64,4 +64,4 @@ class Test
   
 ## See Also  
  [Expression Trees](../Topic/Expression%20Trees%20\(C%23%20and%20Visual%20Basic\).md)   
- [Statements, Expressions, and Operators](../Topic/Statements,%20Expressions,%20and%20Operators%20\(C%23%20Programming%20Guide\).md)
+ [Statements, Expressions, and Operators](/dotnet/csharp/programming-guide/statements-expressions-operators/index)

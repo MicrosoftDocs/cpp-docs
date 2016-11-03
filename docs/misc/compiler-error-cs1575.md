@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1575"
+title: "Compiler Error CS1575 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1575
 A stackalloc expression requires [] after type  
   
- The size of the requested allocation, with [stackalloc](../Topic/stackalloc%20\(C%23%20Reference\).md), must be specified in square brackets.  
+ The size of the requested allocation, with [stackalloc](/dotnet/csharp/language-reference/keywords/stackalloc), must be specified in square brackets.  
   
  The following sample generates CS1575:  
   

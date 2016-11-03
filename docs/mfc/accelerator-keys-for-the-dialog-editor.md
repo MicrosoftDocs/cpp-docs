@@ -1,7 +1,7 @@
 ---
-title: "Accelerator Keys for the Dialog Editor"
+title: "Accelerator Keys for the Dialog Editor | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Accelerator Keys for the Dialog Editor
-Below are the default accelerator keys for the Dialog editor commands. To change shortcut keys, click **Options** on the **Tools** menu, then choose **Keyboard** under the **Environment** folder. For more information, see [Identifying and Customizing Keyboard Shortcuts](../Topic/Identifying%20and%20Customizing%20Keyboard%20Shortcuts%20in%20Visual%20Studio.md).  
+Below are the default accelerator keys for the Dialog editor commands. To change shortcut keys, click **Options** on the **Tools** menu, then choose **Keyboard** under the **Environment** folder. For more information, see [Identifying and Customizing Keyboard Shortcuts](/visual-studio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).  
   
 > [!NOTE]
 >  The options available in dialog boxes, and the names and locations of menu commands you see, might differ from what is described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

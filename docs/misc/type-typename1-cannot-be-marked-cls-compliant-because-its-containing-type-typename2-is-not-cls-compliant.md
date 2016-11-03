@@ -1,5 +1,5 @@
 ---
-title: "Type &#39;&lt;typename1&gt;&#39; cannot be marked CLS-compliant because its containing type &#39;&lt;typename2&gt;&#39; is not CLS-compliant"
+title: "Type &#39;&lt;typename1&gt;&#39; cannot be marked CLS-compliant because its containing type &#39;&lt;typename2&gt;&#39; is not CLS-compliant | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -44,7 +44,7 @@ A class or interface is marked as `<CLSCompliant(True)>` when it is nested in a 
   
  If you do not apply the <xref:System.CLSCompliantAttribute> to an element, it is considered to be noncompliant.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40030  
   

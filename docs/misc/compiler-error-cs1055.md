@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1055"
+title: "Compiler Error CS1055 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1055
 An add or remove accessor expected  
   
- If your [event](../Topic/event%20\(C%23%20Reference\).md) is not declared as a field, it must define both **add** and **remove** accessor functions.  
+ If your [event](/dotnet/csharp/language-reference/keywords/event) is not declared as a field, it must define both **add** and **remove** accessor functions.  
   
  The following sample generates CS1055:  
   

@@ -1,7 +1,7 @@
 ---
-title: "Creating a Menu"
+title: "Creating a Menu | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -53,7 +53,7 @@ New Item Box
   
 3.  Type a name for your new menu, for example, "File".  
   
-     The text you type appears in both the **Menu** editor and in the **Caption** box in the [Properties Window](../Topic/Properties%20Window.md). You can edit the properties for your new menu in either location.  
+     The text you type appears in both the **Menu** editor and in the **Caption** box in the [Properties Window](/visual-studio/ide/reference/properties-window). You can edit the properties for your new menu in either location.  
   
      Once you have given your new menu a name on the menu bar, the new-item box shifts to the right (to allow you to add another menu), and another new-item box opens below your first menu so you can add menu commands to it.  
   

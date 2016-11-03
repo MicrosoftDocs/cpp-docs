@@ -1,7 +1,7 @@
 ---
-title: "Defining a Message Handler for a Reflected Message"
+title: "Defining a Message Handler for a Reflected Message | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -52,7 +52,7 @@ Once you have created a new MFC control class, you can define message handlers f
   
 2.  In Class View, click the name of your control class.  
   
-3.  In the [Properties window](../Topic/Properties%20Window.md), the control class name appears in the **Class Name** list.  
+3.  In the [Properties window](/visual-studio/ide/reference/properties-window), the control class name appears in the **Class Name** list.  
   
 4.  Click the **Messages** button to display the Windows messages available to add to the control.  
   

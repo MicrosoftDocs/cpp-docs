@@ -1,5 +1,5 @@
 ---
-title: "&#39;Class&#39; constraint cannot be specified multiple times for the same type parameter"
+title: "&#39;Class&#39; constraint cannot be specified multiple times for the same type parameter | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ A constraint list includes the [Class (Visual Basic)](http://msdn.microsoft.com/
 -   Remove any redundant `Class` keywords. You should have only one in the constraint list.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Value Types and Reference Types](../Topic/Value%20Types%20and%20Reference%20Types.md)
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Value Types and Reference Types](/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)

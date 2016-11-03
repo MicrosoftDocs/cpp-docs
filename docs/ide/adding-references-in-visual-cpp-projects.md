@@ -1,7 +1,7 @@
 ---
-title: "Adding references in Visual C++ projects"
+title: "Adding references in Visual C++ projects | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -92,7 +92,7 @@ It is very common for programs to call into APIs in other binaries such as DLLs,
  Specifies that this assembly is used in the build process. If `true`, the assembly is used on the compiler command line during the build.  
   
 ### Project-to-project reference properties  
- The following properties define a *project-to-project reference* from the project that is selected in the **References** pane to another project  in the same solution. For more information, see [Managing references in a project](../Topic/Managing%20references%20in%20a%20project.md).  
+ The following properties define a *project-to-project reference* from the project that is selected in the **References** pane to another project  in the same solution. For more information, see [Managing references in a project](/visual-studio/ide/managing-references-in-a-project).  
   
  **Link Library Dependencies**  
  When this property is **True**, the project system links into the dependent project the .lib files that are produced by the independent project. Typically, you will specify **True**.  

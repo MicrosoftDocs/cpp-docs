@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1578"
+title: "Compiler Error CS1578 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1578
 Filename, single-line comment or end-of-line expected  
   
- After a [#line](../Topic/%23line%20\(C%23%20Reference\).md) directive, only a file name (in double quotation marks) or a single-line comment is allowed.  
+ After a [#line](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-line) directive, only a file name (in double quotation marks) or a single-line comment is allowed.  
   
  The following sample generates CS1578:  
   

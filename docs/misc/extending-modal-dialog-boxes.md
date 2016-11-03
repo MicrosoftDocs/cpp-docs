@@ -1,7 +1,7 @@
 ---
-title: "Extending Modal Dialog Boxes"
+title: "Extending Modal Dialog Boxes | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -85,4 +85,4 @@ To guarantee functional and visual compatibility with Visual Studio, create moda
  [!code-cs[VSModalDialog#21](../misc/codesnippet/CSharp/extending-modal-dialog-boxes_6.cs)]  
   
 ## See Also  
- [Creating and Managing Modal Dialog Boxes](../Topic/Creating%20and%20Managing%20Modal%20Dialog%20Boxes.md)
+ [Creating and Managing Modal Dialog Boxes](/visual-studio/extensibility/creating-and-managing-modal-dialog-boxes)

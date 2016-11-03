@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1027"
+title: "Compiler Error CS1027 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1027
 \#endif directive expected  
   
- A matching `#endif` [preprocessor directive](../Topic/C%23%20Preprocessor%20Directives.md) was not found for a specified `#if` directive. Or, the compiler may have found a `#endregion` directive when there was no matching `#region` directive inside a `#if` block.  
+ A matching `#endif` [preprocessor directive](/dotnet/csharp/language-reference/preprocessor-directives/index) was not found for a specified `#if` directive. Or, the compiler may have found a `#endregion` directive when there was no matching `#region` directive inside a `#if` block.  
   
  The following sample generates CS1027:  
   

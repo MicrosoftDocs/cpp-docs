@@ -1,5 +1,5 @@
 ---
-title: "Code resource not found"
+title: "Code resource not found | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,4 +40,4 @@ A call was made to a procedure in a code resource, but the code resource could n
 -   Check that the resource is available and properly referenced.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

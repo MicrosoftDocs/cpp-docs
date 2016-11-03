@@ -1,5 +1,5 @@
 ---
-title: "The ConnectionTimeout must be greater than 0"
+title: "The ConnectionTimeout must be greater than 0 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -33,7 +33,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # The ConnectionTimeout must be greater than 0
-When uploading and downloading files with the [My.Computer.Network Object](../Topic/My.Computer.Network%20Object.md), you must specify a `connectionTimeout` greater than `0`.  
+When uploading and downloading files with the [My.Computer.Network Object](/dotnet/visual-basic/language-reference/objects/my-computer-network-object), you must specify a `connectionTimeout` greater than `0`.  
   
 ### To correct this error  
   

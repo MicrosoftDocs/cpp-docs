@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0247"
+title: "Compiler Error CS0247 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0247
 Cannot use a negative size with stackalloc  
   
- A negative number was passed to a [stackalloc](../Topic/stackalloc%20\(C%23%20Reference\).md) statement.  
+ A negative number was passed to a [stackalloc](/dotnet/csharp/language-reference/keywords/stackalloc) statement.  
   
  The following sample generates CS0247:  
   

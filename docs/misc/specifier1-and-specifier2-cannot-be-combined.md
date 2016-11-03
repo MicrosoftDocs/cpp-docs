@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;specifier1&gt;&#39; and &#39;&lt;specifier2&gt;&#39; cannot be combined"
+title: "&#39;&lt;specifier1&gt;&#39; and &#39;&lt;specifier2&gt;&#39; cannot be combined | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ Two incompatible specifiers, such as `Shadows` and `Overrides` are used together
 -   Remove one or the other specifier.  
   
 ## See Also  
- [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)   
- [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md)
+ [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)   
+ [Overrides](/dotnet/visual-basic/language-reference/modifiers/overrides)

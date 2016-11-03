@@ -1,5 +1,5 @@
 ---
-title: "Use &#39;FileGetObject&#39; instead of &#39;FileGet&#39; when using argument of type &#39;Object&#39;"
+title: "Use &#39;FileGetObject&#39; instead of &#39;FileGet&#39; when using argument of type &#39;Object&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -43,4 +43,4 @@ The `FileGet` method includes an argument of type `Object`. `FileGetObject` shou
   
 ## See Also  
  [NOT IN BUILD: FileGetObject Function](http://msdn.microsoft.com/en-us/3eda786b-d1ee-4b44-9dd7-0ea6bff072c0)   
- [My.Computer.FileSystem Object](../Topic/My.Computer.FileSystem%20Object.md)
+ [My.Computer.FileSystem Object](/dotnet/visual-basic/language-reference/objects/my-computer-filesystem-object)

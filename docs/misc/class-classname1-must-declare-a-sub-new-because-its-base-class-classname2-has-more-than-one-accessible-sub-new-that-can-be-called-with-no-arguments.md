@@ -1,5 +1,5 @@
 ---
-title: "Class &#39;&lt;classname1&gt;&#39; must declare a &#39;Sub New&#39; because its base class &#39;&lt;classname2&gt;&#39; has more than one accessible &#39;Sub New&#39; that can be called with no arguments"
+title: "Class &#39;&lt;classname1&gt;&#39; must declare a &#39;Sub New&#39; because its base class &#39;&lt;classname2&gt;&#39; has more than one accessible &#39;Sub New&#39; that can be called with no arguments | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -53,7 +53,7 @@ A derived class does not declare a constructor, and [!INCLUDE[vbprvb](../dotnet/
 ## See Also  
  [Object Lifetime: How Objects Are Created and Destroyed](../Topic/Object%20Lifetime:%20How%20Objects%20Are%20Created%20and%20Destroyed%20\(Visual%20Basic\).md)   
  [NOT IN BUILD: Using Constructors and Destructors](http://msdn.microsoft.com/en-us/548eebe1-86c4-4377-b2f5-447cb8be3d90)   
- [Optional](../Topic/Optional%20\(Visual%20Basic\).md)   
- [ParamArray](../Topic/ParamArray%20\(Visual%20Basic\).md)   
- [Optional Parameters](../Topic/Optional%20Parameters%20\(Visual%20Basic\).md)   
- [Parameter Arrays](../Topic/Parameter%20Arrays%20\(Visual%20Basic\).md)
+ [Optional](/dotnet/visual-basic/language-reference/modifiers/optional)   
+ [ParamArray](/dotnet/visual-basic/language-reference/modifiers/paramarray)   
+ [Optional Parameters](/dotnet/visual-basic/language-reference/procedures/optional-parameters)   
+ [Parameter Arrays](/dotnet/visual-basic/language-reference/procedures/parameter-arrays)

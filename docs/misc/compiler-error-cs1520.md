@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1520"
+title: "Compiler Error CS1520 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1520
 Method must have a return type  
   
- A method that is declared in a class, struct, or interface must have an explicit return type. In the following example, the Square method has a return value of [string](../Topic/string%20\(C%23%20Reference\).md):  
+ A method that is declared in a class, struct, or interface must have an explicit return type. In the following example, the Square method has a return value of [string](/dotnet/csharp/language-reference/keywords/string):  
   
 ```  
 class Test  
@@ -86,5 +86,5 @@ public class Class1
 ```  
   
 ## See Also  
- [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md)   
- [Constructors](../Topic/Constructors%20\(C%23%20Programming%20Guide\).md)
+ [Methods](/dotnet/csharp/programming-guide/classes-and-structs/methods)   
+ [Constructors](/dotnet/csharp/programming-guide/classes-and-structs/constructors)

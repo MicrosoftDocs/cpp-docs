@@ -1,7 +1,7 @@
 ---
-title: "CComEnum Class"
+title: "CComEnum Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -76,7 +76,7 @@ template <class Base,
   
 -   Create an instance of the `CComObject` specialization.  
   
--   Initialize the enumerator object by calling [CComEnumImpl::Init](../Topic/CComEnumImpl::Init.md).  
+-   Initialize the enumerator object by calling [CComEnumImpl::Init](/visual-studio/debugger/init).  
   
 -   Return the enumerator interface to the client.  
   

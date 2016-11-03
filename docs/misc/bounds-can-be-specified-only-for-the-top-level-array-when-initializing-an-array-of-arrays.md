@@ -1,5 +1,5 @@
 ---
-title: "Bounds can be specified only for the top-level array when initializing an array of arrays"
+title: "Bounds can be specified only for the top-level array when initializing an array of arrays | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,4 +49,4 @@ An array initialization for a jagged array (array of arrays) sets the initial le
 ## See Also  
  [NOTINBUILD  an Array Variable](http://msdn.microsoft.com/en-us/c2da78bd-6928-46ba-805f-44f819dfaf93)   
  [NOTINBUILD Jagged Arrays in Visual Basic](http://msdn.microsoft.com/en-us/05c12439-ee8f-4fef-ba75-b35402b67ab9)   
- [New Operator](../Topic/New%20Operator%20\(Visual%20Basic\).md)
+ [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator)

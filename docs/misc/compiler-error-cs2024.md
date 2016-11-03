@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS2024"
+title: "Compiler Error CS2024 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS2024
 Invalid file section alignment number '#'  
   
- An invalid value was passed to the [/filealign](../Topic/-filealign%20\(C%23%20Compiler%20Options\).md) compiler option.  
+ An invalid value was passed to the [/filealign](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option) compiler option.  
   
  The following sample generates CS2024:  
   

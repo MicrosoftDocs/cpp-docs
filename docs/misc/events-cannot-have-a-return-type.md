@@ -1,5 +1,5 @@
 ---
-title: "Events cannot have a return type"
+title: "Events cannot have a return type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ Events can accept arguments but cannot directly return values.
 -   Remove the return type from the `Event` statement.  
   
 ## See Also  
- [Event Statement](../Topic/Event%20Statement.md)
+ [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)

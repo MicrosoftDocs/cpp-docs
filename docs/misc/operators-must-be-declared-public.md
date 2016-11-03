@@ -1,5 +1,5 @@
 ---
-title: "Operators must be declared &#39;Public&#39;"
+title: "Operators must be declared &#39;Public&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -36,9 +36,9 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Operators must be declared &#39;Public&#39;
-An [Operator Statement](../Topic/Operator%20Statement.md) does not include the [Public](../Topic/Public%20\(Visual%20Basic\).md) keyword.  
+An [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement) does not include the [Public](/dotnet/visual-basic/language-reference/modifiers/public) keyword.  
   
- An `Operator` procedure requires both the `Public` and [Shared](../Topic/Shared%20\(Visual%20Basic\).md) keywords, and a conversion operator also requires either the [Widening](../Topic/Widening%20\(Visual%20Basic\).md) or the [Narrowing](../Topic/Narrowing%20\(Visual%20Basic\).md) keyword.  
+ An `Operator` procedure requires both the `Public` and [Shared](/dotnet/visual-basic/language-reference/modifiers/shared) keywords, and a conversion operator also requires either the [Widening](/dotnet/visual-basic/language-reference/modifiers/widening) or the [Narrowing](/dotnet/visual-basic/language-reference/modifiers/narrowing) keyword.  
   
  **Error ID:** BC33011  
   
@@ -47,7 +47,7 @@ An [Operator Statement](../Topic/Operator%20Statement.md) does not include the [
 -   Add the `Public` keyword to the `Operator` statement.  
   
 ## See Also  
- [Operator Procedures](../Topic/Operator%20Procedures%20\(Visual%20Basic\).md)   
- [Operator Statement](../Topic/Operator%20Statement.md)   
+ [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
+ [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)   
  [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
  [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)

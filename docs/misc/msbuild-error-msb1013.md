@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB1013"
+title: "MSBuild Error MSB1013 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -48,4 +48,4 @@ translation.priority.mt:
 -   Remove the reference to the original response file from the response file that it references.  
   
 ## See Also  
- [Command-Line Reference](../Topic/MSBuild%20Command-Line%20Reference.md)
+ [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)

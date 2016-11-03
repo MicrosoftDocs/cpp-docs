@@ -1,5 +1,5 @@
 ---
-title: "&#39;ElseIf&#39; must be preceded by a matching &#39;If&#39; or &#39;ElseIf&#39;"
+title: "&#39;ElseIf&#39; must be preceded by a matching &#39;If&#39; or &#39;ElseIf&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,5 +49,5 @@ An `ElseIf` statement occurs without a corresponding `If` statement. `ElseIf` mu
 3.  Ensure that this `If` block is correctly formatted.  
   
 ## See Also  
- [If...Then...Else Statement](../Topic/If...Then...Else%20Statement%20\(Visual%20Basic\).md)   
- [Decision Structures](../Topic/Decision%20Structures%20\(Visual%20Basic\).md)
+ [If...Then...Else Statement](/dotnet/visual-basic/language-reference/statements/if-then-else-statement)   
+ [Decision Structures](/dotnet/visual-basic/programming-guide/language-features/control-flow/decision-structures)

@@ -1,7 +1,7 @@
 ---
-title: "IEnumOnSTLImpl Class"
+title: "IEnumOnSTLImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -70,7 +70,7 @@ template <class Base,
 |Name|Description|  
 |----------|-----------------|  
 |[IEnumOnSTLImpl::Clone](../Topic/IEnumOnSTLImpl::Clone.md)|The implementation of [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx).|  
-|[IEnumOnSTLImpl::Init](../Topic/IEnumOnSTLImpl::Init.md)|Initializes the enumerator.|  
+|[IEnumOnSTLImpl::Init](/visual-studio/debugger/init)|Initializes the enumerator.|  
 |[IEnumOnSTLImpl::Next](../Topic/IEnumOnSTLImpl::Next.md)|The implementation of [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx).|  
 |[IEnumOnSTLImpl::Reset](../Topic/IEnumOnSTLImpl::Reset.md)|The implementation of [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx).|  
 |[IEnumOnSTLImpl::Skip](../Topic/IEnumOnSTLImpl::Skip.md)|The implementation of [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx).|  
@@ -87,7 +87,7 @@ template <class Base,
  `IEnumOnSTLImpl` provides the implementation for a COM enumerator interface where the items being enumerated are stored in an STL-compatible container. This class is analogous to the [CComEnumImpl](../../atl/reference/ccomenumimpl-class.md) class, which provides an implementation for an enumerator interface based on an array.  
   
 > [!NOTE]
->  See [CComEnumImpl::Init](../Topic/CComEnumImpl::Init.md) for details on further differences between `CComEnumImpl` and `IEnumOnSTLImpl`.  
+>  See [CComEnumImpl::Init](/visual-studio/debugger/init) for details on further differences between `CComEnumImpl` and `IEnumOnSTLImpl`.  
   
  Typically, you will *not* need to create your own enumerator class by deriving from this interface implementation. If you want to use an ATL-supplied enumerator based on an STL container, it is more common to create an instance of [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md), or to create a collection class that returns an enumerator by deriving from [ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md).  
   
@@ -147,7 +147,7 @@ CComPtr<IUnknown> m_spUnk;
 ```  
   
 ### Remarks  
- This smart pointer maintains a reference on the object passed to [IEnumOnSTLImpl::Init](../Topic/IEnumOnSTLImpl::Init.md), ensuring that it remains alive during the lifetime of the enumerator.  
+ This smart pointer maintains a reference on the object passed to [IEnumOnSTLImpl::Init](/visual-studio/debugger/init), ensuring that it remains alive during the lifetime of the enumerator.  
   
 ##  <a name="ienumonstlimpl__m_pcollection"></a>  IEnumOnSTLImpl::m_pcollection  
  This member points to the collection that provides the data driving the implementation of the enumerator interface.  
@@ -157,7 +157,7 @@ CollType* m_pcollection;
 ```  
   
 ### Remarks  
- This member is initialized by a call to [IEnumOnSTLImpl::Init](../Topic/IEnumOnSTLImpl::Init.md).  
+ This member is initialized by a call to [IEnumOnSTLImpl::Init](/visual-studio/debugger/init).  
   
 ##  <a name="ienumonstlimpl__m_iter"></a>  IEnumOnSTLImpl::m_iter  
  This member holds the iterator used to mark the current position within the collection and navigate to subsequent elements.  

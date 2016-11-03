@@ -1,5 +1,5 @@
 ---
-title: "Structures cannot have &#39;Inherits&#39; statements"
+title: "Structures cannot have &#39;Inherits&#39; statements | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ Unlike classes, structures do not support inheritance.
 -   Redesign your application to use classes instead.  
   
 ## See Also  
- [Structures](../Topic/Structures%20\(Visual%20Basic\).md)   
- [Structures and Classes](../Topic/Structures%20and%20Classes%20\(Visual%20Basic\).md)
+ [Structures](/dotnet/visual-basic/programming-guide/language-features/data-types/structures)   
+ [Structures and Classes](/dotnet/visual-basic/programming-guide/language-features/data-types/structures-and-classes)

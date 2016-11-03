@@ -1,7 +1,7 @@
 ---
-title: "CWorkerThread Class"
+title: "CWorkerThread Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -81,7 +81,7 @@ template <class   ThreadTraits = DefaultThreadTraits>
 |[CWorkerThread::GetThreadId](../Topic/CWorkerThread::GetThreadId.md)|Call this method to get the thread ID of the worker thread.|  
 |[CWorkerThread::Initialize](../Topic/CWorkerThread::Initialize.md)|Call this method to initialize the worker thread.|  
 |[CWorkerThread::RemoveHandle](../Topic/CWorkerThread::RemoveHandle.md)|Call this method to remove a handle from the list of waitable objects.|  
-|[CWorkerThread::Shutdown](../Topic/CWorkerThread::Shutdown.md)|Call this method to shut down the worker thread.|  
+|[CWorkerThread::Shutdown](/visual-studio/profiling/shutdown)|Call this method to shut down the worker thread.|  
   
 ## Remarks  
   
@@ -101,7 +101,7 @@ template <class   ThreadTraits = DefaultThreadTraits>
   
 5.  To remove an object from the list of waitable objects, call [CWorkerThread::RemoveHandle](../Topic/CWorkerThread::RemoveHandle.md).  
   
-6.  To terminate the thread, call [CWorkerThread::Shutdown](../Topic/CWorkerThread::Shutdown.md).  
+6.  To terminate the thread, call [CWorkerThread::Shutdown](/visual-studio/profiling/shutdown).  
   
 ## Requirements  
  **Header:** atlutil.h  
@@ -179,7 +179,7 @@ CWorkerThread() throw();
 ```  
   
 ### Remarks  
- Calls [CWorkerThread::Shutdown](../Topic/CWorkerThread::Shutdown.md).  
+ Calls [CWorkerThread::Shutdown](/visual-studio/profiling/shutdown).  
   
 ##  <a name="cworkerthread__getthreadhandle"></a>  CWorkerThread::GetThreadHandle  
  Call this method to get the thread handle of the worker thread.  
@@ -217,11 +217,11 @@ HRESULT Initialize(CWorkerThread<ThreadTraits>* pThread) throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This method should be called to initialize the object after creation or after a call to [CWorkerThread::Shutdown](../Topic/CWorkerThread::Shutdown.md).  
+ This method should be called to initialize the object after creation or after a call to [CWorkerThread::Shutdown](/visual-studio/profiling/shutdown).  
   
  To have two or more `CWorkerThread` objects use the same worker thread, initialize one of them without passing any arguments then pass a pointer to that object to the `Initialize` methods of the others. The objects initialized using the pointer should be shut down before the object used to initialize them.  
   
- See [CWorkerThread::Shutdown](../Topic/CWorkerThread::Shutdown.md) for information on how that method's behavior changes when initialized using a pointer to an existing object.  
+ See [CWorkerThread::Shutdown](/visual-studio/profiling/shutdown) for information on how that method's behavior changes when initialized using a pointer to an existing object.  
   
 ##  <a name="cworkerthread__removehandle"></a>  CWorkerThread::RemoveHandle  
  Call this method to remove a handle from the list of waitable objects.  

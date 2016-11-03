@@ -1,5 +1,5 @@
 ---
-title: "Inheriting from &#39;System.&lt;classname&gt;&#39; is not valid"
+title: "Inheriting from &#39;System.&lt;classname&gt;&#39; is not valid | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ A class cannot inherit from `System.Array`, `System.Delegate`, `System.Enum`, or
 -   Remove the `Inherits` statement or change it to inherit from a valid base class.  
   
 ## See Also  
- [Inheritance Basics](../Topic/Inheritance%20Basics%20\(Visual%20Basic\).md)   
- [Object Variable Declaration](../Topic/Object%20Variable%20Declaration%20\(Visual%20Basic\).md)
+ [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)   
+ [Object Variable Declaration](/dotnet/visual-basic/programming-guide/language-features/variables/object-variable-declaration)

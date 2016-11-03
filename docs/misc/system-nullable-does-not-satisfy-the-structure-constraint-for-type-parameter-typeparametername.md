@@ -1,5 +1,5 @@
 ---
-title: "&#39;System.Nullable&#39; does not satisfy the &#39;Structure&#39; constraint for type parameter &#39;&lt;typeparametername&gt;&#39;"
+title: "&#39;System.Nullable&#39; does not satisfy the &#39;Structure&#39; constraint for type parameter &#39;&lt;typeparametername&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -48,5 +48,5 @@ A generic type is invoked passing a type argument of <xref:System.Nullable`1> to
   
 ## See Also  
  <xref:System.Nullable`1>   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
  [Structure (Visual Basic)](http://msdn.microsoft.com/en-us/263ce115-ac36-4c05-8cb7-0e0eead5c6d0)

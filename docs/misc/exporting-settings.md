@@ -1,7 +1,7 @@
 ---
-title: "Exporting Settings"
+title: "Exporting Settings | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -169,7 +169,7 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] integrated devel
   
      In this case, the attribute informs the IDE that the `MyPackageProfileManager` class provides a settings implementation to the `MyPackage` class. The Custom Settings Point in the registry is created under HKLM\Software\Microsoft\VisualStudio\\*Version*\UserSettings\ CoreUI_MyPackage, where *Version* is the version of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)], for example, 10.0.  
   
-     For more information, see [Support for User Settings](../Topic/Support%20for%20User%20Settings.md) and <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
+     For more information, see [Support for User Settings](/visual-studio/extensibility/internals/support-for-user-settings) and <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
   
 ## Example  
  The following example implements <xref:Microsoft.VisualStudio.Shell.IProfileManager> on a class.  
@@ -375,4 +375,4 @@ namespace myProfileManagerNameSpace  {
  <xref:Microsoft.VisualStudio.Shell.IProfileManager>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsWriter>   
  [Importing Settings](../misc/importing-settings.md)   
- [Support for User Settings](../Topic/Support%20for%20User%20Settings.md)
+ [Support for User Settings](/visual-studio/extensibility/internals/support-for-user-settings)

@@ -1,7 +1,7 @@
 ---
-title: "Choosing a Deployment Method"
+title: "Choosing a Deployment Method | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -45,7 +45,7 @@ translation.priority.ht:
 Unless your [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] application is self-contained and can be deployed by using a copy command, we recommend that you use Windows Installer for deployment. Windows Installer supports installation, repair, and uninstallation, and also supports atomic updating of application files, dependencies, and registry entries.  
   
 > [!NOTE]
->  Although [ClickOnce](../Topic/ClickOnce%20Security%20and%20Deployment.md) deployment for [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] native applications is possible in Visual Studio, it requires extra steps. For more information, see [ClickOnce Deployment for Visual C++ Applications](../ide/clickonce-deployment-for-visual-cpp-applications.md).  
+>  Although [ClickOnce](/visual-studio/deployment/clickonce-security-and-deployment) deployment for [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] native applications is possible in Visual Studio, it requires extra steps. For more information, see [ClickOnce Deployment for Visual C++ Applications](../ide/clickonce-deployment-for-visual-cpp-applications.md).  
   
 ## Visual C++ Libraries are Shared DLLs  
  Because Visual C++ libraries are installed in the %windir%\system32\ directory by the Visual Studio installer, when you develop a Visual C++ application that depends on them, it will run as expected. However, to deploy the application to computers that may not have Visual Studio, we recommend that you ensure that the libraries are installed on those computers together with the application.  
@@ -70,5 +70,5 @@ Unless your [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] application is se
  [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)   
  [Not in Build: Choosing a Deployment Strategy](http://msdn.microsoft.com/en-us/ecd632d8-063c-4028-b785-81bba045107b)   
  [Windows Installer Deployment Overview](http://msdn.microsoft.com/en-us/3ce4610a-b54f-404e-b650-42f4a55dfc3b)   
- [ClickOnce Security and Deployment](../Topic/ClickOnce%20Security%20and%20Deployment.md)   
+ [ClickOnce Security and Deployment](/visual-studio/deployment/clickonce-security-and-deployment)   
  [Deployment Examples](../ide/deployment-examples.md)

@@ -1,5 +1,5 @@
 ---
-title: "Could not find standard library: &#39;&lt;filename&gt;&#39;"
+title: "Could not find standard library: &#39;&lt;filename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,7 +40,7 @@ translation.priority.mt:
   
  The unusable library is most likely to be either mscorlib.dll or microsoft.visualbasic.dll.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40049  
   
@@ -57,6 +57,6 @@ translation.priority.mt:
 5.  Note the exact file name and extension and contact Microsoft Product Support Services.  
   
 ## See Also  
- [Building from the Command Line](../Topic/Building%20from%20the%20Command%20Line%20\(Visual%20Basic\).md)   
+ [Building from the Command Line](/dotnet/visual-basic/reference/command-line-compiler/building-from-the-command-line)   
  [How to: Invoke the Command-Line Compiler](../Topic/How%20to:%20Invoke%20the%20Command-Line%20Compiler%20\(Visual%20Basic\).md)   
- [Talk to Us](../Topic/Talk%20to%20Us.md)
+ [Talk to Us](/visual-studio/ide/talk-to-us)

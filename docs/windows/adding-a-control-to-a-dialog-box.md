@@ -1,7 +1,7 @@
 ---
-title: "Adding a Control to a Dialog Box"
+title: "Adding a Control to a Dialog Box | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -44,7 +44,7 @@ translation.priority.mt:
   
 1.  Ensure that the dialog box tabbed window is the current document in the editor frame. If a dialog is not the current document, you won't see the **Dialog Editor Tab** in the **Toolbox**.  
   
-2.  On the [Dialog Editor Tab](../mfc/dialog-editor-tab-toolbox.md) of the [Toolbox Window](../Topic/Toolbox.md), select the control you want, then:  
+2.  On the [Dialog Editor Tab](../mfc/dialog-editor-tab-toolbox.md) of the [Toolbox Window](/visual-studio/ide/reference/toolbox), select the control you want, then:  
   
     -   Click the dialog box at the location where you want to place the control. The control appears where you've clicked. For information, see [Adding Multiple Controls](../mfc/adding-multiple-controls.md).  
   

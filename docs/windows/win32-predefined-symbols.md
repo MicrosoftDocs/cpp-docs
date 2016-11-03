@@ -1,7 +1,7 @@
 ---
-title: "Win32 Predefined Symbols"
+title: "Win32 Predefined Symbols | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Win32 Predefined Symbols
-These symbols are defined in the Win32 header files, and they support standard Windows application functions and actions. These symbols are mainly used with common UI elements. When you are working with controls in the resource editors, these symbols will appear in the [Properties Window](../Topic/Properties%20Window.md) associated with common controls. For instance, if your toolbar should display the application icon, the icon will be associated with the symbol IDI_SMALL in the Property Window.  
+These symbols are defined in the Win32 header files, and they support standard Windows application functions and actions. These symbols are mainly used with common UI elements. When you are working with controls in the resource editors, these symbols will appear in the [Properties Window](/visual-studio/ide/reference/properties-window) associated with common controls. For instance, if your toolbar should display the application icon, the icon will be associated with the symbol IDI_SMALL in the Property Window.  
   
 |||  
 |-|-|  

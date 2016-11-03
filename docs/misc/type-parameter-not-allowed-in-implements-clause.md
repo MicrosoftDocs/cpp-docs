@@ -1,5 +1,5 @@
 ---
-title: "Type parameter not allowed in &#39;Implements&#39; clause"
+title: "Type parameter not allowed in &#39;Implements&#39; clause | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -60,7 +60,7 @@ End Class
     ```  
   
 ## See Also  
- [Implements](../Topic/Implements%20Clause%20\(Visual%20Basic\).md)   
+ [Implements](/dotnet/visual-basic/language-reference/statements/implements-clause)   
  [NOT IN BUILD: Implements Keyword and Implements Statement](http://msdn.microsoft.com/en-us/b96560f7-6413-480f-a1e2-f80253bab5be)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Type List](../Topic/Type%20List%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Type List](/dotnet/visual-basic/language-reference/statements/type-list)

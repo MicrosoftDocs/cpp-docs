@@ -1,7 +1,7 @@
 ---
-title: "CWin32Heap Class"
+title: "CWin32Heap Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -63,8 +63,8 @@ class CWin32Heap : public IAtlMemMgr
 |Name|Description|  
 |----------|-----------------|  
 |[CWin32Heap::Allocate](../Topic/CWin32Heap::Allocate.md)|Allocates a block of memory from the heap object.|  
-|[CWin32Heap::Attach](../Topic/CWin32Heap::Attach.md)|Attaches the heap object to an existing heap.|  
-|[CWin32Heap::Detach](../Topic/CWin32Heap::Detach.md)|Detaches the heap object from an existing heap.|  
+|[CWin32Heap::Attach](/visual-studio/profiling/attach)|Attaches the heap object to an existing heap.|  
+|[CWin32Heap::Detach](/visual-studio/profiling/detach)|Detaches the heap object from an existing heap.|  
 |[CWin32Heap::Free](../Topic/CWin32Heap::Free.md)|Frees memory previously allocated from the heap.|  
 |[CWin32Heap::GetSize](../Topic/CWin32Heap::GetSize.md)|Returns the size of a memory block allocated from the heap object.|  
 |[CWin32Heap::Reallocate](../Topic/CWin32Heap::Reallocate.md)|Reallocates a block of memory from the heap object.|  
@@ -77,7 +77,7 @@ class CWin32Heap : public IAtlMemMgr
 |[CWin32Heap::m_hHeap](../Topic/CWin32Heap::m_hHeap.md)|Handle to the heap object.|  
   
 ## Remarks  
- `CWin32Heap` implements memory allocation methods using the Win32 heap allocation functions, including [HeapAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366597) and [HeapFree](http://msdn.microsoft.com/library/windows/desktop/aa366701). Unlike other Heap classes, `CWin32Heap` requires a valid heap handle to be provided before memory is allocated: the other classes default to using the process heap. The handle can be supplied to the constructor or to the [CWin32Heap::Attach](../Topic/CWin32Heap::Attach.md) method. See the [CWin32Heap::CWin32Heap](../Topic/CWin32Heap::CWin32Heap.md) method for more details.  
+ `CWin32Heap` implements memory allocation methods using the Win32 heap allocation functions, including [HeapAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366597) and [HeapFree](http://msdn.microsoft.com/library/windows/desktop/aa366701). Unlike other Heap classes, `CWin32Heap` requires a valid heap handle to be provided before memory is allocated: the other classes default to using the process heap. The handle can be supplied to the constructor or to the [CWin32Heap::Attach](/visual-studio/profiling/attach) method. See the [CWin32Heap::CWin32Heap](../Topic/CWin32Heap::CWin32Heap.md) method for more details.  
   
 ## Example  
  See the example for [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md).  
@@ -161,7 +161,7 @@ CWin32Heap(
   
  It is also possible to supply an existing heap handle to the constructor, in which case the new object does not take over ownership of the heap. The original heap handle will still be valid when the `CWin32Heap` object is deleted.  
   
- An existing heap can also be attached to the new object, using [CWin32Heap::Attach](../Topic/CWin32Heap::Attach.md).  
+ An existing heap can also be attached to the new object, using [CWin32Heap::Attach](/visual-studio/profiling/attach).  
   
  If a heap is required where operations are all performed from a single thread, the best way is to create the object as follows:  
   

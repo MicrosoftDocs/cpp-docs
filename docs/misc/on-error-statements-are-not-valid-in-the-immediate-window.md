@@ -1,5 +1,5 @@
 ---
-title: "&#39;On Error&#39; statements are not valid in the Immediate window"
+title: "&#39;On Error&#39; statements are not valid in the Immediate window | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ translation.priority.mt:
 -   Remove `On Error` statements from debugging code.  
   
 ## See Also  
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0020"
+title: "Compiler Error CS0020 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -57,4 +57,4 @@ namespace x
 ```  
   
 ## See Also  
- [Operators](../Topic/Operators%20\(C%23%20Programming%20Guide\).md)
+ [Operators](/dotnet/csharp/programming-guide/statements-expressions-operators/operators)

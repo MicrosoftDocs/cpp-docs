@@ -1,5 +1,5 @@
 ---
-title: "XML comment type parameter &lt;parameter&gt; does not match a type parameter on the corresponding &lt;keyword&gt; statement"
+title: "XML comment type parameter &lt;parameter&gt; does not match a type parameter on the corresponding &lt;keyword&gt; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ XML comment parameter \<parameter> does not match a type parameter on the corres
 -   Provide XML comment tags for all type parameters in the method.  
   
 ## See Also  
- [XML Comment Tags](../Topic/Recommended%20XML%20Tags%20for%20Documentation%20Comments%20\(Visual%20Basic\).md)   
- [Documenting Your Code with XML](../Topic/Documenting%20Your%20Code%20with%20XML%20\(Visual%20Basic\).md)
+ [XML Comment Tags](/dotnet/visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments)   
+ [Documenting Your Code with XML](/dotnet/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)

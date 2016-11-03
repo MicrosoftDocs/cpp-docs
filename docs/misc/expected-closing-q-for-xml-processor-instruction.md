@@ -1,5 +1,5 @@
 ---
-title: "Expected closing &#39;?&gt;&#39; for XML processor instruction"
+title: "Expected closing &#39;?&gt;&#39; for XML processor instruction | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ An XML processing instruction literal is missing the required closing `?>` chara
 -   Add the required closing `?>` characters to the end of the XML processing instruction literal.  
   
 ## See Also  
- [XML Processing Instruction Literal](../Topic/XML%20Processing%20Instruction%20Literal%20\(Visual%20Basic\).md)   
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [XML Processing Instruction Literal](/dotnet/visual-basic/language-reference/xml-literals/xml-processing-instruction-literal)   
+ [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)

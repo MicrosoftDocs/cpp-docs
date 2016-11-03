@@ -1,5 +1,5 @@
 ---
-title: "Array modifiers cannot be specified on both a variable and its type"
+title: "Array modifiers cannot be specified on both a variable and its type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ Array modifiers are present on both the variable and its type, indicating an arr
 -   Remove the array modifier from the type specifier.  
   
 ## See Also  
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)

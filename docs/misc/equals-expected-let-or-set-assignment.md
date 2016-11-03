@@ -1,5 +1,5 @@
 ---
-title: "&#39;=&#39; expected (Let or Set assignment)"
+title: "&#39;=&#39; expected (Let or Set assignment) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -25,7 +25,7 @@ A `Let` or `Set` assignment statement does not include an equal sign (`=`).
   
  The `Let` and `Set` assignment statements are not supported in the current version of Visual Basic. The compiler can determine the type of assignment from the data type of the programming element that is to receive the value. A *value type* assignment replaces the `Let` statement, and a *reference type* assignment replaces the former `Set` statement.  
   
- The [Set Statement](../Topic/Set%20Statement%20\(Visual%20Basic\).md) is used in property definitions and has no relation to the `Set` assignment statement.  
+ The [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement) is used in property definitions and has no relation to the `Set` assignment statement.  
   
  **Error ID:** BC32020  
   
@@ -35,5 +35,5 @@ A `Let` or `Set` assignment statement does not include an equal sign (`=`).
   
 ## See Also  
  [Programming Element Support Changes Summary](http://msdn.microsoft.com/en-us/0483590a-6309-449c-a2fa-effa26a03b95)   
- [Value Types and Reference Types](../Topic/Value%20Types%20and%20Reference%20Types.md)   
+ [Value Types and Reference Types](/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)   
  [NotInBuild:Assignment Statements](http://msdn.microsoft.com/en-us/eb4f91e9-fbbf-45ca-b21d-e8ae069de4f9)

@@ -1,5 +1,5 @@
 ---
-title: "Type &#39;&lt;typename&gt;&#39; must define operator &#39;&lt;operator&gt;&#39; to be used in a &#39;For&#39; statement"
+title: "Type &#39;&lt;typename&gt;&#39; must define operator &#39;&lt;operator&gt;&#39; to be used in a &#39;For&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -63,9 +63,9 @@ A `For` loop specifies a counter variable of a type that does not support a requ
 3.  Depending on the data types of the `start`, `end`, and `step` expressions, you might have to define one or more `CType` conversion operators to convert them to the counter variable data type.  
   
 ## See Also  
- [For...Next Statement](../Topic/For...Next%20Statement%20\(Visual%20Basic\).md)   
- [Operator Procedures](../Topic/Operator%20Procedures%20\(Visual%20Basic\).md)   
- [Operator Statement](../Topic/Operator%20Statement.md)   
+ [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)   
+ [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
+ [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)   
  [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
  [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)   
- [CType Function](../Topic/CType%20Function%20\(Visual%20Basic\).md)
+ [CType Function](/dotnet/visual-basic/language-reference/functions/ctype-function)

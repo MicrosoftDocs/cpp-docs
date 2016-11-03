@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0500"
+title: "Compiler Error CS0500 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0500
 'class member' cannot declare a body because it is marked abstract  
   
- An [abstract](../Topic/abstract%20\(C%23%20Reference\).md) method cannot contain its implementation.  
+ An [abstract](/dotnet/csharp/language-reference/keywords/abstract) method cannot contain its implementation.  
   
  The following sample generates CS0500:  
   

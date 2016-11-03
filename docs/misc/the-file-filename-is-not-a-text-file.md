@@ -1,5 +1,5 @@
 ---
-title: "The file &#39;&lt;filename&gt;&#39; is not a text file"
+title: "The file &#39;&lt;filename&gt;&#39; is not a text file | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,7 +45,7 @@ The specified file cannot be written to because it is a binary file.
 -   Check that you are supplying the correct file name and path.  
   
 ## See Also  
- [Writing to Files](../Topic/Writing%20to%20Files%20in%20Visual%20Basic.md)   
+ [Writing to Files](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files)   
  [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
  [My.Computer.FileSystem.WriteAllText Method](http://msdn.microsoft.com/en-us/f507460c-87d9-4504-b74f-3ff825c7d5c4)   
  [My.Computer.FileSystem.WriteAllBytes Method](http://msdn.microsoft.com/en-us/b1a24dc1-eac8-4e22-8ffa-cc3bacbaf826)

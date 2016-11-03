@@ -1,7 +1,7 @@
 ---
-title: "How to: Add Command Routing to the Windows Forms Control"
+title: "How to: Add Command Routing to the Windows Forms Control | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

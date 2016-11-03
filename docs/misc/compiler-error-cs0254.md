@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0254"
+title: "Compiler Error CS0254 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0254
 The right hand side of a fixed statement assignment may not be a cast expression  
   
- The right side of a [fixed](../Topic/fixed%20Statement%20\(C%23%20Reference\).md) expression may not use a cast. For more information, see [Unsafe Code and Pointers](../Topic/Unsafe%20Code%20and%20Pointers%20\(C%23%20Programming%20Guide\).md).  
+ The right side of a [fixed](/dotnet/csharp/language-reference/keywords/fixed-statement) expression may not use a cast. For more information, see [Unsafe Code and Pointers](/dotnet/csharp/programming-guide/unsafe-code-pointers/index).  
   
  The following sample generates CS0254:  
   

@@ -1,5 +1,5 @@
 ---
-title: "&#39;End Interface&#39; must be preceded by a matching &#39;Interface&#39;"
+title: "&#39;End Interface&#39; must be preceded by a matching &#39;Interface&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ An `End Interface` statement occurs without a corresponding `Interface` statemen
 2.  Ensure that the `Interface` members are correctly formatted.  
   
 ## See Also  
- [Interface Statement](../Topic/Interface%20Statement%20\(Visual%20Basic\).md)
+ [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)

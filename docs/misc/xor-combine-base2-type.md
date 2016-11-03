@@ -1,7 +1,7 @@
 ---
-title: "xor_combine::base2_type"
+title: "xor_combine::base2_type | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/27/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

@@ -1,5 +1,5 @@
 ---
-title: "Definition of method &lt;method&gt; is not accessible in this context"
+title: "Definition of method &lt;method&gt; is not accessible in this context | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -44,11 +44,11 @@ An aggregate function that does not exist has been included with the `Into` oper
   
 -   Check the spelling of the aggregate function name and make any necessary corrections.  
   
--   Add the method as a custom aggregate function (extension method). For more information about creating a custom aggregate function, see [Aggregate Clause](../Topic/Aggregate%20Clause%20\(Visual%20Basic\).md).  
+-   Add the method as a custom aggregate function (extension method). For more information about creating a custom aggregate function, see [Aggregate Clause](/dotnet/visual-basic/language-reference/queries/aggregate-clause).  
   
 ## See Also  
- [Aggregate Clause](../Topic/Aggregate%20Clause%20\(Visual%20Basic\).md)   
- [Group By Clause](../Topic/Group%20By%20Clause%20\(Visual%20Basic\).md)   
- [Group Join Clause](../Topic/Group%20Join%20Clause%20\(Visual%20Basic\).md)   
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [LINQ](../Topic/LINQ%20in%20Visual%20Basic.md)
+ [Aggregate Clause](/dotnet/visual-basic/language-reference/queries/aggregate-clause)   
+ [Group By Clause](/dotnet/visual-basic/language-reference/queries/group-by-clause)   
+ [Group Join Clause](/dotnet/visual-basic/language-reference/queries/group-join-clause)   
+ [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)

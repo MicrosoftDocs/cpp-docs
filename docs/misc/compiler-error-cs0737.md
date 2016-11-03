@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0737"
+title: "Compiler Error CS0737 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -42,7 +42,7 @@ translation.priority.mt:
   
 ### To correct this error  
   
-1.  Add the [public](../Topic/public%20\(C%23%20Reference\).md) access modifier to the method.  
+1.  Add the [public](/dotnet/csharp/language-reference/keywords/public) access modifier to the method.  
   
 ## Example  
  The following code generates CS0737:  
@@ -75,4 +75,4 @@ public class Test
 ```  
   
 ## See Also  
- [Interfaces](../Topic/Interfaces%20\(C%23%20Programming%20Guide\).md)
+ [Interfaces](/dotnet/csharp/programming-guide/interfaces/index)

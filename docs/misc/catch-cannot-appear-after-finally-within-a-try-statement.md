@@ -1,5 +1,5 @@
 ---
-title: "&#39;Catch&#39; cannot appear after &#39;Finally&#39; within a &#39;Try&#39; statement"
+title: "&#39;Catch&#39; cannot appear after &#39;Finally&#39; within a &#39;Try&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ A `Catch` statement appears in the code after the `Finally` ending a `Try` state
 1.  Move the `Catch` statement to a more appropriate place in the code.  
   
 ## See Also  
- [Try...Catch...Finally Statement](../Topic/Try...Catch...Finally%20Statement%20\(Visual%20Basic\).md)   
+ [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
  [Structured Exception Handling Overview for Visual Basic](http://msdn.microsoft.com/en-us/bb81af80-a735-4873-9711-6151a48e418a)

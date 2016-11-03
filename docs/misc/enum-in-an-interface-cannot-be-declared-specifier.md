@@ -1,5 +1,5 @@
 ---
-title: "Enum in an interface cannot be declared &#39;&lt;specifier&gt;&#39;"
+title: "Enum in an interface cannot be declared &#39;&lt;specifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ An invalid modifier was specified with an enumeration declared in an interface.
 -   Remove modifiers such as `Public`, `Private`, `Shared`, `Friend`, `Protected`, `Protected Friend`, or `Overridable`.  
   
 ## See Also  
- [Interfaces](../Topic/Interfaces%20\(Visual%20Basic\).md)   
- [Enum Statement](../Topic/Enum%20Statement%20\(Visual%20Basic\).md)
+ [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)   
+ [Enum Statement](/dotnet/visual-basic/language-reference/statements/enum-statement)

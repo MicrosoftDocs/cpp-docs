@@ -1,5 +1,5 @@
 ---
-title: "Division by zero occurred while evaluating this expression"
+title: "Division by zero occurred while evaluating this expression | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ In evaluating this expression, you attempted to divide a number by zero.
 1.  Check your constant and variable values to determine how zero occurs in your expression's denominator.  
   
 ## See Also  
- [Assignment Operators](../Topic/Assignment%20Operators%20\(Visual%20Basic\).md)
+ [Assignment Operators](/dotnet/visual-basic/language-reference/operators/assignment-operators)

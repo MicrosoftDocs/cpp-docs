@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting: General Exceptions"
+title: "Troubleshooting: General Exceptions | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -39,5 +39,5 @@ We're sorry! We're not able to look up the help page for this exception. Your be
   
 ## See Also  
  [How to: Test Code with a Try…Catch Block in Visual Basic](http://msdn.microsoft.com/en-us/8368e205-ed73-4185-a247-af84fb4fafa9)   
- [Continuing Execution After an Exception](../Topic/Continuing%20Execution%20After%20an%20Exception.md)   
+ [Continuing Execution After an Exception](/visual-studio/debugger/continuing-execution-after-an-exception)   
  [How to: Break When an Exception is Thrown](../misc/how-to-break-when-an-exception-is-thrown.md)

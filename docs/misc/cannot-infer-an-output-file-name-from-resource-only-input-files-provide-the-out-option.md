@@ -1,5 +1,5 @@
 ---
-title: "Cannot infer an output file name from resource only input files; provide the &#39;-out&#39; option"
+title: "Cannot infer an output file name from resource only input files; provide the &#39;-out&#39; option | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

@@ -1,7 +1,7 @@
 ---
-title: "Creating a New Toolbar Button"
+title: "Creating a New Toolbar Button | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -49,7 +49,7 @@ translation.priority.ht:
   
 2.  Expand the **Toolbar** folder and select a toolbar to edit.  
   
-3.  Assign an ID to the blank button at the right end of the toolbar. You can do so by editing the **ID** property in the [Properties Window](../Topic/Properties%20Window.md). For example, you may want to give a toolbar button the same ID as a menu option. In this case, use the drop-down list box to select the **ID** of the menu option.  
+3.  Assign an ID to the blank button at the right end of the toolbar. You can do so by editing the **ID** property in the [Properties Window](/visual-studio/ide/reference/properties-window). For example, you may want to give a toolbar button the same ID as a menu option. In this case, use the drop-down list box to select the **ID** of the menu option.  
   
      –or–  
   

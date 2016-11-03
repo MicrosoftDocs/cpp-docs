@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 3) CS0067"
+title: "Compiler Warning (level 3) CS0067 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 3) CS0067
 The event 'event' is never used  
   
- An [event](../Topic/event%20\(C%23%20Reference\).md) was declared but never used in the class in which it was declared.  
+ An [event](/dotnet/csharp/language-reference/keywords/event) was declared but never used in the class in which it was declared.  
   
  The following sample generates CS0067:  
   

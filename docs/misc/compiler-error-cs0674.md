@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0674"
+title: "Compiler Error CS0674 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0674
 Do not use 'System.ParamArrayAttribute'. Use the 'params' keyword instead.  
   
- The C# compiler does not allow for the use of <xref:System.ParamArrayAttribute?displayProperty=fullName>; use [params](../Topic/params%20\(C%23%20Reference\).md) instead.  
+ The C# compiler does not allow for the use of <xref:System.ParamArrayAttribute?displayProperty=fullName>; use [params](/dotnet/csharp/language-reference/keywords/params) instead.  
   
  The following sample generates CS0674:  
   

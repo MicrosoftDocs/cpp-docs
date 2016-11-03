@@ -1,5 +1,5 @@
 ---
-title: "Value of type &#39;&lt;type1&gt;&#39; cannot be converted to &#39;&lt;type2&gt;&#39; because the array types have different numbers of dimensions"
+title: "Value of type &#39;&lt;type1&gt;&#39; cannot be converted to &#39;&lt;type2&gt;&#39; because the array types have different numbers of dimensions | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You have tried to convert one array to another with a different number of dimens
 -   Change one or both arrays so that the number of dimensions matches.  
   
 ## See Also  
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)

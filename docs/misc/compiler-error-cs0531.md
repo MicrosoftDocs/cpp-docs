@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0531"
+title: "Compiler Error CS0531 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0531
 'member' : interface members cannot have a definition  
   
- Methods that are declared in an [interface](../Topic/interface%20\(C%23%20Reference\).md) must be implemented in a class that inherits from it and not in the interface itself.  
+ Methods that are declared in an [interface](/dotnet/csharp/language-reference/keywords/interface) must be implemented in a class that inherits from it and not in the interface itself.  
   
  The following sample generates CS0531:  
   

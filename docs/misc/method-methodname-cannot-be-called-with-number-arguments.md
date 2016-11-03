@@ -1,5 +1,5 @@
 ---
-title: "Method &#39;&lt;methodname&gt;&#39; cannot be called with &lt;number&gt; arguments"
+title: "Method &#39;&lt;methodname&gt;&#39; cannot be called with &lt;number&gt; arguments | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -44,4 +44,4 @@ A method call contains the wrong number of arguments.
 3.  Adjust the number of arguments if the two numbers do not agree.  
   
 ## See Also  
- [Passing Arguments by Value and by Reference](../Topic/Passing%20Arguments%20by%20Value%20and%20by%20Reference%20\(Visual%20Basic\).md)
+ [Passing Arguments by Value and by Reference](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)

@@ -1,5 +1,5 @@
 ---
-title: "&#39;TryCast&#39; operands must be class-constrained type parameters, but &#39;&lt;typeparametername&gt;&#39; has no class constraint"
+title: "&#39;TryCast&#39; operands must be class-constrained type parameters, but &#39;&lt;typeparametername&gt;&#39; has no class constraint | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # &#39;TryCast&#39; operands must be class-constrained type parameters, but &#39;&lt;typeparametername&gt;&#39; has no class constraint
-The [TryCast Operator](../Topic/TryCast%20Operator%20\(Visual%20Basic\).md) operator is used with a type parameter operand that is not guaranteed to be a reference type.  
+The [TryCast Operator](/dotnet/visual-basic/language-reference/operators/trycast-operator) operator is used with a type parameter operand that is not guaranteed to be a reference type.  
   
  `TryCast` operates only on reference types, such as classes or interfaces. When you pass a type parameter as an argument to `TryCast`, you must constrain that type parameter to be a reference type. You can do this by including one or more of the following in the type parameter's constraint list:  
   
@@ -44,7 +44,7 @@ The [TryCast Operator](../Topic/TryCast%20Operator%20\(Visual%20Basic\).md) oper
   
 -   At most one class name (the type argument must inherit from it)  
   
--   The [New Operator](../Topic/New%20Operator%20\(Visual%20Basic\).md) constraint (the type argument must expose a parameterless constructor that the creating code can access, and therefore it must be a class)  
+-   The [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator) constraint (the type argument must expose a parameterless constructor that the creating code can access, and therefore it must be a class)  
   
 -   The [Class (Visual Basic)](http://msdn.microsoft.com/en-us/0777c6e6-46bc-451b-ad70-57b49d4ef4f7) constraint (the type argument must be a reference type)  
   
@@ -54,11 +54,11 @@ The [TryCast Operator](../Topic/TryCast%20Operator%20\(Visual%20Basic\).md) oper
   
 -   If you need to pass this type parameter to `TryCast`, constrain it with one or more of the constraints in the preceding list.  
   
--   If you cannot require the type parameter to accept only a reference type, you cannot use it with `TryCast`. You might be able to use the [CType Function](../Topic/CType%20Function%20\(Visual%20Basic\).md) instead.  
+-   If you cannot require the type parameter to accept only a reference type, you cannot use it with `TryCast`. You might be able to use the [CType Function](/dotnet/visual-basic/language-reference/functions/ctype-function) instead.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Type List](../Topic/Type%20List%20\(Visual%20Basic\).md)   
- [Value Types and Reference Types](../Topic/Value%20Types%20and%20Reference%20Types.md)   
- [Widening and Narrowing Conversions](../Topic/Widening%20and%20Narrowing%20Conversions%20\(Visual%20Basic\).md)   
- [Implicit and Explicit Conversions](../Topic/Implicit%20and%20Explicit%20Conversions%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Type List](/dotnet/visual-basic/language-reference/statements/type-list)   
+ [Value Types and Reference Types](/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)   
+ [Widening and Narrowing Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)   
+ [Implicit and Explicit Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)

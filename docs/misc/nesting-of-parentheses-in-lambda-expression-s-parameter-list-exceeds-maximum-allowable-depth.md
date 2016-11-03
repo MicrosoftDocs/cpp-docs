@@ -1,5 +1,5 @@
 ---
-title: "Nesting of parentheses in lambda expression&#39;s parameter list exceeds maximum allowable depth"
+title: "Nesting of parentheses in lambda expression&#39;s parameter list exceeds maximum allowable depth | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -41,4 +41,4 @@ Nested parentheses in a lambda expression's parameter list cannot exceed a depth
  **Error ID:** BC36664  
   
 ## See Also  
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md)
+ [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)

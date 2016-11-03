@@ -1,5 +1,5 @@
 ---
-title: "Cannot infer a data type for &#39;&lt;variablename&gt;&#39; because the array dimensions do not match"
+title: "Cannot infer a data type for &#39;&lt;variablename&gt;&#39; because the array dimensions do not match | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,5 +49,5 @@ Dim exampleArray1() = New Integer() {1, 2, 3}
  **Error ID:** BC36909  
   
 ## See Also  
- [Local Type Inference](../Topic/Local%20Type%20Inference%20\(Visual%20Basic\).md)   
+ [Local Type Inference](/dotnet/visual-basic/programming-guide/language-features/variables/local-type-inference)   
  [NOTINBUILD How to: Initialize a Multidimensional Array](http://msdn.microsoft.com/en-us/502dcf8b-d86c-46f1-ad7d-3ce809645774)

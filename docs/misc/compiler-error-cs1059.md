@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1059"
+title: "Compiler Error CS1059 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -71,4 +71,4 @@ The operand of an increment or decrement operator must be a variable, property o
 ```  
   
 ## See Also  
- [Constants](../Topic/Constants%20\(C%23%20Programming%20Guide\).md)
+ [Constants](/dotnet/csharp/programming-guide/classes-and-structs/constants)

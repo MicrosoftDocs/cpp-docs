@@ -1,5 +1,5 @@
 ---
-title: "&#39;Inherits&#39; not valid in Modules"
+title: "&#39;Inherits&#39; not valid in Modules | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ An `Inherits` statement occurs inside a module. Modules cannot inherit from clas
 -   Remove the `Inherits` statement, or retype the module as a class.  
   
 ## See Also  
- [Inherits Statement](../Topic/Inherits%20Statement.md)   
- [Module Statement](../Topic/Module%20Statement.md)
+ [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement)   
+ [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)

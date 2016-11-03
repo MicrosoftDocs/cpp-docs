@@ -1,5 +1,5 @@
 ---
-title: "Array modifiers cannot be specified on lambda expression parameters name, only on its type"
+title: "Array modifiers cannot be specified on lambda expression parameters name, only on its type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -54,4 +54,4 @@ Dim arrayexample3 = Function(arrayPara As Integer()) arrayPara.Length > 0
 -   Specify the type of the elements in the array parameter.  
   
 ## See Also  
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md)
+ [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)

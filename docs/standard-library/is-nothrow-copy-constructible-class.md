@@ -1,7 +1,7 @@
 ---
-title: "is_nothrow_copy_constructible Class"
+title: "is_nothrow_copy_constructible Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

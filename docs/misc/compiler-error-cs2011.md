@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS2011"
+title: "Compiler Error CS2011 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,4 +40,4 @@ Unable to open response file 'file'
   
  A response file was specified in a compilation, but the compiler was unable to locate and open the file.  
   
- For more on response files, see [@ (Specify Response File)](../Topic/@%20\(C%23%20Compiler%20Options\).md).
+ For more on response files, see [@ (Specify Response File)](/dotnet/csharp/language-reference/compiler-options/response-file-compiler-option).

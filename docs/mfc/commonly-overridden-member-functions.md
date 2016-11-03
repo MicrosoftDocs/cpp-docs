@@ -1,7 +1,7 @@
 ---
-title: "Commonly Overridden Member Functions"
+title: "Commonly Overridden Member Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -50,7 +50,7 @@ The following table lists the most likely member functions to override in your `
 |`OnOK`|**BN_CLICKED** for button **IDOK**|Respond when the user clicks the OK button.|  
 |`OnCancel`|**BN_CLICKED** for button **IDCANCEL**|Respond when the user clicks the Cancel button.|  
   
- `OnInitDialog`, `OnOK`, and `OnCancel` are virtual functions. To override them, you declare an overriding function in your derived dialog class using the [Properties window](../Topic/Properties%20Window.md).  
+ `OnInitDialog`, `OnOK`, and `OnCancel` are virtual functions. To override them, you declare an overriding function in your derived dialog class using the [Properties window](/visual-studio/ide/reference/properties-window).  
   
  `OnInitDialog` is called just before the dialog box is displayed. You must call the default `OnInitDialog` handler from your override — usually as the first action in the handler. By default, `OnInitDialog` returns **TRUE** to indicate that the focus should be set to the first control in the dialog box.  
   

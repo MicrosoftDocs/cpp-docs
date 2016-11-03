@@ -1,5 +1,5 @@
 ---
-title: "Constants must have a value"
+title: "Constants must have a value | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -46,4 +46,4 @@ You declared a constant without assigning it a value.
   
 ## See Also  
  [NOTINBUILD Constants Overview](http://msdn.microsoft.com/en-us/5c7f57fb-48b2-4a2f-afee-79d8e3adf15b)   
- [Constants and Enumerations](../Topic/Constants%20and%20Enumerations%20\(Visual%20Basic\).md)
+ [Constants and Enumerations](/dotnet/visual-basic/language-reference/constants-and-enumerations)

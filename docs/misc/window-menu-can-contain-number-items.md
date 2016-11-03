@@ -1,7 +1,7 @@
 ---
-title: "Window menu can contain &lt;number&gt; items."
+title: "Window menu can contain &lt;number&gt; items. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,4 +41,4 @@ The Windows List in the Window menu can only display up to twenty-four window na
 1.  Enter a number between one and twenty-four in the box.  
   
 ## See Also  
- [General, Environment, Options Dialog Box](../Topic/General,%20Environment,%20Options%20Dialog%20Box.md)
+ [General, Environment, Options Dialog Box](/visual-studio/ide/reference/general-environment-options-dialog-box)

@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB3253"
+title: "MSBuild Error MSB3253 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/24/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -48,6 +48,6 @@ translation.priority.mt:
 -   Either remove the specified assembly reference from the project, or target the full [!INCLUDE[dnprdnshort](../error-messages/tool-errors/includes/dnprdnshort_md.md)] instead of the [!INCLUDE[net_client_v35_long](../misc/includes/net_client_v35_long_md.md)] subset library. For information about how to target the full [!INCLUDE[dnprdnshort](../error-messages/tool-errors/includes/dnprdnshort_md.md)], see [How to: Target a Version of the .NET Framework](../Topic/How%20to:%20Target%20a%20Version%20of%20the%20.NET%20Framework.md).  
   
 ## See Also  
- [Target Framework and Target Platform](../Topic/MSBuild%20Target%20Framework%20and%20Target%20Platform.md)   
- [Project Element (MSBuild)](../Topic/Project%20Element%20\(MSBuild\).md)   
- [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md)
+ [Target Framework and Target Platform](/visual-studio/msbuild/msbuild-target-framework-and-target-platform)   
+ [Project Element (MSBuild)](/visual-studio/msbuild/project-element-msbuild)   
+ [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)

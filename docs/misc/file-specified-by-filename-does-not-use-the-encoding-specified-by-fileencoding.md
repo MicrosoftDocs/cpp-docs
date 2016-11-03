@@ -1,5 +1,5 @@
 ---
-title: "File specified by FileName does not use the encoding specified by FileEncoding"
+title: "File specified by FileName does not use the encoding specified by FileEncoding | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -39,6 +39,6 @@ An attempt has been made to read from a file, but the specified encoding is not 
   
 ## See Also  
  [My.Computer.FileSystem.ReadAllText Method](http://msdn.microsoft.com/en-us/3a7ac8be-fb1d-4087-bc65-167d6754d57f)   
- [My.Computer.FileSystem Object](../Topic/My.Computer.FileSystem%20Object.md)   
- [File Encodings](../Topic/File%20Encodings%20\(Visual%20Basic\).md)   
+ [My.Computer.FileSystem Object](/dotnet/visual-basic/language-reference/objects/my-computer-filesystem-object)   
+ [File Encodings](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/file-encodings)   
  [How to: Read from Text Files](../Topic/How%20to:%20Read%20From%20Text%20Files%20in%20Visual%20Basic.md)

@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB3122"
+title: "MSBuild Error MSB3122 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -44,6 +44,6 @@ translation.priority.mt:
 -   Enable ClickOnce security settings and set the application to a full trust application. For more information, see [How to: Enable ClickOnce Security Settings](../Topic/How%20to:%20Enable%20ClickOnce%20Security%20Settings.md).  
   
 ## See Also  
- [Publish Page, Project Designer](../Topic/Publish%20Page,%20Project%20Designer.md)   
- [ClickOnce Application Manifest](../Topic/ClickOnce%20Application%20Manifest.md)   
- [Code Access Security for ClickOnce Applications](../Topic/Code%20Access%20Security%20for%20ClickOnce%20Applications.md)
+ [Publish Page, Project Designer](/visual-studio/ide/reference/publish-page-project-designer)   
+ [ClickOnce Application Manifest](/visual-studio/deployment/clickonce-application-manifest)   
+ [Code Access Security for ClickOnce Applications](/visual-studio/deployment/code-access-security-for-clickonce-applications)

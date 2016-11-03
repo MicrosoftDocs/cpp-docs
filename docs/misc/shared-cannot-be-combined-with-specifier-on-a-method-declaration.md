@@ -1,5 +1,5 @@
 ---
-title: "&#39;Shared&#39; cannot be combined with &#39;&lt;specifier&gt;&#39; on a method declaration"
+title: "&#39;Shared&#39; cannot be combined with &#39;&lt;specifier&gt;&#39; on a method declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,7 +45,7 @@ You have attempted to combine the `Shared` modifier with a specifier, such as `O
 -   Remove the specifier.  
   
 ## See Also  
- [Shared](../Topic/Shared%20\(Visual%20Basic\).md)   
- [Overridable](../Topic/Overridable%20\(Visual%20Basic\).md)   
- [NotOverridable](../Topic/NotOverridable%20\(Visual%20Basic\).md)   
- [MustOverride](../Topic/MustOverride%20\(Visual%20Basic\).md)
+ [Shared](/dotnet/visual-basic/language-reference/modifiers/shared)   
+ [Overridable](/dotnet/visual-basic/language-reference/modifiers/overridable)   
+ [NotOverridable](/dotnet/visual-basic/language-reference/modifiers/notoverridable)   
+ [MustOverride](/dotnet/visual-basic/language-reference/modifiers/mustoverride)

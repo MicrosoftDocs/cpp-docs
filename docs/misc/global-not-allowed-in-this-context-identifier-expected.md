@@ -1,5 +1,5 @@
 ---
-title: "&#39;Global&#39; not allowed in this context; identifier expected"
+title: "&#39;Global&#39; not allowed in this context; identifier expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -50,6 +50,6 @@ The `Global` keyword is used in a statement where it is not allowed.
   
 ## See Also  
  [Global - delete](http://msdn.microsoft.com/en-us/18c8ba14-40f6-4978-8096-6a5852324635)   
- [Imports Statement (.NET Namespace and Type)](../Topic/Imports%20Statement%20\(.NET%20Namespace%20and%20Type\).md)   
- [Namespace Statement](../Topic/Namespace%20Statement.md)   
- [References and the Imports Statement](../Topic/References%20and%20the%20Imports%20Statement%20\(Visual%20Basic\).md)
+ [Imports Statement (.NET Namespace and Type)](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)   
+ [Namespace Statement](/dotnet/visual-basic/language-reference/statements/namespace-statement)   
+ [References and the Imports Statement](/dotnet/visual-basic/programming-guide/program-structure/references-and-the-imports-statement)

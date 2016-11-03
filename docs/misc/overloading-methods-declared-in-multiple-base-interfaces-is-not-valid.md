@@ -1,5 +1,5 @@
 ---
-title: "Overloading methods declared in multiple base interfaces is not valid"
+title: "Overloading methods declared in multiple base interfaces is not valid | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ Multiple inherited interfaces implicitly overload the same method.
 -   Use the `Shadows` modifier instead of the `Overloads` modifier.  
   
 ## See Also  
- [Overloads](../Topic/Overloads%20\(Visual%20Basic\).md)   
- [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)
+ [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads)   
+ [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)

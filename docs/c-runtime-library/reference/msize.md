@@ -1,7 +1,7 @@
 ---
-title: "_msize"
+title: "_msize | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -76,7 +76,7 @@ Returns the size of a memory block allocated in the heap.
 ## Remarks  
  The `_msize` function returns the size, in bytes, of the memory block allocated by a call to `calloc`, `malloc`, or `realloc`.  
   
- When the application is linked with a debug version of the C run-time libraries, `_msize` resolves to [_msize_dbg](../../c-runtime-library/reference/msize-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](../Topic/CRT%20Debug%20Heap%20Details.md).  
+ When the application is linked with a debug version of the C run-time libraries, `_msize` resolves to [_msize_dbg](../../c-runtime-library/reference/msize-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visual-studio/debugger/crt-debug-heap-details).  
   
  This function validates its parameter. If `memblock` is a null pointer, `_msize` invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If the error is handled, the function sets `errno` to `EINVAL` and returns -1.  
   

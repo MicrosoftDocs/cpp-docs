@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0547"
+title: "Compiler Error CS0547 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,9 +38,9 @@ translation.priority.mt:
 # Compiler Error CS0547
 'property' : property or indexer cannot have void type  
   
- [void](../Topic/void%20\(C%23%20Reference\).md) is invalid as a return value for a property.  
+ [void](/dotnet/csharp/language-reference/keywords/void) is invalid as a return value for a property.  
   
- For more information, see [Properties](../Topic/Properties%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see [Properties](/dotnet/csharp/programming-guide/classes-and-structs/properties).  
   
  The following sample generates CS0547:  
   

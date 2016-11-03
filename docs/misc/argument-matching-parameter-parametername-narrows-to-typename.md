@@ -1,5 +1,5 @@
 ---
-title: "Argument matching parameter &#39;&lt;parametername&gt;&#39; narrows to &#39;&lt;typename&gt;&#39;"
+title: "Argument matching parameter &#39;&lt;parametername&gt;&#39; narrows to &#39;&lt;typename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -41,6 +41,6 @@ A call has been made to an overloaded method, but the compiler cannot find a met
  **Error ID:** BC36711  
   
 ## See Also  
- [Overloaded Properties and Methods](../Topic/Overloaded%20Properties%20and%20Methods%20\(Visual%20Basic\).md)   
- [Widening and Narrowing Conversions](../Topic/Widening%20and%20Narrowing%20Conversions%20\(Visual%20Basic\).md)   
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)
+ [Overloaded Properties and Methods](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/overloaded-properties-and-methods)   
+ [Widening and Narrowing Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)   
+ [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)

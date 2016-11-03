@@ -1,7 +1,7 @@
 ---
-title: "Analyze .NET Framework memory issues"
+title: "Analyze .NET Framework memory issues | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/21/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -76,7 +76,7 @@ Find memory leaks and inefficient memory use in .NET Framework code by using the
   
  **To collect a dump from Visual Studio**  
   
-1.  You can create a dump file for a process that was started from a Visual Studio project, or you can attach the debugger to a running process. See [Attach to Running Processes](../Topic/Attach%20to%20Running%20Processes%20with%20the%20Visual%20Studio%20Debugger.md).  
+1.  You can create a dump file for a process that was started from a Visual Studio project, or you can attach the debugger to a running process. See [Attach to Running Processes](/visual-studio/debugger/attach-to-running-processes-with-the-visual-studio-debugger).  
   
 2.  Stop execution. The debugger stops when you choose **Break All** on the **Debug** menu, or at an exception or at a breakpoint  
   

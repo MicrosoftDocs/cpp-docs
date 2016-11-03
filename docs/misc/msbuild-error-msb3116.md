@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB3116"
+title: "MSBuild Error MSB3116 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -46,4 +46,4 @@ translation.priority.mt:
 ## See Also  
  <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser*>   
  <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install*>   
- [Publish Page, Project Designer](../Topic/Publish%20Page,%20Project%20Designer.md)
+ [Publish Page, Project Designer](/visual-studio/ide/reference/publish-page-project-designer)

@@ -1,7 +1,7 @@
 ---
-title: "FxCopCmd Errors"
+title: "FxCopCmd Errors | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -66,4 +66,4 @@ FxCopCmd does not consider all errors to be fatal. If FxCopCmd has sufficient in
     >  The FxCopCmd return code "Assembly references error" 0x200 by itself is a warning rather than an error. This return code indicates that missing indirect references were found but that FxCopCmd was able to handle them. It is a warning that there is a possibility that some analysis results might have been compromised. Consider "Assembly references error" return code as an error when it is combined with any other return code.  
   
 ## See Also  
- [Code Analysis Application Errors](../Topic/Code%20Analysis%20Application%20Errors.md)
+ [Code Analysis Application Errors](/visual-studio/code-quality/code-analysis-application-errors)

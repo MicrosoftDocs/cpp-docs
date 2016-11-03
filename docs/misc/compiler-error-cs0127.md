@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0127"
+title: "Compiler Error CS0127 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0127
 Since 'function' returns void, a return keyword must not be followed by an object expression  
   
- A method with a [void](../Topic/void%20\(C%23%20Reference\).md) return type cannot return a value. For more information, see [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md).  
+ A method with a [void](/dotnet/csharp/language-reference/keywords/void) return type cannot return a value. For more information, see [Methods](/dotnet/csharp/programming-guide/classes-and-structs/methods).  
   
  The following sample generates CS0127:  
   

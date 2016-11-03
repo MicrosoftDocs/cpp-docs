@@ -1,7 +1,7 @@
 ---
-title: "discard_block::operator()"
+title: "discard_block::operator() | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/27/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

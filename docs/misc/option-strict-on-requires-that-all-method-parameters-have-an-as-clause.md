@@ -1,5 +1,5 @@
 ---
-title: "Option Strict On requires that all method parameters have an &#39;As&#39; clause"
+title: "Option Strict On requires that all method parameters have an &#39;As&#39; clause | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,6 +47,6 @@ A method contains a parameter without an `As` clause. When `Option Strict` is on
 -   Supply an `As` clause for the declared variable, or turn `Option Strict` off.  
   
 ## See Also  
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)   
- [Sub Statement](../Topic/Sub%20Statement%20\(Visual%20Basic\).md)   
- [Function Statement](../Topic/Function%20Statement%20\(Visual%20Basic\).md)
+ [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
+ [Sub Statement](/dotnet/visual-basic/language-reference/statements/sub-statement)   
+ [Function Statement](/dotnet/visual-basic/language-reference/statements/function-statement)

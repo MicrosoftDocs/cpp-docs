@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;keyword&gt;&#39; accessor of &#39;&lt;propertyname&gt;&#39; is obsolete: &#39;&lt;errormessage&gt;&#39; (Visual Basic Warning)"
+title: "&#39;&lt;keyword&gt;&#39; accessor of &#39;&lt;propertyname&gt;&#39; is obsolete: &#39;&lt;errormessage&gt;&#39; (Visual Basic Warning) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,7 +40,7 @@ A statement attempts to read or write a property for which the corresponding pro
   
  You can mark any programming element as being no longer in use by applying <xref:System.ObsoleteAttribute> to it. If you do this, you can set the attribute's <xref:System.ObsoleteAttribute.IsError*> property to either `True` or `False`. If you set it to `True`, the compiler treats an attempt to use the element as an error. If you set it to `False`, or let it default to `False`, the compiler issues a warning if there is an attempt to use the element.  
   
- By default, this message is a warning, because the <xref:System.ObsoleteAttribute.IsError*> property of <xref:System.ObsoleteAttribute> is `False`. For more information on hiding warnings or treating warnings as errors, please see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning, because the <xref:System.ObsoleteAttribute.IsError*> property of <xref:System.ObsoleteAttribute> is `False`. For more information on hiding warnings or treating warnings as errors, please see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40019  
   
@@ -55,4 +55,4 @@ A statement attempts to read or write a property for which the corresponding pro
 ## See Also  
  [NOT IN BUILD: Attributes Used in Visual Basic](http://msdn.microsoft.com/en-us/22231318-8a40-49af-9245-e0aab723563b)   
  [NOT IN BUILD: Application of Attributes](http://msdn.microsoft.com/en-us/2b1703ed-4437-49b3-bc0b-568094324f47)   
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)
+ [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)

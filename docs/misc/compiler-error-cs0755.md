@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0755"
+title: "Compiler Error CS0755 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -69,4 +69,4 @@ Both partial method declarations must be extension methods or neither may be an 
 ```  
   
 ## See Also  
- [Extension Methods](../Topic/Extension%20Methods%20\(C%23%20Programming%20Guide\).md)
+ [Extension Methods](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)

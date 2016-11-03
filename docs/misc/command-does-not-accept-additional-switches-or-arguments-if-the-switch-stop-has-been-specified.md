@@ -1,7 +1,7 @@
 ---
-title: "Command does not accept additional switches or arguments if the switch &quot;-stop&quot; has been specified."
+title: "Command does not accept additional switches or arguments if the switch &quot;-stop&quot; has been specified. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -53,6 +53,6 @@ This error generally occurs when the `/stop` switch has been entered, along with
 3.  If you want to start a new Find in Files or Replace in Files operation, re-enter the command, omitting `/stop`.  
   
 ## See Also  
- [Replace In Files Command](../Topic/Replace%20In%20Files%20Command.md)   
- [Find in Files Command](../Topic/Find%20in%20Files%20Command.md)   
- [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md)
+ [Replace In Files Command](/visual-studio/ide/reference/replace-in-files-command)   
+ [Find in Files Command](/visual-studio/ide/reference/find-in-files-command)   
+ [Visual Studio Commands](/visual-studio/ide/reference/visual-studio-commands)

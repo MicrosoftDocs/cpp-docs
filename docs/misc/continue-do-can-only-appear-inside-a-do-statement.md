@@ -1,5 +1,5 @@
 ---
-title: "&#39;Continue Do&#39; can only appear inside a &#39;Do&#39; statement"
+title: "&#39;Continue Do&#39; can only appear inside a &#39;Do&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,5 +49,5 @@ A `Continue Do` statement can only appear within a `Do...Loop` loop.
 3.  Otherwise, remove the `Continue Do` statement.  
   
 ## See Also  
- [Continue Statement](../Topic/Continue%20Statement%20\(Visual%20Basic\).md)   
- [Do...Loop Statement](../Topic/Do...Loop%20Statement%20\(Visual%20Basic\).md)
+ [Continue Statement](/dotnet/visual-basic/language-reference/statements/continue-statement)   
+ [Do...Loop Statement](/dotnet/visual-basic/language-reference/statements/do-loop-statement)

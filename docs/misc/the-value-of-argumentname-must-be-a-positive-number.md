@@ -1,5 +1,5 @@
 ---
-title: "The value of &lt;argumentname&gt; must be a positive number"
+title: "The value of &lt;argumentname&gt; must be a positive number | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -43,5 +43,5 @@ The value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.Reserv
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace*>   
- [My.Application.Log Object](../Topic/My.Application.Log%20Object.md)   
- [My.Log Object](../Topic/My.Log%20Object.md)
+ [My.Application.Log Object](/dotnet/visual-basic/language-reference/objects/my-application-log-object)   
+ [My.Log Object](/dotnet/visual-basic/language-reference/objects/my-log-object)

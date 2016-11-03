@@ -1,5 +1,5 @@
 ---
-title: "&#39;Case Else&#39; can only appear inside a &#39;Select Case&#39; statement"
+title: "&#39;Case Else&#39; can only appear inside a &#39;Select Case&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ A `Case Else` statement occurs outside a `Select` block. A `Case Else` statement
 -   Remove the `Case Else` statement or move it to within a `Select` block.  
   
 ## See Also  
- [Select...Case Statement](../Topic/Select...Case%20Statement%20\(Visual%20Basic\).md)
+ [Select...Case Statement](/dotnet/visual-basic/language-reference/statements/select-case-statement)

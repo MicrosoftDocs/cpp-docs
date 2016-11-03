@@ -1,7 +1,7 @@
 ---
-title: "CComBSTR Class"
+title: "CComBSTR Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -66,12 +66,12 @@ class CComBSTR
 |[CComBSTR::AppendBytes](../Topic/CComBSTR::AppendBytes.md)|Appends a specified number of bytes to `m_str`.|  
 |[CComBSTR::ArrayToBSTR](../Topic/CComBSTR::ArrayToBSTR.md)|Creates a `BSTR` from the first character of each element in the safearray and attaches it to the `CComBSTR` object.|  
 |[CComBSTR::AssignBSTR](../Topic/CComBSTR::AssignBSTR.md)|Assigns a `BSTR` to `m_str`.|  
-|[CComBSTR::Attach](../Topic/CComBSTR::Attach.md)|Attaches a `BSTR` to the `CComBSTR` object.|  
+|[CComBSTR::Attach](/visual-studio/profiling/attach)|Attaches a `BSTR` to the `CComBSTR` object.|  
 |[CComBSTR::BSTRToArray](../Topic/CComBSTR::BSTRToArray.md)|Creates a zero-based one-dimensional safearray, where each element of the array is a character from the `CComBSTR` object.|  
 |[CComBSTR::ByteLength](../Topic/CComBSTR::ByteLength.md)|Returns the length of `m_str` in bytes.|  
 |[CComBSTR::Copy](../Topic/CComBSTR::Copy.md)|Returns a copy of `m_str`.|  
 |[CComBSTR::CopyTo](../Topic/CComBSTR::CopyTo.md)|Returns a copy of `m_str` via an **[out]** parameter|  
-|[CComBSTR::Detach](../Topic/CComBSTR::Detach.md)|Detaches `m_str` from the `CComBSTR` object.|  
+|[CComBSTR::Detach](/visual-studio/profiling/detach)|Detaches `m_str` from the `CComBSTR` object.|  
 |[CComBSTR::Empty](../Topic/CComBSTR::Empty.md)|Frees `m_str`.|  
 |[CComBSTR::Length](../Topic/CComBSTR::Length.md)|Returns the length of `m_str`.|  
 |[CComBSTR::LoadString](../Topic/CComBSTR::LoadString.md)|Loads a string resource.|  

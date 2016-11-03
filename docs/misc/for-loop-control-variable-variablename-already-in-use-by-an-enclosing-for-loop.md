@@ -1,5 +1,5 @@
 ---
-title: "For loop control variable &#39;&lt;variablename&gt;&#39; already in use by an enclosing For loop"
+title: "For loop control variable &#39;&lt;variablename&gt;&#39; already in use by an enclosing For loop | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ Nested `For` loops all must use unique control variables.
 -   Change one of the control variable names.  
   
 ## See Also  
- [For...Next Statement](../Topic/For...Next%20Statement%20\(Visual%20Basic\).md)
+ [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)

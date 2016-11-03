@@ -1,0 +1,1 @@
+   int iOldMargin = m_myHeaderCtrl.SetBitmapMargin(15);

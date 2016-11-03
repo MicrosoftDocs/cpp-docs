@@ -1,5 +1,5 @@
 ---
-title: "Error in project-level import &#39;&lt;qualifiedelementname&gt;&#39; at &#39;&lt;qualifiedcontainername&gt;&#39; : &lt;errormessage&gt;"
+title: "Error in project-level import &#39;&lt;qualifiedelementname&gt;&#39; at &#39;&lt;qualifiedcontainername&gt;&#39; : &lt;errormessage&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

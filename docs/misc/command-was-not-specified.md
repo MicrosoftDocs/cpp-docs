@@ -1,7 +1,7 @@
 ---
-title: "Command was not specified."
+title: "Command was not specified. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ This error generally occurs when an empty string has been entered into the **Com
   
 ### To correct this error  
   
-1.  Enter a valid command. For more information, see [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md).  
+1.  Enter a valid command. For more information, see [Visual Studio Commands](/visual-studio/ide/reference/visual-studio-commands).  
   
 ## See Also  
- [Command Window](../Topic/Command%20Window.md)
+ [Command Window](/visual-studio/ide/reference/command-window)

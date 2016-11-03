@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;name&gt;&#39; is ambiguous between declarations in Modules &#39;&lt;modulename1&gt;&#39; and &#39;&lt;modulename2&gt;&#39;"
+title: "&#39;&lt;name&gt;&#39; is ambiguous between declarations in Modules &#39;&lt;modulename1&gt;&#39; and &#39;&lt;modulename2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ You have provided a name that is ambiguous and therefore conflicts with another 
 -   Fully qualify the name.  
   
 ## See Also  
- [Namespaces in Visual Basic](../Topic/Namespaces%20in%20Visual%20Basic.md)   
- [Namespace Statement](../Topic/Namespace%20Statement.md)
+ [Namespaces in Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces)   
+ [Namespace Statement](/dotnet/visual-basic/language-reference/statements/namespace-statement)

@@ -1,5 +1,5 @@
 ---
-title: "cannot send error report automatically"
+title: "cannot send error report automatically | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -51,5 +51,5 @@ cannot send error report automatically. Please visit 'http://go.microsoft.com/fw
 -   Enable automatic error reporting by following the instructions at [http://go.microsoft.com/fwlink/?LinkId=42039](http://go.microsoft.com/fwlink/?LinkId=42039).  
   
 ## See Also  
- [/errorreport](../Topic/-errorreport.md)   
+ [/errorreport](/dotnet/visual-basic/reference/command-line-compiler/errorreport)   
  [http://go.microsoft.com/fwlink/?LinkId=42039](http://go.microsoft.com/fwlink/?LinkId=42039)

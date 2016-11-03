@@ -1,7 +1,7 @@
 ---
-title: "Add XCode Frameworks and Libraries"
+title: "Add XCode Frameworks and Libraries | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/21/2016"
+ms.date: "10/29/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""

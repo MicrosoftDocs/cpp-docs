@@ -1,7 +1,7 @@
 ---
-title: "Setting Up Visual Studio Tools for Unity with Older Versions of Unity (Pre-5.2)"
+title: "Setting Up Visual Studio Tools for Unity with Older Versions of Unity (Pre-5.2) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/13/2016"
+ms.date: "10/29/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -14,7 +14,7 @@ ms.author: "mithom"
 In this section, you'll learn how to set up Visual Studio Tools for Unity with an older version of Unity (pre-5.2), and start using Visual Studio with your Unity project.  
   
 > [!IMPORTANT]
->  This document applies only to versions of Unity older than Unity 5.2 on Windows, which added built-in support for Visual Studio Tools for Unity when using Visual Studio as your code editor. Whenever this document refers to Unity, it refers only to versions prior to Unity 5.2 on Windows. For information on how to set up Visual Studio Tools for Unity with Unity 5.2 or higher, see [Getting Started](../Topic/Getting%20Started%20with%20Visual%20Studio%20Tools%20for%20Unity.md).  
+>  This document applies only to versions of Unity older than Unity 5.2 on Windows, which added built-in support for Visual Studio Tools for Unity when using Visual Studio as your code editor. Whenever this document refers to Unity, it refers only to versions prior to Unity 5.2 on Windows. For information on how to set up Visual Studio Tools for Unity with Unity 5.2 or higher, see [Getting Started](/visual-studio/cross-platform/getting-started-with-visual-studio-tools-for-unity).  
   
 ## Prerequisites  
  Before you can install and use Visual Studio Tools for Unity, you'll need to install these prerequisites:  
@@ -78,7 +78,7 @@ In this section, you'll learn how to set up Visual Studio Tools for Unity with a
  Now you can edit and debug your Unity game from Visual Studio.  
   
 ## Next steps  
- To learn how to work with and debug your Unity project in Visual Studio, see [Using Visual Studio Tools for Unity](../Topic/Using%20Visual%20Studio%20Tools%20for%20Unity.md).  
+ To learn how to work with and debug your Unity project in Visual Studio, see [Using Visual Studio Tools for Unity](/visual-studio/cross-platform/using-visual-studio-tools-for-unity).  
   
 ## See Also  
  [Unity Homepage](http://unity3d.com)

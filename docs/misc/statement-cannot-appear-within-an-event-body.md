@@ -1,5 +1,5 @@
 ---
-title: "Statement cannot appear within an event body"
+title: "Statement cannot appear within an event body | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -48,4 +48,4 @@ Statement cannot appear within an event body. End of event assumed.
   
 ## See Also  
  [Application Events Sample](http://msdn.microsoft.com/en-us/289a787f-b97e-43c8-a304-fe95e45f4a0d)   
- [Event Statement](../Topic/Event%20Statement.md)
+ [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)

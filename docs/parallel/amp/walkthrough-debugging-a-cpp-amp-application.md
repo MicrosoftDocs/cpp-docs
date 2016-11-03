@@ -1,7 +1,7 @@
 ---
-title: "Walkthrough: Debugging a C++ AMP Application"
+title: "Walkthrough: Debugging a C++ AMP Application | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -295,7 +295,7 @@ Parallel Stacks window
      ![DataTip for Parallel Stacks window](../../parallel/amp/media/campe.png "CampE")  
 GPU thread DataTip  
   
-     For more information about the Parallel Stacks window, see [Using the Parallel Stacks Window](../Topic/Using%20the%20Parallel%20Stacks%20Window.md).  
+     For more information about the Parallel Stacks window, see [Using the Parallel Stacks Window](/visual-studio/debugger/using-the-parallel-stacks-window).  
   
 ### To use the Parallel Watch window  
   
@@ -401,7 +401,7 @@ Grouped threads in the GPU Threads window
   
 ## See Also  
  [C++ AMP Overview](../../parallel/amp/cpp-amp-overview.md)   
- [Debugging GPU Code](../Topic/Debugging%20GPU%20Code.md)   
+ [Debugging GPU Code](/visual-studio/debugger/debugging-gpu-code)   
  [How to: Use the GPU Threads Window](../Topic/How%20to:%20Use%20the%20GPU%20Threads%20Window.md)   
  [How to: Use the Parallel Watch Window](../Topic/How%20to:%20Use%20the%20Parallel%20Watch%20Window.md)   
  [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/LinkID=253987&clcid=0x409)

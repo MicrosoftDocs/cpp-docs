@@ -1,5 +1,5 @@
 ---
-title: "The targeted version of the Visual Basic runtime library does not support the OptionText attribute."
+title: "The targeted version of the Visual Basic runtime library does not support the OptionText attribute. | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

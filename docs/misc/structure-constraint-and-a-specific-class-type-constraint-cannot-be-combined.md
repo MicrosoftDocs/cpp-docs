@@ -1,5 +1,5 @@
 ---
-title: "&#39;Structure&#39; constraint and a specific class type constraint cannot be combined"
+title: "&#39;Structure&#39; constraint and a specific class type constraint cannot be combined | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -63,5 +63,5 @@ A constraint list includes both the [Structure (Visual Basic)](http://msdn.micro
 -   If you want the type argument to inherit from the specified class name, remove the `Structure` keyword from the constraint list.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Value Types and Reference Types](../Topic/Value%20Types%20and%20Reference%20Types.md)
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Value Types and Reference Types](/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)

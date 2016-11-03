@@ -1,5 +1,5 @@
 ---
-title: "&#39;End Try&#39; must be preceded by a matching &#39;Try&#39;"
+title: "&#39;End Try&#39; must be preceded by a matching &#39;Try&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ translation.priority.mt:
 2.  Move the `End Try` to the appropriate location in your code.  
   
 ## See Also  
- [Try...Catch...Finally Statement](../Topic/Try...Catch...Finally%20Statement%20\(Visual%20Basic\).md)   
+ [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
  [Structured Exception Handling Overview for Visual Basic](http://msdn.microsoft.com/en-us/bb81af80-a735-4873-9711-6151a48e418a)

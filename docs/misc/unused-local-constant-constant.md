@@ -1,5 +1,5 @@
 ---
-title: "Unused local constant: &#39;&lt;constant&gt;&#39;"
+title: "Unused local constant: &#39;&lt;constant&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ A local constant has been declared that is not used anywhere in your code.
 1.  This error is a warning and can be ignored. To remove the warning, remove the unused constant declaration from your code.  
   
 ## See Also  
- [Const Statement](../Topic/Const%20Statement%20\(Visual%20Basic\).md)   
- [Constants Overview](../Topic/Constants%20Overview%20\(Visual%20Basic\).md)
+ [Const Statement](/dotnet/visual-basic/language-reference/statements/const-statement)   
+ [Constants Overview](/dotnet/visual-basic/programming-guide/language-features/constants-enums/constants-overview)

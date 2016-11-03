@@ -1,5 +1,5 @@
 ---
-title: "&#39;#If&#39; block must end with a matching &#39;#End If&#39;"
+title: "&#39;#If&#39; block must end with a matching &#39;#End If&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ translation.priority.mt:
 -   Add an `#End If` directive to the end of the conditional compilation block.  
   
 ## See Also  
- [#If...Then...#Else Directives](../Topic/%23If...Then...%23Else%20Directives.md)
+ [#If...Then...#Else Directives](/dotnet/visual-basic/language-reference/directives/if-then-else-directives)

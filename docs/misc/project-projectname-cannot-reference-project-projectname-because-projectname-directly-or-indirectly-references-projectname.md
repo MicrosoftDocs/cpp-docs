@@ -1,5 +1,5 @@
 ---
-title: "Project &#39;&lt;projectname&gt;&#39; cannot reference project &#39;&lt;projectname&gt;&#39; because &#39;&lt;projectname&gt;&#39; directly or indirectly references &#39;&lt;projectname&gt;&#39;"
+title: "Project &#39;&lt;projectname&gt;&#39; cannot reference project &#39;&lt;projectname&gt;&#39; because &#39;&lt;projectname&gt;&#39; directly or indirectly references &#39;&lt;projectname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

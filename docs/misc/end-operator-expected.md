@@ -1,5 +1,5 @@
 ---
-title: "&#39;End Operator&#39; expected"
+title: "&#39;End Operator&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,8 +45,8 @@ An `End` statement must match the block it terminates. An `Operator` procedure d
 1.  Add an `End Operator` statement to the end of the procedure.  
   
 ## See Also  
- [Operator Procedures](../Topic/Operator%20Procedures%20\(Visual%20Basic\).md)   
- [Operator Statement](../Topic/Operator%20Statement.md)   
- [End Statement](../Topic/End%20Statement.md)   
+ [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
+ [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)   
+ [End Statement](/dotnet/visual-basic/language-reference/statements/end-statement)   
  [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
  [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)

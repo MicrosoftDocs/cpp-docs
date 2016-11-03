@@ -1,5 +1,5 @@
 ---
-title: "&lt;type&gt; &#39;&lt;typename&gt;&#39; shadows an overridable method in the base class"
+title: "&lt;type&gt; &#39;&lt;typename&gt;&#39; shadows an overridable method in the base class | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,7 +40,7 @@ translation.priority.mt:
   
  A programming element is declared with the same name as an overridable procedure or property defined in the base class. In this situation, the element in this class should shadow the base class element.  
   
- By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40005  
   
@@ -54,6 +54,6 @@ translation.priority.mt:
   
 ## See Also  
  [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213)   
- [Shadowing in Visual Basic](../Topic/Shadowing%20in%20Visual%20Basic.md)   
- [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md)   
- [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)
+ [Shadowing in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/shadowing)   
+ [Overrides](/dotnet/visual-basic/language-reference/modifiers/overrides)   
+ [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)

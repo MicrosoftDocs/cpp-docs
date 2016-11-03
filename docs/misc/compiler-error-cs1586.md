@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1586"
+title: "Compiler Error CS1586 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -57,4 +57,4 @@ class MyClass
 ```  
   
 ## See Also  
- [Arrays](../Topic/Arrays%20\(C%23%20Programming%20Guide\).md)
+ [Arrays](/dotnet/csharp/programming-guide/arrays/index)

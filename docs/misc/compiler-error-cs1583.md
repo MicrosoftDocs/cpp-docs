@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1583"
+title: "Compiler Error CS1583 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1583
 'file' is not a valid Win32 resource file  
   
- This error occurs when you specify a filename with the [/win32res](../Topic/-win32res%20\(C%23%20Compiler%20Options\).md) compiler option that is not a valid or correctly formatted Win32 resource file. In Visual Studio, the filename is specified in the Application pane of the Project Designer.  
+ This error occurs when you specify a filename with the [/win32res](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option) compiler option that is not a valid or correctly formatted Win32 resource file. In Visual Studio, the filename is specified in the Application pane of the Project Designer.  
   
 ## See Also  
- [Application Page, Project Designer (C#)](../Topic/Application%20Page,%20Project%20Designer%20\(C%23\).md)
+ [Application Page, Project Designer (C#)](/visual-studio/ide/reference/application-page-project-designer-csharp)

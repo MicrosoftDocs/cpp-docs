@@ -1,7 +1,7 @@
 ---
-title: "CComEnumImpl Class"
+title: "CComEnumImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -74,7 +74,7 @@ template <class Base,
 |Name|Description|  
 |----------|-----------------|  
 |[CComEnumImpl::Clone](../Topic/CComEnumImpl::Clone.md)|The implementation of [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx).|  
-|[CComEnumImpl::Init](../Topic/CComEnumImpl::Init.md)|Initializes the enumerator.|  
+|[CComEnumImpl::Init](/visual-studio/debugger/init)|Initializes the enumerator.|  
 |[CComEnumImpl::Next](../Topic/CComEnumImpl::Next.md)|The implementation of [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx).|  
 |[CComEnumImpl::Reset](../Topic/CComEnumImpl::Reset.md)|The implementation of [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx).|  
 |[CComEnumImpl::Skip](../Topic/CComEnumImpl::Skip.md)|The implementation of [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx).|  
@@ -93,7 +93,7 @@ template <class Base,
  `CComEnumImpl` provides the implementation for a COM enumerator interface where the items being enumerated are stored in an array. This class is analogous to the `IEnumOnSTLImpl` class, which provides an implementation of an enumerator interface based on an STL container.  
   
 > [!NOTE]
->  For details on further differences between `CComEnumImpl` and `IEnumOnSTLImpl`, see [CComEnumImpl::Init](../Topic/CComEnumImpl::Init.md).  
+>  For details on further differences between `CComEnumImpl` and `IEnumOnSTLImpl`, see [CComEnumImpl::Init](/visual-studio/debugger/init).  
   
  Typically, you will *not* need to create your own enumerator class by deriving from this interface implementation. If you want to use an ATL-supplied enumerator based on an array, it is more common to create an instance of [CComEnum](../../atl/reference/ccomenum-class.md).  
   
@@ -196,7 +196,7 @@ STDMETHOD(Clone)(Base** ppEnum);
  Note that cloned enumerators never make their own copy (or take ownership) of the data used by the original enumerator. If necessary, cloned enumerators will keep the original enumerator alive (using a COM reference) to ensure that the data is available for as long as they need it.  
   
 ##  <a name="ccomenumimpl__m_spunk"></a>  CComEnumImpl::m_spUnk  
- This smart pointer maintains a reference on the object passed to [CComEnumImpl::Init](../Topic/CComEnumImpl::Init.md), ensuring that it remains alive during the lifetime of the enumerator.  
+ This smart pointer maintains a reference on the object passed to [CComEnumImpl::Init](/visual-studio/debugger/init), ensuring that it remains alive during the lifetime of the enumerator.  
   
 ```
 CComPtr<IUnknown> m_spUnk;
@@ -224,7 +224,7 @@ T* m_iter;
 ```  
   
 ##  <a name="ccomenumimpl__m_dwflags"></a>  CComEnumImpl::m_dwFlags  
- The flags passed to [CComEnumImpl::Init](../Topic/CComEnumImpl::Init.md).  
+ The flags passed to [CComEnumImpl::Init](/visual-studio/debugger/init).  
   
 ```
 DWORD m_dwFlags;

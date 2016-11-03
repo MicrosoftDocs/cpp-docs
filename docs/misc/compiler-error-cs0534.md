@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0534"
+title: "Compiler Error CS0534 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0534
 'function1' does not implement inherited abstract member 'function2'  
   
- A class is required to implement all the [abstract](../Topic/abstract%20\(C%23%20Reference\).md) members in the base class, unless the class is also abstract.  
+ A class is required to implement all the [abstract](/dotnet/csharp/language-reference/keywords/abstract) members in the base class, unless the class is also abstract.  
   
  The following sample generates CS0534:  
   

@@ -1,7 +1,7 @@
 ---
-title: "CComFakeCriticalSection Class"
+title: "CComFakeCriticalSection Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -52,7 +52,7 @@ class CComFakeCriticalSection
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComFakeCriticalSection::Init](../Topic/CComFakeCriticalSection::Init.md)|Does nothing since there is no critical section.|  
+|[CComFakeCriticalSection::Init](/visual-studio/debugger/init)|Does nothing since there is no critical section.|  
 |[CComFakeCriticalSection::Lock](../Topic/CComFakeCriticalSection::Lock.md)|Does nothing since there is no critical section.|  
 |[CComFakeCriticalSection::Term](../Topic/CComFakeCriticalSection::Term.md)|Does nothing since there is no critical section.|  
 |[CComFakeCriticalSection::Unlock](../Topic/CComFakeCriticalSection::Unlock.md)|Does nothing since there is no critical section.|  

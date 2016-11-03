@@ -1,7 +1,7 @@
 ---
-title: "Walkthrough: Working with Projects and Solutions (C++)"
+title: "Walkthrough: Working with Projects and Solutions (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -39,7 +39,7 @@ translation.priority.ht:
 # Walkthrough: Working with Projects and Solutions (C++)
 Here's how to create a C++ project in Visual Studio, add code, and then build and run the project. The project in this walkthrough is a program that tracks how many players are playing different card games.  
   
- In [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)], work is organized in projects and solutions. A solution can contain more than one project—for example, a DLL and an executable that references that DLL. For more information, see [Solutions and Projects](../Topic/Solutions%20and%20Projects%20in%20Visual%20Studio.md).  
+ In [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)], work is organized in projects and solutions. A solution can contain more than one project—for example, a DLL and an executable that references that DLL. For more information, see [Solutions and Projects](/visual-studio/ide/solutions-and-projects-in-visual-studio).  
   
 ## Prerequisites  
   

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1037"
+title: "Compiler Error CS1037 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS1037
 Overloadable operator expected  
   
- When specifying a comment with [/doc](../Topic/-doc%20\(C%23%20Compiler%20Options\).md), the compiler encountered an invalid link.
+ When specifying a comment with [/doc](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option), the compiler encountered an invalid link.

@@ -1,5 +1,5 @@
 ---
-title: "Property Get-Let-Set are no longer supported; use the new Property declaration syntax"
+title: "Property Get-Let-Set are no longer supported; use the new Property declaration syntax | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -53,5 +53,5 @@ translation.priority.mt:
 4.  Use `Set` property procedures for all property assignments. `Let` property procedures are no longer necessary, or supported.  
   
 ## See Also  
- [Property Statement](../Topic/Property%20Statement.md)   
+ [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
  [Language Changes for Visual Basic 6.0 Users](https://msdn.microsoft.com/en-us/library/skw8dhdd\(v=vs.90\).aspx)

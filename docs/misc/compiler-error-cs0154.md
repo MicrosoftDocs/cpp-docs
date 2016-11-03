@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0154"
+title: "Compiler Error CS0154 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0154
 The property or indexer 'property' cannot be used in this context because it lacks the get accessor  
   
- An attempt to use a [property](../Topic/Using%20Properties%20\(C%23%20Programming%20Guide\).md) failed because no get accessor method was defined in the property. For more information, see [Fields](../Topic/Fields%20\(C%23%20Programming%20Guide\).md).  
+ An attempt to use a [property](/dotnet/csharp/programming-guide/classes-and-structs/using-properties) failed because no get accessor method was defined in the property. For more information, see [Fields](/dotnet/csharp/programming-guide/classes-and-structs/fields).  
   
 ## Example  
  The following sample generates CS0154:  

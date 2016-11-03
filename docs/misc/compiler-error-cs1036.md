@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1036"
+title: "Compiler Error CS1036 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS1036
 ( or . expected  
   
- The XML in a [doc](../Topic/-doc%20\(C%23%20Compiler%20Options\).md) comment was badly formed.
+ The XML in a [doc](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option) comment was badly formed.

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0212"
+title: "Compiler Error CS0212 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0212
 You can only take the address of an unfixed expression inside of a fixed statement initializer  
   
- For more information, see [Unsafe Code and Pointers](../Topic/Unsafe%20Code%20and%20Pointers%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see [Unsafe Code and Pointers](/dotnet/csharp/programming-guide/unsafe-code-pointers/index).  
   
  The following sample shows how to take the address of an unfixed expression. The following sample generates CS0212.  
   

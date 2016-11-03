@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0515"
+title: "Compiler Error CS0515 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0515
 'function' : access modifiers are not allowed on static constructors  
   
- A static constructor cannot have an [access modifier](../Topic/Modifiers%20\(C%23%20Reference\).md).  
+ A static constructor cannot have an [access modifier](/dotnet/csharp/language-reference/keywords/modifiers).  
   
 ## Example  
  The following sample generates CS0515:  

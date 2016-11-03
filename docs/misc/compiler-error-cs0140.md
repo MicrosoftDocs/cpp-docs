@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0140"
+title: "Compiler Error CS0140 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0140
 The label 'label' is a duplicate  
   
- A label with the same name appeared twice. For more information, see [goto](../Topic/goto%20\(C%23%20Reference\).md).  
+ A label with the same name appeared twice. For more information, see [goto](/dotnet/csharp/language-reference/keywords/goto).  
   
  The following sample generates CS0140:  
   

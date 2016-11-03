@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1931"
+title: "Compiler Error CS1931 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -61,4 +61,4 @@ class Test
 ```  
   
 ## See Also  
- [LINQ Query Expressions](../Topic/LINQ%20Query%20Expressions%20\(C%23%20Programming%20Guide\).md)
+ [LINQ Query Expressions](/dotnet/csharp/programming-guide/linq-query-expressions/index)

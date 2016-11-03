@@ -1,7 +1,7 @@
 ---
-title: "CAutoVectorPtr Class"
+title: "CAutoVectorPtr Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -69,8 +69,8 @@ template<typename T> class CAutoVectorPtr
 |Name|Description|  
 |----------|-----------------|  
 |[CAutoVectorPtr::Allocate](../Topic/CAutoVectorPtr::Allocate.md)|Call this method to allocate the memory required by the array of objects pointed to by `CAutoVectorPtr`.|  
-|[CAutoVectorPtr::Attach](../Topic/CAutoVectorPtr::Attach.md)|Call this method to take ownership of an existing pointer.|  
-|[CAutoVectorPtr::Detach](../Topic/CAutoVectorPtr::Detach.md)|Call this method to release ownership of a pointer.|  
+|[CAutoVectorPtr::Attach](/visual-studio/profiling/attach)|Call this method to take ownership of an existing pointer.|  
+|[CAutoVectorPtr::Detach](/visual-studio/profiling/detach)|Call this method to release ownership of a pointer.|  
 |[CAutoVectorPtr::Free](../Topic/CAutoVectorPtr::Free.md)|Call this method to delete an object pointed to by a `CAutoVectorPtr`.|  
   
 ### Public Operators  
@@ -123,7 +123,7 @@ void Attach(T* p) throw();
  The `CAutoVectorPtr` object will take ownership of this pointer.  
   
 ### Remarks  
- When a `CAutoVectorPtr` object takes ownership of a pointer, it will automatically delete the pointer and any allocated data when it goes out of scope. If [CAutoVectorPtr::Detach](../Topic/CAutoVectorPtr::Detach.md) is called, the programmer is again given responsibility for freeing any allocated resources.  
+ When a `CAutoVectorPtr` object takes ownership of a pointer, it will automatically delete the pointer and any allocated data when it goes out of scope. If [CAutoVectorPtr::Detach](/visual-studio/profiling/detach) is called, the programmer is again given responsibility for freeing any allocated resources.  
   
  In debug builds, an assertion failure will occur if the [CAutoVectorPtr::m_p](../Topic/CAutoVectorPtr::m_p.md) member variable currently points to an existing value; that is, it is not equal to NULL.  
   

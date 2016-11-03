@@ -1,5 +1,5 @@
 ---
-title: "&#39;End Function&#39; must be the first statement on a line"
+title: "&#39;End Function&#39; must be the first statement on a line | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -46,4 +46,4 @@ An `End Function` statement follows a colon (:) statement separator. `End Functi
   
 ## See Also  
  [How to: Break and Combine Statements in Code](../Topic/How%20to:%20Break%20and%20Combine%20Statements%20in%20Code%20\(Visual%20Basic\).md)   
- [Function Statement](../Topic/Function%20Statement%20\(Visual%20Basic\).md)
+ [Function Statement](/dotnet/visual-basic/language-reference/statements/function-statement)

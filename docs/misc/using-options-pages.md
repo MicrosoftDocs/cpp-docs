@@ -1,7 +1,7 @@
 ---
-title: "Using Options Pages"
+title: "Using Options Pages | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -37,7 +37,7 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] automation model
   
 -   The settings of the **Dynamic Help** page cannot be accessed programmatically. The **Dynamic Help** feature can be controlled by using the automation model, but control must be accomplished directly in code. For more information, see [How to: Control the Dynamic Help Window](http://msdn.microsoft.com/en-us/7f5777aa-c270-4058-a175-8ce8a4ed25eb).  
   
--   Control of the **Fonts and Color** page settings is provided through its own API, not through the automation model. For more information, see [Using Fonts and Colors](../Topic/Using%20Fonts%20and%20Colors.md).  
+-   Control of the **Fonts and Color** page settings is provided through its own API, not through the automation model. For more information, see [Using Fonts and Colors](/visual-studio/extensibility/using-fonts-and-colors).  
   
 -   Language-specific properties cannot be obtained through the automation model.  
   
@@ -113,9 +113,9 @@ hr= srpProperty.set_Value(4);
   
 ## See Also  
  [Creating Options Pages By Using Interop Assemblies](../misc/creating-options-pages-by-using-interop-assemblies.md)   
- [Creating Options Pages](../Topic/Creating%20Options%20Pages.md)   
+ [Creating Options Pages](/visual-studio/extensibility/internals/creating-options-pages)   
  [Creating Options Pages By Using Automation](../misc/creating-options-pages-by-using-automation.md)   
  [Controlling Options Settings](../Topic/Controlling%20Options%20Settings.md)   
  [Registering Custom Options Pages](../misc/registering-custom-options-pages.md)   
  [Opening an Options Page](../misc/opening-an-options-page.md)   
- [Extending User Settings and Options](../Topic/Extending%20User%20Settings%20and%20Options.md)
+ [Extending User Settings and Options](/visual-studio/extensibility/extending-user-settings-and-options)

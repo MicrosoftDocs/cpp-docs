@@ -1,5 +1,5 @@
 ---
-title: "Event &#39;&lt;eventname&gt;&#39; event specified by the &#39;DefaultEvent&#39; attribute is not a publicly accessible event for this class"
+title: "Event &#39;&lt;eventname&gt;&#39; event specified by the &#39;DefaultEvent&#39; attribute is not a publicly accessible event for this class | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -48,6 +48,6 @@ The <xref:System.ComponentModel.DefaultEventAttribute> attribute must specify th
   
 ## See Also  
  <xref:System.ComponentModel.DefaultEventAttribute>   
- [Event Statement](../Topic/Event%20Statement.md)   
- [Class Statement](../Topic/Class%20Statement%20\(Visual%20Basic\).md)   
- [Public](../Topic/Public%20\(Visual%20Basic\).md)
+ [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)   
+ [Class Statement](/dotnet/visual-basic/language-reference/statements/class-statement)   
+ [Public](/dotnet/visual-basic/language-reference/modifiers/public)

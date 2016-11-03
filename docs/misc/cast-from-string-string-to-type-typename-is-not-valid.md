@@ -1,5 +1,5 @@
 ---
-title: "Cast from string &quot;&lt;string&gt;&quot; to type &#39;&lt;typename&gt;&#39; is not valid"
+title: "Cast from string &quot;&lt;string&gt;&quot; to type &#39;&lt;typename&gt;&#39; is not valid | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,4 +40,4 @@ An attempt to convert a string variable to another type is not valid.
 1.  Check the types involved in the conversion and make sure you are attempting to convert to a meaningful type.  
   
 ## See Also  
- [Type Conversions in Visual Basic](../Topic/Type%20Conversions%20in%20Visual%20Basic.md)
+ [Type Conversions in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/type-conversions)

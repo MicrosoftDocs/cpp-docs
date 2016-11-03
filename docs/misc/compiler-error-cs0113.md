@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0113"
+title: "Compiler Error CS0113 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0113
 A member 'function' marked as override cannot be marked as new or virtual  
   
- It is mutually exclusive to mark a method with the [new](../Topic/new%20\(C%23%20Reference\).md) and [override](../Topic/override%20\(C%23%20Reference\).md) keywords.  
+ It is mutually exclusive to mark a method with the [new](/dotnet/csharp/language-reference/keywords/new) and [override](/dotnet/csharp/language-reference/keywords/override) keywords.  
   
  The following sample generates CS0113:  
   

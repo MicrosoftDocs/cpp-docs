@@ -1,0 +1,1 @@
+	EnableDocking(CBRS_ALIGN_ANY);

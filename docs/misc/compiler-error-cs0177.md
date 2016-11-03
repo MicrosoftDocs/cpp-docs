@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0177"
+title: "Compiler Error CS0177 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0177
 The out parameter 'parameter' must be assigned to before control leaves the current method  
   
- A parameter marked with the [out](../Topic/out%20\(C%23%20Reference\).md) keyword was not assigned a value in the method body. For more information, see [Passing Parameters](../Topic/Passing%20Parameters%20\(C%23%20Programming%20Guide\).md)  
+ A parameter marked with the [out](/dotnet/csharp/language-reference/keywords/out) keyword was not assigned a value in the method body. For more information, see [Passing Parameters](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)  
   
  The following sample generates CS0177:  
   

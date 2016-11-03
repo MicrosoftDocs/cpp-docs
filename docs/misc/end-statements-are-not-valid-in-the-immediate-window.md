@@ -1,5 +1,5 @@
 ---
-title: "&#39;End&#39; statements are not valid in the Immediate window"
+title: "&#39;End&#39; statements are not valid in the Immediate window | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ The `Stop` and `End` statements suspend execution and are not permitted in a deb
 -   Do not issue a `End` or `Stop` statement in the **Immediate** window.  
   
 ## See Also  
- [Immediate Window](../Topic/Immediate%20Window.md)
+ [Immediate Window](/visual-studio/ide/reference/immediate-window)

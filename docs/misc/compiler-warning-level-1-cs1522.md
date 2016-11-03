@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS1522"
+title: "Compiler Warning (level 1) CS1522 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS1522
 Empty switch block  
   
- The compiler detected a [switch](../Topic/switch%20\(C%23%20Reference\).md) block with no **case** or **default** statement. A `switch` block must have one or more **case** or **default** statements.  
+ The compiler detected a [switch](/dotnet/csharp/language-reference/keywords/switch) block with no **case** or **default** statement. A `switch` block must have one or more **case** or **default** statements.  
   
  The following sample generates CS1522:  
   

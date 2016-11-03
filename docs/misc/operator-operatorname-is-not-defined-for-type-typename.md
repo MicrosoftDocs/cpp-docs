@@ -1,5 +1,5 @@
 ---
-title: "Operator &#39;&lt;operatorname&gt;&#39; is not defined for type &#39;&lt;typename&gt;&#39;"
+title: "Operator &#39;&lt;operatorname&gt;&#39; is not defined for type &#39;&lt;typename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ You have attempted to use a unary operator (`+`, `-`, or `Not`) on a type, such 
 -   Replace the unary operator with an appropriate operator for the expression.  
   
 ## See Also  
- [Operators and Expressions](../Topic/Operators%20and%20Expressions%20in%20Visual%20Basic.md)   
- [Efficient Combination of Operators](../Topic/Efficient%20Combination%20of%20Operators%20\(Visual%20Basic\).md)   
- [Operator Precedence in Visual Basic](../Topic/Operator%20Precedence%20in%20Visual%20Basic.md)
+ [Operators and Expressions](/dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/index)   
+ [Efficient Combination of Operators](/dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/efficient-combination-of-operators)   
+ [Operator Precedence in Visual Basic](/dotnet/visual-basic/language-reference/operators/operator-precedence)

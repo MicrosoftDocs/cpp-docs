@@ -1,5 +1,5 @@
 ---
-title: "Too many DLL application clients"
+title: "Too many DLL application clients | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,4 +40,4 @@ The dynamic-link library (DLL) for [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_m
 -   Reduce the number of open applications accessing [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)].  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

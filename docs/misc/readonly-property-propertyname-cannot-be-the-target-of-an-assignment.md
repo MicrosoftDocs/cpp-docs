@@ -1,5 +1,5 @@
 ---
-title: "&#39;ReadOnly&#39; property &#39;&lt;propertyname&gt;&#39; cannot be the target of an assignment"
+title: "&#39;ReadOnly&#39; property &#39;&lt;propertyname&gt;&#39; cannot be the target of an assignment | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ A `ReadOnly` property occurs in a context that assigns a value to it. Only writa
 -   Remove the `ReadOnly` keyword from the `Property` statement declaring the variable, or remove the statement that assigns a value to it.  
   
 ## See Also  
- [ReadOnly](../Topic/ReadOnly%20\(Visual%20Basic\).md)   
- [Property Statement](../Topic/Property%20Statement.md)
+ [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)   
+ [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)

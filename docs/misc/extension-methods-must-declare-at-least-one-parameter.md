@@ -1,5 +1,5 @@
 ---
-title: "Extension methods must declare at least one parameter"
+title: "Extension methods must declare at least one parameter | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -64,6 +64,6 @@ greeting.Print()
 ```  
   
 ## See Also  
- [Extension Methods](../Topic/Extension%20Methods%20\(Visual%20Basic\).md)   
- [Procedure Parameters and Arguments](../Topic/Procedure%20Parameters%20and%20Arguments%20\(Visual%20Basic\).md)   
- [Procedures](../Topic/Procedures%20in%20Visual%20Basic.md)
+ [Extension Methods](/dotnet/visual-basic/language-reference/procedures/extension-methods)   
+ [Procedure Parameters and Arguments](/dotnet/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)   
+ [Procedures](/dotnet/visual-basic/language-reference/procedures/index)

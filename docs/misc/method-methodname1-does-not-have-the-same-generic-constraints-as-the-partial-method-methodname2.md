@@ -1,5 +1,5 @@
 ---
-title: "Method &#39;&lt;methodname1&gt;&#39; does not have the same generic constraints as the partial method &#39;&lt;methodname2&gt;&#39;"
+title: "Method &#39;&lt;methodname1&gt;&#39; does not have the same generic constraints as the partial method &#39;&lt;methodname2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -58,6 +58,6 @@ End Class
  **Error ID:** BC31438  
   
 ## See Also  
- [Partial Methods](../Topic/Partial%20Methods%20\(Visual%20Basic\).md)   
- [Partial](../Topic/Partial%20\(Visual%20Basic\).md)   
- [Generic Procedures in Visual Basic](../Topic/Generic%20Procedures%20in%20Visual%20Basic.md)
+ [Partial Methods](/dotnet/visual-basic/language-reference/procedures/partial-methods)   
+ [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)   
+ [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures)

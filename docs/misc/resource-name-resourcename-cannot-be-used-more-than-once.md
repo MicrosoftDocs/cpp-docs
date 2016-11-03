@@ -1,5 +1,5 @@
 ---
-title: "Resource name &#39;&lt;resourcename&gt;&#39; cannot be used more than once"
+title: "Resource name &#39;&lt;resourcename&gt;&#39; cannot be used more than once | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ The name for a specified resource in a dynamic-linked library or executable file
 -   Uniquely name resources.  
   
 ## See Also  
- [/linkresource (Visual Basic)](../Topic/-linkresource%20\(Visual%20Basic\).md)   
- [/resource (Visual Basic)](../Topic/-resource%20\(Visual%20Basic\).md)
+ [/linkresource (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/linkresource)   
+ [/resource (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/resource)

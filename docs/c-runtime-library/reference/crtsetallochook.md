@@ -1,7 +1,7 @@
 ---
-title: "_CrtSetAllocHook"
+title: "_CrtSetAllocHook | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -92,7 +92,7 @@ lineNumber);
   
  To clear the hook function, pass `NULL` to `_CrtSetAllocHook`.  
   
- For more information about how `_CrtSetAllocHook` can be used with other memory management functions or how to write your own client-defined hook functions, see [Debug Hook Function Writing](../Topic/Debug%20Hook%20Function%20Writing.md).  
+ For more information about how `_CrtSetAllocHook` can be used with other memory management functions or how to write your own client-defined hook functions, see [Debug Hook Function Writing](/visual-studio/debugger/debug-hook-function-writing).  
   
 > [!NOTE]
 >  `_CrtSetAllocHook` is not supported under `/clr:pure`.  

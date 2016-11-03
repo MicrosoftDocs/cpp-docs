@@ -1,7 +1,7 @@
 ---
-title: "Changing a Symbol&#39;s Numeric Value"
+title: "Changing a Symbol&#39;s Numeric Value | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Changing a Symbol&#39;s Numeric Value
-For symbols associated with a single resource, you can use the [Properties Window](../Topic/Properties%20Window.md) to change the symbol value. You can use the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md) to change the value of symbols not currently assigned to a resource. For more information, see [Changing Unassigned Symbols](../windows/changing-unassigned-symbols.md).  
+For symbols associated with a single resource, you can use the [Properties Window](/visual-studio/ide/reference/properties-window) to change the symbol value. You can use the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md) to change the value of symbols not currently assigned to a resource. For more information, see [Changing Unassigned Symbols](../windows/changing-unassigned-symbols.md).  
   
 ### To change a symbol value assigned to a single resource or object  
   

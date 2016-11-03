@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;qualifiedmethod&gt;&#39; is not accessible in this context because it is &#39;&lt;modifier&gt;&#39;"
+title: "&#39;&lt;qualifiedmethod&gt;&#39; is not accessible in this context because it is &#39;&lt;modifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -46,6 +46,6 @@ You have attempted to access a method that is not accessible in this context due
   
 ## See Also  
  [NOT IN BUILD: Considerations for Choosing Access Levels for Methods](http://msdn.microsoft.com/en-us/8b696461-2191-4cea-bb64-5fa3449da2ff)   
- [Private](../Topic/Private%20\(Visual%20Basic\).md)   
- [Protected](../Topic/Protected%20\(Visual%20Basic\).md)   
- [Friend](../Topic/Friend%20\(Visual%20Basic\).md)
+ [Private](/dotnet/visual-basic/language-reference/modifiers/private)   
+ [Protected](/dotnet/visual-basic/language-reference/modifiers/protected)   
+ [Friend](/dotnet/visual-basic/language-reference/modifiers/friend)

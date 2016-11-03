@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1576"
+title: "Compiler Error CS1576 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1576
 The line number specified for #line directive is missing or invalid  
   
- The compiler detected an error with the value passed to the [#line](../Topic/%23line%20\(C%23%20Reference\).md) directive.  
+ The compiler detected an error with the value passed to the [#line](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-line) directive.  
   
  The following sample generates CS1576:  
   

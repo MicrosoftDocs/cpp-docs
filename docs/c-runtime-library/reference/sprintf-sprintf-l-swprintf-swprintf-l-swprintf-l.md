@@ -1,7 +1,7 @@
 ---
-title: "sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l"
+title: "sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

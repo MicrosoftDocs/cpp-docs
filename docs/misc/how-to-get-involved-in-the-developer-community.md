@@ -1,7 +1,7 @@
 ---
-title: "How to: Get Involved in the Developer Community"
+title: "How to: Get Involved in the Developer Community | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -33,4 +33,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Get Involved in the Developer Community
-This content has been removed. For information, see [Talk to Us](../Topic/Talk%20to%20Us.md).
+This content has been removed. For information, see [Talk to Us](/visual-studio/ide/talk-to-us).

@@ -1,7 +1,7 @@
 ---
-title: "How to: Nest Shapes - redirect"
+title: "How to: Nest Shapes - redirect | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -21,4 +21,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Nest Shapes - redirect
-This topic has been merged with others. Please see [Customizing Presentation on the Diagram](../Topic/Customizing%20Presentation%20on%20the%20Diagram.md).
+This topic has been merged with others. Please see [Customizing Presentation on the Diagram](/visual-studio/modeling/customizing-presentation-on-the-diagram).

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0100"
+title: "Compiler Error CS0100 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0100
 The parameter name 'parameter name' is a duplicate  
   
- A method declaration used the same parameter name more than once. Parameter names must be unique in a method declaration. For more information, see [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md).  
+ A method declaration used the same parameter name more than once. Parameter names must be unique in a method declaration. For more information, see [Methods](/dotnet/csharp/programming-guide/classes-and-structs/methods).  
   
  The following sample generates CS0100:  
   

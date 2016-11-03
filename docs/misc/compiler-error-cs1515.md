@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1515"
+title: "Compiler Error CS1515 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1515
 'in' expected  
   
- In a [foreach, in](../Topic/foreach,%20in%20\(C%23%20Reference\).md) statement, the "in" part is missing.  
+ In a [foreach, in](/dotnet/csharp/language-reference/keywords/foreach-in) statement, the "in" part is missing.  
   
 ## Example  
  The following sample generates CS1515:  

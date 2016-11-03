@@ -1,7 +1,7 @@
 ---
-title: "2.7.2.5 default"
+title: "2.7.2.5 default | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

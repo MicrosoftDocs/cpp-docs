@@ -1,5 +1,5 @@
 ---
-title: "Cannot convert start value of type &#39;&lt;type1&gt;&#39;, limit value of &#39;&lt;type2&gt;&#39; and step value of &#39;&lt;type3&gt;&#39; to a common type"
+title: "Cannot convert start value of type &#39;&lt;type1&gt;&#39;, limit value of &#39;&lt;type2&gt;&#39; and step value of &#39;&lt;type3&gt;&#39; to a common type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -41,4 +41,4 @@ The specified `For...Next` control values have different types, and therefore ar
   
 ## See Also  
  [Debugging Changes in Visual Basic .NET](http://msdn.microsoft.com/en-us/0e82bb0d-8bb2-4fe8-87d1-75f24c7cfd75)   
- [For...Next Statement](../Topic/For...Next%20Statement%20\(Visual%20Basic\).md)
+ [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)

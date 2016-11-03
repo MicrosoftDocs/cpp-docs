@@ -1,5 +1,5 @@
 ---
-title: "Extension methods can be defined only in modules"
+title: "Extension methods can be defined only in modules | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -63,6 +63,6 @@ End Namespace
   
 ## See Also  
  [NOT IN BUILD: Application of Attributes](http://msdn.microsoft.com/en-us/2b1703ed-4437-49b3-bc0b-568094324f47)   
- [Extension Methods](../Topic/Extension%20Methods%20\(Visual%20Basic\).md)   
+ [Extension Methods](/dotnet/visual-basic/language-reference/procedures/extension-methods)   
  [Module \<keyword>](../Topic/Module%20%3Ckeyword%3E%20\(Visual%20Basic\).md)   
- [Module Statement](../Topic/Module%20Statement.md)
+ [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)

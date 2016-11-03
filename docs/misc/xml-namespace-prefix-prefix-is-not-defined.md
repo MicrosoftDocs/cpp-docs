@@ -1,5 +1,5 @@
 ---
-title: "XML namespace prefix &#39;prefix&#39; is not defined"
+title: "XML namespace prefix &#39;prefix&#39; is not defined | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,6 +49,6 @@ An undefined XML namespace prefix has been specified for an XML literal or an XM
 -   Modify the XML namespace prefix for the XML literal or XML axis property to a previously defined XML namespace prefix.  
   
 ## See Also  
- [Imports Statement (XML Namespace)](../Topic/Imports%20Statement%20\(XML%20Namespace\).md)   
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [Imports Statement (XML Namespace)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)   
+ [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)

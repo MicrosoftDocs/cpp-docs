@@ -1,5 +1,5 @@
 ---
-title: "Type argument &#39;&lt;typeargumentname&gt;&#39; must have a public parameterless instance constructor to satisfy the &#39;New&#39; constraint for type parameter &#39;&lt;typeparametername&gt;&#39;"
+title: "Type argument &#39;&lt;typeargumentname&gt;&#39; must have a public parameterless instance constructor to satisfy the &#39;New&#39; constraint for type parameter &#39;&lt;typeparametername&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Type argument &#39;&lt;typeargumentname&gt;&#39; must have a public parameterless instance constructor to satisfy the &#39;New&#39; constraint for type parameter &#39;&lt;typeparametername&gt;&#39;
-A type argument supplies a type without an accessible parameterless constructor to a type parameter with the [New Operator](../Topic/New%20Operator%20\(Visual%20Basic\).md) constraint.  
+A type argument supplies a type without an accessible parameterless constructor to a type parameter with the [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator) constraint.  
   
  A constraint list imposes requirements on the type argument passed to the type parameter. One possible requirement is that the type argument must expose a parameterless constructor that the creating code can access. To specify this requirement, the constraint list includes the `New` constraint.  
   
@@ -49,6 +49,6 @@ A type argument supplies a type without an accessible parameterless constructor 
 2.  Choose a type for the type argument that exposes an accessible parameterless constructor. You cannot invoke this particular generic type unless you can supply such a type argument to this type parameter.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Type List](../Topic/Type%20List%20\(Visual%20Basic\).md)   
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Type List](/dotnet/visual-basic/language-reference/statements/type-list)   
  [How to: Use a Generic Class](../Topic/How%20to:%20Use%20a%20Generic%20Class%20\(Visual%20Basic\).md)

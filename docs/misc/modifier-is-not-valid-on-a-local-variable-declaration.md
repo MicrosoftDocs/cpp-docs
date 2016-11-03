@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;modifier&gt;&#39; is not valid on a local variable declaration"
+title: "&#39;&lt;modifier&gt;&#39; is not valid on a local variable declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ A `Dim` statement inside a procedure contains an invalid keyword, such as `Overl
 -   Remove the invalid keyword from the `Dim` statement.  
   
 ## See Also  
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)
+ [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)

@@ -1,5 +1,5 @@
 ---
-title: "&#39;And&#39; expected"
+title: "&#39;And&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -54,7 +54,7 @@ A comparison operator other than `And` has been used to combine two or more `Equ
   
 ## See Also  
  [How to: Combine Data with Joins](../Topic/How%20to:%20Combine%20Data%20with%20LINQ%20by%20Using%20Joins%20\(Visual%20Basic\).md)   
- [Join Clause](../Topic/Join%20Clause%20\(Visual%20Basic\).md)   
- [Group Join Clause](../Topic/Group%20Join%20Clause%20\(Visual%20Basic\).md)   
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [LINQ](../Topic/LINQ%20in%20Visual%20Basic.md)
+ [Join Clause](/dotnet/visual-basic/language-reference/queries/join-clause)   
+ [Group Join Clause](/dotnet/visual-basic/language-reference/queries/group-join-clause)   
+ [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)

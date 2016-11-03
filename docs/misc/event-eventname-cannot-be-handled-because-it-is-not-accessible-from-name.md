@@ -1,5 +1,5 @@
 ---
-title: "Event &#39;&lt;eventname&gt;&#39; cannot be handled because it is not accessible from &#39;&lt;name&gt;&#39;"
+title: "Event &#39;&lt;eventname&gt;&#39; cannot be handled because it is not accessible from &#39;&lt;name&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

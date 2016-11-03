@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0541"
+title: "Compiler Error CS0541 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0541
 'declaration' : explicit interface declaration can only be declared in a class or struct  
   
- An explicit [interface](../Topic/interface%20\(C%23%20Reference\).md) declaration was found outside a [class](../Topic/class%20\(C%23%20Reference\).md) or [struct](../Topic/struct%20\(C%23%20Reference\).md).  
+ An explicit [interface](/dotnet/csharp/language-reference/keywords/interface) declaration was found outside a [class](/dotnet/csharp/language-reference/keywords/class) or [struct](/dotnet/csharp/language-reference/keywords/struct).  
   
  The following sample generates CS0541:  
   

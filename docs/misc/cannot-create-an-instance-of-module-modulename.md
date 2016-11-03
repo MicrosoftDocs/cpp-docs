@@ -1,5 +1,5 @@
 ---
-title: "Cannot create an instance of Module &#39;&lt;modulename&gt;&#39;"
+title: "Cannot create an instance of Module &#39;&lt;modulename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ A module exists only as a single shared instance, and additional instances canno
 -   Change the module to a class, or replace it in the `New` clause with a class name.  
   
 ## See Also  
- [Module Statement](../Topic/Module%20Statement.md)   
+ [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)   
  [NOT IN BUILD: Implements Keyword and Implements Statement](http://msdn.microsoft.com/en-us/b96560f7-6413-480f-a1e2-f80253bab5be)

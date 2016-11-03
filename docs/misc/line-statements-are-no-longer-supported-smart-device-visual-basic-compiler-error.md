@@ -1,5 +1,5 @@
 ---
-title: "&#39;Line&#39; statements are no longer supported (Smart Device-Visual Basic Compiler Error)"
+title: "&#39;Line&#39; statements are no longer supported (Smart Device-Visual Basic Compiler Error) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,4 +49,4 @@ The `Line` statement is no longer supported. File I/O functionality is normally 
 ## See Also  
  <xref:System.IO>   
  <xref:System.Drawing>   
- [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md)
+ [File Access with Visual Basic](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/file-access)

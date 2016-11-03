@@ -1,5 +1,5 @@
 ---
-title: "&#39;MustOverride&#39; method &#39;&lt;methodname&gt;&#39; cannot be called with &#39;MyClass&#39;"
+title: "&#39;MustOverride&#39; method &#39;&lt;methodname&gt;&#39; cannot be called with &#39;MyClass&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ translation.priority.mt:
 -   Remove the `MustOverride` modifier, or declare the method in a base class and inherit and override that class.  
   
 ## See Also  
- [MustOverride](../Topic/MustOverride%20\(Visual%20Basic\).md)   
- [MustInherit](../Topic/MustInherit%20\(Visual%20Basic\).md)   
- [NotOverridable](../Topic/NotOverridable%20\(Visual%20Basic\).md)
+ [MustOverride](/dotnet/visual-basic/language-reference/modifiers/mustoverride)   
+ [MustInherit](/dotnet/visual-basic/language-reference/modifiers/mustinherit)   
+ [NotOverridable](/dotnet/visual-basic/language-reference/modifiers/notoverridable)

@@ -1,7 +1,7 @@
 ---
-title: "Build cross-platform mobile apps with Visual C++"
+title: "Build cross-platform mobile apps with Visual C++ | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -33,7 +33,7 @@ translation.priority.mt:
 # Build cross-platform mobile apps with Visual C++
 You can build cross-platform code for Android, iOS and Windows devices by using Visual C++ for Cross-Platform Mobile Development. This is an optional feature available in Visual Studio 2015 that enables cross-platform development of code for iOS, Android and Windows using Visual C++.  
   
- For installation instructions and code examples, see [Visual C++ for Cross-Platform Mobile Development](../Topic/Visual%20C++%20for%20Cross-Platform%20Mobile%20Development.md).  
+ For installation instructions and code examples, see [Visual C++ for Cross-Platform Mobile Development](/visual-studio/cross-platform/visual-cpp-for-cross-platform-mobile-development).  
   
 ## See Also  
  [Download Visual Studio 2015](http://go.microsoft.com/fwlink/?linkid=517106)

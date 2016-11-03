@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB2008"
+title: "MSBuild Error MSB2008 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -46,4 +46,4 @@ translation.priority.mt:
 -   If the project is not a [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] or [!INCLUDE[csprcs](../ide/includes/csprcs_md.md)] project, use the appropriate tool to convert it.  
   
 ## See Also  
- [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md)
+ [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)

@@ -1,5 +1,5 @@
 ---
-title: "&#39;End RemoveHandler&#39; must be the first statement on a line"
+title: "&#39;End RemoveHandler&#39; must be the first statement on a line | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -46,5 +46,5 @@ An `End RemoveHandler` statement follows a colon (:) statement separator. `End R
   
 ## See Also  
  [How to: Break and Combine Statements in Code](../Topic/How%20to:%20Break%20and%20Combine%20Statements%20in%20Code%20\(Visual%20Basic\).md)   
- [RemoveHandler Statement](../Topic/RemoveHandler%20Statement.md)   
- [Event Statement](../Topic/Event%20Statement.md)
+ [RemoveHandler Statement](/dotnet/visual-basic/language-reference/statements/removehandler-statement)   
+ [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)

@@ -1,5 +1,5 @@
 ---
-title: "&#39;Custom&#39; modifier can only be used immediately before an &#39;Event&#39; declaration"
+title: "&#39;Custom&#39; modifier can only be used immediately before an &#39;Event&#39; declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -50,5 +50,5 @@ The `Custom` keyword must precede only the `Event` keyword in a custom event dec
   
 ## See Also  
  [Custom - delete](http://msdn.microsoft.com/en-us/dc62be07-c896-4866-a533-982a661d143f)   
- [Event Statement](../Topic/Event%20Statement.md)   
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)   
+ [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)

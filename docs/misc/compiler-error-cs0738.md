@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0738"
+title: "Compiler Error CS0738 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -63,4 +63,4 @@ public class Test: ITest
 ```  
   
 ## See Also  
- [Interfaces](../Topic/Interfaces%20\(C%23%20Programming%20Guide\).md)
+ [Interfaces](/dotnet/csharp/programming-guide/interfaces/index)

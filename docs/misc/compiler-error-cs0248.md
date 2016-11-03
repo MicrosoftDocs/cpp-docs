@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0248"
+title: "Compiler Error CS0248 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0248
 Cannot create an array with a negative size  
   
- An array size was specified with a negative number. For more information, see [Arrays](../Topic/Arrays%20\(C%23%20Programming%20Guide\).md).  
+ An array size was specified with a negative number. For more information, see [Arrays](/dotnet/csharp/programming-guide/arrays/index).  
   
 ## Example  
  The following sample generates CS0248:  

@@ -1,5 +1,5 @@
 ---
-title: "String length exceeds maximum length of 32767 characters for &#39;FileSystem&#39; APIs"
+title: "String length exceeds maximum length of 32767 characters for &#39;FileSystem&#39; APIs | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,4 +40,4 @@ A string's length exceeds the maximum length of 32767 characters.
 1.  Shorten the string.  
   
 ## See Also  
- [Strings](../Topic/Strings%20in%20Visual%20Basic.md)
+ [Strings](/dotnet/visual-basic/programming-guide/language-features/strings/index)

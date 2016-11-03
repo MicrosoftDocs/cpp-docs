@@ -1,5 +1,5 @@
 ---
-title: "&#39;GoSub&#39; statements are no longer supported"
+title: "&#39;GoSub&#39; statements are no longer supported | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,4 +49,4 @@ translation.priority.mt:
     ```  
   
 ## See Also  
- [Procedures](../Topic/Procedures%20in%20Visual%20Basic.md)
+ [Procedures](/dotnet/visual-basic/language-reference/procedures/index)

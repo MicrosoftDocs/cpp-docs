@@ -1,7 +1,7 @@
 ---
-title: "_DEBUG"
+title: "_DEBUG | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,7 +41,7 @@ translation.priority.ht:
 # _DEBUG
 The compiler defines `_DEBUG` when you specify the /MTd or /MDd option. These options specify debug versions of the C run-time library.  
   
- For more information, see [CRT Debugging Techniques](../Topic/CRT%20Debugging%20Techniques.md).  
+ For more information, see [CRT Debugging Techniques](/visual-studio/debugger/crt-debugging-techniques).  
   
 ## See Also  
  [Control Flags](../c-runtime-library/control-flags.md)

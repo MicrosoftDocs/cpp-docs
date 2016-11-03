@@ -1,5 +1,5 @@
 ---
-title: "&#39;Inherits&#39; statement must precede all declarations in a class"
+title: "&#39;Inherits&#39; statement must precede all declarations in a class | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ The `Inherits` statements must be at the beginning of class definitions.
 -   Move the `Inherits` statement to the top of your class.  
   
 ## See Also  
- [Inherits Statement](../Topic/Inherits%20Statement.md)   
+ [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement)   
  [NOT IN BUILD: Inheritance in Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)

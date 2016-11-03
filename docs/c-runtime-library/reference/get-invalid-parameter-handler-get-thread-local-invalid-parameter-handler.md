@@ -1,7 +1,7 @@
 ---
-title: "_get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler"
+title: "_get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

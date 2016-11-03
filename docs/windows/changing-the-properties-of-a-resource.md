@@ -1,7 +1,7 @@
 ---
-title: "Changing the Properties of a Resource"
+title: "Changing the Properties of a Resource | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,7 +41,7 @@ translation.priority.ht:
   
      **Note** If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  In the [Properties window](../Topic/Properties%20Window.md), change the properties of your resource.  
+2.  In the [Properties window](/visual-studio/ide/reference/properties-window), change the properties of your resource.  
   
 ### To undo a change you've made to the properties of a resource  
   

@@ -1,5 +1,5 @@
 ---
-title: "ParamArray parameters must have an array type"
+title: "ParamArray parameters must have an array type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -52,4 +52,4 @@ There was a problem accessing the MSCorlib assembly, causing `ParamArray` parame
   
 ## See Also  
  [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)   
- [ParamArray](../Topic/ParamArray%20\(Visual%20Basic\).md)
+ [ParamArray](/dotnet/visual-basic/language-reference/modifiers/paramarray)

@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;statementname&gt;&#39; statement requires an array"
+title: "&#39;&lt;statementname&gt;&#39; statement requires an array | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ The `Erase` and `ReDim` statements require array data types. The type supplied i
 -   Change the data type to an array type.  
   
 ## See Also  
- [Erase Statement](../Topic/Erase%20Statement%20\(Visual%20Basic\).md)   
- [ReDim Statement](../Topic/ReDim%20Statement%20\(Visual%20Basic\).md)   
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Erase Statement](/dotnet/visual-basic/language-reference/statements/erase-statement)   
+ [ReDim Statement](/dotnet/visual-basic/language-reference/statements/redim-statement)   
+ [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)

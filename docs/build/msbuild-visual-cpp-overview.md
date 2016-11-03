@@ -1,7 +1,7 @@
 ---
-title: "MSBuild (Visual C++) Overview"
+title: "MSBuild (Visual C++) Overview | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -39,23 +39,23 @@ MSBuild is the standard build system for Visual C++ projects. When you build a p
 ## Prerequisites  
  Read the following documents about MSBuild.  
   
- [MSBuild](MSBuild1.md)  
+ [MSBuild](/visual-studio/msbuild/msbuild1)  
  Overview of MSBuild concepts.  
   
- [MSBuild Reference](../Topic/MSBuild%20Reference.md)  
+ [MSBuild Reference](/visual-studio/msbuild/msbuild-reference)  
  Reference information about the MSBuild system.  
   
- [Project File Schema Reference](../Topic/MSBuild%20Project%20File%20Schema%20Reference.md)  
- Lists the MSBuild XML Schema elements, together with their attributes, and parent and child elements. Especially note the [ItemGroup](../Topic/ItemGroup%20Element%20\(MSBuild\).md), [PropertyGroup](../Topic/PropertyGroup%20Element%20\(MSBuild\).md), [Target](../Topic/Target%20Element%20\(MSBuild\).md), and [Task](../Topic/Task%20Element%20\(MSBuild\).md) elements.  
+ [Project File Schema Reference](/visual-studio/msbuild/msbuild-project-file-schema-reference)  
+ Lists the MSBuild XML Schema elements, together with their attributes, and parent and child elements. Especially note the [ItemGroup](/visual-studio/msbuild/itemgroup-element-msbuild), [PropertyGroup](/visual-studio/msbuild/propertygroup-element-msbuild), [Target](/visual-studio/msbuild/target-element-msbuild), and [Task](/visual-studio/msbuild/task-element-msbuild) elements.  
   
- [Command-Line Reference](../Topic/MSBuild%20Command-Line%20Reference.md)  
+ [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)  
  Describes the command-line arguments and options that you can use with msbuild.exe.  
   
- [Task Reference](../Topic/MSBuild%20Task%20Reference.md)  
- Describes MSBuild tasks. Especially note these tasks, which are specific to Visual C++: [BscMake Task](../Topic/BscMake%20Task.md), [CL Task](../Topic/CL%20Task.md), [CPPClean Task](../Topic/CPPClean%20Task.md), [LIB Task](../Topic/LIB%20Task.md), [Link Task](../Topic/Link%20Task.md), [MIDL Task](../Topic/MIDL%20Task.md), [MT Task](../Topic/MT%20Task.md), [RC Task](../Topic/RC%20Task.md), [SetEnv Task](../Topic/SetEnv%20Task.md), [VCMessage Task](../Topic/VCMessage%20Task.md), [XDCMake Task](../Topic/XDCMake%20Task.md), [XSD Task](../Topic/XSD%20Task.md).  
+ [Task Reference](/visual-studio/msbuild/msbuild-task-reference)  
+ Describes MSBuild tasks. Especially note these tasks, which are specific to Visual C++: [BscMake Task](/visual-studio/msbuild/bscmake-task), [CL Task](/visual-studio/msbuild/cl-task), [CPPClean Task](/visual-studio/msbuild/cppclean-task), [LIB Task](/visual-studio/msbuild/lib-task), [Link Task](/visual-studio/msbuild/link-task), [MIDL Task](/visual-studio/msbuild/midl-task), [MT Task](/visual-studio/msbuild/mt-task), [RC Task](/visual-studio/msbuild/rc-task), [SetEnv Task](/visual-studio/msbuild/setenv-task), [VCMessage Task](/visual-studio/msbuild/vcmessage-task), [XDCMake Task](/visual-studio/msbuild/xdcmake-task), [XSD Task](/visual-studio/msbuild/xsd-task).  
   
 ## MSBuild on the Command Line  
- The following statement from the [Command-Line Reference](../Topic/MSBuild%20Command-Line%20Reference.md) document illustrates that the msbuild.exe tool takes an implicit or explicit `project file` argument (a .vcxproj file for Visual C++ projects) and zero or more command-line `options`.  
+ The following statement from the [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference) document illustrates that the msbuild.exe tool takes an implicit or explicit `project file` argument (a .vcxproj file for Visual C++ projects) and zero or more command-line `options`.  
   
  **msbuild.exe [** `project file` **] [** `options` **]**  
   
@@ -63,11 +63,11 @@ MSBuild is the standard build system for Visual C++ projects. When you build a p
   
  An essential function of the project file is to specify a *target*, which is a particular operation applied to your project, and the inputs and outputs that are required to perform that operation. A project file can specify one or more targets, which can include a default target.  
   
- Each target consists of a sequence of one or more *tasks*. Each task is represented by a .NET Framework class that contains one executable command. For example, the [CL task](../Topic/CL%20Task.md) contains the [cl.exe](../build/reference/compiling-a-c-cpp-program.md) command.  
+ Each target consists of a sequence of one or more *tasks*. Each task is represented by a .NET Framework class that contains one executable command. For example, the [CL task](/visual-studio/msbuild/cl-task) contains the [cl.exe](../build/reference/compiling-a-c-cpp-program.md) command.  
   
  A *task parameter* is a property of the class task and typically represents a command-line option of the executable command. For example, the `FavorSizeOrSpeed` parameter of the `CL` task corresponds to the **/Os** and **/Ot** compiler options.  
   
- Additional task parameters support the MSBuild infrastructure. For example, the `Sources` task parameter specifies a set of tasks that can be consumed by other tasks. For more information about MSBuild tasks, see [Task Reference](../Topic/MSBuild%20Task%20Reference.md).  
+ Additional task parameters support the MSBuild infrastructure. For example, the `Sources` task parameter specifies a set of tasks that can be consumed by other tasks. For more information about MSBuild tasks, see [Task Reference](/visual-studio/msbuild/msbuild-task-reference).  
   
  Most tasks require inputs and outputs, such as file names, paths, and string, numeric, or Boolean parameters. For example, a common input is the name of a .cpp source file to compile. An important input parameter is a string that specifies the build configuration and platform, for example, "Debug&#124;Win32". Inputs and outputs are specified by one or more user-defined XML `Item` elements contained in an `ItemGroup` element.  
   
@@ -97,8 +97,8 @@ MSBuild is the standard build system for Visual C++ projects. When you build a p
   
 |Extension|Description|  
 |---------------|-----------------|  
-|.targets|Contains `Target` XML elements that specify the tasks that are executed by the target. May also contain `Property Group`, `Item Group`, `Item Definition Group`, and user-defined `Item` elements that are used to assign files and command-line options to task parameters.<br /><br /> For more information, see [Target Element (MSBuild)](../Topic/Target%20Element%20\(MSBuild\).md).|  
-|.props|Contains `Property Group` and user-defined `Property` XML elements that specify file and parameter settings that are used during a build.<br /><br /> May also contain `Item Definition Group` and user-defined `Item` XML elements that specify additional settings. Items defined in an item definition group resemble properties, but cannot be accessed from the command line. Visual C++ project files frequently uses items instead of properties to represent settings.<br /><br /> For more information, see [ItemGroup Element (MSBuild)](../Topic/ItemGroup%20Element%20\(MSBuild\).md), [ItemDefinitionGroup Element (MSBuild)](../Topic/ItemDefinitionGroup%20Element%20\(MSBuild\).md), and [Item Element (MSBuild)](../Topic/Item%20Element%20\(MSBuild\).md).|  
+|.targets|Contains `Target` XML elements that specify the tasks that are executed by the target. May also contain `Property Group`, `Item Group`, `Item Definition Group`, and user-defined `Item` elements that are used to assign files and command-line options to task parameters.<br /><br /> For more information, see [Target Element (MSBuild)](/visual-studio/msbuild/target-element-msbuild).|  
+|.props|Contains `Property Group` and user-defined `Property` XML elements that specify file and parameter settings that are used during a build.<br /><br /> May also contain `Item Definition Group` and user-defined `Item` XML elements that specify additional settings. Items defined in an item definition group resemble properties, but cannot be accessed from the command line. Visual C++ project files frequently uses items instead of properties to represent settings.<br /><br /> For more information, see [ItemGroup Element (MSBuild)](/visual-studio/msbuild/itemgroup-element-msbuild), [ItemDefinitionGroup Element (MSBuild)](/visual-studio/msbuild/itemdefinitiongroup-element-msbuild), and [Item Element (MSBuild)](/visual-studio/msbuild/item-element-msbuild).|  
 |.xml|Contains XML elements that declare and initialize IDE user interface elements such as property sheets and property pages, and text box and list box controls.<br /><br /> The .xml files directly support the IDE, not MSBuild. However, the values of IDE properties are assigned to build properties and items.<br /><br /> Most .xml files are in a locale-specific subdirectory. For example, files for the English-US region are in $(VCTargetsPath)\1033\\.|  
   
 ## User Targets and Properties  

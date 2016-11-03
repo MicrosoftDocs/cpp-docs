@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.IndexOutOfRangeException"
+title: "Troubleshooting Exceptions: System.IndexOutOfRangeException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -94,4 +94,4 @@ End Module
 ## See Also  
  <xref:System.IndexOutOfRangeException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)

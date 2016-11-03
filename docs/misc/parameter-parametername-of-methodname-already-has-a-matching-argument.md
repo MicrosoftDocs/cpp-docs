@@ -1,5 +1,5 @@
 ---
-title: "Parameter &#39;&lt;parametername&gt;&#39; of &#39;&lt;methodname&gt;&#39; already has a matching argument"
+title: "Parameter &#39;&lt;parametername&gt;&#39; of &#39;&lt;methodname&gt;&#39; already has a matching argument | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ An argument is passed by name more than once in the same procedure call.
 -   Remove the duplicated argument from the argument list.  
   
 ## See Also  
- [Passing Arguments by Position and by Name](../Topic/Passing%20Arguments%20by%20Position%20and%20by%20Name%20\(Visual%20Basic\).md)
+ [Passing Arguments by Position and by Name](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name)

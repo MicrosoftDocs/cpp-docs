@@ -1,7 +1,7 @@
 ---
-title: "Adding Version Information for Another Language"
+title: "Adding Version Information for Another Language | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -50,7 +50,7 @@ translation.priority.mt:
   
 2.  Right-click within the version information table and choose **New Version Info Block** from the shortcut menu.  
   
-     This command adds an additional information block to the current version information resource and opens its corresponding properties in the [Properties window](../Topic/Properties%20Window.md).  
+     This command adds an additional information block to the current version information resource and opens its corresponding properties in the [Properties window](/visual-studio/ide/reference/properties-window).  
   
 3.  In the **Properties** window, choose the appropriate language and character set for your new block.  
   

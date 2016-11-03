@@ -1,5 +1,5 @@
 ---
-title: "Unable to read fixed width fields because FieldWidths is Nothing or empty"
+title: "Unable to read fixed width fields because FieldWidths is Nothing or empty | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -43,4 +43,4 @@ The `TextFieldParser` is unable to read fixed-width fields because the `FieldWid
  [TextFieldParser.SetFieldWidths Method](http://msdn.microsoft.com/en-us/958fed9f-e0f3-4fc5-83b4-386156bdf036)   
  [TextFieldParser.FieldWidths Property](http://msdn.microsoft.com/en-us/c6985360-60c6-494e-89e7-43b6b73f2597)   
  [How to: Read From Fixed-width Text Files](../Topic/How%20to:%20Read%20From%20Fixed-width%20Text%20Files%20in%20Visual%20Basic.md)   
- [TextFieldParser Object](../Topic/TextFieldParser%20Object.md)
+ [TextFieldParser Object](/dotnet/visual-basic/language-reference/objects/textfieldparser-object)

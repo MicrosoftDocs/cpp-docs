@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0005"
+title: "Compiler Error CS0005 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,4 +40,4 @@ Compiler option 'compiler_option' must be followed by an argument
   
  Some compiler options require parameters. If you do not pass the arguments required by the compiler option, CS0005 is generated.  
   
- For more information, see [C# Compiler Options](../Topic/C%23%20Compiler%20Options.md).
+ For more information, see [C# Compiler Options](/dotnet/csharp/language-reference/compiler-options/index).

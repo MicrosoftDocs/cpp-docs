@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;specifier&gt;&#39; is not valid on a member variable declaration"
+title: "&#39;&lt;specifier&gt;&#39; is not valid on a member variable declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -51,4 +51,4 @@ A `Dim` statement contains an invalid keyword. A `Dim` statement can include onl
 2.  If you have declared a `Static` variable outside of a procedure, either move the declaration inside a procedure or remove the `Static` keyword.  
   
 ## See Also  
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)
+ [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)

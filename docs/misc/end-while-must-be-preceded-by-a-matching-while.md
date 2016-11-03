@@ -1,5 +1,5 @@
 ---
-title: "&#39;End While&#39; must be preceded by a matching &#39;While&#39;"
+title: "&#39;End While&#39; must be preceded by a matching &#39;While&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,4 +49,4 @@ An `End While` statement occurs without a corresponding `While` statement. `End 
 3.  Ensure that this `While` block is correctly formatted.  
   
 ## See Also  
- [While...End While Statement](../Topic/While...End%20While%20Statement%20\(Visual%20Basic\).md)
+ [While...End While Statement](/dotnet/visual-basic/language-reference/statements/while-end-while-statement)

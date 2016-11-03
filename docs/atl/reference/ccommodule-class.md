@@ -1,7 +1,7 @@
 ---
-title: "CComModule Class"
+title: "CComModule Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -58,7 +58,7 @@ class CComModule : public _ATL_MODULE
 |[CComModule::GetModuleInstance](../Topic/CComModule::GetModuleInstance.md)|Returns `m_hInst`.|  
 |[CComModule::GetResourceInstance](../Topic/CComModule::GetResourceInstance.md)|Returns `m_hInstResource`.|  
 |[CComModule::GetTypeLibInstance](../Topic/CComModule::GetTypeLibInstance.md)|Returns `m_hInstTypeLib`.|  
-|[CComModule::Init](../Topic/CComModule::Init.md)|Initializes data members.|  
+|[CComModule::Init](/visual-studio/debugger/init)|Initializes data members.|  
 |[CComModule::RegisterClassHelper](../Topic/CComModule::RegisterClassHelper.md)|Enters an object's standard class registration in the system registry.|  
 |[CComModule::RegisterClassObjects](../Topic/CComModule::RegisterClassObjects.md)|Registers the class object. For EXEs only.|  
 |[CComModule::RegisterServer](../Topic/CComModule::RegisterServer.md)|Updates the system registry for each object in the object map.|  
@@ -248,7 +248,7 @@ HINSTANCE m_hInst;
 ### Remarks  
  Contains the handle to the module instance.  
   
- The [Init](../Topic/CComModule::Init.md) method sets `m_hInst` to the handle passed to **DLLMain** or `WinMain`.  
+ The [Init](/visual-studio/debugger/init) method sets `m_hInst` to the handle passed to **DLLMain** or `WinMain`.  
   
 ##  <a name="ccommodule__m_hinstresource"></a>  CComModule::m_hInstResource  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -260,7 +260,7 @@ HINSTANCE m_hInstResource;
 ### Remarks  
  By default, contains the handle to the module instance.  
   
- The [Init](../Topic/CComModule::Init.md) method sets `m_hInstResource` to the handle passed to **DLLMain** or `WinMain`. You can explicitly set `m_hInstResource` to the handle to a resource.  
+ The [Init](/visual-studio/debugger/init) method sets `m_hInstResource` to the handle passed to **DLLMain** or `WinMain`. You can explicitly set `m_hInstResource` to the handle to a resource.  
   
  The [GetResourceInstance](../Topic/CComModule::GetResourceInstance.md) method returns the handle stored in `m_hInstResource`.  
   
@@ -274,7 +274,7 @@ HINSTANCE m_hInstTypeLib;
 ### Remarks  
  By default, contains the handle to the module instance.  
   
- The [Init](../Topic/CComModule::Init.md) method sets `m_hInstTypeLib` to the handle passed to **DLLMain** or `WinMain`. You can explicitly set `m_hInstTypeLib` to the handle to a type library.  
+ The [Init](/visual-studio/debugger/init) method sets `m_hInstTypeLib` to the handle passed to **DLLMain** or `WinMain`. You can explicitly set `m_hInstTypeLib` to the handle to a type library.  
   
  The [GetTypeLibInstance](../Topic/CComModule::GetTypeLibInstance.md) method returns the handle stored in `m_hInstTypeLib`.  
   

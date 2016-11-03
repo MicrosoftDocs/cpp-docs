@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0107"
+title: "Compiler Error CS0107 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0107
 More than one protection modifier  
   
- Only one access modifier ([public](../Topic/public%20\(C%23%20Reference\).md), [private](../Topic/private%20\(C%23%20Reference\).md), [protected](../Topic/protected%20\(C%23%20Reference\).md), or [internal](../Topic/internal%20\(C%23%20Reference\).md)) is allowed on a class member, with the exception of except **internal protected**.  
+ Only one access modifier ([public](/dotnet/csharp/language-reference/keywords/public), [private](/dotnet/csharp/language-reference/keywords/private), [protected](/dotnet/csharp/language-reference/keywords/protected), or [internal](/dotnet/csharp/language-reference/keywords/internal)) is allowed on a class member, with the exception of except **internal protected**.  
   
  The following sample generates CS0107:  
   

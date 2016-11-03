@@ -1,0 +1,1 @@
+            DTE vsEnvironment = (DTE)GetService(typeof(SDTE));

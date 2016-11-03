@@ -1,5 +1,5 @@
 ---
-title: "Type of &#39;&lt;variablename&gt;&#39; is ambiguous because the loop bounds and the step variable do not widen to the same type"
+title: "Type of &#39;&lt;variablename&gt;&#39; is ambiguous because the loop bounds and the step variable do not widen to the same type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -86,8 +86,8 @@ Next
     ```  
   
 ## See Also  
- [For...Next Statement](../Topic/For...Next%20Statement%20\(Visual%20Basic\).md)   
- [Implicit and Explicit Conversions](../Topic/Implicit%20and%20Explicit%20Conversions%20\(Visual%20Basic\).md)   
- [Local Type Inference](../Topic/Local%20Type%20Inference%20\(Visual%20Basic\).md)   
- [Option Infer Statement](../Topic/Option%20Infer%20Statement.md)   
- [Widening and Narrowing Conversions](../Topic/Widening%20and%20Narrowing%20Conversions%20\(Visual%20Basic\).md)
+ [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)   
+ [Implicit and Explicit Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)   
+ [Local Type Inference](/dotnet/visual-basic/programming-guide/language-features/variables/local-type-inference)   
+ [Option Infer Statement](/dotnet/visual-basic/language-reference/statements/option-infer-statement)   
+ [Widening and Narrowing Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)

@@ -1,7 +1,7 @@
 ---
-title: "Understanding Generated Properties and Methods"
+title: "Understanding Generated Properties and Methods | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -29,4 +29,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Understanding Generated Properties and Methods
-This topic has been consolidated with other content. Please go to [Navigating and Updating a Model in Program Code](../Topic/Navigating%20and%20Updating%20a%20Model%20in%20Program%20Code.md).
+This topic has been consolidated with other content. Please go to [Navigating and Updating a Model in Program Code](/visual-studio/modeling/navigating-and-updating-a-model-in-program-code).

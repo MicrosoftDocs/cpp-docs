@@ -1,7 +1,7 @@
 ---
-title: "Selecting Multiple Controls"
+title: "Selecting Multiple Controls | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,7 +40,7 @@ translation.priority.ht:
 # Selecting Multiple Controls
 ### To select multiple controls  
   
-1.  In the [Toolbox Window](../Topic/Toolbox.md), select the **Pointer** tool.  
+1.  In the [Toolbox Window](/visual-studio/ide/reference/toolbox), select the **Pointer** tool.  
   
 2.  Drag the pointer to draw a selection box around the controls you want to select in your dialog box.  
   

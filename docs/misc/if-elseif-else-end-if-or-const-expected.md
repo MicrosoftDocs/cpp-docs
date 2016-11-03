@@ -1,5 +1,5 @@
 ---
-title: "&#39;If&#39;, &#39;ElseIf&#39;, &#39;Else&#39;, &#39;End If&#39;, or &#39;Const&#39; expected"
+title: "&#39;If&#39;, &#39;ElseIf&#39;, &#39;Else&#39;, &#39;End If&#39;, or &#39;Const&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,4 +49,4 @@ A source line begins with a `#` character, but a valid conditional compilation d
 3.  Remove the `#` character or add a valid directive immediately after it.  
   
 ## See Also  
- [Directives](../Topic/Directives%20\(Visual%20Basic\).md)
+ [Directives](/dotnet/visual-basic/language-reference/directives/directives)

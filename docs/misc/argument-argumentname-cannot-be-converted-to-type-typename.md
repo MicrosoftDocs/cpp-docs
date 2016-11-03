@@ -1,5 +1,5 @@
 ---
-title: "Argument &#39;&lt;argumentname&gt;&#39; cannot be converted to type &#39;&lt;typename&gt;&#39;"
+title: "Argument &#39;&lt;argumentname&gt;&#39; cannot be converted to type &#39;&lt;typename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,4 +40,4 @@ A conversion attempts to change an argument to a type that is not valid.
 -   Change the type to one that is valid.  
   
 ## See Also  
- [Conversion Functions](../Topic/Conversion%20Functions%20\(Visual%20Basic\).md)
+ [Conversion Functions](/dotnet/visual-basic/language-reference/functions/conversion-functions)

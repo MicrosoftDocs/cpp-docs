@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0754"
+title: "Compiler Error CS0754 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -67,5 +67,5 @@ using System;
 ```  
   
 ## See Also  
- [Explicit Interface Implementation](../Topic/Explicit%20Interface%20Implementation%20\(C%23%20Programming%20Guide\).md)   
- [Partial Classes and Methods](../Topic/Partial%20Classes%20and%20Methods%20\(C%23%20Programming%20Guide\).md)
+ [Explicit Interface Implementation](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)   
+ [Partial Classes and Methods](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)

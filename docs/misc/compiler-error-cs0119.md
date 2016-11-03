@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0119"
+title: "Compiler Error CS0119 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

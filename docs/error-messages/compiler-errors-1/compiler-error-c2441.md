@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error C2441"
+title: "Compiler Error C2441 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

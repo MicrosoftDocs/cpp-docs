@@ -1,5 +1,5 @@
 ---
-title: "&#39;NotInheritable&#39; classes cannot have members declared &#39;&lt;specifiername&gt;&#39;"
+title: "&#39;NotInheritable&#39; classes cannot have members declared &#39;&lt;specifiername&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,7 +45,7 @@ Override modifiers cannot be used with `NotInheritable` classes because their me
 -   Remove override modifiers, such as `Overridable`, `NotOverridable`, or `MustOverride`, from the class definition.  
   
 ## See Also  
- [Overridable](../Topic/Overridable%20\(Visual%20Basic\).md)   
- [NotOverridable](../Topic/NotOverridable%20\(Visual%20Basic\).md)   
- [MustOverride](../Topic/MustOverride%20\(Visual%20Basic\).md)   
+ [Overridable](/dotnet/visual-basic/language-reference/modifiers/overridable)   
+ [NotOverridable](/dotnet/visual-basic/language-reference/modifiers/notoverridable)   
+ [MustOverride](/dotnet/visual-basic/language-reference/modifiers/mustoverride)   
  [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213)

@@ -1,7 +1,7 @@
 ---
-title: "Using CToolTipCtrl to Create and Manipulate a CToolTipCtrl Object"
+title: "Using CToolTipCtrl to Create and Manipulate a CToolTipCtrl Object | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

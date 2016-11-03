@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0023"
+title: "Compiler Error CS0023 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0023
 Operator 'operator' cannot be applied to operand of type 'type'  
   
- An attempt was made to apply an operator to a variable whose type was not designed to work with the operator. For more information, see [Types](../Topic/Types%20\(C%23%20Programming%20Guide\).md) and [C# Operators](../Topic/C%23%20Operators.md).  
+ An attempt was made to apply an operator to a variable whose type was not designed to work with the operator. For more information, see [Types](/dotnet/csharp/programming-guide/types/index) and [C# Operators](/dotnet/csharp/language-reference/operators/index).  
   
  The following sample generates CS0023:  
   

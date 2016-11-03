@@ -1,7 +1,7 @@
 ---
-title: "State Persistence and the Visual Studio IDE"
+title: "State Persistence and the Visual Studio IDE | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -43,7 +43,7 @@ The **Import/Export Settings** command on the **Tools** menu of the integrated d
 >  The standard implementations of the **ToolsOptions** pages, the **Toolbox**, and the `Microsoft.VisualStudio.Shell.DialogPage` automatically provide support for persistence. The settings API can override the default mechanism. For more information, see [Extending the Toolbox](../misc/extending-the-toolbox.md), [Options Pages](../misc/options-pages.md), and <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
 ## In This Section  
- [Support for User Settings](../Topic/Support%20for%20User%20Settings.md)  
+ [Support for User Settings](/visual-studio/extensibility/internals/support-for-user-settings)  
  Describes the registry settings (Custom Settings Point) and attributes used to specify a [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] settings implementation used by a given VSPackage.  
   
  [How to: Export Settings By Using Interop Assemblies](../misc/how-to-export-settings-by-using-interop-assemblies.md)  
@@ -68,5 +68,5 @@ The **Import/Export Settings** command on the **Tools** menu of the integrated d
  [Extending the Toolbox](../misc/extending-the-toolbox.md)  
  Explains the support that the [!INCLUDE[vsipsdk](../mfc/includes/vsipsdk_md.md)] automatically provides for managing or extending the **Toolbox**.  
   
- [Extending User Settings and Options](../Topic/Extending%20User%20Settings%20and%20Options.md)  
+ [Extending User Settings and Options](/visual-studio/extensibility/extending-user-settings-and-options)  
  Describes how to program your VSPackage to obtain and preserve user preferences.

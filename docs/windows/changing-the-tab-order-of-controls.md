@@ -1,7 +1,7 @@
 ---
-title: "Changing the Tab Order of Controls"
+title: "Changing the Tab Order of Controls | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -44,7 +44,7 @@ The tab order is the order in which the TAB key moves the input focus from one c
   
 ### To set input focus for a control  
   
-1.  In the [Properties Window](../Topic/Properties%20Window.md), select **True** or **False** in the **Tabstop** property.  
+1.  In the [Properties Window](/visual-studio/ide/reference/properties-window), select **True** or **False** in the **Tabstop** property.  
   
  Even controls that do not have the Tabstop property set to True need to be part of the tab order. This can be important, for example, when you [define access keys (mnemonics)](../mfc/defining-mnemonics-access-keys.md) for controls that do not have captions. Static text that contains an access key for a related control must immediately precede the related control in the tab order.  
   

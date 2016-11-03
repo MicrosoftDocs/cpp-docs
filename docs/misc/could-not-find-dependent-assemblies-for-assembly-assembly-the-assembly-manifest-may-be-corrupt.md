@@ -1,7 +1,7 @@
 ---
-title: "Could not find dependent assemblies for assembly &#39;assembly&#39;. The assembly manifest may be corrupt."
+title: "Could not find dependent assemblies for assembly &#39;assembly&#39;. The assembly manifest may be corrupt. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -44,6 +44,6 @@ The project system was unable to read an assembly referenced by your project suc
 -   Reinstall the appropriate third-party control.  
   
 ## See Also  
- [Troubleshooting Broken References](../Topic/Troubleshooting%20Broken%20References.md)   
+ [Troubleshooting Broken References](/visual-studio/ide/troubleshooting-broken-references)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Assemblies in the Common Language Runtime](http://msdn.microsoft.com/en-us/33a0bc6a-6bb3-44c7-ada7-4a046e8c0945)

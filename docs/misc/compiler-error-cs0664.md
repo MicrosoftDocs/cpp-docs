@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0664"
+title: "Compiler Error CS0664 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0664
 Literal of type double cannot be implicitly converted to type 'type'; use an 'suffix' suffix to create a literal of this type  
   
- An assignment could not be completed; use a suffix to correct the instruction. The documentation for each type identifies the corresponding suffix for the type. For more information on conversions, see [Casting and Type Conversions](../Topic/Casting%20and%20Type%20Conversions%20\(C%23%20Programming%20Guide\).md).  
+ An assignment could not be completed; use a suffix to correct the instruction. The documentation for each type identifies the corresponding suffix for the type. For more information on conversions, see [Casting and Type Conversions](/dotnet/csharp/programming-guide/types/casting-and-type-conversions).  
   
  The following sample generates CS0664:  
   

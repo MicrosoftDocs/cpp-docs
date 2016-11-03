@@ -1,7 +1,7 @@
 ---
-title: "Walkthrough: Creating a Basic Windows Runtime Component Using WRL"
+title: "Walkthrough: Creating a Basic Windows Runtime Component Using WRL | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -57,7 +57,7 @@ This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_
     > [!IMPORTANT]
     >  Because you’re creating a COM component, remember to use the `__stdcall` calling convention.  
   
-     We recommend that you use `_Out_` and other source annotation language (SAL) annotations to describe how a function uses its parameters. SAL annotations also describe return values. SAL annotations work with the [C/C++ Code Analysis tool](../Topic/Code%20Analysis%20for%20C-C++%20Overview.md) to discover possible defects in C and C++ source code. Common coding errors that are reported by the tool include buffer overruns, uninitialized memory, null pointer dereferences, and memory and resource leaks.  
+     We recommend that you use `_Out_` and other source annotation language (SAL) annotations to describe how a function uses its parameters. SAL annotations also describe return values. SAL annotations work with the [C/C++ Code Analysis tool](/visual-studio/code-quality/code-analysis-for-c-cpp-overview) to discover possible defects in C and C++ source code. Common coding errors that are reported by the tool include buffer overruns, uninitialized memory, null pointer dereferences, and memory and resource leaks.  
   
 ### To use the component from a [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] app that uses JavaScript  
   
@@ -130,4 +130,4 @@ This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_
 ## See Also  
  [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)   
  [Class Library Project Template](../windows/wrl-class-library-project-template.md)   
- [C/C++ Code Analysis tool](../Topic/Code%20Analysis%20for%20C-C++%20Overview.md)
+ [C/C++ Code Analysis tool](/visual-studio/code-quality/code-analysis-for-c-cpp-overview)

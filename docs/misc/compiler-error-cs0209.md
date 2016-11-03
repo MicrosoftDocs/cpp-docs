@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0209"
+title: "Compiler Error CS0209 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0209
 The type of local declared in a fixed statement must be a pointer type  
   
- The variable that you declare in a [fixed statement](../Topic/fixed%20Statement%20\(C%23%20Reference\).md) must be a pointer. For more information, see [Unsafe Code and Pointers](../Topic/Unsafe%20Code%20and%20Pointers%20\(C%23%20Programming%20Guide\).md).  
+ The variable that you declare in a [fixed statement](/dotnet/csharp/language-reference/keywords/fixed-statement) must be a pointer. For more information, see [Unsafe Code and Pointers](/dotnet/csharp/programming-guide/unsafe-code-pointers/index).  
   
  The following sample generates CS0209:  
   

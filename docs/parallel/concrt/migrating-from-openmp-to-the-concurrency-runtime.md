@@ -1,7 +1,7 @@
 ---
-title: "Migrating from OpenMP to the Concurrency Runtime"
+title: "Migrating from OpenMP to the Concurrency Runtime | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -54,7 +54,7 @@ The Concurrency Runtime enables a variety of programming models. These models ma
 |You require exception handling support.|The PPL lets you catch exceptions both inside and outside of a parallel region or loop. In OpenMP, you must handle the exception inside of the parallel region or loop.|  
 |You require a cancellation mechanism.|The PPL enables applications to cancel both individual tasks and parallel trees of work. OpenMP requires the application to implement its own cancellation mechanism.|  
 |You require parallel code to finish in a different context from which it starts.|The Concurrency Runtime lets you start a task in one context, and then wait on or cancel that task in another context. In OpenMP, all parallel work must finish in the context from which it starts.|  
-|You require enhanced debugging support.|Visual Studio provides the **Parallel Stacks** and **Parallel Tasks** windows so that you can more easily debug multithreaded applications.<br /><br /> For more information about debugging support for the Concurrency Runtime, see [Using the Tasks Window](../Topic/Using%20the%20Tasks%20Window.md), [Using the Parallel Stacks Window](../Topic/Using%20the%20Parallel%20Stacks%20Window.md), and [Walkthrough: Debugging a Parallel Application](../Topic/Walkthrough:%20Debugging%20a%20Parallel%20Application.md).|  
+|You require enhanced debugging support.|Visual Studio provides the **Parallel Stacks** and **Parallel Tasks** windows so that you can more easily debug multithreaded applications.<br /><br /> For more information about debugging support for the Concurrency Runtime, see [Using the Tasks Window](/visual-studio/debugger/using-the-tasks-window), [Using the Parallel Stacks Window](/visual-studio/debugger/using-the-parallel-stacks-window), and [Walkthrough: Debugging a Parallel Application](../Topic/Walkthrough:%20Debugging%20a%20Parallel%20Application.md).|  
   
 ## When Not to Migrate from OpenMP to the Concurrency Runtime  
  The following cases describe when it might not be appropriate to migrate existing OpenMP code to use the Concurrency Runtime.  

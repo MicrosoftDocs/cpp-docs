@@ -1,7 +1,7 @@
 ---
-title: "A.31   Thread-Safe Lock Functions"
+title: "A.31   Thread-Safe Lock Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

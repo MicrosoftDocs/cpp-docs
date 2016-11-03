@@ -1,7 +1,7 @@
 ---
-title: "Predefined Symbol IDs"
+title: "Predefined Symbol IDs | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -37,7 +37,7 @@ translation.priority.ht:
 # Predefined Symbol IDs
 When you begin a new project, depending on the project type, some symbol IDs are predefined for your use. These symbol IDs support the various libraries and project types such as MFC. They represent common tasks that are usually included in any application, or actions of hardware items, such as a mouse or printer.  
   
- These symbol IDs become important when working with resources. They are available when you edit Accelerator tables; some of them are already associated with virtual keys. They are also available to you through the [Properties window](../Topic/Properties%20Window.md). You can assign any of the predefined symbol IDs to new resources, or you can assign accelerator keys to them, and the functionality associated with the symbol ID automatically associates with that key combination.  
+ These symbol IDs become important when working with resources. They are available when you edit Accelerator tables; some of them are already associated with virtual keys. They are also available to you through the [Properties window](/visual-studio/ide/reference/properties-window). You can assign any of the predefined symbol IDs to new resources, or you can assign accelerator keys to them, and the functionality associated with the symbol ID automatically associates with that key combination.  
   
  These libraries have predefined symbols that will appear as part of the project:  
   

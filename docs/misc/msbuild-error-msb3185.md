@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB3185"
+title: "MSBuild Error MSB3185 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -48,7 +48,7 @@ translation.priority.mt:
 ## See Also  
  <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser*>   
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest.TargetFrameworkVersion*>   
- [Publish Page, Project Designer](../Topic/Publish%20Page,%20Project%20Designer.md)   
+ [Publish Page, Project Designer](/visual-studio/ide/reference/publish-page-project-designer)   
  [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)   
  [MSBuild Error MSB3116](../misc/msbuild-error-msb3116.md)   
  [MSBuild Error MSB3117](../misc/msbuild-error-msb3117.md)   

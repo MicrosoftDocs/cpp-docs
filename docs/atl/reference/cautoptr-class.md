@@ -1,7 +1,7 @@
 ---
-title: "CAutoPtr Class"
+title: "CAutoPtr Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -65,8 +65,8 @@ template <typename   T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAutoPtr::Attach](../Topic/CAutoPtr::Attach.md)|Call this method to take ownership of an existing pointer.|  
-|[CAutoPtr::Detach](../Topic/CAutoPtr::Detach.md)|Call this method to release ownership of a pointer.|  
+|[CAutoPtr::Attach](/visual-studio/profiling/attach)|Call this method to take ownership of an existing pointer.|  
+|[CAutoPtr::Detach](/visual-studio/profiling/detach)|Call this method to release ownership of a pointer.|  
 |[CAutoPtr::Free](../Topic/CAutoPtr::Free.md)|Call this method to delete an object pointed to by a `CAutoPtr`.|  
   
 ### Public Operators  
@@ -112,7 +112,7 @@ void Attach(T* p) throw();
  The `CAutoPtr` object will take ownership of this pointer.  
   
 ### Remarks  
- When a `CAutoPtr` object takes ownership of a pointer, it will automatically delete the pointer and any allocated data when it goes out of scope. If [CAutoPtr::Detach](../Topic/CAutoPtr::Detach.md) is called, the programmer is again given responsibility for freeing any allocated resources.  
+ When a `CAutoPtr` object takes ownership of a pointer, it will automatically delete the pointer and any allocated data when it goes out of scope. If [CAutoPtr::Detach](/visual-studio/profiling/detach) is called, the programmer is again given responsibility for freeing any allocated resources.  
   
  In debug builds, an assertion failure will occur if the [CAutoPtr::m_p](../Topic/CAutoPtr::m_p.md) data member currently points to an existing value; that is, it is not equal to NULL.  
   

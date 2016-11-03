@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;membername&gt;&#39; cannot be declared &#39;Shadows&#39; outside of a class, structure, or interface"
+title: "&#39;&lt;membername&gt;&#39; cannot be declared &#39;Shadows&#39; outside of a class, structure, or interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ The `Shadows` keyword appears in a declaration at namespace, module, or file lev
 -   Remove the `Shadows` keyword, or move the declaration inside a class, structure, or interface.  
   
 ## See Also  
- [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)   
- [Shadowing in Visual Basic](../Topic/Shadowing%20in%20Visual%20Basic.md)
+ [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)   
+ [Shadowing in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/shadowing)

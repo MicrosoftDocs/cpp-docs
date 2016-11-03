@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS3013"
+title: "Compiler Warning (level 1) CS3013 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,6 +38,6 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS3013
 Added modules must be marked with the CLSCompliant attribute to match the assembly  
   
- A module that was compiled with the [/target:module](../Topic/-target:module%20\(C%23%20Compiler%20Options\).md) compiler option was added to a compilation with [/addmodule](../Topic/-addmodule%20\(C%23%20Compiler%20Options\).md). However, the module's compliance with the Common Language Specification (CLS) does not agree with the CLS state of the current compilation.  
+ A module that was compiled with the [/target:module](../Topic/-target:module%20\(C%23%20Compiler%20Options\).md) compiler option was added to a compilation with [/addmodule](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option). However, the module's compliance with the Common Language Specification (CLS) does not agree with the CLS state of the current compilation.  
   
  CLS compliance is indicated with the module attribute. For example, `[module:CLSCompliant(true)]` indicates that the module is CLS compliant, and `[module:CLSCompliant(false)]` indicates that the module is not CLS compliant. The default is `[module:CLSCompliant(false)]`. For more information on the CLS, see [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md).

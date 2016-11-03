@@ -1,5 +1,5 @@
 ---
-title: "Optional parameters cannot be declared as the type &#39;&lt;type&gt;&#39;"
+title: "Optional parameters cannot be declared as the type &#39;&lt;type&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ Optional parameters cannot be of the data type of a structure.
 2.  Use `CType` to cast the parameter to that structure type within the procedure.  
   
 ## See Also  
- [Structures and Classes](../Topic/Structures%20and%20Classes%20\(Visual%20Basic\).md)   
- [CType Function](../Topic/CType%20Function%20\(Visual%20Basic\).md)
+ [Structures and Classes](/dotnet/visual-basic/programming-guide/language-features/data-types/structures-and-classes)   
+ [CType Function](/dotnet/visual-basic/language-reference/functions/ctype-function)

@@ -1,5 +1,5 @@
 ---
-title: "Number of indices is less than the number of dimensions of the indexed array"
+title: "Number of indices is less than the number of dimensions of the indexed array | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ The number of indices used to access an array element must be exactly the same a
 -   Add subscripts to the array reference until the total number of subscripts equals the rank of the array.  
   
 ## See Also  
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0180"
+title: "Compiler Error CS0180 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0180
 'member' cannot be both extern and abstract  
   
- The [abstract](../Topic/abstract%20\(C%23%20Reference\).md) and [extern](../Topic/extern%20\(C%23%20Reference\).md) keywords are mutually exclusive. The `extern` keyword means that the member is defined outside the file, and **abstract** means that the implementation is provided in a derived class. For more information, see [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md).  
+ The [abstract](/dotnet/csharp/language-reference/keywords/abstract) and [extern](/dotnet/csharp/language-reference/keywords/extern) keywords are mutually exclusive. The `extern` keyword means that the member is defined outside the file, and **abstract** means that the implementation is provided in a derived class. For more information, see [Methods](/dotnet/csharp/programming-guide/classes-and-structs/methods).  
   
  The following sample generates CS0180:  
   

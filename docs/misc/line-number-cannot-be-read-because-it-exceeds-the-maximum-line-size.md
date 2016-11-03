@@ -1,5 +1,5 @@
 ---
-title: "Line &lt;number&gt; cannot be read because it exceeds the maximum line size."
+title: "Line &lt;number&gt; cannot be read because it exceeds the maximum line size. | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,5 +40,5 @@ The line cannot be read because it exceeds the maximum line size. Usually this m
 -   Insert a closing quotation mark in the file.  
   
 ## See Also  
- [Parsing Text Files with the TextFieldParser Object](../Topic/Parsing%20Text%20Files%20with%20the%20TextFieldParser%20Object%20\(Visual%20Basic\).md)   
- [TextFieldParser Object](../Topic/TextFieldParser%20Object.md)
+ [Parsing Text Files with the TextFieldParser Object](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object)   
+ [TextFieldParser Object](/dotnet/visual-basic/language-reference/objects/textfieldparser-object)

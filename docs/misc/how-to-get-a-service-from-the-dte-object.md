@@ -1,7 +1,7 @@
 ---
-title: "How to: Get a Service from the DTE Object"
+title: "How to: Get a Service from the DTE Object | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -43,5 +43,5 @@ A service can be obtained from any program that has access to the [!INCLUDE[vspr
      [!code-vb[GetAServiceFromTheDTEObject#1](../misc/codesnippet/VisualBasic/how-to-get-a-service-from-the-dte-object_1.vb)]  
   
 ## See Also  
- [Using and Providing Services](../Topic/Using%20and%20Providing%20Services.md)   
- [Service Essentials](../Topic/Service%20Essentials.md)
+ [Using and Providing Services](/visual-studio/extensibility/using-and-providing-services)   
+ [Service Essentials](/visual-studio/extensibility/internals/service-essentials)

@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;classname1&gt;&#39; cannot inherit from &lt;type&gt; &#39;&lt;classname2&gt;&#39; because &#39;&lt;classname2&gt;&#39; is declared &#39;NotInheritable&#39;"
+title: "&#39;&lt;classname1&gt;&#39; cannot inherit from &lt;type&gt; &#39;&lt;classname2&gt;&#39; because &#39;&lt;classname2&gt;&#39; is declared &#39;NotInheritable&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ A class attempts to inherit from another class, but the desired base class is sp
 -   Remove the `NotInheritable` keyword from the definition of the desired base class, or remove the `Inherits` statement.  
   
 ## See Also  
- [Inheritance Basics](../Topic/Inheritance%20Basics%20\(Visual%20Basic\).md)   
- [NotInheritable](../Topic/NotInheritable%20\(Visual%20Basic\).md)   
- [Inherits Statement](../Topic/Inherits%20Statement.md)
+ [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)   
+ [NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)   
+ [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement)

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1002"
+title: "Compiler Error CS1002 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -59,4 +59,4 @@ namespace x
 ```  
   
 ## See Also  
- [Statements](../Topic/Statements%20\(C%23%20Programming%20Guide\).md)
+ [Statements](/dotnet/csharp/programming-guide/statements-expressions-operators/statements)

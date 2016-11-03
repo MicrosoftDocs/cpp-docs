@@ -1,5 +1,5 @@
 ---
-title: "Too many type arguments to extension method &#39;&lt;methodName&gt;&#39; defined in &#39;&lt;typeName&gt;&#39;"
+title: "Too many type arguments to extension method &#39;&lt;methodName&gt;&#39; defined in &#39;&lt;typeName&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,6 +47,6 @@ A generic extension method has been invoked with more type arguments than there 
 -   Remove type arguments from your type argument list so that there is one for each type parameter defined by the generic method that you are invoking.  
   
 ## See Also  
- [Extension Methods](../Topic/Extension%20Methods%20\(Visual%20Basic\).md)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Type List](../Topic/Type%20List%20\(Visual%20Basic\).md)
+ [Extension Methods](/dotnet/visual-basic/language-reference/procedures/extension-methods)   
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Type List](/dotnet/visual-basic/language-reference/statements/type-list)

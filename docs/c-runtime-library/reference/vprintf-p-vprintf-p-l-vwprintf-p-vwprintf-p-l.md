@@ -1,7 +1,7 @@
 ---
-title: "_vprintf_p, _vprintf_p_l, _vwprintf_p, _vwprintf_p_l"
+title: "_vprintf_p, _vprintf_p_l, _vwprintf_p, _vwprintf_p_l | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

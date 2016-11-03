@@ -1,5 +1,5 @@
 ---
-title: "&#39;GoTo &lt;labelname&gt;&#39; is not valid because &#39;&lt;labelname&gt;&#39; is inside a &#39;SyncLock&#39; statement that does not contain this statement"
+title: "&#39;GoTo &lt;labelname&gt;&#39; is not valid because &#39;&lt;labelname&gt;&#39; is inside a &#39;SyncLock&#39; statement that does not contain this statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You cannot branch into a `SyncLock` block.
 -   Restructure your code so that the label precedes the `SyncLock` block.  
   
 ## See Also  
- [SyncLock Statement](../Topic/SyncLock%20Statement.md)
+ [SyncLock Statement](/dotnet/visual-basic/language-reference/statements/synclock-statement)

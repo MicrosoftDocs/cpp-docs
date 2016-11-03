@@ -1,5 +1,5 @@
 ---
-title: "Unable to evaluate expression"
+title: "Unable to evaluate expression | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ The expression could not be evaluated.
 -   Check the syntax of the expression.  
   
 ## See Also  
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)

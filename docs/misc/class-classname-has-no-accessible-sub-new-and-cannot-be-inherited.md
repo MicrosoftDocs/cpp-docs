@@ -1,5 +1,5 @@
 ---
-title: "Class &#39;&lt;classname&gt;&#39; has no accessible &#39;Sub New&#39; and cannot be inherited"
+title: "Class &#39;&lt;classname&gt;&#39; has no accessible &#39;Sub New&#39; and cannot be inherited | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Class &#39;&lt;classname&gt;&#39; has no accessible &#39;Sub New&#39; and cannot be inherited
-A class uses an [Inherits Statement](../Topic/Inherits%20Statement.md) to specify a base class, but it cannot access any constructor on the intended base class.  
+A class uses an [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement) to specify a base class, but it cannot access any constructor on the intended base class.  
   
  This can happen if the intended base class has no constructors or if it has constructors with access levels that prevent access from another class.  
   
@@ -51,8 +51,8 @@ A class uses an [Inherits Statement](../Topic/Inherits%20Statement.md) to specif
 2.  If you cannot change the access levels of the intended base class constructors, then inherit from a different class or not at all.  
   
 ## See Also  
- [Inherits Statement](../Topic/Inherits%20Statement.md)   
- [Inheritance Basics](../Topic/Inheritance%20Basics%20\(Visual%20Basic\).md)   
+ [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement)   
+ [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)   
  [MyBase - delete](http://msdn.microsoft.com/en-us/52491d06-6451-4f6f-9aa6-8fab59bbc2b9)   
- [New Operator](../Topic/New%20Operator%20\(Visual%20Basic\).md)   
- [Access Levels in Visual Basic](../Topic/Access%20Levels%20in%20Visual%20Basic.md)
+ [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator)   
+ [Access Levels in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/access-levels)

@@ -1,7 +1,7 @@
 ---
-title: "Linker Tools Error LNK2019"
+title: "Linker Tools Error LNK2019 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -73,7 +73,7 @@ unresolved external symbol 'symbol' referenced in function 'function'
   
 -   **A static member of a class is not defined.** A static class member must have a unique definition, or it will violate the one-definition rule. A static class member that cannot be defined inline must be defined in one source file by using its fully-qualified name. If it is not defined at all, the linker generates LNK2019.  
   
--   **A build dependency is only defined as a project dependency in the solution.** In earlier versions of [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)], this level of dependency was sufficient. However, starting with Visual Studio 2010, [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] requires a [project-to-project reference](../Topic/Managing%20references%20in%20a%20project.md). If your project does not have a project-to-project reference, you may receive this linker error. Add a project-to-project reference to fix it.  
+-   **A build dependency is only defined as a project dependency in the solution.** In earlier versions of [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)], this level of dependency was sufficient. However, starting with Visual Studio 2010, [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] requires a [project-to-project reference](/visual-studio/ide/managing-references-in-a-project). If your project does not have a project-to-project reference, you may receive this linker error. Add a project-to-project reference to fix it.  
   
 -   **You build a console application by using settings for a Windows application**. If the error message is similar to **unresolved external symbol WinMain referenced in function**`function_name`, link by using **/SUBSYSTEM:CONSOLE** instead of **/SUBSYSTEM:WINDOWS**. For more information about this setting, and for instructions on how to set this property in Visual Studio, see [/SUBSYSTEM (Specify Subsystem)](../../build/reference/subsystem-specify-subsystem.md).  
   

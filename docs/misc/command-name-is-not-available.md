@@ -1,7 +1,7 @@
 ---
-title: "Command &lt;name&gt; is not available."
+title: "Command &lt;name&gt; is not available. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -45,4 +45,4 @@ This error generally occurs when a command is entered in the **Command** window 
      Make a different selection for the command to operate on.  
   
 ## See Also  
- [Command Window](../Topic/Command%20Window.md)
+ [Command Window](/visual-studio/ide/reference/command-window)

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0551"
+title: "Compiler Error CS0551 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,7 +40,7 @@ Explicit interface implementation 'implementation' is missing accessor 'accessor
   
  A class that explicitly implements an interface's property must implement all the accessors that the interface defines.  
   
- For more information, see [Using Properties](../Topic/Using%20Properties%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see [Using Properties](/dotnet/csharp/programming-guide/classes-and-structs/using-properties).  
   
 ## Example  
  The following sample generates CS0551.  

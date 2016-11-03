@@ -1,7 +1,7 @@
 ---
-title: "_CrtSetDumpClient"
+title: "_CrtSetDumpClient | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -87,7 +87,7 @@ void DumpClientFunction( void *userPortion, size_t blockSize );
 typedef void (__cdecl *_CRT_DUMP_CLIENT)( void *, size_t );  
 ```  
   
- For more information about functions that operate on `_CLIENT_BLOCK` type memory blocks, see [Client Block Hook Functions](../Topic/Client%20Block%20Hook%20Functions.md). The [_CrtReportBlockType](../../c-runtime-library/reference/crtreportblocktype.md) function can be used to return information about block types and subtypes.  
+ For more information about functions that operate on `_CLIENT_BLOCK` type memory blocks, see [Client Block Hook Functions](/visual-studio/debugger/client-block-hook-functions). The [_CrtReportBlockType](../../c-runtime-library/reference/crtreportblocktype.md) function can be used to return information about block types and subtypes.  
   
 ## Requirements  
   

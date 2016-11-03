@@ -1,5 +1,5 @@
 ---
-title: "Code resource lock error"
+title: "Code resource lock error | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,5 +40,5 @@ A call was made to a procedure in a code resource. The code resource was found, 
 -   Check the resource to determine why the error occurred.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)   
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)   
  [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)

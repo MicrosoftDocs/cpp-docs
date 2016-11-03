@@ -1,5 +1,5 @@
 ---
-title: "&#39;Namespace&#39; statements can occur only at file or namespace level"
+title: "&#39;Namespace&#39; statements can occur only at file or namespace level | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ translation.priority.mt:
 -   Move the `Namespace` statement to the top of your namespace declaration or source file.  
   
 ## See Also  
- [Namespace Statement](../Topic/Namespace%20Statement.md)   
- [Namespaces in Visual Basic](../Topic/Namespaces%20in%20Visual%20Basic.md)
+ [Namespace Statement](/dotnet/visual-basic/language-reference/statements/namespace-statement)   
+ [Namespaces in Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces)

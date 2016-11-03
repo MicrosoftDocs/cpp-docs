@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0227"
+title: "Compiler Error CS0227 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0227
 Unsafe code may only appear if compiling with /unsafe  
   
- If source code contains the [unsafe](../Topic/unsafe%20\(C%23%20Reference\).md) keyword, then the [/unsafe](../Topic/-unsafe%20\(C%23%20Compiler%20Options\).md) compiler option must also be used. For more information, see [Unsafe Code and Pointers](../Topic/Unsafe%20Code%20and%20Pointers%20\(C%23%20Programming%20Guide\).md).  
+ If source code contains the [unsafe](/dotnet/csharp/language-reference/keywords/unsafe) keyword, then the [/unsafe](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option) compiler option must also be used. For more information, see [Unsafe Code and Pointers](/dotnet/csharp/programming-guide/unsafe-code-pointers/index).  
   
  To set the unsafe option in [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)], click on **Project** in the main menu, select the **Build** pane, and check the box that says "allow unsafe code."  
   
@@ -55,4 +55,4 @@ public class MyClass
 ```  
   
 ## See Also  
- [C# Compiler Errors](../Topic/C%23%20Compiler%20Errors.md)
+ [C# Compiler Errors](/dotnet/csharp/language-reference/compiler-messages/index)

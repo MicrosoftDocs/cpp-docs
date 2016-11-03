@@ -1,7 +1,7 @@
 ---
-title: "Defining Shape Maps - redirect"
+title: "Defining Shape Maps - redirect | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -25,4 +25,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Defining Shape Maps - redirect
-This topic has been consolidated with other content. Please go to [How to Define a Domain-Specific Language](../Topic/How%20to%20Define%20a%20Domain-Specific%20Language.md).
+This topic has been consolidated with other content. Please go to [How to Define a Domain-Specific Language](/visual-studio/modeling/how-to-define-a-domain-specific-language).

@@ -1,7 +1,7 @@
 ---
-title: "CComPtrBase Class"
+title: "CComPtrBase Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -65,10 +65,10 @@ template <class T> class CComPtrBase
 |Name|Description|  
 |----------|-----------------|  
 |[CComPtrBase::Advise](../Topic/CComPtrBase::Advise.md)|Call this method to create a connection between the `CComPtrBase`'s connection point and a client's sink.|  
-|[CComPtrBase::Attach](../Topic/CComPtrBase::Attach.md)|Call this method to take ownership of an existing pointer.|  
+|[CComPtrBase::Attach](/visual-studio/profiling/attach)|Call this method to take ownership of an existing pointer.|  
 |[CComPtrBase::CoCreateInstance](../Topic/CComPtrBase::CoCreateInstance.md)|Call this method to create an object of the class associated with a specified Class ID or Program ID.|  
 |[CComPtrBase::CopyTo](../Topic/CComPtrBase::CopyTo.md)|Call this method to copy the `CComPtrBase` pointer to another pointer variable.|  
-|[CComPtrBase::Detach](../Topic/CComPtrBase::Detach.md)|Call this method to release ownership of a pointer.|  
+|[CComPtrBase::Detach](/visual-studio/profiling/detach)|Call this method to release ownership of a pointer.|  
 |[CComPtrBase::IsEqualObject](../Topic/CComPtrBase::IsEqualObject.md)|Call this method to check if the specified **IUnknown** points to the same object associated with the `CComPtrBase` object.|  
 |[CComPtrBase::QueryInterface](../Topic/CComPtrBase::QueryInterface.md)|Call this method to return a pointer to a specified interface.|  
 |[CComPtrBase::Release](../Topic/CComPtrBase::Release.md)|Call this method to release the interface.|  

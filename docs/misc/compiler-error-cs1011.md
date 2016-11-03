@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1011"
+title: "Compiler Error CS1011 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1011
 Empty character literal  
   
- A [char](../Topic/char%20\(C%23%20Reference\).md) was declared and initialized to a null. The initialization of a `char` must specify a character.  
+ A [char](/dotnet/csharp/language-reference/keywords/char) was declared and initialized to a null. The initialization of a `char` must specify a character.  
   
  The following sample generates CS1011:  
   

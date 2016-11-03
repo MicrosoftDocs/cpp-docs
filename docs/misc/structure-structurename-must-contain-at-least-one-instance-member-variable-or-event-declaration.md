@@ -1,5 +1,5 @@
 ---
-title: "Structure &#39;&lt;structurename&gt;&#39; must contain at least one instance member variable or Event declaration"
+title: "Structure &#39;&lt;structurename&gt;&#39; must contain at least one instance member variable or Event declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ A functionally empty structure occurs. At least one variable member must be decl
 -   Add a `Dim` statement or an `Event` statement to the structure.  
   
 ## See Also  
- [Structure Statement](../Topic/Structure%20Statement.md)   
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)   
- [Event Statement](../Topic/Event%20Statement.md)
+ [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)   
+ [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
+ [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)

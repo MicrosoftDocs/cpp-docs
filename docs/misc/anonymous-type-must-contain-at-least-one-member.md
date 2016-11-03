@@ -1,5 +1,5 @@
 ---
-title: "Anonymous type must contain at least one member"
+title: "Anonymous type must contain at least one member | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -54,4 +54,4 @@ The initializer list in an anonymous type declaration cannot be empty.
     ```  
   
 ## See Also  
- [Anonymous Types](../Topic/Anonymous%20Types%20\(Visual%20Basic\).md)
+ [Anonymous Types](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types)

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0509"
+title: "Compiler Error CS0509 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0509
 'class1' : cannot derive from sealed type 'class2'  
   
- A [sealed](../Topic/sealed%20\(C%23%20Reference\).md) class cannot act as a [base](../Topic/base%20\(C%23%20Reference\).md) class. Structs are sealed by default.  
+ A [sealed](/dotnet/csharp/language-reference/keywords/sealed) class cannot act as a [base](/dotnet/csharp/language-reference/keywords/base) class. Structs are sealed by default.  
   
  The following sample generates CS0509:  
   

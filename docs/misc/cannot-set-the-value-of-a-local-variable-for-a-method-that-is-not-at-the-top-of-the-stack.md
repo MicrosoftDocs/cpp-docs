@@ -1,5 +1,5 @@
 ---
-title: "Cannot set the value of a local variable for a method that is not at the top of the stack"
+title: "Cannot set the value of a local variable for a method that is not at the top of the stack | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You can only modify variables if they are the top of the call stack. For example
 -   Modify variables that are at the top of the call stack.  
   
 ## See Also  
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)

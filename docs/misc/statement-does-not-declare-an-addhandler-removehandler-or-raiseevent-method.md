@@ -1,5 +1,5 @@
 ---
-title: "Statement does not declare an &#39;AddHandler&#39;, &#39;RemoveHandler&#39; or &#39;RaiseEvent&#39; method"
+title: "Statement does not declare an &#39;AddHandler&#39;, &#39;RemoveHandler&#39; or &#39;RaiseEvent&#39; method | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,8 +45,8 @@ The statement does not supply an `AddHandler`, `RemoveHandler`, or `RaiseEvent` 
 -   Supply an `AddHandler`, `RemoveHandler`, or `RaiseEvent` declaration statement.  
   
 ## See Also  
- [Event Statement](../Topic/Event%20Statement.md)   
+ [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)   
  [AddHandler - delete](http://msdn.microsoft.com/en-us/fc464cf8-582c-48a6-a9c2-185c4c3d5ff8)   
  [RemoveHandler - delete](http://msdn.microsoft.com/en-us/35c17f61-6e22-4b87-b6e1-3ed0c27a88a0)   
  [RaiseEvent - delete](http://msdn.microsoft.com/en-us/7f765da0-5491-40b6-9ed5-24c98f9daad9)   
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)

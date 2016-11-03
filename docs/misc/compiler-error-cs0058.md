@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0058"
+title: "Compiler Error CS0058 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0058
 Inconsistent accessibility: return type 'type' is less accessible than delegate 'delegate'  
   
- A public construct must return a publicly accessible object. For more information, see [Access Modifiers](../Topic/Access%20Modifiers%20\(C%23%20Programming%20Guide\).md).  
+ A public construct must return a publicly accessible object. For more information, see [Access Modifiers](/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers).  
   
  The following sample generates CS0058 because no access modifier is applied to MyClass and therefore it is given private accessibility by default:  
   
@@ -61,4 +61,4 @@ public class A
 ```  
   
 ## See Also  
- [private](../Topic/private%20\(C%23%20Reference\).md)
+ [private](/dotnet/csharp/language-reference/keywords/private)

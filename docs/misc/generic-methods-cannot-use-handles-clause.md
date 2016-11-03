@@ -1,5 +1,5 @@
 ---
-title: "Generic methods cannot use &#39;Handles&#39; clause"
+title: "Generic methods cannot use &#39;Handles&#39; clause | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Generic methods cannot use &#39;Handles&#39; clause
-A generic `Sub` procedure includes a [Handles](../Topic/Handles%20Clause%20\(Visual%20Basic\).md) clause in its declaration.  
+A generic `Sub` procedure includes a [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause) clause in its declaration.  
   
  A `Handles` clause specifies a list of events that the `Sub` procedure handles. To be an event handler, the `Sub` procedure must have the same signature as each event it is to handle. A generic procedure can be created more than once, with signatures that [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] cannot predict at compile time. Therefore, [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] cannot guarantee a signature that matches those of the events in the `Handles` clause.  
   
@@ -44,10 +44,10 @@ A generic `Sub` procedure includes a [Handles](../Topic/Handles%20Clause%20\(Vis
   
 ### To correct this error  
   
--   If the `Sub` procedure needs to be generic, remove the `Handles` clause from its declaration. Use the [AddHandler Statement](../Topic/AddHandler%20Statement.md) to associate this event handler with an event.  
+-   If the `Sub` procedure needs to be generic, remove the `Handles` clause from its declaration. Use the [AddHandler Statement](/dotnet/visual-basic/language-reference/statements/addhandler-statement) to associate this event handler with an event.  
   
--   If the `Sub` procedure needs to use the `Handles` clause to associate events, remove the [Of](../Topic/Of%20Clause%20\(Visual%20Basic\).md) clause from its declaration. You must use a nongeneric procedure with `Handles`.  
+-   If the `Sub` procedure needs to use the `Handles` clause to associate events, remove the [Of](/dotnet/visual-basic/language-reference/statements/of-clause) clause from its declaration. You must use a nongeneric procedure with `Handles`.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
  [NOT IN BUILD:Events and Event Handlers](http://msdn.microsoft.com/en-us/95074a0d-1cbc-4221-a95a-964185c7f962)

@@ -1,5 +1,5 @@
 ---
-title: "Shared &#39;Sub New&#39; cannot have any parameters"
+title: "Shared &#39;Sub New&#39; cannot have any parameters | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You have included a parameter or parameters in a shared `Sub New` statement, whi
 -   Remove the parameter or parameters.  
   
 ## See Also  
- [Shared](../Topic/Shared%20\(Visual%20Basic\).md)
+ [Shared](/dotnet/visual-basic/language-reference/modifiers/shared)

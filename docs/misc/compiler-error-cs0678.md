@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0678"
+title: "Compiler Error CS0678 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0678
 'variable': a field can not be both volatile and readonly  
   
- Use of the [volatile](../Topic/volatile%20\(C%23%20Reference\).md) and [readonly](../Topic/readonly%20\(C%23%20Reference\).md) keywords is mutually exclusive.  
+ Use of the [volatile](/dotnet/csharp/language-reference/keywords/volatile) and [readonly](/dotnet/csharp/language-reference/keywords/readonly) keywords is mutually exclusive.  
   
  The following sample generates CS0678:  
   

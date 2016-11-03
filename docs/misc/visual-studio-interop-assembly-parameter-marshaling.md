@@ -1,7 +1,7 @@
 ---
-title: "Visual Studio Interop Assembly Parameter Marshaling"
+title: "Visual Studio Interop Assembly Parameter Marshaling | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -139,5 +139,5 @@ else
 ## See Also  
  [Interop Marshaling](http://msdn.microsoft.com/en-us/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
  [Interop Marshaling](../Topic/Interop%20Marshaling.md)   
- [Troubleshooting Interoperability](../Topic/Troubleshooting%20Interoperability%20\(Visual%20Basic\).md)   
+ [Troubleshooting Interoperability](/dotnet/visual-basic/programming-guide/com-interop/troubleshooting-interoperability)   
  [Managed VSPackages](../misc/managed-vspackages.md)

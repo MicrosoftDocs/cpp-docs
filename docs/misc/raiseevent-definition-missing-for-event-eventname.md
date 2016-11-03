@@ -1,5 +1,5 @@
 ---
-title: "&#39;RaiseEvent&#39; definition missing for event &#39;&lt;eventname&gt;&#39;"
+title: "&#39;RaiseEvent&#39; definition missing for event &#39;&lt;eventname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ If an event is declared as `Custom`, it must supply a procedure for raising the 
 2.  Verify that other procedures within the event declaration are correctly terminated.  
   
 ## See Also  
- [RaiseEvent Statement](../Topic/RaiseEvent%20Statement.md)   
- [Event Statement](../Topic/Event%20Statement.md)
+ [RaiseEvent Statement](/dotnet/visual-basic/language-reference/statements/raiseevent-statement)   
+ [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)

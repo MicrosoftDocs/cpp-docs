@@ -1,5 +1,5 @@
 ---
-title: "Field or property &#39;&lt;membername&gt;&#39; is not found"
+title: "Field or property &#39;&lt;membername&gt;&#39; is not found | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ An undefined field or property is being referenced for the attribute.
 2.  Verify that your project can access the correct attribute class, and add it to the project references if necessary.  
   
 ## See Also  
- [Imports Statement (.NET Namespace and Type)](../Topic/Imports%20Statement%20\(.NET%20Namespace%20and%20Type\).md)
+ [Imports Statement (.NET Namespace and Type)](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)

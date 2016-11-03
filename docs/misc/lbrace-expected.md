@@ -1,5 +1,5 @@
 ---
-title: "&#39;{&#39; expected"
+title: "&#39;{&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -53,4 +53,4 @@ Dim anon = New With {.ID = 123456}
 ## See Also  
  [Object Initializers: Named and Anonymous Types](../Topic/Object%20Initializers:%20Named%20and%20Anonymous%20Types%20\(Visual%20Basic\).md)   
  [NOT IN BUILD: Property Procedures vs. Fields](http://msdn.microsoft.com/en-us/da1c05c1-87c7-40fa-b92c-e9c7e4d170f7)   
- [Anonymous Types](../Topic/Anonymous%20Types%20\(Visual%20Basic\).md)
+ [Anonymous Types](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types)

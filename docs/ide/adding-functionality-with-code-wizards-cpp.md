@@ -1,7 +1,7 @@
 ---
-title: "Adding Functionality with Code Wizards (C++)"
+title: "Adding Functionality with Code Wizards (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -43,7 +43,7 @@ translation.priority.ht:
 Once you have created a project, you will want to change or add to that project's functionality. Such tasks include creating new classes, adding new member functions and variables, and adding Automation methods and properties. The code wizards are designed to let you do all these things.  
   
 > [!NOTE]
->  You can now add message handlers and map messages to them and override MFC virtual functions using the [Properties window](../Topic/Properties%20Window.md).  
+>  You can now add message handlers and map messages to them and override MFC virtual functions using the [Properties window](/visual-studio/ide/reference/properties-window).  
   
 ## Accessing Visual C++ Code Wizards  
  There are three locations where you can access Visual C++ code wizards:  

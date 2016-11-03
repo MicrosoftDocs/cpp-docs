@@ -1,5 +1,5 @@
 ---
-title: "Source name specified in EventLogSource is registered to a log other than that specified in EventLogName"
+title: "Source name specified in EventLogSource is registered to a log other than that specified in EventLogName | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

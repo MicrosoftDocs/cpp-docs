@@ -1,5 +1,5 @@
 ---
-title: "&#39;Catch&#39; block never reached; &lt;exception&gt; handled above in the same &#39;Try&#39; statement"
+title: "&#39;Catch&#39; block never reached; &lt;exception&gt; handled above in the same &#39;Try&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -38,7 +38,7 @@ translation.priority.mt:
 # &#39;Catch&#39; block never reached; &lt;exception&gt; handled above in the same &#39;Try&#39; statement
 A `Catch` block in the code cannot be reached because it is handled in a preceding `Try` block.  
   
- By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, please see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md)  
+ By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, please see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic)  
   
  **Error ID:** BC42031  
   
@@ -51,4 +51,4 @@ A `Catch` block in the code cannot be reached because it is handled in a precedi
  [How to: Test Code with a Try…Catch Block in Visual Basic](http://msdn.microsoft.com/en-us/8368e205-ed73-4185-a247-af84fb4fafa9)   
  [How to: Filter Errors in a Catch Block in Visual Basic](http://msdn.microsoft.com/en-us/85964d0a-56e7-4301-a96e-5eaea23b7b9b)   
  [Walkthrough: Structured Exception Handling (Visual Basic)](http://msdn.microsoft.com/en-us/440da655-4b32-490b-8b16-bfe46f41fa76)   
- [Try...Catch...Finally Statement](../Topic/Try...Catch...Finally%20Statement%20\(Visual%20Basic\).md)
+ [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)

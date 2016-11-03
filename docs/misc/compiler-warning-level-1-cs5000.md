@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS5000"
+title: "Compiler Warning (level 1) CS5000 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS5000
 Unknown compiler option '/option'  
   
- An invalid [compiler option](../Topic/C%23%20Compiler%20Options.md) was specified.
+ An invalid [compiler option](/dotnet/csharp/language-reference/compiler-options/index) was specified.

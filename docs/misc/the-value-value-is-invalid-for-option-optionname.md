@@ -1,5 +1,5 @@
 ---
-title: "the value &#39;&lt;value&gt;&#39; is invalid for option &#39;&lt;optionname&gt;&#39;"
+title: "the value &#39;&lt;value&gt;&#39; is invalid for option &#39;&lt;optionname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

@@ -1,7 +1,7 @@
 ---
-title: "Adding Multiple Controls"
+title: "Adding Multiple Controls | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.ht:
 # Adding Multiple Controls
 ### To add multiple controls  
   
-1.  While holding down the **CTRL** key, select a control in the [Toolbox Window](../Topic/Toolbox.md).  
+1.  While holding down the **CTRL** key, select a control in the [Toolbox Window](/visual-studio/ide/reference/toolbox).  
   
 2.  Release the **CTRL** key and click the dialog box as many times as you want to add the particular control.  
   

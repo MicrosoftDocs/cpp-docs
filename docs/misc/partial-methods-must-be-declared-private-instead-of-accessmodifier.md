@@ -1,5 +1,5 @@
 ---
-title: "Partial methods must be declared &#39;Private&#39; instead of &#39;&lt;accessModifier&gt;&#39;"
+title: "Partial methods must be declared &#39;Private&#39; instead of &#39;&lt;accessModifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -59,4 +59,4 @@ End Sub
 -   Change the access modifier to `Private` in the signature and implementation declarations.  
   
 ## See Also  
- [Partial Methods](../Topic/Partial%20Methods%20\(Visual%20Basic\).md)
+ [Partial Methods](/dotnet/visual-basic/language-reference/procedures/partial-methods)

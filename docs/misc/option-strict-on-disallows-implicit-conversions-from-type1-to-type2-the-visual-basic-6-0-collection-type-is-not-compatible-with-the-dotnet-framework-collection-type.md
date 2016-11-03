@@ -1,5 +1,5 @@
 ---
-title: "Option Strict On disallows implicit conversions from &#39;&lt;type1&gt;&#39; to &#39;&lt;type2&gt;&#39;; the Visual Basic 6.0 collection type is not compatible with the .NET Framework collection type"
+title: "Option Strict On disallows implicit conversions from &#39;&lt;type1&gt;&#39; to &#39;&lt;type2&gt;&#39;; the Visual Basic 6.0 collection type is not compatible with the .NET Framework collection type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -44,11 +44,11 @@ translation.priority.mt:
   
 ### To correct this error  
   
--   Explicitly convert collection objects by using one of the type conversion keywords. The [CType Function](../Topic/CType%20Function%20\(Visual%20Basic\).md) and [DirectCast Operator](../Topic/DirectCast%20Operator%20\(Visual%20Basic\).md) keywords throw a run-time exception if the conversion fails. The [TryCast Operator](../Topic/TryCast%20Operator%20\(Visual%20Basic\).md) keyword returns [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md) if the conversion fails.  
+-   Explicitly convert collection objects by using one of the type conversion keywords. The [CType Function](/dotnet/visual-basic/language-reference/functions/ctype-function) and [DirectCast Operator](/dotnet/visual-basic/language-reference/operators/directcast-operator) keywords throw a run-time exception if the conversion fails. The [TryCast Operator](/dotnet/visual-basic/language-reference/operators/trycast-operator) keyword returns [Nothing](/dotnet/visual-basic/language-reference/nothing) if the conversion fails.  
   
 ## See Also  
- [CType Function](../Topic/CType%20Function%20\(Visual%20Basic\).md)   
- [DirectCast Operator](../Topic/DirectCast%20Operator%20\(Visual%20Basic\).md)   
- [TryCast Operator](../Topic/TryCast%20Operator%20\(Visual%20Basic\).md)   
- [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md)   
+ [CType Function](/dotnet/visual-basic/language-reference/functions/ctype-function)   
+ [DirectCast Operator](/dotnet/visual-basic/language-reference/operators/directcast-operator)   
+ [TryCast Operator](/dotnet/visual-basic/language-reference/operators/trycast-operator)   
+ [Nothing](/dotnet/visual-basic/language-reference/nothing)   
  [NIB Collections in Visual Basic](http://msdn.microsoft.com/en-us/8b2b7845-2251-4573-8dd3-c9f9c0a66a21)

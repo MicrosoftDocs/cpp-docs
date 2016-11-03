@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1558"
+title: "Compiler Error CS1558 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1558
 'class' does not have a suitable static Main method  
   
- The [/main](../Topic/-main%20\(C%23%20Compiler%20Options\).md) compiler option specified a class in which to look for a **Main** method. However, the [Main](../Topic/Main\(\)%20and%20Command-Line%20Arguments%20\(C%23%20Programming%20Guide\).md) method was not defined correctly.  
+ The [/main](/dotnet/csharp/language-reference/compiler-options/main-compiler-option) compiler option specified a class in which to look for a **Main** method. However, the [Main](/dotnet/csharp/programming-guide/main-and-command-args/main-and-command-line-arguments) method was not defined correctly.  
   
  The following example generates CS1558 because of invalid return type.  
   

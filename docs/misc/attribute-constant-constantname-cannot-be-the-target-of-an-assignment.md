@@ -1,5 +1,5 @@
 ---
-title: "Attribute constant &#39;&lt;constantname&gt;&#39; cannot be the target of an assignment"
+title: "Attribute constant &#39;&lt;constantname&gt;&#39; cannot be the target of an assignment | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -48,4 +48,4 @@ An attempt was made to assign a value to a constant declared in an attribute.
   
 ## See Also  
  [NOT IN BUILD: Attributes in Visual Basic](http://msdn.microsoft.com/en-us/620bfc0e-4582-4c8b-8432-ebc5c3dccc22)   
- [Constants and Enumerations](../Topic/Constants%20and%20Enumerations%20\(Visual%20Basic\).md)
+ [Constants and Enumerations](/dotnet/visual-basic/language-reference/constants-and-enumerations)

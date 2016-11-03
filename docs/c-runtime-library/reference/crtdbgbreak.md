@@ -1,7 +1,7 @@
 ---
-title: "_CrtDbgBreak"
+title: "_CrtDbgBreak | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -67,7 +67,7 @@ void _CrtDbgBreak( void );
 ## Remarks  
  The `_CrtDbgBreak` function sets a debug breakpoint on the particular line of code where the function resides. This function is used in debug mode only and is dependent on `_DEBUG` being previously defined.  
   
- For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Writing Your Own Debug Hook Functions](../Topic/Debug%20Hook%20Function%20Writing.md).  
+ For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Writing Your Own Debug Hook Functions](/visual-studio/debugger/debug-hook-function-writing).  
   
 ## .NET Framework Equivalent  
  Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  

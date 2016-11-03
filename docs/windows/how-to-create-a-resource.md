@@ -1,7 +1,7 @@
 ---
-title: "How to: Create a Resource"
+title: "How to: Create a Resource | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -66,7 +66,7 @@ translation.priority.mt:
   
 1.  From the **Project** menu, choose **Add Resource**.  
   
- When you create a new resource, Visual C++ assigns a unique name to it, for example, IDD_Dialog1. You can customize this resource ID by editing the properties for the resource either in the associated resource editor or in the [Properties Window](../Topic/Properties%20Window.md).  
+ When you create a new resource, Visual C++ assigns a unique name to it, for example, IDD_Dialog1. You can customize this resource ID by editing the properties for the resource either in the associated resource editor or in the [Properties Window](/visual-studio/ide/reference/properties-window).  
   
  You can create a resource as a new default resource (a resource that is not based on a template) or as a resource patterned after a [template](../windows/how-to-use-resource-templates.md).  
   

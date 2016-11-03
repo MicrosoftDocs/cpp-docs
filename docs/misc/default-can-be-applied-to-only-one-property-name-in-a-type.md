@@ -1,5 +1,5 @@
 ---
-title: "&#39;Default&#39; can be applied to only one property name in a &lt;type&gt;"
+title: "&#39;Default&#39; can be applied to only one property name in a &lt;type&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You have attempted to apply `Default` to more than one property name within a cl
 -   Remove all but one of the `Default` declarations.  
   
 ## See Also  
- [Default](../Topic/Default%20\(Visual%20Basic\).md)
+ [Default](/dotnet/visual-basic/language-reference/modifiers/default)

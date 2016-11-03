@@ -1,5 +1,5 @@
 ---
-title: "Generic type &#39;&lt;generictypename&gt;&#39; cannot be imported more than once"
+title: "Generic type &#39;&lt;generictypename&gt;&#39; cannot be imported more than once | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Generic type &#39;&lt;generictypename&gt;&#39; cannot be imported more than once
-An [Imports Statement (.NET Namespace and Type)](../Topic/Imports%20Statement%20\(.NET%20Namespace%20and%20Type\).md) specifies a generic type that has already been imported with different type parameterization.  
+An [Imports Statement (.NET Namespace and Type)](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type) specifies a generic type that has already been imported with different type parameterization.  
   
  You can declare multiple constructed types from a generic type, because you do not redefine the generic type by declaring a constructed type. However, if you import a generic type more than once, that is the equivalent of multiple definitions.  
   
@@ -49,4 +49,4 @@ An [Imports Statement (.NET Namespace and Type)](../Topic/Imports%20Statement%20
 2.  If you need to import the same generic type with different type parameterizations, use multiple source files.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)

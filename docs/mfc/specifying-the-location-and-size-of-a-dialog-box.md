@@ -1,7 +1,7 @@
 ---
-title: "Specifying the Location and Size of a Dialog Box"
+title: "Specifying the Location and Size of a Dialog Box | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.ht:
 # Specifying the Location and Size of a Dialog Box
 The location and size of a dialog box, as well as the location and size of controls within it, are measured in dialog units. The values for individual controls and the dialog box appear in the lower right of the Visual Studio status bar when you select them.  
   
- There are three properties that you can set in the [Properties Window](../Topic/Properties%20Window.md) to specify where a dialog box will appear onscreen. The Center property is Boolean; if you set the value to True, the dialog box will always appear in the center of the screen. If you set it to False, you can then set the XPos and YPos properties to explicitly define where onscreen the dialog box will appear. The position properties are offset values from the upper left-hand corner of the viewing area, which is defined as {X=0, Y=0}. The position is also based on the **Absolute Align** property: if True, the coordinates are relative to the screen; if False, the coordinates are relative to the dialog owner's window.  
+ There are three properties that you can set in the [Properties Window](/visual-studio/ide/reference/properties-window) to specify where a dialog box will appear onscreen. The Center property is Boolean; if you set the value to True, the dialog box will always appear in the center of the screen. If you set it to False, you can then set the XPos and YPos properties to explicitly define where onscreen the dialog box will appear. The position properties are offset values from the upper left-hand corner of the viewing area, which is defined as {X=0, Y=0}. The position is also based on the **Absolute Align** property: if True, the coordinates are relative to the screen; if False, the coordinates are relative to the dialog owner's window.  
   
  For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
   

@@ -1,7 +1,7 @@
 ---
-title: "COM Map Global Functions"
+title: "COM Map Global Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -14,7 +14,7 @@ dev_langs:
 helpviewer_keywords: 
   - "COM interfaces, COM map global functions"
 ms.assetid: b9612d30-eb23-46ef-8093-d56f237d3cf1
-caps.latest.revision: 17
+caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -36,11 +36,12 @@ translation.priority.ht:
 # COM Map Global Functions
 These functions provide support for COM Map **IUnknown** implementations.  
   
+
 |||  
 |-|-|  
-|[AtlInternalQueryInterface](../Topic/AtlInternalQueryInterface.md)|Delegates to the **IUnknown** of a nonaggregated object.|  
-|[InlineIsEqualIUnknown](../Topic/InlineIsEqualIUnknown.md)|Generates efficient code for comparing interfaces against **IUnknown**.|  
-  
+|[AtlInternalQueryInterface](#atlinternalqueryinterface)|Delegates to the **IUnknown** of a nonaggregated object.|  
+|[InlineIsEqualIUnknown](#inlineisequaliunknown)|Generates efficient code for comparing interfaces against **IUnknown**.|  
+
 ##  <a name="atlinternalqueryinterface"></a>  AtlInternalQueryInterface  
  Retrieves a pointer to the requested interface.  
   

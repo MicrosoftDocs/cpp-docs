@@ -1,5 +1,5 @@
 ---
-title: "Instance members and &#39;Me&#39; cannot be used within a lambda expression in structures"
+title: "Instance members and &#39;Me&#39; cannot be used within a lambda expression in structures | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -69,6 +69,6 @@ End Structure
     ```  
   
 ## See Also  
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md)   
+ [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)   
  [Me](http://msdn.microsoft.com/en-us/a65973c7-cf06-4547-9b25-9fba885525c2)   
- [Structure Statement](../Topic/Structure%20Statement.md)
+ [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)

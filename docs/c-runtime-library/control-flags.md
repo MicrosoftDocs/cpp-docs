@@ -1,7 +1,7 @@
 ---
-title: "Control Flags"
+title: "Control Flags | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -39,7 +39,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Control Flags
-The debug version of the Microsoft C run-time library uses the following flags to control the heap allocation and reporting process. For more information, see [CRT Debugging Techniques](../Topic/CRT%20Debugging%20Techniques.md).  
+The debug version of the Microsoft C run-time library uses the following flags to control the heap allocation and reporting process. For more information, see [CRT Debugging Techniques](/visual-studio/debugger/crt-debugging-techniques).  
   
 |Flag|Description|  
 |----------|-----------------|  

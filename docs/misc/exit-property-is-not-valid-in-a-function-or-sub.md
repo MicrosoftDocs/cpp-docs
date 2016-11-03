@@ -1,5 +1,5 @@
 ---
-title: "&#39;Exit Property&#39; is not valid in a Function or Sub"
+title: "&#39;Exit Property&#39; is not valid in a Function or Sub | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ translation.priority.mt:
 -   Replace the `Exit Property` with the `Exit Function` or `Exit Sub` statement as appropriate.  
   
 ## See Also  
- [Sub Procedures](../Topic/Sub%20Procedures%20\(Visual%20Basic\).md)   
- [Function Procedures](../Topic/Function%20Procedures%20\(Visual%20Basic\).md)   
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)
+ [Sub Procedures](/dotnet/visual-basic/language-reference/procedures/sub-procedures)   
+ [Function Procedures](/dotnet/visual-basic/language-reference/procedures/function-procedures)   
+ [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)

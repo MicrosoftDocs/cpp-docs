@@ -1,7 +1,7 @@
 ---
-title: "Working with Color (Image Editor for Icons)"
+title: "Working with Color (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -46,7 +46,7 @@ The Image editor contains many features that specifically handle and customize c
   
  All colors for monochrome and 16-color images are shown in the Colors palette in the Colors window. In addition to the 16 standard colors, you can create your own custom colors. Changing any of the colors in the palette will immediately change the corresponding color in the image.  
   
- When working with 256-color icon and cursor images, the Colors property in the [Properties window](../Topic/Properties%20Window.md) is used. For more information, see [Creating a 256-color icon or cursor](../mfc/creating-a-256-color-icon-or-cursor-image-editor-for-icons.md).  
+ When working with 256-color icon and cursor images, the Colors property in the [Properties window](/visual-studio/ide/reference/properties-window) is used. For more information, see [Creating a 256-color icon or cursor](../mfc/creating-a-256-color-icon-or-cursor-image-editor-for-icons.md).  
   
 > [!NOTE]
 >  Using the Image Editor, you can view 32-bit images, but you cannot edit them.  

@@ -1,5 +1,5 @@
 ---
-title: "Line &lt;number&gt; cannot be parsed using the current Delimiters"
+title: "Line &lt;number&gt; cannot be parsed using the current Delimiters | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -42,7 +42,7 @@ The specified line cannot be parsed because it uses delimiters other than those 
 ## See Also  
  [How to: Read From Text Files with Multiple Formats](../Topic/How%20to:%20Read%20From%20Text%20Files%20with%20Multiple%20Formats%20in%20Visual%20Basic.md)   
  [My.Computer.FileSystem.OpenTextFieldParser Method](http://msdn.microsoft.com/en-us/e5869f85-c078-485f-8323-8dc716494546)   
- [Parsing Text Files with the TextFieldParser Object](../Topic/Parsing%20Text%20Files%20with%20the%20TextFieldParser%20Object%20\(Visual%20Basic\).md)   
- [TextFieldParser Object](../Topic/TextFieldParser%20Object.md)   
+ [Parsing Text Files with the TextFieldParser Object](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object)   
+ [TextFieldParser Object](/dotnet/visual-basic/language-reference/objects/textfieldparser-object)   
  [TextFieldParser.Delimiters Property](http://msdn.microsoft.com/en-us/4eb18f4d-3011-40a9-b668-be93eed0444f)   
  [TextFieldParser.SetDelimiters Method](http://msdn.microsoft.com/en-us/21fa40ec-5866-4d0e-9fd9-c708a190dcc9)

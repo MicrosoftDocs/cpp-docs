@@ -1,5 +1,5 @@
 ---
-title: "Methods declared in structures cannot have &#39;Handles&#39; clauses"
+title: "Methods declared in structures cannot have &#39;Handles&#39; clauses | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,7 +47,7 @@ Structure methods cannot use the `Handles` keyword to handle events.
      You can use `AddHandler` to associate an event with an event handler in a structure, provided that the structure implements an event handler defined in an interface.  
   
 ## See Also  
- [Structures and Classes](../Topic/Structures%20and%20Classes%20\(Visual%20Basic\).md)   
+ [Structures and Classes](/dotnet/visual-basic/programming-guide/language-features/data-types/structures-and-classes)   
  [NOT IN BUILD: Classes: Blueprints for Objects](http://msdn.microsoft.com/en-us/2c86373d-0333-4616-a7d8-4790c4e89f7b)   
- [Events](../Topic/Events%20\(Visual%20Basic\).md)   
+ [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)   
  [NOT IN BUILD:AddHandler and RemoveHandler](http://msdn.microsoft.com/en-us/a7a24bd2-519a-46fe-8a2c-2b9df2ca28ef)

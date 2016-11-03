@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0208"
+title: "Compiler Error CS0208 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,13 +38,13 @@ translation.priority.mt:
 # Compiler Error CS0208
 Cannot take the address of, get the size of, or declare a pointer to a managed type ('type')  
   
- Even when used with the [unsafe](../Topic/unsafe%20\(C%23%20Reference\).md) keyword, taking the address of a managed object, getting the size of a managed object, or declaring a pointer to a managed type is not allowed. A managed type is:  
+ Even when used with the [unsafe](/dotnet/csharp/language-reference/keywords/unsafe) keyword, taking the address of a managed object, getting the size of a managed object, or declaring a pointer to a managed type is not allowed. A managed type is:  
   
 -   any reference type  
   
 -   any struct that contains a reference type as a field or property  
   
- For more information, see [Unsafe Code and Pointers](../Topic/Unsafe%20Code%20and%20Pointers%20\(C%23%20Programming%20Guide\).md) and [sizeof](../Topic/sizeof%20\(C%23%20Reference\).md).  
+ For more information, see [Unsafe Code and Pointers](/dotnet/csharp/programming-guide/unsafe-code-pointers/index) and [sizeof](/dotnet/csharp/language-reference/keywords/sizeof).  
   
 ## Example  
  The following sample generates CS0208:  
@@ -90,4 +90,4 @@ public class MyClass
 ```  
   
 ## See Also  
- [sizeof](../Topic/sizeof%20\(C%23%20Reference\).md)
+ [sizeof](/dotnet/csharp/language-reference/keywords/sizeof)

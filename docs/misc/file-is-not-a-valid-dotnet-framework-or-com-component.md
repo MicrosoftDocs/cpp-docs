@@ -1,7 +1,7 @@
 ---
-title: "File is not a valid .NET Framework or COM component"
+title: "File is not a valid .NET Framework or COM component | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,4 +41,4 @@ You are attempting to view a file in the Object Browser that does not contain a 
 2.  If you mistakenly selected Object Browser in the **Open With** dialog box, choose a different program to open the file with.  
   
 ## See Also  
- [Solutions and Projects](../Topic/Solutions%20and%20Projects%20in%20Visual%20Studio.md)
+ [Solutions and Projects](/visual-studio/ide/solutions-and-projects-in-visual-studio)

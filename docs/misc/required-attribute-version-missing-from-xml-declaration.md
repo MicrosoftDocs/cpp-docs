@@ -1,5 +1,5 @@
 ---
-title: "Required attribute &#39;version&#39; missing from XML declaration"
+title: "Required attribute &#39;version&#39; missing from XML declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,7 +45,7 @@ The `version` attribute for an XML document literal is missing.
 -   Add the `version` attribute to the XML document declaration, as in the following example: `<?xml version="1.0"?>`  
   
 ## See Also  
- [XML Literals and the XML 1.0 Specification](../Topic/XML%20Literals%20and%20the%20XML%201.0%20Specification%20\(Visual%20Basic\).md)   
- [XML Document Literal](../Topic/XML%20Document%20Literal%20\(Visual%20Basic\).md)   
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [XML Literals and the XML 1.0 Specification](/dotnet/visual-basic/programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification)   
+ [XML Document Literal](/dotnet/visual-basic/language-reference/xml-literals/xml-document-literal)   
+ [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)

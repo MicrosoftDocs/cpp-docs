@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0544"
+title: "Compiler Error CS0544 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0544
 'property override': cannot override because 'non-property' is not a property  
   
- An attempt was made to override a nonproperty data type as a [property](../Topic/Properties%20\(C%23%20Programming%20Guide\).md), which is not allowed.  
+ An attempt was made to override a nonproperty data type as a [property](/dotnet/csharp/programming-guide/classes-and-structs/properties), which is not allowed.  
   
  The following sample generates CS0544:  
   

@@ -1,7 +1,7 @@
 ---
-title: "How to: Program Copy and Paste Behavior - redirect"
+title: "How to: Program Copy and Paste Behavior - redirect | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -21,4 +21,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Program Copy and Paste Behavior - redirect
-The content of this topic has been merged with a similar topic. Please see [Customizing Copy Behavior](../Topic/Customizing%20Copy%20Behavior.md).
+The content of this topic has been merged with a similar topic. Please see [Customizing Copy Behavior](/visual-studio/modeling/customizing-copy-behavior).

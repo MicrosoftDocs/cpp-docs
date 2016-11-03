@@ -1,5 +1,5 @@
 ---
-title: "&#39;GoTo &lt;linelabel&gt;&#39; is not valid because &#39;&lt;linelabel&gt;&#39; is inside a &#39;Using&#39; statement that does not contain this statement"
+title: "&#39;GoTo &lt;linelabel&gt;&#39; is not valid because &#39;&lt;linelabel&gt;&#39; is inside a &#39;Using&#39; statement that does not contain this statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -51,5 +51,5 @@ A `GoTo` statement outside a `Using` construction attempts to branch to a line l
 -   Remove the `GoTo` statement entirely. The only way you can enter a `Using`...`End Using` construction is to allow control to pass to the `Using` statement itself.  
   
 ## See Also  
- [GoTo Statement](../Topic/GoTo%20Statement.md)   
- [Using Statement](../Topic/Using%20Statement%20\(Visual%20Basic\).md)
+ [GoTo Statement](/dotnet/visual-basic/language-reference/statements/goto-statement)   
+ [Using Statement](/dotnet/visual-basic/language-reference/statements/using-statement)

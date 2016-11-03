@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB3071"
+title: "MSBuild Error MSB3071 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -46,4 +46,4 @@ translation.priority.mt:
 -   Specify a local working directory before attempting this command again.  
   
 ## See Also  
- [Exec Task](../Topic/Exec%20Task.md)
+ [Exec Task](/visual-studio/msbuild/exec-task)

@@ -1,7 +1,7 @@
 ---
-title: "Help Library Manager Administrator&#39;s Guide"
+title: "Help Library Manager Administrator&#39;s Guide | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

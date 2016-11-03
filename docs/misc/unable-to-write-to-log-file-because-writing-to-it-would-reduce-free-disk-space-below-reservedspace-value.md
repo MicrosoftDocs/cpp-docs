@@ -1,5 +1,5 @@
 ---
-title: "Unable to write to log file because writing to it would reduce free disk space below ReservedSpace value"
+title: "Unable to write to log file because writing to it would reduce free disk space below ReservedSpace value | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -53,5 +53,5 @@ The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> class could not wr
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace*>   
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior*>   
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>   
- [My.Application.Log Object](../Topic/My.Application.Log%20Object.md)   
- [My.Log Object](../Topic/My.Log%20Object.md)
+ [My.Application.Log Object](/dotnet/visual-basic/language-reference/objects/my-application-log-object)   
+ [My.Log Object](/dotnet/visual-basic/language-reference/objects/my-log-object)

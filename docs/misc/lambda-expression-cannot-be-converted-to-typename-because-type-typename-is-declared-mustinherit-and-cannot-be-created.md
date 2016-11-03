@@ -1,5 +1,5 @@
 ---
-title: "Lambda expression cannot be converted to &#39;&lt;typename&gt;&#39; because type &#39;&lt;typename&gt;&#39; is declared &#39;MustInherit&#39; and cannot be created"
+title: "Lambda expression cannot be converted to &#39;&lt;typename&gt;&#39; because type &#39;&lt;typename&gt;&#39; is declared &#39;MustInherit&#39; and cannot be created | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -41,6 +41,6 @@ A statement attempts to convert a lambda expression to a type that can only be a
  **Error ID:** BC36626  
   
 ## See Also  
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md)   
- [MustInherit](../Topic/MustInherit%20\(Visual%20Basic\).md)   
+ [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)   
+ [MustInherit](/dotnet/visual-basic/language-reference/modifiers/mustinherit)   
  [NOT IN BUILD: Inheritance in Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)

@@ -1,5 +1,5 @@
 ---
-title: "Could not complete operation since target directory is under source directory"
+title: "Could not complete operation since target directory is under source directory | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,5 +40,5 @@ A cyclic operation has failed. Cyclic operations cycle and therefore cannot comp
 -   When inheriting, make sure that there are no cyclic references.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)   
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)   
  [Debugging Basics: Breakpoints](http://msdn.microsoft.com/en-us/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e)

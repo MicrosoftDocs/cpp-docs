@@ -1,5 +1,5 @@
 ---
-title: "Label &#39;&lt;labelname&gt;&#39; is not defined"
+title: "Label &#39;&lt;labelname&gt;&#39; is not defined | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ A line label or line number is referred to but not defined within the scope of t
 -   Restructure the code so the line label and the reference are in the same procedure.  
   
 ## See Also  
- [Property Statement](../Topic/Property%20Statement.md)   
- [Procedures](../Topic/Procedures%20in%20Visual%20Basic.md)   
+ [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
+ [Procedures](/dotnet/visual-basic/language-reference/procedures/index)   
  [How to: Label Statements](../Topic/How%20to:%20Label%20Statements%20\(Visual%20Basic\).md)

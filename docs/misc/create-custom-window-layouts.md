@@ -1,7 +1,7 @@
 ---
-title: "Create custom window layouts"
+title: "Create custom window layouts | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -30,4 +30,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Create custom window layouts
-This content has moved to [Customizing window layouts](../Topic/Customizing%20window%20layouts%20in%20Visual%20Studio.md)
+This content has moved to [Customizing window layouts](/visual-studio/ide/customizing-window-layouts-in-visual-studio)

@@ -1,7 +1,7 @@
 ---
-title: "How to: Add Templates to the New Project Dialog Box"
+title: "How to: Add Templates to the New Project Dialog Box | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -48,4 +48,4 @@ A number of predefined project templates are installed during [!INCLUDE[vsprvs](
 ## See Also  
  [Project Subtypes](d235b47b-cf11-4d47-a63f-e33d9d16105d2044a030-0795-4940-bd65-a6e44de98a0f)   
  [NIB: Visual Studio Templates](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041)   
- [Contributing to the Add New Item Dialog Box](../Topic/Contributing%20to%20the%20Add%20New%20Item%20Dialog%20Box.md)
+ [Contributing to the Add New Item Dialog Box](/visual-studio/extensibility/internals/contributing-to-the-add-new-item-dialog-box)

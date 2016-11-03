@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1906"
+title: "Compiler Error CS1906 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS1906
 Invalid option 'option'; Resource visibility must be either 'public' or 'private'  
   
- This error indicates an invalid [/resource (Embed Resource File to Output)](../Topic/-resource%20\(C%23%20Compiler%20Options\).md) or [/linkresource (Link to .NET Framework Resource)](../Topic/-linkresource%20\(C%23%20Compiler%20Options\).md) command line option. Check the syntax of the **/resource** or **/linkresource** command line option, and make sure that the accessibility modifier used is either **public** or `private`.
+ This error indicates an invalid [/resource (Embed Resource File to Output)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option) or [/linkresource (Link to .NET Framework Resource)](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option) command line option. Check the syntax of the **/resource** or **/linkresource** command line option, and make sure that the accessibility modifier used is either **public** or `private`.

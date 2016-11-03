@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.Runtime.InteropServices.SafeArrayRankMismatchException"
+title: "Troubleshooting Exceptions: System.Runtime.InteropServices.SafeArrayRankMismatchException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -50,4 +50,4 @@ A <xref:System.Runtime.InteropServices.SafeArrayRankMismatchException> exception
  <xref:System.Runtime.InteropServices.SafeArrayRankMismatchException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
  [Default Marshaling for Arrays](../Topic/Default%20Marshaling%20for%20Arrays.md)   
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)

@@ -1,7 +1,7 @@
 ---
-title: "Command does not accept any arguments."
+title: "Command does not accept any arguments. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,4 +41,4 @@ This error generally occurs when an argument has been entered for a command that
 1.  Check the documentation for the correct syntax for the command and try again.  
   
 ## See Also  
- [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md)
+ [Visual Studio Commands](/visual-studio/ide/reference/visual-studio-commands)

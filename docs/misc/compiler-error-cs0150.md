@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0150"
+title: "Compiler Error CS0150 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0150
 A constant value is expected  
   
- A variable was found where a constant was expected. For more information, see [switch](../Topic/switch%20\(C%23%20Reference\).md).  
+ A variable was found where a constant was expected. For more information, see [switch](/dotnet/csharp/language-reference/keywords/switch).  
   
  The following sample generates CS0150:  
   

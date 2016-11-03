@@ -1,5 +1,5 @@
 ---
-title: "Reference required to assembly &#39;&lt;assemblyname&gt;&#39; containing the type &#39;&lt;membername&gt;&#39;"
+title: "Reference required to assembly &#39;&lt;assemblyname&gt;&#39; containing the type &#39;&lt;membername&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ Reference required to assembly '\<assemblyname>' containing the type '\<memberna
 -   Add a project reference for the dependent types in the project.  
   
 ## See Also  
- [Managing references in a project](../Topic/Managing%20references%20in%20a%20project.md)
+ [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)

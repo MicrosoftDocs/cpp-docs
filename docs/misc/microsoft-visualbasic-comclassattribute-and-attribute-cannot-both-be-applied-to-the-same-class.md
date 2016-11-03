@@ -1,5 +1,5 @@
 ---
-title: "&#39;Microsoft.VisualBasic.ComClassAttribute&#39; and &#39;&lt;attribute&gt;&#39; cannot both be applied to the same class"
+title: "&#39;Microsoft.VisualBasic.ComClassAttribute&#39; and &#39;&lt;attribute&gt;&#39; cannot both be applied to the same class | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

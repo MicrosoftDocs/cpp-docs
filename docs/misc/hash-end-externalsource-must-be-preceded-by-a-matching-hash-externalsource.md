@@ -1,5 +1,5 @@
 ---
-title: "&#39;#End ExternalSource&#39; must be preceded by a matching &#39;#ExternalSource&#39;"
+title: "&#39;#End ExternalSource&#39; must be preceded by a matching &#39;#ExternalSource&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ The `#ExternalSource` directive references outside code, enabling the compiler t
 2.  Remove `#End ExternalSource` if it is unnecessary.  
   
 ## See Also  
- [#ExternalSource Directive](../Topic/%23ExternalSource%20Directive.md)   
+ [#ExternalSource Directive](/dotnet/visual-basic/language-reference/directives/externalsource-directive)   
  [NOTINBUILD Conditional Compilation (Visual Basic)](http://msdn.microsoft.com/en-us/ad1e35e0-935e-4a35-a2ae-738bcf2a9240)

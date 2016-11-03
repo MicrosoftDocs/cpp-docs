@@ -1,5 +1,5 @@
 ---
-title: "&#39;Return&#39; statement in a Sub or a Set cannot return a value"
+title: "&#39;Return&#39; statement in a Sub or a Set cannot return a value | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,7 +47,7 @@ translation.priority.mt:
 -   You can effectively return values from `Sub` procedures by modifying the value of parameters passed by reference using the `ByRef` keyword.  
   
 ## See Also  
- [Return Statement](../Topic/Return%20Statement%20\(Visual%20Basic\).md)   
- [Sub Procedures](../Topic/Sub%20Procedures%20\(Visual%20Basic\).md)   
- [Function Procedures](../Topic/Function%20Procedures%20\(Visual%20Basic\).md)   
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)
+ [Return Statement](/dotnet/visual-basic/language-reference/statements/return-statement)   
+ [Sub Procedures](/dotnet/visual-basic/language-reference/procedures/sub-procedures)   
+ [Function Procedures](/dotnet/visual-basic/language-reference/procedures/function-procedures)   
+ [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)

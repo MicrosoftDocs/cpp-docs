@@ -1,5 +1,5 @@
 ---
-title: "Property &#39;&lt;propertyname&gt;&#39; cannot be initialized in an object initializer expression because all accessible overloads require arguments"
+title: "Property &#39;&lt;propertyname&gt;&#39; cannot be initialized in an object initializer expression because all accessible overloads require arguments | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -96,5 +96,5 @@ coinCollection.Item(1) = aCoinObject
  [Object Initializers: Named and Anonymous Types](../Topic/Object%20Initializers:%20Named%20and%20Anonymous%20Types%20\(Visual%20Basic\).md)   
  [How to: Call a Property Procedure](../Topic/How%20to:%20Call%20a%20Property%20Procedure%20\(Visual%20Basic\).md)   
  [NOT IN BUILD: Default Properties](http://msdn.microsoft.com/en-us/a70f2a27-8176-4858-935e-f25afdd43ab5)   
- [Overloads](../Topic/Overloads%20\(Visual%20Basic\).md)   
- [Procedure Overloading](../Topic/Procedure%20Overloading%20\(Visual%20Basic\).md)
+ [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads)   
+ [Procedure Overloading](/dotnet/visual-basic/language-reference/procedures/procedure-overloading)

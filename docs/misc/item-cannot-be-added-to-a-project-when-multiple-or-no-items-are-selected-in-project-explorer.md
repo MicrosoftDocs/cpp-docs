@@ -1,7 +1,7 @@
 ---
-title: "Item cannot be added to a project when multiple or no items are selected in Project Explorer."
+title: "Item cannot be added to a project when multiple or no items are selected in Project Explorer. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,4 +41,4 @@ This error generally occurs when no items have been selected in Solution Explore
   
 ## See Also  
  [Solution Explorer](http://msdn.microsoft.com/en-us/ca0ad8e7-eda8-40d4-a76e-2a6864b16e00)   
- [Solutions and Projects](../Topic/Solutions%20and%20Projects%20in%20Visual%20Studio.md)
+ [Solutions and Projects](/visual-studio/ide/solutions-and-projects-in-visual-studio)

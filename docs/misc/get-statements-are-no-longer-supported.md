@@ -1,5 +1,5 @@
 ---
-title: "&#39;Get&#39; statements are no longer supported"
+title: "&#39;Get&#39; statements are no longer supported | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,6 +47,6 @@ translation.priority.mt:
 1.  Perform file operations using the members of `System.IO`, `FileSystemObject`, and [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] run-time functions.  
   
 ## See Also  
- [Processing Drives, Directories, and Files](../Topic/Processing%20Drives,%20Directories,%20and%20Files%20\(Visual%20Basic\).md)   
- [Get Statement](../Topic/Get%20Statement.md)   
- [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md)
+ [Processing Drives, Directories, and Files](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/index)   
+ [Get Statement](/dotnet/visual-basic/language-reference/statements/get-statement)   
+ [File Access with Visual Basic](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/file-access)

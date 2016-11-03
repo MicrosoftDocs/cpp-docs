@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0528"
+title: "Compiler Error CS0528 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0528
 'interface' is already listed in interface list  
   
- An interface-inheritance list includes a duplicate. An [interface](../Topic/interface%20\(C%23%20Reference\).md) can only be specified once in the inheritance list.  
+ An interface-inheritance list includes a duplicate. An [interface](/dotnet/csharp/language-reference/keywords/interface) can only be specified once in the inheritance list.  
   
  The following sample generates CS0528:  
   

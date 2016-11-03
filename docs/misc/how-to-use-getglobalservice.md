@@ -1,7 +1,7 @@
 ---
-title: "How to: Use GetGlobalService"
+title: "How to: Use GetGlobalService | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -56,5 +56,5 @@ Sometimes you may need to get a service from a tool window or control container 
   
 ## See Also  
  [How to: Troubleshoot Services](../Topic/How%20to:%20Troubleshoot%20Services.md)   
- [Using and Providing Services](../Topic/Using%20and%20Providing%20Services.md)   
- [Service Essentials](../Topic/Service%20Essentials.md)
+ [Using and Providing Services](/visual-studio/extensibility/using-and-providing-services)   
+ [Service Essentials](/visual-studio/extensibility/internals/service-essentials)

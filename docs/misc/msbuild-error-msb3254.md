@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB3254"
+title: "MSBuild Error MSB3254 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/24/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -46,5 +46,5 @@ translation.priority.mt:
 -   Ensure that you have full permissions and full access to the file, or reinstall the [!INCLUDE[net_client_v35_long](../misc/includes/net_client_v35_long_md.md)] redistributable run-time library to replace the corrupted file.  
   
 ## See Also  
- [Project Element (MSBuild)](../Topic/Project%20Element%20\(MSBuild\).md)   
- [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md)
+ [Project Element (MSBuild)](/visual-studio/msbuild/project-element-msbuild)   
+ [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)

@@ -1,7 +1,7 @@
 ---
-title: "MFC Add Class Wizard"
+title: "MFC Add Class Wizard | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -56,7 +56,7 @@ Use this code wizard to add a class to an existing MFC project, or to add a clas
   
 -   The class [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md), which requires a dialog ID, a DHTML resource ID, and an HTML file name.  
   
- For classes requiring a dialog ID, you might find it more efficient to use the [Resource editor](../../mfc/resource-editors.md) to create the dialog resource, assign its ID in the [Properties window](../Topic/Properties%20Window.md), and then create a class associated with that resource ID. See [Creating a New Dialog Box](../../mfc/creating-a-new-dialog-box.md) for more information on creating a standard Windows dialog box.  
+ For classes requiring a dialog ID, you might find it more efficient to use the [Resource editor](../../mfc/resource-editors.md) to create the dialog resource, assign its ID in the [Properties window](/visual-studio/ide/reference/properties-window), and then create a class associated with that resource ID. See [Creating a New Dialog Box](../../mfc/creating-a-new-dialog-box.md) for more information on creating a standard Windows dialog box.  
   
 > [!NOTE]
 >  If you create a dialog resource first and derive its new class from `CDHtmlDialog`, delete the standard Windows **OK** and **Cancel** buttons that appear on the default dialog box. The standard Windows dialog box hosts the DHTML form, which contains its own **OK** and **Cancel** buttons.  

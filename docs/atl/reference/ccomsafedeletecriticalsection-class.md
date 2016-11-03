@@ -1,7 +1,7 @@
 ---
-title: "CComSafeDeleteCriticalSection Class"
+title: "CComSafeDeleteCriticalSection Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -59,7 +59,7 @@ class CComSafeDeleteCriticalSection : public CComCriticalSection
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComSafeDeleteCriticalSection::Init](../Topic/CComSafeDeleteCriticalSection::Init.md)|Creates and initializes a critical section object.|  
+|[CComSafeDeleteCriticalSection::Init](/visual-studio/debugger/init)|Creates and initializes a critical section object.|  
 |[CComSafeDeleteCriticalSection::Lock](../Topic/CComSafeDeleteCriticalSection::Lock.md)|Obtains ownership of the critical section object.|  
 |[CComSafeDeleteCriticalSection::Term](../Topic/CComSafeDeleteCriticalSection::Term.md)|Releases system resources used by the critical section object.|  
   
@@ -105,14 +105,14 @@ CComSafeDeleteCriticalSection();
  Releases the internal **CRITICAL_SECTION** object from memory if the [m_bInitialized](../Topic/CComSafeDeleteCriticalSection::m_bInitialized.md) data member is set to **true**.  
   
 ##  <a name="ccomsafedeletecriticalsection__init"></a>  CComSafeDeleteCriticalSection::Init  
- Calls the base class implementation of [Init](../Topic/CComCriticalSection::Init.md) and sets [m_bInitialized](../Topic/CComSafeDeleteCriticalSection::m_bInitialized.md) to **true** if successful.  
+ Calls the base class implementation of [Init](/visual-studio/debugger/init) and sets [m_bInitialized](../Topic/CComSafeDeleteCriticalSection::m_bInitialized.md) to **true** if successful.  
   
 ```
 HRESULT Init() throw();
 ```  
   
 ### Return Value  
- Returns the result of [CComCriticalSection::Init](../Topic/CComCriticalSection::Init.md).  
+ Returns the result of [CComCriticalSection::Init](/visual-studio/debugger/init).  
   
 ##  <a name="ccomsafedeletecriticalsection__lock"></a>  CComSafeDeleteCriticalSection::Lock  
  Calls the base class implementation of [Lock](../Topic/CComCriticalSection::Lock.md).  

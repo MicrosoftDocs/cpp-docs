@@ -1,5 +1,5 @@
 ---
-title: "WithEvents variable name length cannot exceed 1019 characters"
+title: "WithEvents variable name length cannot exceed 1019 characters | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ The name or identifier of every variable declared using `WithEvents` is limited 
 -   Reduce the length of the identifier.  
   
 ## See Also  
- [Declared Element Names](../Topic/Declared%20Element%20Names%20\(Visual%20Basic\).md)   
- [WithEvents](../Topic/WithEvents%20\(Visual%20Basic\).md)
+ [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
+ [WithEvents](/dotnet/visual-basic/language-reference/modifiers/withevents)

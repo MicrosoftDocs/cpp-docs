@@ -1,5 +1,5 @@
 ---
-title: "&#39;WriteOnly&#39; property must provide a &#39;Set&#39;"
+title: "&#39;WriteOnly&#39; property must provide a &#39;Set&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ If a property is declared as `WriteOnly`, it must supply a procedure for writing
 2.  Verify that other procedures within the `Property` declaration are correctly terminated.  
   
 ## See Also  
- [Property Statement](../Topic/Property%20Statement.md)   
- [Set Statement](../Topic/Set%20Statement%20\(Visual%20Basic\).md)
+ [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
+ [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement)

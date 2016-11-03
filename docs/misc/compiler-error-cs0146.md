@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0146"
+title: "Compiler Error CS0146 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0146
 Circular base class dependency involving 'class1' and 'class2'  
   
- The inheritance list for a class includes a direct or indirect reference to itself. A class cannot inherit from itself. For more information, see [Inheritance](../Topic/Inheritance%20\(C%23%20Programming%20Guide\).md).  
+ The inheritance list for a class includes a direct or indirect reference to itself. A class cannot inherit from itself. For more information, see [Inheritance](/dotnet/csharp/programming-guide/classes-and-structs/inheritance).  
   
  The following sample generates CS0146:  
   

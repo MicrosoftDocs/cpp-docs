@@ -1,7 +1,7 @@
 ---
-title: "Composite Control Global Functions"
+title: "Composite Control Global Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -14,7 +14,7 @@ dev_langs:
 helpviewer_keywords: 
   - "composite controls, global functions"
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -41,25 +41,26 @@ These functions provide support for creating dialog boxes, and for creating, hos
   
 |||  
 |-|-|  
-|[AtlAxDialogBox](../Topic/AtlAxDialogBox.md)|Creates a modal dialog box from a dialog template provided by the user. The resulting dialog box can contain ActiveX controls.|  
-|[AtlAxCreateDialog](../Topic/AtlAxCreateDialog.md)|Creates a modeless dialog box from a dialog template provided by the user. The resulting dialog box can contain ActiveX controls.|  
-|[AtlAxCreateControl](../Topic/AtlAxCreateControl.md)|Creates an ActiveX control, initializes it, and hosts it in the specified window.|  
-|[AtlAxCreateControlEx](../Topic/AtlAxCreateControlEx.md)|Creates an ActiveX control, initializes it, hosts it in the specified window, and retrieves an interface pointer (or pointers) from the control.|  
-|[AtlAxCreateControlLic](../Topic/AtlAxCreateControlLic.md)|Creates a licensed ActiveX control, initializes it, and hosts it in the specified window.|  
-|[AtlAxCreateControlLicEx](../Topic/AtlAxCreateControlLicEx.md)|Creates a licensed ActiveX control, initializes it, hosts it in the specified window, and retrieves an interface pointer (or pointers) from the control.|  
-|[AtlAxAttachControl](../Topic/AtlAxAttachControl.md)|Attaches a previously created control to the specified window.|  
-|[AtlAxGetHost](../Topic/AtlAxGetHost.md)|Used to obtain a direct interface pointer to the container for a specified window (if any), given its handle.|  
-|[AtlAxGetControl](../Topic/AtlAxGetControl.md)|Used to obtain a direct interface pointer to the control contained inside a specified window (if any), given its handle.|  
-|[AtlSetChildSite](../Topic/AtlSetChildSite.md)|Initializes the **IUnknown** of the child site.|  
-|[AtlAxWinInit](../Topic/AtlAxWinInit.md)|Initializes the hosting code for AxWin objects.|  
-|[AtlAxWinTerm](../Topic/AtlAxWinTerm.md)|Uninitializes the hosting code for AxWin objects.|  
-|[AtlGetObjectSourceInterface](../Topic/AtlGetObjectSourceInterface.md)|Returns information about the default source interface of an object.|  
+|[AtlAxDialogBox](#atlaxdialogbox)|Creates a modal dialog box from a dialog template provided by the user. The resulting dialog box can contain ActiveX controls.|  
+|[AtlAxCreateDialog](#atlaxcreatedialog(|Creates a modeless dialog box from a dialog template provided by the user. The resulting dialog box can contain ActiveX controls.|  
+|[AtlAxCreateControl](#atlaxcreatecontrol)|Creates an ActiveX control, initializes it, and hosts it in the specified window.|  
+|[AtlAxCreateControlEx](#atlaxcreatecontrolex)|Creates an ActiveX control, initializes it, hosts it in the specified window, and retrieves an interface pointer (or pointers) from the control.|  
+|[AtlAxCreateControlLic](#atlaxcreatecontrollic)|Creates a licensed ActiveX control, initializes it, and hosts it in the specified window.|  
+|[AtlAxCreateControlLicEx](#atlaxcreatecontrollicex)|Creates a licensed ActiveX control, initializes it, hosts it in the specified window, and retrieves an interface pointer (or pointers) from the control.|  
+|[AtlAxAttachControl](#atlaxattachcontrol)|Attaches a previously created control to the specified window.|  
+|[AtlAxGetHost](#atlaxgethost)|Used to obtain a direct interface pointer to the container for a specified window (if any), given its handle.|  
+|[AtlAxGetControl](#atlaxgetcontrol)|Used to obtain a direct interface pointer to the control contained inside a specified window (if any), given its handle.|  
+|[AtlSetChildSite](#atlsetchildsite)|Initializes the **IUnknown** of the child site.|  
+|[AtlAxWinInit](#atlaxwininit)|Initializes the hosting code for AxWin objects.|  
+|[AtlAxWinTerm](#atlaxwinterm)|Uninitializes the hosting code for AxWin objects.|  
+|[AtlGetObjectSourceInterface](#atlgetobjectsourceinterface)|Returns information about the default source interface of an object.|  
+
   
 ##  <a name="atlaxdialogbox"></a>  AtlAxDialogBox  
  Creates a modal dialog box from a dialog template provided by the user.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../Token/wrt_md.md)].  
   
 ```
 ATLAPI_(int) AtlAxDialogBox(
@@ -96,15 +97,15 @@ ATLAPI_(int) AtlAxDialogBox(
   
  `"AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100`  
   
- For more information on editing resource scripts, see [How to: Open a Resource Script File in Text Format](../../windows/how-to-open-a-resource-script-file-in-text-format.md). For more information on control resource-definition statements, see [Common Control Parameters](http://msdn.microsoft.com/library/windows/desktop/aa380902) under [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*: SDK Tools*.  
+ For more information on editing resource scripts, see [How to: Open a Resource Script File in Text Format](../Topic/How%20to:%20Open%20a%20Resource%20Script%20File%20in%20Text%20Format.md). For more information on control resource-definition statements, see [Common Control Parameters](http://msdn.microsoft.com/library/windows/desktop/aa380902) under [!INCLUDE[winSDK](../Token/winSDK_md.md)]*: SDK Tools*.  
   
- For more information on dialog boxes in general, refer to [DialogBox](http://msdn.microsoft.com/library/windows/desktop/ms645452) and [CreateDialogParam](http://msdn.microsoft.com/library/windows/desktop/ms645445) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on dialog boxes in general, refer to [DialogBox](http://msdn.microsoft.com/library/windows/desktop/ms645452) and [CreateDialogParam](http://msdn.microsoft.com/library/windows/desktop/ms645445) in the [!INCLUDE[winSDK](../Token/winSDK_md.md)].  
   
 ##  <a name="atlaxcreatedialog"></a>  AtlAxCreateDialog  
  Creates a modeless dialog box from a dialog template provided by the user.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../Token/wrt_md.md)].  
   
 ```
 ATLAPI_(HWND) AtlAxCreateDialog(
@@ -137,13 +138,13 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 ### Remarks  
  The resulting dialog box can contain ActiveX controls.  
   
- See [CreateDialog](http://msdn.microsoft.com/library/windows/desktop/ms645434) and [CreateDialogParam](http://msdn.microsoft.com/library/windows/desktop/ms645445) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [CreateDialog](http://msdn.microsoft.com/library/windows/desktop/ms645434) and [CreateDialogParam](http://msdn.microsoft.com/library/windows/desktop/ms645445) in the [!INCLUDE[winSDK](../Token/winSDK_md.md)].  
   
 ##  <a name="atlaxcreatecontrol"></a>  AtlAxCreateControl  
  Creates an ActiveX control, initializes it, and hosts it in the specified window.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../Token/wrt_md.md)].  
   
 ```
 ATLAPI AtlAxCreateControl(
@@ -191,7 +192,7 @@ ATLAPI AtlAxCreateControl(
  Creates an ActiveX control, initializes it, and hosts it in the specified window. An interface pointer and event sink for the new control can also be created.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../Token/wrt_md.md)].  
   
 ```
 ATLAPI AtlAxCreateControlEx(
@@ -251,7 +252,7 @@ ATLAPI AtlAxCreateControlEx(
  Creates a licensed ActiveX control, initializes it, and hosts it in the specified window.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../Token/wrt_md.md)].  
   
 ```
 ATLAPI AtlAxCreateControlLic(
@@ -295,13 +296,13 @@ ATLAPI AtlAxCreateControlLic(
  One of the standard HRESULT values.  
   
 ### Example  
- See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample of how to use `AtlAxCreateControlLic`.  
+ See [Hosting ActiveX Controls Using ATL AXHost](../Topic/Hosting%20ActiveX%20Controls%20Using%20ATL%20AXHost.md) for a sample of how to use `AtlAxCreateControlLic`.  
   
 ##  <a name="atlaxcreatecontrollicex"></a>  AtlAxCreateControlLicEx  
  Creates a licensed ActiveX control, initializes it, and hosts it in the specified window. An interface pointer and event sink for the new control can also be created.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../Token/wrt_md.md)].  
   
 ```
 ATLAPI AtlAxCreateControlLicEx(
@@ -360,13 +361,13 @@ ATLAPI AtlAxCreateControlLicEx(
  `AtlAxCreateControlLicEx` is similar to [AtlAxCreateControlLic](../Topic/AtlAxCreateControlLic.md) but also allows you to receive an interface pointer to the newly created control and set up an event sink to receive events fired by the control.  
   
 ### Example  
- See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample of how to use `AtlAxCreateControlLicEx`.  
+ See [Hosting ActiveX Controls Using ATL AXHost](../Topic/Hosting%20ActiveX%20Controls%20Using%20ATL%20AXHost.md) for a sample of how to use `AtlAxCreateControlLicEx`.  
   
 ##  <a name="atlaxattachcontrol"></a>  AtlAxAttachControl  
  Attaches a previously created control to the specified window.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../Token/wrt_md.md)].  
   
 ```
 ATLAPI AtlAxAttachControl(
@@ -398,7 +399,7 @@ ATLAPI AtlAxAttachControl(
  Obtains a direct interface pointer to the container for a specified window (if any), given its handle.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../Token/wrt_md.md)].  
   
 ```
 ATLAPI AtlAxGetHost(
@@ -420,7 +421,7 @@ ATLAPI AtlAxGetHost(
  Obtains a direct interface pointer to the control contained inside a specified window given its handle.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../Token/wrt_md.md)].  
   
 ```
 ATLAPI AtlAxGetControl(
@@ -442,7 +443,7 @@ ATLAPI AtlAxGetControl(
  Call this function to set the site of the child object to the **IUnknown** of the parent object.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../Token/wrt_md.md)].  
   
 ```
 HRESULT AtlSetChildSite(
@@ -464,7 +465,7 @@ HRESULT AtlSetChildSite(
  This function initializes ATL's control hosting code by registering the **"AtlAxWin80"** and **"AtlAxWinLic80"** window classes plus a couple of custom window messages.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../Token/wrt_md.md)].  
   
 ```
 ATLAPI_(BOOL) AtlAxWinInit();
@@ -474,13 +475,13 @@ ATLAPI_(BOOL) AtlAxWinInit();
  Nonzero if the initialization of the control hosting code was successful; otherwise **FALSE**.  
   
 ### Remarks  
- This function must be called before using the ATL control hosting API. Following a call to this function, the **"AtlAxWin"** window class can be used in calls to [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) or [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This function must be called before using the ATL control hosting API. Following a call to this function, the **"AtlAxWin"** window class can be used in calls to [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) or [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680), as described in the [!INCLUDE[winSDK](../Token/winSDK_md.md)].  
 
 ##  <a name="atlaxwinterm"></a>  AtlAxWinTerm  
  This function uninitializes ATL's control hosting code by unregistering the **"AtlAxWin80"** and **"AtlAxWinLic80"** window classes.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../Token/wrt_md.md)].  
   
 ```
 inline BOOL AtlAxWinTerm();
@@ -490,7 +491,7 @@ inline BOOL AtlAxWinTerm();
  Always returns **TRUE**.  
   
 ### Remarks  
- This function simply calls [UnregisterClass](http://msdn.microsoft.com/library/windows/desktop/ms644899) as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This function simply calls [UnregisterClass](http://msdn.microsoft.com/library/windows/desktop/ms644899) as described in the [!INCLUDE[winSDK](../Token/winSDK_md.md)].  
   
  Call this function to clean up after all existing host windows have been destroyed if you called [AtlAxWinInit](../Topic/AtlAxWinInit.md) and you no longer need to create host windows. If you don't call this function, the window class will be unregistered automatically when the process terminates.  
   
@@ -498,7 +499,7 @@ inline BOOL AtlAxWinTerm();
  Call this function to retrieve information about the default source interface of an object.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../Token/wrt_md.md)].  
   
 ```
 ATLAPI AtlGetObjectSourceInterface(
@@ -535,13 +536,13 @@ ATLAPI AtlGetObjectSourceInterface(
 >  For this function to successfully retrieve the requested information, the object represented by `punkObj` must implement `IDispatch` (and return type information through **IDispatch::GetTypeInfo**) plus it must also implement either `IProvideClassInfo2` or `IPersist`. The type information for the source interface must be in the same type library as the type information for `IDispatch`.  
   
 ### Example  
- The example below shows how you might define an event sink class, `CEasySink`, that reduces the number of template arguments that you can pass to `IDispEventImpl` to the bare essentials. `EasyAdvise` and `EasyUnadvise` use `AtlGetObjectSourceInterface` to initialize the [IDispEventImpl](../../atl/reference/idispeventimpl-class.md) members before calling [DispEventAdvise](../Topic/IDispEventSimpleImpl::DispEventAdvise.md) or [DispEventUnadvise](../Topic/IDispEventSimpleImpl::DispEventUnadvise.md).  
+ The example below shows how you might define an event sink class, `CEasySink`, that reduces the number of template arguments that you can pass to `IDispEventImpl` to the bare essentials. `EasyAdvise` and `EasyUnadvise` use `AtlGetObjectSourceInterface` to initialize the [IDispEventImpl](../Topic/IDispEventImpl%20Class.md) members before calling [DispEventAdvise](../Topic/IDispEventSimpleImpl::DispEventAdvise.md) or [DispEventUnadvise](../Topic/IDispEventSimpleImpl::DispEventUnadvise.md).  
   
- [!code-cpp[NVC_ATL_Windowing#93](../../atl/codesnippet/CPP/composite-control-global-functions_1.h)]  
+ [!CODE [NVC_ATL_Windowing#93](../CodeSnippet/VS_Snippets_Cpp/NVC_ATL_Windowing#93)]  
   
 ## See Also  
- [Functions](../../atl/reference/atl-functions.md)   
- [Composite Control Macros](../../atl/reference/composite-control-macros.md)
+ [Functions](../Topic/ATL%20Functions.md)   
+ [Composite Control Macros](../Topic/Composite%20Control%20Macros.md)
 
 
 

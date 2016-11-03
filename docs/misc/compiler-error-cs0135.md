@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0135"
+title: "Compiler Error CS0135 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -60,6 +60,6 @@ public class MyClass2
 }  
 ```  
   
- From the [C# Language Specification](../Topic/C%23%20Language%20Specification.md), Section 7.5.2.1:  
+ From the [C# Language Specification](/dotnet/csharp/language-reference/language-specification), Section 7.5.2.1:  
   
  For each occurrence of a given identifier as a simple-name in an expression or declarator, within the local variable declaration space (§3.3) immediately enclosing that occurrence, every other occurrence of the same identifier as a simple-name in an expression or declarator must refer to the same entity. This rule ensures that the meaning of a name is always the same within a given block, switch block, for-, foreach- or using-statement, or anonymous function.

@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;procedurename1&gt;&#39; cannot override &#39;&lt;procedurename2&gt;&#39; because it is not accessible in this context"
+title: "&#39;&lt;procedurename1&gt;&#39; cannot override &#39;&lt;procedurename2&gt;&#39; because it is not accessible in this context | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -51,6 +51,6 @@ A procedure or property overrides a procedure or property with an access level t
 -   Remove the `Overrides` keyword.  
   
 ## See Also  
- [Access Levels in Visual Basic](../Topic/Access%20Levels%20in%20Visual%20Basic.md)   
- [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md)   
+ [Access Levels in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/access-levels)   
+ [Overrides](/dotnet/visual-basic/language-reference/modifiers/overrides)   
  [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213)

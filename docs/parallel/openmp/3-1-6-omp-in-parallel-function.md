@@ -1,7 +1,7 @@
 ---
-title: "3.1.6 omp_in_parallel Function"
+title: "3.1.6 omp_in_parallel Function | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

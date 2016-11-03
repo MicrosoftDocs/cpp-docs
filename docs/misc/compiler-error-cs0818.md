@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0818"
+title: "Compiler Error CS0818 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -60,4 +60,4 @@ class A
 ```  
   
 ## See Also  
- [Implicitly Typed Local Variables](../Topic/Implicitly%20Typed%20Local%20Variables%20\(C%23%20Programming%20Guide\).md)
+ [Implicitly Typed Local Variables](/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables)

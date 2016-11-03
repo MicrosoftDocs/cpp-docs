@@ -1,7 +1,7 @@
 ---
-title: "Sizing a Control While You Add It"
+title: "Sizing a Control While You Add It | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.ht:
 # Sizing a Control While You Add It
 ### To size a control while you add it  
   
-1.  Select a control in the [Toolbox Window](../Topic/Toolbox.md).  
+1.  Select a control in the [Toolbox Window](/visual-studio/ide/reference/toolbox).  
   
 2.  Place your cursor (which appears as cross hairs) where you want the upper-left corner of the new control to be on your dialog box.  
   

@@ -1,5 +1,5 @@
 ---
-title: "XML namespace prefix &#39;prefix&#39; is reserved for use by XML and the namespace URI cannot be changed"
+title: "XML namespace prefix &#39;prefix&#39; is reserved for use by XML and the namespace URI cannot be changed | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ A reserved XML namespace prefix, such as `xmlns`, has been used in an XML litera
 -   Change the XML namespace prefix to a value that is not reserved.  
   
 ## See Also  
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)

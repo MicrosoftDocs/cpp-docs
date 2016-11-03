@@ -1,7 +1,7 @@
 ---
-title: "Adding Values to a Combo Box Control"
+title: "Adding Values to a Combo Box Control | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -51,7 +51,7 @@ You can add values to a combo box control as long as you have the Dialog editor 
   
 1.  Select the combo box control by clicking on it.  
   
-2.  In the [Properties Window](../Topic/Properties%20Window.md), scroll down to the **Data** property.  
+2.  In the [Properties Window](/visual-studio/ide/reference/properties-window), scroll down to the **Data** property.  
   
     > [!NOTE]
     >  If you are displaying properties grouped by type, **Data** appears in the **Misc** properties.  

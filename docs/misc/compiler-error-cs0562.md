@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0562"
+title: "Compiler Error CS0562 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0562
 The parameter of a unary operator must be the containing type  
   
- The method declaration for an operator overload must follow certain guidelines. For more information, see [Overloadable Operators](../Topic/Overloadable%20Operators%20\(C%23%20Programming%20Guide\).md) and [Operator Overloading Sample](http://msdn.microsoft.com/en-us/1c6b4610-0a49-4532-8fa7-f694cfc65743).  
+ The method declaration for an operator overload must follow certain guidelines. For more information, see [Overloadable Operators](/dotnet/csharp/programming-guide/statements-expressions-operators/overloadable-operators) and [Operator Overloading Sample](http://msdn.microsoft.com/en-us/1c6b4610-0a49-4532-8fa7-f694cfc65743).  
   
 ## Example  
  The following sample generates CS0562:  

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0065"
+title: "Compiler Error CS0065 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -70,4 +70,4 @@ public class MyClass
 ```  
   
 ## See Also  
- [Events](../Topic/Events%20\(C%23%20Programming%20Guide\).md)
+ [Events](/dotnet/csharp/programming-guide/events/index)

@@ -1,7 +1,7 @@
 ---
-title: "Getting Field Descriptions from the Properties Window"
+title: "Getting Field Descriptions from the Properties Window | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -71,12 +71,12 @@ STDAPI DLLGetDocumentation
   
  There are no additional interfaces that need to be implemented when getting localized information through idl's `helpstringcontext` attribute and `DLLGetDocumentation`.  
   
- Another way of obtaining the localized name and description of a property is by implementing <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo*>. For more information relating to the implementation of this method, see [Properties Window Fields and Interfaces](../Topic/Properties%20Window%20Fields%20and%20Interfaces.md).  
+ Another way of obtaining the localized name and description of a property is by implementing <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo*>. For more information relating to the implementation of this method, see [Properties Window Fields and Interfaces](/visual-studio/extensibility/internals/properties-window-fields-and-interfaces).  
   
 ## See Also  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>   
- [Properties Window Fields and Interfaces](../Topic/Properties%20Window%20Fields%20and%20Interfaces.md)   
- [Extending Properties](../Topic/Extending%20Properties.md)   
+ [Properties Window Fields and Interfaces](/visual-studio/extensibility/internals/properties-window-fields-and-interfaces)   
+ [Extending Properties](/visual-studio/extensibility/internals/extending-properties)   
  [helpstringdll](../windows/helpstringdll.md)   
  [helpstring](../windows/helpstring.md)   
  [helpstringcontext](../windows/helpstringcontext.md)   

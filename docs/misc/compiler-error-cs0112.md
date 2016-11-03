@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0112"
+title: "Compiler Error CS0112 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,7 +40,7 @@ A static member 'function' cannot be marked as override, virtual or abstract
   
  Any method declaration that uses the `override`, **virtual**, or **abstract** keyword cannot also use the **static** keyword.  
   
- For more information, see [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see [Methods](/dotnet/csharp/programming-guide/classes-and-structs/methods).  
   
  The following sample generates CS0112:  
   

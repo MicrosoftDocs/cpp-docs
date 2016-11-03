@@ -1,5 +1,5 @@
 ---
-title: "Type argument inference failed for type parameter &#39;&lt;typeparametername1&gt;&#39; of &#39;&lt;genericproceduresignature&gt;&#39;"
+title: "Type argument inference failed for type parameter &#39;&lt;typeparametername1&gt;&#39; of &#39;&lt;genericproceduresignature&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -73,6 +73,6 @@ Call takeTwoValues(4, 2.5)
     ```  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Generic Procedures in Visual Basic](../Topic/Generic%20Procedures%20in%20Visual%20Basic.md)   
- [Type List](../Topic/Type%20List%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures)   
+ [Type List](/dotnet/visual-basic/language-reference/statements/type-list)

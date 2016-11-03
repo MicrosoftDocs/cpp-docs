@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;procedurename&gt;&#39; cannot override &#39;&lt;baseprocedurename&gt;&#39; because they differ by type parameter constraints"
+title: "&#39;&lt;procedurename&gt;&#39; cannot override &#39;&lt;baseprocedurename&gt;&#39; because they differ by type parameter constraints | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -42,7 +42,7 @@ A generic procedure attempts to override a generic base class procedure, but the
   
  To override a generic base class procedure, the overriding procedure must additionally match the number of type parameters and the constraint list of each one.  
   
- For more information on overriding requirements, see [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md).  
+ For more information on overriding requirements, see [Overrides](/dotnet/visual-basic/language-reference/modifiers/overrides).  
   
  **Error ID:** BC32077  
   
@@ -53,4 +53,4 @@ A generic procedure attempts to override a generic base class procedure, but the
 -   If the type parameter constraints must remain as you have them, you cannot override the base class procedure. Remove the `Overrides` keyword from the declaration.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)

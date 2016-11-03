@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: Cordova Build Errors"
+title: "Troubleshooting Exceptions: Cordova Build Errors | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""

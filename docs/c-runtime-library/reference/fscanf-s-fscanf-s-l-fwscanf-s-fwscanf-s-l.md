@@ -1,7 +1,7 @@
 ---
-title: "fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l"
+title: "fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

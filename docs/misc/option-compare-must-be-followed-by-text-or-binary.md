@@ -1,5 +1,5 @@
 ---
-title: "&#39;Option Compare&#39; must be followed by &#39;Text&#39; or &#39;Binary&#39;"
+title: "&#39;Option Compare&#39; must be followed by &#39;Text&#39; or &#39;Binary&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ An `Option Compare` statement contains an incorrect setting or no setting. The o
 2.  Add either `Text` or `Binary` to the `Option Compare` statement; for example, `Option Compare Text`.  
   
 ## See Also  
- [Option Compare Statement](../Topic/Option%20Compare%20Statement.md)
+ [Option Compare Statement](/dotnet/visual-basic/language-reference/statements/option-compare-statement)

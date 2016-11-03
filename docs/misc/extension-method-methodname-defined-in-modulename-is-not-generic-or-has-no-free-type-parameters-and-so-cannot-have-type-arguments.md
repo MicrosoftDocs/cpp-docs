@@ -1,5 +1,5 @@
 ---
-title: "Extension method &#39;&lt;methodname&gt;&#39; defined in &#39;&lt;modulename&gt;&#39; is not generic (or has no free type parameters) and so cannot have type arguments"
+title: "Extension method &#39;&lt;methodname&gt;&#39; defined in &#39;&lt;modulename&gt;&#39; is not generic (or has no free type parameters) and so cannot have type arguments | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -62,5 +62,5 @@ Dim str = "hi"
 -   Remove the extra type argument from the procedure call.  
   
 ## See Also  
- [Extension Methods](../Topic/Extension%20Methods%20\(Visual%20Basic\).md)   
- [Generic Procedures in Visual Basic](../Topic/Generic%20Procedures%20in%20Visual%20Basic.md)
+ [Extension Methods](/dotnet/visual-basic/language-reference/procedures/extension-methods)   
+ [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures)

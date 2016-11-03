@@ -1,5 +1,5 @@
 ---
-title: "XML comment tag &#39;returns&#39; is not permitted on a &#39;declare sub&#39; language element"
+title: "XML comment tag &#39;returns&#39; is not permitted on a &#39;declare sub&#39; language element | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -48,6 +48,6 @@ XML comment tag 'returns' is not permitted on a 'declare sub' language element. 
   
 ## See Also  
  [\<returns>](../Topic/%3Creturns%3E%20\(Visual%20Basic\).md)   
- [XML Comment Tags](../Topic/Recommended%20XML%20Tags%20for%20Documentation%20Comments%20\(Visual%20Basic\).md)   
- [Documenting Your Code with XML](../Topic/Documenting%20Your%20Code%20with%20XML%20\(Visual%20Basic\).md)   
- [Declare Statement](../Topic/Declare%20Statement.md)
+ [XML Comment Tags](/dotnet/visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments)   
+ [Documenting Your Code with XML](/dotnet/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)   
+ [Declare Statement](/dotnet/visual-basic/language-reference/statements/declare-statement)

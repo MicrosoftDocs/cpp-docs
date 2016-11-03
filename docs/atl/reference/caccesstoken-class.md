@@ -1,7 +1,7 @@
 ---
-title: "CAccessToken Class"
+title: "CAccessToken Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -62,13 +62,13 @@ class CAccessToken
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAccessToken::Attach](../Topic/CAccessToken::Attach.md)|Call this method to take ownership of the given access token handle.|  
+|[CAccessToken::Attach](/visual-studio/profiling/attach)|Call this method to take ownership of the given access token handle.|  
 |[CAccessToken::CheckTokenMembership](../Topic/CAccessToken::CheckTokenMembership.md)|Call this method to determine if a specified SID is enabled in the `CAccessToken` object.|  
 |[CAccessToken::CreateImpersonationToken](../Topic/CAccessToken::CreateImpersonationToken.md)|Call this method to create a new impersonation access token.|  
 |[CAccessToken::CreatePrimaryToken](../Topic/CAccessToken::CreatePrimaryToken.md)|Call this method to create a new primary token.|  
 |[CAccessToken::CreateProcessAsUser](../Topic/CAccessToken::CreateProcessAsUser.md)|Call this method to create a new process running in the security context of the user represented by the `CAccessToken` object.|  
 |[CAccessToken::CreateRestrictedToken](../Topic/CAccessToken::CreateRestrictedToken.md)|Call this method to create a new, restricted `CAccessToken` object.|  
-|[CAccessToken::Detach](../Topic/CAccessToken::Detach.md)|Call this method to revoke ownership of the access token.|  
+|[CAccessToken::Detach](/visual-studio/profiling/detach)|Call this method to revoke ownership of the access token.|  
 |[CAccessToken::DisablePrivilege](../Topic/CAccessToken::DisablePrivilege.md)|Call this method to disable a privilege in the `CAccessToken` object.|  
 |[CAccessToken::DisablePrivileges](../Topic/CAccessToken::DisablePrivileges.md)|Call this method to disable one or more privileges in the `CAccessToken` object.|  
 |[CAccessToken::EnablePrivilege](../Topic/CAccessToken::EnablePrivilege.md)|Call this method to enable a privilege in the `CAccessToken` object.|  

@@ -1,7 +1,7 @@
 ---
-title: "Automatic Code Generation"
+title: "Automatic Code Generation | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -35,4 +35,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Automatic Code Generation
-This content has moved to [Visual C# IntelliSense](../Topic/Visual%20C%23%20IntelliSense.md)
+This content has moved to [Visual C# IntelliSense](/visual-studio/ide/visual-csharp-intellisense)

@@ -1,5 +1,5 @@
 ---
-title: "Nullable modifier &#39;?&#39; and array modifiers, &#39;(&#39; and &#39;)&#39;, cannot be specified on both a variable and its type"
+title: "Nullable modifier &#39;?&#39; and array modifiers, &#39;(&#39; and &#39;)&#39;, cannot be specified on both a variable and its type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -55,4 +55,4 @@ The nullable type modifier (?) is included on the variable in a variable declara
     ```  
   
 ## See Also  
- [Nullable Value Types](../Topic/Nullable%20Value%20Types%20\(Visual%20Basic\).md)
+ [Nullable Value Types](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

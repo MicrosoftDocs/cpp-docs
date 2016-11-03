@@ -1,7 +1,7 @@
 ---
-title: "Toolbox item could not be copied to another tab."
+title: "Toolbox item could not be copied to another tab. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -46,4 +46,4 @@ This error generally occurs when the item is corrupted or the machine has run ou
   
 ## See Also  
  [How to: Manipulate Toolbox Tabs](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db)   
- [Toolbox](../Topic/Toolbox.md)
+ [Toolbox](/visual-studio/ide/reference/toolbox)

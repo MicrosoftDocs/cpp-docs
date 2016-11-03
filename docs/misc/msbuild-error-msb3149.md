@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB3149"
+title: "MSBuild Error MSB3149 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -44,4 +44,4 @@ translation.priority.mt:
 -   Go to **Control Panel**, select **Add or Remove Programs**, and repair the Visual Studio SDK, or copy the files to the appropriate directory (\<SDK install path>\bootstrapper\engine\\<culture\>\setup.xml).  
   
 ## See Also  
- [Product and Package Schema Reference](../Topic/Product%20and%20Package%20Schema%20Reference.md)
+ [Product and Package Schema Reference](/visual-studio/deployment/product-and-package-schema-reference)

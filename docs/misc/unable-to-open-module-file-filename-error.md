@@ -1,5 +1,5 @@
 ---
-title: "Unable to open module file &#39;&lt;filename&gt;&#39;: &lt;error&gt;"
+title: "Unable to open module file &#39;&lt;filename&gt;&#39;: &lt;error&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

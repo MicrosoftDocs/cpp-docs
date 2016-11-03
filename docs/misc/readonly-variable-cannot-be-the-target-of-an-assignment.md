@@ -1,5 +1,5 @@
 ---
-title: "&#39;ReadOnly&#39; variable cannot be the target of an assignment"
+title: "&#39;ReadOnly&#39; variable cannot be the target of an assignment | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ A `ReadOnly` property has been found in a context that assigns a value to it. On
 -   Remove the `ReadOnly` keyword from the `Dim` statement declaring the variable, or remove the statement that assigns it a value.  
   
 ## See Also  
- [ReadOnly](../Topic/ReadOnly%20\(Visual%20Basic\).md)   
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)
+ [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)   
+ [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)

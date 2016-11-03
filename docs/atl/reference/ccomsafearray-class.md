@@ -1,7 +1,7 @@
 ---
-title: "CComSafeArray Class"
+title: "CComSafeArray Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -65,12 +65,12 @@ class CComSafeArray
 |Name|Description|  
 |----------|-----------------|  
 |[CComSafeArray::Add](../Topic/CComSafeArray::Add.md)|Adds one or more elements, or a **SAFEARRAY** structure, to a `CComSafeArray`.|  
-|[CComSafeArray::Attach](../Topic/CComSafeArray::Attach.md)|Attaches a **SAFEARRAY** structure to a `CComSafeArray` object.|  
+|[CComSafeArray::Attach](/visual-studio/profiling/attach)|Attaches a **SAFEARRAY** structure to a `CComSafeArray` object.|  
 |[CComSafeArray::CopyFrom](../Topic/CComSafeArray::CopyFrom.md)|Copies the contents of a **SAFEARRAY** structure into the `CComSafeArray` object.|  
 |[CComSafeArray::CopyTo](../Topic/CComSafeArray::CopyTo.md)|Creates a copy of the `CComSafeArray` object.|  
 |[CComSafeArray::Create](../Topic/CComSafeArray::Create.md)|Creates a `CComSafeArray` object.|  
 |[CComSafeArray::Destroy](../Topic/CComSafeArray::Destroy.md)|Destroys a `CComSafeArray` object.|  
-|[CComSafeArray::Detach](../Topic/CComSafeArray::Detach.md)|Detaches a **SAFEARRAY** from a `CComSafeArray` object.|  
+|[CComSafeArray::Detach](/visual-studio/profiling/detach)|Detaches a **SAFEARRAY** from a `CComSafeArray` object.|  
 |[CComSafeArray::GetAt](../Topic/CComSafeArray::GetAt.md)|Retrieves a single element from a single-dimensional array.|  
 |[CComSafeArray::GetCount](../Topic/CComSafeArray::GetCount.md)|Returns the number of elements in the array.|  
 |[CComSafeArray::GetDimensions](../Topic/CComSafeArray::GetDimensions.md)|Returns the number of dimensions in the array.|  

@@ -1,5 +1,5 @@
 ---
-title: "Cannot convert to &#39;&lt;type&gt;&#39;"
+title: "Cannot convert to &#39;&lt;type&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ An invalid conversion was attempted.
 -   Choose a compatible conversion type.  
   
 ## See Also  
- [Type Conversions in Visual Basic](../Topic/Type%20Conversions%20in%20Visual%20Basic.md)
+ [Type Conversions in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/type-conversions)

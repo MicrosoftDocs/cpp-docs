@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1902"
+title: "Compiler Error CS1902 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1902
 Invalid option 'option' for /debug; must be full or pdbonly  
   
- An invalid option was passed to the [/debug](../Topic/-debug%20\(C%23%20Compiler%20Options\).md) compiler option.  
+ An invalid option was passed to the [/debug](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) compiler option.  
   
  The following sample generates CS1902:  
   

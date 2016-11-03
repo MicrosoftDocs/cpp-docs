@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1547"
+title: "Compiler Error CS1547 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1547
 Keyword 'void' cannot be used in this context  
   
- The compiler detected an invalid use of the [void](../Topic/void%20\(C%23%20Reference\).md) keyword.  
+ The compiler detected an invalid use of the [void](/dotnet/csharp/language-reference/keywords/void) keyword.  
   
  The following sample generates CS1547:  
   

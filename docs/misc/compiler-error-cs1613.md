@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1613"
+title: "Compiler Error CS1613 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -42,7 +42,7 @@ The managed coclass wrapper class 'class' for interface 'interface' cannot be fo
   
  To resolve this error, you can try one of the following:  
   
--   Add a reference to the assembly that has the coclass (most of the time the interface and coclass should be in the same assembly). See [/reference](../Topic/-reference%20\(C%23%20Compiler%20Options\).md) or [Add Reference Dialog Box](http://msdn.microsoft.com/en-us/2feb0fe2-0805-4cc9-8cba-b0315849dfb7) for information.  
+-   Add a reference to the assembly that has the coclass (most of the time the interface and coclass should be in the same assembly). See [/reference](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option) or [Add Reference Dialog Box](http://msdn.microsoft.com/en-us/2feb0fe2-0805-4cc9-8cba-b0315849dfb7) for information.  
   
 -   Fix the `CoClass` attribute on the interface.  
   

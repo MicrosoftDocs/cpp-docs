@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0216"
+title: "Compiler Error CS0216 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0216
 The operator 'operator' requires a matching operator 'missing_operator' to also be defined  
   
- A user-defined [true](../Topic/true%20\(C%23%20Reference\).md) operator requires a user-defined [false](../Topic/false%20\(C%23%20Reference\).md) operator, and vice versa. For more information, see [Operators](../Topic/Operators%20\(C%23%20Programming%20Guide\).md).  
+ A user-defined [true](/dotnet/csharp/language-reference/keywords/true) operator requires a user-defined [false](/dotnet/csharp/language-reference/keywords/false) operator, and vice versa. For more information, see [Operators](/dotnet/csharp/programming-guide/statements-expressions-operators/operators).  
   
  The following sample generates CS0216:  
   

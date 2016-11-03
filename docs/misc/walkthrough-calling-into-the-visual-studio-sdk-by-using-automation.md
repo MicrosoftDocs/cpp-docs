@@ -1,7 +1,7 @@
 ---
-title: "Walkthrough: Calling into the Visual Studio SDK By Using Automation"
+title: "Walkthrough: Calling into the Visual Studio SDK By Using Automation | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -31,7 +31,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Walkthrough: Calling into the Visual Studio SDK By Using Automation
-This walkthrough illustrates how to create a Visual Studio add-in that consumes a Visual Studio service. The add-in you create gets a service provider and uses it to obtain a service. You can use this same technique to obtain any proffered Visual Studio service. For more information on services and service providers, see [Using and Providing Services](../Topic/Using%20and%20Providing%20Services.md). The procedures below demonstrate how to create an add-in and then obtain a service from the add-in.  
+This walkthrough illustrates how to create a Visual Studio add-in that consumes a Visual Studio service. The add-in you create gets a service provider and uses it to obtain a service. You can use this same technique to obtain any proffered Visual Studio service. For more information on services and service providers, see [Using and Providing Services](/visual-studio/extensibility/using-and-providing-services). The procedures below demonstrate how to create an add-in and then obtain a service from the add-in.  
   
 ## Creating an Add-In  
  In this section, you create a Visual Studio add-in using the Visual Studio Add-In project template.  

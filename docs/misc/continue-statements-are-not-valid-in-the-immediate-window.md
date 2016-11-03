@@ -1,5 +1,5 @@
 ---
-title: "&#39;Continue&#39; statements are not valid in the Immediate window"
+title: "&#39;Continue&#39; statements are not valid in the Immediate window | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ translation.priority.mt:
 -   Remove the `Continue` statement from the debugging code.  
   
 ## See Also  
- [Continue Statement](../Topic/Continue%20Statement%20\(Visual%20Basic\).md)   
- [Immediate Window](../Topic/Immediate%20Window.md)   
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Continue Statement](/dotnet/visual-basic/language-reference/statements/continue-statement)   
+ [Immediate Window](/visual-studio/ide/reference/immediate-window)   
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)

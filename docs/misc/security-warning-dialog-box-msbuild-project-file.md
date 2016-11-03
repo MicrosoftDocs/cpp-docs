@@ -1,7 +1,7 @@
 ---
-title: "Security Warning Dialog Box (MSBuild Project File)"
+title: "Security Warning Dialog Box (MSBuild Project File) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/18/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -53,6 +53,6 @@ The **Security Warning** dialog box warns developers about security issues with 
 -   Network shares.  
   
 ## See Also  
-[MSBuild](MSBuild1.md)  
- [MSBuild Reference](../Topic/MSBuild%20Reference.md)   
- [MSBuild Concepts](../Topic/MSBuild%20Concepts.md)
+[MSBuild](/visual-studio/msbuild/msbuild1)  
+ [MSBuild Reference](/visual-studio/msbuild/msbuild-reference)   
+ [MSBuild Concepts](/visual-studio/msbuild/msbuild-concepts)

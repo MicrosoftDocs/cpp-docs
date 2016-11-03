@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 3) CS0665"
+title: "Compiler Warning (level 3) CS0665 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 3) CS0665
 Assignment in conditional expression is always constant; did you mean to use == instead of = ?  
   
- A conditional expression used the [= operator](../Topic/=%20Operator%20\(C%23%20Reference\).md) and not the [== operator](../Topic/==%20Operator%20\(C%23%20Reference\).md).  
+ A conditional expression used the [= operator](/dotnet/csharp/language-reference/operators/assignment-operator) and not the [== operator](/dotnet/csharp/language-reference/operators/equality-comparison-operator).  
   
  The following sample generates CS0665:  
   

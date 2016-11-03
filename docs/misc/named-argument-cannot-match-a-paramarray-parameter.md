@@ -1,5 +1,5 @@
 ---
-title: "Named argument cannot match a ParamArray parameter"
+title: "Named argument cannot match a ParamArray parameter | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ You have supplied a named argument (specified with the argument's declared name 
 -   Pass the argument by position, rather than by name.  
   
 ## See Also  
- [ParamArray](../Topic/ParamArray%20\(Visual%20Basic\).md)   
- [Passing Arguments by Position and by Name](../Topic/Passing%20Arguments%20by%20Position%20and%20by%20Name%20\(Visual%20Basic\).md)
+ [ParamArray](/dotnet/visual-basic/language-reference/modifiers/paramarray)   
+ [Passing Arguments by Position and by Name](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name)

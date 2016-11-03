@@ -1,0 +1,1 @@
+   COLORREF clrPrev = m_TreeCtrl.SetLineColor(RGB(255, 0, 0));

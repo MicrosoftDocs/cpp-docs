@@ -1,5 +1,5 @@
 ---
-title: "&#39;End Get&#39; must be preceded by a matching &#39;Get&#39;"
+title: "&#39;End Get&#39; must be preceded by a matching &#39;Get&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ translation.priority.mt:
 2.  Make sure that the `Get` property procedure begins with the `Get` keyword and ends with `End Get` construct.  
   
 ## See Also  
- [Property Statement](../Topic/Property%20Statement.md)   
+ [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
  [Property Changes in Visual Basic](http://msdn.microsoft.com/en-us/1c138efa-9bc2-44d7-80a0-f3a7c2510264)

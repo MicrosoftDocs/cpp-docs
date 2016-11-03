@@ -1,7 +1,7 @@
 ---
-title: "_ftime_s, _ftime32_s, _ftime64_s"
+title: "_ftime_s, _ftime32_s, _ftime64_s | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

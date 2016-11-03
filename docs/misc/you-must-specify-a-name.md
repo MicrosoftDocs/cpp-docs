@@ -1,5 +1,5 @@
 ---
-title: "You must specify a name"
+title: "You must specify a name | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -38,5 +38,5 @@ When performing file operations such as renaming a file, you must specify the na
 -   Specify the name.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)   
- [My.Computer.FileSystem Object](../Topic/My.Computer.FileSystem%20Object.md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)   
+ [My.Computer.FileSystem Object](/dotnet/visual-basic/language-reference/objects/my-computer-filesystem-object)

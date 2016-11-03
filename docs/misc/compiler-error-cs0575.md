@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0575"
+title: "Compiler Error CS0575 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0575
 Only class types can contain destructors  
   
- A [struct](../Topic/struct%20\(C%23%20Reference\).md) cannot contain a destructor.  
+ A [struct](/dotnet/csharp/language-reference/keywords/struct) cannot contain a destructor.  
   
  The following sample generates CS0575:  
   

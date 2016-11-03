@@ -1,5 +1,5 @@
 ---
-title: "Operator is not valid for &#39;&lt;name1&gt;&#39; and &#39;&lt;name2&gt;&#39;"
+title: "Operator is not valid for &#39;&lt;name1&gt;&#39; and &#39;&lt;name2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,4 +40,4 @@ An operator is not appropriate for the types being operated on.
 1.  Ensure that the operator is appropriate for the types being operated on.  
   
 ## See Also  
- [Operators](../Topic/Operators%20\(Visual%20Basic\).md)
+ [Operators](/dotnet/visual-basic/language-reference/operators/index)

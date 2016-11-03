@@ -1,5 +1,5 @@
 ---
-title: "End of parameter list expected"
+title: "End of parameter list expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ A `ParamArray` specification is followed by one or more other argument specifica
 -   Move the `ParamArray` to the end of the argument list.  
   
 ## See Also  
- [Parameter Arrays](../Topic/Parameter%20Arrays%20\(Visual%20Basic\).md)
+ [Parameter Arrays](/dotnet/visual-basic/language-reference/procedures/parameter-arrays)

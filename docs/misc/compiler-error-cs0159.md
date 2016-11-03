@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0159"
+title: "Compiler Error CS0159 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0159
 No such label 'label' within the scope of the goto statement  
   
- The label referenced by the [goto](../Topic/goto%20\(C%23%20Reference\).md) statement could not be found within the scope of the `goto` statement.  
+ The label referenced by the [goto](/dotnet/csharp/language-reference/keywords/goto) statement could not be found within the scope of the `goto` statement.  
   
  The following sample generates CS0159:  
   

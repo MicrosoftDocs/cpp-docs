@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1020"
+title: "Compiler Error CS1020 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1020
 Overloadable binary operator expected  
   
- An attempt was made to define an [operator overload](../Topic/Overloadable%20Operators%20\(C%23%20Programming%20Guide\).md), but the operator was not a binary operator, which takes two parameters.  
+ An attempt was made to define an [operator overload](/dotnet/csharp/programming-guide/statements-expressions-operators/overloadable-operators), but the operator was not a binary operator, which takes two parameters.  
   
  The following sample generates CS1020:  
   

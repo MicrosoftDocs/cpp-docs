@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1527"
+title: "Compiler Error CS1527 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1527
 Elements defined in a namespace cannot be explicitly declared as private, protected, or protected internal  
   
- Type declarations in a namespace can have either [public](../Topic/public%20\(C%23%20Reference\).md) or [internal](../Topic/internal%20\(C%23%20Reference\).md) access. If no accessibility is specified, **internal** is the default.  
+ Type declarations in a namespace can have either [public](/dotnet/csharp/language-reference/keywords/public) or [internal](/dotnet/csharp/language-reference/keywords/internal) access. If no accessibility is specified, **internal** is the default.  
   
  The following sample generates CS1527:  
   
@@ -63,8 +63,8 @@ private struct S1{}
 ```  
   
 ## See Also  
- [Namespaces](../Topic/Namespaces%20\(C%23%20Programming%20Guide\).md)   
- [global](../Topic/global%20\(C%23%20Reference\).md)   
+ [Namespaces](/dotnet/csharp/programming-guide/namespaces/index)   
+ [global](/dotnet/csharp/language-reference/keywords/global)   
  [:: Operator](../Topic/::%20Operator%20\(C%23%20Reference\).md)   
- [Accessibility Domain](../Topic/Accessibility%20Domain%20\(C%23%20Reference\).md)   
- [Access Modifiers](../Topic/Access%20Modifiers%20\(C%23%20Programming%20Guide\).md)
+ [Accessibility Domain](/dotnet/csharp/language-reference/keywords/accessibility-domain)   
+ [Access Modifiers](/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)

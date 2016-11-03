@@ -1,5 +1,5 @@
 ---
-title: "&#39;Wend&#39; statements are no longer supported; use &#39;End While&#39; statements instead"
+title: "&#39;Wend&#39; statements are no longer supported; use &#39;End While&#39; statements instead | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ The `End While` construct replaces the `Wend` keyword.
 -   Use `End While` to end a `While` block.  
   
 ## See Also  
- [While...End While Statement](../Topic/While...End%20While%20Statement%20\(Visual%20Basic\).md)   
+ [While...End While Statement](/dotnet/visual-basic/language-reference/statements/while-end-while-statement)   
  [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)

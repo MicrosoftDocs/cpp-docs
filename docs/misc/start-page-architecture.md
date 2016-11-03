@@ -1,7 +1,7 @@
 ---
-title: "Start Page Architecture"
+title: "Start Page Architecture | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -63,6 +63,6 @@ This document describes the architecture of the Start Page tool window that is i
  If you add an element to the right column grid outside of the tab control, we recommend that you define a new row or column in the grid to ensure that it appears as expected.  
   
 ## See Also  
- [Customizing the Start Page](../Topic/Customizing%20the%20Start%20Page%20for%20Visual%20Studio.md)   
+ [Customizing the Start Page](/visual-studio/ide/customizing-the-start-page-for-visual-studio)   
  [Start Page Best Practices](../misc/start-page-best-practices.md)   
- [Deploying Custom Start Pages](../Topic/Deploying%20Custom%20Start%20Pages.md)
+ [Deploying Custom Start Pages](/visual-studio/extensibility/deploying-custom-start-pages)

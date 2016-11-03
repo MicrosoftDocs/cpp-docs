@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0583"
+title: "Compiler Error CS0583 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,4 +40,4 @@ Internal Compiler Error. An internal error has occurred in the compiler. To work
   
  Please create a bug report file with the '/bugreport' option, and submit the report to your assigned problem reporting contact.  
   
- Use the [/bugreport](../Topic/-bugreport%20\(C%23%20Compiler%20Options\).md) compiler option to capture the problem.
+ Use the [/bugreport](/dotnet/csharp/language-reference/compiler-options/bugreport-compiler-option) compiler option to capture the problem.

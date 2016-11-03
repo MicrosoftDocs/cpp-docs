@@ -1,7 +1,7 @@
 ---
-title: "CNoWorkerThread Class"
+title: "CNoWorkerThread Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -61,7 +61,7 @@ class CNoWorkerThread
 |[CNoWorkerThread::GetThreadId](../Topic/CNoWorkerThread::GetThreadId.md)|Non-functional equivalent of [CWorkerThread::GetThreadId](../Topic/CWorkerThread::GetThreadId.md).|  
 |[CNoWorkerThread::Initialize](../Topic/CNoWorkerThread::Initialize.md)|Non-functional equivalent of [CWorkerThread::Initialize](../Topic/CWorkerThread::Initialize.md).|  
 |[CNoWorkerThread::RemoveHandle](../Topic/CNoWorkerThread::RemoveHandle.md)|Non-functional equivalent of [CWorkerThread::RemoveHandle](../Topic/CWorkerThread::RemoveHandle.md).|  
-|[CNoWorkerThread::Shutdown](../Topic/CNoWorkerThread::Shutdown.md)|Non-functional equivalent of [CWorkerThread::Shutdown](../Topic/CWorkerThread::Shutdown.md).|  
+|[CNoWorkerThread::Shutdown](/visual-studio/profiling/shutdown)|Non-functional equivalent of [CWorkerThread::Shutdown](/visual-studio/profiling/shutdown).|  
   
 ## Remarks  
  This class provides the same public interface as [CWorkerThread](../../atl/reference/cworkerthread-class.md). This interface is expected to be provided by the `MonitorClass` template parameter to cache classes.  
@@ -163,7 +163,7 @@ HRESULT RemoveHandle(HANDLE /* hObject
  The implementation provided by this class does nothing.  
   
 ##  <a name="cnoworkerthread__shutdown"></a>  CNoWorkerThread::Shutdown  
- Non-functional equivalent of [CWorkerThread::Shutdown](../Topic/CWorkerThread::Shutdown.md).  
+ Non-functional equivalent of [CWorkerThread::Shutdown](/visual-studio/profiling/shutdown).  
   
 ```
 HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();

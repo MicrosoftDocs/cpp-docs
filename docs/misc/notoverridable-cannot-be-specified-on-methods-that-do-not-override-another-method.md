@@ -1,5 +1,5 @@
 ---
-title: "&#39;NotOverridable&#39; cannot be specified on methods that do not override another method"
+title: "&#39;NotOverridable&#39; cannot be specified on methods that do not override another method | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,7 +45,7 @@ Properties and methods are `NotOverridable` by default. The `NotOverridable` mod
 -   Remove the `NotOverridable` modifier from properties and methods that do not override another member.  
   
 ## See Also  
- [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md)   
- [Overloads](../Topic/Overloads%20\(Visual%20Basic\).md)   
- [NotOverridable](../Topic/NotOverridable%20\(Visual%20Basic\).md)   
- [Overridable](../Topic/Overridable%20\(Visual%20Basic\).md)
+ [Overrides](/dotnet/visual-basic/language-reference/modifiers/overrides)   
+ [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads)   
+ [NotOverridable](/dotnet/visual-basic/language-reference/modifiers/notoverridable)   
+ [Overridable](/dotnet/visual-basic/language-reference/modifiers/overridable)

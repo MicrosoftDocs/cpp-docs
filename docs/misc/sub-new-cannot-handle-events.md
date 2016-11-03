@@ -1,5 +1,5 @@
 ---
-title: "&#39;Sub New&#39; cannot handle events"
+title: "&#39;Sub New&#39; cannot handle events | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ You attempted to combine `Sub New` with `Handles`, which is invalid. Use the `Ha
 1.  Do not use `New` in this context.  
   
 ## See Also  
- [Handles](../Topic/Handles%20Clause%20\(Visual%20Basic\).md)   
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)   
- [WithEvents](../Topic/WithEvents%20\(Visual%20Basic\).md)
+ [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause)   
+ [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
+ [WithEvents](/dotnet/visual-basic/language-reference/modifiers/withevents)

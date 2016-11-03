@@ -1,5 +1,5 @@
 ---
-title: "&#39;Exit For&#39; can only appear inside a &#39;For&#39; statement"
+title: "&#39;Exit For&#39; can only appear inside a &#39;For&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ An `Exit For` statement occurs outside a `For` loop. `Exit For` is valid only be
 2.  Verify that other control structures within the `For` loop are correctly terminated.  
   
 ## See Also  
- [For...Next Statement](../Topic/For...Next%20Statement%20\(Visual%20Basic\).md)   
- [For Each...Next Statement](../Topic/For%20Each...Next%20Statement%20\(Visual%20Basic\).md)
+ [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)   
+ [For Each...Next Statement](/dotnet/visual-basic/language-reference/statements/for-each-next-statement)

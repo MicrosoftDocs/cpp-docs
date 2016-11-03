@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.InvalidOperationException"
+title: "Troubleshooting Exceptions: System.InvalidOperationException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -54,7 +54,7 @@ An <xref:System.InvalidOperationException?displayProperty=fullName> is thrown wh
   
  [Related articles](#BKMK_Related_articles)  
   
- The code examples in this article show you how some common <xref:System.InvalidOperationException> exceptions can occur in your app. How you handle the issues depends on the specific situation. If the exception is fatal to the functionality of your app, you might want to use a [try … catch](../Topic/Exception%20Handling%20Statements%20\(C%23%20Reference\).md) ([Try .. Catch](../Topic/Try...Catch...Finally%20Statement%20\(Visual%20Basic\).md) in Visual Basic) construct to capture the exception and clean up the app's state before you exit. But other <xref:System.InvalidOperationException>s can be anticipated and avoided. The revised method examples show you some of these techniques.  
+ The code examples in this article show you how some common <xref:System.InvalidOperationException> exceptions can occur in your app. How you handle the issues depends on the specific situation. If the exception is fatal to the functionality of your app, you might want to use a [try … catch](/dotnet/csharp/language-reference/keywords/exception-handling-statements) ([Try .. Catch](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement) in Visual Basic) construct to capture the exception and clean up the app's state before you exit. But other <xref:System.InvalidOperationException>s can be anticipated and avoided. The revised method examples show you some of these techniques.  
   
 ##  <a name="BKMK_A_method_running_on_a_non_UI_thread_updates_the_UI"></a> A method running on a non-UI thread updates the UI  
  [Causing an InvalidOperationException with a UI update from a non-UI thread](#BKMK_Causing_an_InvalidOperationException_with_a_UI_update_from_a_non_UI_thread)  **&#124;**  [Avoiding InvalidOperationExceptions on non-UI threads](#BKMK_Avoiding_InvalidOperationExceptions_on_non_UI_threads)  
@@ -252,7 +252,7 @@ private void DoSomeWork(int msOfWork)
 ##  <a name="BKMK_A_statement_in_a_foreach_For_Each_in_Visual_Basic_block_changes_the_collection_it_is_iterating"></a> A statement in a foreach (For Each in Visual Basic) block changes the collection it is iterating  
  [Causing an InvalidOperationException with foreach](#BKMK_Causing_an_InvalidOperationException_with_foreach)  **&#124;**  [Avoiding InvalidOperationExceptions in loops](#BKMK_Avoiding_InvalidOperationExceptions_in_loops)  
   
- A [foreach](../Topic/foreach,%20in%20\(C%23%20Reference\).md) statement ([For Each](../Topic/For%20Each...Next%20Statement%20\(Visual%20Basic\).md) in Visual Basic) repeats a group of embedded statements for each element in an array or collection that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> or <xref:System.Collections.Generic.IEnumerable`1?displayProperty=fullName> interface. The `foreach` statement is used to iterate through the collection to read and modify the elements, but it can't be used to add or remove items from the collection. An <xref:System.InvalidOperationException> is thrown if you add or remove items from the source collection in a foreach statement.  
+ A [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) statement ([For Each](/dotnet/visual-basic/language-reference/statements/for-each-next-statement) in Visual Basic) repeats a group of embedded statements for each element in an array or collection that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> or <xref:System.Collections.Generic.IEnumerable`1?displayProperty=fullName> interface. The `foreach` statement is used to iterate through the collection to read and modify the elements, but it can't be used to add or remove items from the collection. An <xref:System.InvalidOperationException> is thrown if you add or remove items from the source collection in a foreach statement.  
   
 ###  <a name="BKMK_Causing_an_InvalidOperationException_with_foreach"></a> Causing an InvalidOperationException with foreach  
  In this example, an <xref:System.InvalidOperationException> is thrown when the `numList.Add(5);` statement attempts to modify list in the foreach block.  
@@ -270,7 +270,7 @@ private void DoSomeWork(int msOfWork)
 >  Adding or removing elements to a list while you are interating over the collection can have unintended and hard to predict side effects. If possible, you should move the operation outside of the iteration.  
   
 <CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
- If your situation requires you to add or remove elements to a list as you iterate a collection, use a [for](../Topic/for%20\(C%23%20Reference\).md) ([For](../Topic/For...Next%20Statement%20\(Visual%20Basic\).md) in Visual Basic) loop:  
+ If your situation requires you to add or remove elements to a list as you iterate a collection, use a [for](/dotnet/csharp/language-reference/keywords/for) ([For](/dotnet/visual-basic/language-reference/statements/for-next-statement) in Visual Basic) loop:  
   
 <CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
  ![Back to top](../misc/media/pcs_backtotop.png "PCS_BackToTop") [In this article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS_BackToTopMid") [A statement in a foreach (For Each in Visual Basic) block changes the collection it is iterating](#BKMK_A_statement_in_a_foreach_For_Each_in_Visual_Basic_block_changes_the_collection_it_is_iterating)  
@@ -430,7 +430,7 @@ private void FindAverageOfNumbersGreaterThan4()
  <xref:System.Linq.Enumerable.First*> returns the first item in a sequence or throws an <xref:System.InvalidOperationException> if the sequence is empty.  You can call the <xref:System.Linq.Enumerable.FirstOrDefault*> method instead of <xref:System.Linq.Enumerable.First*> to return a specified or default value instead of throwing the exception.  
   
 > [!NOTE]
->  In the .NET Framework, types have a concept of default values. For example, for any reference type the default value is null, and for an integer type it is zero. See [Default Values Table](../Topic/Default%20Values%20Table%20\(C%23%20Reference\).md)  
+>  In the .NET Framework, types have a concept of default values. For example, for any reference type the default value is null, and for an integer type it is zero. See [Default Values Table](/dotnet/csharp/language-reference/keywords/default-values-table)  
   
  **Causing an InvalidOperationException with First**  
   
@@ -495,7 +495,7 @@ private void FindANumbersGreaterThan4()
  You can use <xref:System.Linq.Enumerable.SingleOrDefault*> to return a specified or default value instead of throwing the exception when the sequence contains no elements. However, <xref:System.Linq.Enumerable.SingleOrDefault*> still throws an <xref:System.InvalidOperationException> when the sequence contains more than one element that matches the selection predicate.  
   
 > [!NOTE]
->  In the .NET Framework, types have a concept of default values. For example, for any reference type the default value is null, and for an integer type it is zero. See [Default Values Table](../Topic/Default%20Values%20Table%20\(C%23%20Reference\).md)  
+>  In the .NET Framework, types have a concept of default values. For example, for any reference type the default value is null, and for an integer type it is zero. See [Default Values Table](/dotnet/csharp/language-reference/keywords/default-values-table)  
   
  **Causing InvalidOperationExceptions with Single**  
   

@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;typename&gt;&#39; has the same name as another type exposed in a &#39;My&#39; group"
+title: "&#39;&lt;typename&gt;&#39; has the same name as another type exposed in a &#39;My&#39; group | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -60,4 +60,4 @@ translation.priority.mt:
  <xref:System.Windows.Forms.Form>   
  <xref:Microsoft.VisualBasic.MyGroupCollectionAttribute>   
  [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)   
- [My.Forms Object](../Topic/My.Forms%20Object.md)
+ [My.Forms Object](/dotnet/visual-basic/language-reference/objects/my-forms-object)

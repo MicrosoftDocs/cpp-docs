@@ -1,5 +1,5 @@
 ---
-title: "Name &#39;&lt;name&gt;&#39; is either not declared or not in the current scope"
+title: "Name &#39;&lt;name&gt;&#39; is either not declared or not in the current scope | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -44,11 +44,11 @@ A LINQ query refers to a programming element, but the compiler cannot find an el
   
 1.  Check the spelling of the name in the referring statement. [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] is case-insensitive, but any other variation in the spelling constitutes a different name. Note that the underscore (`_`) is part of the name and therefore part of the spelling.  
   
-2.  Verify that the programming element is in scope. If the referring statement is outside the region declaring the programming element, you might have to qualify the element name. For more information, see [Scope in Visual Basic](../Topic/Scope%20in%20Visual%20Basic.md).  
+2.  Verify that the programming element is in scope. If the referring statement is outside the region declaring the programming element, you might have to qualify the element name. For more information, see [Scope in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/scope).  
   
 3.  Ensure that you have the member access operator (`.`) between an object and its member. For example, if you have a <xref:System.Windows.Forms.TextBox> control named `TextBox1`, to access its <xref:System.Windows.Forms.TextBoxBase.Text*> property you should type `TextBox1.Text`. If instead you type `TextBox1Text`, you have created a different name.  
   
 ## See Also  
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [Visual Basic Naming Conventions](../Topic/Visual%20Basic%20Naming%20Conventions.md)   
- [References to Declared Elements](../Topic/References%20to%20Declared%20Elements%20\(Visual%20Basic\).md)
+ [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [Visual Basic Naming Conventions](/dotnet/visual-basic/programming-guide/program-structure/naming-conventions)   
+ [References to Declared Elements](/dotnet/visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements)

@@ -1,7 +1,7 @@
 ---
-title: "Building C-C++ Programs"
+title: "Building C-C++ Programs | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/02/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,7 +41,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Building C/C++ Programs
-You can build Visual C++ projects either in Visual Studio or on the command line. The Visual Studio IDE uses [MSBuild](../build/msbuild-visual-cpp.md) to build projects and solutions. On the command line, you can use the C/C++ compiler (cl.exe) and linker (link.exe) to build simple projects. To build more complex projects on the command line, you can use MSBuild or [NMAKE](../build/nmake-reference.md). For an overview about how to use [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] to build projects and solutions, see [Compiling and Building](../Topic/Compiling%20and%20Building%20in%20Visual%20Studio.md).  
+You can build Visual C++ projects either in Visual Studio or on the command line. The Visual Studio IDE uses [MSBuild](../build/msbuild-visual-cpp.md) to build projects and solutions. On the command line, you can use the C/C++ compiler (cl.exe) and linker (link.exe) to build simple projects. To build more complex projects on the command line, you can use MSBuild or [NMAKE](../build/nmake-reference.md). For an overview about how to use [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] to build projects and solutions, see [Compiling and Building](/visual-studio/ide/compiling-and-building-in-visual-studio).  
   
 ## In This Section  
  [Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md)  
@@ -69,5 +69,5 @@ You can build Visual C++ projects either in Visual Studio or on the command line
  [NIB: Samples Included in Visual C++](http://msdn.microsoft.com/en-us/c9ec56b3-2bbd-49b4-8a4c-9ed4b78b7a84)  
  Provides links to sample code that shows the capabilities of Visual C++ and the libraries and technologies it supports.  
   
- [Compiling and Building](../Topic/Compiling%20and%20Building%20in%20Visual%20Studio.md)  
+ [Compiling and Building](/visual-studio/ide/compiling-and-building-in-visual-studio)  
  Describes the Visual Studio build system and tools.

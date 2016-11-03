@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1014"
+title: "Compiler Error CS1014 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,7 +40,7 @@ A get or set accessor expected
   
  A method declaration was found in a property declaration. You can only declare `get` and `set` methods in a property.  
   
- For more information on properties, see [Using Properties](../Topic/Using%20Properties%20\(C%23%20Programming%20Guide\).md).  
+ For more information on properties, see [Using Properties](/dotnet/csharp/programming-guide/classes-and-structs/using-properties).  
   
 ## Example  
  The following sample generates CS1014.  

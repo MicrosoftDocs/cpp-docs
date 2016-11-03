@@ -1,5 +1,5 @@
 ---
-title: "&#39;Compare&#39; expected"
+title: "&#39;Compare&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ An `Option` statement specifies `Text` or `Binary`, but not `Compare`.
 -   Add the `Compare` keyword to the `Option` statement; for example, `Option Compare Binary`.  
   
 ## See Also  
- [Option Compare Statement](../Topic/Option%20Compare%20Statement.md)
+ [Option Compare Statement](/dotnet/visual-basic/language-reference/statements/option-compare-statement)

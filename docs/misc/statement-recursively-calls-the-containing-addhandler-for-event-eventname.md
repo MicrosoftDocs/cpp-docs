@@ -1,5 +1,5 @@
 ---
-title: "Statement recursively calls the containing &#39;AddHandler&#39; for event &#39;&lt;eventname&gt;&#39;"
+title: "Statement recursively calls the containing &#39;AddHandler&#39; for event &#39;&lt;eventname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -48,6 +48,6 @@ The statements in the `AddHandler` accessor of an event definition must not refe
   
 ## See Also  
  [AddHandler - delete](http://msdn.microsoft.com/en-us/fc464cf8-582c-48a6-a9c2-185c4c3d5ff8)   
- [Event Statement](../Topic/Event%20Statement.md)   
+ [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)   
  [How to: Declare Custom Events To Avoid Blocking](../Topic/How%20to:%20Declare%20Custom%20Events%20To%20Avoid%20Blocking%20\(Visual%20Basic\).md)   
  [How to: Declare Custom Events To Conserve Memory](../Topic/How%20to:%20Declare%20Custom%20Events%20To%20Conserve%20Memory%20\(Visual%20Basic\).md)

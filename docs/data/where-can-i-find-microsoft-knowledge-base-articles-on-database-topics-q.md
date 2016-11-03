@@ -1,7 +1,7 @@
 ---
-title: "Where Can I Find Microsoft Knowledge Base Articles on Database Topics?"
+title: "Where Can I Find Microsoft Knowledge Base Articles on Database Topics? | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/01/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

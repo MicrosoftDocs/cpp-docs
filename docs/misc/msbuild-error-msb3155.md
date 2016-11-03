@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB3155"
+title: "MSBuild Error MSB3155 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -46,7 +46,7 @@ translation.priority.ht:
 -   Remove the package from the list of packages to install, or add the package to the cache. Also, make sure that the manifest is formatted correctly with valid XML tags.  
   
 ## See Also  
- [Product and Package Schema Reference](../Topic/Product%20and%20Package%20Schema%20Reference.md)   
+ [Product and Package Schema Reference](/visual-studio/deployment/product-and-package-schema-reference)   
  [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)   
- [Prerequisites Dialog Box](../Topic/Prerequisites%20Dialog%20Box.md)   
- [Creating Bootstrapper Packages](../Topic/Creating%20Bootstrapper%20Packages.md)
+ [Prerequisites Dialog Box](/visual-studio/ide/reference/prerequisites-dialog-box)   
+ [Creating Bootstrapper Packages](/visual-studio/deployment/creating-bootstrapper-packages)

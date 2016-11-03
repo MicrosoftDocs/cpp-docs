@@ -1,5 +1,5 @@
 ---
-title: "Expected one of &#39;Dim&#39;, &#39;Const&#39;, &#39;Public&#39;, &#39;Private&#39;, &#39;Protected&#39;, &#39;Friend&#39;, &#39;Shadows&#39;, &#39;ReadOnly&#39; or &#39;Shared&#39;"
+title: "Expected one of &#39;Dim&#39;, &#39;Const&#39;, &#39;Public&#39;, &#39;Private&#39;, &#39;Protected&#39;, &#39;Friend&#39;, &#39;Shadows&#39;, &#39;ReadOnly&#39; or &#39;Shared&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ A declaration statement is missing a declaration keyword. One possible cause is 
 2.  Start the statement with the appropriate declaration keyword.  
   
 ## See Also  
- [Declared Elements](../Topic/Declared%20Elements%20in%20Visual%20Basic.md)   
+ [Declared Elements](/dotnet/visual-basic/programming-guide/language-features/declared-elements/index)   
  [Arrays cannot be declared with 'New'](../misc/arrays-cannot-be-declared-with-new.md)

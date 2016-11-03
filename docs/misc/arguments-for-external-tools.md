@@ -1,7 +1,7 @@
 ---
-title: "Arguments for External Tools"
+title: "Arguments for External Tools | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -36,4 +36,4 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # Arguments for External Tools
-This content has moved to [Managing External Tools](../Topic/Managing%20External%20Tools.md).
+This content has moved to [Managing External Tools](/visual-studio/ide/managing-external-tools).

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0035"
+title: "Compiler Error CS0035 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "10/29/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0035
 Operator 'operator' is ambiguous on an operand of type 'type'  
   
- The compiler has more than one available conversion and does not know which to choose before applying the operator. For more information, see [Templated User Defined Conversions](../misc/templated-user-defined-conversions.md) and [Conversion Operators](../Topic/Conversion%20Operators%20\(C%23%20Programming%20Guide\).md).  
+ The compiler has more than one available conversion and does not know which to choose before applying the operator. For more information, see [Templated User Defined Conversions](../misc/templated-user-defined-conversions.md) and [Conversion Operators](/dotnet/csharp/programming-guide/statements-expressions-operators/conversion-operators).  
   
  The following sample generates CS0035:  
   
