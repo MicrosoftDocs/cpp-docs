@@ -1,0 +1,15 @@
+    <StackPanel HorizontalAlignment="Left" Width="440"
+                Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <TextBox x:Name="InputTextBox" TextWrapping="Wrap" 
+                 Text="http://www.fourthcoffee.com/"/>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="GetButton" Content="Get" Background="Green" 
+                Click="GetButton_Click"/>
+            <Button x:Name="PostButton" Content="Post" Background="Blue" 
+                Click="PostButton_Click"/>
+            <Button x:Name="CancelButton" Content="Cancel" Background="Red"
+                IsEnabled="False" Click="CancelButton_Click"/>
+            <ProgressRing x:Name="ResponseProgressRing" />
+        </StackPanel>
+        <TextBlock x:Name="ResponseTextBlock" TextWrapping="Wrap"/>
+    </StackPanel>

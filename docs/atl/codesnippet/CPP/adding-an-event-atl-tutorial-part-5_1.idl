@@ -1,0 +1,7 @@
+   dispinterface _IPolyCtlEvents
+   {
+      properties:
+      methods:
+         [id(1), helpstring("method ClickIn")] void ClickIn([in] LONG x, [in] LONG y);
+         [id(2), helpstring("method ClickOut")] void ClickOut([in] LONG x, [in] LONG y);
+   };

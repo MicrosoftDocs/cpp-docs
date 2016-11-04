@@ -1,0 +1,2 @@
+    [uuid(3FBED04F-EFA7-4D92-B04D-59BD8B1B055E), version(COMPONENT_VERSION)]
+    delegate HRESULT PrimeNumberEvent(int primeNumber);

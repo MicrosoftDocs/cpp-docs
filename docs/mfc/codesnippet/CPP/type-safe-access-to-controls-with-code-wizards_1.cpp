@@ -1,0 +1,1 @@
+   m_Checkbox.SetCheck(BST_CHECKED);

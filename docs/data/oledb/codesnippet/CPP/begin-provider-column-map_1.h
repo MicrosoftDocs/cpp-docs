@@ -1,0 +1,7 @@
+BEGIN_PROVIDER_COLUMN_MAP(CMyProviderWindowsFile)
+	PROVIDER_COLUMN_ENTRY("FileAttributes", 1, dwFileAttributes)
+	PROVIDER_COLUMN_ENTRY("FileSizeHigh", 2, nFileSizeHigh)
+	PROVIDER_COLUMN_ENTRY("FileSizeLow", 3, nFileSizeLow)
+	PROVIDER_COLUMN_ENTRY_STR("FileName", 4, cFileName)
+	PROVIDER_COLUMN_ENTRY_STR("AltFileName", 5, cAlternateFileName)
+END_PROVIDER_COLUMN_MAP()
