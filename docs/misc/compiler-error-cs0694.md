@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error CS0694 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0694"
 ms.assetid: 048615e4-4599-4726-b5db-55322ccc936f
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 1) CS3016 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS3016"
 ms.assetid: b2ae721d-13ab-4e9d-a288-741d7825defe
 caps.latest.revision: 9
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

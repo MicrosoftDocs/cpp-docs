@@ -1,7 +1,7 @@
 ---
 title: "-c (Compile Without Linking) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -59,7 +59,7 @@ Prevents the automatic call to LINK.
   
 ### To set this compiler option programmatically  
   
--   To set this compiler option programmatically, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.CompileOnly*>.  
+-   To set this compiler option programmatically, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.CompileOnly%2A>.  
   
 ## Example  
  The following command line creates the object files FIRST.obj and SECOND.obj. THIRD.obj is ignored.  

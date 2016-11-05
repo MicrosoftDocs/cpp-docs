@@ -1,7 +1,7 @@
 ---
 title: "Server Registration Global Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -12,7 +12,7 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: c2f0a35d-857c-4538-a44d-c4ea0db63b06
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -39,11 +39,11 @@ These functions provide support for registering and unregistering server objects
   
 |||  
 |-|-|  
-|[AtlComModuleRegisterServer](../Topic/AtlComModuleRegisterServer.md)|This function is called to register every object in the object map.|  
-|[AtlComModuleUnregisterServer](../Topic/AtlComModuleUnregisterServer.md)|This function is called to unregister every object in the object map.|  
-|[AtlComModuleRegisterClassObjects](../Topic/AtlComModuleRegisterClassObjects.md)|This function is called to register class objects.|  
-|[AtlComModuleRevokeClassObjects](../Topic/AtlComModuleRevokeClassObjects.md)|This function is called to revoke class objects from a COM module.|  
-|[AtlComModuleGetClassObject](../Topic/AtlComModuleGetClassObject.md)|This function is called to get the class object.|  
+|[AtlComModuleRegisterServer](#atlcommoduleregisterserver)|This function is called to register every object in the object map.|  
+|[AtlComModuleUnregisterServer](#atlcommoduleunregisterserver)|This function is called to unregister every object in the object map.|  
+|[AtlComModuleRegisterClassObjects](#atlcommoduleregisterclassobjects)|This function is called to register class objects.|  
+|[AtlComModuleRevokeClassObjects](#atlcommodulerevokeclassobjects)|This function is called to revoke class objects from a COM module.|  
+|[AtlComModuleGetClassObject](#atlcommodulegetclassobject)|This function is called to get the class object.|  
   
 ##  <a name="atlcommoduleregisterserver"></a>  AtlComModuleRegisterServer  
  This function is called to register every object in the object map.  
@@ -191,8 +191,3 @@ ATLINLINE ATLAPI AtlComModuleGetClassObject(
   
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)
-
-
-
-
-

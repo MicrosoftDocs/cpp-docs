@@ -1,7 +1,7 @@
 ---
 title: "ICollectionOnSTLImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "ICollectionOnSTLImpl class"
 ms.assetid: 683c88b0-0d97-4779-a762-e493334ba7f9
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -75,10 +75,10 @@ template <class T, class CollType, class ItemType, class CopyItem, class EnumTyp
   
 |Name|Description|  
 |----------|-----------------|  
-|[ICollectionOnSTLImpl::m_coll](../Topic/ICollectionOnSTLImpl::m_coll.md)|The collection.|  
+|[ICollectionOnSTLImpl::m_coll](#icollectiononstlimpl__m_coll)|The collection.|  
   
 ## Remarks  
- This class provides the implementation for three methods of a collection interface: [getcount](#icollectiononstlimpl__get_count), [get_Item](../Topic/ICollectionOnSTLImpl::get_Item.md), and [get__NewEnum](../Topic/ICollectionOnSTLImpl::get__NewEnum.md).  
+ This class provides the implementation for three methods of a collection interface: [getcount](#icollectiononstlimpl__get_count), [get_Item](#icollectiononstlimpl__get_item), and [get__NewEnum](#icollectiononstlimpl__get__newenum).  
   
  To use this class:  
   
@@ -91,7 +91,7 @@ template <class T, class CollType, class ItemType, class CopyItem, class EnumTyp
 > [!NOTE]
 >  If the collection interface is a dual interface, derive your class from [IDispatchImpl](../../atl/reference/idispatchimpl-class.md), passing the `ICollectionOnSTLImpl` specialization as the first template parameter if you want ATL to provide the implementation of the `IDispatch` methods.  
   
--   Add items to the [m_coll](../Topic/ICollectionOnSTLImpl::m_coll.md) member to populate the collection.  
+-   Add items to the [m_coll](#icollectiononstlimpl__m_coll) member to populate the collection.  
   
  For more information and examples, see [ATL Collections and Enumerators](../../atl/atl-collections-and-enumerators.md).  
   
@@ -136,7 +136,7 @@ STDMETHOD(get_Item)(long Index,
  A standard `HRESULT` value.  
   
 ### Remarks  
- The item is obtained by copying the data at the specified position in [m_coll](../Topic/ICollectionOnSTLImpl::m_coll.md) using the copy method of the [copy policy class](../../atl/atl-copy-policy-classes.md) passed as a template argument in the `ICollectionOnSTLImpl` specialization.  
+ The item is obtained by copying the data at the specified position in [m_coll](#icollectiononstlimpl__m_coll) using the copy method of the [copy policy class](../../atl/atl-copy-policy-classes.md) passed as a template argument in the `ICollectionOnSTLImpl` specialization.  
   
 ##  <a name="icollectiononstlimpl__get__newenum"></a>  ICollectionOnSTLImpl::get__NewEnum  
  Returns an enumerator object for the collection.  
@@ -165,9 +165,3 @@ CollType m_coll;
 ## See Also  
  [ATLCollections Sample](../../top/visual-cpp-samples.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-

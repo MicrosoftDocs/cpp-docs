@@ -1,7 +1,7 @@
 ---
 title: "CComAutoCriticalSection Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComAutoCriticalSection class"
 ms.assetid: 491a9d90-3398-4f90-88f5-fd2172a46b30
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -52,8 +52,8 @@ class CComAutoCriticalSection : public CComCriticalSection
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComAutoCriticalSection::CComAutoCriticalSection](../Topic/CComAutoCriticalSection::CComAutoCriticalSection.md)|The constructor.|  
-|[CComAutoCriticalSection::~CComAutoCriticalSection](../Topic/CComAutoCriticalSection::~CComAutoCriticalSection.md)|The destructor.|  
+|[CComAutoCriticalSection::CComAutoCriticalSection](#ccomautocriticalsection__ccomautocriticalsection)|The constructor.|  
+|[CComAutoCriticalSection::~CComAutoCriticalSection](#ccomautocriticalsection___dtorccomautocriticalsection)|The destructor.|  
   
 ## Remarks  
  `CComAutoCriticalSection` is similar to class [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md), except `CComAutoCriticalSection` automatically initializes the critical section object in the constructor.  
@@ -94,10 +94,3 @@ CComAutoCriticalSection();
  [CComFakeCriticalSection Class](../../atl/reference/ccomfakecriticalsection-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md)
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 1) CS3027 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS3027"
 ms.assetid: c515e623-3f5a-49fa-a878-f1d8e90fdc24
 caps.latest.revision: 3
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

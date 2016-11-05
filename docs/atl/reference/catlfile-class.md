@@ -1,7 +1,7 @@
 ---
 title: "CAtlFile Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAtlFile class"
 ms.assetid: 93ed160b-af2a-448c-9cbe-e5fa46c199bb
-caps.latest.revision: 22
+caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -56,29 +56,29 @@ class CAtlFile :
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlFile::CAtlFile](../Topic/CAtlFile::CAtlFile.md)|The constructor.|  
+|[CAtlFile::CAtlFile](#catlfile__catlfile)|The constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlFile::Create](../Topic/CAtlFile::Create.md)|Call this method to create or open a file.|  
-|[CAtlFile::Flush](../Topic/CAtlFile::Flush.md)|Call this method to clear the buffers for the file and cause all buffered data to be written to the file.|  
-|[CAtlFile::GetOverlappedResult](../Topic/CAtlFile::GetOverlappedResult.md)|Call this method to get the results of an overlapped operation on the file.|  
-|[CAtlFile::GetPosition](../Topic/CAtlFile::GetPosition.md)|Call this method to get the current file pointer position from the file.|  
-|[CAtlFile::GetSize](../Topic/CAtlFile::GetSize.md)|Call this method to get the size in bytes of the file.|  
-|[CAtlFile::LockRange](../Topic/CAtlFile::LockRange.md)|Call this method to lock a region in the file to prevent other processes from accessing it.|  
-|[CAtlFile::Read](../Topic/CAtlFile::Read.md)|Call this method to read data from a file starting at the position indicated by the file pointer.|  
-|[CAtlFile::Seek](../Topic/CAtlFile::Seek.md)|Call this method to move the file pointer of the file.|  
-|[CAtlFile::SetSize](../Topic/CAtlFile::SetSize.md)|Call this method to set the size of the file.|  
-|[CAtlFile::UnlockRange](../Topic/CAtlFile::UnlockRange.md)|Call this method to unlock a region of the file.|  
-|[CAtlFile::Write](../Topic/CAtlFile::Write.md)|Call this method to write data to the file starting at the position indicated by the file pointer.|  
+|[CAtlFile::Create](#catlfile__create)|Call this method to create or open a file.|  
+|[CAtlFile::Flush](#catlfile__flush)|Call this method to clear the buffers for the file and cause all buffered data to be written to the file.|  
+|[CAtlFile::GetOverlappedResult](#catlfile__getoverlappedresult)|Call this method to get the results of an overlapped operation on the file.|  
+|[CAtlFile::GetPosition](#catlfile__getposition)|Call this method to get the current file pointer position from the file.|  
+|[CAtlFile::GetSize](#catlfile__getsize)|Call this method to get the size in bytes of the file.|  
+|[CAtlFile::LockRange](#catlfile__lockrange)|Call this method to lock a region in the file to prevent other processes from accessing it.|  
+|[CAtlFile::Read](#catlfile__read)|Call this method to read data from a file starting at the position indicated by the file pointer.|  
+|[CAtlFile::Seek](#catlfile__seek)|Call this method to move the file pointer of the file.|  
+|[CAtlFile::SetSize](#catlfile__setsize)|Call this method to set the size of the file.|  
+|[CAtlFile::UnlockRange](#catlfile__unlockrange)|Call this method to unlock a region of the file.|  
+|[CAtlFile::Write](#catlfile__write)|Call this method to write data to the file starting at the position indicated by the file pointer.|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlFile::m_pTM](../Topic/CAtlFile::m_pTM.md)|Pointer to `CAtlTransactionManager` object|  
+|[CAtlFile::m_pTM](#catlfile__m_ptm)|Pointer to `CAtlTransactionManager` object|  
   
 ## Remarks  
  Use this class when file-handling needs are relatively simple, but more abstraction than the Windows API provides is required, without including MFC dependencies.  
@@ -249,7 +249,7 @@ HRESULT LockRange(
  Returns `S_OK` on success, or an error `HRESULT` on failure.  
   
 ### Remarks  
- Calls [LockFile](http://msdn.microsoft.com/library/windows/desktop/aa365202) to lock a region in the file. Locking bytes in a file prevents access to those bytes by other processes. You can lock more than one region of a file, but no overlapping regions are allowed. When you unlock a region, using [CAtlFile::UnlockRange](../Topic/CAtlFile::UnlockRange.md), the byte range must correspond exactly to the region that was previously locked. `LockRange` does not merge adjacent regions; if two locked regions are adjacent, you must unlock each separately.  
+ Calls [LockFile](http://msdn.microsoft.com/library/windows/desktop/aa365202) to lock a region in the file. Locking bytes in a file prevents access to those bytes by other processes. You can lock more than one region of a file, but no overlapping regions are allowed. When you unlock a region, using [CAtlFile::UnlockRange](#catlfile__unlockrange), the byte range must correspond exactly to the region that was previously locked. `LockRange` does not merge adjacent regions; if two locked regions are adjacent, you must unlock each separately.  
   
 ##  <a name="catlfile__m_ptm"></a>  CAtlFile::m_pTM  
  Pointer to a `CAtlTransactionManager` object.  
@@ -302,7 +302,7 @@ HRESULT Read(
  Returns `S_OK` on success, or an error `HRESULT` on failure.  
   
 ### Remarks  
- The first three forms call [ReadFile](http://msdn.microsoft.com/library/windows/desktop/aa365467), the last [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) to read data from the file. Use [CAtlFile::Seek](../Topic/CAtlFile::Seek.md) to move the file pointer.  
+ The first three forms call [ReadFile](http://msdn.microsoft.com/library/windows/desktop/aa365467), the last [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) to read data from the file. Use [CAtlFile::Seek](#catlfile__seek) to move the file pointer.  
   
 ##  <a name="catlfile__seek"></a>  CAtlFile::Seek  
  Call this method to move the file pointer of the file.  
@@ -404,16 +404,9 @@ HRESULT Write(
  Returns `S_OK` on success, or an error `HRESULT` on failure.  
   
 ### Remarks  
- The first three forms call [WriteFile](http://msdn.microsoft.com/library/windows/desktop/aa365747), the last calls [WriteFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365748) to write data to the file. Use [CAtlFile::Seek](../Topic/CAtlFile::Seek.md) to move the file pointer.  
+ The first three forms call [WriteFile](http://msdn.microsoft.com/library/windows/desktop/aa365747), the last calls [WriteFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365748) to write data to the file. Use [CAtlFile::Seek](#catlfile__seek) to move the file pointer.  
   
 ## See Also  
  [Marquee Sample](../../top/visual-cpp-samples.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [CHandle Class](../../atl/reference/chandle-class.md)
-
-
-
-
-
-
-

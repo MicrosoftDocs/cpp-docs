@@ -1,7 +1,7 @@
 ---
 title: "CDefaultElementTraits Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CDefaultElementTraits class"
 ms.assetid: ac5ee610-7957-4b7c-92b6-38ff72e4118e
-caps.latest.revision: 16
+caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -64,10 +64,3 @@ template<typename T>  class CDefaultElementTraits : public CElementTraitsBase<T>
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

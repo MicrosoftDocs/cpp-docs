@@ -1,7 +1,7 @@
 ---
 title: "CComEnum Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComEnum class"
 ms.assetid: bff7dd7b-eb6e-4d6e-96ed-2706e66c8b3b
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -76,7 +76,7 @@ template <class Base,
   
 -   Create an instance of the `CComObject` specialization.  
   
--   Initialize the enumerator object by calling [CComEnumImpl::Init](/visual-studio/debugger/init).  
+-   Initialize the enumerator object by calling [CComEnumImpl::Init](../../atl/reference/ccomenumimpl-class.md#ccomenumimpl__init).  
   
 -   Return the enumerator interface to the client.  
   
@@ -110,10 +110,3 @@ template <class Base,
  [CComObjectThreadModel](../Topic/CComObjectThreadModel.md)   
  [CComEnumImpl Class](../../atl/reference/ccomenumimpl-class.md)   
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)
-
-
-
-
-
-
-

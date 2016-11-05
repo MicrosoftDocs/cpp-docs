@@ -1,7 +1,7 @@
 ---
 title: "MSBuild Error MSB4132 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -42,5 +42,5 @@ translation.priority.mt:
 -   Specify a valid value for `ToolsVersion` in the project tag, or on the command line when you use the MSBuild **/ToolsVersion** switch.  
   
 ## See Also  
- <xref:Microsoft.Build.Tasks.MSBuild.ToolsVersion*>   
+ <xref:Microsoft.Build.Tasks.MSBuild.ToolsVersion%2A>   
  [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)

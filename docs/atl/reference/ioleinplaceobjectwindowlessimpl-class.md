@@ -1,7 +1,7 @@
 ---
 title: "IOleInPlaceObjectWindowlessImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -21,7 +21,7 @@ helpviewer_keywords:
   - "controls [ATL], windowless"
   - "deactivating ATL"
 ms.assetid: a2e0feb4-bc59-4adf-aab2-105457bbdbb4
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -63,14 +63,14 @@ class IOleInPlaceObjectWindowlessImpl
   
 |Name|Description|  
 |----------|-----------------|  
-|[IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp](../Topic/IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp.md)|Enables context-sensitive help. The ATL implementation returns **E_NOTIMPL**.|  
-|[IOleInPlaceObjectWindowlessImpl::GetDropTarget](../Topic/IOleInPlaceObjectWindowlessImpl::GetDropTarget.md)|Supplies the `IDropTarget` interface for an in-place active, windowless object that supports drag and drop. The ATL implementation returns **E_NOTIMPL**.|  
-|[IOleInPlaceObjectWindowlessImpl::GetWindow](../Topic/IOleInPlaceObjectWindowlessImpl::GetWindow.md)|Gets a window handle.|  
-|[IOleInPlaceObjectWindowlessImpl::InPlaceDeactivate](../Topic/IOleInPlaceObjectWindowlessImpl::InPlaceDeactivate.md)|Deactivates an active in-place control.|  
-|[IOleInPlaceObjectWindowlessImpl::OnWindowMessage](../Topic/IOleInPlaceObjectWindowlessImpl::OnWindowMessage.md)|Dispatches a message from the container to a windowless control that is in-place active.|  
-|[IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo](../Topic/IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo.md)|Reactivates a previously deactivated control. The ATL implementation returns **E_NOTIMPL**.|  
-|[IOleInPlaceObjectWindowlessImpl::SetObjectRects](../Topic/IOleInPlaceObjectWindowlessImpl::SetObjectRects.md)|Indicates what part of the in-place control is visible.|  
-|[IOleInPlaceObjectWindowlessImpl::UIDeactivate](../Topic/IOleInPlaceObjectWindowlessImpl::UIDeactivate.md)|Deactivates and removes the user interface that supports in-place activation.|  
+|[IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp](#ioleinplaceobjectwindowlessimpl__contextsensitivehelp)|Enables context-sensitive help. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleInPlaceObjectWindowlessImpl::GetDropTarget](#ioleinplaceobjectwindowlessimpl__getdroptarget)|Supplies the `IDropTarget` interface for an in-place active, windowless object that supports drag and drop. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleInPlaceObjectWindowlessImpl::GetWindow](#ioleinplaceobjectwindowlessimpl__getwindow)|Gets a window handle.|  
+|[IOleInPlaceObjectWindowlessImpl::InPlaceDeactivate](#ioleinplaceobjectwindowlessimpl__inplacedeactivate)|Deactivates an active in-place control.|  
+|[IOleInPlaceObjectWindowlessImpl::OnWindowMessage](#ioleinplaceobjectwindowlessimpl__onwindowmessage)|Dispatches a message from the container to a windowless control that is in-place active.|  
+|[IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo](#ioleinplaceobjectwindowlessimpl__reactivateandundo)|Reactivates a previously deactivated control. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleInPlaceObjectWindowlessImpl::SetObjectRects](#ioleinplaceobjectwindowlessimpl__setobjectrects)|Indicates what part of the in-place control is visible.|  
+|[IOleInPlaceObjectWindowlessImpl::UIDeactivate](#ioleinplaceobjectwindowlessimpl__uideactivate)|Deactivates and removes the user interface that supports in-place activation.|  
   
 ## Remarks  
  The [IOleInPlaceObject](http://msdn.microsoft.com/library/windows/desktop/ms692646) interface manages the reactivation and deactivation of in-place controls and determines how much of the control should be visible. The [IOleInPlaceObjectWindowless](http://msdn.microsoft.com/library/windows/desktop/ms687304) interface enables a windowless control to receive window messages and to participate in drag-and-drop operations. Class `IOleInPlaceObjectWindowlessImpl` provides a default implementation of `IOleInPlaceObject` and `IOleInPlaceObjectWindowless` and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -182,10 +182,3 @@ HRESULT UIDeactivate();
 ## See Also  
  [CComControl Class](../../atl/reference/ccomcontrol-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

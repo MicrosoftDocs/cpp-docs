@@ -1,7 +1,7 @@
 ---
 title: "Security Global Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "ACL object global functions"
   - "security IDs [C++]"
 ms.assetid: 6a584bfe-16b7-47f4-8439-9c789c41567a
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -43,15 +43,15 @@ These functions provide support for modifying SID and ACL objects.
   
 |||  
 |-|-|  
-|[AtlGetDacl](../Topic/AtlGetDacl.md)|Call this function to retrieve the discretionary access-control list (DACL) information of a specified object.|  
-|[AtlSetDacl](../Topic/AtlSetDacl.md)|Call this function to set the discretionary access-control list (DACL) information of a specified object.|  
-|[AtlGetGroupSid](../Topic/AtlGetGroupSid.md)|Call this function to retrieve the group security identifier (SID) of an object.|  
-|[AtlSetGroupSid](../Topic/AtlSetGroupSid.md)|Call this function to set the group security identifier (SID) of an object.|  
-|[AtlGetOwnerSid](../Topic/AtlGetOwnerSid.md)|Call this function to retrieve the owner security identifier (SID) of an object.|  
-|[AtlSetOwnerSid](../Topic/AtlSetOwnerSid.md)|Call this function to set the owner security identifier (SID) of an object.|  
-|[AtlGetSacl](../Topic/AtlGetSacl.md)|Call this function to retrieve the system access-control list (SACL) information of a specified object.|  
-|[AtlSetSacl](../Topic/AtlSetSacl.md)|Call this function to set the system access-control list (SACL) information of a specified object.|  
-|[AtlGetSecurityDescriptor](../Topic/AtlGetSecurityDescriptor.md)|Call this function to retrieve the security descriptor of a given object.|  
+|[AtlGetDacl](#atlgetdacl)|Call this function to retrieve the discretionary access-control list (DACL) information of a specified object.|  
+|[AtlSetDacl](#atlsetdacl)|Call this function to set the discretionary access-control list (DACL) information of a specified object.|  
+|[AtlGetGroupSid](#atlgetgroupsid)|Call this function to retrieve the group security identifier (SID) of an object.|  
+|[AtlSetGroupSid](#atlsetgroupsid)|Call this function to set the group security identifier (SID) of an object.|  
+|[AtlGetOwnerSid](#atlgetownersid)|Call this function to retrieve the owner security identifier (SID) of an object.|  
+|[AtlSetOwnerSid](#atlsetownersid)|Call this function to set the owner security identifier (SID) of an object.|  
+|[AtlGetSacl](#atlgetsacl)|Call this function to retrieve the system access-control list (SACL) information of a specified object.|  
+|[AtlSetSacl](#atlsetsacl)|Call this function to set the system access-control list (SACL) information of a specified object.|  
+|[AtlGetSecurityDescriptor](#atlgetsecuritydescriptor)|Call this function to retrieve the security descriptor of a given object.|  
   
 ##  <a name="atlgetdacl"></a>  AtlGetDacl  
  Call this function to retrieve the discretionary access-control list (DACL) information of a specified object.  
@@ -332,8 +332,3 @@ inline bool AtlGetSecurityDescriptor(
   
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)
-
-
-
-
-

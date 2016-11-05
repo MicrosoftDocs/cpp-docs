@@ -1,7 +1,7 @@
 ---
 title: "How to: Expose an STL-CLR Container from an Assembly | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -37,7 +37,7 @@ translation.priority.ht:
 # How to: Expose an STL/CLR Container from an Assembly
 STL/CLR containers such as `list` and `map` are implemented as template ref classes. Because C++ templates are instantiated at compile time, two template classes that have exactly the same signature but are in different assemblies are actually different types. This means that template classes cannot be used across assembly boundaries.  
   
- To make cross-assembly sharing possible, STL/CLR containers implement the generic interface <xref:System.Collections.Generic.ICollection`1>. By using this generic interface, all languages that support generics, including C++, C#, and Visual Basic, can access STL/CLR containers.  
+ To make cross-assembly sharing possible, STL/CLR containers implement the generic interface <xref:System.Collections.Generic.ICollection%601>. By using this generic interface, all languages that support generics, including C++, C#, and Visual Basic, can access STL/CLR containers.  
   
  This topic shows you how to display the elements of several STL/CLR containers written in a C++ assembly named `StlClrClassLibrary`. We show two assemblies to access `StlClrClassLibrary`. The first assembly is written in C++, and the second in C#.  
   
@@ -96,7 +96,7 @@ STL/CLR containers such as `list` and `map` are implemented as template ref clas
 ## Example 4  
   
 ### Description  
- In this example, we create a C# client that uses the class library created in Examples 1 and 2. This client uses the <xref:System.Collections.Generic.ICollection`1> methods of the STL/CLR containers to iterate over the containers and to display their contents.  
+ In this example, we create a C# client that uses the class library created in Examples 1 and 2. This client uses the <xref:System.Collections.Generic.ICollection%601> methods of the STL/CLR containers to iterate over the containers and to display their contents.  
   
 ### Code  
   

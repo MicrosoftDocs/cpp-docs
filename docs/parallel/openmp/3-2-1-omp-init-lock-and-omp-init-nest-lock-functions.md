@@ -1,7 +1,7 @@
 ---
 title: "3.2.1 omp_init_lock and omp_init_nest_lock Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

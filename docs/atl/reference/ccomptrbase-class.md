@@ -1,7 +1,7 @@
 ---
 title: "CComPtrBase Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComPtrBase class"
 ms.assetid: 6dbe9543-dee8-4a97-b02f-dd3a25f4a1a0
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -58,39 +58,39 @@ template <class T> class CComPtrBase
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComPtrBase::~CComPtrBase](../Topic/CComPtrBase::~CComPtrBase.md)|The destructor.|  
+|[CComPtrBase::~CComPtrBase](#ccomptrbase___dtorccomptrbase)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComPtrBase::Advise](../Topic/CComPtrBase::Advise.md)|Call this method to create a connection between the `CComPtrBase`'s connection point and a client's sink.|  
-|[CComPtrBase::Attach](/visual-studio/profiling/attach)|Call this method to take ownership of an existing pointer.|  
-|[CComPtrBase::CoCreateInstance](../Topic/CComPtrBase::CoCreateInstance.md)|Call this method to create an object of the class associated with a specified Class ID or Program ID.|  
-|[CComPtrBase::CopyTo](../Topic/CComPtrBase::CopyTo.md)|Call this method to copy the `CComPtrBase` pointer to another pointer variable.|  
-|[CComPtrBase::Detach](/visual-studio/profiling/detach)|Call this method to release ownership of a pointer.|  
-|[CComPtrBase::IsEqualObject](../Topic/CComPtrBase::IsEqualObject.md)|Call this method to check if the specified **IUnknown** points to the same object associated with the `CComPtrBase` object.|  
-|[CComPtrBase::QueryInterface](../Topic/CComPtrBase::QueryInterface.md)|Call this method to return a pointer to a specified interface.|  
-|[CComPtrBase::Release](../Topic/CComPtrBase::Release.md)|Call this method to release the interface.|  
-|[CComPtrBase::SetSite](../Topic/CComPtrBase::SetSite.md)|Call this method to set the site of the `CComPtrBase` object to the **IUnknown** of the parent object.|  
+|[CComPtrBase::Advise](#ccomptrbase__advise)|Call this method to create a connection between the `CComPtrBase`'s connection point and a client's sink.|  
+|[CComPtrBase::Attach](#ccomptrbase__attach)|Call this method to take ownership of an existing pointer.|  
+|[CComPtrBase::CoCreateInstance](#ccomptrbase__cocreateinstance)|Call this method to create an object of the class associated with a specified Class ID or Program ID.|  
+|[CComPtrBase::CopyTo](#ccomptrbase__copyto)|Call this method to copy the `CComPtrBase` pointer to another pointer variable.|  
+|[CComPtrBase::Detach](#ccomptrbase__detach)|Call this method to release ownership of a pointer.|  
+|[CComPtrBase::IsEqualObject](#ccomptrbase__isequalobject)|Call this method to check if the specified **IUnknown** points to the same object associated with the `CComPtrBase` object.|  
+|[CComPtrBase::QueryInterface](#ccomptrbase__queryinterface)|Call this method to return a pointer to a specified interface.|  
+|[CComPtrBase::Release](#ccomptrbase__release)|Call this method to release the interface.|  
+|[CComPtrBase::SetSite](#ccomptrbase__setsite)|Call this method to set the site of the `CComPtrBase` object to the **IUnknown** of the parent object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComPtrBase::operator T*](../Topic/CComPtrBase::operator%20T*.md)|The cast operator.|  
-|[CComPtrBase::operator !](../Topic/CComPtrBase::operator%20!.md)|The NOT operator.|  
+|[CComPtrBase::operator T*](#ccomptrbase__operator_t_star)|The cast operator.|  
+|[CComPtrBase::operator !](#ccomptrbase__operator__not)|The NOT operator.|  
 |[CComPtrBase::operator &](../Topic/CComPtrBase::operator%20&.md)|The & operator.|  
-|[CComPtrBase::operator *](../Topic/CComPtrBase::operator%20*.md)|The * operator.|  
+|[CComPtrBase::operator *](#ccomptrbase__operator__star)|The * operator.|  
 |[CComPtrBase::operator \<](../Topic/CComPtrBase::operator%20%3C.md)|The less-than operator.|  
-|[CComPtrBase::operator ==](../Topic/CComPtrBase::operator%20==.md)|The equality operator.|  
+|[CComPtrBase::operator ==](#ccomptrbase__operator__eq_eq)|The equality operator.|  
 |[CComPtrBase::operator ->](../Topic/CComPtrBase::operator%20-%3E.md)|The pointer-to-members operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComPtrBase::p](../Topic/CComPtrBase::p.md)|The pointer data member variable.|  
+|[CComPtrBase::p](#ccomptrbase__p)|The pointer data member variable.|  
   
 ## Remarks  
  This class provides the basis for other smart pointers which use COM memory management routines, such as [CComQIPtr](../../atl/reference/ccomqiptr-class.md) and [CComPtr](../../atl/reference/ccomptr-class.md). The derived classes add their own constructors and operators, but rely on the methods provided by `CComPtrBase`.  
@@ -136,7 +136,7 @@ void Attach(T* p2) throw();
  The `CComPtrBase` object will take ownership of this pointer.  
   
 ### Remarks  
- **Attach** calls [CComPtrBase::Release](../Topic/CComPtrBase::Release.md) on the existing [CComPtrBase::p](../Topic/CComPtrBase::p.md) member variable and then assigns `p2` to `CComPtrBase::p`. When a `CComPtrBase` object takes ownership of a pointer, it will automatically call `Release` on the pointer which will delete the pointer and any allocated data if the reference count on the object goes to 0.  
+ **Attach** calls [CComPtrBase::Release](#ccomptrbase__release) on the existing [CComPtrBase::p](#ccomptrbase__p) member variable and then assigns `p2` to `CComPtrBase::p`. When a `CComPtrBase` object takes ownership of a pointer, it will automatically call `Release` on the pointer which will delete the pointer and any allocated data if the reference count on the object goes to 0.  
   
 ##  <a name="ccomptrbase___dtorccomptrbase"></a>  CComPtrBase::~CComPtrBase  
  The destructor.  
@@ -179,7 +179,7 @@ HRESULT CoCreateInstance(REFCLSID rclsid,
 ### Remarks  
  If the first form of the method is called, [CLSIDFromProgID](http://msdn.microsoft.com/library/windows/desktop/ms688386) is used to recover the CLSID. Both forms then call [CoCreateClassInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
   
- In debug builds, an assertion error will occur if [CComPtrBase::p](../Topic/CComPtrBase::p.md) is not equal to NULL.  
+ In debug builds, an assertion error will occur if [CComPtrBase::p](#ccomptrbase__p) is not equal to NULL.  
   
 ##  <a name="ccomptrbase__copyto"></a>  CComPtrBase::CopyTo  
  Call this method to copy the `CComPtrBase` pointer to another pointer variable.  
@@ -196,7 +196,7 @@ HRESULT CopyTo(T** ppT) throw();
  Returns S_OK on success, E_POINTER on failure.  
   
 ### Remarks  
- Copies the `CComPtrBase` pointer to *ppT*. The reference count on the [CComPtrBase::p](../Topic/CComPtrBase::p.md) member variable is incremented.  
+ Copies the `CComPtrBase` pointer to *ppT*. The reference count on the [CComPtrBase::p](#ccomptrbase__p) member variable is incremented.  
   
  An error HRESULT will be returned if *ppT* is equal to NULL. In debug builds, an assertion error will occur if *ppT* is equal to NULL.  
   
@@ -211,7 +211,7 @@ T* Detach() throw();
  Returns a copy of the pointer.  
   
 ### Remarks  
- Releases ownership of a pointer, sets the [CComPtrBase::p](../Topic/CComPtrBase::p.md) data member variable to NULL, and returns a copy of the pointer.  
+ Releases ownership of a pointer, sets the [CComPtrBase::p](#ccomptrbase__p) data member variable to NULL, and returns a copy of the pointer.  
   
 ##  <a name="ccomptrbase__isequalobject"></a>  CComPtrBase::IsEqualObject  
  Call this method to check if the specified **IUnknown** points to the same object associated with the `CComPtrBase` object.  
@@ -255,9 +255,9 @@ T& operator*() const throw();
 ```  
   
 ### Return Value  
- Returns the value of [CComPtrBase::p](../Topic/CComPtrBase::p.md); that is, a pointer to the object referenced by the `CComPtrBase` object.  
+ Returns the value of [CComPtrBase::p](#ccomptrbase__p); that is, a pointer to the object referenced by the `CComPtrBase` object.  
   
- If debug builds, an assertion error will occur if [CComPtrBase::p](../Topic/CComPtrBase::p.md) is not equal to NULL.  
+ If debug builds, an assertion error will occur if [CComPtrBase::p](#ccomptrbase__p) is not equal to NULL.  
   
 ##  <a name="ccomptrbase__operator__eq_eq"></a>  CComPtrBase::operator ==  
  The equality operator.  
@@ -281,7 +281,7 @@ _NoAddRefReleaseOnCComPtr<T>* operator->() const throw();
 ```  
   
 ### Return Value  
- Returns the value of the [CComPtrBase::p](../Topic/CComPtrBase::p.md) data member variable.  
+ Returns the value of the [CComPtrBase::p](#ccomptrbase__p) data member variable.  
   
 ### Remarks  
  Use this operator to call a method in a class pointed to by the `CComPtrBase` object. In debug builds, an assertion failure will occur if the `CComPtrBase` data member points to NULL.  
@@ -350,7 +350,7 @@ void Release() throw();
 ```  
   
 ### Remarks  
- The interface is released, and [CComPtrBase::p](../Topic/CComPtrBase::p.md) is set to NULL.  
+ The interface is released, and [CComPtrBase::p](#ccomptrbase__p) is set to NULL.  
   
 ##  <a name="ccomptrbase__setsite"></a>  CComPtrBase::SetSite  
  Call this method to set the site of the `CComPtrBase` object to the **IUnknown** of the parent object.  
@@ -371,10 +371,3 @@ HRESULT SetSite(IUnknown* punkParent) throw();
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

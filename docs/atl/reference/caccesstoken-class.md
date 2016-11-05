@@ -1,7 +1,7 @@
 ---
 title: "CAccessToken Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAccessToken class"
 ms.assetid: bb5c5945-56a5-4083-b442-76573cee83ab
-caps.latest.revision: 23
+caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -56,57 +56,57 @@ class CAccessToken
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAccessToken::~CAccessToken](../Topic/CAccessToken::~CAccessToken.md)|The destructor.|  
+|[CAccessToken::~CAccessToken](#caccesstoken___dtorcaccesstoken)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAccessToken::Attach](/visual-studio/profiling/attach)|Call this method to take ownership of the given access token handle.|  
-|[CAccessToken::CheckTokenMembership](../Topic/CAccessToken::CheckTokenMembership.md)|Call this method to determine if a specified SID is enabled in the `CAccessToken` object.|  
-|[CAccessToken::CreateImpersonationToken](../Topic/CAccessToken::CreateImpersonationToken.md)|Call this method to create a new impersonation access token.|  
-|[CAccessToken::CreatePrimaryToken](../Topic/CAccessToken::CreatePrimaryToken.md)|Call this method to create a new primary token.|  
-|[CAccessToken::CreateProcessAsUser](../Topic/CAccessToken::CreateProcessAsUser.md)|Call this method to create a new process running in the security context of the user represented by the `CAccessToken` object.|  
-|[CAccessToken::CreateRestrictedToken](../Topic/CAccessToken::CreateRestrictedToken.md)|Call this method to create a new, restricted `CAccessToken` object.|  
-|[CAccessToken::Detach](/visual-studio/profiling/detach)|Call this method to revoke ownership of the access token.|  
-|[CAccessToken::DisablePrivilege](../Topic/CAccessToken::DisablePrivilege.md)|Call this method to disable a privilege in the `CAccessToken` object.|  
-|[CAccessToken::DisablePrivileges](../Topic/CAccessToken::DisablePrivileges.md)|Call this method to disable one or more privileges in the `CAccessToken` object.|  
-|[CAccessToken::EnablePrivilege](../Topic/CAccessToken::EnablePrivilege.md)|Call this method to enable a privilege in the `CAccessToken` object.|  
-|[CAccessToken::EnablePrivileges](../Topic/CAccessToken::EnablePrivileges.md)|Call this method to enable one or more privileges in the `CAccessToken` object.|  
-|[CAccessToken::GetDefaultDacl](../Topic/CAccessToken::GetDefaultDacl.md)|Call this method to return the `CAccessToken` object's default DACL.|  
-|[CAccessToken::GetEffectiveToken](../Topic/CAccessToken::GetEffectiveToken.md)|Call this method to get the `CAccessToken` object equal to the access token in effect for the current thread.|  
-|[CAccessToken::GetGroups](../Topic/CAccessToken::GetGroups.md)|Call this method to return the `CAccessToken` object's token groups.|  
-|[CAccessToken::GetHandle](../Topic/CAccessToken::GetHandle.md)|Call this method to retrieve a handle to the access token.|  
-|[CAccessToken::GetImpersonationLevel](../Topic/CAccessToken::GetImpersonationLevel.md)|Call this method to get the impersonation level from the access token.|  
-|[CAccessToken::GetLogonSessionId](../Topic/CAccessToken::GetLogonSessionId.md)|Call this method to get the Logon Session ID associated with the `CAccessToken` object.|  
-|[CAccessToken::GetLogonSid](../Topic/CAccessToken::GetLogonSid.md)|Call this method to get the Logon SID associated with the `CAccessToken` object.|  
-|[CAccessToken::GetOwner](../Topic/CAccessToken::GetOwner.md)|Call this method to get the owner associated with the `CAccessToken` object.|  
-|[CAccessToken::GetPrimaryGroup](../Topic/CAccessToken::GetPrimaryGroup.md)|Call this method to get the primary group associated with the `CAccessToken` object.|  
-|[CAccessToken::GetPrivileges](../Topic/CAccessToken::GetPrivileges.md)|Call this method to get the privileges associated with the `CAccessToken` object.|  
-|[CAccessToken::GetProcessToken](../Topic/CAccessToken::GetProcessToken.md)|Call this method to initialize the `CAccessToken` with the access token from the given process.|  
-|[CAccessToken::GetProfile](../Topic/CAccessToken::GetProfile.md)|Call this method to get the handle pointing to the user profile associated with the `CAccessToken` object.|  
-|[CAccessToken::GetSource](../Topic/CAccessToken::GetSource.md)|Call this method to get the source of the `CAccessToken` object.|  
-|[CAccessToken::GetStatistics](../Topic/CAccessToken::GetStatistics.md)|Call this method to get information associated with the `CAccessToken` object.|  
-|[CAccessToken::GetTerminalServicesSessionId](../Topic/CAccessToken::GetTerminalServicesSessionId.md)|Call this method to get the Terminal Services Session ID associated with the `CAccessToken` object.|  
-|[CAccessToken::GetThreadToken](../Topic/CAccessToken::GetThreadToken.md)|Call this method to initialize the `CAccessToken` with the token from the given thread.|  
-|[CAccessToken::GetTokenId](../Topic/CAccessToken::GetTokenId.md)|Call this method to get the Token ID associated with the `CAccessToken` object.|  
-|[CAccessToken::GetType](../Topic/CAccessToken::GetType.md)|Call this method to get the token type of the `CAccessToken` object.|  
-|[CAccessToken::GetUser](../Topic/CAccessToken::GetUser.md)|Call this method to identify the user associated with the `CAccessToken` object.|  
-|[CAccessToken::HKeyCurrentUser](../Topic/CAccessToken::HKeyCurrentUser.md)|Call this method to get the handle pointing to the user profile associated with the `CAccessToken` object.|  
-|[CAccessToken::Impersonate](../Topic/CAccessToken::Impersonate.md)|Call this method to assign an impersonation `CAccessToken` to a thread.|  
-|[CAccessToken::ImpersonateLoggedOnUser](../Topic/CAccessToken::ImpersonateLoggedOnUser.md)|Call this method to allow the calling thread to impersonate the security context of a logged-on user.|  
-|[CAccessToken::IsTokenRestricted](../Topic/CAccessToken::IsTokenRestricted.md)|Call this method to test if the `CAccessToken` object contains a list of restricted SIDs.|  
-|[CAccessToken::LoadUserProfile](../Topic/CAccessToken::LoadUserProfile.md)|Call this method to load the user profile associated with the `CAccessToken` object.|  
-|[CAccessToken::LogonUser](../Topic/CAccessToken::LogonUser.md)|Call this method to create a logon session for the user associated with the given credentials.|  
-|[CAccessToken::OpenCOMClientToken](../Topic/CAccessToken::OpenCOMClientToken.md)|Call this method from within a COM server handling a call from a client to initialize the `CAccessToken` with the access token from the COM client.|  
-|[CAccessToken::OpenNamedPipeClientToken](../Topic/CAccessToken::OpenNamedPipeClientToken.md)|Call this method from within a server taking requests over a named pipe to initialize the `CAccessToken` with the access token from the client.|  
-|[CAccessToken::OpenRPCClientToken](../Topic/CAccessToken::OpenRPCClientToken.md)|Call this method from within a server handling a call from an RPC client to initialize the `CAccessToken` with the access token from the client.|  
-|[CAccessToken::OpenThreadToken](../Topic/CAccessToken::OpenThreadToken.md)|Call this method to set the impersonation level and then initialize the `CAccessToken` with the token from the given thread.|  
-|[CAccessToken::PrivilegeCheck](../Topic/CAccessToken::PrivilegeCheck.md)|Call this method to determine whether a specified set of privileges are enabled in the **CAccessToken** object.|  
-|[CAccessToken::Revert](../Topic/CAccessToken::Revert.md)|Call this method to stop a thread that is using an impersonation token.|  
-|[CAccessToken::SetDefaultDacl](../Topic/CAccessToken::SetDefaultDacl.md)|Call this method to set the default DACL of the `CAccessToken` object.|  
-|[CAccessToken::SetOwner](../Topic/CAccessToken::SetOwner.md)|Call this method to set the owner of the `CAccessToken` object.|  
-|[CAccessToken::SetPrimaryGroup](../Topic/CAccessToken::SetPrimaryGroup.md)|Call this method to set the primary group of the `CAccessToken` object.|  
+|[CAccessToken::Attach](#caccesstoken__attach)|Call this method to take ownership of the given access token handle.|  
+|[CAccessToken::CheckTokenMembership](#caccesstoken__checktokenmembership)|Call this method to determine if a specified SID is enabled in the `CAccessToken` object.|  
+|[CAccessToken::CreateImpersonationToken](#caccesstoken__createimpersonationtoken)|Call this method to create a new impersonation access token.|  
+|[CAccessToken::CreatePrimaryToken](#caccesstoken__createprimarytoken)|Call this method to create a new primary token.|  
+|[CAccessToken::CreateProcessAsUser](#caccesstoken__createprocessasuser)|Call this method to create a new process running in the security context of the user represented by the `CAccessToken` object.|  
+|[CAccessToken::CreateRestrictedToken](#caccesstoken__createrestrictedtoken)|Call this method to create a new, restricted `CAccessToken` object.|  
+|[CAccessToken::Detach](#caccesstoken__detach)|Call this method to revoke ownership of the access token.|  
+|[CAccessToken::DisablePrivilege](#caccesstoken__disableprivilege)|Call this method to disable a privilege in the `CAccessToken` object.|  
+|[CAccessToken::DisablePrivileges](#caccesstoken__disableprivileges)|Call this method to disable one or more privileges in the `CAccessToken` object.|  
+|[CAccessToken::EnablePrivilege](#caccesstoken__enableprivilege)|Call this method to enable a privilege in the `CAccessToken` object.|  
+|[CAccessToken::EnablePrivileges](#caccesstoken__enableprivileges)|Call this method to enable one or more privileges in the `CAccessToken` object.|  
+|[CAccessToken::GetDefaultDacl](#caccesstoken__getdefaultdacl)|Call this method to return the `CAccessToken` object's default DACL.|  
+|[CAccessToken::GetEffectiveToken](#caccesstoken__geteffectivetoken)|Call this method to get the `CAccessToken` object equal to the access token in effect for the current thread.|  
+|[CAccessToken::GetGroups](#caccesstoken__getgroups)|Call this method to return the `CAccessToken` object's token groups.|  
+|[CAccessToken::GetHandle](#caccesstoken__gethandle)|Call this method to retrieve a handle to the access token.|  
+|[CAccessToken::GetImpersonationLevel](#caccesstoken__getimpersonationlevel)|Call this method to get the impersonation level from the access token.|  
+|[CAccessToken::GetLogonSessionId](#caccesstoken__getlogonsessionid)|Call this method to get the Logon Session ID associated with the `CAccessToken` object.|  
+|[CAccessToken::GetLogonSid](#caccesstoken__getlogonsid)|Call this method to get the Logon SID associated with the `CAccessToken` object.|  
+|[CAccessToken::GetOwner](#caccesstoken__getowner)|Call this method to get the owner associated with the `CAccessToken` object.|  
+|[CAccessToken::GetPrimaryGroup](#caccesstoken__getprimarygroup)|Call this method to get the primary group associated with the `CAccessToken` object.|  
+|[CAccessToken::GetPrivileges](#caccesstoken__getprivileges)|Call this method to get the privileges associated with the `CAccessToken` object.|  
+|[CAccessToken::GetProcessToken](#caccesstoken__getprocesstoken)|Call this method to initialize the `CAccessToken` with the access token from the given process.|  
+|[CAccessToken::GetProfile](#caccesstoken__getprofile)|Call this method to get the handle pointing to the user profile associated with the `CAccessToken` object.|  
+|[CAccessToken::GetSource](#caccesstoken__getsource)|Call this method to get the source of the `CAccessToken` object.|  
+|[CAccessToken::GetStatistics](#caccesstoken__getstatistics)|Call this method to get information associated with the `CAccessToken` object.|  
+|[CAccessToken::GetTerminalServicesSessionId](#caccesstoken__getterminalservicessessionid)|Call this method to get the Terminal Services Session ID associated with the `CAccessToken` object.|  
+|[CAccessToken::GetThreadToken](#caccesstoken__getthreadtoken)|Call this method to initialize the `CAccessToken` with the token from the given thread.|  
+|[CAccessToken::GetTokenId](#caccesstoken__gettokenid)|Call this method to get the Token ID associated with the `CAccessToken` object.|  
+|[CAccessToken::GetType](#caccesstoken__gettype)|Call this method to get the token type of the `CAccessToken` object.|  
+|[CAccessToken::GetUser](#caccesstoken__getuser)|Call this method to identify the user associated with the `CAccessToken` object.|  
+|[CAccessToken::HKeyCurrentUser](#caccesstoken__hkeycurrentuser)|Call this method to get the handle pointing to the user profile associated with the `CAccessToken` object.|  
+|[CAccessToken::Impersonate](#caccesstoken__impersonate)|Call this method to assign an impersonation `CAccessToken` to a thread.|  
+|[CAccessToken::ImpersonateLoggedOnUser](#caccesstoken__impersonateloggedonuser)|Call this method to allow the calling thread to impersonate the security context of a logged-on user.|  
+|[CAccessToken::IsTokenRestricted](#caccesstoken__istokenrestricted)|Call this method to test if the `CAccessToken` object contains a list of restricted SIDs.|  
+|[CAccessToken::LoadUserProfile](#caccesstoken__loaduserprofile)|Call this method to load the user profile associated with the `CAccessToken` object.|  
+|[CAccessToken::LogonUser](#caccesstoken__logonuser)|Call this method to create a logon session for the user associated with the given credentials.|  
+|[CAccessToken::OpenCOMClientToken](#caccesstoken__opencomclienttoken)|Call this method from within a COM server handling a call from a client to initialize the `CAccessToken` with the access token from the COM client.|  
+|[CAccessToken::OpenNamedPipeClientToken](#caccesstoken__opennamedpipeclienttoken)|Call this method from within a server taking requests over a named pipe to initialize the `CAccessToken` with the access token from the client.|  
+|[CAccessToken::OpenRPCClientToken](#caccesstoken__openrpcclienttoken)|Call this method from within a server handling a call from an RPC client to initialize the `CAccessToken` with the access token from the client.|  
+|[CAccessToken::OpenThreadToken](#caccesstoken__openthreadtoken)|Call this method to set the impersonation level and then initialize the `CAccessToken` with the token from the given thread.|  
+|[CAccessToken::PrivilegeCheck](#caccesstoken__privilegecheck)|Call this method to determine whether a specified set of privileges are enabled in the **CAccessToken** object.|  
+|[CAccessToken::Revert](#caccesstoken__revert)|Call this method to stop a thread that is using an impersonation token.|  
+|[CAccessToken::SetDefaultDacl](#caccesstoken__setdefaultdacl)|Call this method to set the default DACL of the `CAccessToken` object.|  
+|[CAccessToken::SetOwner](#caccesstoken__setowner)|Call this method to set the owner of the `CAccessToken` object.|  
+|[CAccessToken::SetPrimaryGroup](#caccesstoken__setprimarygroup)|Call this method to set the primary group of the `CAccessToken` object.|  
   
 ## Remarks  
  An [access token](http://msdn.microsoft.com/library/windows/desktop/aa374909) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows NT or Windows 2000 system.  
@@ -911,7 +911,7 @@ bool OpenThreadToken(
  Returns true on success, false on failure.  
   
 ### Remarks  
- `OpenThreadToken` is similar to [CAccessToken::GetThreadToken](../Topic/CAccessToken::GetThreadToken.md), but sets the impersonation level before initializing the `CAccessToken` from the thread's access token.  
+ `OpenThreadToken` is similar to [CAccessToken::GetThreadToken](#caccesstoken__getthreadtoken), but sets the impersonation level before initializing the `CAccessToken` from the thread's access token.  
   
  The [CAutoRevertImpersonation Class](../../atl/reference/cautorevertimpersonation-class.md) can be used to automatically revert impersonated access tokens created by setting the `bImpersonate` flag to *true*.  
   
@@ -1009,10 +1009,3 @@ bool SetPrimaryGroup(const CSid& rSid) throw(...);
  [ATLSecurity Sample](../../top/visual-cpp-samples.md)   
  [Access Tokens](http://msdn.microsoft.com/library/windows/desktop/aa374909)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "CStringElementTraitsI Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CStringElementTraitsI class"
 ms.assetid: c23f92b1-91e5-400f-96ed-258b02622b7a
-caps.latest.revision: 17
+caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -57,16 +57,16 @@ template <typename   T, class CharTraits = CDefaultCharTraits<T ::XCHAR>>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CStringElementTraitsI::INARGTYPE](../Topic/CStringElementTraitsI::INARGTYPE.md)|The data type to use for adding elements to the collection class object.|  
-|[CStringElementTraitsI::OUTARGTYPE](../Topic/CStringElementTraitsI::OUTARGTYPE.md)|The data type to use for retrieving elements from the collection class object.|  
+|[CStringElementTraitsI::INARGTYPE](#cstringelementtraitsi__inargtype)|The data type to use for adding elements to the collection class object.|  
+|[CStringElementTraitsI::OUTARGTYPE](#cstringelementtraitsi__outargtype)|The data type to use for retrieving elements from the collection class object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CStringElementTraitsI::CompareElements](../Topic/CStringElementTraitsI::CompareElements.md)|Call this static function to compare two string elements for equality, ignoring differences in case.|  
-|[CStringElementTraitsI::CompareElementsOrdered](../Topic/CStringElementTraitsI::CompareElementsOrdered.md)|Call this static function to compare two string elements, ignoring differences in case.|  
-|[CStringElementTraitsI::Hash](../Topic/CStringElementTraitsI::Hash.md)|Call this static function to calculate a hash value for the given string element.|  
+|[CStringElementTraitsI::CompareElements](#cstringelementtraitsi__compareelements)|Call this static function to compare two string elements for equality, ignoring differences in case.|  
+|[CStringElementTraitsI::CompareElementsOrdered](#cstringelementtraitsi__compareelementsordered)|Call this static function to compare two string elements, ignoring differences in case.|  
+|[CStringElementTraitsI::Hash](#cstringelementtraitsi__hash)|Call this static function to calculate a hash value for the given string element.|  
   
 ## Remarks  
  This class provides static functions for comparing strings and for creating a hash value. These functions are useful when using a collection class to store string-based data. Use [CStringRefElementTraits](../../atl/reference/cstringrefelementtraits-class.md) when the string objects are to be with dealt with as references.  
@@ -157,10 +157,3 @@ typedef T& OUTARGTYPE;
  [CElementTraitsBase Class](../../atl/reference/celementtraitsbase-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [CStringElementTraits Class](../../atl/reference/cstringelementtraits-class.md)
-
-
-
-
-
-
-

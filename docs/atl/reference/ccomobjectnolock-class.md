@@ -1,7 +1,7 @@
 ---
 title: "CComObjectNoLock Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComObjectNoLock class"
 ms.assetid: 288c6506-7da8-4127-8d58-7f4bd779539a
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -58,16 +58,16 @@ template<class Base>  class CComObjectNoLock :  public Base
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComObjectNoLock::CComObjectNoLock](../Topic/CComObjectNoLock::CComObjectNoLock.md)|Constructor.|  
-|[CComObjectNoLock::~CComObjectNoLock](../Topic/CComObjectNoLock::~CComObjectNoLock.md)|The destructor.|  
+|[CComObjectNoLock::CComObjectNoLock](#ccomobjectnolock__ccomobjectnolock)|Constructor.|  
+|[CComObjectNoLock::~CComObjectNoLock](#ccomobjectnolock___dtorccomobjectnolock)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComObjectNoLock::AddRef](../Topic/CComObjectNoLock::AddRef.md)|Increments the reference count on the object.|  
-|[CComObjectNoLock::QueryInterface](../Topic/CComObjectNoLock::QueryInterface.md)|Returns a pointer to the requested interface.|  
-|[CComObjectNoLock::Release](../Topic/CComObjectNoLock::Release.md)|Decrements the reference count on the object.|  
+|[CComObjectNoLock::AddRef](#ccomobjectnolock__addref)|Increments the reference count on the object.|  
+|[CComObjectNoLock::QueryInterface](#ccomobjectnolock__queryinterface)|Returns a pointer to the requested interface.|  
+|[CComObjectNoLock::Release](#ccomobjectnolock__release)|Decrements the reference count on the object.|  
   
 ## Remarks  
  `CComObjectNoLock` is similar to [CComObject](../../atl/reference/ccomobject-class.md) in that it implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) for a nonaggregated object; however, `CComObjectNoLock` does not increment the module lock count in the constructor.  
@@ -143,10 +143,3 @@ STDMETHOD_(ULONG, Release)();
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

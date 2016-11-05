@@ -1,7 +1,7 @@
 ---
 title: "CDefaultHashTraits Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CDefaultHashTraits class"
 ms.assetid: d8ec4b37-6d58-447b-a0c1-8580c5b1ab85
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -58,7 +58,7 @@ template<typename T>  class CDefaultHashTraits
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDefaultHashTraits::Hash](../Topic/CDefaultHashTraits::Hash.md)|(Static) Call this function to calculate a hash value for a given element.|  
+|[CDefaultHashTraits::Hash](#cdefaulthashtraits__hash)|(Static) Call this function to calculate a hash value for a given element.|  
   
 ## Remarks  
  This class contains a single static function that returns a hash value for a given element. This class is utilized by the [CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md).  
@@ -87,10 +87,3 @@ static ULONG Hash(const T& element) throw();
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

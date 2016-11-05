@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 2) CS0437 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0437"
 ms.assetid: cba5c9b6-a0bc-4f19-b1f0-c1f66436ee91
 caps.latest.revision: 13
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

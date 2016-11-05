@@ -1,7 +1,7 @@
 ---
 title: "Advanced Toolbox Control Development | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -116,7 +116,7 @@ translation.priority.mt:
   
     2.  Subscribe to the <xref:Microsoft.VisualStudio.Shell.Package.ToolboxInitialized> and <xref:Microsoft.VisualStudio.Shell.Package.ToolboxUpgraded> events.  
   
-         This is typically done in the <xref:Microsoft.VisualStudio.Shell.Package> implementation's <xref:Microsoft.VisualStudio.Shell.Package.Initialize*> method:  
+         This is typically done in the <xref:Microsoft.VisualStudio.Shell.Package> implementation's <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> method:  
   
         ```vb#  
         Protected Overloads Overrides Sub Initialize()   
@@ -257,7 +257,7 @@ translation.priority.mt:
   
 #### To encapsulate and add Toolbox controls  
   
-1.  Encapsulate the <xref:System.ComponentModel.Component> implementation in an instance of a <xref:System.Drawing.Design.ToolboxItem> object or a <xref:System.Drawing.Design.ToolboxItem>-derived object by calling that object's <xref:System.Drawing.Design.ToolboxItem.Initialize*> method with the implementing component's <xref:System.Type?displayProperty=fullName>:  
+1.  Encapsulate the <xref:System.ComponentModel.Component> implementation in an instance of a <xref:System.Drawing.Design.ToolboxItem> object or a <xref:System.Drawing.Design.ToolboxItem>-derived object by calling that object's <xref:System.Drawing.Design.ToolboxItem.Initialize%2A> method with the implementing component's <xref:System.Type?displayProperty=fullName>:  
   
     ```vb#  
     Dim customItem As New ToolboxItem()   
@@ -276,7 +276,7 @@ translation.priority.mt:
      Above is an example of an object `userControl` derived from <xref:System.Windows.Forms.UserControl> (an instance of the `ToolboxControl1` object shown above) being used to construct a new <xref:System.Drawing.Design.ToolboxItem>.  
   
     > [!NOTE]
-    >  The default implementation of the <xref:System.Drawing.Design.ToolboxItem> constructor taking a <xref:System.Type?displayProperty=fullName> argument (<xref:System.Drawing.Design.ToolboxItem.#ctor(System.Type)> constructor calls the <xref:System.Drawing.Design.ToolboxItem> object's <xref:System.Drawing.Design.ToolboxItem.Initialize*> method.  
+    >  The default implementation of the <xref:System.Drawing.Design.ToolboxItem> constructor taking a <xref:System.Type?displayProperty=fullName> argument (<xref:System.Drawing.Design.ToolboxItem.%23ctor%28System.Type%29> constructor calls the <xref:System.Drawing.Design.ToolboxItem> object's <xref:System.Drawing.Design.ToolboxItem.Initialize%2A> method.  
   
 2.  Use the Toolbox service (<xref:System.Drawing.Design.IToolboxService>) to add the <xref:System.Drawing.Design.ToolboxItem> object constructed from the underlying control implementation.  
   
@@ -338,7 +338,7 @@ translation.priority.mt:
  There are three basic techniques for using reflection to autoloading <xref:System.Drawing.Design.ToolboxItem>.  
   
 ### Using the ToolService Functionality to Retrieve Toolbox Controls  
- The <xref:System.Drawing.Design.ToolboxService> provides VSPackages with the static <xref:System.Drawing.Design.ToolboxService.GetToolboxItems*> methods that use reflection to scan assemblies for all types that support toolbox items, and return items for those types. To be returned, a toolbox item must:  
+ The <xref:System.Drawing.Design.ToolboxService> provides VSPackages with the static <xref:System.Drawing.Design.ToolboxService.GetToolboxItems%2A> methods that use reflection to scan assemblies for all types that support toolbox items, and return items for those types. To be returned, a toolbox item must:  
   
 -   Be public.  
   
@@ -357,14 +357,14 @@ translation.priority.mt:
 1.  Create an instance of <xref:System.Reflection.Assembly> referring to the assembly that is to be scanned for <xref:System.Drawing.Design.ToolboxItem> objects.  
   
     > [!NOTE]
-    >  To obtain an instance of <xref:System.Reflection.Assembly> for the current assembly, use the static method <xref:System.Reflection.Assembly.GetExecutingAssembly*>.  
+    >  To obtain an instance of <xref:System.Reflection.Assembly> for the current assembly, use the static method <xref:System.Reflection.Assembly.GetExecutingAssembly%2A>.  
   
-2.  Call <xref:System.Drawing.Design.ToolboxService.GetToolboxItems*>, returning an <xref:System.Collections.ICollection> object containing a list of the appropriate objects.  
+2.  Call <xref:System.Drawing.Design.ToolboxService.GetToolboxItems%2A>, returning an <xref:System.Collections.ICollection> object containing a list of the appropriate objects.  
   
     > [!NOTE]
-    >  If an object in the returned <xref:System.Collections.ICollection> has a valid instance of <xref:System.Drawing.ToolboxBitmapAttribute> assigned to its implementation, the <xref:System.Drawing.Design.ToolboxService.GetToolboxItems*> method will set the <xref:System.Drawing.Design.ToolboxItem> object's <xref:System.Drawing.Design.ToolboxItem.Bitmap*> property.  
+    >  If an object in the returned <xref:System.Collections.ICollection> has a valid instance of <xref:System.Drawing.ToolboxBitmapAttribute> assigned to its implementation, the <xref:System.Drawing.Design.ToolboxService.GetToolboxItems%2A> method will set the <xref:System.Drawing.Design.ToolboxItem> object's <xref:System.Drawing.Design.ToolboxItem.Bitmap%2A> property.  
   
-3.  Use <xref:Microsoft.VisualStudio.Shell.Package.GetService*> to obtain access to <xref:System.Drawing.Design.IToolboxService>, and use its <xref:System.Drawing.Design.IToolboxService.AddToolboxItem*> method to add items from the returned <xref:System.Collections.ICollection> object to the Toolbox.  
+3.  Use <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> to obtain access to <xref:System.Drawing.Design.IToolboxService>, and use its <xref:System.Drawing.Design.IToolboxService.AddToolboxItem%2A> method to add items from the returned <xref:System.Collections.ICollection> object to the Toolbox.  
   
      The code below queries the running application and obtains a list of all its <xref:System.Drawing.Design.ToolboxItem> objects and loads them. For an example illustrating this in running code, see the `Initialization` method in [Walkthrough: Customizing Toolbox Item Configuration Dynamically](../misc/walkthrough-customizing-toolbox-item-configuration-dynamically.md).  
   
@@ -394,7 +394,7 @@ translation.priority.mt:
     ```  
   
 ### Using Embedded Text Resources to Autoload Toolbox Controls  
- A text resource in an assembly containing a properly formatted list of Toolbox controls can be used by <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource*> to automatically load a Toolbox control if properly formatted.  
+ A text resource in an assembly containing a properly formatted list of Toolbox controls can be used by <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource%2A> to automatically load a Toolbox control if properly formatted.  
   
  A text resource containing a list of objects to load must be available in an assembly accessible to the VSPackage.  
   
@@ -410,18 +410,18 @@ translation.priority.mt:
   
      Entries for the **Toolbox** control to be loaded must contain the name of the implementing class, the name of the assembly containing it.  
   
-     For information on the format of Toolbox controls entries to the embedded text resource, see the <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource*> reference page.  
+     For information on the format of Toolbox controls entries to the embedded text resource, see the <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource%2A> reference page.  
   
 5.  Set up a search path for the files containing the assemblies hosting Toolbox control objects.  
   
-     <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource*>, searches only directories specified in the registry entry HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\\*\<version>*\AssemblyFolders, where *\<version>* is the version number of the release of Visual Studio (for example, 8.0).  
+     <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource%2A>, searches only directories specified in the registry entry HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\\*\<version>*\AssemblyFolders, where *\<version>* is the version number of the release of Visual Studio (for example, 8.0).  
   
     > [!NOTE]
     >  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* can be overridden with an alternate root when the Visual Studio shell is initialized, or use of <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute>. For more information see, [Command-Line Switches](/visual-studio/extensibility/command-line-switches-visual-studio-sdk).  
   
-     For details on the correct format of the AssemblyFolder registry entries, see the <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource*> reference page.  
+     For details on the correct format of the AssemblyFolder registry entries, see the <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource%2A> reference page.  
   
-6.  Obtain an instance of <xref:System.IO.TextReader.Synchronized*> accessing the embedded text resource, and, if localization support is needed for category names, an instance of <xref:System.Resources.ResourceManager>, and use these to invoke the <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource*> method.  
+6.  Obtain an instance of <xref:System.IO.TextReader.Synchronized%2A> accessing the embedded text resource, and, if localization support is needed for category names, an instance of <xref:System.Resources.ResourceManager>, and use these to invoke the <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource%2A> method.  
   
     ```vb#  
     Dim rm As New ResourceManager("TbxCategories", Assembly.GetExecutingAssembly())  
@@ -443,24 +443,24 @@ translation.priority.mt:
     }  
     ```  
   
-     In the example above, a list contained in an embedded text resource in the assembly containing the class `TbxItemProvider` is passed to <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource*> along with the `TbxCategories` string resources.  
+     In the example above, a list contained in an embedded text resource in the assembly containing the class `TbxItemProvider` is passed to <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource%2A> along with the `TbxCategories` string resources.  
   
      The method will search all the files containing assemblies in the directories specified under the AssemblyFolders registry entry for the Toolbox controls listed in the resource and load them.  
   
     > [!NOTE]
-    >  If a Toolbox control found by <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource*> has a valid instance of <xref:System.Drawing.ToolboxBitmapAttribute> assigned to its implementation, <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource*> will set the bitmap used to display the Toolbox control.  
+    >  If a Toolbox control found by <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource%2A> has a valid instance of <xref:System.Drawing.ToolboxBitmapAttribute> assigned to its implementation, <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource%2A> will set the bitmap used to display the Toolbox control.  
   
 ### Explicitly Using Reflection to Autoload Toolbox Controls  
- If it is necessary to explicitly query assemblies for information about the **Toolbox** controls they contain, rather than delegating the task to <xref:System.Drawing.Design.ToolboxService.GetToolboxItems*>, this can be done.  
+ If it is necessary to explicitly query assemblies for information about the **Toolbox** controls they contain, rather than delegating the task to <xref:System.Drawing.Design.ToolboxService.GetToolboxItems%2A>, this can be done.  
   
 ##### To explicitly use reflection to autoload Toolbox controls  
   
 1.  Create an instance of <xref:System.Reflection.Assembly>, referring to each assembly that is to be scanned for <xref:System.Drawing.Design.ToolboxItem> objects.  
   
     > [!NOTE]
-    >  To obtain an instance of <xref:System.Reflection.Assembly> for the current assembly, use the static method <xref:System.Reflection.Assembly.GetExecutingAssembly*>.  
+    >  To obtain an instance of <xref:System.Reflection.Assembly> for the current assembly, use the static method <xref:System.Reflection.Assembly.GetExecutingAssembly%2A>.  
   
-2.  For each assembly to be scanned, use the <xref:System.Reflection.Assembly> object's <xref:System.Reflection.Assembly.GetTypes*> method to obtain a list of each <xref:System.Type?displayProperty=fullName> in the assembly.  
+2.  For each assembly to be scanned, use the <xref:System.Reflection.Assembly> object's <xref:System.Reflection.Assembly.GetTypes%2A> method to obtain a list of each <xref:System.Type?displayProperty=fullName> in the assembly.  
   
 3.  Verify that the type is not abstract and supports the <xref:System.ComponentModel.IComponent> interface (all implementations of Toolbox controls used to instantiate a <xref:System.Drawing.Design.ToolboxItem> object must implement this interface).  
   
@@ -469,7 +469,7 @@ translation.priority.mt:
     > [!NOTE]
     >  Although in principal it is possible to create a <xref:System.Drawing.Design.ToolboxItem> object from an <xref:System.ComponentModel.IComponent> interface implementation without an instance of <xref:System.ComponentModel.ToolboxItemAttribute> not set to `false` applied to it, we do not recommend doing so.  
   
-5.  Use <xref:System.Type.GetConstructor*> to obtain constructors for the <xref:System.Drawing.Design.ToolboxItem> objects that the Toolbox controls require.  
+5.  Use <xref:System.Type.GetConstructor%2A> to obtain constructors for the <xref:System.Drawing.Design.ToolboxItem> objects that the Toolbox controls require.  
   
 6.  Construct the <xref:System.Drawing.Design.ToolboxItem> objects and add them to the **Toolbox**.  
   
@@ -604,7 +604,7 @@ translation.priority.mt:
   
      For an example implementation of a <xref:System.Drawing.Design.ToolboxItemCreatorCallback> delegate, see the <xref:System.Drawing.Design.ToolboxItem> and <xref:System.Drawing.Design.ToolboxItemCreatorCallback> reference pages.  
   
-2.  Make this implementation of the <xref:System.Drawing.Design.ToolboxItemCreatorCallback> delegate available to the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] **Toolbox** for a non-standard toolbox by calling <xref:System.Drawing.Design.IToolboxService.AddCreator*>.  
+2.  Make this implementation of the <xref:System.Drawing.Design.ToolboxItemCreatorCallback> delegate available to the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] **Toolbox** for a non-standard toolbox by calling <xref:System.Drawing.Design.IToolboxService.AddCreator%2A>.  
   
     ```vb#  
     <GuidAttribute("7D91995B-A799-485e-BFC7-C52545DFB5DD")> _   

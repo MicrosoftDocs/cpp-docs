@@ -1,0 +1,1 @@
+	m_wndFont.SelectFont(_T("Arial"));

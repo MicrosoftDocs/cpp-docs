@@ -1,7 +1,7 @@
 ---
 title: "CA2WEX Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -21,7 +21,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CA2WEX class"
 ms.assetid: 317d9ffb-e84f-47e8-beda-57e28fb19124
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -64,21 +64,21 @@ template <int   t_nBufferLength = 128>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CA2WEX::CA2WEX](../Topic/CA2WEX::CA2WEX.md)|The constructor.|  
-|[CA2WEX::~CA2WEX](../Topic/CA2WEX::~CA2WEX.md)|The destructor.|  
+|[CA2WEX::CA2WEX](#ca2wex__ca2wex)|The constructor.|  
+|[CA2WEX::~CA2WEX](#ca2wex___dtorca2wex)|The destructor.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CA2WEX::operator LPWSTR](../Topic/CA2WEX::operator%20LPWSTR.md)|Conversion operator.|  
+|[CA2WEX::operator LPWSTR](#ca2wex__operator_lpwstr)|Conversion operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CA2WEX::m_psz](../Topic/CA2WEX::m_psz.md)|The data member that stores the source string.|  
-|[CA2WEX::m_szBuffer](../Topic/CA2WEX::m_szBuffer.md)|The static buffer, used to store the converted string.|  
+|[CA2WEX::m_psz](#ca2wex__m_psz)|The data member that stores the source string.|  
+|[CA2WEX::m_szBuffer](#ca2wex__m_szbuffer)|The static buffer, used to store the converted string.|  
   
 ## Remarks  
  Unless extra functionality is required, use `CA2TEX`, `CA2CTEX`, `CT2WEX`, `CT2CWEX`, or **CA2W** in your code.  
@@ -174,10 +174,3 @@ wchar_t m_szBuffer[ t_nBufferLength
  [CW2CWEX Class](../../atl/reference/cw2cwex-class.md)   
  [CW2WEX Class](../../atl/reference/cw2wex-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "Registering OLE Controls | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,7 +17,7 @@ helpviewer_keywords:
   - "registering OLE controls"
   - "OLE controls, registering"
 ms.assetid: 73c45b7f-7dbc-43f5-bd17-dd77c6acec72
-caps.latest.revision: 14
+caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -56,30 +56,18 @@ OLE controls, like other OLE server objects, can be accessed by other OLE-aware 
 ##  <a name="afxoleregistercontrolclass"></a>  AfxOleRegisterControlClass  
  Registers the control class with the Windows registration database.  
   
-```  
- 
+```   
 BOOL AFXAPI AfxOleRegisterControlClass(
-    HINSTANCE 
-hInstance  ,  
-    REFCLSID 
-clsid  ,  
-    LPCTSTR 
-pszProgID  ,  
-    UINT 
-idTypeName  ,  
-    UINT 
-idBitmap  ,  
-    int 
-nRegFlags  ,  
-    DWORD 
-dwMiscStatus  ,  
-    REFGUID 
-tlid  ,  
-    WORD 
-wVerMajor  ,  
-    WORD wVerMinor);
-
- 
+    HINSTANCE hInstance,  
+    REFCLSID clsid,  
+    LPCTSTR pszProgID,  
+    UINT idTypeName,  
+    UINT idBitmap,  
+    int nRegFlags,  
+    DWORD dwMiscStatus,  
+    REFGUID tlid,  
+    WORD wVerMajor,  
+    WORD wVerMinor); 
 ```  
   
 ### Parameters  
@@ -181,17 +169,11 @@ wVerMajor  ,
  Registers the property page class with the Windows registration database.  
   
 ```  
- 
 BOOL AFXAPI AfxOleRegisterPropertyPageClass(
-    HINSTANCE 
-hInstance  ,  
-REFCLSID   
-clsid  ,  
-    UINT 
-idTypeName  ,  
-    int nRegFlags);
-
- 
+   HINSTANCE hInstance,  
+   REFCLSID  clsid,  
+   UINT idTypeName,  
+   int nRegFlags); 
 ```  
   
 ### Parameters  
@@ -221,23 +203,12 @@ idTypeName  ,
 ##  <a name="afxoleregistertypelib"></a>  AfxOleRegisterTypeLib  
  Registers the type library with the Windows registration database and allows the type library to be used by other containers that are OLE-control aware.  
   
-```  
- 
-BOOL  
-AfxOleRegisterTypeLib(
-    HINSTANCE 
-hInstance  ,  
-    REFGUID 
-tlid  ,  
-    LPCTSTR 
-pszFileName  
-= 
-NULL,  
-    LPCTSTR 
-pszHelpDir  
-= NULL);
-
- 
+```   
+BOOL AfxOleRegisterTypeLib(
+    HINSTANCE hInstance,  
+    REFGUID tlid,  
+    LPCTSTR pszFileName = NULL,  
+    LPCTSTR pszHelpDir  = NULL); 
 ```  
   
 ### Parameters  
@@ -267,16 +238,8 @@ pszHelpDir
 ##  <a name="afxoleunregisterclass"></a>  AfxOleUnregisterClass  
  Removes the control or property page class entry from the Windows registration database.  
   
-```  
- 
-BOOL  
-AFXAPI  
-AfxOleUnregisterClass(
-    REFCLSID 
-clsID  ,  
-    LPCSTR pszProgID);
-
- 
+```   
+BOOL AFXAPI AfxOleUnregisterClass(REFCLSID clsID, LPCSTR pszProgID); 
 ```  
   
 ### Parameters  
@@ -292,13 +255,8 @@ clsID  ,
 ##  <a name="afxoleunregistertypelib"></a>  AfxOleUnregisterTypeLib  
  Call this function to remove the type library entry from the Windows registration database.  
   
-```  
- 
-BOOL  
-AFXAPI  
-AfxOleUnregisterTypeLib(REFGUID tlID);
-
- 
+```   
+BOOL AFXAPI AfxOleUnregisterTypeLib(REFGUID tlID); 
 ```  
   
 ### Parameters  

@@ -1,7 +1,7 @@
 ---
 title: "qsort_s | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -281,7 +281,7 @@ table tablet tableux
 ```  
   
 ## .NET Framework Equivalent  
- <xref:System.Collections.ArrayList.Sort*>  
+ <xref:System.Collections.ArrayList.Sort%2A>  
   
 ## See Also  
  [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   

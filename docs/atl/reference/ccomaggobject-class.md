@@ -1,7 +1,7 @@
 ---
 title: "CComAggObject Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -22,7 +22,7 @@ helpviewer_keywords:
   - "aggregation [C++], ATL objects"
   - "CComAggObject class"
 ms.assetid: 7aa90d69-d399-477b-880d-e2cdf0ef7881
-caps.latest.revision: 28
+caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -62,25 +62,25 @@ template<class contained>  class CComAggObject :  public IUnknown, public CComOb
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComAggObject::CComAggObject](../Topic/CComAggObject::CComAggObject.md)|The constructor.|  
-|[CComAggObject::~CComAggObject](../Topic/CComAggObject::~CComAggObject.md)|The destructor.|  
+|[CComAggObject::CComAggObject](#ccomaggobject__ccomaggobject)|The constructor.|  
+|[CComAggObject::~CComAggObject](#ccomaggobject___dtorccomaggobject)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComAggObject::AddRef](../Topic/CComAggObject::AddRef.md)|Increments the reference count on the aggregated object.|  
-|[CComAggObject::CreateInstance](../Topic/CComAggObject::CreateInstance.md)|This static function allows you to create a new **CComAggObject<** `contained` **>** object without the overhead of [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).|  
-|[CComAggObject::FinalConstruct](../Topic/CComAggObject::FinalConstruct.md)|Performs final initialization of `m_contained`.|  
-|[CComAggObject::FinalRelease](../Topic/CComAggObject::FinalRelease.md)|Performs final destruction of `m_contained`.|  
-|[CComAggObject::QueryInterface](../Topic/CComAggObject::QueryInterface.md)|Retrieves a pointer to the requested interface.|  
-|[CComAggObject::Release](../Topic/CComAggObject::Release.md)|Decrements the reference count on the aggregated object.|  
+|[CComAggObject::AddRef](#ccomaggobject__addref)|Increments the reference count on the aggregated object.|  
+|[CComAggObject::CreateInstance](#ccomaggobject__createinstance)|This static function allows you to create a new **CComAggObject<** `contained` **>** object without the overhead of [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).|  
+|[CComAggObject::FinalConstruct](#ccomaggobject__finalconstruct)|Performs final initialization of `m_contained`.|  
+|[CComAggObject::FinalRelease](#ccomaggobject__finalrelease)|Performs final destruction of `m_contained`.|  
+|[CComAggObject::QueryInterface](#ccomaggobject__queryinterface)|Retrieves a pointer to the requested interface.|  
+|[CComAggObject::Release](#ccomaggobject__release)|Decrements the reference count on the aggregated object.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComAggObject::m_contained](../Topic/CComAggObject::m_contained.md)|Delegates `IUnknown` calls to the outer unknown.|  
+|[CComAggObject::m_contained](#ccomaggobject__m_contained)|Delegates `IUnknown` calls to the outer unknown.|  
   
 ## Remarks  
  `CComAggObject` implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) for an aggregated object. `CComAggObject` has its own **IUnknown** interface, separate from the outer object's **IUnknown** interface, and maintains its own reference count.  
@@ -121,7 +121,7 @@ CComAggObject(void* pv);
  [in] The outer unknown.  
   
 ### Remarks  
- Initializes the `CComContainedObject` member, [m_contained](../Topic/CComAggObject::m_contained.md), and increments the module lock count.  
+ Initializes the `CComContainedObject` member, [m_contained](#ccomaggobject__m_contained), and increments the module lock count.  
   
  The destructor decrements the module lock count.  
   
@@ -133,7 +133,7 @@ CComAggObject(void* pv);
 ```  
   
 ### Remarks  
- Frees all allocated resources, calls [FinalRelease](../Topic/CComAggObject::FinalRelease.md), and decrements the module lock count.  
+ Frees all allocated resources, calls [FinalRelease](#ccomaggobject__finalrelease), and decrements the module lock count.  
   
 ##  <a name="ccomaggobject__createinstance"></a>  CComAggObject::CreateInstance  
  This static function allows you to create a new **CComAggObject<**`contained` **>** object without the overhead of [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
@@ -153,10 +153,10 @@ static HRESULT WINAPI CreateInstance(LPUNKNOWN pUnkOuter,
 ### Remarks  
  The object returned has a reference count of zero, so call `AddRef` immediately, then use **Release** to free the reference on the object pointer when you're done.  
   
- If you do not need direct access to the object, but still want to create a new object without the overhead of `CoCreateInstance`, use [CComCoClass::CreateInstance](../Topic/CComCoClass::CreateInstance.md) instead.  
+ If you do not need direct access to the object, but still want to create a new object without the overhead of `CoCreateInstance`, use [CComCoClass::CreateInstance](../../atl/reference/ccomcoclass-class.md#ccomcoclass__createinstance) instead.  
   
 ##  <a name="ccomaggobject__finalconstruct"></a>  CComAggObject::FinalConstruct  
- Called during the final stages of object construction, this method performs any final initialization on the [m_contained](../Topic/CComAggObject::m_contained.md) member.  
+ Called during the final stages of object construction, this method performs any final initialization on the [m_contained](#ccomaggobject__m_contained) member.  
   
 ```
 HRESULT FinalConstruct();
@@ -166,7 +166,7 @@ HRESULT FinalConstruct();
  A standard `HRESULT` value.  
   
 ##  <a name="ccomaggobject__finalrelease"></a>  CComAggObject::FinalRelease  
- Called during object destruction, this method frees the [m_contained](../Topic/CComAggObject::m_contained.md) member.  
+ Called during object destruction, this method frees the [m_contained](#ccomaggobject__m_contained) member.  
   
 ```
 void FinalRelease();
@@ -211,7 +211,7 @@ STDMETHOD(QueryInterface)(REFIID iid,
  A standard `HRESULT` value.  
   
 ### Remarks  
- If the requested interface is **IUnknown**, `QueryInterface` returns a pointer to the aggregated object's own **IUnknown** and increments the reference count. Otherwise, this method queries for the interface through the `CComContainedObject` member, [m_contained](../Topic/CComAggObject::m_contained.md).  
+ If the requested interface is **IUnknown**, `QueryInterface` returns a pointer to the aggregated object's own **IUnknown** and increments the reference count. Otherwise, this method queries for the interface through the `CComContainedObject` member, [m_contained](#ccomaggobject__m_contained).  
   
 ##  <a name="ccomaggobject__release"></a>  CComAggObject::Release  
  Decrements the reference count on the aggregated object.  
@@ -230,13 +230,3 @@ STDMETHOD_(ULONG, Release)();
  [DECLARE_ONLY_AGGREGATABLE](../Topic/DECLARE_ONLY_AGGREGATABLE.md)   
  [DECLARE_NOT_AGGREGATABLE](../Topic/DECLARE_NOT_AGGREGATABLE.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-
-
-
-

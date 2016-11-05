@@ -1,7 +1,7 @@
 ---
 title: "-Fo (Object File Name) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -64,7 +64,7 @@ Specifies an object (.obj) file name or directory to be used instead of the defa
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ObjectFile*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ObjectFile%2A>.  
   
 ## Example  
  The following command line creates an object file named THIS.obj in an existing directory, \OBJECT, on drive B.  

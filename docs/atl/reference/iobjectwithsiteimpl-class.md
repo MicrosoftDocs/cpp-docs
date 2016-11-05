@@ -1,7 +1,7 @@
 ---
 title: "IObjectWithSiteImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "IObjectWithSiteImpl class"
 ms.assetid: 4e1f774f-bc3d-45ee-9a1c-c3533a511588
-caps.latest.revision: 17
+caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -60,15 +60,15 @@ template <class   T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[IObjectWithSiteImpl::GetSite](../Topic/IObjectWithSiteImpl::GetSite.md)|Queries the site for an interface pointer.|  
-|[IObjectWithSiteImpl::SetChildSite](../Topic/IObjectWithSiteImpl::SetChildSite.md)|Provides the object with the site's **IUnknown** pointer.|  
-|[IObjectWithSiteImpl::SetSite](../Topic/IObjectWithSiteImpl::SetSite.md)|Provides the object with the site's **IUnknown** pointer.|  
+|[IObjectWithSiteImpl::GetSite](#iobjectwithsiteimpl__getsite)|Queries the site for an interface pointer.|  
+|[IObjectWithSiteImpl::SetChildSite](#iobjectwithsiteimpl__setchildsite)|Provides the object with the site's **IUnknown** pointer.|  
+|[IObjectWithSiteImpl::SetSite](#iobjectwithsiteimpl__setsite)|Provides the object with the site's **IUnknown** pointer.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[IObjectWithSiteImpl::m_spUnkSite](../Topic/IObjectWithSiteImpl::m_spUnkSite.md)|Manages the site's **IUnknown** pointer.|  
+|[IObjectWithSiteImpl::m_spUnkSite](#iobjectwithsiteimpl__m_spunksite)|Manages the site's **IUnknown** pointer.|  
   
 ## Remarks  
  The [IObjectWithSite](http://msdn.microsoft.com/library/windows/desktop/ms693765) interface allows an object to communicate with its site. Class `IObjectWithSiteImpl` provides a default implementation of this interface and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -107,7 +107,7 @@ CComPtr<IUnknown> m_spUnkSite;
 ```  
   
 ### Remarks  
- `m_spUnkSite` initially receives this pointer through a call to [SetSite](../Topic/IObjectWithSiteImpl::SetSite.md).  
+ `m_spUnkSite` initially receives this pointer through a call to [SetSite](#iobjectwithsiteimpl__setsite).  
   
 ##  <a name="iobjectwithsiteimpl__setchildsite"></a>  IObjectWithSiteImpl::SetChildSite  
  Provides the object with the site's **IUnknown** pointer.  
@@ -135,10 +135,3 @@ STDMETHOD(SetSite)(IUnknown* pUnkSite);
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

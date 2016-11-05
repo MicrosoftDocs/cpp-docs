@@ -1,7 +1,7 @@
 ---
 title: "CHeapPtrList Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CHeapPtrList class"
 ms.assetid: cc70e585-362a-4007-81db-c705eb181226
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -66,7 +66,7 @@ template<typename E, class Allocator = ATL::CCRTAllocator>  class CHeapPtrList :
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHeapPtrList::CHeapPtrList](../Topic/CHeapPtrList::CHeapPtrList.md)|The constructor.|  
+|[CHeapPtrList::CHeapPtrList](#cheapptrlist__cheapptrlist)|The constructor.|  
   
 ## Remarks  
  This class provides a constructor and derives methods from [CAtlList](../../atl/reference/catllist-class.md) and [CHeapPtrElementTraits](../../atl/reference/cheapptrelementtraits-class.md) to aid the creation of a collection class object storing heap pointers.  
@@ -98,10 +98,3 @@ CHeapPtrList(UINT nBlockSize = 10) throw();
  [CHeapPtr Class](../../atl/reference/cheapptr-class.md)   
  [CHeapPtrElementTraits Class](../../atl/reference/cheapptrelementtraits-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

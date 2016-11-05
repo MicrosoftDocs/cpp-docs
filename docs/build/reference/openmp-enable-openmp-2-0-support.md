@@ -1,7 +1,7 @@
 ---
 title: "-openmp (Enable OpenMP 2.0 Support) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -79,7 +79,7 @@ Causes the compiler to process `#pragma`[omp](../../preprocessor/omp.md).
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.OpenMP*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.OpenMP%2A>.  
   
 ## Example  
  The following sample shows some of the effects of threadpool startup versus using the threadpool after it started up. Assuming an x64, single core, dual processor the threadpool takes about 16ms to startup. After that though there is very little cost for the threadpool.  

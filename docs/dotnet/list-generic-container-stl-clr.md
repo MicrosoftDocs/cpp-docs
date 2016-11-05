@@ -1,7 +1,7 @@
 ---
 title: "list::generic_container (STL-CLR) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -106,7 +106,7 @@ a b c d e
  **Namespace:** cliext  
   
 ## See Also  
- <xref:Microsoft.VisualC.StlClr.IList`1>   
+ <xref:Microsoft.VisualC.StlClr.IList%601>   
  [list (STL/CLR)](../dotnet/list-stl-clr.md)   
  [list::generic_iterator (STL/CLR)](../dotnet/list-generic-iterator-stl-clr.md)   
  [list::generic_reverse_iterator (STL/CLR)](../dotnet/list-generic-reverse-iterator-stl-clr.md)   

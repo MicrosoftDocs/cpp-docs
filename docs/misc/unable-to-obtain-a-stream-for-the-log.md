@@ -41,12 +41,12 @@ Unable to obtain a stream for the log. Potential file names based on \<name> are
   
 ### To correct this error  
   
-1.  Set the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule*> property to <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption> or <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption> to include a date-stamp in the log file name.  
+1.  Set the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A> property to <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption> or <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption> to include a date-stamp in the log file name.  
   
 2.  Archive the existing logs and remove them from the computer to allow the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> object to create new logs.  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>   
- <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule*>   
+ <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A>   
  [My.Application.Log Object](/dotnet/visual-basic/language-reference/objects/my-application-log-object)   
  [My.Log Object](/dotnet/visual-basic/language-reference/objects/my-log-object)

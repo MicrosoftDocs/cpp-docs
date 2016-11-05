@@ -1,7 +1,7 @@
 ---
 title: "CDacl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CDacl class"
 ms.assetid: 2dc76616-6362-4967-b6cf-e2d39ca37ddd
-caps.latest.revision: 22
+caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -55,24 +55,24 @@ class CDacl : public CAcl
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDacl::CDacl](../Topic/CDacl::CDacl.md)|The constructor.|  
-|[CDacl::~CDacl](../Topic/CDacl::~CDacl.md)|The destructor.|  
+|[CDacl::CDacl](#cdacl__cdacl)|The constructor.|  
+|[CDacl::~CDacl](#cdacl___dtorcdacl)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDacl::AddAllowedAce](../Topic/CDacl::AddAllowedAce.md)|Adds an allowed ACE (access-control entry) to the `CDacl` object.|  
-|[CDacl::AddDeniedAce](../Topic/CDacl::AddDeniedAce.md)|Adds a denied ACE to the `CDacl` object.|  
-|[CDacl::GetAceCount](../Topic/CDacl::GetAceCount.md)|Returns the number of ACEs (access-control entries) in the `CDacl` object.|  
-|[CDacl::RemoveAce](../Topic/CDacl::RemoveAce.md)|Removes a specific ACE (access-control entry) from the `CDacl` object.|  
-|[CDacl::RemoveAllAces](../Topic/CDacl::RemoveAllAces.md)|Removes all of the ACEs contained in the `CDacl` object.|  
+|[CDacl::AddAllowedAce](#cdacl__addallowedace)|Adds an allowed ACE (access-control entry) to the `CDacl` object.|  
+|[CDacl::AddDeniedAce](#cdacl__adddeniedace)|Adds a denied ACE to the `CDacl` object.|  
+|[CDacl::GetAceCount](#cdacl__getacecount)|Returns the number of ACEs (access-control entries) in the `CDacl` object.|  
+|[CDacl::RemoveAce](#cdacl__removeace)|Removes a specific ACE (access-control entry) from the `CDacl` object.|  
+|[CDacl::RemoveAllAces](#cdacl__removeallaces)|Removes all of the ACEs contained in the `CDacl` object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDacl::operator =](../Topic/CDacl::operator%20=.md)|Assignment operator.|  
+|[CDacl::operator =](#cdacl__operator__eq)|Assignment operator.|  
   
 ## Remarks  
  An object's security descriptor can contain a DACL. A DACL contains zero or more ACEs (access-control entries) that identify the users and groups who can access the object. If a DACL is empty (that is, it contains zero ACEs), no access is explicitly granted, so access is implicitly denied. However, if an object's security descriptor does not have a DACL, the object is unprotected and everyone has complete access.  
@@ -199,7 +199,7 @@ CDacl (const ACL& rhs) throw(...);
 ```  
   
 ### Remarks  
- The destructor frees any resources acquired by the object, including all ACEs (access-control entries) using [CDacl::RemoveAllAces](../Topic/CDacl::RemoveAllAces.md).  
+ The destructor frees any resources acquired by the object, including all ACEs (access-control entries) using [CDacl::RemoveAllAces](#cdacl__removeallaces).  
   
 ##  <a name="cdacl__getacecount"></a>  CDacl::GetAceCount  
  Returns the number of ACEs (access-control entries) in the `CDacl` object.  
@@ -240,7 +240,7 @@ void RemoveAce(UINT   nIndex) throw();
  Index to the ACE entry to remove.  
   
 ### Remarks  
- This method is derived from [CAtlArray::RemoveAt](../Topic/CAtlArray::RemoveAt.md).  
+ This method is derived from [CAtlArray::RemoveAt](../../atl/reference/catlarray-class.md#catlarray__removeat).  
   
 ##  <a name="cdacl__removeallaces"></a>  CDacl::RemoveAllAces  
  Removes all of the ACEs (access-control entries) contained in the `CDacl` object.  
@@ -259,10 +259,3 @@ void RemoveAllAces() throw();
  [ACEs](http://msdn.microsoft.com/library/windows/desktop/aa374868)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Security Global Functions](../../atl/reference/security-global-functions.md)
-
-
-
-
-
-
-

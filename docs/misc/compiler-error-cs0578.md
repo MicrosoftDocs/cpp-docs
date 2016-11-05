@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error CS0578 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -147,6 +147,7 @@ helpviewer_keywords:
   - "CS0578"
 ms.assetid: fbc5c884-e358-48f1-aeac-5ec8fd9f0c40
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

@@ -1,7 +1,7 @@
 ---
 title: "-Zc:forScope (Force Conformance in for Loop Scope) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -90,7 +90,7 @@ int main() {
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ForceConformanceInForLoopScope*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ForceConformanceInForLoopScope%2A>.  
   
 ## See Also  
  [/Zc (Conformance)](../../build/reference/zc-conformance.md)   

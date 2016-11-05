@@ -1,7 +1,7 @@
 ---
 title: "CAtlPreviewCtrlImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,7 +17,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAtlPreviewCtrlImpl class"
 ms.assetid: 39b3299e-07e4-4abc-9b6e-b54bfa3b0802
-caps.latest.revision: 25
+caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -298,6 +298,8 @@ virtual void SetRect(const RECT* prc,  BOOL bRedraw);
   
 ## See Also  
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)
+
+
 
 
 

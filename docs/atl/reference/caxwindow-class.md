@@ -1,7 +1,7 @@
 ---
 title: "CAxWindow Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ helpviewer_keywords:
   - "CAxWindow class"
   - "ATL, hosting ActiveX controls"
 ms.assetid: 85e79261-43e4-4770-bde0-1ff87f222b0f
-caps.latest.revision: 23
+caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -55,21 +55,21 @@ class CAxWindow : public CWindow
   
 |||  
 |-|-|  
-|[AttachControl](../Topic/CAxWindow::AttachControl.md)|Attaches an existing ActiveX control to the `CAxWindow` object.|  
-|[CAxWindow](../Topic/CAxWindow::CAxWindow.md)|Constructs a `CAxWindow` object.|  
-|[CreateControl](../Topic/CAxWindow::CreateControl.md)|Creates an ActiveX control, initializes it, and hosts it in the `CAxWindow` window.|  
-|[CreateControlEx](../Topic/CAxWindow::CreateControlEx.md)|Creates an ActiveX control and retrieves an interface pointer (or pointers) from the control.|  
-|[GetWndClassName](../Topic/CAxWindow::GetWndClassName.md)|(Static) Retrieves the predefined class name of the `CAxWindow` object.|  
-|[QueryControl](../Topic/CAxWindow::QueryControl.md)|Retrieves the **IUnknown** of the hosted ActiveX control.|  
-|[QueryHost](../Topic/CAxWindow::QueryHost.md)|Retrieves the **IUnknown** pointer of the `CAxWindow` object.|  
-|[SetExternalDispatch](../Topic/CAxWindow::SetExternalDispatch.md)|Sets the external dispatch interface used by the `CAxWindow` object.|  
-|[SetExternalUIHandler](../Topic/CAxWindow::SetExternalUIHandler.md)|Sets the external **IDocHostUIHandler** interface used by the `CAxWindow` object.|  
+|[AttachControl](#caxwindow__attachcontrol)|Attaches an existing ActiveX control to the `CAxWindow` object.|  
+|[CAxWindow](#caxwindow__caxwindow)|Constructs a `CAxWindow` object.|  
+|[CreateControl](#caxwindow__createcontrol)|Creates an ActiveX control, initializes it, and hosts it in the `CAxWindow` window.|  
+|[CreateControlEx](#caxwindow__createcontrolex)|Creates an ActiveX control and retrieves an interface pointer (or pointers) from the control.|  
+|[GetWndClassName](#caxwindow__getwndclassname)|(Static) Retrieves the predefined class name of the `CAxWindow` object.|  
+|[QueryControl](#caxwindow__querycontrol)|Retrieves the **IUnknown** of the hosted ActiveX control.|  
+|[QueryHost](#caxwindow__queryhost)|Retrieves the **IUnknown** pointer of the `CAxWindow` object.|  
+|[SetExternalDispatch](#caxwindow__setexternaldispatch)|Sets the external dispatch interface used by the `CAxWindow` object.|  
+|[SetExternalUIHandler](#caxwindow__setexternaluihandler)|Sets the external **IDocHostUIHandler** interface used by the `CAxWindow` object.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator =](../Topic/CAxWindow::operator%20=.md)|Assigns an **HWND** to an existing **CAxWindow** object.|  
+|[operator =](#caxwindow__operator__eq)|Assigns an **HWND** to an existing **CAxWindow** object.|  
   
 ## Remarks  
  This class provides methods for manipulating a window that hosts an ActiveX control. The hosting is provided by " **AtlAxWin80"**, which is wrapped by `CAxWindow`.  
@@ -167,7 +167,7 @@ HRESULT CreateControl(
   
  [!code-cpp[NVC_ATL_Windowing#42](../../atl/codesnippet/CPP/caxwindow-class_1.cpp)]  
   
- See [CAxWindow2T::CreateControlLic](../Topic/CAxWindow2T::CreateControlLic.md) to create, initialize, and host a licensed ActiveX control.  
+ See [CAxWindow2T::CreateControlLic](../../atl/reference/caxwindow2t-class.md#caxwindow2t__createcontrollic) to create, initialize, and host a licensed ActiveX control.  
   
 ### Example  
  See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `CreateControl`.  
@@ -232,9 +232,9 @@ HRESULT CreateControlEx(
  A standard `HRESULT` value.  
   
 ### Remarks  
- This method is similar to [CAxWindow::CreateControl](../Topic/CAxWindow::CreateControl.md), but unlike that method, `CreateControlEx` also allows you to receive an interface pointer to the newly created control and set up an event sink to receive events fired by the control.  
+ This method is similar to [CAxWindow::CreateControl](#caxwindow__createcontrol), but unlike that method, `CreateControlEx` also allows you to receive an interface pointer to the newly created control and set up an event sink to receive events fired by the control.  
   
- See [CAxWindow2T::CreateControlLicEx](../Topic/CAxWindow2T::CreateControlLicEx.md) to create, initialize, and host a licensed ActiveX control.  
+ See [CAxWindow2T::CreateControlLicEx](../../atl/reference/caxwindow2t-class.md#caxwindow2t__createcontrollicex) to create, initialize, and host a licensed ActiveX control.  
   
 ### Example  
  See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `CreateControlEx`.  
@@ -355,6 +355,7 @@ HRESULT SetExternalUIHandler(IDocHostUIHandlerDispatch* pUIHandler);
  [Composite Control Fundamentals](../../atl/atl-composite-control-fundamentals.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Control Containment FAQ](../../atl/atl-control-containment-faq.md)
+
 
 
 

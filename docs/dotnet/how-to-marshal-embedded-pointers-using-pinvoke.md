@@ -1,7 +1,7 @@
 ---
 title: "How to: Marshal Embedded Pointers Using PInvoke | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,7 +41,7 @@ translation.priority.ht:
 Functions that are implemented in unmanaged DLLs can be called from managed code using Platform Invoke (P/Invoke) functionality. If the source code for the DLL is not available, P/Invoke is the only option for interoperating. However, unlike other .NET languages, Visual C++ provides an alternative to P/Invoke. For more information, see [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md) and [How to: Marshal Embedded Pointers Using C++ Interop](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md).  
   
 ## Example  
- Passing structures to native code requires that a managed structure that is equivalent in terms of data layout to the native structure is created. However, structures that contain pointers require special handling. For each embedded pointer in the native structure, the managed version of the structure should contain an instance of the <xref:System.IntPtr> type. Also, memory for these instances must be explicitly allocated, initialized, and released using the <xref:System.Runtime.InteropServices.Marshal.AllocCoTaskMem*>, <xref:System.Runtime.InteropServices.Marshal.StructureToPtr*>, and <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem*> methods.  
+ Passing structures to native code requires that a managed structure that is equivalent in terms of data layout to the native structure is created. However, structures that contain pointers require special handling. For each embedded pointer in the native structure, the managed version of the structure should contain an instance of the <xref:System.IntPtr> type. Also, memory for these instances must be explicitly allocated, initialized, and released using the <xref:System.Runtime.InteropServices.Marshal.AllocCoTaskMem%2A>, <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A>, and <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> methods.  
   
  The following code consists of an unmanaged and a managed module. The unmanaged module is a DLL that defines a function that accepts a structure called ListString that contains a pointer, and a function called TakesListStruct. The managed module is a command-line application that imports the TakesListStruct function and defines a structure called MListStruct that is equivalent to the native ListStruct except that the double* is represented with an <xref:System.IntPtr> instance. Before calling TakesListStruct, the main function allocates and initializes the memory that this field references.  
   

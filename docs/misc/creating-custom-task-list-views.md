@@ -1,7 +1,7 @@
 ---
 title: "Creating Custom Task List Views | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -81,11 +81,11 @@ You can display a custom task list in Visual Studio by creating a custom task li
   
  To implement a custom column, you must implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem2> interface on your task items and you must implement the following methods on that interface:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem2.get_CustomColumnText*>  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem2.get_CustomColumnText%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem2.put_CustomColumnText*>  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem2.put_CustomColumnText%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem2.IsCustomColumnReadOnly*>  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem2.IsCustomColumnReadOnly%2A>  
   
  When required, the task list queries your <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem2> implementation by using a custom column number from a specific view, represented by *some guid*. If your task has the appropriate information about that column in that view, you supply information to that column, and specify whether that text is read-only.  
   

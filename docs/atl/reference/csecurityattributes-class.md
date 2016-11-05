@@ -1,7 +1,7 @@
 ---
 title: "CSecurityAttributes Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CSecurityAttributes class"
 ms.assetid: a094880c-52e1-4a28-97ff-752d5869908e
-caps.latest.revision: 23
+caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -55,13 +55,13 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSecurityAttributes::CSecurityAttributes](../Topic/CSecurityAttributes::CSecurityAttributes.md)|The constructor.|  
+|[CSecurityAttributes::CSecurityAttributes](#csecurityattributes__csecurityattributes)|The constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSecurityAttributes::Set](../Topic/CSecurityAttributes::Set.md)|Call this method to set the attributes of the `CSecurityAttributes` object.|  
+|[CSecurityAttributes::Set](#csecurityattributes__set)|Call this method to set the attributes of the `CSecurityAttributes` object.|  
   
 ## Remarks  
  The **SECURITY_ATTRIBUTES** structure contains a [security descriptor](http://msdn.microsoft.com/library/windows/desktop/aa379561) used for the creation of an object and specifies whether the handle retrieved by specifying this structure is inheritable.  
@@ -116,10 +116,3 @@ void Set(const CSecurityDesc& rSecurityDescriptor,  bool bInheritHandle = false)
  [security descriptor](http://msdn.microsoft.com/library/windows/desktop/aa379561)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Security Global Functions](../../atl/reference/security-global-functions.md)
-
-
-
-
-
-
-

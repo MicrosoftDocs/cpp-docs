@@ -1,7 +1,7 @@
 ---
 title: "How to: Program the Designer Region of the Status Bar | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -39,7 +39,7 @@ The Designer region of the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_m
   
 1.  Obtain an instance of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> interface, which is made available through the <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> service.  
   
-2.  Update the Designer region of the status bar by calling the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar.SetInsMode*> method and <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar.SetLineColChar*> method of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> instance.  
+2.  Update the Designer region of the status bar by calling the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar.SetInsMode%2A> method and <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar.SetLineColChar%2A> method of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> instance.  
   
 ## Example  
  This example demonstrates how to program the Designer region of the status bar.  

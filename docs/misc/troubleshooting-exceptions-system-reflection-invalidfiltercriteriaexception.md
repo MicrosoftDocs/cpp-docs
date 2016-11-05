@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting Exceptions: System.Reflection.InvalidFilterCriteriaException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -34,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Troubleshooting Exceptions: System.Reflection.InvalidFilterCriteriaException
-The exception that is thrown in <xref:System.Type.FindMembers*> when the filter criteria is not valid for the type of filter you are using.  
+The exception that is thrown in <xref:System.Type.FindMembers%2A> when the filter criteria is not valid for the type of filter you are using.  
   
 ## See Also  
  <xref:System.Reflection.InvalidFilterCriteriaException>   

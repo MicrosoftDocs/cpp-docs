@@ -1,7 +1,7 @@
 ---
 title: "Compiler Options Macros | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -14,7 +14,7 @@ dev_langs:
 helpviewer_keywords: 
   - "compiler options, macros"
 ms.assetid: a869adc6-b3de-4299-b040-9ae20b45f82c
-caps.latest.revision: 16
+caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -38,17 +38,17 @@ These macros control specific compiler features.
   
 |||  
 |-|-|  
-|[_ATL_ALL_WARNINGS](../Topic/_ATL_ALL_WARNINGS.md)|A symbol which enables errors in projects converted from previous versions of ATL.|  
-|[_ATL_APARTMENT_THREADED](../Topic/_ATL_APARTMENT_THREADED.md)|Define if one or more of your objects use apartment threading.|  
-|[_ATL_CSTRING_EXPLICIT_CONSTRUCTORS](../Topic/_ATL_CSTRING_EXPLICIT_CONSTRUCTORS.md)|Makes certain `CString` constructors explicit, preventing any unintentional conversions.|  
-|[_ATL_ENABLE_PTM_WARNING](../Topic/_ATL_ENABLE_PTM_WARNING.md)|Define this macro in order to use C++ standard compliant syntax, which generates the C4867 compiler error when a non standard syntax is used to initialize a pointer to a member function.|  
-|[_ATL_FREE_THREADED](../Topic/_ATL_FREE_THREADED.md)|Define if one or more of your objects use free or neutral threading.|  
-|[_ATL_MULTI_THREADED](../Topic/_ATL_MULTI_THREADED.md)|A symbol that indicates the project will have objects that are marked as Both, Free or Neutral. The macro [_ATL_FREE_THREADED](../Topic/_ATL_FREE_THREADED.md) should be used instead.|  
-|[_ATL_NO_AUTOMATIC_NAMESPACE](../Topic/_ATL_NO_AUTOMATIC_NAMESPACE.md)|A symbol which prevents the default use of namespace as ATL.|  
-|[_ATL_NO_COM_SUPPORT](../Topic/_ATL_NO_COM_SUPPORT.md)|A symbol which prevents COM-related code from being compiled with your project.|  
-|[ATL_NO_VTABLE](../Topic/ATL_NO_VTABLE.md)|A symbol that prevents the vtable pointer from being initialized in the class's constructor and destructor.|  
-|[ATL_NOINLINE](../Topic/ATL_NOINLINE.md)|A symbol that indicates a function should not be inlined.|  
-|[_ATL_SINGLE_THREADED](../Topic/_ATL_SINGLE_THREADED.md)|Define if all of your objects use the single threading model.|  
+|[_ATL_ALL_WARNINGS](#_atl_all_warnings)|A symbol which enables errors in projects converted from previous versions of ATL.|  
+|[_ATL_APARTMENT_THREADED](#_atl_apartment_threaded)|Define if one or more of your objects use apartment threading.|  
+|[_ATL_CSTRING_EXPLICIT_CONSTRUCTORS](#_atl_cstring_explicit_constructors)|Makes certain `CString` constructors explicit, preventing any unintentional conversions.|  
+|[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning)|Define this macro in order to use C++ standard compliant syntax, which generates the C4867 compiler error when a non standard syntax is used to initialize a pointer to a member function.|  
+|[_ATL_FREE_THREADED](#_atl_free_threaded)|Define if one or more of your objects use free or neutral threading.|  
+|[_ATL_MULTI_THREADED](#_atl_multi_threaded)|A symbol that indicates the project will have objects that are marked as Both, Free or Neutral. The macro [_ATL_FREE_THREADED](#_atl_free_threaded) should be used instead.|  
+|[_ATL_NO_AUTOMATIC_NAMESPACE](#_atl_no_automatic_namespace)|A symbol which prevents the default use of namespace as ATL.|  
+|[_ATL_NO_COM_SUPPORT](#_atl_no_com_support)|A symbol which prevents COM-related code from being compiled with your project.|  
+|[ATL_NO_VTABLE](#atl_no_vtable)|A symbol that prevents the vtable pointer from being initialized in the class's constructor and destructor.|  
+|[ATL_NOINLINE](#atl_noinline)|A symbol that indicates a function should not be inlined.|  
+|[_ATL_SINGLE_THREADED](#_atl_single_threaded)|Define if all of your objects use the single threading model.|  
   
 ##  <a name="_atl_all_warnings"></a>  _ATL_ALL_WARNINGS  
  A symbol which enables errors in projects converted from previous versions of ATL.  
@@ -116,7 +116,7 @@ _ATL_CSTRING_EXPLICIT_CONSTRUCTORS
 ### Remarks  
  The ATL and MFC libraries have been changed to match the Visual C++ compiler's improved standard C++ compliance. According to the ANSI C++ standard, the syntax of a pointer to a class member function should be `&CMyClass::MyFunc`.  
   
- When [_ATL_ENABLE_PTM_WARNING](../Topic/_ATL_ENABLE_PTM_WARNING.md) is not defined (the default case), ATL/MFC disables the C4867 error in macro maps (notably message maps) so that code that was created in earlier versions can continue to build as before. If you define **_ATL_ENABLE_PTM_WARNING**, your code should be C++ standard compliant.  
+ When [_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) is not defined (the default case), ATL/MFC disables the C4867 error in macro maps (notably message maps) so that code that was created in earlier versions can continue to build as before. If you define **_ATL_ENABLE_PTM_WARNING**, your code should be C++ standard compliant.  
   
  However, the non-standard form has been deprecated, so you need to move existing code to C++ standard compliant syntax. For example, the following:  
   
@@ -146,7 +146,7 @@ _ATL_MULTI_THREADED
 ```  
   
 ### Remarks  
- If this symbol is defined, ATL will pull in code that will correctly synchronize access to global data. New code should use the equivalent macro [_ATL_FREE_THREADED](../Topic/_ATL_FREE_THREADED.md) instead.  
+ If this symbol is defined, ATL will pull in code that will correctly synchronize access to global data. New code should use the equivalent macro [_ATL_FREE_THREADED](#_atl_free_threaded) instead.  
   
 ##  <a name="_atl_no_automatic_namespace"></a>  _ATL_NO_AUTOMATIC_NAMESPACE  
  A symbol which prevents the default use of namespace as ATL.  
@@ -207,8 +207,3 @@ _ATL_SINGLE_THREADED
   
 ## See Also  
  [Macros](../../atl/reference/atl-macros.md)
-
-
-
-
-

@@ -38,7 +38,7 @@ translation.priority.mt:
 # &#39;System.Runtime.InteropServices.DllImportAttribute&#39; cannot be applied to a method that is generic or nested in a generic type
 A procedure is declared with the <xref:System.Runtime.InteropServices.DllImportAttribute>, but either the procedure is generic or it is contained in a generic class or structure.  
   
- The common language runtime (CLR) recognizes this attribute and its <xref:System.Runtime.InteropServices._Assembly.EntryPoint*> property as designating a replacement procedure defined in an unmanaged dynamic-link library (DLL) outside the .NET Framework. When code calls the procedure to which the <xref:System.Runtime.InteropServices.DllImportAttribute> is applied, the common language runtime calls the designated unmanaged procedure instead.  
+ The common language runtime (CLR) recognizes this attribute and its <xref:System.Runtime.InteropServices._Assembly.EntryPoint%2A> property as designating a replacement procedure defined in an unmanaged dynamic-link library (DLL) outside the .NET Framework. When code calls the procedure to which the <xref:System.Runtime.InteropServices.DllImportAttribute> is applied, the common language runtime calls the designated unmanaged procedure instead.  
   
  Because unmanaged platforms outside the .NET Framework do not recognize generic types, you cannot interoperate with them using generic types.  
   

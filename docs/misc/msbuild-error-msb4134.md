@@ -1,7 +1,7 @@
 ---
 title: "MSBuild Error MSB4134 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -42,7 +42,7 @@ translation.priority.mt:
 -   Change the value of `DefaultToolsVersion` before you build a project.  
   
 ## See Also  
- <xref:Microsoft.Build.Utilities.Task.BuildEngine*>   
- <xref:Microsoft.Build.Utilities.Task.BuildEngine2*>   
+ <xref:Microsoft.Build.Utilities.Task.BuildEngine%2A>   
+ <xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A>   
  [Project Element (MSBuild)](/visual-studio/msbuild/project-element-msbuild)   
  [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)

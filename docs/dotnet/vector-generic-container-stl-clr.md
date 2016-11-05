@@ -1,7 +1,7 @@
 ---
 title: "vector::generic_container (STL-CLR) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -106,7 +106,7 @@ a b c d e
  **Namespace:** cliext  
   
 ## See Also  
- <xref:Microsoft.VisualC.StlClr.IVector`1>   
+ <xref:Microsoft.VisualC.StlClr.IVector%601>   
  [vector (STL/CLR)](../dotnet/vector-stl-clr.md)   
  [vector::generic_iterator (STL/CLR)](../dotnet/vector-generic-iterator-stl-clr.md)   
  [vector::generic_reverse_iterator (STL/CLR)](../dotnet/vector-generic-reverse-iterator-stl-clr.md)   

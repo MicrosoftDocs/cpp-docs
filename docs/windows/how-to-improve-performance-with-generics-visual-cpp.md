@@ -1,7 +1,7 @@
 ---
 title: "How to: Improve Performance with Generics (Visual C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -100,7 +100,7 @@ Popped an int: 7
 ## Example  
  The new <xref:System.Collections.Generic?displayProperty=fullName> namespace contains many of the same collections found in the <xref:System.Collections?displayProperty=fullName> namespace, but they have been modified to accept generic type parameters. This eliminates the two drawbacks of non-generic collections: the boxing and unboxing of value types and the inability to specify the types to be stored in the collections. Operations on the two collections are identical; they differ only in how they are instantiated.  
   
- Compare the example written above with this example that uses a generic <xref:System.Collections.Generic.Stack`1> collection. On large collections that are frequently accessed, the performance of this example will be significantly greater than the preceding example.  
+ Compare the example written above with this example that uses a generic <xref:System.Collections.Generic.Stack%601> collection. On large collections that are frequently accessed, the performance of this example will be significantly greater than the preceding example.  
   
 ```  
 // perf_post_generics.cpp  

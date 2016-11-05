@@ -1,7 +1,7 @@
 ---
 title: "CWindow Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CWindow class"
 ms.assetid: fefa00c8-f053-4bcf-87bc-dc84f5386683
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -55,169 +55,169 @@ class CWindow
   
 |Name|Description|  
 |----------|-----------------|  
-|[CWindow::CWindow](../Topic/CWindow::CWindow.md)|Constructor.|  
+|[CWindow::CWindow](#cwindow__cwindow)|Constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CWindow::ArrangeIconicWindows](../Topic/CWindow::ArrangeIconicWindows.md)|Arranges all minimized child windows.|  
-|[CWindow::Attach](/visual-studio/profiling/attach)|Attaches a window to the `CWindow` object.|  
-|[CWindow::BeginPaint](../Topic/CWindow::BeginPaint.md)|Prepares the window for painting.|  
-|[CWindow::BringWindowToTop](../Topic/CWindow::BringWindowToTop.md)|Brings the window to the top of the Z order.|  
-|[CWindow::CenterWindow](../Topic/CWindow::CenterWindow.md)|Centers the window against a given window.|  
-|[CWindow::ChangeClipboardChain](../Topic/CWindow::ChangeClipboardChain.md)|Removes the window from the chain of Clipboard viewers.|  
-|[CWindow::CheckDlgButton](../Topic/CWindow::CheckDlgButton.md)|Changes the check state of the specified button.|  
-|[CWindow::CheckRadioButton](../Topic/CWindow::CheckRadioButton.md)|Checks the specified radio button.|  
-|[CWindow::ChildWindowFromPoint](../Topic/CWindow::ChildWindowFromPoint.md)|Retrieves the child window containing the specified point.|  
-|[CWindow::ChildWindowFromPointEx](../Topic/CWindow::ChildWindowFromPointEx.md)|Retrieves a particular type of child window containing the specified point.|  
-|[CWindow::ClientToScreen](../Topic/CWindow::ClientToScreen.md)|Converts client coordinates to screen coordinates.|  
-|[CWindow::Create](../Topic/CWindow::Create.md)|Creates a window.|  
-|[CWindow::CreateCaret](../Topic/CWindow::CreateCaret.md)|Creates a new shape for the system caret.|  
-|[CWindow::CreateGrayCaret](../Topic/CWindow::CreateGrayCaret.md)|Creates a gray rectangle for the system caret.|  
-|[CWindow::CreateSolidCaret](../Topic/CWindow::CreateSolidCaret.md)|Creates a solid rectangle for the system caret.|  
-|[CWindow::DeferWindowPos](../Topic/CWindow::DeferWindowPos.md)|Updates the specified multiple-window-position structure for the specified window.|  
-|[CWindow::DestroyWindow](../Topic/CWindow::DestroyWindow.md)|Destroys the window associated with the `CWindow` object.|  
-|[CWindow::Detach](/visual-studio/profiling/detach)|Detaches the window from the `CWindow` object.|  
-|[CWindow::DlgDirList](../Topic/CWindow::DlgDirList.md)|Fills a list box with the names of all files matching a specified path or file name.|  
-|[CWindow::DlgDirListComboBox](../Topic/CWindow::DlgDirListComboBox.md)|Fills a combo box with the names of all files matching a specified path or file name.|  
-|[CWindow::DlgDirSelect](../Topic/CWindow::DlgDirSelect.md)|Retrieves the current selection from a list box.|  
-|[CWindow::DlgDirSelectComboBox](../Topic/CWindow::DlgDirSelectComboBox.md)|Retrieves the current selection from a combo box.|  
-|[CWindow::DragAcceptFiles](../Topic/CWindow::DragAcceptFiles.md)|Registers whether the window accepts dragged files.|  
-|[CWindow::DrawMenuBar](../Topic/CWindow::DrawMenuBar.md)|Redraws the window's menu bar.|  
-|[CWindow::EnableScrollBar](../Topic/CWindow::EnableScrollBar.md)|Enables or disables the scroll bar arrows.|  
-|[CWindow::EnableWindow](../Topic/CWindow::EnableWindow.md)|Enables or disables input.|  
-|[CWindow::EndPaint](../Topic/CWindow::EndPaint.md)|Marks the end of painting.|  
-|[CWindow::FlashWindow](../Topic/CWindow::FlashWindow.md)|Flashes the window once.|  
-|[CWindow::GetClientRect](../Topic/CWindow::GetClientRect.md)|Retrieves the coordinates of the client area.|  
-|[CWindow::GetDC](../Topic/CWindow::GetDC.md)|Retrieves a device context for the client area.|  
-|[CWindow::GetDCEx](../Topic/CWindow::GetDCEx.md)|Retrieves a device context for the client area and allows clipping options.|  
-|[CWindow::GetDescendantWindow](../Topic/CWindow::GetDescendantWindow.md)|Retrieves the specified descendant window.|  
-|[CWindow::GetDlgControl](../Topic/CWindow::GetDlgControl.md)|Retrieves an interface on the specified control.|  
-|[CWindow::GetDlgCtrlID](../Topic/CWindow::GetDlgCtrlID.md)|Retrieves the window's identifier (for child windows only).|  
-|[CWindow::GetDlgHost](../Topic/CWindow::GetDlgHost.md)|Retrieves a pointer to an interface to the ATL Control hosting container.|  
-|[CWindow::GetDlgItem](../Topic/CWindow::GetDlgItem.md)|Retrieves the specified child window.|  
-|[CWindow::GetDlgItemInt](../Topic/CWindow::GetDlgItemInt.md)|Translates a control's text to an integer.|  
-|[CWindow::GetDlgItemText](../Topic/CWindow::GetDlgItemText.md)|Retrieves a control's text.|  
-|[CWindow::GetExStyle](../Topic/CWindow::GetExStyle.md)|Retrieves the extended window styles.|  
-|[CWindow::GetFont](../Topic/CWindow::GetFont.md)|Retrieves the window's current font.|  
-|[CWindow::GetHotKey](../Topic/CWindow::GetHotKey.md)|Determines the hot key associated with the window.|  
-|[CWindow::GetIcon](../Topic/CWindow::GetIcon.md)|Retrieves the window's large or small icon.|  
-|[CWindow::GetLastActivePopup](../Topic/CWindow::GetLastActivePopup.md)|Retrieves the most recently active pop-up window.|  
-|[CWindow::GetMenu](../Topic/CWindow::GetMenu.md)|Retrieves the window's menu.|  
-|[CWindow::GetNextDlgGroupItem](../Topic/CWindow::GetNextDlgGroupItem.md)|Retrieves the previous or next control within a group of controls.|  
-|[CWindow::GetNextDlgTabItem](../Topic/CWindow::GetNextDlgTabItem.md)|Retrieves the previous or next control having the **WS_TABSTOP** style.|  
-|[CWindow::GetParent](../Topic/CWindow::GetParent.md)|Retrieves the immediate parent window.|  
-|[CWindow::GetScrollInfo](../Topic/CWindow::GetScrollInfo.md)|Retrieves the parameters of a scroll bar.|  
-|[CWindow::GetScrollPos](../Topic/CWindow::GetScrollPos.md)|Retrieves the position of the scroll box.|  
-|[CWindow::GetScrollRange](../Topic/CWindow::GetScrollRange.md)|Retrieves the scroll bar range.|  
-|[CWindow::GetStyle](../Topic/CWindow::GetStyle.md)|Retrieves the window styles.|  
-|[CWindow::GetSystemMenu](../Topic/CWindow::GetSystemMenu.md)|Creates a copy of the system menu for modification.|  
-|[CWindow::GetTopLevelParent](../Topic/CWindow::GetTopLevelParent.md)|Retrieves the top-level parent or owner window.|  
-|[CWindow::GetTopLevelWindow](../Topic/CWindow::GetTopLevelWindow.md)|Retrieves the top-level owner window.|  
-|[CWindow::GetTopWindow](../Topic/CWindow::GetTopWindow.md)|Retrieves the top-level child window.|  
-|[CWindow::GetUpdateRect](../Topic/CWindow::GetUpdateRect.md)|Retrieves the coordinates of the smallest rectangle that completely encloses the update region.|  
-|[CWindow::GetUpdateRgn](../Topic/CWindow::GetUpdateRgn.md)|Retrieves the update region and copies it into a specified region.|  
-|[CWindow::GetWindow](../Topic/CWindow::GetWindow.md)|Retrieves the specified window.|  
-|[CWindow::GetWindowContextHelpId](../Topic/CWindow::GetWindowContextHelpId.md)|Retrieves the window's help context identifier.|  
-|[CWindow::GetWindowDC](../Topic/CWindow::GetWindowDC.md)|Retrieves a device context for the entire window.|  
-|[CWindow::GetWindowLong](../Topic/CWindow::GetWindowLong.md)|Retrieves a 32-bit value at a specified offset into the extra window memory.|  
-|[CWindow::GetWindowLongPtr](../Topic/CWindow::GetWindowLongPtr.md)|Retrieves information about the specified window, including a value at a specified offset into the extra window memory.|  
-|[CWindow::GetWindowPlacement](../Topic/CWindow::GetWindowPlacement.md)|Retrieves the show state and positions.|  
-|[CWindow::GetWindowProcessID](../Topic/CWindow::GetWindowProcessID.md)|Retrieves the identifier of the process that created the window.|  
-|[CWindow::GetWindowRect](../Topic/CWindow::GetWindowRect.md)|Retrieves the window's bounding dimensions.|  
-|[CWindow::GetWindowRgn](../Topic/CWindow::GetWindowRgn.md)|Obtains a copy of the window region of a window.|  
-|[CWindow::GetWindowText](../Topic/CWindow::GetWindowText.md)|Retrieves the window's text.|  
-|[CWindow::GetWindowTextLength](../Topic/CWindow::GetWindowTextLength.md)|Retrieves the length of the window's text.|  
-|[CWindow::GetWindowThreadID](../Topic/CWindow::GetWindowThreadID.md)|Retrieves the identifier of the thread that created the specified window.|  
-|[CWindow::GetWindowWord](../Topic/CWindow::GetWindowWord.md)|Retrieves a 16-bit value at a specified offset into the extra window memory.|  
-|[CWindow::GotoDlgCtrl](../Topic/CWindow::GotoDlgCtrl.md)|Sets the keyboard focus to a control in the dialog box.|  
-|[CWindow::HideCaret](../Topic/CWindow::HideCaret.md)|Hides the system caret.|  
-|[CWindow::HiliteMenuItem](../Topic/CWindow::HiliteMenuItem.md)|Highlights or removes the highlight from a top-level menu item.|  
-|[CWindow::Invalidate](../Topic/CWindow::Invalidate.md)|Invalidates the entire client area.|  
-|[CWindow::InvalidateRect](../Topic/CWindow::InvalidateRect.md)|Invalidates the client area within the specified rectangle.|  
-|[CWindow::InvalidateRgn](../Topic/CWindow::InvalidateRgn.md)|Invalidates the client area within the specified region.|  
-|[CWindow::IsChild](../Topic/CWindow::IsChild.md)|Determines whether the specified window is a child window.|  
-|[CWindow::IsDialogMessage](../Topic/CWindow::IsDialogMessage.md)|Determines whether a message is intended for the specified dialog box.|  
-|[CWindow::IsDlgButtonChecked](../Topic/CWindow::IsDlgButtonChecked.md)|Determines the check state of the button.|  
-|[CWindow::IsIconic](../Topic/CWindow::IsIconic.md)|Determines whether the window is minimized.|  
-|[CWindow::IsParentDialog](../Topic/CWindow::IsParentDialog.md)|Determines if the parent window of a control is a dialog window.|  
-|[CWindow::IsWindow](../Topic/CWindow::IsWindow.md)|Determines whether the specified window handle identifies an existing window.|  
-|[CWindow::IsWindowEnabled](../Topic/CWindow::IsWindowEnabled.md)|Determines whether the window is enabled for input.|  
-|[CWindow::IsWindowUnicode](../Topic/CWindow::IsWindowUnicode.md)|Determines whether the specified window is a native Unicode window.|  
-|[CWindow::IsWindowVisible](../Topic/CWindow::IsWindowVisible.md)|Determines the window's visibility state.|  
-|[CWindow::IsZoomed](../Topic/CWindow::IsZoomed.md)|Determines whether the window is maximized.|  
-|[CWindow::KillTimer](../Topic/CWindow::KillTimer.md)|Destroys a timer event.|  
-|[CWindow::LockWindowUpdate](../Topic/CWindow::LockWindowUpdate.md)|Disables or enables drawing in the window.|  
-|[CWindow::MapWindowPoints](../Topic/CWindow::MapWindowPoints.md)|Converts a set of points from the window's coordinate space to the coordinate space of another window.|  
-|[CWindow::MessageBox](../Topic/CWindow::MessageBox.md)|Displays a message box.|  
-|[CWindow::ModifyStyle](../Topic/CWindow::ModifyStyle.md)|Modifies the window styles.|  
-|[CWindow::ModifyStyleEx](../Topic/CWindow::ModifyStyleEx.md)|Modifies the extended window styles.|  
-|[CWindow::MoveWindow](../Topic/CWindow::MoveWindow.md)|Changes the window's size and position.|  
-|[CWindow::NextDlgCtrl](../Topic/CWindow::NextDlgCtrl.md)|Sets the keyboard focus to the next control in the dialog box.|  
-|[CWindow::OpenClipboard](../Topic/CWindow::OpenClipboard.md)|Opens the Clipboard.|  
-|[CWindow::PostMessage](../Topic/CWindow::PostMessage.md)|Places a message in the message queue associated with the thread that created the window. Returns without waiting for the thread to process the message.|  
-|[CWindow::PrevDlgCtrl](../Topic/CWindow::PrevDlgCtrl.md)|Sets the keyboard focus to the previous control in the dialog box.|  
-|[CWindow::Print](../Topic/CWindow::Print.md)|Requests that the window be drawn in a specified device context.|  
-|[CWindow::PrintClient](../Topic/CWindow::PrintClient.md)|Requests that the window's client area be drawn in a specified device context.|  
-|[CWindow::RedrawWindow](../Topic/CWindow::RedrawWindow.md)|Updates a specified rectangle or region in the client area.|  
-|[CWindow::ReleaseDC](../Topic/CWindow::ReleaseDC.md)|Releases a device context.|  
-|[CWindow::ResizeClient](../Topic/CWindow::ResizeClient.md)|Resizes the window.|  
-|[CWindow::ScreenToClient](../Topic/CWindow::ScreenToClient.md)|Converts screen coordinates to client coordinates.|  
-|[CWindow::ScrollWindow](../Topic/CWindow::ScrollWindow.md)|Scrolls the specified client area.|  
-|[CWindow::ScrollWindowEx](../Topic/CWindow::ScrollWindowEx.md)|Scrolls the specified client area with additional features.|  
-|[CWindow::SendDlgItemMessage](../Topic/CWindow::SendDlgItemMessage.md)|Sends a message to a control.|  
-|[CWindow::SendMessage](../Topic/CWindow::SendMessage.md)|Sends a message to the window and does not return until the window procedure has processed the message.|  
-|[CWindow::SendMessageToDescendants](../Topic/CWindow::SendMessageToDescendants.md)|Sends a message to the specified descendant windows.|  
-|[CWindow::SendNotifyMessage](../Topic/CWindow::SendNotifyMessage.md)|Sends a message to the window. If the window was created by the calling thread, `SendNotifyMessage` does not return until the window procedure has processed the message. Otherwise, it returns immediately.|  
-|[CWindow::SetActiveWindow](../Topic/CWindow::SetActiveWindow.md)|Activates the window.|  
-|[CWindow::SetCapture](../Topic/CWindow::SetCapture.md)|Sends all subsequent mouse input to the window.|  
-|[CWindow::SetClipboardViewer](../Topic/CWindow::SetClipboardViewer.md)|Adds the window to the Clipboard viewer chain.|  
-|[CWindow::SetDlgCtrlID](../Topic/CWindow::SetDlgCtrlID.md)|Changes the window's identifier.|  
-|[CWindow::SetDlgItemInt](../Topic/CWindow::SetDlgItemInt.md)|Changes a control's text to the string representation of an integer value.|  
-|[CWindow::SetDlgItemText](../Topic/CWindow::SetDlgItemText.md)|Changes a control's text.|  
-|[CWindow::SetFocus](../Topic/CWindow::SetFocus.md)|Sets the input focus to the window.|  
-|[CWindow::SetFont](../Topic/CWindow::SetFont.md)|Changes the window's current font.|  
-|[CWindow::SetHotKey](../Topic/CWindow::SetHotKey.md)|Associates a hot key with the window.|  
-|[CWindow::SetIcon](../Topic/CWindow::SetIcon.md)|Changes the window's large or small icon.|  
-|[CWindow::SetMenu](../Topic/CWindow::SetMenu.md)|Changes the window's current menu.|  
-|[CWindow::SetParent](../Topic/CWindow::SetParent.md)|Changes the parent window.|  
-|[CWindow::SetRedraw](../Topic/CWindow::SetRedraw.md)|Sets or clears the redraw flag.|  
-|[CWindow::SetScrollInfo](../Topic/CWindow::SetScrollInfo.md)|Sets the parameters of a scroll bar.|  
-|[CWindow::SetScrollPos](../Topic/CWindow::SetScrollPos.md)|Changes the position of the scroll box.|  
-|[CWindow::SetScrollRange](../Topic/CWindow::SetScrollRange.md)|Changes the scroll bar range.|  
-|[CWindow::SetTimer](../Topic/CWindow::SetTimer.md)|Creates a timer event.|  
-|[CWindow::SetWindowContextHelpId](../Topic/CWindow::SetWindowContextHelpId.md)|Sets the window's help context identifier.|  
-|[CWindow::SetWindowLong](../Topic/CWindow::SetWindowLong.md)|Sets a 32-bit value at a specified offset into the extra window memory.|  
-|[CWindow::SetWindowLongPtr](../Topic/CWindow::SetWindowLongPtr.md)|Changes an attribute of the specified window, and also sets a value at the specified offset in the extra window memory.|  
-|[CWindow::SetWindowPlacement](../Topic/CWindow::SetWindowPlacement.md)|Sets the show state and positions.|  
-|[CWindow::SetWindowPos](../Topic/CWindow::SetWindowPos.md)|Sets the size, position, and Z order.|  
-|[CWindow::SetWindowRgn](../Topic/CWindow::SetWindowRgn.md)|Sets the window region of a window.|  
-|[CWindow::SetWindowText](../Topic/CWindow::SetWindowText.md)|Changes the window's text.|  
-|[CWindow::SetWindowWord](../Topic/CWindow::SetWindowWord.md)|Sets a 16-bit value at a specified offset into the extra window memory.|  
-|[CWindow::ShowCaret](../Topic/CWindow::ShowCaret.md)|Displays the system caret.|  
-|[CWindow::ShowOwnedPopups](../Topic/CWindow::ShowOwnedPopups.md)|Shows or hides the pop-up windows owned by the window.|  
-|[CWindow::ShowScrollBar](../Topic/CWindow::ShowScrollBar.md)|Shows or hides a scroll bar.|  
-|[CWindow::ShowWindow](../Topic/CWindow::ShowWindow.md)|Sets the window's show state.|  
-|[CWindow::ShowWindowAsync](../Topic/CWindow::ShowWindowAsync.md)|Sets the show state of a window created by a different thread.|  
-|[CWindow::UpdateWindow](../Topic/CWindow::UpdateWindow.md)|Updates the client area.|  
-|[CWindow::ValidateRect](../Topic/CWindow::ValidateRect.md)|Validates the client area within the specified rectangle.|  
-|[CWindow::ValidateRgn](../Topic/CWindow::ValidateRgn.md)|Validates the client area within the specified region.|  
-|[CWindow::WinHelp](../Topic/CWindow::WinHelp.md)|Starts Windows Help.|  
+|[CWindow::ArrangeIconicWindows](#cwindow__arrangeiconicwindows)|Arranges all minimized child windows.|  
+|[CWindow::Attach](#cwindow__attach)|Attaches a window to the `CWindow` object.|  
+|[CWindow::BeginPaint](#cwindow__beginpaint)|Prepares the window for painting.|  
+|[CWindow::BringWindowToTop](#cwindow__bringwindowtotop)|Brings the window to the top of the Z order.|  
+|[CWindow::CenterWindow](#cwindow__centerwindow)|Centers the window against a given window.|  
+|[CWindow::ChangeClipboardChain](#cwindow__changeclipboardchain)|Removes the window from the chain of Clipboard viewers.|  
+|[CWindow::CheckDlgButton](#cwindow__checkdlgbutton)|Changes the check state of the specified button.|  
+|[CWindow::CheckRadioButton](#cwindow__checkradiobutton)|Checks the specified radio button.|  
+|[CWindow::ChildWindowFromPoint](#cwindow__childwindowfrompoint)|Retrieves the child window containing the specified point.|  
+|[CWindow::ChildWindowFromPointEx](#cwindow__childwindowfrompointex)|Retrieves a particular type of child window containing the specified point.|  
+|[CWindow::ClientToScreen](#cwindow__clienttoscreen)|Converts client coordinates to screen coordinates.|  
+|[CWindow::Create](#cwindow__create)|Creates a window.|  
+|[CWindow::CreateCaret](#cwindow__createcaret)|Creates a new shape for the system caret.|  
+|[CWindow::CreateGrayCaret](#cwindow__creategraycaret)|Creates a gray rectangle for the system caret.|  
+|[CWindow::CreateSolidCaret](#cwindow__createsolidcaret)|Creates a solid rectangle for the system caret.|  
+|[CWindow::DeferWindowPos](#cwindow__deferwindowpos)|Updates the specified multiple-window-position structure for the specified window.|  
+|[CWindow::DestroyWindow](#cwindow__destroywindow)|Destroys the window associated with the `CWindow` object.|  
+|[CWindow::Detach](#cwindow__detach)|Detaches the window from the `CWindow` object.|  
+|[CWindow::DlgDirList](#cwindow__dlgdirlist)|Fills a list box with the names of all files matching a specified path or file name.|  
+|[CWindow::DlgDirListComboBox](#cwindow__dlgdirlistcombobox)|Fills a combo box with the names of all files matching a specified path or file name.|  
+|[CWindow::DlgDirSelect](#cwindow__dlgdirselect)|Retrieves the current selection from a list box.|  
+|[CWindow::DlgDirSelectComboBox](#cwindow__dlgdirselectcombobox)|Retrieves the current selection from a combo box.|  
+|[CWindow::DragAcceptFiles](#cwindow__dragacceptfiles)|Registers whether the window accepts dragged files.|  
+|[CWindow::DrawMenuBar](#cwindow__drawmenubar)|Redraws the window's menu bar.|  
+|[CWindow::EnableScrollBar](#cwindow__enablescrollbar)|Enables or disables the scroll bar arrows.|  
+|[CWindow::EnableWindow](#cwindow__enablewindow)|Enables or disables input.|  
+|[CWindow::EndPaint](#cwindow__endpaint)|Marks the end of painting.|  
+|[CWindow::FlashWindow](#cwindow__flashwindow)|Flashes the window once.|  
+|[CWindow::GetClientRect](#cwindow__getclientrect)|Retrieves the coordinates of the client area.|  
+|[CWindow::GetDC](#cwindow__getdc)|Retrieves a device context for the client area.|  
+|[CWindow::GetDCEx](#cwindow__getdcex)|Retrieves a device context for the client area and allows clipping options.|  
+|[CWindow::GetDescendantWindow](#cwindow__getdescendantwindow)|Retrieves the specified descendant window.|  
+|[CWindow::GetDlgControl](#cwindow__getdlgcontrol)|Retrieves an interface on the specified control.|  
+|[CWindow::GetDlgCtrlID](#cwindow__getdlgctrlid)|Retrieves the window's identifier (for child windows only).|  
+|[CWindow::GetDlgHost](#cwindow__getdlghost)|Retrieves a pointer to an interface to the ATL Control hosting container.|  
+|[CWindow::GetDlgItem](#cwindow__getdlgitem)|Retrieves the specified child window.|  
+|[CWindow::GetDlgItemInt](#cwindow__getdlgitemint)|Translates a control's text to an integer.|  
+|[CWindow::GetDlgItemText](#cwindow__getdlgitemtext)|Retrieves a control's text.|  
+|[CWindow::GetExStyle](#cwindow__getexstyle)|Retrieves the extended window styles.|  
+|[CWindow::GetFont](#cwindow__getfont)|Retrieves the window's current font.|  
+|[CWindow::GetHotKey](#cwindow__gethotkey)|Determines the hot key associated with the window.|  
+|[CWindow::GetIcon](#cwindow__geticon)|Retrieves the window's large or small icon.|  
+|[CWindow::GetLastActivePopup](#cwindow__getlastactivepopup)|Retrieves the most recently active pop-up window.|  
+|[CWindow::GetMenu](#cwindow__getmenu)|Retrieves the window's menu.|  
+|[CWindow::GetNextDlgGroupItem](#cwindow__getnextdlggroupitem)|Retrieves the previous or next control within a group of controls.|  
+|[CWindow::GetNextDlgTabItem](#cwindow__getnextdlgtabitem)|Retrieves the previous or next control having the **WS_TABSTOP** style.|  
+|[CWindow::GetParent](#cwindow__getparent)|Retrieves the immediate parent window.|  
+|[CWindow::GetScrollInfo](#cwindow__getscrollinfo)|Retrieves the parameters of a scroll bar.|  
+|[CWindow::GetScrollPos](#cwindow__getscrollpos)|Retrieves the position of the scroll box.|  
+|[CWindow::GetScrollRange](#cwindow__getscrollrange)|Retrieves the scroll bar range.|  
+|[CWindow::GetStyle](#cwindow__getstyle)|Retrieves the window styles.|  
+|[CWindow::GetSystemMenu](#cwindow__getsystemmenu)|Creates a copy of the system menu for modification.|  
+|[CWindow::GetTopLevelParent](#cwindow__gettoplevelparent)|Retrieves the top-level parent or owner window.|  
+|[CWindow::GetTopLevelWindow](#cwindow__gettoplevelwindow)|Retrieves the top-level owner window.|  
+|[CWindow::GetTopWindow](#cwindow__gettopwindow)|Retrieves the top-level child window.|  
+|[CWindow::GetUpdateRect](#cwindow__getupdaterect)|Retrieves the coordinates of the smallest rectangle that completely encloses the update region.|  
+|[CWindow::GetUpdateRgn](#cwindow__getupdatergn)|Retrieves the update region and copies it into a specified region.|  
+|[CWindow::GetWindow](#cwindow__getwindow)|Retrieves the specified window.|  
+|[CWindow::GetWindowContextHelpId](#cwindow__getwindowcontexthelpid)|Retrieves the window's help context identifier.|  
+|[CWindow::GetWindowDC](#cwindow__getwindowdc)|Retrieves a device context for the entire window.|  
+|[CWindow::GetWindowLong](#cwindow__getwindowlong)|Retrieves a 32-bit value at a specified offset into the extra window memory.|  
+|[CWindow::GetWindowLongPtr](#cwindow__getwindowlongptr)|Retrieves information about the specified window, including a value at a specified offset into the extra window memory.|  
+|[CWindow::GetWindowPlacement](#cwindow__getwindowplacement)|Retrieves the show state and positions.|  
+|[CWindow::GetWindowProcessID](#cwindow__getwindowprocessid)|Retrieves the identifier of the process that created the window.|  
+|[CWindow::GetWindowRect](#cwindow__getwindowrect)|Retrieves the window's bounding dimensions.|  
+|[CWindow::GetWindowRgn](#cwindow__getwindowrgn)|Obtains a copy of the window region of a window.|  
+|[CWindow::GetWindowText](#cwindow__getwindowtext)|Retrieves the window's text.|  
+|[CWindow::GetWindowTextLength](#cwindow__getwindowtextlength)|Retrieves the length of the window's text.|  
+|[CWindow::GetWindowThreadID](#cwindow__getwindowthreadid)|Retrieves the identifier of the thread that created the specified window.|  
+|[CWindow::GetWindowWord](#cwindow__getwindowword)|Retrieves a 16-bit value at a specified offset into the extra window memory.|  
+|[CWindow::GotoDlgCtrl](#cwindow__gotodlgctrl)|Sets the keyboard focus to a control in the dialog box.|  
+|[CWindow::HideCaret](#cwindow__hidecaret)|Hides the system caret.|  
+|[CWindow::HiliteMenuItem](#cwindow__hilitemenuitem)|Highlights or removes the highlight from a top-level menu item.|  
+|[CWindow::Invalidate](#cwindow__invalidate)|Invalidates the entire client area.|  
+|[CWindow::InvalidateRect](#cwindow__invalidaterect)|Invalidates the client area within the specified rectangle.|  
+|[CWindow::InvalidateRgn](#cwindow__invalidatergn)|Invalidates the client area within the specified region.|  
+|[CWindow::IsChild](#cwindow__ischild)|Determines whether the specified window is a child window.|  
+|[CWindow::IsDialogMessage](#cwindow__isdialogmessage)|Determines whether a message is intended for the specified dialog box.|  
+|[CWindow::IsDlgButtonChecked](#cwindow__isdlgbuttonchecked)|Determines the check state of the button.|  
+|[CWindow::IsIconic](#cwindow__isiconic)|Determines whether the window is minimized.|  
+|[CWindow::IsParentDialog](#cwindow__isparentdialog)|Determines if the parent window of a control is a dialog window.|  
+|[CWindow::IsWindow](#cwindow__iswindow)|Determines whether the specified window handle identifies an existing window.|  
+|[CWindow::IsWindowEnabled](#cwindow__iswindowenabled)|Determines whether the window is enabled for input.|  
+|[CWindow::IsWindowUnicode](#cwindow__iswindowunicode)|Determines whether the specified window is a native Unicode window.|  
+|[CWindow::IsWindowVisible](#cwindow__iswindowvisible)|Determines the window's visibility state.|  
+|[CWindow::IsZoomed](#cwindow__iszoomed)|Determines whether the window is maximized.|  
+|[CWindow::KillTimer](#cwindow__killtimer)|Destroys a timer event.|  
+|[CWindow::LockWindowUpdate](#cwindow__lockwindowupdate)|Disables or enables drawing in the window.|  
+|[CWindow::MapWindowPoints](#cwindow__mapwindowpoints)|Converts a set of points from the window's coordinate space to the coordinate space of another window.|  
+|[CWindow::MessageBox](#cwindow__messagebox)|Displays a message box.|  
+|[CWindow::ModifyStyle](#cwindow__modifystyle)|Modifies the window styles.|  
+|[CWindow::ModifyStyleEx](#cwindow__modifystyleex)|Modifies the extended window styles.|  
+|[CWindow::MoveWindow](#cwindow__movewindow)|Changes the window's size and position.|  
+|[CWindow::NextDlgCtrl](#cwindow__nextdlgctrl)|Sets the keyboard focus to the next control in the dialog box.|  
+|[CWindow::OpenClipboard](#cwindow__openclipboard)|Opens the Clipboard.|  
+|[CWindow::PostMessage](#cwindow__postmessage)|Places a message in the message queue associated with the thread that created the window. Returns without waiting for the thread to process the message.|  
+|[CWindow::PrevDlgCtrl](#cwindow__prevdlgctrl)|Sets the keyboard focus to the previous control in the dialog box.|  
+|[CWindow::Print](#cwindow__print)|Requests that the window be drawn in a specified device context.|  
+|[CWindow::PrintClient](#cwindow__printclient)|Requests that the window's client area be drawn in a specified device context.|  
+|[CWindow::RedrawWindow](#cwindow__redrawwindow)|Updates a specified rectangle or region in the client area.|  
+|[CWindow::ReleaseDC](#cwindow__releasedc)|Releases a device context.|  
+|[CWindow::ResizeClient](#cwindow__resizeclient)|Resizes the window.|  
+|[CWindow::ScreenToClient](#cwindow__screentoclient)|Converts screen coordinates to client coordinates.|  
+|[CWindow::ScrollWindow](#cwindow__scrollwindow)|Scrolls the specified client area.|  
+|[CWindow::ScrollWindowEx](#cwindow__scrollwindowex)|Scrolls the specified client area with additional features.|  
+|[CWindow::SendDlgItemMessage](#cwindow__senddlgitemmessage)|Sends a message to a control.|  
+|[CWindow::SendMessage](#cwindow__sendmessage)|Sends a message to the window and does not return until the window procedure has processed the message.|  
+|[CWindow::SendMessageToDescendants](#cwindow__sendmessagetodescendants)|Sends a message to the specified descendant windows.|  
+|[CWindow::SendNotifyMessage](#cwindow__sendnotifymessage)|Sends a message to the window. If the window was created by the calling thread, `SendNotifyMessage` does not return until the window procedure has processed the message. Otherwise, it returns immediately.|  
+|[CWindow::SetActiveWindow](#cwindow__setactivewindow)|Activates the window.|  
+|[CWindow::SetCapture](#cwindow__setcapture)|Sends all subsequent mouse input to the window.|  
+|[CWindow::SetClipboardViewer](#cwindow__setclipboardviewer)|Adds the window to the Clipboard viewer chain.|  
+|[CWindow::SetDlgCtrlID](#cwindow__setdlgctrlid)|Changes the window's identifier.|  
+|[CWindow::SetDlgItemInt](#cwindow__setdlgitemint)|Changes a control's text to the string representation of an integer value.|  
+|[CWindow::SetDlgItemText](#cwindow__setdlgitemtext)|Changes a control's text.|  
+|[CWindow::SetFocus](#cwindow__setfocus)|Sets the input focus to the window.|  
+|[CWindow::SetFont](#cwindow__setfont)|Changes the window's current font.|  
+|[CWindow::SetHotKey](#cwindow__sethotkey)|Associates a hot key with the window.|  
+|[CWindow::SetIcon](#cwindow__seticon)|Changes the window's large or small icon.|  
+|[CWindow::SetMenu](#cwindow__setmenu)|Changes the window's current menu.|  
+|[CWindow::SetParent](#cwindow__setparent)|Changes the parent window.|  
+|[CWindow::SetRedraw](#cwindow__setredraw)|Sets or clears the redraw flag.|  
+|[CWindow::SetScrollInfo](#cwindow__setscrollinfo)|Sets the parameters of a scroll bar.|  
+|[CWindow::SetScrollPos](#cwindow__setscrollpos)|Changes the position of the scroll box.|  
+|[CWindow::SetScrollRange](#cwindow__setscrollrange)|Changes the scroll bar range.|  
+|[CWindow::SetTimer](#cwindow__settimer)|Creates a timer event.|  
+|[CWindow::SetWindowContextHelpId](#cwindow__setwindowcontexthelpid)|Sets the window's help context identifier.|  
+|[CWindow::SetWindowLong](#cwindow__setwindowlong)|Sets a 32-bit value at a specified offset into the extra window memory.|  
+|[CWindow::SetWindowLongPtr](#cwindow__setwindowlongptr)|Changes an attribute of the specified window, and also sets a value at the specified offset in the extra window memory.|  
+|[CWindow::SetWindowPlacement](#cwindow__setwindowplacement)|Sets the show state and positions.|  
+|[CWindow::SetWindowPos](#cwindow__setwindowpos)|Sets the size, position, and Z order.|  
+|[CWindow::SetWindowRgn](#cwindow__setwindowrgn)|Sets the window region of a window.|  
+|[CWindow::SetWindowText](#cwindow__setwindowtext)|Changes the window's text.|  
+|[CWindow::SetWindowWord](#cwindow__setwindowword)|Sets a 16-bit value at a specified offset into the extra window memory.|  
+|[CWindow::ShowCaret](#cwindow__showcaret)|Displays the system caret.|  
+|[CWindow::ShowOwnedPopups](#cwindow__showownedpopups)|Shows or hides the pop-up windows owned by the window.|  
+|[CWindow::ShowScrollBar](#cwindow__showscrollbar)|Shows or hides a scroll bar.|  
+|[CWindow::ShowWindow](#cwindow__showwindow)|Sets the window's show state.|  
+|[CWindow::ShowWindowAsync](#cwindow__showwindowasync)|Sets the show state of a window created by a different thread.|  
+|[CWindow::UpdateWindow](#cwindow__updatewindow)|Updates the client area.|  
+|[CWindow::ValidateRect](#cwindow__validaterect)|Validates the client area within the specified rectangle.|  
+|[CWindow::ValidateRgn](#cwindow__validatergn)|Validates the client area within the specified region.|  
+|[CWindow::WinHelp](#cwindow__winhelp)|Starts Windows Help.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CWindow::operator HWND](../Topic/CWindow::operator%20HWND.md)|Converts the `CWindow` object to an `HWND`.|  
-|[CWindow::operator =](../Topic/CWindow::operator%20=.md)|Assigns an `HWND` to the `CWindow` object.|  
+|[CWindow::operator HWND](#cwindow__operator_hwnd)|Converts the `CWindow` object to an `HWND`.|  
+|[CWindow::operator =](#cwindow__operator__eq)|Assigns an `HWND` to the `CWindow` object.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CWindow::m_hWnd](../Topic/CWindow::m_hWnd.md)|The handle to the window associated with the `CWindow` object.|  
-|[CWindow::rcDefault](../Topic/CWindow::rcDefault.md)|Contains default window dimensions.|  
+|[CWindow::m_hWnd](#cwindow__m_hwnd)|The handle to the window associated with the `CWindow` object.|  
+|[CWindow::rcDefault](#cwindow__rcdefault)|Contains default window dimensions.|  
   
 ## Remarks  
  `CWindow` provides the base functionality for manipulating a window in ATL. Many of the `CWindow` methods simply wrap one of the Win32 API functions. For example, compare the prototypes for `CWindow::ShowWindow` and `ShowWindow`:  
@@ -425,7 +425,7 @@ HWND Create(LPCTSTR lpstrWndClass,
  A pointer to the window-creation data contained in a [CREATESTRUCT](http://msdn.microsoft.com/library/windows/desktop/ms632603) structure.  
   
 ### Return Value  
- If successful, the handle to the newly created window, specified by [m_hWnd](../Topic/CWindow::m_hWnd.md). Otherwise, **NULL**.  
+ If successful, the handle to the newly created window, specified by [m_hWnd](#cwindow__m_hwnd). Otherwise, **NULL**.  
   
 ### Remarks  
  `CWindow::rcDefault` is defined as `__declspec(selectany) RECT CWindow::rcDefault = {CW_USEDEFAULT, CW_USEDEFAULT, 0, 0};`.  
@@ -480,7 +480,7 @@ CWindow(HWND hWnd = NULL) throw();
  [in] The handle to a window.  
   
 ### Remarks  
- Initializes the [m_hWnd](../Topic/CWindow::m_hWnd.md) member to `hWnd`, which by default is **NULL**.  
+ Initializes the [m_hWnd](#cwindow__m_hwnd) member to `hWnd`, which by default is **NULL**.  
   
 > [!NOTE]
 > `CWindow::CWindow` does not create a window. Classes [CWindowImpl](../../atl/reference/cwindowimpl-class.md), [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md), and [CDialogImpl](../../atl/reference/cdialogimpl-class.md) (all of which derive from `CWindow`) provide a method to create a window or dialog box, which is then assigned to `CWindow::m_hWnd`. You can also use the [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) Win32 function.  
@@ -502,7 +502,7 @@ HDWP DeferWindowPos(HDWP hWinPosInfo,
  See [DeferWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms632681) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ##  <a name="cwindow__destroywindow"></a>  CWindow::DestroyWindow  
- Destroys the window associated with the `CWindow` object and sets [m_hWnd](../Topic/CWindow::m_hWnd.md) to **NULL**.  
+ Destroys the window associated with the `CWindow` object and sets [m_hWnd](#cwindow__m_hwnd) to **NULL**.  
   
 ```
 BOOL DestroyWindow() throw();
@@ -517,7 +517,7 @@ BOOL DestroyWindow() throw();
  [!code-cpp[NVC_ATL_Windowing#5](../../atl/codesnippet/CPP/cwindow-class_5.cpp)]  
   
 ##  <a name="cwindow__detach"></a>  CWindow::Detach  
- Detaches [m_hWnd](../Topic/CWindow::m_hWnd.md) from the `CWindow` object and sets `m_hWnd` to **NULL**.  
+ Detaches [m_hWnd](#cwindow__m_hwnd) from the `CWindow` object and sets `m_hWnd` to **NULL**.  
   
 ```
 HWND Detach() throw();
@@ -808,7 +808,7 @@ DWORD GetExStyle() const throw();
  The window's extended styles.  
   
 ### Remarks  
- To retrieve the regular window styles, call [GetStyle](../Topic/CWindow::GetStyle.md).  
+ To retrieve the regular window styles, call [GetStyle](#cwindow__getstyle).  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#10](../../atl/codesnippet/CPP/cwindow-class_10.cpp)]  
@@ -946,7 +946,7 @@ DWORD GetStyle() const throw();
  The window's styles.  
   
 ### Remarks  
- To retrieve the extended window styles, call [GetExStyle](../Topic/CWindow::GetExStyle.md).  
+ To retrieve the extended window styles, call [GetExStyle](#cwindow__getexstyle).  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#12](../../atl/codesnippet/CPP/cwindow-class_12.cpp)]  
@@ -1058,7 +1058,7 @@ LONG GetWindowLong(int nIndex) const throw();
  See [GetWindowLong](http://msdn.microsoft.com/library/windows/desktop/ms633584) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 > [!NOTE]
->  To write code that is compatible with both 32-bit and 64-bit versions of Windows, use [CWindow::GetWindowLongPtr](../Topic/CWindow::GetWindowLongPtr.md).  
+>  To write code that is compatible with both 32-bit and 64-bit versions of Windows, use [CWindow::GetWindowLongPtr](#cwindow__getwindowlongptr).  
   
 ##  <a name="cwindow__getwindowlongptr"></a>  CWindow::GetWindowLongPtr  
  Retrieves information about the specified window, including a value at a specified offset into the extra window memory.  
@@ -1401,7 +1401,7 @@ BOOL LockWindowUpdate(BOOL bLock = TRUE) throw();
  **TRUE** if the window is successfully locked; otherwise, **FALSE**.  
   
 ### Remarks  
- If `bLock` is **TRUE**, this method passes [m_hWnd](../Topic/CWindow::m_hWnd.md) to the Win32 function; otherwise, it passes **NULL**.  
+ If `bLock` is **TRUE**, this method passes [m_hWnd](#cwindow__m_hwnd) to the Win32 function; otherwise, it passes **NULL**.  
   
 ##  <a name="cwindow__m_hwnd"></a>  CWindow::m_hWnd  
  Contains a handle to the window associated with the `CWindow` object.  
@@ -1477,7 +1477,7 @@ BOOL ModifyStyle(DWORD dwRemove,
   
 - `SWP_NOACTIVATE` Does not activate the window.  
   
- To modify a window's extended styles, call [ModifyStyleEx](../Topic/CWindow::ModifyStyleEx.md).  
+ To modify a window's extended styles, call [ModifyStyleEx](#cwindow__modifystyleex).  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#25](../../atl/codesnippet/CPP/cwindow-class_25.cpp)]  
@@ -1517,7 +1517,7 @@ BOOL ModifyStyleEx(DWORD dwRemove,
   
 - `SWP_NOACTIVATE` Does not activate the window.  
   
- To modify windows using regular window styles, call [ModifyStyle](../Topic/CWindow::ModifyStyle.md).  
+ To modify windows using regular window styles, call [ModifyStyle](#cwindow__modifystyle).  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#26](../../atl/codesnippet/CPP/cwindow-class_26.cpp)]  
@@ -1568,7 +1568,7 @@ BOOL OpenClipboard() throw();
 ```  
   
 ##  <a name="cwindow__operator__eq"></a>  CWindow::operator =  
- Assigns an `HWND` to the `CWindow` object by setting the [m_hWnd](../Topic/CWindow::m_hWnd.md) member to `hWnd`.  
+ Assigns an `HWND` to the `CWindow` object by setting the [m_hWnd](#cwindow__m_hwnd) member to `hWnd`.  
   
 ```
 CWindow& operator= (HWND hWnd) throw();
@@ -2070,7 +2070,7 @@ LONG SetWindowLong(int nIndex,  LONG dwNewLong) throw();
  See [SetWindowLong](http://msdn.microsoft.com/library/windows/desktop/ms633591) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 > [!NOTE]
->  To write code that is compatible with both 32-bit and 64-bit versions of Windows, use [CWindow::SetWindowLongPtr](../Topic/CWindow::SetWindowLongPtr.md).  
+>  To write code that is compatible with both 32-bit and 64-bit versions of Windows, use [CWindow::SetWindowLongPtr](#cwindow__setwindowlongptr).  
   
 ##  <a name="cwindow__setwindowlongptr"></a>  CWindow::SetWindowLongPtr  
  Changes an attribute of the specified window, and also sets a value at the specified offset in the extra window memory.  
@@ -2250,10 +2250,3 @@ BOOL WinHelp(LPCTSTR lpszHelp,
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

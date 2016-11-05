@@ -36,17 +36,17 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # &#39;System.Nullable&#39; does not satisfy the &#39;Structure&#39; constraint for type parameter &#39;&lt;typeparametername&gt;&#39;
-A generic type is invoked passing a type argument of <xref:System.Nullable`1> to a type parameter with a `Structure` constraint.  
+A generic type is invoked passing a type argument of <xref:System.Nullable%601> to a type parameter with a `Structure` constraint.  
   
- The common language runtime (CLR) specifically disallows the <xref:System.Nullable`1> structure as a type argument to itself. Even though it is a structure and would otherwise satisfy a `Structure` constraint, using it recursively could lead to awkward constructions such as `Nullable(Of Nullable(Of Nullable))`.  
+ The common language runtime (CLR) specifically disallows the <xref:System.Nullable%601> structure as a type argument to itself. Even though it is a structure and would otherwise satisfy a `Structure` constraint, using it recursively could lead to awkward constructions such as `Nullable(Of Nullable(Of Nullable))`.  
   
  **Error ID:** BC32115  
   
 ### To correct this error  
   
--   Either remove the `Structure` constraint from the type parameter, or change the type argument to some value type other than <xref:System.Nullable`1>.  
+-   Either remove the `Structure` constraint from the type parameter, or change the type argument to some value type other than <xref:System.Nullable%601>.  
   
 ## See Also  
- <xref:System.Nullable`1>   
+ <xref:System.Nullable%601>   
  [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
  [Structure (Visual Basic)](http://msdn.microsoft.com/en-us/263ce115-ac36-4c05-8cb7-0e0eead5c6d0)

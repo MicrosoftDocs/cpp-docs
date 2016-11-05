@@ -1,7 +1,7 @@
 ---
 title: "How to: Provide Custom Toolbox Items By Using Interop Assemblies | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -64,7 +64,7 @@ translation.priority.mt:
     > [!NOTE]
     >  The <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> interface inherits from the <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> interface. <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> does not derive from <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> and does not implement its methods.  
   
-     <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> are obtained by calling the <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService*> method on the <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> service by using the service ID of `SID_SVsToolbox`.  
+     <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> are obtained by calling the <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> method on the <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> service by using the service ID of `SID_SVsToolbox`.  
   
      The interface ID `IID_IVSToolbox2` is used to obtain <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>, and the interface ID `IID_IVSToolbox3` returns <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>.  
   
@@ -80,9 +80,9 @@ translation.priority.mt:
   
 2.  Use instances of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> and the <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> interfaces to add tabs (sections) and controls to the **Toolbox**.  
   
-     In the sample below, a new tab is added with a localized name using the <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2.AddTab*> method.  
+     In the sample below, a new tab is added with a localized name using the <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2.AddTab%2A> method.  
   
-     As this localized name is not invariant, a non-localized invariant name (in this case `L"HTML"`) is set by a call to the <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.SetIDOfTab*> method.  
+     As this localized name is not invariant, a non-localized invariant name (in this case `L"HTML"`) is set by a call to the <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.SetIDOfTab%2A> method.  
   
      If the toolbox tab already exists, `AddTab2` returns E_FAIL, in which case it is assumed that the tab was properly added before an attempt is made to retrieve the invariant name.  
   
@@ -124,9 +124,9 @@ translation.priority.mt:
         > [!NOTE]
         >  The <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider2> interfaces should not be implemented on the same class that implements the <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> interface.  
   
-    3.  Programmatically inform the Toolbox that a specific implementation of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider2> interfaces provides support for custom data formats with either of the equivalent methods—<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProviderRegistry.RegisterDataProvider*> or <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox.RegisterDataProvider*>.  
+    3.  Programmatically inform the Toolbox that a specific implementation of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider2> interfaces provides support for custom data formats with either of the equivalent methods—<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProviderRegistry.RegisterDataProvider%2A> or <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox.RegisterDataProvider%2A>.  
   
-         Calling the <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox.RegisterDataProvider*> method is typically done in the implementation of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite*> method or in the <xref:Microsoft.VisualStudio.Shell.WindowPane.OnCreate*> handler method for when the VSPackage becomes active.  
+         Calling the <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox.RegisterDataProvider%2A> method is typically done in the implementation of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> method or in the <xref:Microsoft.VisualStudio.Shell.WindowPane.OnCreate%2A> handler method for when the VSPackage becomes active.  
   
         ```cpp  
         CComPtr<IVsToolboxDataProviderRegistry> pTB;  

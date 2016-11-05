@@ -1,7 +1,7 @@
 ---
 title: "Overview of Generics in Visual C++ | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -49,7 +49,7 @@ Generics are parameterized types supported by the common language runtime. A par
 ## Generic Functions and Types  
  Class types, as long as they are managed types, may be generic. An example of this might be a `List` class. The type of an object in the list would be the type parameter. If you needed a `List` class for many different types of objects, before generics you might have used a `List` that takes **System::Object** as the item type. But that would allow any object (including objects of the wrong type) to be used in the list. Such a list would be called an untyped collection class. At best, you could check the type at runtime and throw an exception. Or, you might have used a template, which would lose its generic quality once compiled into an assembly. Consumers of your assembly could not create their own specializations of the template. Generics allow you to create typed collection classes, say `List<int>` (read as "List of int") and `List<double>` ("List of double") which would generate a compile-time error if you tried to put a type that the collection was not designed to accept into the typed collection. In addition, these types remain generic after they are compiled.  
   
- A description of the syntax of generic classes may be found in [Generic Classes (C++/CLI)](../windows/generic-classes-cpp-cli.md)`.` A new namespace, <xref:System.Collections.Generic>, introduces a set of parameterized collection types including <xref:System.Collections.Generic.Dictionary`2>, <xref:System.Collections.Generic.List`1> and <xref:System.Collections.Generic.LinkedList`1>. See [Generics in the .NET Framework Class Library](/dotnet/csharp/programming-guide/generics/generics-in-the-net-framework-class-library) for more information.  
+ A description of the syntax of generic classes may be found in [Generic Classes (C++/CLI)](../windows/generic-classes-cpp-cli.md)`.` A new namespace, <xref:System.Collections.Generic>, introduces a set of parameterized collection types including <xref:System.Collections.Generic.Dictionary%602>, <xref:System.Collections.Generic.List%601> and <xref:System.Collections.Generic.LinkedList%601>. See [Generics in the .NET Framework Class Library](/dotnet/csharp/programming-guide/generics/generics-in-the-net-framework-class-library) for more information.  
   
  Both instance and static class member functions, delegates, and global functions may also be generic. Generic functions may be necessary if the function's parameters are of an unknown type, or if the function itself must work with generic types. In many cases where **System::Object** may have been used in the past as a parameter for an unknown object type, a generic type parameter may be used instead, allowing for more type-safe code. Any attempt to pass in a type that the function was not designed for would be flagged as an error at compile time. Using **System::Object** as a function parameter, the inadvertent passing of an object that the function wasn't intended to deal with would not be detected, and you would have to cast the unknown object type to a specific type in the function body, and account for the possibility of an InvalidCastException. With a generic, code attempting to pass an object to the function would cause a type conflict so the function body is guaranteed to have the correct type.  
   

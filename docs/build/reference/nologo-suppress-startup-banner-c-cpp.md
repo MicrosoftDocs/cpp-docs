@@ -1,7 +1,7 @@
 ---
 title: "-nologo (Suppress Startup Banner) (C-C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -62,7 +62,7 @@ Suppresses the display of the copyright banner when the compiler starts up and d
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.SuppressStartupBanner*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.SuppressStartupBanner%2A>.  
   
 ## See Also  
  [Compiler Options](../../build/reference/compiler-options.md)   

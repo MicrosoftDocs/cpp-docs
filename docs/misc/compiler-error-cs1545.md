@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error CS1545 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1545"
 ms.assetid: 56c377b5-4cf1-4c7d-b51d-463bad78f3ef
 caps.latest.revision: 16
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

@@ -1,7 +1,7 @@
 ---
 title: "IRunnableObjectImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ helpviewer_keywords:
   - "controls [ATL], running"
   - "controls [C++], container running in ATL"
 ms.assetid: 305c7c3b-889e-49dd-aca1-34379c1b9931
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -61,11 +61,11 @@ template<class T>  class IRunnableObjectImpl
   
 |Name|Description|  
 |----------|-----------------|  
-|[IRunnableObjectImpl::GetRunningClass](../Topic/IRunnableObjectImpl::GetRunningClass.md)|Returns the CLSID of the running control. The ATL implementation sets the CLSID to `GUID_NULL` and returns **E_UNEXPECTED**.|  
-|[IRunnableObjectImpl::IsRunning](../Topic/IRunnableObjectImpl::IsRunning.md)|Determines if the control is running. The ATL implementation returns **TRUE**.|  
-|[IRunnableObjectImpl::LockRunning](../Topic/IRunnableObjectImpl::LockRunning.md)|Locks the control into the running state. The ATL implementation returns `S_OK`.|  
-|[IRunnableObjectImpl::Run](../Topic/IRunnableObjectImpl::Run.md)|Forces the control to run. The ATL implementation returns `S_OK`.|  
-|[IRunnableObjectImpl::SetContainedObject](../Topic/IRunnableObjectImpl::SetContainedObject.md)|Indicates that the control is embedded. The ATL implementation returns `S_OK`.|  
+|[IRunnableObjectImpl::GetRunningClass](#irunnableobjectimpl__getrunningclass)|Returns the CLSID of the running control. The ATL implementation sets the CLSID to `GUID_NULL` and returns **E_UNEXPECTED**.|  
+|[IRunnableObjectImpl::IsRunning](#irunnableobjectimpl__isrunning)|Determines if the control is running. The ATL implementation returns **TRUE**.|  
+|[IRunnableObjectImpl::LockRunning](#irunnableobjectimpl__lockrunning)|Locks the control into the running state. The ATL implementation returns `S_OK`.|  
+|[IRunnableObjectImpl::Run](#irunnableobjectimpl__run)|Forces the control to run. The ATL implementation returns `S_OK`.|  
+|[IRunnableObjectImpl::SetContainedObject](#irunnableobjectimpl__setcontainedobject)|Indicates that the control is embedded. The ATL implementation returns `S_OK`.|  
   
 ## Remarks  
  The [IRunnableObject](http://msdn.microsoft.com/library/windows/desktop/ms692783) interface enables a container to determine if a control is running, force it to run, or lock it into the running state. Class `IRunnableObjectImpl` provides a default implementation of this interface and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -148,10 +148,3 @@ HRESULT SetContainedObject(BOOL fContained);
 ## See Also  
  [CComControl Class](../../atl/reference/ccomcontrol-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

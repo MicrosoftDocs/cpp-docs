@@ -1,7 +1,7 @@
 ---
 title: "CWinTraitsOR Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "CWinTraitsOR class"
   - "window styles, default values for ATL"
 ms.assetid: 1eb7b1e8-a9bd-411b-a30a-35a8a10af989
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -65,13 +65,13 @@ template <DWORD   t_dwStyle = 0,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CWinTraitsOR::GetWndExStyle](../Topic/CWinTraitsOR::GetWndExStyle.md)|Retrieves the extended styles for the `CWinTraitsOR` object.|  
-|[CWinTraitsOR::GetWndStyle](../Topic/CWinTraitsOR::GetWndStyle.md)|Retrieves the standard styles for the `CWinTraitsOR` object.|  
+|[CWinTraitsOR::GetWndExStyle](#cwintraitsor__getwndexstyle)|Retrieves the extended styles for the `CWinTraitsOR` object.|  
+|[CWinTraitsOR::GetWndStyle](#cwintraitsor__getwndstyle)|Retrieves the standard styles for the `CWinTraitsOR` object.|  
   
 ## Remarks  
  This [window traits](../../atl/understanding-window-traits.md) class provides a simple method for standardizing the styles used for the creation of an ATL window object. Use a specialization of this class as a template parameter to [CWindowImpl](../../atl/reference/cwindowimpl-class.md) or another of ATL's window classes to specify the minimum set of standard and extended styles to be used for instances of that window class.  
   
- Use a specialization of this template if you want to ensure that certain styles are set for all instances of the window class while permitting other styles to be set on a per-instance basis in the call to [CWindowImpl::Create](../Topic/CWindowImpl::Create.md).  
+ Use a specialization of this template if you want to ensure that certain styles are set for all instances of the window class while permitting other styles to be set on a per-instance basis in the call to [CWindowImpl::Create](../../atl/reference/cwindowimpl-class.md#cwindowimpl__create).  
   
  If you want to provide default window styles that will be used only when no other styles are specified in the call to `CWindowImpl::Create`, use [CWinTraits](../../atl/reference/cwintraits-class.md) instead.  
   
@@ -109,6 +109,8 @@ static DWORD GetWndExStyle(DWORD   dwExStyle);
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)   
  [Understanding Window Traits](../../atl/understanding-window-traits.md)
+
+
 
 
 

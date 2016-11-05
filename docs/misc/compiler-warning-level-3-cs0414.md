@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 3) CS0414 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0414"
 ms.assetid: 6a0a80be-799b-4d9c-a7e0-6b91e9ce7be0
 caps.latest.revision: 11
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

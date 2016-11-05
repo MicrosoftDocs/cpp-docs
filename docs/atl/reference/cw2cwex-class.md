@@ -1,7 +1,7 @@
 ---
 title: "CW2CWEX Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CW2CWEX class"
 ms.assetid: d654b22b-05a6-410f-a0ec-9a2cbbb4cca7
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -61,20 +61,20 @@ template<int t_nBufferLength = 128>  class CW2CWEX
   
 |Name|Description|  
 |----------|-----------------|  
-|[CW2CWEX::CW2CWEX](../Topic/CW2CWEX::CW2CWEX.md)|The constructor.|  
-|[CW2CWEX::~CW2CWEX](../Topic/CW2CWEX::~CW2CWEX.md)|The destructor.|  
+|[CW2CWEX::CW2CWEX](#cw2cwex__cw2cwex)|The constructor.|  
+|[CW2CWEX::~CW2CWEX](#cw2cwex___dtorcw2cwex)|The destructor.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CW2CWEX::operator LPCWSTR](../Topic/CW2CWEX::operator%20LPCWSTR.md)|Conversion operator.|  
+|[CW2CWEX::operator LPCWSTR](#cw2cwex__operator_lpcwstr)|Conversion operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CW2CWEX::m_psz](../Topic/CW2CWEX::m_psz.md)|The data member that stores the source string.|  
+|[CW2CWEX::m_psz](#cw2cwex__m_psz)|The data member that stores the source string.|  
   
 ## Remarks  
  Unless extra functionality is required, use `CW2CTEX`, `CT2CWEX`, or `CW2W` in your code.  
@@ -151,10 +151,3 @@ LPCWSTR m_psz;
  [CW2AEX Class](../../atl/reference/cw2aex-class.md)   
  [CW2WEX Class](../../atl/reference/cw2wex-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

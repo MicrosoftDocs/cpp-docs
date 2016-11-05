@@ -1,7 +1,7 @@
 ---
 title: "-EP (Preprocess to stdout Without #line Directives) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -74,7 +74,7 @@ Preprocesses C and C++ source files and copies the preprocessed files to the sta
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.GeneratePreprocessedFile*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.GeneratePreprocessedFile%2A>.  
   
 ## Example  
  The following command line preprocesses file `ADD.C`, preserves comments, and displays the result on the standard output device:  

@@ -113,7 +113,7 @@
 # [strerror Function](strerror-function.md)
 # [C Bit Fields](c-bit-fields.md)
 # [atexit Function (C)](atexit-function-c.md)
-# [Subtraction (–)](subtraction-–.md)
+# [Subtraction (–)](subtraction-minus.md)
 # [Expressions and Assignments](expressions-and-assignments.md)
 # [static Storage-Class Specifier](static-storage-class-specifier.md)
 # [Environment Names](environment-names.md)

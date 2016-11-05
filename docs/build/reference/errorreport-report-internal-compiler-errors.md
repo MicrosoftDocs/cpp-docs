@@ -1,7 +1,7 @@
 ---
 title: "-errorReport (Report Internal Compiler Errors) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -79,7 +79,7 @@ Lets you provide internal compiler error (ICE) information directly to Microsoft
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ErrorReporting*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ErrorReporting%2A>.  
   
 ## See Also  
  [Compiler Options](../../build/reference/compiler-options.md)   

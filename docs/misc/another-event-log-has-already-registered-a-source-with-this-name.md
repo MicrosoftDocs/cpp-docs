@@ -33,11 +33,11 @@ translation.priority.mt:
 # Another event log has already registered a source with this name
 An attempt was made to write an entry to an event log where the specified source is registered with another event log.  
   
- You must set the <xref:System.Diagnostics.EventLog.Source*> property of your <xref:System.Diagnostics.EventLog> component instance before your component writes an entry to a log. When this happens, the system checks that the source you specified is registered with the event log to which the component is writing, and calls <xref:System.Diagnostics.EventLog.CreateEventSource*> if needed.  
+ You must set the <xref:System.Diagnostics.EventLog.Source%2A> property of your <xref:System.Diagnostics.EventLog> component instance before your component writes an entry to a log. When this happens, the system checks that the source you specified is registered with the event log to which the component is writing, and calls <xref:System.Diagnostics.EventLog.CreateEventSource%2A> if needed.  
   
 ### To correct this error  
   
-1.  Remove the association of the source with the first log using the <xref:System.Diagnostics.EventLog.DeleteEventSource*> or the <xref:System.Diagnostics.EventLog.DeleteEventSource*> method.  
+1.  Remove the association of the source with the first log using the <xref:System.Diagnostics.EventLog.DeleteEventSource%2A> or the <xref:System.Diagnostics.EventLog.DeleteEventSource%2A> method.  
   
 2.  Register the source with the new log.  
   

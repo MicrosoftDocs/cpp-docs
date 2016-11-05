@@ -1,7 +1,7 @@
 ---
 title: "CElementTraitsBase Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CElementTraitsBase class"
 ms.assetid: 75284caf-347e-4355-a7d8-efc708dd514a
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -58,15 +58,15 @@ template<typename T>  class CElementTraitsBase
   
 |Name|Description|  
 |----------|-----------------|  
-|[CElementTraitsBase::INARGTYPE](../Topic/CElementTraitsBase::INARGTYPE.md)|The data type to use for adding elements to the collection class object.|  
-|[CElementTraitsBase::OUTARGTYPE](../Topic/CElementTraitsBase::OUTARGTYPE.md)|The data type to use for retrieving elements from the collection class object.|  
+|[CElementTraitsBase::INARGTYPE](#celementtraitsbase__inargtype)|The data type to use for adding elements to the collection class object.|  
+|[CElementTraitsBase::OUTARGTYPE](#celementtraitsbase__outargtype)|The data type to use for retrieving elements from the collection class object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CElementTraitsBase::CopyElements](../Topic/CElementTraitsBase::CopyElements.md)|Call this method to copy elements stored in a collection class object.|  
-|[CElementTraitsBase::RelocateElements](../Topic/CElementTraitsBase::RelocateElements.md)|Call this method to relocate elements stored in a collection class object.|  
+|[CElementTraitsBase::CopyElements](#celementtraitsbase__copyelements)|Call this method to copy elements stored in a collection class object.|  
+|[CElementTraitsBase::RelocateElements](#celementtraitsbase__relocateelements)|Call this method to relocate elements stored in a collection class object.|  
   
 ## Remarks  
  This base class defines methods for copying and relocating elements in a collection class. It is utilized by the classes [CDefaultElementTraits](../../atl/reference/cdefaultelementtraits-class.md), [CStringRefElementTraits](../../atl/reference/cstringrefelementtraits-class.md), and [CStringElementTraitsI](../../atl/reference/cstringelementtraitsi-class.md).  
@@ -138,10 +138,3 @@ static void RelocateElements(
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "set::lower_bound, set::upper_bound, and set::equal_range | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

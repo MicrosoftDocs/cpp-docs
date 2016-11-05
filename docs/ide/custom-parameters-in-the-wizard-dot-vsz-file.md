@@ -1,7 +1,7 @@
 ---
 title: "Custom Parameters in the Wizard .Vsz File | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -55,7 +55,7 @@ translation.priority.ht:
 # Custom Parameters in the Wizard .Vsz File
 In its first two lines, the .vsz file identifies the wizard version and the ProgID or CLSID of the wizard to be cocreated. The .vsz file can also include optional context parameters and custom parameters that are added to the symbol table (along with the symbols supplied in the HTML symbol section).  
   
- The <xref:Microsoft.VisualStudio.VsWizard.VsWizardClass.Execute*> method displays the wizard, which takes an array of the context and custom parameters defined in the .vsz file as its parameters.  
+ The <xref:Microsoft.VisualStudio.VsWizard.VsWizardClass.Execute%2A> method displays the wizard, which takes an array of the context and custom parameters defined in the .vsz file as its parameters.  
   
  The following commonly used symbols are specified as custom parameters in either the [.vsz file](../ide/dot-vsz-file-project-control.md) or the .htm files and can be used in wizard HTML, script, or template files.  
   
@@ -94,7 +94,7 @@ Param="WIZARD_UI = TRUE"
 |WIZARD_UI|Specified in the .vsz file. A Boolean value indicating whether the wizard contains a user interface. Specify **TRUE** for a user interface or **FALSE** for no user interface.|  
   
 ## See Also  
- <xref:EnvDTE.IDTWizard.Execute*>   
+ <xref:EnvDTE.IDTWizard.Execute%2A>   
  [Files Created for Your Wizard](../ide/files-created-for-your-wizard.md)   
  [Custom Wizard](../ide/custom-wizard.md)   
  [Creating a Custom Wizard](../ide/creating-a-custom-wizard.md)   

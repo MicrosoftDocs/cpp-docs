@@ -38,7 +38,7 @@ translation.priority.mt:
 # &#39;Using&#39; resource variable type can not be array type
 A `Using` statement specifies an array variable for a resource.  
   
- The <xref:System.Array> class does not implement the <xref:System.IDisposable> interface, so the `Using` block cannot call the <xref:System.IDisposable.Dispose*> method on an array resource.  
+ The <xref:System.Array> class does not implement the <xref:System.IDisposable> interface, so the `Using` block cannot call the <xref:System.IDisposable.Dispose%2A> method on an array resource.  
   
  **Error ID:** BC36012  
   

@@ -1,7 +1,7 @@
 ---
 title: "Creating Options Pages By Using Interop Assemblies | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -46,7 +46,7 @@ Managed VSPackages can use the COM-based interop assemblies of the [!INCLUDE[vsi
 ## Making Tools Options Pages Available to the IDE  
  In addition to implementing a user control, VSPackages must make that control available to the IDE.  
   
- This is done through the implementation of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage*> method, which returns a <xref:Microsoft.VisualStudio.Shell.Interop.VSPROPSHEETPAGE> structure based on the GUID passed.  
+ This is done through the implementation of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> method, which returns a <xref:Microsoft.VisualStudio.Shell.Interop.VSPROPSHEETPAGE> structure based on the GUID passed.  
   
  The IDE uses the <xref:Microsoft.VisualStudio.Shell.Interop.VSPROPSHEETPAGE> structure to set the characteristics of a **Properties** page.  
   

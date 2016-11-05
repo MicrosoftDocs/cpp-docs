@@ -1,7 +1,7 @@
 ---
 title: "CComSingleThreadModel Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ helpviewer_keywords:
   - "CComSingleThreadModel class"
   - "single-threaded applications, ATL"
 ms.assetid: e5dc30c7-405a-4ba4-8ae9-51937243fce8
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -54,16 +54,16 @@ class CComSingleThreadModel
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComSingleThreadModel::AutoCriticalSection](../Topic/CComSingleThreadModel::AutoCriticalSection.md)|References class [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md).|  
-|[CComSingleThreadModel::CriticalSection](../Topic/CComSingleThreadModel::CriticalSection.md)|References class `CComFakeCriticalSection`.|  
-|[CComSingleThreadModel::ThreadModelNoCS](../Topic/CComSingleThreadModel::ThreadModelNoCS.md)|References `CComSingleThreadModel`.|  
+|[CComSingleThreadModel::AutoCriticalSection](#ccomsinglethreadmodel__autocriticalsection)|References class [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md).|  
+|[CComSingleThreadModel::CriticalSection](#ccomsinglethreadmodel__criticalsection)|References class `CComFakeCriticalSection`.|  
+|[CComSingleThreadModel::ThreadModelNoCS](#ccomsinglethreadmodel__threadmodelnocs)|References `CComSingleThreadModel`.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComSingleThreadModel::Decrement](../Topic/CComSingleThreadModel::Decrement.md)|Decrements the value of the specified variable. This implementation is not thread-safe.|  
-|[CComSingleThreadModel::Increment](../Topic/CComSingleThreadModel::Increment.md)|Increments the value of the specified variable. This implementation is not thread-safe.|  
+|[CComSingleThreadModel::Decrement](#ccomsinglethreadmodel__decrement)|Decrements the value of the specified variable. This implementation is not thread-safe.|  
+|[CComSingleThreadModel::Increment](#ccomsinglethreadmodel__increment)|Increments the value of the specified variable. This implementation is not thread-safe.|  
   
 ## Remarks  
  `CComSingleThreadModel` provides methods for incrementing and decrementing the value of a variable. Unlike [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) and [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md), these methods are not thread-safe.  
@@ -100,10 +100,10 @@ typedef CComFakeCriticalSection AutoCriticalSection;
 |`CComMultiThreadModel`|`CComAutoCriticalSection`|  
 |`CComMultiThreadModelNoCS`|`CComFakeCriticalSection`|  
   
- In addition to `AutoCriticalSection`, you can use the `typedef` name [CriticalSection](../Topic/CComSingleThreadModel::CriticalSection.md). You should not specify `AutoCriticalSection` in global objects or static class members if you want to eliminate the CRT startup code.  
+ In addition to `AutoCriticalSection`, you can use the `typedef` name [CriticalSection](#ccomsinglethreadmodel__criticalsection). You should not specify `AutoCriticalSection` in global objects or static class members if you want to eliminate the CRT startup code.  
   
 ### Example  
- See [CComMultiThreadModel::AutoCriticalSection](../Topic/CComMultiThreadModel::AutoCriticalSection.md).  
+ See [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#ccommultithreadmodel__autocriticalsection).  
   
 ##  <a name="ccomsinglethreadmodel__criticalsection"></a>  CComSingleThreadModel::CriticalSection  
  When using `CComSingleThreadModel`, the `typedef` name `CriticalSection` references class [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md).  
@@ -123,10 +123,10 @@ typedef CComFakeCriticalSection CriticalSection;
 |`CComMultiThreadModel`|`CComCriticalSection`|  
 |`CComMultiThreadModelNoCS`|`CComFakeCriticalSection`|  
   
- In addition to `CriticalSection`, you can use the `typedef` name [AutoCriticalSection](../Topic/CComSingleThreadModel::AutoCriticalSection.md). You should not specify `AutoCriticalSection` in global objects or static class members if you want to eliminate the CRT startup code.  
+ In addition to `CriticalSection`, you can use the `typedef` name [AutoCriticalSection](#ccomsinglethreadmodel__autocriticalsection). You should not specify `AutoCriticalSection` in global objects or static class members if you want to eliminate the CRT startup code.  
   
 ### Example  
- See [CComMultiThreadModel::AutoCriticalSection](../Topic/CComMultiThreadModel::AutoCriticalSection.md).  
+ See [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#ccommultithreadmodel__autocriticalsection).  
   
 ##  <a name="ccomsinglethreadmodel__decrement"></a>  CComSingleThreadModel::Decrement  
  This static function decrements the value of the variable pointed to by `p`.  
@@ -173,14 +173,7 @@ typedef CComSingleThreadModel ThreadModelNoCS;
 |`CComMultiThreadModelNoCS`|`CComMultiThreadModelNoCS`|  
   
 ### Example  
- See [CComMultiThreadModel::AutoCriticalSection](../Topic/CComMultiThreadModel::AutoCriticalSection.md).  
+ See [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#ccommultithreadmodel__autocriticalsection).  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

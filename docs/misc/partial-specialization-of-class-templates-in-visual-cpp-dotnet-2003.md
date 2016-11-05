@@ -1,7 +1,7 @@
 ---
 title: "Partial Specialization of Class Templates in Visual C++ .NET 2003 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

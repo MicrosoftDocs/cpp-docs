@@ -1,7 +1,7 @@
 ---
 title: "How to: Read a Text File (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Read a Text File (C++/CLI)
-The following code example demonstrates how to open and read a text file one line at a time, by using the <xref:System.IO.StreamReader> class that's defined in the <xref:System.IO?displayProperty=fullName> namespace. An instance of this class is used to open a text file and then the <xref:System.IO.StreamReader.ReadLine*?displayProperty=fullName> method is used to retrieve each line.  
+The following code example demonstrates how to open and read a text file one line at a time, by using the <xref:System.IO.StreamReader> class that's defined in the <xref:System.IO?displayProperty=fullName> namespace. An instance of this class is used to open a text file and then the <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=fullName> method is used to retrieve each line.  
   
  This code example reads a file that's named textfile.txt and contains text. For information about this kind of file, see [How to: Write a Text File (C++/CLI)](../dotnet/how-to-write-a-text-file-cpp-cli.md).  
   

@@ -1,7 +1,7 @@
 ---
 title: "CComBSTR Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ helpviewer_keywords:
   - "CComBSTR class"
   - "CComBSTR"
 ms.assetid: 8fea1879-a05e-47a5-a803-8dec60eaa534
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -54,51 +54,51 @@ class CComBSTR
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComBSTR::CComBSTR](../Topic/CComBSTR::CComBSTR.md)|The constructor.|  
-|[CComBSTR::~CComBSTR](../Topic/CComBSTR::~CComBSTR.md)|The destructor.|  
+|[CComBSTR::CComBSTR](#ccombstr__ccombstr)|The constructor.|  
+|[CComBSTR::~CComBSTR](#ccombstr___dtorccombstr)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComBSTR::Append](../Topic/CComBSTR::Append.md)|Appends a string to `m_str`.|  
-|[CComBSTR::AppendBSTR](../Topic/CComBSTR::AppendBSTR.md)|Appends a `BSTR` to `m_str`.|  
-|[CComBSTR::AppendBytes](../Topic/CComBSTR::AppendBytes.md)|Appends a specified number of bytes to `m_str`.|  
-|[CComBSTR::ArrayToBSTR](../Topic/CComBSTR::ArrayToBSTR.md)|Creates a `BSTR` from the first character of each element in the safearray and attaches it to the `CComBSTR` object.|  
-|[CComBSTR::AssignBSTR](../Topic/CComBSTR::AssignBSTR.md)|Assigns a `BSTR` to `m_str`.|  
-|[CComBSTR::Attach](/visual-studio/profiling/attach)|Attaches a `BSTR` to the `CComBSTR` object.|  
-|[CComBSTR::BSTRToArray](../Topic/CComBSTR::BSTRToArray.md)|Creates a zero-based one-dimensional safearray, where each element of the array is a character from the `CComBSTR` object.|  
-|[CComBSTR::ByteLength](../Topic/CComBSTR::ByteLength.md)|Returns the length of `m_str` in bytes.|  
-|[CComBSTR::Copy](../Topic/CComBSTR::Copy.md)|Returns a copy of `m_str`.|  
-|[CComBSTR::CopyTo](../Topic/CComBSTR::CopyTo.md)|Returns a copy of `m_str` via an **[out]** parameter|  
-|[CComBSTR::Detach](/visual-studio/profiling/detach)|Detaches `m_str` from the `CComBSTR` object.|  
-|[CComBSTR::Empty](../Topic/CComBSTR::Empty.md)|Frees `m_str`.|  
-|[CComBSTR::Length](../Topic/CComBSTR::Length.md)|Returns the length of `m_str`.|  
-|[CComBSTR::LoadString](../Topic/CComBSTR::LoadString.md)|Loads a string resource.|  
-|[CComBSTR::ReadFromStream](../Topic/CComBSTR::ReadFromStream.md)|Loads a `BSTR` object from a stream.|  
-|[CComBSTR::ToLower](../Topic/CComBSTR::ToLower.md)|Converts the string to lowercase.|  
-|[CComBSTR::ToUpper](../Topic/CComBSTR::ToUpper.md)|Converts the string to uppercase.|  
-|[CComBSTR::WriteToStream](../Topic/CComBSTR::WriteToStream.md)|Saves `m_str` to a stream.|  
+|[CComBSTR::Append](#ccombstr__append)|Appends a string to `m_str`.|  
+|[CComBSTR::AppendBSTR](#ccombstr__appendbstr)|Appends a `BSTR` to `m_str`.|  
+|[CComBSTR::AppendBytes](#ccombstr__appendbytes)|Appends a specified number of bytes to `m_str`.|  
+|[CComBSTR::ArrayToBSTR](#ccombstr__arraytobstr)|Creates a `BSTR` from the first character of each element in the safearray and attaches it to the `CComBSTR` object.|  
+|[CComBSTR::AssignBSTR](#ccombstr__assignbstr)|Assigns a `BSTR` to `m_str`.|  
+|[CComBSTR::Attach](#ccombstr__attach)|Attaches a `BSTR` to the `CComBSTR` object.|  
+|[CComBSTR::BSTRToArray](#ccombstr__bstrtoarray)|Creates a zero-based one-dimensional safearray, where each element of the array is a character from the `CComBSTR` object.|  
+|[CComBSTR::ByteLength](#ccombstr__bytelength)|Returns the length of `m_str` in bytes.|  
+|[CComBSTR::Copy](#ccombstr__copy)|Returns a copy of `m_str`.|  
+|[CComBSTR::CopyTo](#ccombstr__copyto)|Returns a copy of `m_str` via an **[out]** parameter|  
+|[CComBSTR::Detach](#ccombstr__detach)|Detaches `m_str` from the `CComBSTR` object.|  
+|[CComBSTR::Empty](#ccombstr__empty)|Frees `m_str`.|  
+|[CComBSTR::Length](#ccombstr__length)|Returns the length of `m_str`.|  
+|[CComBSTR::LoadString](#ccombstr__loadstring)|Loads a string resource.|  
+|[CComBSTR::ReadFromStream](#ccombstr__readfromstream)|Loads a `BSTR` object from a stream.|  
+|[CComBSTR::ToLower](#ccombstr__tolower)|Converts the string to lowercase.|  
+|[CComBSTR::ToUpper](#ccombstr__toupper)|Converts the string to uppercase.|  
+|[CComBSTR::WriteToStream](#ccombstr__writetostream)|Saves `m_str` to a stream.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComBSTR::operator BSTR](../Topic/CComBSTR::operator%20BSTR.md)|Casts a `CComBSTR` object to a `BSTR`.|  
-|[CComBSTR::operator !](../Topic/CComBSTR::operator%20!.md)|Returns `true` or `false`, depending on whether `m_str`is `NULL`.|  
+|[CComBSTR::operator BSTR](#ccombstr__operator_bstr)|Casts a `CComBSTR` object to a `BSTR`.|  
+|[CComBSTR::operator !](#ccombstr__operator__not)|Returns `true` or `false`, depending on whether `m_str`is `NULL`.|  
 |[CComBSTR::operator !=](../Topic/CComBSTR::operator%20!=.md)|Compares a `CComBSTR` with a string.|  
 |[CComBSTR::operator &](../Topic/CComBSTR::operator%20&.md)|Returns the address of `m_str`.|  
-|[CComBSTR::operator +=](../Topic/CComBSTR::operator%20+=.md)|Appends a `CComBSTR` to the object.|  
+|[CComBSTR::operator +=](#ccombstr__operator__add_eq)|Appends a `CComBSTR` to the object.|  
 |[CComBSTR::operator <](../Topic/CComBSTR::operator%20%3C.md)|Compares a `CComBSTR` with a string.|  
-|[CComBSTR::operator =](../Topic/CComBSTR::operator%20=.md)|Assigns a value to `m_str`.|  
-|[CComBSTR::operator ==](../Topic/CComBSTR::operator%20==.md)|Compares a `CComBSTR` with a string.|  
+|[CComBSTR::operator =](#ccombstr__operator__eq)|Assigns a value to `m_str`.|  
+|[CComBSTR::operator ==](#ccombstr__operator__eq_eq)|Compares a `CComBSTR` with a string.|  
 |[CComBSTR::operator >](../Topic/CComBSTR::operator%20%3E.md)|Compares a `CComBSTR` with a string.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComBSTR::m_str](../Topic/CComBSTR::m_str.md)|Contains the `BSTR` associated with the `CComBSTR` object.|  
+|[CComBSTR::m_str](#ccombstr__m_str)|Contains the `BSTR` associated with the `CComBSTR` object.|  
   
 ## Remarks  
  The `CComBSTR` class is a wrapper for `BSTR`s, which are length-prefixed strings. The length is stored as an integer at the memory location preceding the data in the string.  
@@ -117,7 +117,7 @@ class CComBSTR
  **Header:** atlbase.h  
   
 ##  <a name="ccombstr__append"></a>  CComBSTR::Append  
- Appends either `lpsz` or the `BSTR` member of `bstrSrc` to [m_str](../Topic/CComBSTR::m_str.md).  
+ Appends either `lpsz` or the `BSTR` member of `bstrSrc` to [m_str](#ccombstr__m_str).  
   
 ```
 HRESULT Append(const CComBSTR& bstrSrc) throw();
@@ -151,7 +151,7 @@ HRESULT Append(LPCOLESTR lpsz,  int nLen) throw();
  [!code-cpp[NVC_ATL_Utilities#32](../../atl/codesnippet/CPP/ccombstr-class_1.cpp)]  
   
 ##  <a name="ccombstr__appendbstr"></a>  CComBSTR::AppendBSTR  
- Appends the specified `BSTR` to [m_str](../Topic/CComBSTR::m_str.md).  
+ Appends the specified `BSTR` to [m_str](#ccombstr__m_str).  
   
 ```
 HRESULT AppendBSTR(BSTR p) throw();
@@ -171,7 +171,7 @@ HRESULT AppendBSTR(BSTR p) throw();
  [!code-cpp[NVC_ATL_Utilities#33](../../atl/codesnippet/CPP/ccombstr-class_2.cpp)]  
   
 ##  <a name="ccombstr__appendbytes"></a>  CComBSTR::AppendBytes  
- Appends the specified number of bytes to [m_str](../Topic/CComBSTR::m_str.md) without conversion.  
+ Appends the specified number of bytes to [m_str](#ccombstr__m_str) without conversion.  
   
 ```
 HRESULT AppendBytes(const char* lpsz,  int nLen) throw();
@@ -205,7 +205,7 @@ HRESULT ArrayToBSTR(const SAFEARRAY* pSrc) throw();
  `S_OK` on success, or any standard `HRESULT` error value.  
   
 ##  <a name="ccombstr__assignbstr"></a>  CComBSTR::AssignBSTR  
- Assigns a `BSTR` to [m_str](../Topic/CComBSTR::m_str.md).  
+ Assigns a `BSTR` to [m_str](#ccombstr__m_str).  
   
 ```
 HRESULT AssignBSTR(const BSTR bstrSrc) throw();
@@ -219,7 +219,7 @@ HRESULT AssignBSTR(const BSTR bstrSrc) throw();
  `S_OK` on success, or any standard `HRESULT` error value.  
   
 ##  <a name="ccombstr__attach"></a>  CComBSTR::Attach  
- Attaches a `BSTR` to the `CComBSTR` object by setting the [m_str](../Topic/CComBSTR::m_str.md) member to *src*.  
+ Attaches a `BSTR` to the `CComBSTR` object by setting the [m_str](#ccombstr__m_str) member to *src*.  
   
 ```
 void Attach(BSTR src) throw();
@@ -260,7 +260,7 @@ unsigned int ByteLength() const throw();
 ```  
   
 ### Return Value  
- The length of the [m_str](../Topic/CComBSTR::m_str.md) member in bytes.  
+ The length of the [m_str](#ccombstr__m_str) member in bytes.  
   
 ### Remarks  
  Returns 0 if `m_str` is **NULL**.  
@@ -269,7 +269,7 @@ unsigned int ByteLength() const throw();
  [!code-cpp[NVC_ATL_Utilities#36](../../atl/codesnippet/CPP/ccombstr-class_5.cpp)]  
   
 ##  <a name="ccombstr__ccombstr"></a>  CComBSTR::CComBSTR  
- The constructor. The default constructor sets the [m_str](../Topic/CComBSTR::m_str.md) member to **NULL**.  
+ The constructor. The default constructor sets the [m_str](#ccombstr__m_str) member to **NULL**.  
   
 ```
 CComBSTR() throw();
@@ -346,13 +346,13 @@ BSTR Copy() const throw();
 ```  
   
 ### Return Value  
- A copy of the [m_str](../Topic/CComBSTR::m_str.md) member. If `m_str` is **NULL**, returns **NULL**.  
+ A copy of the [m_str](#ccombstr__m_str) member. If `m_str` is **NULL**, returns **NULL**.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#38](../../atl/codesnippet/CPP/ccombstr-class_7.cpp)]  
   
 ##  <a name="ccombstr__copyto"></a>  CComBSTR::CopyTo  
- Allocates and returns a copy of [m_str](../Topic/CComBSTR::m_str.md) via the parameter.  
+ Allocates and returns a copy of [m_str](#ccombstr__m_str) via the parameter.  
   
 ```
 HRESULT CopyTo(BSTR* pbstr) throw();
@@ -376,7 +376,7 @@ HRESULT CopyTo(VARIANT* pvarDest) throw();
  [!code-cpp[NVC_ATL_Utilities#39](../../atl/codesnippet/CPP/ccombstr-class_8.cpp)]  
   
 ##  <a name="ccombstr__detach"></a>  CComBSTR::Detach  
- Detaches [m_str](../Topic/CComBSTR::m_str.md) from the `CComBSTR` object and sets `m_str` to **NULL**.  
+ Detaches [m_str](#ccombstr__m_str) from the `CComBSTR` object and sets `m_str` to **NULL**.  
   
 ```
 BSTR Detach() throw();
@@ -389,7 +389,7 @@ BSTR Detach() throw();
  [!code-cpp[NVC_ATL_Utilities#40](../../atl/codesnippet/CPP/ccombstr-class_9.cpp)]  
   
 ##  <a name="ccombstr__empty"></a>  CComBSTR::Empty  
- Frees the [m_str](../Topic/CComBSTR::m_str.md) member.  
+ Frees the [m_str](#ccombstr__m_str) member.  
   
 ```
 void Empty() throw();
@@ -406,7 +406,7 @@ unsigned int Length() const throw();
 ```  
   
 ### Return Value  
- The length of the [m_str](../Topic/CComBSTR::m_str.md) member.  
+ The length of the [m_str](#ccombstr__m_str) member.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#42](../../atl/codesnippet/CPP/ccombstr-class_11.cpp)]  
@@ -451,7 +451,7 @@ BSTR m_str;
  Allows you to pass `CComBSTR` objects to functions that have **[in] BSTR** parameters.  
   
 ### Example  
- See the example for [CComBSTR::m_str](../Topic/CComBSTR::m_str.md).  
+ See the example for [CComBSTR::m_str](#ccombstr__m_str).  
   
 ##  <a name="ccombstr__operator__not"></a>  CComBSTR::operator !  
  Checks whether `BSTR` string is NULL.  
@@ -461,7 +461,7 @@ bool operator!() const throw();
 ```  
   
 ### Return Value  
- Returns **true** if the [m_str](../Topic/CComBSTR::m_str.md) member is **NULL**; otherwise, **false**.  
+ Returns **true** if the [m_str](#ccombstr__m_str) member is **NULL**; otherwise, **false**.  
   
 ### Remarks  
  This operator only checks for a NULL value, not for an empty string.  
@@ -470,7 +470,7 @@ bool operator!() const throw();
  [!code-cpp[NVC_ATL_Utilities#35](../../atl/codesnippet/CPP/ccombstr-class_4.cpp)]  
   
 ##  <a name="ccombstr__operator__neq"></a>  CComBSTR::operator !=  
- Returns the logical opposite of [operator ==](../Topic/CComBSTR::operator%20==.md).  
+ Returns the logical opposite of [operator ==](#ccombstr__operator__eq_eq).  
   
 ```
 bool operator!= (const CComBSTR& bstrSrc) const throw();
@@ -498,7 +498,7 @@ bool operator!= (LPCOLESTR pszSrc) const;
  `CComBSTR`s are compared textually in the context of the user's default locale. The final comparison operator just compares the contained string against **NULL**.  
   
 ##  <a name="ccombstr__operator__amp_"></a>  CComBSTR::operator &amp;  
- Returns the address of the `BSTR` stored in the [m_str](../Topic/CComBSTR::m_str.md) member.  
+ Returns the address of the `BSTR` stored in the [m_str](#ccombstr__m_str) member.  
   
 ```
 BSTR* operator&() throw();
@@ -552,7 +552,7 @@ bool operator<(LPCSTR pszSrc) const throw();
  The comparison is performed using the user's default locale.  
   
 ##  <a name="ccombstr__operator__eq"></a>  CComBSTR::operator =  
- Sets the [m_str](../Topic/CComBSTR::m_str.md) member to a copy of `pSrc` or to a copy of the `BSTR` member of *src*.  
+ Sets the [m_str](#ccombstr__m_str) member to a copy of `pSrc` or to a copy of the `BSTR` member of *src*.  
   
 ```
 CComBSTR& operator= (const CComBSTR& src);
@@ -566,7 +566,7 @@ CComBSTR& operator= (const CComBSTR& src);
  The `pSrc` parameter specifies either an **LPCOLESTR** for Unicode versions or `LPCSTR` for ANSI versions.  
   
 ### Example  
- See the example for [CComBSTR::Copy](../Topic/CComBSTR::Copy.md).  
+ See the example for [CComBSTR::Copy](#ccombstr__copy).  
   
 ##  <a name="ccombstr__operator__eq_eq"></a>  CComBSTR::operator ==  
  Compares a `CComBSTR` with a string. `CComBSTR`s are compared textually in the context of the user's default locale.  
@@ -610,7 +610,7 @@ bool operator>(const CComBSTR& bstrSrc) const throw();
  The comparison is performed using the user's default locale.  
   
 ##  <a name="ccombstr__readfromstream"></a>  CComBSTR::ReadFromStream  
- Sets the [m_str](../Topic/CComBSTR::m_str.md) member to the `BSTR` contained in the specified stream.  
+ Sets the [m_str](#ccombstr__m_str) member to the `BSTR` contained in the specified stream.  
   
 ```
 HRESULT ReadFromStream(IStream* pStream) throw();
@@ -624,7 +624,7 @@ HRESULT ReadFromStream(IStream* pStream) throw();
  A standard `HRESULT` value.  
   
 ### Remarks  
- **ReadToStream** requires the contents of the stream at the current position to be compatible with the data format written out by a call to [WriteToStream](../Topic/CComBSTR::WriteToStream.md).  
+ **ReadToStream** requires the contents of the stream at the current position to be compatible with the data format written out by a call to [WriteToStream](#ccombstr__writetostream).  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#44](../../atl/codesnippet/CPP/ccombstr-class_17.cpp)]  
@@ -656,7 +656,7 @@ HRESULT ToUpper() throw();
  See **CharUpperBuff** for more information on how the conversion is performed.  
   
 ##  <a name="ccombstr__writetostream"></a>  CComBSTR::WriteToStream  
- Saves the [m_str](../Topic/CComBSTR::m_str.md) member to a stream.  
+ Saves the [m_str](#ccombstr__m_str) member to a stream.  
   
 ```
 HRESULT WriteToStream(IStream* pStream) throw();
@@ -670,7 +670,7 @@ HRESULT WriteToStream(IStream* pStream) throw();
  A standard `HRESULT` value.  
   
 ### Remarks  
- You can recreate a BSTR from the contents of the stream using the [ReadFromStream](../Topic/CComBSTR::ReadFromStream.md) function.  
+ You can recreate a BSTR from the contents of the stream using the [ReadFromStream](#ccombstr__readfromstream) function.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#45](../../atl/codesnippet/CPP/ccombstr-class_18.cpp)]  
@@ -678,10 +678,3 @@ HRESULT WriteToStream(IStream* pStream) throw();
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)   
  [ATL and MFC String Conversion Macros](../Topic/ATL%20and%20MFC%20String%20Conversion%20Macros.md)
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "Connection Point Global Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -14,7 +14,7 @@ dev_langs:
 helpviewer_keywords: 
   - "connection points [C++], global functions"
 ms.assetid: bcb4bf50-2155-4e20-b8bb-f2908b03a6e7
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -137,8 +137,3 @@ HRESULT AtlAdviseSinkMap(
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)   
  [Connection Point Macros](../../atl/reference/connection-point-macros.md)
-
-
-
-
-

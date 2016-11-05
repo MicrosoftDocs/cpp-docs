@@ -1,7 +1,7 @@
 ---
 title: "-arch (x64) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -64,7 +64,7 @@ Specifies the architecture for code generation on x64. Also see [/arch (x86)](..
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>.  
   
 ## See Also  
  [/arch (Minimum CPU Architecture)](../../build/reference/arch-minimum-cpu-architecture.md)   

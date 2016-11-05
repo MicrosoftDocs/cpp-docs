@@ -1,7 +1,7 @@
 ---
 title: "How to: Retrieve the .NET Framework Version (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Retrieve the .NET Framework Version (C++/CLI)
-The following code example demonstrates how to determine the version of the currently installed .NET Framework with the <xref:System.Environment.Version*> property, which is a pointer to a <xref:System.Version> object that contains the version information.  
+The following code example demonstrates how to determine the version of the currently installed .NET Framework with the <xref:System.Environment.Version%2A> property, which is a pointer to a <xref:System.Version> object that contains the version information.  
   
 ## Example  
   

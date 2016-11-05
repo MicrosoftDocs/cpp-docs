@@ -1,7 +1,7 @@
 ---
 title: "Examining the Mechanics of a Wizard | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -36,12 +36,12 @@ translation.priority.ht:
 # Examining the Mechanics of a Wizard
 You do not need to compile a wizard project to have users start using it right away. Once you have created the necessary elements, the VSDIR directs the `New Project` dialog box to display the wizard icon and the `Add New Item` dialog box to display the wizard name in the shortcut menu. Your customer can launch the wizard immediately by selecting it.  
   
- When the user launches the wizard, the environment shell cocreates the wizard engine and queries for <xref:EnvDTE.IDTWizard>. It then calls <xref:EnvDTE.IDTWizard.Execute*> to launch the wizard.  
+ When the user launches the wizard, the environment shell cocreates the wizard engine and queries for <xref:EnvDTE.IDTWizard>. It then calls <xref:EnvDTE.IDTWizard.Execute%2A> to launch the wizard.  
   
 > [!NOTE]
 >  If the wizard has no interface, the project is created with the supplied defaults and displayed in Solution Explorer, with the node structure supplied in the .vsz file. The rest of this topic assumes that the wizard has a UI.  
   
- If the wizard has a UI, the user accepts or changes the defaults in each control in the wizard's HTML-based UI. As the user navigates through the wizard's pages and makes changes, functions such as <xref:Microsoft.VisualStudio.VsWizard.VCWizCtlClass.Navigate*> and <xref:Microsoft.VisualStudio.VsWizard.VCWizCtlClass.Next*> are called in the Script section of the HTML.  
+ If the wizard has a UI, the user accepts or changes the defaults in each control in the wizard's HTML-based UI. As the user navigates through the wizard's pages and makes changes, functions such as <xref:Microsoft.VisualStudio.VsWizard.VCWizCtlClass.Navigate%2A> and <xref:Microsoft.VisualStudio.VsWizard.VCWizCtlClass.Next%2A> are called in the Script section of the HTML.  
   
  Whenever the user selects different options within the wizard, the selections are captured in the symbol table in the wizard control. The symbol table matches the IDs of the controls in the wizard's HTML page to maintain a one-to-one correspondence between user selections and the symbol table.  
   

@@ -1,7 +1,7 @@
 ---
 title: "AddCommonConfig | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -62,31 +62,31 @@ Adds the default configurations to the project.
   
 |Object property|Release configuration setting|Debug configuration setting|  
 |---------------------|-----------------------------------|---------------------------------|  
-|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UsePrecompiledHeader*>|pchUseUsingSpecific|pchUseUsingSpecific|  
-|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.WarningLevel*>|3|3|  
-|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.MinimalRebuild*>|Not applicable|true|  
-|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DebugInformationFormat*>|debugEnabled|debugEditAndContinue|  
-|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Optimization*>|optimizeMaxSpeed|Not applicable|  
-|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BasicRuntimeChecks*>|Not applicable|runtimeBasicCheckAll|  
-|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Detect64BitPortabilityProblems*>|true|true|  
-|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.OmitFramePointers*>|true|Not applicable|  
-|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableFunctionLevelLinking*>|true|Not applicable|  
-|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.StringPooling*>|true|Not applicable|  
+|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UsePrecompiledHeader%2A>|pchUseUsingSpecific|pchUseUsingSpecific|  
+|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.WarningLevel%2A>|3|3|  
+|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.MinimalRebuild%2A>|Not applicable|true|  
+|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DebugInformationFormat%2A>|debugEnabled|debugEditAndContinue|  
+|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Optimization%2A>|optimizeMaxSpeed|Not applicable|  
+|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BasicRuntimeChecks%2A>|Not applicable|runtimeBasicCheckAll|  
+|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Detect64BitPortabilityProblems%2A>|true|true|  
+|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.OmitFramePointers%2A>|true|Not applicable|  
+|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableFunctionLevelLinking%2A>|true|Not applicable|  
+|<xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.StringPooling%2A>|true|Not applicable|  
   
 ### Visual C++ Configuration Object  
   
 |Object property|Release configuration setting|Debug configuration setting|  
 |---------------------|-----------------------------------|---------------------------------|  
-|<xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.IntermediateDirectory*>|"Release"|"Debug"|  
-|<xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.OutputDirectory*>|"Release"|"Debug"|  
+|<xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.IntermediateDirectory%2A>|"Release"|"Debug"|  
+|<xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.OutputDirectory%2A>|"Release"|"Debug"|  
   
 ### Visual C++ Linker Tool Object  
   
 |Object property|Release configuration setting|Debug configuration setting|  
 |---------------------|-----------------------------------|---------------------------------|  
-|<xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.SubSystem*>|subSystemWindows|subSystemWindows|  
-|<xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TargetMachine*>|machineX86|machineX86|  
-|<xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.GenerateDebugInformation*>|true|true|  
+|<xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.SubSystem%2A>|subSystemWindows|subSystemWindows|  
+|<xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TargetMachine%2A>|machineX86|machineX86|  
+|<xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.GenerateDebugInformation%2A>|true|true|  
   
 ## Example  
   

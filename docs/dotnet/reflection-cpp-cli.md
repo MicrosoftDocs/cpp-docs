@@ -1,7 +1,7 @@
 ---
 title: "Reflection (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -44,7 +44,7 @@ Reflection allows known data types to be inspected at runtime. Reflection allows
   
  Note that the assembly name provided is the strong name (see [Strong-Named Assemblies](../Topic/Creating%20and%20Using%20Strong-Named%20Assemblies.md)), which includes the assembly version, culture, and signing information. Note also that the name of the namespace in which the data type is defined can be retrieved, along with the name of the base class.  
   
- The most common way to access reflection features is through the <xref:System.Object.GetType*> method. This method is provided by [System::Object](https://msdn.microsoft.com/en-us/library/system.object.aspx), from which all garbage-collected classes derive.  
+ The most common way to access reflection features is through the <xref:System.Object.GetType%2A> method. This method is provided by [System::Object](https://msdn.microsoft.com/en-us/library/system.object.aspx), from which all garbage-collected classes derive.  
   
  Reflection on an .exe built with the Visual C++ compiler is allowed if the .exe is built with the **/clr:pure** or **/clr:safe** compiler options. See [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) for more information.  
   

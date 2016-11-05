@@ -1,7 +1,7 @@
 ---
 title: "CAtlList Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAtlList class"
 ms.assetid: 09e98053-64b2-4efa-99ab-d0542caaf981
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -59,52 +59,52 @@ template<typename E,  class ETraits = CElementTraits<E>>  class CAtlList
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlList::INARGTYPE](../Topic/CAtlList::INARGTYPE.md)||  
+|[CAtlList::INARGTYPE](#catllist__inargtype)||  
   
 ### Public Constructors  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlList::CAtlList](../Topic/CAtlList::CAtlList.md)|The constructor.|  
-|[CAtlList::~CAtlList](../Topic/CAtlList::~CAtlList.md)|The destructor.|  
+|[CAtlList::CAtlList](#catllist__catllist)|The constructor.|  
+|[CAtlList::~CAtlList](#catllist___dtorcatllist)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlList::AddHead](../Topic/CAtlList::AddHead.md)|Call this method to add an element to the head of the list.|  
-|[CAtlList::AddHeadList](../Topic/CAtlList::AddHeadList.md)|Call this method to add an existing list to the head of the list.|  
-|[CAtlList::AddTail](../Topic/CAtlList::AddTail.md)|Call this method to add an element to the tail of this list.|  
-|[CAtlList::AddTailList](../Topic/CAtlList::AddTailList.md)|Call this method to add an existing list to the tail of this list.|  
-|[CAtlList::AssertValid](../Topic/CAtlList::AssertValid.md)|Call this method to confirm the list is valid.|  
-|[CAtlList::Find](../Topic/CAtlList::Find.md)|Call this method to search the list for the specified element.|  
-|[CAtlList::FindIndex](../Topic/CAtlList::FindIndex.md)|Call this method to obtain the position of an element, given an index value.|  
-|[CAtlList::GetAt](../Topic/CAtlList::GetAt.md)|Call this method to return the element at a specified position in the list.|  
-|[CAtlList::GetCount](../Topic/CAtlList::GetCount.md)|Call this method to return the number of objects in the list.|  
-|[CAtlList::GetHead](../Topic/CAtlList::GetHead.md)|Call this method to return the element at the head of the list.|  
-|[CAtlList::GetHeadPosition](../Topic/CAtlList::GetHeadPosition.md)|Call this method to obtain the position of the head of the list.|  
-|[CAtlList::GetNext](../Topic/CAtlList::GetNext.md)|Call this method to return the next element from the list.|  
-|[CAtlList::GetPrev](../Topic/CAtlList::GetPrev.md)|Call this method to return the previous element from the list.|  
-|[CAtlList::GetTail](../Topic/CAtlList::GetTail.md)|Call this method to return the element at the tail of the list.|  
-|[CAtlList::GetTailPosition](../Topic/CAtlList::GetTailPosition.md)|Call this method to obtain the position of the tail of the list.|  
-|[CAtlList::InsertAfter](../Topic/CAtlList::InsertAfter.md)|Call this method to insert a new element into the list after the specified position.|  
-|[CAtlList::InsertBefore](../Topic/CAtlList::InsertBefore.md)|Call this method to insert a new element into the list before the specified position.|  
-|[CAtlList::IsEmpty](../Topic/CAtlList::IsEmpty.md)|Call this method to determine if the list is empty.|  
-|[CAtlList::MoveToHead](../Topic/CAtlList::MoveToHead.md)|Call this method to move the specified element to the head of the list.|  
-|[CAtlList::MoveToTail](../Topic/CAtlList::MoveToTail.md)|Call this method to move the specified element to the tail of the list.|  
-|[CAtlList::RemoveAll](../Topic/CAtlList::RemoveAll.md)|Call this method to remove all of the elements from the list.|  
-|[CAtlList::RemoveAt](../Topic/CAtlList::RemoveAt.md)|Call this method to remove a single element from the list.|  
-|[CAtlList::RemoveHead](../Topic/CAtlList::RemoveHead.md)|Call this method to remove the element at the head of the list.|  
-|[CAtlList::RemoveHeadNoReturn](../Topic/CAtlList::RemoveHeadNoReturn.md)|Call this method to remove the element at the head of the list without returning a value.|  
-|[CAtlList::RemoveTail](../Topic/CAtlList::RemoveTail.md)|Call this method to remove the element at the tail of the list.|  
-|[CAtlList::RemoveTailNoReturn](../Topic/CAtlList::RemoveTailNoReturn.md)|Call this method to remove the element at the tail of the list without returning a value.|  
-|[CAtlList::SetAt](../Topic/CAtlList::SetAt.md)|Call this method to set the value of the element at a given position in the list.|  
-|[CAtlList::SwapElements](../Topic/CAtlList::SwapElements.md)|Call this method to swap elements in the list.|  
+|[CAtlList::AddHead](#catllist__addhead)|Call this method to add an element to the head of the list.|  
+|[CAtlList::AddHeadList](#catllist__addheadlist)|Call this method to add an existing list to the head of the list.|  
+|[CAtlList::AddTail](#catllist__addtail)|Call this method to add an element to the tail of this list.|  
+|[CAtlList::AddTailList](#catllist__addtaillist)|Call this method to add an existing list to the tail of this list.|  
+|[CAtlList::AssertValid](#catllist__assertvalid)|Call this method to confirm the list is valid.|  
+|[CAtlList::Find](#catllist__find)|Call this method to search the list for the specified element.|  
+|[CAtlList::FindIndex](#catllist__findindex)|Call this method to obtain the position of an element, given an index value.|  
+|[CAtlList::GetAt](#catllist__getat)|Call this method to return the element at a specified position in the list.|  
+|[CAtlList::GetCount](#catllist__getcount)|Call this method to return the number of objects in the list.|  
+|[CAtlList::GetHead](#catllist__gethead)|Call this method to return the element at the head of the list.|  
+|[CAtlList::GetHeadPosition](#catllist__getheadposition)|Call this method to obtain the position of the head of the list.|  
+|[CAtlList::GetNext](#catllist__getnext)|Call this method to return the next element from the list.|  
+|[CAtlList::GetPrev](#catllist__getprev)|Call this method to return the previous element from the list.|  
+|[CAtlList::GetTail](#catllist__gettail)|Call this method to return the element at the tail of the list.|  
+|[CAtlList::GetTailPosition](#catllist__gettailposition)|Call this method to obtain the position of the tail of the list.|  
+|[CAtlList::InsertAfter](#catllist__insertafter)|Call this method to insert a new element into the list after the specified position.|  
+|[CAtlList::InsertBefore](#catllist__insertbefore)|Call this method to insert a new element into the list before the specified position.|  
+|[CAtlList::IsEmpty](#catllist__isempty)|Call this method to determine if the list is empty.|  
+|[CAtlList::MoveToHead](#catllist__movetohead)|Call this method to move the specified element to the head of the list.|  
+|[CAtlList::MoveToTail](#catllist__movetotail)|Call this method to move the specified element to the tail of the list.|  
+|[CAtlList::RemoveAll](#catllist__removeall)|Call this method to remove all of the elements from the list.|  
+|[CAtlList::RemoveAt](#catllist__removeat)|Call this method to remove a single element from the list.|  
+|[CAtlList::RemoveHead](#catllist__removehead)|Call this method to remove the element at the head of the list.|  
+|[CAtlList::RemoveHeadNoReturn](#catllist__removeheadnoreturn)|Call this method to remove the element at the head of the list without returning a value.|  
+|[CAtlList::RemoveTail](#catllist__removetail)|Call this method to remove the element at the tail of the list.|  
+|[CAtlList::RemoveTailNoReturn](#catllist__removetailnoreturn)|Call this method to remove the element at the tail of the list without returning a value.|  
+|[CAtlList::SetAt](#catllist__setat)|Call this method to set the value of the element at a given position in the list.|  
+|[CAtlList::SwapElements](#catllist__swapelements)|Call this method to swap elements in the list.|  
   
 ## Remarks  
  The `CAtlList` class supports ordered lists of nonunique objects accessible sequentially or by value. `CAtlList` lists behave like doubly linked lists. Each list has a head and a tail, and new elements (or lists in some cases) can be added to either end of the list, or inserted before or after specific elements.  
   
- Most of the `CAtlList` methods make use of a position value. This value is used by the methods to reference the actual memory location where the elements are stored, and should not be calculated or predicted directly. If it is necessary to access the *n*th element in the list, the method [CAtlList::FindIndex](../Topic/CAtlList::FindIndex.md) will return the corresponding position value for a given index. The methods [CAtlList::GetNext](../Topic/CAtlList::GetNext.md) and [CAtlList::GetPrev](../Topic/CAtlList::GetPrev.md) can be used to iterate through the objects in the list.  
+ Most of the `CAtlList` methods make use of a position value. This value is used by the methods to reference the actual memory location where the elements are stored, and should not be calculated or predicted directly. If it is necessary to access the *n*th element in the list, the method [CAtlList::FindIndex](#catllist__findindex) will return the corresponding position value for a given index. The methods [CAtlList::GetNext](#catllist__getnext) and [CAtlList::GetPrev](#catllist__getprev) can be used to iterate through the objects in the list.  
   
  For more information regarding the collection classes available with ATL, see [ATL Collection Classes](../../atl/atl-collection-classes.md).  
   
@@ -225,7 +225,7 @@ CAtlList(UINT nBlockSize = 10) throw();
 ```  
   
 ### Remarks  
- Frees all allocated resources, including a call to [CAtlList::RemoveAll](../Topic/CAtlList::RemoveAll.md) to remove all elements from the list.  
+ Frees all allocated resources, including a call to [CAtlList::RemoveAll](#catllist__removeall) to remove all elements from the list.  
   
  In debug builds, an assertion failure will occur if the list still contains some elements after the call to `RemoveAll`.  
   
@@ -298,7 +298,7 @@ const E& GetAt(POSITION pos) const throw();
  In debug builds, an assertion failure will occur if `pos` is equal to NULL.  
   
 ### Example  
- See the example for [CAtlList::FindIndex](../Topic/CAtlList::FindIndex.md).  
+ See the example for [CAtlList::FindIndex](#catllist__findindex).  
   
 ##  <a name="catllist__getcount"></a>  CAtlList::GetCount  
  Call this method to return the number of objects in the list.  
@@ -311,7 +311,7 @@ size_t GetCount() const throw();
  Returns the number of elements in the list.  
   
 ### Example  
- See the example for [CAtlList::Find](../Topic/CAtlList::Find.md).  
+ See the example for [CAtlList::Find](#catllist__find).  
   
 ##  <a name="catllist__gethead"></a>  CAtlList::GetHead  
  Call this method to return the element at the head of the list.  
@@ -333,7 +333,7 @@ const E& GetHead() const throw();
  In debug builds, an assertion failure will occur if the head of the list points to NULL.  
   
 ### Example  
- See the example for [CAtlList::AddHead](../Topic/CAtlList::AddHead.md).  
+ See the example for [CAtlList::AddHead](#catllist__addhead).  
   
 ##  <a name="catllist__getheadposition"></a>  CAtlList::GetHeadPosition  
  Call this method to obtain the position of the head of the list.  
@@ -362,7 +362,7 @@ const E& GetNext(POSITION& pos) const throw();
   
 ### Parameters  
  `pos`  
- A POSITION value, returned by a previous call to `GetNext`, [CAtlList::GetHeadPosition](../Topic/CAtlList::GetHeadPosition.md), or other `CAtlList` method.  
+ A POSITION value, returned by a previous call to `GetNext`, [CAtlList::GetHeadPosition](#catllist__getheadposition), or other `CAtlList` method.  
   
 ### Return Value  
  If the list is **const**, `GetNext` returns a copy of the next element of the list. This allows the method to be used only on the right side of an assignment statement and protects the list from modification.  
@@ -373,7 +373,7 @@ const E& GetNext(POSITION& pos) const throw();
  The POSITION counter, `pos`, is updated to point to the next element in the list, or NULL if there are no more elements. In debug builds, an assertion failure will occur if `pos` is equal to NULL.  
   
 ### Example  
- See the example for [CAtlList::GetHeadPosition](../Topic/CAtlList::GetHeadPosition.md).  
+ See the example for [CAtlList::GetHeadPosition](#catllist__getheadposition).  
   
 ##  <a name="catllist__getprev"></a>  CAtlList::GetPrev  
  Call this method to return the previous element from the list.  
@@ -386,7 +386,7 @@ const E& GetPrev(POSITION& pos) const throw();
   
 ### Parameters  
  `pos`  
- A POSITION value, returned by a previous call to `GetPrev`, [CAtlList::GetTailPosition](../Topic/CAtlList::GetTailPosition.md), or other `CAtlList` method.  
+ A POSITION value, returned by a previous call to `GetPrev`, [CAtlList::GetTailPosition](#catllist__gettailposition), or other `CAtlList` method.  
   
 ### Return Value  
  If the list is **const**, `GetPrev` returns a copy of an element of the list. This allows the method to be used only on the right side of an assignment statement and protects the list from modification.  
@@ -397,7 +397,7 @@ const E& GetPrev(POSITION& pos) const throw();
  The POSITION counter, `pos`, is updated to point to the previous element in the list, or NULL if there are no more elements. In debug builds, an assertion failure will occur if `pos` is equal to NULL.  
   
 ### Example  
- See the example for [CAtlList::GetTailPosition](../Topic/CAtlList::GetTailPosition.md).  
+ See the example for [CAtlList::GetTailPosition](#catllist__gettailposition).  
   
 ##  <a name="catllist__gettail"></a>  CAtlList::GetTail  
  Call this method to return the element at the tail of the list.  
@@ -419,7 +419,7 @@ const E& GetTail() const throw();
  In debug builds, an assertion failure will occur if the tail of the list points to NULL.  
   
 ### Example  
- See the example for [CAtlList::AddTail](../Topic/CAtlList::AddTail.md).  
+ See the example for [CAtlList::AddTail](#catllist__addtail).  
   
 ##  <a name="catllist__gettailposition"></a>  CAtlList::GetTailPosition  
  Call this method to obtain the position of the tail of the list.  
@@ -535,7 +535,7 @@ void MoveToTail(POSITION pos) throw();
  The specified element is moved from its current position to the tail of the list. In debug builds, an assertion failure will occur if `pos` is equal to NULL.  
   
 ### Example  
- See the example for [CAtlList::MoveToHead](../Topic/CAtlList::MoveToHead.md).  
+ See the example for [CAtlList::MoveToHead](#catllist__movetohead).  
   
 ##  <a name="catllist__removeall"></a>  CAtlList::RemoveAll  
  Call this method to remove all of the elements from the list.  
@@ -548,7 +548,7 @@ void RemoveAll() throw();
  This method removes all of the elements from the list and frees the allocated memory. In debugs builds, an ATLASSERT will be raised if all elements aren't deleted or if the list structure has become corrupted.  
   
 ### Example  
- See the example for [CAtlList::IsEmpty](../Topic/CAtlList::IsEmpty.md).  
+ See the example for [CAtlList::IsEmpty](#catllist__isempty).  
   
 ##  <a name="catllist__removeat"></a>  CAtlList::RemoveAt  
  Call this method to remove a single element from the list.  
@@ -596,7 +596,7 @@ void RemoveHeadNoReturn() throw();
  The head element is deleted from the list, and memory is freed. In debug builds, an assertion failure will occur if the list is empty.  
   
 ### Example  
- See the example for [CAtlList::IsEmpty](../Topic/CAtlList::IsEmpty.md).  
+ See the example for [CAtlList::IsEmpty](#catllist__isempty).  
   
 ##  <a name="catllist__removetail"></a>  CAtlList::RemoveTail  
  Call this method to remove the element at the tail of the list.  
@@ -625,7 +625,7 @@ void RemoveTailNoReturn() throw();
  The tail element is deleted from the list, and memory is freed. In debug builds, an assertion failure will occur if the list is empty.  
   
 ### Example  
- See the example for [CAtlList::IsEmpty](../Topic/CAtlList::IsEmpty.md).  
+ See the example for [CAtlList::IsEmpty](#catllist__isempty).  
   
 ##  <a name="catllist__setat"></a>  CAtlList::SetAt  
  Call this method to set the value of the element at a given position in the list.  
@@ -670,10 +670,3 @@ void SwapElements(POSITION pos1,  POSITION pos2) throw();
 ## See Also  
  [CList Class](../../mfc/reference/clist-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

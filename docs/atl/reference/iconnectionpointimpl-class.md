@@ -1,7 +1,7 @@
 ---
 title: "IConnectionPointImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "connection points [C++], implementing"
   - "IConnectionPointImpl class"
 ms.assetid: 27992115-3b86-45dd-bc9e-54f32876c557
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -64,17 +64,17 @@ template<class T,
   
 |Name|Description|  
 |----------|-----------------|  
-|[IConnectionPointImpl::Advise](../Topic/IConnectionPointImpl::Advise.md)|Establishes a connection between the connection point and a sink.|  
-|[IConnectionPointImpl::EnumConnections](../Topic/IConnectionPointImpl::EnumConnections.md)|Creates an enumerator to iterate through the connections for the connection point.|  
-|[IConnectionPointImpl::GetConnectionInterface](../Topic/IConnectionPointImpl::GetConnectionInterface.md)|Retrieves the IID of the interface represented by the connection point.|  
-|[IConnectionPointImpl::GetConnectionPointContainer](../Topic/IConnectionPointImpl::GetConnectionPointContainer.md)|Retrieves an interface pointer to the connectable object.|  
-|[IConnectionPointImpl::Unadvise](../Topic/IConnectionPointImpl::Unadvise.md)|Terminates a connection previously established through `Advise`.|  
+|[IConnectionPointImpl::Advise](#iconnectionpointimpl__advise)|Establishes a connection between the connection point and a sink.|  
+|[IConnectionPointImpl::EnumConnections](#iconnectionpointimpl__enumconnections)|Creates an enumerator to iterate through the connections for the connection point.|  
+|[IConnectionPointImpl::GetConnectionInterface](#iconnectionpointimpl__getconnectioninterface)|Retrieves the IID of the interface represented by the connection point.|  
+|[IConnectionPointImpl::GetConnectionPointContainer](#iconnectionpointimpl__getconnectionpointcontainer)|Retrieves an interface pointer to the connectable object.|  
+|[IConnectionPointImpl::Unadvise](#iconnectionpointimpl__unadvise)|Terminates a connection previously established through `Advise`.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[IConnectionPointImpl::m_vec](../Topic/IConnectionPointImpl::m_vec.md)|Manages the connections for the connection point.|  
+|[IConnectionPointImpl::m_vec](#iconnectionpointimpl__m_vec)|Manages the connections for the connection point.|  
   
 ## Remarks  
  `IConnectionPointImpl` implements a connection point, which allows an object to expose an outgoing interface to the client. The client implements this interface on an object called a sink.  
@@ -101,7 +101,7 @@ STDMETHOD(Advise)(
 ```  
   
 ### Remarks  
- Use [Unadvise](../Topic/IConnectionPointImpl::Unadvise.md) to terminate the connection call.  
+ Use [Unadvise](#iconnectionpointimpl__unadvise) to terminate the connection call.  
   
  See [IConnectionPoint::Advise](http://msdn.microsoft.com/library/windows/desktop/ms678815) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -147,7 +147,7 @@ CDV
  By default, `m_vec` is of type [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md).  
   
 ##  <a name="iconnectionpointimpl__unadvise"></a>  IConnectionPointImpl::Unadvise  
- Terminates a connection previously established through [Advise](../Topic/IConnectionPointImpl::Advise.md).  
+ Terminates a connection previously established through [Advise](#iconnectionpointimpl__advise).  
   
 ```
 STDMETHOD(Unadvise)(DWORD dwCookie);
@@ -159,10 +159,3 @@ STDMETHOD(Unadvise)(DWORD dwCookie);
 ## See Also  
  [IConnectionPoint](http://msdn.microsoft.com/library/windows/desktop/ms694318)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

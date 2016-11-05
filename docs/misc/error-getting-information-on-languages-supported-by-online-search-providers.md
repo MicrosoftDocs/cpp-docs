@@ -1,7 +1,7 @@
 ---
 title: "Error getting information on languages supported by online search providers. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

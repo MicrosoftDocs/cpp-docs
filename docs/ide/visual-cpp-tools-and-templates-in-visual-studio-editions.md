@@ -1,7 +1,7 @@
 ---
 title: "Visual C++ Tools and Templates in Visual Studio Editions | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -194,7 +194,7 @@ The following tables show Visual C++ features that are available in Visual Studi
 |Code map debugging||||X|  
   
 ## See Also  
- [Installing Visual Studio 2015](/visual-studio/install/installing-visual-studio-2015)   
+ [Installing Visual Studio 2015](../Topic/Installing%20Visual%20Studio%202015.md)   
  [What's New in Visual Studio 2015](/visual-studio/ide/what-s-new-in-visual-studio-2015)   
  [Visual C++ Project Types](../ide/visual-cpp-project-types.md)   
  [Visual Database Tools Editions](http://msdn.microsoft.com/en-us/a7689adc-f16b-4cc7-b6fe-39ca0c711161)

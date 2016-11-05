@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 1) CS0197 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0197"
 ms.assetid: 2b5b1b8d-ce13-4bd7-b80a-abb80e9f79ad
 caps.latest.revision: 17
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

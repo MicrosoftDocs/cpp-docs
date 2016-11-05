@@ -1,7 +1,7 @@
 ---
 title: "_open, _wopen | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -263,7 +263,7 @@ Open succeeded on output file
   
 -   [System::IO::File::Open](https://msdn.microsoft.com/en-us/library/system.io.file.open.aspx)  
   
--   <xref:System.IO.FileStream.#ctor*>  
+-   <xref:System.IO.FileStream.%23ctor%2A>  
   
 ## See Also  
  [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   

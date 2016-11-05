@@ -1,7 +1,7 @@
 ---
 title: "CAtlExeModuleT Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAtlExeModuleT class"
 ms.assetid: 82245f3d-91d4-44fa-aa86-7cc7fbd758d9
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -58,39 +58,39 @@ template <class T>  class ATL_NO_VTABLE CAtlExeModuleT :  public CAtlModuleT<T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlExeModuleT::CAtlExeModuleT](../Topic/CAtlExeModuleT::CAtlExeModuleT.md)|The constructor.|  
-|[CAtlExeModuleT::~CAtlExeModuleT](../Topic/CAtlExeModuleT::~CAtlExeModuleT.md)|The destructor.|  
+|[CAtlExeModuleT::CAtlExeModuleT](#catlexemodulet__catlexemodulet)|The constructor.|  
+|[CAtlExeModuleT::~CAtlExeModuleT](#catlexemodulet___dtorcatlexemodulet)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlExeModuleT::InitializeCom](../Topic/CAtlExeModuleT::InitializeCom.md)|Initializes COM.|  
-|[CAtlExeModuleT::ParseCommandLine](../Topic/CAtlExeModuleT::ParseCommandLine.md)|Parses the command line and performs registration if necessary.|  
-|[CAtlExeModuleT::PostMessageLoop](../Topic/CAtlExeModuleT::PostMessageLoop.md)|This method is called immediately after the message loop exits.|  
-|[CAtlExeModuleT::PreMessageLoop](../Topic/CAtlExeModuleT::PreMessageLoop.md)|This method is called immediately before entering the message loop.|  
-|[CAtlExeModuleT::RegisterClassObjects](../Topic/CAtlExeModuleT::RegisterClassObjects.md)|Registers the class object.|  
-|[CAtlExeModuleT::RevokeClassObjects](../Topic/CAtlExeModuleT::RevokeClassObjects.md)|Revokes the class object.|  
-|[CAtlExeModuleT::Run](../Topic/CAtlExeModuleT::Run.md)|This method executes code in the EXE module to initialize, run the message loop, and clean up.|  
-|[CAtlExeModuleT::RunMessageLoop](../Topic/CAtlExeModuleT::RunMessageLoop.md)|This method executes the message loop.|  
-|[CAtlExeModuleT::UninitializeCom](../Topic/CAtlExeModuleT::UninitializeCom.md)|Uninitializes COM.|  
-|[CAtlExeModuleT::Unlock](../Topic/CAtlExeModuleT::Unlock.md)|Decrements the module's lock count.|  
-|[CAtlExeModuleT::WinMain](../Topic/CAtlExeModuleT::WinMain.md)|This method implements the code required to run an EXE.|  
+|[CAtlExeModuleT::InitializeCom](#catlexemodulet__initializecom)|Initializes COM.|  
+|[CAtlExeModuleT::ParseCommandLine](#catlexemodulet__parsecommandline)|Parses the command line and performs registration if necessary.|  
+|[CAtlExeModuleT::PostMessageLoop](#catlexemodulet__postmessageloop)|This method is called immediately after the message loop exits.|  
+|[CAtlExeModuleT::PreMessageLoop](#catlexemodulet__premessageloop)|This method is called immediately before entering the message loop.|  
+|[CAtlExeModuleT::RegisterClassObjects](#catlexemodulet__registerclassobjects)|Registers the class object.|  
+|[CAtlExeModuleT::RevokeClassObjects](#catlexemodulet__revokeclassobjects)|Revokes the class object.|  
+|[CAtlExeModuleT::Run](#catlexemodulet__run)|This method executes code in the EXE module to initialize, run the message loop, and clean up.|  
+|[CAtlExeModuleT::RunMessageLoop](#catlexemodulet__runmessageloop)|This method executes the message loop.|  
+|[CAtlExeModuleT::UninitializeCom](#catlexemodulet__uninitializecom)|Uninitializes COM.|  
+|[CAtlExeModuleT::Unlock](#catlexemodulet__unlock)|Decrements the module's lock count.|  
+|[CAtlExeModuleT::WinMain](#catlexemodulet__winmain)|This method implements the code required to run an EXE.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlExeModuleT::m_bDelayShutdown](../Topic/CAtlExeModuleT::m_bDelayShutdown.md)|A flag indicating that there should be a delay shutting down the module.|  
-|[CAtlExeModuleT::m_dwPause](../Topic/CAtlExeModuleT::m_dwPause.md)|A pause value used to ensure all objects are released before shutdown.|  
-|[CAtlExeModuleT::m_dwTimeOut](../Topic/CAtlExeModuleT::m_dwTimeOut.md)|A time-out value used to delay the unloading of the module.|  
+|[CAtlExeModuleT::m_bDelayShutdown](#catlexemodulet__m_bdelayshutdown)|A flag indicating that there should be a delay shutting down the module.|  
+|[CAtlExeModuleT::m_dwPause](#catlexemodulet__m_dwpause)|A pause value used to ensure all objects are released before shutdown.|  
+|[CAtlExeModuleT::m_dwTimeOut](#catlexemodulet__m_dwtimeout)|A time-out value used to delay the unloading of the module.|  
   
 ## Remarks  
  `CAtlExeModuleT` represents the module for an application (EXE) and contains code that supports creating an EXE, processing the command line, registering class objects, running the message loop, and cleaning up on exit.  
   
- This class is designed to improve performance when COM objects in the EXE server are continually created and destroyed. After the last COM object is released, the EXE waits for a duration specified by the [CAtlExeModuleT::m_dwTimeOut](../Topic/CAtlExeModuleT::m_dwTimeOut.md) data member. If there is no activity during this period (that is, no COM objects are created), the shutdown process is initiated.  
+ This class is designed to improve performance when COM objects in the EXE server are continually created and destroyed. After the last COM object is released, the EXE waits for a duration specified by the [CAtlExeModuleT::m_dwTimeOut](#catlexemodulet__m_dwtimeout) data member. If there is no activity during this period (that is, no COM objects are created), the shutdown process is initiated.  
   
- The [CAtlExeModuleT::m_bDelayShutdown](../Topic/CAtlExeModuleT::m_bDelayShutdown.md) data member is a flag used to determine if the EXE should use the mechanism defined above. If it is set to false, then the module will terminate immediately.  
+ The [CAtlExeModuleT::m_bDelayShutdown](#catlexemodulet__m_bdelayshutdown) data member is a flag used to determine if the EXE should use the mechanism defined above. If it is set to false, then the module will terminate immediately.  
   
  For more information on modules in ATL, see [ATL Module Classes](../../atl/atl-module-classes.md).  
   
@@ -139,7 +139,7 @@ static HRESULT InitializeCom() throw();
 ### Remarks  
  This method is called from the constructor and can be overridden to initialize COM in a manner different from the default implementation. The default implementation either calls **CoInitializeEx(NULL, COINIT_MULTITHREADED)** or **CoInitialize(NULL)** depending on the project configuration.  
   
- Overriding this method normally requires overriding [CAtlExeModuleT::UninitializeCom](../Topic/CAtlExeModuleT::UninitializeCom.md).  
+ Overriding this method normally requires overriding [CAtlExeModuleT::UninitializeCom](#catlexemodulet__uninitializecom).  
   
 ##  <a name="catlexemodulet__m_bdelayshutdown"></a>  CAtlExeModuleT::m_bDelayShutdown  
  A flag indicating that there should be a delay shutting down the module.  
@@ -159,7 +159,7 @@ DWORD m_dwPause;
 ```  
   
 ### Remarks  
- Change this value after calling [CAtlExeModuleT::InitializeCom](../Topic/CAtlExeModuleT::InitializeCom.md) to set the number of milliseconds used as the pause value for shutting down the server. The default value is 1000 milliseconds.  
+ Change this value after calling [CAtlExeModuleT::InitializeCom](#catlexemodulet__initializecom) to set the number of milliseconds used as the pause value for shutting down the server. The default value is 1000 milliseconds.  
   
 ##  <a name="catlexemodulet__m_dwtimeout"></a>  CAtlExeModuleT::m_dwTimeOut  
  A time-out value used to delay the unloading of the module.  
@@ -169,7 +169,7 @@ DWORD m_dwTimeOut;
 ```  
   
 ### Remarks  
- Change this value after calling [CAtlExeModuleT::InitializeCom](../Topic/CAtlExeModuleT::InitializeCom.md) to define the number of milliseconds used as the time-out value for shutting down the server. The default value is 5000 milliseconds. See the [CAtlExeModuleT Overview](../../atl/reference/catlexemodulet-class.md) for more details.  
+ Change this value after calling [CAtlExeModuleT::InitializeCom](#catlexemodulet__initializecom) to define the number of milliseconds used as the time-out value for shutting down the server. The default value is 5000 milliseconds. See the [CAtlExeModuleT Overview](../../atl/reference/catlexemodulet-class.md) for more details.  
   
 ##  <a name="catlexemodulet__parsecommandline"></a>  CAtlExeModuleT::ParseCommandLine  
  Parses the command line and performs registration if necessary.  
@@ -190,7 +190,7 @@ bool ParseCommandLine(LPCTSTR lpCmdLine,
  Return true if the application should continue to run, otherwise false.  
   
 ### Remarks  
- This method is called from [CAtlExeModuleT::WinMain](../Topic/CAtlExeModuleT::WinMain.md) and can be overridden to handle command-line switches. The default implementation checks for **/RegServer** and **/UnRegServer** command-line arguments and performs registration or unregistration.  
+ This method is called from [CAtlExeModuleT::WinMain](#catlexemodulet__winmain) and can be overridden to handle command-line switches. The default implementation checks for **/RegServer** and **/UnRegServer** command-line arguments and performs registration or unregistration.  
   
 ##  <a name="catlexemodulet__postmessageloop"></a>  CAtlExeModuleT::PostMessageLoop  
  This method is called immediately after the message loop exits.  
@@ -203,7 +203,7 @@ HRESULT PostMessageLoop() throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- Override this method to perform custom application cleanup. The default implementation calls [CAtlExeModuleT::RevokeClassObjects](../Topic/CAtlExeModuleT::RevokeClassObjects.md).  
+ Override this method to perform custom application cleanup. The default implementation calls [CAtlExeModuleT::RevokeClassObjects](#catlexemodulet__revokeclassobjects).  
   
 ##  <a name="catlexemodulet__premessageloop"></a>  CAtlExeModuleT::PreMessageLoop  
  This method is called immediately before entering the message loop.  
@@ -264,7 +264,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This method can be overridden. However, in practice is it better to override [CAtlExeModuleT::PreMessageLoop](../Topic/CAtlExeModuleT::PreMessageLoop.md), [CAtlExeModuleT::RunMessageLoop](../Topic/CAtlExeModuleT::RunMessageLoop.md), or [CAtlExeModuleT::PostMessageLoop](../Topic/CAtlExeModuleT::PostMessageLoop.md) instead.  
+ This method can be overridden. However, in practice is it better to override [CAtlExeModuleT::PreMessageLoop](#catlexemodulet__premessageloop), [CAtlExeModuleT::RunMessageLoop](#catlexemodulet__runmessageloop), or [CAtlExeModuleT::PostMessageLoop](#catlexemodulet__postmessageloop) instead.  
   
 ##  <a name="catlexemodulet__runmessageloop"></a>  CAtlExeModuleT::RunMessageLoop  
  This method executes the message loop.  
@@ -284,7 +284,7 @@ static void UninitializeCom() throw();
 ```  
   
 ### Remarks  
- By default this method simply calls [CoUninitialize](http://msdn.microsoft.com/library/windows/desktop/ms688715) and is called from the destructor. Override this method if you override [CAtlExeModuleT::InitializeCom](../Topic/CAtlExeModuleT::InitializeCom.md).  
+ By default this method simply calls [CoUninitialize](http://msdn.microsoft.com/library/windows/desktop/ms688715) and is called from the destructor. Override this method if you override [CAtlExeModuleT::InitializeCom](#catlexemodulet__initializecom).  
   
 ##  <a name="catlexemodulet__unlock"></a>  CAtlExeModuleT::Unlock  
  Decrements the module's lock count.  
@@ -311,17 +311,10 @@ int WinMain(int nShowCmd) throw();
  Returns the executable's return value.  
   
 ### Remarks  
- This method can be overridden. If overriding [CAtlExeModuleT::PreMessageLoop](../Topic/CAtlExeModuleT::PreMessageLoop.md), [CAtlExeModuleT::PostMessageLoop](../Topic/CAtlExeModuleT::PostMessageLoop.md), or [CAtlExeModuleT::RunMessageLoop](../Topic/CAtlExeModuleT::RunMessageLoop.md) doesn't provide enough flexibility, it's possible to override the `WinMain` function using this method.  
+ This method can be overridden. If overriding [CAtlExeModuleT::PreMessageLoop](#catlexemodulet__premessageloop), [CAtlExeModuleT::PostMessageLoop](#catlexemodulet__postmessageloop), or [CAtlExeModuleT::RunMessageLoop](#catlexemodulet__runmessageloop) doesn't provide enough flexibility, it's possible to override the `WinMain` function using this method.  
   
 ## See Also  
  [ATLDuck Sample](../../top/visual-cpp-samples.md)   
  [CAtlModuleT Class](../../atl/reference/catlmodulet-class.md)   
  [CAtlDllModuleT Class](../../atl/reference/catldllmodulet-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

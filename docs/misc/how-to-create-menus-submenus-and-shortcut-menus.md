@@ -1,7 +1,7 @@
 ---
 title: "How to: Create Menus, SubMenus, and Shortcut Menus | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -151,7 +151,7 @@ To add a menu to the Visual Studio integrated development environment (IDE), a V
   
      [!code-cs[TWShortcutMenu#43](../misc/codesnippet/CSharp/how-to-create-menus-submenus-and-shortcut-menus_9.cs)]  
   
-     The <xref:System.Windows.Forms.Control.PointToScreen*> method converts the click position, which is relative to the control, to a screen position. The <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu*> method displays the shortcut menu.  
+     The <xref:System.Windows.Forms.Control.PointToScreen%2A> method converts the click position, which is relative to the control, to a screen position. The <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A> method displays the shortcut menu.  
   
      The file that contains the event handler must include the <xref:System.ComponentModel.Design> namespace to access the <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> class, and the <xref:Microsoft.VisualStudio.Shell> namespace to access the <xref:System.ComponentModel.Design.IMenuCommandService> interface.  
   

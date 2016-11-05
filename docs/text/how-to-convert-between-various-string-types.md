@@ -1,7 +1,7 @@
 ---
 title: "How to: Convert Between Various String Types | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -728,7 +728,7 @@ Hello, World! (System::String)
 ## Example  
   
 ### Description  
- This example demonstrates how to convert from a wide character (Unicode) <xref:String?displayProperty=fullName> to the other string types listed above.  
+ This example demonstrates how to convert from a wide character (Unicode) [System::String](assetId:///System::String?qualifyHint=True&autoUpgrade=True) to the other string types listed above.  
   
 ### Code  
   

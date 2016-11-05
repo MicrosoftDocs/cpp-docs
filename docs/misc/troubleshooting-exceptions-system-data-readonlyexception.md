@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting Exceptions: System.Data.ReadOnlyException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -49,6 +49,6 @@ A <xref:System.Data.ReadOnlyException> exception is thrown when there is an atte
   
 ## See Also  
  <xref:System.Data.ReadOnlyException>   
- <xref:System.Data.DataRow.EndEdit*>   
- <xref:System.Data.DataRow.ItemArray*>   
+ <xref:System.Data.DataRow.EndEdit%2A>   
+ <xref:System.Data.DataRow.ItemArray%2A>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)

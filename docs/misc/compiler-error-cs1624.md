@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error CS1624 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1624"
 ms.assetid: af7d049d-27e2-4ce1-973c-5c2cb3e56a63
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS1624
 The body of 'accessor' cannot be an iterator block because 'type' is not an iterator interface type  
   
- This error occurs if an iterator accessor is used but the return type is not one of the iterator interface types: <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable`1>, <xref:System.Collections.IEnumerator>, <xref:System.Collections.Generic.IEnumerator`1>. To avoid this error, use one of the iterator interface types as a return type.  
+ This error occurs if an iterator accessor is used but the return type is not one of the iterator interface types: <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, <xref:System.Collections.Generic.IEnumerator%601>. To avoid this error, use one of the iterator interface types as a return type.  
   
 ## Example  
  The following sample generates CS1624:  

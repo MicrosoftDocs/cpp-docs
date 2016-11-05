@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 1) CS1720 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1720"
 ms.assetid: 97adc294-3a4c-4418-a4ed-ccff43125b62
 caps.latest.revision: 14
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -44,7 +45,7 @@ Expression will always cause a System.NullReferenceException because the default
 default(T).ToString()  
 ```  
   
- Since `T` is a reference type, its default value is null, and so attempting to apply the <xref:System.Object.ToString*> method to it will throw a <xref:System.NullReferenceException>.  
+ Since `T` is a reference type, its default value is null, and so attempting to apply the <xref:System.Object.ToString%2A> method to it will throw a <xref:System.NullReferenceException>.  
   
 ## Example  
  The class reference constraint on type `T` ensures that `T` is a reference type.  

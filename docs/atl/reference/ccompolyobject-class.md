@@ -1,7 +1,7 @@
 ---
 title: "CComPolyObject Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -22,7 +22,7 @@ helpviewer_keywords:
   - "aggregation [C++], ATL objects"
   - "CComPolyObject class"
 ms.assetid: eaf67c18-e855-48ca-9b15-f1df3106121b
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -62,25 +62,25 @@ template<class contained>  class CComPolyObject : public IUnknown, public CComOb
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComPolyObject::CComPolyObject](../Topic/CComPolyObject::CComPolyObject.md)|The constructor.|  
-|[CComPolyObject::~CComPolyObject](../Topic/CComPolyObject::~CComPolyObject.md)|The destructor.|  
+|[CComPolyObject::CComPolyObject](#ccompolyobject__ccompolyobject)|The constructor.|  
+|[CComPolyObject::~CComPolyObject](#ccompolyobject___dtorccompolyobject)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComPolyObject::AddRef](../Topic/CComPolyObject::AddRef.md)|Increments the object's reference count.|  
-|[CComPolyObject::CreateInstance](../Topic/CComPolyObject::CreateInstance.md)|(Static) Allows you to create a new **CComPolyObject<** `contained` **>** object without the overhead of [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).|  
-|[CComPolyObject::FinalConstruct](../Topic/CComPolyObject::FinalConstruct.md)|Performs final initialization of `m_contained`.|  
-|[CComPolyObject::FinalRelease](../Topic/CComPolyObject::FinalRelease.md)|Performs final destruction of `m_contained`.|  
-|[CComPolyObject::QueryInterface](../Topic/CComPolyObject::QueryInterface.md)|Retrieves a pointer to the requested interface.|  
-|[CComPolyObject::Release](../Topic/CComPolyObject::Release.md)|Decrements the object's reference count.|  
+|[CComPolyObject::AddRef](#ccompolyobject__addref)|Increments the object's reference count.|  
+|[CComPolyObject::CreateInstance](#ccompolyobject__createinstance)|(Static) Allows you to create a new **CComPolyObject<** `contained` **>** object without the overhead of [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).|  
+|[CComPolyObject::FinalConstruct](#ccompolyobject__finalconstruct)|Performs final initialization of `m_contained`.|  
+|[CComPolyObject::FinalRelease](#ccompolyobject__finalrelease)|Performs final destruction of `m_contained`.|  
+|[CComPolyObject::QueryInterface](#ccompolyobject__queryinterface)|Retrieves a pointer to the requested interface.|  
+|[CComPolyObject::Release](#ccompolyobject__release)|Decrements the object's reference count.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComPolyObject::m_contained](../Topic/CComPolyObject::m_contained.md)|Delegates **IUnknown** calls to the outer unknown if the object is aggregated or to the **IUnknown** of the object if the object is not aggregated.|  
+|[CComPolyObject::m_contained](#ccompolyobject__m_contained)|Delegates **IUnknown** calls to the outer unknown if the object is aggregated or to the **IUnknown** of the object if the object is not aggregated.|  
   
 ## Remarks  
  `CComPolyObject` implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) for an aggregated or nonaggregated object.  
@@ -129,7 +129,7 @@ CComPolyObject(void* pv);
  [in] A pointer to the outer unknown if the object is to be aggregated, or **NULL** if the object if the object is not aggregated.  
   
 ### Remarks  
- Initializes the `CComContainedObject` data member, [m_contained](../Topic/CComPolyObject::m_contained.md), and increments the module lock count.  
+ Initializes the `CComContainedObject` data member, [m_contained](#ccompolyobject__m_contained), and increments the module lock count.  
   
  The destructor decrements the module lock count.  
   
@@ -141,7 +141,7 @@ CComPolyObject(void* pv);
 ```  
   
 ### Remarks  
- Frees all allocated resources, calls [FinalRelease](../Topic/CComPolyObject::FinalRelease.md), and decrements the module lock count.  
+ Frees all allocated resources, calls [FinalRelease](#ccompolyobject__finalrelease), and decrements the module lock count.  
   
 ##  <a name="ccompolyobject__createinstance"></a>  CComPolyObject::CreateInstance  
  Allows you to create a new **CComPolyObject<**`contained` **>** object without the overhead of [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
@@ -161,10 +161,10 @@ static HRESULT WINAPI CreateInstance(LPUNKNOWN pUnkOuter,
 ### Remarks  
  The object returned has a reference count of zero, so call `AddRef` immediately, then use **Release** to free the reference on the object pointer when you're done.  
   
- If you don't need direct access to the object, but still want to create a new object without the overhead of `CoCreateInstance`, use [CComCoClass::CreateInstance](../Topic/CComCoClass::CreateInstance.md) instead.  
+ If you don't need direct access to the object, but still want to create a new object without the overhead of `CoCreateInstance`, use [CComCoClass::CreateInstance](../../atl/reference/ccomcoclass-class.md#ccomcoclass__createinstance) instead.  
   
 ##  <a name="ccompolyobject__finalconstruct"></a>  CComPolyObject::FinalConstruct  
- Called during the final stages of object construction, this method performs any final initialization on the [m_contained](../Topic/CComPolyObject::m_contained.md) data member.  
+ Called during the final stages of object construction, this method performs any final initialization on the [m_contained](#ccompolyobject__m_contained) data member.  
   
 ```
 HRESULT FinalConstruct();
@@ -174,7 +174,7 @@ HRESULT FinalConstruct();
  A standard `HRESULT` value.  
   
 ##  <a name="ccompolyobject__finalrelease"></a>  CComPolyObject::FinalRelease  
- Called during object destruction, this method frees the [m_contained](../Topic/CComPolyObject::m_contained.md) data member.  
+ Called during object destruction, this method frees the [m_contained](#ccompolyobject__m_contained) data member.  
   
 ```
 void FinalRelease();
@@ -222,7 +222,7 @@ STDMETHOD(QueryInterface)(REFIID iid,
  A standard `HRESULT` value.  
   
 ### Remarks  
- For an aggregated object, if the requested interface is **IUnknown**, `QueryInterface` returns a pointer to the aggregated object's own **IUnknown** and increments the reference count. Otherwise, this method queries for the interface through the `CComContainedObject` data member, [m_contained](../Topic/CComPolyObject::m_contained.md).  
+ For an aggregated object, if the requested interface is **IUnknown**, `QueryInterface` returns a pointer to the aggregated object's own **IUnknown** and increments the reference count. Otherwise, this method queries for the interface through the `CComContainedObject` data member, [m_contained](#ccompolyobject__m_contained).  
   
 ##  <a name="ccompolyobject__release"></a>  CComPolyObject::Release  
  Decrements the reference count on the object.  
@@ -238,10 +238,3 @@ STDMETHOD_(ULONG, Release)();
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
  [DECLARE_POLY_AGGREGATABLE](../Topic/DECLARE_POLY_AGGREGATABLE.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

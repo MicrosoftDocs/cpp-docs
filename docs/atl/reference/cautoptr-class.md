@@ -1,7 +1,7 @@
 ---
 title: "CAutoPtr Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAutoPtr class"
 ms.assetid: 08988d53-4fb0-4711-bdfc-8ac29c63f410
-caps.latest.revision: 22
+caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -58,30 +58,30 @@ template <typename   T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAutoPtr::CAutoPtr](../Topic/CAutoPtr::CAutoPtr.md)|The constructor.|  
-|[CAutoPtr::~CAutoPtr](../Topic/CAutoPtr::~CAutoPtr.md)|The destructor.|  
+|[CAutoPtr::CAutoPtr](#cautoptr__cautoptr)|The constructor.|  
+|[CAutoPtr::~CAutoPtr](#cautoptr___dtorcautoptr)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAutoPtr::Attach](/visual-studio/profiling/attach)|Call this method to take ownership of an existing pointer.|  
-|[CAutoPtr::Detach](/visual-studio/profiling/detach)|Call this method to release ownership of a pointer.|  
-|[CAutoPtr::Free](../Topic/CAutoPtr::Free.md)|Call this method to delete an object pointed to by a `CAutoPtr`.|  
+|[CAutoPtr::Attach](#cautoptr__attach)|Call this method to take ownership of an existing pointer.|  
+|[CAutoPtr::Detach](#cautoptr__detach)|Call this method to release ownership of a pointer.|  
+|[CAutoPtr::Free](#cautoptr__free)|Call this method to delete an object pointed to by a `CAutoPtr`.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAutoPtr::operator T*](../Topic/CAutoPtr::operator%20T*.md)|The cast operator.|  
-|[CAutoPtr::operator =](../Topic/CAutoPtr::operator%20=.md)|The assignment operator.|  
+|[CAutoPtr::operator T*](#cautoptr__operator_t_star)|The cast operator.|  
+|[CAutoPtr::operator =](#cautoptr__operator__eq)|The assignment operator.|  
 |[CAutoPtr::operator ->](../Topic/CAutoPtr::operator%20-%3E.md)|The pointer-to-member operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAutoPtr::m_p](../Topic/CAutoPtr::m_p.md)|The pointer data member variable.|  
+|[CAutoPtr::m_p](#cautoptr__m_p)|The pointer data member variable.|  
   
 ## Remarks  
  This class provides methods for creating and managing a smart pointer, which will help protect against memory leaks by automatically freeing resources when it falls out of scope.  
@@ -112,9 +112,9 @@ void Attach(T* p) throw();
  The `CAutoPtr` object will take ownership of this pointer.  
   
 ### Remarks  
- When a `CAutoPtr` object takes ownership of a pointer, it will automatically delete the pointer and any allocated data when it goes out of scope. If [CAutoPtr::Detach](/visual-studio/profiling/detach) is called, the programmer is again given responsibility for freeing any allocated resources.  
+ When a `CAutoPtr` object takes ownership of a pointer, it will automatically delete the pointer and any allocated data when it goes out of scope. If [CAutoPtr::Detach](#cautoptr__detach) is called, the programmer is again given responsibility for freeing any allocated resources.  
   
- In debug builds, an assertion failure will occur if the [CAutoPtr::m_p](../Topic/CAutoPtr::m_p.md) data member currently points to an existing value; that is, it is not equal to NULL.  
+ In debug builds, an assertion failure will occur if the [CAutoPtr::m_p](#cautoptr__m_p) data member currently points to an existing value; that is, it is not equal to NULL.  
   
 ### Example  
  See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md).  
@@ -152,7 +152,7 @@ template<> CAutoPtr(CAutoPtr<T>& p) throw();
 ```  
   
 ### Remarks  
- Frees any allocated resources. Calls [CAutoPtr::Free](../Topic/CAutoPtr::Free.md).  
+ Frees any allocated resources. Calls [CAutoPtr::Free](#cautoptr__free).  
   
 ##  <a name="cautoptr__detach"></a>  CAutoPtr::Detach  
  Call this method to release ownership of a pointer.  
@@ -165,7 +165,7 @@ T* Detach() throw();
  Returns a copy of the pointer.  
   
 ### Remarks  
- Releases ownership of a pointer, sets the [CAutoPtr::m_p](../Topic/CAutoPtr::m_p.md) data member variable to NULL, and returns a copy of the pointer. After calling **Detach**, it is up to the programmer to free any allocated resources over which the `CAutoPtr` object may have previously assumed reponsibility.  
+ Releases ownership of a pointer, sets the [CAutoPtr::m_p](#cautoptr__m_p) data member variable to NULL, and returns a copy of the pointer. After calling **Detach**, it is up to the programmer to free any allocated resources over which the `CAutoPtr` object may have previously assumed reponsibility.  
   
 ### Example  
  See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md).  
@@ -178,7 +178,7 @@ void Free() throw();
 ```  
   
 ### Remarks  
- The object pointed to by the `CAutoPtr` is freed, and the [CAutoPtr::m_p](../Topic/CAutoPtr::m_p.md) data member variable is set to NULL.  
+ The object pointed to by the `CAutoPtr` is freed, and the [CAutoPtr::m_p](#cautoptr__m_p) data member variable is set to NULL.  
   
 ##  <a name="cautoptr__m_p"></a>  CAutoPtr::m_p  
  The pointer data member variable.  
@@ -225,7 +225,7 @@ T* operator->() const throw();
 ```  
   
 ### Return Value  
- Returns the value of the [CAutoPtr::m_p](../Topic/CAutoPtr::m_p.md) data member variable.  
+ Returns the value of the [CAutoPtr::m_p](#cautoptr__m_p) data member variable.  
   
 ### Remarks  
  Use this operator to call a method in a class pointed to by the `CAutoPtr` object. In debug builds, an assertion failure will occur if the `CAutoPtr` points to NULL.  
@@ -249,10 +249,3 @@ T* operator->() const throw();
  [CHeapPtr Class](../../atl/reference/cheapptr-class.md)   
  [CAutoVectorPtr Class](../../atl/reference/cautovectorptr-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

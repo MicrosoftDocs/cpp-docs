@@ -1,7 +1,7 @@
 ---
 title: "CAtlAutoThreadModuleT Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAtlAutoThreadModuleT class"
 ms.assetid: ae1667c6-3fb8-47bc-b35d-9ea5e9896d7f
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -66,7 +66,7 @@ template <class T, class ThreadAllocator = CComSimpleThreadAllocator,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlAutoThreadModuleT::GetDefaultThreads](../Topic/CAtlAutoThreadModuleT::GetDefaultThreads.md)|This static function dynamically calculates and returns the maximum number of threads for the EXE module, based on the number of processors.|  
+|[CAtlAutoThreadModuleT::GetDefaultThreads](#catlautothreadmodulet__getdefaultthreads)|This static function dynamically calculates and returns the maximum number of threads for the EXE module, based on the number of processors.|  
   
 ## Remarks  
  The class [CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.md) derives from `CAtlAutoThreadModuleT` in order to implement a thread-pooled, apartment-model COM server. It replaces the obsolete class [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md).  
@@ -100,10 +100,3 @@ static int GetDefaultThreads();
  [Class Overview](../../atl/atl-class-overview.md)   
  [IAtlAutoThreadModule Class](../../atl/reference/iatlautothreadmodule-class.md)   
  [Module Classes](../../atl/atl-module-classes.md)
-
-
-
-
-
-
-

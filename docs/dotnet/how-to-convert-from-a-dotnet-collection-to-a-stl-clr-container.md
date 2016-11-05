@@ -1,7 +1,7 @@
 ---
 title: "How to: Convert from a .NET Collection to a STL-CLR Container | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Convert from a .NET Collection to a STL/CLR Container
-This topic shows how to convert .NET collections to their equivalent STL/CLR containers. As an example we show how to convert a .NET <xref:System.Collections.Generic.List`1> to a STL/CLR [vector](../dotnet/vector-stl-clr.md) and how to convert a .NET <xref:System.Collections.Generic.Dictionary`2> to a STL/CLR [map](../dotnet/map-stl-clr.md), but the procedure is similar for all collections and containers.  
+This topic shows how to convert .NET collections to their equivalent STL/CLR containers. As an example we show how to convert a .NET <xref:System.Collections.Generic.List%601> to a STL/CLR [vector](../dotnet/vector-stl-clr.md) and how to convert a .NET <xref:System.Collections.Generic.Dictionary%602> to a STL/CLR [map](../dotnet/map-stl-clr.md), but the procedure is similar for all collections and containers.  
   
 ### To create a container from a collection  
   
@@ -52,7 +52,7 @@ This topic shows how to convert .NET collections to their equivalent STL/CLR con
      The second example demonstrates this procedure.  
   
 ## Example  
- In this example, we create a generic <xref:System.Collections.Generic.List`1> and add 5 elements to it. Then, we create a `vector` using the constructor that takes a <xref:System.Collections.Generic.IEnumerable`1> as an argument.  
+ In this example, we create a generic <xref:System.Collections.Generic.List%601> and add 5 elements to it. Then, we create a `vector` using the constructor that takes a <xref:System.Collections.Generic.IEnumerable%601> as an argument.  
   
 ```  
 // cliext_convert_list_to_vector.cpp  
@@ -97,7 +97,7 @@ The contents of the cliext::vector are:
 ```  
   
 ## Example  
- In this example, we create a generic <xref:System.Collections.Generic.Dictionary`2> and add 5 elements to it. Then, we create a `collection_adapter` to wrap the <xref:System.Collections.Generic.Dictionary`2> as a simple STL/CLR container. Finally, we create a `map` and copy the contents of the <xref:System.Collections.Generic.Dictionary`2> to the `map` by iterating over the `collection_adapter`. During this process, we create a new pair by using the `make_pair` function, and insert the new pair directly into the `map`.  
+ In this example, we create a generic <xref:System.Collections.Generic.Dictionary%602> and add 5 elements to it. Then, we create a `collection_adapter` to wrap the <xref:System.Collections.Generic.Dictionary%602> as a simple STL/CLR container. Finally, we create a `map` and copy the contents of the <xref:System.Collections.Generic.Dictionary%602> to the `map` by iterating over the `collection_adapter`. During this process, we create a new pair by using the `make_pair` function, and insert the new pair directly into the `map`.  
   
 ```  
 // cliext_convert_dictionary_to_map.cpp  

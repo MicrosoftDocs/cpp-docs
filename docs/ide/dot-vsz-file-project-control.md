@@ -1,7 +1,7 @@
 ---
 title: ".Vsz File (Project Control) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -54,7 +54,7 @@ Param="WIZARD_NAME = My AppWizard"
   
      If your wizard has a user interface, the ProgID automatically specifies your wizard to implement <xref:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI>. By default, the methods of this interface are used in the [.htm files](../ide/html-files.md) of your project. You can change the behavior of your wizard by using the methods for this interface in the .htm files. See <xref:Microsoft.VisualStudio.VsWizard.VCWizCtl> for more information, which is the coclass for <xref:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI>.  
   
--   Following these two lines is an optional list of parameters that allow the .vsz file to pass additional custom parameters to the wizard. Each value is passed as a string element in an array of variants in the wizard control's <xref:Microsoft.VisualStudio.VsWizard.VsWizardClass.Execute*> method. By default, a wizard with a user interface produces the following default parameters:  
+-   Following these two lines is an optional list of parameters that allow the .vsz file to pass additional custom parameters to the wizard. Each value is passed as a string element in an array of variants in the wizard control's <xref:Microsoft.VisualStudio.VsWizard.VsWizardClass.Execute%2A> method. By default, a wizard with a user interface produces the following default parameters:  
   
     ```  
     Param="START_PATH = <path to the wizard>"  

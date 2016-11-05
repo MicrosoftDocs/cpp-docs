@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 1) C4378 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.ht:
 # Compiler Warning (level 1) C4378
 Must obtain function pointers to run initializers; consider System::ModuleHandle::ResolveMethodHandle  
   
- Under **/clr**, initializer symbols contain function tokens, not functions pointers.  You need to convert tokens to pointers using <xref:System.ModuleHandle.ResolveMethodHandle*>.  
+ Under **/clr**, initializer symbols contain function tokens, not functions pointers.  You need to convert tokens to pointers using <xref:System.ModuleHandle.ResolveMethodHandle%2A>.  
   
 ## Example  
  The following sample generates C4378.  

@@ -1,7 +1,7 @@
 ---
 title: "IOleObjectImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -22,7 +22,7 @@ helpviewer_keywords:
   - "IOleObject, ATL implementation"
   - "IOleObjectImpl class"
 ms.assetid: 59750b2d-1633-4a51-a4c2-6455b6b90c45
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -63,46 +63,46 @@ template<class T>  class ATL_NO_VTABLE IOleObjectImpl :  public IOleObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[IOleObjectImpl::Advise](../Topic/IOleObjectImpl::Advise.md)|Establishes an advisory connection with the control.|  
-|[IOleObjectImpl::Close](../Topic/IOleObjectImpl::Close.md)|Changes the control state from running to loaded.|  
-|[IOleObjectImpl::DoVerb](../Topic/IOleObjectImpl::DoVerb.md)|Tells the control to perform one of its enumerated actions.|  
-|[IOleObjectImpl::DoVerbDiscardUndo](../Topic/IOleObjectImpl::DoVerbDiscardUndo.md)|Tells the control to discard any undo state it is maintaining.|  
-|[IOleObjectImpl::DoVerbHide](../Topic/IOleObjectImpl::DoVerbHide.md)|Tells the control to remove its user interface from view.|  
-|[IOleObjectImpl::DoVerbInPlaceActivate](../Topic/IOleObjectImpl::DoVerbInPlaceActivate.md)|Runs the control and installs its window, but does not install the control's user interface.|  
-|[IOleObjectImpl::DoVerbOpen](../Topic/IOleObjectImpl::DoVerbOpen.md)|Causes the control to be open-edited in a separate window.|  
-|[IOleObjectImpl::DoVerbPrimary](../Topic/IOleObjectImpl::DoVerbPrimary.md)|Performs the specified action when the user double-clicks the control. The control defines the action, usually to activate the control in-place.|  
-|[IOleObjectImpl::DoVerbShow](../Topic/IOleObjectImpl::DoVerbShow.md)|Shows a newly inserted control to the user.|  
-|[IOleObjectImpl::DoVerbUIActivate](../Topic/IOleObjectImpl::DoVerbUIActivate.md)|Activates the control in-place and shows the control's user interface, such as menus and toolbars.|  
-|[IOleObjectImpl::EnumAdvise](../Topic/IOleObjectImpl::EnumAdvise.md)|Enumerates the control's advisory connections.|  
-|[IOleObjectImpl::EnumVerbs](../Topic/IOleObjectImpl::EnumVerbs.md)|Enumerates actions for the control.|  
-|[IOleObjectImpl::GetClientSite](../Topic/IOleObjectImpl::GetClientSite.md)|Retrieves the control's client site.|  
-|[IOleObjectImpl::GetClipboardData](../Topic/IOleObjectImpl::GetClipboardData.md)|Retrieves data from the Clipboard. The ATL implementation returns **E_NOTIMPL**.|  
-|[IOleObjectImpl::GetExtent](../Topic/IOleObjectImpl::GetExtent.md)|Retrieves the extent of the control's display area.|  
-|[IOleObjectImpl::GetMiscStatus](../Topic/IOleObjectImpl::GetMiscStatus.md)|Retrieves the status of the control.|  
-|[IOleObjectImpl::GetMoniker](../Topic/IOleObjectImpl::GetMoniker.md)|Retrieves the control's moniker. The ATL implementation returns **E_NOTIMPL**.|  
-|[IOleObjectImpl::GetUserClassID](../Topic/IOleObjectImpl::GetUserClassID.md)|Retrieves the control's class identifier.|  
-|[IOleObjectImpl::GetUserType](../Topic/IOleObjectImpl::GetUserType.md)|Retrieves the control's user-type name.|  
-|[IOleObjectImpl::InitFromData](../Topic/IOleObjectImpl::InitFromData.md)|Initializes the control from selected data. The ATL implementation returns **E_NOTIMPL**.|  
-|[IOleObjectImpl::IsUpToDate](../Topic/IOleObjectImpl::IsUpToDate.md)|Checks if the control is up to date. The ATL implementation returns `S_OK`.|  
-|[IOleObjectImpl::OnPostVerbDiscardUndo](../Topic/IOleObjectImpl::OnPostVerbDiscardUndo.md)|Called by [DoVerbDiscardUndo](../Topic/IOleObjectImpl::DoVerbDiscardUndo.md) after the undo state is discarded.|  
-|[IOleObjectImpl::OnPostVerbHide](../Topic/IOleObjectImpl::OnPostVerbHide.md)|Called by [DoVerbHide](../Topic/IOleObjectImpl::DoVerbHide.md) after the control is hidden.|  
-|[IOleObjectImpl::OnPostVerbInPlaceActivate](../Topic/IOleObjectImpl::OnPostVerbInPlaceActivate.md)|Called by [DoVerbInPlaceActivate](../Topic/IOleObjectImpl::DoVerbInPlaceActivate.md) after the control is activated in place.|  
-|[IOleObjectImpl::OnPostVerbOpen](../Topic/IOleObjectImpl::OnPostVerbOpen.md)|Called by [DoVerbOpen](../Topic/IOleObjectImpl::DoVerbOpen.md) after the control has been opened for editing in a separate window.|  
-|[IOleObjectImpl::OnPostVerbShow](../Topic/IOleObjectImpl::OnPostVerbShow.md)|Called by [DoVerbShow](../Topic/IOleObjectImpl::DoVerbShow.md) after the control has been made visible.|  
-|[IOleObjectImpl::OnPostVerbUIActivate](../Topic/IOleObjectImpl::OnPostVerbUIActivate.md)|Called by [DoVerbUIActivate](../Topic/IOleObjectImpl::DoVerbUIActivate.md) after the control's user interface has been activated.|  
-|[IOleObjectImpl::OnPreVerbDiscardUndo](../Topic/IOleObjectImpl::OnPreVerbDiscardUndo.md)|Called by [DoVerbDiscardUndo](../Topic/IOleObjectImpl::DoVerbDiscardUndo.md) before the undo state is discarded.|  
-|[IOleObjectImpl::OnPreVerbHide](../Topic/IOleObjectImpl::OnPreVerbHide.md)|Called by [DoVerbHide](../Topic/IOleObjectImpl::DoVerbHide.md) before the control is hidden.|  
-|[IOleObjectImpl::OnPreVerbInPlaceActivate](../Topic/IOleObjectImpl::OnPreVerbInPlaceActivate.md)|Called by [DoVerbInPlaceActivate](../Topic/IOleObjectImpl::DoVerbInPlaceActivate.md) before the control is activated in place.|  
-|[IOleObjectImpl::OnPreVerbOpen](../Topic/IOleObjectImpl::OnPreVerbOpen.md)|Called by [DoVerbOpen](../Topic/IOleObjectImpl::DoVerbOpen.md) before the control has been opened for editing in a separate window.|  
-|[IOleObjectImpl::OnPreVerbShow](../Topic/IOleObjectImpl::OnPreVerbShow.md)|Called by [DoVerbShow](../Topic/IOleObjectImpl::DoVerbShow.md) before the control has been made visible.|  
-|[IOleObjectImpl::OnPreVerbUIActivate](../Topic/IOleObjectImpl::OnPreVerbUIActivate.md)|Called by [DoVerbUIActivate](../Topic/IOleObjectImpl::DoVerbUIActivate.md) before the control's user interface has been activated.|  
-|[IOleObjectImpl::SetClientSite](../Topic/IOleObjectImpl::SetClientSite.md)|Tells the control about its client site in the container.|  
-|[IOleObjectImpl::SetColorScheme](../Topic/IOleObjectImpl::SetColorScheme.md)|Recommends a color scheme to the control's application, if any. The ATL implementation returns **E_NOTIMPL**.|  
-|[IOleObjectImpl::SetExtent](../Topic/IOleObjectImpl::SetExtent.md)|Sets the extent of the control's display area.|  
-|[IOleObjectImpl::SetHostNames](../Topic/IOleObjectImpl::SetHostNames.md)|Tells the control the names of the container application and container document.|  
-|[IOleObjectImpl::SetMoniker](../Topic/IOleObjectImpl::SetMoniker.md)|Tells the control what its moniker is. The ATL implementation returns **E_NOTIMPL**.|  
-|[IOleObjectImpl::Unadvise](../Topic/IOleObjectImpl::Unadvise.md)|Deletes an advisory connection with the control.|  
-|[IOleObjectImpl::Update](../Topic/IOleObjectImpl::Update.md)|Updates the control. The ATL implementation returns `S_OK`.|  
+|[IOleObjectImpl::Advise](#ioleobjectimpl__advise)|Establishes an advisory connection with the control.|  
+|[IOleObjectImpl::Close](#ioleobjectimpl__close)|Changes the control state from running to loaded.|  
+|[IOleObjectImpl::DoVerb](#ioleobjectimpl__doverb)|Tells the control to perform one of its enumerated actions.|  
+|[IOleObjectImpl::DoVerbDiscardUndo](#ioleobjectimpl__doverbdiscardundo)|Tells the control to discard any undo state it is maintaining.|  
+|[IOleObjectImpl::DoVerbHide](#ioleobjectimpl__doverbhide)|Tells the control to remove its user interface from view.|  
+|[IOleObjectImpl::DoVerbInPlaceActivate](#ioleobjectimpl__doverbinplaceactivate)|Runs the control and installs its window, but does not install the control's user interface.|  
+|[IOleObjectImpl::DoVerbOpen](#ioleobjectimpl__doverbopen)|Causes the control to be open-edited in a separate window.|  
+|[IOleObjectImpl::DoVerbPrimary](#ioleobjectimpl__doverbprimary)|Performs the specified action when the user double-clicks the control. The control defines the action, usually to activate the control in-place.|  
+|[IOleObjectImpl::DoVerbShow](#ioleobjectimpl__doverbshow)|Shows a newly inserted control to the user.|  
+|[IOleObjectImpl::DoVerbUIActivate](#ioleobjectimpl__doverbuiactivate)|Activates the control in-place and shows the control's user interface, such as menus and toolbars.|  
+|[IOleObjectImpl::EnumAdvise](#ioleobjectimpl__enumadvise)|Enumerates the control's advisory connections.|  
+|[IOleObjectImpl::EnumVerbs](#ioleobjectimpl__enumverbs)|Enumerates actions for the control.|  
+|[IOleObjectImpl::GetClientSite](#ioleobjectimpl__getclientsite)|Retrieves the control's client site.|  
+|[IOleObjectImpl::GetClipboardData](#ioleobjectimpl__getclipboarddata)|Retrieves data from the Clipboard. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleObjectImpl::GetExtent](#ioleobjectimpl__getextent)|Retrieves the extent of the control's display area.|  
+|[IOleObjectImpl::GetMiscStatus](#ioleobjectimpl__getmiscstatus)|Retrieves the status of the control.|  
+|[IOleObjectImpl::GetMoniker](#ioleobjectimpl__getmoniker)|Retrieves the control's moniker. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleObjectImpl::GetUserClassID](#ioleobjectimpl__getuserclassid)|Retrieves the control's class identifier.|  
+|[IOleObjectImpl::GetUserType](#ioleobjectimpl__getusertype)|Retrieves the control's user-type name.|  
+|[IOleObjectImpl::InitFromData](#ioleobjectimpl__initfromdata)|Initializes the control from selected data. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleObjectImpl::IsUpToDate](#ioleobjectimpl__isuptodate)|Checks if the control is up to date. The ATL implementation returns `S_OK`.|  
+|[IOleObjectImpl::OnPostVerbDiscardUndo](#ioleobjectimpl__onpostverbdiscardundo)|Called by [DoVerbDiscardUndo](#ioleobjectimpl__doverbdiscardundo) after the undo state is discarded.|  
+|[IOleObjectImpl::OnPostVerbHide](#ioleobjectimpl__onpostverbhide)|Called by [DoVerbHide](#ioleobjectimpl__doverbhide) after the control is hidden.|  
+|[IOleObjectImpl::OnPostVerbInPlaceActivate](#ioleobjectimpl__onpostverbinplaceactivate)|Called by [DoVerbInPlaceActivate](#ioleobjectimpl__doverbinplaceactivate) after the control is activated in place.|  
+|[IOleObjectImpl::OnPostVerbOpen](#ioleobjectimpl__onpostverbopen)|Called by [DoVerbOpen](#ioleobjectimpl__doverbopen) after the control has been opened for editing in a separate window.|  
+|[IOleObjectImpl::OnPostVerbShow](#ioleobjectimpl__onpostverbshow)|Called by [DoVerbShow](#ioleobjectimpl__doverbshow) after the control has been made visible.|  
+|[IOleObjectImpl::OnPostVerbUIActivate](#ioleobjectimpl__onpostverbuiactivate)|Called by [DoVerbUIActivate](#ioleobjectimpl__doverbuiactivate) after the control's user interface has been activated.|  
+|[IOleObjectImpl::OnPreVerbDiscardUndo](#ioleobjectimpl__onpreverbdiscardundo)|Called by [DoVerbDiscardUndo](#ioleobjectimpl__doverbdiscardundo) before the undo state is discarded.|  
+|[IOleObjectImpl::OnPreVerbHide](#ioleobjectimpl__onpreverbhide)|Called by [DoVerbHide](#ioleobjectimpl__doverbhide) before the control is hidden.|  
+|[IOleObjectImpl::OnPreVerbInPlaceActivate](#ioleobjectimpl__onpreverbinplaceactivate)|Called by [DoVerbInPlaceActivate](#ioleobjectimpl__doverbinplaceactivate) before the control is activated in place.|  
+|[IOleObjectImpl::OnPreVerbOpen](#ioleobjectimpl__onpreverbopen)|Called by [DoVerbOpen](#ioleobjectimpl__doverbopen) before the control has been opened for editing in a separate window.|  
+|[IOleObjectImpl::OnPreVerbShow](#ioleobjectimpl__onpreverbshow)|Called by [DoVerbShow](#ioleobjectimpl__doverbshow) before the control has been made visible.|  
+|[IOleObjectImpl::OnPreVerbUIActivate](#ioleobjectimpl__onpreverbuiactivate)|Called by [DoVerbUIActivate](#ioleobjectimpl__doverbuiactivate) before the control's user interface has been activated.|  
+|[IOleObjectImpl::SetClientSite](#ioleobjectimpl__setclientsite)|Tells the control about its client site in the container.|  
+|[IOleObjectImpl::SetColorScheme](#ioleobjectimpl__setcolorscheme)|Recommends a color scheme to the control's application, if any. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleObjectImpl::SetExtent](#ioleobjectimpl__setextent)|Sets the extent of the control's display area.|  
+|[IOleObjectImpl::SetHostNames](#ioleobjectimpl__sethostnames)|Tells the control the names of the container application and container document.|  
+|[IOleObjectImpl::SetMoniker](#ioleobjectimpl__setmoniker)|Tells the control what its moniker is. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleObjectImpl::Unadvise](#ioleobjectimpl__unadvise)|Deletes an advisory connection with the control.|  
+|[IOleObjectImpl::Update](#ioleobjectimpl__update)|Updates the control. The ATL implementation returns `S_OK`.|  
   
 ## Remarks  
  The [IOleObject](http://msdn.microsoft.com/library/windows/desktop/dd542709) interface is the principal interface through which a container communicates with a control. Class `IOleObjectImpl` provides a default implementation of this interface and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -137,9 +137,9 @@ STDMETHOD(Close)(DWORD dwSaveOption);
 ```  
   
 ### Remarks  
- Deactivates the control and destroys the control window if it exists. If the control class data member [CComControlBase::m_bRequiresSave](../Topic/CComControlBase::m_bRequiresSave.md) is **TRUE** and the `dwSaveOption` parameter is either `OLECLOSE_SAVEIFDIRTY` or `OLECLOSE_PROMPTSAVE`, the control properties are saved before closing.  
+ Deactivates the control and destroys the control window if it exists. If the control class data member [CComControlBase::m_bRequiresSave](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__m_brequiressave) is **TRUE** and the `dwSaveOption` parameter is either `OLECLOSE_SAVEIFDIRTY` or `OLECLOSE_PROMPTSAVE`, the control properties are saved before closing.  
   
- The pointers held in the control class data members [CComControlBase::m_spInPlaceSite](../Topic/CComControlBase::m_spInPlaceSite.md) and [CComControlBase::m_spAdviseSink](../Topic/CComControlBase::m_spAdviseSink.md) are released, and the data members [CComControlBase::m_bNegotiatedWnd](../Topic/CComControlBase::m_bNegotiatedWnd.md), [CComControlBase::m_bWndless](../Topic/CComControlBase::m_bWndLess.md), and [CComControlBase::m_bInPlaceSiteEx](../Topic/CComControlBase::m_bInPlaceSiteEx.md) are set to **FALSE**.  
+ The pointers held in the control class data members [CComControlBase::m_spInPlaceSite](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__m_spinplacesite) and [CComControlBase::m_spAdviseSink](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__m_spadvisesink) are released, and the data members [CComControlBase::m_bNegotiatedWnd](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__m_bnegotiatedwnd), [CComControlBase::m_bWndless](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__m_bwndless), and [CComControlBase::m_bInPlaceSiteEx](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__m_binplacesiteex) are set to **FALSE**.  
   
  See [IOleObject::Close](http://msdn.microsoft.com/library/windows/desktop/ms683922) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -160,14 +160,14 @@ STDMETHOD(DoVerb)(LONG iVerb,
   
 |*iVerb* Value|DoVerb helper function called|  
 |-------------------|-----------------------------------|  
-|**OLEIVERB_DISCARDUNDOSTATE**|[DoVerbDiscardUndo](../Topic/IOleObjectImpl::DoVerbDiscardUndo.md)|  
-|`OLEIVERB_HIDE`|[DoVerbHide](../Topic/IOleObjectImpl::DoVerbHide.md)|  
-|**OLEIVERB_INPLACEACTIVATE**|[DoVerbInPlaceActivate](../Topic/IOleObjectImpl::DoVerbInPlaceActivate.md)|  
-|`OLEIVERB_OPEN`|[DoVerbOpen](../Topic/IOleObjectImpl::DoVerbOpen.md)|  
-|`OLEIVERB_PRIMARY`|[DoVerbPrimary](../Topic/IOleObjectImpl::DoVerbPrimary.md)|  
-|**OLEIVERB_PROPERTIES**|[CComControlBase::DoVerbProperties](../Topic/CComControlBase::DoVerbProperties.md)|  
-|`OLEIVERB_SHOW`|[DoVerbShow](../Topic/IOleObjectImpl::DoVerbShow.md)|  
-|`OLEIVERB_UIACTIVATE`|[DoVerbUIActivate](../Topic/IOleObjectImpl::DoVerbUIActivate.md)|  
+|**OLEIVERB_DISCARDUNDOSTATE**|[DoVerbDiscardUndo](#ioleobjectimpl__doverbdiscardundo)|  
+|`OLEIVERB_HIDE`|[DoVerbHide](#ioleobjectimpl__doverbhide)|  
+|**OLEIVERB_INPLACEACTIVATE**|[DoVerbInPlaceActivate](#ioleobjectimpl__doverbinplaceactivate)|  
+|`OLEIVERB_OPEN`|[DoVerbOpen](#ioleobjectimpl__doverbopen)|  
+|`OLEIVERB_PRIMARY`|[DoVerbPrimary](#ioleobjectimpl__doverbprimary)|  
+|**OLEIVERB_PROPERTIES**|[CComControlBase::DoVerbProperties](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__doverbproperties)|  
+|`OLEIVERB_SHOW`|[DoVerbShow](#ioleobjectimpl__doverbshow)|  
+|`OLEIVERB_UIACTIVATE`|[DoVerbUIActivate](#ioleobjectimpl__doverbuiactivate)|  
   
  See [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -223,7 +223,7 @@ HRESULT DoVerbInPlaceActivate(LPCRECT prcPosRect,  HWND /* hwndParent */);
  One of the standard `HRESULT` values.  
   
 ### Remarks  
- Activates the control in place by calling [CComControlBase::InPlaceActivate](../Topic/CComControlBase::InPlaceActivate.md). Unless the control class's data member `m_bWindowOnly` is **TRUE**, `DoVerbInPlaceActivate` first attempts to activate the control as a windowless control (possible only if the container supports [IOleInPlaceSiteWindowless](http://msdn.microsoft.com/library/windows/desktop/ms682300)). If that fails, the function attempts to activate the control with extended features (possible only if the container supports [IOleInPlaceSiteEx](http://msdn.microsoft.com/library/windows/desktop/ms693461)). If that fails, the function attempts to activate the control with no extended features (possible only if the container supports [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586)). If activation succeeds, the function notifies the container the control has been activated.  
+ Activates the control in place by calling [CComControlBase::InPlaceActivate](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__inplaceactivate). Unless the control class's data member `m_bWindowOnly` is **TRUE**, `DoVerbInPlaceActivate` first attempts to activate the control as a windowless control (possible only if the container supports [IOleInPlaceSiteWindowless](http://msdn.microsoft.com/library/windows/desktop/ms682300)). If that fails, the function attempts to activate the control with extended features (possible only if the container supports [IOleInPlaceSiteEx](http://msdn.microsoft.com/library/windows/desktop/ms693461)). If that fails, the function attempts to activate the control with no extended features (possible only if the container supports [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586)). If activation succeeds, the function notifies the container the control has been activated.  
   
 ##  <a name="ioleobjectimpl__doverbopen"></a>  IOleObjectImpl::DoVerbOpen  
  Causes the control to be open-edited in a separate window.  
@@ -319,7 +319,7 @@ STDMETHOD(EnumVerbs)(IEnumOLEVERB** ppEnumOleVerb);
  See [IOleObject::EnumVerbs](http://msdn.microsoft.com/library/windows/desktop/ms692781) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ##  <a name="ioleobjectimpl__getclientsite"></a>  IOleObjectImpl::GetClientSite  
- Puts the pointer in the control class data member [CComControlBase::m_spClientSite](../Topic/CComControlBase::m_spClientSite.md) into *ppClientSite* and increments the reference count on the pointer.  
+ Puts the pointer in the control class data member [CComControlBase::m_spClientSite](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__m_spclientsite) into *ppClientSite* and increments the reference count on the pointer.  
   
 ```
 STDMETHOD(GetClientSite)(IOleClientSite** ppClientSite);
@@ -351,7 +351,7 @@ STDMETHOD(GetExtent)(DWORD dwDrawAspect,
 ```  
   
 ### Remarks  
- The size is stored in the control class data member [CComControlBase::m_sizeExtent](../Topic/CComControlBase::m_sizeExtent.md).  
+ The size is stored in the control class data member [CComControlBase::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__m_sizeextent).  
   
  See [IOleObject::GetExtent](http://msdn.microsoft.com/library/windows/desktop/ms692325) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -436,7 +436,7 @@ STDMETHOD(IsUpToDate)(void);
  See [IOleObject::IsUpToDate](http://msdn.microsoft.com/library/windows/desktop/ms686624) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ##  <a name="ioleobjectimpl__onpostverbdiscardundo"></a>  IOleObjectImpl::OnPostVerbDiscardUndo  
- Called by [DoVerbDiscardUndo](../Topic/IOleObjectImpl::DoVerbDiscardUndo.md) after the undo state is discarded.  
+ Called by [DoVerbDiscardUndo](#ioleobjectimpl__doverbdiscardundo) after the undo state is discarded.  
   
 ```
 HRESULT OnPostVerbDiscardUndo();
@@ -449,7 +449,7 @@ HRESULT OnPostVerbDiscardUndo();
  Override this method with code you want executed after the undo state is discarded.  
   
 ##  <a name="ioleobjectimpl__onpostverbhide"></a>  IOleObjectImpl::OnPostVerbHide  
- Called by [DoVerbHide](../Topic/IOleObjectImpl::DoVerbHide.md) after the control is hidden.  
+ Called by [DoVerbHide](#ioleobjectimpl__doverbhide) after the control is hidden.  
   
 ```
 HRESULT OnPostVerbHide();
@@ -462,7 +462,7 @@ HRESULT OnPostVerbHide();
  Override this method with code you want executed after the control is hidden.  
   
 ##  <a name="ioleobjectimpl__onpostverbinplaceactivate"></a>  IOleObjectImpl::OnPostVerbInPlaceActivate  
- Called by [DoVerbInPlaceActivate](../Topic/IOleObjectImpl::DoVerbInPlaceActivate.md) after the control is activated in place.  
+ Called by [DoVerbInPlaceActivate](#ioleobjectimpl__doverbinplaceactivate) after the control is activated in place.  
   
 ```
 HRESULT OnPostVerbInPlaceActivate();
@@ -475,7 +475,7 @@ HRESULT OnPostVerbInPlaceActivate();
  Override this method with code you want executed after the control is activated in place.  
   
 ##  <a name="ioleobjectimpl__onpostverbopen"></a>  IOleObjectImpl::OnPostVerbOpen  
- Called by [DoVerbOpen](../Topic/IOleObjectImpl::DoVerbOpen.md) after the control has been opened for editing in a separate window.  
+ Called by [DoVerbOpen](#ioleobjectimpl__doverbopen) after the control has been opened for editing in a separate window.  
   
 ```
 HRESULT OnPostVerbOpen();
@@ -488,7 +488,7 @@ HRESULT OnPostVerbOpen();
  Override this method with code you want executed after the control has been opened for editing in a separate window.  
   
 ##  <a name="ioleobjectimpl__onpostverbshow"></a>  IOleObjectImpl::OnPostVerbShow  
- Called by [DoVerbShow](../Topic/IOleObjectImpl::DoVerbShow.md) after the control has been made visible.  
+ Called by [DoVerbShow](#ioleobjectimpl__doverbshow) after the control has been made visible.  
   
 ```
 HRESULT OnPostVerbShow();
@@ -501,7 +501,7 @@ HRESULT OnPostVerbShow();
  Override this method with code you want executed after the control has been made visible.  
   
 ##  <a name="ioleobjectimpl__onpostverbuiactivate"></a>  IOleObjectImpl::OnPostVerbUIActivate  
- Called by [DoVerbUIActivate](../Topic/IOleObjectImpl::DoVerbUIActivate.md) after the control's user interface has been activated.  
+ Called by [DoVerbUIActivate](#ioleobjectimpl__doverbuiactivate) after the control's user interface has been activated.  
   
 ```
 HRESULT OnPostVerbUIActivate();
@@ -514,7 +514,7 @@ HRESULT OnPostVerbUIActivate();
  Override this method with code you want executed after the control's user interface has been activated.  
   
 ##  <a name="ioleobjectimpl__onpreverbdiscardundo"></a>  IOleObjectImpl::OnPreVerbDiscardUndo  
- Called by [DoVerbDiscardUndo](../Topic/IOleObjectImpl::DoVerbDiscardUndo.md) before the undo state is discarded.  
+ Called by [DoVerbDiscardUndo](#ioleobjectimpl__doverbdiscardundo) before the undo state is discarded.  
   
 ```
 HRESULT OnPreVerbDiscardUndo();
@@ -527,7 +527,7 @@ HRESULT OnPreVerbDiscardUndo();
  To prevent the undo state from being discarded, override this method to return an error HRESULT.  
   
 ##  <a name="ioleobjectimpl__onpreverbhide"></a>  IOleObjectImpl::OnPreVerbHide  
- Called by [DoVerbHide](../Topic/IOleObjectImpl::DoVerbHide.md) before the control is hidden.  
+ Called by [DoVerbHide](#ioleobjectimpl__doverbhide) before the control is hidden.  
   
 ```
 HRESULT OnPreVerbHide();
@@ -540,7 +540,7 @@ HRESULT OnPreVerbHide();
  To prevent the control from being hidden, override this method to return an error HRESULT.  
   
 ##  <a name="ioleobjectimpl__onpreverbinplaceactivate"></a>  IOleObjectImpl::OnPreVerbInPlaceActivate  
- Called by [DoVerbInPlaceActivate](../Topic/IOleObjectImpl::DoVerbInPlaceActivate.md) before the control is activated in place.  
+ Called by [DoVerbInPlaceActivate](#ioleobjectimpl__doverbinplaceactivate) before the control is activated in place.  
   
 ```
 HRESULT OnPreVerbInPlaceActivate();
@@ -553,7 +553,7 @@ HRESULT OnPreVerbInPlaceActivate();
  To prevent the control from being activated in place, override this method to return an error HRESULT.  
   
 ##  <a name="ioleobjectimpl__onpreverbopen"></a>  IOleObjectImpl::OnPreVerbOpen  
- Called by [DoVerbOpen](../Topic/IOleObjectImpl::DoVerbOpen.md) before the control has been opened for editing in a separate window.  
+ Called by [DoVerbOpen](#ioleobjectimpl__doverbopen) before the control has been opened for editing in a separate window.  
   
 ```
 HRESULT OnPreVerbOpen();
@@ -566,7 +566,7 @@ HRESULT OnPreVerbOpen();
  To prevent the control from being opened for editing in a separate window, override this method to return an error HRESULT.  
   
 ##  <a name="ioleobjectimpl__onpreverbshow"></a>  IOleObjectImpl::OnPreVerbShow  
- Called by [DoVerbShow](../Topic/IOleObjectImpl::DoVerbShow.md) before the control has been made visible.  
+ Called by [DoVerbShow](#ioleobjectimpl__doverbshow) before the control has been made visible.  
   
 ```
 HRESULT OnPreVerbShow();
@@ -579,7 +579,7 @@ HRESULT OnPreVerbShow();
  To prevent the control from being made visible, override this method to return an error HRESULT.  
   
 ##  <a name="ioleobjectimpl__onpreverbuiactivate"></a>  IOleObjectImpl::OnPreVerbUIActivate  
- Called by [DoVerbUIActivate](../Topic/IOleObjectImpl::DoVerbUIActivate.md) before the control's user interface has been activated.  
+ Called by [DoVerbUIActivate](#ioleobjectimpl__doverbuiactivate) before the control's user interface has been activated.  
   
 ```
 HRESULT OnPreVerbUIActivate();
@@ -625,11 +625,11 @@ STDMETHOD(SetExtent)(DWORD dwDrawAspect,
 ```  
   
 ### Remarks  
- Otherwise, `SetExtent` stores the value pointed to by `psizel` in the control class data member [CComControlBase::m_sizeExtent](../Topic/CComControlBase::m_sizeExtent.md). This value is in HIMETRIC units (0.01 millimeter per unit).  
+ Otherwise, `SetExtent` stores the value pointed to by `psizel` in the control class data member [CComControlBase::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__m_sizeextent). This value is in HIMETRIC units (0.01 millimeter per unit).  
   
- If the control class data member [CComControlBase::m_bResizeNatural](../Topic/CComControlBase::m_bResizeNatural.md) is **TRUE**, `SetExtent` also stores the value pointed to by `psizel` in the control class data member [CComControlBase::m_sizeNatural](../Topic/CComControlBase::m_sizeNatural.md).  
+ If the control class data member [CComControlBase::m_bResizeNatural](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__m_bresizenatural) is **TRUE**, `SetExtent` also stores the value pointed to by `psizel` in the control class data member [CComControlBase::m_sizeNatural](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__m_sizenatural).  
   
- If the control class data member [CComControlBase::m_bRecomposeOnResize](../Topic/CComControlBase::m_bRecomposeOnResize.md) is **TRUE**, `SetExtent` calls `SendOnDataChange` and `SendOnViewChange` to notify all advisory sinks registered with the advise holder that the control size has changed.  
+ If the control class data member [CComControlBase::m_bRecomposeOnResize](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__m_brecomposeonresize) is **TRUE**, `SetExtent` calls `SendOnDataChange` and `SendOnViewChange` to notify all advisory sinks registered with the advise holder that the control size has changed.  
   
  See [IOleObject::SetExtent](http://msdn.microsoft.com/library/windows/desktop/ms694330) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -687,10 +687,3 @@ STDMETHOD(Update)(void);
  [CComControl Class](../../atl/reference/ccomcontrol-class.md)   
  [ActiveX Controls Interfaces](http://msdn.microsoft.com/library/windows/desktop/ms692724)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

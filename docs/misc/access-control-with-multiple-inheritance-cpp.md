@@ -1,7 +1,7 @@
 ---
 title: "Access Control with Multiple Inheritance (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

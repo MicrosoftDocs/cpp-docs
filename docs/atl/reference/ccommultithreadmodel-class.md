@@ -1,7 +1,7 @@
 ---
 title: "CComMultiThreadModel Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ helpviewer_keywords:
   - "CComMultiThreadModel class"
   - "threading [ATL]"
 ms.assetid: db8f1662-2f7a-44b3-b341-ffbfb6e422a3
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -200,4 +200,3 @@ typedef CComMultiThreadModelNoCS ThreadModelNoCS;
  [CComAutoCriticalSection Class](../Topic/CComAutoCriticalSection%20Class.md)   
  [CComCriticalSection Class](../Topic/CComCriticalSection%20Class.md)   
  [Class Overview](../Topic/ATL%20Class%20Overview.md)
-

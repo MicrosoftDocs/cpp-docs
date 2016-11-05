@@ -1,0 +1,2 @@
+   CCommandLineInfo cmdInfo;
+   ParseCommandLine(cmdInfo);

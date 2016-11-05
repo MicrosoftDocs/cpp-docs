@@ -1,7 +1,7 @@
 ---
 title: "Category Macros | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -12,7 +12,7 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 223578cb-6180-4787-a8d8-ba3787a5d3ee
-caps.latest.revision: 16
+caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -36,10 +36,10 @@ These macros define category maps.
   
 |||  
 |-|-|  
-|[BEGIN_CATEGORY_MAP](../Topic/BEGIN_CATEGORY_MAP.md)|Marks the beginning of the category map.|  
-|[END_CATEGORY_MAP](../Topic/END_CATEGORY_MAP.md)|Marks the end of the category map.|  
-|[IMPLEMENTED_CATEGORY](../Topic/IMPLEMENTED_CATEGORY.md)|Indicates categories that are implemented by the COM object.|  
-|[REQUIRED_CATEGORY](../Topic/REQUIRED_CATEGORY.md)|Indicates categories that are required of the container by the COM object.|  
+|[BEGIN_CATEGORY_MAP](#begin_category_map)|Marks the beginning of the category map.|  
+|[END_CATEGORY_MAP](#end_category_map)|Marks the end of the category map.|  
+|[IMPLEMENTED_CATEGORY](#implemented_category)|Indicates categories that are implemented by the COM object.|  
+|[REQUIRED_CATEGORY](#required_category)|Indicates categories that are required of the container by the COM object.|  
   
 ##  <a name="begin_category_map"></a>  BEGIN_CATEGORY_MAP  
  Marks the beginning of the category map.  
@@ -55,9 +55,9 @@ BEGIN_CATEGORY_MAP(theClass)
 ### Remarks  
  The category map is used to specify which component categories the COM class will implement and which categories it requires from its container.  
   
- Add an [IMPLEMENTED_CATEGORY](../Topic/IMPLEMENTED_CATEGORY.md) entry to the map for each category implemented by the COM class. Add a [REQUIRED_CATEGORY](../Topic/REQUIRED_CATEGORY.md) entry to the map for each category that the class requires its clients to implement. Mark the end of the map with the [END_CATEGORY_MAP](../Topic/END_CATEGORY_MAP.md) macro.  
+ Add an [IMPLEMENTED_CATEGORY](#implemented_category) entry to the map for each category implemented by the COM class. Add a [REQUIRED_CATEGORY](#required_category) entry to the map for each category that the class requires its clients to implement. Mark the end of the map with the [END_CATEGORY_MAP](#end_category_map) macro.  
   
- The component categories listed in the map will be registered automatically when the module is registered if the class has an associated [OBJECT_ENTRY_AUTO](../Topic/OBJECT_ENTRY_AUTO.md) or [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../Topic/OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO.md).  
+ The component categories listed in the map will be registered automatically when the module is registered if the class has an associated [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macros.md#object_entry_auto) or [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto).  
   
 > [!NOTE]
 >  ATL uses the standard component categories manager to register component categories. If the manager is not present on the system when the module is registered, registration succeeds, but the component categories will not be registered for that class.  
@@ -75,10 +75,10 @@ END_CATEGORY_MAP()
 ```  
   
 ### Example  
- See the example for [BEGIN_CATEGORY_MAP](../Topic/BEGIN_CATEGORY_MAP.md).  
+ See the example for [BEGIN_CATEGORY_MAP](#begin_category_map).  
   
 ##  <a name="implemented_category"></a>  IMPLEMENTED_CATEGORY  
- Add an `IMPLEMENTED_CATEGORY` macro to your component's [category map](../Topic/BEGIN_CATEGORY_MAP.md) to specify that it should be registered as implementing the category identified by the `catID` parameter.  
+ Add an `IMPLEMENTED_CATEGORY` macro to your component's [category map](#begin_category_map) to specify that it should be registered as implementing the category identified by the `catID` parameter.  
   
 ```
 IMPLEMENTED_CATEGORY(catID)
@@ -89,7 +89,7 @@ IMPLEMENTED_CATEGORY(catID)
  [in] A **CATID** constant or variable holding the globally unique identifier (GUID) for the implemented category. The address of `catID` will be taken and added to the map. See the table below for a selection of stock categories.  
   
 ### Remarks  
- The component categories listed in the map will be registered automatically when the module is registered if the class has an associated [OBJECT_ENTRY_AUTO](../Topic/OBJECT_ENTRY_AUTO.md) or [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../Topic/OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO.md) macro.  
+ The component categories listed in the map will be registered automatically when the module is registered if the class has an associated [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macros.md#object_entry_auto) or [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto) macro.  
   
  Clients can use the category information registered for the class to determine its capabilities and requirements without having to create an instance of it.  
   
@@ -111,7 +111,7 @@ IMPLEMENTED_CATEGORY(catID)
  [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/CPP/category-macros_1.h)]  
   
 ##  <a name="required_category"></a>  REQUIRED_CATEGORY  
- Add a `REQUIRED_CATEGORY` macro to your component's [category map](../Topic/BEGIN_CATEGORY_MAP.md) to specify that it should be registered as requiring the category identified by the `catID` parameter.  
+ Add a `REQUIRED_CATEGORY` macro to your component's [category map](#begin_category_map) to specify that it should be registered as requiring the category identified by the `catID` parameter.  
   
 ```
 REQUIRED_CATEGORY(Â
@@ -123,7 +123,7 @@ REQUIRED_CATEGORY(Â
  [in] A **CATID** constant or variable holding the globally unique identifier (GUID) for the required category. The address of `catID` will be taken and added to the map. See the table below for a selection of stock categories.  
   
 ### Remarks  
- The component categories listed in the map will be registered automatically when the module is registered if the class has an associated [OBJECT_ENTRY_AUTO](../Topic/OBJECT_ENTRY_AUTO.md) or [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../Topic/OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO.md) macro.  
+ The component categories listed in the map will be registered automatically when the module is registered if the class has an associated [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macros.md#object_entry_auto) or [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto) macro.  
   
  Clients can use the category information registered for the class to determine its capabilities and requirements without having to create an instance of it. For example, a control may require that a container support data binding. The container can find out if it has the capabilities necessary to host the control by querying the category manager for the categories required by that control. If the container does not support a required feature, it can refuse to host the COM object.  
   
@@ -146,8 +146,3 @@ REQUIRED_CATEGORY(Â
   
 ## See Also  
  [Macros](../../atl/reference/atl-macros.md)
-
-
-
-
-

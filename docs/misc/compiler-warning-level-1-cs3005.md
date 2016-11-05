@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 1) CS3005 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS3005"
 ms.assetid: 64b687e3-2dbd-45dd-b6da-81f77eb7d6bd
 caps.latest.revision: 9
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

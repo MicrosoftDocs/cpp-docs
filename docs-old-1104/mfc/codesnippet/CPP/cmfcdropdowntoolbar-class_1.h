@@ -1,0 +1,1 @@
+	CMFCDropDownToolBar m_wndToolbarResource;

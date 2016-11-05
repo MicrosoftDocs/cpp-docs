@@ -1,7 +1,7 @@
 ---
 title: "CAxDialogImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "CAxDialogImpl class"
   - "ATL, dialog boxes"
 ms.assetid: 817df483-3fa8-44e7-8487-72ba0881cd27
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -63,20 +63,20 @@ template <class T,  class TBase = CWindow>  class ATL_NO_VTABLE CAxDialogImpl : 
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAxDialogImpl::AdviseSinkMap](../Topic/CAxDialogImpl::AdviseSinkMap.md)|Call this method to advise or unadvise all entries in the object's sink map event map.|  
-|[CAxDialogImpl::Create](../Topic/CAxDialogImpl::Create.md)|Call this method to create a modeless dialog box.|  
-|[CAxDialogImpl::DestroyWindow](../Topic/CAxDialogImpl::DestroyWindow.md)|Call this method to destroy a modeless dialog box.|  
-|[CAxDialogImpl::DoModal](../Topic/CAxDialogImpl::DoModal.md)|Call this method to create a modal dialog box.|  
-|[CAxDialogImpl::EndDialog](../Topic/CAxDialogImpl::EndDialog.md)|Call this method to destroy a modal dialog box.|  
-|[CAxDialogImpl::GetDialogProc](../Topic/CAxDialogImpl::GetDialogProc.md)|Call this method to get a pointer to the `DialogProc` callback function.|  
-|[CAxDialogImpl::GetIDD](../Topic/CAxDialogImpl::GetIDD.md)|Call this method to get the dialog template resource ID|  
-|[CAxDialogImpl::IsDialogMessage](../Topic/CAxDialogImpl::IsDialogMessage.md)|Call this method to determine whether a message is intended for this dialog box and, if it is, process the message.|  
+|[CAxDialogImpl::AdviseSinkMap](#caxdialogimpl__advisesinkmap)|Call this method to advise or unadvise all entries in the object's sink map event map.|  
+|[CAxDialogImpl::Create](#caxdialogimpl__create)|Call this method to create a modeless dialog box.|  
+|[CAxDialogImpl::DestroyWindow](#caxdialogimpl__destroywindow)|Call this method to destroy a modeless dialog box.|  
+|[CAxDialogImpl::DoModal](#caxdialogimpl__domodal)|Call this method to create a modal dialog box.|  
+|[CAxDialogImpl::EndDialog](#caxdialogimpl__enddialog)|Call this method to destroy a modal dialog box.|  
+|[CAxDialogImpl::GetDialogProc](#caxdialogimpl__getdialogproc)|Call this method to get a pointer to the `DialogProc` callback function.|  
+|[CAxDialogImpl::GetIDD](#caxdialogimpl__getidd)|Call this method to get the dialog template resource ID|  
+|[CAxDialogImpl::IsDialogMessage](#caxdialogimpl__isdialogmessage)|Call this method to determine whether a message is intended for this dialog box and, if it is, process the message.|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAxDialogImpl::m_bModal](../Topic/CAxDialogImpl::m_bModal.md)|A variable that exists only in debug builds and is set to true if the dialog box is modal.|  
+|[CAxDialogImpl::m_bModal](#caxdialogimpl__m_bmodal)|A variable that exists only in debug builds and is set to true if the dialog box is modal.|  
   
 ## Remarks  
  `CAxDialogImpl` allows you to create a modal or modeless dialog box. `CAxDialogImpl` provides the dialog box procedure, which uses the default message map to direct messages to the appropriate handlers.  
@@ -91,7 +91,7 @@ template <class T,  class TBase = CWindow>  class ATL_NO_VTABLE CAxDialogImpl : 
   
  See [Implementing a Dialog Box](../../atl/implementing-a-dialog-box.md) for more information.  
   
- Note that an ActiveX control on a modal dialog box created with `CAxDialogImpl` will not support accelerator keys. To support accelerator keys on a dialog box created with `CAxDialogImpl`, create a modeless dialog box and, using your own message loop, use [CAxDialogImpl::IsDialogMessage](../Topic/CAxDialogImpl::IsDialogMessage.md) after getting a message from the queue to handle an accelerator key.  
+ Note that an ActiveX control on a modal dialog box created with `CAxDialogImpl` will not support accelerator keys. To support accelerator keys on a dialog box created with `CAxDialogImpl`, create a modeless dialog box and, using your own message loop, use [CAxDialogImpl::IsDialogMessage](#caxdialogimpl__isdialogmessage) after getting a message from the queue to handle an accelerator key.  
   
  For more information on `CAxDialogImpl`, see [ATL Control Containment FAQ](../../atl/atl-control-containment-faq.md).  
   
@@ -149,7 +149,7 @@ HWND Create(HWND hWndParent,
  The handle to the newly created dialog box.  
   
 ### Remarks  
- This dialog box is automatically attached to the `CAxDialogImpl` object. To create a modal dialog box, call [DoModal](../Topic/CAxDialogImpl::DoModal.md).  
+ This dialog box is automatically attached to the `CAxDialogImpl` object. To create a modal dialog box, call [DoModal](#caxdialogimpl__domodal).  
   
  The second override is provided only so dialog boxes can be used with [CComControl](../../atl/reference/ccomcontrol-class.md).  
   
@@ -164,7 +164,7 @@ BOOL DestroyWindow();
  TRUE if the window is successfully destroyed; otherwise FALSE.  
   
 ### Remarks  
- Do not call `DestroyWindow` to destroy a modal dialog box. Call [EndDialog](../Topic/CAxDialogImpl::EndDialog.md) instead.  
+ Do not call `DestroyWindow` to destroy a modal dialog box. Call [EndDialog](#caxdialogimpl__enddialog) instead.  
   
 ##  <a name="caxdialogimpl__domodal"></a>  CAxDialogImpl::DoModal  
  Call this method to create a modal dialog box.  
@@ -181,12 +181,12 @@ INT_PTR DoModal(HWND hWndParent = ::GetActiveWindow(),  LPARAM dwInitParam = NUL
  [in] Specifies the value to pass to the dialog box in the `lParam` parameter of the **WM_INITDIALOG** message.  
   
 ### Return Value  
- If successful, the value of the `nRetCode` parameter specified in the call to [EndDialog](../Topic/CAxDialogImpl::EndDialog.md); otherwise, -1.  
+ If successful, the value of the `nRetCode` parameter specified in the call to [EndDialog](#caxdialogimpl__enddialog); otherwise, -1.  
   
 ### Remarks  
  This dialog box is automatically attached to the `CAxDialogImpl` object.  
   
- To create a modeless dialog box, call [Create](../Topic/CAxDialogImpl::Create.md).  
+ To create a modeless dialog box, call [Create](#caxdialogimpl__create).  
   
 ##  <a name="caxdialogimpl__enddialog"></a>  CAxDialogImpl::EndDialog  
  Call this method to destroy a modal dialog box.  
@@ -197,7 +197,7 @@ BOOL EndDialog(int nRetCode);
   
 ### Parameters  
  `nRetCode`  
- [in] The value to be returned by [DoModal](../Topic/CAxDialogImpl::DoModal.md).  
+ [in] The value to be returned by [DoModal](#caxdialogimpl__domodal).  
   
 ### Return Value  
  TRUE if the dialog box is destroyed; otherwise, FALSE.  
@@ -206,7 +206,7 @@ BOOL EndDialog(int nRetCode);
  `EndDialog` must be called through the dialog box procedure. After the dialog box is destroyed, Windows uses the value of `nRetCode` as the return value for `DoModal`, which created the dialog box.  
   
 > [!NOTE]
->  Do not call `EndDialog` to destroy a modeless dialog box. Call [DestroyWindow](../Topic/CAxDialogImpl::DestroyWindow.md) instead.  
+>  Do not call `EndDialog` to destroy a modeless dialog box. Call [DestroyWindow](#caxdialogimpl__destroywindow) instead.  
   
 ##  <a name="caxdialogimpl__getdialogproc"></a>  CAxDialogImpl::GetDialogProc  
  Call this method to get a pointer to the `DialogProc` callback function.  
@@ -258,10 +258,3 @@ bool m_bModal;
 ## See Also  
  [CDialogImpl Class](../../atl/reference/cdialogimpl-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

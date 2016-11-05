@@ -1,0 +1,1 @@
+      _ATL_FUNC_INFO info = {CC_STDCALL, VT_EMPTY, 2, {VT_I4, VT_BSTR} };

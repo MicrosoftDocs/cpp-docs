@@ -1,7 +1,7 @@
 ---
 title: "-E (Preprocess to stdout) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -92,7 +92,7 @@ cl -E test.cpp > test2.cpp
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.GeneratePreprocessedFile*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.GeneratePreprocessedFile%2A>.  
   
 ## Example  
  The following command line preprocesses `ADD.C`, preserves comments, adds `#line` directives, and displays the result on the standard output device:  

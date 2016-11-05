@@ -75,7 +75,7 @@
 # [__event](event.md)
 # [_com_error::HelpFile](com-error-helpfile.md)
 # [Using atexit](using-atexit.md)
-# [_bstr_t::operator +=, +](bstr-t-operator-dot-equal-plus.md)
+# [_bstr_t::operator +=, +](bstr-t-operator-add-equal-plus.md)
 # [void (C++)](void-cpp.md)
 # [Namespaces (C++)](namespaces-cpp.md)
 # [_com_ptr_t::QueryInterface](com-ptr-t-queryinterface.md)

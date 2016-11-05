@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting Exceptions: System.TypeInitializationException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -37,7 +37,7 @@ translation.priority.mt:
 The exception that is thrown as a wrapper around the exception thrown by the class initializer.  
   
 ## Remarks  
- When a class initializer fails to initialize a type, a <xref:System.TypeInitializationException> is created and passed a reference to the exception thrown by the type's class initializer. The <xref:System.Exception.InnerException*> property of the <xref:System.TypeInitializationException> holds the underlying exception.  
+ When a class initializer fails to initialize a type, a <xref:System.TypeInitializationException> is created and passed a reference to the exception thrown by the type's class initializer. The <xref:System.Exception.InnerException%2A> property of the <xref:System.TypeInitializationException> holds the underlying exception.  
   
 ## See Also  
  <xref:System.TypeInitializationException>   

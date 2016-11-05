@@ -1,7 +1,7 @@
 ---
 title: "Could not find dependent assemblies for assembly &#39;assembly&#39;. The assembly manifest may be corrupt. | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

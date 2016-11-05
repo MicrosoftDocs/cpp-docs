@@ -1,7 +1,7 @@
 ---
 title: "IDataObjectImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "IDataObjectImpl class"
   - "IDataObject, ATL implementation"
 ms.assetid: b680f0f7-7795-40a1-a0f6-f48768201c89
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -60,16 +60,16 @@ template<class T>  class IDataObjectImpl
   
 |Name|Description|  
 |----------|-----------------|  
-|[IDataObjectImpl::DAdvise](../Topic/IDataObjectImpl::DAdvise.md)|Establishes a connection between the data object and an advise sink. This enables the advise sink to receive notifications of changes in the object.|  
-|[IDataObjectImpl::DUnadvise](../Topic/IDataObjectImpl::DUnadvise.md)|Terminates a connection previously established through `DAdvise`.|  
-|[IDataObjectImpl::EnumDAdvise](../Topic/IDataObjectImpl::EnumDAdvise.md)|Creates an enumerator to iterate through the current advisory connections.|  
-|[IDataObjectImpl::EnumFormatEtc](../Topic/IDataObjectImpl::EnumFormatEtc.md)|Creates an enumerator to iterate through the **FORMATETC** structures supported by the data object. The ATL implementation returns **E_NOTIMPL**.|  
-|[IDataObjectImpl::FireDataChange](../Topic/IDataObjectImpl::FireDataChange.md)|Sends a change notification back to each advise sink.|  
-|[IDataObjectImpl::GetCanonicalFormatEtc](../Topic/IDataObjectImpl::GetCanonicalFormatEtc.md)|Retrieves a logically equivalent **FORMATETC** structure to one that is more complex. The ATL implementation returns **E_NOTIMPL**.|  
-|[IDataObjectImpl::GetData](../Topic/IDataObjectImpl::GetData.md)|Transfers data from the data object to the client. The data is described in a **FORMATETC** structure and is transferred through a **STGMEDIUM** structure.|  
-|[IDataObjectImpl::GetDataHere](../Topic/IDataObjectImpl::GetDataHere.md)|Similar to `GetData`, except the client must allocate the **STGMEDIUM** structure. The ATL implementation returns **E_NOTIMPL**.|  
-|[IDataObjectImpl::QueryGetData](../Topic/IDataObjectImpl::QueryGetData.md)|Determines whether the data object supports a particular **FORMATETC** structure for transferring data. The ATL implementation returns **E_NOTIMPL**.|  
-|[IDataObjectImpl::SetData](../Topic/IDataObjectImpl::SetData.md)|Transfers data from the client to the data object. The ATL implementation returns **E_NOTIMPL**.|  
+|[IDataObjectImpl::DAdvise](#idataobjectimpl__dadvise)|Establishes a connection between the data object and an advise sink. This enables the advise sink to receive notifications of changes in the object.|  
+|[IDataObjectImpl::DUnadvise](#idataobjectimpl__dunadvise)|Terminates a connection previously established through `DAdvise`.|  
+|[IDataObjectImpl::EnumDAdvise](#idataobjectimpl__enumdadvise)|Creates an enumerator to iterate through the current advisory connections.|  
+|[IDataObjectImpl::EnumFormatEtc](#idataobjectimpl__enumformatetc)|Creates an enumerator to iterate through the **FORMATETC** structures supported by the data object. The ATL implementation returns **E_NOTIMPL**.|  
+|[IDataObjectImpl::FireDataChange](#idataobjectimpl__firedatachange)|Sends a change notification back to each advise sink.|  
+|[IDataObjectImpl::GetCanonicalFormatEtc](#idataobjectimpl__getcanonicalformatetc)|Retrieves a logically equivalent **FORMATETC** structure to one that is more complex. The ATL implementation returns **E_NOTIMPL**.|  
+|[IDataObjectImpl::GetData](#idataobjectimpl__getdata)|Transfers data from the data object to the client. The data is described in a **FORMATETC** structure and is transferred through a **STGMEDIUM** structure.|  
+|[IDataObjectImpl::GetDataHere](#idataobjectimpl__getdatahere)|Similar to `GetData`, except the client must allocate the **STGMEDIUM** structure. The ATL implementation returns **E_NOTIMPL**.|  
+|[IDataObjectImpl::QueryGetData](#idataobjectimpl__querygetdata)|Determines whether the data object supports a particular **FORMATETC** structure for transferring data. The ATL implementation returns **E_NOTIMPL**.|  
+|[IDataObjectImpl::SetData](#idataobjectimpl__setdata)|Transfers data from the client to the data object. The ATL implementation returns **E_NOTIMPL**.|  
   
 ## Remarks  
  The [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) interface provides methods to support Uniform Data Transfer. `IDataObject` uses the standard format structures [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) and [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) to retrieve and store data.  
@@ -102,12 +102,12 @@ HRESULT DAdvise(
 ### Remarks  
  This enables the advise sink to receive notifications of changes in the object.  
   
- To terminate the connection, call [DUnadvise](../Topic/IDataObjectImpl::DUnadvise.md).  
+ To terminate the connection, call [DUnadvise](#idataobjectimpl__dunadvise).  
   
  See [IDataObject::DAdvise](http://msdn.microsoft.com/library/windows/desktop/ms692579) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ##  <a name="idataobjectimpl__dunadvise"></a>  IDataObjectImpl::DUnadvise  
- Terminates a connection previously established through [DAdvise](../Topic/IDataObjectImpl::DAdvise.md).  
+ Terminates a connection previously established through [DAdvise](#idataobjectimpl__dadvise).  
   
 ```
 HRESULT DUnadvise(DWORD dwConnection);
@@ -229,10 +229,3 @@ HRESULT SetData(
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

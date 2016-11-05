@@ -1,7 +1,7 @@
 ---
 title: "CWindowImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "CWindowImpl class"
   - "subclassing windows, ATL"
 ms.assetid: 02eefd45-a0a6-4d1b-99f6-dbf627e2cc2f
-caps.latest.revision: 21
+caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -69,31 +69,31 @@ template <class   T, class TBase = CWindow, class TWinTraits = CControlWinTraits
   
 |Name|Description|  
 |----------|-----------------|  
-|[CWindowImpl::Create](../Topic/CWindowImpl::Create.md)|Creates a window.|  
+|[CWindowImpl::Create](#cwindowimpl__create)|Creates a window.|  
   
 ### CWindowImplBaseT Methods  
   
 |||  
 |-|-|  
-|[DefWindowProc](../Topic/CWindowImpl::DefWindowProc.md)|Provides default message processing.|  
-|[GetCurrentMessage](../Topic/CWindowImpl::GetCurrentMessage.md)|Returns the current message.|  
-|[GetWindowProc](../Topic/CWindowImpl::GetWindowProc.md)|Returns the current window procedure.|  
-|[OnFinalMessage](../Topic/CWindowImpl::OnFinalMessage.md)|Called after the last message is received (typically `WM_NCDESTROY`).|  
-|[SubclassWindow](../Topic/CWindowImpl::SubclassWindow.md)|Subclasses a window.|  
-|[UnsubclassWindow](../Topic/CWindowImpl::UnsubclassWindow.md)|Restores a previously subclassed window.|  
+|[DefWindowProc](#cwindowimpl__defwindowproc)|Provides default message processing.|  
+|[GetCurrentMessage](#cwindowimpl__getcurrentmessage)|Returns the current message.|  
+|[GetWindowProc](#cwindowimpl__getwindowproc)|Returns the current window procedure.|  
+|[OnFinalMessage](#cwindowimpl__onfinalmessage)|Called after the last message is received (typically `WM_NCDESTROY`).|  
+|[SubclassWindow](#cwindowimpl__subclasswindow)|Subclasses a window.|  
+|[UnsubclassWindow](#cwindowimpl__unsubclasswindow)|Restores a previously subclassed window.|  
   
 ### Static Methods  
   
 |||  
 |-|-|  
-|[GetWndClassInfo](../Topic/CWindowImpl::GetWndClassInfo.md)|Returns a static instance of [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md), which manages the window class information.|  
-|[WindowProc](../Topic/CWindowImpl::WindowProc.md)|Processes messages sent to the window.|  
+|[GetWndClassInfo](#cwindowimpl__getwndclassinfo)|Returns a static instance of [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md), which manages the window class information.|  
+|[WindowProc](#cwindowimpl__windowproc)|Processes messages sent to the window.|  
   
 ### Data Members  
   
 |||  
 |-|-|  
-|[m_pfnSuperWindowProc](../Topic/CWindowImpl::m_pfnSuperWindowProc.md)|Points to the window class's original window procedure.|  
+|[m_pfnSuperWindowProc](#cwindowimpl__m_pfnsuperwindowproc)|Points to the window class's original window procedure.|  
   
 ## Remarks  
  You can use `CWindowImpl` to create a window or subclass an existing window. the `CWindowImpl` window procedure uses a message map to direct messages to the appropriate handlers.  
@@ -179,15 +179,15 @@ HWND Create(
  **Create** first registers the window class if it has not yet been registered. The newly created window is automatically attached to the `CWindowImpl` object.  
   
 > [!NOTE]
->  Do not call **Create** if you have already called [SubclassWindow](../Topic/CWindowImpl::SubclassWindow.md).  
+>  Do not call **Create** if you have already called [SubclassWindow](#cwindowimpl__subclasswindow).  
   
- To use a window class that is based on an existing window class, derive your class from `CWindowImpl` and include the [DECLARE_WND_SUPERCLASS](../Topic/DECLARE_WND_SUPERCLASS.md) macro. The existing window class's window procedure is saved in [m_pfnSuperWindowProc](../Topic/CWindowImpl::m_pfnSuperWindowProc.md). For more information, see the [CWindowImpl](../../atl/reference/cwindowimpl-class.md) overview.  
+ To use a window class that is based on an existing window class, derive your class from `CWindowImpl` and include the [DECLARE_WND_SUPERCLASS](../Topic/DECLARE_WND_SUPERCLASS.md) macro. The existing window class's window procedure is saved in [m_pfnSuperWindowProc](#cwindowimpl__m_pfnsuperwindowproc). For more information, see the [CWindowImpl](../../atl/reference/cwindowimpl-class.md) overview.  
   
 > [!NOTE]
 >  If 0 is used as the value for the `MenuOrID` parameter, it must be specified as 0U (the default value) to avoid a compiler error.  
   
 ##  <a name="cwindowimpl__defwindowproc"></a>  CWindowImpl::DefWindowProc  
- Called by [WindowProc](../Topic/CWindowImpl::WindowProc.md) to process messages not handled by the message map.  
+ Called by [WindowProc](#cwindowimpl__windowproc) to process messages not handled by the message map.  
   
 ```
 LRESULT DefWindowProc(
@@ -212,7 +212,7 @@ LRESULT DefWindowProc(
  The result of the message processing.  
   
 ### Remarks  
- By default, `DefWindowProc` calls the [CallWindowProc](http://msdn.microsoft.com/library/windows/desktop/ms633571) Win32 function to send the message information to the window procedure specified in [m_pfnSuperWindowProc](../Topic/CWindowImpl::m_pfnSuperWindowProc.md).  
+ By default, `DefWindowProc` calls the [CallWindowProc](http://msdn.microsoft.com/library/windows/desktop/ms633571) Win32 function to send the message information to the window procedure specified in [m_pfnSuperWindowProc](#cwindowimpl__m_pfnsuperwindowproc).  
   
  The function with no parameters automatically retrieves the needed parameters from the current message.  
   
@@ -240,7 +240,7 @@ virtual WNDPROC GetWindowProc();
  Override this method to replace the window procedure with your own.  
   
 ##  <a name="cwindowimpl__getwndclassinfo"></a>  CWindowImpl::GetWndClassInfo  
- Called by [Create](../Topic/CWindowImpl::Create.md) to access the window class information.  
+ Called by [Create](#cwindowimpl__create) to access the window class information.  
   
 ```
 static CWndClassInfo& GetWndClassInfo();
@@ -271,7 +271,7 @@ WNDPROC m_pfnSuperWindowProc;
 |A window based on a window class that modifies an existing class, specified through the [DECLARE_WND_SUPERCLASS](../Topic/DECLARE_WND_SUPERCLASS.md) macro.|The existing window class's window procedure.|  
 |A subclassed window.|The subclassed window's original window procedure.|  
   
- [CWindowImpl::DefWindowProc](../Topic/CWindowImpl::DefWindowProc.md) sends message information to the window procedure saved in `m_pfnSuperWindowProc`.  
+ [CWindowImpl::DefWindowProc](#cwindowimpl__defwindowproc) sends message information to the window procedure saved in `m_pfnSuperWindowProc`.  
   
 ##  <a name="cwindowimpl__onfinalmessage"></a>  CWindowImpl::OnFinalMessage  
  Called after receiving the last message (typically `WM_NCDESTROY`).  
@@ -302,13 +302,13 @@ BOOL SubclassWindow(HWND   hWnd);
  **TRUE** if the window is successfully subclassed; otherwise, **FALSE**.  
   
 ### Remarks  
- The subclassed window now uses [CWindowImpl::WindowProc](../Topic/CWindowImpl::WindowProc.md). The original window procedure is saved in [m_pfnSuperWindowProc](../Topic/CWindowImpl::m_pfnSuperWindowProc.md).  
+ The subclassed window now uses [CWindowImpl::WindowProc](#cwindowimpl__windowproc). The original window procedure is saved in [m_pfnSuperWindowProc](#cwindowimpl__m_pfnsuperwindowproc).  
   
 > [!NOTE]
->  Do not call `SubclassWindow` if you have already called [Create](../Topic/CWindowImpl::Create.md).  
+>  Do not call `SubclassWindow` if you have already called [Create](#cwindowimpl__create).  
   
 ##  <a name="cwindowimpl__unsubclasswindow"></a>  CWindowImpl::UnsubclassWindow  
- Detaches the subclassed window from the `CWindowImpl` object and restores the original window procedure, saved in [m_pfnSuperWindowProc](../Topic/CWindowImpl::m_pfnSuperWindowProc.md).  
+ Detaches the subclassed window from the `CWindowImpl` object and restores the original window procedure, saved in [m_pfnSuperWindowProc](#cwindowimpl__m_pfnsuperwindowproc).  
   
 ```
 HWND UnsubclassWindow();
@@ -345,13 +345,13 @@ static LRESULT CALLBACK WindowProc(
  The result of the message processing.  
   
 ### Remarks  
- `WindowProc` uses the default message map (declared with [BEGIN_MSG_MAP](../Topic/BEGIN_MSG_MAP.md)) to direct messages to the appropriate handlers. If necessary, `WindowProc` calls [DefWindowProc](../Topic/CWindowImpl::DefWindowProc.md) for additional message processing. If the final message is not handled, `WindowProc` does the following:  
+ `WindowProc` uses the default message map (declared with [BEGIN_MSG_MAP](../Topic/BEGIN_MSG_MAP.md)) to direct messages to the appropriate handlers. If necessary, `WindowProc` calls [DefWindowProc](#cwindowimpl__defwindowproc) for additional message processing. If the final message is not handled, `WindowProc` does the following:  
   
 -   Performs unsubclassing if the window was unsubclassed.  
   
 -   Clears `m_hWnd`.  
   
--   Calls [OnFinalMessage](../Topic/CWindowImpl::OnFinalMessage.md) before the window is destroyed.  
+-   Calls [OnFinalMessage](#cwindowimpl__onfinalmessage) before the window is destroyed.  
   
  You can override `WindowProc` to provide a different mechanism for handling messages.  
   
@@ -359,10 +359,3 @@ static LRESULT CALLBACK WindowProc(
  [BEGIN_MSG_MAP](../Topic/BEGIN_MSG_MAP.md)   
  [CComControl Class](../../atl/reference/ccomcontrol-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

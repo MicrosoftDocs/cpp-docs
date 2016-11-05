@@ -1,7 +1,7 @@
 ---
 title: "-Fp (Name .Pch File) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -72,7 +72,7 @@ Provides a path name for a precompiled header instead of using the default path 
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.PrecompiledHeaderFile*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.PrecompiledHeaderFile%2A>.  
   
 ## Example  
  If you want to create a precompiled header file for a debugging version of your program and you are compiling both header files and source code, you can specify a command such as:  

@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting Exceptions: System.Net.NetworkInformation.NetworkInformationException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -37,7 +37,7 @@ translation.priority.mt:
 The exception that is thrown when an error occurs while retrieving network information.  
   
 ## Remarks  
- Types in the <xref:System.Net.NetworkInformation> namespace throw this exception when a call to a Win32 function fails. The <xref:System.Net.NetworkInformation.NetworkInformationException.ErrorCode*> property contains the result returned by the function.  
+ Types in the <xref:System.Net.NetworkInformation> namespace throw this exception when a call to a Win32 function fails. The <xref:System.Net.NetworkInformation.NetworkInformationException.ErrorCode%2A> property contains the result returned by the function.  
   
 ## See Also  
  <xref:System.Net.NetworkInformation.NetworkInformationException>   

@@ -1,7 +1,7 @@
 ---
 title: "CPrivateObjectSecurityDesc Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CPrivateObjectSecurityDesc class"
 ms.assetid: 2c4bbb13-bf99-4833-912a-197f6815bb5d
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -52,23 +52,23 @@ class CPrivateObjectSecurityDesc : public CSecurityDesc
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc](../Topic/CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc.md)|The constructor.|  
-|[CPrivateObjectSecurityDesc::~CPrivateObjectSecurityDesc](../Topic/CPrivateObjectSecurityDesc::~CPrivateObjectSecurityDesc.md)|The destructor.|  
+|[CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc](#cprivateobjectsecuritydesc__cprivateobjectsecuritydesc)|The constructor.|  
+|[CPrivateObjectSecurityDesc::~CPrivateObjectSecurityDesc](#cprivateobjectsecuritydesc___dtorcprivateobjectsecuritydesc)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPrivateObjectSecurityDesc::ConvertToAutoInherit](../Topic/CPrivateObjectSecurityDesc::ConvertToAutoInherit.md)|Call this method to convert a security descriptor and its access-control lists (ACLs) to a format that supports automatic propagation of inheritable access-control entries (ACEs).|  
-|[CPrivateObjectSecurityDesc::Create](../Topic/CPrivateObjectSecurityDesc::Create.md)|Call this method to allocate and initialize a self-relative security descriptor for the private object created by the calling resource manager.|  
-|[CPrivateObjectSecurityDesc::Get](../Topic/CPrivateObjectSecurityDesc::Get.md)|Call this method to retrieve information from a private object's security descriptor.|  
-|[CPrivateObjectSecurityDesc::Set](../Topic/CPrivateObjectSecurityDesc::Set.md)|Call this method to modify a private object's security descriptor.|  
+|[CPrivateObjectSecurityDesc::ConvertToAutoInherit](#cprivateobjectsecuritydesc__converttoautoinherit)|Call this method to convert a security descriptor and its access-control lists (ACLs) to a format that supports automatic propagation of inheritable access-control entries (ACEs).|  
+|[CPrivateObjectSecurityDesc::Create](#cprivateobjectsecuritydesc__create)|Call this method to allocate and initialize a self-relative security descriptor for the private object created by the calling resource manager.|  
+|[CPrivateObjectSecurityDesc::Get](#cprivateobjectsecuritydesc__get)|Call this method to retrieve information from a private object's security descriptor.|  
+|[CPrivateObjectSecurityDesc::Set](#cprivateobjectsecuritydesc__set)|Call this method to modify a private object's security descriptor.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator =](../Topic/CPrivateObjectSecurityDesc::operator%20=.md)|Assignment operator.|  
+|[operator =](#cprivateobjectsecuritydesc__operator__eq)|Assignment operator.|  
   
 ## Remarks  
  This class, derived from [CSecurityDesc](../../atl/reference/csecuritydesc-class.md), provides methods for creating and managing the security descriptor of a private object.  
@@ -263,10 +263,3 @@ bool Set(SECURITY_INFORMATION si,
  [Class Overview](../../atl/atl-class-overview.md)   
  [Security Global Functions](../../atl/reference/security-global-functions.md)   
  [CSecurityDesc Class](../../atl/reference/csecuritydesc-class.md)
-
-
-
-
-
-
-

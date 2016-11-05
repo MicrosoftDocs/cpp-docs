@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Extending Managed VSPackages By Using Automation | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -85,7 +85,7 @@ This walkthrough illustrates how to use automation to create a managed VSPackage
      [!code-cs[VSSDKAuto#2](../misc/codesnippet/CSharp/walkthrough-extending-managed-vspackages-by-using-automation_2.cs)]
      [!code-vb[VSSDKAuto#2](../misc/codesnippet/VisualBasic/walkthrough-extending-managed-vspackages-by-using-automation_2.vb)]  
   
- This code calls <xref:Microsoft.VisualStudio.Shell.Package.GetService*> to obtain a <xref:EnvDTE.DTE> automation object that represents the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] IDE. The automation code in `MenuItemCallback` creates a new pane in the **Output** window named **Test**. The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] name and version is then written to the new **Output** pane.  
+ This code calls <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> to obtain a <xref:EnvDTE.DTE> automation object that represents the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] IDE. The automation code in `MenuItemCallback` creates a new pane in the **Output** window named **Test**. The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] name and version is then written to the new **Output** pane.  
   
 1.  Build and start the Auto project in debug mode by pressing F5.  
   

@@ -1,7 +1,7 @@
 ---
 title: "-Wp64 (Detect 64-Bit Portability Issues) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -80,7 +80,7 @@ This compiler option is obsolete. In versions of Visual Studio before Visual Stu
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Detect64BitPortabilityProblems*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Detect64BitPortabilityProblems%2A>.  
   
 ## See Also  
  [Compiler Options](../../build/reference/compiler-options.md)   

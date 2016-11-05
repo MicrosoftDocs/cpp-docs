@@ -1,7 +1,7 @@
 ---
 title: "freopen, _wfreopen | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -187,9 +187,9 @@ This will go to the file 'freopen.out'
   
 ## .NET Framework Equivalent  
   
--   <xref:System.IO.File.Open*>  
+-   <xref:System.IO.File.Open%2A>  
   
--   <xref:System.IO.FileStream.#ctor*>  
+-   <xref:System.IO.FileStream.%23ctor%2A>  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

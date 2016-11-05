@@ -1,7 +1,7 @@
 ---
 title: "-arch (x86) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -97,7 +97,7 @@ r = t + d;     // This should produce the same overall result
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>.  
   
 ## See Also  
  [/arch (Minimum CPU Architecture)](../../build/reference/arch-minimum-cpu-architecture.md)   

@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error CS1944 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1944"
 ms.assetid: e5e2c018-9a7e-48ee-8dd3-98e3553777c1
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS1944
 An expression tree may not contain an unsafe pointer operation  
   
- Expression trees do not support pointer types because the <xref:System.Linq.Expressions.Expression`1.Compile*?displayProperty=fullName> method is only allowed to produce verifiable code. See comments.  
+ Expression trees do not support pointer types because the <xref:System.Linq.Expressions.Expression%601.Compile%2A?displayProperty=fullName> method is only allowed to produce verifiable code. See comments.  
   
 ### To correct this error  
   

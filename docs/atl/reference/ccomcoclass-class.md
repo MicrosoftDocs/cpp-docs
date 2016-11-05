@@ -1,7 +1,7 @@
 ---
 title: "CComCoClass Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "CComCoClass class"
   - "aggregation [C++], aggregation models"
 ms.assetid: 67cfefa4-8df9-47fa-ad58-2d1a1ae25762
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -62,10 +62,10 @@ template <class   T,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCoClass::CreateInstance](../Topic/CComCoClass::CreateInstance.md)|(Static) Creates an instance of the class and queries for an interface.|  
-|[CComCoClass::Error](../Topic/CComCoClass::Error.md)|(Static) Returns rich error information to the client.|  
-|[CComCoClass::GetObjectCLSID](../Topic/CComCoClass::GetObjectCLSID.md)|(Static) Returns the object's class identifier.|  
-|[CComCoClass::GetObjectDescription](../Topic/CComCoClass::GetObjectDescription.md)|(Static) Override to return the object's description.|  
+|[CComCoClass::CreateInstance](#ccomcoclass__createinstance)|(Static) Creates an instance of the class and queries for an interface.|  
+|[CComCoClass::Error](#ccomcoclass__error)|(Static) Returns rich error information to the client.|  
+|[CComCoClass::GetObjectCLSID](#ccomcoclass__getobjectclsid)|(Static) Returns the object's class identifier.|  
+|[CComCoClass::GetObjectDescription](#ccomcoclass__getobjectdescription)|(Static) Override to return the object's description.|  
   
 ## Remarks  
  `CComCoClass` provides methods for retrieving an object's CLSID, setting error information, and creating instances of the class. Any class registered in the [object map](http://msdn.microsoft.com/en-us/b57619cc-534f-4b8f-bfd4-0c12f937202f) should be derived from `CComCoClass`.  
@@ -228,10 +228,3 @@ static LPCTSTR WINAPI GetObjectDescription();
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

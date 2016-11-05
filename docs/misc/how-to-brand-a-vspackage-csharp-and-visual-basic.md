@@ -1,7 +1,7 @@
 ---
 title: "How to: Brand a VSPackage (C# and Visual Basic) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -52,7 +52,7 @@ To appear in the **About** dialog box and the splash screen, VSPackages must imp
      [!code-cs[VSSDKPackageSplashHelpAboutLoadKey#1](../misc/codesnippet/CSharp/how-to-brand-a-vspackage-csharp-and-visual-basic_1.cs)]
      [!code-vb[VSSDKPackageSplashHelpAboutLoadKey#1](../misc/codesnippet/VisualBasic/how-to-brand-a-vspackage-csharp-and-visual-basic_1.vb)]  
   
-     The first argument, <xref:Microsoft.VisualStudio.Shell.InstalledProductRegistrationAttribute.UseInterface*>, of the <xref:Microsoft.VisualStudio.Shell.InstalledProductRegistrationAttribute> attribute tells [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] to use <xref:Microsoft.VisualStudio.Shell.Interop.IVsInstalledProduct> to obtain product information, instead of the InstalledProducts registry key. The remaining arguments select string resources to display the product name, details, and ID, respectively. However, because the first argument is `true`, the remaining arguments are `null`.  
+     The first argument, <xref:Microsoft.VisualStudio.Shell.InstalledProductRegistrationAttribute.UseInterface%2A>, of the <xref:Microsoft.VisualStudio.Shell.InstalledProductRegistrationAttribute> attribute tells [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] to use <xref:Microsoft.VisualStudio.Shell.Interop.IVsInstalledProduct> to obtain product information, instead of the InstalledProducts registry key. The remaining arguments select string resources to display the product name, details, and ID, respectively. However, because the first argument is `true`, the remaining arguments are `null`.  
   
 2.  Right-click <xref:Microsoft.VisualStudio.Shell.Interop.IVsInstalledProduct>, point to **Implement Interface**, and then click **Implement Interface**.  
   

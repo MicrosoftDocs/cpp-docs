@@ -1,7 +1,7 @@
 ---
 title: "_ATL_MODULE70 Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "ATL_MODULE70 structure"
   - "_ATL_MODULE70 structure"
 ms.assetid: b059b2c8-dfd1-4ac9-b07d-39df638cc7b3
-caps.latest.revision: 15
+caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -44,10 +44,11 @@ Contains data used by every ATL module.
 ## Syntax  
   
 ```
-struct _ATL_MODULE70{  UINT cbSize;  LONG m_nLockCnt;
-
-    _ATL_TERMFUNC_ELEM* m_pTermFuncs;  CComCriticalSection m_csStaticDataInitAndTypeInfo;
-
+struct _ATL_MODULE70 {
+    UINT cbSize;
+    LONG m_nLockCnt;
+    _ATL_TERMFUNC_ELEM* m_pTermFuncs;
+    CComCriticalSection m_csStaticDataInitAndTypeInfo;
 };
 ```  
   

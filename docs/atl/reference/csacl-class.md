@@ -1,7 +1,7 @@
 ---
 title: "CSacl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CSacl class"
 ms.assetid: 8624889b-aebc-4183-9d29-a20f07837f05
-caps.latest.revision: 21
+caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -55,23 +55,23 @@ class CSacl : public CAcl
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSacl::CSacl](../Topic/CSacl::CSacl.md)|The constructor.|  
-|[CSacl::~CSacl](../Topic/CSacl::~CSacl.md)|The destructor.|  
+|[CSacl::CSacl](#csacl__csacl)|The constructor.|  
+|[CSacl::~CSacl](#csacl___dtorcsacl)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSacl::AddAuditAce](../Topic/CSacl::AddAuditAce.md)|Adds an audit access-control entry (ACE) to the `CSacl` object.|  
-|[CSacl::GetAceCount](../Topic/CSacl::GetAceCount.md)|Returns the number of access-control entries (ACEs) in the `CSacl` object.|  
-|[CSacl::RemoveAce](../Topic/CSacl::RemoveAce.md)|Removes a specific ACE (access-control entry) from the **CSacl** object.|  
-|[CSacl::RemoveAllAces](../Topic/CSacl::RemoveAllAces.md)|Removes all of the ACEs contained in the `CSacl` object.|  
+|[CSacl::AddAuditAce](#csacl__addauditace)|Adds an audit access-control entry (ACE) to the `CSacl` object.|  
+|[CSacl::GetAceCount](#csacl__getacecount)|Returns the number of access-control entries (ACEs) in the `CSacl` object.|  
+|[CSacl::RemoveAce](#csacl__removeace)|Removes a specific ACE (access-control entry) from the **CSacl** object.|  
+|[CSacl::RemoveAllAces](#csacl__removeallaces)|Removes all of the ACEs contained in the `CSacl` object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSacl::operator =](../Topic/CSacl::operator%20=.md)|Assignment operator.|  
+|[CSacl::operator =](#csacl__operator__eq)|Assignment operator.|  
   
 ## Remarks  
  A SACL contains access-control entries (ACEs) that specify the types of access attempts that generate audit records in the security event log of a domain controller. Note that a SACL generates log entries only on the domain controller where the access attempt occurred, not on every domain controller that contains a replica of the object.  
@@ -202,7 +202,7 @@ void RemoveAce(UINT   nIndex) throw();
  Index to the ACE entry to remove.  
   
 ### Remarks  
- This method is derived from [CAtlArray::RemoveAt](../Topic/CAtlArray::RemoveAt.md).  
+ This method is derived from [CAtlArray::RemoveAt](../../atl/reference/catlarray-class.md#catlarray__removeat).  
   
 ##  <a name="csacl__removeallaces"></a>  CSacl::RemoveAllAces  
  Removes all of the access-control entries (ACEs) contained in the `CSacl` object.  
@@ -220,10 +220,3 @@ void RemoveAllAces() throw();
  [ACEs](http://msdn.microsoft.com/library/windows/desktop/aa374868)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Security Global Functions](../../atl/reference/security-global-functions.md)
-
-
-
-
-
-
-

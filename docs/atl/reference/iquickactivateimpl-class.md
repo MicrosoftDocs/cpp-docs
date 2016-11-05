@@ -1,7 +1,7 @@
 ---
 title: "IQuickActivateImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -23,7 +23,7 @@ helpviewer_keywords:
   - "IQuickActivateImpl class"
   - "IQuickActivate ATL implementation"
 ms.assetid: aa80c056-1041-494e-b21d-2acca7dc27ea
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -66,9 +66,9 @@ template <class   T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[IQuickActivateImpl::GetContentExtent](../Topic/IQuickActivateImpl::GetContentExtent.md)|Retrieves the current display size for a running control.|  
-|[IQuickActivateImpl::QuickActivate](../Topic/IQuickActivateImpl::QuickActivate.md)|Performs quick initialization of controls being loaded.|  
-|[IQuickActivateImpl::SetContentExtent](../Topic/IQuickActivateImpl::SetContentExtent.md)|Informs the control of how much display space the container has assigned to it.|  
+|[IQuickActivateImpl::GetContentExtent](#iquickactivateimpl__getcontentextent)|Retrieves the current display size for a running control.|  
+|[IQuickActivateImpl::QuickActivate](#iquickactivateimpl__quickactivate)|Performs quick initialization of controls being loaded.|  
+|[IQuickActivateImpl::SetContentExtent](#iquickactivateimpl__setcontentextent)|Informs the control of how much display space the container has assigned to it.|  
   
 ## Remarks  
  The [IQuickActivate](http://msdn.microsoft.com/library/windows/desktop/ms690146) interface helps containers avoid delays when loading controls by combining initialization in a single call. The `QuickActivate` method allows the container to pass a pointer to a [QACONTAINER](http://msdn.microsoft.com/library/windows/desktop/ms688630) structure that holds pointers to all the interfaces the control needs. On return, the control passes back a pointer to a [QACONTROL](http://msdn.microsoft.com/library/windows/desktop/ms693721) structure that holds pointers to its own interfaces, which are used by the container. Class `IQuickActivateImpl` provides a default implementation of **IQuickActivate** and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -124,10 +124,3 @@ STDMETHOD(SetContentExtent)(LPSIZEL   pSize);
 ## See Also  
  [CComControl Class](../../atl/reference/ccomcontrol-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

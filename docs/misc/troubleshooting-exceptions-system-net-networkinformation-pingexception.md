@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting Exceptions: System.Net.NetworkInformation.PingException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -34,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Troubleshooting Exceptions: System.Net.NetworkInformation.PingException
-The exception that is thrown when a <xref:System.Net.NetworkInformation.Ping.Send*> or <xref:System.Net.NetworkInformation.Ping.SendAsync*> method calls a method that throws an exception. For example, a server may not support ping, or a firewall may be blocking the operation.  
+The exception that is thrown when a <xref:System.Net.NetworkInformation.Ping.Send%2A> or <xref:System.Net.NetworkInformation.Ping.SendAsync%2A> method calls a method that throws an exception. For example, a server may not support ping, or a firewall may be blocking the operation.  
   
 ## See Also  
  <xref:System.Net.NetworkInformation.PingException>   

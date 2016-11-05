@@ -1,0 +1,2 @@
+   public IDispEventImpl<IDC_CALENDAR1, CMyCompositCtrl2, &__uuidof(DCalendarEvents), &__uuidof(__MSACAL), 7, 0>,
+   public IDispEventImpl<IDC_CALENDAR2, CMyCompositCtrl2, &__uuidof(DCalendarEvents), &__uuidof(__MSACAL), 7, 0>

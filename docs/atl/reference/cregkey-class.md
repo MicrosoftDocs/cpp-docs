@@ -1,7 +1,7 @@
 ---
 title: "CRegKey Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -22,7 +22,7 @@ helpviewer_keywords:
   - "registry, writing to"
   - "registry, deleting keys"
 ms.assetid: 3afce82b-ba2c-4c1a-8404-dc969e1af74b
-caps.latest.revision: 24
+caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -59,55 +59,55 @@ class CRegKey
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRegKey::CRegKey](../Topic/CRegKey::CRegKey.md)|The constructor.|  
-|[CRegKey::~CRegKey](../Topic/CRegKey::~CRegKey.md)|The destructor.|  
+|[CRegKey::CRegKey](#cregkey__cregkey)|The constructor.|  
+|[CRegKey::~CRegKey](#cregkey___dtorcregkey)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRegKey::Attach](/visual-studio/profiling/attach)|Call this method to attach an HKEY to the `CRegKey` object by setting the [m_hKey](../Topic/CRegKey::m_hKey.md) member handle to `hKey`.|  
-|[CRegKey::Close](../Topic/CRegKey::Close.md)|Call this method to release the [m_hKey](../Topic/CRegKey::m_hKey.md) member handle and set it to NULL.|  
-|[CRegKey::Create](../Topic/CRegKey::Create.md)|Call this method to create the specified key, if it does not exist as a subkey of `hKeyParent`.|  
-|[CRegKey::DeleteSubKey](../Topic/CRegKey::DeleteSubKey.md)|Call this method to remove the specified key from the registry.|  
-|[CRegKey::DeleteValue](../Topic/CRegKey::DeleteValue.md)|Call this method to remove a value field from [m_hKey](../Topic/CRegKey::m_hKey.md).|  
-|[CRegKey::Detach](/visual-studio/profiling/detach)|Call this method to detach the [m_hKey](../Topic/CRegKey::m_hKey.md) member handle from the `CRegKey` object and set `m_hKey` to NULL.|  
-|[CRegKey::EnumKey](../Topic/CRegKey::EnumKey.md)|Call this method to enumerate the subkeys of the open registry key.|  
-|[CRegKey::Flush](../Topic/CRegKey::Flush.md)|Call this method to write all of the attributes of the open registry key into the registry.|  
-|[CRegKey::GetKeySecurity](../Topic/CRegKey::GetKeySecurity.md)|Call this method to retrieve a copy of the security descriptor protecting the open registry key.|  
-|[CRegKey::NotifyChangeKeyValue](../Topic/CRegKey::NotifyChangeKeyValue.md)|This method notifies the caller about changes to the attributes or contents of the open registry key.|  
-|[CRegKey::Open](../Topic/CRegKey::Open.md)|Call this method to open the specified key and set [m_hKey](../Topic/CRegKey::m_hKey.md) to the handle of this key.|  
-|[CRegKey::QueryBinaryValue](../Topic/CRegKey::QueryBinaryValue.md)|Call this method to retrieve the binary data for a specified value name.|  
-|[CRegKey::QueryDWORDValue](../Topic/CRegKey::QueryDWORDValue.md)|Call this method to retrieve the DWORD data for a specified value name.|  
-|[CRegKey::QueryGUIDValue](../Topic/CRegKey::QueryGUIDValue.md)|Call this method to retrieve the GUID data for a specified value name.|  
-|[CRegKey::QueryMultiStringValue](../Topic/CRegKey::QueryMultiStringValue.md)|Call this method to retrieve the multistring data for a specified value name.|  
-|[CRegKey::QueryQWORDValue](../Topic/CRegKey::QueryQWORDValue.md)|Call this method to retrieve the QWORD data for a specified value name.|  
-|[CRegKey::QueryStringValue](../Topic/CRegKey::QueryStringValue.md)|Call this method to retrieve the string data for a specified value name.|  
-|[CRegKey::QueryValue](../Topic/CRegKey::QueryValue.md)|Call this method to retrieve the data for the specified value field of [m_hKey](../Topic/CRegKey::m_hKey.md). Earlier versions of this method are no longer supported and are marked as **ATL_DEPRECATED**.|  
-|[CRegKey::RecurseDeleteKey](../Topic/CRegKey::RecurseDeleteKey.md)|Call this method to remove the specified key from the registry and explicitly remove any subkeys.|  
-|[CRegKey::SetBinaryValue](../Topic/CRegKey::SetBinaryValue.md)|Call this method to set the binary value of the registry key.|  
-|[CRegKey::SetDWORDValue](../Topic/CRegKey::SetDWORDValue.md)|Call this method to set the DWORD value of the registry key.|  
-|[CRegKey::SetGUIDValue](../Topic/CRegKey::SetGUIDValue.md)|Call this method to set the GUID value of the registry key.|  
-|[CRegKey::SetKeySecurity](../Topic/CRegKey::SetKeySecurity.md)|Call this method to set the security of the registry key.|  
-|[CRegKey::SetKeyValue](../Topic/CRegKey::SetKeyValue.md)|Call this method to store data in a specified value field of a specified key.|  
-|[CRegKey::SetMultiStringValue](../Topic/CRegKey::SetMultiStringValue.md)|Call this method to set the multistring value of the registry key.|  
-|[CRegKey::SetQWORDValue](../Topic/CRegKey::SetQWORDValue.md)|Call this method to set the QWORD value of the registry key.|  
-|[CRegKey::SetStringValue](../Topic/CRegKey::SetStringValue.md)|Call this method to set the string value of the registry key.|  
-|[CRegKey::SetValue](../Topic/CRegKey::SetValue.md)|Call this method to store data in the specified value field of [m_hKey](../Topic/CRegKey::m_hKey.md). Earlier versions of this method are no longer supported and are marked as **ATL_DEPRECATED**.|  
+|[CRegKey::Attach](#cregkey__attach)|Call this method to attach an HKEY to the `CRegKey` object by setting the [m_hKey](#cregkey__m_hkey) member handle to `hKey`.|  
+|[CRegKey::Close](#cregkey__close)|Call this method to release the [m_hKey](#cregkey__m_hkey) member handle and set it to NULL.|  
+|[CRegKey::Create](#cregkey__create)|Call this method to create the specified key, if it does not exist as a subkey of `hKeyParent`.|  
+|[CRegKey::DeleteSubKey](#cregkey__deletesubkey)|Call this method to remove the specified key from the registry.|  
+|[CRegKey::DeleteValue](#cregkey__deletevalue)|Call this method to remove a value field from [m_hKey](#cregkey__m_hkey).|  
+|[CRegKey::Detach](#cregkey__detach)|Call this method to detach the [m_hKey](#cregkey__m_hkey) member handle from the `CRegKey` object and set `m_hKey` to NULL.|  
+|[CRegKey::EnumKey](#cregkey__enumkey)|Call this method to enumerate the subkeys of the open registry key.|  
+|[CRegKey::Flush](#cregkey__flush)|Call this method to write all of the attributes of the open registry key into the registry.|  
+|[CRegKey::GetKeySecurity](#cregkey__getkeysecurity)|Call this method to retrieve a copy of the security descriptor protecting the open registry key.|  
+|[CRegKey::NotifyChangeKeyValue](#cregkey__notifychangekeyvalue)|This method notifies the caller about changes to the attributes or contents of the open registry key.|  
+|[CRegKey::Open](#cregkey__open)|Call this method to open the specified key and set [m_hKey](#cregkey__m_hkey) to the handle of this key.|  
+|[CRegKey::QueryBinaryValue](#cregkey__querybinaryvalue)|Call this method to retrieve the binary data for a specified value name.|  
+|[CRegKey::QueryDWORDValue](#cregkey__querydwordvalue)|Call this method to retrieve the DWORD data for a specified value name.|  
+|[CRegKey::QueryGUIDValue](#cregkey__queryguidvalue)|Call this method to retrieve the GUID data for a specified value name.|  
+|[CRegKey::QueryMultiStringValue](#cregkey__querymultistringvalue)|Call this method to retrieve the multistring data for a specified value name.|  
+|[CRegKey::QueryQWORDValue](#cregkey__queryqwordvalue)|Call this method to retrieve the QWORD data for a specified value name.|  
+|[CRegKey::QueryStringValue](#cregkey__querystringvalue)|Call this method to retrieve the string data for a specified value name.|  
+|[CRegKey::QueryValue](#cregkey__queryvalue)|Call this method to retrieve the data for the specified value field of [m_hKey](#cregkey__m_hkey). Earlier versions of this method are no longer supported and are marked as **ATL_DEPRECATED**.|  
+|[CRegKey::RecurseDeleteKey](#cregkey__recursedeletekey)|Call this method to remove the specified key from the registry and explicitly remove any subkeys.|  
+|[CRegKey::SetBinaryValue](#cregkey__setbinaryvalue)|Call this method to set the binary value of the registry key.|  
+|[CRegKey::SetDWORDValue](#cregkey__setdwordvalue)|Call this method to set the DWORD value of the registry key.|  
+|[CRegKey::SetGUIDValue](#cregkey__setguidvalue)|Call this method to set the GUID value of the registry key.|  
+|[CRegKey::SetKeySecurity](#cregkey__setkeysecurity)|Call this method to set the security of the registry key.|  
+|[CRegKey::SetKeyValue](#cregkey__setkeyvalue)|Call this method to store data in a specified value field of a specified key.|  
+|[CRegKey::SetMultiStringValue](#cregkey__setmultistringvalue)|Call this method to set the multistring value of the registry key.|  
+|[CRegKey::SetQWORDValue](#cregkey__setqwordvalue)|Call this method to set the QWORD value of the registry key.|  
+|[CRegKey::SetStringValue](#cregkey__setstringvalue)|Call this method to set the string value of the registry key.|  
+|[CRegKey::SetValue](#cregkey__setvalue)|Call this method to store data in the specified value field of [m_hKey](#cregkey__m_hkey). Earlier versions of this method are no longer supported and are marked as **ATL_DEPRECATED**.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRegKey::operator HKEY](../Topic/CRegKey::operator%20HKEY.md)|Converts a `CRegKey` object to an HKEY.|  
-|[CRegKey::operator =](../Topic/CRegKey::operator%20=.md)|Assignment operator.|  
+|[CRegKey::operator HKEY](#cregkey__operator_hkey)|Converts a `CRegKey` object to an HKEY.|  
+|[CRegKey::operator =](#cregkey__operator__eq)|Assignment operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRegKey::m_hKey](../Topic/CRegKey::m_hKey.md)|Contains a handle of the registry key associated with the `CRegKey` object.|  
-|[CRegKey::m_pTM](../Topic/CRegKey::m_pTM.md)|Pointer to `CAtlTransactionManager` object|  
+|[CRegKey::m_hKey](#cregkey__m_hkey)|Contains a handle of the registry key associated with the `CRegKey` object.|  
+|[CRegKey::m_pTM](#cregkey__m_ptm)|Pointer to `CAtlTransactionManager` object|  
   
 ## Remarks  
  `CRegKey` provides methods for creating and deleting keys and values in the system registry. The registry contains an installation-specific set of definitions for system components, such as software version numbers, logical-to-physical mappings of installed hardware, and COM objects.  
@@ -123,7 +123,7 @@ class CRegKey
  **Header:** atlbase.h  
   
 ##  <a name="cregkey__attach"></a>  CRegKey::Attach  
- Call this method to attach an HKEY to the `CRegKey` object by setting the [m_hKey](../Topic/CRegKey::m_hKey.md) member handle to `hKey`.  
+ Call this method to attach an HKEY to the `CRegKey` object by setting the [m_hKey](#cregkey__m_hkey) member handle to `hKey`.  
   
 ```
 void Attach(HKEY hKey) throw();
@@ -137,7 +137,7 @@ void Attach(HKEY hKey) throw();
  **Attach** will assert if `m_hKey` is non-NULL.  
   
 ##  <a name="cregkey__close"></a>  CRegKey::Close  
- Call this method to release the [m_hKey](../Topic/CRegKey::m_hKey.md) member handle and set it to NULL.  
+ Call this method to release the [m_hKey](#cregkey__m_hkey) member handle and set it to NULL.  
   
 ```
 LONG Close() throw();
@@ -185,7 +185,7 @@ LONG Create(HKEY hKeyParent,
  If successful, returns ERROR_SUCCESS and opens the key. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- **Create** sets the [m_hKey](../Topic/CRegKey::m_hKey.md) member to the handle of this key.  
+ **Create** sets the [m_hKey](#cregkey__m_hkey) member to the handle of this key.  
   
 ##  <a name="cregkey__cregkey"></a>  CRegKey::CRegKey  
  The constructor.  
@@ -229,16 +229,16 @@ LONG DeleteSubKey(LPCTSTR lpszSubKey) throw();
   
 ### Parameters  
  `lpszSubKey`  
- Specifies the name of the key to delete. This name must be a subkey of [m_hKey](../Topic/CRegKey::m_hKey.md).  
+ Specifies the name of the key to delete. This name must be a subkey of [m_hKey](#cregkey__m_hkey).  
   
 ### Return Value  
  If successful, returns ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- `DeleteSubKey` can only delete a key that has no subkeys. If the key has subkeys, call [RecurseDeleteKey](../Topic/CRegKey::RecurseDeleteKey.md) instead.  
+ `DeleteSubKey` can only delete a key that has no subkeys. If the key has subkeys, call [RecurseDeleteKey](#cregkey__recursedeletekey) instead.  
   
 ##  <a name="cregkey__deletevalue"></a>  CRegKey::DeleteValue  
- Call this method to remove a value field from [m_hKey](../Topic/CRegKey::m_hKey.md).  
+ Call this method to remove a value field from [m_hKey](#cregkey__m_hkey).  
   
 ```
 LONG DeleteValue(LPCTSTR lpszValue) throw();
@@ -252,7 +252,7 @@ LONG DeleteValue(LPCTSTR lpszValue) throw();
  If successful, returns ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
   
 ##  <a name="cregkey__detach"></a>  CRegKey::Detach  
- Call this method to detach the [m_hKey](../Topic/CRegKey::m_hKey.md) member handle from the `CRegKey` object and set `m_hKey` to NULL.  
+ Call this method to detach the [m_hKey](#cregkey__m_hkey) member handle from the `CRegKey` object and set `m_hKey` to NULL.  
   
 ```
 HKEY Detach() throw();
@@ -385,7 +385,7 @@ LONG NotifyChangeKeyValue(BOOL bWatchSubtree,
  For more details and a sample program, see [RegNotifyChangeKeyValue](http://msdn.microsoft.com/library/windows/desktop/ms724892).  
   
 ##  <a name="cregkey__open"></a>  CRegKey::Open  
- Call this method to open the specified key and set [m_hKey](../Topic/CRegKey::m_hKey.md) to the handle of this key.  
+ Call this method to open the specified key and set [m_hKey](#cregkey__m_hkey) to the handle of this key.  
   
 ```
 LONG Open(HKEY hKeyParent,
@@ -409,7 +409,7 @@ LONG Open(HKEY hKeyParent,
 ### Remarks  
  If the `lpszKeyName` parameter is NULL or points to an empty string, **Open** opens a new handle of the key identified by `hKeyParent`, but does not close any previously opened handle.  
   
- Unlike [CRegKey::Create](../Topic/CRegKey::Create.md), **Open** will not create the specified key if it does not exist.  
+ Unlike [CRegKey::Create](#cregkey__create), **Open** will not create the specified key if it does not exist.  
   
 ##  <a name="cregkey__operator_hkey"></a>  CRegKey::operator HKEY  
  Converts a `CRegKey` object to an HKEY.  
@@ -591,7 +591,7 @@ LONG QueryStringValue(LPCTSTR pszValueName,
 >  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
   
 ##  <a name="cregkey__queryvalue"></a>  CRegKey::QueryValue  
- Call this method to retrieve the data for the specified value field of [m_hKey](../Topic/CRegKey::m_hKey.md). Earlier versions of this method are no longer supported and are marked as **ATL_DEPRECATED**.  
+ Call this method to retrieve the data for the specified value field of [m_hKey](#cregkey__m_hkey). Earlier versions of this method are no longer supported and are marked as **ATL_DEPRECATED**.  
   
 ```
 LONG QueryValue(LPCTSTR pszValueName,
@@ -652,7 +652,7 @@ LONG RecurseDeleteKey(LPCTSTR lpszKey) throw();
   
 ### Parameters  
  *lpszKey*  
- Specifies the name of the key to delete. This name must be a subkey of [m_hKey](../Topic/CRegKey::m_hKey.md).  
+ Specifies the name of the key to delete. This name must be a subkey of [m_hKey](#cregkey__m_hkey).  
   
 ### Return Value  
  If successful, returns ERROR_SUCCESS; otherwise, a non-zero error value defined in WINERROR.H.  
@@ -736,7 +736,7 @@ LONG SetKeyValue(LPCTSTR lpszKeyName,
   
 ### Parameters  
  `lpszKeyName`  
- Specifies the name of the key to be created or opened. This name must be a subkey of [m_hKey](../Topic/CRegKey::m_hKey.md).  
+ Specifies the name of the key to be created or opened. This name must be a subkey of [m_hKey](#cregkey__m_hkey).  
   
  `lpszValue`  
  Specifies the data to be stored. This parameter must be non-NULL.  
@@ -843,7 +843,7 @@ LONG SetStringValue(LPCTSTR pszValueName,
  This method uses [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923\(v=vs.85\).aspx) to write the value to the registry.  
   
 ##  <a name="cregkey__setvalue"></a>  CRegKey::SetValue  
- Call this method to store data in the specified value field of [m_hKey](../Topic/CRegKey::m_hKey.md). Earlier versions of this method are no longer supported and are marked as **ATL_DEPRECATED**.  
+ Call this method to store data in the specified value field of [m_hKey](#cregkey__m_hkey). Earlier versions of this method are no longer supported and are marked as **ATL_DEPRECATED**.  
   
 ```
 LONG SetValue(LPCTSTR pszValueName,
@@ -908,14 +908,4 @@ static LONG WINAPI SetValue(HKEY hKeyParent,
   
 ## See Also  
  [DCOM Sample](../../top/visual-cpp-samples.md)   
- [Class Overview](../../atl/atl-class-overview.md)   
- [Registry Overview](http://msdn.microsoft.com/library/windows/desktop/ms724871)   
- [Registry Functions](http://msdn.microsoft.com/library/windows/desktop/ms724875)   
- [Registry Value Types](http://msdn.microsoft.com/library/windows/desktop/ms724884)
-
-
-
-
-
-
-
+ [Class Overview](../../atl/atl-class-overview.md)

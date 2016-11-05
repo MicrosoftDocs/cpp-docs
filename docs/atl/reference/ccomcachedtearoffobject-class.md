@@ -1,7 +1,7 @@
 ---
 title: "CComCachedTearOffObject Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -21,7 +21,7 @@ helpviewer_keywords:
   - "cache, ATL cached tear-off objects"
   - "CComCachedTearOffObject class"
 ms.assetid: ae19507d-a1de-4dbc-a988-da9f75a50c95
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -64,24 +64,24 @@ public CComObjectRootEx<contained
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCachedTearOffObject::CComCachedTearOffObject](../Topic/CComCachedTearOffObject::CComCachedTearOffObject.md)|The constructor.|  
-|[CComCachedTearOffObject::~CComCachedTearOffObject](../Topic/CComCachedTearOffObject::~CComCachedTearOffObject.md)|The destructor.|  
+|[CComCachedTearOffObject::CComCachedTearOffObject](#ccomcachedtearoffobject__ccomcachedtearoffobject)|The constructor.|  
+|[CComCachedTearOffObject::~CComCachedTearOffObject](#ccomcachedtearoffobject___dtorccomcachedtearoffobject)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCachedTearOffObject::AddRef](../Topic/CComCachedTearOffObject::AddRef.md)|Increments the reference count for a `CComCachedTearOffObject` object.|  
-|[CComCachedTearOffObject::FinalConstruct](../Topic/CComCachedTearOffObject::FinalConstruct.md)|Calls the `m_contained::FinalConstruct` (the tear-off class' method).|  
-|[CComCachedTearOffObject::FinalRelease](../Topic/CComCachedTearOffObject::FinalRelease.md)|Calls the `m_contained::FinalRelease` (the tear-off class' method).|  
-|[CComCachedTearOffObject::QueryInterface](../Topic/CComCachedTearOffObject::QueryInterface.md)|Returns a pointer to the `IUnknown` of the `CComCachedTearOffObject` object, or to the requested interface on your tear-off class (the class `contained`).|  
-|[CComCachedTearOffObject::Release](../Topic/CComCachedTearOffObject::Release.md)|Decrements the reference count for a `CComCachedTearOffObject` object and destroys it if the reference count is 0.|  
+|[CComCachedTearOffObject::AddRef](#ccomcachedtearoffobject__addref)|Increments the reference count for a `CComCachedTearOffObject` object.|  
+|[CComCachedTearOffObject::FinalConstruct](#ccomcachedtearoffobject__finalconstruct)|Calls the `m_contained::FinalConstruct` (the tear-off class' method).|  
+|[CComCachedTearOffObject::FinalRelease](#ccomcachedtearoffobject__finalrelease)|Calls the `m_contained::FinalRelease` (the tear-off class' method).|  
+|[CComCachedTearOffObject::QueryInterface](#ccomcachedtearoffobject__queryinterface)|Returns a pointer to the `IUnknown` of the `CComCachedTearOffObject` object, or to the requested interface on your tear-off class (the class `contained`).|  
+|[CComCachedTearOffObject::Release](#ccomcachedtearoffobject__release)|Decrements the reference count for a `CComCachedTearOffObject` object and destroys it if the reference count is 0.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCachedTearOffObject::m_contained](../Topic/CComCachedTearOffObject::m_contained.md)|A `CComContainedObject` object derived from your tear-off class (the class `contained`).|  
+|[CComCachedTearOffObject::m_contained](#ccomcachedtearoffobject__m_contained)|A `CComContainedObject` object derived from your tear-off class (the class `contained`).|  
   
 ## Remarks  
  `CComCachedTearOffObject` implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) for a tear-off interface. This class differs from `CComTearOffObject` in that `CComCachedTearOffObject` has its own **IUnknown**, separate from the owner object's **IUnknown** (the owner is the object for which the tear-off is being created). `CComCachedTearOffObject` maintains its own reference count on its **IUnknown** and deletes itself once its reference count is zero. However, if you query for any of its tear-off interfaces, the reference count of the owner object's **IUnknown** will be incremented.  
@@ -124,7 +124,7 @@ CComCachedTearOffObject(void* pv);
  [in] Pointer to the **IUnknown** of the `CComCachedTearOffObject`.  
   
 ### Remarks  
- Initializes the `CComContainedObject` member, [m_contained](../Topic/CComCachedTearOffObject::m_contained.md).  
+ Initializes the `CComContainedObject` member, [m_contained](#ccomcachedtearoffobject__m_contained).  
   
 ##  <a name="ccomcachedtearoffobject___dtorccomcachedtearoffobject"></a>  CComCachedTearOffObject::~CComCachedTearOffObject  
  The destructor.  
@@ -134,7 +134,7 @@ CComCachedTearOffObject(void* pv);
 ```  
   
 ### Remarks  
- Frees all allocated resources and calls [FinalRelease](../Topic/CComCachedTearOffObject::FinalRelease.md).  
+ Frees all allocated resources and calls [FinalRelease](#ccomcachedtearoffobject__finalrelease).  
   
 ##  <a name="ccomcachedtearoffobject__finalconstruct"></a>  CComCachedTearOffObject::FinalConstruct  
  Calls **m_contained::FinalConstruct** to create `m_contained`, the `CComContainedObject`< `contained`> object used to access the interface implemented by your tear-off class.  
@@ -203,10 +203,3 @@ STDMETHOD_(ULONG, Release)();
  [CComTearOffObject Class](../../atl/reference/ccomtearoffobject-class.md)   
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

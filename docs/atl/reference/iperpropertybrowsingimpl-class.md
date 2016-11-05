@@ -1,7 +1,7 @@
 ---
 title: "IPerPropertyBrowsingImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -23,7 +23,7 @@ helpviewer_keywords:
   - "property pages, accessing information"
   - "IPerPropertyBrowsing, ATL implementation"
 ms.assetid: 0b1a9be3-d242-4767-be69-663a21e4b728
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -66,10 +66,10 @@ template <class   T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[IPerPropertyBrowsingImpl::GetDisplayString](../Topic/IPerPropertyBrowsingImpl::GetDisplayString.md)|Retrieves a string describing a given property.|  
-|[IPerPropertyBrowsingImpl::GetPredefinedStrings](../Topic/IPerPropertyBrowsingImpl::GetPredefinedStrings.md)|Retrieves an array of strings corresponding to the values that a given property can accept.|  
-|[IPerPropertyBrowsingImpl::GetPredefinedValue](../Topic/IPerPropertyBrowsingImpl::GetPredefinedValue.md)|Retrieves a **VARIANT** containing the value of a property identified by a given DISPID. The DISPID is associated with the string name retrieved from `GetPredefinedStrings`. The ATL implementation returns **E_NOTIMPL**.|  
-|[IPerPropertyBrowsingImpl::MapPropertyToPage](../Topic/IPerPropertyBrowsingImpl::MapPropertyToPage.md)|Retrieves the CLSID of the property page associated with a given property.|  
+|[IPerPropertyBrowsingImpl::GetDisplayString](#iperpropertybrowsingimpl__getdisplaystring)|Retrieves a string describing a given property.|  
+|[IPerPropertyBrowsingImpl::GetPredefinedStrings](#iperpropertybrowsingimpl__getpredefinedstrings)|Retrieves an array of strings corresponding to the values that a given property can accept.|  
+|[IPerPropertyBrowsingImpl::GetPredefinedValue](#iperpropertybrowsingimpl__getpredefinedvalue)|Retrieves a **VARIANT** containing the value of a property identified by a given DISPID. The DISPID is associated with the string name retrieved from `GetPredefinedStrings`. The ATL implementation returns **E_NOTIMPL**.|  
+|[IPerPropertyBrowsingImpl::MapPropertyToPage](#iperpropertybrowsingimpl__mappropertytopage)|Retrieves the CLSID of the property page associated with a given property.|  
   
 ## Remarks  
  The [IPerPropertyBrowsing](http://msdn.microsoft.com/library/windows/desktop/ms678432) interface allows a client to access the information in an object's property pages. Class `IPerPropertyBrowsingImpl` provides a default implementation of this interface and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -110,7 +110,7 @@ STDMETHOD(GetPredefinedStrings)(
 ```  
   
 ### Return Value  
- ATL's implementation of [GetPredefinedValue](../Topic/IPerPropertyBrowsingImpl::GetPredefinedValue.md) returns **E_NOTIMPL**.  
+ ATL's implementation of [GetPredefinedValue](#iperpropertybrowsingimpl__getpredefinedvalue) returns **E_NOTIMPL**.  
   
 ### Remarks  
  See [IPerPropertyBrowsing::GetPredefinedStrings](http://msdn.microsoft.com/library/windows/desktop/ms679724) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
@@ -129,7 +129,7 @@ STDMETHOD(GetPredefinedValue)(
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- ATL's implementation of [GetPredefinedStrings](../Topic/IPerPropertyBrowsingImpl::GetPredefinedStrings.md) retrieves no corresponding strings.  
+ ATL's implementation of [GetPredefinedStrings](#iperpropertybrowsingimpl__getpredefinedstrings) retrieves no corresponding strings.  
   
  See [IPerPropertyBrowsing::GetPredefinedValue](http://msdn.microsoft.com/library/windows/desktop/ms690401) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -151,10 +151,3 @@ STDMETHOD(MapPropertyToPage)(
  [IPropertyPageImpl Class](../../atl/reference/ipropertypageimpl-class.md)   
  [ISpecifyPropertyPagesImpl Class](../../atl/reference/ispecifypropertypagesimpl-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Attribute &#39;&lt;attributename&gt;&#39; cannot be specified more than once in this project, even with identical parameter values
-A custom attribute is specified more than once on the same programming element, but an <xref:System.AttributeUsageAttribute> is applied to the custom attribute, and its <xref:System.AttributeUsageAttribute.AllowMultiple*> property is set to `False`. <xref:System.AttributeUsageAttribute.AllowMultiple*> controls whether the attribute is multi-use.  
+A custom attribute is specified more than once on the same programming element, but an <xref:System.AttributeUsageAttribute> is applied to the custom attribute, and its <xref:System.AttributeUsageAttribute.AllowMultiple%2A> property is set to `False`. <xref:System.AttributeUsageAttribute.AllowMultiple%2A> controls whether the attribute is multi-use.  
   
  By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
   
@@ -44,9 +44,9 @@ A custom attribute is specified more than once on the same programming element, 
   
 ### To correct this error  
   
--   Remove the extra specification of the custom attribute, or set <xref:System.AttributeUsageAttribute.AllowMultiple*> to `True` in the <xref:System.AttributeUsageAttribute> applied to it.  
+-   Remove the extra specification of the custom attribute, or set <xref:System.AttributeUsageAttribute.AllowMultiple%2A> to `True` in the <xref:System.AttributeUsageAttribute> applied to it.  
   
 ## See Also  
  <xref:System.AttributeUsageAttribute>   
- <xref:System.AttributeUsageAttribute.AllowMultiple*>   
+ <xref:System.AttributeUsageAttribute.AllowMultiple%2A>   
  [NOT IN BUILD: Application of Attributes](http://msdn.microsoft.com/en-us/2b1703ed-4437-49b3-bc0b-568094324f47)

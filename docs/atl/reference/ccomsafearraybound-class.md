@@ -1,7 +1,7 @@
 ---
 title: "CComSafeArrayBound Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComSafeArrayBound class"
 ms.assetid: dd6299db-5f84-4630-bbf0-f5add5318437
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -52,21 +52,21 @@ class CComSafeArrayBound : public SAFEARRAYBOUND
   
 |||  
 |-|-|  
-|[CComSafeArrayBound](../Topic/CComSafeArrayBound::CComSafeArrayBound.md)|The constructor.|  
-|[GetCount](../Topic/CComSafeArrayBound::GetCount.md)|Call this method to return the number of elements.|  
-|[GetLowerBound](../Topic/CComSafeArrayBound::GetLowerBound.md)|Call this method to return the lower bound.|  
-|[GetUpperBound](../Topic/CComSafeArrayBound::GetUpperBound.md)|Call this method to return the upper bound.|  
-|[SetCount](../Topic/CComSafeArrayBound::SetCount.md)|Call this method to set the number of elements.|  
-|[SetLowerBound](../Topic/CComSafeArrayBound::SetLowerBound.md)|Call this method to set the lower bound.|  
+|[CComSafeArrayBound](#ccomsafearraybound__ccomsafearraybound)|The constructor.|  
+|[GetCount](#ccomsafearraybound__getcount)|Call this method to return the number of elements.|  
+|[GetLowerBound](#ccomsafearraybound__getlowerbound)|Call this method to return the lower bound.|  
+|[GetUpperBound](#ccomsafearraybound__getupperbound)|Call this method to return the upper bound.|  
+|[SetCount](#ccomsafearraybound__setcount)|Call this method to set the number of elements.|  
+|[SetLowerBound](#ccomsafearraybound__setlowerbound)|Call this method to set the lower bound.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator =](../Topic/CComSafeArrayBound::operator%20=.md)|Sets the `CComSafeArrayBound` to a new value.|  
+|[operator =](#ccomsafearraybound__operator__eq)|Sets the `CComSafeArrayBound` to a new value.|  
   
 ## Remarks  
- This class is a wrapper for the **SAFEARRAYBOUND** structure used by [CComSafeArray](../../atl/reference/ccomsafearray-class.md). It provides methods for querying and setting the upper and lower bounds of a single dimension of a `CComSafeArray` object and the number of elements it contains. A multidimensional `CComSafeArray` object uses an array of `CComSafeArrayBound` objects, one for each dimension. Therefore, when using methods such as [GetCount](../Topic/CComSafeArrayBound::GetCount.md), be aware that this method will not return the total number of elements in a multidimensional array.  
+ This class is a wrapper for the **SAFEARRAYBOUND** structure used by [CComSafeArray](../../atl/reference/ccomsafearray-class.md). It provides methods for querying and setting the upper and lower bounds of a single dimension of a `CComSafeArray` object and the number of elements it contains. A multidimensional `CComSafeArray` object uses an array of `CComSafeArrayBound` objects, one for each dimension. Therefore, when using methods such as [GetCount](#ccomsafearraybound__getcount), be aware that this method will not return the total number of elements in a multidimensional array.  
   
  **Header:** atlsafe.h  
   
@@ -101,7 +101,7 @@ ULONG GetCount() const throw();
  Returns the number of elements.  
   
 ### Remarks  
- If the associated `CComSafeArray` object represents a multidimensional array, this method will only return the total number of elements in the rightmost dimension. Use [CComSafeArray::GetCount](../Topic/CComSafeArray::GetCount.md) to obtain the total number of elements.  
+ If the associated `CComSafeArray` object represents a multidimensional array, this method will only return the total number of elements in the rightmost dimension. Use [CComSafeArray::GetCount](../../atl/reference/ccomsafearray-class.md#ccomsafearray__getcount) to obtain the total number of elements.  
   
 ##  <a name="ccomsafearraybound__getlowerbound"></a>  CComSafeArrayBound::GetLowerBound  
  Call this method to return the lower bound.  
@@ -182,10 +182,3 @@ LONG SetLowerBound(LONG lLowerBound) throw();
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

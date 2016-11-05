@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting Exceptions: System.AddIn.Hosting.InvalidPipelineStoreException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -39,7 +39,7 @@ The <xref:System.AddIn.Hosting.InvalidPipelineStoreException> exception is throw
 ## Remarks  
  Unlike <xref:System.IO.DirectoryNotFoundException>, this exception does not provide any path information. This prevents a malicious user from deliberately specifying erroneous paths and using the information returned by the exception to determine actual paths.  
   
- The exception is thrown by the following discovery methods that build and update the store of add-in and pipeline information: <xref:System.AddIn.Hosting.AddInStore.FindAddIns*>,<xref:System.AddIn.Hosting.AddInStore.Rebuild*>, <xref:System.AddIn.Hosting.AddInStore.RebuildAddIns*>, <xref:System.AddIn.Hosting.AddInStore.Update*>, and <xref:System.AddIn.Hosting.AddInStore.UpdateAddIns*>.  
+ The exception is thrown by the following discovery methods that build and update the store of add-in and pipeline information: <xref:System.AddIn.Hosting.AddInStore.FindAddIns%2A>,<xref:System.AddIn.Hosting.AddInStore.Rebuild%2A>, <xref:System.AddIn.Hosting.AddInStore.RebuildAddIns%2A>, <xref:System.AddIn.Hosting.AddInStore.Update%2A>, and <xref:System.AddIn.Hosting.AddInStore.UpdateAddIns%2A>.  
   
 ## See Also  
  <xref:System.AddIn.Hosting.InvalidPipelineStoreException>   

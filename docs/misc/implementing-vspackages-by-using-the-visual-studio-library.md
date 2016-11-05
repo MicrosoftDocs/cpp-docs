@@ -1,7 +1,7 @@
 ---
 title: "Implementing VSPackages By Using the Visual Studio Library | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -33,13 +33,13 @@ translation.priority.mt:
 # Implementing VSPackages By Using the Visual Studio Library
 The `IVsPackageImpl` class in the Visual Studio Library provides a minimal implementation of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> interface. `IVsPackageImpl` takes care of most of the maintenance methods of <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Other methods you might need to override to provide a meaningful implementation include:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject*>  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.CreateTool*>  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.CreateTool%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults*>  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage*>  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>  
   
     > [!NOTE]
     >  The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] Package Template generates all the code discussed here. You can save time by using the template to generate a VSPackage for you.  

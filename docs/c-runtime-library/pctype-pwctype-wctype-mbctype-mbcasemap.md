@@ -1,7 +1,7 @@
 ---
 title: "_pctype, _pwctype, _wctype, _mbctype, _mbcasemap | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

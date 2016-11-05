@@ -1,7 +1,7 @@
 ---
 title: "Composite Control Macros | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -14,7 +14,7 @@ dev_langs:
 helpviewer_keywords: 
   - "composite controls, macros"
 ms.assetid: 17f2dd5e-07e6-4aa6-b965-7a361c78c45e
-caps.latest.revision: 15
+caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -38,11 +38,11 @@ These macros define event sink maps and entries.
   
 |||  
 |-|-|  
-|[BEGIN_SINK_MAP](../Topic/BEGIN_SINK_MAP.md)|Marks the beginning of the event sink map for the composite control.|  
-|[END_SINK_MAP](../Topic/END_SINK_MAP.md)|Marks the end of the event sink map for the composite control.|  
-|[SINK_ENTRY](../Topic/SINK_ENTRY.md)|Entry to the event sink map.|  
-|[SINK_ENTRY_EX](../Topic/SINK_ENTRY_EX.md)|Entry to the event sink map with an additional parameter.|  
-|[SINK_ENTRY_INFO](../Topic/SINK_ENTRY_INFO.md)|Entry to the event sink map with manually supplied type information for use with [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md).|  
+|[BEGIN_SINK_MAP](#begin_sink_map)|Marks the beginning of the event sink map for the composite control.|  
+|[END_SINK_MAP](#end_sink_map)|Marks the end of the event sink map for the composite control.|  
+|[SINK_ENTRY](#sink_entry)|Entry to the event sink map.|  
+|[SINK_ENTRY_EX](#sink_entry_ex)|Entry to the event sink map with an additional parameter.|  
+|[SINK_ENTRY_INFO](#sink_entry_info)|Entry to the event sink map with manually supplied type information for use with [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md).|  
   
 ##  <a name="begin_sink_map"></a>  BEGIN_SINK_MAP  
  Declares the beginning of the event sink map for the composite control.  
@@ -159,7 +159,7 @@ SINK_ENTRY_INFO(Â
  [in] Type information for the event handler function. This type information is provided in the form of a pointer to an `_ATL_FUNC_INFO` structure. `CC_CDECL` is the only option supported in Windows CE for the `CALLCONV` field of the `_ATL_FUNC_INFO` structure. Any other value is unsupported thus its behavior undefined.  
   
 ### Remarks  
- The first four macro parameters are the same as those for the [SINK_ENTRY_EX](../Topic/SINK_ENTRY_EX.md) macro. The final parameter provides type information for the event. CE ATL implementation of ActiveX event sinks only supports return values of type HRESULT or void from your event handler methods; any other return value is unsupported and its behavior is undefined.  
+ The first four macro parameters are the same as those for the [SINK_ENTRY_EX](#sink_entry_ex) macro. The final parameter provides type information for the event. CE ATL implementation of ActiveX event sinks only supports return values of type HRESULT or void from your event handler methods; any other return value is unsupported and its behavior is undefined.  
   
 ##  <a name="idispeventsimpleimpl_class"></a>  IDispEventSimpleImpl Class  
  This class provides implementations of the `IDispatch` methods, without getting type information from a type library.  
@@ -193,9 +193,9 @@ pdiid>
 ### Remarks  
  `IDispEventSimpleImpl` provides a way of implementing an event dispinterface without requiring you to supply implementation code for every method/event on that interface. `IDispEventSimpleImpl` provides implementations of the `IDispatch` methods. You only need to supply implementations for the events that you are interested in handling.  
   
- `IDispEventSimpleImpl` works in conjunction with the [event sink map](../Topic/BEGIN_SINK_MAP.md) in your class to route events to the appropriate handler function. To use this class:  
+ `IDispEventSimpleImpl` works in conjunction with the [event sink map](#begin_sink_map) in your class to route events to the appropriate handler function. To use this class:  
   
--   Add a [SINK_ENTRY_INFO](../Topic/SINK_ENTRY_INFO.md) macro to the event sink map for each event on each object that you want to handle.  
+-   Add a [SINK_ENTRY_INFO](#sink_entry_info) macro to the event sink map for each event on each object that you want to handle.  
   
 -   Supply type information for each event by passing a pointer to an [_ATL_FUNC_INFO](../../atl/reference/atl-func-info-structure.md) structure as a parameter to each entry. On the x86 platform, the `_ATL_FUNC_INFO.cc` value must be CC_CDECL with the callback function calling method of __stdcall.  
   
@@ -217,8 +217,3 @@ pdiid>
 ## See Also  
  [Macros](../../atl/reference/atl-macros.md)   
  [Composite Control Global Functions](../../atl/reference/composite-control-global-functions.md)
-
-
-
-
-

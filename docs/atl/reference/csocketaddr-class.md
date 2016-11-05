@@ -1,7 +1,7 @@
 ---
 title: "CSocketAddr Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CSocketAddr class"
 ms.assetid: 2fb2d8a7-899e-4a36-a342-cc9f4fcdd68c
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -52,17 +52,17 @@ class CSocketAddr
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSocketAddr::CSocketAddr](../Topic/CSocketAddr::CSocketAddr.md)|The constructor.|  
+|[CSocketAddr::CSocketAddr](#csocketaddr__csocketaddr)|The constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSocketAddr::FindAddr](../Topic/CSocketAddr::FindAddr.md)|Call this method to convert the provided host name to the host address.|  
-|[CSocketAddr::FindINET4Addr](../Topic/CSocketAddr::FindINET4Addr.md)|Call this method to convert the IPv4 host name to the host address.|  
-|[CSocketAddr::FindINET6Addr](../Topic/CSocketAddr::FindINET6Addr.md)|Call this method to convert the IPv6 host name to the host address.|  
-|[CSocketAddr::GetAddrInfo](../Topic/CSocketAddr::GetAddrInfo.md)|Call this method to return a pointer to a specific element in the **addrinfo** list.|  
-|[CSocketAddr::GetAddrInfoList](../Topic/CSocketAddr::GetAddrInfoList.md)|Call this method to return a pointer to the **addrinfo** list.|  
+|[CSocketAddr::FindAddr](#csocketaddr__findaddr)|Call this method to convert the provided host name to the host address.|  
+|[CSocketAddr::FindINET4Addr](#csocketaddr__findinet4addr)|Call this method to convert the IPv4 host name to the host address.|  
+|[CSocketAddr::FindINET6Addr](#csocketaddr__findinet6addr)|Call this method to convert the IPv6 host name to the host address.|  
+|[CSocketAddr::GetAddrInfo](#csocketaddr__getaddrinfo)|Call this method to return a pointer to a specific element in the **addrinfo** list.|  
+|[CSocketAddr::GetAddrInfoList](#csocketaddr__getaddrinfolist)|Call this method to return a pointer to the **addrinfo** list.|  
   
 ## Remarks  
  This class provides an IP version agnostic approach for looking up network addresses for use with Windows sockets API functions and socket wrappers in libraries.  
@@ -217,10 +217,3 @@ addrinfo* const GetAddrInfoList() const;
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

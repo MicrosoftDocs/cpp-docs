@@ -1,7 +1,7 @@
 ---
 title: "How to: Display Images with the .NET Framework | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -35,9 +35,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Display Images with the .NET Framework
-The following code example modifies the OnPaint event handler to retrieve a pointer to the <xref:System.Drawing.Graphics> object for the main form. The <xref:System.Windows.Forms.Form.OnPaint*> function is intended for a Windows Forms application, most likely created with a Visual Studio application wizard.  
+The following code example modifies the OnPaint event handler to retrieve a pointer to the <xref:System.Drawing.Graphics> object for the main form. The <xref:System.Windows.Forms.Form.OnPaint%2A> function is intended for a Windows Forms application, most likely created with a Visual Studio application wizard.  
   
- The image is represented by the <xref:System.Drawing.Image> class. The image data is loaded from a .jpg file using the <xref:System.Drawing.Image.FromFile*?displayProperty=fullName> method. Before the image is drawn to the form, the form is resized to accommodate the image. The drawing of the image is performed with the <xref:System.Drawing.Graphics.DrawImage*?displayProperty=fullName> method.  
+ The image is represented by the <xref:System.Drawing.Image> class. The image data is loaded from a .jpg file using the <xref:System.Drawing.Image.FromFile%2A?displayProperty=fullName> method. Before the image is drawn to the form, the form is resized to accommodate the image. The drawing of the image is performed with the <xref:System.Drawing.Graphics.DrawImage%2A?displayProperty=fullName> method.  
   
  The <xref:System.Drawing.Graphics> and <xref:System.Drawing.Image> classes are both in the <xref:System.Drawing?displayProperty=fullName> namespace.  
   

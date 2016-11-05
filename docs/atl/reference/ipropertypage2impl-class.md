@@ -1,7 +1,7 @@
 ---
 title: "IPropertyPage2Impl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ helpviewer_keywords:
   - "IPropertyPage2 ATL implementation"
   - "IPropertyPage2Impl class"
 ms.assetid: e89fbe90-203a-47f0-a5de-23616697e1ce
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -59,7 +59,7 @@ template<class T>  class IPropertyPage2Impl : public IPropertyPageImpl<T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[IPropertyPage2Impl::EditProperty](../Topic/IPropertyPage2Impl::EditProperty.md)|Specifies which property control will receive the focus when the property page is activated. The ATL implementation returns **E_NOTIMPL**.|  
+|[IPropertyPage2Impl::EditProperty](#ipropertypage2impl__editproperty)|Specifies which property control will receive the focus when the property page is activated. The ATL implementation returns **E_NOTIMPL**.|  
   
 ## Remarks  
  The [IPropertyPage2](http://msdn.microsoft.com/library/windows/desktop/ms683996) interface extends [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) by adding the `EditProperty` method. This method allows a client to select a specific property in a property page object.  
@@ -97,10 +97,3 @@ HRESULT EditProperty(DISPID dispID);
  [IPerPropertyBrowsingImpl Class](../../atl/reference/iperpropertybrowsingimpl-class.md)   
  [ISpecifyPropertyPagesImpl Class](../../atl/reference/ispecifypropertypagesimpl-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

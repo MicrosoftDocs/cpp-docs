@@ -1,7 +1,7 @@
 ---
 title: "CSimpleMapEqualHelperFalse Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CSimpleMapEqualHelperFalse class"
 ms.assetid: a873eea3-e130-45cc-a476-61ee79511c3b
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -52,13 +52,13 @@ template <class TKey, class TVal> class CSimpleMapEqualHelperFalse
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleMapEqualHelperFalse::IsEqualKey](../Topic/CSimpleMapEqualHelperFalse::IsEqualKey.md)|(Static) Tests two keys for equality.|  
-|[CSimpleMapEqualHelperFalse::IsEqualValue](../Topic/CSimpleMapEqualHelperFalse::IsEqualValue.md)|(Static) Returns false.|  
+|[CSimpleMapEqualHelperFalse::IsEqualKey](#csimplemapequalhelperfalse__isequalkey)|(Static) Tests two keys for equality.|  
+|[CSimpleMapEqualHelperFalse::IsEqualValue](#csimplemapequalhelperfalse__isequalvalue)|(Static) Returns false.|  
   
 ## Remarks  
  This traits class is a supplement to the `CSimpleMap` class. It provides a method for comparing two elements contained in the `CSimpleMap` object, specifically two value elements or two key elements.  
   
- The value comparison will always return false, and in addition, will call `ATLASSERT` with an argument of false if it is ever referenced. In situations where the equality test is not sufficiently defined, this class allows a map containing key/value pairs to operate correctly for most methods but fail in a well-defined manner for methods that depend on comparisons such as [CSimpleMap::FindVal](../Topic/CSimpleMap::FindVal.md).  
+ The value comparison will always return false, and in addition, will call `ATLASSERT` with an argument of false if it is ever referenced. In situations where the equality test is not sufficiently defined, this class allows a map containing key/value pairs to operate correctly for most methods but fail in a well-defined manner for methods that depend on comparisons such as [CSimpleMap::FindVal](../../atl/reference/csimplemap-class.md#csimplemap__findval).  
   
 ## Requirements  
  **Header:** atlsimpcoll.h  
@@ -99,10 +99,3 @@ static bool IsEqualValue(const TVal&,  const TVal&);
 ## See Also  
  [CSimpleMapEqualHelper Class](../../atl/reference/csimplemapequalhelper-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

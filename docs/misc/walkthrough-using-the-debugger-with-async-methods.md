@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Using the Debugger with Async Methods | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -22,6 +22,7 @@ helpviewer_keywords:
   - "Step Out command, within async method"
 ms.assetid: 5adb2531-3f09-4b7e-8baa-29de80abee6e
 caps.latest.revision: 23
+author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 translation.priority.ht: 
@@ -57,7 +58,7 @@ By using the Async feature, you can call into asynchronous methods without using
 >  An async method returns to the caller when either it encounters the first awaited object that’s not yet complete or it reaches the end of the async method, whichever occurs first.  
   
 > [!NOTE]
->  The console apps in these examples use <xref:System.Threading.Tasks.Task.Wait*> method to prevent the application from terminating in `Main`. You shouldn’t use the <xref:System.Threading.Tasks.Task.Wait*> method outside of console applications  because a deadlock situation can occur.  
+>  The console apps in these examples use <xref:System.Threading.Tasks.Task.Wait%2A> method to prevent the application from terminating in `Main`. You shouldn’t use the <xref:System.Threading.Tasks.Task.Wait%2A> method outside of console applications  because a deadlock situation can occur.  
   
  The following procedure sets breakpoints to demonstrate what happens when the application reaches an await statement. You can also demonstrate the control flow by adding `Debug.WriteLine` statements.  
   

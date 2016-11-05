@@ -1,7 +1,7 @@
 ---
 title: "CDefaultCompareTraits Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CDefaultCompareTraits class"
 ms.assetid: a17e2740-e7b4-48f2-aeb7-c80ce84b63f7
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -58,8 +58,8 @@ template<typename T>  class CDefaultCompareTraits
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDefaultCompareTraits::CompareElements](../Topic/CDefaultCompareTraits::CompareElements.md)|(Static) Call this function to compare two elements for equality.|  
-|[CDefaultCompareTraits::CompareElementsOrdered](../Topic/CDefaultCompareTraits::CompareElementsOrdered.md)|(Static) Call this function to determine the greater and lesser element.|  
+|[CDefaultCompareTraits::CompareElements](#cdefaultcomparetraits__compareelements)|(Static) Call this function to compare two elements for equality.|  
+|[CDefaultCompareTraits::CompareElementsOrdered](#cdefaultcomparetraits__compareelementsordered)|(Static) Call this function to determine the greater and lesser element.|  
   
 ## Remarks  
  This class contains two static functions for comparing elements stored in a collection class object. This class is utilized by the [CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md).  
@@ -117,10 +117,3 @@ static int CompareElementsOrdered(const T& element1,  const T& element2);
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

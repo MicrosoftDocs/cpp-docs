@@ -1,7 +1,7 @@
 ---
 title: "_ATL_WIN_MODULE70 Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "_ATL_WIN_MODULE70 structure"
   - "ATL_WIN_MODULE70 structure"
 ms.assetid: a0aaf3ea-ca77-46ec-bd53-4dfb61dffbea
-caps.latest.revision: 14
+caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -44,12 +44,11 @@ Used by windowing code in ATL.
 ## Syntax  
   
 ```
-struct _ATL_WIN_MODULE70{  UNIT cbSize;  CRITICAL_SECTION m_csWindowCreate;
-
+struct _ATL_WIN_MODULE70 {
+    UNIT cbSize; 
+    CRITICAL_SECTION m_csWindowCreate;
     _AtlCreateWndData* m_pCreateWndList;
-
     CSimpleArray<ATOM> m_rgWindowClassAtoms;
-
 };
 ```  
   

@@ -1,7 +1,7 @@
 ---
 title: "IPointerInactiveImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ helpviewer_keywords:
   - "inactive objects"
   - "IPointerInactiveImpl class"
 ms.assetid: e1fe9ea6-d38a-4527-9112-eb344771e0b7
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -60,9 +60,9 @@ class IPointerInactiveImpl
   
 |Name|Description|  
 |----------|-----------------|  
-|[IPointerInactiveImpl::GetActivationPolicy](../Topic/IPointerInactiveImpl::GetActivationPolicy.md)|Retrieves the current activation policy for the object. The ATL implementation returns **E_NOTIMPL**.|  
-|[IPointerInactiveImpl::OnInactiveMouseMove](../Topic/IPointerInactiveImpl::OnInactiveMouseMove.md)|Notifies the object that the mouse pointer has moved over it, indicating the object can fire mouse events. The ATL implementation returns **E_NOTIMPL**.|  
-|[IPointerInactiveImpl::OnInactiveSetCursor](../Topic/IPointerInactiveImpl::OnInactiveSetCursor.md)|Sets the mouse pointer for the inactive object. The ATL implementation returns **E_NOTIMPL**.|  
+|[IPointerInactiveImpl::GetActivationPolicy](#ipointerinactiveimpl__getactivationpolicy)|Retrieves the current activation policy for the object. The ATL implementation returns **E_NOTIMPL**.|  
+|[IPointerInactiveImpl::OnInactiveMouseMove](#ipointerinactiveimpl__oninactivemousemove)|Notifies the object that the mouse pointer has moved over it, indicating the object can fire mouse events. The ATL implementation returns **E_NOTIMPL**.|  
+|[IPointerInactiveImpl::OnInactiveSetCursor](#ipointerinactiveimpl__oninactivesetcursor)|Sets the mouse pointer for the inactive object. The ATL implementation returns **E_NOTIMPL**.|  
   
 ## Remarks  
  An inactive object is one that is simply loaded or running. Unlike an active object, an inactive object cannot receive Windows mouse and keyboard messages. Thus, inactive objects use fewer resources and are typically more efficient.  
@@ -131,10 +131,3 @@ HRESULT OnInactiveSetCursor(
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

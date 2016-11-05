@@ -1,7 +1,7 @@
 ---
 title: "CComGITPtr Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComGITPtr class"
 ms.assetid: af895acb-525a-4555-bb67-b241b7df515b
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -58,31 +58,31 @@ template <class T>  class CComGITPtr
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComGITPtr::CComGITPtr](../Topic/CComGITPtr::CComGITPtr.md)|The constructor.|  
-|[CComGITPtr::~CComGITPtr](../Topic/CComGITPtr::~CComGITPtr.md)|The destructor.|  
+|[CComGITPtr::CComGITPtr](#ccomgitptr__ccomgitptr)|The constructor.|  
+|[CComGITPtr::~CComGITPtr](#ccomgitptr___dtorccomgitptr)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComGITPtr::Attach](/visual-studio/profiling/attach)|Call this method to register the interface pointer in the global interface table (GIT).|  
-|[CComGITPtr::CopyTo](../Topic/CComGITPtr::CopyTo.md)|Call this method to copy the interface from the global interface table (GIT) to the passed pointer.|  
-|[CComGITPtr::Detach](/visual-studio/profiling/detach)|Call this method to disassociate the interface from the `CComGITPtr` object.|  
-|[CComGITPtr::GetCookie](../Topic/CComGITPtr::GetCookie.md)|Call this method to return the cookie from the `CComGITPtr` object.|  
-|[CComGITPtr::Revoke](../Topic/CComGITPtr::Revoke.md)|Call this method to remove the interface from the global interface table (GIT).|  
+|[CComGITPtr::Attach](#ccomgitptr__attach)|Call this method to register the interface pointer in the global interface table (GIT).|  
+|[CComGITPtr::CopyTo](#ccomgitptr__copyto)|Call this method to copy the interface from the global interface table (GIT) to the passed pointer.|  
+|[CComGITPtr::Detach](#ccomgitptr__detach)|Call this method to disassociate the interface from the `CComGITPtr` object.|  
+|[CComGITPtr::GetCookie](#ccomgitptr__getcookie)|Call this method to return the cookie from the `CComGITPtr` object.|  
+|[CComGITPtr::Revoke](#ccomgitptr__revoke)|Call this method to remove the interface from the global interface table (GIT).|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComGITPtr::operator DWORD](../Topic/CComGITPtr::operator%20DWORD.md)|Returns the cookie from the `CComGITPtr` object.|  
-|[CComGITPtr::operator =](../Topic/CComGITPtr::operator%20=.md)|Assignment operator.|  
+|[CComGITPtr::operator DWORD](#ccomgitptr__operator_dword)|Returns the cookie from the `CComGITPtr` object.|  
+|[CComGITPtr::operator =](#ccomgitptr__operator__eq)|Assignment operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComGITPtr::m_dwCookie](../Topic/CComGITPtr::m_dwCookie.md)|The cookie.|  
+|[CComGITPtr::m_dwCookie](#ccomgitptr__m_dwcookie)|The cookie.|  
   
 ## Remarks  
  Objects that aggregate the free threaded marshaler and need to use interface pointers obtained from other objects must take extra steps to ensure that the interfaces are correctly marshaled. Typically this involves storing the interface pointers in the GIT and getting the pointer from the GIT each time it is used. The class `CComGITPtr` is provided to help you use interface pointers stored in the GIT.  
@@ -155,7 +155,7 @@ CComGITPtr(CComGITPtr&& rv);
 ```  
   
 ### Remarks  
- Removes the interface from the global interface table (GIT), using [CComGITPtr::Revoke](../Topic/CComGITPtr::Revoke.md).  
+ Removes the interface from the global interface table (GIT), using [CComGITPtr::Revoke](#ccomgitptr__revoke).  
   
 ##  <a name="ccomgitptr__copyto"></a>  CComGITPtr::CopyTo  
  Call this method to copy the interface from the global interface table (GIT) to the passed pointer.  
@@ -185,7 +185,7 @@ DWORD Detach() throw();
  Returns the cookie from the `CComGITPtr` object.  
   
 ### Remarks  
- It is up to the caller to remove the interface from the GIT, using [CComGITPtr::Revoke](../Topic/CComGITPtr::Revoke.md).  
+ It is up to the caller to remove the interface from the GIT, using [CComGITPtr::Revoke](#ccomgitptr__revoke).  
   
 ##  <a name="ccomgitptr__getcookie"></a>  CComGITPtr::GetCookie  
  Call this method to return the cookie from the `CComGITPtr` object.  
@@ -269,10 +269,3 @@ HRESULT Revoke() throw();
  [Accessing Interfaces Across Apartments](http://msdn.microsoft.com/library/windows/desktop/ms682353)   
  [When to Use the Global Interface Table](http://msdn.microsoft.com/library/windows/desktop/ms693729)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

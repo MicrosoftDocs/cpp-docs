@@ -1,7 +1,7 @@
 ---
 title: "Return to Visual Studio to sign in to the IDE  with your new Microsoft account! | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""

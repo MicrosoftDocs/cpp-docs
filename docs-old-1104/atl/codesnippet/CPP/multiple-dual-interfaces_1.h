@@ -1,0 +1,1 @@
+      COM_INTERFACE_ENTRY2(IDispatch, IMyDualInterface)

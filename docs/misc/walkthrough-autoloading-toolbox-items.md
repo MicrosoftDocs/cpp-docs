@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Autoloading Toolbox Items | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -375,14 +375,14 @@ This walkthrough illustrates how a managed VSPackage can use reflection to autom
  In this walkthrough, the VSPackage is configured to provide only **Toolbox** controls that support the default Clipboard format. For a list of default Clipboard formats, see [Extending the Toolbox](../misc/extending-the-toolbox.md). If you want to support other Clipboard formats, or decide not to support a default format, apply the attribute <xref:Microsoft.VisualStudio.Shell.ProvideToolboxFormatAttribute> to the `LoadToolboxMembersPackage` class. For more information about registering a **Toolbox** control provider, see [Advanced Toolbox Control Development](../misc/advanced-toolbox-control-development.md).  
   
 ### Adding Controls to the Toolbox  
- The functionality in `CreateItemList` emulates what is available in <xref:System.Drawing.Design.ToolboxService.System#Drawing#Design#IToolboxService#GetToolboxItems*>.  
+ The functionality in `CreateItemList` emulates what is available in <xref:System.Drawing.Design.ToolboxService.System%23Drawing%23Design%23IToolboxService%23GetToolboxItems%2A>.  
   
  The `CreateItemList` method only examines non-abstract <xref:System.Type> objects that implement the <xref:System.ComponentModel.IComponent> interfaces.  
   
 ## Next Steps  
- Using <xref:System.Drawing.Design.ToolboxService.System#Drawing#Design#IToolboxService#GetToolboxItems*> rather than `CreateItemList` would make the product of this walkthrough more robust.  
+ Using <xref:System.Drawing.Design.ToolboxService.System%23Drawing%23Design%23IToolboxService%23GetToolboxItems%2A> rather than `CreateItemList` would make the product of this walkthrough more robust.  
   
- You could also modify `CreateItemList` to use <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource*> to load controls into the **Toolbox** based on a text list that is embedded in the `LoadToolboxMembers` assembly.  
+ You could also modify `CreateItemList` to use <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource%2A> to load controls into the **Toolbox** based on a text list that is embedded in the `LoadToolboxMembers` assembly.  
   
 ## See Also  
  [Extending the Toolbox](../misc/extending-the-toolbox.md)   

@@ -1,7 +1,7 @@
 ---
 title: "Debugging and Error Reporting Global Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -14,7 +14,7 @@ dev_langs:
 helpviewer_keywords: 
   - "functions [ATL], error reporting"
 ms.assetid: 11339c02-98cd-428d-b3b9-7deeb155a6a3
-caps.latest.revision: 16
+caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -215,6 +215,10 @@ inline void AtlThrowLastWin32();
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)   
  [Debugging and Error Reporting Macros](../../atl/reference/debugging-and-error-reporting-macros.md)
+
+
+
+
 
 
 

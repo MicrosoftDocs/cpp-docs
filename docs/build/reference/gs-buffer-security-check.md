@@ -1,7 +1,7 @@
 ---
 title: "-GS (Buffer Security Check) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -142,7 +142,7 @@ struct { int a; int b; };
   
 #### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BufferSecurityCheck*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BufferSecurityCheck%2A>.  
   
 ## Example  
  This sample overruns a buffer. This causes the application to fail at runtime.  

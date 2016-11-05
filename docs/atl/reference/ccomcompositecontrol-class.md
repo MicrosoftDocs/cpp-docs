@@ -1,7 +1,7 @@
 ---
 title: "CComCompositeControl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -21,7 +21,7 @@ helpviewer_keywords:
   - "CComCompositeControl class"
   - "composite controls, CComCompositeControl class"
 ms.assetid: 1304b931-27e8-4fbc-be8e-bb226ad887fb
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -62,25 +62,25 @@ template <class T>  class CComCompositeControl :  public CComControl<T,CAxDialog
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCompositeControl::CComCompositeControl](../Topic/CComCompositeControl::CComCompositeControl.md)|The constructor.|  
-|[CComCompositeControl::~CComCompositeControl](../Topic/CComCompositeControl::~CComCompositeControl.md)|The destructor.|  
+|[CComCompositeControl::CComCompositeControl](#ccomcompositecontrol__ccomcompositecontrol)|The constructor.|  
+|[CComCompositeControl::~CComCompositeControl](#ccomcompositecontrol___dtorccomcompositecontrol)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCompositeControl::AdviseSinkMap](../Topic/CComCompositeControl::AdviseSinkMap.md)|Call this method to advise or unadvise all controls hosted by the composite control.|  
-|[CComCompositeControl::CalcExtent](../Topic/CComCompositeControl::CalcExtent.md)|Call this method to calculate the size in **HIMETRIC** units of the dialog resource used to host the composite control.|  
-|[CComCompositeControl::Create](../Topic/CComCompositeControl::Create.md)|This method is called to create the control window for the composite control.|  
-|[CComCompositeControl::CreateControlWindow](../Topic/CComCompositeControl::CreateControlWindow.md)|Call this method to create the control window and advise any hosted control.|  
-|[CComCompositeControl::SetBackgroundColorFromAmbient](../Topic/CComCompositeControl::SetBackgroundColorFromAmbient.md)|Call this method to set the background color of the composite control using the container's background color.|  
+|[CComCompositeControl::AdviseSinkMap](#ccomcompositecontrol__advisesinkmap)|Call this method to advise or unadvise all controls hosted by the composite control.|  
+|[CComCompositeControl::CalcExtent](#ccomcompositecontrol__calcextent)|Call this method to calculate the size in **HIMETRIC** units of the dialog resource used to host the composite control.|  
+|[CComCompositeControl::Create](#ccomcompositecontrol__create)|This method is called to create the control window for the composite control.|  
+|[CComCompositeControl::CreateControlWindow](#ccomcompositecontrol__createcontrolwindow)|Call this method to create the control window and advise any hosted control.|  
+|[CComCompositeControl::SetBackgroundColorFromAmbient](#ccomcompositecontrol__setbackgroundcolorfromambient)|Call this method to set the background color of the composite control using the container's background color.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCompositeControl::m_hbrBackground](../Topic/CComCompositeControl::m_hbrBackground.md)|The background brush.|  
-|[CComCompositeControl::m_hWndFocus](../Topic/CComCompositeControl::m_hWndFocus.md)|The handle of the window that currently has focus.|  
+|[CComCompositeControl::m_hbrBackground](#ccomcompositecontrol__m_hbrbackground)|The background brush.|  
+|[CComCompositeControl::m_hWndFocus](#ccomcompositecontrol__m_hwndfocus)|The handle of the window that currently has focus.|  
   
 ## Remarks  
  Classes derived from class `CComCompositeControl` inherit the functionality of an ActiveX composite control. ActiveX controls derived from `CComCompositeControl` are hosted by a standard dialog box. These types of controls are called composite controls because they are able to host other controls (native Windows controls and ActiveX controls).  
@@ -95,7 +95,7 @@ template <class T>  class CComCompositeControl :  public CComControl<T,CAxDialog
  A control implemented by a `CComCompositeControl`-derived class has default tabbing behavior built in. When the control receives focus by being tabbed to in a containing application, successively pressing the TAB key will cause the focus to be cycled through all of the composite control's contained controls, then out of the composite control and on to the next item in the tab order of the container. The tab order of the hosted controls is determined by the dialog resource and determines the order in which tabbing will occur.  
   
 > [!NOTE]
->  In order for accelerators to work properly with a `CComCompositeControl`, it is necessary to load an accelerator table as the control is created, pass the handle and number of accelerators back into [IOleControlImpl::GetControlInfo](../Topic/IOleControlImpl::GetControlInfo.md), and finally destroy the table when the control is released.  
+>  In order for accelerators to work properly with a `CComCompositeControl`, it is necessary to load an accelerator table as the control is created, pass the handle and number of accelerators back into [IOleControlImpl::GetControlInfo](../../atl/reference/iolecontrolimpl-class.md#iolecontrolimpl__getcontrolinfo), and finally destroy the table when the control is released.  
   
 ## Example  
  [!code-cpp[NVC_ATL_COM#14](../../atl/codesnippet/CPP/ccomcompositecontrol-class_2.h)]  
@@ -195,7 +195,7 @@ CComCompositeControl();
 ```  
   
 ### Remarks  
- Initializes the [CComCompositeControl::m_hbrBackground](../Topic/CComCompositeControl::m_hbrBackground.md) and [CComCompositeControl::m_hWndFocus](../Topic/CComCompositeControl::m_hWndFocus.md) data members to NULL.  
+ Initializes the [CComCompositeControl::m_hbrBackground](#ccomcompositecontrol__m_hbrbackground) and [CComCompositeControl::m_hWndFocus](#ccomcompositecontrol__m_hwndfocus) data members to NULL.  
   
 ##  <a name="ccomcompositecontrol___dtorccomcompositecontrol"></a>  CComCompositeControl::~CComCompositeControl  
  The destructor.  
@@ -226,7 +226,7 @@ virtual HWND CreateControlWindow(HWND hWndParent,
  Returns a handle to the newly created composite control dialog box.  
   
 ### Remarks  
- This method calls [CComCompositeControl::Create](../Topic/CComCompositeControl::Create.md) and [CComCompositeControl::AdviseSinkMap](../Topic/CComCompositeControl::AdviseSinkMap.md).  
+ This method calls [CComCompositeControl::Create](#ccomcompositecontrol__create) and [CComCompositeControl::AdviseSinkMap](#ccomcompositecontrol__advisesinkmap).  
   
 ##  <a name="ccomcompositecontrol__m_hbrbackground"></a>  CComCompositeControl::m_hbrBackground  
  The background brush.  
@@ -256,10 +256,3 @@ HRESULT SetBackgroundColorFromAmbient();
  [CComControl Class](../../atl/reference/ccomcontrol-class.md)   
  [Composite Control Fundamentals](../../atl/atl-composite-control-fundamentals.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

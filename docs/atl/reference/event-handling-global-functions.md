@@ -1,7 +1,7 @@
 ---
 title: "Event Handling Global Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "event handling, global functions"
   - "global functions, event handling"
 ms.assetid: fd674470-3def-47c3-be1c-894fa85f13e8
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -67,8 +67,3 @@ BOOL
   
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)
-
-
-
-
-

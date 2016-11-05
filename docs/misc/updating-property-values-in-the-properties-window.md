@@ -1,7 +1,7 @@
 ---
 title: "Updating Property Values in the Properties Window | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,9 +40,9 @@ There are two ways to keep the **Properties** window in sync with property value
   
 1.  Call <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (through <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> service) any time that VSPackages, projects, or editors need to create or enumerate tool or document windows.  
   
-2.  Implement <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser*> to keep the **Properties** window in sync with property changes for a project (or any other selected object being browsed by the **Properties** window) without implementing <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> and firing <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged*> events.  
+2.  Implement <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> to keep the **Properties** window in sync with property changes for a project (or any other selected object being browsed by the **Properties** window) without implementing <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> and firing <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> events.  
   
-3.  Implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> methods <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents*> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents*> to establish and disable, respectively, client notification of hierarchy events without requiring the hierarchy to implement <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.  
+3.  Implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> methods <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A> to establish and disable, respectively, client notification of hierarchy events without requiring the hierarchy to implement <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.  
   
 ## Updating Property Values Using IConnection  
  The second way to keep the **Properties** window in sync with property value changes is to implement `IConnection` on the connectable object to indicate the existence of the outgoing interfaces. If you wish to localize the property name, derive your object from <xref:System.ComponentModel.ICustomTypeDescriptor>. The <xref:System.ComponentModel.ICustomTypeDescriptor> implementation can modify the property descriptors it returns and change the name of a property. To localize the description, create an attribute which derives from <xref:System.ComponentModel.DescriptionAttribute> and override the Description property.  
@@ -53,7 +53,7 @@ There are two ways to keep the **Properties** window in sync with property value
   
 2.  Any browse object is responsible for implementing an <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> event. The **Properties** window will advise for the event set through `IConnection`.  
   
-3.  A connection point controls how many connections (one or more) it allows in its implementation of <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise*>. A connection point that allows only one interface can return <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> from the <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.EnumConnections*> method.  
+3.  A connection point controls how many connections (one or more) it allows in its implementation of <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A>. A connection point that allows only one interface can return <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> from the <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.EnumConnections%2A> method.  
   
 4.  A client can call the `IConnection` interface to obtain access to an enumerator sub-object with the <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interface. The <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interface can then be called to enumerate connection points for each outgoing interface ID (IID).  
   

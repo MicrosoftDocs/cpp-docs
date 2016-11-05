@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting Exceptions: System.Net.Mail.SmtpException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -34,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Troubleshooting Exceptions: System.Net.Mail.SmtpException
-The exception that is thrown when the <xref:System.Net.Mail.SmtpClient> is not able to send a <xref:System.Net.Mail.SmtpClient.Send*> or <xref:System.Net.Mail.SmtpClient.SendAsync*> message.  
+The exception that is thrown when the <xref:System.Net.Mail.SmtpClient> is not able to send a <xref:System.Net.Mail.SmtpClient.Send%2A> or <xref:System.Net.Mail.SmtpClient.SendAsync%2A> message.  
   
 ## See Also  
  <xref:System.Net.Mail.SmtpException>   

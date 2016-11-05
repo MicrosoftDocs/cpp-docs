@@ -1,7 +1,7 @@
 ---
 title: "CDynamicChain Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ helpviewer_keywords:
   - "chaining message maps"
   - "CDynamicChain class"
 ms.assetid: f084b2be-0e77-4836-973d-ae278a1e9da8
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -57,16 +57,16 @@ class CDynamicChain
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDynamicChain::CDynamicChain](../Topic/CDynamicChain::CDynamicChain.md)|The constructor.|  
-|[CDynamicChain::~CDynamicChain](../Topic/CDynamicChain::~CDynamicChain.md)|The destructor.|  
+|[CDynamicChain::CDynamicChain](#cdynamicchain__cdynamicchain)|The constructor.|  
+|[CDynamicChain::~CDynamicChain](#cdynamicchain___dtorcdynamicchain)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDynamicChain::CallChain](../Topic/CDynamicChain::CallChain.md)|Directs a Windows message to another object's message map.|  
-|[CDynamicChain::RemoveChainEntry](../Topic/CDynamicChain::RemoveChainEntry.md)|Removes a message map entry from the collection.|  
-|[CDynamicChain::SetChainEntry](../Topic/CDynamicChain::SetChainEntry.md)|Adds a message map entry to the collection or modifies an existing entry.|  
+|[CDynamicChain::CallChain](#cdynamicchain__callchain)|Directs a Windows message to another object's message map.|  
+|[CDynamicChain::RemoveChainEntry](#cdynamicchain__removechainentry)|Removes a message map entry from the collection.|  
+|[CDynamicChain::SetChainEntry](#cdynamicchain__setchainentry)|Adds a message map entry to the collection or modifies an existing entry.|  
   
 ## Remarks  
  `CDynamicChain` manages a collection of message maps, enabling a Windows message to be directed, at run time, to another object's message map.  
@@ -131,7 +131,7 @@ BOOL CallChain(DWORD dwChainID,
 ### Remarks  
  For the window procedure to invoke `CallChain`, you must specify the [CHAIN_MSG_MAP_DYNAMIC](../Topic/CHAIN_MSG_MAP_DYNAMIC.md) macro in your message map. For an example, see the [CDynamicChain](../../atl/reference/cdynamicchain-class.md) overview.  
   
- `CallChain` requires a previous call to [SetChainEntry](../Topic/CDynamicChain::SetChainEntry.md) to associate the `dwChainID` value with an object and its message map.  
+ `CallChain` requires a previous call to [SetChainEntry](#cdynamicchain__setchainentry) to associate the `dwChainID` value with an object and its message map.  
   
 ##  <a name="cdynamicchain__cdynamicchain"></a>  CDynamicChain::CDynamicChain  
  The constructor.  
@@ -159,7 +159,7 @@ BOOL RemoveChainEntry(DWORD dwChainID);
   
 ### Parameters  
  `dwChainID`  
- [in] The unique identifier associated with the chained object and its message map. You originally define this value through a call to [SetChainEntry](../Topic/CDynamicChain::SetChainEntry.md).  
+ [in] The unique identifier associated with the chained object and its message map. You originally define this value through a call to [SetChainEntry](#cdynamicchain__setchainentry).  
   
 ### Return Value  
  **TRUE** if the message map is successfully removed from the collection. Otherwise, **FALSE**.  
@@ -192,10 +192,3 @@ BOOL SetChainEntry(DWORD dwChainID,
 ## See Also  
  [CWindowImpl Class](../../atl/reference/cwindowimpl-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

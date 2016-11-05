@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 1) CS1911 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1911"
 ms.assetid: 95e8a7a0-1c19-4930-a7e9-3ae4060e97d3
 caps.latest.revision: 5
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

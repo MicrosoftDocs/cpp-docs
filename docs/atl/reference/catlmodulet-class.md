@@ -1,7 +1,7 @@
 ---
 title: "CAtlModuleT Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAtlModuleT class"
 ms.assetid: 9b74d02f-9117-47b1-a05e-c5945f83dd2b
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -60,18 +60,18 @@ template <class T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlModuleT::CAtlModuleT](../Topic/CAtlModuleT::CAtlModuleT.md)|The constructor.|  
+|[CAtlModuleT::CAtlModuleT](#catlmodulet__catlmodulet)|The constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlModuleT::InitLibId](../Topic/CAtlModuleT::InitLibId.md)|Initializes the data member containing the GUID of the current module.|  
-|[CAtlModuleT::RegisterAppId](../Topic/CAtlModuleT::RegisterAppId.md)|Adds the EXE to the registry.|  
-|[CAtlModuleT::RegisterServer](../Topic/CAtlModuleT::RegisterServer.md)|Adds the service to the registry.|  
-|[CAtlModuleT::UnregisterAppId](../Topic/CAtlModuleT::UnregisterAppId.md)|Removes the EXE from the registry.|  
-|[CAtlModuleT::UnregisterServer](../Topic/CAtlModuleT::UnregisterServer.md)|Removes the service from the registry.|  
-|[CAtlModuleT::UpdateRegistryAppId](../Topic/CAtlModuleT::UpdateRegistryAppId.md)|Updates the EXE information in the registry.|  
+|[CAtlModuleT::InitLibId](#catlmodulet__initlibid)|Initializes the data member containing the GUID of the current module.|  
+|[CAtlModuleT::RegisterAppId](#catlmodulet__registerappid)|Adds the EXE to the registry.|  
+|[CAtlModuleT::RegisterServer](#catlmodulet__registerserver)|Adds the service to the registry.|  
+|[CAtlModuleT::UnregisterAppId](#catlmodulet__unregisterappid)|Removes the EXE from the registry.|  
+|[CAtlModuleT::UnregisterServer](#catlmodulet__unregisterserver)|Removes the service from the registry.|  
+|[CAtlModuleT::UpdateRegistryAppId](#catlmodulet__updateregistryappid)|Updates the EXE information in the registry.|  
   
 ## Remarks  
  `CAtlModuleT`, derived from [CAtlModule](../../atl/reference/catlmodule-class.md), implements an Executable (EXE) or a Service (EXE) ATL module. An Executable module is a local, out-of-process server, whereas a Service module is a Windows application that runs in the background when Windows starts.  
@@ -96,7 +96,7 @@ CAtlModuleT() throw();
 ```  
   
 ### Remarks  
- Calls [CAtlModuleT::InitLibId](../Topic/CAtlModuleT::InitLibId.md).  
+ Calls [CAtlModuleT::InitLibId](#catlmodulet__initlibid).  
   
 ##  <a name="catlmodulet__initlibid"></a>  CAtlModuleT::InitLibId  
  Initializes the data member containing the GUID of the current module.  
@@ -106,7 +106,7 @@ static void InitLibId() throw();
 ```  
   
 ### Remarks  
- Called by the constructor [CAtlModuleT::CAtlModuleT](../Topic/CAtlModuleT::CAtlModuleT.md).  
+ Called by the constructor [CAtlModuleT::CAtlModuleT](#catlmodulet__catlmodulet).  
   
 ##  <a name="catlmodulet__registerappid"></a>  CAtlModuleT::RegisterAppId  
  Adds the EXE to the registry.  
@@ -184,10 +184,3 @@ static HRESULT WINAPI UpdateRegistryAppId(BOOL  /* bRegister*/) throw();
  [CAtlModule Class](../../atl/reference/catlmodule-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Module Classes](../../atl/atl-module-classes.md)
-
-
-
-
-
-
-

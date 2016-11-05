@@ -1,7 +1,7 @@
 ---
 title: "-WINMDDELAYSIGN (Partially Sign a winmd) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

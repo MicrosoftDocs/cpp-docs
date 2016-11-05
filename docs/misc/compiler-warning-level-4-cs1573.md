@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 4) CS1573 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1573"
 ms.assetid: 1b68cb1a-9bfd-4343-b9b6-8ce195af5e23
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

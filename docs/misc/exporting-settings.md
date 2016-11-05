@@ -1,7 +1,7 @@
 ---
 title: "Exporting Settings | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -59,12 +59,12 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] integrated devel
   
 2.  Ensure that the class that implements the settings obtains correct state information. This procedure is specific to each VSPackage, and may involve obtaining state from automation, querying registry keys, or querying the VSPackage.  
   
-     Typically, as in the following example, use the implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage*> method to validate and stage VSPackage state information.  
+     Typically, as in the following example, use the implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A> method to validate and stage VSPackage state information.  
   
     > [!NOTE]
-    >  The <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage*> method is also called by the IDE when it initializes the VSPackage that it supports.  
+    >  The <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A> method is also called by the IDE when it initializes the VSPackage that it supports.  
   
-     In this case, the implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage*> method does these things:  
+     In this case, the implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A> method does these things:  
   
     -   Obtains access to the state information in the VSPackage current configuration and configuration information stored in the registry.  
   
@@ -102,11 +102,11 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] integrated devel
   
 3.  Ensure that the class that implements the settings also persists the state to disk.  
   
-     The actual writing of state information to the settings disk file must always be performed by the class implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml*> method. The specifics of a settings writer operation depend on the implementation.  
+     The actual writing of state information to the settings disk file must always be performed by the class implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml%2A> method. The specifics of a settings writer operation depend on the implementation.  
   
      However, the class must obtain access to state information and must use the supplied <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsWriter> interface to save data to the setting file.  
   
-     Typically, as in the following example, the implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml*> method does not validate state information. The validation is performed in the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage*> method. Instead, the implementation merely obtains access to the state information and writes it, in this case, as string data.  
+     Typically, as in the following example, the implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml%2A> method does not validate state information. The validation is performed in the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A> method. Instead, the implementation merely obtains access to the state information and writes it, in this case, as string data.  
   
     ```vb#  
     Dim mySvc As MyPackageService = TryCast(GetService(GetType(MyPackage)), MyPackageService)   
@@ -135,19 +135,19 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] integrated devel
   
      Implementation details are as follows:  
   
-    -   In addition to data explicitly written and transparent to the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings*> method implementation, the settings API also saves [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] version information. Therefore, saved settings can be compared against the version of the IDE that generated them during settings importation.  
+    -   In addition to data explicitly written and transparent to the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> method implementation, the settings API also saves [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] version information. Therefore, saved settings can be compared against the version of the IDE that generated them during settings importation.  
   
     -   The value of the `pszSettingName` argument supplied to a method of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsWriter> interface must uniquely identify each data element saved in a settings category.  
   
         > [!NOTE]
         >  Names must only be unique within the scope of the implementing class. The IDE uses the GUID of the class that implements the settings and the value of `pszSettingName` to identify each saved setting. If more than one <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsWriter> method that have the same `pszSettingName` value are called, the original value is overwritten in the settings file.  
   
-    -   The settings file supports random data access, so the order of read and write operations is not important. In the following example, the order of writer operations in the implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml*> method is opposite of the read operations in the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml*> method.  
+    -   The settings file supports random data access, so the order of read and write operations is not important. In the following example, the order of writer operations in the implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml%2A> method is opposite of the read operations in the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml%2A> method.  
   
     -   If the implementation can map data into one of the four supported formats, then there is no restriction on how much or what type of data can be written.  
   
         > [!NOTE]
-        >  The division of labor between the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage*> and <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml*> methods depends on the implementation and is somewhat arbitrary. For example, the implementation could be rewritten by using an empty implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage*> method and by having all registry and state queries performed in the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml*> method.  
+        >  The division of labor between the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A> and <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml%2A> methods depends on the implementation and is somewhat arbitrary. For example, the implementation could be rewritten by using an empty implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A> method and by having all registry and state queries performed in the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml%2A> method.  
   
 4.  Register the settings implementing class as providing support to a VSPackage.  
   

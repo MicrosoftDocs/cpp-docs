@@ -1,7 +1,7 @@
 ---
 title: "At least one reference is missing the &#39;Name&#39; attribute | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

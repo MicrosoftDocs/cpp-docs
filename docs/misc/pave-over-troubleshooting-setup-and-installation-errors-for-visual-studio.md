@@ -1,7 +1,7 @@
 ---
 title: "PAVE OVER Troubleshooting Setup and Installation Errors for Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,4 +40,4 @@ Use the following resources to find assistance with troubleshooting setup and in
 -   [Microsoft Support for Visual Studio](http://go.microsoft.com/fwlink/?LinkID=251019) website. Read knowledge base (KB) articles and learn how to contact Microsoft Support for information about issues with Visual Studio installation.  
   
 ## See Also  
- [Installing Visual Studio 2015](/visual-studio/install/installing-visual-studio-2015)
+ [Installing Visual Studio 2015](../Topic/Installing%20Visual%20Studio%202015.md)

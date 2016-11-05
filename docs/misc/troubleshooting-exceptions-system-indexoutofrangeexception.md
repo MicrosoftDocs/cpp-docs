@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting Exceptions: System.IndexOutOfRangeException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -48,7 +48,7 @@ An <xref:System.IndexOutOfRangeException> exception is thrown when an attempt is
  This exception will be thrown if the index is less than zero.  
   
  **Make sure data column names are correct.**  
- This exception may be thrown if the data column name being supplied to the <xref:System.Data.DataView.Sort*?displayProperty=fullName> property is not valid. For more information, see the <xref:System.Data.DataView> class.  
+ This exception may be thrown if the data column name being supplied to the <xref:System.Data.DataView.Sort%2A?displayProperty=fullName> property is not valid. For more information, see the <xref:System.Data.DataView> class.  
   
 ## Example  
   

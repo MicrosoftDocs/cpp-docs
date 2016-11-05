@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting Exceptions: System.Collections.Generic.KeyNotFoundException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,7 +40,7 @@ A <xref:System.Collections.Generic.KeyNotFoundException> is thrown when an attem
  This exception occurs when an operation attempts to retrieve an element in a collection using a key that does not exist in that collection.  
   
 ### Remarks  
- The <xref:System.Collections.Generic.Dictionary`2.ContainsKey*> method can be used to determine whether a key exists.  
+ The <xref:System.Collections.Generic.Dictionary%602.ContainsKey%2A> method can be used to determine whether a key exists.  
   
 ## See Also  
  <xref:System.Collections.Generic>   

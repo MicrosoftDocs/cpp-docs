@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting Exceptions: System.CannotUnloadAppDomainException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -48,7 +48,7 @@ A <xref:System.CannotUnloadAppDomainException> exception is thrown when there is
   
 ## Associated Tips  
  **Make sure you are not trying to unload the application domain that is the default, has a running thread, or that has already been unloaded.**  
- Any of these conditions will cause this exception to be thrown. For more information, see <xref:System.AppDomain.Unload*>.  
+ Any of these conditions will cause this exception to be thrown. For more information, see <xref:System.AppDomain.Unload%2A>.  
   
 ## See Also  
  <xref:System.CannotUnloadAppDomainException>   

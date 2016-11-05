@@ -1,7 +1,7 @@
 ---
 title: "CComContainedObject Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ helpviewer_keywords:
   - "aggregation [C++], ATL objects"
   - "CComContainedObject class"
 ms.assetid: e8616b41-c200-47b8-bf2c-fb9f713ebdad
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -59,17 +59,17 @@ template<class Base>  class CComContainedObject :  public Base
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComContainedObject::CComContainedObject](../Topic/CComContainedObject::CComContainedObject.md)|The constructor. Initializes the member pointer to the owner object's `IUnknown`.|  
-|[CComContainedObject::~CComContainedObject](../Topic/CComContainedObject::~CComContainedObject.md)|The destructor.|  
+|[CComContainedObject::CComContainedObject](#ccomcontainedobject__ccomcontainedobject)|The constructor. Initializes the member pointer to the owner object's `IUnknown`.|  
+|[CComContainedObject::~CComContainedObject](#ccomcontainedobject___dtorccomcontainedobject)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComContainedObject::AddRef](../Topic/CComContainedObject::AddRef.md)|Increments the reference count on the owner object.|  
-|[CComContainedObject::GetControllingUnknown](../Topic/CComContainedObject::GetControllingUnknown.md)|Retrieves the owner object's `IUnknown`.|  
-|[CComContainedObject::QueryInterface](../Topic/CComContainedObject::QueryInterface.md)|Retrieves a pointer to the interface requested on the owner object.|  
-|[CComContainedObject::Release](../Topic/CComContainedObject::Release.md)|Decrements the reference count on the owner object.|  
+|[CComContainedObject::AddRef](#ccomcontainedobject__addref)|Increments the reference count on the owner object.|  
+|[CComContainedObject::GetControllingUnknown](#ccomcontainedobject__getcontrollingunknown)|Retrieves the owner object's `IUnknown`.|  
+|[CComContainedObject::QueryInterface](#ccomcontainedobject__queryinterface)|Retrieves a pointer to the interface requested on the owner object.|  
+|[CComContainedObject::Release](#ccomcontainedobject__release)|Decrements the reference count on the owner object.|  
   
 ## Remarks  
  ATL uses `CComContainedObject` in classes [CComAggObject](../../atl/reference/ccomaggobject-class.md), [CComPolyObject](../../atl/reference/ccompolyobject-class.md), and [CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md). `CComContainedObject` implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) by delegating to the owner object's **IUnknown**. (The owner is either the outer object of an aggregation, or the object for which a tear-off interface is being created.) `CComContainedObject` calls `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`, and `OuterRelease`, all inherited through `Base`.  
@@ -165,10 +165,3 @@ STDMETHOD_(ULONG, Release)();
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

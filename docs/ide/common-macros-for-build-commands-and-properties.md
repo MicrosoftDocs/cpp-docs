@@ -1,7 +1,7 @@
 ---
 title: "Common Macros for Build Commands and Properties | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -166,7 +166,7 @@ Depending on your installation options, Visual Studio can make hundreds of macro
 |**$(FrameworkDir)**|The directory into which the .NET Framework was installed.|  
 |**$(FrameworkVersion)**|The version of the .NET Framework used by Visual Studio. Combined with **$(FrameworkDir)**, the full path to the version of the .NET Framework use by Visual Studio.|  
 |**$(FrameworkSDKDir)**|The directory into which you installed the .NET Framework. The .NET Framework could have been installed as part of Visual Studio or separately.|  
-|**$(WebDeployPath)**|The relative path from the web deployment root to where the project outputs belong. Returns the same value as <xref:Microsoft.VisualStudio.VCProjectEngine.VCWebDeploymentTool.RelativePath*>.|  
+|**$(WebDeployPath)**|The relative path from the web deployment root to where the project outputs belong. Returns the same value as <xref:Microsoft.VisualStudio.VCProjectEngine.VCWebDeploymentTool.RelativePath%2A>.|  
 |**$(WebDeployRoot)**|The absolute path to the location of **\<localhost>**. For example, c:\inetpub\wwwroot.|  
 |**$(SafeParentName)**|(Deprecated.) The name of the immediate parent in valid name format. For example, a form is the parent of a .resx file.|  
 |**$(SafeInputName)**|(Deprecated.) The name of the file as a valid class name, minus file extension.|  

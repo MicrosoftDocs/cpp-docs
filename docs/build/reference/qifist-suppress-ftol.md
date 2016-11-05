@@ -1,7 +1,7 @@
 ---
 title: "-QIfist (Suppress _ftol) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -83,7 +83,7 @@ Suppresses the call of the helper function `_ftol` when a conversion from a floa
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
   
 ## See Also  
  [/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)   

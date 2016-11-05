@@ -1,7 +1,7 @@
 ---
 title: "CComSimpleThreadAllocator Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -21,7 +21,7 @@ helpviewer_keywords:
   - "CComSimpleThreadAllocator class"
   - "ATL threads, allocating"
 ms.assetid: 66b2166a-8c50-49fd-b8e4-7f293470327d
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -55,7 +55,7 @@ class CComSimpleThreadAllocator
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComSimpleThreadAllocator::GetThread](../Topic/CComSimpleThreadAllocator::GetThread.md)|Selects a thread.|  
+|[CComSimpleThreadAllocator::GetThread](#ccomsimplethreadallocator__getthread)|Selects a thread.|  
   
 ## Remarks  
  `CComSimpleThreadAllocator` manages thread selection for [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md). `CComSimpleThreadAllocator::GetThread` simply cycles through each thread and returns the next one in the sequence.  
@@ -84,15 +84,8 @@ int GetThread(
 ### Remarks  
  You can override `GetThread` to provide a different method of selection or to make use of the `pApt` parameter.  
   
- `GetThread` is called by [CComAutoThreadModule::CreateInstance](../Topic/CComAutoThreadModule::CreateInstance.md).  
+ `GetThread` is called by [CComAutoThreadModule::CreateInstance](../../atl/reference/ccomautothreadmodule-class.md#ccomautothreadmodule__createinstance).  
   
 ## See Also  
  [CComApartment Class](../../atl/reference/ccomapartment-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

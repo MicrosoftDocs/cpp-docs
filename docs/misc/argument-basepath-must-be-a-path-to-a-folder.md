@@ -38,7 +38,7 @@ The argument `BasePath` must consist of a path to a folder. You may be parsing a
 -   Check the value you are supplying for `BasePath` to make sure it is a valid path to a folder.  
   
 ## See Also  
- <xref:System.CodeDom.Compiler.TempFileCollection.BasePath*>   
- <xref:System.Resources.ResXResourceWriter.BasePath*>   
- <xref:System.Resources.ResXResourceReader.BasePath*>   
+ <xref:System.CodeDom.Compiler.TempFileCollection.BasePath%2A>   
+ <xref:System.Resources.ResXResourceWriter.BasePath%2A>   
+ <xref:System.Resources.ResXResourceReader.BasePath%2A>   
  [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)

@@ -1,7 +1,7 @@
 ---
 title: "___setlc_active_func, ___unguarded_readlc_active_add_func | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

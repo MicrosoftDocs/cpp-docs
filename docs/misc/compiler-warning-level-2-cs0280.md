@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 2) CS0280 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0280"
 ms.assetid: 9b453478-92aa-4fd2-9b87-780fd138603a
 caps.latest.revision: 13
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,9 +39,9 @@ translation.priority.mt:
 # Compiler Warning (level 2) CS0280
 'type' does not implement the 'pattern name' pattern. 'method name' has the wrong signature.  
   
- Two statements in C#, **foreach** and **using**, rely on predefined patterns, "collection" and "resource" respectively. This warning occurs when the compiler cannot match one of these statements to its pattern due to a method's incorrect signature. For example, the "collection" pattern requires that there be a method called <xref:System.Collections.IEnumerator.MoveNext*> which takes no parameters and returns a `boolean`. Your code might contain a <xref:System.Collections.IEnumerator.MoveNext*> method that has a parameter or perhaps returns an object.  
+ Two statements in C#, **foreach** and **using**, rely on predefined patterns, "collection" and "resource" respectively. This warning occurs when the compiler cannot match one of these statements to its pattern due to a method's incorrect signature. For example, the "collection" pattern requires that there be a method called <xref:System.Collections.IEnumerator.MoveNext%2A> which takes no parameters and returns a `boolean`. Your code might contain a <xref:System.Collections.IEnumerator.MoveNext%2A> method that has a parameter or perhaps returns an object.  
   
- The "resource" pattern and `using` provide another example. The "resource" pattern requires the <xref:System.IDisposable.Dispose*> method; if you define a property with the same name, you will get this warning.  
+ The "resource" pattern and `using` provide another example. The "resource" pattern requires the <xref:System.IDisposable.Dispose%2A> method; if you define a property with the same name, you will get this warning.  
   
  To resolve this warning, ensure that the method signatures in your type match the signatures of the corresponding methods in the pattern, and ensure that you have no properties with the same name as a method required by the pattern.  
   

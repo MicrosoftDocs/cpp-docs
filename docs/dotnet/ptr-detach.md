@@ -1,7 +1,7 @@
 ---
 title: "ptr::Detach | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -53,7 +53,7 @@ _interface_type * Detach();
  If no object is owned, NULL is returned.  
   
 ## Exceptions  
- Internally, `QueryInterface` is called on the owned COM object and any error `HRESULT` is converted to an exception by <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR*>.  
+ Internally, `QueryInterface` is called on the owned COM object and any error `HRESULT` is converted to an exception by <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>.  
   
 ## Remarks  
  `Detach` first adds a reference to the COM object on behalf of the caller and then releases all references owned by the `com::ptr`.  The caller must ultimately release the returned object to destroy it.  

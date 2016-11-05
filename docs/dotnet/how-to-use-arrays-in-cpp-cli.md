@@ -1,7 +1,7 @@
 ---
 title: "How to: Use Arrays in C++-CLI | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -554,7 +554,7 @@ int main() {
 ## Sorting arrays by using custom criteria  
  To sort arrays that contain basic intrinsic types, just call the `Array::Sort` method. However, to sort arrays that contain complex types or to override the default sort criteria, override the [IComparable::CompareTo](https://msdn.microsoft.com/en-us/library/system.icomparable.compareto.aspx) method.  
   
- In the following example, a structure named `Element` is derived from <xref:System.IComparable>, and written to provide a <xref:System.IComparable.CompareTo*> method that uses the average of two integers as the sort criterion.  
+ In the following example, a structure named `Element` is derived from <xref:System.IComparable>, and written to provide a <xref:System.IComparable.CompareTo%2A> method that uses the average of two integers as the sort criterion.  
   
 ```  
 using namespace System;  

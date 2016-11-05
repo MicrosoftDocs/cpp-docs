@@ -1,7 +1,7 @@
 ---
 title: "Operators Reference | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -39,8 +39,8 @@ translation.priority.ht:
   
 ||||  
 |-|-|-|  
-|[*](../../assembler/masm/operator-multiply.md)|[+](../../assembler/masm/operator-add.md)|[-](../../assembler/masm/operator-dot-2.md)|  
-|[.](../Topic/operator%20..md)|[/](../../assembler/masm/operator-dot-1.md)|[&#91;&#93;](../../assembler/masm/operator.md)|  
+|[*](../../assembler/masm/operator-multiply.md)|[+](../../assembler/masm/operator-add.md)|[-](../../assembler/masm/operator-subtract-2.md)|  
+|[.](../Topic/operator%20..md)|[/](../../assembler/masm/operator-subtract-1.md)|[&#91;&#93;](../../assembler/masm/operator.md)|  
 |[MOD](../../assembler/masm/operator-mod.md)|||  
   
 ### Control Flow  

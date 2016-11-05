@@ -1,7 +1,7 @@
 ---
 title: "CStringElementTraits Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CStringElementTraits class"
 ms.assetid: 74d7134b-099d-4455-bf91-3e68ccbf95bc
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -59,18 +59,18 @@ template <typename   T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CStringElementTraits::INARGTYPE](../Topic/CStringElementTraits::INARGTYPE.md)|The data type to use for adding elements to the collection class object.|  
-|[CStringElementTraits::OUTARGTYPE](../Topic/CStringElementTraits::OUTARGTYPE.md)|The data type to use for retrieving elements from the collection class object.|  
+|[CStringElementTraits::INARGTYPE](#cstringelementtraits__inargtype)|The data type to use for adding elements to the collection class object.|  
+|[CStringElementTraits::OUTARGTYPE](#cstringelementtraits__outargtype)|The data type to use for retrieving elements from the collection class object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CStringElementTraits::CompareElements](../Topic/CStringElementTraits::CompareElements.md)|(Static) Call this function to compare two string elements for equality.|  
-|[CStringElementTraits::CompareElementsOrdered](../Topic/CStringElementTraits::CompareElementsOrdered.md)|(Static) Call this function to compare two string elements.|  
-|[CStringElementTraits::CopyElements](../Topic/CStringElementTraits::CopyElements.md)|(Static) Call this function to copy `CString` elements stored in a collection class object.|  
-|[CStringElementTraits::Hash](../Topic/CStringElementTraits::Hash.md)|(Static) Call this function to calculate a hash value for the given string element.|  
-|[CStringElementTraits::RelocateElements](../Topic/CStringElementTraits::RelocateElements.md)|(Static) Call this function to relocate `CString` elements stored in a collection class object.|  
+|[CStringElementTraits::CompareElements](#cstringelementtraits__compareelements)|(Static) Call this function to compare two string elements for equality.|  
+|[CStringElementTraits::CompareElementsOrdered](#cstringelementtraits__compareelementsordered)|(Static) Call this function to compare two string elements.|  
+|[CStringElementTraits::CopyElements](#cstringelementtraits__copyelements)|(Static) Call this function to copy `CString` elements stored in a collection class object.|  
+|[CStringElementTraits::Hash](#cstringelementtraits__hash)|(Static) Call this function to calculate a hash value for the given string element.|  
+|[CStringElementTraits::RelocateElements](#cstringelementtraits__relocateelements)|(Static) Call this function to relocate `CString` elements stored in a collection class object.|  
   
 ## Remarks  
  This class provides static functions for copying, moving, and comparing strings and for creating a hash value. These functions are useful when using a collection class to store string-based data. Use [CStringElementTraitsI](../../atl/reference/cstringelementtraitsi-class.md) when case-insensitive comparisons are required. Use [CStringRefElementTraits](../../atl/reference/cstringrefelementtraits-class.md) when the string objects are to be dealt with as references.  
@@ -196,10 +196,3 @@ static void RelocateElements(
  [CElementTraitsBase Class](../../atl/reference/celementtraitsbase-class.md)   
  [CStringElementTraitsI Class](../../atl/reference/cstringelementtraitsi-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "One or more projects failed to convert. These projects are now unloaded and marked as unavailable in Solution Explorer. Reload those projects to determine the cause. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

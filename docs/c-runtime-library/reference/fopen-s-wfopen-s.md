@@ -1,7 +1,7 @@
 ---
 title: "fopen_s, _wfopen_s | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -316,7 +316,7 @@ Number of files closed by _fcloseall: 1
   
 -   [System::IO::File::Open](https://msdn.microsoft.com/en-us/library/system.io.file.open.aspx)  
   
--   <xref:System.IO.FileStream.#ctor*>  
+-   <xref:System.IO.FileStream.%23ctor%2A>  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

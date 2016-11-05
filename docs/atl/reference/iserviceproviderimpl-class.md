@@ -1,7 +1,7 @@
 ---
 title: "IServiceProviderImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -21,7 +21,7 @@ helpviewer_keywords:
   - "IServiceProviderImpl class"
   - "IServiceProvider interface, ATL implementation"
 ms.assetid: 251254d3-c4ce-40d7-aee0-3d676d1d72f2
-caps.latest.revision: 21
+caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -59,12 +59,12 @@ template <class T>   class ATL_NO_VTABLE IServiceProviderImpl :  public IService
   
 |Name|Description|  
 |----------|-----------------|  
-|[IServiceProviderImpl::QueryService](../Topic/IServiceProviderImpl::QueryService.md)|Creates or accesses the specified service and returns an interface pointer to the specified interface for the service.|  
+|[IServiceProviderImpl::QueryService](#iserviceproviderimpl__queryservice)|Creates or accesses the specified service and returns an interface pointer to the specified interface for the service.|  
   
 ## Remarks  
  The `IServiceProvider` interface locates a service specified by its GUID and returns the interface pointer for the requested interface on the service. Class `IServiceProviderImpl` provides a default implementation of this interface.  
   
- **IServiceProviderImpl** specifies one method: [QueryService](../Topic/IServiceProviderImpl::QueryService.md), which creates or accesses the specified service and returns an interface pointer to the specified interface for the service.  
+ **IServiceProviderImpl** specifies one method: [QueryService](#iserviceproviderimpl__queryservice), which creates or accesses the specified service and returns an interface pointer to the specified interface for the service.  
   
  `IServiceProviderImpl` uses a service map, starting with [BEGIN_SERVICE_MAP](../Topic/BEGIN_SERVICE_MAP.md) and ending with [END_SERVICE_MAP](../Topic/END_SERVICE_MAP.md).  
   
@@ -125,10 +125,3 @@ STDMETHOD(QueryService)(REFGUID guidService,
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

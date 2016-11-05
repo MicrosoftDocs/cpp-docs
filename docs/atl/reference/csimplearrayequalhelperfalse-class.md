@@ -1,7 +1,7 @@
 ---
 title: "CSimpleArrayEqualHelperFalse Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CSimpleArrayEqualHelperFalse class"
 ms.assetid: 6918af6f-d23d-49eb-8482-c44272f5ffeb
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -58,10 +58,10 @@ template <class T>   class CSimpleArrayEqualHelperFalse
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleArrayEqualHelperFalse::IsEqual](../Topic/CSimpleArrayEqualHelperFalse::IsEqual.md)|(Static) Returns false.|  
+|[CSimpleArrayEqualHelperFalse::IsEqual](#csimplearrayequalhelperfalse__isequal)|(Static) Returns false.|  
   
 ## Remarks  
- This traits class is a complement to the `CSimpleArray` class. It always returns false, and in addition, will call `ATLASSERT` with an argument of false if it is ever referenced. In situations where the equality test is not sufficiently defined, this class allows an array containing elements to operate correctly for most methods but fail in a well-defined manner for methods that depend on comparisons such as [CSimpleArray::Find](../Topic/CSimpleArray::Find.md).  
+ This traits class is a complement to the `CSimpleArray` class. It always returns false, and in addition, will call `ATLASSERT` with an argument of false if it is ever referenced. In situations where the equality test is not sufficiently defined, this class allows an array containing elements to operate correctly for most methods but fail in a well-defined manner for methods that depend on comparisons such as [CSimpleArray::Find](../../atl/reference/csimplearray-class.md#csimplearray__find).  
   
 ## Requirements  
  **Header:** atlsimpcoll.h  
@@ -82,10 +82,3 @@ static bool IsEqual(const T&,  const T&);
 ## See Also  
  [CSimpleArrayEqualHelper Class](../../atl/reference/csimplearrayequalhelper-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "_getdcwd_dbg, _wgetdcwd_dbg | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -127,7 +127,7 @@ wchar_t *_wgetdcwd_dbg(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## .NET Framework Equivalent  
- <xref:System.Environment.CurrentDirectory*?displayProperty=fullName>  
+ <xref:System.Environment.CurrentDirectory%2A?displayProperty=fullName>  
   
 ## See Also  
  [_getdcwd, _wgetdcwd](../../c-runtime-library/reference/getdcwd-wgetdcwd.md)   

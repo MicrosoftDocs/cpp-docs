@@ -1,7 +1,7 @@
 ---
 title: "The referenced component &#39;component&#39; could not be found. &lt;reason&gt; | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

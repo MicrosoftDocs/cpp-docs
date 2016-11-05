@@ -1,0 +1,1 @@
+	CMFCToolBar		m_wndToolBar;

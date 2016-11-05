@@ -1,7 +1,7 @@
 ---
 title: "How to: Marshal BSTR Strings for ADO.NET (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -43,10 +43,10 @@ Demonstrates how to add a COM string (`BSTR`) to a database and how to marshal a
   
  Note the private member of the DatabaseClass class: `gcroot<DataTable ^> table`. Since native types cannot contain managed types, the `gcroot` keyword is necessary. For more information on `gcroot`, see [How to: Declare Handles in Native Types](../dotnet/how-to-declare-handles-in-native-types.md).  
   
- The rest of the code in this example is native C++ code, as is indicated by the `#pragma unmanaged` directive preceding `main`. In this example, we are creating a new instance of DatabaseClass and calling its methods to create a table and populate some rows in the table. Note that COM strings are being passed as values for the database column StringCol. Inside DatabaseClass, these strings are marshaled to managed strings using the marshaling functionality found in the <xref:System.Runtime.InteropServices?displayProperty=fullName> namespace. Specifically, the method <xref:System.Runtime.InteropServices.Marshal.PtrToStringBSTR*> is used to marshal a `BSTR` to a <xref:System.String>, and the method <xref:System.Runtime.InteropServices.Marshal.StringToBSTR*> is used to marshal a <xref:System.String> to a `BSTR`.  
+ The rest of the code in this example is native C++ code, as is indicated by the `#pragma unmanaged` directive preceding `main`. In this example, we are creating a new instance of DatabaseClass and calling its methods to create a table and populate some rows in the table. Note that COM strings are being passed as values for the database column StringCol. Inside DatabaseClass, these strings are marshaled to managed strings using the marshaling functionality found in the <xref:System.Runtime.InteropServices?displayProperty=fullName> namespace. Specifically, the method <xref:System.Runtime.InteropServices.Marshal.PtrToStringBSTR%2A> is used to marshal a `BSTR` to a <xref:System.String>, and the method <xref:System.Runtime.InteropServices.Marshal.StringToBSTR%2A> is used to marshal a <xref:System.String> to a `BSTR`.  
   
 > [!NOTE]
->  The memory allocated by <xref:System.Runtime.InteropServices.Marshal.StringToBSTR*> must be deallocated by calling either <xref:System.Runtime.InteropServices.Marshal.FreeBSTR*> or `SysFreeString`.  
+>  The memory allocated by <xref:System.Runtime.InteropServices.Marshal.StringToBSTR%2A> must be deallocated by calling either <xref:System.Runtime.InteropServices.Marshal.FreeBSTR%2A> or `SysFreeString`.  
   
 ```  
 // adonet_marshal_string_bstr.cpp  

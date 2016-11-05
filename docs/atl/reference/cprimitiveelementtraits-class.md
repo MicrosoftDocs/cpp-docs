@@ -1,7 +1,7 @@
 ---
 title: "CPrimitiveElementTraits Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CPrimitiveElementTraits class"
 ms.assetid: 21c1cea8-2c5a-486c-b65c-85490f3ed4e6
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -59,8 +59,8 @@ template <typename   T> class CPrimitiveElementTraits :
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPrimitiveElementTraits::INARGTYPE](../Topic/CPrimitiveElementTraits::INARGTYPE.md)|The data type to use for adding elements to the collection class object.|  
-|[CPrimitiveElementTraits::OUTARGTYPE](../Topic/CPrimitiveElementTraits::OUTARGTYPE.md)|The data type to use for retrieving elements from the collection class object.|  
+|[CPrimitiveElementTraits::INARGTYPE](#cprimitiveelementtraits__inargtype)|The data type to use for adding elements to the collection class object.|  
+|[CPrimitiveElementTraits::OUTARGTYPE](#cprimitiveelementtraits__outargtype)|The data type to use for retrieving elements from the collection class object.|  
   
 ## Remarks  
  This class provides default static functions and methods for moving, copying, comparing, and hashing primitive data type elements stored in a collection class object.  
@@ -98,10 +98,3 @@ typedef T& OUTARGTYPE;
 ## See Also  
  [CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

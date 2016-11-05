@@ -1,7 +1,7 @@
 ---
 title: "COM Map Macros | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -14,7 +14,7 @@ dev_langs:
 helpviewer_keywords: 
   - "COM interfaces, COM map macros"
 ms.assetid: 0f33656d-321f-4996-90cc-9a7f21ab73c3
-caps.latest.revision: 15
+caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -38,23 +38,23 @@ These macros define COM interface maps.
   
 |||  
 |-|-|  
-|[BEGIN_COM_MAP](../Topic/BEGIN_COM_MAP.md)|Marks the beginning of the COM interface map entries.|  
+|[BEGIN_COM_MAP](#begin_com_map)|Marks the beginning of the COM interface map entries.|  
 |[COM_INTERFACE_ENTRY](../Topic/COM_INTERFACE_ENTRY%20Macros.md)|Enters interfaces into the COM interface map.|  
-|[COM_INTERFACE_ENTRY2](../Topic/COM_INTERFACE_ENTRY2.md)|Use this macro to disambiguate two branches of inheritance.|  
-|[COM_INTERFACE_ENTRY_IID](../Topic/COM_INTERFACE_ENTRY_IID.md)|Use this macro to enter the interface into the COM map and specify its IID.|  
-|[COM_INTERFACE_ENTRY2_IID](../Topic/COM_INTERFACE_ENTRY2_IID.md)|Same as [COM_INTERFACE_ENTRY2](../Topic/COM_INTERFACE_ENTRY2.md), except you can specify a different IID.|  
-|[COM_INTERFACE_ENTRY_AGGREGATE](../Topic/COM_INTERFACE_ENTRY_AGGREGATE.md)|When the interface identified by `iid` is queried for, `COM_INTERFACE_ENTRY_AGGREGATE` forwards to `punk`.|  
-|[COM_INTERFACE_ENTRY_AGGREGATE_BLIND](../Topic/COM_INTERFACE_ENTRY_AGGREGATE_BLIND.md)|Same as [COM_INTERFACE_ENTRY_AGGREGATE](../Topic/COM_INTERFACE_ENTRY_AGGREGATE.md), except that querying for any IID results in forwarding the query to `punk`.|  
-|[COM_INTERFACE_ENTRY_AUTOAGGREGATE](../Topic/COM_INTERFACE_ENTRY_AUTOAGGREGATE.md)|Same as [COM_INTERFACE_ENTRY_AGGREGATE](../Topic/COM_INTERFACE_ENTRY_AGGREGATE.md), except if `punk` is **NULL**, it automatically creates the aggregate described by the `clsid`.|  
-|[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../Topic/COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND.md)|Same as [COM_INTERFACE_ENTRY_AUTOAGGREGATE](../Topic/COM_INTERFACE_ENTRY_AUTOAGGREGATE.md), except that querying for any IID results in forwarding the query to `punk`, and if `punk` is **NULL**, automatically creating the aggregate described by the `clsid`.|  
-|[COM_INTERFACE_ENTRY_BREAK](../Topic/COM_INTERFACE_ENTRY_BREAK.md)|Causes your program to call [DebugBreak](http://msdn.microsoft.com/library/windows/desktop/ms679297) when the specified interface is queried for.|  
-|[COM_INTERFACE_ENTRY_CACHED_TEAR_OFF](../Topic/COM_INTERFACE_ENTRY_CACHED_TEAR_OFF.md)|Saves the interface-specific data for every instance.|  
-|[COM_INTERFACE_ENTRY_TEAR_OFF](../Topic/COM_INTERFACE_ENTRY_TEAR_OFF.md)|Exposes your tear-off interfaces.|  
-|[COM_INTERFACE_ENTRY_CHAIN](../Topic/COM_INTERFACE_ENTRY_CHAIN.md)|Processes the COM map of the base class when the processing reaches this entry in the COM map.|  
-|[COM_INTERFACE_ENTRY_FUNC](../Topic/COM_INTERFACE_ENTRY_FUNC.md)|A general mechanism for hooking into ATL's `QueryInterface` logic.|  
-|[COM_INTERFACE_ENTRY_FUNC_BLIND](../Topic/COM_INTERFACE_ENTRY_FUNC_BLIND.md)|Same as [COM_INTERFACE_ENTRY_FUNC](../Topic/COM_INTERFACE_ENTRY_FUNC.md), except that querying for any IID results in a call to `func`.|  
-|[COM_INTERFACE_ENTRY_NOINTERFACE](../Topic/COM_INTERFACE_ENTRY_NOINTERFACE.md)|Returns **E_NOINTERFACE** and terminates COM map processing when the specified interface is queried for.|  
-|[END_COM_MAP](../Topic/END_COM_MAP.md)|Marks the end of the COM interface map entries.|  
+|[COM_INTERFACE_ENTRY2](#com_interface_entry2)|Use this macro to disambiguate two branches of inheritance.|  
+|[COM_INTERFACE_ENTRY_IID](#com_interface_entry_iid)|Use this macro to enter the interface into the COM map and specify its IID.|  
+|[COM_INTERFACE_ENTRY2_IID](#com_interface_entry2_iid)|Same as [COM_INTERFACE_ENTRY2](#com_interface_entry2), except you can specify a different IID.|  
+|[COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)|When the interface identified by `iid` is queried for, `COM_INTERFACE_ENTRY_AGGREGATE` forwards to `punk`.|  
+|[COM_INTERFACE_ENTRY_AGGREGATE_BLIND](#com_interface_entry_aggregate_blind)|Same as [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), except that querying for any IID results in forwarding the query to `punk`.|  
+|[COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)|Same as [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), except if `punk` is **NULL**, it automatically creates the aggregate described by the `clsid`.|  
+|[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](#com_interface_entry_autoaggregate_blind)|Same as [COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate), except that querying for any IID results in forwarding the query to `punk`, and if `punk` is **NULL**, automatically creating the aggregate described by the `clsid`.|  
+|[COM_INTERFACE_ENTRY_BREAK](#com_interface_entry_break)|Causes your program to call [DebugBreak](http://msdn.microsoft.com/library/windows/desktop/ms679297) when the specified interface is queried for.|  
+|[COM_INTERFACE_ENTRY_CACHED_TEAR_OFF](#com_interface_entry_cached_tear_off)|Saves the interface-specific data for every instance.|  
+|[COM_INTERFACE_ENTRY_TEAR_OFF](#com_interface_entry_tear_off)|Exposes your tear-off interfaces.|  
+|[COM_INTERFACE_ENTRY_CHAIN](#com_interface_entry_chain)|Processes the COM map of the base class when the processing reaches this entry in the COM map.|  
+|[COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)|A general mechanism for hooking into ATL's `QueryInterface` logic.|  
+|[COM_INTERFACE_ENTRY_FUNC_BLIND](#com_interface_entry_func_blind)|Same as [COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func), except that querying for any IID results in a call to `func`.|  
+|[COM_INTERFACE_ENTRY_NOINTERFACE](#com_interface_entry_nointerface)|Returns **E_NOINTERFACE** and terminates COM map processing when the specified interface is queried for.|  
+|[END_COM_MAP](#end_com_map)|Marks the end of the COM interface map entries.|  
   
 ##  <a name="begin_com_map"></a>  BEGIN_COM_MAP  
  The COM map is the mechanism that exposes interfaces on an object to a client through `QueryInterface`.  
@@ -68,7 +68,7 @@ BEGIN_COM_MAP(x)
  [in] The name of the class object you are exposing interfaces on.  
   
 ### Remarks  
- [CComObjectRootEx::InternalQueryInterface](../Topic/CComObjectRootEx::InternalQueryInterface.md) only returns pointers for interfaces in the COM map. Start your interface map with the `BEGIN_COM_MAP` macro, add entries for each of your interfaces with the [COM_INTERFACE_ENTRY](../Topic/COM_INTERFACE_ENTRY%20\(ATL\).md) macro or one of its variants, and complete the map with the [END_COM_MAP](../Topic/END_COM_MAP.md) macro.  
+ [CComObjectRootEx::InternalQueryInterface](../Topic/CComObjectRootEx::InternalQueryInterface.md) only returns pointers for interfaces in the COM map. Start your interface map with the `BEGIN_COM_MAP` macro, add entries for each of your interfaces with the [COM_INTERFACE_ENTRY](../Topic/COM_INTERFACE_ENTRY%20\(ATL\).md) macro or one of its variants, and complete the map with the [END_COM_MAP](#end_com_map) macro.  
   
 ### Example  
  From the ATL [BEEPER](../../top/visual-cpp-samples.md) sample:  
@@ -121,7 +121,7 @@ COM_INTERFACE_ENTRY_IID(iid,   x)
  [!code-cpp[NVC_ATL_Windowing#117](../../atl/codesnippet/CPP/com-map-macros_3.h)]  
   
 ##  <a name="com_interface_entry2_iid"></a>  COM_INTERFACE_ENTRY2_IID  
- Same as [COM_INTERFACE_ENTRY2](../Topic/COM_INTERFACE_ENTRY2.md), except you can specify a different IID.  
+ Same as [COM_INTERFACE_ENTRY2](#com_interface_entry2), except you can specify a different IID.  
   
 ```
 COM_INTERFACE_ENTRY2_IID(iid,
@@ -187,7 +187,7 @@ COM_INTERFACE_ENTRY_AGGREGATE(iid, punk)
  [!code-cpp[NVC_ATL_Windowing#112](../../atl/codesnippet/CPP/com-map-macros_4.h)]  
   
 ##  <a name="com_interface_entry_aggregate_blind"></a>  COM_INTERFACE_ENTRY_AGGREGATE_BLIND  
- Same as [COM_INTERFACE_ENTRY_AGGREGATE](../Topic/COM_INTERFACE_ENTRY_AGGREGATE.md), except that querying for any IID results in forwarding the query to `punk`.  
+ Same as [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), except that querying for any IID results in forwarding the query to `punk`.  
   
 ```
 COM_INTERFACE_ENTRY_AGGREGATE_BLIND(punk)
@@ -228,7 +228,7 @@ COM_INTERFACE_ENTRY_AGGREGATE(iid,  punk)
  [!code-cpp[NVC_ATL_Windowing#112](../../atl/codesnippet/CPP/com-map-macros_4.h)]  
   
 ##  <a name="com_interface_entry_autoaggregate"></a>  COM_INTERFACE_ENTRY_AUTOAGGREGATE  
- Same as [COM_INTERFACE_ENTRY_AGGREGATE](../Topic/COM_INTERFACE_ENTRY_AGGREGATE.md), except if `punk` is **NULL**, it automatically creates the aggregate described by the `clsid`.  
+ Same as [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), except if `punk` is **NULL**, it automatically creates the aggregate described by the `clsid`.  
   
 ```
 COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid,
@@ -275,7 +275,7 @@ COM_INTERFACE_ENTRY_AGGREGATE(iid, punk)
  [!code-cpp[NVC_ATL_Windowing#112](../../atl/codesnippet/CPP/com-map-macros_4.h)]  
   
 ##  <a name="com_interface_entry_autoaggregate_blind"></a>  COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND  
- Same as [COM_INTERFACE_ENTRY_AUTOAGGREGATE](../Topic/COM_INTERFACE_ENTRY_AUTOAGGREGATE.md), except that querying for any IID results in forwarding the query to `punk`, and if `punk` is **NULL**, automatically creating the aggregate described by the `clsid`.  
+ Same as [COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate), except that querying for any IID results in forwarding the query to `punk`, and if `punk` is **NULL**, automatically creating the aggregate described by the `clsid`.  
   
 ```
 COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(punk, clsid)
@@ -297,7 +297,7 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(punk, clsid)
  [!code-cpp[NVC_ATL_Windowing#115](../../atl/codesnippet/CPP/com-map-macros_7.h)]  
   
 ##  <a name="com_interface_entry_autoaggregate2"></a>  COM_INTERFACE_ENTRY_AUTOAGGREGATE  
- Same as [COM_INTERFACE_ENTRY_AGGREGATE](../Topic/COM_INTERFACE_ENTRY_AGGREGATE.md), except if `punk` is **NULL**, it automatically creates the aggregate described by the `clsid`.  
+ Same as [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), except if `punk` is **NULL**, it automatically creates the aggregate described by the `clsid`.  
   
 ```
 COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid,
@@ -437,7 +437,7 @@ COM_INTERFACE_ENTRY_FUNC(iid,
  See [COM_INTERFACE_ENTRY Macros](../Topic/COM_INTERFACE_ENTRY%20Macros.md) for remarks about COM map entries.  
   
 ##  <a name="com_interface_entry_func_blind"></a>  COM_INTERFACE_ENTRY_FUNC_BLIND  
- Same as [COM_INTERFACE_ENTRY_FUNC](../Topic/COM_INTERFACE_ENTRY_FUNC.md), except that querying for any IID results in a call to `func`.  
+ Same as [COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func), except that querying for any IID results in a call to `func`.  
   
 ```
 COM_INTERFACE_ENTRY_FUNC_BLIND(dw,  func)
@@ -511,8 +511,3 @@ END_COM_MAP()
 ## See Also  
  [Macros](../../atl/reference/atl-macros.md)   
  [COM Map Global Functions](../../atl/reference/com-map-global-functions.md)
-
-
-
-
-

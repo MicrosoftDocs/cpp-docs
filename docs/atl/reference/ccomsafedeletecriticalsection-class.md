@@ -1,7 +1,7 @@
 ---
 title: "CComSafeDeleteCriticalSection Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComSafeDeleteCriticalSection class"
 ms.assetid: 4d2932c4-ba8f-48ec-8664-1db8bed01314
-caps.latest.revision: 17
+caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -52,27 +52,27 @@ class CComSafeDeleteCriticalSection : public CComCriticalSection
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComSafeDeleteCriticalSection::CComSafeDeleteCriticalSection](../Topic/CComSafeDeleteCriticalSection::CComSafeDeleteCriticalSection.md)|The constructor.|  
-|[CComSafeDeleteCriticalSection::~CComSafeDeleteCriticalSection](../Topic/CComSafeDeleteCriticalSection::~CComSafeDeleteCriticalSection.md)|The destructor.|  
+|[CComSafeDeleteCriticalSection::CComSafeDeleteCriticalSection](#ccomsafedeletecriticalsection__ccomsafedeletecriticalsection)|The constructor.|  
+|[CComSafeDeleteCriticalSection::~CComSafeDeleteCriticalSection](#ccomsafedeletecriticalsection___dtorccomsafedeletecriticalsection)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComSafeDeleteCriticalSection::Init](/visual-studio/debugger/init)|Creates and initializes a critical section object.|  
-|[CComSafeDeleteCriticalSection::Lock](../Topic/CComSafeDeleteCriticalSection::Lock.md)|Obtains ownership of the critical section object.|  
-|[CComSafeDeleteCriticalSection::Term](../Topic/CComSafeDeleteCriticalSection::Term.md)|Releases system resources used by the critical section object.|  
+|[CComSafeDeleteCriticalSection::Init](#ccomsafedeletecriticalsection__init)|Creates and initializes a critical section object.|  
+|[CComSafeDeleteCriticalSection::Lock](#ccomsafedeletecriticalsection__lock)|Obtains ownership of the critical section object.|  
+|[CComSafeDeleteCriticalSection::Term](#ccomsafedeletecriticalsection__term)|Releases system resources used by the critical section object.|  
   
 ### Data Members  
   
 |||  
 |-|-|  
-|[m_bInitialized](../Topic/CComSafeDeleteCriticalSection::m_bInitialized.md)|Flags whether the internal **CRITICAL_SECTION** object has been initialized.|  
+|[m_bInitialized](#ccomsafedeletecriticalsection__m_binitialized)|Flags whether the internal **CRITICAL_SECTION** object has been initialized.|  
   
 ## Remarks  
  `CComSafeDeleteCriticalSection` derives from the class [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md). However, `CComSafeDeleteCriticalSection` provides additional safety mechanisms over [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md).  
   
- When an instance of `CComSafeDeleteCriticalSection` goes out of scope or is explicitly deleted from memory, the underlying critical section object will automatically be cleaned up if it is still valid. In addition, the [CComSafeDeleteCriticalSection::Term](../Topic/CComSafeDeleteCriticalSection::Term.md) method will exit gracefully if the underlying critical section object has not yet been allocated or has already been released from memory.  
+ When an instance of `CComSafeDeleteCriticalSection` goes out of scope or is explicitly deleted from memory, the underlying critical section object will automatically be cleaned up if it is still valid. In addition, the [CComSafeDeleteCriticalSection::Term](#ccomsafedeletecriticalsection__term) method will exit gracefully if the underlying critical section object has not yet been allocated or has already been released from memory.  
   
  See [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) for more information on critical section helper classes.  
   
@@ -92,7 +92,7 @@ CComSafeDeleteCriticalSection();
 ```  
   
 ### Remarks  
- Sets the [m_bInitialized](../Topic/CComSafeDeleteCriticalSection::m_bInitialized.md) data member to **false**.  
+ Sets the [m_bInitialized](#ccomsafedeletecriticalsection__m_binitialized) data member to **false**.  
   
 ##  <a name="ccomsafedeletecriticalsection___dtorccomsafedeletecriticalsection"></a>  CComSafeDeleteCriticalSection::~CComSafeDeleteCriticalSection  
  The destructor.  
@@ -102,17 +102,17 @@ CComSafeDeleteCriticalSection();
 ```  
   
 ### Remarks  
- Releases the internal **CRITICAL_SECTION** object from memory if the [m_bInitialized](../Topic/CComSafeDeleteCriticalSection::m_bInitialized.md) data member is set to **true**.  
+ Releases the internal **CRITICAL_SECTION** object from memory if the [m_bInitialized](#ccomsafedeletecriticalsection__m_binitialized) data member is set to **true**.  
   
 ##  <a name="ccomsafedeletecriticalsection__init"></a>  CComSafeDeleteCriticalSection::Init  
- Calls the base class implementation of [Init](/visual-studio/debugger/init) and sets [m_bInitialized](../Topic/CComSafeDeleteCriticalSection::m_bInitialized.md) to **true** if successful.  
+ Calls the base class implementation of [Init](/visual-studio/debugger/init) and sets [m_bInitialized](#ccomsafedeletecriticalsection__m_binitialized) to **true** if successful.  
   
 ```
 HRESULT Init() throw();
 ```  
   
 ### Return Value  
- Returns the result of [CComCriticalSection::Init](/visual-studio/debugger/init).  
+ Returns the result of [CComCriticalSection::Init](../../atl/reference/ccomcriticalsection-class.md#ccomcriticalsection__init).  
   
 ##  <a name="ccomsafedeletecriticalsection__lock"></a>  CComSafeDeleteCriticalSection::Lock  
  Calls the base class implementation of [Lock](../Topic/CComCriticalSection::Lock.md).  
@@ -122,12 +122,12 @@ HRESULT Lock();
 ```  
   
 ### Return Value  
- Returns the result of [CComCriticalSection::Lock](../Topic/CComCriticalSection::Lock.md).  
+ Returns the result of [CComCriticalSection::Lock](../../atl/reference/ccomcriticalsection-class.md#ccomcriticalsection__lock).  
   
 ### Remarks  
- This method assumes the [m_bInitialized](../Topic/CComSafeDeleteCriticalSection::m_bInitialized.md) data member is set to **true** upon entry. An assertion is generated in Debug builds if this condidtion is not met.  
+ This method assumes the [m_bInitialized](#ccomsafedeletecriticalsection__m_binitialized) data member is set to **true** upon entry. An assertion is generated in Debug builds if this condidtion is not met.  
   
- For more information on the behavior of the function, refer to [CComCriticalSection::Lock](../Topic/CComCriticalSection::Lock.md).  
+ For more information on the behavior of the function, refer to [CComCriticalSection::Lock](../../atl/reference/ccomcriticalsection-class.md#ccomcriticalsection__lock).  
   
 ##  <a name="ccomsafedeletecriticalsection__m_binitialized"></a>  CComSafeDeleteCriticalSection::m_bInitialized  
  Flags whether the internal **CRITICAL_SECTION** object has been initialized.  
@@ -140,25 +140,18 @@ bool m_bInitialized;
  The **m_bInitialized** data member is used to track validity of the underlying **CRITICAL_SECTION** object associated with the [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md) class. The underlying **CRITICAL_SECTION** object will not be attempted to be released from memory if this flag is not set to **true**.  
   
 ##  <a name="ccomsafedeletecriticalsection__term"></a>  CComSafeDeleteCriticalSection::Term  
- Calls the base class implementation of [CComCriticalSection::Term](../Topic/CComCriticalSection::Term.md) if the internal **CRITICAL_SECTION** object is valid.  
+ Calls the base class implementation of [CComCriticalSection::Term](../../atl/reference/ccomcriticalsection-class.md#ccomcriticalsection__term) if the internal **CRITICAL_SECTION** object is valid.  
   
 ```
 HRESULT Term() throw();
 ```  
   
 ### Return Value  
- Returns the result of [CComCriticalSection::Term](../Topic/CComCriticalSection::Term.md), or **S_OK** if [m_bInitialized](../Topic/CComSafeDeleteCriticalSection::m_bInitialized.md) was set to **false** upon entry.  
+ Returns the result of [CComCriticalSection::Term](../../atl/reference/ccomcriticalsection-class.md#ccomcriticalsection__term), or **S_OK** if [m_bInitialized](#ccomsafedeletecriticalsection__m_binitialized) was set to **false** upon entry.  
   
 ### Remarks  
- It is safe to call this method even if the internal **CRITICAL_SECTION** object is not valid. The destructor of this class calls this method if the [m_bInitialized](../Topic/CComSafeDeleteCriticalSection::m_bInitialized.md) data member is set to **true**.  
+ It is safe to call this method even if the internal **CRITICAL_SECTION** object is not valid. The destructor of this class calls this method if the [m_bInitialized](#ccomsafedeletecriticalsection__m_binitialized) data member is set to **true**.  
   
 ## See Also  
  [CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

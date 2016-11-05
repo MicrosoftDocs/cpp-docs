@@ -1,7 +1,7 @@
 ---
 title: "ATL_DRAWINFO Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "ATL_DRAWINFO structure"
 ms.assetid: dd2e2aa8-e8c5-403b-b4df-35c0f6f57fb7
-caps.latest.revision: 15
+caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -43,10 +43,20 @@ Contains information used for rendering to various targets, such as a printer, m
 ## Syntax  
   
 ```
-struct ATL_DRAWINFO{  UINT cbSize;  DWORD dwDrawAspect;  LONG lindex;
-
-    DVTARGETDEVICE* ptd;  HDC hicTargetDev;  HDC hdcDraw;  LPCRECTL prcBounds;  LPCRECTL prcWBounds;  BOOL bOptimize;  BOOL bZoomed;  BOOL bRectInHimetric;  SIZEL ZoomNum;  SIZEL ZoomDen;
-
+struct ATL_DRAWINFO {
+    UINT cbSize;
+    DWORD dwDrawAspect;
+    LONG lindex;
+    DVTARGETDEVICE* ptd;
+    HDC hicTargetDev;
+    HDC hdcDraw;
+    LPCRECTL prcBounds;
+    LPCRECTL prcWBounds;
+    BOOL bOptimize;
+    BOOL bZoomed;
+    BOOL bRectInHimetric;
+    SIZEL ZoomNum;
+    SIZEL ZoomDen;
 };
 ```  
   

@@ -1,7 +1,7 @@
 ---
 title: "CAtlComModule Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAtlComModule class"
 ms.assetid: af5dd71a-a0d1-4a2e-9a24-154a03381c75
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -52,17 +52,17 @@ class CAtlComModule :  public _ATL_COM_MODULE
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlComModule::CAtlComModule](../Topic/CAtlComModule::CAtlComModule.md)|The constructor.|  
-|[CAtlComModule::~CAtlComModule](../Topic/CAtlComModule::~CAtlComModule.md)|The destructor.|  
+|[CAtlComModule::CAtlComModule](#catlcommodule__catlcommodule)|The constructor.|  
+|[CAtlComModule::~CAtlComModule](#catlcommodule___dtorcatlcommodule)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlComModule::RegisterServer](../Topic/CAtlComModule::RegisterServer.md)|Call this method to update the system registry for each object in the object map.|  
-|[CAtlComModule::RegisterTypeLib](../Topic/CAtlComModule::RegisterTypeLib.md)|Call this method to register a type library.|  
-|[CAtlComModule::UnregisterServer](../Topic/CAtlComModule::UnregisterServer.md)|Call this method to unregister each object in the object map.|  
-|[CAtlComModule::UnRegisterTypeLib](../Topic/CAtlComModule::UnRegisterTypeLib.md)|Call this method to unregister a type library.|  
+|[CAtlComModule::RegisterServer](#catlcommodule__registerserver)|Call this method to update the system registry for each object in the object map.|  
+|[CAtlComModule::RegisterTypeLib](#catlcommodule__registertypelib)|Call this method to register a type library.|  
+|[CAtlComModule::UnregisterServer](#catlcommodule__unregisterserver)|Call this method to unregister each object in the object map.|  
+|[CAtlComModule::UnRegisterTypeLib](#catlcommodule__unregistertypelib)|Call this method to unregister a type library.|  
   
 ## Remarks  
  `CAtlComModule` implements a COM server module, allowing a client to access the module's components.  
@@ -178,10 +178,3 @@ HRESULT UnRegisterTypeLib(LPCTSTR lpszIndex);
 ## See Also  
  [_ATL_COM_MODULE](../Topic/_ATL_COM_MODULE.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

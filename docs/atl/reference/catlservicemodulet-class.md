@@ -1,7 +1,7 @@
 ---
 title: "CAtlServiceModuleT Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAtlServiceModuleT class"
 ms.assetid: 8fc753ce-4a50-402b-9b4a-0a4ce5dd496c
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -62,44 +62,44 @@ template <class T,  UINT nServiceNameID>  class ATL_NO_VTABLE CAtlServiceModuleT
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlServiceModuleT::CAtlServiceModuleT](../Topic/CAtlServiceModuleT::CAtlServiceModuleT.md)|The constructor.|  
+|[CAtlServiceModuleT::CAtlServiceModuleT](#catlservicemodulet__catlservicemodulet)|The constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlServiceModuleT::Handler](../Topic/CAtlServiceModuleT::Handler.md)|The handler routine for the service.|  
-|[CAtlServiceModuleT::InitializeSecurity](../Topic/CAtlServiceModuleT::InitializeSecurity.md)|Provides the default security settings for the service.|  
-|[CAtlServiceModuleT::Install](../Topic/CAtlServiceModuleT::Install.md)|Installs and creates the service.|  
-|[CAtlServiceModuleT::IsInstalled](../Topic/CAtlServiceModuleT::IsInstalled.md)|Confirms that the service has been installed.|  
-|[CAtlServiceModuleT::LogEvent](../Topic/CAtlServiceModuleT::LogEvent.md)|Writes to the event log.|  
-|[CAtlServiceModuleT::OnContinue](../Topic/CAtlServiceModuleT::OnContinue.md)|Override this method to continue the service.|  
-|[CAtlServiceModuleT::OnInterrogate](../Topic/CAtlServiceModuleT::OnInterrogate.md)|Override this method to interrogate the service.|  
-|[CAtlServiceModuleT::OnPause](../Topic/CAtlServiceModuleT::OnPause.md)|Override this method to pause the service.|  
-|[CAtlServiceModuleT::OnShutdown](../Topic/CAtlServiceModuleT::OnShutdown.md)|Override this method to shut down the service|  
-|[CAtlServiceModuleT::OnStop](../Topic/CAtlServiceModuleT::OnStop.md)|Override this method to stop the service|  
-|[CAtlServiceModuleT::OnUnknownRequest](../Topic/CAtlServiceModuleT::OnUnknownRequest.md)|Override this method to handle unknown requests to the service|  
-|[CAtlServiceModuleT::ParseCommandLine](../Topic/CAtlServiceModuleT::ParseCommandLine.md)|Parses the command line and performs registration if necessary.|  
-|[CAtlServiceModuleT::PreMessageLoop](../Topic/CAtlServiceModuleT::PreMessageLoop.md)|This method is called immediately before entering the message loop.|  
-|[CAtlServiceModuleT::RegisterAppId](../Topic/CAtlServiceModuleT::RegisterAppId.md)|Registers the service in the registry.|  
-|[CAtlServiceModuleT::Run](../Topic/CAtlServiceModuleT::Run.md)|Runs the service.|  
-|[CAtlServiceModuleT::ServiceMain](../Topic/CAtlServiceModuleT::ServiceMain.md)|The method called by the Service Control Manager.|  
-|[CAtlServiceModuleT::SetServiceStatus](../Topic/CAtlServiceModuleT::SetServiceStatus.md)|Updates the service status.|  
-|[CAtlServiceModuleT::Start](/visual-studio/profiling/start)|Called by `CAtlServiceModuleT::WinMain` when the service starts.|  
-|[CAtlServiceModuleT::Uninstall](../Topic/CAtlServiceModuleT::Uninstall.md)|Stops and removes the service.|  
-|[CAtlServiceModuleT::Unlock](../Topic/CAtlServiceModuleT::Unlock.md)|Decrements the service's lock count.|  
-|[CAtlServiceModuleT::UnregisterAppId](../Topic/CAtlServiceModuleT::UnregisterAppId.md)|Removes the service from the registry.|  
-|[CAtlServiceModuleT::WinMain](../Topic/CAtlServiceModuleT::WinMain.md)|This method implements the code required to run the service.|  
+|[CAtlServiceModuleT::Handler](#catlservicemodulet__handler)|The handler routine for the service.|  
+|[CAtlServiceModuleT::InitializeSecurity](#catlservicemodulet__initializesecurity)|Provides the default security settings for the service.|  
+|[CAtlServiceModuleT::Install](#catlservicemodulet__install)|Installs and creates the service.|  
+|[CAtlServiceModuleT::IsInstalled](#catlservicemodulet__isinstalled)|Confirms that the service has been installed.|  
+|[CAtlServiceModuleT::LogEvent](#catlservicemodulet__logevent)|Writes to the event log.|  
+|[CAtlServiceModuleT::OnContinue](#catlservicemodulet__oncontinue)|Override this method to continue the service.|  
+|[CAtlServiceModuleT::OnInterrogate](#catlservicemodulet__oninterrogate)|Override this method to interrogate the service.|  
+|[CAtlServiceModuleT::OnPause](#catlservicemodulet__onpause)|Override this method to pause the service.|  
+|[CAtlServiceModuleT::OnShutdown](#catlservicemodulet__onshutdown)|Override this method to shut down the service|  
+|[CAtlServiceModuleT::OnStop](#catlservicemodulet__onstop)|Override this method to stop the service|  
+|[CAtlServiceModuleT::OnUnknownRequest](#catlservicemodulet__onunknownrequest)|Override this method to handle unknown requests to the service|  
+|[CAtlServiceModuleT::ParseCommandLine](#catlservicemodulet__parsecommandline)|Parses the command line and performs registration if necessary.|  
+|[CAtlServiceModuleT::PreMessageLoop](#catlservicemodulet__premessageloop)|This method is called immediately before entering the message loop.|  
+|[CAtlServiceModuleT::RegisterAppId](#catlservicemodulet__registerappid)|Registers the service in the registry.|  
+|[CAtlServiceModuleT::Run](#catlservicemodulet__run)|Runs the service.|  
+|[CAtlServiceModuleT::ServiceMain](#catlservicemodulet__servicemain)|The method called by the Service Control Manager.|  
+|[CAtlServiceModuleT::SetServiceStatus](#catlservicemodulet__setservicestatus)|Updates the service status.|  
+|[CAtlServiceModuleT::Start](#catlservicemodulet__start)|Called by `CAtlServiceModuleT::WinMain` when the service starts.|  
+|[CAtlServiceModuleT::Uninstall](#catlservicemodulet__uninstall)|Stops and removes the service.|  
+|[CAtlServiceModuleT::Unlock](#catlservicemodulet__unlock)|Decrements the service's lock count.|  
+|[CAtlServiceModuleT::UnregisterAppId](#catlservicemodulet__unregisterappid)|Removes the service from the registry.|  
+|[CAtlServiceModuleT::WinMain](#catlservicemodulet__winmain)|This method implements the code required to run the service.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlServiceModuleT::m_bService](../Topic/CAtlServiceModuleT::m_bService.md)|Flag indicating the program is running as a service.|  
-|[CAtlServiceModuleT::m_dwThreadID](../Topic/CAtlServiceModuleT::m_dwThreadID.md)|Member variable storing the thread identifier.|  
-|[CAtlServiceModuleT::m_hServiceStatus](../Topic/CAtlServiceModuleT::m_hServiceStatus.md)|Member variable storing a handle to the status information structure for the current service.|  
-|[CAtlServiceModuleT::m_status](../Topic/CAtlServiceModuleT::m_status.md)|Member variable storing the status information structure for the current service.|  
-|[CAtlServiceModuleT::m_szServiceName](../Topic/CAtlServiceModuleT::m_szServiceName.md)|The name of the service being registered.|  
+|[CAtlServiceModuleT::m_bService](#catlservicemodulet__m_bservice)|Flag indicating the program is running as a service.|  
+|[CAtlServiceModuleT::m_dwThreadID](#catlservicemodulet__m_dwthreadid)|Member variable storing the thread identifier.|  
+|[CAtlServiceModuleT::m_hServiceStatus](#catlservicemodulet__m_hservicestatus)|Member variable storing a handle to the status information structure for the current service.|  
+|[CAtlServiceModuleT::m_status](#catlservicemodulet__m_status)|Member variable storing the status information structure for the current service.|  
+|[CAtlServiceModuleT::m_szServiceName](#catlservicemodulet__m_szservicename)|The name of the service being registered.|  
   
 ## Remarks  
  `CAtlServiceModuleT`, derived from [CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md), implements a ATL Service module. `CAtlServiceModuleT` provides methods for command-line processing, installation, registering, and removal. If extra functionality is required, these and other methods can be overridden.  
@@ -146,13 +146,13 @@ void Handler(DWORD dwOpcode) throw();
   
 |Operation code|Meaning|  
 |--------------------|-------------|  
-|SERVICE_CONTROL_STOP|Stops the service. Override the method [CAtlServiceModuleT::OnStop](../Topic/CAtlServiceModuleT::OnStop.md) in atlbase.h to change the behavior.|  
-|SERVICE_CONTROL_PAUSE|User implemented. Override the empty method [CAtlServiceModuleT::OnPause](../Topic/CAtlServiceModuleT::OnPause.md) in atlbase.h to pause the service.|  
-|SERVICE_CONTROL_CONTINUE|User implemented. Override the empty method [CAtlServiceModuleT::OnContinue](../Topic/CAtlServiceModuleT::OnContinue.md) in atlbase.h to continue the service.|  
-|SERVICE_CONTROL_INTERROGATE|User implemented. Override the empty method [CAtlServiceModuleT::OnInterrogate](../Topic/CAtlServiceModuleT::OnInterrogate.md) in atlbase.h to interrogate the service.|  
-|SERVICE_CONTROL_SHUTDOWN|User implemented. Override the empty method [CAtlServiceModuleT::OnShutdown](../Topic/CAtlServiceModuleT::OnShutdown.md) in atlbase.h to shutdown the service.|  
+|SERVICE_CONTROL_STOP|Stops the service. Override the method [CAtlServiceModuleT::OnStop](#catlservicemodulet__onstop) in atlbase.h to change the behavior.|  
+|SERVICE_CONTROL_PAUSE|User implemented. Override the empty method [CAtlServiceModuleT::OnPause](#catlservicemodulet__onpause) in atlbase.h to pause the service.|  
+|SERVICE_CONTROL_CONTINUE|User implemented. Override the empty method [CAtlServiceModuleT::OnContinue](#catlservicemodulet__oncontinue) in atlbase.h to continue the service.|  
+|SERVICE_CONTROL_INTERROGATE|User implemented. Override the empty method [CAtlServiceModuleT::OnInterrogate](#catlservicemodulet__oninterrogate) in atlbase.h to interrogate the service.|  
+|SERVICE_CONTROL_SHUTDOWN|User implemented. Override the empty method [CAtlServiceModuleT::OnShutdown](#catlservicemodulet__onshutdown) in atlbase.h to shutdown the service.|  
   
- If the operation code isn't recognized, the method [CAtlServiceModuleT::OnUnknownRequest](../Topic/CAtlServiceModuleT::OnUnknownRequest.md) is called.  
+ If the operation code isn't recognized, the method [CAtlServiceModuleT::OnUnknownRequest](#catlservicemodulet__onunknownrequest) is called.  
   
  A default ATL-generated service only handles the stop instruction. If the SCM passes the stop instruction, the service tells the SCM that the program is about to stop. The service then calls `PostThreadMessage` to post a quit message to itself. This terminates the message loop and the service will ultimately close.  
   
@@ -335,7 +335,7 @@ bool ParseCommandLine(LPCTSTR lpCmdLine,
  Returns true on success, or false if the RGS file supplied in the command line could not be registered.  
   
 ### Remarks  
- Parses the command line and registers or unregisters the supplied RGS file if necessary. This method calls [CAtlExeModuleT::ParseCommandLine](../Topic/CAtlExeModuleT::ParseCommandLine.md) to check for **/RegServer** and **/UnregServer**. Adding the argument **-/Service** will register the service.  
+ Parses the command line and registers or unregisters the supplied RGS file if necessary. This method calls [CAtlExeModuleT::ParseCommandLine](../../atl/reference/catlexemodulet-class.md#catlexemodulet__parsecommandline) to check for **/RegServer** and **/UnregServer**. Adding the argument **-/Service** will register the service.  
   
 ##  <a name="catlservicemodulet__premessageloop"></a>  CAtlServiceModuleT::PreMessageLoop  
  This method is called immediately before entering the message loop.  
@@ -346,7 +346,7 @@ HRESULT PreMessageLoop(int nShowCmd) throw();
   
 ### Parameters  
  `nShowCmd`  
- This parameter is passed to [CAtlExeModuleT::PreMessageLoop](../Topic/CAtlExeModuleT::PreMessageLoop.md).  
+ This parameter is passed to [CAtlExeModuleT::PreMessageLoop](../../atl/reference/catlexemodulet-class.md#catlexemodulet__premessageloop).  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -383,7 +383,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- After being called, **Run** calls [CAtlServiceModuleT::PreMessageLoop](../Topic/CAtlServiceModuleT::PreMessageLoop.md), [CAtlExeModuleT::RunMessageLoop](../Topic/CAtlExeModuleT::RunMessageLoop.md), and [CAtlExeModuleT::PostMessageLoop](../Topic/CAtlExeModuleT::PostMessageLoop.md).  
+ After being called, **Run** calls [CAtlServiceModuleT::PreMessageLoop](#catlservicemodulet__premessageloop), [CAtlExeModuleT::RunMessageLoop](../../atl/reference/catlexemodulet-class.md#catlexemodulet__runmessageloop), and [CAtlExeModuleT::PostMessageLoop](../../atl/reference/catlexemodulet-class.md#catlexemodulet__postmessageloop).  
   
 ##  <a name="catlservicemodulet__servicemain"></a>  CAtlServiceModuleT::ServiceMain  
  This method is called by the Service Control Manager.  
@@ -403,7 +403,7 @@ void ServiceMain(DWORD dwArgc,
 ### Remarks  
  The Service Control Manager (SCM) calls `ServiceMain` when you open the Services application in the Control Panel, select the service, and click Start.  
   
- After the SCM calls `ServiceMain`, a service must give the SCM a handler function. This function lets the SCM obtain the service's status and pass specific instructions (such as pausing or stopping). Subsequently, [CAtlServiceModuleT::Run](../Topic/CAtlServiceModuleT::Run.md) is called to perform the main work of the service. **Run** continues to execute until the service is stopped.  
+ After the SCM calls `ServiceMain`, a service must give the SCM a handler function. This function lets the SCM obtain the service's status and pass specific instructions (such as pausing or stopping). Subsequently, [CAtlServiceModuleT::Run](#catlservicemodulet__run) is called to perform the main work of the service. **Run** continues to execute until the service is stopped.  
   
 ##  <a name="catlservicemodulet__setservicestatus"></a>  CAtlServiceModuleT::SetServiceStatus  
  This method updates the service status.  
@@ -417,7 +417,7 @@ void SetServiceStatus(DWORD dwState) throw();
  The new status. See [SetServiceStatus](http://msdn.microsoft.com/library/windows/desktop/ms686241) for possible values.  
   
 ### Remarks  
- Updates the Service Control Manager's status information for the service. It is called by [CAtlServiceModuleT::Run](../Topic/CAtlServiceModuleT::Run.md), [CAtlServiceModuleT::ServiceMain](../Topic/CAtlServiceModuleT::ServiceMain.md) and other handler methods. The status is also stored in the member variable [CAtlServiceModuleT::m_status](../Topic/CAtlServiceModuleT::m_status.md).  
+ Updates the Service Control Manager's status information for the service. It is called by [CAtlServiceModuleT::Run](#catlservicemodulet__run), [CAtlServiceModuleT::ServiceMain](#catlservicemodulet__servicemain) and other handler methods. The status is also stored in the member variable [CAtlServiceModuleT::m_status](#catlservicemodulet__m_status).  
   
 ##  <a name="catlservicemodulet__start"></a>  CAtlServiceModuleT::Start  
  Called by `CAtlServiceModuleT::WinMain` when the service starts.  
@@ -434,7 +434,7 @@ HRESULT Start(int nShowCmd) throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- The [CAtlServiceModuleT::WinMain](../Topic/CAtlServiceModuleT::WinMain.md) method handles both registration and installation, as well as tasks involved in removing registry entries and uninstalling the module. When the service is run, `WinMain` calls **Start**.  
+ The [CAtlServiceModuleT::WinMain](#catlservicemodulet__winmain) method handles both registration and installation, as well as tasks involved in removing registry entries and uninstalling the module. When the service is run, `WinMain` calls **Start**.  
   
 ##  <a name="catlservicemodulet__uninstall"></a>  CAtlServiceModuleT::Uninstall  
  Stops and removes the service.  
@@ -484,15 +484,8 @@ int WinMain(int nShowCmd) throw();
  Returns the service's return value.  
   
 ### Remarks  
- This method processes the command line (with [CAtlServiceModuleT::ParseCommandLine](../Topic/CAtlServiceModuleT::ParseCommandLine.md)) and then starts the service (using [CAtlServiceModuleT::Start](/visual-studio/profiling/start)).  
+ This method processes the command line (with [CAtlServiceModuleT::ParseCommandLine](#catlservicemodulet__parsecommandline)) and then starts the service (using [CAtlServiceModuleT::Start](#catlservicemodulet__start)).  
   
 ## See Also  
  [CAtlExeModuleT Class](../../atl/reference/catlexemodulet-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

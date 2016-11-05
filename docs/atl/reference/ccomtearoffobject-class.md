@@ -1,7 +1,7 @@
 ---
 title: "CComTearOffObject Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -22,7 +22,7 @@ helpviewer_keywords:
   - "tear-off interfaces"
   - "CComTearOffObject class"
 ms.assetid: d974b598-c6b2-42b1-8360-9190d9d0fbf3
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -64,28 +64,28 @@ class CComTearOffObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComTearOffObject::CComTearOffObject](../Topic/CComTearOffObject::CComTearOffObject.md)|The constructor.|  
-|[CComTearOffObject::~CComTearOffObject](../Topic/CComTearOffObject::~CComTearOffObject.md)|The destructor.|  
+|[CComTearOffObject::CComTearOffObject](#ccomtearoffobject__ccomtearoffobject)|The constructor.|  
+|[CComTearOffObject::~CComTearOffObject](#ccomtearoffobject___dtorccomtearoffobject)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComTearOffObject::AddRef](../Topic/CComTearOffObject::AddRef.md)|Increments the reference count for a `CComTearOffObject` object.|  
-|[CComTearOffObject::QueryInterface](../Topic/CComTearOffObject::QueryInterface.md)|Returns a pointer to the requested interface on either your tear-off class or the owner class.|  
-|[CComTearOffObject::Release](../Topic/CComTearOffObject::Release.md)|Decrements the reference count for a `CComTearOffObject` object and destroys it.|  
+|[CComTearOffObject::AddRef](#ccomtearoffobject__addref)|Increments the reference count for a `CComTearOffObject` object.|  
+|[CComTearOffObject::QueryInterface](#ccomtearoffobject__queryinterface)|Returns a pointer to the requested interface on either your tear-off class or the owner class.|  
+|[CComTearOffObject::Release](#ccomtearoffobject__release)|Decrements the reference count for a `CComTearOffObject` object and destroys it.|  
   
 ### CComTearOffObjectBase Methods  
   
 |||  
 |-|-|  
-|[CComTearOffObjectBase](../Topic/CComTearOffObject::CComTearOffObjectBase.md)|Constructor.|  
+|[CComTearOffObjectBase](#ccomtearoffobject__ccomtearoffobjectbase)|Constructor.|  
   
 ### CComTearOffObjectBase Data Members  
   
 |||  
 |-|-|  
-|[m_pOwner](../Topic/CComTearOffObject::m_pOwner.md)|A pointer to a `CComObject` derived from the owner class.|  
+|[m_pOwner](#ccomtearoffobject__m_powner)|A pointer to a `CComObject` derived from the owner class.|  
   
 ## Remarks  
  `CComTearOffObject` implements a tear-off interface as a separate object that is instantiated only when that interface is queried for. The tear-off is deleted when its reference count becomes zero. Typically, you build a tear-off interface for an interface that is rarely used, since using a tear-off saves a vtable pointer in all the instances of your main object.  
@@ -148,7 +148,7 @@ CComTearOffObjectBase();
 ```  
   
 ### Remarks  
- Initializes the [m_pOwner](../Topic/CComTearOffObject::m_pOwner.md) member to **NULL**.  
+ Initializes the [m_pOwner](#ccomtearoffobject__m_powner) member to **NULL**.  
   
 ##  <a name="ccomtearoffobject__m_powner"></a>  CComTearOffObject::m_pOwner  
  A pointer to a [CComObject](../../atl/reference/ccomobject-class.md) object derived from *Owner*.  
@@ -198,10 +198,3 @@ STDMETHOD_ULONG Release();
 ## See Also  
  [CComCachedTearOffObject Class](../../atl/reference/ccomcachedtearoffobject-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

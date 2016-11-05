@@ -1,7 +1,7 @@
 ---
 title: "How to: Retrieve Time Elapsed Since Startup (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Retrieve Time Elapsed Since Startup (C++/CLI)
-The following code example demonstrates how to determine the tick count, or number of milliseconds that have elapsed since Windows was started. This value is stored in the <xref:System.Environment.TickCount*?displayProperty=fullName> member and, because it is a 32-bit value, resets to zero approximately every 24.9 days.  
+The following code example demonstrates how to determine the tick count, or number of milliseconds that have elapsed since Windows was started. This value is stored in the <xref:System.Environment.TickCount%2A?displayProperty=fullName> member and, because it is a 32-bit value, resets to zero approximately every 24.9 days.  
   
 ## Example  
   

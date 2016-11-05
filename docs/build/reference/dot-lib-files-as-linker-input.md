@@ -1,7 +1,7 @@
 ---
 title: ".Lib Files as Linker Input | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -60,7 +60,7 @@ LINK accepts COFF standard libraries and COFF import libraries, both of which us
   
 ### To programmatically add .lib files as linker input  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalDependencies*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalDependencies%2A>.  
   
 ## Example  
  The following sample shows how to build and use a .lib file:  

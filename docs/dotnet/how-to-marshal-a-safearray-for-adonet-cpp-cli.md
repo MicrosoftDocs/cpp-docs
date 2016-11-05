@@ -1,7 +1,7 @@
 ---
 title: "How to: Marshal a SAFEARRAY for ADO.NET (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -42,7 +42,7 @@ Demonstrates how to add a native `SAFEARRAY` to a database and how to marshal a 
   
  Note the private member of the DatabaseClass class: `gcroot<DataTable ^> table`. Since native types cannot contain managed types, the `gcroot` keyword is necessary. For more information on `gcroot`, see [How to: Declare Handles in Native Types](../dotnet/how-to-declare-handles-in-native-types.md).  
   
- The rest of the code in this example is native C++ code, as is indicated by the `#pragma unmanaged` directive preceding `main`. In this example, we are creating a new instance of DatabaseClass and calling its methods to create a table and populate some rows in the table. Note that native `SAFEARRAY` types are being passed as values for the database column ArrayIntsCol. Inside DatabaseClass, these `SAFEARRAY` types are marshaled to managed objects using the marshaling functionality found in the <xref:System.Runtime.InteropServices?displayProperty=fullName> namespace. Specifically, the method <xref:System.Runtime.InteropServices.Marshal.Copy*> is used to marshal a `SAFEARRAY` to a managed array of integers, and the method <xref:System.Runtime.InteropServices.Marshal.Copy*> is used to marshal a managed array of integers to a `SAFEARRAY`.  
+ The rest of the code in this example is native C++ code, as is indicated by the `#pragma unmanaged` directive preceding `main`. In this example, we are creating a new instance of DatabaseClass and calling its methods to create a table and populate some rows in the table. Note that native `SAFEARRAY` types are being passed as values for the database column ArrayIntsCol. Inside DatabaseClass, these `SAFEARRAY` types are marshaled to managed objects using the marshaling functionality found in the <xref:System.Runtime.InteropServices?displayProperty=fullName> namespace. Specifically, the method <xref:System.Runtime.InteropServices.Marshal.Copy%2A> is used to marshal a `SAFEARRAY` to a managed array of integers, and the method <xref:System.Runtime.InteropServices.Marshal.Copy%2A> is used to marshal a managed array of integers to a `SAFEARRAY`.  
   
 ```  
 // adonet_marshal_safearray.cpp  

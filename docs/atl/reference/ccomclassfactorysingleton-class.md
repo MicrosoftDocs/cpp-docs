@@ -1,7 +1,7 @@
 ---
 title: "CComClassFactorySingleton Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComClassFactorySingleton class"
 ms.assetid: debb983c-382b-487b-8d42-7ea26dc158b8
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -63,13 +63,13 @@ template<class T>  class CComClassFactorySingleton :  public CComClassFactory
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComClassFactorySingleton::CreateInstance](../Topic/CComClassFactorySingleton::CreateInstance.md)|Queries `m_spObj` for an interface pointer.|  
+|[CComClassFactorySingleton::CreateInstance](#ccomclassfactorysingleton__createinstance)|Queries `m_spObj` for an interface pointer.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComClassFactorySingleton::m_spObj](../Topic/CComClassFactorySingleton::m_spObj.md)|The [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) object constructed by `CComClassFactorySingleton`.|  
+|[CComClassFactorySingleton::m_spObj](#ccomclassfactorysingleton__m_spobj)|The [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) object constructed by `CComClassFactorySingleton`.|  
   
 ## Remarks  
  ATL objects normally acquire a class factory by deriving from [CComCoClass](../../atl/reference/ccomcoclass-class.md). This class includes the macro [DECLARE_CLASSFACTORY](../Topic/DECLARE_CLASSFACTORY.md), which declares `CComClassFactory` as the default class factory. To use `CComClassFactorySingleton`, specify the [DECLARE_CLASSFACTORY_SINGLETON](../Topic/DECLARE_CLASSFACTORY_SINGLETON.md) macro in your object's class definition. For example:  
@@ -91,7 +91,7 @@ template<class T>  class CComClassFactorySingleton :  public CComClassFactory
  **Header:** atlcom.h  
   
 ##  <a name="ccomclassfactorysingleton__createinstance"></a>  CComClassFactorySingleton::CreateInstance  
- Calls `QueryInterface` through [m_spObj](../Topic/CComClassFactorySingleton::m_spObj.md) to retrieve an interface pointer.  
+ Calls `QueryInterface` through [m_spObj](#ccomclassfactorysingleton__m_spobj) to retrieve an interface pointer.  
   
 ```
 STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter,
@@ -120,7 +120,7 @@ CComPtr<IUnknown> m_spObj;
 ```  
   
 ### Remarks  
- Each call to the [CreateInstance](../Topic/CComClassFactorySingleton::CreateInstance.md) method simply queries this object for an interface pointer.  
+ Each call to the [CreateInstance](#ccomclassfactorysingleton__createinstance) method simply queries this object for an interface pointer.  
   
  Note that the current form of `m_spObj` presents a breaking change from the way that `CComClassFactorySingleton` worked in previous versions of ATL. In previous versions the `CComClassFactorySingleton` object was created at the same time as the class factory, during server initialization. In Visual C++.NET 2003, the object is created lazily, on the first request. This change could cause errors in programs that rely on early initialization.  
   
@@ -131,10 +131,3 @@ CComPtr<IUnknown> m_spObj;
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
  [CComGlobalsThreadModel](../Topic/CComGlobalsThreadModel.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

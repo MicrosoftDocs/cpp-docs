@@ -1,7 +1,7 @@
 ---
 title: "mktime, _mktime32, _mktime64 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -163,7 +163,7 @@ In 20 days the time will be Thu May 15 13:34:07 2003
 ```  
   
 ## .NET Framework Equivalent  
- <xref:System.DateTimeOffset.#ctor*>  
+ <xref:System.DateTimeOffset.%23ctor%2A>  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   

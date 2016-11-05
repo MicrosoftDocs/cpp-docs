@@ -1,7 +1,7 @@
 ---
 title: "In-Place Activation | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -66,5 +66,5 @@ In-place activation editor
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|View|Enables adding items to the Toolbox.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEvents>|Data|Sends notification of changes to the edited file. (This interface is optional.)|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|Data|Used to enable the Save As feature for a file type.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Data|Enables persistence for the document. For read-only files, call <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SetDocDataReadOnly*> to provide the "lock" icon that indicates read-only files.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Data|Enables persistence for the document. For read-only files, call <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SetDocDataReadOnly%2A> to provide the "lock" icon that indicates read-only files.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|Data|Determines whether changes to document data should be ignored.|

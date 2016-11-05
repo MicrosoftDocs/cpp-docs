@@ -1,7 +1,7 @@
 ---
 title: "CComControl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -22,7 +22,7 @@ helpviewer_keywords:
   - "ambient properties"
   - "controls [ATL], properties"
 ms.assetid: 55368c27-bd16-45a7-b701-edb36157c8e8
-caps.latest.revision: 21
+caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -67,17 +67,17 @@ template <class T, class WinBase = CWindowImpl<T>>  class ATL_NO_VTABLE CComCont
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComControl::CComControl](../Topic/CComControl::CComControl.md)|Constructor.|  
+|[CComControl::CComControl](#ccomcontrol__ccomcontrol)|Constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComControl::ControlQueryInterface](../Topic/CComControl::ControlQueryInterface.md)|Retrieves a pointer to the requested interface.|  
-|[CComControl::CreateControlWindow](../Topic/CComControl::CreateControlWindow.md)|Creates a window for the control.|  
-|[CComControl::FireOnChanged](../Topic/CComControl::FireOnChanged.md)|Notifies the container's sink that a control property has changed.|  
-|[CComControl::FireOnRequestEdit](../Topic/CComControl::FireOnRequestEdit.md)|Notifies the container's sink that a control property is about to change and that the object is asking the sink how to proceed.|  
-|[CComControl::MessageBox](../Topic/CComControl::MessageBox.md)|Call this method to create, display, and operate a message box.|  
+|[CComControl::ControlQueryInterface](#ccomcontrol__controlqueryinterface)|Retrieves a pointer to the requested interface.|  
+|[CComControl::CreateControlWindow](#ccomcontrol__createcontrolwindow)|Creates a window for the control.|  
+|[CComControl::FireOnChanged](#ccomcontrol__fireonchanged)|Notifies the container's sink that a control property has changed.|  
+|[CComControl::FireOnRequestEdit](#ccomcontrol__fireonrequestedit)|Notifies the container's sink that a control property is about to change and that the object is asking the sink how to proceed.|  
+|[CComControl::MessageBox](#ccomcontrol__messagebox)|Call this method to create, display, and operate a message box.|  
   
 ## Remarks  
  `CComControl` is a set of useful control helper functions and essential data members for ATL controls. When you create a standard control or a DHTML control using the ATL Control Wizard, the wizard will automatically derive your class from `CComControl`. `CComControl` derives most of its methods from [CComControlBase](../../atl/reference/ccomcontrolbase-class.md).  
@@ -222,10 +222,3 @@ int MessageBox(LPCTSTR lpszText,
  [Class Overview](../../atl/atl-class-overview.md)   
  [CComControlBase Class](../../atl/reference/ccomcontrolbase-class.md)   
  [CComCompositeControl Class](../../atl/reference/ccomcompositecontrol-class.md)
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "IAxWinAmbientDispatch Interface | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords: 
   - "IAxWinAmbientDispatch interface"
 ms.assetid: 55ba6f7b-7a3c-4792-ae47-c8a84b683ca9
-caps.latest.revision: 23
+caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -577,6 +577,8 @@ STDMETHOD(put_UserMode)(VARIANT_BOOL bUserMode);
  [IAxWinHostWindow Interface](../../atl/reference/iaxwinhostwindow-interface.md)   
  [CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#caxwindow__queryhost)   
  [AtlAxGetHost](../Topic/AtlAxGetHost.md)
+
+
 
 
 

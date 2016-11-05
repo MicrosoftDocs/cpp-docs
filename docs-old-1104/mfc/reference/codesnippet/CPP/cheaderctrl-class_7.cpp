@@ -1,0 +1,1 @@
+   int iFilter = m_myHeaderCtrl.EditFilter(1, TRUE);

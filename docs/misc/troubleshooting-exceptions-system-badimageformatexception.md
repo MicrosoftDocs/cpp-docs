@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting Exceptions: System.BadImageFormatException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -48,7 +48,7 @@ A <xref:System.BadImageFormatException> exception is thrown when the file image 
  This exception is thrown when an application or component that was developed by using the [!INCLUDE[net_v10_short](../misc/includes/net_v10_short_md.md)] or the [!INCLUDE[net_v11_short](../misc/includes/net_v11_short_md.md)] attempts to load an assembly that was developed by using the [!INCLUDE[net_v20SP1_short](../misc/includes/net_v20sp1_short_md.md)] or later, or when an application that was developed by using the [!INCLUDE[net_v20SP1_short](../misc/includes/net_v20sp1_short_md.md)] or the [!INCLUDE[net_v35_short](../misc/includes/net_v35_short_md.md)] attempts to load an assembly that was developed by using the [!INCLUDE[net_v40_short](../misc/includes/net_v40_short_md.md)]. The <xref:System.BadImageFormatException> exception may be reported as a compile-time error, or the exception may be thrown at run time. See the <xref:System.BadImageFormatException> class for an example.  
   
  **Make sure that the file image is a valid managed assembly or module.**  
- This exception is thrown when an unmanaged dynamic link library or executable is passed to the <xref:System.Reflection.Assembly.Load*> method for loading.  
+ This exception is thrown when an unmanaged dynamic link library or executable is passed to the <xref:System.Reflection.Assembly.Load%2A> method for loading.  
   
  For more information, Visual Basic users can refer to [Troubleshooting Interoperability](/dotnet/visual-basic/programming-guide/com-interop/troubleshooting-interoperability).  
   

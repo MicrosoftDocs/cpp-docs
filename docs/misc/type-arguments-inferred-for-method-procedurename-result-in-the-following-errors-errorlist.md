@@ -40,7 +40,7 @@ A generic procedure is called without supplying any type arguments, and the infe
   
  Normally, when you invoke a generic type, you supply a type argument for each type parameter the generic type defines. If you do not supply any type arguments, the compiler attempts to infer the types to be passed to the type parameters. If the inferred types fail to satisfy one or more of the type parameter constraints, the compiler generates this error.  
   
- A *constraint* on a type parameter limits what type arguments can be passed to it. For example, a type parameter might be constrained to be a class that implements the <xref:System.IComparable`1> interface. For more information, see "Constraints" in [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures).  
+ A *constraint* on a type parameter limits what type arguments can be passed to it. For example, a type parameter might be constrained to be a class that implements the <xref:System.IComparable%601> interface. For more information, see "Constraints" in [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures).  
   
  **Error ID:** BC30954  
   

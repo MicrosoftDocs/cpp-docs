@@ -1,7 +1,7 @@
 ---
 title: "ptr::GetInterface | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -52,7 +52,7 @@ _interface_type * GetInterface();
  A pointer to the owned COM object.  
   
 ## Exceptions  
- Internally, `QueryInterface` is called on the owned COM object and any error `HRESULT` is converted to an exception by <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR*>.  
+ Internally, `QueryInterface` is called on the owned COM object and any error `HRESULT` is converted to an exception by <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>.  
   
 ## Remarks  
  The `com::ptr` adds a reference to the COM object on the caller's behalf and also keeps its own reference on the COM object. The caller must ultimately release the reference on the returned object or it will never be destroyed.  

@@ -36,13 +36,13 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Conversion from &#39;Double&#39; to &#39;Date&#39; requires calling the &#39;Date.FromOADate&#39;
-You have attempted to cast a `Date` value to a `Double` value, which cannot be done without using the <xref:System.DateTime.FromOADate*?displayProperty=fullName> method.  
+You have attempted to cast a `Date` value to a `Double` value, which cannot be done without using the <xref:System.DateTime.FromOADate%2A?displayProperty=fullName> method.  
   
  **Error ID:** BC30533  
   
 ### To correct this error  
   
--   Use the <xref:System.DateTime.FromOADate*> method to convert the value.  
+-   Use the <xref:System.DateTime.FromOADate%2A> method to convert the value.  
   
 ## See Also  
  [Type Conversions in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/type-conversions)

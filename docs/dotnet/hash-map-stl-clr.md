@@ -1,7 +1,7 @@
 ---
 title: "hash_map (STL-CLR) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -138,9 +138,9 @@ template<typename Key,
 |<xref:System.ICloneable>|Duplicate an object.|  
 |<xref:System.Collections.IEnumerable>|Sequence through elements.|  
 |<xref:System.Collections.ICollection>|Maintain group of elements.|  
-|<xref:System.Collections.Generic.IEnumerable`1>|Sequence through typed elements.|  
-|<xref:System.Collections.Generic.ICollection`1>|Maintain group of typed elements.|  
-|<xref:System.Collections.Generic.IDictionary`2>|Maintain group of {key, value} pairs.|  
+|<xref:System.Collections.Generic.IEnumerable%601>|Sequence through typed elements.|  
+|<xref:System.Collections.Generic.ICollection%601>|Maintain group of typed elements.|  
+|<xref:System.Collections.Generic.IDictionary%602>|Maintain group of {key, value} pairs.|  
 |IHash<Key, Value>|Maintain generic container.|  
   
 ## Remarks  

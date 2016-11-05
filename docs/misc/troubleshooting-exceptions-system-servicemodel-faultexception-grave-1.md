@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting Exceptions: System.ServiceModel.FaultException`1 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -34,8 +34,8 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Troubleshooting Exceptions: System.ServiceModel.FaultException`1
-A <xref:System.ServiceModel.FaultException`1> exception is used in a client application to catch contractually-specified SOAP faults.  
+A <xref:System.ServiceModel.FaultException%601> exception is used in a client application to catch contractually-specified SOAP faults.  
   
 ## See Also  
- <xref:System.ServiceModel.FaultException`1>   
+ <xref:System.ServiceModel.FaultException%601>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)

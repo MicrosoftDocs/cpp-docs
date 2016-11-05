@@ -1,7 +1,7 @@
 ---
 title: "CSid Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CSid class"
 ms.assetid: be58b7ca-5958-49c3-a833-ca341aaaf753
-caps.latest.revision: 23
+caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -55,44 +55,44 @@ class CSid
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSid::CSidArray](../Topic/CSid::CSidArray.md)|An array of `CSid` objects.|  
+|[CSid::CSidArray](#csid__csidarray)|An array of `CSid` objects.|  
   
 ### Public Constructors  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSid::CSid](../Topic/CSid::CSid.md)|The constructor.|  
-|[CSid::~CSid](../Topic/CSid::~CSid.md)|The destructor.|  
+|[CSid::CSid](#csid__csid)|The constructor.|  
+|[CSid::~CSid](#csid___dtorcsid)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSid::AccountName](../Topic/CSid::AccountName.md)|Returns the name of the account associated with the `CSid` object.|  
-|[CSid::Domain](../Topic/CSid::Domain.md)|Returns the name of the domain associated with the `CSid` object.|  
-|[CSid::EqualPrefix](../Topic/CSid::EqualPrefix.md)|Tests `SID` (security identifier) prefixes for equality.|  
-|[CSid::GetLength](../Topic/CSid::GetLength.md)|Returns the length of the `CSid` object.|  
-|[CSid::GetPSID](../Topic/CSid::GetPSID.md)|Returns a pointer to a `SID` structure.|  
-|[CSid::GetPSID_IDENTIFIER_AUTHORITY](../Topic/CSid::GetPSID_IDENTIFIER_AUTHORITY.md)|Returns a pointer to the **SID_IDENTIFIER_AUTHORITY** structure.|  
-|[CSid::GetSubAuthority](../Topic/CSid::GetSubAuthority.md)|Returns a specified subauthority in a **SID** structure.|  
-|[CSid::GetSubAuthorityCount](../Topic/CSid::GetSubAuthorityCount.md)|Returns the subauthority count.|  
-|[CSid::IsValid](../Topic/CSid::IsValid.md)|Tests the `CSid` object for validity.|  
-|[CSid::LoadAccount](../Topic/CSid::LoadAccount.md)|Updates the `CSid` object given the account name and domain, or an existing `SID` structure.|  
-|[CSid::Sid](../Topic/CSid::Sid.md)|Returns the ID string.|  
-|[CSid::SidNameUse](../Topic/CSid::SidNameUse.md)|Returns a description of the state of the `CSid` object.|  
+|[CSid::AccountName](#csid__accountname)|Returns the name of the account associated with the `CSid` object.|  
+|[CSid::Domain](#csid__domain)|Returns the name of the domain associated with the `CSid` object.|  
+|[CSid::EqualPrefix](#csid__equalprefix)|Tests `SID` (security identifier) prefixes for equality.|  
+|[CSid::GetLength](#csid__getlength)|Returns the length of the `CSid` object.|  
+|[CSid::GetPSID](#csid__getpsid)|Returns a pointer to a `SID` structure.|  
+|[CSid::GetPSID_IDENTIFIER_AUTHORITY](#csid__getpsid_identifier_authority)|Returns a pointer to the **SID_IDENTIFIER_AUTHORITY** structure.|  
+|[CSid::GetSubAuthority](#csid__getsubauthority)|Returns a specified subauthority in a **SID** structure.|  
+|[CSid::GetSubAuthorityCount](#csid__getsubauthoritycount)|Returns the subauthority count.|  
+|[CSid::IsValid](#csid__isvalid)|Tests the `CSid` object for validity.|  
+|[CSid::LoadAccount](#csid__loadaccount)|Updates the `CSid` object given the account name and domain, or an existing `SID` structure.|  
+|[CSid::Sid](#csid__sid)|Returns the ID string.|  
+|[CSid::SidNameUse](#csid__sidnameuse)|Returns a description of the state of the `CSid` object.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator =](../Topic/CSid::operator%20=.md)|Assignment operator.|  
-|[operator const SID *](../Topic/CSid::operator%20const%20SID%20*.md)|Casts a `CSid` object to a pointer to a `SID` structure.|  
+|[operator =](#csid__operator__eq)|Assignment operator.|  
+|[operator const SID *](#csid__operator_const_sid__star)|Casts a `CSid` object to a pointer to a `SID` structure.|  
   
 ### Global Operators  
   
 |||  
 |-|-|  
-|[operator ==](../Topic/CSid::operator%20==.md)|Tests two security descriptor objects for equality|  
+|[operator ==](#csid__operator__eq_eq)|Tests two security descriptor objects for equality|  
 |[operator !=](../Topic/CSid::operator%20!=.md)|Tests two security descriptor objects for inequality|  
 |[operator \<](../Topic/CSid::operator%20%3C.md)|Compares relative value of two security descriptor objects.|  
 |[operator >](../Topic/CSid::operator%20%3E.md)|Compares relative value of two security descriptor objects.|  
@@ -191,7 +191,7 @@ typedef CAtlArray<CSid> CSidArray;
 ```  
   
 ### Remarks  
- This typedef specifies the array type that can be used to retrieve security identifiers from an ACL (access-control list). See [CAcl::GetAclEntries](../Topic/CAcl::GetAclEntries.md).  
+ This typedef specifies the array type that can be used to retrieve security identifiers from an ACL (access-control list). See [CAcl::GetAclEntries](../../atl/reference/cacl-class.md#cacl__getaclentries).  
   
 ##  <a name="csid__domain"></a>  CSid::Domain  
  Returns the name of the domain associated with the `CSid` object.  
@@ -237,7 +237,7 @@ UINT GetLength() const throw();
  Returns the length in bytes of the `CSid` object.  
   
 ### Remarks  
- If the `CSid` structure is not valid, the return value is undefined. Before calling `GetLength`, use the [CSid::IsValid](../Topic/CSid::IsValid.md) member function to verify that `CSid` is valid.  
+ If the `CSid` structure is not valid, the return value is undefined. Before calling `GetLength`, use the [CSid::IsValid](#csid__isvalid) member function to verify that `CSid` is valid.  
   
 > [!NOTE]
 >  Under debug builds the function will cause an ASSERT if the `CSid` object is not valid.  
@@ -260,7 +260,7 @@ const SID_IDENTIFIER_AUTHORITY* GetPSID_IDENTIFIER_AUTHORITY() const throw();
 ```  
   
 ### Return Value  
- If the method succeeds, it returns the address of the **SID_IDENTIFIER_AUTHORITY** structure. If it fails, the return value is undefined. Failure may occur if the `CSid` object is not valid, in which case the [CSid::IsValid](../Topic/CSid::IsValid.md) method returns **false**. The function `GetLastError` can be called for extended error information.  
+ If the method succeeds, it returns the address of the **SID_IDENTIFIER_AUTHORITY** structure. If it fails, the return value is undefined. Failure may occur if the `CSid` object is not valid, in which case the [CSid::IsValid](#csid__isvalid) method returns **false**. The function `GetLastError` can be called for extended error information.  
   
 > [!NOTE]
 >  Under debug builds the function will cause an ASSERT if the `CSid` object is not valid.  
@@ -280,7 +280,7 @@ DWORD GetSubAuthority(DWORD nSubAuthority) const throw();
  Returns the subauthority referenced by *nSubAuthority.* The subauthority value is a relative identifier (RID).  
   
 ### Remarks  
- The *nSubAuthority* parameter specifies an index value identifying the subauthority array element the method will return. The method performs no validation tests on this value. An application can call [CSid::GetSubAuthorityCount](../Topic/CSid::GetSubAuthorityCount.md) to discover the range of acceptable values.  
+ The *nSubAuthority* parameter specifies an index value identifying the subauthority array element the method will return. The method performs no validation tests on this value. An application can call [CSid::GetSubAuthorityCount](#csid__getsubauthoritycount) to discover the range of acceptable values.  
   
 > [!NOTE]
 >  Under debug builds the function will cause an ASSERT if the `CSid` object is not valid.  
@@ -512,13 +512,15 @@ SID_NAME_USE SidNameUse() const throw();
 |SidTypeComputer|Indicates a `SID` for a computer.|  
   
 ### Remarks  
- Call [CSid::LoadAccount](../Topic/CSid::LoadAccount.md) to update the `CSid` object before calling `SidNameUse` to return its state. `SidNameUse` does not change the state of the object (by calling to **LookupAccountName** or **LookupAccountSid**), but only returns the current state.  
+ Call [CSid::LoadAccount](#csid__loadaccount) to update the `CSid` object before calling `SidNameUse` to return its state. `SidNameUse` does not change the state of the object (by calling to **LookupAccountName** or **LookupAccountSid**), but only returns the current state.  
   
 ## See Also  
  [Security Sample](../../top/visual-cpp-samples.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Security Global Functions](../../atl/reference/security-global-functions.md)   
  [Operators](../../atl/reference/atl-operators.md)
+
+
 
 
 

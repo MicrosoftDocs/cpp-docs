@@ -1,7 +1,7 @@
 ---
 title: "CSimpleArray Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CSimpleArray class"
 ms.assetid: ee0c9f39-b61c-4c18-bc43-4eada21dca3a
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -60,28 +60,28 @@ template <class T, class TEqual = CSimpleArrayEqualHelper<T>>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleArray::CSimpleArray](../Topic/CSimpleArray::CSimpleArray.md)|The constructor for the simple array.|  
-|[CSimpleArray::~CSimpleArray](../Topic/CSimpleArray::~CSimpleArray.md)|The destructor for the simple array.|  
+|[CSimpleArray::CSimpleArray](#csimplearray__csimplearray)|The constructor for the simple array.|  
+|[CSimpleArray::~CSimpleArray](#csimplearray___dtorcsimplearray)|The destructor for the simple array.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleArray::Add](../Topic/CSimpleArray::Add.md)|Adds a new element to the array.|  
-|[CSimpleArray::Find](../Topic/CSimpleArray::Find.md)|Finds an element in the array.|  
-|[CSimpleArray::GetData](../Topic/CSimpleArray::GetData.md)|Returns a pointer to the data stored in the array.|  
-|[CSimpleArray::GetSize](../Topic/CSimpleArray::GetSize.md)|Returns the number of elements stored in the array.|  
-|[CSimpleArray::Remove](../Topic/CSimpleArray::Remove.md)|Removes a given element from the array.|  
-|[CSimpleArray::RemoveAll](../Topic/CSimpleArray::RemoveAll.md)|Removes all elements from the array.|  
-|[CSimpleArray::RemoveAt](../Topic/CSimpleArray::RemoveAt.md)|Removes the specified element from the array.|  
-|[CSimpleArray::SetAtIndex](../Topic/CSimpleArray::SetAtIndex.md)|Sets the specified element in the array.|  
+|[CSimpleArray::Add](#csimplearray__add)|Adds a new element to the array.|  
+|[CSimpleArray::Find](#csimplearray__find)|Finds an element in the array.|  
+|[CSimpleArray::GetData](#csimplearray__getdata)|Returns a pointer to the data stored in the array.|  
+|[CSimpleArray::GetSize](#csimplearray__getsize)|Returns the number of elements stored in the array.|  
+|[CSimpleArray::Remove](#csimplearray__remove)|Removes a given element from the array.|  
+|[CSimpleArray::RemoveAll](#csimplearray__removeall)|Removes all elements from the array.|  
+|[CSimpleArray::RemoveAt](#csimplearray__removeat)|Removes the specified element from the array.|  
+|[CSimpleArray::SetAtIndex](#csimplearray__setatindex)|Sets the specified element in the array.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
 |[CSimpleArray::operator](../Topic/CSimpleArray::operator.md)|Retrieves an element from the array.|  
-|[CSimpleArray::operator =](../Topic/CSimpleArray::operator%20=.md)|Assignment operator.|  
+|[CSimpleArray::operator =](#csimplearray__operator__eq)|Assignment operator.|  
   
 ## Remarks  
  `CSimpleArray` provides methods for creating and managing a simple array, of any given type `T`.  
@@ -283,10 +283,3 @@ BOOL SetAtIndex(
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

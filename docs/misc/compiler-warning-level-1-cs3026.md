@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 1) CS3026 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS3026"
 ms.assetid: 6c57b2e3-3011-42db-b450-ce9e04c4b4ca
 caps.latest.revision: 5
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

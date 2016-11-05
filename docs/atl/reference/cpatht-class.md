@@ -1,7 +1,7 @@
 ---
 title: "CPathT Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CPathT class"
 ms.assetid: eba4137d-1fd2-4b44-a2e1-0944db64df3c
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -48,8 +48,7 @@ This class represents a path.
 ## Syntax  
   
 ```
-template<typename
-StringType>
+template <typename StringType>
 class CPathT
 ```  
   
@@ -63,72 +62,72 @@ class CPathT
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPathT::PCXSTR](../Topic/CPathT::PCXSTR.md)|A constant string type.|  
-|[CPathT::PXSTR](../Topic/CPathT::PXSTR.md)|A string type.|  
-|[CPathT::XCHAR](../Topic/CPathT::XCHAR.md)|A character type.|  
+|[CPathT::PCXSTR](#cpatht__pcxstr)|A constant string type.|  
+|[CPathT::PXSTR](#cpatht__pxstr)|A string type.|  
+|[CPathT::XCHAR](#cpatht__xchar)|A character type.|  
   
 ### Public Constructors  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPathT::CPathT](../Topic/CPathT::CPathT.md)|The constructor for the path.|  
+|[CPathT::CPathT](#cpatht__cpatht)|The constructor for the path.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPathT::AddBackslash](../Topic/CPathT::AddBackslash.md)|Call this method to add a backslash to the end of a string to create the correct syntax for a path.|  
-|[CPathT::AddExtension](../Topic/CPathT::AddExtension.md)|Call this method to add a file extension to a path.|  
-|[CPathT::Append](../Topic/CPathT::Append.md)|Call this method to append a string to the current path.|  
-|[CPathT::BuildRoot](../Topic/CPathT::BuildRoot.md)|Call this method to create a root path from a given drive number.|  
-|[CPathT::Canonicalize](../Topic/CPathT::Canonicalize.md)|Call this method to convert the path to canonical form.|  
-|[CPathT::Combine](../Topic/CPathT::Combine.md)|Call this method to concatenate a string representing a directory name and a string representing a file path name into one path.|  
-|[CPathT::CommonPrefix](../Topic/CPathT::CommonPrefix.md)|Call this method to determine whether the specified path shares a common prefix with the current path.|  
-|[CPathT::CompactPath](../Topic/CPathT::CompactPath.md)|Call this method to truncate a file path to fit within a given pixel width by replacing path components with ellipses.|  
-|[CPathT::CompactPathEx](../Topic/CPathT::CompactPathEx.md)|Call this method to truncate a file path to fit within a given number of characters by replacing path components with ellipses.|  
-|[CPathT::FileExists](../Topic/CPathT::FileExists.md)|Call this method to check whether the file at this path name exists.|  
-|[CPathT::FindExtension](../Topic/CPathT::FindExtension.md)|Call this method to find the position of the file extension within the path.|  
-|[CPathT::FindFileName](../Topic/CPathT::FindFileName.md)|Call this method to find the position of the file name within the path.|  
-|[CPathT::GetDriveNumber](../Topic/CPathT::GetDriveNumber.md)|Call this method to search the path for a drive letter within the range of 'A' to 'Z' and return the corresponding drive number.|  
-|[CPathT::GetExtension](../Topic/CPathT::GetExtension.md)|Call this method to get the file extension from the path.|  
-|[CPathT::IsDirectory](../Topic/CPathT::IsDirectory.md)|Call this method to check whether the path is a valid directory.|  
-|[CPathT::IsFileSpec](../Topic/CPathT::IsFileSpec.md)|Call this method to search a path for any path-delimiting characters (for example, ':' or '\\' ). If there are no path-delimiting characters present, the path is considered to be a File Spec path.|  
-|[CPathT::IsPrefix](../Topic/CPathT::IsPrefix.md)|Call this method to determine whether a path contains a valid prefix of the type passed by `pszPrefix`.|  
-|[CPathT::IsRelative](../Topic/CPathT::IsRelative.md)|Call this method to determine if the path is relative.|  
-|[CPathT::IsRoot](../Topic/CPathT::IsRoot.md)|Call this method to determine if the path is a directory root.|  
-|[CPathT::IsSameRoot](../Topic/CPathT::IsSameRoot.md)|Call this method to determine whether another path has a common root component with the current path.|  
-|[CPathT::IsUNC](../Topic/CPathT::IsUNC.md)|Call this method to determine whether the path is a valid UNC (universal naming convention) path for a server and share.|  
-|[CPathT::IsUNCServer](../Topic/CPathT::IsUNCServer.md)|Call this method to determine whether the path is a valid UNC (universal naming convention) path for a server only.|  
-|[CPathT::IsUNCServerShare](../Topic/CPathT::IsUNCServerShare.md)|Call this method to determine whether the path is a valid UNC (universal naming convention) share path, \\\ *server*\ *share*.|  
-|[CPathT::MakePretty](../Topic/CPathT::MakePretty.md)|Call this method to convert a path to all lowercase characters to give the path a consistent appearance.|  
-|[CPathT::MatchSpec](../Topic/CPathT::MatchSpec.md)|Call this method to search the path for a string containing a wildcard match type.|  
-|[CPathT::QuoteSpaces](../Topic/CPathT::QuoteSpaces.md)|Call this method to enclose the path in quotation marks if it contains any spaces.|  
-|[CPathT::RelativePathTo](../Topic/CPathT::RelativePathTo.md)|Call this method to create a relative path from one file or folder to another.|  
-|[CPathT::RemoveArgs](../Topic/CPathT::RemoveArgs.md)|Call this method to remove any command-line arguments from the path.|  
-|[CPathT::RemoveBackslash](../Topic/CPathT::RemoveBackslash.md)|Call this method to remove the trailing backslash from the path.|  
-|[CPathT::RemoveBlanks](../Topic/CPathT::RemoveBlanks.md)|Call this method to remove all leading and trailing spaces from the path.|  
-|[CPathT::RemoveExtension](../Topic/CPathT::RemoveExtension.md)|Call this method to remove the file extension from the path, if there is one.|  
-|[CPathT::RemoveFileSpec](../Topic/CPathT::RemoveFileSpec.md)|Call this method to remove the trailing file name and backslash from the path, if it has them.|  
-|[CPathT::RenameExtension](../Topic/CPathT::RenameExtension.md)|Call this method to replace the file name extension in the path with a new extension. If the file name does not contain an extension, the extension will be attached to the end of the string.|  
-|[CPathT::SkipRoot](../Topic/CPathT::SkipRoot.md)|Call this method to parse a path, ignoring the drive letter or UNC server/share path parts.|  
-|[CPathT::StripPath](../Topic/CPathT::StripPath.md)|Call this method to remove the path portion of a fully qualified path and file name.|  
-|[CPathT::StripToRoot](../Topic/CPathT::StripToRoot.md)|Call this method to remove all parts of the path except for the root information.|  
-|[CPathT::UnquoteSpaces](../Topic/CPathT::UnquoteSpaces.md)|Call this method to remove quotation marks from the beginning and end of a path.|  
+|[CPathT::AddBackslash](#cpatht__addbackslash)|Call this method to add a backslash to the end of a string to create the correct syntax for a path.|  
+|[CPathT::AddExtension](#cpatht__addextension)|Call this method to add a file extension to a path.|  
+|[CPathT::Append](#cpatht__append)|Call this method to append a string to the current path.|  
+|[CPathT::BuildRoot](#cpatht__buildroot)|Call this method to create a root path from a given drive number.|  
+|[CPathT::Canonicalize](#cpatht__canonicalize)|Call this method to convert the path to canonical form.|  
+|[CPathT::Combine](#cpatht__combine)|Call this method to concatenate a string representing a directory name and a string representing a file path name into one path.|  
+|[CPathT::CommonPrefix](#cpatht__commonprefix)|Call this method to determine whether the specified path shares a common prefix with the current path.|  
+|[CPathT::CompactPath](#cpatht__compactpath)|Call this method to truncate a file path to fit within a given pixel width by replacing path components with ellipses.|  
+|[CPathT::CompactPathEx](#cpatht__compactpathex)|Call this method to truncate a file path to fit within a given number of characters by replacing path components with ellipses.|  
+|[CPathT::FileExists](#cpatht__fileexists)|Call this method to check whether the file at this path name exists.|  
+|[CPathT::FindExtension](#cpatht__findextension)|Call this method to find the position of the file extension within the path.|  
+|[CPathT::FindFileName](#cpatht__findfilename)|Call this method to find the position of the file name within the path.|  
+|[CPathT::GetDriveNumber](#cpatht__getdrivenumber)|Call this method to search the path for a drive letter within the range of 'A' to 'Z' and return the corresponding drive number.|  
+|[CPathT::GetExtension](#cpatht__getextension)|Call this method to get the file extension from the path.|  
+|[CPathT::IsDirectory](#cpatht__isdirectory)|Call this method to check whether the path is a valid directory.|  
+|[CPathT::IsFileSpec](#cpatht__isfilespec)|Call this method to search a path for any path-delimiting characters (for example, ':' or '\\' ). If there are no path-delimiting characters present, the path is considered to be a File Spec path.|  
+|[CPathT::IsPrefix](#cpatht__isprefix)|Call this method to determine whether a path contains a valid prefix of the type passed by `pszPrefix`.|  
+|[CPathT::IsRelative](#cpatht__isrelative)|Call this method to determine if the path is relative.|  
+|[CPathT::IsRoot](#cpatht__isroot)|Call this method to determine if the path is a directory root.|  
+|[CPathT::IsSameRoot](#cpatht__issameroot)|Call this method to determine whether another path has a common root component with the current path.|  
+|[CPathT::IsUNC](#cpatht__isunc)|Call this method to determine whether the path is a valid UNC (universal naming convention) path for a server and share.|  
+|[CPathT::IsUNCServer](#cpatht__isuncserver)|Call this method to determine whether the path is a valid UNC (universal naming convention) path for a server only.|  
+|[CPathT::IsUNCServerShare](#cpatht__isuncservershare)|Call this method to determine whether the path is a valid UNC (universal naming convention) share path, \\\ *server*\ *share*.|  
+|[CPathT::MakePretty](#cpatht__makepretty)|Call this method to convert a path to all lowercase characters to give the path a consistent appearance.|  
+|[CPathT::MatchSpec](#cpatht__matchspec)|Call this method to search the path for a string containing a wildcard match type.|  
+|[CPathT::QuoteSpaces](#cpatht__quotespaces)|Call this method to enclose the path in quotation marks if it contains any spaces.|  
+|[CPathT::RelativePathTo](#cpatht__relativepathto)|Call this method to create a relative path from one file or folder to another.|  
+|[CPathT::RemoveArgs](#cpatht__removeargs)|Call this method to remove any command-line arguments from the path.|  
+|[CPathT::RemoveBackslash](#cpatht__removebackslash)|Call this method to remove the trailing backslash from the path.|  
+|[CPathT::RemoveBlanks](#cpatht__removeblanks)|Call this method to remove all leading and trailing spaces from the path.|  
+|[CPathT::RemoveExtension](#cpatht__removeextension)|Call this method to remove the file extension from the path, if there is one.|  
+|[CPathT::RemoveFileSpec](#cpatht__removefilespec)|Call this method to remove the trailing file name and backslash from the path, if it has them.|  
+|[CPathT::RenameExtension](#cpatht__renameextension)|Call this method to replace the file name extension in the path with a new extension. If the file name does not contain an extension, the extension will be attached to the end of the string.|  
+|[CPathT::SkipRoot](#cpatht__skiproot)|Call this method to parse a path, ignoring the drive letter or UNC server/share path parts.|  
+|[CPathT::StripPath](#cpatht__strippath)|Call this method to remove the path portion of a fully qualified path and file name.|  
+|[CPathT::StripToRoot](#cpatht__striptoroot)|Call this method to remove all parts of the path except for the root information.|  
+|[CPathT::UnquoteSpaces](#cpatht__unquotespaces)|Call this method to remove quotation marks from the beginning and end of a path.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
 |[CPathT::operator const StringType &](../Topic/CPathT::operator%20const%20StringType%20&.md)|This operator allows the object to be treated like a string.|  
-|[CPathT::operator CPathT::PCXSTR](../Topic/CPathT::operator%20CPathT::PCXSTR.md)|This operator allows the object to be treated like a string.|  
+|[CPathT::operator CPathT::PCXSTR](#cpatht__operator_cpatht__pcxstr)|This operator allows the object to be treated like a string.|  
 |[CPathT::operator StringType &](../Topic/CPathT::operator%20StringType%20&.md)|This operator allows the object to be treated like a string.|  
-|[CPathT::operator +=](../Topic/CPathT::operator%20+=.md)|This operator appends a string to the path.|  
+|[CPathT::operator +=](#cpatht__operator__add_eq)|This operator appends a string to the path.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPathT::m_strPath](../Topic/CPathT::m_strPath.md)|The path.|  
+|[CPathT::m_strPath](#cpatht__m_strpath)|The path.|  
   
 ## Remarks  
  `CPath`, `CPathA`, and `CPathW` are instantiations of `CPathT` defined as follows:  
@@ -775,8 +774,3 @@ typedef StringType::XCHAR XCHAR;
 ## See Also  
  [Classes](../../atl/reference/atl-classes.md)   
  [CStringT Class](../../atl-mfc-shared/reference/cstringt-class.md)
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "&lt;number&gt; power closure argument &#39;n&#39; must be from 1 to 256. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

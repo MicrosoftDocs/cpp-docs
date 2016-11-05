@@ -1,7 +1,7 @@
 ---
 title: "CSecurityDesc Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CSecurityDesc class"
 ms.assetid: 3767a327-378f-4690-ba40-4d9f6a1f5ee4
-caps.latest.revision: 23
+caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -55,46 +55,46 @@ class CSecurityDesc
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSecurityDesc::CSecurityDesc](../Topic/CSecurityDesc::CSecurityDesc.md)|The constructor.|  
-|[CSecurityDesc::~CSecurityDesc](../Topic/CSecurityDesc::~CSecurityDesc.md)|The destructor.|  
+|[CSecurityDesc::CSecurityDesc](#csecuritydesc__csecuritydesc)|The constructor.|  
+|[CSecurityDesc::~CSecurityDesc](#csecuritydesc___dtorcsecuritydesc)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSecurityDesc::FromString](../Topic/CSecurityDesc::FromString.md)|Converts a string-format security descriptor into a valid, functional security descriptor.|  
-|[CSecurityDesc::GetControl](../Topic/CSecurityDesc::GetControl.md)|Retrieves control information from the security descriptor.|  
-|[CSecurityDesc::GetDacl](../Topic/CSecurityDesc::GetDacl.md)|Retrieves discretionary access-control list (DACL) information from the security descriptor.|  
-|[CSecurityDesc::GetGroup](../Topic/CSecurityDesc::GetGroup.md)|Retrieves the primary group information from the security descriptor.|  
-|[CSecurityDesc::GetOwner](../Topic/CSecurityDesc::GetOwner.md)|Retrieves owner informaton from the security descriptor.|  
-|[CSecurityDesc::GetPSECURITY_DESCRIPTOR](../Topic/CSecurityDesc::GetPSECURITY_DESCRIPTOR.md)|Returns a pointer to the **SECURITY_DESCRIPTOR** structure.|  
-|[CSecurityDesc::GetSacl](../Topic/CSecurityDesc::GetSacl.md)|Retrieves system access-control list (SACL) information from the security descriptor.|  
-|[CSecurityDesc::IsDaclAutoInherited](../Topic/CSecurityDesc::IsDaclAutoInherited.md)|Determines if the DACL is configured to support automatic propagation.|  
-|[CSecurityDesc::IsDaclDefaulted](../Topic/CSecurityDesc::IsDaclDefaulted.md)|Determines if the security descriptor is configured with a default DACL.|  
-|[CSecurityDesc::IsDaclPresent](../Topic/CSecurityDesc::IsDaclPresent.md)|Determines if the security descriptor contains a DACL.|  
-|[CSecurityDesc::IsDaclProtected](../Topic/CSecurityDesc::IsDaclProtected.md)|Determines if the DACL is configured to prevent modifications.|  
-|[CSecurityDesc::IsGroupDefaulted](../Topic/CSecurityDesc::IsGroupDefaulted.md)|Determines if the security descriptor's group security identifier (SID) was set by default.|  
-|[CSecurityDesc::IsOwnerDefaulted](../Topic/CSecurityDesc::IsOwnerDefaulted.md)|Determines if the security descriptor's owner SID was set by default.|  
-|[CSecurityDesc::IsSaclAutoInherited](../Topic/CSecurityDesc::IsSaclAutoInherited.md)|Determines if the SACL is configured to support automatic propagation.|  
-|[CSecurityDesc::IsSaclDefaulted](../Topic/CSecurityDesc::IsSaclDefaulted.md)|Determines if the security descriptor is configured with a default SACL.|  
-|[CSecurityDesc::IsSaclPresent](../Topic/CSecurityDesc::IsSaclPresent.md)|Determines if the security descriptor contains a SACL.|  
-|[CSecurityDesc::IsSaclProtected](../Topic/CSecurityDesc::IsSaclProtected.md)|Determines if the SACL is configured to prevent modifications.|  
-|[CSecurityDesc::IsSelfRelative](../Topic/CSecurityDesc::IsSelfRelative.md)|Determines if the security descriptor is in self-relative format.|  
-|[CSecurityDesc::MakeAbsolute](../Topic/CSecurityDesc::MakeAbsolute.md)|Call this method to convert the security descriptor to absolute format.|  
-|[CSecurityDesc::MakeSelfRelative](../Topic/CSecurityDesc::MakeSelfRelative.md)|Call this method to convert the security descriptor to self-relative format.|  
-|[CSecurityDesc::SetControl](../Topic/CSecurityDesc::SetControl.md)|Sets the control bits of a security descriptor.|  
-|[CSecurityDesc::SetDacl](../Topic/CSecurityDesc::SetDacl.md)|Sets information in a DACL. If a DACL is already present in the security descriptor, it is replaced.|  
-|[CSecurityDesc::SetGroup](../Topic/CSecurityDesc::SetGroup.md)|Sets the primary group information of an absolute format security descriptor, replacing any primary group information already present.|  
-|[CSecurityDesc::SetOwner](../Topic/CSecurityDesc::SetOwner.md)|Sets the owner information of an absolute format security descriptor, replacing any owner information already present.|  
-|[CSecurityDesc::SetSacl](../Topic/CSecurityDesc::SetSacl.md)|Sets information in a SACL. If a SACL is already present in the security descriptor, it is replaced.|  
-|[CSecurityDesc::ToString](../Topic/CSecurityDesc::ToString.md)|Converts a security descriptor to a string format.|  
+|[CSecurityDesc::FromString](#csecuritydesc__fromstring)|Converts a string-format security descriptor into a valid, functional security descriptor.|  
+|[CSecurityDesc::GetControl](#csecuritydesc__getcontrol)|Retrieves control information from the security descriptor.|  
+|[CSecurityDesc::GetDacl](#csecuritydesc__getdacl)|Retrieves discretionary access-control list (DACL) information from the security descriptor.|  
+|[CSecurityDesc::GetGroup](#csecuritydesc__getgroup)|Retrieves the primary group information from the security descriptor.|  
+|[CSecurityDesc::GetOwner](#csecuritydesc__getowner)|Retrieves owner informaton from the security descriptor.|  
+|[CSecurityDesc::GetPSECURITY_DESCRIPTOR](#csecuritydesc__getpsecurity_descriptor)|Returns a pointer to the **SECURITY_DESCRIPTOR** structure.|  
+|[CSecurityDesc::GetSacl](#csecuritydesc__getsacl)|Retrieves system access-control list (SACL) information from the security descriptor.|  
+|[CSecurityDesc::IsDaclAutoInherited](#csecuritydesc__isdaclautoinherited)|Determines if the DACL is configured to support automatic propagation.|  
+|[CSecurityDesc::IsDaclDefaulted](#csecuritydesc__isdacldefaulted)|Determines if the security descriptor is configured with a default DACL.|  
+|[CSecurityDesc::IsDaclPresent](#csecuritydesc__isdaclpresent)|Determines if the security descriptor contains a DACL.|  
+|[CSecurityDesc::IsDaclProtected](#csecuritydesc__isdaclprotected)|Determines if the DACL is configured to prevent modifications.|  
+|[CSecurityDesc::IsGroupDefaulted](#csecuritydesc__isgroupdefaulted)|Determines if the security descriptor's group security identifier (SID) was set by default.|  
+|[CSecurityDesc::IsOwnerDefaulted](#csecuritydesc__isownerdefaulted)|Determines if the security descriptor's owner SID was set by default.|  
+|[CSecurityDesc::IsSaclAutoInherited](#csecuritydesc__issaclautoinherited)|Determines if the SACL is configured to support automatic propagation.|  
+|[CSecurityDesc::IsSaclDefaulted](#csecuritydesc__issacldefaulted)|Determines if the security descriptor is configured with a default SACL.|  
+|[CSecurityDesc::IsSaclPresent](#csecuritydesc__issaclpresent)|Determines if the security descriptor contains a SACL.|  
+|[CSecurityDesc::IsSaclProtected](#csecuritydesc__issaclprotected)|Determines if the SACL is configured to prevent modifications.|  
+|[CSecurityDesc::IsSelfRelative](#csecuritydesc__isselfrelative)|Determines if the security descriptor is in self-relative format.|  
+|[CSecurityDesc::MakeAbsolute](#csecuritydesc__makeabsolute)|Call this method to convert the security descriptor to absolute format.|  
+|[CSecurityDesc::MakeSelfRelative](#csecuritydesc__makeselfrelative)|Call this method to convert the security descriptor to self-relative format.|  
+|[CSecurityDesc::SetControl](#csecuritydesc__setcontrol)|Sets the control bits of a security descriptor.|  
+|[CSecurityDesc::SetDacl](#csecuritydesc__setdacl)|Sets information in a DACL. If a DACL is already present in the security descriptor, it is replaced.|  
+|[CSecurityDesc::SetGroup](#csecuritydesc__setgroup)|Sets the primary group information of an absolute format security descriptor, replacing any primary group information already present.|  
+|[CSecurityDesc::SetOwner](#csecuritydesc__setowner)|Sets the owner information of an absolute format security descriptor, replacing any owner information already present.|  
+|[CSecurityDesc::SetSacl](#csecuritydesc__setsacl)|Sets information in a SACL. If a SACL is already present in the security descriptor, it is replaced.|  
+|[CSecurityDesc::ToString](#csecuritydesc__tostring)|Converts a security descriptor to a string format.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSecurityDesc::operator const SECURITY_DESCRIPTOR *](../Topic/CSecurityDesc::operator%20const%20SECURITY_DESCRIPTOR%20*.md)|Returns a pointer to the **SECURITY_DESCRIPTOR** structure.|  
-|[CSecurityDesc::operator =](../Topic/CSecurityDesc::operator%20=.md)|Assignment operator.|  
+|[CSecurityDesc::operator const SECURITY_DESCRIPTOR *](#csecuritydesc__operator_const_security_descriptor__star)|Returns a pointer to the **SECURITY_DESCRIPTOR** structure.|  
+|[CSecurityDesc::operator =](#csecuritydesc__operator__eq)|Assignment operator.|  
   
 ## Remarks  
  The **SECURITY_DESCRIPTOR** structure contains the security information associated with an object. Applications use this structure to set and query an object's security status. See also [AtlGetSecurityDescriptor](../Topic/AtlGetSecurityDescriptor.md).  
@@ -148,7 +148,7 @@ bool FromString(LPCTSTR pstr) throw(...);
  Returns true on success. Throws an exception on failure.  
   
 ### Remarks  
- The string can be created by using [CSecurityDesc::ToString](../Topic/CSecurityDesc::ToString.md). Converting the security descriptor into a string makes it easier to store and transmit.  
+ The string can be created by using [CSecurityDesc::ToString](#csecuritydesc__tostring). Converting the security descriptor into a string makes it easier to store and transmit.  
   
  This method is only available with Windows 2000 and later because it calls [ConvertStringSecurityDescriptorToSecurityDescriptor](http://msdn.microsoft.com/library/windows/desktop/aa376401).  
   
@@ -291,7 +291,7 @@ bool IsDaclDefaulted() const throw();
   
  This flag is used to determine how the final DACL on the object is to be computed and is not stored physically in the security descriptor control of the securable object.  
   
- To set this flag, use the [CSecurityDesc::SetDacl](../Topic/CSecurityDesc::SetDacl.md) method.  
+ To set this flag, use the [CSecurityDesc::SetDacl](#csecuritydesc__setdacl) method.  
   
 ##  <a name="csecuritydesc__isdaclpresent"></a>  CSecurityDesc::IsDaclPresent  
  Determines if the security descriptor contains a discretionary access-control list (DACL).  
@@ -308,7 +308,7 @@ bool IsDaclPresent() const throw();
   
  This flag is used to hold the security information specified by a caller until the security descriptor is associated with a securable object. Once the security descriptor is associated with a securable object, the SE_DACL_PRESENT flag is always set in the security descriptor control.  
   
- To set this flag, use the [CSecurityDesc::SetDacl](../Topic/CSecurityDesc::SetDacl.md) method.  
+ To set this flag, use the [CSecurityDesc::SetDacl](#csecuritydesc__setdacl) method.  
   
 ##  <a name="csecuritydesc__isdaclprotected"></a>  CSecurityDesc::IsDaclProtected  
  Determines if the discretionary access-control list (DACL) is configured to prevent modifications.  
@@ -321,7 +321,7 @@ bool IsDaclProtected() const throw();
  Returns true if the DACL is configured to prevent the security descriptor from being modified by inheritable access-control entries (ACEs). Returns false otherwise.  
   
 ### Remarks  
- To set this flag, use the [CSecurityDesc::SetDacl](../Topic/CSecurityDesc::SetDacl.md) method.  
+ To set this flag, use the [CSecurityDesc::SetDacl](#csecuritydesc__setdacl) method.  
   
  This method is only meaningful for Windows 2000 or later, as only Windows 2000 supports automatic propagation of inheritable ACEs.  
   
@@ -336,7 +336,7 @@ bool IsGroupDefaulted() const throw();
  Returns true if a default mechanism, rather than the original provider of the security descriptor, provided the security descriptor's group SID. Returns false otherwise.  
   
 ### Remarks  
- To set this flag, use the [CSecurityDesc::SetGroup](../Topic/CSecurityDesc::SetGroup.md) method.  
+ To set this flag, use the [CSecurityDesc::SetGroup](#csecuritydesc__setgroup) method.  
   
 ##  <a name="csecuritydesc__isownerdefaulted"></a>  CSecurityDesc::IsOwnerDefaulted  
  Determines if the security descriptor's owner security identifier (SID) was set by default.  
@@ -349,7 +349,7 @@ bool IsOwnerDefaulted() const throw();
  Returns true if a default mechanism, rather than the original provider of the security descriptor, provided the security descriptor's owner SID. Returns false otherwise.  
   
 ### Remarks  
- To set this flag, use the [CSecurityDesc::SetOwner](../Topic/CSecurityDesc::SetOwner.md) method.  
+ To set this flag, use the [CSecurityDesc::SetOwner](#csecuritydesc__setowner) method.  
   
 ##  <a name="csecuritydesc__issaclautoinherited"></a>  CSecurityDesc::IsSaclAutoInherited  
  Determines if the system access-control list (SACL) is configured to support automatic propagation.  
@@ -377,7 +377,7 @@ bool IsSaclDefaulted() const throw();
 ### Remarks  
  This flag can affect how the system treats the SACL, with respect to access-control entry (ACE) inheritance. The system ignores this flag if the SE_SACL_PRESENT flag is not set.  
   
- To set this flag, use the [CSecurityDesc::SetSacl](../Topic/CSecurityDesc::SetSacl.md) method.  
+ To set this flag, use the [CSecurityDesc::SetSacl](#csecuritydesc__setsacl) method.  
   
 ##  <a name="csecuritydesc__issaclpresent"></a>  CSecurityDesc::IsSaclPresent  
  Determines if the security descriptor contains a system access-control list (SACL).  
@@ -390,7 +390,7 @@ bool IsSaclPresent() const throw();
  Returns true if the security descriptor contains a SACL, false otherwise.  
   
 ### Remarks  
- To set this flag, use the [CSecurityDesc::SetSacl](../Topic/CSecurityDesc::SetSacl.md) method.  
+ To set this flag, use the [CSecurityDesc::SetSacl](#csecuritydesc__setsacl) method.  
   
 ##  <a name="csecuritydesc__issaclprotected"></a>  CSecurityDesc::IsSaclProtected  
  Determines if the system access-control list (SACL) is configured to prevent modifications.  
@@ -403,7 +403,7 @@ bool IsSaclProtected() const throw();
  Returns true if the SACL is configured to prevent the security descriptor from being modified by inheritable access-control entries (ACEs). Returns false otherwise.  
   
 ### Remarks  
- To set this flag, use the [CSecurityDesc::SetSacl](../Topic/CSecurityDesc::SetSacl.md) method.  
+ To set this flag, use the [CSecurityDesc::SetSacl](#csecuritydesc__setsacl) method.  
   
  This method is only meaningful for Windows 2000 or later, as only Windows 2000 supports automatic propagation of inheritable ACEs.  
   
@@ -606,10 +606,3 @@ bool ToString(
  [SECURITY_DESCRIPTOR](http://msdn.microsoft.com/library/windows/desktop/aa379561)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Security Global Functions](../../atl/reference/security-global-functions.md)
-
-
-
-
-
-
-

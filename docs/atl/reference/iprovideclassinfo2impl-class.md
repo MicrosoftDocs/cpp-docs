@@ -1,7 +1,7 @@
 ---
 title: "IProvideClassInfo2Impl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -21,7 +21,7 @@ helpviewer_keywords:
   - "IProvideClassInfo2 ATL implementation"
   - "class information, ATL"
 ms.assetid: d74956e8-9c69-4cba-b99d-ca1ac031bb9d
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -80,20 +80,20 @@ template <const CLSID* pcoclsid,
   
 |Name|Description|  
 |----------|-----------------|  
-|[IProvideClassInfo2Impl::IProvideClassInfo2Impl](../Topic/IProvideClassInfo2Impl::IProvideClassInfo2Impl.md)|Constructor.|  
+|[IProvideClassInfo2Impl::IProvideClassInfo2Impl](#iprovideclassinfo2impl__iprovideclassinfo2impl)|Constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[IProvideClassInfo2Impl::GetClassInfo](../Topic/IProvideClassInfo2Impl::GetClassInfo.md)|Retrieves an **ITypeInfo** pointer to the coclass' type information.|  
-|[IProvideClassInfo2Impl::GetGUID](../Topic/IProvideClassInfo2Impl::GetGUID.md)|Retrieves the GUID for the object's outgoing dispinterface.|  
+|[IProvideClassInfo2Impl::GetClassInfo](#iprovideclassinfo2impl__getclassinfo)|Retrieves an **ITypeInfo** pointer to the coclass' type information.|  
+|[IProvideClassInfo2Impl::GetGUID](#iprovideclassinfo2impl__getguid)|Retrieves the GUID for the object's outgoing dispinterface.|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[IProvideClassInfo2Impl::_tih](../Topic/IProvideClassInfo2Impl::_tih.md)|Manages the type information for the coclass.|  
+|[IProvideClassInfo2Impl::_tih](#iprovideclassinfo2impl___tih)|Manages the type information for the coclass.|  
   
 ## Remarks  
  The [IProvideClassInfo2](http://msdn.microsoft.com/library/windows/desktop/ms693764) interface extends [IProvideClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms687303) by adding the `GetGUID` method. This method allows a client to retrieve an object's outgoing interface IID for its default event set. Class `IProvideClassInfo2Impl` provides a default implementation of the **IProvideClassInfo** and `IProvideClassInfo2` methods.  
@@ -138,7 +138,7 @@ IProvideClassInfo2Impl();
 ```  
   
 ### Remarks  
- Calls `AddRef` on the [_tih](../Topic/IProvideClassInfo2Impl::_tih.md) member. The destructor calls **Release**.  
+ Calls `AddRef` on the [_tih](#iprovideclassinfo2impl___tih) member. The destructor calls **Release**.  
   
 ##  <a name="iprovideclassinfo2impl___tih"></a>  IProvideClassInfo2Impl::_tih  
  This static data member is an instance of the class template parameter, `tihclass`, which by default is `CComTypeInfoHolder`.  
@@ -153,10 +153,3 @@ static  tihclass
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

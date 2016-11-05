@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting Exceptions: System.DeploymentFramework.DeploymentDownloadException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/29/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -39,7 +39,7 @@ A `T:System.DeploymentFramework.DeploymentDownloadException` occurs if a network
   
 ## Associated Tips  
  **Examine InnerException to determine the underlying System.Net or System.IO exception.**  
- This exception occurs whenever there is a network exception when an application update is being downloaded. Examine the exception's <xref:System.Exception.InnerException*> property to determine the underlying exception.  
+ This exception occurs whenever there is a network exception when an application update is being downloaded. Examine the exception's <xref:System.Exception.InnerException%2A> property to determine the underlying exception.  
   
 ## See Also  
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   

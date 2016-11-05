@@ -1,7 +1,7 @@
 ---
 title: "-vmm, -vms, -vmv (General Purpose Representation) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -82,7 +82,7 @@ Used when [/vmb, /vmg (Representation Method)](../../build/reference/vmb-vmg-rep
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
   
 ## See Also  
  [/vmb, /vmg (Representation Method)](../../build/reference/vmb-vmg-representation-method.md)   

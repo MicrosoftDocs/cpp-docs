@@ -38,7 +38,7 @@ translation.priority.mt:
 # &#39;System.Runtime.InteropServices.DllImportAttribute&#39; cannot be applied to interface methods
 A procedure is defined inside an interface, but the procedure definition applies the <xref:System.Runtime.InteropServices.DllImportAttribute>.  
   
- The common language runtime (CLR) recognizes this attribute and its <xref:System.Runtime.InteropServices._Assembly.EntryPoint*> property as designating a replacement procedure defined in an unmanaged dynamic-link library (DLL) outside the .NET Framework. When code calls the procedure to which the <xref:System.Runtime.InteropServices.DllImportAttribute> is applied, the common language runtime calls the designated unmanaged procedure instead.  
+ The common language runtime (CLR) recognizes this attribute and its <xref:System.Runtime.InteropServices._Assembly.EntryPoint%2A> property as designating a replacement procedure defined in an unmanaged dynamic-link library (DLL) outside the .NET Framework. When code calls the procedure to which the <xref:System.Runtime.InteropServices.DllImportAttribute> is applied, the common language runtime calls the designated unmanaged procedure instead.  
   
  Because the definition of a procedure inside an interface does not include any implementation, it cannot interoperate with unmanaged platforms outside the .NET Framework.  
   

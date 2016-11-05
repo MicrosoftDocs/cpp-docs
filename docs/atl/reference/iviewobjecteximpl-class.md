@@ -1,7 +1,7 @@
 ---
 title: "IViewObjectExImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -23,7 +23,7 @@ helpviewer_keywords:
   - "advise sinks"
   - "IViewObjectExImpl class"
 ms.assetid: ad6de760-1ee5-4883-b033-ae57beffc369
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -64,18 +64,18 @@ template<class T>  class ATL_NO_VTABLE IViewObjectExImpl :  public IViewObjectEx
   
 |Name|Description|  
 |----------|-----------------|  
-|[IViewObjectExImpl::Draw](../Topic/IViewObjectExImpl::Draw.md)|Draws a representation of the control onto a device context.|  
-|[IViewObjectExImpl::Freeze](../Topic/IViewObjectExImpl::Freeze.md)|Freezes the drawn representation of a control so it won't change until an `Unfreeze`. The ATL implementation returns **E_NOTIMPL**.|  
-|[IViewObjectExImpl::GetAdvise](../Topic/IViewObjectExImpl::GetAdvise.md)|Retrieves an existing advisory sink connection on the control, if there is one.|  
-|[IViewObjectExImpl::GetColorSet](../Topic/IViewObjectExImpl::GetColorSet.md)|Returns the logical palette used by the control for drawing. The ATL implementation returns **E_NOTIMPL**.|  
-|[IViewObjectExImpl::GetExtent](../Topic/IViewObjectExImpl::GetExtent.md)|Retrieves the control's display size in HIMETRIC units (0.01 millimeter per unit) from the control class data member [CComControlBase::m_sizeExtent](../Topic/CComControlBase::m_sizeExtent.md).|  
-|[IViewObjectExImpl::GetNaturalExtent](../Topic/IViewObjectExImpl::GetNaturalExtent.md)|Provides sizing hints from the container for the object to use as the user resizes it.|  
-|[IViewObjectExImpl::GetRect](../Topic/IViewObjectExImpl::GetRect.md)|Returns a rectangle describing a requested drawing aspect. The ATL implementation returns **E_NOTIMPL**.|  
-|[IViewObjectExImpl::GetViewStatus](../Topic/IViewObjectExImpl::GetViewStatus.md)|Returns information about the opacity of the object and what drawing aspects are supported.|  
-|[IViewObjectExImpl::QueryHitPoint](../Topic/IViewObjectExImpl::QueryHitPoint.md)|Checks if the specified point is in the specified rectangle and returns a [HITRESULT](http://msdn.microsoft.com/library/windows/desktop/ms682187) value in `pHitResult`.|  
-|[IViewObjectExImpl::QueryHitRect](../Topic/IViewObjectExImpl::QueryHitRect.md)|Checks whether the control's display rectangle overlaps any point in the specified location rectangle and returns a **HITRESULT** value in `pHitResult`.|  
-|[IViewObjectExImpl::SetAdvise](../Topic/IViewObjectExImpl::SetAdvise.md)|Sets up a connection between the control and an advise sink so the sink can be notified about changes in the control's view.|  
-|[IViewObjectExImpl::Unfreeze](../Topic/IViewObjectExImpl::Unfreeze.md)|Unfreezes the drawn representation of the control. The ATL implementation returns **E_NOTIMPL**.|  
+|[IViewObjectExImpl::Draw](#iviewobjecteximpl__draw)|Draws a representation of the control onto a device context.|  
+|[IViewObjectExImpl::Freeze](#iviewobjecteximpl__freeze)|Freezes the drawn representation of a control so it won't change until an `Unfreeze`. The ATL implementation returns **E_NOTIMPL**.|  
+|[IViewObjectExImpl::GetAdvise](#iviewobjecteximpl__getadvise)|Retrieves an existing advisory sink connection on the control, if there is one.|  
+|[IViewObjectExImpl::GetColorSet](#iviewobjecteximpl__getcolorset)|Returns the logical palette used by the control for drawing. The ATL implementation returns **E_NOTIMPL**.|  
+|[IViewObjectExImpl::GetExtent](#iviewobjecteximpl__getextent)|Retrieves the control's display size in HIMETRIC units (0.01 millimeter per unit) from the control class data member [CComControlBase::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__m_sizeextent).|  
+|[IViewObjectExImpl::GetNaturalExtent](#iviewobjecteximpl__getnaturalextent)|Provides sizing hints from the container for the object to use as the user resizes it.|  
+|[IViewObjectExImpl::GetRect](#iviewobjecteximpl__getrect)|Returns a rectangle describing a requested drawing aspect. The ATL implementation returns **E_NOTIMPL**.|  
+|[IViewObjectExImpl::GetViewStatus](#iviewobjecteximpl__getviewstatus)|Returns information about the opacity of the object and what drawing aspects are supported.|  
+|[IViewObjectExImpl::QueryHitPoint](#iviewobjecteximpl__queryhitpoint)|Checks if the specified point is in the specified rectangle and returns a [HITRESULT](http://msdn.microsoft.com/library/windows/desktop/ms682187) value in `pHitResult`.|  
+|[IViewObjectExImpl::QueryHitRect](#iviewobjecteximpl__queryhitrect)|Checks whether the control's display rectangle overlaps any point in the specified location rectangle and returns a **HITRESULT** value in `pHitResult`.|  
+|[IViewObjectExImpl::SetAdvise](#iviewobjecteximpl__setadvise)|Sets up a connection between the control and an advise sink so the sink can be notified about changes in the control's view.|  
+|[IViewObjectExImpl::Unfreeze](#iviewobjecteximpl__unfreeze)|Unfreezes the drawn representation of the control. The ATL implementation returns **E_NOTIMPL**.|  
   
 ## Remarks  
  The [IViewObject](http://msdn.microsoft.com/library/windows/desktop/ms680763), [IViewObject2](http://msdn.microsoft.com/library/windows/desktop/ms691318), and [IViewObjectEx](http://msdn.microsoft.com/library/windows/desktop/ms682375) interfaces enable a control to display itself directly, and to create and manage an advise sink to notify the container of changes in the control display. The **IViewObjectEx** interface provides support for extended control features such as flicker-free drawing, non-rectangular and transparent controls, and hit-testing (for example, how close a mouse click must be to be considered on the control). Class `IViewObjectExImpl` provides a default implementation of these interfaces and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -132,7 +132,7 @@ STDMETHOD(GetAdvise)(
 ```  
   
 ### Remarks  
- The advisory sink is stored in the control class data member [CComControlBase::m_spAdviseSink](../Topic/CComControlBase::m_spAdviseSink.md).  
+ The advisory sink is stored in the control class data member [CComControlBase::m_spAdviseSink](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__m_spadvisesink).  
   
  See [IViewObject::GetAdvise](http://msdn.microsoft.com/library/windows/desktop/ms692772) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -152,7 +152,7 @@ STDMETHOD(GetColorSet)(DWORD /* dwAspect */,
  See [IViewObject::GetColorSet](http://msdn.microsoft.com/library/windows/desktop/ms686553) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ##  <a name="iviewobjecteximpl__getextent"></a>  IViewObjectExImpl::GetExtent  
- Retrieves the control's display size in HIMETRIC units (0.01 millimeter per unit) from the control class data member [CComControlBase::m_sizeExtent](../Topic/CComControlBase::m_sizeExtent.md).  
+ Retrieves the control's display size in HIMETRIC units (0.01 millimeter per unit) from the control class data member [CComControlBase::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__m_sizeextent).  
   
 ```
 STDMETHOD(GetExtent)(DWORD /* dwDrawAspect */,
@@ -177,7 +177,7 @@ STDMETHOD(GetNaturalExtent)(DWORD dwAspect,
 ```  
   
 ### Remarks  
- If `dwAspect` is `DVASPECT_CONTENT` and *pExtentInfo->dwExtentMode* is **DVEXTENT_CONTENT**, sets * `psizel` to the control class's data member [CComControlBase::m_sizeNatural](../Topic/CComControlBase::m_sizeNatural.md). Otherwise, returns an error `HRESULT`.  
+ If `dwAspect` is `DVASPECT_CONTENT` and *pExtentInfo->dwExtentMode* is **DVEXTENT_CONTENT**, sets * `psizel` to the control class's data member [CComControlBase::m_sizeNatural](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__m_sizenatural). Otherwise, returns an error `HRESULT`.  
   
  See [IViewObjectEx::GetNaturalExtent](http://msdn.microsoft.com/library/windows/desktop/ms683718) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -278,7 +278,7 @@ HRESULT CloseHandle(HANDLE hHandle);
  Return S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- The handle passed to this method was previously associated with this object by a call to [CWorkerThread::AddHandle](../Topic/CWorkerThread::AddHandle.md).  
+ The handle passed to this method was previously associated with this object by a call to [CWorkerThread::AddHandle](../../atl/reference/cworkerthread-class.md#cworkerthread__addhandle).  
   
 ### Example  
  The following code shows a simple implementation of `IWorkerThreadClient::CloseHandle`.  
@@ -303,7 +303,7 @@ HRESULT Execute(DWORD_PTR dwParam,  HANDLE hObject);
  Return S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- The handle and DWORD/pointer passed to this method were previously associated with this object by a call to [CWorkerThread::AddHandle](../Topic/CWorkerThread::AddHandle.md).  
+ The handle and DWORD/pointer passed to this method were previously associated with this object by a call to [CWorkerThread::AddHandle](../../atl/reference/cworkerthread-class.md#cworkerthread__addhandle).  
   
 ### Example  
  The following code shows a simple implementation of `IWorkerThreadClient::Execute`.  
@@ -316,10 +316,3 @@ HRESULT Execute(DWORD_PTR dwParam,  HANDLE hObject);
  [Tutorial](../../atl/active-template-library-atl-tutorial.md)   
  [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "Could not determine whether &#39;assembly&#39; is a multifile assembly. The assembly manifest may be corrupt. | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

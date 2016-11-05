@@ -1,7 +1,7 @@
 ---
 title: "IEnumOnSTLImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "IEnumOnSTLImpl class"
 ms.assetid: 1789e77b-88b8-447d-a490-806b918912ce
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -69,29 +69,29 @@ template <class Base,
   
 |Name|Description|  
 |----------|-----------------|  
-|[IEnumOnSTLImpl::Clone](../Topic/IEnumOnSTLImpl::Clone.md)|The implementation of [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx).|  
-|[IEnumOnSTLImpl::Init](/visual-studio/debugger/init)|Initializes the enumerator.|  
-|[IEnumOnSTLImpl::Next](../Topic/IEnumOnSTLImpl::Next.md)|The implementation of [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx).|  
-|[IEnumOnSTLImpl::Reset](../Topic/IEnumOnSTLImpl::Reset.md)|The implementation of [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx).|  
-|[IEnumOnSTLImpl::Skip](../Topic/IEnumOnSTLImpl::Skip.md)|The implementation of [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx).|  
+|[IEnumOnSTLImpl::Clone](#ienumonstlimpl__clone)|The implementation of [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx).|  
+|[IEnumOnSTLImpl::Init](#ienumonstlimpl__init)|Initializes the enumerator.|  
+|[IEnumOnSTLImpl::Next](#ienumonstlimpl__next)|The implementation of [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx).|  
+|[IEnumOnSTLImpl::Reset](#ienumonstlimpl__reset)|The implementation of [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx).|  
+|[IEnumOnSTLImpl::Skip](#ienumonstlimpl__skip)|The implementation of [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx).|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[IEnumOnSTLImpl::m_iter](../Topic/IEnumOnSTLImpl::m_iter.md)|The iterator that represents the enumerator's current position within the collection.|  
-|[IEnumOnSTLImpl::m_pcollection](../Topic/IEnumOnSTLImpl::m_pcollection.md)|A pointer to the STL container holding the items to be enumerated.|  
-|[IEnumOnSTLImpl::m_spUnk](../Topic/IEnumOnSTLImpl::m_spUnk.md)|The **IUnknown** pointer of the object supplying the collection.|  
+|[IEnumOnSTLImpl::m_iter](#ienumonstlimpl__m_iter)|The iterator that represents the enumerator's current position within the collection.|  
+|[IEnumOnSTLImpl::m_pcollection](#ienumonstlimpl__m_pcollection)|A pointer to the STL container holding the items to be enumerated.|  
+|[IEnumOnSTLImpl::m_spUnk](#ienumonstlimpl__m_spunk)|The **IUnknown** pointer of the object supplying the collection.|  
   
 ## Remarks  
  `IEnumOnSTLImpl` provides the implementation for a COM enumerator interface where the items being enumerated are stored in an STL-compatible container. This class is analogous to the [CComEnumImpl](../../atl/reference/ccomenumimpl-class.md) class, which provides an implementation for an enumerator interface based on an array.  
   
 > [!NOTE]
->  See [CComEnumImpl::Init](/visual-studio/debugger/init) for details on further differences between `CComEnumImpl` and `IEnumOnSTLImpl`.  
+>  See [CComEnumImpl::Init](../../atl/reference/ccomenumimpl-class.md#ccomenumimpl__init) for details on further differences between `CComEnumImpl` and `IEnumOnSTLImpl`.  
   
  Typically, you will *not* need to create your own enumerator class by deriving from this interface implementation. If you want to use an ATL-supplied enumerator based on an STL container, it is more common to create an instance of [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md), or to create a collection class that returns an enumerator by deriving from [ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md).  
   
- However, if you do need to provide a custom enumerator (for example, one that exposes interfaces in addition to the enumerator interface), you can derive from this class. In this situation it is likely that you'll need to override the [Clone](../Topic/IEnumOnSTLImpl::Clone.md) method to provide your own implementation.  
+ However, if you do need to provide a custom enumerator (for example, one that exposes interfaces in addition to the enumerator interface), you can derive from this class. In this situation it is likely that you'll need to override the [Clone](#ienumonstlimpl__clone) method to provide your own implementation.  
   
 ## Inheritance Hierarchy  
  `Base`  
@@ -147,7 +147,7 @@ CComPtr<IUnknown> m_spUnk;
 ```  
   
 ### Remarks  
- This smart pointer maintains a reference on the object passed to [IEnumOnSTLImpl::Init](/visual-studio/debugger/init), ensuring that it remains alive during the lifetime of the enumerator.  
+ This smart pointer maintains a reference on the object passed to [IEnumOnSTLImpl::Init](#ienumonstlimpl__init), ensuring that it remains alive during the lifetime of the enumerator.  
   
 ##  <a name="ienumonstlimpl__m_pcollection"></a>  IEnumOnSTLImpl::m_pcollection  
  This member points to the collection that provides the data driving the implementation of the enumerator interface.  
@@ -157,7 +157,7 @@ CollType* m_pcollection;
 ```  
   
 ### Remarks  
- This member is initialized by a call to [IEnumOnSTLImpl::Init](/visual-studio/debugger/init).  
+ This member is initialized by a call to [IEnumOnSTLImpl::Init](#ienumonstlimpl__init).  
   
 ##  <a name="ienumonstlimpl__m_iter"></a>  IEnumOnSTLImpl::m_iter  
  This member holds the iterator used to mark the current position within the collection and navigate to subsequent elements.  
@@ -214,10 +214,3 @@ STDMETHOD(Skip)(ULONG celt);
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

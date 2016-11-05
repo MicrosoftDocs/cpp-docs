@@ -1,7 +1,7 @@
 ---
 title: "CComObjectRootEx Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "reference counting"
 ms.assetid: 894a3d7c-2daf-4fd0-8fa4-e6a05bcfb631
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -58,35 +58,35 @@ template<class ThreadModel>  class CComObjectRootEx : public CComObjectRootBase
   
 |||  
 |-|-|  
-|[CComObjectRootEx](../Topic/CComObjectRootEx::CComObjectRootEx.md)|Constructor.|  
-|[InternalAddRef](../Topic/CComObjectRootEx::InternalAddRef.md)|Increments the reference count for a nonaggregated object.|  
-|[InternalRelease](../Topic/CComObjectRootEx::InternalRelease.md)|Decrements the reference count for a nonaggregated object.|  
-|[Lock](../Topic/CComObjectRootEx::Lock.md)|If the thread model is multithreaded, obtains ownership of a critical section object.|  
-|[Unlock](../Topic/CComObjectRootEx::Unlock.md)|If the thread model is multithreaded, releases ownership of a critical section object.|  
+|[CComObjectRootEx](#ccomobjectrootex__ccomobjectrootex)|Constructor.|  
+|[InternalAddRef](#ccomobjectrootex__internaladdref)|Increments the reference count for a nonaggregated object.|  
+|[InternalRelease](#ccomobjectrootex__internalrelease)|Decrements the reference count for a nonaggregated object.|  
+|[Lock](#ccomobjectrootex__lock)|If the thread model is multithreaded, obtains ownership of a critical section object.|  
+|[Unlock](#ccomobjectrootex__unlock)|If the thread model is multithreaded, releases ownership of a critical section object.|  
   
 ### CComObjectRootBase Methods  
   
 |||  
 |-|-|  
-|[FinalConstruct](../Topic/CComObjectRootEx::FinalConstruct.md)|Override in your class to perform any initialization required by your object.|  
-|[FinalRelease](../Topic/CComObjectRootEx::FinalRelease.md)|Override in your class to perform any cleanup required by your object.|  
-|[OuterAddRef](../Topic/CComObjectRootEx::OuterAddRef.md)|Increments the reference count for an aggregated object.|  
-|[OuterQueryInterface](../Topic/CComObjectRootEx::OuterQueryInterface.md)|Delegates to the outer **IUnknown** of an aggregated object.|  
-|[OuterRelease](../Topic/CComObjectRootEx::OuterRelease.md)|Decrements the reference count for an aggregated object.|  
+|[FinalConstruct](#ccomobjectrootex__finalconstruct)|Override in your class to perform any initialization required by your object.|  
+|[FinalRelease](#ccomobjectrootex__finalrelease)|Override in your class to perform any cleanup required by your object.|  
+|[OuterAddRef](#ccomobjectrootex__outeraddref)|Increments the reference count for an aggregated object.|  
+|[OuterQueryInterface](#ccomobjectrootex__outerqueryinterface)|Delegates to the outer **IUnknown** of an aggregated object.|  
+|[OuterRelease](#ccomobjectrootex__outerrelease)|Decrements the reference count for an aggregated object.|  
   
 ### Static Functions  
   
 |||  
 |-|-|  
-|[InternalQueryInterface](../Topic/CComObjectRootEx::InternalQueryInterface.md)|Delegates to the **IUnknown** of a nonaggregated object.|  
-|[ObjectMain](../Topic/CComObjectRootEx::ObjectMain.md)|Called during module initialization and termination for derived classes listed in the object map.|  
+|[InternalQueryInterface](#ccomobjectrootex__internalqueryinterface)|Delegates to the **IUnknown** of a nonaggregated object.|  
+|[ObjectMain](#ccomobjectrootex__objectmain)|Called during module initialization and termination for derived classes listed in the object map.|  
   
 ### Data Members  
   
 |||  
 |-|-|  
-|[m_dwRef](../Topic/CComObjectRootEx::m_dwRef.md)|With `m_pOuterUnknown`, part of a union. Used when the object is not aggregated to hold the reference count of `AddRef` and **Release**.|  
-|[m_pOuterUnknown](../Topic/CComObjectRootEx::m_pOuterUnknown.md)|With `m_dwRef`, part of a union. Used when the object is aggregated to hold a pointer to the outer unknown.|  
+|[m_dwRef](#ccomobjectrootex__m_dwref)|With `m_pOuterUnknown`, part of a union. Used when the object is not aggregated to hold the reference count of `AddRef` and **Release**.|  
+|[m_pOuterUnknown](#ccomobjectrootex__m_pouterunknown)|With `m_dwRef`, part of a union. Used when the object is aggregated to hold a pointer to the outer unknown.|  
   
 ## Remarks  
  `CComObjectRootEx` handles object reference count management for both nonaggregated and aggregated objects. It holds the object reference count if your object is not being aggregated, and holds the pointer to the outer unknown if your object is being aggregated. For aggregated objects, `CComObjectRootEx` methods can be used to handle the failure of the inner object to construct, and to protect the outer object from deletion when inner interfaces are released or the inner object is deleted.  
@@ -253,7 +253,7 @@ long m_dwRef;
   
  `};`  
   
- If the object is not aggregated, the reference count accessed by `AddRef` and **Release** is stored in `m_dwRef`. If the object is aggregated, the pointer to the outer unknown is stored in [m_pOuterUnknown](../Topic/CComObjectRootEx::m_pOuterUnknown.md).  
+ If the object is not aggregated, the reference count accessed by `AddRef` and **Release** is stored in `m_dwRef`. If the object is aggregated, the pointer to the outer unknown is stored in [m_pOuterUnknown](#ccomobjectrootex__m_pouterunknown).  
   
 ##  <a name="ccomobjectrootex__m_pouterunknown"></a>  CComObjectRootEx::m_pOuterUnknown  
  Part of a union that accesses four bytes of memory.  
@@ -276,7 +276,7 @@ IUnknown*
   
  `};`  
   
- If the object is aggregated, the pointer to the outer unknown is stored in `m_pOuterUnknown`. If the object is not aggregated, the reference count accessed by `AddRef` and **Release** is stored in [m_dwRef](../Topic/CComObjectRootEx::m_dwRef.md).  
+ If the object is aggregated, the pointer to the outer unknown is stored in `m_pOuterUnknown`. If the object is not aggregated, the reference count accessed by `AddRef` and **Release** is stored in [m_dwRef](#ccomobjectrootex__m_dwref).  
   
 ##  <a name="ccomobjectrootex__objectmain"></a>  CComObjectRootEx::ObjectMain  
  For each class listed in the [object map](http://msdn.microsoft.com/en-us/b57619cc-534f-4b8f-bfd4-0c12f937202f), this function is called once when the module is initialized, and again when it is terminated.  
@@ -352,10 +352,3 @@ void Unlock();
  [CComObject Class](../../atl/reference/ccomobject-class.md)   
  [CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

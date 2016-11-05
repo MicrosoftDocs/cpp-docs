@@ -1,7 +1,7 @@
 ---
 title: "_U_STRINGorID Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "_U_STRINGorID class"
   - "U_STRINGorID class"
 ms.assetid: 443cdc00-d265-4b27-8ef3-2feb95f3e5e3
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -56,18 +56,18 @@ class _U_STRINGorID
   
 |Name|Description|  
 |----------|-----------------|  
-|[_U_STRINGorID::_U_STRINGorID](../Topic/_U_STRINGorID::_U_STRINGorID.md)|The constructor.|  
+|[_U_STRINGorID::_U_STRINGorID](#_u_stringorid___u_stringorid)|The constructor.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[_U_STRINGorID::m_lpstr](../Topic/_U_STRINGorID::m_lpstr.md)|The resource identifier.|  
+|[_U_STRINGorID::m_lpstr](#_u_stringorid__m_lpstr)|The resource identifier.|  
   
 ## Remarks  
  This class is designed for implementing wrappers to the Windows resource management API such as the [FindResource](http://msdn.microsoft.com/library/windows/desktop/ms648042), [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072), and [LoadMenu](http://msdn.microsoft.com/library/windows/desktop/ms647990) functions, which accept an `LPCTSTR` argument that may be either the name of a resource or its ID.  
   
- The class defines two constructor overloads: one accepts a `LPCTSTR` argument and the other accepts a **UINT** argument. The **UINT** argument is converted to a resource type compatible with Windows resource-management functions using the **MAKEINTRESOURCE** macro and the result stored in the class's single data member, [m_lpstr](../Topic/_U_STRINGorID::m_lpstr.md). The argument to the `LPCTSTR` constructor is stored directly without conversion.  
+ The class defines two constructor overloads: one accepts a `LPCTSTR` argument and the other accepts a **UINT** argument. The **UINT** argument is converted to a resource type compatible with Windows resource-management functions using the **MAKEINTRESOURCE** macro and the result stored in the class's single data member, [m_lpstr](#_u_stringorid__m_lpstr). The argument to the `LPCTSTR` constructor is stored directly without conversion.  
   
 ## Requirements  
  **Header:** atlwin.h  
@@ -80,7 +80,7 @@ LPCTSTR m_lpstr;
 ```  
   
 ##  <a name="_u_stringorid___u_stringorid"></a>  _U_STRINGorID::_U_STRINGorID  
- The **UINT** constructor converts its argument to a resource type compatible with Windows resource-management functions using the **MAKEINTRESOURCE** macro and the result is stored in the class's single data member, [m_lpstr](../Topic/_U_STRINGorID::m_lpstr.md).  
+ The **UINT** constructor converts its argument to a resource type compatible with Windows resource-management functions using the **MAKEINTRESOURCE** macro and the result is stored in the class's single data member, [m_lpstr](#_u_stringorid__m_lpstr).  
   
 ```
 _U_STRINGorID(UINT nID);
@@ -100,10 +100,3 @@ _U_STRINGorID(UINT nID);
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

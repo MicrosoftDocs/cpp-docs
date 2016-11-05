@@ -1,7 +1,7 @@
 ---
 title: "Exception Handling Macros | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "exception handling, macros"
   - "C++ exception handling, macros"
 ms.assetid: a8385d34-3fb0-4006-a42a-de045cacf0f4
-caps.latest.revision: 15
+caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -39,9 +39,9 @@ These macros provide support for exception handling.
   
 |||  
 |-|-|  
-|[_ATLCATCH](../Topic/_ATLCATCH.md)|Statement(s) to handle errors occurring in the associated `_ATLTRY`.|  
-|[_ATLCATCHALL](../Topic/_ATLCATCHALL.md)|Statement(s) to handle errors occurring in the associated `_ATLTRY`.|  
-|[_ATLTRY](../Topic/_ATLTRY.md)|Marks a guarded code section where an error could possibly occur.|  
+|[_ATLCATCH](#_atlcatch)|Statement(s) to handle errors occurring in the associated `_ATLTRY`.|  
+|[_ATLCATCHALL](#_atlcatchall)|Statement(s) to handle errors occurring in the associated `_ATLTRY`.|  
+|[_ATLTRY](#_atltry)|Marks a guarded code section where an error could possibly occur.|  
   
 ##  <a name="_atlcatch"></a>  _ATLCATCH  
  Statement(s) to handle errors occurring in the associated `_ATLTRY`.  
@@ -75,12 +75,7 @@ _ATLTRY
 ```  
   
 ### Remarks  
- Used in conjunction with [_ATLCATCH](../Topic/_ATLCATCH.md) or [_ATLCATCHALL](../Topic/_ATLCATCHALL.md). Resolves to the C++ symbol [try](../../cpp/try-throw-and-catch-statements-cpp.md).  
+ Used in conjunction with [_ATLCATCH](#_atlcatch) or [_ATLCATCHALL](#_atlcatchall). Resolves to the C++ symbol [try](../../cpp/try-throw-and-catch-statements-cpp.md).  
   
 ## See Also  
  [Macros](../../atl/reference/atl-macros.md)
-
-
-
-
-

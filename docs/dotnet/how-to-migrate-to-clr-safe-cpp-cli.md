@@ -1,7 +1,7 @@
 ---
 title: "How to: Migrate to -clr:safe (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -60,7 +60,7 @@ Visual C++ can generate verifiable components by using **/clr:safe**, which caus
   
 -   A verifiable class cannot use <xref:System.Runtime.InteropServices.LayoutKind>.  
   
--   If building an EXE, a main function cannot declare any parameters, so <xref:System.Environment.GetCommandLineArgs*> must be used to retrieve command-line arguments.  
+-   If building an EXE, a main function cannot declare any parameters, so <xref:System.Environment.GetCommandLineArgs%2A> must be used to retrieve command-line arguments.  
   
 -   Making a non-virtual call to a virtual function. For example:  
   

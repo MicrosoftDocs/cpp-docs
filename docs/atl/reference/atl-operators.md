@@ -1,7 +1,7 @@
 ---
 title: "ATL Operators | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -14,7 +14,7 @@ dev_langs:
 helpviewer_keywords: 
   - "operators [ATL]"
 ms.assetid: 58ccd252-2869-45ee-8a5c-3ca40ee7f8a2
-caps.latest.revision: 15
+caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -38,27 +38,20 @@ This section contains the reference topics for the ATL global operators.
   
 |Operator|Description|  
 |--------------|-----------------|  
-|[operator ==](../Topic/operator%20==%20\(ATL\).md)|Compares two `CSid` objects or `SID` structures for equality.|  
-|[operator !=](../Topic/operator%20!=%20\(ATL\).md)|Compares two `CSid` objects or `SID` structures for inequality.|  
-|[operator <](../Topic/operator%20%3C%20\(ATL\).md)|Tests if the `CSid` object or `SID` structure on the left side of the operator is less than the `CSid` object or `SID` structure on the right side (for STL compatibility).|  
-|[operator >](../Topic/operator%20%3E%20\(ATL\).md)|Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than the `CSid` object or `SID` structure on the right side (for STL compatibility).|  
-|[operator <=](../Topic/operator%20%3C=%20\(ATL\).md)|Tests if the `CSid` object or `SID` structure on the left side of the operator is less than or equal to the `CSid` object or `SID` structure on the right side (for STL compatibility).|  
-|[operator >=](../Topic/operator%20%3E=%20\(ATL\).md)|Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than or equal to the `CSid` object or `SID` structure on the right side (for STL compatibility).|  
+|[operator ==](#operator__eq_eq)|Compares two `CSid` objects or `SID` structures for equality.|  
+|[operator !=](#operator__neq)|Compares two `CSid` objects or `SID` structures for inequality.|  
+|[operator <](#operator__lt)|Tests if the `CSid` object or `SID` structure on the left side of the operator is less than the `CSid` object or `SID` structure on the right side (for STL compatibility).|  
+|[operator >](#operator__gt)|Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than the `CSid` object or `SID` structure on the right side (for STL compatibility).|  
+|[operator <=](#operator__lt__eq)|Tests if the `CSid` object or `SID` structure on the left side of the operator is less than or equal to the `CSid` object or `SID` structure on the right side (for STL compatibility).|  
+|[operator >=](#operator__gt__eq)|Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than or equal to the `CSid` object or `SID` structure on the right side (for STL compatibility).|  
   
  These operators are all defined in the file atlsecurity.h.  
   
-##  <a name="operator__eq_eq__atl_"></a>  operator ==  
+##  <a name="operator__eq_eq"></a>  operator ==  
  Compares `CSid` objects or `SID` (security identifier) structures for equality.  
   
-```  
- 
-bool operator==(
-    const CSid& 
-lhs,Â  
-    const CSid& 
-rhs,Â) throw();
-
- 
+```   
+bool operator==(const CSid& lhs, const CSid& rhs) throw(); 
 ```  
   
 ### Parameters  
@@ -71,18 +64,11 @@ rhs,Â) throw();
 ### Return Value  
  Returns **true** if the objects are equal, **false** if they are not equal.  
   
-##  <a name="operator__neq__atl_"></a>  operator !=  
+##  <a name="operator__neq"></a>  operator !=  
  Compares `CSid` objects or `SID` (security identifier) structures for inequality.  
   
-```  
- 
-bool operator==(
-    const CSid& 
-lhs,Â  
-    const CSid& 
-rhs,Â) throw();
-
- 
+```   
+bool operator==(const CSid& lhs, const CSid& rhs) throw(); 
 ```  
   
 ### Parameters  
@@ -95,18 +81,11 @@ rhs,Â) throw();
 ### Return Value  
  Returns **true** if the objects are not equal, **false** if they are equal.  
   
-##  <a name="operator__lt___atl_"></a>  operator <  
+##  <a name="operator__lt"></a>  operator <  
  Tests if the `CSid` object or `SID` structure on the left side of the operator is less than the `CSid` object or `SID` structure on the right side (for STL compatibility).  
   
-```  
- 
-bool operator<(
-    const CSid& 
-lhs,Â  
-    const CSid& 
-rhs,Â) throw();
-
- 
+```   
+bool operator<(const CSid& lhs, const CSid& rhs) throw(); 
 ```  
   
 ### Parameters  
@@ -122,18 +101,11 @@ rhs,Â) throw();
 ### Remarks  
  This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with STL collection classes.  
   
-##  <a name="operator__gt___atl_"></a>  operator >  
+##  <a name="operator__gt"></a>  operator >  
  Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than the `CSid` object or `SID` structure on the right side (for STL compatibility).  
   
-```  
- 
-bool operator<(
-    const CSid& 
-lhs,Â  
-    const CSid& 
-rhs,Â) throw();
-
- 
+```   
+bool operator<(const CSid& lhs, const CSid& rhs) throw(); 
 ```  
   
 ### Parameters  
@@ -149,18 +121,11 @@ rhs,Â) throw();
 ### Remarks  
  This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with STL collection classes.  
   
-##  <a name="operator__lt__eq__atl_"></a>  operator <=  
+##  <a name="operator__lt__eq"></a>  operator <=  
  Tests if the `CSid` object or `SID` structure on the left side of the operator is less than or equal to the `CSid` object or `SID` structure on the right side (for STL compatibility).  
   
-```  
- 
-bool operator<(
-    const CSid& 
-lhs,Â  
-    const CSid& 
-rhs,Â) throw();
-
- 
+```   
+bool operator<(const CSid& lhs, const CSid& rhs) throw(); 
 ```  
   
 ### Parameters  
@@ -176,18 +141,11 @@ rhs,Â) throw();
 ### Remarks  
  This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with STL collection classes.  
   
-##  <a name="operator__gt__eq__atl_"></a>  operator >=  
+##  <a name="operator__gt__eq"></a>  operator >=  
  Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than or equal to the `CSid` object or `SID` structure on the right side (for STL compatibility).  
   
-```  
- 
-bool operator<(
-    const CSid& 
-lhs,  
-    const CSid& 
-rhs,Â) throw();
-
- 
+```   
+bool operator<(const CSid& lhs, const CSid& rhs) throw(); 
 ```  
   
 ### Parameters  

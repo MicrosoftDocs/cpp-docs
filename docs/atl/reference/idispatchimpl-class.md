@@ -1,7 +1,7 @@
 ---
 title: "IDispatchImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/01/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ helpviewer_keywords:
   - "IDispatchImpl class"
   - "IDispatch class support in ATL"
 ms.assetid: 8108eb36-1228-4127-a203-3ab5ba488892
-caps.latest.revision: 26
+caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -80,16 +80,16 @@ class ATL_NO_VTABLE IDispatchImpl :  public T```
   
 |Name|Description|  
 |----------|-----------------|  
-|[IDispatchImpl::IDispatchImpl](../Topic/IDispatchImpl::IDispatchImpl.md)|The constructor. Calls `AddRef` on the protected member variable that manages the type information for the dual interface. The destructor calls `Release`.|  
+|[IDispatchImpl::IDispatchImpl](#idispatchimpl__idispatchimpl)|The constructor. Calls `AddRef` on the protected member variable that manages the type information for the dual interface. The destructor calls `Release`.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[IDispatchImpl::GetIDsOfNames](../Topic/IDispatchImpl::GetIDsOfNames.md)|Maps a set of names to a corresponding set of dispatch identifiers.|  
-|[IDispatchImpl::GetTypeInfo](../Topic/IDispatchImpl::GetTypeInfo.md)|Retrieves the type information for the dual interface.|  
-|[IDispatchImpl::GetTypeInfoCount](../Topic/IDispatchImpl::GetTypeInfoCount.md)|Determines whether there is type information available for the dual interface.|  
-|[IDispatchImpl::Invoke](../Topic/IDispatchImpl::Invoke.md)|Provides access to the methods and properties exposed by the dual interface.|  
+|[IDispatchImpl::GetIDsOfNames](#idispatchimpl__getidsofnames)|Maps a set of names to a corresponding set of dispatch identifiers.|  
+|[IDispatchImpl::GetTypeInfo](#idispatchimpl__gettypeinfo)|Retrieves the type information for the dual interface.|  
+|[IDispatchImpl::GetTypeInfoCount](#idispatchimpl__gettypeinfocount)|Determines whether there is type information available for the dual interface.|  
+|[IDispatchImpl::Invoke](#idispatchimpl__invoke)|Provides access to the methods and properties exposed by the dual interface.|  
   
 ## Remarks  
  `IDispatchImpl` provides a default implementation for the `IDispatch` part of any dual interface on an object. A dual interface derives from `IDispatch` and uses only Automation-compatible types. Like a dispinterface, a dual interface supports early binding and late binding; however, a dual interface also supports vtable binding.  
@@ -172,10 +172,3 @@ STDMETHOD(Invoke)(DISPID dispidMember,
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

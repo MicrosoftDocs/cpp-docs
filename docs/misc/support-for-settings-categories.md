@@ -1,7 +1,7 @@
 ---
 title: "Support for Settings Categories | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/02/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -52,14 +52,14 @@ A settings category consists of a group of options that customize the integrated
 ## Support for Settings Categories  
  The <xref:Microsoft.VisualStudio.Shell.Package> class provides support for creating categories. The <xref:Microsoft.VisualStudio.Shell.DialogPage> class implements a category. The default implementation of <xref:Microsoft.VisualStudio.Shell.DialogPage> offers its public properties to a user as a category. For more information, see [Creating a Settings Category](/visual-studio/extensibility/creating-a-settings-category).  
   
- The <xref:Microsoft.VisualStudio.Shell.DialogPage> class implements <xref:Microsoft.VisualStudio.Shell.IProfileManager>, which provides persistence for both options pages and user settings. The <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml*> and <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml*> methods persist settings into a .vssettings file that [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] provides as an <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader> or <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsWriter>, respectively. The <xref:Microsoft.VisualStudio.Shell.IProfileManager.ResetSettings*> method resets settings to their default values.  
+ The <xref:Microsoft.VisualStudio.Shell.DialogPage> class implements <xref:Microsoft.VisualStudio.Shell.IProfileManager>, which provides persistence for both options pages and user settings. The <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml%2A> and <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml%2A> methods persist settings into a .vssettings file that [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] provides as an <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader> or <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsWriter>, respectively. The <xref:Microsoft.VisualStudio.Shell.IProfileManager.ResetSettings%2A> method resets settings to their default values.  
   
- The <xref:Microsoft.VisualStudio.Shell.DialogPage> class provides an implementation of the <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromXml*> method that reads name-value pairs from the xml feed, and uses reflection to discover public properties in the <xref:Microsoft.VisualStudio.Shell.DialogPage> derived class. Properties that have names that match the name-value pairs are given the corresponding values.  
+ The <xref:Microsoft.VisualStudio.Shell.DialogPage> class provides an implementation of the <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromXml%2A> method that reads name-value pairs from the xml feed, and uses reflection to discover public properties in the <xref:Microsoft.VisualStudio.Shell.DialogPage> derived class. Properties that have names that match the name-value pairs are given the corresponding values.  
   
- The default implementation of <xref:Microsoft.VisualStudio.Shell.DialogPage.SaveSettingsToXml*> uses reflection to discover public properties in the <xref:Microsoft.VisualStudio.Shell.DialogPage> derived class and writes the property names and values to the XML feed as name-value pairs.  
+ The default implementation of <xref:Microsoft.VisualStudio.Shell.DialogPage.SaveSettingsToXml%2A> uses reflection to discover public properties in the <xref:Microsoft.VisualStudio.Shell.DialogPage> derived class and writes the property names and values to the XML feed as name-value pairs.  
   
 ### Settings Category Registry Path  
- The registry path of the settings category is determined by combining <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot*>, the word, UserSettings, the settings category, and the name of the custom settings point. The names of the settings category and custom settings point are joined and separated by an underscore to form the canonical, non-localized name that appears in the registry. For example, if the settings category is "My Category", the custom settings point name "My Settings", and the ApplicationRegistryRoot HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, then the settings category has the registry key, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\UserSettings\My Category_My Settings.  
+ The registry path of the settings category is determined by combining <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, the word, UserSettings, the settings category, and the name of the custom settings point. The names of the settings category and custom settings point are joined and separated by an underscore to form the canonical, non-localized name that appears in the registry. For example, if the settings category is "My Category", the custom settings point name "My Settings", and the ApplicationRegistryRoot HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, then the settings category has the registry key, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\UserSettings\My Category_My Settings.  
   
 > [!NOTE]
 >  The canonical name does not appear in a user interface (UI). It is used to associate a readable name with the settings category, much like a programmatic identifier (ProgID).  
