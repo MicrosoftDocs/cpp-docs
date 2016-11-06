@@ -53,7 +53,7 @@ variable
  [in] The variable to be bound to the bookmark column.  
   
 ## Example  
- [!CODE [NVC_OLEDB_Consumer#17](../CodeSnippet/VS_Snippets_Cpp/NVC_OLEDB_Consumer#17)]  
+ <!-- FIXME [!CODE [NVC_OLEDB_Consumer#17](../CodeSnippet/VS_Snippets_Cpp/NVC_OLEDB_Consumer#17)]  -->
   
 ## Requirements  
  **Header:** atldbcli.h  

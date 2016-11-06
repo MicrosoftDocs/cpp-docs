@@ -60,7 +60,7 @@ You can use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[
   
 8.  Add this code to CalculatorComponent.def:  
   
-     [!CODE [wrl-classic-com-component#4](../CodeSnippet/VS_Snippets_Misc/wrl-classic-com-component#4)]  
+     <!--FIXME[!CODE [wrl-classic-com-component#4](../CodeSnippet/VS_Snippets_Misc/wrl-classic-com-component#4)]-->  
   
 9. Add runtimeobject.lib to the linker line. To learn how, see [.Lib Files as Linker Input](../build/reference/dot-lib-files-as-linker-input.md).  
   
@@ -68,7 +68,7 @@ You can use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[
   
 1.  Register the COM component with the Windows Registry. To do so, create a registration entries file, name it `RegScript.reg`, and add the following text. Replace *\<dll-path>* with the path of your DLL—for example, `C:\\temp\\WRLClassicCOM\\Debug\\CalculatorComponent.dll`.  
   
-     [!CODE [wrl-classic-com-component#5](../CodeSnippet/VS_Snippets_Misc/wrl-classic-com-component#5)]  
+     <!--FIXME[!CODE [wrl-classic-com-component#5](../CodeSnippet/VS_Snippets_Misc/wrl-classic-com-component#5)]-->  
   
 2.  Run RegScript.reg or add it to your project’s **Post-Build Event**. For more information, see [Pre-build Event/Post-build Event Command Line Dialog Box](/visual-studio/ide/reference/pre-build-event-post-build-event-command-line-dialog-box).  
   

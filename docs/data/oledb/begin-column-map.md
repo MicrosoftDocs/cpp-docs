@@ -63,7 +63,7 @@ x
 ## Example  
  Here is a sample column and parameter map:  
   
- [!CODE [NVC_OLEDB_Consumer#16](../CodeSnippet/VS_Snippets_Cpp/NVC_OLEDB_Consumer#16)]  
+ <!--[!CODE [NVC_OLEDB_Consumer#16](../CodeSnippet/VS_Snippets_Cpp/NVC_OLEDB_Consumer#16)]  -->
   
 ## Requirements  
  **Header:** atldbcli.h  
