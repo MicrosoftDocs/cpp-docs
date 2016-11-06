@@ -138,7 +138,7 @@ void Delete();
  You only need to call **Delete** if you are using the C++ **try**- **catch** mechanism. If you are using the MFC macros **TRY** and **CATCH**, then these macros will automatically call this function.  
   
 ### Example  
- [!CODE [NVC_MFCExceptions#21](../CodeSnippet/VS_Snippets_Cpp/NVC_MFCExceptions#21)]  
+ <!-- FIXME [!CODE [NVC_MFCExceptions#21](../CodeSnippet/VS_Snippets_Cpp/NVC_MFCExceptions#21)] -->  
   
 ##  <a name="cexception__reporterror"></a>  CException::ReportError  
  Call this member function to report error text in a message box to the user.  
@@ -162,7 +162,7 @@ virtual int ReportError(
 ### Example  
  Here is an example of the use of `CException::ReportError`. For another example, see the example for [CATCH]--brokenlink--(../Topic/not%20found.md#catch).  
   
- [!CODE [NVC_MFCExceptions#23](../CodeSnippet/VS_Snippets_Cpp/NVC_MFCExceptions#23)]  
+ <!-- FIXME [!CODE [NVC_MFCExceptions#23](../CodeSnippet/VS_Snippets_Cpp/NVC_MFCExceptions#23)] -->  
   
 ## See Also  
  [CObject Class](../Topic/CObject%20Class.md)   

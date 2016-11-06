@@ -210,12 +210,12 @@ ARG_KEY  key);
  The key's hash value.  
   
 ### Remarks  
- This function is called directly by [CMap::RemoveKey](../Topic/CMap%20Class.md#cmap__removekey and indirectly by [CMap::Lookup](../Topic/CMap%20Class.md#cmap__lookup and [CMap::Operator &#91;&#93;](../Topic/CMap%20Class.md#operator&#91;&#93;).  
+ This function is called directly by [CMap::RemoveKey](../Topic/CMap%20Class.md#cmap__removekey) and indirectly by [CMap::Lookup](../Topic/CMap%20Class.md#cmap__lookup) and [CMap::Operator &#91;&#93;](../Topic/CMap%20Class.md#operator&#91;&#93;).
   
  The default implementation creates a hash value by shifting `key` right by four positions. Override this function so that it returns hash values appropriate for your application.  
   
 ### Example  
- [!CODE [NVC_MFC_Utilities#34](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_Utilities#34)]  
+ <!--FIXME[!CODE [NVC_MFC_Utilities#34](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_Utilities#34)] --> 
   
 ##  <a name="serializeelements"></a>  SerializeElements  
  [CArray](../Topic/CArray%20Class.md), [CList](../Topic/CList%20Class.md), and [CMap](../Topic/CMap%20Class.md) call this function to serialize elements.  

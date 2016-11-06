@@ -96,7 +96,7 @@ Learn how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INC
   
 9. Add a new module-definition file to the project, name it `GrayscaleTransform.def`, and then add this code:  
   
-     [!CODE [wrl-media-capture#5](../CodeSnippet/VS_Snippets_Misc/wrl-media-capture#5)]  
+     <!--FIXME [!CODE [wrl-media-capture#5](../CodeSnippet/VS_Snippets_Misc/wrl-media-capture#5)]-->  
   
 10. Use the following code to replace the contents of dllmain.cpp.  
   
