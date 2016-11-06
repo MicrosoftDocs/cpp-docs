@@ -160,7 +160,7 @@ CPoint CenterPoint() const throw();
  A `CPoint` object that is the centerpoint of `CRect`.  
   
 ### Example  
- [!CODE [NVC_ATLMFC_Utilities#36](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#36)]  
+ <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#36](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#36)] -->  
   
 ##  <a name="crect__copyrect"></a>  CRect::CopyRect  
  Copies the `lpSrcRect` rectangle into `CRect`.  
@@ -489,7 +489,7 @@ BOOL IsRectNull() const throw();
  Differs from `IsRectEmpty`, which determines whether the rectangle is empty.  
   
 ### Example  
- [!CODE [NVC_ATLMFC_Utilities#45](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#45)]  
+ <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#45](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#45)]  -->
   
 ##  <a name="crect__movetox"></a>  CRect::MoveToX  
  Call this function to move the rectangle to the absolute x-coordinate specified by *x*.  
@@ -1045,7 +1045,7 @@ void SetRectEmpty() throw();
 ```  
   
 ### Example  
- [!CODE [NVC_ATLMFC_Utilities#53](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#53)]  
+ <!-- [!CODE [NVC_ATLMFC_Utilities#53](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#53)]  -->
   
 ##  <a name="crect__size"></a>  CRect::Size  
  The `cx` and `cy` members of the return value contain the height and width of `CRect`.  
