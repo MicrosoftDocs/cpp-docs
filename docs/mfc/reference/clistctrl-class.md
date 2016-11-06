@@ -461,7 +461,7 @@ BOOL DeleteAllItems();
  Nonzero if successful; otherwise zero.  
   
 ### Example  
- [!CODE [NVC_MFC_CListCtrl#4](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#4)]  
+ <!-- FIXME[!CODE [NVC_MFC_CListCtrl#4](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#4)] -->  
   
 ##  <a name="clistctrl__deletecolumn"></a>  CListCtrl::DeleteColumn  
  Deletes a column from the list view control.  
@@ -978,7 +978,7 @@ BOOL GetGroupRect(
 ### Example  
  The following code example demonstrates the `GetGroupRect` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example draws a 3D rectangle around the group whose index is 0, if such a group exists.  
   
- [!CODE [NVC_MFC_CListCtrl_s2#5](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl_s2#5)]  
+ <!-- [!CODE [NVC_MFC_CListCtrl_s2#5](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl_s2#5)]  -->
   
 ##  <a name="clistctrl__getgroupstate"></a>  CListCtrl::GetGroupState  
  Retrieves the state for a specified group in the current list-view control.  
