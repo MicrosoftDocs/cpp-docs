@@ -1,1 +1,0 @@
-         [id(DISPID_REFRESH), helpstring("method Refresh")] void Refresh(void);

@@ -1,1 +1,0 @@
-         THROW( (CException*) new CCustomException() );

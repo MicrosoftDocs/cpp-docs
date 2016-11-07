@@ -1,1 +1,0 @@
-      m_ToolBarCtrl.SetExtendedStyle(TBSTYLE_EX_DRAWDDARROWS);
