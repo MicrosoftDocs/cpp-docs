@@ -35,6 +35,7 @@
 # [reference](parallel\openmp\reference\TOC.md)
 # [porting](porting\TOC.md)
 # [preprocessor](preprocessor\TOC.md)
+# [standard-library](standard-library\TOC.md)
 # [text](text\TOC.md)
 # [top](top\TOC.md)
 # [windows](windows\TOC.md)
