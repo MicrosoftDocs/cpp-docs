@@ -1,0 +1,1 @@
+   void CalcPoints(const RECT& rc);

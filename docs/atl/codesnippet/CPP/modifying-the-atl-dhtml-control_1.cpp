@@ -1,0 +1,1 @@
+   ::MessageBox(NULL, _T("I'm invoked"), _T("Your Container Message"), MB_OK);
