@@ -726,7 +726,7 @@ locales loc1 (German_Germany.1252)
 ```  
   
 ## See Also  
- [\<locale>](../standard-library/locale.md)   
+ [<locale>](../standard-library/locale.md)   
  [Code Pages](../c-runtime-library/code-pages.md)   
  [Locale Names, Languages, and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
