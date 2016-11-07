@@ -1,0 +1,1 @@
+	CMFCRibbonApplicationButton m_MainButton;

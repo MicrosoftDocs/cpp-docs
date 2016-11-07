@@ -1,0 +1,1 @@
+	CMFCColorPickerCtrl m_wndLum;

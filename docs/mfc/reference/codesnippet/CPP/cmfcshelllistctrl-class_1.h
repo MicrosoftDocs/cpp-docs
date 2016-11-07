@@ -1,0 +1,1 @@
+	CMFCShellListCtrl	m_wndList;

@@ -1,0 +1,1 @@
+	CPaneDialog		m_wndDlgBar;
