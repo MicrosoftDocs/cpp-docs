@@ -1,5 +1,5 @@
 ---
-title: "What's New for Visual C++ in Visual Studio 2017 RC"
+title: "What's New for Visual C++ in Visual Studio 2017 RC | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/16/2016"
 ms.prod: "visual-studio-dev15"
