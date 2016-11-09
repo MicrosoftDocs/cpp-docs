@@ -1,5 +1,5 @@
 # [What's New for Visual C++ in Visual Studio 2017](what-s-new-for-visual-cpp-in-visual-studio-2017.md)
-# [Visual C++ in Visual Studio 2017](visual-cpp-in-visual-studio-2017.md)
+# [Visual C++ in Visual Studio](visual-cpp-in-visual-studio.md)
 # [Visual C++ Samples](visual-cpp-samples.md)
 # [How to Report a Problem with the Visual C++ Toolset](how-to-report-a-problem-with-the-visual-cpp-toolset.md)
 # [Visual C++ Help and Community](visual-cpp-help-and-community.md)
