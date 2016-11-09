@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -28,7 +29,19 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+            "ROBOTS": "INDEX,FOLLOW",
+            "author": "",
+            "ms.author": "",
+            "manager": "ghogen",
+            "ms.date": "11/16/2016",
+            "ms.topic": "article",
+            "audience": "developer",
+            "ms.reviewer": "",
+            "ms.prod": "visual-studio-dev15",
+            "ms.technology": "",
+            "ms.tgt_pltfrm": ""
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "vcppdocs"
