@@ -1,7 +1,7 @@
 ---
-title: "The application definition file is already opened in an incompatible editor"
+title: "The application definition file is already opened in an incompatible editor | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -48,6 +48,6 @@ translation.priority.mt:
 3.  On the **Project** menu, click **Properties** to re-open the Project Designer.  
   
 ## See Also  
- [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md)   
+ [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)   
  [There was an error trying to open or create the application definition file for this project. '\<error>'](../misc/there-was-an-error-trying-to-open-or-create-the-application-definition-file-for-this-project-error.md)   
  [An error occurred trying to create the application events file. '\<error>'](../misc/an-error-occurred-trying-to-create-the-application-events-file-error.md)

@@ -1,5 +1,5 @@
 ---
-title: "Anonymous type member property &#39;&lt;propertyname&gt;&#39; cannot be used to infer the type of another member property because the type of &#39;&lt;propertyname&gt;&#39; is not yet established"
+title: "Anonymous type member property &#39;&lt;propertyname&gt;&#39; cannot be used to infer the type of another member property because the type of &#39;&lt;propertyname&gt;&#39; is not yet established | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -54,5 +54,5 @@ Until the type of an anonymous type property is established, it cannot be used t
     ```  
   
 ## See Also  
- [Anonymous Types](../Topic/Anonymous%20Types%20\(Visual%20Basic\).md)   
+ [Anonymous Types](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types)   
  [How to: Infer Property Names and Types in Anonymous Type Declarations](../Topic/How%20to:%20Infer%20Property%20Names%20and%20Types%20in%20Anonymous%20Type%20Declarations%20\(Visual%20Basic\).md)

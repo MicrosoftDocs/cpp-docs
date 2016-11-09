@@ -1,7 +1,7 @@
 ---
-title: "CComQIPtrElementTraits Class"
+title: "CComQIPtrElementTraits Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComQIPtrElementTraits class"
 ms.assetid: 9df9250a-5413-4362-b133-332932a597c4
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -62,7 +62,7 @@ template<typename I,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComQIPtrElementTraits::INARGTYPE](../Topic/CComQIPtrElementTraits::INARGTYPE.md)|The data type to use for adding elements to the collection class object.|  
+|[CComQIPtrElementTraits::INARGTYPE](#ccomqiptrelementtraits__inargtype)|The data type to use for adding elements to the collection class object.|  
   
 ## Remarks  
  This class derives methods and provides a typedef useful when creating a collection class of [CComQIPtr](../../atl/reference/ccomqiptr-class.md) COM interface pointer objects. This class is utilized by both the [CInterfaceArray](../../atl/reference/cinterfacearray-class.md) and [CInterfaceList](../../atl/reference/cinterfacelist-class.md) classes.  
@@ -93,10 +93,3 @@ typedef I* INARGTYPE;
 ## See Also  
  [CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

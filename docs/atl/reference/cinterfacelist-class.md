@@ -1,7 +1,7 @@
 ---
-title: "CInterfaceList Class"
+title: "CInterfaceList Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CInterfaceList class"
 ms.assetid: 2077764d-25e5-4b3d-96c8-08a287bbcd25
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -64,7 +64,7 @@ template<class I,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CInterfaceList::CInterfaceList](../Topic/CInterfaceList::CInterfaceList.md)|The constructor for the interface list.|  
+|[CInterfaceList::CInterfaceList](#cinterfacelist__cinterfacelist)|The constructor for the interface list.|  
   
 ## Remarks  
  This class provides a constructor and derived methods for creating a list of COM interface pointers. Use [CInterfaceArray](../../atl/reference/cinterfacearray-class.md) when an array is required.  
@@ -98,10 +98,3 @@ CInterfaceList(UINT nBlockSize = 10) throw();
  [CComQIPtr Class](../../atl/reference/ccomqiptr-class.md)   
  [CComQIPtrElementTraits Class](../../atl/reference/ccomqiptrelementtraits-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

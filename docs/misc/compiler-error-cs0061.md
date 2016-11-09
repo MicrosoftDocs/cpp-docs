@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0061"
+title: "Compiler Error CS0061 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0061"
 ms.assetid: 8dfc57a9-653d-4902-a88c-92032ba64024
 caps.latest.revision: 9
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,9 +39,9 @@ translation.priority.mt:
 # Compiler Error CS0061
 Inconsistent accessibility: base interface 'interface 1' is less accessible than interface 'interface 2'  
   
- A [public](../Topic/public%20\(C%23%20Reference\).md) construct must return a publicly accessible object.  
+ A [public](/dotnet/csharp/language-reference/keywords/public) construct must return a publicly accessible object.  
   
- Interface accessibility cannot be narrowed in a derived interface. For more information, see [Interfaces](../Topic/Interfaces%20\(C%23%20Programming%20Guide\).md) and [Access Modifiers](../Topic/Access%20Modifiers%20\(C%23%20Programming%20Guide\).md).  
+ Interface accessibility cannot be narrowed in a derived interface. For more information, see [Interfaces](/dotnet/csharp/programming-guide/interfaces/index) and [Access Modifiers](/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers).  
   
  The following sample generates CS0061.  
   

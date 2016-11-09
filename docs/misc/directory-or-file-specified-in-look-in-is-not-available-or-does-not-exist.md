@@ -1,7 +1,7 @@
 ---
-title: "Directory or file specified in Look In is not available or does not exist."
+title: "Directory or file specified in Look In is not available or does not exist. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -45,6 +45,6 @@ This error generally occurs when the path or file name specified in the Browse l
 2.  Navigate to the correct file or folder using the Browse list and **Available items** box.  
   
 ## See Also  
- [Finding and Replacing Text](../Topic/Finding%20and%20Replacing%20Text.md)   
+ [Finding and Replacing Text](/visual-studio/ide/finding-and-replacing-text)   
  [Choose Search Folders](http://msdn.microsoft.com/en-us/85af6458-dcde-4a84-9ea4-f5cc6550dc80)   
- [Find in Files](../Topic/Find%20in%20Files.md)
+ [Find in Files](/visual-studio/ide/find-in-files)

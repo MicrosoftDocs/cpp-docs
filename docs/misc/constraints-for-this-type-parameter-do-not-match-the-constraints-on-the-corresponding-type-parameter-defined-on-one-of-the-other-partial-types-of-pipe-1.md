@@ -1,5 +1,5 @@
 ---
-title: "Constraints for this type parameter do not match the constraints on the corresponding type parameter defined on one of the other partial types of &#39;|1&#39;"
+title: "Constraints for this type parameter do not match the constraints on the corresponding type parameter defined on one of the other partial types of &#39;|1&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ When you divide the definition of a class or structure among several declaration
 2.  Make sure every partial definition uses the identical type parameter list.  
   
 ## See Also  
- [Partial](../Topic/Partial%20\(Visual%20Basic\).md)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)
+ [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)   
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)

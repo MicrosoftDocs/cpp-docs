@@ -1,5 +1,5 @@
 ---
-title: "Parameter type of this unary operator must be the containing type &#39;&lt;typename&gt;&#39;"
+title: "Parameter type of this unary operator must be the containing type &#39;&lt;typename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,7 +49,7 @@ A definition of a unary operator specifies a parameter with a type other than th
 -   If you want to take one data type as a parameter and return a different data type as the result of the operation, define a conversion operator instead.  
   
 ## See Also  
- [Operator Procedures](../Topic/Operator%20Procedures%20\(Visual%20Basic\).md)   
- [Operator Statement](../Topic/Operator%20Statement.md)   
+ [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
+ [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)   
  [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
  [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)

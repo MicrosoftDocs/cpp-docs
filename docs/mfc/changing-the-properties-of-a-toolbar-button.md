@@ -1,7 +1,7 @@
 ---
-title: "Changing the Properties of a Toolbar Button"
+title: "Changing the Properties of a Toolbar Button | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -42,7 +42,7 @@ translation.priority.ht:
   
 1.  Select the toolbar button.  
   
-2.  Type the new ID in the **ID** property in the [Properties Window](../Topic/Properties%20Window.md), or use the drop-down list to select a new **ID**.  
+2.  Type the new ID in the **ID** property in the [Properties Window](/visual-studio/ide/reference/properties-window), or use the drop-down list to select a new **ID**.  
   
  For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
   

@@ -1,5 +1,5 @@
 ---
-title: "Local variable &#39;&lt;variablename&gt;&#39; is already declared in the current block"
+title: "Local variable &#39;&lt;variablename&gt;&#39; is already declared in the current block | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -46,4 +46,4 @@ Two variables with the same name are declared in the same block (which can be a 
   
 ## See Also  
  [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)   
- [Shadowing in Visual Basic](../Topic/Shadowing%20in%20Visual%20Basic.md)
+ [Shadowing in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/shadowing)

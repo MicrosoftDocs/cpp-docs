@@ -1,5 +1,5 @@
 ---
-title: "&#39;AddressOf&#39; expressions are not valid in the first expression of a &#39;Select Case&#39; statement"
+title: "&#39;AddressOf&#39; expressions are not valid in the first expression of a &#39;Select Case&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ You cannot use an `AddressOf` expression for the test expression in a `Select Ca
 -   Examine your code to determine whether a different conditional construction, such as an `If...Then...Else` statement, would work for you.  
   
 ## See Also  
- [AddressOf Operator](../Topic/AddressOf%20Operator%20\(Visual%20Basic\).md)   
- [If...Then...Else Statement](../Topic/If...Then...Else%20Statement%20\(Visual%20Basic\).md)   
- [Select...Case Statement](../Topic/Select...Case%20Statement%20\(Visual%20Basic\).md)
+ [AddressOf Operator](/dotnet/visual-basic/language-reference/operators/addressof-operator)   
+ [If...Then...Else Statement](/dotnet/visual-basic/language-reference/statements/if-then-else-statement)   
+ [Select...Case Statement](/dotnet/visual-basic/language-reference/statements/select-case-statement)

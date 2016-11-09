@@ -1,7 +1,7 @@
 ---
-title: "_U_MENUorID Class"
+title: "_U_MENUorID Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "U_MENUorID class"
   - "_U_MENUorID class"
 ms.assetid: cfc8032b-61b4-4a68-ba3a-92b82500ccae
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -57,20 +57,20 @@ class _U_MENUorID
   
 |Name|Description|  
 |----------|-----------------|  
-|[_U_MENUorID::_U_MENUorID](../Topic/_U_MENUorID::_U_MENUorID.md)|The constructor.|  
+|[_U_MENUorID::_U_MENUorID](#_u_menuorid___u_menuorid)|The constructor.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[_U_MENUorID::m_hMenu](../Topic/_U_MENUorID::m_hMenu.md)|A handle to a menu.|  
+|[_U_MENUorID::m_hMenu](#_u_menuorid__m_hmenu)|A handle to a menu.|  
   
 ## Remarks  
  This argument adapter class allows either IDs ( **UINT**s) or menu handles ( `HMENU`s) to be passed to a function without requiring an explicit cast on the part of the caller.  
   
  This class is designed for implementing wrappers to the Windows API, particularly the [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) and [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) functions, both of which accept an `HMENU` argument that may be a child window identifier ( **UINT**) rather than a menu handle. For example, you can see this class in use as a parameter to [CWindowImpl::Create](../Topic/CWindowImpl::Create.md).  
   
- The class defines two constructor overloads: one accepts a **UINT** argument and the other accepts an `HMENU` argument. The **UINT** argument is just cast to an `HMENU` in the constructor and the result stored in the class's single data member, [m_hMenu](../Topic/_U_MENUorID::m_hMenu.md). The argument to the `HMENU` constructor is stored directly without conversion.  
+ The class defines two constructor overloads: one accepts a **UINT** argument and the other accepts an `HMENU` argument. The **UINT** argument is just cast to an `HMENU` in the constructor and the result stored in the class's single data member, [m_hMenu](#_u_menuorid__m_hmenu). The argument to the `HMENU` constructor is stored directly without conversion.  
   
 ## Requirements  
  **Header:** atlwin.h  
@@ -83,7 +83,7 @@ HMENU m_hMenu;
 ```  
   
 ##  <a name="_u_menuorid___u_menuorid"></a>  _U_MENUorID::_U_MENUorID  
- The **UINT** argument is just cast to an `HMENU` in the constructor and the result stored in the class's single data member, [m_hMenu](../Topic/_U_MENUorID::m_hMenu.md).  
+ The **UINT** argument is just cast to an `HMENU` in the constructor and the result stored in the class's single data member, [m_hMenu](#_u_menuorid__m_hmenu).  
   
 ```
 _U_MENUorID(UINT nID);
@@ -103,10 +103,3 @@ _U_MENUorID(UINT nID);
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

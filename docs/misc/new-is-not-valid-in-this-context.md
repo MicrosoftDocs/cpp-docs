@@ -1,5 +1,5 @@
 ---
-title: "&#39;New&#39; is not valid in this context"
+title: "&#39;New&#39; is not valid in this context | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ The `New` keyword occurs where a type name is required. The context calls for a 
 -   Remove the `New` keyword.  
   
 ## See Also  
- [New Operator](../Topic/New%20Operator%20\(Visual%20Basic\).md)   
- [Enum Statement](../Topic/Enum%20Statement%20\(Visual%20Basic\).md)
+ [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator)   
+ [Enum Statement](/dotnet/visual-basic/language-reference/statements/enum-statement)

@@ -1,5 +1,5 @@
 ---
-title: "Cannot inherit interface &#39;&lt;interfacename1&gt;&#39; because the interface &#39;&lt;interfacename2&gt;&#39; from which it inherits could be identical to interface &#39;&lt;interfacename3&gt;&#39; for some type arguments"
+title: "Cannot inherit interface &#39;&lt;interfacename1&gt;&#39; because the interface &#39;&lt;interfacename2&gt;&#39; from which it inherits could be identical to interface &#39;&lt;interfacename3&gt;&#39; for some type arguments | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -65,7 +65,7 @@ End Interface
   
 ## See Also  
  [NOT IN BUILD: Interfaces Overview](http://msdn.microsoft.com/en-us/f96bb470-c1b8-4c73-89bc-6f536b798da1)   
- [Interface Statement](../Topic/Interface%20Statement%20\(Visual%20Basic\).md)   
- [Inheritance Basics](../Topic/Inheritance%20Basics%20\(Visual%20Basic\).md)   
- [Inherits Statement](../Topic/Inherits%20Statement.md)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)
+ [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)   
+ [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)   
+ [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement)   
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)

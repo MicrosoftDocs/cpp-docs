@@ -1,5 +1,5 @@
 ---
-title: "&#39;On Error&#39; statements are not valid within &#39;SyncLock&#39; statements"
+title: "&#39;On Error&#39; statements are not valid within &#39;SyncLock&#39; statements | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ translation.priority.mt:
 1.  Place `On Error` statements outside `SyncLock` blocks.  
   
 ## See Also  
- [On Error Statement](../Topic/On%20Error%20Statement%20\(Visual%20Basic\).md)
+ [On Error Statement](/dotnet/visual-basic/language-reference/statements/on-error-statement)

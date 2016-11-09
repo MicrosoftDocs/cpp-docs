@@ -1,7 +1,7 @@
 ---
-title: "Visual Studio SDK and Managed Code"
+title: "Visual Studio SDK and Managed Code | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -36,7 +36,7 @@ translation.priority.mt:
 ## Environment Support for Managed VSPackages  
  To support creating a VSPackage or project with a managed language such as [!INCLUDE[csprcs](../ide/includes/csprcs_md.md)], the [!INCLUDE[vsipsdk](../mfc/includes/vsipsdk_md.md)] provides the following:  
   
--   The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] interop assemblies, which enable VSPackages written in managed code to interoperate with the unmanaged (COM) [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] integrated development environment (IDE). For more information, see [Using Visual Studio Interop Assemblies](../Topic/Using%20Visual%20Studio%20Interop%20Assemblies.md).  
+-   The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] interop assemblies, which enable VSPackages written in managed code to interoperate with the unmanaged (COM) [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] integrated development environment (IDE). For more information, see [Using Visual Studio Interop Assemblies](/visual-studio/extensibility/internals/using-visual-studio-interop-assemblies).  
   
 -   A set of Managed Package Framework (MPF) classes that provides a higher-level abstraction for working with the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] IDE. These classes encapsulate some of the most frequently used interfaces and types in the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] interop assemblies. They greatly reduce the amount of work that you must do to provide the basic functionality of a VSPackage or project. For more information, see [Managed Package Framework Classes](../misc/managed-package-framework-classes.md).  
   
@@ -44,5 +44,5 @@ translation.priority.mt:
   
 ## See Also  
  [Managed VSPackages](../misc/managed-vspackages.md)   
- [Using Visual Studio Interop Assemblies](../Topic/Using%20Visual%20Studio%20Interop%20Assemblies.md)   
+ [Using Visual Studio Interop Assemblies](/visual-studio/extensibility/internals/using-visual-studio-interop-assemblies)   
  [Managed Package Framework Classes](../misc/managed-package-framework-classes.md)

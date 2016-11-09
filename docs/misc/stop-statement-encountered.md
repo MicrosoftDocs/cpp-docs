@@ -1,5 +1,5 @@
 ---
-title: "Stop statement encountered"
+title: "Stop statement encountered | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,6 +40,6 @@ A `Stop` statement, which suspends execution, was encountered.
 1.  Remove the `Stop` statement.  
   
 ## See Also  
- [Stop Statement](../Topic/Stop%20Statement%20\(Visual%20Basic\).md)   
- [Control Flow Summary](../Topic/Control%20Flow%20Summary%20\(Visual%20Basic\).md)   
- [Stop Statements in Visual Basic](../Topic/Stop%20Statements%20in%20Visual%20Basic.md)
+ [Stop Statement](/dotnet/visual-basic/language-reference/statements/stop-statement)   
+ [Control Flow Summary](/dotnet/visual-basic/language-reference/keywords/control-flow-summary)   
+ [Stop Statements in Visual Basic](/visual-studio/debugger/stop-statements-in-visual-basic)

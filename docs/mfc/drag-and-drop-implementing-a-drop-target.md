@@ -1,7 +1,7 @@
 ---
-title: "Drag and Drop: Implementing a Drop Target"
+title: "Drag and Drop: Implementing a Drop Target | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

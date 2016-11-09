@@ -1,5 +1,5 @@
 ---
-title: "&#39;Type&#39; statements are no longer supported; use &#39;Structure&#39; statements instead"
+title: "&#39;Type&#39; statements are no longer supported; use &#39;Structure&#39; statements instead | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ The `Type` keyword can no longer be used to define user-defined types.
 -   Use the `Structure` statement to define a new type.  
   
 ## See Also  
- [Structure Statement](../Topic/Structure%20Statement.md)   
- [Structures](../Topic/Structures%20\(Visual%20Basic\).md)
+ [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)   
+ [Structures](/dotnet/visual-basic/programming-guide/language-features/data-types/structures)

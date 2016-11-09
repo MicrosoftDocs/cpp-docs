@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1510"
+title: "Compiler Error CS1510 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1510"
 ms.assetid: 3f5a69f1-7672-4194-a4ee-5753370fc736
 caps.latest.revision: 10
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS1510
 A ref or out argument must be an assignable variable  
   
- Only a variable can be passed as a [ref](../Topic/ref%20\(C%23%20Reference\).md) parameter in a method call. A `ref` value is like passing a pointer.  
+ Only a variable can be passed as a [ref](/dotnet/csharp/language-reference/keywords/ref) parameter in a method call. A `ref` value is like passing a pointer.  
   
 ## Example  
  The following sample generates CS1510:  

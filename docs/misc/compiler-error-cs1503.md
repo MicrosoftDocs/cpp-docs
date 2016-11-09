@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1503"
+title: "Compiler Error CS1503 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1503"
 ms.assetid: 65e4c63d-928d-49f5-8fac-8e113b07e128
 caps.latest.revision: 12
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,4 +39,4 @@ translation.priority.mt:
 # Compiler Error CS1503
 Argument 'number' cannot convert from TypeA to TypeB  
   
- The type of one argument in a method does not match the type that was passed when the class was instantiated. This error typically appears along with CS1502. See [CS1502](../Topic/Compiler%20Error%20CS1502.md) for a discussion of how to resolve this error.
+ The type of one argument in a method does not match the type that was passed when the class was instantiated. This error typically appears along with CS1502. See [CS1502](/dotnet/csharp/language-reference/compiler-messages/cs1502) for a discussion of how to resolve this error.

@@ -1,7 +1,7 @@
 ---
-title: "-Oy (Frame-Pointer Omission)"
+title: "-Oy (Frame-Pointer Omission) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -74,7 +74,7 @@ Suppresses creation of frame pointers on the call stack.
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.OmitFramePointers*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.OmitFramePointers%2A>.  
   
 ## See Also  
  [/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)   

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS2003"
+title: "Compiler Error CS2003 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS2003"
 ms.assetid: 87ce44c8-ed0f-40d1-8c13-8edb998fabb8
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -40,4 +41,4 @@ Response file 'file' included multiple times
   
  A response file was passed to the compiler more than once. A response file can only be passed to the compiler once per output file.  
   
- For more on response files, see [@ (Specify Response File)](../Topic/@%20\(C%23%20Compiler%20Options\).md).
+ For more on response files, see [@ (Specify Response File)](/dotnet/csharp/language-reference/compiler-options/response-file-compiler-option).

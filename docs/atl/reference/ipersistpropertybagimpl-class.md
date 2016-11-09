@@ -1,7 +1,7 @@
 ---
-title: "IPersistPropertyBagImpl Class"
+title: "IPersistPropertyBagImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "IPersistPropertyBagImpl class"
 ms.assetid: 712af24d-99f8-40f2-9811-53b3ff6e5b19
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -61,10 +61,10 @@ template <class T>  class ATL_NO_VTABLE IPersistPropertyBagImpl :  public IPersi
   
 |Name|Description|  
 |----------|-----------------|  
-|[IPersistPropertyBagImpl::GetClassID](../Topic/IPersistPropertyBagImpl::GetClassID.md)|Retrieves the object's CLSID.|  
-|[IPersistPropertyBagImpl::InitNew](../Topic/IPersistPropertyBagImpl::InitNew.md)|Initializes a newly created object. The ATL implementation returns `S_OK`.|  
-|[IPersistPropertyBagImpl::Load](../Topic/IPersistPropertyBagImpl::Load.md)|Loads the object's properties from a client-supplied property bag.|  
-|[IPersistPropertyBagImpl::Save](../Topic/IPersistPropertyBagImpl::Save.md)|Saves the object's properties into a client-supplied property bag.|  
+|[IPersistPropertyBagImpl::GetClassID](#ipersistpropertybagimpl__getclassid)|Retrieves the object's CLSID.|  
+|[IPersistPropertyBagImpl::InitNew](#ipersistpropertybagimpl__initnew)|Initializes a newly created object. The ATL implementation returns `S_OK`.|  
+|[IPersistPropertyBagImpl::Load](#ipersistpropertybagimpl__load)|Loads the object's properties from a client-supplied property bag.|  
+|[IPersistPropertyBagImpl::Save](#ipersistpropertybagimpl__save)|Saves the object's properties into a client-supplied property bag.|  
   
 ## Remarks  
  The [IPersistPropertyBag](https://msdn.microsoft.com/library/aa768205.aspx) interface allows an object to save its properties to a client-supplied property bag. Class `IPersistPropertyBagImpl` provides a default implementation of this interface and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -133,10 +133,3 @@ STDMETHOD(Save)(LPPROPERTYBAG pPropBag,
 ## See Also  
  [BEGIN_PROP_MAP](../Topic/BEGIN_PROP_MAP.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

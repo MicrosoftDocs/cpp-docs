@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1929"
+title: "Compiler Error CS1929 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1929"
 ms.assetid: effdd5d4-e156-418b-9d45-4ca194ab4319
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -74,4 +75,4 @@ using System.Linq;
 ```  
   
 ## See Also  
- [Extension Methods](../Topic/Extension%20Methods%20\(C%23%20Programming%20Guide\).md)
+ [Extension Methods](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)

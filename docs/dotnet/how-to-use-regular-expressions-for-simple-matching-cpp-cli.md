@@ -1,7 +1,7 @@
 ---
-title: "How to: Use Regular Expressions for Simple Matching (C++-CLI)"
+title: "How to: Use Regular Expressions for Simple Matching (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Use Regular Expressions for Simple Matching (C++/CLI)
-The following code example uses regular expressions to look for exact substring matches. The search is performed by the static <xref:System.Text.RegularExpressions.Regex.IsMatch*> method, which takes two strings as input. The first is the string to be searched, and the second is the pattern to be searched for.  
+The following code example uses regular expressions to look for exact substring matches. The search is performed by the static <xref:System.Text.RegularExpressions.Regex.IsMatch%2A> method, which takes two strings as input. The first is the string to be searched, and the second is the pattern to be searched for.  
   
 ## Example  
   

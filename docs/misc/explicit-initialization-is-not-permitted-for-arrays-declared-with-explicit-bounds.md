@@ -1,5 +1,5 @@
 ---
-title: "Explicit initialization is not permitted for arrays declared with explicit bounds"
+title: "Explicit initialization is not permitted for arrays declared with explicit bounds | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -52,4 +52,4 @@ Arrays cannot be initialized if they are declared to be a specific size.
     ```  
   
 ## See Also  
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)

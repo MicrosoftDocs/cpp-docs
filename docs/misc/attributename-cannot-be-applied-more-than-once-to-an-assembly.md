@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;attributename&gt;&#39; cannot be applied more than once to an assembly"
+title: "&#39;&lt;attributename&gt;&#39; cannot be applied more than once to an assembly | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -48,4 +48,4 @@ The specified attribute can only be applied once to an attribute.
   
 ## See Also  
  <xref:System.AttributeUsageAttribute>   
- <xref:System.AttributeUsageAttribute.AllowMultiple*?displayProperty=fullName>
+ <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=fullName>

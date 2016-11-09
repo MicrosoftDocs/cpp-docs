@@ -1,7 +1,7 @@
 ---
-title: "CAtlDllModuleT Class"
+title: "CAtlDllModuleT Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAtlDllModuleT class"
 ms.assetid: 351d5767-8257-4878-94be-45a85e31a72d
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -59,19 +59,19 @@ template <class T>  class ATL_NO_VTABLE CAtlDllModuleT :  public CAtlModuleT<T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlDllModuleT::CAtlDllModuleT](../Topic/CAtlDllModuleT::CAtlDllModuleT.md)|The constructor.|  
-|[CAtlDllModuleT::~CAtlDllModuleT](../Topic/CAtlDllModuleT::~CAtlDllModuleT.md)|The destructor.|  
+|[CAtlDllModuleT::CAtlDllModuleT](#catldllmodulet__catldllmodulet)|The constructor.|  
+|[CAtlDllModuleT::~CAtlDllModuleT](#catldllmodulet___dtorcatldllmodulet)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlDllModuleT::DllCanUnloadNow](../Topic/CAtlDllModuleT::DllCanUnloadNow.md)|Tests if the DLL can be unloaded.|  
-|[CAtlDllModuleT::DllGetClassObject](../Topic/CAtlDllModuleT::DllGetClassObject.md)|Returns a class factory.|  
-|[CAtlDllModuleT::DllMain](../Topic/CAtlDllModuleT::DllMain.md)|The optional entry point into a dynamic-link library (DLL).|  
-|[CAtlDllModuleT::DllRegisterServer](../Topic/CAtlDllModuleT::DllRegisterServer.md)|Adds entries to the system registry for objects in the DLL.|  
-|[CAtlDllModuleT::DllUnregisterServer](../Topic/CAtlDllModuleT::DllUnregisterServer.md)|Removes entries in the system registry for objects in the DLL.|  
-|[CAtlDllModuleT::GetClassObject](../Topic/CAtlDllModuleT::GetClassObject.md)|Returns a class factory. Invoked by [DllGetClassObject](../Topic/CAtlDllModuleT::DllGetClassObject.md).|  
+|[CAtlDllModuleT::DllCanUnloadNow](#catldllmodulet__dllcanunloadnow)|Tests if the DLL can be unloaded.|  
+|[CAtlDllModuleT::DllGetClassObject](#catldllmodulet__dllgetclassobject)|Returns a class factory.|  
+|[CAtlDllModuleT::DllMain](#catldllmodulet__dllmain)|The optional entry point into a dynamic-link library (DLL).|  
+|[CAtlDllModuleT::DllRegisterServer](#catldllmodulet__dllregisterserver)|Adds entries to the system registry for objects in the DLL.|  
+|[CAtlDllModuleT::DllUnregisterServer](#catldllmodulet__dllunregisterserver)|Removes entries in the system registry for objects in the DLL.|  
+|[CAtlDllModuleT::GetClassObject](#catldllmodulet__getclassobject)|Returns a class factory. Invoked by [DllGetClassObject](#catldllmodulet__dllgetclassobject).|  
   
 ## Remarks  
  `CAtlDllModuleT` represents the module for a dynamic-link library (DLL) and provides functions used by all DLL projects. This specialization of [CAtlModuleT](../../atl/reference/catlmodulet-class.md) class includes support for registration.  
@@ -207,17 +207,10 @@ HRESULT GetClassObject(REFCLSID rclsid,
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This method is called by [CAtlDllModuleT::DllGetClassObject](../Topic/CAtlDllModuleT::DllGetClassObject.md) and is included for backward compatibility.  
+ This method is called by [CAtlDllModuleT::DllGetClassObject](#catldllmodulet__dllgetclassobject) and is included for backward compatibility.  
   
 ## See Also  
  [CAtlModuleT Class](../../atl/reference/catlmodulet-class.md)   
  [CAtlExeModuleT Class](../../atl/reference/catlexemodulet-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Module Classes](../../atl/atl-module-classes.md)
-
-
-
-
-
-
-

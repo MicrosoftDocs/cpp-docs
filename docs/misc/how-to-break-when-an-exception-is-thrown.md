@@ -1,7 +1,7 @@
 ---
-title: "How to: Break When an Exception is Thrown"
+title: "How to: Break When an Exception is Thrown | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,4 +41,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Break When an Exception is Thrown
-This content has been removed. Please see [Managing Exceptions with the Debugger](../Topic/Managing%20Exceptions%20with%20the%20Debugger.md).
+This content has been removed. Please see [Managing Exceptions with the Debugger](/visual-studio/debugger/managing-exceptions-with-the-debugger).

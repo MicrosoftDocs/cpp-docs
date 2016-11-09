@@ -1,5 +1,5 @@
 ---
-title: "Cannot convert &#39;type1&#39; to &#39;type2&#39;"
+title: "Cannot convert &#39;type1&#39; to &#39;type2&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -48,7 +48,7 @@ Cannot convert 'type1' to 'type2'. You can use the 'Value' property to get the s
   
 ## See Also  
  <xref:System.Convert>   
- [Accessing XML in Visual Basic](../Topic/Accessing%20XML%20in%20Visual%20Basic.md)   
- [Type Conversion Functions](../Topic/Type%20Conversion%20Functions%20\(Visual%20Basic\).md)   
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [Accessing XML in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/xml/accessing-xml)   
+ [Type Conversion Functions](/dotnet/visual-basic/language-reference/functions/type-conversion-functions)   
+ [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)

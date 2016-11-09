@@ -1,0 +1,1 @@
+BEGIN_EVENT_MAP(CMyAxUICtrl, COleControl)

@@ -1,7 +1,7 @@
 ---
-title: "set (STL-CLR)"
+title: "set (STL-CLR) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -123,8 +123,8 @@ template<typename Key>
 |<xref:System.ICloneable>|Duplicate an object.|  
 |<xref:System.Collections.IEnumerable>|Sequence through elements.|  
 |<xref:System.Collections.ICollection>|Maintain group of elements.|  
-|<xref:System.Collections.Generic.IEnumerable`1>|Sequence through typed elements.|  
-|<xref:System.Collections.Generic.ICollection`1>|Maintain group of typed elements.|  
+|<xref:System.Collections.Generic.IEnumerable%601>|Sequence through typed elements.|  
+|<xref:System.Collections.Generic.ICollection%601>|Maintain group of typed elements.|  
 |ITree\<Key, Value>|Maintain generic container.|  
   
 ## Remarks  

@@ -1,5 +1,5 @@
 ---
-title: "&#39;With&#39; contexts and statements are not valid in debug windows"
+title: "&#39;With&#39; contexts and statements are not valid in debug windows | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ translation.priority.mt:
 -   Remove `With` statements from debugging code.  
   
 ## See Also  
- [With...End With Statement](../Topic/With...End%20With%20Statement%20\(Visual%20Basic\).md)   
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [With...End With Statement](/dotnet/visual-basic/language-reference/statements/with-end-with-statement)   
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS3000"
+title: "Compiler Warning (level 1) CS3000 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS3000"
 ms.assetid: 37cdd3dc-8481-4e29-b78c-281baeca2d64
 caps.latest.revision: 11
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

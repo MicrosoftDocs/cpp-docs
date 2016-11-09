@@ -1,7 +1,7 @@
 ---
-title: "CTime Class"
+title: "CTime Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -61,7 +61,7 @@ class CTime
 |----------|-----------------|  
 |[CTime::Format](#ctime__format)|Converts a `CTime` object into a formatted string — based on the local time zone.|  
 |[CTime::FormatGmt](#ctime__formatgmt)|Converts a `CTime` object into a formatted string — based on UTC.|  
-|[CTime::GetAsDBTIMESTAMP](#ctime__getasdbtimestamp)|Converts the time information stored in the `CTime` object to a Win32-compatible <xref:System.Data.OleDb.OleDbTypequalifyHint=False&autoUpgrade=True> structure.|  
+|[CTime::GetAsDBTIMESTAMP](#ctime__getasdbtimestamp)|Converts the time information stored in the `CTime` object to a Win32-compatible <xref:System.Data.OleDb.OleDbTypequalifyHint%3DFalse%26autoUpgrade%3DTrue> structure.|  
 |[CTime::GetAsSystemTime](#ctime__getassystemtime)|Converts the time information stored in the `CTime` object to a Win32-compatible [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure.|  
 |[CTime::GetCurrentTime](#ctime__getcurrenttime)|Creates a `CTime` object that represents the current time (static member function).|  
 |[CTime::GetDay](#ctime__getday)|Returns the day represent by the `CTime` object.|  
@@ -214,7 +214,7 @@ CTime() throw();
  A [FILETIME](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/979ce746-dc17-4147-89f8-41d05c5fcc5f/locales/en-US) structure to be converted to a date/time value and copied into the new `CTime` object.  
   
  dbts  
- A reference to a <xref:System.Data.OleDb.OleDbTypequalifyHint=False&autoUpgrade=True> structure containing the current local time.  
+ A reference to a <xref:System.Data.OleDb.OleDbTypequalifyHint%3DFalse%26autoUpgrade%3DTrue> structure containing the current local time.  
   
 ### Remarks  
  Each constructor is described below:  
@@ -313,7 +313,7 @@ CString FormatGmt(UINT nFormatID) const;
  See the example for [CTime::Format](#ctime__format).  
   
 ##  <a name="ctime__getasdbtimestamp"></a>  CTime::GetAsDBTIMESTAMP  
- Call this member function to convert the time information stored in the `CTime` object to a Win32–compatible <xref:System.Data.OleDb.OleDbTypequalifyHint=False&autoUpgrade=True> structure.  
+ Call this member function to convert the time information stored in the `CTime` object to a Win32–compatible <xref:System.Data.OleDb.OleDbTypequalifyHint%3DFalse%26autoUpgrade%3DTrue> structure.  
   
 ```  
 bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
@@ -321,7 +321,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
   
 ### Parameters  
  `dbts`  
- A reference to a <xref:System.Data.OleDb.OleDbTypequalifyHint=False&autoUpgrade=True> structure containing the current local time.  
+ A reference to a <xref:System.Data.OleDb.OleDbTypequalifyHint%3DFalse%26autoUpgrade%3DTrue> structure containing the current local time.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  

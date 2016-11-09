@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1931"
+title: "Compiler Error CS1931 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1931"
 ms.assetid: c0071c3d-ae11-4073-87df-508150daef68
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -61,4 +62,4 @@ class Test
 ```  
   
 ## See Also  
- [LINQ Query Expressions](../Topic/LINQ%20Query%20Expressions%20\(C%23%20Programming%20Guide\).md)
+ [LINQ Query Expressions](/dotnet/csharp/programming-guide/linq-query-expressions/index)

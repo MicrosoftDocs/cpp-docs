@@ -1,5 +1,5 @@
 ---
-title: "&#39;Shared&#39; cannot be combined with &#39;&lt;specifier&gt;&#39; on a property declaration"
+title: "&#39;Shared&#39; cannot be combined with &#39;&lt;specifier&gt;&#39; on a property declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You have attempted to combine the `Shared` modifier with a specifier that is not
 -   Remove the specifier.  
   
 ## See Also  
- [Shared](../Topic/Shared%20\(Visual%20Basic\).md)
+ [Shared](/dotnet/visual-basic/language-reference/modifiers/shared)

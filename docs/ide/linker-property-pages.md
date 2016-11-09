@@ -1,7 +1,7 @@
 ---
-title: "Linker Property Pages"
+title: "Linker Property Pages | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -47,12 +47,12 @@ This topic discusses the following properties on the **General** linker property
   
  Use **Ignore Import Library** to resolve this problem. When set to `Yes`, the project system will ignore the presence or absence of that .lib file and cause any project that depends on this project to not link with the nonexistent .lib file.  
   
- To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreImportLibrary*>.  
+ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreImportLibrary%2A>.  
   
  **Register Output**  
  Run regsvr32.exe /s $(TargetPath), which is valid only on .dll projects. For .exe projects, this property is ignored. If you want to register an .exe output, set a postbuild event on the configuration to do the custom registration that is always required for registered .exe files.  
   
- To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.RegisterOutput*>.  
+ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.RegisterOutput%2A>.  
   
  **Per-user Redirection**  
  Registration in [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] has traditionally been done in HKEY_CLASSES_ROOT (HKCR). With [!INCLUDE[wiprlhext](../c-runtime-library/reference/includes/wiprlhext_md.md)], to access HKCR you must run [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] in elevated mode. Developers do not always want to run in elevated mode but still must work with registration. Per-user redirection allows you to register without having to run in this mode.  

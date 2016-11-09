@@ -1,7 +1,7 @@
 ---
-title: "-U, -u (Undefine Symbols)"
+title: "-U, -u (Undefine Symbols) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -86,7 +86,7 @@ The **/U** compiler option undefines the specified preprocessor symbol. The **/u
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UndefineAllPreprocessorDefinitions*> or <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UndefinePreprocessorDefinitions*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UndefineAllPreprocessorDefinitions%2A> or <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UndefinePreprocessorDefinitions%2A>.  
   
 ## See Also  
  [Compiler Options](../../build/reference/compiler-options.md)   

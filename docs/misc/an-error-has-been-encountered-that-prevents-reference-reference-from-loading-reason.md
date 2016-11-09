@@ -1,7 +1,7 @@
 ---
-title: "An error has been encountered that prevents reference &#39;reference&#39; from loading. &lt;reason&gt;"
+title: "An error has been encountered that prevents reference &#39;reference&#39; from loading. &lt;reason&gt; | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

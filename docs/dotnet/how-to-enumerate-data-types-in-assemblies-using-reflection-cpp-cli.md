@@ -1,7 +1,7 @@
 ---
-title: "How to: Enumerate Data Types in Assemblies using Reflection (C++-CLI)"
+title: "How to: Enumerate Data Types in Assemblies using Reflection (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -43,7 +43,7 @@ The following code demonstrates the enumeration of public types and members usin
   
  Given the name of an assembly, either in the local directory or in the GAC, the code below attempts to open the assembly and retrieve descriptions. If successful, each type is displayed with its public members.  
   
- Note that <xref:System.Reflection.Assembly.Load*?displayProperty=fullName> requires that no file extension is used. Therefore, using "mscorlib.dll" as a command-line argument will fail, while using just "mscorlib" will result the display of the .NET Framework types. If no assembly name is provided, the code will detect and report the types within the current assembly (the EXE resulting from this code).  
+ Note that <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> requires that no file extension is used. Therefore, using "mscorlib.dll" as a command-line argument will fail, while using just "mscorlib" will result the display of the .NET Framework types. If no assembly name is provided, the code will detect and report the types within the current assembly (the EXE resulting from this code).  
   
 ## Example  
   

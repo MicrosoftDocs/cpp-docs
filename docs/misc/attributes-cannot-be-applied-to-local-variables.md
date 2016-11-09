@@ -1,5 +1,5 @@
 ---
-title: "Attributes cannot be applied to local variables"
+title: "Attributes cannot be applied to local variables | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

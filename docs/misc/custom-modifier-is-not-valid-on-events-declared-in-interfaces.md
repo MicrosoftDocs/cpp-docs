@@ -1,5 +1,5 @@
 ---
-title: "&#39;Custom&#39; modifier is not valid on events declared in interfaces"
+title: "&#39;Custom&#39; modifier is not valid on events declared in interfaces | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -53,8 +53,8 @@ A custom event cannot be declared in an interface because a custom event must pr
   
 ## See Also  
  [Custom - delete](http://msdn.microsoft.com/en-us/dc62be07-c896-4866-a533-982a661d143f)   
- [Event Statement](../Topic/Event%20Statement.md)   
- [Delegate Statement](../Topic/Delegate%20Statement.md)   
- [Class Statement](../Topic/Class%20Statement%20\(Visual%20Basic\).md)   
- [Interface Statement](../Topic/Interface%20Statement%20\(Visual%20Basic\).md)   
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)   
+ [Delegate Statement](/dotnet/visual-basic/language-reference/statements/delegate-statement)   
+ [Class Statement](/dotnet/visual-basic/language-reference/statements/class-statement)   
+ [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)   
+ [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)

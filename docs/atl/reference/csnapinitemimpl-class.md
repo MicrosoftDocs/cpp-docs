@@ -1,7 +1,7 @@
 ---
-title: "CSnapInItemImpl Class"
+title: "CSnapInItemImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -21,7 +21,7 @@ helpviewer_keywords:
   - "CSnapInItemImpl class"
   - "snap-ins"
 ms.assetid: 52caefbd-9eae-49b0-add2-d55524271aa7
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -65,33 +65,33 @@ template <class T,  BOOL bIsExtension = FALSE>  class ATL_NO_VTABLE CSnapInItemI
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSnapInItemImpl::CSnapInItemImpl](../Topic/CSnapInItemImpl::CSnapInItemImpl.md)|Constructor.|  
+|[CSnapInItemImpl::CSnapInItemImpl](#csnapinitemimpl__csnapinitemimpl)|Constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSnapInItemImpl::AddMenuItems](../Topic/CSnapInItemImpl::AddMenuItems.md)|Adds menu items to a context menu.|  
-|[CSnapInItemImpl::Command](../Topic/CSnapInItemImpl::Command.md)|Called by the console when a custom menu item is selected.|  
-|[CSnapInItemImpl::CreatePropertyPages](../Topic/CSnapInItemImpl::CreatePropertyPages.md)|Adds pages to the property sheet of the snap-in.|  
-|[CSnapInItemImpl::FillData](../Topic/CSnapInItemImpl::FillData.md)|Copies information on the snap-in object into a specified stream.|  
-|[CSnapInItemImpl::GetResultPaneInfo](../Topic/CSnapInItemImpl::GetResultPaneInfo.md)|Retrieves the **RESULTDATAITEM** structure of the snap-in.|  
-|[CSnapInItemImpl::GetResultViewType](../Topic/CSnapInItemImpl::GetResultViewType.md)|Determines the type of view used by the result pane.|  
-|[CSnapInItemImpl::GetScopePaneInfo](../Topic/CSnapInItemImpl::GetScopePaneInfo.md)|Retrieves the **SCOPEDATAITEM** structure of the snap-in.|  
-|[CSnapInItemImpl::Notify](../Topic/CSnapInItemImpl::Notify.md)|Called by the console to notify the snap-in of actions taken by the user.|  
-|[CSnapInItemImpl::QueryPagesFor](../Topic/CSnapInItemImpl::QueryPagesFor.md)|Called to see if the snap-in node supports property pages.|  
-|[CSnapInItemImpl::SetMenuInsertionFlags](../Topic/CSnapInItemImpl::SetMenuInsertionFlags.md)|Modifies the menu insertion flags for a snap-in object.|  
-|[CSnapInItemImpl::SetToolbarButtonInfo](../Topic/CSnapInItemImpl::SetToolbarButtonInfo.md)|Sets the information of the specified toolbar button.|  
-|[CSnapInItemImpl::UpdateMenuState](../Topic/CSnapInItemImpl::UpdateMenuState.md)|Updates the state of a context menu item.|  
-|[CSnapInItemImpl::UpdateToolbarButton](../Topic/CSnapInItemImpl::UpdateToolbarButton.md)|Updates the state of the specified toolbar button.|  
+|[CSnapInItemImpl::AddMenuItems](#csnapinitemimpl__addmenuitems)|Adds menu items to a context menu.|  
+|[CSnapInItemImpl::Command](#csnapinitemimpl__command)|Called by the console when a custom menu item is selected.|  
+|[CSnapInItemImpl::CreatePropertyPages](#csnapinitemimpl__createpropertypages)|Adds pages to the property sheet of the snap-in.|  
+|[CSnapInItemImpl::FillData](#csnapinitemimpl__filldata)|Copies information on the snap-in object into a specified stream.|  
+|[CSnapInItemImpl::GetResultPaneInfo](#csnapinitemimpl__getresultpaneinfo)|Retrieves the **RESULTDATAITEM** structure of the snap-in.|  
+|[CSnapInItemImpl::GetResultViewType](#csnapinitemimpl__getresultviewtype)|Determines the type of view used by the result pane.|  
+|[CSnapInItemImpl::GetScopePaneInfo](#csnapinitemimpl__getscopepaneinfo)|Retrieves the **SCOPEDATAITEM** structure of the snap-in.|  
+|[CSnapInItemImpl::Notify](#csnapinitemimpl__notify)|Called by the console to notify the snap-in of actions taken by the user.|  
+|[CSnapInItemImpl::QueryPagesFor](#csnapinitemimpl__querypagesfor)|Called to see if the snap-in node supports property pages.|  
+|[CSnapInItemImpl::SetMenuInsertionFlags](#csnapinitemimpl__setmenuinsertionflags)|Modifies the menu insertion flags for a snap-in object.|  
+|[CSnapInItemImpl::SetToolbarButtonInfo](#csnapinitemimpl__settoolbarbuttoninfo)|Sets the information of the specified toolbar button.|  
+|[CSnapInItemImpl::UpdateMenuState](#csnapinitemimpl__updatemenustate)|Updates the state of a context menu item.|  
+|[CSnapInItemImpl::UpdateToolbarButton](#csnapinitemimpl__updatetoolbarbutton)|Updates the state of the specified toolbar button.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSnapInItemImpl::m_bstrDisplayName](../Topic/CSnapInItemImpl::m_bstrDisplayName.md)|The name of the snap-in object.|  
-|[CSnapInItemImpl::m_resultDataItem](../Topic/CSnapInItemImpl::m_resultDataItem.md)|The Windows **RESULTDATAITEM** structure used by the `CSnapInItemImpl` object.|  
-|[CSnapInItemImpl::m_scopeDataItem](../Topic/CSnapInItemImpl::m_scopeDataItem.md)|The Windows **SCOPEDATAITEM** structure used by the `CSnapInItemImpl` object.|  
+|[CSnapInItemImpl::m_bstrDisplayName](#csnapinitemimpl__m_bstrdisplayname)|The name of the snap-in object.|  
+|[CSnapInItemImpl::m_resultDataItem](#csnapinitemimpl__m_resultdataitem)|The Windows **RESULTDATAITEM** structure used by the `CSnapInItemImpl` object.|  
+|[CSnapInItemImpl::m_scopeDataItem](#csnapinitemimpl__m_scopedataitem)|The Windows **SCOPEDATAITEM** structure used by the `CSnapInItemImpl` object.|  
   
 ## Remarks  
  `CSnapInItemImpl` provides a basic implementation for a snap-in node object, such as adding menu items and toolbars, and forwarding commands for the snap-in node to the appropriate handler function. These features are implemented using several different interfaces and map types. The default implementation handles notifications sent to the node object by determining the correct instance of the derived class and then forwarding the message to the correct instance.  
@@ -266,7 +266,7 @@ CComBSTR m_bstrDisplayName;
 ```  
   
 ##  <a name="csnapinitemimpl__m_scopedataitem"></a>  CSnapInItemImpl::m_scopeDataItem  
- The <xref:Microsoft.CLRAdmin.SCOPEDATAITEMqualifyHint=False&autoUpgrade=True> structure of the snap-in data object.  
+ The <xref:Microsoft.CLRAdmin.SCOPEDATAITEMqualifyHint%3DFalse%26autoUpgrade%3DTrue> structure of the snap-in data object.  
   
 ```
 SCOPEDATAITEM m_scopeDataItem;
@@ -495,10 +495,3 @@ BOOL UpdateToolbarButton(UINT id,  BYTE fsState);
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

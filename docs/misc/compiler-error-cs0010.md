@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0010"
+title: "Compiler Error CS0010 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0010"
 ms.assetid: ac94730b-e8c7-4cee-94f4-7d856369b595
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -45,4 +46,4 @@ Unexpected fatal error -- 'error'.
 1.  Recompile another project. If you receive the same error, try reinstalling Visual Studio. If you receive this error, send an error report to Microsoft.  
   
 ## See Also  
- [/errorreport (C# Compiler Options)](../Topic/-errorreport%20\(C%23%20Compiler%20Options\).md)
+ [/errorreport (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)

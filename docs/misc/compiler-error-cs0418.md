@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0418"
+title: "Compiler Error CS0418 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0418"
 ms.assetid: b78fafde-428b-4fa2-a933-c4614760bb71
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

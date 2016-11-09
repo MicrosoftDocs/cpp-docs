@@ -1,7 +1,7 @@
 ---
-title: "CUrl Class"
+title: "CUrl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CUrl class"
 ms.assetid: b3894d34-47b9-4961-9719-4197153793da
-caps.latest.revision: 21
+caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -55,46 +55,46 @@ class CUrl
   
 |Name|Description|  
 |----------|-----------------|  
-|[CUrl::CUrl](../Topic/CUrl::CUrl.md)|The constructor.|  
-|[CUrl::~CUrl](../Topic/CUrl::~CUrl.md)|The destructor.|  
+|[CUrl::CUrl](#curl__curl)|The constructor.|  
+|[CUrl::~CUrl](#curl___dtorcurl)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CUrl::Canonicalize](../Topic/CUrl::Canonicalize.md)|Call this method to convert the URL string to canonical form.|  
-|[CUrl::Clear](../Topic/CUrl::Clear.md)|Call this method to clear all of the URL fields.|  
-|[CUrl::CrackUrl](../Topic/CUrl::CrackUrl.md)|Call this method to decode and parse the URL.|  
-|[CUrl::CreateUrl](../Topic/CUrl::CreateUrl.md)|Call this method to create the URL.|  
-|[CUrl::GetExtraInfo](../Topic/CUrl::GetExtraInfo.md)|Call this method to get extra information (such as *text* or # *text*) from the URL.|  
-|[CUrl::GetExtraInfoLength](../Topic/CUrl::GetExtraInfoLength.md)|Call this method to get the length of the extra information (such as *text* or # *text*) to retrieve from the URL.|  
-|[CUrl::GetHostName](../Topic/CUrl::GetHostName.md)|Call this method to get the host name from the URL.|  
-|[CUrl::GetHostNameLength](../Topic/CUrl::GetHostNameLength.md)|Call this method to get the length of the host name.|  
-|[CUrl::GetPassword](../Topic/CUrl::GetPassword.md)|Call this method to get the password from the URL.|  
-|[CUrl::GetPasswordLength](../Topic/CUrl::GetPasswordLength.md)|Call this method to get the length of the password.|  
-|[CUrl::GetPortNumber](../Topic/CUrl::GetPortNumber.md)|Call this method to get the port number in terms of ATL_URL_PORT.|  
-|[CUrl::GetScheme](../Topic/CUrl::GetScheme.md)|Call this method to get the URL scheme.|  
-|[CUrl::GetSchemeName](../Topic/CUrl::GetSchemeName.md)|Call this method to get the URL scheme name.|  
-|[CUrl::GetSchemeNameLength](../Topic/CUrl::GetSchemeNameLength.md)|Call this method to get the length of the URL scheme name.|  
-|[CUrl::GetUrlLength](../Topic/CUrl::GetUrlLength.md)|Call this method to get the URL length.|  
-|[CUrl::GetUrlPath](../Topic/CUrl::GetUrlPath.md)|Call this method to get the URL path.|  
-|[CUrl::GetUrlPathLength](../Topic/CUrl::GetUrlPathLength.md)|Call this method to get the URL path length.|  
-|[CUrl::GetUserName](../Topic/CUrl::GetUserName.md)|Call this method to get the user name from the URL.|  
-|[CUrl::GetUserNameLength](../Topic/CUrl::GetUserNameLength.md)|Call this method to get the length of the user name.|  
-|[CUrl::SetExtraInfo](../Topic/CUrl::SetExtraInfo.md)|Call this method to set the extra information (such as *text* or # *text*) of the URL.|  
-|[CUrl::SetHostName](../Topic/CUrl::SetHostName.md)|Call this method to set the host name.|  
-|[CUrl::SetPassword](../Topic/CUrl::SetPassword.md)|Call this method to set the password.|  
-|[CUrl::SetPortNumber](../Topic/CUrl::SetPortNumber.md)|Call this method to set the port number in terms of ATL_URL_PORT.|  
-|[CUrl::SetScheme](../Topic/CUrl::SetScheme.md)|Call this method to set the URL scheme.|  
-|[CUrl::SetSchemeName](../Topic/CUrl::SetSchemeName.md)|Call this method to set the URL scheme name.|  
-|[CUrl::SetUrlPath](../Topic/CUrl::SetUrlPath.md)|Call this method to set the URL path.|  
-|[CUrl::SetUserName](../Topic/CUrl::SetUserName.md)|Call this method to set the user name.|  
+|[CUrl::Canonicalize](#curl__canonicalize)|Call this method to convert the URL string to canonical form.|  
+|[CUrl::Clear](#curl__clear)|Call this method to clear all of the URL fields.|  
+|[CUrl::CrackUrl](#curl__crackurl)|Call this method to decode and parse the URL.|  
+|[CUrl::CreateUrl](#curl__createurl)|Call this method to create the URL.|  
+|[CUrl::GetExtraInfo](#curl__getextrainfo)|Call this method to get extra information (such as *text* or # *text*) from the URL.|  
+|[CUrl::GetExtraInfoLength](#curl__getextrainfolength)|Call this method to get the length of the extra information (such as *text* or # *text*) to retrieve from the URL.|  
+|[CUrl::GetHostName](#curl__gethostname)|Call this method to get the host name from the URL.|  
+|[CUrl::GetHostNameLength](#curl__gethostnamelength)|Call this method to get the length of the host name.|  
+|[CUrl::GetPassword](#curl__getpassword)|Call this method to get the password from the URL.|  
+|[CUrl::GetPasswordLength](#curl__getpasswordlength)|Call this method to get the length of the password.|  
+|[CUrl::GetPortNumber](#curl__getportnumber)|Call this method to get the port number in terms of ATL_URL_PORT.|  
+|[CUrl::GetScheme](#curl__getscheme)|Call this method to get the URL scheme.|  
+|[CUrl::GetSchemeName](#curl__getschemename)|Call this method to get the URL scheme name.|  
+|[CUrl::GetSchemeNameLength](#curl__getschemenamelength)|Call this method to get the length of the URL scheme name.|  
+|[CUrl::GetUrlLength](#curl__geturllength)|Call this method to get the URL length.|  
+|[CUrl::GetUrlPath](#curl__geturlpath)|Call this method to get the URL path.|  
+|[CUrl::GetUrlPathLength](#curl__geturlpathlength)|Call this method to get the URL path length.|  
+|[CUrl::GetUserName](#curl__getusername)|Call this method to get the user name from the URL.|  
+|[CUrl::GetUserNameLength](#curl__getusernamelength)|Call this method to get the length of the user name.|  
+|[CUrl::SetExtraInfo](#curl__setextrainfo)|Call this method to set the extra information (such as *text* or # *text*) of the URL.|  
+|[CUrl::SetHostName](#curl__sethostname)|Call this method to set the host name.|  
+|[CUrl::SetPassword](#curl__setpassword)|Call this method to set the password.|  
+|[CUrl::SetPortNumber](#curl__setportnumber)|Call this method to set the port number in terms of ATL_URL_PORT.|  
+|[CUrl::SetScheme](#curl__setscheme)|Call this method to set the URL scheme.|  
+|[CUrl::SetSchemeName](#curl__setschemename)|Call this method to set the URL scheme name.|  
+|[CUrl::SetUrlPath](#curl__seturlpath)|Call this method to set the URL path.|  
+|[CUrl::SetUserName](#curl__setusername)|Call this method to set the user name.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CUrl::operator =](../Topic/CUrl::operator%20=.md)|Assigns the specified `CUrl` object to the current `CUrl` object.|  
+|[CUrl::operator =](#curl__operator__eq)|Assigns the specified `CUrl` object to the current `CUrl` object.|  
   
 ## Remarks  
  `CUrl` allows you to manipulate the fields of a URL, such as the path or port number. `CUrl` understands URLs of the following form:  
@@ -105,7 +105,7 @@ class CUrl
   
  http://someone:secret@www.microsoft.com:80/visualc/stuff.htm#contents  
   
- [CUrl::CrackUrl](../Topic/CUrl::CrackUrl.md) parses it as follows:  
+ [CUrl::CrackUrl](#curl__crackurl) parses it as follows:  
   
 -   Scheme: "http" or [ATL_URL_SCHEME_HTTP](../Topic/ATL_URL_SCHEME.md)  
   
@@ -121,7 +121,7 @@ class CUrl
   
 -   ExtraInfo: "#contents"  
   
- To manipulate the UrlPath field (for instance), you would use [GetUrlPath](../Topic/CUrl::GetUrlPath.md), [GetUrlPathLength](../Topic/CUrl::GetUrlPathLength.md), and [SetUrlPath](../Topic/CUrl::SetUrlPath.md). You would use [CreateUrl](../Topic/CUrl::CreateUrl.md) to create the complete URL string.  
+ To manipulate the UrlPath field (for instance), you would use [GetUrlPath](#curl__geturlpath), [GetUrlPathLength](#curl__geturlpathlength), and [SetUrlPath](#curl__seturlpath). You would use [CreateUrl](#curl__createurl) to create the complete URL string.  
   
 ## Requirements  
  **Header:** atlutil.h  
@@ -467,7 +467,7 @@ inline BOOL SetScheme(ATL_URL_SCHEME nScheme) throw();
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- You can also set the scheme by name (see [CUrl::SetSchemeName](../Topic/CUrl::SetSchemeName.md)).  
+ You can also set the scheme by name (see [CUrl::SetSchemeName](#curl__setschemename)).  
   
 ##  <a name="curl__setschemename"></a>  CUrl::SetSchemeName  
  Call this method to set the URL scheme name.  
@@ -484,7 +484,7 @@ inline BOOL SetSchemeName(LPCTSTR lpszSchm) throw();
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- You can also set the scheme by using an [ATL_URL_SCHEME](../Topic/ATL_URL_SCHEME.md) constant (see [CUrl::SetScheme](../Topic/CUrl::SetScheme.md)).  
+ You can also set the scheme by using an [ATL_URL_SCHEME](../Topic/ATL_URL_SCHEME.md) constant (see [CUrl::SetScheme](#curl__setscheme)).  
   
 ##  <a name="curl__seturlpath"></a>  CUrl::SetUrlPath  
  Call this method to set the URL path.  
@@ -516,10 +516,3 @@ inline BOOL SetUserName(LPCTSTR lpszUser) throw();
   
 ## See Also  
  [Classes](../../atl/reference/atl-classes.md)
-
-
-
-
-
-
-

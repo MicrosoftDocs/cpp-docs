@@ -1,7 +1,7 @@
 ---
-title: "_ATL_BASE_MODULE70 Structure"
+title: "_ATL_BASE_MODULE70 Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "ATL_BASE_MODULE70 structure"
   - "_ATL_BASE_MODULE70 structure"
 ms.assetid: 4539282f-15b8-4d7c-aafa-a85dc56f4980
-caps.latest.revision: 14
+caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -44,12 +44,15 @@ Used by any project that uses ATL.
 ## Syntax  
   
 ```
-struct _ATL_BASE_MODULE70{  UINT cbSize;  HINSTANCE m_hInst;  HINSTANCE m_hInstResource;  bool m_bNT5orWin98;  DWORD dwAtlBuildVer;
-
-    GUID* pguidVer;  CRITICAL_SECTION m_csResource;
-
+struct _ATL_BASE_MODULE70 {
+    UINT cbSize;
+    HINSTANCE m_hInst;
+    HINSTANCE m_hInstResource;
+    bool m_bNT5orWin98;
+    DWORD dwAtlBuildVer;
+    GUID* pguidVer;
+    CRITICAL_SECTION m_csResource;
     CSimpleArray<HINSTANCE> m_rgResourceInstance;
-
 };
 ```  
   

@@ -1,5 +1,5 @@
 ---
-title: "The input path refers to a file but ends with a directory separator character"
+title: "The input path refers to a file but ends with a directory separator character | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -41,5 +41,5 @@ An operation was attempted requiring that a filename be supplied, but the suppli
   
 ## See Also  
  [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
- [Reading from Files](../Topic/Reading%20from%20Files%20in%20Visual%20Basic.md)   
- [Writing to Files](../Topic/Writing%20to%20Files%20in%20Visual%20Basic.md)
+ [Reading from Files](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files)   
+ [Writing to Files](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files)

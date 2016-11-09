@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0400"
+title: "Compiler Error CS0400 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0400"
 ms.assetid: 58f91f3b-30f4-433b-9a13-0cff258a2630
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

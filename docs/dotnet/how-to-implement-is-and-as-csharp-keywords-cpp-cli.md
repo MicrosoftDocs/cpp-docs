@@ -1,7 +1,7 @@
 ---
-title: "How to: Implement is and as C# Keywords (C++-CLI)"
+title: "How to: Implement is and as C# Keywords (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -37,7 +37,7 @@ translation.priority.ht:
 # How to: Implement is and as C# Keywords (C++/CLI)
 This topic shows how to implement the functionality of the `is` and `as` C# keywords in Visual C++.  
   
- For more information, see [is](../Topic/is%20\(C%23%20Reference\).md) and [as](../Topic/as%20\(C%23%20Reference\).md).  
+ For more information, see [is](/dotnet/csharp/language-reference/keywords/is) and [as](/dotnet/csharp/language-reference/keywords/as).  
   
 ## Example  
   

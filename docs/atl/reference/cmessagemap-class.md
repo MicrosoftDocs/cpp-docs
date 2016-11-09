@@ -1,7 +1,7 @@
 ---
-title: "CMessageMap Class"
+title: "CMessageMap Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ helpviewer_keywords:
   - "message maps, ATL"
   - "ATL, message handlers"
 ms.assetid: 1f97bc16-a8a0-4cf0-b90f-1778813a5c8e
-caps.latest.revision: 21
+caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -57,7 +57,7 @@ class ATL_NO_VTABLE CMessageMap
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMessageMap::ProcessWindowMessage](../Topic/CMessageMap::ProcessWindowMessage.md)|Accesses a message map in the `CMessageMap`-derived class.|  
+|[CMessageMap::ProcessWindowMessage](#cmessagemap__processwindowmessage)|Accesses a message map in the `CMessageMap`-derived class.|  
   
 ## Remarks  
  `CMessageMap` is an abstract base class that allows an object's message maps to be accessed by another object. In order for an object to expose its message maps, its class must derive from `CMessageMap`.  
@@ -115,10 +115,3 @@ virtual BOOL ProcessWindowMessage(HWND hWnd,
  [BEGIN_MSG_MAP](../Topic/BEGIN_MSG_MAP.md)   
  [ALT_MSG_MAP](../Topic/ALT_MSG_MAP.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

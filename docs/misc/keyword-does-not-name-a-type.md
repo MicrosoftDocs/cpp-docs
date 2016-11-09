@@ -1,5 +1,5 @@
 ---
-title: "Keyword does not name a type"
+title: "Keyword does not name a type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,8 +45,8 @@ A keyword appears where a type name is required. The context calls for either an
 -   Replace the keyword with a valid type name.  
   
 ## See Also  
- [Class Statement](../Topic/Class%20Statement%20\(Visual%20Basic\).md)   
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)   
- [Function Statement](../Topic/Function%20Statement%20\(Visual%20Basic\).md)   
- [Property Statement](../Topic/Property%20Statement.md)   
- [Structure Statement](../Topic/Structure%20Statement.md)
+ [Class Statement](/dotnet/visual-basic/language-reference/statements/class-statement)   
+ [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
+ [Function Statement](/dotnet/visual-basic/language-reference/statements/function-statement)   
+ [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
+ [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)

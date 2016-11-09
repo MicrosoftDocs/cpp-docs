@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS0684"
+title: "Compiler Warning (level 1) CS0684 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0684"
 ms.assetid: d6c8aaf6-c1cf-4c0e-b367-4c3e418d8bc4
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

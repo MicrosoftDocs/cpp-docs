@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0409"
+title: "Compiler Error CS0409 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0409"
 ms.assetid: 23d86c13-7978-41b7-a087-ffcea52476fa
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

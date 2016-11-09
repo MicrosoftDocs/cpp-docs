@@ -1,5 +1,5 @@
 ---
-title: "&#39;MyBase&#39; must be followed by &#39;.&#39; and an identifier"
+title: "&#39;MyBase&#39; must be followed by &#39;.&#39; and an identifier | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -48,4 +48,4 @@ translation.priority.mt:
   
 ## See Also  
  [MyBase - delete](http://msdn.microsoft.com/en-us/52491d06-6451-4f6f-9aa6-8fab59bbc2b9)   
- [Inheritance Basics](../Topic/Inheritance%20Basics%20\(Visual%20Basic\).md)
+ [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

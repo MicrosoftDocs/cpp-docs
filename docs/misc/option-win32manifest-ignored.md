@@ -1,5 +1,5 @@
 ---
-title: "Option -win32manifest ignored"
+title: "Option -win32manifest ignored | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,6 +47,6 @@ Option /win32manifest ignored. It can be specified only when the target is an as
 1.  Remove the `/win32manifest` compiler option or set the `/target` option to `exe`, `winexe`, or `library`.  
   
 ## See Also  
- [/target (Visual Basic)](../Topic/-target%20\(Visual%20Basic\).md)   
- [/win32manifest (Visual Basic)](../Topic/-win32manifest%20\(Visual%20Basic\).md)   
- [Visual Basic Command-Line Compiler](../Topic/Visual%20Basic%20Command-Line%20Compiler.md)
+ [/target (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/target)   
+ [/win32manifest (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/win32manifest)   
+ [Visual Basic Command-Line Compiler](/dotnet/visual-basic/reference/command-line-compiler/index)

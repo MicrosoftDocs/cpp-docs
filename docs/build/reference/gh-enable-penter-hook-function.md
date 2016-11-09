@@ -1,7 +1,7 @@
 ---
-title: "-Gh (Enable _penter Hook Function)"
+title: "-Gh (Enable _penter Hook Function) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -70,7 +70,7 @@ void __declspec(naked) _cdecl _penter( void );
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
   
 ## Example  
  The following code, when compiled with **/Gh**, shows how `_penter` is called twice; once when entering function `main` and once when entering function `x`.  

@@ -1,7 +1,7 @@
 ---
-title: "CAutoPtrList Class"
+title: "CAutoPtrList Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAutoPtrList class"
 ms.assetid: 11de4aca-28b0-4ff2-a74a-cb602312ffbd
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -63,7 +63,7 @@ template<typename E>  class CAutoPtrList : public CAtlList<
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAutoPtrList::CAutoPtrList](../Topic/CAutoPtrList::CAutoPtrList.md)|The constructor.|  
+|[CAutoPtrList::CAutoPtrList](#cautoptrlist__cautoptrlist)|The constructor.|  
   
 ## Remarks  
  This class provides a constructor and derives methods from [CAtlList](../../atl/reference/catllist-class.md) and [CAutoPtrElementTraits](../../atl/reference/cautoptrelementtraits-class.md) to aid the creation of a list object storing smart pointers. The class [CAutoPtrArray](../../atl/reference/cautoptrarray-class.md) provides a similar function for an array object.  
@@ -96,10 +96,3 @@ CAutoPtrList(UINT nBlockSize = 10) throw();
  [CAtlList Class](../../atl/reference/catllist-class.md)   
  [CAutoPtrElementTraits Class](../../atl/reference/cautoptrelementtraits-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

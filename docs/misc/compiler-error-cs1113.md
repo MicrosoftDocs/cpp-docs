@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1113"
+title: "Compiler Error CS1113 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1113"
 ms.assetid: ef2d828f-b5ee-4be9-ba2e-36df5502cc5a
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -76,4 +77,4 @@ public class Test
 ```  
   
 ## See Also  
- [Extension Methods](../Topic/Extension%20Methods%20\(C%23%20Programming%20Guide\).md)
+ [Extension Methods](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)

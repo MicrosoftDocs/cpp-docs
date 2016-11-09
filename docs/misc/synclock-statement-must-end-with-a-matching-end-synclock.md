@@ -1,5 +1,5 @@
 ---
-title: "&#39;SyncLock&#39; statement must end with a matching &#39;End SyncLock&#39;"
+title: "&#39;SyncLock&#39; statement must end with a matching &#39;End SyncLock&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ translation.priority.mt:
 -   Make sure that `SyncLock` block ends with a `End SyncLock` construct.  
   
 ## See Also  
- [SyncLock Statement](../Topic/SyncLock%20Statement.md)
+ [SyncLock Statement](/dotnet/visual-basic/language-reference/statements/synclock-statement)

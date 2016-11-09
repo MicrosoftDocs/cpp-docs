@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0176"
+title: "Compiler Error CS0176 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0176"
 ms.assetid: 783c13d8-5ac3-4aeb-bd63-0468cb05550d
 caps.latest.revision: 9
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0176
 Static member 'member' cannot be accessed with an instance reference; qualify it with a type name instead  
   
- Only a class name can be used to qualify a [static](../Topic/static%20\(C%23%20Reference\).md) variable; an instance name cannot be a qualifier. For more information, see [Static Classes and Static Class Members](../Topic/Static%20Classes%20and%20Static%20Class%20Members%20\(C%23%20Programming%20Guide\).md).  
+ Only a class name can be used to qualify a [static](/dotnet/csharp/language-reference/keywords/static) variable; an instance name cannot be a qualifier. For more information, see [Static Classes and Static Class Members](/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members).  
   
  The following sample generates CS0176:  
   

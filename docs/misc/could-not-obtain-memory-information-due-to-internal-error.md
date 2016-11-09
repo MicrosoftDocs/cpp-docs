@@ -1,5 +1,5 @@
 ---
-title: "Could not obtain memory information due to internal error"
+title: "Could not obtain memory information due to internal error | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,6 +40,6 @@ A call to one of the memory-information properties of the `My.Computer.Info` obj
 -   Add a `Try...Catch` block around the call to the memory-information property of the `My.Computer.Info` object.  
   
 ## See Also  
- [My.Computer.Info Object](../Topic/My.Computer.Info%20Object.md)   
+ [My.Computer.Info Object](/dotnet/visual-basic/language-reference/objects/my-computer-info-object)   
  [Exception and Error Handling in Visual Basic](http://msdn.microsoft.com/en-us/3e351e73-cf23-40ab-8b60-05794160529e)   
- [Try...Catch...Finally Statement](../Topic/Try...Catch...Finally%20Statement%20\(Visual%20Basic\).md)
+ [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)

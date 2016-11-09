@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.Net.Sockets.SocketException"
+title: "Troubleshooting Exceptions: System.Net.Sockets.SocketException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -42,7 +42,7 @@ A <xref:System.Net.Sockets.SocketException> exception is thrown by the <xref:Sys
   
 ## Associated Tips  
  **Check the Errorcode property to determine why the socket error occurred.**  
- The default constructor for the <xref:System.Net.Sockets.SocketException> class sets the <xref:System.Net.Sockets.SocketException.ErrorCode*> property to the last operating-system socket error that occurred.  
+ The default constructor for the <xref:System.Net.Sockets.SocketException> class sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating-system socket error that occurred.  
   
 ## See Also  
  <xref:System.Net.Sockets.SocketException>   

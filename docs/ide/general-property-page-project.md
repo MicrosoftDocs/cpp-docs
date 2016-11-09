@@ -1,7 +1,7 @@
 ---
-title: "General Property Page (Project)"
+title: "General Property Page (Project) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -84,12 +84,12 @@ When you right-click on a project node in in Solution Explorer, and select **Pro
  **Output Directory**  
  Specifies the directory where tools such as the linker will place all final output files that are created during the build process. Typically, this includes the output of tools such as the linker, librarian, or BSCMake.  
   
- To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.OutputDirectory*>.  
+ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.OutputDirectory%2A>.  
   
  **Intermediate Directory**  
  Specifies the directory where tools such as the compiler will place all intermediate files created during the build process. Typically, this includes the output of tools such as the C/C++ compiler, MIDL, and the resource compiler.  
   
- To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.IntermediateDirectory*>.  
+ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.IntermediateDirectory%2A>.  
   
  **Target Name**  
  Specifies the file name this project generates.  
@@ -100,7 +100,7 @@ When you right-click on a project node in in Solution Explorer, and select **Pro
  **Extensions to Delete on Clean**  
  The **Clean** option (**Build** menu) deletes files from the intermediate directory where a project's configuration is built. Files with extensions specified with this property will be deleted when **Clean** is run or when you perform a rebuild. In addition to files of these extensions in the intermediate directory, the build system will also delete any known output of the build regardless of where it is located (including intermediate outputs such as .obj files). Note that you can specify wildcard characters.  
   
- To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean*>.  
+ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean%2A>.  
   
  **Build Log File**  
  Allows you to specify a non-default location for the log file that is created whenever you build a project.  
@@ -126,27 +126,27 @@ When you right-click on a project node in in Solution Explorer, and select **Pro
   
 -   **Utility**, displays utility toolset (MIDL, custom build, prebuild, postbuild events).  
   
- To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ConfigurationType*>.  
+ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ConfigurationType%2A>.  
   
  **Use of MFC**  
  Specifies whether the MFC project will statically or dynamically link to the MFC DLL. Non-MFC projects can select **Use Standard Windows Libraries** to link to various Win32 libraries that are included when you use MFC.  
   
- To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.useOfMfc*>.  
+ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.useOfMfc%2A>.  
   
  **Use of ATL**  
  Specifies whether the ATL project will statically or dynamically link to the ATL .DLL. If you specify anything other than **Not Using ATL**, a define will be added to the compiler's **Command Line** property page.  
   
- To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.useOfATL*>.  
+ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.useOfATL%2A>.  
   
  **Character Set**  
  Defines whether _UNICODE or _MBCS should be set. Also affects the linker entry point where appropriate.  
   
- To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.CharacterSet*>.  
+ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.CharacterSet%2A>.  
   
  **Common Language Runtime support**  
  Causes the [/clr](../build/reference/clr-common-language-runtime-compilation.md) compiler option to be used.  
   
- To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.ManagedExtensions*>.  
+ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.ManagedExtensions%2A>.  
   
  **Whole Program Optimization**  
  Specifies the [/GL](../build/reference/gl-whole-program-optimization.md) compiler option and [/LTCG](../build/reference/ltcg-link-time-code-generation.md) linker option.  

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 3) CS0642"
+title: "Compiler Warning (level 3) CS0642 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0642"
 ms.assetid: e2df58c0-9b7e-4e50-8e31-e0134955f62c
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -40,7 +41,7 @@ Possible mistaken empty statement
   
  A semicolon after a conditional statement may cause your code to execute differently than intended.  
   
- You can use **/nowarn** compiler option or `#pragmas warning` to disable this warning; see [/nowarn (C# Compiler Options)](../Topic/-nowarn%20\(C%23%20Compiler%20Options\).md) or [#pragma warning](../Topic/%23pragma%20warning%20\(C%23%20Reference\).md) for more information.  
+ You can use **/nowarn** compiler option or `#pragmas warning` to disable this warning; see [/nowarn (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option) or [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) for more information.  
   
  The following sample generates CS0642:  
   

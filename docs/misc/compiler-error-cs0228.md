@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0228"
+title: "Compiler Error CS0228 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0228"
 ms.assetid: 517ed010-2310-4441-8b4b-3306cd9ee2d9
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

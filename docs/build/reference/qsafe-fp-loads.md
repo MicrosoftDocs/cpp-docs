@@ -1,7 +1,7 @@
 ---
-title: "-Qsafe_fp_loads"
+title: "-Qsafe_fp_loads | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -62,7 +62,7 @@ Requires integer move instructions for floating-point values and disables certai
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
   
 ## See Also  
  [/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)   

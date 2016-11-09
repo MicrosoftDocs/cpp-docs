@@ -1,5 +1,5 @@
 ---
-title: "Unable to write to log file because writing to it would reduce free disk space below ReservedSpace value"
+title: "Unable to write to log file because writing to it would reduce free disk space below ReservedSpace value | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -35,23 +35,23 @@ translation.priority.mt:
 # Unable to write to log file because writing to it would reduce free disk space below ReservedSpace value
 The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> class could not write to the log file because:  
   
--   The amount of free disk space (in bytes) is less than the value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace*> property  
+-   The amount of free disk space (in bytes) is less than the value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace%2A> property  
   
      —and—  
   
--   The value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior*> property was <xref:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption>.  
+-   The value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A> property was <xref:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption>.  
   
 ### To correct this error  
   
 1.  Archive the existing logs and remove them from the computer to allow the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> object to create new logs.  
   
-2.  Change the value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace*> property to a smaller number to reserve less disk space.  
+2.  Change the value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace%2A> property to a smaller number to reserve less disk space.  
   
-3.  Set the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior*> property to <xref:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption> to discard messages without warning if there is not enough free disk space.  
+3.  Set the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A> property to <xref:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption> to discard messages without warning if there is not enough free disk space.  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace*>   
- <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior*>   
+ <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace%2A>   
+ <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A>   
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>   
- [My.Application.Log Object](../Topic/My.Application.Log%20Object.md)   
- [My.Log Object](../Topic/My.Log%20Object.md)
+ [My.Application.Log Object](/dotnet/visual-basic/language-reference/objects/my-application-log-object)   
+ [My.Log Object](/dotnet/visual-basic/language-reference/objects/my-log-object)

@@ -1,5 +1,5 @@
 ---
-title: "&#39;End RemoveHandler&#39; must be preceded by a matching &#39;RemoveHandler&#39; declaration"
+title: "&#39;End RemoveHandler&#39; must be preceded by a matching &#39;RemoveHandler&#39; declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ An `End RemoveHandler` statement occurred without a corresponding `RemoveHandler
 -   Check that the preceding `RemoveHandler` statement is valid and correctly spelled.  
   
 ## See Also  
- [RemoveHandler Statement](../Topic/RemoveHandler%20Statement.md)   
- [Event Statement](../Topic/Event%20Statement.md)
+ [RemoveHandler Statement](/dotnet/visual-basic/language-reference/statements/removehandler-statement)   
+ [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)

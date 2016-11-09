@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0546"
+title: "Compiler Error CS0546 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0546"
 ms.assetid: d259c86f-ee29-4e2d-b381-6ba7252af87e
 caps.latest.revision: 13
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -40,13 +41,13 @@ translation.priority.mt:
   
  An attempt to override one of the accessor methods for a property failed because the accessor cannot be overridden. This error can occur if:  
   
--   the base class property is not declared as [virtual](../Topic/virtual%20\(C%23%20Reference\).md).  
+-   the base class property is not declared as [virtual](/dotnet/csharp/language-reference/keywords/virtual).  
   
--   the base class property does not declare the [get](../Topic/get%20\(C%23%20Reference\).md) or [set](../Topic/set%20\(C%23%20Reference\).md) accessor you are trying to override.  
+-   the base class property does not declare the [get](/dotnet/csharp/language-reference/keywords/get) or [set](/dotnet/csharp/language-reference/keywords/set) accessor you are trying to override.  
   
- If you do not want to override the base class property, you can use the [new](../Topic/new%20\(C%23%20Reference\).md) keyword before the property in derived class.  
+ If you do not want to override the base class property, you can use the [new](/dotnet/csharp/language-reference/keywords/new) keyword before the property in derived class.  
   
- For more information, see [Using Properties](../Topic/Using%20Properties%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see [Using Properties](/dotnet/csharp/programming-guide/classes-and-structs/using-properties).  
   
 ## Example  
  The following sample generates CS0546 because the base class does not declare a set accessor for the property.  
@@ -90,4 +91,4 @@ public class b : a
 ```  
   
 ## See Also  
- [Properties](../Topic/Properties%20\(C%23%20Programming%20Guide\).md)
+ [Properties](/dotnet/csharp/programming-guide/classes-and-structs/properties)

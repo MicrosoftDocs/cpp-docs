@@ -1,7 +1,7 @@
 ---
-title: "The project file &#39;&lt;filename&gt;&#39; cannot be updated"
+title: "The project file &#39;&lt;filename&gt;&#39; cannot be updated | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

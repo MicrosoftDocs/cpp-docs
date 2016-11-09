@@ -1,7 +1,7 @@
 ---
-title: "How to: Manually Package an Extension (VSIX Deployment)"
+title: "How to: Manually Package an Extension (VSIX Deployment) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -33,7 +33,7 @@ You can create a VSIX package to wrap a [!INCLUDE[vsprvs](../assembler/masm/incl
   
 -   Create a VSIX package project by using one of the extensibility templates that are included in the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] SDK. This is the easiest option for most scenarios.  
   
--   Wrap the output of your extension project in an empty [VSIX Project](../Topic/VSIX%20Project%20Template.md). We recommend this option for templates, unsupported assemblies, and custom types.  
+-   Wrap the output of your extension project in an empty [VSIX Project](/visual-studio/extensibility/vsix-project-template). We recommend this option for templates, unsupported assemblies, and custom types.  
   
 -   Manually create a VSIX package. We recommend this option only when the other two options are not available.  
   
@@ -68,6 +68,6 @@ You can create a VSIX package to wrap a [!INCLUDE[vsprvs](../assembler/masm/incl
 8.  Rename the resulting .zip file to *Filename*.vsix, where *Filename* is the name of the redistributable file that installs your package.  
   
 ## See Also  
- [Shipping Visual Studio Extensions](../Topic/Shipping%20Visual%20Studio%20Extensions.md)   
- [Anatomy of a VSIX Package](../Topic/Anatomy%20of%20a%20VSIX%20Package.md)   
+ [Shipping Visual Studio Extensions](/visual-studio/extensibility/shipping-visual-studio-extensions)   
+ [Anatomy of a VSIX Package](/visual-studio/extensibility/anatomy-of-a-vsix-package)   
  [PackageManifest Element (Root Element, VSX Schema)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187)

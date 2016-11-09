@@ -1,7 +1,7 @@
 ---
-title: "CComObjectStack Class"
+title: "CComObjectStack Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComObjectStack class"
 ms.assetid: 3da72c40-c834-45f6-bb76-6ac204028d80
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -59,22 +59,22 @@ template <class  Base>  class CComObjectStack
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComObjectStack::CComObjectStack](../Topic/CComObjectStack::CComObjectStack.md)|The constructor.|  
-|[CComObjectStack::~CComObjectStack](../Topic/CComObjectStack::~CComObjectStack.md)|The destructor.|  
+|[CComObjectStack::CComObjectStack](#ccomobjectstack__ccomobjectstack)|The constructor.|  
+|[CComObjectStack::~CComObjectStack](#ccomobjectstack___dtorccomobjectstack)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComObjectStack::AddRef](../Topic/CComObjectStack::AddRef.md)|Returns zero. In debug mode, calls `_ASSERTE`.|  
-|[CComObjectStack::QueryInterface](../Topic/CComObjectStack::QueryInterface.md)|Returns **E_NOINTERFACE**. In debug mode, calls `_ASSERTE`.|  
-|[CComObjectStack::Release](../Topic/CComObjectStack::Release.md)|Returns zero. In debug mode, calls `_ASSERTE`. ~|  
+|[CComObjectStack::AddRef](#ccomobjectstack__addref)|Returns zero. In debug mode, calls `_ASSERTE`.|  
+|[CComObjectStack::QueryInterface](#ccomobjectstack__queryinterface)|Returns **E_NOINTERFACE**. In debug mode, calls `_ASSERTE`.|  
+|[CComObjectStack::Release](#ccomobjectstack__release)|Returns zero. In debug mode, calls `_ASSERTE`. ~|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComObjectStack::m_hResFinalConstruct](../Topic/CComObjectStack::m_hResFinalConstruct.md)|Contains the **HRESULT** returned during construction of the `CComObjectStack` object.|  
+|[CComObjectStack::m_hResFinalConstruct](#ccomobjectstack__m_hresfinalconstruct)|Contains the **HRESULT** returned during construction of the `CComObjectStack` object.|  
   
 ## Remarks  
  `CComObjectStack` is used to create a temporary COM object and provide the object a skeletal implementation of **IUnknown**. Typically, the object is used as a local variable within one function (that is, pushed onto the stack). Since the object is destroyed when the function finishes, reference counting is not performed to increase efficiency.  
@@ -114,7 +114,7 @@ CComObjectStack(void* = NULL);
 ```  
   
 ### Remarks  
- Calls `FinalConstruct` and then sets [m_hResFinalConstruct](../Topic/CComObjectStack::m_hResFinalConstruct.md) to the `HRESULT` returned by `FinalConstruct`. If you have not derived your base class from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md), you must supply your own `FinalConstruct` method. The destructor calls `FinalRelease`.  
+ Calls `FinalConstruct` and then sets [m_hResFinalConstruct](#ccomobjectstack__m_hresfinalconstruct) to the `HRESULT` returned by `FinalConstruct`. If you have not derived your base class from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md), you must supply your own `FinalConstruct` method. The destructor calls `FinalRelease`.  
   
 ##  <a name="ccomobjectstack___dtorccomobjectstack"></a>  CComObjectStack::~CComObjectStack  
  The destructor.  
@@ -167,10 +167,3 @@ STDMETHOD_(ULONG, Release)();
  [CComObject Class](../../atl/reference/ccomobject-class.md)   
  [CComObjectGlobal Class](../../atl/reference/ccomobjectglobal-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
-title: "You must supply a title for this tool."
+title: "You must supply a title for this tool. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,5 +40,5 @@ This error generally occurs when the **Title** field within the **External Tools
 1.  Enter a name for the new external tool in the **Title** text box.  
   
 ## See Also  
- [Managing External Tools](../Topic/Managing%20External%20Tools.md)   
+ [Managing External Tools](/visual-studio/ide/managing-external-tools)   
  [Arguments for External Tools](../misc/arguments-for-external-tools.md)

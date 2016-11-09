@@ -1,7 +1,7 @@
 ---
-title: "_execute_onexit_table, _initialize_onexit_table, _register_onexit_function"
+title: "_execute_onexit_table, _initialize_onexit_table, _register_onexit_function | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

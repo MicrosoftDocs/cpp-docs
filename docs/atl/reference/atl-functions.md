@@ -1,7 +1,7 @@
 ---
-title: "ATL Functions"
+title: "ATL Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "functions [ATL]"
   - "ATL, global functions"
 ms.assetid: 69db0cb2-de1d-445b-b692-020d6e8c2173
-caps.latest.revision: 12
+caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -39,6 +39,9 @@ translation.priority.ht:
 
 To find an ATL function by category, see the following topics.  
   
+ [ATL Path Functions](../../atl/reference/com-map-global-functions.md)  
+ Provide support for manipulating file paths.
+ 
  [COM Map Global Functions](../../atl/reference/com-map-global-functions.md)  
  Provide support for COM map **IUnknown** implementations.  
   

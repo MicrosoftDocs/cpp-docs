@@ -1,7 +1,7 @@
 ---
-title: "Command &lt;name&gt; does not accept arguments or switches."
+title: "Command &lt;name&gt; does not accept arguments or switches. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -34,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Command &lt;name&gt; does not accept arguments or switches.
-This error generally occurs when a switch or argument has been entered with a command or alias that does not use arguments or switches. If an alias has been entered, the full command name appears in the error message text, not the alias name. For a list of valid commands that use switches and arguments, see [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md).  
+This error generally occurs when a switch or argument has been entered with a command or alias that does not use arguments or switches. If an alias has been entered, the full command name appears in the error message text, not the alias name. For a list of valid commands that use switches and arguments, see [Visual Studio Commands](/visual-studio/ide/reference/visual-studio-commands).  
   
 ### To correct this error  
   
@@ -42,5 +42,5 @@ This error generally occurs when a switch or argument has been entered with a co
   
 ## See Also  
  [PAVE Visual Studio Commands and Switches](http://msdn.microsoft.com/en-us/262ad510-8ba0-4b39-a9cf-4fb8f891e63c)   
- [Command Window](../Topic/Command%20Window.md)   
- [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md)
+ [Command Window](/visual-studio/ide/reference/command-window)   
+ [Visual Studio Commands](/visual-studio/ide/reference/visual-studio-commands)

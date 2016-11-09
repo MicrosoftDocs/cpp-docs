@@ -1,5 +1,5 @@
 ---
-title: "Type parameter &#39;&lt;typeparametername1&gt;&#39; must have either a &#39;New&#39; constraint or a &#39;Structure&#39; constraint to satisfy the &#39;New&#39; constraint for type parameter &#39;&lt;typeparametername2&gt;&#39;"
+title: "Type parameter &#39;&lt;typeparametername1&gt;&#39; must have either a &#39;New&#39; constraint or a &#39;Structure&#39; constraint to satisfy the &#39;New&#39; constraint for type parameter &#39;&lt;typeparametername2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -65,8 +65,8 @@ End Class
 -   If the type parameter cannot satisfy the `Structure` or `New` constraint, then do not pass it to the generic type. You must pass something else as the type argument.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [New Operator](../Topic/New%20Operator%20\(Visual%20Basic\).md)   
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator)   
  [Structure (Visual Basic)](http://msdn.microsoft.com/en-us/263ce115-ac36-4c05-8cb7-0e0eead5c6d0)   
  [Class (Visual Basic)](http://msdn.microsoft.com/en-us/0777c6e6-46bc-451b-ad70-57b49d4ef4f7)   
- [Value Types and Reference Types](../Topic/Value%20Types%20and%20Reference%20Types.md)
+ [Value Types and Reference Types](/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)

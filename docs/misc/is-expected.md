@@ -1,5 +1,5 @@
 ---
-title: "&#39;Is&#39; expected"
+title: "&#39;Is&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ A `TypeOf` operator occurs without an `Is` clause.
 -   Add an `Is` clause following the `TypeOf` operator; for example, `TypeOf MyControl Is ComboBox`.  
   
 ## See Also  
- [Comparison Operators in Visual Basic](../Topic/Comparison%20Operators%20in%20Visual%20Basic.md)
+ [Comparison Operators in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators)

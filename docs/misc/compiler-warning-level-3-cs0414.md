@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 3) CS0414"
+title: "Compiler Warning (level 3) CS0414 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0414"
 ms.assetid: 6a0a80be-799b-4d9c-a7e0-6b91e9ce7be0
 caps.latest.revision: 11
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -67,5 +68,5 @@ class C
  **Note** If the variable `i` is declared as `protected or public`, no error will be generated because the compiler cannot know whether a derived class might use it or some other client code might instantiate the class and reference the variable  
   
 ## See Also  
- [C# Compiler Errors](../Topic/C%23%20Compiler%20Errors.md)   
- [C# Compiler Options](../Topic/C%23%20Compiler%20Options.md)
+ [C# Compiler Errors](/dotnet/csharp/language-reference/compiler-messages/index)   
+ [C# Compiler Options](/dotnet/csharp/language-reference/compiler-options/index)

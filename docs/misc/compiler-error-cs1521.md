@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1521"
+title: "Compiler Error CS1521 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1521"
 ms.assetid: 9a482b33-24f2-4654-81b4-be40bf56d624
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS1521
 Invalid base type  
   
- A [base](../Topic/base%20\(C%23%20Reference\).md) class specification was ill formed.  
+ A [base](/dotnet/csharp/language-reference/keywords/base) class specification was ill formed.  
   
  The following sample generates CS1521:  
   

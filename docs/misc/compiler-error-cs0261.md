@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0261"
+title: "Compiler Error CS0261 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0261"
 ms.assetid: c2af7b31-4a48-457a-8d9b-0956dd0d46f9
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0261
 Partial declarations of 'type' must be all classes, all structs, or all interfaces  
   
- This error occurs if a partial type is declared as a different type of construct in various places. For more information, see [Partial Classes and Methods](../Topic/Partial%20Classes%20and%20Methods%20\(C%23%20Programming%20Guide\).md).  
+ This error occurs if a partial type is declared as a different type of construct in various places. For more information, see [Partial Classes and Methods](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).  
   
  The following sample generates CS0261:  
   

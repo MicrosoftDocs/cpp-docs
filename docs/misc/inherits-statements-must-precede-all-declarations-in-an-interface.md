@@ -1,5 +1,5 @@
 ---
-title: "&#39;Inherits&#39; statements must precede all declarations in an interface"
+title: "&#39;Inherits&#39; statements must precede all declarations in an interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ An `Inherits` statement must be the first non-blank, non-comment line in a class
 -   Move your `Inherits` statement so that it precedes all declarations.  
   
 ## See Also  
- [Inherits Statement](../Topic/Inherits%20Statement.md)
+ [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement)

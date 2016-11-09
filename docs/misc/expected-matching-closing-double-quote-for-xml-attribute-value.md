@@ -1,5 +1,5 @@
 ---
-title: "Expected matching closing double quote for XML attribute value"
+title: "Expected matching closing double quote for XML attribute value | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ An attribute value that is delimited by double quotation marks is missing the cl
 -   Add the closing double quotation mark character to delimit the attribute value.  
   
 ## See Also  
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)

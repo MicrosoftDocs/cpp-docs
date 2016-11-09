@@ -1,7 +1,7 @@
 ---
-title: "ISpecifyPropertyPagesImpl Class"
+title: "ISpecifyPropertyPagesImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -23,7 +23,7 @@ helpviewer_keywords:
   - "ISpecifyPropertyPages"
   - "ISpecifyPropertyPagesImpl class"
 ms.assetid: 4e4b9795-b656-4d56-9b8c-85941e7731f9
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -64,7 +64,7 @@ template<class T>  class ATL_NO_VTABLE ISpecifyPropertyPagesImpl :  public ISpec
   
 |Name|Description|  
 |----------|-----------------|  
-|[ISpecifyPropertyPagesImpl::GetPages](../Topic/ISpecifyPropertyPagesImpl::GetPages.md)|Fills a Counted Array of UUID values. Each UUID corresponds to the CLSID for one of the property pages that can be displayed in the object's property sheet.|  
+|[ISpecifyPropertyPagesImpl::GetPages](#ispecifypropertypagesimpl__getpages)|Fills a Counted Array of UUID values. Each UUID corresponds to the CLSID for one of the property pages that can be displayed in the object's property sheet.|  
   
 ## Remarks  
  The [ISpecifyPropertyPages](http://msdn.microsoft.com/library/windows/desktop/ms695217) interface allows a client to obtain a list of CLSIDs for the property pages supported by an object. Class `ISpecifyPropertyPagesImpl` provides a default implementation of this interface and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -98,10 +98,3 @@ STDMETHOD(GetPages)(CAUUID* pPages);
  [IPropertyPageImpl Class](../../atl/reference/ipropertypageimpl-class.md)   
  [IPerPropertyBrowsingImpl Class](../../atl/reference/iperpropertybrowsingimpl-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

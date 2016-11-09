@@ -1,7 +1,7 @@
 ---
-title: "Device Context Global Functions"
+title: "Device Context Global Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -12,7 +12,7 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 08ec28f6-daff-4882-9544-e8a4639d05c4
-caps.latest.revision: 16
+caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -36,7 +36,7 @@ This function creates a device context for a given device.
   
 |||  
 |-|-|  
-|[AtlCreateTargetDC](../Topic/AtlCreateTargetDC.md)|Creates a device context.|  
+|[AtlCreateTargetDC](#atlcreatetargetdc)|Creates a device context.|  
   
 ##  <a name="atlcreatetargetdc"></a>  AtlCreateTargetDC  
  Creates a device context for the device specified in the [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) structure.  
@@ -65,8 +65,3 @@ HDC
   
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)
-
-
-
-
-

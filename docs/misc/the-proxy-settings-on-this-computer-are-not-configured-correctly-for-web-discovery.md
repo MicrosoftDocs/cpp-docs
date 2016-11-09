@@ -1,7 +1,7 @@
 ---
-title: "The proxy settings on this computer are not configured correctly for Web discovery."
+title: "The proxy settings on this computer are not configured correctly for Web discovery. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

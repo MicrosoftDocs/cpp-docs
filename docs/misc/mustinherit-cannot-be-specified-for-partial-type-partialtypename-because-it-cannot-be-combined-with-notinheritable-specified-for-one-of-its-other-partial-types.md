@@ -1,5 +1,5 @@
 ---
-title: "&#39;MustInherit&#39; cannot be specified for partial type &#39;&lt;partialtypename&gt;&#39; because it cannot be combined with &#39;NotInheritable&#39; specified for one of its other partial types"
+title: "&#39;MustInherit&#39; cannot be specified for partial type &#39;&lt;partialtypename&gt;&#39; because it cannot be combined with &#39;NotInheritable&#39; specified for one of its other partial types | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,7 +49,7 @@ A class is defined in multiple partial declarations, one of which specifies `Mus
 -   Decide whether the class should require inheritance, forbid inheritance, or neither, and remove the keywords that are inappropriate to your decision.  
   
 ## See Also  
- [Partial](../Topic/Partial%20\(Visual%20Basic\).md)   
- [MustInherit](../Topic/MustInherit%20\(Visual%20Basic\).md)   
- [NotInheritable](../Topic/NotInheritable%20\(Visual%20Basic\).md)   
- [Inheritance Basics](../Topic/Inheritance%20Basics%20\(Visual%20Basic\).md)
+ [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)   
+ [MustInherit](/dotnet/visual-basic/language-reference/modifiers/mustinherit)   
+ [NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)   
+ [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

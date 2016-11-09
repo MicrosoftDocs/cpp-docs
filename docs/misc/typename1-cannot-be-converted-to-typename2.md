@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;typename1&gt;&#39; cannot be converted to &#39;&lt;typename2&gt;&#39;"
+title: "&#39;&lt;typename1&gt;&#39; cannot be converted to &#39;&lt;typename2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ A type conversion was attempted between two incompatible types.
 -   Verify the types that are being cast.  
   
 ## See Also  
- [CType Function](../Topic/CType%20Function%20\(Visual%20Basic\).md)
+ [CType Function](/dotnet/visual-basic/language-reference/functions/ctype-function)

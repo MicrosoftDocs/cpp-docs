@@ -1,7 +1,7 @@
 ---
-title: "Managing the Toolbox"
+title: "Managing the Toolbox | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,7 +41,7 @@ The [!INCLUDE[vsipsdk](../mfc/includes/vsipsdk_md.md)] allows a VSPackage, such 
   
  This support is limited to editors and designers requiring:  
   
-1.  The implementation of a factory object to provide instances of the editor or designer. For more information on implementing a designer or editor factory object, see [Editor Factories](../Topic/Editor%20Factories.md).  
+1.  The implementation of a factory object to provide instances of the editor or designer. For more information on implementing a designer or editor factory object, see [Editor Factories](/visual-studio/extensibility/editor-factories).  
   
 2.  Registration of the toolbox tab that automatically is activated if the editor or designer is present.  
   
@@ -77,11 +77,11 @@ The [!INCLUDE[vsipsdk](../mfc/includes/vsipsdk_md.md)] allows a VSPackage, such 
   
      Objects needing functionality in both interfaces must obtain instances of both interfaces from the environment.  
   
--   When working with <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>, information about the canonical (non-localized) names of tabs is handled by the <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.GetIDOfTab*> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.SetIDOfTab*> methods.  
+-   When working with <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>, information about the canonical (non-localized) names of tabs is handled by the <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.GetIDOfTab%2A> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.SetIDOfTab%2A> methods.  
   
 -   When using <xref:System.Drawing.Design.IToolboxService>, it is up to the implementer to manage localized information, such as names of categories.  
   
- Use the settings mechanism to enable users to save **Toolbox** settings accessed by users from the **Import/Export Settings** command, found on the IDE's **Tools** menu. For more information on how to use settings, see [Extending User Settings and Options](../Topic/Extending%20User%20Settings%20and%20Options.md).  
+ Use the settings mechanism to enable users to save **Toolbox** settings accessed by users from the **Import/Export Settings** command, found on the IDE's **Tools** menu. For more information on how to use settings, see [Extending User Settings and Options](/visual-studio/extensibility/extending-user-settings-and-options).  
   
 ## See Also  
  [Extending the Toolbox](../misc/extending-the-toolbox.md)

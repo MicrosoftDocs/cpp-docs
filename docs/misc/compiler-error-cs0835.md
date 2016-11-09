@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0835"
+title: "Compiler Error CS0835 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0835"
 ms.assetid: 593c26f6-6d82-49a6-8ace-4d29dd9f5fbe
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

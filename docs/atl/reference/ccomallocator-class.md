@@ -1,7 +1,7 @@
 ---
-title: "CComAllocator Class"
+title: "CComAllocator Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComAllocator class"
 ms.assetid: 0cd706fd-0c7b-42d3-9054-febe2966fc8e
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -52,9 +52,9 @@ class CComAllocator
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComAllocator::Allocate](../Topic/CComAllocator::Allocate.md)|Call this static method to allocate memory.|  
-|[CComAllocator::Free](../Topic/CComAllocator::Free.md)|Call this static method to free allocated memory.|  
-|[CComAllocator::Reallocate](../Topic/CComAllocator::Reallocate.md)|Call this static method to reallocate memory.|  
+|[CComAllocator::Allocate](#ccomallocator__allocate)|Call this static method to allocate memory.|  
+|[CComAllocator::Free](#ccomallocator__free)|Call this static method to free allocated memory.|  
+|[CComAllocator::Reallocate](#ccomallocator__reallocate)|Call this static method to reallocate memory.|  
   
 ## Remarks  
  This class is used by [CComHeapPtr](../../atl/reference/ccomheapptr-class.md) to provide the COM memory allocation routines. The counterpart class, [CCRTAllocator](../../atl/reference/ccrtallocator-class.md), provides the same methods using CRT routines.  
@@ -118,10 +118,3 @@ static void* Reallocate(
  [CComHeapPtr Class](../../atl/reference/ccomheapptr-class.md)   
  [CCRTAllocator Class](../../atl/reference/ccrtallocator-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

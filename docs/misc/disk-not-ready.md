@@ -1,5 +1,5 @@
 ---
-title: "Disk not ready"
+title: "Disk not ready | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -42,4 +42,4 @@ For the specified drive, either there is no disk or the drive door is open.
 2.  Close the drive door.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

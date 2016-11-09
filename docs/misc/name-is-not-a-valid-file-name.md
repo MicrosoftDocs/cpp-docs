@@ -1,7 +1,7 @@
 ---
-title: "&lt;name&gt; is not a valid file name."
+title: "&lt;name&gt; is not a valid file name. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -73,5 +73,5 @@ This error occurs when you attempt to create a new file from the Command window,
 -   Enter the command with a new file name that does not contain the characters listed above.  
   
 ## See Also  
- [New File Command](../Topic/New%20File%20Command.md)   
- [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md)
+ [New File Command](/visual-studio/ide/reference/new-file-command)   
+ [Visual Studio Commands](/visual-studio/ide/reference/visual-studio-commands)

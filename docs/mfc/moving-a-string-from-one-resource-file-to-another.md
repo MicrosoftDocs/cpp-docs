@@ -1,7 +1,7 @@
 ---
-title: "Moving a String from One Resource File to Another"
+title: "Moving a String from One Resource File to Another | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -62,5 +62,5 @@ translation.priority.ht:
 ## See Also  
  [String Editor](../mfc/string-editor.md)   
  [Resource Files](../mfc/resource-files-visual-studio.md)   
- [Customizing window layouts](../Topic/Customizing%20window%20layouts%20in%20Visual%20Studio.md)   
+ [Customizing window layouts](/visual-studio/ide/customizing-window-layouts-in-visual-studio)   
 

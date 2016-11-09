@@ -1,7 +1,7 @@
 ---
-title: "CComCritSecLock Class"
+title: "CComCritSecLock Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComCritSecLock class"
 ms.assetid: 223152a1-86c3-4ef9-89a7-f455fe791b0e
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -128,6 +128,13 @@ void Unlock() throw();
 ## See Also  
  [CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md)   
  [CComAutoCriticalSection Class](../../atl/reference/ccomautocriticalsection-class.md)
+
+
+
+
+
+
+
 
 
 

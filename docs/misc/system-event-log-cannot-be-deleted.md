@@ -1,5 +1,5 @@
 ---
-title: "System event log cannot be deleted"
+title: "System event log cannot be deleted | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS3012"
+title: "Compiler Warning (level 1) CS3012 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS3012"
 ms.assetid: 1f7555b4-61e4-4821-85c9-586301df4c5c
 caps.latest.revision: 11
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

@@ -1,5 +1,5 @@
 ---
-title: "Expected &#39;%=&#39; at start of an embedded expression"
+title: "Expected &#39;%=&#39; at start of an embedded expression | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ The start identifier for an embedded expression, `<%=`, has not been coded corre
 -   Ensure that the start identifier for the embedded expression is coded as `<%=`.  
   
 ## See Also  
- [Embedded Expressions in XML](../Topic/Embedded%20Expressions%20in%20XML%20\(Visual%20Basic\).md)   
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [Embedded Expressions in XML](/dotnet/visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml)   
+ [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)

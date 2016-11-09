@@ -1,5 +1,5 @@
 ---
-title: "Member &#39;&lt;membername&gt;&#39; implicitly defines a member &#39;&lt;implicitmembername&gt;&#39; which has the same name as a type parameter"
+title: "Member &#39;&lt;membername&gt;&#39; implicitly defines a member &#39;&lt;implicitmembername&gt;&#39; which has the same name as a type parameter | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -59,6 +59,6 @@ A member of a generic class generates an implicit member with the same name as a
 -   If the type parameter must retain its name, change the name of the class member to avoid conflicts with the names listed in the preceding table.  
   
 ## See Also  
- [Declared Element Names](../Topic/Declared%20Element%20Names%20\(Visual%20Basic\).md)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Type List](../Topic/Type%20List%20\(Visual%20Basic\).md)
+ [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Type List](/dotnet/visual-basic/language-reference/statements/type-list)

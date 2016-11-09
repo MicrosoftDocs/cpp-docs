@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0131"
+title: "Compiler Error CS0131 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0131"
 ms.assetid: 822852cc-a426-4b7d-b2ff-0026a0c0a0e7
 caps.latest.revision: 10
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -40,7 +41,7 @@ The left-hand side of an assignment must be a variable, property or indexer
   
  In an assignment statement, the value of the right-hand side is assigned to the left-hand side. The left-hand side must be a variable, property, or indexer.  
   
- To fix this error, make sure that all operators are on the right-hand side and that the left-hand side is a variable, property, or indexer. For more information, see [Statements, Expressions, and Operators](../Topic/Statements,%20Expressions,%20and%20Operators%20\(C%23%20Programming%20Guide\).md).  
+ To fix this error, make sure that all operators are on the right-hand side and that the left-hand side is a variable, property, or indexer. For more information, see [Statements, Expressions, and Operators](/dotnet/csharp/programming-guide/statements-expressions-operators/index).  
   
 ## Example  
  The following sample generates CS0131.  

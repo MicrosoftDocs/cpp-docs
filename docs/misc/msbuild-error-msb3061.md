@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB3061"
+title: "MSBuild Error MSB3061 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,8 +41,8 @@ translation.priority.mt:
   
 ### To correct this error  
   
--   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md).  
+-   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources).  
   
 ## See Also  
- [Tasks](../Topic/MSBuild%20Tasks.md)   
- [Delete Task](../Topic/Delete%20Task.md)
+ [Tasks](/visual-studio/msbuild/msbuild-tasks)   
+ [Delete Task](/visual-studio/msbuild/delete-task)

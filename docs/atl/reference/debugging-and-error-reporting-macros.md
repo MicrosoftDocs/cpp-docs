@@ -1,7 +1,7 @@
 ---
-title: "Debugging and Error Reporting Macros"
+title: "Debugging and Error Reporting Macros | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -14,7 +14,7 @@ dev_langs:
 helpviewer_keywords: 
   - "macros, error reporting"
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
-caps.latest.revision: 17
+caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -38,13 +38,13 @@ These macros provide useful debugging and trace facilities.
   
 |||  
 |-|-|  
-|[_ATL_DEBUG_INTERFACES](../Topic/_ATL_DEBUG_INTERFACES.md)|Writes, to the output window, any interface leaks that are detected when `_Module.Term` is called.|  
-|[_ATL_DEBUG_QI](../Topic/_ATL_DEBUG_QI.md)|Writes all calls to `QueryInterface` to the output window.|  
-|[ATLASSERT](../Topic/ATLASSERT.md)|Performs the same functionality as the [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) macro found in the C run-time library.|  
-|[ATLENSURE](../Topic/ATLENSURE.md)|Performs parameters validation. Call `AtlThrow` if needed|  
-|[ATLTRACENOTIMPL](../Topic/ATLTRACENOTIMPL.md)|Sends a message to the dump device that the specified function is not implemented.|  
+|[_ATL_DEBUG_INTERFACES](#_atl_debug_interfaces)|Writes, to the output window, any interface leaks that are detected when `_Module.Term` is called.|  
+|[_ATL_DEBUG_QI](#_atl_debug_qi)|Writes all calls to `QueryInterface` to the output window.|  
+|[ATLASSERT](#atlassert)|Performs the same functionality as the [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) macro found in the C run-time library.|  
+|[ATLENSURE](#atlensure)|Performs parameters validation. Call `AtlThrow` if needed|  
+|[ATLTRACENOTIMPL](#atltracenotimpl)|Sends a message to the dump device that the specified function is not implemented.|  
 |[ATLTRACE](../Topic/ATLTRACE%20\(ATL\).md)|Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels. Included for backward compatibility.|  
-|[ATLTRACE2](../Topic/ATLTRACE2.md)|Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels.|  
+|[ATLTRACE2](#atltrace2)|Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels.|  
   
 ##  <a name="_atl_debug_interfaces"></a>  _ATL_DEBUG_INTERFACES  
  Define this macro before including any ATL header files to trace all `AddRef` and **Release** calls on your components' interfaces to the output window.  
@@ -178,7 +178,7 @@ lpszFormat, ...);
  [in] The formatted string to send to the dump device.  
   
 ### Remarks  
- See [ATLTRACE2](../Topic/ATLTRACE2.md) for a description of **ATLTRACE**. **ATLTRACE** and `ATLTRACE2` have the same behavior, **ATLTRACE** is included for backward compatibility.  
+ See [ATLTRACE2](#atltrace2) for a description of **ATLTRACE**. **ATLTRACE** and `ATLTRACE2` have the same behavior, **ATLTRACE** is included for backward compatibility.  
   
 ##  <a name="atltrace2"></a>  ATLTRACE2  
  Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels.  
@@ -275,8 +275,3 @@ lpszFormat,
 ## See Also  
  [Macros](../../atl/reference/atl-macros.md)   
  [Debugging and Error Reporting Global Functions](../../atl/reference/debugging-and-error-reporting-global-functions.md)
-
-
-
-
-

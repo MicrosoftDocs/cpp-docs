@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.Reflection.AmbiguousMatchException"
+title: "Troubleshooting Exceptions: System.Reflection.AmbiguousMatchException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

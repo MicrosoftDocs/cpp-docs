@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0716"
+title: "Compiler Error CS0716 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0716"
 ms.assetid: 806d25ef-f8a7-4c94-823e-e07904defcf4
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

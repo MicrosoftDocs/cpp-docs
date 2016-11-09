@@ -1,5 +1,5 @@
 ---
-title: "All parameters must be explicitly typed if any are"
+title: "All parameters must be explicitly typed if any are | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

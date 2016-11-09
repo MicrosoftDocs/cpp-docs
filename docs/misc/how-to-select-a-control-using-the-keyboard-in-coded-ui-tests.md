@@ -1,7 +1,7 @@
 ---
-title: "How to: Select a Control Using the Keyboard  in Coded UI Tests"
+title: "How to: Select a Control Using the Keyboard  in Coded UI Tests | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -31,4 +31,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Select a Control Using the Keyboard  in Coded UI Tests
-The content of this topic has been consolidated with the parent page. See [Validating the properties of UI controls](../Topic/Use%20UI%20Automation%20To%20Test%20Your%20Code.md#VerifyingCodeUsingCUITGenerateAssertions).
+The content of this topic has been consolidated with the parent page. See [Validating the properties of UI controls](/visual-studio/test/use-ui-automation-to-test-your-code).

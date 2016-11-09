@@ -1,7 +1,7 @@
 ---
-title: "CHeapPtr Class"
+title: "CHeapPtr Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CHeapPtr class"
 ms.assetid: e5c5bfd4-9bf1-4164-8a83-8155fe253454
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -71,20 +71,20 @@ Allocator>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHeapPtr::CHeapPtr](../Topic/CHeapPtr::CHeapPtr.md)|The constructor.|  
+|[CHeapPtr::CHeapPtr](#cheapptr__cheapptr)|The constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHeapPtr::Allocate](../Topic/CHeapPtr::Allocate.md)|Call this method to allocate memory on the heap to store objects.|  
-|[CHeapPtr::Reallocate](../Topic/CHeapPtr::Reallocate.md)|Call this method to reallocate the memory on the heap.|  
+|[CHeapPtr::Allocate](#cheapptr__allocate)|Call this method to allocate memory on the heap to store objects.|  
+|[CHeapPtr::Reallocate](#cheapptr__reallocate)|Call this method to reallocate the memory on the heap.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHeapPtr::operator =](../Topic/CHeapPtr::operator%20=.md)|The assignment operator.|  
+|[CHeapPtr::operator =](#cheapptr__operator__eq)|The assignment operator.|  
   
 ## Remarks  
  `CHeapPtr` is derived from [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md) and by default uses the CRT routines (in [CCRTAllocator](../../atl/reference/ccrtallocator-class.md)) to allocate and free memory. The class [CHeapPtrList](../../atl/reference/cheapptrlist-class.md) may be used to construct a list of heap pointers. See also [CComHeapPtr](../../atl/reference/ccomheapptr-class.md), which uses COM memory allocation routines.  
@@ -182,10 +182,3 @@ bool Reallocate(size_t    nElements) throw();
  [CHeapPtrBase Class](../../atl/reference/cheapptrbase-class.md)   
  [CCRTAllocator Class](../../atl/reference/ccrtallocator-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

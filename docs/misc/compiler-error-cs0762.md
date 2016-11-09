@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0762"
+title: "Compiler Error CS0762 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0762"
 ms.assetid: 7cedd1af-ffe6-4ca7-82fb-faa9e98014a4
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

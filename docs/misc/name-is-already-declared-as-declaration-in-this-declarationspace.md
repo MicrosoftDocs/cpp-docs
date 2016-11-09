@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;name&gt;&#39; is already declared as &#39;&lt;declaration&gt;&#39; in this &lt;declarationspace&gt;"
+title: "&#39;&lt;name&gt;&#39; is already declared as &#39;&lt;declaration&gt;&#39; in this &lt;declarationspace&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

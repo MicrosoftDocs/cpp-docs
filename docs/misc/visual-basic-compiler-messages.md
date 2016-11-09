@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Compiler Messages"
+title: "Visual Basic Compiler Messages | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

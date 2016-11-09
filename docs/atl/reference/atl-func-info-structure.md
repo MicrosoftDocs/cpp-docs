@@ -1,7 +1,7 @@
 ---
-title: "_ATL_FUNC_INFO Structure"
+title: "_ATL_FUNC_INFO Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "_ATL_FUNC_INFO structure"
   - "ATL_FUNC_INFO structure"
 ms.assetid: 441ebe2c-f971-47de-9f52-a258e8d6f88e
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -44,8 +44,11 @@ Contains type information used to describe a method or property on a dispinterfa
 ## Syntax  
   
 ```
-struct _ATL_FUNC_INFO{  CALLCONV cc;  VARTYPE vtReturn;  SHORT nParams;  VARTYPE pVarTypes[_ATL_MAX_VARTYPES];
-
+struct _ATL_FUNC_INFO {
+    CALLCONV cc;
+    VARTYPE vtReturn;
+    SHORT nParams;
+    VARTYPE pVarTypes[_ATL_MAX_VARTYPES];
 };
 ```  
   

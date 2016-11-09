@@ -1,5 +1,5 @@
 ---
-title: "&#39;)&#39; expected"
+title: "&#39;)&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ A list, such as an argument list in a procedure definition or a procedure call, 
 -   Add a closing parenthesis character to the end of the list.  
   
 ## See Also  
- [Procedure Parameters and Arguments](../Topic/Procedure%20Parameters%20and%20Arguments%20\(Visual%20Basic\).md)
+ [Procedure Parameters and Arguments](/dotnet/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)

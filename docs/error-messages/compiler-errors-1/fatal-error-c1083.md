@@ -1,7 +1,7 @@
 ---
-title: "Fatal Error C1083"
+title: "Fatal Error C1083 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -104,4 +104,4 @@ Cannot open filetype file: 'file': message
  For information about how to build C/C++ projects in the IDE or on the command line, and information about setting environment variables, see [Building C/C++ Programs](../../build/building-c-cpp-programs.md).
  
  ## See Also
- [MSBuild Properties](MSBuild%20Properties.md)
+ [MSBuild Properties](/visual-studio/msbuild/msbuild-properties)

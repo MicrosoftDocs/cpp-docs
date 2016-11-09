@@ -1,5 +1,5 @@
 ---
-title: "Name of type parameter &#39;&lt;typeparametername1&gt;&#39; does not match &#39;&lt;typeparametername2&gt;&#39;, the corresponding type parameter defined on the partial method declaration &#39;&lt;methodname&gt;&#39;"
+title: "Name of type parameter &#39;&lt;typeparametername1&gt;&#39; does not match &#39;&lt;typeparametername2&gt;&#39;, the corresponding type parameter defined on the partial method declaration &#39;&lt;methodname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -60,5 +60,5 @@ End Sub
 -   Examine the type parameters to determine where they do not match. Change the names as necessary to make them the same.  
   
 ## See Also  
- [Partial Methods](../Topic/Partial%20Methods%20\(Visual%20Basic\).md)   
- [Generic Procedures in Visual Basic](../Topic/Generic%20Procedures%20in%20Visual%20Basic.md)
+ [Partial Methods](/dotnet/visual-basic/language-reference/procedures/partial-methods)   
+ [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures)

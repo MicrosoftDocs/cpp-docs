@@ -1,7 +1,7 @@
 ---
-title: "CCRTAllocator Class"
+title: "CCRTAllocator Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CCRTAllocator class"
 ms.assetid: 3e1b8cb0-859a-41ab-8e93-6f0b5ceca49d
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -50,9 +50,9 @@ class ATL::CCRTAllocator
   
 |Name|Description|  
 |----------|-----------------|  
-|[CCRTAllocator::Allocate](../Topic/CCRTAllocator::Allocate.md)|(Static) Call this method to allocate memory.|  
-|[CCRTAllocator::Free](../Topic/CCRTAllocator::Free.md)|(Static) Call this method to free memory.|  
-|[CCRTAllocator::Reallocate](../Topic/CCRTAllocator::Reallocate.md)|(Static) Call this method to reallocate memory.|  
+|[CCRTAllocator::Allocate](#ccrtallocator__allocate)|(Static) Call this method to allocate memory.|  
+|[CCRTAllocator::Free](#ccrtallocator__free)|(Static) Call this method to free memory.|  
+|[CCRTAllocator::Reallocate](#ccrtallocator__reallocate)|(Static) Call this method to reallocate memory.|  
   
 ## Remarks  
  This class is used by [CHeapPtr](../../atl/reference/cheapptr-class.md) to provide the CRT memory allocation routines. The counterpart class, [CComAllocator](../../atl/reference/ccomallocator-class.md), provides the same methods using COM routines.  
@@ -116,10 +116,3 @@ static __declspec(allocator) void* Reallocate(
  [CHeapPtr Class](../../atl/reference/cheapptr-class.md)   
  [CComAllocator Class](../../atl/reference/ccomallocator-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

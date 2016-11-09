@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.ServiceModel.AddressAlreadyInUseException"
+title: "Troubleshooting Exceptions: System.ServiceModel.AddressAlreadyInUseException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

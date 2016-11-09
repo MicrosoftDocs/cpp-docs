@@ -1,7 +1,7 @@
 ---
-title: "CComQIPtr Class"
+title: "CComQIPtr Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComQIPtr class"
 ms.assetid: 969cacb5-05b6-4af4-b683-24911d70242d
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -59,13 +59,13 @@ template<class T,  const IID* piid= &__uuidof(T)>  class CComQIPtr: public CComP
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComQIPtr::CComQIPtr](../Topic/CComQIPtr::CComQIPtr.md)|Constructor.|  
+|[CComQIPtr::CComQIPtr](#ccomqiptr__ccomqiptr)|Constructor.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComQIPtr::operator =](../Topic/CComQIPtr::operator%20=.md)|Assigns a pointer to the member pointer.|  
+|[CComQIPtr::operator =](#ccomqiptr__operator__eq)|Assigns a pointer to the member pointer.|  
   
 ## Remarks  
  ATL uses `CComQIPtr` and [CComPtr](../../atl/reference/ccomptr-class.md) to manage COM interface pointers, both of which derive from [CComPtrBase](../../atl/reference/ccomptrbase-class.md). Both classes perform automatic reference counting through calls to `AddRef` and **Release**. Overloaded operators handle pointer operations.  
@@ -129,15 +129,8 @@ T* operator= (
  Returns a pointer to the updated `CComQIPtr` object.  
   
 ## See Also  
- [CComPtr::CComPtr](../Topic/CComPtr::CComPtr.md)   
- [CComQIPtr::CComQIPtr](../Topic/CComQIPtr::CComQIPtr.md)   
+ [CComPtr::CComPtr](../../atl/reference/ccomptr-class.md#ccomptr__ccomptr)   
+ [CComQIPtr::CComQIPtr](#ccomqiptr__ccomqiptr)   
  [CComPtrBase Class](../../atl/reference/ccomptrbase-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [CComQIPtrElementTraits Class](../../atl/reference/ccomqiptrelementtraits-class.md)
-
-
-
-
-
-
-

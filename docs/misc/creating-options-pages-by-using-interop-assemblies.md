@@ -1,7 +1,7 @@
 ---
-title: "Creating Options Pages By Using Interop Assemblies"
+title: "Creating Options Pages By Using Interop Assemblies | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -46,7 +46,7 @@ Managed VSPackages can use the COM-based interop assemblies of the [!INCLUDE[vsi
 ## Making Tools Options Pages Available to the IDE  
  In addition to implementing a user control, VSPackages must make that control available to the IDE.  
   
- This is done through the implementation of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage*> method, which returns a <xref:Microsoft.VisualStudio.Shell.Interop.VSPROPSHEETPAGE> structure based on the GUID passed.  
+ This is done through the implementation of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> method, which returns a <xref:Microsoft.VisualStudio.Shell.Interop.VSPROPSHEETPAGE> structure based on the GUID passed.  
   
  The IDE uses the <xref:Microsoft.VisualStudio.Shell.Interop.VSPROPSHEETPAGE> structure to set the characteristics of a **Properties** page.  
   
@@ -66,7 +66,7 @@ Managed VSPackages can use the COM-based interop assemblies of the [!INCLUDE[vsi
 ## See Also  
  [Extending the Visual Studio Environment](../Topic/Extending%20the%20Visual%20Studio%20Environment.md)   
  [Creating Registrar Scripts](../atl/creating-registrar-scripts.md)   
- [Automation Support for Options Pages](../Topic/Automation%20Support%20for%20Options%20Pages.md)   
+ [Automation Support for Options Pages](/visual-studio/extensibility/internals/automation-support-for-options-pages)   
  [Using Options Pages](../misc/using-options-pages.md)   
- [Creating Options Pages](../Topic/Creating%20Options%20Pages.md)   
+ [Creating Options Pages](/visual-studio/extensibility/internals/creating-options-pages)   
  [Creating Options Pages By Using Automation](../misc/creating-options-pages-by-using-automation.md)

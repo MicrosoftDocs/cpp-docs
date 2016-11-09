@@ -1,5 +1,5 @@
 ---
-title: "Default member &#39;&lt;membername&gt;&#39; is not a property"
+title: "Default member &#39;&lt;membername&gt;&#39; is not a property | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You have tried to declare a member `Default`. However, the `Default` keyword is 
 -   Check to make sure you are identifying a property with `Default`, or else remove the `Default` keyword.  
   
 ## See Also  
- [Default](../Topic/Default%20\(Visual%20Basic\).md)
+ [Default](/dotnet/visual-basic/language-reference/modifiers/default)

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1528"
+title: "Compiler Error CS1528 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1528"
 ms.assetid: 38aabc5c-b32f-4bea-a585-c4212f42751d
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS1528
 Expected ; or = (cannot specify constructor arguments in declaration)  
   
- A reference to a class was formed as if an object to the class was being created. For example, there was an attempt to pass a variable to a constructor. Use the [new](../Topic/new%20\(C%23%20Reference\).md) operator to create an object of a class.  
+ A reference to a class was formed as if an object to the class was being created. For example, there was an attempt to pass a variable to a constructor. Use the [new](/dotnet/csharp/language-reference/keywords/new) operator to create an object of a class.  
   
  The following sample generates CS1528:  
   

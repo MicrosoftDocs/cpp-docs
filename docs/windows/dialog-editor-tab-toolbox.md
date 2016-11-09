@@ -1,7 +1,7 @@
 ---
-title: "Dialog Editor Tab, Toolbox"
+title: "Dialog Editor Tab, Toolbox | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,7 +41,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Dialog Editor Tab, Toolbox
-The Dialog Editor tab appears in the [Toolbox window](../Topic/Toolbox.md) when you're working in the Dialog editor. To add controls to your new dialog box, drag controls from the Toolbox to the dialog box you are creating (for more information, see [Adding a Control to a Dialog Box](../mfc/adding-a-control-to-a-dialog-box.md)). You can then move the controls around or change their size and shape.  
+The Dialog Editor tab appears in the [Toolbox window](/visual-studio/ide/reference/toolbox) when you're working in the Dialog editor. To add controls to your new dialog box, drag controls from the Toolbox to the dialog box you are creating (for more information, see [Adding a Control to a Dialog Box](../mfc/adding-a-control-to-a-dialog-box.md)). You can then move the controls around or change their size and shape.  
   
  The standard controls available in the Toolbox are:  
   

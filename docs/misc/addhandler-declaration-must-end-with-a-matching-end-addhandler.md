@@ -1,5 +1,5 @@
 ---
-title: "&#39;AddHandler&#39; declaration must end with a matching &#39;End AddHandler&#39;"
+title: "&#39;AddHandler&#39; declaration must end with a matching &#39;End AddHandler&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ An `AddHandler` declaration must end with an `End AddHandler` statement.
 -   Check that the `AddHandler` declaration ends with an `End AddHandler` statement.  
   
 ## See Also  
- [AddHandler Statement](../Topic/AddHandler%20Statement.md)   
- [Event Statement](../Topic/Event%20Statement.md)
+ [AddHandler Statement](/dotnet/visual-basic/language-reference/statements/addhandler-statement)   
+ [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)

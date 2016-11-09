@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0529"
+title: "Compiler Error CS0529 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0529"
 ms.assetid: 61de8086-f991-455c-b009-bb8cd05f34bd
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0529
 Inherited interface 'interface1' causes a cycle in the interface hierarchy of 'interface2'  
   
- The inheritance list for an [interface](../Topic/interface%20\(C%23%20Reference\).md) includes a direct or indirect reference to itself. An interface cannot inherit from itself.  
+ The inheritance list for an [interface](/dotnet/csharp/language-reference/keywords/interface) includes a direct or indirect reference to itself. An interface cannot inherit from itself.  
   
  The following sample generates CS0529:  
   

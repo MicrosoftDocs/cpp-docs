@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;function&gt;&#39; is not declared"
+title: "&#39;&lt;function&gt;&#39; is not declared | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ translation.priority.mt:
 -   Use the appropriate function from the `Microsoft.VisualBasic` namespace.  
   
 ## See Also  
- [Visual Basic Runtime Library Members](../Topic/Visual%20Basic%20Runtime%20Library%20Members.md)
+ [Visual Basic Runtime Library Members](/dotnet/visual-basic/language-reference/runtime-library-members)

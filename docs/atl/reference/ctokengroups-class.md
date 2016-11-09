@@ -1,7 +1,7 @@
 ---
-title: "CTokenGroups Class"
+title: "CTokenGroups Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CTokenGroups class"
 ms.assetid: 2ab08076-4b08-4487-bc70-ec6dee304190
-caps.latest.revision: 22
+caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -55,28 +55,28 @@ class CTokenGroups
   
 |Name|Description|  
 |----------|-----------------|  
-|[CTokenGroups::CTokenGroups](../Topic/CTokenGroups::CTokenGroups.md)|The constructor.|  
-|[CTokenGroups::~CTokenGroups](../Topic/CTokenGroups::~CTokenGroups.md)|The destructor.|  
+|[CTokenGroups::CTokenGroups](#ctokengroups__ctokengroups)|The constructor.|  
+|[CTokenGroups::~CTokenGroups](#ctokengroups___dtorctokengroups)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CTokenGroups::Add](../Topic/CTokenGroups::Add.md)|Adds a `CSid` or existing **TOKEN_GROUPS** structure to the `CTokenGroups` object.|  
-|[CTokenGroups::Delete](../Topic/CTokenGroups::Delete.md)|Deletes a `CSid` and its associated attributes from the `CTokenGroups` object.|  
-|[CTokenGroups::DeleteAll](../Topic/CTokenGroups::DeleteAll.md)|Deletes all `CSid` objects and their associated attributes from the `CTokenGroups` object.|  
-|[CTokenGroups::GetCount](../Topic/CTokenGroups::GetCount.md)|Returns the number of `CSid` objects and associated attributes contained in the **CTokenGroups** object.|  
-|[CTokenGroups::GetLength](../Topic/CTokenGroups::GetLength.md)|Returns the size of the `CTokenGroups` object.|  
-|[CTokenGroups::GetPTOKEN_GROUPS](../Topic/CTokenGroups::GetPTOKEN_GROUPS.md)|Retrieves a pointer to the **TOKEN_GROUPS** structure.|  
-|[CTokenGroups::GetSidsAndAttributes](../Topic/CTokenGroups::GetSidsAndAttributes.md)|Retrieves the `CSid` objects and attributes belonging to the `CTokenGroups` object.|  
-|[CTokenGroups::LookupSid](../Topic/CTokenGroups::LookupSid.md)|Retrieves the attributes associated with a `CSid` object.|  
+|[CTokenGroups::Add](#ctokengroups__add)|Adds a `CSid` or existing **TOKEN_GROUPS** structure to the `CTokenGroups` object.|  
+|[CTokenGroups::Delete](#ctokengroups__delete)|Deletes a `CSid` and its associated attributes from the `CTokenGroups` object.|  
+|[CTokenGroups::DeleteAll](#ctokengroups__deleteall)|Deletes all `CSid` objects and their associated attributes from the `CTokenGroups` object.|  
+|[CTokenGroups::GetCount](#ctokengroups__getcount)|Returns the number of `CSid` objects and associated attributes contained in the **CTokenGroups** object.|  
+|[CTokenGroups::GetLength](#ctokengroups__getlength)|Returns the size of the `CTokenGroups` object.|  
+|[CTokenGroups::GetPTOKEN_GROUPS](#ctokengroups__getptoken_groups)|Retrieves a pointer to the **TOKEN_GROUPS** structure.|  
+|[CTokenGroups::GetSidsAndAttributes](#ctokengroups__getsidsandattributes)|Retrieves the `CSid` objects and attributes belonging to the `CTokenGroups` object.|  
+|[CTokenGroups::LookupSid](#ctokengroups__lookupsid)|Retrieves the attributes associated with a `CSid` object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CTokenGroups::operator const TOKEN_GROUPS *](../Topic/CTokenGroups::operator%20const%20TOKEN_GROUPS%20*.md)|Casts the `CTokenGroups` object to a pointer to the **TOKEN_GROUPS** structure.|  
-|[CTokenGroups::operator =](../Topic/CTokenGroups::operator%20=.md)|Assignment operator.|  
+|[CTokenGroups::operator const TOKEN_GROUPS *](#ctokengroups__operator_const_token_groups__star)|Casts the `CTokenGroups` object to a pointer to the **TOKEN_GROUPS** structure.|  
+|[CTokenGroups::operator =](#ctokengroups__operator__eq)|Assignment operator.|  
   
 ## Remarks  
  An [access token](http://msdn.microsoft.com/library/windows/desktop/aa374909) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows NT or Windows 2000 system.  
@@ -226,7 +226,7 @@ bool LookupSid(const CSid& rSid,
  Returns true if the `CSid` is found, false otherwise.  
   
 ### Remarks  
- Setting `pdwAttributes` to NULL provides a way of confirming the existence of the `CSid` without accessing the attribute. Note that this method should not be used to check access rights as incorrect results may occur under Windows 2000. Applications should instead use the [CAccessToken::CheckTokenMembership](../Topic/CAccessToken::CheckTokenMembership.md) method.  
+ Setting `pdwAttributes` to NULL provides a way of confirming the existence of the `CSid` without accessing the attribute. Note that this method should not be used to check access rights as incorrect results may occur under Windows 2000. Applications should instead use the [CAccessToken::CheckTokenMembership](../../atl/reference/caccesstoken-class.md#caccesstoken__checktokenmembership) method.  
   
 ##  <a name="ctokengroups__operator__eq"></a>  CTokenGroups::operator =  
  Assignment operator.  
@@ -258,10 +258,3 @@ CTokenGroups& operator= (const TOKEN_GROUPS& rhs) throw(...);
  [CSid Class](../../atl/reference/csid-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Security Global Functions](../../atl/reference/security-global-functions.md)
-
-
-
-
-
-
-

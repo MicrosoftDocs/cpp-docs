@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1013"
+title: "Compiler Error CS1013 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1013"
 ms.assetid: e5b1d24d-e558-4f7c-b2b1-3a644710005d
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS1013
 Invalid number  
   
- The compiler detected a malformed number. For more information on integral types, see the [Integral Types Table](../Topic/Integral%20Types%20Table%20\(C%23%20Reference\).md).  
+ The compiler detected a malformed number. For more information on integral types, see the [Integral Types Table](/dotnet/csharp/language-reference/keywords/integral-types-table).  
   
 ## Example  
  The following sample generates CS1013:  

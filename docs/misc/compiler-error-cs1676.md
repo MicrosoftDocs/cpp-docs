@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1676"
+title: "Compiler Error CS1676 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1676"
 ms.assetid: 5ac83d98-5baa-49fd-b76a-d8ef0865b9dd
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

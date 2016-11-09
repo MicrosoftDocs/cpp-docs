@@ -1,5 +1,5 @@
 ---
-title: "Property missing &#39;End Property&#39;"
+title: "Property missing &#39;End Property&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ An `End` statement must match the block it terminates. A `Property` definition h
 -   Add an `End Property` statement to the end of the property definition.  
   
 ## See Also  
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)   
- [End Statement](../Topic/End%20Statement.md)
+ [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)   
+ [End Statement](/dotnet/visual-basic/language-reference/statements/end-statement)

@@ -1,7 +1,7 @@
 ---
-title: "Changing the Caption Property of Multiple Strings"
+title: "Changing the Caption Property of Multiple Strings | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -47,7 +47,7 @@ The following procedure shows you how to change the caption property of multiple
   
 2.  Select the strings you want to change by holding down the **CTRL** key as you click each one.  
   
-3.  In the [Properties Window](../Topic/Properties%20Window.md), type a new value for the property you want to change.  
+3.  In the [Properties Window](/visual-studio/ide/reference/properties-window), type a new value for the property you want to change.  
   
 4.  Press **ENTER**.  
   

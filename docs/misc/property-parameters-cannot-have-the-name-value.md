@@ -1,5 +1,5 @@
 ---
-title: "Property parameters cannot have the name &#39;Value&#39;"
+title: "Property parameters cannot have the name &#39;Value&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ A parameter in a `Property` statement is named `Value`. This name is reserved wi
 -   Change the name of the parameter in the `Property` statement.  
   
 ## See Also  
- [Set Statement](../Topic/Set%20Statement%20\(Visual%20Basic\).md)   
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)
+ [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement)   
+ [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)

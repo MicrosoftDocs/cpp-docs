@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;name1&gt;&#39; conflicts with a &lt;type&gt; by the same name defined in &#39;&lt;name2&gt;&#39;"
+title: "&#39;&lt;name1&gt;&#39; conflicts with a &lt;type&gt; by the same name defined in &#39;&lt;name2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ A name was encountered that conflicts with a type with the same name.
 2.  Use square brackets around the conflicting member name.  
   
 ## See Also  
- [Program Structure and Code Conventions](../Topic/Program%20Structure%20and%20Code%20Conventions%20\(Visual%20Basic\).md)
+ [Program Structure and Code Conventions](/dotnet/visual-basic/programming-guide/program-structure/program-structure-and-code-conventions)

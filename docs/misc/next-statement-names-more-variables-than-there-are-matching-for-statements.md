@@ -1,5 +1,5 @@
 ---
-title: "&#39;Next&#39; statement names more variables than there are matching &#39;For&#39; statements"
+title: "&#39;Next&#39; statement names more variables than there are matching &#39;For&#39; statements | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -54,4 +54,4 @@ Next J, I, K   ' Next J, I is valid, but there is no loop on K.
 2.  Remove any extraneous variables from the `Next` statement.  
   
 ## See Also  
- [For...Next Statement](../Topic/For...Next%20Statement%20\(Visual%20Basic\).md)
+ [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)

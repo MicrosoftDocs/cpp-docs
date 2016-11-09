@@ -1,7 +1,7 @@
 ---
-title: "Walkthrough: Getting Information from a Selected Link"
+title: "Walkthrough: Getting Information from a Selected Link | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -26,4 +26,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Walkthrough: Getting Information from a Selected Link
-This topic is obsolete. Please see [Navigating and Updating a Model in Program Code](../Topic/Navigating%20and%20Updating%20a%20Model%20in%20Program%20Code.md).
+This topic is obsolete. Please see [Navigating and Updating a Model in Program Code](/visual-studio/modeling/navigating-and-updating-a-model-in-program-code).

@@ -1,5 +1,5 @@
 ---
-title: "Conversions from &#39;&lt;typename1&gt;&#39; to &#39;&lt;typename2&gt;&#39; must be explicit"
+title: "Conversions from &#39;&lt;typename1&gt;&#39; to &#39;&lt;typename2&gt;&#39; must be explicit | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ This conversion cannot be accomplished implicitly.
 -   Use the `CType`, or one of the specific conversion functions, such as `CInt` or `CDec`.  
   
 ## See Also  
- [Type Conversion Functions](../Topic/Type%20Conversion%20Functions%20\(Visual%20Basic\).md)
+ [Type Conversion Functions](/dotnet/visual-basic/language-reference/functions/type-conversion-functions)

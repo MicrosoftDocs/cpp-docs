@@ -1,7 +1,7 @@
 ---
-title: "Walkthrough: Extending the Tool Window"
+title: "Walkthrough: Extending the Tool Window | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -35,4 +35,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Walkthrough: Extending the Tool Window
-The content in this topic has been removed. To find out how to create a tool window, see [Adding a Tool Window](../Topic/Adding%20a%20Tool%20Window.md). To find out how to give dynamic visibility to a menu command, see [Dynamically Adding Menu Items](../Topic/Dynamically%20Adding%20Menu%20Items.md).
+The content in this topic has been removed. To find out how to create a tool window, see [Adding a Tool Window](/visual-studio/extensibility/adding-a-tool-window). To find out how to give dynamic visibility to a menu command, see [Dynamically Adding Menu Items](/visual-studio/extensibility/dynamically-adding-menu-items).

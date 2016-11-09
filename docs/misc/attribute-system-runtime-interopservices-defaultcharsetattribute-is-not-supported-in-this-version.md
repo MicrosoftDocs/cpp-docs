@@ -1,5 +1,5 @@
 ---
-title: "Attribute &#39;System.Runtime.InteropServices.DefaultCharSetAttribute&#39; is not supported in this version"
+title: "Attribute &#39;System.Runtime.InteropServices.DefaultCharSetAttribute&#39; is not supported in this version | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -44,7 +44,7 @@ The <xref:System.Runtime.InteropServices.DefaultCharSetAttribute?displayProperty
   
 ### To correct this error  
   
--   Use each [Declare Statement](../Topic/Declare%20Statement.md) to specify the character set for the external procedure it is declaring. The following example illustrates this.  
+-   Use each [Declare Statement](/dotnet/visual-basic/language-reference/statements/declare-statement) to specify the character set for the external procedure it is declaring. The following example illustrates this.  
   
     ```  
     Ansi Declare Function GetUserName Lib "advapi32.dll" _  
@@ -59,4 +59,4 @@ The <xref:System.Runtime.InteropServices.DefaultCharSetAttribute?displayProperty
  <xref:System.Runtime.InteropServices.DefaultCharSetAttribute>   
  <xref:System.Runtime.InteropServices.CharSet>   
  [NOT IN BUILD: Attributes in Visual Basic](http://msdn.microsoft.com/en-us/620bfc0e-4582-4c8b-8432-ebc5c3dccc22)   
- [Declare Statement](../Topic/Declare%20Statement.md)
+ [Declare Statement](/dotnet/visual-basic/language-reference/statements/declare-statement)

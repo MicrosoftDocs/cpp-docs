@@ -1,7 +1,7 @@
 ---
-title: "-IGNOREIDL (Don&#39;t Process Attributes into MIDL)"
+title: "-IGNOREIDL (Don&#39;t Process Attributes into MIDL) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -58,7 +58,7 @@ translation.priority.ht:
   
 ### To set this linker option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreEmbeddedIDL*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreEmbeddedIDL%2A>.  
   
 ## See Also  
  [Setting Linker Options](../../build/reference/setting-linker-options.md)   

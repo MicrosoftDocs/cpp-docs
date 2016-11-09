@@ -1,5 +1,5 @@
 ---
-title: "Class &#39;&lt;classname&gt;&#39; cannot be indexed because it has no default property"
+title: "Class &#39;&lt;classname&gt;&#39; cannot be indexed because it has no default property | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -46,4 +46,4 @@ You have failed to supply a default property for a class.
   
 ## See Also  
  [Default Property Changes in Visual Basic](http://msdn.microsoft.com/en-us/9b8cfad7-40ac-4b83-affb-1ff781755a4c)   
- [Default](../Topic/Default%20\(Visual%20Basic\).md)
+ [Default](/dotnet/visual-basic/language-reference/modifiers/default)

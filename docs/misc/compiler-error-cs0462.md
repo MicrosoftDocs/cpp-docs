@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0462"
+title: "Compiler Error CS0462 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0462"
 ms.assetid: 0732b12d-0f7a-47d5-bc54-8b6147d7249f
 caps.latest.revision: 16
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

@@ -1,0 +1,1 @@
+HRESULT CMyWebBrowser::put_StatusText(BSTR bstr)

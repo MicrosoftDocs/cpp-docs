@@ -1,7 +1,7 @@
 ---
-title: "Regular Expressions (C++-CLI)"
+title: "Regular Expressions (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.ht:
 # Regular Expressions (C++/CLI)
 Demonstrates various string operations using regular expressions classes in the .NET Framework.  
   
- The following topics demonstrate the use of the .NET Framework <xref:System.Text.RegularExpressions> namespace (and in one case the <xref:System.String.Split*?displayProperty=fullName> method) to search, parse, and modify strings.  
+ The following topics demonstrate the use of the .NET Framework <xref:System.Text.RegularExpressions> namespace (and in one case the <xref:System.String.Split%2A?displayProperty=fullName> method) to search, parse, and modify strings.  
   
 ## In This Section  
   

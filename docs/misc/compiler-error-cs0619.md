@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0619"
+title: "Compiler Error CS0619 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0619"
 ms.assetid: a2060eb1-cda5-493c-b049-9b1792f88207
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

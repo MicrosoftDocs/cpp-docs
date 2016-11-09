@@ -1,7 +1,7 @@
 ---
-title: "_freea"
+title: "_freea | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -81,7 +81,7 @@ void _freea(
   
  After a memory block has been freed, [_heapmin](../../c-runtime-library/reference/heapmin.md) minimizes the amount of free memory on the heap by coalescing the unused regions and releasing them back to the operating system. Freed memory that is not released to the operating system is restored to the free pool and is available for allocation again.  
   
- A call to `_freea` must accompany all calls to `_malloca`. It is also an error to call `_freea` twice on the same memory. When the application is linked with a debug version of the C run-time libraries, particularly with [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md) features enabled by defining `_CRTDBG_MAP_ALLOC`, it is easier to find missing or duplicated calls to `_freea`. For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](../Topic/CRT%20Debug%20Heap%20Details.md).  
+ A call to `_freea` must accompany all calls to `_malloca`. It is also an error to call `_freea` twice on the same memory. When the application is linked with a debug version of the C run-time libraries, particularly with [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md) features enabled by defining `_CRTDBG_MAP_ALLOC`, it is easier to find missing or duplicated calls to `_freea`. For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visual-studio/debugger/crt-debug-heap-details).  
   
  `_freea` is marked `__declspec(noalias)`, meaning that the function is guaranteed not to modify global variables. For more information, see [noalias](../../cpp/noalias.md).  
   

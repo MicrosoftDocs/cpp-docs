@@ -1,7 +1,7 @@
 ---
-title: "Isolated COM, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box"
+title: "Isolated COM, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -61,7 +61,7 @@ Use this dialog box to specify **Isolated COM** options for [Mt.exe](http://msdn
 ## See Also  
  [Isolated Applications](http://msdn.microsoft.com/library/aa375190)   
  [Side-by-side Assemblies](_win32_side_by_side_assemblies)   
- [ClickOnce Application Manifest](../Topic/ClickOnce%20Application%20Manifest.md)   
+ [ClickOnce Application Manifest](/visual-studio/deployment/clickonce-application-manifest)   
  [Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)   
  [How to: Open Project Property Pages](../misc/how-to-open-project-property-pages.md)   
  [How to: Edit Project Property Sheets](../misc/how-to-edit-project-property-sheets.md)

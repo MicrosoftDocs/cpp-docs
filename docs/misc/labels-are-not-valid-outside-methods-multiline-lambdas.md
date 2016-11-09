@@ -1,5 +1,5 @@
 ---
-title: "Labels are not valid outside methods-multiline lambdas"
+title: "Labels are not valid outside methods-multiline lambdas | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -46,7 +46,7 @@ You can add a label to a statement only within a `Sub`, `Function`, property `Ge
   
 ## See Also  
  [How to: Label Statements](../Topic/How%20to:%20Label%20Statements%20\(Visual%20Basic\).md)   
- [Sub Statement](../Topic/Sub%20Statement%20\(Visual%20Basic\).md)   
- [Function Statement](../Topic/Function%20Statement%20\(Visual%20Basic\).md)   
- [Get Statement](../Topic/Get%20Statement.md)   
- [Set Statement](../Topic/Set%20Statement%20\(Visual%20Basic\).md)
+ [Sub Statement](/dotnet/visual-basic/language-reference/statements/sub-statement)   
+ [Function Statement](/dotnet/visual-basic/language-reference/statements/function-statement)   
+ [Get Statement](/dotnet/visual-basic/language-reference/statements/get-statement)   
+ [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement)

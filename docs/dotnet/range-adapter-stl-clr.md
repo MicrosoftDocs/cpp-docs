@@ -1,7 +1,7 @@
 ---
-title: "range_adapter (STL-CLR)"
+title: "range_adapter (STL-CLR) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -71,8 +71,8 @@ template<typename Iter>
 |---------------|-----------------|  
 |<xref:System.Collections.IEnumerable>|Iterates through elements in the collection.|  
 |<xref:System.Collections.ICollection>|Maintains a group of elements.|  
-|<xref:System.Collections.Generic.IEnumerable`1>|Iterates through typed elements in the collection..|  
-|<xref:System.Collections.Generic.ICollection`1>|Maintains a group of typed elements.|  
+|<xref:System.Collections.Generic.IEnumerable%601>|Iterates through typed elements in the collection..|  
+|<xref:System.Collections.Generic.ICollection%601>|Maintains a group of typed elements.|  
   
 ## Remarks  
  The range_adapter stores a pair of iterators, which in turn delimit a sequence of elements. The object implements four BCL interfaces that let you iterate through the elements, in order. You use this template class to manipulate STL/CLR ranges much like BCL containers.  

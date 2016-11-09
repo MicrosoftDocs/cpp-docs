@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0239"
+title: "Compiler Error CS0239 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0239"
 ms.assetid: 2e07bbc2-03a9-44b2-b321-477ca95fff8c
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0239
 'member' : cannot override inherited member 'inherited member' because it is sealed  
   
- A member cannot [override](../Topic/override%20\(C%23%20Reference\).md) a [sealed](../Topic/sealed%20\(C%23%20Reference\).md) inherited member. For more information, see [Checked and Unchecked](../Topic/Checked%20and%20Unchecked%20\(C%23%20Reference\).md).  
+ A member cannot [override](/dotnet/csharp/language-reference/keywords/override) a [sealed](/dotnet/csharp/language-reference/keywords/sealed) inherited member. For more information, see [Checked and Unchecked](/dotnet/csharp/language-reference/keywords/checked-and-unchecked).  
   
  The following sample generates CS0239:  
   

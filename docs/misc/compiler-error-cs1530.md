@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1530"
+title: "Compiler Error CS1530 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1530"
 ms.assetid: 3844b5ef-e0ec-42df-9267-72689020f128
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS1530
 Keyword 'new' is not allowed on elements defined in a namespace  
   
- It is not necessary to specify the [new](../Topic/new%20\(C%23%20Reference\).md) keyword on any construct that is in a [namespace](../Topic/namespace%20\(C%23%20Reference\).md).  
+ It is not necessary to specify the [new](/dotnet/csharp/language-reference/keywords/new) keyword on any construct that is in a [namespace](/dotnet/csharp/language-reference/keywords/namespace).  
   
  The following sample generates CS1530:  
   

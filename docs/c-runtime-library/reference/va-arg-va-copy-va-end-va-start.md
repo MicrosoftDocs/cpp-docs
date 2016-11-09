@@ -1,7 +1,7 @@
 ---
-title: "va_arg, va_copy, va_end, va_start"
+title: "va_arg, va_copy, va_end, va_start | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

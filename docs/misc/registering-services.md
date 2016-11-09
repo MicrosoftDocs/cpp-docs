@@ -1,7 +1,7 @@
 ---
-title: "Registering Services"
+title: "Registering Services | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -62,5 +62,5 @@ regasm /tlb MyAssembly.dll
 ```  
   
 ## See Also  
- [Using and Providing Services](../Topic/Using%20and%20Providing%20Services.md)   
- [Service Essentials](../Topic/Service%20Essentials.md)
+ [Using and Providing Services](/visual-studio/extensibility/using-and-providing-services)   
+ [Service Essentials](/visual-studio/extensibility/internals/service-essentials)

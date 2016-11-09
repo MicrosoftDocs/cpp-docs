@@ -1,7 +1,7 @@
 ---
-title: "_CrtGetDumpClient"
+title: "_CrtGetDumpClient | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -68,7 +68,7 @@ _CRT_DUMP_CLIENT _CrtGetDumpClient( void );
 ## Remarks  
  The `_CrtGetDumpClient` function retrieves the current hook function for dumping objects stored in the `_CLIENT_BLOCK` memory blocks for the C run-time debug memory dump process.  
   
- For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug Hook Function Writing](../Topic/Debug%20Hook%20Function%20Writing.md).  
+ For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug Hook Function Writing](/visual-studio/debugger/debug-hook-function-writing).  
   
 ## Requirements  
   

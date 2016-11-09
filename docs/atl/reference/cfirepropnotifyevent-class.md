@@ -1,7 +1,7 @@
 ---
-title: "CFirePropNotifyEvent Class"
+title: "CFirePropNotifyEvent Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ helpviewer_keywords:
   - "CFirePropNotifyEvent class"
   - "connection points [C++], notifying of events"
 ms.assetid: eb7a563e-6bce-4cdf-8d20-8c6a5307781b
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -57,8 +57,8 @@ class CFirePropNotifyEvent
   
 |Name|Description|  
 |----------|-----------------|  
-|[CFirePropNotifyEvent::FireOnChanged](../Topic/CFirePropNotifyEvent::FireOnChanged.md)|(Static) Notifies the container's sink that a control property has changed.|  
-|[CFirePropNotifyEvent::FireOnRequestEdit](../Topic/CFirePropNotifyEvent::FireOnRequestEdit.md)|(Static) Notifies the container's sink that a control property is about to change.|  
+|[CFirePropNotifyEvent::FireOnChanged](#cfirepropnotifyevent__fireonchanged)|(Static) Notifies the container's sink that a control property has changed.|  
+|[CFirePropNotifyEvent::FireOnRequestEdit](#cfirepropnotifyevent__fireonrequestedit)|(Static) Notifies the container's sink that a control property is about to change.|  
   
 ## Remarks  
  `CFirePropNotifyEvent` has two methods that notify the container's sink that a control property has changed or is about to change.  
@@ -114,10 +114,3 @@ static HRESULT FireOnRequestEdit(
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
-title: "Building on the Command Line"
+title: "Building on the Command Line | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -60,7 +60,7 @@ You can build C and C++ applications on the command line by using tools that are
  [MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)  
  Use MSBuild (msbuild.exe) to build [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] projects and [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] solutions. This is equivalent to running the **Build** project or **Build Solution** command in the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] IDE.  
   
- [DEVENV](../Topic/Devenv%20Command%20Line%20Switches.md)  
+ [DEVENV](/visual-studio/ide/reference/devenv-command-line-switches)  
  Use DEVENV (devenv.exe) combined with a command-line switch—for example, **/Build** or **/Clean**—to perform certain build commands without displaying the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] IDE.  
   
  [NMAKE](../build/nmake-reference.md)  
@@ -74,7 +74,7 @@ You can build C and C++ applications on the command line by using tools that are
  [Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)  
  Gives an example that shows how to create and compile a simple C++ program on the command line.  
   
- [Walkthrough: Compiling a C Program on the Command Line](../build/walkthrough-compiling-a-c-program-on-the-command-line.md)  
+ [Walkthrough: Compiling a C Program on the Command Line](../Topic/Walkthrough:%20Compiling%20a%20C%20Program%20on%20the%20Command%20Line.md)  
  Describes how to compile a program written in the C programming language.  
   
  [Walkthrough: Compiling a C++/CLI Program on the Command Line](../build/walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md)  

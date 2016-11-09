@@ -1,7 +1,7 @@
 ---
-title: "CAcl Class"
+title: "CAcl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAcl class"
 ms.assetid: 20bcb9af-dc1c-4737-b923-3864776680d6
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -56,39 +56,39 @@ class CAcl
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAcl::CAccessMaskArray](../Topic/CAcl::CAccessMaskArray.md)|An array of `ACCESS_MASK`s.|  
-|[CAcl::CAceFlagArray](../Topic/CAcl::CAceFlagArray.md)|An array of `BYTE`s.|  
-|[CAcl::CAceTypeArray](../Topic/CAcl::CAceTypeArray.md)|An array of `BYTE`s.|  
+|[CAcl::CAccessMaskArray](#cacl__caccessmaskarray)|An array of `ACCESS_MASK`s.|  
+|[CAcl::CAceFlagArray](#cacl__caceflagarray)|An array of `BYTE`s.|  
+|[CAcl::CAceTypeArray](#cacl__cacetypearray)|An array of `BYTE`s.|  
   
 ### Public Constructors  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAcl::CAcl](../Topic/CAcl::CAcl.md)|The constructor.|  
-|[CAcl::~CAcl](../Topic/CAcl::~CAcl.md)|The destructor.|  
+|[CAcl::CAcl](#cacl__cacl)|The constructor.|  
+|[CAcl::~CAcl](#cacl___dtorcacl)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAcl::GetAceCount](../Topic/CAcl::GetAceCount.md)|Returns the number of access-control entry (ACE) objects.|  
-|[CAcl::GetAclEntries](../Topic/CAcl::GetAclEntries.md)|Retrieves the access-control list (ACL) entries from the `CAcl` object.|  
-|[CAcl::GetAclEntry](../Topic/CAcl::GetAclEntry.md)|Retrieves all of the information about an entry in a `CAcl` object.|  
-|[CAcl::GetLength](../Topic/CAcl::GetLength.md)|Returns the length of the ACL.|  
-|[CAcl::GetPACL](../Topic/CAcl::GetPACL.md)|Returns a PACL (pointer to an ACL).|  
-|[CAcl::IsEmpty](../Topic/CAcl::IsEmpty.md)|Tests the `CAcl` object for entries.|  
-|[CAcl::IsNull](../Topic/CAcl::IsNull.md)|Returns the status of the `CAcl` object.|  
-|[CAcl::RemoveAce](../Topic/CAcl::RemoveAce.md)|Removes a specific ACE (access-control entry) from the `CAcl` object.|  
-|[CAcl::RemoveAces](../Topic/CAcl::RemoveAces.md)|Removes all ACEs (access-control entries) from the `CAcl` that apply to the given `CSid`.|  
-|[CAcl::SetEmpty](../Topic/CAcl::SetEmpty.md)|Marks the `CAcl` object as empty.|  
-|[CAcl::SetNull](../Topic/CAcl::SetNull.md)|Marks the `CAcl` object as `NULL`.|  
+|[CAcl::GetAceCount](#cacl__getacecount)|Returns the number of access-control entry (ACE) objects.|  
+|[CAcl::GetAclEntries](#cacl__getaclentries)|Retrieves the access-control list (ACL) entries from the `CAcl` object.|  
+|[CAcl::GetAclEntry](#cacl__getaclentry)|Retrieves all of the information about an entry in a `CAcl` object.|  
+|[CAcl::GetLength](#cacl__getlength)|Returns the length of the ACL.|  
+|[CAcl::GetPACL](#cacl__getpacl)|Returns a PACL (pointer to an ACL).|  
+|[CAcl::IsEmpty](#cacl__isempty)|Tests the `CAcl` object for entries.|  
+|[CAcl::IsNull](#cacl__isnull)|Returns the status of the `CAcl` object.|  
+|[CAcl::RemoveAce](#cacl__removeace)|Removes a specific ACE (access-control entry) from the `CAcl` object.|  
+|[CAcl::RemoveAces](#cacl__removeaces)|Removes all ACEs (access-control entries) from the `CAcl` that apply to the given `CSid`.|  
+|[CAcl::SetEmpty](#cacl__setempty)|Marks the `CAcl` object as empty.|  
+|[CAcl::SetNull](#cacl__setnull)|Marks the `CAcl` object as `NULL`.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAcl::operator const ACL *](../Topic/CAcl::operator%20const%20ACL%20*.md)|Casts a `CAcl` object to an `ACL` structure.|  
-|[CAcl::operator =](../Topic/CAcl::operator%20=.md)|Assignment operator.|  
+|[CAcl::operator const ACL *](#cacl__operator_const_acl__star)|Casts a `CAcl` object to an `ACL` structure.|  
+|[CAcl::operator =](#cacl__operator__eq)|Assignment operator.|  
   
 ## Remarks  
  The **ACL** structure is the header of an ACL (access-control list). An ACL includes a sequential list of zero or more [ACEs](http://msdn.microsoft.com/library/windows/desktop/aa374868) (access-control entries). The individual ACEs in an ACL are numbered from 0 to *n-1*, where *n* is the number of ACEs in the ACL. When editing an ACL, an application refers to an access-control entry (ACE) within the ACL by its index.  
@@ -243,7 +243,7 @@ void GetAclEntry(
  The inherited object type. This will be set to GUID_NULL if the inherited object type is not specified in the ACE, or if the ACE is not an OBJECT ACE.  
   
 ### Remarks  
- This method will retrieve all of the information about an individual ACE, providing more information than [CAcl::GetAclEntries](../Topic/CAcl::GetAclEntries.md) alone makes available.  
+ This method will retrieve all of the information about an individual ACE, providing more information than [CAcl::GetAclEntries](#cacl__getaclentries) alone makes available.  
   
  See [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) for more details on ACE types and flags.  
   
@@ -322,7 +322,7 @@ void RemoveAce(UINT   nIndex) throw();
  Index to the ACE entry to remove.  
   
 ### Remarks  
- This method is derived from [CAtlArray::RemoveAt](../Topic/CAtlArray::RemoveAt.md).  
+ This method is derived from [CAtlArray::RemoveAt](../../atl/reference/catlarray-class.md#catlarray__removeat).  
   
 ##  <a name="cacl__removeaces"></a>  CAcl::RemoveAces  
  Removes alls ACEs (access-control entries) from the `CAcl` that apply to the given `CSid`.  
@@ -358,10 +358,3 @@ void SetNull() throw();
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)   
  [Security Global Functions](../../atl/reference/security-global-functions.md)
-
-
-
-
-
-
-

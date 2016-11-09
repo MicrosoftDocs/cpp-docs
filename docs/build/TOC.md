@@ -90,7 +90,7 @@
 # [Commands in a Makefile](commands-in-a-makefile.md)
 # [Types and Storage](types-and-storage.md)
 # [Building C-C++ Side-by-side Assemblies](building-c-cpp-side-by-side-assemblies.md)
-# [Walkthrough: Compiling a C Program on the Command Line](walkthrough-compiling-a-c-program-on-the-command-line.md)
+# [Walkthrough: Compile a C program on the command line](walkthrough-compile-a-c-program-on-the-command-line.md)
 # [How to: Build Registration-Free COM Components](how-to-build-registration-free-com-components.md)
 # [Function Types](function-types.md)
 # [Building on the Command Line](building-on-the-command-line.md)

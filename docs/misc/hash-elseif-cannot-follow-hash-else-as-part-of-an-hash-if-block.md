@@ -1,5 +1,5 @@
 ---
-title: "&#39;#ElseIf&#39; cannot follow &#39;#Else&#39; as part of an &#39;#If&#39; block"
+title: "&#39;#ElseIf&#39; cannot follow &#39;#Else&#39; as part of an &#39;#If&#39; block | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,4 +49,4 @@ An `#ElseIf` conditional compilation directive follows an `#Else` directive. `#E
 3.  If everything else is correct, move this `#ElseIf` directive and its corresponding statement block to precede the `#Else` block.  
   
 ## See Also  
- [#If...Then...#Else Directives](../Topic/%23If...Then...%23Else%20Directives.md)
+ [#If...Then...#Else Directives](/dotnet/visual-basic/language-reference/directives/if-then-else-directives)

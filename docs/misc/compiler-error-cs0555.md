@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0555"
+title: "Compiler Error CS0555 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0555"
 ms.assetid: e4b2f890-98b4-4578-b1de-ebaafc8b3da2
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

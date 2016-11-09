@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1593"
+title: "Compiler Error CS1593 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1593"
 ms.assetid: 7476e799-8a8d-457d-b4e7-2d5e073799d8
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS1593
 Delegate 'del' does not take 'number' arguments  
   
- The number of arguments passed to a [delegate](../Topic/delegate%20\(C%23%20Reference\).md) invocation does not agree with the number of parameters in the delegate declaration.  
+ The number of arguments passed to a [delegate](/dotnet/csharp/language-reference/keywords/delegate) invocation does not agree with the number of parameters in the delegate declaration.  
   
  The following sample generates CS1593:  
   

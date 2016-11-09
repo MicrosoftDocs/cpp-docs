@@ -1,5 +1,5 @@
 ---
-title: "No method &#39;&lt;methodname&gt;&#39; can accept an argument of type &#39;&lt;typename&gt;&#39; for parameter &#39;&lt;parametername&gt;&#39;"
+title: "No method &#39;&lt;methodname&gt;&#39; can accept an argument of type &#39;&lt;typename&gt;&#39; for parameter &#39;&lt;parametername&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,4 +40,4 @@ A method call contains an argument of a type that is not valid.
 2.  Match the argument types against the parameter types of the method to make sure they are in agreement. Alter the types as necessary.  
   
 ## See Also  
- [Passing Arguments by Value and by Reference](../Topic/Passing%20Arguments%20by%20Value%20and%20by%20Reference%20\(Visual%20Basic\).md)
+ [Passing Arguments by Value and by Reference](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)

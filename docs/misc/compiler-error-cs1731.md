@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1731"
+title: "Compiler Error CS1731 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1731"
 ms.assetid: 267b32aa-a692-4a54-8654-0540ee36c0a0
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

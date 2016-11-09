@@ -1,7 +1,7 @@
 ---
-title: "File name does not exist, is invalid, or contains parameters that cannot be validated. Do you want to change your entry?"
+title: "File name does not exist, is invalid, or contains parameters that cannot be validated. Do you want to change your entry? | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

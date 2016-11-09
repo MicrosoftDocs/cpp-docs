@@ -1,5 +1,5 @@
 ---
-title: "&#39;ByVal&#39; and &#39;ByRef&#39; cannot be combined"
+title: "&#39;ByVal&#39; and &#39;ByRef&#39; cannot be combined | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ The `ByVal` and `ByRef` keywords are mutually exclusive.
 -   Specify either `ByVal` or `ByRef`, but not both.  
   
 ## See Also  
- [ByVal](../Topic/ByVal%20\(Visual%20Basic\).md)   
- [ByRef](../Topic/ByRef%20\(Visual%20Basic\).md)
+ [ByVal](/dotnet/visual-basic/language-reference/modifiers/byval)   
+ [ByRef](/dotnet/visual-basic/language-reference/modifiers/byref)

@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;propertyname1&gt;&#39; cannot override &#39;&lt;propertyname2&gt;&#39; because they differ by &#39;ReadOnly&#39; or &#39;WriteOnly&#39;"
+title: "&#39;&lt;propertyname1&gt;&#39; cannot override &#39;&lt;propertyname2&gt;&#39; because they differ by &#39;ReadOnly&#39; or &#39;WriteOnly&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -46,4 +46,4 @@ You have attempted to override a property with a second property that differs fr
   
 ## See Also  
  [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213)   
- [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md)
+ [Overrides](/dotnet/visual-basic/language-reference/modifiers/overrides)

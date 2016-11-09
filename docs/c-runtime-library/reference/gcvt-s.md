@@ -1,7 +1,7 @@
 ---
-title: "_gcvt_s"
+title: "_gcvt_s | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -155,7 +155,7 @@ Converted value: 1.2
 ```  
   
 ## .NET Framework Equivalent  
- <xref:System.Convert.ToString*>  
+ <xref:System.Convert.ToString%2A>  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

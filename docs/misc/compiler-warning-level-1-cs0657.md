@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS0657"
+title: "Compiler Warning (level 1) CS0657 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0657"
 ms.assetid: d12d2efc-f44e-40e6-b825-5a66ead0c08e
 caps.latest.revision: 10
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

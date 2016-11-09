@@ -1,7 +1,7 @@
 ---
-title: "&lt;name&gt; is not valid editor for this file type."
+title: "&lt;name&gt; is not valid editor for this file type. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,7 +41,7 @@ This error generally occurs when an incorrect value is entered for the /e:*edito
 1.  Check the documentation for the correct /e:*editorname* syntax and re-enter the command.  
   
 ## See Also  
- [New File Command](../Topic/New%20File%20Command.md)   
- [Open File Command](../Topic/Open%20File%20Command.md)   
- [Add New Item Command](../Topic/Add%20New%20Item%20Command.md)   
- [Add Existing Item Command](../Topic/Add%20Existing%20Item%20Command.md)
+ [New File Command](/visual-studio/ide/reference/new-file-command)   
+ [Open File Command](/visual-studio/ide/reference/open-file-command)   
+ [Add New Item Command](/visual-studio/ide/reference/add-new-item-command)   
+ [Add Existing Item Command](/visual-studio/ide/reference/add-existing-item-command)

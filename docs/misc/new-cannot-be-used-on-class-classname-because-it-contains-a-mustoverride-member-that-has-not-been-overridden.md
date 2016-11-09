@@ -1,5 +1,5 @@
 ---
-title: "&#39;New&#39; cannot be used on class &#39;&lt;classname&gt;&#39; because it contains a &#39;MustOverride&#39; member that has not been overridden"
+title: "&#39;New&#39; cannot be used on class &#39;&lt;classname&gt;&#39; because it contains a &#39;MustOverride&#39; member that has not been overridden | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You have attempted to use `New` on a class that contains a `MustOverride` member
 -   Remove the `New` statement.  
   
 ## See Also  
- [MustOverride](../Topic/MustOverride%20\(Visual%20Basic\).md)
+ [MustOverride](/dotnet/visual-basic/language-reference/modifiers/mustoverride)

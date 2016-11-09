@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.Drawing.Printing.InvalidPrinterException"
+title: "Troubleshooting Exceptions: System.Drawing.Printing.InvalidPrinterException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -45,7 +45,7 @@ An <xref:System.Drawing.Printing.InvalidPrinterException> exception is thrown wh
  The most common cause of invalid printer settings is referencing a nonexistent printer. For more information, see <xref:System.Drawing.Printing>.  
   
  **Make sure a default printer has been installed.**  
- If no printer has been specified, make sure a default printer has been installed. For more information, see <xref:System.Drawing.Printing.PrintDocument.PrinterSettings*>  
+ If no printer has been specified, make sure a default printer has been installed. For more information, see <xref:System.Drawing.Printing.PrintDocument.PrinterSettings%2A>  
   
 ## See Also  
  <xref:System.Drawing.Printing.InvalidPrinterException>   

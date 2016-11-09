@@ -1,7 +1,7 @@
 ---
-title: "IPropertyNotifySinkCP Class"
+title: "IPropertyNotifySinkCP Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ helpviewer_keywords:
   - "sinks, notifying of changes"
   - "IPropertyNotifySinkCP class"
 ms.assetid: 1b41445e-bc88-4fa6-bb62-d68aacec2bd5
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -73,10 +73,3 @@ template<class T, class CDV = CComDynamicUnkArray>  class IPropertyNotifySinkCP 
  [IConnectionPointImpl Class](../../atl/reference/iconnectionpointimpl-class.md)   
  [IConnectionPointContainerImpl Class](../../atl/reference/iconnectionpointcontainerimpl-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

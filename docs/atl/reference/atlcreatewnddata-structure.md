@@ -1,7 +1,7 @@
 ---
-title: "_AtlCreateWndData Structure"
+title: "_AtlCreateWndData Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "_AtlCreateWndData structure"
   - "AtlCreateWndData structure"
 ms.assetid: 76ed5382-bfbf-4b8b-8a29-912688dfd2ae
-caps.latest.revision: 14
+caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -46,11 +46,8 @@ This structure contains class instance data in windowing code in ATL.
 ```
     struct _AtlCreateWndData{
     void* m_pThis;
-
     DWORD m_dwThreadID;
-
     _AtlCreateWndData* m_pNext;
-
 };
 ```  
   

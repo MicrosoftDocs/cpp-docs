@@ -1,0 +1,1 @@
+   printf_s("%c\n", CDefaultCharTraits<char>::CharToLower('A'));

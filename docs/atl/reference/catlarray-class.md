@@ -1,7 +1,7 @@
 ---
-title: "CAtlArray Class"
+title: "CAtlArray Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAtlArray class"
 ms.assetid: 0b503aa8-2357-40af-a326-6654bf1da098
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -59,24 +59,24 @@ template<typename E,  class ETraits = CElementTraits<E>>  class CAtlArray
   
 |||  
 |-|-|  
-|[Add](../Topic/CAtlArray::Add.md)|Call this method to add an element to the array object.|  
-|[Append](../Topic/CAtlArray::Append.md)|Call this method to add the contents of one array to the end of another.|  
-|[AssertValid](../Topic/CAtlArray::AssertValid.md)|Call this method to confirm that the array object is valid.|  
-|[CAtlArray](../Topic/CAtlArray::CAtlArray.md)|The constructor.|  
-|[~CAtlArray](../Topic/CAtlArray::~CAtlArray.md)|The destructor.|  
-|[Copy](../Topic/CAtlArray::Copy.md)|Call this method to copy the elements of one array to another.|  
-|[FreeExtra](../Topic/CAtlArray::FreeExtra.md)|Call this method to remove any empty elements from the array.|  
-|[GetAt](../Topic/CAtlArray::GetAt.md)|Call this method to retrieve a single element from the array object.|  
-|[GetCount](../Topic/CAtlArray::GetCount.md)|Call this method to return the number of elements stored in the array.|  
-|[GetData](../Topic/CAtlArray::GetData.md)|Call this method to return a pointer to the first element in the array.|  
-|[InsertArrayAt](../Topic/CAtlArray::InsertArrayAt.md)|Call this method to insert one array into another.|  
-|[InsertAt](../Topic/CAtlArray::InsertAt.md)|Call this method to insert a new element (or multiple copies of an element) into the array object.|  
-|[IsEmpty](../Topic/CAtlArray::IsEmpty.md)|Call this method to test if the array is empty.|  
-|[RemoveAll](../Topic/CAtlArray::RemoveAll.md)|Call this method to remove all elements from the array object.|  
-|[RemoveAt](../Topic/CAtlArray::RemoveAt.md)|Call this method to remove one or more elements from the array.|  
-|[SetAt](../Topic/CAtlArray::SetAt.md)|Call this method to set the value of an element in the array object.|  
-|[SetAtGrow](../Topic/CAtlArray::SetAtGrow.md)|Call this method to set the value of an element in the array object, expanding the array as required.|  
-|[SetCount](../Topic/CAtlArray::SetCount.md)|Call this method to set the size of the array object.|  
+|[Add](#catlarray__add)|Call this method to add an element to the array object.|  
+|[Append](#catlarray__append)|Call this method to add the contents of one array to the end of another.|  
+|[AssertValid](#catlarray__assertvalid)|Call this method to confirm that the array object is valid.|  
+|[CAtlArray](#catlarray__catlarray)|The constructor.|  
+|[~CAtlArray](#catlarray___dtorcatlarray)|The destructor.|  
+|[Copy](#catlarray__copy)|Call this method to copy the elements of one array to another.|  
+|[FreeExtra](#catlarray__freeextra)|Call this method to remove any empty elements from the array.|  
+|[GetAt](#catlarray__getat)|Call this method to retrieve a single element from the array object.|  
+|[GetCount](#catlarray__getcount)|Call this method to return the number of elements stored in the array.|  
+|[GetData](#catlarray__getdata)|Call this method to return a pointer to the first element in the array.|  
+|[InsertArrayAt](#catlarray__insertarrayat)|Call this method to insert one array into another.|  
+|[InsertAt](#catlarray__insertat)|Call this method to insert a new element (or multiple copies of an element) into the array object.|  
+|[IsEmpty](#catlarray__isempty)|Call this method to test if the array is empty.|  
+|[RemoveAll](#catlarray__removeall)|Call this method to remove all elements from the array object.|  
+|[RemoveAt](#catlarray__removeat)|Call this method to remove one or more elements from the array.|  
+|[SetAt](#catlarray__setat)|Call this method to set the value of an element in the array object.|  
+|[SetAtGrow](#catlarray__setatgrow)|Call this method to set the value of an element in the array object, expanding the array as required.|  
+|[SetCount](#catlarray__setcount)|Call this method to set the size of the array object.|  
   
 ### Operators  
   
@@ -88,8 +88,8 @@ template<typename E,  class ETraits = CElementTraits<E>>  class CAtlArray
   
 |||  
 |-|-|  
-|[INARGTYPE](../Topic/CAtlArray::INARGTYPE.md)|The data type to use for adding elements to the array.|  
-|[OUTARGTYPE](../Topic/CAtlArray::OUTARGTYPE.md)|The data type to use for retrieving elements from the array.|  
+|[INARGTYPE](#catlarray__inargtype)|The data type to use for adding elements to the array.|  
+|[OUTARGTYPE](#catlarray__outargtype)|The data type to use for retrieving elements from the array.|  
   
 ## Remarks  
  **CAtlArray** provides methods for creating and managing an array of elements of a user-defined type. Although similar to standard C arrays, the **CAtlArray** object can dynamically shrink and grow as necessary. The array index always starts at position 0, and the upper bound can be fixed, or allowed to expand as new elements are added.  
@@ -199,7 +199,7 @@ void Copy(const CAtlArray<E, ETraits>& aSrc);
 ### Remarks  
  Call this method to overwrite elements of one array with the elements of another array. If necessary, memory will be allocated to accommodate the new elements. It is not possible to copy elements of an array to itself.  
   
- If the existing contents of the array are to be retained, use [CAtlArray::Append](../Topic/CAtlArray::Append.md) instead.  
+ If the existing contents of the array are to be retained, use [CAtlArray::Append](#catlarray__append) instead.  
   
  In debug builds, an ATLASSERT will be raised if the existing `CAtlArray` object is not valid, or if `aSrc` refers to the same object. In release builds, invalid arguments may lead to unpredictable behavior.  
   
@@ -256,7 +256,7 @@ size_t GetCount() const throw();
  As the first element in the array is at position 0, the value returned by `GetCount` is always 1 greater than the largest index.  
   
 ### Example  
- See the example for [CAtlArray::GetAt](../Topic/CAtlArray::GetAt.md).  
+ See the example for [CAtlArray::GetAt](#catlarray__getat).  
   
 ##  <a name="catlarray__getdata"></a>  CAtlArray::GetData  
  Call this method to return a pointer to the first element in the array.  
@@ -367,7 +367,7 @@ const E& operator[](size_t iElement) const throw();
  Returns a reference to the required array element.  
   
 ### Remarks  
- Performs a similar function to [CAtlArray::GetAt](../Topic/CAtlArray::GetAt.md). Unlike the MFC class [CArray](../../mfc/reference/carray-class.md), this operator cannot be used as a substitute for [CAtlArray::SetAt](../Topic/CAtlArray::SetAt.md).  
+ Performs a similar function to [CAtlArray::GetAt](#catlarray__getat). Unlike the MFC class [CArray](../../mfc/reference/carray-class.md), this operator cannot be used as a substitute for [CAtlArray::SetAt](#catlarray__setat).  
   
  In debug builds, an ATLASSERT will be raised if `iElement` exceeds the total number of elements in the array. In retail builds, an invalid parameter may cause unpredictable results.  
   
@@ -388,10 +388,10 @@ void RemoveAll() throw();
 ### Remarks  
  Removes all of the elements from the array object.  
   
- This method calls [CAtlArray::SetCount](../Topic/CAtlArray::SetCount.md) to resize the array and subsequently frees any allocated memory.  
+ This method calls [CAtlArray::SetCount](#catlarray__setcount) to resize the array and subsequently frees any allocated memory.  
   
 ### Example  
- See the example for [CAtlArray::IsEmpty](../Topic/CAtlArray::IsEmpty.md).  
+ See the example for [CAtlArray::IsEmpty](#catlarray__isempty).  
   
 ##  <a name="catlarray__removeat"></a>  CAtlArray::RemoveAt  
  Call this method to remove one or more elements from the array.  
@@ -408,7 +408,7 @@ void RemoveAt(size_t iElement,  size_t nCount = 1);
  The number of elements to remove.  
   
 ### Remarks  
- Removes one or more elements from the array. Any remaining elements are shifted down. The upper bound is decremented, but memory is not freed until a call to [CAtlArray::FreeExtra](../Topic/CAtlArray::FreeExtra.md) is made.  
+ Removes one or more elements from the array. Any remaining elements are shifted down. The upper bound is decremented, but memory is not freed until a call to [CAtlArray::FreeExtra](#catlarray__freeextra) is made.  
   
  In debug builds, an ATLASSERT will be raised if the `CAtlArray` object is not valid, or if the combined total of `iElement` and `nCount` exceeds the total number of elements in the array. In retail builds, invalid parameters may cause unpredictable results.  
   
@@ -433,7 +433,7 @@ void SetAt(size_t iElement,  INARGTYPE element);
  In debug builds, an ATLASSERT will be raised if `iElement` exceeds the number of elements in the array. In retail builds, an invalid parameter may result in unpredictable results.  
   
 ### Example  
- See the example for [CAtlArray::GetAt](../Topic/CAtlArray::GetAt.md).  
+ See the example for [CAtlArray::GetAt](#catlarray__getat).  
   
 ##  <a name="catlarray__setcount"></a>  CAtlArray::SetCount  
  Call this method to set the size of the array object.  
@@ -458,7 +458,7 @@ bool SetCount(size_t nNewSize,  int nGrowBy = - 1);
  Use this method to set the size of the array before using it. If `SetCount` is not used, the process of adding elements — and the subsequent memory allocation performed — will reduce performance and fragment memory.  
   
 ### Example  
- See the example for [CAtlArray::GetData](../Topic/CAtlArray::GetData.md).  
+ See the example for [CAtlArray::GetData](#catlarray__getdata).  
   
 ##  <a name="catlarray__setatgrow"></a>  CAtlArray::SetAtGrow  
  Call this method to set the value of an element in the array object, expanding the array as required.  
@@ -475,7 +475,7 @@ void SetAtGrow(size_t iElement,  INARGTYPE element);
  The new value of the specified element.  
   
 ### Remarks  
- Replaces the value of the element pointed to by the index. If `iElement` is larger than the current size of the array, the array is automatically increased using a call to [CAtlArray::SetCount](../Topic/CAtlArray::SetCount.md). In debug builds, an ATLASSERT will be raised if the `CAtlArray` object is not valid. In retail builds, invalid parameters may cause unpredictable results.  
+ Replaces the value of the element pointed to by the index. If `iElement` is larger than the current size of the array, the array is automatically increased using a call to [CAtlArray::SetCount](#catlarray__setcount). In debug builds, an ATLASSERT will be raised if the `CAtlArray` object is not valid. In retail builds, invalid parameters may cause unpredictable results.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#12](../../atl/codesnippet/CPP/catlarray-class_12.cpp)]  
@@ -487,10 +487,3 @@ void SetAtGrow(size_t iElement,  INARGTYPE element);
  [Marquee Sample](../../top/visual-cpp-samples.md)   
  [CArray Class](../../mfc/reference/carray-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

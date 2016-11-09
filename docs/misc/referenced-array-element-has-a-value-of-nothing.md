@@ -1,5 +1,5 @@
 ---
-title: "Referenced array element has a value of &#39;Nothing&#39;"
+title: "Referenced array element has a value of &#39;Nothing&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ The array element being referenced has not been set, or it was previously set to
 -   Verify that the values in the array are being set correctly.  
   
 ## See Also  
- [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md)
+ [Nothing](/dotnet/visual-basic/language-reference/nothing)

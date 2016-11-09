@@ -1,7 +1,7 @@
 ---
-title: "_aligned_msize"
+title: "_aligned_msize | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -81,7 +81,7 @@ size_t _msize(
 ## Remarks  
  The `_aligned_msize` function returns the size, in bytes, of the memory block allocated by a call to [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md) or [_aligned_realloc](../../c-runtime-library/reference/aligned-realloc.md). The `alignment` and `offset` values must be the same as the values passed to the function that allocated the block.  
   
- When the application is linked with a debug version of the C run-time libraries, `_aligned_msize` resolves to [_aligned_msize_dbg](../../c-runtime-library/reference/aligned-msize-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](../Topic/CRT%20Debug%20Heap%20Details.md).  
+ When the application is linked with a debug version of the C run-time libraries, `_aligned_msize` resolves to [_aligned_msize_dbg](../../c-runtime-library/reference/aligned-msize-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visual-studio/debugger/crt-debug-heap-details).  
   
  This function validates its parameter. If `memblock` is a null pointer or `alignment` is not a power of 2, `_msize` invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If the error is handled, the function sets `errno` to `EINVAL` and returns -1.  
   

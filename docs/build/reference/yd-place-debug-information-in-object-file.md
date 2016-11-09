@@ -1,7 +1,7 @@
 ---
-title: "-Yd (Place Debug Information in Object File)"
+title: "-Yd (Place Debug Information in Object File) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -74,7 +74,7 @@ Paces complete debugging information in all object files created from a precompi
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
   
 ## Examples  
  Suppose you have two base files, F.cpp and G.cpp, each containing these **#include** statements:  

@@ -1,7 +1,7 @@
 ---
-title: "Pixel-HIMETRIC Conversion Global Functions"
+title: "Pixel-HIMETRIC Conversion Global Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -12,7 +12,7 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: ecb1b1b2-7e9d-4fbc-a855-16252d2d794c
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -39,8 +39,8 @@ These functions provide support for converting to and from pixel and HIMETRIC un
   
 |||  
 |-|-|  
-|[AtlHiMetricToPixel](../Topic/AtlHiMetricToPixel.md)|Converts HIMETRIC units (each unit is 0.01 millimeter) to pixels.|  
-|[AtlPixelToHiMetric](../Topic/AtlPixelToHiMetric.md)|Converts pixels to HIMETRIC units (each unit is 0.01 millimeter).|  
+|[AtlHiMetricToPixel](#atlhimetrictopixel)|Converts HIMETRIC units (each unit is 0.01 millimeter) to pixels.|  
+|[AtlPixelToHiMetric](#atlpixeltohimetric)|Converts pixels to HIMETRIC units (each unit is 0.01 millimeter).|  
   
 ##  <a name="atlhimetrictopixel"></a>  AtlHiMetricToPixel  
  Converts an object's size in HIMETRIC units (each unit is 0.01 millimeter) to a size in pixels on the screen device.  
@@ -86,8 +86,3 @@ extern void           AtlPixelToHiMetric(
   
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)
-
-
-
-
-

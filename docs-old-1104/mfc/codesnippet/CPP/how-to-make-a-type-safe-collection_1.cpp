@@ -1,0 +1,1 @@
+         CList<int, int> m_intList;

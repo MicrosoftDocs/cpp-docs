@@ -1,5 +1,5 @@
 ---
-title: "&#39;ReadOnly&#39; variable cannot be the target of an assignment in a lambda expression inside a constructor"
+title: "&#39;ReadOnly&#39; variable cannot be the target of an assignment in a lambda expression inside a constructor | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -95,6 +95,6 @@ End Class
     ```  
   
 ## See Also  
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md)   
- [ReadOnly](../Topic/ReadOnly%20\(Visual%20Basic\).md)   
+ [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)   
+ [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)   
  [NOT IN BUILD: Using Constructors and Destructors](http://msdn.microsoft.com/en-us/548eebe1-86c4-4377-b2f5-447cb8be3d90)

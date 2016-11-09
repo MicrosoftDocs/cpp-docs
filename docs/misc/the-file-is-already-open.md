@@ -1,5 +1,5 @@
 ---
-title: "The file is already open"
+title: "The file is already open | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -43,4 +43,4 @@ An attempt has been made to open a file that is already open.
   
 ## See Also  
  [NOT IN BUILD: FileOpen Function](http://msdn.microsoft.com/en-us/0f07e1df-d4ea-44a9-a21c-76aa2e242f81)   
- [My.Computer.FileSystem Object](../Topic/My.Computer.FileSystem%20Object.md)
+ [My.Computer.FileSystem Object](/dotnet/visual-basic/language-reference/objects/my-computer-filesystem-object)

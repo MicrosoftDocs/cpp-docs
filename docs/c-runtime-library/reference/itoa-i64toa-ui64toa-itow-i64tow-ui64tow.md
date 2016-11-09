@@ -1,7 +1,7 @@
 ---
-title: "_itoa, _i64toa, _ui64toa, _itow, _i64tow, _ui64tow"
+title: "_itoa, _i64toa, _ui64toa, _itow, _i64tow, _ui64tow | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

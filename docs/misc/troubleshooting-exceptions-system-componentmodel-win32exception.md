@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.ComponentModel.Win32Exception"
+title: "Troubleshooting Exceptions: System.ComponentModel.Win32Exception | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -37,9 +37,9 @@ translation.priority.mt:
 The exception that is thrown for a Win32 error code.  
   
 ## Remarks  
- Win32 error codes are translated from their numeric representations into a system message when they are displayed. Use the <xref:System.ComponentModel.Win32Exception.NativeErrorCode*> property to access the numeric representation of the error code.  
+ Win32 error codes are translated from their numeric representations into a system message when they are displayed. Use the <xref:System.ComponentModel.Win32Exception.NativeErrorCode%2A> property to access the numeric representation of the error code.  
   
 ## See Also  
  <xref:System.ComponentModel.Win32Exception>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Where Can I Look Up Win32 Error Codes?](../Topic/Where%20Can%20I%20Look%20Up%20Win32%20Error%20Codes?.md)
+ [Where Can I Look Up Win32 Error Codes?](/visual-studio/debugger/where-can-i-look-up-win32-error-codes-q)

@@ -1,7 +1,7 @@
 ---
-title: "Type Casting of MFC Class Objects"
+title: "Type Casting of MFC Class Objects | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ helpviewer_keywords:
   - "casting types"
   - "macros, casting pointers"
 ms.assetid: e138465e-c35f-4e84-b788-bd200ccf2f0e
-caps.latest.revision: 14
+caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -54,11 +54,8 @@ Type casting macros provide a way to cast a given pointer to a pointer that poin
 ##  <a name="dynamic_downcast"></a>  DYNAMIC_DOWNCAST  
  Provides a handy way to cast a pointer to a pointer to a class object while checking to see if the cast is legal.  
   
-```  
- 
-DYNAMIC_DOWNCAST(
-class  ,   pointer)  
- 
+```   
+DYNAMIC_DOWNCAST(class, pointer)  
 ```  
   
 ### Parameters  
@@ -76,11 +73,8 @@ class  ,   pointer)
 ##  <a name="static_downcast"></a>  STATIC_DOWNCAST  
  Casts *pobject* to a pointer to a *class_name* object.  
   
-```  
- 
-STATIC_DOWNCAST(
-class_name  ,  pobject)  
- 
+```   
+STATIC_DOWNCAST(class_name, pobject)   
 ```  
   
 ### Parameters  

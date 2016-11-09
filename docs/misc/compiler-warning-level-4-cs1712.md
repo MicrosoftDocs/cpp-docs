@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 4) CS1712"
+title: "Compiler Warning (level 4) CS1712 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1712"
 ms.assetid: d9a8be26-c0ba-41fa-b082-1ce4ba7724b7
 caps.latest.revision: 9
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

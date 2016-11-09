@@ -1,7 +1,7 @@
 ---
-title: "Working with Resource Files"
+title: "Working with Resource Files | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -65,7 +65,7 @@ translation.priority.mt:
  [Introducing Visual Studio](http://msdn.microsoft.com/en-us/99997089-56ff-4d60-81a9-447062dc98ac)  
  Describes the complete set of development tools that all use the same integrated development environment (IDE), allowing them to share tools and facilitates in the creation of mixed-language solutions.  
   
- [Talk to Us](../Topic/Talk%20to%20Us.md)  
+ [Talk to Us](/visual-studio/ide/talk-to-us)  
  Provides links to information on using the documentation set, contacting product support, and employing accessibility features.  
   
 ## See Also  

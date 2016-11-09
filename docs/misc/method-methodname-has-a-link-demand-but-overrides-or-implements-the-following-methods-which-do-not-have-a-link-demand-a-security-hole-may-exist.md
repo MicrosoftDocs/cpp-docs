@@ -1,5 +1,5 @@
 ---
-title: "Method &#39;&lt;methodname&gt;&#39; has a link demand, but overrides or implements the following methods which do not have a link demand. A security hole may exist:"
+title: "Method &#39;&lt;methodname&gt;&#39; has a link demand, but overrides or implements the following methods which do not have a link demand. A security hole may exist: | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Method &#39;&lt;methodname&gt;&#39; has a link demand, but overrides or implements the following methods which do not have a link demand. A security hole may exist:
 A security link demand action has been added to the method. However, the method overrides or implements methods that do not have link demands. Therefore the overridden or implemented methods can be called with insufficient permissions, which may cause a security issue.  
   
- By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42200  
   

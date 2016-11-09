@@ -1,7 +1,7 @@
 ---
-title: "Using a Custom Registration Attribute to Register an Extension"
+title: "Using a Custom Registration Attribute to Register an Extension | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -29,7 +29,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Using a Custom Registration Attribute to Register an Extension
-In certain cases you may need to create a new registration attribute for your extension. You can use registration attributes to add new registry keys or to add new values to existing keys. The new attribute must derive from <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, and it must override the <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register*> and <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister*> methods.  
+In certain cases you may need to create a new registration attribute for your extension. You can use registration attributes to add new registry keys or to add new values to existing keys. The new attribute must derive from <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, and it must override the <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> and <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> methods.  
   
 ## Creating a Custom Attribute  
  The following code shows how to create a new registration attribute.  

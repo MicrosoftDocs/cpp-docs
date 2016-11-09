@@ -1,5 +1,5 @@
 ---
-title: "Some files and folders caused exceptions during the operation"
+title: "Some files and folders caused exceptions during the operation | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

@@ -1,7 +1,7 @@
 ---
-title: "CRT Alphabetical Function Reference"
+title: "CRT Alphabetical Function Reference | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -42,7 +42,7 @@ dev_langs:
   - "C++"
   - "C"
 ms.assetid: c2169b0e-cd86-489a-a2fa-2ee15c03b5c2
-caps.latest.revision: 31
+caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
@@ -1193,6 +1193,14 @@ The C Run-Time (CRT) Library reference documentation is arranged alphabetically 
  [_initterm](../../c-runtime-library/reference/initterm-initterm-e.md)  
   
  [_initterm_e](../../c-runtime-library/reference/initterm-initterm-e.md)  
+  
+ [_invalid_parameter](../../c-runtime-library/reference/invalid-parameter-functions.md)  
+  
+ [_invalid_parameter_noinfo](../../c-runtime-library/reference/invalid-parameter-functions.md)  
+  
+ [_invalid_parameter_noinfo_noreturn](../../c-runtime-library/reference/invalid-parameter-functions.md)  
+  
+ [_invoke_watson](../../c-runtime-library/reference/invalid-parameter-functions.md)  
   
  [isalnum](../../c-runtime-library/reference/isalnum-iswalnum-isalnum-l-iswalnum-l.md)  
   

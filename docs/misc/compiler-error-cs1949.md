@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1949"
+title: "Compiler Error CS1949 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1949"
 ms.assetid: 959f553e-ac3d-43a1-b0a0-11e270f2ad64
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS1949
 The contextual keyword 'var' cannot be used in a range variable declaration.  
   
- A range variable is implicitly typed by the compiler. There is no need to use [var](../Topic/var%20\(C%23%20Reference\).md) with a range variable.  
+ A range variable is implicitly typed by the compiler. There is no need to use [var](/dotnet/csharp/language-reference/keywords/var) with a range variable.  
   
 ### To correct this error  
   
@@ -62,5 +63,5 @@ class Test
 ```  
   
 ## See Also  
- [LINQ Query Expressions](../Topic/LINQ%20Query%20Expressions%20\(C%23%20Programming%20Guide\).md)   
- [Introduction to LINQ Queries (C#)](../Topic/Introduction%20to%20LINQ%20Queries%20\(C%23\).md)
+ [LINQ Query Expressions](/dotnet/csharp/programming-guide/linq-query-expressions/index)   
+ [Introduction to LINQ Queries (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)

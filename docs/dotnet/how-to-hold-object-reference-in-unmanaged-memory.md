@@ -1,7 +1,7 @@
 ---
-title: "How to: Hold Object Reference in Unmanaged Memory"
+title: "How to: Hold Object Reference in Unmanaged Memory | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -76,7 +76,7 @@ StringWrapper::x == ManagedString
 ```  
   
 ## Example  
- `GCHandle` gives you a means to hold a managed object reference in unmanaged memory.  You use the <xref:System.Runtime.InteropServices.GCHandle.Alloc*> method to create an opaque handle to a managed object and <xref:System.Runtime.InteropServices.GCHandle.Free*> to release it. Also, the <xref:System.Runtime.InteropServices.GCHandle.Target*> method allows you to obtain the object reference back from the handle in managed code.  
+ `GCHandle` gives you a means to hold a managed object reference in unmanaged memory.  You use the <xref:System.Runtime.InteropServices.GCHandle.Alloc%2A> method to create an opaque handle to a managed object and <xref:System.Runtime.InteropServices.GCHandle.Free%2A> to release it. Also, the <xref:System.Runtime.InteropServices.GCHandle.Target%2A> method allows you to obtain the object reference back from the handle in managed code.  
   
 ```  
 // hold_object_reference_2.cpp  

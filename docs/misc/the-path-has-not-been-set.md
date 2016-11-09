@@ -1,5 +1,5 @@
 ---
-title: "The path has not been set"
+title: "The path has not been set | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -39,4 +39,4 @@ A file operation, such as moving or copying a file, has been attempted without s
   
 ## See Also  
  [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
- [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md)
+ [File Access with Visual Basic](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/file-access)

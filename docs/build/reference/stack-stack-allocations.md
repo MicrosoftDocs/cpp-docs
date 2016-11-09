@@ -1,7 +1,7 @@
 ---
-title: "-STACK (Stack Allocations)"
+title: "-STACK (Stack Allocations) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -74,7 +74,7 @@ translation.priority.mt:
   
 ### To set this linker option programmatically  
   
-1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.StackCommitSize*> and <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.StackReserveSize*> properties.  
+1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.StackCommitSize%2A> and <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.StackReserveSize%2A> properties.  
   
 ## See Also  
  [Setting Linker Options](../../build/reference/setting-linker-options.md)   

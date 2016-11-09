@@ -1,7 +1,7 @@
 ---
-title: "File Handling"
+title: "File Handling | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -83,12 +83,12 @@ Use these routines to create, delete, and manipulate files and to set and check 
   
 |Routine|Use|.NET Framework equivalent|  
 |-------------|---------|-------------------------------|  
-|[fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md), [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md)|Opens a file and returns a pointer to the open file.|[System::IO::File::Open](https://msdn.microsoft.com/en-us/library/system.io.file.open.aspx), <xref:System.IO.FileStream.#ctor*>|  
-|[_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)|Open a stream with file sharing and returns a pointer to the open file.|[System::IO::File::Open](https://msdn.microsoft.com/en-us/library/system.io.file.open.aspx), <xref:System.IO.FileStream.#ctor*>|  
-|[_open, _wopen](../c-runtime-library/reference/open-wopen.md)|Opens a file and returns a file descriptor to the opened file.|[System::IO::File::Open](https://msdn.microsoft.com/en-us/library/system.io.file.open.aspx), <xref:System.IO.FileStream.#ctor*>|  
+|[fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md), [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md)|Opens a file and returns a pointer to the open file.|[System::IO::File::Open](https://msdn.microsoft.com/en-us/library/system.io.file.open.aspx), <xref:System.IO.FileStream.%23ctor%2A>|  
+|[_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)|Open a stream with file sharing and returns a pointer to the open file.|[System::IO::File::Open](https://msdn.microsoft.com/en-us/library/system.io.file.open.aspx), <xref:System.IO.FileStream.%23ctor%2A>|  
+|[_open, _wopen](../c-runtime-library/reference/open-wopen.md)|Opens a file and returns a file descriptor to the opened file.|[System::IO::File::Open](https://msdn.microsoft.com/en-us/library/system.io.file.open.aspx), <xref:System.IO.FileStream.%23ctor%2A>|  
 |[_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md), [_sopen_s, _wsopen_s](../c-runtime-library/reference/sopen-s-wsopen-s.md)|Open a file with file sharing and returns a file descriptor to the open file.||  
 |[_pipe](../c-runtime-library/reference/pipe.md)|Creates a pipe for reading and writing.|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).|  
-|[freopen, _wfreopen](../c-runtime-library/reference/freopen-wfreopen.md), [freopen_s, _wfreopen_s](../c-runtime-library/reference/freopen-s-wfreopen-s.md)|Reassign a file pointer.|[System::IO::File::Open](https://msdn.microsoft.com/en-us/library/system.io.file.open.aspx), <xref:System.IO.FileStream.#ctor*>|  
+|[freopen, _wfreopen](../c-runtime-library/reference/freopen-wfreopen.md), [freopen_s, _wfreopen_s](../c-runtime-library/reference/freopen-s-wfreopen-s.md)|Reassign a file pointer.|[System::IO::File::Open](https://msdn.microsoft.com/en-us/library/system.io.file.open.aspx), <xref:System.IO.FileStream.%23ctor%2A>|  
   
  The following functions provide a way to change the representation of the file between a `FILE` structure, a file descriptor, and a Win32 file handle.  
   

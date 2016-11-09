@@ -1,5 +1,5 @@
 ---
-title: "Option Strict On disallows operands of type Object for operator &#39;&lt;operatorname&gt;&#39;"
+title: "Option Strict On disallows operands of type Object for operator &#39;&lt;operatorname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,6 +49,6 @@ Option Strict On disallows operands of type Object for operator '\<operatorname>
 2.  Use the `Is` operator to compare for object identity.  
   
 ## See Also  
- [Comparison Operators](../Topic/Comparison%20Operators%20\(Visual%20Basic\).md)   
- [Is Operator](../Topic/Is%20Operator%20\(Visual%20Basic\).md)   
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)
+ [Comparison Operators](/dotnet/visual-basic/language-reference/operators/comparison-operators)   
+ [Is Operator](/dotnet/visual-basic/language-reference/operators/is-operator)   
+ [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0622"
+title: "Compiler Error CS0622 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0622"
 ms.assetid: aef77a69-d8b7-41f8-9539-258deaef5cc4
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

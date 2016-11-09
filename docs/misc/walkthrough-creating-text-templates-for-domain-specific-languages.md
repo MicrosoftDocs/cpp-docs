@@ -1,7 +1,7 @@
 ---
-title: "Walkthrough: Creating Text Templates for Domain-Specific Languages"
+title: "Walkthrough: Creating Text Templates for Domain-Specific Languages | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -31,4 +31,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Walkthrough: Creating Text Templates for Domain-Specific Languages
-This topic has been consolidated with other content. Please go to [Generating Code from a Domain-Specific Language](../Topic/Generating%20Code%20from%20a%20Domain-Specific%20Language.md).
+This topic has been consolidated with other content. Please go to [Generating Code from a Domain-Specific Language](/visual-studio/modeling/generating-code-from-a-domain-specific-language).

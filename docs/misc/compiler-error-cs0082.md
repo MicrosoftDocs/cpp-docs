@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0082"
+title: "Compiler Error CS0082 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0082"
 ms.assetid: 7612976f-de2c-4f6b-87c9-43175821650c
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -71,4 +72,4 @@ class MyClass
 ```  
   
 ## See Also  
- [Properties](../Topic/Properties%20\(C%23%20Programming%20Guide\).md)
+ [Properties](/dotnet/csharp/programming-guide/classes-and-structs/properties)

@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB1027"
+title: "MSBuild Error MSB1027 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -46,4 +46,4 @@ translation.priority.mt:
 -   Remove the **/noautoresponse** switch from the MSBuild.rsp response file.  
   
 ## See Also  
- [Command-Line Reference](../Topic/MSBuild%20Command-Line%20Reference.md)
+ [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)

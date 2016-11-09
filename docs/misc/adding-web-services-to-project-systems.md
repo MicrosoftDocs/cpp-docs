@@ -1,7 +1,7 @@
 ---
-title: "Adding Web Services to Project Systems"
+title: "Adding Web Services to Project Systems | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,9 +38,9 @@ XML Web services are, in general, URL-addressable resources that return programm
   
 1.  Call `QueryService` for <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2> interface through <xref:Microsoft.VisualStudio.Shell.Interop.SVsAddWebReferenceDlg> service.  
   
-2.  Call the <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2.AddWebReferenceDlg*> method. If you pass in `pDiscoverySession` parameter as `NULL`, a discovery session is created for you, and the session is cached so that it is available for subsequent use by the <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2> interface. <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2.AddWebReferenceDlg*> method returns a pointer to <xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult2>.  
+2.  Call the <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2.AddWebReferenceDlg%2A> method. If you pass in `pDiscoverySession` parameter as `NULL`, a discovery session is created for you, and the session is cached so that it is available for subsequent use by the <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2> interface. <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2.AddWebReferenceDlg%2A> method returns a pointer to <xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult2>.  
   
-3.  Call the <xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult.AddWebReference*> method. Pass in the automation object for the Web service references folder as the `pUnkWebReferenceFolder` parameter. The Visual Studio environment then checks if the Web service is already present. If the Web service is not present, the environment downloads and adds the Web service to a folder and any additional files (such as .wsdl files) to the child nodes of the folder.  
+3.  Call the <xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult.AddWebReference%2A> method. Pass in the automation object for the Web service references folder as the `pUnkWebReferenceFolder` parameter. The Visual Studio environment then checks if the Web service is already present. If the Web service is not present, the environment downloads and adds the Web service to a folder and any additional files (such as .wsdl files) to the child nodes of the folder.  
   
 ## See Also  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2>   

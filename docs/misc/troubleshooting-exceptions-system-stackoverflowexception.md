@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.StackOverflowException"
+title: "Troubleshooting Exceptions: System.StackOverflowException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -52,4 +52,4 @@ A <xref:System.StackOverflowException> exception is thrown when the execution st
 ## See Also  
  <xref:System.StackOverflowException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Loop Structures](../Topic/Loop%20Structures%20\(Visual%20Basic\).md)
+ [Loop Structures](/dotnet/visual-basic/programming-guide/language-features/control-flow/loop-structures)

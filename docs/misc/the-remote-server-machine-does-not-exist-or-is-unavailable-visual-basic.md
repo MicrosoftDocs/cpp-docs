@@ -1,5 +1,5 @@
 ---
-title: "The remote server machine does not exist or is unavailable (Visual Basic)"
+title: "The remote server machine does not exist or is unavailable (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,4 +40,4 @@ You are trying to connect to a remote server that is unavailable or does not exi
 -   Reconnect to the network and try again.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

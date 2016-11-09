@@ -1,5 +1,5 @@
 ---
-title: "Option &lt;optionname&gt; requires &lt;argument&gt;"
+title: "Option &lt;optionname&gt; requires &lt;argument&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ A required argument has been omitted.
 -   Supply the missing argument.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

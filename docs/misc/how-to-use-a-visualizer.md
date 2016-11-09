@@ -1,7 +1,7 @@
 ---
-title: "How to: Use a Visualizer"
+title: "How to: Use a Visualizer | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -73,7 +73,7 @@ You can use a visualizer to display the contents of a variable or object in a wa
      `My Documents\Visual Studio 2010\Visualizers` *Visual Studio Version* `\Visualizers`  
   
 ## See Also  
- [Create Custom Visualizers](../Topic/Create%20Custom%20Visualizers%20of%20Data.md)   
+ [Create Custom Visualizers](/visual-studio/debugger/create-custom-visualizers-of-data)   
  [How to: Install a Visualizer](../Topic/How%20to:%20Install%20a%20Visualizer.md)   
  [How to: Write a Visualizer](../Topic/How%20to:%20Write%20a%20Visualizer.md)   
- [View data values in Data Tips](../Topic/View%20data%20values%20in%20Data%20Tips%20%20in%20the%20code%20editor.md)
+ [View data values in Data Tips](/visual-studio/debugger/view-data-values-in-data-tips-in-the-code-editor)

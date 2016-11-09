@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 3) CS1718"
+title: "Compiler Warning (level 3) CS1718 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1718"
 ms.assetid: 7c1c11fd-4f91-482d-b8f7-efe2a361634e
 caps.latest.revision: 11
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

@@ -1,7 +1,7 @@
 ---
-title: "Editing a String in a Version Information Resource"
+title: "Editing a String in a Version Information Resource | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,7 +40,7 @@ translation.priority.mt:
 # Editing a String in a Version Information Resource
 ### To edit a string in a version information resource  
   
-1.  Click the item once to select it, then again to begin editing it. Make the changes directly in the Version Information table or in the [Properties window](../Topic/Properties%20Window.md). The changes you make will be reflected in both places.  
+1.  Click the item once to select it, then again to begin editing it. Make the changes directly in the Version Information table or in the [Properties window](/visual-studio/ide/reference/properties-window). The changes you make will be reflected in both places.  
   
      **Note** When editing the **FILEFLAGS** key in the Version Information editor, you'll notice you cannot set the **Debug**, **Private Build**, or **Special Build** properties (in the Properties window) for .rc files:  
   

@@ -1,5 +1,5 @@
 ---
-title: "Information for the type of &#39;&lt;typename&gt;&#39; has not been loaded into the runtime"
+title: "Information for the type of &#39;&lt;typename&gt;&#39; has not been loaded into the runtime | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,4 +49,4 @@ A type was referenced that has not been loaded by the runtime.
 3.  Try accessing one of the members declared in the module. In some cases, the debugging environment cannot locate members because the modules where they are declared are not loaded.  
   
 ## See Also  
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)

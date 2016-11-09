@@ -1,7 +1,7 @@
 ---
-title: "CDefaultCharTraits Class"
+title: "CDefaultCharTraits Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CDefaultCharTraits class"
 ms.assetid: f94a3934-597f-401d-8513-ed6924ae069a
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -58,8 +58,8 @@ template <typename T>  class CDefaultCharTraits
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDefaultCharTraits::CharToLower](../Topic/CDefaultCharTraits::CharToLower.md)|(Static) Call this function to convert a character to uppercase.|  
-|[CDefaultCharTraits::CharToUpper](../Topic/CDefaultCharTraits::CharToUpper.md)|(Static) Call this function to convert a character to lowercase.|  
+|[CDefaultCharTraits::CharToLower](#cdefaultchartraits__chartolower)|(Static) Call this function to convert a character to uppercase.|  
+|[CDefaultCharTraits::CharToUpper](#cdefaultchartraits__chartoupper)|(Static) Call this function to convert a character to lowercase.|  
   
 ## Remarks  
  This class provides functions that are utilized by the class [CStringElementTraitsI](../../atl/reference/cstringelementtraitsi-class.md).  
@@ -98,10 +98,3 @@ static wchar_t CharToUpper(wchar_t x);
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

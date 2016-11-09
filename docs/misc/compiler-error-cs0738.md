@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0738"
+title: "Compiler Error CS0738 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0738"
 ms.assetid: 01ce94ee-2435-4326-befc-2b020c441a4f
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -63,4 +64,4 @@ public class Test: ITest
 ```  
   
 ## See Also  
- [Interfaces](../Topic/Interfaces%20\(C%23%20Programming%20Guide\).md)
+ [Interfaces](/dotnet/csharp/programming-guide/interfaces/index)

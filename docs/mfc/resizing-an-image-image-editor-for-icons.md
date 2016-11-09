@@ -1,7 +1,7 @@
 ---
-title: "Resizing an Image (Image Editor for Icons)"
+title: "Resizing an Image (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -46,7 +46,7 @@ The behavior of the Image editor while resizing an image depends on whether you'
   
  When the selection includes the entire image, the Image editor either shrinks and stretches the image, or crops and extends it.  
   
- There are two mechanisms for resizing an image: the sizing handles and the [Properties window](../Topic/Properties%20Window.md). You can drag the sizing handles to change the size of all or part of an image. Sizing handles that you can drag are solid. You cannot drag handles that are hollow. You can use the Properties window to resize the entire image only, not a selected part.  
+ There are two mechanisms for resizing an image: the sizing handles and the [Properties window](/visual-studio/ide/reference/properties-window). You can drag the sizing handles to change the size of all or part of an image. Sizing handles that you can drag are solid. You cannot drag handles that are hollow. You can use the Properties window to resize the entire image only, not a selected part.  
   
  ![Sizing handles on a bitmap](../mfc/media/vcimageeditorsizinghandles.gif "vcImageEditorSizingHandles")  
 Sizing Handles  

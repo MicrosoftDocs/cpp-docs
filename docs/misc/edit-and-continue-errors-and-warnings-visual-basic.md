@@ -1,7 +1,7 @@
 ---
-title: "Edit and Continue Errors and Warnings (Visual Basic)"
+title: "Edit and Continue Errors and Warnings (Visual Basic) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -142,7 +142,7 @@ translation.priority.mt:
 # Edit and Continue Errors and Warnings (Visual Basic)
 [!INCLUDE[vb_current_short](../misc/includes/vb_current_short_md.md)] Edit and Continue lets you stop program execution in Break mode, make changes to the executing code, and then resume program execution with the newly incorporated changes.  
   
- Declarative code edits that affect the public structure of a class are generally prohibited, and some edits that you might make to a method, property body, or private declarations within a class are not allowed. Whenever possible, Edit and Continue marks code that cannot be edited as light gray and displays an error message. For more information about unsupported edits in Edit and Continue for [!INCLUDE[vb_current_short](../misc/includes/vb_current_short_md.md)], see [Unsupported Edits in Visual Basic Edit and Continue](../Topic/Unsupported%20Edits%20in%20Visual%20Basic%20Edit%20and%20Continue.md).  
+ Declarative code edits that affect the public structure of a class are generally prohibited, and some edits that you might make to a method, property body, or private declarations within a class are not allowed. Whenever possible, Edit and Continue marks code that cannot be edited as light gray and displays an error message. For more information about unsupported edits in Edit and Continue for [!INCLUDE[vb_current_short](../misc/includes/vb_current_short_md.md)], see [Unsupported Edits in Visual Basic Edit and Continue](/visual-studio/debugger/unsupported-edits-in-visual-basic-edit-and-continue).  
   
  **To correct an Edit and Continue error**  
   
@@ -155,4 +155,4 @@ translation.priority.mt:
  If you need more information about a specific error or warning, you can search or post on the MSDN [Visual Basic IDE forum](http://go.microsoft.com/fwlink/?LinkId=214679).  
   
 ## See Also  
- [Edit and Continue (Visual Basic)](../Topic/Edit%20and%20Continue%20\(Visual%20Basic\).md)
+ [Edit and Continue (Visual Basic)](/visual-studio/debugger/edit-and-continue-visual-basic)

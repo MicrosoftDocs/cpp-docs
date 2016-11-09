@@ -1,7 +1,7 @@
 ---
-title: "Walkthrough: Displaying SmartTags"
+title: "Walkthrough: Displaying SmartTags | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -35,7 +35,7 @@ Smart tags are deprecated in favor of light bulbs. See [Walkthrough: Displaying 
   
  Smart tags are tags on text that expand to display a set of actions. For example, in a Visual Basic or Visual C# project, a red line appears under a word when you rename an identifier such as a variable name. When you move the pointer over the underline, a button is displayed near the pointer. If you click the button, a suggested action is displayed, for example, **Rename IsRead to IsReady**. If you click the action, all references to **IsRead** in the project are renamed **IsReady**.  
   
- Although smart tags are part of the IntelliSense implementation in the editor, you can implement smart tags by subclassing <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>, and then implementing the <xref:Microsoft.VisualStudio.Text.Tagging.ITagger`1> interface and the <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> interface.  
+ Although smart tags are part of the IntelliSense implementation in the editor, you can implement smart tags by subclassing <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>, and then implementing the <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> interface and the <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> interface.  
   
 > [!NOTE]
 >  Other kinds of tags can be implemented in a similar manner.  
@@ -43,7 +43,7 @@ Smart tags are deprecated in favor of light bulbs. See [Walkthrough: Displaying 
  The following walkthrough shows how to create a smart tag that appears on the current word and has two suggested actions: **Convert to upper case** and **Convert to lower case**.  
   
 ## Prerequisites  
- To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](../Topic/Visual%20Studio%20SDK.md).  
+ To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](/visual-studio/extensibility/visual-studio-sdk).  
   
 ## Creating a Managed Extensibility Framework (MEF) Project  
   
@@ -84,7 +84,7 @@ Smart tags are deprecated in favor of light bulbs. See [Walkthrough: Displaying 
      [!code-cs[VSSDKSmartTagTest#3](../misc/codesnippet/CSharp/walkthrough-displaying-smarttags_3.cs)]
      [!code-vb[VSSDKSmartTagTest#3](../misc/codesnippet/VisualBasic/walkthrough-displaying-smarttags_3.vb)]  
   
-5.  Add a class named `TestSmartTagger` that inherits from <xref:Microsoft.VisualStudio.Text.Tagging.ITagger`1> of type `TestSmartTag`, and implements <xref:System.IDisposable>.  
+5.  Add a class named `TestSmartTagger` that inherits from <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> of type `TestSmartTag`, and implements <xref:System.IDisposable>.  
   
      [!code-cs[VSSDKSmartTagTest#4](../misc/codesnippet/CSharp/walkthrough-displaying-smarttags_4.cs)]
      [!code-vb[VSSDKSmartTagTest#4](../misc/codesnippet/VisualBasic/walkthrough-displaying-smarttags_4.vb)]  
@@ -99,7 +99,7 @@ Smart tags are deprecated in favor of light bulbs. See [Walkthrough: Displaying 
      [!code-cs[VSSDKSmartTagTest#6](../misc/codesnippet/CSharp/walkthrough-displaying-smarttags_6.cs)]
      [!code-vb[VSSDKSmartTagTest#6](../misc/codesnippet/VisualBasic/walkthrough-displaying-smarttags_6.vb)]  
   
-8.  Implement <xref:Microsoft.VisualStudio.Text.Tagging.ITagger`1.GetTags*> so that the tag is created for the current word. (This method also calls a private method `GetSmartTagActions` that is explained later.)  
+8.  Implement <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> so that the tag is created for the current word. (This method also calls a private method `GetSmartTagActions` that is explained later.)  
   
      [!code-cs[VSSDKSmartTagTest#7](../misc/codesnippet/CSharp/walkthrough-displaying-smarttags_7.cs)]
      [!code-vb[VSSDKSmartTagTest#7](../misc/codesnippet/VisualBasic/walkthrough-displaying-smarttags_7.vb)]  
@@ -114,12 +114,12 @@ Smart tags are deprecated in favor of light bulbs. See [Walkthrough: Displaying 
      [!code-cs[VSSDKSmartTagTest#9](../misc/codesnippet/CSharp/walkthrough-displaying-smarttags_9.cs)]
      [!code-vb[VSSDKSmartTagTest#9](../misc/codesnippet/VisualBasic/walkthrough-displaying-smarttags_9.vb)]  
   
-11. Implement the `OnLayoutChanged` event handler to raise the `TagsChanged` event, which causes <xref:Microsoft.VisualStudio.Text.Tagging.ITagger`1.GetTags*> to be called.  
+11. Implement the `OnLayoutChanged` event handler to raise the `TagsChanged` event, which causes <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> to be called.  
   
      [!code-cs[VSSDKSmartTagTest#10](../misc/codesnippet/CSharp/walkthrough-displaying-smarttags_10.cs)]
      [!code-vb[VSSDKSmartTagTest#10](../misc/codesnippet/VisualBasic/walkthrough-displaying-smarttags_10.vb)]  
   
-12. Implement the <xref:System.IDisposable.Dispose*> method so that it unsubscribes from the <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> event.  
+12. Implement the <xref:System.IDisposable.Dispose%2A> method so that it unsubscribes from the <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> event.  
   
      [!code-cs[VSSDKSmartTagTest#11](../misc/codesnippet/CSharp/walkthrough-displaying-smarttags_11.cs)]
      [!code-vb[VSSDKSmartTagTest#11](../misc/codesnippet/VisualBasic/walkthrough-displaying-smarttags_11.vb)]  
@@ -138,7 +138,7 @@ Smart tags are deprecated in favor of light bulbs. See [Walkthrough: Displaying 
      [!code-cs[VSSDKSmartTagTest#13](../misc/codesnippet/CSharp/walkthrough-displaying-smarttags_13.cs)]
      [!code-vb[VSSDKSmartTagTest#13](../misc/codesnippet/VisualBasic/walkthrough-displaying-smarttags_13.vb)]  
   
-3.  Implement the <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger*> method.  
+3.  Implement the <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> method.  
   
      [!code-cs[VSSDKSmartTagTest#14](../misc/codesnippet/CSharp/walkthrough-displaying-smarttags_14.cs)]
      [!code-vb[VSSDKSmartTagTest#14](../misc/codesnippet/VisualBasic/walkthrough-displaying-smarttags_14.vb)]  
@@ -155,7 +155,7 @@ Smart tags are deprecated in favor of light bulbs. See [Walkthrough: Displaying 
      [!code-cs[VSSDKSmartTagTest#16](../misc/codesnippet/CSharp/walkthrough-displaying-smarttags_16.cs)]
      [!code-vb[VSSDKSmartTagTest#16](../misc/codesnippet/VisualBasic/walkthrough-displaying-smarttags_16.vb)]  
   
- Both classes are alike except that one calls <xref:System.String.ToUpper*> and the other calls <xref:System.String.ToLower*>. The following steps cover only the uppercase action class, but you must implement both classes. Use the steps for implementing the uppercase action as a pattern for implementing the lowercase action.  
+ Both classes are alike except that one calls <xref:System.String.ToUpper%2A> and the other calls <xref:System.String.ToLower%2A>. The following steps cover only the uppercase action class, but you must implement both classes. Use the steps for implementing the uppercase action as a pattern for implementing the lowercase action.  
   
 1.  Declare a set of private fields.  
   
@@ -172,7 +172,7 @@ Smart tags are deprecated in favor of light bulbs. See [Walkthrough: Displaying 
      [!code-cs[VSSDKSmartTagTest#19](../misc/codesnippet/CSharp/walkthrough-displaying-smarttags_19.cs)]
      [!code-vb[VSSDKSmartTagTest#19](../misc/codesnippet/VisualBasic/walkthrough-displaying-smarttags_19.vb)]  
   
-4.  Implement the <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction.Invoke*> method by replacing the text in the span with its uppercase equivalent.  
+4.  Implement the <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction.Invoke%2A> method by replacing the text in the span with its uppercase equivalent.  
   
      [!code-cs[VSSDKSmartTagTest#20](../misc/codesnippet/CSharp/walkthrough-displaying-smarttags_20.cs)]
      [!code-vb[VSSDKSmartTagTest#20](../misc/codesnippet/VisualBasic/walkthrough-displaying-smarttags_20.vb)]  

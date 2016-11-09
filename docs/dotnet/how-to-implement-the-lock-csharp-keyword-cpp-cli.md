@@ -1,7 +1,7 @@
 ---
-title: "How to: Implement the lock C# Keyword (C++-CLI)"
+title: "How to: Implement the lock C# Keyword (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Implement the lock C# Keyword (C++/CLI)
-This topic shows how to implement the C# `lock` keyword in Visual C++. For more information, see [lock Statement](../Topic/lock%20Statement%20\(C%23%20Reference\).md).  
+This topic shows how to implement the C# `lock` keyword in Visual C++. For more information, see [lock Statement](/dotnet/csharp/language-reference/keywords/lock-statement).  
   
  You can also use the `lock` class in the C++ Support Library. See [Synchronization (lock Class)](../dotnet/synchronization-lock-class.md) for more information.  
   

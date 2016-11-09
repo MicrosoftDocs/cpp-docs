@@ -1,5 +1,5 @@
 ---
-title: "Omitted argument cannot match a ParamArray parameter"
+title: "Omitted argument cannot match a ParamArray parameter | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You have omitted an argument required to match a `ParamArray` parameter. `ParamA
 -   Supply the omitted argument.  
   
 ## See Also  
- [ParamArray](../Topic/ParamArray%20\(Visual%20Basic\).md)
+ [ParamArray](/dotnet/visual-basic/language-reference/modifiers/paramarray)

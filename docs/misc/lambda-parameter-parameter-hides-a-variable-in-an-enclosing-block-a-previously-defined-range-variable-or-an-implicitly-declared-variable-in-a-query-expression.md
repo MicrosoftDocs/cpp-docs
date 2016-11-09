@@ -1,5 +1,5 @@
 ---
-title: "Lambda parameter &#39;&lt;parameter&gt;&#39; hides a variable in an enclosing block, a previously defined range variable, or an implicitly declared variable in a query expression."
+title: "Lambda parameter &#39;&lt;parameter&gt;&#39; hides a variable in an enclosing block, a previously defined range variable, or an implicitly declared variable in a query expression. | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ A variable in a lambda expression has the same name as a variable previously def
 -   Ensure that all variables in your lambda expression have unique names that do not duplicate existing variable names in the same scope.  
   
 ## See Also  
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md)   
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [LINQ](../Topic/LINQ%20in%20Visual%20Basic.md)
+ [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)   
+ [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)

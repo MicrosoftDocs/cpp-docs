@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0074"
+title: "Compiler Error CS0074 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0074"
 ms.assetid: 9395c532-3934-4553-8e41-042bfe3399ce
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0074
 'event': abstract event cannot have initializer  
   
- If an [event](../Topic/event%20\(C%23%20Reference\).md) is marked as **abstract**, it cannot be initialized. For more information, see [Events](../Topic/Events%20\(C%23%20Programming%20Guide\).md).  
+ If an [event](/dotnet/csharp/language-reference/keywords/event) is marked as **abstract**, it cannot be initialized. For more information, see [Events](/dotnet/csharp/programming-guide/events/index).  
   
  The following sample generates CS0074:  
   

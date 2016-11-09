@@ -1,5 +1,5 @@
 ---
-title: "&#39;Option Explicit&#39; can be followed only by &#39;On&#39; or &#39;Off&#39;"
+title: "&#39;Option Explicit&#39; can be followed only by &#39;On&#39; or &#39;Off&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ translation.priority.mt:
 -   Specify either `Option Explicit On` or `Option Explicit Off`.  
   
 ## See Also  
- [Option Explicit Statement](../Topic/Option%20Explicit%20Statement%20\(Visual%20Basic\).md)
+ [Option Explicit Statement](/dotnet/visual-basic/language-reference/statements/option-explicit-statement)

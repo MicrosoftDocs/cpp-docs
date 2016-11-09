@@ -1,5 +1,5 @@
 ---
-title: "Application-defined or object-defined error"
+title: "Application-defined or object-defined error | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,4 +40,4 @@ An application-defined or user-defined error occurred. Check the error.
 -   Consult the error to see where it is defined and how to address it.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

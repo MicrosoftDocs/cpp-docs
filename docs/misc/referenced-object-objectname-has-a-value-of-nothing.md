@@ -1,5 +1,5 @@
 ---
-title: "Referenced object &#39;&lt;objectname&gt;&#39; has a value of &#39;Nothing&#39;"
+title: "Referenced object &#39;&lt;objectname&gt;&#39; has a value of &#39;Nothing&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ The object being referenced has not been set, or has been set to the value `Noth
 -   Verify that the name of object is spelled correctly, and that the object has been set.  
   
 ## See Also  
- [Nothing](../Topic/Nothing%20\(Visual%20Basic\).md)   
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Nothing](/dotnet/visual-basic/language-reference/nothing)   
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)

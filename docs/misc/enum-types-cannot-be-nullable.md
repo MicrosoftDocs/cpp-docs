@@ -1,5 +1,5 @@
 ---
-title: "Enum types cannot be nullable"
+title: "Enum types cannot be nullable | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -52,5 +52,5 @@ The underlying type that is used to declare an enumeration cannot be nullable. F
 -   Do not use a nullable underlying type in an `Enum` declaration.  
   
 ## See Also  
- [Nullable Value Types](../Topic/Nullable%20Value%20Types%20\(Visual%20Basic\).md)   
- [Enum Statement](../Topic/Enum%20Statement%20\(Visual%20Basic\).md)
+ [Nullable Value Types](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)   
+ [Enum Statement](/dotnet/visual-basic/language-reference/statements/enum-statement)

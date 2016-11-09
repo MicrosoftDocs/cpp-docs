@@ -1,7 +1,7 @@
 ---
-title: "_get_terminate"
+title: "_get_terminate | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

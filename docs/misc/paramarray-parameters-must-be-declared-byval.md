@@ -1,5 +1,5 @@
 ---
-title: "ParamArray parameters must be declared &#39;ByVal&#39;"
+title: "ParamArray parameters must be declared &#39;ByVal&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ translation.priority.mt:
 -   Declare `ParamArray` parameters using the `ByVal` modifier.  
   
 ## See Also  
- [ParamArray](../Topic/ParamArray%20\(Visual%20Basic\).md)   
- [ByRef](../Topic/ByRef%20\(Visual%20Basic\).md)   
- [ByVal](../Topic/ByVal%20\(Visual%20Basic\).md)
+ [ParamArray](/dotnet/visual-basic/language-reference/modifiers/paramarray)   
+ [ByRef](/dotnet/visual-basic/language-reference/modifiers/byref)   
+ [ByVal](/dotnet/visual-basic/language-reference/modifiers/byval)

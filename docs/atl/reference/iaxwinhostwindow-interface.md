@@ -1,7 +1,7 @@
 ---
-title: "IAxWinHostWindow Interface"
+title: "IAxWinHostWindow Interface | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords: 
   - "IAxWinHostWindow interface"
 ms.assetid: 9821c035-cd52-4c46-b58a-9278064f09b4
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -213,6 +213,8 @@ STDMETHOD(SetExternalUIHandler)(IDocHostUIHandlerDispatch* pDisp);
  [IAxWinAmbientDispatch Interface](../../atl/reference/iaxwinambientdispatch-interface.md)   
  [CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#caxwindow__queryhost)   
  [AtlAxGetHost](../Topic/AtlAxGetHost.md)
+
+
 
 
 

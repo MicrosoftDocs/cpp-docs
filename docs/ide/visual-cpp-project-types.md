@@ -1,7 +1,7 @@
 ---
-title: "Visual C++ Project Types"
+title: "Visual C++ Project Types | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -75,7 +75,7 @@ You can use a project template to create the basic program structure, menus, too
   
 |Project template|How to create a project|  
 |----------------------|-----------------------------|  
-|Empty Project|[Creating Solutions and Projects](../Topic/Creating%20Solutions%20and%20Projects.md)|  
+|Empty Project|[Creating Solutions and Projects](/visual-studio/ide/creating-solutions-and-projects)|  
 |Custom Wizard|[Creating a Custom Wizard](../ide/creating-a-custom-wizard.md)|  
 |Makefile Project|[Creating a Makefile Project](../ide/creating-a-makefile-project.md)|  
   
@@ -91,7 +91,7 @@ You can use a project template to create the basic program structure, menus, too
   
 |Project template|How to create a project|  
 |----------------------|-----------------------------|  
-|Managed Test Project|[Create a unit test project](../Topic/Create%20a%20unit%20test%20project.md)|  
+|Managed Test Project|[Create a unit test project](/visual-studio/test/create-a-unit-test-project)|  
 |Native Unit Test Project|[Unit testing native code with Test Explorer](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)|  
   
 ### Win32  

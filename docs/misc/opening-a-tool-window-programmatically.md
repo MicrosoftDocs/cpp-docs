@@ -1,7 +1,7 @@
 ---
-title: "Opening a Tool Window Programmatically"
+title: "Opening a Tool Window Programmatically | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -33,13 +33,13 @@ translation.priority.mt:
 # Opening a Tool Window Programmatically
 Tool windows are typically opened by clicking a command on a menu, or by pressing an equivalent keyboard shortcut. However, you might have to open a tool window programmatically, like the command handler does.  
   
- To open a tool window in the managed VSPackage that provides it, use <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow*>. To open a tool window in another VSPackage, use <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.FindToolWindow*>. In either case, the tool window is created as required.  
+ To open a tool window in the managed VSPackage that provides it, use <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A>. To open a tool window in another VSPackage, use <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.FindToolWindow%2A>. In either case, the tool window is created as required.  
   
  The following code is taken from the C# Reference.ToolWindow sample.  
   
 ### To open a tool window programmatically  
   
-1.  Create the tool window pane, frame, and the VSPackage that implements them. For more information, see [Adding a Tool Window](../Topic/Adding%20a%20Tool%20Window.md).  
+1.  Create the tool window pane, frame, and the VSPackage that implements them. For more information, see [Adding a Tool Window](/visual-studio/extensibility/adding-a-tool-window).  
   
 2.  Add the <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> to the VSPackage that provides it.  
   
@@ -53,9 +53,9 @@ Tool windows are typically opened by clicking a command on a menu, or by pressin
     {  
     ```  
   
-     This registers the tool window PersistedWindowPane to be opened as docked to **Solution Explorer**. For more information, see [Registering a Tool Window](../Topic/Registering%20a%20Tool%20Window.md).  
+     This registers the tool window PersistedWindowPane to be opened as docked to **Solution Explorer**. For more information, see [Registering a Tool Window](/visual-studio/extensibility/registering-a-tool-window).  
   
-3.  Use <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow*> to find the tool window pane or to create it if it does not already exist.  
+3.  Use <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> to find the tool window pane or to create it if it does not already exist.  
   
     ```vb#  
     ' Get the 1 (index 0) and only instance of our tool window.   

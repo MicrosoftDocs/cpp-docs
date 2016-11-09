@@ -1,7 +1,7 @@
 ---
-title: "quick_exit1"
+title: "quick_exit1 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

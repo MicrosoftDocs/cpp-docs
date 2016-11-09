@@ -1,5 +1,5 @@
 ---
-title: "&#39;Widening&#39; and &#39;Narrowing&#39; cannot be combined"
+title: "&#39;Widening&#39; and &#39;Narrowing&#39; cannot be combined | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # &#39;Widening&#39; and &#39;Narrowing&#39; cannot be combined
-An [Operator Statement](../Topic/Operator%20Statement.md) specifies both [Widening](../Topic/Widening%20\(Visual%20Basic\).md) and [Narrowing](../Topic/Narrowing%20\(Visual%20Basic\).md).  
+An [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement) specifies both [Widening](/dotnet/visual-basic/language-reference/modifiers/widening) and [Narrowing](/dotnet/visual-basic/language-reference/modifiers/narrowing).  
   
  When you define a conversion operator, you must declare it as either `Widening` or `Narrowing`. These are mutually exclusive characteristics, so you cannot specify both.  
   
@@ -47,7 +47,7 @@ An [Operator Statement](../Topic/Operator%20Statement.md) specifies both [Wideni
 -   Remove either the `Widening` or the `Narrowing` keyword from the `Operator` statement. You must specify one or the other.  
   
 ## See Also  
- [Operator Procedures](../Topic/Operator%20Procedures%20\(Visual%20Basic\).md)   
- [Operator Statement](../Topic/Operator%20Statement.md)   
+ [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
+ [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)   
  [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
  [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)

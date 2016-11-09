@@ -1,7 +1,7 @@
 ---
-title: "abort"
+title: "abort | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -90,7 +90,7 @@ void abort( void );
   
  If the Windows error reporting handler is not invoked, then `abort` calls [_exit](../../c-runtime-library/reference/exit-exit-exit.md) to terminate the process with exit code 3 and returns control to the parent process or the operating system. `_exit` does not flush stream buffers or do `atexit`/`_onexit` processing.  
   
- For more information about CRT debugging, see [CRT Debugging Techniques](../Topic/CRT%20Debugging%20Techniques.md).  
+ For more information about CRT debugging, see [CRT Debugging Techniques](/visual-studio/debugger/crt-debugging-techniques).  
   
  **End Microsoft Specific**  
   

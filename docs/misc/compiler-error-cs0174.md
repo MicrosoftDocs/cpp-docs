@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0174"
+title: "Compiler Error CS0174 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0174"
 ms.assetid: c34c0fa4-d720-4dc5-b723-014203bab8f7
 caps.latest.revision: 9
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

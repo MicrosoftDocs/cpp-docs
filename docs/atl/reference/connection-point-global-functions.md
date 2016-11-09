@@ -1,7 +1,7 @@
 ---
-title: "Connection Point Global Functions"
+title: "Connection Point Global Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -14,7 +14,7 @@ dev_langs:
 helpviewer_keywords: 
   - "connection points [C++], global functions"
 ms.assetid: bcb4bf50-2155-4e20-b8bb-f2908b03a6e7
-caps.latest.revision: 18
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -41,9 +41,9 @@ These functions provide support for connection points and sink maps.
   
 |||  
 |-|-|  
-|[AtlAdvise](../Topic/AtlAdvise.md)|Creates a connection between an object's connection point and a client's sink.|  
-|[AtlUnadvise](../Topic/AtlUnadvise.md)|Terminates the connection established through `AtlAdvise`.|  
-|[AtlAdviseSinkMap](../Topic/AtlAdviseSinkMap.md)|Advises or unadvises entries in an event sink map.|  
+|[AtlAdvise](#atladvise)|Creates a connection between an object's connection point and a client's sink.|  
+|[AtlUnadvise](#atlunadvise)|Terminates the connection established through `AtlAdvise`.|  
+|[AtlAdviseSinkMap](#atladvisesinkmap)|Advises or unadvises entries in an event sink map.|  
   
 ##  <a name="atladvise"></a>  AtlAdvise  
  Creates a connection between an object's connection point and a client's sink.  
@@ -76,13 +76,13 @@ HRESULT     AtlAdvise(
  A standard HRESULT value.  
   
 ### Remarks  
- The sink implements the outgoing interface supported by the connection point. The client uses the `pdw` cookie to remove the connection by passing it to [AtlUnadvise](../Topic/AtlUnadvise.md).  
+ The sink implements the outgoing interface supported by the connection point. The client uses the `pdw` cookie to remove the connection by passing it to [AtlUnadvise](#atlunadvise).  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#91](../../atl/codesnippet/CPP/connection-point-global-functions_1.cpp)]  
   
 ##  <a name="atlunadvise"></a>  AtlUnadvise  
- Terminates the connection established through [AtlAdvise](../Topic/AtlAdvise.md).  
+ Terminates the connection established through [AtlAdvise](#atladvise).  
   
 > [!IMPORTANT]
 >  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
@@ -137,8 +137,3 @@ HRESULT AtlAdviseSinkMap(
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)   
  [Connection Point Macros](../../atl/reference/connection-point-macros.md)
-
-
-
-
-

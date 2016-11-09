@@ -1,5 +1,5 @@
 ---
-title: "&#39;Shared&#39; attribute property &#39;&lt;propertyfield&gt;&#39; cannot be the target of an assignment"
+title: "&#39;Shared&#39; attribute property &#39;&lt;propertyfield&gt;&#39; cannot be the target of an assignment | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ An attempt was made to assign a value to a `ReadOnly` or `Shared` property in an
 2.  If using properties you developed, remove the `ReadOnly` or `Shared` modifiers from the attribute property.  
   
 ## See Also  
- [Shared](../Topic/Shared%20\(Visual%20Basic\).md)   
+ [Shared](/dotnet/visual-basic/language-reference/modifiers/shared)   
  [NOT IN BUILD: Attributes in Visual Basic](http://msdn.microsoft.com/en-us/620bfc0e-4582-4c8b-8432-ebc5c3dccc22)

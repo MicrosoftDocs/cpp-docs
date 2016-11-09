@@ -1,7 +1,7 @@
 ---
-title: "Fatal Error C1201"
+title: "Fatal Error C1201 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,4 +41,4 @@ unable to continue after syntax error in class template definition
   
  An unexpected error occurred while parsing a class template definition.  
   
- Fix any other errors and recompile. If that fails, note the circumstances of the error, try to isolate the problem and create a reproducible test case, then contact [Microsoft Product Support Services](../Topic/Talk%20to%20Us.md).
+ Fix any other errors and recompile. If that fails, note the circumstances of the error, try to isolate the problem and create a reproducible test case, then contact [Microsoft Product Support Services](/visual-studio/ide/talk-to-us).

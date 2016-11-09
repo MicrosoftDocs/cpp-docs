@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0734"
+title: "Compiler Error CS0734 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0734"
 ms.assetid: 9e1b0e49-bfc3-400c-9fd1-37e3c827e656
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0734
 The /moduleassemblyname option may only be specified when building a target type of 'module'  
   
- The compiler option **/moduleassemblyname** should only be used when building a .netmodule. See [/moduleassemblyname (C# Compiler Option)](../Topic/-moduleassemblyname%20\(C%23%20Compiler%20Option\).md) for more information.  
+ The compiler option **/moduleassemblyname** should only be used when building a .netmodule. See [/moduleassemblyname (C# Compiler Option)](/dotnet/csharp/language-reference/compiler-options/moduleassemblyname-compiler-option) for more information.  
   
  For more information on building a .netmodule, see [/target:module (C# Compiler Options)](../Topic/-target:module%20\(C%23%20Compiler%20Options\).md).  
   

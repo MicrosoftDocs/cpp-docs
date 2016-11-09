@@ -1,7 +1,7 @@
 ---
-title: "-homeparams (Copy Register Parameters to Stack)"
+title: "-homeparams (Copy Register Parameters to Stack) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -66,7 +66,7 @@ Forces parameters passed in registers to be written to their locations on the st
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
   
 ## See Also  
  [Compiler Options](../../build/reference/compiler-options.md)   

@@ -1,7 +1,7 @@
 ---
-title: "Project Build Error PRJ0048"
+title: "Project Build Error PRJ0048 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

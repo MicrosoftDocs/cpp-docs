@@ -1,7 +1,7 @@
 ---
-title: "Announcing Property Window Selection Tracking"
+title: "Announcing Property Window Selection Tracking | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -47,12 +47,12 @@ If you want to work with the **Properties** window or the **Property** pages, fo
   
          This returns a pointer to <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.  
   
-2.  Call the <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange*> method every time your selection changes, and pass a pointer to an object that implements <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.  
+2.  Call the <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> method every time your selection changes, and pass a pointer to an object that implements <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.  
   
-     The selection container object can use either single or multiple selections and contains the selection information in an `IDispatch` object. Calling the <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange*> method notifies the **Properties** window that the selection has changed. The **Properties** window then uses the objects on <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> to determine whether single or multiple selections have occurred, and what the actual object selections are.  
+     The selection container object can use either single or multiple selections and contains the selection information in an `IDispatch` object. Calling the <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> method notifies the **Properties** window that the selection has changed. The **Properties** window then uses the objects on <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> to determine whether single or multiple selections have occurred, and what the actual object selections are.  
   
      If you specify a multiple selection, then the **Properties** window finds the intersection between common properties for the objects. If you specify a single object selection, then the **Properties** window displays all of the properties for the one object.  
   
 ## See Also  
- [Extending Properties](../Topic/Extending%20Properties.md)   
- [Property Pages](../Topic/Property%20Pages.md)
+ [Extending Properties](/visual-studio/extensibility/internals/extending-properties)   
+ [Property Pages](/visual-studio/extensibility/internals/property-pages)

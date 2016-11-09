@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB1025"
+title: "MSBuild Error MSB1025 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/18/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -45,5 +45,5 @@ translation.priority.ht:
 2.  Contact Microsoft Product Support Services and report the error.  
   
 ## See Also  
-[MSBuild](MSBuild1.md)
- [Talk to Us](../Topic/Talk%20to%20Us.md)
+[MSBuild](/visual-studio/msbuild/msbuild1)
+ [Talk to Us](/visual-studio/ide/talk-to-us)

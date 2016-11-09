@@ -1,5 +1,5 @@
 ---
-title: "The targeted version of the .NET Compact Framework does not support latebinding"
+title: "The targeted version of the .NET Compact Framework does not support latebinding | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -50,4 +50,4 @@ The version of the .NET Compact Framework you are working with does not support 
   
 ## See Also  
  [NotInBuild:Objects in Visual Basic](http://msdn.microsoft.com/en-us/85bd757a-a19e-45e1-af89-d68765f5ee3c)   
- [Special Characters in Code](../Topic/Special%20Characters%20in%20Code%20\(Visual%20Basic\).md)
+ [Special Characters in Code](/dotnet/visual-basic/programming-guide/program-structure/special-characters-in-code)

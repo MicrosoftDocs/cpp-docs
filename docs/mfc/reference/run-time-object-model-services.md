@@ -1,7 +1,7 @@
 ---
-title: "Run-Time Object Model Services"
+title: "Run-Time Object Model Services | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords: 
   - "run-time object model services macros"
 ms.assetid: 4a3e79df-2ee3-43a4-8193-20298828de85
-caps.latest.revision: 14
+caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -74,8 +74,7 @@ The classes [CObject](../../mfc/reference/cobject-class.md) and [CRuntimeClass](
 ##  <a name="declare_dynamic"></a>  DECLARE_DYNAMIC  
  Adds the ability to access run-time information about an object's class when deriving a class from `CObject`.  
   
-```  
- 
+```
 DECLARE_DYNAMIC(class_name)  
  
 ```  
@@ -99,8 +98,7 @@ DECLARE_DYNAMIC(class_name)
 ##  <a name="declare_dyncreate"></a>  DECLARE_DYNCREATE  
  Enables objects of `CObject`-derived classes to be created dynamically at run time.  
   
-```  
- 
+```
 DECLARE_DYNCREATE(class_name)  
  
 ```  
@@ -127,8 +125,7 @@ DECLARE_DYNCREATE(class_name)
 ##  <a name="declare_serial"></a>  DECLARE_SERIAL  
  Generates the C++ header code necessary for a `CObject`-derived class that can be serialized.  
   
-```  
- 
+```
 DECLARE_SERIAL(class_name)  
  
 ```  
@@ -158,10 +155,8 @@ DECLARE_SERIAL(class_name)
 ##  <a name="implement_dynamic"></a>  IMPLEMENT_DYNAMIC  
  Generates the C++ code necessary for a dynamic `CObject`-derived class with run-time access to the class name and position within the hierarchy.  
   
-```  
- 
-IMPLEMENT_DYNAMIC(
-class_name  ,   base_class_name)  
+```
+IMPLEMENT_DYNAMIC(class_name,    base_class_name)  
  
 ```  
   
@@ -185,10 +180,8 @@ class_name  ,   base_class_name)
 ##  <a name="implement_dyncreate"></a>  IMPLEMENT_DYNCREATE  
  Enables objects of `CObject`-derived classes to be created dynamically at run time when used with the `DECLARE_DYNCREATE` macro.  
   
-```  
- 
-IMPLEMENT_DYNCREATE(
-class_name, base_class_name)  
+```
+IMPLEMENT_DYNCREATE(class_name, base_class_name)  
  
 ```  
   
@@ -216,13 +209,8 @@ class_name, base_class_name)
 ##  <a name="implement_serial"></a>  IMPLEMENT_SERIAL  
  Generates the C++ code necessary for a dynamic `CObject`-derived class with run-time access to the class name and position within the hierarchy.  
   
-```  
- 
-IMPLEMENT_SERIAL(
-class_name  ,   
-base_class_name  ,
-    wSchema)  
- 
+```
+IMPLEMENT_SERIAL(class_name, base_class_name, wSchema)  
 ```  
   
 ### Parameters  
@@ -250,8 +238,7 @@ base_class_name  ,
 ##  <a name="runtime_class"></a>  RUNTIME_CLASS  
  Gets the run-time class structure from the name of a C++ class.  
   
-```  
- 
+```
 RUNTIME_CLASS(class_name)  
  
 ```  
@@ -271,8 +258,7 @@ RUNTIME_CLASS(class_name)
 ##  <a name="declare_olecreate"></a>  DECLARE_OLECREATE  
  Enables objects of `CCmdTarget`-derived classes to be created through OLE automation.  
   
-```  
- 
+```
 DECLARE_OLECREATE(class_name)  
  
 ```  
@@ -291,22 +277,8 @@ DECLARE_OLECREATE(class_name)
 ##  <a name="implement_olecreate"></a>  IMPLEMENT_OLECREATE  
  Either this macro or [IMPLEMENT_OLECREATE_FLAGS](../Topic/IMPLEMENT_OLECREATE_FLAGS.md) must appear in the implementation file for any class that uses `DECLARE_OLECREATE`.  
   
-```  
- 
-IMPLEMENT_OLECREATE(
-class_name  ,  
-external_name  ,   
-l  ,   
-w1  ,   
-w2  ,   
-b1  ,   
-b2  ,   
-b3  ,   
-b4  ,   
-b5  ,   
-b6  ,   
-b7  ,
-    b8)  
+```
+IMPLEMENT_OLECREATE(class_name, external_name, l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8)  
  
 ```  
   

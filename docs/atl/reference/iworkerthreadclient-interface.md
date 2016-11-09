@@ -1,7 +1,7 @@
 ---
-title: "IWorkerThreadClient Interface"
+title: "IWorkerThreadClient Interface | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "IWorkerThreadClient interface"
 ms.assetid: 56f4a2f5-007e-4a33-9e20-05187629f715
-caps.latest.revision: 23
+caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -117,10 +117,3 @@ dwParam,
 ## See Also  
  [Classes](../../atl/reference/atl-classes.md)   
  [CWorkerThread Class](../../atl/reference/cworkerthread-class.md)
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
-title: "Error: the dependency &#39;file&#39; in project &#39;project&#39; cannot be copied to the run directory because it would conflict with dependency &#39;file&#39;"
+title: "Error: the dependency &#39;file&#39; in project &#39;project&#39; cannot be copied to the run directory because it would conflict with dependency &#39;file&#39; | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -48,7 +48,7 @@ There is a conflict between references; more than one distinct dependency with t
 -   Make sure that both copies of the assembly are strong-named and in the global assembly cache. This eliminates the need to copy the assemblies to the bin directory.  
   
 ## See Also  
- [Managing references in a project](../Topic/Managing%20references%20in%20a%20project.md)   
+ [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)   
  [Global Assembly Cache](../Topic/Global%20Assembly%20Cache.md)   
  [Strong-Named Assemblies](../Topic/Strong-Named%20Assemblies.md)   
  [Assembly Versioning](../Topic/Assembly%20Versioning.md)   

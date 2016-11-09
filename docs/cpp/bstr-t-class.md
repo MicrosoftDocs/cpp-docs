@@ -1,7 +1,7 @@
 ---
-title: "_bstr_t Class"
+title: "_bstr_t Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -65,8 +65,8 @@ translation.priority.ht:
 |||  
 |-|-|  
 |[operator =](../cpp/bstr-t-operator-equal.md)|Assigns a new value to an existing `_bstr_t` object.|  
-|[operator +=](../cpp/bstr-t-operator-dot-equal-plus.md)|Appends characters to the end of the `_bstr_t` object.|  
-|[operator +](../cpp/bstr-t-operator-dot-equal-plus.md)|Concatenates two strings.|  
+|[operator +=](../cpp/bstr-t-operator-add-equal-plus.md)|Appends characters to the end of the `_bstr_t` object.|  
+|[operator +](../cpp/bstr-t-operator-add-equal-plus.md)|Concatenates two strings.|  
 |[operator !](../cpp/bstr-t-operator-logical-not.md)|Checks if the encapsulated `BSTR` is a **NULL** string.|  
 |[operator ==, !=, \<, >, \<=, >=](../cpp/bstr-t-relational-operators.md)|Compares two `_bstr_t` objects.|  
 |[operator wchar_t* &#124; char\*](../cpp/bstr-t-wchar-t-star-bstr-t-char-star.md)|Extract the pointers to the encapsulated Unicode or multibyte `BSTR` object.|  

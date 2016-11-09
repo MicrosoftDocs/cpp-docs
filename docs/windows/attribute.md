@@ -1,7 +1,7 @@
 ---
-title: "attribute"
+title: "attribute | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -142,7 +142,7 @@ ref struct MyAttr {
 ref class ClassA {};  
 ```  
   
- Custom attribute classes are derived directly or indirectly from <xref:System.ComponentModel.AttributeCollection.#ctor*>, which makes identifying attribute definitions in metadata fast and easy. The `attribute` attribute implies inheritance from System::Attribute, so explicit derivation is not necessary:  
+ Custom attribute classes are derived directly or indirectly from <xref:System.ComponentModel.AttributeCollection.%23ctor%2A>, which makes identifying attribute definitions in metadata fast and easy. The `attribute` attribute implies inheritance from System::Attribute, so explicit derivation is not necessary:  
   
 ```  
 [ attribute(Class) ]  

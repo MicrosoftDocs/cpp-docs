@@ -1,5 +1,5 @@
 ---
-title: "&#39;As&#39; expected"
+title: "&#39;As&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ A declaration occurs that does not supply an `As` clause for one or more of the 
 -   Furnish the `As` clause as required, or turn `Option Strict Off`.  
   
 ## See Also  
- [As](../Topic/As%20Clause%20\(Visual%20Basic\).md)   
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)
+ [As](/dotnet/visual-basic/language-reference/statements/as-clause)   
+ [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)

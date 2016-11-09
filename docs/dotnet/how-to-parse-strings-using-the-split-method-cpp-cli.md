@@ -1,7 +1,7 @@
 ---
-title: "How to: Parse Strings Using the Split Method (C++-CLI)"
+title: "How to: Parse Strings Using the Split Method (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Parse Strings Using the Split Method (C++/CLI)
-The following code example demonstrates using the <xref:System.String.Split*?displayProperty=fullName> method to extract each word from a string. A string containing multiple types of word delineators is constructed and then parsed by calling <xref:System.String.Split*> with a list of the delineators. Then, each word in the sentence is displayed separately.  
+The following code example demonstrates using the <xref:System.String.Split%2A?displayProperty=fullName> method to extract each word from a string. A string containing multiple types of word delineators is constructed and then parsed by calling <xref:System.String.Split%2A> with a list of the delineators. Then, each word in the sentence is displayed separately.  
   
 ## Example  
   

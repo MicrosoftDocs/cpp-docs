@@ -1,7 +1,7 @@
 ---
-title: "asctime_s, _wasctime_s"
+title: "asctime_s, _wasctime_s | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -192,15 +192,15 @@ Current date and time: Wed May 14 15:30:17 2003
   
 ## .NET Framework Equivalent  
   
--   <xref:System.DateTime.ToLongDateString*?displayProperty=fullName>  
+-   <xref:System.DateTime.ToLongDateString%2A?displayProperty=fullName>  
   
--   <xref:System.DateTime.ToLongTimeString*?displayProperty=fullName>  
+-   <xref:System.DateTime.ToLongTimeString%2A?displayProperty=fullName>  
   
--   <xref:System.DateTime.ToShortDateString*?displayProperty=fullName>  
+-   <xref:System.DateTime.ToShortDateString%2A?displayProperty=fullName>  
   
--   <xref:System.DateTime.ToShortTimeString*?displayProperty=fullName>  
+-   <xref:System.DateTime.ToShortTimeString%2A?displayProperty=fullName>  
   
--   <xref:System.DateTime.ToString*?displayProperty=fullName>  
+-   <xref:System.DateTime.ToString%2A?displayProperty=fullName>  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   

@@ -1,5 +1,5 @@
 ---
-title: "Reference required to module &#39;&lt;modulename&gt;&#39; containing the definition for event &#39;&lt;eventname&gt;&#39;"
+title: "Reference required to module &#39;&lt;modulename&gt;&#39; containing the definition for event &#39;&lt;eventname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -48,4 +48,4 @@ Reference required to module '<`modulename`>' containing the definition for even
   
 ## See Also  
  [NIB: Referencing Namespaces and Components](http://msdn.microsoft.com/en-us/568fa759-796b-44cd-bf5e-1cf8de6e38fd)   
- [Troubleshooting Broken References](../Topic/Troubleshooting%20Broken%20References.md)
+ [Troubleshooting Broken References](/visual-studio/ide/troubleshooting-broken-references)

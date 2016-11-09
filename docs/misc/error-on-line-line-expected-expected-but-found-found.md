@@ -1,7 +1,7 @@
 ---
-title: "Error on line &lt;line&gt;. Expected &#39;expected&#39; but found &#39;found&#39;"
+title: "Error on line &lt;line&gt;. Expected &#39;expected&#39; but found &#39;found&#39; | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

@@ -1,5 +1,5 @@
 ---
-title: "Anonymous type member name must be preceded by a period"
+title: "Anonymous type member name must be preceded by a period | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -52,4 +52,4 @@ Dim instanceName1 = New With {.memberName = 10}
 -   Add a period before the member name.  
   
 ## See Also  
- [Anonymous Types](../Topic/Anonymous%20Types%20\(Visual%20Basic\).md)
+ [Anonymous Types](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types)

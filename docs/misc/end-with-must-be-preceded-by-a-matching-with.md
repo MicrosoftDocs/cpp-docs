@@ -1,5 +1,5 @@
 ---
-title: "&#39;End With&#39; must be preceded by a matching &#39;With&#39;"
+title: "&#39;End With&#39; must be preceded by a matching &#39;With&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,4 +49,4 @@ An `End With` statement occurs without a corresponding `With` statement. `End Wi
 3.  Ensure that this `With` block is correctly formatted.  
   
 ## See Also  
- [With...End With Statement](../Topic/With...End%20With%20Statement%20\(Visual%20Basic\).md)
+ [With...End With Statement](/dotnet/visual-basic/language-reference/statements/with-end-with-statement)

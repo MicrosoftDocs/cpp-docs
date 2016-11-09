@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1912"
+title: "Compiler Error CS1912 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1912"
 ms.assetid: 6205420e-01b9-4470-89f9-5924f1e49108
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -67,4 +68,4 @@ public class Test
 ```  
   
 ## See Also  
- [Object and Collection Initializers](../Topic/Object%20and%20Collection%20Initializers%20\(C%23%20Programming%20Guide\).md)
+ [Object and Collection Initializers](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)

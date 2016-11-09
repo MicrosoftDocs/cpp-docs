@@ -1,5 +1,5 @@
 ---
-title: "Attributes cannot be generics or types nested inside generics"
+title: "Attributes cannot be generics or types nested inside generics | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -65,4 +65,4 @@ An attribute is declared as a generic type, or within a generic type.
 ## See Also  
  <xref:System.Attribute>   
  [NOT IN BUILD: Attributes Overview in Visual Basic](http://msdn.microsoft.com/en-us/0d0cff64-892d-4f57-83bd-bef388553d4f)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)

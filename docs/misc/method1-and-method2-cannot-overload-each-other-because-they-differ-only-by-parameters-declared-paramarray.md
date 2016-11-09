@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;method1&gt;&#39; and &#39;&lt;method2&gt;&#39; cannot overload each other because they differ only by parameters declared &#39;ParamArray&#39;"
+title: "&#39;&lt;method1&gt;&#39; and &#39;&lt;method2&gt;&#39; cannot overload each other because they differ only by parameters declared &#39;ParamArray&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ You have attempted to overload two methods that differ from each other only by a
 -   Make sure the methods are differentiated by more than the `ParamArray` parameters.  
   
 ## See Also  
- [Considerations in Overloading Procedures](../Topic/Considerations%20in%20Overloading%20Procedures%20\(Visual%20Basic\).md)   
- [Parameter Arrays](../Topic/Parameter%20Arrays%20\(Visual%20Basic\).md)
+ [Considerations in Overloading Procedures](/dotnet/visual-basic/language-reference/procedures/considerations-in-overloading-procedures)   
+ [Parameter Arrays](/dotnet/visual-basic/language-reference/procedures/parameter-arrays)

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1664"
+title: "Compiler Error CS1664 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1664"
 ms.assetid: 3515024e-5da3-4a69-baac-96e0ede9bc32
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

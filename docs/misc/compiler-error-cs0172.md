@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0172"
+title: "Compiler Error CS0172 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0172"
 ms.assetid: 1272c575-3580-4897-95fb-83f45d7435ae
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0172
 Type of conditional expression cannot be determined because 'type1' and 'type2' implicitly convert to one another  
   
- In a conditional statement, you must be able to convert the types on either side of the `:` operator. Also, there cannot be mutual conversion routines; you only need one conversion. For more information, see [Conversion Operators](../Topic/Conversion%20Operators%20\(C%23%20Programming%20Guide\).md).  
+ In a conditional statement, you must be able to convert the types on either side of the `:` operator. Also, there cannot be mutual conversion routines; you only need one conversion. For more information, see [Conversion Operators](/dotnet/csharp/programming-guide/statements-expressions-operators/conversion-operators).  
   
  The following sample generates CS0172:  
   

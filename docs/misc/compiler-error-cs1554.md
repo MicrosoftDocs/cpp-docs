@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1554"
+title: "Compiler Error CS1554 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1554"
 ms.assetid: 81e8d4ac-cdbf-4b75-8932-0bc271a8405c
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS1554
 Declaration is not valid; use '\<type> operator op (...' instead  
   
- The return type for a user-defined [operator](../Topic/operator%20\(C%23%20Reference\)2.md) must appear before the keyword operator.  
+ The return type for a user-defined [operator](/dotnet/csharp/language-reference/keywords/operator) must appear before the keyword operator.  
   
  The following sample generates CS1554:  
   

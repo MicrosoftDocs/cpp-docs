@@ -1,5 +1,5 @@
 ---
-title: "&lt;error&gt;: &#39;&lt;structurename1&gt;&#39; contains &#39;&lt;structurename2&gt;&#39;"
+title: "&lt;error&gt;: &#39;&lt;structurename1&gt;&#39; contains &#39;&lt;structurename2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ A circular structure definition occurs when a structure designates itself as one
 -   Change the name of the structure member.  
   
 ## See Also  
- [Structures](../Topic/Structures%20\(Visual%20Basic\).md)
+ [Structures](/dotnet/visual-basic/programming-guide/language-features/data-types/structures)

@@ -1,5 +1,5 @@
 ---
-title: "Invalid pattern string"
+title: "Invalid pattern string | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -44,4 +44,4 @@ The pattern string specified in the `Like` operation of a search is invalid.
 4.  End pattern ranges with a closing bracket.  
   
 ## See Also  
- [Like Operator](../Topic/Like%20Operator%20\(Visual%20Basic\).md)
+ [Like Operator](/dotnet/visual-basic/language-reference/operators/like-operator)

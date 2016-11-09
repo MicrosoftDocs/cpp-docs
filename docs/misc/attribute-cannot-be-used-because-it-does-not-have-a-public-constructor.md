@@ -1,5 +1,5 @@
 ---
-title: "Attribute cannot be used because it does not have a Public constructor"
+title: "Attribute cannot be used because it does not have a Public constructor | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

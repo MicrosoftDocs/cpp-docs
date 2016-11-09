@@ -1,7 +1,7 @@
 ---
-title: "CSimpleArrayEqualHelper Class"
+title: "CSimpleArrayEqualHelper Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CSimpleArrayEqualHelper class"
 ms.assetid: a2b55d89-78c9-42ef-842c-5304c6d20ad6
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -55,7 +55,7 @@ template <class T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleArrayEqualHelper::IsEqual](../Topic/CSimpleArrayEqualHelper::IsEqual.md)|(Static) Tests two `CSimpleArray` object elements for equality.|  
+|[CSimpleArrayEqualHelper::IsEqual](#csimplearrayequalhelper__isequal)|(Static) Tests two `CSimpleArray` object elements for equality.|  
   
 ## Remarks  
  This traits class is a supplement to the `CSimpleArray` class. It provides a method for comparing two elements stored in a `CSimpleArray` object. By default, the elements are compared using **operator=()**, but if the array contains complex data types that lack their own equality operator, you will need to override this class.  
@@ -86,10 +86,3 @@ static bool IsEqual(
  [CSimpleArray Class](../../atl/reference/csimplearray-class.md)   
  [CSimpleArrayEqualHelperFalse Class](../../atl/reference/csimplearrayequalhelperfalse-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

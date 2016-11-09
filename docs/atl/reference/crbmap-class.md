@@ -1,7 +1,7 @@
 ---
-title: "CRBMap Class"
+title: "CRBMap Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CRBMap class"
 ms.assetid: 658e94dc-e835-4356-aed1-1513e1f66969
-caps.latest.revision: 17
+caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -69,21 +69,21 @@ template <typename   K,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRBMap::CRBMap](../Topic/CRBMap::CRBMap.md)|The constructor.|  
-|[CRBMap::~CRBMap](../Topic/CRBMap::~CRBMap.md)|The destructor.|  
+|[CRBMap::CRBMap](#crbmap__crbmap)|The constructor.|  
+|[CRBMap::~CRBMap](#crbmap___dtorcrbmap)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRBMap::Lookup](../Topic/CRBMap::Lookup.md)|Call this method to look up keys or values in the `CRBMap` object.|  
-|[CRBMap::RemoveKey](../Topic/CRBMap::RemoveKey.md)|Call this method to remove an element from the `CRBMap` object, given the key.|  
-|[CRBMap::SetAt](../Topic/CRBMap::SetAt.md)|Call this method to insert an element pair into the map.|  
+|[CRBMap::Lookup](#crbmap__lookup)|Call this method to look up keys or values in the `CRBMap` object.|  
+|[CRBMap::RemoveKey](#crbmap__removekey)|Call this method to remove an element from the `CRBMap` object, given the key.|  
+|[CRBMap::SetAt](#crbmap__setat)|Call this method to insert an element pair into the map.|  
   
 ## Remarks  
- `CRBMap` provides support for a mapping array of any given type, managing an ordered array of key elements and their associated values. Each key can have only one associated value. Elements (consisting of a key and a value) are stored in a binary tree structure, using the [CRBMap::SetAt](../Topic/CRBMap::SetAt.md) method. Elements can be removed using the [CRBMap::RemoveKey](../Topic/CRBMap::RemoveKey.md) method, which deletes the element with the given key value.  
+ `CRBMap` provides support for a mapping array of any given type, managing an ordered array of key elements and their associated values. Each key can have only one associated value. Elements (consisting of a key and a value) are stored in a binary tree structure, using the [CRBMap::SetAt](#crbmap__setat) method. Elements can be removed using the [CRBMap::RemoveKey](#crbmap__removekey) method, which deletes the element with the given key value.  
   
- Traversing the tree is made possible with methods such as [CRBTree::GetHeadPosition](../Topic/CRBTree::GetHeadPosition.md), [CRBTree::GetNext](../Topic/CRBTree::GetNext.md), and [CRBTree::GetNextValue](../Topic/CRBTree::GetNextValue.md).  
+ Traversing the tree is made possible with methods such as [CRBTree::GetHeadPosition](../../atl/reference/crbtree-class.md#crbtree__getheadposition), [CRBTree::GetNext](../../atl/reference/crbtree-class.md#crbtree__getnext), and [CRBTree::GetNextValue](../../atl/reference/crbtree-class.md#crbtree__getnextvalue).  
   
  The `KTraits` and `VTraits` parameters are traits classes that contain any supplemental code needed to copy or move elements.  
   
@@ -214,10 +214,3 @@ POSITION SetAt(
  [CAtlMap Class](../../atl/reference/catlmap-class.md)   
  [CRBMultiMap Class](../../atl/reference/crbmultimap-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

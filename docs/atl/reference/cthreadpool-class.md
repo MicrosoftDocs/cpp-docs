@@ -1,7 +1,7 @@
 ---
-title: "CThreadPool Class"
+title: "CThreadPool Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CThreadPool class"
 ms.assetid: 06683718-01b9-413c-9481-2dc1734ec70f
-caps.latest.revision: 21
+caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -61,30 +61,30 @@ template <class Worker, class ThreadTraits = DefaultThreadTraits>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CThreadPool::CThreadPool](../Topic/CThreadPool::CThreadPool.md)|The constructor for the thread pool.|  
-|[CThreadPool::~CThreadPool](../Topic/CThreadPool::~CThreadPool.md)|The destructor for the thread pool.|  
+|[CThreadPool::CThreadPool](#cthreadpool__cthreadpool)|The constructor for the thread pool.|  
+|[CThreadPool::~CThreadPool](#cthreadpool___dtorcthreadpool)|The destructor for the thread pool.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CThreadPool::AddRef](../Topic/CThreadPool::AddRef.md)|Implementation of `IUnknown::AddRef`.|  
-|[CThreadPool::GetNumThreads](../Topic/CThreadPool::GetNumThreads.md)|Call this method to get the number of threads in the pool.|  
-|[CThreadPool::GetQueueHandle](../Topic/CThreadPool::GetQueueHandle.md)|Call this method to get the handle of the IO completion port used to queue work items.|  
-|[CThreadPool::GetSize](../Topic/CThreadPool::GetSize.md)|Call this method to get the number of threads in the pool.|  
-|[CThreadPool::GetTimeout](../Topic/CThreadPool::GetTimeout.md)|Call this method to get the maximum time in milliseconds that the thread pool will wait for a thread to shut down.|  
-|[CThreadPool::Initialize](../Topic/CThreadPool::Initialize.md)|Call this method to initialize the thread pool.|  
-|[CThreadPool::QueryInterface](../Topic/CThreadPool::QueryInterface.md)|Implementation of **IUnknown::QueryInterface**.|  
-|[CThreadPool::QueueRequest](../Topic/CThreadPool::QueueRequest.md)|Call this method to queue a work item to be handled by a thread in the pool.|  
-|[CThreadPool::Release](../Topic/CThreadPool::Release.md)|Implementation of `IUnknown::Release`.|  
-|[CThreadPool::SetSize](../Topic/CThreadPool::SetSize.md)|Call this method to set the number of threads in the pool.|  
-|[CThreadPool::SetTimeout](../Topic/CThreadPool::SetTimeout.md)|Call this method to set the maximum time in milliseconds that the thread pool will wait for a thread to shut down.|  
-|[CThreadPool::Shutdown](../Topic/CThreadPool::Shutdown.md)|Call this method to shut down the thread pool.|  
+|[CThreadPool::AddRef](#cthreadpool__addref)|Implementation of `IUnknown::AddRef`.|  
+|[CThreadPool::GetNumThreads](#cthreadpool__getnumthreads)|Call this method to get the number of threads in the pool.|  
+|[CThreadPool::GetQueueHandle](#cthreadpool__getqueuehandle)|Call this method to get the handle of the IO completion port used to queue work items.|  
+|[CThreadPool::GetSize](#cthreadpool__getsize)|Call this method to get the number of threads in the pool.|  
+|[CThreadPool::GetTimeout](#cthreadpool__gettimeout)|Call this method to get the maximum time in milliseconds that the thread pool will wait for a thread to shut down.|  
+|[CThreadPool::Initialize](#cthreadpool__initialize)|Call this method to initialize the thread pool.|  
+|[CThreadPool::QueryInterface](#cthreadpool__queryinterface)|Implementation of **IUnknown::QueryInterface**.|  
+|[CThreadPool::QueueRequest](#cthreadpool__queuerequest)|Call this method to queue a work item to be handled by a thread in the pool.|  
+|[CThreadPool::Release](#cthreadpool__release)|Implementation of `IUnknown::Release`.|  
+|[CThreadPool::SetSize](#cthreadpool__setsize)|Call this method to set the number of threads in the pool.|  
+|[CThreadPool::SetTimeout](#cthreadpool__settimeout)|Call this method to set the maximum time in milliseconds that the thread pool will wait for a thread to shut down.|  
+|[CThreadPool::Shutdown](#cthreadpool__shutdown)|Call this method to shut down the thread pool.|  
   
 ## Remarks  
  Threads in the pool are created and destroyed when the pool is initialized, resized, or shut down. An instance of class *Worker* will be created on the stack of each worker thread in the pool. Each instance will live for the lifetime of the thread.  
   
- Immediately after creation of a thread, *Worker*:: `Initialize` will be called on the object associated with that thread. Immediately before destruction of a thread, *Worker*:: `Terminate` will be called. Both methods must accept a **void\*** argument. The value of this argument is passed to the thread pool through the `pvWorkerParam` parameter of [CThreadPool::Initialize](../Topic/CThreadPool::Initialize.md).  
+ Immediately after creation of a thread, *Worker*:: `Initialize` will be called on the object associated with that thread. Immediately before destruction of a thread, *Worker*:: `Terminate` will be called. Both methods must accept a **void\*** argument. The value of this argument is passed to the thread pool through the `pvWorkerParam` parameter of [CThreadPool::Initialize](#cthreadpool__initialize).  
   
  When there are work items in the queue and worker threads available for work, a worker thread will pull an item off the queue and call the **Execute** method of the *Worker* object for that thread. Three items are then passed to the method: the item from the queue, the same `pvWorkerParam` passed to *Worker*:: `Initialize` and *Worker*:: `Terminate`, and a pointer to the [OVERLAPPED](http://msdn.microsoft.com/library/windows/desktop/ms684342) structure used for the IO completion port queue.  
   
@@ -133,7 +133,7 @@ CThreadPool() throw();
 ```  
   
 ### Remarks  
- Calls [CThreadPool::Shutdown](../Topic/CThreadPool::Shutdown.md).  
+ Calls [CThreadPool::Shutdown](#cthreadpool__shutdown).  
   
 ##  <a name="cthreadpool__getnumthreads"></a>  CThreadPool::GetNumThreads  
  Call this method to get the number of threads in the pool.  
@@ -184,7 +184,7 @@ HRESULT STDMETHODCALLTYPE GetTimeout(DWORD* pdwMaxWait) throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This timeout value is used by [CThreadPool::Shutdown](../Topic/CThreadPool::Shutdown.md) if no other value is supplied to that method.  
+ This timeout value is used by [CThreadPool::Shutdown](#cthreadpool__shutdown) if no other value is supplied to that method.  
   
 ##  <a name="cthreadpool__initialize"></a>  CThreadPool::Initialize  
  Call this method to initialize the thread pool.  
@@ -278,7 +278,7 @@ HRESULT STDMETHODCALLTYPE SetSize(int   nNumThreads) throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- If the number of threads specified is less than the number of threads currently in the pool, the object puts a shutdown message on the queue to be picked up by a waiting thread. When a waiting thread pulls the message off the queue, it notifies the thread pool and exits the thread procedure. This process is repeated until the number of threads in the pool reaches the specified number or until no thread has exited within the period specified by [GetTimeout](../Topic/CThreadPool::GetTimeout.md)/ [SetTimeout](../Topic/CThreadPool::SetTimeout.md). In this situation the method will return an HRESULT corresponding to **WAIT_TIMEOUT** and the pending shutdown message is canceled.  
+ If the number of threads specified is less than the number of threads currently in the pool, the object puts a shutdown message on the queue to be picked up by a waiting thread. When a waiting thread pulls the message off the queue, it notifies the thread pool and exits the thread procedure. This process is repeated until the number of threads in the pool reaches the specified number or until no thread has exited within the period specified by [GetTimeout](#cthreadpool__gettimeout)/ [SetTimeout](#cthreadpool__settimeout). In this situation the method will return an HRESULT corresponding to **WAIT_TIMEOUT** and the pending shutdown message is canceled.  
   
 ##  <a name="cthreadpool__settimeout"></a>  CThreadPool::SetTimeout  
  Call this method to set the maximum time in milliseconds that the thread pool will wait for a thread to shut down.  
@@ -308,7 +308,7 @@ void Shutdown(DWORD   dwMaxWait = 0) throw();
   
 ### Parameters  
  `dwMaxWait`  
- The requested maximum time in milliseconds that the thread pool will wait for a thread to shut down. If 0 or no value is supplied, this method will use the timeout set by [CThreadPool::SetTimeout](../Topic/CThreadPool::SetTimeout.md).  
+ The requested maximum time in milliseconds that the thread pool will wait for a thread to shut down. If 0 or no value is supplied, this method will use the timeout set by [CThreadPool::SetTimeout](#cthreadpool__settimeout).  
   
 ### Remarks  
  This method posts a shutdown request to all threads in the pool. If the timeout expires, this method will call [TerminateThread](http://msdn.microsoft.com/library/windows/desktop/ms686717) on any thread that did not exit. This method is called automatically from the destructor of the class.  
@@ -317,10 +317,3 @@ void Shutdown(DWORD   dwMaxWait = 0) throw();
  [IThreadPoolConfig Interface](../../atl/reference/ithreadpoolconfig-interface.md)   
  [DefaultThreadTraits](../Topic/DefaultThreadTraits.md)   
  [Classes](../../atl/reference/atl-classes.md)
-
-
-
-
-
-
-

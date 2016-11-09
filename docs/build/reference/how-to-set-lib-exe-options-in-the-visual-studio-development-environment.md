@@ -1,7 +1,7 @@
 ---
-title: "How to: Set LIB.EXE Options in the Visual Studio Development Environment"
+title: "How to: Set LIB.EXE Options in the Visual Studio Development Environment | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

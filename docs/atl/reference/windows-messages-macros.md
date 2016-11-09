@@ -1,7 +1,7 @@
 ---
-title: "Windows Messages Macros"
+title: "Windows Messages Macros | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -12,7 +12,7 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 63abd22c-372d-4148-bb04-c605950ae64f
-caps.latest.revision: 15
+caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -36,7 +36,7 @@ This macro forwards window messages.
   
 |||  
 |-|-|  
-|[WM_FORWARDMSG](../Topic/WM_FORWARDMSG.md)|Use to forward a message received by a window to another window for processing.|  
+|[WM_FORWARDMSG](#wm_forwardmsg)|Use to forward a message received by a window to another window for processing.|  
   
 ##  <a name="wm_forwardmsg"></a>  WM_FORWARDMSG  
  This macro forwards a message received by a window to another window for processing.  
@@ -63,8 +63,3 @@ WM_FORWARDMSG
   
 ## See Also  
  [Macros](../../atl/reference/atl-macros.md)
-
-
-
-
-

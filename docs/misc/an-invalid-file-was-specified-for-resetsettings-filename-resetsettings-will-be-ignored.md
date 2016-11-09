@@ -1,7 +1,7 @@
 ---
-title: "An invalid file was specified for -resetsettings: &lt;filename&gt;.  -resetsettings will be ignored."
+title: "An invalid file was specified for -resetsettings: &lt;filename&gt;.  -resetsettings will be ignored. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -44,5 +44,5 @@ This error generally occurs when the settings file is not readable, does not exi
 3.  Verify that the file contains correctly formed XML.  
   
 ## See Also  
- [/ResetSettings (devenv.exe)](../Topic/-ResetSettings%20\(devenv.exe\).md)   
- [Devenv Command Line Switches](../Topic/Devenv%20Command%20Line%20Switches.md)
+ [/ResetSettings (devenv.exe)](/visual-studio/ide/reference/resetsettings-devenv-exe)   
+ [Devenv Command Line Switches](/visual-studio/ide/reference/devenv-command-line-switches)

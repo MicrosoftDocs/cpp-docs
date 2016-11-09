@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0139"
+title: "Compiler Error CS0139 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0139"
 ms.assetid: 235ba3d4-566c-4ef6-801a-a338f4f2a12d
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -40,7 +41,7 @@ No enclosing loop out of which to break or continue
   
  A break or continue statement was encountered outside of a loop.  
   
- For more information, see [Jump Statements](../Topic/Jump%20Statements%20\(C%23%20Reference\).md).  
+ For more information, see [Jump Statements](/dotnet/csharp/language-reference/keywords/jump-statements).  
   
  The following sample generates CS0139 twice:  
   

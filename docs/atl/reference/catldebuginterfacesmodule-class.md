@@ -1,7 +1,7 @@
 ---
-title: "CAtlDebugInterfacesModule Class"
+title: "CAtlDebugInterfacesModule Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "_ATL_DEBUG_QI macro"
   - "CAtlDebugInterfacesModule class"
 ms.assetid: a193b567-8191-4115-a963-a10805972bac
-caps.latest.revision: 17
+caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -56,10 +56,3 @@ class CAtlDebugInterfacesModule
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)   
  [Module Classes](../../atl/atl-module-classes.md)
-
-
-
-
-
-
-

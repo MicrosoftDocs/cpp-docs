@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0156"
+title: "Compiler Error CS0156 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0156"
 ms.assetid: 32026b1b-bcd7-4464-b63f-3b38c00452a6
 caps.latest.revision: 9
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,9 +39,9 @@ translation.priority.mt:
 # Compiler Error CS0156
 A throw statement with no arguments is not allowed in a finally clause that is nested inside the nearest enclosing catch clause  
   
- A [throw](../Topic/throw%20\(C%23%20Reference\).md) statement with no parameters can only appear in a **catch** clause that takes no parameters.  
+ A [throw](/dotnet/csharp/language-reference/keywords/throw) statement with no parameters can only appear in a **catch** clause that takes no parameters.  
   
- For more information, see [Exception Handling Statements](../Topic/Exception%20Handling%20Statements%20\(C%23%20Reference\).md) and [Exceptions and Exception Handling](../Topic/Exceptions%20and%20Exception%20Handling%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see [Exception Handling Statements](/dotnet/csharp/language-reference/keywords/exception-handling-statements) and [Exceptions and Exception Handling](/dotnet/csharp/programming-guide/exceptions/exceptions-and-exception-handling).  
   
  The following sample generates CS0156:  
   

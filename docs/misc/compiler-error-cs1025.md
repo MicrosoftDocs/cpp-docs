@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1025"
+title: "Compiler Error CS1025 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1025"
 ms.assetid: 491c186f-cb40-47a9-9656-44fadfa18ae2
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS1025
 Single-line comment or end-of-line expected  
   
- A line with a [preprocessor directive](../Topic/C%23%20Preprocessor%20Directives.md) cannot have a multiline comment.  
+ A line with a [preprocessor directive](/dotnet/csharp/language-reference/preprocessor-directives/index) cannot have a multiline comment.  
   
  The following sample generates CS1025:  
   

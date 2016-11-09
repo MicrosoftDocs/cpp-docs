@@ -1,5 +1,5 @@
 ---
-title: "Field &#39;&lt;fieldname&gt;&#39; is of an unsupported type"
+title: "Field &#39;&lt;fieldname&gt;&#39; is of an unsupported type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ A field is declared as a type that cannot be represented by [!INCLUDE[vsprvs](..
 2.  Develop a new type that describes the data in the field.  
   
 ## See Also  
- [Data Types](../Topic/Data%20Type%20Summary%20\(Visual%20Basic\).md)
+ [Data Types](/dotnet/visual-basic/language-reference/data-types/data-type-summary)

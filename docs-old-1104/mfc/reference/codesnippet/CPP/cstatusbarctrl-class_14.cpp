@@ -1,0 +1,1 @@
+   m_wndSBC.SetTipText(0, _T("This is Pane 0"));

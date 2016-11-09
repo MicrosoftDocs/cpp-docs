@@ -1,7 +1,7 @@
 ---
-title: "Unable to read the resource information from the resx file"
+title: "Unable to read the resource information from the resx file | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

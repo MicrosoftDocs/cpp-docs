@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1022"
+title: "Compiler Error CS1022 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1022"
 ms.assetid: 76b9f32b-2ebf-471d-a635-852daf8877d7
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

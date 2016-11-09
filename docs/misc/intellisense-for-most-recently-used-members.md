@@ -1,7 +1,7 @@
 ---
-title: "IntelliSense for Most Recently Used Members"
+title: "IntelliSense for Most Recently Used Members | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -33,4 +33,4 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # IntelliSense for Most Recently Used Members
-This content has moved to [Visual C# IntelliSense](../Topic/Visual%20C%23%20IntelliSense.md).
+This content has moved to [Visual C# IntelliSense](/visual-studio/ide/visual-csharp-intellisense).

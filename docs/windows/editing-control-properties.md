@@ -1,7 +1,7 @@
 ---
-title: "Editing Control Properties"
+title: "Editing Control Properties | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -44,7 +44,7 @@ translation.priority.ht:
     > [!NOTE]
     >  If you select multiple controls, only the properties common to the selected controls can be edited.  
   
-2.  In the [Properties window](../Topic/Properties%20Window.md), change the properties of your control.  
+2.  In the [Properties window](/visual-studio/ide/reference/properties-window), change the properties of your control.  
   
     > [!NOTE]
     >  When you set the **Bitmap** property for a button, radio button, or check box control equal to **True**, the style BS_BITMAP is implemented for your control. For more information, see [Button Styles](../mfc/reference/button-styles.md). For an example of associating a bitmap with a control, see [CButton::SetBitmap](../mfc/reference/cbutton-class.md#cbutton__setbitmap). Bitmaps will not appear on your control while you are in the Dialog resource editor.  

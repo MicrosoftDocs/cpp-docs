@@ -1,5 +1,5 @@
 ---
-title: "&#39;GoTo&#39; statements are not valid in the Immediate window"
+title: "&#39;GoTo&#39; statements are not valid in the Immediate window | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ The `GoTo` statement performs branching and is not permitted in a debugging cont
 -   Do not issue a `GoTo` statement in the **Immediate** window.  
   
 ## See Also  
- [Immediate Window](../Topic/Immediate%20Window.md)
+ [Immediate Window](/visual-studio/ide/reference/immediate-window)

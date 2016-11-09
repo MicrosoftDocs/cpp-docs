@@ -1,7 +1,7 @@
 ---
-title: "CAutoPtrArray Class"
+title: "CAutoPtrArray Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAutoPtrArray class"
 ms.assetid: 880a70da-8c81-4427-8ac6-49aa8d424244
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -64,7 +64,7 @@ template <typename   E>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAutoPtrArray::CAutoPtrArray](../Topic/CAutoPtrArray::CAutoPtrArray.md)|The constructor.|  
+|[CAutoPtrArray::CAutoPtrArray](#cautoptrarray__cautoptrarray)|The constructor.|  
   
 ## Remarks  
  This class provides a constructor and derives methods from [CAtlArray](../../atl/reference/catlarray-class.md) and [CAutoPtrElementTraits](../../atl/reference/cautoptrelementtraits-class.md) to aid the creation of a collection class object storing smart pointers.  
@@ -94,10 +94,3 @@ CAutoPtrArray() throw();
  [CAutoPtrElementTraits Class](../../atl/reference/cautoptrelementtraits-class.md)   
  [CAutoPtrList Class](../../atl/reference/cautoptrlist-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

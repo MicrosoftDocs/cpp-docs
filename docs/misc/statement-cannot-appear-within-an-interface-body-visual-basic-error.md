@@ -1,5 +1,5 @@
 ---
-title: "Statement cannot appear within an interface body (Visual Basic Error)"
+title: "Statement cannot appear within an interface body (Visual Basic Error) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ An unexpected language construct was encountered. It is assumed that an `End Int
 2.  Make sure that the interface definition ends with an `End Interface` construct.  
   
 ## See Also  
- [Interfaces](../Topic/Interfaces%20\(Visual%20Basic\).md)   
- [Interface Statement](../Topic/Interface%20Statement%20\(Visual%20Basic\).md)
+ [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)   
+ [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)

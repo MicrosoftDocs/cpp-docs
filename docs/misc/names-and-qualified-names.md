@@ -1,7 +1,7 @@
 ---
-title: "Names and Qualified Names"
+title: "Names and Qualified Names | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

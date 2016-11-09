@@ -1,7 +1,7 @@
 ---
-title: "How to: Marshal ANSI Strings Using C++ Interop"
+title: "How to: Marshal ANSI Strings Using C++ Interop | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -47,7 +47,7 @@ This topic demonstrates how ANSI strings can be passed using C++ Interop, but th
  The following code examples use the [managed, unmanaged](../preprocessor/managed-unmanaged.md) #pragma directives to implement managed and unmanaged functions in the same file, but these functions interoperate in the same manner if defined in separate files. Because files containing only unmanaged functions do not need to be compiled with [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md), they can retain their performance characteristics.  
   
 ## Example  
- The example demonstrates passing an ANSI string from a managed to an unmanaged function using <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi*>. This method allocates memory on the unmanaged heap and returns the address after performing the conversion. This means that no pinning is necessary (because memory on the GC heap is not being passed to the unmanaged function) and that the IntPtr returned from <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi*> must be explicitly released or a memory leak results.  
+ The example demonstrates passing an ANSI string from a managed to an unmanaged function using <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi%2A>. This method allocates memory on the unmanaged heap and returns the address after performing the conversion. This means that no pinning is necessary (because memory on the GC heap is not being passed to the unmanaged function) and that the IntPtr returned from <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi%2A> must be explicitly released or a memory leak results.  
   
 ```  
 // MarshalANSI1.cpp  
@@ -80,7 +80,7 @@ int main() {
 ```  
   
 ## Example  
- The following example demonstrates the data marshaling required to access an ANSI string in a managed function that is called by an unmanaged function. The managed function, on receiving the native string, can either use it directly or convert it to a managed string using the <xref:System.Runtime.InteropServices.Marshal.PtrToStringAnsi*> method, as shown.  
+ The following example demonstrates the data marshaling required to access an ANSI string in a managed function that is called by an unmanaged function. The managed function, on receiving the native string, can either use it directly or convert it to a managed string using the <xref:System.Runtime.InteropServices.Marshal.PtrToStringAnsi%2A> method, as shown.  
   
 ```  
 // MarshalANSI2.cpp  

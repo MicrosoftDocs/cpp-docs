@@ -1,5 +1,5 @@
 ---
-title: "&#39;Catch&#39; cannot catch type &#39;&lt;typename&gt;&#39; because it is not &#39;System.Exception&#39; or a class that inherits from &#39;System.Exception&#39;"
+title: "&#39;Catch&#39; cannot catch type &#39;&lt;typename&gt;&#39; because it is not &#39;System.Exception&#39; or a class that inherits from &#39;System.Exception&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ translation.priority.mt:
 1.  Remove the `Catch` statement, or change the target of the `Catch` to an actual exception.  
   
 ## See Also  
- [Try...Catch...Finally Statement](../Topic/Try...Catch...Finally%20Statement%20\(Visual%20Basic\).md)   
+ [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
  [Structured Exception Handling Overview for Visual Basic](http://msdn.microsoft.com/en-us/bb81af80-a735-4873-9711-6151a48e418a)

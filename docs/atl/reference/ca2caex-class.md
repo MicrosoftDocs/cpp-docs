@@ -1,7 +1,7 @@
 ---
-title: "CA2CAEX Class"
+title: "CA2CAEX Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -21,7 +21,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CA2CAEX class"
 ms.assetid: 388e7c1d-a144-474c-a182-b15f69a74bd8
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -62,20 +62,20 @@ template<int t_nBufferLength = 128>  class CA2CAEX
   
 |Name|Description|  
 |----------|-----------------|  
-|[CA2CAEX::CA2CAEX](../Topic/CA2CAEX::CA2CAEX.md)|The constructor.|  
-|[CA2CAEX::~CA2CAEX](../Topic/CA2CAEX::~CA2CAEX.md)|The destructor.|  
+|[CA2CAEX::CA2CAEX](#ca2caex__ca2caex)|The constructor.|  
+|[CA2CAEX::~CA2CAEX](#ca2caex___dtorca2caex)|The destructor.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CA2CAEX::operator LPCSTR](../Topic/CA2CAEX::operator%20LPCSTR.md)|Conversion operator.|  
+|[CA2CAEX::operator LPCSTR](#ca2caex__operator_lpcstr)|Conversion operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CA2CAEX::m_psz](../Topic/CA2CAEX::m_psz.md)|The data member that stores the source string.|  
+|[CA2CAEX::m_psz](#ca2caex__m_psz)|The data member that stores the source string.|  
   
 ## Remarks  
  Unless extra functionality is required, use `CA2CTEX`, `CT2CAEX`, or **CA2CA** in your own code.  
@@ -152,10 +152,3 @@ LPCSTR m_psz;
  [CW2CWEX Class](../../atl/reference/cw2cwex-class.md)   
  [CW2WEX Class](../../atl/reference/cw2wex-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0017"
+title: "Compiler Error CS0017 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0017"
 ms.assetid: 5e2a3eb3-6f6e-485d-8293-ceabea4d6905
 caps.latest.revision: 10
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,9 +39,9 @@ translation.priority.mt:
 # Compiler Error CS0017
 Program 'output file name' has more than one entry point defined. Compile with /main to specify the type that contains the entry point.  
   
- A program can only have one [Main](../Topic/Main\(\)%20and%20Command-Line%20Arguments%20\(C%23%20Programming%20Guide\).md) method.  
+ A program can only have one [Main](/dotnet/csharp/programming-guide/main-and-command-args/main-and-command-line-arguments) method.  
   
- To resolve this error, you can either delete all Main methods in your code, except one, or you can use the [/main](../Topic/-main%20\(C%23%20Compiler%20Options\).md) compiler option to specify which Main method you want to use.  
+ To resolve this error, you can either delete all Main methods in your code, except one, or you can use the [/main](/dotnet/csharp/language-reference/compiler-options/main-compiler-option) compiler option to specify which Main method you want to use.  
   
  The following sample generates CS0017:  
   

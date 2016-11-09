@@ -1,5 +1,5 @@
 ---
-title: "Bracketed identifier is missing closing &#39;]&#39;"
+title: "Bracketed identifier is missing closing &#39;]&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ Brackets in an escaped name must occur in matching pairs.
 -   Place a closing bracket at the end of the escaped name.  
   
 ## See Also  
- [Declared Element Names](../Topic/Declared%20Element%20Names%20\(Visual%20Basic\).md)
+ [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)

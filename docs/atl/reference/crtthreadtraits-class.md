@@ -1,7 +1,7 @@
 ---
-title: "CRTThreadTraits Class"
+title: "CRTThreadTraits Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ helpviewer_keywords:
   - "threading [ATL], creation functions"
   - "threading [ATL], CRT threads"
 ms.assetid: eb6e20b0-c2aa-4170-8e34-aaeeacc86343
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -57,7 +57,7 @@ class CRTThreadTraits
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRTThreadTraits::CreateThread](../Topic/CRTThreadTraits::CreateThread.md)|(Static) Call this function to create a thread that can use CRT functions.|  
+|[CRTThreadTraits::CreateThread](#crtthreadtraits__createthread)|(Static) Call this function to create a thread that can use CRT functions.|  
   
 ## Remarks  
  Thread traits are classes that provide a creation function for a particular type of thread. The creation function has the same signature and semantics as the Windows [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453) function.  
@@ -114,10 +114,3 @@ static HANDLE CreateThread(LPSECURITY_ATTRIBUTES lpsa,
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

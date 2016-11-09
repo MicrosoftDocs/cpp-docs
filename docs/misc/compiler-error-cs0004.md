@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0004"
+title: "Compiler Error CS0004 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0004"
 ms.assetid: 2d61765c-ca72-4bd4-862d-d7912c78204b
 caps.latest.revision: 5
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

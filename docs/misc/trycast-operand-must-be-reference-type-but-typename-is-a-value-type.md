@@ -1,5 +1,5 @@
 ---
-title: "&#39;TryCast&#39; operand must be reference type, but &#39;&lt;typename&gt;&#39; is a value type"
+title: "&#39;TryCast&#39; operand must be reference type, but &#39;&lt;typename&gt;&#39; is a value type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -38,7 +38,7 @@ translation.priority.mt:
 # &#39;TryCast&#39; operand must be reference type, but &#39;&lt;typename&gt;&#39; is a value type
 The `TryCast` operator is used with a value type for at least one of the arguments.  
   
- `TryCast` tests for an inheritance or implementation relationship between the two arguments. Therefore, it allows only reference types for the arguments. For more information, see [Value Types and Reference Types](../Topic/Value%20Types%20and%20Reference%20Types.md).  
+ `TryCast` tests for an inheritance or implementation relationship between the two arguments. Therefore, it allows only reference types for the arguments. For more information, see [Value Types and Reference Types](/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types).  
   
  **Error ID:** BC30792  
   
@@ -47,7 +47,7 @@ The `TryCast` operator is used with a value type for at least one of the argumen
 -   Use `DirectCast` or `CType` to perform the conversion. They both allow value types.  
   
 ## See Also  
- [TryCast Operator](../Topic/TryCast%20Operator%20\(Visual%20Basic\).md)   
- [DirectCast Operator](../Topic/DirectCast%20Operator%20\(Visual%20Basic\).md)   
- [CType Function](../Topic/CType%20Function%20\(Visual%20Basic\).md)   
- [Value Types and Reference Types](../Topic/Value%20Types%20and%20Reference%20Types.md)
+ [TryCast Operator](/dotnet/visual-basic/language-reference/operators/trycast-operator)   
+ [DirectCast Operator](/dotnet/visual-basic/language-reference/operators/directcast-operator)   
+ [CType Function](/dotnet/visual-basic/language-reference/functions/ctype-function)   
+ [Value Types and Reference Types](/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)

@@ -1,7 +1,7 @@
 ---
-title: "How to: Store Text in the Clipboard (C++-CLI)"
+title: "How to: Store Text in the Clipboard (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Store Text in the Clipboard (C++/CLI)
-The following code example uses the <xref:System.Windows.Forms.Clipboard> object defined in the <xref:System.Windows.Forms> namespace to store a string. This object provides two member functions: <xref:System.Windows.Forms.Clipboard.SetDataObject*> and <xref:System.Windows.Forms.Clipboard.GetDataObject*>. Data is stored in the Clipboard by sending any object derived from <xref:System.Object> to <xref:System.Windows.Forms.Clipboard.SetDataObject*>.  
+The following code example uses the <xref:System.Windows.Forms.Clipboard> object defined in the <xref:System.Windows.Forms> namespace to store a string. This object provides two member functions: <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> and <xref:System.Windows.Forms.Clipboard.GetDataObject%2A>. Data is stored in the Clipboard by sending any object derived from <xref:System.Object> to <xref:System.Windows.Forms.Clipboard.SetDataObject%2A>.  
   
 ## Example  
   

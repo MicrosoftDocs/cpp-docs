@@ -1,7 +1,7 @@
 ---
-title: "bsearch_s"
+title: "bsearch_s | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -208,7 +208,7 @@ cat found at 002F0F04
 ```  
   
 ## .NET Framework Equivalent  
- <xref:System.Collections.ArrayList.BinarySearch*>  
+ <xref:System.Collections.ArrayList.BinarySearch%2A>  
   
 ## See Also  
  [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   

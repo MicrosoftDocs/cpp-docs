@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1033"
+title: "Compiler Error CS1033 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1033"
 ms.assetid: eb0f4001-84a6-4918-a648-cf710d038de7
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

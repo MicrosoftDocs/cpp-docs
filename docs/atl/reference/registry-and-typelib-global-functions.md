@@ -1,7 +1,7 @@
 ---
-title: "Registry and TypeLib Global Functions"
+title: "Registry and TypeLib Global Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -14,7 +14,7 @@ dev_langs:
 helpviewer_keywords: 
   - "RegistryDataExchange function, global functions"
 ms.assetid: d58b8a4e-975c-4417-8b34-d3c847f679b3
-caps.latest.revision: 21
+caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -41,18 +41,18 @@ These functions provide support for loading and registering a type library.
   
 |||  
 |-|-|  
-|[AtlRegisterTypeLib](../Topic/AtlRegisterTypeLib.md)|This function is called to register a type library.|  
-|[AtlUnRegisterTypeLib](../Topic/AtlUnRegisterTypeLib.md)|This function is called to unregister a type library|  
-|[AtlLoadTypeLib](../Topic/AtlLoadTypeLib.md)|This function is called to load a type library.|  
-|[AtlUpdateRegistryFromResourceD](../Topic/AtlUpdateRegistryFromResourceD.md)|This function is called to update the registry from the supplied resource.|  
-|[RegistryDataExchange](../Topic/RegistryDataExchange.md)|This function is called to read from, or write to, the system registry. Called by the [Registry Data Exchange Macros](../../atl/reference/registry-data-exchange-macros.md).|  
+|[AtlRegisterTypeLib](#atlregistertypelib)|This function is called to register a type library.|  
+|[AtlUnRegisterTypeLib](#atlunregistertypelib)|This function is called to unregister a type library|  
+|[AtlLoadTypeLib](#atlloadtypelib)|This function is called to load a type library.|  
+|[AtlUpdateRegistryFromResourceD](#atlupdateregistryfromresourced)|This function is called to update the registry from the supplied resource.|  
+|[RegistryDataExchange](#registrydataexchange)|This function is called to read from, or write to, the system registry. Called by the [Registry Data Exchange Macros](../../atl/reference/registry-data-exchange-macros.md).|  
   
  These functions control which node in the registry the program uses to store information.  
   
 |||  
 |-|-|  
-|[AtlGetPerUserRegistration](../Topic/AtlGetPerUserRegistration.md)|Retrieves whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.|  
-|[AtlSetPerUserRegistration](../Topic/AtlSetPerUserRegistration.md)|Sets whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.|  
+|[AtlGetPerUserRegistration](#atlgetperuserregistration)|Retrieves whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.|  
+|[AtlSetPerUserRegistration](#atlsetperuserregistration)|Sets whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.|  
   
 ##  <a name="atlregistertypelib"></a>  AtlRegisterTypeLib  
  This function is called to register a type library.  
@@ -61,8 +61,7 @@ These functions provide support for loading and registering a type library.
 >  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
   
 ```
-ATLAPI AtlRegisterTypeLib(
-    HINSTANCE hInstTypeLib,  LPCOLESTR lpszIndex);
+ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
 ```  
   
 ### Parameters  
@@ -76,7 +75,7 @@ ATLAPI AtlRegisterTypeLib(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This helper function is utilized by [AtlComModuleUnregisterServer](../Topic/AtlComModuleUnregisterServer.md) and [CAtlComModule::RegisterTypeLib](../Topic/CAtlComModule::RegisterTypeLib.md).  
+ This helper function is utilized by [AtlComModuleUnregisterServer](#atlcomunregisterserver) and [CAtlComModule::RegisterTypeLib](../../atl/reference/catlcommodule-class.md#registertypelib).  
   
 ##  <a name="atlunregistertypelib"></a>  AtlUnRegisterTypeLib  
  This function is called to unregister a type library.  
@@ -100,7 +99,7 @@ ATLAPI AtlUnRegisterTypeLib(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This helper function is utilized by [CAtlComModule::UnRegisterTypeLib](../Topic/CAtlComModule::UnRegisterTypeLib.md) and [AtlComModuleUnregisterServer](../Topic/AtlComModuleUnregisterServer.md).  
+ This helper function is utilized by [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) and [AtlComModuleUnregisterServer](#atlcommoduleunregisterserver).  
   
 ##  <a name="atlloadtypelib"></a>  AtlLoadTypeLib  
  This function is called to load a type library.  
@@ -133,7 +132,7 @@ ATLINLINE ATLAPI AtlLoadTypeLib(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This helper function is utilized by [AtlRegisterTypeLib](../Topic/AtlRegisterTypeLib.md) and [AtlUnRegisterTypeLib](../Topic/AtlUnRegisterTypeLib.md).  
+ This helper function is utilized by [AtlRegisterTypeLib](#atlregistertypelib) and [AtlUnRegisterTypeLib](#atlunregistertypelib).  
   
 ##  <a name="atlupdateregistryfromresourced"></a>  AtlUpdateRegistryFromResourceD  
  This function was deprecated in Visual Studio 2013 and is removed in Visual Studio 2015.  

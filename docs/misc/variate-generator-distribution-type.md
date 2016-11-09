@@ -1,7 +1,7 @@
 ---
-title: "variate_generator::distribution_type"
+title: "variate_generator::distribution_type | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/27/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

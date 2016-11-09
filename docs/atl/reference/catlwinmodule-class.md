@@ -1,7 +1,7 @@
 ---
-title: "CAtlWinModule Class"
+title: "CAtlWinModule Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAtlWinModule class"
 ms.assetid: 7ec844af-0f68-4a34-b0c8-9de50a025df0
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -55,15 +55,15 @@ class CAtlWinModule : public _ATL_WIN_MODULE
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlWinModule::CAtlWinModule](../Topic/CAtlWinModule::CAtlWinModule.md)|The constructor.|  
-|[CAtlWinModule::~CAtlWinModule](../Topic/CAtlWinModule::~CAtlWinModule.md)|The destructor.|  
+|[CAtlWinModule::CAtlWinModule](#catlwinmodule__catlwinmodule)|The constructor.|  
+|[CAtlWinModule::~CAtlWinModule](#catlwinmodule___dtorcatlwinmodule)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlWinModule::AddCreateWndData](../Topic/CAtlWinModule::AddCreateWndData.md)|Adds a data object.|  
-|[CAtlWinModule::ExtractCreateWndData](../Topic/CAtlWinModule::ExtractCreateWndData.md)|Returns a pointer to the window module data object.|  
+|[CAtlWinModule::AddCreateWndData](#catlwinmodule__addcreatewnddata)|Adds a data object.|  
+|[CAtlWinModule::ExtractCreateWndData](#catlwinmodule__extractcreatewnddata)|Returns a pointer to the window module data object.|  
   
 ## Remarks  
  This class provides support for all ATL classes which require windowing features.  
@@ -123,16 +123,9 @@ void* ExtractCreateWndData();
 ```  
   
 ### Return Value  
- Returns a pointer to the `_AtlCreateWndData` structure previously added with [CAtlWinModule::AddCreateWndData](../Topic/CAtlWinModule::AddCreateWndData.md), or NULL if no object is available.  
+ Returns a pointer to the `_AtlCreateWndData` structure previously added with [CAtlWinModule::AddCreateWndData](#catlwinmodule__addcreatewnddata), or NULL if no object is available.  
   
 ## See Also  
  [_ATL_WIN_MODULE](../Topic/_ATL_WIN_MODULE.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Module Classes](../../atl/atl-module-classes.md)
-
-
-
-
-
-
-

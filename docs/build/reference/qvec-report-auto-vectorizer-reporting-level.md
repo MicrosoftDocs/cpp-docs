@@ -1,7 +1,7 @@
 ---
-title: "-Qvec-report (Auto-Vectorizer Reporting Level)"
+title: "-Qvec-report (Auto-Vectorizer Reporting Level) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -59,7 +59,7 @@ Enables the reporting feature of the compiler [Auto-Vectorizer](../../parallel/a
   
 ### To set the /Qvec-report compiler option programmatically  
   
--   Use the code example in <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions*>.  
+-   Use the code example in <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
   
 ## See Also  
  [/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)   

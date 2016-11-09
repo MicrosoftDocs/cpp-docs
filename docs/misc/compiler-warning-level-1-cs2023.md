@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS2023"
+title: "Compiler Warning (level 1) CS2023 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS2023"
 ms.assetid: 2201fcbc-0eb6-4a1e-baa0-50c5968d1d92
 caps.latest.revision: 9
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,6 +39,6 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS2023
 Ignoring /noconfig option because it was specified in a response file  
   
- The [/noconfig](../Topic/-noconfig%20\(C%23%20Compiler%20Options\).md) compiler option was specified in a response file, which is not allowed.  
+ The [/noconfig](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option) compiler option was specified in a response file, which is not allowed.  
   
- This warning cannot be suppressed by the [/nowarn](../Topic/-nowarn%20\(C%23%20Compiler%20Options\).md) option.
+ This warning cannot be suppressed by the [/nowarn](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option) option.

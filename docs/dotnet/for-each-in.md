@@ -1,7 +1,7 @@
 ---
-title: "for each, in"
+title: "for each, in | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -134,7 +134,7 @@ Testing
  *expression*  
  A managed array expression or collection. The collection element must be such that the compiler can convert it from <xref:System.Object> to the *identifier* type.  
   
- *expression* evaluates to a type that implements <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable`1>, or a type that defines a `GetEnumerator` method that either returns a type that implements <xref:System.Collections.IEnumerator> or declares all of the methods that are defined in `IEnumerator`.  
+ *expression* evaluates to a type that implements <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, or a type that defines a `GetEnumerator` method that either returns a type that implements <xref:System.Collections.IEnumerator> or declares all of the methods that are defined in `IEnumerator`.  
   
 ### Requirements  
  Compiler option: **/clr**  

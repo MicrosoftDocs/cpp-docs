@@ -1,5 +1,5 @@
 ---
-title: "Type character &#39;&lt;character&gt;&#39; cannot be used in a declaration with an explicit type"
+title: "Type character &#39;&lt;character&gt;&#39; cannot be used in a declaration with an explicit type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ You have used a type character, such as `$`, when explicitly specifying a type.
 -   Remove the type character or remove the `As <Type>` clause from the declaration.  
   
 ## See Also  
- [Type Characters](../Topic/Type%20Characters%20\(Visual%20Basic\).md)   
+ [Type Characters](/dotnet/visual-basic/programming-guide/language-features/data-types/type-characters)   
  [Implicit and Explicit Declaration (Visual Basic)](http://msdn.microsoft.com/en-us/7260dafd-c1d5-46fc-98bf-2ea0fb94996c)

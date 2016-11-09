@@ -1,5 +1,5 @@
 ---
-title: "&#39;Exit Select&#39; can only appear inside a &#39;Select&#39; statement"
+title: "&#39;Exit Select&#39; can only appear inside a &#39;Select&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ An `Exit Select` statement occurs outside a `Select` block. `Exit Select` is val
 2.  Verify that other control structures within the `Select` block are correctly terminated.  
   
 ## See Also  
- [Select...Case Statement](../Topic/Select...Case%20Statement%20\(Visual%20Basic\).md)
+ [Select...Case Statement](/dotnet/visual-basic/language-reference/statements/select-case-statement)

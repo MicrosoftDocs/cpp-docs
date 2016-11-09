@@ -1,5 +1,5 @@
 ---
-title: "Extension method &#39;&lt;methodname&gt;&#39; has type constraints that can never be satisfied"
+title: "Extension method &#39;&lt;methodname&gt;&#39; has type constraints that can never be satisfied | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -62,5 +62,5 @@ The type parameters of this method interact in a way that prevents them from eve
 -   Change the type declaration to remove the interdependence between the types.  
   
 ## See Also  
- [Extension Methods](../Topic/Extension%20Methods%20\(Visual%20Basic\).md)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)
+ [Extension Methods](/dotnet/visual-basic/language-reference/procedures/extension-methods)   
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)

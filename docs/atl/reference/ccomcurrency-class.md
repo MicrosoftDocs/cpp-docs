@@ -1,7 +1,7 @@
 ---
-title: "CComCurrency Class"
+title: "CComCurrency Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComCurrency class"
 ms.assetid: a1c3d10a-bba6-40cc-8bcf-aed9023c8a9e
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -52,18 +52,18 @@ class CComCurrency
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCurrency::CComCurrency](../Topic/CComCurrency::CComCurrency.md)|The constructor for a `CComCurrency` object.|  
+|[CComCurrency::CComCurrency](#ccomcurrency__ccomcurrency)|The constructor for a `CComCurrency` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCurrency::GetCurrencyPtr](../Topic/CComCurrency::GetCurrencyPtr.md)|Returns the address of an `m_currency` data member.|  
-|[CComCurrency::GetFraction](../Topic/CComCurrency::GetFraction.md)|Call this method to return the fractional component of a `CComCurrency` object.|  
-|[CComCurrency::GetInteger](../Topic/CComCurrency::GetInteger.md)|Call this method to return the integer component of a `CComCurrency` object.|  
-|[CComCurrency::Round](../Topic/CComCurrency::Round.md)|Call this method to round a `CComCurrency` object to the nearest integer value.|  
-|[CComCurrency::SetFraction](../Topic/CComCurrency::SetFraction.md)|Call this method to set the fractional component of a `CComCurrency` object.|  
-|[CComCurrency::SetInteger](../Topic/CComCurrency::SetInteger.md)|Call this method to set the integer component of a `CComCurrency` object.|  
+|[CComCurrency::GetCurrencyPtr](#ccomcurrency__getcurrencyptr)|Returns the address of an `m_currency` data member.|  
+|[CComCurrency::GetFraction](#ccomcurrency__getfraction)|Call this method to return the fractional component of a `CComCurrency` object.|  
+|[CComCurrency::GetInteger](#ccomcurrency__getinteger)|Call this method to return the integer component of a `CComCurrency` object.|  
+|[CComCurrency::Round](#ccomcurrency__round)|Call this method to round a `CComCurrency` object to the nearest integer value.|  
+|[CComCurrency::SetFraction](#ccomcurrency__setfraction)|Call this method to set the fractional component of a `CComCurrency` object.|  
+|[CComCurrency::SetInteger](#ccomcurrency__setinteger)|Call this method to set the integer component of a `CComCurrency` object.|  
   
 ### Public Operators  
   
@@ -71,33 +71,33 @@ class CComCurrency
 |----------|-----------------|  
 |[CComCurrency::operator -](../Topic/CComCurrency::operator%20-2.md)|This operator is used to perform subtraction on a `CComCurrency` object.|  
 |[CComCurrency::operator !=](../Topic/CComCurrency::operator%20!=.md)|Compares two `CComCurrency` objects for inequality.|  
-|[CComCurrency::operator *](../Topic/CComCurrency::operator%20*.md)|This operator is used to perform multiplication on a `CComCurrency` object.|  
-|[CComCurrency::operator *=](../Topic/CComCurrency::operator%20*=.md)|This operator is used to perform multiplication on a `CComCurrency` object and assign it the result.|  
+|[CComCurrency::operator *](#ccomcurrency__operator__star)|This operator is used to perform multiplication on a `CComCurrency` object.|  
+|[CComCurrency::operator *=](#ccomcurrency__operator__star_eq)|This operator is used to perform multiplication on a `CComCurrency` object and assign it the result.|  
 |[CComCurrency::operator /](../Topic/CComCurrency::operator%20-1.md)|This operator is used to perform division on a `CComCurrency` object.|  
 |[CComCurrency::operator /=](../Topic/CComCurrency::operator%20-=2.md)|This operator is used to perform division on a `CComCurrency` object and assign it the result.|  
-|[CComCurrency::operator +](../Topic/CComCurrency::operator%20+.md)|This operator is used to perform addition on a `CComCurrency` object.|  
-|[CComCurrency::operator +=](../Topic/CComCurrency::operator%20+=.md)|This operator is used to perform addition on a `CComCurrency` object and assign the result to the current object.|  
+|[CComCurrency::operator +](#ccomcurrency__operator__add)|This operator is used to perform addition on a `CComCurrency` object.|  
+|[CComCurrency::operator +=](#ccomcurrency__operator__add_eq)|This operator is used to perform addition on a `CComCurrency` object and assign the result to the current object.|  
 |[CComCurrency::operator <](../Topic/CComCurrency::operator%20%3C.md)|This operator compares two `CComCurrency` objects to determine the lesser.|  
 |[CComCurrency::operator <=](../Topic/CComCurrency::operator%20%3C=.md)|This operator compares two `CComCurrency` objects to determine equality or the lesser.|  
-|[CComCurrency::operator =](../Topic/CComCurrency::operator%20=.md)|This operator assigns the `CComCurrency` object to a new value.|  
+|[CComCurrency::operator =](#ccomcurrency__operator__eq)|This operator assigns the `CComCurrency` object to a new value.|  
 |[CComCurrency::operator -=](../Topic/CComCurrency::operator%20-=1.md)|This operator is used to perform subtraction on a `CComCurrency` object and assign it the result.|  
-|[CComCurrency::operator ==](../Topic/CComCurrency::operator%20==.md)|This operator compares two `CComCurrency` objects for equality.|  
+|[CComCurrency::operator ==](#ccomcurrency__operator__eq_eq)|This operator compares two `CComCurrency` objects for equality.|  
 |[CComCurrency::operator >](../Topic/CComCurrency::operator%20%3E.md)|This operator compares two `CComCurrency` objects to determine the larger.|  
 |[CComCurrency::operator >=](../Topic/CComCurrency::operator%20%3E=.md)|This operator compares two `CComCurrency` objects to determine equality or the larger.|  
-|[CComCurrency::operator CURRENCY](../Topic/CComCurrency::operator%20CURRENCY.md)|Casts a `CURRENCY` object.|  
+|[CComCurrency::operator CURRENCY](#ccomcurrency__operator_currency)|Casts a `CURRENCY` object.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCurrency::m_currency](../Topic/CComCurrency::m_currency.md)|The `CURRENCY` variable created by your class instance.|  
+|[CComCurrency::m_currency](#ccomcurrency__m_currency)|The `CURRENCY` variable created by your class instance.|  
   
 ## Remarks  
  `CComCurrency` is a wrapper for the **CURRENCY** data type. **CURRENCY** is implemented as an 8-byte two's-complement integer value scaled by 10,000. This gives a fixed-point number with 15 digits to the left of the decimal point and 4 digits to the right. The **CURRENCY** data type is extremely useful for calculations involving money, or for any fixed-point calculations where accuracy is important.  
   
  The **CComCurrency** wrapper implements arithmetic, assignment, and comparison operations for this fixed-point type. The supported applications have been selected to control the rounding errors that can occur during fixed-point calculations.  
   
- The `CComCurrency` object provides access to the numbers on either side of the decimal point in the form of two components: an integer component which stores the value to the left of the decimal point, and a fractional component which stores the value to the right of the decimal point. The fractional component is stored internally as an integer value between -9999 ( **CY_MIN_FRACTION**) and +9999 ( **CY_MAX_FRACTION**). The method [CComCurrency::GetFraction](../Topic/CComCurrency::GetFraction.md) returns a value scaled by a factor of 10000 ( **CY_SCALE**).  
+ The `CComCurrency` object provides access to the numbers on either side of the decimal point in the form of two components: an integer component which stores the value to the left of the decimal point, and a fractional component which stores the value to the right of the decimal point. The fractional component is stored internally as an integer value between -9999 ( **CY_MIN_FRACTION**) and +9999 ( **CY_MAX_FRACTION**). The method [CComCurrency::GetFraction](#ccomcurrency__getfraction) returns a value scaled by a factor of 10000 ( **CY_SCALE**).  
   
  When specifying the integer and fractional components of a **CComCurrency** object, remember that the fractional component is a number in the range 0 to 9999. This is important when dealing with a currency such as the US dollar that expresses amounts using only two significant digits after the decimal point. Even though the last two digits are not displayed, they must be taken into account.  
   
@@ -190,7 +190,7 @@ CComCurrency(
  A Unicode or ANSI string containing the initial value. The locale of the current thread is used to perform the conversion.  
   
 ### Remarks  
- The constructor sets the initial value of [CComCurrency::m_currency](../Topic/CComCurrency::m_currency.md), and accepts a wide range of data types, including integers, strings, floating-point numbers, **CURRENCY** variables, and other `CComCurrency` objects. If no value is provided, `m_currency` is set to 0.  
+ The constructor sets the initial value of [CComCurrency::m_currency](#ccomcurrency__m_currency), and accepts a wide range of data types, including integers, strings, floating-point numbers, **CURRENCY** variables, and other `CComCurrency` objects. If no value is provided, `m_currency` is set to 0.  
   
  In the event of an error, such as an overflow, the constructors lacking an empty exception specification ( **throw()**) call `AtlThrow` with an HRESULT describing the error.  
   
@@ -608,10 +608,3 @@ HRESULT SetInteger(LONGLONG nInteger);
  [COleCurrency Class](../../mfc/reference/colecurrency-class.md)   
  [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

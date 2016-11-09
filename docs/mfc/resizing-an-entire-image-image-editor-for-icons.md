@@ -1,7 +1,7 @@
 ---
-title: "Resizing an Entire Image (Image Editor for Icons)"
+title: "Resizing an Entire Image (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -42,7 +42,7 @@ translation.priority.ht:
   
 1.  Open the image whose properties you want to change.  
   
-2.  In the **Width** and **Height** boxes in the [Properties window](../Topic/Properties%20Window.md), type the dimensions that you want.  
+2.  In the **Width** and **Height** boxes in the [Properties window](/visual-studio/ide/reference/properties-window), type the dimensions that you want.  
   
      If you are increasing the size of the image, the Image editor extends the image to the right, downward, or both, and fills the new region with the current background color. The image is not stretched.  
   

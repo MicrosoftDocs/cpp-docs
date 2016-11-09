@@ -1,5 +1,5 @@
 ---
-title: "&#39;Next&#39; must be preceded by a matching &#39;For&#39;"
+title: "&#39;Next&#39; must be preceded by a matching &#39;For&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,5 +49,5 @@ A `Next` statement occurs without a corresponding `For` or `For Each` statement.
 3.  Ensure that this `For` loop is correctly formatted.  
   
 ## See Also  
- [For...Next Statement](../Topic/For...Next%20Statement%20\(Visual%20Basic\).md)   
- [For Each...Next Statement](../Topic/For%20Each...Next%20Statement%20\(Visual%20Basic\).md)
+ [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)   
+ [For Each...Next Statement](/dotnet/visual-basic/language-reference/statements/for-each-next-statement)

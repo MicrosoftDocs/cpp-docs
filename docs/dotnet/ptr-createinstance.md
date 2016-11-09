@@ -1,7 +1,7 @@
 ---
-title: "ptr::CreateInstance"
+title: "ptr::CreateInstance | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -98,7 +98,7 @@ void CreateInstance(
 ## Exceptions  
  If the `com::ptr` already owns a reference to a COM object, `CreateInstance` throws <xref:System.InvalidOperationException>.  
   
- This function calls `CoCreateInstance` and uses <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR*> to convert any error `HRESULT` to an appropriate exception.  
+ This function calls `CoCreateInstance` and uses <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> to convert any error `HRESULT` to an appropriate exception.  
   
 ## Remarks  
  `CreateInstance` uses `CoCreateInstance` to create a new instance of the specified object, identified either from a ProgID or a CLSID. The `com::ptr` references the newly created object and will automatically release all owned references upon destruction.  

@@ -1,7 +1,7 @@
 ---
-title: "Kinds of Windows"
+title: "Kinds of Windows | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -43,4 +43,4 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # Kinds of Windows
-This content has moved to [Customizing window layouts](../Topic/Customizing%20window%20layouts%20in%20Visual%20Studio.md)
+This content has moved to [Customizing window layouts](/visual-studio/ide/customizing-window-layouts-in-visual-studio)

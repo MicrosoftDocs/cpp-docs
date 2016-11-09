@@ -1,5 +1,5 @@
 ---
-title: "&#39;Group&#39; not allowed in this context; identifier expected"
+title: "&#39;Group&#39; not allowed in this context; identifier expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,8 +45,8 @@ The `Group` keyword is included in the `Into` section of an `Aggregate` clause. 
 -   Remove the `Group` keyword from the `Aggregate` clause. You can add a `Group By` clause to the query to group results.  
   
 ## See Also  
- [Aggregate Clause](../Topic/Aggregate%20Clause%20\(Visual%20Basic\).md)   
- [Group By Clause](../Topic/Group%20By%20Clause%20\(Visual%20Basic\).md)   
- [Group Join Clause](../Topic/Group%20Join%20Clause%20\(Visual%20Basic\).md)   
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [LINQ](../Topic/LINQ%20in%20Visual%20Basic.md)
+ [Aggregate Clause](/dotnet/visual-basic/language-reference/queries/aggregate-clause)   
+ [Group By Clause](/dotnet/visual-basic/language-reference/queries/group-by-clause)   
+ [Group Join Clause](/dotnet/visual-basic/language-reference/queries/group-join-clause)   
+ [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)

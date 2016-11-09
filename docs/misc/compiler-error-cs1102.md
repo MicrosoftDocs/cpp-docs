@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1102"
+title: "Compiler Error CS1102 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1102"
 ms.assetid: 7de798d4-1b4b-4842-ae43-9bc83e6dc9a3
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -64,6 +65,6 @@ public static class Extensions
 ```  
   
 ## See Also  
- [Extension Methods](../Topic/Extension%20Methods%20\(C%23%20Programming%20Guide\).md)   
- [this](../Topic/this%20\(C%23%20Reference\).md)   
- [out](../Topic/out%20\(C%23%20Reference\).md)
+ [Extension Methods](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)   
+ [this](/dotnet/csharp/language-reference/keywords/this)   
+ [out](/dotnet/csharp/language-reference/keywords/out)

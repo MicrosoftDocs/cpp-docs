@@ -1,7 +1,7 @@
 ---
-title: "CComHeapPtr Class"
+title: "CComHeapPtr Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComHeapPtr class"
 ms.assetid: bd08b53d-da2b-43ab-a79c-e7c8dbbc5994
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -58,7 +58,7 @@ template<typename T> class CComHeapPtr :  public CHeapPtr<T,CComAllocator>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComHeapPtr::CComHeapPtr](../Topic/CComHeapPtr::CComHeapPtr.md)|The constructor.|  
+|[CComHeapPtr::CComHeapPtr](#ccomheapptr__ccomheapptr)|The constructor.|  
   
 ## Remarks  
  `CComHeapPtr` derives from `CHeapPtr`, but uses [CComAllocator](../../atl/reference/ccomallocator-class.md) to allocate memory using COM routines. See [CHeapPtr](../../atl/reference/cheapptr-class.md) and [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md) for the methods available.  
@@ -93,10 +93,3 @@ explicit CComHeapPtr(T* pData) throw();
  [CHeapPtrBase Class](../../atl/reference/cheapptrbase-class.md)   
  [CComAllocator Class](../../atl/reference/ccomallocator-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

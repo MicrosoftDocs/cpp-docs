@@ -1,7 +1,7 @@
 ---
-title: "-BASE (Base Address)"
+title: "-BASE (Base Address) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -97,7 +97,7 @@ link dlltwo.obj /dll /base:@dlls.txt,two
   
 ### To set this linker option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.BaseAddress*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.BaseAddress%2A>.  
   
 ## See Also  
  [Setting Linker Options](../../build/reference/setting-linker-options.md)   

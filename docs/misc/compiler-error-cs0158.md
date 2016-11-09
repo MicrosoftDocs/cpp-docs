@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0158"
+title: "Compiler Error CS0158 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0158"
 ms.assetid: 88ac61a9-ce55-4272-9141-0873765a7034
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0158
 The label 'label' shadows another label by the same name in a contained scope  
   
- A label in an inner scope hides a label with the same name in an outer scope. For more information, see [goto](../Topic/goto%20\(C%23%20Reference\).md).  
+ A label in an inner scope hides a label with the same name in an outer scope. For more information, see [goto](/dotnet/csharp/language-reference/keywords/goto).  
   
  The following sample generates CS0158:  
   

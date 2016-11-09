@@ -1,7 +1,7 @@
 ---
-title: "CSimpleMapEqualHelper Class"
+title: "CSimpleMapEqualHelper Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CSimpleMapEqualHelper class"
 ms.assetid: 9bb2968a-d609-405c-8272-ff3b42df6164
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -57,8 +57,8 @@ template <class TKey,  class TVal>  class CSimpleMapEqualHelper
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleMapEqualHelper::IsEqualKey](../Topic/CSimpleMapEqualHelper::IsEqualKey.md)|(Static) Tests two keys for equality.|  
-|[CSimpleMapEqualHelper::IsEqualValue](../Topic/CSimpleMapEqualHelper::IsEqualValue.md)|(Static) Tests two values for equality.|  
+|[CSimpleMapEqualHelper::IsEqualKey](#csimplemapequalhelper__isequalkey)|(Static) Tests two keys for equality.|  
+|[CSimpleMapEqualHelper::IsEqualValue](#csimplemapequalhelper__isequalvalue)|(Static) Tests two values for equality.|  
   
 ## Remarks  
  This traits class is a supplement to the `CSimpleMap` class. It provides methods for comparing two `CSimpleMap` object elements (specifically, the key and value components) for equality. By default, the keys and values are compared using `operator==()`, but if the map contains complex data types that lack their own equality operator, this class can be overridden to provide the extra required functionality.  
@@ -103,10 +103,3 @@ static bool IsEqualValue(const TVal& v1,  const TVal& v2);
 ## See Also  
  [CSimpleMapEqualHelperFalse Class](../../atl/reference/csimplemapequalhelperfalse-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

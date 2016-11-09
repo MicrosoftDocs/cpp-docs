@@ -1,5 +1,5 @@
 ---
-title: "Anonymous type property &#39;&lt;propertyname&gt;&#39; cannot be used in the definition of a lambda expression within the same initialization list"
+title: "Anonymous type property &#39;&lt;propertyname&gt;&#39; cannot be used in the definition of a lambda expression within the same initialization list | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -80,5 +80,5 @@ Properties defined in the initialization list of an anonymous type cannot be par
     ```  
   
 ## See Also  
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md)   
- [Anonymous Types](../Topic/Anonymous%20Types%20\(Visual%20Basic\).md)
+ [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)   
+ [Anonymous Types](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types)

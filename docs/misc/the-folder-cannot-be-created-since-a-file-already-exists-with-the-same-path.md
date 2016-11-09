@@ -1,5 +1,5 @@
 ---
-title: "The folder cannot be created since a file already exists with the same path"
+title: "The folder cannot be created since a file already exists with the same path | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -42,7 +42,7 @@ An attempt has been made to create a directory, but a file already exists with t
 ## See Also  
  [How to: Create a Directory](../Topic/How%20to:%20Create%20a%20Directory%20in%20Visual%20Basic.md)   
  [How to: Rename a Directory in Visual Basic](http://msdn.microsoft.com/en-us/780c7afc-a03c-4b01-865a-510fe331b1cc)   
- [My.Computer.FileSystem Object](../Topic/My.Computer.FileSystem%20Object.md)   
+ [My.Computer.FileSystem Object](/dotnet/visual-basic/language-reference/objects/my-computer-filesystem-object)   
  [My.Computer.FileSystem.CreateDirectory Method](http://msdn.microsoft.com/en-us/2c1688d2-a60c-4e68-9a1a-4006917b28e1)   
  [My.Computer.FileSystem.RenameDirectory Method](http://msdn.microsoft.com/en-us/14700cb3-9d29-46e2-af8d-61970d7e251b)   
- [Creating, Deleting, and Moving Files and Directories](../Topic/Creating,%20Deleting,%20and%20Moving%20Files%20and%20Directories%20in%20Visual%20Basic.md)
+ [Creating, Deleting, and Moving Files and Directories](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories)

@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;member&gt;&#39;, implicitly defined for &#39;&lt;eventname&gt;&#39;, cannot shadow a &#39;MustOverride&#39; method in the base &lt;class&gt; &#39;&lt;classname&gt;&#39;"
+title: "&#39;&lt;member&gt;&#39;, implicitly defined for &#39;&lt;eventname&gt;&#39;, cannot shadow a &#39;MustOverride&#39; method in the base &lt;class&gt; &#39;&lt;classname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ The specified event implicitly declares a member with the same name as a method 
 -   Remove the `MustOverride` modifier from the method in the base class or give the property or method a unique name.  
   
 ## See Also  
- [MustOverride](../Topic/MustOverride%20\(Visual%20Basic\).md)   
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [MustOverride](/dotnet/visual-basic/language-reference/modifiers/mustoverride)   
+ [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)

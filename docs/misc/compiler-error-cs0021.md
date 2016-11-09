@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0021"
+title: "Compiler Error CS0021 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0021"
 ms.assetid: 4eb5fa24-8261-4962-b36a-224be5074217
 caps.latest.revision: 14
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0021
 Cannot apply indexing with [] to an expression of type 'type'  
   
- An attempt was made to access a value through an indexer on a data type that does not support [Indexers](../Topic/Indexers%20\(C%23%20Programming%20Guide\).md).  
+ An attempt was made to access a value through an indexer on a data type that does not support [Indexers](/dotnet/csharp/programming-guide/indexers/index).  
   
  You may get CS0021 when trying to use an indexer in a C++ assembly. In this case, decorate the C++ class with the `DefaultMember` attribute so the C# compiler knows which indexer is the default. The following sample generates CS0021.  
   

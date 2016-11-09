@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB1040"
+title: "MSBuild Error MSB1040 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/24/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -42,6 +42,6 @@ translation.priority.mt:
 -   Specify a valid `ToolsVersion` value when you build by using the **/ToolsVersion** switch on the command line.  
   
 ## See Also  
- [Overriding ToolsVersion Settings](../Topic/Overriding%20ToolsVersion%20Settings.md)   
- [Project Element (MSBuild)](../Topic/Project%20Element%20\(MSBuild\).md)   
- [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md)
+ [Overriding ToolsVersion Settings](/visual-studio/msbuild/overriding-toolsversion-settings)   
+ [Project Element (MSBuild)](/visual-studio/msbuild/project-element-msbuild)   
+ [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)

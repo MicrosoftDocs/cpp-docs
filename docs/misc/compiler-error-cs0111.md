@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0111"
+title: "Compiler Error CS0111 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0111"
 ms.assetid: 87afb689-f27b-451d-84eb-d6bdf17aea41
 caps.latest.revision: 11
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0111
 Type 'class' already defines a member called 'member' with the same parameter types  
   
- CS0111 occurs if a class contains two member declarations with the same name and parameter types. For more information, see [Methods](../Topic/Methods%20\(C%23%20Programming%20Guide\).md).  
+ CS0111 occurs if a class contains two member declarations with the same name and parameter types. For more information, see [Methods](/dotnet/csharp/programming-guide/classes-and-structs/methods).  
   
 ## Example  
  The following sample generates CS0111.  

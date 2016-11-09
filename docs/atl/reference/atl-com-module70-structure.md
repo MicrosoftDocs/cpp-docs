@@ -1,7 +1,7 @@
 ---
-title: "_ATL_COM_MODULE70 Structure"
+title: "_ATL_COM_MODULE70 Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "_ATL_COM_MODULE70 structure"
   - "ATL_COM_MODULE70 structure"
 ms.assetid: 5b0b2fd0-bdeb-4c7e-8870-78fa69ace6e6
-caps.latest.revision: 14
+caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -44,12 +44,12 @@ Used by COM-related code in ATL.
 ## Syntax  
   
 ```
-struct _ATL_COM_MODULE70{  UINT cbSize;  HINSTANCE m_hInstTypeLib;
-
+struct _ATL_COM_MODULE70 {
+    UINT cbSize;
+    HINSTANCE m_hInstTypeLib;
     _ATL_OBJMAP_ENTRY** m_ppAutoObjMapFirst;
-
-    _ATL_OBJMAP_ENTRY** m_ppAutoObjMapLast;  CRITICAL_SECTION m_csObjMap;
-
+    _ATL_OBJMAP_ENTRY** m_ppAutoObjMapLast;
+    CRITICAL_SECTION m_csObjMap;
 };
 ```  
   

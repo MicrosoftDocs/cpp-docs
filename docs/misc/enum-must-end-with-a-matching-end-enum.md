@@ -1,5 +1,5 @@
 ---
-title: "&#39;Enum&#39; must end with a matching &#39;End Enum&#39;"
+title: "&#39;Enum&#39; must end with a matching &#39;End Enum&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ An `Enum` statement occurs without a corresponding `End Enum` statement. An `End
 2.  Add an `End Enum` statement to the end of the enumeration.  
   
 ## See Also  
- [Enum Statement](../Topic/Enum%20Statement%20\(Visual%20Basic\).md)
+ [Enum Statement](/dotnet/visual-basic/language-reference/statements/enum-statement)

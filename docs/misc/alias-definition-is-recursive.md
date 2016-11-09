@@ -1,7 +1,7 @@
 ---
-title: "Alias definition is recursive."
+title: "Alias definition is recursive. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -45,5 +45,5 @@ This error generally occurs when an alias has been defined that directly or indi
 2.  Review the current list of aliases and their definitions by entering `>alias` in the **Command** window and try again.  
   
 ## See Also  
- [Alias Command](../Topic/Alias%20Command.md)   
- [Visual Studio Command Aliases](../Topic/Visual%20Studio%20Command%20Aliases.md)
+ [Alias Command](/visual-studio/ide/reference/alias-command)   
+ [Visual Studio Command Aliases](/visual-studio/ide/reference/visual-studio-command-aliases)

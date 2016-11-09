@@ -1,7 +1,7 @@
 ---
-title: "CComClassFactoryAutoThread Class"
+title: "CComClassFactoryAutoThread Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComClassFactoryAutoThread class"
 ms.assetid: 22008042-533f-4dd9-bf7e-191ee571f9a1
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -55,8 +55,8 @@ class CComClassFactoryAutoThread : public IClassFactory,   public CComObjectRoot
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComClassFactoryAutoThread::CreateInstance](../Topic/CComClassFactoryAutoThread::CreateInstance.md)|Creates an object of the specified CLSID.|  
-|[CComClassFactoryAutoThread::LockServer](../Topic/CComClassFactoryAutoThread::LockServer.md)|Locks the class factory in memory.|  
+|[CComClassFactoryAutoThread::CreateInstance](#ccomclassfactoryautothread__createinstance)|Creates an object of the specified CLSID.|  
+|[CComClassFactoryAutoThread::LockServer](#ccomclassfactoryautothread__lockserver)|Locks the class factory in memory.|  
   
 ## Remarks  
  `CComClassFactoryAutoThread` is similar to [CComClassFactory](../../atl/reference/ccomclassfactory-class.md), but allows objects to be created in multiple apartments. To take advantage of this support, derive your EXE module from [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md).  
@@ -128,10 +128,3 @@ STDMETHODIMP LockServer(BOOL fLock);
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
  [CComGlobalsThreadModel](../Topic/CComGlobalsThreadModel.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

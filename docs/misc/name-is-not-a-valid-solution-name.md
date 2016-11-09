@@ -1,7 +1,7 @@
 ---
-title: "&lt;name&gt; is not a valid solution name."
+title: "&lt;name&gt; is not a valid solution name. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -45,4 +45,4 @@ This error generally occurs when the command `File.NewProject` has been entered 
      Check that the solution name does not contain leading or trailing spaces and is not a reserved word. Reserved words include NUL, CON, AUX, COM*x*, or LPT*x*, where *x* is a digit 1-9.  
   
 ## See Also  
- [Command Window](../Topic/Command%20Window.md)
+ [Command Window](/visual-studio/ide/reference/command-window)

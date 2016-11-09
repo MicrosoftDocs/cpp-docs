@@ -1,5 +1,5 @@
 ---
-title: "Array initializers are valid only for arrays, but the type of &#39;&lt;variablename&gt;&#39; is &#39;&lt;typename&gt;&#39;"
+title: "Array initializers are valid only for arrays, but the type of &#39;&lt;variablename&gt;&#39; is &#39;&lt;typename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -51,6 +51,6 @@ An attempt was made to initialize a non-array variable with a list of values.
      `Dim intvalue As Integer = 1`  
   
 ## See Also  
- [Dim Statement](../Topic/Dim%20Statement%20\(Visual%20Basic\).md)   
- [Variable Declaration](../Topic/Variable%20Declaration%20in%20Visual%20Basic.md)   
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
+ [Variable Declaration](/dotnet/visual-basic/programming-guide/language-features/variables/variable-declaration)   
+ [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)

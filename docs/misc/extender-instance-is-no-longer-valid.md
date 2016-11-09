@@ -1,7 +1,7 @@
 ---
-title: "Extender instance is no longer valid."
+title: "Extender instance is no longer valid. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -45,4 +45,4 @@ The Extender instance could not be created successfully or was destroyed.
   
 ## See Also  
  <xref:EnvDTE.ObjectExtenders>   
- <xref:EnvDTE.ObjectExtenders.GetExtender*>
+ <xref:EnvDTE.ObjectExtenders.GetExtender%2A>

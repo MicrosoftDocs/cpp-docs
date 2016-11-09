@@ -1,7 +1,7 @@
 ---
-title: "Walkthrough: Creating a Generated API"
+title: "Walkthrough: Creating a Generated API | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -28,4 +28,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Walkthrough: Creating a Generated API
-This topic is obsolete. Instead, please see [Writing Code to Customise a Domain-Specific Language](../Topic/Writing%20Code%20to%20Customise%20a%20Domain-Specific%20Language.md).
+This topic is obsolete. Instead, please see [Writing Code to Customise a Domain-Specific Language](/visual-studio/modeling/writing-code-to-customise-a-domain-specific-language).

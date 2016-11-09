@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: Cordova Build Errors"
+title: "Troubleshooting Exceptions: Cordova Build Errors | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -15,6 +15,7 @@ f1_keywords:
   - "BLDErr_BLD_Win8Required"
 ms.assetid: 781c09e3-0704-4b30-9230-036cbdb2dff9
 caps.latest.revision: 14
+author: "mikejo5000"
 ms.author: "mikejo"
 translation.priority.ht: 
   - "de-de"

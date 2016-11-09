@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1508"
+title: "Compiler Error CS1508 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1508"
 ms.assetid: 979bc615-58ce-49f8-ba73-e6cf57c56418
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS1508
 Resource identifier 'identifier' has already been used in this assembly  
   
- In a compilation, the same identifier (***identifier***) was passed to two or more [/resource](../Topic/-resource%20\(C%23%20Compiler%20Options\).md) or [/linkresource](../Topic/-linkresource%20\(C%23%20Compiler%20Options\).md) compiler options.  
+ In a compilation, the same identifier (***identifier***) was passed to two or more [/resource](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option) or [/linkresource](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option) compiler options.  
   
  For example, the following options would generate CS1508:  
   

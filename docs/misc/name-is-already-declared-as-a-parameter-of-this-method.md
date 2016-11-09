@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;name&gt;&#39; is already declared as a parameter of this method"
+title: "&#39;&lt;name&gt;&#39; is already declared as a parameter of this method | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ The specified parameter name has already been declared for this method.
 -   Rename the parameter so that it is unique.  
   
 ## See Also  
- [Procedure Parameters and Arguments](../Topic/Procedure%20Parameters%20and%20Arguments%20\(Visual%20Basic\).md)
+ [Procedure Parameters and Arguments](/dotnet/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 3) C4580"
+title: "Compiler Warning (level 3) C4580 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.ht:
 # Compiler Warning (level 3) C4580
 [attribute] is deprecated; instead specify System::Attribute or Platform::Metadata as a base class  
   
- [attribute](../../windows/attribute.md) is no longer the preferred syntax for creating user-defined attributes. For more information, see [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md). For CLR code, derive attributes from <xref:Attribute>. For Windows Runtime code, derive attributes from `Platform::Metadata`.  
+ [attribute](../../windows/attribute.md) is no longer the preferred syntax for creating user-defined attributes. For more information, see [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md). For CLR code, derive attributes from [System::Attribute](assetId:///System::Attribute?qualifyHint=False&autoUpgrade=True). For Windows Runtime code, derive attributes from `Platform::Metadata`.  
   
 ## Example  
  The following sample generates C3454 and shows how to fix it.  

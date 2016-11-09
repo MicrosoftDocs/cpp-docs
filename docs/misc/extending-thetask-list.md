@@ -1,7 +1,7 @@
 ---
-title: "Extending theTask List"
+title: "Extending theTask List | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -35,13 +35,13 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] **Task List** le
   
  Tasks are handled through a service named <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList>, which implements <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList2>. To use basic **Task List** functionality, you must create a task provider by implementing <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider>.  
   
- Register your task provider with the <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> service by calling <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RegisterTaskProvider*>, which returns a cookie value that must be used to uniquely identify the task provider in all subsequent transactions.  
+ Register your task provider with the <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> service by calling <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RegisterTaskProvider%2A>, which returns a cookie value that must be used to uniquely identify the task provider in all subsequent transactions.  
   
- Every task provider implementation is responsible for maintaining an internal list of tasks. The task provider can call <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RefreshTasks*> on **Task List** to update the displayed list of tasks. When this occurs:  
+ Every task provider implementation is responsible for maintaining an internal list of tasks. The task provider can call <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RefreshTasks%2A> on **Task List** to update the displayed list of tasks. When this occurs:  
   
-1.  The service calls back into the task provider by using the <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider.EnumTaskItems*> method.  
+1.  The service calls back into the task provider by using the <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider.EnumTaskItems%2A> method.  
   
-2.  The task provider implementation of <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider.EnumTaskItems*> returns an <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumTaskItems> object.  
+2.  The task provider implementation of <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider.EnumTaskItems%2A> returns an <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumTaskItems> object.  
   
 3.  The <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumTaskItems> object iterates over a collection of <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem> objects.  
   

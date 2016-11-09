@@ -1,5 +1,5 @@
 ---
-title: "Property &#39;&lt;propertyname&gt;&#39; cannot be initialized in an object initializer expression because it requires arguments"
+title: "Property &#39;&lt;propertyname&gt;&#39; cannot be initialized in an object initializer expression because it requires arguments | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.IdentityModel.Tokens.SecurityTokenValidationException"
+title: "Troubleshooting Exceptions: System.IdentityModel.Tokens.SecurityTokenValidationException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -34,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Troubleshooting Exceptions: System.IdentityModel.Tokens.SecurityTokenValidationException
-A <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> exception is thrown when a received security token is not valid. The exception typically is thrown by the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateToken*> method.  
+A <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> exception is thrown when a received security token is not valid. The exception typically is thrown by the <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateToken%2A> method.  
   
 ## See Also  
  <xref:System.IdentityModel.Tokens.SecurityTokenValidationException>   

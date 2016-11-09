@@ -1,7 +1,7 @@
 ---
-title: "Walkthrough: Using the Debugger with Async Methods"
+title: "Walkthrough: Using the Debugger with Async Methods | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -22,6 +22,7 @@ helpviewer_keywords:
   - "Step Out command, within async method"
 ms.assetid: 5adb2531-3f09-4b7e-8baa-29de80abee6e
 caps.latest.revision: 23
+author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 translation.priority.ht: 
@@ -51,13 +52,13 @@ By using the Async feature, you can call into asynchronous methods without using
 -   Understand the behavior of the **Step Out** command when you use it from within an async method.  
   
 ## Breakpoints to Show Control Flow  
- If you mark a method with the [Async](../Topic/Async%20\(Visual%20Basic\).md) (Visual Basic) or [async](../Topic/async%20\(C%23%20Reference\).md) (C#) modifier, you can use the [Await](../Topic/Async%20\(Visual%20Basic\).md) (Visual Basic) or [await](../Topic/await%20\(C%23%20Reference\).md) (C#) operator in the method. To create an await expression, you associate the await operator with a task. When an await expression is called for the task, the current method exits immediately and returns a different task. When the task that's associated with the await operator finishes, execution resumes in the same method. For more information, see [Control Flow in Async Programs](../Topic/Control%20Flow%20in%20Async%20Programs%20\(C%23%20and%20Visual%20Basic\).md).  
+ If you mark a method with the [Async](/dotnet/visual-basic/language-reference/modifiers/async) (Visual Basic) or [async](/dotnet/csharp/language-reference/keywords/async) (C#) modifier, you can use the [Await](/dotnet/visual-basic/language-reference/modifiers/async) (Visual Basic) or [await](/dotnet/csharp/language-reference/keywords/await) (C#) operator in the method. To create an await expression, you associate the await operator with a task. When an await expression is called for the task, the current method exits immediately and returns a different task. When the task that's associated with the await operator finishes, execution resumes in the same method. For more information, see [Control Flow in Async Programs](../Topic/Control%20Flow%20in%20Async%20Programs%20\(C%23%20and%20Visual%20Basic\).md).  
   
 > [!NOTE]
 >  An async method returns to the caller when either it encounters the first awaited object that’s not yet complete or it reaches the end of the async method, whichever occurs first.  
   
 > [!NOTE]
->  The console apps in these examples use <xref:System.Threading.Tasks.Task.Wait*> method to prevent the application from terminating in `Main`. You shouldn’t use the <xref:System.Threading.Tasks.Task.Wait*> method outside of console applications  because a deadlock situation can occur.  
+>  The console apps in these examples use <xref:System.Threading.Tasks.Task.Wait%2A> method to prevent the application from terminating in `Main`. You shouldn’t use the <xref:System.Threading.Tasks.Task.Wait%2A> method outside of console applications  because a deadlock situation can occur.  
   
  The following procedure sets breakpoints to demonstrate what happens when the application reaches an await statement. You can also demonstrate the control flow by adding `Debug.WriteLine` statements.  
   
@@ -93,7 +94,7 @@ By using the Async feature, you can call into asynchronous methods without using
  When the await statement immediately returns a different task, that task is the returned argument of the async method that contains the await operator (`ProcessAsync`). The task that’s returned by the await includes code execution that occurs after the await in the same method, which is why that task is different from the task that’s associated with the await.  
   
 ## Step Into and Step Over  
- The **Step Into** command steps into a method, but the **Step Over** command executes the method call and then breaks on the next line of the calling method. For more information, see [Step into, over, or out of the code](../Topic/Navigating%20through%20Code%20with%20the%20Debugger.md#BKMK_Step_into__over__or_out_of_the_code).  
+ The **Step Into** command steps into a method, but the **Step Over** command executes the method call and then breaks on the next line of the calling method. For more information, see [Step into, over, or out of the code](/visual-studio/debugger/navigating-through-code-with-the-debugger).  
   
  The following procedure shows what occurs when you choose the **Step Into** or **Step Over** commands at an await statement.  
   
@@ -190,4 +191,4 @@ By using the Async feature, you can call into asynchronous methods without using
      The application continues with the statement that follows the await statement in the called async function (`DoSomethingAsync`). The "after" message appears in the Output window.  
   
 ## See Also  
- [Navigating through Code with the Debugger](../Topic/Navigating%20through%20Code%20with%20the%20Debugger.md)
+ [Navigating through Code with the Debugger](/visual-studio/debugger/navigating-through-code-with-the-debugger)

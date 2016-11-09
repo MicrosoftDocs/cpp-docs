@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1663"
+title: "Compiler Error CS1663 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1663"
 ms.assetid: 013f36ac-8925-4cee-9008-54fa7ad1324b
 caps.latest.revision: 10
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

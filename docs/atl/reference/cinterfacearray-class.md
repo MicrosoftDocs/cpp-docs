@@ -1,7 +1,7 @@
 ---
-title: "CInterfaceArray Class"
+title: "CInterfaceArray Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CInterfaceArray class"
 ms.assetid: 1f29cf66-a086-4a7b-b6a8-64f73da39f79
-caps.latest.revision: 17
+caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -66,7 +66,7 @@ template <class   I,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CInterfaceArray::CInterfaceArray](../Topic/CInterfaceArray::CInterfaceArray.md)|The constructor for the interface array.|  
+|[CInterfaceArray::CInterfaceArray](#cinterfacearray__cinterfacearray)|The constructor for the interface array.|  
   
 ## Remarks  
  This class provides a constructor and derived methods for creating an array of COM interface pointers. Use [CInterfaceList](../../atl/reference/cinterfacelist-class.md) when a list is required.  
@@ -96,10 +96,3 @@ CInterfaceArray() throw();
  [CComQIPtr Class](../../atl/reference/ccomqiptr-class.md)   
  [CComQIPtrElementTraits Class](../../atl/reference/ccomqiptrelementtraits-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

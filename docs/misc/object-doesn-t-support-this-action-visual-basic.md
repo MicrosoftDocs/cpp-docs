@@ -1,5 +1,5 @@
 ---
-title: "Object doesn&#39;t support this action (Visual Basic)"
+title: "Object doesn&#39;t support this action (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -42,4 +42,4 @@ You referenced a method or property that is not supported by this object.
 2.  Ensure that the names of properties and methods are spelled correctly.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

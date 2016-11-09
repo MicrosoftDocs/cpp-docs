@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;typename&gt;&#39; cannot shadow a &#39;MustOverride&#39; method implicitly declared for property &#39;&lt;propertyname&gt;&#39; in &lt;type&gt; &#39;&lt;typename&gt;&#39;"
+title: "&#39;&lt;typename&gt;&#39; cannot shadow a &#39;MustOverride&#39; method implicitly declared for property &#39;&lt;propertyname&gt;&#39; in &lt;type&gt; &#39;&lt;typename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,6 +47,6 @@ The specified method name conflicts with a `MustOverride` method implicitly gene
 2.  Remove the `MustOverride` modifier from the property in the base class.  
   
 ## See Also  
- [MustOverride](../Topic/MustOverride%20\(Visual%20Basic\).md)   
- [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)   
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)
+ [MustOverride](/dotnet/visual-basic/language-reference/modifiers/mustoverride)   
+ [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)   
+ [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)

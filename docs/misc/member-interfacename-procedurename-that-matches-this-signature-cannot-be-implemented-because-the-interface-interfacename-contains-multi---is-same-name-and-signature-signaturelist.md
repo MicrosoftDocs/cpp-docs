@@ -1,5 +1,5 @@
 ---
-title: "Member &#39;&lt;interfacename&gt;.&lt;procedurename&gt;&#39; that matches this signature cannot be implemented because the interface &#39;&lt;interfacename&gt;&#39; contains multiple members with this same name and signature: &lt;signaturelist&gt;"
+title: "Member &#39;&lt;interfacename&gt;.&lt;procedurename&gt;&#39; that matches this signature cannot be implemented because the interface &#39;&lt;interfacename&gt;&#39; contains multiple members with this same name and signature: &lt;signaturelist&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -66,6 +66,6 @@ End Class
 -   Do not implement this base class. You cannot implement it with the set of type arguments you are using, because you must implement every one of its members.  
   
 ## See Also  
- [Implements](../Topic/Implements%20Clause%20\(Visual%20Basic\).md)   
- [Implements Statement](../Topic/Implements%20Statement.md)   
+ [Implements](/dotnet/visual-basic/language-reference/statements/implements-clause)   
+ [Implements Statement](/dotnet/visual-basic/language-reference/statements/implements-statement)   
  [NOT IN BUILD: Implements Keyword and Implements Statement](http://msdn.microsoft.com/en-us/b96560f7-6413-480f-a1e2-f80253bab5be)

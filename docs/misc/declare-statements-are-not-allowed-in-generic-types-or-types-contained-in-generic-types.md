@@ -1,5 +1,5 @@
 ---
-title: "&#39;Declare&#39; statements are not allowed in generic types or types contained in generic types"
+title: "&#39;Declare&#39; statements are not allowed in generic types or types contained in generic types | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ A `Declare` statement appears as part of a generic class or structure, or a clas
 -   Move the `Declare` statement outside the scope of any generic type, or remove it altogether.  
   
 ## See Also  
- [Declare Statement](../Topic/Declare%20Statement.md)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)
+ [Declare Statement](/dotnet/visual-basic/language-reference/statements/declare-statement)   
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)

@@ -1,5 +1,5 @@
 ---
-title: "The -moduleassemblyname option may only be specified when building a target of type &#39;module&#39;"
+title: "The -moduleassemblyname option may only be specified when building a target of type &#39;module&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ The Visual Basic compiler has been passed the `/moduleassemblyname` compiler opt
 1.  Remove the `/moduleassemblyname` compiler option or set the `/target` option to `module`.  
   
 ## See Also  
- [/target (Visual Basic)](../Topic/-target%20\(Visual%20Basic\).md)   
- [/moduleassemblyname](../Topic/-moduleassemblyname.md)   
- [Visual Basic Command-Line Compiler](../Topic/Visual%20Basic%20Command-Line%20Compiler.md)
+ [/target (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/target)   
+ [/moduleassemblyname](/dotnet/visual-basic/reference/command-line-compiler/moduleassemblyname)   
+ [Visual Basic Command-Line Compiler](/dotnet/visual-basic/reference/command-line-compiler/index)

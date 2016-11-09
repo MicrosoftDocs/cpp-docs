@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0473"
+title: "Compiler Error CS0473 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0473"
 ms.assetid: 58eb141e-7da0-41c8-b868-7cd2a15f07f9
 caps.latest.revision: 9
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

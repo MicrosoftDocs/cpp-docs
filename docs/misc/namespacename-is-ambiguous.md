@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;namespacename&gt;&#39; is ambiguous"
+title: "&#39;&lt;namespacename&gt;&#39; is ambiguous | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ You have provided a name that is ambiguous and therefore conflicts with another 
 -   Fully qualify the name.  
   
 ## See Also  
- [Namespaces in Visual Basic](../Topic/Namespaces%20in%20Visual%20Basic.md)   
- [Namespace Statement](../Topic/Namespace%20Statement.md)
+ [Namespaces in Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces)   
+ [Namespace Statement](/dotnet/visual-basic/language-reference/statements/namespace-statement)

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0837"
+title: "Compiler Error CS0837 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0837"
 ms.assetid: cbde45dc-222c-4bfe-8814-856476319d37
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0837
 The first operand of an "is" or "as" operator may not be a lambda expression or anonymous method.  
   
- Lambda expressions and anonymous methods may not be used on the left side of [is](../Topic/is%20\(C%23%20Reference\).md) or [as](../Topic/as%20\(C%23%20Reference\).md).  
+ Lambda expressions and anonymous methods may not be used on the left side of [is](/dotnet/csharp/language-reference/keywords/is) or [as](/dotnet/csharp/language-reference/keywords/as).  
   
 ### To correct this error  
   

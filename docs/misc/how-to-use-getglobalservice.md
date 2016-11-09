@@ -1,7 +1,7 @@
 ---
-title: "How to: Use GetGlobalService"
+title: "How to: Use GetGlobalService | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -33,11 +33,11 @@ translation.priority.mt:
 # How to: Use GetGlobalService
 Sometimes you may need to get a service from a tool window or control container that has not been sited, or else has been sited with a service provider that does not know about the service you want. For example, you might want to write to the activity log from within a control. For more information about these and other scenarios, see [How to: Troubleshoot Services](../Topic/How%20to:%20Troubleshoot%20Services.md).  
   
- You can get most [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] services by calling the static <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService*> method.  
+ You can get most [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] services by calling the static <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> method.  
   
- <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService*> relies on a cached service provider that is initialized the first time any VSPackage derived from <xref:Microsoft.VisualStudio.Shell.Package> is sited. You must guarantee that this condition is met, or else be prepared for a null service.  
+ <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> relies on a cached service provider that is initialized the first time any VSPackage derived from <xref:Microsoft.VisualStudio.Shell.Package> is sited. You must guarantee that this condition is met, or else be prepared for a null service.  
   
- Fortunately, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService*> works correctly most of the time.  
+ Fortunately, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> works correctly most of the time.  
   
 -   If a VSPackage provides a service known only to another VSPackage, the VSPackage requesting the service is sited before the VSPackage providing the service is loaded.  
   
@@ -56,5 +56,5 @@ Sometimes you may need to get a service from a tool window or control container 
   
 ## See Also  
  [How to: Troubleshoot Services](../Topic/How%20to:%20Troubleshoot%20Services.md)   
- [Using and Providing Services](../Topic/Using%20and%20Providing%20Services.md)   
- [Service Essentials](../Topic/Service%20Essentials.md)
+ [Using and Providing Services](/visual-studio/extensibility/using-and-providing-services)   
+ [Service Essentials](/visual-studio/extensibility/internals/service-essentials)

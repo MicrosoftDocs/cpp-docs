@@ -1,7 +1,7 @@
 ---
-title: "_byteswap_uint64, _byteswap_ulong, _byteswap_ushort"
+title: "_byteswap_uint64, _byteswap_ulong, _byteswap_ushort | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

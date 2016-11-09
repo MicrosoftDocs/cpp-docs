@@ -1,7 +1,7 @@
 ---
-title: "Extending the Automation Model"
+title: "Extending the Automation Model | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,7 +41,7 @@ This section discusses how the automation model and the VSPackage model represen
  [Automation Model](../misc/automation-model.md)  
  Provides an overview of the automation model and discusses how the automation model lets you customize, adjust, and automate the environment.  
   
- [Contributing to the Automation Model](../Topic/Contributing%20to%20the%20Automation%20Model.md)  
+ [Contributing to the Automation Model](/visual-studio/extensibility/internals/contributing-to-the-automation-model)  
  Provides a more detailed view of the automation model and discusses the ways to provide automation for your VSPackage. This section also provides code examples that show how an automation consumer obtains the initial project automation objects.  
   
 ## Related Sections  

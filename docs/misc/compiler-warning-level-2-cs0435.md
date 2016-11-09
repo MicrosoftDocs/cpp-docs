@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 2) CS0435"
+title: "Compiler Warning (level 2) CS0435 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0435"
 ms.assetid: e70cd8c1-d399-4af8-8b1e-69a1de389aad
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;implementsclause&gt;&#39; cannot implement &#39;&lt;typename&gt;&#39; because &#39;&lt;typename&gt;&#39; is a reserved name"
+title: "&#39;&lt;implementsclause&gt;&#39; cannot implement &#39;&lt;typename&gt;&#39; because &#39;&lt;typename&gt;&#39; is a reserved name | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ An `Implements` statement specified a reserved name.
 -   Rename the interface member that could not be implemented.  
   
 ## See Also  
- [Implements Statement](../Topic/Implements%20Statement.md)
+ [Implements Statement](/dotnet/visual-basic/language-reference/statements/implements-statement)

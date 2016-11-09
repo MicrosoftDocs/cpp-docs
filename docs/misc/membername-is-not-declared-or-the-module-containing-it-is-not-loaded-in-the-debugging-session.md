@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;membername&gt;&#39; is not declared or the module containing it is not loaded in the debugging session"
+title: "&#39;&lt;membername&gt;&#39; is not declared or the module containing it is not loaded in the debugging session | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ The specified member could not be found.
 2.  Access one of the members declared in the module. In some cases, the debugging environment cannot locate members because the modules where they are declared have not yet been loaded.  
   
 ## See Also  
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)

@@ -1,5 +1,5 @@
 ---
-title: "Out of memory (Visual Basic Run-Time Error)"
+title: "Out of memory (Visual Basic Run-Time Error) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -48,4 +48,4 @@ More memory was required than is available.
 5.  Reduce the number of public variables.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

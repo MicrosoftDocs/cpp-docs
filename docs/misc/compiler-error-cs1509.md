@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1509"
+title: "Compiler Error CS1509 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1509"
 ms.assetid: 51a475c3-f085-49cb-89b0-c6582b68653f
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,4 +39,4 @@ translation.priority.mt:
 # Compiler Error CS1509
 Referenced file 'file' is not an assembly; use '/addmodule' option instead  
   
- An output file (output file 1), produced in a compilation that used [/target:module](../Topic/-target:module%20\(C%23%20Compiler%20Options\).md) (does not have an assembly manifest), was specified to [/reference](../Topic/-reference%20\(C%23%20Compiler%20Options\).md). So, rather than appending an assembly to the assembly for the current program, the metadata information in output file 1 will be added to the assembly for the current program.
+ An output file (output file 1), produced in a compilation that used [/target:module](../Topic/-target:module%20\(C%23%20Compiler%20Options\).md) (does not have an assembly manifest), was specified to [/reference](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option). So, rather than appending an assembly to the assembly for the current program, the metadata information in output file 1 will be added to the assembly for the current program.

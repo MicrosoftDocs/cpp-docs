@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0763"
+title: "Compiler Error CS0763 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0763"
 ms.assetid: 940870ba-1250-4365-acaa-7f968ee96c5b
 caps.latest.revision: 5
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -67,5 +68,5 @@ using System;
 ```  
   
 ## See Also  
- [Partial Classes and Methods](../Topic/Partial%20Classes%20and%20Methods%20\(C%23%20Programming%20Guide\).md)   
- [static](../Topic/static%20\(C%23%20Reference\).md)
+ [Partial Classes and Methods](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)   
+ [static](/dotnet/csharp/language-reference/keywords/static)

@@ -1,5 +1,5 @@
 ---
-title: "&#39;Handles&#39; in classes must specify a &#39;WithEvents&#39; variable, &#39;MyBase&#39;, &#39;MyClass&#39; or &#39;Me&#39; qualified with a single identifier"
+title: "&#39;Handles&#39; in classes must specify a &#39;WithEvents&#39; variable, &#39;MyBase&#39;, &#39;MyClass&#39; or &#39;Me&#39; qualified with a single identifier | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,6 +47,6 @@ To specify an event handler, `Handles` statements must either specify an object 
 2.  Specify the name of an event for the current class in the base class.  
   
 ## See Also  
- [Handles](../Topic/Handles%20Clause%20\(Visual%20Basic\).md)   
- [WithEvents](../Topic/WithEvents%20\(Visual%20Basic\).md)   
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause)   
+ [WithEvents](/dotnet/visual-basic/language-reference/modifiers/withevents)   
+ [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)

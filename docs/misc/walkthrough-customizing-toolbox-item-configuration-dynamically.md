@@ -1,7 +1,7 @@
 ---
-title: "Walkthrough: Customizing Toolbox Item Configuration Dynamically"
+title: "Walkthrough: Customizing Toolbox Item Configuration Dynamically | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -36,7 +36,7 @@ This walkthrough shows how a managed VSPackage can supply dynamic configuration 
 > [!NOTE]
 >  The simplest way to add custom controls to the Toolbox is to use the Toolbox Control templates that are included in the Visual Studio SDK. This topic relates to advanced Toolbox development.  
 >   
->  For more information about how to create toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](../Topic/Creating%20a%20WPF%20Toolbox%20Control.md).  
+>  For more information about how to create toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](/visual-studio/extensibility/creating-a-wpf-toolbox-control).  
   
  This walkthrough guides you through the following steps:  
   
@@ -63,7 +63,7 @@ This walkthrough shows how a managed VSPackage can supply dynamic configuration 
 7.  Implement a command on the VSPackage to force re-initialization of the **Toolbox**.  
   
 ## Prerequisites  
- To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](../Topic/Visual%20Studio%20SDK.md).  
+ To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](/visual-studio/extensibility/visual-studio-sdk).  
   
 ## Locations for the Visual Studio Package Project Template  
  The Visual Studio Package project template can be found in three different locations in the **New Project** dialog:  
@@ -221,9 +221,9 @@ This walkthrough shows how a managed VSPackage can supply dynamic configuration 
   
      You can generate a GUID by clicking **Create GUID** on the **Tools** menu. Select **the format with square braces**, click **Copy**, and then paste the GUID in your code. change the keyword `GUID` to `Guid`.  
   
-5.  Implement the <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem.ConfigureToolboxItem*> method of the <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem> interface so that the method only acts on the two <xref:System.Drawing.Design.ToolboxItem> classes, `Control1` and `Control2`.  
+5.  Implement the <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem.ConfigureToolboxItem%2A> method of the <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem> interface so that the method only acts on the two <xref:System.Drawing.Design.ToolboxItem> classes, `Control1` and `Control2`.  
   
-     The implementation of <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem.ConfigureToolboxItem*> applies instances of <xref:System.ComponentModel.ToolboxItemFilterAttribute> to the two <xref:System.Drawing.Design.ToolboxItem> objects so that:  
+     The implementation of <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem.ConfigureToolboxItem%2A> applies instances of <xref:System.ComponentModel.ToolboxItemFilterAttribute> to the two <xref:System.Drawing.Design.ToolboxItem> objects so that:  
   
     -   The <xref:System.Drawing.Design.ToolboxItem> that is implemented by `Control1` is only available in the **Toolbox** for designers that handle <xref:System.Windows.Forms.UserControl> objects.  
   
@@ -293,7 +293,7 @@ This walkthrough shows how a managed VSPackage can supply dynamic configuration 
   
      [!code-cs[DynamicToolboxMembers#11](../misc/codesnippet/CSharp/walkthrough-customizing-toolbox-item-configuration-dynamically_11.cs)]  
   
-5.  Modify the `Initialize` method in `ItemConfigurationPackage` to fill the `ToolboxItemList` field by calling the <xref:System.Drawing.Design.ToolboxService.GetToolboxItems*> method of the <xref:System.Drawing.Design.ToolboxService?displayProperty=fullName> class. The **Toolbox** service gets all the **Toolbox** item classes that are defined in the currently executing assembly. The `ToolboxItemList` field is used by the **Toolbox** event handlers to load the **Toolbox** items.  
+5.  Modify the `Initialize` method in `ItemConfigurationPackage` to fill the `ToolboxItemList` field by calling the <xref:System.Drawing.Design.ToolboxService.GetToolboxItems%2A> method of the <xref:System.Drawing.Design.ToolboxService?displayProperty=fullName> class. The **Toolbox** service gets all the **Toolbox** item classes that are defined in the currently executing assembly. The `ToolboxItemList` field is used by the **Toolbox** event handlers to load the **Toolbox** items.  
   
      Add the following code at the end of the `Initialize` method.  
   
@@ -323,7 +323,7 @@ This walkthrough shows how a managed VSPackage can supply dynamic configuration 
   
 2.  Press F5 to start a second instance of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] in the experimental registry hive.  
   
-     For more information about how to use the experimental hive, see [The Experimental Instance](../Topic/The%20Experimental%20Instance.md).  
+     For more information about how to use the experimental hive, see [The Experimental Instance](/visual-studio/extensibility/the-experimental-instance).  
   
 3.  Click the **Tools** menu.  
   
@@ -354,9 +354,9 @@ This walkthrough shows how a managed VSPackage can supply dynamic configuration 
      When the application runs, click each control on the form to get the associated message box.  
   
 ## Analysis of the Implementation  
- Because the `assemblyFilter` parameter is present in the <xref:Microsoft.VisualStudio.Shell.ProvideAssemblyFilterAttribute> class constructor, only <xref:System.Drawing.Design.ToolboxItem> objects in the assembly produced in this walkthrough are acted on by the <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem.ConfigureToolboxItem*> method of the `ToolboxConfg` class.  
+ Because the `assemblyFilter` parameter is present in the <xref:Microsoft.VisualStudio.Shell.ProvideAssemblyFilterAttribute> class constructor, only <xref:System.Drawing.Design.ToolboxItem> objects in the assembly produced in this walkthrough are acted on by the <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem.ConfigureToolboxItem%2A> method of the `ToolboxConfg` class.  
   
- Therefore, whenever the **ItemConfiguration Walkthrough**category is active on the **Toolbox**, the <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem.ConfigureToolboxItem*> method of the `ToolboxConfg` class is called, and <xref:System.ComponentModel.ToolboxItemFilterAttribute> instances are applied on the <xref:System.Drawing.Design.ToolboxItem> objects that are implemented by `Control1` and `Control2`.  
+ Therefore, whenever the **ItemConfiguration Walkthrough**category is active on the **Toolbox**, the <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem.ConfigureToolboxItem%2A> method of the `ToolboxConfg` class is called, and <xref:System.ComponentModel.ToolboxItemFilterAttribute> instances are applied on the <xref:System.Drawing.Design.ToolboxItem> objects that are implemented by `Control1` and `Control2`.  
   
 ## See Also  
  [Extending the Toolbox](../misc/extending-the-toolbox.md)   

@@ -1,7 +1,7 @@
 ---
-title: "COleDateTime Class"
+title: "COleDateTime Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -229,7 +229,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
  MS-DOS date and time values to be converted to a date/time value and copied into the new `COleDateTime` object.  
   
  `dbts`  
- A reference to a <xref:System.Data.OleDb.OleDbTypequalifyHint=False&autoUpgrade=True> structure containing the current local time.  
+ A reference to a <xref:System.Data.OleDb.OleDbTypequalifyHint%3DFalse%26autoUpgrade%3DTrue> structure containing the current local time.  
   
 ### Remarks  
  All these constructors create new `COleDateTime` objects initialized to the specified value. The following table shows valid ranges for each date and time component:  
@@ -344,7 +344,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
   
 ### Parameters  
  `dbts`  
- A reference to a <xref:System.Data.OleDb.OleDbTypequalifyHint=False&autoUpgrade=True> structure.  
+ A reference to a <xref:System.Data.OleDb.OleDbTypequalifyHint%3DFalse%26autoUpgrade%3DTrue> structure.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  

@@ -1,5 +1,5 @@
 ---
-title: "XML documentation parse error: Start tag &#39;&lt;tag&gt;&#39; doesn&#39;t have a matching end tag"
+title: "XML documentation parse error: Start tag &#39;&lt;tag&gt;&#39; doesn&#39;t have a matching end tag | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -51,5 +51,5 @@ XML documentation parse error: Start tag \<tag> doesn't have a matching end tag.
 -   If the tag contains no inner text, such as [\<seealso>](../Topic/%3Cseealso%3E%20\(Visual%20Basic\).md), specify a forward slash before the closing angle bracket.  
   
 ## See Also  
- [XML Comment Tags](../Topic/Recommended%20XML%20Tags%20for%20Documentation%20Comments%20\(Visual%20Basic\).md)   
- [Documenting Your Code with XML](../Topic/Documenting%20Your%20Code%20with%20XML%20\(Visual%20Basic\).md)
+ [XML Comment Tags](/dotnet/visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments)   
+ [Documenting Your Code with XML](/dotnet/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)

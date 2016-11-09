@@ -1,7 +1,7 @@
 ---
-title: "_CrtGetAllocHook"
+title: "_CrtGetAllocHook | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -68,7 +68,7 @@ _CRT_ALLOC_HOOK _CrtGetAllocHook( void );
 ## Remarks  
  `_CrtGetAllocHook` retrieves the current client-defined application hook function for the C run-time debug library memory allocation process.  
   
- For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug Hook Function Writing](../Topic/Debug%20Hook%20Function%20Writing.md).  
+ For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug Hook Function Writing](/visual-studio/debugger/debug-hook-function-writing).  
   
 ## Requirements  
   

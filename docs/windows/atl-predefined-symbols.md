@@ -1,7 +1,7 @@
 ---
-title: "ATL Predefined Symbols"
+title: "ATL Predefined Symbols | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # ATL Predefined Symbols
-These symbols are defined in the ATL header files, but they support standard Windows application functions and actions. These symbols are mainly used with dialog boxes. When you are working with dialogs and controls in the [Dialog editor](../mfc/dialog-editor.md), these symbols will appear in the Properties window associated with common controls. For instance, if your dialog box has a Cancel button, that command will be associated with the symbol IDCANCEL in the [Properties Window](../Topic/Properties%20Window.md).  
+These symbols are defined in the ATL header files, but they support standard Windows application functions and actions. These symbols are mainly used with dialog boxes. When you are working with dialogs and controls in the [Dialog editor](../mfc/dialog-editor.md), these symbols will appear in the Properties window associated with common controls. For instance, if your dialog box has a Cancel button, that command will be associated with the symbol IDCANCEL in the [Properties Window](/visual-studio/ide/reference/properties-window).  
   
 |||  
 |-|-|  

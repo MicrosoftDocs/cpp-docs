@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;specifier&gt;&#39; is not valid on a constant declaration"
+title: "&#39;&lt;specifier&gt;&#39; is not valid on a constant declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ A `Const` statement contains an invalid keyword. A `Const` statement can include
 2.  Remove the invalid keyword from the `Const` statement.  
   
 ## See Also  
- [Const Statement](../Topic/Const%20Statement%20\(Visual%20Basic\).md)
+ [Const Statement](/dotnet/visual-basic/language-reference/statements/const-statement)

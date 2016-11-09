@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework 2.0 update not found. The win32manifest will not be embedded."
+title: ".NET Framework 2.0 update not found. The win32manifest will not be embedded. | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -43,4 +43,4 @@ translation.priority.mt:
 1.  
   
 ## See Also  
- [/win32manifest (Visual Basic)](../Topic/-win32manifest%20\(Visual%20Basic\).md)
+ [/win32manifest (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/win32manifest)

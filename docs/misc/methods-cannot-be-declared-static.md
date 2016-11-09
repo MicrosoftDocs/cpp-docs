@@ -1,5 +1,5 @@
 ---
-title: "Methods cannot be declared &#39;Static&#39;"
+title: "Methods cannot be declared &#39;Static&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ The `Static` modifier cannot be applied to entire procedures.
 -   Use the `Static` modifier to declare individual items within a procedure as static.  
   
 ## See Also  
- [Static](../Topic/Static%20\(Visual%20Basic\).md)
+ [Static](/dotnet/visual-basic/language-reference/modifiers/static)

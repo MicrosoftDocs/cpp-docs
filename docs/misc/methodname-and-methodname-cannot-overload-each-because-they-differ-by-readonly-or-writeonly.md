@@ -1,5 +1,5 @@
 ---
-title: "&lt;methodname&gt;&#39; and &#39;&lt;methodname&gt;&#39; cannot overload each because they differ by &#39;ReadOnly&#39; or &#39;WriteOnly&#39;"
+title: "&lt;methodname&gt;&#39; and &#39;&lt;methodname&gt;&#39; cannot overload each because they differ by &#39;ReadOnly&#39; or &#39;WriteOnly&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You have attempted to overload two methods that differ from each other only in t
 -   Make sure the methods are differentiated by more than `ReadOnly` and `WriteOnly`.  
   
 ## See Also  
- [Considerations in Overloading Procedures](../Topic/Considerations%20in%20Overloading%20Procedures%20\(Visual%20Basic\).md)
+ [Considerations in Overloading Procedures](/dotnet/visual-basic/language-reference/procedures/considerations-in-overloading-procedures)

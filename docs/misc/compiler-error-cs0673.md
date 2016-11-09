@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0673"
+title: "Compiler Error CS0673 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0673"
 ms.assetid: 5921cc27-c0ff-43be-8044-b454c8631c86
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

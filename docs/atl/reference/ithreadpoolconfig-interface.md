@@ -1,7 +1,7 @@
 ---
-title: "IThreadPoolConfig Interface"
+title: "IThreadPoolConfig Interface | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "IThreadPoolConfig interface"
 ms.assetid: 69e642bf-6925-46e6-9a37-cce52231b1cc
-caps.latest.revision: 23
+caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -142,10 +142,3 @@ STDMETHOD(SetTimeout)(DWORD dwMaxWait);
 ## See Also  
  [Classes](../../atl/reference/atl-classes.md)   
  [CThreadPool Class](../../atl/reference/cthreadpool-class.md)
-
-
-
-
-
-
-

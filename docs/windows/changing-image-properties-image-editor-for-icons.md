@@ -1,7 +1,7 @@
 ---
-title: "Changing Image Properties (Image Editor for Icons)"
+title: "Changing Image Properties (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Changing Image Properties (Image Editor for Icons)
-You can set or modify properties of an image using the [Properties window](../Topic/Properties%20Window.md).  
+You can set or modify properties of an image using the [Properties window](/visual-studio/ide/reference/properties-window).  
   
 ### To change an image's properties  
   

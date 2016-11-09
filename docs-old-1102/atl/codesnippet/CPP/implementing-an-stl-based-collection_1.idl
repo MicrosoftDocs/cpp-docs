@@ -1,0 +1,19 @@
+[
+   object,
+   uuid(7B3AC376-509F-4068-87BA-03B73ADC359B),
+   dual,                                                    // (1)
+   nonextensible,                                           // (2)
+   pointer_default(unique)
+]
+interface IWords : IDispatch
+{
+   [id(DISPID_NEWENUM), propget]                            // (3)
+   HRESULT _NewEnum([out, retval] IUnknown** ppUnk);
+
+   [id(DISPID_VALUE), propget]                              // (4)
+   HRESULT Item([in] long Index, [out, retval] BSTR* pVal); // (5)
+
+   [id(0x00000001), propget]                                // (6)
+   HRESULT Count([out, retval] long* pVal);
+
+};

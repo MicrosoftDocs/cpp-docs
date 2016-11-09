@@ -1,7 +1,7 @@
 ---
-title: "CWndClassInfo Class"
+title: "CWndClassInfo Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CWndClassInfo class"
 ms.assetid: c36fe7e1-75f1-4cf5-a06f-9f59c43fe6fb
-caps.latest.revision: 21
+caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -53,19 +53,19 @@ class CWndClassInfo
   
 |||  
 |-|-|  
-|[Register](../Topic/CWndClassInfo::Register.md)|Registers the window class.|  
+|[Register](#cwndclassinfo__register)|Registers the window class.|  
   
 ### Data Members  
   
 |||  
 |-|-|  
-|[m_atom](../Topic/CWndClassInfo::m_atom.md)|Uniquely identifies the registered window class.|  
-|[m_bSystemCursor](../Topic/CWndClassInfo::m_bSystemCursor.md)|Specifies whether the cursor resource refers to a system cursor or to a cursor contained in a module resource.|  
-|[m_lpszCursorID](../Topic/CWndClassInfo::m_lpszCursorID.md)|Specifies the name of the cursor resource.|  
-|[m_lpszOrigName](../Topic/CWndClassInfo::m_lpszOrigName.md)|Contains the name of an existing window class.|  
-|[m_szAutoName](../Topic/CWndClassInfo::m_szAutoName.md)|Holds an ATL-generated name of the window class.|  
-|[m_wc](../Topic/CWndClassInfo::m_wc.md)|Maintains window class information in a **WNDCLASSEX** structure.|  
-|[pWndProc](../Topic/CWndClassInfo::pWndProc.md)|Points to the window procedure of an existing window class.|  
+|[m_atom](#cwndclassinfo__m_atom)|Uniquely identifies the registered window class.|  
+|[m_bSystemCursor](#cwndclassinfo__m_bsystemcursor)|Specifies whether the cursor resource refers to a system cursor or to a cursor contained in a module resource.|  
+|[m_lpszCursorID](#cwndclassinfo__m_lpszcursorid)|Specifies the name of the cursor resource.|  
+|[m_lpszOrigName](#cwndclassinfo__m_lpszorigname)|Contains the name of an existing window class.|  
+|[m_szAutoName](#cwndclassinfo__m_szautoname)|Holds an ATL-generated name of the window class.|  
+|[m_wc](#cwndclassinfo__m_wc)|Maintains window class information in a **WNDCLASSEX** structure.|  
+|[pWndProc](#cwndclassinfo__pwndproc)|Points to the window procedure of an existing window class.|  
   
 ## Remarks  
  `CWndClassInfo` manages the information of a window class. You typically use `CWndClassInfo` through one of three macros, `DECLARE_WND_CLASS`, `DECLARE_WND_CLASS_EX`, or `DECLARE_WND_SUPERCLASS`, as described in the following table:  
@@ -116,7 +116,7 @@ LPCTSTR m_lpszCursorID;
 ```  
   
 ### Remarks  
- When the window class is registered, the handle to the cursor identified by `m_lpszCursorID` is retrieved and stored by [m_wc](../Topic/CWndClassInfo::m_wc.md).  
+ When the window class is registered, the handle to the cursor identified by `m_lpszCursorID` is retrieved and stored by [m_wc](#cwndclassinfo__m_wc).  
   
  `CWndClassInfo` uses `m_lpszCursorID` only when the [DECLARE_WND_CLASS](../Topic/DECLARE_WND_CLASS.md) (the default in [CWindowImpl](../../atl/reference/cwindowimpl-class.md)) or the [DECLARE_WND_CLASS_EX](../Topic/DECLARE_WND_CLASS_EX.md) macro is specified. In this case, `m_lpszCursorID` is initialized to **IDC_ARROW**. For more information, see the [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) overview.  
   
@@ -150,7 +150,7 @@ WNDCLASSEX m_wc;
 ### Remarks  
  If you have specified the [DECLARE_WND_CLASS](../Topic/DECLARE_WND_CLASS.md) (the default in [CWindowImpl](../../atl/reference/cwindowimpl-class.md)) or the [DECLARE_WND_CLASS_EX](../Topic/DECLARE_WND_CLASS_EX.md) macro, `m_wc` contains information about a new window class.  
   
- If you have specified the [DECLARE_WND_SUPERCLASS](../Topic/DECLARE_WND_SUPERCLASS.md) macro, `m_wc` contains information about a superclass — a window class that is based on an existing class but uses a different window procedure. [m_lpszOrigName](../Topic/CWndClassInfo::m_lpszOrigName.md) and [pWndProc](../Topic/CWndClassInfo::pWndProc.md) save the existing window class's name and window procedure, respectively.  
+ If you have specified the [DECLARE_WND_SUPERCLASS](../Topic/DECLARE_WND_SUPERCLASS.md) macro, `m_wc` contains information about a superclass — a window class that is based on an existing class but uses a different window procedure. [m_lpszOrigName](#cwndclassinfo__m_lpszorigname) and [pWndProc](#cwndclassinfo__pwndproc) save the existing window class's name and window procedure, respectively.  
   
 ##  <a name="cwndclassinfo__pwndproc"></a>  CWndClassInfo::pWndProc  
  Points to the window procedure of an existing window class.  
@@ -163,7 +163,7 @@ WNDPROC pWndProc;
  `CWndClassInfo` uses `pWndProc` only when you include the [DECLARE_WND_SUPERCLASS](../Topic/DECLARE_WND_SUPERCLASS.md) macro in your class definition. In this case, `CWndClassInfo` registers a window class that is based on an existing class but uses a different window procedure. The existing window class's window procedure is saved in `pWndProc`. For more information, see the [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) overview.  
   
 ##  <a name="cwndclassinfo__register"></a>  CWndClassInfo::Register  
- Called by [CWindowImpl::Create](../Topic/CWindowImpl::Create.md) to register the window class if it has not yet been registered.  
+ Called by [CWindowImpl::Create](../../atl/reference/cwindowimpl-class.md#cwindowimpl__create) to register the window class if it has not yet been registered.  
   
 ```
 ATOM Register(WNDPROC* pProc);
@@ -184,10 +184,3 @@ ATOM Register(WNDPROC* pProc);
 ## See Also  
  [CComControl Class](../../atl/reference/ccomcontrol-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

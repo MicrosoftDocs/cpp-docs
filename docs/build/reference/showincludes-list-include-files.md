@@ -1,7 +1,7 @@
 ---
-title: "-showIncludes (List Include Files)"
+title: "-showIncludes (List Include Files) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -80,7 +80,7 @@ Note: including file:  d:\temp\2.h
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ShowIncludes*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ShowIncludes%2A>.  
   
 ## See Also  
  [Compiler Options](../../build/reference/compiler-options.md)   

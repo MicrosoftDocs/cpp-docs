@@ -1,5 +1,5 @@
 ---
-title: "Statement cannot appear outside of a method body-multiline lambda"
+title: "Statement cannot appear outside of a method body-multiline lambda | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ Executable statements must be used within procedures.
 -   Move the statement into a procedure or subroutine.  
   
 ## See Also  
- [Procedures](../Topic/Procedures%20in%20Visual%20Basic.md)
+ [Procedures](/dotnet/visual-basic/language-reference/procedures/index)

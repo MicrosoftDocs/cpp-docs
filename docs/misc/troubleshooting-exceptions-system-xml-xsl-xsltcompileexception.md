@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.Xml.Xsl.XsltCompileException"
+title: "Troubleshooting Exceptions: System.Xml.Xsl.XsltCompileException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Troubleshooting Exceptions: System.Xml.Xsl.XsltCompileException
-The exception that is thrown by the <xref:System.Xml.Xsl.XslCompiledTransform.Load*> method when an error is found in the Extensible Stylesheet Language Transformation (XSLT) style sheet.  
+The exception that is thrown by the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method when an error is found in the Extensible Stylesheet Language Transformation (XSLT) style sheet.  
   
 ## See Also  
  <xref:System.Xml.Xsl.XsltCompileException>   

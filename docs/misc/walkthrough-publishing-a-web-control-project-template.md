@@ -1,7 +1,7 @@
 ---
-title: "Walkthrough: Publishing a Web Control Project Template"
+title: "Walkthrough: Publishing a Web Control Project Template | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -344,4 +344,4 @@ You can create a web control project template to use as the basis for other web 
  This walkthrough showed how to use the **Export Template as VSIX** wizard to create and distribute a project template. If you require more control of the project template, for example, to choose the icon that appears in the **New Project** dialog box, you must explicitly create the project template and wrap it in a VSIX extension. For more information, see [Creating and Sharing Project & Item Templates](http://go.microsoft.com/fwlink/?LinkId=194551) on The Visual Studio Blog website.  
   
 ## See Also  
- [Shipping Visual Studio Extensions](../Topic/Shipping%20Visual%20Studio%20Extensions.md)
+ [Shipping Visual Studio Extensions](/visual-studio/extensibility/shipping-visual-studio-extensions)

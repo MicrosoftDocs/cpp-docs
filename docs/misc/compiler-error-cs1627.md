@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1627"
+title: "Compiler Error CS1627 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1627"
 ms.assetid: 58dd6e22-e9ed-4e5c-ae04-ce255f07064e
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

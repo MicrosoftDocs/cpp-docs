@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0522"
+title: "Compiler Error CS0522 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0522"
 ms.assetid: f749f21e-92ee-495c-9b53-179ce9342d05
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0522
 'constructor' : structs cannot call base class constructors  
   
- A [struct](../Topic/struct%20\(C%23%20Reference\).md) cannot call a base class constructor; remove the call to the base class constructor.  
+ A [struct](/dotnet/csharp/language-reference/keywords/struct) cannot call a base class constructor; remove the call to the base class constructor.  
   
  The following sample generates CS0522:  
   

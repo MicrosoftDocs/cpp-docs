@@ -1,7 +1,7 @@
 ---
-title: "These project configuration(s) are out of date: &lt;configuration&gt;. Would you like to build them?"
+title: "These project configuration(s) are out of date: &lt;configuration&gt;. Would you like to build them? | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -53,7 +53,7 @@ You are editing a Visual Studio project or have selected a project in Solution E
  [How to: Create and Remove Project Dependencies](../Topic/How%20to:%20Create%20and%20Remove%20Project%20Dependencies.md)   
  [Project Dependencies Dialog Box](http://msdn.microsoft.com/en-us/d66e48c3-3722-40dd-99b4-53d93cac128e)   
  [Project Dependencies, Common Properties, Solution Property Pages Dialog Box](http://msdn.microsoft.com/en-us/2ba638fc-719c-4a79-b166-3455a4374e31)   
- [Compiling and Building](../Topic/Compiling%20and%20Building%20in%20Visual%20Studio.md)   
- [Understanding Build Configurations](../Topic/Understanding%20Build%20Configurations.md)   
+ [Compiling and Building](/visual-studio/ide/compiling-and-building-in-visual-studio)   
+ [Understanding Build Configurations](/visual-studio/ide/understanding-build-configurations)   
  [NIB:Projects as Containers](http://msdn.microsoft.com/en-us/87d40f63-f487-4767-8963-64beec27ba1b)   
  [NIB:Item Management in Projects](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)

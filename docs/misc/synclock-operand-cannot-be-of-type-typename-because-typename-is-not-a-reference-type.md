@@ -1,5 +1,5 @@
 ---
-title: "&#39;SyncLock&#39; operand cannot be of type &#39;&lt;typename&gt;&#39; because &#39;&lt;typename&gt;&#39; is not a reference type"
+title: "&#39;SyncLock&#39; operand cannot be of type &#39;&lt;typename&gt;&#39; because &#39;&lt;typename&gt;&#39; is not a reference type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ The `SyncLock` statement allows statements to be synchronized on a single expres
 -   Change the type to an appropriate reference type.  
   
 ## See Also  
- [SyncLock Statement](../Topic/SyncLock%20Statement.md)   
+ [SyncLock Statement](/dotnet/visual-basic/language-reference/statements/synclock-statement)   
  [NOT IN BUILD: Multithreading in Visual Basic](http://msdn.microsoft.com/en-us/c731a50c-09c1-4468-9646-54c86b75d269)

@@ -1,7 +1,7 @@
 ---
-title: "CTokenPrivileges Class"
+title: "CTokenPrivileges Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CTokenPrivileges class"
 ms.assetid: 89590105-f001-4014-870d-142926091231
-caps.latest.revision: 22
+caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -55,30 +55,30 @@ class CTokenPrivileges
   
 |Name|Description|  
 |----------|-----------------|  
-|[CTokenPrivileges::CTokenPrivileges](../Topic/CTokenPrivileges::CTokenPrivileges.md)|The constructor.|  
-|[CTokenPrivileges::~CTokenPrivileges](../Topic/CTokenPrivileges::~CTokenPrivileges.md)|The destructor.|  
+|[CTokenPrivileges::CTokenPrivileges](#ctokenprivileges__ctokenprivileges)|The constructor.|  
+|[CTokenPrivileges::~CTokenPrivileges](#ctokenprivileges___dtorctokenprivileges)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CTokenPrivileges::Add](../Topic/CTokenPrivileges::Add.md)|Adds one or more privileges to the `CTokenPrivileges` object.|  
-|[CTokenPrivileges::Delete](../Topic/CTokenPrivileges::Delete.md)|Deletes a privilege from the `CTokenPrivileges` object.|  
-|[CTokenPrivileges::DeleteAll](../Topic/CTokenPrivileges::DeleteAll.md)|Deletes all privileges from the `CTokenPrivileges` object.|  
-|[CTokenPrivileges::GetCount](../Topic/CTokenPrivileges::GetCount.md)|Returns the number of privilege entries in the `CTokenPrivileges` object.|  
-|[CTokenPrivileges::GetDisplayNames](../Topic/CTokenPrivileges::GetDisplayNames.md)|Retrieves display names for the privileges contained in the `CTokenPrivileges` object.|  
-|[CTokenPrivileges::GetLength](../Topic/CTokenPrivileges::GetLength.md)|Returns the buffer size in bytes required to hold the **TOKEN_PRIVILEGES** structure represented by the `CTokenPrivileges` object.|  
-|[CTokenPrivileges::GetLuidsAndAttributes](../Topic/CTokenPrivileges::GetLuidsAndAttributes.md)|Retrieves the locally unique identifiers (LUIDs) and attribute flags from the `CTokenPrivileges` object.|  
-|[CTokenPrivileges::GetNamesAndAttributes](../Topic/CTokenPrivileges::GetNamesAndAttributes.md)|Retrieves the privilege names and attribute flags from the `CTokenPrivileges` object.|  
-|[CTokenPrivileges::GetPTOKEN_PRIVILEGES](../Topic/CTokenPrivileges::GetPTOKEN_PRIVILEGES.md)|Returns a pointer to the **TOKEN_PRIVILEGES** structure.|  
-|[CTokenPrivileges::LookupPrivilege](../Topic/CTokenPrivileges::LookupPrivilege.md)|Retrieves the attribute associated with a given privilege name.|  
+|[CTokenPrivileges::Add](#ctokenprivileges__add)|Adds one or more privileges to the `CTokenPrivileges` object.|  
+|[CTokenPrivileges::Delete](#ctokenprivileges__delete)|Deletes a privilege from the `CTokenPrivileges` object.|  
+|[CTokenPrivileges::DeleteAll](#ctokenprivileges__deleteall)|Deletes all privileges from the `CTokenPrivileges` object.|  
+|[CTokenPrivileges::GetCount](#ctokenprivileges__getcount)|Returns the number of privilege entries in the `CTokenPrivileges` object.|  
+|[CTokenPrivileges::GetDisplayNames](#ctokenprivileges__getdisplaynames)|Retrieves display names for the privileges contained in the `CTokenPrivileges` object.|  
+|[CTokenPrivileges::GetLength](#ctokenprivileges__getlength)|Returns the buffer size in bytes required to hold the **TOKEN_PRIVILEGES** structure represented by the `CTokenPrivileges` object.|  
+|[CTokenPrivileges::GetLuidsAndAttributes](#ctokenprivileges__getluidsandattributes)|Retrieves the locally unique identifiers (LUIDs) and attribute flags from the `CTokenPrivileges` object.|  
+|[CTokenPrivileges::GetNamesAndAttributes](#ctokenprivileges__getnamesandattributes)|Retrieves the privilege names and attribute flags from the `CTokenPrivileges` object.|  
+|[CTokenPrivileges::GetPTOKEN_PRIVILEGES](#ctokenprivileges__getptoken_privileges)|Returns a pointer to the **TOKEN_PRIVILEGES** structure.|  
+|[CTokenPrivileges::LookupPrivilege](#ctokenprivileges__lookupprivilege)|Retrieves the attribute associated with a given privilege name.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CTokenPrivileges::operator const TOKEN_PRIVILEGES *](../Topic/CTokenPrivileges::operator%20const%20TOKEN_PRIVILEGES%20*.md)|Casts a value to a pointer to the **TOKEN_PRIVILEGES** structure.|  
-|[CTokenPrivileges::operator =](../Topic/CTokenPrivileges::operator%20=.md)|Assignment operator.|  
+|[CTokenPrivileges::operator const TOKEN_PRIVILEGES *](#ctokenprivileges__operator_const_token_privileges__star)|Casts a value to a pointer to the **TOKEN_PRIVILEGES** structure.|  
+|[CTokenPrivileges::operator =](#ctokenprivileges__operator__eq)|Assignment operator.|  
   
 ## Remarks  
  An [access token](http://msdn.microsoft.com/library/windows/desktop/aa374909) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows NT or Windows 2000 system.  
@@ -185,7 +185,7 @@ void GetDisplayNames(CNames* pDisplayNames) const throw(...);
 ### Remarks  
  The parameter `pDisplayNames` is a pointer to an array of `CString` objects which will receive the display names corresponding to the privileges contained in the `CTokenPrivileges` object. This method retrieves display names only for the privileges specified in the Defined Privileges section of WINNT.H.  
   
- This method retrieves a displayable name: for example, if the attribute name is SE_REMOTE_SHUTDOWN_NAME, the displayable name is "Force shutdown from a remote system." To obtain the system name, use [CTokenPrivileges::GetNamesAndAttributes](../Topic/CTokenPrivileges::GetNamesAndAttributes.md).  
+ This method retrieves a displayable name: for example, if the attribute name is SE_REMOTE_SHUTDOWN_NAME, the displayable name is "Force shutdown from a remote system." To obtain the system name, use [CTokenPrivileges::GetNamesAndAttributes](#ctokenprivileges__getnamesandattributes).  
   
 ##  <a name="ctokenprivileges__getcount"></a>  CTokenPrivileges::GetCount  
  Returns the number of privilege entries in the `CTokenPrivileges` object.  
@@ -245,7 +245,7 @@ void GetNamesAndAttributes(
 ### Remarks  
  This method will enumerate all of the privileges contained in the `CTokenPrivileges` object, placing the name and (optionally) the attribute flags into array objects.  
   
- This method retrieves the attribute name, rather than the displayable name: for example, if the attribute name is SE_REMOTE_SHUTDOWN_NAME, the system name is "SeRemoteShutdownPrivilege." To obtain the displayable name, use the method [CTokenPrivileges::GetDisplayNames](../Topic/CTokenPrivileges::GetDisplayNames.md).  
+ This method retrieves the attribute name, rather than the displayable name: for example, if the attribute name is SE_REMOTE_SHUTDOWN_NAME, the system name is "SeRemoteShutdownPrivilege." To obtain the displayable name, use the method [CTokenPrivileges::GetDisplayNames](#ctokenprivileges__getdisplaynames).  
   
 ##  <a name="ctokenprivileges__getptoken_privileges"></a>  CTokenPrivileges::GetPTOKEN_PRIVILEGES  
  Returns a pointer to the **TOKEN_PRIVILEGES** structure.  
@@ -310,10 +310,3 @@ CTokenPrivileges& operator= (const TOKEN_PRIVILEGES& rPrivileges) throw(...);
  [LUID_AND_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379263)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Security Global Functions](../../atl/reference/security-global-functions.md)
-
-
-
-
-
-
-

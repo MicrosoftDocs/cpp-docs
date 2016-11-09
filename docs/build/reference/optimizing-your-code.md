@@ -1,7 +1,7 @@
 ---
-title: "Optimizing Your Code"
+title: "Optimizing Your Code | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -82,7 +82,7 @@ By optimizing an executable, you can achieve a balance between fast execution sp
   
  The following topics provide basic information about how to debug.  
   
--   [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)  
+-   [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)  
   
 -   [Common Problems When Creating a Release Build](../../build/reference/common-problems-when-creating-a-release-build.md)  
   

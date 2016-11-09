@@ -1,5 +1,5 @@
 ---
-title: "&#39;D&#39; can no longer be used to indicate an exponent, use &#39;E&#39; instead"
+title: "&#39;D&#39; can no longer be used to indicate an exponent, use &#39;E&#39; instead | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -50,5 +50,5 @@ The 'D' character cannot be used to indicate exponentiation.
     ```  
   
 ## See Also  
- [^ Operator](../Topic/%5E%20Operator%20\(Visual%20Basic\).md)   
- [Numeric Data Types](../Topic/Numeric%20Data%20Types%20\(Visual%20Basic\).md)
+ [^ Operator](/dotnet/visual-basic/language-reference/operators/exponentiation-operator)   
+ [Numeric Data Types](/dotnet/visual-basic/programming-guide/language-features/data-types/numeric-data-types)

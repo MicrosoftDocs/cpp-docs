@@ -1,7 +1,7 @@
 ---
-title: "Grouping Radio Buttons on a Dialog Box"
+title: "Grouping Radio Buttons on a Dialog Box | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -48,11 +48,11 @@ When you add radio buttons to a dialog box, treat them as a group by setting a G
   
 ### To add a group of radio buttons to a dialog box  
   
-1.  Select the radio button control in the [Toolbox Window](../Topic/Toolbox.md) and click the location in the dialog box where you want to place the control.  
+1.  Select the radio button control in the [Toolbox Window](/visual-studio/ide/reference/toolbox) and click the location in the dialog box where you want to place the control.  
   
 2.  Repeat Step 1 to add as many radio buttons as you need. Make sure that the radio buttons in the group are consecutive in the tab order (for more information, see [Changing the Tab Order of Controls](../mfc/changing-the-tab-order-of-controls.md)).  
   
-3.  In the [Properties Window](../Topic/Properties%20Window.md), set the **Group** property of the *first* radio button in the tab order to **True**.  
+3.  In the [Properties Window](/visual-studio/ide/reference/properties-window), set the **Group** property of the *first* radio button in the tab order to **True**.  
   
      Changing the **Group** property to **True** adds the WS_GROUP style to the button's entry in the dialog object of the resource script and ensures that a user can only select one radio button at a time in the button group (when the user clicks one radio button, the others in the group are cleared).  
   

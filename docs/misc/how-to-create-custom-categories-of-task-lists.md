@@ -1,7 +1,7 @@
 ---
-title: "How to: Create Custom Categories of Task Lists"
+title: "How to: Create Custom Categories of Task Lists | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -42,13 +42,13 @@ Custom categories of tasks provide control over how tasks are displayed in the *
 -   You want to create a custom view in which only your tasks are displayed.  
   
     > [!NOTE]
-    >  You can achieve effects similar to custom categories without actually implementing a custom category. For example, you can display a bitmap for a category or subcategory by implementing <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2.ImageList*> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem2.ImageListIndex*>. The task provider supplies the list and then each task provides an index into the list.  
+    >  You can achieve effects similar to custom categories without actually implementing a custom category. For example, you can display a bitmap for a category or subcategory by implementing <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2.ImageList%2A> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem2.ImageListIndex%2A>. The task provider supplies the list and then each task provides an index into the list.  
   
  To create a custom category in the **Task List**, register it with the **Task List** by using the following procedure.  
   
 ### To register a custom task list category  
   
--   Call <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RegisterCustomCategory*> to register a custom category with the task list.  
+-   Call <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RegisterCustomCategory%2A> to register a custom category with the task list.  
   
      Each custom category must have its own GUID, which is specified in the `guidCat` parameter. In the `dwSortOrder` parameter, provide the location where you would like this category to sort (when the list is sorted by categories). This method then returns the actual sort placement of the custom category within the larger list of categories.  
   
@@ -69,7 +69,7 @@ Custom categories of tasks provide control over how tasks are displayed in the *
   
 ### To unregister a custom task list category  
   
--   Call <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.UnregisterCustomCategory*> to unregister your custom category.  
+-   Call <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.UnregisterCustomCategory%2A> to unregister your custom category.  
   
 ## See Also  
  [Creating Custom Task List Views](../misc/creating-custom-task-list-views.md)

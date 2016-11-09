@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1561"
+title: "Compiler Error CS1561 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1561"
 ms.assetid: 840f469b-65e1-49c6-99cc-8c1ed130a37b
 caps.latest.revision: 10
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

@@ -1,7 +1,7 @@
 ---
-title: "CWinFormsView Class"
+title: "CWinFormsView Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -75,7 +75,7 @@ class CWinFormsView : public CView;
 >  MFC Windows Forms integration works only in projects which link dynamically with MFC (projects in which AFXDLL is defined).  
   
 > [!NOTE]
->  CWinFormsView does not support the MFC splitter window ( [CSplitterWnd Class](../../mfc/reference/csplitterwnd-class.md)). Currently only the Windows Forms Splitter control ( <xref:System.Windows.Forms.SplitterqualifyHint=False&autoUpgrade=True>) is supported.  
+>  CWinFormsView does not support the MFC splitter window ( [CSplitterWnd Class](../../mfc/reference/csplitterwnd-class.md)). Currently only the Windows Forms Splitter control ( <xref:System.Windows.Forms.SplitterqualifyHint%3DFalse%26autoUpgrade%3DTrue>) is supported.  
   
 ## Requirements  
  **Header:** afxwinforms.h  
@@ -91,7 +91,7 @@ System::Type^ pManagedViewType);
   
 ### Parameters  
  `pManagedViewType`  
- A pointer to the data type of the Windows Forms user control. For more information, see <xref:System.TypequalifyHint=True&autoUpgrade=True>.  
+ A pointer to the data type of the Windows Forms user control. For more information, see <xref:System.TypequalifyHint%3DTrue%26autoUpgrade%3DTrue>.  
   
 ### Example  
  In the following example, the `CUserView` class inherits from `CWinFormsView` and passes the type of `UserControl1` to the `CWinFormsView` constructor. `UserControl1` is a custom-built control in ControlLibrary1.dll.  
@@ -110,7 +110,7 @@ System::Windows::Forms::Control^ GetControl() const;
 ```  
   
 ### Return Value  
- A pointer to a <xref:System.Windows.Forms.ControlqualifyHint=True&autoUpgrade=True> object.  
+ A pointer to a <xref:System.Windows.Forms.ControlqualifyHint%3DTrue%26autoUpgrade%3DTrue> object.  
   
 ### Remarks  
  For an example of how to use Windows Forms, see [Using a Windows Form User Control in MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md).  
@@ -124,7 +124,7 @@ System::Windows::Forms::Control^ GetControl() const;
 ```  
   
 ### Remarks  
- This operator allows you to pass a `CWinFormsView` view to functions that accept a pointer to a Windows Forms control of type <xref:System.Windows.Forms.ControlqualifyHint=True&autoUpgrade=True>.  
+ This operator allows you to pass a `CWinFormsView` view to functions that accept a pointer to a Windows Forms control of type <xref:System.Windows.Forms.ControlqualifyHint%3DTrue%26autoUpgrade%3DTrue>.  
   
 ### Example  
   See [CWinFormsView::GetControl](#cwinformsview__getcontrol).  

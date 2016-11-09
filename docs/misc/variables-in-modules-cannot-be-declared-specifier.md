@@ -1,5 +1,5 @@
 ---
-title: "Variables in Modules cannot be declared &#39;&lt;specifier&gt;&#39;"
+title: "Variables in Modules cannot be declared &#39;&lt;specifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You have used a specifier, such as `MustInherit`, on a variable in a `Module` st
 -   Remove the specifier.  
   
 ## See Also  
- [Module Statement](../Topic/Module%20Statement.md)
+ [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)

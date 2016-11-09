@@ -1,5 +1,5 @@
 ---
-title: "Constructor must be declared as a Sub, not as a Function"
+title: "Constructor must be declared as a Sub, not as a Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You have attempted to declare a `Function New`. Constructors must be declared as
 -   Use `Sub` instead of `Function`.  
   
 ## See Also  
- [Sub Statement](../Topic/Sub%20Statement%20\(Visual%20Basic\).md)
+ [Sub Statement](/dotnet/visual-basic/language-reference/statements/sub-statement)

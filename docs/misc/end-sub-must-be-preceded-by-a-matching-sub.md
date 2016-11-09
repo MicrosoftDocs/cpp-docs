@@ -1,5 +1,5 @@
 ---
-title: "&#39;End Sub&#39; must be preceded by a matching &#39;Sub&#39;"
+title: "&#39;End Sub&#39; must be preceded by a matching &#39;Sub&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,5 +49,5 @@ An `End Sub` statement appears in your code with no matching `Sub` procedure def
 -   Move the `End Sub` to the appropriate place in the code.  
   
 ## See Also  
- [Sub Procedures](../Topic/Sub%20Procedures%20\(Visual%20Basic\).md)   
+ [Sub Procedures](/dotnet/visual-basic/language-reference/procedures/sub-procedures)   
  [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)

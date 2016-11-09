@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.Deployment.Application.DeploymentDownloadException"
+title: "Troubleshooting Exceptions: System.Deployment.Application.DeploymentDownloadException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -43,4 +43,4 @@ The exception that is thrown when there is an error downloading ClickOnce manife
 ## See Also  
  <xref:System.Deployment.Application.DeploymentDownloadException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [ClickOnce Security and Deployment](../Topic/ClickOnce%20Security%20and%20Deployment.md)
+ [ClickOnce Security and Deployment](/visual-studio/deployment/clickonce-security-and-deployment)

@@ -1,7 +1,7 @@
 ---
-title: "CComObjectGlobal Class"
+title: "CComObjectGlobal Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComObjectGlobal class"
 ms.assetid: 79bdee55-66e4-4536-b5b3-bdf09f78b9a6
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -60,22 +60,22 @@ class CComObjectGlobal
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComObjectGlobal::CComObjectGlobal](../Topic/CComObjectGlobal::CComObjectGlobal.md)|The constructor.|  
-|[CComObjectGlobal::~CComObjectGlobal](../Topic/CComObjectGlobal::~CComObjectGlobal.md)|The destructor.|  
+|[CComObjectGlobal::CComObjectGlobal](#ccomobjectglobal__ccomobjectglobal)|The constructor.|  
+|[CComObjectGlobal::~CComObjectGlobal](#ccomobjectglobal___dtorccomobjectglobal)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComObjectGlobal::AddRef](../Topic/CComObjectGlobal::AddRef.md)|Implements a global `AddRef`.|  
-|[CComObjectGlobal::QueryInterface](../Topic/CComObjectGlobal::QueryInterface.md)|Implements a global `QueryInterface`.|  
-|[CComObjectGlobal::Release](../Topic/CComObjectGlobal::Release.md)|Implements a global **Release**.|  
+|[CComObjectGlobal::AddRef](#ccomobjectglobal__addref)|Implements a global `AddRef`.|  
+|[CComObjectGlobal::QueryInterface](#ccomobjectglobal__queryinterface)|Implements a global `QueryInterface`.|  
+|[CComObjectGlobal::Release](#ccomobjectglobal__release)|Implements a global **Release**.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComObjectGlobal::m_hResFinalConstruct](../Topic/CComObjectGlobal::m_hResFinalConstruct.md)|Contains the **HRESULT** returned during construction of the `CComObjectGlobal` object.|  
+|[CComObjectGlobal::m_hResFinalConstruct](#ccomobjectglobal__m_hresfinalconstruct)|Contains the **HRESULT** returned during construction of the `CComObjectGlobal` object.|  
   
 ## Remarks  
  `CComObjectGlobal` manages a reference count on the module containing your `Base` object. `CComObjectGlobal` ensures your object will not be deleted as long as the module is not released. Your object will only be removed when the reference count on the entire module goes to zero.  
@@ -104,7 +104,7 @@ STDMETHOD_(ULONG, AddRef)();
  By default, `AddRef` calls **_Module::Lock**, where **_Module** is the global instance of [CComModule](../../atl/reference/ccommodule-class.md) or a class derived from it.  
   
 ##  <a name="ccomobjectglobal__ccomobjectglobal"></a>  CComObjectGlobal::CComObjectGlobal  
- The constructor. Calls `FinalConstruct` and then sets [m_hResFinalConstruct](../Topic/CComObjectGlobal::m_hResFinalConstruct.md) to the `HRESULT` returned by `FinalConstruct`.  
+ The constructor. Calls `FinalConstruct` and then sets [m_hResFinalConstruct](#ccomobjectglobal__m_hresfinalconstruct) to the `HRESULT` returned by `FinalConstruct`.  
   
 ```
 CComObjectGlobal(void* = NULL));
@@ -170,10 +170,3 @@ STDMETHOD_(ULONG, Release)();
  [CComAggObject Class](../../atl/reference/ccomaggobject-class.md)   
  [CComObject Class](../../atl/reference/ccomobject-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
-title: "__incgsbyte, __incgsword, __incgsdword, __incgsqword"
+title: "__incgsbyte, __incgsword, __incgsdword, __incgsqword | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

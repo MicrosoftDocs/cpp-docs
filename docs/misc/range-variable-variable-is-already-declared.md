@@ -1,5 +1,5 @@
 ---
-title: "Range variable &lt;variable&gt; is already declared"
+title: "Range variable &lt;variable&gt; is already declared | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,8 +45,8 @@ A range variable name specified in a `Select` clause, or the `Into` part of an `
 1.  Ensure that all range variables in a query clause have unique names.  
   
 ## See Also  
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [Aggregate Clause](../Topic/Aggregate%20Clause%20\(Visual%20Basic\).md)   
- [Select Clause](../Topic/Select%20Clause%20\(Visual%20Basic\).md)   
- [Group By Clause](../Topic/Group%20By%20Clause%20\(Visual%20Basic\).md)   
- [Group Join Clause](../Topic/Group%20Join%20Clause%20\(Visual%20Basic\).md)
+ [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [Aggregate Clause](/dotnet/visual-basic/language-reference/queries/aggregate-clause)   
+ [Select Clause](/dotnet/visual-basic/language-reference/queries/select-clause)   
+ [Group By Clause](/dotnet/visual-basic/language-reference/queries/group-by-clause)   
+ [Group Join Clause](/dotnet/visual-basic/language-reference/queries/group-join-clause)

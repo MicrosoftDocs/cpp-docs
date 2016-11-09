@@ -1,5 +1,5 @@
 ---
-title: "&#39;Variant&#39; is no longer a supported type; use the &#39;Object&#39; type instead"
+title: "&#39;Variant&#39; is no longer a supported type; use the &#39;Object&#39; type instead | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ The `Object` data type replaces `Variant`.
 -   Declare item as `Object`.  
   
 ## See Also  
- [Object Data Type](../Topic/Object%20Data%20Type.md)   
+ [Object Data Type](/dotnet/visual-basic/language-reference/data-types/object-data-type)   
  [Data Type Changes in Visual Basic](http://msdn.microsoft.com/en-us/0aca9f54-7231-49a5-ab26-a68ca79d08f3)

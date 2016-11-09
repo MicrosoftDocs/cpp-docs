@@ -1,5 +1,5 @@
 ---
-title: "Unable to create XML documentation file &#39;&lt;name&gt;&#39;: &lt;message&gt;"
+title: "Unable to create XML documentation file &#39;&lt;name&gt;&#39;: &lt;message&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -56,7 +56,7 @@ The XML documentation file cannot be created due to an error.
   
 -   [XML comment type parameter must have a 'name' attribute](../misc/xml-comment-type-parameter-must-have-a-name-attribute.md).  
   
--   [XML comment exception must have a 'cref' attribute](../Topic/XML%20comment%20exception%20must%20have%20a%20'cref'%20attribute.md).  
+-   [XML comment exception must have a 'cref' attribute](/dotnet/visual-basic/language-reference/error-messages/xml-comment-exception-must-have-a-cref-attribute).  
   
 ### To correct this error  
   

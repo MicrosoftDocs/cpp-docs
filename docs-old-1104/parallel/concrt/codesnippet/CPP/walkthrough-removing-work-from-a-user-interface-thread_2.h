@@ -1,0 +1,1 @@
+typedef std::shared_ptr<Gdiplus::Bitmap> BitmapPtr;

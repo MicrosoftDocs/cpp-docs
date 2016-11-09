@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0451"
+title: "Compiler Error CS0451 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0451"
 ms.assetid: e73544f8-856b-4a92-90e0-dd6cb9d688b1
 caps.latest.revision: 12
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

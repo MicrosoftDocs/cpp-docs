@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1545"
+title: "Compiler Error CS1545 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1545"
 ms.assetid: 56c377b5-4cf1-4c7d-b51d-463bad78f3ef
 caps.latest.revision: 16
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS1545
 Property, indexer, or event 'property' is not supported by the language; try directly calling accessor methods 'set accessor' or 'get accessor'  
   
- The code is consuming an object that has a non-default [indexer](../Topic/Indexers%20\(C%23%20Programming%20Guide\).md) and tried to use the indexed syntax. To resolve this error, call the property's `get` or `set` accessor method.  
+ The code is consuming an object that has a non-default [indexer](/dotnet/csharp/programming-guide/indexers/index) and tried to use the indexed syntax. To resolve this error, call the property's `get` or `set` accessor method.  
   
 ## Example  
   

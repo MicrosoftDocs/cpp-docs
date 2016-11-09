@@ -1,7 +1,7 @@
 ---
-title: "Parallel Diagnostic Tools (Concurrency Runtime)"
+title: "Parallel Diagnostic Tools (Concurrency Runtime) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,12 +40,12 @@ translation.priority.ht:
  The Visual Studio debugger includes the **Parallel Stacks** window, **Parallel Tasks** window, and **Parallel Watch** window. For more information, see [Walkthrough: Debugging a Parallel Application](../Topic/Walkthrough:%20Debugging%20a%20Parallel%20Application.md) and [How to: Use the Parallel Watch Window](../Topic/How%20to:%20Use%20the%20Parallel%20Watch%20Window.md).  
   
 ## Profiling  
- The profiling tools provide three data views that display graphical, tabular and numerical information about how a multi-threaded application interacts with itself and with other programs. The views enable you to quickly identify areas of concern, and to navigate from points on the graphical displays to call stacks, call sites, and source code. For more information, see [Concurrency Visualizer](../Topic/Concurrency%20Visualizer.md).  
+ The profiling tools provide three data views that display graphical, tabular and numerical information about how a multi-threaded application interacts with itself and with other programs. The views enable you to quickly identify areas of concern, and to navigate from points on the graphical displays to call stacks, call sites, and source code. For more information, see [Concurrency Visualizer](/visual-studio/profiling/concurrency-visualizer).  
   
 ## Event Tracing  
  The Concurrency Runtime uses [Event Tracing for Windows](http://msdn.microsoft.com/library/windows/desktop/bb968803) (ETW) to notify instrumentation tools, such as profilers, when various events occur. These events include when a scheduler is activated or deactivated, when a context begins, ends, blocks, unblocks, or yields, and when a parallel algorithm begins or ends.  
   
- Tools such as the [Concurrency Visualizer](../Topic/Concurrency%20Visualizer.md) utilize this functionality; therefore, you typically do not have to work with these events directly. However, these events are useful when you are developing a custom profiler or when you use event tracing tools such as [Xperf](http://go.microsoft.com/fwlink/LinkID=160628).  
+ Tools such as the [Concurrency Visualizer](/visual-studio/profiling/concurrency-visualizer) utilize this functionality; therefore, you typically do not have to work with these events directly. However, these events are useful when you are developing a custom profiler or when you use event tracing tools such as [Xperf](http://go.microsoft.com/fwlink/LinkID=160628).  
   
  The Concurrency Runtime raises these events only when tracing is enabled. Call the [concurrency::EnableTracing](../Topic/EnableTracing%20Function.md) function to enable event tracing and the [concurrency::DisableTracing](../Topic/DisableTracing%20Function.md) function to disable tracing.  
   

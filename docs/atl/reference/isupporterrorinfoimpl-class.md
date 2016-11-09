@@ -1,7 +1,7 @@
 ---
-title: "ISupportErrorInfoImpl Class"
+title: "ISupportErrorInfoImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -22,7 +22,7 @@ helpviewer_keywords:
   - "ISupportErrorInfoImpl class"
   - "error information, ATL"
 ms.assetid: e33a4b11-a123-41cf-bcea-7b19743902af
-caps.latest.revision: 22
+caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -63,7 +63,7 @@ template<const IID* piid>  class ATL_NO_VTABLE ISupportErrorInfoImpl :  public I
   
 |Name|Description|  
 |----------|-----------------|  
-|[ISupportErrorInfoImpl::InterfaceSupportsErrorInfo](../Topic/ISupportErrorInfoImpl::InterfaceSupportsErrorInfo.md)|Indicates whether the interface identified by `riid` supports the [IErrorInfo](http://msdn.microsoft.com/en-us/4dda6909-2d9a-4727-ae0c-b5f90dcfa447) interface.|  
+|[ISupportErrorInfoImpl::InterfaceSupportsErrorInfo](#isupporterrorinfoimpl__interfacesupportserrorinfo)|Indicates whether the interface identified by `riid` supports the [IErrorInfo](http://msdn.microsoft.com/en-us/4dda6909-2d9a-4727-ae0c-b5f90dcfa447) interface.|  
   
 ## Remarks  
  The [ISupportErrorInfo Interface](http://msdn.microsoft.com/en-us/42d33066-36b4-4a5b-aa5d-46682e560f32) ensures that error information can be returned to the client. Objects that use **IErrorInfo** must implement **ISupportErrorInfo**.  
@@ -122,7 +122,7 @@ STDMETHOD(GetTimeout)(DWORD* pdwMaxWait);
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Example  
- See [IThreadPoolConfig::GetSize](../Topic/IThreadPoolConfig::GetSize.md).  
+ See [IThreadPoolConfig::GetSize](#ithreadpoolconfig__getsize).  
   
 ##  <a name="ithreadpoolconfig__setsize"></a>  IThreadPoolConfig::SetSize  
  Call this method to set the number of threads in the pool.  
@@ -143,7 +143,7 @@ STDMETHOD(SetSize)(int nNumThreads);
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Example  
- See [IThreadPoolConfig::GetSize](../Topic/IThreadPoolConfig::GetSize.md).  
+ See [IThreadPoolConfig::GetSize](#ithreadpoolconfig__getsize).  
   
 ##  <a name="ithreadpoolconfig__settimeout"></a>  IThreadPoolConfig::SetTimeout  
  Call this method to set the maximum time in milliseconds that the thread pool will wait for a thread to shut down.  
@@ -160,14 +160,7 @@ STDMETHOD(SetTimeout)(DWORD dwMaxWait);
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Example  
- See [IThreadPoolConfig::GetSize](../Topic/IThreadPoolConfig::GetSize.md).  
+ See [IThreadPoolConfig::GetSize](#ithreadpoolconfig__getsize).  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

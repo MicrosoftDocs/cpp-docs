@@ -1,7 +1,7 @@
 ---
-title: "CAxWindow2T Class"
+title: "CAxWindow2T Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -21,7 +21,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAxWindow2 class"
 ms.assetid: b87bc943-7991-4537-b902-2138d7f4d837
-caps.latest.revision: 21
+caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -64,22 +64,22 @@ template <class   TBase = CWindow>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAxWindow2T::CAxWindow2T](../Topic/CAxWindow2T::CAxWindow2T.md)|Constructs a `CAxWindow2T` object.|  
+|[CAxWindow2T::CAxWindow2T](#caxwindow2t__caxwindow2t)|Constructs a `CAxWindow2T` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAxWindow2T::Create](../Topic/CAxWindow2T::Create.md)|Creates a host window.|  
-|[CAxWindow2T::CreateControlLic](../Topic/CAxWindow2T::CreateControlLic.md)|Creates a licensed ActiveX control, initializes it, and hosts it in the specified window.|  
-|[CAxWindow2T::CreateControlLicEx](../Topic/CAxWindow2T::CreateControlLicEx.md)|Creates a licensed ActiveX control, initializes it, hosts it in the specified window, and retrieves an interface pointer (or pointers) from the control.|  
-|[CAxWindow2T::GetWndClassName](../Topic/CAxWindow2T::GetWndClassName.md)|Static method that retrieves the name of the window class.|  
+|[CAxWindow2T::Create](#caxwindow2t__create)|Creates a host window.|  
+|[CAxWindow2T::CreateControlLic](#caxwindow2t__createcontrollic)|Creates a licensed ActiveX control, initializes it, and hosts it in the specified window.|  
+|[CAxWindow2T::CreateControlLicEx](#caxwindow2t__createcontrollicex)|Creates a licensed ActiveX control, initializes it, hosts it in the specified window, and retrieves an interface pointer (or pointers) from the control.|  
+|[CAxWindow2T::GetWndClassName](#caxwindow2t__getwndclassname)|Static method that retrieves the name of the window class.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAxWindow2T::operator =](../Topic/CAxWindow2T::operator%20=.md)|Assigns an `HWND` to an existing `CAxWindow2T` object.|  
+|[CAxWindow2T::operator =](#caxwindow2t__operator__eq)|Assigns an `HWND` to an existing `CAxWindow2T` object.|  
   
 ## Remarks  
  `CAxWindow2T` provides methods for manipulating a window that hosts an ActiveX control. `CAxWindow2T` also has support for hosting licensed ActiveX controls. The hosting is provided by " **AtlAxWinLic80**", which is wrapped by `CAxWindow2T`.  
@@ -129,7 +129,7 @@ HWND Create(
 ```  
   
 ### Remarks  
- `CAxWindow2T::Create` calls [CWindow::Create](../Topic/CWindow::Create.md) with the `LPCTSTR``lpstrWndClass` parameter set to the window class that provides control hosting ( **AtlAxWinLic80**).  
+ `CAxWindow2T::Create` calls [CWindow::Create](../../atl/reference/cwindow-class.md#cwindow__create) with the `LPCTSTR``lpstrWndClass` parameter set to the window class that provides control hosting ( **AtlAxWinLic80**).  
   
  See `CWindow::Create` for a description of the parameters and return value.  
   
@@ -160,7 +160,7 @@ HRESULT CreateControlLic(
  The license key for the control; NULL if creating a nonlicensed control.  
   
 ### Remarks  
- See [CAxWindow::CreateControl](../Topic/CAxWindow::CreateControl.md) for a description of the remaining parameters and return value.  
+ See [CAxWindow::CreateControl](../../atl/reference/caxwindow-class.md#caxwindow__createcontrol) for a description of the remaining parameters and return value.  
   
 ### Example  
  See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `CAxWindow2T::CreateControlLic`.  
@@ -193,7 +193,7 @@ HRESULT CreateControlLicEx(
  The license key for the control; NULL if creating a nonlicensed control.  
   
 ### Remarks  
- See [CAxWindow::CreateControlEx](../Topic/CAxWindow::CreateControlEx.md) for a description of the remaining parameters and return value.  
+ See [CAxWindow::CreateControlEx](../../atl/reference/caxwindow-class.md#caxwindow__createcontrolex) for a description of the remaining parameters and return value.  
   
 ### Example  
  See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `CAxWindow2T::CreateControlLicEx`.  
@@ -222,6 +222,7 @@ CAxWindow2T<TBase>& operator= (HWND   hWnd);
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)   
  [Control Containment FAQ](../../atl/atl-control-containment-faq.md)
+
 
 
 

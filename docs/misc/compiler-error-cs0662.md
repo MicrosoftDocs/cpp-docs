@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0662"
+title: "Compiler Error CS0662 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0662"
 ms.assetid: 836fa15e-3bf3-4af5-8acf-072d7d731dcd
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0662
 'method' cannot specify only Out attribute on a ref parameter. Use both In and Out attributes, or neither.  
   
- An interface method has a parameter that uses [ref](../Topic/ref%20\(C%23%20Reference\).md) with just the [Out](frlrfSystemRuntimeInteropServicesOutAttributeClassTopic) attribute. A `ref` parameter that uses the **Out** attribute must also use the [In](frlrfSystemRuntimeInteropServicesInAttributeClassTopic) attribute.  
+ An interface method has a parameter that uses [ref](/dotnet/csharp/language-reference/keywords/ref) with just the [Out](frlrfSystemRuntimeInteropServicesOutAttributeClassTopic) attribute. A `ref` parameter that uses the **Out** attribute must also use the [In](frlrfSystemRuntimeInteropServicesInAttributeClassTopic) attribute.  
   
  The following sample generates CS0662:  
   

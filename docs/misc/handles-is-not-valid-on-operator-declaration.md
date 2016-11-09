@@ -1,5 +1,5 @@
 ---
-title: "&#39;Handles&#39; is not valid on operator declaration"
+title: "&#39;Handles&#39; is not valid on operator declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -36,11 +36,11 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # &#39;Handles&#39; is not valid on operator declaration
-An [Operator Statement](../Topic/Operator%20Statement.md) specifies the [Handles](../Topic/Handles%20Clause%20\(Visual%20Basic\).md) keyword.  
+An [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement) specifies the [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause) keyword.  
   
  Only a `Sub` procedure can handle events. An `Operator` procedure cannot. For more information on event handlers, see [How to: Call an Event Handler in Visual Basic](../Topic/How%20to:%20Call%20an%20Event%20Handler%20in%20Visual%20Basic.md).  
   
- An `Operator` procedure requires both the `Public` and `Shared` keywords, and a conversion operator requires either the `Widening` or the `Narrowing` keyword. For more information, see [Operator Procedures](../Topic/Operator%20Procedures%20\(Visual%20Basic\).md).  
+ An `Operator` procedure requires both the `Public` and `Shared` keywords, and a conversion operator requires either the `Widening` or the `Narrowing` keyword. For more information, see [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures).  
   
  **Error ID:** BC33003  
   
@@ -51,6 +51,6 @@ An [Operator Statement](../Topic/Operator%20Statement.md) specifies the [Handles
 -   If you intend this procedure to define an operator, remove the `Handles` keyword from its declaration.  
   
 ## See Also  
- [Operator Statement](../Topic/Operator%20Statement.md)   
+ [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)   
  [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
  [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)

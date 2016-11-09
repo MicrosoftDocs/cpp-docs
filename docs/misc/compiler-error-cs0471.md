@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0471"
+title: "Compiler Error CS0471 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0471"
 ms.assetid: 3b666461-c57b-45f4-83d3-a23786e29ae9
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

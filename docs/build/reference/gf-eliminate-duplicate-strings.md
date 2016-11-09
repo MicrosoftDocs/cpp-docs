@@ -1,7 +1,7 @@
 ---
-title: "-GF (Eliminate Duplicate Strings)"
+title: "-GF (Eliminate Duplicate Strings) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -84,7 +84,7 @@ char *t = "This is a character buffer";
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.StringPooling*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.StringPooling%2A>.  
   
 ## See Also  
  [Compiler Options](../../build/reference/compiler-options.md)   

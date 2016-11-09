@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB1021"
+title: "MSBuild Error MSB1021 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,8 +41,8 @@ translation.priority.mt:
   
 ### To correct this error  
   
--   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md).  
+-   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources).  
   
 ## See Also  
- [Command-Line Reference](../Topic/MSBuild%20Command-Line%20Reference.md)   
- [Build Loggers](../Topic/Build%20Loggers.md)
+ [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)   
+ [Build Loggers](/visual-studio/msbuild/build-loggers)

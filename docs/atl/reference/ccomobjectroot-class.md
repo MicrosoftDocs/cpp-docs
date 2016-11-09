@@ -1,7 +1,7 @@
 ---
-title: "CComObjectRoot Class"
+title: "CComObjectRoot Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComObjectRoot class"
 ms.assetid: f8797c38-6e73-4f67-85c2-71654cffa8eb
-caps.latest.revision: 16
+caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -59,10 +59,3 @@ typedef CComObjectRootEx<CComObjectThreadModel> CComObjectRoot;
  [CComObject Class](../../atl/reference/ccomobject-class.md)   
  [CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

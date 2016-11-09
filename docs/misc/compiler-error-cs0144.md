@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0144"
+title: "Compiler Error CS0144 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0144"
 ms.assetid: 3904cab1-05bd-44ec-81d0-e36c5656f742
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0144
 Cannot create an instance of the abstract class or interface 'interface'  
   
- You cannot create an instance of an [abstract](../Topic/abstract%20\(C%23%20Reference\).md) class or an [interface](../Topic/interface%20\(C%23%20Reference\).md). For more information, see [Interfaces](../Topic/Interfaces%20\(C%23%20Programming%20Guide\).md).  
+ You cannot create an instance of an [abstract](/dotnet/csharp/language-reference/keywords/abstract) class or an [interface](/dotnet/csharp/language-reference/keywords/interface). For more information, see [Interfaces](/dotnet/csharp/programming-guide/interfaces/index).  
   
  The following sample generates CS0144:  
   

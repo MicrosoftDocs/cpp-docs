@@ -1,5 +1,5 @@
 ---
-title: "Comment statements cannot be evaluated (Not in TOC)"
+title: "Comment statements cannot be evaluated (Not in TOC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -41,5 +41,5 @@ A comment statement has been entered in the Immediate Window during a debugging 
  **Error ID:** BC30974  
   
 ## See Also  
- [Debugging Your Visual Basic Application](../Topic/Debugging%20Your%20Visual%20Basic%20Application.md)   
- [Immediate Window](../Topic/Immediate%20Window.md)
+ [Debugging Your Visual Basic Application](/dotnet/visual-basic/developing-apps/debugging)   
+ [Immediate Window](/visual-studio/ide/reference/immediate-window)

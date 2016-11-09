@@ -1,5 +1,5 @@
 ---
-title: "&#39;Implements&#39; statement must follow any &#39;Inherits&#39; statement and precede all declarations in a class"
+title: "&#39;Implements&#39; statement must follow any &#39;Inherits&#39; statement and precede all declarations in a class | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -55,5 +55,5 @@ An `Implements` statement was encountered in an invalid location.
     ```  
   
 ## See Also  
- [Interfaces](../Topic/Interfaces%20\(Visual%20Basic\).md)   
- [Implements](../Topic/Implements%20Clause%20\(Visual%20Basic\).md)
+ [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)   
+ [Implements](/dotnet/visual-basic/language-reference/statements/implements-clause)

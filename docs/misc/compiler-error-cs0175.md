@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0175"
+title: "Compiler Error CS0175 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0175"
 ms.assetid: cedd769d-8258-4235-a321-362981b9f84b
 caps.latest.revision: 12
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0175
 Use of keyword 'base' is not valid in this context  
   
- The [base](../Topic/base%20\(C%23%20Reference\).md) keyword must be used to specify a particular member of the base class. For more information, see [Constructors](../Topic/Constructors%20\(C%23%20Programming%20Guide\).md).  
+ The [base](/dotnet/csharp/language-reference/keywords/base) keyword must be used to specify a particular member of the base class. For more information, see [Constructors](/dotnet/csharp/programming-guide/classes-and-structs/constructors).  
   
  The following sample generates CS0175:  
   

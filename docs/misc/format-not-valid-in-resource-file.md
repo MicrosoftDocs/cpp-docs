@@ -1,5 +1,5 @@
 ---
-title: "Format not valid in resource file"
+title: "Format not valid in resource file | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -42,4 +42,4 @@ A resource file in your project does not follow the standard format for a Window
 2.  Remove the invalid resource file from the project.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

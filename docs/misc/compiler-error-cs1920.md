@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1920"
+title: "Compiler Error CS1920 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1920"
 ms.assetid: efb4782f-a222-4fb5-9e79-8bd2d380520b
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -75,4 +76,4 @@ public class Test
 ```  
   
 ## See Also  
- [Object and Collection Initializers](../Topic/Object%20and%20Collection%20Initializers%20\(C%23%20Programming%20Guide\).md)
+ [Object and Collection Initializers](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)

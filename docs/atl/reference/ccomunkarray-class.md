@@ -1,7 +1,7 @@
 ---
-title: "CComUnkArray Class"
+title: "CComUnkArray Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -21,7 +21,7 @@ helpviewer_keywords:
   - "connection points [C++], managing"
   - "CComUnkArray class"
 ms.assetid: 5fd4b378-a7b5-4cc1-8866-8ab72a73639e
-caps.latest.revision: 16
+caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -60,23 +60,23 @@ class CComUnkArray
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComUnkArray::CComUnkArray](../Topic/CComUnkArray::CComUnkArray.md)|Constructor.|  
+|[CComUnkArray::CComUnkArray](#ccomunkarray__ccomunkarray)|Constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComUnkArray::Add](../Topic/CComUnkArray::Add.md)|Call this method to add an **IUnknown** pointer to the array.|  
-|[CComUnkArray::begin](../Topic/CComUnkArray::begin.md)|Returns a pointer to the first **IUnknown** pointer in the collection.|  
-|[CComUnkArray::end](../Topic/CComUnkArray::end.md)|Returns a pointer to one past the last **IUnknown** pointer in the collection.|  
-|[CComUnkArray::GetCookie](../Topic/CComUnkArray::GetCookie.md)|Call this method to get the cookie associated with a given **IUnknown** pointer.|  
-|[CComUnkArray::GetUnknown](../Topic/CComUnkArray::GetUnknown.md)|Call this method to get the **IUnknown** pointer associated with a given cookie.|  
-|[CComUnkArray::Remove](../Topic/CComUnkArray::Remove.md)|Call this method to remove an **IUnknown** pointer from the array.|  
+|[CComUnkArray::Add](#ccomunkarray__add)|Call this method to add an **IUnknown** pointer to the array.|  
+|[CComUnkArray::begin](#ccomunkarray__begin)|Returns a pointer to the first **IUnknown** pointer in the collection.|  
+|[CComUnkArray::end](#ccomunkarray__end)|Returns a pointer to one past the last **IUnknown** pointer in the collection.|  
+|[CComUnkArray::GetCookie](#ccomunkarray__getcookie)|Call this method to get the cookie associated with a given **IUnknown** pointer.|  
+|[CComUnkArray::GetUnknown](#ccomunkarray__getunknown)|Call this method to get the **IUnknown** pointer associated with a given cookie.|  
+|[CComUnkArray::Remove](#ccomunkarray__remove)|Call this method to remove an **IUnknown** pointer from the array.|  
   
 ## Remarks  
  **CComUnkArray** holds a fixed number of **IUnknown** pointers, each an interface on a connection point. **CComUnkArray** can be used as a parameter to the [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) template class. **CComUnkArray\<1>** is a template specialization of **CComUnkArray** that has been optimized for one connection point.  
   
- The **CComUnkArray** methods [begin](../Topic/CComUnkArray::begin.md) and [end](../Topic/CComUnkArray::end.md) can be used to loop through all connection points (for example, when an event is fired).  
+ The **CComUnkArray** methods [begin](#ccomunkarray__begin) and [end](#ccomunkarray__end) can be used to loop through all connection points (for example, when an event is fired).  
   
  See [Adding Connection Points to an Object](../../atl/adding-connection-points-to-an-object.md) for details on automating creation of connection point proxies.  
   
@@ -190,10 +190,3 @@ BOOL Remove(DWORD dwCookie);
 ## See Also  
  [CComDynamicUnkArray Class](../../atl/reference/ccomdynamicunkarray-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

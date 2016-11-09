@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS1634"
+title: "Compiler Warning (level 1) CS1634 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1634"
 ms.assetid: 4fd00eeb-89e3-4c18-827d-9b00a4bd8c9a
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS1634
 Expected disable or restore  
   
- This error occurs if a #pragma warning clause is badly formed, such as if disable or restore was omitted. For more information, see the [#pragma warning](../Topic/%23pragma%20warning%20\(C%23%20Reference\).md) topic.  
+ This error occurs if a #pragma warning clause is badly formed, such as if disable or restore was omitted. For more information, see the [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) topic.  
   
 ## Example  
  The following sample generates CS1634:  

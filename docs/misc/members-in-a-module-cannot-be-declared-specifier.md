@@ -1,5 +1,5 @@
 ---
-title: "Members in a Module cannot be declared &#39;&lt;specifier&gt;&#39;"
+title: "Members in a Module cannot be declared &#39;&lt;specifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You have used a specifier that is not valid on a member within a `Module` statem
 -   Remove the specifier.  
   
 ## See Also  
- [Module Statement](../Topic/Module%20Statement.md)
+ [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)

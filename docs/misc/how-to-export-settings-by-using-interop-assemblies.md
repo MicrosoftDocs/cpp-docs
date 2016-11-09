@@ -1,7 +1,7 @@
 ---
-title: "How to: Export Settings By Using Interop Assemblies"
+title: "How to: Export Settings By Using Interop Assemblies | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -44,7 +44,7 @@ A VSPackage may export settings from the [!INCLUDE[vsprvs](../assembler/masm/inc
   
     -   Register the VSPackage as supporting the settings mechanism by defining one or more Custom Settings Points.  
   
-         For more information, see [Support for User Settings](../Topic/Support%20for%20User%20Settings.md).  
+         For more information, see [Support for User Settings](/visual-studio/extensibility/internals/support-for-user-settings).  
   
     -   Declare that the VSPackage implements <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings>. If desired, the VSPackage can also implement <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettingsQuery> interface. For example:  
   
@@ -52,7 +52,7 @@ A VSPackage may export settings from the [!INCLUDE[vsprvs](../assembler/masm/inc
         public class MyPackage : IVsPackage, IVsUserSettings, IVsUserSettingsQuery  
         ```  
   
-    -   Ensure that the VSPackage's implementation of the <xref:System.Runtime.InteropServices.Marshal.QueryInterface*> method supplies an <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interface when called with `IID_IVsUserSettings`.  
+    -   Ensure that the VSPackage's implementation of the <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> method supplies an <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interface when called with `IID_IVsUserSettings`.  
   
          Optionally, `QueryInterface` can supply an <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettingsQuery> interface when called with the `IID_IVsUserSettingsQuery` interface.  
   
@@ -98,17 +98,17 @@ A VSPackage may export settings from the [!INCLUDE[vsprvs](../assembler/masm/inc
   
      If a VSPackage does not implement <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettingsQuery>, all its state information is saved during a settings export.  
   
-     A VSPackage can support more than one Custom Settings Point (settings category). Implementations of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettingsQuery.NeedExport*> method must check the supplied Custom Settings Point's GUID or settings category argument to determine if a particular group of settings must be saved.  
+     A VSPackage can support more than one Custom Settings Point (settings category). Implementations of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettingsQuery.NeedExport%2A> method must check the supplied Custom Settings Point's GUID or settings category argument to determine if a particular group of settings must be saved.  
   
      In the example below, the VSPackage always requests that its command bar state is saved, but only requests that its key binding state is saved if a flag has been set.  
   
 3.  Write settings data to the settings file.  
   
-     To support exporting settings, a VSPackage must always implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings*> method.  
+     To support exporting settings, a VSPackage must always implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> method.  
   
      The implementation must handle the arguments passed by the IDE, the GUID of that Custom Settings Point's category, and an <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsWriter> interface.  
   
-    1.  A VSPackage can support more than one Custom Settings Point (settings category). In the example below, the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings*> method calls a different implementation for persisting command bar state as opposed to persisting key binding state.  
+    1.  A VSPackage can support more than one Custom Settings Point (settings category). In the example below, the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> method calls a different implementation for persisting command bar state as opposed to persisting key binding state.  
   
     2.  A VSPackage must use the supplied <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsWriter> interface to save data to the setting file.  
   
@@ -146,7 +146,7 @@ A VSPackage may export settings from the [!INCLUDE[vsprvs](../assembler/masm/inc
          If the implementation can map data into one of the four supported formats, there is no restriction on how much or what type of data can be written.  
   
         > [!NOTE]
-        >  In addition to data explicitly written and transparent to the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings*> implementation, the settings API also saves [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] version information. Saved settings can be compared against the version of the IDE that generated them during settings import.  
+        >  In addition to data explicitly written and transparent to the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> implementation, the settings API also saves [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] version information. Saved settings can be compared against the version of the IDE that generated them during settings import.  
   
 ## Example  
  The following example demonstrates how to import and export settings data.  
@@ -357,7 +357,7 @@ HRESULT ImportSettings_KeyBindings(IVsSettingsReader *pSettings, UserSettings
 ```  
   
 ## See Also  
- [Support for User Settings](../Topic/Support%20for%20User%20Settings.md)   
- [Extending User Settings and Options](../Topic/Extending%20User%20Settings%20and%20Options.md)   
+ [Support for User Settings](/visual-studio/extensibility/internals/support-for-user-settings)   
+ [Extending User Settings and Options](/visual-studio/extensibility/extending-user-settings-and-options)   
  [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
  [How to: Use Interop Assemblies to Import Settings](../misc/how-to-use-interop-assemblies-to-import-settings.md)

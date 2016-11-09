@@ -1,7 +1,7 @@
 ---
-title: "How to: Retrieve Text from the Clipboard (C++-CLI)"
+title: "How to: Retrieve Text from the Clipboard (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Retrieve Text from the Clipboard (C++/CLI)
-The following code example uses the <xref:System.Windows.Forms.Clipboard.GetDataObject*> member function to return a pointer to the <xref:System.Windows.Forms.IDataObject> interface. This interface can then be queried for the format of the data and used to retrieve the actual data.  
+The following code example uses the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> member function to return a pointer to the <xref:System.Windows.Forms.IDataObject> interface. This interface can then be queried for the format of the data and used to retrieve the actual data.  
   
 ## Example  
   

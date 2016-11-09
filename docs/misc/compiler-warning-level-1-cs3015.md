@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS3015"
+title: "Compiler Warning (level 1) CS3015 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS3015"
 ms.assetid: 58182215-0c2f-4497-8baf-ffb29f18d6c7
 caps.latest.revision: 9
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

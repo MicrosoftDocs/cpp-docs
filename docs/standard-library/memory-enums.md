@@ -1,7 +1,7 @@
 ---
-title: "&lt;memory&gt; enums"
+title: "&lt;memory&gt; enums | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""

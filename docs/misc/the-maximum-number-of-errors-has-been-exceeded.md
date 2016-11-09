@@ -1,5 +1,5 @@
 ---
-title: "The maximum number of errors has been exceeded"
+title: "The maximum number of errors has been exceeded | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ The compiler maximum of 100 errors has been reached.
 -   Decrease the number of generated errors by debugging and addressing each in turn.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

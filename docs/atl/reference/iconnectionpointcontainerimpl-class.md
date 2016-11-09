@@ -1,7 +1,7 @@
 ---
-title: "IConnectionPointContainerImpl Class"
+title: "IConnectionPointContainerImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -22,7 +22,7 @@ helpviewer_keywords:
   - "connection points [C++], container"
   - "IConnectionPointContainerImpl class"
 ms.assetid: 10db5a8d-8be9-4d9d-8a82-8ab9ffe3e9d6
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -60,8 +60,8 @@ template<class T>  class ATL_NO_VTABLE IConnectionPointContainerImpl :   public 
   
 |Name|Description|  
 |----------|-----------------|  
-|[IConnectionPointContainerImpl::EnumConnectionPoints](../Topic/IConnectionPointContainerImpl::EnumConnectionPoints.md)|Creates an enumerator to iterate through the connection points supported in the connectable object.|  
-|[IConnectionPointContainerImpl::FindConnectionPoint](../Topic/IConnectionPointContainerImpl::FindConnectionPoint.md)|Retrieves an interface pointer to the connection point that supports the specified IID.|  
+|[IConnectionPointContainerImpl::EnumConnectionPoints](#iconnectionpointcontainerimpl__enumconnectionpoints)|Creates an enumerator to iterate through the connection points supported in the connectable object.|  
+|[IConnectionPointContainerImpl::FindConnectionPoint](#iconnectionpointcontainerimpl__findconnectionpoint)|Retrieves an interface pointer to the connection point that supports the specified IID.|  
   
 ## Remarks  
  `IConnectionPointContainerImpl` implements a connection point container to manage a collection of [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) objects. `IConnectionPointContainerImpl` provides two methods that a client can call to retrieve more information about a connectable object:  
@@ -104,10 +104,3 @@ STDMETHOD(FindConnectionPoint)(REFIID riid,
 ## See Also  
  [IConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms683857)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

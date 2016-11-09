@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 2) CS0251"
+title: "Compiler Warning (level 2) CS0251 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0251"
 ms.assetid: 791a325a-096d-4d87-b31d-d9b3124210c8
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

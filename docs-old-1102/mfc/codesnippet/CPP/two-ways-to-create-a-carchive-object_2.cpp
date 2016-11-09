@@ -1,0 +1,2 @@
+         archive.Close();
+         theFile.Close();

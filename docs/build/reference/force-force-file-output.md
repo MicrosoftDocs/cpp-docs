@@ -1,7 +1,7 @@
 ---
-title: "-FORCE (Force File Output)"
+title: "-FORCE (Force File Output) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -71,7 +71,7 @@ translation.priority.ht:
   
 ### To set this linker option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.  
   
 ## See Also  
  [Setting Linker Options](../../build/reference/setting-linker-options.md)   

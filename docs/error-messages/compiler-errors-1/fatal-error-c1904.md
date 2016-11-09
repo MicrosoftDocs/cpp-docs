@@ -1,7 +1,7 @@
 ---
-title: "Fatal Error C1904"
+title: "Fatal Error C1904 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,4 +41,4 @@ bad provider interaction: 'file'
   
  This error indicates the failure of an attribute provider.  
   
- Note the circumstances of the error, try to isolate the problem and create a reproducible test case, then contact [Talk to Us](../Topic/Talk%20to%20Us.md).
+ Note the circumstances of the error, try to isolate the problem and create a reproducible test case, then contact [Talk to Us](/visual-studio/ide/talk-to-us).

@@ -1,5 +1,5 @@
 ---
-title: "Registry key &#39;&lt;keyname&gt;&#39; could not be created"
+title: "Registry key &#39;&lt;keyname&gt;&#39; could not be created | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,5 +40,5 @@ The specified registry key could not be created, possibly because of insufficien
 -   Ensure that you have sufficient security permissions to access the key.  
   
 ## See Also  
- [Registry Summary](../Topic/Registry%20Summary%20\(Visual%20Basic\).md)   
+ [Registry Summary](/dotnet/visual-basic/language-reference/keywords/registry-summary)   
  [Registry Access Changes in Visual Basic .NET](http://msdn.microsoft.com/en-us/b58f7687-f4db-448a-a865-07f62fd16fb2)

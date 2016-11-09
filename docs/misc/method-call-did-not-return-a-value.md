@@ -1,5 +1,5 @@
 ---
-title: "Method call did not return a value"
+title: "Method call did not return a value | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ The method called did not return a value as expected.
 -   Verify that the method called is a function that returns a value.  
   
 ## See Also  
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)

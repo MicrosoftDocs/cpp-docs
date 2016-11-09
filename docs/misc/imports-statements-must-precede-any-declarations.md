@@ -1,5 +1,5 @@
 ---
-title: "&#39;Imports&#39; statements must precede any declarations"
+title: "&#39;Imports&#39; statements must precede any declarations | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ An `Imports` statement follows a declaration statement within a source file.
 -   Move the `Imports` statement to the top of the source file, before any declaration statements.  
   
 ## See Also  
- [Imports Statement (.NET Namespace and Type)](../Topic/Imports%20Statement%20\(.NET%20Namespace%20and%20Type\).md)
+ [Imports Statement (.NET Namespace and Type)](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)

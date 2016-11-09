@@ -1,7 +1,7 @@
 ---
-title: "IOleInPlaceActiveObjectImpl Class"
+title: "IOleInPlaceActiveObjectImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ helpviewer_keywords:
   - "ActiveX controls [C++], communication between container and control"
   - "IOleInPlaceActiveObject, ATL implementation"
 ms.assetid: 44e6cc6d-a2dc-4187-98e3-73cf0320dea9
-caps.latest.revision: 20
+caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -60,13 +60,14 @@ class IOleInPlaceActiveObjectImpl
   
 |Name|Description|  
 |----------|-----------------|  
-|[IOleInPlaceActiveObjectImpl::ContextSensitiveHelp](../Topic/IOleInPlaceActiveObjectImpl::ContextSensitiveHelp.md)|Enables context-sensitive help. The ATL implementation returns **E_NOTIMPL**.|  
-|[IOleInPlaceActiveObjectImpl::EnableModeless](../Topic/IOleInPlaceActiveObjectImpl::EnableModeless.md)|Enables modeless dialog boxes. The ATL implementation returns `S_OK`.|  
-|[IOleInPlaceActiveObjectImpl::GetWindow](../Topic/IOleInPlaceActiveObjectImpl::GetWindow.md)|Gets a window handle.|  
-|[IOleInPlaceActiveObjectImpl::OnDocWindowActivate](../Topic/IOleInPlaceActiveObjectImpl::OnDocWindowActivate.md)|Notifies the control when the container's document window is activated or deactivated. The ATL implementation returns `S_OK`.|  
-|[IOleInPlaceActiveObjectImpl::OnFrameWindowActivate](../Topic/IOleInPlaceActiveObjectImpl::OnFrameWindowActivate.md)|Notifies the control when the container's top-level frame window is activated or deactivated. The ATL implementation returns|  
-|[IOleInPlaceActiveObjectImpl::ResizeBorder](../Topic/IOleInPlaceActiveObjectImpl::ResizeBorder.md)|Informs the control it needs to resize its borders. The ATL implementation returns `S_OK`.|  
-|[IOleInPlaceActiveObjectImpl::TranslateAccelerator](../Topic/IOleInPlaceActiveObjectImpl::TranslateAccelerator.md)|Processes menu accelerator-key messages from the container. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleInPlaceActiveObjectImpl::ContextSensitiveHelp](#ioleinplaceactiveobjectimpl__contextsensitivehelp)|Enables context-sensitive help. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleInPlaceActiveObjectImpl::EnableModeless](#ioleinplaceactiveobjectimpl__enablemodeless)|Enables modeless dialog boxes. The ATL implementation returns `S_OK`.|  
+|[IOleInPlaceActiveObjectImpl::GetWindow](#ioleinplaceactiveobjectimpl__getwindow)|Gets a window handle.|  
+|[IOleInPlaceActiveObjectImpl::OnDocWindowActivate](#ioleinplaceactiveobjectimpl__ondocwindowactivate)|Notifies the control when the container's document window is activated or deactivated. The ATL implementation returns `S_OK`.|  
+|[IOleInPlaceActiveObjectImpl::OnFrameWindowActivate](#ioleinplaceactiveobjectimpl__onframewindowactivate)|Notifies the control when the container's top-level frame window is activated or deactivated. The ATL implementation returns|  
+|[IOleInPlaceActiveObjectImpl::ResizeBorder](#ioleinplaceactiveobjectimpl__resizeborder)|Informs the control it needs to resize its borders. The ATL implementation returns `S_OK`.|  
+|[IOleInPlaceActiveObjectImpl::TranslateAccelerator](#ioleinplaceactiveobjectimpl__translateaccelerator)|Processes menu accelerator-key messages from the container. The ATL implementation returns **E_NOTIMPL**.|  
+  
   
 ## Remarks  
  The [IOleInPlaceActiveObject](http://msdn.microsoft.com/library/windows/desktop/ms691299) interface assists communication between an in-place control and its container; for example, communicating the active state of the control and container, and informing the control it needs to resize itself. Class `IOleInPlaceActiveObjectImpl` provides a default implementation of `IOleInPlaceActiveObject` and supports **IUnknown** by sending information to the dump device in debug builds.  
@@ -182,10 +183,3 @@ HRESULT TranslateAccelerator(LPMSG   lpmsg);
  [CComControl Class](../../atl/reference/ccomcontrol-class.md)   
  [ActiveX Controls Interfaces](http://msdn.microsoft.com/library/windows/desktop/ms692724)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

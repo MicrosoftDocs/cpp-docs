@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS3022"
+title: "Compiler Warning (level 1) CS3022 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS3022"
 ms.assetid: 9340645c-10c3-4e21-a825-3f05fae02ff7
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

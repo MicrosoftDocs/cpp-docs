@@ -1,5 +1,5 @@
 ---
-title: "&#39;Set&#39; parameter must have the same type as the containing property"
+title: "&#39;Set&#39; parameter must have the same type as the containing property | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -62,5 +62,5 @@ The parameter for the `Set` property procedure has a different type from the pro
   
 ## See Also  
  [NOT IN BUILD: How to: Add Fields and Properties to a Class](http://msdn.microsoft.com/en-us/ae53f61b-3abc-413e-8931-703c5f5e8fc2)   
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)   
+ [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)   
  [NOT IN BUILD: Properties and Property Procedures](http://msdn.microsoft.com/en-us/23e2a1ec-7e9d-4109-8940-c703d981077b)

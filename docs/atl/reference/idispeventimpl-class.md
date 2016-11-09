@@ -1,7 +1,7 @@
 ---
-title: "IDispEventImpl Class"
+title: "IDispEventImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords: 
   - "IDispEventImpl class"
 ms.assetid: a64b5288-35cb-4638-aad6-2d15b1c7cf7b
-caps.latest.revision: 21
+caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -89,17 +89,17 @@ template <UINT   nID, class T,
   
 |Name|Description|  
 |----------|-----------------|  
-|[IDispEventImpl::IDispEventImpl](../Topic/IDispEventImpl::IDispEventImpl.md)|The constructor.|  
+|[IDispEventImpl::IDispEventImpl](#idispeventimpl__idispeventimpl)|The constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[IDispEventImpl::GetFuncInfoFromId](../Topic/IDispEventImpl::GetFuncInfoFromId.md)|Locates the function index for the specified dispatch identifier.|  
-|[IDispEventImpl::GetIDsOfNames](../Topic/IDispEventImpl::GetIDsOfNames.md)|Maps a single member and an optional set of argument names to a corresponding set of integer DISPIDs.|  
-|[IDispEventImpl::GetTypeInfo](../Topic/IDispEventImpl::GetTypeInfo.md)|Retrieves the type information for an object.|  
-|[IDispEventImpl::GetTypeInfoCount](../Topic/IDispEventImpl::GetTypeInfoCount.md)|Retrieves the number of type information interfaces.|  
-|[IDispEventImpl::GetUserDefinedType](../Topic/IDispEventImpl::GetUserDefinedType.md)|Retrieves the basic type of a user-defined type.|  
+|[IDispEventImpl::GetFuncInfoFromId](#idispeventimpl__getfuncinfofromid)|Locates the function index for the specified dispatch identifier.|  
+|[IDispEventImpl::GetIDsOfNames](#idispeventimpl__getidsofnames)|Maps a single member and an optional set of argument names to a corresponding set of integer DISPIDs.|  
+|[IDispEventImpl::GetTypeInfo](#idispeventimpl__gettypeinfo)|Retrieves the type information for an object.|  
+|[IDispEventImpl::GetTypeInfoCount](#idispeventimpl__gettypeinfocount)|Retrieves the number of type information interfaces.|  
+|[IDispEventImpl::GetUserDefinedType](#idispeventimpl__getuserdefinedtype)|Retrieves the basic type of a user-defined type.|  
   
 ## Remarks  
  `IDispEventImpl` provides a way of implementing an event dispinterface without requiring you to supply implementation code for every method/event on that interface. `IDispEventImpl` provides implementations of the `IDispatch` methods. You only need to supply implementations for the events that you are interested in handling.  
@@ -242,10 +242,3 @@ typedef tihclass _tihclass;
  [SINK_ENTRY_EX](../Topic/SINK_ENTRY_EX.md)   
  [SINK_ENTRY_INFO](../Topic/SINK_ENTRY_INFO.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
-title: "IDispEventSimpleImpl Class"
+title: "IDispEventSimpleImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "IDispEventSimpleImpl class"
 ms.assetid: 971d82b7-a921-47fa-a4d8-909bed377ab0
-caps.latest.revision: 26
+caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -67,14 +67,14 @@ template <UINT nID, class T,
   
 |Name|Description|  
 |----------|-----------------|  
-|[IDispEventSimpleImpl::Advise](../Topic/IDispEventSimpleImpl::Advise.md)|Establishes a connection with the default event source.|  
-|[IDispEventSimpleImpl::DispEventAdvise](../Topic/IDispEventSimpleImpl::DispEventAdvise.md)|Establishes a connection with the event source.|  
-|[IDispEventSimpleImpl::DispEventUnadvise](../Topic/IDispEventSimpleImpl::DispEventUnadvise.md)|Breaks the connection with the event source.|  
-|[IDispEventSimpleImpl::GetIDsOfNames](../Topic/IDispEventSimpleImpl::GetIDsOfNames.md)|Returns **E_NOTIMPL**.|  
-|[IDispEventSimpleImpl::GetTypeInfo](../Topic/IDispEventSimpleImpl::GetTypeInfo.md)|Returns **E_NOTIMPL**.|  
-|[IDispEventSimpleImpl::GetTypeInfoCount](../Topic/IDispEventSimpleImpl::GetTypeInfoCount.md)|Returns **E_NOTIMPL**.|  
-|[IDispEventSimpleImpl::Invoke](../Topic/IDispEventSimpleImpl::Invoke.md)|Calls the event handlers listed in the event sink map.|  
-|[IDispEventSimpleImpl::Unadvise](../Topic/IDispEventSimpleImpl::Unadvise.md)|Breaks the connection with the default event source.|  
+|[IDispEventSimpleImpl::Advise](#idispeventsimpleimpl__advise)|Establishes a connection with the default event source.|  
+|[IDispEventSimpleImpl::DispEventAdvise](#idispeventsimpleimpl__dispeventadvise)|Establishes a connection with the event source.|  
+|[IDispEventSimpleImpl::DispEventUnadvise](#idispeventsimpleimpl__dispeventunadvise)|Breaks the connection with the event source.|  
+|[IDispEventSimpleImpl::GetIDsOfNames](#idispeventsimpleimpl__getidsofnames)|Returns **E_NOTIMPL**.|  
+|[IDispEventSimpleImpl::GetTypeInfo](#idispeventsimpleimpl__gettypeinfo)|Returns **E_NOTIMPL**.|  
+|[IDispEventSimpleImpl::GetTypeInfoCount](#idispeventsimpleimpl__gettypeinfocount)|Returns **E_NOTIMPL**.|  
+|[IDispEventSimpleImpl::Invoke](#idispeventsimpleimpl__invoke)|Calls the event handlers listed in the event sink map.|  
+|[IDispEventSimpleImpl::Unadvise](#idispeventsimpleimpl__unadvise)|Breaks the connection with the default event source.|  
   
 ## Remarks  
  `IDispEventSimpleImpl` provides a way of implementing an event dispinterface without requiring you to supply implementation code for every method/event on that interface. `IDispEventSimpleImpl` provides implementations of the `IDispatch` methods. You only need to supply implementations for the events that you are interested in handling.  
@@ -85,9 +85,9 @@ template <UINT nID, class T,
   
 -   Supply type information for each event by passing a pointer to an [_ATL_FUNC_INFO](../../atl/reference/atl-func-info-structure.md) structure as a parameter to each entry. On the x86 platform, the `_ATL_FUNC_INFO.cc` value must be CC_CDECL with the callback function calling method of __stdcall.  
   
--   Call [DispEventAdvise](../Topic/IDispEventSimpleImpl::DispEventAdvise.md) to establish the connection between the source object and the base class.  
+-   Call [DispEventAdvise](#idispeventsimpleimpl__dispeventadvise) to establish the connection between the source object and the base class.  
   
--   Call [DispEventUnadvise](../Topic/IDispEventSimpleImpl::DispEventUnadvise.md) to break the connection.  
+-   Call [DispEventUnadvise](#idispeventsimpleimpl__dispeventunadvise) to break the connection.  
   
  You must derive from `IDispEventSimpleImpl` (using a unique value for `nID`) for each object for which you need to handle events. You can reuse the base class by unadvising against one source object then advising against a different source object, but the maximum number of source objects that can be handled by a single object at one time is limited by the number of `IDispEventSimpleImpl` base classes.  
   
@@ -265,10 +265,3 @@ HRESULT Unadvise(IUnknown* pUnk);
  [IDispEventImpl Class](../../atl/reference/idispeventimpl-class.md)   
  [SINK_ENTRY_INFO](../Topic/SINK_ENTRY_INFO.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

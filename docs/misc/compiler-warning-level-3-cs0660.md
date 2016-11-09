@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 3) CS0660"
+title: "Compiler Warning (level 3) CS0660 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0660"
 ms.assetid: 2f77b45b-c5c6-46af-abe9-002e67887896
 caps.latest.revision: 9
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

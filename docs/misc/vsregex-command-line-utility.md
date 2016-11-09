@@ -1,7 +1,7 @@
 ---
-title: "VsRegEx Command-Line Utility"
+title: "VsRegEx Command-Line Utility | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -33,10 +33,10 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # VsRegEx Command-Line Utility
-The VsRegEx utility has been replaced with the [CreateExpInstance Utility](../Topic/CreateExpInstance%20Utility.md) in Visual Studio 2010 and later.  
+The VsRegEx utility has been replaced with the [CreateExpInstance Utility](/visual-studio/extensibility/internals/createexpinstance-utility) in Visual Studio 2010 and later.  
   
 ## Remarks  
  In Visual Studio 2008, configuration information about the experimental instance of the IDE was stored in the system registry. In Visual Studio 2010 and later, it is stored in the file system.  
   
 ## See Also  
- [RegPkg Utility](../Topic/RegPkg%20Utility.md)
+ [RegPkg Utility](/visual-studio/extensibility/internals/regpkg-utility)

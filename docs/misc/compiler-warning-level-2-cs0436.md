@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 2) CS0436"
+title: "Compiler Warning (level 2) CS0436 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0436"
 ms.assetid: c4135d9d-3511-4bbc-9540-48c2091f869c
 caps.latest.revision: 13
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

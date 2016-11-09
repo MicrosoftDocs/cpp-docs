@@ -1,7 +1,7 @@
 ---
-title: "-MAP (Generate Mapfile)"
+title: "-MAP (Generate Mapfile) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -86,7 +86,7 @@ translation.priority.ht:
   
 ### To set this linker option programmatically  
   
-1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.GenerateMapFile*> and <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MapFileName*>.  
+1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.GenerateMapFile%2A> and <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MapFileName%2A>.  
   
 ## See Also  
  [Setting Linker Options](../../build/reference/setting-linker-options.md)   

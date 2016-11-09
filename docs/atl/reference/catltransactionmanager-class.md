@@ -1,7 +1,7 @@
 ---
-title: "CAtlTransactionManager Class"
+title: "CAtlTransactionManager Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,7 +17,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAtlTransactionManager class"
 ms.assetid: b01732dc-1d16-4b42-bfac-b137fca2b740
-caps.latest.revision: 24
+caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -54,36 +54,36 @@ class CAtlTransactionManager;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlTransactionManager::~CAtlTransactionManager](../Topic/CAtlTransactionManager::~CAtlTransactionManager.md)|CAtlTransactionManager destructor.|  
-|[CAtlTransactionManager::CAtlTransactionManager](../Topic/CAtlTransactionManager::CAtlTransactionManager.md)|CAtlTransactionManager constructor.|  
+|[CAtlTransactionManager::~CAtlTransactionManager](#catltransactionmanager___dtorcatltransactionmanager)|CAtlTransactionManager destructor.|  
+|[CAtlTransactionManager::CAtlTransactionManager](#catltransactionmanager__catltransactionmanager)|CAtlTransactionManager constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlTransactionManager::Close](../Topic/CAtlTransactionManager::Close.md)|Closes one the transaction handle.|  
-|[CAtlTransactionManager::Commit](../Topic/CAtlTransactionManager::Commit.md)|Requests that the transaction be committed.|  
-|[CAtlTransactionManager::Create](../Topic/CAtlTransactionManager::Create.md)|Creates the transaction handle.|  
-|[CAtlTransactionManager::CreateFile](../Topic/CAtlTransactionManager::CreateFile.md)|Creates or opens a file, file stream, or directory as a transacted operation.|  
-|[CAtlTransactionManager::DeleteFile](../Topic/CAtlTransactionManager::DeleteFile.md)|Deletes an existing file as a transacted operation.|  
-|[CAtlTransactionManager::FindFirstFile](../Topic/CAtlTransactionManager::FindFirstFile.md)|Searches a directory for a file or subdirectory as a transacted operation.|  
-|[CAtlTransactionManager::GetFileAttributes](../Topic/CAtlTransactionManager::GetFileAttributes.md)|Retrieves file system attributes for a specified file or directory as a transacted operation.|  
-|[CAtlTransactionManager::GetFileAttributesEx](../Topic/CAtlTransactionManager::GetFileAttributesEx.md)|Retrieves file system attributes for a specified file or directory as a transacted operation.|  
-|[CAtlTransactionManager::GetHandle](../Topic/CAtlTransactionManager::GetHandle.md)|Returns the transaction handle.|  
-|[CAtlTransactionManager::IsFallback](../Topic/CAtlTransactionManager::IsFallback.md)|Determines whether the fallback calls are enabled.|  
-|[CAtlTransactionManager::MoveFile](../Topic/CAtlTransactionManager::MoveFile.md)|Moves an existing file or a directory, including its children, as a transacted operation.|  
-|[CAtlTransactionManager::RegCreateKeyEx](../Topic/CAtlTransactionManager::RegCreateKeyEx.md)|Creates the specified registry key and associates it with a transaction. If the key already exists, the function opens it.|  
-|[CAtlTransactionManager::RegDeleteKey](../Topic/CAtlTransactionManager::RegDeleteKey.md)|Deletes a subkey and its values from the specified platform-specific view of the registry as a transacted operation.|  
-|[CAtlTransactionManager::RegOpenKeyEx](../Topic/CAtlTransactionManager::RegOpenKeyEx.md)|Opens the specified registry key and associates it with a transaction.|  
-|[CAtlTransactionManager::Rollback](../Topic/CAtlTransactionManager::Rollback.md)|Requests that the transaction be rolled back.|  
-|[CAtlTransactionManager::SetFileAttributes](../Topic/CAtlTransactionManager::SetFileAttributes.md)|Sets the attributes for a file or directory as a transacted operation.|  
+|[CAtlTransactionManager::Close](#catltransactionmanager__close)|Closes one the transaction handle.|  
+|[CAtlTransactionManager::Commit](#catltransactionmanager__commit)|Requests that the transaction be committed.|  
+|[CAtlTransactionManager::Create](#catltransactionmanager__create)|Creates the transaction handle.|  
+|[CAtlTransactionManager::CreateFile](#catltransactionmanager__createfile)|Creates or opens a file, file stream, or directory as a transacted operation.|  
+|[CAtlTransactionManager::DeleteFile](#catltransactionmanager__deletefile)|Deletes an existing file as a transacted operation.|  
+|[CAtlTransactionManager::FindFirstFile](#catltransactionmanager__findfirstfile)|Searches a directory for a file or subdirectory as a transacted operation.|  
+|[CAtlTransactionManager::GetFileAttributes](#catltransactionmanager__getfileattributes)|Retrieves file system attributes for a specified file or directory as a transacted operation.|  
+|[CAtlTransactionManager::GetFileAttributesEx](#catltransactionmanager__getfileattributesex)|Retrieves file system attributes for a specified file or directory as a transacted operation.|  
+|[CAtlTransactionManager::GetHandle](#catltransactionmanager__gethandle)|Returns the transaction handle.|  
+|[CAtlTransactionManager::IsFallback](#catltransactionmanager__isfallback)|Determines whether the fallback calls are enabled.|  
+|[CAtlTransactionManager::MoveFile](#catltransactionmanager__movefile)|Moves an existing file or a directory, including its children, as a transacted operation.|  
+|[CAtlTransactionManager::RegCreateKeyEx](#catltransactionmanager__regcreatekeyex)|Creates the specified registry key and associates it with a transaction. If the key already exists, the function opens it.|  
+|[CAtlTransactionManager::RegDeleteKey](#catltransactionmanager__regdeletekey)|Deletes a subkey and its values from the specified platform-specific view of the registry as a transacted operation.|  
+|[CAtlTransactionManager::RegOpenKeyEx](#catltransactionmanager__regopenkeyex)|Opens the specified registry key and associates it with a transaction.|  
+|[CAtlTransactionManager::Rollback](#catltransactionmanager__rollback)|Requests that the transaction be rolled back.|  
+|[CAtlTransactionManager::SetFileAttributes](#catltransactionmanager__setfileattributes)|Sets the attributes for a file or directory as a transacted operation.|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlTransactionManager::m_bFallback](../Topic/CAtlTransactionManager::m_bFallback.md)|`TRUE` if the fallback is supported; `FALSE` otherwise.|  
-|[CAtlTransactionManager::m_hTransaction](../Topic/CAtlTransactionManager::m_hTransaction.md)|The transaction handle.|  
+|[CAtlTransactionManager::m_bFallback](#catltransactionmanager__m_bfallback)|`TRUE` if the fallback is supported; `FALSE` otherwise.|  
+|[CAtlTransactionManager::m_hTransaction](#catltransactionmanager__m_htransaction)|The transaction handle.|  
   
 ## Remarks  
   
@@ -463,6 +463,8 @@ inline BOOL CAtlTransactionManager::SetFileAttributes(LPCTSTR lpFileName,  DWORD
   
 ## See Also  
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)
+
+
 
 
 

@@ -1,7 +1,7 @@
 ---
-title: "Walkthrough: Compiling a C++ Program that Targets the CLR in Visual Studio"
+title: "Walkthrough: Compiling a C++ Program that Targets the CLR in Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -92,7 +92,7 @@ You can create Visual C++ programs that use .NET classes and compile them by usi
     >  Choosing the empty CLR project template automatically set the **/clr** compiler option. To verify this, right-click the project in **Solution Explorer** and clicking **Properties**, and then check the **Common Language Runtime support** option in the **General** node of **Configuration Properties**.  
   
 ## What's Next  
- **Previous:** [Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md) &#124; **Next:**[Walkthrough: Compiling a C Program on the Command Line](../build/walkthrough-compiling-a-c-program-on-the-command-line.md)  
+ **Previous:** [Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md) &#124; **Next:**[Walkthrough: Compiling a C Program on the Command Line](../Topic/Walkthrough:%20Compiling%20a%20C%20Program%20on%20the%20Command%20Line.md)  
   
 ## See Also  
  [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)   

@@ -1,7 +1,7 @@
 ---
-title: "Fatal Error C1092"
+title: "Fatal Error C1092 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -56,4 +56,4 @@ Edit and Continue does not support changes to data types; build required
   
 2.  From the **Build** menu, choose **Build**.  
   
- For further information, see the [Supported Code Changes](../Topic/Supported%20Code%20Changes%20\(C++\).md).
+ For further information, see the [Supported Code Changes](/visual-studio/debugger/supported-code-changes-cpp).

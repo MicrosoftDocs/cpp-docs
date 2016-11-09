@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0221"
+title: "Compiler Error CS0221 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0221"
 ms.assetid: 97170b49-54f1-4dac-a865-2f9cc6bf55b1
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0221
 Constant value 'value' cannot be converted to a 'type' (use 'unchecked' syntax to override)  
   
- An assignment operation that would result in a data loss was detected by [checked](../Topic/checked%20\(C%23%20Reference\).md), which is on by default. Either correct the assignment or use [unchecked](../Topic/unchecked%20\(C%23%20Reference\).md) to resolve this error. For more information, see [Checked and Unchecked](../Topic/Checked%20and%20Unchecked%20\(C%23%20Reference\).md).  
+ An assignment operation that would result in a data loss was detected by [checked](/dotnet/csharp/language-reference/keywords/checked), which is on by default. Either correct the assignment or use [unchecked](/dotnet/csharp/language-reference/keywords/unchecked) to resolve this error. For more information, see [Checked and Unchecked](/dotnet/csharp/language-reference/keywords/checked-and-unchecked).  
   
  The following sample generates CS0221:  
   

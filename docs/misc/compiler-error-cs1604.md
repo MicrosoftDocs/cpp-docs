@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1604"
+title: "Compiler Error CS1604 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1604"
 ms.assetid: 415cce4e-89e6-4b52-93de-d2a6afefa23c
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

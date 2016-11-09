@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.Security.SecurityException"
+title: "Troubleshooting Exceptions: System.Security.SecurityException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -45,19 +45,19 @@ A <xref:System.Security.SecurityException> exception is thrown when a security e
   
 ## Associated Tips  
  Adjust the permission level of the assembly via the property page.  
- For more information, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.SqlPermissionLevel*>.  
+ For more information, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.SqlPermissionLevel%2A>.  
   
  Store application data in isolated storage.  
  Isolated storage is a data storage that provides isolation and safety by defining standardized ways of associating code with saved data. For more information, [Isolated Storage](../Topic/Isolated%20Storage.md).  
   
- If using <xref:System.Windows.Forms.OpenFileDialog> , use the <xref:System.Windows.Forms.OpenFileDialog.OpenFile*> method to open or save a file.  
+ If using <xref:System.Windows.Forms.OpenFileDialog> , use the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method to open or save a file.  
  This allows the application to perform in a partial-trust situation.  
   
  Make sure the application is reading and writing to existing event logs on the local computer.  
  The application may not have sufficient permissions to create logs on or write to non-local computers.  
   
  If calling unmanaged libraries, use equivalent managed libraries.  
- An equivalent API may exist in the Framework. For more information, see [Troubleshooting Interoperability](../Topic/Troubleshooting%20Interoperability%20\(Visual%20Basic\).md).  
+ An equivalent API may exist in the Framework. For more information, see [Troubleshooting Interoperability](/dotnet/visual-basic/programming-guide/com-interop/troubleshooting-interoperability).  
   
  Use safe windows.  
  The <xref:System.Security.Permissions.UIPermissionWindow> enumeration specifies the type of windows that code is allowed to use.  
@@ -72,7 +72,7 @@ A <xref:System.Security.SecurityException> exception is thrown when a security e
  This allows the application to perform in a partial-trust situation.  
   
  When deploying an Office solution, check to make sure you have fulfilled all necessary security requirements.  
- For more information see [Specific Security Considerations for Office Solutions](../Topic/Specific%20Security%20Considerations%20for%20Office%20Solutions.md).  
+ For more information see [Specific Security Considerations for Office Solutions](/office-dev/office-dev/specific-security-considerations-for-office-solutions).  
   
  If an assembly implementing the custom security object references other assemblies, add the referenced assemblies to the full trust assembly list.  
  For more information, see [Caspol.exe (Code Access Security Policy Tool)](../Topic/Caspol.exe%20\(Code%20Access%20Security%20Policy%20Tool\).md).  

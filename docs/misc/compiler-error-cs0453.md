@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0453"
+title: "Compiler Error CS0453 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0453"
 ms.assetid: a1bbd09e-6313-4bfd-84bf-bc15a8d214a6
 caps.latest.revision: 13
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

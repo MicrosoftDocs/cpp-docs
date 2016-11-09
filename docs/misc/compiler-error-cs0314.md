@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0314"
+title: "Compiler Error CS0314 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0314"
 ms.assetid: 12f68f51-0568-4e80-b0fd-15899807477d
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -64,4 +65,4 @@ public class C<T> : A<T> where T : ClassConstraint
 ```  
   
 ## See Also  
- [Constraints on Type Parameters](../Topic/Constraints%20on%20Type%20Parameters%20\(C%23%20Programming%20Guide\).md)
+ [Constraints on Type Parameters](/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters)

@@ -1,7 +1,7 @@
 ---
-title: "How to: Hook Up Events By Using IntelliSense (C#)"
+title: "How to: Hook Up Events By Using IntelliSense (C#) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -35,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Hook Up Events By Using IntelliSense (C#)
-This content has moved to [Visual C# IntelliSense](../Topic/Visual%20C%23%20IntelliSense.md).  
+This content has moved to [Visual C# IntelliSense](/visual-studio/ide/visual-csharp-intellisense).  
   
 1.  
   

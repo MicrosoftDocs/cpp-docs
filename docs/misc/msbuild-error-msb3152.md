@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB3152"
+title: "MSBuild Error MSB3152 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -36,7 +36,7 @@ translation.priority.ht:
 # MSBuild Error MSB3152
 **MSB3152: The install location for prerequisites has not been set to 'component vendor's web site' and the file '\<file>' in item '\<package>' can not be located on disk. See Help for more information.**  
   
- This error occurs when a file that is required for the prerequisite installer is missing. The installer files go into a special folder that Visual Studio has reserved for redistributable packages. The folder varies by the version of Visual Studio that you are developing with. For more about the specific folder location, see [Creating Bootstrapper Packages](../Topic/Creating%20Bootstrapper%20Packages.md).  
+ This error occurs when a file that is required for the prerequisite installer is missing. The installer files go into a special folder that Visual Studio has reserved for redistributable packages. The folder varies by the version of Visual Studio that you are developing with. For more about the specific folder location, see [Creating Bootstrapper Packages](/visual-studio/deployment/creating-bootstrapper-packages).  
   
 ### To correct this error  
   
@@ -49,4 +49,4 @@ translation.priority.ht:
 -   Do not use the broken bootstrapper package.  
   
 ## See Also  
- [Creating Bootstrapper Packages](../Topic/Creating%20Bootstrapper%20Packages.md)
+ [Creating Bootstrapper Packages](/visual-studio/deployment/creating-bootstrapper-packages)

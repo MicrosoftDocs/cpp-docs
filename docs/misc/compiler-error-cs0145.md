@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0145"
+title: "Compiler Error CS0145 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0145"
 ms.assetid: e5f9a90f-1700-4e6a-8f82-23d0c0287b85
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0145
 A const field requires a value to be provided  
   
- You must initialize a [const](../Topic/const%20\(C%23%20Reference\).md) variable. For more information, see [Constants](../Topic/Constants%20\(C%23%20Programming%20Guide\).md).  
+ You must initialize a [const](/dotnet/csharp/language-reference/keywords/const) variable. For more information, see [Constants](/dotnet/csharp/programming-guide/classes-and-structs/constants).  
   
  The following sample generates CS0145:  
   

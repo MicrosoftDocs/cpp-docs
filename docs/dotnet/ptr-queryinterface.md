@@ -1,7 +1,7 @@
 ---
-title: "ptr::QueryInterface"
+title: "ptr::QueryInterface | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -55,7 +55,7 @@ void QueryInterface(
  The `com::ptr` that will get the interface.  
   
 ## Exceptions  
- Internally, `QueryInterface` is called on the owned COM object and any error `HRESULT` is converted to an exception by <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR*>.  
+ Internally, `QueryInterface` is called on the owned COM object and any error `HRESULT` is converted to an exception by <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>.  
   
 ## Remarks  
  Use this method to create a COM wrapper for a different interface of the COM object owned by the current wrapper. This method calls `QueryInterface` through the owned COM object to request a pointer to a specific interface of the COM object and attaches the returned interface pointer to the passed-in `com::ptr`.  

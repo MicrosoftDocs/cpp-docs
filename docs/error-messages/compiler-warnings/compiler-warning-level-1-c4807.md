@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) C4807"
+title: "Compiler Warning (level 1) C4807 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

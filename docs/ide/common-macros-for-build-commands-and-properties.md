@@ -1,7 +1,7 @@
 ---
-title: "Common Macros for Build Commands and Properties"
+title: "Common Macros for Build Commands and Properties | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -127,13 +127,13 @@ Depending on your installation options, Visual Studio can make hundreds of macro
   
  To display the currently available macros, in the column to the right of a property name, click the drop-down arrow. If **Edit** is available, click it and then in the edit dialog box, click **Macros**. For more information, see the **Specifying User-Defined Values** section of [Property Pages](../ide/property-pages-visual-cpp.md).  
   
- Macros that are marked "Deprecated" are no longer used or have been replaced by an equivalent [item metadata macro](../Topic/ItemMetadata%20Element%20\(MSBuild\).md) (**%(***name***)**). Macros that are marked "Deprecated; migrated" are also deprecated. And in addition, if the project that contains the macro is migrated from Visual Studio 2008, Visual Studio converts the macro to the equivalent current macro.  
+ Macros that are marked "Deprecated" are no longer used or have been replaced by an equivalent [item metadata macro](/visual-studio/msbuild/itemmetadata-element-msbuild) (**%(***name***)**). Macros that are marked "Deprecated; migrated" are also deprecated. And in addition, if the project that contains the macro is migrated from Visual Studio 2008, Visual Studio converts the macro to the equivalent current macro.  
   
- The following table describes a commonly used subset of the available macros. This list is not exhaustive. For details on how MSBuild property definitions are created and used as macros in .props, .targets, and .vcxproj files, see [MSBuild Properties](MSBuild%20Properties.md).  
+ The following table describes a commonly used subset of the available macros. This list is not exhaustive. For details on how MSBuild property definitions are created and used as macros in .props, .targets, and .vcxproj files, see [MSBuild Properties](/visual-studio/msbuild/msbuild-properties).  
   
 |Macro|Description|  
 |-----------|-----------------|  
-|**$(RemoteMachine)**|Set to the value of the **Remote Machine** property on the Debug property page. See [Changing Project Settings for a C/C++ Debug Configuration](../Topic/Project%20Settings%20for%20a%20C++%20Debug%20Configuration.md) for more information.|  
+|**$(RemoteMachine)**|Set to the value of the **Remote Machine** property on the Debug property page. See [Changing Project Settings for a C/C++ Debug Configuration](/visual-studio/debugger/project-settings-for-a-cpp-debug-configuration) for more information.|  
 |**$(Configuration)**|The name of the current project configuration, for example, "Debug".|  
 |**$(Platform)**|The name of current project platform, for example, "Win32".|  
 |**$(ParentName)**|(Deprecated.) Name of the item containing this project item. This will be the parent folder name, or project name.|  
@@ -166,7 +166,7 @@ Depending on your installation options, Visual Studio can make hundreds of macro
 |**$(FrameworkDir)**|The directory into which the .NET Framework was installed.|  
 |**$(FrameworkVersion)**|The version of the .NET Framework used by Visual Studio. Combined with **$(FrameworkDir)**, the full path to the version of the .NET Framework use by Visual Studio.|  
 |**$(FrameworkSDKDir)**|The directory into which you installed the .NET Framework. The .NET Framework could have been installed as part of Visual Studio or separately.|  
-|**$(WebDeployPath)**|The relative path from the web deployment root to where the project outputs belong. Returns the same value as <xref:Microsoft.VisualStudio.VCProjectEngine.VCWebDeploymentTool.RelativePath*>.|  
+|**$(WebDeployPath)**|The relative path from the web deployment root to where the project outputs belong. Returns the same value as <xref:Microsoft.VisualStudio.VCProjectEngine.VCWebDeploymentTool.RelativePath%2A>.|  
 |**$(WebDeployRoot)**|The absolute path to the location of **\<localhost>**. For example, c:\inetpub\wwwroot.|  
 |**$(SafeParentName)**|(Deprecated.) The name of the immediate parent in valid name format. For example, a form is the parent of a .resx file.|  
 |**$(SafeInputName)**|(Deprecated.) The name of the file as a valid class name, minus file extension.|  

@@ -1,7 +1,7 @@
 ---
-title: "Displaying Properties of Related Elements - redirection"
+title: "Displaying Properties of Related Elements - redirection | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -23,4 +23,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Displaying Properties of Related Elements - redirection
-This topic has been replaced. Please go to [Customizing the Properties Window](../Topic/Customizing%20the%20Properties%20Window.md).
+This topic has been replaced. Please go to [Customizing the Properties Window](/visual-studio/modeling/customizing-the-properties-window).

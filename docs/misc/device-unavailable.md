@@ -1,5 +1,5 @@
 ---
-title: "Device unavailable"
+title: "Device unavailable | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -42,4 +42,4 @@ Either you have lost your network connection, or the device that you are trying 
 2.  Reconnect to the network and try again.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

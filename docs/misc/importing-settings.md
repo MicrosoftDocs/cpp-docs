@@ -1,7 +1,7 @@
 ---
-title: "Importing Settings"
+title: "Importing Settings | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -59,13 +59,13 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] integrated devel
   
 2.  Ensure that the class that implements the settings retrieves state data from disk.  
   
-     This step is performed by implementing the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml*> method.  
+     This step is performed by implementing the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml%2A> method.  
   
      The exact information that is to be persisted and how that information will be obtained and marshaled from the VSPackage differs for each VSPackage.  
   
      Regardless of the information that is to be persisted by the VSPackage, the class implementing <xref:Microsoft.VisualStudio.Shell.IProfileManager> must use the supplied <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader> interface to retrieve data from the settings file.  
   
-     Typically, as in the example below, <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml*> also validates the retrieved data and updates the VSPackage's state.  
+     Typically, as in the example below, <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml%2A> also validates the retrieved data and updates the VSPackage's state.  
   
     ```vb#  
     Dim mySvc As MyPackageService = TryCast(GetService(GetType(IVSMDMyPackage)), MyPackageService)   
@@ -117,7 +117,7 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] integrated devel
   
      Implementation details:  
   
-    -   Report errors back to the user interactively through the IDE by using the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader.ReportError*> method of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader> interface:  
+    -   Report errors back to the user interactively through the IDE by using the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader.ReportError%2A> method of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader> interface:  
   
         ```vb#  
         reader.ReadSettingString("PbrsAlpha", value)   
@@ -133,7 +133,7 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] integrated devel
           }  
         ```  
   
-    -   Prior to actually retrieving stored settings, an implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml*> method should use the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader.ReadFileVersion*> method to verify that version of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] that exports the stored settings is supported.  
+    -   Prior to actually retrieving stored settings, an implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml%2A> method should use the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader.ReadFileVersion%2A> method to verify that version of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] that exports the stored settings is supported.  
   
          In the case of the example below, the implementation checks to see if settings were produced by a version of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] with a major version number of `m_supportVer`, and if not, signals an error.  
   
@@ -149,7 +149,7 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] integrated devel
         }  
         ```  
   
-    -   The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] settings file supports random data access, so the order of read and writer settings operations is not important. In the example below, the order of writer operations in the implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml*> method is opposite of the read operations in the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml*> method.  
+    -   The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] settings file supports random data access, so the order of read and writer settings operations is not important. In the example below, the order of writer operations in the implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml%2A> method is opposite of the read operations in the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml%2A> method.  
   
     -   The value of the `pszSettingName` argument supplied to a method of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsWriter> interface must uniquely identify each of data element saved within a settings category.  
   
@@ -158,12 +158,12 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] integrated devel
   
 3.  Ensure the coherence between VSPackage state and locally stored or cached settings.  
   
-     This step is normally performed during the implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage*> method (as is seen in the example below). The details of this step are specific to a VSPackage and may involve obtaining the state of the VSPackage from automation, querying the VSPackage, and setting registry keys.  
+     This step is normally performed during the implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage%2A> method (as is seen in the example below). The details of this step are specific to a VSPackage and may involve obtaining the state of the VSPackage from automation, querying the VSPackage, and setting registry keys.  
   
     > [!NOTE]
-    >  The <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage*> method should retrieve the information saved by the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage*> method when the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage*> method is called by the IDE during its initialization of the VSPackage that it supports.  
+    >  The <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A> method should retrieve the information saved by the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage%2A> method when the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A> method is called by the IDE during its initialization of the VSPackage that it supports.  
   
-     In the example below, the class providing settings support implements the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage*> method to:  
+     In the example below, the class providing settings support implements the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage%2A> method to:  
   
     -   Obtain access to the VSPackage's updated state information.  
   
@@ -206,7 +206,7 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] integrated devel
         ```  
   
     -   > [!NOTE]
-        >  The division of labor between the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml*> and the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage*> methods is depends on the implementation and is somewhat arbitrary. For example, the implementation could be rewritten with an empty implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage*> method and all registry and state queries performed in the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml*> method.  
+        >  The division of labor between the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml%2A> and the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage%2A> methods is depends on the implementation and is somewhat arbitrary. For example, the implementation could be rewritten with an empty implementation of the <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A> method and all registry and state queries performed in the <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml%2A> method.  
   
 4.  Register the class the implements the settings as providing support to a VSPackage.  
   
@@ -228,7 +228,7 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] integrated devel
   
      In this case, the attribute informs the IDE that the `MyPackageProfileManager` class provides a settings implementation to the `MyPackage` class. The Custom Settings Point in the registry is created under HKLM\Software\Microsoft\VisualStudio\\*\<Version>*\UserSettings\ CoreUI_MyPackage, where *\<Version>* is the version of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)], for example 8.0.  
   
-     For more information, see [Support for User Settings](../Topic/Support%20for%20User%20Settings.md) and <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>  
+     For more information, see [Support for User Settings](/visual-studio/extensibility/internals/support-for-user-settings) and <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>  
   
 ## Example  
  The following example implements <xref:Microsoft.VisualStudio.Shell.IProfileManager> on a class.  
@@ -432,4 +432,4 @@ namespace myProfileManagerNameSpace  {
  <xref:Microsoft.VisualStudio.Shell.IProfileManager>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsWriter>   
  [Exporting Settings](../misc/exporting-settings.md)   
- [Support for User Settings](../Topic/Support%20for%20User%20Settings.md)
+ [Support for User Settings](/visual-studio/extensibility/internals/support-for-user-settings)

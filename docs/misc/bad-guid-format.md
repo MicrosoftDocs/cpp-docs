@@ -1,5 +1,5 @@
 ---
-title: "Bad GUID format"
+title: "Bad GUID format | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ A GUID has been supplied with an incorrect format.
 -   Check the GUID format.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

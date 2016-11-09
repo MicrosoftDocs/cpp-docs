@@ -1,5 +1,5 @@
 ---
-title: "Unable to get type information for &#39;&lt;typename&gt;&#39;"
+title: "Unable to get type information for &#39;&lt;typename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ A type was referenced that has not been loaded by the common language runtime.
 -   Restructure your code so the type is defined within the current scope.  
   
 ## See Also  
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)

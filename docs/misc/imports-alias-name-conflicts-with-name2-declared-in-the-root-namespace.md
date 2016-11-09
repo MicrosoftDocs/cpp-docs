@@ -1,5 +1,5 @@
 ---
-title: "Imports alias &#39;&lt;name&gt;&#39; conflicts with &#39;&lt;name2&gt;&#39; declared in the root namespace"
+title: "Imports alias &#39;&lt;name&gt;&#39; conflicts with &#39;&lt;name2&gt;&#39; declared in the root namespace | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ The alias name used in the `Imports` statement conflicts with another name decla
 -   Choose a unique name for the alias used by the `Imports` statement.  
   
 ## See Also  
- [Imports Statement (.NET Namespace and Type)](../Topic/Imports%20Statement%20\(.NET%20Namespace%20and%20Type\).md)
+ [Imports Statement (.NET Namespace and Type)](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)

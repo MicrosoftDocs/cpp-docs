@@ -1,7 +1,7 @@
 ---
-title: "IAtlMemMgr Class"
+title: "IAtlMemMgr Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ helpviewer_keywords:
   - "memory, managing"
   - "memory, memory manager"
 ms.assetid: 18b2c569-25fe-4464-bdb6-3b1abef7154a
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -52,10 +52,10 @@ __interface __declspec(uuid("654F7EF5-CFDF-4df9-A450-6C6A13C622C0")) IAtlMemMgr
   
 |||  
 |-|-|  
-|[Allocate](../Topic/IAtlMemMgr::Allocate.md)|Call this method to allocate a block of memory.|  
-|[Free](../Topic/IAtlMemMgr::Free.md)|Call this method to free a block of memory.|  
-|[GetSize](../Topic/IAtlMemMgr::GetSize.md)|Call this method to retrieve the size of an allocated memory block.|  
-|[Reallocate](../Topic/IAtlMemMgr::Reallocate.md)|Call this method to reallocate a block of memory.|  
+|[Allocate](#iatlmemmgr__allocate)|Call this method to allocate a block of memory.|  
+|[Free](#iatlmemmgr__free)|Call this method to free a block of memory.|  
+|[GetSize](#iatlmemmgr__getsize)|Call this method to retrieve the size of an allocated memory block.|  
+|[Reallocate](#iatlmemmgr__reallocate)|Call this method to reallocate a block of memory.|  
   
 ## Remarks  
  This interface is implemented by [CComHeap](../../atl/reference/ccomheap-class.md), [CCRTHeap](../../atl/reference/ccrtheap-class.md), [CLocalHeap](../../atl/reference/clocalheap-class.md), [CGlobalHeap](../../atl/reference/cglobalheap-class.md), or [CWin32Heap](../../atl/reference/cwin32heap-class.md).  
@@ -84,7 +84,7 @@ void* Allocate(size_t nBytes) throw();
  Returns a pointer to the start of the newly allocated memory block.  
   
 ### Remarks  
- Call [IAtlMemMgr::Free](../Topic/IAtlMemMgr::Free.md) or [IAtlMemMgr::Reallocate](../Topic/IAtlMemMgr::Reallocate.md) to free the memory allocated by this method.  
+ Call [IAtlMemMgr::Free](#iatlmemmgr__free) or [IAtlMemMgr::Reallocate](#iatlmemmgr__reallocate) to free the memory allocated by this method.  
   
 ### Example  
  For an example, see the [IAtlMemMgr Overview](../../atl/reference/iatlmemmgr-class.md).  
@@ -101,7 +101,7 @@ void Free(void* p) throw();
  Pointer to memory previously allocated by this memory manager.  
   
 ### Remarks  
- Use this method to free memory obtained by [IAtlMemMgr::Allocate](../Topic/IAtlMemMgr::Allocate.md) or [IAtlMemMgr::Reallocate](../Topic/IAtlMemMgr::Reallocate.md).  
+ Use this method to free memory obtained by [IAtlMemMgr::Allocate](#iatlmemmgr__allocate) or [IAtlMemMgr::Reallocate](#iatlmemmgr__reallocate).  
   
 ### Example  
  For an example, see the [IAtlMemMgr Overview](../../atl/reference/iatlmemmgr-class.md).  
@@ -142,7 +142,7 @@ void* Reallocate(
  Returns a pointer to the start of the newly allocated memory block.  
   
 ### Remarks  
- Call [IAtlMemMgr::Free](../Topic/IAtlMemMgr::Free.md) or [IAtlMemMgr::Reallocate](#vclrfiatlmemmgrreallocate) to free the memory allocated by this method.  
+ Call [IAtlMemMgr::Free](#iatlmemmgr__free) or [IAtlMemMgr::Reallocate](#vclrfiatlmemmgrreallocate) to free the memory allocated by this method.  
   
  Conceptually this method frees the existing memory and allocates a new memory block. In reality, the existing memory may be extended or otherwise reused.  
   
@@ -681,12 +681,12 @@ STDMETHOD(CreateControl)(LPCOLESTR lpTricsData,
 ### Remarks  
  This window will be subclassed by the host object exposing this interface so that messages can be reflected to the control and other container features will work.  
   
- Calling this method is equivalent to calling [IAxWinHostWindow::CreateControlEx](../Topic/IAxWinHostWindow::CreateControlEx.md).  
+ Calling this method is equivalent to calling [IAxWinHostWindow::CreateControlEx](#iaxwinhostwindow__createcontrolex).  
   
- To create a licensed ActiveX control, see [IAxWinHostWindowLic::CreateControlLic](../Topic/IAxWinHostWindowLic::CreateControlLicEx.md).  
+ To create a licensed ActiveX control, see [IAxWinHostWindowLic::CreateControlLic](#iaxwinhostwindowlic__createcontrollicex).  
   
 ##  <a name="iaxwinhostwindow__createcontrolex"></a>  IAxWinHostWindow::CreateControlEx  
- Creates an ActiveX control, initializes it, and hosts it in the specified window, similar to [IAxWinHostWindow::CreateControl](../Topic/IAxWinHostWindow::CreateControl.md).  
+ Creates an ActiveX control, initializes it, and hosts it in the specified window, similar to [IAxWinHostWindow::CreateControl](#iaxwinhostwindow__createcontrol).  
   
 ```
 STDMETHOD(CreateControlEx)(LPCOLESTR lpszTricsData,
@@ -722,7 +722,7 @@ STDMETHOD(CreateControlEx)(LPCOLESTR lpszTricsData,
 ### Remarks  
  Unlike the `CreateControl` method, `CreateControlEx` also allows you to receive an interface pointer to the newly created control and set up an event sink to receive events fired by the control.  
   
- To create a licensed ActiveX control, see [IAxWinHostWindowLic::CreateControlLicEx](../Topic/IAxWinHostWindowLic::CreateControlLicEx.md).  
+ To create a licensed ActiveX control, see [IAxWinHostWindowLic::CreateControlLicEx](#iaxwinhostwindowlic__createcontrollicex).  
   
 ##  <a name="iaxwinhostwindow__querycontrol"></a>  IAxWinHostWindow::QueryControl  
  Returns the specified interface pointer provided by the hosted control.  
@@ -788,15 +788,15 @@ STDMETHOD(CreateControlLic)(LPCOLESTR lpTricsData,
  [in] The BSTR that contains the license key for the control.  
   
 ### Remarks  
- See [IAxWinHostWindow::CreateControl](../Topic/IAxWinHostWindow::CreateControl.md) for a description of the remaining parameters and return value.  
+ See [IAxWinHostWindow::CreateControl](#iaxwinhostwindow__createcontrol) for a description of the remaining parameters and return value.  
   
- Calling this method is equivalent to calling [IAxWinHostWindowLic::CreateControlLicEx](../Topic/IAxWinHostWindowLic::CreateControlLicEx.md)  
+ Calling this method is equivalent to calling [IAxWinHostWindowLic::CreateControlLicEx](#iaxwinhostwindowlic__createcontrollicex)  
   
 ### Example  
  See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `IAxWinHostWindowLic::CreateControlLic`.  
   
 ##  <a name="iaxwinhostwindowlic__createcontrollicex"></a>  IAxWinHostWindowLic::CreateControlLicEx  
- Creates a licensed ActiveX control, initializes it, and hosts it in the specified window, similar to [IAxWinHostWindow::CreateControl](../Topic/IAxWinHostWindow::CreateControl.md).  
+ Creates a licensed ActiveX control, initializes it, and hosts it in the specified window, similar to [IAxWinHostWindow::CreateControl](#iaxwinhostwindow__createcontrol).  
   
 ```
 STDMETHOD(CreateControlLicEx)(LPCOLESTR lpszTricsData,
@@ -813,17 +813,10 @@ STDMETHOD(CreateControlLicEx)(LPCOLESTR lpszTricsData,
  [in] The BSTR that contains the license key for the control.  
   
 ### Remarks  
- See [IAxWinHostWindow::CreateControlEx](../Topic/IAxWinHostWindow::CreateControlEx.md) for a description of the remaining parameters and return value.  
+ See [IAxWinHostWindow::CreateControlEx](#iaxwinhostwindow__createcontrolex) for a description of the remaining parameters and return value.  
   
 ### Example  
  See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `IAxWinHostWindowLic::CreateControlLicEx`.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

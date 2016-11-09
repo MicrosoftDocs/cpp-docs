@@ -1,7 +1,7 @@
 ---
-title: "deque::generic_container (STL-CLR)"
+title: "deque::generic_container (STL-CLR) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -106,7 +106,7 @@ a b c d e
  **Namespace:** cliext  
   
 ## See Also  
- <xref:Microsoft.VisualC.StlClr.IDeque`1>   
+ <xref:Microsoft.VisualC.StlClr.IDeque%601>   
  [deque (STL/CLR)](../dotnet/deque-stl-clr.md)   
  [deque::generic_iterator (STL/CLR)](../dotnet/deque-generic-iterator-stl-clr.md)   
  [deque::generic_reverse_iterator (STL/CLR)](../dotnet/deque-generic-reverse-iterator-stl-clr.md)   

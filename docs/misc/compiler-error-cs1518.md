@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1518"
+title: "Compiler Error CS1518 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1518"
 ms.assetid: 26e0870d-fe91-4c66-b3f8-ed2b074c964e
 caps.latest.revision: 9
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS1518
 Expected class, delegate, enum, interface, or struct  
   
- A declaration was found that is not supported in a [namespace](../Topic/namespace%20\(C%23%20Reference\).md). Inside a namespace, the compiler accepts only classes, structs, enums, interfaces, namespaces, and delegates.  
+ A declaration was found that is not supported in a [namespace](/dotnet/csharp/language-reference/keywords/namespace). Inside a namespace, the compiler accepts only classes, structs, enums, interfaces, namespaces, and delegates.  
   
 ## Example  
  The following sample generates CS1518:  

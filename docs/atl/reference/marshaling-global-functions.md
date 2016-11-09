@@ -1,7 +1,7 @@
 ---
-title: "Marshaling Global Functions"
+title: "Marshaling Global Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -12,7 +12,7 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 877100b5-6ad9-44c5-a2e0-09414f1720d0
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -39,9 +39,9 @@ These functions provide support for marshaling and converting marshaling data in
   
 |||  
 |-|-|  
-|[AtlFreeMarshalStream](../Topic/AtlFreeMarshalStream.md)|Releases the marshal data and the `IStream` pointer.|  
-|[AtlMarshalPtrInProc](../Topic/AtlMarshalPtrInProc.md)|Creates a new stream object and marshals the specified interface pointer.|  
-|[AtlUnmarshalPtr](../Topic/AtlUnmarshalPtr.md)|Converts a stream's marshaling data into an interface pointer.|  
+|[AtlFreeMarshalStream](#atlfreemarshalstream)|Releases the marshal data and the `IStream` pointer.|  
+|[AtlMarshalPtrInProc](#atlmarshalptrinproc)|Creates a new stream object and marshals the specified interface pointer.|  
+|[AtlUnmarshalPtr](#atlunmarshalptr)|Converts a stream's marshaling data into an interface pointer.|  
   
 ##  <a name="atlfreemarshalstream"></a>  AtlFreeMarshalStream  
  Releases the marshal data in the stream, then releases the stream pointer.  
@@ -58,7 +58,7 @@ HRESULT     AtlFreeMarshalStream(IStream* pStream);
  [in] A pointer to the `IStream` interface on the stream used for marshaling.  
   
 ### Example  
-  See the example for [AtlMarshalPtrInProc](../Topic/AtlMarshalPtrInProc.md).  
+  See the example for [AtlMarshalPtrInProc](#atlmarshalptrinproc).  
   
 ##  <a name="atlmarshalptrinproc"></a>  AtlMarshalPtrInProc  
  Creates a new stream object, writes the CLSID of the proxy to the stream, and marshals the specified interface pointer by writing the data needed to initialize the proxy into the stream.  
@@ -123,12 +123,7 @@ HRESULT     AtlUnmarshalPtr(
  A standard HRESULT value.  
   
 ### Example  
-  See the example for [AtlMarshalPtrInProc](../Topic/AtlMarshalPtrInProc.md).  
+  See the example for [AtlMarshalPtrInProc](#atlmarshalptrinproc).  
   
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)
-
-
-
-
-

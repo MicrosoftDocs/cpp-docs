@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1638"
+title: "Compiler Error CS1638 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1638"
 ms.assetid: 5279c060-5be3-4c29-80cc-21326d4cffdb
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -62,4 +63,4 @@ class CMain
 ```  
   
 ## See Also  
- [/langversion (C# Compiler Options)](../Topic/-langversion%20\(C%23%20Compiler%20Options\).md)
+ [/langversion (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option)

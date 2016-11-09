@@ -1,5 +1,5 @@
 ---
-title: "Disk full (Visual Basic)"
+title: "Disk full (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,4 +40,4 @@ There is not enough room on the disk to either complete a `Print`, `Write`, or `
 -   Create more room on the disk by either moving some files to another disk or deleting some files.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

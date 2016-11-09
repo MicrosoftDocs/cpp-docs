@@ -1,5 +1,5 @@
 ---
-title: "Element names cannot use the &#39;xmlns&#39; prefix"
+title: "Element names cannot use the &#39;xmlns&#39; prefix | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -51,6 +51,6 @@ Dim elem = <xmlns:ElementName>
 -   Change the XML namespace prefix to a valid value, or remove the prefix.  
   
 ## See Also  
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [Imports Statement (XML Namespace)](../Topic/Imports%20Statement%20\(XML%20Namespace\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
+ [Imports Statement (XML Namespace)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)   
+ [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)

@@ -1,7 +1,7 @@
 ---
-title: "Object Status Macros"
+title: "Object Status Macros | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -12,7 +12,7 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 727dbef2-a342-4157-9d64-a421805d9747
-caps.latest.revision: 15
+caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -36,7 +36,7 @@ This macro sets flags belonging to ActiveX controls.
   
 |||  
 |-|-|  
-|[DECLARE_OLEMISC_STATUS](../Topic/DECLARE_OLEMISC_STATUS.md)|Used in ATL ActiveX controls to set the **OLEMISC** flags.|  
+|[DECLARE_OLEMISC_STATUS](#declare_olemisc_status)|Used in ATL ActiveX controls to set the **OLEMISC** flags.|  
   
 ##  <a name="declare_olemisc_status"></a>  DECLARE_OLEMISC_STATUS  
  Used in ATL ActiveX controls to set the OLEMISC flags.  
@@ -58,8 +58,3 @@ DECLARE_OLEMISC_STATUS(Â
   
 ## See Also  
  [Macros](../../atl/reference/atl-macros.md)
-
-
-
-
-

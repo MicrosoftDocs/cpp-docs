@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS0824"
+title: "Compiler Warning (level 1) CS0824 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0824"
 ms.assetid: ad643bb7-51b2-455b-a9f3-2bd4588d2c5d
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -62,5 +63,5 @@ public class C
 ```  
   
 ## See Also  
- [extern](../Topic/extern%20\(C%23%20Reference\).md)   
- [#pragma warning](../Topic/%23pragma%20warning%20\(C%23%20Reference\).md)
+ [extern](/dotnet/csharp/language-reference/keywords/extern)   
+ [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)

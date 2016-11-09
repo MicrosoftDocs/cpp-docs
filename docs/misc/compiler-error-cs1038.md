@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1038"
+title: "Compiler Error CS1038 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1038"
 ms.assetid: 05c53ae9-2819-4771-aee8-3f2ff6bcf0b0
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS1038
 \#endregion directive expected  
   
- A [#region](../Topic/%23region%20\(C%23%20Reference\).md) directive did not have a matching [#endregion](../Topic/%23endregion%20\(C%23%20Reference\).md) directive.  
+ A [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) directive did not have a matching [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion) directive.  
   
  The following sample generates CS1038:  
   

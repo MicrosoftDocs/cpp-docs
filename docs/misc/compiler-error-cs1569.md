@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1569"
+title: "Compiler Error CS1569 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1569"
 ms.assetid: 1d5e89d6-0a05-4e4f-b472-9089146696bb
 caps.latest.revision: 13
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

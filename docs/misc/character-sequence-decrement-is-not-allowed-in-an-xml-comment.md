@@ -1,5 +1,5 @@
 ---
-title: "Character sequence &#39;--&#39; is not allowed in an XML comment"
+title: "Character sequence &#39;--&#39; is not allowed in an XML comment | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ An XML comment literal contains the character sequence '--', which is not suppor
 -   Remove the character sequence '--' from the XML comment literal.  
   
 ## See Also  
- [XML Comment Literal](../Topic/XML%20Comment%20Literal%20\(Visual%20Basic\).md)   
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [XML Comment Literal](/dotnet/visual-basic/language-reference/xml-literals/xml-comment-literal)   
+ [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)

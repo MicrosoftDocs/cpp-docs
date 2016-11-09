@@ -1,7 +1,7 @@
 ---
-title: "Could not transform licenses file &#39;file&#39; into a binary resource. &lt;reason&gt;"
+title: "Could not transform licenses file &#39;file&#39; into a binary resource. &lt;reason&gt; | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

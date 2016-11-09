@@ -1,5 +1,5 @@
 ---
-title: "&#39;For&#39; must end with a matching &#39;Next&#39;"
+title: "&#39;For&#39; must end with a matching &#39;Next&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ A `For` statement occurs without a corresponding `Next` statement. A `Next` stat
 -   Add a `Next` statement to the end of the `For` loop.  
   
 ## See Also  
- [For...Next Statement](../Topic/For...Next%20Statement%20\(Visual%20Basic\).md)
+ [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)

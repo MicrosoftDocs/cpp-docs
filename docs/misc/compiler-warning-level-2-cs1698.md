@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 2) CS1698"
+title: "Compiler Warning (level 2) CS1698 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1698"
 ms.assetid: 65cac5d0-e045-40f9-911c-1bf50e710b18
 caps.latest.revision: 20
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

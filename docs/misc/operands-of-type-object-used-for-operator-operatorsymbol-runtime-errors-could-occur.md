@@ -1,5 +1,5 @@
 ---
-title: "Operands of type Object used for operator &#39;&lt;operatorsymbol&gt;&#39;; runtime errors could occur"
+title: "Operands of type Object used for operator &#39;&lt;operatorsymbol&gt;&#39;; runtime errors could occur | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -36,11 +36,11 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Operands of type Object used for operator &#39;&lt;operatorsymbol&gt;&#39;; runtime errors could occur
-An expression uses an operator for which one or both operands are of the [Object Data Type](../Topic/Object%20Data%20Type.md).  
+An expression uses an operator for which one or both operands are of the [Object Data Type](/dotnet/visual-basic/language-reference/data-types/object-data-type).  
   
- When a variable or expression evaluates to `Object`, the compiler must perform *late binding*, which causes extra operations at run time. It also exposes your application to potential run-time errors. For example, suppose you assign a <xref:System.Windows.Forms.Form> to an `Object` variable and then try to use it with the [/ Operator (Visual Basic)](../Topic/-%20Operator%20\(Visual%20Basic\)3.md). If you do this, the runtime throws an <xref:System.InvalidCastException> because Visual Basic cannot convert a <xref:System.Windows.Forms.Form> object to a numeric value.  
+ When a variable or expression evaluates to `Object`, the compiler must perform *late binding*, which causes extra operations at run time. It also exposes your application to potential run-time errors. For example, suppose you assign a <xref:System.Windows.Forms.Form> to an `Object` variable and then try to use it with the [/ Operator (Visual Basic)](/dotnet/visual-basic/language-reference/operators/floating-point-division-operator). If you do this, the runtime throws an <xref:System.InvalidCastException> because Visual Basic cannot convert a <xref:System.Windows.Forms.Form> object to a numeric value.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42019  
   
@@ -49,4 +49,4 @@ An expression uses an operator for which one or both operands are of the [Object
 -   If possible, arrange the operands to evaluate to data types for which the operator is defined.  
   
 ## See Also  
- [Arithmetic Operators in Visual Basic](../Topic/Arithmetic%20Operators%20in%20Visual%20Basic.md)
+ [Arithmetic Operators in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators)

@@ -1,5 +1,5 @@
 ---
-title: "Interface &#39;&lt;interfacename&gt;&#39; cannot be indexed because it has no default property"
+title: "Interface &#39;&lt;interfacename&gt;&#39; cannot be indexed because it has no default property | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ Index expressions must result in a value whose type is an array, in a value whos
 -   Supply a default property in the interface.  
   
 ## See Also  
- [Interface Statement](../Topic/Interface%20Statement%20\(Visual%20Basic\).md)
+ [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)

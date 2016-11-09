@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0745"
+title: "Compiler Error CS0745 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0745"
 ms.assetid: 6ae77eb2-a940-43aa-a198-3042d144613a
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -82,5 +83,5 @@ public class C
 ```  
   
 ## See Also  
- [LINQ Query Expressions](../Topic/LINQ%20Query%20Expressions%20\(C%23%20Programming%20Guide\).md)   
- [group clause](../Topic/group%20clause%20\(C%23%20Reference\).md)
+ [LINQ Query Expressions](/dotnet/csharp/programming-guide/linq-query-expressions/index)   
+ [group clause](/dotnet/csharp/language-reference/keywords/group-clause)

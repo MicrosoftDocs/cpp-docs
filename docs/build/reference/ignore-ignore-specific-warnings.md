@@ -1,7 +1,7 @@
 ---
-title: "-IGNORE (Ignore Specific Warnings)"
+title: "-IGNORE (Ignore Specific Warnings) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -81,4 +81,4 @@ translation.priority.ht:
   
 ### To set this linker option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions*>.
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.

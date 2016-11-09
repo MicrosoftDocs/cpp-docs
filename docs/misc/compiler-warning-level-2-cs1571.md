@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 2) CS1571"
+title: "Compiler Warning (level 2) CS1571 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1571"
 ms.assetid: 23b08885-9f69-4376-a952-4820b065a5c0
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Warning (level 2) CS1571
 XML comment on 'construct' has a duplicate param tag for 'parameter'  
   
- When using the [/doc](../Topic/-doc%20\(C%23%20Compiler%20Options\).md) compiler option, multiple comments were found for the same method parameter. Remove one of the duplicate lines.  
+ When using the [/doc](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option) compiler option, multiple comments were found for the same method parameter. Remove one of the duplicate lines.  
   
  The following sample generates CS1571:  
   

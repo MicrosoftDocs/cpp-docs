@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0527"
+title: "Compiler Error CS0527 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0527"
 ms.assetid: 1acd244b-c55b-424f-b038-a130d65b8685
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0527
 Type 'type' in interface list is not an interface  
   
- It is possible for a [struct](../Topic/struct%20\(C%23%20Reference\).md) or [interface](../Topic/interface%20\(C%23%20Reference\).md) to inherit from another interface but not from any other type.  
+ It is possible for a [struct](/dotnet/csharp/language-reference/keywords/struct) or [interface](/dotnet/csharp/language-reference/keywords/interface) to inherit from another interface but not from any other type.  
   
  The following sample generates CS0527:  
   

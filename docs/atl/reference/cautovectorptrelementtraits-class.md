@@ -1,7 +1,7 @@
 ---
-title: "CAutoVectorPtrElementTraits Class"
+title: "CAutoVectorPtrElementTraits Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAutoVectorPtrElementTraits class"
 ms.assetid: 16b81a56-55fb-46ca-b376-66a1884231a6
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -63,8 +63,8 @@ template <typename   T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAutoVectorPtrElementTraits::INARGTYPE](../Topic/CAutoVectorPtrElementTraits::INARGTYPE.md)|The data type to use for adding elements to the collection class object.|  
-|[CAutoVectorPtrElementTraits::OUTARGTYPE](../Topic/CAutoVectorPtrElementTraits::OUTARGTYPE.md)|The data type to use for retrieving elements from the collection class object.|  
+|[CAutoVectorPtrElementTraits::INARGTYPE](#cautovectorptrelementtraits__inargtype)|The data type to use for adding elements to the collection class object.|  
+|[CAutoVectorPtrElementTraits::OUTARGTYPE](#cautovectorptrelementtraits__outargtype)|The data type to use for retrieving elements from the collection class object.|  
   
 ## Remarks  
  This class provides methods, static functions, and typedefs for aiding the creation of collection class objects containing smart pointers. Unlike [CAutoPtrElementTraits](../../atl/reference/cautoptrelementtraits-class.md), this class uses vector new and delete operators.  
@@ -101,10 +101,3 @@ typedef T *& OUTARGTYPE;
  [CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)   
  [CAutoVectorPtr Class](../../atl/reference/cautovectorptr-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

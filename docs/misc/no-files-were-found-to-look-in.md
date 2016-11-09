@@ -1,7 +1,7 @@
 ---
-title: "No files were found to look in."
+title: "No files were found to look in. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -49,6 +49,6 @@ This error generally occurs when a file name or directory has been specified in 
      This cancels the dialog.  
   
 ## See Also  
- [Finding and Replacing Text](../Topic/Finding%20and%20Replacing%20Text.md)   
- [Find in Files](../Topic/Find%20in%20Files.md)   
+ [Finding and Replacing Text](/visual-studio/ide/finding-and-replacing-text)   
+ [Find in Files](/visual-studio/ide/find-in-files)   
  [Choose Search Folders](http://msdn.microsoft.com/en-us/85af6458-dcde-4a84-9ea4-f5cc6550dc80)

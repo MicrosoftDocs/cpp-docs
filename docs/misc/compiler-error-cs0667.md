@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0667"
+title: "Compiler Error CS0667 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0667"
 ms.assetid: d7fd9a41-100f-47a1-8f59-d0832c1587fa
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

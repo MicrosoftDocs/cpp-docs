@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0582"
+title: "Compiler Error CS0582 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0582"
 ms.assetid: cc0f4c75-c41d-423e-a4dc-e55a124f5cae
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

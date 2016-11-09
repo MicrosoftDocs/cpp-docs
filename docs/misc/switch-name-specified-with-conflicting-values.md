@@ -1,7 +1,7 @@
 ---
-title: "Switch &lt;name&gt; specified with conflicting values."
+title: "Switch &lt;name&gt; specified with conflicting values. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,4 +41,4 @@ This error occurs when you enter a switch twice in the Command window, and the v
 -   Re-enter the command, but use each switch only once.  
   
 ## See Also  
- [Command Window](../Topic/Command%20Window.md)
+ [Command Window](/visual-studio/ide/reference/command-window)

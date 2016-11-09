@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error C3421"
+title: "Compiler Error C3421 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

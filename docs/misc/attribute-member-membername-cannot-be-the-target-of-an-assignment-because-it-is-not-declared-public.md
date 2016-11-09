@@ -1,5 +1,5 @@
 ---
-title: "Attribute member &#39;&lt;membername&gt;&#39; cannot be the target of an assignment because it is not declared &#39;Public&#39;"
+title: "Attribute member &#39;&lt;membername&gt;&#39; cannot be the target of an assignment because it is not declared &#39;Public&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -48,4 +48,4 @@ An attempt was made to assign a value to a private member of an attribute.
   
 ## See Also  
  [NOT IN BUILD: Attributes in Visual Basic](http://msdn.microsoft.com/en-us/620bfc0e-4582-4c8b-8432-ebc5c3dccc22)   
- [Public](../Topic/Public%20\(Visual%20Basic\).md)
+ [Public](/dotnet/visual-basic/language-reference/modifiers/public)

@@ -1,5 +1,5 @@
 ---
-title: "&#39;=&#39; expected (object initializer)"
+title: "&#39;=&#39; expected (object initializer) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

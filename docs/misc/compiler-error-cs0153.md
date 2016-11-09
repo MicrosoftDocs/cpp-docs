@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0153"
+title: "Compiler Error CS0153 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0153"
 ms.assetid: 3a0791e9-0ab9-4eaa-a230-d39aabaa9d5d
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0153
 A goto case is only valid inside a switch statement  
   
- An attempt was made to use [switch](../Topic/switch%20\(C%23%20Reference\).md) syntax outside of a **switch** statement. For more information, see [switch](../Topic/switch%20\(C%23%20Reference\).md).  
+ An attempt was made to use [switch](/dotnet/csharp/language-reference/keywords/switch) syntax outside of a **switch** statement. For more information, see [switch](/dotnet/csharp/language-reference/keywords/switch).  
   
  The following sample generates CS0153:  
   

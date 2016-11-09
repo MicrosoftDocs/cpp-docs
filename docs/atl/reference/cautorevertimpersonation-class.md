@@ -1,7 +1,7 @@
 ---
-title: "CAutoRevertImpersonation Class"
+title: "CAutoRevertImpersonation Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,7 +17,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAutoRevertImpersonation class"
 ms.assetid: 43732849-1940-4bd4-9d52-7a5698bb8838
-caps.latest.revision: 21
+caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -51,16 +51,16 @@ class CAutoRevertImpersonation
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAutoRevertImpersonation::CAutoRevertImpersonation](../Topic/CAutoRevertImpersonation::CAutoRevertImpersonation.md)|Constructs an `CAutoRevertImpersonation` object|  
-|[CAutoRevertImpersonation::~CAutoRevertImpersonation](../Topic/CAutoRevertImpersonation::~CAutoRevertImpersonation.md)|Destroys the object and reverts access token impersonation.|  
+|[CAutoRevertImpersonation::CAutoRevertImpersonation](#cautorevertimpersonation__cautorevertimpersonation)|Constructs an `CAutoRevertImpersonation` object|  
+|[CAutoRevertImpersonation::~CAutoRevertImpersonation](#cautorevertimpersonation___dtorcautorevertimpersonation)|Destroys the object and reverts access token impersonation.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAutoRevertImpersonation::Attach](../Topic/CAutoRevertImpersonation::Attach.md)|Automates the impersonation reversion of an access token.|  
-|[CAutoRevertImpersonation::Detach](../Topic/CAutoRevertImpersonation::Detach.md)|Cancels the automatic impersonation reversion.|  
-|[CAutoRevertImpersonation::GetAccessToken](../Topic/CAutoRevertImpersonation::GetAccessToken.md)|Retrieves the access token current associated with this object.|  
+|[CAutoRevertImpersonation::Attach](#cautorevertimpersonation__attach)|Automates the impersonation reversion of an access token.|  
+|[CAutoRevertImpersonation::Detach](#cautorevertimpersonation__detach)|Cancels the automatic impersonation reversion.|  
+|[CAutoRevertImpersonation::GetAccessToken](#cautorevertimpersonation__getaccesstoken)|Retrieves the access token current associated with this object.|  
   
 ## Remarks  
  An [access token](http://msdn.microsoft.com/library/windows/desktop/aa374909) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows NT or Windows 2000 system. These access tokens can be represented with the `CAccessToken` class.  
@@ -84,7 +84,7 @@ void Attach(const CAccessToken* pAT) throw();
  The address of the [CAccessToken](../../atl/reference/caccesstoken-class.md) object to be reverted automatically  
   
 ### Remarks  
- This method should only be used if the [CAutoRevertImpersonation](../../atl/reference/cautorevertimpersonation-class.md) object was created with a NULL `CAccessToken` pointer, or if [Detach](../Topic/CAutoRevertImpersonation::Detach.md) was called previously. For simple cases, it is not necessary to use this method.  
+ This method should only be used if the [CAutoRevertImpersonation](../../atl/reference/cautorevertimpersonation-class.md) object was created with a NULL `CAccessToken` pointer, or if [Detach](#cautorevertimpersonation__detach) was called previously. For simple cases, it is not necessary to use this method.  
   
 ##  <a name="cautorevertimpersonation__cautorevertimpersonation"></a>  CAutoRevertImpersonation::CAutoRevertImpersonation  
  Constructs a `CAutoRevertImpersonation` object.  
@@ -108,7 +108,7 @@ CAutoRevertImpersonation(const CAccessToken* pAT) throw();
 ```  
   
 ### Remarks  
- Reverts any impersonation currently in effect for the [CAccessToken](../../atl/reference/caccesstoken-class.md) object provided either at construction or through the [Attach](../Topic/CAutoRevertImpersonation::Attach.md) method. If no `CAccessToken` is associated, the destructor has no effect.  
+ Reverts any impersonation currently in effect for the [CAccessToken](../../atl/reference/caccesstoken-class.md) object provided either at construction or through the [Attach](#cautorevertimpersonation__attach) method. If no `CAccessToken` is associated, the destructor has no effect.  
   
 ##  <a name="cautorevertimpersonation__detach"></a>  CAutoRevertImpersonation::Detach  
  Cancels the automatic impersonation reversion.  
@@ -121,7 +121,7 @@ const CAccessToken* Detach() throw();
  The address of the previously associated [CAccessToken](../../atl/reference/caccesstoken-class.md), or NULL if no association existed.  
   
 ### Remarks  
- Calling **Detach** prevents the `CAutoRevertImpersonation` object from reverting any impersonation currently in effect for the [CAccessToken](../../atl/reference/caccesstoken-class.md) object associated with this object. `CAutoRevertImpersonation` can then be destroyed with no effect or reassociated to the same or another `CAccessToken` object using [Attach](../Topic/CAutoRevertImpersonation::Attach.md).  
+ Calling **Detach** prevents the `CAutoRevertImpersonation` object from reverting any impersonation currently in effect for the [CAccessToken](../../atl/reference/caccesstoken-class.md) object associated with this object. `CAutoRevertImpersonation` can then be destroyed with no effect or reassociated to the same or another `CAccessToken` object using [Attach](#cautorevertimpersonation__attach).  
   
 ##  <a name="cautorevertimpersonation__getaccesstoken"></a>  CAutoRevertImpersonation::GetAccessToken  
  Retrieves the access token current associated with this object.  
@@ -134,16 +134,9 @@ const CAccessToken* GetAccessToken() throw();
  The address of the previously associated [CAccessToken](../../atl/reference/caccesstoken-class.md), or NULL if no association existed.  
   
 ### Remarks  
- If this method is called for the purposes that include the reversion of an impersonation of the `CAccessToken` object, the [Detach](../Topic/CAutoRevertImpersonation::Detach.md) method should be used instead.  
+ If this method is called for the purposes that include the reversion of an impersonation of the `CAccessToken` object, the [Detach](#cautorevertimpersonation__detach) method should be used instead.  
   
 ## See Also  
  [ATLSecurity Sample](../../top/visual-cpp-samples.md)   
  [Access Tokens](http://msdn.microsoft.com/library/windows/desktop/aa374909)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

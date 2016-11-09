@@ -1,7 +1,7 @@
 ---
-title: "CComModule Class"
+title: "CComModule Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,7 +17,7 @@ helpviewer_keywords:
   - "CComModule class"
   - "DLL modules [C++], ATL"
 ms.assetid: f5face2c-8fd8-40e6-9ec3-54ab74701769
-caps.latest.revision: 22
+caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -54,34 +54,34 @@ class CComModule : public _ATL_MODULE
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComModule::GetClassObject](../Topic/CComModule::GetClassObject.md)|Creates an object of a specified CLSID. For DLLs only.|  
-|[CComModule::GetModuleInstance](../Topic/CComModule::GetModuleInstance.md)|Returns `m_hInst`.|  
-|[CComModule::GetResourceInstance](../Topic/CComModule::GetResourceInstance.md)|Returns `m_hInstResource`.|  
-|[CComModule::GetTypeLibInstance](../Topic/CComModule::GetTypeLibInstance.md)|Returns `m_hInstTypeLib`.|  
-|[CComModule::Init](../Topic/CComModule::Init.md)|Initializes data members.|  
-|[CComModule::RegisterClassHelper](../Topic/CComModule::RegisterClassHelper.md)|Enters an object's standard class registration in the system registry.|  
-|[CComModule::RegisterClassObjects](../Topic/CComModule::RegisterClassObjects.md)|Registers the class object. For EXEs only.|  
-|[CComModule::RegisterServer](../Topic/CComModule::RegisterServer.md)|Updates the system registry for each object in the object map.|  
-|[CComModule::RegisterTypeLib](../Topic/CComModule::RegisterTypeLib.md)|Registers a type library.|  
-|[CComModule::RevokeClassObjects](../Topic/CComModule::RevokeClassObjects.md)|Revokes the class object. For EXEs only.|  
-|[CComModule::Term](../Topic/CComModule::Term.md)|Releases data members.|  
-|[CComModule::UnregisterClassHelper](../Topic/CComModule::UnregisterClassHelper.md)|Removes an object's standard class registration from the system registry.|  
-|[CComModule::UnregisterServer](../Topic/CComModule::UnregisterServer.md)|Unregisters each object in the object map.|  
-|[CComModule::UpdateRegistryClass](../Topic/CComModule::UpdateRegistryClass.md)|Registers or unregisters an object's standard class registration.|  
-|[CComModule::UpdateRegistryFromResourceD](../Topic/CComModule::UpdateRegistryFromResourceD.md)|Runs the script contained in a specified resource to register or unregister an object.|  
-|[CComModule::UpdateRegistryFromResourceS](../Topic/CComModule::UpdateRegistryFromResourceS.md)|Statically links to the ATL Registry Component. Runs the script contained in a specified resource to register or unregister an object.|  
+|[CComModule::GetClassObject](#ccommodule__getclassobject)|Creates an object of a specified CLSID. For DLLs only.|  
+|[CComModule::GetModuleInstance](#ccommodule__getmoduleinstance)|Returns `m_hInst`.|  
+|[CComModule::GetResourceInstance](#ccommodule__getresourceinstance)|Returns `m_hInstResource`.|  
+|[CComModule::GetTypeLibInstance](#ccommodule__gettypelibinstance)|Returns `m_hInstTypeLib`.|  
+|[CComModule::Init](#ccommodule__init)|Initializes data members.|  
+|[CComModule::RegisterClassHelper](#ccommodule__registerclasshelper)|Enters an object's standard class registration in the system registry.|  
+|[CComModule::RegisterClassObjects](#ccommodule__registerclassobjects)|Registers the class object. For EXEs only.|  
+|[CComModule::RegisterServer](#ccommodule__registerserver)|Updates the system registry for each object in the object map.|  
+|[CComModule::RegisterTypeLib](#ccommodule__registertypelib)|Registers a type library.|  
+|[CComModule::RevokeClassObjects](#ccommodule__revokeclassobjects)|Revokes the class object. For EXEs only.|  
+|[CComModule::Term](#ccommodule__term)|Releases data members.|  
+|[CComModule::UnregisterClassHelper](#ccommodule__unregisterclasshelper)|Removes an object's standard class registration from the system registry.|  
+|[CComModule::UnregisterServer](#ccommodule__unregisterserver)|Unregisters each object in the object map.|  
+|[CComModule::UpdateRegistryClass](#ccommodule__updateregistryclass)|Registers or unregisters an object's standard class registration.|  
+|[CComModule::UpdateRegistryFromResourceD](#ccommodule__updateregistryfromresourced)|Runs the script contained in a specified resource to register or unregister an object.|  
+|[CComModule::UpdateRegistryFromResourceS](#ccommodule__updateregistryfromresources)|Statically links to the ATL Registry Component. Runs the script contained in a specified resource to register or unregister an object.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComModule::m_csObjMap](../Topic/CComModule::m_csObjMap.md)|Ensures synchronized access to the object map information.|  
-|[CComModule::m_csTypeInfoHolder](../Topic/CComModule::m_csTypeInfoHolder.md)|Ensures synchronized access to the type library information.|  
-|[CComModule::m_csWindowCreate](../Topic/CComModule::m_csWindowCreate.md)|Ensures synchronized access to window class information and static data used during window creation.|  
-|[CComModule::m_hInst](../Topic/CComModule::m_hInst.md)|Contains the handle to the module instance.|  
-|[CComModule::m_hInstResource](../Topic/CComModule::m_hInstResource.md)|By default, contains the handle to the module instance.|  
-|[CComModule::m_hInstTypeLib](../Topic/CComModule::m_hInstTypeLib.md)|By default, contains the handle to the module instance.|  
-|[CComModule::m_pObjMap](../Topic/CComModule::m_pObjMap.md)|Points to the object map maintained by the module instance.|  
+|[CComModule::m_csObjMap](#ccommodule__m_csobjmap)|Ensures synchronized access to the object map information.|  
+|[CComModule::m_csTypeInfoHolder](#ccommodule__m_cstypeinfoholder)|Ensures synchronized access to the type library information.|  
+|[CComModule::m_csWindowCreate](#ccommodule__m_cswindowcreate)|Ensures synchronized access to window class information and static data used during window creation.|  
+|[CComModule::m_hInst](#ccommodule__m_hinst)|Contains the handle to the module instance.|  
+|[CComModule::m_hInstResource](#ccommodule__m_hinstresource)|By default, contains the handle to the module instance.|  
+|[CComModule::m_hInstTypeLib](#ccommodule__m_hinsttypelib)|By default, contains the handle to the module instance.|  
+|[CComModule::m_pObjMap](#ccommodule__m_pobjmap)|Points to the object map maintained by the module instance.|  
   
 ## Remarks  
   
@@ -154,7 +154,7 @@ HINSTANCE GetModuleInstance() throw();
  The `HINSTANCE` identifying this module.  
   
 ### Remarks  
- Returns the [m_hInst](../Topic/CComModule::m_hInst.md) data member.  
+ Returns the [m_hInst](#ccommodule__m_hinst) data member.  
   
 ##  <a name="ccommodule__getresourceinstance"></a>  CComModule::GetResourceInstance  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -167,7 +167,7 @@ HINSTANCE GetResourceInstance() throw();
  An `HINSTANCE`.  
   
 ### Remarks  
- Returns the [m_hInstResource](../Topic/CComModule::m_hInstResource.md) data member.  
+ Returns the [m_hInstResource](#ccommodule__m_hinstresource) data member.  
   
 ##  <a name="ccommodule__gettypelibinstance"></a>  CComModule::GetTypeLibInstance  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -180,7 +180,7 @@ HINSTANCE GetTypeLibInstance() const throw();
  An `HINSTANCE`.  
   
 ### Remarks  
- Returns the [m_hInstTypeLib](../Topic/CComModule::m_hInstTypeLib.md) data member.  
+ Returns the [m_hInstTypeLib](#ccommodule__m_hinsttypelib) data member.  
   
 ##  <a name="ccommodule__init"></a>  CComModule::Init  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -248,7 +248,7 @@ HINSTANCE m_hInst;
 ### Remarks  
  Contains the handle to the module instance.  
   
- The [Init](../Topic/CComModule::Init.md) method sets `m_hInst` to the handle passed to **DLLMain** or `WinMain`.  
+ The [Init](#ccommodule__init) method sets `m_hInst` to the handle passed to **DLLMain** or `WinMain`.  
   
 ##  <a name="ccommodule__m_hinstresource"></a>  CComModule::m_hInstResource  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -260,9 +260,9 @@ HINSTANCE m_hInstResource;
 ### Remarks  
  By default, contains the handle to the module instance.  
   
- The [Init](../Topic/CComModule::Init.md) method sets `m_hInstResource` to the handle passed to **DLLMain** or `WinMain`. You can explicitly set `m_hInstResource` to the handle to a resource.  
+ The [Init](#ccommodule__init) method sets `m_hInstResource` to the handle passed to **DLLMain** or `WinMain`. You can explicitly set `m_hInstResource` to the handle to a resource.  
   
- The [GetResourceInstance](../Topic/CComModule::GetResourceInstance.md) method returns the handle stored in `m_hInstResource`.  
+ The [GetResourceInstance](#ccommodule__getresourceinstance) method returns the handle stored in `m_hInstResource`.  
   
 ##  <a name="ccommodule__m_hinsttypelib"></a>  CComModule::m_hInstTypeLib  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -274,9 +274,9 @@ HINSTANCE m_hInstTypeLib;
 ### Remarks  
  By default, contains the handle to the module instance.  
   
- The [Init](../Topic/CComModule::Init.md) method sets `m_hInstTypeLib` to the handle passed to **DLLMain** or `WinMain`. You can explicitly set `m_hInstTypeLib` to the handle to a type library.  
+ The [Init](#ccommodule__init) method sets `m_hInstTypeLib` to the handle passed to **DLLMain** or `WinMain`. You can explicitly set `m_hInstTypeLib` to the handle to a type library.  
   
- The [GetTypeLibInstance](../Topic/CComModule::GetTypeLibInstance.md) method returns the handle stored in `m_hInstTypeLib`.  
+ The [GetTypeLibInstance](#ccommodule__gettypelibinstance) method returns the handle stored in `m_hInstTypeLib`.  
   
 ##  <a name="ccommodule__m_pobjmap"></a>  CComModule::m_pObjMap  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -321,7 +321,7 @@ ATL_DEPRECATED HRESULT RegisterClassHelper(const CLSID& clsid,
 ### Remarks  
  Enters an object's standard class registration in the system registry.  
   
- The [UpdateRegistryClass](../Topic/CComModule::UpdateRegistryClass.md) method calls `RegisterClassHelper`.  
+ The [UpdateRegistryClass](#ccommodule__updateregistryclass) method calls `RegisterClassHelper`.  
   
 ##  <a name="ccommodule__registerclassobjects"></a>  CComModule::RegisterClassObjects  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -437,7 +437,7 @@ ATL_DEPRECATED HRESULT UnregisterClassHelper(const CLSID& clsid,
 ### Remarks  
  Removes an object's standard class registration from the system registry.  
   
- The [UpdateRegistryClass](../Topic/CComModule::UpdateRegistryClass.md) method calls `UnregisterClassHelper`.  
+ The [UpdateRegistryClass](#ccommodule__updateregistryclass) method calls `UnregisterClassHelper`.  
   
 ##  <a name="ccommodule__unregisterserver"></a>  CComModule::UnregisterServer  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -513,7 +513,7 @@ ATL_DEPRECATED HRESULT UpdateRegistryClass(const CLSID& clsid,
   
  If `bRegister` is **FALSE**, it removes the object's registration.  
   
- Depending on the value of `bRegister`, `UpdateRegistryClass` calls either [RegisterClassHelper](../Topic/CComModule::RegisterClassHelper.md) or [UnregisterClassHelper](../Topic/CComModule::UnregisterClassHelper.md).  
+ Depending on the value of `bRegister`, `UpdateRegistryClass` calls either [RegisterClassHelper](#ccommodule__registerclasshelper) or [UnregisterClassHelper](#ccommodule__unregisterclasshelper).  
   
  By specifying the [DECLARE_REGISTRY](../Topic/DECLARE_REGISTRY.md) macro, `UpdateRegistryClass` will be invoked automatically when your object map is processed.  
   
@@ -556,7 +556,7 @@ virtual HRESULT UpdateRegistryFromResourceD(UINT nResID,
 >  To substitute replacement values at run time, do not specify the `DECLARE_REGISTRY_RESOURCE` or `DECLARE_REGISTRY_RESOURCEID` macro. Instead, create an array of **_ATL_REGMAP_ENTRIES** structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call `UpdateRegistryFromResourceD`, passing the array for the `pMapEntries` parameter. This adds all the replacement values in the **_ATL_REGMAP_ENTRIES** structures to the Registrar's replacement map.  
   
 > [!NOTE]
->  To statically link to the ATL Registry Component (Registrar), see [UpdateRegistryFromResourceS](../Topic/CComModule::UpdateRegistryFromResourceS.md).  
+>  To statically link to the ATL Registry Component (Registrar), see [UpdateRegistryFromResourceS](#ccommodule__updateregistryfromresources).  
   
  For more information about replaceable parameters and scripting, see the article [The ATL Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md).  
   
@@ -589,7 +589,7 @@ virtual HRESULT UpdateRegistryFromResourceS(UINT nResID,
  A standard HRESULT value.  
   
 ### Remarks  
- Similar to [UpdateRegistryFromResourceD](../Topic/CComModule::UpdateRegistryFromResourceD.md) except `UpdateRegistryFromResourceS` creates a static link to the ATL Registry Component (Registrar).  
+ Similar to [UpdateRegistryFromResourceD](#ccommodule__updateregistryfromresourced) except `UpdateRegistryFromResourceS` creates a static link to the ATL Registry Component (Registrar).  
   
  `UpdateRegistryFromResourceS` will be invoked automatically when your object map is processed, provided you add `#define _ATL_STATIC_REGISTRY` to your stdafx.h.  
   
@@ -600,9 +600,3 @@ virtual HRESULT UpdateRegistryFromResourceS(UINT nResID,
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-

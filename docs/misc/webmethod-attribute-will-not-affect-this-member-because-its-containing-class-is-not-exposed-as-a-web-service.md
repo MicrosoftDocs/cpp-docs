@@ -1,5 +1,5 @@
 ---
-title: "&#39;WebMethod&#39; attribute will not affect this member because its containing class is not exposed as a web service"
+title: "&#39;WebMethod&#39; attribute will not affect this member because its containing class is not exposed as a web service | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

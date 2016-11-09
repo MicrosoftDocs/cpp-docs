@@ -1,7 +1,7 @@
 ---
-title: "CAtlFileMapping Class"
+title: "CAtlFileMapping Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAtlFileMapping class"
 ms.assetid: 899fc058-e05e-48b5-aca9-340403bb9e26
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -63,7 +63,7 @@ template <typename   T = char>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlFileMapping::operator T*](../Topic/CAtlFileMapping::operator%20T*.md)|Allows implicit conversion of `CAtlFileMapping` objects to `T`**\***.|  
+|[CAtlFileMapping::operator T*](#catlfilemapping__operator_t_star)|Allows implicit conversion of `CAtlFileMapping` objects to `T`**\***.|  
   
 ## Remarks  
  This class adds a single cast operator to allow implicit conversion of `CAtlFileMapping` objects to `T`**\***. Other members are supplied by the base class, [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md).  
@@ -86,15 +86,8 @@ template <typename   T = char>
  Returns a `T`**\*** pointer to the start of the memory-mapped file.  
   
 ### Remarks  
- Calls [CAtlFileMappingBase::GetData](../Topic/CAtlFileMappingBase::GetData.md) and reinterprets the returned pointer as a `T`**\*** where *T* is the type used as the template parameter of this class.  
+ Calls [CAtlFileMappingBase::GetData](../../atl/reference/catlfilemappingbase-class.md#catlfilemappingbase__getdata) and reinterprets the returned pointer as a `T`**\*** where *T* is the type used as the template parameter of this class.  
   
 ## See Also  
  [CAtlFileMappingBase Class](../../atl/reference/catlfilemappingbase-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

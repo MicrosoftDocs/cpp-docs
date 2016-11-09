@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 2) CS0253"
+title: "Compiler Warning (level 2) CS0253 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0253"
 ms.assetid: e02d5dac-c2d9-45ca-9dd3-dda06c96f4d6
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1002"
+title: "Compiler Error CS1002 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1002"
 ms.assetid: 659b7abf-9311-40c9-9594-5372464c6148
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -59,4 +60,4 @@ namespace x
 ```  
   
 ## See Also  
- [Statements](../Topic/Statements%20\(C%23%20Programming%20Guide\).md)
+ [Statements](/dotnet/csharp/programming-guide/statements-expressions-operators/statements)

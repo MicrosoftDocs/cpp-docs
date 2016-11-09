@@ -1,7 +1,7 @@
 ---
-title: "CComEnumOnSTL Class"
+title: "CComEnumOnSTL Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComEnumOnSTL class"
 ms.assetid: befe1a44-7a00-4f28-9a2e-cc0fa526643c
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -87,7 +87,7 @@ template <class Base,
   
 -   Create an instance of the `CComObject` specialization.  
   
--   Initialize the enumerator object by calling [IEnumOnSTLImpl::Init](../Topic/IEnumOnSTLImpl::Init.md).  
+-   Initialize the enumerator object by calling [IEnumOnSTLImpl::Init](../../atl/reference/ienumonstlimpl-class.md#ienumonstlimpl__init).  
   
 -   Return the enumerator interface to the client.  
   
@@ -123,9 +123,3 @@ template <class Base,
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
  [CComObjectThreadModel](../Topic/CComObjectThreadModel.md)   
  [IEnumOnSTLImpl Class](../../atl/reference/ienumonstlimpl-class.md)
-
-
-
-
-
-

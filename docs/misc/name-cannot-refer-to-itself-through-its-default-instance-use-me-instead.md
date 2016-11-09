@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;name&gt;&#39; cannot refer to itself through its default instance, use &#39;Me&#39; instead"
+title: "&#39;&lt;name&gt;&#39; cannot refer to itself through its default instance, use &#39;Me&#39; instead | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ An attempt has been made from inside a form to refer to that form as a default i
 -   Use `Me` to refer to the object.  
   
 ## See Also  
- [Debugger Basics](../Topic/Debugger%20Basics.md)
+ [Debugger Basics](/visual-studio/debugger/debugger-basics)

@@ -1,5 +1,5 @@
 ---
-title: "Anonymous type member name cannot be inferred from an XML identifier that is not a valid Visual Basic identifier."
+title: "Anonymous type member name cannot be inferred from an XML identifier that is not a valid Visual Basic identifier. | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -43,8 +43,8 @@ translation.priority.mt:
 1.  
   
 ## See Also  
- [Declared Element Names](../Topic/Declared%20Element%20Names%20\(Visual%20Basic\).md)   
- [Anonymous Types](../Topic/Anonymous%20Types%20\(Visual%20Basic\).md)   
- [Local Type Inference](../Topic/Local%20Type%20Inference%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)   
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)
+ [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
+ [Anonymous Types](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types)   
+ [Local Type Inference](/dotnet/visual-basic/programming-guide/language-features/variables/local-type-inference)   
+ [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)   
+ [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)

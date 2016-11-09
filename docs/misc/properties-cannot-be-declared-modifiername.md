@@ -1,5 +1,5 @@
 ---
-title: "Properties cannot be declared &#39;&lt;modifiername&gt;&#39;"
+title: "Properties cannot be declared &#39;&lt;modifiername&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ There is an error in the syntax used in the `Property` declaration. This error g
 -   Check the syntax for the `Property` declaration.  
   
 ## See Also  
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)
+ [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)

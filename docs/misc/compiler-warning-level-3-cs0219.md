@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 3) CS0219"
+title: "Compiler Warning (level 3) CS0219 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0219"
 ms.assetid: 7945c497-4bfa-4695-9166-815a2ad0c8e7
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

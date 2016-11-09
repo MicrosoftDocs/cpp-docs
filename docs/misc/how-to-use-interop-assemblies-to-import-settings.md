@@ -1,7 +1,7 @@
 ---
-title: "How to: Use Interop Assemblies to Import Settings"
+title: "How to: Use Interop Assemblies to Import Settings | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -44,7 +44,7 @@ A VSPackage may import settings from the [!INCLUDE[vsprvs](../assembler/masm/inc
   
     -   Register the VSPackage as supporting the settings mechanism by defining one or more Custom Settings Points.  
   
-         For more information, see [Support for User Settings](../Topic/Support%20for%20User%20Settings.md).  
+         For more information, see [Support for User Settings](/visual-studio/extensibility/internals/support-for-user-settings).  
   
     -   Declare that the VSPackage implements the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interface, for instance:  
   
@@ -52,7 +52,7 @@ A VSPackage may import settings from the [!INCLUDE[vsprvs](../assembler/masm/inc
         public class MyPackage : IVsPackage, IVsUserSettings, IVsUserSettingsQuery  
         ```  
   
-    -   Ensure that the VSPackage's implementation of the <xref:System.Runtime.InteropServices.Marshal.QueryInterface*> method supplies a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interface when called with `IID_IVsUserSettings`. For example:  
+    -   Ensure that the VSPackage's implementation of the <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> method supplies a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interface when called with `IID_IVsUserSettings`. For example:  
   
         ```  
         STDMETHODIMP MyPackage::QueryInterface(THIS_ REFIID riid, LPVOID FAR* ppvObj)  
@@ -90,18 +90,18 @@ A VSPackage may import settings from the [!INCLUDE[vsprvs](../assembler/masm/inc
   
 2.  Retrieve settings information.  
   
-     To support retrieving settings information, a VSPackage must implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings*> method.  
+     To support retrieving settings information, a VSPackage must implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> method.  
   
      To read data, a VSPackage's implementation of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interface must use the first two arguments passed in by the IDE: the GUID of that Custom Settings Point's category, and an <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader> interface.  
   
-    1.  A VSPackage's implementation of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings*> method must check the category GUID passed in and choose the correct mechanism for the retrieving state.  
+    1.  A VSPackage's implementation of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> method must check the category GUID passed in and choose the correct mechanism for the retrieving state.  
   
-         In the example below, the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings*> method calls a different implementation for retrieving the command bar state as opposed to retrieving the key-binding state.  
+         In the example below, the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> method calls a different implementation for retrieving the command bar state as opposed to retrieving the key-binding state.  
   
     2.  A VSPackage must use the supplied <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader> interface to retrieve data to the settings file.  
   
         > [!NOTE]
-        >  If the settings information changes as a function of a [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] version, a VSPackage's implementation of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings*> method must use the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader.ReadFileVersion*> method prior to reading data to check the IDE version.  
+        >  If the settings information changes as a function of a [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] version, a VSPackage's implementation of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> method must use the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader.ReadFileVersion%2A> method prior to reading data to check the IDE version.  
   
          The interface provides methods for reading different data types from the settings file.  
   
@@ -136,13 +136,13 @@ A VSPackage may import settings from the [!INCLUDE[vsprvs](../assembler/masm/inc
 > [!IMPORTANT]
 >  The settings information may become corrupt on disk, may contain version-specific settings, and could be used as a vehicle for malicious attack. The validity of each data item returned by the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader> method should be validated.  
   
--   To verify support of the version of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] used to produce the retrieved settings, call the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader.ReadFileVersion*> method to retrieve the version.  
+-   To verify support of the version of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] used to produce the retrieved settings, call the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader.ReadFileVersion%2A> method to retrieve the version.  
   
--   To cause the IDE to notify a user that an imported data element does not validate, a VSPackage calls the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader.ReportError*> method.  
+-   To cause the IDE to notify a user that an imported data element does not validate, a VSPackage calls the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader.ReportError%2A> method.  
   
 1.  Apply settings information.  
   
-    1.  The implementation of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings*> method must respect the value of the third argument that the IDE passed to it. The supported values are members of the <xref:Microsoft.VisualStudio.Shell.Interop.__UserSettingsFlags> enumeration. For more information, see <xref:Microsoft.VisualStudio.Shell.Interop.__UserSettingsFlags>.  
+    1.  The implementation of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> method must respect the value of the third argument that the IDE passed to it. The supported values are members of the <xref:Microsoft.VisualStudio.Shell.Interop.__UserSettingsFlags> enumeration. For more information, see <xref:Microsoft.VisualStudio.Shell.Interop.__UserSettingsFlags>.  
   
          In the example below, the implementation for importing command bar settings (`ImportSettings_Commandbar`) uses the value of this argument to determine whether to apply settings to overwrite existing values or to additively update them.  
   
@@ -152,9 +152,9 @@ A VSPackage may import settings from the [!INCLUDE[vsprvs](../assembler/masm/inc
   
 2.  Alert IDE how to handle settings import.  
   
-     Use the returned `pfRestartRequired` argument of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings*> method to advise the IDE if a restart is required to apply the imported settings.  
+     Use the returned `pfRestartRequired` argument of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> method to advise the IDE if a restart is required to apply the imported settings.  
   
-     If the VSPackage's implementation of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings*> method returns `true`, the user is prompted to restart the IDE.  
+     If the VSPackage's implementation of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> method returns `true`, the user is prompted to restart the IDE.  
   
 ## Example  
  This example demonstrates how to import and export settings data.  
@@ -363,6 +363,6 @@ HRESULT ImportSettings_KeyBindings(IVsSettingsReader *pSettings, UserSettings
   
 ## See Also  
  [How to: Export Settings By Using Interop Assemblies](../misc/how-to-export-settings-by-using-interop-assemblies.md)   
- [Support for User Settings](../Topic/Support%20for%20User%20Settings.md)   
- [Extending User Settings and Options](../Topic/Extending%20User%20Settings%20and%20Options.md)   
+ [Support for User Settings](/visual-studio/extensibility/internals/support-for-user-settings)   
+ [Extending User Settings and Options](/visual-studio/extensibility/extending-user-settings-and-options)   
  [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

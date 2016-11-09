@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB3190"
+title: "MSBuild Error MSB3190 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/22/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -48,7 +48,7 @@ translation.priority.mt:
   
 -   Generate an external UAC manifest (app.manifest) that specifies that the application run as the current user (`asInvoker`).  
   
-     In Visual C# projects, go to the **Application** page of the Project Designer and click **Properties\app.manifest** in the **Manifest** list. For more information, see [Application Page, Project Designer (C#)](../Topic/Application%20Page,%20Project%20Designer%20\(C%23\).md).  
+     In Visual C# projects, go to the **Application** page of the Project Designer and click **Properties\app.manifest** in the **Manifest** list. For more information, see [Application Page, Project Designer (C#)](/visual-studio/ide/reference/application-page-project-designer-csharp).  
   
      In Visual Basic projects, go to the **Application** page of the Project Designer and click the **View UAC Settings** button. This opens app.manifest for editing. Edit the following tag in the manifest to read as follows:  
   
@@ -56,11 +56,11 @@ translation.priority.mt:
     <requestedExecutionLevel level="asInvoker" />  
     ```  
   
-     For more information, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).  
+     For more information, see [Application Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/application-page-project-designer-visual-basic).  
   
--   For more information about how to generate a UAC manifest and specify the execution level, see [ClickOnce Deployment on Windows Vista](../Topic/ClickOnce%20Deployment%20on%20Windows%20Vista.md).  
+-   For more information about how to generate a UAC manifest and specify the execution level, see [ClickOnce Deployment on Windows Vista](/visual-studio/deployment/clickonce-deployment-on-windows-vista).  
   
 ## See Also  
- [Application Page, Project Designer (C#)](../Topic/Application%20Page,%20Project%20Designer%20\(C%23\).md)   
- [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md)   
- [ClickOnce Deployment on Windows Vista](../Topic/ClickOnce%20Deployment%20on%20Windows%20Vista.md)
+ [Application Page, Project Designer (C#)](/visual-studio/ide/reference/application-page-project-designer-csharp)   
+ [Application Page, Project Designer (Visual Basic)](/visual-studio/ide/reference/application-page-project-designer-visual-basic)   
+ [ClickOnce Deployment on Windows Vista](/visual-studio/deployment/clickonce-deployment-on-windows-vista)

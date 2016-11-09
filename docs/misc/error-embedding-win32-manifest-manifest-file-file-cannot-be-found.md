@@ -1,5 +1,5 @@
 ---
-title: "Error embedding Win32 manifest: Manifest File &lt;file&gt; cannot be found"
+title: "Error embedding Win32 manifest: Manifest File &lt;file&gt; cannot be found | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ The file specified for the `/win32manifest` compiler option cannot be found.
 1.  Provide a valid file name and path for the `/win32manifest` compiler option.  
   
 ## See Also  
- [/win32manifest (Visual Basic)](../Topic/-win32manifest%20\(Visual%20Basic\).md)   
- [Visual Basic Command-Line Compiler](../Topic/Visual%20Basic%20Command-Line%20Compiler.md)
+ [/win32manifest (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/win32manifest)   
+ [Visual Basic Command-Line Compiler](/dotnet/visual-basic/reference/command-line-compiler/index)

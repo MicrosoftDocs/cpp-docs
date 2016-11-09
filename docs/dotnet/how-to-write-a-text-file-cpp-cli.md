@@ -1,7 +1,7 @@
 ---
-title: "How to: Write a Text File (C++-CLI)"
+title: "How to: Write a Text File (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -37,7 +37,7 @@ translation.priority.ht:
 # How to: Write a Text File (C++/CLI)
 The following code example demonstrates how to create a text file and write text to it using the <xref:System.IO.StreamWriter> class, which is defined in the <xref:System.IO> namespace. The <xref:System.IO.StreamWriter> constructor takes the name of the file to be created. If the file exists, it is overwritten (unless you pass True as the second <xref:System.IO.StringWriter> constructor argument).  
   
- The file is then filed using the <xref:System.IO.StreamWriter.Write*> and <xref:System.IO.TextWriter.WriteLine*> functions.  
+ The file is then filed using the <xref:System.IO.StreamWriter.Write%2A> and <xref:System.IO.TextWriter.WriteLine%2A> functions.  
   
 ## Example  
   

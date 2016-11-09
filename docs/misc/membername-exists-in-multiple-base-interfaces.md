@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;membername&gt;&#39; exists in multiple base interfaces"
+title: "&#39;&lt;membername&gt;&#39; exists in multiple base interfaces | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ translation.priority.mt:
 -   Use the defining interface name in the `Implements` clauses instead of the name of the derived interface.  
   
 ## See Also  
- [Interfaces](../Topic/Interfaces%20\(Visual%20Basic\).md)   
- [Implements](../Topic/Implements%20Clause%20\(Visual%20Basic\).md)
+ [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)   
+ [Implements](/dotnet/visual-basic/language-reference/statements/implements-clause)

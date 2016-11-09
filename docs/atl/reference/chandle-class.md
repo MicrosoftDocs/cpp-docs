@@ -1,7 +1,7 @@
 ---
-title: "CHandle Class"
+title: "CHandle Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CHandle class"
 ms.assetid: 883e9db5-40ec-4e29-9c74-4dd2ddd2e35d
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -52,35 +52,35 @@ class CHandle
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHandle::CHandle](../Topic/CHandle::CHandle.md)|The constructor.|  
-|[CHandle::~CHandle](../Topic/CHandle::~CHandle.md)|The destructor.|  
+|[CHandle::CHandle](#chandle__chandle)|The constructor.|  
+|[CHandle::~CHandle](#chandle___dtorchandle)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHandle::Attach](../Topic/CHandle::Attach.md)|Call this method to attach the `CHandle` object to an existing handle.|  
-|[CHandle::Close](../Topic/CHandle::Close.md)|Call this method to close a `CHandle` object.|  
-|[CHandle::Detach](../Topic/CHandle::Detach.md)|Call this method to detach a handle from a `CHandle` object.|  
+|[CHandle::Attach](#chandle__attach)|Call this method to attach the `CHandle` object to an existing handle.|  
+|[CHandle::Close](#chandle__close)|Call this method to close a `CHandle` object.|  
+|[CHandle::Detach](#chandle__detach)|Call this method to detach a handle from a `CHandle` object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHandle::operator HANDLE](../Topic/CHandle::operator%20HANDLE.md)|Returns the value of the stored handle.|  
-|[CHandle::operator =](../Topic/CHandle::operator%20=.md)|Assignment operator.|  
+|[CHandle::operator HANDLE](#chandle__operator_handle)|Returns the value of the stored handle.|  
+|[CHandle::operator =](#chandle__operator__eq)|Assignment operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHandle::m_h](../Topic/CHandle::m_h.md)|The member variable that stores the handle.|  
+|[CHandle::m_h](#chandle__m_h)|The member variable that stores the handle.|  
   
 ## Remarks  
  A `CHandle` object can be used whenever a handle is required: the main difference is that the `CHandle` object will automatically be deleted.  
   
 > [!NOTE]
->  Some API functions will use NULL as an empty or invalid handle, while others use INVALID_HANDLE_VALUE. `CHandle` only uses NULL and will treat INVALID_HANDLE_VALUE as a real handle. If you call an API which can return INVALID_HANDLE_VALUE, you should check for this value before calling [CHandle::Attach](../Topic/CHandle::Attach.md) or passing it to the `CHandle` constructor, and instead pass NULL.  
+>  Some API functions will use NULL as an empty or invalid handle, while others use INVALID_HANDLE_VALUE. `CHandle` only uses NULL and will treat INVALID_HANDLE_VALUE as a real handle. If you call an API which can return INVALID_HANDLE_VALUE, you should check for this value before calling [CHandle::Attach](#chandle__attach) or passing it to the `CHandle` constructor, and instead pass NULL.  
   
 ## Requirements  
  **Header:** atlbase.h  
@@ -123,7 +123,7 @@ explicit CHandle(HANDLE   h) throw();
 ```  
   
 ### Remarks  
- Frees the `CHandle` object by calling [CHandle::Close](../Topic/CHandle::Close.md).  
+ Frees the `CHandle` object by calling [CHandle::Close](#chandle__close).  
   
 ##  <a name="chandle__close"></a>  CHandle::Close  
  Call this method to close a `CHandle` object.  
@@ -179,14 +179,7 @@ CHandle& operator=(CHandle& h) throw();
 ```  
   
 ### Remarks  
- Returns the value stored in [CHandle::m_h](../Topic/CHandle::m_h.md).  
+ Returns the value stored in [CHandle::m_h](#chandle__m_h).  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

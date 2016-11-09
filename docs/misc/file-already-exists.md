@@ -1,5 +1,5 @@
 ---
-title: "File already exists"
+title: "File already exists | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,4 +40,4 @@ This error occurs as a result of either naming a new file with the name of an ex
 -   Check the name and either change it to one that does not conflict, or delete the pre-existing file or project if it is no longer needed.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

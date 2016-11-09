@@ -1,5 +1,5 @@
 ---
-title: "First statement of a method body cannot be on the same line as the method declaration"
+title: "First statement of a method body cannot be on the same line as the method declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,5 +49,5 @@ A `Function`, `Sub`, `Get`, `Set`, or `Property` statement must be alone on a so
 3.  Move any statement following the procedure declaration to a subsequent source code line.  
   
 ## See Also  
- [Procedures](../Topic/Procedures%20in%20Visual%20Basic.md)   
+ [Procedures](/dotnet/visual-basic/language-reference/procedures/index)   
  [How to: Label Statements](../Topic/How%20to:%20Label%20Statements%20\(Visual%20Basic\).md)

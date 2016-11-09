@@ -1,5 +1,5 @@
 ---
-title: "&#39;Exit While&#39; can only appear inside a &#39;While&#39; statement"
+title: "&#39;Exit While&#39; can only appear inside a &#39;While&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ An `Exit While` statement occurs outside a `While` block. `Exit While` is valid 
 2.  Verify that other control structures within the `While` block are correctly terminated.  
   
 ## See Also  
- [While...End While Statement](../Topic/While...End%20While%20Statement%20\(Visual%20Basic\).md)
+ [While...End While Statement](/dotnet/visual-basic/language-reference/statements/while-end-while-statement)

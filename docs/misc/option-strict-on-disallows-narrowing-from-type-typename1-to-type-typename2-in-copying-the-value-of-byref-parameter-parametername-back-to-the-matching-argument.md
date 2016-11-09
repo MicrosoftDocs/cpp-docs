@@ -1,5 +1,5 @@
 ---
-title: "Option Strict On disallows narrowing from type &#39;&lt;typename1&gt;&#39; to type &#39;&lt;typename2&gt;&#39; in copying the value of ByRef parameter &lt;parametername&gt;&#39; back to the matching argument"
+title: "Option Strict On disallows narrowing from type &#39;&lt;typename1&gt;&#39; to type &#39;&lt;typename2&gt;&#39; in copying the value of ByRef parameter &lt;parametername&gt;&#39; back to the matching argument | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,7 +45,7 @@ A procedure call supplies a `ByRef` argument with a data type that widens to the
 -   Supply each `ByRef` argument in the procedure call with the same data type as the declared type, or turn `Option Strict Off`.  
   
 ## See Also  
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)   
- [Passing Arguments by Value and by Reference](../Topic/Passing%20Arguments%20by%20Value%20and%20by%20Reference%20\(Visual%20Basic\).md)   
- [Widening and Narrowing Conversions](../Topic/Widening%20and%20Narrowing%20Conversions%20\(Visual%20Basic\).md)   
- [Implicit and Explicit Conversions](../Topic/Implicit%20and%20Explicit%20Conversions%20\(Visual%20Basic\).md)
+ [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
+ [Passing Arguments by Value and by Reference](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)   
+ [Widening and Narrowing Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)   
+ [Implicit and Explicit Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)

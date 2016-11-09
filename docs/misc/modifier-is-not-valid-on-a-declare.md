@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;modifier&gt;&#39; is not valid on a Declare"
+title: "&#39;&lt;modifier&gt;&#39; is not valid on a Declare | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ A `Declare` statement contains an invalid keyword, such as `ReadOnly`.
 -   Remove the invalid keyword from the `Declare` statement.  
   
 ## See Also  
- [Declare Statement](../Topic/Declare%20Statement.md)
+ [Declare Statement](/dotnet/visual-basic/language-reference/statements/declare-statement)

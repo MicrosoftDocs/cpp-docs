@@ -1,5 +1,5 @@
 ---
-title: "&#39;In&#39; expected"
+title: "&#39;In&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -50,7 +50,7 @@ A `From` or `Aggregate` clause has been specified without an `In` operator. You 
     ```  
   
 ## See Also  
- [From Clause](../Topic/From%20Clause%20\(Visual%20Basic\).md)   
- [Aggregate Clause](../Topic/Aggregate%20Clause%20\(Visual%20Basic\).md)   
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [LINQ](../Topic/LINQ%20in%20Visual%20Basic.md)
+ [From Clause](/dotnet/visual-basic/language-reference/queries/from-clause)   
+ [Aggregate Clause](/dotnet/visual-basic/language-reference/queries/aggregate-clause)   
+ [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)

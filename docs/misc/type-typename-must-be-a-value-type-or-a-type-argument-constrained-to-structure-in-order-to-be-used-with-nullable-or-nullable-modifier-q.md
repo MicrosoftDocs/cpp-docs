@@ -1,5 +1,5 @@
 ---
-title: "Type &#39;&lt;typeName&gt;&#39; must be a value type or a type argument constrained to &#39;Structure&#39; in order to be used with &#39;Nullable&#39; or nullable modifier &#39;?&#39;"
+title: "Type &#39;&lt;typeName&gt;&#39; must be a value type or a type argument constrained to &#39;Structure&#39; in order to be used with &#39;Nullable&#39; or nullable modifier &#39;?&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -57,4 +57,4 @@ Dim m As Integer?
 -   Use a value data type.  
   
 ## See Also  
- [Nullable Value Types](../Topic/Nullable%20Value%20Types%20\(Visual%20Basic\).md)
+ [Nullable Value Types](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

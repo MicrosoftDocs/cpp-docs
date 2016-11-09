@@ -1,5 +1,5 @@
 ---
-title: "&#39;ByRef&#39; parameter &lt;parametername&gt; cannot be used in a query expression"
+title: "&#39;ByRef&#39; parameter &lt;parametername&gt; cannot be used in a query expression | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -58,6 +58,6 @@ A parameter included in a LINQ query is a pointer type. Parameters used in query
 1.  Replace the `ByRef` keyword with the `ByVal` keyword for the parameter used in the query.  
   
 ## See Also  
- [Differences Between Passing an Argument By Value and By Reference](../Topic/Differences%20Between%20Passing%20an%20Argument%20By%20Value%20and%20By%20Reference%20\(Visual%20Basic\).md)   
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [LINQ](../Topic/LINQ%20in%20Visual%20Basic.md)
+ [Differences Between Passing an Argument By Value and By Reference](/dotnet/visual-basic/language-reference/procedures/differences-between-passing-an-argument-by-value-and-by-reference)   
+ [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)

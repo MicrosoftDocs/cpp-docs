@@ -1,5 +1,5 @@
 ---
-title: "Project already has a reference to assembly &lt;assemblyidentity&gt;"
+title: "Project already has a reference to assembly &lt;assemblyidentity&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -51,6 +51,6 @@ Project already has a reference to assembly \<assemblyidentity>. A second refere
 -   Remove the second reference. It is unnecessary because it refers to the same assembly.  
   
 ## See Also  
- [Managing references in a project](../Topic/Managing%20references%20in%20a%20project.md)   
+ [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
- [Troubleshooting Broken References](../Topic/Troubleshooting%20Broken%20References.md)
+ [Troubleshooting Broken References](/visual-studio/ide/troubleshooting-broken-references)

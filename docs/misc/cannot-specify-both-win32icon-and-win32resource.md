@@ -1,5 +1,5 @@
 ---
-title: "Cannot specify both -win32icon and -win32resource"
+title: "Cannot specify both -win32icon and -win32resource | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,5 +49,5 @@ The `/win32resource` and `/win32icon` options are mutually exclusive, because th
 -   Use only the `/win32resource` option to insert a Win32 resource file in the output file. A Win32 resource can contain version or bitmap (icon) information that helps identify your application in Windows Explorer.  
   
 ## See Also  
- [/win32icon](../Topic/-win32icon.md)   
- [/win32resource](../Topic/-win32resource.md)
+ [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon)   
+ [/win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource)

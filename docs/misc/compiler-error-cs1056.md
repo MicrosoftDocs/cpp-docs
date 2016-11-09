@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1056"
+title: "Compiler Error CS1056 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1056"
 ms.assetid: bf66d164-ab5b-4181-b93e-a1d29620b4d2
 caps.latest.revision: 15
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

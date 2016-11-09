@@ -1,7 +1,7 @@
 ---
-title: "Extension Analyzer"
+title: "Extension Analyzer | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -50,16 +50,16 @@ The **Extension Analyzer** captures and logs most common extension load failures
 >  You may receive a message asking you to turn on Fusion logging. To do so, select a location for the log files. You may be asked to restart all instances of Visual Studio before continuing.  
   
 ## Log Viewer  
- You can see logging messages with the **Extension Log Viewer** if you are running a project that has logging turned on (by adding /log to the command line arguments of your project). For more information, see [/Log (devenv.exe)](../Topic/-Log%20\(devenv.exe\).md). The **Extension Log Viewer** window displays the date, the listener, the entry type (type of message), the error type, class/interface information, and the log message. You can sort and filter the information.  
+ You can see logging messages with the **Extension Log Viewer** if you are running a project that has logging turned on (by adding /log to the command line arguments of your project). For more information, see [/Log (devenv.exe)](/visual-studio/ide/reference/log-devenv-exe). The **Extension Log Viewer** window displays the date, the listener, the entry type (type of message), the error type, class/interface information, and the log message. You can sort and filter the information.  
   
 ## Common Extension Loading Issues  
  Some of the typical reasons for an extension load failure in [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] are:  
   
 -   Dependency issues. An extension may have been deployed in such a way that dependent assemblies cannot be found.  
   
--   Exceptions. When a VSPackage is loaded, [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] calls its <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite*> method. If this method throws an exception, then the VSPackage load fails. The best way to isolate this issue is to step through the SetSite code.  
+-   Exceptions. When a VSPackage is loaded, [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] calls its <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> method. If this method throws an exception, then the VSPackage load fails. The best way to isolate this issue is to step through the SetSite code.  
   
 -   Improper registration. Verify that the extension is signed appropriately and that the VSPackage is registered by using the correct public key.  
   
 ## See Also  
- [Managing VSPackages](../Topic/Managing%20VSPackages.md)
+ [Managing VSPackages](/visual-studio/extensibility/managing-vspackages)

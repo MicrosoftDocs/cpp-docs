@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.ArrayTypeMismatchException"
+title: "Troubleshooting Exceptions: System.ArrayTypeMismatchException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -44,7 +44,7 @@ An <xref:System.ArrayTypeMismatchException> exception is thrown when the system 
  **Make sure the object type is convertible to the array type.**  
  A conversion must be possible between the two types.  
   
- For more information, Visual Basic users can see [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md).  
+ For more information, Visual Basic users can see [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index).  
   
 ## See Also  
  <xref:System.ArrayTypeMismatchException>   

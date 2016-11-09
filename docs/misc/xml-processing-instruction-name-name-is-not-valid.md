@@ -1,5 +1,5 @@
 ---
-title: "XML processing instruction name &#39;name&#39; is not valid"
+title: "XML processing instruction name &#39;name&#39; is not valid | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ The name provided for an XML processing instruction is invalid.
 -   Correct any errors in the name of the XML processing instruction, or remove it.  
   
 ## See Also  
- [XML Processing Instruction Literal](../Topic/XML%20Processing%20Instruction%20Literal%20\(Visual%20Basic\).md)   
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [XML Processing Instruction Literal](/dotnet/visual-basic/language-reference/xml-literals/xml-processing-instruction-literal)   
+ [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)

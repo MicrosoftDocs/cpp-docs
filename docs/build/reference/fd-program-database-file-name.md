@@ -1,7 +1,7 @@
 ---
-title: "-Fd (Program Database File Name)"
+title: "-Fd (Program Database File Name) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -73,7 +73,7 @@ Specifies a file name for the program database (PDB) file created by [/Z7, /Zi, 
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ProgramDataBaseFileName*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ProgramDataBaseFileName%2A>.  
   
 ## Example  
  This command line creates a .pdb file named PROG.pdb and an .idb file named PROG.idb:  

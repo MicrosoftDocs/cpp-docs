@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0526"
+title: "Compiler Error CS0526 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0526"
 ms.assetid: befc46b4-28ea-40d3-89ac-132b92455772
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0526
 Interfaces cannot contain constructors  
   
- Constructors cannot be defined for [interfaces](../Topic/interface%20\(C%23%20Reference\).md). A method is considered a constructor if it has the same name as the class and no return type.  
+ Constructors cannot be defined for [interfaces](/dotnet/csharp/language-reference/keywords/interface). A method is considered a constructor if it has the same name as the class and no return type.  
   
  The following sample generates CS0526:  
   

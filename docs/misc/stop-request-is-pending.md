@@ -1,5 +1,5 @@
 ---
-title: "Stop request is pending"
+title: "Stop request is pending | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,7 +49,7 @@ In the Visual Studio debugger, an expression specifies a procedure call, but the
 -   Terminate and restart debugging.  
   
 ## See Also  
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)   
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)   
  [How to: Start Execution](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c)   
  [How to: Stop Debugging or Stop Execution](http://msdn.microsoft.com/en-us/03c68f95-aa96-481b-990e-467e065453a5)   
  [Code Stepping Overview](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)   

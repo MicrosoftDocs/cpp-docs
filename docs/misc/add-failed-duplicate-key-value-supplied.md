@@ -1,5 +1,5 @@
 ---
-title: "Add failed. Duplicate key value supplied"
+title: "Add failed. Duplicate key value supplied | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,4 +40,4 @@ An `Add` operation failed because the key value is the same as another key value
 -   Ensure that the key value is unique.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

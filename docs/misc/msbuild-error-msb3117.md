@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB3117"
+title: "MSBuild Error MSB3117 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -37,16 +37,16 @@ translation.priority.mt:
 # MSBuild Error MSB3117
 **MSB3117: Application is set to host in browser but the TargetFrameworkVersion is set to v2.0.**  
   
- A WPF Web Browser Application was deployed with the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser*> property set to `True`, but TargetFrameworkVersion was set to `v2.0` or `v3.0`. If you use this setting, you must also set the <xref:Microsoft.Build.Tasks.GenerateApplicationManifest.TargetFrameworkVersion*> property to a value of `v3.5` or higher.  
+ A WPF Web Browser Application was deployed with the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser%2A> property set to `True`, but TargetFrameworkVersion was set to `v2.0` or `v3.0`. If you use this setting, you must also set the <xref:Microsoft.Build.Tasks.GenerateApplicationManifest.TargetFrameworkVersion%2A> property to a value of `v3.5` or higher.  
   
 ### To correct this error  
   
--   Set the <xref:Microsoft.Build.Tasks.GenerateApplicationManifest.TargetFrameworkVersion*> property to a value of `v3.5` or higher.  
+-   Set the <xref:Microsoft.Build.Tasks.GenerateApplicationManifest.TargetFrameworkVersion%2A> property to a value of `v3.5` or higher.  
   
 ## See Also  
- <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser*>   
- <xref:Microsoft.Build.Tasks.GenerateApplicationManifest.TargetFrameworkVersion*>   
- [Publish Page, Project Designer](../Topic/Publish%20Page,%20Project%20Designer.md)   
+ <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser%2A>   
+ <xref:Microsoft.Build.Tasks.GenerateApplicationManifest.TargetFrameworkVersion%2A>   
+ [Publish Page, Project Designer](/visual-studio/ide/reference/publish-page-project-designer)   
  [MSBuild Error MSB3116](../misc/msbuild-error-msb3116.md)   
  [MSBuild Error MSB3118](../misc/msbuild-error-msb3118.md)   
  [MSBuild Error MSB3174](../misc/msbuild-error-msb3174.md)   

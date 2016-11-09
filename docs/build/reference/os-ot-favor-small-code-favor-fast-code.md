@@ -1,7 +1,7 @@
 ---
-title: "-Os, -Ot (Favor Small Code, Favor Fast Code)"
+title: "-Os, -Ot (Favor Small Code, Favor Fast Code) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -116,7 +116,7 @@ sub    eax, ecx
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.FavorSizeOrSpeed*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.FavorSizeOrSpeed%2A>.  
   
 ## See Also  
  [/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)   

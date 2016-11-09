@@ -1,7 +1,7 @@
 ---
-title: "CAtlAutoThreadModule Class"
+title: "CAtlAutoThreadModule Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAtlAutoThreadModule class"
 ms.assetid: 3be834aa-55ef-403e-94ae-41979691b15f
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -74,10 +74,3 @@ class CAtlAutoThreadModule :  public CAtlAutoThreadModuleT<CAtlAutoThreadModule>
  [IAtlAutoThreadModule Class](../../atl/reference/iatlautothreadmodule-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Module Classes](../../atl/atl-module-classes.md)
-
-
-
-
-
-
-

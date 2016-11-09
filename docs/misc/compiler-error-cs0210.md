@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0210"
+title: "Compiler Error CS0210 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0210"
 ms.assetid: 9f2ec1b8-6ca4-4147-b004-e3b43e7e8754
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0210
 You must provide an initializer in a fixed or using statement declaration  
   
- You must declare and initialize the variable in a [fixed statement](../Topic/fixed%20Statement%20\(C%23%20Reference\).md). For more information, see [Unsafe Code and Pointers](../Topic/Unsafe%20Code%20and%20Pointers%20\(C%23%20Programming%20Guide\).md).  
+ You must declare and initialize the variable in a [fixed statement](/dotnet/csharp/language-reference/keywords/fixed-statement). For more information, see [Unsafe Code and Pointers](/dotnet/csharp/programming-guide/unsafe-code-pointers/index).  
   
  The following sample generates CS0210:  
   
@@ -73,7 +74,7 @@ public class MyClass
 }  
 ```  
   
- The following sample also generates CS0210 because the [using statement](../Topic/using%20Statement%20\(C%23%20Reference\).md) has no initializer.  
+ The following sample also generates CS0210 because the [using statement](/dotnet/csharp/language-reference/keywords/using-statement) has no initializer.  
   
 ```  
 // CS0210b.cs  

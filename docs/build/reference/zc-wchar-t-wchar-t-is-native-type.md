@@ -1,7 +1,7 @@
 ---
-title: "-Zc:wchar_t (wchar_t Is Native Type)"
+title: "-Zc:wchar_t (wchar_t Is Native Type) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -73,7 +73,7 @@ Parse `wchar_t` as a built-in type according to the C++ standard. By default, **
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.TreatWChar_tAsBuiltInType*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.TreatWChar_tAsBuiltInType%2A>.  
   
 ## See Also  
  [/Zc (Conformance)](../../build/reference/zc-conformance.md)

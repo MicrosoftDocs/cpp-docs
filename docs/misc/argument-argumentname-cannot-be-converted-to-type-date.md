@@ -1,5 +1,5 @@
 ---
-title: "Argument &#39;&lt;argumentname&gt;&#39; cannot be converted to type &#39;Date&#39;"
+title: "Argument &#39;&lt;argumentname&gt;&#39; cannot be converted to type &#39;Date&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,5 +40,5 @@ A conversion attempted to change a variable to type `Date`, but the value is not
 -   Find a conversion that is meaningful.  
   
 ## See Also  
- [Type Conversions in Visual Basic](../Topic/Type%20Conversions%20in%20Visual%20Basic.md)   
- [Date Data Type](../Topic/Date%20Data%20Type%20\(Visual%20Basic\).md)
+ [Type Conversions in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/type-conversions)   
+ [Date Data Type](/dotnet/visual-basic/language-reference/data-types/date-data-type)

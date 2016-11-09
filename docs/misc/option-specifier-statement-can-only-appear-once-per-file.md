@@ -1,5 +1,5 @@
 ---
-title: "&#39;Option &lt;specifier&gt;&#39; statement can only appear once per file"
+title: "&#39;Option &lt;specifier&gt;&#39; statement can only appear once per file | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -46,6 +46,6 @@ The `Option Compare`, `Option Explicit`, and `Option Strict` statements can only
   
 ## See Also  
  [Option \<keyword> Statement](../Topic/Option%20%3Ckeyword%3E%20Statement.md)   
- [Option Compare Statement](../Topic/Option%20Compare%20Statement.md)   
- [Option Explicit Statement](../Topic/Option%20Explicit%20Statement%20\(Visual%20Basic\).md)   
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)
+ [Option Compare Statement](/dotnet/visual-basic/language-reference/statements/option-compare-statement)   
+ [Option Explicit Statement](/dotnet/visual-basic/language-reference/statements/option-explicit-statement)   
+ [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)

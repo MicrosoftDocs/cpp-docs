@@ -1,7 +1,7 @@
 ---
-title: "SetCommonPchSettings"
+title: "SetCommonPchSettings | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -54,7 +54,7 @@ Establishes the precompiled header settings for the project.
 ## Remarks  
  Call this function to establish the precompiled header settings for the project.  
   
- This function sets the <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UsePrecompiledHeader*> property to the following:  
+ This function sets the <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UsePrecompiledHeader%2A> property to the following:  
   
 -   **pchUseUsingSpecific** Uses the [/Yu (Use Precompiled Header File)](../build/reference/yu-use-precompiled-header-file.md) compiler setting.  
   

@@ -1,7 +1,7 @@
 ---
-title: "strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l"
+title: "strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

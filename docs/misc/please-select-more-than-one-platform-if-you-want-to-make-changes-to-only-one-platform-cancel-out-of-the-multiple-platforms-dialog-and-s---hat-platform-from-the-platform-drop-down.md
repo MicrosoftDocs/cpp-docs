@@ -1,7 +1,7 @@
 ---
-title: "Please select more than one platform. If you want to make changes to only one platform, cancel out of the Multiple Platforms dialog and select that platform from the platform drop-down."
+title: "Please select more than one platform. If you want to make changes to only one platform, cancel out of the Multiple Platforms dialog and select that platform from the platform drop-down. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

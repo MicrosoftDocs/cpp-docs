@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0643"
+title: "Compiler Error CS0643 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0643"
 ms.assetid: beae30ff-15c2-413f-8f5c-504cdba2e57a
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

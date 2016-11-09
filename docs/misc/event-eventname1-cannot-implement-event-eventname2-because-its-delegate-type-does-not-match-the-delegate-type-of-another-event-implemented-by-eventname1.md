@@ -1,5 +1,5 @@
 ---
-title: "Event &#39;&lt;eventname1&gt;&#39; cannot implement event &#39;&lt;eventname2&gt;&#39; because its delegate type does not match the delegate type of another event implemented by &#39;&lt;eventname1&gt;&#39;"
+title: "Event &#39;&lt;eventname1&gt;&#39; cannot implement event &#39;&lt;eventname2&gt;&#39; because its delegate type does not match the delegate type of another event implemented by &#39;&lt;eventname1&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ translation.priority.mt:
 -   Implement the events separately.  
   
 ## See Also  
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)

@@ -1,7 +1,7 @@
 ---
-title: "IPersistStreamInitImpl Class"
+title: "IPersistStreamInitImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -22,7 +22,7 @@ helpviewer_keywords:
   - "IPersistStreamInitImpl class"
   - "streams, ATL"
 ms.assetid: ef217c3c-020f-4cf8-871e-ef68e57865b8
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -63,12 +63,12 @@ template<class T>  class ATL_NO_VTABLE IPersistStreamInitImpl :  public IPersist
   
 |Name|Description|  
 |----------|-----------------|  
-|[IPersistStreamInitImpl::GetClassID](../Topic/IPersistStreamInitImpl::GetClassID.md)|Retrieves the object's CLSID.|  
-|[IPersistStreamInitImpl::GetSizeMax](../Topic/IPersistStreamInitImpl::GetSizeMax.md)|Retrieves the size of the stream needed to save the object's data. The ATL implementation returns **E_NOTIMPL**.|  
-|[IPersistStreamInitImpl::InitNew](../Topic/IPersistStreamInitImpl::InitNew.md)|Initializes a newly created object.|  
-|[IPersistStreamInitImpl::IsDirty](../Topic/IPersistStreamInitImpl::IsDirty.md)|Checks whether the object's data has changed since it was last saved.|  
-|[IPersistStreamInitImpl::Load](../Topic/IPersistStreamInitImpl::Load.md)|Loads the object's properties from the specified stream.|  
-|[IPersistStreamInitImpl::Save](../Topic/IPersistStreamInitImpl::Save.md)|Saves the object's properties to the specified stream.|  
+|[IPersistStreamInitImpl::GetClassID](#ipersiststreaminitimpl__getclassid)|Retrieves the object's CLSID.|  
+|[IPersistStreamInitImpl::GetSizeMax](#ipersiststreaminitimpl__getsizemax)|Retrieves the size of the stream needed to save the object's data. The ATL implementation returns **E_NOTIMPL**.|  
+|[IPersistStreamInitImpl::InitNew](#ipersiststreaminitimpl__initnew)|Initializes a newly created object.|  
+|[IPersistStreamInitImpl::IsDirty](#ipersiststreaminitimpl__isdirty)|Checks whether the object's data has changed since it was last saved.|  
+|[IPersistStreamInitImpl::Load](#ipersiststreaminitimpl__load)|Loads the object's properties from the specified stream.|  
+|[IPersistStreamInitImpl::Save](#ipersiststreaminitimpl__save)|Saves the object's properties to the specified stream.|  
   
 ## Remarks  
  The [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface allows a client to request that your object loads and saves its persistent data to a single stream. Class `IPersistStreamInitImpl` provides a default implementation of this interface and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -153,10 +153,3 @@ STDMETHOD(Save)(LPSTREAM pStm,  BOOL fClearDirty);
 ## See Also  
  [Storages and Streams](http://msdn.microsoft.com/library/windows/desktop/aa380352)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

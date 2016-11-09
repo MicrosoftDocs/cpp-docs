@@ -1,7 +1,7 @@
 ---
-title: "Previewing Resources"
+title: "Previewing Resources | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -63,7 +63,7 @@ Previewing your resources allows you to view graphical resource without opening 
   
      **Note** If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  In the [Properties window](../Topic/Properties%20Window.md), click the **Property Pages** button.  
+2.  In the [Properties window](/visual-studio/ide/reference/properties-window), click the **Property Pages** button.  
   
      \- or -  
   

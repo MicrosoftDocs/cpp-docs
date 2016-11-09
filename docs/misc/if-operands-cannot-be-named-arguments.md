@@ -1,5 +1,5 @@
 ---
-title: "&#39;If&#39; operands cannot be named arguments"
+title: "&#39;If&#39; operands cannot be named arguments | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -63,5 +63,5 @@ IIf(i > 0, TruePart:="positive", FalsePart:="not positive")
     ```  
   
 ## See Also  
- [If Operator](../Topic/If%20Operator%20\(Visual%20Basic\).md)   
- [Passing Arguments by Position and by Name](../Topic/Passing%20Arguments%20by%20Position%20and%20by%20Name%20\(Visual%20Basic\).md)
+ [If Operator](/dotnet/visual-basic/language-reference/operators/if-operator)   
+ [Passing Arguments by Position and by Name](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name)

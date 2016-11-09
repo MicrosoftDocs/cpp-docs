@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0819"
+title: "Compiler Error CS0819 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0819"
 ms.assetid: a5369e03-eb7d-4c88-b390-51304bd8d1ae
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -60,4 +61,4 @@ class A
 ```  
   
 ## See Also  
- [Implicitly Typed Local Variables](../Topic/Implicitly%20Typed%20Local%20Variables%20\(C%23%20Programming%20Guide\).md)
+ [Implicitly Typed Local Variables](/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables)

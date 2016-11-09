@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1039"
+title: "Compiler Error CS1039 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1039"
 ms.assetid: 266e9f7f-fe17-445a-aefd-6b7795167d68
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS1039
 Unterminated string literal  
   
- The compiler detected an ill-formed [string](../Topic/string%20\(C%23%20Reference\).md) literal.  
+ The compiler detected an ill-formed [string](/dotnet/csharp/language-reference/keywords/string) literal.  
   
 ## Example  
  The following sample generates CS1039. To resolve the error, add the terminating quotation mark.  

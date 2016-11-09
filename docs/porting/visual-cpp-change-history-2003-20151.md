@@ -1,7 +1,7 @@
 ---
-title: "Visual C++ change history 2003 - 20151"
+title: "Visual C++ change history 2003 - 20151 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -368,7 +368,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
      The /Zg compiler option (Generate Function Prototypes) is no longer available. This compiler option was previously deprecated.  
   
--   You can no longer run unit tests with C++/CLI from the command-line with mstest.exe. Instead, use vstest.console.exe. See [VSTest.Console.exe command-line options](../Topic/VSTest.Console.exe%20command-line%20options.md).  
+-   You can no longer run unit tests with C++/CLI from the command-line with mstest.exe. Instead, use vstest.console.exe. See [VSTest.Console.exe command-line options](/devops-test-docs/test/vstest-console-exe-command-line-options).  
   
 -   **mutable keyword**  
   
@@ -1416,7 +1416,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
     warning C4720: unreachable code  
     ```  
   
-     In many cases, this warning might only be issued when compiling with optimizations enabled, since optimizations may inline more function calls, eliminate redundant code, or otherwise make it possible to determine that certain code is unreachable. We have observed that new instances of warning C4720 have frequently occurred in try/catch blocks, especially in relation to use of <xref:find>.  
+     In many cases, this warning might only be issued when compiling with optimizations enabled, since optimizations may inline more function calls, eliminate redundant code, or otherwise make it possible to determine that certain code is unreachable. We have observed that new instances of warning C4720 have frequently occurred in try/catch blocks, especially in relation to use of [std::find](assetId:///std::find?qualifyHint=False&autoUpgrade=True).  
   
      Example (before)  
   

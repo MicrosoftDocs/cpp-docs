@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB4133"
+title: "MSBuild Error MSB4133 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/24/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -43,5 +43,5 @@ translation.priority.mt:
   
 ## See Also  
  <xref:Microsoft.Build.BuildEngine.Toolset>   
- [Project Element (MSBuild)](../Topic/Project%20Element%20\(MSBuild\).md)   
- [Additional Resources](../Topic/Additional%20MSBuild%20Resources.md)
+ [Project Element (MSBuild)](/visual-studio/msbuild/project-element-msbuild)   
+ [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)

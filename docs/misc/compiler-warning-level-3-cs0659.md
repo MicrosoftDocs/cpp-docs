@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 3) CS0659"
+title: "Compiler Warning (level 3) CS0659 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0659"
 ms.assetid: 63435ee6-c92f-4124-95d4-d8f4e5f0af80
 caps.latest.revision: 9
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -48,7 +49,7 @@ translation.priority.mt:
   
 -   [NIB: Implementing the Equals Method](http://msdn.microsoft.com/en-us/30f28aaf-8b9e-46cd-a746-58a12473af2c)  
   
--   <xref:System.Object.GetHashCode*>  
+-   <xref:System.Object.GetHashCode%2A>  
   
  The following sample generates CS0659:  
   

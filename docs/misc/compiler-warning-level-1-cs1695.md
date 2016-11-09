@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS1695"
+title: "Compiler Warning (level 1) CS1695 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1695"
 ms.assetid: cc4e4d00-0618-400d-985b-90968e98772c
 caps.latest.revision: 10
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

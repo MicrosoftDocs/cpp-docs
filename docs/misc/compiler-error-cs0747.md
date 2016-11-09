@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0747"
+title: "Compiler Error CS0747 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0747"
 ms.assetid: dc1b7e38-cee5-406c-b193-a60ec4faebe1
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -62,4 +63,4 @@ public class C
 ```  
   
 ## See Also  
- [Object and Collection Initializers](../Topic/Object%20and%20Collection%20Initializers%20\(C%23%20Programming%20Guide\).md)
+ [Object and Collection Initializers](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)

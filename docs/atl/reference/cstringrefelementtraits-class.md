@@ -1,7 +1,7 @@
 ---
-title: "CStringRefElementTraits Class"
+title: "CStringRefElementTraits Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CStringRefElementTraits class"
 ms.assetid: cc15062d-5627-46cc-ac2b-1744afdc2dbd
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -57,9 +57,9 @@ template <typename   T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CStringRefElementTraits::CompareElements](../Topic/CStringRefElementTraits::CompareElements.md)|Call this static function to compare two string elements for equality.|  
-|[CStringRefElementTraits::CompareElementsOrdered](../Topic/CStringRefElementTraits::CompareElementsOrdered.md)|Call this static function to compare two string elements.|  
-|[CStringRefElementTraits::Hash](../Topic/CStringRefElementTraits::Hash.md)|Call this static function to calculate a hash value for the given string element.|  
+|[CStringRefElementTraits::CompareElements](#cstringrefelementtraits__compareelements)|Call this static function to compare two string elements for equality.|  
+|[CStringRefElementTraits::CompareElementsOrdered](#cstringrefelementtraits__compareelementsordered)|Call this static function to compare two string elements.|  
+|[CStringRefElementTraits::Hash](#cstringrefelementtraits__hash)|Call this static function to calculate a hash value for the given string element.|  
   
 ## Remarks  
  This class provides static functions for comparing strings and for creating a hash value. These functions are useful when using a collection class to store string-based data. Unlike [CStringElementTraits](../../atl/reference/cstringelementtraits-class.md) and [CStringElementTraitsI](../../atl/reference/cstringelementtraitsi-class.md), `CStringRefElementTraits` causes the `CString` arguments to be passed as **const CString&** references.  
@@ -129,10 +129,3 @@ static ULONG Hash(INARGTYPE   str) throw();
 ## See Also  
  [CElementTraitsBase Class](../../atl/reference/celementtraitsbase-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

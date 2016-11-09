@@ -1,5 +1,5 @@
 ---
-title: "XML namespace prefix &#39;prefix&#39; is already declared"
+title: "XML namespace prefix &#39;prefix&#39; is already declared | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ An XML namespace prefix defined by an `Imports` statement matches a previously d
 -   Use a unique name for the XML namespace prefix.  
   
 ## See Also  
- [Imports Statement (XML Namespace)](../Topic/Imports%20Statement%20\(XML%20Namespace\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [Imports Statement (XML Namespace)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)   
+ [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)

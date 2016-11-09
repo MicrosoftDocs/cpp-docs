@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0405"
+title: "Compiler Error CS0405 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0405"
 ms.assetid: 0bf51e24-dc6c-438f-a928-b5bfbf35f81a
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

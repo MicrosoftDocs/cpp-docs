@@ -1,5 +1,5 @@
 ---
-title: "Events in interfaces cannot be declared &#39;&lt;implements&gt;&#39;"
+title: "Events in interfaces cannot be declared &#39;&lt;implements&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ Events declared in interfaces cannot implement the events of other interfaces.
 2.  Implement the event within a class or structure.  
   
 ## See Also  
- [Interface Statement](../Topic/Interface%20Statement%20\(Visual%20Basic\).md)
+ [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)

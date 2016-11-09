@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0513"
+title: "Compiler Error CS0513 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0513"
 ms.assetid: 6f8569df-713d-4c9c-a675-6576dad139ce
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0513
 'function' is abstract but it is contained in nonabstract class 'class'  
   
- A method cannot be an [abstract](../Topic/abstract%20\(C%23%20Reference\).md) member of a nonabstract class.  
+ A method cannot be an [abstract](/dotnet/csharp/language-reference/keywords/abstract) member of a nonabstract class.  
   
  The following sample generates CS0513:  
   

@@ -1,5 +1,5 @@
 ---
-title: "Option Strict On requires all Function, Property, and Operator declarations to have an &#39;As&#39; clause"
+title: "Option Strict On requires all Function, Property, and Operator declarations to have an &#39;As&#39; clause | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,6 +47,6 @@ A declaration contains a declared property or function return without an `As` cl
 2.  Supply an `As` clause for the declared property or function return, or turn `Option Strict Off`.  
   
 ## See Also  
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)   
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)   
- [Function Procedures](../Topic/Function%20Procedures%20\(Visual%20Basic\).md)
+ [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
+ [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)   
+ [Function Procedures](/dotnet/visual-basic/language-reference/procedures/function-procedures)

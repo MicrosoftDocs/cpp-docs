@@ -1,5 +1,5 @@
 ---
-title: "&#39;System.Runtime.InteropServices.DllImportAttribute&#39; cannot be applied to a Sub, Function, or Operator with a non-empty body"
+title: "&#39;System.Runtime.InteropServices.DllImportAttribute&#39; cannot be applied to a Sub, Function, or Operator with a non-empty body | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -46,4 +46,4 @@ The `DllImportAttribute` attribute was applied to a `Sub`, `Function`, or `Opera
   
 ## See Also  
  <xref:System.Runtime.InteropServices.DllImportAttribute>   
- [Declare Statement](../Topic/Declare%20Statement.md)
+ [Declare Statement](/dotnet/visual-basic/language-reference/statements/declare-statement)

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1643"
+title: "Compiler Error CS1643 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1643"
 ms.assetid: 521f352b-00fb-4d62-89be-44251db3cc5b
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

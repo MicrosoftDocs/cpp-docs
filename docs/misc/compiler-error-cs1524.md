@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1524"
+title: "Compiler Error CS1524 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1524"
 ms.assetid: a7b80bbc-a2de-4718-b0f0-4c9526726525
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -40,7 +41,7 @@ Expected catch or finally
   
  A `try` block must be followed by a `catch` or `finally` block.  
   
- For more information on exceptions, see [Exception Handling Statements](../Topic/Exception%20Handling%20Statements%20\(C%23%20Reference\).md).  
+ For more information on exceptions, see [Exception Handling Statements](/dotnet/csharp/language-reference/keywords/exception-handling-statements).  
   
 ## Example  
  The following sample generates CS1524:  

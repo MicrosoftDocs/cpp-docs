@@ -1,5 +1,5 @@
 ---
-title: "Option Strict On requires each lambda expression parameter to be declared with an &#39;As&#39; clause if its type cannot be inferred"
+title: "Option Strict On requires each lambda expression parameter to be declared with an &#39;As&#39; clause if its type cannot be inferred | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -66,4 +66,4 @@ Dim increment2 as Del = Function(n) n + 1
     ```  
   
 ## See Also  
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md)
+ [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)

@@ -1,7 +1,7 @@
 ---
-title: "-doc (Process Documentation Comments) (C-C++)"
+title: "-doc (Process Documentation Comments) (C-C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -60,7 +60,7 @@ Causes the compiler to process documentation comments in source code files and t
   
  **/doc** is not compatible with **/clr:oldSyntax**.  See [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) for more information.  
   
- To use the generated .xml file with IntelliSense, make the file name of the .xml file the same as the assembly that you want to support and put the .xml file is in the same directory as the assembly. When the assembly is referenced in the Visual Studio project, the .xml file is also found. For more information, see [Using IntelliSense](../Topic/Using%20IntelliSense.md) and [Supplying XML Code Comments](../Topic/Supplying%20XML%20Code%20Comments.md).  
+ To use the generated .xml file with IntelliSense, make the file name of the .xml file the same as the assembly that you want to support and put the .xml file is in the same directory as the assembly. When the assembly is referenced in the Visual Studio project, the .xml file is also found. For more information, see [Using IntelliSense](/visual-studio/ide/using-intellisense) and [Supplying XML Code Comments](/visual-studio/ide/supplying-xml-code-comments).  
   
 ### To set this compiler option in the Visual Studio development environment  
   
@@ -76,7 +76,7 @@ Causes the compiler to process documentation comments in source code files and t
   
 ### To set this linker option programmatically  
   
-1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.GenerateXMLDocumentationFiles*>.  
+1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.GenerateXMLDocumentationFiles%2A>.  
   
 ## See Also  
  [Compiler Options](../../build/reference/compiler-options.md)   

@@ -1,7 +1,7 @@
 ---
-title: "ptr::operator-&gt;"
+title: "ptr::operator-&gt; | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -51,7 +51,7 @@ _detail::smart_com_ptr<_interface_type> operator->();
  A `smart_com_ptr` to the COM object.  
   
 ## Exceptions  
- Internally, `QueryInterface` is called on the owned COM object and any error `HRESULT` is converted to an exception by <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR*>.  
+ Internally, `QueryInterface` is called on the owned COM object and any error `HRESULT` is converted to an exception by <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>.  
   
 ## Remarks  
  This operator allows you to call methods of the owned COM object. It returns a temporary `smart_com_ptr` that automatically handles its own `AddRef` and `Release`.  

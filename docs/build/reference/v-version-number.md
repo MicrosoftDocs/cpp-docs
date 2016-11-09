@@ -1,7 +1,7 @@
 ---
-title: "-V (Version Number)"
+title: "-V (Version Number) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -71,7 +71,7 @@ Embeds a text stringin the .obj file. Deprecated.
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
   
 ## See Also  
  [Compiler Options](../../build/reference/compiler-options.md)   

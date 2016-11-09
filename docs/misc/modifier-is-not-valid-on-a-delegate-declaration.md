@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;modifier&gt;&#39; is not valid on a Delegate declaration"
+title: "&#39;&lt;modifier&gt;&#39; is not valid on a Delegate declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ You attempted to use a modifier, such as `Shared`, on a delegate declaration. De
 1.  Remove the modifier.  
   
 ## See Also  
- [Delegate Statement](../Topic/Delegate%20Statement.md)   
+ [Delegate Statement](/dotnet/visual-basic/language-reference/statements/delegate-statement)   
  [How to: Invoke a Delegate Method](../Topic/How%20to:%20Invoke%20a%20Delegate%20Method%20\(Visual%20Basic\).md)

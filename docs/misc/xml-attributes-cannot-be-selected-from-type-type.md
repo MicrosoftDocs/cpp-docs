@@ -1,5 +1,5 @@
 ---
-title: "XML attributes cannot be selected from type &#39;type&#39;"
+title: "XML attributes cannot be selected from type &#39;type&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # XML attributes cannot be selected from type &#39;type&#39;
-An XML attribute has been referenced for an object that is not of type <xref:System.Xml.Linq.XElement> or `IEnumerable(Of XElement)`. For more information, see [XML Attribute Axis Property](../Topic/XML%20Attribute%20Axis%20Property%20\(Visual%20Basic\).md).  
+An XML attribute has been referenced for an object that is not of type <xref:System.Xml.Linq.XElement> or `IEnumerable(Of XElement)`. For more information, see [XML Attribute Axis Property](/dotnet/visual-basic/language-reference/xml-axis/xml-attribute-axis-property).  
   
 ```vb#  
 ' Generates an error.  
@@ -55,6 +55,6 @@ Dim var = "sample text".@attr
     ```  
   
 ## See Also  
- [XML Attribute Axis Property](../Topic/XML%20Attribute%20Axis%20Property%20\(Visual%20Basic\).md)   
- [XML Axis Properties](../Topic/XML%20Axis%20Properties%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [XML Attribute Axis Property](/dotnet/visual-basic/language-reference/xml-axis/xml-attribute-axis-property)   
+ [XML Axis Properties](/dotnet/visual-basic/language-reference/xml-axis/xml-axis-properties)   
+ [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)

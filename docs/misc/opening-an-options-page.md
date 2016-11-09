@@ -1,7 +1,7 @@
 ---
-title: "Opening an Options Page"
+title: "Opening an Options Page | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -37,11 +37,11 @@ You can display an options page programmatically so that users of your package c
   
 ### To display a custom options page  
   
-1.  Create an options page. For more information, see [Creating Options Pages](../Topic/Creating%20Options%20Pages.md).  
+1.  Create an options page. For more information, see [Creating Options Pages](/visual-studio/extensibility/internals/creating-options-pages).  
   
 2.  Get the <xref:System.Type> of the options page by applying the `typeof` keyword to the name of the class that defines the options page.  
   
-3.  Call the <xref:Microsoft.VisualStudio.Shell.Package.ShowOptionPage*> method by using the <xref:System.Type> of the options page as a parameter.  
+3.  Call the <xref:Microsoft.VisualStudio.Shell.Package.ShowOptionPage%2A> method by using the <xref:System.Type> of the options page as a parameter.  
   
      The following example displays an options page named **HelloWorldOptions**.  
   
@@ -56,7 +56,7 @@ You can display an options page programmatically so that users of your package c
   
      This specifies the **Options** dialog box.  
   
-3.  Call the <xref:System.ComponentModel.Design.MenuCommandService.GlobalInvoke*> method by using the <xref:System.ComponentModel.Design.CommandID> instance and the GUID string as parameters.  
+3.  Call the <xref:System.ComponentModel.Design.MenuCommandService.GlobalInvoke%2A> method by using the <xref:System.ComponentModel.Design.CommandID> instance and the GUID string as parameters.  
   
      The following example displays the **General** tab of the **Text Editor** options page.  
   

@@ -1,7 +1,7 @@
 ---
-title: "How to: Use the Animation Region of the Status Bar"
+title: "How to: Use the Animation Region of the Status Bar | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -39,9 +39,9 @@ The Animation region of the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_
   
 1.  Obtain an instance of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> interface, which is made available through the <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> service.  
   
-2.  Start the animation by calling the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar.Animation*> method of the status bar. Pass in 1 as the value of the first parameter, and a reference to an animated icon as the value of the second parameter.  
+2.  Start the animation by calling the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar.Animation%2A> method of the status bar. Pass in 1 as the value of the first parameter, and a reference to an animated icon as the value of the second parameter.  
   
-3.  Stop the animation by calling the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar.Animation*> method of the status bar. Pass in 0 as the value of the first parameter, and a reference to the animated icon as the value of the second parameter.  
+3.  Stop the animation by calling the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar.Animation%2A> method of the status bar. Pass in 0 as the value of the first parameter, and a reference to the animated icon as the value of the second parameter.  
   
 ## Example  
  This example demonstrates how to run a built-in animation in the Animation region.  
@@ -50,7 +50,7 @@ The Animation region of the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_
  [!code-vb[VSSDKAnimationStatusBar#1](../misc/codesnippet/VisualBasic/how-to-use-the-animation-region-of-the-status-bar_1.vb)]  
   
 ## See Also  
- [Extending the Status Bar](../Topic/Extending%20the%20Status%20Bar.md)   
+ [Extending the Status Bar](/visual-studio/extensibility/extending-the-status-bar)   
  [How to: Read from and Write to the Feedback Region of the Status Bar](../misc/how-to-read-from-and-write-to-the-feedback-region-of-the-status-bar.md)   
  [How to: Program the Progress Bar Region of the Status Bar](../misc/how-to-program-the-progress-bar-region-of-the-status-bar.md)   
  [How to: Program the Designer Region of the Status Bar](../misc/how-to-program-the-designer-region-of-the-status-bar.md)

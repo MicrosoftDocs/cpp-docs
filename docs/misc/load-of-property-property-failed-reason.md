@@ -1,7 +1,7 @@
 ---
-title: "Load of property &#39;property&#39; failed. &lt;reason&gt;"
+title: "Load of property &#39;property&#39; failed. &lt;reason&gt; | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

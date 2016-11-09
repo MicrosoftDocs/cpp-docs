@@ -1,5 +1,5 @@
 ---
-title: "Operator &#39;&lt;operator&gt;&#39; must have a second parameter of type &#39;Integer&#39;"
+title: "Operator &#39;&lt;operator&gt;&#39; must have a second parameter of type &#39;Integer&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,8 +47,8 @@ A bit-shift operator is declared with the second parameter of a type other than 
 -   Change the definition of the bit-shift operator to return an `Integer` value.  
   
 ## See Also  
- [Operator Procedures](../Topic/Operator%20Procedures%20\(Visual%20Basic\).md)   
- [Operator Statement](../Topic/Operator%20Statement.md)   
+ [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
+ [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)   
  [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
  [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)   
- [Bit Shift Operators](../Topic/Bit%20Shift%20Operators%20\(Visual%20Basic\).md)
+ [Bit Shift Operators](/dotnet/visual-basic/language-reference/operators/bit-shift-operators)

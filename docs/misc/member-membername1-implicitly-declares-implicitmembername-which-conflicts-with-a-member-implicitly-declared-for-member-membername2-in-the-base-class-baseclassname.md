@@ -1,5 +1,5 @@
 ---
-title: "Member &#39;&lt;membername1&gt;&#39; implicitly declares &#39;&lt;implicitmembername&gt;&#39;, which conflicts with a member implicitly declared for member &#39;&lt;membername2&gt;&#39; in the base class &#39;&lt;baseclassname&gt;&#39;"
+title: "Member &#39;&lt;membername1&gt;&#39; implicitly declares &#39;&lt;implicitmembername&gt;&#39;, which conflicts with a member implicitly declared for member &#39;&lt;membername2&gt;&#39; in the base class &#39;&lt;baseclassname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Member &#39;&lt;membername1&gt;&#39; implicitly declares &#39;&lt;implicitmembername&gt;&#39;, which conflicts with a member implicitly declared for member &#39;&lt;membername2&gt;&#39; in the base class &#39;&lt;baseclassname&gt;&#39;
 Member '\<membername1>' implicitly declares '\<implicitmembername>', which conflicts with a member implicitly declared for member '\<membername2>' in the base class '\<baseclassname>'. So the member should be declared 'Shadows'.  
   
- A member of a derived class generates an implicit member with the same name as an implicit member of the base class. Because implicit members do not specify [Overloads](../Topic/Overloads%20\(Visual%20Basic\).md), the compiler assumes that this member [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md) the implicit base class member. Your code is more readable, and less prone to error, if you explicitly specify the `Shadows` keyword for this member.  
+ A member of a derived class generates an implicit member with the same name as an implicit member of the base class. Because implicit members do not specify [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads), the compiler assumes that this member [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows) the implicit base class member. Your code is more readable, and less prone to error, if you explicitly specify the `Shadows` keyword for this member.  
   
  The [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] compiler creates implicit members corresponding to certain programming elements you declare. The following table summarizes these implicit, or *synthetic*, members.  
   
@@ -52,15 +52,15 @@ Member '\<membername1>' implicitly declares '\<implicitmembername>', which confl
   
  Because of the risk of name conflicts, you should avoid naming any declared programming element using the same form as any one of these implicit members. For example, you should avoid any element name that starts with `get_` or `set_`.  
   
- By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40018  
   
 ### To correct this error  
   
--   If you intend to hide, or shadow, the implicit base class member, include the [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md) keyword in the declaration of the derived class member.  
+-   If you intend to hide, or shadow, the implicit base class member, include the [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows) keyword in the declaration of the derived class member.  
   
 -   If you do not intend to shadow the implicit base class member, change the name of the derived class member to avoid conflicts with names listed in the previous table.  
   
 ## See Also  
- [Declared Element Names](../Topic/Declared%20Element%20Names%20\(Visual%20Basic\).md)
+ [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)

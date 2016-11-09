@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0316"
+title: "Compiler Error CS0316 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0316"
 ms.assetid: 8b70abbe-dd4f-473f-8dfe-f8309abef276
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -61,5 +62,5 @@ public class Test
 ```  
   
 ## See Also  
- [Indexers](../Topic/Indexers%20\(C%23%20Programming%20Guide\).md)   
- [C# Keywords](../Topic/C%23%20Keywords.md)
+ [Indexers](/dotnet/csharp/programming-guide/indexers/index)   
+ [C# Keywords](/dotnet/csharp/language-reference/keywords/index)

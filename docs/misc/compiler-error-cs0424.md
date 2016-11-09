@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0424"
+title: "Compiler Error CS0424 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0424"
 ms.assetid: 09ae482c-255a-4f99-8dc8-ba31c3ea8c71
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

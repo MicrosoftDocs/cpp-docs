@@ -1,7 +1,7 @@
 ---
-title: "CComPtr Class"
+title: "CComPtr Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComPtr class"
 ms.assetid: 22d9ea8d-ed66-4c34-940f-141db11e83bd
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -54,13 +54,13 @@ template<class T>  class CComPtr
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComPtr::CComPtr](../Topic/CComPtr::CComPtr.md)|The constructor.|  
+|[CComPtr::CComPtr](#ccomptr__ccomptr)|The constructor.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComPtr::operator =](../Topic/CComPtr::operator%20=.md)|Assigns a pointer to the member pointer.|  
+|[CComPtr::operator =](#ccomptr__operator__eq)|Assigns a pointer to the member pointer.|  
   
 ## Remarks  
  ATL uses `CComPtr` and [CComQIPtr](../../atl/reference/ccomqiptr-class.md) to manage COM interface pointers. Both are derived from [CComPtrBase](../../atl/reference/ccomptrbase-class.md), and both perform automatic reference counting.  
@@ -113,13 +113,6 @@ T* operator= (const CComPtr<T>& lp) throw ();
  This operation AddRefs the new object and releases the existing object, if one exists.  
   
 ## See Also  
- [CComPtr::CComPtr](../Topic/CComPtr::CComPtr.md)   
- [CComQIPtr::CComQIPtr](../Topic/CComQIPtr::CComQIPtr.md)   
+ [CComPtr::CComPtr](#ccomptr__ccomptr)   
+ [CComQIPtr::CComQIPtr](../../atl/reference/ccomqiptr-class.md#ccomqiptr__ccomqiptr)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

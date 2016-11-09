@@ -1,7 +1,7 @@
 ---
-title: "CHeapPtrElementTraits Class"
+title: "CHeapPtrElementTraits Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CHeapPtrElementTraits class"
 ms.assetid: 910e0e06-3c8b-4242-bf00-b57eb74fbc77
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -64,8 +64,8 @@ template<typename T, class Allocator = ATL::CCRTAllocator>  class CHeapPtrElemen
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHeapPtrElementTraits::INARGTYPE](../Topic/CHeapPtrElementTraits::INARGTYPE.md)|The data type to use for adding elements to the collection class object.|  
-|[CHeapPtrElementTraits::OUTARGTYPE](../Topic/CHeapPtrElementTraits::OUTARGTYPE.md)|The data type to use for retrieving elements from the collection class object.|  
+|[CHeapPtrElementTraits::INARGTYPE](#cheapptrelementtraits__inargtype)|The data type to use for adding elements to the collection class object.|  
+|[CHeapPtrElementTraits::OUTARGTYPE](#cheapptrelementtraits__outargtype)|The data type to use for retrieving elements from the collection class object.|  
   
 ## Remarks  
  This class provides methods, static functions, and typedefs for aiding the creation of collection class objects containing heap pointers. The class `CHeapPtrList` derives from `CHeapPtrElementTraits`.  
@@ -105,10 +105,3 @@ typedef T *& OUTARGTYPE;
  [CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)   
  [CComHeapPtr Class](../../atl/reference/ccomheapptr-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

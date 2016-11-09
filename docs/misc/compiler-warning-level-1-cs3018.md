@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS3018"
+title: "Compiler Warning (level 1) CS3018 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS3018"
 ms.assetid: 35d2f4bd-10c3-4e9f-8e02-389ab84db2cd
 caps.latest.revision: 11
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

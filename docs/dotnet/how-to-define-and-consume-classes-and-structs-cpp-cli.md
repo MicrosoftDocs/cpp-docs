@@ -1,7 +1,7 @@
 ---
-title: "How to: Define and Consume Classes and Structs (C++-CLI)"
+title: "How to: Define and Consume Classes and Structs (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -801,9 +801,9 @@ class classname {
   
  The CLR garbage collector deletes unused managed objects and releases their memory when they are no longer required. However, a type may use resources that the garbage collector does not know how to release. These resources are known as unmanaged resources (native file handles, for example). We recommend that you release all unmanaged resources in the finalizer. Because managed resources are released nondeterministically by the garbage collector, it's not safe to refer to managed resources in a finalizer because it's possible that the garbage collector has already cleaned up that managed resource.  
   
- A Visual C++ finalizer is not the same as the <xref:System.Object.Finalize*> method. (CLR documentation uses finalizer and the <xref:System.Object.Finalize*> method synonymously). The <xref:System.Object.Finalize*> method is called by the garbage collector, which invokes each finalizer in a class inheritance chain. Unlike Visual C++ destructors, a derived-class finalizer call does not cause the compiler to invoke the finalizer in all base classes.  
+ A Visual C++ finalizer is not the same as the <xref:System.Object.Finalize%2A> method. (CLR documentation uses finalizer and the <xref:System.Object.Finalize%2A> method synonymously). The <xref:System.Object.Finalize%2A> method is called by the garbage collector, which invokes each finalizer in a class inheritance chain. Unlike Visual C++ destructors, a derived-class finalizer call does not cause the compiler to invoke the finalizer in all base classes.  
   
- Because the Visual C++ compiler supports deterministic release of resources, don't try to implement the <xref:System.IDisposable.Dispose*> or <xref:System.Object.Finalize*> methods. However, if you're familiar with these methods, here's how a Visual C++ finalizer and a destructor that calls the finalizer map to the <xref:System.IDisposable.Dispose*> pattern:  
+ Because the Visual C++ compiler supports deterministic release of resources, don't try to implement the <xref:System.IDisposable.Dispose%2A> or <xref:System.Object.Finalize%2A> methods. However, if you're familiar with these methods, here's how a Visual C++ finalizer and a destructor that calls the finalizer map to the <xref:System.IDisposable.Dispose%2A> pattern:  
   
 ```  
 // Visual C++ code  
@@ -853,7 +853,7 @@ ref struct A {
   
  The presence of a destructor does not imply the presence of a finalizer. However, the presence of a finalizer implies that you must define a destructor and call the finalizer from that destructor. This provides for the deterministic release of unmanaged resources.  
   
- Calling the destructor suppresses—by using <xref:System.GC.SuppressFinalize*>—finalization of the object. If the destructor is not called, your type's finalizer will eventually be called by the garbage collector.  
+ Calling the destructor suppresses—by using <xref:System.GC.SuppressFinalize%2A>—finalization of the object. If the destructor is not called, your type's finalizer will eventually be called by the garbage collector.  
   
  Deterministically cleaning up your object's resources by calling the destructor can improve performance compared with letting the CLR nondeterministically finalize the object.  
   
@@ -871,7 +871,7 @@ ref struct A {
   
  If your type is being consumed by a client that's written in another language, the destructor is called as follows:  
   
--   On a call to <xref:System.IDisposable.Dispose*>.  
+-   On a call to <xref:System.IDisposable.Dispose%2A>.  
   
 -   On a call to `Dispose(void)` on the type.  
   
@@ -899,7 +899,7 @@ int main() {
   
  If your type has a destructor, the compiler generates a `Dispose` method that implements <xref:System.IDisposable>. If a type that's written in Visual C++ and has a destructor that's consumed from another language, calling `IDisposable::Dispose` on that type causes the type's destructor to be called. When the type is consumed from a Visual C++ client, you can't directly call `Dispose`; instead, call the destructor by using the `delete` operator.  
   
- If your type has a finalizer, the compiler generates a `Finalize(void)` method that overrides <xref:System.Object.Finalize*>.  
+ If your type has a finalizer, the compiler generates a `Finalize(void)` method that overrides <xref:System.Object.Finalize%2A>.  
   
  If a type has either a finalizer or a destructor, the compiler generates a `Dispose(bool)` method, according to the design pattern. (For information, see [Dispose Pattern](../Topic/Dispose%20Pattern.md)). You cannot explicitly author or call `Dispose(bool)` in Visual C++.  
   
@@ -911,7 +911,7 @@ int main() {
   
  After an object's finalizer runs, finalizers in any base classes are also called, beginning with the least derived type. Finalizers for data members are not automatically chained to by a class’s finalizer.  
   
- If a finalizer deletes a native pointer in a managed type, you must ensure that references to or through the native pointer are not prematurely collected; call the destructor on the managed type instead of using <xref:System.GC.KeepAlive*>.  
+ If a finalizer deletes a native pointer in a managed type, you must ensure that references to or through the native pointer are not prematurely collected; call the destructor on the managed type instead of using <xref:System.GC.KeepAlive%2A>.  
   
  At compile time, you can detect whether a type has a finalizer or a destructor. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   

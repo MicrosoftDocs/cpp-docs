@@ -1,5 +1,5 @@
 ---
-title: "&#39;System.Runtime.InteropServices.DllImportAttribute&#39; cannot be applied to a &#39;Get&#39; or &#39;Set&#39;"
+title: "&#39;System.Runtime.InteropServices.DllImportAttribute&#39; cannot be applied to a &#39;Get&#39; or &#39;Set&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -46,4 +46,4 @@ The `DllImportAttribute` attribute was applied to a `Get` or `Set` property proc
   
 ## See Also  
  <xref:System.Runtime.InteropServices.DllImportAttribute>   
- [Property Procedures](../Topic/Property%20Procedures%20\(Visual%20Basic\).md)
+ [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)

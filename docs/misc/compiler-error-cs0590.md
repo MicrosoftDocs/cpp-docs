@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0590"
+title: "Compiler Error CS0590 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0590"
 ms.assetid: 6df9461f-2de6-4032-b18f-96121db1e4af
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

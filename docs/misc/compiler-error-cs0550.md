@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0550"
+title: "Compiler Error CS0550 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0550"
 ms.assetid: 57278c17-443c-40f2-9ebd-853558743564
 caps.latest.revision: 9
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -40,7 +41,7 @@ translation.priority.mt:
   
  The implementation of a property in a derived class contains an accessor that was not specified in the base interface.  
   
- For more information, see [Using Properties](../Topic/Using%20Properties%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see [Using Properties](/dotnet/csharp/programming-guide/classes-and-structs/using-properties).  
   
 ## Example  
  The following sample generates CS0550.  

@@ -1,5 +1,5 @@
 ---
-title: "&#39;Throw&#39; statements are not valid in the Immediate window"
+title: "&#39;Throw&#39; statements are not valid in the Immediate window | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ translation.priority.mt:
 -   Remove `Throw` statements from debugging code.  
   
 ## See Also  
- [Throw Statement](../Topic/Throw%20Statement%20\(Visual%20Basic\).md)   
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Throw Statement](/dotnet/visual-basic/language-reference/statements/throw-statement)   
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)

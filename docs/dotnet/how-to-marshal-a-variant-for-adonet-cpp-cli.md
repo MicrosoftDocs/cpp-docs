@@ -1,7 +1,7 @@
 ---
-title: "How to: Marshal a VARIANT for ADO.NET (C++-CLI)"
+title: "How to: Marshal a VARIANT for ADO.NET (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -43,7 +43,7 @@ Demonstrates how to add a native `VARIANT` to a database and how to marshal a <x
   
  Note the private member of the DatabaseClass class: `gcroot<DataTable ^> table`. Since native types cannot contain managed types, the `gcroot` keyword is necessary. For more information on `gcroot`, see [How to: Declare Handles in Native Types](../dotnet/how-to-declare-handles-in-native-types.md).  
   
- The rest of the code in this example is native C++ code, as is indicated by the `#pragma unmanaged` directive preceding `main`. In this example, we are creating a new instance of DatabaseClass and calling its methods to create a table and populate some rows in the table. Note that native `VARIANT` types are being passed as values for the database column ObjectCol. Inside DatabaseClass, these `VARIANT` types are marshaled to managed objects using the marshaling functionality found in the <xref:System.Runtime.InteropServices?displayProperty=fullName> namespace. Specifically, the method <xref:System.Runtime.InteropServices.Marshal.GetObjectForNativeVariant*> is used to marshal a `VARIANT` to an <xref:System.Object>, and the method <xref:System.Runtime.InteropServices.Marshal.GetNativeVariantForObject*> is used to marshal an <xref:System.Object> to a `VARIANT`.  
+ The rest of the code in this example is native C++ code, as is indicated by the `#pragma unmanaged` directive preceding `main`. In this example, we are creating a new instance of DatabaseClass and calling its methods to create a table and populate some rows in the table. Note that native `VARIANT` types are being passed as values for the database column ObjectCol. Inside DatabaseClass, these `VARIANT` types are marshaled to managed objects using the marshaling functionality found in the <xref:System.Runtime.InteropServices?displayProperty=fullName> namespace. Specifically, the method <xref:System.Runtime.InteropServices.Marshal.GetObjectForNativeVariant%2A> is used to marshal a `VARIANT` to an <xref:System.Object>, and the method <xref:System.Runtime.InteropServices.Marshal.GetNativeVariantForObject%2A> is used to marshal an <xref:System.Object> to a `VARIANT`.  
   
 ```  
 // adonet_marshal_variant.cpp  

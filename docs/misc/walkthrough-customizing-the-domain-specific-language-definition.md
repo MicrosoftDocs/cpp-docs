@@ -1,7 +1,7 @@
 ---
-title: "Walkthrough: Customizing the Domain-Specific Language Definition"
+title: "Walkthrough: Customizing the Domain-Specific Language Definition | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -29,4 +29,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Walkthrough: Customizing the Domain-Specific Language Definition
-This content is obsolete. Please see [Customizing and Extending a Domain-Specific Language](../Topic/Customizing%20and%20Extending%20a%20Domain-Specific%20Language.md).
+This content is obsolete. Please see [Customizing and Extending a Domain-Specific Language](/visual-studio/modeling/customizing-and-extending-a-domain-specific-language).

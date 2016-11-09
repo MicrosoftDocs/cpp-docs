@@ -1,5 +1,5 @@
 ---
-title: "The default assembly reference &#39;&lt;reference&gt;&#39; has already been automatically added; ignored"
+title: "The default assembly reference &#39;&lt;reference&gt;&#39; has already been automatically added; ignored | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

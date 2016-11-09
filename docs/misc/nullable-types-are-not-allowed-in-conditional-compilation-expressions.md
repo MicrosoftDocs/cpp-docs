@@ -1,5 +1,5 @@
 ---
-title: "Nullable types are not allowed in conditional compilation expressions"
+title: "Nullable types are not allowed in conditional compilation expressions | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -54,6 +54,6 @@ A nullable type cannot be used in the expression of a conditional compilation di
 -   Remove the nullable type designation.  
   
 ## See Also  
- [Nullable Value Types](../Topic/Nullable%20Value%20Types%20\(Visual%20Basic\).md)   
- [#If...Then...#Else Directives](../Topic/%23If...Then...%23Else%20Directives.md)   
- [Conditional Compilation](../Topic/Conditional%20Compilation%20in%20Visual%20Basic.md)
+ [Nullable Value Types](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)   
+ [#If...Then...#Else Directives](/dotnet/visual-basic/language-reference/directives/if-then-else-directives)   
+ [Conditional Compilation](/dotnet/visual-basic/programming-guide/program-structure/conditional-compilation)

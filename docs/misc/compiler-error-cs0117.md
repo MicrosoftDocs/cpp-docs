@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0117"
+title: "Compiler Error CS0117 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0117"
 ms.assetid: 2cbc7e66-75d6-4817-85ae-89c4b9adfded
 caps.latest.revision: 15
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

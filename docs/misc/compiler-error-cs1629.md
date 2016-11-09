@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1629"
+title: "Compiler Error CS1629 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1629"
 ms.assetid: 907eae46-0265-4cd0-b27b-ff555d004259
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0406"
+title: "Compiler Error CS0406 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0406"
 ms.assetid: 9d69681c-e261-4e5e-9361-ea566de12f2e
 caps.latest.revision: 9
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

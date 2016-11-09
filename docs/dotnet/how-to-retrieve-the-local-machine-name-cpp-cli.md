@@ -1,7 +1,7 @@
 ---
-title: "How to: Retrieve the Local Machine Name (C++-CLI)"
+title: "How to: Retrieve the Local Machine Name (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Retrieve the Local Machine Name (C++/CLI)
-The following code example demonstrates the retrieval of the local machine name (the name of the computer as it appears on a network). You can accomplish this by getting the <xref:System.Environment.MachineName*> string, which is defined in the <xref:System.Environment> namespace.  
+The following code example demonstrates the retrieval of the local machine name (the name of the computer as it appears on a network). You can accomplish this by getting the <xref:System.Environment.MachineName%2A> string, which is defined in the <xref:System.Environment> namespace.  
   
 ## Example  
   

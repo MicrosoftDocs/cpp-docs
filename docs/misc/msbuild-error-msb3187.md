@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB3187"
+title: "MSBuild Error MSB3187 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -44,5 +44,5 @@ translation.priority.mt:
 -   Make sure that the application's target platform (processor architecture) matches all referenced assemblies and the entry point assembly architecture.  
   
 ## See Also  
- [Advanced Compiler Settings Dialog Box (Visual Basic)](../Topic/Advanced%20Compiler%20Settings%20Dialog%20Box%20\(Visual%20Basic\).md)   
- [Build Page, Project Designer (C#)](../Topic/Build%20Page,%20Project%20Designer%20\(C%23\).md)
+ [Advanced Compiler Settings Dialog Box (Visual Basic)](/visual-studio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic)   
+ [Build Page, Project Designer (C#)](/visual-studio/ide/reference/build-page-project-designer-csharp)

@@ -1,5 +1,5 @@
 ---
-title: "&#39;GoTo &lt;labelname&gt;&#39; is not valid because &#39;&lt;labelname&gt;&#39; is inside a &#39;For&#39; or &#39;For Each&#39; statement that does not contain this statement"
+title: "&#39;GoTo &lt;labelname&gt;&#39; is not valid because &#39;&lt;labelname&gt;&#39; is inside a &#39;For&#39; or &#39;For Each&#39; statement that does not contain this statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ translation.priority.mt:
 -   Restructure your code so that the `GoTo` statement and the label are both inside the `For` block.  
   
 ## See Also  
- [GoTo Statement](../Topic/GoTo%20Statement.md)   
+ [GoTo Statement](/dotnet/visual-basic/language-reference/statements/goto-statement)   
  [For (Visual Basic)](http://msdn.microsoft.com/en-us/c470a263-9b49-4308-8fd6-8592b84a7980)

@@ -1,7 +1,7 @@
 ---
-title: "CAtlBaseModule Class"
+title: "CAtlBaseModule Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CAtlBaseModule class"
 ms.assetid: 55ade80c-9b0c-4c51-933e-2158436c1096
-caps.latest.revision: 17
+caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -53,24 +53,24 @@ class CAtlBaseModule :
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlBaseModule::CAtlBaseModule](../Topic/CAtlBaseModule::CAtlBaseModule.md)|The constructor.|  
+|[CAtlBaseModule::CAtlBaseModule](#catlbasemodule__catlbasemodule)|The constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlBaseModule::AddResourceInstance](../Topic/CAtlBaseModule::AddResourceInstance.md)|Adds a resource instance to the list of stored handles.|  
-|[CAtlBaseModule::GetHInstanceAt](../Topic/CAtlBaseModule::GetHInstanceAt.md)|Returns a handle to a specified resource instance.|  
-|[CAtlBaseModule::GetModuleInstance](../Topic/CAtlBaseModule::GetModuleInstance.md)|Returns the module instance from a `CAtlBaseModule` object.|  
-|[CAtlBaseModule::GetResourceInstance](../Topic/CAtlBaseModule::GetResourceInstance.md)|Returns the resource instance from a `CAtlBaseModule` object.|  
-|[CAtlBaseModule::RemoveResourceInstance](../Topic/CAtlBaseModule::RemoveResourceInstance.md)|Removes a resource instance from the list of stored handles.|  
-|[CAtlBaseModule::SetResourceInstance](../Topic/CAtlBaseModule::SetResourceInstance.md)|Sets the resource instance of a `CAtlBaseModule` object.|  
+|[CAtlBaseModule::AddResourceInstance](#catlbasemodule__addresourceinstance)|Adds a resource instance to the list of stored handles.|  
+|[CAtlBaseModule::GetHInstanceAt](#catlbasemodule__gethinstanceat)|Returns a handle to a specified resource instance.|  
+|[CAtlBaseModule::GetModuleInstance](#catlbasemodule__getmoduleinstance)|Returns the module instance from a `CAtlBaseModule` object.|  
+|[CAtlBaseModule::GetResourceInstance](#catlbasemodule__getresourceinstance)|Returns the resource instance from a `CAtlBaseModule` object.|  
+|[CAtlBaseModule::RemoveResourceInstance](#catlbasemodule__removeresourceinstance)|Removes a resource instance from the list of stored handles.|  
+|[CAtlBaseModule::SetResourceInstance](#catlbasemodule__setresourceinstance)|Sets the resource instance of a `CAtlBaseModule` object.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlBaseModule::m_bInitFailed](../Topic/CAtlBaseModule::m_bInitFailed.md)|A variable that indicates if the module initialization has failed.|  
+|[CAtlBaseModule::m_bInitFailed](#catlbasemodule__m_binitfailed)|A variable that indicates if the module initialization has failed.|  
   
 ## Remarks  
  An instance of `CAtlBaseModule` named _AtlBaseModule is present in every ATL project, containing a handle to the module instance, a handle to the module containing resources (which by default, are one and the same), and an array of handles to modules providing primary resources. `CAtlBaseModule` can be safely accessed from multiple threads.  
@@ -184,10 +184,3 @@ HINSTANCE SetResourceInstance(HINSTANCE   hInst) throw();
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)   
  [Module Classes](../../atl/atl-module-classes.md)
-
-
-
-
-
-
-

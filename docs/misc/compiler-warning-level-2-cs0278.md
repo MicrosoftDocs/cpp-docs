@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 2) CS0278"
+title: "Compiler Warning (level 2) CS0278 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0278"
 ms.assetid: 5418cbbe-bcec-4379-a6f6-410987beb96a
 caps.latest.revision: 10
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

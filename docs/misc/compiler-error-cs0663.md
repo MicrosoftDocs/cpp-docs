@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0663"
+title: "Compiler Error CS0663 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0663"
 ms.assetid: 9f96c42b-dcc8-4a0f-8404-289fc88dba5e
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0663
 Cannot define overloaded methods that differ only on ref and out.  
   
- Methods that differ only on their use of [ref](../Topic/ref%20\(C%23%20Reference\).md) and [out](../Topic/out%20\(C%23%20Reference\).md) on a parameter are not allowed.  
+ Methods that differ only on their use of [ref](/dotnet/csharp/language-reference/keywords/ref) and [out](/dotnet/csharp/language-reference/keywords/out) on a parameter are not allowed.  
   
  The following sample generates CS0663:  
   

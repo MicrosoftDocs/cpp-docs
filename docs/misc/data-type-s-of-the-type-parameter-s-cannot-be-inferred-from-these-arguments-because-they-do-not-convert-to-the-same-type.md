@@ -1,5 +1,5 @@
 ---
-title: "Data type(s) of the type parameter(s) cannot be inferred from these arguments because they do not convert to the same type"
+title: "Data type(s) of the type parameter(s) cannot be inferred from these arguments because they do not convert to the same type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -51,6 +51,6 @@ Data type(s) of the type parameter(s) cannot be inferred from these arguments be
  **Error ID:** BC36659 and BC36656  
   
 ## See Also  
- [Relaxed Delegate Conversion](../Topic/Relaxed%20Delegate%20Conversion%20\(Visual%20Basic\).md)   
- [Generic Procedures in Visual Basic](../Topic/Generic%20Procedures%20in%20Visual%20Basic.md)   
- [Overload Resolution](../Topic/Overload%20Resolution%20\(Visual%20Basic\).md)
+ [Relaxed Delegate Conversion](/dotnet/visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion)   
+ [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures)   
+ [Overload Resolution](/dotnet/visual-basic/language-reference/procedures/overload-resolution)

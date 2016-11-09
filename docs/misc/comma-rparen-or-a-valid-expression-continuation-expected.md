@@ -1,5 +1,5 @@
 ---
-title: "Comma, &#39;)&#39;, or a valid expression continuation expected"
+title: "Comma, &#39;)&#39;, or a valid expression continuation expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ A list, such as an argument list in a procedure definition or a procedure call, 
 -   Use a comma (,) to separate list members and a closing parentheses ()) to terminate the list.  
   
 ## See Also  
- [Sub Procedures](../Topic/Sub%20Procedures%20\(Visual%20Basic\).md)   
- [Function Procedures](../Topic/Function%20Procedures%20\(Visual%20Basic\).md)
+ [Sub Procedures](/dotnet/visual-basic/language-reference/procedures/sub-procedures)   
+ [Function Procedures](/dotnet/visual-basic/language-reference/procedures/function-procedures)

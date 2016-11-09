@@ -1,7 +1,7 @@
 ---
-title: "What&#39;s New for Visual C++ in Visual Studio 2015"
+title: "What&#39;s New for Visual C++ in Visual Studio 2015 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -34,12 +34,12 @@ translation.priority.ht:
 # What&#39;s New for Visual C++ in Visual Studio 2015
 In Visual Studio 2015, the C++ compiler and standard library have been updated with enhanced support for C++11 and initial support for certain C++14 features. They also include preliminary support for certain features expected to be in the C++17 standard.  
   
- We have also added project templates for cross-platform multi-device development on [Android and iOS](../Topic/Visual%20C++%20for%20Cross-Platform%20Mobile%20Development.md), made various [diagnostic](#BK_Diagnostics) and [productivity](#BK_IDE) improvements, and significantly improved [build times](#BK_FasterBuildTimes).  
+ We have also added project templates for cross-platform multi-device development on [Android and iOS](/visual-studio/cross-platform/visual-cpp-for-cross-platform-mobile-development), made various [diagnostic](#BK_Diagnostics) and [productivity](#BK_IDE) improvements, and significantly improved [build times](#BK_FasterBuildTimes).  
   
 > [!WARNING]
 >  In Visual Studio 2015, Visual C++ is not installed by default. When installing, be sure to choose **Custom** installation and then choose the C++ components you require. Or, if Visual Studio is already installed, choose **File &#124; New &#124; Project &#124; C++** and you will be prompted to install the necessary components.  
   
- For information about other additions in Visual Studio 2015, see [What's New in Visual Studio 2015](../Topic/What's%20New%20in%20Visual%20Studio%202015.md).  
+ For information about other additions in Visual Studio 2015, see [What's New in Visual Studio 2015](/visual-studio/ide/what-s-new-in-visual-studio-2015).  
   
  In this topic:  
   
@@ -271,14 +271,14 @@ In Visual Studio 2015, the C++ compiler and standard library have been updated w
   
 -   Command line tool for capturing and playing back frames.  
   
- For more information, see [Graphics Diagnostics (Debugging DirectX Graphics)](../Topic/Visual%20Studio%20Graphics%20Diagnostics.md).  
+ For more information, see [Graphics Diagnostics (Debugging DirectX Graphics)](/visual-studio/debugger/visual-studio-graphics-diagnostics).  
   
 ##  <a name="BK_GPUUsage"></a> New GPU Usage tool  
- The GPU Usage tool in Visual Studio 2015 can be used to understand GPU usage of DirectX applications. Frame Time, Frame Rate, and GPU Utilization graphs are available while the applications are running live. In addition, by collecting and analyzing detailed GPU usage data, this tool can provide insights into the CPU and GPU execution time of individual DirectX events, and therefore can be useful to determine whether the CPU or GPU is the performance bottleneck. See [GPU Usage](../Topic/GPU%20Usage.md).  
+ The GPU Usage tool in Visual Studio 2015 can be used to understand GPU usage of DirectX applications. Frame Time, Frame Rate, and GPU Utilization graphs are available while the applications are running live. In addition, by collecting and analyzing detailed GPU usage data, this tool can provide insights into the CPU and GPU execution time of individual DirectX events, and therefore can be useful to determine whether the CPU or GPU is the performance bottleneck. See [GPU Usage](/visual-studio/debugger/gpu-usage).  
   
 ##  <a name="BK_MFC"></a> New MFC Features  
  You can now specify how controls automatically resize and move when a user changes the size of a dialog box. For more information, see [Dynamic Layout](../mfc/dynamic-layout.md).  
   
 ## See Also  
- [What's New in Visual Studio 2015](../Topic/What's%20New%20in%20Visual%20Studio%202015.md)   
+ [What's New in Visual Studio 2015](/visual-studio/ide/what-s-new-in-visual-studio-2015)   
  [Visual C++ Team Blog](http://blogs.msdn.com/b/vcblog/)

@@ -1,5 +1,5 @@
 ---
-title: "Inappropriate use of &lt;keyword&gt; keyword in a module"
+title: "Inappropriate use of &lt;keyword&gt; keyword in a module | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -38,27 +38,27 @@ translation.priority.mt:
 # Inappropriate use of &lt;keyword&gt; keyword in a module
 Modules do not have instances, support inheritance, or implement interfaces. Therefore, the following keywords do not apply to a module declaration:  
   
--   [MustInherit](../Topic/MustInherit%20\(Visual%20Basic\).md)  
+-   [MustInherit](/dotnet/visual-basic/language-reference/modifiers/mustinherit)  
   
--   [NotInheritable](../Topic/NotInheritable%20\(Visual%20Basic\).md)  
+-   [NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)  
   
--   [Overloads](../Topic/Overloads%20\(Visual%20Basic\).md)  
+-   [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads)  
   
--   [Private](../Topic/Private%20\(Visual%20Basic\).md)  
+-   [Private](/dotnet/visual-basic/language-reference/modifiers/private)  
   
--   [Protected](../Topic/Protected%20\(Visual%20Basic\).md)  
+-   [Protected](/dotnet/visual-basic/language-reference/modifiers/protected)  
   
--   [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)  
+-   [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)  
   
--   [Shared](../Topic/Shared%20\(Visual%20Basic\).md)  
+-   [Shared](/dotnet/visual-basic/language-reference/modifiers/shared)  
   
--   [Static](../Topic/Static%20\(Visual%20Basic\).md)  
+-   [Static](/dotnet/visual-basic/language-reference/modifiers/static)  
   
- The only keywords supported in a [Module Statement](../Topic/Module%20Statement.md) are [Public](../Topic/Public%20\(Visual%20Basic\).md) and [Friend](../Topic/Friend%20\(Visual%20Basic\).md).  
+ The only keywords supported in a [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement) are [Public](/dotnet/visual-basic/language-reference/modifiers/public) and [Friend](/dotnet/visual-basic/language-reference/modifiers/friend).  
   
- In addition, you cannot use the [Implements](../Topic/Implements%20Clause%20\(Visual%20Basic\).md) statement or the [Inherits Statement](../Topic/Inherits%20Statement.md) in the statement block of the module.  
+ In addition, you cannot use the [Implements](/dotnet/visual-basic/language-reference/statements/implements-clause) statement or the [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement) in the statement block of the module.  
   
- By default, this message is a warning. For more information about how to hide warnings or treat warnings as errors, see [Configuring Warnings in Visual Basic](../Topic/Configuring%20Warnings%20in%20Visual%20Basic.md).  
+ By default, this message is a warning. For more information about how to hide warnings or treat warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42028  
   
@@ -69,4 +69,4 @@ Modules do not have instances, support inheritance, or implement interfaces. The
 -   If you intend to create instances of this programming element, declare it as a class. You can then use the keywords that apply to a class declaration.  
   
 ## See Also  
- [Class Statement](../Topic/Class%20Statement%20\(Visual%20Basic\).md)
+ [Class Statement](/dotnet/visual-basic/language-reference/statements/class-statement)

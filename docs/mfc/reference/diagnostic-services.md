@@ -1,7 +1,7 @@
 ---
-title: "Diagnostic Services"
+title: "Diagnostic Services | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -30,7 +30,7 @@ helpviewer_keywords:
   - "diagnostics, diagnostic services"
   - "diagnostic functions and variables"
 ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
-caps.latest.revision: 18
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -73,7 +73,7 @@ The Microsoft Foundation Class Library supplies many diagnostic services that ma
   
 |||  
 |-|-|  
-|[ASSERT](../Topic/ASSERT%20\(MFC\).md)|Prints a message and then aborts the program if the specified expression evaluates to **FALSE** in the Debug version of the library.|  
+|[ASSERT](#assert_mfc))|Prints a message and then aborts the program if the specified expression evaluates to **FALSE** in the Debug version of the library.|  
 |[ASSERT_KINDOF](#assert_kindof)|Tests that an object is an object of the specified class or of a class derived from the specified class.|  
 |[ASSERT_VALID](#assert_valid)|Tests the internal validity of an object by calling its `AssertValid` member function; typically overridden from `CObject`.|  
 |[DEBUG_NEW](#debug_new)|Supplies a filename and line number for all object allocations in Debug mode to help find memory leaks.|  
@@ -85,11 +85,11 @@ The Microsoft Foundation Class Library supplies many diagnostic services that ma
   
 |||  
 |-|-|  
-|[afxDump](../Topic/afxDump%20\(CDumpContext%20in%20MFC\).md)|Global variable that sends [CDumpContext](../../mfc/reference/cdumpcontext-class.md) information to the debugger output window or to the debug terminal.|  
+|[afxDump](#afxdump)|Global variable that sends [CDumpContext](../../mfc/reference/cdumpcontext-class.md) information to the debugger output window or to the debug terminal.|  
 |[afxMemDF](#afxmemdf)|Global variable that controls the behavior of the debugging memory allocator.|  
 |[AfxCheckError](#afxcheckerror)|Global variable used to test the passed **SCODE** to see if it is an error and, if so, throws the appropriate error.|  
 |[AfxCheckMemory](#afxcheckmemory)|Checks the integrity of all currently allocated memory.|  
-|[AfxDump](../Topic/AfxDump%20\(MFC\).md)|If called while in the debugger, dumps the state of an object while debugging.|  
+|[AfxDump](#afxdump__cdumpcontext_in_mfc_)|If called while in the debugger, dumps the state of an object while debugging.|  
 |[AfxDumpStack](#afxdumpstack)|Generate an image of the current stack. This function is always linked statically.|  
 |[AfxEnableMemoryLeakDump](#afxenablememoryleakdump)|Enables the memory leak dump.|  
 |[AfxEnableMemoryTracking](#afxenablememorytracking)|Turns memory tracking on and off.|  
@@ -182,12 +182,12 @@ ASSERT_VALID(pObject)
 ### Remarks  
  `ASSERT_VALID` calls the `AssertValid` member function of the object passed as its argument.  
   
- In the Release version of MFC, `ASSERT_VALID` does nothing. In the Debug version, it validates the pointer, checks against **NULL**, and calls the object's own `AssertValid` member functions. If any of these tests fails, an alert message is displayed in the same manner as [ASSERT](../Topic/ASSERT%20\(MFC\).md).  
+ In the Release version of MFC, `ASSERT_VALID` does nothing. In the Debug version, it validates the pointer, checks against **NULL**, and calls the object's own `AssertValid` member functions. If any of these tests fails, an alert message is displayed in the same manner as [ASSERT](#assert_mfc).  
   
 > [!NOTE]
 >  This function is available only in the Debug version of MFC.  
   
- For more information and examples, see [Debugging MFC Applications](../Topic/MFC%20Debugging%20Techniques.md).  
+ For more information and examples, see [Debugging MFC Applications](/visual-studio/debugger/mfc-debugging-techniques).  
   
 ### Example  
  [!code-cpp[NVC_MFCCObjectSample#19](../../mfc/codesnippet/CPP/diagnostic-services_5.cpp)]  
@@ -254,7 +254,7 @@ lpszFormat  , ...)
   
  In the debug version of MFC, this macro sends the specified string to the debugger of the current application. In a release build, this macro compiles to nothing (no code is generated at all).  
   
- For more information, see [Debugging MFC Applications](../Topic/MFC%20Debugging%20Techniques.md).  
+ For more information, see [Debugging MFC Applications](/visual-studio/debugger/mfc-debugging-techniques).  
   
 ##  <a name="verify"></a>  VERIFY  
  In the Debug version of MFC, evaluates its argument.  
@@ -298,7 +298,7 @@ afxDump;
   
  Under Windows NT and all versions of Windows, `afxDump` output is sent to the Output-Debug window of Visual C++ when you debug your application.  
   
- This variable is defined only in the Debug version of MFC. For more information on `afxDump`, see [Debugging MFC Applications](../Topic/MFC%20Debugging%20Techniques.md).  
+ This variable is defined only in the Debug version of MFC. For more information on `afxDump`, see [Debugging MFC Applications](/visual-studio/debugger/mfc-debugging-techniques).  
   
 ### Example  
  [!code-cpp[NVC_MFC_Utilities#23](../../mfc/codesnippet/CPP/diagnostic-services_8.cpp)]  
@@ -536,7 +536,7 @@ AfxEnableMemoryTracking(BOOL bTrack);
 ### Remarks  
  Use this function to disable tracking on sections of your code that you know are allocating blocks correctly.  
   
- For more information on `AfxEnableMemoryTracking`, see [Debugging MFC Applications](../Topic/MFC%20Debugging%20Techniques.md).  
+ For more information on `AfxEnableMemoryTracking`, see [Debugging MFC Applications](/visual-studio/debugger/mfc-debugging-techniques).  
   
 > [!NOTE]
 >  This function works only in the Debug version of MFC.  

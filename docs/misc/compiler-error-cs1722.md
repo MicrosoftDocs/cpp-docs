@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1722"
+title: "Compiler Error CS1722 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1722"
 ms.assetid: cf698a80-e4c9-46e2-96a0-8b8b5a08fc37
 caps.latest.revision: 10
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

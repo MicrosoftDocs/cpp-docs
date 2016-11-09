@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0450"
+title: "Compiler Error CS0450 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0450"
 ms.assetid: 8eb0e98b-d7a1-49a7-8e55-36e2eb0057ff
 caps.latest.revision: 12
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

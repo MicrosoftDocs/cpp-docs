@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS1589"
+title: "Compiler Warning (level 1) CS1589 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1589"
 ms.assetid: bdc47124-93ae-4c6a-81b2-dde8ec4d0ab1
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

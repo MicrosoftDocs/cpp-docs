@@ -1,7 +1,7 @@
 ---
-title: "Finding a String"
+title: "Finding a String | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Finding a String
-You can search for one or more strings in the string table, and use [regular expressions](../Topic/Using%20Regular%20Expressions%20in%20Visual%20Studio.md) with the **Find in Files** command (**Edit** menu) to locate all instances of strings that match a pattern.  
+You can search for one or more strings in the string table, and use [regular expressions](/visual-studio/ide/using-regular-expressions-in-visual-studio) with the **Find in Files** command (**Edit** menu) to locate all instances of strings that match a pattern.  
   
 ### To find a string in the string table  
   

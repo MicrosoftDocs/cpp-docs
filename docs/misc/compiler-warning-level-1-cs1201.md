@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS1201"
+title: "Compiler Warning (level 1) CS1201 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1201"
 ms.assetid: 1a470f93-eb1e-4b13-8539-f42bdfe5b980
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

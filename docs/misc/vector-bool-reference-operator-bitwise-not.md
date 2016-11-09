@@ -1,7 +1,7 @@
 ---
-title: "vector&lt;bool&gt;::reference::operator~"
+title: "vector&lt;bool&gt;::reference::operator~ | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/26/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

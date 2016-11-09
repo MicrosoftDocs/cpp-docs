@@ -1,5 +1,5 @@
 ---
-title: "Project &lt;project&gt; references assembly &lt;assembly&gt;"
+title: "Project &lt;project&gt; references assembly &lt;assembly&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

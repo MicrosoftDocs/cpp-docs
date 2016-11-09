@@ -1,7 +1,7 @@
 ---
-title: "How to: Configure Visual C++ Projects to Target 64-Bit Platforms"
+title: "How to: Configure Visual C++ Projects to Target 64-Bit Platforms | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -81,4 +81,4 @@ You can use the project configurations in Visual Studio to set up C++ applicatio
 ## See Also  
  [64-bit Applications](../Topic/64-bit%20Applications.md)   
  [Configuring Programs for 64-Bit](../build/configuring-programs-for-64-bit-visual-cpp.md)   
- [Debug 64-Bit Applications](../Topic/Debug%2064-Bit%20Applications.md)
+ [Debug 64-Bit Applications](/visual-studio/debugger/debug-64-bit-applications)

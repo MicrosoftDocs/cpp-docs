@@ -1,0 +1,1 @@
+BEGIN_EVENTSINK_MAP(CContainerDlg, CDialog)

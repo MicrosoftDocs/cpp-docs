@@ -1,5 +1,5 @@
 ---
-title: "Property &#39;&lt;propertyname&gt;&#39; is &#39;WriteOnly&#39;"
+title: "Property &#39;&lt;propertyname&gt;&#39; is &#39;WriteOnly&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You have tried to retrieve a value from a property that is declared `WriteOnly`.
 -   Remove the `WriteOnly` specifier from the property declaration.  
   
 ## See Also  
- [WriteOnly](../Topic/WriteOnly%20\(Visual%20Basic\).md)
+ [WriteOnly](/dotnet/visual-basic/language-reference/modifiers/writeonly)

@@ -1,7 +1,7 @@
 ---
-title: "Manifest Generation at the Command Line"
+title: "Manifest Generation at the Command Line | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -41,5 +41,5 @@ When building C/C++ applications from the command line using nmake or similar to
  [Manifests](http://msdn.microsoft.com/library/aa375365)   
  [/INCREMENTAL (Link Incrementally)](../build/reference/incremental-link-incrementally.md)   
  [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md)   
- [Edit and Continue](../Topic/Edit%20and%20Continue.md)   
+ [Edit and Continue](/visual-studio/debugger/edit-and-continue)   
  [Understanding Manifest Generation for C/C++ Programs](../build/understanding-manifest-generation-for-c-cpp-programs.md)

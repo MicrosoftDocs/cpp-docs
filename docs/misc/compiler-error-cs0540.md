@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0540"
+title: "Compiler Error CS0540 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0540"
 ms.assetid: 2da2cd4a-0ff1-45ea-bb72-ea078bc95dea
 caps.latest.revision: 12
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0540
 'interface member' : containing type does not implement interface 'interface'  
   
- You attempted to implement an interface member in a [class](../Topic/class%20\(C%23%20Reference\).md) that does not derive from the [interface](../Topic/interface%20\(C%23%20Reference\).md). You should either delete the implementation of the interface member or add the interface to the base-class list of the class.  
+ You attempted to implement an interface member in a [class](/dotnet/csharp/language-reference/keywords/class) that does not derive from the [interface](/dotnet/csharp/language-reference/keywords/interface). You should either delete the implementation of the interface member or add the interface to the base-class list of the class.  
   
 ## Example  
  The following sample generates CS0540.  

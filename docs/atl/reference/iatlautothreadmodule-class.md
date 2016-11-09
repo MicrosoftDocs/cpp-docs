@@ -1,7 +1,7 @@
 ---
-title: "IAtlAutoThreadModule Class"
+title: "IAtlAutoThreadModule Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords: 
   - "IAtlAutoThreadModule class"
 ms.assetid: fcb58cf9-a427-4be9-89eb-04e1ab5cc3a1
-caps.latest.revision: 17
+caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -55,10 +55,3 @@ __interface IAtlAutoThreadModule
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

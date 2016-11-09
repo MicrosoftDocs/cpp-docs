@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0149"
+title: "Compiler Error CS0149 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0149"
 ms.assetid: c3c0e48e-8dba-4ee6-86fd-cbb02c68255c
 caps.latest.revision: 9
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0149
 Method name expected  
   
- When creating a [delegate](../Topic/delegate%20\(C%23%20Reference\).md), specify a method. For more information, see [Delegates](../Topic/Delegates%20\(C%23%20Programming%20Guide\).md).  
+ When creating a [delegate](/dotnet/csharp/language-reference/keywords/delegate), specify a method. For more information, see [Delegates](/dotnet/csharp/programming-guide/delegates/index).  
   
  The following sample generates CS0149:  
   

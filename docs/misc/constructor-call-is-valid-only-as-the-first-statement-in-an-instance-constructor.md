@@ -1,5 +1,5 @@
 ---
-title: "Constructor call is valid only as the first statement in an instance constructor"
+title: "Constructor call is valid only as the first statement in an instance constructor | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

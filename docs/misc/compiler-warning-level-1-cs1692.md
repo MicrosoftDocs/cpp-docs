@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS1692"
+title: "Compiler Warning (level 1) CS1692 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1692"
 ms.assetid: 1a6d52e1-0ebb-4990-ac0b-36b05a884a19
 caps.latest.revision: 10
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

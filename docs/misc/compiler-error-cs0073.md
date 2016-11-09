@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0073"
+title: "Compiler Error CS0073 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0073"
 ms.assetid: 579ae534-59ab-4fc5-ad7e-f87639f3f9cd
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0073
 An add or remove accessor must have a body  
   
- An **add** or **remove** keyword in an [event](../Topic/event%20\(C%23%20Reference\).md) definition must have a body. For more information, see [Events](../Topic/Events%20\(C%23%20Programming%20Guide\).md).  
+ An **add** or **remove** keyword in an [event](/dotnet/csharp/language-reference/keywords/event) definition must have a body. For more information, see [Events](/dotnet/csharp/programming-guide/events/index).  
   
  The following sample generates CS0073:  
   

@@ -1,7 +1,7 @@
 ---
-title: "CW2WEX Class"
+title: "CW2WEX Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CW2WEX class"
 ms.assetid: 46262e56-e0d2-41fe-855b-0b67ecc8fcd7
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -62,21 +62,21 @@ template <int   t_nBufferLength = 128>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CW2WEX::CW2WEX](../Topic/CW2WEX::CW2WEX.md)|The constructor.|  
-|[CW2WEX::~CW2WEX](../Topic/CW2WEX::~CW2WEX.md)|The destructor.|  
+|[CW2WEX::CW2WEX](#cw2wex__cw2wex)|The constructor.|  
+|[CW2WEX::~CW2WEX](#cw2wex___dtorcw2wex)|The destructor.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CW2WEX::operator LPWSTR](../Topic/CW2WEX::operator%20LPWSTR.md)|Conversion operator.|  
+|[CW2WEX::operator LPWSTR](#cw2wex__operator_lpwstr)|Conversion operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CW2WEX::m_psz](../Topic/CW2WEX::m_psz.md)|The data member that stores the source string.|  
-|[CW2WEX::m_szBuffer](../Topic/CW2WEX::m_szBuffer.md)|The static buffer, used to store the converted string.|  
+|[CW2WEX::m_psz](#cw2wex__m_psz)|The data member that stores the source string.|  
+|[CW2WEX::m_szBuffer](#cw2wex__m_szbuffer)|The static buffer, used to store the converted string.|  
   
 ## Remarks  
  Unless extra functionality is required, use `CW2TEX`, `CT2WEX`, or `CW2W` in your code.  
@@ -168,10 +168,3 @@ wchar_t m_szBuffer[ t_nBufferLength
  [CW2AEX Class](../../atl/reference/cw2aex-class.md)   
  [CW2CWEX Class](../../atl/reference/cw2cwex-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

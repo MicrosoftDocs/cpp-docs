@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0230"
+title: "Compiler Error CS0230 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0230"
 ms.assetid: 132e4623-d393-4a5f-a3f8-838a1bfbd1b3
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0230
 Type and identifier are both required in a foreach statement  
   
- A [foreach](../Topic/foreach,%20in%20\(C%23%20Reference\).md) statement was poorly formed.  
+ A [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) statement was poorly formed.  
   
  The following sample generates CS0230:  
   

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 2) CS1572"
+title: "Compiler Warning (level 2) CS1572 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1572"
 ms.assetid: 24bc8b96-29d2-4201-bc4e-6b9b5a4f5a1d
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Warning (level 2) CS1572
 XML comment on 'construct' has a param tag for 'parameter', but there is no parameter by that name  
   
- When using the [/doc](../Topic/-doc%20\(C%23%20Compiler%20Options\).md) compiler option, a comment was specified for a parameter that does not exist for the method. Change the value passed to the name attribute or remove one of the comment lines.  
+ When using the [/doc](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option) compiler option, a comment was specified for a parameter that does not exist for the method. Change the value passed to the name attribute or remove one of the comment lines.  
   
  The following sample generates CS1572:  
   

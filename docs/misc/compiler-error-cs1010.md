@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1010"
+title: "Compiler Error CS1010 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1010"
 ms.assetid: 3d47277a-253f-464b-a603-e3b37e0e7b0d
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS1010
 Newline in constant  
   
- A [string](../Topic/string%20\(C%23%20Reference\).md) was not properly delimited.  
+ A [string](/dotnet/csharp/language-reference/keywords/string) was not properly delimited.  
   
  The following sample generates CS1010:  
   

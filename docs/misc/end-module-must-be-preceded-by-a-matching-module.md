@@ -1,5 +1,5 @@
 ---
-title: "&#39;End Module&#39; must be preceded by a matching &#39;Module&#39;"
+title: "&#39;End Module&#39; must be preceded by a matching &#39;Module&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ Module blocks begin with a `Module` statement and end with an `End Module` const
 -   Make sure that the module block begins with a `Module` statement.  
   
 ## See Also  
- [Module Statement](../Topic/Module%20Statement.md)
+ [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)

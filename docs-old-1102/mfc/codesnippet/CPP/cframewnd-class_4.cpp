@@ -1,0 +1,1 @@
+   ON_COMMAND(ID_CONTEXT_HELP, &CMainFrame::OnContextHelp)

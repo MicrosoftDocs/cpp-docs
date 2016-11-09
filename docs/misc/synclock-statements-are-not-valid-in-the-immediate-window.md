@@ -1,5 +1,5 @@
 ---
-title: "&#39;SyncLock&#39; statements are not valid in the Immediate window"
+title: "&#39;SyncLock&#39; statements are not valid in the Immediate window | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ The `SyncLock` statement synchronizes threads and is not permitted in a debuggin
 -   Do not issue a `SyncLock` statement in the **Immediate** window.  
   
 ## See Also  
- [Immediate Window](../Topic/Immediate%20Window.md)   
- [SyncLock Statement](../Topic/SyncLock%20Statement.md)
+ [Immediate Window](/visual-studio/ide/reference/immediate-window)   
+ [SyncLock Statement](/dotnet/visual-basic/language-reference/statements/synclock-statement)

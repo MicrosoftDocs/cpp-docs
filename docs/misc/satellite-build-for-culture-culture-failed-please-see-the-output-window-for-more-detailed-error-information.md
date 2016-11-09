@@ -1,7 +1,7 @@
 ---
-title: "Satellite build for culture &#39;culture&#39; failed. Please see the output window for more detailed error information"
+title: "Satellite build for culture &#39;culture&#39; failed. Please see the output window for more detailed error information | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

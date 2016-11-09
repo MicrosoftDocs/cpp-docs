@@ -1,7 +1,7 @@
 ---
-title: "-Fx (Merge Injected Code)"
+title: "-Fx (Merge Injected Code) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -92,7 +92,7 @@ Produces a copy of each source file with injected code merged into the source.
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ExpandAttributedSource*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ExpandAttributedSource%2A>.  
   
 ## See Also  
  [Output-File (/F) Options](../../build/reference/output-file-f-options.md)   

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 4) CS0628"
+title: "Compiler Warning (level 4) CS0628 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0628"
 ms.assetid: a54cfad8-27c9-4abb-8c83-982615489a10
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Warning (level 4) CS0628
 'member' : new protected member declared in sealed class  
   
- A [sealed](../Topic/sealed%20\(C%23%20Reference\).md) class cannot introduce a [protected](../Topic/protected%20\(C%23%20Reference\).md) member because no other class will be able to inherit from the `sealed` class and use the `protected` member.  
+ A [sealed](/dotnet/csharp/language-reference/keywords/sealed) class cannot introduce a [protected](/dotnet/csharp/language-reference/keywords/protected) member because no other class will be able to inherit from the `sealed` class and use the `protected` member.  
   
  The following sample generates CS0628:  
   

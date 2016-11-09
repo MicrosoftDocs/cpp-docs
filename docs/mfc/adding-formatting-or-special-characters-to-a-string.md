@@ -1,7 +1,7 @@
 ---
-title: "Adding Formatting or Special Characters to a String"
+title: "Adding Formatting or Special Characters to a String | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -46,7 +46,7 @@ translation.priority.ht:
   
 2.  Select the string you want to modify.  
   
-3.  In the [Properties Window](../Topic/Properties%20Window.md), add any of the standard escape sequences listed below to the text in the **Caption** box, and press **ENTER**.  
+3.  In the [Properties Window](/visual-studio/ide/reference/properties-window), add any of the standard escape sequences listed below to the text in the **Caption** box, and press **ENTER**.  
   
     |To get this|Type this|  
     |-----------------|---------------|  

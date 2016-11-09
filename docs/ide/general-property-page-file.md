@@ -1,7 +1,7 @@
 ---
-title: "General Property Page (File)"
+title: "General Property Page (File) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -40,12 +40,12 @@ When a file is selected in **Solution Explorer**, the **General** property page 
  **Exclude From Build**  
  Specifies whether the file should be in the build for the current configuration.  
   
- To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.ExcludedFromBuild*>.  
+ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.ExcludedFromBuild%2A>.  
   
  **Tool**  
  The tool that will be used to build this file. See [Specifying Custom Build Tools](../ide/specifying-custom-build-tools.md) for more information.  
   
- To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.Tool*>.  
+ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.Tool%2A>.  
   
  For information on how to access the **General** property page under the **Configuration Properties** node, see [How To: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md).  
   

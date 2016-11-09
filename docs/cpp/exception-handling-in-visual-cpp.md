@@ -1,7 +1,7 @@
 ---
-title: "Exception Handling in Visual C++"
+title: "Exception Handling in Visual C++ | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -36,7 +36,7 @@ translation.priority.ht:
 # Exception Handling in Visual C++
 An exception is an error condition, possibly outside the program's control, that prevents the program from continuing along its regular execution path. Certain operations, including object creation, file input/output, and function calls made from other modules, are all potential sources of exceptions even when your program is running correctly. Robust code anticipates and handles exceptions.  
   
- To detect logic errors within a single program or module, use assertions rather than exceptions (see [Using Assertions](../Topic/C-C++%20Assertions.md)).  
+ To detect logic errors within a single program or module, use assertions rather than exceptions (see [Using Assertions](/visual-studio/debugger/c-cpp-assertions)).  
   
  Visual C++ supports three kinds of exception handling:  
   

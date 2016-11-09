@@ -1,7 +1,7 @@
 ---
-title: "The project file is missing the &#39;subsection&#39; sub-section of the &#39;section&#39; section"
+title: "The project file is missing the &#39;subsection&#39; sub-section of the &#39;section&#39; section | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

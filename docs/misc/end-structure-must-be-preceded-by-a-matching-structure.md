@@ -1,5 +1,5 @@
 ---
-title: "&#39;End Structure&#39; must be preceded by a matching &#39;Structure&#39;"
+title: "&#39;End Structure&#39; must be preceded by a matching &#39;Structure&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ The `End Structure` statement can only be used at the end of a structure block t
 -   Make sure that the current structure block starts with a `Structure` statement.  
   
 ## See Also  
- [Structures](../Topic/Structures%20\(Visual%20Basic\).md)   
- [Structures and Classes](../Topic/Structures%20and%20Classes%20\(Visual%20Basic\).md)
+ [Structures](/dotnet/visual-basic/programming-guide/language-features/data-types/structures)   
+ [Structures and Classes](/dotnet/visual-basic/programming-guide/language-features/data-types/structures-and-classes)

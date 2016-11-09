@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0238"
+title: "Compiler Error CS0238 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0238"
 ms.assetid: 9b50c6e2-2c3f-431d-bdb7-557b0ec51626
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0238
 'member' cannot be sealed because it is not an override  
   
- [sealed](../Topic/sealed%20\(C%23%20Reference\).md) was used on a member that was not also marked with [override](../Topic/override%20\(C%23%20Reference\).md). For more information, see [Inheritance](../Topic/Inheritance%20\(C%23%20Programming%20Guide\).md).  
+ [sealed](/dotnet/csharp/language-reference/keywords/sealed) was used on a member that was not also marked with [override](/dotnet/csharp/language-reference/keywords/override). For more information, see [Inheritance](/dotnet/csharp/programming-guide/classes-and-structs/inheritance).  
   
  The following sample generates CS0238:  
   

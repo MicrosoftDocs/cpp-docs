@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 3) CS0661"
+title: "Compiler Warning (level 3) CS0661 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0661"
 ms.assetid: c218665e-5947-40bb-b633-d268483e6522
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

@@ -1,7 +1,7 @@
 ---
-title: "_ungetc_nolock, _ungetwc_nolock"
+title: "_ungetc_nolock, _ungetwc_nolock | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

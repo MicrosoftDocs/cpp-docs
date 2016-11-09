@@ -1,7 +1,7 @@
 ---
-title: "CStockPropImpl Class"
+title: "CStockPropImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ helpviewer_keywords:
   - "controls [ATL], stock properties"
   - "stock properties, ATL controls"
 ms.assetid: 45f11d7d-6580-4a0e-872d-3bc8b836cfda
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -959,4 +959,3 @@ HRESULT STDMETHODCALLTYPE putref_Picture(IPictureDisp* pPicture);
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)   
  [IDispatchImpl Class](../../atl/reference/idispatchimpl-class.md)
-

@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;typename&gt;&#39; cannot be used as an attribute because it has &#39;MustOverride&#39; methods that have not been overridden"
+title: "&#39;&lt;typename&gt;&#39; cannot be used as an attribute because it has &#39;MustOverride&#39; methods that have not been overridden | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

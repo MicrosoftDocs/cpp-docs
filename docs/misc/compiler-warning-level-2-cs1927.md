@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (Level 2) CS1927"
+title: "Compiler Warning (Level 2) CS1927 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1927"
 ms.assetid: 32b4e58f-668c-4596-9529-7f3a293ff4ac
 caps.latest.revision: 5
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -64,5 +65,5 @@ class ManifestWithModule
 ```  
   
 ## See Also  
- [/win32manifest (C# Compiler Options)](../Topic/-win32manifest%20\(C%23%20Compiler%20Options\).md)   
+ [/win32manifest (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/win32manifest-compiler-option)   
  [/target:module (C# Compiler Options)](../Topic/-target:module%20\(C%23%20Compiler%20Options\).md)

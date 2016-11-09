@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0692"
+title: "Compiler Error CS0692 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0692"
 ms.assetid: d2fd650b-1f84-44b1-8c7e-471cad92a85e
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

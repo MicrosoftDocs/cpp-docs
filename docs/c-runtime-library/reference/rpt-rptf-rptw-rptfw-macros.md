@@ -1,7 +1,7 @@
 ---
-title: "_RPT, _RPTF, _RPTW, _RPTFW Macros"
+title: "_RPT, _RPTF, _RPTW, _RPTFW Macros | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -177,7 +177,7 @@ _RPTFWn(
 |`_CRT_ERROR`|A pop-up window. Same as if `_CrtSetReportMode(_CRT_ERROR, _CRTDBG_MODE_WNDW);` had been specified.|  
 |`_CRT_ASSERT`|Same as `_CRT_ERROR`.|  
   
- When the destination is a debug message window and the user chooses the **Retry** button, `_CrtDbgReport` or `_CrtDbgReportW` returns 1, causing these macros to start the debugger, provided that just-in-time (JIT) debugging is enabled. For more information about using these macros as a debugging error handling mechanism, see [Using Macros for Verification and Reporting](../Topic/Macros%20for%20Reporting.md).  
+ When the destination is a debug message window and the user chooses the **Retry** button, `_CrtDbgReport` or `_CrtDbgReportW` returns 1, causing these macros to start the debugger, provided that just-in-time (JIT) debugging is enabled. For more information about using these macros as a debugging error handling mechanism, see [Using Macros for Verification and Reporting](/visual-studio/debugger/macros-for-reporting).  
   
  Two other macros exist that generate a debug report. The [_ASSERT](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) macro generates a report, but only when its expression argument evaluates to FALSE. [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) is exactly like `_ASSERT`, but includes the failed expression in the generated report.  
   

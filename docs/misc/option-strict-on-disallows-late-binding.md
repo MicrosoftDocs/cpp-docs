@@ -1,5 +1,5 @@
 ---
-title: "Option Strict On disallows late binding"
+title: "Option Strict On disallows late binding | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -57,6 +57,6 @@ translation.priority.mt:
 -   Turn `Option Strict` off by removing the word `On` after it or by explicitly specifying `Off`.  
   
 ## See Also  
- [Type Conversion Functions](../Topic/Type%20Conversion%20Functions%20\(Visual%20Basic\).md)   
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)   
- [Widening and Narrowing Conversions](../Topic/Widening%20and%20Narrowing%20Conversions%20\(Visual%20Basic\).md)
+ [Type Conversion Functions](/dotnet/visual-basic/language-reference/functions/type-conversion-functions)   
+ [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
+ [Widening and Narrowing Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)

@@ -1,7 +1,7 @@
 ---
-title: "CWinFormsControl Class"
+title: "CWinFormsControl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -120,7 +120,7 @@ inline BOOL CreateManagedControl(
   
 ### Parameters  
  `pType`  
- The data type of the control to be created. Must be a <xref:System.TypequalifyHint=True&autoUpgrade=True> data type.  
+ The data type of the control to be created. Must be a <xref:System.TypequalifyHint%3DTrue%26autoUpgrade%3DTrue> data type.  
   
  `dwStyle`  
  The window style to apply to the control. Specify a combination of [Window Styles](../../mfc/reference/window-styles.md). Currently, only the following styles are supported: WS_TABSTOP, WS_VISIBLE, WS_DISABLED and WS_GROUP.  
@@ -146,7 +146,7 @@ inline BOOL CreateManagedControl(
 ### Remarks  
  This method instantiates a .NET Framework Windows Forms control in an MFC container.  
   
- The first overload of the method accepts a .NET Framework data type `pType` so that MFC can instantiate a new object of this type. `pType` must be a <xref:System.TypequalifyHint=True&autoUpgrade=True> data type.  
+ The first overload of the method accepts a .NET Framework data type `pType` so that MFC can instantiate a new object of this type. `pType` must be a <xref:System.TypequalifyHint%3DTrue%26autoUpgrade%3DTrue> data type.  
   
  The second overload of the method creates a Windows Forms control based on the `TManagedControl` template parameter of the `CWinFormsControl` class. The size and position of the control is based on the `RECT` structure passed to the method. Only `dwStyle` matters for the styles.  
   

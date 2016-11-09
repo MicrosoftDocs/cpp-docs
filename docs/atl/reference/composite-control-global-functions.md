@@ -1,7 +1,7 @@
 ---
-title: "Composite Control Global Functions"
+title: "Composite Control Global Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -14,7 +14,7 @@ dev_langs:
 helpviewer_keywords: 
   - "composite controls, global functions"
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
-caps.latest.revision: 18
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -41,19 +41,19 @@ These functions provide support for creating dialog boxes, and for creating, hos
   
 |||  
 |-|-|  
-|[AtlAxDialogBox](../Topic/AtlAxDialogBox.md)|Creates a modal dialog box from a dialog template provided by the user. The resulting dialog box can contain ActiveX controls.|  
-|[AtlAxCreateDialog](../Topic/AtlAxCreateDialog.md)|Creates a modeless dialog box from a dialog template provided by the user. The resulting dialog box can contain ActiveX controls.|  
-|[AtlAxCreateControl](../Topic/AtlAxCreateControl.md)|Creates an ActiveX control, initializes it, and hosts it in the specified window.|  
-|[AtlAxCreateControlEx](../Topic/AtlAxCreateControlEx.md)|Creates an ActiveX control, initializes it, hosts it in the specified window, and retrieves an interface pointer (or pointers) from the control.|  
-|[AtlAxCreateControlLic](../Topic/AtlAxCreateControlLic.md)|Creates a licensed ActiveX control, initializes it, and hosts it in the specified window.|  
-|[AtlAxCreateControlLicEx](../Topic/AtlAxCreateControlLicEx.md)|Creates a licensed ActiveX control, initializes it, hosts it in the specified window, and retrieves an interface pointer (or pointers) from the control.|  
-|[AtlAxAttachControl](../Topic/AtlAxAttachControl.md)|Attaches a previously created control to the specified window.|  
-|[AtlAxGetHost](../Topic/AtlAxGetHost.md)|Used to obtain a direct interface pointer to the container for a specified window (if any), given its handle.|  
-|[AtlAxGetControl](../Topic/AtlAxGetControl.md)|Used to obtain a direct interface pointer to the control contained inside a specified window (if any), given its handle.|  
-|[AtlSetChildSite](../Topic/AtlSetChildSite.md)|Initializes the **IUnknown** of the child site.|  
-|[AtlAxWinInit](../Topic/AtlAxWinInit.md)|Initializes the hosting code for AxWin objects.|  
-|[AtlAxWinTerm](../Topic/AtlAxWinTerm.md)|Uninitializes the hosting code for AxWin objects.|  
-|[AtlGetObjectSourceInterface](../Topic/AtlGetObjectSourceInterface.md)|Returns information about the default source interface of an object.|  
+|[AtlAxDialogBox](#atlaxdialogbox)|Creates a modal dialog box from a dialog template provided by the user. The resulting dialog box can contain ActiveX controls.|  
+|[AtlAxCreateDialog](#atlaxcreatedialog)|Creates a modeless dialog box from a dialog template provided by the user. The resulting dialog box can contain ActiveX controls.|  
+|[AtlAxCreateControl](#atlaxcreatecontrol)|Creates an ActiveX control, initializes it, and hosts it in the specified window.|  
+|[AtlAxCreateControlEx](#atlaxcreatecontrolex)|Creates an ActiveX control, initializes it, hosts it in the specified window, and retrieves an interface pointer (or pointers) from the control.|  
+|[AtlAxCreateControlLic](#atlaxcreatecontrollic)|Creates a licensed ActiveX control, initializes it, and hosts it in the specified window.|  
+|[AtlAxCreateControlLicEx](#atlaxcreatecontrollicex)|Creates a licensed ActiveX control, initializes it, hosts it in the specified window, and retrieves an interface pointer (or pointers) from the control.|  
+|[AtlAxAttachControl](#atlaxattachcontrol)|Attaches a previously created control to the specified window.|  
+|[AtlAxGetHost](#atlaxgethost)|Used to obtain a direct interface pointer to the container for a specified window (if any), given its handle.|  
+|[AtlAxGetControl](#atlaxgetcontrol)|Used to obtain a direct interface pointer to the control contained inside a specified window (if any), given its handle.|  
+|[AtlSetChildSite](#atlsetchildsite)|Initializes the **IUnknown** of the child site.|  
+|[AtlAxWinInit](#atlaxwininit)|Initializes the hosting code for AxWin objects.|  
+|[AtlAxWinTerm](#atlaxwinterm)|Uninitializes the hosting code for AxWin objects.|  
+|[AtlGetObjectSourceInterface](#atlgetobjectsourceinterface)|Returns information about the default source interface of an object.|  
   
 ##  <a name="atlaxdialogbox"></a>  AtlAxDialogBox  
  Creates a modal dialog box from a dialog template provided by the user.  
@@ -183,9 +183,9 @@ ATLAPI AtlAxCreateControl(
  One of the standard HRESULT values.  
   
 ### Remarks  
- This global function gives you the same result as calling [AtlAxCreateControlEx](../Topic/AtlAxCreateControlEx.md)( `lpszName`**,** `hWnd`**,** `pStream`**, NULL, NULL, NULL, NULL** );.  
+ This global function gives you the same result as calling [AtlAxCreateControlEx](#atlaxcreatecontrolex)( `lpszName`**,** `hWnd`**,** `pStream`**, NULL, NULL, NULL, NULL** );.  
   
- To create a licensed ActiveX control, see [AtlAxCreateControlLic](../Topic/AtlAxCreateControlLic.md).  
+ To create a licensed ActiveX control, see [AtlAxCreateControlLic](#atlaxcreatecontrollic).  
   
 ##  <a name="atlaxcreatecontrolex"></a>  AtlAxCreateControlEx  
  Creates an ActiveX control, initializes it, and hosts it in the specified window. An interface pointer and event sink for the new control can also be created.  
@@ -243,9 +243,9 @@ ATLAPI AtlAxCreateControlEx(
  One of the standard HRESULT values.  
   
 ### Remarks  
- `AtlAxCreateControlEx` is similar to [AtlAxCreateControl](../Topic/AtlAxCreateControl.md) but also allows you to receive an interface pointer to the newly created control and set up an event sink to receive events fired by the control.  
+ `AtlAxCreateControlEx` is similar to [AtlAxCreateControl](#atlaxcreatecontrol) but also allows you to receive an interface pointer to the newly created control and set up an event sink to receive events fired by the control.  
   
- To create a licensed ActiveX control, see [AtlAxCreateControlLicEx](../Topic/AtlAxCreateControlLicEx.md).  
+ To create a licensed ActiveX control, see [AtlAxCreateControlLicEx](#atlaxcreatecontrollicex).  
   
 ##  <a name="atlaxcreatecontrollic"></a>  AtlAxCreateControlLic  
  Creates a licensed ActiveX control, initializes it, and hosts it in the specified window.  
@@ -357,7 +357,7 @@ ATLAPI AtlAxCreateControlLicEx(
  One of the standard HRESULT values.  
   
 ### Remarks  
- `AtlAxCreateControlLicEx` is similar to [AtlAxCreateControlLic](../Topic/AtlAxCreateControlLic.md) but also allows you to receive an interface pointer to the newly created control and set up an event sink to receive events fired by the control.  
+ `AtlAxCreateControlLicEx` is similar to [AtlAxCreateControlLic](#atlaxcreatecontrollic) but also allows you to receive an interface pointer to the newly created control and set up an event sink to receive events fired by the control.  
   
 ### Example  
  See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample of how to use `AtlAxCreateControlLicEx`.  
@@ -389,7 +389,7 @@ ATLAPI AtlAxAttachControl(
  One of the standard HRESULT values.  
   
 ### Remarks  
- Use [AtlAxCreateControlEx](../Topic/AtlAxCreateControlEx.md) and [AtlAxCreateControl](../Topic/AtlAxCreateControl.md) to simultaneously create and attach a control.  
+ Use [AtlAxCreateControlEx](#atlaxcreatecontrolex) and [AtlAxCreateControl](#atlaxcreatecontrol) to simultaneously create and attach a control.  
   
 > [!NOTE]
 >  The control object being attached must be correctly initialized before calling `AtlAxAttachControl`.  
@@ -492,7 +492,7 @@ inline BOOL AtlAxWinTerm();
 ### Remarks  
  This function simply calls [UnregisterClass](http://msdn.microsoft.com/library/windows/desktop/ms644899) as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
- Call this function to clean up after all existing host windows have been destroyed if you called [AtlAxWinInit](../Topic/AtlAxWinInit.md) and you no longer need to create host windows. If you don't call this function, the window class will be unregistered automatically when the process terminates.  
+ Call this function to clean up after all existing host windows have been destroyed if you called [AtlAxWinInit](#atlaxwininit) and you no longer need to create host windows. If you don't call this function, the window class will be unregistered automatically when the process terminates.  
   
 ##  <a name="atlgetobjectsourceinterface"></a>  AtlGetObjectSourceInterface  
  Call this function to retrieve information about the default source interface of an object.  
@@ -542,7 +542,3 @@ ATLAPI AtlGetObjectSourceInterface(
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)   
  [Composite Control Macros](../../atl/reference/composite-control-macros.md)
-
-
-
-

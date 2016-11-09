@@ -1,5 +1,5 @@
 ---
-title: "Method in a structure cannot be declared &#39;Protected&#39; or &#39;Protected Friend&#39;"
+title: "Method in a structure cannot be declared &#39;Protected&#39; or &#39;Protected Friend&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ A method in a structure was declared as `Protected` or `Protected Friend`.
 -   Declare methods inside structures as `Public` or `Private`.  
   
 ## See Also  
- [Structure Statement](../Topic/Structure%20Statement.md)   
- [Protected](../Topic/Protected%20\(Visual%20Basic\).md)   
- [Friend](../Topic/Friend%20\(Visual%20Basic\).md)
+ [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)   
+ [Protected](/dotnet/visual-basic/language-reference/modifiers/protected)   
+ [Friend](/dotnet/visual-basic/language-reference/modifiers/friend)

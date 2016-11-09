@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1517"
+title: "Compiler Error CS1517 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1517"
 ms.assetid: 3b0201fb-8fab-4e6a-9ad9-f04c0de89517
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -40,7 +41,7 @@ Invalid preprocessor expression
   
  The compiler encountered an invalid preprocessor expression.  
   
- For more information, see [Preprocessor Directives](../Topic/C%23%20Preprocessor%20Directives.md).  
+ For more information, see [Preprocessor Directives](/dotnet/csharp/language-reference/preprocessor-directives/index).  
   
  The following sample shows some valid and invalid preprocessor expressions:  
   

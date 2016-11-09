@@ -1,5 +1,5 @@
 ---
-title: "&#39;Global&#39; not allowed in handles; local name expected"
+title: "&#39;Global&#39; not allowed in handles; local name expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -46,5 +46,5 @@ A `Handles` clause must refer to a local event. The `Global` keyword provides ac
   
 ## See Also  
  [Global - delete](http://msdn.microsoft.com/en-us/18c8ba14-40f6-4978-8096-6a5852324635)   
- [Handles](../Topic/Handles%20Clause%20\(Visual%20Basic\).md)   
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause)   
+ [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)

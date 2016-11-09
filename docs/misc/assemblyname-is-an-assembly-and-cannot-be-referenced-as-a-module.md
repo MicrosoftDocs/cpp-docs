@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;assemblyname&gt;&#39; is an assembly and cannot be referenced as a module"
+title: "&#39;&lt;assemblyname&gt;&#39; is an assembly and cannot be referenced as a module | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ An attempt was made to use an assembly as a module.
 -   Change the reference to a module.  
   
 ## See Also  
- [Module Statement](../Topic/Module%20Statement.md)   
- [Assembly](../Topic/Assembly%20\(Visual%20Basic\).md)
+ [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)   
+ [Assembly](/dotnet/visual-basic/language-reference/modifiers/assembly)

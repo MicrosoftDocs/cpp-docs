@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB3142"
+title: "MSBuild Error MSB3142 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -46,4 +46,4 @@ translation.priority.mt:
  These are the same potential reasons that file.copy or directory.createdirectory fail.  
   
 ## See Also  
- [Product and Package Schema Reference](../Topic/Product%20and%20Package%20Schema%20Reference.md)
+ [Product and Package Schema Reference](/visual-studio/deployment/product-and-package-schema-reference)

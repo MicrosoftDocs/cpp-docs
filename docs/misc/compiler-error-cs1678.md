@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1678"
+title: "Compiler Error CS1678 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1678"
 ms.assetid: 2be8aa17-81e2-47b0-b239-e41e0c5c0d97
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

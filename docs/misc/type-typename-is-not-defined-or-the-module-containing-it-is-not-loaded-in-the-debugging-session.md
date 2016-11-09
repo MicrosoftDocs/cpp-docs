@@ -1,5 +1,5 @@
 ---
-title: "Type &#39;&lt;typename&gt;&#39; is not defined or the module containing it is not loaded in the debugging session"
+title: "Type &#39;&lt;typename&gt;&#39; is not defined or the module containing it is not loaded in the debugging session | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ A type was referenced that is not available, or is not defined.
 2.  Define the type within the current class or module.  
   
 ## See Also  
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)

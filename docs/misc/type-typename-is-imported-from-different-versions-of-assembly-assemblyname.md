@@ -1,5 +1,5 @@
 ---
-title: "Type &#39;&lt;typename&gt;&#39; is imported from different versions of assembly &#39;&lt;assemblyname&gt;&#39;"
+title: "Type &#39;&lt;typename&gt;&#39; is imported from different versions of assembly &#39;&lt;assemblyname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ Type '\<typename>' is imported from different versions of assembly '\<assemblyna
 -   Remove references to multiple versions of the same assembly.  
   
 ## See Also  
- [Managing references in a project](../Topic/Managing%20references%20in%20a%20project.md)
+ [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)

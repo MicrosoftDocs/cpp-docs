@@ -1,7 +1,7 @@
 ---
-title: "C-C++ Build Errors"
+title: "C-C++ Build Errors | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -1335,4 +1335,4 @@ The articles in this section of the documentation explain error messages that ar
   
 ## See Also  
  [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)   
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)

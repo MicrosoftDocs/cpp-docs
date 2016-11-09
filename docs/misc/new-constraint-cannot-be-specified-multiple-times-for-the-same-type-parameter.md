@@ -1,5 +1,5 @@
 ---
-title: "&#39;New&#39; constraint cannot be specified multiple times for the same type parameter"
+title: "&#39;New&#39; constraint cannot be specified multiple times for the same type parameter | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # &#39;New&#39; constraint cannot be specified multiple times for the same type parameter
-A constraint list includes the [New Operator](../Topic/New%20Operator%20\(Visual%20Basic\).md) constraint more than once.  
+A constraint list includes the [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator) constraint more than once.  
   
  A constraint list on a type parameter can specify that the type argument passed to that type parameter must expose a parameterless constructor that the creating code can access. A type cannot have more than one parameterless constructor, and you cannot specify this requirement more than once.  
   
@@ -47,4 +47,4 @@ A constraint list includes the [New Operator](../Topic/New%20Operator%20\(Visual
 -   Remove any redundant `New` keywords. You should have only one in the constraint list.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)

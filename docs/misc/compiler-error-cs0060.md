@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0060"
+title: "Compiler Error CS0060 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0060"
 ms.assetid: ae6d4fb7-5ff9-4883-82c3-f55b190f439a
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -59,4 +60,4 @@ public class MyClass2 : MyClass   // CS0060
 ```  
   
 ## See Also  
- [Access Modifiers](../Topic/Access%20Modifiers%20\(C%23%20Programming%20Guide\).md)
+ [Access Modifiers](/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)

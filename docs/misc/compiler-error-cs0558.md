@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0558"
+title: "Compiler Error CS0558 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0558"
 ms.assetid: af63b9ba-2790-4362-a49d-b69a5292a555
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0558
 User-defined operator 'operator' must be declared static and public  
   
- Both the **static** and **public** access [modifiers](../Topic/Modifiers%20\(C%23%20Reference\).md) must be specified on user-defined operators.  
+ Both the **static** and **public** access [modifiers](/dotnet/csharp/language-reference/keywords/modifiers) must be specified on user-defined operators.  
   
  The following sample generates CS0558:  
   

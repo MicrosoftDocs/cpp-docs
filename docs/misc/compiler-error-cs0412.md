@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0412"
+title: "Compiler Error CS0412 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0412"
 ms.assetid: eeb2afbc-9416-4bcf-b116-d6adc5cfd4ca
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

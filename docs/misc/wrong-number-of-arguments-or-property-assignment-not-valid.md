@@ -1,5 +1,5 @@
 ---
-title: "Wrong number of arguments or property assignment not valid"
+title: "Wrong number of arguments or property assignment not valid | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -42,4 +42,4 @@ An assignment has been attempted that is not valid.
 2.  Check the property assignment.  
   
 ## See Also  
- [Assignment Operators](../Topic/Assignment%20Operators%20\(Visual%20Basic\).md)
+ [Assignment Operators](/dotnet/visual-basic/language-reference/operators/assignment-operators)

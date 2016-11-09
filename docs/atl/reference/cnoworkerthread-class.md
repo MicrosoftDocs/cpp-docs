@@ -1,7 +1,7 @@
 ---
-title: "CNoWorkerThread Class"
+title: "CNoWorkerThread Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CNoWorkerThread class"
 ms.assetid: 29f06bae-b658-4aac-9c14-331e996d25d1
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -55,13 +55,13 @@ class CNoWorkerThread
   
 |Name|Description|  
 |----------|-----------------|  
-|[CNoWorkerThread::AddHandle](../Topic/CNoWorkerThread::AddHandle.md)|Non-functional equivalent of [CWorkerThread::AddHandle](../Topic/CWorkerThread::AddHandle.md).|  
-|[CNoWorkerThread::AddTimer](../Topic/CNoWorkerThread::AddTimer.md)|Non-functional equivalent of [CWorkerThread::AddTimer](../Topic/CWorkerThread::AddTimer.md).|  
-|[CNoWorkerThread::GetThreadHandle](../Topic/CNoWorkerThread::GetThreadHandle.md)|Non-functional equivalent of [CWorkerThread::GetThreadHandle](../Topic/CWorkerThread::GetThreadHandle.md).|  
-|[CNoWorkerThread::GetThreadId](../Topic/CNoWorkerThread::GetThreadId.md)|Non-functional equivalent of [CWorkerThread::GetThreadId](../Topic/CWorkerThread::GetThreadId.md).|  
-|[CNoWorkerThread::Initialize](../Topic/CNoWorkerThread::Initialize.md)|Non-functional equivalent of [CWorkerThread::Initialize](../Topic/CWorkerThread::Initialize.md).|  
-|[CNoWorkerThread::RemoveHandle](../Topic/CNoWorkerThread::RemoveHandle.md)|Non-functional equivalent of [CWorkerThread::RemoveHandle](../Topic/CWorkerThread::RemoveHandle.md).|  
-|[CNoWorkerThread::Shutdown](../Topic/CNoWorkerThread::Shutdown.md)|Non-functional equivalent of [CWorkerThread::Shutdown](../Topic/CWorkerThread::Shutdown.md).|  
+|[CNoWorkerThread::AddHandle](#cnoworkerthread__addhandle)|Non-functional equivalent of [CWorkerThread::AddHandle](../../atl/reference/cworkerthread-class.md#cworkerthread__addhandle).|  
+|[CNoWorkerThread::AddTimer](#cnoworkerthread__addtimer)|Non-functional equivalent of [CWorkerThread::AddTimer](../../atl/reference/cworkerthread-class.md#cworkerthread__addtimer).|  
+|[CNoWorkerThread::GetThreadHandle](#cnoworkerthread__getthreadhandle)|Non-functional equivalent of [CWorkerThread::GetThreadHandle](../../atl/reference/cworkerthread-class.md#cworkerthread__getthreadhandle).|  
+|[CNoWorkerThread::GetThreadId](#cnoworkerthread__getthreadid)|Non-functional equivalent of [CWorkerThread::GetThreadId](../../atl/reference/cworkerthread-class.md#cworkerthread__getthreadid).|  
+|[CNoWorkerThread::Initialize](#cnoworkerthread__initialize)|Non-functional equivalent of [CWorkerThread::Initialize](../../atl/reference/cworkerthread-class.md#cworkerthread__initialize).|  
+|[CNoWorkerThread::RemoveHandle](#cnoworkerthread__removehandle)|Non-functional equivalent of [CWorkerThread::RemoveHandle](../../atl/reference/cworkerthread-class.md#cworkerthread__removehandle).|  
+|[CNoWorkerThread::Shutdown](#cnoworkerthread__shutdown)|Non-functional equivalent of [CWorkerThread::Shutdown](../../atl/reference/cworkerthread-class.md#cworkerthread__shutdown).|  
   
 ## Remarks  
  This class provides the same public interface as [CWorkerThread](../../atl/reference/cworkerthread-class.md). This interface is expected to be provided by the `MonitorClass` template parameter to cache classes.  
@@ -72,7 +72,7 @@ class CNoWorkerThread
  **Header:** atlutil.h  
   
 ##  <a name="cnoworkerthread__addhandle"></a>  CNoWorkerThread::AddHandle  
- Non-functional equivalent of [CWorkerThread::AddHandle](../Topic/CWorkerThread::AddHandle.md).  
+ Non-functional equivalent of [CWorkerThread::AddHandle](../../atl/reference/cworkerthread-class.md#cworkerthread__addhandle).  
   
 ```
 HRESULT AddHandle(HANDLE /* hObject
@@ -90,7 +90,7 @@ HRESULT AddHandle(HANDLE /* hObject
  The implementation provided by this class does nothing.  
   
 ##  <a name="cnoworkerthread__addtimer"></a>  CNoWorkerThread::AddTimer  
- Non-functional equivalent of [CWorkerThread::AddTimer](../Topic/CWorkerThread::AddTimer.md).  
+ Non-functional equivalent of [CWorkerThread::AddTimer](../../atl/reference/cworkerthread-class.md#cworkerthread__addtimer).  
   
 ```
 HRESULT AddTimer(DWORD /* dwInterval
@@ -110,7 +110,7 @@ HRESULT AddTimer(DWORD /* dwInterval
  The implementation provided by this class does nothing.  
   
 ##  <a name="cnoworkerthread__getthreadhandle"></a>  CNoWorkerThread::GetThreadHandle  
- Non-functional equivalent of [CWorkerThread::GetThreadHandle](../Topic/CWorkerThread::GetThreadHandle.md).  
+ Non-functional equivalent of [CWorkerThread::GetThreadHandle](../../atl/reference/cworkerthread-class.md#cworkerthread__getthreadhandle).  
   
 ```
 HANDLE GetThreadHandle() throw();
@@ -123,7 +123,7 @@ HANDLE GetThreadHandle() throw();
  The implementation provided by this class does nothing.  
   
 ##  <a name="cnoworkerthread__getthreadid"></a>  CNoWorkerThread::GetThreadId  
- Non-functional equivalent of [CWorkerThread::GetThreadId](../Topic/CWorkerThread::GetThreadId.md).  
+ Non-functional equivalent of [CWorkerThread::GetThreadId](../../atl/reference/cworkerthread-class.md#cworkerthread__getthreadid).  
   
 ```
 DWORD GetThreadId() throw();
@@ -136,7 +136,7 @@ DWORD GetThreadId() throw();
  The implementation provided by this class does nothing.  
   
 ##  <a name="cnoworkerthread__initialize"></a>  CNoWorkerThread::Initialize  
- Non-functional equivalent of [CWorkerThread::Initialize](../Topic/CWorkerThread::Initialize.md).  
+ Non-functional equivalent of [CWorkerThread::Initialize](../../atl/reference/cworkerthread-class.md#cworkerthread__initialize).  
   
 ```
 HRESULT Initialize() throw();
@@ -149,7 +149,7 @@ HRESULT Initialize() throw();
  The implementation provided by this class does nothing.  
   
 ##  <a name="cnoworkerthread__removehandle"></a>  CNoWorkerThread::RemoveHandle  
- Non-functional equivalent of [CWorkerThread::RemoveHandle](../Topic/CWorkerThread::RemoveHandle.md).  
+ Non-functional equivalent of [CWorkerThread::RemoveHandle](../../atl/reference/cworkerthread-class.md#cworkerthread__removehandle).  
   
 ```
 HRESULT RemoveHandle(HANDLE /* hObject
@@ -163,7 +163,7 @@ HRESULT RemoveHandle(HANDLE /* hObject
  The implementation provided by this class does nothing.  
   
 ##  <a name="cnoworkerthread__shutdown"></a>  CNoWorkerThread::Shutdown  
- Non-functional equivalent of [CWorkerThread::Shutdown](../Topic/CWorkerThread::Shutdown.md).  
+ Non-functional equivalent of [CWorkerThread::Shutdown](../../atl/reference/cworkerthread-class.md#cworkerthread__shutdown).  
   
 ```
 HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();
@@ -174,6 +174,8 @@ HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();
   
 ### Remarks  
  The implementation provided by this class does nothing.
+
+
 
 
 

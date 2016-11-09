@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0268"
+title: "Compiler Error CS0268 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0268"
 ms.assetid: a4faca71-8b4a-4f22-a89e-59d92ced48cb
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

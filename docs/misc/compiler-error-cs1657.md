@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1657"
+title: "Compiler Error CS1657 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1657"
 ms.assetid: 6f0aeebe-5c90-4d5b-981c-1795d2e8fbb9
 caps.latest.revision: 9
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS1657
 Cannot pass 'parameter' as a ref or out argument because 'reason''  
   
- This error occurs when a variable is passed as a [ref](../Topic/ref%20\(C%23%20Reference\).md) or [out](../Topic/out%20\(C%23%20Reference\).md) argument in a context in which that variable is readonly. Readonly contexts include [foreach](../Topic/foreach,%20in%20\(C%23%20Reference\).md) iteration variables, [using](../Topic/using%20Statement%20\(C%23%20Reference\).md) variables, and `fixed` variables. To resolve this error, do not call functions that take the `foreach`, `using` or `fixed` variable as a `ref` or `out` parameter in `using` blocks, `foreach` statements, and `fixed` statements.  
+ This error occurs when a variable is passed as a [ref](/dotnet/csharp/language-reference/keywords/ref) or [out](/dotnet/csharp/language-reference/keywords/out) argument in a context in which that variable is readonly. Readonly contexts include [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) iteration variables, [using](/dotnet/csharp/language-reference/keywords/using-statement) variables, and `fixed` variables. To resolve this error, do not call functions that take the `foreach`, `using` or `fixed` variable as a `ref` or `out` parameter in `using` blocks, `foreach` statements, and `fixed` statements.  
   
 ## Example  
  The following sample generates CS1657:  

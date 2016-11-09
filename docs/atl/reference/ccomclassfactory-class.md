@@ -1,7 +1,7 @@
 ---
-title: "CComClassFactory Class"
+title: "CComClassFactory Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComClassFactory class"
 ms.assetid: e56dacf7-d5c4-4c42-aef4-a86d91981a1b
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -52,8 +52,8 @@ class CComClassFactory : public IClassFactory,   public CComObjectRootEx<CComGlo
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComClassFactory::CreateInstance](../Topic/CComClassFactory::CreateInstance.md)|Creates an object of the specified CLSID.|  
-|[CComClassFactory::LockServer](../Topic/CComClassFactory::LockServer.md)|Locks the class factory in memory.|  
+|[CComClassFactory::CreateInstance](#ccomclassfactory__createinstance)|Creates an object of the specified CLSID.|  
+|[CComClassFactory::LockServer](#ccomclassfactory__lockserver)|Locks the class factory in memory.|  
   
 ## Remarks  
  `CComClassFactory` implements the [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) interface, which contains methods for creating an object of a particular CLSID, as well as locking the class factory in memory to allow new objects to be created more quickly. **IClassFactory** must be implemented for every class that you register in the system registry and to which you assign a CLSID.  
@@ -120,10 +120,3 @@ STDMETHOD(LockServer)(BOOL fLock);
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
  [CComGlobalsThreadModel](../Topic/CComGlobalsThreadModel.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

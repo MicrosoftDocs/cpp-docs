@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS1633"
+title: "Compiler Warning (level 1) CS1633 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1633"
 ms.assetid: f31db218-f880-4fc4-ab34-8bcdc49011da
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

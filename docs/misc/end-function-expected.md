@@ -1,5 +1,5 @@
 ---
-title: "&#39;End Function&#39; expected"
+title: "&#39;End Function&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ An `End` statement must match the block it terminates. A `Function` procedure de
 -   Add an `End Function` statement to the end of the procedure.  
   
 ## See Also  
- [Function Procedures](../Topic/Function%20Procedures%20\(Visual%20Basic\).md)   
- [End Statement](../Topic/End%20Statement.md)
+ [Function Procedures](/dotnet/visual-basic/language-reference/procedures/function-procedures)   
+ [End Statement](/dotnet/visual-basic/language-reference/statements/end-statement)

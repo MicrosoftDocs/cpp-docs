@@ -1,5 +1,5 @@
 ---
-title: "Type parameter already declared with name &#39;&lt;typeparametername&gt;&#39;"
+title: "Type parameter already declared with name &#39;&lt;typeparametername&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -53,5 +53,5 @@ A type parameter of a generic type is declared with the same name as another typ
 -   Rename the type parameter to be distinct from every name cited in the list on this Help page.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Type List](../Topic/Type%20List%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Type List](/dotnet/visual-basic/language-reference/statements/type-list)

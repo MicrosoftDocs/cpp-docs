@@ -1,5 +1,5 @@
 ---
-title: "Method cannot contain both a &#39;Try&#39; statement and an &#39;On Error&#39; or &#39;Resume&#39; statement"
+title: "Method cannot contain both a &#39;Try&#39; statement and an &#39;On Error&#39; or &#39;Resume&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -46,4 +46,4 @@ You have combined a `Try` statement with `On Error` or `Resume`.
   
 ## See Also  
  [Structured Exception Handling Overview for Visual Basic](http://msdn.microsoft.com/en-us/bb81af80-a735-4873-9711-6151a48e418a)   
- [Try...Catch...Finally Statement](../Topic/Try...Catch...Finally%20Statement%20\(Visual%20Basic\).md)
+ [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)

@@ -1,7 +1,7 @@
 ---
-title: "-OPT (Optimizations)"
+title: "-OPT (Optimizations) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -119,7 +119,7 @@ Controls the optimizations that LINK performs during a build.
   
 ### To set this linker option programmatically  
   
-1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EnableCOMDATFolding*> and <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.OptimizeReferences*> properties.  
+1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EnableCOMDATFolding%2A> and <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.OptimizeReferences%2A> properties.  
   
 ## See Also  
  [Setting Linker Options](../../build/reference/setting-linker-options.md)   

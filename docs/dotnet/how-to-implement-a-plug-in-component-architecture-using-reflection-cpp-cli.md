@@ -1,7 +1,7 @@
 ---
-title: "How to: Implement a Plug-In Component Architecture using Reflection (C++-CLI)"
+title: "How to: Implement a Plug-In Component Architecture using Reflection (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -37,11 +37,11 @@ translation.priority.ht:
 # How to: Implement a Plug-In Component Architecture using Reflection (C++/CLI)
 The following code examples demonstrate the use of reflection to implement a simple "plug-in" architecture. The first listing is the application, and the second is the plug-in. The application is a multiple document form that populates itself using any form-based classes found in the plug-in DLL provided as a command-line argument.  
   
- The application attempts to load the provided assembly using the <xref:System.Reflection.Assembly.Load*?displayProperty=fullName> method. If successful, the types inside the assembly are enumerated using the <xref:System.Reflection.Assembly.GetTypes*?displayProperty=fullName> method. Each type is then checked for compatibility using the <xref:System.Type.IsAssignableFrom*?displayProperty=fullName> method. In this example, classes found in the provided assembly must be derived from the <xref:System.Windows.Forms.Form> class to qualify as a plug-in.  
+ The application attempts to load the provided assembly using the <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> method. If successful, the types inside the assembly are enumerated using the <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=fullName> method. Each type is then checked for compatibility using the <xref:System.Type.IsAssignableFrom%2A?displayProperty=fullName> method. In this example, classes found in the provided assembly must be derived from the <xref:System.Windows.Forms.Form> class to qualify as a plug-in.  
   
- Compatible classes are then instantiated with the <xref:System.Activator.CreateInstance*?displayProperty=fullName> method, which accepts a <xref:System.Type> as an argument and returns a pointer to a new instance. Each new instance is then attached to the form and displayed.  
+ Compatible classes are then instantiated with the <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> method, which accepts a <xref:System.Type> as an argument and returns a pointer to a new instance. Each new instance is then attached to the form and displayed.  
   
- Note that the <xref:System.Reflection.Assembly.Load*> method does not accept assembly names that include the file extension. The main function in the application trims any provided extensions, so the following code example works in either case.  
+ Note that the <xref:System.Reflection.Assembly.Load%2A> method does not accept assembly names that include the file extension. The main function in the application trims any provided extensions, so the following code example works in either case.  
   
 ## Example  
  The following code defines the application that accepts plug-ins. An assembly name must be provided as the first argument. This assembly should contain at least one public <xref:System.Windows.Forms.Form> derived type.  

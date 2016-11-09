@@ -1,7 +1,7 @@
 ---
-title: "_mbsnbicmp, _mbsnbicmp_l"
+title: "_mbsnbicmp, _mbsnbicmp_l | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

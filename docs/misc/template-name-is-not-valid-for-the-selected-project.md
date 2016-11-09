@@ -1,7 +1,7 @@
 ---
-title: "Template &lt;name&gt; is not valid for the selected project."
+title: "Template &lt;name&gt; is not valid for the selected project. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -45,6 +45,6 @@ This error generally occurs when an unknown template name has been entered for t
 2.  Check the "New File Command" or "Add New Solution Item Command" topics for the correct syntax.  
   
 ## See Also  
- [New File Command](../Topic/New%20File%20Command.md)   
- [Add New Item Command](../Topic/Add%20New%20Item%20Command.md)   
- [Visual Studio Commands](../Topic/Visual%20Studio%20Commands.md)
+ [New File Command](/visual-studio/ide/reference/new-file-command)   
+ [Add New Item Command](/visual-studio/ide/reference/add-new-item-command)   
+ [Visual Studio Commands](/visual-studio/ide/reference/visual-studio-commands)

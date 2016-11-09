@@ -1,5 +1,5 @@
 ---
-title: "Specifiers and attributes are not valid on this statement"
+title: "Specifiers and attributes are not valid on this statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1918"
+title: "Compiler Error CS1918 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1918"
 ms.assetid: 9ad2cbbd-3c10-4d56-b4cd-385103d005d4
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -74,4 +75,4 @@ public class Test
 ```  
   
 ## See Also  
- [Object and Collection Initializers](../Topic/Object%20and%20Collection%20Initializers%20\(C%23%20Programming%20Guide\).md)
+ [Object and Collection Initializers](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)

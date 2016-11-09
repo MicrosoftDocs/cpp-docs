@@ -1,7 +1,7 @@
 ---
-title: "CComDynamicUnkArray Class"
+title: "CComDynamicUnkArray Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "connection points [C++], managing"
   - "CComDynamicUnkArray class"
 ms.assetid: 202470d7-9a1b-498f-b96d-659d681acd65
-caps.latest.revision: 16
+caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -53,27 +53,27 @@ class CComDynamicUnkArray
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComDynamicUnkArray::CComDynamicUnkArray](../Topic/CComDynamicUnkArray::CComDynamicUnkArray.md)|Constructor. Initializes the collection values to **NULL** and the collection size to zero.|  
-|[CComDynamicUnkArray::~CComDynamicUnkArray](../Topic/CComDynamicUnkArray::~CComDynamicUnkArray.md)|The destructor.|  
+|[CComDynamicUnkArray::CComDynamicUnkArray](#ccomdynamicunkarray__ccomdynamicunkarray)|Constructor. Initializes the collection values to **NULL** and the collection size to zero.|  
+|[CComDynamicUnkArray::~CComDynamicUnkArray](#ccomdynamicunkarray___dtorccomdynamicunkarray)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComDynamicUnkArray::Add](../Topic/CComDynamicUnkArray::Add.md)|Call this method to add an `IUnknown` pointer to the array.|  
-|[CComDynamicUnkArray::begin](../Topic/CComDynamicUnkArray::begin.md)|Returns a pointer to the first `IUnknown` pointer in the collection.|  
-|[CComDynamicUnkArray::clear](../Topic/CComDynamicUnkArray::clear.md)|Empties the array.|  
-|[CComDynamicUnkArray::end](../Topic/CComDynamicUnkArray::end.md)|Returns a pointer to one past the last **IUnknown** pointer in the collection.|  
-|[CComDynamicUnkArray::GetAt](../Topic/CComDynamicUnkArray::GetAt.md)|Retrieves the element at the specified index.|  
-|[CComDynamicUnkArray::GetCookie](../Topic/CComDynamicUnkArray::GetCookie.md)|Call this method to get the cookie associated with a given **IUnknown** pointer.|  
-|[CComDynamicUnkArray::GetSize](../Topic/CComDynamicUnkArray::GetSize.md)|Returns the length of an array.|  
-|[CComDynamicUnkArray::GetUnknown](../Topic/CComDynamicUnkArray::GetUnknown.md)|Call this method to get the **IUnknown** pointer associated with a given cookie.|  
-|[CComDynamicUnkArray::Remove](../Topic/CComDynamicUnkArray::Remove.md)|Call this method to remove an **IUnknown** pointer from the array.|  
+|[CComDynamicUnkArray::Add](#ccomdynamicunkarray__add)|Call this method to add an `IUnknown` pointer to the array.|  
+|[CComDynamicUnkArray::begin](#ccomdynamicunkarray__begin)|Returns a pointer to the first `IUnknown` pointer in the collection.|  
+|[CComDynamicUnkArray::clear](#ccomdynamicunkarray__clear)|Empties the array.|  
+|[CComDynamicUnkArray::end](#ccomdynamicunkarray__end)|Returns a pointer to one past the last **IUnknown** pointer in the collection.|  
+|[CComDynamicUnkArray::GetAt](#ccomdynamicunkarray__getat)|Retrieves the element at the specified index.|  
+|[CComDynamicUnkArray::GetCookie](#ccomdynamicunkarray__getcookie)|Call this method to get the cookie associated with a given **IUnknown** pointer.|  
+|[CComDynamicUnkArray::GetSize](#ccomdynamicunkarray__getsize)|Returns the length of an array.|  
+|[CComDynamicUnkArray::GetUnknown](#ccomdynamicunkarray__getunknown)|Call this method to get the **IUnknown** pointer associated with a given cookie.|  
+|[CComDynamicUnkArray::Remove](#ccomdynamicunkarray__remove)|Call this method to remove an **IUnknown** pointer from the array.|  
   
 ## Remarks  
  **CComDynamicUnkArray** holds a dynamically allocated array of **IUnknown** pointers, each an interface on a connection point. **CComDynamicUnkArray** can be used as a parameter to the [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) template class.  
   
- The **CComDynamicUnkArray** methods [begin](../Topic/CComDynamicUnkArray::begin.md) and [end](../Topic/CComDynamicUnkArray::end.md) can be used to loop through all connection points (for example, when an event is fired).  
+ The **CComDynamicUnkArray** methods [begin](#ccomdynamicunkarray__begin) and [end](#ccomdynamicunkarray__end) can be used to loop through all connection points (for example, when an event is fired).  
   
  See [Adding Connection Points to an Object](../../atl/adding-connection-points-to-an-object.md) for details on automating creation of connection point proxies.  
   
@@ -223,10 +223,3 @@ BOOL Remove(DWORD   dwCookie);
 ## See Also  
  [CComUnkArray Class](../../atl/reference/ccomunkarray-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

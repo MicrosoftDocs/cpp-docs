@@ -1,7 +1,7 @@
 ---
-title: "-Oi (Generate Intrinsic Functions)"
+title: "-Oi (Generate Intrinsic Functions) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -79,7 +79,7 @@ Replaces some function calls with intrinsic or otherwise special forms of the fu
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableIntrinsicFunctions*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableIntrinsicFunctions%2A>.  
   
 ## See Also  
  [/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)   

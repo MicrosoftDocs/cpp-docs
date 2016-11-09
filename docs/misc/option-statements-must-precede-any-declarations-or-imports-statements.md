@@ -1,5 +1,5 @@
 ---
-title: "&#39;Option&#39; statements must precede any declarations or &#39;Imports&#39; statements"
+title: "&#39;Option&#39; statements must precede any declarations or &#39;Imports&#39; statements | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -46,7 +46,7 @@ translation.priority.mt:
   
 ## See Also  
  [Option \<keyword> Statement](../Topic/Option%20%3Ckeyword%3E%20Statement.md)   
- [Option Compare Statement](../Topic/Option%20Compare%20Statement.md)   
- [Option Explicit Statement](../Topic/Option%20Explicit%20Statement%20\(Visual%20Basic\).md)   
- [Option Infer Statement](../Topic/Option%20Infer%20Statement.md)   
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)
+ [Option Compare Statement](/dotnet/visual-basic/language-reference/statements/option-compare-statement)   
+ [Option Explicit Statement](/dotnet/visual-basic/language-reference/statements/option-explicit-statement)   
+ [Option Infer Statement](/dotnet/visual-basic/language-reference/statements/option-infer-statement)   
+ [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)

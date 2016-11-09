@@ -1,5 +1,5 @@
 ---
-title: "Type arguments unexpected"
+title: "Type arguments unexpected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -68,8 +68,8 @@ Public Sub testSub(Of t)() Implements testInterface.testSub
 -   If you are implementing a generic member of the interface, then put the type argument list in the main part of the declaration, preceding the `Implements` keyword.  
   
 ## See Also  
- [Implements](../Topic/Implements%20Clause%20\(Visual%20Basic\).md)   
+ [Implements](/dotnet/visual-basic/language-reference/statements/implements-clause)   
  [NOT IN BUILD: Implements Keyword and Implements Statement](http://msdn.microsoft.com/en-us/b96560f7-6413-480f-a1e2-f80253bab5be)   
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Generic Procedures in Visual Basic](../Topic/Generic%20Procedures%20in%20Visual%20Basic.md)   
- [Type List](../Topic/Type%20List%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures)   
+ [Type List](/dotnet/visual-basic/language-reference/statements/type-list)

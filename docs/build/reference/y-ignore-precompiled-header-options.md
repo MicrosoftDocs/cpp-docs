@@ -1,7 +1,7 @@
 ---
-title: "-Y- (Ignore Precompiled Header Options)"
+title: "-Y- (Ignore Precompiled Header Options) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -65,7 +65,7 @@ Causes all other `/Y` compiler options to be ignored (and cannot itself be overr
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
   
 ## See Also  
  [Compiler Options](../../build/reference/compiler-options.md)   

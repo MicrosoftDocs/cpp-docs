@@ -1,5 +1,5 @@
 ---
-title: "Expression is not an array or a method, and cannot have an argument list"
+title: "Expression is not an array or a method, and cannot have an argument list | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You have provided an argument list for an expression that is not an array or met
 -   Remove the argument list.  
   
 ## See Also  
- [Procedure Parameters and Arguments](../Topic/Procedure%20Parameters%20and%20Arguments%20\(Visual%20Basic\).md)
+ [Procedure Parameters and Arguments](/dotnet/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)

@@ -1,7 +1,7 @@
 ---
-title: "CComFakeCriticalSection Class"
+title: "CComFakeCriticalSection Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComFakeCriticalSection class"
 ms.assetid: a4811b97-96bb-493b-ab9f-62822aeddb10
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -52,10 +52,10 @@ class CComFakeCriticalSection
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComFakeCriticalSection::Init](../Topic/CComFakeCriticalSection::Init.md)|Does nothing since there is no critical section.|  
-|[CComFakeCriticalSection::Lock](../Topic/CComFakeCriticalSection::Lock.md)|Does nothing since there is no critical section.|  
-|[CComFakeCriticalSection::Term](../Topic/CComFakeCriticalSection::Term.md)|Does nothing since there is no critical section.|  
-|[CComFakeCriticalSection::Unlock](../Topic/CComFakeCriticalSection::Unlock.md)|Does nothing since there is no critical section.|  
+|[CComFakeCriticalSection::Init](#ccomfakecriticalsection__init)|Does nothing since there is no critical section.|  
+|[CComFakeCriticalSection::Lock](#ccomfakecriticalsection__lock)|Does nothing since there is no critical section.|  
+|[CComFakeCriticalSection::Term](#ccomfakecriticalsection__term)|Does nothing since there is no critical section.|  
+|[CComFakeCriticalSection::Unlock](#ccomfakecriticalsection__unlock)|Does nothing since there is no critical section.|  
   
 ## Remarks  
  `CComFakeCriticalSection` mirrors the methods found in [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md). However, `CComFakeCriticalSection` does not provide a critical section; therefore, its methods do nothing.  
@@ -107,10 +107,3 @@ HRESULT Unlock() throw();
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

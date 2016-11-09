@@ -1,5 +1,5 @@
 ---
-title: "Named argument not found (Visual Basic)"
+title: "Named argument not found (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,4 +40,4 @@ A named argument can not be used in a procedure invocation unless it appears in 
 -   Check the spelling of the argument name.  
   
 ## See Also  
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

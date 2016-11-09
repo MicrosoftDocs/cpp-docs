@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1647"
+title: "Compiler Error CS1647 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1647"
 ms.assetid: bcd2a19e-5cea-4f2f-9dda-f30d5bdfa102
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

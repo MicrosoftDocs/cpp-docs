@@ -1,5 +1,5 @@
 ---
-title: "Method &#39;&lt;methodname&gt;&#39; does not have a signature compatible with delegate &lt;&#39;delegatename&#39;&gt;"
+title: "Method &#39;&lt;methodname&gt;&#39; does not have a signature compatible with delegate &lt;&#39;delegatename&#39;&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -76,5 +76,5 @@ End Sub
 -   Examine the corresponding parameters and, if they are present, return types to determine which pair is not compatible.  
   
 ## See Also  
- [Relaxed Delegate Conversion](../Topic/Relaxed%20Delegate%20Conversion%20\(Visual%20Basic\).md)   
+ [Relaxed Delegate Conversion](/dotnet/visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion)   
  [NOT IN BUILD: Delegates and the AddressOf Operator](http://msdn.microsoft.com/en-us/7b2ed932-8598-4355-b2f7-5cedb23ee86f)

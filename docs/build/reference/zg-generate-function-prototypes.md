@@ -1,7 +1,7 @@
 ---
-title: "-Zg (Generate Function Prototypes)"
+title: "-Zg (Generate Function Prototypes) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -79,7 +79,7 @@ void f2(T2 * t) {}
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
   
 ## See Also  
  [Compiler Options](../../build/reference/compiler-options.md)   

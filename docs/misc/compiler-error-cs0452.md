@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0452"
+title: "Compiler Error CS0452 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0452"
 ms.assetid: 50a87734-fe07-4bce-891d-a76e131db6cc
 caps.latest.revision: 12
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -52,4 +53,4 @@ public class Derived2<S> : BaseClass<S> where S : struct { } // CS0452
 ```  
   
 ## See Also  
- [Constraints on Type Parameters](../Topic/Constraints%20on%20Type%20Parameters%20\(C%23%20Programming%20Guide\).md)
+ [Constraints on Type Parameters](/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters)

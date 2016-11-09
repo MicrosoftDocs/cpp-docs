@@ -1,7 +1,7 @@
 ---
-title: "Start Page Best Practices"
+title: "Start Page Best Practices | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -207,5 +207,5 @@ Because the Start Page can access Visual Studio commands, and opens whenever Vis
   
 ## See Also  
  [Start Page Architecture](../misc/start-page-architecture.md)   
- [Deploying Custom Start Pages](../Topic/Deploying%20Custom%20Start%20Pages.md)   
- [Adding Visual Studio Commands to a Start Page](../Topic/Adding%20Visual%20Studio%20Commands%20to%20a%20Start%20Page.md)
+ [Deploying Custom Start Pages](/visual-studio/extensibility/deploying-custom-start-pages)   
+ [Adding Visual Studio Commands to a Start Page](/visual-studio/extensibility/adding-visual-studio-commands-to-a-start-page)

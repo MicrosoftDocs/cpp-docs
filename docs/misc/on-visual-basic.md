@@ -1,5 +1,5 @@
 ---
-title: "On (Visual Basic)"
+title: "On (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -44,17 +44,17 @@ Introduces a response to a run-time error or turns a compiler option on.
 ## Remarks  
  The `On` keyword is used in these contexts:  
   
- [Group Join Clause](../Topic/Group%20Join%20Clause%20\(Visual%20Basic\).md)  
+ [Group Join Clause](/dotnet/visual-basic/language-reference/queries/group-join-clause)  
   
- [Join Clause](../Topic/Join%20Clause%20\(Visual%20Basic\).md)  
+ [Join Clause](/dotnet/visual-basic/language-reference/queries/join-clause)  
   
- [On Error Statement](../Topic/On%20Error%20Statement%20\(Visual%20Basic\).md)  
+ [On Error Statement](/dotnet/visual-basic/language-reference/statements/on-error-statement)  
   
- [Option Explicit Statement](../Topic/Option%20Explicit%20Statement%20\(Visual%20Basic\).md)  
+ [Option Explicit Statement](/dotnet/visual-basic/language-reference/statements/option-explicit-statement)  
   
- [Option Infer Statement](../Topic/Option%20Infer%20Statement.md)  
+ [Option Infer Statement](/dotnet/visual-basic/language-reference/statements/option-infer-statement)  
   
- [Option Strict Statement](../Topic/Option%20Strict%20Statement.md)  
+ [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)  
   
 ## See Also  
- [Keywords](../Topic/Keywords%20\(Visual%20Basic\).md)
+ [Keywords](/dotnet/visual-basic/language-reference/keywords/index)

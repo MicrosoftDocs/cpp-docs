@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0646"
+title: "Compiler Error CS0646 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0646"
 ms.assetid: 48ea306f-b4a0-4988-8d2b-ca9d38e9bdad
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0646
 Cannot specify the DefaultMember attribute on a type containing an indexer  
   
- If a class or other type specifies **System.Reflection.DefaultMemberAttribute**, it cannot contain an indexer. For more information, see [Properties](../Topic/Properties%20\(C%23%20Programming%20Guide\).md).  
+ If a class or other type specifies **System.Reflection.DefaultMemberAttribute**, it cannot contain an indexer. For more information, see [Properties](/dotnet/csharp/programming-guide/classes-and-structs/properties).  
   
  The following sample generates CS0646:  
   

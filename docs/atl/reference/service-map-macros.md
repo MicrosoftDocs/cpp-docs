@@ -1,7 +1,7 @@
 ---
-title: "Service Map Macros"
+title: "Service Map Macros | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -12,7 +12,7 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: ca02a125-454a-4cf6-aac2-1c5585025ed4
-caps.latest.revision: 15
+caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -36,10 +36,10 @@ These macros define service maps and entries.
   
 |||  
 |-|-|  
-|[BEGIN_SERVICE_MAP](../Topic/BEGIN_SERVICE_MAP.md)|Marks the beginning of an ATL service map.|  
-|[END_SERVICE_MAP](../Topic/END_SERVICE_MAP.md)|Marks the end of an ATL service map.|  
-|[SERVICE_ENTRY](../Topic/SERVICE_ENTRY.md)|Indicates that the object supports a specific service ID.|  
-|[SERVICE_ENTRY_CHAIN](../Topic/SERVICE_ENTRY_CHAIN.md)|Instructs [IServiceProviderImpl::QueryService](../Topic/IServiceProviderImpl::QueryService.md) to chain to the specified object.|  
+|[BEGIN_SERVICE_MAP](#begin_service_map)|Marks the beginning of an ATL service map.|  
+|[END_SERVICE_MAP](#end_service_map)|Marks the end of an ATL service map.|  
+|[SERVICE_ENTRY](#service_entry)|Indicates that the object supports a specific service ID.|  
+|[SERVICE_ENTRY_CHAIN](#service_entry_chain)|Instructs [IServiceProviderImpl::QueryService](#iserviceproviderimpl__queryservice) to chain to the specified object.|  
   
 ##  <a name="begin_service_map"></a>  BEGIN_SERVICE_MAP  
  Marks the beginning of the service map.  
@@ -55,9 +55,9 @@ BEGIN_SERVICE_MAP(theClass)
 ### Remarks  
  Use the service map to implement service provider functionality on your COM object. First, you must derive your class from [IServiceProviderImpl](../../atl/reference/iserviceproviderimpl-class.md). There are two types of entries:  
   
-- [SERVICE_ENTRY](../Topic/SERVICE_ENTRY.md)Â Â Â Indicates support for the specified service ID (SID).  
+- [SERVICE_ENTRY](#service_entry)Â Â Â Indicates support for the specified service ID (SID).  
   
-- [SERVICE_ENTRY_CHAIN](../Topic/SERVICE_ENTRY_CHAIN.md)Â Â Â Instructs [IServiceProviderImpl::QueryService](../Topic/IServiceProviderImpl::QueryService.md) to chain to another, specified object.  
+- [SERVICE_ENTRY_CHAIN](#service_entry_chain)Â Â Â Instructs [IServiceProviderImpl::QueryService](#iserviceproviderimpl__queryservice) to chain to another, specified object.  
   
 ### Example  
  [!code-cpp[NVC_ATL_COM#57](../../atl/codesnippet/CPP/service-map-macros_1.h)]  
@@ -70,7 +70,7 @@ END_SERVICE_MAP()
 ```  
   
 ### Example  
- See the example for [BEGIN_SERVICE_MAP](../Topic/BEGIN_SERVICE_MAP.md).  
+ See the example for [BEGIN_SERVICE_MAP](#begin_service_map).  
   
 ##  <a name="service_entry"></a>  SERVICE_ENTRY  
  Indicates that the object supports the service id specified by *SID*.  
@@ -85,10 +85,10 @@ SERVICE_ENTRY(Â
  The service ID.  
   
 ### Example  
- See the example for [BEGIN_SERVICE_MAP](../Topic/BEGIN_SERVICE_MAP.md).  
+ See the example for [BEGIN_SERVICE_MAP](#begin_service_map).  
   
 ##  <a name="service_entry_chain"></a>  SERVICE_ENTRY_CHAIN  
- Instructs [IServiceProviderImpl::QueryService](../Topic/IServiceProviderImpl::QueryService.md) to chain to the object specified by `punk`.  
+ Instructs [IServiceProviderImpl::QueryService](#iserviceproviderimpl__queryservice) to chain to the object specified by `punk`.  
   
 ```
 SERVICE_ENTRY_CHAIN(Â
@@ -100,7 +100,7 @@ SERVICE_ENTRY_CHAIN(Â
  A pointer to the **IUnknown** interface to which to chain.  
   
 ### Example  
- See the example for [BEGIN_SERVICE_MAP](../Topic/BEGIN_SERVICE_MAP.md).  
+ See the example for [BEGIN_SERVICE_MAP](#begin_service_map).  
   
 ##  <a name="iserviceproviderimpl__queryservice"></a>  IServiceProviderImpl::QueryService  
  Creates or accesses the specified service and returns an interface pointer to the specified interface for the service.  
@@ -152,8 +152,3 @@ riid,
   
 ## See Also  
  [Macros](../../atl/reference/atl-macros.md)
-
-
-
-
-

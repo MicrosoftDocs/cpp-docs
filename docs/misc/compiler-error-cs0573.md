@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0573"
+title: "Compiler Error CS0573 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0573"
 ms.assetid: 10ef9625-44f1-4936-ada3-56938357aa01
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0573
 'field declaration' : cannot have instance field initializers in structs  
   
- You cannot initialize an instance field of a [struct](../Topic/struct%20\(C%23%20Reference\).md). Fields of value types will be initialized to their default values, and reference-type fields will be initialized to `null`.  
+ You cannot initialize an instance field of a [struct](/dotnet/csharp/language-reference/keywords/struct). Fields of value types will be initialized to their default values, and reference-type fields will be initialized to `null`.  
   
 ## Example  
  The following sample generates CS0573:  

@@ -1,5 +1,5 @@
 ---
-title: "&#39;End Sub&#39; expected"
+title: "&#39;End Sub&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ An `End` statement must match the block it terminates. A `Sub` procedure definit
 -   Add an `End Sub` statement to the end of the procedure.  
   
 ## See Also  
- [Sub Procedures](../Topic/Sub%20Procedures%20\(Visual%20Basic\).md)   
- [End Statement](../Topic/End%20Statement.md)
+ [Sub Procedures](/dotnet/visual-basic/language-reference/procedures/sub-procedures)   
+ [End Statement](/dotnet/visual-basic/language-reference/statements/end-statement)

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS1696"
+title: "Compiler Warning (level 1) CS1696 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1696"
 ms.assetid: 69a45988-1aba-4a01-a84e-7ca59f8dde28
 caps.latest.revision: 11
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

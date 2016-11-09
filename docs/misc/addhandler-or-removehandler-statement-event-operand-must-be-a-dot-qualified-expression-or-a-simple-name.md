@@ -1,5 +1,5 @@
 ---
-title: "&#39;AddHandler&#39; or &#39;RemoveHandler&#39; statement event operand must be a dot-qualified expression or a simple name"
+title: "&#39;AddHandler&#39; or &#39;RemoveHandler&#39; statement event operand must be a dot-qualified expression or a simple name | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,7 +47,7 @@ The item specified for the event argument to `AddHandler` or `RemoveHandler` is 
      [!code-vb[VbVbalrEventError#30](../misc/codesnippet/VisualBasic/addhandler-or-removehandler-statement-event-operand-must-be-a-dot-qualified-expression-or-a-simple-name_1.vb)]  
   
 ## See Also  
- [AddHandler Statement](../Topic/AddHandler%20Statement.md)   
- [RemoveHandler Statement](../Topic/RemoveHandler%20Statement.md)   
+ [AddHandler Statement](/dotnet/visual-basic/language-reference/statements/addhandler-statement)   
+ [RemoveHandler Statement](/dotnet/visual-basic/language-reference/statements/removehandler-statement)   
  [NOT IN BUILD:AddHandler and RemoveHandler](http://msdn.microsoft.com/en-us/a7a24bd2-519a-46fe-8a2c-2b9df2ca28ef)   
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)

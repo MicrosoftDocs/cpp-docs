@@ -1,7 +1,7 @@
 ---
-title: "CComAutoDeleteCriticalSection Class"
+title: "CComAutoDeleteCriticalSection Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComAutoDeleteCriticalSection class"
 ms.assetid: 2396dbea-1c60-4841-b50e-c4e18af311a3
-caps.latest.revision: 16
+caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -65,10 +65,3 @@ class CComAutoDeleteCriticalSection : public CComSafeDeleteCriticalSection
  [CComSafeDeleteCriticalSection Class](../../atl/reference/ccomsafedeletecriticalsection-class.md)   
  [CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

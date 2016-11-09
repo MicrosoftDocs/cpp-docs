@@ -1,7 +1,7 @@
 ---
-title: "typeid  (C++ Component Extensions)"
+title: "typeid  (C++ Component Extensions) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -88,7 +88,7 @@ type::typeid
   
  `typeid` is used to get the <xref:System.Type> for a type at compile time.  
   
- `typeid` is similar to getting the System::Type for a type at run time using <xref:System.Type.GetType*> or <xref:System.Object.GetType*>. However, typeid only accepts a type name as a parameter.  If you want to use an instance of a type to get its System::Type name, use GetType.  
+ `typeid` is similar to getting the System::Type for a type at run time using <xref:System.Type.GetType%2A> or <xref:System.Object.GetType%2A>. However, typeid only accepts a type name as a parameter.  If you want to use an instance of a type to get its System::Type name, use GetType.  
   
  `typeid` must be able to evaluate a type name (type) at compile time, whereas GetType evaluates the type to return at run time.  
   

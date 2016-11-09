@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.IO.FileNotFoundException"
+title: "Troubleshooting Exceptions: System.IO.FileNotFoundException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -43,7 +43,7 @@ A <xref:System.IO.FileNotFoundException> exception is thrown when an attempt is 
   
 ## Associated Tips  
  **Verify that the file exists in the specified location.**  
- If the file does not exist, this exception is thrown. For more information, see <xref:Microsoft.VisualBasic.FileIO.FileSystem.FileExists*>.  
+ If the file does not exist, this exception is thrown. For more information, see <xref:Microsoft.VisualBasic.FileIO.FileSystem.FileExists%2A>.  
   
  **When using relative paths, make sure the current directory is correct.**  
  If you are assuming the current directory incorrectly, relative paths will be incorrect as well.  

@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0831"
+title: "Compiler Error CS0831 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0831"
 ms.assetid: f626a77d-3844-4438-954b-b8201e72b1b5
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

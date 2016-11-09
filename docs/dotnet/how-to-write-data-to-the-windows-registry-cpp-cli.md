@@ -1,7 +1,7 @@
 ---
-title: "How to: Write Data to the Windows Registry (C++-CLI)"
+title: "How to: Write Data to the Windows Registry (C++-CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Write Data to the Windows Registry (C++/CLI)
-The following code example uses the <xref:Microsoft.Win32.Registry.CurrentUser> key to create a writable instance of the <xref:Microsoft.Win32.RegistryKey> class corresponding to the **Software** key. The <xref:Microsoft.Win32.RegistryKey.CreateSubKey*> method is then used to create a new key and add to key/value pairs.  
+The following code example uses the <xref:Microsoft.Win32.Registry.CurrentUser> key to create a writable instance of the <xref:Microsoft.Win32.RegistryKey> class corresponding to the **Software** key. The <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A> method is then used to create a new key and add to key/value pairs.  
   
 ## Example  
   

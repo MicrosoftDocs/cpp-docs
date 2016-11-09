@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;specifier&gt;&#39; is not valid on an interface method declaration"
+title: "&#39;&lt;specifier&gt;&#39; is not valid on an interface method declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,5 +47,5 @@ A `Function` or `Sub` statement inside an interface contains an invalid keyword,
 2.  Move the implementation of interface members to a class that implements the interface.  
   
 ## See Also  
- [Interface Statement](../Topic/Interface%20Statement%20\(Visual%20Basic\).md)   
- [Implements Statement](../Topic/Implements%20Statement.md)
+ [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)   
+ [Implements Statement](/dotnet/visual-basic/language-reference/statements/implements-statement)

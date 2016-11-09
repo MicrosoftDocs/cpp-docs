@@ -1,5 +1,5 @@
 ---
-title: "Method &#39;&lt;methodname&gt;&#39; cannot be declared &#39;Partial&#39; because only one method &#39;&lt;methodname&gt;&#39; can be marked &#39;Partial&#39;"
+title: "Method &#39;&lt;methodname&gt;&#39; cannot be declared &#39;Partial&#39; because only one method &#39;&lt;methodname&gt;&#39; can be marked &#39;Partial&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ You cannot have two partial method declarations that have the same name and sign
 1.  Change the name or signature of one of the partial method declarations.  
   
 ## See Also  
- [Partial Methods](../Topic/Partial%20Methods%20\(Visual%20Basic\).md)
+ [Partial Methods](/dotnet/visual-basic/language-reference/procedures/partial-methods)

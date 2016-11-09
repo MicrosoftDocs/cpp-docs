@@ -1,5 +1,5 @@
 ---
-title: "For loop not initialized (Visual Basic)"
+title: "For loop not initialized (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -40,5 +40,5 @@ You jumped into the middle of a `For...Next` loop.
 1.  Remove the jump into the loop.  
   
 ## See Also  
- [For Each...Next Statement](../Topic/For%20Each...Next%20Statement%20\(Visual%20Basic\).md)   
+ [For Each...Next Statement](/dotnet/visual-basic/language-reference/statements/for-each-next-statement)   
  [How to: Label Statements](../Topic/How%20to:%20Label%20Statements%20\(Visual%20Basic\).md)

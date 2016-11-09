@@ -1,7 +1,7 @@
 ---
-title: "-Zl (Omit Default Library Name)"
+title: "-Zl (Omit Default Library Name) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -86,7 +86,7 @@ void Test() {
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.OmitDefaultLibName*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.OmitDefaultLibName%2A>.  
   
 ## See Also  
  [Compiler Options](../../build/reference/compiler-options.md)   

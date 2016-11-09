@@ -1,5 +1,5 @@
 ---
-title: "&#39;Microsoft.VisualBasic.ComClassAttribute&#39; cannot be applied to a class that is declared &#39;MustInherit&#39;"
+title: "&#39;Microsoft.VisualBasic.ComClassAttribute&#39; cannot be applied to a class that is declared &#39;MustInherit&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -58,5 +58,5 @@ A class is declared with the <xref:Microsoft.VisualBasic.ComClassAttribute>, but
   
 ## See Also  
  <xref:Microsoft.VisualBasic.ComClassAttribute>   
- [COM Interop](../Topic/COM%20Interop%20\(Visual%20Basic\).md)   
- [MustInherit](../Topic/MustInherit%20\(Visual%20Basic\).md)
+ [COM Interop](/dotnet/visual-basic/programming-guide/com-interop/index)   
+ [MustInherit](/dotnet/visual-basic/language-reference/modifiers/mustinherit)

@@ -1,7 +1,7 @@
 ---
-title: "MSBuild Error MSB8004"
+title: "MSBuild Error MSB8004 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""

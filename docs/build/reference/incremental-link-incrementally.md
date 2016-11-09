@@ -1,7 +1,7 @@
 ---
-title: "-INCREMENTAL (Link Incrementally)"
+title: "-INCREMENTAL (Link Incrementally) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -103,7 +103,7 @@ translation.priority.mt:
   
 ### To set this linker option programmatically  
   
-1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.LinkIncremental*>.  
+1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.LinkIncremental%2A>.  
   
 ## See Also  
  [Setting Linker Options](../../build/reference/setting-linker-options.md)   

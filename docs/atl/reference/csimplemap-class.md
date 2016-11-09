@@ -1,7 +1,7 @@
 ---
-title: "CSimpleMap Class"
+title: "CSimpleMap Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CSimpleMap class"
 ms.assetid: 61b06eb4-ae73-44b0-a305-0afb5a33e8b1
-caps.latest.revision: 20
+caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -63,33 +63,33 @@ template <class TKey, class TVal, class TEqual = CSimpleMapEqualHelper<TKey,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleMap::_ArrayElementType](../Topic/CSimpleMap::_ArrayElementType.md)|Typedef for the value type.|  
-|[CSimpleMap::_ArrayKeyType](../Topic/CSimpleMap::_ArrayKeyType.md)|Typedef for the key type.|  
+|[CSimpleMap::_ArrayElementType](#csimplemap___arrayelementtype)|Typedef for the value type.|  
+|[CSimpleMap::_ArrayKeyType](#csimplemap___arraykeytype)|Typedef for the key type.|  
   
 ### Public Constructors  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleMap::CSimpleMap](../Topic/CSimpleMap::CSimpleMap.md)|The constructor.|  
-|[CSimpleMap::~CSimpleMap](../Topic/CSimpleMap::~CSimpleMap.md)|The destructor.|  
+|[CSimpleMap::CSimpleMap](#csimplemap__csimplemap)|The constructor.|  
+|[CSimpleMap::~CSimpleMap](#csimplemap___dtorcsimplemap)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleMap::Add](../Topic/CSimpleMap::Add.md)|Adds a key and associated value to the map array.|  
-|[CSimpleMap::FindKey](../Topic/CSimpleMap::FindKey.md)|Finds a specific key.|  
-|[CSimpleMap::FindVal](../Topic/CSimpleMap::FindVal.md)|Finds a specific value.|  
-|[CSimpleMap::GetKeyAt](../Topic/CSimpleMap::GetKeyAt.md)|Retrieves the specified key.|  
-|[CSimpleMap::GetSize](../Topic/CSimpleMap::GetSize.md)|Returns the number of entries in the mapping array.|  
-|[CSimpleMap::GetValueAt](../Topic/CSimpleMap::GetValueAt.md)|Retrieves the specified value.|  
-|[CSimpleMap::Lookup](../Topic/CSimpleMap::Lookup.md)|Returns the value associated with the given key.|  
-|[CSimpleMap::Remove](../Topic/CSimpleMap::Remove.md)|Removes a key and matching value.|  
-|[CSimpleMap::RemoveAll](../Topic/CSimpleMap::RemoveAll.md)|Removes all keys and values.|  
-|[CSimpleMap::RemoveAt](../Topic/CSimpleMap::RemoveAt.md)|Removes a specific key and matching value.|  
-|[CSimpleMap::ReverseLookup](../Topic/CSimpleMap::ReverseLookup.md)|Returns the key associated with the given value.|  
-|[CSimpleMap::SetAt](../Topic/CSimpleMap::SetAt.md)|Sets the value associated with the given key.|  
-|[CSimpleMap::SetAtIndex](../Topic/CSimpleMap::SetAtIndex.md)|Sets the specific key and value.|  
+|[CSimpleMap::Add](#csimplemap__add)|Adds a key and associated value to the map array.|  
+|[CSimpleMap::FindKey](#csimplemap__findkey)|Finds a specific key.|  
+|[CSimpleMap::FindVal](#csimplemap__findval)|Finds a specific value.|  
+|[CSimpleMap::GetKeyAt](#csimplemap__getkeyat)|Retrieves the specified key.|  
+|[CSimpleMap::GetSize](#csimplemap__getsize)|Returns the number of entries in the mapping array.|  
+|[CSimpleMap::GetValueAt](#csimplemap__getvalueat)|Retrieves the specified value.|  
+|[CSimpleMap::Lookup](#csimplemap__lookup)|Returns the value associated with the given key.|  
+|[CSimpleMap::Remove](#csimplemap__remove)|Removes a key and matching value.|  
+|[CSimpleMap::RemoveAll](#csimplemap__removeall)|Removes all keys and values.|  
+|[CSimpleMap::RemoveAt](#csimplemap__removeat)|Removes a specific key and matching value.|  
+|[CSimpleMap::ReverseLookup](#csimplemap__reverselookup)|Returns the key associated with the given value.|  
+|[CSimpleMap::SetAt](#csimplemap__setat)|Sets the value associated with the given key.|  
+|[CSimpleMap::SetAtIndex](#csimplemap__setatindex)|Sets the specific key and value.|  
   
 ## Remarks  
  `CSimpleMap` provides support for a simple mapping array of any given type `T`, managing an unordered array of key elements and their associated values.  
@@ -342,10 +342,3 @@ BOOL SetAtIndex(int nIndex,
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

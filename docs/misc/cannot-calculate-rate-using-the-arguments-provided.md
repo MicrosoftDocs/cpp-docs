@@ -1,5 +1,5 @@
 ---
-title: "Cannot calculate rate using the arguments provided"
+title: "Cannot calculate rate using the arguments provided | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -42,4 +42,4 @@ The rate calculation does not contain the required arguments.
 2.  Check previous operations on variables in the expression, especially those passed into the procedure as arguments from other procedures.  
   
 ## See Also  
- [Financial Summary](../Topic/Financial%20Summary%20\(Visual%20Basic\).md)
+ [Financial Summary](/dotnet/visual-basic/language-reference/keywords/financial-summary)

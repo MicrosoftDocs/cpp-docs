@@ -1,5 +1,5 @@
 ---
-title: "ParamArray parameter must be an array"
+title: "ParamArray parameter must be an array | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ A `ParamArray` argument must be declared as a one-dimensional array type. The de
 -   Add a pair of parentheses after the `ParamArray` argument name.  
   
 ## See Also  
- [Parameter Arrays](../Topic/Parameter%20Arrays%20\(Visual%20Basic\).md)   
- [ParamArray](../Topic/ParamArray%20\(Visual%20Basic\).md)   
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)
+ [Parameter Arrays](/dotnet/visual-basic/language-reference/procedures/parameter-arrays)   
+ [ParamArray](/dotnet/visual-basic/language-reference/modifiers/paramarray)   
+ [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)

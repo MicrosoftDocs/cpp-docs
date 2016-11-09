@@ -1,7 +1,7 @@
 ---
-title: "Win32ThreadTraits Class"
+title: "Win32ThreadTraits Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ helpviewer_keywords:
   - "threading [ATL], creation functions"
   - "Win32ThreadTraits class"
 ms.assetid: 50279c38-eae1-4301-9ea6-97ccea580f3e
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -57,7 +57,7 @@ class Win32ThreadTraits
   
 |Name|Description|  
 |----------|-----------------|  
-|[Win32ThreadTraits::CreateThread](../Topic/Win32ThreadTraits::CreateThread.md)|(Static) Call this function to create a thread that should not use CRT functions.|  
+|[Win32ThreadTraits::CreateThread](#win32threadtraits__createthread)|(Static) Call this function to create a thread that should not use CRT functions.|  
   
 ## Remarks  
  Thread traits are classes that provide a creation function for a particular type of thread. The creation function has the same signature and semantics as the Windows [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453) function.  
@@ -115,10 +115,3 @@ static HANDLE CreateThread(
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

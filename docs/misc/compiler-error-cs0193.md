@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0193"
+title: "Compiler Error CS0193 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0193"
 ms.assetid: 7b60fd99-9eee-4d61-ad75-585a16e22e96
 caps.latest.revision: 7
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0193
 The * or -> operator must be applied to a pointer  
   
- The **\*** or **->** operator was used with a nonpointer type. For more information, see [Pointer types](../Topic/Pointer%20types%20\(C%23%20Programming%20Guide\).md).  
+ The **\*** or **->** operator was used with a nonpointer type. For more information, see [Pointer types](/dotnet/csharp/programming-guide/unsafe-code-pointers/pointer-types).  
   
  The following sample generates CS0193:  
   

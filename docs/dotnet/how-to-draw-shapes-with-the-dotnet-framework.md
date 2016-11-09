@@ -1,7 +1,7 @@
 ---
-title: "How to: Draw Shapes with the .NET Framework"
+title: "How to: Draw Shapes with the .NET Framework | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Draw Shapes with the .NET Framework
-The following code example uses the <xref:System.Drawing.Graphics> class to modify the <xref:System.Windows.Forms.Form.OnPaint*> event handler to retrieve a pointer to the <xref:System.Drawing.Graphics> object for the main form. This pointer is then used to set the background color of the form and draw a line and an arc using the <xref:System.Drawing.Graphics.DrawLine*?displayProperty=fullName> and <xref:System.Drawing.Graphics.DrawArc*> methods.  
+The following code example uses the <xref:System.Drawing.Graphics> class to modify the <xref:System.Windows.Forms.Form.OnPaint%2A> event handler to retrieve a pointer to the <xref:System.Drawing.Graphics> object for the main form. This pointer is then used to set the background color of the form and draw a line and an arc using the <xref:System.Drawing.Graphics.DrawLine%2A?displayProperty=fullName> and <xref:System.Drawing.Graphics.DrawArc%2A> methods.  
   
 > [!NOTE]
 >  GDI+ is included with Windows XP and is available as a redistributable for Windows NT 4.0 SP 6, Windows 2000, Windows 98, and Windows Me. To download the latest redistributable, see [http://go.microsoft.com/fwlink/?linkid=11232](http://go.microsoft.com/fwlink/?linkid=11232). For more information, see [GDI+](_gdiplus_GDI_start_cpp).  

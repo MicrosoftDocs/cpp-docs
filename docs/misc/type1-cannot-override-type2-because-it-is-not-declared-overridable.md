@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;type1&gt;&#39; cannot override &lt;type2&gt; because it is not declared &#39;Overridable&#39;"
+title: "&#39;&lt;type1&gt;&#39; cannot override &lt;type2&gt; because it is not declared &#39;Overridable&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,6 +47,6 @@ A member in a derived class overrides a base class member that is not marked wit
 2.  Use the `Shadows` keyword to shadow the item in the base class.  
   
 ## See Also  
- [Overridable](../Topic/Overridable%20\(Visual%20Basic\).md)   
- [Overrides](../Topic/Overrides%20\(Visual%20Basic\).md)   
- [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)
+ [Overridable](/dotnet/visual-basic/language-reference/modifiers/overridable)   
+ [Overrides](/dotnet/visual-basic/language-reference/modifiers/overrides)   
+ [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)

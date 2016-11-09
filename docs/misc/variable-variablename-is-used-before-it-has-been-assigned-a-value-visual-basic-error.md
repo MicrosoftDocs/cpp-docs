@@ -1,5 +1,5 @@
 ---
-title: "Variable &#39;&lt;variablename&gt;&#39; is used before it has been assigned a value (Visual Basic Error)"
+title: "Variable &#39;&lt;variablename&gt;&#39; is used before it has been assigned a value (Visual Basic Error) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ A variable is being used before it has been assigned a value, resulting in a <xr
 -   Make sure the variable has been assigned a value.  
   
 ## See Also  
- [Variable Declaration](../Topic/Variable%20Declaration%20in%20Visual%20Basic.md)   
+ [Variable Declaration](/dotnet/visual-basic/programming-guide/language-features/variables/variable-declaration)   
  [Troubleshooting Exceptions: System.NullReferenceException](../misc/troubleshooting-exceptions-system-nullreferenceexception.md)

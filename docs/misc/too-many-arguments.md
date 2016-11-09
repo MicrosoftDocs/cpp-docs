@@ -1,5 +1,5 @@
 ---
-title: "Too many arguments"
+title: "Too many arguments | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ The number of arguments supplied in a procedure call exceeds the number of argum
 -   Consult the definition of the procedure, and remove the extra arguments from the call.  
   
 ## See Also  
- [Procedure Parameters and Arguments](../Topic/Procedure%20Parameters%20and%20Arguments%20\(Visual%20Basic\).md)
+ [Procedure Parameters and Arguments](/dotnet/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)

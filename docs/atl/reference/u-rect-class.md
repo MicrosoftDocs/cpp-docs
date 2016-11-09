@@ -1,7 +1,7 @@
 ---
-title: "_U_RECT Class"
+title: "_U_RECT Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "U_RECT class"
   - "_U_RECT class"
 ms.assetid: 5f880a2d-09cf-4327-bf32-a3519c4dcd63
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -55,16 +55,16 @@ class _U_RECT```
   
 |Name|Description|  
 |----------|-----------------|  
-|[_U_RECT::_U_RECT](../Topic/_U_RECT::_U_RECT.md)|The constructor.|  
+|[_U_RECT::_U_RECT](#_u_rect___u_rect)|The constructor.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[_U_RECT::m_lpRect](../Topic/_U_RECT::m_lpRect.md)|Pointer to a `RECT`.|  
+|[_U_RECT::m_lpRect](#_u_rect__m_lprect)|Pointer to a `RECT`.|  
   
 ## Remarks  
- The class defines two constructor overloads: one accepts a **RECT&** argument and the other accepts an `LPRECT` argument. The first constructor stores the address of the reference argument in the class's single data member, [m_lpRect](../Topic/_U_RECT::m_lpRect.md). The argument to the pointer constructor is stored directly without conversion.  
+ The class defines two constructor overloads: one accepts a **RECT&** argument and the other accepts an `LPRECT` argument. The first constructor stores the address of the reference argument in the class's single data member, [m_lpRect](#_u_rect__m_lprect). The argument to the pointer constructor is stored directly without conversion.  
   
 ## Requirements  
  **Header:** atlwin.h  
@@ -77,7 +77,7 @@ LPRECT m_lpRect;
 ```  
   
 ##  <a name="_u_rect___u_rect"></a>  _U_RECT::_U_RECT  
- The address of the reference argument is stored in the class's single data member, [m_lpRect](../Topic/_U_RECT::m_lpRect.md).  
+ The address of the reference argument is stored in the class's single data member, [m_lpRect](#_u_rect__m_lprect).  
   
 ```
 _U_RECT(RECT& rc);
@@ -97,10 +97,3 @@ _U_RECT(RECT& rc);
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

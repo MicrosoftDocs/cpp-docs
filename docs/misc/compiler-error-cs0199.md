@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0199"
+title: "Compiler Error CS0199 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0199"
 ms.assetid: 9eede3f2-b55a-4b85-a05d-6bf177e1c602
 caps.latest.revision: 10
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0199
 Fields of static readonly field 'name' cannot be passed ref or out (except in a static constructor)  
   
- A [readonly](../Topic/readonly%20\(C%23%20Reference\).md) variable must have the same [static](../Topic/static%20\(C%23%20Reference\).md) usage as the constructor in which you want to pass it as a [ref](../Topic/ref%20\(C%23%20Reference\).md) or [out](../Topic/out%20\(C%23%20Reference\).md) parameter. For more information, see [Passing Parameters](../Topic/Passing%20Parameters%20\(C%23%20Programming%20Guide\).md).  
+ A [readonly](/dotnet/csharp/language-reference/keywords/readonly) variable must have the same [static](/dotnet/csharp/language-reference/keywords/static) usage as the constructor in which you want to pass it as a [ref](/dotnet/csharp/language-reference/keywords/ref) or [out](/dotnet/csharp/language-reference/keywords/out) parameter. For more information, see [Passing Parameters](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
 ## Example  
  The following sample generates CS0199:  

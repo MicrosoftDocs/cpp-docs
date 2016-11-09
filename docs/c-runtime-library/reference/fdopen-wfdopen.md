@@ -1,7 +1,7 @@
 ---
-title: "_fdopen, _wfdopen"
+title: "_fdopen, _wfdopen | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -215,7 +215,7 @@ Lines in file: 2
 ```  
   
 ## .NET Framework Equivalent  
- <xref:System.IO.FileStream.#ctor*>  
+ <xref:System.IO.FileStream.%23ctor%2A>  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

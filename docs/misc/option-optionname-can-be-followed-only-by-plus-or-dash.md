@@ -1,5 +1,5 @@
 ---
-title: "option &lt;optionname&gt; can be followed only by &#39;+&#39; or &#39;-&#39;"
+title: "option &lt;optionname&gt; can be followed only by &#39;+&#39; or &#39;-&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,5 +49,5 @@ The text that follows the option is not a plus sign (+) or a minus sign (-).
 -   Replace the text that follows the option with a minus sign (-) to turn the option off.  
   
 ## See Also  
- [Visual Basic Compiler Options Listed Alphabetically](../Topic/Visual%20Basic%20Compiler%20Options%20Listed%20Alphabetically.md)   
- [Error Types](../Topic/Error%20Types%20\(Visual%20Basic\).md)
+ [Visual Basic Compiler Options Listed Alphabetically](/dotnet/visual-basic/reference/command-line-compiler/compiler-options-listed-alphabetically)   
+ [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)

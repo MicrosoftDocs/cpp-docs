@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 1) CS0626"
+title: "Compiler Warning (level 1) CS0626 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0626"
 ms.assetid: 2cd5061c-80e7-48d3-8d14-be7fc642af94
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

@@ -1,5 +1,5 @@
 ---
-title: "Class &#39;&lt;classname&gt;&#39; cannot inherit from itself: &lt;message&gt;"
+title: "Class &#39;&lt;classname&gt;&#39; cannot inherit from itself: &lt;message&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Class &#39;&lt;classname&gt;&#39; cannot inherit from itself: &lt;message&gt;
-An [Inherits Statement](../Topic/Inherits%20Statement.md) in a class definition specifies its own class.  
+An [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement) in a class definition specifies its own class.  
   
  A class can inherit from another class, which provides it with all the members of the class it inherits from, so it does not have to define those members again. Such a class is called a *derived class*, and the class it inherits from is called the *base class*.  
   

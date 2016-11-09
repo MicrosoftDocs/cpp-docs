@@ -1,5 +1,5 @@
 ---
-title: "Value of type &#39;&lt;type1&gt;&#39; cannot be converted to &#39;&lt;type2&gt;&#39; because &#39;&lt;type3&gt;&#39; is not derived from &#39;&lt;type4&gt;&#39;"
+title: "Value of type &#39;&lt;type1&gt;&#39; cannot be converted to &#39;&lt;type2&gt;&#39; because &#39;&lt;type3&gt;&#39; is not derived from &#39;&lt;type4&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,5 +45,5 @@ A statement attempts to convert an array type to another array type in a situati
 -   Check the data types of the elements of both arrays to determine the source of the error.  
   
 ## See Also  
- [Arrays](../Topic/Arrays%20in%20Visual%20Basic.md)   
- [Array Conversions](../Topic/Array%20Conversions%20\(Visual%20Basic\).md)
+ [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)   
+ [Array Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/array-conversions)

@@ -1,7 +1,7 @@
 ---
-title: "Using Options Pages"
+title: "Using Options Pages | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -37,7 +37,7 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] automation model
   
 -   The settings of the **Dynamic Help** page cannot be accessed programmatically. The **Dynamic Help** feature can be controlled by using the automation model, but control must be accomplished directly in code. For more information, see [How to: Control the Dynamic Help Window](http://msdn.microsoft.com/en-us/7f5777aa-c270-4058-a175-8ce8a4ed25eb).  
   
--   Control of the **Fonts and Color** page settings is provided through its own API, not through the automation model. For more information, see [Using Fonts and Colors](../Topic/Using%20Fonts%20and%20Colors.md).  
+-   Control of the **Fonts and Color** page settings is provided through its own API, not through the automation model. For more information, see [Using Fonts and Colors](/visual-studio/extensibility/using-fonts-and-colors).  
   
 -   Language-specific properties cannot be obtained through the automation model.  
   
@@ -49,13 +49,13 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] automation model
 > [!NOTE]
 >  When a VSPackage uses the automation model to query and change settings on installed **Options** pages, it does not extend the IDE functionality. Therefore, the package does not have to implement an automation object.  
   
- To obtain a <xref:EnvDTE.DTE> object through the automation model, call the <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService*> method and provide a service ID argument of `SID_SDTE` and an interface argument of `IID__DTE`, as follows.  
+ To obtain a <xref:EnvDTE.DTE> object through the automation model, call the <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> method and provide a service ID argument of `SID_SDTE` and an interface argument of `IID__DTE`, as follows.  
   
 ```  
 pServiceProvider->QueryService(SID_SDTE, IID__DTE, (LPVOID*)pDTE);  
 ```  
   
- To obtain a <xref:EnvDTE.DTE> object by using the Managed Package Framework (MPF), call the <xref:Microsoft.VisualStudio.Shell.Package.GetService*> method and provide a `serviceType` parameter of type <xref:Microsoft.VisualStudio.Shell.Interop.SDTE>.  
+ To obtain a <xref:EnvDTE.DTE> object by using the Managed Package Framework (MPF), call the <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> method and provide a `serviceType` parameter of type <xref:Microsoft.VisualStudio.Shell.Interop.SDTE>.  
   
  [!code-cs[UI_UserSettings_ToolsOptionPages#01](../misc/codesnippet/CSharp/using-options-pages_1.cs)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#01](../misc/codesnippet/VisualBasic/using-options-pages_1.vb)]  
@@ -75,19 +75,19 @@ CComPtr<Properties> srpDTEPropertiesList;
 hr = srpDTE->get_Properties("TextEditor", "Basic", &srpDTEPropertiesList);  
 ```  
   
- To obtain the properties by using the MPF, use the <xref:EnvDTE._DTE.Properties*> method.  
+ To obtain the properties by using the MPF, use the <xref:EnvDTE._DTE.Properties%2A> method.  
   
  [!code-cs[UI_UserSettings_ToolsOptionPages#02](../misc/codesnippet/CSharp/using-options-pages_2.cs)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#02](../misc/codesnippet/VisualBasic/using-options-pages_2.vb)]  
   
- The <xref:EnvDTE.Properties.Item*> method returns individual settings from the <xref:EnvDTE.Properties> collection as a <xref:EnvDTE.Property> object.  
+ The <xref:EnvDTE.Properties.Item%2A> method returns individual settings from the <xref:EnvDTE.Properties> collection as a <xref:EnvDTE.Property> object.  
   
  As with categories and subcategories, each setting has an identifier that is a unique string. For example, the **Tab Size** setting on the `TextEditor.Basic` page is identified by the string, `TabSize`.  
   
 > [!NOTE]
 >  For localization and other reasons, the names displayed on **Options** pages may differ from the strings used as setting identifiers. You may have to use automation to query the IDE to obtain the correct identifiers, if they are not documented elsewhere.  
   
- You can use the <xref:EnvDTE.Property.Value*> of the <xref:EnvDTE.Property> object that is returned by the <xref:EnvDTE.Properties.Item*> method of the <xref:EnvDTE.Properties> collection to query and change the settings state.  
+ You can use the <xref:EnvDTE.Property.Value%2A> of the <xref:EnvDTE.Property> object that is returned by the <xref:EnvDTE.Properties.Item%2A> method of the <xref:EnvDTE.Properties> collection to query and change the settings state.  
   
  For example, to set the **Tab Size** setting on the `TextEditor.Basic` page through the automation model, use the <xref:EnvDTE.Properties> object returned in the following example.  
   
@@ -113,9 +113,9 @@ hr= srpProperty.set_Value(4);
   
 ## See Also  
  [Creating Options Pages By Using Interop Assemblies](../misc/creating-options-pages-by-using-interop-assemblies.md)   
- [Creating Options Pages](../Topic/Creating%20Options%20Pages.md)   
+ [Creating Options Pages](/visual-studio/extensibility/internals/creating-options-pages)   
  [Creating Options Pages By Using Automation](../misc/creating-options-pages-by-using-automation.md)   
  [Controlling Options Settings](../Topic/Controlling%20Options%20Settings.md)   
  [Registering Custom Options Pages](../misc/registering-custom-options-pages.md)   
  [Opening an Options Page](../misc/opening-an-options-page.md)   
- [Extending User Settings and Options](../Topic/Extending%20User%20Settings%20and%20Options.md)
+ [Extending User Settings and Options](/visual-studio/extensibility/extending-user-settings-and-options)

@@ -1,7 +1,7 @@
 ---
-title: "task_canceled Class"
+title: "task_canceled Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # task_canceled Class
-This class describes an exception thrown by the PPL tasks layer in order to force the current task to cancel. It is also thrown by the `get()` method on [task](../Topic/Task%20Class%20-%20Internal%20Members.md), for a canceled task.  
+This class describes an exception thrown by the PPL tasks layer in order to force the current task to cancel. It is also thrown by the `get()` method on [task](/visual-studio/extensibility/debugger/task-class-internal-members), for a canceled task.  
   
 ## Syntax  
   

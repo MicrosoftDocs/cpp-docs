@@ -1,7 +1,7 @@
 ---
-title: "CBindStatusCallback Class"
+title: "CBindStatusCallback Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "data transfer [C++], asynchronous"
   - "CBindStatusCallback class"
 ms.assetid: 0f5da276-6031-4418-b2a9-a4750ef29e77
-caps.latest.revision: 21
+caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -58,7 +58,7 @@ template <class T,
  Your class containing the function that will be called as the data is received.  
   
  *nBindFlags*  
- Specifies the bind flags that are returned by [GetBindInfo](../Topic/CBindStatusCallback::GetBindInfo.md). The default implementation sets the binding to be asynchronous, retrieves the newest version of the data/object, and does not store retrieved data in the disk cache.  
+ Specifies the bind flags that are returned by [GetBindInfo](#cbindstatuscallback__getbindinfo). The default implementation sets the binding to be asynchronous, retrieves the newest version of the data/object, and does not store retrieved data in the disk cache.  
   
 ## Members  
   
@@ -66,36 +66,36 @@ template <class T,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CBindStatusCallback::CBindStatusCallback](../Topic/CBindStatusCallback::CBindStatusCallback.md)|The constructor.|  
-|[CBindStatusCallback::~CBindStatusCallback](../Topic/CBindStatusCallback::~CBindStatusCallback.md)|The destructor.|  
+|[CBindStatusCallback::CBindStatusCallback](#cbindstatuscallback__cbindstatuscallback)|The constructor.|  
+|[CBindStatusCallback::~CBindStatusCallback](#cbindstatuscallback___dtorcbindstatuscallback)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CBindStatusCallback::Download](../Topic/CBindStatusCallback::Download.md)|Static method that starts the download process, creates a `CBindStatusCallback` object, and calls `StartAsyncDownload`.|  
-|[CBindStatusCallback::GetBindInfo](../Topic/CBindStatusCallback::GetBindInfo.md)|Called by the asynchronous moniker to request information on the type of bind to be created.|  
-|[CBindStatusCallback::GetPriority](../Topic/CBindStatusCallback::GetPriority.md)|Called by the asynchronous moniker to get the priority of the bind operation. The ATL implementation returns `E_NOTIMPL`.|  
-|[CBindStatusCallback::OnDataAvailable](../Topic/CBindStatusCallback::OnDataAvailable.md)|Called to provide data to your application as it becomes available. Reads the data, then calls the function passed to it to use the data.|  
-|[CBindStatusCallback::OnLowResource](../Topic/CBindStatusCallback::OnLowResource.md)|Called when resources are low. The ATL implementation returns `S_OK`.|  
-|[CBindStatusCallback::OnObjectAvailable](../Topic/CBindStatusCallback::OnObjectAvailable.md)|Called by the asynchronous moniker to pass an object interface pointer to your application. The ATL implementation returns `S_OK`.|  
-|[CBindStatusCallback::OnProgress](../Topic/CBindStatusCallback::OnProgress.md)|Called to indicate the progress of a data downloading process. The ATL implementation returns `S_OK`.|  
-|[CBindStatusCallback::OnStartBinding](../Topic/CBindStatusCallback::OnStartBinding.md)|Called when binding is started.|  
-|[CBindStatusCallback::OnStopBinding](../Topic/CBindStatusCallback::OnStopBinding.md)|Called when the asynchronous data transfer is stopped.|  
-|[CBindStatusCallback::StartAsyncDownload](../Topic/CBindStatusCallback::StartAsyncDownload.md)|Initializes the bytes available and bytes read to zero, creates a push-type stream object from a URL, and calls `OnDataAvailable` every time data is available.|  
+|[CBindStatusCallback::Download](#cbindstatuscallback__download)|Static method that starts the download process, creates a `CBindStatusCallback` object, and calls `StartAsyncDownload`.|  
+|[CBindStatusCallback::GetBindInfo](#cbindstatuscallback__getbindinfo)|Called by the asynchronous moniker to request information on the type of bind to be created.|  
+|[CBindStatusCallback::GetPriority](#cbindstatuscallback__getpriority)|Called by the asynchronous moniker to get the priority of the bind operation. The ATL implementation returns `E_NOTIMPL`.|  
+|[CBindStatusCallback::OnDataAvailable](#cbindstatuscallback__ondataavailable)|Called to provide data to your application as it becomes available. Reads the data, then calls the function passed to it to use the data.|  
+|[CBindStatusCallback::OnLowResource](#cbindstatuscallback__onlowresource)|Called when resources are low. The ATL implementation returns `S_OK`.|  
+|[CBindStatusCallback::OnObjectAvailable](#cbindstatuscallback__onobjectavailable)|Called by the asynchronous moniker to pass an object interface pointer to your application. The ATL implementation returns `S_OK`.|  
+|[CBindStatusCallback::OnProgress](#cbindstatuscallback__onprogress)|Called to indicate the progress of a data downloading process. The ATL implementation returns `S_OK`.|  
+|[CBindStatusCallback::OnStartBinding](#cbindstatuscallback__onstartbinding)|Called when binding is started.|  
+|[CBindStatusCallback::OnStopBinding](#cbindstatuscallback__onstopbinding)|Called when the asynchronous data transfer is stopped.|  
+|[CBindStatusCallback::StartAsyncDownload](#cbindstatuscallback__startasyncdownload)|Initializes the bytes available and bytes read to zero, creates a push-type stream object from a URL, and calls `OnDataAvailable` every time data is available.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CBindStatusCallback::m_dwAvailableToRead](../Topic/CBindStatusCallback::m_dwAvailableToRead.md)|Number of bytes available to read.|  
-|[CBindStatusCallback::m_dwTotalRead](../Topic/CBindStatusCallback::m_dwTotalRead.md)|Total number of bytes read.|  
-|[CBindStatusCallback::m_pFunc](../Topic/CBindStatusCallback::m_pFunc.md)|Pointer to the function called when data is available.|  
-|[CBindStatusCallback::m_pT](../Topic/CBindStatusCallback::m_pT.md)|Pointer to the object requesting the asynchronous data transfer.|  
-|[CBindStatusCallback::m_spBindCtx](../Topic/CBindStatusCallback::m_spBindCtx.md)|Pointer to the [IBindCtx](http://msdn.microsoft.com/library/windows/desktop/ms693755) interface for the current bind operation.|  
-|[CBindStatusCallback::m_spBinding](../Topic/CBindStatusCallback::m_spBinding.md)|Pointer to the `IBinding` interface for the current bind operation.|  
-|[CBindStatusCallback::m_spMoniker](../Topic/CBindStatusCallback::m_spMoniker.md)|Pointer to the [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705) interface for the URL to use.|  
-|[CBindStatusCallback::m_spStream](../Topic/CBindStatusCallback::m_spStream.md)|Pointer to the [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) interface for the data transfer.|  
+|[CBindStatusCallback::m_dwAvailableToRead](#cbindstatuscallback__m_dwavailabletoread)|Number of bytes available to read.|  
+|[CBindStatusCallback::m_dwTotalRead](#cbindstatuscallback__m_dwtotalread)|Total number of bytes read.|  
+|[CBindStatusCallback::m_pFunc](#cbindstatuscallback__m_pfunc)|Pointer to the function called when data is available.|  
+|[CBindStatusCallback::m_pT](#cbindstatuscallback__m_pt)|Pointer to the object requesting the asynchronous data transfer.|  
+|[CBindStatusCallback::m_spBindCtx](#cbindstatuscallback__m_spbindctx)|Pointer to the [IBindCtx](http://msdn.microsoft.com/library/windows/desktop/ms693755) interface for the current bind operation.|  
+|[CBindStatusCallback::m_spBinding](#cbindstatuscallback__m_spbinding)|Pointer to the `IBinding` interface for the current bind operation.|  
+|[CBindStatusCallback::m_spMoniker](#cbindstatuscallback__m_spmoniker)|Pointer to the [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705) interface for the URL to use.|  
+|[CBindStatusCallback::m_spStream](#cbindstatuscallback__m_spstream)|Pointer to the [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) interface for the data transfer.|  
   
 ## Remarks  
  The `CBindStatusCallback` class implements the `IBindStatusCallback` interface. `IBindStatusCallback` must be implemented by your application so it can receive notifications from an asynchronous data transfer. The asynchronous moniker provided by the system uses `IBindStatusCallback` methods to send and receive information about the asynchronous data transfer to and from your object.  
@@ -128,7 +128,7 @@ CBindStatusCallback();
 ### Remarks  
  Creates an object to receive notifications concerning the asynchronous data transfer. Typically, one object is created for each bind operation.  
   
- The constructor also initializes [m_pT](../Topic/CBindStatusCallback::m_pT.md) and [m_pFunc](../Topic/CBindStatusCallback::m_pFunc.md) to **NULL**.  
+ The constructor also initializes [m_pT](#cbindstatuscallback__m_pt) and [m_pFunc](#cbindstatuscallback__m_pfunc) to **NULL**.  
   
 ##  <a name="cbindstatuscallback___dtorcbindstatuscallback"></a>  CBindStatusCallback::~CBindStatusCallback  
  The destructor.  
@@ -156,7 +156,7 @@ static HRESULT Download(T* pT,
  [in] A pointer to the object requesting the asynchronous data transfer. The `CBindStatusCallback` object is templatized on this object's class.  
   
  *pFunc*  
- [in] A pointer to the function that receives the data that is read. The function is a member of your object's class of type `T`. See [StartAsyncDownload](../Topic/CBindStatusCallback::StartAsyncDownload.md) for syntax and an example.  
+ [in] A pointer to the function that receives the data that is read. The function is a member of your object's class of type `T`. See [StartAsyncDownload](#cbindstatuscallback__startasyncdownload) for syntax and an example.  
   
  `bstrURL`  
  [in] The URL to obtain data from. Can be any valid URL or file name. Cannot be **NULL**. For example:  
@@ -336,7 +336,7 @@ STDMETHOD(OnDataAvailable)(DWORD grfBSCF,
  One of the standard `HRESULT` values.  
   
 ### Remarks  
- `OnDataAvailable` reads the data, then calls a method of your object's class (for example, to store the data or print it to the screen). See [CBindStatusCallback::StartAsyncDownload](../Topic/CBindStatusCallback::StartAsyncDownload.md) for details.  
+ `OnDataAvailable` reads the data, then calls a method of your object's class (for example, to store the data or print it to the screen). See [CBindStatusCallback::StartAsyncDownload](#cbindstatuscallback__startasyncdownload) for details.  
   
 ##  <a name="cbindstatuscallback__onlowresource"></a>  CBindStatusCallback::OnLowResource  
  Called when resources are low.  
@@ -397,7 +397,7 @@ STDMETHOD(OnProgress)(ULONG /* ulProgress */,
  Returns `S_OK`.  
   
 ##  <a name="cbindstatuscallback__onstartbinding"></a>  CBindStatusCallback::OnStartBinding  
- Sets the data member [m_spBinding](../Topic/CBindStatusCallback::m_spBinding.md) to the `IBinding` pointer in `pBinding`.  
+ Sets the data member [m_spBinding](#cbindstatuscallback__m_spbinding) to the `IBinding` pointer in `pBinding`.  
   
 ```
 STDMETHOD(OnStartBinding)(DWORD /* dwReserved */,
@@ -412,7 +412,7 @@ STDMETHOD(OnStartBinding)(DWORD /* dwReserved */,
  [in] Address of the IBinding interface of the current bind operation. This cannot be NULL. The client should call AddRef on this pointer to keep a reference to the binding object.  
   
 ##  <a name="cbindstatuscallback__onstopbinding"></a>  CBindStatusCallback::OnStopBinding  
- Releases the `IBinding` pointer in the data member [m_spBinding](../Topic/CBindStatusCallback::m_spBinding.md).  
+ Releases the `IBinding` pointer in the data member [m_spBinding](#cbindstatuscallback__m_spbinding).  
   
 ```
 STDMETHOD(OnStopBinding)(HRESULT hresult,  LPCWSTR /* szError */);
@@ -482,10 +482,3 @@ HRESULT StartAsyncDownload(T* pT,
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

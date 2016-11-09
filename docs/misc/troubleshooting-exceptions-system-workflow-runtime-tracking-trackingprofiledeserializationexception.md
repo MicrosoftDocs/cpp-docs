@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException"
+title: "Troubleshooting Exceptions: System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -39,7 +39,7 @@ translation.priority.mt:
 A <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException> exception is thrown when an XML document cannot be deserialized into a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> by a <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer>.  
   
 ## Remarks  
- When the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> throws this exception, it supplies a message that describes the reason for the exception. In some cases, the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> supplies a list of validation errors and warnings that it encountered while trying to deserialize the <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. If such a list is supplied, the <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs*> property contains it.  
+ When the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> throws this exception, it supplies a message that describes the reason for the exception. In some cases, the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> supplies a list of validation errors and warnings that it encountered while trying to deserialize the <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. If such a list is supplied, the <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs%2A> property contains it.  
   
 ## See Also  
  <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException>   

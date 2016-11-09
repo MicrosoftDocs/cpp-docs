@@ -1,7 +1,7 @@
 ---
-title: "Walkthrough: Creating a WPF Toolbox Control"
+title: "Walkthrough: Creating a WPF Toolbox Control | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -35,7 +35,7 @@ translation.priority.mt:
 The WPF Toolbox Control template that is included in the Visual Studio SDK lets you create Windows Presentation Foundation (WPF) controls that are automatically added to the **Toolbox** when the extension is installed. This walkthrough shows how to use the template to create a counter control that you can distribute to other users.  
   
 ## Prerequisites  
- To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](../Topic/Visual%20Studio%20SDK.md).  
+ To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](/visual-studio/extensibility/visual-studio-sdk).  
   
 ## Finding the WPF Toolbox Control Template in Visual Studio  
  The WPF Toolbox Control template is available in the **New Project** dialog box, under **Installed Templates**, in these locations:  
@@ -207,7 +207,7 @@ The WPF Toolbox Control template that is included in the Visual Studio SDK lets 
   
 ## See Also  
  [Extending the Toolbox](../misc/extending-the-toolbox.md)   
- [Creating a Windows Forms Toolbox Control](../Topic/Creating%20a%20Windows%20Forms%20Toolbox%20Control.md)   
- [Extending Other Parts of Visual Studio](../Topic/Extending%20Other%20Parts%20of%20Visual%20Studio.md)   
+ [Creating a Windows Forms Toolbox Control](/visual-studio/extensibility/creating-a-windows-forms-toolbox-control)   
+ [Extending Other Parts of Visual Studio](/visual-studio/extensibility/extending-other-parts-of-visual-studio)   
  [Working with Controls in the WPF Designer](http://msdn.microsoft.com/en-us/c6235492-b10d-4c3c-ba67-6b6a545faee1)   
  [Control Authoring Overview](../Topic/Control%20Authoring%20Overview.md)

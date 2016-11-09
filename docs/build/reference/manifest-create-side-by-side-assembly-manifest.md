@@ -1,7 +1,7 @@
 ---
-title: "-MANIFEST (Create Side-by-Side Assembly Manifest)"
+title: "-MANIFEST (Create Side-by-Side Assembly Manifest) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -75,7 +75,7 @@ translation.priority.ht:
   
 ### To set this linker option programmatically  
   
-1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.GenerateManifest*>.  
+1.  See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.GenerateManifest%2A>.  
   
 ## See Also  
  [Setting Linker Options](../../build/reference/setting-linker-options.md)   

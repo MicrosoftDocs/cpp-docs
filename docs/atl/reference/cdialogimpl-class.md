@@ -1,7 +1,7 @@
 ---
-title: "CDialogImpl Class"
+title: "CDialogImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "dialog boxes, ATL"
   - "CDialogImpl class"
 ms.assetid: d430bc7b-8a28-4ad3-9507-277bdd2c2c2e
-caps.latest.revision: 24
+caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -68,25 +68,25 @@ template <class T,
   
 |||  
 |-|-|  
-|[Create](../Topic/CDialogImpl::Create.md)|Creates a modeless dialog box.|  
-|[DestroyWindow](../Topic/CDialogImpl::DestroyWindow.md)|Destroys a modeless dialog box.|  
-|[DoModal](../Topic/CDialogImpl::DoModal.md)|Creates a modal dialog box.|  
-|[EndDialog](../Topic/CDialogImpl::EndDialog.md)|Destroys a modal dialog box.|  
+|[Create](#cdialogimpl__create)|Creates a modeless dialog box.|  
+|[DestroyWindow](#cdialogimpl__destroywindow)|Destroys a modeless dialog box.|  
+|[DoModal](#cdialogimpl__domodal)|Creates a modal dialog box.|  
+|[EndDialog](#cdialogimpl__enddialog)|Destroys a modal dialog box.|  
   
 ### CDialogImplBaseT Methods  
   
 |||  
 |-|-|  
-|[GetDialogProc](../Topic/CDialogImpl::GetDialogProc.md)|Returns the current dialog box procedure.|  
-|[MapDialogRect](../Topic/CDialogImpl::MapDialogRect.md)|Maps the dialog-box units of the specified rectangle to screen units (pixels).|  
-|[OnFinalMessage](../Topic/CDialogImpl::OnFinalMessage.md)|Called after receiving the last message, typically `WM_NCDESTROY`.|  
+|[GetDialogProc](#cdialogimpl__getdialogproc)|Returns the current dialog box procedure.|  
+|[MapDialogRect](#cdialogimpl__mapdialogrect)|Maps the dialog-box units of the specified rectangle to screen units (pixels).|  
+|[OnFinalMessage](#cdialogimpl__onfinalmessage)|Called after receiving the last message, typically `WM_NCDESTROY`.|  
   
 ### Static Functions  
   
 |||  
 |-|-|  
-|[DialogProc](../Topic/CDialogImpl::DialogProc.md)|Processes messages sent to the dialog box.|  
-|[StartDialogProc](../Topic/CDialogImpl::StartDialogProc.md)|Called when the first message is received to process messages sent to the dialog box.|  
+|[DialogProc](#cdialogimpl__dialogproc)|Processes messages sent to the dialog box.|  
+|[StartDialogProc](#cdialogimpl__startdialogproc)|Called when the first message is received to process messages sent to the dialog box.|  
   
 ## Remarks  
  With `CDialogImpl` you can create a modal or modeless dialog box. `CDialogImpl` provides the dialog box procedure, which uses the default message map to direct messages to the appropriate handlers.  
@@ -143,7 +143,7 @@ HWND Create(
  The handle to the newly created dialog box.  
   
 ### Remarks  
- This dialog box is automatically attached to the `CDialogImpl` object. To create a modal dialog box, call [DoModal](../Topic/CDialogImpl::DoModal.md). The second override above is used only with [CComControl](../../atl/reference/ccomcontrol-class.md).  
+ This dialog box is automatically attached to the `CDialogImpl` object. To create a modal dialog box, call [DoModal](#cdialogimpl__domodal). The second override above is used only with [CComControl](../../atl/reference/ccomcontrol-class.md).  
   
 ##  <a name="cdialogimpl__destroywindow"></a>  CDialogImpl::DestroyWindow  
  Destroys a modeless dialog box.  
@@ -216,12 +216,12 @@ INT_PTR DoModal(
  [in] Specifies the value to pass to the dialog box in the **lParam** parameter of the **WM_INITDIALOG** message.  
   
 ### Return Value  
- If successful, the value of the `nRetCode` parameter specified in the call to [EndDialog](../Topic/CDialogImpl::EndDialog.md). Otherwise, -1.  
+ If successful, the value of the `nRetCode` parameter specified in the call to [EndDialog](#cdialogimpl__enddialog). Otherwise, -1.  
   
 ### Remarks  
  This dialog box is automatically attached to the `CDialogImpl` object.  
   
- To create a modeless dialog box, call [Create](../Topic/CDialogImpl::Create.md).  
+ To create a modeless dialog box, call [Create](#cdialogimpl__create).  
   
 ##  <a name="cdialogimpl__enddialog"></a>  CDialogImpl::EndDialog  
  Destroys a modal dialog box.  
@@ -235,7 +235,7 @@ BOOL EndDialog(int nRetCode);
   
 ### Parameters  
  `nRetCode`  
- [in] The value to be returned by [CDialogImpl::DoModal](../Topic/CDialogImpl::DoModal.md).  
+ [in] The value to be returned by [CDialogImpl::DoModal](#cdialogimpl__domodal).  
   
 ### Return Value  
  **TRUE** if the dialog box is destroyed; otherwise, **FALSE**.  
@@ -244,7 +244,7 @@ BOOL EndDialog(int nRetCode);
  `EndDialog` must be called through the dialog procedure. After the dialog box is destroyed, Windows uses the value of `nRetCode` as the return value for `DoModal`, which created the dialog box.  
   
 > [!NOTE]
->  Do not call `EndDialog` to destroy a modeless dialog box. Call [CWindow::DestroyWindow](../Topic/CWindow::DestroyWindow.md) instead.  
+>  Do not call `EndDialog` to destroy a modeless dialog box. Call [CWindow::DestroyWindow](../../atl/reference/cwindow-class.md#cwindow__destroywindow) instead.  
   
 ##  <a name="cdialogimpl__getdialogproc"></a>  CDialogImpl::GetDialogProc  
  Returns `DialogProc`, the current dialog box procedure.  
@@ -335,8 +335,3 @@ static LRESULT CALLBACK StartDialogProc(
 ## See Also  
  [BEGIN_MSG_MAP](../Topic/BEGIN_MSG_MAP.md)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-

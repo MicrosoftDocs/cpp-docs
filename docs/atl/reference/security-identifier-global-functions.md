@@ -1,7 +1,7 @@
 ---
-title: "Security Identifier Global Functions"
+title: "Security Identifier Global Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "security IDs [C++]"
   - "SIDs [C++], returning SID objects"
 ms.assetid: 85404dcb-c59b-4535-ab3d-66cfa37e87de
-caps.latest.revision: 19
+caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -42,38 +42,38 @@ These functions return common well-known SID objects.
   
 |||  
 |-|-|  
-|[Sids::AccountOps](../Topic/Sids::AccountOps.md)|Returns the DOMAIN_ALIAS_RID_ACCOUNT_OPS SID.|  
-|[Sids::Admins](../Topic/Sids::Admins.md)|Returns the DOMAIN_ALIAS_RID_ADMINS SID.|  
-|[Sids::AnonymousLogon](../Topic/Sids::AnonymousLogon.md)|Returns the SECURITY_ANONYMOUS_LOGON_RID SID.|  
-|[Sids::AuthenticatedUser](../Topic/Sids::AuthenticatedUser.md)|Returns the SECURITY_AUTHENTICATED_USER_RID SID.|  
-|[Sids::BackupOps](../Topic/Sids::BackupOps.md)|Returns the DOMAIN_ALIAS_RID_BACKUP_OPS SID.|  
-|[Sids::Batch](../Topic/Sids::Batch.md)|Returns the SECURITY_BATCH_RID SID.|  
-|[Sids::CreatorGroup](../Topic/Sids::CreatorGroup.md)|Returns the SECURITY_CREATOR_GROUP_RID SID.|  
-|[Sids::CreatorGroupServer](../Topic/Sids::CreatorGroupServer.md)|Returns the SECURITY_CREATOR_GROUP_SERVER_RID SID.|  
-|[Sids::CreatorOwner](../Topic/Sids::CreatorOwner.md)|Returns the SECURITY_CREATOR_OWNER_RID SID.|  
-|[Sids::CreatorOwnerServer](../Topic/Sids::CreatorOwnerServer.md)|Returns the SECURITY_CREATOR_OWNER_SERVER_RID SID.|  
-|[Sids::Dialup](../Topic/Sids::Dialup.md)|Returns the SECURITY_DIALUP_RID SID.|  
-|[Sids::Guests](../Topic/Sids::Guests.md)|Returns the DOMAIN_ALIAS_RID_GUESTS SID.|  
-|[Sids::Interactive](../Topic/Sids::Interactive.md)|Returns the SECURITY_INTERACTIVE_RID SID.|  
-|[Sids::Local](../Topic/Sids::Local.md)|Returns the SECURITY_LOCAL_RID SID.|  
-|[Sids::Network](../Topic/Sids::Network.md)|Returns the SECURITY_NETWORK_RID SID.|  
-|[Sids::NetworkService](../Topic/Sids::NetworkService.md)|Returns the SECURITY_NETWORK_SERVICE_RID SID.|  
-|[Sids::Null](../Topic/Sids::Null.md)|Returns the SECURITY_NULL_RID SID.|  
-|[Sids::PreW2KAccess](../Topic/Sids::PreW2KAccess.md)|Returns the DOMAIN_ALIAS_RID_PREW2KCOMPACCESS SID.|  
-|[Sids::PowerUsers](../Topic/Sids::PowerUsers.md)|Returns the DOMAIN_ALIAS_RID_POWER_USERS SID.|  
-|[Sids::PrintOps](../Topic/Sids::PrintOps.md)|Returns the DOMAIN_ALIAS_RID_PRINT_OPS SID.|  
-|[Sids::Proxy](../Topic/Sids::Proxy.md)|Returns the SECURITY_PROXY_RID SID.|  
-|[Sids::RasServers](../Topic/Sids::RasServers.md)|Returns the DOMAIN_ALIAS_RID_RAS_SERVERS SID.|  
-|[Sids::Replicator](../Topic/Sids::Replicator.md)|Returns the DOMAIN_ALIAS_RID_REPLICATOR SID.|  
-|[Sids::RestrictedCode](../Topic/Sids::RestrictedCode.md)|Returns the SECURITY_RESTRICTED_CODE_RID SID.|  
-|[Sids::Self](../Topic/Sids::Self.md)|Returns the SECURITY_PRINCIPAL_SELF_RID SID.|  
-|[Sids::ServerLogon](../Topic/Sids::ServerLogon.md)|Returns the SECURITY_SERVER_LOGON_RID SID.|  
-|[Sids::Service](../Topic/Sids::Service.md)|Returns the SECURITY_SERVICE_RID SID.|  
-|[Sids::System](../Topic/Sids::System.md)|Returns the SECURITY_LOCAL_SYSTEM_RID SID.|  
-|[Sids::SystemOps](../Topic/Sids::SystemOps.md)|Returns the DOMAIN_ALIAS_RID_SYSTEM_OPS SID.|  
-|[Sids::TerminalServer](../Topic/Sids::TerminalServer.md)|Returns the SECURITY_TERMINAL_SERVER_RID SID.|  
-|[Sids::Users](../Topic/Sids::Users.md)|Returns the DOMAIN_ALIAS_RID_USERS SID.|  
-|[Sids::World](../Topic/Sids::World.md)|Returns the SECURITY_WORLD_RID SID.|  
+|[Sids::AccountOps](#sids__accountops)|Returns the DOMAIN_ALIAS_RID_ACCOUNT_OPS SID.|  
+|[Sids::Admins](#sids__admins)|Returns the DOMAIN_ALIAS_RID_ADMINS SID.|  
+|[Sids::AnonymousLogon](#sids__anonymouslogon)|Returns the SECURITY_ANONYMOUS_LOGON_RID SID.|  
+|[Sids::AuthenticatedUser](#sids__authenticateduser)|Returns the SECURITY_AUTHENTICATED_USER_RID SID.|  
+|[Sids::BackupOps](#sids__backupops)|Returns the DOMAIN_ALIAS_RID_BACKUP_OPS SID.|  
+|[Sids::Batch](#sids__batch)|Returns the SECURITY_BATCH_RID SID.|  
+|[Sids::CreatorGroup](#sids__creatorgroup)|Returns the SECURITY_CREATOR_GROUP_RID SID.|  
+|[Sids::CreatorGroupServer](#sids__creatorgroupserver)|Returns the SECURITY_CREATOR_GROUP_SERVER_RID SID.|  
+|[Sids::CreatorOwner](#sids__creatorowner)|Returns the SECURITY_CREATOR_OWNER_RID SID.|  
+|[Sids::CreatorOwnerServer](#sids__creatorownerserver)|Returns the SECURITY_CREATOR_OWNER_SERVER_RID SID.|  
+|[Sids::Dialup](#sids__dialup)|Returns the SECURITY_DIALUP_RID SID.|  
+|[Sids::Guests](#sids__guests)|Returns the DOMAIN_ALIAS_RID_GUESTS SID.|  
+|[Sids::Interactive](#sids__interactive)|Returns the SECURITY_INTERACTIVE_RID SID.|  
+|[Sids::Local](#sids__local)|Returns the SECURITY_LOCAL_RID SID.|  
+|[Sids::Network](#sids__network)|Returns the SECURITY_NETWORK_RID SID.|  
+|[Sids::NetworkService](#sids__networkservice)|Returns the SECURITY_NETWORK_SERVICE_RID SID.|  
+|[Sids::Null](#sids__null)|Returns the SECURITY_NULL_RID SID.|  
+|[Sids::PreW2KAccess](#sids__prew2kaccess)|Returns the DOMAIN_ALIAS_RID_PREW2KCOMPACCESS SID.|  
+|[Sids::PowerUsers](#sids__powerusers)|Returns the DOMAIN_ALIAS_RID_POWER_USERS SID.|  
+|[Sids::PrintOps](#sids__printops)|Returns the DOMAIN_ALIAS_RID_PRINT_OPS SID.|  
+|[Sids::Proxy](#sids__proxy)|Returns the SECURITY_PROXY_RID SID.|  
+|[Sids::RasServers](#sids__rasservers)|Returns the DOMAIN_ALIAS_RID_RAS_SERVERS SID.|  
+|[Sids::Replicator](#sids__replicator)|Returns the DOMAIN_ALIAS_RID_REPLICATOR SID.|  
+|[Sids::RestrictedCode](#sids__restrictedcode)|Returns the SECURITY_RESTRICTED_CODE_RID SID.|  
+|[Sids::Self](#sids__self)|Returns the SECURITY_PRINCIPAL_SELF_RID SID.|  
+|[Sids::ServerLogon](#sids__serverlogon)|Returns the SECURITY_SERVER_LOGON_RID SID.|  
+|[Sids::Service](#sids__service)|Returns the SECURITY_SERVICE_RID SID.|  
+|[Sids::System](#sids__system)|Returns the SECURITY_LOCAL_SYSTEM_RID SID.|  
+|[Sids::SystemOps](#sids__systemops)|Returns the DOMAIN_ALIAS_RID_SYSTEM_OPS SID.|  
+|[Sids::TerminalServer](#sids__terminalserver)|Returns the SECURITY_TERMINAL_SERVER_RID SID.|  
+|[Sids::Users](#sids__users)|Returns the DOMAIN_ALIAS_RID_USERS SID.|  
+|[Sids::World](#sids__world)|Returns the SECURITY_WORLD_RID SID.|  
   
 ##  <a name="sids__accountops"></a>  Sids::AccountOps  
  Returns the DOMAIN_ALIAS_RID_ACCOUNT_OPS SID.  
@@ -402,8 +402,3 @@ CSid World() throw(...);
   
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)
-
-
-
-
-

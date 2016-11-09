@@ -1,7 +1,7 @@
 ---
-title: "Unable to delete file &lt;name&gt;. The file may be in use by another application or marked read-only."
+title: "Unable to delete file &lt;name&gt;. The file may be in use by another application or marked read-only. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -45,4 +45,4 @@ This error generally occurs when the keyboard scheme selected to be deleted is e
      If the file is read-only, remove the read-only attribute. You can modify the read-only attribute in the Properties dialog box for the file, available in File Explorer.  
   
 ## See Also  
- [Identifying and Customizing Keyboard Shortcuts](../Topic/Identifying%20and%20Customizing%20Keyboard%20Shortcuts%20in%20Visual%20Studio.md)
+ [Identifying and Customizing Keyboard Shortcuts](/visual-studio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)

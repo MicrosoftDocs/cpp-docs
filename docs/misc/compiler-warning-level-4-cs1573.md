@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 4) CS1573"
+title: "Compiler Warning (level 4) CS1573 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1573"
 ms.assetid: 1b68cb1a-9bfd-4343-b9b6-8ce195af5e23
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Warning (level 4) CS1573
 Parameter 'parameter' has no matching param tag in the XML comment for 'parameter' (but other parameters do)  
   
- When using the [/doc](../Topic/-doc%20\(C%23%20Compiler%20Options\).md) compiler option, a comment was specified for some but not all parameters in a method. You may have forgotten to enter a comment for these parameters.  
+ When using the [/doc](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option) compiler option, a comment was specified for some but not all parameters in a method. You may have forgotten to enter a comment for these parameters.  
   
  The following sample generates CS1573:  
   

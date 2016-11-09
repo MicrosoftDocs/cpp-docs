@@ -1,5 +1,5 @@
 ---
-title: "XML literals and XML axis properties are not available"
+title: "XML literals and XML axis properties are not available | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,6 +47,6 @@ XML literals and XML axis properties are not available. Add references to System
 -   Add references to the System.Xml.dll, System.Xml.Linq.dll, and System.Core.dll assemblies.  
   
 ## See Also  
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [XML Axis Properties](../Topic/XML%20Axis%20Properties%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
+ [XML Axis Properties](/dotnet/visual-basic/language-reference/xml-axis/xml-axis-properties)   
+ [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)

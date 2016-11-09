@@ -1,5 +1,5 @@
 ---
-title: "&#39;-&#39; expected"
+title: "&#39;-&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ The syntax for this line is incorrect.
 -   Check the syntax of the code that raised this error.  
   
 ## See Also  
- [Program Structure and Code Conventions](../Topic/Program%20Structure%20and%20Code%20Conventions%20\(Visual%20Basic\).md)
+ [Program Structure and Code Conventions](/dotnet/visual-basic/programming-guide/program-structure/program-structure-and-code-conventions)

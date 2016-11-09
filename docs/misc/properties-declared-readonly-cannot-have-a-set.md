@@ -1,5 +1,5 @@
 ---
-title: "Properties declared &#39;ReadOnly&#39; cannot have a &#39;Set&#39;"
+title: "Properties declared &#39;ReadOnly&#39; cannot have a &#39;Set&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ The `Set` procedure writes the value of a property. `ReadOnly` properties cannot
 -   Remove the `ReadOnly` keyword from the `Property` statement, or remove the `Set` procedure from the property body.  
   
 ## See Also  
- [Property Statement](../Topic/Property%20Statement.md)   
- [Set Statement](../Topic/Set%20Statement%20\(Visual%20Basic\).md)   
- [ReadOnly](../Topic/ReadOnly%20\(Visual%20Basic\).md)
+ [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
+ [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement)   
+ [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)

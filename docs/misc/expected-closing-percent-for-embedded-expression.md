@@ -1,5 +1,5 @@
 ---
-title: "Expected closing &#39;%&gt;&#39; for embedded expression"
+title: "Expected closing &#39;%&gt;&#39; for embedded expression | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ An embedded expression in an XML literal is missing the required closing `%>` ch
 -   Add the required closing `%>` characters to the end of the embedded expression.  
   
 ## See Also  
- [Embedded Expressions in XML](../Topic/Embedded%20Expressions%20in%20XML%20\(Visual%20Basic\).md)   
- [XML Literals](../Topic/XML%20Literals%20\(Visual%20Basic\).md)   
- [XML](../Topic/XML%20in%20Visual%20Basic.md)
+ [Embedded Expressions in XML](/dotnet/visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml)   
+ [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)

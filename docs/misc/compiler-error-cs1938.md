@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1938"
+title: "Compiler Error CS1938 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1938"
 ms.assetid: fc8de996-f7a1-46e8-b07b-aea520b391b9
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -67,4 +68,4 @@ class Test
 ```  
   
 ## See Also  
- [join clause](../Topic/join%20clause%20\(C%23%20Reference\).md)
+ [join clause](/dotnet/csharp/language-reference/keywords/join-clause)

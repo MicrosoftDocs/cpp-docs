@@ -1,7 +1,7 @@
 ---
-title: "Using the Gradient Service in a Tool Window"
+title: "Using the Gradient Service in a Tool Window | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

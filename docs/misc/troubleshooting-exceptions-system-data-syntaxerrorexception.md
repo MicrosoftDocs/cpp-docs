@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting Exceptions: System.Data.SyntaxErrorException"
+title: "Troubleshooting Exceptions: System.Data.SyntaxErrorException | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -34,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Troubleshooting Exceptions: System.Data.SyntaxErrorException
-The exception that is thrown when the <xref:System.Data.DataColumn.Expression*> property of a <xref:System.Data.DataColumn> contains a syntax error.  
+The exception that is thrown when the <xref:System.Data.DataColumn.Expression%2A> property of a <xref:System.Data.DataColumn> contains a syntax error.  
   
 ## See Also  
  <xref:System.Data.SyntaxErrorException>   

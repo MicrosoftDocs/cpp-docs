@@ -1,7 +1,7 @@
 ---
-title: "__gc"
+title: "__gc | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -66,8 +66,8 @@ __gc new
   
 |Managed Extensions for C++|C#|For more information|  
 |----------------------------------|---------|--------------------------|  
-|__gc struct or \__gc class|class|[class](../Topic/class%20\(C%23%20Reference\).md) keyword|  
-|__value struct or \__value class|struct|[struct](../Topic/struct%20\(C%23%20Reference\).md) keyword|  
+|__gc struct or \__gc class|class|[class](/dotnet/csharp/language-reference/keywords/class) keyword|  
+|__value struct or \__value class|struct|[struct](/dotnet/csharp/language-reference/keywords/struct) keyword|  
   
 ## Example  
  In the following example, a managed class (`X`) is declared with a public data member, which is manipulated through a managed pointer:  

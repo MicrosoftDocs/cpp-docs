@@ -1,5 +1,5 @@
 ---
-title: "&#39;ReDim&#39; statements can no longer be used to declare array variables"
+title: "&#39;ReDim&#39; statements can no longer be used to declare array variables | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -49,6 +49,6 @@ translation.priority.mt:
     ```  
   
 ## See Also  
- [Arrays Summary](../Topic/Arrays%20Summary%20\(Visual%20Basic\).md)   
- [ReDim Statement](../Topic/ReDim%20Statement%20\(Visual%20Basic\).md)   
+ [Arrays Summary](/dotnet/visual-basic/language-reference/keywords/arrays-summary)   
+ [ReDim Statement](/dotnet/visual-basic/language-reference/statements/redim-statement)   
  [ReDim Statement Changes in Visual Basic](http://msdn.microsoft.com/en-us/b4da14db-ff23-490f-b3c6-d7ae1b649532)

@@ -1,7 +1,7 @@
 ---
-title: "IOleControlImpl Class"
+title: "IOleControlImpl Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords: 
   - "IOleControlImpl class"
 ms.assetid: 5a4255ad-ede4-49ca-ba9a-07c2e919fa85
-caps.latest.revision: 21
+caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -59,10 +59,10 @@ class
   
 |Name|Description|  
 |----------|-----------------|  
-|[IOleControlImpl::FreezeEvents](../Topic/IOleControlImpl::FreezeEvents.md)|Indicates whether or not the container ignores or accepts events from the control.|  
-|[IOleControlImpl::GetControlInfo](../Topic/IOleControlImpl::GetControlInfo.md)|Fills in information about the control's keyboard behavior. The ATL implementation returns **E_NOTIMPL**.|  
-|[IOleControlImpl::OnAmbientPropertyChange](../Topic/IOleControlImpl::OnAmbientPropertyChange.md)|Informs a control that one or more of the container's ambient properties has changed. The ATL implementation returns `S_OK`.|  
-|[IOleControlImpl::OnMnemonic](../Topic/IOleControlImpl::OnMnemonic.md)|Informs the control that a user has pressed a specified keystroke. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleControlImpl::FreezeEvents](#iolecontrolimpl__freezeevents)|Indicates whether or not the container ignores or accepts events from the control.|  
+|[IOleControlImpl::GetControlInfo](#iolecontrolimpl__getcontrolinfo)|Fills in information about the control's keyboard behavior. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleControlImpl::OnAmbientPropertyChange](#iolecontrolimpl__onambientpropertychange)|Informs a control that one or more of the container's ambient properties has changed. The ATL implementation returns `S_OK`.|  
+|[IOleControlImpl::OnMnemonic](#iolecontrolimpl__onmnemonic)|Informs the control that a user has pressed a specified keystroke. The ATL implementation returns **E_NOTIMPL**.|  
   
 ## Remarks  
  Class `IOleControlImpl` provides a default implementation of the [IOleControl](http://msdn.microsoft.com/library/windows/desktop/ms694320) interface and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -132,10 +132,3 @@ HRESULT OnMnemonic(LPMSG   pMsg);
  [IOleObjectImpl Class](../../atl/reference/ioleobjectimpl-class.md)   
  [ActiveX Controls Interfaces](http://msdn.microsoft.com/library/windows/desktop/ms692724)   
  [Class Overview](../../atl/atl-class-overview.md)
-
-
-
-
-
-
-

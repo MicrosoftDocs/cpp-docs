@@ -1,5 +1,5 @@
 ---
-title: "&lt;error&gt;: &#39;&lt;classname1&gt;&#39; inherits from &#39;&lt;classname2&gt;&#39;"
+title: "&lt;error&gt;: &#39;&lt;classname1&gt;&#39; inherits from &#39;&lt;classname2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ A circular inheritance hierarchy has been detected. A class is designated as inh
 -   Break the circularity by removing at least one `Inherits` statement in the circular inheritance path.  
   
 ## See Also  
- [Inheritance Basics](../Topic/Inheritance%20Basics%20\(Visual%20Basic\).md)
+ [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

@@ -1,7 +1,7 @@
 ---
-title: "Designing a Wizard"
+title: "Designing a Wizard | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -39,7 +39,7 @@ translation.priority.ht:
 # Designing a Wizard
 You might need to create projects with standardized features that differ from the application wizards that are provided in Visual C++. For such tasks, you can use the Visual C++ wizard architecture, which is designed for easy extensibility and customization. You can create a wizard using the [Visual C++ Custom Wizard](../ide/creating-a-custom-wizard.md). After you create your wizard, you can configure it to generate the starter files you need for your projects.  
   
- A Visual C++ wizard is an HTML control. It uses the Visual C++ wizard engine, <xref:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI>, which provides common services, such as <xref:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.NavigateToCommandHandler*>, <xref:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.OkCancelAlert*>, and so on. The wizard also uses the script engine, which allows a wizard to understand both VBScript and [JScript .NET](http://msdn.microsoft.com/en-us/c7e636ee-c10f-45b1-85ec-fe2daca30bf5).  
+ A Visual C++ wizard is an HTML control. It uses the Visual C++ wizard engine, <xref:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI>, which provides common services, such as <xref:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.NavigateToCommandHandler%2A>, <xref:Microsoft.VisualStudio.VsWizard.IVCWizCtlUI.OkCancelAlert%2A>, and so on. The wizard also uses the script engine, which allows a wizard to understand both VBScript and [JScript .NET](http://msdn.microsoft.com/en-us/c7e636ee-c10f-45b1-85ec-fe2daca30bf5).  
   
  The wizard architecture allows you to access the following object models directly in your wizards, and call their methods, properties, and events from either the JScript or the HTML files. (See the examples in [The HTML Files](../ide/html-files.md) and [The JScript File](../ide/jscript-file.md) for more information.)  
   

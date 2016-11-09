@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;typename&gt;&#39; is a generic type and requires type arguments"
+title: "&#39;&lt;typename&gt;&#39; is a generic type and requires type arguments | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,6 +47,6 @@ A variable, procedure parameter, or function return is declared to have the type
 -   Add a type list to the declaration, enclosed in parentheses and beginning with the `Of` keyword.  
   
 ## See Also  
- [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)   
- [Of](../Topic/Of%20Clause%20\(Visual%20Basic\).md)   
- [Type List](../Topic/Type%20List%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Of](/dotnet/visual-basic/language-reference/statements/of-clause)   
+ [Type List](/dotnet/visual-basic/language-reference/statements/type-list)

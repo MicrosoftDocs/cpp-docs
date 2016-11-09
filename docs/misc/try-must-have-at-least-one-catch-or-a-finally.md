@@ -1,5 +1,5 @@
 ---
-title: "Try must have at least one &#39;Catch&#39; or a &#39;Finally&#39;"
+title: "Try must have at least one &#39;Catch&#39; or a &#39;Finally&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ A `Try` block must include either a `Finally` block or at least one `Catch` bloc
 -   Add a `Catch` or `Finally` block within the `Try` block.  
   
 ## See Also  
- [Try...Catch...Finally Statement](../Topic/Try...Catch...Finally%20Statement%20\(Visual%20Basic\).md)
+ [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)

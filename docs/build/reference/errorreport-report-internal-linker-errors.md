@@ -1,7 +1,7 @@
 ---
-title: "-ERRORREPORT (Report Internal Linker Errors)"
+title: "-ERRORREPORT (Report Internal Linker Errors) | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -62,7 +62,7 @@ translation.priority.ht:
   
 ### To set this compiler option programmatically  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ErrorReporting*>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ErrorReporting%2A>.  
   
 ## See Also  
  [/errorReport (Report Internal Compiler Errors)](../../build/reference/errorreport-report-internal-compiler-errors.md)   

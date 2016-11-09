@@ -1,5 +1,5 @@
 ---
-title: "Instance of restricted type &#39;&lt;typename&gt;&#39; cannot be used in a lambda expression"
+title: "Instance of restricted type &#39;&lt;typename&gt;&#39; cannot be used in a lambda expression | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -41,4 +41,4 @@ Instances of restricted types, such as <xref:System.ArgIterator>, <xref:System.R
  **Error ID:** BC36640  
   
 ## See Also  
- [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md)
+ [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)

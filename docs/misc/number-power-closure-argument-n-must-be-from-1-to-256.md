@@ -1,7 +1,7 @@
 ---
-title: "&lt;number&gt; power closure argument &#39;n&#39; must be from 1 to 256."
+title: "&lt;number&gt; power closure argument &#39;n&#39; must be from 1 to 256. | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -38,9 +38,9 @@ This error generally occurs when the number exceeds the accepted range of 1 to 2
   
 ### To correct this error  
   
-1.  Enter a number between 1 and 256 and try again. For more information on syntax, see [Regular Expressions](../Topic/Using%20Regular%20Expressions%20in%20Visual%20Studio.md).  
+1.  Enter a number between 1 and 256 and try again. For more information on syntax, see [Regular Expressions](/visual-studio/ide/using-regular-expressions-in-visual-studio).  
   
 ## See Also  
- [Finding and Replacing Text](../Topic/Finding%20and%20Replacing%20Text.md)   
- [Using Regular Expressions in Visual Studio](../Topic/Using%20Regular%20Expressions%20in%20Visual%20Studio.md)   
+ [Finding and Replacing Text](/visual-studio/ide/finding-and-replacing-text)   
+ [Using Regular Expressions in Visual Studio](/visual-studio/ide/using-regular-expressions-in-visual-studio)   
  [Wildcards (Visual Studio)](http://msdn.microsoft.com/en-us/9745c56f-0b73-44e1-b393-c17e39670c26)

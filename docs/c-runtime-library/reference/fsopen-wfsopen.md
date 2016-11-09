@@ -1,7 +1,7 @@
 ---
-title: "_fsopen, _wfsopen"
+title: "_fsopen, _wfsopen | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -186,7 +186,7 @@ No one else in the network can write to this file until we are done.
   
 -   [System::IO::File::Open](https://msdn.microsoft.com/en-us/library/system.io.file.open.aspx)  
   
--   <xref:System.IO.FileStream.#ctor*>  
+-   <xref:System.IO.FileStream.%23ctor%2A>  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

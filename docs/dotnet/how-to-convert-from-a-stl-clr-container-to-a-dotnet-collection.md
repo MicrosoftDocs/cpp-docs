@@ -1,7 +1,7 @@
 ---
-title: "How to: Convert from a STL-CLR Container to a .NET Collection"
+title: "How to: Convert from a STL-CLR Container to a .NET Collection | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Convert from a STL/CLR Container to a .NET Collection
-This topic shows how to convert STL/CLR containers to their equivalent .NET collections. As an example, we show how to convert a STL/CLR [vector](../dotnet/vector-stl-clr.md) to a .NET <xref:System.Collections.Generic.ICollection`1> and how to convert a STL/CLR [map](../dotnet/map-stl-clr.md) to a .NET <xref:System.Collections.Generic.IDictionary`2>, but the procedure is similar for all collections and containers.  
+This topic shows how to convert STL/CLR containers to their equivalent .NET collections. As an example, we show how to convert a STL/CLR [vector](../dotnet/vector-stl-clr.md) to a .NET <xref:System.Collections.Generic.ICollection%601> and how to convert a STL/CLR [map](../dotnet/map-stl-clr.md) to a .NET <xref:System.Collections.Generic.IDictionary%602>, but the procedure is similar for all collections and containers.  
   
 ### To create a collection from a container  
   
@@ -89,7 +89,7 @@ The contents of the System::Collections::Generic::ICollection are:
 ```  
   
 ## Example  
- In this example, we create a STL/CLR `map` and add 5 elements to it. Then, we create a .NET <xref:System.Collections.Generic.IDictionary`2> and assign the `map` directly to it. Finally, we display the contents of the newly created collection.  
+ In this example, we create a STL/CLR `map` and add 5 elements to it. Then, we create a .NET <xref:System.Collections.Generic.IDictionary%602> and assign the `map` directly to it. Finally, we display the contents of the newly created collection.  
   
 ```  
 // cliext_convert_map_to_idictionary.cpp  

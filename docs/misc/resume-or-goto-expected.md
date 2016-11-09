@@ -1,5 +1,5 @@
 ---
-title: "&#39;Resume&#39; or &#39;GoTo&#39; expected"
+title: "&#39;Resume&#39; or &#39;GoTo&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,6 +45,6 @@ An `On Error` statement does not contain either a `Resume` clause or a `GoTo` cl
 -   Add either a `Resume` clause or a `GoTo` clause to the `On Error` statement.  
   
 ## See Also  
- [On Error Statement](../Topic/On%20Error%20Statement%20\(Visual%20Basic\).md)   
- [Resume Statement](../Topic/Resume%20Statement.md)   
- [GoTo Statement](../Topic/GoTo%20Statement.md)
+ [On Error Statement](/dotnet/visual-basic/language-reference/statements/on-error-statement)   
+ [Resume Statement](/dotnet/visual-basic/language-reference/statements/resume-statement)   
+ [GoTo Statement](/dotnet/visual-basic/language-reference/statements/goto-statement)

@@ -1,5 +1,5 @@
 ---
-title: "Method &#39;&lt;methodname&gt;&#39; cannot handle Event &#39;&lt;eventname&gt;&#39; because they do not have the same signature"
+title: "Method &#39;&lt;methodname&gt;&#39; cannot handle Event &#39;&lt;eventname&gt;&#39; because they do not have the same signature | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ The parameters or parameter types for the specified event handler do not match t
 -   Redefine the event or event handler so that the parameter lists match.  
   
 ## See Also  
- [Events](../Topic/Events%20\(Visual%20Basic\).md)
+ [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)

@@ -1,7 +1,7 @@
 ---
-title: "Best Practices for Security in the Visual Studio SDK"
+title: "Best Practices for Security in the Visual Studio SDK | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -75,6 +75,6 @@ You need to understand security for VSPackage extensions so that you can create 
  Note that UAC also affects deployment. Installation packages must be correctly authored to support UAC. An incorrectly authored package typically causes "access denied" errors because the installer tries to use normal user rights to perform a task that requires elevated rights.  
   
 ## See Also  
- [Best Practices for Security in VSPackages](../Topic/Best%20Practices%20for%20Security%20in%20VSPackages.md)   
+ [Best Practices for Security in VSPackages](/visual-studio/extensibility/internals/best-practices-for-security-in-vspackages)   
  [Resources for Creating Secure Applications](http://msdn.microsoft.com/en-us/0ebf5f69-76f2-498a-a2df-83cf3443e132)   
  [Key Security Concepts](../Topic/Key%20Security%20Concepts.md)

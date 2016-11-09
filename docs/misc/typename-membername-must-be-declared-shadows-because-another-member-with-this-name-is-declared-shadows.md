@@ -1,5 +1,5 @@
 ---
-title: "&lt;typename&gt; &#39;&lt;membername&gt;&#39; must be declared &#39;Shadows&#39; because another member with this name is declared &#39;Shadows&#39;"
+title: "&lt;typename&gt; &#39;&lt;membername&gt;&#39; must be declared &#39;Shadows&#39; because another member with this name is declared &#39;Shadows&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ This property or procedure has the same name as another property or procedure ma
 -   Use the `Shadows` modifier.  
   
 ## See Also  
- [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md)
+ [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)

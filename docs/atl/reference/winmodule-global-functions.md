@@ -1,7 +1,7 @@
 ---
-title: "WinModule Global Functions"
+title: "WinModule Global Functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -12,7 +12,7 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 8ce45a5b-26a7-491f-9096-c09ceca5f2c2
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -39,8 +39,8 @@ These functions provide support for `_AtlCreateWndData` structure operations.
   
 |||  
 |-|-|  
-|[AtlWinModuleAddCreateWndData](../Topic/AtlWinModuleAddCreateWndData.md)|This function is used to initialize and add an `_AtlCreateWndData` structure.|  
-|[AtlWinModuleExtractCreateWndData](../Topic/AtlWinModuleExtractCreateWndData.md)|Call this function to extract an existing `_AtlCreateWndData` structure.|  
+|[AtlWinModuleAddCreateWndData](#atlwinmoduleaddcreatewnddata)|This function is used to initialize and add an `_AtlCreateWndData` structure.|  
+|[AtlWinModuleExtractCreateWndData](#atlwinmoduleextractcreatewnddata)|Call this function to extract an existing `_AtlCreateWndData` structure.|  
   
 ##  <a name="atlwinmoduleaddcreatewnddata"></a>  AtlWinModuleAddCreateWndData  
  This function is used to initialize and add an `_AtlCreateWndData` structure.  
@@ -90,8 +90,3 @@ ATLINLINE ATLAPI_(void*) AtlWinModuleExtractCreateWndData(_ATL_WIN_MODULE* pWinM
   
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)
-
-
-
-
-

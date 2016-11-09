@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0315"
+title: "Compiler Error CS0315 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0315"
 ms.assetid: 9bb1cab3-1dca-4467-978b-1ab310901a70
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -66,5 +67,5 @@ public class Test
 ```  
   
 ## See Also  
- [Constraints on Type Parameters](../Topic/Constraints%20on%20Type%20Parameters%20\(C%23%20Programming%20Guide\).md)   
- [Boxing and Unboxing](../Topic/Boxing%20and%20Unboxing%20\(C%23%20Programming%20Guide\).md)
+ [Constraints on Type Parameters](/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters)   
+ [Boxing and Unboxing](/dotnet/csharp/programming-guide/types/boxing-and-unboxing)

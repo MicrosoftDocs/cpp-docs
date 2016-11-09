@@ -1,7 +1,7 @@
 ---
-title: "Aggregation and Class Factory Macros"
+title: "Aggregation and Class Factory Macros | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "class factories, ATL macros"
   - "aggregation [C++], ATL macros"
 ms.assetid: d99d379a-0eec-481f-8daa-252dac18f163
-caps.latest.revision: 16
+caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -350,4 +350,3 @@ DECLARE_VIEW_STATUS(Ã‚
   
 ## See Also  
  [Macros](../../atl/reference/atl-macros.md)
-

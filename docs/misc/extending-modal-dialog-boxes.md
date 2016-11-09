@@ -1,7 +1,7 @@
 ---
-title: "Extending Modal Dialog Boxes"
+title: "Extending Modal Dialog Boxes | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -62,16 +62,16 @@ To guarantee functional and visual compatibility with Visual Studio, create moda
   
      [!code-cs[VSModalDialog#12](../misc/codesnippet/CSharp/extending-modal-dialog-boxes_2.cs)]  
   
-     This constructor sets the <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasHelpButton*> property to `true` and enables the received string to be used as a keyword when a user presses F1 or clicks the **Help** button.  
+     This constructor sets the <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasHelpButton%2A> property to `true` and enables the received string to be used as a keyword when a user presses F1 or clicks the **Help** button.  
   
 #### To add Minimize and Maximize buttons to a modal dialog box  
   
-1.  In the constructor function, set the <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.hasMinimizeButton*> and <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.hasHMaximizeButton*> properties to `true`, as shown in the following example.  
+1.  In the constructor function, set the <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.hasMinimizeButton%2A> and <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.hasHMaximizeButton%2A> properties to `true`, as shown in the following example.  
   
      [!code-cs[VSModalDialog#13](../misc/codesnippet/CSharp/extending-modal-dialog-boxes_3.cs)]  
   
     > [!WARNING]
-    >  When **Minimize** and **Maximize** buttons are shown, the **Help** button is hidden, even if the <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasHelpButton*> property is set to `true`.  
+    >  When **Minimize** and **Maximize** buttons are shown, the **Help** button is hidden, even if the <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasHelpButton%2A> property is set to `true`.  
   
 ## Example  
  The following example shows a modal dialog box that has two constructors. The first constructor takes an F1 keyword as an argument and displays a **Help** button. The second constructor takes no arguments, but displays **Minimize** and **Maximize** buttons. When you click the **Yes** button, a second instance of the dialog box is invoked and has Help enabled.  
@@ -85,4 +85,4 @@ To guarantee functional and visual compatibility with Visual Studio, create moda
  [!code-cs[VSModalDialog#21](../misc/codesnippet/CSharp/extending-modal-dialog-boxes_6.cs)]  
   
 ## See Also  
- [Creating and Managing Modal Dialog Boxes](../Topic/Creating%20and%20Managing%20Modal%20Dialog%20Boxes.md)
+ [Creating and Managing Modal Dialog Boxes](/visual-studio/extensibility/creating-and-managing-modal-dialog-boxes)

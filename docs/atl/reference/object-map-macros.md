@@ -1,7 +1,7 @@
 ---
-title: "Object Map Macros"
+title: "Object Map Macros | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -12,7 +12,7 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 680087f4-9894-41dd-a79c-6f337e1f13c1
-caps.latest.revision: 15
+caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -36,9 +36,9 @@ These macros define object maps and entries.
   
 |||  
 |-|-|  
-|[DECLARE_OBJECT_DESCRIPTION](../Topic/DECLARE_OBJECT_DESCRIPTION.md)|Allows you to specify a class object's text description, which will be entered into the object map.|  
-|[OBJECT_ENTRY_AUTO](../Topic/OBJECT_ENTRY_AUTO.md)|Enters an ATL object into the object map, updates the registry, and creates an instance of the object.|  
-|[OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../Topic/OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO.md)|Allows you to specify that the object should be registered and initialized, but it should not be externally creatable via `CoCreateInstance`.|  
+|[DECLARE_OBJECT_DESCRIPTION](#declare_object_description)|Allows you to specify a class object's text description, which will be entered into the object map.|  
+|[OBJECT_ENTRY_AUTO](#object_entry_auto)|Enters an ATL object into the object map, updates the registry, and creates an instance of the object.|  
+|[OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](#object_entry_non_createable_ex_auto)|Allows you to specify that the object should be registered and initialized, but it should not be externally creatable via `CoCreateInstance`.|  
   
 ##  <a name="declare_object_description"></a>  DECLARE_OBJECT_DESCRIPTION  
  Allows you to specify a text description for your class object.  
@@ -114,12 +114,7 @@ OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO(Â
 ### Remarks  
  Object entry macros are placed at global scope in the project to provide support for the registration, initialization, and creation of a class.  
   
- `OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO` allows you to specify that an object should be registered and initialized (see [OBJECT_ENTRY_AUTO](../Topic/OBJECT_ENTRY_AUTO.md) for more information), but it should not be creatable via `CoCreateInstance`.  
+ `OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO` allows you to specify that an object should be registered and initialized (see [OBJECT_ENTRY_AUTO](#object_entry_auto) for more information), but it should not be creatable via `CoCreateInstance`.  
   
 ## See Also  
  [Macros](../../atl/reference/atl-macros.md)
-
-
-
-
-

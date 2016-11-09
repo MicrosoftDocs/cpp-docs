@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0027"
+title: "Compiler Error CS0027 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0027"
 ms.assetid: 3a599876-9643-4c68-9457-3306858a73e9
 caps.latest.revision: 12
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0027
 Keyword 'this' is not available in the current context  
   
- The [this](../Topic/this%20\(C%23%20Reference\).md) keyword was found outside of a property, method, or constructor.  
+ The [this](/dotnet/csharp/language-reference/keywords/this) keyword was found outside of a property, method, or constructor.  
   
  To fix this error, either modify the statement to eliminate use of the `this` keyword, and/or move part or all of the statement inside a property, method, or constructor.  
   

@@ -1,7 +1,7 @@
 ---
-title: "CComHeap Class"
+title: "CComHeap Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords: 
   - "CComHeap class"
 ms.assetid: c74183ce-98ae-46fb-b186-93ea4cf0222b
-caps.latest.revision: 21
+caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -55,10 +55,10 @@ class CComHeap : public IAtlMemMgr
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComHeap::Allocate](../Topic/CComHeap::Allocate.md)|Call this method to allocate a block of memory.|  
-|[CComHeap::Free](../Topic/CComHeap::Free.md)|Call this method to free a block of memory allocated by this memory manager.|  
-|[CComHeap::GetSize](../Topic/CComHeap::GetSize.md)|Call this method to get the allocated size of a memory block allocated by this memory manager.|  
-|[CComHeap::Reallocate](../Topic/CComHeap::Reallocate.md)|Call this method to reallocate memory allocated by this memory manager.|  
+|[CComHeap::Allocate](#ccomheap__allocate)|Call this method to allocate a block of memory.|  
+|[CComHeap::Free](#ccomheap__free)|Call this method to free a block of memory allocated by this memory manager.|  
+|[CComHeap::GetSize](#ccomheap__getsize)|Call this method to get the allocated size of a memory block allocated by this memory manager.|  
+|[CComHeap::Reallocate](#ccomheap__reallocate)|Call this method to reallocate memory allocated by this memory manager.|  
   
 ## Remarks  
  `CComHeap` implements memory allocation functions using the COM allocation functions, including [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727), [CoTaskMemFree](http://msdn.microsoft.com/library/windows/desktop/ms680722), [IMalloc::GetSize](http://msdn.microsoft.com/library/windows/desktop/ms691226), and [CoTaskMemRealloc](http://msdn.microsoft.com/library/windows/desktop/ms687280). The maximum amount of memory that can be allocated is equal to **INT_MAX** (2147483647) bytes.  
@@ -89,7 +89,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
  Returns a pointer to the start of the newly allocated memory block.  
   
 ### Remarks  
- Call [CComHeap::Free](../Topic/CComHeap::Free.md) or [CComHeap::Reallocate](../Topic/CComHeap::Reallocate.md) to free the memory allocated by this method.  
+ Call [CComHeap::Free](#ccomheap__free) or [CComHeap::Reallocate](#ccomheap__reallocate) to free the memory allocated by this method.  
   
  Implemented using [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727).  
   
@@ -143,7 +143,7 @@ virtual __declspec(allocator) void* Reallocate(
  Returns a pointer to the start of the newly allocated memory block.  
   
 ### Remarks  
- Call [CComHeap::Free](../Topic/CComHeap::Free.md) to free the memory allocated by this method.  
+ Call [CComHeap::Free](#ccomheap__free) to free the memory allocated by this method.  
   
  Implemented using [CoTaskMemRealloc](http://msdn.microsoft.com/library/windows/desktop/ms687280).  
   
@@ -155,10 +155,3 @@ virtual __declspec(allocator) void* Reallocate(
  [CGlobalHeap Class](../../atl/reference/cglobalheap-class.md)   
  [CCRTHeap Class](../../atl/reference/ccrtheap-class.md)   
  [IAtlMemMgr Class](../../atl/reference/iatlmemmgr-class.md)
-
-
-
-
-
-
-

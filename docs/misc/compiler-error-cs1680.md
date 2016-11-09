@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1680"
+title: "Compiler Error CS1680 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1680"
 ms.assetid: 973da155-e6fa-4de8-94fd-7838f839a81f
 caps.latest.revision: 11
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

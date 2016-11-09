@@ -1,7 +1,7 @@
 ---
-title: "How to: Override Default Access of add, remove, and raise Methods"
+title: "How to: Override Default Access of add, remove, and raise Methods | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

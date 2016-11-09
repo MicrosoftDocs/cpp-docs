@@ -1,5 +1,5 @@
 ---
-title: "Nullable modifier cannot be specified on both a variable and its type"
+title: "Nullable modifier cannot be specified on both a variable and its type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ The nullable type modifier (?) has been included for both a declared variable an
 1.  Remove the nullable type modifier (?) from either the variable or its declared type.  
   
 ## See Also  
- [Nullable Value Types](../Topic/Nullable%20Value%20Types%20\(Visual%20Basic\).md)
+ [Nullable Value Types](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

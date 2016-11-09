@@ -1,5 +1,5 @@
 ---
-title: "String constant expected"
+title: "String constant expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -47,4 +47,4 @@ A character other than a double quotation mark (") occurs where the context requ
 2.  Supply a string constant.  
   
 ## See Also  
- [Constant and Literal Data Types](../Topic/Constant%20and%20Literal%20Data%20Types%20\(Visual%20Basic\).md)
+ [Constant and Literal Data Types](/dotnet/visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types)

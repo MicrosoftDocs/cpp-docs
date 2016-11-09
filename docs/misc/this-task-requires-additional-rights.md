@@ -1,7 +1,7 @@
 ---
-title: "This task requires additional rights"
+title: "This task requires additional rights | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -37,7 +37,7 @@ This error is displayed if a Visual Studio command is invoked by a user whose ac
   
  Some Visual Studio commands must be run with an account that has user access rights sufficient to enable the command to read or write all of the necessary files and registry keys. To gain these rights, you must close and then re-open Visual Studio with an account that has elevated access, such as an Administrator.  
   
- For more information about permissions when running Visual Studio, see [User Permissions](../Topic/User%20Permissions%20and%20Visual%20Studio.md).  
+ For more information about permissions when running Visual Studio, see [User Permissions](/visual-studio/ide/user-permissions-and-visual-studio).  
   
 ### To correct this error  
   

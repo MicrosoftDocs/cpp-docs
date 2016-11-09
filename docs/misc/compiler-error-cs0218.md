@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0218"
+title: "Compiler Error CS0218 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0218"
 ms.assetid: f675e06a-c55c-44a1-b5db-0df178fd8f79
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0218
 The type ('type') must contain declarations of operator true and operator false  
   
- If you define an operator for a user-defined type, and then try to use the operator as a short-circuit operator, the user-defined operator must have operator true and operator false defined. For more information on short-circuit operators, see [&& Operator](../Topic/&&%20Operator%20\(C%23%20Reference\).md) and [&#124;&#124; Operator](../Topic/%7C%7C%20Operator%20\(C%23%20Reference\).md).  
+ If you define an operator for a user-defined type, and then try to use the operator as a short-circuit operator, the user-defined operator must have operator true and operator false defined. For more information on short-circuit operators, see [&& Operator](/dotnet/csharp/language-reference/operators/conditional-and-operator) and [&#124;&#124; Operator](../Topic/%7C%7C%20Operator%20\(C%23%20Reference\).md).  
   
  The following sample generates CS0218:  
   
@@ -79,4 +80,4 @@ public class MyClass
 ```  
   
 ## See Also  
- [Conversion Operators](../Topic/Conversion%20Operators%20\(C%23%20Programming%20Guide\).md)
+ [Conversion Operators](/dotnet/csharp/programming-guide/statements-expressions-operators/conversion-operators)

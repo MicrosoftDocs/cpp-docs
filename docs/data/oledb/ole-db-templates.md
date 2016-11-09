@@ -1,7 +1,7 @@
 ---
-title: "OLE DB Templates"
+title: "OLE DB Templates | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -79,5 +79,5 @@ The OLE DB templates make OLE DB data access easier. Visual C++ provides templat
  [Visual C++ Libraries](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)  
  Provides links to the various libraries provided with Visual C++, including ATL, MFC, OLE DB Templates, the C run-time library, and the Standard C++ Library.  
   
- [Debugging](../Topic/Debugging%20in%20Visual%20Studio.md)  
+ [Debugging](/visual-studio/debugger/debugging-in-visual-studio)  
  Provides links to using the Visual Studio debugger to correct logic errors in your application or stored procedures.

@@ -1,7 +1,7 @@
 ---
-title: "How to: Add Menu Controllers to Toolbars"
+title: "How to: Add Menu Controllers to Toolbars | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/19/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -33,4 +33,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Add Menu Controllers to Toolbars
-This content has been removed. For information, see [Adding a Menu Controller to a Toolbar](../Topic/Adding%20a%20Menu%20Controller%20to%20a%20Toolbar.md).
+This content has been removed. For information, see [Adding a Menu Controller to a Toolbar](/visual-studio/extensibility/adding-a-menu-controller-to-a-toolbar).

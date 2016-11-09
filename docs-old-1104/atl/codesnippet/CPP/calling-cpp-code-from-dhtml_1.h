@@ -1,0 +1,1 @@
+   STDMETHOD(OnClick)(IDispatch* pdispBody, VARIANT varColor)

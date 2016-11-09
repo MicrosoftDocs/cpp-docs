@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS0132"
+title: "Compiler Error CS0132 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0132"
 ms.assetid: e8ad1281-2912-4b6a-b2af-a319a23ddd16
 caps.latest.revision: 8
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.mt:
 # Compiler Error CS0132
 'constructor' : a static constructor must be parameterless  
   
- A [static](../Topic/static%20\(C%23%20Reference\).md) constructor cannot be declared with one or more parameters. For more information, see [Constructors](../Topic/Constructors%20\(C%23%20Programming%20Guide\).md).  
+ A [static](/dotnet/csharp/language-reference/keywords/static) constructor cannot be declared with one or more parameters. For more information, see [Constructors](/dotnet/csharp/programming-guide/classes-and-structs/constructors).  
   
  The following sample generates CS0132:  
   

@@ -1,7 +1,7 @@
 ---
-title: "Graphics Diagnostics Capture Methods"
+title: "Graphics Diagnostics Capture Methods | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/20/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -45,5 +45,5 @@ Insert introduction here.
  Legacy capture supports [!INCLUDE[vs_dev12](../atl-mfc-shared/includes/vs_dev12_md.md)] and [!INCLUDE[vs_dev11_long](../build/includes/vs_dev11_long_md.md)] graphics diagnostics on [!INCLUDE[win8](../build/reference/includes/win8_md.md)], Windows RT 8, and [!INCLUDE[win7](../build/includes/win7_md.md)]. It supports DirectX 10.0 through DirectX 11.1. Legacy capture doesn't support any Direct3D 11.2 features and is deprecated except for scenarios in which robust capture is not available. Legacy capture uses the capture API defined in the `vsgcapture.h` header file to support its programmatic capture scenarios. This kind of programmatic capture is also deprecated except for scenarios in which robust capture is not available.  
   
 ## See Also  
- [Capturing Graphics Information](../Topic/Capturing%20Graphics%20Information.md)   
+ [Capturing Graphics Information](/visual-studio/debugger/capturing-graphics-information)   
  [Walkthrough: Capturing Graphics Information](../Topic/Walkthrough:%20Capturing%20Graphics%20Information.md)

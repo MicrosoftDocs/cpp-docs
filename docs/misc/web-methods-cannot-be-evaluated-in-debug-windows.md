@@ -1,5 +1,5 @@
 ---
-title: "Web methods cannot be evaluated in debug windows"
+title: "Web methods cannot be evaluated in debug windows | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ XML Web service methods cannot be tested within the debug window.
 -   Test XML Web service methods from the Code Editor.  
   
 ## See Also  
- [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md)
+ [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)

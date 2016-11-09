@@ -1,7 +1,7 @@
 ---
-title: "Exception Processing"
+title: "Exception Processing | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -23,7 +23,7 @@ helpviewer_keywords:
   - "MFC, exceptions"
   - "exceptions, MFC throwing functions"
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
-caps.latest.revision: 15
+caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -68,7 +68,7 @@ When a program executes, a number of abnormal conditions and errors called "exce
 |[AND_CATCH_ALL](#and_catch_all)|Designates a block of code for catching all other additional exception types thrown in a preceding **TRY** block.|  
 |[END_CATCH](#end_catch)|Ends the last **CATCH** or `AND_CATCH` code block.|  
 |[END_CATCH_ALL](#end_catch_all)|Ends the last `CATCH_ALL` code block.|  
-|[THROW](../Topic/THROW%20\(MFC\).md)|Throws a specified exception.|  
+|[THROW](#throw_mfc_)|Throws a specified exception.|  
 |[THROW_LAST](#throw_last)|Throws the currently handled exception to the next outer handler.|  
   
 ### Exception-Throwing Functions  

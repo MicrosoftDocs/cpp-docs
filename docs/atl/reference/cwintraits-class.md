@@ -1,7 +1,7 @@
 ---
-title: "CWinTraits Class"
+title: "CWinTraits Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -25,7 +25,7 @@ helpviewer_keywords:
   - "CFrameWinTraits class"
   - "CControlWinTraits class"
 ms.assetid: f78f486e-6d9c-42c6-8e86-371e05aa7e59
-caps.latest.revision: 18
+caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -69,13 +69,13 @@ template <DWORD t_dwStyle = 0,  DWORD t_dwExStyle = 0>  class CWinTraits
   
 |Name|Description|  
 |----------|-----------------|  
-|[CWinTraits::GetWndExStyle](../Topic/CWinTraits::GetWndExStyle.md)|(Static) Retrieves the extended styles for the `CWinTraits` object.|  
-|[CWinTraits::GetWndStyle](../Topic/CWinTraits::GetWndStyle.md)|(Static) Retrieves the standard styles for the `CWinTraits` object.|  
+|[CWinTraits::GetWndExStyle](#cwintraits__getwndexstyle)|(Static) Retrieves the extended styles for the `CWinTraits` object.|  
+|[CWinTraits::GetWndStyle](#cwintraits__getwndstyle)|(Static) Retrieves the standard styles for the `CWinTraits` object.|  
   
 ## Remarks  
  This [window traits](../../atl/understanding-window-traits.md) class provides a simple method for standardizing the styles used for the creation of an ATL window object. Use a specialization of this class as a template parameter to [CWindowImpl](../../atl/reference/cwindowimpl-class.md) or another of ATL's window classes to specify the default standard and extended styles used for instances of that window class.  
   
- Use this template when you want to provide default window styles that will be used only when no other styles are specified in the call to [CWindowImpl::Create](../Topic/CWindowImpl::Create.md).  
+ Use this template when you want to provide default window styles that will be used only when no other styles are specified in the call to [CWindowImpl::Create](../../atl/reference/cwindowimpl-class.md#cwindowimpl__create).  
   
  ATL provides three predefined specializations of this template for commonly used combinations of window styles:  
   
@@ -125,6 +125,8 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
  [Class Members](http://msdn.microsoft.com/en-us/dbe6a147-3f01-4aea-a3fb-fe6ebadc31f8)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Understanding Window Traits](../../atl/understanding-window-traits.md)
+
+
 
 
 

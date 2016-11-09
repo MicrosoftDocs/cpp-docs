@@ -1,7 +1,7 @@
 ---
-title: "printf_s, _printf_s_l, wprintf_s, _wprintf_s_l"
+title: "printf_s, _printf_s_l, wprintf_s, _wprintf_s_l | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""

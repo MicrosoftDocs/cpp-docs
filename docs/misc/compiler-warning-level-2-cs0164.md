@@ -1,7 +1,7 @@
 ---
-title: "Compiler Warning (level 2) CS0164"
+title: "Compiler Warning (level 2) CS0164 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS0164"
 ms.assetid: c701265b-ea7d-4d56-ae73-f74e039f1005
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

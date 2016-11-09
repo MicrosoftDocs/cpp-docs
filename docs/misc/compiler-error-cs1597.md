@@ -1,7 +1,7 @@
 ---
-title: "Compiler Error CS1597"
+title: "Compiler Error CS1597 | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/25/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CS1597"
 ms.assetid: 735e7cde-38de-4e15-96cc-ce75ffe34ff2
 caps.latest.revision: 6
+author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
 translation.priority.ht: 

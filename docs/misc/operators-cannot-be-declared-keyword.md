@@ -1,5 +1,5 @@
 ---
-title: "Operators cannot be declared &#39;&lt;keyword&gt;&#39;"
+title: "Operators cannot be declared &#39;&lt;keyword&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -38,7 +38,7 @@ translation.priority.mt:
 # Operators cannot be declared &#39;&lt;keyword&gt;&#39;
 An operator is declared with a keyword that is not valid for operator definitions.  
   
- Every operator must be declared as both [Public](../Topic/Public%20\(Visual%20Basic\).md) and [Shared](../Topic/Shared%20\(Visual%20Basic\).md). In addition, a conversion operator must be declared with either [Widening](../Topic/Widening%20\(Visual%20Basic\).md) or [Narrowing](../Topic/Narrowing%20\(Visual%20Basic\).md), but not both. An operator definition can optionally include the [Overloads](../Topic/Overloads%20\(Visual%20Basic\).md) or [Shadows](../Topic/Shadows%20\(Visual%20Basic\).md) keywords. No other keywords are permitted in an [Operator Statement](../Topic/Operator%20Statement.md).  
+ Every operator must be declared as both [Public](/dotnet/visual-basic/language-reference/modifiers/public) and [Shared](/dotnet/visual-basic/language-reference/modifiers/shared). In addition, a conversion operator must be declared with either [Widening](/dotnet/visual-basic/language-reference/modifiers/widening) or [Narrowing](/dotnet/visual-basic/language-reference/modifiers/narrowing), but not both. An operator definition can optionally include the [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads) or [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows) keywords. No other keywords are permitted in an [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement).  
   
  **Error ID:** BC33013  
   
@@ -47,6 +47,6 @@ An operator is declared with a keyword that is not valid for operator definition
 -   Remove the invalid keyword from the operator definition.  
   
 ## See Also  
- [Operator Procedures](../Topic/Operator%20Procedures%20\(Visual%20Basic\).md)   
+ [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
  [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
  [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)

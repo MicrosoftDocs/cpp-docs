@@ -1,7 +1,7 @@
 ---
-title: "ATL Macros"
+title: "ATL Macros | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "ATL, macros"
   - "macros, ATL"
 ms.assetid: 788bd803-e7dc-4dc5-9e8d-31649471415b
-caps.latest.revision: 14
+caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"

@@ -1,5 +1,5 @@
 ---
-title: "Type character &#39;&lt;charactername&gt;&#39; does not match declared data type &#39;&lt;type&gt;&#39;"
+title: "Type character &#39;&lt;charactername&gt;&#39; does not match declared data type &#39;&lt;type&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,4 +45,4 @@ A variable is declared with one data type but referred to with a type character 
 -   Change the declared data type of the variable, or change or remove the type character in the reference.  
   
 ## See Also  
- [Type Characters](../Topic/Type%20Characters%20\(Visual%20Basic\).md)
+ [Type Characters](/dotnet/visual-basic/programming-guide/language-features/data-types/type-characters)

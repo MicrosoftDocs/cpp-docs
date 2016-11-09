@@ -1,5 +1,5 @@
 ---
-title: "You must reference at least one range variable on both sides of the &#39;Equals&#39; operator"
+title: "You must reference at least one range variable on both sides of the &#39;Equals&#39; operator | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: "visual-studio-dev14"
@@ -45,9 +45,9 @@ You must reference at least one range variable on both sides of the 'Equals' ope
  **Error ID:** BC36622  
   
 ## See Also  
- [Introduction to LINQ in Visual Basic](../Topic/Introduction%20to%20LINQ%20in%20Visual%20Basic.md)   
- [LINQ](../Topic/LINQ%20in%20Visual%20Basic.md)   
- [Join Clause](../Topic/Join%20Clause%20\(Visual%20Basic\).md)   
- [Group Join Clause](../Topic/Group%20Join%20Clause%20\(Visual%20Basic\).md)   
- [From Clause](../Topic/From%20Clause%20\(Visual%20Basic\).md)   
- [Select Clause](../Topic/Select%20Clause%20\(Visual%20Basic\).md)
+ [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)   
+ [Join Clause](/dotnet/visual-basic/language-reference/queries/join-clause)   
+ [Group Join Clause](/dotnet/visual-basic/language-reference/queries/group-join-clause)   
+ [From Clause](/dotnet/visual-basic/language-reference/queries/from-clause)   
+ [Select Clause](/dotnet/visual-basic/language-reference/queries/select-clause)

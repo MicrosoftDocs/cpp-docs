@@ -1,7 +1,7 @@
 ---
-title: "SetErrorInfo"
+title: "SetErrorInfo | Microsoft Docs"
 ms.custom: ""
-ms.date: "10/28/2016"
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
@@ -52,7 +52,7 @@ Called by [OnWizFinish](../ide/onwizfinish.md) and [CanUseFileName](../ide/canus
  The error object.  
   
 ## Remarks  
- Called by [OnWizFinish](../ide/onwizfinish.md) and [CanUseFileName](../ide/canusefilename.md) to provide current error information. See <xref:Microsoft.VisualStudio.VsWizard.VCWizCtlClass.SetErrorInfo*> in the Visual C++ Wizard Model documentation for more information.  
+ Called by [OnWizFinish](../ide/onwizfinish.md) and [CanUseFileName](../ide/canusefilename.md) to provide current error information. See <xref:Microsoft.VisualStudio.VsWizard.VCWizCtlClass.SetErrorInfo%2A> in the Visual C++ Wizard Model documentation for more information.  
   
 ## See Also  
  [Customizing C++ Wizards with Common JScript Functions](../ide/customizing-cpp-wizards-with-common-jscript-functions.md)   
