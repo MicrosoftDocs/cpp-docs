@@ -1,5 +1,5 @@
 ---
-title: "Visual C++ in Visual Studio 2017 | Microsoft Docs"
+title: "Visual C++ in Visual Studio | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev15"
@@ -56,7 +56,7 @@ The [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] programming language and 
 -   If you are looking for the Visual C++ compiler, you need to download a paid or free edition of Visual Studio from [https://www.visualstudio.com/](https://www.visualstudio.com/).  
 
 ## General Information about Visual C++  
- [What's New for Visual C++](../top/what-s-new-for-visual-cpp-in-visual-studio-2017.md)  
+ [What's New for Visual C++](../top/what-s-new-for-visual-cpp-in-visual-studio.md)  
  Find out what’s new in Visual C++.  
   
  [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-20151.md)  

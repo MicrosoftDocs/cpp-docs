@@ -1,5 +1,5 @@
 ---
-title: "What's New for Visual C++ in Visual Studio 2017 RC | Microsoft Docs"
+title: "What's New for Visual C++ in  [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/16/2016"
 ms.prod: "visual-studio-dev15"
@@ -29,11 +29,11 @@ translation.priority.ht:
     - "zh-tw"
 ---
 
-# What's New for Visual C++ in Visual Studio 2017 RC
+# What's New for Visual C++ in  [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)]
 
-Visual Studio 2017 RC brings many updates and fixes to the Visual C++ environment. We've fixed over 250 bugs and reported issues in the compiler and tools, many submitted by customers through [Microsoft Connect](https://connect.microsoft.com/VisualStudio "Microsoft Connect"). Thank you for reporting bugs!
+ [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] brings many updates and fixes to the Visual C++ environment. We've fixed over 250 bugs and reported issues in the compiler and tools, many submitted by customers through [Microsoft Connect](https://connect.microsoft.com/VisualStudio "Microsoft Connect"). Thank you for reporting bugs!
 
-The compiler and tools version number in Visual Studio 2017 RC is 14.10.24629.  
+The compiler and tools version number in  [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] RC is 14.10.24629.  
 
 ## C++ Code Analysis
 
@@ -44,7 +44,7 @@ The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com
 ## C++ Compiler
 
 In this release, we've updated the C++ compiler and standard library with enhanced support for C++11 and C++14 features, as well as preliminary support for certain features expected to be in the C++17 standard. With support for generalized constexpr and NSDMI for aggregates, the compiler is complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards.
-Visual Studio 2017 RC allows using /sdl with /await. We removed /rtc limitation with Coroutines.
+[!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] RC allows using /sdl with /await. We removed /rtc limitation with Coroutines.
 This release brings several improvements in optimization and code generation. Some notable improvements include:  
 
 - Improved code generation of loops: Support for automatic vectorization of division of constant integers, better identification of memset patterns.
@@ -134,4 +134,4 @@ You can now create and debug mobile apps using Visual Studio that can target And
 C++ comes as an optional component for the Universal Windows App workload.  
 
 ## Clang/C2 Platform Toolset
-The Clang/C2 toolset that ships with Visual Studio 2017 RC now supports the /bigobj switch, which is crucial for building large projects. It also includes several important bug fixes, both in the front-end and the back-end of the compiler.
+The Clang/C2 toolset that ships with [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] RC now supports the /bigobj switch, which is crucial for building large projects. It also includes several important bug fixes, both in the front-end and the back-end of the compiler.
