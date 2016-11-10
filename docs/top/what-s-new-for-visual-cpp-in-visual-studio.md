@@ -1,5 +1,5 @@
 ---
-title: "What's New for Visual C++ in  [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] | Microsoft Docs"
+title: "What's New for Visual C++ in Visual Studio | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/16/2016"
 ms.prod: "visual-studio-dev15"
@@ -29,11 +29,11 @@ translation.priority.ht:
     - "zh-tw"
 ---
 
-# What's New for Visual C++ in  [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)]
+# What's New for Visual C++ in [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)]
 
- [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] brings many updates and fixes to the Visual C++ environment. We've fixed over 250 bugs and reported issues in the compiler and tools, many submitted by customers through [Microsoft Connect](https://connect.microsoft.com/VisualStudio "Microsoft Connect"). Thank you for reporting bugs!
+[!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] brings many updates and fixes to the Visual C++ environment. We've fixed over 250 bugs and reported issues in the compiler and tools, many submitted by customers through [Microsoft Connect](https://connect.microsoft.com/VisualStudio "Microsoft Connect"). Thank you for reporting bugs!
 
-The compiler and tools version number in  [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] RC is 14.10.24629.  
+The compiler and tools version number in [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] RC is 14.10.24629.  
 
 ## C++ Code Analysis
 
