@@ -45,7 +45,7 @@ Here's how to getting information about how to write C++ code and use the Visual
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Visual C++](../top/visual-cpp-in-visual-studio-2015.md)|Contains reference and conceptual documentation about Visual C++. Part of the MSDN Library.|  
+|[Visual C++](../top/visual-cpp-in-visual-studio.md)|Contains reference and conceptual documentation about Visual C++. Part of the MSDN Library.|  
 |[Windows Developer Center](http://go.microsoft.com/fwlink/p/?LinkId=256534)|Contains information about how to use C++ and other languages to develop apps for [!INCLUDE[win8](../build/reference/includes/win8_md.md)]. Part of the Windows Developer Center; the C++ content is under the Docs > Language Reference node.|  
   
 ### Online and Offline Documentation  

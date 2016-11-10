@@ -106,4 +106,4 @@ This topic provides a guide for upgrading Visual C++ code. This includes getting
 |[C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md)|Shows in detail how to upgrade your Managed Extensions for C++ syntax to use the new syntax. For more information, see [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md).|  
   
 ## See Also  
- [Visual C++](../top/visual-cpp-in-visual-studio-2015.md)
+ [Visual C++](../top/visual-cpp-in-visual-studio.md)

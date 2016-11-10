@@ -76,7 +76,7 @@ This page highlights some of the most important features that are new in the rel
 #### C++  
  Visual C++ provides significant advances in C++11/14 language conformance, support for cross-platform mobile device development, support for resumable functions and await (currently planned for standardization in C++17), improvements and bug fixes in the C Runtime Library (CRT) and C++ standard library (STL) implementations, resizeable dialogs in MFC, new compiler optimizations, better build performance, new diagnostics capabilities and new productivity tools in the code editor.  
   
- For more information, see [What's New for Visual C++](../top/what-s-new-for-visual-cpp-in-visual-studio-2015.md) and the [Visual C++ Blog](http://blogs.msdn.com/b/vcblog/).  
+ For more information, see [What's New for Visual C++](../top/what-s-new-for-visual-cpp-in-visual-studio.md) and the [Visual C++ Blog](http://blogs.msdn.com/b/vcblog/).  
   
 ## Device Preview menu bar  
  In Universal Windows Platform projects, the device preview menu bar enables you to see how your XAML-based UI will render on various screen sizes.  

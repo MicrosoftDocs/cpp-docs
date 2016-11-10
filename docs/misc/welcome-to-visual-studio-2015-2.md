@@ -13,7 +13,7 @@ caps.latest.revision: 5
 |||||  
 |-|-|-|-|  
 |![HomePageTools&#95;VS2015](../misc/media/homepagetools_vs2015.png "HomePageTools_VS2015")<br /><br /> **Tools**|![Devices](../misc/media/homedevices.png "HomeDevices")<br /><br /> **Devices**|![HomePageCloud&#95;vs2015](../misc/media/homepagecloud_vs2015.png "HomePageCloud_vs2015")<br /><br /> **Web**|![HomePageLanguages&#95;VS2015](../misc/media/homepagelanguages_vs2015.png "HomePageLanguages_VS2015")<br /><br /> **Languages**|  
-|[Designers](/visual-studio/designers/designing-user-interfaces), [editors](/visual-studio/ide/writing-code-in-the-code-and-text-editor), [Debuggers](/visual-studio/debugger/debugging-in-visual-studio),[profilers](/visual-studio/profiling/beginners-guide-to-performance-profiling) -- all packaged up in a single environment.|Tools for [Apache Cordova with Visual Studio](../Topic/Build%20cross-platform%20apps%20with%20Visual%20Studio%20Tools%20for%20Apache%20Cordova.md) and [Visual Studio Tools for Unity](/visual-studio/cross-platform/visual-studio-tools-for-unity) to reach even more platforms.|Extensive web support for [ASP.NET](http://www.asp.net/), Node.js, and [JavaScript](../Topic/JavaScript%20Language%20Reference.md).|Code in [C++](../top/visual-cpp-in-visual-studio-2015.md), [C#](/dotnet/csharp/csharp), [VB](/dotnet/visual-basic/index), [JavaScript](../Topic/JavaScript%20Language%20Reference.md), [F#](../Topic/F%23%20Language%20Reference.md), [Python](http://pytools.codeplex.com/documentation), and Java.|  
+|[Designers](/visual-studio/designers/designing-user-interfaces), [editors](/visual-studio/ide/writing-code-in-the-code-and-text-editor), [Debuggers](/visual-studio/debugger/debugging-in-visual-studio),[profilers](/visual-studio/profiling/beginners-guide-to-performance-profiling) -- all packaged up in a single environment.|Tools for [Apache Cordova with Visual Studio](../Topic/Build%20cross-platform%20apps%20with%20Visual%20Studio%20Tools%20for%20Apache%20Cordova.md) and [Visual Studio Tools for Unity](/visual-studio/cross-platform/visual-studio-tools-for-unity) to reach even more platforms.|Extensive web support for [ASP.NET](http://www.asp.net/), Node.js, and [JavaScript](../Topic/JavaScript%20Language%20Reference.md).|Code in [C++](../top/visual-cpp-in-visual-studio.md), [C#](/dotnet/csharp/csharp), [VB](/dotnet/visual-basic/index), [JavaScript](../Topic/JavaScript%20Language%20Reference.md), [F#](../Topic/F%23%20Language%20Reference.md), [Python](http://pytools.codeplex.com/documentation), and Java.|  
   
  Welcome to Visual Studio! We’ve got everything you need to create great apps for devices or desktop apps, for the web and in the cloud. Write code for iOS, Android, and Windows in one IDE. Get great IntelliSense, easy code navigation, fast builds, and quick deployment. Visual Studio increases your productivity and makes it easy to do your work alone or as part of a larger team.  
   
@@ -84,7 +84,7 @@ caps.latest.revision: 5
 |||||  
 |-|-|-|-|  
 |[What’s new in Visual Studio 2015](/visual-studio/ide/what-s-new-in-visual-studio-2015)|[What's New for Visual C#](/dotnet/csharp/getting-started/whats-new)|[What’s new for .NET Framework 4.6](../Topic/What's%20New%20in%20the%20.NET%20Framework.md)|[What’s new for ALM](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)|  
-|[What’s new for C++](../top/what-s-new-for-visual-cpp-in-visual-studio-2015.md)|[What's New for Visual Basic](/dotnet/visual-basic/getting-started/whats-new)|[What’s new for JavaScript](../Topic/What's%20New%20in%20JavaScript.md)||  
+|[What’s new for C++](../top/what-s-new-for-visual-cpp-in-visual-studio.md)|[What's New for Visual Basic](/dotnet/visual-basic/getting-started/whats-new)|[What’s new for JavaScript](../Topic/What's%20New%20in%20JavaScript.md)||  
 |[Python](/visual-studio/python/getting-started-with-python)||||  
   
 ## In this section  
@@ -103,7 +103,7 @@ caps.latest.revision: 5
   
 7.  [C# and Visual Basic Shared Programming Concepts](../Topic/C%23%20and%20Visual%20Basic%20Shared%20Programming%20Concepts.md)  
   
-8.  [Visual C++](../top/visual-cpp-in-visual-studio-2015.md)  
+8.  [Visual C++](../top/visual-cpp-in-visual-studio.md)  
   
 9. [JavaScript](/visual-studio/javascript/javascript-in-visual-studio)  
   

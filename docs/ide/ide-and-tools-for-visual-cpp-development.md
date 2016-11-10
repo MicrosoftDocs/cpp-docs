@@ -135,4 +135,4 @@ As part of the Visual Studio Integrated Development Environment (IDE), Visual C+
 |[Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)|Provides an overview of deployment for C++ apps and links to other articles that describe deployment in detail.|  
 |[Porting and Upgrading Programs](http://msdn.microsoft.com/en-us/c36c44b3-5a9b-4bb4-9b7a-469aa770ed00)|Links to articles that describe how to open C++ apps that were created in earlier versions of Visual Studio, and also how to open apps that were created by using tools other than Visual Studio.|  
 |||  
-|[Visual C++](../top/visual-cpp-in-visual-studio-2015.md)|Describes key features of Visual C++ in Visual Studio and links to the rest of the Visual C++ documentation.|
+|[Visual C++](../top/visual-cpp-in-visual-studio.md)|Describes key features of Visual C++ in Visual Studio and links to the rest of the Visual C++ documentation.|
