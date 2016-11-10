@@ -40,7 +40,7 @@ translation.priority.ht:
 ||||  
 |-|-|-|  
 |[*](../../assembler/masm/operator-multiply.md)|[+](../../assembler/masm/operator-add.md)|[-](../../assembler/masm/operator-subtract-2.md)|  
-|[.](../Topic/operator%20..md)|[/](../../assembler/masm/operator-subtract-1.md)|[&#91;&#93;](../../assembler/masm/operator.md)|  
+|[.](../Topic/operator%20..md)|[/](../../assembler/masm/operator-subtract-1.md)|[&#91;&#93;](../../assembler/masm/operator-brackets.md)|  
 |[MOD](../../assembler/masm/operator-mod.md)|||  
   
 ### Control Flow  
