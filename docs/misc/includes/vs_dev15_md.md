@@ -1,1 +1,1 @@
-Visual Studio "15"
+Visual Studio 2017 RC
