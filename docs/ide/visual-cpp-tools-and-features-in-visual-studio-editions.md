@@ -1,5 +1,5 @@
 ---
-title: "Visual C++ Tools and Templates in Visual Studio Editions | Microsoft Docs"
+title: "Visual C++ Tools and Features in Visual Studio Editions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Visual C++ Tools and Templates in Visual Studio Editions
+# Visual C++ Tools and Features in Visual Studio Editions
 The following tables show Visual C++ features that are available in Visual Studio. An X in a cell indicates that the feature is available; an empty cell indicates that the feature is not available. Notes in parentheses indicate that a feature is available, but restricted.  
   
 ## Platforms  
