@@ -1,4 +1,4 @@
-# [What's New for Visual C++ in [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)]](what-s-new-for-visual-cpp-in-visual-studio.md)
+# [What's New for Visual C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md)
 # [Visual C++ in Visual Studio](visual-cpp-in-visual-studio.md)
 # [Visual C++ Samples](visual-cpp-samples.md)
 # [How to Report a Problem with the Visual C++ Toolset](how-to-report-a-problem-with-the-visual-cpp-toolset.md)
