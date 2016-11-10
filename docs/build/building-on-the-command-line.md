@@ -74,7 +74,7 @@ You can build C and C++ applications on the command line by using tools that are
  [Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)  
  Gives an example that shows how to create and compile a simple C++ program on the command line.  
   
- [Walkthrough: Compiling a C Program on the Command Line](../Topic/Walkthrough:%20Compiling%20a%20C%20Program%20on%20the%20Command%20Line.md)  
+ [Walkthrough: Compile a C Program on the Command Line](../build/walkthrough-compile-a-c-program-on-the-command-line.md)  
  Describes how to compile a program written in the C programming language.  
   
  [Walkthrough: Compiling a C++/CLI Program on the Command Line](../build/walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md)  
