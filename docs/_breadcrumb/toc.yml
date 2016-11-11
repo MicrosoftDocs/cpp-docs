@@ -1,0 +1,120 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Visual C++
+    tocHref: /visual-cpp/
+    topicHref: /visual-cpp/top/visual-cpp-in-visual-studio
+    items:
+    - name: C++ Language
+      tocHref: /visual-cpp/cpp/
+      topicHref: /visual-cpp/cpp/cpp-language-reference
+    - name: C Language
+      tocHref: /visual-cpp/c-language/
+      topicHref: /visual-cpp/c-language/c-language-reference
+    - name: C/C++ Preprocessor
+      tocHref: /visual-cpp/preprocessor
+      topicHref: /visual-cpp/c-cpp-preprocessor-reference
+    - name: C Runtime Library
+      tocHref: /visual-cpp/c-runtime-library/
+      topicHref: /visual-cpp/c-runtime-library/c-runtime-library-reference
+      items:
+      - name: Reference
+        tocHref: /visual-cpp/c-runtime-library/reference/
+        topicHref: /visual-cpp/c-runtime-library/reference/alphabetical-function-reference
+    - name: C++ Standard Library
+      tocHref: /visual-cpp/standard-library/
+      topicHref: /visual-cpp/standard-library/cpp-standard-library 
+    - name: Windows
+      tocHref: /visual-cpp/windows/
+      topicHref: /visual-cpp/windows/overview-of-windows-programming-in-cpp
+      items:
+      - name: ATL
+        tocHref: /visual-cpp/atl/
+        topicHref: /visual-cpp/atl/atl-com-desktop-components
+        items:
+        - name: Reference
+          tocHref: /visual-cpp/atl/reference/
+          topicHref: /visual-cpp/atl/reference/atl-classes
+      - name: MFC
+        tocHref: /visual-cpp/mfc/
+        topicHref: /visual-cpp/mfc/mfc-desktop-applications
+        items:
+        - name: Reference
+          tocHref: /visual-cpp/mfc/reference/
+          topicHref: /visual-cpp/mfc/reference/mfc-classes
+      - name: ATL/MFC Shared Classes
+        tocHref: /visual-cpp/atl-mfc-shared/
+        topicHref: /visual-cpp/atl-mfc-shared/atl-mfc-shared-classes
+        items:
+        - name: Reference
+          tocHref: /visual-cpp/atl-mfc-shared/reference/
+          topicHref: /visual-cpp/atl-mfc/shared/reference/classes-shared-by-atl-and-mfc
+    - name: .NET
+      tocHref: /visual-cpp/dotnet/
+      topicHref: /visual-cpp/dotnet/dotnet-programming-with-cpp-cli
+    - name: Parallel Programming
+      tocHref: /visual-cpp/parallel/
+      topicHref: /visual-cpp/parallel/parallel-programming-in-visual-cpp
+    - name: Data Access
+      tocHref: /visual-cpp/data/
+      topicHref: /visual-cpp/data/data-access
+      items:
+      - name: OLEDB
+        tocHref: /visual-cpp/data/oledb/
+        topicHref:   /visual-cpp/data/oledb/ole-db-programming
+      - name: ODBC
+        tocHref: /visual-cpp/data/odbc/
+        topicHref: /visual-cpp/data/odbc/open-database-connectivity-odbc
+      - name: ADO and RDO
+        tocHref: /visual-cpp/data/ado-rdo/
+        topicHref: /visual-cpp/data/ado-rdo/data-bound-controls-ado-and-rdo
+    - name: IDE and Tools
+      tocHref: /visual-cpp/ide/
+      topicHref: /visual-cpp/ide/ide-and-tools-for-visual-cpp-development
+      items:
+      - name: IDE
+        tocHref: /visual-cpp/ide/
+        topicHref: /visual-cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development
+      - name: Building
+        tocHref: /visual-cpp/build/
+        tocHref: /visual-cpp/build/building-c-cpp-programs
+      - name: Intrinsics
+        tocHref: /visual-cpp/intrinsics/
+        topicHref: /visual-cpp/intrinsics/c-cpp-intrinsics
+      - name: Assemblers
+        tocHref: /visual-cpp/assembler/
+        topicHref: /visual-cpp/assembler/masm/microsoft-macro-assembler-reference
+        items:
+        - name: ARM
+          tocHref: /visual-cpp/assembler/arm/
+          topicHref: /visual-cpp/assembler/arm/arm-assembler-reference
+        - name: Inline assembler
+          tocHref: /visual-cpp/assembler/inline/
+          topicHref: /visual-cpp/assembler/inline-assembler-reference
+        - name: MASM
+          tocHref: /visual-cpp/assembler/masm/
+          topicHref: /visual-cpp/assembler/masm/microsoft-macro-assembler-reference
+      - name: Build Reference
+        tocHref: /visual-cpp/build/reference/
+        topicHref: /visual-cpp/build/reference/c-cpp-building-reference
+        items:
+        - name: Errors and Warnings 
+          tocHref: /visual-cpp/error-messages/
+          topicHref: /visual-cpp/error-messages/c-cpp-build-errors
+          items:
+          - name: Compiler Errors
+            tocHref: /visual-cpp/error-messages/compiler-errors-1/
+            topicHref: /visual-cpp/compiler-errors-1/c-cpp-build-errors
+          - name: Compiler Warnings
+            tocHref: /visual-cpp/compiler-warnings/
+            topicHref: /visual-cpp/compiler-warnings/compiler-warnings-c4000-through-C4199
+          - name: Other Tools
+            tocHref: /visual-cpp/error-messages/tool-errors/
+            topicHref: /visual-cpp/error-messages/tool-errors/vectorizer-and-parallelizer-messages
+    - name: Porting and Upgrading
+      tocHref: /visual-cpp/porting/
+      topicHref: /visual-cpp/porting/porting-and-upgrading-guide
+    - name: Text and Strings
+      tocHref: /visual-cpp/text/
+      topicHref: /visual-cpp/text/text-and-strings
