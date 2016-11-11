@@ -1,5 +1,7 @@
 # [Data Access Programming (MFC-ATL)](data-access-programming-mfc-atl.md)
-# [Data Access Programming (MFC-ATL)](data-access-programming-mfc-atl.md)
+# [OLEDB](oledb/TOC.md)
+# [ODBC] (odbc/TOC.md)
+# [ADO and RDO] (ado-rdo/TOC.md)
 ## [Installing Database Support (MFC-ATL)](installing-database-support-mfc-atl.md)
 ### [Installing ATL Database Support](installing-atl-database-support.md)
 ### [Installing MFC Database Support](installing-mfc-database-support.md)
