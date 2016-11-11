@@ -204,7 +204,7 @@
 #### [operator -2](operator-subtract-2.md)
 #### [operator *](operator-multiply.md)
 #### [operator -1](operator-subtract-1.md)
-#### [operator](operator.md)
+#### [operator \[\]](operator-brackets.md)
 #### [operator :](operator-colon.md)
 #### [operator dot](operator-dot.md)
 #### [operator <>](operator-literal.md)
