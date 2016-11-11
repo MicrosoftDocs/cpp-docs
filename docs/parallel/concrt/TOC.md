@@ -66,3 +66,4 @@
 ## [Best Practices in the Parallel Patterns Library](best-practices-in-the-parallel-patterns-library.md)
 ## [Best Practices in the Asynchronous Agents Library](best-practices-in-the-asynchronous-agents-library.md)
 ## [General Best Practices in the Concurrency Runtime](general-best-practices-in-the-concurrency-runtime.md)
+# [Reference](reference/TOC.md)

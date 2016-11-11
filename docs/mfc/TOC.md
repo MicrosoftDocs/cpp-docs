@@ -826,3 +826,4 @@
 ## [Walkthrough: Putting Controls On Toolbars](walkthrough-putting-controls-on-toolbars.md)
 ## [Walkthrough: Adding a D2D Object to an MFC Project](walkthrough-adding-a-d2d-object-to-an-mfc-project.md)
 ## [Walkthrough: Adding Animation to an MFC Project](walkthrough-adding-animation-to-an-mfc-project.md)
+# [Reference](reference/TOC.md)

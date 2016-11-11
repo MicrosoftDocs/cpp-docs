@@ -62,39 +62,17 @@ The Visual C++ code editor and IDE provide many coding aids. Some are unique to 
  ![Visual C&#43;&#43; Class Wizard](../ide/media/vs2015_cpp_class_wizard.png "vs2015_cpp_class_wizard")  
   
 ## Refactoring  
- Refactorings are available under the Quick Action context menu item, or by clicking on a [light bulb](/visual-studio/ide/perform-quick-actions-with-light-bulbs) in the editor.  
-  
-### Rename  
- Rename a type or function or variable wherever it is used in the specified scope. In the following illustration, the `Eat` method will be renamed to `Devour` in both the derived and base class.  
-  
- ![Rename Dialog in Visual C&#43;&#43;](../ide/media/vss2015_cpp_rename.png "vss2015_cpp_rename")  
-  
-### Quick Action: Move Definition Location  
- Move one or more function definitions into the header file that has the same name as the code file. A new header is created if it doesn't already exist. The resulting definition(s) is/are shown inline in a peek window.  
-  
- ![Move Definition in Visual C&#43;&#43;](../ide/media/vs2015_cpp_move_definition.png "vs2015_cpp_move_definition")  
-  
-### Quick Action: Create Declaration / Definition  
- Create one or more definitions in the associated code file for the selected header declaration(s).  
-  
- ![Visual C&#43;&#43; Create Definition option](../ide/media/vs2015_cpp_create_declaration.png "vs2015_cpp_create_declaration")  
-  
-### Quick Action: Implement all pure virtuals for a class  
- Quickly generate empty implementation stubs for all inherited virtual functions in a class. To implement only the virtual functions in a particular base class, simply highlight the base class in the derived class declaration.  
-  
- ![Visual C&#43;&#43; Implement Virtuals Window](../ide/media/vs2015_cpp_implement_virtuals.png "vs2015_cpp_implement_virtuals")  
-  
-### Convert to raw string literal  
- When you place the cursor over a string literal, you can right click and choose **Quick Actions &#124; Convert to raw string literal** to convert an ordinary string into a C++ 11 raw string literal.  
-  
- ![C&#43;&#43; refactor to a raw string literal](../ide/media/vs2015_cpp_raw_string_literal.png "vs2015_cpp_raw_string_literal")  
-  
-### Extract Function (Visual Studio extension)  
- Use the extract function feature (available as an [extension on the Visual Studio gallery](https://visualstudiogallery.msdn.microsoft.com/a081dc8c-c805-4589-9b8b-c2c309a05789)) to move a section of code into its own function and replace the code with a call to that function.  
-  
- ![Visual C&#43;&#43; Extract Function dialog](../ide/media/vs2015_cpp_extract_function.png "vs2015_cpp_extract_function")  
-  
-## Navigate and understand  
+ Refactorings are available under the Quick Action context menu, or by clicking on a [light bulb](/visual-studio/ide/perform-quick-actions-with-light-bulbs) in the editor.  Some are also found in the **Edit > Refactor** menu.  These features include:
+
+* [Rename](refactoring/rename.md)
+* [Extract Function](refactoring/extract-function.md)
+* [Implement Pure Virtuals](refactoring/implement-pure-virtuals.md)
+* [Create Declaration / Definition](refactoring/create-declaration-definition.md)
+* [Move Function Definition](refactoring/move-definition-location.md)
+* [Convert to Raw String Literal](refactoring/convert-to-raw-string-literal.md)
+* [Change Signature](refactoring/change-signature.md)
+ 
+## Navigate and understand
   
 ### QuickInfo  
  Hover over a variable to see its type information. QuickInfo  
@@ -107,7 +85,7 @@ The Visual C++ code editor and IDE provide many coding aids. Some are unique to 
  ![Visual C&#43;&#43; Open Document menu option](../ide/media/vs2015_cpp_open_document.png "vs2015_cpp_open_document")  
   
 ### Peek Definition  
- Hover over a variable or function declaration, right-click, then choose **Peek Definition** to see an inline view of its definition. For more information, see [Peek Definition (Alt+F12)](../Topic/How%20to:%20View%20and%20Edit%20Code%20by%20Using%20Peek%20Definition%20\(Alt+F12\).md).  
+ Hover over a variable or function declaration, right-click, then choose **Peek Definition** to see an inline view of its definition. For more information, see [Peek Definition (Alt+F12)](/visualstudio/ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12).  
   
  ![Visual C&#43;&#43; Peek Definition](../ide/media/vs2015_cpp_peek_definition.png "vs2015_cpp_peek_definition")  
   
