@@ -1,2 +1,0 @@
-	NC_ADDRESS m_na;
-	NET_ADDRESS_INFO m_nai;

@@ -1,1 +1,0 @@
-   delete m_pTestDlg;

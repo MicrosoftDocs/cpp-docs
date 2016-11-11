@@ -1,1 +1,0 @@
-   m_spBrowser->Navigate(CComBSTR(L"www.microsoft.com"), NULL, NULL, NULL, NULL);

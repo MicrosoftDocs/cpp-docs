@@ -1,1 +1,0 @@
-   CCommand< CNoAccessor, CStreamRowset > myCmd;

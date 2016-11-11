@@ -1,1 +1,0 @@
-   POINT m_arrPoint[100];

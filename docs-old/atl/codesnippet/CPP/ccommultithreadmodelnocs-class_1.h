@@ -1,1 +1,0 @@
-   typedef typename ThreadModel::ThreadModelNoCS _ThreadModel;

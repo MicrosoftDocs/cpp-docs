@@ -1,1 +1,0 @@
-   CTestDialog* m_pTestDlg;

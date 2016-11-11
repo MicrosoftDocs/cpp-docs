@@ -1,1 +1,0 @@
-   COM_INTERFACE_ENTRY(IObjectSafety)

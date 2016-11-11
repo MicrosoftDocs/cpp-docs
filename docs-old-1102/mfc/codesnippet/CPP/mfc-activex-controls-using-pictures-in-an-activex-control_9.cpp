@@ -1,1 +1,0 @@
-   return m_pic.GetPictureDispatch();

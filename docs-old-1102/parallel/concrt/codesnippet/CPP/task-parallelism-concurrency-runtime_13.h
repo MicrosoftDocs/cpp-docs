@@ -1,2 +1,0 @@
-        void Button_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
-        concurrency::task<void> WriteFilesAsync(Windows::Storage::StorageFolder^ folder, const std::vector<std::pair<Platform::String^, Platform::String^>>& fileContents);

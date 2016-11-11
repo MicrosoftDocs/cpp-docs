@@ -1,2 +1,0 @@
-BOOL CMyDlg::OnInitDialog()
-{

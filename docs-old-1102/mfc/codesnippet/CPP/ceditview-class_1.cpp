@@ -1,1 +1,0 @@
-   GetEditCtrl().SetLimitText(nNewVal); //nNewVal, the new character limit

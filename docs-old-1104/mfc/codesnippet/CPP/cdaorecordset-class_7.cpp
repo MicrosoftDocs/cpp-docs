@@ -1,1 +1,0 @@
-   SetFieldDirty(&m_strParam);

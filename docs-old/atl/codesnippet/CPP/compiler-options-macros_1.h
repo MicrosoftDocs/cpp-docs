@@ -1,1 +1,0 @@
-#define _ATL_ALL_WARNINGS

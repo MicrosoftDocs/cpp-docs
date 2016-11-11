@@ -1,1 +1,0 @@
-   CAtlArray<int> iArray;   

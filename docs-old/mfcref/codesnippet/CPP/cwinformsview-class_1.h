@@ -1,1 +1,0 @@
-class CMyView : public CWinFormsView

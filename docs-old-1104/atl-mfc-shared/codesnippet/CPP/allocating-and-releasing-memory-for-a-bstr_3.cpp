@@ -1,1 +1,0 @@
-HRESULT CMyWebBrowser::get_StatusText(BSTR* pbstr)

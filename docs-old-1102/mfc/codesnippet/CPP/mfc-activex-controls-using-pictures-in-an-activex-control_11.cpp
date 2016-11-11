@@ -1,1 +1,0 @@
-   PX_Picture(pPX, _T("ControlPicture"), m_pic);

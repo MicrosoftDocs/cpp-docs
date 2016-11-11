@@ -1,1 +1,0 @@
-   m_myHeaderCtrl.ClearAllFilters();

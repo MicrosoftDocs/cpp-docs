@@ -1,2 +1,0 @@
-   CTestDialog testdlg;
-   testdlg.DoModal();	
