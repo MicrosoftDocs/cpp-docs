@@ -80,7 +80,7 @@ The [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] programming language and 
  [Visual Studio Downloads](http://go.microsoft.com/fwlink/?LinkId=235233)  
  Download Visual C++.  
   
- [Visual C++ Tools and Templates in Visual Studio Editions](../ide/visual-cpp-tools-and-templates-in-visual-studio-editions.md)  
+ [Visual C++ Tools and Features in Visual Studio Editions](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)  
  Find out about different Visual Studio editions.  
   
  [Supported Platforms](../top/supported-platforms-visual-cpp.md)  

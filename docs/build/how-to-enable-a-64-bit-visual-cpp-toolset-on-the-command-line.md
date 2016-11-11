@@ -45,7 +45,7 @@ translation.priority.ht:
 Visual C++ includes compilers that you can use to create apps that can run on a 32-bit, 64-bit, or ARM-based Windows operating system.  
   
 > [!NOTE]
->  For information about the specific tools that are included with each Visual C++ edition, see [Visual C++ Tools and Templates in Visual Studio Editions](../ide/visual-cpp-tools-and-templates-in-visual-studio-editions.md).  
+>  For information about the specific tools that are included with each Visual C++ edition, see [Visual C++ Tools and Features in Visual Studio Editions](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md).  
 >   
 >  For information about how to use the Visual Studio IDE to create 64-bit applications, see [How to: Configure Visual C++ Projects to Target 64-Bit Platforms](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md).  
   
