@@ -72,7 +72,7 @@ The Visual C++ code editor and IDE provide many coding aids. Some are unique to 
 * [Convert to Raw String Literal](refactoring/convert-to-raw-string-literal.md)
 * [Change Signature](refactoring/change-signature.md)
  
-## Navigate and understand  
+## Navigate and understand
   
 ### QuickInfo  
  Hover over a variable to see its type information. QuickInfo  
