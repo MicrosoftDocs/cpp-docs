@@ -58,5 +58,5 @@ Apps built by using [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] 
  For information about how to set the target platform configuration, see [How to: Configure Visual C++ Projects to Target 64-Bit Platforms](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md).  
   
 ## See Also  
- [Visual C++ Tools and Templates in Visual Studio Editions](../ide/visual-cpp-tools-and-templates-in-visual-studio-editions.md)   
+ [Visual C++ Tools and Features in Visual Studio Editions](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)   
  [Getting Started](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md)
