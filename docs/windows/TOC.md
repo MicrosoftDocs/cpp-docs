@@ -1,4 +1,7 @@
 # [Overview of Windows Programming in C++](overview-of-windows-programming-in-cpp.md)
+# [Active Template Library (ATL)](../atl/TOC.md)
+# [Microsoft Foundation Classes (MFC)](../mfc/TOC.md)
+# [ATL and MFC Shared Classes](../atl-mfc/TOC.md)
 # [Component Extensions for Runtime Platforms](component-extensions-for-runtime-platforms.md)
 ## [Tracking Reference Operator (C++ Component Extensions)](tracking-reference-operator-cpp-component-extensions.md)
 ## [Handle to Object Operator (^)  (C++ Component Extensions)](handle-to-object-operator-hat-cpp-component-extensions.md)
