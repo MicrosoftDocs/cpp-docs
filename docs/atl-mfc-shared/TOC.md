@@ -29,4 +29,4 @@
 #### [CString Exception Cleanup](cstring-exception-cleanup.md)
 #### [CString Argument Passing](cstring-argument-passing.md)
 #### [Unicode and Multibyte Character Set (MBCS) Support](unicode-and-multibyte-character-set-mbcs-support.md)
-# [Reference](atl-mfc-shared/reference/TOC.md)
+# [Reference](reference/TOC.md)
