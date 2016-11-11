@@ -42,7 +42,7 @@ Enable supported C++ language features from the specified version of the C++ lan
   
 -   [u8 character literals](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4267.html)  
   
- The **/std:c++latest** option enables the set of C++ language and library features implemented by Visual C++ to track the most recent Working Draft and defect updates of the C++ Standard. Use this switch to get the latest language features supported by the compiler. For a list of supported language and library features, see [What's New for Visual C++](../../top/what-s-new-for-visual-cpp-in-visual-studio-2015.md). The **/std:c++latest** option does not enable features guarded by the **/experimental** switch.  
+ The **/std:c++latest** option enables the set of C++ language and library features implemented by Visual C++ to track the most recent Working Draft and defect updates of the C++ Standard. Use this switch to get the latest language features supported by the compiler. For a list of supported language and library features, see [What's New for Visual C++](../../top/what-s-new-for-visual-cpp-in-visual-studio.md). The **/std:c++latest** option does not enable features guarded by the **/experimental** switch.  
   
  The **/std:c++14** and **/std:c++latest** options are available beginning in Visual C++ 2013 Update 3.  
   
