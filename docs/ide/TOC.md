@@ -1,6 +1,6 @@
 # [IDE and Tools for Visual C++ Development](ide-and-tools-for-visual-cpp-development.md)
 # [Writing and refactoring code (C++)](writing-and-refactoring-code-cpp.md)
-# [Visual C++ Tools and Templates in Visual Studio Editions](visual-cpp-tools-and-templates-in-visual-studio-editions.md)
+# [Visual C++ Tools and Features in Visual Studio Editions](visual-cpp-tools-and-features-in-visual-studio-editions.md)
 # [Creating and Managing Visual C++ Projects](creating-and-managing-visual-cpp-projects.md)
 ## [Visual C++ Project Types](visual-cpp-project-types.md)
 ## [Using Visual C++ Add New Item Templates](using-visual-cpp-add-new-item-templates.md)

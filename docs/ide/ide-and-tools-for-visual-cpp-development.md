@@ -37,7 +37,7 @@ translation.priority.mt:
 # IDE and Tools for Visual C++ Development
 As part of the Visual Studio Integrated Development Environment (IDE), Visual C++ shares many windows and tools in common with other languages. Many of those, including **Solution Explorer**, the Code Editor, and the Debugger, are documented in the MSDN library under [Visual Studio IDE](/visual-studio/ide/visual-studio-ide). Often, a shared tool or window has a slightly different set of features for C++ than for the .NET languages or Javascript. Some windows or tools are only available in Visual Studio Pro or Visual Studio Enterprise. This topic introduces the Visual Studio IDE from the perspective of Visual C++, and provides links to other topics relevant to Visual C++.  
   
- In addition to shared tools in the Visual Studio IDE, Visual C++ has several tools specifically for native code development. These tools are also listed in this article. For a list of which tools are available in each edition of Visual Studio, see [Visual C++ Tools and Templates in Visual Studio Editions](../ide/visual-cpp-tools-and-templates-in-visual-studio-editions.md).  
+ In addition to shared tools in the Visual Studio IDE, Visual C++ has several tools specifically for native code development. These tools are also listed in this article. For a list of which tools are available in each edition of Visual Studio, see [Visual C++ Tools and Features in Visual Studio Editions](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md).  
   
 ## Creating a solution and project(s)  
  In all editions of Visual C++, you organize the source code and related files for an executable ( such as an .exe, .dll or .lib) into a project. A project has a project file in XML format (.vcxproj) that specifies all the files and resources needed to compile the program, as well as other configuration settings, for example the target platform (x86, x64 or ARM) and whether you are building a release version or debug version of the program. A project (or many projects) are contained in a *Solution*; for example, a solution might contain several Win32 DLL projects, and a single Win32 console application that uses those DLLs. When you build the project, the MSBuild engine consumes the project file and produces the executable file and/or any other custom output you have specified.  
@@ -128,7 +128,7 @@ As part of the Visual Studio Integrated Development Environment (IDE), Visual C+
   
 |||  
 |-|-|  
-|[Visual C++ Tools and Templates in Visual Studio Editions](../ide/visual-cpp-tools-and-templates-in-visual-studio-editions.md)|Shows which features are available in the various editions of Visual Studio.|  
+|[Visual C++ Tools and Features in Visual Studio Editions](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)|Shows which features are available in the various editions of Visual Studio.|  
 |[Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)|Provides an overview of the Visual Studio development environment and the kinds of C++ apps that you can create.|  
 |[Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)|Provides an overview of C++ projects in Visual Studio and links to other articles that explain how to create and manage them.|  
 |[Building C/C++ Programs](../build/building-c-cpp-programs.md)|Describes how to build C++ projects.|  
