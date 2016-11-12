@@ -1,1 +1,0 @@
-      m_wndSBC.SetMinHeight(40);

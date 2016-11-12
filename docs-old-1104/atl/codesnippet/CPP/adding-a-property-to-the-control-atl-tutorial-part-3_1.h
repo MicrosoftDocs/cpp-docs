@@ -1,1 +1,0 @@
-   short m_nSides;

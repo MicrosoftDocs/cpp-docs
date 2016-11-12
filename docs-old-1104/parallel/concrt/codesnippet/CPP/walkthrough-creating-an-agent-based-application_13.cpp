@@ -1,1 +1,0 @@
-   file_reader reader("test.txt", calculate_checksum);

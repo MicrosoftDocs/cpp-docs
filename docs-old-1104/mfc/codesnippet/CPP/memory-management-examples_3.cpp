@@ -1,2 +1,0 @@
-         delete [] myCharArray;
-         delete [] myIntArray;

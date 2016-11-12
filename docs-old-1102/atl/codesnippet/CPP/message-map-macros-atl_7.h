@@ -1,2 +1,0 @@
-   BEGIN_MSG_MAP(CExample)
-   END_MSG_MAP()

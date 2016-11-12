@@ -1,1 +1,0 @@
-	CMFCMenuBar	m_wndMenuBar;

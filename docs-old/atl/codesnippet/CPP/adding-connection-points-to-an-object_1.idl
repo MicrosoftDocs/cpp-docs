@@ -1,9 +1,0 @@
-   [
-      uuid(3233E37D-BCC0-4871-B277-48AE6B61224A),
-      helpstring("Buddy Events")
-   ]
-   dispinterface DBuddyEvents
-   {
-      properties:
-      methods:
-   };

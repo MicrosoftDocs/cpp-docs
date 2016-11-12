@@ -1,1 +1,0 @@
-   CPictureHolder    m_pic;

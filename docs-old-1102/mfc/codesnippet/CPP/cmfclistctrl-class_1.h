@@ -1,1 +1,0 @@
-	CMFCListCtrl m_wndWatch;

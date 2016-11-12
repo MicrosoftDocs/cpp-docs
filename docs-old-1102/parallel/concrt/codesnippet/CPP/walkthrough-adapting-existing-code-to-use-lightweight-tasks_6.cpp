@@ -1,1 +1,0 @@
-   CurrentScheduler::ScheduleTask(MyThreadFunction, pData);

@@ -1,1 +1,0 @@
-   dwFlags &= ~clipPaintDC;

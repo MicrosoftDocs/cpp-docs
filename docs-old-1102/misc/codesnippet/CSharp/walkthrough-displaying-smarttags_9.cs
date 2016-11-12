@@ -1,1 +1,0 @@
-    public event EventHandler<SnapshotSpanEventArgs> TagsChanged;

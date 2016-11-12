@@ -1,1 +1,0 @@
-typedef IPropertyPageImpl<CDocProperties> PPGBaseClass;

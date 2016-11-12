@@ -1,1 +1,0 @@
-   ::MessageBox(NULL, _T("Here's your message"), _T("HelloHTML"), MB_OK);

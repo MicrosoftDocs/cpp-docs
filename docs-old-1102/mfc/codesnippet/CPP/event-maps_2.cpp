@@ -1,1 +1,0 @@
-      VTS_COLOR VTS_FONT

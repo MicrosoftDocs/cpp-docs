@@ -1,1 +1,0 @@
-	CMFCButton m_Button;
