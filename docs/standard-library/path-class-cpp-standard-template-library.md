@@ -1,5 +1,5 @@
 ---
-title: "path Class (C++ Standard Template Library) | Microsoft Docs"
+title: "path Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
@@ -33,7 +33,7 @@ translation.priority.mt:
   - "zh-cn"
   - "zh-tw"
 ---
-# path Class (C++ Standard Template Library)
+# path Class
 The **path** class stores an object of type string_type, called myname here for the purposes of exposition, suitable for use as a pathname. string_type is a synonym for basic_string<value_type>, where value_type is a synonym for char under Windows or wchar_t under Posix.  
   
  For more information, and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).  

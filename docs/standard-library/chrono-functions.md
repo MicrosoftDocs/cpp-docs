@@ -18,7 +18,7 @@ manager: "ghogen"
 ##  <a name="chrono_literals"></a>  chrono literals  
  (C++14) The \<chrono> header defines 12 [user-defined literals](../cpp/user-defined-literals-cpp.md) to facilitate using literals that represent hours, minutes, seconds, milliseconds, microseconds, and nanoseconds. Each user-defined literal has an integral and a floating-point overload. The literals are defined in the literals::chrono_literals inline namespace which is brought into scope automatically when std::chrono is in scope.  
   
-```  
+```cpp  
 inline namespace literals {  
     inline namespace chrono_literals {  
  // return integral hours  
@@ -59,9 +59,6 @@ inline namespace literals {
 
  }// inline namespace chrono_literals  
 }// inline namespace literals  
-```  
-  
-```  
 ```  
   
 ### Remarks  

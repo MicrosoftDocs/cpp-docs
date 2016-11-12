@@ -157,9 +157,8 @@ bool operator>=(const directory_entry& right) const noexcept;
   
 ## operator const path_type&  
   
-```  operator const std::experimental::filesystem::v1::path&() const;
-
-// retained  
+``` 
+ operator const std::experimental::filesystem::v1::path&() const; 
 ```  
   
  The member operator returns mypath.  
@@ -175,7 +174,8 @@ const std::experimental::filesystem::v1::path& path() const noexcept;
 ## replace_filename  
   
 ```  
-void replace_filename(const std::experimental::filesystem::v1::path& pval,  
+void replace_filename(
+    const std::experimental::filesystem::v1::path& pval,  
     file_status stat_arg = file_status(),  
     file_status symstat_arg = file_status());
 ```  
@@ -185,12 +185,8 @@ void replace_filename(const std::experimental::filesystem::v1::path& pval,
 ## status  
   
 ```  
-file_status status() const;
-
- 
-file_status status(
-    error_code& ec) const noexcept;  
-Otherwise, mystat = status(mypval).  
+file_status status() const; 
+file_status status(error_code& ec) const noexcept;  
 ```  
   
  Both member functions return mystat possibly first altered as follows:  
@@ -202,9 +198,7 @@ Otherwise, mystat = status(mypval).
 ## symlink_status  
   
 ```  
-file_status symlink_status() const;
-
- 
+file_status symlink_status() const; 
 file_status symlink_status(error_code& ec) const noexcept;  
 ```  
   
