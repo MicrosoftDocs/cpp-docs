@@ -46,27 +46,17 @@ A base class for the codecvt class that is used to define an enumeration type re
 ```
 class codecvt_base : public locale::facet {
 public:
-    enum result {ok,
-    partial,
- error,
-    noconv};
- codecvt_base(
-    size_t _Refs = 0);
-
+    enum result {ok, partial, error, noconv};
+    codecvt_base( size_t _Refs = 0);
     bool always_noconv() const;
-
     int max_length() const;
-
     int encoding() const;
+    ~codecvt_base()
 
- ~codecvt_base()
 protected:
     virtual bool do_always_noconv() const;
-
     virtual int do_max_length() const;
-
     virtual int do_encoding() const;
-
 };
 ```  
   

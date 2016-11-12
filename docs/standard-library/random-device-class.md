@@ -118,7 +118,7 @@ random_device(const std::string& = "");
 ```  
   
 ### Remarks  
- The constructor initializes the generator as needed, ignoring the string parameter. Throws a value of an implementation-defined type derived from [exception](../standard-library/exception-class1.md) if the `random_device` could not be initialized.  
+ The constructor initializes the generator as needed, ignoring the string parameter. Throws a value of an implementation-defined type derived from [exception](../standard-library/exception-class.md) if the `random_device` could not be initialized.  
   
  For example code, see [random_device](../standard-library/random-device-class.md).  
   
@@ -142,7 +142,7 @@ result_type operator()();
 ```  
   
 ### Remarks  
- Returns values uniformly distributed in the closed interval [ `min, max`] as determined by member functions `min()` and `max()`. Throws a value of an implementation-defined type derived from [exception](../standard-library/exception-class1.md) if a random number could not be obtained.  
+ Returns values uniformly distributed in the closed interval [ `min, max`] as determined by member functions `min()` and `max()`. Throws a value of an implementation-defined type derived from [exception](../standard-library/exception-class.md) if a random number could not be obtained.  
   
  For example code, see [random_device](../standard-library/random-device-class.md).  
   

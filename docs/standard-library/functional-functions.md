@@ -69,7 +69,7 @@ unspecified bind(Fty fn, T1 t1, T2 t2, ..., TN tN);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__bind.cpp   
 // compile with: /EHsc   
 #include <functional>   
@@ -124,11 +124,11 @@ int main()
   
 ```  
 template <class Operation, class Type>  
-binder1st <Operation> bind1st (const Operation& _Func, const Type& left);
+binder1st <Operation> bind1st (const Operation& func, const Type& left);
 ```  
   
 ### Parameters  
- `_Func`  
+ `func`  
  The binary function object to be converted to a unary function object.  
   
  ` left`  
@@ -140,11 +140,11 @@ binder1st <Operation> bind1st (const Operation& _Func, const Type& left);
 ### Remarks  
  Function binders are a kind of function adaptor and, because they return function objects, can be used in certain types of function composition to construct more complicated and powerful expressions.  
   
- If `_Func` is an object of type `Operation` and `c` is a constant, then `bind1st` ( `_Func`, `c`) is equivalent to the [binder1st](../standard-library/binder1st-class.md) class constructor `binder1st`< `Operation`> ( `_Func`, `c`) and is more convenient.  
+ If `func` is an object of type `Operation` and `c` is a constant, then `bind1st` ( `func`, `c`) is equivalent to the [binder1st](../standard-library/binder1st-class.md) class constructor `binder1st`< `Operation`> ( `func`, `c`) and is more convenient.  
   
 ### Example  
   
-```  
+```cpp  
 // functional_bind1st.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -214,11 +214,11 @@ The number of elements in v1 less than 10 is: 2.
   
 ```  
 template <class Operation, class Type>  
-binder2nd <Operation> bind2nd(const Operation& _Func, const Type& right);
+binder2nd <Operation> bind2nd(const Operation& func, const Type& right);
 ```  
   
 ### Parameters  
- `_Func`  
+ `func`  
  The binary function object to be converted to a unary function object.  
   
  ` right`  
@@ -230,11 +230,11 @@ binder2nd <Operation> bind2nd(const Operation& _Func, const Type& right);
 ### Remarks  
  Function binders are a kind of function adaptor and, because they return function objects, can be used in certain types of function composition to construct more complicated and powerful expressions.  
   
- If `_Func` is an object of type **Operation** and `c` is a constant, then `bind2nd` ( `_Func`, `c` ) is equivalent to the [binder2nd](../standard-library/binder2nd-class.md) class constructor **binder2nd\<Operation>** ( `_Func`, `c` ) and more convenient.  
+ If `func` is an object of type **Operation** and `c` is a constant, then `bind2nd` ( `func`, `c` ) is equivalent to the [binder2nd](../standard-library/binder2nd-class.md) class constructor **binder2nd\<Operation>** ( `func`, `c` ) and more convenient.  
   
 ### Example  
   
-```  
+```cpp  
 // functional_bind2nd.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -487,7 +487,7 @@ cref(const reference_wrapper<Ty>& arg);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__cref.cpp   
 // compile with: /EHsc   
 #include <functional>   
@@ -542,7 +542,7 @@ unspecified mem_fn(Ret Ty::*pm);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__mem_fn.cpp   
 // compile with: /EHsc   
 #include <functional>   
@@ -584,20 +584,20 @@ int main()
   
 ```  
 template <class Result, class Type>  
-mem_fun_t<Result, Type> mem_fun (Result(Type::* _Pm)());
+mem_fun_t<Result, Type> mem_fun (Result(Type::* pmem)());
 
 template <class Result, class Type, class Arg>  
-mem_fun1_t<Result, Type, Arg> mem_fun(Result (Type::* _Pm)(Arg));
+mem_fun1_t<Result, Type, Arg> mem_fun(Result (Type::* pmem)(Arg));
 
 template <class Result, class Type>  
-const_mem_fun_t<Result, Type> mem_fun(Result (Type::* _Pm)() const);
+const_mem_fun_t<Result, Type> mem_fun(Result (Type::* pmem)() const);
 
 template <class Result, class Type, class Arg>  
-const_mem_fun1_t<Result, Type, Arg> mem_fun(Result (Type::* _Pm)(Arg) const);
+const_mem_fun1_t<Result, Type, Arg> mem_fun(Result (Type::* pmem)(Arg) const);
 ```  
   
 ### Parameters  
- `_Pm`  
+ `pmem`  
  A pointer to the member function of class **Type** to be converted to a function object.  
   
 ### Return Value  
@@ -605,7 +605,7 @@ const_mem_fun1_t<Result, Type, Arg> mem_fun(Result (Type::* _Pm)(Arg) const);
   
 ### Example  
   
-```  
+```cpp  
 // functional_mem_fun.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -668,20 +668,20 @@ int main( )
   
 ```  
 template <class Result, class Type>  
-mem_fun_ref_t<Result, Type> mem_fun_ref(Result (Type::* _Pm)());
+mem_fun_ref_t<Result, Type> mem_fun_ref(Result (Type::* pmem)());
 
 template <class Result, class Type, class Arg>  
-mem_fun1_ref_t<Result, Type, Arg> mem_fun_ref(Result (Type::* _Pm)(Arg));
+mem_fun1_ref_t<Result, Type, Arg> mem_fun_ref(Result (Type::* pmem)(Arg));
 
 template <class Result, class Type>  
-const_mem_fun_ref_t<Result, Type> mem_fun_ref(Result Type::* _Pm)() const);
+const_mem_fun_ref_t<Result, Type> mem_fun_ref(Result Type::* pmem)() const);
 
 template <class Result, class Type, class Arg>  
-const_mem_fun1_ref_t<Result, Type, Arg> mem_fun_ref(Result (T::* _Pm)(Arg) const);
+const_mem_fun1_ref_t<Result, Type, Arg> mem_fun_ref(Result (T::* pmem)(Arg) const);
 ```  
   
 ### Parameters  
- `_Pm`  
+ `pmem`  
  A pointer to the member function of class `Type` to be converted to a function object.  
   
 ### Return Value  
@@ -689,7 +689,7 @@ const_mem_fun1_ref_t<Result, Type, Arg> mem_fun_ref(Result (T::* _Pm)(Arg) const
   
 ### Example  
   
-```  
+```cpp  
 // functional_mem_fun_ref.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -770,8 +770,7 @@ With the even numbers removed, the remaining values are: 1 3 5 7 9 11 13
   
 ```  
 template <class UnaryPredicate>  
-unary_negate<UnaryPredicate>  
-not1(const UnaryPredicate& pred);
+unary_negate<UnaryPredicate> not1(const UnaryPredicate& pred);
 ```  
   
 ### Parameters  
@@ -786,7 +785,7 @@ not1(const UnaryPredicate& pred);
   
 ### Example  
   
-```  
+```cpp  
 // functional_not1.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -839,11 +838,11 @@ The number of elements in v1 not greater than 10 is: 3.
   
 ```  
 template <class BinaryPredicate>  
-binary_negate<BinaryPredicate> not2(const BinaryPredicate& _Func);
+binary_negate<BinaryPredicate> not2(const BinaryPredicate& func);
 ```  
   
 ### Parameters  
- `_Func`  
+ `func`  
  The binary predicate to be negated.  
   
 ### Return Value  
@@ -854,7 +853,7 @@ binary_negate<BinaryPredicate> not2(const BinaryPredicate& _Func);
   
 ### Example  
   
-```  
+```cpp  
 // functional_not2.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -911,20 +910,20 @@ Resorted vector v1 = ( 26500 19169 18467 6334 6262 6262 41 )
   
 ```  
 template <class Arg, class Result>  
-pointer_to_unary_function<Arg, Result, Result (*)(Arg)> ptr_fun(Result (*_pfunc)(Arg));
+pointer_to_unary_function<Arg, Result, Result (*)(Arg)> ptr_fun(Result (*pfunc)(Arg));
 
 template <class Arg1, class Arg2, class Result>  
-pointer_to_binary_function<Arg1, Arg2, Result, Result (*)(Arg1, Arg2)> ptr_fun(Result (*_pfunc)(Arg1, Arg2));
+pointer_to_binary_function<Arg1, Arg2, Result, Result (*)(Arg1, Arg2)> ptr_fun(Result (*pfunc)(Arg1, Arg2));
 ```  
   
 ### Parameters  
- `_pfunc`  
+ `pfunc`  
  The unary or binary function pointer to be converted to an adaptable function.  
   
 ### Return Value  
- The first template function returns the unary function [pointer_to_unary_function](../standard-library/pointer-to-unary-function-class.md) < `Arg`, **Result**>(* `_pfunc`).  
+ The first template function returns the unary function [pointer_to_unary_function](../standard-library/pointer-to-unary-function-class.md) < `Arg`, **Result**>(* `pfunc`).  
   
- The second template function returns binary function [pointer_to_binary_function](../standard-library/pointer-to-binary-function-class.md) \< **Arg1**, **Arg2**, **Result**>(* `_pfunc`).  
+ The second template function returns binary function [pointer_to_binary_function](../standard-library/pointer-to-binary-function-class.md) \< **Arg1**, **Arg2**, **Result**>(* `pfunc`).  
   
 ### Remarks  
  A function pointer is a function object and may be passed to any Standard Template Library algorithm that is expecting a function as a parameter, but it is not adaptable. To use it with an adaptor, such as binding a value to it or using it with a negator, it must be supplied with the nested types that make such an adaptation possible. The conversion of unary and binary function pointers by the `ptr_fun` helper function allows the function adaptors to work with unary and binary function pointers.  
@@ -937,12 +936,10 @@ pointer_to_binary_function<Arg1, Arg2, Result, Result (*)(Arg1, Arg2)> ptr_fun(R
   
 ```  
 template <class Ty>  
-reference_wrapper<Ty>  
-ref(Ty& arg);
+reference_wrapper<Ty> ref(Ty& arg);
 
 template <class Ty>  
-reference_wrapper<Ty>  
-ref(reference_wrapper<Ty>& arg);
+reference_wrapper<Ty> ref(reference_wrapper<Ty>& arg);
 ```  
   
 ### Return Value  
@@ -1028,8 +1025,7 @@ tiger cougar
   
 ```  
 template <class Fty>  
-void swap(function<Fty>& f1,  
-    function<Fty>& f2);
+void swap(function<Fty>& f1, function<Fty>& f2);
 ```  
   
 ### Parameters  
@@ -1047,7 +1043,7 @@ void swap(function<Fty>& f1,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__swap.cpp   
 // compile with: /EHsc   
 #include <functional>   

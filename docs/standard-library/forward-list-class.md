@@ -126,7 +126,7 @@ class forward_list
 |[operator=](#forward_list__operator_eq)|Replaces the elements of the forward list with a copy of another forward list.|  
   
 ## Requirements  
- **Header:** <forward_list>  
+ **Header:** \<forward_list>  
   
  **Namespace:** std  
   
@@ -148,10 +148,8 @@ typedef Allocator allocator_type;
 void assign(
     size_type Count,   
     const Type& Val);
-
 void assign(
     initializer_list<Type> IList);
-
 template <class InputIterator>  
 void assign(InputIterator First, InputIterator Last);
 ```  
@@ -179,8 +177,6 @@ void assign(InputIterator First, InputIterator Last);
   
 ```  
 const_iterator before_begin() const;
-
- 
 iterator before_begin();
 ```  
   
@@ -194,8 +190,6 @@ iterator before_begin();
   
 ```  
 const_iterator begin() const;
-
- 
 iterator begin();
 ```  
   
@@ -236,7 +230,6 @@ const_iterator cbegin() const;
 auto i1 = Container.begin();
 // i1 is Container<T>::iterator   
 auto i2 = Container.cbegin();
-
 // i2 is Container<T>::const_iterator  
 ```  
   
@@ -320,21 +313,21 @@ typedef typename Allocator::difference_type difference_type;
   
 ```  
 template <class T>  
-iterator emplace_after(const_iterator _Where, Type&& val);
+iterator emplace_after(const_iterator Where, Type&& val);
 ```  
   
 ### Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|`_Where`|The position in the target forward list where the new element is constructed.|  
+|`Where`|The position in the target forward list where the new element is constructed.|  
 |` val`|The constructor argument.|  
   
 ### Return Value  
  An iterator that designates the newly inserted element.  
   
 ### Remarks  
- This member function inserts an element with the constructor arguments ` val` just after the element pointed to by `_Where` in the controlled sequence. Its behavior is otherwise the same as [forward_list::insert_after](#forward_list__insert_after).  
+ This member function inserts an element with the constructor arguments ` val` just after the element pointed to by `Where` in the controlled sequence. Its behavior is otherwise the same as [forward_list::insert_after](#forward_list__insert_after).  
   
 ##  <a name="forward_list__emplace_front"></a>  forward_list::emplace_front  
  Adds an element constructed in place to the beginning of the list.  
@@ -370,8 +363,6 @@ bool empty() const;
   
 ```  
 const_iterator end() const;
-
- 
 iterator end();
 ```  
   
@@ -382,8 +373,7 @@ iterator end();
  Removes elements from the forward list after a specified position.  
   
 ```  
-iterator erase_after(const_iterator _Where);
-
+iterator erase_after(const_iterator Where);
 iterator erase_after(const_iterator first, const_iterator last);
 ```  
   
@@ -391,7 +381,7 @@ iterator erase_after(const_iterator first, const_iterator last);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|`_Where`|The position in the target forward list where the element is erased.|  
+|`Where`|The position in the target forward list where the element is erased.|  
 |` first`|The beginning of the range to erase.|  
 |` last`|The end of the range to erase.|  
   
@@ -399,7 +389,7 @@ iterator erase_after(const_iterator first, const_iterator last);
  An iterator that designates the first element remaining beyond any elements removed, or [forward_list::end](#forward_list__end) if no such element exists.  
   
 ### Remarks  
- The first member function removes the element of the controlled sequence just after `_Where`.  
+ The first member function removes the element of the controlled sequence just after `Where`.  
   
  The second member function removes the elements of the controlled sequence in the range `( first,  last)` (neither end point is included).  
   
@@ -412,34 +402,19 @@ iterator erase_after(const_iterator first, const_iterator last);
   
 ```  
 forward_list();
-
 explicit forward_list(const Allocator& Al);
-
 explicit forward_list(size_type Count);
-
 forward_list(size_type Count, const Type& Val);
-
-forward_list(size_type Count, const Type& Val,  
-    const Allocator& Al);
-
+forward_list(size_type Count, const Type& Val, const Allocator& Al);
 forward_list(const forward_list& Right);
-
 forward_list(const forward_list& Right, const Allocator& Al);
-
 forward_list(forward_list&& Right);
-
 forward_list(forward_list&& Right, const Allocator& Al);
-
-forward_list(
-initializer_list<Type> IList,  
-    const Alloc& Al);
-
+forward_list(initializer_list<Type> IList, const Alloc& Al);
 template <class InputIterator>  
 forward_list(InputIterator First, InputIterator Last);
-
 template <class InputIterator>  
-forward_list(InputIterator First, InputIterator Last,  
-    const Allocator& Al);
+forward_list(InputIterator First, InputIterator Last, const Allocator& Al);
 ```  
   
 ### Parameters  
@@ -474,7 +449,6 @@ forward_list(InputIterator First, InputIterator Last,
   
 ```  
 reference front();
-
 const_reference front() const;
 ```  
   
@@ -495,27 +469,12 @@ allocator_type get_allocator() const;
  Adds elements to the forward list after a specified position.  
   
 ```  
-iterator insert_after(
-    const_iterator Where,   
-    const Type& Val);
-
-void insert_after(
-    const_iterator Where, size_type Count,   
-    const Type& Val);
-
-void insert_after(
-    const iterator Where,  
-    initializer_list<Type> IList);
-
-iterator insert_after(
-    const_iterator Where,   
-    Type&& Val);
-
+iterator insert_after(const_iterator Where, const Type& Val);
+void insert_after(const_iterator Where, size_type Count, const Type& Val);
+void insert_after(const iterator Where, initializer_list<Type> IList);
+iterator insert_after(const_iterator Where, Type&& Val);
 template <class InputIterator>  
-void insert_after(
-    const_iterator Where,   
-    InputIterator First,  
-    InputIterator Last);
+void insert_after(const_iterator Where, InputIterator First, InputIterator Last);
 ```  
   
 ### Parameters  
@@ -576,7 +535,6 @@ size_type max_size() const;
   
 ```  
 void merge(forward_list& right);
-
 template <class Predicate>  
 void merge(forward_list& right, Predicate comp);
 ```  
@@ -602,9 +560,7 @@ void merge(forward_list& right, Predicate comp);
   
 ```  
 forward_list& operator=(const forward_list& right);
-
-forward_list& operator=(initializer_list<Type> _IList);
-
+forward_list& operator=(initializer_list<Type> IList);
 forward_list& operator=(forward_list&& right);
 ```  
   
@@ -613,7 +569,7 @@ forward_list& operator=(forward_list&& right);
 |Parameter|Description|  
 |---------------|-----------------|  
 |` right`|The forward list being copied into the forward list.|  
-|`_IList`|A brace-enclosed initializer list, which behaves just like a sequence of elements of type `Type`.|  
+|`IList`|A brace-enclosed initializer list, which behaves just like a sequence of elements of type `Type`.|  
   
 ### Remarks  
  The first member operator replaces the controlled sequence with a copy of the sequence controlled by ` right`.  
@@ -648,7 +604,6 @@ void pop_front();
   
 ```  
 void push_front(const Type& val);
-
 void push_front(Type&& val);
 ```  
   
@@ -712,7 +667,6 @@ void remove_if(Predicate pred);
   
 ```  
 void resize(size_type _Newsize);
-
 void resize(size_type _Newsize, const Type& val);
 ```  
   
@@ -750,7 +704,6 @@ typedef typename Allocator::size_type size_type;
   
 ```  
 void sort();
-
 template <class Predicate>  
 void sort(Predicate pred);
 ```  
@@ -773,30 +726,22 @@ void sort(Predicate pred);
   
 ```  
 // insert the entire source forward_list  
-void splice_after(const_iterator Where,
-    forward_list& Source);
+void splice_after(const_iterator Where, forward_list& Source);
+void splice_after(const_iterator Where, forward_list&& Source);
 
-void splice_after(const_iterator Where,
-    forward_list&& Source);
-
- 
 // insert one element of the source forward_list  
-void splice_after(const_iterator Where,
-    forward_list& Source,
-    const_iterator Iter);
+void splice_after(const_iterator Where, forward_list& Source, const_iterator Iter);
+void splice_after(const_iterator Where, forward_list&& Source, const_iterator Iter);
 
-void splice_after(const_iterator Where,
-    forward_list&& Source,
-    const_iterator Iter);
-
- 
 // insert a range of elements from the source forward_list  
-void splice_after(const_iterator Where,
+void splice_after(
+    const_iterator Where, 
     forward_list& Source,
     const_iterator First,
     const_iterator Last);
 
-void splice_after(const_iterator Where,
+void splice_after(
+    const_iterator Where,
     forward_list&& Source,
     const_iterator First,
     const_iterator Last);
@@ -924,7 +869,6 @@ void swap(forward_list& right);
   
 ```  
 void unique();
-
 template <class BinaryPredicate>  
 void unique(BinaryPredicate comp);
 ```  

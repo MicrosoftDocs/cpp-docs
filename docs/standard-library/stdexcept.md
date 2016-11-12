@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # &lt;stdexcept&gt;
-Defines several standard classes used for reporting exceptions. The classes form a derivation hierarchy all derived from class [exception](../standard-library/exception-class1.md) and include two general types of exceptions: logical errors and run-time errors. The logical errors are caused programmer mistakes. They derive from the base class logic_error and include:  
+Defines several standard classes used for reporting exceptions. The classes form a derivation hierarchy all derived from class [exception](../standard-library/exception-class.md) and include two general types of exceptions: logical errors and run-time errors. The logical errors are caused programmer mistakes. They derive from the base class logic_error and include:  
   
 -   `domain_error`  
   

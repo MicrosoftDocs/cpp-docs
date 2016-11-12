@@ -13,12 +13,12 @@ manager: "ghogen"
 # &lt;complex&gt; functions
 ||||  
 |-|-|-|  
-|[Functions tan](#functions_tan)|[abs](#abs)|[arg](#arg)|  
-|[conj](#conj)|[cos](#cos)|[cosh](#cosh)|  
-|[exp](#exp)|[imag](#imag)|[log](#log)|  
-|[log10](#log10)|[norm](#norm)|[polar](#polar)|  
-|[pow](#pow)|[real](#real)|[sin](#sin)|  
-|[sinh](#sinh)|[sqrt](#sqrt)|[tanh](#tanh)|  
+|[abs](#abs)|[arg](#arg)|[conj](#conj)|
+|[cos](#cos)|[cosh](#cosh)|[exp](#exp)|
+|[imag](#imag)|[log](#log)|[log10](#log10)|
+|[norm](#norm)|[polar](#polar)|[pow](#pow)|
+|[real](#real)|[sin](#sin)|[sinh](#sinh)|
+|[sqrt](#sqrt)|[tan](#tan)|[tanh](#tanh)|  
   
 ##  <a name="abs"></a>  abs  
  Calculates the modulus of a complex number.  
@@ -1267,7 +1267,7 @@ The argument of c2 = ( 1 / 2 ) * arg ( c1 ) =0.785398 radians,
  which is 45 degrees.  
 ```  
   
-##  <a name="functions_tan"></a>  Functions tan  
+##  <a name="tan"></a> tan  
  Returns the tangent of a complex number.  
   
 ```  

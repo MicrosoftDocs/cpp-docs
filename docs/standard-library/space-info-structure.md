@@ -39,7 +39,11 @@ Holds information about a volume.
 ## Syntax  
   
 ```  
-struct space_info;  
+struct space_info	{
+	uintmax_t capacity;
+	uintmax_t free;
+	uintmax_t available;
+	};  
 ```  
   
 ## Members  
@@ -55,7 +59,7 @@ struct space_info;
 ## Requirements  
  **Header:** filesystem  
   
- **Namespace:** std::tr2::sys  
+ **Namespace:** std::experimental::filesystem  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   

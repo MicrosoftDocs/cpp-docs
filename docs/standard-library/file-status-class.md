@@ -10,9 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "filesystem/std::tr2::sys::file_status"
-  - "filesystem/std::tr2::sys::file_status::perms"
-  - "filesystem/std::tr2::sys::file_status::type"
+  - "filesystem/std::experimental::filesystemfile_status"
+  - "filesystem/std::experimental::filesystemfile_status::perms"
+  - "filesystem/std::experimental::filesystemfile_status::type"
 dev_langs: 
   - "C++"
 ms.assetid: 9781840e-ad22-44dd-ad79-0fabaa94bac4
@@ -47,7 +47,9 @@ class file_status;
 ## file_status::file_status  
   
 ```  
-explicit file_status(file_type ftype = file_type::none, perms mask = perms::unknown) noexcept;file_status(const file_status&) noexcept = default;file_status(file_status&&) noexcept = default;  
+explicit file_status(file_type ftype = file_type::none, perms mask = perms::unknown) noexcept;
+file_status(const file_status&) noexcept = default;
+file_status(file_status&&) noexcept = default;  
 ```  
   
 ## file_status::operator=  
@@ -82,10 +84,10 @@ void permissions(perms_Prms) noexcept
 ## Requirements  
  **Header:** filesystem  
   
- **Namespace:** std::tr2::sys  
+ **Namespace:** std::experimental::filesystem  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   
- [path Class (C++ Standard Template Library)](../standard-library/path-class-cpp-standard-template-library.md)   
+ [path Class](../standard-library/path-class.md)   
  [\<filesystem>](../standard-library/filesystem.md)
 

@@ -32,10 +32,15 @@ manager: "ghogen"
 ```
 template <class Ty>
 inline bool atomic_compare_exchange_strong(
-    volatile atomic<Ty>* Atom, Ty* Exp, Ty Value) noexcept;
+    volatile atomic<Ty>* Atom,
+    Ty* Exp
+,   Ty Value) noexcept;
+
 template <class Ty>
 inline bool atomic_compare_exchange_strong(
-    atomic<Ty>* Atom, Ty* Exp, Ty Value) noexcept;
+    atomic<Ty>* Atom,
+    Ty* Exp,
+   Ty Value) noexcept;
 ```  
   
 ### Parameters  
@@ -60,13 +65,17 @@ inline bool atomic_compare_exchange_strong(
 ```
 template <class T>
 inline bool atomic_compare_exchange_strong_explicit(
-    volatile atomic<Ty>* Atom, Ty* Exp, Ty Value,
+    volatile atomic<Ty>* Atom,
+   Ty* Exp,
+   Ty Value,
     memory_order Order1,
     memory_order Order2) noexcept;
 
 template <class Ty>
 inline bool atomic_compare_exchange_strong_explicit(
-    atomic<Ty>* Atom, Ty* Exp, Ty Value,
+    atomic<Ty>* Atom,
+    Ty* Exp,
+    Ty Value,
     memory_order Order1,
     memory_order Order2) noexcept;
 ```  
@@ -91,7 +100,9 @@ inline bool atomic_compare_exchange_strong_explicit(
  A `bool` that indicates the result of the value comparison.  
   
 ### Remarks  
- An *atomic compare and exchange operation* compares the value that is stored in the object that is pointed to by `Atom` against the value that is pointed to by `Exp`. If the values are equal, the the value that is stored in the object that is pointed to by `atom` is replaced with `Val` by using a `read-modify-write` operation and applying the memory order constraints that are specified by `Order1`. If the values are not equal, the operation replaces the value that is pointed to by `Exp` with the value that is stored in the object that is pointed to by `Atom` and applies the memory order constraints that are specified by `Order2`.  
+ An *atomic compare and exchange operation* compares the value that is stored in the object that is pointed to by `Atom` against the value that is pointed to by `Exp`. If the values are equal,
+    The the value that is stored in the object that is pointed to by `atom` is replaced with `Val` by using a `read-modify-write` operation and applying the memory order constraints that are specified by `Order1`. If the values are not equal,
+    The operation replaces the value that is pointed to by `Exp` with the value that is stored in the object that is pointed to by `Atom` and applies the memory order constraints that are specified by `Order2`.  
   
 ##  <a name="atomic_compare_exchange_weak_function"></a>  atomic_compare_exchange_weak Function  
  Performs a *weak atomic compare and exchange* operation.  
@@ -99,10 +110,14 @@ inline bool atomic_compare_exchange_strong_explicit(
 ```
 template <class Ty>
 inline bool atomic_compare_exchange_strong(
-    volatile atomic<Ty>* Atom, Ty* Exp, Ty Value) noexcept;
+    volatile atomic<Ty>* Atom,
+    Ty* Exp,
+    Ty Value) noexcept;
 template <class Ty>
 inline bool atomic_compare_exchange_strong(
-    atomic<Ty>* Atom, Ty* Exp, Ty Value) noexcept;
+    atomic<Ty>* Atom,
+    Ty* Exp,
+    Ty Value) noexcept;
 ```  
   
 ### Parameters  
@@ -127,12 +142,17 @@ inline bool atomic_compare_exchange_strong(
 ```
 template <class Ty>
 inline bool atomic_compare_exchange_weak_explicit(
-    volatile atomic<Ty>* Atom, Ty* Exp, Ty Value,
+    volatile atomic<Ty>* Atom,
+    Ty* Exp, 
+    Ty Value,
     memory_order Order1,
     memory_order Order2) noexcept;
+
 template <class Ty>
 inline bool atomic_compare_exchange_weak_explicit(
-    atomic<Ty>* Atom, Ty* Exp, Ty Value,
+    atomic<Ty>* Atom,
+    Ty* Exp,
+    Ty Value,
     memory_order Order1,
     memory_order Order2) noexcept;
 ```  
@@ -166,11 +186,11 @@ inline bool atomic_compare_exchange_weak_explicit(
   
 ```
 template <class T>
-inline Ty atomic_exchange(
-    volatile atomic<Ty>* _Atom, Ty Value) noexcept;
+inline Ty atomic_exchange(volatile atomic<Ty>* _Atom,
+    Ty Value) noexcept;
 template <class Ty>
-inline T atomic_exchange(
-    atomic<Ty>* Atom, Ty Value) noexcept;
+inline T atomic_exchange(atomic<Ty>* Atom,
+    Ty Value) noexcept;
 ```  
   
 ### Parameters  
@@ -192,11 +212,14 @@ inline T atomic_exchange(
 ```
 template <class Ty>
 inline Ty atomic_exchange_explicit(
-    volatile atomic<Ty>* Atom, Ty Value,
+    volatile atomic<Ty>* Atom,
+    Ty Value,
     memory_order Order) noexcept;
+
 template <class Ty>
 inline Ty atomic_exchange_explicit(
-    atomic<Ty>* Atom, Ty Value,
+    atomic<Ty>* Atom,
+    Ty Value,
     memory_order Order) noexcept;
 ```  
   
@@ -221,14 +244,10 @@ inline Ty atomic_exchange_explicit(
   
 ```
 template <class T>  
-T* atomic_fetch_add(
-    volatile atomic<T*>* Atom,
-    ptrdiff_t Value) noexcept;
+T* atomic_fetch_add(volatile atomic<T*>* Atom, ptrdiff_t Value) noexcept;
 
 template <class T>  
-T* atomic_fetch_add(
-    atomic<T*>* Atom,
-    ptrdiff_t Value) noexcept;
+T* atomic_fetch_add(atomic<T*>* Atom, ptrdiff_t Value) noexcept;
 ```  
   
 ### Parameters  
@@ -249,13 +268,9 @@ T* atomic_fetch_add(
  This operation is also overloaded for integral types:  
   
 ```cpp
-integral atomic_fetch_add(
-    volatile atomic-integral* Atom,
-    integral Value) noexcept;
+integral atomic_fetch_add(volatile atomic-integral* Atom, integral Value) noexcept;
 
-integral atomic_fetch_add(
-    atomic-integral* Atom,
-    integral Value) noexcept;
+integral atomic_fetch_add(atomic-integral* Atom, integral Value) noexcept;
 ```  
   
 ##  <a name="atomic_fetch_add_explicit_function"></a>  atomic_fetch_add_explicit Function  
@@ -270,8 +285,9 @@ T* atomic_fetch_add_explicit(
 
 template <class T>  
 T* atomic_fetch_add_explicit(
-    atomic<T*>* Atom,
-    ptrdiff_t Value, memory_order Order) noexcept;
+    atomic<T*>* Atom, 
+    ptrdiff_t Value, 
+    memory_order Order) noexcept;
 ```  
   
 ### Parameters  
@@ -308,15 +324,10 @@ integral atomic_fetch_add_explicit(
   
 ```
 template <class T>
-inline T atomic_fetch_and(
-    volatile atomic<T>* Atom, T Value);
+inline T atomic_fetch_and(volatile atomic<T>* Atom, T Value); noexcept
 
-noexcept
 template <class T>
-inline T atomic_fetch_and(
-    volatile atomic<T>* Atom, T Value);
-
-noexcept
+inline T atomic_fetch_and(volatile atomic<T>* Atom, T Value); noexcept
 ```  
   
 ### Parameters  
@@ -338,12 +349,14 @@ noexcept
 ```
 template <class T>
 inline T atomic_fetch_and_explicit(
-    volatile atomic<T>* Atom, T Value,
+    volatile atomic<T>* Atom, 
+    T Value,
     memory_order Order);
 
 noexcepttemplate <class T>
 inline T atomic_fetch_and_explicit(
-    volatile atomic<T>* Atom, T Value,
+    volatile atomic<T>* Atom, 
+    T Value,
     memory_order Order);
 
 noexcept
@@ -370,13 +383,11 @@ noexcept
   
 ```
 template <class T>
-inline T atomic_fetch_or (
-    volatile atomic<T>* Atom, T Value);
+inline T atomic_fetch_or (volatile atomic<T>* Atom, T Value);
 
 noexcept
 template <class T>
-inline T atomic_fetch_or (
-    volatile atomic<T>* Atom, T Value);
+inline T atomic_fetch_or (volatile atomic<T>* Atom, T Value);
 
 noexcept
 ```  
@@ -400,15 +411,15 @@ noexcept
 ```
 template <class T>
 inline T atomic_fetch_or_explicit(
-    volatile atomic<T>* Atom, T Value,
-    memory_order Order);
-
-noexcepttemplate <class T>
+    volatile atomic<T>* Atom,
+    T Value,
+    memory_order Order); noexcept
+    
+template <class T>
 inline T atomic_fetch_or_explicit(
-    volatile atomic<T>* Atom, T Value,
-    memory_order Order);
-
-noexcept
+    volatile atomic<T>* Atom,
+    T Value,
+    memory_order Order); noexcept
 ```  
   
 ### Parameters  
@@ -459,14 +470,9 @@ T* atomic_fetch_sub(
   
  This operation is also overloaded for integral types:  
   
-```cpp
-integral atomic_fetch_sub(
-    volatile atomic-integral* Atom,
-    integral Value) noexcept;
-
-integral atomic_fetch_sub(
-    atomic-integral* Atom,
-    integral Value) noexcept;
+```
+integral atomic_fetch_sub(volatile atomic-integral* Atom, integral Value) noexcept;
+integral atomic_fetch_sub(atomic-integral* Atom, integral Value) noexcept;
 ```  
   
 ##  <a name="atomic_fetch_sub_explicit_function"></a>  atomic_fetch_sub_explicit Function  
@@ -519,16 +525,10 @@ integral atomic_fetch_sub_explicit(
   
 ```
 template <class T>
-inline T atomic_fetch_xor(
-    volatile atomic<T>* Atom, T Value);
-
-noexcept
+inline T atomic_fetch_xor(volatile atomic<T>* Atom, T Value); noexcept
 
 template <class T>
-inline T atomic_fetch_xor(
-    volatile atomic<T>* Atom, T Value);
-
-noexcept
+inline T atomic_fetch_xor(volatile atomic<T>* Atom, T Value); noexcept
 ```  
   
 ### Parameters  
@@ -550,15 +550,15 @@ noexcept
 ```
 template <class T>
 inline T atomic_fetch_xor_explicit(
-    volatile atomic<T>* Atom, T Value,
-    memory_order Order);
-
-noexcepttemplate <class T>
+    volatile atomic<T>* Atom, 
+    T Value,
+    memory_order Order); noexcept
+    
+template <class T>
 inline T atomic_fetch_xor_explicit(
-    volatile atomic<T>* Atom, T Value,
-    memory_order Order);
-
-noexcept
+    volatile atomic<T>* Atom, 
+    T Value,
+    memory_order Order); noexcept
 ```  
   
 ### Parameters  
@@ -593,12 +593,8 @@ inline void atomic_flag_clear(atomic_flag* Flag) noexcept;
  Sets the `bool` flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to `false`, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.  
   
 ```
-inline void atomic_flag_clear_explicit(
-    volatile atomic_flag* Flag,
-    memory_order Order) noexcept;
-inline void atomic_flag_clear_explicit(
-    atomic_flag* Flag,
-    memory_order Order) noexcept;
+inline void atomic_flag_clear_explicit(volatile atomic_flag* Flag, memory_order Order) noexcept;
+inline void atomic_flag_clear_explicit(atomic_flag* Flag, memory_order Order) noexcept;
 ```  
   
 ### Parameters  
@@ -612,10 +608,8 @@ inline void atomic_flag_clear_explicit(
  Sets the `bool` flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to `true`, within the constraints of the `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum).  
   
 ```
-inline bool atomic_flag_test_and_set(
-    volatile atomic_flag* Flag,) noexcept;
-inline bool atomic_flag_test_and_set(
-    atomic_flag* Flag,) noexcept;
+inline bool atomic_flag_test_and_set(volatile atomic_flag* Flag,) noexcept;
+inline bool atomic_flag_test_and_set(atomic_flag* Flag,) noexcept;
 ```  
   
 ### Parameters  
@@ -629,12 +623,8 @@ inline bool atomic_flag_test_and_set(
  Sets the `bool` flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to `true`, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.  
   
 ```
-inline bool atomic_flag_test_and_set_explicit(
-    volatile atomic_flag* Flag,
-    memory_order Order) noexcept;
-inline bool atomic_flag_test_and_set_explicit(
-    atomic_flag* Flag,
-    memory_order Order) noexcept;
+inline bool atomic_flag_test_and_set_explicit(volatile atomic_flag* Flag, memory_order Order) noexcept;
+inline bool atomic_flag_test_and_set_explicit(atomic_flag* Flag, memory_order Order) noexcept;
 ```  
   
 ### Parameters  
@@ -652,11 +642,10 @@ inline bool atomic_flag_test_and_set_explicit(
   
 ```
 template <class Ty>
-inline void atomic_init(
-    volatile atomic<Ty>* Atom, Ty Value) noexcept;
+inline void atomic_init(volatile atomic<Ty>* Atom, Ty Value) noexcept;
+
 template <class Ty>
-inline void atomic_init(
-    atomic<Ty>* Atom, Ty Value) noexcept;
+inline void atomic_init(atomic<Ty>* Atom, Ty Value) noexcept;
 ```  
   
 ### Parameters  
@@ -695,6 +684,7 @@ inline bool atomic_is_lock_free(const atomic<T>* Atom) noexcept;
 ```
 template <class Ty>
 inline Ty atomic_load(const volatile atomic<Ty>* Atom) noexcept;
+
 template <class Ty>
 inline Ty atomic_load(const atomic<Ty>* Atom) noexcept;
 ```  
@@ -714,13 +704,10 @@ inline Ty atomic_load(const atomic<Ty>* Atom) noexcept;
   
 ```
 template <class Ty>
-inline Ty atomic_load_explicit(
-    const volatile atomic<Ty>* Atom,
-    memory_order Order) noexcept;
+inline Ty atomic_load_explicit(const volatile atomic<Ty>* Atom, memory_order Order) noexcept;
+
 template <class Ty>
-inline Ty atomic_load_explicit(
-    const atomic<Ty>* Atom,
-    memory_order Order) noexcept;
+inline Ty atomic_load_explicit(const atomic<Ty>* Atom, memory_order Order) noexcept;
 ```  
   
 ### Parameters  
@@ -761,11 +748,10 @@ inline void atomic_signal_fence(memory_order Order) noexcept;
   
 ```
 template <class Ty>
-inline Ty atomic_store_explicit(
-    const volatile atomic<Ty>* Atom, Ty Value) noexcept;
+inline Ty atomic_store_explicit(const volatile atomic<Ty>* Atom, Ty Value) noexcept;
+
 template <class Ty>
-inline Ty atomic_store_explicit(
-    const atomic<Ty>* Atom, T Value) noexcept;
+inline Ty atomic_store_explicit(const atomic<Ty>* Atom, T Value) noexcept;
 ```  
   
 ### Parameters  
@@ -784,11 +770,14 @@ inline Ty atomic_store_explicit(
 ```
 template <class Ty>
 inline Ty atomic_store_explicit(
-    const volatile atomic<Ty>* Atom, Ty Value,
+    const volatile atomic<Ty>* Atom, 
+    Ty Value, 
     memory_order Order) noexcept;
+
 template <class Ty>
 inline Ty atomic_store_explicit(
-    const atomic<Ty>* Atom, T Value,
+    const atomic<Ty>* Atom, 
+    T Value, 
     memory_order Order) noexcept;
 ```  
   

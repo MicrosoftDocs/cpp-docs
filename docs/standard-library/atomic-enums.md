@@ -11,9 +11,6 @@ caps.latest.revision: 11
 manager: "ghogen"
 ---
 # &lt;atomic&gt; enums
-||  
-|-|  
-|[memory_order Enum](#memory_order_enum)|  
   
 ##  <a name="memory_order_enum"></a>  memory_order Enum  
  Supplies symbolic names for synchronization operations on memory locations. These operations affect how assignments in one thread become visible in another.  
@@ -21,11 +18,11 @@ manager: "ghogen"
 ```
 typedef enum memory_order {
     memory_order_relaxed,
- memory_order_consume,
+    memory_order_consume,
     memory_order_acquire,
- memory_order_release,
+    memory_order_release,
     memory_order_acq_rel,
- memory_order_seq_cst,
+    memory_order_seq_cst,
 } memory_order;
 ```  
   

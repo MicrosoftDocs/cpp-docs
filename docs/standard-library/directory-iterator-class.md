@@ -10,26 +10,26 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "filesystem/std::tr2::sys::directory_iterator"
+  - "filesystem/std::experimental::filesystem::directory_iterator"
   - "directory_iterator"
-  - "filesystem/std::experimental::filesystem::v1::_Directory_iterator::_Directory_iterator"
-  - "filesystem/std::experimental::filesystem::v1::directory_iterator"
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_iterator::directory_iterator"
-  - "std::experimental::filesystem::v1::directory_iterator::directory_iterator"
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_iterator::increment"
-  - "std::experimental::filesystem::v1::directory_iterator::increment"
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_iterator::operator="
-  - "std::experimental::filesystem::v1::directory_iterator::operator="
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_iterator::operator=="
-  - "std::experimental::filesystem::v1::directory_iterator::operator=="
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_iterator::operator!="
-  - "std::experimental::filesystem::v1::directory_iterator::operator!="
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_iterator::operator*"
-  - "std::experimental::filesystem::v1::directory_iterator::operator*"
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_iterator::operator->"
-  - "std::experimental::filesystem::v1::directory_iterator::operator->"
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_iterator::operator++"
-  - "std::experimental::filesystem::v1::directory_iterator::operator++"
+  - "filesystem/std::experimental::filesystem::_Directory_iterator::_Directory_iterator"
+  - "filesystem/std::experimental::filesystem::directory_iterator"
+  - "FILESYSTEM/std::experimental::filesystem::directory_iterator::directory_iterator"
+  - "std::experimental::filesystem::directory_iterator::directory_iterator"
+  - "FILESYSTEM/std::experimental::filesystem::directory_iterator::increment"
+  - "std::experimental::filesystem::directory_iterator::increment"
+  - "FILESYSTEM/std::experimental::filesystem::directory_iterator::operator="
+  - "std::experimental::filesystem::directory_iterator::operator="
+  - "FILESYSTEM/std::experimental::filesystem::directory_iterator::operator=="
+  - "std::experimental::filesystem::directory_iterator::operator=="
+  - "FILESYSTEM/std::experimental::filesystem::directory_iterator::operator!="
+  - "std::experimental::filesystem::directory_iterator::operator!="
+  - "FILESYSTEM/std::experimental::filesystem::directory_iterator::operator*"
+  - "std::experimental::filesystem::directory_iterator::operator*"
+  - "FILESYSTEM/std::experimental::filesystem::directory_iterator::operator->"
+  - "std::experimental::filesystem::directory_iterator::operator->"
+  - "FILESYSTEM/std::experimental::filesystem::directory_iterator::operator++"
+  - "std::experimental::filesystem::directory_iterator::operator++"
 dev_langs: 
   - "C++"
 ms.assetid: dca2ecf8-3e69-4644-a83d-705061e10cc8
@@ -73,12 +73,11 @@ class directory_iterator;
   
 ## directory_iterator::directory_iterator  
   
-```cpp  
+```  
 directory_iterator() noexcept;  
 explicit directory_iterator(const path& pval);
 
-directory_iterator(const path& pval,  
-    error_code& ec) noexcept;  
+directory_iterator(const path& pval, error_code& ec) noexcept;  
 directory_iterator(const directory_iterator&) = default;  
 directory_iterator(directory_iterator&&) noexcept = default;  
 ```  
@@ -89,7 +88,7 @@ directory_iterator(directory_iterator&&) noexcept = default;
   
 ## directory_iterator::increment  
   
-```cpp  
+```  
 directory_iterator& increment(error_code& ec) noexcept;  
 ```  
   
@@ -97,7 +96,7 @@ directory_iterator& increment(error_code& ec) noexcept;
   
 ## directory_iterator::operator!=  
   
-```cpp  
+```  
 bool operator!=(const directory_iterator& right) const;
 ```  
   
@@ -105,7 +104,7 @@ bool operator!=(const directory_iterator& right) const;
   
 ## directory_iterator::operator=  
   
-```cpp  
+```  
 directory_iterator& operator=(const directory_iterator&) = default;  
 directory_iterator& operator=(directory_iterator&&) noexcept = default;  
 ```  
@@ -114,7 +113,7 @@ directory_iterator& operator=(directory_iterator&&) noexcept = default;
   
 ## directory_iterator::operator==  
   
-```cpp  
+```  
 bool operator==(const directory_iterator& right) const;
 ```  
   
@@ -122,7 +121,7 @@ bool operator==(const directory_iterator& right) const;
   
 ## directory_iterator::operator*  
   
-```cpp  
+```  
 const directory_entry& operator*() const;
 ```  
   
@@ -130,7 +129,7 @@ const directory_entry& operator*() const;
   
 ## directory_iterator::operator->  
   
-```cpp  
+```  
 const directory_entry * operator->() const;
 ```  
   
@@ -138,9 +137,8 @@ const directory_entry * operator->() const;
   
 ## directory_iterator::operator++  
   
-```cpp  
+```  
 directory_iterator& operator++();
-
 directory_iterator& operator++(int);
 ```  
   
@@ -149,7 +147,7 @@ directory_iterator& operator++(int);
 ## Requirements  
  **Header:** \<experimental/filesystem>  
   
- **Namespace:** std::experimental::filesystem::v1  
+ **Namespace:** std::experimental::filesystem  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   
