@@ -35,11 +35,20 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Using the Visual Studio IDE for C++ Desktop Development
-The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] Integrated Development Environment (IDE) offers a set of tools that help you write and modify code, and also detect and correct errors.  
+
+The Visual Studio Integrated Development Environment (IDE) offers a set of features that help you manage large and small code projects, write and refactor your code, and detect and correct errors by using both static analysis and powerful debugging tools. This set of articles is designed to walk you through each step you'll need to manage your projects, write, test, and debug your code, and then deploy it to another computer.  
+
+## Prerequisites  
+
+If you haven't installed Visual Studio yet, now is the time. To get Visual Studio, you can download it from [Visual Studio Downloads](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Be sure to include the Visual C++ development tools when you install Visual Studio, because they are not installed by default. For more information about how to install Visual Studio, see []().  
   
- In the articles in this section of the documentation, you create a standard C++ program and test its functionality by using features in [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)]. The basic program that you create tracks how many players are playing different card games.  
+These walkthroughs assume that you have installed Visual Studio and the Visual C++ language and components required for Windows Desktop development. We also assume you understand the fundamentals of the C++ language. If you need to learn C++, there are many books and web resources available. One good place to start is the [Get Started](https://isocpp.org/get-started) page of the Standard C++ Foundation website.    
+
+Once your Visual Studio installation is complete, you are ready to continue.  
   
- Here are the articles:  
+## Get Started  
+
+To get started using the Visual Studio IDE to build C++ apps, work through each of these topics in order. Each one builds on the work you completed in the previous topics:  
   
 -   [Walkthrough: Working with Projects and Solutions (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md)  
   
@@ -51,12 +60,9 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] Integrated Devel
   
 -   [Walkthrough: Deploying Your Program (C++)](../ide/walkthrough-deploying-your-program-cpp.md)  
   
-## Prerequisites  
- This topic assumes that you understand the fundamentals of the C++ language.  
+## Next Steps
   
-## Next Steps  
- **Previous:** [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c) &#124; **Next:**[Walkthrough: Working with Projects and Solutions (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md)  
+Once you've completed these walkthroughs, you're ready to start building your own projects. For more information and resources for Visual C++ development, see [Visual C++ in Visual Studio](https://msdn.microsoft.com/library/60k1461a.aspx).
   
 ## See Also  
- [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)   
- [Application Development in Visual Studio](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68)
+[Application Development in Visual Studio](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68)
