@@ -44,7 +44,7 @@ The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com
 ## C++ Compiler
 
 In this release, we've updated the C++ compiler and standard library with enhanced support for C++11 and C++14 features, as well as preliminary support for certain features expected to be in the C++17 standard. With support for generalized constexpr and NSDMI for aggregates, the compiler is complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards.
-[!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] RC allows using /sdl with /await. We removed /rtc limitation with Coroutines.
+[!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] RC allows using /sdl with /await. We removed /rtc limitation with Coroutines.  For more information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).
 This release brings several improvements in optimization and code generation. Some notable improvements include:  
 
 - Improved code generation of loops: Support for automatic vectorization of division of constant integers, better identification of memset patterns.
@@ -135,3 +135,50 @@ C++ comes as an optional component for the Universal Windows App workload.
 
 ## Clang/C2 Platform Toolset
 The Clang/C2 toolset that ships with [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] RC now supports the /bigobj switch, which is crucial for building large projects. It also includes several important bug fixes, both in the front-end and the back-end of the compiler.
+
+## Visual Studio Graphics Diagnostics
+
+Visual Studio Graphics Diagnostics is a set of tools for recording and analyzing rendering and performance problems in Direct3D apps. Graphics Diagnostics features can be used with apps that are running locally on your Windows PC, in a Windows device emulator, or on a remote PC or device.
+
+* **Input & Output for Vertex and Geometry shaders:** The ability to view input and output of vertex shaders and geometry shaders has been one of the most requested features, and it is now supported in the tools. Simply select the VS or GS stage in the Pipeline Stages view to start inspecting its input and output in the table below.
+
+  ![Input/Output for shaders](media/io-shaders.png)
+
+* **Search and filter in the object table:** Provides a quick and easy way to find the resources you're looking for.
+
+  ![Search](media/search.png)
+   
+* **Resource History:** This new view provides a streamlined way of seeing the entire modification history of a resource as it was used during the rendering of a captured frame. To invoke the history for any resource, simply click the clock icon next to any resource hyperlink.
+
+  ![Resource history](media/resource-history.png)
+
+  This will display the new Resource History tool window, populated with the change history of the resource.
+
+  ![Resource history change](media/resource-history-change.png)
+
+  Note that if your frame was captured with full call stack capturing enabled (**Visual Studio > Tools > Options > Graphics Diagnostics**), then the context of each change event can be quickly deduced and inspected within your Visual Studio project.  
+
+* **API Statistics:** View a high-level summary of API usage in your frame. This can be handy in discovering calls you may not realize you’re making at all or calls you are making too much. This window is available via **View > API Statistics** in Visual Studio Graphics Analyzer.
+
+  ![API stats](media/api-stats.png)
+
+* **Memory Statistics:** View how much memory the driver is allocating for the resources you create in the frame. This window is available via View->Memory Statistics in Visual Studio Graphics Analyzer. Data can be copied to a CSV file for viewing in a spreadsheet by right clicking and choosing Copy All.
+
+  ![Memory stats](media/memory-stats.png)
+ 
+* **Frame Validation:** The new errors and warnings list provides an easy way to navigate your event list based on potential issues detected by the Direct3D debug layer. Click View->Frame Validation in Visual Studio Graphics Analyzer to open the window. Then click Run Validation to start the analysis. It can take several minutes to complete, depending on the frame's complexity.
+
+  ![Frame validation](media/frame-validation.png)
+ 
+* **Frame Analysis for D3D12:** Use Frame Analysis to analyze draw call performance with directed “what-if” experiments. Switch to the Frame Analysis tab and run analysis to view the report. For more details, watch the [GoingNative 25: Visual Studio Graphics Frame Analysis](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video.
+
+  ![Frame analysis](media/frame-analysis.png)
+
+* **GPU Usage Improvements:** Open traces taken via the Visual Studio GPU Usage profiler with either GPU View or the Windows Performance Analyzer (WPA) tool for more detailed analysis. If you have the Windows Performance Toolkit installed there will be two hyperlinks, one for WPA and other for GPU View, at the bottom right of the session overview.
+
+  ![GPU usage](media/gpu-usage.png)
+ 
+  Traces opened in GPU View via this link support synchronized zooming and panning in the timeline between VS and GPU View. A checkbox in VS is used to control whether synchronization is enabled or not. 
+
+  ![GPU View](media/gpu-view.png) 
+ 
