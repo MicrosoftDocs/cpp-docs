@@ -1,8 +1,8 @@
 ---
-title: "Visual C++ in Visual Studio 2015 | Microsoft Docs"
+title: "Visual C++ in Visual Studio | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
+ms.prod: "visual-studio-dev15"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,7 +42,7 @@ translation.priority.mt:
   - "pt-br"
   - "tr-tr"
 ---
-# Visual C++ in Visual Studio 2015
+# Visual C++ in Visual Studio
 The [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] programming language and development tools help you develop native Universal Windows apps, native desktop and server applications, cross-platform libraries that run on Android and iOS as well as Windows, and managed apps that run on the .NET Framework.  
   
  **Who is this documentation for?**  
@@ -53,13 +53,10 @@ The [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] programming language and 
   
 -   If you are looking for an introduction to C++ programming concepts, go to one of the many websites that offer this content, or get a copy of [Programming -- Principles and Practice Using C++ (Second Edition)](http://stroustrup.com/Programming/) by the inventor of C++, Bjarne Stroustrup. The Visual C++ content assumes you already have a basic familiarity with C++.  
   
--   If you are looking for the Visual C++ compiler, you need to download a paid or free edition of Visual Studio 2015 from [https://www.visualstudio.com/](https://www.visualstudio.com/).  
-  
-> [!WARNING]
->  In Visual Studio 2015, Visual C++ is not installed by default. When installing, be sure to choose **Custom** installation and then choose the C++ components you require. Or, if Visual Studio is already installed, choose **File &#124; New &#124; Project &#124; C++** and you will be prompted to install the necessary components.  
-  
+-   If you are looking for the Visual C++ compiler, you need to download a paid or free edition of Visual Studio from [https://www.visualstudio.com/](https://www.visualstudio.com/).  
+
 ## General Information about Visual C++  
- [What's New for Visual C++](../top/what-s-new-for-visual-cpp-in-visual-studio-2015.md)  
+ [What's New for Visual C++](../top/what-s-new-for-visual-cpp-in-visual-studio.md)  
  Find out what’s new in Visual C++.  
   
  [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-20151.md)  
