@@ -1,13 +1,13 @@
 ---
-title: "Using Image Lists in a Toolbar Control"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Using Image Lists in a Toolbar Control | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "image lists [C++], toolbar controls"
   - "CToolBarCtrl class, image lists"
 ms.assetid: ccbe8df4-4ed9-4b54-bb93-9a1dcb3b97eb
-caps.latest.revision: 10
+caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,13 +44,13 @@ By default, the images used by the buttons in a toolbar control are stored as a 
   
 -   Highlighted image list   Contains images for toolbar buttons that are currently highlighted. This image list is used only when the toolbar uses the **TBSTYLE_FLAT** style.  
   
- These image lists are used by the toolbar control when you associate them with the `CToolBarCtrl` object. This association is accomplished by making calls to [CToolBarCtrl::SetImageList](../Topic/CToolBarCtrl::SetImageList.md), [SetDisabledImageList](../Topic/CToolBarCtrl::SetDisabledImageList.md), and [SetHotImageList](../Topic/CToolBarCtrl::SetHotImageList.md).  
+ These image lists are used by the toolbar control when you associate them with the `CToolBarCtrl` object. This association is accomplished by making calls to [CToolBarCtrl::SetImageList](../mfc/reference/ctoolbarctrl-class.md#ctoolbarctrl__setimagelist), [SetDisabledImageList](../mfc/reference/ctoolbarctrl-class.md#setdisabledimagelist), and [SetHotImageList](../mfc/reference/ctoolbarctrl-class.md#sethotimagelist).  
   
  By default, MFC uses the `CToolBar` class to implement MFC application toolbars. However, the `GetToolBarCtrl` member function can be used to retrieve the embedded `CToolBarCtrl` object. You can then make calls to `CToolBarCtrl` member functions using the returned object.  
   
  The following example demonstrates this technique by assigning an enabled (`m_ToolBarImages`) and disabled (`m_ToolBarDisabledImages`) image list to a `CToolBarCtrl` object (`m_ToolBarCtrl`).  
   
- [!code[NVC_MFCControlLadenDialog#35](../mfc/codesnippet/CPP/using-image-lists-in-a-toolbar-control_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#35](../mfc/codesnippet/CPP/using-image-lists-in-a-toolbar-control_1.cpp)]  
   
 > [!NOTE]
 >  The image lists used by the toolbar object must be permanent objects. For this reason, they are commonly data members of an MFC class; in this example, the main frame window class.  
@@ -58,4 +59,5 @@ By default, the images used by the buttons in a toolbar control are stored as a 
   
 ## See Also  
  [Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

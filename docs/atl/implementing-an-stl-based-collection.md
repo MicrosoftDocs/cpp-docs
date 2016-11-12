@@ -1,20 +1,21 @@
 ---
-title: "Implementing an STL-Based Collection"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Implementing an STL-Based Collection | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "ICollectionOnSTLImpl interface"
 ms.assetid: 6d49f819-1957-4813-b074-3f12c494d8ca
-caps.latest.revision: 10
+caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,7 +36,7 @@ translation.priority.ht:
 # Implementing an STL-Based Collection
 ATL provides the `ICollectionOnSTLImpl` interface to enable you to quickly implement Standard Template Library (STL)-based collection interfaces on your objects. To understand how this class works, you will work through a simple example (below) that uses this class to implement a read-only collection aimed at Automation clients.  
   
- The sample code is from the [ATLCollections sample](../top/visual-c---samples.md).  
+ The sample code is from the [ATLCollections sample](../top/visual-cpp-samples.md).  
   
  To complete this procedure, you will:  
   
@@ -59,7 +60,7 @@ ATL provides the `ICollectionOnSTLImpl` interface to enable you to quickly imple
 ##  <a name="vcconedit_the_idl"></a> Editing the IDL File  
  Now, open the IDL file and add the three properties necessary to turn `IWords` into a read-only collection interface, as shown below:  
   
- [!code[NVC_ATL_COM#24](../atl/codesnippet/CPP/implementing-an-stl-based-collection_1.idl)]  
+ [!code-cpp[NVC_ATL_COM#24](../atl/codesnippet/CPP/implementing-an-stl-based-collection_1.idl)]  
   
  This is the standard form for a read-only collection interface designed with Automation clients in mind. The numbered comments in this interface definition correspond to the comments below:  
   
@@ -80,7 +81,7 @@ ATL provides the `ICollectionOnSTLImpl` interface to enable you to quickly imple
   
  The answers to these questions can be provided in the form of a number of typedefs, which you can add near the top of the header file for your newly created class:  
   
- [!code[NVC_ATL_COM#25](../atl/codesnippet/CPP/implementing-an-stl-based-collection_2.h)]  
+ [!code-cpp[NVC_ATL_COM#25](../atl/codesnippet/CPP/implementing-an-stl-based-collection_2.h)]  
   
  In this case, you will store the data as a **std::vector** of **std::string**s. **std::vector** is an STL container class that behaves like a managed array. **std::string** is the Standard C++ Library's string class. These classes make it easy to work with a collection of strings.  
   
@@ -89,30 +90,31 @@ ATL provides the `ICollectionOnSTLImpl` interface to enable you to quickly imple
 ##  <a name="vcconcopy_classes"></a> Creating Typedefs for Copy Policy Classes  
  The typedefs you have created so far provide all the information you need to create further typedefs for the copy classes that will be used by the enumerator and collection:  
   
- [!code[NVC_ATL_COM#26](../atl/codesnippet/CPP/implementing-an-stl-based-collection_3.h)]  
+ [!code-cpp[NVC_ATL_COM#26](../atl/codesnippet/CPP/implementing-an-stl-based-collection_3.h)]  
   
- In this example, you can use the custom `GenericCopy` class defined in VCUE_Copy.h and VCUE_CopyString.h from the [ATLCollections](../top/visual-c---samples.md) sample. You can use this class in other code, but you may need to define further specializations of `GenericCopy` to support data types used in your own collections. For more information, see [ATL Copy Policy Classes](../atl/atl-copy-policy-classes.md).  
+ In this example, you can use the custom `GenericCopy` class defined in VCUE_Copy.h and VCUE_CopyString.h from the [ATLCollections](../top/visual-cpp-samples.md) sample. You can use this class in other code, but you may need to define further specializations of `GenericCopy` to support data types used in your own collections. For more information, see [ATL Copy Policy Classes](../atl/atl-copy-policy-classes.md).  
   
 ##  <a name="vcconenumeration_and_collection"></a> Creating Typedefs for Enumeration and Collection  
  Now all the template parameters necessary to specialize the `CComEnumOnSTL` and `ICollectionOnSTLImpl` classes for this situation have been provided in the form of typedefs. To simplify the use of the specializations, create two more typedefs as shown below:  
   
- [!code[NVC_ATL_COM#27](../atl/codesnippet/CPP/implementing-an-stl-based-collection_4.h)]  
+ [!code-cpp[NVC_ATL_COM#27](../atl/codesnippet/CPP/implementing-an-stl-based-collection_4.h)]  
   
  Now `CollectionType` is a synonym for a specialization of `ICollectionOnSTLImpl` that implements the `IWords` interface defined earlier and provides an enumerator that supports **IEnumVARIANT**.  
   
 ##  <a name="vcconedit_the_generated_code"></a> Editing the Wizard-Generated Code  
  Now you must derive `CWords` from the interface implementation represented by the `CollectionType` typedef rather than `IWords`, as shown below:  
   
- [!code[NVC_ATL_COM#28](../atl/codesnippet/CPP/implementing-an-stl-based-collection_5.h)]  
+ [!code-cpp[NVC_ATL_COM#28](../atl/codesnippet/CPP/implementing-an-stl-based-collection_5.h)]  
   
 ##  <a name="vcconpopulate_the_collection"></a> Adding Code to Populate the Collection  
  The only thing that remains is to populate the vector with data. In this simple example, you can add a few words to the collection in the constructor for the class:  
   
- [!code[NVC_ATL_COM#29](../atl/codesnippet/CPP/implementing-an-stl-based-collection_6.h)]  
+ [!code-cpp[NVC_ATL_COM#29](../atl/codesnippet/CPP/implementing-an-stl-based-collection_6.h)]  
   
  Now, you can test the code with the client of your choice.  
   
 ## See Also  
  [Collections and Enumerators](../atl/atl-collections-and-enumerators.md)   
- [ATLCollections Sample](../top/visual-c---samples.md)   
+ [ATLCollections Sample](../top/visual-cpp-samples.md)   
  [ATL Copy Policy Classes](../atl/atl-copy-policy-classes.md)
+

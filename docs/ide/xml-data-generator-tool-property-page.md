@@ -1,13 +1,13 @@
 ---
-title: "XML Data Generator Tool Property Page"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "XML Data Generator Tool Property Page | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "VC.Project.VCXMLDataGeneratorTool.GeneratedProxyLanguage"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "XML Data Generator Tool property page"
 ms.assetid: b2ef1c12-3419-429d-bb9d-bd7d9ffe1ffb
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -50,9 +51,9 @@ The **XML Data Generator Tool** property page becomes available when you add a d
  **Generated Proxy Language**  
  Determines whether or not to emit managed code.  
   
- For information on how to access the **XML Data Generator Tool** property page, see [How To: Specify Project Properties with Property Pages](../notintoc/how-to--specify-project-properties-with-property-pages.md).  
+ For information on how to access the **XML Data Generator Tool** property page, see [How To: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md).  
   
- For information on how to programmatically access members of this object, see \<xref:Microsoft.VisualStudio.VCProjectEngine.VCXMLDataGeneratorTool>  
+ For information on how to programmatically access members of this object, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCXMLDataGeneratorTool>  
   
 ## See Also  
- [Property Pages](../ide/property-pages--visual-c---.md)
+ [Property Pages](../ide/property-pages-visual-cpp.md)

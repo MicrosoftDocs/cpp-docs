@@ -1,13 +1,13 @@
 ---
-title: "Adding Event Handlers for Dialog Box Controls"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Adding Event Handlers for Dialog Box Controls | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "dialog box controls, events"
   - "event handlers, for dialog box controls"
 ms.assetid: f9c70f24-ea6f-44df-82eb-78a2deaee769
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -48,15 +49,15 @@ For project dialog boxes that are already associated with a class, you can take 
   
 1.  Click the control for which you want to handle the notification event.  
   
-2.  In the [Properties window](../Topic/Properties%20Window.md), click the **ControlEvents** button to display the list of common Windows events associated with the control. For example, the standard **OK** button on the **About** dialog box lists the following notification events:  
+2.  In the [Properties window](/visual-studio/ide/reference/properties-window), click the **ControlEvents** button to display the list of common Windows events associated with the control. For example, the standard **OK** button on the **About** dialog box lists the following notification events:  
   
-     **BN_CLICKED**  
+ **BN_CLICKED**  
   
-     **BN_DOUBLECLICKED**  
+ **BN_DOUBLECLICKED**  
   
-     **BN_KILLFOCUS**  
+ **BN_KILLFOCUS**  
   
-     **BN_SETFOCUS**  
+ **BN_SETFOCUS**  
   
     > [!NOTE]
     >  Alternately, select the dialog box and click the **ControlEvents** button to display the list of common Windows events for all controls in the dialog box.  
@@ -68,16 +69,15 @@ For project dialog boxes that are already associated with a class, you can take 
   
      Once you have selected the event, Visual Studio opens the Text Editor and displays the event handler's code. For example, the following code is added for the default **OnBnClickedOK**:  
   
-    ```  
+ ```  
     void CAboutDlg::OnBnClickedOk(void)  
-    {  
-       // TODO: Add your control notification handler code here  
-    }  
-    ```  
+ { *// TODO: Add your control notification handler code here  
+ }  
+ ```  
   
- If you want to add the event handler to a class other than the one implementing the dialog box, use the [Event Handler wizard](../ide/event-handler-wizard.md). For more information, see [Adding an Event Handler](../ide/adding-an-event-handler--visual-c---.md).  
+ If you want to add the event handler to a class other than the one implementing the dialog box, use the [Event Handler wizard](../ide/event-handler-wizard.md). For more information, see [Adding an Event Handler](../ide/adding-an-event-handler-visual-cpp.md).  
   
- For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](assetId:///9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
+ For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
   
 ### Requirements  
  Win32  
@@ -86,8 +86,9 @@ For project dialog boxes that are already associated with a class, you can take 
  [Default Control Events](../mfc/default-control-events.md)   
  [Defining Member Variables for Dialog Controls](../mfc/defining-member-variables-for-dialog-controls.md)   
  [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)   
- [Adding a Class](../ide/adding-a-class--visual-c---.md)   
- [Adding a Member Function](../ide/adding-a-member-function--visual-c---.md)   
- [Adding a Member Variable](../ide/adding-a-member-variable---visual-c---.md)   
- [Overriding a Virtual Function](../ide/overriding-a-virtual-function--visual-c---.md)   
- [MFC Message Handler](../mfcref/adding-an-mfc-message-handler.md)
+ [Adding a Class](../ide/adding-a-class-visual-cpp.md)   
+ [Adding a Member Function](../ide/adding-a-member-function-visual-cpp.md)   
+ [Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)   
+ [Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)   
+ [MFC Message Handler](../mfc/reference/adding-an-mfc-message-handler.md)
+

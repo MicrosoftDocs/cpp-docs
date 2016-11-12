@@ -1,13 +1,13 @@
 ---
-title: "Resource View Window"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Resource View Window | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vs.resourceview.F1"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "Resource View window"
 ms.assetid: 10be7ff6-195f-4783-9ec5-87e5e06a7369
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -42,10 +43,10 @@ translation.priority.ht:
  Resource view displays the resource files included in your projects. Expanding the top folder (for example, Project1.rc) shows the resource types within that .rc file. Expanding each resource type shows the individual resources of that type.  
   
 > [!NOTE]
->  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to--create-a-resource-script-file.md).  
+>  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
 > [!TIP]
->  You can right-click on the Resource View window to launch a shortcut menu of commands. You can also double-click on the title bar to dock or undock the window. Right-clicking on the title bar will give you additional commands that allow you to control the behavior of the window. For more information, see [Windows Management](../Topic/Customizing%20window%20layouts%20in%20Visual%20Studio.md).  
+>  You can right-click on the Resource View window to launch a shortcut menu of commands. You can also double-click on the title bar to dock or undock the window. Right-clicking on the title bar will give you additional commands that allow you to control the behavior of the window. For more information, see [Windows Management](/visual-studio/ide/customizing-window-layouts-in-visual-studio).  
   
 #### To open the resource view window  
   

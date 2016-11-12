@@ -1,13 +1,13 @@
 ---
-title: "Overview of Declarators"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Overview of Declarators | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "declarators, about declarators"
 ms.assetid: 0f2e2312-80bd-4154-8345-718bd9ed2173
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -34,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Overview of Declarators
-Declarators are the components of a declaration that specify names of objects or functions. Declarators also specify whether or not the named object is an object, pointer, reference or array.  While declarators do not specify the base type, they do modify the type information in the basic type to specify derived types such as pointers, references, and arrays.  Applied to functions, the declarator works with the type specifier to fully specify the return type of a function to be an object, pointer, or reference. (Specifiers, discussed in [Declarations](../notintoc/declarations.md), convey properties such as type and storage class. Modifiers, discussed in this section and in [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md), modify declarators.) The following figure shows a complete declaration of `MyFunction`, and calls out the components of the declaration.  
+Declarators are the components of a declaration that specify names of objects or functions. Declarators also specify whether or not the named object is an object, pointer, reference or array.  While declarators do not specify the base type, they do modify the type information in the basic type to specify derived types such as pointers, references, and arrays.  Applied to functions, the declarator works with the type specifier to fully specify the return type of a function to be an object, pointer, or reference. (Specifiers, discussed in [Declarations](../misc/declarations.md), convey properties such as type and storage class. Modifiers, discussed in this section and in [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md), modify declarators.) The following figure shows a complete declaration of `MyFunction`, and calls out the components of the declaration.  
   
  ![Modifiers, specifiers, and declarators](../cpp/media/vc38qy1.gif "vc38QY1")  
 Specifiers, Modifiers, and Declarators  
@@ -45,7 +46,7 @@ Specifiers, Modifiers, and Declarators
   
  **END Microsoft Specific**  
   
- Declarators appear in the declaration syntax after an optional list of specifiers. These specifiers are discussed in [Declarations.](../notintoc/declarations.md) A declaration can contain more than one declarator, but each declarator declares only one name.  
+ Declarators appear in the declaration syntax after an optional list of specifiers. These specifiers are discussed in [Declarations.](../misc/declarations.md) A declaration can contain more than one declarator, but each declarator declares only one name.  
   
  The following sample declaration shows how specifiers and declarators are combined to form a complete declaration:  
   
@@ -108,7 +109,7 @@ int i[2][2]; // two dimensional array
 int f(int a, int b, int c);  
 ```  
   
- For information on argument lists, see [Function Declarations](assetId:///3f9b4e14-60d2-47c1-acd8-4fa8fc988be7).  
+ For information on argument lists, see [Function Declarations](http://msdn.microsoft.com/en-us/3f9b4e14-60d2-47c1-acd8-4fa8fc988be7).  
   
  Pointers and references to functions are declared by prepending the pointer or reference operator to the function name as shown below.  Parentheses, normally optional, are required to distinguish a pointer to a function from a function that returns a pointer:  
   
@@ -163,7 +164,7 @@ PIFN pifnDispatchArray[7];
 int ( *pifnDispatchArray[7] )( char * );  
 ```  
   
- For more information on typedef, see [typedef Specifier](assetId:///cc96cf26-ba93-4179-951e-695d1f5fdcf1).  
+ For more information on typedef, see [typedef Specifier](http://msdn.microsoft.com/en-us/cc96cf26-ba93-4179-951e-695d1f5fdcf1).  
   
  Pointers, references, arrays of a single base type can be combined in a single declaration (separated by commas) as  
   
@@ -209,4 +210,4 @@ int a, *b, c[5], **d, &e=a;
 |array of 10|`(*i)[10]`|4|  
 |pointer to|`*((*i)[10])`|6 and then 5|  
   
- When multiple pointer, reference, array or function modifiers are used, declarators may become quite complicated.  The topic [Interpreting More Complex Declarators](../c/interpreting-more-complex-declarators.md) describes how to read more complex declarator syntax.  The topic is applicable to both C and C++, although in C++, anywhere the * is used to indicate a pointer, a qualified name such as MyClass::\* may be used to specify a pointer to a member of a class.
+ When multiple pointer, reference, array or function modifiers are used, declarators may become quite complicated.  The topic [Interpreting More Complex Declarators](../c-language/interpreting-more-complex-declarators.md) describes how to read more complex declarator syntax.  The topic is applicable to both C and C++, although in C++, anywhere the * is used to indicate a pointer, a qualified name such as MyClass::\* may be used to specify a pointer to a member of a class.

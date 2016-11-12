@@ -1,13 +1,13 @@
 ---
-title: "Ordering Items in the Header Control"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Ordering Items in the Header Control | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "DS_DRAGDROP"
@@ -22,7 +22,8 @@ helpviewer_keywords:
   - "SetOrderArray method"
   - "header controls, ordering items"
 ms.assetid: 5aaef872-75b5-49c5-8fed-6f9a81fca812
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,11 +44,11 @@ translation.priority.ht:
 # Ordering Items in the Header Control
 Once you've [added items to a header control](../mfc/adding-items-to-the-header-control.md), you can manipulate or get information about their order with the following functions:  
   
--   [CHeaderCtrl::GetOrderArray](../Topic/CHeaderCtrl::GetOrderArray.md) and [CHeaderCtrl::SetOrderArray](../Topic/CHeaderCtrl::SetOrderArray.md)  
+-   [CHeaderCtrl::GetOrderArray](../mfc/reference/cheaderctrl-class.md#cheaderctrl__getorderarray) and [CHeaderCtrl::SetOrderArray](../mfc/reference/cheaderctrl-class.md#cheaderctrl__setorderarray)  
   
      Retrieves and sets the left-to-right order of header items.  
   
--   [CHeaderCtrl::OrderToIndex](../Topic/CHeaderCtrl::OrderToIndex.md).  
+-   [CHeaderCtrl::OrderToIndex](../mfc/reference/cheaderctrl-class.md#cheaderctrl__ordertoindex).  
   
      Retrieves the index value for a specific header item.  
   
@@ -55,3 +56,4 @@ Once you've [added items to a header control](../mfc/adding-items-to-the-header-
   
 ## See Also  
  [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)
+

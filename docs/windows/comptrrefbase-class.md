@@ -1,13 +1,13 @@
 ---
-title: "ComPtrRefBase Class"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "ComPtrRefBase Class | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "client/Microsoft::WRL::Details::ComPtrRefBase"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "ComPtrRefBase class"
 ms.assetid: 6d344c1a-cc13-4a3f-8a0d-f167ccb9348f
 caps.latest.revision: 5
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -66,14 +67,14 @@ class ComPtrRefBase;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ComPtrRefBase::operator IInspectable** Operator](../windows/comptrrefbase--operator-iinspectable---operator.md)|Casts the current [ptr_](../windows/comptrrefbase--ptr_-data-member.md) data member to a pointer-to-a-pointer-to the IInspectable interface.|  
-|[ComPtrRefBase::operator IUnknown** Operator](../windows/comptrrefbase--operator-iunknown---operator.md)|Casts the current [ptr_](../windows/comptrrefbase--ptr_-data-member.md) data member to a pointer-to-a-pointer-to the IUnknown interface.|  
+|[ComPtrRefBase::operator IInspectable** Operator](../windows/comptrrefbase-operator-iinspectable-star-star-operator.md)|Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the IInspectable interface.|  
+|[ComPtrRefBase::operator IUnknown** Operator](../windows/comptrrefbase-operator-iunknown-star-star-operator.md)|Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the IUnknown interface.|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[ComPtrRefBase::ptr_ Data Member](../windows/comptrrefbase--ptr_-data-member.md)|Pointer to the type specified by the current template parameter.|  
+|[ComPtrRefBase::ptr_ Data Member](../windows/comptrrefbase-ptr-data-member.md)|Pointer to the type specified by the current template parameter.|  
   
 ## Inheritance Hierarchy  
  `ComPtrRefBase`  
@@ -84,4 +85,4 @@ class ComPtrRefBase;
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft--wrl--details-namespace.md)
+ [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

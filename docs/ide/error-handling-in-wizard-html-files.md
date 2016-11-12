@@ -1,13 +1,13 @@
 ---
-title: "Error Handling in Wizard HTML Files"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Error Handling in Wizard HTML Files | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "HTML, error handling"
 ms.assetid: eb428a64-b681-4420-987d-92098bf98455
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 

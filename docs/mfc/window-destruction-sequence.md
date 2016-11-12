@@ -1,13 +1,13 @@
 ---
-title: "Window Destruction Sequence"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Window Destruction Sequence | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "sequence [C++]"
   - "windows [C++], destroying"
 ms.assetid: 2d819196-6240-415f-a308-db43745e616c
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,9 +39,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Window Destruction Sequence
-In the MFC framework, when the user closes the frame window, the window's default [OnClose](../Topic/CWnd::OnClose.md) handler calls [DestroyWindow](../Topic/CWnd::DestroyWindow.md). The last member function called when the Windows window is destroyed is [OnNcDestroy](../Topic/CWnd::OnNcDestroy.md), which does some cleanup, calls the [Default](../Topic/CWnd::Default.md) member function to perform Windows cleanup, and lastly calls the virtual member function [PostNcDestroy](../Topic/CWnd::PostNcDestroy.md). The [CFrameWnd](../mfcref/cframewnd-class.md) implementation of `PostNcDestroy` deletes the C++ window object.  
+In the MFC framework, when the user closes the frame window, the window's default [OnClose](../mfc/reference/cwnd-class.md#onclose) handler calls [DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow). The last member function called when the Windows window is destroyed is [OnNcDestroy](../mfc/reference/cwnd-class.md#onncdestroy), which does some cleanup, calls the [Default](../mfc/reference/cwnd-class.md#default) member function to perform Windows cleanup, and lastly calls the virtual member function [PostNcDestroy](../mfc/reference/cwnd-class.md#postncdestroy). The [CFrameWnd](../mfc/reference/cframewnd-class.md) implementation of `PostNcDestroy` deletes the C++ window object.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Allocating and deallocating window memory](../mfc/allocating-and-deallocating-window-memory.md)  
   
@@ -48,3 +49,4 @@ In the MFC framework, when the user closes the frame window, the window's defaul
   
 ## See Also  
  [Destroying Window Objects](../mfc/destroying-window-objects.md)
+

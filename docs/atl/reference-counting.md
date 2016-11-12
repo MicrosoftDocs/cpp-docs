@@ -1,13 +1,13 @@
 ---
-title: "Reference Counting"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Reference Counting | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "reference counts"
   - "references, counting"
 ms.assetid: b1fd4514-6de6-429f-9e60-2777c0d07a3d
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -55,3 +56,4 @@ COM itself does not automatically try to remove an object from memory when it th
 ## See Also  
  [Introduction to COM](../atl/introduction-to-com.md)   
  [Managing Object Lifetimes through Reference Counting](http://msdn.microsoft.com/library/windows/desktop/ms687260)
+

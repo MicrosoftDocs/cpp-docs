@@ -1,13 +1,13 @@
 ---
-title: "Compiling and Linking Multithread Programs"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Compiling and Linking Multithread Programs | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -21,7 +21,8 @@ helpviewer_keywords:
   - "linking [C++], multithread programs"
 ms.assetid: 27589afc-daf2-4f26-b868-a99de5c9dfec
 caps.latest.revision: 8
-ms.author: "mithom"
+author: "mikeblome"
+ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
   - "cs-cz"

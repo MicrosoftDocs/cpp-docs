@@ -1,13 +1,13 @@
 ---
-title: "Tab Controls and Property Sheets"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Tab Controls and Property Sheets | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "tab controls, and property sheets"
   - "CTabCtrl class, and property sheets"
 ms.assetid: f3b87bea-9ad9-41e6-a7ff-a9285308267e
-caps.latest.revision: 10
+caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,12 +38,13 @@ translation.priority.ht:
 # Tab Controls and Property Sheets
 Property sheets are multiple-page dialogs or "tab dialogs" that can display up to 24 dialog template resources to the user. For examples of property sheets, see the Windows Display Properties dialog box or the following MFC sample application:  
   
- [CMNCTRL1: Demonstrates Common Control Classes, Part 1](../top/visual-c---samples.md)  
+ [CMNCTRL1: Demonstrates Common Control Classes, Part 1](../top/visual-cpp-samples.md)  
   
- [CMNCTRL2: Demonstrates Common Control Classes, Part 2](../top/visual-c---samples.md)  
+ [CMNCTRL2: Demonstrates Common Control Classes, Part 2](../top/visual-cpp-samples.md)  
   
- Property sheets can be easily implemented using the MFC class [CPropertySheet](../mfcref/cpropertysheet-class.md).  
+ Property sheets can be easily implemented using the MFC class [CPropertySheet](../mfc/reference/cpropertysheet-class.md).  
   
 ## See Also  
  [Using CTabCtrl](../mfc/using-ctabctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

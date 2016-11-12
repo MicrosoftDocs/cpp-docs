@@ -1,13 +1,13 @@
 ---
-title: "Managing Data with Document Data Variables"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Managing Data with Document Data Variables | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -21,7 +21,8 @@ helpviewer_keywords:
   - "document data [C++]"
   - "member variables [C++], document class"
 ms.assetid: e70b87f4-8c30-49e5-8986-521c2ff91704
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -52,3 +53,4 @@ Implement your document's data as member variables of your document class. For e
   
 ## See Also  
  [Using Documents](../mfc/using-documents.md)
+

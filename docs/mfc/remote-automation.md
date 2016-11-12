@@ -1,13 +1,13 @@
 ---
-title: "Remote Automation"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Remote Automation | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -21,7 +21,8 @@ helpviewer_keywords:
   - "Automation controller"
   - "COM, Remote Automation"
 ms.assetid: 363f87fb-08fa-4458-b089-b46365a6d4f2
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -41,7 +42,7 @@ translation.priority.ht:
 ---
 # Remote Automation
 > [!NOTE]
->  It is recommended that Visual C++ .NET developers use DCOM rather than Remote Automation for new applications. Visual C++ .NET does not support Windows 95. Cases in which you would need to support Remote Automation are described in [Where Does Remote Automation Fit In?](../mfc/where-does-remote-automation-fit-in-.md).  
+>  It is recommended that Visual C++ .NET developers use DCOM rather than Remote Automation for new applications. Visual C++ .NET does not support Windows 95. Cases in which you would need to support Remote Automation are described in [Where Does Remote Automation Fit In]--brokenlink--(../Topic/Where%20Does%20Remote%20Automation%20Fit%20In.md).  
   
  Remote Automation is a type of [Automation](../mfc/automation.md) that allows an interface consumer to execute an interface provider that resides on another machine, for example, on a network.  
   
@@ -50,9 +51,9 @@ translation.priority.ht:
 ## In This Section  
  [History of DCOM (Distributed Component Object Model)](../mfc/history-of-dcom.md)  
   
- [Where Does Remote Automation Fit In?](../mfc/where-does-remote-automation-fit-in-.md)  
+ [Where Does Remote Automation Fit In]--brokenlink--(../Topic/Where%20Does%20Remote%20Automation%20Fit%20In.md)  
   
- [What Does Remote Automation Provide?](../mfc/what-does-remote-automation-provide-.md)  
+ [What Does Remote Automation Provide]--brokenlink--(../Topic/What%20Does%20Remote%20Automation%20Provide.md)  
   
  [Remote Automation Security](../mfc/security-in-remote-automation.md)  
   
@@ -60,7 +61,7 @@ translation.priority.ht:
   
  [Installation](../mfc/remote-automation-installation.md)  
   
- [The Automation Manager](../mfc/automation-manager--mfc-.md)  
+ [The Automation Manager](../mfc/automation-manager-mfc.md)  
   
 -   [The Remote Automation Connection Manager](../mfc/remote-automation-connection-manager.md)  
   

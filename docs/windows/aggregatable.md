@@ -1,13 +1,13 @@
 ---
-title: "aggregatable"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "aggregatable | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "vc-attr.aggregatable"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "aggregatable attribute"
 ms.assetid: 9253a46a-cd76-41f2-b3b6-86f709bb069c
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -59,7 +60,7 @@ Indicates that the class supports aggregation.
 ## Remarks  
  The **aggregatable** C++ attribute has the same functionality as the [aggregatable](http://msdn.microsoft.com/library/windows/desktop/aa366721) MIDL attribute. This means that the compiler will pass the **aggregatable** attribute through to the generated .idl file.  
   
- This attribute requires that the [coclass](../windows/coclass.md), [progid](../windows/progid.md), or [vi_progid](../windows/vi_progid.md) attribute (or another attribute that implies one of these) also be applied to the same element. If any single attribute is used, the other two are automatically applied. For example, if **progid** is applied, **vi_progid** and **coclass** are also applied.  
+ This attribute requires that the [coclass](../windows/coclass.md), [progid](../windows/progid.md), or [vi_progid](../windows/vi-progid.md) attribute (or another attribute that implies one of these) also be applied to the same element. If any single attribute is used, the other two are automatically applied. For example, if **progid** is applied, **vi_progid** and **coclass** are also applied.  
   
  **ATL Projects**  
   
@@ -103,6 +104,6 @@ class CMyClass {};
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
- [Typedef, Enum, Union, and Struct Attributes](../windows/typedef--enum--union--and-struct-attributes.md)   
+ [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
  [Aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558)   
- [Attributes Samples](assetId:///558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

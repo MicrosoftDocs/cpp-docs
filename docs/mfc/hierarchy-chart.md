@@ -1,13 +1,13 @@
 ---
-title: "Hierarchy Chart"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Hierarchy Chart | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.mfc"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "classes [C++], MFC hierarchy"
   - "MFC, object model"
 ms.assetid: 19d70341-e391-4a72-94c6-35755ce975d4
-caps.latest.revision: 13
+caps.latest.revision: 15
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -49,8 +50,9 @@ The following illustration represents the MFC classes derived from `CObject`:
   
  ![Classes Not Derived From CObject](../mfc/media/mfc_heirarchy_chart3of3.png "MFC_Heirarchy_Chart3of3")  
   
- You can download the complete chart from the following location: [http://go.microsoft.com/fwlink/?LinkId=112301](http://go.microsoft.com/fwlink/?LinkId=112301).  
+ You can download the complete chart from the following location: [http://go.microsoft.com/fwlink/LinkId=112301](http://go.microsoft.com/fwlink/LinkId=112301).  
   
 ## See Also  
  [Hierarchy Chart Categories](../mfc/hierarchy-chart-categories.md)   
  [Class Overview](../mfc/class-library-overview.md)
+

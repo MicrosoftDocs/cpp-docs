@@ -1,13 +1,13 @@
 ---
-title: "Introduction to ATL"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Introduction to ATL | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "index-page "
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "COM objects, creating in ATL"
   - "ATL"
 ms.assetid: 77f565e8-c4ec-4a80-af4b-7278fcfe5c98
-caps.latest.revision: 14
+caps.latest.revision: 16
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -48,3 +49,4 @@ ATL is the Active Template Library, a set of template-based C++ classes with whi
   
 ## See Also  
  [Introduction to COM and ATL](../atl/introduction-to-com-and-atl.md)
+

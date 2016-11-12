@@ -1,13 +1,13 @@
 ---
-title: "CreateClassFactory Function"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "CreateClassFactory Function | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "module/Microsoft::WRL::Details::CreateClassFactory"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CreateClassFactory function"
 ms.assetid: 772d5d1b-8872-4745-81ca-521a39564713
 caps.latest.revision: 2
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -77,4 +78,4 @@ inline HRESULT STDMETHODCALLTYPE CreateClassFactory(
  **Namespace:** Microsoft::WRL  
   
 ## See Also  
- [Microsoft::WRL::Wrappers::Details Namespace](../windows/microsoft--wrl--wrappers--details-namespace.md)
+ [Microsoft::WRL::Wrappers::Details Namespace](../windows/microsoft-wrl-wrappers-details-namespace.md)

@@ -1,13 +1,13 @@
 ---
-title: "Assignment Operators"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Assignment Operators | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - ">>="
@@ -47,6 +47,7 @@ helpviewer_keywords:
   - "<<= operator"
 ms.assetid: b028cf35-2ff1-4f14-9027-fd53ebec8aa0
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -103,7 +104,7 @@ assignment-operator : one of
 |`&#124;=`|`or_eq`|  
 |`^=`|`xor_eq`|  
   
- There are two ways to access these operator keywords in your programs: include the header file `iso646.h`, or compile with the [/Za](../buildref/-za---ze--disable-language-extensions-.md) (Disable language extensions) compiler option.  
+ There are two ways to access these operator keywords in your programs: include the header file `iso646.h`, or compile with the [/Za](../build/reference/za-ze-disable-language-extensions.md) (Disable language extensions) compiler option.  
   
 ## Example  
   
@@ -215,6 +216,6 @@ B = A;
   
 ## See Also  
  [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)   
- [C++ Operators](../notintoc/c---operators.md)   
- [C++ Built-in Operators, Precedence and Associativity](../cpp/c---built-in-operators--precedence-and-associativity.md)   
- [C Assignment Operators](../c/c-assignment-operators.md)
+ [C++ Operators](../misc/cpp-operators.md)   
+ [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
+ [C Assignment Operators](../c-language/c-assignment-operators.md)

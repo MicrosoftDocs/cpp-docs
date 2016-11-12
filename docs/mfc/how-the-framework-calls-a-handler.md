@@ -1,13 +1,13 @@
 ---
-title: "How the Framework Calls a Handler"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "How the Framework Calls a Handler | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "command handling, calling handlers and code in MFC"
   - "command routing, MFC"
 ms.assetid: d79bceba-4ff6-417a-9d52-6b6af62a909d
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -52,3 +53,4 @@ The following topics first examine how the framework routes commands, then exami
   
 ## See Also  
  [Message Handling and Mapping](../mfc/message-handling-and-mapping.md)
+

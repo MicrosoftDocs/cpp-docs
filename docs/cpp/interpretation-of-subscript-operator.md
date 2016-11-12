@@ -1,13 +1,13 @@
 ---
-title: "Interpretation of Subscript Operator"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Interpretation of Subscript Operator | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "operators [C++], interpretation of subscript"
 ms.assetid: 8852ca18-9d5b-43f7-b8bd-abc89364fbf2
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,7 +41,7 @@ Like other operators, the subscript operator (**[ ]**) can be redefined by the u
   
  \*((*array-name*) + (*subscript*))  
   
- As in all addition that involves pointer types, scaling is performed automatically to adjust for the size of the type. Therefore, the resultant value is not *subscript* bytes from the origin of *array-name*; rather, it is the *subscript*th element of the array. (For more information about this conversion, see [Additive Operators](../cpp/additive-operators----and--.md).)  
+ As in all addition that involves pointer types, scaling is performed automatically to adjust for the size of the type. Therefore, the resultant value is not *subscript* bytes from the origin of *array-name*; rather, it is the *subscript*th element of the array. (For more information about this conversion, see [Additive Operators](../cpp/additive-operators-plus-and.md).)  
   
  Similarly, for multidimensional arrays, the address is derived using the following method:  
   
@@ -49,4 +50,4 @@ Like other operators, the subscript operator (**[ ]**) can be redefined by the u
  ***subscript* 1**  *max*2 *\* max*3*...max*n)               **+** *subscript*2 *\* max*3*...max*n)                    . . . *+* *subscript*n))  
   
 ## See Also  
- [Arrays](../cpp/arrays--c---.md)
+ [Arrays](../cpp/arrays-cpp.md)

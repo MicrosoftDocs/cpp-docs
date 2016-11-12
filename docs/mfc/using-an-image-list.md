@@ -1,13 +1,13 @@
 ---
-title: "Using an Image List"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Using an Image List | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "CImageList class, using"
   - "image lists [C++]"
 ms.assetid: e0aed188-a1e6-400e-9f51-033d61c5541f
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,11 +38,11 @@ translation.priority.ht:
 # Using an Image List
 Typical usage of an image list follows the pattern below:  
   
--   Construct a [CImageList](../mfcref/cimagelist-class.md) object and call one of the overloads of its [Create](../Topic/CImageList::Create.md) function to create an image list and attach it to the `CImageList` object.  
+-   Construct a [CImageList](../mfc/reference/cimagelist-class.md) object and call one of the overloads of its [Create](../mfc/reference/cimagelist-class.md#create) function to create an image list and attach it to the `CImageList` object.  
   
--   If you didn't add images when you created the image list, add images to the image list by calling the [Add](../Topic/CImageList::Add.md) or [Read](../Topic/CImageList::Read.md) member function.  
+-   If you didn't add images when you created the image list, add images to the image list by calling the [Add](../mfc/reference/cimagelist-class.md#add) or [Read](../mfc/reference/cimagelist-class.md#read) member function.  
   
--   Associate the image list with a control by calling the appropriate member function of that control, or draw images from the image list yourself using the image list's [Draw](../Topic/CImageList::Draw.md) member function.  
+-   Associate the image list with a control by calling the appropriate member function of that control, or draw images from the image list yourself using the image list's [Draw](../mfc/reference/cimagelist-class.md#draw) member function.  
   
 -   Perhaps allow the user to drag an image, using the image list's built-in support for dragging.  
   
@@ -50,4 +51,5 @@ Typical usage of an image list follows the pattern below:
   
 ## See Also  
  [Using CImageList](../mfc/using-cimagelist.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

@@ -1,13 +1,13 @@
 ---
-title: "Relationship to the C-Language API"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Relationship to the C-Language API | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.classes.mfc"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "Visual C, Windows API calls"
   - "Windows API [C++], and MFC"
 ms.assetid: 334e8efc-f3cc-4018-bc2e-02908b2a39fe
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 

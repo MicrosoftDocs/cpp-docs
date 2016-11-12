@@ -1,13 +1,13 @@
 ---
-title: "Wizards and the Resource Editors"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Wizards and the Resource Editors | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -22,7 +22,8 @@ helpviewer_keywords:
   - "MFC [C++], wizards"
   - "Class View tool, managing Windows messages"
 ms.assetid: f5dd4d13-9dc1-4a49-b6bf-5b3cb45fa8ba
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -41,10 +42,10 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Wizards and the Resource Editors
-Visual C++ includes several wizards for use in MFC programming, along with many integrated resource editors. For ActiveX controls programming, the [ActiveX Control Wizard](../mfcref/mfc-activex-control-wizard.md) serves a purpose much like that of the MFC Application Wizard. While you can write MFC applications without most of these tools, the tools greatly simplify and speed your work.  
+Visual C++ includes several wizards for use in MFC programming, along with many integrated resource editors. For ActiveX controls programming, the [ActiveX Control Wizard](../mfc/reference/mfc-activex-control-wizard.md) serves a purpose much like that of the MFC Application Wizard. While you can write MFC applications without most of these tools, the tools greatly simplify and speed your work.  
   
 ##  <a name="_core_use_appwizard_to_create_an_mfc_application"></a> Use the MFC Application Wizard to Create an MFC Application  
- Use the [MFC Application Wizard](../mfcref/mfc-application-wizard.md) to create an MFC project in Visual C++, which can include OLE and database support. Files in the project contain your application, document, view, and frame-window classes; standard resources, including menus and an optional toolbar; other required Windows files; and optional .rtf files containing standard Windows Help topics that you can revise and augment to create your program's help file.  
+ Use the [MFC Application Wizard](../mfc/reference/mfc-application-wizard.md) to create an MFC project in Visual C++, which can include OLE and database support. Files in the project contain your application, document, view, and frame-window classes; standard resources, including menus and an optional toolbar; other required Windows files; and optional .rtf files containing standard Windows Help topics that you can revise and augment to create your program's help file.  
   
 ##  <a name="_core_use_classwizard_to_manage_classes_and_windows_messages"></a> Use Class View to Manage Classes and Windows Messages  
  Class View helps you create handler functions for Windows messages and commands, create and manage classes, create class member variables, create Automation methods and properties, create database classes, and more.  
@@ -58,12 +59,12 @@ Visual C++ includes several wizards for use in MFC programming, along with many 
   
  A large part of your programming task is choosing which messages to map to which objects and then implementing that mapping. To do so, you use Class View and the Properties window.  
   
- The Properties window will create empty message-handler member functions, and you use the source code editor to implement the body of the handler. You can also create or edit classes (including classes of your own, not derived from MFC classes) and their members with Class View. For more information on using Class View and about wizards that add code to a project, see [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards--c---.md).  
+ The Properties window will create empty message-handler member functions, and you use the source code editor to implement the body of the handler. You can also create or edit classes (including classes of your own, not derived from MFC classes) and their members with Class View. For more information on using Class View and about wizards that add code to a project, see [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md).  
   
 ##  <a name="_core_use_the_resource_editors_to_create_and_edit_resources"></a> Use the Resource Editors to Create and Edit Resources  
  Use the Visual C++ [resource editors](../mfc/resource-editors.md) to create and edit menus, dialog boxes, custom controls, accelerator keys, bitmaps, icons, cursors, strings, and version resources. As of Visual C++ version 4.0, a toolbar editor makes creating toolbars much easier.  
   
- To help you even more, the Microsoft Foundation Class Library provides a file called COMMON.RES, which contains "clip art" resources that you can copy from COMMON.RES and paste into your own resource file. COMMON.RES includes toolbar buttons, common cursors, icons, and more. You can use, modify, and redistribute these resources in your application. For more information about COMMON.RES, see the [Clipart sample](../top/visual-c---samples.md).  
+ To help you even more, the Microsoft Foundation Class Library provides a file called COMMON.RES, which contains "clip art" resources that you can copy from COMMON.RES and paste into your own resource file. COMMON.RES includes toolbar buttons, common cursors, icons, and more. You can use, modify, and redistribute these resources in your application. For more information about COMMON.RES, see the [Clipart sample](../top/visual-cpp-samples.md).  
   
  The MFC Application Wizard, the Visual C++ wizards, resource editors, and the MFC framework do a lot of work for you and make managing your code much easier. The bulk of your application-specific code is in your document and view classes.  
   

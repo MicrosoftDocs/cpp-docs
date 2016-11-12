@@ -1,13 +1,13 @@
 ---
-title: "IsSame Structure"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "IsSame Structure | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "internal/Microsoft::WRL::Details::IsSame"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "IsSame structure"
 ms.assetid: 1eddbc3f-3cc5-434f-8495-e4477e1f868e
 caps.latest.revision: 5
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -68,7 +69,7 @@ struct IsSame<T1, T1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[IsSame::value Constant](../windows/issame--value-constant.md)|Indicates whether one type is the same as another.|  
+|[IsSame::value Constant](../windows/issame-value-constant.md)|Indicates whether one type is the same as another.|  
   
 ## Inheritance Hierarchy  
  `IsSame`  
@@ -79,4 +80,4 @@ struct IsSame<T1, T1>;
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft--wrl--details-namespace.md)
+ [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

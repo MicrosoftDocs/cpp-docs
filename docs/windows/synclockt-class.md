@@ -1,13 +1,13 @@
 ---
-title: "SyncLockT Class"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "SyncLockT Class | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "SyncLockT class"
 ms.assetid: a967f6f7-3555-43d1-b210-2bb65d63d15e
 caps.latest.revision: 5
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -62,27 +63,27 @@ class SyncLockT;
   
 |Name|Description|  
 |----------|-----------------|  
-|[SyncLockT::SyncLockT Constructor](../windows/synclockt--synclockt-constructor.md)|Initializes a new instance of the SyncLockT class.|  
-|[SyncLockT::~SyncLockT Destructor](../windows/synclockt--~synclockt-destructor.md)|Deinitializes an instance of the SyncLockT class.|  
+|[SyncLockT::SyncLockT Constructor](../windows/synclockt-synclockt-constructor.md)|Initializes a new instance of the SyncLockT class.|  
+|[SyncLockT::~SyncLockT Destructor](../windows/synclockt-tilde-synclockt-destructor.md)|Deinitializes an instance of the SyncLockT class.|  
   
 ### Protected Constructors  
   
 |Name|Description|  
 |----------|-----------------|  
-|[SyncLockT::SyncLockT Constructor](../windows/synclockt--synclockt-constructor.md)|Initializes a new instance of the SyncLockT class.|  
+|[SyncLockT::SyncLockT Constructor](../windows/synclockt-synclockt-constructor.md)|Initializes a new instance of the SyncLockT class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[SyncLockT::IsLocked Method](../windows/synclockt--islocked-method.md)|Indicates whether the current SyncLockT object owns a resource; that is, the SyncLockT object is *locked*.|  
-|[SyncLockT::Unlock Method](../windows/synclockt--unlock-method.md)|Releases control of the resource held by the current SyncLockT object, if any.|  
+|[SyncLockT::IsLocked Method](../windows/synclockt-islocked-method.md)|Indicates whether the current SyncLockT object owns a resource; that is, the SyncLockT object is *locked*.|  
+|[SyncLockT::Unlock Method](../windows/synclockt-unlock-method.md)|Releases control of the resource held by the current SyncLockT object, if any.|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[SyncLockT::sync_ Data Member](../windows/synclockt--sync_-data-member.md)|Holds the underlying resource represented by the SyncLockT class.|  
+|[SyncLockT::sync_ Data Member](../windows/synclockt-sync-data-member.md)|Holds the underlying resource represented by the SyncLockT class.|  
   
 ## Inheritance Hierarchy  
  `SyncLockT`  
@@ -93,5 +94,5 @@ class SyncLockT;
  **Namespace:** Microsoft::WRL::Wrappers::Details  
   
 ## See Also  
- [Microsoft::WRL::Wrappers::Details Namespace](../windows/microsoft--wrl--wrappers--details-namespace.md)   
+ [Microsoft::WRL::Wrappers::Details Namespace](../windows/microsoft-wrl-wrappers-details-namespace.md)   
  [SRWLock Class](../windows/srwlock-class.md)

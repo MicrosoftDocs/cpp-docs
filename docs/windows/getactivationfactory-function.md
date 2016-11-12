@@ -1,13 +1,13 @@
 ---
-title: "GetActivationFactory Function"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "GetActivationFactory Function | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "module/Microsoft::WRL::Details::GetActivationFactory"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "GetActivationFactory function"
 ms.assetid: 5736d285-6beb-42aa-8788-e261c0010afe
 caps.latest.revision: 4
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -71,4 +72,4 @@ inline HRESULT GetActivationFactory(
  **Namespace:** Windows::Foundation  
   
 ## See Also  
- [Windows::Foundation Namespace](../windows/windows--foundation-namespace.md)
+ [Windows::Foundation Namespace](../windows/windows-foundation-namespace.md)

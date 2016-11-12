@@ -1,13 +1,13 @@
 ---
-title: "CompareStringOrdinal Method"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "CompareStringOrdinal Method | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "corewrappers/Microsoft::WRL::Wrappers::Details::CompareStringOrdinal"
@@ -15,6 +15,7 @@ dev_langs:
   - "C++"
 ms.assetid: ffa997fd-8cd7-40a5-b9e7-f55d40b072f4
 caps.latest.revision: 4
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -69,4 +70,4 @@ inline INT32 CompareStringOrdinal(
  **Namespace:** Microsoft::WRL::Wrappers::Details  
   
 ## See Also  
- [Microsoft::WRL::Wrappers::Details Namespace](../windows/microsoft--wrl--wrappers--details-namespace.md)
+ [Microsoft::WRL::Wrappers::Details Namespace](../windows/microsoft-wrl-wrappers-details-namespace.md)

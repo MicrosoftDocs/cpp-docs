@@ -1,13 +1,13 @@
 ---
-title: "Using CToolTipCtrl"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Using CToolTipCtrl | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "CToolTipCtrl"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "CToolTipCtrl class, creating tool tips"
   - "CToolTipCtrl class"
 ms.assetid: 8fc58a04-4792-4223-a092-d349d11344da
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -36,9 +37,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Using CToolTipCtrl
-The [CToolTipCtrl](../mfcref/ctooltipctrl-class.md) class encapsulates the functionality of a tool tip control, a small pop-up window that displays a single line of text describing the purpose of a tool in an application. A tool tip is hidden most of the time, appearing only when the user puts the cursor on a tool and leaves it there for approximately one-half second. The tool tip appears near the cursor and disappears when the user clicks a mouse button or moves the cursor off of the tool.  
+The [CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md) class encapsulates the functionality of a tool tip control, a small pop-up window that displays a single line of text describing the purpose of a tool in an application. A tool tip is hidden most of the time, appearing only when the user puts the cursor on a tool and leaves it there for approximately one-half second. The tool tip appears near the cursor and disappears when the user clicks a mouse button or moves the cursor off of the tool.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Methods of Creating Tool Tips](../mfc/methods-of-creating-tool-tips.md)  
   
@@ -50,4 +51,5 @@ The [CToolTipCtrl](../mfcref/ctooltipctrl-class.md) class encapsulates the funct
   
 ## See Also  
  [Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

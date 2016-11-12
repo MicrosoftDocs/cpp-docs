@@ -1,13 +1,13 @@
 ---
-title: "Dynamic Object Creation"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Dynamic Object Creation | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "objects [C++], creating dynamically at run time"
   - "dynamic object creation"
 ms.assetid: 3e0f51cb-3e24-4231-817f-1c0ce9f2d5df
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -42,7 +43,8 @@ This article explains how to create an object dynamically at run time. The proce
   
 1.  Use the following code to dynamically create an object by using the `CreateObject` function of the `CRuntimeClass`. Note that on failure, `CreateObject` returns **NULL** instead of raising an exception:  
   
-     [!code[NVC_MFCCObjectSample#6](../mfc/codesnippet/CPP/dynamic-object-creation_1.cpp)]  
+     [!code-cpp[NVC_MFCCObjectSample#6](../mfc/codesnippet/CPP/dynamic-object-creation_1.cpp)]  
   
 ## See Also  
  [Using CObject](../mfc/using-cobject.md)
+

@@ -1,13 +1,13 @@
 ---
-title: "Labeled Statements"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Labeled Statements | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "goto"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "statements, labeled"
 ms.assetid: 456a26d5-0fcc-4d1a-b71f-fa9ff3d73b91
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -79,7 +80,7 @@ int main() {
   
  **The goto statement**  
   
- The appearance of an *identifier* label in the source program declares a label. Only a [goto](../cpp/goto-statement--c---.md) statement can transfer control to an *identifier* label. The following code fragment illustrates use of the `goto` statement and an *identifier* label:  
+ The appearance of an *identifier* label in the source program declares a label. Only a [goto](../cpp/goto-statement-cpp.md) statement can transfer control to an *identifier* label. The following code fragment illustrates use of the `goto` statement and an *identifier* label:  
   
  A label cannot appear by itself but must always be attached to a statement. If a label is needed by itself, place a null statement after the label.  
   
@@ -177,7 +178,7 @@ switch( msg )
 ```  
   
 ## Labels in the goto statement  
- The appearance of an *identifier* label in the source program declares a label. Only a [goto](../cpp/goto-statement--c---.md) statement can transfer control to an *identifier* label. The following code fragment illustrates use of the `goto` statement and an *identifier* label:  
+ The appearance of an *identifier* label in the source program declares a label. Only a [goto](../cpp/goto-statement-cpp.md) statement can transfer control to an *identifier* label. The following code fragment illustrates use of the `goto` statement and an *identifier* label:  
   
  A label cannot appear by itself but must always be attached to a statement. If a label is needed by itself, place a null statement after the label.  
   
@@ -201,5 +202,5 @@ int main() {
 ```  
   
 ## See Also  
- [Overview of C++ Statements](../cpp/overview-of-c---statements.md)   
- [switch Statement (C++)](../cpp/switch-statement--c---.md)
+ [Overview of C++ Statements](../cpp/overview-of-cpp-statements.md)   
+ [switch Statement (C++)](../cpp/switch-statement-cpp.md)

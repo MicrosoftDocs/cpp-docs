@@ -1,13 +1,13 @@
 ---
-title: "Opening Files"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Opening Files | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -26,7 +26,8 @@ helpviewer_keywords:
   - "opening files"
   - "exception handling [C++], opening files"
 ms.assetid: a991b8ec-b04a-4766-b47e-7485b5dd0b01
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -51,9 +52,9 @@ In MFC, the most common way to open a file is a two-stage process.
   
 1.  Create the file object without specifying a path or permission flags.  
   
-     You usually create a file object by declaring a [CFile](../mfcref/cfile-class.md) variable on the stack frame.  
+     You usually create a file object by declaring a [CFile](../mfc/reference/cfile-class.md) variable on the stack frame.  
   
-2.  Call the [Open](../Topic/CFile::Open.md) member function for the file object, supplying a path and permission flags.  
+2.  Call the [Open](../mfc/reference/cfile-class.md#open) member function for the file object, supplying a path and permission flags.  
   
      The return value for `Open` will be nonzero if the file was opened successfully or 0 if the specified file could not be opened. The `Open` member function is prototyped as follows:  
   
@@ -63,12 +64,13 @@ In MFC, the most common way to open a file is a two-stage process.
   
  The following example shows how to create a new file with read/write permission (replacing any previous file with the same path):  
   
- [!code[NVC_MFCFiles#1](../atl/codesnippet/CPP/opening-files_1.cpp)]  
+ [!code-cpp[NVC_MFCFiles#1](../atl-mfc-shared/reference/codesnippet/CPP/opening-files_1.cpp)]  
   
 > [!NOTE]
 >  This example creates and opens a file. If there are problems, the `Open` call can return a `CFileException` object in its last parameter, as shown here. The `TRACE` macro prints both the file name and a code indicating the reason for failure. You can call the `AfxThrowFileException` function if you require more detailed error reporting.  
   
 ## See Also  
- [CFile Class](../mfcref/cfile-class.md)   
- [CFile::Open](../Topic/CFile::Open.md)   
+ [CFile Class](../mfc/reference/cfile-class.md)   
+ [CFile::Open](../mfc/reference/cfile-class.md#cfile__open)   
  [Files](../mfc/files-in-mfc.md)
+

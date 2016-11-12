@@ -1,13 +1,13 @@
 ---
-title: "Run-Time Type Information"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Run-Time Type Information | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "index-page "
 dev_langs: 
   - "C++"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "run-time checks, type checking"
 ms.assetid: becbd0e5-0439-4c61-854f-8a74f7160c54
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,7 +44,7 @@ Run-time type information (RTTI) is a mechanism that allows the type of an objec
   
  There are three main C++ language elements to run-time type information:  
   
--   The [dynamic_cast](../cpp/dynamic_cast-operator.md) operator.  
+-   The [dynamic_cast](../cpp/dynamic-cast-operator.md) operator.  
   
      Used for conversion of polymorphic types.  
   
@@ -51,7 +52,7 @@ Run-time type information (RTTI) is a mechanism that allows the type of an objec
   
      Used for identifying the exact type of an object.  
   
--   The [type_info](../cpp/type_info-class.md) class.  
+-   The [type_info](../cpp/type-info-class.md) class.  
   
      Used to hold the type information returned by the `typeid` operator.  
   

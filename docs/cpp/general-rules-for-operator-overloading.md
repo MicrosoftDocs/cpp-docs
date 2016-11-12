@@ -1,13 +1,13 @@
 ---
-title: "General Rules for Operator Overloading"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "General Rules for Operator Overloading | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "operator overloading, rules"
 ms.assetid: eb2b3754-35f7-4832-b1da-c502893dc0c7
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -33,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # General Rules for Operator Overloading
-The following rules constrain how overloaded operators are implemented. However, they do not apply to the [new](../cpp/new-operator--c---.md) and [delete](../cpp/delete-operator--c---.md) operators, which are covered separately.  
+The following rules constrain how overloaded operators are implemented. However, they do not apply to the [new](../cpp/new-operator-cpp.md) and [delete](../cpp/delete-operator-cpp.md) operators, which are covered separately.  
   
 -   You cannot define new operators, such as **.  
   

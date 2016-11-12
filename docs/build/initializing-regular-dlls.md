@@ -1,13 +1,13 @@
 ---
-title: "Initializing Regular DLLs"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Initializing Regular DLLs | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "regular DLLs [C++], initializing"
 ms.assetid: f1f091d1-bb91-468a-94f4-3c554657b8fc
 caps.latest.revision: 8
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -57,11 +58,11 @@ Because regular DLLs have a `CWinApp` object, they should perform their initiali
   
 -   [The C run-time library behavior and _DllMainCRTStartup](../build/run-time-library-behavior.md)  
   
--   [Using Database, OLE, and Sockets Extension DLLs in Regular DLLs](../build/using-database--ole--and-sockets-extension-dlls-in-regular-dlls.md)  
+-   [Using Database, OLE, and Sockets Extension DLLs in Regular DLLs](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)  
   
 -   [Processes and threads (Windows SDK)](http://msdn.microsoft.com/library/windows/desktop/ms684841)  
   
--   [Thread local storage wrappers (MFC Technical Note 58)](../mfc/tn058--mfc-module-state-implementation.md)  
+-   [Thread local storage wrappers (MFC Technical Note 58)](../mfc/tn058-mfc-module-state-implementation.md)  
   
 ## See Also  
  [Initializing a DLL](../build/initializing-a-dll.md)

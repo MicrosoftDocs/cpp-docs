@@ -1,13 +1,13 @@
 ---
-title: "GetRuntimeErrorDesc"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "GetRuntimeErrorDesc | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "GetRuntimeErrorDesc"
@@ -24,6 +24,7 @@ helpviewer_keywords:
   - "ReferenceError method"
 ms.assetid: d56fdd2e-6ad0-4c49-9e98-bcf0105e1b12
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -74,7 +75,7 @@ Returns a description for the exception type.
 |URIError|Occurs when an illegal Uniform Resource Indicator (URI) is detected. For example, this is error occurs when an illegal character is found in a string being encoded or decoded.|  
   
 ## See Also  
- [Customizing C++ Wizards with Common JScript Functions](../ide/customizing-c---wizards-with-common-jscript-functions.md)   
- [JScript Functions for C++ Wizards](../ide/jscript-functions-for-c---wizards.md)   
+ [Customizing C++ Wizards with Common JScript Functions](../ide/customizing-cpp-wizards-with-common-jscript-functions.md)   
+ [JScript Functions for C++ Wizards](../ide/jscript-functions-for-cpp-wizards.md)   
  [Creating a Custom Wizard](../ide/creating-a-custom-wizard.md)   
  [Designing a Wizard](../ide/designing-a-wizard.md)

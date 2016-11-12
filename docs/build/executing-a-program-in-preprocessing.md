@@ -1,13 +1,13 @@
 ---
-title: "Executing a Program in Preprocessing"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Executing a Program in Preprocessing | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "program execution [C++]"
 ms.assetid: 5ecf123a-20e5-40cd-b8d8-dd5a9fdd4b24
 caps.latest.revision: 7
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 

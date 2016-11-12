@@ -1,13 +1,13 @@
 ---
-title: "Multiplicative Operators and the Modulus Operator"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Multiplicative Operators and the Modulus Operator | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "%"
@@ -26,6 +26,7 @@ helpviewer_keywords:
   - "division operator"
 ms.assetid: b53ea5da-d0b4-40dc-98f3-0aa52d548293
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -63,7 +64,7 @@ expression % expression
   
  These binary operators have left-to-right associativity.  
   
- The multiplicative operators take operands of arithmetic types. The modulus operator (`%`) has a stricter requirement in that its operands must be of integral type. (To get the remainder of a floating-point division, use the run-time function, [fmod](../crt/fmod--fmodf.md).) The conversions covered in [Arithmetic Conversions](../notintoc/arithmetic-conversions.md) are applied to the operands, and the result is of the converted type.  
+ The multiplicative operators take operands of arithmetic types. The modulus operator (`%`) has a stricter requirement in that its operands must be of integral type. (To get the remainder of a floating-point division, use the run-time function, [fmod](../c-runtime-library/reference/fmod-fmodf.md).) The conversions covered in [Arithmetic Conversions](../misc/arithmetic-conversions.md) are applied to the operands, and the result is of the converted type.  
   
  The multiplication operator yields the result of multiplying the first operand by the second.  
   
@@ -110,6 +111,6 @@ int main() {
   
 ## See Also  
  [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)   
- [C++ Operators](../notintoc/c---operators.md)   
- [C++ Built-in Operators, Precedence and Associativity](../cpp/c---built-in-operators--precedence-and-associativity.md)   
- [C Multiplicative Operators](../c/c-multiplicative-operators.md)
+ [C++ Operators](../misc/cpp-operators.md)   
+ [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
+ [C Multiplicative Operators](../c-language/c-multiplicative-operators.md)

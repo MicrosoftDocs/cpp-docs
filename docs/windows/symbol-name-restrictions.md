@@ -1,13 +1,13 @@
 ---
-title: "Symbol Name Restrictions"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Symbol Name Restrictions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.editors.symbol.restrictions.name"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "restrictions, symbol names"
 ms.assetid: 4ae7f695-ca86-4f4b-989a-fe6f89650ff7
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,7 +40,7 @@ translation.priority.ht:
 # Symbol Name Restrictions
 The restrictions on symbol names are as follows:  
   
--   All [symbols](../mfc/symbols--resource-identifiers.md) must be unique within the scope of the application. This prevents conflicting symbol definitions in the header files.  
+-   All [symbols](../mfc/symbols-resource-identifiers.md) must be unique within the scope of the application. This prevents conflicting symbol definitions in the header files.  
   
 -   Valid characters for a symbol name include A-Z, a-z, 0-9, and underscores ( _ ).  
   
@@ -69,6 +70,6 @@ The restrictions on symbol names are as follows:
  Win32  
   
 ## See Also  
- [Changing a Symbol or Symbol Name (ID)](../windows/changing-a-symbol-or-symbol-name--id-.md)   
+ [Changing a Symbol or Symbol Name (ID)](../windows/changing-a-symbol-or-symbol-name-id.md)   
  [Symbol Value Restrictions](../windows/symbol-value-restrictions.md)   
  [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)

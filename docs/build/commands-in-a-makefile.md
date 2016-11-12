@@ -1,13 +1,13 @@
 ---
-title: "Commands in a Makefile"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Commands in a Makefile | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "commands, makefiles"
 ms.assetid: 8085517e-42f4-493b-b8f8-44311fc08c64
 caps.latest.revision: 7
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 

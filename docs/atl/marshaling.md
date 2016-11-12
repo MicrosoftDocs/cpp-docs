@@ -1,13 +1,13 @@
 ---
-title: "Marshaling"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Marshaling | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "marshaling"
   - "COM interfaces, marshaling"
 ms.assetid: 40644b0a-1106-4fc8-9dfb-9bee9915d825
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,3 +44,4 @@ The COM technique of marshaling allows interfaces exposed by an object in one pr
 ## See Also  
  [Introduction to COM](../atl/introduction-to-com.md)   
  [Marshaling Details](http://msdn.microsoft.com/library/windows/desktop/ms692621)
+

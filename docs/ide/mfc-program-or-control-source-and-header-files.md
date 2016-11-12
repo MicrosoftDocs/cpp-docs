@@ -1,13 +1,13 @@
 ---
-title: "MFC Program or Control Source and Header Files"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "MFC Program or Control Source and Header Files | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "file types [C++], MFC source and header"
 ms.assetid: f61419a8-bf69-4bbb-8f7c-1734be5e6db6
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -46,13 +47,13 @@ The following files are created when you create an MFC project in Visual Studio,
 |Dlgproxy.cpp, Dlgproxy.h|In a dialog-based program, the implementation and header file for the project's Automation proxy class for the main dialog. This is only used if you have chosen Automation support.|  
 |*Projname*doc.cpp, *Projname*doc.h|Derive and implement the document class, named `CProjnameDoc`, and include skeleton member functions to initialize a document, serialize (save and load) a document, and implement debugging diagnostics.|  
 |*Projname*set.h/.cpp|Created if you create a program that supports a database and contains the recordset class.|  
-|*Projname*view.cpp, *Projname*view.h|Derive and implement the view class, named `CProjnameView`, which is used to display and print the document data. The `CProjnameView` class is derived from one of the following MFC classes:<br /><br /> -   [CEditView](../mfcref/ceditview-class.md)<br />-   [CFormView](../mfcref/cformview-class.md)<br />-   [CRecordView](../mfcref/crecordview-class.md)<br />-   [COleDBRecordView](../mfcref/coledbrecordview-class.md)<br />-   [CTreeView](../mfcref/ctreeview-class.md)<br />-   [CListView](../mfcref/clistview-class.md)<br />-   [CRichEditView](../mfcref/cricheditview-class.md)<br />-   [CScrollView](../mfcref/cscrollview-class.md)<br />-   [CView](../mfcref/cview-class.md)<br />-   [CHTMLView](../mfcref/chtmlview-class.md)<br />-   [CHTMLEditView](../mfcref/chtmleditview-class.md)<br /><br /> The project's view class contains skeleton member functions to draw the view and implement debugging diagnostics. If you have enabled support for printing, then message-map entries are added for print, print setup, and print preview command messages. These entries call the corresponding member functions in the base view class.|  
+|*Projname*view.cpp, *Projname*view.h|Derive and implement the view class, named `CProjnameView`, which is used to display and print the document data. The `CProjnameView` class is derived from one of the following MFC classes:<br /><br /> -   [CEditView](../mfc/reference/ceditview-class.md)<br />-   [CFormView](../mfc/reference/cformview-class.md)<br />-   [CRecordView](../mfc/reference/crecordview-class.md)<br />-   [COleDBRecordView](../mfc/reference/coledbrecordview-class.md)<br />-   [CTreeView](../mfc/reference/ctreeview-class.md)<br />-   [CListView](../mfc/reference/clistview-class.md)<br />-   [CRichEditView](../mfc/reference/cricheditview-class.md)<br />-   [CScrollView](../mfc/reference/cscrollview-class.md)<br />-   [CView](../mfc/reference/cview-class.md)<br />-   [CHTMLView](../mfc/reference/chtmlview-class.md)<br />-   [CHTMLEditView](../mfc/reference/chtmleditview-class.md)<br /><br /> The project's view class contains skeleton member functions to draw the view and implement debugging diagnostics. If you have enabled support for printing, then message-map entries are added for print, print setup, and print preview command messages. These entries call the corresponding member functions in the base view class.|  
 |*Projname*PropPage.h, *Projname*PropPage.cpp|Declare and implement the `CProjnamePropPage` class. `CProjnamePropPage` is derived from `COlePropertyPage` and a skeleton member function, `DoDataExchange`, is provided to implement data exchange and validation.|  
 |IPframe.cpp, IPframe.h|Created if the Mini-Server or Full-Server option is selected in the application wizard's **Automation Options** page (step 3 of 6). The files derive and implement the in-place frame window class, named **CInPlaceFrame**, used when the server is in place activated by a container program.|  
-|Mainfrm.cpp, Mainfrm.h|Derive the **CMainFrame** class from either [CFrameWnd](../mfcref/cframewnd-class.md) (for SDI applications) or [CMDIFrameWnd](../mfcref/cmdiframewnd-class.md) (for MDI applications). The **CMainFrame** class handles the creation of toolbar buttons and the status bar, if the corresponding options are selected in the application wizard's **Application Options** page (step 4 of 6). For information on using **CMainFrame**, see [The Frame-Window Classes Created by the Application Wizard](../mfc/frame-window-classes-created-by-the-application-wizard.md).|  
-|Childfrm.cpp, Childfrm.h|Derive the **CChildFrame** class from [CMDIChildWnd](../mfcref/cmdichildwnd-class.md). The **CChildFrame** class is used for MDI document frame windows. These files are always created if you select the MDI option.|  
+|Mainfrm.cpp, Mainfrm.h|Derive the **CMainFrame** class from either [CFrameWnd](../mfc/reference/cframewnd-class.md) (for SDI applications) or [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md) (for MDI applications). The **CMainFrame** class handles the creation of toolbar buttons and the status bar, if the corresponding options are selected in the application wizard's **Application Options** page (step 4 of 6). For information on using **CMainFrame**, see [The Frame-Window Classes Created by the Application Wizard](../mfc/frame-window-classes-created-by-the-application-wizard.md).|  
+|Childfrm.cpp, Childfrm.h|Derive the **CChildFrame** class from [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md). The **CChildFrame** class is used for MDI document frame windows. These files are always created if you select the MDI option.|  
   
 ## See Also  
- [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-c---projects.md)   
+ [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)   
  [ATL Program or Control Source and Header Files](../ide/atl-program-or-control-source-and-header-files.md)   
  [CLR Projects](../ide/files-created-for-clr-projects.md)

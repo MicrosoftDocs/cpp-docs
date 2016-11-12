@@ -1,13 +1,13 @@
 ---
-title: "Role of the View in Printing"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Role of the View in Printing | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "CView class, role in printing"
   - "printing views"
 ms.assetid: 8d4a3c8e-1fce-4edc-b608-94cb5f3e487e
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -42,7 +43,7 @@ Your view also plays two important roles in printing its associated document.
   
  The view:  
   
--   Uses the same [OnDraw](../Topic/CView::OnDraw.md) code to draw on the printer as to draw on the screen.  
+-   Uses the same [OnDraw](../mfc/reference/cview-class.md#ondraw) code to draw on the printer as to draw on the screen.  
   
 -   Manages dividing the document into pages for printing.  
   
@@ -50,3 +51,4 @@ Your view also plays two important roles in printing its associated document.
   
 ## See Also  
  [Using Views](../mfc/using-views.md)
+

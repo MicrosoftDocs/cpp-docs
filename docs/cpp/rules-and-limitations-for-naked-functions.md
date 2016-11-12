@@ -1,13 +1,13 @@
 ---
-title: "Rules and Limitations for Naked Functions"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Rules and Limitations for Naked Functions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "naked functions"
 ms.assetid: ff203858-2dd3-4a76-8a57-d0d06817adef
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -50,9 +51,9 @@ translation.priority.ht:
   
 -   You cannot declare C++ class objects at the function lexical scope. You can, however, declare objects in a nested block.  
   
--   The `naked` keyword is ignored when compiling with [/clr](../buildref/-clr--common-language-runtime-compilation-.md).  
+-   The `naked` keyword is ignored when compiling with [/clr](../build/reference/clr-common-language-runtime-compilation.md).  
   
--   For [__fastcall](../cpp/__fastcall.md) naked functions, whenever there is a reference in C/C++ code to one of the register arguments, the prolog code should store the values of that register into the stack location for that variable. For example:  
+-   For [__fastcall](../cpp/fastcall.md) naked functions, whenever there is a reference in C/C++ code to one of the register arguments, the prolog code should store the values of that register into the stack location for that variable. For example:  
   
 ```  
 // nkdfastcl.cpp  

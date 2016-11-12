@@ -1,13 +1,13 @@
 ---
-title: "Temporary Objects"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Temporary Objects | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "objects [C++], temporary"
 ms.assetid: 4c8cec02-391e-4225-9bc6-06d150201412
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -67,4 +68,4 @@ In some cases, it is necessary for the compiler to create temporary objects. The
 |Initializing `const` references|If an initializer is not an l-value of the same type as the reference being initialized, a temporary of the underlying object type is created and initialized with the initialization expression. This temporary object is destroyed immediately after the reference object to which it is bound is destroyed.|  
   
 ## See Also  
- [Special Member Functions](../notintoc/special-member-functions--c---.md)
+ [Special Member Functions](../misc/special-member-functions-cpp.md)

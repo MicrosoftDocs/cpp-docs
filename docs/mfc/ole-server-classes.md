@@ -1,13 +1,13 @@
 ---
-title: "OLE Server Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "OLE Server Classes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.classes.ole"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "COM components, classes"
   - "component classes"
 ms.assetid: 8e9b67a2-c0ff-479c-a8d6-19b36c5e6fc6
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -44,26 +45,27 @@ These classes are used by server applications. Server documents are derived from
   
  `COleIPFrameWnd` and `COleResizeBar` support in-place editing while the object is in a container, and `COleTemplateServer` supports creation of document/view pairs so OLE objects from other applications can be edited.  
   
- [COleServerDoc](../mfcref/coleserverdoc-class.md)  
+ [COleServerDoc](../mfc/reference/coleserverdoc-class.md)  
  Used as the base class for server-application document classes. `COleServerDoc` objects provide the bulk of server support through interactions with `COleServerItem` objects. Visual editing capability is provided using the class library's document/view architecture.  
   
- [CDocItem](../mfcref/cdocitem-class.md)  
+ [CDocItem](../mfc/reference/cdocitem-class.md)  
  Abstract base class of `COleClientItem` and `COleServerItem`. Objects of classes derived from `CDocItem` represent parts of documents.  
   
- [COleServerItem](../mfcref/coleserveritem-class.md)  
+ [COleServerItem](../mfc/reference/coleserveritem-class.md)  
  Used to represent the OLE interface to `COleServerDoc` items. There is usually one `COleServerDoc` object, which represents the embedded part of a document. In servers that support links to parts of documents, there can be many `COleServerItem` objects, each of which represents a link to a portion of the document.  
   
- [COleIPFrameWnd](../mfcref/coleipframewnd-class.md)  
+ [COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md)  
  Provides the frame window for a view when a server document is being edited in place.  
   
- [COleResizeBar](../mfcref/coleresizebar-class.md)  
+ [COleResizeBar](../mfc/reference/coleresizebar-class.md)  
  Provides the standard user interface for in-place resizing. Objects of this class are always used in conjunction with `COleIPFrameWnd` objects.  
   
- [COleTemplateServer](../mfcref/coletemplateserver-class.md)  
+ [COleTemplateServer](../mfc/reference/coletemplateserver-class.md)  
  Used to create documents using the framework's document/view architecture. A `COleTemplateServer` object delegates most of its work to an associated `CDocTemplate` object.  
   
- [COleException](../mfcref/coleexception-class.md)  
+ [COleException](../mfc/reference/coleexception-class.md)  
  An exception resulting from a failure in OLE processing. This class is used by both containers and servers.  
   
 ## See Also  
  [Class Overview](../mfc/class-library-overview.md)
+

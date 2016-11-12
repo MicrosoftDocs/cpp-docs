@@ -1,13 +1,13 @@
 ---
-title: "Active Document Servers"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Active Document Servers | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "servers [C++], active document"
   - "active document servers [C++]"
 ms.assetid: 131fec1e-02a0-4305-a7ab-903b911232a7
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -41,7 +42,7 @@ Active document servers such as Word, Excel, or PowerPoint host documents of oth
   
  MFC implements active document servers with document/view interfaces, command dispatch maps, printing, menu management, and registry management. Specific programming requirements are discussed in [active documents](../mfc/active-documents.md).  
   
- MFC supports active documents with the [CDocObjectServer](../mfcref/cdocobjectserver-class.md) class, derived from [CCmdTarget](../mfcref/ccmdtarget-class.md), and [CDocObjectServerItem](../mfcref/cdocobjectserveritem-class.md), derived from [COleServerItem](../mfcref/coleserveritem-class.md). MFC supports active document containers with the [COleDocObjectItem](../mfcref/coledocobjectitem-class.md) class, derived from [COleClientItem](../mfcref/coleclientitem-class.md).  
+ MFC supports active documents with the [CDocObjectServer](../mfc/reference/cdocobjectserver-class.md) class, derived from [CCmdTarget](../mfc/reference/ccmdtarget-class.md), and [CDocObjectServerItem](../mfc/reference/cdocobjectserveritem-class.md), derived from [COleServerItem](../mfc/reference/coleserveritem-class.md). MFC supports active document containers with the [COleDocObjectItem](../mfc/reference/coledocobjectitem-class.md) class, derived from [COleClientItem](../mfc/reference/coleclientitem-class.md).  
   
  `CDocObjectServer` maps the active document interfaces and initializes and activates an active document. MFC also provides macros to handle command routing in ACTIVE documents. To use active documents in your application, include AfxDocOb.h in your StdAfx.h file.  
   
@@ -51,3 +52,4 @@ Active document servers such as Word, Excel, or PowerPoint host documents of oth
   
 ## See Also  
  [Active Document Containment](../mfc/active-document-containment.md)
+

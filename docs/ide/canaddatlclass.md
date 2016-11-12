@@ -1,13 +1,13 @@
 ---
-title: "CanAddATLClass"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "CanAddATLClass | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "CanAddATLClass"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CanAddATLClass method"
 ms.assetid: 7a8abf90-c1b8-475c-af22-7948478084f9
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -60,7 +61,7 @@ Called by the wizard to verify that the user can add an ATL class to the project
 ## Remarks  
  Called by the wizard to verify if the project is compatible with the code wizard that is about to be run (in other words, it can accept an ATL class).  
   
- The wizard calls this function when the parameter PREPROCESS_FUNCTION is in the [project control's .vsz file](../ide/.vsz-file--project-control-.md) and checks if the [Visual C++ Code Model](assetId:///dd6452c2-1054-44a1-b0eb-639a94a1216b) is available. If the code model is not available, the function reports an error and returns **false**.  
+ The wizard calls this function when the parameter PREPROCESS_FUNCTION is in the [project control's .vsz file](../ide/dot-vsz-file-project-control.md) and checks if the [Visual C++ Code Model](http://msdn.microsoft.com/en-us/dd6452c2-1054-44a1-b0eb-639a94a1216b) is available. If the code model is not available, the function reports an error and returns **false**.  
   
 ## Example  
   
@@ -73,8 +74,8 @@ if (CanAddATLClass(selProj, selObj))
 ```  
   
 ## See Also  
- [Customizing C++ Wizards with Common JScript Functions](../ide/customizing-c---wizards-with-common-jscript-functions.md)   
- [JScript Functions for C++ Wizards](../ide/jscript-functions-for-c---wizards.md)   
+ [Customizing C++ Wizards with Common JScript Functions](../ide/customizing-cpp-wizards-with-common-jscript-functions.md)   
+ [JScript Functions for C++ Wizards](../ide/jscript-functions-for-cpp-wizards.md)   
  [Creating a Custom Wizard](../ide/creating-a-custom-wizard.md)   
  [Designing a Wizard](../ide/designing-a-wizard.md)   
  [CanAddClass](../ide/canaddclass.md)   

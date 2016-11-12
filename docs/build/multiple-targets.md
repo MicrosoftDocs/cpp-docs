@@ -1,13 +1,13 @@
 ---
-title: "Multiple Targets"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Multiple Targets | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "targets, multiple in NMAKE"
   - "NMAKE program, targets"
 ms.assetid: b609a179-0b9f-4b08-9930-998047588ae0
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -41,12 +42,19 @@ NMAKE evaluates multiple targets in a single dependency as if each were specifie
   
  For example, this...  
   
- **bounce.exe leap.exe : jump.obj**  
- **echo Building...** ...is evaluated as this:  
+```Output  
+bounce.exe leap.exe : jump.obj  
+   echo Building...  
+```  
   
- **bounce.exe : jump.obj**  
- **echo Building...**  
-**leap.exe : jump.obj**  
- **echo Building...**   
+ ...is evaluated as this:  
+  
+```Output  
+bounce.exe : jump.obj  
+   echo Building...  
+leap.exe : jump.obj  
+   echo Building...  
+```  
+  
 ## See Also  
  [Targets](../build/targets.md)

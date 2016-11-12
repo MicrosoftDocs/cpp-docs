@@ -1,13 +1,13 @@
 ---
-title: "Exception Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Exception Classes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.classes.exception"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "exception handling, exception classes"
   - "MFC, exceptions"
 ms.assetid: 1a2caf12-b3e9-4189-86d2-bf7a595bf025
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -41,38 +42,39 @@ The class library provides an exception-handling mechanism based on class `CExce
   
  MFC provides an exception class from which you can derive your own exception as well as exception classes for all of the exceptions it supports.  
   
- [CException](../mfcref/cexception-class.md)  
+ [CException](../mfc/reference/cexception-class.md)  
  The base class for exceptions.  
   
- [CArchiveException](../mfcref/carchiveexception-class.md)  
+ [CArchiveException](../mfc/reference/carchiveexception-class.md)  
  An archive exception.  
   
- [CDaoException](../mfcref/cdaoexception-class.md)  
+ [CDaoException](../mfc/reference/cdaoexception-class.md)  
  An exception resulting from a failure in a DAO database operation.  
   
- [CDBException](../mfcref/cdbexception-class.md)  
+ [CDBException](../mfc/reference/cdbexception-class.md)  
  An exception resulting from a failure in ODBC database processing.  
   
- [CFileException](../mfcref/cfileexception-class.md)  
+ [CFileException](../mfc/reference/cfileexception-class.md)  
  A file-oriented exception.  
   
- [CMemoryException](../mfcref/cmemoryexception-class.md)  
+ [CMemoryException](../mfc/reference/cmemoryexception-class.md)  
  An out-of-memory exception.  
   
- [CNotSupportedException](../mfcref/cnotsupportedexception-class.md)  
+ [CNotSupportedException](../mfc/reference/cnotsupportedexception-class.md)  
  An exception resulting from using an unsupported feature.  
   
- [COleException](../mfcref/coleexception-class.md)  
+ [COleException](../mfc/reference/coleexception-class.md)  
  An exception resulting from a failure in OLE processing. This class is used by both containers and servers.  
   
- [COleDispatchException](../mfcref/coledispatchexception-class.md)  
+ [COleDispatchException](../mfc/reference/coledispatchexception-class.md)  
  An exception resulting from an error during automation. Automation exceptions are thrown by automation servers and caught by automation clients.  
   
- [CResourceException](../mfcref/cresourceexception-class.md)  
+ [CResourceException](../mfc/reference/cresourceexception-class.md)  
  An exception resulting from a failure to load a Windows resource.  
   
- [CUserException](../mfcref/cuserexception-class.md)  
+ [CUserException](../mfc/reference/cuserexception-class.md)  
  An exception used to stop a user-initiated operation. Typically, the user has been notified of the problem before this exception is thrown.  
   
 ## See Also  
  [Class Overview](../mfc/class-library-overview.md)
+

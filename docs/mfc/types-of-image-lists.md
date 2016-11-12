@@ -1,13 +1,13 @@
 ---
-title: "Types of Image Lists"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Types of Image Lists | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "image lists [C++], types of"
   - "CImageList class, types"
 ms.assetid: bee5e7c3-78f5-4037-a136-9c50d67cdee5
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Types of Image Lists
-There are two types of image lists ([CImageList](../mfcref/cimagelist-class.md)): nonmasked and masked. A "nonmasked image list" consists of a color bitmap that contains one or more images. A "masked image list" consists of two bitmaps of equal size. The first is a color bitmap that contains the images, and the second is a monochrome bitmap that contains a series of masks — one for each image in the first bitmap.  
+There are two types of image lists ([CImageList](../mfc/reference/cimagelist-class.md)): nonmasked and masked. A "nonmasked image list" consists of a color bitmap that contains one or more images. A "masked image list" consists of two bitmaps of equal size. The first is a color bitmap that contains the images, and the second is a monochrome bitmap that contains a series of masks — one for each image in the first bitmap.  
   
  One of the overloads of the **Create** member function takes a flag to indicate whether or not the image list is masked. (The other overloads create masked image lists.)  
   
@@ -43,4 +44,5 @@ There are two types of image lists ([CImageList](../mfcref/cimagelist-class.md))
   
 ## See Also  
  [Using CImageList](../mfc/using-cimagelist.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

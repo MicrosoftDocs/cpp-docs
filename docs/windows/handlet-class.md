@@ -1,13 +1,13 @@
 ---
-title: "HandleT Class"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "HandleT Class | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "corewrappers/Microsoft::WRL::Wrappers::HandleT"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "HandleT class"
 ms.assetid: 3822b32a-a426-4d94-a54d-919d4df60ee2
 caps.latest.revision: 3
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -63,36 +64,36 @@ class HandleT;
   
 |Name|Description|  
 |----------|-----------------|  
-|[HandleT::HandleT Constructor](../windows/handlet--handlet-constructor.md)|Initializes a new instance of the HandleT class.|  
-|[HandleT::~HandleT Destructor](../windows/handlet--~handlet-destructor.md)|Deinitializes an instance of the HandleT class.|  
+|[HandleT::HandleT Constructor](../windows/handlet-handlet-constructor.md)|Initializes a new instance of the HandleT class.|  
+|[HandleT::~HandleT Destructor](../windows/handlet-tilde-handlet-destructor.md)|Deinitializes an instance of the HandleT class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[HandleT::Attach Method](../windows/handlet--attach-method.md)|Associates the specified handle with the current HandleT object.|  
-|[HandleT::Close Method](../windows/handlet--close-method.md)|Closes the current HandleT object.|  
-|[HandleT::Detach Method](../windows/handlet--detach-method.md)|Disassociates the current HandleT object from its underlying handle.|  
-|[HandleT::Get Method](../windows/handlet--get-method.md)|Gets the value of the underlying handle.|  
-|[HandleT::IsValid Method](../windows/handlet--isvalid-method.md)|Indicates whether the current HandleT object represents a handle.|  
+|[HandleT::Attach Method](../windows/handlet-attach-method.md)|Associates the specified handle with the current HandleT object.|  
+|[HandleT::Close Method](../windows/handlet-close-method.md)|Closes the current HandleT object.|  
+|[HandleT::Detach Method](../windows/handlet-detach-method.md)|Disassociates the current HandleT object from its underlying handle.|  
+|[HandleT::Get Method](../windows/handlet-get-method.md)|Gets the value of the underlying handle.|  
+|[HandleT::IsValid Method](../windows/handlet-isvalid-method.md)|Indicates whether the current HandleT object represents a handle.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[HandleT::InternalClose Method](../windows/handlet--internalclose-method.md)|Closes the current HandleT object.|  
+|[HandleT::InternalClose Method](../windows/handlet-internalclose-method.md)|Closes the current HandleT object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[HandleT::operator= Operator](../windows/handlet--operator=-operator.md)|Moves the value of the specified HandleT object to the current HandleT object.|  
+|[HandleT::operator= Operator](../windows/handlet-operator-assign-operator.md)|Moves the value of the specified HandleT object to the current HandleT object.|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[HandleT::handle_ Data Member](../windows/handlet--handle_-data-member.md)|Contains the handle that is represented by the HandleT object.|  
+|[HandleT::handle_ Data Member](../windows/handlet-handle-data-member.md)|Contains the handle that is represented by the HandleT object.|  
   
 ## Inheritance Hierarchy  
  `HandleT`  
@@ -103,4 +104,4 @@ class HandleT;
  **Namespace:** Microsoft::WRL::Wrappers  
   
 ## See Also  
- [Microsoft::WRL::Wrappers Namespace](../windows/microsoft--wrl--wrappers-namespace.md)
+ [Microsoft::WRL::Wrappers Namespace](../windows/microsoft-wrl-wrappers-namespace.md)

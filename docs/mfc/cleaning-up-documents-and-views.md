@@ -1,13 +1,13 @@
 ---
-title: "Cleaning Up Documents and Views"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Cleaning Up Documents and Views | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "documents, cleaning up"
   - "documents, closing"
 ms.assetid: 0c454db2-3644-434d-9e53-8108a7aedfe1
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Cleaning Up Documents and Views
-When a document is closing, the framework first calls its [DeleteContents](../Topic/CDocument::DeleteContents.md) member function. If you allocated any memory on the heap during the course of the document's operation, `DeleteContents` is the best place to deallocate it.  
+When a document is closing, the framework first calls its [DeleteContents](../mfc/reference/cdocument-class.md#deletecontents) member function. If you allocated any memory on the heap during the course of the document's operation, `DeleteContents` is the best place to deallocate it.  
   
 > [!NOTE]
 >  You should not deallocate document data in the document's destructor. In the case of an SDI application, the document object might be reused.  
@@ -44,3 +45,4 @@ When a document is closing, the framework first calls its [DeleteContents](../To
   
 ## See Also  
  [Initializing and Cleaning Up Documents and Views](../mfc/initializing-and-cleaning-up-documents-and-views.md)
+

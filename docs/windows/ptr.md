@@ -1,13 +1,13 @@
 ---
-title: "ptr"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "ptr | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "vc-attr.ptr"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "ptr attribute"
 ms.assetid: 95eaea57-a5be-45f6-a612-ba2c9bc4645a
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -68,5 +69,5 @@ Designates a pointer as a full pointer.
  [IDL Attributes](../windows/idl-attributes.md)   
  [Interface Attributes](../windows/interface-attributes.md)   
  [Method Attributes](../windows/method-attributes.md)   
- [Typedef, Enum, Union, and Struct Attributes](../windows/typedef--enum--union--and-struct-attributes.md)   
- [Attributes Samples](assetId:///558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
+ [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

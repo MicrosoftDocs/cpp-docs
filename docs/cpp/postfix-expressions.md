@@ -1,13 +1,13 @@
 ---
-title: "Postfix Expressions"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Postfix Expressions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "expressions [C++], postfix"
 ms.assetid: 7ac62a57-06df-422f-b012-a75b37d7cb9b
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -41,12 +42,12 @@ Postfix expressions consist of primary expressions or expressions in which postf
   
 |Operator Name|Operator Notation|  
 |-------------------|-----------------------|  
-|[Subscript operator](../cpp/subscript-operator-.md)|**[ ]**|  
-|[Function call operator](../cpp/function-call-operator----.md)|**( )**|  
-|[Explicit type conversion operator](../cpp/explicit-type-conversion-operator----.md)|*type-name* **( )**|  
-|[Member access operator](../cpp/member-access-operators--.-and---.md)|**.** or **–>**|  
-|[Postfix increment operator](../cpp/postfix-increment-and-decrement-operators-----and---.md)|`++`|  
-|[Postfix decrement operator](../cpp/postfix-increment-and-decrement-operators-----and---.md)|**––**|  
+|[Subscript operator](../cpp/subscript-operator.md)|**[ ]**|  
+|[Function call operator](../cpp/function-call-operator-parens.md)|**( )**|  
+|[Explicit type conversion operator](../cpp/explicit-type-conversion-operator-parens.md)|*type-name* **( )**|  
+|[Member access operator](../cpp/member-access-operators-dot-and.md)|**.** or **–>**|  
+|[Postfix increment operator](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|`++`|  
+|[Postfix decrement operator](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|**––**|  
   
  The following syntax describes possible postfix expressions:  
   
@@ -100,13 +101,13 @@ simple-type-name ( expression-list )
     Func( Temp_i );  
     ```  
   
-     Note that the initialization is performed as if using the equal-sign syntax instead of the parentheses syntax. A copy of `i` is made prior to passing the value to the function. (For more information, see [Initializers](../cpp/initializers.md) and [Conversions](../cpp/user-defined-type-conversions--c---.md), [Initialization Using Special Member Functions](assetId:///82223d73-64cb-4923-b678-78f9568ff3ca), and [Explicit Initialization](assetId:///c89724f8-ddd3-4d77-b86d-77fcd8bd8595).  
+     Note that the initialization is performed as if using the equal-sign syntax instead of the parentheses syntax. A copy of `i` is made prior to passing the value to the function. (For more information, see [Initializers](../cpp/initializers.md) and [Conversions](../cpp/user-defined-type-conversions-cpp.md), [Initialization Using Special Member Functions](http://msdn.microsoft.com/en-us/82223d73-64cb-4923-b678-78f9568ff3ca), and [Explicit Initialization](http://msdn.microsoft.com/en-us/c89724f8-ddd3-4d77-b86d-77fcd8bd8595).  
   
      Therefore, if the function prototype (declaration) calls for an argument of type **long**, and if the calling program supplies an actual argument of type `int`, the actual argument is promoted using a standard type conversion to type **long** (see [Standard Conversions](../cpp/standard-conversions.md)).  
   
      It is an error to supply an actual argument for which there is no standard or user-defined conversion to the type of the formal argument.  
   
-     For actual arguments of class type, the formal argument is initialized by calling the class's constructor. (See [Constructors](../cpp/constructors--c---.md) for more about these special class member functions.)  
+     For actual arguments of class type, the formal argument is initialized by calling the class's constructor. (See [Constructors](../cpp/constructors-cpp.md) for more about these special class member functions.)  
   
 -   The function call is executed.  
   
@@ -165,9 +166,9 @@ double& func2( double& d, const char *c ) {
   
 -   Any argument of class type is passed by value as a data structure; the copy is created by binary copying instead of by invoking the class's copy constructor (if one exists).  
   
- Ellipses, if used, must be declared last in the argument list. For more information about passing a variable number of arguments, see the discussion of [va_arg, va_start, and va_list](../crt/va_arg--va_copy--va_end--va_start.md) in the *Run-Time Library Reference*.  
+ Ellipses, if used, must be declared last in the argument list. For more information about passing a variable number of arguments, see the discussion of [va_arg, va_start, and va_list](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) in the *Run-Time Library Reference*.  
   
- For information on default arguments in CLR programming, see [Variable Argument Lists (...) (C++/CLI)](../windows/variable-argument-lists--...---c---cli-.md).  
+ For information on default arguments in CLR programming, see [Variable Argument Lists (...) (C++/CLI)](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md).  
   
  Default arguments enable you to specify the value an argument should assume if none is supplied in the function call. The following code fragment shows how default arguments work. For more information about restrictions on specifying default arguments, see [Default Arguments](../cpp/default-arguments.md).  
   

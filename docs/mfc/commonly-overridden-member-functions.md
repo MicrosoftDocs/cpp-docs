@@ -1,13 +1,13 @@
 ---
-title: "Commonly Overridden Member Functions"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Commonly Overridden Member Functions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "OnOK function"
   - "MFC dialog boxes, overriding member functions"
 ms.assetid: 78eb566c-e361-4c86-8db5-c7e2791b249a
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -49,7 +50,7 @@ The following table lists the most likely member functions to override in your `
 |`OnOK`|**BN_CLICKED** for button **IDOK**|Respond when the user clicks the OK button.|  
 |`OnCancel`|**BN_CLICKED** for button **IDCANCEL**|Respond when the user clicks the Cancel button.|  
   
- `OnInitDialog`, `OnOK`, and `OnCancel` are virtual functions. To override them, you declare an overriding function in your derived dialog class using the [Properties window](../Topic/Properties%20Window.md).  
+ `OnInitDialog`, `OnOK`, and `OnCancel` are virtual functions. To override them, you declare an overriding function in your derived dialog class using the [Properties window](/visual-studio/ide/reference/properties-window).  
   
  `OnInitDialog` is called just before the dialog box is displayed. You must call the default `OnInitDialog` handler from your override — usually as the first action in the handler. By default, `OnInitDialog` returns **TRUE** to indicate that the focus should be set to the first control in the dialog box.  
   
@@ -57,7 +58,7 @@ The following table lists the most likely member functions to override in your `
   
  `OnCancel` is usually overridden for modeless dialog boxes.  
   
- For more information about these member functions, see class [CDialog](../mfcref/cdialog-class.md) in the *MFC Reference* and the discussion on [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md).  
+ For more information about these member functions, see class [CDialog](../mfc/reference/cdialog-class.md) in the *MFC Reference* and the discussion on [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md).  
   
 ## See Also  
  [Dialog Boxes](../mfc/dialog-boxes.md)   

@@ -1,13 +1,13 @@
 ---
-title: "Writing a Multithreaded Win32 Program"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Writing a Multithreaded Win32 Program | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -25,7 +25,8 @@ helpviewer_keywords:
   - "threading [C++], thread stacks"
 ms.assetid: 1415f47d-417f-4f42-949b-946fb28aab0e
 caps.latest.revision: 8
-ms.author: "mithom"
+author: "mikeblome"
+ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
   - "cs-cz"
@@ -48,7 +49,7 @@ When you write a program with multiple threads, you must coordinate their behavi
 ##  <a name="_core_sharing_common_resources_between_threads"></a> Sharing Common Resources Between Threads  
   
 > [!NOTE]
->  For a similar discussion from the MFC point of view, see [Multithreading: Programming Tips](../parallel/multithreading--programming-tips.md) and [Multithreading: When to Use the Synchronization Classes](../parallel/multithreading--when-to-use-the-synchronization-classes.md).  
+>  For a similar discussion from the MFC point of view, see [Multithreading: Programming Tips](../parallel/multithreading-programming-tips.md) and [Multithreading: When to Use the Synchronization Classes](../parallel/multithreading-when-to-use-the-synchronization-classes.md).  
   
  Each thread has its own stack and its own copy of the CPU registers. Other resources, such as files, static data, and heap memory, are shared by all threads in the process. Threads using these common resources must be synchronized. Win32 provides several ways to synchronize resources, including semaphores, critical sections, events, and mutexes.  
   
@@ -78,7 +79,7 @@ ReleaseMutex( hIOMutex);
   
  Because each thread has its own stack, you can avoid potential collisions over data items by using as little static data as possible. Design your program to use automatic stack variables for all data that can be private to a thread. The only global variables in the Bounce.c program are either mutexes or variables that never change after they are initialized.  
   
- Win32 also provides Thread-Local Storage (TLS) to store per-thread data. For more information, see [Thread Local Storage (TLS)](../parallel/thread-local-storage--tls-.md).  
+ Win32 also provides Thread-Local Storage (TLS) to store per-thread data. For more information, see [Thread Local Storage (TLS)](../parallel/thread-local-storage-tls.md).  
   
 ## See Also  
  [Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)

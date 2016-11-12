@@ -1,18 +1,19 @@
 ---
-title: "Caller-Callee Saved Registers"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Caller-Callee Saved Registers | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 ms.assetid: 0533bd4b-d6bb-4ce1-8201-495e16870cbb
 caps.latest.revision: 8
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 

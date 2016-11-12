@@ -1,13 +1,13 @@
 ---
-title: "helpstringcontext"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "helpstringcontext | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "vc-attr.helpstringcontext"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "helpstringcontext attribute [C++]"
 ms.assetid: d4cd135e-d91c-4aa3-9353-8aeb096f52cf
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -90,5 +91,5 @@ __interface IMyI
  [Interface Attributes](../windows/interface-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
  [Method Attributes](../windows/method-attributes.md)   
- [module](../windows/module--c---.md)   
- [Attributes Samples](assetId:///558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [module](../windows/module-cpp.md)   
+ [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

@@ -1,13 +1,13 @@
 ---
-title: "Operator Overloading"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Operator Overloading | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "operator_cpp"
@@ -22,6 +22,7 @@ helpviewer_keywords:
   - "operator overloading"
 ms.assetid: 56ad4c4f-dd0c-45e0-adaa-08fe98cb1f8e
 caps.latest.revision: 13
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -115,15 +116,15 @@ type operator operator-symbol ( parameter-list )
   
 -   [Assignment](../cpp/assignment.md)  
   
--   [Function Call](../cpp/function-call--c---.md)  
+-   [Function Call](../cpp/function-call-cpp.md)  
   
 -   [Subscripting](../cpp/subscripting.md)  
   
 -   [Class-Member Access](../cpp/member-access.md)  
   
--   [Increment and Decrement](../cpp/increment-and-decrement-operator-overloading--c---.md).  
+-   [Increment and Decrement](../cpp/increment-and-decrement-operator-overloading-cpp.md).  
   
--   [User-Defined Type Conversions](../cpp/user-defined-type-conversions--c---.md)  
+-   [User-Defined Type Conversions](../cpp/user-defined-type-conversions-cpp.md)  
   
  The operators shown in the following table cannot be overloaded. The table includes the preprocessor symbols `#` and `##`.  
   
@@ -194,12 +195,12 @@ int main() {
   
 4.  [Assignment](../cpp/assignment.md)  
   
-5.  [Function Call](../cpp/function-call--c---.md)  
+5.  [Function Call](../cpp/function-call-cpp.md)  
   
 6.  [Subscripting](../cpp/subscripting.md)  
   
 7.  [Member Access](../cpp/member-access.md)  
   
 ## See Also  
- [C++ Operators](../notintoc/c---operators.md)   
- [Keywords](../cpp/keywords--c---.md)
+ [C++ Operators](../misc/cpp-operators.md)   
+ [Keywords](../cpp/keywords-cpp.md)

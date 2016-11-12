@@ -1,13 +1,13 @@
 ---
-title: "Testing Properties and Events with Test Container"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Testing Properties and Events with Test Container | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "ActiveX controls [C++], testing"
   - "properties [MFC], testing"
 ms.assetid: 626867cf-fe53-4c30-8973-55bb93ef3917
-caps.latest.revision: 11
+caps.latest.revision: 13
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,7 +44,7 @@ The Test Container application, shipped in Visual C++, is an ActiveX control con
   
 ### To access the ActiveX Control Test Container  
   
-1.  Build the [TSTCON Sample: ActiveX Control Test Container](../top/visual-c---samples.md).  
+1.  Build the [TSTCON Sample: ActiveX Control Test Container](../top/visual-cpp-samples.md).  
   
 ### To test your ActiveX control  
   
@@ -77,3 +78,4 @@ The Test Container application, shipped in Visual C++, is an ActiveX control con
 ## See Also  
  [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)   
  [How to: Debug an ActiveX Control](../Topic/How%20to:%20Debug%20an%20ActiveX%20Control.md)
+

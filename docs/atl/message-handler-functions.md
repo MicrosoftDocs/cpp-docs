@@ -1,13 +1,13 @@
 ---
-title: "Message Handler Functions"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Message Handler Functions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "NOFITY_HANDLER"
@@ -23,7 +23,8 @@ helpviewer_keywords:
   - "NOTIFY_HANDLER macro, message handler functions"
   - "ATL, message handlers"
 ms.assetid: 2007a8c5-0143-42f1-91ab-809f235f9d50
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -52,5 +53,6 @@ ATL provides three types of message handler functions:
   
 ## See Also  
  [Implementing a Window](../atl/implementing-a-window.md)   
- [Message Maps](../atl/message-maps--atl-.md)   
+ [Message Maps](../atl/message-maps-atl.md)   
  [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583)
+

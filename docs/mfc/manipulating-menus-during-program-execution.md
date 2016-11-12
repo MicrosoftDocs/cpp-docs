@@ -1,13 +1,13 @@
 ---
-title: "Manipulating Menus During Program Execution"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Manipulating Menus During Program Execution | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "menus, manipulating during execution"
   - "menus during execution"
 ms.assetid: 722c7c00-4be2-4967-877d-f96aaa604396
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,7 +40,8 @@ translation.priority.ht:
 # Manipulating Menus During Program Execution
 Use class `CMenu` to manipulate menus and menu items on the fly. `CMenu` encapsulates a Windows `HMENU` handle and supplies member functions for working with menus.  
   
- See the overview for class [CMenu](../mfcref/cmenu-class.md) for details.  
+ See the overview for class [CMenu](../mfc/reference/cmenu-class.md) for details.  
   
 ## See Also  
- [Menus](../mfc/menus--mfc-.md)
+ [Menus](../mfc/menus-mfc.md)
+

@@ -1,13 +1,13 @@
 ---
-title: "RuntimeClassType Enumeration"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "RuntimeClassType Enumeration | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "implements/Microsoft::WRL::RuntimeClassType"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "RuntimeClassType enumeration"
 ms.assetid: d380712d-672e-4ea9-b7c5-cf9fa7dbb770
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -54,7 +55,7 @@ enum RuntimeClassType;
 |`Delegate`|Equivalent to **ClassicCom**.|  
 |`InhibitFtmBase`|Disables `FtmBase` support while `__WRL_CONFIGURATION_LEGACY__` is not defined.|  
 |`InhibitWeakReference`|Disables weak reference support.|  
-|`WinRt`|A [!INCLUDE[wrt](../atl/includes/wrt_md.md)] class.|  
+|`WinRt`|A [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] class.|  
 |`WinRtClassicComMix`|A combination of `WinRt` and `ClassicCom`.|  
   
 ## Requirements  
@@ -63,4 +64,4 @@ enum RuntimeClassType;
  **Namespace:** Microsoft::WRL  
   
 ## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft--wrl-namespace.md)
+ [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

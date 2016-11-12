@@ -1,13 +1,13 @@
 ---
-title: "Remote Automation Connection Manager"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Remote Automation Connection Manager | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "Remote Automation, configuring client and server machines"
   - "RAC Manager tool"
 ms.assetid: 562eb7bc-f95c-46ad-ac97-f0dfa98362af
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,6 +44,7 @@ To configure both client and server machines, you need to make registry changes.
  RACMGR32 is written in Visual Basic and therefore needs some Visual Basic support DLLs. These files are placed in the same directory as RACMGR32.EXE on the CD-ROM. The versions of these files that are installed by the Setup for Visual C++ Enterprise Edition are equivalent or more recent than those that shipped with Visual Basic Enterprise Edition 5.0. The Visual C++ Setup copies the new versions of the Visual Basic files to your system directory. For Windows 9x, this directory is typically C:\Windows\System. For Windows NT and Windows 2000, it is typically C:\WINNT\system32. Setup also registers these files with the operating system. You may remove them from your Visual Basic installation.  
   
 ## See Also  
- [Automation Manager (MFC)](../mfc/automation-manager--mfc-.md)   
+ [Automation Manager (MFC)](../mfc/automation-manager-mfc.md)   
  [Remote Automation User Components](../mfc/remote-automation-user-components.md)   
  [Remote Automation Installation](../mfc/remote-automation-installation.md)
+

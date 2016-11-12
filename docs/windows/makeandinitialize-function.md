@@ -1,13 +1,13 @@
 ---
-title: "MakeAndInitialize Function"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "MakeAndInitialize Function | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "implements/Microsoft::WRL::Details::MakeAndInitialize"
@@ -15,6 +15,7 @@ dev_langs:
   - "C++"
 ms.assetid: 71ceeb12-d2a2-4317-b010-3dcde1b39467
 caps.latest.revision: 4
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -33,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # MakeAndInitialize Function
-Initializes the specified [!INCLUDE[wrt](../atl/includes/wrt_md.md)] class. Use this function to instantiate a component that is defined in the same module.  
+Initializes the specified [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] class. Use this function to instantiate a component that is defined in the same module.  
   
 ## Syntax  
   
@@ -112,7 +113,7 @@ typename TArg9> HRESULT MakeAndInitialize(_Outptr_result_nullonfailure_ I** ppv
  An `HRESULT` value.  
   
 ## Remarks  
- See [How to: Instantiate WRL Components Directly](../windows/how-to--instantiate-wrl-components-directly.md) to learn the differences between this function and [Microsoft::WRL::Make](../windows/make-function.md), and for an example.  
+ See [How to: Instantiate WRL Components Directly](../windows/how-to-instantiate-wrl-components-directly.md) to learn the differences between this function and [Microsoft::WRL::Make](../windows/make-function.md), and for an example.  
   
 ## Requirements  
  **Header:** implements.h  
@@ -120,4 +121,4 @@ typename TArg9> HRESULT MakeAndInitialize(_Outptr_result_nullonfailure_ I** ppv
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft--wrl--details-namespace.md)
+ [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

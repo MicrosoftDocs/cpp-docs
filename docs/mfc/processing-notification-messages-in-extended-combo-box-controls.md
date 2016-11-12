@@ -1,13 +1,13 @@
 ---
-title: "Processing Notification Messages in Extended Combo Box Controls"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Processing Notification Messages in Extended Combo Box Controls | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "extended combo boxes, notifications"
   - "notifications, extended combo box controls"
 ms.assetid: 4e442758-d054-4746-bb1a-6ff84accb127
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -54,4 +55,5 @@ As users interact with the extended combo box, the control (`CComboBoxEx`) sends
   
 ## See Also  
  [Using CComboBoxEx](../mfc/using-ccomboboxex.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

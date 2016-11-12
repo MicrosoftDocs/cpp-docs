@@ -1,13 +1,13 @@
 ---
-title: "Transfers of Control"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Transfers of Control | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "control flow, transferring control"
 ms.assetid: aa51e7f2-060f-4106-b0fe-331f04357423
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -73,4 +74,4 @@ int main()
  The objects `total` and `ch`, declared in the block that serves as the *statement* of the `while` statement, are destroyed when that block is exited using the `break` statement.  
   
 ## See Also  
- [(NOTINBUILD) Declaration of Automatic Objects](assetId:///81f941e9-c1b1-4d1c-a28d-70b6ee9765db)
+ [(NOTINBUILD) Declaration of Automatic Objects](http://msdn.microsoft.com/en-us/81f941e9-c1b1-4d1c-a28d-70b6ee9765db)

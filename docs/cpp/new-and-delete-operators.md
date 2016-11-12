@@ -1,13 +1,13 @@
 ---
-title: "new and delete Operators"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "new and delete Operators | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "delete_cpp"
@@ -22,6 +22,7 @@ helpviewer_keywords:
   - "delete keyword [C++], syntax"
 ms.assetid: fa721b9e-0374-4f04-bb87-032ea775bcc8
 caps.latest.revision: 16
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,7 +41,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # new and delete Operators
-C++ supports dynamic allocation and deallocation of objects using the [new](../cpp/new-operator--c---.md) and [delete](../cpp/delete-operator--c---.md) operators. These operators allocate memory for objects from a pool called the free store. The `new` operator calls the special function [operator new](../notintoc/operator-new-function.md), and the `delete` operator calls the special function [operator delete](../notintoc/operator-delete-function.md).  
+C++ supports dynamic allocation and deallocation of objects using the [new](../cpp/new-operator-cpp.md) and [delete](../cpp/delete-operator-cpp.md) operators. These operators allocate memory for objects from a pool called the free store. The `new` operator calls the special function [operator new](../misc/operator-new-function.md), and the `delete` operator calls the special function [operator delete](../misc/operator-delete-function.md).  
   
  In [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] .NET 2002, the `new` function in the Standard C++ Library will support the behavior specified in the C++ standard, which is to throw a std::bad_alloc exception if the memory allocation fails.  
   
@@ -48,7 +49,7 @@ C++ supports dynamic allocation and deallocation of objects using the [new](../c
   
  If you still want the non-throwing version of `new` for the C Runtime Library, link your program with nothrownew.obj.  However, when you link with nothrownew.obj, `new` in the Standard C++ Library will no longer function.  
   
- For a list of the library files that comprise the C Runtime Library and the Standard C++ Library, see [CRT Library Features](../crt/crt-library-features.md).  
+ For a list of the library files that comprise the C Runtime Library and the Standard C++ Library, see [CRT Library Features](../c-runtime-library/crt-library-features.md).  
   
 ## The new operator  
  When a statement such as the following is encountered in a program, it translates into a call to the function `operator new`:  
@@ -59,7 +60,7 @@ char *pch = new char[BUFFER_SIZE];
   
  If the request is for zero bytes of storage, **operator new** returns a pointer to a distinct object (that is, repeated calls to **operator new** return different pointers). If there is insufficient memory for the allocation request, **operator new** returns **NULL** or throws an exception (see [The new and delete Operators](../cpp/new-and-delete-operators.md) for more information).  
   
- You can write a routine that attempts to free memory and retry the allocation; see [_set_new_handler](../crt/_set_new_handler.md) for more information. For more details on the recovery scheme, see the following topic, [Handling Insufficient Memory Conditions](../notintoc/handling-insufficient-memory-conditions.md).  
+ You can write a routine that attempts to free memory and retry the allocation; see [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) for more information. For more details on the recovery scheme, see the following topic, [Handling Insufficient Memory Conditions](../misc/handling-insufficient-memory-conditions.md).  
   
  The two scopes for `operator new` functions are described in the following table.  
   
@@ -153,7 +154,7 @@ int main() {
 }  
 ```  
   
- There is another ways to handle failed memory allocation requests: write a custom recovery routine to handle such a failure, then register your function by calling the [_set_new_handler](../crt/_set_new_handler.md) run-time function.  
+ There is another ways to handle failed memory allocation requests: write a custom recovery routine to handle such a failure, then register your function by calling the [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) run-time function.  
   
 ## The delete operator  
  Memory that is dynamically allocated using the **new** operator can be freed using the **delete** operator. The delete operator calls the **operator delete** function, which frees memory back to the available pool. Using the **delete** operator also causes the class destructor (if there is one) to be called.  
@@ -171,7 +172,7 @@ void operator delete( void *, size_t );
   
  The intent of the second form is to speed up searching for the correct size category of the object to be deleted, which is often not stored near the allocation itself and likely uncached; the second form is particularly useful when an **operator delete** function from a base class is used to delete an object of a derived class.  
   
- The **operator delete** function is static; therefore, it cannot be virtual. The `operator delete` function obeys access control, as described in [Member-Access Control](../cpp/member-access-control--c---.md).  
+ The **operator delete** function is static; therefore, it cannot be virtual. The `operator delete` function obeys access control, as described in [Member-Access Control](../cpp/member-access-control-cpp.md).  
   
  The following example shows user-defined **operator new** and **operator delete** functions designed to log allocations and deallocations of memory:  
   
@@ -246,4 +247,4 @@ void f() {
 ```  
   
 ## See Also  
- [Special Member Functions](../notintoc/special-member-functions--c---.md)
+ [Special Member Functions](../misc/special-member-functions-cpp.md)

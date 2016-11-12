@@ -1,13 +1,13 @@
 ---
-title: "Tear-Off Interfaces Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Tear-Off Interfaces Classes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.atl.interfaces.tear-off"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "interfaces, tear-off"
   - "tear-off interfaces classes"
 ms.assetid: 14e4ab01-9213-43e5-bef5-78af1e6206ff
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,9 +39,10 @@ translation.priority.ht:
 # Tear-Off Interfaces Classes
 The following classes provide support for tear-off interfaces:  
   
--   [CComTearOffObject](../atl/ccomtearoffobject-class.md) Implements **IUnknown** for a tear-off interface.  
+-   [CComTearOffObject](../atl/reference/ccomtearoffobject-class.md) Implements **IUnknown** for a tear-off interface.  
   
--   [CComCachedTearOffObject](../atl/ccomcachedtearoffobject-class.md) Implements **IUnknown** for a "cached" tear-off interface.  
+-   [CComCachedTearOffObject](../atl/reference/ccomcachedtearoffobject-class.md) Implements **IUnknown** for a "cached" tear-off interface.  
   
 ## See Also  
  [Class Overview](../atl/atl-class-overview.md)
+

@@ -1,13 +1,13 @@
 ---
-title: "Initializing Extension DLLs"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Initializing Extension DLLs | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "extension DLLs [C++], initializing"
 ms.assetid: 08ad0381-3808-4bea-a93c-c9ba62496543
 caps.latest.revision: 10
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -91,9 +92,9 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 > [!NOTE]
 >  It is important that you neither define nor undefine any of the _AFX_NO_XXX macros in Stdafx.h. For more information, see the Knowledge Base article "PRB: Problems Occur When Defining _AFX_NO_XXX" (Q140751). You can find Knowledge Base articles in the MSDN Library or at [http://search.support.microsoft.com/](http://search.support.microsoft.com/).  
   
- A sample initialization function that handles multithreading is included in [Using Thread Local Storage in a Dynamic-Link Library](http://msdn.microsoft.com/library/windows/desktop/ms686997) in the [!INCLUDE[winsdkshort](../atl/includes/winsdkshort_md.md)]. Note that the sample contains an entry-point function called **LibMain**, but you should name this function `DllMain` so that it works with the MFC and C run-time libraries.  
+ A sample initialization function that handles multithreading is included in [Using Thread Local Storage in a Dynamic-Link Library](http://msdn.microsoft.com/library/windows/desktop/ms686997) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)]. Note that the sample contains an entry-point function called **LibMain**, but you should name this function `DllMain` so that it works with the MFC and C run-time libraries.  
   
- The MFC sample [DLLHUSK](assetId:///dfcaa6ff-b8e2-4efd-8100-ee3650071f90) demonstrates the use of initialization functions.  
+ The MFC sample [DLLHUSK](http://msdn.microsoft.com/en-us/dfcaa6ff-b8e2-4efd-8100-ee3650071f90) demonstrates the use of initialization functions.  
   
 ## What do you want to do?  
   
@@ -105,7 +106,7 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
   
 -   [The C run-time library behavior and _DllMainCRTStartup](../build/run-time-library-behavior.md)  
   
--   [Using Database, OLE, and Sockets Extension DLLs in Regular DLLs](../build/using-database--ole--and-sockets-extension-dlls-in-regular-dlls.md)  
+-   [Using Database, OLE, and Sockets Extension DLLs in Regular DLLs](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)  
   
 -   [The function specification for DllMain (Windows SDK)](http://msdn.microsoft.com/library/windows/desktop/ms682583)  
   

@@ -1,13 +1,13 @@
 ---
-title: "Regular DLLs Statically Linked to MFC"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Regular DLLs Statically Linked to MFC | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -20,6 +20,7 @@ helpviewer_keywords:
   - "regular DLLs [C++], statically linked to MFC"
 ms.assetid: 2eed531c-726a-4b8a-b936-f721dc00a7fa
 caps.latest.revision: 7
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Regular DLLs Statically Linked to MFC
-A regular DLL statically linked to MFC is a DLL that uses MFC internally, and the exported functions in the DLL can be called by either MFC or non-MFC executables. As the name describes, this kind of DLL is built using the static link library version of MFC. Functions are usually exported from a regular DLL using the standard C interface. For an example of how to write, build, and use a regular DLL, see the sample [DLLScreenCap](assetId:///2171291d-3a50-403b-90a1-d93c2acb4f4a).  
+A regular DLL statically linked to MFC is a DLL that uses MFC internally, and the exported functions in the DLL can be called by either MFC or non-MFC executables. As the name describes, this kind of DLL is built using the static link library version of MFC. Functions are usually exported from a regular DLL using the standard C interface. For an example of how to write, build, and use a regular DLL, see the sample [DLLScreenCap](http://msdn.microsoft.com/en-us/2171291d-3a50-403b-90a1-d93c2acb4f4a).  
   
  Note that the term USRDLL is no longer used in the Visual C++ documentation. A regular DLL that is statically linked to MFC has the same characteristics as the former USRDLL.  
   
@@ -90,15 +91,15 @@ extern "C" __declspec(dllexport) MyExportedFunction( );
   
 ## What do you want to know more about?  
   
--   [Using MFC as Part of a DLL](../mfc/tn011--using-mfc-as-part-of-a-dll.md)  
+-   [Using MFC as Part of a DLL](../mfc/tn011-using-mfc-as-part-of-a-dll.md)  
   
--   [Using Database, OLE, and Sockets Extension DLLs in Regular DLLs](../build/using-database--ole--and-sockets-extension-dlls-in-regular-dlls.md)  
+-   [Using Database, OLE, and Sockets Extension DLLs in Regular DLLs](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)  
   
--   [Creating an MFC DLL](../mfcref/mfc-dll-wizard.md)  
+-   [Creating an MFC DLL](../mfc/reference/mfc-dll-wizard.md)  
   
 -   [Regular DLLs Dynamically Linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
--   [Extension DLLs](../build/extension-dlls--overview.md)  
+-   [Extension DLLs](../build/extension-dlls-overview.md)  
   
 ## See Also  
  [Kinds of DLLs](../build/kinds-of-dlls.md)

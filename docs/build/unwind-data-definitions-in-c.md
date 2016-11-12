@@ -1,18 +1,19 @@
 ---
-title: "Unwind Data Definitions in C"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Unwind Data Definitions in C | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 ms.assetid: 93cb6430-e4cf-43f5-ab60-3b57d1273b2c
 caps.latest.revision: 8
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -98,4 +99,4 @@ typedef struct _RUNTIME_FUNCTION {
 ```  
   
 ## See Also  
- [Exception Handling (x64)](../build/exception-handling--x64-.md)
+ [Exception Handling (x64)](../build/exception-handling-x64.md)

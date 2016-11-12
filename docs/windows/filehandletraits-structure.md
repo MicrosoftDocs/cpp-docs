@@ -1,13 +1,13 @@
 ---
-title: "FileHandleTraits Structure"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "FileHandleTraits Structure | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::FileHandleTraits"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "FileHandleTraits structure"
 ms.assetid: e1107c42-2cd6-4253-9c16-8ecb35f05cd9
 caps.latest.revision: 3
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -57,4 +58,4 @@ struct FileHandleTraits : HANDLETraits;
  **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
   
 ## See Also  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft--wrl--wrappers--handletraits-namespace.md)
+ [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

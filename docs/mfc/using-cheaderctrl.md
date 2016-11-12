@@ -1,13 +1,13 @@
 ---
-title: "Using CHeaderCtrl"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Using CHeaderCtrl | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "CHeaderCtrl"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "header controls, using"
   - "CHeaderCtrl class"
 ms.assetid: fb3e512b-9539-43c4-a7e7-3fafd6d0706e
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -36,14 +37,14 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Using CHeaderCtrl
-Use a header control, represented by class [CHeaderCtrl](../mfcref/cheaderctrl-class.md), to display column headers for a columnar list. For example, a header control would be useful for implementing column controls in a spreadsheet.  
+Use a header control, represented by class [CHeaderCtrl](../mfc/reference/cheaderctrl-class.md), to display column headers for a columnar list. For example, a header control would be useful for implementing column controls in a spreadsheet.  
   
  The header control is usually divided into parts, called "header items," each bearing a title for the associated column of text or numbers. Depending on the styles you set, you can provide a number of direct ways for users to manipulate the header items.  
   
 > [!NOTE]
->  [CListCtrl](../mfcref/clistctrl-class.md) provides an embedded header control, and [CListView](../mfcref/clistview-class.md) encapsulates `CListCtrl` in an MFC class. In general, think of using `CHeaderCtrl` to label lists that you intend to draw yourself.  
+>  [CListCtrl](../mfc/reference/clistctrl-class.md) provides an embedded header control, and [CListView](../mfc/reference/clistview-class.md) encapsulates `CListCtrl` in an MFC class. In general, think of using `CHeaderCtrl` to label lists that you intend to draw yourself.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Header Control and List Control](../mfc/header-control-and-list-control.md)  
   
@@ -70,4 +71,5 @@ Use a header control, represented by class [CHeaderCtrl](../mfcref/cheaderctrl-c
 -   [Processing Header-Control Notifications](../mfc/processing-header-control-notifications.md)  
   
 ## See Also  
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

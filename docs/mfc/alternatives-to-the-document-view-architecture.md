@@ -1,13 +1,13 @@
 ---
-title: "Alternatives to the Document-View Architecture"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Alternatives to the Document-View Architecture | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "CDocument class, space requirements"
   - "views, applications without"
 ms.assetid: 2c22f352-a137-45ce-9971-c142173496fb
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -45,7 +46,7 @@ MFC applications normally use the document/view architecture to manage informati
   
 -   If your original code already mixes data management with data viewing, moving the code to the document/view model is not worth the effort because you must separate the two. You might prefer to leave the code as is.  
   
- To create an application that does not use the document/view architecture, clear the **Document/View architecture support** check box in step 1 of the MFC Application Wizard. See [MFC Application Wizard](../mfcref/mfc-application-wizard.md) for details.  
+ To create an application that does not use the document/view architecture, clear the **Document/View architecture support** check box in step 1 of the MFC Application Wizard. See [MFC Application Wizard](../mfc/reference/mfc-application-wizard.md) for details.  
   
 > [!NOTE]
 >  Dialog-based applications produced by the MFC Application Wizard do not use the document/view architecture, so the **Document/View architecture support** check box is disabled if you select the dialog application type.  
@@ -64,7 +65,7 @@ MFC applications normally use the document/view architecture to manage informati
   
  It is strongly recommended that you use the MFC Application Wizard to create applications without the document/view architecture, because the wizard guarantees a correct MFC architecture. However, if you must avoid using the wizard, here are several approaches for bypassing the document/view architecture in your code:  
   
--   Treat the document as an unused appendage and implement your data management code in the view class, as suggested above. Overhead for the document is relatively low. A single [CDocument](../mfcref/cdocument-class.md) object incurs a small amount of overhead by itself, plus the small overhead of **CDocument**'s base classes, [CCmdTarget](../mfcref/ccmdtarget-class.md) and [CObject](../mfcref/cobject-class.md). Both of the latter classes are small.  
+-   Treat the document as an unused appendage and implement your data management code in the view class, as suggested above. Overhead for the document is relatively low. A single [CDocument](../mfc/reference/cdocument-class.md) object incurs a small amount of overhead by itself, plus the small overhead of **CDocument**'s base classes, [CCmdTarget](../mfc/reference/ccmdtarget-class.md) and [CObject](../mfc/reference/cobject-class.md). Both of the latter classes are small.  
   
      Declared in **CDocument**:  
   
@@ -82,7 +83,8 @@ MFC applications normally use the document/view architecture to manage informati
   
 -   Override the parts of the MFC framework that create the document and view to eliminate creating them at all. The document creation process begins with a call to `CWinApp::AddDocTemplate`. Eliminate that call from your application class's `InitInstance` member function and, instead, create a frame window in `InitInstance` yourself. Put your data management code in your frame window class. The document/view creation process is illustrated in [Document/View Creation](../mfc/document-view-creation.md). This is more work and requires a deeper understanding of the framework, but it frees you entirely of the document/view overhead.  
   
- The article [MFC: Using Database Classes Without Documents and Views](../data/mfc--using-database-classes-without-documents-and-views.md) gives more concrete examples of document/view alternatives in the context of database applications.  
+ The article [MFC: Using Database Classes Without Documents and Views](../data/mfc-using-database-classes-without-documents-and-views.md) gives more concrete examples of document/view alternatives in the context of database applications.  
   
 ## See Also  
  [Document/View Architecture](../mfc/document-view-architecture.md)
+

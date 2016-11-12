@@ -1,13 +1,13 @@
 ---
-title: "Recommendations for Handling Input-Output"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Recommendations for Handling Input-Output | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "I/O [C++], options"
   - "I/O [C++], file-based options"
 ms.assetid: d664b175-3b4a-40c3-b14b-39de6b12e419
-caps.latest.revision: 8
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,11 +40,11 @@ translation.priority.ht:
 # Recommendations for Handling Input/Output
 Whether you use file-based I/O or not depends on how you respond to the questions in the following decision tree:  
   
- **Does the primary data in your application reside in a disk file?**  
+ **Does the primary data in your application reside in a disk file**  
   
 -   Yes, the primary data resides in a disk file:  
   
-     **Does the application read the whole file into memory on File Open and write the whole file back to disk on File Save?**  
+     **Does the application read the whole file into memory on File Open and write the whole file back to disk on File Save**  
   
     -   Yes: This is the default MFC document case. Use **CDocument** serialization.  
   
@@ -51,11 +52,11 @@ Whether you use file-based I/O or not depends on how you respond to the question
   
 -   No, the primary data doesn't reside in a disk file:  
   
-     **Does the data reside in an ODBC data source?**  
+     **Does the data reside in an ODBC data source**  
   
     -   Yes, the data resides in an ODBC data source:  
   
-         Use MFC's database support. The standard MFC implementation for this case includes a **CDocument** object that stores a `CDatabase` object, as discussed in the article [What Is the MFC Database Programming Model?](../data/what-is-the-mfc-database-programming-model-.md). The application might also read and write an auxiliary file — the purpose of the application wizard "both a database view and file support" option. In this case, you'd use serialization for the auxiliary file.  
+         Use MFC's database support. The standard MFC implementation for this case includes a **CDocument** object that stores a `CDatabase` object, as discussed in the article [What Is the MFC Database Programming Model]--brokenlink--(../Topic/What%20Is%20the%20MFC%20Database%20Programming%20Model.md). The application might also read and write an auxiliary file — the purpose of the application wizard "both a database view and file support" option. In this case, you'd use serialization for the auxiliary file.  
   
     -   No, the data doesn't reside in an ODBC data source.  
   
@@ -68,4 +69,4 @@ Whether you use file-based I/O or not depends on how you respond to the question
  For information about serialization, see [Serialization](../mfc/serialization-in-mfc.md).  
   
 ## See Also  
- [Serialization: Serialization vs. Database Input/Output](../mfc/serialization--serialization-vs.-database-input-output.md)
+ [Serialization: Serialization vs. Database Input/Output](../mfc/serialization-serialization-vs-database-input-output.md)

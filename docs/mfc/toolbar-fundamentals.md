@@ -1,13 +1,13 @@
 ---
-title: "Toolbar Fundamentals"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Toolbar Fundamentals | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "RT_TOOLBAR"
@@ -30,7 +30,8 @@ helpviewer_keywords:
   - "frame window classes, toolbar embedded in"
   - "LoadToolBar method"
 ms.assetid: cc00aaff-8a56-433b-b0c0-b857d76b4ffd
-caps.latest.revision: 10
+caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -67,29 +68,29 @@ This article describes the fundamental MFC implementation that lets you add a de
 -   Manages the toolbar, including its ability to dock or to float.  
   
 ##  <a name="_core_the_toolbar_in_code"></a> The Toolbar in Code  
- The toolbar is a [CToolBar](../mfcref/ctoolbar-class.md) object declared as a data member of your application's **CMainFrame** class. In other words, the toolbar object is embedded in the main frame window object. This means that MFC creates the toolbar when it creates the frame window and destroys the toolbar when it destroys the frame window. The following partial class declaration, for a multiple document interface (MDI) application, shows data members for an embedded toolbar and an embedded status bar. It also shows the override of the `OnCreate` member function.  
+ The toolbar is a [CToolBar](../mfc/reference/ctoolbar-class.md) object declared as a data member of your application's **CMainFrame** class. In other words, the toolbar object is embedded in the main frame window object. This means that MFC creates the toolbar when it creates the frame window and destroys the toolbar when it destroys the frame window. The following partial class declaration, for a multiple document interface (MDI) application, shows data members for an embedded toolbar and an embedded status bar. It also shows the override of the `OnCreate` member function.  
   
- [!code[NVC_MFCListView#6](../atl/codesnippet/CPP/toolbar-fundamentals_1.h)]  
+ [!code-cpp[NVC_MFCListView#6](../atl/reference/codesnippet/CPP/toolbar-fundamentals_1.h)]  
   
- Toolbar creation occurs in **CMainFrame::OnCreate**. MFC calls [OnCreate](../Topic/CWnd::OnCreate.md) after creating the window for the frame but before it becomes visible. The default `OnCreate` that the Application Wizard generates does the following toolbar tasks:  
+ Toolbar creation occurs in **CMainFrame::OnCreate**. MFC calls [OnCreate](../mfc/reference/cwnd-class.md#oncreate) after creating the window for the frame but before it becomes visible. The default `OnCreate` that the Application Wizard generates does the following toolbar tasks:  
   
-1.  Calls the `CToolBar` object's [Create](../Topic/CToolBar::Create.md) member function to create the underlying [CToolBarCtrl](../mfcref/ctoolbarctrl-class.md) object.  
+1.  Calls the `CToolBar` object's [Create](../mfc/reference/ctoolbar-class.md#create) member function to create the underlying [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) object.  
   
-2.  Calls [LoadToolBar](../Topic/CToolBar::LoadToolBar.md) to load the toolbar resource information.  
+2.  Calls [LoadToolBar](../mfc/reference/ctoolbar-class.md#loadtoolbar) to load the toolbar resource information.  
   
 3.  Calls functions to enable docking, floating, and tool tips. For details about these calls, see the article [Docking and Floating Toolbars](../mfc/docking-and-floating-toolbars.md).  
   
 > [!NOTE]
->  The MFC General sample [DOCKTOOL](../top/visual-c---samples.md) includes illustrations of both old and new MFC toolbars. The toolbars that use **COldToolbar** require calls in step 2 to `LoadBitmap` (rather than `LoadToolBar`) and to `SetButtons`. The new toolbars require calls to `LoadToolBar`.  
+>  The MFC General sample [DOCKTOOL](../top/visual-cpp-samples.md) includes illustrations of both old and new MFC toolbars. The toolbars that use **COldToolbar** require calls in step 2 to `LoadBitmap` (rather than `LoadToolBar`) and to `SetButtons`. The new toolbars require calls to `LoadToolBar`.  
   
  The docking, floating, and tool tips calls are optional. You can remove those lines from `OnCreate` if you prefer. The result is a toolbar that remains fixed, unable to float or redock and unable to display tool tips.  
   
 ##  <a name="_core_editing_the_toolbar_resource"></a> Editing the Toolbar Resource  
  The default toolbar you get with the Application Wizard is based on an **RT_TOOLBAR** custom resource, introduced in MFC version 4.0. You can edit this resource with the [toolbar editor](../mfc/toolbar-editor.md). The editor lets you easily add, delete, and rearrange buttons. It contains a graphical editor for the buttons that is very similar to the general graphics editor in Visual C++. If you edited toolbars in previous versions of Visual C++, you'll find the task much easier now.  
   
- To connect a toolbar button to a command, you give the button a command ID, such as `ID_MYCOMMAND`. Specify the command ID in the button's property page in the toolbar editor. Then create a handler function for the command (see [Mapping Messages to Functions](../mfcref/mapping-messages-to-functions.md) for more information).  
+ To connect a toolbar button to a command, you give the button a command ID, such as `ID_MYCOMMAND`. Specify the command ID in the button's property page in the toolbar editor. Then create a handler function for the command (see [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md) for more information).  
   
- New [CToolBar](../mfcref/ctoolbar-class.md) member functions work with the **RT_TOOLBAR** resource. [LoadToolBar](../Topic/CToolBar::LoadToolBar.md) now takes the place of [LoadBitmap](../Topic/CToolBar::LoadBitmap.md) to load the bitmap of the toolbar button images, and [SetButtons](../Topic/CToolBar::SetButtons.md) to set the button styles and connect buttons with bitmap images.  
+ New [CToolBar](../mfc/reference/ctoolbar-class.md) member functions work with the **RT_TOOLBAR** resource. [LoadToolBar](../mfc/reference/ctoolbar-class.md#loadtoolbar) now takes the place of [LoadBitmap](../mfc/reference/ctoolbar-class.md#loadbitmap) to load the bitmap of the toolbar button images, and [SetButtons](../mfc/reference/ctoolbar-class.md#setbuttons) to set the button styles and connect buttons with bitmap images.  
   
  For details about using the toolbar editor, see [Toolbar Editor](../mfc/toolbar-editor.md).  
   
@@ -98,13 +99,13 @@ This article describes the fundamental MFC implementation that lets you add a de
   
  If you want to display a toolbar as the result of a command, you'll need to:  
   
--   Create a new toolbar resource with the toolbar editor and load it in `OnCreate` with the [LoadToolbar](../Topic/CToolBar::LoadToolBar.md) member function.  
+-   Create a new toolbar resource with the toolbar editor and load it in `OnCreate` with the [LoadToolbar](../mfc/reference/ctoolbar-class.md#loadtoolbar) member function.  
   
--   Embed a new [CToolBar](../mfcref/ctoolbar-class.md) object in your main frame window class.  
+-   Embed a new [CToolBar](../mfc/reference/ctoolbar-class.md) object in your main frame window class.  
   
 -   Make the appropriate function calls in `OnCreate` to dock or float the toolbar, set its styles, and so on.  
   
-### What do you want to know more about?  
+### What do you want to know more about  
   
 -   [MFC Toolbar Implementation (overview information on toolbars)](../mfc/mfc-toolbar-implementation.md)  
   
@@ -112,7 +113,7 @@ This article describes the fundamental MFC implementation that lets you add a de
   
 -   [Toolbar tool tips](../mfc/toolbar-tool-tips.md)  
   
--   The [CToolBar](../mfcref/ctoolbar-class.md) and [CToolBarCtrl](../mfcref/ctoolbarctrl-class.md) classes  
+-   The [CToolBar](../mfc/reference/ctoolbar-class.md) and [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) classes  
   
 -   [Working with the toolbar control](../mfc/working-with-the-toolbar-control.md)  
   
@@ -120,3 +121,4 @@ This article describes the fundamental MFC implementation that lets you add a de
   
 ## See Also  
  [MFC Toolbar Implementation](../mfc/mfc-toolbar-implementation.md)
+

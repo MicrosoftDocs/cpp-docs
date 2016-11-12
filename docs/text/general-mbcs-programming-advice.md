@@ -1,13 +1,13 @@
 ---
-title: "General MBCS Programming Advice"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "General MBCS Programming Advice | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "_mbcs"
@@ -20,6 +20,7 @@ helpviewer_keywords:
   - "dialog boxes [C++], fonts"
 ms.assetid: 7b541235-f3e5-4af0-b2c2-a0112cd5fbfb
 caps.latest.revision: 9
+author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,7 +41,7 @@ translation.priority.ht:
 # General MBCS Programming Advice
 Use the following tips:  
   
--   For flexibility, use run-time macros such as `_tcschr` and `_tcscpy` when possible. For more information, see [Generic-Text Mappings in Tchar.h](../text/generic-text-mappings-in-tchar.h.md).  
+-   For flexibility, use run-time macros such as `_tcschr` and `_tcscpy` when possible. For more information, see [Generic-Text Mappings in Tchar.h](../text/generic-text-mappings-in-tchar-h.md).  
   
 -   Use the C run-time `_getmbcp` function to get information about the current code page.  
   

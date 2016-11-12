@@ -1,13 +1,13 @@
 ---
-title: "Argument Passing and Naming Conventions"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Argument Passing and Naming Conventions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -24,6 +24,7 @@ helpviewer_keywords:
   - "conventions [C++], argument names"
 ms.assetid: de468979-eab8-4158-90c5-c198932f93b9
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -55,18 +56,18 @@ translation.priority.ht:
   
  For information on how to define your own function prolog and epilog code, see [Naked Function Calls](../cpp/naked-function-calls.md).  
   
- For information about the default calling conventions in code that targets x64 platforms, see [Overview of x64 Calling Conventions](../build/overview-of-x64-calling-conventions.md). For information about calling convention issues in code that targets ARM platforms, see [Common Visual C++ ARM Migration Issues](../build/common-visual-c---arm-migration-issues.md).  
+ For information about the default calling conventions in code that targets x64 platforms, see [Overview of x64 Calling Conventions](../build/overview-of-x64-calling-conventions.md). For information about calling convention issues in code that targets ARM platforms, see [Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md).  
   
  The following calling conventions are supported by the Visual C/C++ compiler.  
   
 |Keyword|Stack cleanup|Parameter passing|  
 |-------------|-------------------|-----------------------|  
-|[__cdecl](../cpp/__cdecl.md)|Caller|Pushes parameters on the stack, in reverse order (right to left)|  
-|[__clrcall](../cpp/__clrcall.md)|n/a|Load parameters onto CLR expression stack in order (left to right).|  
-|[__stdcall](../cpp/__stdcall.md)|Callee|Pushes parameters on the stack, in reverse order (right to left)|  
-|[__fastcall](../cpp/__fastcall.md)|Callee|Stored in registers, then pushed on stack|  
-|[__thiscall](../cpp/__thiscall.md)|Callee|Pushed on stack; **this** pointer stored in ECX|  
-|[__vectorcall](../cpp/__vectorcall.md)|Callee|Stored in registers, then pushed on stack in reverse order (right to left)|  
+|[__cdecl](../cpp/cdecl.md)|Caller|Pushes parameters on the stack, in reverse order (right to left)|  
+|[__clrcall](../cpp/clrcall.md)|n/a|Load parameters onto CLR expression stack in order (left to right).|  
+|[__stdcall](../cpp/stdcall.md)|Callee|Pushes parameters on the stack, in reverse order (right to left)|  
+|[__fastcall](../cpp/fastcall.md)|Callee|Stored in registers, then pushed on stack|  
+|[__thiscall](../cpp/thiscall.md)|Callee|Pushed on stack; **this** pointer stored in ECX|  
+|[__vectorcall](../cpp/vectorcall.md)|Callee|Stored in registers, then pushed on stack in reverse order (right to left)|  
   
  For related information, see [Obsolete Calling Conventions](../cpp/obsolete-calling-conventions.md).  
   

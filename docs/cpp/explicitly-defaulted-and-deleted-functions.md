@@ -1,18 +1,19 @@
 ---
-title: "Explicitly Defaulted and Deleted Functions"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Explicitly Defaulted and Deleted Functions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
 ms.assetid: 5a588478-fda2-4b3f-a279-db3967f5e07e
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -131,7 +132,7 @@ inline widget& widget::operator=(const widget&) =default;
  Because of the performance benefits of trivial special member functions, we recommend that you prefer automatically generated special member functions over empty function bodies when you want the default behavior. You can do this either by explicitly defaulting the special member function, or by not declaring it (and also not declaring other special member functions that would prevent it from being automatically generated.)  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../build/includes/vsprvs_md.md)] does not support defaulted move constructors or move-assignment operators as the C++11 standard mandates. For more information, see the Defaulted and Deleted functions section of [Support For C++11/14/17 Features (Modern C++)](../cpp/support-for-c--11-14-17-features--modern-c---.md).  
+>  [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] does not support defaulted move constructors or move-assignment operators as the C++11 standard mandates. For more information, see the Defaulted and Deleted functions section of [Support For C++11/14/17 Features (Modern C++)](../cpp/support-for-cpp11-14-17-features-modern-cpp.md).  
   
 ## Deleted functions  
  You can delete special member functions as well as normal member functions and non-member functions to prevent them from being defined or called. Deleting of special member functions provides a cleaner way of preventing the compiler from generating special member functions that you don’t want. The function must be deleted as it is declared; it cannot be deleted afterwards in the way that a function can be declared and then later defaulted.  

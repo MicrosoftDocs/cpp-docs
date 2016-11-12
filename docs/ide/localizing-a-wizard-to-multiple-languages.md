@@ -1,13 +1,13 @@
 ---
-title: "Localizing a Wizard to Multiple Languages"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Localizing a Wizard to Multiple Languages | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "custom wizards, localizing"
 ms.assetid: 879885c2-fafd-44fd-8032-bf0c301f4f45
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -95,4 +96,4 @@ MyWizard1
  [Custom Wizard](../ide/custom-wizard.md)   
  [Creating a Custom Wizard](../ide/creating-a-custom-wizard.md)   
  [Designing a Wizard](../ide/designing-a-wizard.md)   
- [Custom Parameters in the Wizard .Vsz File](../ide/custom-parameters-in-the-wizard-.vsz-file.md)
+ [Custom Parameters in the Wizard .Vsz File](../ide/custom-parameters-in-the-wizard-dot-vsz-file.md)

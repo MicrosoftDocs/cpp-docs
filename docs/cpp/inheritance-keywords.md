@@ -1,13 +1,13 @@
 ---
-title: "Inheritance Keywords"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Inheritance Keywords | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "__multiple_inheritance"
@@ -29,6 +29,7 @@ helpviewer_keywords:
   - "inheritance, keywords"
 ms.assetid: bb810f56-7720-4fea-b8b6-9499edd141df
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -70,9 +71,9 @@ int S::*p;
   
 -   In the IDE under **Pointer-to-member representation**  
   
--   At the command line using the [/vmg](../buildref/-vmb---vmg--representation-method-.md) switch  
+-   At the command line using the [/vmg](../build/reference/vmb-vmg-representation-method.md) switch  
   
--   Using the [pointers_to_members](../c/pointers_to_members.md) pragma  
+-   Using the [pointers_to_members](../preprocessor/pointers-to-members.md) pragma  
   
 -   Using the inheritance keywords `__single_inheritance`, `__multiple_inheritance`, and `__virtual_inheritance`. This technique controls the inheritance model on a per-class basis.  
   
@@ -96,4 +97,4 @@ int S::*p;
  **END Microsoft Specific**  
   
 ## See Also  
- [Keywords](../cpp/keywords--c---.md)
+ [Keywords](../cpp/keywords-cpp.md)

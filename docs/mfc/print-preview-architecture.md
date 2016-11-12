@@ -1,13 +1,13 @@
 ---
-title: "Print Preview Architecture"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Print Preview Architecture | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "printing [MFC], print preview"
   - "print preview, modifications to MFC"
 ms.assetid: 0efc87e6-ff8d-43c5-9d72-9b729a169115
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,14 +44,14 @@ This article explains how the MFC framework implements print preview functionali
   
 -   [Modifying print preview](#_core_modifying_print_preview)  
   
- Print preview is somewhat different from screen display and printing because, instead of directly drawing an image on a device, the application must simulate the printer using the screen. To accommodate this, the Microsoft Foundation Class Library defines a special (undocumented) class derived from [CDC Class](../mfcref/cdc-class.md), called **CPreviewDC**. All `CDC` objects contain two device contexts, but usually they are identical. In a **CPreviewDC** object, they are different: the first represents the printer being simulated, and the second represents the screen on which output is actually displayed.  
+ Print preview is somewhat different from screen display and printing because, instead of directly drawing an image on a device, the application must simulate the printer using the screen. To accommodate this, the Microsoft Foundation Class Library defines a special (undocumented) class derived from [CDC Class](../mfc/reference/cdc-class.md), called **CPreviewDC**. All `CDC` objects contain two device contexts, but usually they are identical. In a **CPreviewDC** object, they are different: the first represents the printer being simulated, and the second represents the screen on which output is actually displayed.  
   
 ##  <a name="_core_the_print_preview_process"></a> The Print Preview Process  
  When the user selects the Print Preview command from the **File** menu, the framework creates a **CPreviewDC** object. Whenever your application performs an operation that sets a characteristic of the printer device context, the framework also performs a similar operation on the screen device context. For example, if your application selects a font for printing, the framework selects a font for screen display that simulates the printer font. Whenever your application would send output to the printer, the framework instead sends the output to the screen.  
   
  Print preview also differs from printing in the order that each draws the pages of a document. During printing, the framework continues a print loop until a certain range of pages has been rendered. During print preview, one or two pages are displayed at any time, and then the application waits; no further pages are displayed until the user responds. During print preview, the application must also respond to `WM_PAINT` messages, just as it does during ordinary screen display.  
   
- The [CView::OnPreparePrinting](../Topic/CView::OnPreparePrinting.md) function is called when preview mode is invoked, just as it is at the beginning of a print job. The [CPrintInfo Structure](../mfcref/cprintinfo-structure.md) structure passed to the function contains several members whose values you can set to adjust certain characteristics of the print preview operation. For example, you can set the **m_nNumPreviewPages** member to specify whether you want to preview the document in one-page or two-page mode.  
+ The [CView::OnPreparePrinting](../mfc/reference/cview-class.md#cview__onprepareprinting) function is called when preview mode is invoked, just as it is at the beginning of a print job. The [CPrintInfo Structure](../mfc/reference/cprintinfo-structure.md) structure passed to the function contains several members whose values you can set to adjust certain characteristics of the print preview operation. For example, you can set the **m_nNumPreviewPages** member to specify whether you want to preview the document in one-page or two-page mode.  
   
 ##  <a name="_core_modifying_print_preview"></a> Modifying Print Preview  
  You can modify the behavior and appearance of print preview in a number of ways rather easily. For example, you can, among other things:  
@@ -71,10 +72,10 @@ This article explains how the MFC framework implements print preview functionali
   
  Sometimes you may want `OnPreparePrinting` to perform different initialization depending on whether it is called for a print job or for print preview. You can determine this by examining the **m_bPreview** member variable in the `CPrintInfo` structure. This member is set to **TRUE** when print preview is invoked.  
   
- The `CPrintInfo` structure also contains a member named **m_strPageDesc**, which is used to format the strings displayed at the bottom of the screen in single-page and multiple-page modes. By default these strings are of the form "Page *n*" and "Pages *n* - *m*," but you can modify **m_strPageDesc** from within `OnPreparePrinting` and set the strings to something more elaborate. See [CPrintInfo Structure](../mfcref/cprintinfo-structure.md) in the *MFC Reference* for more information.  
+ The `CPrintInfo` structure also contains a member named **m_strPageDesc**, which is used to format the strings displayed at the bottom of the screen in single-page and multiple-page modes. By default these strings are of the form "Page *n*" and "Pages *n* - *m*," but you can modify **m_strPageDesc** from within `OnPreparePrinting` and set the strings to something more elaborate. See [CPrintInfo Structure](../mfc/reference/cprintinfo-structure.md) in the *MFC Reference* for more information.  
   
 ## See Also  
  [Printing and Print Preview](../mfc/printing-and-print-preview.md)   
  [Printing](../mfc/printing.md)   
- [CView Class](../mfcref/cview-class.md)   
- [CDC Class](../mfcref/cdc-class.md)
+ [CView Class](../mfc/reference/cview-class.md)   
+ [CDC Class](../mfc/reference/cdc-class.md)

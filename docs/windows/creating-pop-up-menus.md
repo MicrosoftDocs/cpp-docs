@@ -1,13 +1,13 @@
 ---
-title: "Creating Pop-up Menus"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Creating Pop-up Menus | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -20,6 +20,7 @@ helpviewer_keywords:
   - "pop-up menus, displaying"
 ms.assetid: dff4dddf-2e8d-4c34-b755-90baae426b58
 caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,7 +40,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Creating Pop-up Menus
-[Pop-up menus](../mfc/menus--mfc-.md) display frequently used commands. They can be context sensitive to the location of the pointer. Using pop-up menus in your application requires building the menu itself and then connecting it to application code.  
+[Pop-up menus](../mfc/menus-mfc.md) display frequently used commands. They can be context sensitive to the location of the pointer. Using pop-up menus in your application requires building the menu itself and then connecting it to application code.  
   
  Once you have created the menu resource, your application code needs to load the menu resource and use [TrackPopupMenu](http://msdn.microsoft.com/library/windows/desktop/ms648002) to cause the menu to appear. Once the user has dismissed the pop-up menu by clicking outside it, or has clicked on a command, that function will return. If the user chooses a command, that command message will be sent to the window whose handle was passed.  
   

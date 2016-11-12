@@ -1,13 +1,13 @@
 ---
-title: "Advantages of the Document-View Architecture"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Advantages of the Document-View Architecture | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "views, advantages"
   - "document/view architecture, advantages of"
 ms.assetid: 0bc27071-e120-4889-939c-ce1e61fb9cb3
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -44,17 +45,18 @@ The key advantage to using the MFC document/view architecture is that the archit
   
  This scenario would be difficult to code without the separation of data from view, particularly if the views stored the data themselves. With document/view, it's easy. The framework does most of the coordination work for you.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Alternatives to document/view](../mfc/alternatives-to-the-document-view-architecture.md)  
   
--   [CDocument](../mfcref/cdocument-class.md)  
+-   [CDocument](../mfc/reference/cdocument-class.md)  
   
--   [CView](../mfcref/cview-class.md)  
+-   [CView](../mfc/reference/cview-class.md)  
   
--   [CDocument::UpdateAllViews](../Topic/CDocument::UpdateAllViews.md)  
+-   [CDocument::UpdateAllViews](../mfc/reference/cdocument-class.md#cdocument__updateallviews)  
   
--   [CView::GetDocument](../Topic/CView::GetDocument.md)  
+-   [CView::GetDocument](../mfc/reference/cview-class.md#cview__getdocument)  
   
 ## See Also  
  [Document/View Architecture](../mfc/document-view-architecture.md)
+

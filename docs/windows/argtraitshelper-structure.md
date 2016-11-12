@@ -1,13 +1,13 @@
 ---
-title: "ArgTraitsHelper Structure"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "ArgTraitsHelper Structure | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "event/Microsoft::WRL::Details::ArgTraitsHelper"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "ArgTraitsHelper structure"
 ms.assetid: e3f798da-0aef-4a57-95d3-d38c34c47d72
 caps.latest.revision: 5
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -67,7 +68,7 @@ struct ArgTraitsHelper;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ArgTraitsHelper::args Constant](../windows/argtraitshelper--args-constant.md)|Helps [ArgTraits::args](../windows/argtraits--args-constant.md) keep count of the number of parameters on the Invoke method of a delegate interface.|  
+|[ArgTraitsHelper::args Constant](../windows/argtraitshelper-args-constant.md)|Helps [ArgTraits::args](../windows/argtraits-args-constant.md) keep count of the number of parameters on the Invoke method of a delegate interface.|  
   
 ## Inheritance Hierarchy  
  `ArgTraitsHelper`  
@@ -78,4 +79,4 @@ struct ArgTraitsHelper;
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft--wrl--details-namespace.md)
+ [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

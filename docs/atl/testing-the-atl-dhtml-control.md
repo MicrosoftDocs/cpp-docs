@@ -1,13 +1,13 @@
 ---
-title: "Testing the ATL DHTML Control"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Testing the ATL DHTML Control | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "DHTML controls"
   - "DHTML controls, testing"
 ms.assetid: 0e4b4358-80ce-4505-8b06-ef4f30b1d1f0
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -58,3 +59,4 @@ Once you have created your project, you can build and test the sample control. B
   
 ## See Also  
  [Support for DHTML Control](../atl/atl-support-for-dhtml-controls.md)
+

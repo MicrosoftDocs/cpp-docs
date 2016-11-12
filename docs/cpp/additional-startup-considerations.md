@@ -1,13 +1,13 @@
 ---
-title: "Additional Startup Considerations"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Additional Startup Considerations | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "initializing before main"
 ms.assetid: 0e942aa6-8342-447c-b068-8980ed7622bd
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Additional Startup Considerations
-In C++, object construction and destruction can involve executing user code. Therefore, it is important to understand which initializations happen before entry to **main** and which destructors are invoked after exit from **main**. (For detailed information about construction and destruction of objects, see [Constructors](../cpp/constructors--c---.md) and [Destructors](../cpp/destructors--c---.md).)  
+In C++, object construction and destruction can involve executing user code. Therefore, it is important to understand which initializations happen before entry to **main** and which destructors are invoked after exit from **main**. (For detailed information about construction and destruction of objects, see [Constructors](../cpp/constructors-cpp.md) and [Destructors](../cpp/destructors-cpp.md).)  
   
  The following initializations take place prior to entry to **main**:  
   
@@ -52,4 +53,4 @@ In C++, object construction and destruction can involve executing user code. The
  Global static objects that are mutually interdependent but in different translation units may cause incorrect behavior.  
   
 ## See Also  
- [Startup and Termination](../cpp/startup-and-termination--c---.md)
+ [Startup and Termination](../cpp/startup-and-termination-cpp.md)

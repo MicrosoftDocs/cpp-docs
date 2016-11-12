@@ -1,13 +1,13 @@
 ---
-title: "ATL Collection Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "ATL Collection Classes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -21,7 +21,8 @@ helpviewer_keywords:
   - "CTraits classes"
   - "collection classes"
 ms.assetid: 4d619d46-5b4e-41dd-b9fd-e86b1fbc00b5
-caps.latest.revision: 12
+caps.latest.revision: 14
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -57,19 +58,19 @@ ATL provides many classes for storing and accessing data. Which class you decide
   
 |Class|Type of data storage|  
 |-----------|--------------------------|  
-|[CSimpleArray](../atl/csimplearray-class.md)|Implements an array class for dealing with small numbers of objects.|  
-|[CSimpleMap](../atl/csimplemap-class.md)|Implements a mapping class for dealing with small numbers of objects.|  
+|[CSimpleArray](../atl/reference/csimplearray-class.md)|Implements an array class for dealing with small numbers of objects.|  
+|[CSimpleMap](../atl/reference/csimplemap-class.md)|Implements a mapping class for dealing with small numbers of objects.|  
   
 ## General Purpose Collection Classes  
  The follow classes implement arrays, lists, and maps and are provided as general purpose collection classes:  
   
 |Class|Type of data storage|  
 |-----------|--------------------------|  
-|[CAtlArray](../atl/catlarray-class.md)|Implements an array.|  
-|[CAtlList](../atl/catllist-class.md)|Implements a list.|  
-|[CAtlMap](../atl/catlmap-class.md)|Implements a mapping structure, whereby data can be referenced by key or value.|  
-|[CRBMap](../atl/crbmap-class.md)|Implements a mapping structure using the Red-Black algorithm.|  
-|[CRBMultiMap](../atl/crbmultimap-class.md)|Implements a Red-Black multimapping structure.|  
+|[CAtlArray](../atl/reference/catlarray-class.md)|Implements an array.|  
+|[CAtlList](../atl/reference/catllist-class.md)|Implements a list.|  
+|[CAtlMap](../atl/reference/catlmap-class.md)|Implements a mapping structure, whereby data can be referenced by key or value.|  
+|[CRBMap](../atl/reference/crbmap-class.md)|Implements a mapping structure using the Red-Black algorithm.|  
+|[CRBMultiMap](../atl/reference/crbmultimap-class.md)|Implements a Red-Black multimapping structure.|  
   
  These classes will trap many programming errors when used in debug builds, but for sake of performance, these checks will not be performed in retail builds.  
   
@@ -78,12 +79,12 @@ ATL provides many classes for storing and accessing data. Which class you decide
   
 |Class|Purpose|  
 |-----------|-------------|  
-|[CAutoPtrArray](../atl/cautoptrarray-class.md)|Provides methods useful when constructing an array of smart pointers.|  
-|[CAutoPtrList](../atl/cautoptrlist-class.md)|Provides methods useful when constructing a list of smart pointers.|  
-|[CComUnkArray](../atl/ccomunkarray-class.md)|Stores `IUnknown` pointers and is designed to be used as a parameter to the [IConnectionPointImpl](../atl/iconnectionpointimpl-class.md) template class.|  
-|[CHeapPtrList](../atl/cheapptrlist-class.md)|Provides methods useful when constructing a list of heap pointers.|  
-|[CInterfaceArray](../atl/cinterfacearray-class.md)|Provides methods useful when constructing an array of COM interface pointers.|  
-|[CInterfaceList](../atl/cinterfacelist-class.md)|Provides methods useful when constructing a list of COM interface pointers.|  
+|[CAutoPtrArray](../atl/reference/cautoptrarray-class.md)|Provides methods useful when constructing an array of smart pointers.|  
+|[CAutoPtrList](../atl/reference/cautoptrlist-class.md)|Provides methods useful when constructing a list of smart pointers.|  
+|[CComUnkArray](../atl/reference/ccomunkarray-class.md)|Stores `IUnknown` pointers and is designed to be used as a parameter to the [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md) template class.|  
+|[CHeapPtrList](../atl/reference/cheapptrlist-class.md)|Provides methods useful when constructing a list of heap pointers.|  
+|[CInterfaceArray](../atl/reference/cinterfacearray-class.md)|Provides methods useful when constructing an array of COM interface pointers.|  
+|[CInterfaceList](../atl/reference/cinterfacelist-class.md)|Provides methods useful when constructing a list of COM interface pointers.|  
   
 ## Choosing a Collection Class  
  Each of the available collection classes offers different performance characteristics, as shown in the table below.  
@@ -98,7 +99,7 @@ ATL provides many classes for storing and accessing data. Which class you decide
   
 ### Collection Shape Features  
   
-|Shape|Ordered?|Indexed?|Insert an<br /><br /> element|Search for<br /><br /> specified element|Duplicate<br /><br /> elements?|  
+|Shape|Ordered|Indexed|Insert an<br /><br /> element|Search for<br /><br /> specified element|Duplicate<br /><br /> elements|  
 |-----------|--------------|--------------|---------------------------|--------------------------------------|-----------------------------|  
 |List|Yes|No|Fast (constant time)|Slow O(n)|Yes|  
 |Array|Yes|By int (constant time)|Slow O(n) except if inserting at end, in which case constant time|Slow O(n)|Yes|  
@@ -109,14 +110,14 @@ ATL provides many classes for storing and accessing data. Which class you decide
 ## Using CTraits Objects  
  As the ATL collection classes can be used to store a wide range of user-defined data types, it can be useful to be able to override important functions such as comparisons. This is achieved using the CTraits classes.  
   
- CTraits classes are similar to, but more flexible than, the MFC collection class helper functions; see [Collection Class Helpers](../mfcref/collection-class-helpers.md) for more information.  
+ CTraits classes are similar to, but more flexible than, the MFC collection class helper functions; see [Collection Class Helpers](../mfc/reference/collection-class-helpers.md) for more information.  
   
  When constructing your collection class, you have the option of specifying a CTraits class. This class will contain the code that will perform operations such as comparisons when called by the other methods that make up the collection class. For example, if your list object contains your own user-defined structures, you may want to redefine the equality test to only compare certain member variables. In this way, the list object's Find method will operate in a more useful manner.  
   
 ## Example  
   
 ### Code  
- [!code[NVC_ATL_Utilities#112](../atl/codesnippet/CPP/atl-collection-classes_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#112](../atl/codesnippet/CPP/atl-collection-classes_1.cpp)]  
   
 ## Comments  
  For a list of the CTraits classes, see [Collection Classes](../atl/collection-classes.md).  
@@ -128,14 +129,15 @@ ATL provides many classes for storing and accessing data. Which class you decide
 ## Collection Classes Samples  
  The following samples demonstrate the collection classes:  
   
--   [MMXSwarm Sample](../top/visual-c---samples.md)  
+-   [MMXSwarm Sample](../top/visual-cpp-samples.md)  
   
--   [DynamicConsumer Sample](../top/visual-c---samples.md)  
+-   [DynamicConsumer Sample](../top/visual-cpp-samples.md)  
   
--   [UpdatePV Sample](../top/visual-c---samples.md)  
+-   [UpdatePV Sample](../top/visual-cpp-samples.md)  
   
--   [Marquee Sample](../top/visual-c---samples.md)  
+-   [Marquee Sample](../top/visual-cpp-samples.md)  
   
 ## See Also  
- [Concepts](../atl/active-template-library--atl--concepts.md)   
+ [Concepts](../atl/active-template-library-atl-concepts.md)   
  [Collection Classes](../atl/collection-classes.md)
+

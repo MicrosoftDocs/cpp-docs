@@ -1,13 +1,13 @@
 ---
-title: "ArgTraits Structure"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "ArgTraits Structure | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "event/Microsoft::WRL::Details::ArgTraits"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "ArgTraits structure"
 ms.assetid: 58ae4115-c1bc-48c8-b01b-e60554841c30
 caps.latest.revision: 5
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -189,7 +190,7 @@ struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2,
   
 |Name|Description|  
 |----------|-----------------|  
-|[ArgTraits::args Constant](../windows/argtraits--args-constant.md)|Keeps count of the number of parameters on the Invoke method of a delegate interface.|  
+|[ArgTraits::args Constant](../windows/argtraits-args-constant.md)|Keeps count of the number of parameters on the Invoke method of a delegate interface.|  
   
 ## Inheritance Hierarchy  
  `ArgTraits`  
@@ -200,4 +201,4 @@ struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2,
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft--wrl--details-namespace.md)
+ [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

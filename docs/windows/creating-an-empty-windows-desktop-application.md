@@ -1,13 +1,13 @@
 ---
-title: "Creating an Empty Windows Desktop Application"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Creating an Empty Windows Desktop Application | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "empty projects, creating"
 ms.assetid: e0f0e628-041d-4c50-b221-5807b9184000
 caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -54,4 +55,4 @@ translation.priority.mt:
  Next, you can [add files to your empty Visual C++ project](../windows/adding-files-to-an-empty-win32-applications.md).  
   
 ## See Also  
- [Deploying Applications](assetId:///4ff8881d-0daf-47e7-bfe7-774c625031b4)
+ [Deploying Applications](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)

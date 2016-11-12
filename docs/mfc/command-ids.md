@@ -1,13 +1,13 @@
 ---
-title: "Command IDs"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Command IDs | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "command IDs, MFC"
   - "command IDs"
 ms.assetid: e0171a2b-45b9-41fa-945d-ec2f7602ded0
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -42,3 +43,4 @@ A command is fully described by its command ID alone (encoded in the **WM_COMMAN
   
 ## See Also  
  [User-Interface Objects and Command IDs](../mfc/user-interface-objects-and-command-ids.md)
+

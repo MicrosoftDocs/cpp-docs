@@ -1,13 +1,13 @@
 ---
-title: "Using a Hot Key Control"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Using a Hot Key Control | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "CHotKeyCtrl class, using"
   - "hot key controls"
 ms.assetid: cdd6524b-cc43-447f-b151-164273559685
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -36,13 +37,13 @@ translation.priority.ht:
 # Using a Hot Key Control
 Typical usage of a hot key control follows the pattern below:  
   
--   The control is created. If the control is specified in a dialog box template, creation is automatic when the dialog box is created. (You should have a [CHotKeyCtrl](../mfcref/chotkeyctrl-class.md) member in your dialog class that corresponds to the hot key control.) Alternatively, you can use the [Create](../Topic/CHotKeyCtrl::Create.md) member function to create the control as a child window of any window.  
+-   The control is created. If the control is specified in a dialog box template, creation is automatic when the dialog box is created. (You should have a [CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md) member in your dialog class that corresponds to the hot key control.) Alternatively, you can use the [Create](../mfc/reference/chotkeyctrl-class.md#create) member function to create the control as a child window of any window.  
   
--   If you want to set a default value for the control, call the [SetHotKey](../Topic/CHotKeyCtrl::SetHotKey.md) member function. If you want to prohibit certain shift states, call [SetRules](../Topic/CHotKeyCtrl::SetRules.md). For controls in a dialog box, a good time to do this is in the dialog box's [OnInitDialog](../Topic/CDialog::OnInitDialog.md) function.  
+-   If you want to set a default value for the control, call the [SetHotKey](../mfc/reference/chotkeyctrl-class.md#sethotkey) member function. If you want to prohibit certain shift states, call [SetRules](../mfc/reference/chotkeyctrl-class.md#setrules). For controls in a dialog box, a good time to do this is in the dialog box's [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) function.  
   
 -   The user interacts with the control by pressing a hot key combination when the hot key control has focus. The user then somehow indicates that this task is complete, perhaps by clicking a button in the dialog box.  
   
--   When your program is notified that the user has selected a hot key, it should use the member function [GetHotKey](../Topic/CHotKeyCtrl::GetHotKey.md) to retrieve the virtual key and shift state values from the hot key control.  
+-   When your program is notified that the user has selected a hot key, it should use the member function [GetHotKey](../mfc/reference/chotkeyctrl-class.md#gethotkey) to retrieve the virtual key and shift state values from the hot key control.  
   
 -   Once you know what key the user selected, you can set the hot key using one of the methods described in [Setting a Hot Key](../mfc/setting-a-hot-key.md).  
   
@@ -50,4 +51,5 @@ Typical usage of a hot key control follows the pattern below:
   
 ## See Also  
  [Using CHotKeyCtrl](../mfc/using-chotkeyctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

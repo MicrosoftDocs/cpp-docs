@@ -1,13 +1,13 @@
 ---
-title: "AsyncStatusInternal Enumeration"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "AsyncStatusInternal Enumeration | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "async/Microsoft::WRL::Details::AsyncStatusInternal"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "AsyncStatusInternal enumeration"
 ms.assetid: b783923f-3f1c-4487-9384-be572cbc62d7
 caps.latest.revision: 5
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -69,4 +70,4 @@ enum AsyncStatusInternal;
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft--wrl--details-namespace.md)
+ [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

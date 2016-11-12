@@ -1,13 +1,13 @@
 ---
-title: "Building an Attributed Program"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Building an Attributed Program | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -25,6 +25,7 @@ helpviewer_keywords:
   - "type libraries, linker options for building"
 ms.assetid: 04997b5f-bf2c-46ec-b868-c4adebbef5f4
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -45,13 +46,13 @@ translation.priority.ht:
 # Building an Attributed Program
 After you put Visual C++ attributes into your source code, you may want the Visual C++ compiler to produce a type library and .idl file for you. The following linker options help you build .tlb and .idl files:  
   
--   [/IDLOUT](../buildref/-idlout--name-midl-output-files-.md)  
+-   [/IDLOUT](../build/reference/idlout-name-midl-output-files.md)  
   
--   [/IGNOREIDL](../buildref/-ignoreidl--don-t-process-attributes-into-midl-.md)  
+-   [/IGNOREIDL](../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)  
   
--   [/MIDL](../buildref/-midl--specify-midl-command-line-options-.md)  
+-   [/MIDL](../build/reference/midl-specify-midl-command-line-options.md)  
   
--   [/TLBOUT](../buildref/-tlbout--name-.tlb-file-.md)  
+-   [/TLBOUT](../build/reference/tlbout-name-dot-tlb-file.md)  
   
  Some projects contain multiple independent .idl files. These are used to produce two or more .tlb files and optionally bind them into the resource block. This scenario is not currently supported in Visual C++.  
   

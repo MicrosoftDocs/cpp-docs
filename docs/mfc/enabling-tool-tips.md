@@ -1,13 +1,13 @@
 ---
-title: "Enabling Tool Tips"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Enabling Tool Tips | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "tool tips [C++], initializing"
   - "tool tips [C++], enabling"
 ms.assetid: 06b7c889-7722-4ce6-8b88-9efa50fe6369
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -42,7 +43,8 @@ You can enable tool tip support for the child controls of a window (such as the 
   
 1.  Call `EnableToolTips` for the window for which you want to provide tool tips.  
   
-2.  Provide a string for each control in your [TTN_NEEDTEXT notification](../mfc/handling-ttn_needtext-notification-for-tool-tips.md) handler. The handler is in the message map of the window that contains the child controls (for example, your form view class). This handler should call a function that identifies the control and sets **pszText** to specify the text used by the tool tip control.  
+2.  Provide a string for each control in your [TTN_NEEDTEXT notification](../mfc/handling-ttn-needtext-notification-for-tool-tips.md) handler. The handler is in the message map of the window that contains the child controls (for example, your form view class). This handler should call a function that identifies the control and sets **pszText** to specify the text used by the tool tip control.  
   
 ## See Also  
  [Tool Tips in Windows Not Derived from CFrameWnd](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
+

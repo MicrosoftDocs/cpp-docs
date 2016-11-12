@@ -14,4 +14,4 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
- Visual Studio Ultimate 
+Visual Studio Ultimate

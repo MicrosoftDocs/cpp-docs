@@ -1,13 +1,13 @@
 ---
-title: "typename"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "typename | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "typename"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "typename template specifier"
 ms.assetid: 52e1d901-220d-4f0d-ab43-dae7e05fb491
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -81,5 +82,5 @@ int main()
 ```  
   
 ## See Also  
- [Templates](../cpp/templates--c---.md)   
- [Keywords](../cpp/keywords--c---.md)
+ [Templates](../cpp/templates-cpp.md)   
+ [Keywords](../cpp/keywords-cpp.md)

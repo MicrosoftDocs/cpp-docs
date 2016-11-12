@@ -1,13 +1,13 @@
 ---
-title: "Messages"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Messages | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "messages, MFC"
   - "messages"
 ms.assetid: b1476310-a135-42ca-817c-444fb3675491
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,3 +41,4 @@ The message loop in the **Run** member function of class `CWinApp` retrieves que
   
 ## See Also  
  [Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md)
+

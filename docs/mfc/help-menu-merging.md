@@ -1,13 +1,13 @@
 ---
-title: "Help Menu Merging"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Help Menu Merging | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "merging Help menus"
   - "Help, for active document containers"
 ms.assetid: 9d615999-79ba-471a-9288-718f0c903d49
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -71,3 +72,4 @@ When an object is active within a container, the menu merging protocol of OLE Do
   
 ## See Also  
  [Active Document Containers](../mfc/active-document-containers.md)
+

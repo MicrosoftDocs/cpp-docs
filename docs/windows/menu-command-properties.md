@@ -1,13 +1,13 @@
 ---
-title: "Menu Command Properties"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Menu Command Properties | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "menu items, properties"
 ms.assetid: 6d308205-3c9e-42f2-ab42-45e656940e45
 caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -34,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Menu Command Properties
-The information below is organized according to the Menu properties that appear in the [Properties Window](../Topic/Properties%20Window.md) when you select a menu command. These are listed alphabetically although the Properties window also enables you to view these properties by category.  
+The information below is organized according to the Menu properties that appear in the [Properties Window](/visual-studio/ide/reference/properties-window) when you select a menu command. These are listed alphabetically although the Properties window also enables you to view these properties by category.  
   
 |Property|Description|  
 |--------------|-----------------|  
@@ -44,7 +45,7 @@ The information below is organized according to the Menu properties that appear 
 |**Enabled**|If **False**, the menu item is disabled.|  
 |**Grayed**|If True, the menu command is initially grayed and inactive. Type: Bool. Default: False.|  
 |**Help**|Aligns menu item to the right. For example, the **Help** menu command is always on the right in all Windows applications. If you set this property on a menu item, that item will appear at the very far right and at the very end of the menu. Applies to top-level items. Default: **False**.|  
-|**ID**|A symbol defined in the header file. Type: Symbol, Integer, or Quoted String. You may use any symbol that is commonly available in any of the editors, even though the [Properties Window](../Topic/Properties%20Window.md) does not provide a drop-down list for you to select from.|  
+|**ID**|A symbol defined in the header file. Type: Symbol, Integer, or Quoted String. You may use any symbol that is commonly available in any of the editors, even though the [Properties Window](/visual-studio/ide/reference/properties-window) does not provide a drop-down list for you to select from.|  
 |**Popup**|If True, the menu command is a pop-up menu. Type: Bool. Default: True for top-level menus on a menu bar; otherwise False.|  
 |**Prompt**|Contains text to appear in the status bar when this menu command is highlighted. The text is placed in the string table with the same identifier as the menu command. This property is available for any type of project, but the run-time functionality is MFC specific.|  
 |**Right to Left Justify**|Right-justifies the menu command on the menu bar at run time. Type: Bool. Default: False.|  

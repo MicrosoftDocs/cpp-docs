@@ -1,13 +1,13 @@
 ---
-title: "using Declaration"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "using Declaration | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "using keyword [C++]"
   - "declarations [C++], namespaces"
 ms.assetid: 4184e2b1-3adc-408e-b5f3-0b3f8b554723
-caps.latest.revision: 10
+caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -50,7 +51,7 @@ using :: unqualified-id
 ```  
   
 ## Remarks  
- The name becomes a synonym for an entity declared elsewhere. It allows an *individual* name from a specific namespace to be used without [explicit qualification](../notintoc/explicit-qualification.md). This is in contrast to the `using` directive, which allows *all* the names in a namespace to be used without qualification. See [using Directive](../notintoc/using-directive--c---.md) for more information. This keyword is also used for [type aliases](../cpp/aliases-and-typedefs--c---.md).  
+ The name becomes a synonym for an entity declared elsewhere. It allows an *individual* name from a specific namespace to be used without [explicit qualification](../misc/explicit-qualification.md). This is in contrast to the `using` directive, which allows *all* the names in a namespace to be used without qualification. See [using Directive](../misc/using-directive-cpp.md) for more information. This keyword is also used for [type aliases](../cpp/aliases-and-typedefs-cpp.md).  
   
 ## Example  
  A using declaration can be used in a class definition.  
@@ -91,9 +92,12 @@ int main() {
 }  
 ```  
   
- **In D::f()**  
-**In B::f()**  
-**In B::g()**   
+```Output  
+In D::f()  
+In B::f()  
+In B::g()  
+```  
+  
 ## Example  
  When used to declare a member, a using declaration must refer to a member of a base class.  
   
@@ -129,7 +133,10 @@ int main() {
 }  
 ```  
   
- **In B::f()**   
+```Output  
+In B::f()  
+```  
+  
 ## Example  
  Members declared with a using declaration can be referenced using explicit qualification. The `::` prefix refers to the global namespace.  
   
@@ -163,9 +170,12 @@ int main() {
 }  
 ```  
   
- **In h**  
-**In f**  
-**In A::g**   
+```Output  
+In h  
+In f  
+In A::g  
+```  
+  
 ## Example  
  When a using declaration is made, the synonym created by the declaration refers only to definitions that are valid at the point of the using declaration. Definitions added to a namespace after the using declaration are not valid synonyms.  
   
@@ -292,14 +302,17 @@ int main() {
 }  
 ```  
   
- **In D::f(int)**  
-**In B::f(char)**  
-**In B::g**  
-**In D::g(char)**   
+```Output  
+In D::f(int)  
+In B::f(char)  
+In B::g  
+In D::g(char)  
+```  
+  
 ## Example  
  All instances of a name mentioned in a using declaration must be accessible. In particular, if a derived class uses a using declaration to access a member of a base class, the member name must be accessible. If the name is that of an overloaded member function, then all functions named must be accessible.  
   
- See [Member-Access Control](../cpp/member-access-control--c---.md), for more information on accessibility of members.  
+ See [Member-Access Control](../cpp/member-access-control-cpp.md), for more information on accessibility of members.  
   
 ```cpp  
 // using_declaration_inheritance2.cpp  
@@ -321,5 +334,5 @@ public:
 ```  
   
 ## See Also  
- [Namespaces](../cpp/namespaces--c---.md)   
- [Keywords](../cpp/keywords--c---.md)
+ [Namespaces](../cpp/namespaces-cpp.md)   
+ [Keywords](../cpp/keywords-cpp.md)

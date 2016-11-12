@@ -1,13 +1,13 @@
 ---
-title: "C Run-Time Library Functions for Thread Control"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "C Run-Time Library Functions for Thread Control | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "_endthreadex function"
 ms.assetid: 39d0529c-c392-4c6f-94f5-105d1e8054e4
 caps.latest.revision: 9
-ms.author: "mithom"
+author: "mikeblome"
+ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
   - "cs-cz"
@@ -40,7 +41,7 @@ translation.priority.ht:
 # C Run-Time Library Functions for Thread Control
 All Win32 programs have at least one thread. Any thread can create additional threads. A thread can complete its work quickly and then terminate, or it can stay active for the life of the program.  
   
- The LIBCMT and MSVCRT C run-time libraries provide the following functions for thread creation and termination: [_beginthread, _beginthreadex](../crt/_beginthread--_beginthreadex.md) and [_endthread, _endthreadex](../crt/_endthread--_endthreadex.md).  
+ The LIBCMT and MSVCRT C run-time libraries provide the following functions for thread creation and termination: [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md) and [_endthread, _endthreadex](../c-runtime-library/reference/endthread-endthreadex.md).  
   
  The `_beginthread` and `_beginthreadex` functions create a new thread and return a thread identifier if the operation is successful. The thread terminates automatically if it completes execution, or it can terminate itself with a call to `_endthread` or `_endthreadex`.  
   
@@ -59,7 +60,7 @@ All Win32 programs have at least one thread. Any thread can create additional th
  `_beginthread` and `_beginthreadex` return a handle to the new thread if successful or an error code if there was an error.  
   
 ##  <a name="_core_the__endthread_function"></a> The _endthread and _endthreadex Functions  
- The [_endthread](../crt/_endthread--_endthreadex.md) function terminates a thread created by `_beginthread` (and similarly, `_endthreadex` terminates a thread created by `_beginthreadex`). Threads terminate automatically when they finish. `_endthread` and `_endthreadex` are useful for conditional termination from within a thread. A thread dedicated to communications processing, for example, can quit if it is unable to get control of the communications port.  
+ The [_endthread](../c-runtime-library/reference/endthread-endthreadex.md) function terminates a thread created by `_beginthread` (and similarly, `_endthreadex` terminates a thread created by `_beginthreadex`). Threads terminate automatically when they finish. `_endthread` and `_endthreadex` are useful for conditional termination from within a thread. A thread dedicated to communications processing, for example, can quit if it is unable to get control of the communications port.  
   
 ## See Also  
  [Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)

@@ -1,13 +1,13 @@
 ---
-title: "Creating New Symbols"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Creating New Symbols | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.editors.symbol.creating"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "symbols, creating"
 ms.assetid: 35168d31-3af6-4ecd-9362-3707d47b53f3
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 

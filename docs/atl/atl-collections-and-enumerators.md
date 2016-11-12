@@ -1,13 +1,13 @@
 ---
-title: "ATL Collections and Enumerators"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "ATL Collections and Enumerators | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "enumerators, ATL classes"
   - "collection interfaces"
 ms.assetid: b2d37119-3ab2-4e0a-b65b-f377f07e4098
-caps.latest.revision: 10
+caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -42,7 +43,7 @@ A `collection` is a COM object that provides an interface that allows access to 
   
  An `enumerator` is a COM object that provides an interface for iterating through items in a collection. Enumerator interfaces provide serial access to the elements of a collection via four required methods: `Next`, **Skip**, **Reset**, and `Clone`.  
   
- You can learn more about enumerator interfaces by reading about the archetypal (but entirely imaginary) [IEnumXXXX](https://msdn.microsoft.com/en-us/library/ms680089.aspx) interface.  
+ You can learn more about enumerator interfaces by reading about the archetypal (but entirely imaginary) [IEnumXXXX](https://msdn.microsoft.com/library/ms680089.aspx) interface.  
   
 ## In This Section  
  [ATL Collection and Enumerator Classes](../atl/atl-collection-and-enumerator-classes.md)  
@@ -55,11 +56,12 @@ A `collection` is a COM object that provides an interface that allows access to 
  An extended example that walks you through the implementation of a Standard Template Library (STL)-based collection.  
   
 ## Related Sections  
- [ATL](../atl/active-template-library--atl--concepts.md)  
+ [ATL](../atl/active-template-library-atl-concepts.md)  
  Provides links to conceptual topics on how to program using the Active Template Library.  
   
- [ATLCollections Sample](../top/visual-c---samples.md)  
+ [ATLCollections Sample](../top/visual-cpp-samples.md)  
  A sample that demonstrates the use of `ICollectionOnSTLImpl` and `CComEnumOnSTL`, and the implementation of custom copy policy classes.  
   
 ## See Also  
- [Concepts](../atl/active-template-library--atl--concepts.md)
+ [Concepts](../atl/active-template-library-atl-concepts.md)
+

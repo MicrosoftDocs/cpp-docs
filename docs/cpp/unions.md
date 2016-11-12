@@ -1,13 +1,13 @@
 ---
-title: "Unions"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Unions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "union_cpp"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "union keyword [C++]"
 ms.assetid: 25c4e219-fcbb-4b7b-9b64-83f3252a92ca
 caps.latest.revision: 16
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -665,7 +666,7 @@ union  {  member-list  }
   
  Names declared in an anonymous union are used directly, like nonmember variables. Therefore, the names declared in an anonymous union must be unique in the surrounding scope.  
   
- In addition to the restrictions listed in [Union Member Data](../notintoc/union-member-data.md), anonymous unions are subject to additional restrictions:  
+ In addition to the restrictions listed in [Union Member Data](../misc/union-member-data.md), anonymous unions are subject to additional restrictions:  
   
 -   They must also be declared as **static** if declared in file or namespace scope.  
   
@@ -674,8 +675,8 @@ union  {  member-list  }
 -   They cannot have member functions.  
   
 ## See Also  
- [Classes and Structs](../cpp/classes-and-structs--c---.md)   
- [Keywords](../cpp/keywords--c---.md)   
- [Anonymous Unions](../notintoc/anonymous-unions.md)   
- [class](../cpp/class--c---.md)   
- [struct](../cpp/struct--c---.md)
+ [Classes and Structs](../cpp/classes-and-structs-cpp.md)   
+ [Keywords](../cpp/keywords-cpp.md)   
+ [Anonymous Unions](../misc/anonymous-unions.md)   
+ [class](../cpp/class-cpp.md)   
+ [struct](../cpp/struct-cpp.md)

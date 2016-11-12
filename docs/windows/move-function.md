@@ -1,13 +1,13 @@
 ---
-title: "Move Function"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Move Function | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "internal/Microsoft::WRL::Details::Move"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "Move function"
 ms.assetid: c9525426-97e8-4d8c-9877-b689d8a0dc67
 caps.latest.revision: 5
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -62,7 +63,7 @@ inline typename RemoveReference<T>::Type&& Move(
 ## Remarks  
  Moves the specified argument from one location to another.  
   
- For more information, see the **Move Semantics** section of [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator----.md).  
+ For more information, see the **Move Semantics** section of [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
 ## Requirements  
  **Header:** internal.h  
@@ -70,4 +71,4 @@ inline typename RemoveReference<T>::Type&& Move(
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft--wrl--details-namespace.md)
+ [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

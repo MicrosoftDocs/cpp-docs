@@ -1,13 +1,13 @@
 ---
-title: "HTTP Basics"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "HTTP Basics | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "return codes"
   - "HTTP requests, return codes"
 ms.assetid: 5b7421bf-42c8-4f3a-8566-8ff5957f58cc
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -61,3 +62,4 @@ When writing an internet application, you often examine and add to the informati
   
 ## See Also  
  [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
+

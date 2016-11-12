@@ -1,13 +1,13 @@
 ---
-title: "Make Function"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Make Function | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "implements/Microsoft::WRL::Make"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "Make function"
 ms.assetid: 66704143-df99-4a95-904d-ed99607e1034
 caps.latest.revision: 4
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Make Function
-Initializes the specified [!INCLUDE[wrt](../atl/includes/wrt_md.md)] class. Use this function to instantiate a component that is defined in the same module.  
+Initializes the specified [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] class. Use this function to instantiate a component that is defined in the same module.  
   
 ## Syntax  
   
@@ -243,7 +244,7 @@ ComPtr<T> Make();
  A `ComPtr<T>` object if successful; otherwise, `nullptr`.  
   
 ## Remarks  
- See [How to: Instantiate WRL Components Directly](../windows/how-to--instantiate-wrl-components-directly.md) to learn the differences between this function and [Microsoft::WRL::Details::MakeAndInitialize](../windows/makeandinitialize-function.md), and for an example.  
+ See [How to: Instantiate WRL Components Directly](../windows/how-to-instantiate-wrl-components-directly.md) to learn the differences between this function and [Microsoft::WRL::Details::MakeAndInitialize](../windows/makeandinitialize-function.md), and for an example.  
   
 ## Requirements  
  **Header:** implements.h  
@@ -251,4 +252,4 @@ ComPtr<T> Make();
  **Namespace:** Microsoft::WRL  
   
 ## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft--wrl-namespace.md)
+ [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

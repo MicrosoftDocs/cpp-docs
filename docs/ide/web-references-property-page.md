@@ -1,13 +1,13 @@
 ---
-title: "Web References Property Page"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Web References Property Page | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "VC.Project.VCSDLTool.Output"
@@ -20,6 +20,7 @@ helpviewer_keywords:
   - "Web references, properties"
 ms.assetid: b80f7c77-af88-4551-9943-99748ebacf09
 caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,7 +39,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Web References Property Page
-The **Web References** property page specifies how the XML Web service proxy class will be generated. An XML Web service proxy class will be generated if you add a web reference to your project. See [Add Web Reference](assetId:///bdf05776-c591-40af-bfd7-e1e2aa1e87b5) for more information.  
+The **Web References** property page specifies how the XML Web service proxy class will be generated. An XML Web service proxy class will be generated if you add a web reference to your project. See [Add Web Reference](http://msdn.microsoft.com/en-us/bdf05776-c591-40af-bfd7-e1e2aa1e87b5) for more information.  
   
  The **Web References** property page contains the following properties:  
   
@@ -54,7 +55,7 @@ The **Web References** property page specifies how the XML Web service proxy cla
  **Additional References**  
  Specifies the additional DLLs referenced by the proxy DLL.  
   
- For information on how to access the **Web Reference** property page, see [How To: Specify Project Properties with Property Pages](../notintoc/how-to--specify-project-properties-with-property-pages.md).  
+ For information on how to access the **Web Reference** property page, see [How To: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md).  
   
 ## See Also  
- [Property Pages](../ide/property-pages--visual-c---.md)
+ [Property Pages](../ide/property-pages-visual-cpp.md)

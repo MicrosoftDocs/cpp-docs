@@ -1,13 +1,13 @@
 ---
-title: "Running NMAKE"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Running NMAKE | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -21,6 +21,7 @@ helpviewer_keywords:
   - "command files, NMAKE"
 ms.assetid: 0421104d-8b7b-4bf3-86c1-928d9b7c1a8c
 caps.latest.revision: 7
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -53,7 +54,7 @@ NMAKE [option...] [macros...] [targets...] [@commandfile...]
 ## What do you want to know more about?  
  [NMAKE options](../build/nmake-options.md)  
   
- [Tools.ini and NMAKE](../build/tools.ini-and-nmake.md)  
+ [Tools.ini and NMAKE](../build/tools-ini-and-nmake.md)  
   
  [Exit codes from NMAKE](../build/exit-codes-from-nmake.md)  
   

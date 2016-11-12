@@ -1,13 +1,13 @@
 ---
-title: "HANDLENullTraits Structure"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "HANDLENullTraits Structure | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "HANDLENullTraits structure"
 ms.assetid: 88a29a14-c516-40cb-a0ca-ee897a668623
 caps.latest.revision: 4
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -56,8 +57,8 @@ struct HANDLENullTraits;
   
 |Name|Description|  
 |----------|-----------------|  
-|[HANDLENullTraits::Close Method](../windows/handlenulltraits--close-method.md)|Closes the specified handle.|  
-|[HANDLENullTraits::GetInvalidValue Method](../windows/handlenulltraits--getinvalidvalue-method.md)|Represents an invalid handle.|  
+|[HANDLENullTraits::Close Method](../windows/handlenulltraits-close-method.md)|Closes the specified handle.|  
+|[HANDLENullTraits::GetInvalidValue Method](../windows/handlenulltraits-getinvalidvalue-method.md)|Represents an invalid handle.|  
   
 ## Inheritance Hierarchy  
  `HANDLENullTraits`  
@@ -68,4 +69,4 @@ struct HANDLENullTraits;
  **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
   
 ## See Also  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft--wrl--wrappers--handletraits-namespace.md)
+ [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

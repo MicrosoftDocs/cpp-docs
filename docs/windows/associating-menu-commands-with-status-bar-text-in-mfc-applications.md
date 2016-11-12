@@ -1,13 +1,13 @@
 ---
-title: "Associating Menu Commands with Status Bar Text in MFC Applications"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Associating Menu Commands with Status Bar Text in MFC Applications | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "menus, status bar text"
 ms.assetid: 757c0e02-bc97-493f-bccd-6cc6887ebc64
 caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -41,7 +42,7 @@ Your application can display descriptive text for each of the menu commands a us
   
 1.  In the **Menu** editor, select the menu command.  
   
-2.  In the [Properties Window](../Topic/Properties%20Window.md), type the associated status bar text in the **Prompt** box.  
+2.  In the [Properties Window](/visual-studio/ide/reference/properties-window), type the associated status bar text in the **Prompt** box.  
   
  For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
   
@@ -50,6 +51,6 @@ Your application can display descriptive text for each of the menu commands a us
  MFC  
   
 ## See Also  
- [Strings (ATL/MFC)](../atl/strings--atl-mfc-.md)   
+ [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)   
  [Adding Commands to a Menu](../windows/adding-commands-to-a-menu.md)   
  [Menu Editor](../mfc/menu-editor.md)

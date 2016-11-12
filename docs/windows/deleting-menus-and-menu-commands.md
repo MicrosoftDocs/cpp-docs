@@ -1,13 +1,13 @@
 ---
-title: "Deleting Menus and Menu Commands"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Deleting Menus and Menu Commands | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "menus, deleting"
 ms.assetid: bdfd5b6e-3275-4597-a8bb-cd19bea9f9ad
 caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 

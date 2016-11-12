@@ -1,13 +1,13 @@
 ---
-title: "Implement Interface Wizard"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Implement Interface Wizard | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.codewiz.impl.interface.overview"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "Implement Interface Wizard [C++]"
 ms.assetid: 947c329e-0815-4ca7-835e-c41dfeb75f9e
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,7 +38,7 @@ translation.priority.ht:
 # Implement Interface Wizard
 This wizard implements an interface for a COM object. Implementations of many interfaces are included in the COM libraries available with Visual Studio and Windows. An interface implementation is associated with an object when an instance of that object is created, and it provides the services that the object offers.  
   
- For a discussion of interfaces and implementations, see [Interfaces and Interface Implementations](http://msdn.microsoft.com/library/windows/desktop/ms694356) in the [!INCLUDE[winsdkshort](../atl/includes/winsdkshort_md.md)].  
+ For a discussion of interfaces and implementations, see [Interfaces and Interface Implementations](http://msdn.microsoft.com/library/windows/desktop/ms694356) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
   
  **Implement interface from**  
  Specifies the location of the type library, from which the interface is created.  
@@ -74,4 +75,4 @@ This wizard implements an interface for a COM object. Implementations of many in
 >  If you include more than one interface that derives from `IDispatch`, or if you try to implement an interface that is derived from another interface already on your class, then you must disambiguate the COM_MAP entries. See [COM_INTERFACE_ENTRY2](../Topic/COM_INTERFACE_ENTRY2.md) for more information.  
   
 ## See Also  
- [Implementing an Interface](../ide/implementing-an-interface--visual-c---.md)
+ [Implementing an Interface](../ide/implementing-an-interface-visual-cpp.md)

@@ -1,13 +1,13 @@
 ---
-title: "Avoiding Problem Areas with Multithread Programs"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Avoiding Problem Areas with Multithread Programs | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "troubleshooting [C++], multithreading"
 ms.assetid: 06cc231d-bb5a-409d-8bd3-676c9e2a8c5b
 caps.latest.revision: 8
-ms.author: "mithom"
+author: "mikeblome"
+ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
   - "cs-cz"
@@ -36,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Avoiding Problem Areas with Multithread Programs
-There are several problems you might encounter in creating, linking, or executing a multithread C program. Some of the more common problems are described in the following table. (For a similar discussion from the MFC point of view, see [Multithreading: Programming Tips](../parallel/multithreading--programming-tips.md).)  
+There are several problems you might encounter in creating, linking, or executing a multithread C program. Some of the more common problems are described in the following table. (For a similar discussion from the MFC point of view, see [Multithreading: Programming Tips](../parallel/multithreading-programming-tips.md).)  
   
 |Problem|Probable cause|  
 |-------------|--------------------|  

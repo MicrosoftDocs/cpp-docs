@@ -1,13 +1,13 @@
 ---
-title: "Dialog Data Exchange"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Dialog Data Exchange | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -29,7 +29,8 @@ helpviewer_keywords:
   - "UpdateData method"
   - "retrieving dialog box data"
 ms.assetid: 4675f63b-41d2-45ed-b6c3-235ad8ab924b
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -63,7 +64,7 @@ Dialog Data Exchange
   
  MFC provides many DDX functions for different kinds of exchange. The following example shows a `DoDataExchange` override in which two DDX functions and one DDV function are called:  
   
- [!code[NVC_MFCControlLadenDialog#49](../mfc/codesnippet/CPP/dialog-data-exchange_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#49](../mfc/codesnippet/CPP/dialog-data-exchange_1.cpp)]  
   
  The `DDX_` and `DDV_` lines are a data map. The sample DDX and DDV functions shown are for a check-box control and an edit-box control, respectively.  
   
@@ -73,3 +74,4 @@ Dialog Data Exchange
  [Dialog Data Exchange and Validation](../mfc/dialog-data-exchange-and-validation.md)   
  [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)   
  [Dialog Data Validation](../mfc/dialog-data-validation.md)
+

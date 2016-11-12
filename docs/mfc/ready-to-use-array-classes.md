@@ -1,13 +1,13 @@
 ---
-title: "Ready-to-Use Array Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Ready-to-Use Array Classes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.classes.array"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "collection classes, arrays"
   - "classes [C++], array"
 ms.assetid: fdeabf95-2fe7-43a8-8f88-d954133caf52
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,26 +40,27 @@ translation.priority.ht:
 # Ready-to-Use Array Classes
 The following classes are ready-to-use array classes.  
   
- [CByteArray](../mfcref/cbytearray-class.md)  
+ [CByteArray](../mfc/reference/cbytearray-class.md)  
  Stores elements of type **BYTE** in an array.  
   
- [CDWordArray](../mfcref/cdwordarray-class.md)  
+ [CDWordArray](../mfc/reference/cdwordarray-class.md)  
  Stores elements of type `DWORD` in an array.  
   
- [CObArray](../mfcref/cobarray-class.md)  
+ [CObArray](../mfc/reference/cobarray-class.md)  
  Stores pointers to objects of class `CObject` or to objects of classes derived from `CObject` in an array.  
   
- [CPtrArray](../mfcref/cptrarray-class.md)  
+ [CPtrArray](../mfc/reference/cptrarray-class.md)  
  Stores pointers to `void` (generic pointers) in an array.  
   
- [CUIntArray](../mfcref/cuintarray-class.md)  
+ [CUIntArray](../mfc/reference/cuintarray-class.md)  
  Stores elements of type **UINT** in an array.  
   
- [CWordArray](../mfcref/cwordarray-class.md)  
+ [CWordArray](../mfc/reference/cwordarray-class.md)  
  Stores elements of type **WORD** in an array.  
   
- [CStringArray](../mfcref/cstringarray-class.md)  
+ [CStringArray](../mfc/reference/cstringarray-class.md)  
  Stores `CString` objects in an array.  
   
 ## See Also  
  [Class Overview](../mfc/class-library-overview.md)
+

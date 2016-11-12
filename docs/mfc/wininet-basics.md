@@ -1,13 +1,13 @@
 ---
-title: "WinInet Basics"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "WinInet Basics | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "WinInet classes, displaying progress"
   - "WinInet classes, about WinInet classes"
 ms.assetid: 665de5ac-e80d-427d-8d91-2ae466885940
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # WinInet Basics
-You can use WinInet to add FTP support to download and upload files from within your application. You can override [OnStatusCallback](../Topic/CInternetSession::OnStatusCallback.md) and use the `dwContext` parameter to provide progress information to users as you search for and download files.  
+You can use WinInet to add FTP support to download and upload files from within your application. You can override [OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback) and use the `dwContext` parameter to provide progress information to users as you search for and download files.  
   
  This article contains the following topics:  
   
@@ -51,22 +52,22 @@ You can use WinInet to add FTP support to download and upload files from within 
   
  The code excerpts below demonstrate how to create a simple browser, download a Web page, FTP a file, and search for a gopher file. They are not meant as complete examples and not all contain exception handling.  
   
- For additional information on WinInet, see [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions--wininet-.md).  
+ For additional information on WinInet, see [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md).  
   
 ##  <a name="_core_create_a_very_simple_browser"></a> Create a Very Simple Browser  
- [!code[NVC_MFCWinInet#1](../mfc/codesnippet/CPP/wininet-basics_1.cpp)]  
+ [!code-cpp[NVC_MFCWinInet#1](../mfc/codesnippet/CPP/wininet-basics_1.cpp)]  
   
 ##  <a name="_core_download_a_web_page"></a> Download a Web Page  
- [!code[NVC_MFCWinInet#2](../mfc/codesnippet/CPP/wininet-basics_2.cpp)]  
+ [!code-cpp[NVC_MFCWinInet#2](../mfc/codesnippet/CPP/wininet-basics_2.cpp)]  
   
 ##  <a name="_core_ftp_a_file"></a> FTP a File  
- [!code[NVC_MFCWinInet#3](../mfc/codesnippet/CPP/wininet-basics_3.cpp)]  
+ [!code-cpp[NVC_MFCWinInet#3](../mfc/codesnippet/CPP/wininet-basics_3.cpp)]  
   
 ##  <a name="_core_retrieve_a_gopher_directory"></a> Retrieve a Gopher Directory  
- [!code[NVC_MFCWinInet#4](../mfc/codesnippet/CPP/wininet-basics_4.cpp)]  
+ [!code-cpp[NVC_MFCWinInet#4](../mfc/codesnippet/CPP/wininet-basics_4.cpp)]  
   
 ## Use OnStatusCallback  
- When using the WinInet classes, you can use the [OnStatusCallback](../Topic/CInternetSession::OnStatusCallback.md) member of your application's [CInternetSession](../mfcref/cinternetsession-class.md) object to retrieve status information. If you derive your own `CInternetSession` object, override `OnStatusCallback`, and enable status callbacks, MFC will call your `OnStatusCallback` function with progress information about all the activity in that Internet session.  
+ When using the WinInet classes, you can use the [OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback) member of your application's [CInternetSession](../mfc/reference/cinternetsession-class.md) object to retrieve status information. If you derive your own `CInternetSession` object, override `OnStatusCallback`, and enable status callbacks, MFC will call your `OnStatusCallback` function with progress information about all the activity in that Internet session.  
   
  Because a single session might support several connections (which, over their lifetime, might perform many different distinct operations), `OnStatusCallback` needs a mechanism to identify each status change with a particular connection or transaction. That mechanism is provided by the context ID parameter given to many of the member functions in the WinInet support classes. This parameter is always of type `DWORD` and is always named `dwContext`.  
   
@@ -79,4 +80,5 @@ You can use WinInet to add FTP support to download and upload files from within 
   
 ## See Also  
  [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)   
- [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions--wininet-.md)
+ [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)
+

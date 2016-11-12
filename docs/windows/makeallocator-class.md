@@ -1,13 +1,13 @@
 ---
-title: "MakeAllocator Class"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "MakeAllocator Class | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "implements/Microsoft::WRL::Details::MakeAllocator"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "MakeAllocator class"
 ms.assetid: a1114615-abd7-4a56-9bc3-750c118f0fa1
 caps.latest.revision: 5
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -79,15 +80,15 @@ class MakeAllocator<T, true>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[MakeAllocator::MakeAllocator Constructor](../windows/makeallocator--makeallocator-constructor.md)|Initializes a new instance of the MakeAllocator class.|  
-|[MakeAllocator::~MakeAllocator Destructor](../windows/makeallocator--~makeallocator-destructor.md)|Deinitializes the current instance of the MakeAllocator class.|  
+|[MakeAllocator::MakeAllocator Constructor](../windows/makeallocator-makeallocator-constructor.md)|Initializes a new instance of the MakeAllocator class.|  
+|[MakeAllocator::~MakeAllocator Destructor](../windows/makeallocator-tilde-makeallocator-destructor.md)|Deinitializes the current instance of the MakeAllocator class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[MakeAllocator::Allocate Method](../windows/makeallocator--allocate-method.md)|Allocates memory and associates it with the current MakeAllocator object.|  
-|[MakeAllocator::Detach Method](../windows/makeallocator--detach-method.md)|Disassociates memory allocated by the [Allocate](../windows/makeallocator--allocate-method.md) method from the current MakeAllocator object.|  
+|[MakeAllocator::Allocate Method](../windows/makeallocator-allocate-method.md)|Allocates memory and associates it with the current MakeAllocator object.|  
+|[MakeAllocator::Detach Method](../windows/makeallocator-detach-method.md)|Disassociates memory allocated by the [Allocate](../windows/makeallocator-allocate-method.md) method from the current MakeAllocator object.|  
   
 ## Inheritance Hierarchy  
  `MakeAllocator`  
@@ -98,4 +99,4 @@ class MakeAllocator<T, true>;
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft--wrl--details-namespace.md)
+ [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

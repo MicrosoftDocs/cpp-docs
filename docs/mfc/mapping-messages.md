@@ -1,13 +1,13 @@
 ---
-title: "Mapping Messages"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Mapping Messages | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -21,7 +21,8 @@ helpviewer_keywords:
   - "mappings, messages"
   - "messages, mapping"
 ms.assetid: 996f0652-0698-4b8c-b893-cdaa836d9d0f
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -46,3 +47,4 @@ Each framework class that can receive messages or commands has its own "message 
   
 ## See Also  
  [Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md)
+

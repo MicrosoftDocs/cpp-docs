@@ -1,13 +1,13 @@
 ---
-title: "GetProcAddress"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "GetProcAddress | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "GetProcAddress"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "GetProcAddress method"
 ms.assetid: 48d14ae0-47ea-4c5d-96b1-2c158f1a26af
 caps.latest.revision: 8
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -88,4 +89,4 @@ if (hDLL != NULL)
 -   [Exporting from a DLL Using DEF Files](../build/exporting-from-a-dll-using-def-files.md)  
   
 ## See Also  
- [DLLs in Visual C++](../build/dlls-in-visual-c--.md)
+ [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

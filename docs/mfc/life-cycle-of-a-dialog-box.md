@@ -1,13 +1,13 @@
 ---
-title: "Life Cycle of a Dialog Box"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Life Cycle of a Dialog Box | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "MFC dialog boxes, life cycle"
   - "life cycle of dialog boxes"
 ms.assetid: e16fd78e-238d-4f31-8c9d-8564f3953bd9
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,7 +44,7 @@ During the life cycle of a dialog box, the user invokes the dialog box, typicall
   
  For modeless dialog boxes, you may often extract data from the dialog object while the dialog box is still visible. At some point, the dialog object is destroyed; when this happens depends on your code.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Creating and displaying dialog boxes](../mfc/creating-and-displaying-dialog-boxes.md)  
   
@@ -67,7 +68,8 @@ During the life cycle of a dialog box, the user invokes the dialog box, typicall
   
 -   [Dialog data exchange (DDX) and validation (DDV)](../mfc/dialog-data-exchange-and-validation.md)  
   
--   [Property sheet dialog boxes](../mfc/property-sheets-and-property-pages--mfc-.md)  
+-   [Property sheet dialog boxes](../mfc/property-sheets-and-property-pages-mfc.md)  
   
 ## See Also  
  [Dialog Boxes](../mfc/dialog-boxes.md)
+

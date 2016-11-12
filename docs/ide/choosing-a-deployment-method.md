@@ -1,13 +1,13 @@
 ---
-title: "Choosing a Deployment Method"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Choosing a Deployment Method | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -23,6 +23,7 @@ helpviewer_keywords:
   - "libraries [C++], application deployment issues"
 ms.assetid: fd8eb956-f4a0-4ffb-b401-328c73e66986
 caps.latest.revision: 35
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -44,7 +45,7 @@ translation.priority.ht:
 Unless your [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] application is self-contained and can be deployed by using a copy command, we recommend that you use Windows Installer for deployment. Windows Installer supports installation, repair, and uninstallation, and also supports atomic updating of application files, dependencies, and registry entries.  
   
 > [!NOTE]
->  Although [ClickOnce](../Topic/ClickOnce%20Security%20and%20Deployment.md) deployment for [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] native applications is possible in Visual Studio, it requires extra steps. For more information, see [ClickOnce Deployment for Visual C++ Applications](../ide/clickonce-deployment-for-visual-c---applications.md).  
+>  Although [ClickOnce](/visual-studio/deployment/clickonce-security-and-deployment) deployment for [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] native applications is possible in Visual Studio, it requires extra steps. For more information, see [ClickOnce Deployment for Visual C++ Applications](../ide/clickonce-deployment-for-visual-cpp-applications.md).  
   
 ## Visual C++ Libraries are Shared DLLs  
  Because Visual C++ libraries are installed in the %windir%\system32\ directory by the Visual Studio installer, when you develop a Visual C++ application that depends on them, it will run as expected. However, to deploy the application to computers that may not have Visual Studio, we recommend that you ensure that the libraries are installed on those computers together with the application.  
@@ -52,7 +53,7 @@ Unless your [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] application is se
 ## Redistributing Visual C++ Libraries  
  In your deployments, you can redistribute any version of a Visual C++ library that's licensed for redistribution. Here are three ways to deploy them:  
   
--   Central deployment by using redistributable packages, which installs Visual C++ libraries as shared DLLs in %windir%\system32\\. (Installation in this folder requires administrator rights.) You can create a script or setup program that runs the redistributable package before installing your application on the target computer. Redistributable packages are available for the x86, x64, and ARM platforms (VCRedist_x86.exe, VCRedist_x64.exe, or VCRedist_arm.exe). Visual Studio includes these packages in %ProgramFiles(x86)%\Microsoft Visual Studio `version`\VC\Redist\\`locale ID`\\. You can also download them from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=132793). (On the Download Center, search for the "[!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] Redistributable Package *Visual Studio version and update*" that matches your application. For example, if you used Visual Studio 2012 update 4 to build your application, then search for "Visual C++ Redistributable Package 2012 update 4".) For information about how to use a redistributable package, see [Walkthrough: Deploying a Visual C++ Application By Using the Visual C++ Redistributable Package](../ide/walkthrough--deploying-a-visual-c---application-by-using-the-visual-c---redistributable-package.md).  
+-   Central deployment by using redistributable packages, which installs Visual C++ libraries as shared DLLs in %windir%\system32\\. (Installation in this folder requires administrator rights.) You can create a script or setup program that runs the redistributable package before installing your application on the target computer. Redistributable packages are available for the x86, x64, and ARM platforms (VCRedist_x86.exe, VCRedist_x64.exe, or VCRedist_arm.exe). Visual Studio includes these packages in %ProgramFiles(x86)%\Microsoft Visual Studio `version`\VC\Redist\\`locale ID`\\. You can also download them from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=132793). (On the Download Center, search for the "[!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] Redistributable Package *Visual Studio version and update*" that matches your application. For example, if you used Visual Studio 2012 update 4 to build your application, then search for "Visual C++ Redistributable Package 2012 update 4".) For information about how to use a redistributable package, see [Walkthrough: Deploying a Visual C++ Application By Using the Visual C++ Redistributable Package](../ide/deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md).  
   
 -   Central deployment by using merge modules, each of which installs a particular Visual C++ library as a shared DLL in %windir%\system32\\. (Installation to this folder requires administrator rights.) Merge modules become part of the .msi installer file for your application. Visual C++ redistributable merge modules are included in Visual Studio, in \Program Files (x86)\Common Files\Merge Modules\\. For more information, see [Redistributing By Using Merge Modules](../ide/redistributing-components-by-using-merge-modules.md).  
   
@@ -66,8 +67,8 @@ Unless your [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] application is se
  We recommend that you avoid static linking when you redistribute [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] libraries. Although static linking almost never significantly improves application performance, it almost always makes servicing more expensive. For example, consider an application that's statically linked to a library that's been updated with security enhancements—the application cannot benefit unless it is recompiled and redeployed. Instead, we recommend that you dynamically link your applications to the libraries they depend on so that the libraries can be updated wherever they're deployed.  
   
 ## See Also  
- [Deploying Desktop Applications](../ide/deploying-native-desktop-applications--visual-c---.md)   
- [Not in Build: Choosing a Deployment Strategy](assetId:///ecd632d8-063c-4028-b785-81bba045107b)   
- [Windows Installer Deployment Overview](assetId:///3ce4610a-b54f-404e-b650-42f4a55dfc3b)   
- [ClickOnce Security and Deployment](../Topic/ClickOnce%20Security%20and%20Deployment.md)   
+ [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)   
+ [Not in Build: Choosing a Deployment Strategy](http://msdn.microsoft.com/en-us/ecd632d8-063c-4028-b785-81bba045107b)   
+ [Windows Installer Deployment Overview](http://msdn.microsoft.com/en-us/3ce4610a-b54f-404e-b650-42f4a55dfc3b)   
+ [ClickOnce Security and Deployment](/visual-studio/deployment/clickonce-security-and-deployment)   
  [Deployment Examples](../ide/deployment-examples.md)

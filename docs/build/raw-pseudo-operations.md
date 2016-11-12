@@ -1,18 +1,19 @@
 ---
-title: "Raw Pseudo Operations"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Raw Pseudo Operations | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 ms.assetid: 4def1a0e-ec28-4736-91fb-fac95fba1f36
 caps.latest.revision: 4
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 

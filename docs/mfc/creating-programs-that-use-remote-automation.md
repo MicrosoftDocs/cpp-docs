@@ -1,20 +1,21 @@
 ---
-title: "Creating Programs That Use Remote Automation"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Creating Programs That Use Remote Automation | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "Remote Automation, creating programs"
 ms.assetid: 8eb31320-1037-4029-b1f3-fdc9406dbaf1
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -68,3 +69,4 @@ Any automation object, and any automation controller, is able to use Remote Auto
 ## See Also  
  [Remote Automation](../mfc/remote-automation.md)   
  [Running Remote Automation Using AUTOCLIK and AUTODRIV](../mfc/running-remote-automation-using-autoclik-and-autodriv.md)
+

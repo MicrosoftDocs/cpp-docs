@@ -1,13 +1,13 @@
 ---
-title: "Slider Control Styles"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Slider Control Styles | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "styles, CSliderCtrl"
   - "styles, slider controls"
 ms.assetid: 64c491fc-5af1-4f97-ae30-854071b3dc02
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -36,11 +37,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Slider Control Styles
-Slider controls ([CSliderCtrl](../mfcref/csliderctrl-class.md)) can have either a vertical or horizontal orientation. They can have tick marks on either side, both sides, or neither. They can also be used to specify a range of consecutive values. These properties are controlled by using slider control styles, which you specify when you create the slider control.  
+Slider controls ([CSliderCtrl](../mfc/reference/csliderctrl-class.md)) can have either a vertical or horizontal orientation. They can have tick marks on either side, both sides, or neither. They can also be used to specify a range of consecutive values. These properties are controlled by using slider control styles, which you specify when you create the slider control.  
   
  The `TBS_HORZ` and `TBS_VERT` styles determine the orientation of the slider control. If you do not specify an orientation, the slider control is oriented horizontally.  
   
- The `TBS_AUTOTICKS` style creates a slider control that has a tick mark for each increment in its range of values. These tick marks are added automatically when you call the [SetRange](../Topic/CSliderCtrl::SetRange.md) member function. If you do not specify `TBS_AUTOTICKS`, you can use member functions, such as [SetTic](../Topic/CSliderCtrl::SetTic.md) and [SetTicFreq](../Topic/CSliderCtrl::SetTicFreq.md), to specify the positions of the tick marks. To create a slider control that does not display tick marks, you can use the `TBS_NOTICKS` style.  
+ The `TBS_AUTOTICKS` style creates a slider control that has a tick mark for each increment in its range of values. These tick marks are added automatically when you call the [SetRange](../mfc/reference/csliderctrl-class.md#setrange) member function. If you do not specify `TBS_AUTOTICKS`, you can use member functions, such as [SetTic](../mfc/reference/csliderctrl-class.md#settic) and [SetTicFreq](../mfc/reference/csliderctrl-class.md#setticfreq), to specify the positions of the tick marks. To create a slider control that does not display tick marks, you can use the `TBS_NOTICKS` style.  
   
  You can display tick marks on either or both sides of the slider control. For horizontal slider controls, you can specify the `TBS_BOTTOM` or `TBS_TOP` style. For vertical slider controls, you can specify the `TBS_RIGHT` or `TBS_LEFT` style. (`TBS_BOTTOM` and `TBS_RIGHT` are the default settings.) For tick marks on both sides of the slider control in any orientation, specify the `TBS_BOTH` style.  
   
@@ -50,4 +51,5 @@ Slider controls ([CSliderCtrl](../mfcref/csliderctrl-class.md)) can have either 
   
 ## See Also  
  [Using CSliderCtrl](../mfc/using-csliderctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

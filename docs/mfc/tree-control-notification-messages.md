@@ -1,13 +1,13 @@
 ---
-title: "Tree Control Notification Messages"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Tree Control Notification Messages | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "notifications, CTreeCtrl"
   - "tree controls, notification messages"
 ms.assetid: ac7013b4-91dd-4668-bd75-439ca0680ef9
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Tree Control Notification Messages
-A tree control ([CTreeCtrl](../mfcref/ctreectrl-class.md)) sends the following notification messages as **WM_NOTIFY** messages:  
+A tree control ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) sends the following notification messages as **WM_NOTIFY** messages:  
   
 |Notification message|Description|  
 |--------------------------|-----------------|  
@@ -56,4 +57,5 @@ A tree control ([CTreeCtrl](../mfcref/ctreectrl-class.md)) sends the following n
   
 ## See Also  
  [Using CTreeCtrl](../mfc/using-ctreectrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

@@ -1,13 +1,13 @@
 ---
-title: "GetCodeForInitInstance"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "GetCodeForInitInstance | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "GetCodeForInitInstance"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "GetCodeForInitInstance method"
 ms.assetid: cfa4cb9f-d1cc-4be6-8db9-c253655b57e4
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -107,8 +108,8 @@ GetCodeForInitInstance(0, 2)
 ```  
   
 ## See Also  
- [Customizing C++ Wizards with Common JScript Functions](../ide/customizing-c---wizards-with-common-jscript-functions.md)   
- [JScript Functions for C++ Wizards](../ide/jscript-functions-for-c---wizards.md)   
+ [Customizing C++ Wizards with Common JScript Functions](../ide/customizing-cpp-wizards-with-common-jscript-functions.md)   
+ [JScript Functions for C++ Wizards](../ide/jscript-functions-for-cpp-wizards.md)   
  [Creating a Custom Wizard](../ide/creating-a-custom-wizard.md)   
  [Designing a Wizard](../ide/designing-a-wizard.md)   
  [GetCodeForExitInstance](../ide/getcodeforexitinstance.md)

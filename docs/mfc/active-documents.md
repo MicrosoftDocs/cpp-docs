@@ -1,13 +1,13 @@
 ---
-title: "Active Documents"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Active Documents | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "views [C++], active documents"
   - "active documents [C++], views"
 ms.assetid: 1378f18e-aaa6-420b-8501-4b974905baa0
-caps.latest.revision: 10
+caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -144,3 +145,4 @@ Active documents extend the compound document technology of OLE. These extension
   
 ## See Also  
  [Active Document Containment](../mfc/active-document-containment.md)
+

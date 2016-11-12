@@ -1,13 +1,13 @@
 ---
-title: "Basic Mechanics of Attributes"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Basic Mechanics of Attributes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "attributes [C++], about attributes"
 ms.assetid: dc2069c3-b9f3-4a72-965c-4e5208ce8e34
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -34,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Basic Mechanics of Attributes
-There are three ways to insert attributes into your project. First, you can insert them manually into your source code. Second, you can insert them using the property grid of an object in your project. Finally, you can insert them using the various wizards. For more information on using the Properties window and the various wizards, see [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-c---projects.md).  
+There are three ways to insert attributes into your project. First, you can insert them manually into your source code. Second, you can insert them using the property grid of an object in your project. Finally, you can insert them using the various wizards. For more information on using the Properties window and the various wizards, see [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md).  
   
  Starting with Visual C++ .NET, the compiler recognizes the presence of attributes in a source file and is able to dynamically parse and verify them during compilation.  
   
@@ -45,9 +46,9 @@ There are three ways to insert attributes into your project. First, you can inse
  ![Component attribute communication](../windows/media/vccompattrcomm.gif "vcCompAttrComm")  
   
 > [!NOTE]
->  Attribute usage does not alter the contents of the source file. The only time the generated attribute code is visible is during debugging sessions. In addition, for each source file in the project, you can generate a text file that displays the results of the attribute substitution. For more information on this procedure, see [/Fx (Merge Injected Code)](../buildref/-fx--merge-injected-code-.md) and [Debugging Injected Code](../Topic/How%20to:%20Debug%20Injected%20Code.md).  
+>  Attribute usage does not alter the contents of the source file. The only time the generated attribute code is visible is during debugging sessions. In addition, for each source file in the project, you can generate a text file that displays the results of the attribute substitution. For more information on this procedure, see [/Fx (Merge Injected Code)](../build/reference/fx-merge-injected-code.md) and [Debugging Injected Code](../Topic/How%20to:%20Debug%20Injected%20Code.md).  
   
- Like most C++ constructs, attributes have a set of characteristics that defines their proper usage. This is referred to as the context of the attribute and is addressed in the attribute context table for each attribute reference topic. For example, the [coclass](../windows/coclass.md) attribute can only be applied to an existing class or structure, as opposed to the [cpp_quote](../windows/cpp_quote.md) attribute, which can be inserted anywhere within a C++ source file.  
+ Like most C++ constructs, attributes have a set of characteristics that defines their proper usage. This is referred to as the context of the attribute and is addressed in the attribute context table for each attribute reference topic. For example, the [coclass](../windows/coclass.md) attribute can only be applied to an existing class or structure, as opposed to the [cpp_quote](../windows/cpp-quote.md) attribute, which can be inserted anywhere within a C++ source file.  
   
 ## See Also  
  [Concepts](../windows/attributed-programming-concepts.md)

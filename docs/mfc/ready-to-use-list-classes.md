@@ -1,13 +1,13 @@
 ---
-title: "Ready-to-Use List Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Ready-to-Use List Classes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.classes.list"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "list classes"
   - "collection classes, lists"
 ms.assetid: aed8e9bd-edb7-4620-84a2-77c20322abd7
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,14 +40,15 @@ translation.priority.ht:
 # Ready-to-Use List Classes
 The following classes are ready-to-use list classes.  
   
- [CObList](../mfcref/coblist-class.md)  
+ [CObList](../mfc/reference/coblist-class.md)  
  Stores pointers to objects of class `CObject` or to objects of classes derived from `CObject` in a linked list.  
   
- [CPtrList](../mfcref/cptrlist-class.md)  
+ [CPtrList](../mfc/reference/cptrlist-class.md)  
  Stores pointers to `void` (generic pointers) in a linked list.  
   
- [CStringList](../mfcref/cstringlist-class.md)  
+ [CStringList](../mfc/reference/cstringlist-class.md)  
  Stores `CString` objects in a linked list.  
   
 ## See Also  
  [Class Overview](../mfc/class-library-overview.md)
+

@@ -1,13 +1,13 @@
 ---
-title: "Editing a COM Interface"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Editing a COM Interface | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.codewiz.com.editing.interfaces"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "properties [C++], adding to COM interfaces"
 ms.assetid: 6c2909e0-af2d-4a37-bb39-ed372e6129cf
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -48,12 +49,12 @@ By using commands from the Class View shortcut menu, you can define new methods 
   
 |Wizard|Project type|  
 |------------|------------------|  
-|[Add Property Wizard](../ide/names--add-property-wizard.md)|ATL or MFC projects supporting ATL. Right-click the interface to which you want to add the property.<br /><br /> Visual C++ detects the project type and modifies the options in the Add Property Wizard accordingly:<br /><br /> -   For dispinterfaces in projects created by using the [MFC Application Wizard](../mfcref/mfc-application-wizard.md), invoking the Add Property Wizard provides options specific to MFC.<br />-   For MFC ActiveX control interfaces, the Add Property Wizard provides a list of stock methods and properties that you can use as provided or customize for your control.<br />-   For all other interfaces, the Add Property Wizards provide options useful in most situations.|  
-|[Add Method Wizard](../ide/add-method-wizard.md)|ATL or MFC projects supporting ATL. Right-click the interface to which you want to add the method.<br /><br /> Visual C++ detects the project type and modifies the options in the Add Method Wizard accordingly:<br /><br /> -   For dispinterfaces in projects created by using the [MFC Application Wizard](../mfcref/mfc-application-wizard.md), invoking the Add Method Wizard provides options specific to MFC.<br />-   For MFC ActiveX control interfaces, the Add Method Wizard provides a list of stock methods and properties that you can use as provided or customize for your control.<br />-   For all other interfaces, the **Add Method** wizards provide options useful in most situations.|  
+|[Add Property Wizard](../ide/names-add-property-wizard.md)|ATL or MFC projects supporting ATL. Right-click the interface to which you want to add the property.<br /><br /> Visual C++ detects the project type and modifies the options in the Add Property Wizard accordingly:<br /><br /> -   For dispinterfaces in projects created by using the [MFC Application Wizard](../mfc/reference/mfc-application-wizard.md), invoking the Add Property Wizard provides options specific to MFC.<br />-   For MFC ActiveX control interfaces, the Add Property Wizard provides a list of stock methods and properties that you can use as provided or customize for your control.<br />-   For all other interfaces, the Add Property Wizards provide options useful in most situations.|  
+|[Add Method Wizard](../ide/add-method-wizard.md)|ATL or MFC projects supporting ATL. Right-click the interface to which you want to add the method.<br /><br /> Visual C++ detects the project type and modifies the options in the Add Method Wizard accordingly:<br /><br /> -   For dispinterfaces in projects created by using the [MFC Application Wizard](../mfc/reference/mfc-application-wizard.md), invoking the Add Method Wizard provides options specific to MFC.<br />-   For MFC ActiveX control interfaces, the Add Method Wizard provides a list of stock methods and properties that you can use as provided or customize for your control.<br />-   For all other interfaces, the **Add Method** wizards provide options useful in most situations.|  
   
  Additionally, you can implement new interfaces on your COM control by right-clicking the object's control class in Class View and clicking [Implement Interface](../ide/implement-interface-wizard.md).  
   
 ## See Also  
  [Working with Resource Files](../mfc/working-with-resource-files.md)   
- [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards--c---.md)   
- [Visual C++ Project Types](../ide/visual-c---project-types.md)
+ [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)   
+ [Visual C++ Project Types](../ide/visual-cpp-project-types.md)

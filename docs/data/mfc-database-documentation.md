@@ -1,13 +1,13 @@
 ---
-title: "MFC Database Documentation"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "MFC Database Documentation | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "MFC [C++], database applications"
 ms.assetid: bb120282-cd0d-4bf4-a27c-93b3501fb3a0
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -44,7 +45,7 @@ The MFC documentation for DAO and ODBC classes consists of the components listed
 |-----------------------------|---------|  
 |Classes for both DAO and ODBC|The class name in the *MFC Reference*|  
 |Global functions and macros for both DAO and ODBC|The function or macro name in the *MFC Reference*|  
-|Programming with the MFC ODBC classes|[ODBC and MFC](../data/odbc-and-mfc.md)|  
+|Programming with the MFC ODBC classes|[ODBC and MFC](../data/odbc/odbc-and-mfc.md)|  
 |Technical notes for both DAO and ODBC|[MFC Technical Notes](../mfc/technical-notes-by-category.md)|  
   
 ##  <a name="_core_mfc_documentation_and_dao_documentation"></a> MFC Documentation and DAO Documentation  
@@ -66,5 +67,5 @@ The MFC documentation for DAO and ODBC classes consists of the components listed
  The MFC documentation for the MFC ODBC classes is organized differently. The MFC ODBC classes supply a high-level abstraction that rests on ODBC rather than a wrapper of the ODBC API. Therefore, the two documentation sets are less connected than are the MFC and DAO documentation sets. The ODBC documentation uses the C language, which is much closer to C++ than is Basic.  
   
 ## See Also  
- [MFC Database Classes (ODBC and DAO)](../data/mfc-database-classes--odbc-and-dao-.md)   
- [ODBC Basics](../data/odbc-basics.md)
+ [MFC Database Classes (ODBC and DAO)](../data/mfc-database-classes-odbc-and-dao.md)   
+ [ODBC Basics](../data/odbc/odbc-basics.md)

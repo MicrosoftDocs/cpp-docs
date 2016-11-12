@@ -1,13 +1,13 @@
 ---
-title: "nonextensible"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "nonextensible | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "vc-attr.nonextensible"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "nonextensible attribute"
 ms.assetid: c7ef1554-809f-4ea0-a7cd-dc7786d40c3e
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -84,4 +85,4 @@ __interface IFireTabCtrl
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Interface Attributes](../windows/interface-attributes.md)   
- [Attributes Samples](assetId:///558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

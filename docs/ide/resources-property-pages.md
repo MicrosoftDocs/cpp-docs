@@ -1,13 +1,13 @@
 ---
-title: "Resources Property Pages"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Resources Property Pages | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "VC.Project.VCResourceCompilerTool.ShowProgress"
@@ -22,6 +22,7 @@ helpviewer_keywords:
   - "Resources property pages"
 ms.assetid: dade2f6b-c51f-4c33-9023-41956ae4b5f6
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -42,9 +43,9 @@ translation.priority.ht:
 # Resources Property Pages
 For more information on using the resource compiler, see [Using RC (The RC Command Line)](http://msdn.microsoft.com/library/windows/desktop/aa381055).  
   
- For information on how to access the **Resources** property pages, see [How To: Specify Project Properties with Property Pages](../notintoc/how-to--specify-project-properties-with-property-pages.md).  
+ For information on how to access the **Resources** property pages, see [How To: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md).  
   
- To programmatically access these properties, see \<xref:Microsoft.VisualStudio.VCProjectEngine.VCResourceCompilerTool>.  
+ To programmatically access these properties, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCResourceCompilerTool>.  
   
 ## See Also  
- [Property Pages](../ide/property-pages--visual-c---.md)
+ [Property Pages](../ide/property-pages-visual-cpp.md)

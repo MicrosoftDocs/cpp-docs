@@ -1,13 +1,13 @@
 ---
-title: "Adding Items to the Header Control"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Adding Items to the Header Control | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "CHeaderCtrl class, adding items"
   - "header controls, adding items to"
 ms.assetid: 2e9a28b1-7302-4a93-8037-c5a4183e589a
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,13 +36,13 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Adding Items to the Header Control
-After creating your header control ([CHeaderCtrl](../mfcref/cheaderctrl-class.md)) in its parent window, add as many "header items" as you need: usually one per column.  
+After creating your header control ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) in its parent window, add as many "header items" as you need: usually one per column.  
   
 ### To add a header item  
   
 1.  Prepare an [HD_ITEM](http://msdn.microsoft.com/library/windows/desktop/bb775247) structure.  
   
-2.  Call [CHeaderCtrl::InsertItem](../Topic/CHeaderCtrl::InsertItem.md), passing the structure.  
+2.  Call [CHeaderCtrl::InsertItem](../mfc/reference/cheaderctrl-class.md#cheaderctrl__insertitem), passing the structure.  
   
 3.  Repeat steps 1 and 2 for additional items.  
   
@@ -49,4 +50,5 @@ After creating your header control ([CHeaderCtrl](../mfcref/cheaderctrl-class.md
   
 ## See Also  
  [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

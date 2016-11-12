@@ -1,13 +1,13 @@
 ---
-title: "Using Documents"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Using Documents | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -24,7 +24,8 @@ helpviewer_keywords:
   - "printing [MFC], documents"
   - "writing to files [C++]"
 ms.assetid: f390d6d8-d0e1-4497-9b6a-435f7ce0776c
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -57,7 +58,7 @@ Working together, documents and views:
   
  The document is particularly involved in managing data. Store your data, normally, in document class member variables. The view uses these variables to access the data for display and update. The document's default serialization mechanism manages reading and writing the data to and from files. Documents can also handle commands (but not Windows messages other than **WM_COMMAND**).  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Deriving a document class from CDocument](../mfc/deriving-a-document-class-from-cdocument.md)  
   
@@ -69,9 +70,10 @@ Working together, documents and views:
   
 -   [Handling commands in the document](../mfc/handling-commands-in-the-document.md)  
   
--   [The OnNewDocument member function](../Topic/CDocument::OnNewDocument.md)  
+-   [The OnNewDocument member function](../mfc/reference/cdocument-class.md#onnewdocument)  
   
--   [The DeleteContents member function](../Topic/CDocument::DeleteContents.md)  
+-   [The DeleteContents member function](../mfc/reference/cdocument-class.md#deletecontents)  
   
 ## See Also  
  [Document/View Architecture](../mfc/document-view-architecture.md)
+

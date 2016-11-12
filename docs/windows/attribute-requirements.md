@@ -1,18 +1,19 @@
 ---
-title: "Attribute Requirements"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Attribute Requirements | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
 ms.assetid: e42ca06f-5f3c-40b5-972a-39ecf522d227
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 

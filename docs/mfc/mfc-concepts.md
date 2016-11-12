@@ -1,20 +1,21 @@
 ---
-title: "MFC Concepts"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "MFC Concepts | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "Concepts"
 dev_langs: 
   - "C++"
 ms.assetid: b3d2f6b2-0508-4630-a9a1-649d89000563
-caps.latest.revision: 13
+caps.latest.revision: 15
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -45,7 +46,7 @@ This section provides conceptual and task-based topics to help you program using
  [Collections](../mfc/collections.md)  
  Discusses collection classes created from and not created from C++ templates.  
   
- [Date and Time](../atl/date-and-time.md)  
+ [Date and Time](../atl-mfc-shared/date-and-time.md)  
  Provides links to topics discussing using date and time with MFC.  
   
  [Files](../mfc/files-in-mfc.md)  
@@ -76,7 +77,7 @@ This section provides conceptual and task-based topics to help you program using
  [MFC COM](../mfc/mfc-com.md)  
  Discusses a subset of MFC, which is designed to support COM, while most of the Active Template Library (ATL) is designed for COM programming.  
   
- [Multithreading with C++ and MFC](../parallel/multithreading-with-c---and-mfc.md)  
+ [Multithreading with C++ and MFC](../parallel/multithreading-with-cpp-and-mfc.md)  
  Describes what processes and threads are and discusses the MFC approach to multithreading.  
   
  [Windows Sockets in MFC](../mfc/windows-sockets.md)  
@@ -85,5 +86,6 @@ This section provides conceptual and task-based topics to help you program using
  [MFC Reference](../mfc/mfc-desktop-applications.md)  
  Provides reference material for the MFC Library, a set of classes that constitute an application framework, which is the framework of an application written for the Windows API.  
   
- [MFC Samples](../top/visual-c---samples.md)  
+ [MFC Samples](../top/visual-cpp-samples.md)  
  Provides links to samples that show how to use MFC in desktop applications, DLLs, database applications, controls, Web applications, and more.
+

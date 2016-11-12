@@ -1,13 +1,13 @@
 ---
-title: "Opening the Resource Editor for a Given Symbol"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Opening the Resource Editor for a Given Symbol | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.editors.symbol.resource"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "resource editors, resource symbols"
 ms.assetid: f715807b-5af2-4627-be25-be63b23fd097
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 

@@ -1,13 +1,13 @@
 ---
-title: "Semantics of Expressions"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Semantics of Expressions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "expression evaluation, about expression evaluation"
 ms.assetid: 4a792154-533b-48b9-8709-31bfc170f0a7
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -36,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Semantics of Expressions
-Expressions are evaluated according to the precedence and grouping of their operators. ([Operator Precedence and Associativity](../cpp/c---built-in-operators--precedence-and-associativity.md) in [Lexical Conventions](../cpp/lexical-conventions.md), shows the relationships the C++ operators impose on expressions.)  
+Expressions are evaluated according to the precedence and grouping of their operators. ([Operator Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md) in [Lexical Conventions](../cpp/lexical-conventions.md), shows the relationships the C++ operators impose on expressions.)  
   
 ## Order of evaluation  
  Consider this example:  
@@ -131,4 +132,4 @@ func( i, ++i );
 -   The expression in a return statement. The expression is completely evaluated and all side effects completed before control returns to the calling function.  
   
 ## See Also  
- [Expressions](../cpp/expressions--c---.md)
+ [Expressions](../cpp/expressions-cpp.md)

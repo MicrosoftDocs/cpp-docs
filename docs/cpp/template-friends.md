@@ -1,18 +1,19 @@
 ---
-title: "Template Friends"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Template Friends | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
 ms.assetid: 077acea5-0d0f-4b33-916d-1211797e5e28
-caps.latest.revision: 12
+caps.latest.revision: 14
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 robots: noindex,nofollow
@@ -32,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Template Friends
-Class templates can have [friends](assetId:///bf412640-d857-4acb-b2b5-513131cb9681). A class or class template, function, or function template can be a friend to a template class. Friends can also be specializations of a class template or function template, but not partial specializations.  
+Class templates can have [friends](http://msdn.microsoft.com/en-us/bf412640-d857-4acb-b2b5-513131cb9681). A class or class template, function, or function template can be a friend to a template class. Friends can also be specializations of a class template or function template, but not partial specializations.  
   
  **C++ 11**:  A type parameter can be declared as a friend by using the form `friend T;` .  
   
@@ -118,9 +119,12 @@ int main() {
 }  
 ```  
   
- **A B C D E F G H I J K L M N O P Q R S T U V W X Y Z**   
-**a b c d e f g h i j k l m n o p q r s t u v w x y z**   
-**A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z**    
+```Output  
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z   
+a b c d e f g h i j k l m n o p q r s t u v w x y z   
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z   
+```  
+  
 ## Example  
  The next example involves a friend that has a template specialization. A function template specialization is automatically a friend if the original function template is a friend.  
   
@@ -205,8 +209,11 @@ int main()
 }  
 ```  
   
- **10 generic**  
-**10 int**   
+```Output  
+10 generic  
+10 int  
+```  
+  
 ## Example  
  The next example shows a friend class template declared within a class template. The class template is then used as the template argument for the friend class. Friend class templates must be defined outside of the class template in which they are declared. Any specializations or partial specializations of the friend template are also friends of the original class template.  
   
@@ -255,9 +262,12 @@ int main()
 }  
 ```  
   
- **65**  
-**97**  
-**A**  
-**a**   
+```Output  
+65  
+97  
+A  
+a  
+```  
+  
 ## See Also  
  [Default Arguments](../cpp/default-arguments.md)

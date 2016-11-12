@@ -1,13 +1,13 @@
 ---
-title: "Adding Commands to a Menu"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Adding Commands to a Menu | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.editors.menu"
@@ -21,6 +21,7 @@ helpviewer_keywords:
   - "menu items"
 ms.assetid: 1523a755-0ab5-42f8-9e98-bb9881564431
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -50,7 +51,7 @@ translation.priority.ht:
 3.  In the new item box, type a name for the new menu command.  
   
     > [!NOTE]
-    >  The text you type appears in both the Menu editor and in the **Caption** box in the [Properties Window](../Topic/Properties%20Window.md). You can edit the properties for your new menu in either location.  
+    >  The text you type appears in both the Menu editor and in the **Caption** box in the [Properties Window](/visual-studio/ide/reference/properties-window). You can edit the properties for your new menu in either location.  
   
     > [!TIP]
     >  You can define a mnemonic key (hot key) that allows the user to select the menu command. Type an ampersand (&) in front of a letter to specify it as the mnemonic. The user can select the menu command by typing that letter.  

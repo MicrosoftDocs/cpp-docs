@@ -1,13 +1,13 @@
 ---
-title: "Macros and NMAKE"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Macros and NMAKE | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "macros, NMAKE"
 ms.assetid: d424fd47-63eb-4982-9410-6f412730c265
 caps.latest.revision: 6
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 

@@ -1,13 +1,13 @@
 ---
-title: "Hardware Exceptions"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Hardware Exceptions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "low level errors"
 ms.assetid: 06ac6f01-a8cf-4426-bb12-1688315ae1cd
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -62,4 +63,4 @@ Most of the standard exceptions recognized by the operating system are hardware-
   
 ## See Also  
  [Writing an Exception Handler](../cpp/writing-an-exception-handler.md)   
- [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling--c-c---.md)
+ [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

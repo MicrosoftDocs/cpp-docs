@@ -1,13 +1,13 @@
 ---
-title: "Multiple Base Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Multiple Base Classes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "multiple base classes"
 ms.assetid: a30c69fe-401c-4a87-96a0-e0da70c7c740
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -36,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Multiple Base Classes
-As described in [Multiple Inheritance](assetId:///3b74185e-2beb-4e29-8684-441e51d2a2ca), a class can be derived from more than one base class. In a multiple-inheritance model (where classes are derived from more than one base class), the base classes are specified using the *base-list* grammar element (see the Grammar section in [Overview](../notintoc/overview-of-derived-classes.md)). For example, the class declaration for `CollectionOfBook`, derived from `Collection` and `Book`, can be specified:  
+As described in [Multiple Inheritance](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca), a class can be derived from more than one base class. In a multiple-inheritance model (where classes are derived from more than one base class), the base classes are specified using the *base-list* grammar element (see the Grammar section in [Overview](../misc/overview-of-derived-classes.md)). For example, the class declaration for `CollectionOfBook`, derived from `Collection` and `Book`, can be specified:  
   
 ```  
 // deriv_MultipleBaseClasses.cpp  
@@ -158,9 +159,9 @@ pc->b();
   
 1.  If access to the name is ambiguous (as just described), an error message is generated.  
   
-2.  If overloaded functions are unambiguous, they are resolved. (For more information about function overloading ambiguity, see [Argument Matching](../notintoc/argument-matching.md).)  
+2.  If overloaded functions are unambiguous, they are resolved. (For more information about function overloading ambiguity, see [Argument Matching](../misc/argument-matching.md).)  
   
-3.  If access to the name violates member-access permission, an error message is generated. (For more information, see [Member-Access Control](../cpp/member-access-control--c---.md).)  
+3.  If access to the name violates member-access permission, an error message is generated. (For more information, see [Member-Access Control](../cpp/member-access-control-cpp.md).)  
   
  When an expression produces an ambiguity through inheritance, you can manually resolve it by qualifying the name in question with its class name. To make the preceding example compile properly with no ambiguities, use code such as:  
   
@@ -229,4 +230,4 @@ Virtual vs. Nonvirtual Derivation
  In the figure, accessing any member of class `A` through nonvirtual base classes causes an ambiguity; the compiler has no information that explains whether to use the subobject associated with `B` or the subobject associated with `C`. However, when `A` is specified as a virtual base class, there is no question which subobject is being accessed.  
   
 ## See Also  
- [Inheritance](../cpp/inheritance---c---.md)
+ [Inheritance](../cpp/inheritance-cpp.md)

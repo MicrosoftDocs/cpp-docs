@@ -1,13 +1,13 @@
 ---
-title: "MBCS Programming Tips"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "MBCS Programming Tips | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "_mbcs"
@@ -20,6 +20,7 @@ helpviewer_keywords:
   - "multibyte characters [C++]"
 ms.assetid: d8ad36b8-917f-474e-8adb-69462adecd17
 caps.latest.revision: 8
+author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 translation.priority.ht: 
@@ -55,4 +56,4 @@ In new development, you should use Unicode character encoding for all strings th
 -   [Buffer Overflow](../text/buffer-overflow.md)  
   
 ## See Also  
- [Support for Multibyte Character Sets (MBCSs)](../text/support-for-multibyte-character-sets--mbcss-.md)
+ [Support for Multibyte Character Sets (MBCSs)](../text/support-for-multibyte-character-sets-mbcss.md)

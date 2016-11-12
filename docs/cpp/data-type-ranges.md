@@ -1,13 +1,13 @@
 ---
-title: "Data Type Ranges"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Data Type Ranges | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "unsigned"
@@ -56,6 +56,7 @@ helpviewer_keywords:
   - "unsigned long int"
 ms.assetid: 3691ceca-05fb-4b82-b1ae-5c4618cda91a
 caps.latest.revision: 25
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -109,7 +110,7 @@ Visual C++ 32-bit and 64-bit compilers recognize the types in the table later in
 |__int64|8|long long, signed long long|–9,223,372,036,854,775,808 to 9,223,372,036,854,775,807|  
 |unsigned __int64|8|unsigned long long|0 to 18,446,744,073,709,551,615|  
 |bool|1|none|false or true|  
-|char|1|none|–128 to 127 by default<br /><br /> 0 to 255 when compiled by using [/J](../buildref/-j--default-char-type-is-unsigned-.md)|  
+|char|1|none|–128 to 127 by default<br /><br /> 0 to 255 when compiled by using [/J](../build/reference/j-default-char-type-is-unsigned.md)|  
 |signed char|1|none|–128 to 127|  
 |unsigned char|1|none|0 to 255|  
 |short|2|short int, signed short int|–32,768 to 32,767|  
@@ -130,12 +131,12 @@ Visual C++ 32-bit and 64-bit compilers recognize the types in the table later in
   
  The `int` and `unsigned``int` types have a size of four bytes. However, portable code should not depend on the size of `int` because the language standard allows this to be implementation-specific.  
   
- C/C++ in Visual Studio also supports sized integer types. For more information, see [__int8, \__int16, \__int32, \__int64](../cpp/__int8--__int16--__int32--__int64.md) and [Integer Limits](../cpp/integer-limits.md).  
+ C/C++ in Visual Studio also supports sized integer types. For more information, see [__int8, \__int16, \__int32, \__int64](../cpp/int8-int16-int32-int64.md) and [Integer Limits](../cpp/integer-limits.md).  
   
- For more information about the restrictions of the sizes of each type, see [Fundamental Types](../cpp/fundamental-types---c---.md).  
+ For more information about the restrictions of the sizes of each type, see [Fundamental Types](../cpp/fundamental-types-cpp.md).  
   
- The range of enumerated types varies depending on the language context and specified compiler flags. For more information, see [C Enumeration Declarations](../c/c-enumeration-declarations.md) and [Enumerations](../cpp/enumerations--c---.md).  
+ The range of enumerated types varies depending on the language context and specified compiler flags. For more information, see [C Enumeration Declarations](../c-language/c-enumeration-declarations.md) and [Enumerations](../cpp/enumerations-cpp.md).  
   
 ## See Also  
- [Keywords](../cpp/keywords--c---.md)   
- [Fundamental Types](../cpp/fundamental-types---c---.md)
+ [Keywords](../cpp/keywords-cpp.md)   
+ [Fundamental Types](../cpp/fundamental-types-cpp.md)

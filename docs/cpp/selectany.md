@@ -1,13 +1,13 @@
 ---
-title: "selectany"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "selectany | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "selectany_cpp"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "selectany __declspec keyword"
 ms.assetid: 9c353017-5a42-4f50-b741-bd13da1ce84d
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -49,7 +50,7 @@ __declspec( selectany ) declarator
 ```  
   
 ## Remarks  
- At link time, if multiple definitions of a COMDAT are seen, the linker picks one and discards the rest. If the linker option [/OPT:REF](../buildref/-opt--optimizations-.md) (Optimizations) is selected, then COMDAT elimination will occur to remove all the unreferenced data items in the linker output.  
+ At link time, if multiple definitions of a COMDAT are seen, the linker picks one and discards the rest. If the linker option [/OPT:REF](../build/reference/opt-optimizations.md) (Optimizations) is selected, then COMDAT elimination will occur to remove all the unreferenced data items in the linker output.  
   
  Constructors and assignment by global function or static methods in the declaration do not create a reference and will not prevent /OPT:REF elimination. Side effects from such code should not be depended on when no other references to the data exist.  
   
@@ -94,7 +95,7 @@ __declspec(selectany) X x(1);
 ```  
   
 ## Example  
- This code shows how to use the `selectany` attribute to ensure data COMDAT folding when you also use the [/OPT:ICF](../buildref/-opt--optimizations-.md) linker option. Note that data must be marked with `selectany` and placed in a **const** (readonly) section. You must explicitly specify the read-only section.  
+ This code shows how to use the `selectany` attribute to ensure data COMDAT folding when you also use the [/OPT:ICF](../build/reference/opt-optimizations.md) linker option. Note that data must be marked with `selectany` and placed in a **const** (readonly) section. You must explicitly specify the read-only section.  
   
 ```  
 // selectany2.cpp  
@@ -110,5 +111,5 @@ int main() {
  **END Microsoft Specific**  
   
 ## See Also  
- [__declspec](../cpp/__declspec.md)   
- [Keywords](../cpp/keywords--c---.md)
+ [__declspec](../cpp/declspec.md)   
+ [Keywords](../cpp/keywords-cpp.md)

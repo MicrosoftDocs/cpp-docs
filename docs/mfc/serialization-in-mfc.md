@@ -1,13 +1,13 @@
 ---
-title: "Serialization in MFC"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Serialization in MFC | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "serialization [C++], MFC"
   - "serialization [C++], bypassing"
 ms.assetid: fb596a18-4522-47e0-96e0-192732d24c12
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -52,20 +53,20 @@ This article explains the serialization mechanism provided in the Microsoft Foun
 > [!NOTE]
 >  Do not confuse the `CArchive` class with general-purpose iostream classes, which are for formatted text only. The `CArchive` class is for binary-format serialized objects.  
   
- If you want, you can bypass MFC serialization to create your own mechanism for persistent data storage. You will need to override the class member functions that initiate serialization at the user's command. See the discussion in [Technical Note 22](../mfc/tn022--standard-commands-implementation.md) of the `ID_FILE_OPEN`, **ID_FILE_SAVE**, and **ID_FILE_SAVE_AS** standard commands.  
+ If you want, you can bypass MFC serialization to create your own mechanism for persistent data storage. You will need to override the class member functions that initiate serialization at the user's command. See the discussion in [Technical Note 22](../mfc/tn022-standard-commands-implementation.md) of the `ID_FILE_OPEN`, **ID_FILE_SAVE**, and **ID_FILE_SAVE_AS** standard commands.  
   
  The following articles cover the two main tasks required for serialization:  
   
--   [Serialization: Making a Serializable Class](../mfc/serialization--making-a-serializable-class.md)  
+-   [Serialization: Making a Serializable Class](../mfc/serialization-making-a-serializable-class.md)  
   
--   [Serialization: Serializing an Object](../mfc/serialization--serializing-an-object.md)  
+-   [Serialization: Serializing an Object](../mfc/serialization-serializing-an-object.md)  
   
- The article [Serialization: Serialization vs. Database Input/Output](../mfc/serialization--serialization-vs.-database-input-output.md) describes when serialization is an appropriate input/output technique in database applications.  
+ The article [Serialization: Serialization vs. Database Input/Output](../mfc/serialization-serialization-vs-database-input-output.md) describes when serialization is an appropriate input/output technique in database applications.  
   
 ## See Also  
  [Concepts](../mfc/mfc-concepts.md)   
  [General MFC Topics](../mfc/general-mfc-topics.md)   
- [CArchive Class](../mfcref/carchive-class.md)   
- [CObject Class](../mfcref/cobject-class.md)   
- [CDocument Class](../mfcref/cdocument-class.md)   
- [CFile Class](../mfcref/cfile-class.md)
+ [CArchive Class](../mfc/reference/carchive-class.md)   
+ [CObject Class](../mfc/reference/cobject-class.md)   
+ [CDocument Class](../mfc/reference/cdocument-class.md)   
+ [CFile Class](../mfc/reference/cfile-class.md)

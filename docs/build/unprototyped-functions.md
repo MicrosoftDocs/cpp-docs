@@ -1,18 +1,19 @@
 ---
-title: "Unprototyped Functions"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Unprototyped Functions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 ms.assetid: 34200b8c-5b52-4f0d-aff8-9f70d82868ed
 caps.latest.revision: 7
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 

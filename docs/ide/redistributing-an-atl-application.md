@@ -1,13 +1,13 @@
 ---
-title: "Redistributing an ATL application"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Redistributing an ATL application | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "OLE DB templates, redistributing"
 ms.assetid: 9a696b22-2345-43ec-826b-be7cb8cfd676
 caps.latest.revision: 16
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -65,4 +66,4 @@ filename /regserver
  For OLE DB Templates applications, ensure that the target computer has the latest versions of Microsoft Data Access Components (MDAC) files. For more information, see [Redistributing Database Support Files](../ide/redistributing-database-support-files.md).  
   
 ## See Also  
- [Redistributing Visual C++ Files](../ide/redistributing-visual-c---files.md)
+ [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md)

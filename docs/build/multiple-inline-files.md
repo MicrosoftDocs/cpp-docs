@@ -1,13 +1,13 @@
 ---
-title: "Multiple Inline Files"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Multiple Inline Files | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "NMAKE program, inline files"
 ms.assetid: 6d381dcf-0ed8-45d1-8df3-b4598d860b99
 caps.latest.revision: 8
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 

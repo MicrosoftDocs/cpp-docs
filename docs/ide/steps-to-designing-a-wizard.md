@@ -1,13 +1,13 @@
 ---
-title: "Steps to Designing a Wizard"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Steps to Designing a Wizard | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "custom wizards, designing"
 ms.assetid: dc22746b-99e3-4569-a8b4-b3d7cbabf8f2
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,14 +36,14 @@ translation.priority.ht:
 # Steps to Designing a Wizard
 You can use a wizard to create and configure common project starter files. Like any project, creating a wizard takes planning. The following steps describe one way to familiarize yourself with the Visual C++ Custom Wizard and apply it to your own projects.  
   
-1.  Examine the [custom wizard samples](assetId:///6afa2143-062c-4a68-81ca-66cbf4b95261) included with Visual Studio.  
+1.  Examine the [custom wizard samples](http://msdn.microsoft.com/en-us/6afa2143-062c-4a68-81ca-66cbf4b95261) included with Visual Studio.  
   
 2.  Lay the groundwork for the type of project the wizard should create. Like all application construction, this process can go through many hands and many different iterations.  
   
 3.  Create your project with the Visual C++ [Custom Wizard](../ide/creating-a-custom-wizard.md), specifying user interface and page number options.  
   
     > [!NOTE]
-    >  If you indicate no user interface (that is, if you clear **User interface** in [Application Settings, Custom Wizard](../ide/application-settings--custom-wizard.md) in the Custom Wizard), your wizard sets the custom parameter WIZARD_UI=**FALSE** and creates project template files with no user input and no .htm files. As a result, you do not specify page numbers. See [The .vsz File (Project Control)](../ide/.vsz-file--project-control-.md) for more information.  
+    >  If you indicate no user interface (that is, if you clear **User interface** in [Application Settings, Custom Wizard](../ide/application-settings-custom-wizard.md) in the Custom Wizard), your wizard sets the custom parameter WIZARD_UI=**FALSE** and creates project template files with no user input and no .htm files. As a result, you do not specify page numbers. See [The .vsz File (Project Control)](../ide/dot-vsz-file-project-control.md) for more information.  
   
 4.  [Examine the basic project](../ide/examining-the-basic-wizard-project.md) that the Custom Wizard created for you.  
   
@@ -56,7 +57,7 @@ You can use a wizard to create and configure common project starter files. Like 
   
 9. Build and test the wizard.  
   
-10. Debug your wizard. See [Debugging Script and Web Applications](../Topic/Debugging%20Web%20Applications%20and%20Script.md) for more information.  
+10. Debug your wizard. See [Debugging Script and Web Applications](/visual-studio/debugger/debugging-web-applications-and-script) for more information.  
   
     > [!NOTE]
     >  When you are debugging JScript, you cannot perform mixed-mode debugging with native code.  

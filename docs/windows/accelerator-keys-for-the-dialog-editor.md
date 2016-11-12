@@ -1,13 +1,13 @@
 ---
-title: "Accelerator Keys for the Dialog Editor"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Accelerator Keys for the Dialog Editor | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.editors.dialog"
@@ -16,7 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "Dialog editor, shortcut keys"
 ms.assetid: 940270e9-a974-425b-a681-dfeaba0adf66
-caps.latest.revision: 13
+caps.latest.revision: 15
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,10 +36,10 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Accelerator Keys for the Dialog Editor
-Below are the default accelerator keys for the Dialog editor commands. To change shortcut keys, click **Options** on the **Tools** menu, then choose **Keyboard** under the **Environment** folder. For more information, see [Identifying and Customizing Keyboard Shortcuts](../Topic/Identifying%20and%20Customizing%20Keyboard%20Shortcuts%20in%20Visual%20Studio.md).  
+Below are the default accelerator keys for the Dialog editor commands. To change shortcut keys, click **Options** on the **Tools** menu, then choose **Keyboard** under the **Environment** folder. For more information, see [Identifying and Customizing Keyboard Shortcuts](/visual-studio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).  
   
 > [!NOTE]
->  The options available in dialog boxes, and the names and locations of menu commands you see, might differ from what is described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](assetId:///22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The options available in dialog boxes, and the names and locations of menu commands you see, might differ from what is described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 |Command|Keys|Description|  
 |-------------|----------|-----------------|  
@@ -60,10 +61,11 @@ Below are the default accelerator keys for the Dialog editor commands. To change
 |Format.TestDialog|CTRL + T|Runs the dialog box to test appearance and behavior|  
 |Format.ToggleGuides|CTRL + G|Cycles between no grid, guidelines, and grid for dialog editing|  
   
- For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](assetId:///9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
+ For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
   
 ## Requirements  
  Win32  
   
 ## See Also  
  [Dialog Editor](../mfc/dialog-editor.md)
+

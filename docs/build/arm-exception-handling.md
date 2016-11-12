@@ -1,18 +1,19 @@
 ---
-title: "ARM Exception Handling"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "ARM Exception Handling | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 ms.assetid: fe0e615f-c033-4ad5-97f4-ff96af45b201
 caps.latest.revision: 6
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -747,4 +748,4 @@ Function:
   
 ## See Also  
  [Overview of ARM ABI Conventions](../build/overview-of-arm-abi-conventions.md)   
- [Common Visual C++ ARM Migration Issues](../build/common-visual-c---arm-migration-issues.md)
+ [Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md)

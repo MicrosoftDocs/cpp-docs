@@ -1,13 +1,13 @@
 ---
-title: "Compiler COM Global Functions"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Compiler COM Global Functions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "COM, compiler support"
 ms.assetid: 74449d26-50a2-47c7-b175-7cf2cf83533e
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,8 +41,8 @@ translation.priority.ht:
   
 |Function|Description|  
 |--------------|-----------------|  
-|[_com_raise_error](../cpp/_com_raise_error.md)|Throws a [_com_error](../cpp/_com_error-class.md) in response to a failure.|  
-|[_set_com_error_handler](../cpp/_set_com_error_handler.md)|Replaces the default function that is used for COM error-handling.|  
+|[_com_raise_error](../cpp/com-raise-error.md)|Throws a [_com_error](../cpp/com-error-class.md) in response to a failure.|  
+|[_set_com_error_handler](../cpp/set-com-error-handler.md)|Replaces the default function that is used for COM error-handling.|  
 |[ConvertBSTRToString](../cpp/convertbstrtostring.md)|Converts a `BSTR` value to a **char \***.|  
 |[ConvertStringToBSTR](../cpp/convertstringtobstr.md)|Converts a **char \*** value to a `BSTR`.|  
   

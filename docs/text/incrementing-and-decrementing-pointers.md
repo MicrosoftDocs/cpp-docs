@@ -1,13 +1,13 @@
 ---
-title: "Incrementing and Decrementing Pointers"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Incrementing and Decrementing Pointers | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "decrementing pointers"
 ms.assetid: 0872b4a0-e2bd-4004-8319-070efb76f2fd
 caps.latest.revision: 7
+author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 translation.priority.ht: 

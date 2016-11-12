@@ -1,13 +1,13 @@
 ---
-title: "XDCMake Reference"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "XDCMake Reference | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "xdcmake"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "xdcmake program"
 ms.assetid: 14e65747-d000-4343-854b-8393bf01cbac
 caps.latest.revision: 17
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,11 +36,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # XDCMake Reference
-xdcmake.exe is a program that compiles .xdc files into an .xml file. An .xdc file is created by the Visual C++ compiler for each source code file when source code is compiled with [/doc](../buildref/-doc--process-documentation-comments---c-c---.md) and when the source code file contains documentation comments marked up with XML tags.  
+xdcmake.exe is a program that compiles .xdc files into an .xml file. An .xdc file is created by the Visual C++ compiler for each source code file when source code is compiled with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) and when the source code file contains documentation comments marked up with XML tags.  
   
 ### To use xdcmake.exe in the Visual Studio development environment  
   
-1.  Open the project's **Property Pages** dialog box. For details, see [How to: Open Project Property Pages](../notintoc/how-to--open-project-property-pages.md).  
+1.  Open the project's **Property Pages** dialog box. For details, see [How to: Open Project Property Pages](../misc/how-to-open-project-property-pages.md).  
   
 2.  Open the **Configuration Properties** folder.  
   
@@ -70,7 +71,7 @@ xdcmake.exe is a program that compiles .xdc files into an .xml file. An .xdc fil
 ## Remarks  
  Visual Studio will invoke xdcmake.exe automatically when building a project. You can also invoke xdcmake.exe at the command line.  
   
- See [Recommended Tags for Documentation Comments](../ide/recommended-tags-for-documentation-comments--visual-c---.md) for more information on adding documentation comments to source code files.  
+ See [Recommended Tags for Documentation Comments](../ide/recommended-tags-for-documentation-comments-visual-cpp.md) for more information on adding documentation comments to source code files.  
   
 ## See Also  
- [XML Documentation](../ide/xml-documentation--visual-c---.md)
+ [XML Documentation](../ide/xml-documentation-visual-cpp.md)

@@ -1,13 +1,13 @@
 ---
-title: "AFXDLL Versions"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "AFXDLL Versions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "afxdll"
@@ -21,7 +21,8 @@ helpviewer_keywords:
   - "MFC [C++], AFXDLL version"
   - "DLL version of MFC [C++]"
 ms.assetid: c078ae8f-85a9-43cb-9ded-c09ca2c45723
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -47,3 +48,4 @@ Instead of building your application by statically linking to the MFC object-cod
   
 ## See Also  
  [MFC Library Versions](../mfc/mfc-library-versions.md)
+

@@ -1,13 +1,13 @@
 ---
-title: "Handlers for Commands and Control Notifications"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Handlers for Commands and Control Notifications | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "notifications, handlers for control"
   - "handlers, command"
 ms.assetid: 20f57f4a-f577-4c09-80a2-43faf32a1c2e
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,13 +44,13 @@ There are no default handlers for commands or control-notification messages. The
   
  Convention suggests that you name handlers in both categories for the user-interface object they represent. Thus a handler for the Cut command on the Edit menu might be named  
   
- [!code[NVC_MFCMessageHandling#4](../mfc/codesnippet/CPP/handlers-for-commands-and-control-notifications_1.h)]  
+ [!code-cpp[NVC_MFCMessageHandling#4](../mfc/codesnippet/CPP/handlers-for-commands-and-control-notifications_1.h)]  
   
  Because the Cut command is so commonly implemented in applications, the framework predefines the command ID for the Cut command as **ID_EDIT_CUT**. For a list of all predefined command IDs, see the file AFXRES.H. For more information, see [Standard Commands](../mfc/standard-commands.md).  
   
  In addition, convention suggests a handler for the **BN_CLICKED** notification message from a button labeled "My Button" might be named  
   
- [!code[NVC_MFCMessageHandling#5](../mfc/codesnippet/CPP/handlers-for-commands-and-control-notifications_2.h)]  
+ [!code-cpp[NVC_MFCMessageHandling#5](../mfc/codesnippet/CPP/handlers-for-commands-and-control-notifications_2.h)]  
   
  You might assign this command an ID of `IDC_MY_BUTTON` because it is equivalent to an application-specific user-interface object.  
   

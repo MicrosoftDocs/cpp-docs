@@ -1,13 +1,13 @@
 ---
-title: "Document Templates and the Document-View Creation Process"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Document Templates and the Document-View Creation Process | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -21,7 +21,8 @@ helpviewer_keywords:
   - "CDocTemplate class"
   - "templates, document templates"
 ms.assetid: 311ce4cd-fbdf-4ea1-a51b-5bb043abbcee
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,7 +41,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Document Templates and the Document/View Creation Process
-To manage the complex process of creating documents with their associated views and frame windows, the framework uses two document template classes: [CSingleDocTemplate](../mfcref/csingledoctemplate-class.md) for SDI applications and [CMultiDocTemplate](../mfcref/cmultidoctemplate-class.md) for MDI applications. A `CSingleDocTemplate` can create and store one document of one type at a time. A `CMultiDocTemplate` keeps a list of many open documents of one type.  
+To manage the complex process of creating documents with their associated views and frame windows, the framework uses two document template classes: [CSingleDocTemplate](../mfc/reference/csingledoctemplate-class.md) for SDI applications and [CMultiDocTemplate](../mfc/reference/cmultidoctemplate-class.md) for MDI applications. A `CSingleDocTemplate` can create and store one document of one type at a time. A `CMultiDocTemplate` keeps a list of many open documents of one type.  
   
  Some applications support multiple document types. For example, an application might support text documents and graphics documents. In such an application, when the user chooses the New command on the File menu, a dialog box shows a list of possible new document types to open. For each supported document type, the application uses a distinct document template object. The following figure illustrates the configuration of an MDI application that supports two document types and shows several open documents.  
   
@@ -49,7 +50,7 @@ An MDI Application with Two Document Types
   
  Document templates are created and maintained by the application object. One of the key tasks performed during your application's `InitInstance` function is to construct one or more document templates of the appropriate kind. This feature is described in [Document Template Creation](../mfc/document-template-creation.md). The application object stores a pointer to each document template in its template list and provides an interface for adding document templates.  
   
- If you need to support two or more document types, you must add an extra call to [AddDocTemplate](../Topic/CWinApp::AddDocTemplate.md) for each document type.  
+ If you need to support two or more document types, you must add an extra call to [AddDocTemplate](../mfc/reference/cwinapp-class.md#adddoctemplate) for each document type.  
   
  An icon is registered for each document template based on its position in the application's list of document templates. The order of the document templates is determined by the order they are added with calls to `AddDocTemplate`. MFC assumes that the first Icon resource in the application is the application icon, the next Icon resource is the first document icon, and so on.  
   
@@ -60,4 +61,5 @@ An MDI Application with Two Document Types
  [Document Template Creation](../mfc/document-template-creation.md)   
  [Document/View Creation](../mfc/document-view-creation.md)   
  [Relationships Among MFC Objects](../mfc/relationships-among-mfc-objects.md)   
- [Creating New Documents, Windows, and Views](../mfc/creating-new-documents--windows--and-views.md)
+ [Creating New Documents, Windows, and Views](../mfc/creating-new-documents-windows-and-views.md)
+

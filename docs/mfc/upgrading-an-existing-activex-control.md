@@ -1,13 +1,13 @@
 ---
-title: "Upgrading an Existing ActiveX Control"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Upgrading an Existing ActiveX Control | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -22,7 +22,8 @@ helpviewer_keywords:
   - "upgrading ActiveX controls"
   - "licensing ActiveX controls"
 ms.assetid: 4d12ddfa-b491-4f9f-a0b7-b51458e05651
-caps.latest.revision: 13
+caps.latest.revision: 15
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -45,19 +46,19 @@ Existing ActiveX controls (formerly OLE controls) can be used on the Internet wi
   
  This article discusses the following topics:  
   
--   [Packaging Code for Downloading](#_core_packaging_code_for_downloading)  
+- [Packaging Code for Downloading](#_core_packaging_code_for_downloading)  
   
--   [Marking a Control Safe for Scripting and Initializing](#_core_marking_a_control_safe_for_scripting_and_initializing)  
+- [Marking a Control Safe for Scripting and Initializing](#_core_marking_a_control_safe_for_scripting_and_initializing)  
   
--   [Licensing Issues](#_core_licensing_issues)  
+- [Licensing Issues](#_core_licensing_issues)  
   
--   [Signing Code](#_core_signing_code)  
+- [Signing Code](#_core_signing_code)  
   
--   [Managing the Palette](#_core_managing_the_palette)  
+- [Managing the Palette](#_core_managing_the_palette)  
   
--   [Internet Explorer Browser Safety Levels and Control Behavior](#_core_internet_explorer_browser_safety_levels_and_control_behavior)  
+- [Internet Explorer Browser Safety Levels and Control Behavior](#_core_internet_explorer_browser_safety_levels_and_control_behavior)  
   
- You can also add optimizations, as described in [ActiveX Controls: Optimization](../mfc/mfc-activex-controls--optimization.md). Monikers can be used to download properties and large BLOBs asynchronously, as described in [ActiveX Controls on the Internet](../mfc/activex-controls-on-the-internet.md).  
+ You can also add optimizations, as described in [ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md). Monikers can be used to download properties and large BLOBs asynchronously, as described in [ActiveX Controls on the Internet](../mfc/activex-controls-on-the-internet.md).  
   
 ##  <a name="_core_packaging_code_for_downloading"></a> Packaging Code for Downloading  
  For more information on this subject, see the Knowledge Base article "Packaging MFC Controls for Use Over the Internet" (Q167158). You can find Knowledge Base articles on the MSDN Library CD-ROM or at [http://support.microsoft.com/support](http://support.microsoft.com/support).  
@@ -68,7 +69,10 @@ Existing ActiveX controls (formerly OLE controls) can be used on the Internet wi
 ### Using the CODEBASE Tag with an OCX File  
   
 ```  
-CODEBASE="http://example.microsoft.com/mycontrol.ocx#version=4,70,0,1086"  
+CODEBASE="http://example.microsoft.com/mycontrol.ocx#version=4,
+    70,
+    0,
+    1086"  
 ```  
   
  This solution downloads only the control's .ocx file, and requires any supporting DLLs to already be installed on the client machine. This will work for Internet Explorer and MFC ActiveX controls built with Visual C++, because Internet Explorer ships with the supporting DLLs for Visual C++ controls. If another Internet browser that is ActiveX control-capable is used to view this control, this solution will not work.  
@@ -84,17 +88,20 @@ CODEBASE="http://example.microsoft.com/trustme.inf"
 ### Using the CODEBASE Tag with a CAB File  
   
 ```  
-CODEBASE="http://example.microsoft.com/acontrol.cab#version=1,2,0,0"  
+CODEBASE="http://example.microsoft.com/acontrol.cab#version=1,
+    2,
+    0,
+    0"  
 ```  
   
  Cabinet files are the recommended way to package ActiveX controls that use MFC. Packaging an MFC ActiveX control in a cabinet file allows an .inf file to be included to control installation of the ActiveX control and any dependent DLLs (such as the MFC DLLs). Using a CAB file automatically compresses the code for quicker download. If you are using a .cab file for component download, it is faster to sign the entire .cab file than each individual component.  
   
 ### Creating CAB Files  
- You can download the Cabinet Development Kit from the Knowledge Base article [310618: Microsoft Cabinet Software Development Kit](http://go.microsoft.com/fwlink/?LinkId=148204). In this kit you will find the necessary tools to construct cabinet files.  
+ You can download the Cabinet Development Kit from the Knowledge Base article [310618: Microsoft Cabinet Software Development Kit](http://go.microsoft.com/fwlink/LinkId=148204). In this kit you will find the necessary tools to construct cabinet files.  
   
  The cabinet file pointed to by `CODEBASE` should contain the .ocx file for your ActiveX control and an .inf file to control its installation. You create the cabinet file by specifying the name of your control file and an .inf file. Do not include dependent DLLs that may already exist on the system in this cabinet file. For example, the MFC DLLs are packaged in a separate cabinet file and referred to by the controlling .inf file.  
   
- For details on how to create a CAB file, see [Creating a CAB File](assetId:///cc52fd09-bdf6-4410-a693-149a308f36a3).  
+ For details on how to create a CAB file, see [Creating a CAB File](http://msdn.microsoft.com/en-us/cc52fd09-bdf6-4410-a693-149a308f36a3).  
   
 ### The INF File  
  The following example, spindial.inf, lists the supporting files and the version information needed for the MFC Spindial control. Notice the location for the MFC DLLs is a Microsoft Web site. The mfc42.cab is provided and signed by Microsoft.  
@@ -103,9 +110,18 @@ CODEBASE="http://example.microsoft.com/acontrol.cab#version=1,2,0,0"
 Contents of spindial.inf:  
 [mfc42installer]   
 file-win32-x86=http://activex.microsoft.com/controls/vc/mfc42.cab   
-[Olepro32.dll] - FileVersion=5,0,4261,0  
-[Mfc42.dll] - FileVersion=6,0,8168,0  
-[Msvcrt.dll] - FileVersion=6,0,8168,0  
+[Olepro32.dll] - FileVersion=5,
+    0,
+    4261,
+    0  
+[Mfc42.dll] - FileVersion=6,
+    0,
+    8168,
+    0  
+[Msvcrt.dll] - FileVersion=6,
+    0,
+    8168,
+    0  
 ```  
   
 ### The \<OBJECT> Tag  
@@ -113,13 +129,13 @@ file-win32-x86=http://activex.microsoft.com/controls/vc/mfc42.cab
   
 ```  
 <OBJECT ID="Spindial1" WIDTH=100 HEIGHT=51  
-  CLASSID="CLSID:06889605-B8D0-101A-91F1-00608CEAD5B3"  
-  CODEBASE="http://example.microsoft.com/spindial.cab#Version=1,0,0,001">  
-    <PARAM NAME="_Version" VALUE="65536">  
-    <PARAM NAME="_ExtentX" VALUE="2646">  
-    <PARAM NAME="_ExtentY" VALUE="1323">  
-    <PARAM NAME="_StockProps" VALUE="0">  
-    <PARAM NAME="NeedlePosition" VALUE="2">  
+    CLASSID="CLSID:06889605-B8D0-101A-91F1-00608CEAD5B3" 
+    CODEBASE="http://example.microsoft.com/spindial.cab#Version=1,0,0,001"> 
+ <PARAM NAME="_Version" VALUE="65536">  
+ <PARAM NAME="_ExtentX" VALUE="2646">  
+ <PARAM NAME="_ExtentY" VALUE="1323">  
+ <PARAM NAME="_StockProps" VALUE="0">  
+ <PARAM NAME="NeedlePosition" VALUE="2">  
 </OBJECT>  
 ```  
   
@@ -187,11 +203,11 @@ HKEY_CLASSES_ROOT\CLSID\{06889605-B8D0-101A-91F1-00608CEAD5B3}\Implemented Categ
   
 1.  Edit your HTML page. In the HTML page, insert an \<OBJECT> tag for the License Manager object before any other \<OBJECT> tags. The License Manager is an ActiveX control that is installed with Internet Explorer. Its class ID is shown below. Set the LPKPath property of the License Manager object to the path and name of the LPK file. You can have only one LPK file per HTML page.  
   
-    ```  
-    <OBJECT CLASSID = "clsid:5220cb21-c88d-11cf-b347-00aa00a28331">  
-        <PARAM NAME="LPKPath" VALUE="relative URL to .LPK file">  
-    </OBJECT>  
-    ```  
+ ```  
+ <OBJECT CLASSID = "clsid:5220cb21-c88d-11cf-b347-00aa00a28331">  
+ <PARAM NAME="LPKPath" VALUE="relative URL to .LPK file">  
+ </OBJECT>  
+ ```  
   
 2.  Insert the \<OBJECT> tag for your licensed control after the License Manager tag.  
   
@@ -201,23 +217,23 @@ HKEY_CLASSES_ROOT\CLSID\{06889605-B8D0-101A-91F1-00608CEAD5B3}\Implemented Categ
   
      If your control may be viewed on other Active enabled browsers — for example, Netscape using the NCompass ActiveX plug-in — you must add the \<EMBED> syntax as shown below.  
   
-    ```  
-    <OBJECT CLASSID="clsid:5220cb21-c88d-11cf-b347-00aa00a28331">  
-        <PARAM NAME="LPKPath" VALUE="maskedit.lpk">  
+ ```  
+ <OBJECT CLASSID="clsid:5220cb21-c88d-11cf-b347-00aa00a28331">  
+ <PARAM NAME="LPKPath" VALUE="maskedit.lpk">  
+ 
+ <EMBED SRC = "maskedit.LPK">  
+ 
+ </OBJECT>  
+ <OBJECT CLASSID="clsid:C932BA85-4374-101B-A56C-00AA003668DC" WIDTH=100 HEIGHT=25>  
+ </OBJECT>  
+ ```  
   
-        <EMBED SRC = "maskedit.LPK">  
-  
-    </OBJECT>  
-    <OBJECT CLASSID="clsid:C932BA85-4374-101B-A56C-00AA003668DC" WIDTH=100 HEIGHT=25>  
-    </OBJECT>  
-    ```  
-  
- For more information about control licensing, see [ActiveX Controls: Licensing an ActiveX Control](../mfc/mfc-activex-controls--licensing-an-activex-control.md).  
+ For more information about control licensing, see [ActiveX Controls: Licensing an ActiveX Control](../mfc/mfc-activex-controls-licensing-an-activex-control.md).  
   
 ##  <a name="_core_signing_code"></a> Signing Code  
  Code signing is designed to identify the source of code, and to guarantee that the code has not changed since it was signed. Depending on browser safety settings, users may be warned before the code is downloaded. Users may choose to trust certain certificate owners or companies, in which case code signed by those trusted will be downloaded without warning. Code is digitally signed to avoid tampering.  
   
- Make sure your final code is signed so that your control can be automatically downloaded without displaying trust warning messages. For details on how to sign code, check the documentation on Authenticode in the ActiveX SDK and see [Signing a CAB File](assetId:///04d8b47a-8f1c-4b54-ab90-730fcdc03747).  
+ Make sure your final code is signed so that your control can be automatically downloaded without displaying trust warning messages. For details on how to sign code, check the documentation on Authenticode in the ActiveX SDK and see [Signing a CAB File](http://msdn.microsoft.com/en-us/04d8b47a-8f1c-4b54-ab90-730fcdc03747).  
   
  Depending on trust and browser safety level settings, a certificate may be displayed to identify the signing person or company. If the safety level is none, or if the signed control's certificate owner is trusted, a certificate will not be displayed. See [Internet Explorer Browser Safety Levels and Control Behavior](#_core_internet_explorer_browser_safety_levels_and_control_behavior) for details on how the browser safety setting will determine whether your control is downloaded and a certificate displayed.  
   
@@ -262,4 +278,5 @@ HKEY_CLASSES_ROOT\CLSID\{06889605-B8D0-101A-91F1-00608CEAD5B3}\Implemented Categ
 ## See Also  
  [MFC Internet Programming Tasks](../mfc/mfc-internet-programming-tasks.md)   
  [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)   
- [MFC ActiveX Controls: Licensing an ActiveX Control](../mfc/mfc-activex-controls--licensing-an-activex-control.md)
+ [MFC ActiveX Controls: Licensing an ActiveX Control](../mfc/mfc-activex-controls-licensing-an-activex-control.md)
+

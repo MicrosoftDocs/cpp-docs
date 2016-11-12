@@ -1,13 +1,13 @@
 ---
-title: "Attribute Programming FAQ"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Attribute Programming FAQ | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "FAQs (frequently asked questions), attributed programming [C++]"
 ms.assetid: a1b8349f-7f51-43c4-95ea-4edb6e5f243f
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -97,17 +98,17 @@ class CMyClass
   
 ||||  
 |-|-|-|  
-|[call_as](../windows/call_as.md)|[case](../windows/case--c---.md)|[cpp_quote](../windows/cpp_quote.md)|  
-|[default](../windows/default--c---.md)|[defaultvalue](../windows/defaultvalue.md)|[defaultvtable](../windows/defaultvtable.md)|  
-|[emitidl](../windows/emitidl.md)|[entry](../windows/entry.md)|[first_is](../windows/first_is.md)|  
+|[call_as](../windows/call-as.md)|[case](../windows/case-cpp.md)|[cpp_quote](../windows/cpp-quote.md)|  
+|[default](../windows/default-cpp.md)|[defaultvalue](../windows/defaultvalue.md)|[defaultvtable](../windows/defaultvtable.md)|  
+|[emitidl](../windows/emitidl.md)|[entry](../windows/entry.md)|[first_is](../windows/first-is.md)|  
 |[helpcontext](../windows/helpcontext.md)|[helpfile](../windows/helpfile.md)|[helpstring](../windows/helpstring.md)|  
 |[helpstringcontext](../windows/helpstringcontext.md)|[helpstringdll](../windows/helpstringdll.md)|[id](../windows/id.md)|  
-|[iid_is](../windows/iid_is.md)|[import](../windows/import.md)|[importlib](../windows/importlib.md)|  
-|[include](../windows/include--c---.md)|[includelib](../windows/includelib--c---.md)|[last_is](../windows/last_is.md)|  
-|[length_is](../windows/length_is.md)|[max_is](../windows/max_is.md)|[no_injected_text](../windows/no_injected_text.md)|  
-|[pointer_default](../windows/pointer_default.md)|[pragma](../windows/pragma.md)|[restricted](../windows/restricted.md)|  
-|[size_is](../windows/size_is.md)|[source](../windows/source--c---.md)|[switch_is](../windows/switch_is.md)|  
-|[switch_type](../windows/switch_type.md)|[transmit_as](../windows/transmit_as.md)|[wire_marshal](../windows/wire_marshal.md)|  
+|[iid_is](../windows/iid-is.md)|[import](../windows/import.md)|[importlib](../windows/importlib.md)|  
+|[include](../windows/include-cpp.md)|[includelib](../windows/includelib-cpp.md)|[last_is](../windows/last-is.md)|  
+|[length_is](../windows/length-is.md)|[max_is](../windows/max-is.md)|[no_injected_text](../windows/no-injected-text.md)|  
+|[pointer_default](../windows/pointer-default.md)|[pragma](../windows/pragma.md)|[restricted](../windows/restricted.md)|  
+|[size_is](../windows/size-is.md)|[source](../windows/source-cpp.md)|[switch_is](../windows/switch-is.md)|  
+|[switch_type](../windows/switch-type.md)|[transmit_as](../windows/transmit-as.md)|[wire_marshal](../windows/wire-marshal.md)|  
   
 ##  <a name="vcconattributeprogrammmingfaqanchor3"></a> Can I use comments in an attribute block?  
  You can use both single-line and multiple-line comments within an attribute block. However, you cannot use either style of comment within the parentheses holding the parameters to an attribute.  
@@ -141,7 +142,7 @@ class CMyClass
  You may have a .idl file that you want to use in your ATL attributed project. In this case, you would use the [importidl](../windows/importidl.md) attribute, compile the .idl file to a .h file (see the [MIDL Property Pages](../ide/midl-property-pages.md) in the project's Property Pages dialog box), and then include the .h file in your project.  
   
 ##  <a name="vcconattributeprogrammmingfaqanchor7"></a> Can I modify code that is injected by an attribute?  
- Some attributes inject code into your project. You can see the injected code by using the [/Fx](../buildref/-fx--merge-injected-code-.md) compiler option. It is also possible to copy code from the injected file and paste it into your source code. This allows you to modify the behavior of the attribute. However, you may have to modify other parts of your code as well.  
+ Some attributes inject code into your project. You can see the injected code by using the [/Fx](../build/reference/fx-merge-injected-code.md) compiler option. It is also possible to copy code from the injected file and paste it into your source code. This allows you to modify the behavior of the attribute. However, you may have to modify other parts of your code as well.  
   
  The following sample is the result of copying injected code into a source code file:  
   

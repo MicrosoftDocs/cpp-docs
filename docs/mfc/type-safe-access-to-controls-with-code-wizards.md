@@ -1,13 +1,13 @@
 ---
-title: "Type-Safe Access to Controls With Code Wizards"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Type-Safe Access to Controls With Code Wizards | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "dialog boxes, access to controls"
   - "dialog box controls, accessing"
 ms.assetid: b8874393-ee48-4124-8d78-e3648a7e29b9
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -47,13 +48,14 @@ If you are familiar with DDX features, you can use the Control property in the [
   
  You can use this object to call any member functions for the control object. Such calls affect the control in the dialog box. For example, for a check-box control represented by a variable `m_Checkbox`, of type `CButton`, you could call:  
   
- [!code[NVC_MFCControlLadenDialog#52](../mfc/codesnippet/CPP/type-safe-access-to-controls-with-code-wizards_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#52](../mfc/codesnippet/CPP/type-safe-access-to-controls-with-code-wizards_1.cpp)]  
   
  Here the member variable `m_Checkbox` serves the same purpose as the member function `GetMyCheckbox` shown in [Type-Safe Access to Controls Without Code Wizards](../mfc/type-safe-access-to-controls-without-code-wizards.md). If the check box is not an auto check box, you would still need a handler in your dialog class for the **BN_CLICKED** control-notification message when the button is clicked.  
   
- For more information about controls, see [Controls](../mfc/controls--mfc-.md).  
+ For more information about controls, see [Controls](../mfc/controls-mfc.md).  
   
 ## See Also  
  [Type-Safe Access to Controls in a Dialog Box](../mfc/type-safe-access-to-controls-in-a-dialog-box.md)   
  [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)   
  [Type-Safe Access to Controls Without Code Wizards](../mfc/type-safe-access-to-controls-without-code-wizards.md)
+

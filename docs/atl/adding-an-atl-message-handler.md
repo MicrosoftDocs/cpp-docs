@@ -1,13 +1,13 @@
 ---
-title: "Adding an ATL Message Handler"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Adding an ATL Message Handler | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "windows [C++], ATL"
   - "ATL, message handlers"
 ms.assetid: cdea38a1-0d9b-4f8d-bbd5-b4f063fb3eeb
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,7 +40,7 @@ translation.priority.ht:
 # Adding an ATL Message Handler
 To add a message handler (a member function that handles Windows messages) to a control, first select the control in the Class View. Then open the **Properties** window, select the **Messages** icon, and click the drop-down control in the box opposite the required message. This will add a declaration for the message handler in the control's header file and a skeleton implementation of the handler in the control's .cpp file. It will also add the message map and add an entry for the handler.  
   
- Adding a message handler in ATL is similar to adding a message handler to an MFC class. See [Adding an MFC Message Handler](../mfcref/adding-an-mfc-message-handler.md) for more information.  
+ Adding a message handler in ATL is similar to adding a message handler to an MFC class. See [Adding an MFC Message Handler](../mfc/reference/adding-an-mfc-message-handler.md) for more information.  
   
  The following conditions apply only to adding an ATL message handler:  
   
@@ -49,3 +50,4 @@ To add a message handler (a member function that handles Windows messages) to a 
   
 ## See Also  
  [Implementing a Window](../atl/implementing-a-window.md)
+

@@ -1,13 +1,13 @@
 ---
-title: "Inferred Dependents and Rules"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Inferred Dependents and Rules | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "dependents, inferred"
 ms.assetid: 9381e74a-53d9-445c-836d-0ff7ef6112d9
 caps.latest.revision: 7
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 

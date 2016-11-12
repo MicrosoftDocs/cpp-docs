@@ -1,13 +1,13 @@
 ---
-title: "Exporting Functions from a DLL by Ordinal Rather Than by Name"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Exporting Functions from a DLL by Ordinal Rather Than by Name | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "NONAME"
@@ -20,6 +20,7 @@ helpviewer_keywords:
   - "NONAME attribute"
 ms.assetid: 679719fd-d965-4df3-9f7a-7d86ad831702
 caps.latest.revision: 7
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -47,7 +48,7 @@ The simplest way to export functions from your DLL is to export them by name. Th
   
 -   [Use a .def file so I can export by ordinal](../build/exporting-from-a-dll-using-def-files.md)  
   
--   [Use __declspec(dllexport)](../build/exporting-from-a-dll-using-__declspec-dllexport-.md)  
+-   [Use __declspec(dllexport)](../build/exporting-from-a-dll-using-declspec-dllexport.md)  
   
 ## See Also  
  [Exporting from a DLL](../build/exporting-from-a-dll.md)

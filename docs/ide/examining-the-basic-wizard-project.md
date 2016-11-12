@@ -1,13 +1,13 @@
 ---
-title: "Examining the Basic Wizard Project"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Examining the Basic Wizard Project | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "custom wizards, files created"
 ms.assetid: c6423e3c-ddb0-43e0-b8e5-9e3a98a7908c
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,7 +41,7 @@ After you have used the [Custom Wizard](../ide/creating-a-custom-wizard.md) to c
   
 2.  Double-click Default.js to open the project's [JScript file](../ide/jscript-file.md) in the code editor. This file contains JScript functions that create the project when the user clicks **Finish** in the wizard. Review the functions and TODO comments in this file.  
   
-3.  If your project has a user interface, look in the folder labeled [HTML Files](../ide/html-files.md) and note that you have as many .htm files you as you specified in the [Application Settings](../ide/application-settings--custom-wizard.md) page in the Custom Wizard. Double-click Default.htm to open the project's main HTML page in the [HTML designer](../Topic/HTML%20Designer.md). You can view the HTML in either [Design View](../Topic/Design%20View1.md) or in HTML view, as [HTML markup](assetId:///7bb90672-b36a-4cf9-9bbc-677c9b956318). Switch to HTML markup view and review the HTML markup. Click the **Script Only View** button (located at the upper right corner of the HTML View editing window, next to the **Events** drop-down list) and examine the JScript in the .htm file. By default, this file contains the JScript functions that initialize and load the wizard, and it provides default behavior for the **IVCWizCtrlUI** interface. See the coclass \<xref:Microsoft.VisualStudio.VsWizard.VCWizCtl> object for more information.  
+3.  If your project has a user interface, look in the folder labeled [HTML Files](../ide/html-files.md) and note that you have as many .htm files you as you specified in the [Application Settings](../ide/application-settings-custom-wizard.md) page in the Custom Wizard. Double-click Default.htm to open the project's main HTML page in the [HTML designer](../Topic/HTML%20Designer.md). You can view the HTML in either [Design View](../Topic/Design%20View1.md) or in HTML view, as [HTML markup](http://msdn.microsoft.com/en-us/7bb90672-b36a-4cf9-9bbc-677c9b956318). Switch to HTML markup view and review the HTML markup. Click the **Script Only View** button (located at the upper right corner of the HTML View editing window, next to the **Events** drop-down list) and examine the JScript in the .htm file. By default, this file contains the JScript functions that initialize and load the wizard, and it provides default behavior for the **IVCWizCtrlUI** interface. See the coclass <xref:Microsoft.VisualStudio.VsWizard.VCWizCtl> object for more information.  
   
 4.  Save and close your wizard project.  
   

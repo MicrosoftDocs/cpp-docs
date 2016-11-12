@@ -1,13 +1,13 @@
 ---
-title: "CriticalSectionTraits Structure"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "CriticalSectionTraits Structure | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "corewrappers/Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CriticalSectionTraits structure"
 ms.assetid: c515a1b5-4eb0-40bc-9035-c4d9352c9de7
 caps.latest.revision: 3
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -56,8 +57,8 @@ struct CriticalSectionTraits;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CriticalSectionTraits::GetInvalidValue Method](../windows/criticalsectiontraits--getinvalidvalue-method.md)|Specializes a CriticalSection template so that the template is always invalid.|  
-|[CriticalSectionTraits::Unlock Method](../windows/criticalsectiontraits--unlock-method.md)|Specializes a CriticalSection template so that it supports releasing ownership of the specified critical section object.|  
+|[CriticalSectionTraits::GetInvalidValue Method](../windows/criticalsectiontraits-getinvalidvalue-method.md)|Specializes a CriticalSection template so that the template is always invalid.|  
+|[CriticalSectionTraits::Unlock Method](../windows/criticalsectiontraits-unlock-method.md)|Specializes a CriticalSection template so that it supports releasing ownership of the specified critical section object.|  
   
 ## Inheritance Hierarchy  
  `CriticalSectionTraits`  
@@ -68,4 +69,4 @@ struct CriticalSectionTraits;
  **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
   
 ## See Also  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft--wrl--wrappers--handletraits-namespace.md)
+ [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

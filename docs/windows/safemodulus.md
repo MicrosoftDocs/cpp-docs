@@ -1,13 +1,13 @@
 ---
-title: "SafeModulus"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "SafeModulus | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "SafeModulus"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "SafeModulus function"
 ms.assetid: ae5c81eb-5dcf-45a5-aa76-465fdfe68654
 caps.latest.revision: 6
+author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 translation.priority.ht: 

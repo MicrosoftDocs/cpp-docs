@@ -1,13 +1,13 @@
 ---
-title: "Initializing Arrays"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Initializing Arrays | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "arrays [C++], initializing"
 ms.assetid: 41efe5f0-15b5-4f49-9196-c4902f8fc705
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -82,4 +83,4 @@ int main()
 ```  
   
 ## See Also  
- [(NOTINBUILD)Special Member Functions](assetId:///82223d73-64cb-4923-b678-78f9568ff3ca)
+ [(NOTINBUILD)Special Member Functions](http://msdn.microsoft.com/en-us/82223d73-64cb-4923-b678-78f9568ff3ca)

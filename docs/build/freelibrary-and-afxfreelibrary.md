@@ -1,13 +1,13 @@
 ---
-title: "FreeLibrary and AfxFreeLibrary"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "FreeLibrary and AfxFreeLibrary | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "FreeLibrary"
@@ -24,6 +24,7 @@ helpviewer_keywords:
   - "DLLs [C++], unloading"
 ms.assetid: 4a48d290-3971-43e9-8e97-ba656cd0c8f8
 caps.latest.revision: 11
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -60,6 +61,6 @@ Processes that explicitly link to a DLL call the [FreeLibrary](http://go.microso
 -   [GetProcAddress](../build/getprocaddress.md)  
   
 ## See Also  
- [DLLs in Visual C++](../build/dlls-in-visual-c--.md)   
+ [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)   
  [FreeLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259188)   
  [AfxFreeLibrary](../Topic/AfxFreeLibrary.md)

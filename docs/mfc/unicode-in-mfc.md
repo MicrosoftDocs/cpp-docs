@@ -1,13 +1,13 @@
 ---
-title: "Unicode in MFC"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Unicode in MFC | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "strings [C++], Unicode"
   - "Unicode [C++], enabling"
 ms.assetid: 1002004b-4113-4380-bf63-e1570934b793
-caps.latest.revision: 11
+caps.latest.revision: 13
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -72,8 +73,9 @@ MFC supports the Unicode standard for encoding wide characters on Windows NT, Wi
   
  For detailed information on naming conventions, see [Library Naming Conventions](../mfc/library-naming-conventions.md).  
   
- For information on using Unicode with MFC, see [Strings: Unicode and Multibyte Character Set (MBCS) Support](../atl/unicode-and-multibyte-character-set--mbcs--support.md).  
+ For information on using Unicode with MFC, see [Strings: Unicode and Multibyte Character Set (MBCS) Support](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md).  
   
 ## See Also  
  [Concepts](../mfc/mfc-concepts.md)   
  [General MFC Topics](../mfc/general-mfc-topics.md)
+

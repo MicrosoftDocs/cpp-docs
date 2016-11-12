@@ -1,20 +1,21 @@
 ---
-title: "Toolbar Sample List"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Toolbar Sample List | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "sample applications [MFC], toolbars"
 ms.assetid: 61310e4e-3df7-47c2-8b10-7c6cb45c5d1b
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,11 +36,12 @@ translation.priority.ht:
 # Toolbar Sample List
 See the following sample programs that illustrate using MFC's toolbars:  
   
--   [SCRIBBLE](../top/visual-c---samples.md)  
+-   [SCRIBBLE](../top/visual-cpp-samples.md)  
   
--   [CTRLBARS](../top/visual-c---samples.md)  
+-   [CTRLBARS](../top/visual-cpp-samples.md)  
   
--   [DOCKTOOL](../top/visual-c---samples.md)  
+-   [DOCKTOOL](../top/visual-cpp-samples.md)  
   
 ## See Also  
  [Toolbars](../mfc/toolbars.md)
+

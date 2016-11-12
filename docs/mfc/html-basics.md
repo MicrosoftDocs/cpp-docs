@@ -1,20 +1,21 @@
 ---
-title: "HTML Basics"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "HTML Basics | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "HTML, about HTML"
 ms.assetid: aab8ea9f-12d4-4bdd-a585-ac3124081a2a
-caps.latest.revision: 5
+caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -45,13 +46,13 @@ Most browsers have the capability of examining the HTML source of the pages you 
   
 3.  Type the following lines:  
   
-    ```  
-    <HTML>  
-    <HEAD>  
-    <TITLE>Top HTML Tags</TITLE>  
-    </HEAD>  
-    </HTML>  
-    ```  
+ ```  
+ <HTML>  
+ <HEAD>  
+ <TITLE>Top HTML Tags</TITLE>  
+ </HEAD>  
+ </HTML>  
+ ```  
   
 4.  From the **File** menu, choose **Save**, and save the file as c:\webpages\First.htm. Leave the file open in the editor.  
   
@@ -63,12 +64,12 @@ Most browsers have the capability of examining the HTML source of the pages you 
   
 6.  Switch back to Notepad, and after the \</HEAD> line, type:  
   
-    ```  
-    <BODY>  
+ ```  
+ <BODY>  
     HTML is swell.  
     Life is good.  
-    </BODY>  
-    ```  
+ </BODY>  
+ ```  
   
 7.  From the **File** menu, choose **Save**.  
   
@@ -80,25 +81,25 @@ Most browsers have the capability of examining the HTML source of the pages you 
   
 9. Add a header:  
   
-    ```  
-    <H3>Here's the big picture</H3>  
-    ```  
+ ```  
+ <H3>Here's the big picture</H3>  
+ ```  
   
 10. Add an image, using a .gif file saved in the same directory as your page:  
   
-    ```  
-    <IMG src="yourfile.gif">  
-    ```  
+ ```  
+ <IMG src="yourfile.gif">  
+ ```  
   
 11. Add a list:  
   
-    ```  
-    <UL>Make me an unordered list.  
-    <LI>One programmer</LI>  
-    <LI>Ten SDKs</LI>  
-    <LI>Great Internet Apps</LI>  
-    </UL>  
-    ```  
+ ```  
+ <UL>Make me an unordered list.  
+ <LI>One programmer</LI>  
+ <LI>Ten SDKs</LI>  
+ <LI>Great Internet Apps</LI>  
+ </UL>  
+ ```  
   
 12. To number the list instead, use paired \<OL> and \</OL> tags in place of the \<UL> and \</UL> tags.  
   
@@ -131,3 +132,4 @@ Life is good.
   
 ## See Also  
  [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
+

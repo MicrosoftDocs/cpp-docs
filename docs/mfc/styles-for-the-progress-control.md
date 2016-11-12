@@ -1,13 +1,13 @@
 ---
-title: "Styles for the Progress Control"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Styles for the Progress Control | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "PBS_VERTICAL style"
   - "CProgressCtrl class, styles"
 ms.assetid: 39eb8081-bc20-4552-91b9-e7cdd1b7d8ae
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -36,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Styles for the Progress Control
-When you initially create the progress control ([CProgressCtrl::Create](../Topic/CProgressCtrl::Create.md)), use the `dwStyle` parameter to specify the desired window styles for your progress control. The following list details the applicable window styles. The control ignores any window style other than the ones listed here. You should always create the control as a child window, usually of a dialog box parent.  
+When you initially create the progress control ([CProgressCtrl::Create](../mfc/reference/cprogressctrl-class.md#cprogressctrl__create)), use the `dwStyle` parameter to specify the desired window styles for your progress control. The following list details the applicable window styles. The control ignores any window style other than the ones listed here. You should always create the control as a child window, usually of a dialog box parent.  
   
 |Window style|Effect|  
 |------------------|------------|  
@@ -60,7 +61,8 @@ When you initially create the progress control ([CProgressCtrl::Create](../Topic
   
  ![Progress bar style, smooth and vertical](../mfc/media/vc4ruw2.gif "vc4RUW2")  
   
- For more information, see [Window Styles](../mfcref/frame-window-styles--mfc-.md) in the *MFC Reference*.  
+ For more information, see [Window Styles](../mfc/reference/frame-window-styles-mfc.md) in the *MFC Reference*.  
   
 ## See Also  
  [Using CProgressCtrl](../mfc/using-cprogressctrl.md)
+

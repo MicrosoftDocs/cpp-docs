@@ -1,13 +1,13 @@
 ---
-title: "Nested Class Declarations"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Nested Class Declarations | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -20,6 +20,7 @@ helpviewer_keywords:
   - "declarations, nested classes"
 ms.assetid: c02e471d-b7f9-41b8-8ef6-2323f006dbd5
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -224,4 +225,4 @@ int GetExtendedErrorStatus( char *message )
  With the preceding interface, several classes can use the services of this function by passing a memory location where they want the error message copied.  
   
 ## See Also  
- [Classes and Structs](../cpp/classes-and-structs--c---.md)
+ [Classes and Structs](../cpp/classes-and-structs-cpp.md)

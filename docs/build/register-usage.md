@@ -1,18 +1,19 @@
 ---
-title: "Register Usage"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Register Usage | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 ms.assetid: ce58e2cf-afd3-4068-980e-28a209298265
 caps.latest.revision: 10
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -31,7 +32,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Register Usage
-The [!INCLUDE[vcprx64](../build/includes/vcprx64_md.md)] architecture provides for 16 general-purpose registers (hereafter referred to as integer registers) as well as 16 XMM/YMM registers available for floating-point use. Volatile registers are scratch registers presumed by the caller to be destroyed across a call. Nonvolatile registers are required to retain their values across a function call and must be saved by the callee if used.  
+The [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] architecture provides for 16 general-purpose registers (hereafter referred to as integer registers) as well as 16 XMM/YMM registers available for floating-point use. Volatile registers are scratch registers presumed by the caller to be destroyed across a call. Nonvolatile registers are required to retain their values across a function call and must be saved by the callee if used.  
   
  The following table describes how each register is used across function calls:  
   
@@ -60,4 +61,4 @@ The [!INCLUDE[vcprx64](../build/includes/vcprx64_md.md)] architecture provides f
   
 ## See Also  
  [x64 Software Conventions](../build/x64-software-conventions.md)   
- [__vectorcall](../cpp/__vectorcall.md)
+ [__vectorcall](../cpp/vectorcall.md)

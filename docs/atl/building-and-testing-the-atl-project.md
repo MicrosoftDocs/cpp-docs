@@ -1,13 +1,13 @@
 ---
-title: "Building and Testing the ATL Project"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Building and Testing the ATL Project | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "composite controls, building and testing the project"
   - "composite controls, containers for"
 ms.assetid: 5c1541f8-f6cb-4c22-bd22-c66bcfbaa077
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,3 +41,4 @@ As mentioned in [Inserting a Composite Control](../atl/inserting-a-composite-con
   
 ## See Also  
  [Composite Control Fundamentals](../atl/atl-composite-control-fundamentals.md)
+

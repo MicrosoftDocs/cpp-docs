@@ -1,13 +1,13 @@
 ---
-title: "Resource Symbols Dialog Box"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Resource Symbols Dialog Box | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.editors.resourcesymbols"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "Change Symbol dialog box"
 ms.assetid: 9706cde3-1f48-4fcd-bedb-2b03b455e3c1
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 

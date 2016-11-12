@@ -1,13 +1,13 @@
 ---
-title: "One-Stage and Two-Stage Construction of Objects"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "One-Stage and Two-Stage Construction of Objects | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "objects [C++], graphic objects"
   - "one-stage and two-stage construction of objects"
 ms.assetid: 5a1c410c-4a4b-4dd9-a2ec-ced831aa7f21
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -50,9 +51,9 @@ You have a choice between two techniques for creating graphic objects, such as p
 ## Example of Both Construction Techniques  
  The following brief example shows both methods of constructing a pen object:  
   
- [!code[NVC_MFCDocViewSDI#6](../mfc/codesnippet/CPP/one-stage-and-two-stage-construction-of-objects_1.cpp)]  
+ [!code-cpp[NVC_MFCDocViewSDI#6](../mfc/codesnippet/CPP/one-stage-and-two-stage-construction-of-objects_1.cpp)]  
   
-### What do you want to know more about?  
+### What do you want to know more about  
   
 -   [Graphic objects](../mfc/graphic-objects.md)  
   
@@ -64,3 +65,4 @@ You have a choice between two techniques for creating graphic objects, such as p
   
 ## See Also  
  [Graphic Objects](../mfc/graphic-objects.md)
+

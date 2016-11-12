@@ -1,13 +1,13 @@
 ---
-title: "Add Method Wizard"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Add Method Wizard | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.codewiz.method.overview"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "methods [C++], adding using wizards"
 ms.assetid: b9a71b0e-9ecf-40fa-9f86-4200cb23d671
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -57,7 +58,7 @@ Use this wizard to add a method to an interface. Depending on the project type o
 |--------------------|-----------------|  
 |ATL dual interface, custom interface, and local custom interface|Provide your own method name.|  
 |MFC dispinterface|Provide your own method name or select a suggested method name from the list. If you select a name from the list, the appropriate value appears in the **Return type** box, and it is unchangeable.|  
-|MFC ActiveX control dispinterface|Provide your own or select either of the stock methods [DoClick](../Topic/COleControl::DoClick.md) and [Refresh](../Topic/COleControl::Refresh.md). See [MFC ActiveX Controls: Adding Stock Methods](../mfc/mfc-activex-controls--adding-stock-methods.md) for more information.|  
+|MFC ActiveX control dispinterface|Provide your own or select either of the stock methods [DoClick](../Topic/COleControl::DoClick.md) and [Refresh](../Topic/COleControl::Refresh.md). See [MFC ActiveX Controls: Adding Stock Methods](../mfc/mfc-activex-controls-adding-stock-methods.md) for more information.|  
   
  **Method type**  
  Available only for MFC ActiveX controls. If you provide a method name in the **Method name** box, rather than selecting a method from the list, this box is unavailable.  
@@ -107,5 +108,5 @@ Use this wizard to add a method to an interface. Depending on the project type o
  Displays all parameters and their modifiers and types currently added for the method. As you add parameters, the wizard updates **Parameter list** to display each parameter, with its modifier and type.  
   
 ## See Also  
- [Adding a Method](../ide/adding-a-method---visual-c---.md)   
- [IDL Attributes, Add Method Wizard](../ide/idl-attributes--add-method-wizard.md)
+ [Adding a Method](../ide/adding-a-method-visual-cpp.md)   
+ [IDL Attributes, Add Method Wizard](../ide/idl-attributes-add-method-wizard.md)

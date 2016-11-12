@@ -1,13 +1,13 @@
 ---
-title: "Common Dialog Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Common Dialog Classes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -21,7 +21,8 @@ helpviewer_keywords:
   - "dialog classes [C++], common"
   - "common dialog boxes [C++]"
 ms.assetid: 5c4f6443-896c-4b05-a7df-8169fdadc71d
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,24 +41,25 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Common Dialog Classes
-In addition to class [CDialog](../mfcref/cdialog-class.md), MFC supplies several classes derived from `CDialog` that encapsulate commonly used dialog boxes, as shown in the following table. The dialog boxes encapsulated are called the "common dialog boxes" and are part of the Windows common dialog library (COMMDLG.DLL). The dialog-template resources and code for these classes are provided in the Windows common dialog boxes that are part of Windows versions 3.1 and later.  
+In addition to class [CDialog](../mfc/reference/cdialog-class.md), MFC supplies several classes derived from `CDialog` that encapsulate commonly used dialog boxes, as shown in the following table. The dialog boxes encapsulated are called the "common dialog boxes" and are part of the Windows common dialog library (COMMDLG.DLL). The dialog-template resources and code for these classes are provided in the Windows common dialog boxes that are part of Windows versions 3.1 and later.  
   
 ### Common Dialog Classes  
   
 |Derived dialog class|Purpose|  
 |--------------------------|-------------|  
-|[CColorDialog](../mfcref/ccolordialog-class.md)|Lets user select colors.|  
-|[CFileDialog](../mfcref/cfiledialog-class.md)|Lets user select a filename to open or to save.|  
-|[CFindReplaceDialog](../mfcref/cfindreplacedialog-class.md)|Lets user initiate a find or replace operation in a text file.|  
-|[CFontDialog](../mfcref/cfontdialog-class.md)|Lets user specify a font.|  
-|[CPrintDialog](../mfcref/cprintdialog-class.md)|Lets user specify information for a print job.|  
-|[CPrintDialogEx](../mfcref/cprintdialogex-class.md)|Windows 2000 print property sheet.|  
+|[CColorDialog](../mfc/reference/ccolordialog-class.md)|Lets user select colors.|  
+|[CFileDialog](../mfc/reference/cfiledialog-class.md)|Lets user select a filename to open or to save.|  
+|[CFindReplaceDialog](../mfc/reference/cfindreplacedialog-class.md)|Lets user initiate a find or replace operation in a text file.|  
+|[CFontDialog](../mfc/reference/cfontdialog-class.md)|Lets user specify a font.|  
+|[CPrintDialog](../mfc/reference/cprintdialog-class.md)|Lets user specify information for a print job.|  
+|[CPrintDialogEx](../mfc/reference/cprintdialogex-class.md)|Windows 2000 print property sheet.|  
   
- For more information about the common dialog classes, see the individual class names in the *MFC Reference*. MFC also supplies a number of standard dialog classes used for OLE. For information about these classes, see the base class, [COleDialog](../mfcref/coledialog-class.md), in the *MFC Reference*.  
+ For more information about the common dialog classes, see the individual class names in the *MFC Reference*. MFC also supplies a number of standard dialog classes used for OLE. For information about these classes, see the base class, [COleDialog](../mfc/reference/coledialog-class.md), in the *MFC Reference*.  
   
- Three other classes in MFC have dialog-like characteristics. For information about classes [CFormView](../mfcref/cformview-class.md), [CRecordView](../mfcref/crecordview-class.md), and [CDaoRecordView](../mfcref/cdaorecordview-class.md), see the classes in the *MFC Reference*. For information about class [CDialogBar](../mfcref/cdialogbar-class.md), see [Dialog Bars](../mfc/dialog-bars.md).  
+ Three other classes in MFC have dialog-like characteristics. For information about classes [CFormView](../mfc/reference/cformview-class.md), [CRecordView](../mfc/reference/crecordview-class.md), and [CDaoRecordView](../mfc/reference/cdaorecordview-class.md), see the classes in the *MFC Reference*. For information about class [CDialogBar](../mfc/reference/cdialogbar-class.md), see [Dialog Bars](../mfc/dialog-bars.md).  
   
 ## See Also  
  [Dialog Boxes](../mfc/dialog-boxes.md)   
  [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)   
  [Dialog Boxes in OLE](../mfc/dialog-boxes-in-ole.md)
+

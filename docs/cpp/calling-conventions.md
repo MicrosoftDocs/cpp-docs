@@ -1,13 +1,13 @@
 ---
-title: "Calling Conventions"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Calling Conventions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "calling conventions"
 ms.assetid: 11b1e45c-8fd1-420b-bca0-a19e294c1d85
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,7 +44,7 @@ The Visual C/C++ compiler provides several different conventions for calling int
   
 -   [Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md) (__`cdecl`, \_\_**stdcall**, \_\_**fastcall**, and others)  
   
--   [Calling Example: Function Prototype and Call](../cpp/calling-example--function-prototype-and-call.md)  
+-   [Calling Example: Function Prototype and Call](../cpp/calling-example-function-prototype-and-call.md)  
   
 -   [Using naked function calls to write custom prolog/epilog code](../cpp/naked-function-calls.md)  
   

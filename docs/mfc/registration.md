@@ -1,13 +1,13 @@
 ---
-title: "Registration"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Registration | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -21,7 +21,8 @@ helpviewer_keywords:
   - "servers, installing"
   - "OLE server applications, registering servers"
 ms.assetid: 991d5684-72c1-4f9e-a09a-9184ed12bbb9
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -64,7 +65,7 @@ When a user wants to insert an OLE item into an application, OLE presents a list
 ##  <a name="_core_server_initialization"></a> Server Initialization  
  When you create a server application with the application wizard, the wizard completes all initialization tasks for you automatically. This section describes what you must do if you write a server application manually.  
   
- When a server application is launched by a container application, the OLE system DLLs add the "/Embedding" option to the server's command line. A server application's behavior differs depending on whether it was launched by a container, so the first thing an application should do when it begins execution is check for the "/Embedding" or "-Embedding" option on the command line. If this switch exists, load a different set of resources that show the server as being either in-place active or fully open. For more information, see [Menus and Resources: Server Additions](../mfc/menus-and-resources--server-additions.md).  
+ When a server application is launched by a container application, the OLE system DLLs add the "/Embedding" option to the server's command line. A server application's behavior differs depending on whether it was launched by a container, so the first thing an application should do when it begins execution is check for the "/Embedding" or "-Embedding" option on the command line. If this switch exists, load a different set of resources that show the server as being either in-place active or fully open. For more information, see [Menus and Resources: Server Additions](../mfc/menus-and-resources-server-additions.md).  
   
  Your server application should also call its `CWinApp::RunEmbedded` function to parse the command line. If it returns a nonzero value, the application should not show its window because it has been run from a container application, not as a stand-alone application. This function updates the server's entry in the system registration database and calls the `RegisterAll` member function for you, performing instance registration.  
   
@@ -77,6 +78,6 @@ When a user wants to insert an OLE item into an application, OLE presents a list
 ## See Also  
  [OLE](../mfc/ole-in-mfc.md)   
  [Servers](../mfc/servers.md)   
- [CWinApp::RunAutomated](../Topic/CWinApp::RunAutomated.md)   
- [CWinApp::RunEmbedded](../Topic/CWinApp::RunEmbedded.md)   
- [COleTemplateServer Class](../mfcref/coletemplateserver-class.md)
+ [CWinApp::RunAutomated](../mfc/reference/cwinapp-class.md#cwinapp__runautomated)   
+ [CWinApp::RunEmbedded](../mfc/reference/cwinapp-class.md#cwinapp__runembedded)   
+ [COleTemplateServer Class](../mfc/reference/coletemplateserver-class.md)

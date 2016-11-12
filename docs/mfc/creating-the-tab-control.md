@@ -1,13 +1,13 @@
 ---
-title: "Creating the Tab Control"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Creating the Tab Control | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "TCS_EX_REGISTERDROP"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "CTabCtrl class, creating"
   - "TCS_EX_FLATSEPARATORS extended style"
 ms.assetid: 3a9c2d64-f5f4-41ea-84ab-fceb73c3dbdc
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -45,17 +46,17 @@ How the tab control is created depends on whether you are using the control in a
   
 1.  In the dialog editor, add a Tab Control to your dialog template resource. Specify its control ID.  
   
-2.  Use the [Add Member Variable Wizard](../ide/adding-a-member-variable---visual-c---.md) to add a member variable of type [CTabCtrl](../mfcref/ctabctrl-class.md) with the Control property. You can use this member to call `CTabCtrl` member functions.  
+2.  Use the [Add Member Variable Wizard](../ide/adding-a-member-variable-visual-cpp.md) to add a member variable of type [CTabCtrl](../mfc/reference/ctabctrl-class.md) with the Control property. You can use this member to call `CTabCtrl` member functions.  
   
-3.  Map handler functions in the dialog class for any tab control notification messages you need to handle. For more information, see [Mapping Messages to Functions](../mfcref/mapping-messages-to-functions.md).  
+3.  Map handler functions in the dialog class for any tab control notification messages you need to handle. For more information, see [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md).  
   
-4.  In [OnInitDialog](../Topic/CDialog::OnInitDialog.md), set the styles for the `CTabCtrl`.  
+4.  In [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog), set the styles for the `CTabCtrl`.  
   
 ### To use CTabCtrl in a nondialog window  
   
 1.  Define the control in the view or window class.  
   
-2.  Call the control's [Create](../Topic/CTabCtrl::Create.md) member function, possibly in [OnInitialUpdate](../Topic/CView::OnInitialUpdate.md), possibly as early as the parent window's [OnCreate](../Topic/CWnd::OnCreate.md) handler function (if you're subclassing the control). Set the styles for the control.  
+2.  Call the control's [Create](../mfc/reference/ctabctrl-class.md#create) member function, possibly in [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate), possibly as early as the parent window's [OnCreate](../mfc/reference/cwnd-class.md#oncreate) handler function (if you're subclassing the control). Set the styles for the control.  
   
  After the `CTabCtrl` object has been created, you can set or clear the following extended styles:  
   
@@ -64,20 +65,21 @@ How the tab control is created depends on whether you are using the control in a
 -   **TCS_EX_REGISTERDROP** The tab control generates **TCN_GETOBJECT** notification messages to request a drop target object when an object is dragged over the tab items in the control.  
   
     > [!NOTE]
-    >  To receive the **TCN_GETOBJECT** notification, you must initialize the OLE libraries with a call to [AfxOleInit](../Topic/AfxOleInit.md).  
+    >  To receive the **TCN_GETOBJECT** notification, you must initialize the OLE libraries with a call to [AfxOleInit](../mfc/reference/ole-initialization.md#afxoleinit).  
   
- These styles can be retrieved and set, after the control has been created, with respective calls to the [GetExtendedStyle](../Topic/CTabCtrl::GetExtendedStyle.md) and [SetExtendedStyle](../Topic/CTabCtrl::SetExtendedStyle.md) member functions.  
+ These styles can be retrieved and set, after the control has been created, with respective calls to the [GetExtendedStyle](../mfc/reference/ctabctrl-class.md#getextendedstyle) and [SetExtendedStyle](../mfc/reference/ctabctrl-class.md#setextendedstyle) member functions.  
   
  For instance, set the **TCS_EX_FLATSEPARATORS** style with the following lines of code:  
   
- [!code[NVC_MFCControlLadenDialog#33](../mfc/codesnippet/CPP/creating-the-tab-control_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#33](../mfc/codesnippet/CPP/creating-the-tab-control_1.cpp)]  
   
  Clear the **TCS_EX_FLATSEPARATORS** style from a `CTabCtrl` object with the following lines of code:  
   
- [!code[NVC_MFCControlLadenDialog#34](../mfc/codesnippet/CPP/creating-the-tab-control_2.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#34](../mfc/codesnippet/CPP/creating-the-tab-control_2.cpp)]  
   
  This will remove the separators that appear between the buttons of your `CTabCtrl` object.  
   
 ## See Also  
  [Using CTabCtrl](../mfc/using-ctabctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

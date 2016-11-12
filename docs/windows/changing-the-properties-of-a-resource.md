@@ -1,13 +1,13 @@
 ---
-title: "Changing the Properties of a Resource"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Changing the Properties of a Resource | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "resources [Visual Studio], properties"
 ms.assetid: c4373b36-2651-4954-afa6-3f66300673d4
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,9 +39,9 @@ translation.priority.ht:
   
 1.  In [Resource View](../windows/resource-view-window.md), right-click the resource you want to edit and choose **Properties** from the shortcut menu.  
   
-     **Note** If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to--create-a-resource-script-file.md).  
+     **Note** If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  In the [Properties window](../Topic/Properties%20Window.md), change the properties of your resource.  
+2.  In the [Properties window](/visual-studio/ide/reference/properties-window), change the properties of your resource.  
   
 ### To undo a change you've made to the properties of a resource  
   

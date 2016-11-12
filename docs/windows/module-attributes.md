@@ -1,13 +1,13 @@
 ---
-title: "Module Attributes"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Module Attributes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "attributes [C++], reference topics"
 ms.assetid: 46d135dc-613f-4810-90a4-e155ab8ed91a
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -34,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Module Attributes
-The following attribute can only be applied to the [module](../windows/module--c---.md) attribute.  
+The following attribute can only be applied to the [module](../windows/module-cpp.md) attribute.  
   
 |Attribute|Description|  
 |---------------|-----------------|  

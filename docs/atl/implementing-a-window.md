@@ -1,13 +1,13 @@
 ---
-title: "Implementing a Window"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Implementing a Window | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "CWindowImpl class, using"
   - "windows [C++], implementing in ATL"
 ms.assetid: eb1ce8d6-72f9-4894-aae7-e60a61665628
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,11 +36,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Implementing a Window
-Class [CWindowImpl](../atl/cwindowimpl-class.md) allows you to implement a window and handle its messages. Message handing in ATL is based on a message map. This section explains:  
+Class [CWindowImpl](../atl/reference/cwindowimpl-class.md) allows you to implement a window and handle its messages. Message handing in ATL is based on a message map. This section explains:  
   
 -   How to [add a message handler](../atl/adding-an-atl-message-handler.md) to a control.  
   
--   What [message maps](../atl/message-maps--atl-.md) are and how to use them.  
+-   What [message maps](../atl/message-maps-atl.md) are and how to use them.  
   
 -   The syntax for [message handler functions](../atl/message-handler-functions.md).  
   
@@ -47,3 +48,4 @@ Class [CWindowImpl](../atl/cwindowimpl-class.md) allows you to implement a windo
   
 ## See Also  
  [Window Classes](../atl/atl-window-classes.md)
+

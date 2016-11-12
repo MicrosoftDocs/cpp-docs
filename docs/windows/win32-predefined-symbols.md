@@ -1,13 +1,13 @@
 ---
-title: "Win32 Predefined Symbols"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Win32 Predefined Symbols | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "Windows API [C++], predefined symbols"
 ms.assetid: 45c8e193-ee2a-4024-bfc2-34d1ec9c9239
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Win32 Predefined Symbols
-These symbols are defined in the Win32 header files, and they support standard Windows application functions and actions. These symbols are mainly used with common UI elements. When you are working with controls in the resource editors, these symbols will appear in the [Properties Window](../Topic/Properties%20Window.md) associated with common controls. For instance, if your toolbar should display the application icon, the icon will be associated with the symbol IDI_SMALL in the Property Window.  
+These symbols are defined in the Win32 header files, and they support standard Windows application functions and actions. These symbols are mainly used with common UI elements. When you are working with controls in the resource editors, these symbols will appear in the [Properties Window](/visual-studio/ide/reference/properties-window) associated with common controls. For instance, if your toolbar should display the application icon, the icon will be associated with the symbol IDI_SMALL in the Property Window.  
   
 |||  
 |-|-|  
@@ -59,4 +60,4 @@ These symbols are defined in the Win32 header files, and they support standard W
   
 ## See Also  
  [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)   
- [Symbols: Resource Identifiers](../mfc/symbols--resource-identifiers.md)
+ [Symbols: Resource Identifiers](../mfc/symbols-resource-identifiers.md)

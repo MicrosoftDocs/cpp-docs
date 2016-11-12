@@ -1,13 +1,13 @@
 ---
-title: "id"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "id | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "vc-attr.id"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "id attribute"
 ms.assetid: a48d2c99-c5d2-4f46-bf96-5ac88dcb5d0c
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -74,6 +75,6 @@ Specifies a `dispid` parameter for a member function (either a property or a met
  [Method Attributes](../windows/method-attributes.md)   
  [Data Member Attributes](../windows/data-member-attributes.md)   
  [defaultvalue](../windows/defaultvalue.md)   
- [in](../windows/in--c---.md)   
- [out](../windows/out--c---.md)   
- [Attributes Samples](assetId:///558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [in](../windows/in-cpp.md)   
+ [out](../windows/out-cpp.md)   
+ [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

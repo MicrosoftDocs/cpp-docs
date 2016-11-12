@@ -1,13 +1,13 @@
 ---
-title: "Files Created for Your Wizard"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Files Created for Your Wizard | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "files [C++], created by Custom Wizard"
 ms.assetid: 7f0e393c-395e-491b-add2-904cf8838e81
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -44,12 +45,12 @@ Your wizard uses the name that you specify in the **Name** box in the **New Proj
   
 |File|Description|  
 |----------|-----------------|  
-|[Project.vsz](../ide/.vsz-file--project-control-.md)|A text file that resembles the old .ini format. It identifies the wizard engine and provides context and optional [custom parameters](../ide/custom-parameters-in-the-wizard-.vsz-file.md).|  
+|[Project.vsz](../ide/dot-vsz-file-project-control.md)|A text file that resembles the old .ini format. It identifies the wizard engine and provides context and optional [custom parameters](../ide/custom-parameters-in-the-wizard-dot-vsz-file.md).|  
 |[Project.vsdir](../Topic/Adding%20Wizards%20to%20the%20Add%20Item%20and%20New%20Project%20Dialog%20Boxes%20by%20Using%20.Vsdir%20Files.md)|A text file that enables the Visual Studio shell to find the wizard and display it in the **New Project** dialog box.|  
-|[HTML files (optional)](../ide/html-files.md)|A wizard can contain a user interface (UI), which is an HTML interface. A wizard without a UI contains no HTML files.<br /><br /> If a wizard has a UI, each individual screen in the wizard is known as a *page*, and each page specifies UI features.<br /><br /> The default.htm file defines the first page in the wizard. Use the **Number of pages** list box of [Application Settings, Custom Wizard](../ide/application-settings--custom-wizard.md) to specify additional pages. Each additional page is defined by a Page_*page-number*.htm file, where *page-number* ranges from 2 through the number of pages that you specify.|  
-|[Script files](../ide/jscript-file.md)|The Custom Wizard creates a JScript file, default.js, for each wizard created. This file contains JScript functions that access the Visual C++ Wizard, Code, and Environment Object Models to customize a wizard. You can customize and add functions in your wizard's default.js file.<br /><br /> Additionally, your wizard includes the [common.js](../ide/customizing-c---wizards-with-common-jscript-functions.md) file, which contains commonly used JScript functions and is shared among all wizards, including the wizards used by Visual C++ to create other project types. For more information, see [Customizing C++ Wizards with Common JScript Functions](../ide/customizing-c---wizards-with-common-jscript-functions.md).|  
+|[HTML files (optional)](../ide/html-files.md)|A wizard can contain a user interface (UI), which is an HTML interface. A wizard without a UI contains no HTML files.<br /><br /> If a wizard has a UI, each individual screen in the wizard is known as a *page*, and each page specifies UI features.<br /><br /> The default.htm file defines the first page in the wizard. Use the **Number of pages** list box of [Application Settings, Custom Wizard](../ide/application-settings-custom-wizard.md) to specify additional pages. Each additional page is defined by a Page_*page-number*.htm file, where *page-number* ranges from 2 through the number of pages that you specify.|  
+|[Script files](../ide/jscript-file.md)|The Custom Wizard creates a JScript file, default.js, for each wizard created. This file contains JScript functions that access the Visual C++ Wizard, Code, and Environment Object Models to customize a wizard. You can customize and add functions in your wizard's default.js file.<br /><br /> Additionally, your wizard includes the [common.js](../ide/customizing-cpp-wizards-with-common-jscript-functions.md) file, which contains commonly used JScript functions and is shared among all wizards, including the wizards used by Visual C++ to create other project types. For more information, see [Customizing C++ Wizards with Common JScript Functions](../ide/customizing-cpp-wizards-with-common-jscript-functions.md).|  
 |[Templates](../ide/template-files.md)|A wizard's templates are a collection of text files that contain directives, which are parsed and inserted into the symbol table, depending on the wizard user's selections. The template text files are rendered according to the user input and added to the project created by the wizard. The appropriate information is obtained by directly accessing the wizard control's symbol table.|  
-|[Templates.inf](../ide/templates.inf-file.md)|A text file that lists all templates associated with the project.|  
+|[Templates.inf](../ide/templates-inf-file.md)|A text file that lists all templates associated with the project.|  
 |Default.vcxproj|An .xml file that contains the information about the project type.|  
 |Sample.txt|A template file that shows how your wizard directives are used.|  
 |ReadMe.txt|A template file that contains a summary of each file created by the Custom Wizard.|  
@@ -68,4 +69,4 @@ Your wizard uses the name that you specify in the **Name** box in the **New Proj
  [Custom Wizard](../ide/custom-wizard.md)   
  [Creating a Custom Wizard](../ide/creating-a-custom-wizard.md)   
  [Designing a Wizard](../ide/designing-a-wizard.md)   
- [Customizing C++ Wizards with Common JScript Functions](../ide/customizing-c---wizards-with-common-jscript-functions.md)
+ [Customizing C++ Wizards with Common JScript Functions](../ide/customizing-cpp-wizards-with-common-jscript-functions.md)

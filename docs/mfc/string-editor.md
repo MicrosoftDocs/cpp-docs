@@ -1,13 +1,13 @@
 ---
-title: "String Editor"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "String Editor | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.editors.string.F1"
@@ -22,7 +22,8 @@ helpviewer_keywords:
   - "resource editors, String editor"
   - "strings [C++], editing"
 ms.assetid: f71ab8de-3068-4e29-8e28-5a33d18dd416
-caps.latest.revision: 13
+caps.latest.revision: 15
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -65,7 +66,7 @@ A string table is a Windows resource that contains a list of IDs, values, and ca
     > [!NOTE]
     >  Windows does not allow the creation of empty string tables. If you create a string table with no entries, it is deleted automatically when you save the resource file.  
   
- For information on adding resources to managed projects (those that target the common language runtime), please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](assetId:///9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
+ For information on adding resources to managed projects (those that target the common language runtime), please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
   
 ## Requirements  
  Win32  
@@ -74,3 +75,4 @@ A string table is a Windows resource that contains a list of IDs, values, and ca
  [Resource Editors](../mfc/resource-editors.md)   
  [Strings](http://msdn.microsoft.com/library/windows/desktop/ms646979.aspx)   
  [About Strings](http://msdn.microsoft.com/library/windows/desktop/ms647465.aspx)
+

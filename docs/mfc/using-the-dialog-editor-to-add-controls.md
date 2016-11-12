@@ -1,13 +1,13 @@
 ---
-title: "Using the Dialog Editor to Add Controls"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Using the Dialog Editor to Add Controls | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "Dialog editor, creating controls"
   - "common controls [C++], adding"
 ms.assetid: d3f9f994-7e54-4656-a545-42c204557c36
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,4 +44,5 @@ When you create your dialog-template resource with the [dialog editor](../mfc/di
   
 ## See Also  
  [Making and Using Controls](../mfc/making-and-using-controls.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

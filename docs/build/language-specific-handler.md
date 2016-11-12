@@ -1,18 +1,19 @@
 ---
-title: "Language Specific Handler"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Language Specific Handler | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 ms.assetid: 6503e0cd-2d3a-4330-a925-8bed8c27c2be
 caps.latest.revision: 9
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -80,4 +81,4 @@ typedef struct _DISPATCHER_CONTEXT {
  **HandlerData** points to the language-specific handler data for this function.  
   
 ## See Also  
- [Exception Handling (x64)](../build/exception-handling--x64-.md)
+ [Exception Handling (x64)](../build/exception-handling-x64.md)

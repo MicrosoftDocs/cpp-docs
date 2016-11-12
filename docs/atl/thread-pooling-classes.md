@@ -1,13 +1,13 @@
 ---
-title: "Thread Pooling Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Thread Pooling Classes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.atl.threads.pooling"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "threading [ATL], pooling"
   - "pooling worker threads"
 ms.assetid: 01fa2c1c-12ae-4781-b772-0a74b6365a8c
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,11 +40,12 @@ translation.priority.ht:
 # Thread Pooling Classes
 The following classes support thread pooling:  
   
--   [CComAutoThreadModule](../atl/ccomautothreadmodule-class.md) Implements an EXE module, with support for multiple thread-pooled apartments.  
+-   [CComAutoThreadModule](../atl/reference/ccomautothreadmodule-class.md) Implements an EXE module, with support for multiple thread-pooled apartments.  
   
--   [CComApartment](../atl/ccomapartment-class.md) Manages an apartment in a thread-pooled EXE module.  
+-   [CComApartment](../atl/reference/ccomapartment-class.md) Manages an apartment in a thread-pooled EXE module.  
   
--   [CComSimpleThreadAllocator](../atl/ccomsimplethreadallocator-class.md) Manages thread selection for an EXE module.  
+-   [CComSimpleThreadAllocator](../atl/reference/ccomsimplethreadallocator-class.md) Manages thread selection for an EXE module.  
   
 ## See Also  
  [Class Overview](../atl/atl-class-overview.md)
+

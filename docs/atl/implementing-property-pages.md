@@ -1,13 +1,13 @@
 ---
-title: "Implementing Property Pages"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Implementing Property Pages | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "IPropertyPage class"
   - "property pages, implementing"
 ms.assetid: 62f29440-33a7-40eb-a1ef-3634c95f640c
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Implementing Property Pages
-Property pages are COM objects that implement the `IPropertyPage` or **IPropertyPage2** interface. ATL provides support for implementing property pages through the [ATL Property Page Wizard](../atl/atl-property-page-wizard.md) in the [Add Class dialog box](../ide/add-class-dialog-box.md).  
+Property pages are COM objects that implement the `IPropertyPage` or **IPropertyPage2** interface. ATL provides support for implementing property pages through the [ATL Property Page Wizard](../atl/reference/atl-property-page-wizard.md) in the [Add Class dialog box](../ide/add-class-dialog-box.md).  
   
  To create a property page using ATL:  
   
@@ -49,22 +50,23 @@ Property pages are COM objects that implement the `IPropertyPage` or **IProperty
   
 -   Add controls to the generated dialog resource to act as the user interface of your property page.  
   
--   Respond to changes in your page's user interface to perform validation, update the page site, or update the objects associated with your page. In particular, call [IPropertyPageImpl::SetDirty](../Topic/IPropertyPageImpl::SetDirty.md) when the user makes changes to the property page.  
+-   Respond to changes in your page's user interface to perform validation, update the page site, or update the objects associated with your page. In particular, call [IPropertyPageImpl::SetDirty](../atl/reference/ipropertypageimpl-class.md#setdirty) when the user makes changes to the property page.  
   
 -   Optionally override the `IPropertyPageImpl` methods using the guidelines below.  
   
     |IPropertyPageImpl method|Override when you want to...|Notes|  
     |------------------------------|----------------------------------|-----------|  
-    |[SetObjects](../Topic/IPropertyPageImpl::SetObjects.md)|Perform basic sanity checks on the number of objects being passed to your page and the interfaces that they support.|Execute your own code before calling the base class implementation. If the objects being set don't conform to your expectations, you should fail the call as soon as possible.|  
-    |[Activate](../Topic/IPropertyPageImpl::Activate.md)|Initialize your page's user interface (for example, set dialog controls with current property values from objects, create controls dynamically, or perform other initializations).|Call the base class implementation before your code so that the base class has a chance to create the dialog window and all the controls before you try to update them.|  
-    |[Apply](../Topic/IPropertyPageImpl::Apply.md)|Validate the property settings and update the objects.|There is no need to call the base class implementation since it doesn't do anything apart from trace the call.|  
-    |[Deactivate](../Topic/IPropertyPageImpl::Deactivate.md)|Clean up window-related items.|The base class implementation destroys the dialog box representing the property page. If you need to clean up before the dialog box is destroyed, you should add your code before calling the base class.|  
+    |[SetObjects](../atl/reference/ipropertypageimpl-class.md#setobjects)|Perform basic sanity checks on the number of objects being passed to your page and the interfaces that they support.|Execute your own code before calling the base class implementation. If the objects being set don't conform to your expectations, you should fail the call as soon as possible.|  
+    |[Activate](../atl/reference/ipropertypageimpl-class.md#activate)|Initialize your page's user interface (for example, set dialog controls with current property values from objects, create controls dynamically, or perform other initializations).|Call the base class implementation before your code so that the base class has a chance to create the dialog window and all the controls before you try to update them.|  
+    |[Apply](../atl/reference/ipropertypageimpl-class.md#apply)|Validate the property settings and update the objects.|There is no need to call the base class implementation since it doesn't do anything apart from trace the call.|  
+    |[Deactivate](../atl/reference/ipropertypageimpl-class.md#deactivate)|Clean up window-related items.|The base class implementation destroys the dialog box representing the property page. If you need to clean up before the dialog box is destroyed, you should add your code before calling the base class.|  
   
- For an example property page implementation, see [Example: Implementing a Property Page](../atl/example--implementing-a-property-page.md).  
+ For an example property page implementation, see [Example: Implementing a Property Page](../atl/example-implementing-a-property-page.md).  
   
 > [!NOTE]
 >  If you want to host ActiveX controls in your property page, you will need to change the derivation of your wizard-generated class. Replace **CDialogImpl\<CYourClass>** with **CAxDialogImpl\<CYourClass>** in the list of base classes.  
   
 ## See Also  
  [Property Pages](../atl/atl-com-property-pages.md)   
- [ATLPages Sample](../top/visual-c---samples.md)
+ [ATLPages Sample](../top/visual-cpp-samples.md)
+

@@ -1,13 +1,13 @@
 ---
-title: "Specifying Levels of Functionality"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Specifying Levels of Functionality | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "run-time class, information support"
   - "levels [C++]"
 ms.assetid: 562669ba-c858-4f66-b5f1-b3beeea4f486
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,7 +40,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Specifying Levels of Functionality
-This article describes how to add the following levels of functionality to your [CObject](../mfcref/cobject-class.md)-derived class:  
+This article describes how to add the following levels of functionality to your [CObject](../mfc/reference/cobject-class.md)-derived class:  
   
 -   [Run-time class information](#_core_to_add_run.2d.time_class_information)  
   
@@ -55,11 +56,11 @@ This article describes how to add the following levels of functionality to your 
   
 2.  Use the `DECLARE_DYNAMIC` macro in your class declaration, as shown here:  
   
-     [!code[NVC_MFCCObjectSample#2](../mfc/codesnippet/CPP/specifying-levels-of-functionality_1.h)]  
+     [!code-cpp[NVC_MFCCObjectSample#2](../mfc/codesnippet/CPP/specifying-levels-of-functionality_1.h)]  
   
 3.  Use the `IMPLEMENT_DYNAMIC` macro in the implementation file (.CPP) of your class. This macro takes as arguments the name of the class and its base class, as follows:  
   
-     [!code[NVC_MFCCObjectSample#3](../mfc/codesnippet/CPP/specifying-levels-of-functionality_2.cpp)]  
+     [!code-cpp[NVC_MFCCObjectSample#3](../mfc/codesnippet/CPP/specifying-levels-of-functionality_2.cpp)]  
   
 > [!NOTE]
 >  Always put `IMPLEMENT_DYNAMIC` in the implementation file (.CPP) for your class. The `IMPLEMENT_DYNAMIC` macro should be evaluated only once during a compilation and therefore should not be used in an interface file (.H) that could potentially be included in more than one file.  

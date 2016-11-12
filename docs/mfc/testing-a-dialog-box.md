@@ -1,13 +1,13 @@
 ---
-title: "Testing a Dialog Box"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Testing a Dialog Box | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "testing, dialog boxes"
   - "dialog boxes, testing"
 ms.assetid: 45034ee9-c554-4f4b-8c46-6ddefdee8951
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -68,3 +69,4 @@ When you're designing a dialog box, you can simulate and test its run-time behav
  [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)   
  [Dialog Editor](../mfc/dialog-editor.md)   
  [Showing or Hiding the Dialog Editor Toolbar](../mfc/showing-or-hiding-the-dialog-editor-toolbar.md)
+

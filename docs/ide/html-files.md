@@ -1,13 +1,13 @@
 ---
-title: "HTML Files"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "HTML Files | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -20,6 +20,7 @@ helpviewer_keywords:
   - "files [C++], created by Custom Wizard"
 ms.assetid: 3b6ed080-6560-418b-b908-d84d71bdf145
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -58,7 +59,7 @@ A wizard can contain a user interface, which is an HTML interface. Along with De
   
  Each .htm file records user selections to the symbols table.  
   
--   An include for [Common.js](../ide/customizing-c---wizards-with-common-jscript-functions.md), which contains commonly used and helpful JScript functions, and Default.js.  
+-   An include for [Common.js](../ide/customizing-cpp-wizards-with-common-jscript-functions.md), which contains commonly used and helpful JScript functions, and Default.js.  
   
 -   References to the project's images to display in the HTML.  
   

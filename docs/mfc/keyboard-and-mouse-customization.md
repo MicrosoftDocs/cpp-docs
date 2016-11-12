@@ -1,13 +1,13 @@
 ---
-title: "Keyboard and Mouse Customization"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Keyboard and Mouse Customization | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "customizations, keyboard and mouse (MFC Extensions)"
   - "keyboard and mouse customizations (MFC Extensions)"
 ms.assetid: 1f789f1b-5f2e-4b11-b974-e3e2a2e49d82
-caps.latest.revision: 21
+caps.latest.revision: 23
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -49,7 +50,7 @@ Keyboard Customization Tab
   
  All of the currently assigned keyboard shortcuts are listed in the list box in the right column. The user can also select individual shortcuts and remove them, or reset all the mappings for the application.  
   
- If you want to support this customization in your application, you must create a [CKeyboardManager](../mfcref/ckeyboardmanager-class.md) object. To create a `CKeyboardManager` object, call the function [CWinAppEx::InitKeyboardManager](../Topic/CWinAppEx::InitKeyboardManager.md). This method creates and initializes a keyboard manager. If you create a keyboard manager manually, you still must call `CWinAppEx::InitKeyboardManager` to initialize it.  
+ If you want to support this customization in your application, you must create a [CKeyboardManager](../mfc/reference/ckeyboardmanager-class.md) object. To create a `CKeyboardManager` object, call the function [CWinAppEx::InitKeyboardManager](../mfc/reference/cwinappex-class.md#cwinappex__initkeyboardmanager). This method creates and initializes a keyboard manager. If you create a keyboard manager manually, you still must call `CWinAppEx::InitKeyboardManager` to initialize it.  
   
  If you use the Wizard to create your application, the Wizard will initialize the keyboard manager. After your application initializes the keyboard manager, the framework adds a **Keyboard** tab to the **Customization** dialog box.  
   
@@ -65,15 +66,15 @@ Mouse Customization Tab
   
 #### To enable mouse customization  
   
-1.  Initialize a [CMouseManager](../mfcref/cmousemanager-class.md) object by calling [CWinAppEx::InitMouseManager](../Topic/CWinAppEx::InitMouseManager.md).  
+1.  Initialize a [CMouseManager](../mfc/reference/cmousemanager-class.md) object by calling [CWinAppEx::InitMouseManager](../mfc/reference/cwinappex-class.md#cwinappex__initmousemanager).  
   
-2.  Obtain a pointer to the mouse manager by using [CWinAppEx::GetMouseManager](../Topic/CWinAppEx::GetMouseManager.md).  
+2.  Obtain a pointer to the mouse manager by using [CWinAppEx::GetMouseManager](../mfc/reference/cwinappex-class.md#cwinappex__getmousemanager).  
   
-3.  Add views to the mouse manager by using the [CMouseManager::AddView](../Topic/CMouseManager::AddView.md) method. Do this for every view you want to add to the mouse manager.  
+3.  Add views to the mouse manager by using the [CMouseManager::AddView](../mfc/reference/cmousemanager-class.md#cmousemanager__addview) method. Do this for every view you want to add to the mouse manager.  
   
  After your application initializes the mouse manager, the framework adds the **Mouse** tab to the **Customize** dialog box. If you do not add any views, accessing the tab will cause an unhandled exception. After you have created a list of views, the **Mouse** tab is available to the user.  
   
- When you add a new view to the mouse manager, you give it a unique ID. If you want to support mouse customization for a window, you must process the `WM_LBUTTONDBLCLICK` message and call the [CWinAppEx::OnViewDoubleClick](../Topic/CWinAppEx::OnViewDoubleClick.md) function. When you call this function, one of the parameters is the ID for that window. It is the responsibility of the programmer to keep track of the ID numbers and the objects associated with them.  
+ When you add a new view to the mouse manager, you give it a unique ID. If you want to support mouse customization for a window, you must process the `WM_LBUTTONDBLCLICK` message and call the [CWinAppEx::OnViewDoubleClick](../mfc/reference/cwinappex-class.md#cwinappex__onviewdoubleclick) function. When you call this function, one of the parameters is the ID for that window. It is the responsibility of the programmer to keep track of the ID numbers and the objects associated with them.  
   
 ## Security Concerns  
  As described in [User-defined Tools](../mfc/user-defined-tools.md), the user can associate a user-defined tool ID with the double-click event. When the user double-clicks a view, the application looks for a user tool that matches the associated ID. If the application finds a matching tool, it executes the tool. If the application cannot find a matching tool, it sends a WM_COMMAND message with the ID to the view that was double-clicked.  
@@ -86,6 +87,7 @@ Mouse Customization Tab
   
 ## See Also  
  [Customization for MFC](../mfc/customization-for-mfc.md)   
- [CKeyboardManager Class](../mfcref/ckeyboardmanager-class.md)   
- [CMouseManager Class](../mfcref/cmousemanager-class.md)   
+ [CKeyboardManager Class](../mfc/reference/ckeyboardmanager-class.md)   
+ [CMouseManager Class](../mfc/reference/cmousemanager-class.md)   
  [Security Implications of Customization](../mfc/security-implications-of-customization.md)
+

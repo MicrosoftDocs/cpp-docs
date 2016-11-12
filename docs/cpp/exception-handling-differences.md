@@ -1,13 +1,13 @@
 ---
-title: "Exception Handling Differences"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Exception Handling Differences | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "C++ exception handling, vs. structured exception handling"
   - "wrapper classes, C exception"
 ms.assetid: f21d1944-4810-468e-b02a-9f77da4138c9
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -73,8 +74,11 @@ void SEHFunc() {
 }  
 ```  
   
- **In finally.**  
-**Caught a C exception.**   
+```Output  
+In finally.  
+Caught a C exception.  
+```  
+  
 ##  <a name="_core_c_exception_wrapper_class"></a> C Exception Wrapper Class  
  In a simple example like the above, the C exception can be caught only by an ellipsis (**...**) **catch** handler. No information about the type or nature of the exception is communicated to the handler. While this method works, in some cases you may need to define a transformation between the two exception handling models so that each C exception is associated with a specific class. To do this, you can define a C exception "wrapper" class, which can be used or derived from in order to attribute a specific class type to a C exception. By doing so, each C exception can be handled by a C++ **catch** handler more separately than in the preceding example.  
   
@@ -98,9 +102,9 @@ public:
   
 ```  
   
- To use this class, you install a custom C exception translation function that is called by the internal exception handling mechanism each time a C exception is thrown. Within your translation function, you can throw any typed exception (perhaps an `SE_Exception` type, or a class type derived from `SE_Exception`) that can be caught by an appropriate matching C++ **catch** handler. The translation function can simply return, which indicates that it did not handle the exception. If the translation function itself raises a C exception, [terminate](../crt/terminate--crt-.md) is called.  
+ To use this class, you install a custom C exception translation function that is called by the internal exception handling mechanism each time a C exception is thrown. Within your translation function, you can throw any typed exception (perhaps an `SE_Exception` type, or a class type derived from `SE_Exception`) that can be caught by an appropriate matching C++ **catch** handler. The translation function can simply return, which indicates that it did not handle the exception. If the translation function itself raises a C exception, [terminate](../c-runtime-library/reference/terminate-crt.md) is called.  
   
- To specify a custom translation function, call the [_set_se_translator](../crt/_set_se_translator.md) function with the name of your translation function as its single argument. The translation function that you write is called once for each function invocation on the stack that has **try** blocks. There is no default translation function; if you do not specify one by calling `_set_se_translator`, the C exception can only be caught by an ellipsis **catch** handler.  
+ To specify a custom translation function, call the [_set_se_translator](../c-runtime-library/reference/set-se-translator.md) function with the name of your translation function as its single argument. The translation function that you write is called once for each function invocation on the stack that has **try** blocks. There is no default translation function; if you do not specify one by calling `_set_se_translator`, the C exception can only be caught by an ellipsis **catch** handler.  
   
 ## Example  
  For example, the following code installs a custom translation function, and then raises a C exception that is wrapped by the `SE_Exception` class:  
@@ -151,9 +155,12 @@ int main() {
 }  
 ```  
   
- **In trans_func.**  
-**In finally**  
-**Caught a __try exception with SE_Exception.**  
-**nSE = 0xc0000094**   
+```Output  
+In trans_func.  
+In finally  
+Caught a __try exception with SE_Exception.  
+nSE = 0xc0000094  
+```  
+  
 ## See Also  
- [Mixing C (Structured) and C++ Exceptions](../cpp/mixing-c--structured--and-c---exceptions.md)
+ [Mixing C (Structured) and C++ Exceptions](../cpp/mixing-c-structured-and-cpp-exceptions.md)

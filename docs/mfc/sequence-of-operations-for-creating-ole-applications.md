@@ -1,13 +1,13 @@
 ---
-title: "Sequence of Operations for Creating OLE Applications"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Sequence of Operations for Creating OLE Applications | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "applications [OLE], creating"
   - "applications [OLE]"
 ms.assetid: 84b0f606-36c1-4253-9cea-44427f0074b9
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -51,3 +52,4 @@ The following table shows your role and the framework's role in creating OLE lin
  [Sequence of Operations for Building MFC Applications](../mfc/sequence-of-operations-for-building-mfc-applications.md)   
  [Sequence of Operations for Creating ActiveX Controls](../mfc/sequence-of-operations-for-creating-activex-controls.md)   
  [Sequence of Operations for Creating Database Applications](../mfc/sequence-of-operations-for-creating-database-applications.md)
+

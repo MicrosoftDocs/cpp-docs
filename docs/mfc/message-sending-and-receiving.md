@@ -1,13 +1,13 @@
 ---
-title: "Message Sending and Receiving"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Message Sending and Receiving | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "MFC [C++], messages"
   - "messages [C++], sending"
 ms.assetid: 9ce189cb-b259-4c3b-b6f2-9cfbed18b98b
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -54,3 +55,4 @@ Consider the sending part of the process and how the framework responds.
   
 ## See Also  
  [How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)
+

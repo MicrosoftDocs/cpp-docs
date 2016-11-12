@@ -1,13 +1,13 @@
 ---
-title: "OnIdle Member Function"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "OnIdle Member Function | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "OnIdle"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "CWinApp class, OnIdle method"
   - "message handling, OnIdle method"
 ms.assetid: 51adc874-0075-4f76-be1c-79283f46c10b
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,7 +40,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # OnIdle Member Function
-When no Windows messages are being processed, the framework calls the [CWinApp](../mfcref/cwinapp-class.md) member function [OnIdle](../Topic/CWinApp::OnIdle.md) (described in the MFC Library Reference).  
+When no Windows messages are being processed, the framework calls the [CWinApp](../mfc/reference/cwinapp-class.md) member function [OnIdle](../mfc/reference/cwinapp-class.md#onidle) (described in the MFC Library Reference).  
   
  Override `OnIdle` to perform background tasks. The default version updates the state of user-interface objects such as toolbar buttons and performs cleanup of temporary objects created by the framework in the course of its operations. The following figure illustrates how the message loop calls `OnIdle` when there are no messages in the queue.  
   
@@ -49,4 +50,4 @@ The Message Loop
  For more information about what you can do in the idle loop, see [Idle Loop Processing](../mfc/idle-loop-processing.md).  
   
 ## See Also  
- [CWinApp: The Application Class](../mfc/cwinapp--the-application-class.md)
+ [CWinApp: The Application Class](../mfc/cwinapp-the-application-class.md)

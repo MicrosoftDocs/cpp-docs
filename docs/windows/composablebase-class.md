@@ -1,13 +1,13 @@
 ---
-title: "ComposableBase Class"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "ComposableBase Class | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "implements/Microsoft::WRL::ComposableBase"
@@ -15,6 +15,7 @@ dev_langs:
   - "C++"
 ms.assetid: 5e967ef9-15c8-483b-b0d0-2e28cc91c715
 caps.latest.revision: 3
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -53,4 +54,4 @@ class ComposableBase;
  **Namespace:** Microsoft::WRL  
   
 ## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft--wrl-namespace.md)
+ [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

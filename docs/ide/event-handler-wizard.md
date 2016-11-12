@@ -1,13 +1,13 @@
 ---
-title: "Event Handler Wizard"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Event Handler Wizard | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.codewiz.eventhandler.overview"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "Event Handler Wizard [C++]"
 ms.assetid: af8e1835-94b1-4d9a-b353-c519e011d3a1
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Event Handler Wizard
-This wizard adds an event handler for a dialog box control to the class of your choice. If you add an event handler from the [Properties window](../Topic/Properties%20Window.md), you can add it only to the class that implements the dialog box. See [Adding Event Handlers for Dialog Box Controls](../mfc/adding-event-handlers-for-dialog-box-controls.md) for more information.  
+This wizard adds an event handler for a dialog box control to the class of your choice. If you add an event handler from the [Properties window](/visual-studio/ide/reference/properties-window), you can add it only to the class that implements the dialog box. See [Adding Event Handlers for Dialog Box Controls](../mfc/adding-event-handlers-for-dialog-box-controls.md) for more information.  
   
  **Command name**  
  Identifies the selected control, for which the event handler is added. This box is unavailable.  
@@ -59,4 +60,4 @@ This wizard adds an event handler for a dialog box control to the class of your 
  Opens the text editor to the selected existing function so you can add or edit the control notification handler code.  
   
 ## See Also  
- [Adding an Event Handler](../ide/adding-an-event-handler--visual-c---.md)
+ [Adding an Event Handler](../ide/adding-an-event-handler-visual-cpp.md)

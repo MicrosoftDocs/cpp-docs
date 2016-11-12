@@ -1,13 +1,13 @@
 ---
-title: "Collections"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Collections | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -27,7 +27,8 @@ helpviewer_keywords:
   - "collection classes, lists"
   - "collection classes, shapes"
 ms.assetid: 02586e4c-851d-41d0-a722-feb11c17c74c
-caps.latest.revision: 16
+caps.latest.revision: 18
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -73,7 +74,7 @@ The Microsoft Foundation Class Library provides collection classes to manage gro
      A map is a collection that associates a key object with a value object.  
   
 ##  <a name="_core_the_template.2d.based_collection_classes"></a> The Template-Based Collection Classes  
- The easiest way to implement a type-safe collection that contains objects of any type is to use one of the MFC template-based classes. For examples of these classes, see the MFC sample [COLLECT](../top/visual-c---samples.md).  
+ The easiest way to implement a type-safe collection that contains objects of any type is to use one of the MFC template-based classes. For examples of these classes, see the MFC sample [COLLECT](../top/visual-cpp-samples.md).  
   
  The following table lists the MFC template-based collection classes.  
   
@@ -109,17 +110,17 @@ The Microsoft Foundation Class Library provides collection classes to manage gro
   
 -   Whether the collection is type-safe  
   
-### What do you want to do?  
+### What do you want to do  
   
 #### General Collection-Class Tasks  
   
 -   [Recommendations for Choosing a Collection Class](../mfc/recommendations-for-choosing-a-collection-class.md)  
   
--   [How to: Make a Type-Safe Collection](../mfc/how-to--make-a-type-safe-collection.md)  
+-   [How to: Make a Type-Safe Collection](../mfc/how-to-make-a-type-safe-collection.md)  
   
 -   [Creating Stack and Queue Collections](../mfc/creating-stack-and-queue-collections.md)  
   
--   [CArray::Add](../Topic/CArray::Add.md)  
+-   [CArray::Add](../mfc/reference/carray-class.md#carray__add)  
   
 #### Template-Based Collection-Class Tasks  
   
@@ -134,3 +135,4 @@ The Microsoft Foundation Class Library provides collection classes to manage gro
 ## See Also  
  [Concepts](../mfc/mfc-concepts.md)   
  [General MFC Topics](../mfc/general-mfc-topics.md)
+

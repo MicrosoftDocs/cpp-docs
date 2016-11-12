@@ -1,13 +1,13 @@
 ---
-title: "Using extern to Specify Linkage"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Using extern to Specify Linkage | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "extern"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "external linkage, extern modifier"
 ms.assetid: 1e2f0ae3-ae98-4410-85b5-222d6abc865a
 caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -132,8 +133,8 @@ extern "C" int CFunc2(); // Error: not the first declaration of
  Functions and objects explicitly declared as **static** within the body of a compound linkage specifier (**{ }**) are treated as static functions or objects; the linkage specifier is ignored. Other functions and objects behave as if declared using the `extern` keyword. (See [Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md) for details about the `extern` keyword.)  
   
 ## See Also  
- [Keywords](../cpp/keywords--c---.md)   
- [(NOTINBUILD)Linkage Specifications](assetId:///d2b0cff1-7798-4c38-9ac8-61c3bfe2bfb9)   
- [extern Storage-Class Specifier](../c/extern-storage-class-specifier.md)   
- [Behavior of Identifiers](../c/behavior-of-identifiers.md)   
- [Linkage](../c/linkage.md)
+ [Keywords](../cpp/keywords-cpp.md)   
+ [(NOTINBUILD)Linkage Specifications](http://msdn.microsoft.com/en-us/d2b0cff1-7798-4c38-9ac8-61c3bfe2bfb9)   
+ [extern Storage-Class Specifier](../c-language/extern-storage-class-specifier.md)   
+ [Behavior of Identifiers](../c-language/behavior-of-identifiers.md)   
+ [Linkage](../c-language/linkage.md)

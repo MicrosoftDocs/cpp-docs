@@ -1,13 +1,13 @@
 ---
-title: "Specifying an Inline File"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Specifying an Inline File | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "files [C++], inline"
 ms.assetid: 393eccfb-3fc9-4bac-a30c-8ac8d221cca3
 caps.latest.revision: 7
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 

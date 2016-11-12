@@ -1,13 +1,13 @@
 ---
-title: "Event Handling in COM"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Event Handling in COM | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -27,6 +27,7 @@ helpviewer_keywords:
   - "declaring events, event handling in COM"
 ms.assetid: 6b4617d4-a58e-440c-a8a6-1ad1c715b2bb
 caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -45,19 +46,19 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Event Handling in COM
-In COM event handling, you set up an event source and event receiver using the [event_source](../windows/event_source.md) and [event_receiver](../windows/event_receiver.md) attributes, respectively, specifying `type`=**com**. These attributes inject the appropriate code for custom, dispatch, and dual interfaces to allow the classes to which they are applied to fire events and handle events through COM connection points.  
+In COM event handling, you set up an event source and event receiver using the [event_source](../windows/event-source.md) and [event_receiver](../windows/event-receiver.md) attributes, respectively, specifying `type`=**com**. These attributes inject the appropriate code for custom, dispatch, and dual interfaces to allow the classes to which they are applied to fire events and handle events through COM connection points.  
   
 ## Declaring Events  
- In an event source class, use the [__event](../cpp/__event.md) keyword on an interface declaration to declare that interface's methods as events. The events of that interface are fired when you call them as interface methods. Methods on event interfaces can have zero or more parameters (which should all be **in** parameters). The return type can be void or any integral type.  
+ In an event source class, use the [__event](../cpp/event.md) keyword on an interface declaration to declare that interface's methods as events. The events of that interface are fired when you call them as interface methods. Methods on event interfaces can have zero or more parameters (which should all be **in** parameters). The return type can be void or any integral type.  
   
 ## Defining Event Handlers  
  In an event receiver class, you define event handlers, which are methods with signatures (return types, calling conventions, and arguments) that match the event that they will handle. For COM events, calling conventions do not have to match; see [Layout Dependent COM Events](#vcconeventhandlingincomanchorlayoutdependentcomevents) below for details.  
   
 ## Hooking Event Handlers to Events  
- Also in an event receiver class, you use the intrinsic function [__hook](../cpp/__hook.md) to associate events with event handlers and [__unhook](../cpp/__unhook.md) to dissociate events from event handlers. You can hook several events to an event handler, or several event handlers to an event.  
+ Also in an event receiver class, you use the intrinsic function [__hook](../cpp/hook.md) to associate events with event handlers and [__unhook](../cpp/unhook.md) to dissociate events from event handlers. You can hook several events to an event handler, or several event handlers to an event.  
   
 > [!NOTE]
->  Typically, there are two techniques to allow a COM event receiver to access event source interface definitions. The first, as shown below, is to share a common header file. The second is to use [#import](../c/sharpimport-directive--c---.md) with the `embedded_idl` import qualifier, so that the event source type library is written to the .tlh file with the attribute-generated code preserved.  
+>  Typically, there are two techniques to allow a COM event receiver to access event source interface definitions. The first, as shown below, is to share a common header file. The second is to use [#import](../preprocessor/hash-import-directive-cpp.md) with the `embedded_idl` import qualifier, so that the event source type library is written to the .tlh file with the attribute-generated code preserved.  
   
 ## Firing Events  
  To fire an event, simply call a method in the interface declared with the `__event` keyword in the event source class. If handlers have been hooked to the event, the handlers will be called.  

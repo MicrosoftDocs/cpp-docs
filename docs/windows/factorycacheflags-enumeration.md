@@ -1,20 +1,21 @@
 ---
-title: "FactoryCacheFlags Enumeration"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "FactoryCacheFlags Enumeration | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "module/Microsoft::WRL::FactoryCacheFlags"
 dev_langs: 
   - "C++"
 ms.assetid: 6f54258f-0144-4264-9608-414e5905f6fb
-caps.latest.revision: 3
+caps.latest.revision: 4
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,7 +44,7 @@ enum FactoryCacheFlags;
 ```  
   
 ## Remarks  
- By default, the factory caching policy is specified as the [ModuleType](../windows/moduletype-enumeration.md) template parameter when you create a Module Class object. To override this policy, specify a `FactoryCacheFlags` value when you create a factory object.  
+ By default, the factory caching policy is specified as the [ModuleType](../windows/moduletype-enumeration.md) template parameter when you create a [Module](../windows/module-class.md) object. To override this policy, specify a `FactoryCacheFlags` value when you create a factory object.  
   
 |||  
 |-|-|  
@@ -57,4 +58,4 @@ enum FactoryCacheFlags;
  **Namespace:** Microsoft::WRL  
   
 ## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft--wrl-namespace.md)
+ [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

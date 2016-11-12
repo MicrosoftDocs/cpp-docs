@@ -1,13 +1,13 @@
 ---
-title: "Inline Files in a Makefile"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Inline Files in a Makefile | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "files [C++], inline"
 ms.assetid: ff48a64f-773d-410c-9726-f867ad4c8030
 caps.latest.revision: 6
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 

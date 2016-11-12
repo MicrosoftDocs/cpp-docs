@@ -1,13 +1,13 @@
 ---
-title: "Using abort"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Using abort | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "Abort"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "abort function"
 ms.assetid: 3ba39b78-ef74-4a8d-8dee-2d62442de174
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Using abort
-Calling the [abort](../crt/abort.md) function causes immediate termination. It bypasses the normal destruction process for initialized global static objects. It also bypasses any special processing that was specified using the `atexit` function.  
+Calling the [abort](../c-runtime-library/reference/abort.md) function causes immediate termination. It bypasses the normal destruction process for initialized global static objects. It also bypasses any special processing that was specified using the `atexit` function.  
   
 ## See Also  
  [Additional Termination Considerations](../cpp/additional-termination-considerations.md)

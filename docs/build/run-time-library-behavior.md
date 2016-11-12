@@ -1,13 +1,13 @@
 ---
-title: "Run-Time Library Behavior"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Run-Time Library Behavior | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "_DllMainCRTStartup"
@@ -26,6 +26,7 @@ helpviewer_keywords:
   - "DLLs [C++], startup sequence"
 ms.assetid: e06f24ab-6ca5-44ef-9857-aed0c6f049f2
 caps.latest.revision: 8
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -73,4 +74,4 @@ BOOL    WINAPI   DllMain (HANDLE hInst,
 -   [Initialize a DLL](../build/initializing-a-dll.md)  
   
 ## See Also  
- [DLLs in Visual C++](../build/dlls-in-visual-c--.md)
+ [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

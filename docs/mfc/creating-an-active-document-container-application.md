@@ -1,13 +1,13 @@
 ---
-title: "Creating an Active Document Container Application"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Creating an Active Document Container Application | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "MFC COM [C++], active document containment"
   - "applications [MFC], active document container"
 ms.assetid: 14e2d022-a6c5-4249-8712-706b0f4433f7
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -65,7 +66,7 @@ The simplest and most recommended way to create an active document container app
   
     -   In `CMyProjView::OnPreparePrinting`, replace the function contents with the following code:  
   
-         [!code[NVC_MFCDocView#56](../mfc/codesnippet/CPP/creating-an-active-document-container-application_1.cpp)]  
+         [!code-cpp[NVC_MFCDocView#56](../mfc/codesnippet/CPP/creating-an-active-document-container-application_1.cpp)]  
   
      `OnPreparePrinting` provides printing support. This code replaces `DoPreparePrinting`, which is the default print preparation.  
   
@@ -83,3 +84,4 @@ The simplest and most recommended way to create an active document container app
   
 ## See Also  
  [Active Document Containment](../mfc/active-document-containment.md)
+

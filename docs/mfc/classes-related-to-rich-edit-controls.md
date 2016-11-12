@@ -1,13 +1,13 @@
 ---
-title: "Classes Related to Rich Edit Controls"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Classes Related to Rich Edit Controls | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -22,7 +22,8 @@ helpviewer_keywords:
   - "rich edit controls, and CRichEditDoc"
   - "CRichEditView class, and CRichEditCtrl"
 ms.assetid: 4b31c2cc-6ea1-4146-b7c5-b0b5b419f14d
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -41,8 +42,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Classes Related to Rich Edit Controls
-The [CRichEditView](../mfcref/cricheditview-class.md), [CRichEditDoc](../mfcref/cricheditdoc-class.md), and [CRichEditCntrItem](../mfcref/cricheditcntritem-class.md) classes provide the functionality of the rich edit control ([CRichEditCtrl](../mfcref/cricheditctrl-class.md)) within the context of MFC's document/view architecture. `CRichEditView` maintains the text and formatting characteristic of text. `CRichEditDoc` maintains the list of OLE client items that are in the view. `CRichEditCntrItem` provides container-side access to the OLE client item. To modify the contents of a `CRichEditView`, use [CRichEditView::GetRichEditCtrl](../Topic/CRichEditView::GetRichEditCtrl.md) to access the underlying rich edit control.  
+The [CRichEditView](../mfc/reference/cricheditview-class.md), [CRichEditDoc](../mfc/reference/cricheditdoc-class.md), and [CRichEditCntrItem](../mfc/reference/cricheditcntritem-class.md) classes provide the functionality of the rich edit control ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) within the context of MFC's document/view architecture. `CRichEditView` maintains the text and formatting characteristic of text. `CRichEditDoc` maintains the list of OLE client items that are in the view. `CRichEditCntrItem` provides container-side access to the OLE client item. To modify the contents of a `CRichEditView`, use [CRichEditView::GetRichEditCtrl](../mfc/reference/cricheditview-class.md#cricheditview__getricheditctrl) to access the underlying rich edit control.  
   
 ## See Also  
  [Using CRichEditCtrl](../mfc/using-cricheditctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

@@ -1,13 +1,13 @@
 ---
-title: "Template Directives"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Template Directives | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -29,6 +29,7 @@ helpviewer_keywords:
   - "[!else] template directive"
 ms.assetid: b6204153-813a-423c-b044-e39c352cc5af
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -47,7 +48,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Template Directives
-You can use the following template directives in a wizard [template file](../ide/template-files.md) and the [Templates.inf file](../ide/templates.inf-file.md) to customize the wizard.  
+You can use the following template directives in a wizard [template file](../ide/template-files.md) and the [Templates.inf file](../ide/templates-inf-file.md) to customize the wizard.  
   
 |Directive|Description|  
 |---------------|-----------------|  

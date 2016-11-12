@@ -1,13 +1,13 @@
 ---
-title: "synchronize"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "synchronize | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "vc-attr.synchronize"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "synchronize attribute"
 ms.assetid: 15fc8544-955d-4765-b3d5-0f619c8b3f40
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -50,7 +51,7 @@ Synchronizes access to the target method.
   
  The code inserted by this attribute calls the proper `Lock` method (determined by the threading model) at the beginning of the target method. When the method is exited, `Unlock` is automatically called. For more information on these functions, see [CComAutoThreadModule::Lock](../Topic/CComAutoThreadModule::Lock.md)  
   
- This attribute requires that the [coclass](../windows/coclass.md), [progid](../windows/progid.md), or [vi_progid](../windows/vi_progid.md) attribute (or another attribute that implies one of these) also be applied to the same element. If any single attribute is used, the other two are automatically applied. For example, if **progid** is applied, **vi_progid** and **coclass** are also applied.  
+ This attribute requires that the [coclass](../windows/coclass.md), [progid](../windows/progid.md), or [vi_progid](../windows/vi-progid.md) attribute (or another attribute that implies one of these) also be applied to the same element. If any single attribute is used, the other two are automatically applied. For example, if **progid** is applied, **vi_progid** and **coclass** are also applied.  
   
 ## Example  
  The following code provides synchronization for the `UpdateBalance` method of the `CMyClass` object.  
@@ -95,4 +96,4 @@ class CMyClass {
   
 ## See Also  
  [COM Attributes](../windows/com-attributes.md)   
- [Attributes Samples](assetId:///558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

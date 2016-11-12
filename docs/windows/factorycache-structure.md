@@ -1,13 +1,13 @@
 ---
-title: "FactoryCache Structure"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "FactoryCache Structure | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "module/Microsoft::WRL::Details::FactoryCache"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "FactoryCache structure"
 ms.assetid: 624544e6-0989-47f6-a3e9-edb60e1ee6d4
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -53,8 +54,8 @@ struct FactoryCache;
   
 |Name|Description|  
 |----------|-----------------|  
-|[FactoryCache::cookie Data Member](../windows/factorycache--cookie-data-member.md)|Contains a value that identifies a registered [!INCLUDE[wrt](../atl/includes/wrt_md.md)] or COM class object, and is later used to unregister the object.|  
-|[FactoryCache::factory Data Member](../windows/factorycache--factory-data-member.md)|Points to a [!INCLUDE[wrt](../atl/includes/wrt_md.md)] or COM class factory.|  
+|[FactoryCache::cookie Data Member](../windows/factorycache-cookie-data-member.md)|Contains a value that identifies a registered [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] or COM class object, and is later used to unregister the object.|  
+|[FactoryCache::factory Data Member](../windows/factorycache-factory-data-member.md)|Points to a [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] or COM class factory.|  
   
 ## Inheritance Hierarchy  
  `FactoryCache`  
@@ -65,4 +66,4 @@ struct FactoryCache;
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft--wrl--details-namespace.md)
+ [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

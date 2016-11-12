@@ -1,13 +1,13 @@
 ---
-title: "Control Bar Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Control Bar Classes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.classes.control"
@@ -16,7 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "control bars, classes"
 ms.assetid: 11009103-cad8-4309-85ce-3d2e858e1818
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,44 +36,45 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Control Bar Classes
-Control bars are attached to a frame window. They contain buttons, status panes, or a dialog template. Free-floating control bars, also called tool palettes, are implemented by attaching them to a [CMiniFrameWnd](../mfcref/cminiframewnd-class.md) object.  
+Control bars are attached to a frame window. They contain buttons, status panes, or a dialog template. Free-floating control bars, also called tool palettes, are implemented by attaching them to a [CMiniFrameWnd](../mfc/reference/cminiframewnd-class.md) object.  
   
 ## Framework Control Bars  
  These control bars are an integral part of the MFC framework. They are easier to use and more powerful than the Windows control bars because they are integrated with the framework. Most MFC applications use these control bars rather than the Windows control bars.  
   
- [CControlBar](../mfcref/ccontrolbar-class.md)  
+ [CControlBar](../mfc/reference/ccontrolbar-class.md)  
  The base class for MFC control bars listed in this section. A control bar is a window aligned to the edge of a frame window. The control bar contains either `HWND`-based child controls or controls not based on an `HWND`, such as toolbar buttons.  
   
- [CDialogBar](../mfcref/cdialogbar-class.md)  
+ [CDialogBar](../mfc/reference/cdialogbar-class.md)  
  A control bar that is based on a dialog box template.  
   
- [CReBar](../mfcref/crebar-class.md)  
+ [CReBar](../mfc/reference/crebar-class.md)  
  Supports a toolbar that can contain additional child windows in the form of controls.  
   
- [CToolBar](../mfcref/ctoolbar-class.md)  
+ [CToolBar](../mfc/reference/ctoolbar-class.md)  
  Toolbar control windows that contain bitmap command buttons not based on an `HWND`. Most MFC applications use this class rather than `CToolBarCtrl`.  
   
- [CStatusBar](../mfcref/cstatusbar-class.md)  
+ [CStatusBar](../mfc/reference/cstatusbar-class.md)  
  The base class for status-bar control windows. Most MFC applications use this class rather than `CStatusBarCtrl`.  
   
 ## Windows Control Bars  
  These control bars are thin wrappers for the corresponding Windows controls. Because they are not integrated with the framework, they are harder to use than the control bars previously listed. Most MFC applications use the control bars previously listed.  
   
- [CRebarCtrl](../mfcref/crebarctrl-class.md)  
+ [CRebarCtrl](../mfc/reference/crebarctrl-class.md)  
  Implements the internal control of the `CRebar` object.  
   
- [CStatusBarCtrl](../mfcref/cstatusbarctrl-class.md)  
+ [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md)  
  A horizontal window, usually divided into panes, in which an application can display status information.  
   
- [CToolBarCtrl](../mfcref/ctoolbarctrl-class.md)  
+ [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)  
  Provides the functionality of the Windows toolbar common control.  
   
 ## Related Classes  
- [CToolTipCtrl](../mfcref/ctooltipctrl-class.md)  
+ [CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md)  
  A small pop-up window that displays a single line of text describing the purpose of a tool in an application.  
   
- [CDockState](../mfcref/cdockstate-class.md)  
+ [CDockState](../mfc/reference/cdockstate-class.md)  
  Handles persistent storage of docking state data for control bars.  
   
 ## See Also  
  [Class Overview](../mfc/class-library-overview.md)
+

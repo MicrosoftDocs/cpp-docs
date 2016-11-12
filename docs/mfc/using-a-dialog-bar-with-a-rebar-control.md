@@ -1,13 +1,13 @@
 ---
-title: "Using a Dialog Bar with a Rebar Control"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Using a Dialog Bar with a Rebar Control | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "WM_EX_TRANSPARENT"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "rebar controls, dialog bars"
   - "dialog bars, using with rebar bands"
 ms.assetid: e528cea0-6b81-4bdf-9643-7c03b6176590
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -45,22 +46,23 @@ As mentioned in [Rebar Controls and Bands](../mfc/rebar-controls-and-bands.md), 
   
 ### To implement a transparent dialog bar in a rebar band  
   
-1.  Using the [Add Class dialog box](../mfcref/adding-an-mfc-class.md), add a new class (for example, `CMyDlgBar`) that implements your dialog bar object.  
+1.  Using the [Add Class dialog box](../mfc/reference/adding-an-mfc-class.md), add a new class (for example, `CMyDlgBar`) that implements your dialog bar object.  
   
 2.  Add a handler for the `WM_ERASEBKGND` message.  
   
 3.  In the new handler, modify the existing code to match the following example:  
   
-     [!code[NVC_MFCControlLadenDialog#29](../mfc/codesnippet/CPP/using-a-dialog-bar-with-a-rebar-control_1.cpp)]  
+     [!code-cpp[NVC_MFCControlLadenDialog#29](../mfc/codesnippet/CPP/using-a-dialog-bar-with-a-rebar-control_1.cpp)]  
   
 4.  Add a handler for the `WM_MOVE` message.  
   
 5.  In the new handler, modify the existing code to match the following example:  
   
-     [!code[NVC_MFCControlLadenDialog#30](../mfc/codesnippet/CPP/using-a-dialog-bar-with-a-rebar-control_2.cpp)]  
+     [!code-cpp[NVC_MFCControlLadenDialog#30](../mfc/codesnippet/CPP/using-a-dialog-bar-with-a-rebar-control_2.cpp)]  
   
  The new handlers simulate the transparency of the dialog bar by forwarding the `WM_ERASEBKGND` message to the parent window and forcing a repaint every time the dialog bar object is moved.  
   
 ## See Also  
  [Using CReBarCtrl](../mfc/using-crebarctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

@@ -1,13 +1,13 @@
 ---
-title: "jitintrinsic"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "jitintrinsic | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "jitintrinsic"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "jitintrinsic __declspec modifier"
 ms.assetid: 23dbe416-7ef6-442b-b16d-9a81aab04fa6
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -46,10 +47,10 @@ __declspec(jitintrinsic)
 ```  
   
 ## Remarks  
- `jitintrinsic` adds a MODOPT (\<xref:System.Runtime.CompilerServices.IsJitIntrinsic>) to a function signature.  
+ `jitintrinsic` adds a MODOPT (<xref:System.Runtime.CompilerServices.IsJitIntrinsic>) to a function signature.  
   
  Users are discouraged from using this `__declspec` modifier, as unexpected results can occur.  
   
 ## See Also  
- [__declspec](../cpp/__declspec.md)   
- [Keywords](../cpp/keywords--c---.md)
+ [__declspec](../cpp/declspec.md)   
+ [Keywords](../cpp/keywords-cpp.md)

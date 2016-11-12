@@ -1,13 +1,13 @@
 ---
-title: "Registry Entries"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Registry Entries | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "registry, ATL services entries"
   - "registry, application IDs"
 ms.assetid: 881989b7-61bb-459a-a13e-3bfcb33e184e
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -47,3 +48,4 @@ DCOM introduced the concept of Application IDs (AppIDs), which group configurati
   
 ## See Also  
  [Services](../atl/atl-services.md)
+

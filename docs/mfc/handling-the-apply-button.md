@@ -1,13 +1,13 @@
 ---
-title: "Handling the Apply Button"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Handling the Apply Button | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "Apply button in property sheet"
   - "property sheets, Apply button"
 ms.assetid: 7e977015-59b8-406f-b545-aad0bfd8d55b
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -46,11 +47,12 @@ Property sheets have a capability that standard dialog boxes do not: They allow 
   
  To report a page as being modified and enable the Apply button, call **CPropertyPage::SetModified( TRUE )**. If any of the pages report being modified, the Apply button will remain enabled, regardless of whether the currently active page has been modified.  
   
- You should call [CPropertyPage::SetModified](../Topic/CPropertyPage::SetModified.md) whenever the user changes any settings in the page. One way to detect when a user changes a setting in the page is to implement change notification handlers for each of the controls in the property page, such as **EN_CHANGE** or **BN_CLICKED**.  
+ You should call [CPropertyPage::SetModified](../mfc/reference/cpropertypage-class.md#cpropertypage__setmodified) whenever the user changes any settings in the page. One way to detect when a user changes a setting in the page is to implement change notification handlers for each of the controls in the property page, such as **EN_CHANGE** or **BN_CLICKED**.  
   
  To implement the effect of the Apply button, the property sheet must tell its owner, or some other external object in the application, to apply the current settings in the property pages. At the same time, the property sheet should disable the Apply button by calling **CPropertyPage::SetModified( FALSE )** for all pages that applied their modifications to the external object.  
   
- For an example of this process, see the MFC General sample [PROPDLG](../top/visual-c---samples.md).  
+ For an example of this process, see the MFC General sample [PROPDLG](../top/visual-cpp-samples.md).  
   
 ## See Also  
- [Property Sheets](../mfc/property-sheets--mfc-.md)
+ [Property Sheets](../mfc/property-sheets-mfc.md)
+

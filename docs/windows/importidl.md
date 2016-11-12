@@ -1,13 +1,13 @@
 ---
-title: "importidl"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "importidl | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "vc-attr.importidl"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "importidl attribute"
 ms.assetid: 4b0a4b55-6c57-4e6e-bc7b-a12cc8063941
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -82,6 +83,6 @@ Inserts the specified .idl file into the generated .idl file.
  [Stand-Alone Attributes](../windows/stand-alone-attributes.md)   
  [import](../windows/import.md)   
  [importlib](../windows/importlib.md)   
- [include](../windows/include--c---.md)   
- [includelib](../windows/includelib--c---.md)   
- [Attributes Samples](assetId:///558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [include](../windows/include-cpp.md)   
+ [includelib](../windows/includelib-cpp.md)   
+ [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

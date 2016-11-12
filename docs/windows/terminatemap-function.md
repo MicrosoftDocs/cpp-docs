@@ -1,13 +1,13 @@
 ---
-title: "TerminateMap Function"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "TerminateMap Function | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "module/Microsoft::WRL::Details::TerminateMap"
@@ -16,7 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "TerminateMap function"
 ms.assetid: 1c314a61-da5d-49bb-ac44-c34ee3c23b66
-caps.latest.revision: 6
+caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -49,7 +50,7 @@ inline bool TerminateMap(
   
 ## Parameters  
  `module`  
- A module.  
+ A [module](../windows/module-class.md).  
   
  `serverName`  
  The name of a subset of class factories in the module specified by parameter `module`.  
@@ -69,4 +70,4 @@ inline bool TerminateMap(
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft--wrl--details-namespace.md)
+ [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

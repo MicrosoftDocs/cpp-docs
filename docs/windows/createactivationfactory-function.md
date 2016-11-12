@@ -1,13 +1,13 @@
 ---
-title: "CreateActivationFactory Function"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "CreateActivationFactory Function | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "module/Microsoft::WRL::Details::CreateActivationFactory"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "CreateActivationFactory function"
 ms.assetid: a1a53e04-6757-4faf-a4c8-ecf06e43b959
 caps.latest.revision: 2
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -75,4 +76,4 @@ template<typename Factory>
  **Namespace:** Microsoft::WRL  
   
 ## See Also  
- [Microsoft::WRL::Wrappers::Details Namespace](../windows/microsoft--wrl--wrappers--details-namespace.md)
+ [Microsoft::WRL::Wrappers::Details Namespace](../windows/microsoft-wrl-wrappers-details-namespace.md)

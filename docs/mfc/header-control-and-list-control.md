@@ -1,13 +1,13 @@
 ---
-title: "Header Control and List Control"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Header Control and List Control | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "header controls"
   - "header controls, list controls used with"
 ms.assetid: b20194b1-1a6b-4e2f-b890-1b3cca6650bc
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,9 +39,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Header Control and List Control
-In most cases, you will use the header control that is embedded in a [CListCtrl](../mfcref/clistctrl-class.md) or [CListView](../mfcref/clistview-class.md) object. However, there are cases where a separate header control object is desirable, such as manipulating data, arranged in columns or rows, in a [CView](../mfcref/cview-class.md)-derived object. In these cases, you need greater control over the appearance and default behavior of an embedded header control.  
+In most cases, you will use the header control that is embedded in a [CListCtrl](../mfc/reference/clistctrl-class.md) or [CListView](../mfc/reference/clistview-class.md) object. However, there are cases where a separate header control object is desirable, such as manipulating data, arranged in columns or rows, in a [CView](../mfc/reference/cview-class.md)-derived object. In these cases, you need greater control over the appearance and default behavior of an embedded header control.  
   
- In the common case that you want a header control to provide standard, default behavior, you may want to use [CListCtrl](../mfcref/clistctrl-class.md) or [CListView](../mfcref/clistview-class.md) instead. Use `CListCtrl` when you want the functionality of a default header control, embedded in a list view common control. Use [CListView](../mfcref/clistview-class.md) when you want the functionality of a default header control, embedded in a view object.  
+ In the common case that you want a header control to provide standard, default behavior, you may want to use [CListCtrl](../mfc/reference/clistctrl-class.md) or [CListView](../mfc/reference/clistview-class.md) instead. Use `CListCtrl` when you want the functionality of a default header control, embedded in a list view common control. Use [CListView](../mfc/reference/clistview-class.md) when you want the functionality of a default header control, embedded in a view object.  
   
 > [!NOTE]
 >  These controls only include a built-in header control if the list view control is created using the `LVS_REPORT` style.  
@@ -49,12 +50,13 @@ In most cases, you will use the header control that is embedded in a [CListCtrl]
   
  The embedded header control object can be accessed from either **CListCtrl** or `CListView` with a call to the respective class's `GetHeaderCtrl` member function. The following code demonstrates this:  
   
- [!code[NVC_MFCControlLadenDialog#14](../mfc/codesnippet/CPP/header-control-and-list-control_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#14](../mfc/codesnippet/CPP/header-control-and-list-control_1.cpp)]  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Using image lists with header controls](../mfc/using-image-lists-with-header-controls.md)  
   
 ## See Also  
  [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

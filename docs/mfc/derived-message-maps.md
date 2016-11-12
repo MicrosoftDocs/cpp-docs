@@ -1,13 +1,13 @@
 ---
-title: "Derived Message Maps"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Derived Message Maps | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "message maps, derived"
   - "derived message maps"
 ms.assetid: 21829556-6e64-40c3-8279-fed85d99de77
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -36,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Derived Message Maps
-During message handling, checking a class's own message map is not the end of the message-map story. What happens if class `CMyView` (derived from `CView`) has no matching entry for a message?  
+During message handling, checking a class's own message map is not the end of the message-map story. What happens if class `CMyView` (derived from `CView`) has no matching entry for a message  
   
  Keep in mind that `CView`, the base class of `CMyView`, is derived in turn from `CWnd`. Thus `CMyView` *is* a `CView` and *is* a `CWnd`. Each of those classes has its own message map. The figure "A View Hierarchy" below shows the hierarchical relationship of the classes, but keep in mind that a `CMyView` object is a single object that has the characteristics of all three classes.  
   
@@ -45,7 +46,7 @@ A View Hierarchy
   
  So if a message can't be matched in class `CMyView`'s message map, the framework also searches the message map of its immediate base class. The `BEGIN_MESSAGE_MAP` macro at the start of the message map specifies two class names as its arguments:  
   
- [!code[NVC_MFCMessageHandling#2](../mfc/codesnippet/CPP/derived-message-maps_1.cpp)]  
+ [!code-cpp[NVC_MFCMessageHandling#2](../mfc/codesnippet/CPP/derived-message-maps_1.cpp)]  
   
  The first argument names the class to which the message map belongs. The second argument provides a connection with the immediate base class — `CView` here — so the framework can search its message map, too.  
   
@@ -57,3 +58,4 @@ A View Hierarchy
   
 ## See Also  
  [How the Framework Searches Message Maps](../mfc/how-the-framework-searches-message-maps.md)
+

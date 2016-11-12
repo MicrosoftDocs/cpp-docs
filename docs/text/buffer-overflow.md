@@ -1,13 +1,13 @@
 ---
-title: "Buffer Overflow"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Buffer Overflow | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "MBCS [C++], buffer overflow"
 ms.assetid: f2b7e40a-f02b-46d8-a449-51d26fc0c663
 caps.latest.revision: 8
+author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 translation.priority.ht: 

@@ -1,13 +1,13 @@
 ---
-title: "Summary of Scope Rules"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Summary of Scope Rules | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "scope [C++], class names"
 ms.assetid: 47e26482-0111-466f-b857-598c15d05105
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,10 +38,10 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Summary of Scope Rules
-The use of a name must be unambiguous within its scope (up to the point where overloading is determined). If the name denotes a function, the function must be unambiguous with respect to number and type of parameters. If the name remains unambiguous, [member-access](../cpp/member-access-control--c---.md) rules are applied.  
+The use of a name must be unambiguous within its scope (up to the point where overloading is determined). If the name denotes a function, the function must be unambiguous with respect to number and type of parameters. If the name remains unambiguous, [member-access](../cpp/member-access-control-cpp.md) rules are applied.  
   
 ## Constructor initializers  
- Constructor initializers (described in [Initializing Bases and Members](assetId:///2f71377e-2b6b-49da-9a26-18e9b40226a1)) are evaluated in the scope of the outermost block of the constructor for which they are specified. Therefore, they can use the constructor's parameter names.  
+ Constructor initializers (described in [Initializing Bases and Members](http://msdn.microsoft.com/en-us/2f71377e-2b6b-49da-9a26-18e9b40226a1)) are evaluated in the scope of the outermost block of the constructor for which they are specified. Therefore, they can use the constructor's parameter names.  
   
 ## Global names  
  A name of an object, function, or enumerator is global if it is introduced outside any function or class or prefixed by the global unary scope operator (`::`), and if it is not used in conjunction with any of these binary operators:  
@@ -88,4 +89,4 @@ The use of a name must be unambiguous within its scope (up to the point where ov
  Default parameters are in the scope of the parameter for which they are the default, as described in the preceding two paragraphs. However, they cannot access local variables or nonstatic class members. Default parameters are evaluated at the point of the function call, but they are evaluated in the function declaration's original scope. Therefore, the default parameters for member functions are always evaluated in class scope.  
   
 ## See Also  
- [Inheritance](../cpp/inheritance---c---.md)
+ [Inheritance](../cpp/inheritance-cpp.md)

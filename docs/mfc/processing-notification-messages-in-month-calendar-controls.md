@@ -1,13 +1,13 @@
 ---
-title: "Processing Notification Messages in Month Calendar Controls"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Processing Notification Messages in Month Calendar Controls | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "notifications, for CMonthCalCtrl"
   - "notifications, month calendar control"
 ms.assetid: 607c3e90-0756-493b-9503-ce835a50c7ab
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -51,4 +52,5 @@ As users interact with the month calendar control (selecting dates and/or viewin
   
 ## See Also  
  [Using CMonthCalCtrl](../mfc/using-cmonthcalctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

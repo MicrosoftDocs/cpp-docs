@@ -1,13 +1,13 @@
 ---
-title: "NotifyHandler"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "NotifyHandler | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "NotifyHandler"
@@ -16,7 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "NotifyHandler function"
 ms.assetid: 5ff953ec-de35-42bc-8b3c-d384d636c139
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,14 +41,13 @@ The name of the function identified by the third parameter of the `NOTIFY_HANDLE
 ## Syntax  
   
 ```  
-  
-      LRESULT   
-      NotifyHandler  
-      (  
-   int idCtrl,  
-   LPNMHDR pnmh,  
-   BOOL& bHandled   
-);  
+ 
+    LRESULT 
+    NotifyHandler 
+ (
+    int idCtrl,  
+    LPNMHDR pnmh,  
+    BOOL& bHandled);
 ```  
   
 #### Parameters  
@@ -68,5 +68,6 @@ The name of the function identified by the third parameter of the `NOTIFY_HANDLE
   
 ## See Also  
  [Implementing a Window](../atl/implementing-a-window.md)   
- [Message Maps](../atl/message-maps--atl-.md)   
+ [Message Maps](../atl/message-maps-atl.md)   
  [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583)
+

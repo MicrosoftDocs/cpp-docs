@@ -1,13 +1,13 @@
 ---
-title: "Servers"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Servers | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "OLE server applications, server types"
   - "server applications"
 ms.assetid: e45172e8-eae3-400a-8139-0fa009a42fdc
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -63,20 +64,21 @@ A server application (or component application) creates OLE items (or components
   
  For more details on servers, see:  
   
--   [Servers: Implementing a Server](../mfc/servers--implementing-a-server.md)  
+-   [Servers: Implementing a Server](../mfc/servers-implementing-a-server.md)  
   
--   [Servers: Implementing Server Documents](../mfc/servers--implementing-server-documents.md)  
+-   [Servers: Implementing Server Documents](../mfc/servers-implementing-server-documents.md)  
   
--   [Servers: Implementing In-Place Frame Windows](../mfc/servers--implementing-in-place-frame-windows.md)  
+-   [Servers: Implementing In-Place Frame Windows](../mfc/servers-implementing-in-place-frame-windows.md)  
   
--   [Servers: Server Items](../mfc/servers--server-items.md)  
+-   [Servers: Server Items](../mfc/servers-server-items.md)  
   
--   [Servers: User-Interface Issues](../mfc/servers--user-interface-issues.md)  
+-   [Servers: User-Interface Issues](../mfc/servers-user-interface-issues.md)  
   
 ## See Also  
  [OLE](../mfc/ole-in-mfc.md)   
  [Containers](../mfc/containers.md)   
- [Containers: Advanced Features](../mfc/containers--advanced-features.md)   
- [Menus and Resources (OLE)](../mfc/menus-and-resources--ole-.md)   
+ [Containers: Advanced Features](../mfc/containers-advanced-features.md)   
+ [Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)   
  [Registration](../mfc/registration.md)   
  [Automation Servers](../mfc/automation-servers.md)
+

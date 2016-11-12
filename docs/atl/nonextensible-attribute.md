@@ -1,13 +1,13 @@
 ---
-title: "nonextensible Attribute"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "nonextensible Attribute | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "nonextensible"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "nonextensible attribute"
   - "dual interfaces, nonextensible attribute"
 ms.assetid: 02a4a18b-ffd3-4d53-8fd1-feb1c05ad5ac
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -42,3 +43,4 @@ If a dual interface will not be extended at run time (that is, you won't provide
   
 ## See Also  
  [Dual Interfaces and ATL](../atl/dual-interfaces-and-atl.md)
+

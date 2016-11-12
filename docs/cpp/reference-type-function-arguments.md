@@ -1,13 +1,13 @@
 ---
-title: "Reference-Type Function Arguments"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Reference-Type Function Arguments | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "passing parameters, reference-type arguments"
 ms.assetid: 0a70e831-9e76-46c0-821d-aeba13d73cc0
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -91,4 +92,4 @@ long JulianFromGregorian( const Date& GDate );
  Any function prototyped as taking a reference type can accept an object of the same type in its place because there is a standard conversion from *typename* to *typename***&**.  
   
 ## See Also  
- [References](../cpp/references--c---.md)
+ [References](../cpp/references-cpp.md)

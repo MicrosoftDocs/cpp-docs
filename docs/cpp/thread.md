@@ -1,13 +1,13 @@
 ---
-title: "thread"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "thread | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "thread"
@@ -21,6 +21,7 @@ helpviewer_keywords:
   - "__declspec keyword [C++], thread"
 ms.assetid: 667f2a77-6d1f-4b41-bee8-05e67324fab8
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -41,7 +42,7 @@ translation.priority.ht:
 # thread
 **Microsoft Specific**  
   
- The **thread** extended storage-class modifier is used to declare a thread local variable. For the portable equivalent in C++11, use the [thread_local](../cpp/storage-classes--c---.md#thread_local) storage class specifier.  
+ The **thread** extended storage-class modifier is used to declare a thread local variable. For the portable equivalent in C++11, use the [thread_local](../cpp/storage-classes-cpp.md#thread_local) storage class specifier.  
   
 ## Syntax  
   
@@ -51,9 +52,9 @@ __declspec( thread ) declarator
 ```  
   
 ## Remarks  
- Thread Local Storage (TLS) is the mechanism by which each thread in a multithreaded process allocates storage for thread-specific data. In standard multithreaded programs, data is shared among all threads of a given process, whereas thread local storage is the mechanism for allocating per-thread data. For a complete discussion of threads, see [Multithreading](../parallel/multithreading-support-for-older-code--visual-c---.md).  
+ Thread Local Storage (TLS) is the mechanism by which each thread in a multithreaded process allocates storage for thread-specific data. In standard multithreaded programs, data is shared among all threads of a given process, whereas thread local storage is the mechanism for allocating per-thread data. For a complete discussion of threads, see [Multithreading](../parallel/multithreading-support-for-older-code-visual-cpp.md).  
   
- Declarations of thread local variables must use [extended attribute syntax](../cpp/__declspec.md) and the `__declspec` keyword with the **thread** keyword. For example, the following code declares an integer thread local variable and initializes it with a value:  
+ Declarations of thread local variables must use [extended attribute syntax](../cpp/declspec.md) and the `__declspec` keyword with the **thread** keyword. For example, the following code declares an integer thread local variable and initializes it with a value:  
   
 ```  
 __declspec( thread ) int tls_i = 1;  
@@ -63,7 +64,7 @@ __declspec( thread ) int tls_i = 1;
   
 -   You can apply the **thread** attribute only to class and data declarations and definitions; **thread** cannot be used on function declarations or definitions.  
   
--   The use of the **thread** attribute may interfere with [delay loading](../buildref/linker-support-for-delay-loaded-dlls.md) of DLL imports**.**  
+-   The use of the **thread** attribute may interfere with [delay loading](../build/reference/linker-support-for-delay-loaded-dlls.md) of DLL imports**.**  
   
 -   On XP systems, `thread` may not function correctly if a DLL uses __declspec(thread) data and it is loaded dynamically via LoadLibrary.  
   
@@ -105,6 +106,6 @@ __declspec( thread ) int tls_i = 1;
  **END Microsoft Specific**  
   
 ## See Also  
- [__declspec](../cpp/__declspec.md)   
- [Keywords](../cpp/keywords--c---.md)   
- [Thread Local Storage (TLS)](../parallel/thread-local-storage--tls-.md)
+ [__declspec](../cpp/declspec.md)   
+ [Keywords](../cpp/keywords-cpp.md)   
+ [Thread Local Storage (TLS)](../parallel/thread-local-storage-tls.md)

@@ -1,13 +1,13 @@
 ---
-title: "Special NMAKE Macros"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Special NMAKE Macros | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "NMAKE macros, special"
 ms.assetid: d772e8ea-1e9f-4ad8-beec-663af76f2dd9
 caps.latest.revision: 7
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 

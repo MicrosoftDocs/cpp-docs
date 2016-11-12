@@ -1,13 +1,13 @@
 ---
-title: "Custom Wizard"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Custom Wizard | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.appwiz.custom.overview"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "custom wizards, creating in Visual C++ projects"
 ms.assetid: 4723f9b7-188f-4677-a728-af95e7e79ea8
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -47,10 +48,10 @@ The Visual C++ Custom Wizard is a specific type of wizard, designed to help you 
   
 -   The wizard user interface has one page.  
   
- You can change these default settings on the [Application Settings](../ide/application-settings--custom-wizard.md) page of the wizard.  
+ You can change these default settings on the [Application Settings](../ide/application-settings-custom-wizard.md) page of the wizard.  
   
 ## See Also  
- [Visual C++ Project Types](../ide/visual-c---project-types.md)   
+ [Visual C++ Project Types](../ide/visual-cpp-project-types.md)   
  [Creating a Custom Wizard](../ide/creating-a-custom-wizard.md)   
  [Files Created for Your Wizard](../ide/files-created-for-your-wizard.md)   
  [Designing a Wizard](../ide/designing-a-wizard.md)

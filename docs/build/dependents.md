@@ -1,13 +1,13 @@
 ---
-title: "Dependents"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Dependents | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "dependents, NMAKE"
 ms.assetid: 0a7b4499-ac6e-4c99-a304-027dd3818ab2
 caps.latest.revision: 6
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 

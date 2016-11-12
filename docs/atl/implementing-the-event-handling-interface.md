@@ -1,13 +1,13 @@
 ---
-title: "Implementing the Event Handling Interface"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Implementing the Event Handling Interface | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "event handling, ATL"
   - "interfaces, event and event sink"
 ms.assetid: eb2a5b33-88dc-4ce3-bee0-c5c38ea050d7
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -41,19 +42,20 @@ ATL helps you with all three elements required for handling events: implementing
   
 -   Deriving from a custom interface directly.  
   
--   Deriving from [IDispatchImpl](../atl/idispatchimpl-class.md) for dual interfaces described in a type library.  
+-   Deriving from [IDispatchImpl](../atl/reference/idispatchimpl-class.md) for dual interfaces described in a type library.  
   
--   Deriving from [IDispEventImpl](../atl/idispeventimpl-class.md) for dispinterfaces described in a type library.  
+-   Deriving from [IDispEventImpl](../atl/reference/idispeventimpl-class.md) for dispinterfaces described in a type library.  
   
--   Deriving from [IDispEventSimpleImpl](../atl/idispeventsimpleimpl-class.md) for dispinterfaces not described in a type library or when you want to improve efficiency by not loading the type information at run time.  
+-   Deriving from [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) for dispinterfaces not described in a type library or when you want to improve efficiency by not loading the type information at run time.  
   
- If you are implementing a custom or dual interface, you should advise the event source by calling [AtlAdvise](../Topic/AtlAdvise.md) or [CComPtrBase::Advise](../Topic/CComPtrBase::Advise.md). You will need to keep track of the cookie returned by the call yourself. Call [AtlUnadvise](../Topic/AtlUnadvise.md) to break the connection.  
+ If you are implementing a custom or dual interface, you should advise the event source by calling [AtlAdvise](../Topic/AtlAdvise.md) or [CComPtrBase::Advise](../atl/reference/ccomptrbase-class.md#advise). You will need to keep track of the cookie returned by the call yourself. Call [AtlUnadvise](../Topic/AtlUnadvise.md) to break the connection.  
   
- If you are implementing a dispinterface using `IDispEventImpl` or `IDispEventSimpleImpl`, you should advise the event source by calling [IDispEventSimpleImpl::DispEventAdvise](../Topic/IDispEventSimpleImpl::DispEventAdvise.md). Call [IDispEventSimpleImpl::DispEventUnadvise](../Topic/IDispEventSimpleImpl::DispEventUnadvise.md) to break the connection.  
+ If you are implementing a dispinterface using `IDispEventImpl` or `IDispEventSimpleImpl`, you should advise the event source by calling [IDispEventSimpleImpl::DispEventAdvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventadvise). Call [IDispEventSimpleImpl::DispEventUnadvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventunadvise) to break the connection.  
   
- If you are using `IDispEventImpl` as a base class of a composite control, the event sources listed in the sink map will be advised and unadvised automatically using [CComCompositeControl::AdviseSinkMap](../Topic/CComCompositeControl::AdviseSinkMap.md).  
+ If you are using `IDispEventImpl` as a base class of a composite control, the event sources listed in the sink map will be advised and unadvised automatically using [CComCompositeControl::AdviseSinkMap](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap).  
   
  The `IDispEventImpl` and `IDispEventSimpleImpl` classes manage the cookie for you.  
   
 ## See Also  
  [Event Handling](../atl/event-handling-and-atl.md)
+

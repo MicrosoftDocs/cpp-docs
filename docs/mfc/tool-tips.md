@@ -1,13 +1,13 @@
 ---
-title: "Tool Tips"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Tool Tips | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "controls [MFC], tool tips"
   - "buttons [C++], tool tips"
 ms.assetid: 7f0bba86-7c55-4bf6-8455-687a4dcb2be8
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,9 +38,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Tool Tips
-The procedures are distinct for adding tool tips to controls contained in windows derived from MFC class [CFrameWnd](../mfcref/cframewnd-class.md) and windows not derived from `CFrameWnd`.  
+The procedures are distinct for adding tool tips to controls contained in windows derived from MFC class [CFrameWnd](../mfc/reference/cframewnd-class.md) and windows not derived from `CFrameWnd`.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
  Tool tips for controls in a window that is:  
   
 -   [Toolbar Tooltips (derived from CFrameWnd)](../mfc/toolbar-tool-tips.md)  
@@ -47,4 +48,4 @@ The procedures are distinct for adding tool tips to controls contained in window
 -   [Tooltips in Windows not derived from CFrameWnd](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)  
   
 ## See Also  
- [User Interface Elements](../mfc/user-interface-elements--mfc-.md)
+ [User Interface Elements](../mfc/user-interface-elements-mfc.md)

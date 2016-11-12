@@ -1,13 +1,13 @@
 ---
-title: "Importing into an Application"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Importing into an Application | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "applications [C++], importing into"
 ms.assetid: 9d646466-e12e-4710-8ad9-c819c0375fcc
 caps.latest.revision: 7
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,11 +44,11 @@ You can import functions into an application using two methods:
   
 ## What do you want to do?  
   
--   [Import into an Application Using __declspec(dllimport)](../build/importing-into-an-application-using-__declspec-dllimport-.md)  
+-   [Import into an Application Using __declspec(dllimport)](../build/importing-into-an-application-using-declspec-dllimport.md)  
   
--   [Import Function Calls Using __declspec(dllimport)](../build/importing-function-calls-using-__declspec-dllimport-.md)  
+-   [Import Function Calls Using __declspec(dllimport)](../build/importing-function-calls-using-declspec-dllimport.md)  
   
--   [Import Data Using __declspec(dllimport)](../build/importing-data-using-__declspec-dllimport-.md)  
+-   [Import Data Using __declspec(dllimport)](../build/importing-data-using-declspec-dllimport.md)  
   
 -   [Import Using DEF Files](../build/importing-using-def-files.md)  
   

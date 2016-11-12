@@ -1,18 +1,19 @@
 ---
-title: "alloca"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "alloca | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 ms.assetid: 2b209335-e3a0-4934-93f0-3b5925d22918
 caps.latest.revision: 9
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -31,7 +32,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # alloca
-[_alloca](../crt/_alloca.md) is required to be 16-byte aligned and additionally required to use a frame pointer.  
+[_alloca](../c-runtime-library/reference/alloca.md) is required to be 16-byte aligned and additionally required to use a frame pointer.  
   
  The stack that is allocated needs to include space below it for parameters of subsequently called functions, as discussed in [Stack Allocation](../build/stack-allocation.md).  
   

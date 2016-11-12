@@ -1,13 +1,13 @@
 ---
-title: "Editing in an Accelerator Table"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Editing in an Accelerator Table | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "accelerator tables [C++], editing"
   - "keyboard shortcuts [C++], editing in an accelerator table"
 ms.assetid: 545b650b-4f26-4b20-8431-d942548443bd
-caps.latest.revision: 10
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,13 +40,13 @@ translation.priority.ht:
 1.  Open the accelerator table by double-clicking its icon in [Resource View](../windows/resource-view-window.md).  
   
     > [!NOTE]
-    >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to--create-a-resource-script-file.md).  
+    >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
 2.  Select an entry in the table and click to activate in-place editing.  
   
 3.  Select from the drop-down combo box or type in place to make changes.  
   
-    -   For ID, select from the list or type to edit.  
+    -   For [ID](Id%20Property.xml), select from the list or type to edit.  
   
     -   For [Modifier](../windows/accelerator-modifier-property.md), select from the list.  
   

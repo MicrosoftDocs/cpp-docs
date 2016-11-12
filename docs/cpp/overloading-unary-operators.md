@@ -1,13 +1,13 @@
 ---
-title: "Overloading Unary Operators"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Overloading Unary Operators | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -22,6 +22,7 @@ helpviewer_keywords:
   - "plus operator"
 ms.assetid: 7683ef08-42a4-4283-928f-d3dd4f3ab4c0
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -42,27 +43,27 @@ translation.priority.ht:
 # Overloading Unary Operators
 The unary operators that can be overloaded are the following:  
   
-1.  `!` ([logical NOT](../cpp/logical-negation-operator--!.md))  
+1.  `!` ([logical NOT](../cpp/logical-negation-operator-exclpt.md))  
   
-2.  `&` ([address-of](../cpp/address-of-operator---.md))  
+2.  `&` ([address-of](../cpp/address-of-operator-amp.md))  
   
-3.  `~` ([one's complement](../cpp/one-s-complement-operator--~.md))  
+3.  `~` ([one's complement](../cpp/one-s-complement-operator-tilde.md))  
   
-4.  `*` ([pointer dereference](../cpp/indirection-operator---.md))  
+4.  `*` ([pointer dereference](../cpp/indirection-operator-star.md))  
   
-5.  `+` ([unary plus](../cpp/additive-operators----and--.md))  
+5.  `+` ([unary plus](../cpp/additive-operators-plus-and.md))  
   
-6.  `-` ([unary negation](../cpp/additive-operators----and--.md))  
+6.  `-` ([unary negation](../cpp/additive-operators-plus-and.md))  
   
-7.  `++` ([increment](../cpp/prefix-increment-and-decrement-operators-----and---.md))  
+7.  `++` ([increment](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))  
   
-8.  `--` ([decrement](../cpp/prefix-increment-and-decrement-operators-----and---.md))  
+8.  `--` ([decrement](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))  
   
 9. conversion operators  
   
- The postfix increment and decrement operators (`++` and **––**) are treated separately in [Increment and Decrement](../cpp/increment-and-decrement-operator-overloading--c---.md).  
+ The postfix increment and decrement operators (`++` and **––**) are treated separately in [Increment and Decrement](../cpp/increment-and-decrement-operator-overloading-cpp.md).  
   
- Conversion operators are also discussed in a separate topic; see [User-Defined Type Conversions](../cpp/user-defined-type-conversions--c---.md).  
+ Conversion operators are also discussed in a separate topic; see [User-Defined Type Conversions](../cpp/user-defined-type-conversions-cpp.md).  
   
  The following rules are true of all other unary operators. To declare a unary operator function as a nonstatic member, you must declare it in the form:  
   

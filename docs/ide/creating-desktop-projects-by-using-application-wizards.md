@@ -1,13 +1,13 @@
 ---
-title: "Creating Desktop Projects By Using Application Wizards"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Creating Desktop Projects By Using Application Wizards | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.appwiz.mfcexe.project"
@@ -21,6 +21,7 @@ helpviewer_keywords:
   - "applications [C++], using wizards"
 ms.assetid: 090c6423-deb8-4a00-817d-337eb5644544
 caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -55,9 +56,9 @@ Every type of Visual C++ project has an application wizard that helps you genera
   
 5.  Click **OK**, and the wizard for your project type opens. If you want to read the help topic for the wizard, press **F1**.  
   
- When you create a project you can either create a new solution or you can add the project to an existing solution. For more information, see [How to: Create a C++ Project from Existing Code](../ide/how-to--create-a-c---project-from-existing-code.md).  
+ When you create a project you can either create a new solution or you can add the project to an existing solution. For more information, see [How to: Create a C++ Project from Existing Code](../ide/how-to-create-a-cpp-project-from-existing-code.md).  
   
 ## See Also  
- [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-c---projects.md)   
- [MFC Wizards and Dialog Boxes](../mfcref/mfc-wizards-and-dialog-boxes.md)   
- [ATL Wizards and Dialog Boxes](../atl/atl-wizards-and-dialog-boxes.md)
+ [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)   
+ [MFC Wizards and Dialog Boxes](../mfc/reference/mfc-wizards-and-dialog-boxes.md)   
+ [ATL Wizards and Dialog Boxes](../atl/reference/atl-wizards-and-dialog-boxes.md)

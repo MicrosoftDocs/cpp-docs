@@ -1,13 +1,13 @@
 ---
-title: "ATL Support for DHTML Controls"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "ATL Support for DHTML Controls | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "DHTML controls, ATL support"
   - "DHTML controls"
 ms.assetid: 4ba98098-da5d-4362-96ad-8372f816c307
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -42,7 +43,7 @@ Using ATL, you can create a control with Dynamic HTML (DHTML) capability. An ATL
   
 -   Specifies, using HTML, the user interface (UI) of the DHTML control.  
   
--   Accesses the WebBrowser object and its methods through its interface, [IWebBrowser2](https://msdn.microsoft.com/en-us/library/aa752127.aspx).  
+-   Accesses the WebBrowser object and its methods through its interface, [IWebBrowser2](https://msdn.microsoft.com/library/aa752127.aspx).  
   
 -   Manages communication between C++ code and HTML.  
   
@@ -54,7 +55,7 @@ Using ATL, you can create a control with Dynamic HTML (DHTML) capability. An ATL
  [Identifying the Elements of the DHTML Control Project](../atl/identifying-the-elements-of-the-dhtml-control-project.md)  
  Describes the elements of a DHTML control project.  
   
- [Calling C++ Code from DHTML](../atl/calling-c---code-from-dhtml.md)  
+ [Calling C++ Code from DHTML](../atl/calling-cpp-code-from-dhtml.md)  
  Provides an example of calling C++ code from a DHTML control.  
   
  [Creating an ATL DHTML Control](../atl/creating-an-atl-dhtml-control.md)  
@@ -70,5 +71,6 @@ Using ATL, you can create a control with Dynamic HTML (DHTML) capability. An ATL
  Shows how to build and test the control's added functionality.  
   
 ## Related Sections  
- [ATL](../atl/active-template-library--atl--concepts.md)  
+ [ATL](../atl/active-template-library-atl-concepts.md)  
  Provides links to conceptual topics on how to program using the Active Template Library.
+

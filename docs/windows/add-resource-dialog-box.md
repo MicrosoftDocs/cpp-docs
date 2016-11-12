@@ -1,13 +1,13 @@
 ---
-title: "Add Resource Dialog Box"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Add Resource Dialog Box | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.editors.insertresource"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "Add Resource dialog box"
 ms.assetid: e9fb6967-738f-47e8-ab58-728cf35b3af0
 caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,12 +41,12 @@ translation.priority.mt:
 Use this dialog box to add resources to a C++ Windows desktop application project.  
   
 > [!NOTE]
->  This information does not apply to resources in Windows Store apps. For more information about that, see [Defining App Resources](assetId:///476ea844-632c-4467-9ce3-966be1350dd4).  
+>  This information does not apply to resources in Windows Store apps. For more information about that, see [Defining App Resources](http://msdn.microsoft.com/en-us/476ea844-632c-4467-9ce3-966be1350dd4).  
   
  **Resource Type**  
  Specifies the kind of resource you want to create.  
   
- You can expand the cursor and dialog box resource categories to reveal additional resources. These resources are located in ...\Microsoft Visual Studio `version`\VC\VCResourceTemplates\\<LCID\>\mfc.rct. If you add .rct files, you must put them in this directory or you must specify an [include path](../windows/how-to--specify-include-directories-for-resources.md) for them. The resources in those files then appear at the second level under the appropriate category. There is no preset limit to the number of .rct files you can add.  
+ You can expand the cursor and dialog box resource categories to reveal additional resources. These resources are located in ...\Microsoft Visual Studio `version`\VC\VCResourceTemplates\\<LCID\>\mfc.rct. If you add .rct files, you must put them in this directory or you must specify an [include path](../windows/how-to-specify-include-directories-for-resources.md) for them. The resources in those files then appear at the second level under the appropriate category. There is no preset limit to the number of .rct files you can add.  
   
  The resources shown at the top level in the tree control are the default resources that are provided by Visual Studio.  
   
@@ -62,4 +63,4 @@ Use this dialog box to add resources to a C++ Windows desktop application projec
  None  
   
 ## See Also  
- [How to: Create a Resource](../windows/how-to--create-a-resource.md)
+ [How to: Create a Resource](../windows/how-to-create-a-resource.md)

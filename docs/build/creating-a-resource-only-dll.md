@@ -1,13 +1,13 @@
 ---
-title: "Creating a Resource-Only DLL"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Creating a Resource-Only DLL | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "DLLs [C++], creating"
 ms.assetid: e6b1d4da-7275-467f-a58c-a0a8a5835199
 caps.latest.revision: 8
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -34,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Creating a Resource-Only DLL
-A resource-only DLL is a DLL that contains nothing but resources, such as icons, bitmaps, strings, and dialog boxes. Using a resource-only DLL is a good way to share the same set of resources among multiple programs. It is also a good way to provide an application with resources localized for multiple languages (see [Localized Resources in MFC Applications: Satellite DLLs](../build/localized-resources-in-mfc-applications--satellite-dlls.md)).  
+A resource-only DLL is a DLL that contains nothing but resources, such as icons, bitmaps, strings, and dialog boxes. Using a resource-only DLL is a good way to share the same set of resources among multiple programs. It is also a good way to provide an application with resources localized for multiple languages (see [Localized Resources in MFC Applications: Satellite DLLs](../build/localized-resources-in-mfc-applications-satellite-dlls.md)).  
   
  To create a resource-only DLL, you create a new Win32 DLL (non-MFC) project and add your resources to the project.  
   
@@ -44,7 +45,7 @@ A resource-only DLL is a DLL that contains nothing but resources, such as icons,
   
 -   On the **Project** menu, click **Add Existing Item**, and then insert the new .rc file into the project.  
   
--   Specify the [/NOENTRY](../buildref/-noentry--no-entry-point-.md) linker option. /NOENTRY prevents the linker from linking a reference to _main into the DLL; this option is required to create a resource-only DLL.  
+-   Specify the [/NOENTRY](../build/reference/noentry-no-entry-point.md) linker option. /NOENTRY prevents the linker from linking a reference to _main into the DLL; this option is required to create a resource-only DLL.  
   
 -   Build the DLL.  
   
@@ -68,7 +69,7 @@ A resource-only DLL is a DLL that contains nothing but resources, such as icons,
   
 ## What do you want to know more about?  
   
--   [DELETE_PENDING_Editing Resources](assetId:///c29d31c7-2d94-40ca-8aa0-c7262883529c)  
+-   [DELETE_PENDING_Editing Resources](http://msdn.microsoft.com/en-us/c29d31c7-2d94-40ca-8aa0-c7262883529c)  
   
 ## See Also  
- [DLLs in Visual C++](../build/dlls-in-visual-c--.md)
+ [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

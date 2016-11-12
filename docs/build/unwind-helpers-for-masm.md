@@ -1,18 +1,19 @@
 ---
-title: "Unwind Helpers for MASM"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Unwind Helpers for MASM | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 ms.assetid: 36591f9d-43d5-47b1-ae09-e45cf127204c
 caps.latest.revision: 6
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -41,4 +42,4 @@ In order to write proper assembly routines, there are a set of pseudo-operations
 -   [MASM Macros](../build/masm-macros.md)  
   
 ## See Also  
- [Exception Handling (x64)](../build/exception-handling--x64-.md)
+ [Exception Handling (x64)](../build/exception-handling-x64.md)

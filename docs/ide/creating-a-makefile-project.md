@@ -1,13 +1,13 @@
 ---
-title: "Creating a Makefile Project"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Creating a Makefile Project | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.appwiz.makefile.project"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "project files [C++], Makefile projects"
 ms.assetid: dd077af3-97a8-48fb-baaa-cf7e07ddef61
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -48,7 +49,7 @@ If you have a project that you build from the command line with a makefile, then
   
 2.  In the **New Project** dialog box, select **Makefile Project** in the Templates pane to open the wizard.  
   
-3.  In the [Application Settings](../ide/application-settings--makefile-project-wizard.md) page, provide the command, output, clean, and rebuild information.  
+3.  In the [Application Settings](../ide/application-settings-makefile-project-wizard.md) page, provide the command, output, clean, and rebuild information.  
   
 4.  Click **Finish** to close the wizard and open the newly created project in **Solution Explorer**.  
   

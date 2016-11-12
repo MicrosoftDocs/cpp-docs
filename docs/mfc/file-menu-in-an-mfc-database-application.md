@@ -1,13 +1,13 @@
 ---
-title: "File Menu in an MFC Database Application"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "File Menu in an MFC Database Application | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "File menu"
   - "database applications [C++], File menu commands"
 ms.assetid: 92dafb75-c1b3-4860-80a0-87a83bfc36f2
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -34,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # File Menu in an MFC Database Application
-If you create an MFC database application and don't use serialization, how should you interpret the Open, Close, Save, and Save As commands on the File menu? While there are no style guidelines for this question, here are a few suggestions:  
+If you create an MFC database application and don't use serialization, how should you interpret the Open, Close, Save, and Save As commands on the File menu While there are no style guidelines for this question, here are a few suggestions:  
   
 -   Eliminate the File menu's Open command entirely.  
   
@@ -50,7 +51,8 @@ If you create an MFC database application and don't use serialization, how shoul
   
 -   Use the handler instead to display a dialog box listing data sources. You can display such a dialog by calling `CDatabase::OpenEx` or `CDatabase::Open` with the parameter **NULL**. This opens an ODBC dialog box that displays all available data sources on the user's machine.  
   
--   Because database applications typically don't save a whole document, you'll probably want to remove the Save and Save As implementations unless you use a serialized document to store profile information. Otherwise, you might implement the Save command as, for example, "commit transaction." See [Technical Note 22](../mfc/tn022--standard-commands-implementation.md) for more information about overriding these commands.  
+-   Because database applications typically don't save a whole document, you'll probably want to remove the Save and Save As implementations unless you use a serialized document to store profile information. Otherwise, you might implement the Save command as, for example, "commit transaction." See [Technical Note 22](../mfc/tn022-standard-commands-implementation.md) for more information about overriding these commands.  
   
 ## See Also  
- [Serialization: Serialization vs. Database Input/Output](../mfc/serialization--serialization-vs.-database-input-output.md)
+ [Serialization: Serialization vs. Database Input/Output](../mfc/serialization-serialization-vs-database-input-output.md)
+

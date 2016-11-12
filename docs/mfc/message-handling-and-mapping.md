@@ -1,13 +1,13 @@
 ---
-title: "Message Handling and Mapping"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Message Handling and Mapping | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "message handling"
   - "message maps"
 ms.assetid: 62fe2a1b-944c-449d-a0f0-63c11ee0a3cb
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -45,7 +46,7 @@ This article family describes how messages and commands are processed by the MFC
   
  For general information about messages and message queues in Windows, see [Messages and Message Queues](http://msdn.microsoft.com/library/windows/desktop/ms632590) in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md)  
   
@@ -55,16 +56,16 @@ This article family describes how messages and commands are processed by the MFC
   
 -   [Declaring Message Handler Functions](../mfc/declaring-message-handler-functions.md)  
   
--   [Mapping Messages to Functions](../mfcref/mapping-messages-to-functions.md)  
+-   [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)  
   
--   [How to Display Command Information in the Status Bar](../mfc/how-to--display-command-information-in-the-status-bar.md)  
+-   [How to Display Command Information in the Status Bar](../mfc/how-to-display-command-information-in-the-status-bar.md)  
   
--   [Dynamic update of user-interface objects](../mfc/how-to--update-user-interface-objects.md)  
+-   [Dynamic update of user-interface objects](../mfc/how-to-update-user-interface-objects.md)  
   
--   [How to: Create a Message Map for a Template Class](../mfc/how-to--create-a-message-map-for-a-template-class.md)  
+-   [How to: Create a Message Map for a Template Class](../mfc/how-to-create-a-message-map-for-a-template-class.md)  
   
 ## See Also  
  [Concepts](../mfc/mfc-concepts.md)   
  [General MFC Topics](../mfc/general-mfc-topics.md)   
- [CWnd Class](../mfcref/cwnd-class.md)   
- [CCmdTarget Class](../mfcref/ccmdtarget-class.md)
+ [CWnd Class](../mfc/reference/cwnd-class.md)   
+ [CCmdTarget Class](../mfc/reference/ccmdtarget-class.md)

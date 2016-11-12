@@ -1,13 +1,13 @@
 ---
-title: "Symbol Value Restrictions"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Symbol Value Restrictions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.editors.symbol.restrictions.value"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "restrictions, symbol values"
 ms.assetid: 32467ec3-690b-4cd0-a4d0-7d189a3296cb
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -67,9 +68,9 @@ A symbol value can be any integer expressed in the normal manner for #define pre
   
      is not a valid expression regardless of what `ID` evaluates to at compile time.  
   
--   Your application may have an existing file containing symbols defined with expressions. For more information on how to include the symbols as read-only symbols, see [Using Shared (Read Only) or Calculated Symbols](../windows/including-shared--read-only--or-calculated-symbols.md).  
+-   Your application may have an existing file containing symbols defined with expressions. For more information on how to include the symbols as read-only symbols, see [Using Shared (Read Only) or Calculated Symbols](../windows/including-shared-read-only-or-calculated-symbols.md).  
   
- For more information on number ranges, see [TN023: Standard MFC Resources](../mfc/tn023--standard-mfc-resources.md).  
+ For more information on number ranges, see [TN023: Standard MFC Resources](../mfc/tn023-standard-mfc-resources.md).  
   
  For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
   

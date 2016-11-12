@@ -1,13 +1,13 @@
 ---
-title: "Using exit or return"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Using exit or return | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "Exit"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "return keyword [C++], using for program termination"
 ms.assetid: b5136c5c-2505-4229-8691-2a1d6a98760b
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -76,7 +77,7 @@ int main() {
 }  
 ```  
   
- In the preceding example, the static objects `sd1` and `sd2` are created and initialized before entry to `main`. After this program terminates using the `return` statement, first `sd2` is destroyed and then `sd1`. The destructor for the `ShowData` class closes the files associated with these static objects. (For more information about initialization, constructors, and destructors, see [Special Member Functions](../notintoc/special-member-functions--c---.md).)  
+ In the preceding example, the static objects `sd1` and `sd2` are created and initialized before entry to `main`. After this program terminates using the `return` statement, first `sd2` is destroyed and then `sd1`. The destructor for the `ShowData` class closes the files associated with these static objects. (For more information about initialization, constructors, and destructors, see [Special Member Functions](../misc/special-member-functions-cpp.md).)  
   
  Another way to write this code is to declare the `ShowData` objects with block scope, allowing them to be destroyed when they go out of scope:  
   

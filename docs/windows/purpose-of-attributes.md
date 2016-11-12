@@ -1,13 +1,13 @@
 ---
-title: "Purpose of Attributes"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Purpose of Attributes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "attributes [C++], about attributes"
 ms.assetid: 3aff8bfa-a2a3-4fcb-a2c6-1d96a2b4c68d
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,7 +44,7 @@ Attributes extend C++ in directions not currently possible without breaking the 
   
 -   Replaces the large amount of IDL code required by a COM component with a few concise attributes.  
   
- For example, to implement a simple event sink for a generic ATL class, you could apply the [event_receiver](../windows/event_receiver.md) attribute to a specific class such as `CMyReceiver`. The **event_receiver** attribute is then compiled by the Visual C++ compiler, which inserts the proper code into the object file.  
+ For example, to implement a simple event sink for a generic ATL class, you could apply the [event_receiver](../windows/event-receiver.md) attribute to a specific class such as `CMyReceiver`. The **event_receiver** attribute is then compiled by the Visual C++ compiler, which inserts the proper code into the object file.  
   
 ```  
 [event_receiver(com)]  
@@ -54,7 +55,7 @@ class CMyReceiver
 }  
 ```  
   
- You can then set up the **CMyReceiver** methods `handler1` and `handler2` to handle events (using the intrinsic function [__hook](../cpp/__hook.md)) from an event source, which you can create using [event_source](../windows/event_source.md).  
+ You can then set up the **CMyReceiver** methods `handler1` and `handler2` to handle events (using the intrinsic function [__hook](../cpp/hook.md)) from an event source, which you can create using [event_source](../windows/event-source.md).  
   
 ## See Also  
  [Concepts](../windows/attributed-programming-concepts.md)

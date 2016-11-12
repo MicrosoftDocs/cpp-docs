@@ -1,13 +1,13 @@
 ---
-title: "OLE Drag-and-Drop and Data Transfer Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "OLE Drag-and-Drop and Data Transfer Classes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.classes.ole"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "data transfer [C++], OLE"
   - "data transfer classes [C++]"
 ms.assetid: c8ab2825-ed69-4b88-8ae6-f368b94726b8
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -41,17 +42,18 @@ translation.priority.ht:
 # OLE Drag-and-Drop and Data Transfer Classes
 These classes are used in OLE data transfers. They allow data to be transferred between applications by using the Clipboard or through drag and drop.  
   
- [COleDropSource](../mfcref/coledropsource-class.md)  
+ [COleDropSource](../mfc/reference/coledropsource-class.md)  
  Controls the drag-and-drop operation from start to finish. This class determines when the drag operation starts and when it ends. It also displays cursor feedback during the drag-and-drop operation.  
   
- [COleDataSource](../mfcref/coledatasource-class.md)  
+ [COleDataSource](../mfc/reference/coledatasource-class.md)  
  Used when an application provides data for a data transfer. `COleDataSource` could be viewed as an object-oriented Clipboard object.  
   
- [COleDropTarget](../mfcref/coledroptarget-class.md)  
+ [COleDropTarget](../mfc/reference/coledroptarget-class.md)  
  Represents the target of a drag-and-drop operation. A `COleDropTarget` object corresponds to a window on screen. It determines whether to accept any data dropped onto it and implements the actual drop operation.  
   
- [COleDataObject](../mfcref/coledataobject-class.md)  
+ [COleDataObject](../mfc/reference/coledataobject-class.md)  
  Used as the receiver side to `COleDataSource`. `COleDataObject` objects provide access to the data stored by a `COleDataSource` object.  
   
 ## See Also  
  [Class Overview](../mfc/class-library-overview.md)
+

@@ -1,13 +1,13 @@
 ---
-title: "Using CObject"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Using CObject | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "CObject"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "MFC, base class"
   - "CObject class"
 ms.assetid: d0cd19bb-2856-4b41-abbc-620fd64cb223
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,9 +40,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Using CObject
-[CObject](../mfcref/cobject-class.md) is the root base class for most of the Microsoft Foundation Class Library (MFC). The `CObject` class contains many useful features that you may want to incorporate into your own program objects, including serialization support, run-time class information, and object diagnostic output. If you derive your class from `CObject`, your class can exploit these `CObject` features.  
+[CObject](../mfc/reference/cobject-class.md) is the root base class for most of the Microsoft Foundation Class Library (MFC). The `CObject` class contains many useful features that you may want to incorporate into your own program objects, including serialization support, run-time class information, and object diagnostic output. If you derive your class from `CObject`, your class can exploit these `CObject` features.  
   
-## What do you want to do?  
+## What do you want to do  
   
 -   [Derive a class from CObject](../mfc/deriving-a-class-from-cobject.md)  
   
@@ -51,17 +52,18 @@ translation.priority.ht:
   
 -   [Create objects dynamically](../mfc/dynamic-object-creation.md)  
   
--   [Dump the object's data for diagnostic purposes](assetId:///727855b1-5a83-44bd-9fe3-f1d535584b59)  
+-   [Dump the object's data for diagnostic purposes](http://msdn.microsoft.com/en-us/727855b1-5a83-44bd-9fe3-f1d535584b59)  
   
--   Validate the object's internal state (see [MFC ASSERT_VALID and CObject::AssertValid](assetId:///7654fb75-9e9a-499a-8165-0a96faf2d5e6))  
+-   Validate the object's internal state (see [MFC ASSERT_VALID and CObject::AssertValid](http://msdn.microsoft.com/en-us/7654fb75-9e9a-499a-8165-0a96faf2d5e6))  
   
 -   [Have the class serialize itself to persistent storage](../mfc/serialization-in-mfc.md)  
   
--   See a list of [CObject Frequently Asked Questions](../mfc/cobject-class--frequently-asked-questions.md)  
+-   See a list of [CObject Frequently Asked Questions](../mfc/cobject-class-frequently-asked-questions.md)  
   
 ## See Also  
  [Concepts](../mfc/mfc-concepts.md)   
  [General MFC Topics](../mfc/general-mfc-topics.md)   
- [CRuntimeClass Structure](../mfcref/cruntimeclass-structure.md)   
+ [CRuntimeClass Structure](../mfc/reference/cruntimeclass-structure.md)   
  [Files](../mfc/files-in-mfc.md)   
  [Serialization](../mfc/serialization-in-mfc.md)
+

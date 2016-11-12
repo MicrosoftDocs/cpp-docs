@@ -1,13 +1,13 @@
 ---
-title: "lcid"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "lcid | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "vc-attr.lcid"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "LCID attribute"
 ms.assetid: 7f248c69-ee1c-42c3-9411-39cf27c9f43d
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -46,7 +47,7 @@ Lets you pass a locale identifier to a function.
 ```  
   
 ## Remarks  
- The **lcid** C++ attribute implements the functionality of the [lcid](http://msdn.microsoft.com/library/windows/desktop/aa367067) MIDL attribute. If you want to implement locale for a library block, use the **lcid=**`lcid` parameter to the [module](../windows/module--c---.md) attribute.  
+ The **lcid** C++ attribute implements the functionality of the [lcid](http://msdn.microsoft.com/library/windows/desktop/aa367067) MIDL attribute. If you want to implement locale for a library block, use the **lcid=**`lcid` parameter to the [module](../windows/module-cpp.md) attribute.  
   
 ## Example  
   
@@ -79,4 +80,4 @@ __interface IStatic {
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Parameter Attributes](../windows/parameter-attributes.md)   
- [Attributes Samples](assetId:///558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

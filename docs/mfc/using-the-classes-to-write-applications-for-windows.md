@@ -1,13 +1,13 @@
 ---
-title: "Using the Classes to Write Applications for Windows"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Using the Classes to Write Applications for Windows | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "OLE applications [C++], MFC application framework"
   - "database applications [C++], creating"
 ms.assetid: 73f63470-857d-43dd-9a54-b38b7be0f1b7
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -44,11 +45,11 @@ Taken together, the classes in the Microsoft Foundation Class (MFC) Library make
   
  This family of articles presents a broad overview of the application framework. It also explores the major objects that make up your application and how they are created. Among the topics covered in these articles are the following:  
   
--   [The framework](../mfc/framework--mfc-.md).  
+-   [The framework](../mfc/framework-mfc.md).  
   
 -   Division of labor between the framework and your code, as described in [Building on the Framework](../mfc/building-on-the-framework.md).  
   
--   [The application class](../mfc/cwinapp--the-application-class.md), which encapsulates application-level functionality.  
+-   [The application class](../mfc/cwinapp-the-application-class.md), which encapsulates application-level functionality.  
   
 -   How [document templates](../mfc/document-templates-and-the-document-view-creation-process.md) create and manage documents and their associated views and frame windows.  
   
@@ -68,7 +69,7 @@ Taken together, the classes in the Microsoft Foundation Class (MFC) Library make
   
 -   [Dialog Boxes](../mfc/dialog-boxes.md)  
   
--   [Controls](../mfc/controls--mfc-.md)  
+-   [Controls](../mfc/controls-mfc.md)  
   
 -   [Control Bars](../mfc/control-bars.md)  
   
@@ -82,7 +83,7 @@ Taken together, the classes in the Microsoft Foundation Class (MFC) Library make
   
      The OLE control development kit (CDK) is now fully integrated with the framework. This article family supplies an overview of ActiveX control development with MFC. (ActiveX controls were formerly known as OLE controls.)  
   
--   [Database Programming](../data/data-access-programming--mfc-atl-.md)  
+-   [Database Programming](../data/data-access-programming-mfc-atl.md)  
   
      MFC also supplies two sets of database classes that simplify writing data-access applications. Using the ODBC database classes, you can connect to databases through an Open Database Connectivity (ODBC) driver, select records from tables, and display record information in an on-screen form. Using the Data Access Object (DAO) classes, you can work with databases through the Microsoft Jet database engine or external (non-Jet) data sources, including ODBC data sources.  
   
@@ -92,3 +93,4 @@ Taken together, the classes in the Microsoft Foundation Class (MFC) Library make
   
 ## See Also  
  [General MFC Topics](../mfc/general-mfc-topics.md)
+

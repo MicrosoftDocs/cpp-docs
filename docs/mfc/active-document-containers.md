@@ -1,13 +1,13 @@
 ---
-title: "Active Document Containers"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Active Document Containers | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "containers [C++], active document"
   - "MFC COM [C++], active document containment"
 ms.assetid: ba20183a-8b4c-440f-9031-e5fcc41d391b
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -102,3 +103,4 @@ An active document container, such as Microsoft Office Binder or Internet Explor
   
 ## See Also  
  [Active Document Containment](../mfc/active-document-containment.md)
+

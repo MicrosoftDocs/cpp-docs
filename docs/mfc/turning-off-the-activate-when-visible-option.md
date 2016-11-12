@@ -1,13 +1,13 @@
 ---
-title: "Turning off the Activate When Visible Option"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Turning off the Activate When Visible Option | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "MFC ActiveX controls [C++], activate options"
   - "Activate When Visible option"
 ms.assetid: 8f7ddc5a-a7a6-4da8-bcb9-1b569f0ecb48
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,9 +41,10 @@ A control has two basic states: active and inactive. Traditionally, these states
   
  Many controls do not need to be active the entire time they are visible in a container. Often, a control can remain in the inactive state until the user performs an operation that requires it to become active (for example, clicking with the mouse or pressing the TAB key). To cause a control to remain inactive until the container needs to activate it, remove the **OLEMISC_ACTIVATEWHENVISIBLE** flag from the control's miscellaneous flags:  
   
- [!code[NVC_MFC_AxOpt#9](../mfc/codesnippet/CPP/turning-off-the-activate-when-visible-option_1.cpp)]  
+ [!code-cpp[NVC_MFC_AxOpt#9](../mfc/codesnippet/CPP/turning-off-the-activate-when-visible-option_1.cpp)]  
   
- The **OLEMISC_ACTIVATEWHENVISIBLE** flag is automatically omitted if you turn off the **Activate When Visible** option in the [Control Settings](../mfcref/control-settings--mfc-activex-control-wizard.md) page of the MFC ActiveX Control Wizard when you create your control.  
+ The **OLEMISC_ACTIVATEWHENVISIBLE** flag is automatically omitted if you turn off the **Activate When Visible** option in the [Control Settings](../mfc/reference/control-settings-mfc-activex-control-wizard.md) page of the MFC ActiveX Control Wizard when you create your control.  
   
 ## See Also  
- [MFC ActiveX Controls: Optimization](../mfc/mfc-activex-controls--optimization.md)
+ [MFC ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md)
+

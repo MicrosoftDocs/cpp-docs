@@ -1,13 +1,13 @@
 ---
-title: "Active Document Containment"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Active Document Containment | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "active document containers [C++], about active document containers"
   - "MFC COM [C++], active document containment"
 ms.assetid: b8dfa74b-75ce-47df-b75e-fc87b7f7d687
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -55,7 +56,8 @@ Active document containment is a technology that provides a single frame in whic
   
 ## Sample Programs  
   
--   The [MFCBIND](../top/visual-c---samples.md) sample illustrates the implementation of an active document container application.  
+-   The [MFCBIND](../top/visual-cpp-samples.md) sample illustrates the implementation of an active document container application.  
   
 ## See Also  
  [MFC COM](../mfc/mfc-com.md)
+

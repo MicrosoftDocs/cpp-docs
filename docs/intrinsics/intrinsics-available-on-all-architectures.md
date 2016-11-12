@@ -1,13 +1,13 @@
 ---
-title: "Intrinsics Available on All Architectures"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Intrinsics Available on All Architectures | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "cl.exe compiler, intrinsics"
 ms.assetid: 1fe3958e-d2fe-4188-8e34-5896738246eb
 caps.latest.revision: 10
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,162 +38,162 @@ The following intrinsics are available with the x86, AMD64, and ARM architecture
   
 |Intrinsic|Header|  
 |---------------|------------|  
-|[_AddressOfReturnAddress](../intrinsics/_addressofreturnaddress.md)|intrin.h|  
-|[_BitScanForward](../intrinsics/_bitscanforward--_bitscanforward64.md)|intrin.h|  
-|[_BitScanForward64](../intrinsics/_bitscanforward--_bitscanforward64.md)|intrin.h|  
-|[_BitScanReverse](../intrinsics/_bitscanreverse--_bitscanreverse64.md)|intrin.h|  
-|[_BitScanReverse64](../intrinsics/_bitscanreverse--_bitscanreverse64.md)|intrin.h|  
-|[_bittest](../intrinsics/_bittest--_bittest64.md)|intrin.h|  
-|[_bittest64](../intrinsics/_bittest--_bittest64.md)|intrin.h|  
-|[_bittestandcomplement](../intrinsics/_bittestandcomplement--_bittestandcomplement64.md)|intrin.h|  
-|[_bittestandcomplement64](../intrinsics/_bittestandcomplement--_bittestandcomplement64.md)|intrin.h|  
-|[_bittestandreset](../intrinsics/_bittestandreset--_bittestandreset64.md)|intrin.h|  
-|[_bittestandreset64](../intrinsics/_bittestandreset--_bittestandreset64.md)|intrin.h|  
-|[_bittestandset](../intrinsics/_bittestandset--_bittestandset64.md)|intrin.h|  
-|[_bittestandset64](../intrinsics/_bittestandset--_bittestandset64.md)|intrin.h|  
-|[__debugbreak](../intrinsics/__debugbreak.md)|intrin.h|  
-|[_disable](../intrinsics/_disable.md)|intrin.h|  
-|[_enable](../intrinsics/_enable.md)|intrin.h|  
-|[__fastfail](../intrinsics/__fastfail.md)|intrin.h|  
-|[_InterlockedAnd](../intrinsics/_interlockedand-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedAnd16](../intrinsics/_interlockedand-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedAnd64](../intrinsics/_interlockedand-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedAnd8](../intrinsics/_interlockedand-intrinsic-functions.md)|intrin.h|  
-|[_interlockedbittestandreset](../intrinsics/_interlockedbittestandreset-intrinsic-functions.md)|intrin.h|  
-|[_interlockedbittestandset](../intrinsics/_interlockedbittestandset-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedCompareExchange](../intrinsics/_interlockedcompareexchange-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedCompareExchange16](../intrinsics/_interlockedcompareexchange-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedCompareExchange64](../intrinsics/_interlockedcompareexchange-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedCompareExchange8](../intrinsics/_interlockedcompareexchange-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedCompareExchangePointer](../intrinsics/_interlockedcompareexchangepointer-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedDecrement16](../intrinsics/_interlockeddecrement-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedDecrement64](../intrinsics/_interlockeddecrement-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedExchange](../intrinsics/_interlockedexchange-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedExchange16](../intrinsics/_interlockedexchange-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedExchange64](../intrinsics/_interlockedexchange-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedExchange8](../intrinsics/_interlockedexchange-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedExchangeAdd](../intrinsics/_interlockedexchangeadd-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedExchangeAdd16](../intrinsics/_interlockedexchangeadd-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedExchangeAdd64](../intrinsics/_interlockedexchangeadd-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedExchangeAdd8](../intrinsics/_interlockedexchangeadd-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedExchangePointer](../intrinsics/_interlockedexchangepointer-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedIncrement](../intrinsics/_interlockedincrement-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedIncrement16](../intrinsics/_interlockedincrement-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedIncrement64](../intrinsics/_interlockedincrement-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedOr](../intrinsics/_interlockedor-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedOr16](../intrinsics/_interlockedor-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedOr64](../intrinsics/_interlockedor-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedOr8](../intrinsics/_interlockedor-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedXor](../intrinsics/_interlockedxor-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedXor16](../intrinsics/_interlockedxor-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedXor64](../intrinsics/_interlockedxor-intrinsic-functions.md)|intrin.h|  
-|[_InterlockedXor8](../intrinsics/_interlockedxor-intrinsic-functions.md)|intrin.h|  
-|[_mul128](../intrinsics/__mul128.md)|intrin.h|  
-|[__mulh](../intrinsics/__mulh.md)|intrin.h|  
-|[__nop](../intrinsics/__nop.md)|intrin.h|  
-|[_ReadBarrier](../intrinsics/_readbarrier.md)|intrin.h|  
-|[_ReadWriteBarrier](../intrinsics/_readwritebarrier.md)|intrin.h|  
-|[_ReturnAddress](../intrinsics/_returnaddress.md)|intrin.h|  
-|[_rotl16](../intrinsics/_rotl8--_rotl16.md)|intrin.h|  
-|[_rotl8](../intrinsics/_rotl8--_rotl16.md)|intrin.h|  
-|[_rotr16](../intrinsics/_rotr8--_rotr16.md)|intrin.h|  
-|[_rotr8](../intrinsics/_rotr8--_rotr16.md)|intrin.h|  
-|[__shiftleft128](../intrinsics/__shiftleft128.md)|intrin.h|  
-|[__shiftright128](../intrinsics/__shiftright128.md)|intrin.h|  
-|[_umul128](../intrinsics/_umul128.md)|intrin.h|  
-|[__umulh](../intrinsics/__umulh.md)|intrin.h|  
-|[_WriteBarrier](../intrinsics/_writebarrier.md)|intrin.h|  
+|[_AddressOfReturnAddress](../intrinsics/addressofreturnaddress.md)|intrin.h|  
+|[_BitScanForward](../intrinsics/bitscanforward-bitscanforward64.md)|intrin.h|  
+|[_BitScanForward64](../intrinsics/bitscanforward-bitscanforward64.md)|intrin.h|  
+|[_BitScanReverse](../intrinsics/bitscanreverse-bitscanreverse64.md)|intrin.h|  
+|[_BitScanReverse64](../intrinsics/bitscanreverse-bitscanreverse64.md)|intrin.h|  
+|[_bittest](../intrinsics/bittest-bittest64.md)|intrin.h|  
+|[_bittest64](../intrinsics/bittest-bittest64.md)|intrin.h|  
+|[_bittestandcomplement](../intrinsics/bittestandcomplement-bittestandcomplement64.md)|intrin.h|  
+|[_bittestandcomplement64](../intrinsics/bittestandcomplement-bittestandcomplement64.md)|intrin.h|  
+|[_bittestandreset](../intrinsics/bittestandreset-bittestandreset64.md)|intrin.h|  
+|[_bittestandreset64](../intrinsics/bittestandreset-bittestandreset64.md)|intrin.h|  
+|[_bittestandset](../intrinsics/bittestandset-bittestandset64.md)|intrin.h|  
+|[_bittestandset64](../intrinsics/bittestandset-bittestandset64.md)|intrin.h|  
+|[__debugbreak](../intrinsics/debugbreak.md)|intrin.h|  
+|[_disable](../intrinsics/disable.md)|intrin.h|  
+|[_enable](../intrinsics/enable.md)|intrin.h|  
+|[__fastfail](../intrinsics/fastfail.md)|intrin.h|  
+|[_InterlockedAnd](../intrinsics/interlockedand-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedAnd16](../intrinsics/interlockedand-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedAnd64](../intrinsics/interlockedand-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedAnd8](../intrinsics/interlockedand-intrinsic-functions.md)|intrin.h|  
+|[_interlockedbittestandreset](../intrinsics/interlockedbittestandreset-intrinsic-functions.md)|intrin.h|  
+|[_interlockedbittestandset](../intrinsics/interlockedbittestandset-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedCompareExchange](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedCompareExchange16](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedCompareExchange64](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedCompareExchange8](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedCompareExchangePointer](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedDecrement16](../intrinsics/interlockeddecrement-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedDecrement64](../intrinsics/interlockeddecrement-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedExchange](../intrinsics/interlockedexchange-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedExchange16](../intrinsics/interlockedexchange-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedExchange64](../intrinsics/interlockedexchange-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedExchange8](../intrinsics/interlockedexchange-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedExchangeAdd](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedExchangeAdd16](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedExchangeAdd64](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedExchangeAdd8](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedExchangePointer](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedIncrement](../intrinsics/interlockedincrement-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedIncrement16](../intrinsics/interlockedincrement-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedIncrement64](../intrinsics/interlockedincrement-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedOr](../intrinsics/interlockedor-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedOr16](../intrinsics/interlockedor-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedOr64](../intrinsics/interlockedor-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedOr8](../intrinsics/interlockedor-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedXor](../intrinsics/interlockedxor-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedXor16](../intrinsics/interlockedxor-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedXor64](../intrinsics/interlockedxor-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedXor8](../intrinsics/interlockedxor-intrinsic-functions.md)|intrin.h|  
+|[_mul128](../intrinsics/mul128.md)|intrin.h|  
+|[__mulh](../intrinsics/mulh.md)|intrin.h|  
+|[__nop](../intrinsics/nop.md)|intrin.h|  
+|[_ReadBarrier](../intrinsics/readbarrier.md)|intrin.h|  
+|[_ReadWriteBarrier](../intrinsics/readwritebarrier.md)|intrin.h|  
+|[_ReturnAddress](../intrinsics/returnaddress.md)|intrin.h|  
+|[_rotl16](../intrinsics/rotl8-rotl16.md)|intrin.h|  
+|[_rotl8](../intrinsics/rotl8-rotl16.md)|intrin.h|  
+|[_rotr16](../intrinsics/rotr8-rotr16.md)|intrin.h|  
+|[_rotr8](../intrinsics/rotr8-rotr16.md)|intrin.h|  
+|[__shiftleft128](../intrinsics/shiftleft128.md)|intrin.h|  
+|[__shiftright128](../intrinsics/shiftright128.md)|intrin.h|  
+|[_umul128](../intrinsics/umul128.md)|intrin.h|  
+|[__umulh](../intrinsics/umulh.md)|intrin.h|  
+|[_WriteBarrier](../intrinsics/writebarrier.md)|intrin.h|  
   
  The following CRT functions have intrinsic forms on all architectures:  
   
 |Intrinsic|Header|  
 |---------------|------------|  
-|[abs](../crt/abs--labs--llabs--_abs64.md)|stdlib.h|  
-|[_abs64](../crt/abs--labs--llabs--_abs64.md)|stdlib.h|  
-|[acos](../crt/acos--acosf--acosl.md)|math.h|  
-|[acosf](../crt/acos--acosf--acosl.md)|math.h|  
-|[acosl](../crt/acos--acosf--acosl.md)|math.h|  
-|[_alloca](../crt/_alloca.md)|malloc.h|  
-|[asin](../crt/asin--asinf--asinl.md)|math.h|  
-|[asinf](../crt/asin--asinf--asinl.md)|math.h|  
-|[asinl](../crt/asin--asinf--asinl.md)|math.h|  
-|[atan](../crt/atan--atanf--atanl--atan2--atan2f--atan2l.md)|math.h|  
-|[atan2](../crt/atan--atanf--atanl--atan2--atan2f--atan2l.md)|math.h|  
-|[atan2f](../crt/atan--atanf--atanl--atan2--atan2f--atan2l.md)|math.h|  
-|[atan2l](../crt/atan--atanf--atanl--atan2--atan2f--atan2l.md)|math.h|  
-|[atanf](../crt/atan--atanf--atanl--atan2--atan2f--atan2l.md)|math.h|  
-|[atanl](../crt/atan--atanf--atanl--atan2--atan2f--atan2l.md)|math.h|  
-|[_byteswap_uint64](../crt/_byteswap_uint64--_byteswap_ulong--_byteswap_ushort.md)|stdlib.h|  
-|[_byteswap_ulong](../crt/_byteswap_uint64--_byteswap_ulong--_byteswap_ushort.md)|stdlib.h|  
-|[_byteswap_ushort](../crt/_byteswap_uint64--_byteswap_ulong--_byteswap_ushort.md)|stdlib.h|  
-|[ceil](../crt/ceil--ceilf--ceill.md)|math.h|  
-|[ceilf](../crt/ceil--ceilf--ceill.md)|math.h|  
-|[ceill](../crt/ceil--ceilf--ceill.md)|math.h|  
-|[cos](../crt/cos--cosf--cosl--cosh--coshf--coshl.md)|math.h|  
-|[cosf](../crt/cos--cosf--cosl--cosh--coshf--coshl.md)|math.h|  
-|[cosh](../crt/cos--cosf--cosl--cosh--coshf--coshl.md)|math.h|  
-|[coshf](../crt/cos--cosf--cosl--cosh--coshf--coshl.md)|math.h|  
-|[coshl](../crt/cos--cosf--cosl--cosh--coshf--coshl.md)|math.h|  
-|[cosl](../crt/cos--cosf--cosl--cosh--coshf--coshl.md)|math.h|  
-|[exp](../crt/exp--expf.md)|math.h|  
-|[expf](../crt/exp--expf.md)|math.h|  
-|[expl](../crt/exp--expf.md)|math.h|  
-|[fabs](../crt/fabs--fabsf--fabsl.md)|math.h|  
-|[fabsf](../crt/fabs--fabsf--fabsl.md)|math.h|  
-|[floor](../crt/floor--floorf--floorl.md)|math.h|  
-|[floorf](../crt/floor--floorf--floorl.md)|math.h|  
-|[floorl](../crt/floor--floorf--floorl.md)|math.h|  
-|[fmod](../crt/fmod--fmodf.md)|math.h|  
-|[fmodf](../crt/fmod--fmodf.md)|math.h|  
-|[fmodl](../crt/fmod--fmodf.md)|math.h|  
-|[labs](../notintoc/labs--llabs.md)|stdlib.h|  
-|[llabs](../notintoc/labs--llabs.md)|stdlib.h|  
-|[log](../crt/log--logf--log10--log10f.md)|math.h|  
-|[log10](../crt/log--logf--log10--log10f.md)|math.h|  
-|[log10f](../crt/log--logf--log10--log10f.md)|math.h|  
-|[log10l](../crt/log--logf--log10--log10f.md)|math.h|  
-|[logf](../crt/log--logf--log10--log10f.md)|math.h|  
-|[logl](../crt/log--logf--log10--log10f.md)|math.h|  
-|[_lrotl](../crt/_lrotl--_lrotr.md)|stdlib.h|  
-|[_lrotr](../crt/_lrotl--_lrotr.md)|stdlib.h|  
-|[memcmp](../crt/memcmp--wmemcmp.md)|string.h|  
-|[memcpy](../crt/memcpy--wmemcpy.md)|string.h|  
-|[memset](../crt/memset--wmemset.md)|string.h|  
-|[pow](../crt/pow--powf--powl.md)|math.h|  
-|[powf](../crt/pow--powf--powl.md)|math.h|  
-|[powl](../crt/pow--powf--powl.md)|math.h|  
-|[_rotl](../crt/_rotl--_rotl64--_rotr--_rotr64.md)|stdlib.h|  
-|[_rotl64](../crt/_rotl--_rotl64--_rotr--_rotr64.md)|stdlib.h|  
-|[_rotr](../crt/_rotl--_rotl64--_rotr--_rotr64.md)|stdlib.h|  
-|[_rotr64](../crt/_rotl--_rotl64--_rotr--_rotr64.md)|stdlib.h|  
-|[sin](../crt/pow--powf--powl.md)|math.h|  
-|[sinf](../crt/pow--powf--powl.md)|math.h|  
-|[sinh](../crt/pow--powf--powl.md)|math.h|  
-|[sinhf](../crt/pow--powf--powl.md)|math.h|  
-|[sinhl](../crt/pow--powf--powl.md)|math.h|  
-|[sinl](../crt/pow--powf--powl.md)|math.h|  
-|[sqrt](../crt/sqrt--sqrtf--sqrtl.md)|math.h|  
-|[sqrtf](../crt/sqrt--sqrtf--sqrtl.md)|math.h|  
-|[sqrtl](../crt/sqrt--sqrtf--sqrtl.md)|math.h|  
-|[strcat](../crt/strcat--wcscat--_mbscat.md)|string.h|  
-|[strcmp](../crt/strcmp--wcscmp--_mbscmp.md)|string.h|  
-|[strcpy](../crt/strcpy--wcscpy--_mbscpy.md)|string.h|  
-|[strlen](../crt/strlen--wcslen--_mbslen--_mbslen_l--_mbstrlen--_mbstrlen_l.md)|string.h|  
-|[_strset](../crt/_strset--_strset_l--_wcsset--_wcsset_l--_mbsset--_mbsset_l.md)|string.h|  
-|[strset](../crt/strset--wcsset.md)|string.h|  
-|[tan](../crt/tan--tanf--tanl--tanh--tanhf--tanhl.md)|math.h|  
-|[tanf](../crt/tan--tanf--tanl--tanh--tanhf--tanhl.md)|math.h|  
-|[tanh](../crt/tan--tanf--tanl--tanh--tanhf--tanhl.md)|math.h|  
-|[tanhf](../crt/tan--tanf--tanl--tanh--tanhf--tanhl.md)|math.h|  
-|[tanhl](../crt/tan--tanf--tanl--tanh--tanhf--tanhl.md)|math.h|  
-|[tanl](../crt/tan--tanf--tanl--tanh--tanhf--tanhl.md)|math.h|  
-|[wcscat](../crt/strcat--wcscat--_mbscat.md)|string.h|  
-|[wcscmp](../crt/strcmp--wcscmp--_mbscmp.md)|string.h|  
-|[wcscpy](../crt/strcpy--wcscpy--_mbscpy.md)|string.h|  
-|[wcslen](../crt/strlen--wcslen--_mbslen--_mbslen_l--_mbstrlen--_mbstrlen_l.md)|string.h|  
-|[_wcsset](../crt/_strset--_strset_l--_wcsset--_wcsset_l--_mbsset--_mbsset_l.md)|string.h|  
+|[abs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|  
+|[_abs64](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|  
+|[acos](../c-runtime-library/reference/acos-acosf-acosl.md)|math.h|  
+|[acosf](../c-runtime-library/reference/acos-acosf-acosl.md)|math.h|  
+|[acosl](../c-runtime-library/reference/acos-acosf-acosl.md)|math.h|  
+|[_alloca](../c-runtime-library/reference/alloca.md)|malloc.h|  
+|[asin](../c-runtime-library/reference/asin-asinf-asinl.md)|math.h|  
+|[asinf](../c-runtime-library/reference/asin-asinf-asinl.md)|math.h|  
+|[asinl](../c-runtime-library/reference/asin-asinf-asinl.md)|math.h|  
+|[atan](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|math.h|  
+|[atan2](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|math.h|  
+|[atan2f](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|math.h|  
+|[atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|math.h|  
+|[atanf](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|math.h|  
+|[atanl](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|math.h|  
+|[_byteswap_uint64](../c-runtime-library/reference/byteswap-uint64-byteswap-ulong-byteswap-ushort.md)|stdlib.h|  
+|[_byteswap_ulong](../c-runtime-library/reference/byteswap-uint64-byteswap-ulong-byteswap-ushort.md)|stdlib.h|  
+|[_byteswap_ushort](../c-runtime-library/reference/byteswap-uint64-byteswap-ulong-byteswap-ushort.md)|stdlib.h|  
+|[ceil](../c-runtime-library/reference/ceil-ceilf-ceill.md)|math.h|  
+|[ceilf](../c-runtime-library/reference/ceil-ceilf-ceill.md)|math.h|  
+|[ceill](../c-runtime-library/reference/ceil-ceilf-ceill.md)|math.h|  
+|[cos](../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)|math.h|  
+|[cosf](../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)|math.h|  
+|[cosh](../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)|math.h|  
+|[coshf](../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)|math.h|  
+|[coshl](../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)|math.h|  
+|[cosl](../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)|math.h|  
+|[exp](../c-runtime-library/reference/exp-expf.md)|math.h|  
+|[expf](../c-runtime-library/reference/exp-expf.md)|math.h|  
+|[expl](../c-runtime-library/reference/exp-expf.md)|math.h|  
+|[fabs](../c-runtime-library/reference/fabs-fabsf-fabsl.md)|math.h|  
+|[fabsf](../c-runtime-library/reference/fabs-fabsf-fabsl.md)|math.h|  
+|[floor](../c-runtime-library/reference/floor-floorf-floorl.md)|math.h|  
+|[floorf](../c-runtime-library/reference/floor-floorf-floorl.md)|math.h|  
+|[floorl](../c-runtime-library/reference/floor-floorf-floorl.md)|math.h|  
+|[fmod](../c-runtime-library/reference/fmod-fmodf.md)|math.h|  
+|[fmodf](../c-runtime-library/reference/fmod-fmodf.md)|math.h|  
+|[fmodl](../c-runtime-library/reference/fmod-fmodf.md)|math.h|  
+|[labs](../misc/labs-llabs.md)|stdlib.h|  
+|[llabs](../misc/labs-llabs.md)|stdlib.h|  
+|[log](../c-runtime-library/reference/log-logf-log10-log10f.md)|math.h|  
+|[log10](../c-runtime-library/reference/log-logf-log10-log10f.md)|math.h|  
+|[log10f](../c-runtime-library/reference/log-logf-log10-log10f.md)|math.h|  
+|[log10l](../c-runtime-library/reference/log-logf-log10-log10f.md)|math.h|  
+|[logf](../c-runtime-library/reference/log-logf-log10-log10f.md)|math.h|  
+|[logl](../c-runtime-library/reference/log-logf-log10-log10f.md)|math.h|  
+|[_lrotl](../c-runtime-library/reference/lrotl-lrotr.md)|stdlib.h|  
+|[_lrotr](../c-runtime-library/reference/lrotl-lrotr.md)|stdlib.h|  
+|[memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md)|string.h|  
+|[memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md)|string.h|  
+|[memset](../c-runtime-library/reference/memset-wmemset.md)|string.h|  
+|[pow](../c-runtime-library/reference/pow-powf-powl.md)|math.h|  
+|[powf](../c-runtime-library/reference/pow-powf-powl.md)|math.h|  
+|[powl](../c-runtime-library/reference/pow-powf-powl.md)|math.h|  
+|[_rotl](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)|stdlib.h|  
+|[_rotl64](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)|stdlib.h|  
+|[_rotr](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)|stdlib.h|  
+|[_rotr64](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)|stdlib.h|  
+|[sin](../c-runtime-library/reference/pow-powf-powl.md)|math.h|  
+|[sinf](../c-runtime-library/reference/pow-powf-powl.md)|math.h|  
+|[sinh](../c-runtime-library/reference/pow-powf-powl.md)|math.h|  
+|[sinhf](../c-runtime-library/reference/pow-powf-powl.md)|math.h|  
+|[sinhl](../c-runtime-library/reference/pow-powf-powl.md)|math.h|  
+|[sinl](../c-runtime-library/reference/pow-powf-powl.md)|math.h|  
+|[sqrt](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|math.h|  
+|[sqrtf](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|math.h|  
+|[sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|math.h|  
+|[strcat](../c-runtime-library/reference/strcat-wcscat-mbscat.md)|string.h|  
+|[strcmp](../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md)|string.h|  
+|[strcpy](../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)|string.h|  
+|[strlen](../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)|string.h|  
+|[_strset](../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)|string.h|  
+|[strset](../c-runtime-library/reference/strset-wcsset.md)|string.h|  
+|[tan](../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)|math.h|  
+|[tanf](../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)|math.h|  
+|[tanh](../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)|math.h|  
+|[tanhf](../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)|math.h|  
+|[tanhl](../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)|math.h|  
+|[tanl](../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)|math.h|  
+|[wcscat](../c-runtime-library/reference/strcat-wcscat-mbscat.md)|string.h|  
+|[wcscmp](../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md)|string.h|  
+|[wcscpy](../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)|string.h|  
+|[wcslen](../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)|string.h|  
+|[_wcsset](../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)|string.h|  
   
 ## See Also  
  [ARM Intrinsics](../intrinsics/arm-intrinsics.md)   
  [x86 Intrinsics List](../intrinsics/x86-intrinsics-list.md)   
- [x64 (amd64) Intrinsics List](../intrinsics/x64--amd64--intrinsics-list.md)
+ [x64 (amd64) Intrinsics List](../intrinsics/x64-amd64-intrinsics-list.md)

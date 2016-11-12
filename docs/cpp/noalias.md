@@ -1,13 +1,13 @@
 ---
-title: "noalias"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "noalias | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "noalias"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "__declspec keyword [C++], noalias"
 ms.assetid: efafa8b0-7f39-4edc-a81e-d287ae882c9b
 caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -41,7 +42,7 @@ translation.priority.ht:
   
  `noalias` means that a function call does not modify or reference visible global state and only modifies the memory pointed to `directly` by pointer parameters (first-level indirections).  
   
- If a function is annotated as `noalias`, the optimizer can assume that, in addition to the parameters themselves, only first-level indirections of pointer parameters are referenced or modified inside the function. The visible global state is the set of all data that is not defined or referenced outside of the compilation scope, and their address is not taken. The compilation scope is all source files ([/LTCG (Link-time Code Generation)](../buildref/-ltcg--link-time-code-generation-.md) builds) or a single source file (non-**/LTCG** build).  
+ If a function is annotated as `noalias`, the optimizer can assume that, in addition to the parameters themselves, only first-level indirections of pointer parameters are referenced or modified inside the function. The visible global state is the set of all data that is not defined or referenced outside of the compilation scope, and their address is not taken. The compilation scope is all source files ([/LTCG (Link-time Code Generation)](../build/reference/ltcg-link-time-code-generation.md) builds) or a single source file (non-**/LTCG** build).  
   
 ## Example  
  The following sample demonstrates using `__declspec(restrict)` and `__declspec(noalias)`. Normally, memory returned from `malloc` is `restrict` and `noalias` because the CRT headers are decorated appropriately.  
@@ -117,5 +118,5 @@ int main()
 ```  
   
 ## See Also  
- [__declspec](../cpp/__declspec.md)   
- [Keywords](../cpp/keywords--c---.md)
+ [__declspec](../cpp/declspec.md)   
+ [Keywords](../cpp/keywords-cpp.md)

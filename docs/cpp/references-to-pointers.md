@@ -1,20 +1,21 @@
 ---
-title: "References to Pointers"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "References to Pointers | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "references, to pointers"
 ms.assetid: 4ce48b08-1511-4d2f-a31f-95f99eac0c70
-caps.latest.revision: 12
+caps.latest.revision: 14
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -168,10 +169,15 @@ int Add2( BTree*& Root, char *szToAdd ) {
 }  
 ```  
   
- **Usage: Refptr [1 &#124; 2]**  
-**where:**  
-**1 uses double indirection**  
-**2 uses a reference to a pointer.**  
-**Input is from stdin.**   
+```Output  
+Usage: Refptr [1 | 2]  
+  
+where:  
+1 uses double indirection  
+2 uses a reference to a pointer.  
+  
+Input is from stdin.  
+```  
+  
 ## See Also  
- [References](../cpp/references--c---.md)
+ [References](../cpp/references-cpp.md)

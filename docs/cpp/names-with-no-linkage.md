@@ -1,13 +1,13 @@
 ---
-title: "Names with No Linkage"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Names with No Linkage | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "function parameters [C++]"
 ms.assetid: 7174c500-12d2-4572-8c16-63c27c758fb1
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -123,4 +124,4 @@ void GoodFuncDef( char ch )  // Define GoodFuncDef
 ```  
   
 ## See Also  
- [Program and Linkage](../cpp/program-and-linkage---c---.md)
+ [Program and Linkage](../cpp/program-and-linkage-cpp.md)

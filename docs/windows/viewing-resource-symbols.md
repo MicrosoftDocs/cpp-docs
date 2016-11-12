@@ -1,13 +1,13 @@
 ---
-title: "Viewing Resource Symbols"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Viewing Resource Symbols | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.editors.symbol.managing"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "symbols, viewing"
 ms.assetid: 4bcc06d9-7d36-486a-8a37-71da0541643c
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -42,7 +43,7 @@ translation.priority.ht:
 1.  In [Resource View](../windows/resource-view-window.md), right-click your .rc file.  
   
     > [!NOTE]
-    >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to--create-a-resource-script-file.md).  
+    >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
 2.  Select **Resource Symbols** from the shortcut menu to view a resource symbol table in the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md).  
   
@@ -56,4 +57,4 @@ translation.priority.ht:
  Win32  
   
 ## See Also  
- [Symbols: Resource Identifiers](../mfc/symbols--resource-identifiers.md)
+ [Symbols: Resource Identifiers](../mfc/symbols-resource-identifiers.md)

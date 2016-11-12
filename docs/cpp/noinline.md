@@ -1,13 +1,13 @@
 ---
-title: "noinline"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "noinline | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "noinline"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "__declspec keyword [C++], noinline"
 ms.assetid: f259d55b-dec7-4bde-8cf9-14521e4fdc42
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -55,6 +56,6 @@ class X {
 ## END Microsoft Specific  
   
 ## See Also  
- [__declspec](../cpp/__declspec.md)   
- [Keywords](../cpp/keywords--c---.md)   
- [inline, __inline, \__forceinline](../notintoc/inline--__inline--__forceinline.md)
+ [__declspec](../cpp/declspec.md)   
+ [Keywords](../cpp/keywords-cpp.md)   
+ [inline, __inline, \__forceinline](../misc/inline-inline-forceinline.md)

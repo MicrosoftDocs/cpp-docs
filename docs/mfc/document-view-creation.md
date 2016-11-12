@@ -1,13 +1,13 @@
 ---
-title: "Document-View Creation"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Document-View Creation | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -22,7 +22,8 @@ helpviewer_keywords:
   - "MFC, documents"
   - "tables [C++], objects each MFC object creates"
 ms.assetid: bda14f41-ed50-439d-af9e-591174e7dd64
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -56,4 +57,5 @@ The framework supplies implementations of the `New` and **Open** commands (among
  [Document Templates and the Document/View Creation Process](../mfc/document-templates-and-the-document-view-creation-process.md)   
  [Document Template Creation](../mfc/document-template-creation.md)   
  [Relationships Among MFC Objects](../mfc/relationships-among-mfc-objects.md)   
- [Creating New Documents, Windows, and Views](../mfc/creating-new-documents--windows--and-views.md)
+ [Creating New Documents, Windows, and Views](../mfc/creating-new-documents-windows-and-views.md)
+

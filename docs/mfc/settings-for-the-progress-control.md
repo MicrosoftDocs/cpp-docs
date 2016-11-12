@@ -1,13 +1,13 @@
 ---
-title: "Settings for the Progress Control"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Settings for the Progress Control | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "CProgressCtrl class, settings"
   - "progress controls [C++], settings"
 ms.assetid: f4616e91-74fa-4000-ba0d-d3ddc0ee075b
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -34,14 +35,15 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Settings for the Progress Control
-The basic settings for the progress control ([CProgressCtrl](../mfcref/cprogressctrl-class.md)) are the range and current position. The range represents the entire duration of the operation. The current position represents the progress that your application has made toward completing the operation. Any changes to the range or position cause the progress control to redraw itself.  
+The basic settings for the progress control ([CProgressCtrl](../mfc/reference/cprogressctrl-class.md)) are the range and current position. The range represents the entire duration of the operation. The current position represents the progress that your application has made toward completing the operation. Any changes to the range or position cause the progress control to redraw itself.  
   
- By default, the range is set to 0 – 100, and the initial position is set to 0. To retrieve the current range settings for the progress control, use the [GetRange](../Topic/CProgressCtrl::GetRange.md) member function. To change the range, use the [SetRange](../Topic/CProgressCtrl::SetRange.md) member function.  
+ By default, the range is set to 0 – 100, and the initial position is set to 0. To retrieve the current range settings for the progress control, use the [GetRange](../mfc/reference/cprogressctrl-class.md#getrange) member function. To change the range, use the [SetRange](../mfc/reference/cprogressctrl-class.md#setrange) member function.  
   
- To set the position, use [SetPos](../Topic/CProgressCtrl::SetPos.md). To retrieve the current position without specifying a new value, use [GetPos](../Topic/CProgressCtrl::GetPos.md). For example, you might want to simply query on the status of the current operation.  
+ To set the position, use [SetPos](../mfc/reference/cprogressctrl-class.md#setpos). To retrieve the current position without specifying a new value, use [GetPos](../mfc/reference/cprogressctrl-class.md#getpos). For example, you might want to simply query on the status of the current operation.  
   
- To step the current position of the progress control, use [StepIt](../Topic/CProgressCtrl::StepIt.md). To set the amount of each step, use [SetStep](../Topic/CProgressCtrl::SetStep.md)  
+ To step the current position of the progress control, use [StepIt](../mfc/reference/cprogressctrl-class.md#stepit). To set the amount of each step, use [SetStep](../mfc/reference/cprogressctrl-class.md#setstep)  
   
 ## See Also  
  [Using CProgressCtrl](../mfc/using-cprogressctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

@@ -1,13 +1,13 @@
 ---
-title: "Specifying Property Pages"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Specifying Property Pages | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ISpecifyPropertyPages"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "ISpecifyPropertyPages method"
   - "property pages, specifying"
 ms.assetid: ee8678cf-c708-49ab-b0ad-fc2db31f1ac3
-caps.latest.revision: 10
+caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -40,22 +41,23 @@ When you create an ActiveX control, you will often want to associate it with pro
   
  To implement **ISpecifyPropertyPages** using ATL, take the following steps:  
   
-1.  Derive your class from [ISpecifyPropertyPagesImpl](../atl/ispecifypropertypagesimpl-class.md).  
+1.  Derive your class from [ISpecifyPropertyPagesImpl](../atl/reference/ispecifypropertypagesimpl-class.md).  
   
 2.  Add an entry for **ISpecifyPropertyPages** to your class's COM map.  
   
 3.  Add a [PROP_PAGE](../Topic/PROP_PAGE.md) entry to the property map for each page associated with your control.  
   
 > [!NOTE]
->  When generating a standard control using the [ATL Control Wizard](../atl/atl-control-wizard.md), you will only have to add the `PROP_PAGE` entries to the property map. The wizard generates the necessary code for the other steps.  
+>  When generating a standard control using the [ATL Control Wizard](../atl/reference/atl-control-wizard.md), you will only have to add the `PROP_PAGE` entries to the property map. The wizard generates the necessary code for the other steps.  
   
  Well-behaved containers will display the specified property pages in the same order as the `PROP_PAGE` entries in the property map. Generally, you should put standard property page entries after the entries for your custom pages in the property map, so that users see the pages specific to your control first.  
   
 ## Example  
  The following class for a calendar control uses the **ISpecifyPropertyPages** interface to tell containers that its properties can be set using a custom date page and the stock color page.  
   
- [!code[NVC_ATL_Windowing#72](../atl/codesnippet/CPP/specifying-property-pages_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#72](../atl/codesnippet/CPP/specifying-property-pages_1.h)]  
   
 ## See Also  
  [Property Pages](../atl/atl-com-property-pages.md)   
- [ATLPages Sample](../top/visual-c---samples.md)
+ [ATLPages Sample](../top/visual-cpp-samples.md)
+

@@ -1,13 +1,13 @@
 ---
-title: "Docking and Floating Toolbars"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Docking and Floating Toolbars | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "CBRS_SIZE_DYNAMIC"
@@ -31,7 +31,8 @@ helpviewer_keywords:
   - "toolbars [C++], wrapping"
   - "floating palettes"
 ms.assetid: b7f9f9d4-f629-47d2-a3c4-2b33fa6b51e4
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -70,23 +71,23 @@ The Microsoft Foundation Class Library supports dockable toolbars. A dockable to
   
 -   [Setting wrap positions for a fixed-style toolbar](#_core_setting_wrap_positions_for_a_fixed.2d.style_toolbar)  
   
- See the MFC General sample [DOCKTOOL](../top/visual-c---samples.md) for examples.  
+ See the MFC General sample [DOCKTOOL](../top/visual-cpp-samples.md) for examples.  
   
 ##  <a name="_core_enabling_docking_in_a_frame_window"></a> Enabling Docking in a Frame Window  
- To dock toolbars to a frame window, the frame window (or destination) must be enabled to allow docking. This is done using the [CFrameWnd::EnableDocking](../Topic/CFrameWnd::EnableDocking.md) function, which takes one `DWORD` parameter that is a set of style bits indicating which side of the frame window accepts docking. If a toolbar is about to be docked and there are multiple sides that it could be docked to, the sides indicated in the parameter passed to `EnableDocking` are used in the following order: top, bottom, left, right. If you want to be able to dock control bars anywhere, pass `CBRS_ALIGN_ANY` to `EnableDocking`.  
+ To dock toolbars to a frame window, the frame window (or destination) must be enabled to allow docking. This is done using the [CFrameWnd::EnableDocking](../mfc/reference/cframewnd-class.md#cframewnd__enabledocking) function, which takes one `DWORD` parameter that is a set of style bits indicating which side of the frame window accepts docking. If a toolbar is about to be docked and there are multiple sides that it could be docked to, the sides indicated in the parameter passed to `EnableDocking` are used in the following order: top, bottom, left, right. If you want to be able to dock control bars anywhere, pass `CBRS_ALIGN_ANY` to `EnableDocking`.  
   
 ##  <a name="_core_enabling_docking_for_a_toolbar"></a> Enabling Docking for a Toolbar  
- After you have prepared the destination for docking, you must prepare the toolbar (or source) in a similar fashion. Call [CControlBar::EnableDocking](../Topic/CControlBar::EnableDocking.md) for each toolbar you want to dock, specifying the destination sides to which the toolbar should dock. If none of the sides specified in the call to `CControlBar::EnableDocking` match the sides enabled for docking in the frame window, the toolbar cannot dock — it will float. Once it has been floated, it remains a floating toolbar, unable to dock to the frame window.  
+ After you have prepared the destination for docking, you must prepare the toolbar (or source) in a similar fashion. Call [CControlBar::EnableDocking](../mfc/reference/ccontrolbar-class.md#ccontrolbar__enabledocking) for each toolbar you want to dock, specifying the destination sides to which the toolbar should dock. If none of the sides specified in the call to `CControlBar::EnableDocking` match the sides enabled for docking in the frame window, the toolbar cannot dock — it will float. Once it has been floated, it remains a floating toolbar, unable to dock to the frame window.  
   
- If the effect you want is a permanently floating toolbar, call `EnableDocking` with a parameter of 0. Then call [CFrameWnd::FloatControlBar](../Topic/CFrameWnd::FloatControlBar.md). The toolbar remains floating, permanently unable to dock anywhere.  
+ If the effect you want is a permanently floating toolbar, call `EnableDocking` with a parameter of 0. Then call [CFrameWnd::FloatControlBar](../mfc/reference/cframewnd-class.md#cframewnd__floatcontrolbar). The toolbar remains floating, permanently unable to dock anywhere.  
   
 ##  <a name="_core_docking_the_toolbar"></a> Docking the Toolbar  
- The framework calls [CFrameWnd::DockControlBar](../Topic/CFrameWnd::DockControlBar.md) when the user attempts to drop the toolbar on a side of the frame window that allows docking.  
+ The framework calls [CFrameWnd::DockControlBar](../mfc/reference/cframewnd-class.md#cframewnd__dockcontrolbar) when the user attempts to drop the toolbar on a side of the frame window that allows docking.  
   
  In addition, you can call this function at any time to dock control bars to the frame window. This is normally done during initialization. More than one toolbar can be docked to a particular side of the frame window.  
   
 ##  <a name="_core_floating_the_toolbar"></a> Floating the Toolbar  
- Detaching a dockable toolbar from the frame window is called floating the toolbar. Call [CFrameWnd::FloatControlBar](../Topic/CFrameWnd::FloatControlBar.md) to do this. Specify the toolbar to be floated, the point where it should be placed, and an alignment style that determines whether the floating toolbar is horizontal or vertical.  
+ Detaching a dockable toolbar from the frame window is called floating the toolbar. Call [CFrameWnd::FloatControlBar](../mfc/reference/cframewnd-class.md#cframewnd__floatcontrolbar) to do this. Specify the toolbar to be floated, the point where it should be placed, and an alignment style that determines whether the floating toolbar is horizontal or vertical.  
   
  The framework calls this function when a user drags a toolbar off its docked location and drops it in a location where docking is not enabled. This can be anywhere inside or outside the frame window. As with `DockControlBar`, you can also call this function during initialization.  
   
@@ -101,7 +102,7 @@ The Microsoft Foundation Class Library supports dockable toolbars. A dockable to
   
 -   Specify fixed sizing as a toolbar characteristic.  
   
- To provide this support, there are two new toolbar styles for use in your calls to the [CToolBar::Create](../Topic/CToolBar::Create.md) member function. They are:  
+ To provide this support, there are two new toolbar styles for use in your calls to the [CToolBar::Create](../mfc/reference/ctoolbar-class.md#ctoolbar__create) member function. They are:  
   
 -   **CBRS_SIZE_DYNAMIC** Control bar is dynamic.  
   
@@ -111,16 +112,16 @@ The Microsoft Foundation Class Library supports dockable toolbars. A dockable to
   
  The size fixed style preserves the wrap states of a toolbar, fixing the position of the buttons in each column. Your application's user can't change the shape of the toolbar. The toolbar wraps at designated places, such as the locations of separators between the buttons. It maintains this shape whether the toolbar is docked or floating. The effect is a fixed palette with multiple columns of buttons.  
   
- You can also use [CToolBar::GetButtonStyle](../Topic/CToolBar::GetButtonStyle.md) to return a state and style for buttons on your toolbars. A button's style determines how the button appears and how it responds to user input; the state tells whether the button is in a wrapped state.  
+ You can also use [CToolBar::GetButtonStyle](../mfc/reference/ctoolbar-class.md#ctoolbar__getbuttonstyle) to return a state and style for buttons on your toolbars. A button's style determines how the button appears and how it responds to user input; the state tells whether the button is in a wrapped state.  
   
 ##  <a name="_core_setting_wrap_positions_for_a_fixed.2d.style_toolbar"></a> Setting Wrap Positions for a Fixed-Style Toolbar  
  For a toolbar with the size fixed style, designate toolbar button indexes at which the toolbar will wrap. The following code shows how to do this in your main frame window's `OnCreate` override:  
   
- [!code[NVC_MFCDocViewSDI#10](../mfc/codesnippet/CPP/docking-and-floating-toolbars_1.cpp)]  
+ [!code-cpp[NVC_MFCDocViewSDI#10](../mfc/codesnippet/CPP/docking-and-floating-toolbars_1.cpp)]  
   
- The MFC General sample [DOCKTOOL](../top/visual-c---samples.md) shows how to use member functions of classes [CControlBar](../mfcref/ccontrolbar-class.md) and [CToolBar](../mfcref/ctoolbar-class.md) to manage dynamic layout of a toolbar. See the file EDITBAR.CPP in DOCKTOOL.  
+ The MFC General sample [DOCKTOOL](../top/visual-cpp-samples.md) shows how to use member functions of classes [CControlBar](../mfc/reference/ccontrolbar-class.md) and [CToolBar](../mfc/reference/ctoolbar-class.md) to manage dynamic layout of a toolbar. See the file EDITBAR.CPP in DOCKTOOL.  
   
-### What do you want to know more about?  
+### What do you want to know more about  
   
 -   [Toolbar fundamentals](../mfc/toolbar-fundamentals.md)  
   
@@ -130,3 +131,4 @@ The Microsoft Foundation Class Library supports dockable toolbars. A dockable to
   
 ## See Also  
  [MFC Toolbar Implementation](../mfc/mfc-toolbar-implementation.md)
+

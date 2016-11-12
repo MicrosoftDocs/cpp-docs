@@ -1,13 +1,13 @@
 ---
-title: "Orchestrating Other Window Actions"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Orchestrating Other Window Actions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "frame windows, semimodal states"
   - "context-sensitive Help"
 ms.assetid: 5f34eea8-2bf8-4479-95c7-45e8f443db8f
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -42,3 +43,4 @@ The frame window orchestrates semimodal states such as context-sensitive help an
   
 ## See Also  
  [Using Frame Windows](../mfc/using-frame-windows.md)
+

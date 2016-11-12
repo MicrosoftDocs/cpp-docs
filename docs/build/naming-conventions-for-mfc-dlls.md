@@ -1,13 +1,13 @@
 ---
-title: "Naming Conventions for MFC DLLs"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Naming Conventions for MFC DLLs | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -21,6 +21,7 @@ helpviewer_keywords:
   - "DLLs [C++], library names"
 ms.assetid: 0db9c3f3-87d3-40e8-8964-250f9d2a2209
 caps.latest.revision: 10
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -63,4 +64,4 @@ The DLLs and libraries included in MFC follow a structured naming convention. Th
 -   [The naming convention for libraries](../mfc/library-naming-conventions.md)  
   
 ## See Also  
- [DLLs in Visual C++](../build/dlls-in-visual-c--.md)
+ [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

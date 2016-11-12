@@ -1,13 +1,13 @@
 ---
-title: "Attribute Contexts"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Attribute Contexts | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "attributes [C++], contexts"
 ms.assetid: 3086351f-77a8-4048-99e9-3b6b041b9437
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -50,4 +51,4 @@ C++ attributes can be described using four basic fields: the target they can be 
  This field lists other attributes that are incompatible with the specified attribute. It is uncommon for an attribute to have any entries for this field.  
   
 ## See Also  
- [C++ Attributes Reference](../windows/c---attributes-reference.md)
+ [C++ Attributes Reference](../windows/cpp-attributes-reference.md)

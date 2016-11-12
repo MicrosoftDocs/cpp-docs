@@ -1,13 +1,13 @@
 ---
-title: "ATL Encoding Reference"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "ATL Encoding Reference | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "encoding"
   - "encoding, functions"
 ms.assetid: 82d4fdf3-3c4a-4fe2-b297-8ffb4714406f
-caps.latest.revision: 6
+caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -71,5 +72,6 @@ Encoding in a range of common Internet standards such as uuencode, hexadecimal, 
 |[ATLSMTP_UUENCODE Flags](../Topic/ATLSMTP_UUENCODE%20Flags.md)|These flags describe how uuencoding is to be performed by [UUEncode](../Topic/UUEncode.md).|  
   
 ## See Also  
- [Concepts](../atl/active-template-library--atl--concepts.md)   
+ [Concepts](../atl/active-template-library-atl-concepts.md)   
  [ATL COM Desktop Components](../atl/atl-com-desktop-components.md)
+

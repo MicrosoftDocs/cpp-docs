@@ -1,13 +1,13 @@
 ---
-title: "How WinInet Makes It Easier to Create Internet Client Applications"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "How WinInet Makes It Easier to Create Internet Client Applications | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "WinInet classes, vs. WinSock"
   - "WinInet classes, Internet client applications"
 ms.assetid: dc0f9f47-3184-4e7a-8074-2c63e0359885
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -66,5 +67,6 @@ The Win32 Internet Extensions, or WinInet, provide access to common Internet pro
  Many operations that can be performed by your computer as a client to other computers on the Internet can take a long time. The speed of these operations is usually limited by the speed of your network connection, but they can also be affected by other network traffic and the complexity of the operation. Connecting to a remote FTP server, for example, requires that your computer first look up the name of that server to find its address. Your application will then attempt to connect to the server at that address. Once the connection is opened, your computer and the remote server will initiate a conversation with the file transfer protocol before you can actually use the connection to retrieve files.  
   
 ## See Also  
- [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions--wininet-.md)   
+ [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)   
  [How MFC Makes It Easier to Create Internet Client Applications](../mfc/how-mfc-makes-it-easier-to-create-internet-client-applications.md)
+

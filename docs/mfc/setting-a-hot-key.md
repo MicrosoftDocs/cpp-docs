@@ -1,13 +1,13 @@
 ---
-title: "Setting a Hot Key"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Setting a Hot Key | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "access keys [C++], hot keys"
   - "CHotKeyCtrl class, setting hot key"
 ms.assetid: 6f3bc141-e346-4dce-9ca7-3e6b2c453f3f
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Setting a Hot Key
-Your application can use the information provided by a hot key ([CHotKeyCtrl](../mfcref/chotkeyctrl-class.md)) control in one of two ways:  
+Your application can use the information provided by a hot key ([CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md)) control in one of two ways:  
   
 -   Set up a global hot key for activating a nonchild window by sending a [WM_SETHOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646284) message to the window to be activated.  
   
@@ -43,4 +44,5 @@ Your application can use the information provided by a hot key ([CHotKeyCtrl](..
   
 ## See Also  
  [Using CHotKeyCtrl](../mfc/using-chotkeyctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

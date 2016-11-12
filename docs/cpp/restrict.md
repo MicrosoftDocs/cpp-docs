@@ -1,13 +1,13 @@
 ---
-title: "restrict"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "restrict | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "restrict"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "restrict __declspec keyword"
 ms.assetid: f39cf632-68d8-4362-a497-2d4c15693689
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -52,15 +53,15 @@ __declspec(restrict) return_type f();
   
  The compiler does not check that the pointer is actually not aliased. It is the developer's responsibility to ensure the program does not alias a pointer marked with the `restrict __declspec` modifier.  
   
- For similar semantics on variables, see [__restrict](../cpp/__restrict.md).  
+ For similar semantics on variables, see [__restrict](../cpp/extension-restrict.md).  
   
 ## Example  
  See [noalias](../cpp/noalias.md) for an example using `restrict`.  
   
- For information about the restrict keyword that is part of C++ AMP, see [restrict (C++ AMP)](../cpp/restrict--c---amp-.md).  
+ For information about the restrict keyword that is part of C++ AMP, see [restrict (C++ AMP)](../cpp/restrict-cpp-amp.md).  
   
  **END Microsoft Specific**  
   
 ## See Also  
- [__declspec](../cpp/__declspec.md)   
- [Keywords](../cpp/keywords--c---.md)
+ [__declspec](../cpp/declspec.md)   
+ [Keywords](../cpp/keywords-cpp.md)

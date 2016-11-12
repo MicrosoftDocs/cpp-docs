@@ -1,13 +1,13 @@
 ---
-title: "Virtual Functions"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Virtual Functions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "virtual functions"
 ms.assetid: b3e1ed88-2a90-4af8-960a-16f47deb3452
 caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -39,7 +40,7 @@ A virtual function is a member function that you expect to be redefined in deriv
   
  Virtual functions ensure that the correct function is called for an object, regardless of the expression used to make the function call.  
   
- Suppose a base class contains a function declared as [virtual](../cpp/virtual--c---.md) and a derived class defines the same function. The function from the derived class is invoked for objects of the derived class, even if it is called using a pointer or reference to the base class. The following example shows a base class that provides an implementation of the `PrintBalance` function and two derived classes  
+ Suppose a base class contains a function declared as [virtual](../cpp/virtual-cpp.md) and a derived class defines the same function. The function from the derived class is invoked for objects of the derived class, even if it is called using a pointer or reference to the base class. The following example shows a base class that provides an implementation of the `PrintBalance` function and two derived classes  
   
 ```  
 // deriv_VirtualFunctions.cpp  
@@ -165,7 +166,7 @@ Invoked by Derived
   
  The **virtual** keyword can be used when declaring overriding functions in a derived class, but it is unnecessary; overrides of virtual functions are always virtual.  
   
- Virtual functions in a base class must be defined unless they are declared using the *pure-specifier*. (For more information about pure virtual functions, see [Abstract Classes](../cpp/abstract-classes--c---.md).)  
+ Virtual functions in a base class must be defined unless they are declared using the *pure-specifier*. (For more information about pure virtual functions, see [Abstract Classes](../cpp/abstract-classes-cpp.md).)  
   
  The virtual function-call mechanism can be suppressed by explicitly qualifying the function name using the scope-resolution operator (`::`). Consider the earlier example involving the `Account` class. To call `PrintBalance` in the base class, use code such as the following:  
   
@@ -182,4 +183,4 @@ pAccount->Account::PrintBalance();   //  Explicit qualification.
  Both calls to `PrintBalance` in the preceding example suppress the virtual function-call mechanism.  
   
 ## See Also  
- [Access to Virtual Functions](../notintoc/access-to-virtual-functions.md)
+ [Access to Virtual Functions](../misc/access-to-virtual-functions.md)

@@ -1,20 +1,21 @@
 ---
-title: "Event Handling and ATL"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Event Handling and ATL | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "event handling, about event handling"
 ms.assetid: e4812b0d-6fdd-4e8c-bdb8-378a25c7bde2
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -54,8 +55,9 @@ This section shows how to sink events using ATL. It covers the principles of COM
  Summarizes, using tables, the main ways for implementing an event interface and for advising and unadvising the event source using ATL.  
   
 ## Related Sections  
- [ATL](../atl/active-template-library--atl--concepts.md)  
+ [ATL](../atl/active-template-library-atl-concepts.md)  
  Provides links to conceptual topics on how to program using the Active Template Library.  
   
 ## See Also  
- [Concepts](../atl/active-template-library--atl--concepts.md)
+ [Concepts](../atl/active-template-library-atl-concepts.md)
+

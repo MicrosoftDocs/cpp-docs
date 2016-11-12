@@ -1,13 +1,13 @@
 ---
-title: "Working with a Tab Control"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Working with a Tab Control | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "tab controls, working with"
   - "tab controls, using"
 ms.assetid: 819488e3-4944-44b7-9483-195edb8e0aed
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Working with a Tab Control
-The easiest way to use a tab control ([CTabCtrl](../mfcref/ctabctrl-class.md)) is by adding it to a dialog template resource with the dialog editor. You can also use a tab control by itself. MFC calls **InitCommonControls** for you. The key tasks are as follows:  
+The easiest way to use a tab control ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) is by adding it to a dialog template resource with the dialog editor. You can also use a tab control by itself. MFC calls **InitCommonControls** for you. The key tasks are as follows:  
   
 -   [Creating the tab control](../mfc/creating-the-tab-control.md)  
   
@@ -47,4 +48,5 @@ The easiest way to use a tab control ([CTabCtrl](../mfcref/ctabctrl-class.md)) i
   
 ## See Also  
  [Using CTabCtrl](../mfc/using-ctabctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

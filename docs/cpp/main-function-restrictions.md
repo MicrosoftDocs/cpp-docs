@@ -1,13 +1,13 @@
 ---
-title: "main Function Restrictions"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "main Function Restrictions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "Main"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "main function, restrictions on using"
 ms.assetid: 7b3df731-344b-44a8-850c-11cbcbfbfa83
 caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,7 +38,7 @@ translation.priority.ht:
 # main Function Restrictions
 Several restrictions apply to the **main** function that do not apply to any other C++ functions. The **main** function:  
   
--   Cannot be overloaded (see [Overloading](../notintoc/overloading---c---.md)).  
+-   Cannot be overloaded (see [Overloading](../misc/overloading-cpp.md)).  
   
 -   Cannot be declared as **inline**.  
   
@@ -48,4 +49,4 @@ Several restrictions apply to the **main** function that do not apply to any oth
 -   Cannot be called.  
   
 ## See Also  
- [main: Program Startup](../cpp/main--program-startup.md)
+ [main: Program Startup](../cpp/main-program-startup.md)

@@ -1,13 +1,13 @@
 ---
-title: "Recommendations for Choosing a Collection Class"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Recommendations for Choosing a Collection Class | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -26,7 +26,8 @@ helpviewer_keywords:
   - "collection classes, duplicates allowed"
   - "collection classes, shapes"
 ms.assetid: a82188cd-443f-40d8-a244-edf292a53db4
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -70,7 +71,7 @@ This article contains detailed information designed to help you choose a collect
   
 ### Collection Shape Features  
   
-|Shape|Ordered?|Indexed?|Insert an element|Search for specified element|Duplicate elements?|  
+|Shape|Ordered|Indexed|Insert an element|Search for specified element|Duplicate elements|  
 |-----------|--------------|--------------|-----------------------|----------------------------------|-------------------------|  
 |List|Yes|No|Fast|Slow|Yes|  
 |Array|Yes|By int|Slow|Slow|Yes|  
@@ -115,5 +116,6 @@ This article contains detailed information designed to help you choose a collect
 ## See Also  
  [Collections](../mfc/collections.md)   
  [Template-Based Classes](../mfc/template-based-classes.md)   
- [How to: Make a Type-Safe Collection](../mfc/how-to--make-a-type-safe-collection.md)   
+ [How to: Make a Type-Safe Collection](../mfc/how-to-make-a-type-safe-collection.md)   
  [Accessing All Members of a Collection](../mfc/accessing-all-members-of-a-collection.md)
+

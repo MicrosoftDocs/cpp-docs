@@ -1,13 +1,13 @@
 ---
-title: "Template Files"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Template Files | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "files [C++], created by Custom Wizard"
   - "templates [C++], for wizards"
 ms.assetid: 48fae3d8-3a53-4f62-8010-144c5ffe334e
-caps.latest.revision: 6
+caps.latest.revision: 8
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -54,10 +55,13 @@ The name of this project is [!output PROJECT_NAME].root.cpp:
   
  If the user chooses Type B, the above template would be rendered as follows:  
   
- **This file has been created by My Custom wizard.**  
-**You selected:**  
-**Type B**  
-**The name of this project is MyApp8.**   
+```Output  
+This file has been created by My Custom wizard.  
+You selected:  
+Type B  
+The name of this project is MyApp8.  
+```  
+  
 ## Output  
   
 ```  
@@ -74,4 +78,4 @@ The name of this project is MyApp8.
  [Custom Wizard](../ide/custom-wizard.md)   
  [Creating a Custom Wizard](../ide/creating-a-custom-wizard.md)   
  [Designing a Wizard](../ide/designing-a-wizard.md)   
- [Templates.inf File](../ide/templates.inf-file.md)
+ [Templates.inf File](../ide/templates-inf-file.md)

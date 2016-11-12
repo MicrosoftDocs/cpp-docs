@@ -1,13 +1,13 @@
 ---
-title: "safebuffers"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "safebuffers | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "safebuffers"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "safebuffers __declspec keyword"
 ms.assetid: 0b0dce14-4523-44d2-8070-5dd0fdabc618
 caps.latest.revision: 13
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -48,7 +49,7 @@ __declspec( safebuffers )
 ```  
   
 ## Remarks  
- The **/GS** compiler option causes the compiler to test for buffer overruns by inserting security checks on the stack. The types of data structures that are eligible for security checks are described in [/GS (Buffer Security Check)](../buildref/-gs--buffer-security-check-.md). For more information about buffer overrun detection, see [Compiler Security Checks In Depth](http://go.microsoft.com/fwlink/?linkid=7260) on the MSDN Web site.  
+ The **/GS** compiler option causes the compiler to test for buffer overruns by inserting security checks on the stack. The types of data structures that are eligible for security checks are described in [/GS (Buffer Security Check)](../build/reference/gs-buffer-security-check.md). For more information about buffer overrun detection, see [Compiler Security Checks In Depth](http://go.microsoft.com/fwlink/?linkid=7260) on the MSDN Web site.  
   
  An expert manual code review or external analysis might determine that a function is safe from a buffer overrun. In that case, you can suppress security checks for a function by applying the __`declspec(safebuffers)` keyword to the function declaration.  
   
@@ -56,11 +57,11 @@ __declspec( safebuffers )
 >  Buffer security checks provide important security protection and have a negligible affect on performance. Therefore, we recommend that you do not suppress them, except in the rare case where the performance of a function is a critical concern and the function is known to be safe.  
   
 ## Inline Functions  
- A *primary function* can use an [inlining](../notintoc/inline--__inline--__forceinline.md) keyword to insert a copy of a *secondary function*. If the __`declspec(safebuffers)` keyword is applied to a function, buffer overrun detection is suppressed for that function. However, inlining affects the \_\_`declspec(safebuffers)` keyword in the following ways.  
+ A *primary function* can use an [inlining](../misc/inline-inline-forceinline.md) keyword to insert a copy of a *secondary function*. If the __`declspec(safebuffers)` keyword is applied to a function, buffer overrun detection is suppressed for that function. However, inlining affects the \_\_`declspec(safebuffers)` keyword in the following ways.  
   
  Suppose the **/GS** compiler option is specified for both functions, but the primary function specifies the __`declspec(safebuffers)` keyword. The data structures in the secondary function make it eligible for security checks, and the function does not suppress those checks. In this case:  
   
--   Specify the [__forceinline](../notintoc/inline--__inline--__forceinline.md) keyword on the secondary function to force the compiler to inline that function regardless of compiler optimizations.  
+-   Specify the [__forceinline](../misc/inline-inline-forceinline.md) keyword on the secondary function to force the compiler to inline that function regardless of compiler optimizations.  
   
 -   Because the secondary function is eligible for security checks, security checks are also applied to the primary function even though it specifies the __`declspec(safebuffers)` keyword.  
   
@@ -93,7 +94,7 @@ int wmain() {
  **END Microsoft Specific**  
   
 ## See Also  
- [__declspec](../cpp/__declspec.md)   
- [Keywords](../cpp/keywords--c---.md)   
- [inline, __inline, \__forceinline](../notintoc/inline--__inline--__forceinline.md)   
- [strict_gs_check](../c/strict_gs_check.md)
+ [__declspec](../cpp/declspec.md)   
+ [Keywords](../cpp/keywords-cpp.md)   
+ [inline, __inline, \__forceinline](../misc/inline-inline-forceinline.md)   
+ [strict_gs_check](../preprocessor/strict-gs-check.md)

@@ -1,13 +1,13 @@
 ---
-title: "Graphic Objects"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Graphic Objects | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "HRGN"
@@ -51,7 +51,8 @@ helpviewer_keywords:
   - "painting and device context"
   - "CPalette class, HPALETTE handle type"
 ms.assetid: 41963b25-34b7-4343-8446-34ba516b83ca
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -73,7 +74,7 @@ translation.priority.ht:
 Windows provides a variety of drawing tools to use in device contexts. It provides pens to draw lines, brushes to fill interiors, and fonts to draw text. MFC provides graphic-object classes equivalent to the drawing tools in Windows. The table below shows the available classes and the equivalent Windows graphics device interface (GDI) handle types.  
   
 > [!NOTE]
->  GDI+ is included with Windows XP and is available as a redistributable for Windows NT 4.0  SP6, Windows 2000, Windows 98, and Windows Me. To download the latest redistributable, see  [http://www.microsoft.com/msdownload/platformsdk/sdkupdate/psdkredist.htm](http://www.microsoft.com/msdownload/platformsdk/sdkupdate/psdkredist.htm). For more information, see the GDI+ SDK documentation in MSDN: [http://msdn.microsoft.com/library/default.asp?url=/library/gdicpp/GDIPlus/GDIPlus.asp](http://msdn.microsoft.com/library/default.asp?url=/library/gdicpp/GDIPlus/GDIPlus.asp).  
+>  GDI+ is included with Windows XP and is available as a redistributable for Windows NT 4.0  SP6, Windows 2000, Windows 98, and Windows Me. To download the latest redistributable, see  [http://www.microsoft.com/msdownload/platformsdk/sdkupdate/psdkredist.htm](http://www.microsoft.com/msdownload/platformsdk/sdkupdate/psdkredist.htm). For more information, see the GDI+ SDK documentation in MSDN: [http://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/GDIPlus/GDIPlus.asp](http://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/GDIPlus/GDIPlus.asp).  
   
  This article explains the use of these graphic-object classes:  
   
@@ -81,15 +82,15 @@ Windows provides a variety of drawing tools to use in device contexts. It provid
   
 |Class|Windows handle type|  
 |-----------|-------------------------|  
-|[CPen](../mfcref/cpen-class.md)|`HPEN`|  
-|[CBrush](../mfcref/cbrush-class.md)|`HBRUSH`|  
-|[CFont](../mfcref/cfont-class.md)|**HFONT**|  
-|[CBitmap](../mfcref/cbitmap-class.md)|`HBITMAP`|  
-|[CPalette](../mfcref/cpalette-class.md)|`HPALETTE`|  
-|[CRgn](../mfcref/crgn-class.md)|**HRGN**|  
+|[CPen](../mfc/reference/cpen-class.md)|`HPEN`|  
+|[CBrush](../mfc/reference/cbrush-class.md)|`HBRUSH`|  
+|[CFont](../mfc/reference/cfont-class.md)|**HFONT**|  
+|[CBitmap](../mfc/reference/cbitmap-class.md)|`HBITMAP`|  
+|[CPalette](../mfc/reference/cpalette-class.md)|`HPALETTE`|  
+|[CRgn](../mfc/reference/crgn-class.md)|**HRGN**|  
   
 > [!NOTE]
->  The class [CImage](../atl/cimage-class.md) provides enhanced bitmap support.  
+>  The class [CImage](../atl-mfc-shared/reference/cimage-class.md) provides enhanced bitmap support.  
   
  Each graphic-object class in the class library has a constructor that allows you to create graphic objects of that class, which you must then initialize with the appropriate create function, such as `CreatePen`.  
   
@@ -97,7 +98,7 @@ Windows provides a variety of drawing tools to use in device contexts. It provid
   
  The following code casts a `CPen` object to a Windows handle:  
   
- [!code[NVC_MFCDocViewSDI#5](../mfc/codesnippet/CPP/graphic-objects_1.cpp)]  
+ [!code-cpp[NVC_MFCDocViewSDI#5](../mfc/codesnippet/CPP/graphic-objects_1.cpp)]  
   
 #### To create a graphic object in a device context  
   
@@ -112,7 +113,7 @@ Windows provides a variety of drawing tools to use in device contexts. It provid
 > [!NOTE]
 >  If you will be using a graphic object repeatedly, you can allocate it once and select it into a device context each time it is needed. Be sure to delete such an object when you no longer need it.  
   
-### What do you want to know more about?  
+### What do you want to know more about  
   
 -   [One-stage and two-stage construction of graphic objects](../mfc/one-stage-and-two-stage-construction-of-objects.md)  
   
@@ -126,3 +127,4 @@ Windows provides a variety of drawing tools to use in device contexts. It provid
   
 ## See Also  
  [Window Objects](../mfc/window-objects.md)
+

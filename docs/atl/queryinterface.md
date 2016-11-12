@@ -1,13 +1,13 @@
 ---
-title: "QueryInterface"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "QueryInterface | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "QueryInterface"
@@ -18,7 +18,8 @@ helpviewer_keywords:
   - "interfaces, availability"
   - "QueryInterface method"
 ms.assetid: 62fce95e-aafa-4187-b50b-e6611b74c3b3
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -46,3 +47,4 @@ Although there are mechanisms by which an object can express the functionality i
 ## See Also  
  [Introduction to COM](../atl/introduction-to-com.md)   
  [QueryInterface: Navigating in an Object](http://msdn.microsoft.com/library/windows/desktop/ms687230)
+

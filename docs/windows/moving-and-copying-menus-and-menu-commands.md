@@ -1,13 +1,13 @@
 ---
-title: "Moving and Copying Menus and Menu Commands"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Moving and Copying Menus and Menu Commands | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "menu items, copying"
 ms.assetid: 1d8df535-9922-4579-a9c2-37aeac1856eb
 caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -55,7 +56,7 @@ You can move or copy menus and menu commands using the drag-and-drop method or b
   
 2.  From the shortcut menu, choose **Cut** (to move) or **Copy**.  
   
-3.  If you are moving the items to another menu resource or resource script file, [open it in another window](../Topic/Customizing%20window%20layouts%20in%20Visual%20Studio.md).  
+3.  If you are moving the items to another menu resource or resource script file, [open it in another window](/visual-studio/ide/customizing-window-layouts-in-visual-studio).  
   
 4.  Select the position of the menu or menu command you want to move or copy to.  
   

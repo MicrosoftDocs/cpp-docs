@@ -1,13 +1,13 @@
 ---
-title: "Aggregation"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Aggregation | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,7 +15,8 @@ helpviewer_keywords:
   - "aggregation [C++]"
   - "aggregate objects [C++]"
 ms.assetid: 7125bb8e-b269-4b50-9bba-295b467a54cc
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,3 +44,4 @@ There are times when an object's implementor would like to take advantage of the
 ## See Also  
  [Introduction to COM](../atl/introduction-to-com.md)   
  [Reusing Objects](http://msdn.microsoft.com/library/windows/desktop/ms678443)
+

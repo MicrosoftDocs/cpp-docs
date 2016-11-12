@@ -1,13 +1,13 @@
 ---
-title: "Using Your Old Toolbars"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Using Your Old Toolbars | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "COldToolBar"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "toolbars [C++], backward compatibility"
   - "COldToolBar class"
 ms.assetid: 3543257c-8547-43f0-a66a-ee641dc1cf89
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -36,13 +37,13 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Using Your Old Toolbars
-If you have used previous versions of Visual C++ to create customized toolbars, the new implementation of class [CToolBar](../mfcref/ctoolbar-class.md) could cause you problems. So that you don't have to give up your old toolbars to use the new functionality, the old implementation is still supported.  
+If you have used previous versions of Visual C++ to create customized toolbars, the new implementation of class [CToolBar](../mfc/reference/ctoolbar-class.md) could cause you problems. So that you don't have to give up your old toolbars to use the new functionality, the old implementation is still supported.  
   
  The DOCKTOOL sample does not use the old-style toolbars, only the new-style toolbars.  
   
  You can't edit old-style toolbars with the toolbar resource editor.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Toolbar fundamentals](../mfc/toolbar-fundamentals.md)  
   
@@ -54,3 +55,4 @@ If you have used previous versions of Visual C++ to create customized toolbars, 
   
 ## See Also  
  [MFC Toolbar Implementation](../mfc/mfc-toolbar-implementation.md)
+

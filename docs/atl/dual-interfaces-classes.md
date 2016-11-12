@@ -1,13 +1,13 @@
 ---
-title: "Dual Interfaces Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Dual Interfaces Classes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.atl.interfaces.dual"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "dual interfaces, classes"
   - "dual interfaces"
 ms.assetid: c2b1b165-ff39-4e4a-a683-91eca9158304
-caps.latest.revision: 10
+caps.latest.revision: 12
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,7 +39,8 @@ translation.priority.ht:
 # Dual Interfaces Classes
 The following class provides support for dual interfaces:  
   
--   [IDispatchImpl](../atl/idispatchimpl-class.md) Implements the `IDispatch` portion of a dual interface. For more information, see [Implementing the IDispatch Interface](assetId:///0e171f7f-0022-4e9b-ac8e-98192828e945).  
+-   [IDispatchImpl](../atl/reference/idispatchimpl-class.md) Implements the `IDispatch` portion of a dual interface. For more information, see [Implementing the IDispatch Interface](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945).  
   
 ## See Also  
  [Class Overview](../atl/atl-class-overview.md)
+

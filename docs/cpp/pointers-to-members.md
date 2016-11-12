@@ -1,13 +1,13 @@
 ---
-title: "Pointers to Members"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Pointers to Members | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
   - "C++"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "pointers, declarations"
 ms.assetid: f42ddb79-9721-4e39-95b1-c56b55591f68
 caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -56,7 +57,7 @@ Declarations of pointers to members are special cases of pointer declarations.  
   
     -   An optional Microsoft specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).  
   
-    -   The qualified name of the class containing the members to be pointed to.  See [Names and Qualified Names](../notintoc/names-and-qualified-names.md).  
+    -   The qualified name of the class containing the members to be pointed to.  See [Names and Qualified Names](../misc/names-and-qualified-names.md).  
   
     -   The :: operator.  
   
@@ -124,7 +125,7 @@ strcpy_s( pwChildWindow->*pwCaption, cUntitledLen, szUntitled );
 (pwChildWindow->*pwCaption)[cUntitledLen - 1] = '2'; //same as //pwChildWindow->szWinCaption[cUntitledLen - 1] = '2';  
 ```  
   
- The difference between the **.\*** and **–>\*** operators (the pointer-to-member operators) is that the **.\*** operator selects members given an object or object reference, while the **–>\*** operator selects members through a pointer. (For more about these operators, see [Expressions with Pointer-to-Member Operators](../cpp/pointer-to-member-operators--.--and----.md).)  
+ The difference between the **.\*** and **–>\*** operators (the pointer-to-member operators) is that the **.\*** operator selects members given an object or object reference, while the **–>\*** operator selects members through a pointer. (For more about these operators, see [Expressions with Pointer-to-Member Operators](../cpp/pointer-to-member-operators-dot-star-and-star.md).)  
   
  The result of the pointer-to-member operators is the type of the member — in this case, **char \***.  
   
@@ -199,4 +200,4 @@ Print function for class Derived
 ```  
   
 ## See Also  
- [C++ Abstract Declarators](assetId:///e7e18c18-0cad-4450-942b-d27e1d4dd088)
+ [C++ Abstract Declarators](http://msdn.microsoft.com/en-us/e7e18c18-0cad-4450-942b-d27e1d4dd088)

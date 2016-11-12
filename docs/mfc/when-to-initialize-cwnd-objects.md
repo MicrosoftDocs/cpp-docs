@@ -1,13 +1,13 @@
 ---
-title: "When to Initialize CWnd Objects"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "When to Initialize CWnd Objects | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "HWND, when attached to CWnd object"
   - "CWnd objects, when to initialize"
 ms.assetid: 4d31bcb1-73db-4f2f-b71c-89b087569a10
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,9 +39,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # When to Initialize CWnd Objects
-You cannot create your own child windows or call any Windows API functions in the constructor of a `CWnd`-derived object. This is because the `HWND` for the `CWnd` object has not been created yet. Most Windows-specific initialization, such as adding child windows, must be done in an [OnCreate](../Topic/CWnd::OnCreate.md) message handler.  
+You cannot create your own child windows or call any Windows API functions in the constructor of a `CWnd`-derived object. This is because the `HWND` for the `CWnd` object has not been created yet. Most Windows-specific initialization, such as adding child windows, must be done in an [OnCreate](../mfc/reference/cwnd-class.md#oncreate) message handler.  
   
-## What do you want to know more about?  
+## What do you want to know more about  
   
 -   [Creating document frame windows](../mfc/creating-document-frame-windows.md)  
   
@@ -48,3 +49,4 @@ You cannot create your own child windows or call any Windows API functions in th
   
 ## See Also  
  [Using Frame Windows](../mfc/using-frame-windows.md)
+

@@ -1,13 +1,13 @@
 ---
-title: "OLE in MFC"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "OLE in MFC | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "applications [OLE], about OLE"
   - "OLE component object model (COM)"
 ms.assetid: 5193479d-1239-4697-aea4-e82f92c707ab
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -60,19 +61,19 @@ These articles explain the fundamentals of OLE programming using MFC. MFC provid
  [OLE Background](../mfc/ole-background.md)  
  Discusses OLE and provides conceptual information about how it works.  
   
- [Activation](../mfc/activation--c---.md)  
+ [Activation](../mfc/activation-cpp.md)  
  Describes the role of activation in editing OLE items.  
   
  [Containers](../mfc/containers.md)  
  Provides links to using containers in OLE.  
   
- [Data Objects and Data Sources](../mfc/data-objects-and-data-sources--ole-.md)  
+ [Data Objects and Data Sources](../mfc/data-objects-and-data-sources-ole.md)  
  Provides links to topics discussing the use of the `COleDataObject` and `COleDataSource` classes.  
   
- [Drag and Drop](../mfc/drag-and-drop--ole-.md)  
+ [Drag and Drop](../mfc/drag-and-drop-ole.md)  
  Discusses using copying and pasting with OLE.  
   
- [OLE Menus and Resources](../mfc/menus-and-resources--ole-.md)  
+ [OLE Menus and Resources](../mfc/menus-and-resources-ole.md)  
  Explains the use of menus and resources in MFC OLE document applications.  
   
  [Registration](../mfc/registration.md)  
@@ -88,7 +89,7 @@ These articles explain the fundamentals of OLE programming using MFC. MFC provid
  [Connection Points](../mfc/connection-points.md)  
  Explains how to implement connection points (formerly known as OLE connection points) using the MFC classes `CCmdTarget` and `CConnectionPoint`.  
   
- [Container/Server COM Components](../mfc/containers--advanced-features.md)  
+ [Container/Server COM Components](../mfc/containers-advanced-features.md)  
  Describes the steps necessary to incorporate optional advanced features into existing container applications.  
   
  [The Component Object Model](http://msdn.microsoft.com/library/windows/desktop/ms694363)  
@@ -96,3 +97,4 @@ These articles explain the fundamentals of OLE programming using MFC. MFC provid
   
 ## See Also  
  [Concepts](../mfc/mfc-concepts.md)
+

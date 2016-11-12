@@ -1,13 +1,13 @@
 ---
-title: "Changing Unassigned Symbols"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Changing Unassigned Symbols | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.editors.symbol.changing.unassigned"
@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "unassigned symbols"
 ms.assetid: b6abee4a-3c24-4697-a166-fe6a86cad35f
 caps.latest.revision: 7
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -46,7 +47,7 @@ While in the [Resource Symbols dialog box](../windows/resource-symbols-dialog-bo
 2.  Edit the symbol's name or value in the boxes provided in the **Change Symbol** dialog box.  
   
     > [!NOTE]
-    >  To change a symbol that *is* assigned to a resource or object, you must use the resource editor or Properties window. For more information, see [Changing a Symbol or Symbol Name](../windows/changing-a-symbol-or-symbol-name--id-.md).  
+    >  To change a symbol that *is* assigned to a resource or object, you must use the resource editor or Properties window. For more information, see [Changing a Symbol or Symbol Name](../windows/changing-a-symbol-or-symbol-name-id.md).  
   
  For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.*  
   

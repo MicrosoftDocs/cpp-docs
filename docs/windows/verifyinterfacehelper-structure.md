@@ -1,13 +1,13 @@
 ---
-title: "VerifyInterfaceHelper Structure"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "VerifyInterfaceHelper Structure | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "implements/Microsoft::WRL::Details::VerifyInterfaceHelper"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "VerifyInterfaceHelper structure"
 ms.assetid: ea95b641-199a-4fdf-964b-186b40cb3ba7
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -68,7 +69,7 @@ struct VerifyInterfaceHelper<false, I>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[VerifyInterfaceHelper::Verify Method](../windows/verifyinterfacehelper--verify-method.md)||  
+|[VerifyInterfaceHelper::Verify Method](../windows/verifyinterfacehelper-verify-method.md)||  
   
 ## Inheritance Hierarchy  
  `VerifyInterfaceHelper`  
@@ -79,4 +80,4 @@ struct VerifyInterfaceHelper<false, I>;
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft--wrl--details-namespace.md)
+ [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

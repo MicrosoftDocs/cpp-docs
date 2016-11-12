@@ -1,13 +1,13 @@
 ---
-title: "SafeInt Class"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "SafeInt Class | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "SafeInt"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "SafeInt class"
 ms.assetid: 27a8f087-2511-46f9-8d76-2aeb66ca272f
 caps.latest.revision: 16
+author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 translation.priority.ht: 
@@ -64,7 +65,7 @@ class SafeInt;
   
 |Name|Description|  
 |----------|-----------------|  
-|[SafeInt::SafeInt](../windows/safeint--safeint.md)|Default constructor.|  
+|[SafeInt::SafeInt](../windows/safeint-safeint.md)|Default constructor.|  
   
 ### Assignment Operators  
   
@@ -237,6 +238,6 @@ Int x = flag ? (int) SafeInt<unsigned int>(y) : -1;
  **Namespace:** msl::utilities  
   
 ## See Also  
- [Miscellaneous Support Libraries Classes](assetId:///406fd46e-d53f-4096-ab40-36aa754c7a5c)   
+ [Miscellaneous Support Libraries Classes](http://msdn.microsoft.com/en-us/406fd46e-d53f-4096-ab40-36aa754c7a5c)   
  [SafeInt Library](../windows/safeint-library.md)   
  [SafeIntException Class](../windows/safeintexception-class.md)

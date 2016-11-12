@@ -1,13 +1,13 @@
 ---
-title: "RuntimeClass Class"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "RuntimeClass Class | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "implements/Microsoft::WRL::RuntimeClass"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "RuntimeClass class"
 ms.assetid: d52f9d1a-98e5-41f2-a143-8fb629dd0727
 caps.latest.revision: 5
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # RuntimeClass Class
-Represents an instantiated class that inherits the specified number of interfaces, and provides the specified [!INCLUDE[wrt](../atl/includes/wrt_md.md)], classic COM, and weak reference support.  
+Represents an instantiated class that inherits the specified number of interfaces, and provides the specified [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)], classic COM, and weak reference support.  
   
  You typically derive your WRL types from `RuntimeClass` because this class implements `AddRef`, `Release`, and `QueryInterface`, and helps manage the overall reference count of the module.  
   
@@ -111,8 +112,8 @@ class RuntimeClass<RuntimeClassFlags<classFlags>, I0, I1, I2, I3, I4, I5, I6, I7
   
 |Name|Description|  
 |----------|-----------------|  
-|[RuntimeClass::RuntimeClass Constructor](../windows/runtimeclass--runtimeclass-constructor.md)|Initializes the current instance of the RuntimeClass class.|  
-|[RuntimeClass::~RuntimeClass Destructor](../windows/runtimeclass--~runtimeclass-destructor.md)|Deinitializes the current instance of the RuntimeClass class.|  
+|[RuntimeClass::RuntimeClass Constructor](../windows/runtimeclass-runtimeclass-constructor.md)|Initializes the current instance of the RuntimeClass class.|  
+|[RuntimeClass::~RuntimeClass Destructor](../windows/runtimeclass-tilde-runtimeclass-destructor.md)|Deinitializes the current instance of the RuntimeClass class.|  
   
 ## Inheritance Hierarchy  
  `I0`  
@@ -141,4 +142,4 @@ class RuntimeClass<RuntimeClassFlags<classFlags>, I0, I1, I2, I3, I4, I5, I6, I7
  **Namespace:** Microsoft::WRL  
   
 ## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft--wrl-namespace.md)
+ [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

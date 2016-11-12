@@ -1,13 +1,13 @@
 ---
-title: "Persistence Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Persistence Classes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.atl.persistence"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "persistence classes"
   - "persistence, classes"
 ms.assetid: a6a2b6b2-52bc-471c-b78a-de58363128bb
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -38,15 +39,16 @@ translation.priority.ht:
 # Persistence Classes
 The following classes implement object persistence:  
   
--   [IPersistPropertyBagImpl](../atl/ipersistpropertybagimpl-class.md) Allows a client to load and save an object's properties to a property bag.  
+-   [IPersistPropertyBagImpl](../atl/reference/ipersistpropertybagimpl-class.md) Allows a client to load and save an object's properties to a property bag.  
   
--   [IPersistStreamInitImpl](../atl/ipersiststreaminitimpl-class.md) Allows a client to load and save an object's persistent data to a stream.  
+-   [IPersistStreamInitImpl](../atl/reference/ipersiststreaminitimpl-class.md) Allows a client to load and save an object's persistent data to a stream.  
   
--   [IPersistStorageImpl](../atl/ipersiststorageimpl-class.md) Allows a client to load and save an object's persistent data to a storage.  
+-   [IPersistStorageImpl](../atl/reference/ipersiststorageimpl-class.md) Allows a client to load and save an object's persistent data to a storage.  
   
 ## Related Articles  
- [ATL Tutorial](../atl/active-template-library--atl--tutorial.md)  
+ [ATL Tutorial](../atl/active-template-library-atl-tutorial.md)  
   
 ## See Also  
  [Class Overview](../atl/atl-class-overview.md)   
- [Property Map Macros](../atl/property-map-macros.md)
+ [Property Map Macros](../atl/reference/property-map-macros.md)
+

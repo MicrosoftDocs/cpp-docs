@@ -1,13 +1,13 @@
 ---
-title: "Add Event Wizard"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Add Event Wizard | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.codewiz.event.overview"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "Add Event Wizard [C++]"
 ms.assetid: bdd2a7bb-13d5-44d7-abc9-e785ba4e05ce
 caps.latest.revision: 6
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -72,4 +73,4 @@ This wizard adds an event to an MFC ActiveX control project. You can specify you
  Displays all parameters and their types currently added for the method. As you add parameters, the wizard updates **Parameter list** to display each parameter with its type.  
   
 ## See Also  
- [Adding an Event](../ide/adding-an-event--visual-c---.md)
+ [Adding an Event](../ide/adding-an-event-visual-cpp.md)

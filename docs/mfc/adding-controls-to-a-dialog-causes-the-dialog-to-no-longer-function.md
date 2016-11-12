@@ -1,13 +1,13 @@
 ---
-title: "Adding Controls to a Dialog Causes the Dialog to No Longer Function"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Adding Controls to a Dialog Causes the Dialog to No Longer Function | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -20,7 +20,8 @@ helpviewer_keywords:
   - "dialog box controls, troubleshooting"
   - "InitCommonControls"
 ms.assetid: b2dd4574-ea59-4343-8d65-b387cead5da6
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -73,7 +74,7 @@ After adding a common control or rich edit control to a dialog box, it will not 
  In order to use common controls on a dialog box, you need to call [InitCommonControlsEx](http://msdn.microsoft.com/library/windows/desktop/bb775697) or **AFXInitCommonControls** before you create the dialog box.  
   
 ## The fix for RichEdit controls  
- You must call **LoadLibrary** for rich edit controls. For more information, see [Using the RichEdit 1.0 Control with MFC](../mfc/using-the-richedit-1.0-control-with-mfc.md), [About Rich Edit Controls](http://msdn.microsoft.com/library/windows/desktop/bb787873) in the [!INCLUDE[winsdkshort](../atl/includes/winsdkshort_md.md)], and [Overview of the Rich Edit Control](../mfc/overview-of-the-rich-edit-control.md).  
+ You must call **LoadLibrary** for rich edit controls. For more information, see [Using the RichEdit 1.0 Control with MFC](../mfc/using-the-richedit-1-0-control-with-mfc.md), [About Rich Edit Controls](http://msdn.microsoft.com/library/windows/desktop/bb787873) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)], and [Overview of the Rich Edit Control](../mfc/overview-of-the-rich-edit-control.md).  
   
 ## Requirements  
  Win32  
@@ -81,3 +82,4 @@ After adding a common control or rich edit control to a dialog box, it will not 
 ## See Also  
  [Troubleshooting the Dialog Editor](../mfc/troubleshooting-the-dialog-editor.md)   
  [Dialog Editor](../mfc/dialog-editor.md)
+

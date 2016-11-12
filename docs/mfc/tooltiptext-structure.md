@@ -1,13 +1,13 @@
 ---
-title: "TOOLTIPTEXT Structure"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "TOOLTIPTEXT Structure | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "TOOLTIPTEXT"
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "TOOLTIPTEXT structure"
   - "tool tips [C++], notifications"
 ms.assetid: 547591bf-80f5-400e-a2a7-0708cfffbb5d
-caps.latest.revision: 11
+caps.latest.revision: 13
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -36,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # TOOLTIPTEXT Structure
-In writing your [tool tip notification handler](../mfc/handling-ttn_needtext-notification-for-tool-tips.md), you need to use the `TOOLTIPTEXT` structure. The members of the `TOOLTIPTEXT`structure are:  
+In writing your [tool tip notification handler](../mfc/handling-ttn-needtext-notification-for-tool-tips.md), you need to use the `TOOLTIPTEXT` structure. The members of the `TOOLTIPTEXT`structure are:  
   
  `typedef struct {`  
   
@@ -78,3 +79,4 @@ In writing your [tool tip notification handler](../mfc/handling-ttn_needtext-not
   
 ## See Also  
  [Tool Tips in Windows Not Derived from CFrameWnd](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
+

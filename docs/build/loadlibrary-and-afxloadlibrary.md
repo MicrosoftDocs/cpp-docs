@@ -1,13 +1,13 @@
 ---
-title: "LoadLibrary and AfxLoadLibrary"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "LoadLibrary and AfxLoadLibrary | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "LoadLibrary"
@@ -21,6 +21,7 @@ helpviewer_keywords:
   - "explicit linking [C++]"
 ms.assetid: b4535d19-6243-4146-a31a-a5cca4c7c9e3
 caps.latest.revision: 16
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -67,6 +68,6 @@ Processes call [LoadLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259187) (o
 -   [GetProcAddress](../build/getprocaddress.md)  
   
 ## See Also  
- [DLLs in Visual C++](../build/dlls-in-visual-c--.md)   
+ [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)   
  [LoadLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259187)   
  [AfxLoadLibrary](../Topic/AfxLoadLibrary.md)

@@ -1,13 +1,13 @@
 ---
-title: "Inserting a Form into a Project"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Inserting a Form into a Project | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "Insert New dialog box"
   - "forms, adding to projects"
 ms.assetid: f3bd2998-3ce2-496d-ac5c-57ca70eec7cb
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -43,11 +44,11 @@ Forms provide a convenient container for controls. You can easily insert an MFC-
   
 2.  From the shortcut menu, click **Add** and then click **Add Class**.  
   
-     If the **New Form** command is not available, your project may be based on the Active Template Library (ATL). To add a form to an ATL project, you must [specify certain settings](../atl/application-settings--atl-project-wizard.md) when first creating the project.  
+     If the **New Form** command is not available, your project may be based on the Active Template Library (ATL). To add a form to an ATL project, you must [specify certain settings](../atl/reference/application-settings-atl-project-wizard.md) when first creating the project.  
   
 3.  From the **MFC** folder, click **MFC Class**.  
   
-4.  Using the MFC Class Wizard, make the new class derive from [CFormView](../mfcref/cformview-class.md).  
+4.  Using the MFC Class Wizard, make the new class derive from [CFormView](../mfc/reference/cformview-class.md).  
   
  Visual C++ adds the form to your application, opening it inside the Dialog editor so that you can begin adding controls and working on its overall design.  
   
@@ -60,4 +61,5 @@ Forms provide a convenient container for controls. You can easily insert an MFC-
 3.  Create an `OnPrint` member function.  
   
 ## See Also  
- [Form Views](../mfc/form-views--mfc-.md)
+ [Form Views](../mfc/form-views-mfc.md)
+

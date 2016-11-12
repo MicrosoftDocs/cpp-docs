@@ -1,13 +1,13 @@
 ---
-title: "MFC Database Programming Symbols"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "MFC Database Programming Symbols | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "databases [C++], MFC programming model"
 ms.assetid: 3f676a2c-cf07-415e-a336-680abdc42a5e
 caps.latest.revision: 5
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -59,4 +60,4 @@ The symbols in this table only appear in an MFC project when database support ha
   
 ## See Also  
  [MFC Predefined Symbols](../windows/mfc-predefined-symbols.md)   
- [Symbols: Resource Identifiers](../mfc/symbols--resource-identifiers.md)
+ [Symbols: Resource Identifiers](../mfc/symbols-resource-identifiers.md)

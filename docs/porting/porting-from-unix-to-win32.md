@@ -1,13 +1,13 @@
 ---
-title: "Porting from UNIX to Win32"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Porting from UNIX to Win32 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -21,7 +21,8 @@ helpviewer_keywords:
   - "Win32 applications [C++], migrating from UNIX"
 ms.assetid: 3837e4fe-3f96-4f24-b2a1-7be94718a881
 caps.latest.revision: 15
-ms.author: "mithom"
+author: "mikeblome"
+ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
   - "cs-cz"
@@ -95,6 +96,6 @@ When migrating applications from UNIX to Windows, you have several options:
  Another option UNIX programmers look at is the Windows POSIX subsystem. However, it only supports POSIX 1003.1, which was the only POSIX version standardized when Windows NT was created. Since then, there has been little demand for extending this subsystem, because most applications have been converted to Win32. The 1003.1 system is of limited interest for fully featured applications, because it does not include many capabilities (such as those in 1003.2, network support, and so on). Full featured applications run under the Windows POSIX subsystem do not have access to Windows features available to Win32 applications, such as memory-mapped files, networking, and graphics. Applications such as VI, LS, and GREP are the main targets for the Windows POSIX subsystem.  
   
 ## See Also  
- [Porting Programs](assetId:///c36c44b3-5a9b-4bb4-9b7a-469aa770ed00)   
- [UNIX](../crt/unix.md)   
+ [Porting Programs](http://msdn.microsoft.com/en-us/c36c44b3-5a9b-4bb4-9b7a-469aa770ed00)   
+ [UNIX](../c-runtime-library/unix.md)   
  [Inference Rules](../build/inference-rules.md)

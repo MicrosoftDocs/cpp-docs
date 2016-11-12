@@ -1,13 +1,13 @@
 ---
-title: "Customizing the Header Item&#39;s Appearance"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "Customizing the Header Item&#39;s Appearance | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "CHeaderCtrl class, customizing the items"
   - "HDS_ styles"
 ms.assetid: b1e1e326-ec7d-4dbd-a46f-96a3e2055618
-caps.latest.revision: 9
+caps.latest.revision: 11
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -35,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Customizing the Header Item&#39;s Appearance
-By setting the *dwStyle* parameter when you first create a header control ([CHeaderCtrl::Create](../Topic/CHeaderCtrl::Create.md)), you can define the appearance and behavior of header items or of the header control itself.  
+By setting the *dwStyle* parameter when you first create a header control ([CHeaderCtrl::Create](../mfc/reference/cheaderctrl-class.md#cheaderctrl__create)), you can define the appearance and behavior of header items or of the header control itself.  
   
  Here is a sampling of the styles you can set, and their purpose:  
   
@@ -55,4 +56,5 @@ By setting the *dwStyle* parameter when you first create a header control ([CHea
   
 ## See Also  
  [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)   
- [Controls](../mfc/controls--mfc-.md)
+ [Controls](../mfc/controls-mfc.md)
+

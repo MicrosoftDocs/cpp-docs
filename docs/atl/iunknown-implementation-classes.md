@@ -1,13 +1,13 @@
 ---
-title: "IUnknown Implementation Classes"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "IUnknown Implementation Classes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vc.atl.Iunknown"
@@ -16,7 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IUnknown implementation classes"
 ms.assetid: 47b69bb5-69d8-4a9c-84a8-329bdde2bb3f
-caps.latest.revision: 8
+caps.latest.revision: 10
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -37,33 +38,34 @@ translation.priority.ht:
 # IUnknown Implementation Classes
 The following classes implement **IUnknown** and related methods:  
   
--   [CComObjectRootEx](../atl/ccomobjectrootex-class.md) Manages reference counting for both aggregated and nonaggregated objects. Allows you to specify a threading model.  
+-   [CComObjectRootEx](../atl/reference/ccomobjectrootex-class.md) Manages reference counting for both aggregated and nonaggregated objects. Allows you to specify a threading model.  
   
--   [CComObjectRoot](../atl/ccomobjectroot-class.md) Manages reference counting for both aggregated and nonaggregated objects. Uses the default threading model of the server.  
+-   [CComObjectRoot](../atl/reference/ccomobjectroot-class.md) Manages reference counting for both aggregated and nonaggregated objects. Uses the default threading model of the server.  
   
--   [CComAggObject](../atl/ccomaggobject-class.md) Implements **IUnknown** for an aggregated object.  
+-   [CComAggObject](../atl/reference/ccomaggobject-class.md) Implements **IUnknown** for an aggregated object.  
   
--   [CComObject](../atl/ccomobject-class.md) Implements **IUnknown** for a nonaggregated object.  
+-   [CComObject](../atl/reference/ccomobject-class.md) Implements **IUnknown** for a nonaggregated object.  
   
--   [CComPolyObject](../atl/ccompolyobject-class.md) Implements **IUnknown** for aggregated and nonaggregated objects. Using `CComPolyObject` avoids having both `CComAggObject` and `CComObject` in your module. A single `CComPolyObject` object handles both aggregated and nonaggregated cases.  
+-   [CComPolyObject](../atl/reference/ccompolyobject-class.md) Implements **IUnknown** for aggregated and nonaggregated objects. Using `CComPolyObject` avoids having both `CComAggObject` and `CComObject` in your module. A single `CComPolyObject` object handles both aggregated and nonaggregated cases.  
   
--   [CComObjectNoLock](../atl/ccomobjectnolock-class.md) Implements **IUnknown** for a nonaggregated object, without modifying the module lock count.  
+-   [CComObjectNoLock](../atl/reference/ccomobjectnolock-class.md) Implements **IUnknown** for a nonaggregated object, without modifying the module lock count.  
   
--   [CComTearOffObject](../atl/ccomtearoffobject-class.md) Implements **IUnknown** for a tear-off interface.  
+-   [CComTearOffObject](../atl/reference/ccomtearoffobject-class.md) Implements **IUnknown** for a tear-off interface.  
   
--   [CComCachedTearOffObject](../atl/ccomcachedtearoffobject-class.md) Implements **IUnknown** for a "cached" tear-off interface.  
+-   [CComCachedTearOffObject](../atl/reference/ccomcachedtearoffobject-class.md) Implements **IUnknown** for a "cached" tear-off interface.  
   
--   [CComContainedObject](../atl/ccomcontainedobject-class.md) Implements **IUnknown** for the inner object of an aggregation or a tear-off interface.  
+-   [CComContainedObject](../atl/reference/ccomcontainedobject-class.md) Implements **IUnknown** for the inner object of an aggregation or a tear-off interface.  
   
--   [CComObjectGlobal](../atl/ccomobjectglobal-class.md) Manages a reference count on the module to ensure your object won't be deleted.  
+-   [CComObjectGlobal](../atl/reference/ccomobjectglobal-class.md) Manages a reference count on the module to ensure your object won't be deleted.  
   
--   [CComObjectStack](../atl/ccomobjectstack-class.md) Creates a temporary COM object, using a skeletal implementation of **IUnknown**.  
+-   [CComObjectStack](../atl/reference/ccomobjectstack-class.md) Creates a temporary COM object, using a skeletal implementation of **IUnknown**.  
   
 ## Related Articles  
  [Fundamentals of ATL COM Objects](../atl/fundamentals-of-atl-com-objects.md)  
   
 ## See Also  
  [Class Overview](../atl/atl-class-overview.md)   
- [Aggregation and Class Factory Macros](../atl/aggregation-and-class-factory-macros.md)   
- [COM Map Macros](../atl/com-map-macros.md)   
- [COM Map Global Functions](../atl/com-map-global-functions.md)
+ [Aggregation and Class Factory Macros](../atl/reference/aggregation-and-class-factory-macros.md)   
+ [COM Map Macros](../atl/reference/com-map-macros.md)   
+ [COM Map Global Functions](../atl/reference/com-map-global-functions.md)
+

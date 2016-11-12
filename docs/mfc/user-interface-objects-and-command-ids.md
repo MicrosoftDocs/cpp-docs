@@ -1,13 +1,13 @@
 ---
-title: "User-Interface Objects and Command IDs"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "User-Interface Objects and Command IDs | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -21,7 +21,8 @@ helpviewer_keywords:
   - "command routing, MFC"
   - "command handling, user-interface objects"
 ms.assetid: 4ea19e9b-ed1e-452e-bd33-7f509107a45b
-caps.latest.revision: 7
+caps.latest.revision: 9
+author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
@@ -52,3 +53,4 @@ Command Updating in the Framework
   
 ## See Also  
  [Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md)
+

@@ -1,13 +1,13 @@
 ---
-title: "NMAKE Options"
-ms.custom: na
-ms.date: "10/14/2016"
+title: "NMAKE Options | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
 ms.prod: "visual-studio-dev14"
-ms.reviewer: na
-ms.suite: na
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-cpp"
-ms.tgt_pltfrm: na
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "NMAKE program, options"
 ms.assetid: 00ba1aec-ef27-44cf-8d82-c5c095e45bae
 caps.latest.revision: 9
+author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: 
@@ -42,7 +43,7 @@ NMAKE options are described in the following table. Options are preceded by eith
 |/C|Suppresses default output, including nonfatal NMAKE errors or warnings, timestamps, and NMAKE copyright message. Suppresses warnings issued by /K.|  
 |/D|Displays timestamps of each evaluated target and dependent and a message when a target does not exist. Useful with /P for debugging a makefile. Use **!CMDSWITCHES** to set or clear /D for part of a makefile.|  
 |/E|Causes environment variables to override makefile macro definitions.|  
-|/ERRORREPORT[NONE &#124; PROMPT &#124; QUEUE &#124; SEND ]|If nmake.exe fails at runtime, you can use /ERRORREPORT to send information to Microsoft about these internal errors.<br /><br /> For more information about /ERRORREPORT, see [/errorReport (Report Internal Compiler Errors)](../buildref/-errorreport--report-internal-compiler-errors-.md).|  
+|/ERRORREPORT[NONE &#124; PROMPT &#124; QUEUE &#124; SEND ]|If nmake.exe fails at runtime, you can use /ERRORREPORT to send information to Microsoft about these internal errors.<br /><br /> For more information about /ERRORREPORT, see [/errorReport (Report Internal Compiler Errors)](../build/reference/errorreport-report-internal-compiler-errors.md).|  
 |/F `filename`|Specifies `filename` as a makefile. Spaces or tabs can precede `filename`. Specify /F once for each makefile. To supply a makefile from standard input, specify a dash (–) for `filename`, and end keyboard input with either F6 or CTRL+Z.|  
 |/G|Displays the makefiles included with the !INCLUDE directive.  See [Makefile Preprocessing Directives](../build/makefile-preprocessing-directives.md) for more information.|  
 |/HELP, /?|Displays a brief summary of NMAKE command-line syntax.|  
