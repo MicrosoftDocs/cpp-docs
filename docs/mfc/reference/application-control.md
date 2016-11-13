@@ -54,13 +54,8 @@ OLE requires substantial control over applications and their objects. The OLE sy
 ##  <a name="afxolecanexitapp"></a>  AfxOleCanExitApp  
  Indicates whether the application can terminate.  
   
-```  
- 
-BOOL  
-AFXAPI  
-AfxOleCanExitApp();
-
- 
+```   
+BOOL AFXAPI AfxOleCanExitApp(); 
 ```  
   
 ### Return Value  
@@ -75,13 +70,8 @@ AfxOleCanExitApp();
 ##  <a name="afxolegetmessagefilter"></a>  AfxOleGetMessageFilter  
  Retrieves the application's current message filter.  
   
-```  
- 
-COleMessageFilter* 
-AFXAPI  
-AfxOleGetMessageFilter();
-
- 
+```   
+COleMessageFilter* AFXAPI  AfxOleGetMessageFilter(); 
 ```  
   
 ### Return Value  
@@ -98,13 +88,8 @@ AfxOleGetMessageFilter();
 ##  <a name="afxolegetuserctrl"></a>  AfxOleGetUserCtrl  
  Retrieves the current user-control flag.  
   
-```  
- 
-BOOL  
-AFXAPI  
-AfxOleGetUserCtrl();
-
- 
+```   
+BOOL  AFXAPI AfxOleGetUserCtrl(); 
 ```  
   
 ### Return Value  
@@ -117,12 +102,7 @@ AfxOleGetUserCtrl();
  Sets or clears the user-control flag, which is explained in the reference for `AfxOleGetUserCtrl`.  
   
 ```  
- 
-void  
-AFXAPI  
-AfxOleSetUserCtrl(BOOL bUserCtrl);
-
- 
+void  AFXAPI AfxOleSetUserCtrl(BOOL bUserCtrl); 
 ```  
   
 ### Parameters  
@@ -137,13 +117,8 @@ AfxOleSetUserCtrl(BOOL bUserCtrl);
 ##  <a name="afxolelockapp"></a>  AfxOleLockApp  
  Increments the framework's global count of the number of active objects in the application.  
   
-```  
- 
-void  
-AFXAPI  
-AfxOleLockApp();
-
- 
+```   
+void  AFXAPI  AfxOleLockApp(); 
 ```  
   
 ### Remarks  
@@ -159,13 +134,8 @@ AfxOleLockApp();
 ##  <a name="afxoleunlockapp"></a>  AfxOleUnlockApp  
  Decrements the framework's count of active objects in the application.  
   
-```  
- 
-void  
-AFXAPI  
-AfxOleUnlockApp();
-
- 
+```   
+void AFXAPI AfxOleUnlockApp(); 
 ```  
   
 ### Remarks  
@@ -179,32 +149,15 @@ AfxOleUnlockApp();
 ##  <a name="afxoleregisterserverclass"></a>  AfxOleRegisterServerClass  
  This function allows you to register your server in the OLE system registry.  
   
-```  
- 
-BOOL  
-AFXAPI  
-AfxOleRegisterServerClass(
-    REFCLSID 
-clsid  ,  
-    LPCTSTR 
-lpszClassName  ,  
-    LPCTSTR 
-lpszShortTypeName  ,  
-    LPCTSTR 
-lpszLongTypeName  ,  
-    OLE_APPTYPE 
-nAppType  
-= 
-OAT_SERVER,  
-    LPCTSTR* 
-rglpszRegister  
-= 
-NULL,  
-    LPCTSTR* 
-rglpszOverwrite  
-= NULL);
-
- 
+```   
+BOOL AFXAPI AfxOleRegisterServerClass(
+    REFCLSID clsid,  
+    LPCTSTR lpszClassName,  
+    LPCTSTR lpszShortTypeName,  
+    LPCTSTR lpszLongTypeName,  
+    OLE_APPTYPE nAppType = OAT_SERVER,  
+    LPCTSTR* rglpszRegister = NULL,  
+    LPCTSTR* rglpszOverwrite = NULL); 
 ```  
   
 ### Parameters  
@@ -258,28 +211,14 @@ rglpszOverwrite
 ##  <a name="afxoleseteditmenu"></a>  AfxOleSetEditMenu  
  Implements the user interface for the *typename* Object command.  
   
-```  
- 
-void  
-AFXAPI  
-AfxOleSetEditMenu(
-    COleClientItem* 
-pClient  ,  
-    CMenu* 
-pMenu  ,  
-    UINT 
-iMenuItem  ,  
-    UINT 
-nIDVerbMin  ,  
-    UINT 
-nIDVerbMax  
-= 
-0,  
-    UINT 
-nIDConvert  
-= 0);
-
- 
+```   
+void  AFXAPI  AfxOleSetEditMenu(
+    COleClientItem* pClient,  
+    CMenu* pMenu,  
+    UINT iMenuItem,  
+    UINT nIDVerbMin,  
+    UINT nIDVerbMax = 0,  
+    UINT nIDConvert = 0); 
 ```  
   
 ### Parameters  

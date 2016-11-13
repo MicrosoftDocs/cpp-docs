@@ -49,20 +49,13 @@ When a client sends a query to the Internet server, you can use one of the URL p
 ##  <a name="afxparseurl"></a>  AfxParseURL  
  This global is used in [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#OpenURL).  
   
-```  
- 
+```   
 BOOL AFXAPI AfxParseURL(
-    LPCTSTR 
-pstrURL  ,  
-    DWORD& 
-dwServiceType  ,  
-    CString& 
-strServer  ,  
-    CString& 
-strObject  ,  
-    INTERNET_PORT& nPort);
-
- 
+    LPCTSTR pstrURL,  
+    DWORD& dwServiceType,  
+    CString& strServer,  
+    CString& strObject,  
+    INTERNET_PORT& nPort); 
 ```  
   
 ### Parameters  
@@ -133,27 +126,16 @@ strObject  ,
 ##  <a name="afxparseurlex"></a>  AfxParseURLEx  
  This global function is the extended version of [AfxParseURL](#afxparseurl) and is used in [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#OpenURL).  
   
-```  
- 
+```   
 BOOL AFXAPI AfxParseURLEx(
-    LPCTSTR 
-pstrURL  ,  
-    DWORD& 
-dwServiceType  ,  
-    CString& 
-strServer  ,  
-    CString& 
-strObject  ,  
-    INTERNET_PORT& 
-nPort  ,  
-    CString& 
-strUsername  ,  
-    CString& 
-strPassword  ,  
-    DWORD 
-dwFlags   = 0);
-
- 
+    LPCTSTR pstrURL,  
+    DWORD& dwServiceType,  
+    CString& strServer,  
+    CString& strObject,  
+    INTERNET_PORT& nPort,  
+    CString& strUsername,  
+    CString& strPassword,  
+    DWORD dwFlags = 0); 
 ```  
   
 ### Parameters  

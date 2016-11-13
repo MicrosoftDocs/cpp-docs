@@ -100,10 +100,8 @@ The following macros can be used to handle DHTML events.
 ##  <a name="begin_dhtml_event_map"></a>  BEGIN_DHTML_EVENT_MAP  
  Marks the beginning of the DHTML event map when placed in the source file for the class identified by `className`.  
   
-```  
- 
-BEGIN_DHTML_EVENT_MAP(className)  
- 
+```   
+BEGIN_DHTML_EVENT_MAP(className)   
 ```  
   
 ### Parameters  
@@ -120,10 +118,8 @@ BEGIN_DHTML_EVENT_MAP(className)
 ##  <a name="begin_dhtml_event_map_inline"></a>  BEGIN_DHTML_EVENT_MAP_INLINE  
  Marks the beginning of the DHTML event map within the class definition for `className`.  
   
-```  
- 
-BEGIN_DHTML_EVENT_MAP_INLINE(className)  
- 
+```   
+BEGIN_DHTML_EVENT_MAP_INLINE(className)   
 ```  
   
 ### Parameters  
@@ -140,10 +136,8 @@ BEGIN_DHTML_EVENT_MAP_INLINE(className)
 ##  <a name="declare_dhtml_event_map"></a>  DECLARE_DHTML_EVENT_MAP  
  Declares a DHTML event map in a class definition.  
   
-```  
- 
-DECLARE_DHTML_EVENT_MAP()  
- 
+```   
+DECLARE_DHTML_EVENT_MAP()   
 ```  
   
 ### Remarks  
@@ -158,13 +152,8 @@ DECLARE_DHTML_EVENT_MAP()
 ##  <a name="dhtml_event"></a>  DHTML_EVENT  
  Handles (at the document level) an event identified by `dispid` originated by the HTML element identified by `elemName`.  
   
-```  
- 
-DHTML_EVENT(
-dispid  ,  
-elemName  ,
-    memberFxn)  
- 
+```   
+DHTML_EVENT(dispid, elemName,  memberFxn)   
 ```  
   
 ### Parameters  
@@ -183,13 +172,8 @@ elemName  ,
 ##  <a name="dhtml_event_axcontrol"></a>  DHTML_EVENT_AXCONTROL  
  Handles the event identified by `dispid` fired by the ActiveX control identified by `controlName`.  
   
-```  
- 
-DHTML_EVENT_AXCONTROL(
-dispid  ,   
-controlName  ,
-    memberFxn)  
- 
+```   
+DHTML_EVENT_AXCONTROL(dispid, controlName,  memberFxn)  
 ```  
   
 ### Parameters  
@@ -208,13 +192,8 @@ controlName  ,
 ##  <a name="dhtml_event_class"></a>  DHTML_EVENT_CLASS  
  Handles (at the document level) an event identified by `dispid` originated by any HTML element with the CSS class identified by `elemName`.  
   
-```  
- 
-DHTML_EVENT_CLASS(
-dispid  ,   
-elemName  ,
-    memberFxn)  
- 
+```   
+DHTML_EVENT_CLASS(dispid, elemName,  memberFxn)   
 ```  
   
 ### Parameters  
@@ -233,13 +212,8 @@ elemName  ,
 ##  <a name="dhtml_event_element"></a>  DHTML_EVENT_ELEMENT  
  Handles (at the element identified by `elemName`) an event identified by `dispid`.  
   
-```  
- 
-DHTML_EVENT_ELEMENT(
-dispid  ,   
-elemName  ,
-    memberFxn)  
- 
+```   
+DHTML_EVENT_ELEMENT(dispid, elemName,  memberFxn) 
 ```  
   
 ### Parameters  
@@ -262,11 +236,8 @@ elemName  ,
 ##  <a name="dhtml_event_onafterupdate"></a>  DHTML_EVENT_ONAFTERUPDATE  
  Handles (at the document level) the **onafterupdate** event originated by the HTML element identified by `elemName`.  
   
-```  
- 
-DHTML_EVENT_ONAFTERUPDATE(
-elemName  ,   memberFxn)  
- 
+```   
+DHTML_EVENT_ONAFTERUPDATE(elemName, memberFxn)   
 ```  
   
 ### Parameters  
@@ -282,11 +253,8 @@ elemName  ,   memberFxn)
 ##  <a name="dhtml_event_onbeforeupdate"></a>  DHTML_EVENT_ONBEFOREUPDATE  
  Handles (at the document level) the **onbeforeupdate** event originated by the HTML element identified by `elemName`.  
   
-```  
- 
-DHTML_EVENT_ONBEFOREUPDATE(
-elemName  ,   memberFxn)  
- 
+```   
+DHTML_EVENT_ONBEFOREUPDATE(elemName, memberFxn)   
 ```  
   
 ### Parameters  
@@ -302,11 +270,8 @@ elemName  ,   memberFxn)
 ##  <a name="dhtml_event_onblur"></a>  DHTML_EVENT_ONBLUR  
  Handles (at the element level) the **onblur** event. This is a nonbubbling event.  
   
-```  
- 
-DHTML_EVENT_ONBLUR(
-elemName  ,   memberFxn)  
- 
+```   
+DHTML_EVENT_ONBLUR(elemName, memberFxn)   
 ```  
   
 ### Parameters  
@@ -322,11 +287,8 @@ elemName  ,   memberFxn)
 ##  <a name="dhtml_event_onchange"></a>  DHTML_EVENT_ONCHANGE  
  Handles (at the element level) the `onchange` event. This is a nonbubbling event.  
   
-```  
- 
-DHTML_EVENT_ONCHANGE(
-elemName  ,   memberFxn)  
- 
+```   
+DHTML_EVENT_ONCHANGE(elemName, memberFxn)   
 ```  
   
 ### Parameters  
@@ -342,11 +304,8 @@ elemName  ,   memberFxn)
 ##  <a name="dhtml_event_onclick"></a>  DHTML_EVENT_ONCLICK  
  Handles (at the document level) the **onclick** event originated by the HTML element identified by `elemName`.  
   
-```  
- 
-DHTML_EVENT_ONCLICK(
-elemName  ,   memberFxn)  
- 
+```   
+DHTML_EVENT_ONCLICK(elemName, memberFxn)   
 ```  
   
 ### Parameters  
@@ -362,11 +321,8 @@ elemName  ,   memberFxn)
 ##  <a name="dhtml_event_ondataavailable"></a>  DHTML_EVENT_ONDATAAVAILABLE  
  Handles (at the document level) the **ondataavailable** event originated by the HTML element identified by `elemName`.  
   
-```  
- 
-DHTML_EVENT_ONDATAAVAILABLE(
-elemName  ,   memberFxn)  
- 
+```   
+DHTML_EVENT_ONDATAAVAILABLE(elemName, memberFxn)   
 ```  
   
 ### Parameters  
@@ -382,11 +338,8 @@ elemName  ,   memberFxn)
 ##  <a name="dhtml_event_ondatasetchanged"></a>  DHTML_EVENT_ONDATASETCHANGED  
  Handles (at the document level) the **ondatasetchanged** event originated by the HTML element identified by `elemName`.  
   
-```  
- 
-DHTML_EVENT_ONDATASETCHANGED(
-elemName  ,   memberFxn)  
- 
+```   
+DHTML_EVENT_ONDATASETCHANGED(elemName, memberFxn)   
 ```  
   
 ### Parameters  
@@ -402,10 +355,8 @@ elemName  ,   memberFxn)
 ##  <a name="dhtml_event_ondatasetcomplete"></a>  DHTML_EVENT_ONDATASETCOMPLETE  
  Handles (at the document level) the **ondatasetcomplete** event originated by the HTML element identified by `elemName`.  
   
-```  
- 
-DHTML_EVENT_ONDATASETCOMPLETE(
-elemName  ,   memberFxn)  
+```   
+DHTML_EVENT_ONDATASETCOMPLETE(elemName, memberFxn) 
  
 ```  
   
@@ -422,11 +373,8 @@ elemName  ,   memberFxn)
 ##  <a name="dhtml_event_ondblclick"></a>  DHTML_EVENT_ONDBLCLICK  
  Handles (at the document level) the **ondblclick** event originated by the HTML element identified by `elemName`.  
   
-```  
- 
-DHTML_EVENT_ONDBLCLICK(
-elemName  ,   memberFxn)  
- 
+```   
+DHTML_EVENT_ONDBLCLICK(elemName, memberFxn)   
 ```  
   
 ### Parameters  
@@ -442,11 +390,8 @@ elemName  ,   memberFxn)
 ##  <a name="dhtml_event_ondragstart"></a>  DHTML_EVENT_ONDRAGSTART  
  Handles (at the document level) the **ondragstart** event originated by the HTML element identified by `elemName`.  
   
-```  
- 
-DHTML_EVENT_ONDRAGSTART(
-elemName  ,   memberFxn)  
- 
+```   
+DHTML_EVENT_ONDRAGSTART(elemName, memberFxn)   
 ```  
   
 ### Parameters  
@@ -462,10 +407,8 @@ elemName  ,   memberFxn)
 ##  <a name="dhtml_event_onerrorupdate"></a>  DHTML_EVENT_ONERRORUPDATE  
  Handles (at the document level) the **onerrorupdate** event originated by the HTML element identified by `elemName`.  
   
-```  
- 
-DHTML_EVENT_ONERRORUPDATE(
-elemName  ,   memberFxn)  
+```   
+DHTML_EVENT_ONERRORUPDATE(elemName, memberFxn)  
  
 ```  
   
@@ -484,8 +427,7 @@ elemName  ,   memberFxn)
   
 ```  
  
-DHTML_EVENT_ONFILTERCHANGE(
-elemName  ,   memberFxn)  
+DHTML_EVENT_ONFILTERCHANGE(elemName, memberFxn)  
  
 ```  
   
@@ -504,8 +446,7 @@ elemName  ,   memberFxn)
   
 ```  
  
-DHTML_EVENT_ONFOCUS(
-elemName  ,   memberFxn)  
+DHTML_EVENT_ONFOCUS(elemName, memberFxn)  
  
 ```  
   
@@ -524,8 +465,7 @@ elemName  ,   memberFxn)
   
 ```  
  
-DHTML_EVENT_ONHELP(
-elemName  ,   memberFxn)  
+DHTML_EVENT_ONHELP(elemName, memberFxn)  
  
 ```  
   
@@ -544,8 +484,7 @@ elemName  ,   memberFxn)
   
 ```  
  
-DHTML_EVENT_ONKEYDOWN(
-elemName  ,   memberFxn)  
+DHTML_EVENT_ONKEYDOWN(elemName, memberFxn)  
  
 ```  
   
@@ -564,8 +503,7 @@ elemName  ,   memberFxn)
   
 ```  
  
-DHTML_EVENT_ONKEYPRESS(
-elemName  ,   memberFxn)  
+DHTML_EVENT_ONKEYPRESS(elemName, memberFxn)  
  
 ```  
   
@@ -584,8 +522,7 @@ elemName  ,   memberFxn)
   
 ```  
  
-DHTML_EVENT_ONKEYUP(
-elemName  ,   memberFxn)  
+DHTML_EVENT_ONKEYUP(elemName, memberFxn)  
  
 ```  
   
@@ -604,8 +541,7 @@ elemName  ,   memberFxn)
   
 ```  
  
-DHTML_EVENT_ONMOUSEDOWN(
-elemName  ,   memberFxn)  
+DHTML_EVENT_ONMOUSEDOWN(elemName, memberFxn)  
  
 ```  
   
@@ -624,8 +560,7 @@ elemName  ,   memberFxn)
   
 ```  
  
-DHTML_EVENT_ONMOUSEMOVE(
-elemName  ,   memberFxn)  
+DHTML_EVENT_ONMOUSEMOVE(elemName, memberFxn)  
  
 ```  
   
@@ -644,8 +579,7 @@ elemName  ,   memberFxn)
   
 ```  
  
-DHTML_EVENT_ONMOUSEOUT(
-elemName  ,   memberFxn)  
+DHTML_EVENT_ONMOUSEOUT(elemName, memberFxn)  
  
 ```  
   
@@ -664,8 +598,7 @@ elemName  ,   memberFxn)
   
 ```  
  
-DHTML_EVENT_ONMOUSEOVER(
-elemName  ,   memberFxn)  
+DHTML_EVENT_ONMOUSEOVER(elemName, memberFxn)  
  
 ```  
   
@@ -684,8 +617,7 @@ elemName  ,   memberFxn)
   
 ```  
  
-DHTML_EVENT_ONMOUSEUP(
-elemName  ,   memberFxn)  
+DHTML_EVENT_ONMOUSEUP(elemName, memberFxn)  
  
 ```  
   
@@ -704,8 +636,7 @@ elemName  ,   memberFxn)
   
 ```  
  
-DHTML_EVENT_ONRESIZE(
-elemName  ,   memberFxn)  
+DHTML_EVENT_ONRESIZE(elemName, memberFxn)  
  
 ```  
   
@@ -724,8 +655,7 @@ elemName  ,   memberFxn)
   
 ```  
  
-DHTML_EVENT_ONROWENTER(
-elemName  ,   memberFxn)  
+DHTML_EVENT_ONROWENTER(elemName, memberFxn)  
  
 ```  
   
@@ -744,8 +674,7 @@ elemName  ,   memberFxn)
   
 ```  
  
-DHTML_EVENT_ONROWEXIT(
-elemName  ,   memberFxn)  
+DHTML_EVENT_ONROWEXIT(elemName, memberFxn)  
  
 ```  
   
@@ -764,8 +693,7 @@ elemName  ,   memberFxn)
   
 ```  
  
-DHTML_EVENT_ONSELECTSTART(
-elemName  ,   memberFxn)  
+DHTML_EVENT_ONSELECTSTART(elemName, memberFxn)  
  
 ```  
   
@@ -782,13 +710,8 @@ elemName  ,   memberFxn)
 ##  <a name="dhtml_event_tag"></a>  DHTML_EVENT_TAG  
  Handles (at the document level) an event identified by `dispid` originated by any HTML element with the HTML tag identified by `elemName`.  
   
-```  
- 
-DHTML_EVENT_TAG(
-dispid  ,   
-elemName  ,
-    memberFxn)  
- 
+```   
+DHTML_EVENT_TAG(dispid, elemName,  memberFxn)   
 ```  
   
 ### Parameters  
@@ -807,10 +730,8 @@ elemName  ,
 ##  <a name="end_dhtml_event_map"></a>  END_DHTML_EVENT_MAP  
  Marks the end of the DHTML event map.  
   
-```  
- 
-END_DHTML_EVENT_MAP()  
- 
+```   
+END_DHTML_EVENT_MAP()   
 ```  
   
 ### Remarks  
@@ -820,7 +741,6 @@ END_DHTML_EVENT_MAP()
  Starts the definition of a DHTML and URL event map in a multipage dialog.  
   
 ```  
- 
 BEGIN_DHTML_URL_EVENT_MAP()  
  
 ```  
@@ -835,9 +755,7 @@ BEGIN_DHTML_URL_EVENT_MAP()
  Starts the definition of an embedded DHTML event map in a multipage dialog.  
   
 ```  
- 
-BEGIN_EMBED_DHTML_EVENT_MAP(
-className  ,   mapName)  
+BEGIN_EMBED_DHTML_EVENT_MAP(className, mapName)  
  
 ```  
   
@@ -862,7 +780,6 @@ className  ,   mapName)
  Starts the definition of a URL event entry map in a multipage dialog.  
   
 ```  
- 
 BEGIN_URL_ENTRIES(className)  
  
 ```  
@@ -881,7 +798,6 @@ BEGIN_URL_ENTRIES(className)
  Declares a DHTML and URL event map in a class definition.  
   
 ```  
- 
 DECLARE_DHTML_URL_EVENT_MAP()  
  
 ```  
@@ -895,7 +811,6 @@ DECLARE_DHTML_URL_EVENT_MAP()
  Marks the end of a DHTML and URL event map.  
   
 ```  
- 
 END_DHTML_URL_EVENT_MAP(className)  
  
 ```  
@@ -911,7 +826,6 @@ END_DHTML_URL_EVENT_MAP(className)
  Marks the end of an embedded DHTML event map.  
   
 ```  
- 
 END_EMBED_DHTML_EVENT_MAP()  
  
 ```  
@@ -923,7 +837,6 @@ END_EMBED_DHTML_EVENT_MAP()
  Marks the end of a URL event entry map.  
   
 ```  
- 
 END_URL_ENTRIES()  
  
 ```  
@@ -935,12 +848,7 @@ END_URL_ENTRIES()
  Maps a URL or HTML resource to a page in a multipage dialog.  
   
 ```  
- 
-URL_EVENT_ENTRY(
-className  ,   
-url  ,
-    mapName)  
- 
+URL_EVENT_ENTRY(className, url,  mapName)   
 ```  
   
 ### Parameters  

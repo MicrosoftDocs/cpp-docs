@@ -71,20 +71,12 @@ Property pages display the current values of specific OLE control properties in 
 ##  <a name="ddp_cbindex"></a>  DDP_CBIndex  
  Call this function in your property page's `DoDataExchange` function to synchronize the value of an integer property with the index of the current selection in a combo box on the property page.  
   
-```  
- 
-void  
-AFXAPI  
-DDP_CBIndex(
-    CDataExchange* 
-pDX  ,  
-    int 
-id  ,  
-    int& 
-member  ,  
+```   
+void AFXAPI DDP_CBIndex(
+    CDataExchange* pDX,  
+    int id,  
+    int& member,  
     LPCTSTR pszPropName);
-
- 
 ```  
   
 ### Parameters  
@@ -107,19 +99,11 @@ member  ,
  Call this function in your property page's `DoDataExchange` function to synchronize the value of a string property with the current selection in a combo box on the property page.  
   
 ```  
- 
-void  
-AFXAPI  
-DDP_CBString(
-    CDataExchange* 
-pDX  ,  
-    int 
-id  ,  
-    CString& 
-member  ,  
+void AFXAPI DDP_CBString(
+    CDataExchange* pDX,  
+    int id,  
+    CString& member,  
     LPCTSTR pszPropName);
-
- 
 ```  
   
 ### Parameters  
@@ -142,19 +126,11 @@ member  ,
  Call this function in your property page's `DoDataExchange` function to synchronize the value of a string property that exactly matches the current selection in a combo box on the property page.  
   
 ```  
- 
-void  
-AFXAPI  
-DDP_CBStringExact(
-    CDataExchange* 
-pDX  ,  
-    int 
-id  ,  
-    CString& 
-member  ,  
+void AFXAPI DDP_CBStringExact(
+    CDataExchange* pDX,  
+    int id,  
+    CString& member,  
     LPCTSTR pszPropName);
-
- 
 ```  
   
 ### Parameters  
@@ -176,21 +152,12 @@ member  ,
 ##  <a name="ddp_check"></a>  DDP_Check  
  Call this function in your property page's `DoDataExchange` function to synchronize the value of the property with the associated property page check box control.  
   
-```  
- 
-void  
-AFXAPI  
-DDP_Check(
-    CDataExchange* 
-pDX  ,  
-    int 
-id  ,  
-    int 
-& 
-member  ,  
+```   
+void AFXAPI DDP_Check(
+    CDataExchange* pDX,  
+    int id,  
+    int & member,  
     LPCSTR pszPropName);
-
- 
 ```  
   
 ### Parameters  
@@ -212,20 +179,12 @@ member  ,
 ##  <a name="ddp_lbindex"></a>  DDP_LBIndex  
  Call this function in your property page's `DoDataExchange` function to synchronize the value of an integer property with the index of the current selection in a list box on the property page.  
   
-```  
- 
-void  
-AFXAPI  
-DDP_LBIndex(
-    CDataExchange* 
-pDX  ,  
-    int 
-id  ,  
-    int& 
-member  ,  
+```   
+void AFXAPI DDP_LBIndex(
+    CDataExchange* pDX,  
+    int id,  
+    int& member,  
     LPCTSTR pszPropName);
-
- 
 ```  
   
 ### Parameters  
@@ -247,20 +206,12 @@ member  ,
 ##  <a name="ddp_lbstring"></a>  DDP_LBString  
  Call this function in your property page's `DoDataExchange` function to synchronize the value of a string property with the current selection in a list box on the property page.  
   
-```  
- 
-void  
-AFXAPI  
-DDP_LBString(
-    CDataExchange* 
-pDX  ,  
-    int 
-id  ,  
-    CString& 
-member  ,  
+```   
+void AFXAPI DDP_LBString(
+    CDataExchange* pDX,  
+    int id,  
+    CString& member,  
     LPCTSTR pszPropName);
-
- 
 ```  
   
 ### Parameters  
@@ -282,20 +233,12 @@ member  ,
 ##  <a name="ddp_lbstringexact"></a>  DDP_LBStringExact  
  Call this function in your property page's `DoDataExchange` function to synchronize the value of a string property that exactly matches the current selection in a list box on the property page.  
   
-```  
- 
-void  
-AFXAPI  
-DDP_LBStringExact(
-    CDataExchange* 
-pDX  ,  
-    int 
-id  ,  
-    CString& 
-member  ,  
+```   
+void AFXAPI DDP_LBStringExact(
+    CDataExchange* pDX,  
+    int id,  
+    CString& member,  
     LPCTSTR pszPropName);
-
- 
 ```  
   
 ### Parameters  
@@ -317,14 +260,8 @@ member  ,
 ##  <a name="ddp_postprocessing"></a>  DDP_PostProcessing  
  Call this function in your property page's `DoDataExchange` function, to finish the transfer of property values from the property page to your control when property values are being saved.  
   
-```  
- 
-void  
-AFXAPI  
-DDP_PostProcessing(CDataExchange 
-* pDX);
-
- 
+```   
+void AFXAPI DDP_PostProcessing(CDataExchange * pDX);
 ```  
   
 ### Parameters  
@@ -339,21 +276,12 @@ DDP_PostProcessing(CDataExchange
 ##  <a name="ddp_radio"></a>  DDP_Radio  
  Call this function in your control's `DoPropExchange` function to synchronize the value of the property with the associated property page radio button control.  
   
-```  
- 
-void  
-AFXAPI  
-DDP_Radio(
-    CDataExchange* 
-pDX  ,  
-    int 
-id  ,  
-    int 
-& 
-member  ,  
+```   
+void AFXAPI DDP_Radio(
+    CDataExchange* pDX,  
+    int id,  
+    int & member,  
     LPCTSTR pszPropName);
-
- 
 ```  
   
 ### Parameters  
@@ -375,105 +303,54 @@ member  ,
 ##  <a name="ddp_text"></a>  DDP_Text  
  Call this function in your control's `DoDataExchange` function to synchronize the value of the property with the associated property page control.  
   
-```  
- 
-void  
-AFXAPI  
-DDP_Text(
-    CDataExchange* 
-pDX  ,  
-    int 
-id  ,  
-    BYTE 
-& 
-member  ,  
+```   
+void AFXAPI DDP_Text(
+    CDataExchange* pDX,  
+    int id,  
+    BYTE & member,  
     LPCTSTR pszPropName);
 
-void  
-AFXAPI  
-DDP_Text(
-    CDataExchange* 
-pDX  ,  
-    int 
-id  ,  
-    int 
-& 
-member  ,  
+void AFXAPI DDP_Text(
+    CDataExchange* pDX,  
+    int id,  
+    int & member,  
     LPCTSTR pszPropName);
 
-void  
-AFXAPI  
-DDP_Text(
-    CDataExchange* 
-pDX  ,  
-    int 
-id  ,  
-    UINT 
-& 
-member  ,  
+void AFXAPI DDP_Text(
+    CDataExchange* pDX,  
+    int id,  
+    UINT & member,  
     LPCTSTR pszPropName);
 
-void  
-AFXAPI  
-DDP_Text(
-    CDataExchange* 
-pDX  ,  
-    int 
-id  ,  
-    long 
-& 
-member  ,  
+void AFXAPI DDP_Text(
+    CDataExchange* pDX,  
+    int id,  
+    long & member,  
     LPCTSTR pszPropName);
 
-void  
-AFXAPI  
-DDP_Text(
-    CDataExchange* 
-pDX  ,  
-    int 
-id  ,  
-    DWORD 
-& 
-member  ,  
+void AFXAPI DDP_Text(
+    CDataExchange* pDX,  
+    int id,  
+    DWORD & member,  
     LPCTSTR pszPropName);
 
-void  
-AFXAPI  
-DDP_Text(
-    CDataExchange* 
-pDX  ,  
-    int 
-id  ,  
-    float 
-& 
-member  ,  
+void AFXAPI DDP_Text(
+    CDataExchange* pDX,  
+    int id,  
+    float & member,  
     LPCTSTR pszPropName);
 
-void  
-AFXAPI  
-DDP_Text(
-    CDataExchange* 
-pDX  ,  
-    int 
-id  ,  
-    double 
-& 
-member  ,  
+void AFXAPI DDP_Text(
+    CDataExchange* pDX,  
+    int id,  
+    double & member,  
     LPCTSTR pszPropName);
 
-void  
-AFXAPI  
-DDP_Text(
-    CDataExchange* 
-pDX  ,  
-    int 
-id  ,  
-    CString 
-& 
-member  ,  
+void AFXAPI DDP_Text(
+    CDataExchange* pDX,  
+    int id,  
+    CString & member,  
     LPCTSTR pszPropName);
-
- 
 ```  
   
 ### Parameters  
@@ -495,11 +372,8 @@ member  ,
 ##  <a name="begin_proppageids"></a>  BEGIN_PROPPAGEIDS  
  Begins the definition of your control's list of property page IDs.  
   
-```  
- 
-BEGIN_PROPPAGEIDS(
-class_name  ,   count)  
- 
+```   
+BEGIN_PROPPAGEIDS(class_name,  count)   
 ```  
   
 ### Parameters  
@@ -517,10 +391,8 @@ class_name  ,   count)
 ##  <a name="end_proppageids"></a>  END_PROPPAGEIDS  
  Ends the definition of your property page ID list.  
   
-```  
- 
-END_PROPPAGEIDS(class_name)  
- 
+```   
+END_PROPPAGEIDS(class_name)   
 ```  
   
 ### Parameters  
@@ -530,10 +402,8 @@ END_PROPPAGEIDS(class_name)
 ##  <a name="proppageid"></a>  PROPPAGEID  
  Adds a property page for use by your OLE control.  
   
-```  
- 
-PROPPAGEID(clsid)  
- 
+```   
+PROPPAGEID(clsid)   
 ```  
   
 ### Parameters  
