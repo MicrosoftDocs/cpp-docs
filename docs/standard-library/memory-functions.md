@@ -42,7 +42,7 @@ T* addressof(T& Val);
 ##  <a name="align"></a>  align  
  Fits storage of the given size—aligned by the given alignment specification—into the first possible address of the given storage.  
   
-```cpp  
+```  
 void* align(
     size_t Alignment, // input  
     size_t Size,   // input  
@@ -103,9 +103,7 @@ while (alignment, sizeof(MyObj), ptr, space)) {
 ```  
 template <class Type, class Allocator, class... Types>  
 shared_ptr<Type>  
-allocate_shared(
-    Allocator Alloc,   
-    Types&&... Args);
+allocate_shared(Allocator Alloc, Types&&... Args);
 ```  
   
 ### Parameters  
@@ -142,7 +140,7 @@ const_pointer_cast(const shared_ptr<Other>& sp);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__const_pointer_cast.cpp   
 // compile with: /EHsc   
 #include <memory>   
@@ -242,7 +240,7 @@ dynamic_pointer_cast(const shared_ptr`<`Other>& sp);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__dynamic_pointer_cast.cpp   
 // compile with: /EHsc   
 #include <memory>   
@@ -303,7 +301,7 @@ D *get_deleter(const shared_ptr<Ty>& sp);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__get_deleter.cpp   
 // compile with: /EHsc   
 #include <memory>   
@@ -378,7 +376,7 @@ pair<Type *, ptrdiff_t> get_temporary_buffer(ptrdiff_t count);
   
 ### Example  
   
-```  
+```cpp  
 // memory_get_temp_buf.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -430,7 +428,6 @@ make_shared(
   
 ```cpp  
 auto sp = std::shared_ptr<Example>(new Example(argument));
-
 auto msp = std::make_shared<Example>(argument);
 ```  
   
@@ -625,7 +622,7 @@ void return_temporary_buffer(Type* _Pbuf);
   
 ### Example  
   
-```  
+```cpp  
 // memory_ret_temp_buf.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -685,7 +682,7 @@ static_pointer_cast(const shared_ptr<Other>& sp);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__static_pointer_cast.cpp   
 // compile with: /EHsc   
 #include <memory>   
@@ -748,46 +745,46 @@ void swap(weak_ptr<Ty>& left, weak_ptr<Other>& right);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__swap.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
   
-struct deleter   
-    {   
-    void operator()(int *p)   
-        {   
-        delete p;   
-        }   
-    };   
-  
-int main()   
-    {   
-    std::shared_ptr<int> sp1(new int(5));   
-    std::shared_ptr<int> sp2(new int(10));   
-    std::cout << "*sp1 == " << *sp1 << std::endl;   
-  
-    sp1.swap(sp2);   
-    std::cout << "*sp1 == " << *sp1 << std::endl;   
-  
-    swap(sp1, sp2);   
-    std::cout << "*sp1 == " << *sp1 << std::endl;   
-    std::cout << std::endl;   
-  
-    std::weak_ptr<int> wp1(sp1);   
-    std::weak_ptr<int> wp2(sp2);   
-    std::cout << "*wp1 == " << *wp1.lock() << std::endl;   
-  
-    wp1.swap(wp2);   
-    std::cout << "*wp1 == " << *wp1.lock() << std::endl;   
-  
-    swap(wp1, wp2);   
-    std::cout << "*wp1 == " << *wp1.lock() << std::endl;   
-  
-    return (0);   
-    }  
-  
+struct deleter
+{
+    void operator()(int *p)
+    {
+        delete p;
+    }
+};
+
+int main()
+{
+    std::shared_ptr<int> sp1(new int(5));
+    std::shared_ptr<int> sp2(new int(10));
+    std::cout << "*sp1 == " << *sp1 << std::endl;
+
+    sp1.swap(sp2);
+    std::cout << "*sp1 == " << *sp1 << std::endl;
+
+    swap(sp1, sp2);
+    std::cout << "*sp1 == " << *sp1 << std::endl;
+    std::cout << std::endl;
+
+    std::weak_ptr<int> wp1(sp1);
+    std::weak_ptr<int> wp2(sp2);
+    std::cout << "*wp1 == " << *wp1.lock() << std::endl;
+
+    wp1.swap(wp2);
+    std::cout << "*wp1 == " << *wp1.lock() << std::endl;
+
+    swap(wp1, wp2);
+    std::cout << "*wp1 == " << *wp1.lock() << std::endl;
+
+    return (0);
+}
+
 ```  
   
 ```Output  
@@ -867,7 +864,7 @@ return first;
   
 ### Example  
   
-```  
+```cpp  
 // memory_uninit_copy.cpp  
 // compile with: /EHsc /W3  
 #include <memory>  
@@ -875,59 +872,59 @@ return first;
   
 using namespace std;  
   
-   class Integer   
-   {  
-   public:  
-      Integer( int x ) : val( x ) {}  
-      int get( ) { return val; }  
-   private:  
-      int val;  
-   };  
-  
-int main( )  
-{  
-   int Array[] = { 10, 20, 30, 40 };  
-   const int N = sizeof( Array ) / sizeof( int );  
-  
-   int i;  
-   cout << "The initialized Array contains " << N << " elements: ";  
-      for (i = 0 ; i < N; i++ )  
-      {  
-         cout << " " << Array [ i ];  
-      }  
-   cout << endl;  
-  
-   Integer* ArrayPtr = ( Integer* ) malloc( N * sizeof( int ) );  
-   Integer* LArrayPtr = uninitialized_copy(  
-      Array, Array + N, ArrayPtr);  // C4996  
-  
-   cout << "Address of position after the last element in the array is: "   
-        << &Array[0] + N << endl;  
-   cout << "The iterator returned by uninitialized_copy addresses: "   
-        << ( void* )LArrayPtr << endl;  
-   cout << "The address just beyond the last copied element is: "   
-        << ( void* )( ArrayPtr + N ) << endl;  
-  
-   if ( ( &Array[0] + N ) == ( void* )LArrayPtr )  
-      cout << "The return value is an iterator "  
-           << "pointing just beyond the original array." << endl;  
-   else  
-      cout << "The return value is an iterator "  
-           << "not pointing just beyond the original array." << endl;  
-  
-   if ( ( void* )LArrayPtr == ( void* )( ArrayPtr + N ) )  
-      cout << "The return value is an iterator "  
-           << "pointing just beyond the copied array." << endl;  
-   else  
-      cout << "The return value is an iterator "  
-           << "not pointing just beyond the copied array." << endl;  
-  
-   free ( ArrayPtr );  
-  
-   cout << "Note that the exact addresses returned will vary\n"  
-        << "with the memory allocation in individual computers."  
-        << endl;  
-}  
+ class Integer
+{
+public:
+    Integer(int x) : val(x) {}
+    int get() { return val; }
+private:
+    int val;
+};
+
+int main()
+{
+    int Array[] = { 10, 20, 30, 40 };
+    const int N = sizeof(Array) / sizeof(int);
+
+    int i;
+    cout << "The initialized Array contains " << N << " elements: ";
+    for (i = 0; i < N; i++)
+    {
+        cout << " " << Array[i];
+    }
+    cout << endl;
+
+    Integer* ArrayPtr = (Integer*)malloc(N * sizeof(int));
+    Integer* LArrayPtr = uninitialized_copy(
+        Array, Array + N, ArrayPtr);  // C4996  
+
+    cout << "Address of position after the last element in the array is: "
+        << &Array[0] + N << endl;
+    cout << "The iterator returned by uninitialized_copy addresses: "
+        << (void*)LArrayPtr << endl;
+    cout << "The address just beyond the last copied element is: "
+        << (void*)(ArrayPtr + N) << endl;
+
+    if ((&Array[0] + N) == (void*)LArrayPtr)
+        cout << "The return value is an iterator "
+        << "pointing just beyond the original array." << endl;
+    else
+        cout << "The return value is an iterator "
+        << "not pointing just beyond the original array." << endl;
+
+    if ((void*)LArrayPtr == (void*)(ArrayPtr + N))
+        cout << "The return value is an iterator "
+        << "pointing just beyond the copied array." << endl;
+    else
+        cout << "The return value is an iterator "
+        << "not pointing just beyond the copied array." << endl;
+
+    free(ArrayPtr);
+
+    cout << "Note that the exact addresses returned will vary\n"
+        << "with the memory allocation in individual computers."
+        << endl;
+}
 ```  
   
 ##  <a name="uninitialized_copy_n"></a>  uninitialized_copy_n  
@@ -991,16 +988,16 @@ void uninitialized_fill(ForwardIterator first, ForwardIterator last, const Type&
  The template function effectively executes:  
   
 ```  
-while (first!= last)  
-    new ((void *)&* first ++)  
-    iterator_traits<ForwardIterator>::value_type (_        Val);
+while (first != last)  
+    new ((void*)&* first ++)  
+    iterator_traits<ForwardIterator>::value_type (_Val);
 ```  
   
  unless the code throws an exception. In that case, all constructed objects are destroyed and the exception is rethrown.  
   
 ### Example  
   
-```  
+```cpp  
 // memory_uninit_fill.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -1059,7 +1056,7 @@ void uninitialized_fill_n(ForwardIterator first, Size count, const Type& val);
   
  The template function effectively executes:  
   
-```  
+```cpp  
 while (0 <count--)  
     new ((void*)&* first ++)  
     iterator_traits<ForwardIterator>::value_type(val);
@@ -1069,7 +1066,7 @@ while (0 <count--)
   
 ### Example  
   
-```  
+```cpp  
 // memory_uninit_fill_n.cpp  
 // compile with: /EHsc /W3  
 #include <memory>  

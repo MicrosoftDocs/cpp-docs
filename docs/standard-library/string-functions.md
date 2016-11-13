@@ -15,12 +15,12 @@ manager: "ghogen"
 # &lt;string&gt; functions
 ||||  
 |-|-|-|  
-|[getline Template Function](#getline_template_function)|[stod](#stod)|[stof](#stof)|  
+|[getline](#getline)|[stod](#stod)|[stof](#stof)|  
 |[stoi](#stoi)|[stol](#stol)|[stold](#stold)|  
 |[stoll](#stoll)|[stoul](#stoul)|[stoull](#stoull)|  
 |[swap](#swap)|[to_string](#to_string)|[to_wstring](#to_wstring)|  
   
-##  <a name="getline_template_function"></a>  getline Template Function  
+##  <a name="getline"></a>  getline  
  Extract strings from the input stream line-by-line.  
   
 ```  
@@ -28,13 +28,15 @@ manager: "ghogen"
 template <class CharType, class Traits, class Allocator>  
 basic_istream<CharType, Traits>& getline(
     basic_istream<CharType, Traits>& is,  
-    basic_string<CharType, Traits, Allocator>& str, CharType delim);
+    basic_string<CharType, Traits, Allocator>& str, 
+    CharType delim);
 
  
 template <class CharType, class Traits, class Allocator>  
 basic_istream<CharType, Traits>& getline(
     basic_istream<CharType, Traits>&& is,  
-    basic_string<CharType, Traits, Allocator>& str, const CharType delim);
+    basic_string<CharType, Traits, Allocator>& str, 
+    const CharType delim);
 
  
 // (2) default delimiter used  

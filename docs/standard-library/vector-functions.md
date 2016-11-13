@@ -11,9 +11,7 @@ caps.latest.revision: 10
 manager: "ghogen"
 ---
 # &lt;vector&gt; functions
-||  
-|-|  
-|[swap](#swap)|  
+
   
 ##  <a name="swap"></a>  swap  
  Exchanges the elements of two vectors.  

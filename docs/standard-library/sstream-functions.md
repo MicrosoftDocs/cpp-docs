@@ -13,9 +13,9 @@ manager: "ghogen"
 # &lt;sstream&gt; functions
 ||  
 |-|  
-|[&lt;sstream&gt; swap](#sstream_swap)|  
+|[swap](#sstream_swap)|  
   
-##  <a name="sstream_swap"></a>  &lt;sstream&gt; swap  
+##  <a name="sstream_swap"></a>  swap  
  Exchanges the values between two `sstream` objects.  
   
 ```  

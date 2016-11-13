@@ -121,6 +121,13 @@ Include the standard header \<chrono> to define classes and functions that repre
 |chrono::duration\<double, nano> operator "" ns(long double Val)|Specifies nanoseconds as a floating-point value.|  
 |||  
   
+The following examples show how to use the chrono literals.  
+  
+```  
+constexpr auto day = 24h;  
+constexpr auto week = 24h* 7;  
+constexpr auto my_duration_unit = 108ms;  
+```  
 ## Remarks  
   
 ## See Also  

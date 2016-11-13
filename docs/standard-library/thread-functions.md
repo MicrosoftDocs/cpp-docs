@@ -13,10 +13,10 @@ manager: "ghogen"
 # &lt;thread&gt; functions
 ||||  
 |-|-|-|  
-|[get_id Function](#get_id_function)|[sleep_for Function](#sleep_for_function)|[sleep_until Function](#sleep_until_function)|  
-|[swap Function](#swap_function)|[yield Function](#yield_function)|  
+|[get_id](#get_id_function)|[sleep_for](#sleep_for_function)|[sleep_until](#sleep_until_function)|  
+|[swap](#swap_function)|[yield](#yield_function)|  
   
-##  <a name="get_id_function"></a>  get_id Function  
+##  <a name="get_id_function"></a>  get_id  
  Uniquely identifies the current thread of execution.  
   
 ```  
@@ -26,14 +26,13 @@ thread::id this_thread::get_id() noexcept;
 ### Return Value  
  An object of type [thread::id](../standard-library/thread-class.md) that uniquely identifies the current thread of execution.  
   
-##  <a name="sleep_for_function"></a>  sleep_for Function  
+##  <a name="sleep_for_function"></a>  sleep_for  
  Blocks the calling thread.  
   
 ```  
 template <class Rep,  
 class Period>  
-inline void sleep_for(
-    const chrono::duration<Rep, Period>& Rel_time);
+inline void sleep_for(const chrono::duration<Rep, Period>& Rel_time);
 ```  
   
 ### Parameters  
@@ -43,7 +42,7 @@ inline void sleep_for(
 ### Remarks  
  The function blocks the calling thread for at least the time that's specified by `Rel_time`. This function does not throw any exceptions.  
   
-##  <a name="sleep_until_function"></a>  sleep_until Function  
+##  <a name="sleep_until_function"></a>  sleep_until  
  Blocks the calling thread at least until the specified time.  
   
 ```  
@@ -60,13 +59,11 @@ void sleep_until(const xtime *Abs_time);
 ### Remarks  
  This function does not throw any exceptions.  
   
-##  <a name="swap_function"></a>  swap Function  
+##  <a name="swap_function"></a>  swap  
  Swaps the states of two `thread` objects.  
   
 ```  
-void swap(
-    thread& Left,  
-    thread& Right) noexcept;  
+void swap(thread& Left, thread& Right) noexcept;  
 ```  
   
 ### Parameters  
@@ -79,7 +76,7 @@ void swap(
 ### Remarks  
  The function calls `Left.swap(Right)`.  
   
-##  <a name="yield_function"></a>  yield Function  
+##  <a name="yield_function"></a>  yield  
  Signals the operating system to run other threads, even if the current thread would ordinarily continue to run.  
   
 ```  
