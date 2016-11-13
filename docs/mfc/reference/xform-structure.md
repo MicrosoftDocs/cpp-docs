@@ -41,8 +41,7 @@ The `XFORM` structure has the following form:
 ## Syntax  
   
 ```  
- 
-    typedef struct  tagXFORM {  /* xfrm */  
+typedef struct  tagXFORM {  /* xfrm */  
     FLOAT eM11;  
     FLOAT eM12;  
     FLOAT eM21;  

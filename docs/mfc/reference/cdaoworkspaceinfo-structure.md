@@ -42,8 +42,7 @@ The `CDaoWorkspaceInfo` structure contains information about a workspace defined
 ## Syntax  
   
 ```  
- 
-    struct CDaoWorkspaceInfo  
+struct CDaoWorkspaceInfo  
 {  
     CString m_strName;           // Primary  
     CString m_strUserName;       // Secondary  

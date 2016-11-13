@@ -41,8 +41,7 @@ The `DRAWITEMSTRUCT` structure provides information the owner window must have t
 ## Syntax  
   
 ```  
- 
-    typedef struct tagDRAWITEMSTRUCT {  
+typedef struct tagDRAWITEMSTRUCT {  
     UINT CtlType;  
     UINT CtlID;  
     UINT itemID;  

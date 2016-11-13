@@ -41,8 +41,7 @@ The `CREATESTRUCT` structure defines the initialization parameters passed to the
 ## Syntax  
   
 ```  
- 
-    typedef struct tagCREATESTRUCT {  
+typedef struct tagCREATESTRUCT {  
     LPVOID lpCreateParams;  
     HANDLE hInstance;  
     HMENU hMenu;  

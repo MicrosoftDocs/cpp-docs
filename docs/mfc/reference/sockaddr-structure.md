@@ -41,8 +41,7 @@ The `SOCKADDR` structure is used to store an Internet Protocol (IP) address for 
 ## Syntax  
   
 ```  
- 
-    struct sockaddr {  
+struct sockaddr {  
     unsigned short sa_family;  
     char sa_data[14];  
 };  

@@ -42,8 +42,7 @@ The `CDaoRelationFieldInfo` structure contains information about a field in a re
 ## Syntax  
   
 ```  
- 
-    struct CDaoRelationFieldInfo  
+struct CDaoRelationFieldInfo  
 {  
     CString m_strName;           // Primary  
     CString m_strForeignName;    // Primary  

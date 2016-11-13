@@ -42,8 +42,7 @@ The `CDaoQueryDefInfo` structure contains information about a querydef object de
 ## Syntax  
   
 ```  
- 
-    struct CDaoQueryDefInfo  
+struct CDaoQueryDefInfo  
 {  
     CString m_strName;               // Primary  
     short m_nType;   // Primary  

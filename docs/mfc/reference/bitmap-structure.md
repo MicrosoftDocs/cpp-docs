@@ -41,8 +41,7 @@ The **BITMAP** structure defines the height, width, color format, and bit values
 ## Syntax  
   
 ```  
- 
-    typedef struct tagBITMAP {  /* bm */  
+typedef struct tagBITMAP {  /* bm */  
     int bmType;  
     int bmWidth;  
     int bmHeight;  

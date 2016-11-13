@@ -42,8 +42,7 @@ The `CDaoTableDefInfo` structure contains information about a tabledef object de
 ## Syntax  
   
 ```  
- 
-    struct CDaoTableDefInfo  
+struct CDaoTableDefInfo  
 {  
     CString m_strName;               // Primary  
     BOOL m_bUpdatable;               // Primary  

@@ -41,8 +41,7 @@ The `DELETEITEMSTRUCT` structure describes a deleted owner-drawn list-box or com
 ## Syntax  
   
 ```  
- 
-    typedef struct tagDELETEITEMSTRUCT { /* ditms */  
+typedef struct tagDELETEITEMSTRUCT { /* ditms */  
     UINT CtlType;  
     UINT CtlID;  
     UINT itemID;  

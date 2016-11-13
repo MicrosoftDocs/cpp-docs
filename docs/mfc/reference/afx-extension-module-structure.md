@@ -41,8 +41,7 @@ The `AFX_EXTENSION_MODULE` is used during initialization of MFC extension DLLs t
 ## Syntax  
   
 ```  
- 
-    struct AFX_EXTENSION_MODULE  
+struct AFX_EXTENSION_MODULE  
 {  
     BOOL bInitialized;  
     HMODULE hModule;  

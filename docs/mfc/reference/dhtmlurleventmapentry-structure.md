@@ -41,8 +41,7 @@ The `DHtmlUrlEventMapEntry` structure provides multi-URL event map support.
 ## Syntax  
   
 ```  
- 
-    struct DHtmlUrlEventMapEntry  
+struct DHtmlUrlEventMapEntry  
 {  
 LPCTSTR szUrl;  
 const DHtmlEventMapEntry *pEventMap;  

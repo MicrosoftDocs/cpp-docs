@@ -41,8 +41,7 @@ The `WSADATA` structure is used to store Windows Sockets initialization informat
 ## Syntax  
   
 ```  
- 
-    struct WSAData {  
+struct WSAData {  
     WORD wVersion;  
     WORD wHighVersion;  
     char szDescription[WSADESCRIPTION_LEN+1];  

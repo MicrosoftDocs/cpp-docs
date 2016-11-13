@@ -42,8 +42,7 @@ The `CDaoFieldInfo` structure contains information about a field object defined 
 ## Syntax  
   
 ```  
- 
-    struct CDaoFieldInfo  
+struct CDaoFieldInfo  
 {  
     CString m_strName;           // Primary  
     short m_nType;               // Primary  

@@ -42,8 +42,7 @@ The `CDaoErrorInfo` structure contains information about an error object defined
 ## Syntax  
   
 ```  
- 
-    struct CDaoErrorInfo  
+struct CDaoErrorInfo  
 {  
     long m_lErrorCode;  
     CString m_strSource;  

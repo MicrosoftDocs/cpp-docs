@@ -42,8 +42,7 @@ The `CDaoParameterInfo` structure contains information about a parameter object 
 ## Syntax  
   
 ```  
- 
-    struct CDaoParameterInfo  
+struct CDaoParameterInfo  
 {  
     CString m_strName;       // Primary  
     short m_nType;           // Primary  

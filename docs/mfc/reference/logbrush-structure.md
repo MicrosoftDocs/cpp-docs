@@ -41,8 +41,7 @@ The `LOGBRUSH` structure defines the style, color, and pattern of a physical bru
 ## Syntax  
   
 ```  
- 
-    typedef struct tag LOGBRUSH { /* lb */  
+typedef struct tag LOGBRUSH { /* lb */  
     UINT lbStyle;  
     COLORREF lbColor;  
     LONG lbHatch;  

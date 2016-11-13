@@ -41,8 +41,7 @@ The `COLORADJUSTMENT` structure defines the color adjustment values used by the 
 ## Syntax  
   
 ```  
- 
-    typedef struct  tagCOLORADJUSTMENT {    /* ca */  
+typedef struct  tagCOLORADJUSTMENT {    /* ca */  
     WORD caSize;  
     WORD caFlags;  
     WORD caIlluminantIndex;  

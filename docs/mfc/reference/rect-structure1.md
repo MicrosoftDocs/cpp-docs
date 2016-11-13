@@ -43,8 +43,7 @@ The `RECT` structure defines the coordinates of the upper-left and lower-right c
 ## Syntax  
   
 ```  
- 
-    typedef struct tagRECT {  
+typedef struct tagRECT {  
     LONG left;  
     LONG top;  
     LONG right;  

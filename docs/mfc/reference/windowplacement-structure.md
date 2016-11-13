@@ -41,8 +41,7 @@ The `WINDOWPLACEMENT` structure contains information about the placement of a wi
 ## Syntax  
   
 ```  
- 
-    typedef struct tagWINDOWPLACEMENT {     /* wndpl */  
+typedef struct tagWINDOWPLACEMENT {     /* wndpl */  
     UINT length;  
     UINT flags;  
     UINT showCmd;  

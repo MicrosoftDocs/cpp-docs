@@ -41,8 +41,7 @@ The `MSG` structure contains message information from a thread's message queue.
 ## Syntax  
   
 ```  
- 
-    typedef struct tagMSG {     // msg    
+typedef struct tagMSG {     // msg    
     HWND hwnd;  
     UINT message;  
     WPARAM wParam;  

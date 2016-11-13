@@ -42,8 +42,7 @@ The `CODBCFieldInfo` structure contains information about the fields in an ODBC 
 ## Syntax  
   
 ```  
- 
-    struct CODBCFieldInfo  
+struct CODBCFieldInfo  
 {  
     CString m_strName;  
     SWORD m_nSQLType;  
