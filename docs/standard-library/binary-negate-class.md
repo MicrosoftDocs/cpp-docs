@@ -44,16 +44,20 @@ A template class providing a member function that negates the return value of a 
 ## Syntax  
   
 ```
-template <class Operation>  
-class binary_negate       : public binary_function <typename Operation::first_argument_type, typename Operation::second_argument_type, bool>     {    public:    explicit binary_negate(const Operation& _Func);
-
-    bool operator()(const typename Operation::first_argument_type& left, const typename Operation::second_argument_type& right) const;
-
- };
+template <class Operation>
+class binary_negate
+    : public binaryFunction <typename Operation::first_argument_type,
+                              typename Operation::second_argument_type, bool>
+{
+public:    
+    explicit binary_negate(const Operation& Func);
+    bool operator()(const typename Operation::first_argument_type& left,
+                    const typename Operation::second_argument_type& right) const;
+};
 ```  
   
 #### Parameters  
- `_Func`  
+ `Func`  
  The binary function to be negated.  
   
  `left`  
@@ -68,11 +72,11 @@ class binary_negate       : public binary_function <typename Operation::first_ar
 ## Remarks  
  The template class stores a copy of a binary function object _ *Func*. It defines its member function `operator()` as returning **!**\_ *Func(left, right).*  
   
- The constructor of `binary_negate` is rarely used directly. The helper function [not2](../standard-library/functional-functions.md#not2_function) is usually preferred to declare and use the **binary_negator** adaptor predicate.  
+ The constructor of `binary_negate` is rarely used directly. The helper function [not2](../standard-library/functional-functions.md#not2Function) is usually preferred to declare and use the **binary_negator** adaptor predicate.  
   
 ## Example  
   
-```  
+```cpp  
 // functional_binary_negate.cpp  
 // compile with: /EHsc  
 #define _CRT_RAND_S  

@@ -63,7 +63,7 @@ using remove_cv_t = typename remove_cv<T>::type;
   
 ## Example  
   
-```  
+```cpp  
   
 #include <type_traits>   
 #include <iostream>   

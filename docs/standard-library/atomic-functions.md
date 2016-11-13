@@ -245,7 +245,6 @@ inline Ty atomic_exchange_explicit(
 ```
 template <class T>  
 T* atomic_fetch_add(volatile atomic<T*>* Atom, ptrdiff_t Value) noexcept;
-
 template <class T>  
 T* atomic_fetch_add(atomic<T*>* Atom, ptrdiff_t Value) noexcept;
 ```  
@@ -324,10 +323,9 @@ integral atomic_fetch_add_explicit(
   
 ```
 template <class T>
-inline T atomic_fetch_and(volatile atomic<T>* Atom, T Value); noexcept
-
+inline T atomic_fetch_and(volatile atomic<T>* Atom, T Value) noexcept; 
 template <class T>
-inline T atomic_fetch_and(volatile atomic<T>* Atom, T Value); noexcept
+inline T atomic_fetch_and(volatile atomic<T>* Atom, T Value) noexcept; 
 ```  
   
 ### Parameters  
@@ -351,15 +349,13 @@ template <class T>
 inline T atomic_fetch_and_explicit(
     volatile atomic<T>* Atom, 
     T Value,
-    memory_order Order);
-
-noexcepttemplate <class T>
+    memory_order Order) noexcept;
+    
+template <class T>
 inline T atomic_fetch_and_explicit(
     volatile atomic<T>* Atom, 
     T Value,
-    memory_order Order);
-
-noexcept
+    memory_order Order) noexcept;
 ```  
   
 ### Parameters  
@@ -383,13 +379,9 @@ noexcept
   
 ```
 template <class T>
-inline T atomic_fetch_or (volatile atomic<T>* Atom, T Value);
-
-noexcept
+inline T atomic_fetch_or (volatile atomic<T>* Atom, T Value) noexcept;
 template <class T>
-inline T atomic_fetch_or (volatile atomic<T>* Atom, T Value);
-
-noexcept
+inline T atomic_fetch_or (volatile atomic<T>* Atom, T Value) noexcept;
 ```  
   
 ### Parameters  
@@ -413,13 +405,13 @@ template <class T>
 inline T atomic_fetch_or_explicit(
     volatile atomic<T>* Atom,
     T Value,
-    memory_order Order); noexcept
+    memory_order Order) noexcept; 
     
 template <class T>
 inline T atomic_fetch_or_explicit(
     volatile atomic<T>* Atom,
     T Value,
-    memory_order Order); noexcept
+    memory_order Order) noexcept; 
 ```  
   
 ### Parameters  
@@ -525,10 +517,10 @@ integral atomic_fetch_sub_explicit(
   
 ```
 template <class T>
-inline T atomic_fetch_xor(volatile atomic<T>* Atom, T Value); noexcept
+inline T atomic_fetch_xor(volatile atomic<T>* Atom, T Value) noexcept; 
 
 template <class T>
-inline T atomic_fetch_xor(volatile atomic<T>* Atom, T Value); noexcept
+inline T atomic_fetch_xor(volatile atomic<T>* Atom, T Value) noexcept;
 ```  
   
 ### Parameters  
@@ -552,13 +544,13 @@ template <class T>
 inline T atomic_fetch_xor_explicit(
     volatile atomic<T>* Atom, 
     T Value,
-    memory_order Order); noexcept
+    memory_order Order) noexcept; 
     
 template <class T>
 inline T atomic_fetch_xor_explicit(
     volatile atomic<T>* Atom, 
     T Value,
-    memory_order Order); noexcept
+    memory_order Order) noexcept; 
 ```  
   
 ### Parameters  
@@ -643,7 +635,6 @@ inline bool atomic_flag_test_and_set_explicit(atomic_flag* Flag, memory_order Or
 ```
 template <class Ty>
 inline void atomic_init(volatile atomic<Ty>* Atom, Ty Value) noexcept;
-
 template <class Ty>
 inline void atomic_init(atomic<Ty>* Atom, Ty Value) noexcept;
 ```  
@@ -684,7 +675,6 @@ inline bool atomic_is_lock_free(const atomic<T>* Atom) noexcept;
 ```
 template <class Ty>
 inline Ty atomic_load(const volatile atomic<Ty>* Atom) noexcept;
-
 template <class Ty>
 inline Ty atomic_load(const atomic<Ty>* Atom) noexcept;
 ```  
@@ -705,7 +695,6 @@ inline Ty atomic_load(const atomic<Ty>* Atom) noexcept;
 ```
 template <class Ty>
 inline Ty atomic_load_explicit(const volatile atomic<Ty>* Atom, memory_order Order) noexcept;
-
 template <class Ty>
 inline Ty atomic_load_explicit(const atomic<Ty>* Atom, memory_order Order) noexcept;
 ```  
@@ -749,7 +738,6 @@ inline void atomic_signal_fence(memory_order Order) noexcept;
 ```
 template <class Ty>
 inline Ty atomic_store_explicit(const volatile atomic<Ty>* Atom, Ty Value) noexcept;
-
 template <class Ty>
 inline Ty atomic_store_explicit(const atomic<Ty>* Atom, T Value) noexcept;
 ```  

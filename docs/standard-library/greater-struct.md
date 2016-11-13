@@ -59,11 +59,9 @@ struct greater : public binary_function <Type, Type, bool>
 template <>
 struct greater<void>  
 {
-template <class T, class U>
-auto operator()(T&& Left, U&& Right) const
- ->  
-decltype(std::forward<T>(Left)> std::forward<U>(Right));
-
+  template <class T, class U>
+  auto operator()(T&& Left, U&& Right) const
+    ->  decltype(std::forward<T>(Left)> std::forward<U>(Right));
  };
 ```  
   
@@ -85,7 +83,7 @@ decltype(std::forward<T>(Left)> std::forward<U>(Right));
   
 ## Example  
   
-```  
+```cpp  
 // functional_greater.cpp  
 // compile with: /EHsc  
 #include <vector>  

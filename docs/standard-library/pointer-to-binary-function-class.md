@@ -47,31 +47,27 @@ Converts a binary function pointer into an adaptable binary function.
 ```
 template <class Arg1, class Arg2, class Result>
 class pointer_to_binary_function
- : public binary_function <Arg1, Arg2, Result>  
+    : public binary_function <Arg1, Arg2, Result>
 {
-    public:
- explicit pointer_to_binary_function(
-    Result (* _pfunc)(Arg1, Arg2));
-
-    Result operator()(
-    Arg1 left,
-    Arg2 right) const;
-
- };
+public:
+    explicit pointer_to_binary_function(
+        Result(*pfunc)(Arg1, Arg2));
+    Result operator()(Arg1 left, Arg2 right) const;
+};
 ```  
   
 #### Parameters  
- `_pfunc`  
+ `pfunc`  
  The binary function to be converted.  
   
  `left`  
- The left object that the *\*_pfunc* is called on.  
+ The left object that the *\*pfunc* is called on.  
   
  `right`  
- The right object that the *\*_pfunc* is called on.  
+ The right object that the *\*pfunc* is called on.  
   
 ## Return Value  
- The template class stores a copy of **_pfunc**. It defines its member function `operator()` as returning (\* **_pfunc**)(_ *Left*, \_ *Right*).  
+ The template class stores a copy of **pfunc**. It defines its member function `operator()` as returning (\* **pfunc**)(_ *Left*, \_ *Right*).  
   
 ## Remarks  
  A binary function pointer is a function object and may be passed to any Standard Template Library algorithm that is expecting a binary function as a parameter, but it is not adaptable. To use it with an adaptor, such as binding a value to it or using it with a negator, it must be supplied with the nested types **first_argument_type**, **second_argument_type**, and **result_type** that make such an adaptation possible. The conversion by `pointer_to_binary_function` allows the function adaptors to work with binary function pointers.  

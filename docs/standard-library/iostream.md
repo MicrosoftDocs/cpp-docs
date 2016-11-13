@@ -88,7 +88,7 @@ extern ostream cerr;
   
 #### Example  
   
-```  
+```cpp  
 // iostream_cerr.cpp  
 // compile with: /EHsc  
 #include <iostream>  

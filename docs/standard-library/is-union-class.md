@@ -60,7 +60,7 @@ struct is_union;
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__type_traits__is_union.cpp   
 // compile with: /EHsc   
 #include <type_traits>   

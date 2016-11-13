@@ -75,7 +75,7 @@ class tuple {
   
 ## Example  
   
-```  
+```cpp  
 // tuple.cpp  
 // compile with: /EHsc  
   
@@ -177,7 +177,7 @@ tuple& operator=(pair<U1, U2>&& right);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__tuple__tuple_operator_as.cpp   
 // compile with: /EHsc   
 #include <tuple>   
@@ -301,7 +301,7 @@ constexpr tuple(pair<U1, U2>&&);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__tuple__tuple_tuple.cpp   
 // compile with: /EHsc   
 #include <tuple>   

@@ -188,7 +188,7 @@ basic_ostream<_Elem, _Tr>& flush();
   
 ### Example  
   
-```  
+```cpp  
 // basic_ostream_flush.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -333,7 +333,7 @@ basic_ostream<_Elem, _Tr>& operator<<(long double val);
   
 ### Example  
   
-```  
+```cpp  
 // basic_ostream_op_write.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -415,7 +415,7 @@ basic_ostream<_Elem, _Tr>& put(
   
 ### Example  
   
-```  
+```cpp  
 // basic_ostream_put.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -464,7 +464,7 @@ basic_ostream<_Elem, _Tr>& seekp(
   
 ### Example  
   
-```  
+```cpp  
 // basic_ostream_seekp.cpp  
 // compile with: /EHsc  
 #include <fstream>  

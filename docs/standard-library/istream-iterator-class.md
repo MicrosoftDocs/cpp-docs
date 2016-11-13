@@ -106,7 +106,7 @@ typedef CharType char_type;
   
 ### Example  
   
-```  
+```cpp  
 // istream_iterator_char_type.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -160,7 +160,7 @@ istream_iterator(istream_type& _Istr);
   
 ### Example  
   
-```  
+```cpp  
 // istream_iterator_istream_iterator.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -217,7 +217,7 @@ const Type& operator*() const;
   
 ### Example  
   
-```  
+```cpp  
 // istream_iterator_operator.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -264,7 +264,7 @@ const Type* operator->() const;
   
 ### Example  
   
-```  
+```cpp  
 // istream_iterator_operator_vm.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -308,7 +308,7 @@ istream_iterator<Type, CharType, Traits, Distance> operator++(int);
   
 ### Example  
   
-```  
+```cpp  
 // istream_iterator_operator_incr.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -350,7 +350,7 @@ typedef Traits traits_type;
   
 ### Example  
   
-```  
+```cpp  
 // istream_iterator_traits_type.cpp  
 // compile with: /EHsc  
 #include <iterator>  

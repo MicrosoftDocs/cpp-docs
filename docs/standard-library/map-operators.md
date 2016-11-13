@@ -40,7 +40,7 @@ bool operator!=(const map <Key, Type, Traits, Allocator>& left, const map <Key, 
   
 ### Example  
   
-```  
+```cpp  
 // map_op_ne.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -98,7 +98,7 @@ bool operator<(const map <Key, Type, Traits, Allocator>& left, const map <Key, T
   
 ### Example  
   
-```  
+```cpp  
 // map_op_lt.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -153,7 +153,7 @@ bool operator<=(const map <Key, Type, Traits, Allocator>& left, const map <Key, 
   
 ### Example  
   
-```  
+```cpp  
 // map_op_le.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -218,7 +218,7 @@ bool operator==(const map <Key, Type, Traits, Allocator>& left, const map <Key, 
   
 ### Example  
   
-```  
+```cpp  
 // map_op_eq.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -276,7 +276,7 @@ bool operator>(const map <Key, Type, Traits, Allocator>& left, const map <Key, T
   
 ### Example  
   
-```  
+```cpp  
 // map_op_gt.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -331,7 +331,7 @@ bool operator>=(const map <Key, Type, Traits, Allocator>& left, const map <Key, 
   
 ### Example  
   
-```  
+```cpp  
 // map_op_ge.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -396,7 +396,7 @@ bool operator!=(const multimap <Key, Type, Traits, Allocator>& left, const multi
   
 ### Example  
   
-```  
+```cpp  
 // multimap_op_ne.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -454,7 +454,7 @@ bool operator<(const multimap <Key, Type, Traits, Allocator>& left, const multim
   
 ### Example  
   
-```  
+```cpp  
 // multimap_op_lt.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -509,7 +509,7 @@ bool operator<=(const multimap <Key, Type, Traits, Allocator>& left, const multi
   
 ### Example  
   
-```  
+```cpp  
 // multimap_op_le.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -574,7 +574,7 @@ bool operator==(const multimap <Key, Type, Traits, Allocator>& left, const multi
   
 ### Example  
   
-```  
+```cpp  
 // multimap_op_eq.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -632,7 +632,7 @@ bool operator>(const multimap <Key, Type, Traits, Allocator>& left, const multim
   
 ### Example  
   
-```  
+```cpp  
 // multimap_op_gt.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -687,7 +687,7 @@ bool operator>=(const multimap <Key, Type, Traits, Allocator>& left, const multi
   
 ### Example  
   
-```  
+```cpp  
 // multimap_op_ge.cpp  
 // compile with: /EHsc  
 #include <map>  

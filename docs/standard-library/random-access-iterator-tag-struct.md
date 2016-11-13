@@ -55,7 +55,7 @@ struct random_access_iterator_tag    : public bidirectional_iterator_tag {};
   
 ## Example  
   
-```  
+```cpp  
 // iterator_rait.cpp  
 // compile with: /EHsc  
 #include <iterator>  

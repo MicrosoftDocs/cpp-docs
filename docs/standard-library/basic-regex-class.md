@@ -196,7 +196,7 @@ basic_regex& assign(
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__basic_regex_assign.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -353,7 +353,7 @@ explicit basic_regex(
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__basic_regex_construct.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -445,7 +445,7 @@ typedef regex_constants::syntax_option_type flag_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__basic_regex_flag_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -540,7 +540,7 @@ flag_type flags() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__basic_regex_flags.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -635,7 +635,7 @@ locale_type getloc() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__basic_regex_getloc.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -734,7 +734,7 @@ locale_type imbue(locale_type loc);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__basic_regex_imbue.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -829,7 +829,7 @@ typedef typename RXtraits::locale_type locale_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__basic_regex_locale_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -924,7 +924,7 @@ unsigned mark_count() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__basic_regex_mark_count.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -1037,7 +1037,7 @@ basic_regex& operator=(const basic_string<Elem, STtraits, STalloc>& str);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__basic_regex_operator_as.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -1136,7 +1136,7 @@ void swap(basic_regex& right) throw();
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__basic_regex_swap.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -1231,7 +1231,7 @@ typedef Elem value_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__basic_regex_value_type.cpp   
 // compile with: /EHsc   
 #include <regex>   

@@ -61,7 +61,7 @@ const char *what() throw();
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__memory__bad_weak_ptr.cpp   
 // compile with: /EHsc   
 #include <memory>   

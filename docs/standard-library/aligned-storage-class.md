@@ -66,7 +66,7 @@ using aligned_storage_t = typename aligned_storage<Len, Align>::type;
   
 ## Example  
   
-```  
+```cpp  
 #include <type_traits>   
 #include <iostream>   
   

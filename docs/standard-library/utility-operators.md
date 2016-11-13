@@ -42,7 +42,7 @@ constexpr bool operator!=(const pair<T, U>& left, const pair<T, U>& right);
   
 ### Example  
   
-```  
+```cpp  
 // utility_op_ne.cpp  
 // compile with: /EHsc  
 #include <utility>  
@@ -110,7 +110,7 @@ constexpr bool operator==(const pair<T, U>& left, const pair<T, U>& right);
   
 ### Example  
   
-```  
+```cpp  
 // utility_op_eq.cpp  
 // compile with: /EHsc  
 #include <utility>  
@@ -171,7 +171,7 @@ constexpr bool operator<(const pair<T, U>& left, const pair<T, U>& right);
   
 ### Example  
   
-```  
+```cpp  
 // utility_op_lt.cpp  
 // compile with: /EHsc  
 #include <utility>  
@@ -242,7 +242,7 @@ constexpr bool operator<=(const pair<T, U>& left, const pair<T, U>& right);
   
 ### Example  
   
-```  
+```cpp  
 // utility_op_le.cpp  
 // compile with: /EHsc  
 #include <utility>  
@@ -325,7 +325,7 @@ constexpr bool operator>(const pair<T, U>& left, const pair<T, U>& right);
   
 ### Example  
   
-```  
+```cpp  
 // utility_op_gt.cpp  
 // compile with: /EHsc  
 #include <utility>  
@@ -406,7 +406,7 @@ constexpr bool operator>=(const pair<T, U>& left, const pair<T, U>& right);
   
 ### Example  
   
-```  
+```cpp  
 // utility_op_ge.cpp  
 // compile with: /EHsc  
 #include <utility>  

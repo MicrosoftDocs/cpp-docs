@@ -45,7 +45,7 @@ constexpr T&& get(array<T, N>&& arr) noexcept;
   
 ### Example  
   
-```  
+```cpp  
 #include <array>   
 #include <iostream>   
   
@@ -102,7 +102,7 @@ void swap(array<Ty, N>& left, array<Ty, N>& right);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__swap.cpp   
 // compile with: /EHsc   
 #include <array>   

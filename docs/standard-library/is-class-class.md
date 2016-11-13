@@ -60,7 +60,7 @@ struct is_class;
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__type_traits__is_class.cpp   
 // compile with: /EHsc   
 #include <type_traits>   

@@ -63,7 +63,7 @@ using remove_reference_t = typename remove_reference<T>::type;
   
 ## Example  
   
-```  
+```cpp  
 #include <type_traits>   
 #include <iostream>   
   

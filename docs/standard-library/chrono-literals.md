@@ -79,18 +79,13 @@ inline namespace literals {
 }// inline namespace literals  
 ```  
   
-```  
-```  
-  
 ## Return Value  
  The literals that take a `long long` argument return a value or the corresponding type. The literals that take a floating point argument return a [duration](../standard-library/duration-class.md).  
-  
-## Remarks  
   
 ## Example  
  The following examples sow how to use the chrono literals.  
   
-```  
+```cpp  
 constexpr auto day = 24h;  
 constexpr auto week = 24h* 7;  
 constexpr auto my_duration_unit = 108ms;  

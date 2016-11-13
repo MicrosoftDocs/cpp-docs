@@ -35,8 +35,7 @@ constexpr To duration_cast(const duration<Rep, Period>& Dur);
   
 ```  
 template <class To, class Clock, class Duration>  
-time_point<Clock, To>  
-time_point_cast(const time_point<Clock, Duration>& Tp);
+time_point<Clock, To> time_point_cast(const time_point<Clock, Duration>& Tp);
 ```  
   
 ### Return Value  

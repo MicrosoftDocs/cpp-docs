@@ -60,7 +60,7 @@ struct is_function;
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__type_traits__is_function.cpp   
 // compile with: /EHsc   
 #include <type_traits>   

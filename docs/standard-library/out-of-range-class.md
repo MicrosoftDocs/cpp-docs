@@ -58,7 +58,7 @@ public:
   
 ## Example  
   
-```  
+```cpp  
 // out_of_range.cpp  
 // compile with: /EHsc  
 #include <string>  

@@ -169,7 +169,7 @@ ptr<Other>&
   
 ### Example  
   
-```  
+```cpp  
 // auto_ptr_auto_ptr.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -249,7 +249,7 @@ Type *get() const throw();
   
 ### Example  
   
-```  
+```cpp  
 // auto_ptr_get.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -370,7 +370,7 @@ ptr<Other>() throw();
   
 ### Example  
   
-```  
+```cpp  
 // auto_ptr_op_auto_ptr.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -403,7 +403,7 @@ ref<Other>() throw();
   
 ### Example  
   
-```  
+```cpp  
 // auto_ptr_op_auto_ptr_ref.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -465,7 +465,7 @@ Type *release() throw();
   
 ### Example  
   
-```  
+```cpp  
 // auto_ptr_release.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -524,7 +524,7 @@ void reset(Type*
   
 ### Example  
   
-```  
+```cpp  
 // auto_ptr_reset.cpp  
 // compile with: /EHsc  
 #include <memory>  

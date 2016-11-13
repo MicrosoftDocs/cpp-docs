@@ -132,7 +132,7 @@ bool operator!=(const fpos<Statetype>& right) const;
   
 ### Example  
   
-```  
+```cpp  
 // fpos_op_neq.cpp  
 // compile with: /EHsc  
 #include <fstream>  
@@ -296,7 +296,7 @@ bool operator==(const fpos<Statetype>& right) const;
   
 ### Example  
   
-```  
+```cpp  
 // fpos_op_streampos.cpp  
 // compile with: /EHsc  
 #include <ios>  
@@ -349,7 +349,7 @@ void state(Statetype _State);
   
 ### Example  
   
-```  
+```cpp  
 // fpos_state.cpp  
 // compile with: /EHsc  
 #include <ios>  

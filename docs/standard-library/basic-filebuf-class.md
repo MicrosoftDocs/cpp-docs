@@ -322,7 +322,7 @@ bool is_open() const;
   
 ### Example  
   
-```  
+```cpp  
 // basic_filebuf_is_open.cpp  
 // compile with: /EHsc  
 #include <fstream>  

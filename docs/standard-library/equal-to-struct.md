@@ -49,11 +49,7 @@ A binary predicate that performs the equality operation ( `operator==`) on its a
 template <class Type = void>  
 struct equal_to : public binary_function<Type, Type, bool>   
  {  
-    bool operator()(
-    const Type& Left,   
-    const Type& Right) const;
-
- 
+    bool operator()(const Type& Left, const Type& Right) const; 
  };  
  
 // specialized transparent functor for operator== 
@@ -61,11 +57,8 @@ template <>
 struct equal_to<void>  
  {  
     template <class T, class U>  
-auto operator()(T&& Left, U&& Right) const 
- ->  
-decltype(std::forward<T>(Left)  
- == std::forward<U>(Right));
-
+    auto operator()(T&& Left, U&& Right) const 
+      ->  decltype(std::forward<T>(Left) == std::forward<U>(Right));
  };  
 ```  
   
@@ -87,7 +80,7 @@ decltype(std::forward<T>(Left)
   
 ## Example  
   
-```  
+```cpp  
 // functional_equal_to.cpp  
 // compile with: /EHsc  
 #include <vector>  

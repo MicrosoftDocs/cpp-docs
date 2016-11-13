@@ -60,7 +60,7 @@ struct is_enum;
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__type_traits__is_enum.cpp   
 // compile with: /EHsc   
 #include <type_traits>   

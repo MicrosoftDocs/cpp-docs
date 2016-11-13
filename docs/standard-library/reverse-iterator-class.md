@@ -123,7 +123,7 @@ RandomIterator base() const;
   
 ### Example  
   
-```  
+```cpp  
 // reverse_iterator_base.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -216,7 +216,7 @@ reference operator*() const;
   
 ### Example  
   
-```  
+```cpp  
 // reverse_iterator_op_ref.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -276,7 +276,7 @@ reverse_iterator<RandomIterator> operator+(difference_type _Off) const;
   
 ### Example  
   
-```  
+```cpp  
 // reverse_iterator_op_add.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -346,7 +346,7 @@ reverse_iterator<RandomIterator> operator++(int);
   
 ### Example  
   
-```  
+```cpp  
 // reverse_iterator_op_incr.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -416,7 +416,7 @@ reverse_iterator<RandomIterator>& operator+=(difference_type _Off);
   
 ### Example  
   
-```  
+```cpp  
 // reverse_iterator_op_addoff.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -489,7 +489,7 @@ reverse_iterator<RandomIterator> operator-(difference_type _Off) const;
   
 ### Example  
   
-```  
+```cpp  
 // reverse_iterator_op_sub.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -560,7 +560,7 @@ reverse_iterator<RandomIterator> operator--(int);
   
 ### Example  
   
-```  
+```cpp  
 // reverse_iterator_op_decr.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -632,7 +632,7 @@ reverse_iterator<RandomIterator>& operator-=(difference_type _Off);
   
 ### Example  
   
-```  
+```cpp  
 // reverse_iterator_op_suboff.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -702,7 +702,7 @@ pointer operator->() const;
   
 ### Example  
   
-```  
+```cpp  
 // reverse_iterator_ptrto.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -783,7 +783,7 @@ reference operator[](difference_type _Off) const;
   
 ### Example  
   
-```  
+```cpp  
 // reverse_iterator_ret_ref.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -850,7 +850,7 @@ typedef typename iterator_traits<RandomIterator>::pointer pointer;
   
 ### Example  
   
-```  
+```cpp  
 // reverse_iterator_pointer.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -951,7 +951,7 @@ reverse_iterator(const reverse_iterator<Type>&
   
 ### Example  
   
-```  
+```cpp  
 // reverse_iterator_reverse_iterator.cpp  
 // compile with: /EHsc  
 #include <iterator>  

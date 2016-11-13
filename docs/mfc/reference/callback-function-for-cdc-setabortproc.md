@@ -41,8 +41,7 @@ The name *AbortFunc* is a placeholder for the application-supplied function name
 ## Syntax  
   
 ```  
- 
-    BOOL CALLBACK EXPORT AbortFunc(
+BOOL CALLBACK EXPORT AbortFunc(
     HDC hPr,  
     int code);
 ```  

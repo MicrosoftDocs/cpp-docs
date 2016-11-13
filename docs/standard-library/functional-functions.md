@@ -307,22 +307,17 @@ template <class Type = void>
 struct bit_and : public binary_function<Type, Type, Type> {  
     Type operator()(
     const Type& Left,   
-    const Type& Right) const;
-
- 
+    const Type& Right) const; 
  };  
  
 // specialized transparent functor for operator& 
-template <>  
-struct bit_and<void>  
- {  
-    template <class T, class U>  
-auto operator()(T&& Left, U&& Right) const 
- ->  
-decltype(std::forward<T>(Left)  
-& std::forward<U>(Right));
-
- };  
+template <>
+struct bit_and<void>
+{
+    template <class T, class U>
+    auto operator()(T&& Left, U&& Right) const  ->
+        decltype(std::forward<T>(Left) & std::forward<U>(Right));
+};
 ```  
   
 ### Parameters  
@@ -348,9 +343,7 @@ decltype(std::forward<T>(Left)
 template <class Type = void>  
 struct bit_not : public unary_function<Type, Type>   
  {  
-    Type operator()(const Type& Right) const;
-
- 
+    Type operator()(const Type& Right) const; 
  };  
  
 // specialized transparent functor for operator~  
@@ -358,10 +351,7 @@ template <>
 struct bit_not<void>   
  {  
     template <class Type>  
-auto operator()(Type&& Right) const 
- ->  
-decltype(~std::forward<Type>(Right));
-
+    auto operator()(Type&& Right) const  ->  decltype(~std::forward<Type>(Right));
  };  
 ```  
   
@@ -386,22 +376,17 @@ template <class Type = void>
 struct bit_or : public binary_function<Type, Type, Type> {  
     Type operator()(
     const Type& Left,   
-    const Type& Right) const;
-
- 
+    const Type& Right) const; 
  };  
  
 // specialized transparent functor for operator|  
-template <>  
-struct bit_or<void>  
- {  
-    template <class T, class U>  
-auto operator()(T&& Left, U&& Right) const 
- ->  
-decltype(std::forward<T>(Left)  
- | std::forward<U>(Right));
-
- };  
+template <>
+struct bit_or<void>
+{
+    template <class T, class U>
+    auto operator()(T&& Left, U&& Right) const
+        ->  decltype(std::forward<T>(Left) | std::forward<U>(Right));
+};
 ```  
   
 ### Parameters  
@@ -428,22 +413,17 @@ template <class Type = void>
 struct bit_xor : public binary_function<Type, Type, Type> {  
     Type operator()(
     const Type& Left,   
-    const Type& Right) const;
-
- 
+    const Type& Right) const; 
  };  
  
 // specialized transparent functor for operator^  
-template <>  
-struct bit_xor<void>  
- {  
-    template <class T, class U>  
-auto operator()(T&& Left, U&& Right) const 
- ->  
-decltype(std::forward<T>(Left)  
- ^ std::forward<U>(Right));
-
- };  
+template <>
+struct bit_xor<void>
+{
+    template <class T, class U>
+    auto operator()(T&& Left, U&& Right) const
+        -> decltype(std::forward<T>(Left) ^ std::forward<U>(Right));
+};
 ```  
   
 ### Parameters  
@@ -467,12 +447,10 @@ decltype(std::forward<T>(Left)
   
 ```  
 template <class Ty>  
-reference_wrapper<const Ty>  
-cref(const Ty& arg);
+reference_wrapper<const Ty> cref(const Ty& arg);
 
 template <class Ty>  
-reference_wrapper<const Ty>  
-cref(const reference_wrapper<Ty>& arg);
+reference_wrapper<const Ty> cref(const reference_wrapper<Ty>& arg);
 ```  
   
 ### Parameters  

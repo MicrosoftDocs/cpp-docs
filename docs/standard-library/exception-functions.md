@@ -203,7 +203,7 @@ bool uncaught_exception();
   
 ### Example  
   
-```  
+```cpp  
 // exception_uncaught_exception.cpp  
 // compile with: /EHsc  
 #include <exception>  

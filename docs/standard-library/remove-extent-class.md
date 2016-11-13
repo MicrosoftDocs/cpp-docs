@@ -63,7 +63,7 @@ using remove_extent_t = typename remove_extent<T>::type;
   
 ## Example  
   
-```  
+```cpp  
 #include <type_traits>   
 #include <iostream>   
   

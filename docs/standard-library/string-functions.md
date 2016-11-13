@@ -379,7 +379,7 @@ void swap(basic_string<CharType, Traits, Allocator>& left, basic_string<CharType
   
 ### Example  
   
-```  
+```cpp  
 // string_swap.cpp  
 // compile with: /EHsc  
 #include <string>  

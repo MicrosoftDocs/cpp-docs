@@ -52,7 +52,7 @@ void swap(
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__u_m_swap.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -143,7 +143,7 @@ void swap(
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__u_mm_swap.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   

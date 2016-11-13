@@ -96,7 +96,7 @@ ptrdiff_t *_Dist_type(const Ty *);
   
 ## Example  
   
-```  
+```cpp  
 // iterator_traits.cpp  
 // compile with: /EHsc  
 #include <iostream>  

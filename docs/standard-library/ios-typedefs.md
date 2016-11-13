@@ -52,7 +52,7 @@ typedef fpos<mbstate_t> streampos;
   
 ### Example  
   
-```  
+```cpp  
 // ios_streampos.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -128,7 +128,7 @@ typedef fpos<mbstate_t> wstreampos;
   
 ### Example  
   
-```  
+```cpp  
 // ios_wstreampos.cpp  
 // compile with: /EHsc  
 #include <iostream>  

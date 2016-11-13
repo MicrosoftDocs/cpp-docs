@@ -60,7 +60,7 @@ struct is_arithmetic;
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__type_traits__is_arithmetic.cpp   
 // compile with: /EHsc   
 #include <type_traits>   

@@ -44,7 +44,7 @@ bool operator!=(const hash_set <Key, Traits, Allocator>& left, const hash_set <K
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_op_ne.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -109,7 +109,7 @@ bool operator!==(const hash_set <Key, Traits, Allocator>& left, const hash_set <
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_op_eq.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -174,7 +174,7 @@ bool operator!=(const hash_multiset <Key, Traits, Allocator>& left, const hash_m
   
 ### Example  
   
-```  
+```cpp  
 // hashset_op_ne.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -239,7 +239,7 @@ bool operator!==(const hash_multiset <Key, Traits, Allocator>& left, const hash_
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_op_eq.cpp  
 // compile with: /EHsc  
 #include <hash_set>  

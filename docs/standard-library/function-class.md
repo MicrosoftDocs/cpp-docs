@@ -44,76 +44,60 @@ Wrapper for a callable object.
 ## Syntax  
   
 ```cpp  
-template <class Fty>  
+template <class Fty>
 class function  // Fty of type Ret(T1, T2, ..., TN)  
- : public unary_function<T1, Ret>       // when Fty is Ret(T1)  
- : public binary_function<T1, T2, Ret>  // when Fty is Ret(T1, T2)  
- {  
-public:  
-    typedef Ret result_type;  
- 
+    : public unary_function<T1, Ret>       // when Fty is Ret(T1)  
+    : public binary_function<T1, T2, Ret>  // when Fty is Ret(T1, T2)  
+{
+public:
+    typedef Ret result_type;
+
     function();
-function(nullptr_t);
+    function(nullptr_t);
 
     function(const function& right);
 
-    template <class Fty2>  
-function(Fty2 fn);
+    template <class Fty2>
+    function(Fty2 fn);
 
-    template <class Fty2, class Alloc>  
-function (reference_wrapper<Fty2>, const Alloc& _Ax);
+    template <class Fty2, class Alloc>
+    function(reference_wrapper<Fty2>, const Alloc& Ax);
 
-    template <class Fty2, class Alloc>  
-void assign (Fty2, const Alloc& _Ax);
+    template <class Fty2, class Alloc>
+    void assign(Fty2, const Alloc& Ax);
 
-    template <class Fty2, class Alloc>  
-assign (reference_wrapper<Fty2>, const Alloc& _Ax);
-```  
-  
-```cpp  
-function& operator=(nullptr_t);
+    template <class Fty2, class Alloc>
+    assign(reference_wrapper<Fty2>, const Alloc& Ax);
+    function& operator=(nullptr_t);
+    function& operator=(const function&);
+    template <class Fty2>
+    function& operator=(Fty2);
+    template <class Fty2>
+    function& operator=(reference_wrapper<Fty2>);
 
-function& operator=(const function&);
+    void swap(function&);
+    explicit operator bool() const;
 
-template <class Fty2>  
-function& operator=(Fty2);
+    result_type operator()(T1, T2, ....., TN) const;
+    const std::type_info& target_type() const;
+    template <class Fty2>
+    Fty2 *target();
 
-template <class Fty2>  
-function& operator=(reference_wrapper<Fty2>);
+    template <class Fty2>
+    const Fty2 *target() const;
 
-void swap(function&);
-
- 
-explicit operator bool() const;
-
- 
-result_type operator()(T1, T2, ....., TN) const;
-
- 
- 
-const std::type_info& target_type() const;
-
- 
-template <class Fty2>  
-Fty2 *target();
-
-template <class Fty2>  
-const Fty2 *target() const;
-```  
-  
-```cpp  
-    template <class Fty2>  
-void operator==(const Fty2&) const = delete;  
-    template <class Fty2>  
-void operator!=(const Fty2&) const = delete;  
-};  
+    template <class Fty2>
+    void operator==(const Fty2&) const = delete;
+    template <class Fty2>
+    void operator!=(const Fty2&) const = delete;
+};
 ```  
   
 #### Parameters  
  `Fty`  
  The function type to wrap.  
   
- `_Ax`  
+ `Ax`  
  The allocator function.  
   
 ## Remarks  
@@ -174,13 +158,13 @@ void operator!=(const Fty2&) const = delete;
 template <class Fx, class Alloc>  
 void assign(
     Fx _Func,   
-    const Alloc& _Ax);
+    const Alloc& Ax);
 
 template <class Fx, class Alloc>  
 void assign(
     reference_wrapper<Fx>  
 _Fnref,   
-    const Alloc& _Ax);
+    const Alloc& Ax);
 ```  
   
 ### Parameters  
@@ -190,11 +174,11 @@ _Fnref,
  `_Fnref`  
  A reference wrapper that contains a callable object.  
   
- `_Ax`  
+ `Ax`  
  An allocator object.  
   
 ### Remarks  
- The member functions each replace the `callable object` held by `*this` with the callable object passed as the `operand`. Both allocate storage with the allocator object `_Ax`.  
+ The member functions each replace the `callable object` held by `*this` with the callable object passed as the `operand`. Both allocate storage with the allocator object `Ax`.  
   
 ##  <a name="function__function"></a>  function::function  
  Constructs a wrapper that either is empty or stores a callable object of arbitrary type with a fixed signature.  
@@ -216,13 +200,13 @@ _Fnref);
 template <class Fx, class Alloc>  
 function(
  Fx _Func,   
-    const Alloc& _Ax);
+    const Alloc& Ax);
 
 template <class Fx, class Alloc>  
 function(
  reference_wrapper<Fx>  
 _Fnref,   
-    const Alloc& _Ax);
+    const Alloc& Ax);
 ```  
   
 ### Parameters  
@@ -238,18 +222,18 @@ _Fnref,
  Alloc  
  The allocator type.  
   
- `_Ax`  
+ `Ax`  
  The allocator.  
   
  `_Fnref`  
  The callable object reference to wrap.  
   
 ### Remarks  
- The first two constructors construct an empty `function` object. The next three constructors construct a `function` object that holds the callable object passed as the operand. The last two constructors allocate storage with the allocator object _Ax.  
+ The first two constructors construct an empty `function` object. The next three constructors construct a `function` object that holds the callable object passed as the operand. The last two constructors allocate storage with the allocator object Ax.  
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__function_function.cpp   
 // compile with: /EHsc   
 #include <functional>   
@@ -328,7 +312,7 @@ g is empty (correct).
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__function_operator_bool.cpp   
 // compile with: /EHsc   
 #include <functional>   
@@ -378,7 +362,7 @@ result_type operator()(T1 t1,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__function_operator_call.cpp   
 // compile with: /EHsc   
 #include <functional>   
@@ -439,7 +423,7 @@ fnref);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__function_operator_as.cpp   
 // compile with: /EHsc   
 #include <functional>   
@@ -501,7 +485,7 @@ typedef Ret result_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__function_result_type.cpp   
 // compile with: /EHsc   
 #include <functional>   
@@ -546,7 +530,7 @@ void swap(function& right);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__function_swap.cpp   
 // compile with: /EHsc   
 #include <functional>   
@@ -609,7 +593,7 @@ const Fty2 *target() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__function_target.cpp   
 // compile with: /EHsc   
 #include <functional>   
@@ -659,7 +643,7 @@ const std::type_info& target_type() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__function_target_type.cpp   
 // compile with: /EHsc   
 #include <functional>   

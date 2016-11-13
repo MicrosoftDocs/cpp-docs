@@ -151,7 +151,7 @@ basic_istream<Elem, Tr>& operator>>(
   
 ### Example  
   
-```  
+```cpp  
 // istream_op_extract.cpp  
 // compile with: /EHsc  
 #include <iostream>  

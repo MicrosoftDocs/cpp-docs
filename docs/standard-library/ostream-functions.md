@@ -41,7 +41,7 @@ template class<Elem, Tr> basic_ostream<Elem, Tr>& endl(basic_ostream<Elem, Tr>& 
   
 ### Example  
   
-```  
+```cpp  
 // ostream_endl.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -82,7 +82,7 @@ template class<Elem, Tr> basic_ostream<Elem, Tr>& ends(basic_ostream<Elem, Tr>& 
   
 ### Example  
   
-```  
+```cpp  
 // ostream_ends.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -125,7 +125,7 @@ template class<Elem, Tr> basic_ostream<Elem, Tr>& flush(basic_ostream<Elem, Tr>&
   
 ### Example  
   
-```  
+```cpp  
 // ostream_flush.cpp  
 // compile with: /EHsc  
 #include <iostream>  

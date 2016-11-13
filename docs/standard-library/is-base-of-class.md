@@ -63,7 +63,7 @@ struct is_base_of;
   
 ## Example  
   
-```  
+```cpp  
   
 #include <type_traits>   
 #include <iostream>   

@@ -49,21 +49,16 @@ A predefined function object that performs the division operation ( `operator/`)
 template <class Type = void>
 struct divides : public binary_function <Type, Type, Type>  
 {
-    Type operator()(
-    const Type& Left,
-    const Type& Right) const;
-
- };
+    Type operator()(const Type& Left, const Type& Right) const;
+};
 
 // specialized transparent functor for operator/
 template <>
 struct divides<void>  
 {
-template <class T, class U>
-auto operator()(T&& Left, U&& Right) const
- ->  
-decltype(std::forward<T>(Left)*/ std::forward<U>(Right));
-
+  template <class T, class U>
+  auto operator()(T&& Left, U&& Right) const
+    -> decltype(std::forward<T>(Left)*/ std::forward<U>(Right));
  };
 ```  
   
@@ -82,7 +77,7 @@ decltype(std::forward<T>(Left)*/ std::forward<U>(Right));
   
 ## Example  
   
-```  
+```cpp  
 // functional_divides.cpp  
 // compile with: /EHsc  
 #include <vector>  

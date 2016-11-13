@@ -27,7 +27,7 @@ typedef integral_constant<bool, false> false_type;
   
 ### Example  
   
-```  
+```cpp  
 #include <type_traits>   
 #include <iostream>   
   
@@ -60,7 +60,7 @@ typedef integral_constant<bool, true> true_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__type_traits__true_type.cpp   
 // compile with: /EHsc   
 #include <type_traits>   

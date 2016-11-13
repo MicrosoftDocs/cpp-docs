@@ -414,7 +414,7 @@ iter_type put(
   
 ### Example  
   
-```  
+```cpp  
 // num_put_put.cpp  
 // compile with: /EHsc  
 #include <locale>  

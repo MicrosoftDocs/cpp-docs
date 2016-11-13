@@ -39,7 +39,7 @@ bool has_facet(const locale& Loc);
   
 ### Example  
   
-```  
+```cpp  
 // locale_has_facet.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -78,7 +78,7 @@ bool isalnum(CharType Ch, const locale& Loc)
   
 ### Example  
   
-```  
+```cpp  
 // locale_isalnum.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -145,7 +145,7 @@ bool isalpha(CharType Ch, const locale& Loc)
   
 ### Example  
   
-```  
+```cpp  
 // locale_isalpha.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -206,7 +206,7 @@ bool iscntrl(CharType Ch, const locale& Loc)
   
 ### Example  
   
-```  
+```cpp  
 // locale_iscntrl.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -267,7 +267,7 @@ bool isdigit(CharType Ch, const locale& Loc)
   
 ### Example  
   
-```  
+```cpp  
 // locale_is_digit.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -328,7 +328,7 @@ bool isgraph(CharType Ch, const locale& Loc)
   
 ### Example  
   
-```  
+```cpp  
 // locale_is_graph.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -389,7 +389,7 @@ bool islower(CharType Ch, const locale& Loc)
   
 ### Example  
   
-```  
+```cpp  
 // locale_islower.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -450,7 +450,7 @@ bool isprint(CharType Ch, const locale& Loc)
   
 ### Example  
   
-```  
+```cpp  
 // locale_isprint.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -510,7 +510,7 @@ bool ispunct(CharType Ch, const locale& Loc)
   
 ### Example  
   
-```  
+```cpp  
 // locale_ispunct.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -571,7 +571,7 @@ bool isspace(CharType Ch, const locale& Loc)
   
 ### Example  
   
-```  
+```cpp  
 // locale_isspace.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -632,7 +632,7 @@ bool isupper(CharType Ch, const locale& Loc)
   
 ### Example  
   
-```  
+```cpp  
 // locale_isupper.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -695,7 +695,7 @@ bool isxdigit(CharType Ch, const locale& Loc)
   
 ### Example  
   
-```  
+```cpp  
 // locale_isxdigit.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -756,7 +756,7 @@ CharType tolower(CharType Ch, const locale& Loc)
   
 ### Example  
   
-```  
+```cpp  
 // locale_tolower.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -801,7 +801,7 @@ CharType toupper(CharType Ch, const locale& Loc)
   
 ### Example  
   
-```  
+```cpp  
 // locale_toupper.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -843,7 +843,7 @@ const Facet& use_facet(const locale& Loc);
   
 ### Example  
   
-```  
+```cpp  
 // locale_use_facet.cpp  
 // compile with: /EHsc  
 #include <locale>  

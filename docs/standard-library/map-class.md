@@ -201,7 +201,7 @@ const Type& at(const Key& key) const;
   
 ### Example  
   
-```  
+```cpp  
 // map_at.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -239,7 +239,7 @@ iterator begin();
   
 ### Example  
   
-```  
+```cpp  
 // map_begin.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -412,7 +412,7 @@ typedef typename allocator_type::const_reference const_reference;
   
 ### Example  
   
-```  
+```cpp  
 // map_const_ref.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -555,7 +555,7 @@ const_reverse_iterator crbegin() const;
   
 ### Example  
   
-```  
+```cpp  
 // map_crbegin.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -604,7 +604,7 @@ const_reverse_iterator crend() const;
   
 ### Example  
   
-```  
+```cpp  
 // map_crend.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -647,7 +647,7 @@ typedef allocator_type::difference_type difference_type;
   
 ### Example  
   
-```  
+```cpp  
 // map_diff_type.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -862,7 +862,7 @@ bool empty() const;
   
 ### Example  
   
-```  
+```cpp  
 // map_empty.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -932,7 +932,7 @@ pair <iterator, iterator> equal_range (const Key& key);
   
 ### Example  
   
-```  
+```cpp  
 // map_equal_range.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -1206,7 +1206,7 @@ allocator_type get_allocator() const;
   
 ### Example  
   
-```  
+```cpp  
 // map_get_allocator.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -1469,7 +1469,7 @@ key_compare key_comp() const;
   
 ### Example  
   
-```  
+```cpp  
 // map_key_comp.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -1568,7 +1568,7 @@ const_iterator lower_bound(const Key& key) const;
   
 ### Example  
   
-```  
+```cpp  
 // map_lower_bound.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -1697,7 +1697,7 @@ map(
   
 ### Example  
   
-```  
+```cpp  
 // map_map.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -1839,7 +1839,7 @@ size_type max_size() const;
   
 ### Example  
   
-```  
+```cpp  
 // map_max_size.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -1886,7 +1886,7 @@ Type& operator 0-(Key&& key);
   
 ### Example  
   
-```  
+```cpp  
 // map_op_insert.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -1976,7 +1976,7 @@ map& operator=(map&& right);
   
 ### Example  
   
-```  
+```cpp  
 // map_operator_as.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -2044,7 +2044,7 @@ reverse_iterator rbegin();
   
 ### Example  
   
-```  
+```cpp  
 // map_rbegin.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -2109,7 +2109,7 @@ typedef typename allocator_type::reference reference;
   
 ### Example  
   
-```  
+```cpp  
 // map_reference.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -2179,7 +2179,7 @@ reverse_iterator rend();
   
 ### Example  
   
-```  
+```cpp  
 // map_rend.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -2324,7 +2324,7 @@ void swap(
   
 ### Example  
   
-```  
+```cpp  
 // map_swap.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -2394,7 +2394,7 @@ const_iterator upper_bound(const Key& key) const;
   
 ### Example  
   
-```  
+```cpp  
 // map_upper_bound.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -2462,7 +2462,7 @@ value_compare value_comp() const;
   
 ### Example  
   
-```  
+```cpp  
 // map_value_comp.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -2517,7 +2517,7 @@ typedef pair<const Key, Type> value_type;
   
 ### Example  
   
-```  
+```cpp  
 // map_value_type.cpp  
 // compile with: /EHsc  
 #include <map>  

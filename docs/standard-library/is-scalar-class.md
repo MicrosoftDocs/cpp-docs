@@ -60,7 +60,7 @@ struct is_scalar;
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__type_traits__is_scalar.cpp   
 // compile with: /EHsc   
 #include <type_traits>   

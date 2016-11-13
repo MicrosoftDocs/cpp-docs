@@ -195,7 +195,7 @@ iter_type put(iter_type next,
   
 ### Example  
   
-```  
+```cpp  
 // time_put_put.cpp  
 // compile with: /EHsc  
 #include <locale>  

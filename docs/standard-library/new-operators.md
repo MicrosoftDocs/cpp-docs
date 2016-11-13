@@ -126,7 +126,7 @@ void* operator new(std::size_t count,
   
 ### Example  
   
-```  
+```cpp  
 // new_op_new.cpp  
 // compile with: /EHsc  
 #include<new>  
@@ -203,7 +203,7 @@ void* operator new[](std::size_t count,
   
 ### Example  
   
-```  
+```cpp  
 // new_op_alloc.cpp  
 // compile with: /EHsc  
 #include <new>  

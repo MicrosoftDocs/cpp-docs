@@ -60,7 +60,7 @@ struct is_object;
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__type_traits__is_object.cpp   
 // compile with: /EHsc   
 #include <type_traits>   

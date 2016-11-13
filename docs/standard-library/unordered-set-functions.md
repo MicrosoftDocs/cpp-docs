@@ -50,7 +50,7 @@ void swap(
   
 ### Example  
   
-```  
+```cpp  
   
 #include <unordered_set>  
 #include <iostream>  
@@ -140,7 +140,7 @@ void swap(
   
 ### Example  
   
-```  
+```cpp  
   
 // std_tr1__unordered_set__u_ms_swap.cpp  
 // compile with: /EHsc  

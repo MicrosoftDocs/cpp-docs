@@ -35,7 +35,7 @@ bool operator!=(const tuple<T1, T2, ..., TN>& tpl1,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__tuple__operator_ne.cpp   
 // compile with: /EHsc   
 #include <tuple>   
@@ -99,7 +99,7 @@ bool operator<(const tuple<T1, T2, ..., TN>& tpl1,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__tuple__operator_lt.cpp   
 // compile with: /EHsc   
 #include <tuple>   
@@ -163,7 +163,7 @@ bool operator<=(const tuple<T1, T2, ..., TN>& tpl1,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__tuple__operator_le.cpp   
 // compile with: /EHsc   
 #include <tuple>   
@@ -227,7 +227,7 @@ bool operator==(const tuple<T1, T2, ..., TN>& tpl1,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__tuple__operator_eq.cpp   
 // compile with: /EHsc   
 #include <tuple>   
@@ -291,7 +291,7 @@ bool operator>(const tuple<T1, T2, ..., TN>& tpl1,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__tuple__operator_gt.cpp   
 // compile with: /EHsc   
 #include <tuple>   
@@ -355,7 +355,7 @@ bool operator>=(const tuple<T1, T2, ..., TN>& tpl1,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__tuple__operator_ge.cpp   
 // compile with: /EHsc   
 #include <tuple>   

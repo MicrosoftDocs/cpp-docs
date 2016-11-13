@@ -74,7 +74,7 @@ regex_constants::error_code code() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__regex_error_code.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -125,7 +125,7 @@ regex_error(regex_constants::error_code error);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__regex_error_construct.cpp   
 // compile with: /EHsc   
 #include <regex>   

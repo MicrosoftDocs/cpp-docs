@@ -159,7 +159,7 @@ typedef Allocator allocator_type;
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_allocator_type.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -243,7 +243,7 @@ basic_string<CharType, Traits, Allocator>& append(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_append.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -400,7 +400,7 @@ basic_string<CharType, Traits, Allocator>& assign(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_assign.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -518,7 +518,7 @@ reference at(size_type _Off);
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_at.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -676,7 +676,7 @@ basic_string(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_ctor.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -738,7 +738,7 @@ iterator begin();
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_begin.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -789,7 +789,7 @@ const value_type *c_str() const;
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_c_str.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -848,7 +848,7 @@ size_type capacity() const;
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_capacity.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -962,7 +962,7 @@ void clear();
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_clear.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -1070,7 +1070,7 @@ int compare(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_compare.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -1290,7 +1290,7 @@ typedef typename allocator_type::const_pointer const_pointer;
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_const_ptr.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -1370,7 +1370,7 @@ size_type copy(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_copy.cpp  
 // compile with: /EHsc /W3  
 #include <string>  
@@ -1471,7 +1471,7 @@ size_type _Copy_s(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string__Copy_s.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -1535,7 +1535,7 @@ const value_type *data() const;
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_data.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -1593,7 +1593,7 @@ typedef typename allocator_type::difference_type difference_type;
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_diff_type.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -1640,7 +1640,7 @@ bool empty() const;
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_empty.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -1690,7 +1690,7 @@ iterator end();
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_end.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -1781,7 +1781,7 @@ basic_string<CharType, Traits, Allocator>& erase(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_erase.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -1886,7 +1886,7 @@ size_type find(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_find.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -2061,7 +2061,7 @@ size_type find_first_not_of(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_find_first_not_of.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -2249,7 +2249,7 @@ size_type find_first_of(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_find_first_of.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -2436,7 +2436,7 @@ size_type find_last_not_of(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_find_last_not_of.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -2628,7 +2628,7 @@ size_type find_last_of(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_find_last_of.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -2788,7 +2788,7 @@ allocator_type get_allocator() const;
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_get_allocator.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -2900,7 +2900,7 @@ void insert(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_insert.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -3012,7 +3012,7 @@ size_type length() const;
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_length.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -3079,7 +3079,7 @@ size_type max_size() const;
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_max_size.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -3176,7 +3176,7 @@ basic_string<CharType, Traits, Allocator>& operator+=(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_op_app.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -3264,7 +3264,7 @@ basic_string<CharType, Traits, Allocator>& operator=(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_op_assign.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -3349,7 +3349,7 @@ reference operator[](size_type _Off);
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_op_ref.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -3400,7 +3400,7 @@ typedef typename allocator_type::pointer pointer;
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_pointer.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -3447,7 +3447,7 @@ void push_back(value_type _Ch);
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_push_back.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -3505,7 +3505,7 @@ reverse_iterator rbegin();
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_rbegin.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -3598,7 +3598,7 @@ reverse_iterator rend();
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_rend.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -3767,7 +3767,7 @@ basic_string<CharType, Traits, Allocator>& replace(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_replace.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -3964,7 +3964,7 @@ void reserve(size_type count = 0);
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_reserve.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -4055,7 +4055,7 @@ void resize(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_resize.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -4197,7 +4197,7 @@ size_type rfind(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_rfind.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -4348,7 +4348,7 @@ size_type size() const;
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_size.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -4414,7 +4414,7 @@ typedef typename allocator_type::size_type size_type;
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_size_type.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -4462,7 +4462,7 @@ basic_string<CharType, Traits, Allocator> substr(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_substr.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -4522,7 +4522,7 @@ void swap(
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_swap.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -4582,7 +4582,7 @@ typedef typename allocator_type::value_type value_type;
   
 ### Example  
   
-```  
+```cpp  
 // basic_string_value_type.cpp  
 // compile with: /EHsc  
 #include <string>  

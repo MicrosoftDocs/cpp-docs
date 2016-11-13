@@ -1476,7 +1476,7 @@ const_reverse_iterator rbegin() const;
   
 ### Example  
   
-```  
+```cpp  
 // vector_rbegin.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1539,7 +1539,7 @@ reverse_iterator rend();
   
 ### Example  
   
-```  
+```cpp  
 // vector_rend.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1577,7 +1577,7 @@ void reserve(size_type count);
   
 ### Example  
   
-```  
+```cpp  
 // vector_reserve.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1793,7 +1793,7 @@ size_type size() const;
   
 ### Example  
   
-```  
+```cpp  
 // vector_size.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1851,7 +1851,7 @@ friend void swap(
   
 ### Example  
   
-```  
+```cpp  
 // vector_swap.cpp  
 // compile with: /EHsc  
 #include <vector>  

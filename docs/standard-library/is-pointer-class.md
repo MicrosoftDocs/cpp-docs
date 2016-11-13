@@ -60,7 +60,7 @@ struct is_pointer;
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__type_traits__is_pointer.cpp   
 // compile with: /EHsc   
 #include <type_traits>   

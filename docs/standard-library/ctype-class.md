@@ -429,7 +429,7 @@ const CharType *is(
   
 ### Example  
   
-```  
+```cpp  
 // ctype_is.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -508,7 +508,7 @@ const CharType* narrow(
   
 ### Example  
   
-```  
+```cpp  
 // ctype_narrow.cpp  
 // compile with: /EHsc /W3  
 #include <locale>  
@@ -560,7 +560,7 @@ const CharType *scan_is(
   
 ### Example  
   
-```  
+```cpp  
 // ctype_scan_is.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -612,7 +612,7 @@ const CharType *scan_not(
   
 ### Example  
   
-```  
+```cpp  
 // ctype_scan_not.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -669,7 +669,7 @@ const CharType *tolower(
   
 ### Example  
   
-```  
+```cpp  
 // ctype_tolower.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -725,7 +725,7 @@ const CharType *toupper(
   
 ### Example  
   
-```  
+```cpp  
 // ctype_toupper.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -785,7 +785,7 @@ const char *widen(
   
 ### Example  
   
-```  
+```cpp  
 // ctype_widen.cpp  
 // compile with: /EHsc /W3  
 #include <locale>  

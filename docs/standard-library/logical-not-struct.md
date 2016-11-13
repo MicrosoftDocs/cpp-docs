@@ -49,20 +49,16 @@ A predefined function object that performs the logical not operation ( `operator
 template <class Type = void>
 struct logical_not : public unary_function<Type, bool>  
 {
-    bool operator()(
-    const Type& Left) const;
-
- };
+    bool operator()(const Type& Left) const;
+};
 
 // specialized transparent functor for operator!
 template <>
 struct logical_not<void>  
 {
-template <class Type>
-auto operator()(Type&& Left) const
- ->  
-decltype(!std::forward<Type>(Left));
-
+  template <class Type>
+  auto operator()(Type&& Left) const`
+     -> decltype(!std::forward<Type>(Left));
  };
 ```  
   
@@ -78,7 +74,7 @@ decltype(!std::forward<Type>(Left));
   
 ## Example  
   
-```  
+```cpp  
 // functional_logical_not.cpp  
 // compile with: /EHsc  
 #include <deque>  
