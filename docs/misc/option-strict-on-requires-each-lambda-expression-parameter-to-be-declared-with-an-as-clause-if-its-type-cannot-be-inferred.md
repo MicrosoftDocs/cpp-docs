@@ -2,7 +2,6 @@
 title: "Option Strict On requires each lambda expression parameter to be declared with an &#39;As&#39; clause if its type cannot be inferred | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

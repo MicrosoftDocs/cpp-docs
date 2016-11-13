@@ -2,7 +2,6 @@
 title: "Conflicts with &#39;&lt;name1&gt;&#39;, which is implicitly created for &#39;&lt;name2&gt;&#39; in &lt;type&gt; &#39;&lt;name3&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

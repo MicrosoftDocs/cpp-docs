@@ -2,7 +2,6 @@
 title: "&#39;&lt;name&gt;&#39; cannot expose type &#39;&lt;type1&gt;&#39; used in the underlying delegate type &#39;&lt;delegatetype&gt;&#39; of the event it is implementing outside the project through &lt;specifier&gt; &#39;&lt;type2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,7 +2,6 @@
 title: "&#39;&lt;elementname&gt;&#39; for the Imports alias to &#39;&lt;qualifiedelementname&gt;&#39; does not refer to a Namespace, Class, Structure, Interface, Enum or Module | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

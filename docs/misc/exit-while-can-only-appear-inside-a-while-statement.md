@@ -2,7 +2,6 @@
 title: "&#39;Exit While&#39; can only appear inside a &#39;While&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

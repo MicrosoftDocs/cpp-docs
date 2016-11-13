@@ -2,7 +2,6 @@
 title: "Character sequence &#39;--&#39; is not allowed in an XML comment | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

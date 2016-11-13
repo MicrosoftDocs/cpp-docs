@@ -2,7 +2,6 @@
 title: "Either the parameter type or the return type of this conversion operator must be the containing type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

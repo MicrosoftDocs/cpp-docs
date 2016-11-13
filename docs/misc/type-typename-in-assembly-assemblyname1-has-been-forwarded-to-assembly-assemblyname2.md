@@ -2,7 +2,6 @@
 title: "Type &#39;&lt;typename&gt;&#39; in assembly &#39;&lt;assemblyname1&gt;&#39; has been forwarded to assembly &#39;&lt;assemblyname2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

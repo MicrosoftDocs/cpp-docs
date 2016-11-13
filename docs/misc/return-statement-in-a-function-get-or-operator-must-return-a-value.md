@@ -2,7 +2,6 @@
 title: "&#39;Return&#39; statement in a Function, Get, or Operator must return a value | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

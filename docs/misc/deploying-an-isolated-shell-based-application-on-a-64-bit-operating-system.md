@@ -2,7 +2,6 @@
 title: "Deploying an Isolated Shell-Based Application on a 64-Bit Operating System | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

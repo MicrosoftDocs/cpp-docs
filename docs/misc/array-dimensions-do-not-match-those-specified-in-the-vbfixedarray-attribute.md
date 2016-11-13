@@ -2,7 +2,6 @@
 title: "Array dimensions do not match those specified in the &#39;VBFixedArray&#39; attribute | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

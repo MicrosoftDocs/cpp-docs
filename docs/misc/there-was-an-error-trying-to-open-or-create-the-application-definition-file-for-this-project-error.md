@@ -2,7 +2,6 @@
 title: "There was an error trying to open or create the application definition file for this project. &#39;&lt;error&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

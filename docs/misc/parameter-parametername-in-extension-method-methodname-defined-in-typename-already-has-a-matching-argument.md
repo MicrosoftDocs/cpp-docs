@@ -2,7 +2,6 @@
 title: "Parameter &#39;&lt;parametername&gt;&#39; in extension method &#39;&lt;methodname&gt;&#39; defined in &#39;&lt;typename&gt;&#39; already has a matching argument | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

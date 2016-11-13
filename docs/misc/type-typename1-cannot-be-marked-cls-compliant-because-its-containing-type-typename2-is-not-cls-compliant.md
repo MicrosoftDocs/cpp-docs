@@ -2,7 +2,6 @@
 title: "Type &#39;&lt;typename1&gt;&#39; cannot be marked CLS-compliant because its containing type &#39;&lt;typename2&gt;&#39; is not CLS-compliant | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

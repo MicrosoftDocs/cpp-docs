@@ -2,7 +2,6 @@
 title: "Properties cannot be declared &#39;&lt;modifiername&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

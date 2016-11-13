@@ -2,7 +2,6 @@
 title: "Default values cannot be supplied for parameters that are not declared &#39;Optional&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

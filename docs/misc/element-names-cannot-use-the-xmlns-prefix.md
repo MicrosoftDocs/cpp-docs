@@ -2,7 +2,6 @@
 title: "Element names cannot use the &#39;xmlns&#39; prefix | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

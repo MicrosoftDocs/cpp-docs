@@ -2,7 +2,6 @@
 title: "No accessible non-generic &#39;&lt;procedurename&gt;&#39; found | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

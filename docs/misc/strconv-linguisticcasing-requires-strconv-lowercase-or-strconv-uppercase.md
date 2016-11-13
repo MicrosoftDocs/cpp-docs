@@ -2,7 +2,6 @@
 title: "&#39;StrConv.LinguisticCasing&#39; requires &#39;StrConv.LowerCase&#39; or &#39;StrConv.UpperCase&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

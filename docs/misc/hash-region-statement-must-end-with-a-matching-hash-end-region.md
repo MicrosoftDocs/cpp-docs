@@ -2,7 +2,6 @@
 title: "&#39;#Region&#39; statement must end with a matching &#39;#End Region&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

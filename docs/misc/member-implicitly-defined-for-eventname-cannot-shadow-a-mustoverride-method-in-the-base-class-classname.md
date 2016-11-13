@@ -2,7 +2,6 @@
 title: "&#39;&lt;member&gt;&#39;, implicitly defined for &#39;&lt;eventname&gt;&#39;, cannot shadow a &#39;MustOverride&#39; method in the base &lt;class&gt; &#39;&lt;classname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

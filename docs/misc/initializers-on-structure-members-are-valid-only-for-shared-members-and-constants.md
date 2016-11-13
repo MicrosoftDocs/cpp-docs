@@ -2,7 +2,6 @@
 title: "Initializers on structure members are valid only for &#39;Shared&#39; members and constants | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,7 +2,6 @@
 title: "Property without a &#39;ReadOnly&#39; or &#39;WriteOnly&#39; specifier must provide both a &#39;Get&#39; and a &#39;Set&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

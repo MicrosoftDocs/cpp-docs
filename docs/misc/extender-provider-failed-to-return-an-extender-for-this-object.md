@@ -2,7 +2,6 @@
 title: "Extender Provider failed to return an Extender for this object. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

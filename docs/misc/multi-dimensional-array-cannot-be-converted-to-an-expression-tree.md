@@ -2,7 +2,6 @@
 title: "Multi-dimensional array cannot be converted to an expression tree | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

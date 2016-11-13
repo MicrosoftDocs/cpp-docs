@@ -2,7 +2,6 @@
 title: "Constraints for this type parameter do not match the constraints on the corresponding type parameter defined on one of the other partial types of &#39;|1&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

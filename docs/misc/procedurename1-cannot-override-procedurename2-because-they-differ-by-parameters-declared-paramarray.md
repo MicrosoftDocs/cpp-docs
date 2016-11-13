@@ -2,7 +2,6 @@
 title: "&lt;procedurename1&gt; cannot override &lt;procedurename2&gt; because they differ by parameters declared &#39;ParamArray&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
