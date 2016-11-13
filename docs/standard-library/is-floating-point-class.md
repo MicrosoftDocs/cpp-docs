@@ -62,7 +62,7 @@ struct is_floating_point;
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__type_traits__is_floating_point.cpp   
 // compile with: /EHsc   
 #include <type_traits>   

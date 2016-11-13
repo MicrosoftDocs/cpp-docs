@@ -82,7 +82,7 @@ constexpr complex(
   
 ## Example  
   
-```  
+```cpp  
 // complex_comp_flt.cpp  
 // compile with: /EHsc  
 #include <complex>  

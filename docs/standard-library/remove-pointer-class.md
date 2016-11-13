@@ -63,7 +63,7 @@ using remove_pointer_t = typename remove_pointer<T>::type;
   
 ## Example  
   
-```  
+```cpp  
 #include <type_traits>   
 #include <iostream>   
   

@@ -41,8 +41,7 @@ The `FILETIME` structure is a 64-bit value representing the number of 100-nanose
 ## Syntax  
   
 ```  
- 
-    typedef struct _FILETIME {  
+typedef struct _FILETIME {  
     DWORD dwLowDateTime;   /* low 32 bits */  
     DWORD dwHighDateTime;  /* high 32 bits */  
 } FILETIME, *PFILETIME, *LPFILETIME;  

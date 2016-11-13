@@ -58,7 +58,7 @@ public:
   
 ## Example  
   
-```  
+```cpp  
 // overflow_error.cpp  
 // compile with: /EHsc /GR  
 #include <bitset>  

@@ -42,8 +42,7 @@ The `CDaoIndexFieldInfo` structure contains information about an index field obj
 ## Syntax  
   
 ```  
- 
-    struct CDaoIndexFieldInfo  
+struct CDaoIndexFieldInfo  
 {  
     CString m_strName;          // Primary  
     BOOL m_bDescending;         // Primary  

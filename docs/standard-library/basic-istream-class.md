@@ -190,7 +190,7 @@ streamsize gcount() const;
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_gcount.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -291,7 +291,7 @@ basic_istream<Elem, Tr>& get(
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_get.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -357,7 +357,7 @@ basic_istream<Elem, Tr>& getline(
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_getline.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -401,7 +401,7 @@ basic_istream<Elem, Tr>& ignore(
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_ignore.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -562,7 +562,7 @@ basic_istream& operator>>(long double& val);
   
 ### Example  
   
-```  
+```cpp  
 // istream_basic_istream_op_is.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -629,7 +629,7 @@ int_type peek();
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_peek.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -679,7 +679,7 @@ basic_istream<Elem, Tr>& putback(
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_putback.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -728,7 +728,7 @@ basic_istream<Elem, Tr>& read(
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_read.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -790,7 +790,7 @@ streamsize readsome(
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_readsome.cpp  
 // compile with: /EHsc /W3  
 #include <iostream>  
@@ -854,7 +854,7 @@ basic_istream<Elem, Tr>& seekg(
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_seekg.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -932,7 +932,7 @@ pos_type tellg();
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_tellg.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -973,7 +973,7 @@ basic_istream<Elem, Tr>& unget();
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_unget.cpp  
 // compile with: /EHsc  
 #include <iostream>  

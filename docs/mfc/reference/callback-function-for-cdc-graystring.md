@@ -41,8 +41,7 @@ translation.priority.ht:
 ## Syntax  
   
 ```  
- 
-    BOOL CALLBACK EXPORT OutputFunc(
+BOOL CALLBACK EXPORT OutputFunc(
     HDC hDC,  
     LPARAM lpData,  
     int nCount);

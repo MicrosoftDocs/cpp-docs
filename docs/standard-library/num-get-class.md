@@ -566,7 +566,7 @@ virtual iter_type do_get(iter_type first,
   
 ### Example  
   
-```  
+```cpp  
 // num_get_get.cpp  
 // compile with: /EHsc  
 #include <locale>  

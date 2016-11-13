@@ -136,7 +136,7 @@ bool bad() const;
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_bad.cpp  
 // compile with: /EHsc  
@@ -224,7 +224,7 @@ const basic_ios<Elem, Traits>& right);
   
 ### Example  
   
-```    
+```cpp    
 // basic_ios_copyfmt.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -259,7 +259,7 @@ bool eof() const;
   
 ### Example  
   
-```    
+```cpp    
 // basic_ios_eof.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -301,7 +301,7 @@ void exceptions(io_state Newexcept);
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_exceptions.cpp  
 // compile with: /EHsc /GR  
@@ -352,7 +352,7 @@ bool fail() const;
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_fail.cpp  
 // compile with: /EHsc  
@@ -388,7 +388,7 @@ char_type fill(char_type Char);
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_fill.cpp  
 // compile with: /EHsc  
@@ -452,7 +452,7 @@ locale imbue(const locale& Loc);
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_imbue.cpp  
 // compile with: /EHsc  
@@ -552,7 +552,7 @@ char narrow(char_type Char, char Default = '\0') const;
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_narrow.cpp  
 // compile with: /EHsc  
@@ -592,7 +592,7 @@ typedef typename traits_type::off_type off_type;
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_opgood.cpp  
 // compile with: /EHsc  
@@ -622,7 +622,7 @@ bool operator!() const;
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_opbad.cpp  
 // compile with: /EHsc  
@@ -677,7 +677,7 @@ basic_streambuf<Elem, Traits>* _Sb);
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_rdbuf.cpp  
 // compile with: /EHsc  
@@ -714,7 +714,7 @@ iostate rdstate() const;
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_rdstate.cpp  
 // compile with: /EHsc  
@@ -768,7 +768,7 @@ void setstate(iostate _State);
   
 ### Example  
   
-```    
+```cpp    
 // basic_ios_setstate.cpp  
 // compile with: /EHsc  
 #include <ios>  
@@ -880,7 +880,7 @@ char_type widen(char Char) const;
   
 ### Example  
   
-```    
+```cpp    
 // basic_ios_widen.cpp  
 // compile with: /EHsc  
 #include <ios>  

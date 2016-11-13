@@ -294,7 +294,7 @@ void str(
   
 ### Example  
   
-```  
+```cpp  
 // basic_stringbuf_str.cpp  
 // compile with: /EHsc  
 #include <iostream>  

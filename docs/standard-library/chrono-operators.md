@@ -238,7 +238,6 @@ template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr bool operator<=(
     const duration<Rep1, Period1>& Left,  
     const duration<Rep2, Period2>& Right);
-
  
 template <class Clock, class Duration1, class Duration2>  
 constexpr bool operator<=(
@@ -264,7 +263,6 @@ template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr bool operator==(
     const duration<Rep1, Period1>& Left,  
     const duration<Rep2, Period2>& Right);
-
  
 template <class Clock, class Duration1, class Duration2>  
 constexpr bool operator==(
@@ -292,7 +290,6 @@ template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr bool operator>(
     const duration<Rep1, Period1>& Left,  
     const duration<Rep2, Period2>& Right);
-
  
 template <class Clock, class Duration1, class Duration2>  
 constexpr bool operator>(
@@ -318,7 +315,6 @@ template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr bool operator>=(
     const duration<Rep1, Period1>& Left,  
     const duration<Rep2, Period2>& Right);
-
  
 template <class Clock, class Duration1, class Duration2>  
 constexpr bool operator>=(

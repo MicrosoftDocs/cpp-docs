@@ -60,7 +60,7 @@ struct is_const;
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__type_traits__is_const.cpp   
 // compile with: /EHsc   
 #include <type_traits>   

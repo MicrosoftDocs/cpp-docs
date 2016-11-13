@@ -85,7 +85,7 @@ size_t size() const;
   
 ### Example  
   
-```  
+```cpp  
 // slice_size.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -165,7 +165,7 @@ slice(
   
 ### Example  
   
-```  
+```cpp  
 // slice_ctor.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -216,7 +216,7 @@ size_t start() const;
   
 ### Example  
   
-```  
+```cpp  
 // slice_start.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -272,7 +272,7 @@ size_t stride() const;
   
 ### Example  
   
-```  
+```cpp  
 // slice_stride.cpp  
 // compile with: /EHsc  
 #include <valarray>  

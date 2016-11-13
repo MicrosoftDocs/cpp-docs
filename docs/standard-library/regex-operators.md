@@ -76,7 +76,7 @@ bool operator!=(const match_results<BidIt, Alloc>& left,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__operator_ne.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -189,7 +189,7 @@ bool operator<(const sub_match<BidIt>& left,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__operator_lt.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -275,7 +275,7 @@ basic_ostream<Elem, IOtraits>& operator<<(basic_ostream<Elem, IOtraits>& os,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__operator_ins.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -355,7 +355,7 @@ bool operator<=(const sub_match<BidIt>& left,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__operator_le.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -475,7 +475,7 @@ bool operator==(const match_results<BidIt, Alloc>& left,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__operator_eq.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -588,7 +588,7 @@ bool operator>(const sub_match<BidIt>& left,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__operator_gt.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -696,7 +696,7 @@ bool operator>=(const sub_match<BidIt>& left,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__operator_ge.cpp   
 // compile with: /EHsc   
 #include <regex>   

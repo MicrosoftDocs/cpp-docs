@@ -98,7 +98,7 @@ explicit back_insert_iterator(Container& _Cont);
   
 ### Example  
   
-```  
+```cpp  
 // back_insert_iterator_back_insert_iterator.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -158,7 +158,7 @@ container_type;
   
 ### Example  
   
-```  
+```cpp  
 // back_insert_iterator_container_type.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -212,7 +212,7 @@ back_insert_iterator<Container>& operator*();
   
 ### Example  
   
-```  
+```cpp  
 // back_insert_iterator_back_insert.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -271,7 +271,7 @@ back_insert_iterator<Container> operator++(int);
   
 ### Example  
   
-```  
+```cpp  
 // back_insert_iterator_op_incre.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -340,7 +340,7 @@ back_insert_iterator<Container>& operator=(typename Container::const_reference v
   
 ### Example  
   
-```  
+```cpp  
 // back_insert_iterator_op_assign.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -390,7 +390,7 @@ typedef typename Container::reference reference;
   
 ### Example  
   
-```  
+```cpp  
 // back_insert_iterator_reference.cpp  
 // compile with: /EHsc  
 #include <iterator>  

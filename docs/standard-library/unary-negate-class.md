@@ -44,16 +44,18 @@ A template class providing a member function that negates the return value of a 
 ## Syntax  
   
 ```
-template <class Predicate>  
-class unary_negate       : public unary_function<typename Predicate::argument_type, bool>     {    public:    explicit unary_negate(const Predicate& _Func);
-
+template <class Predicate>
+class unary_negate
+    : public unaryFunction<typename Predicate::argument_type, bool>
+{
+public:
+    explicit unary_negate(const Predicate& Func);
     bool operator()(const typename Predicate::argument_type& left) const;
-
- };
+};
 ```  
   
 #### Parameters  
- `_Func`  
+ `Func`  
  The unary function to be negated.  
   
  `left`  
@@ -65,11 +67,11 @@ class unary_negate       : public unary_function<typename Predicate::argument_ty
 ## Remarks  
  The template class stores a copy of a unary function object _ *Func.* It defines its member function `operator()` as returning **!**\_ *Func(left).*  
   
- The constructor of `unary_negate` is rarely used directly. The helper function [not1](../standard-library/functional-functions.md#not1_function) provides an easier way to declare and use the **unary_negator** adaptor predicate.  
+ The constructor of `unary_negate` is rarely used directly. The helper function [not1](../standard-library/functional-functions.md#not1Function) provides an easier way to declare and use the **unary_negator** adaptor predicate.  
   
 ## Example  
   
-```  
+```cpp  
 // functional_unary_negate.cpp  
 // compile with: /EHsc  
 #include <vector>  

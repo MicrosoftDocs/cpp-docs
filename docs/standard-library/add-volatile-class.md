@@ -62,7 +62,7 @@ template <class T>using add_volatile_t = typename add_volatile<T>::type;
   
 ## Example  
   
-```  
+```cpp  
 #include <type_traits>   
 #include <iostream>   
   

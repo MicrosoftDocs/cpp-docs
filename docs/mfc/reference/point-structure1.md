@@ -43,8 +43,7 @@ The **POINT** structure defines the x*-* and y-coordinates of a point.
 ## Syntax  
   
 ```  
- 
-    typedef struct tagPOINT {  
+typedef struct tagPOINT {  
     LONG x;  
     LONG y;  
 } POINT;  

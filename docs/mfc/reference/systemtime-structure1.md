@@ -41,8 +41,7 @@ The `SYSTEMTIME` structure represents a date and time using individual members f
 ## Syntax  
   
 ```  
- 
-    typedef struct _SYSTEMTIME {  
+typedef struct _SYSTEMTIME {  
     WORD wYear;  
     WORD wMonth;  
     WORD wDayOfWeek;  

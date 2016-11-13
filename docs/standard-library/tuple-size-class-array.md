@@ -76,7 +76,7 @@ struct tuple_size<const volatile Tuple>;
   
 ## Example  
   
-```  
+```cpp  
 #include <array>   
 #include <iostream>   
   

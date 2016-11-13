@@ -58,7 +58,7 @@ public:
   
 ## Example  
   
-```  
+```cpp  
 // domain_error.cpp  
 // compile with: /EHsc /GR  
 #include <iostream>  

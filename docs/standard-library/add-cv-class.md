@@ -62,7 +62,7 @@ template <class T>using add_cv_t = typename add_cv<T>::type;
   
 ## Example  
   
-```  
+```cpp  
 #include <type_traits>   
 #include <iostream>   
   

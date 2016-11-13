@@ -41,8 +41,7 @@ This structure is pointed to by the `pVer` parameter in the `CHttpServer::GetExt
 ## Syntax  
   
 ```  
- 
-    typedef struct _HSE_VERSION_INFO {  
+typedef struct _HSE_VERSION_INFO {  
     DWORD dwExtensionVersion;  
     CHAR lpszExtensionDesc[HSE_MAX_EXT_DLL_NAME_LEN];  
 } HSE_VERSION_INFO, *LPHSE_VERSION_INFO;  

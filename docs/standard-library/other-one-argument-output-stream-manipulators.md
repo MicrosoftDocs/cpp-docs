@@ -38,7 +38,7 @@ The following example uses a class `money`, which is a `long` type. The `setpic`
   
 ## Example  
   
-```  
+```cpp  
 // one_arg_output.cpp  
 // compile with: /GR /EHsc  
 #include <iostream>  

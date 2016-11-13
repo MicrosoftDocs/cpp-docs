@@ -41,8 +41,7 @@ The `DEVNAMES` structure contains strings that identify the driver, device, and 
 ## Syntax  
   
 ```  
- 
-    typedef struct tagDEVNAMES { /* dvnm */  
+typedef struct tagDEVNAMES { /* dvnm */  
     WORD wDriverOffset;  
     WORD wDeviceOffset;  
     WORD wOutputOffset;  

@@ -121,7 +121,7 @@ dateorder date_order() const;
   
 ### Example  
   
-```  
+```cpp  
 // time_get_date_order.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -581,7 +581,7 @@ iter_type get_date(iter_type first,
   
 ### Example  
   
-```  
+```cpp  
 // time_get_get_date.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -669,7 +669,7 @@ iter_type get_monthname(iter_type first,
   
 ### Example  
   
-```  
+```cpp  
 // time_get_get_monthname.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -757,7 +757,7 @@ iter_type get_time(iter_type first,
   
 ### Example  
   
-```  
+```cpp  
 // time_get_get_time.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -834,7 +834,7 @@ iter_type get_weekday(iter_type first,
   
 ### Example  
   
-```  
+```cpp  
 // time_get_get_weekday.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -907,7 +907,7 @@ iter_type get_year(iter_type first,
   
 ### Example  
   
-```  
+```cpp  
 // time_get_get_year.cpp  
 // compile with: /EHsc  
 #include <locale>  

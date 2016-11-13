@@ -60,7 +60,7 @@ struct is_reference;
   
 ## Example  
   
-```  
+```cpp  
 // std__type_traits__is_reference.cpp   
 // compile with: /EHsc   
 #include <type_traits>   

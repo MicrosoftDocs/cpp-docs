@@ -40,7 +40,7 @@ Type abs(const complex<Type>& complexNum);
   
 ### Example  
   
-```  
+```cpp  
 // complex_abs.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -123,7 +123,7 @@ Type arg(const complex<Type>& complexNum);
   
 ### Example  
   
-```  
+```cpp  
 // complex_arg.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -206,7 +206,7 @@ complex<Type> conj(const complex<Type>& complexNum);
   
 ### Example  
   
-```  
+```cpp  
 // complex_conj.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -281,7 +281,7 @@ complex<Type> cos(const complex<Type>& complexNum);
   
 ### Example  
   
-```  
+```cpp  
 // complex_cos.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -368,7 +368,7 @@ complex<Type> cosh(const complex<Type>& complexNum);
   
 ### Example  
   
-```  
+```cpp  
 // complex_cosh.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -448,7 +448,7 @@ complex<Type> exp(const complex<Type>& complexNum);
   
 ### Example  
   
-```  
+```cpp  
 // complex_exp.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -519,7 +519,7 @@ Type imag(const complex<Type>& complexNum);
   
 ### Example  
   
-```  
+```cpp  
 // complexc_imag.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -567,7 +567,7 @@ complex<Type> log(const complex<Type>& complexNum);
   
 ### Example  
   
-```  
+```cpp  
 // complex_log.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -633,7 +633,7 @@ complex<Type> log10(const complex<Type>& complexNum);
   
 ### Example  
   
-```  
+```cpp  
 // complex_log10.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -699,7 +699,7 @@ Type norm(const complex<Type>& complexNum);
   
 ### Example  
   
-```  
+```cpp  
 // complex_norm.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -781,7 +781,7 @@ complex<Type> polar(const Type& _Modulus, const Type& _Argument = 0);
   
 ### Example  
   
-```  
+```cpp  
 // complex_polar.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -865,7 +865,7 @@ complex<Type> pow(const Type& _Base, const complex<Type>& _Power);
   
 ### Example  
   
-```  
+```cpp  
 // complex_pow.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -992,7 +992,7 @@ Type real(const complex<Type>& complexNum);
   
 ### Example  
   
-```  
+```cpp  
 // complex_real.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -1044,7 +1044,7 @@ complex<Type> sin(const complex<Type>& complexNum);
   
 ### Example  
   
-```  
+```cpp  
 // complex_sin.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1131,7 +1131,7 @@ complex<Type> sinh(const complex<Type>& complexNum);
   
 ### Example  
   
-```  
+```cpp  
 // complex_sinh.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1218,7 +1218,7 @@ complex<Type> sqrt(const complex<Type>& complexNum);
   
 ### Example  
   
-```  
+```cpp  
 // complex_sqrt.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -1289,7 +1289,7 @@ complex<Type> tan(const complex<Type>& complexNum);
   
 ### Example  
   
-```  
+```cpp  
 // complex_tan.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1374,7 +1374,7 @@ complex<Type> tanh(const complex<Type>& complexNum);
   
 ### Example  
   
-```  
+```cpp  
 // complex_tanh.cpp  
 // compile with: /EHsc  
 #include <vector>  

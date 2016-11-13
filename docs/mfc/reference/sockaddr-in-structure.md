@@ -41,11 +41,10 @@ In the Internet address family, the `SOCKADDR_IN` structure is used by Windows S
 ## Syntax  
   
 ```  
- 
-    struct sockaddr_in{  
+struct sockaddr_in{  
     short sin_family;  
     unsigned short sin_port;  
-    struct in_addr sin_addr;  
+struct in_addr sin_addr;  
     char sin_zero[8];  
 };  
 ```  

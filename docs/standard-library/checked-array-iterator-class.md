@@ -212,7 +212,7 @@ _Iterator base() const;
   
 ### Example  
   
-```  
+```cpp  
 // checked_array_iterators_base.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -268,7 +268,7 @@ checked_array_iterator(
   
 ### Example  
   
-```  
+```cpp  
 // checked_array_iterators_ctor.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -332,7 +332,7 @@ bool operator==(const checked_array_iterator<_Iterator>& right) const;
   
 ### Example  
   
-```  
+```cpp  
 // checked_array_iterators_opeq.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -385,7 +385,7 @@ bool operator!=(const checked_array_iterator<_Iterator>& right) const;
   
 ### Example  
   
-```  
+```cpp  
 // checked_array_iterators_opneq.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -438,7 +438,7 @@ bool operator<(const checked_array_iterator<_Iterator>& right) const;
   
 ### Example  
   
-```  
+```cpp  
 // checked_array_iterators_oplt.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -523,7 +523,7 @@ bool operator>=(const checked_array_iterator<_Iterator>& right) const;
   
 ### Example  
   
-```  
+```cpp  
 // checked_array_iterators_opgteq.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -575,7 +575,7 @@ reference operator*() const;
   
 ### Example  
   
-```  
+```cpp  
 // checked_array_iterator_pointer.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -650,7 +650,7 @@ checked_array_iterator<_Iterator> operator++(int);
   
 ### Example  
   
-```  
+```cpp  
 // checked_array_iterators_op_plus_plus.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -695,7 +695,7 @@ checked_array_iterator<_Iterator> operator--(int);
   
 ### Example  
   
-```  
+```cpp  
 // checked_array_iterators_op_minus_minus.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -742,7 +742,7 @@ checked_array_iterator<_Iterator>& operator+=(difference_type _Off);
   
 ### Example  
   
-```  
+```cpp  
 // checked_array_iterators_op_plus_eq.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -786,7 +786,7 @@ checked_array_iterator<_Iterator> operator+(difference_type _Off) const;
   
 ### Example  
   
-```  
+```cpp  
 // checked_array_iterators_op_plus.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -830,7 +830,7 @@ checked_array_iterator<_Iterator>& operator-=(difference_type _Off);
   
 ### Example  
   
-```  
+```cpp  
 // checked_array_iterators_op_minus_eq.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -896,7 +896,7 @@ reference operator[](difference_type _Off) const;
   
 ### Example  
   
-```  
+```cpp  
 // checked_array_iterators_op_diff.cpp  
 // compile with: /EHsc  
 #include <vector>  

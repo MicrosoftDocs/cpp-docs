@@ -38,7 +38,7 @@ bool operator!=(const queue <Type, Container>& left, const queue <Type, Containe
   
 ### Example  
   
-```  
+```cpp  
 // queue_op_ne.cpp  
 // compile with: /EHsc  
 #include <queue>  
@@ -101,7 +101,7 @@ bool operator<(const queue <Type, Container>& left, const queue <Type, Container
   
 ### Example  
   
-```  
+```cpp  
 // queue_op_lt.cpp  
 // compile with: /EHsc  
 #include <queue>  
@@ -160,7 +160,7 @@ bool operator<=(const queue <Type, Container>& left, const queue <Type, Containe
   
 ### Example  
   
-```  
+```cpp  
 // queue_op_le.cpp  
 // compile with: /EHsc  
 #include <queue>  
@@ -221,7 +221,7 @@ bool operator==(const queue <Type, Container>& left, const queue <Type, Containe
   
 ### Example  
   
-```  
+```cpp  
 // queue_op_eq.cpp  
 // compile with: /EHsc  
 #include <queue>  
@@ -283,7 +283,7 @@ bool operator>(const queue <Type, Container>& left, const queue <Type, Container
   
 ### Example  
   
-```  
+```cpp  
 // queue_op_gt.cpp  
 // compile with: /EHsc  
 #include <queue>  
@@ -345,7 +345,7 @@ bool operator>=(const queue <Type, Container>& left, const queue <Type, Containe
   
 ### Example  
   
-```  
+```cpp  
 // queue_op_ge.cpp  
 // compile with: /EHsc  
 #include <queue>  

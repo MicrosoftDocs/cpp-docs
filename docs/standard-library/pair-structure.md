@@ -88,7 +88,7 @@ struct pair
   
 ## Example  
   
-```  
+```cpp  
 // utility_pair.cpp  
 // compile with: /EHsc  
 #include <utility>  

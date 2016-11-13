@@ -103,7 +103,7 @@ typedef CharType char_type;
   
 ### Example  
   
-```  
+```cpp  
 // ostreambuf_iterator_char_type.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -154,7 +154,7 @@ bool failed() const throw();
   
 ### Example  
   
-```  
+```cpp  
 // ostreambuf_iterator_failed.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -202,7 +202,7 @@ ostreambuf_iterator<CharType, Traits>& operator*();
   
 ### Example  
   
-```  
+```cpp  
 // ostreambuf_iterator_op_deref.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -248,7 +248,7 @@ ostreambuf_iterator<CharType, Traits>& operator++(int);
   
 ### Example  
   
-```  
+```cpp  
 // ostreambuf_iterator_op_incr.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -297,7 +297,7 @@ ostreambuf_iterator<CharType, Traits>& operator=(
   
 ### Example  
   
-```  
+```cpp  
 // ostreambuf_iterator_op_assign.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -349,7 +349,7 @@ ostreambuf_iterator(ostream_type& _Ostr) throw();
   
 ### Example  
   
-```  
+```cpp  
 // ostreambuf_iterator_ostreambuf_iterator.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -418,7 +418,7 @@ typedef Traits traits_type;
   
 ### Example  
   
-```  
+```cpp  
 // ostreambuf_iterator_traits_type.cpp  
 // compile with: /EHsc  
 #include <iterator>  

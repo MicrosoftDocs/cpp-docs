@@ -46,7 +46,7 @@ bool operator!=(const istreambuf_iterator<CharType, Traits>& left, const istream
   
 ### Example  
   
-```  
+```cpp  
 // iterator_op_ne.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -148,7 +148,7 @@ bool operator==(
   
 ### Example  
   
-```  
+```cpp  
 // iterator_op_eq.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -231,7 +231,7 @@ bool operator<(const reverse_iterator<RandomIterator>& left, const reverse_itera
   
 ### Example  
   
-```  
+```cpp  
 // iterator_op_lt.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -318,7 +318,7 @@ bool operator<=(const reverse_iterator<RandomIterator>& left, const reverse_iter
   
 ### Example  
   
-```  
+```cpp  
 // iterator_op_le.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -409,7 +409,7 @@ bool operator>(const reverse_iterator<RandomIterator>& left, const reverse_itera
   
 ### Example  
   
-```  
+```cpp  
 // iterator_op_gt.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -494,7 +494,7 @@ bool operator>=(const reverse_iterator<RandomIterator>& left, const reverse_iter
   
 ### Example  
   
-```  
+```cpp  
 // iterator_op_ge.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -591,7 +591,7 @@ operator+(
   
 ### Example  
   
-```  
+```cpp  
 // iterator_op_insert.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -672,7 +672,7 @@ Tdiff operator-(
   
 ### Example  
   
-```  
+```cpp  
 // iterator_op_sub.cpp  
 // compile with: /EHsc  
 #include <iterator>  

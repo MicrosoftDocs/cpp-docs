@@ -108,7 +108,7 @@ typedef std::ptrdiff_t difference_type;
   
 ### Example  
   
-```  
+```cpp  
   
 #include <regex>   
 #include <iostream>   
@@ -217,7 +217,7 @@ typedef std::forward_iterator_tag iterator_category;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__regex_token_iterator_iterator_category.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -331,7 +331,7 @@ bool operator!=(const regex_token_iterator& right);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__regex_token_iterator_operator_ne.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -441,7 +441,7 @@ const sub_match<BidIt>& operator*();
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__regex_token_iterator_operator_star.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -555,7 +555,7 @@ regex_token_iterator& operator++(int);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__regex_token_iterator_operator_inc.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -669,7 +669,7 @@ bool operator==(const regex_token_iterator& right);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__regex_token_iterator_operator_eq.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -779,7 +779,7 @@ const sub_match<BidIt> * operator->();
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__regex_token_iterator_operator_arrow.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -886,7 +886,7 @@ typedef sub_match<BidIt> *pointer;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__regex_token_iterator_pointer.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -999,7 +999,7 @@ typedef sub_match<BidIt>& reference;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__regex_token_iterator_reference.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -1141,7 +1141,7 @@ regex_token_iterator(BidIt first, BidIt last,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__regex_token_iterator_construct.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -1251,7 +1251,7 @@ typedef basic_regex<Elem, RXtraits> regex_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__regex_token_iterator_regex_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -1361,7 +1361,7 @@ typedef sub_match<BidIt> value_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__regex_token_iterator_value_type.cpp   
 // compile with: /EHsc   
 #include <regex>   

@@ -252,7 +252,7 @@ iter_type put(
   
 ### Example  
   
-```  
+```cpp  
 // money_put_put.cpp  
 // compile with: /EHsc  
 #include <locale>  

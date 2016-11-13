@@ -38,7 +38,7 @@ The iostream class library provides a set of macros for creating parameterized m
   
 ## Example  
   
-```  
+```cpp  
 // output_stream_manip.cpp  
 // compile with: /GR /EHsc  
 #include <iostream>  

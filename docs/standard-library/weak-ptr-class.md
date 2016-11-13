@@ -124,7 +124,7 @@ typedef Ty element_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__weak_ptr_element_type.cpp   
 // compile with: /EHsc   
 #include <memory>   
@@ -159,7 +159,7 @@ bool expired() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__weak_ptr_expired.cpp   
 // compile with: /EHsc   
 #include <memory>   
@@ -215,7 +215,7 @@ shared_ptr<Ty> lock() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__weak_ptr_lock.cpp   
 // compile with: /EHsc   
 #include <memory>   
@@ -287,7 +287,7 @@ weak_ptr& operator=(const shared_ptr<Other>& sp);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__weak_ptr_operator_as.cpp   
 // compile with: /EHsc   
 #include <memory>   
@@ -348,7 +348,7 @@ void reset();
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__weak_ptr_reset.cpp   
 // compile with: /EHsc   
 #include <memory>   
@@ -393,7 +393,7 @@ void swap(weak_ptr& wp);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__weak_ptr_swap.cpp   
 // compile with: /EHsc   
 #include <memory>   
@@ -457,7 +457,7 @@ long use_count() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__weak_ptr_use_count.cpp   
 // compile with: /EHsc   
 #include <memory>   
@@ -514,7 +514,7 @@ weak_ptr(const shared_ptr<Other>& sp);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__weak_ptr_construct.cpp   
 // compile with: /EHsc   
 #include <memory>   

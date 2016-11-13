@@ -41,8 +41,7 @@ The **ABC** structure contains the width of a character in a TrueType font.
 ## Syntax  
   
 ```  
- 
-    typedef struct _ABC { /* abc */  
+typedef struct _ABC { /* abc */  
     int abcA;  
     UINT abcB;  
     int abcC;  

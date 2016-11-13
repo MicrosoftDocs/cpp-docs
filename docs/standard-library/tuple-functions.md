@@ -67,7 +67,7 @@ constexpr T&& get(tuple<Types...>&& Tuple) noexcept;
   
 ### Example  
   
-```  
+```cpp  
 #include <tuple>   
 #include <iostream>   
 #include <string>  
@@ -171,7 +171,7 @@ tuple<T1&, T2&, ..., TN&> tie(T1& t1, T2& t2, ..., TN& tN);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__tuple__tie.cpp   
 // compile with: /EHsc   
 #include <tuple>   

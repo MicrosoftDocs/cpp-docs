@@ -166,7 +166,7 @@ int compare(const CharType* first1,
   
 ### Example  
   
-```  
+```cpp  
 // collate_compare.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -297,7 +297,7 @@ long hash(const CharType* first, const CharType* last) const;
   
 ### Example  
   
-```  
+```cpp  
 // collate_hash.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -358,7 +358,7 @@ string_type transform(const CharType* first, const CharType* last) const;
   
 ### Example  
   
-```  
+```cpp  
 // collate_transform.cpp  
 // compile with: /EHsc  
 #include <locale>  

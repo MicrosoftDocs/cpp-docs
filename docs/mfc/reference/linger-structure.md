@@ -41,8 +41,7 @@ The `LINGER` structure is used for manipulating the **SO_LINGER** and **SO_DONTL
 ## Syntax  
   
 ```  
- 
-    struct linger {  
+struct linger {  
     u_short l_onoff;            // option on/off  
     u_short l_linger;           // linger time  
 };  

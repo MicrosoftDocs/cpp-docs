@@ -140,7 +140,7 @@ bool always_noconv() const throw();
   
 ### Example  
   
-```  
+```cpp  
 // codecvt_always_noconv.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -454,7 +454,7 @@ int encoding() const throw();
   
 ### Example  
   
-```  
+```cpp  
 // codecvt_encoding.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -543,7 +543,7 @@ result in(
   
 ### Example  
   
-```  
+```cpp  
 // codecvt_in.cpp  
 // compile with: /EHsc  
 #define _INTL  
@@ -620,7 +620,7 @@ int length(
   
 ### Example  
   
-```  
+```cpp  
 // codecvt_length.cpp  
 // compile with: /EHsc  
 #define _INTL  
@@ -662,7 +662,7 @@ int max_length() const throw();
   
 ### Example  
   
-```  
+```cpp  
 // codecvt_max_length.cpp  
 // compile with: /EHsc  
 #define _INTL  
@@ -727,7 +727,7 @@ result out(
   
 ### Example  
   
-```  
+```cpp  
 // codecvt_out.cpp  
 // compile with: /EHsc  
 #define _INTL  

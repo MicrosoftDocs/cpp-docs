@@ -41,8 +41,7 @@ The `MINMAXINFO` structure contains information about a window's maximized size 
 ## Syntax  
   
 ```  
- 
-    typedef struct tagMINMAXINFO {  
+typedef struct tagMINMAXINFO {  
     POINT ptReserved;  
     POINT ptMaxSize;  
     POINT ptMaxPosition;  

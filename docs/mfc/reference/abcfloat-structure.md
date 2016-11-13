@@ -41,8 +41,7 @@ The `ABCFLOAT` structure contains the A, B, and C widths of a font character.
 ## Syntax  
   
 ```  
- 
-    typedef struct _ABCFLOAT { /* abcf */  
+typedef struct _ABCFLOAT { /* abcf */  
     FLOAT abcfA;  
     FLOAT abcfB;  
     FLOAT abcfC;  

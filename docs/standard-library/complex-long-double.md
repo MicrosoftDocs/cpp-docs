@@ -76,7 +76,7 @@ complex(
   
 ## Example  
   
-```  
+```cpp  
 // complex_comp_ld.cpp  
 // compile with: /EHsc  
 #include <complex>  

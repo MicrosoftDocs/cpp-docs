@@ -49,7 +49,7 @@ class valarray<bool>
   
 ## Example  
   
-```  
+```cpp  
 // valarray_bool.cpp  
 // compile with: /EHsc  
 #include <valarray>  

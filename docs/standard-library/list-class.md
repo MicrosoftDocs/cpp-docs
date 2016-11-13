@@ -186,7 +186,7 @@ void assign(
   
 ### Example  
   
-```  
+```cpp  
 // list_assign.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -253,7 +253,7 @@ const_reference back() const;
   
 ### Example  
   
-```  
+```cpp  
 // list_back.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -298,7 +298,7 @@ iterator begin();
   
 ### Example  
   
-```  
+```cpp  
 // list_begin.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -390,7 +390,7 @@ void clear();
   
 ### Example  
   
-```  
+```cpp  
 // list_clear.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -452,7 +452,7 @@ typedef typename Allocator::const_reference const_reference;
   
 ### Example  
   
-```  
+```cpp  
 // list_const_ref.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -512,7 +512,7 @@ const_reverse_iterator rbegin() const;
   
 ### Example  
   
-```  
+```cpp  
 // list_crbegin.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -557,7 +557,7 @@ const_reverse_iterator rend() const;
   
 ### Example  
   
-```  
+```cpp  
 // list_crend.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -598,7 +598,7 @@ typedef typename Allocator::difference_type difference_type;
   
 ### Example  
   
-```  
+```cpp  
 // list_diff_type.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -659,7 +659,7 @@ void emplace_back(iterator _Where, Type&& val);
   
 ### Example  
   
-```  
+```cpp  
 // list_emplace.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -700,7 +700,7 @@ void emplace_back(Type&& val);
   
 ### Example  
   
-```  
+```cpp  
 // list_emplace_back.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -741,7 +741,7 @@ void emplace_front(Type&& val);
   
 ### Example  
   
-```  
+```cpp  
 // list_emplace_front.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -775,7 +775,7 @@ bool empty() const;
   
 ### Example  
   
-```  
+```cpp  
 // list_empty.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -815,7 +815,7 @@ iterator end();
   
 ### Example  
   
-```  
+```cpp  
 // list_end.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -885,7 +885,7 @@ iterator erase(iterator first, iterator last);
   
 ### Example  
   
-```  
+```cpp  
 // list_erase.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -947,7 +947,7 @@ const_reference front() const;
   
 ### Example  
   
-```  
+```cpp  
 // list_front.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -988,7 +988,7 @@ Allocator get_allocator() const;
   
 ### Example  
   
-```  
+```cpp  
 // list_get_allocator.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1054,7 +1054,7 @@ void insert(
   
 ### Example  
   
-```  
+```cpp  
 // list_class_insert.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1315,7 +1315,7 @@ size_type max_size() const;
   
 ### Example  
   
-```  
+```cpp  
 // list_max_size.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1359,7 +1359,7 @@ void merge(
   
 ### Example  
   
-```  
+```cpp  
 // list_merge.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1437,7 +1437,7 @@ list& operator=(list&& right);
   
 ### Example  
   
-```  
+```cpp  
 // list_operator_as.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1500,7 +1500,7 @@ void pop_back();
   
 ### Example  
   
-```  
+```cpp  
 // list_pop_back.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1540,7 +1540,7 @@ void pop_front();
   
 ### Example  
   
-```  
+```cpp  
 // list_pop_front.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1587,7 +1587,7 @@ void push_back(void push_back(Type&& val);
   
 ### Example  
   
-```  
+```cpp  
 // list_push_back.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1643,7 +1643,7 @@ void push_front(Type&& val);
   
 ### Example  
   
-```  
+```cpp  
 // list_push_front.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1699,7 +1699,7 @@ reverse_iterator rbegin();
   
 ### Example  
   
-```  
+```cpp  
 // list_rbegin.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1756,7 +1756,7 @@ typedef typename Allocator::reference reference;
   
 ### Example  
   
-```  
+```cpp  
 // list_ref.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1798,7 +1798,7 @@ void remove(const Type& val);
   
 ### Example  
   
-```  
+```cpp  
 // list_remove.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1850,7 +1850,7 @@ void remove_if(Predicate pred)
   
 ### Example  
   
-```  
+```cpp  
 // list_remove_if.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1922,7 +1922,7 @@ reverse_iterator rend();
   
 ### Example  
   
-```  
+```cpp  
 // list_rend.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -2010,7 +2010,7 @@ void resize(size_type _Newsize, Type val);
   
 ### Example  
   
-```  
+```cpp  
 // list_resize.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -2057,7 +2057,7 @@ void reverse();
   
 ### Example  
   
-```  
+```cpp  
 // list_reverse.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -2116,7 +2116,7 @@ size_type size() const;
   
 ### Example  
   
-```  
+```cpp  
 // list_size.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -2174,7 +2174,7 @@ void sort(Traits comp);
   
 ### Example  
   
-```  
+```cpp  
 // list_sort.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -2359,7 +2359,7 @@ friend void swap(list<Type, Allocator>& left, list<Type, Allocator>& right)
   
 ### Example  
   
-```  
+```cpp  
 // list_swap.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -2428,7 +2428,7 @@ void unique(BinaryPredicate pred);
   
 ### Example  
   
-```  
+```cpp  
 // list_unique.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -2487,7 +2487,7 @@ typedef typename Allocator::value_type value_type;
   
 ### Example  
   
-```  
+```cpp  
 // list_value_type.cpp  
 // compile with: /EHsc  
 #include <list>  

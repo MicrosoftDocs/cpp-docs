@@ -211,7 +211,7 @@ iterator begin();
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_begin.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -269,7 +269,7 @@ const_iterator cbegin() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_cbegin.cpp  
 // compile with: /EHsc  
 #include <hash_multimap>  
@@ -319,7 +319,7 @@ const_iterator cend() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_cend.cpp  
 // compile with: /EHsc  
 #include <hash_multimap>  
@@ -456,7 +456,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::co
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_const_ref.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -618,7 +618,7 @@ const_reverse_iterator crbegin() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_crbegin.cpp  
 // compile with: /EHsc  
 #include <hash_multimap>  
@@ -672,7 +672,7 @@ const_reverse_iterator crend() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_crend.cpp  
 // compile with: /EHsc  
 #include <hash_multimap>  
@@ -720,7 +720,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::di
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_difference_type.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -807,7 +807,7 @@ iterator emplace(ValTy&& val);
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_emplace.cpp  
 // compile with: /EHsc  
 #include<hash_multimap>  
@@ -868,7 +868,7 @@ iterator emplace_hint(
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_emplace_hint.cpp  
 // compile with: /EHsc  
 #include<hash_multimap>  
@@ -914,7 +914,7 @@ bool empty() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_empty.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -971,7 +971,7 @@ iterator end();
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_end.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -1044,7 +1044,7 @@ pair <iterator, iterator> equal_range (const Key& key);
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_equal_range.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -1258,7 +1258,7 @@ const_iterator find(const Key& key) const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_find.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -1345,7 +1345,7 @@ Allocator get_allocator() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_get_allocator.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -1589,7 +1589,7 @@ key_compare key_comp() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_key_comp.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -1705,7 +1705,7 @@ const_iterator lower_bound(const Key& key) const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_lower_bound.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -1812,7 +1812,7 @@ size_type max_size() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_max_size.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -1856,7 +1856,7 @@ hash_multimap& operator=(hash_multimap&& right);
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_operator_as.cpp  
 // compile with: /EHsc  
 #include <hash_multimap>  
@@ -1937,7 +1937,7 @@ reverse_iterator rbegin();
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_rbegin.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -2011,7 +2011,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::re
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_reference.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -2088,7 +2088,7 @@ reverse_iterator rend();
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_rend.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -2256,7 +2256,7 @@ void swap(hash_multimap& right);
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_swap.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -2333,7 +2333,7 @@ const_iterator upper_bound(const Key& key) const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_upper_bound.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -2416,7 +2416,7 @@ value_compare value_comp() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_value_comp.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -2479,7 +2479,7 @@ typedef pair<const Key, Type> value_type;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_value_type.cpp  
 // compile with: /EHsc  
 #include <hash_map>  

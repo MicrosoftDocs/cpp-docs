@@ -60,7 +60,7 @@ struct is_array;
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__type_traits__is_array.cpp   
 // compile with: /EHsc   
 #include <type_traits>   

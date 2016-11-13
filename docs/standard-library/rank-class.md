@@ -60,7 +60,7 @@ struct rank;
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__type_traits__rank.cpp   
 // compile with: /EHsc   
 #include <type_traits>   

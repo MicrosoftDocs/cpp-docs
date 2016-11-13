@@ -197,7 +197,7 @@ bool is_open() const;
   
 ### Example  
   
-```  
+```cpp  
 // basic_ofstream_is_open.cpp  
 // compile with: /EHsc  
 #include <fstream>  

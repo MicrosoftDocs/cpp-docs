@@ -99,7 +99,7 @@ typedef CharType char_type;
   
 ### Example  
   
-```  
+```cpp  
 // ostream_iterator_char_type.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -149,7 +149,7 @@ ostream_iterator<Type, CharType, Traits>& operator*();
   
 ### Example  
   
-```  
+```cpp  
 // ostream_iterator_op_deref.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -197,7 +197,7 @@ ostream_iterator<Type, CharType, Traits> operator++(int);
   
 ### Example  
   
-```  
+```cpp  
 // ostream_iterator_op_incr.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -248,7 +248,7 @@ ostream_iterator<Type, CharType, Traits>& operator=(
   
 ### Example  
   
-```  
+```cpp  
 // ostream_iterator_op_assign.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -305,7 +305,7 @@ ostream_iterator(
   
 ### Example  
   
-```  
+```cpp  
 // ostream_iterator_ostream_iterator.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -375,7 +375,7 @@ typedef Traits traits_type;
   
 ### Example  
   
-```  
+```cpp  
 // ostream_iterator_traits_type.cpp  
 // compile with: /EHsc  
 #include <iterator>  

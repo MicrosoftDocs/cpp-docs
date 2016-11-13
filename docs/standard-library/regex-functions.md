@@ -129,7 +129,7 @@ bool regex_match(
   
 ### Example  
   
-```  
+```cpp  
   
 #include "stdafx.h"  
 #include <regex>   
@@ -244,7 +244,7 @@ regex_replace(const basic_string<Elem>& str,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__regex_replace.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -371,7 +371,7 @@ bool regex_search(const basic_string<Elem, IOtraits, IOalloc>& str,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__regex_search.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -451,7 +451,7 @@ void swap(match_results<BidIt, Alloc>& left,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__swap.cpp   
 // compile with: /EHsc   
 #include <regex>   

@@ -41,8 +41,7 @@ The `LOGPEN` structure defines the style, width, and color of a pen, a drawing o
 ## Syntax  
   
 ```  
- 
-    typedef struct tagLOGPEN {  /* lgpn */  
+typedef struct tagLOGPEN {  /* lgpn */  
     UINT lopnStyle;  
     POINT lopnWidth;  
     COLORREF lopnColor;  

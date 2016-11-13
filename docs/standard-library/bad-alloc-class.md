@@ -61,7 +61,7 @@ virtual ~bad_alloc();
   
 ## Example  
   
-```  
+```cpp  
 // bad_alloc.cpp  
 // compile with: /EHsc  
 #include<new>  

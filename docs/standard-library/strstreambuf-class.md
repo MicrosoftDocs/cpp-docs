@@ -111,7 +111,7 @@ void freeze(bool _Freezeit = true);
   
 ### Example  
   
-```  
+```cpp  
 // strstreambuf_freeze.cpp  
 // compile with: /EHsc  
   
@@ -234,7 +234,7 @@ streamsize pcount() const;
   
 ### Example  
   
-```  
+```cpp  
 // strstreambuf_pcount.cpp  
 // compile with: /EHsc  
 #include <iostream>  

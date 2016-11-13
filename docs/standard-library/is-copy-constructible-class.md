@@ -57,7 +57,7 @@ struct is_copy_constructible;
   
 ## Example  
   
-```  
+```cpp  
 #include <type_traits>   
 #include <iostream>   
   

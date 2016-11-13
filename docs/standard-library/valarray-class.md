@@ -133,7 +133,7 @@ valarray<Type> apply(Type _Func(constType&)) const;
   
 ### Example  
   
-```  
+```cpp  
 // valarray_apply.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -201,7 +201,7 @@ valarray<Type> cshift(int count) const;
   
 ### Example  
   
-```  
+```cpp  
 // valarray_cshift.cpp  
 // compile with: /EHsc  
   
@@ -285,7 +285,7 @@ Type max() const;
   
 ### Example  
   
-```  
+```cpp  
 // valarray_max.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -334,7 +334,7 @@ Type min() const;
   
 ### Example  
   
-```  
+```cpp  
 // valarray_min.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -385,7 +385,7 @@ valarray<bool> operator!() const;
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_lognot.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -440,7 +440,7 @@ valarray<Type>& operator%=(const Type& right);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_class_op_rem.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -507,7 +507,7 @@ valarray<Type>& operator&=(const Type& right);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_class_op_bitand.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -572,7 +572,7 @@ valarray<Type>& operator>>=(const Type& right);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_class_op_rs.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -637,7 +637,7 @@ valarray<Type>& operator<<=(const Type& right);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_class_op_ls.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -700,7 +700,7 @@ valarray<Type>& operator*=(const Type& right);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_emult.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -756,7 +756,7 @@ valarray<Type> operator+() const;
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_eplus.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -811,7 +811,7 @@ valarray<Type>& operator+=(const Type& right);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_eadd.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -867,7 +867,7 @@ valarray<Type> operator-() const;
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_eminus.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -922,7 +922,7 @@ valarray<Type>& operator-=(const Type& right);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_esub.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -984,7 +984,7 @@ valarray<Type>& operator/=(const Type& right);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_ediv.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -1082,7 +1082,7 @@ valarray<Type>& operator=(const indirect_array<Type>& _Indarray);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_assign.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -1209,7 +1209,7 @@ valarray<Type>& operator|=(const Type& right);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_exor.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -1280,7 +1280,7 @@ valarray<Type>& operator|=(const Type& right);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_class_op_bitor.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -1348,7 +1348,7 @@ valarray<Type> operator~() const;
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_bitnot.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -1514,7 +1514,7 @@ valarray<Type> shift(int count) const;
   
 ### Example  
   
-```  
+```cpp  
 // valarray_shift.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -1651,7 +1651,7 @@ Type sum() const;
   
 ### Example  
   
-```  
+```cpp  
 // valarray_sum.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -1780,7 +1780,7 @@ valarray(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_ctor.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -1840,7 +1840,7 @@ typedef Type value_type;
   
 ### Example  
   
-```  
+```cpp  
 // valarray_value_type.cpp  
 // compile with: /EHsc  
 #include <valarray>  

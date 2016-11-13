@@ -137,7 +137,7 @@ const_pointer address(const_reference val) const;
   
 ### Example  
   
-```  
+```cpp  
 // allocator_address.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -203,7 +203,7 @@ pointer allocate(
   
 ### Example  
   
-```  
+```cpp  
 // allocator_allocate.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -261,7 +261,7 @@ allocator(const allocator<Other>& right);
   
 ### Example  
   
-```  
+```cpp  
 // allocator_allocator.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -334,7 +334,7 @@ typedef const value_type *const_pointer;
   
 ### Example  
   
-```  
+```cpp  
 // allocator_const_ptr.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -387,7 +387,7 @@ typedef const value_type& const_reference;
   
 ### Example  
   
-```  
+```cpp  
 // allocator_const_ref.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -463,7 +463,7 @@ void construct(pointer ptr, _Other&&...   val);
   
 ### Example  
   
-```  
+```cpp  
 // allocator_construct.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -546,7 +546,7 @@ void destroy(pointer ptr);
   
 ### Example  
   
-```  
+```cpp  
 // allocator_destroy.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -605,7 +605,7 @@ typedef ptrdiff_t difference_type;
   
 ### Example  
   
-```  
+```cpp  
 // allocator_diff_type.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -664,7 +664,7 @@ size_type max_size() const;
   
 ### Example  
   
-```  
+```cpp  
 // allocator_max_size.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -739,7 +739,7 @@ allocator<Type>& operator=(const allocator<Other>& right);
   
 ### Example  
   
-```  
+```cpp  
 // allocator_op_assign.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -790,7 +790,7 @@ typedef value_type *pointer;
   
 ### Example  
   
-```  
+```cpp  
 // allocator_ptr.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -833,9 +833,9 @@ The integer addressed by v1Ptr has a value of: *v1Ptr = 12.
   
 ##  <a name="allocator__rebind"></a>  allocator::rebind  
  A structure that enables an allocator for objects of one type to allocate storage for objects of another type.  
-  
-struct rebind {    typedef allocator\<_Other> other ;    };  
-  
+```  
+struct rebind {    typedef allocator<_Other> other ;    };  
+```  
 ### Parameters  
  *other*  
  The type of element for which memory is being allocated.  
@@ -859,7 +859,7 @@ A::rebind<Other>::other::pointer
   
 ### Example  
   
-```  
+```cpp  
 // allocator_rebind.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -894,7 +894,7 @@ typedef value_type& reference;
   
 ### Example  
   
-```  
+```cpp  
 // allocator_reference.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -949,7 +949,7 @@ typedef size_t size_type;
   
 ### Example  
   
-```  
+```cpp  
 // allocator_size_type.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -996,7 +996,7 @@ typedef Type value_type;
   
 ### Example  
   
-```  
+```cpp  
 // allocator_value_type.cpp  
 // compile with: /EHsc  
 #include <memory>  

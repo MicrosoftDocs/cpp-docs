@@ -41,8 +41,7 @@ The `PAINTSTRUCT` structure contains information that can be used to paint the c
 ## Syntax  
   
 ```  
- 
-    typedef struct tagPAINTSTRUCT {  
+typedef struct tagPAINTSTRUCT {  
     HDC hdc;  
     BOOL fErase;  
     RECT rcPaint;  

@@ -41,8 +41,7 @@ The *ObjectFunc* name is a placeholder for the application-supplied function nam
 ## Syntax  
   
 ```  
- 
-    int CALLBACK EXPORT ObjectFunc(
+int CALLBACK EXPORT ObjectFunc(
     LPSTR lpszLogObject,  
     LPSTR* lpData);
 ```  

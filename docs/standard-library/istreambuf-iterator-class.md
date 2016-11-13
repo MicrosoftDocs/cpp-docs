@@ -107,7 +107,7 @@ typedef CharType char_type;
   
 ### Example  
   
-```  
+```cpp  
 // istreambuf_iterator_char_type.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -158,7 +158,7 @@ bool equal(
   
 ### Example  
   
-```  
+```cpp  
 // istreambuf_iterator_equal.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -196,7 +196,7 @@ typedef typename traits_type::int_type int_type;
   
 ### Example  
   
-```  
+```cpp  
 // istreambuf_iterator_int_type.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -247,7 +247,7 @@ istreambuf_iterator(istream_type& _Istr) throw();
   
 ### Example  
   
-```  
+```cpp  
 // istreambuf_iterator_istreambuf_iterator.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -289,7 +289,7 @@ CharType operator*() const;
   
 ### Example  
   
-```  
+```cpp  
 // istreambuf_iterator_operator_deref.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -332,7 +332,7 @@ istreambuf_iterator<CharType, Traits> operator++(int);
   
 ### Example  
   
-```  
+```cpp  
 // istreambuf_iterator_operator_incr.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -393,7 +393,7 @@ typedef Traits traits_type;
   
 ### Example  
   
-```  
+```cpp  
 // istreambuf_iterator_traits_type.cpp  
 // compile with: /EHsc  
 #include <iterator>  

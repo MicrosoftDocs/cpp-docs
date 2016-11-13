@@ -90,7 +90,7 @@ shared_ptr<const T> shared_from_this() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_memory_shared_from_this.cpp   
 // compile with: /EHsc   
 #include <memory>  

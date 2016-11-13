@@ -205,7 +205,7 @@ iterator begin();
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_begin.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -264,7 +264,7 @@ const_iterator cbegin() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_cbegin.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -311,7 +311,7 @@ const_iterator cend() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_cend.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -354,7 +354,7 @@ void clear();
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_clear.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -436,7 +436,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_const_ref.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -574,7 +574,7 @@ const_reverse_iterator crbegin() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_crbegin.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -626,7 +626,7 @@ const_reverse_iterator crend() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_crend.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -674,7 +674,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::diff
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_diff_type.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -761,7 +761,7 @@ emplace(
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_emplace.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -817,7 +817,7 @@ iterator emplace(
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_emplace_hint.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -860,7 +860,7 @@ bool empty() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_empty.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -913,7 +913,7 @@ iterator end();
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_end.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -980,7 +980,7 @@ pair <iterator, iterator> equal_range (const Key& key);
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_equal_range.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -1184,7 +1184,7 @@ const_iterator find(const Key& key) const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_find.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -1255,7 +1255,7 @@ Allocator get_allocator() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_get_allocator.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -1486,7 +1486,7 @@ key_compare key_comp() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_key_comp.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -1604,7 +1604,7 @@ iterator lower_bound(const Key& key);
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_lower_bound.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -1671,7 +1671,7 @@ size_type max_size() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_max_size.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -1715,7 +1715,7 @@ hash_set& operator=(hash_set&& right);
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_operator_as.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -1796,7 +1796,7 @@ reverse_iterator rbegin();
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_rbegin.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -1868,7 +1868,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::refe
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_reference.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -1930,7 +1930,7 @@ reverse_iterator rend();
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_rend.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -2027,7 +2027,7 @@ size_type size() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_size.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -2094,7 +2094,7 @@ void swap(hash_set& right);
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_swap.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -2171,7 +2171,7 @@ iterator upper_bound(const Key& key);
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_upper_bound.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -2248,7 +2248,7 @@ value_compare value_comp() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_value_comp.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -2331,7 +2331,7 @@ typedef Key value_type;
   
 ### Example  
   
-```  
+```cpp  
 // hash_set_value_type.cpp  
 // compile with: /EHsc  
 #include <hash_set>  

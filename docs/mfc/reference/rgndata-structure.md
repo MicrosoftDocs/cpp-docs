@@ -41,8 +41,7 @@ The `RGNDATA` structure contains a header and an array of rectangles that compos
 ## Syntax  
   
 ```  
- 
-    typedef struct _RGNDATA { /* rgnd */  
+typedef struct _RGNDATA { /* rgnd */  
     RGNDATAHEADER rdh;  
     char Buffer[1];  
 } RGNDATA;  

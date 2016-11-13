@@ -41,8 +41,7 @@ The `MEASUREITEMSTRUCT` structure informs Windows of the dimensions of an owner-
 ## Syntax  
   
 ```  
- 
-    typedef struct tagMEASUREITEMSTRUCT {  
+typedef struct tagMEASUREITEMSTRUCT {  
     UINT CtlType;  
     UINT CtlID;  
     UINT itemID;  

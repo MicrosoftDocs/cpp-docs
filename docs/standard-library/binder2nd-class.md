@@ -46,30 +46,27 @@ A template class providing a constructor that converts a binary function object 
 ```
 template <class Operation>
 class binder2nd
- : public unary_function <typename Operation::first_argument_type,
-    typename Operation::result_type>  
+    : public unaryFunction <typename Operation::first_argument_type,
+    typename Operation::result_type>
 {
-    public:
- typedef typename Operation::argument_type argument_type;
+public:
+    typedef typename Operation::argument_type argument_type;
     typedef typename Operation::result_type result_type;
     binder2nd(
- const Operation& _Func,
-    const typename Operation::second_argument_type& right);
+        const Operation& Func,
+        const typename Operation::second_argument_type& right);
 
-    result_type operator()(
-    const argument_type& left) const;
+    result_type operator()(const argument_type& left) const;
+    result_type operator()(argument_type& left) const;
 
-    result_type operator()(
-    argument_type& left) const;
-
-    protected:
- Operation op;
+protected:
+    Operation op;
     typename Operation::second_argument_type value;
- };
+};
 ```  
   
 #### Parameters  
- `_Func`  
+ `Func`  
  The binary function object to be converted to a unary function object.  
   
  `right`  
@@ -84,11 +81,11 @@ class binder2nd
 ## Remarks  
  The template class stores a copy of a binary function object _ *Func* in **op**, and a copy of `right` in **value**. It defines its member function `operator()` as returning **op**( `left`, **value**).  
   
- If `_Func` is an object of type **Operation** and c is a constant, then [bind2nd](../standard-library/functional-functions.md#bind2nd_function) ( `_Func`, `c` ) is equivalent to the `binder2nd` class constructor `binder2nd`\< **Operation**> ( `_Func`, `c` ) and more convenient.  
+ If `Func` is an object of type **Operation** and c is a constant, then [bind2nd](../standard-library/functional-functions.md#bind2ndFunction) ( `Func`, `c` ) is equivalent to the `binder2nd` class constructor `binder2nd`\< **Operation**> ( `Func`, `c` ) and more convenient.  
   
 ## Example  
   
-```  
+```cpp  
 // functional_binder2nd.cpp  
 // compile with: /EHsc  
 #include <vector>  

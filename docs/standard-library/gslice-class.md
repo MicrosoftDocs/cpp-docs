@@ -105,7 +105,7 @@ gslice(
   
 ### Example  
   
-```  
+```cpp  
 // gslice_ctor.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -165,7 +165,7 @@ valarray<size_t> size() const;
   
 ### Example  
   
-```  
+```cpp  
 // gslice_size.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -237,7 +237,7 @@ size_t start() const;
   
 ### Example  
   
-```  
+```cpp  
 // gslice_start.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -298,7 +298,7 @@ valarray<size_t> stride() const;
   
 ### Example  
   
-```  
+```cpp  
 // gslice_stride.cpp  
 // compile with: /EHsc  
 #include <valarray>  

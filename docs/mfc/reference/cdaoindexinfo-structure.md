@@ -42,8 +42,7 @@ The `CDaoIndexInfo` structure contains information about an index object defined
 ## Syntax  
   
 ```  
- 
-    struct CDaoIndexInfo {  
+struct CDaoIndexInfo {  
     CDaoIndexInfo();
 *// Constructor  
     CString m_strName;  // Primary  

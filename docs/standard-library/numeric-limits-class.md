@@ -116,7 +116,7 @@ static Type denorm_min() throw();
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_denorm_min.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -170,7 +170,7 @@ static const int digits = 0;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_digits_min.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -208,7 +208,7 @@ static const int digits10 = 0;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_digits10.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -253,7 +253,7 @@ static Type epsilon() throw();
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_epsilon.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -302,7 +302,7 @@ static const float_denorm_style has_denorm = denorm_absent;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_has_denorm.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -345,7 +345,7 @@ static const bool has_denorm_loss = false;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_has_denorm_loss.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -388,7 +388,7 @@ static const bool has_infinity = false;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_has_infinity.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -431,7 +431,7 @@ static const bool has_quiet_NaN = false;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_has_quiet_nan.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -474,7 +474,7 @@ static const bool has_signaling_NaN = false;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_has_signaling_nan.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -517,7 +517,7 @@ static Type infinity() throw();
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_infinity.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -568,7 +568,7 @@ static const bool is_bounded = false;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_is_bounded.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -619,7 +619,7 @@ static const bool is_exact = false;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_is_exact.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -670,7 +670,7 @@ static const bool is_iec559 = false;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_is_iec559.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -717,7 +717,7 @@ static const bool is_integer = false;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_is_integer.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -764,7 +764,7 @@ static const bool is_modulo = false;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_is_modulo.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -811,7 +811,7 @@ static const bool is_signed = false;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_is_signaled.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -858,7 +858,7 @@ static const bool is_specialized = false;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_is_specialized.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -922,7 +922,7 @@ static Type max() throw();
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_max.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -974,7 +974,7 @@ static const int max_exponent = 0;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_max_exponent.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -1017,7 +1017,7 @@ static const int max_exponent10 = 0;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_max_exponent10.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -1060,7 +1060,7 @@ static Type min() throw();
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_min.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -1107,7 +1107,7 @@ static const int min_exponent = 0;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_min_exponent.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -1150,7 +1150,7 @@ static const int min_exponent10 = 0;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_min_exponent10.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -1193,7 +1193,7 @@ static Type quiet_NaN() throw();
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_quiet_nan.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -1236,7 +1236,7 @@ static const int radix = 0;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_radix.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -1276,7 +1276,7 @@ static Type round_error() throw();
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_round_error.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -1321,7 +1321,7 @@ static const float_round_style round_style = round_toward_zero;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_round_style.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -1363,7 +1363,7 @@ static Type signaling_NaN() throw();
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_signaling_nan.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -1400,7 +1400,7 @@ static const bool tinyness_before = false;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_tinyness_before.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -1444,7 +1444,7 @@ static const bool traps = false;
   
 ### Example  
   
-```  
+```cpp  
 // numeric_limits_traps.cpp  
 // compile with: /EHsc  
 #include <iostream>  

@@ -42,8 +42,7 @@ The `CDaoRelationInfo` structure contains information about a relation defined b
 ## Syntax  
   
 ```  
- 
-    struct CDaoRelationInfo  
+struct CDaoRelationInfo  
 {  
     CDaoRelationInfo();
 *// Constructor  

@@ -41,8 +41,7 @@ The `NCCALCSIZE_PARAMS` structure contains information that an application can u
 ## Syntax  
   
 ```  
- 
-    typedef struct tagNCCALCSIZE_PARAMS {  
+typedef struct tagNCCALCSIZE_PARAMS {  
     RECT rgrc[3];  
     PWINDOWPOS lppos;  
 } NCCALCSIZE_PARAMS;  

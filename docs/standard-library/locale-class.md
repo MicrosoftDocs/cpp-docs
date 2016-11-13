@@ -245,7 +245,7 @@ static const locale& classic();
   
 ### Example  
   
-```  
+```cpp  
 // locale_classic.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -299,7 +299,7 @@ locale combine(const locale& _Loc) const;
   
 ### Example  
   
-```  
+```cpp  
 // locale_combine.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -464,7 +464,7 @@ locale(
   
 ### Example  
   
-```  
+```cpp  
 // locale_locale.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -514,7 +514,7 @@ string name() const;
   
 ### Example  
   
-```  
+```cpp  
 // locale_name.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -558,7 +558,7 @@ bool operator!=(const locale& right) const;
   
 ### Example  
   
-```  
+```cpp  
 // locale_op_ne.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -635,7 +635,7 @@ return (fac.compare(left.begin(), left.end(), right.begin(), right.end()) <0);
   
 ### Example  
   
-```  
+```cpp  
 // locale_op_compare.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -683,7 +683,7 @@ bool operator==(const locale& right) const;
   
 ### Example  
   
-```  
+```cpp  
 // locale_op_eq.cpp  
 // compile with: /EHsc  
 #include <iostream>  

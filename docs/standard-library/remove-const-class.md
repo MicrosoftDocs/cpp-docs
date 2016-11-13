@@ -65,7 +65,7 @@ using remove_const_t = typename remove_const<T>::type;
   
 ## Example  
   
-```  
+```cpp  
 #include <type_traits>   
 #include <iostream>   
   

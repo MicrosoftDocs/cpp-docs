@@ -41,8 +41,7 @@ The `COMPAREITEMSTRUCT` structure supplies the identifiers and application-suppl
 ## Syntax  
   
 ```  
- 
-    typedef struct tagCOMPAREITEMSTRUCT {  
+typedef struct tagCOMPAREITEMSTRUCT {  
     UINT CtlType;  
     UINT CtlID;  
     HWND hwndItem;  

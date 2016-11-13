@@ -63,7 +63,7 @@ using remove_volatile_t = typename remove_volatile<T>::type;
   
 ## Example  
   
-```  
+```cpp  
 #include <type_traits>   
 #include <iostream>   
   

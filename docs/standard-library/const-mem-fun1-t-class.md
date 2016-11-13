@@ -49,11 +49,7 @@ class const_mem_fun1_t
  : public binary_function<const Type *, Arg, Result>  
 {
     explicit const_mem_fun1_t(Result (Type::* _Pm)(Arg) const);
-
-    Result operator()(
-    const Type* _Pleft,
-    Arg right) const;
-
+    Result operator()(const Type* _Pleft, Arg right) const;
  };
 ```  
   

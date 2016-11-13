@@ -58,7 +58,7 @@ public:
   
 ## Example  
   
-```  
+```cpp  
 // underflow_error.cpp  
 // compile with: /EHsc /GR  
 #include <iostream>  

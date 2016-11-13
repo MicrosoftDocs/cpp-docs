@@ -42,8 +42,7 @@ The `CDaoDatabaseInfo` structure contains information about a database object de
 ## Syntax  
   
 ```  
- 
-    struct CDaoDatabaseInfo  
+struct CDaoDatabaseInfo  
 {  
     CString m_strName;       // Primary  
     BOOL m_bUpdatable;       // Primary  

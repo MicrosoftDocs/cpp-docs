@@ -215,7 +215,7 @@ iter_type get(iter_type first,
   
 ### Example  
   
-```  
+```cpp  
 // money_get_get.cpp  
 // compile with: /EHsc  
 #include <locale>  

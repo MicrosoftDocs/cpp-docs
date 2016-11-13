@@ -38,7 +38,7 @@ bool operator!=(const vector<Type, Allocator>& left, const vector<Type, Allocato
   
 ### Example  
   
-```  
+```cpp  
 // vector_op_ne.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -82,7 +82,7 @@ bool operator<(const vector<Type, Allocator>& left, const vector<Type, Allocator
   
 ### Example  
   
-```  
+```cpp  
 // vector_op_lt.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -130,7 +130,7 @@ bool operator<=(const vector<Type, Allocator>& left, const vector<Type, Allocato
   
 ### Example  
   
-```  
+```cpp  
 // vector_op_le.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -181,7 +181,7 @@ bool operator==(const vector<Type, Allocator>& left, const vector<Type, Allocato
   
 ### Example  
   
-```  
+```cpp  
 // vector_op_eq.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -225,7 +225,7 @@ bool operator>(const vector<Type, Allocator>& left, const vector<Type, Allocator
   
 ### Example  
   
-```  
+```cpp  
 // vector_op_gt.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -274,7 +274,7 @@ bool operator>=(const vector<Type, Allocator>& left, const vector<Type, Allocato
   
 ### Example  
   
-```  
+```cpp  
 // vector_op_ge.cpp  
 // compile with: /EHsc  
 #include <vector>  

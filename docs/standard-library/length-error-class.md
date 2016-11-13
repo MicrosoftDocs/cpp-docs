@@ -58,7 +58,7 @@ public:
   
 ## Example  
   
-```  
+```cpp  
 // length_error.cpp  
 // compile with: /EHsc /GR /MDd  
 #include <vector>  

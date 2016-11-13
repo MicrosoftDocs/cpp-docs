@@ -52,30 +52,30 @@ struct is_bind_expression {
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__functional__is_bind_expression.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
   
-void square(double x)   
-    {   
-    std::cout << x << "^2 == " << x * x << std::endl;   
-    }   
-  
-template<class Expr>   
-    void test_for_bind(const Expr&)   
-    {   
-    std::cout << std::is_bind_expression<Expr>::value << std::endl;   
-    }   
-  
-int main()   
-    {   
-    test_for_bind(3.0 * 3.0);   
-    test_for_bind(std::bind(square, 3));   
-  
-    return (0);   
-    }  
+void square(double x)
+{
+    std::cout << x << "^2 == " << x * x << std::endl;
+}
+
+template<class Expr>
+void test_for_bind(const Expr&)
+{
+    std::cout << std::is_bind_expression<Expr>::value << std::endl;
+}
+
+int main()
+{
+    test_for_bind(3.0 * 3.0);
+    test_for_bind(std::bind(square, 3));
+
+    return (0);
+}
   
 ```  
   

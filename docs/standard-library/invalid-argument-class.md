@@ -58,7 +58,7 @@ public:
   
 ## Example  
   
-```  
+```cpp  
 // invalid_arg.cpp  
 // compile with: /EHsc /GR  
 #include <bitset>  

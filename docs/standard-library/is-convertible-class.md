@@ -63,7 +63,7 @@ struct is_convertible;
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__type_traits__is_convertible.cpp   
 // compile with: /EHsc   
 #include <type_traits>   

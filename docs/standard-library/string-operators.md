@@ -102,7 +102,7 @@ basic_string<CharType, Traits, Allocator>&& operator+(
   
 ### Example  
   
-```  
+```cpp  
 // string_op_con.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -181,7 +181,7 @@ bool operator!=(const CharType* left, const basic_string<CharType, Traits, Alloc
   
 ### Example  
   
-```  
+```cpp  
 // string_op_ne.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -262,7 +262,7 @@ bool operator==(const CharType* left, const basic_string<CharType, Traits, Alloc
   
 ### Example  
   
-```  
+```cpp  
 // string_op_eq.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -349,7 +349,7 @@ bool operator<(const CharType* left, const basic_string<CharType, Traits, Alloca
   
 ### Example  
   
-```  
+```cpp  
 // string_op_lt.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -435,7 +435,7 @@ bool operator<=(const CharType* left, const basic_string<CharType, Traits, Alloc
   
 ### Example  
   
-```  
+```cpp  
 // string_op_le.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -549,7 +549,7 @@ bool operator>(const CharType* left, const basic_string<CharType, Traits, Alloca
   
 ### Example  
   
-```  
+```cpp  
 // string_op_gt.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -642,7 +642,7 @@ bool operator>=(const CharType* left, const basic_string<CharType, Traits, Alloc
   
 ### Example  
   
-```  
+```cpp  
 // string_op_ge.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -737,7 +737,7 @@ basic_istream<CharType, Traits>& operator>>(
   
 ### Example  
   
-```  
+```cpp  
 // string_op_read_.cpp  
 // compile with: /EHsc  
 #include <string>  
