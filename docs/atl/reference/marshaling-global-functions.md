@@ -45,12 +45,9 @@ These functions provide support for marshaling and converting marshaling data in
   
 ##  <a name="atlfreemarshalstream"></a>  AtlFreeMarshalStream  
  Releases the marshal data in the stream, then releases the stream pointer.  
-  
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
-  
+
 ```
-HRESULT     AtlFreeMarshalStream(IStream* pStream);
+HRESULT AtlFreeMarshalStream(IStream* pStream);
 ```  
   
 ### Parameters  
@@ -63,11 +60,8 @@ HRESULT     AtlFreeMarshalStream(IStream* pStream);
 ##  <a name="atlmarshalptrinproc"></a>  AtlMarshalPtrInProc  
  Creates a new stream object, writes the CLSID of the proxy to the stream, and marshals the specified interface pointer by writing the data needed to initialize the proxy into the stream.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
-  
 ```
-HRESULT     AtlMarshalPtrInProc(
+HRESULT AtlMarshalPtrInProc(
     IUnknown* pUnk,
     const IID& iid,
     IStream** ppStream);
@@ -98,12 +92,9 @@ HRESULT     AtlMarshalPtrInProc(
   
 ##  <a name="atlunmarshalptr"></a>  AtlUnmarshalPtr  
  Converts the stream's marshaling data into an interface pointer that can be used by the client.  
-  
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
-  
+   
 ```
-HRESULT     AtlUnmarshalPtr(
+HRESULT AtlUnmarshalPtr(
     IStream* pStream,
     const IID& iid,
     IUnknown** ppUnk);

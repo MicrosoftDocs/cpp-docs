@@ -43,7 +43,7 @@ translation.priority.ht:
 An empty base struct used to ensure that a user-defined iterator class works properly with **iterator_trait**s.  
   
 ## Syntax  
-  
+```    
 struct iterator {
    typedef Category iterator_category;
    typedef Type value_type;
@@ -52,7 +52,7 @@ struct iterator {
    typedef Pointer pointer;
    typedef Reference reference;
    };  
-  
+```    
 ## Remarks  
  The template struct serves as a base type for all iterators. It defines the member types  
   

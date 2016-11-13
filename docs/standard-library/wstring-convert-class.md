@@ -128,12 +128,9 @@ size_t converted() const;
  Converts a byte string to a wide string.  
   
 ```
-wide_string from_bytes(char _Byte);
-
+wide_string from_bytes(char Byte);
 wide_string from_bytes(const char* ptr);
-
-wide_string from_bytes(const byte_string& _Bstr);
-
+wide_string from_bytes(const byte_string& Bstr);
 wide_string from_bytes(const char* first, const char* last);
 ```  
   
@@ -141,9 +138,9 @@ wide_string from_bytes(const char* first, const char* last);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|`_Byte`|The single-element byte sequence to be converted.|  
+|`Byte`|The single-element byte sequence to be converted.|  
 |`ptr`|The C-style, null-terminated sequence of characters to be converted.|  
-|`_Bstr`|The [byte_string](#wstring_convert__byte_string) to be converted.|  
+|`Bstr`|The [byte_string](#wstring_convert__byte_string) to be converted.|  
 |`first`|The first character in a range of characters to be converted.|  
 |`last`|The last character in a range of characters to be converted.|  
   
@@ -191,22 +188,19 @@ typedef typename Codecvt::state_type state_type;
  Converts a wide string to a byte string.  
   
 ```
-byte_string to_bytes(_Elem _Char);
-
-byte_string to_bytes(const _Elem* _Wptr);
-
-byte_string to_bytes(const wide_string& _Wstr);
-
-byte_string to_bytes(const _Elem* first, const _Elem* last);
+byte_string to_bytes(Elem Char);
+byte_string to_bytes(const Elem* Wptr);
+byte_string to_bytes(const wide_string& Wstr);
+byte_string to_bytes(const Elem* first, const Elem* last);
 ```  
   
 ### Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|`_Char`|The wide character to be converted.|  
-|`_Wptr`|The C-style, null-terminated sequence, beginning at `wptr`, to be converted.|  
-|`_Wstr`|The [wide_string](#wstring_convert__wide_string) to be converted.|  
+|`Char`|The wide character to be converted.|  
+|`Wptr`|The C-style, null-terminated sequence, beginning at `wptr`, to be converted.|  
+|`Wstr`|The [wide_string](#wstring_convert__wide_string) to be converted.|  
 |`first`|The first element in a range of elements to be converted.|  
 |`last`|The last element in a range of elements to be converted.|  
   
@@ -219,33 +213,29 @@ byte_string to_bytes(const _Elem* first, const _Elem* last);
  A type that represents a wide string.  
   
 ```
-typedef std::basic_string<_Elem> wide_string;
+typedef std::basic_string<Elem> wide_string;
 ```  
   
 ### Remarks  
- The type is a synonym for `std::basic_string<_Elem>`.  
+ The type is a synonym for `std::basic_string<Elem>`.  
   
 ##  <a name="wstring_convert__wstring_convert"></a>  wstring_convert::wstring_convert  
  Constructs an object of type `wstring_convert`.  
   
 ```
-wstring_convert(Codecvt *_Pcvt = new Codecvt);
-
-wstring_convert(Codecvt *_Pcvt,
-    state_type _State);
-
-wstring_convert(const byte_string& _Berr,
-    const wide_string& _Werr = wide_string());
+wstring_convert(Codecvt *Pcvt = new Codecvt);
+wstring_convert(Codecvt *Pcvt, state_type _State);
+wstring_convert(const byte_string& _Berr, const wide_string& Werr = wide_string());
 ```  
   
 ### Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|`*_Pcvt`|The object of type `Codecvt` to perform the conversion.|  
+|`*Pcvt`|The object of type `Codecvt` to perform the conversion.|  
 |`_State`|The object of type [state_type](#wstring_convert__state_type) representing the conversion state.|  
 |`_Berr`|The [byte_string](#wstring_convert__byte_string) to display on errors.|  
-|`_Werr`|The [wide_string](#wstring_convert__wide_string) to display on errors.|  
+|`Werr`|The [wide_string](#wstring_convert__wide_string) to display on errors.|  
   
 ### Remarks  
- The first constructor stores *_Pcvt_arg* in the [conversion object](../standard-library/wstring-convert-class.md)
+ The first constructor stores *Pcvt_arg* in the [conversion object](../standard-library/wstring-convert-class.md)

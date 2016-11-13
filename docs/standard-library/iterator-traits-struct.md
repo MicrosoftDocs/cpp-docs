@@ -43,7 +43,8 @@ translation.priority.ht:
 A template helper struct used to specify all the critical type definitions that an iterator should have.  
   
 ## Syntax  
-  
+
+```    
 struct iterator_traits {
    typedef typename Iterator::iterator_category iterator_category;
    typedef typename Iterator::value_type value_type;
@@ -52,7 +53,7 @@ struct iterator_traits {
    typedef typename Iterator::pointer pointer;
    typedef typename Iterator::reference reference;
    };  
-  
+```    
 ## Remarks  
  The template struct defines the member types  
   
@@ -72,7 +73,7 @@ struct iterator_traits {
   
  In this implementation you can also use several template functions that do not make use of partial specialization:  
   
-```
+```cpp
 template <class Category, class Type, class Diff>
 C _Iter_cat(const iterator<Category, Ty, Diff>&);
 

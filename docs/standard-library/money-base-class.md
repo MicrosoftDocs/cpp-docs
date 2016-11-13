@@ -42,12 +42,12 @@ translation.priority.ht:
 The class describes an enumeration and a structure common to all specializations of template class [moneypunct](../standard-library/moneypunct-class.md).  
   
 ## Syntax  
-  
+```    
 struct pattern
-   {
+{
    char field[_PATTERN_FIELD_SIZE];
-   };  
-  
+};  
+```  
 ## Remarks  
  The enumeration **part** describes the possible values in elements of the array field in the structure pattern. The values of **part** are:  
   

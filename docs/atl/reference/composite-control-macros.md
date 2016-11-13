@@ -78,10 +78,10 @@ END_SINK_MAP()
  Declares the handler function ( `fn`) for the specified event ( `dispid`), of the control identified by `id`.  
   
 ```
-SINK_ENTRY(Â
-    id, Â
-    dispid, Â
-    fn Â)
+SINK_ENTRY(
+    id, 
+    dispid, 
+    fn )
 ```  
   
 ### Parameters  
@@ -104,11 +104,11 @@ SINK_ENTRY(Â
  Declares the handler function ( `fn`) for the specified event ( `dispid`), of the dispatch interface ( *iid)*, for the control identified by `id`.  
   
 ```
-SINK_ENTRY_EX(Â
-    id, Â
-    iid, Â
-    dispid, Â
-    fn Â)
+SINK_ENTRY_EX(
+    id, 
+    iid, 
+    dispid, 
+    fn )
 ```  
   
 ### Parameters  
@@ -134,12 +134,12 @@ SINK_ENTRY_EX(Â
  Use the `SINK_ENTRY_INFO` macro within an event sink map to provide the information needed by [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) to route events to the relevant handler function.  
   
 ```
-SINK_ENTRY_INFO(Â
-    id, Â
-    iid, Â
-    dispid, Â
-    fn, Â
-    info Â)
+SINK_ENTRY_INFO(
+    id, 
+    iid, 
+    dispid, 
+    fn, 
+    info )
 ```  
   
 ### Parameters  
@@ -168,16 +168,9 @@ SINK_ENTRY_INFO(Â
 >  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
   
 ```
-template <
-UINTnID,
-class
-T,
-const IID*
-pdiid>
+template <UINT nID, classT, const IID* pdiid>
 class ATL_NO_VTABLE IDispEventSimpleImpl :
-public _IDispEventLocator<
-nID,
-pdiid>
+public _IDispEventLocator<nID, pdiid>
 ```  
   
 ### Parameters  
