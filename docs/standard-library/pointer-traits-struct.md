@@ -84,14 +84,14 @@ struct Ptr
   
 |Name|Description|  
 |----------|-----------------|  
-|[pointer_traits::pointer_to Method](#pointer_traits__pointer_to_method)|Converts an arbitrary reference to an object of class `Ptr`.|  
+|[pointer_to](#pointer_traits__pointer_to_method)|Converts an arbitrary reference to an object of class `Ptr`.|  
   
 ## Requirements  
  **Header:** \<memory>  
   
  **Namespace:** std  
   
-##  <a name="pointer_traits__pointer_to_method"></a>  pointer_traits::pointer_to Method  
+##  <a name="pointer_traits__pointer_to_method"></a>  pointer_to  
  Static method that returns `Ptr::pointer_to(obj)`, if that function exists. Otherwise, it is not possible to convert an arbitrary reference to an object of class `Ptr`. If `Ptr` is a raw pointer, this method returns `addressof(obj)`.  
   
 ```cpp

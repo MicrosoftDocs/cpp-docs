@@ -49,16 +49,16 @@ struct duration_values;
   
 |Name|Description|  
 |----------|-----------------|  
-|[duration_values::max Method](#duration_values__max_method)|Static. Specifies the upper limit for a value of type `Rep`.|  
-|[duration_values::min Method](#duration_values__min_method)|Static. Specifies the lower limit for a value of type `Rep`.|  
-|[duration_values::zero Method](#duration_values__zero_method)|Static. Returns `Rep(0)`.|  
+|[duration_values::max](#duration_values__max_method)|Static. Specifies the upper limit for a value of type `Rep`.|  
+|[duration_values::min](#duration_values__min_method)|Static. Specifies the lower limit for a value of type `Rep`.|  
+|[duration_values::zero](#duration_values__zero_method)|Static. Returns `Rep(0)`.|  
   
 ## Requirements  
  **Header:** chrono  
   
  **Namespace:** std::chrono  
   
-##  <a name="duration_values__max_method"></a>  duration_values::max Method  
+##  <a name="duration_values__max_method"></a>  duration_values::max  
  Static method that returns the upper bound for values of type `Ref`.  
   
 ```  
@@ -71,7 +71,7 @@ static constexpr Rep max();
 ### Remarks  
  When `Rep` is a user-defined type, the return value must be greater than [duration_values::zero](#duration_values__zero_method).  
   
-##  <a name="duration_values__min_method"></a>  duration_values::min Method  
+##  <a name="duration_values__min_method"></a>  duration_values::min  
  Static method that returns the lower bound for values of type `Ref`.  
   
 ```  
@@ -84,7 +84,7 @@ static constexpr Rep min();
 ### Remarks  
  When `Rep` is a user-defined type, the return value must be less than or equal to [duration_values::zero](#duration_values__zero_method).  
   
-##  <a name="duration_values__zero_method"></a>  duration_values::zero Method  
+##  <a name="duration_values__zero_method"></a>  duration_values::zero  
  Returns `Rep(0)`.  
   
 ```  

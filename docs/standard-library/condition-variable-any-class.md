@@ -54,11 +54,11 @@ class condition_variable_any;
   
 |Name|Description|  
 |----------|-----------------|  
-|[condition_variable_any::notify_all Method](#condition_variable_any__notify_all_method)|Unblocks all threads that are waiting for the `condition_variable_any` object.|  
-|[condition_variable_any::notify_one Method](#condition_variable_any__notify_one_method)|Unblocks one of the threads that are waiting for the `condition_variable_any` object.|  
-|[condition_variable_any::wait Method](#condition_variable_any__wait_method)|Blocks a thread.|  
-|[condition_variable_any::wait_for Method](#condition_variable_any__wait_for_method)|Blocks a thread, and sets a time interval after which the thread unblocks.|  
-|[condition_variable_any::wait_until Method](#condition_variable_any__wait_until_method)|Blocks a thread, and sets a maximum point in time at which the thread unblocks.|  
+|[condition_variable_any::notify_all](#condition_variable_any__notify_all_method)|Unblocks all threads that are waiting for the `condition_variable_any` object.|  
+|[condition_variable_any::notify_one](#condition_variable_any__notify_one_method)|Unblocks one of the threads that are waiting for the `condition_variable_any` object.|  
+|[condition_variable_any::wait](#condition_variable_any__wait_method)|Blocks a thread.|  
+|[condition_variable_any::wait_for](#condition_variable_any__wait_for_method)|Blocks a thread, and sets a time interval after which the thread unblocks.|  
+|[condition_variable_any::wait_until](#condition_variable_any__wait_until_method)|Blocks a thread, and sets a maximum point in time at which the thread unblocks.|  
   
 ## Requirements  
  **Header:** condition_variable  
@@ -75,32 +75,29 @@ condition_variable_any();
 ### Remarks  
  If not enough memory is available, the constructor throws a [system_error](../standard-library/system-error-class.md) object that has a `not_enough_memory` error code. If the object cannot be constructed because some other resource is not available, the constructor throws a `system_error` object that has a `resource_unavailable_try_again` error code.  
   
-##  <a name="condition_variable_any__notify_all_method"></a>  condition_variable_any::notify_all Method  
+##  <a name="condition_variable_any__notify_all_method"></a>  condition_variable_any::notify_all  
  Unblocks all threads that are waiting for the `condition_variable_any` object.  
   
 ```
 void notify_all() noexcept;
 ```  
   
-##  <a name="condition_variable_any__notify_one_method"></a>  condition_variable_any::notify_one Method  
+##  <a name="condition_variable_any__notify_one_method"></a>  condition_variable_any::notify_one  
  Unblocks one of the threads that are waiting on the `condition_variable_any` object.  
   
 ```
 void notify_one() noexcept;
 ```  
   
-##  <a name="condition_variable_any__wait_method"></a>  condition_variable_any::wait Method  
+##  <a name="condition_variable_any__wait_method"></a>  condition_variable_any::wait  
  Blocks a thread.  
   
 ```
 template <class Lock>  
-void wait(
-    Lock& Lck);
+void wait(Lock& Lck);
 
 template <class Lock, class Predicate>
-void wait(
-    Lock& Lck,
-    Predicate Pred);
+void wait(Lock& Lck, Predicate Pred);
 ```  
   
 ### Parameters  
@@ -120,19 +117,15 @@ while (!Pred())
     wait(Lck);
 ```    
   
-##  <a name="condition_variable_any__wait_for_method"></a>  condition_variable_any::wait_for Method  
+##  <a name="condition_variable_any__wait_for_method"></a>  condition_variable_any::wait_for  
  Blocks a thread, and sets a time interval after which the thread unblocks.  
   
 ```
 template <class Lock, class Rep, class Period>
-bool wait_for(
-    Lock& Lck,
-    const chrono::duration<Rep, Period>& Rel_time);
+bool wait_for(Lock& Lck, const chrono::duration<Rep, Period>& Rel_time);
 
 template <class Lock, class Rep, class Period, class Predicate>
-bool wait_for(
-    Lock& Lck,
-    const chrono::duration<Rep, Period>& Rel_time, Predicate Pred);
+bool wait_for(Lock& Lck, const chrono::duration<Rep, Period>& Rel_time, Predicate Pred);
 ```  
   
 ### Parameters  
@@ -155,7 +148,7 @@ bool wait_for(
   
  The second method in effect executes the following code.  
   
-```
+```cpp
 while(!Pred())
     if(wait_for(Lck, Rel_time) == cv_status::timeout)
     return Pred();
@@ -163,14 +156,12 @@ while(!Pred())
 return true;
 ```  
   
-##  <a name="condition_variable_any__wait_until_method"></a>  condition_variable_any::wait_until Method  
+##  <a name="condition_variable_any__wait_until_method"></a>  condition_variable_any::wait_until  
  Blocks a thread, and sets a maximum point in time at which the thread unblocks.  
   
 ```
 template <class Lock, class Clock, class Duration>
-void wait_until(
-    Lock& Lck,
-    const chrono::time_point<Clock, Duration>& Abs_time);
+void wait_until(Lock& Lck, const chrono::time_point<Clock, Duration>& Abs_time);
 
 template <class Lock, class Clock, class Duration, class Predicate>
 void wait_until(
@@ -179,9 +170,7 @@ void wait_until(
     Predicate Pred);
 
 template <class Lock>
-void wait_until(
-    Lock Lck,
-    const xtime* Abs_time);
+void wait_until(Lock Lck, const xtime* Abs_time);
 
 template <class Lock, class Predicate>
 void wait_until(

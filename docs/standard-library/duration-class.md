@@ -39,17 +39,12 @@ Describes a type that holds a *time interval*, which is an elapsed time between 
 ## Syntax  
   
 ```  
-template <class Rep,  
-    class Period = ratio<1>>  
+template <class Rep, class Period = ratio<1>>  
 class duration;  
-template <class Rep,  
-    class Period>  
+template <class Rep, class Period>  
 class duration;  
-template <class Rep,  
-    class Period1,  
-    class Period2>  
-class duration  
- <duration<Rep, Period1>, Period2>;  
+template <class Rep, class Period1, class Period2>  
+class duration <duration<Rep, Period1>, Period2>;  
 ```  
   
 ## Remarks  
@@ -74,10 +69,10 @@ class duration
   
 |Name|Description|  
 |----------|-----------------|  
-|[duration::count Method](#duration__count_method)|Returns the number of clock ticks in the time interval.|  
-|[duration::max Method](#duration__max_method)|Static. Returns the maximum allowable value of template parameter `Ref`.|  
-|[duration::min Method](#duration__min_method)|Static. Returns the lowest allowable value of template parameter `Ref`.|  
-|[duration::zero Method](#duration__zero_method)|Static. In effect, returns `Rep`(0).|  
+|[duration::count](#duration__count_method)|Returns the number of clock ticks in the time interval.|  
+|[duration::max](#duration__max_method)|Static. Returns the maximum allowable value of template parameter `Ref`.|  
+|[duration::min](#duration__min_method)|Static. Returns the lowest allowable value of template parameter `Ref`.|  
+|[duration::zero](#duration__zero_method)|Static. In effect, returns `Rep`(0).|  
   
 ### Public Operators  
   
@@ -98,7 +93,7 @@ class duration
   
  **Namespace:** std::chrono  
   
-##  <a name="duration__count_method"></a>  duration::count Method  
+##  <a name="duration__count_method"></a>  duration::count  
  Retrieves the number of clock ticks in the time interval.  
   
 ```  
@@ -148,7 +143,7 @@ constexpr duration(const duration<Rep2, Period2>& Dur);
   
  Unless no overflow is induced in the conversion and `treat_as_floating_point<rep>`*holds true*,  or both `ratio_divide<Period2, period>::den` equals 1 and `treat_as_floating_point<Rep2>`*holds false*, the third constructor does not participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).  
   
-##  <a name="duration__max_method"></a>  duration::max Method  
+##  <a name="duration__max_method"></a>  duration::max  
  Static method that returns the upper bound for values of template parameter type `Ref`.  
   
 ```  
@@ -158,7 +153,7 @@ static constexpr duration max();
 ### Return Value  
  In effect, returns `duration(duration_values<rep>::max())`.  
   
-##  <a name="duration__min_method"></a>  duration::min Method  
+##  <a name="duration__min_method"></a>  duration::min  
  Static method that returns the lower bound for values of template parameter type `Ref`.  
   
 ```  
@@ -282,7 +277,7 @@ duration& operator-=(const duration& Dur);
 ### Return Value  
  The `duration` object after the subtraction is performed.  
   
-##  <a name="duration__zero_method"></a>  duration::zero Method  
+##  <a name="duration__zero_method"></a>  duration::zero  
  Returns `duration(duration_values<rep>::zero())`.  
   
 ```  
