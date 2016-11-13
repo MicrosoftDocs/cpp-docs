@@ -471,9 +471,7 @@ Indicates whether Microsoft Active Accessibility support is enabled.
   
   
 ```  
-BOOL IsAccessibilitySupport() const;
-
- 
+BOOL IsAccessibilitySupport() const; 
 ```  
   
 ## Return Value  
@@ -493,9 +491,7 @@ BOOL IsAccessibilitySupport() const;
   
   
 ```  
-BOOL IsD2DInitialized() const;
-
- 
+BOOL IsD2DInitialized() const; 
 ```  
   
 ## Return Value  
@@ -519,9 +515,7 @@ BOOL IsDwmCompositionEnabled();
 ## <a name="afx_global_data__ishighcontrastmode"></a> AFX_GLOBAL_DATA::IsHighContrastMode
  Indicates whether images are currently displayed in high contrast.    
 ```  
-BOOL IsHighContrastMode() const;
-
- 
+BOOL IsHighContrastMode() const; 
 ```  
   
 ## Return Value  
@@ -535,9 +529,7 @@ Indicates whether the operating system supports layered windows.
   
   
 ```  
-BOOL IsWindowsLayerSupportAvailable() const;
-
- 
+BOOL IsWindowsLayerSupportAvailable() const; 
 ```  
   
 ## Return Value  
@@ -608,7 +600,7 @@ Specifies the offset from the leftmost autohide toolbar to the left side of the 
   
   
 ```  
-int   m_nAutoHideToolBarMargin;  
+int  m_nAutoHideToolBarMargin;  
 ```  
   
 ## Remarks  
@@ -631,7 +623,7 @@ Specifies the thickness of the drag frame that is used to indicate the docked st
   
   
 ```  
-int   m_nDragFrameThicknessDock;  
+int  m_nDragFrameThicknessDock;  
 ```  
   
 ## Remarks  
@@ -642,7 +634,7 @@ Specifies the thickness of the drag frame that is used to indicate the floating 
   
   
 ```  
-int   m_nDragFrameThicknessFloat;  
+int  m_nDragFrameThicknessFloat;  
 ```  
   
 ## Remarks  

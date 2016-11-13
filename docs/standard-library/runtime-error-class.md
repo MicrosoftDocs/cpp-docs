@@ -54,7 +54,7 @@ public:
 ```  
   
 ## Remarks  
- The value returned by [exception Class1](../standard-library/exception-class1.md) is a copy of **message**`.`[data](../standard-library/basic-string-class.md#basic_string__data).  
+ The value returned by [exception Class](../standard-library/exception-class.md) is a copy of **message**`.`[data](../standard-library/basic-string-class.md#basic_string__data).  
   
 ## Example  
   
@@ -90,7 +90,7 @@ Type class std::runtime_error
  **Namespace:** std  
   
 ## See Also  
-[exception Class](../standard-library/exception-class1.md)
+[exception Class](../standard-library/exception-class.md)
 
     
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -55,11 +55,8 @@ When an embedded OLE control fires an event, the control's container receives th
 ##  <a name="begin_eventsink_map"></a>  BEGIN_EVENTSINK_MAP  
  Begins the definition of your event sink map.  
   
-```  
- 
-BEGIN_EVENTSINK_MAP(
-theClass  ,   baseClass)  
- 
+```   
+BEGIN_EVENTSINK_MAP(theClass, baseClass)  
 ```  
   
 ### Parameters  
@@ -77,10 +74,8 @@ theClass  ,   baseClass)
 ##  <a name="declare_eventsink_map"></a>  DECLARE_EVENTSINK_MAP  
  An OLE container can provide an event sink map to specify the events your container will be notified of.  
   
-```  
- 
-DECLARE_EVENTSINK_MAP()  
- 
+```   
+DECLARE_EVENTSINK_MAP()   
 ```  
   
 ### Remarks  
@@ -91,24 +86,15 @@ DECLARE_EVENTSINK_MAP()
 ##  <a name="end_eventsink_map"></a>  END_EVENTSINK_MAP  
  Ends the definition of your event sink map.  
   
-```  
- 
-END_EVENTSINK_MAP()  
- 
+```   
+END_EVENTSINK_MAP()   
 ```  
   
 ##  <a name="on_event"></a>  ON_EVENT  
  Use the `ON_EVENT` macro to define an event handler function for an event fired by an OLE control.  
   
-```  
- 
-ON_EVENT(
-theClass  ,   
-id  ,   
-dispid  ,   
-pfnHandler  ,
-    vtsParams)  
- 
+```   
+ON_EVENT(theClass, id, dispid, pfnHandler,  vtsParams) 
 ```  
   
 ### Parameters  
@@ -139,16 +125,8 @@ pfnHandler  ,
 ##  <a name="on_event_range"></a>  ON_EVENT_RANGE  
  Use the `ON_EVENT_RANGE` macro to define an event handler function for an event fired by any OLE control having a control ID within a contiguous range of IDs.  
   
-```  
- 
-ON_EVENT_RANGE(
-theClass  ,   
-idFirst  ,   
-idLast  ,   
-dispid  ,   
-pfnHandler  ,
-    vtsParams)  
- 
+```   
+ON_EVENT_RANGE(theClass, idFirst, idLast, dispid, pfnHandler,  vtsParams)   
 ```  
   
 ### Parameters  
@@ -191,14 +169,8 @@ pfnHandler  ,
 ##  <a name="on_event_reflect"></a>  ON_EVENT_REFLECT  
  The `ON_EVENT_REFLECT` macro, when used in the event sink map of an OLE control's wrapper class, receives events fired by the control before they are handled by the control's container.  
   
-```  
- 
-ON_EVENT_REFLECT(
-theClass  ,   
-dispid  ,   
-pfnHandler  ,
-    vtsParams)  
- 
+```   
+ON_EVENT_REFLECT(theClass,  dispid, pfnHandler,  vtsParams) 
 ```  
   
 ### Parameters  
@@ -228,14 +200,8 @@ pfnHandler  ,
 ##  <a name="on_propnotify"></a>  ON_PROPNOTIFY  
  Use the `ON_PROPNOTIFY` macro to define an event sink map entry for handling property notifications from an OLE control.  
   
-```  
- 
-ON_PROPNOTIFY(
-theClass  ,   
-id  ,   
-dispid  ,   
-pfnRequest  ,
-    pfnChanged)  
+```   
+ON_PROPNOTIFY(theClass, id, dispid, pfnRequest, pfnChanged)  
  
 ```  
   
@@ -269,13 +235,7 @@ pfnRequest  ,
   
 ```  
  
-ON_PROPNOTIFY_RANGE(
-theClass  ,   
-idFirst  ,   
-idLast  ,   
-dispid  ,   
-pfnRequest  ,
-    pfnChanged)  
+ON_PROPNOTIFY_RANGE(theClass, idFirst, idLast, dispid, pfnRequest, pfnChanged)  
  
 ```  
   
@@ -303,11 +263,7 @@ pfnRequest  ,
   
 ```  
  
-ON_PROPNOTIFY_REFLECT(
-theClass  ,   
-dispid  ,   
-pfnRequest  ,
-    pfnChanged)  
+ON_PROPNOTIFY_REFLECT(theClass, dispid, pfnRequest, pfnChanged)  
  
 ```  
   

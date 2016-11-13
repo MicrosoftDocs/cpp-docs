@@ -87,32 +87,32 @@ class weak_ptr {
   
 |||  
 |-|-|  
-|[weak_ptr::weak_ptr](#weak_ptr__weak_ptr)|Constructs a `weak_ptr`.|  
+|[weak_ptr](#weak_ptr__weak_ptr)|Constructs a `weak_ptr`.|  
   
 ### Methods  
   
 |||  
 |-|-|  
-|[weak_ptr::element_type](#weak_ptr__element_type)|The type of the element.|  
-|[weak_ptr::expired](#weak_ptr__expired)|Tests if ownership has expired.|  
-|[weak_ptr::lock](#weak_ptr__lock)|Obtains exclusive ownership of a resource.|  
-|[weak_ptr::owner_before](#weak_ptr__owner_before)|Returns `true` if this `weak_ptr` is ordered before (or less than) the provided pointer.|  
-|[weak_ptr::reset](#weak_ptr__reset)|Releases owned resource.|  
-|[weak_ptr::swap](#weak_ptr__swap)|Swaps two `weak_ptr` objects.|  
-|[weak_ptr::use_count](#weak_ptr__use_count)|Counts number of designated `shared_ptr` objects.|  
+|[element_type](#weak_ptr__element_type)|The type of the element.|  
+|[expired](#weak_ptr__expired)|Tests if ownership has expired.|  
+|[lock](#weak_ptr__lock)|Obtains exclusive ownership of a resource.|  
+|[owner_before](#weak_ptr__owner_before)|Returns `true` if this `weak_ptr` is ordered before (or less than) the provided pointer.|  
+|[reset](#weak_ptr__reset)|Releases owned resource.|  
+|[swap](#weak_ptr__swap)|Swaps two `weak_ptr` objects.|  
+|[use_count](#weak_ptr__use_count)|Counts number of designated `shared_ptr` objects.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[weak_ptr::operator=](#weak_ptr__operator_eq)|Replaces owned resource.|  
+|[operator=](#weak_ptr__operator_eq)|Replaces owned resource.|  
   
 ## Requirements  
  **Header:** \<memory>  
   
  **Namespace:** std  
   
-##  <a name="weak_ptr__element_type"></a>  weak_ptr::element_type  
+##  <a name="weak_ptr__element_type"></a>  element_type  
  The type of the element.  
   
 ```  
@@ -147,7 +147,7 @@ int main()
 *wp0.lock() == 5  
 ```  
   
-##  <a name="weak_ptr__expired"></a>  weak_ptr::expired  
+##  <a name="weak_ptr__expired"></a>  expired  
  Tests if ownership has expired.  
   
 ```  
@@ -164,35 +164,35 @@ bool expired() const;
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
-  
-struct deleter   
-    {   
-    void operator()(int *p)   
-        {   
-        delete p;   
-        }   
-    };   
-  
-int main()   
-    {   
-    std::weak_ptr<int> wp;   
-  
-     {   
-    std::shared_ptr<int> sp(new int(10));   
-    wp = sp;   
-    std::cout << "wp.expired() == " << std::boolalpha   
-        << wp.expired() << std::endl;   
-    std::cout << "*wp.lock() == " << *wp.lock() << std::endl;   
-     }   
-  
-// check expired after sp is destroyed   
-    std::cout << "wp.expired() == " << std::boolalpha   
-        << wp.expired() << std::endl;   
-    std::cout << "(bool)wp.lock() == " << std::boolalpha   
-        << (bool)wp.lock() << std::endl;   
-  
-    return (0);   
-    }  
+
+struct deleter
+{
+    void operator()(int *p)
+    {
+        delete p;
+    }
+};
+
+int main()
+{
+    std::weak_ptr<int> wp;
+
+    {
+        std::shared_ptr<int> sp(new int(10));
+        wp = sp;
+        std::cout << "wp.expired() == " << std::boolalpha
+            << wp.expired() << std::endl;
+        std::cout << "*wp.lock() == " << *wp.lock() << std::endl;
+    }
+
+    // check expired after sp is destroyed   
+    std::cout << "wp.expired() == " << std::boolalpha
+        << wp.expired() << std::endl;
+    std::cout << "(bool)wp.lock() == " << std::boolalpha
+        << (bool)wp.lock() << std::endl;
+
+    return (0);
+}
   
 ```  
   
@@ -203,7 +203,7 @@ wp.expired() == true
 (bool)wp.lock() == false  
 ```  
   
-##  <a name="weak_ptr__lock"></a>  weak_ptr::lock  
+##  <a name="weak_ptr__lock"></a>  lock  
  Obtains exclusive ownership of a resource.  
   
 ```  
@@ -220,35 +220,35 @@ shared_ptr<Ty> lock() const;
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
-  
-struct deleter   
-    {   
-    void operator()(int *p)   
-        {   
-        delete p;   
-        }   
-    };   
-  
-int main()   
-    {   
-    std::weak_ptr<int> wp;   
-  
-     {   
-    std::shared_ptr<int> sp(new int(10));   
-    wp = sp;   
-    std::cout << "wp.expired() == " << std::boolalpha   
-        << wp.expired() << std::endl;   
-    std::cout << "*wp.lock() == " << *wp.lock() << std::endl;   
-     }   
-  
-// check expired after sp is destroyed   
-    std::cout << "wp.expired() == " << std::boolalpha   
-        << wp.expired() << std::endl;   
-    std::cout << "(bool)wp.lock() == " << std::boolalpha   
-        << (bool)wp.lock() << std::endl;   
-  
-    return (0);   
-    }  
+
+struct deleter
+{
+    void operator()(int *p)
+    {
+        delete p;
+    }
+};
+
+int main()
+{
+    std::weak_ptr<int> wp;
+
+    {
+        std::shared_ptr<int> sp(new int(10));
+        wp = sp;
+        std::cout << "wp.expired() == " << std::boolalpha
+            << wp.expired() << std::endl;
+        std::cout << "*wp.lock() == " << *wp.lock() << std::endl;
+    }
+
+    // check expired after sp is destroyed   
+    std::cout << "wp.expired() == " << std::boolalpha
+        << wp.expired() << std::endl;
+    std::cout << "(bool)wp.lock() == " << std::boolalpha
+        << (bool)wp.lock() << std::endl;
+
+    return (0);
+}
   
 ```  
   
@@ -259,7 +259,7 @@ wp.expired() == true
 (bool)wp.lock() == false  
 ```  
   
-##  <a name="weak_ptr__operator_eq"></a>  weak_ptr::operator=  
+##  <a name="weak_ptr__operator_eq"></a>  operator=  
  Replaces owned resource.  
   
 ```  
@@ -293,22 +293,22 @@ weak_ptr& operator=(const shared_ptr<Other>& sp);
 #include <memory>   
 #include <iostream>   
   
-int main()   
-    {   
-    std::shared_ptr<int> sp0(new int(5));   
-    std::weak_ptr<int> wp0(sp0);   
-    std::cout << "*wp0.lock() == " << *wp0.lock() << std::endl;   
-  
-    std::shared_ptr<int> sp1(new int(10));   
-    wp0 = sp1;   
-    std::cout << "*wp0.lock() == " << *wp0.lock() << std::endl;   
-  
-    std::weak_ptr<int> wp1;   
-    wp1 = wp0;   
-    std::cout << "*wp1.lock() == " << *wp1.lock() << std::endl;   
-  
-    return (0);   
-    }  
+int main()
+{
+    std::shared_ptr<int> sp0(new int(5));
+    std::weak_ptr<int> wp0(sp0);
+    std::cout << "*wp0.lock() == " << *wp0.lock() << std::endl;
+
+    std::shared_ptr<int> sp1(new int(10));
+    wp0 = sp1;
+    std::cout << "*wp0.lock() == " << *wp0.lock() << std::endl;
+
+    std::weak_ptr<int> wp1;
+    wp1 = wp0;
+    std::cout << "*wp1.lock() == " << *wp1.lock() << std::endl;
+
+    return (0);
+}
   
 ```  
   
@@ -318,7 +318,7 @@ int main()
 *wp1.lock() == 10  
 ```  
   
-##  <a name="weak_ptr__owner_before"></a>  weak_ptr::owner_before  
+##  <a name="weak_ptr__owner_before"></a>  owner_before  
  Returns `true` if this `weak_ptr` is ordered before (or less than) the provided pointer.  
   
 ```  
@@ -336,7 +336,7 @@ bool owner_before(const weak_ptr<Other>& ptr);
 ### Remarks  
  The template member function returns `true` if `*this` is `ordered before``ptr`.  
   
-##  <a name="weak_ptr__reset"></a>  weak_ptr::reset  
+##  <a name="weak_ptr__reset"></a>  reset  
  Releases owned resource.  
   
 ```  
@@ -354,21 +354,21 @@ void reset();
 #include <memory>   
 #include <iostream>   
   
-int main()   
-    {   
-    std::shared_ptr<int> sp(new int(5));   
-    std::weak_ptr<int> wp(sp);   
-    std::cout << "*wp.lock() == " << *wp.lock() << std::endl;   
-    std::cout << "wp.expired() == " << std::boolalpha   
-        << wp.expired() << std::endl;   
-  
-    wp.reset();   
-    std::cout << "wp.expired() == " << std::boolalpha   
-        << wp.expired() << std::endl;   
-  
-    return (0);   
-    }  
-  
+int main()
+{
+    std::shared_ptr<int> sp(new int(5));
+    std::weak_ptr<int> wp(sp);
+    std::cout << "*wp.lock() == " << *wp.lock() << std::endl;
+    std::cout << "wp.expired() == " << std::boolalpha
+        << wp.expired() << std::endl;
+
+    wp.reset();
+    std::cout << "wp.expired() == " << std::boolalpha
+        << wp.expired() << std::endl;
+
+    return (0);
+}
+
 ```  
   
 ```Output  
@@ -377,7 +377,7 @@ wp.expired() == false
 wp.expired() == true  
 ```  
   
-##  <a name="weak_ptr__swap"></a>  weak_ptr::swap  
+##  <a name="weak_ptr__swap"></a>  swap  
  Swaps two `weak_ptr` objects.  
   
 ```  
@@ -398,41 +398,41 @@ void swap(weak_ptr& wp);
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
-  
-struct deleter   
-    {   
-    void operator()(int *p)   
-        {   
-        delete p;   
-        }   
-    };   
-  
-int main()   
-    {   
-    std::shared_ptr<int> sp1(new int(5));   
-    std::shared_ptr<int> sp2(new int(10));   
-    std::cout << "*sp1 == " << *sp1 << std::endl;   
-  
-    sp1.swap(sp2);   
-    std::cout << "*sp1 == " << *sp1 << std::endl;   
-  
-    swap(sp1, sp2);   
-    std::cout << "*sp1 == " << *sp1 << std::endl;   
-    std::cout << std::endl;   
-  
-    std::weak_ptr<int> wp1(sp1);   
-    std::weak_ptr<int> wp2(sp2);   
-    std::cout << "*wp1 == " << *wp1.lock() << std::endl;   
-  
-    wp1.swap(wp2);   
-    std::cout << "*wp1 == " << *wp1.lock() << std::endl;   
-  
-    swap(wp1, wp2);   
-    std::cout << "*wp1 == " << *wp1.lock() << std::endl;   
-  
-    return (0);   
-    }  
-  
+ 
+struct deleter
+{
+    void operator()(int *p)
+    {
+        delete p;
+    }
+};
+
+int main()
+{
+    std::shared_ptr<int> sp1(new int(5));
+    std::shared_ptr<int> sp2(new int(10));
+    std::cout << "*sp1 == " << *sp1 << std::endl;
+
+    sp1.swap(sp2);
+    std::cout << "*sp1 == " << *sp1 << std::endl;
+
+    swap(sp1, sp2);
+    std::cout << "*sp1 == " << *sp1 << std::endl;
+    std::cout << std::endl;
+
+    std::weak_ptr<int> wp1(sp1);
+    std::weak_ptr<int> wp2(sp2);
+    std::cout << "*wp1 == " << *wp1.lock() << std::endl;
+
+    wp1.swap(wp2);
+    std::cout << "*wp1 == " << *wp1.lock() << std::endl;
+
+    swap(wp1, wp2);
+    std::cout << "*wp1 == " << *wp1.lock() << std::endl;
+
+    return (0);
+}
+
 ```  
   
 ```Output  
@@ -445,7 +445,7 @@ int main()
 *wp1 == 5  
 ```  
   
-##  <a name="weak_ptr__use_count"></a>  weak_ptr::use_count  
+##  <a name="weak_ptr__use_count"></a>  use_count  
  Counts number of designated `shared_ptr` objects.  
   
 ```  
@@ -462,20 +462,20 @@ long use_count() const;
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
-  
-int main()   
-    {   
-    std::shared_ptr<int> sp1(new int(5));   
-    std::weak_ptr<int> wp(sp1);   
-    std::cout << "wp.use_count() == "   
-        << wp.use_count() << std::endl;   
-  
-    std::shared_ptr<int> sp2(sp1);   
-    std::cout << "wp.use_count() == "   
-        << wp.use_count() << std::endl;   
-  
-    return (0);   
-    }  
+
+int main()
+{
+    std::shared_ptr<int> sp1(new int(5));
+    std::weak_ptr<int> wp(sp1);
+    std::cout << "wp.use_count() == "
+        << wp.use_count() << std::endl;
+
+    std::shared_ptr<int> sp2(sp1);
+    std::cout << "wp.use_count() == "
+        << wp.use_count() << std::endl;
+
+    return (0);
+} 
   
 ```  
   
@@ -484,7 +484,7 @@ wp.use_count() == 1
 wp.use_count() == 2  
 ```  
   
-##  <a name="weak_ptr__weak_ptr"></a>  weak_ptr::weak_ptr  
+##  <a name="weak_ptr__weak_ptr"></a>  weak_ptr  
  Constructs a `weak_ptr`.  
   
 ```  
@@ -520,23 +520,23 @@ weak_ptr(const shared_ptr<Other>& sp);
 #include <memory>   
 #include <iostream>   
   
-int main()   
-    {   
-    std::weak_ptr<int> wp0;   
-    std::cout << "wp0.expired() == " << std::boolalpha   
-        << wp0.expired() << std::endl;   
-  
-    std::shared_ptr<int> sp1(new int(5));   
-    std::weak_ptr<int> wp1(sp1);   
-    std::cout << "*wp1.lock() == "   
-        << *wp1.lock() << std::endl;   
-  
-    std::weak_ptr<int> wp2(wp1);   
-    std::cout << "*wp2.lock() == "   
-        << *wp2.lock() << std::endl;   
-  
-    return (0);   
-    }  
+int main()
+{
+    std::weak_ptr<int> wp0;
+    std::cout << "wp0.expired() == " << std::boolalpha
+        << wp0.expired() << std::endl;
+
+    std::shared_ptr<int> sp1(new int(5));
+    std::weak_ptr<int> wp1(sp1);
+    std::cout << "*wp1.lock() == "
+        << *wp1.lock() << std::endl;
+
+    std::weak_ptr<int> wp2(wp1);
+    std::cout << "*wp2.lock() == "
+        << *wp2.lock() << std::endl;
+
+    return (0);
+}
   
 ```  
   

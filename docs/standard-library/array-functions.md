@@ -13,9 +13,9 @@ manager: "ghogen"
 # &lt;array&gt; functions
 |||  
 |-|-|  
-|[get Function](#get_function)|[swap Function](#swap_function)|  
+|[get](#get_function)|[swap](#swap_function)|  
   
-##  <a name="get_function"></a>  get Function  
+##  <a name="get_function"></a>  get  
  Returns a reference to `arr[Index]`.  
   
 ```  
@@ -76,14 +76,12 @@ Output:
 */  
 ```  
   
-##  <a name="swap_function"></a>  swap Function  
+##  <a name="swap_function"></a>  swap  
  Swaps two arrays.  
   
 ```  
 template <class Ty, std::size_t N>  
-void swap(
-    array<Ty, N>& left,  
-    array<Ty, N>& right);
+void swap(array<Ty, N>& left, array<Ty, N>& right);
 ```  
   
 ### Parameters  
@@ -110,37 +108,37 @@ void swap(
 #include <array>   
 #include <iostream>   
   
-typedef std::array<int, 4> Myarray;   
-int main()   
-    {   
-    Myarray c0 = {0, 1, 2, 3};   
-  
-// display contents " 0 1 2 3"   
-    for (Myarray::const_iterator it = c0.begin();   
-        it != c0.end(); ++it)   
-        std::cout << " " << *it;   
-    std::cout << std::endl;   
-  
-    Myarray c1 = {4, 5, 6, 7};   
-    c0.swap(c1);   
-  
-// display swapped contents " 4 5 6 7"   
-    for (Myarray::const_iterator it = c0.begin();   
-        it != c0.end(); ++it)   
-        std::cout << " " << *it;   
-    std::cout << std::endl;   
-  
-    swap(c0, c1);   
-  
-// display swapped contents " 0 1 2 3"   
-    for (Myarray::const_iterator it = c0.begin();   
-        it != c0.end(); ++it)   
-        std::cout << " " << *it;   
-    std::cout << std::endl;   
-  
-    return (0);   
-    }  
-  
+typedef std::array<int, 4> Myarray;
+int main()
+{
+    Myarray c0 = { 0, 1, 2, 3 };
+
+    // display contents " 0 1 2 3"   
+    for (Myarray::const_iterator it = c0.begin();
+        it != c0.end(); ++it)
+        std::cout << " " << *it;
+    std::cout << std::endl;
+
+    Myarray c1 = { 4, 5, 6, 7 };
+    c0.swap(c1);
+
+    // display swapped contents " 4 5 6 7"   
+    for (Myarray::const_iterator it = c0.begin();
+        it != c0.end(); ++it)
+        std::cout << " " << *it;
+    std::cout << std::endl;
+
+    swap(c0, c1);
+
+    // display swapped contents " 0 1 2 3"   
+    for (Myarray::const_iterator it = c0.begin();
+        it != c0.end(); ++it)
+        std::cout << " " << *it;
+    std::cout << std::endl;
+
+    return (0);
+}
+
 ```  
   
 ```Output  

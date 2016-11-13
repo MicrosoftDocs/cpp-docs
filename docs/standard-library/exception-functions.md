@@ -47,7 +47,7 @@ exception_ptr make_exception_ptr(E Except);
   
 ### Parameters  
  `Except`  
- The class with the exception to copy. Usually, you specify an [exception class](../standard-library/exception-class1.md) object as the argument to the `make_exception_ptr` function, although any class object can be the argument.  
+ The class with the exception to copy. Usually, you specify an [exception class](../standard-library/exception-class.md) object as the argument to the `make_exception_ptr` function, although any class object can be the argument.  
   
 ### Return Value  
  An [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) object pointing to a copy of the current exception for `Except`.  

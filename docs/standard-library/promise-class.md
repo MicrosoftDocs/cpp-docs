@@ -55,12 +55,12 @@ class promise;
   
 |Name|Description|  
 |----------|-----------------|  
-|[promise::get_future Method](#promise__get_future_method)|Returns a [future](../standard-library/future-class.md) associated with this promise.|  
-|[promise::set_exception Method](#promise__set_exception_method)|Atomically sets the result of this promise to indicate an exception.|  
-|[promise::set_exception_at_thread_exit Method](#promise__set_exception_at_thread_exit_method)|Atomically sets the result of this promise to indicate an exception, and delivers the notification only after all thread-local objects in the current thread have been destroyed (usually at thread exit).|  
-|[promise::set_value Method](#promise__set_value_method)|Atomically sets the result of this promise to indicate a value.|  
-|[promise::set_value_at_thread_exit Method](#promise__set_value_at_thread_exit_method)|Atomically sets the result of this promise to indicate a value, and delivers the notification only after all thread-local objects in the current thread have been destroyed (usually at thread exit).|  
-|[promise::swap Method](#promise__swap_method)|Exchanges the *associated asynchronous state* of this promise with that of a specified promise object.|  
+|[promise::get_future](#promise__get_future_method)|Returns a [future](../standard-library/future-class.md) associated with this promise.|  
+|[promise::set_exception](#promise__set_exception_method)|Atomically sets the result of this promise to indicate an exception.|  
+|[promise::set_exception_at_thread_exit](#promise__set_exception_at_thread_exit_method)|Atomically sets the result of this promise to indicate an exception, and delivers the notification only after all thread-local objects in the current thread have been destroyed (usually at thread exit).|  
+|[promise::set_value](#promise__set_value_method)|Atomically sets the result of this promise to indicate a value.|  
+|[promise::set_value_at_thread_exit](#promise__set_value_at_thread_exit_method)|Atomically sets the result of this promise to indicate a value, and delivers the notification only after all thread-local objects in the current thread have been destroyed (usually at thread exit).|  
+|[promise::swap](#promise__swap_method)|Exchanges the *associated asynchronous state* of this promise with that of a specified promise object.|  
   
 ### Public Operators  
   
@@ -76,7 +76,7 @@ class promise;
   
  **Namespace:** std  
   
-##  <a name="promise__get_future_method"></a>  promise::get_future Method  
+##  <a name="promise__get_future_method"></a>  promise::get_future  
  Returns a [future](../standard-library/future-class.md) object that has the same *associated asynchronous state* as this promise.  
   
 ```
@@ -110,14 +110,9 @@ promise& operator=(promise&& Other) noexcept;
   
 ```
 promise();
-
 template <class Alloc>
-promise(
-    allocator_arg_t,
- const Alloc& Al);
-
-promise(
-    promise&& Other) noexcept;
+promise(allocator_arg_t, const Alloc& Al);
+promise(promise&& Other) noexcept;
 ```  
   
 ### Parameters  
@@ -134,7 +129,7 @@ promise(
   
  The third constructor constructs a `promise` object and transfers the associated asynchronous state from `Other`, and leaves `Other` empty.  
   
-##  <a name="promise__set_exception_method"></a>  promise::set_exception Method  
+##  <a name="promise__set_exception_method"></a>  promise::set_exception  
  Atomically stores an exception as the result of this `promise` object and sets the *associated asynchronous state* to *ready*.  
   
 ```
@@ -152,7 +147,7 @@ void set_exception(exception_ptr Exc);
   
  As a result of this method, any threads that are blocked on the associated asynchronous state become unblocked.  
   
-##  <a name="promise__set_exception_at_thread_exit_method"></a>  promise::set_exception_at_thread_exit Method  
+##  <a name="promise__set_exception_at_thread_exit_method"></a>  promise::set_exception_at_thread_exit  
  Atomically sets the result of this `promise` to indicate an exception, delivering the notification only after all thread-local objects in the current thread have been destroyed (usually at thread exit).  
   
 ```
@@ -170,16 +165,13 @@ void set_exception_at_thread_exit(exception_ptr Exc);
   
  In contrast to [set_exception](#promise__set_exception_method), this method does not set the associated asynchronous state to ready until after all thread-local objects in the current thread have been destroyed. Typically, threads that are blocked on the associated asynchronous state are not unblocked until the current thread exits.  
   
-##  <a name="promise__set_value_method"></a>  promise::set_value Method  
+##  <a name="promise__set_value_method"></a>  promise::set_value  
  Atomically stores a value as the result of this `promise` object and sets the *associated asynchronous state* to *ready*.  
   
 ```
 void promise::set_value(const Ty& Val);
-
 void promise::set_value(Ty&& Val);
-
 void promise<Ty&>::set_value(Ty& Val);
-
 void promise<void>::set_value();
 ```  
   
@@ -202,16 +194,13 @@ void promise<void>::set_value();
   
  For the specialization `promise<void>`, no stored value exists.  
   
-##  <a name="promise__set_value_at_thread_exit_method"></a>  promise::set_value_at_thread_exit Method  
+##  <a name="promise__set_value_at_thread_exit_method"></a>  promise::set_value_at_thread_exit  
  Atomically stores a value as the result of this `promise` object.  
   
 ```
 void promise::set_value_at_thread_exit(const Ty& Val);
-
 void promise::set_value_at_thread_exit(Ty&& Val);
-
 void promise<Ty&>::set_value_at_thread_exit(Ty& Val);
-
 void promise<void>::set_value_at_thread_exit();
 ```  
   
@@ -234,7 +223,7 @@ void promise<void>::set_value_at_thread_exit();
   
  For the specialization `promise<void>`, no stored value exists.  
   
-##  <a name="promise__swap_method"></a>  promise::swap Method  
+##  <a name="promise__swap_method"></a>  promise::swap  
  Exchanges the *associated asynchronous state* of this promise object with that of a specified object.  
   
 ```

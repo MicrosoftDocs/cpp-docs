@@ -57,10 +57,8 @@ OLE Automation provides ways to call methods and to access properties across app
 ##  <a name="declare_dispatch_map"></a>  DECLARE_DISPATCH_MAP  
  If a `CCmdTarget`-derived class in your program supports OLE Automation, that class must provide a dispatch map to expose its methods and properties.  
   
-```  
- 
+```   
 DECLARE_DISPATCH_MAP()  
- 
 ```  
   
 ### Remarks  
@@ -78,10 +76,7 @@ DECLARE_DISPATCH_MAP()
  Declares the definition of your dispatch map.  
   
 ```  
- 
-BEGIN_DISPATCH_MAP(
-theClass  ,   baseClass)  
- 
+BEGIN_DISPATCH_MAP(theClass, baseClass)   
 ```  
   
 ### Parameters  
@@ -97,10 +92,8 @@ theClass  ,   baseClass)
 ##  <a name="end_dispatch_map"></a>  END_DISPATCH_MAP  
  Ends the definition of your dispatch map.  
   
-```  
- 
+```   
 END_DISPATCH_MAP()  
- 
 ```  
   
 ### Remarks  
@@ -109,15 +102,8 @@ END_DISPATCH_MAP()
 ##  <a name="disp_function"></a>  DISP_FUNCTION  
  Defines an OLE automation function in a dispatch map.  
   
-```  
- 
-DISP_FUNCTION(
-theClass  ,   
-pszName  ,   
-pfnMember  ,   
-vtRetVal  ,
-    vtsParams)  
- 
+```   
+DISP_FUNCTION(theClass, pszName, pfnMember, vtRetVal, vtsParams)   
 ```  
   
 ### Parameters  
@@ -155,7 +141,7 @@ vtRetVal  ,
 |**VT_VARIANT**|**VARIANT**|  
 |**VT_UNKNOWN**|`LPUNKNOWN`|  
   
- The `vtsParams` argument is a space-separated list of values from the **VTS_** constants. One or more of these values separated by spaces (not commas) specifies the function's parameter list. For example,  
+ The `vtsParams` argument is a space-separated list of values from the **VTS_** constants. One or more of these values separated by spaces (not commas) specifies the function's parameter list. For example, 
   
  [!code-cpp[NVC_MFCAutomation#14](../../mfc/codesnippet/CPP/dispatch-maps_2.cpp)]  
   
@@ -194,14 +180,8 @@ vtRetVal  ,
 ##  <a name="disp_property"></a>  DISP_PROPERTY  
  Defines an OLE automation property in a dispatch map.  
   
-```  
- 
-DISP_PROPERTY(
-theClass  ,   
-pszName  ,   
-memberName  ,
-    vtPropType)  
- 
+```   
+DISP_PROPERTY(theClass, pszName, memberName, vtPropType)   
 ```  
   
 ### Parameters  
@@ -240,15 +220,8 @@ memberName  ,
 ##  <a name="disp_property_ex"></a>  DISP_PROPERTY_EX  
  Defines an OLE automation property and name the functions used to get and set the property's value in a dispatch map.  
   
-```  
- 
-DISP_PROPERTY_EX(
-theClass  ,   
-pszName  ,   
-memberGet  ,   
-memberSet  ,
-    vtPropType)  
- 
+```   
+DISP_PROPERTY_EX(theClass, pszName, memberGet, memberSet, vtPropType)   
 ```  
   
 ### Parameters  
@@ -275,15 +248,8 @@ memberSet  ,
 ##  <a name="disp_property_notify"></a>  DISP_PROPERTY_NOTIFY  
  Defines an OLE automation property with notification in a dispatch map.  
   
-```  
- 
-DISP_PROPERTY_NOTIFY(
-theClass  ,   
-szExternalName  ,   
-memberName  ,   
-pfnAfterSet  ,
-    vtPropType)  
- 
+```   
+DISP_PROPERTY_NOTIFY(theClass, szExternalName, memberName, pfnAfterSet, vtPropType)   
 ```  
   
 ### Parameters  
@@ -325,16 +291,8 @@ pfnAfterSet  ,
 ##  <a name="disp_property_param"></a>  DISP_PROPERTY_PARAM  
  Defines a property accessed with separate **Get** and `Set` member functions.  
   
-```  
- 
-DISP_PROPERTY_PARAM(
-theClass  ,   
-pszExternalName  ,   
-pfnGet  ,   
-pfnSet  ,   
-vtPropType  ,
-    vtsParams)  
- 
+```   
+DISP_PROPERTY_PARAM(theClass, pszExternalName, pfnGet, pfnSet, vtPropType, vtsParams)   
 ```  
   
 ### Parameters  
@@ -379,11 +337,8 @@ vtPropType  ,
 ##  <a name="disp_defvalue"></a>  DISP_DEFVALUE  
  Makes an existing property the default value of an object.  
   
-```  
- 
-DISP_DEFVALUE(
-theClass  ,   pszName)  
- 
+```   
+DISP_DEFVALUE(theClass, pszName)   
 ```  
   
 ### Parameters  

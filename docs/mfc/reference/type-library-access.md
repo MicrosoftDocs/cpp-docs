@@ -50,10 +50,8 @@ Type libraries expose the interfaces of an OLE control to other OLE-aware applic
 ##  <a name="declare_oletypelib"></a>  DECLARE_OLETYPELIB  
  Declares the `GetTypeLib` member function of your control class.  
   
-```  
- 
-DECLARE_OLETYPELIB(class_name)  
- 
+```   
+DECLARE_OLETYPELIB(class_name)   
 ```  
   
 ### Parameters  
@@ -66,14 +64,8 @@ DECLARE_OLETYPELIB(class_name)
 ##  <a name="implement_oletypelib"></a>  IMPLEMENT_OLETYPELIB  
  Implements the control's `GetTypeLib` member function.  
   
-```  
- 
-IMPLEMENT_OLETYPELIB(
-class_name  ,   
-tlid  ,   
-wVerMajor  ,
-    wVerMinor)  
- 
+```   
+IMPLEMENT_OLETYPELIB(class_name, tlid, wVerMajor,  wVerMinor)   
 ```  
   
 ### Parameters  

@@ -47,13 +47,8 @@ Before an application can use OLE system services, it must initialize the OLE sy
 ##  <a name="afxoleinit"></a>  AfxOleInit  
  Initializes OLE support for the application.  
   
-```  
- 
-BOOL  
-AFXAPI  
-AfxOleInit();
-
- 
+``` 
+BOOL AFXAPI AfxOleInit(); 
 ```  
   
 ### Return Value  

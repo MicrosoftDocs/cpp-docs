@@ -10,34 +10,34 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "filesystem/std::tr2::sys::directory_entry"
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_entry::operator const std::experimental::filesystem::v1::path &"
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_entry::directory_entry"
-  - "std::experimental::filesystem::v1::directory_entry::directory_entry"
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_entry::operator="
-  - "std::experimental::filesystem::v1::directory_entry::operator="
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_entry::assign"
-  - "std::experimental::filesystem::v1::directory_entry::assign"
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_entry::replace_filename"
-  - "std::experimental::filesystem::v1::directory_entry::replace_filename"
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_entry::path"
-  - "std::experimental::filesystem::v1::directory_entry::path"
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_entry::status"
-  - "std::experimental::filesystem::v1::directory_entry::status"
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_entry::symlink_status"
-  - "std::experimental::filesystem::v1::directory_entry::symlink_status"
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_entry::operator<"
-  - "std::experimental::filesystem::v1::directory_entry::operator<"
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_entry::operator=="
-  - "std::experimental::filesystem::v1::directory_entry::operator=="
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_entry::operator!="
-  - "std::experimental::filesystem::v1::directory_entry::operator!="
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_entry::operator<="
-  - "std::experimental::filesystem::v1::directory_entry::operator<="
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_entry::operator>"
-  - "std::experimental::filesystem::v1::directory_entry::operator>"
-  - "FILESYSTEM/std::experimental::filesystem::v1::directory_entry::operator>="
-  - "std::experimental::filesystem::v1::directory_entry::operator>="
+  - "filesystem/std::experimental::filesystem::directory_entry"
+  - "FILESYSTEM/std::experimental::filesystem::directory_entry::operator const std::experimental::filesystem::path &"
+  - "FILESYSTEM/std::experimental::filesystem::directory_entry::directory_entry"
+  - "std::experimental::filesystem::directory_entry::directory_entry"
+  - "FILESYSTEM/std::experimental::filesystem::directory_entry::operator="
+  - "std::experimental::filesystem::directory_entry::operator="
+  - "FILESYSTEM/std::experimental::filesystem::directory_entry::assign"
+  - "std::experimental::filesystem::directory_entry::assign"
+  - "FILESYSTEM/std::experimental::filesystem::directory_entry::replace_filename"
+  - "std::experimental::filesystem::directory_entry::replace_filename"
+  - "FILESYSTEM/std::experimental::filesystem::directory_entry::path"
+  - "std::experimental::filesystem::directory_entry::path"
+  - "FILESYSTEM/std::experimental::filesystem::directory_entry::status"
+  - "std::experimental::filesystem::directory_entry::status"
+  - "FILESYSTEM/std::experimental::filesystem::directory_entry::symlink_status"
+  - "std::experimental::filesystem::directory_entry::symlink_status"
+  - "FILESYSTEM/std::experimental::filesystem::directory_entry::operator<"
+  - "std::experimental::filesystem::directory_entry::operator<"
+  - "FILESYSTEM/std::experimental::filesystem::directory_entry::operator=="
+  - "std::experimental::filesystem::directory_entry::operator=="
+  - "FILESYSTEM/std::experimental::filesystem::directory_entry::operator!="
+  - "std::experimental::filesystem::directory_entry::operator!="
+  - "FILESYSTEM/std::experimental::filesystem::directory_entry::operator<="
+  - "std::experimental::filesystem::directory_entry::operator<="
+  - "FILESYSTEM/std::experimental::filesystem::directory_entry::operator>"
+  - "std::experimental::filesystem::directory_entry::operator>"
+  - "FILESYSTEM/std::experimental::filesystem::directory_entry::operator>="
+  - "std::experimental::filesystem::directory_entry::operator>="
 dev_langs: 
   - "C++"
 ms.assetid: 1827c67b-4137-4548-adb0-f955f7acaf08
@@ -70,14 +70,14 @@ class directory_entry;
 ```  
   
 ## Remarks  
- The class stores an object of type [path](../standard-library/path-class-cpp-standard-template-library.md). The stored `path` can be an instance of the [path Class](../standard-library/path-class-cpp-standard-template-library.md) or of a type that is derived from `path`. It also stores two [file_type](../Topic/file_type%20Enumeration.md) values; one that represents what is known about the status of the stored file name, and another that represents what is known about the symbolic link status of the file name.  
+ The class stores an object of type [path](../standard-library/path-class.md). The stored `path` can be an instance of the [path Class](../standard-library/path-class.md) or of a type that is derived from `path`. It also stores two [file_type](../Topic/file_type%20Enumeration.md) values; one that represents what is known about the status of the stored file name, and another that represents what is known about the symbolic link status of the file name.  
   
  For more information and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).  
   
 ## assign  
   
 ```  
-void assign(const std::experimental::filesystem::v1::path& pval,  
+void assign(const std::experimental::filesystem::path& pval,  
     file_status stat_arg = file_status(),  
     file_status symstat_arg = file_status());
 ```  
@@ -90,7 +90,7 @@ void assign(const std::experimental::filesystem::v1::path& pval,
 directory_entry() = default;  
 directory_entry(const directory_entry&) = default;  
 directory_entry(directory_entry&&) noexcept = default;  
-explicit directory_entry(const std::experimental::filesystem::v1::path& pval,  
+explicit directory_entry(const std::experimental::filesystem::path& pval,  
     file_status stat_arg = file_status(),  
     file_status symstat_arg = file_status());
 ```  
@@ -158,7 +158,7 @@ bool operator>=(const directory_entry& right) const noexcept;
 ## operator const path_type&  
   
 ``` 
- operator const std::experimental::filesystem::v1::path&() const; 
+ operator const std::experimental::filesystem::path&() const; 
 ```  
   
  The member operator returns mypath.  
@@ -166,7 +166,7 @@ bool operator>=(const directory_entry& right) const noexcept;
 ## path  
   
 ```  
-const std::experimental::filesystem::v1::path& path() const noexcept;  
+const std::experimental::filesystem::path& path() const noexcept;  
 ```  
   
  The member function returns mypath.  
@@ -175,7 +175,7 @@ const std::experimental::filesystem::v1::path& path() const noexcept;
   
 ```  
 void replace_filename(
-    const std::experimental::filesystem::v1::path& pval,  
+    const std::experimental::filesystem::path& pval,  
     file_status stat_arg = file_status(),  
     file_status symstat_arg = file_status());
 ```  
@@ -207,7 +207,7 @@ file_status symlink_status(error_code& ec) const noexcept;
 ## Requirements  
  **Header:** \<experimental/filesystem>  
   
- **Namespace:** std::experimental::filesystem::v1  
+ **Namespace:** std::experimental::filesystem  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   

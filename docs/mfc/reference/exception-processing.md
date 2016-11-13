@@ -111,10 +111,8 @@ When a program executes, a number of abnormal conditions and errors called "exce
 ##  <a name="try"></a>  TRY  
  Sets up a **TRY** block.  
   
-```  
- 
-TRY  
- 
+```   
+TRY   
 ```  
   
 ### Remarks  
@@ -128,10 +126,8 @@ TRY
 ##  <a name="catch"></a>  CATCH  
  Defines a block of code that catches the first exception type thrown in the preceding **TRY** block.  
   
-```  
- 
-CATCH(
-exception_class  ,   exception_object_pointer_name)  
+```   
+CATCH(exception_class, exception_object_pointer_name)  
  
 ```  
   
@@ -160,10 +156,8 @@ exception_class  ,   exception_object_pointer_name)
 ##  <a name="catch_all"></a>  CATCH_ALL  
  Defines a block of code that catches all exception types thrown in the preceding **TRY** block.  
   
-```  
- 
-CATCH_ALL(exception_object_pointer_name)  
- 
+```   
+CATCH_ALL(exception_object_pointer_name)   
 ```  
   
 ### Parameters  
@@ -184,11 +178,8 @@ CATCH_ALL(exception_object_pointer_name)
 ##  <a name="and_catch"></a>  AND_CATCH  
  Defines a block of code for catching additional exception types thrown in a preceding **TRY** block.  
   
-```  
- 
-AND_CATCH(
-exception_class  ,   exception_object_pointer_name)  
- 
+```   
+AND_CATCH(exception_class, exception_object_pointer_name)   
 ```  
   
 ### Parameters  
@@ -212,10 +203,8 @@ exception_class  ,   exception_object_pointer_name)
 ##  <a name="and_catch_all"></a>  AND_CATCH_ALL  
  Defines a block of code for catching additional exception types thrown in a preceding **TRY** block.  
   
-```  
- 
+```   
 AND_CATCH_ALL(exception_object_pointer_name)  
- 
 ```  
   
 ### Parameters  
@@ -233,10 +222,8 @@ AND_CATCH_ALL(exception_object_pointer_name)
 ##  <a name="end_catch"></a>  END_CATCH  
  Marks the end of the last **CATCH** or `AND_CATCH` block.  
   
-```  
- 
+```   
 END_CATCH  
- 
 ```  
   
 ### Remarks  
@@ -245,19 +232,15 @@ END_CATCH
 ##  <a name="end_catch_all"></a>  END_CATCH_ALL  
  Marks the end of the last `CATCH_ALL` or `AND_CATCH_ALL` block.  
   
-```  
- 
+```   
 END_CATCH_ALL  
- 
 ```  
   
 ##  <a name="throw__mfc_"></a>  THROW (MFC)  
  Throws the specified exception.  
   
-```  
- 
-THROW(exception_object_pointer)  
- 
+```   
+THROW(exception_object_pointer) 
 ```  
   
 ### Parameters  
@@ -272,10 +255,8 @@ THROW(exception_object_pointer)
 ##  <a name="throw_last"></a>  THROW_LAST  
  Throws the exception back to the next outer **CATCH** block.  
   
-```  
- 
-THROW_LAST()  
- 
+```   
+THROW_LAST()   
 ```  
   
 ### Remarks  
@@ -289,15 +270,8 @@ THROW_LAST()
 ##  <a name="afxthrowarchiveexception"></a>  AfxThrowArchiveException  
  Throws an archive exception.  
   
-```  
- 
-void  
-AfxThrowArchiveException(
-    int 
-cause  ,  
-    LPCTSTR lpszArchiveName);
-
- 
+```   
+void  AfxThrowArchiveException(int cause, LPCTSTR lpszArchiveName); 
 ```  
   
 ### Parameters  
@@ -310,21 +284,11 @@ cause  ,
 ##  <a name="afxthrowfileexception"></a>  AfxThrowFileException  
  Throws a file exception.  
   
-```  
- 
-void  
-AfxThrowFileException(
-    int 
-cause  ,  
-    LONG 
-lOsError  
-= 
--1,  
-    LPCTSTR 
-lpszFileName  
-= NULL);
-
- 
+```   
+void AfxThrowFileException(
+    int cause,  
+    LONG lOsError = -1,  
+    LPCTSTR lpszFileName = NULL); 
 ```  
   
 ### Parameters  
@@ -343,12 +307,8 @@ lpszFileName
 ##  <a name="afxthrowmemoryexception"></a>  AfxThrowMemoryException  
  Throws a memory exception.  
   
-```  
- 
-void  
-AfxThrowMemoryException();
-
- 
+```   
+void AfxThrowMemoryException(); 
 ```  
   
 ### Remarks  
@@ -358,22 +318,14 @@ AfxThrowMemoryException();
  Throws an exception that is the result of a request for an unsupported feature.  
   
 ```  
- 
-void  
-AfxThrowNotSupportedException();
-
- 
+void AfxThrowNotSupportedException(); 
 ```  
   
 ##  <a name="afxthrowresourceexception"></a>  AfxThrowResourceException  
  Throws a resource exception.  
   
-```  
- 
-void  
-AfxThrowResourceException();
-
- 
+```   
+void  AfxThrowResourceException(); 
 ```  
   
 ### Remarks  
@@ -382,12 +334,8 @@ AfxThrowResourceException();
 ##  <a name="afxthrowuserexception"></a>  AfxThrowUserException  
  Throws an exception to stop an end-user operation.  
   
-```  
- 
-void  
-AfxThrowUserException();
-
- 
+```   
+void AfxThrowUserException(); 
 ```  
   
 ### Remarks  
@@ -396,31 +344,16 @@ AfxThrowUserException();
 ##  <a name="afxthrowoledispatchexception"></a>  AfxThrowOleDispatchException  
  Use this function to throw an exception within an OLE automation function.  
   
-```  
- 
-void  
-AFXAPI  
-AfxThrowOleDispatchException(
-    WORD 
-wCode  ,  
-    LPCSTR 
-lpszDescription  ,  
-    UINT 
-nHelpID  
-= 0);
+```   
+void AFXAPI AfxThrowOleDispatchException(
+    WORD wCode ,  
+    LPCSTR lpszDescription,  
+    UINT nHelpID = 0);
 
-void  
-AFXAPI  
-AfxThrowOleDispatchException(
-    WORD 
-wCode  ,  
-    UINT 
-nDescriptionID  ,  
-    UINT 
-nHelpID  
-= -1);
-
- 
+void AFXAPI AfxThrowOleDispatchException(
+    WORD wCode,  
+    UINT nDescriptionID,  
+    UINT nHelpID = -1); 
 ```  
   
 ### Parameters  
@@ -445,17 +378,9 @@ nHelpID
 ##  <a name="afxthrowoleexception"></a>  AfxThrowOleException  
  Creates an object of type `COleException` and throws an exception.  
   
-```  
- 
-void  
-AFXAPI  
-AfxThrowOleException(SCODE sc);
-
-void  
-AFXAPI  
-AfxThrowOleException(HRESULT hr);
-
- 
+``` 
+void AFXAPI AfxThrowOleException(SCODE sc);
+void AFXAPI AfxThrowOleException(HRESULT hr); 
 ```  
   
 ### Parameters  
@@ -471,18 +396,10 @@ AfxThrowOleException(HRESULT hr);
 ##  <a name="afxthrowdaoexception"></a>  AfxThrowDaoException  
  Call this function to throw an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md) from your own code.  
   
-```  
- 
+```   
 void AFXAPI AfxThrowDaoException(
-    int 
-nAfxDaoError  
-= 
-NO_AFX_DAO_ERROR,  
-    SCODE 
-scode  
-= S_OK);
-
- 
+    int nAfxDaoError = NO_AFX_DAO_ERROR,  
+    SCODE scode = S_OK); 
 ```  
   
 ### Parameters  
@@ -501,13 +418,9 @@ scode
  Call this function to throw an exception of type `CDBException` from your own code.  
   
 ```  
- 
-void  
-AfxThrowDBException(
-    RETCODE 
-nRetCode  ,  
-    CDatabase* 
-pdb  ,  
+void AfxThrowDBException(
+    RETCODE nRetCode,  
+    CDatabase* pdb,  
     HSTMT hstmt);
 
  
@@ -531,12 +444,8 @@ pdb  ,
 ##  <a name="afxabort"></a>  AfxAbort  
  The default termination function supplied by MFC.  
   
-```  
- 
-void  
-AfxAbort();
-
- 
+```   
+void  AfxAbort(); 
 ```  
   
 ### Remarks  

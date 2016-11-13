@@ -65,26 +65,26 @@ struct is_const;
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   
-  
-struct trivial   
-    {   
-    int val;   
-    };   
-  
-int main()   
-    {   
-    std::cout << "is_const<trivial> == " << std::boolalpha   
-        << std::is_const<trivial>::value << std::endl;   
-    std::cout << "is_const<const trivial> == " << std::boolalpha   
-        << std::is_const<const trivial>::value << std::endl;   
-    std::cout << "is_const<int> == " << std::boolalpha   
-        << std::is_const<int>::value << std::endl;   
-    std::cout << "is_const<const int> == " << std::boolalpha   
-        << std::is_const<const int>::value << std::endl;   
-  
-    return (0);   
-    }  
-  
+
+struct trivial
+{
+    int val;
+};
+
+int main()
+{
+    std::cout << "is_const<trivial> == " << std::boolalpha
+        << std::is_const<trivial>::value << std::endl;
+    std::cout << "is_const<const trivial> == " << std::boolalpha
+        << std::is_const<const trivial>::value << std::endl;
+    std::cout << "is_const<int> == " << std::boolalpha
+        << std::is_const<int>::value << std::endl;
+    std::cout << "is_const<const int> == " << std::boolalpha
+        << std::is_const<const int>::value << std::endl;
+
+    return (0);
+}
+
 ```  
   
 ```Output  

@@ -24,11 +24,11 @@ manager: "ghogen"
   
 ```  
 template <class Facet>  
-bool has_facet(const locale& _Loc);
+bool has_facet(const locale& Loc);
 ```  
   
 ### Parameters  
- `_Loc`  
+ `Loc`  
  The locale to be tested for the presence of a facet.  
   
 ### Return Value  
@@ -63,14 +63,14 @@ int main( )
   
 ```  
 template <class CharType>  
-bool isalnum(CharType _Ch, const locale& _Loc)  
+bool isalnum(CharType Ch, const locale& Loc)  
 ```  
   
 ### Parameters  
- `_Ch`  
+ `Ch`  
  The alphanumeric element to be tested.  
   
- `_Loc`  
+ `Loc`  
  The locale containing the alphanumeric element to be tested.  
   
 ### Return Value  
@@ -127,21 +127,21 @@ The character '3' in the locale is alphanumeric.
   
 ```  
 template <class CharType>  
-bool isalpha(CharType _Ch, const locale& _Loc)  
+bool isalpha(CharType Ch, const locale& Loc)  
 ```  
   
 ### Parameters  
- `_Ch`  
+ `Ch`  
  The element to be tested.  
   
- `_Loc`  
+ `Loc`  
  The locale containing the alphabetic element to be tested.  
   
 ### Return Value  
  **true** if the element tested is alphabetic; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `_Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **alpha**, `_Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **alpha**, `Ch`).  
   
 ### Example  
   
@@ -188,21 +188,21 @@ int main( )
   
 ```  
 template <class CharType>  
-bool iscntrl(CharType _Ch, const locale& _Loc)  
+bool iscntrl(CharType Ch, const locale& Loc)  
 ```  
   
 ### Parameters  
- `_Ch`  
+ `Ch`  
  The element to be tested.  
   
- `_Loc`  
+ `Loc`  
  The locale containing the element to be tested.  
   
 ### Return Value  
  **true** if the element tested is a control character; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `_Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **cntrl**, `_Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **cntrl**, `Ch`).  
   
 ### Example  
   
@@ -249,21 +249,21 @@ int main( )
   
 ```  
 template <class CharType>  
-bool isdigit(CharType _Ch, const locale& _Loc)  
+bool isdigit(CharType Ch, const locale& Loc)  
 ```  
   
 ### Parameters  
- `_Ch`  
+ `Ch`  
  The element to be tested.  
   
- `_Loc`  
+ `Loc`  
  The locale containing the element to be tested.  
   
 ### Return Value  
  **true** if the element tested is a numeric character; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `_Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **digit**, `_Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **digit**, `Ch`).  
   
 ### Example  
   
@@ -310,21 +310,21 @@ int main( )
   
 ```  
 template <class CharType>  
-bool isgraph(CharType _Ch, const locale& _Loc)  
+bool isgraph(CharType Ch, const locale& Loc)  
 ```  
   
 ### Parameters  
- `_Ch`  
+ `Ch`  
  The element to be tested.  
   
- `_Loc`  
+ `Loc`  
  The locale containing the element to be tested.  
   
 ### Return Value  
  **true** if the element tested is an alphanumeric or a punctuation character; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `_Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **graph**, `_Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **graph**, `Ch`).  
   
 ### Example  
   
@@ -371,21 +371,21 @@ int main( )
   
 ```  
 template <class CharType>  
-bool islower(CharType _Ch, const locale& _Loc)  
+bool islower(CharType Ch, const locale& Loc)  
 ```  
   
 ### Parameters  
- `_Ch`  
+ `Ch`  
  The element to be tested.  
   
- `_Loc`  
+ `Loc`  
  The locale containing the element to be tested.  
   
 ### Return Value  
  **true** if the element tested is a lowercase character; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `_Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **lower**, `_Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **lower**, `Ch`).  
   
 ### Example  
   
@@ -432,21 +432,21 @@ int main( )
   
 ```  
 template <class CharType>  
-bool isprint(CharType _Ch, const locale& _Loc)  
+bool isprint(CharType Ch, const locale& Loc)  
 ```  
   
 ### Parameters  
- `_Ch`  
+ `Ch`  
  The element to be tested.  
   
- `_Loc`  
+ `Loc`  
  The locale containing the element to be tested.  
   
 ### Return Value  
  **true** if the element tested is a printable; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `_Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **print**, `_Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **print**, `Ch`).  
   
 ### Example  
   
@@ -492,21 +492,21 @@ int main( )
   
 ```  
 template <class CharType>  
-bool ispunct(CharType _Ch, const locale& _Loc)  
+bool ispunct(CharType Ch, const locale& Loc)  
 ```  
   
 ### Parameters  
- `_Ch`  
+ `Ch`  
  The element to be tested.  
   
- `_Loc`  
+ `Loc`  
  The locale containing the element to be tested.  
   
 ### Return Value  
  **true** if the element tested is a punctuation character; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)`<`[ctype](../standard-library/ctype-class.md)\< **CharType**> >( `_Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **punct**, `_Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)`<`[ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **punct**, `Ch`).  
   
 ### Example  
   
@@ -553,21 +553,21 @@ int main( )
   
 ```  
 template <class CharType>  
-bool isspace(CharType _Ch, const locale& _Loc)  
+bool isspace(CharType Ch, const locale& Loc)  
 ```  
   
 ### Parameters  
- `_Ch`  
+ `Ch`  
  The element to be tested.  
   
- `_Loc`  
+ `Loc`  
  The locale containing the element to be tested.  
   
 ### Return Value  
  **true** if the element tested is a whitespace character; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `_Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **space**, `_Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **space**, `Ch`).  
   
 ### Example  
   
@@ -614,21 +614,21 @@ int main( )
   
 ```  
 template <class CharType>  
-bool isupper(CharType _Ch, const locale& _Loc)  
+bool isupper(CharType Ch, const locale& Loc)  
 ```  
   
 ### Parameters  
- `_Ch`  
+ `Ch`  
  The element to be tested.  
   
- `_Loc`  
+ `Loc`  
  The locale containing the element to be tested.  
   
 ### Return Value  
  **true** if the element tested is an uppercase character; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `_Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **upper**, `_Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **upper**, `Ch`).  
   
 ### Example  
   
@@ -675,21 +675,21 @@ int main( )
   
 ```  
 template <class CharType>  
-bool isxdigit(CharType _Ch, const locale& _Loc)  
+bool isxdigit(CharType Ch, const locale& Loc)  
 ```  
   
 ### Parameters  
- `_Ch`  
+ `Ch`  
  The element to be tested.  
   
- `_Loc`  
+ `Loc`  
  The locale containing the element to be tested.  
   
 ### Return Value  
  **true** if the element tested is a character used to represent a hexadecimal number; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `_Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **xdigit**, `_Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **xdigit**, `Ch`).  
   
  Hexadecimal digits use base 16 to represent numbers, using the numbers 0 through 9 plus case-insensitive letters A through F to represent the decimal numbers 0 through 15.  
   
@@ -738,21 +738,21 @@ int main( )
   
 ```  
 template <class CharType>  
-CharType tolower(CharType _Ch, const locale& _Loc)  
+CharType tolower(CharType Ch, const locale& Loc)  
 ```  
   
 ### Parameters  
- `_Ch`  
+ `Ch`  
  The character to be converted to lower case.  
   
- `_Loc`  
+ `Loc`  
  The locale containing the character to be converted.  
   
 ### Return Value  
  The character converted to lower case.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `_Loc`). [tolower](../standard-library/ctype-class.md#ctype__tolower)( `_Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [tolower](../standard-library/ctype-class.md#ctype__tolower)( `Ch`).  
   
 ### Example  
   
@@ -783,21 +783,21 @@ int main( )
   
 ```  
 template <class CharType>  
-CharType toupper(CharType _Ch, const locale& _Loc)  
+CharType toupper(CharType Ch, const locale& Loc)  
 ```  
   
 ### Parameters  
- `_Ch`  
+ `Ch`  
  The character to be converted to upper case.  
   
- `_Loc`  
+ `Loc`  
  The locale containing the character to be converted.  
   
 ### Return Value  
  The character converted to upper case.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `_Loc`). [toupper](../standard-library/ctype-class.md#ctype__toupper)( `_Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [toupper](../standard-library/ctype-class.md#ctype__toupper)( `Ch`).  
   
 ### Example  
   
@@ -828,11 +828,11 @@ int main( )
   
 ```  
 template <class Facet>  
-const Facet& use_facet(const locale& _Loc);
+const Facet& use_facet(const locale& Loc);
 ```  
   
 ### Parameters  
- `_Loc`  
+ `Loc`  
  The const locale containing the type of facet being referenced.  
   
 ### Return Value  

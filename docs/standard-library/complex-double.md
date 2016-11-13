@@ -47,23 +47,21 @@ template <>
 class complex<double> {
 public:
     constexpr complex(
-    double _RealVal = 0,
-    double _ImagVal = 0);
+    double RealVal = 0,
+    double ImagVal = 0);
 
-constexpr complex(
-    const complex<double>& complexNum);
+constexpr complex(const complex<double>& complexNum);
 
-constexpr explicit complex(
-    const complex<long double>& complexNum);
+constexpr explicit complex(const complex<long double>& complexNum);
 // rest same as template class complex
 };
 ```  
   
 #### Parameters  
- `_RealVal`  
+ `RealVal`  
  The value of type **double** for the real part of the complex number being constructed.  
   
- `_ImagVal`  
+ `ImagVal`  
  The value of type **double** for the imaginary part of the complex number being constructed.  
   
  ` complexNum`  
@@ -79,7 +77,7 @@ constexpr explicit complex(
   
 ## Example  
   
-```  
+```cpp  
 // complex_comp_dbl.cpp  
 // compile with: /EHsc  
 #include <complex>  

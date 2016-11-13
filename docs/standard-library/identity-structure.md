@@ -43,12 +43,12 @@ translation.priority.ht:
 A struct that provides a type definition as the template parameter.  
   
 ## Syntax  
-  
+```  
 struct identity {
    typedef Type type;
    Type operator()(const Type& left) const;
    };  
-  
+```  
 #### Parameters  
   
 |Parameter|Description|  

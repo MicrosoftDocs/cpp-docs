@@ -61,16 +61,11 @@ This topic lists the standard dialog data validation (DDV) routines used for com
 ##  <a name="ddv_maxchars"></a>  DDV_MaxChars  
  Call `DDV_MaxChars` to verify that the amount of characters in the control associated with *value* does not exceed *nChars*.  
   
-```  
- 
+```   
 void AFXAPI DDV_MaxChars(
-    CDataExchange* 
-pDX  ,  
-    CString const& 
-value  ,  
-    int nChars);
-
- 
+    CDataExchange* pDX,  
+    CString const& value,  
+    int nChars); 
 ```  
   
 ### Parameters  
@@ -89,18 +84,12 @@ value  ,
 ##  <a name="ddv_minmaxbyte"></a>  DDV_MinMaxByte  
  Call `DDV_MinMaxByte` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
   
-```  
- 
+```   
 void AFXAPI DDV_MinMaxByte(
-    CDataExchange* 
-pDX  ,  
-    BYTE 
-value  ,  
-    BYTE 
-minVal  ,  
-    BYTE maxVal);
-
- 
+    CDataExchange* pDX,  
+    BYTE value,  
+    BYTE minVal,  
+    BYTE maxVal); 
 ```  
   
 ### Parameters  
@@ -122,27 +111,18 @@ minVal  ,
 ##  <a name="ddv_minmaxdatetime"></a>  DDV_MinMaxDateTime  
  Call `DDV_MinMaxDateTime` to verify that the time/date value in the date and time picker control ( [CDateTimeCtrl](../../mfc/reference/cdatetimectrl-class.md)) associated with *refValue* falls between `refMinRange` and `refMaxRange`.  
   
-```  
- 
+```   
 void AFXAPI DDV_MinMaxDateTime(
-    CDataExchange* 
-pDX  ,  
-    CTime& 
-refValue  ,  
-    const CTime* 
-refMinRange  ,  
+    CDataExchange* pDX,  
+    CTime& refValue,  
+    const CTime* refMinRange,  
     const CTime* refMaxRange);
 
 void AFXAPI DDV_MinMaxDateTime(
-    CDataExchange* 
-pDX  ,  
-    COleDateTime& 
-refValue  ,  
-    const COleDateTime* 
-refMinRange  ,  
-    const COleDateTime* refMaxRange);
-
- 
+    CDataExchange* pDX,  
+    COleDateTime& refValue,  
+    const COleDateTime* refMinRange,  
+    const COleDateTime* refMaxRange); 
 ```  
   
 ### Parameters  
@@ -164,18 +144,12 @@ refMinRange  ,
 ##  <a name="ddv_minmaxdouble"></a>  DDV_MinMaxDouble  
  Call `DDV_MinMaxDouble` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
   
-```  
- 
+```   
 void AFXAPI DDV_MinMaxDouble(
-    CDataExchange* 
-pDX  ,  
-    double const& 
-value  ,  
-    double 
-minVal  ,  
-    double maxVal);
-
- 
+    CDataExchange* pDX,  
+    double const& value,  
+    double minVal,  
+    double maxVal); 
 ```  
   
 ### Parameters  
@@ -197,18 +171,12 @@ minVal  ,
 ##  <a name="ddv_minmaxdword"></a>  DDV_MinMaxDWord  
  Call `DDV_MinMaxDWord` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
   
-```  
- 
+```   
 void AFXAPI DDV_MinMaxDWord(
-    CDataExchange* 
-pDX  ,  
-    DWORD const& 
-value  ,  
-    DWORD 
-minVal  ,  
-    DWORD maxVal);
-
- 
+    CDataExchange* pDX,  
+    DWORD const& value,  
+    DWORD minVal,  
+    DWORD maxVal); 
 ```  
   
 ### Parameters  
@@ -230,18 +198,12 @@ minVal  ,
 ##  <a name="ddv_minmaxfloat"></a>  DDV_MinMaxFloat  
  Call `DDV_MinMaxFloat` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
   
-```  
- 
+```   
 void AFXAPI DDV_MinMaxFloat(
-    CDataExchange* 
-pDX  ,  
-    float 
-value  ,  
-    float 
-minVal  ,  
-    float maxVal);
-
- 
+    CDataExchange* pDX,  
+    float value,  
+    float minVal,  
+    float maxVal); 
 ```  
   
 ### Parameters  
@@ -263,18 +225,12 @@ minVal  ,
 ##  <a name="ddv_minmaxint"></a>  DDV_MinMaxInt  
  Call `DDV_MinMaxInt` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
   
-```  
- 
+```   
 void AFXAPI DDV_MinMaxInt(
-    CDataExchange* 
-pDX  ,  
-    int 
-value  ,  
-    int 
-minVal  ,  
-    int maxVal);
-
- 
+    CDataExchange* pDX,  
+    int value,  
+    int minVal,  
+    int maxVal); 
 ```  
   
 ### Parameters  
@@ -296,18 +252,12 @@ minVal  ,
 ##  <a name="ddv_minmaxlong"></a>  DDV_MinMaxLong  
  Call `DDV_MinMaxLong` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
   
-```  
- 
+```   
 void AFXAPI DDV_MinMaxLong(
-    CDataExchange* 
-pDX  ,  
-    long 
-value  ,  
-    long 
-minVal  ,  
-    long maxVal);
-
- 
+    CDataExchange* pDX,  
+    long value,  
+    long minVal,  
+    long maxVal); 
 ```  
   
 ### Parameters  
@@ -329,18 +279,12 @@ minVal  ,
 ##  <a name="ddv_minmaxlonglong"></a>  DDV_MinMaxLongLong  
  Call `DDV_MinMaxLongLong` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
   
-```  
- 
+```   
 void AFXAPI DDV_MinMaxLongLong(
-    CDataExchange* 
-pDX  ,  
-    LONGLONG 
-value  ,  
-    LONGLONG 
-minVal  ,  
-    LONGLONG maxVal);
-
- 
+    CDataExchange* pDX,  
+    LONGLONG value,  
+    LONGLONG minVal,  
+    LONGLONG maxVal); 
 ```  
   
 ### Parameters  
@@ -362,27 +306,18 @@ minVal  ,
 ##  <a name="ddv_minmaxmonth"></a>  DDV_MinMaxMonth  
  Call `DDV_MinMaxMonth` to verify that the time/date value in the month calendar control ( [CMonthCalCtrl](../../mfc/reference/cmonthcalctrl-class.md)) associated with *refValue* falls between `refMinRange` and `refMaxRange`.  
   
-```  
- 
+```   
 void AFXAPI DDV_MinMaxMonth(
-    CDataExchange* 
-pDX  ,  
-    CTime& 
-refValue  ,  
-    const CTime* 
-refMinRange  ,  
+    CDataExchange* pDX,  
+    CTime& refValue,  
+    const CTime* refMinRange,  
     const CTime* refMaxRange);
 
 void AFXAPI DDV_MinMaxMonth(
-    CDataExchange* 
-pDX  ,  
-    COleDateTime& 
-refValue  ,  
-    const COleDateTime* 
-refMinRange  ,  
-    const COleDateTime* refMaxRange);
-
- 
+    CDataExchange* pDX,  
+    COleDateTime& refValue,  
+    const COleDateTime* refMinRange,  
+    const COleDateTime* refMaxRange); 
 ```  
   
 ### Parameters  
@@ -404,18 +339,12 @@ refMinRange  ,
 ##  <a name="ddv_minmaxshort"></a>  DDV_MinMaxShort  
  Call `DDV_MinMaxShort` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
   
-```  
- 
+```   
 void AFXAPI DDV_MinMaxShort(
-    CDataExchange* 
-pDX  ,  
-    short 
-value  ,  
-    short 
-minVal  ,  
-    short maxVal);
-
- 
+    CDataExchange* pDX,  
+    short value,  
+    short minVal,  
+    short maxVal); 
 ```  
   
 ### Parameters  
@@ -437,18 +366,12 @@ minVal  ,
 ##  <a name="ddv_minmaxslider"></a>  DDV_MinMaxSlider  
  Call `DDV_MinMaxSlider` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
   
-```  
- 
+```   
 void AFXAPI DDV_MinMaxSlider(
-    CDataExchange* 
-pDX  ,  
-    DWORD 
-value  ,  
-    DWORD 
-minVal  ,  
-    DWORD maxVal);
-
- 
+    CDataExchange* pDX,  
+    DWORD value,  
+    DWORD minVal,  
+    DWORD maxVal); 
 ```  
   
 ### Parameters  
@@ -470,18 +393,12 @@ minVal  ,
 ##  <a name="ddv_minmaxuint"></a>  DDV_MinMaxUInt  
  Call `DDV_MinMaxUInt` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
   
-```  
- 
+```   
 void AFXAPI DDV_MinMaxUInt(
-    CDataExchange* 
-pDX  ,  
-    UINT 
-value  ,  
-    UINT 
-minVal  ,  
-    UINT maxVal);
-
- 
+    CDataExchange* pDX,  
+    UINT value,  
+    UINT minVal,  
+    UINT maxVal); 
 ```  
   
 ### Parameters  
@@ -503,19 +420,12 @@ minVal  ,
 ##  <a name="ddv_minmaxulonglong"></a>  DDV_MinMaxULongLong  
  Call `DDV_MinMaxULongLong` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
   
-```  
- 
+```   
 void AFXAPI DDV_MinMaxULongLong(
-    CDataExchange* 
-pDX  ,  
-    ULONGLONG 
-value  ,  
-    ULONGLONG 
-    minVal ,  
-    ULONGLONG 
-    maxVal);
-
- 
+    CDataExchange* pDX,  
+    ULONGLONG value,  
+    ULONGLONG  minVal ,  
+    ULONGLONG  maxVal); 
 ```  
   
 ### Parameters  

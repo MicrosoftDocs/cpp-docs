@@ -13,9 +13,9 @@ manager: "ghogen"
 # &lt;map&gt; functions
 |||  
 |-|-|  
-|[swap](#swap)|[swap](#swap_multimap)|  
+|[swap (map)](#swap)|[swap (multimap)](#swap_multimap)|  
   
-##  <a name="swap_multimap"></a>  swap  
+##  <a name="swap_multimap"></a>  swap  (map)
  Exchanges the elements of two maps.  
   
 ```  
@@ -38,7 +38,7 @@ void swap(
 ### Example  
   See the code example for member function [map::swap](../standard-library/map-class.md#map__swap) for an example that uses the template version of `swap`.  
   
-##  <a name="swap"></a>  swap  
+##  <a name="swap"></a>  swap  (multimap)
  Exchanges the elements of two multimaps.  
   
 ```  

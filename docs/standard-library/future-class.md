@@ -59,12 +59,12 @@ class future;
   
 |Name|Description|  
 |----------|-----------------|  
-|[future::get Method](#future__get_method)|Retrieves the result that is stored in the associated asynchronous state.|  
-|[future::share Method](#future__share_method)|Converts the object to a `shared_future`.|  
-|[future::valid Method](#future__valid_method)|Specifies whether the object is not empty.|  
-|[future::wait Method](#future__wait_method)|Blocks the current thread until the associated asynchronous state is ready.|  
-|[future::wait_for Method](#future__wait_for_method)|Blocks until the associated asynchronous state is ready or until the specified time has elapsed.|  
-|[future::wait_until Method](#future__wait_until_method)|Blocks until the associated asynchronous state is ready or until a specified point in time.|  
+|[future::get](#future__get_method)|Retrieves the result that is stored in the associated asynchronous state.|  
+|[future::share](#future__share_method)|Converts the object to a `shared_future`.|  
+|[future::valid](#future__valid_method)|Specifies whether the object is not empty.|  
+|[future::wait](#future__wait_method)|Blocks the current thread until the associated asynchronous state is ready.|  
+|[future::wait_for](#future__wait_for_method)|Blocks until the associated asynchronous state is ready or until the specified time has elapsed.|  
+|[future::wait_until](#future__wait_until_method)|Blocks until the associated asynchronous state is ready or until a specified point in time.|  
   
 ### Public Operators  
   
@@ -94,7 +94,7 @@ future(future&& Other) noexcept;
   
  The second constructor constructs a `future` object and transfers the associated asynchronous state from `Other`. `Other` no longer has an associated asynchronous state.  
   
-##  <a name="future__get_method"></a>  future::get Method  
+##  <a name="future__get_method"></a>  future::get  
  Retrieves the result that is stored in the associated asynchronous state.  
   
 ```
@@ -130,7 +130,7 @@ future& operator=(future&& Right) noexcept;
 ### Remarks  
  After the transfer, `Right` no longer has an associated asynchronous state.  
   
-##  <a name="future__share_method"></a>  future::share Method  
+##  <a name="future__share_method"></a>  future::share  
  Converts the object to a [shared_future](../standard-library/shared-future-class.md) object.  
   
 ```
@@ -140,7 +140,7 @@ shared_future<Ty> share();
 ### Return Value  
  `shared_future(move(*this))`  
   
-##  <a name="future__valid_method"></a>  future::valid Method  
+##  <a name="future__valid_method"></a>  future::valid  
  Specifies whether the object has an associated asynchronous state.  
   
 ```
@@ -150,7 +150,7 @@ bool valid() noexcept;
 ### Return Value  
  `true` if the object has an associated asynchronous state; otherwise, `false`.  
   
-##  <a name="future__wait_method"></a>  future::wait Method  
+##  <a name="future__wait_method"></a>  future::wait  
  Blocks the current thread until the associated asynchronous state is *ready*.  
   
 ```cpp
@@ -160,13 +160,12 @@ void wait() const;
 ### Remarks  
  An associated asynchronous state is *ready* only if its asynchronous provider has stored a return value or stored an exception.  
   
-##  <a name="future__wait_for_method"></a>  future::wait_for Method  
+##  <a name="future__wait_for_method"></a>  future::wait_for  
  Blocks the current thread until the associated asynchronous state is *ready* or until a specified time interval has elapsed.  
   
-```cpp
+```
 template <class Rep, class Period>
-future_status wait_for(
-    const chrono::duration<Rep, Period>& Rel_time) const;
+future_status wait_for(const chrono::duration<Rep, Period>& Rel_time) const;
 ```  
   
 ### Parameters  
@@ -179,13 +178,12 @@ future_status wait_for(
 ### Remarks  
  An associated asynchronous state is ready only if its asynchronous provider has stored a return value or stored an exception.  
   
-##  <a name="future__wait_until_method"></a>  future::wait_until Method  
+##  <a name="future__wait_until_method"></a>  future::wait_until  
  Blocks the current thread until the associated asynchronous state is *ready* or until after a specified time point.  
   
 ```cpp
 template <class Clock, class Duration>
-future_status wait_until(
-    const chrono::time_point<Clock, Duration>& Abs_time) const;
+future_status wait_until(const chrono::time_point<Clock, Duration>& Abs_time) const;
 ```  
   
 ### Parameters  

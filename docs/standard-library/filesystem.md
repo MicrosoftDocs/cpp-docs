@@ -10,11 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "filesystem/std::tr2::sys::directory_entry"
-  - "filesystem/std::tr2::sys::recursive_directory_iterator"
-  - "filesystem/std::tr2::sys::path"
-  - "filesystem/std::tr2::sys::filesystem_error"
-  - "filesystem/std::tr2::sys::directory_iterator"
+  - "filesystem/std::experimental::filesystem::directory_entry"
+  - "filesystem/std::experimental::filesystem::recursive_directory_iterator"
+  - "filesystem/std::experimental::filesystem::path"
+  - "filesystem/std::experimental::filesystem::filesystem_error"
+  - "filesystem/std::experimental::filesystem::directory_iterator"
   - "<filesystem>"
 dev_langs: 
   - "C++"
@@ -50,7 +50,7 @@ using namespace std::experimental::filesystem::v1;
 ```  
   
 > [!IMPORTANT]
->  As of the release of Visual Studio 2015, the \<experimental/filesystem> header was not yet a C++ standard. Visual C++ 2015 implemented the final draft standard, found in [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf).  
+>  As of the release of Visual Studio 2017, the \<experimental/filesystem> header was not yet a C++ standard. Visual C++ 2017 implements the final draft standard, found in [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf).  
   
  This header supports filesystems for one of two broad classes of host operating systems: Microsoft Windows and Posix.  
   
@@ -117,7 +117,7 @@ using namespace std::experimental::filesystem::v1;
 |[directory_entry Class](../standard-library/directory-entry-class.md)|Describes an object that is returned by a `directory_iterator` or a `recursive_directory_iterator` and contains a path.|  
 |[directory_iterator Class](../standard-library/directory-iterator-class.md)|Describes an input iterator that sequences through the file names in a file-system directory.|  
 |[filesystem_error Class](../standard-library/filesystem-error-class.md)|A base class for exceptions that are thrown to report a low-level system overflow.|  
-|[path Class](../standard-library/path-class-cpp-standard-template-library.md)|Defines a class that stores an object of template type `String` that is suitable for use as a file name.|  
+|[path Class](../standard-library/path-class.md)|Defines a class that stores an object of template type `String` that is suitable for use as a file name.|  
 |[recursive_directory_iterator Class](../standard-library/recursive-directory-iterator-class.md)|Describes an input iterator that sequences through the file names in a file-system directory. The iterator can also descend into subdirectories.|  
 |[file_status Class](../standard-library/file-status-class.md)|Wraps a `file_type`.|  
   
