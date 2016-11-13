@@ -50,8 +50,7 @@ These macros provide string conversion features.
  These macros create a copy of a [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) or [TEXTMETRIC](http://msdn.microsoft.com/library/windows/desktop/dd145132) structure and convert the strings within the new structure to a new string type. The macros allocate memory on the stack for the new structure and return a pointer to the new structure.  
   
 ```
-MACRONAME(Â
-    address_of_structure Â)
+MACRONAME( address_of_structure )
 ```  
   
 ### Remarks  

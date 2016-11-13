@@ -48,11 +48,9 @@ class value_compare : public binary_function<value_type, value_type, bool>
 {
 public:
     bool operator()(const value_type& left, const value_type& right) const;
-
     value_compare(key_compare pred) : comp(pred);
-
-    protected:
- key_compare comp;
+protected:
+    key_compare comp;
 };
 ```  
   

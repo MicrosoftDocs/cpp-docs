@@ -75,12 +75,12 @@ END_RDX_MAP
  Associates the specified registry entry with a specified member variable of type BYTE.  
   
 ```
-RDX_BINARY(Â
-    rootkey, Â
-    subkey, Â
-    valuename, Â
-    member, Â
-    member_size Â)
+RDX_BINARY(
+    rootkey, 
+    subkey, 
+    valuename, 
+    member, 
+    member_size )
 ```  
   
 ### Parameters  
@@ -106,12 +106,12 @@ RDX_BINARY(Â
  Associates the specified registry entry with a specified member variable of type CString.  
   
 ```
-RDX_CSTRING_TEXT(Â
-    rootkey, Â
-    subkey, Â
-    valuename, Â
-    member, Â
-    member_size Â)
+RDX_CSTRING_TEXT(
+    rootkey, 
+    subkey, 
+    valuename, 
+    member, 
+    member_size )
 ```  
   
 ### Parameters  
@@ -137,12 +137,12 @@ RDX_CSTRING_TEXT(Â
  Associates the specified registry entry with a specified member variable of type DWORD.  
   
 ```
-RDX_DWORD(Â
-    rootkey, Â
-    subkey, Â
-    valuename, Â
-    member, Â
-    member_size Â)
+RDX_DWORD(
+    rootkey, 
+    subkey, 
+    valuename, 
+    member, 
+    member_size )
 ```  
   
 ### Parameters  
@@ -168,12 +168,12 @@ RDX_DWORD(Â
  Associates the specified registry entry with a specified member variable of type TCHAR.  
   
 ```
-RDX_TEXT(Â
-    rootkey, Â
-    subkey, Â
-    valuename, Â
-    member, Â
-    member_size Â)
+RDX_TEXT(
+    rootkey, 
+    subkey, 
+    valuename, 
+    member, 
+    member_size )
 ```  
   
 ### Parameters  

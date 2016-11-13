@@ -185,7 +185,6 @@ Elements written to output stream:
   
 ```
 ostream_iterator<Type, CharType, Traits>& operator++();
-
 ostream_iterator<Type, CharType, Traits> operator++(int);
 ```  
   
@@ -232,8 +231,7 @@ Elements written to output stream:
  Assignment operator used to implement the output_iterator expression * `i` = `x` for writing to an output stream.  
   
 ```
-ostream_iterator<Type, CharType, Traits>& operator=(
-    const Type& val);
+ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
 ```  
   
 ### Parameters  

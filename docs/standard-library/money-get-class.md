@@ -100,14 +100,14 @@ typedef CharType char_type;
 ```
 virtual iter_type do_get(iter_type first,
     iter_type last,
-    bool _Intl,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    bool Intl,
+    ios_base& Iosbase,
+    ios_base::iostate& State,
     long double& val) const virtual iter_type do_get(iter_type first,
     iter_type last,
-    bool _Intl,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    bool Intl,
+    ios_base& Iosbase,
+    ios_base::iostate& State,
     string_type& val) const
 ```  
   
@@ -118,13 +118,13 @@ virtual iter_type do_get(iter_type first,
  `last`  
  Input iterator addressing the end of the sequence to be converted.  
   
- `_Intl`  
+ `Intl`  
  A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.  
   
- `_Iosbase`  
+ `Iosbase`  
  A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.  
   
- `_State`  
+ `State`  
  Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded or not.  
   
  `val`  
@@ -134,7 +134,7 @@ virtual iter_type do_get(iter_type first,
  An input iterator addressing the first element beyond the monetary input field.  
   
 ### Remarks  
- The first virtual protected member function tries to match sequential elements beginning at first in the sequence [ `first`, `last`) until it has recognized a complete, nonempty monetary input field. If successful, it converts this field to a sequence of one or more decimal digits, optionally preceded by a minus sign ( `–`), to represent the amount and stores the result in the [string_type](#money_get__string_type) object `val`. It returns an iterator designating the first element beyond the monetary input field. Otherwise, the function stores an empty sequence in `val` and sets `ios_base::failbit` in `_State`. It returns an iterator designating the first element beyond any prefix of a valid monetary input field. In either case, if the return value equals `last`, the function sets `ios_base::eofbit` in `_State`.  
+ The first virtual protected member function tries to match sequential elements beginning at first in the sequence [ `first`, `last`) until it has recognized a complete, nonempty monetary input field. If successful, it converts this field to a sequence of one or more decimal digits, optionally preceded by a minus sign ( `–`), to represent the amount and stores the result in the [string_type](#money_get__string_type) object `val`. It returns an iterator designating the first element beyond the monetary input field. Otherwise, the function stores an empty sequence in `val` and sets `ios_base::failbit` in `State`. It returns an iterator designating the first element beyond any prefix of a valid monetary input field. In either case, if the return value equals `last`, the function sets `ios_base::eofbit` in `State`.  
   
  The second virtual protected member function behaves the same as the first, except that if successful it converts the optionally signed digit sequence to a value of type `long double` and stores that value in `val`.  
   
@@ -175,16 +175,16 @@ virtual iter_type do_get(iter_type first,
 ```
 iter_type get(iter_type first,
     iter_type last,
-    bool _Intl,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    bool Intl,
+    ios_base& Iosbase,
+    ios_base::iostate& State,
     long double& val) const;
 
 iter_type get(iter_type first,
     iter_type last,
-    bool _Intl,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    bool Intl,
+    ios_base& Iosbase,
+    ios_base::iostate& State,
     string_type& val) const;
 ```  
   
@@ -195,13 +195,13 @@ iter_type get(iter_type first,
  `last`  
  Input iterator addressing the end of the sequence to be converted.  
   
- `_Intl`  
+ `Intl`  
  A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.  
   
- `_Iosbase`  
+ `Iosbase`  
  A format flag which when set indicates that the currency symbol is optional; otherwise, it is required  
   
- `_State`  
+ `State`  
  Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.  
   
  `val`  
@@ -211,7 +211,7 @@ iter_type get(iter_type first,
  An input iterator addressing the first element beyond the monetary input field.  
   
 ### Remarks  
- Both member functions return [do_get](#money_get__do_get)( `first``,` `last``,` `_Intl`, `_Iosbase`, `_State`, `val`).  
+ Both member functions return [do_get](#money_get__do_get)( `first``,` `last``,` `Intl`, `Iosbase`, `State`, `val`).  
   
 ### Example  
   

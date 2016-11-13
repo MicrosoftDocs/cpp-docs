@@ -44,15 +44,15 @@ This template class describes an object that controls insertion of elements and 
 ## Syntax  
   
 ```  
-template <class _Elem, class _Tr = char_traits<Elem>>  
-class basic_ostream        : virtual public basic_ios<_Elem, _Tr>  
+template <class Elem, class Tr = char_traits<Elem>>  
+class basic_ostream : virtual public basic_ios<Elem, Tr>  
 ```  
   
 #### Parameters  
- `_Elem`  
+ `Elem`  
  A `char_type`.  
   
- `_Tr`  
+ `Tr`  
  The character `traits_type`.  
   
 ## Remarks  
@@ -137,9 +137,9 @@ return (*this);
   
 |||  
 |-|-|  
-|[operator=](#basic_ostream__operator_eq)|Assigns the value of the provided `basic_ostream` object parameter to this object.|  
-|[operator<<](#basic_ostream__operator_lt__lt_)|Writes to the stream.|  
-  
+|[operator=](#basic_ostream_operator_eq)|Assigns the value of the provided `basic_ostream` object parameter to this object.|  
+|[operator<<](#basic_ostream_operator_lt_lt_)|Writes to the stream.|  
+
 ## Requirements  
  **Header:** \<ostream>  
   
@@ -150,11 +150,10 @@ return (*this);
   
 ```  
 explicit basic_ostream(
-    basic_streambuf<_Elem, _Tr>* strbuf,  
+    basic_streambuf<Elem, Tr>* strbuf,  
     bool _Isstd = false);
 
-basic_ostream(
-    basic_ostream&& right);
+basic_ostream(basic_ostream&& right);
 ```  
   
 ### Parameters  
@@ -177,7 +176,7 @@ basic_ostream(
  Flushes the buffer.  
   
 ```  
-basic_ostream<_Elem, _Tr>& flush();
+basic_ostream<Elem, Tr>& flush();
 ```  
   
 ### Return Value  
@@ -205,64 +204,37 @@ int main( )
 test  
 ```  
   
-##  <a name="basic_ostream__operator_lt__lt_"></a>  basic_ostream::operator&lt;&lt;  
+##  <a name="basic_ostream_operator_lt_lt_"></a>  basic_ostream::operator&lt;&lt;  
  Writes to the stream.  
   
 ```  
-basic_ostream<_Elem, _Tr>& operator<<(
-    basic_ostream<_Elem, _Tr>& (* _Pfn)(basic_ostream<_Elem, _Tr>&));
+basic_ostream<Elem, Tr>& operator<<(
+    basic_ostream<Elem, Tr>& (* Pfn)(basic_ostream<Elem, Tr>&));
 
-basic_ostream<_Elem, _Tr>& operator<<(
-    ios_base& (* _Pfn)(ios_base&));
+basic_ostream<Elem, Tr>& operator<<(
+    ios_base& (* Pfn)(ios_base&));
 
-basic_ostream<_Elem, _Tr>& operator<<(
-    basic_ios<_Elem, _Tr>& (* _Pfn)(basic_ios<_Elem, _Tr>&));
+basic_ostream<Elem, Tr>& operator<<(
+    basic_ios<Elem, Tr>& (* Pfn)(basic_ios<Elem, Tr>&));
 
-basic_ostream<_Elem, _Tr>& operator<<(
-    basic_streambuf<_Elem, _Tr>* strbuf);
-
-basic_ostream<_Elem, _Tr>& operator<<(
-    bool val);
-
-basic_ostream<_Elem, _Tr>& operator<<(
-    short val);
-
-basic_ostream<_Elem, _Tr>& operator<<(
-    unsigned short val);
-
-basic_ostream<_Elem, _Tr>& operator<<(
-    int __w64  val);
-
-basic_ostream<_Elem, _Tr>& operator<<(
-    unsigned int __w64  val);
-
-basic_ostream<_Elem, _Tr>& operator<<(
-    long val);
-
-basic_ostream<_Elem, _Tr>& operator<<(
-    unsigned long __w64  val);
-
-basic_ostream<_Elem, _Tr>& operator<<(
-    long long val);
-
-basic_ostream<_Elem, _Tr>& operator<<(
-    unsigned long long val);
-
-basic_ostream<_Elem, _Tr>& operator<<(
-    float val);
-
-basic_ostream<_Elem, _Tr>& operator<<(
-    double val);
-
-basic_ostream<_Elem, _Tr>& operator<<(
-    long double val);
-
-basic_ostream<_Elem, _Tr>& operator<<(
-    const void* val);
+basic_ostream<Elem, Tr>& operator<<(basic_streambuf<Elem, Tr>* strbuf);
+basic_ostream<Elem, Tr>& operator<<(bool val);
+basic_ostream<Elem, Tr>& operator<<(short val);
+basic_ostream<Elem, Tr>& operator<<(unsigned short val);
+basic_ostream<Elem, Tr>& operator<<(int __w64  val);
+basic_ostream<Elem, Tr>& operator<<(unsigned int __w64  val);
+basic_ostream<Elem, Tr>& operator<<(long val);
+basic_ostream<Elem, Tr>& operator<<(unsigned long __w64  val);
+basic_ostream<Elem, Tr>& operator<<(long long val);
+basic_ostream<Elem, Tr>& operator<<(unsigned long long val);
+basic_ostream<Elem, Tr>& operator<<(float val);
+basic_ostream<Elem, Tr>& operator<<(double val);
+basic_ostream<Elem, Tr>& operator<<(long double val);
+basic_ostream<Elem, Tr>& operator<<(const void* val);
 ```  
   
 ### Parameters  
- `_Pfn`  
+ `Pfn`  
  A function pointer.  
   
  ` strbuf`  
@@ -282,7 +254,7 @@ basic_ostream<_Elem, _Tr>& operator<<(
  The function  
   
 ```  
-basic_ostream<_Elem, _Tr>& operator<<(basic_streambuf<Elem, Tr>* strbuf);
+basic_ostream<Elem, Tr>& operator<<(basic_streambuf<Elem, Tr>* strbuf);
 ```  
   
  extracts elements from ` strbuf`, if ` strbuf` is not a null pointer, and inserts them. Extraction stops on end of file, or if an extraction throws an exception (which is rethrown). It also stops, without extracting the element in question, if an insertion fails. If the function inserts no elements, or if an extraction throws an exception, the function calls [setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)(**failbit**). In any case, the function returns **\*this**.  
@@ -290,7 +262,7 @@ basic_ostream<_Elem, _Tr>& operator<<(basic_streambuf<Elem, Tr>* strbuf);
  The function  
   
 ```  
-basic_ostream<_Elem, _Tr>& operator<<(bool val);
+basic_ostream<Elem, Tr>& operator<<(bool val);
 ```  
   
  converts _`Val` to a Boolean field and inserts it by calling [use_facet](../standard-library/basic-filebuf-class.md#basic_filebuf__open)**<num_put\<Elem, OutIt>**`(`[getloc](../standard-library/ios-base-class.md#ios_base__getloc)). [put](#basic_ostream__put)(**OutIt**([rdbuf](../standard-library/basic-ios-class.md#basic_ios__rdbuf)), **\*this**, `getloc`, **val**). Here, **OutIt** is defined as [ostreambuf_iterator](../standard-library/ostreambuf-iterator-class.md)**\<Elem, Tr>**. The function returns **\*this**.  
@@ -298,23 +270,15 @@ basic_ostream<_Elem, _Tr>& operator<<(bool val);
  The functions  
   
 ```  
-basic_ostream<_Elem, _Tr>& operator<<(short val);
-
-basic_ostream<_Elem, _Tr>& operator<<(unsigned short val);
-
-basic_ostream<_Elem, _Tr>& operator<<(int val);
-
-basic_ostream<_Elem, _Tr>& operator<<(unsigned int __w64  val);
-
-basic_ostream<_Elem, _Tr>& operator<<(long val);
-
-basic_ostream<_Elem, _Tr>& operator<<(unsigned long val);
-
-basic_ostream<_Elem, _Tr>& operator<<(long long val);
-
-basic_ostream<_Elem, _Tr>& operator<<(unsigned long long val);
-
-basic_ostream<_Elem, _Tr>& operator<<(const void* val);
+basic_ostream<Elem, Tr>& operator<<(short val);
+basic_ostream<Elem, Tr>& operator<<(unsigned short val);
+basic_ostream<Elem, Tr>& operator<<(int val);
+basic_ostream<Elem, Tr>& operator<<(unsigned int __w64  val);
+basic_ostream<Elem, Tr>& operator<<(long val);
+basic_ostream<Elem, Tr>& operator<<(unsigned long val);
+basic_ostream<Elem, Tr>& operator<<(long long val);
+basic_ostream<Elem, Tr>& operator<<(unsigned long long val);
+basic_ostream<Elem, Tr>& operator<<(const void* val);
 ```  
   
  each convert ` val` to a numeric field and insert it by calling **use_facet<num_put\<Elem, OutIt>**(`getloc`). **put**(**OutIt**(`rdbuf`), **\*this**, `getloc`, **val**). Here, **OutIt** is defined as **ostreambuf_iterator\<Elem, Tr>**. The function returns **\*this**.  
@@ -322,14 +286,12 @@ basic_ostream<_Elem, _Tr>& operator<<(const void* val);
  The functions  
   
 ```  
-basic_ostream<_Elem, _Tr>& operator<<(float val);
-
-basic_ostream<_Elem, _Tr>& operator<<(double val);
-
-basic_ostream<_Elem, _Tr>& operator<<(long double val);
+basic_ostream<Elem, Tr>& operator<<(float val);
+basic_ostream<Elem, Tr>& operator<<(double val);
+basic_ostream<Elem, Tr>& operator<<(long double val);
 ```  
   
- each convert _`Val` to a numeric field and insert it by calling **use_facet<num_put\<Elem, OutIt>**(`getloc`)**. put**(**OutIt**(`rdbuf`), **\*this**, `getloc`, **val**). Here, **OutIt** is defined as **ostreambuf_iterator\<Elem, Tr>**. The function returns **\*this**.  
+ each convert `val` to a numeric field and insert it by calling **use_facet<num_put\<Elem, OutIt>**(`getloc`)**. put**(**OutIt**(`rdbuf`), **\*this**, `getloc`, **val**). Here, **OutIt** is defined as **ostreambuf_iterator\<Elem, Tr>**. The function returns **\*this**.  
   
 ### Example  
   
@@ -348,37 +310,37 @@ ios_base& hex2( ios_base& ib )
    return ib;  
 }  
   
-basic_ostream<char, char_traits<char> >& somefunc(basic_ostream<char, char_traits<char> > &i)  
-{  
-   if ( i == cout )  
-   {  
-      i << "i is cout" << endl;  
-   }  
-   return i;  
-}  
-  
-class CTxtStreambuf : public basic_streambuf< char, char_traits< char > >  
-{  
-public:  
-   CTxtStreambuf(char *_pszText)  
-   {  
-      pszText = _pszText;  
-      setg(pszText, pszText, pszText+strlen(pszText));  
-   };  
-          char *pszText;  
-};  
-  
-int main( )  
-{  
-   cout << somefunc;  
-   cout << 21 << endl;  
-  
-   hex2(cout);  
-   cout << 21 << endl;  
-  
-   CTxtStreambuf f("text in streambuf");  
-   cout << &f << endl;  
-}  
+basic_ostream<char, char_traits<char> >& somefunc(basic_ostream<char, char_traits<char> > &i)
+{
+    if (i == cout)
+    {
+        i << "i is cout" << endl;
+    }
+    return i;
+}
+
+class CTxtStreambuf : public basic_streambuf< char, char_traits< char > >
+{
+public:
+    CTxtStreambuf(char *_pszText)
+    {
+        pszText = _pszText;
+        setg(pszText, pszText, pszText + strlen(pszText));
+    };
+    char *pszText;
+};
+
+int main()
+{
+    cout << somefunc;
+    cout << 21 << endl;
+
+    hex2(cout);
+    cout << 21 << endl;
+
+    CTxtStreambuf f("text in streambuf");
+    cout << &f << endl;
+}
 ```  
   
 ##  <a name="basic_ostream__operator_eq"></a>  basic_ostream::operator=  
@@ -399,8 +361,7 @@ basic_ostream& operator=(basic_ostream&& right);
  Puts a character in a stream.  
   
 ```  
-basic_ostream<_Elem, _Tr>& put(
-    char_type _Ch);
+basic_ostream<Elem, Tr>& put(char_type _Ch);
 ```  
   
 ### Parameters  
@@ -438,12 +399,9 @@ l
  Reset position in output stream.  
   
 ```  
-basic_ostream<_Elem, _Tr>& seekp(
-    pos_type _Pos);
+basic_ostream<Elem, Tr>& seekp(pos_type _Pos);
 
-basic_ostream<_Elem, _Tr>& seekp(
-    off_type _Off,  
-    ios_base::seekdir _Way);
+basic_ostream<Elem, Tr>& seekp(off_type _Off, ios_base::seekdir _Way);
 ```  
   
 ### Parameters  
@@ -497,7 +455,7 @@ int main()
   
 class sentry {  
    public:  
-   explicit sentry(basic_ostream\<_Elem, _Tr>& _Ostr);
+   explicit sentry(basic_ostream\<Elem, Tr>& _Ostr);
    operator bool() const;
    ~sentry();
    };  
@@ -541,9 +499,7 @@ pos_type tellp();
  Put characters in a stream.  
   
 ```  
-basic_ostream<_Elem, _Tr>& write(
-    const char_type* str,  
-    streamsize count);
+basic_ostream<Elem, Tr>& write(const char_type* str, streamsize count);
 ```  
   
 ### Parameters  

@@ -47,26 +47,26 @@ Wraps a smart pointer around a resource that ensures the resource is destroyed a
   
 ## Syntax  
  ```   
-class auto_ptr {  
-   public:  
-   typedef Type element_type;  
-   explicit auto_ptr(Type* ptr = 0) throw();
-   auto_ptr(auto_ptr<Type>& right) throw()
-   ;  
-   template <class Other>  
-   operator auto_ptr<Other>() throw();
-   template <class Other>  
-   auto_ptr<Type>& operator=(auto_ptr<Other>& right) throw();
-   template <class Other>  
-   auto_ptr(auto_ptr<Other>& right);
-   auto_ptr<Type>& operator=(auto_ptr<Type>& right);
-   ~auto_ptr();
-   Type& operator*() const throw();
-   Type * operator->()const throw();
-   Type *get() const throw();
-   Type *release()throw();
-   void reset(Type* ptr = 0);
-   };  
+class auto_ptr {
+public:
+    typedef Type element_type;
+    explicit auto_ptr(Type* ptr = 0) throw();
+    auto_ptr(auto_ptr<Type>& right) throw()
+        ;
+    template <class Other>
+    operator auto_ptr<Other>() throw();
+    template <class Other>
+    auto_ptr<Type>& operator=(auto_ptr<Other>& right) throw();
+    template <class Other>
+    auto_ptr(auto_ptr<Other>& right);
+    auto_ptr<Type>& operator=(auto_ptr<Type>& right);
+    ~auto_ptr();
+    Type& operator*() const throw();
+    Type * operator->()const throw();
+    Type *get() const throw();
+    Type *release()throw();
+    void reset(Type* ptr = 0);
+};
 ```  
 #### Parameters  
  ` right`  
@@ -120,37 +120,15 @@ class auto_ptr {
 ##  <a name="auto_ptr__auto_ptr"></a>  auto_ptr::auto_ptr  
  The constructor for objects of type `auto_ptr`.  
   
-```  
- 
-explicit auto  
-_  
-ptr(Type* 
-    ptr 
-= 0) throw();
+```   
+explicit auto_ptr(Type* ptr  = 0) throw();
 
-auto  
-_  
-ptr(auto 
-_  
-ptr<Type>& 
-    right) throw();
+auto_ptr(auto_ptr<Type>& right) throw();
 
-auto  
-_  
-ptr(auto 
-_  
-ptr  
-_  
-ref<Type>   
-    right) throw();
+auto_ptr(auto _ptr_ref<Type> right) throw();
 
 template <class Other>  
-auto 
-_  
-ptr(auto 
-_  
-ptr<Other>& 
-    right) throw();
+auto _ptr(auto _ptr<Other>& right) throw();
 ```  
   
 ### Parameters  
@@ -231,16 +209,13 @@ Destructing 00311AF8
   
 ```  
  
-typedef Type element  
-_  
-type;  
+typedef Type element  _type;  
 ```  
   
 ##  <a name="auto_ptr__get"></a>  auto_ptr::get  
  The member function returns the stored pointer **myptr**.  
   
-```  
- 
+```   
 Type *get() const throw();
 ```  
   
@@ -300,11 +275,8 @@ Destructing 00311B88 Value: 6
 ```  
 template <class Other>  
 auto_ptr<Type>& operator=(auto_ptr<Other>& right) throw();
-
 auto_ptr<Type>& operator=(auto_ptr<Type>& right) throw();
-
-auto_ptr<Type>& operator=(auto_ptr_ref<Type>  
-right) throw();
+auto_ptr<Type>& operator=(auto_ptr_ref<Type> right) throw();
 ```  
   
 ### Parameters  
@@ -323,8 +295,7 @@ right) throw();
 ##  <a name="auto_ptr__operator_star"></a>  auto_ptr::operator*  
  The dereferencing operator for objects of type `auto_ptr`.  
   
-```  
- 
+```   
 Type& operator*() const throw();
 ```  
   
@@ -340,8 +311,7 @@ Type& operator*() const throw();
 ##  <a name="auto_ptr__operator-_gt_"></a>  auto_ptr::operator-&gt;  
  The operator for allowing member access.  
   
-```  
- 
+```   
 Type * operator->() const throw();
 ```  
   
@@ -357,12 +327,9 @@ Type * operator->() const throw();
 ##  <a name="auto_ptr__operator_auto_ptr_lt_other_gt_"></a>  auto_ptr::operator auto_ptr&lt;Other&gt;  
  Casts from one kind of `auto_ptr` to another kind of `auto_ptr`.  
   
-```  
- 
+```   
 template <class Other>  
-operator auto 
-_  
-ptr<Other>() throw();
+operator auto _ptr<Other>() throw();
 ```  
   
 ### Return Value  
@@ -388,14 +355,9 @@ int main()
 ##  <a name="auto_ptr__operator_auto_ptr_ref_lt_other_gt_"></a>  auto_ptr::operator auto_ptr_ref&lt;Other&gt;  
  Casts from an `auto_ptr` to an **auto_ptr_ref**.  
   
-```  
- 
+```   
 template <class Other>  
-operator auto 
-_  
-ptr  
-_  
-ref<Other>() throw();
+operator auto _ptr  _ref<Other>() throw();
 ```  
   
 ### Return Value  
@@ -412,35 +374,35 @@ ref<Other>() throw();
   
 using namespace std;  
   
-class C{  
-   public:  
-   C(int _i) : m_i(_i){  
-   }  
-   ~C(){  
-      cout << "~C:  "<< m_i <<"\n";  
-   }  
-   C &operator =(const int &x){  
-      m_i = x;  
-      return *this;  
-   }  
-   int m_i;  
-};  
-void f(auto_ptr<C> arg ){  
-};  
-int main()  
-{  
-   const auto_ptr<C> ciap ( new C(1) );  
-   auto_ptr<C> iap ( new C(2) );  
-  
-   // Error: this implies transfer of ownership of iap's pointer  
-   // f(ciap);   
-   f(iap); // compiles, but gives up ownership of pointer  
-  
-   // here, iap owns a destroyed pointer so the following is bad:  
-   // *iap = 5; // BOOM  
-  
-   cout << "main exiting\n";  
-}  
+class C {
+public:
+    C(int _i) : m_i(_i) {
+    }
+    ~C() {
+        cout << "~C:  " << m_i << "\n";
+    }
+    C &operator =(const int &x) {
+        m_i = x;
+        return *this;
+    }
+    int m_i;
+};
+void f(auto_ptr<C> arg) {
+};
+int main()
+{
+    const auto_ptr<C> ciap(new C(1));
+    auto_ptr<C> iap(new C(2));
+
+    // Error: this implies transfer of ownership of iap's pointer  
+    // f(ciap);   
+    f(iap); // compiles, but gives up ownership of pointer  
+
+            // here, iap owns a destroyed pointer so the following is bad:  
+            // *iap = 5; // BOOM  
+
+    cout << "main exiting\n";
+}
 ```  
   
 ```Output  
@@ -452,8 +414,7 @@ main exiting
 ##  <a name="auto_ptr__release"></a>  auto_ptr::release  
  The member replaces the stored pointer **myptr** with a null pointer and returns the previously stored pointer.  
   
-```  
- 
+```   
 Type *release() throw();
 ```  
   
@@ -473,32 +434,32 @@ Type *release() throw();
 #include <vector>  
 using namespace std;  
   
-class Int   
-{  
-public:  
-   Int( int i )   
-   {  
-      x = i;  
-      cout << "Constructing " << ( void* )this << " Value: " << x << endl;   
-   };  
-   ~Int( ) {  
-      cout << "Destructing " << ( void* )this << " Value: " << x << endl;   
-   };  
-  
-   int x;  
-  
-};  
-  
-int main( )   
-{  
-   auto_ptr<Int> pi ( new Int( 5 ) );  
-   pi.reset( new Int( 6 ) );  
-   Int* pi2 = pi.get ( );  
-   Int* pi3 = pi.release ( );  
-   if ( pi2 == pi3 )  
-      cout << "pi2 == pi3" << endl;  
-   delete pi3;  
-}  
+class Int
+{
+public:
+    Int(int i)
+    {
+        x = i;
+        cout << "Constructing " << (void*)this << " Value: " << x << endl;
+    };
+    ~Int() {
+        cout << "Destructing " << (void*)this << " Value: " << x << endl;
+    };
+
+    int x;
+
+};
+
+int main()
+{
+    auto_ptr<Int> pi(new Int(5));
+    pi.reset(new Int(6));
+    Int* pi2 = pi.get();
+    Int* pi3 = pi.release();
+    if (pi2 == pi3)
+        cout << "pi2 == pi3" << endl;
+    delete pi3;
+}
 ```  
   
 ```Output  
@@ -512,10 +473,8 @@ Destructing 00311B88 Value: 6
 ##  <a name="auto_ptr__reset"></a>  auto_ptr::reset  
  The member function evaluates the expression **delete**Â **myptr**, but only if the stored pointer value **myptr** changes as a result of a function call. It then replaces the stored pointer with **ptr**.  
   
-```  
- 
-void reset(Type* 
-    ptr = 0);
+```   
+void reset(Type* ptr = 0);
 ```  
   
 ### Parameters  
@@ -531,34 +490,34 @@ void reset(Type*
 #include <iostream>  
 #include <vector>  
   
-using namespace std;  
-  
-class Int   
-{  
-public:  
-   Int( int i )   
-   {  
-      x = i;  
-      cout << "Constructing " << ( void* )this << " Value: " << x << endl;   
-   };  
-   ~Int( )   
-   {  
-      cout << "Destructing " << ( void* )this << " Value: " << x << endl;   
-   };  
-  
-   int x;  
-};  
-  
-int main( )   
-{  
-   auto_ptr<Int> pi ( new Int( 5 ) );  
-   pi.reset( new Int( 6 ) );  
-   Int* pi2 = pi.get ( );  
-   Int* pi3 = pi.release ( );  
-   if ( pi2 == pi3 )  
-      cout << "pi2 == pi3" << endl;  
-   delete pi3;  
-}  
+using namespace std;
+
+class Int
+{
+public:
+    Int(int i)
+    {
+        x = i;
+        cout << "Constructing " << (void*)this << " Value: " << x << endl;
+    };
+    ~Int()
+    {
+        cout << "Destructing " << (void*)this << " Value: " << x << endl;
+    };
+
+    int x;
+};
+
+int main()
+{
+    auto_ptr<Int> pi(new Int(5));
+    pi.reset(new Int(6));
+    Int* pi2 = pi.get();
+    Int* pi3 = pi.release();
+    if (pi2 == pi3)
+        cout << "pi2 == pi3" << endl;
+    delete pi3;
+}
 ```  
   
 ```Output  

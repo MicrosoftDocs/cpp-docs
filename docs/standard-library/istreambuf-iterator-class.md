@@ -45,7 +45,8 @@ The template class istreambuf_iterator describes an input iterator object that e
   
 ```
 template <class CharType class Traits = char_traits <CharType>>  
-class istreambuf_iterator : public iterator<input_iterator_tag, CharType, typename Traits ::off_type, CharType *, CharType &>
+class istreambuf_iterator 
+: public iterator<input_iterator_tag, CharType, typename Traits ::off_type, CharType*, CharType&>
 ```  
   
 #### Parameters  
@@ -142,8 +143,7 @@ int main( )
  Tests for equivalence between two input stream buffer iterators.  
   
 ```
-bool equal(
-    const istreambuf_iterator<CharType, Traits>& right) const;
+bool equal(const istreambuf_iterator<CharType, Traits>& right) const;
 ```  
   
 ### Parameters  
@@ -231,7 +231,6 @@ typedef basic_istream<CharType, Traits> istream_type;
   
 ```
 istreambuf_iterator(streambuf_type* strbuf = 0) throw();
-
 istreambuf_iterator(istream_type& _Istr) throw();
 ```  
   
@@ -320,7 +319,6 @@ int main( )
   
 ```
 istreambuf_iterator<CharType, Traits>& operator++();
-
 istreambuf_iterator<CharType, Traits> operator++(int);
 ```  
   

@@ -21,8 +21,7 @@ manager: "ghogen"
   
 ```
 bool operator!=(
-    const list<Type, Allocator>&
-left,
+    const list<Type, Allocator>& left,
     const list<Type, Allocator>& right);
 ```  
   
@@ -70,8 +69,7 @@ Lists not equal.
   
 ```
 bool operator<(
-    const list<Type, Allocator>&
-left,
+    const list<Type, Allocator>& left,
     const list<Type, Allocator>& right);
 ```  
   
@@ -122,8 +120,7 @@ List c1 is less than list c2.
   
 ```
 bool operator<=(
-    const list<Type, Allocator>&
-left,
+    const list<Type, Allocator>& left,
     const list<Type, Allocator>& right);
 ```  
   
@@ -174,8 +171,7 @@ List c1 is less than or equal to list c2.
   
 ```
 bool operator==(
-    const list<Type, Allocator>&
-left,
+    const list<Type, Allocator>& left,
     const list<Type, Allocator>& right);
 ```  
   
@@ -222,8 +218,7 @@ The lists are equal.
   
 ```
 bool operator>(
-    const list<Type, Allocator>&
-left,
+    const list<Type, Allocator>& left,
     const list<Type, Allocator>& right);
 ```  
   
@@ -274,8 +269,7 @@ List c1 is greater than list c2.
   
 ```
 bool operator>=(
-    const list<Type, Allocator>&
-left,
+    const list<Type, Allocator>& left,
     const list<Type, Allocator>& right);
 ```  
   

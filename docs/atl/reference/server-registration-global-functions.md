@@ -48,8 +48,6 @@ These functions provide support for registering and unregistering server objects
 ##  <a name="atlcommoduleregisterserver"></a>  AtlComModuleRegisterServer  
  This function is called to register every object in the object map.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
   
 ```
 ATLINLINE ATLAPI AtlComModuleRegisterServer(
@@ -78,9 +76,7 @@ ATLINLINE ATLAPI AtlComModuleRegisterServer(
   
 ##  <a name="atlcommoduleunregisterserver"></a>  AtlComModuleUnregisterServer  
  This function is called to unregister every object in the object map.  
-  
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+   
   
 ```
 ATLINLINE ATLAPI AtlComModuleUnregisterServer(
@@ -110,8 +106,6 @@ ATLINLINE ATLAPI AtlComModuleUnregisterServer(
 ##  <a name="atlcommoduleregisterclassobjects"></a>  AtlComModuleRegisterClassObjects  
  This function is called to register class objects.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
   
 ```
 ATLINLINE ATLAPI AtlComModuleRegisterClassObjects(
@@ -139,8 +133,6 @@ ATLINLINE ATLAPI AtlComModuleRegisterClassObjects(
 ##  <a name="atlcommodulerevokeclassobjects"></a>  AtlComModuleRevokeClassObjects  
  This function is called to remove the class factory/factories from the Running Object Table.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
   
 ```
 ATLINLINE ATLAPI AtlComModuleRevokeClassObjects(_ATL_COM_MODULE* pComModule);
@@ -159,8 +151,6 @@ ATLINLINE ATLAPI AtlComModuleRevokeClassObjects(_ATL_COM_MODULE* pComModule);
 ##  <a name="atlcommodulegetclassobject"></a>  AtlComModuleGetClassObject  
  This function is called to return the class factory.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
   
 ```
 ATLINLINE ATLAPI AtlComModuleGetClassObject(

@@ -22,7 +22,9 @@ manager: "ghogen"
  Tests if the map object on the left side of the operator is not equal to the map object on the right side.  
   
 ```
-bool operator!=(const map <Key, Type, Traits, Allocator>& left, const map <Key, Type, Traits, Allocator>& right);
+bool operator!=(
+      const map <Key, Type, Traits, Allocator>& left, 
+      const map <Key, Type, Traits, Allocator>& right);
 ```  
   
 ### Parameters  
@@ -80,7 +82,9 @@ The maps m1 and m3 are equal.
  Tests if the map object on the left side of the operator is less than the map object on the right side.  
   
 ```
-bool operator<(const map <Key, Type, Traits, Allocator>& left, const map <Key, Type, Traits, Allocator>& right);
+bool operator<(
+      const map <Key, Type, Traits, Allocator>& left, 
+      const map <Key, Type, Traits, Allocator>& right);
 ```  
   
 ### Parameters  
@@ -138,7 +142,9 @@ The map m1 is not less than the map m3.
  Tests if the map object on the left side of the operator is less than or equal to the map object on the right side.  
   
 ```
-bool operator<=(const map <Key, Type, Traits, Allocator>& left, const map <Key, Type, Traits, Allocator>& right);
+bool operator<=(
+      const map <Key, Type, Traits, Allocator>& left, 
+      const map <Key, Type, Traits, Allocator>& right);
 ```  
   
 ### Parameters  
@@ -200,7 +206,9 @@ The map m1 is less than or equal to the map m4.
  Tests if the map object on the left side of the operator is equal to the map object on the right side.  
   
 ```
-bool operator==(const map <Key, Type, Traits, Allocator>& left, const map <Key, Type, Traits, Allocator>& right);
+bool operator==(
+      const map <Key, Type, Traits, Allocator>& left, 
+      const map <Key, Type, Traits, Allocator>& right);
 ```  
   
 ### Parameters  
@@ -258,7 +266,9 @@ The maps m1 and m3 are equal.
  Tests if the map object on the left side of the operator is greater than the map object on the right side.  
   
 ```
-bool operator>(const map <Key, Type, Traits, Allocator>& left, const map <Key, Type, Traits, Allocator>& right);
+bool operator>(
+      const map <Key, Type, Traits, Allocator>& left, 
+      const map <Key, Type, Traits, Allocator>& right);
 ```  
   
 ### Parameters  
@@ -316,7 +326,9 @@ The map m1 is greater than the map m3.
  Tests if the map object on the left side of the operator is greater than or equal to the map object on the right side.  
   
 ```
-bool operator>=(const map <Key, Type, Traits, Allocator>& left, const map <Key, Type, Traits, Allocator>& right);
+bool operator>=(
+      const map <Key, Type, Traits, Allocator>& left, 
+      const map <Key, Type, Traits, Allocator>& right);
 ```  
   
 ### Parameters  
@@ -378,7 +390,9 @@ Map m1 is greater than or equal to map m4.
  Tests if the multimap object on the left side of the operator is not equal to the multimap object on the right side.  
   
 ```
-bool operator!=(const multimap <Key, Type, Traits, Allocator>& left, const multimap <Key, Type, Traits, Allocator>& right);
+bool operator!=(
+      const multimap <Key, Type, Traits, Allocator>& left, 
+      const multimap <Key, Type, Traits, Allocator>& right);
 ```  
   
 ### Parameters  
@@ -436,7 +450,9 @@ The multimaps m1 and m3 are equal.
  Tests if the multimap object on the left side of the operator is less than the multimap object on the right side.  
   
 ```
-bool operator<(const multimap <Key, Type, Traits, Allocator>& left, const multimap <Key, Type, Traits, Allocator>& right);
+bool operator<(
+      const multimap <Key, Type, Traits, Allocator>& left, 
+      const multimap <Key, Type, Traits, Allocator>& right);
 ```  
   
 ### Parameters  
@@ -494,7 +510,9 @@ The multimap m1 is not less than the multimap m3.
  Tests if the multimap object on the left side of the operator is less than or equal to the multimap object on the right side.  
   
 ```
-bool operator<=(const multimap <Key, Type, Traits, Allocator>& left, const multimap <Key, Type, Traits, Allocator>& right);
+bool operator<=(
+      const multimap <Key, Type, Traits, Allocator>& left, 
+      const multimap <Key, Type, Traits, Allocator>& right);
 ```  
   
 ### Parameters  
@@ -556,7 +574,9 @@ m1 is less than or equal to m4
  Tests if the multimap object on the left side of the operator is equal to the multimap object on the right side.  
   
 ```
-bool operator==(const multimap <Key, Type, Traits, Allocator>& left, const multimap <Key, Type, Traits, Allocator>& right);
+bool operator==(
+      const multimap <Key, Type, Traits, Allocator>& left, 
+      const multimap <Key, Type, Traits, Allocator>& right);
 ```  
   
 ### Parameters  
@@ -614,7 +634,9 @@ m1 and m3 are equal
  Tests if the multimap object on the left side of the operator is greater than the multimap object on the right side.  
   
 ```
-bool operator>(const multimap <Key, Type, Traits, Allocator>& left, const multimap <Key, Type, Traits, Allocator>& right);
+bool operator>(
+      const multimap <Key, Type, Traits, Allocator>& left, 
+      const multimap <Key, Type, Traits, Allocator>& right);
 ```  
   
 ### Parameters  
@@ -672,7 +694,9 @@ The multimap m1 is greater than the multimap m3.
  Tests if the multimap object on the left side of the operator is greater than or equal to the multimap object on the right side.  
   
 ```
-bool operator>=(const multimap <Key, Type, Traits, Allocator>& left, const multimap <Key, Type, Traits, Allocator>& right);
+bool operator>=(
+      const multimap <Key, Type, Traits, Allocator>& left, 
+      const multimap <Key, Type, Traits, Allocator>& right);
 ```  
   
 ### Parameters  

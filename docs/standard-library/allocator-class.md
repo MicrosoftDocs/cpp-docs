@@ -121,7 +121,6 @@ class allocator
   
 ```  
 pointer address(reference val) const;
-
 const_pointer address(const_reference val) const;
 ```  
   
@@ -183,9 +182,7 @@ The integer addressed by v1Ptr has a value of: *v1Ptr = 8.
  Allocates a block of memory large enough to store at least some specified number of elements.  
   
 ```  
-pointer allocate(
-    size_type count,   
-    const void* _Hint);
+pointer allocate(size_type count, const void* _Hint);
 ```  
   
 ### Parameters  
@@ -214,10 +211,8 @@ using namespace std;
   
 int main( )   
 {  
-   allocator<int> v1Alloc;  
-  
-   allocator<int>::pointer v1aPtr;  
-  
+   allocator<int> v1Alloc;    
+   allocator<int>::pointer v1aPtr;    
    v1aPtr = v1Alloc.allocate ( 10 );  
   
    int i;  
@@ -230,8 +225,7 @@ int main( )
    {  
       cout << v1aPtr[ i ] << " ";  
    }  
-   cout << endl;  
-  
+   cout << endl;    
    v1Alloc.deallocate( v1aPtr, 10 );  
 }  
 ```  
@@ -245,9 +239,7 @@ int main( )
   
 ```  
 allocator();
-
 allocator(const allocator<Type>& right);
-
 template <class Other>  
 allocator(const allocator<Other>& right);
 ```  
@@ -444,9 +436,7 @@ The value of the element referred to by vcref,
   
 ```  
 void construct(pointer ptr, const Type& val);
-
 void construct(pointer ptr, Type&& val);
-
 template <class _Other>  
 void construct(pointer ptr, _Other&&...   val);
 ```  

@@ -106,8 +106,7 @@ class reverse_iterator
 ##  <a name="reverse_iterator__base"></a>  reverse_iterator::base  
  Recovers the underlying iterator from its `reverse_iterator`.  
   
-```  
- 
+```   
 RandomIterator base() const;
 ```  
   
@@ -173,10 +172,8 @@ int main( )
 ##  <a name="reverse_iterator__difference_type"></a>  reverse_iterator::difference_type  
  A type that provides the difference between two `reverse_iterator`s referring to elements within the same container.  
   
-```  
- 
-typedef typename iterator_traits<RandomIterator>::difference_type  
-    difference_type; 
+```   
+typedef typename iterator_traits<RandomIterator>::difference_type  difference_type; 
 ```  
   
 ### Remarks  
@@ -203,8 +200,7 @@ typedef RandomIterator iterator_type;
 ##  <a name="reverse_iterator__operator_star"></a>  reverse_iterator::operator*  
  Returns the element that a reverse_iterator addresses.  
   
-```  
- 
+```   
 reference operator*() const;
 ```  
   
@@ -261,11 +257,11 @@ int main( )
  Adds an offset to an iterator and returns the new `reverse_iterator` addressing the inserted element at the new offset position.  
   
 ```  
-reverse_iterator<RandomIterator> operator+(difference_type _Off) const;
+reverse_iterator<RandomIterator> operator+(difference_type Off) const;
 ```  
   
 ### Parameters  
- `_Off`  
+ `Off`  
  The offset to be added to the reverse iterator.  
   
 ### Return Value  
@@ -334,7 +330,6 @@ After the +2 offset, the iterator rVPOS2 points
   
 ```  
 reverse_iterator<RandomIterator>& operator++();
-
 reverse_iterator<RandomIterator> operator++(int);
 ```  
   
@@ -404,11 +399,11 @@ After incrementing, the iterator rVPOS1 points
  Adds a specified offset from a reverse_iterator.  
   
 ```  
-reverse_iterator<RandomIterator>& operator+=(difference_type _Off);
+reverse_iterator<RandomIterator>& operator+=(difference_type Off);
 ```  
   
 ### Parameters  
- `_Off`  
+ `Off`  
  The offset by which to increment the iterator.  
   
 ### Return Value  
@@ -474,11 +469,11 @@ After the +2 offset, the iterator rVPOS1 now points
  Subtracts an offset from a `reverse_iterator` and returns a `reverse_iterator` addressing the element at the offset position.  
   
 ```  
-reverse_iterator<RandomIterator> operator-(difference_type _Off) const;
+reverse_iterator<RandomIterator> operator-(difference_type Off) const;
 ```  
   
 ### Parameters  
- `_Off`  
+ `Off`  
  The offset to be subtracted from the reverse_iterator.  
   
 ### Return Value  
@@ -548,7 +543,6 @@ After the -2 offset, the iterator rVPOS2 points
   
 ```  
 reverse_iterator<RandomIterator>& operator--();
-
 reverse_iterator<RandomIterator> operator--(int);
 ```  
   
@@ -618,11 +612,11 @@ After the decrement, the iterator rVPOS1 points
  Subtracts a specified offset from a `reverse_iterator`.  
   
 ```  
-reverse_iterator<RandomIterator>& operator-=(difference_type _Off);
+reverse_iterator<RandomIterator>& operator-=(difference_type Off);
 ```  
   
 ### Parameters  
- `_Off`  
+ `Off`  
  The offset to be subtracted from the `reverse_iterator`.  
   
 ### Remarks  
@@ -689,8 +683,7 @@ After the -2 offset, the iterator rVPOS1 now points
 ##  <a name="reverse_iterator__operator-_gt_"></a>  reverse_iterator::operator-&gt;  
  Returns a pointer to the element addressed by the `reverse_iterator`.  
   
-```  
- 
+```   
 pointer operator->() const;
 ```  
   
@@ -766,20 +759,19 @@ The reverse_iterator rpos points to:
 ##  <a name="reverse_iterator__operator_at"></a>  reverse_iterator::operator[]  
  Returns a reference to an element offset from the element addressed by a `reverse_iterator` by a specified number of positions.  
   
-```  
- 
-reference operator[](difference_type _Off) const;
+```   
+reference operator[](difference_type Off) const;
 ```  
   
 ### Parameters  
- `_Off`  
+ `Off`  
  The offset from the `reverse_iterator` address.  
   
 ### Return Value  
  The reference to the element offset.  
   
 ### Remarks  
- The operator returns **\***( **\*this** + `_Off`).  
+ The operator returns **\***( **\*this** + `Off`).  
   
 ### Example  
   
@@ -924,15 +916,12 @@ typedef typename iterator_traits<RandomIterator>::reference reference;
 ##  <a name="reverse_iterator__reverse_iterator"></a>  reverse_iterator::reverse_iterator  
  Constructs a default `reverse_iterator` or a `reverse_iterator` from an underlying iterator.  
   
-```  
- 
-reverse_iterator();Â  
-explicit reverse_iterator(RandomIterator 
-    right);
+```   
+reverse_iterator();  
+explicit reverse_iterator(RandomIterator right);
 
 template <class Type>  
-reverse_iterator(const reverse_iterator<Type>& 
-    right);
+reverse_iterator(const reverse_iterator<Type>& right);
 ```  
   
 ### Parameters  

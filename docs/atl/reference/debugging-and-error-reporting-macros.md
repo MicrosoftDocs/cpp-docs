@@ -106,9 +106,7 @@ ATLASSERT(booleanExpression);
   
 ```
 ATLENSURE(booleanExpression);
-
-ATLENSURE_THROW(
-booleanExpression, hr);
+ATLENSURE_THROW(booleanExpression, hr);
 ```  
   
 ### Parameters  
@@ -153,15 +151,12 @@ ATLTRACENOTIMPL(funcname);
  Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels. Included for backward compatibility.  
   
 ```
-ATLTRACE(
-exp);
+ATLTRACE(exp);
 
 ATLTRACE(
-    DWORD
-category,
- UINTlevel,
-    LPCSTR
-lpszFormat, ...);
+  DWORD category,
+  UINT  level,
+  LPCSTR lpszFormat, ...);
 ```  
   
 ### Parameters  
@@ -184,16 +179,14 @@ lpszFormat, ...);
  Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels.  
   
 ```
-ATLTRACE2(
-exp);
+ATLTRACE2(exp);
 
 ATLTRACE2(
-    DWORD
-category,
- UINTlevel,
-    LPCSTR
-lpszFormat,
- ...);
+    DWORD category,
+    UINT level,
+    LPCSTRlpszFormat,
+    ...
+ );
 ```  
   
 ### Parameters  

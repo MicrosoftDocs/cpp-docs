@@ -104,7 +104,7 @@ COM_INTERFACE_ENTRY2(x, x2)
  Use this macro to enter the interface into the COM map and specify its IID.  
   
 ```
-COM_INTERFACE_ENTRY_IID(iid,   x)
+COM_INTERFACE_ENTRY_IID(iid, x)
 ```  
   
 ### Parameters  
@@ -124,9 +124,7 @@ COM_INTERFACE_ENTRY_IID(iid,   x)
  Same as [COM_INTERFACE_ENTRY2](#com_interface_entry2), except you can specify a different IID.  
   
 ```
-COM_INTERFACE_ENTRY2_IID(iid,
-    x,
-    x2)
+COM_INTERFACE_ENTRY2_IID(iid, x, x2)
 ```   
   
 ### Parameters  
@@ -231,9 +229,7 @@ COM_INTERFACE_ENTRY_AGGREGATE(iid,  punk)
  Same as [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), except if `punk` is **NULL**, it automatically creates the aggregate described by the `clsid`.  
   
 ```
-COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid,
-    punk,
-    clsid)
+COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid, punk, clsid)
 ```   
   
 ### Parameters  
@@ -300,9 +296,7 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(punk, clsid)
  Same as [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), except if `punk` is **NULL**, it automatically creates the aggregate described by the `clsid`.  
   
 ```
-COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid,
-    punk,
-    clsid)
+COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid, punk, clsid)
 ```   
   
 ### Parameters  
@@ -341,9 +335,7 @@ COM_INTERFACE_ENTRY_BREAK(x)
  Saves the interface-specific data for every instance.  
   
 ```
-COM_INTERFACE_ENTRY_CACHED_TEAR_OFF(iid,
-    x,
-    punk)
+COM_INTERFACE_ENTRY_CACHED_TEAR_OFF(iid, x, punk)
 ```   
   
 ### Parameters  
@@ -368,7 +360,7 @@ COM_INTERFACE_ENTRY_CACHED_TEAR_OFF(iid,
  Exposes your tear-off interfaces.  
   
 ```
-COM_INTERFACE_ENTRY_TEAR_OFF(iid,  x)
+COM_INTERFACE_ENTRY_TEAR_OFF(iid, x)
 ```  
   
 ### Parameters  
@@ -412,9 +404,7 @@ COM_INTERFACE_ENTRY_CHAIN(classname)
  A general mechanism for hooking into ATL's `QueryInterface` logic.  
   
 ```
-COM_INTERFACE_ENTRY_FUNC(iid,
-    dw,
-    func)
+COM_INTERFACE_ENTRY_FUNC(iid, dw, func)
 ```   
   
 ### Parameters  
@@ -440,7 +430,7 @@ COM_INTERFACE_ENTRY_FUNC(iid,
  Same as [COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func), except that querying for any IID results in a call to `func`.  
   
 ```
-COM_INTERFACE_ENTRY_FUNC_BLIND(dw,  func)
+COM_INTERFACE_ENTRY_FUNC_BLIND(dw, func)
 ```  
   
 ### Parameters  
@@ -459,9 +449,7 @@ COM_INTERFACE_ENTRY_FUNC_BLIND(dw,  func)
  A general mechanism for hooking into ATL's `QueryInterface` logic.  
   
 ```
-COM_INTERFACE_ENTRY_FUNC(iid,
-    dw,
-    func)
+COM_INTERFACE_ENTRY_FUNC(iid, dw, func)
 ```   
   
 ### Parameters  

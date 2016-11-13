@@ -76,10 +76,7 @@ These functions return common well-known SID objects.
 |[Sids::World](#sids__world)|Returns the SECURITY_WORLD_RID SID.|  
   
 ##  <a name="sids__accountops"></a>  Sids::AccountOps  
- Returns the DOMAIN_ALIAS_RID_ACCOUNT_OPS SID.  
-  
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+ Returns the DOMAIN_ALIAS_RID_ACCOUNT_OPS SID.    
   
 ```
 CSid AccountOps() throw(...);
@@ -88,8 +85,8 @@ CSid AccountOps() throw(...);
 ##  <a name="sids__admins"></a>  Sids::Admins  
  Returns the DOMAIN_ALIAS_RID_ADMINS SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid Admins() throw(...);
@@ -98,8 +95,8 @@ CSid Admins() throw(...);
 ##  <a name="sids__anonymouslogon"></a>  Sids::AnonymousLogon  
  Returns the SECURITY_ANONYMOUS_LOGON_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid AnonymousLogon() throw(...);
@@ -108,8 +105,8 @@ CSid AnonymousLogon() throw(...);
 ##  <a name="sids__authenticateduser"></a>  Sids::AuthenticatedUser  
  Returns the SECURITY_AUTHENTICATED_USER_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid AuthenticatedUser() throw(...);
@@ -118,8 +115,8 @@ CSid AuthenticatedUser() throw(...);
 ##  <a name="sids__backupops"></a>  Sids::BackupOps  
  Returns the DOMAIN_ALIAS_RID_BACKUP_OPS SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid BackupOps() throw(...);
@@ -128,8 +125,8 @@ CSid BackupOps() throw(...);
 ##  <a name="sids__batch"></a>  Sids::Batch  
  Returns the SECURITY_BATCH_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid Batch() throw(...);
@@ -138,8 +135,8 @@ CSid Batch() throw(...);
 ##  <a name="sids__creatorgroup"></a>  Sids::CreatorGroup  
  Returns the SECURITY_CREATOR_GROUP_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid CreatorGroup() throw(...);
@@ -148,8 +145,8 @@ CSid CreatorGroup() throw(...);
 ##  <a name="sids__creatorgroupserver"></a>  Sids::CreatorGroupServer  
  Returns the SECURITY_CREATOR_GROUP_SERVER_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid CreatorGroupServer() throw(...);
@@ -158,8 +155,8 @@ CSid CreatorGroupServer() throw(...);
 ##  <a name="sids__creatorowner"></a>  Sids::CreatorOwner  
  Returns the SECURITY_CREATOR_OWNER_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid CreatorOwner() throw(...);
@@ -168,8 +165,8 @@ CSid CreatorOwner() throw(...);
 ##  <a name="sids__creatorownerserver"></a>  Sids::CreatorOwnerServer  
  Returns the SECURITY_CREATOR_OWNER_SERVER_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid CreatorOwnerServer() throw(...);
@@ -178,8 +175,8 @@ CSid CreatorOwnerServer() throw(...);
 ##  <a name="sids__dialup"></a>  Sids::Dialup  
  Returns the SECURITY_DIALUP_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid Dialup() throw(...);
@@ -188,8 +185,8 @@ CSid Dialup() throw(...);
 ##  <a name="sids__guests"></a>  Sids::Guests  
  Returns the DOMAIN_ALIAS_RID_GUESTS SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid Guests() throw(...);
@@ -198,8 +195,8 @@ CSid Guests() throw(...);
 ##  <a name="sids__interactive"></a>  Sids::Interactive  
  Returns the SECURITY_INTERACTIVE_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid Interactive() throw(...);
@@ -208,8 +205,8 @@ CSid Interactive() throw(...);
 ##  <a name="sids__local"></a>  Sids::Local  
  Returns the SECURITY_LOCAL_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid Local() throw(...);
@@ -218,8 +215,8 @@ CSid Local() throw(...);
 ##  <a name="sids__network"></a>  Sids::Network  
  Returns the SECURITY_NETWORK_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid Network() throw(...);
@@ -228,8 +225,8 @@ CSid Network() throw(...);
 ##  <a name="sids__networkservice"></a>  Sids::NetworkService  
  Returns the SECURITY_NETWORK_SERVICE_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid NetworkService() throw(...);
@@ -243,8 +240,8 @@ CSid NetworkService() throw(...);
 ##  <a name="sids__null"></a>  Sids::Null  
  Returns the SECURITY_NULL_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid Null() throw(...);
@@ -253,8 +250,8 @@ CSid Null() throw(...);
 ##  <a name="sids__prew2kaccess"></a>  Sids::PreW2KAccess  
  Returns the DOMAIN_ALIAS_RID_PREW2KCOMPACCESS SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid PreW2KAccess() throw(...);
@@ -263,8 +260,8 @@ CSid PreW2KAccess() throw(...);
 ##  <a name="sids__powerusers"></a>  Sids::PowerUsers  
  Returns the DOMAIN_ALIAS_RID_POWER_USERS SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid PowerUsers() throw(...);
@@ -273,8 +270,8 @@ CSid PowerUsers() throw(...);
 ##  <a name="sids__printops"></a>  Sids::PrintOps  
  Returns the DOMAIN_ALIAS_RID_PRINT_OPS SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid PrintOps() throw(...);
@@ -283,8 +280,8 @@ CSid PrintOps() throw(...);
 ##  <a name="sids__proxy"></a>  Sids::Proxy  
  Returns the SECURITY_PROXY_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid Proxy() throw(...);
@@ -293,8 +290,8 @@ CSid Proxy() throw(...);
 ##  <a name="sids__rasservers"></a>  Sids::RasServers  
  Returns the DOMAIN_ALIAS_RID_RAS_SERVERS SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid RasServers() throw(...);
@@ -303,8 +300,8 @@ CSid RasServers() throw(...);
 ##  <a name="sids__replicator"></a>  Sids::Replicator  
  Returns the DOMAIN_ALIAS_RID_REPLICATOR SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid Replicator() throw(...);
@@ -313,8 +310,8 @@ CSid Replicator() throw(...);
 ##  <a name="sids__restrictedcode"></a>  Sids::RestrictedCode  
  Returns the SECURITY_RESTRICTED_CODE_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid RestrictedCode() throw(...);
@@ -323,8 +320,8 @@ CSid RestrictedCode() throw(...);
 ##  <a name="sids__self"></a>  Sids::Self  
  Returns the SECURITY_PRINCIPAL_SELF_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid Self() throw(...);
@@ -333,8 +330,8 @@ CSid Self() throw(...);
 ##  <a name="sids__serverlogon"></a>  Sids::ServerLogon  
  Returns the SECURITY_SERVER_LOGON_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid ServerLogon() throw(...);
@@ -343,8 +340,8 @@ CSid ServerLogon() throw(...);
 ##  <a name="sids__service"></a>  Sids::Service  
  Returns the SECURITY_SERVICE_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid Service() throw(...);
@@ -353,8 +350,8 @@ CSid Service() throw(...);
 ##  <a name="sids__system"></a>  Sids::System  
  Returns the SECURITY_LOCAL_SYSTEM_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid System() throw(...);
@@ -363,8 +360,8 @@ CSid System() throw(...);
 ##  <a name="sids__systemops"></a>  Sids::SystemOps  
  Returns the DOMAIN_ALIAS_RID_SYSTEM_OPS SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid SystemOps() throw(...);
@@ -373,8 +370,8 @@ CSid SystemOps() throw(...);
 ##  <a name="sids__terminalserver"></a>  Sids::TerminalServer  
  Returns the SECURITY_TERMINAL_SERVER_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid TerminalServer() throw(...);
@@ -383,8 +380,8 @@ CSid TerminalServer() throw(...);
 ##  <a name="sids__users"></a>  Sids::Users  
  Returns the DOMAIN_ALIAS_RID_USERS SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid Users() throw(...);
@@ -393,8 +390,8 @@ CSid Users() throw(...);
 ##  <a name="sids__world"></a>  Sids::World  
  Returns the SECURITY_WORLD_RID SID.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+
+  
   
 ```
 CSid World() throw(...);

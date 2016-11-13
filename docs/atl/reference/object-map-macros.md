@@ -44,8 +44,7 @@ These macros define object maps and entries.
  Allows you to specify a text description for your class object.  
   
 ```
-DECLARE_OBJECT_DESCRIPTION(Â
-    x Â)
+DECLARE_OBJECT_DESCRIPTION( x )
 ```  
   
 ### Parameters  
@@ -68,9 +67,7 @@ DECLARE_OBJECT_DESCRIPTION(Â
  Enters an ATL object into the object map, updates the registry, and creates an instance of the object.  
   
 ```
-OBJECT_ENTRY_AUTO(Â
-    clsid, Â
-    class Â)
+OBJECT_ENTRY_AUTO( clsid, class )
 ```  
   
 ### Parameters  
@@ -99,9 +96,7 @@ OBJECT_ENTRY_AUTO(Â
  Allows you to specify that the object should be registered and initialized, but it should not be externally creatable via `CoCreateInstance`.  
   
 ```
-OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO(Â
-    clsid, Â
-    class Â)
+OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO( clsid, class )
 ```  
   
 ### Parameters  

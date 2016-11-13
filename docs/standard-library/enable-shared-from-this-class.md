@@ -47,19 +47,19 @@ translation.priority.mt:
 Helps generate a `shared_ptr`.  
   
 ## Syntax  
-  
-class enable_shared_from_this {  
- public:  
-   shared_ptr\<Ty>  
-   shared_from_this();  
-   shared_ptr\<const Ty> shared_from_this() const;
-   protected:  
-   enable_shared_from_this();
-   enable_shared_from_this(const enable_shared_from_this&);
-   enable_shared_from_this& operator=(const enable_shared_from_this&);
-   ~enable_shared_from_this();
-   };  
-  
+```    
+class enable_shared_from_this {
+public:
+    shared_ptr<Ty>
+        shared_from_this();
+    shared_ptr<const Ty> shared_from_this() const;
+protected:
+    enable_shared_from_this();
+    enable_shared_from_this(const enable_shared_from_this&);
+    enable_shared_from_this& operator=(const enable_shared_from_this&);
+    ~enable_shared_from_this();
+}; 
+``` 
 #### Parameters  
  `Ty`  
  The type controlled by the shared pointer.  
@@ -81,7 +81,6 @@ class enable_shared_from_this {
   
 ```  
 shared_ptr<T> shared_from_this();
-
 shared_ptr<const T> shared_from_this() const;
 ```  
   
@@ -100,8 +99,7 @@ using namespace std;
   
 struct base : public std::enable_shared_from_this<base>  
 {  
-    int val;  
-  
+    int val;    
     shared_ptr<base> share_more()  
     {  
         return shared_from_this();  
@@ -114,8 +112,7 @@ int main()
     auto sp2 = sp1->share_more();  
   
     sp1->val = 3;  
-    cout << "sp2->val == " << sp2->val << endl;  
-  
+    cout << "sp2->val == " << sp2->val << endl;    
     return 0;  
 }   
 ```  
