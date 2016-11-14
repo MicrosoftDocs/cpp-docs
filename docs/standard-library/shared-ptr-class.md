@@ -331,8 +331,11 @@ sp0.get() == 0 == true
 ##  <a name="shared_ptr__operator_boolean-type"></a>  shared_ptr::operator boolean-type  
  Tests if an owned resource exists.  
   
-```  operator boolean-type() const;
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder>// std_tr1__memory__shared_ptr_operator_bool.cpp   
+```  
+operator boolean-type() const;
+```  
+<CodeContentPlaceHolder>8</CodeContentPlaceHolder>
+// std_tr1__memory__shared_ptr_operator_bool.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   

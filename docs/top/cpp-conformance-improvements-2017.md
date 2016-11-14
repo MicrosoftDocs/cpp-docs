@@ -30,12 +30,16 @@ translation.priority.ht:
 ---
   
 # C++ conformance improvements in [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)]
-In this release, we've updated the C++ compiler and standard library with enhanced support for C++11 and C++14 features, as well as preliminary support for certain features expected to be in the C++17 standard. With support for generalized constexpr and NSDMI for aggregates, the compiler is complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards. 
 
 ## New language features  
+ith support for generalized constexpr and NSDMI for aggregates, the compiler is complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards.
 
 ### Standards version switches
 New compiler switches enable you to opt-in to specific versions of the ISO C++ programming language in a project. The switches available in Visual Studio 2017 are  /std:c++14 and /std:c++latest. For more information, see [Standards version switches in the compiler](https://blogs.msdn.microsoft.com/vcblog/2016/06/07/standards-version-switches-in-the-compiler). Most of the new draft standard features are guarded by the /std:c++latest switch.
+The new /permissive- switch introduces the concept of a “less permissive mode" in the compiler. It is off
+ by default but will be on by default at some point in the future.
+
+[!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] RC allows using /sdl with /await. We removed /rtc limitation with Coroutines. 
 
 ### C++11:
 **Expression SFINAE (via more libraries)support in more libraries** 
