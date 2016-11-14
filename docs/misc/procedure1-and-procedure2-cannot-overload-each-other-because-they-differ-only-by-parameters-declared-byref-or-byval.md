@@ -2,7 +2,6 @@
 title: "&#39;&lt;procedure1&gt;&#39; and &#39;&lt;procedure2&gt;&#39; cannot overload each other because they differ only by parameters declared &#39;ByRef&#39; or &#39;ByVal&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

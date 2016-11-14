@@ -2,7 +2,6 @@
 title: "&#39;&lt;methodname&gt;&#39; is not accessible in this context because the return type is not accessible | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,7 +2,6 @@
 title: "Unable to read delimited fields because a double quote is not a legal delimiter when EscapeQuotes is set to True | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

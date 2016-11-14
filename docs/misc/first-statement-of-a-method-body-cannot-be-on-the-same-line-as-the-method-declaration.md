@@ -2,7 +2,6 @@
 title: "First statement of a method body cannot be on the same line as the method declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,7 +2,6 @@
 title: "Member &#39;&lt;membername&gt;&#39; implicitly defines a member &#39;&lt;implicitmembername&gt;&#39; which has the same name as a type parameter | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

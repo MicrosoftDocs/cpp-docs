@@ -2,7 +2,6 @@
 title: "Wrong number of type arguments passed to method &#39;&lt;genericprocedurename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,7 +2,6 @@
 title: "Nullable modifier cannot be used with a variable whose implicit type is &#39;Object&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

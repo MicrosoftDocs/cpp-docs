@@ -2,7 +2,6 @@
 title: "Range variable name cannot be inferred from an XML identifier that is not a valid Visual Basic identifier. | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,7 +2,6 @@
 title: "Operands of type Object used for operator &#39;&lt;operatorsymbol&gt;&#39;; use the &#39;Is&#39; operator to test object identity | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

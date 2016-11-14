@@ -2,7 +2,6 @@
 title: "This project cannot be added to the solution because it already exists in the solution in a hidden Solution Folder. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

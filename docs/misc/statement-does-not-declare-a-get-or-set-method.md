@@ -2,7 +2,6 @@
 title: "Statement does not declare a &#39;Get&#39; or &#39;Set&#39; method | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

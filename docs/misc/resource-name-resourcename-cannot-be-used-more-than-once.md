@@ -2,7 +2,6 @@
 title: "Resource name &#39;&lt;resourcename&gt;&#39; cannot be used more than once | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

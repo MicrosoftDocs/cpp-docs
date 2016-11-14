@@ -2,7 +2,6 @@
 title: "Project property &#39;property&#39; is set to an invalid value and will be defaulted to FALSE. &lt;reason&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

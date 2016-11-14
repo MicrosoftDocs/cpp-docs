@@ -2,7 +2,6 @@
 title: "&#39;Option &lt;specifier&gt;&#39; statement can only appear once per file | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

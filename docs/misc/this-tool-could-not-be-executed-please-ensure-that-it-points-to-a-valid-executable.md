@@ -2,7 +2,6 @@
 title: "This tool could not be executed. Please ensure that it points to a valid executable. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

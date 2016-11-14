@@ -2,7 +2,6 @@
 title: "Explicit initialization is not permitted with multiple variables declared with a single type specifier | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

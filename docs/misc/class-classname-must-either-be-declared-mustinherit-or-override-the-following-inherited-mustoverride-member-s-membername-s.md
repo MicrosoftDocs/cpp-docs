@@ -2,7 +2,6 @@
 title: "Class &#39;&lt;classname&gt;&#39; must either be declared &#39;MustInherit&#39; or override the following inherited &#39;MustOverride&#39; member(s): &lt;membername(s)&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

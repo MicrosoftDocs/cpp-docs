@@ -2,7 +2,6 @@
 title: "The &#39;AddressOf&#39; expression has no effect in this context because the method argument to &#39;AddressOf&#39; requires a relaxed conversion to the delegate type of the event | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

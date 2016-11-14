@@ -2,7 +2,6 @@
 title: "Unable to generate a reference to file &#39;&lt;filename&gt;&#39; (use TLBIMP utility to reference COM DLLs): &lt;error message&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

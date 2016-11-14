@@ -2,7 +2,6 @@
 title: "&#39;Case&#39; cannot follow a &#39;Case Else&#39; in the same &#39;Select&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

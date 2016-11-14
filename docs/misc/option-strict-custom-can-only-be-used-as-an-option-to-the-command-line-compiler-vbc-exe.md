@@ -2,7 +2,6 @@
 title: "Option Strict Custom can only be used as an option to the command-line compiler (vbc.exe) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

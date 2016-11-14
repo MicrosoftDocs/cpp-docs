@@ -2,7 +2,6 @@
 title: "Method &#39;&lt;methodname1&gt;&#39; cannot implement partial method &#39;&lt;methodname2&gt;&#39; because &#39;&lt;methodname3&gt;&#39; already implements it | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

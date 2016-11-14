@@ -2,7 +2,6 @@
 title: "Base class &#39;&lt;baseclassname1&gt;&#39; specified for class &#39;&lt;partialclassname&gt;&#39; cannot be different from the base class &#39;&lt;baseclassname2&gt;&#39; of one of its other partial types | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,7 +2,6 @@
 title: "&#39;&lt;specifier1&gt;&#39; and &#39;&lt;specifier2&gt;&#39; cannot be combined | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
