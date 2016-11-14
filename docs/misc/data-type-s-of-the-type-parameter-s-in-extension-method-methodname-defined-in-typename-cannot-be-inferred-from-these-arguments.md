@@ -2,6 +2,7 @@
 title: "Data type(s) of the type parameter(s) in extension method &#39;&lt;methodname&gt;&#39; defined in &#39;&lt;typename&gt;&#39; cannot be inferred from these arguments | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

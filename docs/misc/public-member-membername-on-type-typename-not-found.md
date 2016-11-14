@@ -2,6 +2,7 @@
 title: "Public member &#39;&lt;membername&gt;&#39; on type &#39;&lt;typename&gt;&#39; not found | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

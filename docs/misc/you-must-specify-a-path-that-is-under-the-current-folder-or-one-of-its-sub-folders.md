@@ -2,6 +2,7 @@
 title: "You must specify a path that is under the current folder or one of its sub-folders | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

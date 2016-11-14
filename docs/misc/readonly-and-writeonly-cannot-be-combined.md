@@ -2,6 +2,7 @@
 title: "&#39;ReadOnly&#39; and &#39;WriteOnly&#39; cannot be combined | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

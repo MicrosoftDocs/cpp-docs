@@ -2,6 +2,7 @@
 title: "The .NET Framework debugging services have not been properly installed. The most probable cause is that mscordbi.dll is not registered correctly. Click Help for more information on how to repair your .NET Framework Setup. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

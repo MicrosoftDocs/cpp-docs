@@ -2,6 +2,7 @@
 title: "&#39;D&#39; can no longer be used to indicate an exponent, use &#39;E&#39; instead | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

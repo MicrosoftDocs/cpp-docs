@@ -2,6 +2,7 @@
 title: "C++ compiler conformance improvements | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/16/2016"
+ms.prod: "visual-studio-dev15"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

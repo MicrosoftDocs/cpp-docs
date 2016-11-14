@@ -2,6 +2,7 @@
 title: "String length exceeds maximum length of 32767 characters for &#39;FileSystem&#39; APIs | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

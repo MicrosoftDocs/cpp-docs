@@ -2,6 +2,7 @@
 title: "Type &#39;&lt;typename&gt;&#39; is imported from different versions of assembly &#39;&lt;assemblyname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

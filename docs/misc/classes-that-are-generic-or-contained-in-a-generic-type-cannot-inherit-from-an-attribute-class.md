@@ -2,6 +2,7 @@
 title: "Classes that are generic or contained in a generic type cannot inherit from an attribute class | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

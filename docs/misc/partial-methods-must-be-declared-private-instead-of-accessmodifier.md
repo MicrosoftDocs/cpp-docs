@@ -2,6 +2,7 @@
 title: "Partial methods must be declared &#39;Private&#39; instead of &#39;&lt;accessModifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

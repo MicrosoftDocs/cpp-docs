@@ -2,6 +2,7 @@
 title: "Assembly attribute &#39;&lt;attributename&gt;&#39; is not valid: &lt;error&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

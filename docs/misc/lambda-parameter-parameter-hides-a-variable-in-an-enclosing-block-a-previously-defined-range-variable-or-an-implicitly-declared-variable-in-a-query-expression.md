@@ -2,6 +2,7 @@
 title: "Lambda parameter &#39;&lt;parameter&gt;&#39; hides a variable in an enclosing block, a previously defined range variable, or an implicitly declared variable in a query expression. | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

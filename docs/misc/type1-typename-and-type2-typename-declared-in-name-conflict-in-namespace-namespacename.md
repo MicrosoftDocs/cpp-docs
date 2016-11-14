@@ -2,6 +2,7 @@
 title: "&lt;type1&gt; &#39;&lt;typename&gt;&#39; and &lt;type2&gt; &#39;&lt;typename&gt;&#39;, declared in &#39;&lt;name&gt;&#39;, conflict in &lt;namespace&gt; &#39;&lt;namespacename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

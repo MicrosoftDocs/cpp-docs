@@ -2,6 +2,7 @@
 title: "&#39;GoTo &lt;linelabel&gt;&#39; is not valid because &#39;&lt;linelabel&gt;&#39; is inside a &#39;Using&#39; statement that does not contain this statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,6 +2,7 @@
 title: "&#39;&lt;member&gt;&#39; conflicts with the reserved member by this name that is implicitly declared in all enums | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

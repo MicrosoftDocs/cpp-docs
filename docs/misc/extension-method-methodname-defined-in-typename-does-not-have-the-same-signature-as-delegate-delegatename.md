@@ -2,6 +2,7 @@
 title: "Extension method &#39;&lt;methodName&gt;&#39; defined in &#39;&lt;typeName&gt;&#39; does not have the same signature as delegate &#39;&lt;delegateName&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

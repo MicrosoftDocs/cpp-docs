@@ -2,6 +2,7 @@
 title: "&#39;System.Runtime.InteropServices.DispIdAttribute&#39; value cannot be applied to &#39;&lt;typename&gt;&#39; because &#39;Microsoft.VisualBasic.ComClassAttribute&#39; reserves zero for the default property | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

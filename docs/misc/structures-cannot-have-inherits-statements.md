@@ -2,6 +2,7 @@
 title: "Structures cannot have &#39;Inherits&#39; statements | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

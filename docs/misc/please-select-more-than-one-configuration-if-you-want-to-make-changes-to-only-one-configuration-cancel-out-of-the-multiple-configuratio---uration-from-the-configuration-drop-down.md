@@ -2,6 +2,7 @@
 title: "Please select more than one configuration. If you want to make changes to only one configuration, cancel out of the Multiple Configurations dialog and select that configuration from the configuration drop-down. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

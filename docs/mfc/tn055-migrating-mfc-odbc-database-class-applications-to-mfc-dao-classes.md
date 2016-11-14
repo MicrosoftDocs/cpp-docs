@@ -2,6 +2,7 @@
 title: "TN055: Migrating MFC ODBC Database Class Applications to MFC DAO Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

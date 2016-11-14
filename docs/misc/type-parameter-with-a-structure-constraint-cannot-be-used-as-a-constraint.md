@@ -2,6 +2,7 @@
 title: "Type parameter with a &#39;Structure&#39; constraint cannot be used as a constraint | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

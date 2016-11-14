@@ -2,6 +2,7 @@
 title: "sscanf, _sscanf_l, swscanf, _swscanf_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

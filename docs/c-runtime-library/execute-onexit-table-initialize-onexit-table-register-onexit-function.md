@@ -2,6 +2,7 @@
 title: "_execute_onexit_table, _initialize_onexit_table, _register_onexit_function | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""

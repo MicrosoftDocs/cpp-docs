@@ -2,6 +2,7 @@
 title: "&#39;&lt;classname1&gt;&#39; cannot inherit from &lt;type&gt; &#39;&lt;classname2&gt;&#39; because &#39;&lt;classname2&gt;&#39; is declared &#39;NotInheritable&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

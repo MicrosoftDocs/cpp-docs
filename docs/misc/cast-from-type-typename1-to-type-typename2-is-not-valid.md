@@ -2,6 +2,7 @@
 title: "Cast from type &#39;&lt;typename1&gt;&#39; to type &#39;&lt;typename2&gt;&#39; is not valid | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

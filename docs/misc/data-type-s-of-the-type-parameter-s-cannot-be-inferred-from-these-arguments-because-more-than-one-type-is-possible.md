@@ -2,6 +2,7 @@
 title: "Data type(s) of the type parameter(s) cannot be inferred from these arguments because more than one type is possible | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,6 +2,7 @@
 title: "Operator &#39;&lt;operator&gt;&#39; must have one parameter | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

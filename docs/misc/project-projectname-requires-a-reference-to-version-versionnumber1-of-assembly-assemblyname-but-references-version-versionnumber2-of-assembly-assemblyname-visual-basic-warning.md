@@ -2,6 +2,7 @@
 title: "Project &#39;&lt;projectname&gt;&#39; requires a reference to version &#39;&lt;versionnumber1&gt;&#39; of assembly &#39;&lt;assemblyname&gt;&#39;, but references version &#39;&lt;versionnumber2&gt;&#39; of assembly &#39;&lt;assemblyname&gt;&#39; (Visual Basic Warning) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

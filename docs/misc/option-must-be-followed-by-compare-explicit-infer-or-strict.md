@@ -2,6 +2,7 @@
 title: "&#39;Option&#39; must be followed by &#39;Compare&#39;, &#39;Explicit&#39;, &#39;Infer&#39;, or &#39;Strict&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

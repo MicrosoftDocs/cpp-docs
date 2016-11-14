@@ -2,6 +2,7 @@
 title: "&#39;For&#39; loop control variable cannot be of type &#39;&lt;type&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

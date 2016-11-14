@@ -2,6 +2,7 @@
 title: "&#39;TryCast&#39; operands must be class-constrained type parameters, but &#39;&lt;typeparametername&gt;&#39; has no class constraint | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

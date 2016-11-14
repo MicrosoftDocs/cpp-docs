@@ -2,6 +2,7 @@
 title: "&#39;&lt;name&gt;&#39; cannot be named as a parameter in an attribute specifier because it is not a field or property | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

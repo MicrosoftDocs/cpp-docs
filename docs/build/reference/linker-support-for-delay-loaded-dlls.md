@@ -2,6 +2,7 @@
 title: "Linker Support for Delay-Loaded DLLs | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

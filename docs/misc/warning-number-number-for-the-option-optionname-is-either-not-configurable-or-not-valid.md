@@ -2,6 +2,7 @@
 title: "Warning number &#39;&lt;number&gt;&#39; for the option &#39;&lt;optionname&gt;&#39; is either not configurable or not valid | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,6 +2,7 @@
 title: "&#39;Select Case&#39; must end with a matching &#39;End Select&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

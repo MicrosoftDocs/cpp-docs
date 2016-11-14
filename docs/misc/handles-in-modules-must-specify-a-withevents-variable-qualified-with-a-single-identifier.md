@@ -2,6 +2,7 @@
 title: "&#39;Handles&#39; in modules must specify a &#39;WithEvents&#39; variable qualified with a single identifier | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

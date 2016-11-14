@@ -2,6 +2,7 @@
 title: "Type &#39;&lt;typename&gt;&#39; cannot implement interface &#39;&lt;interfacename&gt;&#39; because it declares &#39;&lt;eventsignature&gt;&#39; which has a return type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

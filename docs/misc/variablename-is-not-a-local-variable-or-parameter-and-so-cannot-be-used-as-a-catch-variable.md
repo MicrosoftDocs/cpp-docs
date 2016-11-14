@@ -2,6 +2,7 @@
 title: "&#39;&lt;variablename&gt;&#39; is not a local variable or parameter, and so cannot be used as a &#39;Catch&#39; variable | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

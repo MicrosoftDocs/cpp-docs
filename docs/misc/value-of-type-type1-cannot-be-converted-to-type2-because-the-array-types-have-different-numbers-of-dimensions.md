@@ -2,6 +2,7 @@
 title: "Value of type &#39;&lt;type1&gt;&#39; cannot be converted to &#39;&lt;type2&gt;&#39; because the array types have different numbers of dimensions | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

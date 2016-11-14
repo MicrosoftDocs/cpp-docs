@@ -2,6 +2,7 @@
 title: "&#39;WithEvents&#39; variables can only be typed as classes, interfaces or type parameters with class constraints | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

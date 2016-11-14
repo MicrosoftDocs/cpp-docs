@@ -2,6 +2,7 @@
 title: "&#39;Sub Main&#39; is declared more than once in &#39;&lt;namespace&gt;&#39;: &lt;message&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

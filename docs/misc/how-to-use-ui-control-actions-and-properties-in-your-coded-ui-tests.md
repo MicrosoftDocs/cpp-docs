@@ -2,6 +2,7 @@
 title: "How to: Use UI Control Actions and Properties in Your Coded UI Tests | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,6 +2,7 @@
 title: "Nullable types are not supported because the current version of &#39;mscorlib.dll&#39; does not define the type &#39;Nullable(of T)&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

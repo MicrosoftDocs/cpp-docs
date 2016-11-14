@@ -2,6 +2,7 @@
 title: "&#39;&lt;propertyname1&gt;&#39; cannot override &#39;&lt;propertyname2&gt;&#39; because they differ by &#39;ReadOnly&#39; or &#39;WriteOnly&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

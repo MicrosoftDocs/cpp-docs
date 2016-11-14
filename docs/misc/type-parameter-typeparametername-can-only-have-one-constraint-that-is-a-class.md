@@ -2,6 +2,7 @@
 title: "Type parameter &#39;&lt;typeparametername&gt;&#39; can only have one constraint that is a class | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

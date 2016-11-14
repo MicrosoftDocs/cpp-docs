@@ -2,6 +2,7 @@
 title: "Property &#39;&lt;propertyname&gt;&#39; must be declared &#39;Default&#39; because it overrides a default property on the base &#39;&lt;name&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

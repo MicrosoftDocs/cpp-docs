@@ -2,6 +2,7 @@
 title: "&#39;Exit Operator&#39; is not valid. Use &#39;Return&#39; to exit an Operator | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,6 +2,7 @@
 title: "&#39;Get&#39; statements are no longer supported (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

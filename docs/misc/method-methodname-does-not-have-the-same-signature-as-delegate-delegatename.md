@@ -2,6 +2,7 @@
 title: "Method &#39;&lt;methodname&gt;&#39; does not have the same signature as delegate &#39;&lt;delegatename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,6 +2,7 @@
 title: "Events declared with an &#39;As&#39; clause must have a delegate type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

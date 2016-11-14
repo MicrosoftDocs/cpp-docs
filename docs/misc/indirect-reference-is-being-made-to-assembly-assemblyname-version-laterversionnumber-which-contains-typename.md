@@ -2,6 +2,7 @@
 title: "Indirect reference is being made to assembly &lt;assemblyname&gt; version &lt;laterversionnumber&gt;, which contains &#39;&lt;typename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

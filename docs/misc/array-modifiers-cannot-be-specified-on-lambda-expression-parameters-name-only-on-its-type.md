@@ -2,6 +2,7 @@
 title: "Array modifiers cannot be specified on lambda expression parameters name, only on its type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

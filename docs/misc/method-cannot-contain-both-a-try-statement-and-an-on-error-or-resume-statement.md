@@ -2,6 +2,7 @@
 title: "Method cannot contain both a &#39;Try&#39; statement and an &#39;On Error&#39; or &#39;Resume&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

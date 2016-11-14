@@ -2,6 +2,7 @@
 title: "3.1.1 omp_set_num_threads Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

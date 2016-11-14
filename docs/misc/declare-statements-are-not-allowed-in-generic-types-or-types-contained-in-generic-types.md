@@ -2,6 +2,7 @@
 title: "&#39;Declare&#39; statements are not allowed in generic types or types contained in generic types | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

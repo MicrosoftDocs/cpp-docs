@@ -2,6 +2,7 @@
 title: "Label &#39;&lt;labelname&gt;&#39; is already defined in the current method-multiline lambda | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

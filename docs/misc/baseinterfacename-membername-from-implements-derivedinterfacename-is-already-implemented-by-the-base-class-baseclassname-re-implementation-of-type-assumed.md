@@ -2,6 +2,7 @@
 title: "&#39;&lt;baseinterfacename&gt;.&lt;membername&gt;&#39; from &#39;implements &lt;derivedinterfacename&gt;&#39; is already implemented by the base class &#39;&lt;baseclassname&gt;&#39;. Re-implementation of &lt;type&gt; assumed | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

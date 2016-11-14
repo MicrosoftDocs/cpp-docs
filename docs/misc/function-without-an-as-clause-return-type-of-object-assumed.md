@@ -2,6 +2,7 @@
 title: "Function without an &#39;As&#39; clause; return type of Object assumed | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

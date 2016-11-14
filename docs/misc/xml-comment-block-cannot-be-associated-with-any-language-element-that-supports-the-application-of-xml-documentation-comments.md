@@ -2,6 +2,7 @@
 title: "XML comment block cannot be associated with any language element that supports the application of XML documentation comments | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

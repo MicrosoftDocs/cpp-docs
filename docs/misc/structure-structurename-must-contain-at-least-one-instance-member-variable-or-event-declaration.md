@@ -2,6 +2,7 @@
 title: "Structure &#39;&lt;structurename&gt;&#39; must contain at least one instance member variable or Event declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

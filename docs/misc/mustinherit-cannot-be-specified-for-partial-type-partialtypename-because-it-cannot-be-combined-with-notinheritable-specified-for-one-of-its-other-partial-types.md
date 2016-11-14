@@ -2,6 +2,7 @@
 title: "&#39;MustInherit&#39; cannot be specified for partial type &#39;&lt;partialtypename&gt;&#39; because it cannot be combined with &#39;NotInheritable&#39; specified for one of its other partial types | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

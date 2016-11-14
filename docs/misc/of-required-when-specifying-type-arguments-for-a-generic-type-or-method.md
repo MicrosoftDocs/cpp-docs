@@ -2,6 +2,7 @@
 title: "&#39;Of&#39; required when specifying type arguments for a generic type or method | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

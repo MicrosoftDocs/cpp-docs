@@ -2,6 +2,7 @@
 title: "&#39;Implements&#39; statement must follow any &#39;Inherits&#39; statement and precede all declarations in a class | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

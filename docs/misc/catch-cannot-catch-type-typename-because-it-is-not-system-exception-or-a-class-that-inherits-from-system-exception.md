@@ -2,6 +2,7 @@
 title: "&#39;Catch&#39; cannot catch type &#39;&lt;typename&gt;&#39; because it is not &#39;System.Exception&#39; or a class that inherits from &#39;System.Exception&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

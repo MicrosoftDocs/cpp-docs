@@ -2,6 +2,7 @@
 title: "There&#39;s a memory leak in my regular DLL, but my code looks fine. How can I find the memory leak? | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

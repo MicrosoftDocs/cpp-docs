@@ -2,6 +2,7 @@
 title: "MFC ActiveX Controls: Using Data Binding in an ActiveX Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

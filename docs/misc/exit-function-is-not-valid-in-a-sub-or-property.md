@@ -2,6 +2,7 @@
 title: "&#39;Exit Function&#39; is not valid in a Sub or Property | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

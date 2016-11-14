@@ -2,6 +2,7 @@
 title: "&#39;Wend&#39; statements are no longer supported; use &#39;End While&#39; statements instead | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

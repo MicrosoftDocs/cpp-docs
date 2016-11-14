@@ -2,6 +2,7 @@
 title: "Statements and labels are not valid between &#39;Select Case&#39; and first &#39;Case&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

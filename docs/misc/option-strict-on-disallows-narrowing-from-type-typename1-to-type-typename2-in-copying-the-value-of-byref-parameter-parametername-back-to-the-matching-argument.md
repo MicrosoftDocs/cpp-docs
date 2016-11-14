@@ -2,6 +2,7 @@
 title: "Option Strict On disallows narrowing from type &#39;&lt;typename1&gt;&#39; to type &#39;&lt;typename2&gt;&#39; in copying the value of ByRef parameter &lt;parametername&gt;&#39; back to the matching argument | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

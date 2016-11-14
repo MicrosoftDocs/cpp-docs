@@ -2,6 +2,7 @@
 title: "Class &#39;&lt;classname&gt;&#39; does not implement the System.Collections.ICollection interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

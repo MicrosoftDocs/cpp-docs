@@ -2,6 +2,7 @@
 title: "Error embedding Win32 manifest: Manifest File &lt;file&gt; cannot be found | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

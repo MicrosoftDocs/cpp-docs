@@ -2,6 +2,7 @@
 title: "Conversion from &#39;Double&#39; to &#39;Date&#39; requires calling the &#39;Date.FromOADate&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

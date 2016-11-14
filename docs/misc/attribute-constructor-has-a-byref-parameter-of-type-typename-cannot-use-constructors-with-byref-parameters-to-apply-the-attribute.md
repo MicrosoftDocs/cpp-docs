@@ -2,6 +2,7 @@
 title: "Attribute constructor has a &#39;ByRef&#39; parameter of type &#39;&lt;typename&gt;&#39;; cannot use constructors with byref parameters to apply the attribute | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

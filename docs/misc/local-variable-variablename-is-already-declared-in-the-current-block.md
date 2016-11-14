@@ -2,6 +2,7 @@
 title: "Local variable &#39;&lt;variablename&gt;&#39; is already declared in the current block | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

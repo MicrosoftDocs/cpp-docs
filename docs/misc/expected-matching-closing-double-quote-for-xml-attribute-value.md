@@ -2,6 +2,7 @@
 title: "Expected matching closing double quote for XML attribute value | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

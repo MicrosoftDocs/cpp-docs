@@ -2,6 +2,7 @@
 title: "&#39;&lt;typename&gt;&#39; is a structure type and cannot be used as an expression | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

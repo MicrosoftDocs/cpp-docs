@@ -2,6 +2,7 @@
 title: "&#39;Type&#39; statements are no longer supported; use &#39;Structure&#39; statements instead | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

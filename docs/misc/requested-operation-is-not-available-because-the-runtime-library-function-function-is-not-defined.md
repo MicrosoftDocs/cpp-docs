@@ -2,6 +2,7 @@
 title: "Requested operation is not available because the runtime library function &lt;function&gt; is not defined. | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

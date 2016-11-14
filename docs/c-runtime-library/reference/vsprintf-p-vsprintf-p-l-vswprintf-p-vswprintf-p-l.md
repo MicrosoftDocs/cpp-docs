@@ -2,6 +2,7 @@
 title: "_vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

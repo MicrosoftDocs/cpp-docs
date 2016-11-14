@@ -2,6 +2,7 @@
 title: "Late-bound assignment to a field of value type &#39;&lt;typename&gt;&#39; is not valid when &#39;&lt;name&gt;&#39; is the result of a late-bound expression | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

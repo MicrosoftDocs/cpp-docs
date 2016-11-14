@@ -2,6 +2,7 @@
 title: "&#39;&lt;name1&gt;&#39; conflicts with a &lt;type&gt; by the same name defined in &#39;&lt;name2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

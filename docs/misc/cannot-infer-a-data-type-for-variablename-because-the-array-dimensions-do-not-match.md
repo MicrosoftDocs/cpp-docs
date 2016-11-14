@@ -2,6 +2,7 @@
 title: "Cannot infer a data type for &#39;&lt;variablename&gt;&#39; because the array dimensions do not match | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

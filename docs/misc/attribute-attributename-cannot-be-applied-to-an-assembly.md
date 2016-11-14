@@ -2,6 +2,7 @@
 title: "Attribute &#39;&lt;attributename&gt;&#39; cannot be applied to an assembly | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

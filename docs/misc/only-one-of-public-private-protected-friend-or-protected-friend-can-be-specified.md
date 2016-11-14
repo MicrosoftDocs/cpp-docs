@@ -2,6 +2,7 @@
 title: "Only one of &#39;Public&#39;, &#39;Private&#39;, &#39;Protected&#39;, &#39;Friend&#39;, or &#39;Protected Friend&#39; can be specified | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,6 +2,7 @@
 title: "&#39;AddHandler&#39; or &#39;RemoveHandler&#39; statement event operand must be a dot-qualified expression or a simple name | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

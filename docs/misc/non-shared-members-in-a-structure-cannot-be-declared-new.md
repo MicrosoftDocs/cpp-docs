@@ -2,6 +2,7 @@
 title: "Non-shared members in a Structure cannot be declared &#39;New&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

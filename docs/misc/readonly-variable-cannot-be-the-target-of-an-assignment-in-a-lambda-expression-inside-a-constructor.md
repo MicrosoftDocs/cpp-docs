@@ -2,6 +2,7 @@
 title: "&#39;ReadOnly&#39; variable cannot be the target of an assignment in a lambda expression inside a constructor | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,6 +2,7 @@
 title: "XML namespace prefix &#39;prefix&#39; is reserved for use by XML and the namespace URI cannot be changed | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,6 +2,7 @@
 title: "Type arguments for method &#39;&lt;procedurename&gt;&#39; could not be inferred from the delegate &#39;&lt;delegatename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

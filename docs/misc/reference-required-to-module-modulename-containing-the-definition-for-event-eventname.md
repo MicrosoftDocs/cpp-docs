@@ -2,6 +2,7 @@
 title: "Reference required to module &#39;&lt;modulename&gt;&#39; containing the definition for event &#39;&lt;eventname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

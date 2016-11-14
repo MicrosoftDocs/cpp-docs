@@ -2,6 +2,7 @@
 title: "Indirect constraint &#39;&lt;constraint1&gt;&#39; obtained from the type parameter constraint &#39;&lt;typeparameter1&gt;&#39; conflicts with the indirect constraint &#39;&lt;constraint2&gt;&#39; obtained from the type parameter constraint &#39;&lt;typeparameter2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

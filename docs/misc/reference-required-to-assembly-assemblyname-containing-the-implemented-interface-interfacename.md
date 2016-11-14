@@ -2,6 +2,7 @@
 title: "Reference required to assembly &#39;&lt;assemblyname&gt;&#39; containing the implemented interface &#39;&lt;interfacename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

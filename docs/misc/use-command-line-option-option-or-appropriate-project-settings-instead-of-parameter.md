@@ -2,6 +2,7 @@
 title: "Use command line option &#39;&lt;option&gt;&#39; or appropriate project settings instead of &#39;&lt;parameter&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

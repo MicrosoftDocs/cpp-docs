@@ -2,6 +2,7 @@
 title: "&#39;&lt;name&gt;&#39; is ambiguous in the application objects &#39;&lt;list&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,6 +2,7 @@
 title: "How to: Catch Exceptions in Native Code Thrown from MSIL | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

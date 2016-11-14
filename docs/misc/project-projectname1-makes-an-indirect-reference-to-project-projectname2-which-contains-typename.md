@@ -2,6 +2,7 @@
 title: "Project &#39;&lt;projectname1&gt;&#39; makes an indirect reference to project &#39;&lt;projectname2&gt;&#39;, which contains &#39;&lt;typename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

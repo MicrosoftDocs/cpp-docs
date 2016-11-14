@@ -2,6 +2,7 @@
 title: "&#39;&lt;typename&gt;&#39; must be declared &#39;MustInherit&#39; because it contains methods declared &#39;MustOverride&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

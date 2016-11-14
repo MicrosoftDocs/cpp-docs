@@ -2,6 +2,7 @@
 title: "None of the accessible &#39;Main&#39; methods with the appropriate signatures found in &#39;&lt;typename&gt;&#39; can be the startup method since they are either generic or nested in generic types | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

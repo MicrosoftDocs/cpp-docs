@@ -2,6 +2,7 @@
 title: "Expected beginning &#39;&lt;&#39; for an XML tag | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

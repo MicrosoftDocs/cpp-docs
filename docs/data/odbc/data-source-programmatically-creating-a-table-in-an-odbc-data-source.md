@@ -2,6 +2,7 @@
 title: "Data Source: Programmatically Creating a Table in an ODBC Data Source | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,6 +2,7 @@
 title: "How to: Use parallel_invoke to Write a Parallel Sort Routine | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,6 +2,7 @@
 title: "Loop control variable cannot be a property or a late-bound indexed array | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

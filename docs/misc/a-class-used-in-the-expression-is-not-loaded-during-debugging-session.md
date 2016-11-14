@@ -2,6 +2,7 @@
 title: "A class used in the expression is not loaded during debugging session | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

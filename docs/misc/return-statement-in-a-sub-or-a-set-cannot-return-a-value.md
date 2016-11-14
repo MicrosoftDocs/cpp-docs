@@ -2,6 +2,7 @@
 title: "&#39;Return&#39; statement in a Sub or a Set cannot return a value | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

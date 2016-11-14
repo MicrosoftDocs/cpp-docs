@@ -2,6 +2,7 @@
 title: "Friend assembly reference &lt;reference&gt; is invalid. InternalsVisibleTo declarations cannot have a version, culture, public key token, or processor architecture specified. | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

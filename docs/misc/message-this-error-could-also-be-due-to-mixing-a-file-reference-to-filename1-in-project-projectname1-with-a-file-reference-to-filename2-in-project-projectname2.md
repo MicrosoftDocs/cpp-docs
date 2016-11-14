@@ -2,6 +2,7 @@
 title: "&lt;message&gt; This error could also be due to mixing a file reference to &#39;&lt;filename1&gt;&#39; in project &#39;&lt;projectname1&gt;&#39; with a file reference to &#39;&lt;filename2&gt;&#39; in project &#39;&lt;projectname2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

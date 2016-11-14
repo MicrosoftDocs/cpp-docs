@@ -2,6 +2,7 @@
 title: "&#39;&lt;qualifiedmethod&gt;&#39; is not accessible in this context because it is &#39;&lt;modifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,6 +2,7 @@
 title: "&#39;Microsoft.VisualBasic.ComClassAttribute&#39; cannot be applied to &#39;&lt;classname1&gt;&#39; because its container &#39;&lt;classname2&gt;&#39; is not declared &#39;Public&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

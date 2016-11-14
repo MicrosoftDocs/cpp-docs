@@ -2,6 +2,7 @@
 title: "&#39;Continue&#39; must be followed by &#39;Do&#39;, &#39;For&#39; or &#39;While&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,6 +2,7 @@
 title: "Non-CLS-compliant &#39;MustOverride&#39; member is not allowed in a CLS-compliant &lt;classname&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

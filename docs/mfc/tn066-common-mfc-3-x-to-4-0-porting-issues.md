@@ -2,6 +2,7 @@
 title: "TN066: Common MFC 3.x to 4.0 Porting Issues | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

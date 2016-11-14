@@ -2,6 +2,7 @@
 title: "The user options settings file for this project is missing the &#39;section&#39; section | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

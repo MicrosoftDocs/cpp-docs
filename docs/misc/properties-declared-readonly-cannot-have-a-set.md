@@ -2,6 +2,7 @@
 title: "Properties declared &#39;ReadOnly&#39; cannot have a &#39;Set&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

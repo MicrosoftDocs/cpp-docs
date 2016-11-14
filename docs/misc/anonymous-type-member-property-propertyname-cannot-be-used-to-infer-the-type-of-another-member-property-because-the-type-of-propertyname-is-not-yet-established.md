@@ -2,6 +2,7 @@
 title: "Anonymous type member property &#39;&lt;propertyname&gt;&#39; cannot be used to infer the type of another member property because the type of &#39;&lt;propertyname&gt;&#39; is not yet established | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

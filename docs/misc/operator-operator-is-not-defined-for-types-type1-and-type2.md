@@ -2,6 +2,7 @@
 title: "Operator &#39;operator&#39; is not defined for types &#39;type1&#39; and &#39;type2&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

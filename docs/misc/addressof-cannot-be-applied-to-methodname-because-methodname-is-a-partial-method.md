@@ -2,6 +2,7 @@
 title: "&#39;AddressOf&#39; cannot be applied to &#39;methodname&#39; because &#39;methodname&#39; is a partial method | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,6 +2,7 @@
 title: "The project &#39;project&#39; cannot be referenced. &lt;reason&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

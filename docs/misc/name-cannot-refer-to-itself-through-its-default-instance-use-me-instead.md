@@ -2,6 +2,7 @@
 title: "&#39;&lt;name&gt;&#39; cannot refer to itself through its default instance, use &#39;Me&#39; instead | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
