@@ -275,7 +275,7 @@ manager: "ghogen"
 # &lt;algorithm&gt; functions
 ||||  
 |-|-|-|  
-|[&lt;alg&gt; move](#alg_move)|[adjacent_find](#adjacent_find)|[all_of](#all_of)|  
+|[move](#alg_move)|[adjacent_find](#adjacent_find)|[all_of](#all_of)|  
 |[any_of](#any_of)|[binary_search](#binary_search)|[copy](#copy)|  
 |[copy_backward](#copy_backward)|[copy_if](#copy_if)|[copy_n](#copy_n)|  
 |[count](#count)|[count_if](#count_if)|[equal](#equal)|  

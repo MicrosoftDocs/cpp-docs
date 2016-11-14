@@ -22,32 +22,27 @@ manager: "ghogen"
   
 ```  
 template <class CharType, class Traits, class Allocator>  
-basic_string<CharType, Traits, Allocator>  
-operator+(
+basic_string<CharType, Traits, Allocator> operator+(
     const basic_string<CharType, Traits, Allocator>& left,  
     const basic_string<CharType, Traits, Allocator>& right);
 
 template <class CharType, class Traits, class Allocator>  
-basic_string<CharType, Traits, Allocator>  
-operator+(
+basic_string<CharType, Traits, Allocator> operator+(
     const basic_string<CharType, Traits, Allocator>& left,  
     const CharType* right);
 
 template <class CharType, class Traits, class Allocator>  
-basic_string<CharType, Traits, Allocator>  
-operator+(
+basic_string<CharType, Traits, Allocator> operator+(
     const basic_string<CharType, Traits, Allocator>& left,  
     const CharType right);
 
 template <class CharType, class Traits, class Allocator>  
-basic_string<CharType, Traits, Allocator>  
-operator+(
+basic_string<CharType, Traits, Allocator> operator+(
     const CharType* left,  
     const basic_string<CharType, Traits, Allocator>& right);
 
 template <class CharType, class Traits, class Allocator>  
-basic_string<CharType, Traits, Allocator>  
-operator+(
+basic_string<CharType, Traits, Allocator> operator+(
     const CharType left,  
     const basic_string<CharType, Traits, Allocator>& right);
 
@@ -157,13 +152,19 @@ The string concatenating s1 & s3 is: antiheroine!
   
 ```  
 template <class CharType, class Traits, class Allocator>  
-bool operator!=(const basic_string<CharType, Traits, Allocator>& left, const basic_string<CharType, Traits, Allocator>& right);
+bool operator!=(
+    const basic_string<CharType, Traits, Allocator>& left, 
+    const basic_string<CharType, Traits, Allocator>& right);
 
 template <class CharType, class Traits, class Allocator>  
-bool operator!=(const basic_string<CharType, Traits, Allocator>& left, const CharType* right);
+bool operator!=(
+    const basic_string<CharType, Traits, Allocator>& left, 
+const CharType* right);
 
 template <class CharType, class Traits, class Allocator>  
-bool operator!=(const CharType* left, const basic_string<CharType, Traits, Allocator>& right);
+bool operator!=(
+    const CharType* left, 
+    const basic_string<CharType, Traits, Allocator>& right);
 ```  
   
 ### Parameters  
@@ -238,13 +239,19 @@ The strings s3 & s2 are not equal.
   
 ```  
 template <class CharType, class Traits, class Allocator>  
-bool operator==(const basic_string<CharType, Traits, Allocator>& left, const basic_string<CharType, Traits, Allocator>& right);
+bool operator==(
+    const basic_string<CharType, Traits, Allocator>& left, 
+    const basic_string<CharType, Traits, Allocator>& right);
 
 template <class CharType, class Traits, class Allocator>  
-bool operator==(const basic_string<CharType, Traits, Allocator>& left, const CharType* right);
+bool operator==(
+    const basic_string<CharType, Traits, Allocator>& left, 
+    const CharType* right);
 
 template <class CharType, class Traits, class Allocator>  
-bool operator==(const CharType* left, const basic_string<CharType, Traits, Allocator>& right);
+bool operator==(
+    const CharType* left, 
+    const basic_string<CharType, Traits, Allocator>& right);
 ```  
   
 ### Parameters  
@@ -319,13 +326,19 @@ The strings s3 & s2 are not equal.
   
 ```  
 template <class CharType, class Traits, class Allocator>  
-bool operator<(const basic_string<CharType, Traits, Allocator>& left, const basic_string<CharType, Traits, Allocator>& right);
+bool operator<(
+    const basic_string<CharType, Traits, Allocator>& left, 
+    const basic_string<CharType, Traits, Allocator>& right);
 
 template <class CharType, class Traits, class Allocator>  
-bool operator<(const basic_string<CharType, Traits, Allocator>& left, const CharType* right);
+bool operator<(
+    const basic_string<CharType, Traits, Allocator>& left, 
+    const CharType* right);
 
 template <class CharType, class Traits, class Allocator>  
-bool operator<(const CharType* left, const basic_string<CharType, Traits, Allocator>& right);
+bool operator<(
+    const CharType* left, 
+    const basic_string<CharType, Traits, Allocator>& right);
 ```  
   
 ### Parameters  
@@ -405,13 +418,19 @@ The string s3 is less than the string s2.
   
 ```  
 template <class CharType, class Traits, class Allocator>  
-bool operator<=(const basic_string<CharType, Traits, Allocator>& left, const basic_string<CharType, Traits, Allocator>& right);
+bool operator<=(
+    const basic_string<CharType, Traits, Allocator>& left, 
+    const basic_string<CharType, Traits, Allocator>& right);
 
 template <class CharType, class Traits, class Allocator>  
-bool operator<=(const basic_string<CharType, Traits, Allocator>& left, const CharType* right);
+bool operator<=(
+    const basic_string<CharType, Traits, Allocator>& left, 
+    const CharType* right);
 
 template <class CharType, class Traits, class Allocator>  
-bool operator<=(const CharType* left, const basic_string<CharType, Traits, Allocator>& right);
+bool operator<=(
+    const CharType* left, 
+    const basic_string<CharType, Traits, Allocator>& right);
 ```  
   
 ### Parameters  
@@ -498,7 +517,9 @@ The string s2 is greater than the string s3.
   
 ```  
 template <class CharType, class Traits, class Allocator>  
-basic_ostream<CharType, Traits>& operator<<(basic_ostream<CharType, Traits>& _Ostr, const basic_string<CharType, Traits, Allocator>& str);
+basic_ostream<CharType, Traits>& operator<<(
+    basic_ostream<CharType, Traits>& _Ostr, 
+    const basic_string<CharType, Traits, Allocator>& str);
 ```  
   
 ### Parameters  
@@ -519,13 +540,19 @@ basic_ostream<CharType, Traits>& operator<<(basic_ostream<CharType, Traits>& _Os
   
 ```  
 template <class CharType, class Traits, class Allocator>  
-bool operator>(const basic_string<CharType, Traits, Allocator>& left, const basic_string<CharType, Traits, Allocator>& right);
+bool operator>(
+    const basic_string<CharType, Traits, Allocator>& left, 
+    const basic_string<CharType, Traits, Allocator>& right);
 
 template <class CharType, class Traits, class Allocator>  
-bool operator>(const basic_string<CharType, Traits, Allocator>& left, const CharType* right);
+bool operator>(
+    const basic_string<CharType, Traits, Allocator>& left, 
+    const CharType* right);
 
 template <class CharType, class Traits, class Allocator>  
-bool operator>(const CharType* left, const basic_string<CharType, Traits, Allocator>& right);
+bool operator>(
+    const CharType* left, 
+    const basic_string<CharType, Traits, Allocator>& right);
 ```  
   
 ### Parameters  
@@ -612,13 +639,19 @@ The string s2 is greater than the string s3.
   
 ```  
 template <class CharType, class Traits, class Allocator>  
-bool operator>=(const basic_string<CharType, Traits, Allocator>& left, const basic_string<CharType, Traits, Allocator>& right);
+bool operator>=(
+    const basic_string<CharType, Traits, Allocator>& left, 
+    const basic_string<CharType, Traits, Allocator>& right);
 
 template <class CharType, class Traits, class Allocator>  
-bool operator>=(const basic_string<CharType, Traits, Allocator>& left, const CharType* right);
+bool operator>=(
+    const basic_string<CharType, Traits, Allocator>& left, 
+    const CharType* right);
 
 template <class CharType, class Traits, class Allocator>  
-bool operator>=(const CharType* left, const basic_string<CharType, Traits, Allocator>& right);
+bool operator>=(
+    const CharType* left, 
+    const basic_string<CharType, Traits, Allocator>& right);
 ```  
   
 ### Parameters  
