@@ -41,6 +41,6 @@ translation.priority.mt:
 -   Make sure that the Toolset definition is correct and that the specified registry key exists.  
   
 ## See Also  
- [Standard and Custom Toolset Configurations](/visual-studio/msbuild/standard-and-custom-toolset-configurations)   
- [Project Element (MSBuild)](/visual-studio/msbuild/project-element-msbuild)   
- [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)
+ [Standard and Custom Toolset Configurations](/visualstudio/msbuild/standard-and-custom-toolset-configurations)   
+ [Project Element (MSBuild)](/visualstudio/msbuild/project-element-msbuild)   
+ [Additional Resources](/visualstudio/msbuild/additional-msbuild-resources)

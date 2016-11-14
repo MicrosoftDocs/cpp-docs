@@ -45,5 +45,5 @@ translation.priority.mt:
   
 ## See Also  
  [Using Statement](/dotnet/visual-basic/language-reference/statements/using-statement)   
- [Immediate Window](/visual-studio/ide/reference/immediate-window)   
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Immediate Window](/visualstudio/ide/reference/immediate-window)   
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

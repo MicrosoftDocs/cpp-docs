@@ -43,7 +43,7 @@ Assembly '\<filepath1>' references assembly '\<assemblyidentity>', which is ambi
   
  The *assembly identity* includes the assembly's name, version, public key if any, and culture. This information uniquely identifies the assembly.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42205  
   
@@ -57,6 +57,6 @@ Assembly '\<filepath1>' references assembly '\<assemblyidentity>', which is ambi
  [NOT IN BUILD: Assemblies](http://msdn.microsoft.com/en-us/6c5c7b30-fa78-4f40-b908-120d0743b0e6)   
  [Assemblies in the Common Language Runtime](../Topic/Assemblies%20in%20the%20Common%20Language%20Runtime.md)   
  [Assembly Benefits](../Topic/Assembly%20Benefits.md)   
- [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)   
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)   
  [NIB: Managing References](http://msdn.microsoft.com/en-us/910912ce-0dc9-4569-9274-32c44a20cb2c)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

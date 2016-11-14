@@ -44,4 +44,4 @@ The `Return` statement performs branching and is not permitted in a debugging co
 -   Do not issue a `Return` statement in the **Immediate** window.  
   
 ## See Also  
- [Immediate Window](/visual-studio/ide/reference/immediate-window)
+ [Immediate Window](/visualstudio/ide/reference/immediate-window)

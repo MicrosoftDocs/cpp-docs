@@ -33,7 +33,7 @@ translation.priority.mt:
 > [!NOTE]
 >  The recommended way to add custom controls to the Toolbox is to use the Toolbox Control templates that come with the Visual Studio 10 SDK. This topic is retained for backward compatibility, for adding existing controls to the Toolbox, and for advanced Toolbox control development.  
 >   
->  For more information on creating toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](/visual-studio/extensibility/creating-a-wpf-toolbox-control).  
+>  For more information on creating toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](/visualstudio/extensibility/creating-a-wpf-toolbox-control).  
   
  A VSPackage based on the Managed Package Framework can extend [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] Toolbox functionality by adding controls, objects derived from <xref:System.Drawing.Design.ToolboxItem> objects. Each <xref:System.Drawing.Design.ToolboxItem> is implemented by an object derived from <xref:System.ComponentModel.Component>.  
   
@@ -416,7 +416,7 @@ translation.priority.mt:
      <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource%2A>, searches only directories specified in the registry entry HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\\*\<version>*\AssemblyFolders, where *\<version>* is the version number of the release of Visual Studio (for example, 8.0).  
   
     > [!NOTE]
-    >  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* can be overridden with an alternate root when the Visual Studio shell is initialized, or use of <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute>. For more information see, [Command-Line Switches](/visual-studio/extensibility/command-line-switches-visual-studio-sdk).  
+    >  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* can be overridden with an alternate root when the Visual Studio shell is initialized, or use of <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute>. For more information see, [Command-Line Switches](/visualstudio/extensibility/command-line-switches-visual-studio-sdk).  
   
      For details on the correct format of the AssemblyFolder registry entries, see the <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource%2A> reference page.  
   

@@ -32,4 +32,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Organizing Using Directives
-This content has moved to [Visual C# IntelliSense](/visual-studio/ide/visual-csharp-intellisense).
+This content has moved to [Visual C# IntelliSense](/visualstudio/ide/visual-csharp-intellisense).

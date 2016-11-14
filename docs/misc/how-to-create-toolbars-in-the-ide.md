@@ -32,4 +32,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Create Toolbars in the IDE
-This content has been removed. For information, see [Adding a Toolbar](/visual-studio/extensibility/adding-a-toolbar).
+This content has been removed. For information, see [Adding a Toolbar](/visualstudio/extensibility/adding-a-toolbar).

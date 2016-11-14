@@ -74,7 +74,7 @@ void free(
   
  After a memory block has been freed, [_heapmin](../../c-runtime-library/reference/heapmin.md) minimizes the amount of free memory on the heap by coalescing the unused regions and releasing them back to the operating system. Freed memory that is not released to the operating system is restored to the free pool and is available for allocation again.  
   
- When the application is linked with a debug version of the C run-time libraries, `free` resolves to [_free_dbg](../../c-runtime-library/reference/free-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visual-studio/debugger/crt-debug-heap-details).  
+ When the application is linked with a debug version of the C run-time libraries, `free` resolves to [_free_dbg](../../c-runtime-library/reference/free-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).  
   
  `free` is marked `__declspec(noalias)`, meaning that the function is guaranteed not to modify global variables. For more information, see [noalias](../../cpp/noalias.md).  
   

@@ -79,7 +79,7 @@ Verifies that a specified pointer is in a heap allocated by some C run-time libr
 _ASSERTE( _CrtIsValidHeapPointer( userData ) );  
 ```  
   
- For more information about how `_CrtIsValidHeapPointer` can be used with other debug functions and macros, see [Macros for Reporting](/visual-studio/debugger/macros-for-reporting). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visual-studio/debugger/crt-debug-heap-details).  
+ For more information about how `_CrtIsValidHeapPointer` can be used with other debug functions and macros, see [Macros for Reporting](/visualstudio/debugger/macros-for-reporting). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).  
   
 ## Requirements  
   

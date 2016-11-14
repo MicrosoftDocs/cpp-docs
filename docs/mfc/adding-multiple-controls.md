@@ -37,7 +37,7 @@ translation.priority.ht:
 # Adding Multiple Controls
 ### To add multiple controls  
   
-1.  While holding down the **CTRL** key, select a control in the [Toolbox Window](/visual-studio/ide/reference/toolbox).  
+1.  While holding down the **CTRL** key, select a control in the [Toolbox Window](/visualstudio/ide/reference/toolbox).  
   
 2.  Release the **CTRL** key and click the dialog box as many times as you want to add the particular control.  
   

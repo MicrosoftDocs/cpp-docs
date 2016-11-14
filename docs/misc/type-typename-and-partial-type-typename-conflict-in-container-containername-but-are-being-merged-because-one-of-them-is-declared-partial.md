@@ -39,7 +39,7 @@ A class or structure is appears in multiple definitions in the same container ty
   
  You must use the [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) keyword on at least one of the multiple definitions of a class or structure, but it is recommended that you use it on all the partial definitions.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40046  
   

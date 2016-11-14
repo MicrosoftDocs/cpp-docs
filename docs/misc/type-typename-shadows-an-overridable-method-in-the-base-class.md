@@ -39,7 +39,7 @@ translation.priority.mt:
   
  A programming element is declared with the same name as an overridable procedure or property defined in the base class. In this situation, the element in this class should shadow the base class element.  
   
- By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40005  
   

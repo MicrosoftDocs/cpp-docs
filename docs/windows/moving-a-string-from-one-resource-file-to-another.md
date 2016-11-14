@@ -61,5 +61,5 @@ translation.priority.ht:
 ## See Also  
  [String Editor](../mfc/string-editor.md)   
  [Resource Files](../mfc/resource-files-visual-studio.md)   
- [Customizing window layouts](/visual-studio/ide/customizing-window-layouts-in-visual-studio)   
+ [Customizing window layouts](/visualstudio/ide/customizing-window-layouts-in-visual-studio)   
 

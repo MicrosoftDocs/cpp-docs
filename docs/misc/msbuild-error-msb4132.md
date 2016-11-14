@@ -42,4 +42,4 @@ translation.priority.mt:
   
 ## See Also  
  <xref:Microsoft.Build.Tasks.MSBuild.ToolsVersion%2A>   
- [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)
+ [Additional Resources](/visualstudio/msbuild/additional-msbuild-resources)

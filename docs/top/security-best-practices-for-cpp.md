@@ -55,7 +55,7 @@ This article contains information about security tools and practices. Using them
  These compiler and linker options enable Data Execution Prevention (DEP) compatibility. DEP guards the CPU against the execution of non-code pages.  
   
  [/analyze (Code Analysis)](../build/reference/analyze-code-analysis.md)  
- This compiler option activates code analysis that reports potential security issues such as buffer overrun, un-initialized memory, null pointer dereferencing, and memory leaks. By default, this option is off. For more information, see [Code Analysis for C/C++ Overview](/visual-studio/code-quality/code-analysis-for-c-cpp-overview).  
+ This compiler option activates code analysis that reports potential security issues such as buffer overrun, un-initialized memory, null pointer dereferencing, and memory leaks. By default, this option is off. For more information, see [Code Analysis for C/C++ Overview](/visualstudio/code-quality/code-analysis-for-c-cpp-overview).  
   
  [/DYNAMICBASE (Use address space layout randomization)](../build/reference/dynamicbase-use-address-space-layout-randomization.md)  
  This linker option enables the building of an executable image that can be loaded at different locations in memory at the beginning of execution. This option also makes the stack location in memory much less predictable.  

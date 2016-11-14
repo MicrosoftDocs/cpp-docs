@@ -27,4 +27,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Set a Diagram Background Image
-This topic has been consolidated with other content. Please go to [Customizing Presentation on the Diagram](/visual-studio/modeling/customizing-presentation-on-the-diagram).
+This topic has been consolidated with other content. Please go to [Customizing Presentation on the Diagram](/visualstudio/modeling/customizing-presentation-on-the-diagram).

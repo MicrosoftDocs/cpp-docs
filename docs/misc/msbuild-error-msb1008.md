@@ -43,6 +43,6 @@ translation.priority.mt:
 1.  Specify only one project to build. If you want to build two projects, build one project then build the other project. For example, instead of typing `msbuild myapp1.proj myapp2.proj`, build the first project by typing `msbuild myapp1.proj`, and then, when that build is complete, build the second project by typing `msbuild myapp2.proj`.  
   
 ## See Also  
- [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)   
- [MSBuild Task](/visual-studio/msbuild/msbuild-task)
- [MSBuild](/visual-studio/msbuild/msbuild1)
+ [Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference)   
+ [MSBuild Task](/visualstudio/msbuild/msbuild-task)
+ [MSBuild](/visualstudio/msbuild/msbuild1)

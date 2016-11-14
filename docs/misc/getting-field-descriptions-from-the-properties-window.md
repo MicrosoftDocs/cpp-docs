@@ -70,12 +70,12 @@ STDAPI DLLGetDocumentation
   
  There are no additional interfaces that need to be implemented when getting localized information through idl's `helpstringcontext` attribute and `DLLGetDocumentation`.  
   
- Another way of obtaining the localized name and description of a property is by implementing <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A>. For more information relating to the implementation of this method, see [Properties Window Fields and Interfaces](/visual-studio/extensibility/internals/properties-window-fields-and-interfaces).  
+ Another way of obtaining the localized name and description of a property is by implementing <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A>. For more information relating to the implementation of this method, see [Properties Window Fields and Interfaces](/visualstudio/extensibility/internals/properties-window-fields-and-interfaces).  
   
 ## See Also  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>   
- [Properties Window Fields and Interfaces](/visual-studio/extensibility/internals/properties-window-fields-and-interfaces)   
- [Extending Properties](/visual-studio/extensibility/internals/extending-properties)   
+ [Properties Window Fields and Interfaces](/visualstudio/extensibility/internals/properties-window-fields-and-interfaces)   
+ [Extending Properties](/visualstudio/extensibility/internals/extending-properties)   
  [helpstringdll](../windows/helpstringdll.md)   
  [helpstring](../windows/helpstring.md)   
  [helpstringcontext](../windows/helpstringcontext.md)   

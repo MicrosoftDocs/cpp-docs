@@ -50,7 +50,7 @@ You can add values to a combo box control as long as you have the Dialog editor 
   
 1.  Select the combo box control by clicking on it.  
   
-2.  In the [Properties Window](/visual-studio/ide/reference/properties-window), scroll down to the **Data** property.  
+2.  In the [Properties Window](/visualstudio/ide/reference/properties-window), scroll down to the **Data** property.  
   
     > [!NOTE]
     >  If you are displaying properties grouped by type, **Data** appears in the **Misc** properties.  

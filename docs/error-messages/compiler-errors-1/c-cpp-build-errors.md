@@ -1334,4 +1334,4 @@ The articles in this section of the documentation explain error messages that ar
   
 ## See Also  
  [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)   
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

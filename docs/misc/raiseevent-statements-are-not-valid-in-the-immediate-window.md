@@ -45,4 +45,4 @@ translation.priority.mt:
   
 ## See Also  
  [RaiseEvent Statement](/dotnet/visual-basic/language-reference/statements/raiseevent-statement)   
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

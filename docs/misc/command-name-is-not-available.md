@@ -44,4 +44,4 @@ This error generally occurs when a command is entered in the **Command** window 
      Make a different selection for the command to operate on.  
   
 ## See Also  
- [Command Window](/visual-studio/ide/reference/command-window)
+ [Command Window](/visualstudio/ide/reference/command-window)

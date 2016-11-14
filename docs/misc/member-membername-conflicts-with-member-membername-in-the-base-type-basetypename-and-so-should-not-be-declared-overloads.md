@@ -39,7 +39,7 @@ A property or procedure uses the [Overloads](/dotnet/visual-basic/language-refer
   
  Overloading is used to define multiple versions of a property or procedure all in the same class. You cannot define an additional version of a base class member unless the base class member already specifies [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads).  
   
- By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40021  
   

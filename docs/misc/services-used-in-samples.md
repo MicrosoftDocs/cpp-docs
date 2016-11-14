@@ -62,5 +62,5 @@ The samples included in the [!INCLUDE[vsipsdk](../mfc/includes/vsipsdk_md.md)] m
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame>|Reference.ToolWindow|  
   
 ## See Also  
- [List of Available Services](/visual-studio/extensibility/internals/list-of-available-services)   
- [Service Essentials](/visual-studio/extensibility/internals/service-essentials)
+ [List of Available Services](/visualstudio/extensibility/internals/list-of-available-services)   
+ [Service Essentials](/visualstudio/extensibility/internals/service-essentials)

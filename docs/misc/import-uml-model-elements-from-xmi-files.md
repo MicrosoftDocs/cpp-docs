@@ -36,5 +36,5 @@ translation.priority.mt:
 This release of Visual Studio no longer supports importing UML elements from XMI files.  
   
 ## See Also  
- [Create models for your app](/visual-studio/modeling/create-models-for-your-app)   
- [Analyzing and Modeling Architecture](/visual-studio/modeling/analyze-and-model-your-architecture)
+ [Create models for your app](/visualstudio/modeling/create-models-for-your-app)   
+ [Analyzing and Modeling Architecture](/visualstudio/modeling/analyze-and-model-your-architecture)

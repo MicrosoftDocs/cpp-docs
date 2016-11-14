@@ -427,11 +427,11 @@ End Sub
   
 ###  <a name="BKMK_Use_data_tips_the_Locals_window_and_watch_windows_to_see_variables_values"></a> Use data tips, the Locals window, and watch windows to see variables values  
   
--   Rest the pointer on the variable name to see its value in a [data tip](/visual-studio/debugger/view-data-values-in-data-tips-in-the-code-editor). If the variable references an object or a collection, you can expand the data type to examine its properties or elements.  
+-   Rest the pointer on the variable name to see its value in a [data tip](/visualstudio/debugger/view-data-values-in-data-tips-in-the-code-editor). If the variable references an object or a collection, you can expand the data type to examine its properties or elements.  
   
 -   Open the **Locals** window to examine the variables that are active in the current context.  
   
--   Use a [watch window](/visual-studio/debugger/watch-and-quickwatch-windows) to focus on how a variable changes as you step through the code.  
+-   Use a [watch window](/visualstudio/debugger/watch-and-quickwatch-windows) to focus on how a variable changes as you step through the code.  
   
  ![Back to top](../misc/media/pcs_backtotop.png "PCS_BackToTop") [Finding the source of a null reference exception during development](#BKMK_Find_the_source_of_a_null_reference_exception_during_development)  
   

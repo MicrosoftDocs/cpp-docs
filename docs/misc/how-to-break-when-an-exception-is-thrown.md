@@ -40,4 +40,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Break When an Exception is Thrown
-This content has been removed. Please see [Managing Exceptions with the Debugger](/visual-studio/debugger/managing-exceptions-with-the-debugger).
+This content has been removed. Please see [Managing Exceptions with the Debugger](/visualstudio/debugger/managing-exceptions-with-the-debugger).

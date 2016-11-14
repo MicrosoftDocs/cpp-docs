@@ -45,4 +45,4 @@ The object being referenced has not been set, or has been set to the value `Noth
   
 ## See Also  
  [Nothing](/dotnet/visual-basic/language-reference/nothing)   
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

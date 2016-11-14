@@ -31,4 +31,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Code coverage data overview
-The material in this group of topics has been consolidated into [Using Code Coverage to Determine How Much Code is being Tested](/visual-studio/test/using-code-coverage-to-determine-how-much-code-is-being-tested).
+The material in this group of topics has been consolidated into [Using Code Coverage to Determine How Much Code is being Tested](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested).

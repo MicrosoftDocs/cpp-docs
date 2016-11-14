@@ -44,4 +44,4 @@ A warning ID is not valid. IDs must be integer values greater than 0.
 -   Check the warning ID supplied to make sure it is valid.  
   
 ## See Also  
- [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic)
+ [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic)

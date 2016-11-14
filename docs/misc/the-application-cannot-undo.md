@@ -40,4 +40,4 @@ This error generally occurs when an undo operation has been attempted for an ite
 1.  Manually reverse the change.  
   
 ## See Also  
- [Finding and Replacing Text](/visual-studio/ide/finding-and-replacing-text)
+ [Finding and Replacing Text](/visualstudio/ide/finding-and-replacing-text)

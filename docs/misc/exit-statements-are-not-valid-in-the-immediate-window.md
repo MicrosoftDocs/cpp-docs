@@ -46,4 +46,4 @@ translation.priority.mt:
 ## See Also  
  [Exit Statement](/dotnet/visual-basic/language-reference/statements/exit-statement)   
  [End Statement](/dotnet/visual-basic/language-reference/statements/end-statement)   
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

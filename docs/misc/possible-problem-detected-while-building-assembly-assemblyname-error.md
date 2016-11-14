@@ -41,7 +41,7 @@ The ALink tool, called by the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)
   
 -   Building a 64-bit application on a 32-bit platform. In this case, you must ensure that 64-bit versions of all referenced assemblies are installed on the target platform. For a common language runtime (CLR) assembly, this is handled automatically, although this error message is still generated.  
   
- This message is a warning. The compiler is continuing to generate the assembly. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ This message is a warning. The compiler is continuing to generate the assembly. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40010  
   

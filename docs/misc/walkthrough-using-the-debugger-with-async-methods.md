@@ -93,7 +93,7 @@ By using the Async feature, you can call into asynchronous methods without using
  When the await statement immediately returns a different task, that task is the returned argument of the async method that contains the await operator (`ProcessAsync`). The task that’s returned by the await includes code execution that occurs after the await in the same method, which is why that task is different from the task that’s associated with the await.  
   
 ## Step Into and Step Over  
- The **Step Into** command steps into a method, but the **Step Over** command executes the method call and then breaks on the next line of the calling method. For more information, see [Step into, over, or out of the code](/visual-studio/debugger/navigating-through-code-with-the-debugger).  
+ The **Step Into** command steps into a method, but the **Step Over** command executes the method call and then breaks on the next line of the calling method. For more information, see [Step into, over, or out of the code](/visualstudio/debugger/navigating-through-code-with-the-debugger).  
   
  The following procedure shows what occurs when you choose the **Step Into** or **Step Over** commands at an await statement.  
   
@@ -190,4 +190,4 @@ By using the Async feature, you can call into asynchronous methods without using
      The application continues with the statement that follows the await statement in the called async function (`DoSomethingAsync`). The "after" message appears in the Output window.  
   
 ## See Also  
- [Navigating through Code with the Debugger](/visual-studio/debugger/navigating-through-code-with-the-debugger)
+ [Navigating through Code with the Debugger](/visualstudio/debugger/navigating-through-code-with-the-debugger)

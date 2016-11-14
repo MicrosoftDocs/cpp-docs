@@ -47,4 +47,4 @@ A number of predefined project templates are installed during [!INCLUDE[vsprvs](
 ## See Also  
  [Project Subtypes](d235b47b-cf11-4d47-a63f-e33d9d16105d2044a030-0795-4940-bd65-a6e44de98a0f)   
  [NIB: Visual Studio Templates](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041)   
- [Contributing to the Add New Item Dialog Box](/visual-studio/extensibility/internals/contributing-to-the-add-new-item-dialog-box)
+ [Contributing to the Add New Item Dialog Box](/visualstudio/extensibility/internals/contributing-to-the-add-new-item-dialog-box)

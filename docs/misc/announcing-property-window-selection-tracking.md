@@ -53,5 +53,5 @@ If you want to work with the **Properties** window or the **Property** pages, fo
      If you specify a multiple selection, then the **Properties** window finds the intersection between common properties for the objects. If you specify a single object selection, then the **Properties** window displays all of the properties for the one object.  
   
 ## See Also  
- [Extending Properties](/visual-studio/extensibility/internals/extending-properties)   
- [Property Pages](/visual-studio/extensibility/internals/property-pages)
+ [Extending Properties](/visualstudio/extensibility/internals/extending-properties)   
+ [Property Pages](/visualstudio/extensibility/internals/property-pages)

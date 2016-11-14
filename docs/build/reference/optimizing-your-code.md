@@ -81,7 +81,7 @@ By optimizing an executable, you can achieve a balance between fast execution sp
   
  The following topics provide basic information about how to debug.  
   
--   [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)  
+-   [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)  
   
 -   [Common Problems When Creating a Release Build](../../build/reference/common-problems-when-creating-a-release-build.md)  
   

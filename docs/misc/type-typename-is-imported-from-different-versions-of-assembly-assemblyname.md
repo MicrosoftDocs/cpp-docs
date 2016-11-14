@@ -46,4 +46,4 @@ Type '\<typename>' is imported from different versions of assembly '\<assemblyna
 -   Remove references to multiple versions of the same assembly.  
   
 ## See Also  
- [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)

@@ -24,4 +24,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Defining Shape Maps - redirect
-This topic has been consolidated with other content. Please go to [How to Define a Domain-Specific Language](/visual-studio/modeling/how-to-define-a-domain-specific-language).
+This topic has been consolidated with other content. Please go to [How to Define a Domain-Specific Language](/visualstudio/modeling/how-to-define-a-domain-specific-language).

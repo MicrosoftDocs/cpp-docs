@@ -37,7 +37,7 @@ This walkthrough demonstrates how to add a user control to a tool window.
  A user control is a collection of Windows controls bound together in one control. To add a user control to a tool window, all you really have to do is have the user control appear in the **Toolbox**. The user control that is used in this walkthrough is the clock control developed in [Walkthrough: Authoring a Composite Control with Visual C#](../Topic/Walkthrough:%20Authoring%20a%20Composite%20Control%20with%20Visual%20C%23.md).  
   
 ## Prerequisites  
- To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](/visual-studio/extensibility/visual-studio-sdk).  
+ To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](/visualstudio/extensibility/visual-studio-sdk).  
   
 ## Creating the User Control  
   
@@ -48,7 +48,7 @@ This walkthrough demonstrates how to add a user control to a tool window.
   
 ## Creating a Tool Window Extension  
   
-1.  Create a VSIX project named `MyToolWindowPackageUC` that has a tool window named `MyToolWindow`. If you need help doing this, see [Creating an Extension with a Tool Window](/visual-studio/extensibility/creating-an-extension-with-a-tool-window).  
+1.  Create a VSIX project named `MyToolWindowPackageUC` that has a tool window named `MyToolWindow`. If you need help doing this, see [Creating an Extension with a Tool Window](/visualstudio/extensibility/creating-an-extension-with-a-tool-window).  
   
 ## Adding the User Control  
   

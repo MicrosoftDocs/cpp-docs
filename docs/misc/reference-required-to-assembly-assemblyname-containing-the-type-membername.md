@@ -46,4 +46,4 @@ Reference required to assembly '\<assemblyname>' containing the type '\<memberna
 -   Add a project reference for the dependent types in the project.  
   
 ## See Also  
- [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)

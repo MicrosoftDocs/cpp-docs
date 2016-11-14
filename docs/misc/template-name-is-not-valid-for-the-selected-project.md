@@ -44,6 +44,6 @@ This error generally occurs when an unknown template name has been entered for t
 2.  Check the "New File Command" or "Add New Solution Item Command" topics for the correct syntax.  
   
 ## See Also  
- [New File Command](/visual-studio/ide/reference/new-file-command)   
- [Add New Item Command](/visual-studio/ide/reference/add-new-item-command)   
- [Visual Studio Commands](/visual-studio/ide/reference/visual-studio-commands)
+ [New File Command](/visualstudio/ide/reference/new-file-command)   
+ [Add New Item Command](/visualstudio/ide/reference/add-new-item-command)   
+ [Visual Studio Commands](/visualstudio/ide/reference/visual-studio-commands)

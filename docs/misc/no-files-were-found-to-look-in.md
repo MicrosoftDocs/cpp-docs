@@ -48,6 +48,6 @@ This error generally occurs when a file name or directory has been specified in 
      This cancels the dialog.  
   
 ## See Also  
- [Finding and Replacing Text](/visual-studio/ide/finding-and-replacing-text)   
- [Find in Files](/visual-studio/ide/find-in-files)   
+ [Finding and Replacing Text](/visualstudio/ide/finding-and-replacing-text)   
+ [Find in Files](/visualstudio/ide/find-in-files)   
  [Choose Search Folders](http://msdn.microsoft.com/en-us/85af6458-dcde-4a84-9ea4-f5cc6550dc80)

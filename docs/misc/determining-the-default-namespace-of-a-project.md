@@ -47,6 +47,6 @@ rootNamespace.webReferenceFolder.containedFolder.containedFolder ...
 ```  
   
 ## See Also  
- [Implementing Single-File Generators](/visual-studio/extensibility/internals/implementing-single-file-generators)   
- [Registering Single File Generators](/visual-studio/extensibility/internals/registering-single-file-generators)   
- [Exposing Types to Visual Designers](/visual-studio/extensibility/internals/exposing-types-to-visual-designers)
+ [Implementing Single-File Generators](/visualstudio/extensibility/internals/implementing-single-file-generators)   
+ [Registering Single File Generators](/visualstudio/extensibility/internals/registering-single-file-generators)   
+ [Exposing Types to Visual Designers](/visualstudio/extensibility/internals/exposing-types-to-visual-designers)

@@ -35,7 +35,7 @@ This walkthrough shows how a managed VSPackage can supply dynamic configuration 
 > [!NOTE]
 >  The simplest way to add custom controls to the Toolbox is to use the Toolbox Control templates that are included in the Visual Studio SDK. This topic relates to advanced Toolbox development.  
 >   
->  For more information about how to create toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](/visual-studio/extensibility/creating-a-wpf-toolbox-control).  
+>  For more information about how to create toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](/visualstudio/extensibility/creating-a-wpf-toolbox-control).  
   
  This walkthrough guides you through the following steps:  
   
@@ -62,7 +62,7 @@ This walkthrough shows how a managed VSPackage can supply dynamic configuration 
 7.  Implement a command on the VSPackage to force re-initialization of the **Toolbox**.  
   
 ## Prerequisites  
- To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](/visual-studio/extensibility/visual-studio-sdk).  
+ To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](/visualstudio/extensibility/visual-studio-sdk).  
   
 ## Locations for the Visual Studio Package Project Template  
  The Visual Studio Package project template can be found in three different locations in the **New Project** dialog:  
@@ -322,7 +322,7 @@ This walkthrough shows how a managed VSPackage can supply dynamic configuration 
   
 2.  Press F5 to start a second instance of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] in the experimental registry hive.  
   
-     For more information about how to use the experimental hive, see [The Experimental Instance](/visual-studio/extensibility/the-experimental-instance).  
+     For more information about how to use the experimental hive, see [The Experimental Instance](/visualstudio/extensibility/the-experimental-instance).  
   
 3.  Click the **Tools** menu.  
   

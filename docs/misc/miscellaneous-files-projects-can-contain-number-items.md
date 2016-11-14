@@ -40,4 +40,4 @@ The Miscellaneous Files project can save up to 256 items. This error generally o
 1.  Enter a number between one and 256 in the box.  
   
 ## See Also  
- [Documents, Environment, Options Dialog Box](/visual-studio/ide/reference/documents-environment-options-dialog-box)
+ [Documents, Environment, Options Dialog Box](/visualstudio/ide/reference/documents-environment-options-dialog-box)

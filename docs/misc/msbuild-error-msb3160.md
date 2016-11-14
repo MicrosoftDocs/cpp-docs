@@ -43,4 +43,4 @@ translation.priority.mt:
 -   Update the XML file to resolve the validation error.  
   
 ## See Also  
- [Product and Package Schema Reference](/visual-studio/deployment/product-and-package-schema-reference)
+ [Product and Package Schema Reference](/visualstudio/deployment/product-and-package-schema-reference)

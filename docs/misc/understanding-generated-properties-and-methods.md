@@ -28,4 +28,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Understanding Generated Properties and Methods
-This topic has been consolidated with other content. Please go to [Navigating and Updating a Model in Program Code](/visual-studio/modeling/navigating-and-updating-a-model-in-program-code).
+This topic has been consolidated with other content. Please go to [Navigating and Updating a Model in Program Code](/visualstudio/modeling/navigating-and-updating-a-model-in-program-code).

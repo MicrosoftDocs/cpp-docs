@@ -41,4 +41,4 @@ This error generally occurs when a project that has been specified is not open i
   
 ## See Also  
  [Solution Explorer](http://msdn.microsoft.com/en-us/ca0ad8e7-eda8-40d4-a76e-2a6864b16e00)   
- [Solutions and Projects](/visual-studio/ide/solutions-and-projects-in-visual-studio)
+ [Solutions and Projects](/visualstudio/ide/solutions-and-projects-in-visual-studio)

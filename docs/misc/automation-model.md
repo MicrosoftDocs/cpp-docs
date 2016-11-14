@@ -39,8 +39,8 @@ The automation model provides an alternative to VSPackages for extending [!INCLU
   
  Add-ins and wizards use the automation model to control or extend the functionality of the IDE by using its automation interfaces. Typically, Microsoft includes many add-ins with [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)]. You can use add-ins to integrate new commands on the toolbars and menus, to add tool windows, or to automate certain tasks that you perform regularly in [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].  
   
- As a VSPackage developer, you should contribute to the automation model. For example, if you add a new language to [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] by using the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] SDK, your language should provide a robust code model that extends the pre-existing one. For more information, see [Contributing to the Automation Model](/visual-studio/extensibility/internals/contributing-to-the-automation-model).  
+ As a VSPackage developer, you should contribute to the automation model. For example, if you add a new language to [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] by using the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] SDK, your language should provide a robust code model that extends the pre-existing one. For more information, see [Contributing to the Automation Model](/visualstudio/extensibility/internals/contributing-to-the-automation-model).  
   
 ## See Also  
- [VSPackages](/visual-studio/extensibility/internals/vspackages)   
- [Contributing to the Automation Model](/visual-studio/extensibility/internals/contributing-to-the-automation-model)
+ [VSPackages](/visualstudio/extensibility/internals/vspackages)   
+ [Contributing to the Automation Model](/visualstudio/extensibility/internals/contributing-to-the-automation-model)

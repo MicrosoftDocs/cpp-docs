@@ -20,4 +20,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Program Copy and Paste Behavior - redirect
-The content of this topic has been merged with a similar topic. Please see [Customizing Copy Behavior](/visual-studio/modeling/customizing-copy-behavior).
+The content of this topic has been merged with a similar topic. Please see [Customizing Copy Behavior](/visualstudio/modeling/customizing-copy-behavior).

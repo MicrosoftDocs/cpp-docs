@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Finding a String
-You can search for one or more strings in the string table, and use [regular expressions](/visual-studio/ide/using-regular-expressions-in-visual-studio) with the **Find in Files** command (**Edit** menu) to locate all instances of strings that match a pattern.  
+You can search for one or more strings in the string table, and use [regular expressions](/visualstudio/ide/using-regular-expressions-in-visual-studio) with the **Find in Files** command (**Edit** menu) to locate all instances of strings that match a pattern.  
   
 ### To find a string in the string table  
   

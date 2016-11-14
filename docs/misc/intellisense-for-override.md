@@ -33,4 +33,4 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # IntelliSense for Override
-This content has moved to [Visual C# IntelliSense](/visual-studio/ide/visual-csharp-intellisense).
+This content has moved to [Visual C# IntelliSense](/visualstudio/ide/visual-csharp-intellisense).

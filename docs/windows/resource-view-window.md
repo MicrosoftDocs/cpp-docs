@@ -45,7 +45,7 @@ translation.priority.ht:
 >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
 > [!TIP]
->  You can right-click on the Resource View window to launch a shortcut menu of commands. You can also double-click on the title bar to dock or undock the window. Right-clicking on the title bar will give you additional commands that allow you to control the behavior of the window. For more information, see [Windows Management](/visual-studio/ide/customizing-window-layouts-in-visual-studio).  
+>  You can right-click on the Resource View window to launch a shortcut menu of commands. You can also double-click on the title bar to dock or undock the window. Right-clicking on the title bar will give you additional commands that allow you to control the behavior of the window. For more information, see [Windows Management](/visualstudio/ide/customizing-window-layouts-in-visual-studio).  
   
 #### To open the resource view window  
   

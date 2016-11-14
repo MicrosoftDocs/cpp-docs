@@ -46,4 +46,4 @@ A type was referenced that is not available, or is not defined.
 2.  Define the type within the current class or module.  
   
 ## See Also  
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

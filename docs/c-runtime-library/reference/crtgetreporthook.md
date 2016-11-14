@@ -67,7 +67,7 @@ _CRT_REPORT_HOOK _CrtGetReportHook( void );
 ## Remarks  
  `_CrtGetReportHook` allows an application to retrieve the current reporting function for the C run-time debug library reporting process.  
   
- For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug Hook Function Writing](/visual-studio/debugger/debug-hook-function-writing).  
+ For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug Hook Function Writing](/visualstudio/debugger/debug-hook-function-writing).  
   
 ## Requirements  
   

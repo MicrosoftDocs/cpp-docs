@@ -61,5 +61,5 @@ translation.priority.mt:
      Example: /`logger:XMLLogger,MyLogger,Version=1.0.2,Culture=neutral`  
   
 ## See Also  
- [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)   
- [Build Loggers](/visual-studio/msbuild/build-loggers)
+ [Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference)   
+ [Build Loggers](/visualstudio/msbuild/build-loggers)

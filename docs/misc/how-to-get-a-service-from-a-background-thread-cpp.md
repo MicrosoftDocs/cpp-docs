@@ -95,5 +95,5 @@ public:
 ```  
   
 ## See Also  
- [Using and Providing Services](/visual-studio/extensibility/using-and-providing-services)   
- [Service Essentials](/visual-studio/extensibility/internals/service-essentials)
+ [Using and Providing Services](/visualstudio/extensibility/using-and-providing-services)   
+ [Service Essentials](/visualstudio/extensibility/internals/service-essentials)

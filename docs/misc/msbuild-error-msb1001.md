@@ -43,4 +43,4 @@ translation.priority.mt:
 1.  Check the spelling of the switch. To display the list of valid switches, type `msbuild /help`.  
   
 ## See Also  
- [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)
+ [Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference)

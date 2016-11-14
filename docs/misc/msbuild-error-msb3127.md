@@ -43,4 +43,4 @@ translation.priority.mt:
 -   Add the icon file to the current project and include it in the required download group. For more information, see [How to: Specify Which Files Are Published by ClickOnce](../Topic/How%20to:%20Specify%20Which%20Files%20Are%20Published%20by%20ClickOnce.md).  
   
 ## See Also  
- [Publish Page, Project Designer](/visual-studio/ide/reference/publish-page-project-designer)
+ [Publish Page, Project Designer](/visualstudio/ide/reference/publish-page-project-designer)

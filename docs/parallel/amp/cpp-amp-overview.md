@@ -45,7 +45,7 @@ C++ Accelerated Massive Parallelism (C++ AMP) accelerates execution of C++ code 
   
 -   DirectX 11 Feature Level 11.0 or later hardware  
   
--   For debugging on the software emulator, [!INCLUDE[win8](../../build/reference/includes/win8_md.md)] or [!INCLUDE[winserver8](../../build/reference/includes/winserver8_md.md)] is required. For debugging on the hardware, you must install the drivers for your graphics card. For more information, see [Debugging GPU Code](/visual-studio/debugger/debugging-gpu-code).  
+-   For debugging on the software emulator, [!INCLUDE[win8](../../build/reference/includes/win8_md.md)] or [!INCLUDE[winserver8](../../build/reference/includes/winserver8_md.md)] is required. For debugging on the hardware, you must install the drivers for your graphics card. For more information, see [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code).  
   
 ## Introduction  
  The following two examples illustrate the primary components of C++ AMP. Assume that you want to add the corresponding elements of two one-dimensional arrays. For example, you might want to add `{1, 2, 3, 4, 5}` and `{6, 7, 8, 9, 10}` to obtain `{7, 9, 11, 13, 15}`. Without using C++ AMP, you might write the following code to add the numbers and display the results.  
@@ -512,15 +512,15 @@ void MathExample() {
 ## C++ AMP and Concurrency Visualizer  
  The Concurrency Visualizer includes support for analyzing performance of C++ AMP code. These articles describe these features:  
   
-- [GPU Activity Graph](/visual-studio/profiling/gpu-activity-graph)  
+- [GPU Activity Graph](/visualstudio/profiling/gpu-activity-graph)  
   
-- [GPU Activity (Paging)](/visual-studio/profiling/gpu-activity-paging)  
+- [GPU Activity (Paging)](/visualstudio/profiling/gpu-activity-paging)  
   
-- [GPU Activity (This Process)](/visual-studio/profiling/gpu-activity-this-process)  
+- [GPU Activity (This Process)](/visualstudio/profiling/gpu-activity-this-process)  
   
-- [GPU Activity (Other Processes)](/visual-studio/profiling/gpu-activity-other-processes)  
+- [GPU Activity (Other Processes)](/visualstudio/profiling/gpu-activity-other-processes)  
   
-- [Channels (Threads View)](/visual-studio/profiling/channels-threads-view)  
+- [Channels (Threads View)](/visualstudio/profiling/channels-threads-view)  
   
 - [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/LinkID=253987&clcid=0x409)  
   

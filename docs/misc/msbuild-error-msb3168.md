@@ -40,4 +40,4 @@ translation.priority.mt:
   
 ### To correct this error  
   
--   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources).
+-   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](/visualstudio/msbuild/additional-msbuild-resources).

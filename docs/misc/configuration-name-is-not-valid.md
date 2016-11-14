@@ -42,4 +42,4 @@ This error generally occurs when the name entered for the build configuration in
 2.  Re-type the name.  
   
 ## See Also  
- [Compiling and Building](/visual-studio/ide/compiling-and-building-in-visual-studio)
+ [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio)

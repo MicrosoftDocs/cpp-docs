@@ -50,7 +50,7 @@ Normally, keyboard users move the input focus from one control to another in a d
   
 1.  Select the control on the dialog box.  
   
-2.  In the [Properties Window](/visual-studio/ide/reference/properties-window), in the **Caption** property, type a new name for the control, typing an ampersand (**&**) in front of the letter you want as the access key for that control. For example, `&Radio1`.  
+2.  In the [Properties Window](/visualstudio/ide/reference/properties-window), in the **Caption** property, type a new name for the control, typing an ampersand (**&**) in front of the letter you want as the access key for that control. For example, `&Radio1`.  
   
 3.  Press **Enter**.  
   
@@ -58,7 +58,7 @@ Normally, keyboard users move the input focus from one control to another in a d
   
 ### To define an access key for a control without a visible caption  
   
-1.  Make a caption for the control by using a **Static Text** control in the [Toolbox](/visual-studio/ide/reference/toolbox).  
+1.  Make a caption for the control by using a **Static Text** control in the [Toolbox](/visualstudio/ide/reference/toolbox).  
   
 2.  In the static text caption, type an ampersand (**&**) in front of the letter you want as the access key.  
   

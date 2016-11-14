@@ -46,6 +46,6 @@ One of your project's references itself contains an assembly reference (dependen
 -   Modify the order in which your project searches directories, looking for references. See [NIB: Reference Paths Dialog Box (Visual Basic)](http://msdn.microsoft.com/en-us/8e549b39-7256-456a-8fd7-089b23facf9c) for more information.  
   
 ## See Also  
- [Troubleshooting Broken References](/visual-studio/ide/troubleshooting-broken-references)   
+ [Troubleshooting Broken References](/visualstudio/ide/troubleshooting-broken-references)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Assemblies in the Common Language Runtime](http://msdn.microsoft.com/en-us/33a0bc6a-6bb3-44c7-ada7-4a046e8c0945)

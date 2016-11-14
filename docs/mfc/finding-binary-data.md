@@ -43,7 +43,7 @@ You can search for either ASCII strings or hexadecimal bytes. For example, to fi
   
 ### To find binary data  
   
-1.  From the **Edit** menu, click [Find](/visual-studio/ide/reference/find-command).  
+1.  From the **Edit** menu, click [Find](/visualstudio/ide/reference/find-command).  
   
 2.  In the **Find What** box, select a previous search string from the drop-down list or type the data you want to find.  
   

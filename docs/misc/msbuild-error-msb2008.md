@@ -45,4 +45,4 @@ translation.priority.mt:
 -   If the project is not a [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] or [!INCLUDE[csprcs](../ide/includes/csprcs_md.md)] project, use the appropriate tool to convert it.  
   
 ## See Also  
- [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)
+ [Additional Resources](/visualstudio/msbuild/additional-msbuild-resources)

@@ -44,4 +44,4 @@ A type was referenced that has not been loaded by the common language runtime.
 -   Restructure your code so the type is defined within the current scope.  
   
 ## See Also  
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

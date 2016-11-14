@@ -42,4 +42,4 @@ A <xref:System.Data.StrongTypingException> occurs when the user accesses a <xref
  <xref:System.Data.DataTable.DataSet%2A>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
  [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
- [Dataset tools in Visual Studio](/visual-studio/data-tools/dataset-tools-in-visual-studio)
+ [Dataset tools in Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio)

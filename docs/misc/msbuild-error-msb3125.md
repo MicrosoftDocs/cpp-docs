@@ -40,8 +40,8 @@ translation.priority.mt:
   
 ### To correct this error  
   
--   Set the [\<entryPoint> Element](../Topic/%3CentryPoint%3E%20Element%20\(ClickOnce%20Application\).md) to a valid value. For more information, see [ClickOnce Application Manifest](/visual-studio/deployment/clickonce-application-manifest).  
+-   Set the [\<entryPoint> Element](../Topic/%3CentryPoint%3E%20Element%20\(ClickOnce%20Application\).md) to a valid value. For more information, see [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest).  
   
 ## See Also  
- [Publish Page, Project Designer](/visual-studio/ide/reference/publish-page-project-designer)   
- [ClickOnce Application Manifest](/visual-studio/deployment/clickonce-application-manifest)
+ [Publish Page, Project Designer](/visualstudio/ide/reference/publish-page-project-designer)   
+ [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)

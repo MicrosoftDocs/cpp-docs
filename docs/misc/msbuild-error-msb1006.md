@@ -43,5 +43,5 @@ translation.priority.mt:
 1.  Specify both the property name and the property value, for example, `/property:Configuration=Debug`.  
   
 ## See Also  
- [MSBuild Properties](/visual-studio/msbuild/msbuild-properties)  
- [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)
+ [MSBuild Properties](/visualstudio/msbuild/msbuild-properties)  
+ [Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference)

@@ -41,4 +41,4 @@ A comment statement has been entered in the Immediate Window during a debugging 
   
 ## See Also  
  [Debugging Your Visual Basic Application](/dotnet/visual-basic/developing-apps/debugging)   
- [Immediate Window](/visual-studio/ide/reference/immediate-window)
+ [Immediate Window](/visualstudio/ide/reference/immediate-window)

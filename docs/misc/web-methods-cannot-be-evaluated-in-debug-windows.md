@@ -44,4 +44,4 @@ XML Web service methods cannot be tested within the debug window.
 -   Test XML Web service methods from the Code Editor.  
   
 ## See Also  
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

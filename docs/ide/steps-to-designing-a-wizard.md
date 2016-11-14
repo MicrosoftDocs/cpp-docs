@@ -56,7 +56,7 @@ You can use a wizard to create and configure common project starter files. Like 
   
 9. Build and test the wizard.  
   
-10. Debug your wizard. See [Debugging Script and Web Applications](/visual-studio/debugger/debugging-web-applications-and-script) for more information.  
+10. Debug your wizard. See [Debugging Script and Web Applications](/visualstudio/debugger/debugging-web-applications-and-script) for more information.  
   
     > [!NOTE]
     >  When you are debugging JScript, you cannot perform mixed-mode debugging with native code.  

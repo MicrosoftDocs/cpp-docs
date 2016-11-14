@@ -45,7 +45,7 @@ This topic compares the default ATL project configurations in Visual C++ .NET wi
 |Release|MBCS|DLL|  
 |Debug|MBCS|DLL|  
   
- **Character set**, **Use of ATL** and can all be changed in the **Project Settings** dialog under the **General** tab. You can also add your own configurations using the Configuration Manager. For details, see [Build Configurations](/visual-studio/ide/understanding-build-configurations).  
+ **Character set**, **Use of ATL** and can all be changed in the **Project Settings** dialog under the **General** tab. You can also add your own configurations using the Configuration Manager. For details, see [Build Configurations](/visualstudio/ide/understanding-build-configurations).  
   
 ## Version 6.0 Default Configurations  
  In Visual C++ version 6.0, the ATL COM AppWizard (now called the ATL Project Wizard) created six project configurations by default. The configurations were variations on Release, Debug, Unicode, and use of CRT and ATL settings. All these configurations can be duplicated in Visual C++ .NET using the Configuration Manager, if so desired.  
@@ -65,5 +65,5 @@ This topic compares the default ATL project configurations in Visual C++ .NET wi
  [Programming with ATL and C Run-Time Code](../../atl/programming-with-atl-and-c-run-time-code.md)   
  [Working with Project Properties](../../ide/working-with-project-properties.md)   
  [Configuration Manager Dialog Box](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)   
- [Compiling and Building](/visual-studio/ide/compiling-and-building-in-visual-studio)
+ [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio)
 

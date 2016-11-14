@@ -56,4 +56,4 @@ This step lets you define the window name and the command ID for your tool windo
  [Select VSPackage Options, Visual Studio Package Wizard](../misc/select-vspackage-options-visual-studio-package-wizard.md)   
  [Editor Options, Visual Studio Package Wizard](../misc/editor-options-visual-studio-package-wizard.md)   
  [Command Options, Visual Studio Package Wizard](../misc/command-options-visual-studio-package-wizard.md)   
- [Creating an Extension with a Menu Command](/visual-studio/extensibility/creating-an-extension-with-a-menu-command)
+ [Creating an Extension with a Menu Command](/visualstudio/extensibility/creating-an-extension-with-a-menu-command)

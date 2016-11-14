@@ -91,7 +91,7 @@ lineNumber);
   
  To clear the hook function, pass `NULL` to `_CrtSetAllocHook`.  
   
- For more information about how `_CrtSetAllocHook` can be used with other memory management functions or how to write your own client-defined hook functions, see [Debug Hook Function Writing](/visual-studio/debugger/debug-hook-function-writing).  
+ For more information about how `_CrtSetAllocHook` can be used with other memory management functions or how to write your own client-defined hook functions, see [Debug Hook Function Writing](/visualstudio/debugger/debug-hook-function-writing).  
   
 > [!NOTE]
 >  `_CrtSetAllocHook` is not supported under `/clr:pure`.  

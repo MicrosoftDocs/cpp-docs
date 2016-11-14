@@ -44,4 +44,4 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] Package Template
  Moves to the next step.  
   
 ## See Also  
- [Creating an Extension with a Menu Command](/visual-studio/extensibility/creating-an-extension-with-a-menu-command)
+ [Creating an Extension with a Menu Command](/visualstudio/extensibility/creating-an-extension-with-a-menu-command)

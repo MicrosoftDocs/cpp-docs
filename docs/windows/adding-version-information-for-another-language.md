@@ -49,7 +49,7 @@ translation.priority.mt:
   
 2.  Right-click within the version information table and choose **New Version Info Block** from the shortcut menu.  
   
-     This command adds an additional information block to the current version information resource and opens its corresponding properties in the [Properties window](/visual-studio/ide/reference/properties-window).  
+     This command adds an additional information block to the current version information resource and opens its corresponding properties in the [Properties window](/visualstudio/ide/reference/properties-window).  
   
 3.  In the **Properties** window, choose the appropriate language and character set for your new block.  
   

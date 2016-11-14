@@ -45,7 +45,7 @@ translation.priority.ht:
 -   Remove the package from the list of packages to install, or add the package to the cache. Also, make sure that the manifest is formatted correctly with valid XML tags.  
   
 ## See Also  
- [Product and Package Schema Reference](/visual-studio/deployment/product-and-package-schema-reference)   
+ [Product and Package Schema Reference](/visualstudio/deployment/product-and-package-schema-reference)   
  [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)   
- [Prerequisites Dialog Box](/visual-studio/ide/reference/prerequisites-dialog-box)   
- [Creating Bootstrapper Packages](/visual-studio/deployment/creating-bootstrapper-packages)
+ [Prerequisites Dialog Box](/visualstudio/ide/reference/prerequisites-dialog-box)   
+ [Creating Bootstrapper Packages](/visualstudio/deployment/creating-bootstrapper-packages)

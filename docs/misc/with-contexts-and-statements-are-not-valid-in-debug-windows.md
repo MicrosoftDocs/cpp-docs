@@ -45,4 +45,4 @@ translation.priority.mt:
   
 ## See Also  
  [With...End With Statement](/dotnet/visual-basic/language-reference/statements/with-end-with-statement)   
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

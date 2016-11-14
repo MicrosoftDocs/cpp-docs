@@ -20,4 +20,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Control the Visibility of a Decorator -redirect
-This topic has been merged with another. Please see [Customizing Presentation on the Diagram](/visual-studio/modeling/customizing-presentation-on-the-diagram).
+This topic has been merged with another. Please see [Customizing Presentation on the Diagram](/visualstudio/modeling/customizing-presentation-on-the-diagram).

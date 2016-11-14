@@ -27,4 +27,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Walkthrough: Creating a Generated API
-This topic is obsolete. Instead, please see [Writing Code to Customise a Domain-Specific Language](/visual-studio/modeling/writing-code-to-customise-a-domain-specific-language).
+This topic is obsolete. Instead, please see [Writing Code to Customise a Domain-Specific Language](/visualstudio/modeling/writing-code-to-customise-a-domain-specific-language).

@@ -47,4 +47,4 @@ translation.priority.mt:
 -   Remove the reference to the original response file from the response file that it references.  
   
 ## See Also  
- [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)
+ [Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference)

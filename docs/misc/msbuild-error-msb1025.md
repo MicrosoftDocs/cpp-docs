@@ -44,5 +44,5 @@ translation.priority.ht:
 2.  Contact Microsoft Product Support Services and report the error.  
   
 ## See Also  
-[MSBuild](/visual-studio/msbuild/msbuild1)
- [Talk to Us](/visual-studio/ide/talk-to-us)
+[MSBuild](/visualstudio/msbuild/msbuild1)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

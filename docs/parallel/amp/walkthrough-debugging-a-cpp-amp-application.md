@@ -294,7 +294,7 @@ Parallel Stacks window
      ![DataTip for Parallel Stacks window](../../parallel/amp/media/campe.png "CampE")  
 GPU thread DataTip  
   
-     For more information about the Parallel Stacks window, see [Using the Parallel Stacks Window](/visual-studio/debugger/using-the-parallel-stacks-window).  
+     For more information about the Parallel Stacks window, see [Using the Parallel Stacks Window](/visualstudio/debugger/using-the-parallel-stacks-window).  
   
 ### To use the Parallel Watch window  
   
@@ -400,7 +400,7 @@ Grouped threads in the GPU Threads window
   
 ## See Also  
  [C++ AMP Overview](../../parallel/amp/cpp-amp-overview.md)   
- [Debugging GPU Code](/visual-studio/debugger/debugging-gpu-code)   
+ [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code)   
  [How to: Use the GPU Threads Window](../Topic/How%20to:%20Use%20the%20GPU%20Threads%20Window.md)   
  [How to: Use the Parallel Watch Window](../Topic/How%20to:%20Use%20the%20Parallel%20Watch%20Window.md)   
  [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/LinkID=253987&clcid=0x409)

@@ -68,4 +68,4 @@ Generate enhanced debugging information for optimized code in non-debug builds.
 ## See Also  
  [/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)   
  [/Z7, /Zi, /ZI (Debug Information Format)](../../build/reference/z7-zi-zi-debug-information-format.md)   
- [Edit and Continue](/visual-studio/debugger/edit-and-continue)
+ [Edit and Continue](/visualstudio/debugger/edit-and-continue)

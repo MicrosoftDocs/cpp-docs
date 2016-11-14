@@ -31,4 +31,4 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # Implement Abstract Base Class
-This content has moved to [Visual C# IntelliSense](/visual-studio/ide/visual-csharp-intellisense).
+This content has moved to [Visual C# IntelliSense](/visualstudio/ide/visual-csharp-intellisense).

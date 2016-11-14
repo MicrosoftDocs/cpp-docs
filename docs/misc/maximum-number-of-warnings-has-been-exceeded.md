@@ -37,7 +37,7 @@ translation.priority.mt:
 # Maximum number of warnings has been exceeded
 The maximum number of compilation warnings is 100. The compiler imposes this limit to reduce the size of error and warning reports.  
   
- By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42206  
   
@@ -47,4 +47,4 @@ The maximum number of compilation warnings is 100. The compiler imposes this lim
   
 ## See Also  
  [Visual Basic Command-Line Compiler](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic)
+ [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic)

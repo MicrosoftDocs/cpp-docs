@@ -32,4 +32,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Get Involved in the Developer Community
-This content has been removed. For information, see [Talk to Us](/visual-studio/ide/talk-to-us).
+This content has been removed. For information, see [Talk to Us](/visualstudio/ide/talk-to-us).

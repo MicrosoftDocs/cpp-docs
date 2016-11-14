@@ -45,4 +45,4 @@ translation.priority.mt:
 -   Specify a local working directory before attempting this command again.  
   
 ## See Also  
- [Exec Task](/visual-studio/msbuild/exec-task)
+ [Exec Task](/visualstudio/msbuild/exec-task)

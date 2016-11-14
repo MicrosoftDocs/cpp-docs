@@ -58,7 +58,7 @@ Visual Studio enables you to insert ActiveX controls into your dialog box.
      The control appears in the dialog box, where you can edit it or create handlers for it just as you would any other control.  
   
     > [!NOTE]
-    >  You can add ActiveX controls to the [Toolbox window](/visual-studio/ide/reference/toolbox). For more information, see [Managing Items and Tabs in the Toolbox](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  
+    >  You can add ActiveX controls to the [Toolbox window](/visualstudio/ide/reference/toolbox). For more information, see [Managing Items and Tabs in the Toolbox](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
     > [!CAUTION]
     >  It may not be legal to distribute all of the ActiveX controls on your system. Please refer to the license agreement for the software that installed the controls or contact the software company.  

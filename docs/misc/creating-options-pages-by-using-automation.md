@@ -41,11 +41,11 @@ Managed VSPackages can use automation to extend the [!INCLUDE[vsprvs](../assembl
  You should use the automation object that the VSPackage provides to the environment to support user control properties.  
   
 ## Automation Support for Tools Options Pages Implemented with the Interop Assemblies  
- To support the automation model, a VSPackage must create and register an automation object. See [Providing Automation for VSPackages](/visual-studio/extensibility/internals/providing-automation-for-vspackages) for more information.  
+ To support the automation model, a VSPackage must create and register an automation object. See [Providing Automation for VSPackages](/visualstudio/extensibility/internals/providing-automation-for-vspackages) for more information.  
   
  When code that uses the automation model calls `DTE.Properties` for the properties collection of a given **Tools Options** page, the IDE uses the automation object provided by the VSPackage's implementation of <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> to return the collection and allow access to its constituent <xref:EnvDTE.Property> objects.  
   
- **Note** The automation object returned by <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> depends on the GUID supplied (as a VSPackage can support more than one automation object). For more information on implementing automation objects, see [Automation Support for Options Pages](/visual-studio/extensibility/internals/automation-support-for-options-pages).  
+ **Note** The automation object returned by <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> depends on the GUID supplied (as a VSPackage can support more than one automation object). For more information on implementing automation objects, see [Automation Support for Options Pages](/visualstudio/extensibility/internals/automation-support-for-options-pages).  
   
  A **Tools Options** page is specified by two identifiers. The first identifier is a string that indicates the folder containing the item on the **Options** section of the **Tools** menu. The second identifier is a string that indicates the specific item in the folder. For more information, see [Using Options Pages](../misc/using-options-pages.md).  
   
@@ -77,7 +77,7 @@ Managed VSPackages can use automation to extend the [!INCLUDE[vsprvs](../assembl
   
 -   Provide an API, if desired, for other applications to use the **Tools Options** page.  
   
- The properties of the **Fonts and Colors** dialog box is an example of a **Tools Options** page that cannot be modified through the automation model. Instead, a separate API is provided, based on the <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> interface to allow programmatic manipulation of the **Fonts and ColorsTools Options** page. For more information on controlling the **Fonts and ColorsTools Options** page, see [Using Fonts and Colors](/visual-studio/extensibility/using-fonts-and-colors).  
+ The properties of the **Fonts and Colors** dialog box is an example of a **Tools Options** page that cannot be modified through the automation model. Instead, a separate API is provided, based on the <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> interface to allow programmatic manipulation of the **Fonts and ColorsTools Options** page. For more information on controlling the **Fonts and ColorsTools Options** page, see [Using Fonts and Colors](/visualstudio/extensibility/using-fonts-and-colors).  
   
 ## Automation Support for Tools Options Pages Within the Managed Package Framework  
  Set the <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsAutomation%2A> property of an implementation's registering <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> instance to indicate that a Managed Package Framework-base implementation of a **Tools Options** page supports automation.  
@@ -87,13 +87,13 @@ Managed VSPackages can use automation to extend the [!INCLUDE[vsprvs](../assembl
  If a **Tools Options** page implementation does not support automation, the implementation must supply its own API to allow programmatic access to the **Tools Options** page.  
   
 > [!NOTE]
->  The IDE's **Fonts and Colors** page is an example of a **Tools Options** page that does not support automation, but provides access to the **Tools Options** page through its own API. For more information, see [Using Fonts and Colors](/visual-studio/extensibility/using-fonts-and-colors).  
+>  The IDE's **Fonts and Colors** page is an example of a **Tools Options** page that does not support automation, but provides access to the **Tools Options** page through its own API. For more information, see [Using Fonts and Colors](/visualstudio/extensibility/using-fonts-and-colors).  
   
 ## See Also  
  [Extending the Visual Studio Environment](../Topic/Extending%20the%20Visual%20Studio%20Environment.md)   
  [Creating Options Pages By Using Interop Assemblies](../misc/creating-options-pages-by-using-interop-assemblies.md)   
- [Creating Options Pages](/visual-studio/extensibility/internals/creating-options-pages)   
+ [Creating Options Pages](/visualstudio/extensibility/internals/creating-options-pages)   
  [How to: Create Custom Options Pages](../Topic/How%20to:%20Create%20Custom%20Options%20Pages.md)   
  [Creating Registrar Scripts](../atl/creating-registrar-scripts.md)   
- [Automation Support for Options Pages](/visual-studio/extensibility/internals/automation-support-for-options-pages)   
+ [Automation Support for Options Pages](/visualstudio/extensibility/internals/automation-support-for-options-pages)   
  [Using Options Pages](../misc/using-options-pages.md)

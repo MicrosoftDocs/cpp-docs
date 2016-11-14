@@ -34,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Hook Up Events By Using IntelliSense (C#)
-This content has moved to [Visual C# IntelliSense](/visual-studio/ide/visual-csharp-intellisense).  
+This content has moved to [Visual C# IntelliSense](/visualstudio/ide/visual-csharp-intellisense).  
   
 1.  
   

@@ -45,4 +45,4 @@ The maximum number of compilation errors is 100. The compiler imposes this limit
   
 ## See Also  
  [Visual Basic Command-Line Compiler](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic)
+ [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic)

@@ -46,4 +46,4 @@ The specified member could not be found.
 2.  Access one of the members declared in the module. In some cases, the debugging environment cannot locate members because the modules where they are declared have not yet been loaded.  
   
 ## See Also  
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

@@ -41,7 +41,7 @@ translation.priority.ht:
   
 1.  Open the image whose properties you want to change.  
   
-2.  In the **Width** and **Height** boxes in the [Properties window](/visual-studio/ide/reference/properties-window), type the dimensions that you want.  
+2.  In the **Width** and **Height** boxes in the [Properties window](/visualstudio/ide/reference/properties-window), type the dimensions that you want.  
   
      If you are increasing the size of the image, the Image editor extends the image to the right, downward, or both, and fills the new region with the current background color. The image is not stretched.  
   

@@ -30,4 +30,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Create a Coded UI Test
-The content of this topic has been consolidated with the parent page. See [Creating Coded UI Tests](/visual-studio/test/use-ui-automation-to-test-your-code).
+The content of this topic has been consolidated with the parent page. See [Creating Coded UI Tests](/visualstudio/test/use-ui-automation-to-test-your-code).

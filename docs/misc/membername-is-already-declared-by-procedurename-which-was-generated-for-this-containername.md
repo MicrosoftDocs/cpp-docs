@@ -44,4 +44,4 @@ A member was declared that has the same name as a member that is declared by the
 -   Change the name of the member to remove the conflict.  
   
 ## See Also  
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

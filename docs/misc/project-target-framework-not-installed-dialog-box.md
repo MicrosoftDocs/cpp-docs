@@ -60,5 +60,5 @@ You have opened a project which targets a framework that is not installed on you
   
 ## See Also  
  [How to: Target a Version of the .NET Framework](../Topic/How%20to:%20Target%20a%20Version%20of%20the%20.NET%20Framework.md)   
- [Troubleshooting .NET Framework Targeting Errors](/visual-studio/msbuild/troubleshooting-dotnet-framework-targeting-errors)   
+ [Troubleshooting .NET Framework Targeting Errors](/visualstudio/msbuild/troubleshooting-dotnet-framework-targeting-errors)   
  [Adding references](../ide/adding-references-in-visual-cpp-projects.md)

@@ -57,7 +57,7 @@ Modules do not have instances, support inheritance, or implement interfaces. The
   
  In addition, you cannot use the [Implements](/dotnet/visual-basic/language-reference/statements/implements-clause) statement or the [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement) in the statement block of the module.  
   
- By default, this message is a warning. For more information about how to hide warnings or treat warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information about how to hide warnings or treat warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42028  
   

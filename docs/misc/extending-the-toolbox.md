@@ -43,7 +43,7 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] **Toolbox** prov
  [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md)  
  Describes out to create a Toolbox control by using the Windows Forms Toolbox Control template.  
   
- [Creating a WPF Toolbox Control](/visual-studio/extensibility/creating-a-wpf-toolbox-control)  
+ [Creating a WPF Toolbox Control](/visualstudio/extensibility/creating-a-wpf-toolbox-control)  
  Describes out to create a Toolbox control by using the WPF Toolbox Control template.  
   
  [Managing the Toolbox](../misc/managing-the-toolbox.md)  
@@ -56,5 +56,5 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] **Toolbox** prov
  [How to: Control the Toolbox](../Topic/How%20to:%20Control%20the%20Toolbox.md)  
  Describes how to manage the **Toolbox** using the automation programming model.  
   
- [Extending Other Parts of Visual Studio](/visual-studio/extensibility/extending-other-parts-of-visual-studio)  
+ [Extending Other Parts of Visual Studio](/visualstudio/extensibility/extending-other-parts-of-visual-studio)  
  Explains how to use [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] services to create UI elements that match the rest of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].

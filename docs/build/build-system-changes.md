@@ -44,7 +44,7 @@ translation.priority.ht:
 The MSBuild system is used to build Visual C++ projects. However, in Visual Studio 2008 and earlier releases, the VCBuild system was used. Certain file types and concepts that depended on VCBuild either do not exist or are represented differently in the current system. This document discusses the differences in the current build system.  
   
 ## .vcproj is now .vcxproj  
- Project files no longer use the .vcproj file name extension. Visual Studio automatically converts project files that were created by an earlier release of Visual C++ to the format that is used by the current system. For more information about how to manually upgrade a project, see [/Upgrade (devenv.exe)](/visual-studio/ide/reference/upgrade-devenv-exe).  
+ Project files no longer use the .vcproj file name extension. Visual Studio automatically converts project files that were created by an earlier release of Visual C++ to the format that is used by the current system. For more information about how to manually upgrade a project, see [/Upgrade (devenv.exe)](/visualstudio/ide/reference/upgrade-devenv-exe).  
   
  In the current release, the file name extension for a project file is .vcxproj.  
   
@@ -81,7 +81,7 @@ Property=<value>;$(MyProperty)
 ## VC++ Directories Settings  
  Visual C++ directories settings are specified on the [VC++ Directories Property Page](../ide/vcpp-directories-property-page.md). In earlier releases of Visual Studio, directories settings apply per-user and the list of excluded directories is specified in the sysincl.dat file.  
   
- You cannot change the VC++ directories settings if you run [devenv /resetsettings](/visual-studio/ide/reference/resetsettings-devenv-exe) at the command line. You also cannot change the settings if you open the **Tools** menu, click **Import and Export Settings**, and then select the **Reset all settings** option.  
+ You cannot change the VC++ directories settings if you run [devenv /resetsettings](/visualstudio/ide/reference/resetsettings-devenv-exe) at the command line. You also cannot change the settings if you open the **Tools** menu, click **Import and Export Settings**, and then select the **Reset all settings** option.  
   
  Migrate VC++ directories settings from a .vssettings file that is created by an earlier release of Visual C++. Open the **Tools** menu, click **Import and Export Settings**, select **Import selected environment settings**, and then follow the directions in the wizard. Or when you start Visual Studio for the first time, on the **Choose Default Environment Settings** dialog box, select **Migrate my eligible settings from a previous version and apply them in addition to the default settings selected below**.  
   
