@@ -2,7 +2,6 @@
 title: "HSE_VERSION_INFO Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ This structure is pointed to by the `pVer` parameter in the `CHttpServer::GetExt
 ## Syntax  
   
 ```  
- 
-    typedef struct _HSE_VERSION_INFO {  
+typedef struct _HSE_VERSION_INFO {  
     DWORD dwExtensionVersion;  
     CHAR lpszExtensionDesc[HSE_MAX_EXT_DLL_NAME_LEN];  
 } HSE_VERSION_INFO, *LPHSE_VERSION_INFO;  

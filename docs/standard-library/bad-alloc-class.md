@@ -2,7 +2,6 @@
 title: "bad_alloc Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -61,7 +60,7 @@ virtual ~bad_alloc();
   
 ## Example  
   
-```  
+```cpp  
 // bad_alloc.cpp  
 // compile with: /EHsc  
 #include<new>  
@@ -90,6 +89,6 @@ bad allocation
  **Header:** \<new>  
   
 ## See Also
- [exception Class](../standard-library/exception-class1.md)  
+ [exception Class](../standard-library/exception-class.md)  
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

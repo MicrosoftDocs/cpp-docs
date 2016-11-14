@@ -2,7 +2,6 @@
 title: "How to: Pass a Delegate^ to a Native Function Expecting a Function Pointer | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,7 +2,6 @@
 title: "Access modifier can only be applied to either &#39;Get&#39; or Set&#39;, but not both | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

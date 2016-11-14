@@ -1,1 +1,0 @@
-      m_clrFillColor = RGB(0, 0xFF, 0);

@@ -2,7 +2,6 @@
 title: "LOGPEN Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `LOGPEN` structure defines the style, width, and color of a pen, a drawing o
 ## Syntax  
   
 ```  
- 
-    typedef struct tagLOGPEN {  /* lgpn */  
+typedef struct tagLOGPEN {  /* lgpn */  
     UINT lopnStyle;  
     POINT lopnWidth;  
     COLORREF lopnColor;  

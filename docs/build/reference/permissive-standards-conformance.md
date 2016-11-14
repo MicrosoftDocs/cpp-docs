@@ -2,7 +2,6 @@
 title: "-permissive- (Standards conformance) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/11/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,7 +2,6 @@
 title: "Attribute constant &#39;&lt;constantname&gt;&#39; cannot be the target of an assignment | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

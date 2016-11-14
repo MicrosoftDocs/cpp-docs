@@ -2,7 +2,6 @@
 title: "OLE Initialization | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,13 +46,8 @@ Before an application can use OLE system services, it must initialize the OLE sy
 ##  <a name="afxoleinit"></a>  AfxOleInit  
  Initializes OLE support for the application.  
   
-```  
- 
-BOOL  
-AFXAPI  
-AfxOleInit();
-
- 
+``` 
+BOOL AFXAPI AfxOleInit(); 
 ```  
   
 ### Return Value  

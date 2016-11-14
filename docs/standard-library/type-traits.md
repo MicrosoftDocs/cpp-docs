@@ -2,7 +2,6 @@
 title: "&lt;type_traits&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -218,7 +217,7 @@ using add_const_t = typename add_const<T>::type;
 |[conditional](../standard-library/conditional-class.md)|If the condition is true, produces the first specified type, otherwise the second specified type.|  
 |[decay](../standard-library/decay-class.md)|Produces the type as passed by value. Makes non-reference, non-const, or non-volatile type, or makes a pointer to type.|  
 |[enable_if](../standard-library/enable-if-class.md)|If the condition is true, produces the specified type, otherwise no type.|  
-|[result_of](../standard-library/result-of-class1.md)|Determines the return type of the callable type that takes the specified argument types.|  
+|[result_of](../standard-library/result-of-class.md)|Determines the return type of the callable type that takes the specified argument types.|  
 |[underlying_type](../standard-library/underlying-type-class.md)|Produces the underlying integral type for an enumeration type.|  
   
 ## See Also  

@@ -1,1 +1,0 @@
-   ON_UPDATE_COMMAND_UI(ID_FILE_SAVE, &CMyDoc::OnUpdateFileSave)

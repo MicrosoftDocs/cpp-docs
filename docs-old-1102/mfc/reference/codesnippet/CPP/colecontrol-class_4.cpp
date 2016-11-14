@@ -1,1 +1,0 @@
-      PX_Font(pPX, _T("Font"), *m_pMyFont, &DefaultFont);

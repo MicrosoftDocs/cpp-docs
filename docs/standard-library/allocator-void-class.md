@@ -2,7 +2,6 @@
 title: "allocator&lt;void&gt; Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,18 +48,17 @@ class allocator<void> {
     typedef void *pointer;
     typedef const void *const_pointer;
     typedef void value_type;
-template <class Other>
-struct rebind;
+    template <class Other>
+    struct rebind;
     allocator();
-allocator(const allocator<void>&);
+    allocator(const allocator<void>&);
 
-template <class Other>
-allocator(const allocator<Other>&);
+    template <class Other>
+    allocator(const allocator<Other>&);
 
-template <class Other>
-allocator<void>& operator=(const allocator<Other>&);
-
- };
+    template <class Other>
+    allocator<void>& operator=(const allocator<Other>&);
+};
 ```  
   
 ## Remarks  

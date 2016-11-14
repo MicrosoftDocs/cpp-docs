@@ -2,7 +2,6 @@
 title: "complex Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -144,7 +143,7 @@ complex(const complex& right);
   
 ### Example  
   
-```  
+```cpp  
 // complex_complex.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -204,7 +203,7 @@ T imag(const T& right);
   
 ### Example  
   
-```  
+```cpp  
 // complex_imag.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -257,7 +256,7 @@ complex<Type>& operator*=(const complex<Type>& right);
   
 ### Example  
   
-```  
+```cpp  
 // complex_op_me.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -337,7 +336,7 @@ complex<Type>& operator+=(const complex<Type>& right);
   
 ### Example  
   
-```  
+```cpp  
 // complex_op_pe.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -439,7 +438,7 @@ complex<Type>& operator-=(const complex<Type>& complexNum);
   
 ### Example  
   
-```  
+```cpp  
 // complex_op_se.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -543,7 +542,7 @@ complex<Type>& operator/=(const complex<Type>& complexNum);
   
 ### Example  
   
-```  
+```cpp  
 // complex_op_de.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -638,7 +637,7 @@ complex<Type>& operator=(const Type& right);
   
 ### Example  
   
-```  
+```cpp  
 // complex_op_as.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -712,7 +711,7 @@ T real(const T& right);
   
 ### Example  
   
-```  
+```cpp  
 // complex_class_real.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -754,7 +753,7 @@ typedef Type value_type;
   
 ### Example  
   
-```  
+```cpp  
 // complex_valuetype.cpp  
 // compile with: /EHsc  
 #include <complex>  

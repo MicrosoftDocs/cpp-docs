@@ -2,7 +2,6 @@
 title: "raw_storage_iterator Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -123,7 +122,7 @@ raw_storage_iterator<ForwardIterator, Type>& operator*();
   
 ### Example  
   
-```  
+```cpp  
 // raw_storage_iterator_op_deref.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -194,7 +193,7 @@ raw_storage_iterator<ForwardIterator, Type>& operator=(
   
 ### Example  
   
-```  
+```cpp  
 // raw_storage_iterator_op_assign.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -264,7 +263,7 @@ raw_storage_iterator<ForwardIterator, Type> operator++(int);
   
 ### Example  
   
-```  
+```cpp  
 // raw_storage_iterator_op_incr.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -307,7 +306,7 @@ explicit raw_storage_iterator(ForwardIterator first);
   
 ### Example  
   
-```  
+```cpp  
 // raw_storage_iterator_ctor.cpp  
 // compile with: /EHsc /W3  
 #include <iostream>  

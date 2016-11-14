@@ -2,7 +2,6 @@
 title: "basic_filebuf Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -322,7 +321,7 @@ bool is_open() const;
   
 ### Example  
   
-```  
+```cpp  
 // basic_filebuf_is_open.cpp  
 // compile with: /EHsc  
 #include <fstream>  

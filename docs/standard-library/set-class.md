@@ -2,7 +2,6 @@
 title: "set Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -186,7 +185,7 @@ iterator begin();
   
 ### Example  
   
-```  
+```cpp  
 // set_begin.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -282,7 +281,7 @@ void clear();
   
 ### Example  
   
-```  
+```cpp  
 // set_clear.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -344,7 +343,7 @@ typedef typename allocator_type::const_reference const_reference;
   
 ### Example  
   
-```  
+```cpp  
 // set_const_ref.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -458,7 +457,7 @@ const_reverse_iterator crbegin() const;
   
 ### Example  
   
-```  
+```cpp  
 // set_crbegin.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -503,7 +502,7 @@ const_reverse_iterator crend() const;
   
 ### Example  
   
-```  
+```cpp  
 // set_crend.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -539,7 +538,7 @@ typedef typename allocator_type::difference_type difference_type;
   
 ### Example  
   
-```  
+```cpp  
 // set_diff_type.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -763,7 +762,7 @@ bool empty() const;
   
 ### Example  
   
-```  
+```cpp  
 // set_empty.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -833,7 +832,7 @@ pair <iterator, iterator> equal_range (const Key& key);
   
 ### Example  
   
-```  
+```cpp  
 // set_equal_range.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1104,7 +1103,7 @@ allocator_type get_allocator() const;
   
 ### Example  
   
-```  
+```cpp  
 // set_get_allocator.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1366,7 +1365,7 @@ key_compare key_comp() const;
   
 ### Example  
   
-```  
+```cpp  
 // set_key_comp.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1467,7 +1466,7 @@ iterator lower_bound(const Key& key);
   
 ### Example  
   
-```  
+```cpp  
 // set_lower_bound.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1526,7 +1525,7 @@ size_type max_size() const;
   
 ### Example  
   
-```  
+```cpp  
 // set_max_size.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1569,7 +1568,7 @@ set& operator=(set&& right);
   
 ### Example  
   
-```  
+```cpp  
 // set_operator_as.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1637,7 +1636,7 @@ reverse_iterator rbegin();
   
 ### Example  
   
-```  
+```cpp  
 // set_rbegin.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1698,7 +1697,7 @@ typedef typename allocator_type::reference reference;
   
 ### Example  
   
-```  
+```cpp  
 // set_reference.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1745,7 +1744,7 @@ reverse_iterator rend();
   
 ### Example  
   
-```  
+```cpp  
 // set_rend.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1887,7 +1886,7 @@ set(
   
 ### Example  
   
-```  
+```cpp  
 // set_set.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -2010,7 +2009,7 @@ size_type size() const;
   
 ### Example  
   
-```  
+```cpp  
 // set_size.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -2064,7 +2063,7 @@ void swap(
   
 ### Example  
   
-```  
+```cpp  
 // set_swap.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -2130,7 +2129,7 @@ iterator upper_bound(const Key& key);
   
 ### Example  
   
-```  
+```cpp  
 // set_upper_bound.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -2200,7 +2199,7 @@ value_compare value_comp() const;
   
 ### Example  
   
-```  
+```cpp  
 // set_value_comp.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -2282,7 +2281,7 @@ typedef Key value_type;
   
 ### Example  
   
-```  
+```cpp  
 // set_value_type.cpp  
 // compile with: /EHsc  
 #include <set>  

@@ -2,7 +2,6 @@
 title: "tuple_element Class &lt;utility&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -88,7 +87,7 @@ using tuple_element_t = typename tuple_element<Index, Tuple>::type;
   
 ## Example  
   
-```  
+```cpp  
 #include <utility>   
 #include <iostream>   
   

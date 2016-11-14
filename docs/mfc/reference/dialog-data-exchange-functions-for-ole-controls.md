@@ -2,7 +2,6 @@
 title: "Dialog Data Exchange Functions for OLE Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -59,18 +58,12 @@ This topic lists the DDX_OC functions used to exchange data between a property o
 ##  <a name="ddx_ocbool"></a>  DDX_OCBool  
  The `DDX_OCBool` function manages the transfer of **BOOL** data between a property of an OLE control in a dialog box, form view, or control view object and a **BOOL** data member of the dialog box, form view, or control view object.  
   
-```  
- 
+```   
 void AFXAPI DDX_OCBool(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DISPID 
-dispid  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
+    DISPID dispid,  
     BOOL& value);
-
- 
 ```  
   
 ### Parameters  
@@ -92,18 +85,12 @@ dispid  ,
 ##  <a name="ddx_ocboolro"></a>  DDX_OCBoolRO  
  The `DDX_OCBoolRO` function manages the transfer of **BOOL** data between a read-only property of an OLE control in a dialog box, form view, or control view object and a **BOOL** data member of the dialog box, form view, or control view object.  
   
-```  
- 
+```   
 void AFXAPI DDX_OCBoolRO(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DISPID 
-dispid  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
+    DISPID dispid,  
     BOOL& value);
-
- 
 ```  
   
 ### Parameters  
@@ -125,18 +112,12 @@ dispid  ,
 ##  <a name="ddx_occolor"></a>  DDX_OCColor  
  The `DDX_OCColor` function manages the transfer of **OLE_COLOR** data between a property of an OLE control in a dialog box, form view, or control view object and a **OLE_COLOR** data member of the dialog box, form view, or control view object.  
   
-```  
- 
+```   
 void AFXAPI DDX_OCColor(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DISPID 
-dispid  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
+    DISPID dispid,  
     OLE_COLOR& value);
-
- 
 ```  
   
 ### Parameters  
@@ -158,18 +139,12 @@ dispid  ,
 ##  <a name="ddx_occolorro"></a>  DDX_OCColorRO  
  The `DDX_OCColorRO` function manages the transfer of **OLE_COLOR** data between a read-only property of an OLE control in a dialog box, form view, or control view object and a **OLE_COLOR** data member of the dialog box, form view, or control view object.  
   
-```  
- 
+```   
 void AFXAPI DDX_OCColorRO(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DISPID 
-dispid  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
+    DISPID dispid,  
     OLE_COLOR& value);
-
- 
 ```  
   
 ### Parameters  
@@ -191,27 +166,18 @@ dispid  ,
 ##  <a name="ddx_ocfloat"></a>  DDX_OCFloat  
  The `DDX_OCFloat` function manages the transfer of **float** (or **double**) data between a property of an OLE control in a dialog box, form view, or control view object and a **float** (or **double**) data member of the dialog box, form view, or control view object.  
   
-```  
- 
+```   
 void AFXAPI DDX_OCFloat(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DISPID 
-dispid  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
+    DISPID dispid,  
     float& value);
 
 void AFXAPI DDX_OCFloat(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DISPID 
-dispid  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
+    DISPID dispid,  
     double& value);
-
- 
 ```  
   
 ### Parameters  
@@ -233,27 +199,18 @@ dispid  ,
 ##  <a name="ddx_ocfloatro"></a>  DDX_OCFloatRO  
  The `DDX_OCFloatRO` function manages the transfer of **float** (or **double**) data between a read-only property of an OLE control in a dialog box, form view, or control view object and a **float** (or **double**) data member of the dialog box, form view, or control view object.  
   
-```  
- 
+```   
 void AFXAPI DDX_OCFloatRO(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DISPID 
-dispid  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
+    DISPID dispid,  
     float& value);
 
 void AFXAPI DDX_OCFloatRO(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DISPID 
-dispid  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
+    DISPID dispid,  
     double& value);
-
- 
 ```  
   
 ### Parameters  
@@ -275,27 +232,18 @@ dispid  ,
 ##  <a name="ddx_ocint"></a>  DDX_OCInt  
  The `DDX_OCInt` function manages the transfer of `int` (or **long**) data between a property of an OLE control in a dialog box, form view, or control view object and a `int` (or **long**) data member of the dialog box, form view, or control view object.  
   
-```  
- 
+```   
 void AFXAPI DDX_OCInt(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DISPID 
-dispid  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
+    DISPID dispid,  
     int& value);
 
 void AFXAPI DDX_OCInt(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DISPID 
-dispid  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
+    DISPID dispid,  
     long& value);
-
- 
 ```  
   
 ### Parameters  
@@ -317,27 +265,18 @@ dispid  ,
 ##  <a name="ddx_ocintro"></a>  DDX_OCIntRO  
  The `DDX_OCIntRO` function manages the transfer of `int` (or **long**) data between a read-only property of an OLE control in a dialog box, form view, or control view object and a `int` (or **long**) data member of the dialog box, form view, or control view object.  
   
-```  
- 
+```   
 void AFXAPI DDX_OCIntRO(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DISPID 
-dispid  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
+    DISPID dispid,  
     int& value);
 
 void AFXAPI DDX_OCIntRO(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DISPID 
-dispid  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
+    DISPID dispid,  
     long& value);
-
- 
 ```  
   
 ### Parameters  
@@ -359,18 +298,12 @@ dispid  ,
 ##  <a name="ddx_ocshort"></a>  DDX_OCShort  
  The `DDX_OCShort` function manages the transfer of short data between a property of an OLE control in a dialog box, form view, or control view object and a short data member of the dialog box, form view, or control view object.  
   
-```  
- 
+```   
 void AFXAPI DDX_OCShort(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DISPID 
-dispid  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
+    DISPID dispid,  
     short& value);
-
- 
 ```  
   
 ### Parameters  
@@ -392,18 +325,12 @@ dispid  ,
 ##  <a name="ddx_ocshortro"></a>  DDX_OCShortRO  
  The `DDX_OCShortRO` function manages the transfer of short data between a read-only property of an OLE control in a dialog box, form view, or control view object and a short data member of the dialog box, form view, or control view object.  
   
-```  
- 
+```   
 void AFXAPI DDX_OCShortRO(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DISPID 
-dispid  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
+    DISPID dispid,  
     short& value);
-
- 
 ```  
   
 ### Parameters  
@@ -425,18 +352,12 @@ dispid  ,
 ##  <a name="ddx_octext"></a>  DDX_OCText  
  The **DDX_OCText** function manages the transfer of **CString** data between a property of an OLE control in a dialog box, form view, or control view object and a **CString** data member of the dialog box, form view, or control view object.  
   
-```  
- 
+```   
 void AFXAPI DDX_OCText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DISPID 
-dispid  ,  
-    CString& value);
-
- 
+    CDataExchange* pDX,  
+    int nIDC,  
+    DISPID dispid,  
+    CString& value); 
 ```  
   
 ### Parameters  
@@ -459,17 +380,11 @@ dispid  ,
  The `DDX_OCTextRO` function manages the transfer of `CString` data between a read-only property of an OLE control in a dialog box, form view, or control view object and a `CString` data member of the dialog box, form view, or control view object.  
   
 ```  
- 
 void AFXAPI DDX_OCTextRO(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DISPID 
-dispid  ,  
-    CString& value);
-
- 
+    CDataExchange* pDX,  
+    int nIDC,  
+    DISPID dispid,  
+    CString& value); 
 ```  
   
 ### Parameters  

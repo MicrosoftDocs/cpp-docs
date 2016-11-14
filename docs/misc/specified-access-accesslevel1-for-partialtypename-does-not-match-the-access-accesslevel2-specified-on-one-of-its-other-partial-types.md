@@ -2,7 +2,6 @@
 title: "Specified access &#39;&lt;accesslevel1&gt;&#39; for &#39;&lt;partialtypename&gt;&#39; does not match the access &#39;&lt;accesslevel2&gt;&#39; specified on one of its other partial types | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

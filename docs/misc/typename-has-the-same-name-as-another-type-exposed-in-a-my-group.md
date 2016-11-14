@@ -2,7 +2,6 @@
 title: "&#39;&lt;typename&gt;&#39; has the same name as another type exposed in a &#39;My&#39; group | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

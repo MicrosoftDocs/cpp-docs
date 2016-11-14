@@ -2,7 +2,6 @@
 title: "&#39;Microsoft.VisualBasic.ComClassAttribute&#39; is specified for class &#39;&lt;classname&gt;&#39; but it has no public members that can be exposed to COM; therefore no COM interfaces are generated | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

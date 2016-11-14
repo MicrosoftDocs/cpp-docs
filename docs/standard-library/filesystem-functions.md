@@ -2,7 +2,6 @@
 title: "&lt;filesystem&gt; functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -10,86 +9,86 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "FILESYSTEM/std::experimental::filesystem::v1::absolute"
-  - "std::experimental::filesystem::v1::absolute"
-  - "FILESYSTEM/std::experimental::filesystem::v1::canonical"
-  - "std::experimental::filesystem::v1::canonical"
-  - "FILESYSTEM/std::experimental::filesystem::v1::copy"
-  - "std::experimental::filesystem::v1::copy"
-  - "FILESYSTEM/std::experimental::filesystem::v1::copy_file"
-  - "std::experimental::filesystem::v1::copy_file"
-  - "FILESYSTEM/std::experimental::filesystem::v1::copy_symlink"
-  - "std::experimental::filesystem::v1::copy_symlink"
-  - "FILESYSTEM/std::experimental::filesystem::v1::create_directories"
-  - "std::experimental::filesystem::v1::create_directories"
-  - "FILESYSTEM/std::experimental::filesystem::v1::create_directory"
-  - "std::experimental::filesystem::v1::create_directory"
-  - "FILESYSTEM/std::experimental::filesystem::v1::create_directory_symlink"
-  - "std::experimental::filesystem::v1::create_directory_symlink"
-  - "FILESYSTEM/std::experimental::filesystem::v1::create_hard_link"
-  - "std::experimental::filesystem::v1::create_hard_link"
-  - "FILESYSTEM/std::experimental::filesystem::v1::create_symlink"
-  - "std::experimental::filesystem::v1::create_symlink"
-  - "FILESYSTEM/std::experimental::filesystem::v1::current_path"
-  - "std::experimental::filesystem::v1::current_path"
-  - "FILESYSTEM/std::experimental::filesystem::v1::equivalent"
-  - "std::experimental::filesystem::v1::equivalent"
-  - "FILESYSTEM/std::experimental::filesystem::v1::exists"
-  - "std::experimental::filesystem::v1::exists"
-  - "FILESYSTEM/std::experimental::filesystem::v1::file_size"
-  - "std::experimental::filesystem::v1::file_size"
-  - "FILESYSTEM/std::experimental::filesystem::v1::hard_link_count"
-  - "std::experimental::filesystem::v1::hard_link_count"
-  - "FILESYSTEM/std::experimental::filesystem::v1::hash_value"
-  - "std::experimental::filesystem::v1::hash_value"
-  - "FILESYSTEM/std::experimental::filesystem::v1::is_block_file"
-  - "std::experimental::filesystem::v1::is_block_file"
-  - "FILESYSTEM/std::experimental::filesystem::v1::is_character_file"
-  - "std::experimental::filesystem::v1::is_character_file"
-  - "FILESYSTEM/std::experimental::filesystem::v1::is_directory"
-  - "std::experimental::filesystem::v1::is_directory"
-  - "FILESYSTEM/std::experimental::filesystem::v1::is_empty"
-  - "std::experimental::filesystem::v1::is_empty"
-  - "FILESYSTEM/std::experimental::filesystem::v1::is_fifo"
-  - "std::experimental::filesystem::v1::is_fifo"
-  - "FILESYSTEM/std::experimental::filesystem::v1::is_other"
-  - "std::experimental::filesystem::v1::is_other"
-  - "FILESYSTEM/std::experimental::filesystem::v1::is_regular_file"
-  - "std::experimental::filesystem::v1::is_regular_file"
-  - "FILESYSTEM/std::experimental::filesystem::v1::is_socket"
-  - "std::experimental::filesystem::v1::is_socket"
-  - "FILESYSTEM/std::experimental::filesystem::v1::is_symlink"
-  - "std::experimental::filesystem::v1::is_symlink"
-  - "FILESYSTEM/std::experimental::filesystem::v1::last_write_time"
-  - "std::experimental::filesystem::v1::last_write_time"
-  - "FILESYSTEM/std::experimental::filesystem::v1::permissions"
-  - "std::experimental::filesystem::v1::permissions"
-  - "FILESYSTEM/std::experimental::filesystem::v1::read_symlink"
-  - "std::experimental::filesystem::v1::read_symlink"
-  - "FILESYSTEM/std::experimental::filesystem::v1::remove"
-  - "std::experimental::filesystem::v1::remove"
-  - "FILESYSTEM/std::experimental::filesystem::v1::remove_all"
-  - "std::experimental::filesystem::v1::remove_all"
-  - "FILESYSTEM/std::experimental::filesystem::v1::rename"
-  - "std::experimental::filesystem::v1::rename"
-  - "FILESYSTEM/std::experimental::filesystem::v1::resize_file"
-  - "std::experimental::filesystem::v1::resize_file"
-  - "FILESYSTEM/std::experimental::filesystem::v1::space"
-  - "std::experimental::filesystem::v1::space"
-  - "FILESYSTEM/std::experimental::filesystem::v1::status"
-  - "std::experimental::filesystem::v1::status"
-  - "FILESYSTEM/std::experimental::filesystem::v1::status_known"
-  - "std::experimental::filesystem::v1::status_known"
-  - "FILESYSTEM/std::experimental::filesystem::v1::swap"
-  - "std::experimental::filesystem::v1::swap"
-  - "FILESYSTEM/std::experimental::filesystem::v1::symlink_status"
-  - "std::experimental::filesystem::v1::symlink_status"
-  - "FILESYSTEM/std::experimental::filesystem::v1::system_complete"
-  - "std::experimental::filesystem::v1::system_complete"
-  - "FILESYSTEM/std::experimental::filesystem::v1::temp_directory_path"
-  - "std::experimental::filesystem::v1::temp_directory_path"
-  - "FILESYSTEM/std::experimental::filesystem::v1::u8path"
-  - "std::experimental::filesystem::v1::u8path"
+  - "FILESYSTEM/std::experimental::filesystem::absolute"
+  - "std::experimental::filesystem::absolute"
+  - "FILESYSTEM/std::experimental::filesystem::canonical"
+  - "std::experimental::filesystem::canonical"
+  - "FILESYSTEM/std::experimental::filesystem::copy"
+  - "std::experimental::filesystem::copy"
+  - "FILESYSTEM/std::experimental::filesystem::copy_file"
+  - "std::experimental::filesystem::copy_file"
+  - "FILESYSTEM/std::experimental::filesystem::copy_symlink"
+  - "std::experimental::filesystem::copy_symlink"
+  - "FILESYSTEM/std::experimental::filesystem::create_directories"
+  - "std::experimental::filesystem::create_directories"
+  - "FILESYSTEM/std::experimental::filesystem::create_directory"
+  - "std::experimental::filesystem::create_directory"
+  - "FILESYSTEM/std::experimental::filesystem::create_directory_symlink"
+  - "std::experimental::filesystem::create_directory_symlink"
+  - "FILESYSTEM/std::experimental::filesystem::create_hard_link"
+  - "std::experimental::filesystem::create_hard_link"
+  - "FILESYSTEM/std::experimental::filesystem::create_symlink"
+  - "std::experimental::filesystem::create_symlink"
+  - "FILESYSTEM/std::experimental::filesystem::current_path"
+  - "std::experimental::filesystem::current_path"
+  - "FILESYSTEM/std::experimental::filesystem::equivalent"
+  - "std::experimental::filesystem::equivalent"
+  - "FILESYSTEM/std::experimental::filesystem::exists"
+  - "std::experimental::filesystem::exists"
+  - "FILESYSTEM/std::experimental::filesystem::file_size"
+  - "std::experimental::filesystem::file_size"
+  - "FILESYSTEM/std::experimental::filesystem::hard_link_count"
+  - "std::experimental::filesystem::hard_link_count"
+  - "FILESYSTEM/std::experimental::filesystem::hash_value"
+  - "std::experimental::filesystem::hash_value"
+  - "FILESYSTEM/std::experimental::filesystem::is_block_file"
+  - "std::experimental::filesystem::is_block_file"
+  - "FILESYSTEM/std::experimental::filesystem::is_character_file"
+  - "std::experimental::filesystem::is_character_file"
+  - "FILESYSTEM/std::experimental::filesystem::is_directory"
+  - "std::experimental::filesystem::is_directory"
+  - "FILESYSTEM/std::experimental::filesystem::is_empty"
+  - "std::experimental::filesystem::is_empty"
+  - "FILESYSTEM/std::experimental::filesystem::is_fifo"
+  - "std::experimental::filesystem::is_fifo"
+  - "FILESYSTEM/std::experimental::filesystem::is_other"
+  - "std::experimental::filesystem::is_other"
+  - "FILESYSTEM/std::experimental::filesystem::is_regular_file"
+  - "std::experimental::filesystem::is_regular_file"
+  - "FILESYSTEM/std::experimental::filesystem::is_socket"
+  - "std::experimental::filesystem::is_socket"
+  - "FILESYSTEM/std::experimental::filesystem::is_symlink"
+  - "std::experimental::filesystem::is_symlink"
+  - "FILESYSTEM/std::experimental::filesystem::last_write_time"
+  - "std::experimental::filesystem::last_write_time"
+  - "FILESYSTEM/std::experimental::filesystem::permissions"
+  - "std::experimental::filesystem::permissions"
+  - "FILESYSTEM/std::experimental::filesystem::read_symlink"
+  - "std::experimental::filesystem::read_symlink"
+  - "FILESYSTEM/std::experimental::filesystem::remove"
+  - "std::experimental::filesystem::remove"
+  - "FILESYSTEM/std::experimental::filesystem::remove_all"
+  - "std::experimental::filesystem::remove_all"
+  - "FILESYSTEM/std::experimental::filesystem::rename"
+  - "std::experimental::filesystem::rename"
+  - "FILESYSTEM/std::experimental::filesystem::resize_file"
+  - "std::experimental::filesystem::resize_file"
+  - "FILESYSTEM/std::experimental::filesystem::space"
+  - "std::experimental::filesystem::space"
+  - "FILESYSTEM/std::experimental::filesystem::status"
+  - "std::experimental::filesystem::status"
+  - "FILESYSTEM/std::experimental::filesystem::status_known"
+  - "std::experimental::filesystem::status_known"
+  - "FILESYSTEM/std::experimental::filesystem::swap"
+  - "std::experimental::filesystem::swap"
+  - "FILESYSTEM/std::experimental::filesystem::symlink_status"
+  - "std::experimental::filesystem::symlink_status"
+  - "FILESYSTEM/std::experimental::filesystem::system_complete"
+  - "std::experimental::filesystem::system_complete"
+  - "FILESYSTEM/std::experimental::filesystem::temp_directory_path"
+  - "std::experimental::filesystem::temp_directory_path"
+  - "FILESYSTEM/std::experimental::filesystem::u8path"
+  - "std::experimental::filesystem::u8path"
 dev_langs: 
   - "C++"
 ms.assetid: be3cb821-4728-4d47-ab78-858fa8aa5045
@@ -144,15 +143,9 @@ const recursive_directory_iterator&
 ## canonical  
   
 ```  
-path canonical(const path& pval,
-    const path& base = current_path());
-
-path canonical(const path& pval,  
-    error_code& ec);
-
-path canonical(const path& pval,
-    const path& base,  
-    error_code& ec);
+path canonical(const path& pval, const path& base = current_path());
+path canonical(const path& pval, error_code& ec);
+path canonical(const path& pval, const path& base, error_code& ec);
 ```  
   
  The functions all form an absolute pathname pabs = absolute(pval, base) (or pabs = absolute(pval) for the overload with no base parameter), then reduce it to a canonical form in the following sequence of steps:  
@@ -168,20 +161,10 @@ path canonical(const path& pval,
 ## copy  
   
 ```  
-void copy(const path& from,
-    const path& to);
-
-void copy(const path& from,
-    const path& to,  
-    error_code& ec) noexcept;  
-void copy(const path& from,
-    const path& to,
-    copy_options opts);
-
-void copy(const path& from,
-    const path& to,
-    copy_options opts,  
-    error_code& ec) noexcept;  
+void copy(const path& from, const path& to);
+void copy(const path& from, const path& to, error_code& ec) noexcept;  
+void copy(const path& from, const path& to, copy_options opts);
+void copy(const path& from, const path& to, copy_options opts, error_code& ec) noexcept;  
 ```  
   
  The functions all possibly copy or link one or more files at `from` to `to` under control of `opts`, which is taken as copy_options::none for the overloads with no `opts` parameter. `opts` shall contain at most one of:  
@@ -247,20 +230,10 @@ void copy(const path& from,
 ## copy\_file  
   
 ```  
-bool copy_file(const path& from,
-    const path& to);
-
-bool copy_file(const path& from,
-    const path& to,  
-    error_code& ec) noexcept;  
-bool copy_file(const path& from,
-    const path& to,
-    copy_options opts);
-
-bool copy_file(const path& from,
-    const path& to,
-    copy_options opts,  
-    error_code& ec) noexcept;  
+bool copy_file(const path& from, const path& to);
+bool copy_file(const path& from, const path& to, error_code& ec) noexcept;  
+bool copy_file(const path& from, const path& to, copy_options opts);
+bool copy_file(const path& from, const path& to, copy_options opts, error_code& ec) noexcept;  
 ```  
   
  The functions all possibly copy the file at `from` to `to` under control of `opts`, which is taken as copy\_options::none for the overloads with no `opts` parameter. `opts` shall contain at most one of skip\_existing, overwrite\_existing, or update\_existing.  
@@ -274,12 +247,8 @@ bool copy_file(const path& from,
 ## copy\_symlink  
   
 ```  
-void copy_symlink(const path& from,
-    const path& to);
-
-void copy_symlink(const path& from,
-    const path& to,  
-    error_code& ec) noexcept;  
+void copy_symlink(const path& from, const path& to);
+void copy_symlink(const path& from, const path& to, error_code& ec) noexcept;  
 ```  
   
  If is\_directory\(from\) the function calls create\_directory\_symlink\(from, to\). Otherwise, it calls create\_symlink\(from, to\).  
@@ -288,9 +257,7 @@ void copy_symlink(const path& from,
   
 ```  
 bool create_directories(const path& pval);
-
-bool create_directories(const path& pval,  
-    error_code& ec) noexcept;  
+bool create_directories(const path& pval, error_code& ec) noexcept;  
 ```  
   
  For a pathname such as a\/b\/c the function creates directories a and a\/b as needed so that it can create the directory a\/b\/c as needed. It returns true only if it actually creates the directory `pval`.  
@@ -300,14 +267,9 @@ bool create_directories(const path& pval,
 ```  
 bool create_directory(const path& pval);
 
-bool create_directory(const path& pval,  
-    error_code& ec) noexcept;  
-bool create_directory(const path& pval,
-    const path& attr);
-
-bool create_directory(const path& pval,
-    const path& attr,  
-    error_code& ec) noexcept;  
+bool create_directory(const path& pval, error_code& ec) noexcept;  
+bool create_directory(const path& pval, const path& attr);
+bool create_directory(const path& pval, const path& attr, error_code& ec) noexcept;  
 ```  
   
  The function creates the directory `pval` as needed. It returns true only if it actually creates the directory `pval`, in which case it copies permissions from the existing file `attr`, or uses perms::all for the overloads with no `attr` parameter.  
@@ -315,12 +277,8 @@ bool create_directory(const path& pval,
 ## create\_directory\_symlink  
   
 ```  
-void create_directory_symlink(const path& to,
-    const path& link);
-
-void create_directory_symlink(const path& to,
-    const path& link),  
-    error_code& ec) noexcept;  
+void create_directory_symlink(const path& to, const path& link);
+void create_directory_symlink(const path& to, const path& link, error_code& ec) noexcept;  
 ```  
   
  The function creates link as a symlink to the directory `to`.  
@@ -328,12 +286,8 @@ void create_directory_symlink(const path& to,
 ## create\_hard\_link  
   
 ```  
-void create_hard_link(const path& to,
-    const path& link);
-
-void create_hard_link(const path& to,
-    const path& link),  
-    error_code& ec) noexcept;  
+void create_hard_link(const path& to,  const path& link);
+void create_hard_link(const path& to, const path& link, error_code& ec) noexcept;  
 ```  
   
  The function creates link as a hard link to the directory or file `to`.  
@@ -341,12 +295,9 @@ void create_hard_link(const path& to,
 ## create\_symlink  
   
 ```  
-void create_symlink(const path& to,
-    const path& link);
+void create_symlink(const path& to,  const path& link);
 
-void create_symlink(const path& to,
-    const path& link),  
-    error_code& ec) noexcept;  
+void create_symlink(const path& to, const path& link, error_code& ec) noexcept;  
 ```  
   
  The function creates `link` as a symlink to the file `to`.  
@@ -356,13 +307,11 @@ void create_symlink(const path& to,
 ```  
 path current_path();
 
-path current_path(
-    error_code& ec);
+path current_path(error_code& ec);
 
 void current_path(const path& pval);
 
-void current_path(const path& pval,  
-    error_code& ec) noexcept;  
+void current_path(const path& pval, error_code& ec) noexcept;  
 ```  
   
  The functions with no parameter `pval` return the pathname for the current directory. The remaining functions set the current directory to `pval`.  
@@ -371,8 +320,7 @@ void current_path(const path& pval,
   
 ```  
 directory_iterator& end(const directory_iterator& iter) noexcept;  
-recursive_directory_iterator& 
-    end(const recursive_directory_iterator& iter) noexcept;  
+recursive_directory_iterator& end(const recursive_directory_iterator& iter) noexcept;  
 ```  
   
  The first function returns directory\_iterator\(\) and the second function returns recursive\_directory\_iterator\(\)  
@@ -380,12 +328,9 @@ recursive_directory_iterator&
 ## equivalent  
   
 ```  
-bool equivalent(const path& left,
-    const path& right);
+bool equivalent(const path& left, const path& right);
 
-bool equivalent(const path& left,
-    const path& right,  
-    error_code& ec) noexcept;  
+bool equivalent(const path& left, const path& right, error_code& ec) noexcept;  
 ```  
   
  The functions return true only if `left` and `right` designate the same filesystem entity.  
@@ -396,8 +341,7 @@ bool equivalent(const path& left,
 bool exists(file_status stat) noexcept;  
 bool exists(const path& pval);
 
-bool exists(const path& pval,  
-    error_code& ec) noexcept;  
+bool exists(const path& pval, error_code& ec) noexcept;  
 ```  
   
  The first function returns status\_known && stat.type\(\) \!\= file\_not\_found. The second and third functions return exists\(status\(pval\)\).  
@@ -407,8 +351,7 @@ bool exists(const path& pval,
 ```  
 uintmax_t file_size(const path& pval);
 
-uintmax_t file_size(const path& pval,  
-    error_code& ec) noexcept;  
+uintmax_t file_size(const path& pval, error_code& ec) noexcept;  
 ```  
   
  The functions return the size in bytes of the file designated by `pval`, if exists\(pval\) && is\_regular\_file\(pval\) and the file size can be determined. Otherwise they report an error and return uintmax\_t\(\-1\).  
@@ -418,8 +361,7 @@ uintmax_t file_size(const path& pval,
 ```  
 uintmax_t hard_link_count(const path& pval);
 
-uintmax_t hard_link_count(const path& pval,  
-    error_code& ec) noexcept;  
+uintmax_t hard_link_count(const path& pval, error_code& ec) noexcept;  
 ```  
   
  The function returns the number of hard links for `pval`, or \-1 if an error occurs.  
@@ -438,8 +380,7 @@ size_t hash_value(const path& pval) noexcept;
 bool is_block_file(file_status stat) noexcept;  
 bool is_block_file(const path& pval);
 
-bool is_block_file(const path& pval,  
-    error_code& ec) noexcept;  
+bool is_block_file(const path& pval, error_code& ec) noexcept;  
 ```  
   
  The first function returns stat.type\(\) \=\= file\_type::block. The remaining functions return is\_block\_file\(status\(pval\)\).  
@@ -451,8 +392,7 @@ bool is_block_file(const path& pval,
 bool is_character_file(file_status stat) noexcept;  
 bool is_character_file(const path& pval);
 
-bool is_character_file(const path& pval,  
-    error_code& ec) noexcept;  
+bool is_character_file(const path& pval, error_code& ec) noexcept;  
 ```  
   
  The first function returns stat.type\(\) \=\= file\_type::character. The remaining functions return is\_character\_file\(status\(pval\)\).  
@@ -464,8 +404,7 @@ bool is_character_file(const path& pval,
 bool is_directory(file_status stat) noexcept;  
 bool is_directory(const path& pval);
 
-bool is_directory(const path& pval,  
-    error_code& ec) noexcept;  
+bool is_directory(const path& pval, error_code& ec) noexcept;  
 ```  
   
  The first function returns stat.type\(\) \=\= file\_type::directory. The remaining functions return is\_directory\_file\(status\(pval\)\).  
@@ -476,9 +415,7 @@ bool is_directory(const path& pval,
  
 bool is_empty(file_status stat) noexcept;  
 bool is_empty(const path& pval);
-
-bool is_empty(const path& pval,  
-    error_code& ec) noexcept;  
+bool is_empty(const path& pval, error_code& ec) noexcept;  
 ```  
   
  If is\_directory\(pval\) then the function returns directory\_iterator\(pval\) \=\= directory\_iterator\(\); otherwise it returns file\_size\(pval\) \=\= 0.  
@@ -488,9 +425,7 @@ bool is_empty(const path& pval,
 ```  
 bool is_fifo(file_status stat) noexcept;  
 bool is_fifo(const path& pval);
-
-bool is_fifo(const path& pval,  
-    error_code& ec) noexcept;  
+bool is_fifo(const path& pval, error_code& ec) noexcept;  
 ```  
   
  The first function returns stat.type\(\) \=\= file\_type::fifo. The remaining functions return is\_fifo\(status\(pval\)\).  
@@ -500,9 +435,7 @@ bool is_fifo(const path& pval,
 ```  
 bool is_other(file_status stat) noexcept;  
 bool is_other(const path& pval);
-
-bool is_other(const path& pval,  
-    error_code& ec) noexcept;  
+bool is_other(const path& pval, error_code& ec) noexcept;  
 ```  
   
  The first function returns stat.type\(\) \=\= file\_type::other. The remaining functions return is\_other\(status\(pval\)\).  
@@ -513,9 +446,7 @@ bool is_other(const path& pval,
  
 bool is_regular_file(file_status stat) noexcept;  
 bool is_regular_file(const path& pval);
-
-bool is_regular_file(const path& pval,  
-    error_code& ec) noexcept;  
+bool is_regular_file(const path& pval, error_code& ec) noexcept;  
 ```  
   
  The first function returns stat.type\(\) \=\= file\_type::regular. The remaining functions return is\_regular\_file\(status\(pval\)\).  
@@ -526,9 +457,7 @@ bool is_regular_file(const path& pval,
  
 bool is_socket(file_status stat) noexcept;  
 bool is_socket(const path& pval);
-
-bool is_socket(const path& pval,  
-    error_code& ec) noexcept;  
+bool is_socket(const path& pval, error_code& ec) noexcept;  
 ```  
   
  The first function returns stat.type\(\) \=\= file\_type::socket. The remaining functions return is\_socket\(status\(pval\)\).  
@@ -539,9 +468,7 @@ bool is_socket(const path& pval,
  
 bool is_symlink(file_status stat) noexcept;  
 bool is_symlink(const path& pval);
-
-bool is_symlink(const path& pval,  
-    error_code& ec) noexcept;  
+bool is_symlink(const path& pval, error_code& ec) noexcept;  
 ```  
   
  The first function returns stat.type\(\) \=\= file\_type::symlink. The remaining functions return is\_symlink\(status\(pval\)\).  
@@ -552,14 +479,12 @@ bool is_symlink(const path& pval,
  
 file_time_type last_write_time(const path& pval);
 
-file_time_type last_write_time(const path& pval,  
-    error_code& ec) noexcept;  
+file_time_type last_write_time(const path& pval, error_code& ec) noexcept;  
 void last_write_time(const path& pval,
     file_time_type new_time);
 
 void last_write_time(const path& pval,
-    file_time_type new_time,  
-    error_code& ec) noexcept;  
+    file_time_type new_time, error_code& ec) noexcept;  
 ```  
   
  The first two functions return the time of last data modification for `pval`, or file\_time\_type\(\-1\) if an error occurs. The last two functions set the time of last data modification for `pval` to new\_time.  
@@ -567,12 +492,8 @@ void last_write_time(const path& pval,
 ## permissions  
   
 ```  
-void permissions(const path& pval,
-    perms mask);
-
-void permissions(const path& pval,
-    perms mask,  
-    error_code& ec) noexcept;  
+void permissions(const path& pval, perms mask);
+void permissions(const path& pval, perms mask, error_code& ec) noexcept;  
 ```  
   
  The functions set the permissions for the pathname designated by `pval` to mask & perms::mask under control of perms & \(perms::add\_perms &#124; perms::remove\_perms\). mask shall contain at most one of perms::add\_perms and perms::remove\_perms.  
@@ -583,9 +504,7 @@ void permissions(const path& pval,
   
 ```  
 path read_symlink(const path& pval);
-
-path read_symlink(const path& pval.  
-    error_code& ec);
+path read_symlink(const path& pval, error_code& ec);
 ```  
   
  The functions report an error and return path\(\) if \!is\_symlink\(pval\). Otherwise, the functions return an object of type `path` containing the symbolic link.  
@@ -594,9 +513,7 @@ path read_symlink(const path& pval.
   
 ```  
 bool remove(const path& pval);
-
-bool remove(const path& pval,  
-    error_code& ec) noexcept;  
+bool remove(const path& pval, error_code& ec) noexcept;  
 ```  
   
  The functions return true only if exists\(symlink\_status\(pval\)\) and the file is successfully removed. A symlink is itself removed, not the file it designates.  
@@ -605,9 +522,7 @@ bool remove(const path& pval,
   
 ```  
 uintmax_t remove_all(const path& pval);
-
-uintmax_t remove_all(const path& pval,  
-    error_code& ec) noexcept;  
+uintmax_t remove_all(const path& pval, error_code& ec) noexcept;  
 ```  
   
  If `pval` is a directory, the functions recursively remove all directory entries, then the entry itself. Otherwise, the functions call remove. They return a count of all elements successfully removed.  
@@ -615,12 +530,8 @@ uintmax_t remove_all(const path& pval,
 ## rename  
   
 ```  
-void rename(const path& from,
-    const path& to);
-
-void rename(const path& from,
-    const path& to,  
-    error_code& ec) noexcept;  
+void rename(const path& from,  const path& to);
+void rename(const path& from,  const path& to, error_code& ec) noexcept;  
 ```  
   
  The functions rename `from` to `to`. A symlink is itself renamed, not the file it designates.  
@@ -628,12 +539,9 @@ void rename(const path& from,
 ## resize\_file  
   
 ```  
-void resize(const path& pval,
-    uintmax_t size);
+void resize(const path& pval, uintmax_t size);
 
-void resize(const path& pval,
-    uintmax_t size,  
-    error_code& ec) noexcept;  
+void resize(const path& pval, uintmax_t size, error_code& ec) noexcept;  
 ```  
   
  The functions alter the size of a file such that file\_size\(pval\) \=\= size  
@@ -643,8 +551,7 @@ void resize(const path& pval,
 ```  
 space_info space(const path& pval);
 
-space_info space(const path& pval,  
-    error_code& ec) noexcept;  
+space_info space(const path& pval, error_code& ec) noexcept;  
 ```  
   
  The function returns information about the volume designated by `pval`, in a structure of type `space_info`. The structure contains uintmax\_t\(\-1\) for any value that cannot be determined.  
@@ -654,8 +561,7 @@ space_info space(const path& pval,
 ```  
 file_status status(const path& pval);
 
-file_status status(const path& pval,  
-    error_code& ec) noexcept;  
+file_status status(const path& pval, error_code& ec) noexcept;  
 ```  
   
  The functions return the pathname status, the file type and permissions, associated with `pval`. A symlink is itself not tested, but the file it designates.  
@@ -681,8 +587,7 @@ void swap(path& left, path& right) noexcept;
 ```  
 file_status symlink_status(const path& pval);
 
-file_status symlink_status(const path& pval,  
-    erroxr_code& ec) noexcept;  
+file_status symlink_status(const path& pval, erroxr_code& ec) noexcept;  
 ```  
   
  The functions return the pathname symlink status, the file type and permissions, associated with `pval`. The functions behave the same as status\(pval\) except that a symlink is itself tested, not the file it designates.  
@@ -692,8 +597,7 @@ file_status symlink_status(const path& pval,
 ```  
 path system_complete(const path& pval);
 
-path system_complete(const path& pval,  
-    error_code& ec);
+path system_complete(const path& pval, error_code& ec);
 ```  
   
  The functions return an absolute pathname that takes into account, as necessary, the current directory associated with its root name. \(For Posix, the functions return absolute\(pval\).\)  
@@ -710,11 +614,11 @@ path temp_directory_path(error_code& ec);
   
 ## u8path  
   
-```cpp  
-template \<class Source>  
+```  
+template <class Source>  
 path u8path(const Source& source);
 
-template \<class InIt>  
+template <class InIt>  
 path u8path(InIt first, InIt last);
 ```  
   

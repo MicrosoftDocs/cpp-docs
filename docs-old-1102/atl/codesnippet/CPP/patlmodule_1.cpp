@@ -1,1 +1,0 @@
-   LONG lLocks = _pAtlModule->GetLockCount();

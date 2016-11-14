@@ -2,7 +2,6 @@
 title: "Registry key &#39;&lt;keyname&gt;&#39; could not be created | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

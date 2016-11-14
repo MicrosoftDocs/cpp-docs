@@ -13,10 +13,10 @@ manager: "ghogen"
 # &lt;utility&gt; functions
 ||||  
 |-|-|-|  
-|[exchange Function](#exchange_function)|[forward](#forward)|[get Function &lt;utility&gt;](#get_function__lt_utility_gt_)|  
+|[exchange](#exchange)|[forward](#forward)|[get Function &lt;utility&gt;](#get)|  
 |[make_pair](#make_pair)|[move](#move)|[swap](#swap)|  
   
-##  <a name="exchange_function"></a>  exchange Function  
+##  <a name="exchange"></a>  exchange  
  **(C++14)** Assigns a new value to an object and returns its old value.  
   
 ```cpp
@@ -93,7 +93,7 @@ constexpr Type&& forward(typename remove_reference<Type>::type&& Arg) noexcept
   
  Restoring the rvalue-ness of an argument's original value in order to perform overload resolution is known as *perfect forwarding*. Perfect forwarding enables a template function to accept an argument of either reference type and to restore its rvalue-ness when it's necessary for correct overload resolution. By using perfect forwarding, you can preserve move semantics for rvalues and avoid having to provide overloads for functions that vary only by the reference type of their arguments.  
   
-##  <a name="get_function__lt_utility_gt_"></a>  get Function &lt;utility&gt;  
+##  <a name="get"></a>  get  
  Gets an element from a `pair` object by index position, or by type.  
   
 ```
@@ -159,33 +159,33 @@ constexpr T2&& get(pair<T1, T2>&& Pr) noexcept;
   
 ### Example  
   
-```  
+```cpp  
 #include <utility>  
 #include <iostream>   
 using namespace std;  
-int main()  
-{  
-  
-typedef pair<int, double> MyPair;  
-  
-MyPair c0(9, 3.14);  
-  
-// get elements by index  
-cout << " " << get<0>(c0);  
-cout << " " << get<1>(c0) << endl;  
-  
-// get elements by type (C++14)  
-MyPair c1(1, 0.27);  
-cout << " " << get<int>(c1);  
-cout << " " << get<double>(c1) << endl;  
-  
-/*  
-Output:  
-9 3.14  
-1 0.27  
-*/  
-  
-}  
+int main()
+{
+
+    typedef pair<int, double> MyPair;
+
+    MyPair c0(9, 3.14);
+
+    // get elements by index  
+    cout << " " << get<0>(c0);
+    cout << " " << get<1>(c0) << endl;
+
+    // get elements by type (C++14)  
+    MyPair c1(1, 0.27);
+    cout << " " << get<int>(c1);
+    cout << " " << get<double>(c1) << endl;
+
+    /*
+    Output:
+    9 3.14
+    1 0.27
+    */
+
+}
 ```  
   
 ##  <a name="make_pair"></a>  make_pair  
@@ -193,20 +193,16 @@ Output:
   
 ```
 template <class T, class U>
-pair<T, U>  
-make_pair(T& Val1, U& Val2);
+pair<T, U> make_pair(T& Val1, U& Val2);
 
 template <class T, class U>
-pair<T, U>  
-make_pair(T& Val1, U&& Val2);
+pair<T, U> make_pair(T& Val1, U&& Val2);
 
 template <class T, class U>
-pair<T, U>  
-make_pair(T&& Val1, U& Val2);
+pair<T, U> make_pair(T&& Val1, U& Val2);
 
 template <class T, class U>
-pair<T, U>  
-make_pair(T&& Val1, U&& Val2);
+pair<T, U> make_pair(T&& Val1, U&& Val2);
 ```  
   
 ### Parameters  

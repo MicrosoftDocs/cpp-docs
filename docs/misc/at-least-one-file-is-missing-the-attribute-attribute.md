@@ -2,7 +2,6 @@
 title: "At least one file is missing the &#39;attribute&#39; attribute | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

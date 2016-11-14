@@ -2,7 +2,6 @@
 title: "3.2.3 omp_set_lock and omp_set_nest_lock Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

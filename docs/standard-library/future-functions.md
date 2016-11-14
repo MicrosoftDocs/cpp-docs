@@ -13,19 +13,19 @@ manager: "ghogen"
 # &lt;future&gt; functions
 ||||  
 |-|-|-|  
-|[async Function](#async_function)|[future_category Function](#future_category_function)|[make_error_code Function](#make_error_code_function)|  
-|[make_error_condition Function](#make_error_condition_function)|[swap Function](#swap_function)|  
+|[async](#async_function)|[future_category](#future_category_function)|[make_error_code](#make_error_code_function)|  
+|[make_error_condition](#make_error_condition_function)|[swap](#swap_function)|  
   
-##  <a name="async_function"></a>  async Function  
+##  <a name="async_function"></a>  async  
  Represents an *asynchronous provider*.  
   
-```cpp
+```
 template <class Fn, class... ArgTypes>
-future<typename result_of<Fn(ArgTypes...)>::type>;
+future<typename result_of<Fn(ArgTypes...)>::type>
     async(Fn&& fn, ArgTypes&&... args);
 
 template <class Fn, class... ArgTypes>
-future<typename result_of<Fn(ArgTypes...)>::type>;
+future<typename result_of<Fn(ArgTypes...)>::type>
     async(launch policy, Fn&& fn, ArgTypes&&... args);
 ```  
   
@@ -61,14 +61,14 @@ future<typename result_of<Fn(ArgTypes...)>::type>;
   
  The pseudo-function `INVOKE` is defined in [\<functional>](../standard-library/functional.md).  
   
-##  <a name="future_category_function"></a>  future_category Function  
+##  <a name="future_category_function"></a>  future_category  
  Returns a reference to the [error_category](../standard-library/error-category-class.md) object that characterizes errors that are associated with `future` objects.  
   
 ```
 const error_category& future_category() noexcept;
 ```  
   
-##  <a name="make_error_code_function"></a>  make_error_code Function  
+##  <a name="make_error_code_function"></a>  make_error_code  
  Creates an [error_code](../standard-library/error-code-class.md) together with the [error_category](../standard-library/error-category-class.md) object that characterizes [future](../standard-library/future-class.md) errors.  
   
 ```
@@ -82,7 +82,7 @@ inline error_code make_error_code(future_errc Errno) noexcept;
 ### Return Value  
  `error_code(static_cast<int>(Errno), future_category());`  
   
-##  <a name="make_error_condition_function"></a>  make_error_condition Function  
+##  <a name="make_error_condition_function"></a>  make_error_condition  
  Creates an [error_condition](../standard-library/error-condition-class.md) together with the [error_category](../standard-library/error-category-class.md) object that characterizes [future](../standard-library/future-class.md) errors.  
   
 ```
@@ -96,15 +96,15 @@ inline error_condition make_error_condition(future_errc Errno) noexcept;
 ### Return Value  
  `error_condition(static_cast<int>(Errno), future_category());`  
   
-##  <a name="swap_function"></a>  swap Function  
+##  <a name="swap_function"></a>  swap  
  Exchanges the *associated asynchronous state* of one `promise` object with that of another.  
   
 ```
 template <class Ty>
 void swap(promise<Ty>& Left, promise<Ty>& Right) noexcept;
+
 template <class Ty, class... ArgTypes>
-void swap(packaged_task<Ty(ArgTypes...)>& Left,
-    packaged_task<Ty(ArgTypes...)>& Right) noexcept;
+void swap(packaged_task<Ty(ArgTypes...)>& Left, packaged_task<Ty(ArgTypes...)>& Right) noexcept;
 ```  
   
 ### Parameters  

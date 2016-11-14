@@ -2,7 +2,6 @@
 title: "not_equal_to Struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,23 +48,17 @@ A binary predicate that performs the inequality operation ( `operator!=`) on its
 template <class Type = void>
 struct not_equal_to : public binary_function<Type, Type, bool>  
 {
-    bool operator()(
-    const Type& Left,
-    const Type& Right) const;
-
- };
+    bool operator()(const Type& Left, const Type& Right) const;
+};
 
 // specialized transparent functor for operator!=
 template <>
 struct not_equal_to<void>  
 {
-template <class T, class U>
-auto operator()(T&& Left, U&& Right) const
- ->  
-decltype(std::forward<T>(Left)
- != std::forward<U>(Right));
-
- };
+  template <class T, class U>
+  auto operator()(T&& Left, U&& Right) const`
+    -> decltype(std::forward<T>(Left) != std::forward<U>(Right));
+};
 ```  
   
 #### Parameters  
@@ -86,7 +79,7 @@ decltype(std::forward<T>(Left)
   
 ## Example  
   
-```  
+```cpp  
 // functional_not_equal_to.cpp  
 // compile with: /EHsc  
 #include <vector>  

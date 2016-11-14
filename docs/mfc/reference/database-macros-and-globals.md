@@ -2,7 +2,6 @@
 title: "Database Macros and Globals | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -62,9 +61,7 @@ The macros and globals listed below apply to ODBC-based database applications. T
  Use this macro to call any ODBC API function that may return `SQL_STILL_EXECUTING`.  
   
 ```  
- 
 AFX_ODBC_CALL(SQLFunc)  
- 
 ```  
   
 ### Parameters  
@@ -86,11 +83,8 @@ AFX_ODBC_CALL(SQLFunc)
 ##  <a name="afx_sql_async"></a>  AFX_SQL_ASYNC  
  The implementation of this macro changed in MFC 4.2.  
   
-```  
- 
-AFX_SQL_ASYNC(
-prs  ,   SQLFunc)  
- 
+```   
+AFX_SQL_ASYNC(prs, SQLFunc)   
 ```  
   
 ### Parameters  
@@ -109,10 +103,8 @@ prs  ,   SQLFunc)
 ##  <a name="afx_sql_sync"></a>  AFX_SQL_SYNC  
  The `AFX_SQL_SYNC` macro simply calls the function `SQLFunc`.  
   
-```  
- 
-AFX_SQL_SYNC(SQLFunc)  
- 
+```   
+AFX_SQL_SYNC(SQLFunc)   
 ```  
   
 ### Parameters  
@@ -135,11 +127,8 @@ AFX_SQL_SYNC(SQLFunc)
 ##  <a name="afxgethenv"></a>  AfxGetHENV  
  You can use the returned handle in direct ODBC calls, but you must not close the handle or assume that the handle is still valid and available after any existing `CDatabase`- or `CRecordset`-derived objects have been destroyed.  
   
-```  
- 
-HENV AFXAPI AfxGetHENV();
-
- 
+```   
+HENV AFXAPI AfxGetHENV(); 
 ```  
   
 ### Return Value  

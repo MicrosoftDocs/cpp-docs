@@ -1,4 +1,3 @@
-# [Configuring Programs for Windows XP](configuring-programs-for-windows-xp.md)
 # [Building C-C++ Programs](building-c-cpp-programs.md)
 # [Building C-C++ Isolated Applications and Side-by-side Assemblies](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
 ## [Concepts of Isolated Applications and Side-by-side Assemblies](concepts-of-isolated-applications-and-side-by-side-assemblies.md)
@@ -113,6 +112,7 @@
 ## [Automation in a DLL](automation-in-a-dll.md)
 ## [Naming Conventions for MFC DLLs](naming-conventions-for-mfc-dlls.md)
 ## [Calling DLL Functions from Visual Basic Applications](calling-dll-functions-from-visual-basic-applications.md)
+# [Compiler Intrinsics and Assembly Language](../intrinsics/TOC.md)
 # [Building on the Command Line](building-on-the-command-line.md)
 ## [Walkthrough: Compiling a Native C++ Program on the Command Line](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)
 ## [Walkthrough: Compile a C program on the command line](walkthrough-compile-a-c-program-on-the-command-line.md)
@@ -183,3 +183,5 @@
 ### [How to: Add Custom Build Tools to MSBuild Projects](how-to-add-custom-build-tools-to-msbuild-projects.md)
 ### [How to: Integrate Custom Tools into the Project Properties](how-to-integrate-custom-tools-into-the-project-properties.md)
 ### [How to: Modify the Target Framework and Platform Toolset](how-to-modify-the-target-framework-and-platform-toolset.md)
+# [Configuring Programs for Windows XP](configuring-programs-for-windows-xp.md)
+# [C/C++ Building Reference](reference/TOC.md)

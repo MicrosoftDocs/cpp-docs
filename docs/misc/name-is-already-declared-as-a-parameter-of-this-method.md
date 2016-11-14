@@ -2,7 +2,6 @@
 title: "&#39;&lt;name&gt;&#39; is already declared as a parameter of this method | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

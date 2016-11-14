@@ -2,7 +2,6 @@
 title: "&lt;chrono&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,19 +48,7 @@ Include the standard header \<chrono> to define classes and functions that repre
 ```cpp  
 #include <chrono>  
 ```  
-  
-### Literals  
- Literals in the \<chrono> header are members of the literals::chrono_literals inline namespace. For more information, see [chrono literals](../standard-library/chrono-functions.md#chrono_literals).  
-  
-|||  
-|-|-|  
-|operator "" h(unsigned long long Val) operator "" h(long double Val)|Specifies that the value represents hours.|  
-|operator "" min(unsigned long long Val)  operator "" min(long double Val)|Specifies that the value represents minutes.|  
-|operator "" s(unsigned long long Val)operator "" s(long double Val)|Specifies that the value represents seconds.|  
-|operator "" ms(unsigned long long Val)operator "" ms(long double Val)|Specifies that the value represents milliseconds.|  
-|operator "" us(unsigned long long Val)operator "" us(long double Val)|Specifies that the value represents microseconds.|  
-|operator "" ns(unsigned long long Val)operator "" ns(long double Val)|Specifies that the value represents nanoseconds.|  
-  
+
 ### Classes  
   
 |Name|Description|  
@@ -115,7 +102,7 @@ Include the standard header \<chrono> to define classes and functions that repre
 |`typedef duration<int, ratio<3600> > hours;`|Synonym for a `duration` type that has a tick period of one hour.|  
   
 ### Literals  
- **(C++11)**The \<chrono> header defines the following [user-defined literals](../cpp/user-defined-literals-cpp.md) that you can use for greater convenience, type-safety and maintainability of your code. These literals are defined in the `literals::chrono_literals` inline namespace and are in scope when std::chrono is in scope.  
+ **(C++11)**The \<chrono> header defines the following [user-defined literals](../cpp/user-defined-literals-cpp.md) that you can use for greater convenience, type-safety and maintainability of your code. These literals are defined in the `literals::chrono_literals` inline namespace and are in scope when std::chrono is in scope. For more information, see [chrono literals](../standard-library/chrono-functions.md#chrono_literals).  
   
 |Literal|Description|  
 |-------------|-----------------|  
@@ -133,6 +120,13 @@ Include the standard header \<chrono> to define classes and functions that repre
 |chrono::duration\<double, nano> operator "" ns(long double Val)|Specifies nanoseconds as a floating-point value.|  
 |||  
   
+The following examples show how to use the chrono literals.  
+  
+```  
+constexpr auto day = 24h;  
+constexpr auto week = 24h* 7;  
+constexpr auto my_duration_unit = 108ms;  
+```  
 ## Remarks  
   
 ## See Also  

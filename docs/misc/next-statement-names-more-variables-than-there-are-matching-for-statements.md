@@ -2,7 +2,6 @@
 title: "&#39;Next&#39; statement names more variables than there are matching &#39;For&#39; statements | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

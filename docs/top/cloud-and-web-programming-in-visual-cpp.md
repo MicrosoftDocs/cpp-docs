@@ -2,7 +2,6 @@
 title: "Cloud and Web Programming in Visual C++ | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -54,5 +53,5 @@ In C++, you have several options for connecting to the web and the cloud.
  Windows API that you can use in Windows desktop apps to connect to the Internet.  
   
 ## See Also  
- [Visual C++](../top/visual-cpp-in-visual-studio-2015.md)   
+ [Visual C++](../top/visual-cpp-in-visual-studio.md)   
  [Connecting to networks and web services (Windows Store apps using C#/VB/C++ and XAML)](http://msdn.microsoft.com/library/windows/apps/br229573.aspx)

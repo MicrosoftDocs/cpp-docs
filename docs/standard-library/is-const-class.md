@@ -2,7 +2,6 @@
 title: "is_const Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -60,31 +59,31 @@ struct is_const;
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__type_traits__is_const.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   
-  
-struct trivial   
-    {   
-    int val;   
-    };   
-  
-int main()   
-    {   
-    std::cout << "is_const<trivial> == " << std::boolalpha   
-        << std::is_const<trivial>::value << std::endl;   
-    std::cout << "is_const<const trivial> == " << std::boolalpha   
-        << std::is_const<const trivial>::value << std::endl;   
-    std::cout << "is_const<int> == " << std::boolalpha   
-        << std::is_const<int>::value << std::endl;   
-    std::cout << "is_const<const int> == " << std::boolalpha   
-        << std::is_const<const int>::value << std::endl;   
-  
-    return (0);   
-    }  
-  
+
+struct trivial
+{
+    int val;
+};
+
+int main()
+{
+    std::cout << "is_const<trivial> == " << std::boolalpha
+        << std::is_const<trivial>::value << std::endl;
+    std::cout << "is_const<const trivial> == " << std::boolalpha
+        << std::is_const<const trivial>::value << std::endl;
+    std::cout << "is_const<int> == " << std::boolalpha
+        << std::is_const<int>::value << std::endl;
+    std::cout << "is_const<const int> == " << std::boolalpha
+        << std::is_const<const int>::value << std::endl;
+
+    return (0);
+}
+
 ```  
   
 ```Output  

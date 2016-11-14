@@ -2,7 +2,6 @@
 title: "XFORM Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `XFORM` structure has the following form:
 ## Syntax  
   
 ```  
- 
-    typedef struct  tagXFORM {  /* xfrm */  
+typedef struct  tagXFORM {  /* xfrm */  
     FLOAT eM11;  
     FLOAT eM12;  
     FLOAT eM21;  

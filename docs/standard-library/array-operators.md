@@ -44,7 +44,7 @@ bool operator!=(
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__operator_ne.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -114,7 +114,7 @@ bool operator<(
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__operator_lt.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -185,7 +185,7 @@ bool operator<=(
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__operator_le.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -256,7 +256,7 @@ bool operator==(
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__operator_eq.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -327,7 +327,7 @@ bool operator>(
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__operator_gt.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -398,7 +398,7 @@ bool operator>=(
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__operator_ge.cpp   
 // compile with: /EHsc   
 #include <array>   

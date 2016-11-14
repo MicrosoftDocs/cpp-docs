@@ -2,7 +2,6 @@
 title: "What&#39;s New in Visualization and Modeling SDK | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

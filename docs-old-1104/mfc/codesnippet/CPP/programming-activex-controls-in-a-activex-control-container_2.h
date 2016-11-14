@@ -1,2 +1,0 @@
-class CCirc : public CWnd
-{

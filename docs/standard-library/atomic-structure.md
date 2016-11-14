@@ -2,7 +2,6 @@
 title: "atomic Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -57,7 +56,6 @@ struct atomic;
 |----------|-----------------|  
 |[atomic::operator Ty Operator](../Topic/atomic::operator%20Ty%20Operator.md)|Reads and returns the stored value. ([atomic::load Method](../Topic/atomic::load%20Method.md))|  
 |[atomic::operator= Operator](../Topic/atomic::operator=%20Operator.md)|Uses a specified value to replace the stored value. ([atomic::store Method](../Topic/atomic::store%20Method.md))|  
-|||  
 |[atomic::operator++ Operator](../Topic/atomic::operator++%20Operator.md)|Increments the stored value. Used only by integral and pointer specializations.|  
 |[atomic::operator+= Operator](../Topic/atomic::operator+=%20Operator.md)|Adds a specified value to the stored value. Used only by integral and pointer specializations.|  
 |[atomic::operator-- Operator](../Topic/atomic::operator--%20Operator.md)|Decrements the stored value. Used only by integral and pointer specializations.|  

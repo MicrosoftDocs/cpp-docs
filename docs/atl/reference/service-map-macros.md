@@ -2,7 +2,6 @@
 title: "Service Map Macros | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -55,9 +54,9 @@ BEGIN_SERVICE_MAP(theClass)
 ### Remarks  
  Use the service map to implement service provider functionality on your COM object. First, you must derive your class from [IServiceProviderImpl](../../atl/reference/iserviceproviderimpl-class.md). There are two types of entries:  
   
-- [SERVICE_ENTRY](#service_entry)Â Â Â Indicates support for the specified service ID (SID).  
+- [SERVICE_ENTRY](#service_entry)   Indicates support for the specified service ID (SID).  
   
-- [SERVICE_ENTRY_CHAIN](#service_entry_chain)Â Â Â Instructs [IServiceProviderImpl::QueryService](#iserviceproviderimpl__queryservice) to chain to another, specified object.  
+- [SERVICE_ENTRY_CHAIN](#service_entry_chain)   Instructs [IServiceProviderImpl::QueryService](#iserviceproviderimpl__queryservice) to chain to another, specified object.  
   
 ### Example  
  [!code-cpp[NVC_ATL_COM#57](../../atl/codesnippet/CPP/service-map-macros_1.h)]  
@@ -76,8 +75,7 @@ END_SERVICE_MAP()
  Indicates that the object supports the service id specified by *SID*.  
   
 ```
-SERVICE_ENTRY(Â
-    SID Â)
+SERVICE_ENTRY( SID )
 ```  
   
 ### Parameters  
@@ -91,8 +89,7 @@ SERVICE_ENTRY(Â
  Instructs [IServiceProviderImpl::QueryService](#iserviceproviderimpl__queryservice) to chain to the object specified by `punk`.  
   
 ```
-SERVICE_ENTRY_CHAIN(Â
-    punk Â)
+SERVICE_ENTRY_CHAIN( punk )
 ```  
   
 ### Parameters  
@@ -106,11 +103,9 @@ SERVICE_ENTRY_CHAIN(Â
  Creates or accesses the specified service and returns an interface pointer to the specified interface for the service.  
   
 ```
-STDMETHOD(QueryService)(
-    REFGUID
-guidService,
- REFIID
-riid,
+STDMETHOD(QueryService)( 
+    REFGUID guidService,
+    REFIID riid,
     void** ppvObject);
 ```  
   

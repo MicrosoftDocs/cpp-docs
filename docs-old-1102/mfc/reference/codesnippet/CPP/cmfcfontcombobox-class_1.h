@@ -1,1 +1,0 @@
-	CMFCFontComboBox m_wndFont;

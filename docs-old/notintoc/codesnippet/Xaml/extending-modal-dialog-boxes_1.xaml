@@ -1,5 +1,0 @@
-<ui:DialogWindow x:Class="Microsoft.VSModalDialog.MyModalDialog"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:ui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.11.0"
-    Title="MyModalDialog" Height="100" Width="320">

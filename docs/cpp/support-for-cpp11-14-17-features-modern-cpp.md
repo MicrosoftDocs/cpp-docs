@@ -2,7 +2,6 @@
 title: "Support For C++11-14-17 Features (Modern C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -271,5 +270,5 @@ template <typename T> struct Identity {
  [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md)   
  [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)   
  [Visual C++ Team Blog](http://blogs.msdn.com/b/vcblog/)   
- [What's New for Visual C++](../top/what-s-new-for-visual-cpp-in-visual-studio-2015.md)   
+ [What's New for Visual C++](../top/what-s-new-for-visual-cpp-in-visual-studio.md)   
  [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-20151.md)

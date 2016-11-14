@@ -2,7 +2,6 @@
 title: "&#39;On Error&#39; statements are not valid within &#39;Using&#39; statements | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

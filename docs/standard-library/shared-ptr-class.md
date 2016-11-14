@@ -2,7 +2,6 @@
 title: "shared_ptr Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -269,7 +268,7 @@ typedef Ty element_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__shared_ptr_element_type.cpp   
 // compile with: /EHsc   
 #include <memory>   
@@ -303,7 +302,7 @@ Ty *get() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__shared_ptr_get.cpp   
 // compile with: /EHsc   
 #include <memory>   
@@ -517,7 +516,7 @@ int main()
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__shared_ptr_use_count.cpp   
 // compile with: /EHsc   
 #include <memory>   

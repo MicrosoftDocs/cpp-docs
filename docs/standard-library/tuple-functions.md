@@ -20,12 +20,30 @@ manager: "ghogen"
   
 ```  
  
-// by index:// get reference to Index element of tupletemplate <size_t Index, class... Types>  
-constexpr tuple_element_t<Index, tuple<Types...>>& get(tuple<Types...>& Tuple) noexcept;// get const reference to Index element of tupletemplate <size_t Index, class... Types>  
-constexpr const tuple_element_t<Index, tuple<Types...>>& get(const tuple<Types...>& Tuple) noexcept;// get rvalue reference to Index element of tupletemplate <size_t Index, class... Types>  
-constexpr tuple_element_t<Index, tuple<Types...>>&& get(tuple<Types...>&& Tuple) noexcept;// (C++14) by type:// get reference to T element of tupletemplate <class T, class... Types>  
-constexpr T& get(tuple<Types...>& Tuple) noexcept;// get const reference to T element of tupletemplate <class T, class... Types>  
-constexpr const T& get(const tuple<Types...>& Tuple) noexcept;// get rvalue reference to T element of tupletemplate <class T, class... Types>  
+// by index:
+// get reference to Index element of tuple
+template <size_t Index, class... Types>  
+constexpr tuple_element_t<Index, tuple<Types...>>& get(tuple<Types...>& Tuple) noexcept;
+
+// get const reference to Index element of tuple
+template <size_t Index, class... Types>  
+constexpr const tuple_element_t<Index, tuple<Types...>>& get(const tuple<Types...>& Tuple) noexcept;
+
+// get rvalue reference to Index element of tuple
+template <size_t Index, class... Types>  
+constexpr tuple_element_t<Index, tuple<Types...>>&& get(tuple<Types...>&& Tuple) noexcept;
+
+// (C++14) by type:
+// get reference to T element of tuple
+template <class T, class... Types>  
+constexpr T& get(tuple<Types...>& Tuple) noexcept;
+
+// get const reference to T element of tuple
+template <class T, class... Types>  
+constexpr const T& get(const tuple<Types...>& Tuple) noexcept;
+
+// get rvalue reference to T element of tuple
+template <class T, class... Types>  
 constexpr T&& get(tuple<Types...>&& Tuple) noexcept;  
 ```  
   
@@ -49,7 +67,7 @@ constexpr T&& get(tuple<Types...>&& Tuple) noexcept;
   
 ### Example  
   
-```  
+```cpp  
 #include <tuple>   
 #include <iostream>   
 #include <string>  
@@ -68,8 +86,7 @@ int main()
     // get elements by type  
     cout << " " << get<int>(tup);  
     cout << " " << get<double>(tup);  
-    cout << " " << get<string>(tup) << endl;  
-  
+    cout << " " << get<string>(tup) << endl;    
 }  
   
 /*  
@@ -85,8 +102,7 @@ Output:
   
 ```  
 template <class T1, class T2, ..., class TN>  
-tuple<V1, V2, ..., VN>  
-    make_tuple(const T1& t1, const T2& t2, ..., const TN& tN);
+tuple<V1, V2, ..., VN> make_tuple(const T1& t1, const T2& t2, ..., const TN& tN);
 ```  
   
 ### Parameters  
@@ -105,7 +121,7 @@ tuple<V1, V2, ..., VN>
   
 ```cpp  
   
-      // std_tr1__tuple__make_tuple.cpp   
+// std_tr1__tuple__make_tuple.cpp   
 // compile by using: /EHsc   
 #include <tuple>   
 #include <iostream>   
@@ -143,8 +159,7 @@ int main()
   
 ```  
 template <class T1, class T2, ..., class TN>  
-tuple<T1&, T2&, ..., TN&>  
-    tie(T1& t1, T2& t2, ..., TN& tN);
+tuple<T1&, T2&, ..., TN&> tie(T1& t1, T2& t2, ..., TN& tN);
 ```  
   
 ### Parameters  
@@ -156,7 +171,7 @@ tuple<T1&, T2&, ..., TN&>
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__tuple__tie.cpp   
 // compile with: /EHsc   
 #include <tuple>   
@@ -188,8 +203,7 @@ int main()
     std::cout << std::endl;   
   
     return (0);   
-    }  
-  
+    }    
 ```  
   
 ```Output  

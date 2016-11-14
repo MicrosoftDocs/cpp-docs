@@ -2,7 +2,6 @@
 title: "Expression of type &#39;&lt;typename&gt;&#39; cannot be converted to &#39;Object&#39; or &#39;ValueType&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

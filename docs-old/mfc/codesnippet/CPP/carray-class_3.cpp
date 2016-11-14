@@ -1,1 +1,0 @@
-         CArray<CPoint,CPoint> ptArray;

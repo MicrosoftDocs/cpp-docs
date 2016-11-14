@@ -2,7 +2,6 @@
 title: "Other One-Argument Output Stream Manipulators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,7 +37,7 @@ The following example uses a class `money`, which is a `long` type. The `setpic`
   
 ## Example  
   
-```  
+```cpp  
 // one_arg_output.cpp  
 // compile with: /GR /EHsc  
 #include <iostream>  

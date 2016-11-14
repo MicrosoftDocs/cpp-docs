@@ -1,1 +1,0 @@
-        CONNECTION_IID(IID_ISampleSink)

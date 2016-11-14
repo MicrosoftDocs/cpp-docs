@@ -2,7 +2,6 @@
 title: "File System Navigation | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -33,7 +32,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # File System Navigation
-The \<filesystem> header implements the C++ File System Technical Specification ISO/IEC TS 18822:2015 (Final draft: [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)) and has types and functions that enable you to write platform-independent code for navigating the file system. Because it is cross-platform, it contains APIs that are not relevant for Windows systems. For example, this means that `is_fifo(const path&)` always returns `false` on Windows. The header is based on a draft Technical Specification that was not voted into the C++17 standard as of Visual Studio 2015 RTM. Its members are found in the `std::experimental::filesystem::v1` namespace.  
+The \<filesystem> header implements the C++ File System Technical Specification ISO/IEC TS 18822:2015 (Final draft: [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)) and has types and functions that enable you to write platform-independent code for navigating the file system. Because it is cross-platform, it contains APIs that are not relevant for Windows systems. For example, this means that `is_fifo(const path&)` always returns `false` on Windows. The header is based on a draft Technical Specification that was not voted into the C++17 standard as of Visual Studio 2015 RTM. Its members are found in the `std::experimental::filesystem` namespace.  
   
 ## Overview  
  Use the \<filesystem> APIs for the following tasks:  
@@ -53,7 +52,7 @@ The \<filesystem> header implements the C++ File System Technical Specification 
 ## Paths  
   
 ### Constructing and composing paths  
- Paths in Windows (since XP) are stored natively in Unicode. The [path](../standard-library/path-class-cpp-standard-template-library.md) class automatically performs all necessary string conversions. It accepts arguments of both wide and narrow character arrays, as well as `std::string` and `std::wstring` types formatted as UTF8 or UTF16. The `path` class also automatically normalizes path separators. You can use a single forward slash as a directory separator in constructor arguments. This enables you to use the same strings to store paths in both Windows and UNIX environments:  
+ Paths in Windows (since XP) are stored natively in Unicode. The [path](../standard-library/path-class.md) class automatically performs all necessary string conversions. It accepts arguments of both wide and narrow character arrays, as well as `std::string` and `std::wstring` types formatted as UTF8 or UTF16. The `path` class also automatically normalizes path separators. You can use a single forward slash as a directory separator in constructor arguments. This enables you to use the same strings to store paths in both Windows and UNIX environments:  
   
 ```cpp  
 path pathToDisplay(L"/FileSystemTest/SubDir3");
@@ -89,7 +88,7 @@ myRoot /= path("SubDirRoot");
 #include <filesystem>  
   
 using namespace std;  
-using namespace std::experimental::filesystem::v1;  
+using namespace std::experimental::filesystem;  
   
 wstring  DisplayPathInfo()  
 {  

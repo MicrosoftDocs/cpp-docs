@@ -2,7 +2,6 @@
 title: "multimap Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -186,7 +185,7 @@ iterator begin();
   
 ### Example  
   
-```  
+```cpp  
 // multimap_begin.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -357,7 +356,7 @@ typedef typename allocator_type::const_reference const_reference;
   
 ### Example  
   
-```  
+```cpp  
 // multimap_const_ref.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -499,7 +498,7 @@ const_reverse_iterator crbegin() const;
   
 ### Example  
   
-```  
+```cpp  
 // multimap_crbegin.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -548,7 +547,7 @@ const_reverse_iterator crend() const;
   
 ### Example  
   
-```  
+```cpp  
 // multimap_crend.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -591,7 +590,7 @@ typedef typename allocator_type::difference_type difference_type;
   
 ### Example  
   
-```  
+```cpp  
 // multimap_diff_type.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -742,7 +741,7 @@ bool empty() const;
   
 ### Example  
   
-```  
+```cpp  
 // multimap_empty.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -814,7 +813,7 @@ pair <iterator, iterator> equal_range (const Key& key);
   
 ### Example  
   
-```  
+```cpp  
 // multimap_equal_range.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -1008,7 +1007,7 @@ allocator_type get_allocator() const;
   
 ### Example  
   
-```  
+```cpp  
 // multimap_get_allocator.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -1265,7 +1264,7 @@ key_compare key_comp() const;
   
 ### Example  
   
-```  
+```cpp  
 // multimap_key_comp.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -1364,7 +1363,7 @@ const_iterator lower_bound(const Key& key) const;
   
 ### Example  
   
-```  
+```cpp  
 // multimap_lower_bound.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -1456,7 +1455,7 @@ size_type max_size() const;
   
 ### Example  
   
-```  
+```cpp  
 // multimap_max_size.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -1555,7 +1554,7 @@ multimap(
   
 ### Example  
   
-```  
+```cpp  
 // multimap_ctor.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -1683,7 +1682,7 @@ multimap& operator=(multimap&& right);
   
 ### Example  
   
-```  
+```cpp  
 // multimap_operator_as.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -1751,7 +1750,7 @@ reverse_iterator rbegin();
   
 ### Example  
   
-```  
+```cpp  
 // multimap_rbegin.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -1816,7 +1815,7 @@ typedef typename allocator_type::reference reference;
   
 ### Example  
   
-```  
+```cpp  
 // multimap_ref.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -1886,7 +1885,7 @@ reverse_iterator rend();
   
 ### Example  
   
-```  
+```cpp  
 // multimap_rend.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -2031,7 +2030,7 @@ void swap(
   
 ### Example  
   
-```  
+```cpp  
 // multimap_swap.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -2100,7 +2099,7 @@ const_iterator upper_bound(const Key& key) const;
   
 ### Example  
   
-```  
+```cpp  
 // multimap_upper_bound.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -2171,7 +2170,7 @@ value_compare value_comp() const;
   
 ### Example  
   
-```  
+```cpp  
 // multimap_value_comp.cpp  
 // compile with: /EHsc  
 #include <map>  
@@ -2228,7 +2227,7 @@ typedef pair<const Key, Type> value_type;
   
 ### Example  
   
-```  
+```cpp  
 // multimap_value_type.cpp  
 // compile with: /EHsc  
 #include <map>  

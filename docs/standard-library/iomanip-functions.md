@@ -13,19 +13,17 @@ manager: "ghogen"
 # &lt;iomanip&gt; functions
 ||||  
 |-|-|-|  
-|[&lt;iomanip&gt; get_money](#iomanip_get_money)|[&lt;iomanip&gt; get_time](#iomanip_get_time)|[&lt;iomanip&gt; put_money](#iomanip_put_money)|  
-|[&lt;iomanip&gt; put_time](#iomanip_put_time)|[quoted](#quoted)|[resetiosflags](#resetiosflags)|  
+|[get_money](#iomanip_get_money)|[get_time](#iomanip_get_time)|[put_money](#iomanip_put_money)|  
+|[put_time](#iomanip_put_time)|[quoted](#quoted)|[resetiosflags](#resetiosflags)|  
 |[setbase](#setbase)|[setfill](#setfill)|[setiosflags](#setiosflags)|  
 |[setprecision](#setprecision)|[setw](#setw)|  
   
-##  <a name="iomanip_get_money"></a>  &lt;iomanip&gt; get_money  
+##  <a name="iomanip_get_money"></a>  get_money  
  Extracts a monetary value from a stream using the desired format, and returns the value in a parameter.  
   
 ```  
 template <class Money>  
-T7 get_money(
-    Money& _Amount,   
-    bool _Intl);
+T7 get_money(Money& _Amount, bool _Intl);
 ```  
   
 ### Parameters  
@@ -40,14 +38,12 @@ T7 get_money(
   
  `Money` must be of type `long double` or an instantiation of `basic_string` with the same element and traits parameters as `str`.  
   
-##  <a name="iomanip_get_time"></a>  &lt;iomanip&gt; get_time  
+##  <a name="iomanip_get_time"></a>  get_time  
  Extracts a time value from a stream using a desired format. Returns the value in a parameter as a time structure.  
   
 ```  
 template <class Elem>  
-T10 put_time(
-    struct tm *_Tptr,   
-    const Elem *_Fmt);
+T10 put_time(struct tm *_Tptr, const Elem *_Fmt);
 ```  
   
 ### Parameters  
@@ -60,14 +56,12 @@ T10 put_time(
 ### Remarks  
  The manipulator returns an object that, when extracted from the stream `str`, behaves as a `formatted input function` that calls the member function `get` for the locale facet `time_get` associated with `str`, using `tptr` to indicate the time structure and `fmt` to indicate the beginning of a null-terminated format string. If successful, the call stores in the time structure the values associated with any extracted time fields. The manipulator then returns `str`.  
   
-##  <a name="iomanip_put_money"></a>  &lt;iomanip&gt; put_money  
+##  <a name="iomanip_put_money"></a>  put_money  
  Inserts a monetary amount using the desired format into a stream.  
   
 ```  
 template <class Money>  
-T8 put_money(
-    const Money& _Amount,   
-    bool _Intl);
+T8 put_money(const Money& _Amount, bool _Intl);
 ```  
   
 ### Parameters  
@@ -85,14 +79,12 @@ T8 put_money(
   
  `Money` must be of type `long double` or an instantiation of `basic_string` with the same element and traits parameters as `str`.  
   
-##  <a name="iomanip_put_time"></a>  &lt;iomanip&gt; put_time  
+##  <a name="iomanip_put_time"></a>  put_time  
  Writes a time value from a time structure to a stream by using a specified format.  
   
 ```  
 template <class Elem>  
-T10 put_time(
-    struct tm* _Tptr,   
-    const Elem* _Fmt);
+T10 put_time(struct tm* _Tptr, const Elem* _Fmt);
 ```  
   
 ### Parameters  
@@ -108,15 +100,11 @@ T10 put_time(
 ##  <a name="quoted"></a>  quoted  
  **(New in C++14)** An iostream manipulator that enables convenient round-tripping of strings into and out of streams using the >> and << operators.  
   
-```cpp  
+```  
 quoted(std::string str) // or wstring  
 quoted(const char* str) //or wchar_t* 
-quoted(std::string str,
-    char delimiter,
-    char escape) // or wide versions  
-quoted(const char* str,
-    char delimiter,
-    char escape) // or wide versions  
+quoted(std::string str, char delimiter, char escape) // or wide versions  
+quoted(const char* str, char delimiter, char escape) // or wide versions  
 ```  
   
 ### Parameters  
@@ -135,7 +123,7 @@ quoted(const char* str,
 ### Example  
   This example shows how to use `quoted` with the default delimiter and escape character using narrow strings. Wide strings are equally supported.  
   
-```  
+```cpp  
   
 #include <iostream>  
 #include <iomanip>  
@@ -192,7 +180,7 @@ Press Enter to exit
 ### Example  
   The following example shows how to provide custom a delimiter and/or escape character:  
   
-```  
+```cpp  
 #include <iostream>  
 #include <iomanip>  
 #include <sstream>  
@@ -277,11 +265,11 @@ Press Enter to exit
  Clears the specified flags.  
   
 ```  
-T1 resetiosflags(ios_base::fmtflags _Mask);
+T1 resetiosflags(ios_base::fmtflags Mask);
 ```  
   
 ### Parameters  
- `_Mask`  
+ `Mask`  
  The flags to clear.  
   
 ### Return Value  
@@ -320,15 +308,15 @@ T3 setbase(int _Base);
   
 ```  
 template <class Elem>  
-T4 setfill(Elem _Ch);
+T4 setfill(Elem Ch);
 ```  
   
 ### Parameters  
- `_Ch`  
+ `Ch`  
  The character that will be used to fill spaces in a right-justified display.  
   
 ### Return Value  
- The template manipulator returns an object that, when extracted from or inserted into the stream **str**, calls **str**. [fill](../standard-library/basic-ios-class.md#basic_ios__fill)( `_Ch`), and then returns **str**. The type **Elem** must be the same as the element type for the stream **str**.  
+ The template manipulator returns an object that, when extracted from or inserted into the stream **str**, calls **str**. [fill](../standard-library/basic-ios-class.md#basic_ios__fill)( `Ch`), and then returns **str**. The type **Elem** must be the same as the element type for the stream **str**.  
   
 ### Example  
   See [setw](../standard-library/iomanip-functions.md#setw) for an example of using `setfill`.  
@@ -337,11 +325,11 @@ T4 setfill(Elem _Ch);
  Sets the specified flags.  
   
 ```  
-T2 setiosflags(ios_base::fmtflags _Mask);
+T2 setiosflags(ios_base::fmtflags Mask);
 ```  
   
 ### Parameters  
- `_Mask`  
+ `Mask`  
  The flags to set.  
   
 ### Return Value  
@@ -354,15 +342,15 @@ T2 setiosflags(ios_base::fmtflags _Mask);
  Sets the precision for floating-point values.  
   
 ```  
-T5 setprecision(streamsize _Prec);
+T5 setprecision(streamsize Prec);
 ```  
   
 ### Parameters  
- `_Prec`  
+ `Prec`  
  The precision for floating-point values.  
   
 ### Return Value  
- The manipulator returns an object that, when extracted from or inserted into the stream **str**, calls **str**. [precision](../standard-library/ios-base-class.md#ios_base__precision)( `_Prec`), and then returns **str**.  
+ The manipulator returns an object that, when extracted from or inserted into the stream **str**, calls **str**. [precision](../standard-library/ios-base-class.md#ios_base__precision)( `Prec`), and then returns **str**.  
   
 ### Example  
   See [setw](../standard-library/iomanip-functions.md#setw) for an example of using `setprecision`.  
@@ -371,11 +359,11 @@ T5 setprecision(streamsize _Prec);
  Specifies the width of the display field for the next element in the stream.  
   
 ```  
-T6 setw(streamsize _Wide);
+T6 setw(streamsize Wide);
 ```  
   
 ### Parameters  
- `_Wide`  
+ `Wide`  
  The width of the display field.  
   
 ### Return Value  
@@ -386,7 +374,7 @@ T6 setw(streamsize _Wide);
   
 ### Example  
   
-```  
+```cpp  
 // iomanip_setw.cpp   
 // compile with: /EHsc  
 // Defines the entry point for the console application.  

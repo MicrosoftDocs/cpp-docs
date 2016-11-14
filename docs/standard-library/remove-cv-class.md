@@ -2,7 +2,6 @@
 title: "remove_cv Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -63,7 +62,7 @@ using remove_cv_t = typename remove_cv<T>::type;
   
 ## Example  
   
-```  
+```cpp  
   
 #include <type_traits>   
 #include <iostream>   

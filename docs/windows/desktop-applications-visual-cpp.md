@@ -2,7 +2,6 @@
 title: "Desktop Applications (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -63,7 +62,7 @@ A *desktop application* in C++ is a native application that can access the full 
 |-----------|-----------------|  
 |[Windows Development](http://go.microsoft.com/fwlink/p/?LinkId=262282)|Contains information about the Windows API and COM. (Some Windows APIs and third-party DLLs are implemented as COM objects.)|  
 |[Hilo: Developing C++ Applications for Windows 7](http://go.microsoft.com/fwlink/p/?LinkId=262284)|Describes how to create a rich-client Windows desktop application that uses Windows Animation and Direct2D to create a carousel-based user interface.  This tutorial has not been updated since Windows 7 but it still provides a throough introduction to Win32 programming.|  
-|[Visual C++](../top/visual-cpp-in-visual-studio-2015.md)|Describes key features of Visual C++ in Visual Studio and links to the rest of the Visual C++ documentation.|  
+|[Visual C++](../top/visual-cpp-in-visual-studio.md)|Describes key features of Visual C++ in Visual Studio and links to the rest of the Visual C++ documentation.|  
   
 ## See Also  
- [Visual C++](../top/visual-cpp-in-visual-studio-2015.md)
+ [Visual C++](../top/visual-cpp-in-visual-studio.md)

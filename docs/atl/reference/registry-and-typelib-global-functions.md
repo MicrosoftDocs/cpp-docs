@@ -2,7 +2,6 @@
 title: "Registry and TypeLib Global Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -57,8 +56,6 @@ These functions provide support for loading and registering a type library.
 ##  <a name="atlregistertypelib"></a>  AtlRegisterTypeLib  
  This function is called to register a type library.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
   
 ```
 ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
@@ -80,9 +77,7 @@ ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
 ##  <a name="atlunregistertypelib"></a>  AtlUnRegisterTypeLib  
  This function is called to unregister a type library.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
-  
+
 ```
 ATLAPI AtlUnRegisterTypeLib(
     HINSTANCE hInstTypeLib,  LPCOLESTR lpszIndex);
@@ -104,9 +99,7 @@ ATLAPI AtlUnRegisterTypeLib(
 ##  <a name="atlloadtypelib"></a>  AtlLoadTypeLib  
  This function is called to load a type library.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
-  
+
 ```
 ATLINLINE ATLAPI AtlLoadTypeLib(
     HINSTANCE hInstTypeLib,
@@ -149,10 +142,7 @@ ATLINLINE ATLAPI AtlLoadTypeLib(
   
 ##  <a name="registrydataexchange"></a>  RegistryDataExchange  
  This function is called to read from, or write to, the system registry.  
-  
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
-  
+ 
 ```
 HRESULT RegistryDataExchange(
     T* pT,

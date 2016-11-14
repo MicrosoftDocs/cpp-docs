@@ -2,7 +2,6 @@
 title: "basic_stringbuf Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -294,7 +293,7 @@ void str(
   
 ### Example  
   
-```  
+```cpp  
 // basic_stringbuf_str.cpp  
 // compile with: /EHsc  
 #include <iostream>  

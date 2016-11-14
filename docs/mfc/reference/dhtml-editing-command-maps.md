@@ -2,7 +2,6 @@
 title: "DHTML Editing Command Maps | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,9 +49,7 @@ The following macros can be used to map DHTML editing commands in [CHtmlEditView
  Declares a DHTML editing command map in a class.  
   
 ```  
- 
-DECLARE_DHTMLEDITING_CMDMAP(className)  
- 
+DECLARE_DHTMLEDITING_CMDMAP(className)   
 ```  
   
 ### Parameters  
@@ -71,9 +68,7 @@ DECLARE_DHTMLEDITING_CMDMAP(className)
  Starts the definition of a DHTML editing command map within a class.  
   
 ```  
- 
-BEGIN_DHTMLEDITING_CMDMAP(className)  
- 
+BEGIN_DHTMLEDITING_CMDMAP(className)   
 ```  
   
 ### Parameters  
@@ -89,9 +84,7 @@ BEGIN_DHTMLEDITING_CMDMAP(className)
  Marks the end of a DHTML editing command map.  
   
 ```  
- 
-END_DHTMLEDITING_CMDMAP()  
- 
+END_DHTMLEDITING_CMDMAP()   
 ```  
   
 ### Remarks  
@@ -104,10 +97,7 @@ END_DHTMLEDITING_CMDMAP()
  Maps a command ID to an HTML editing command.  
   
 ```  
- 
-DHTMLEDITING_CMD_ENTRY(
-cmdID  ,   dhtmlcmdID)  
- 
+DHTMLEDITING_CMD_ENTRY(cmdID,  dhtmlcmdID)   
 ```  
   
 ### Parameters  
@@ -124,12 +114,7 @@ cmdID  ,   dhtmlcmdID)
  Maps a command ID to an HTML editing command and message handler.  
   
 ```  
- 
-DHTMLEDITING_CMD_ENTRY_FUNC(
-cmdID  ,   
-dhtmlcmdID  ,
-    member_func_name)  
- 
+DHTMLEDITING_CMD_ENTRY_FUNC(cmdID, dhtmlcmdID,  member_func_name)   
 ```  
   
 ### Parameters  
@@ -149,12 +134,7 @@ dhtmlcmdID  ,
  Maps a command ID to an HTML editing command and user interface element.  
   
 ```  
- 
-DHTMLEDITING_CMD_ENTRY_TYPE(
-cmdID  ,   
-dhtmlcmdID  ,
-    elemType)  
- 
+DHTMLEDITING_CMD_ENTRY_TYPE(cmdID  ,   dhtmlcmdID  ,    elemType)  
 ```  
   
 ### Parameters  
@@ -174,13 +154,7 @@ dhtmlcmdID  ,
  Maps a command ID to an HTML editing command, message handler, and user interface element.  
   
 ```  
- 
-DHTMLEDITING_CMD_ENTRY_FUNC_TYPE(
-cmdID  ,   
-dhtmlcmdID  ,   
-member_func_name  ,
-    elemType)  
- 
+DHTMLEDITING_CMD_ENTRY_FUNC_TYPE(cmdID, dhtmlcmdID, member_func_name,  elemType)   
 ```  
   
 ### Parameters  

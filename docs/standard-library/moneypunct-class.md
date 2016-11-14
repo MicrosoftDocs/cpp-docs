@@ -2,7 +2,6 @@
 title: "moneypunct Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -126,7 +125,7 @@ string_type curr_symbol() const;
   
 ### Example  
   
-```  
+```cpp  
 // moneypunct_curr_symbol.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -160,7 +159,7 @@ CharType decimal_point() const;
   
 ### Example  
   
-```  
+```cpp  
 // moneypunct_decimal_pt.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -336,7 +335,7 @@ int frac_digits() const;
   
 ### Example  
   
-```  
+```cpp  
 // moneypunct_frac_digits.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -402,7 +401,7 @@ string grouping() const;
   
 ### Example  
   
-```  
+```cpp  
 // moneypunct_grouping.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -492,7 +491,7 @@ pattern neg_format() const;
   
 ### Example  
   
-```  
+```cpp  
 // moneypunct_neg_format.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -537,7 +536,7 @@ string_type negative_sign() const;
   
 ### Example  
   
-```  
+```cpp  
 // moneypunct_neg_sign.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -596,7 +595,7 @@ pattern pos_format() const;
   
 ### Example  
   
-```  
+```cpp  
 // moneypunct_pos_format.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -641,7 +640,7 @@ string_type positive_sign() const;
   
 ### Example  
   
-```  
+```cpp  
 // moneypunct_pos_sign.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -710,7 +709,7 @@ CharType thousands_sep() const;
   
 ### Example  
   
-```  
+```cpp  
 // moneypunct_thou_sep.cpp  
 // compile with: /EHsc  
 #include <locale>  

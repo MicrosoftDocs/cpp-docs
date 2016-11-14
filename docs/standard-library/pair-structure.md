@@ -2,7 +2,6 @@
 title: "pair Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,27 +41,28 @@ translation.priority.ht:
 A struct that provides for the ability to treat two objects as a single object.  
   
 ## Syntax  
-  
+```  
 struct pair
-   {
-   typedef T1 first_type;
-   typedef T2 second_type;
-   T1 first;
-   T2 second;   constexpr pair();
-   constexpr pair(
-   const T1& Val1,
-   const T2& Val2);
-   template \<class Other1, class Other2>
-   constexpr pair(
-   const pair\<Other1, Other2>& Right);
-   template \<class Other1, class Other2>
-   constexpr pair(
-   const pair \<Other1 Val1, Other2 Val2>&& Right);
-   template \<class Other1, class Other2>
-   constexpr pair(
-   Other1&& Val1, Other2&& Val2);
-   };  
-  
+{
+    typedef T1 first_type;
+    typedef T2 second_type;
+    T1 first;
+    T2 second;
+    constexpr pair();
+    constexpr pair(
+        const T1& Val1,
+        const T2& Val2);
+
+    template <class Other1, class Other2>
+    constexpr pair(const pair<Other1, Other2>& Right);
+
+    template <class Other1, class Other2>
+    constexpr pair(const pair <Other1 Val1, Other2 Val2>&& Right);
+
+    template <class Other1, class Other2>
+    constexpr pair(Other1&& Val1, Other2&& Val2);
+};
+```  
 #### Parameters  
  `Val1`  
  Value initializing the first element of `pair`.  
@@ -87,7 +87,7 @@ struct pair
   
 ## Example  
   
-```  
+```cpp  
 // utility_pair.cpp  
 // compile with: /EHsc  
 #include <utility>  

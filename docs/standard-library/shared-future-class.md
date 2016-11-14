@@ -2,7 +2,6 @@
 title: "shared_future Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -151,7 +150,7 @@ bool valid() noexcept;
 ##  <a name="shared_future__wait_method"></a>  shared_future::wait Method  
  Blocks the current thread until the *associated asynchronous state* is *ready*.  
   
-```cpp
+```
 void wait() const;
 ```  
   
@@ -161,7 +160,7 @@ void wait() const;
 ##  <a name="shared_future__wait_for_method"></a>  shared_future::wait_for Method  
  Blocks the current thread until the associated asynchronous state is *ready* or until a specified time has elapsed.  
   
-```cpp
+```
 template <class Rep, class Period>
 future_status wait_for(
     const chrono::duration<Rep, Period>& Rel_time) const;
@@ -180,7 +179,7 @@ future_status wait_for(
 ##  <a name="shared_future__wait_until_method"></a>  shared_future::wait_until Method  
  Blocks the current thread until the associated asynchronous state is *ready* or until after a specified time point.  
   
-```cpp
+```
 template <class Clock, class Duration>
 future_status wait_until(
     const chrono::time_point<Clock, Duration>& Abs_time) const;

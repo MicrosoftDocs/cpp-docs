@@ -2,7 +2,6 @@
 title: "unordered_map Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -152,24 +151,24 @@ typedef Alloc allocator_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_allocator_type.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
   
-typedef std::unordered_map<char, int> Mymap;   
-typedef std::allocator<std::pair<const char, int> > Myalloc;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    Mymap::allocator_type al = c1.get_allocator();   
-    std::cout << "al == std::allocator() is "   
-        << std::boolalpha << (al == Myalloc()) << std::endl;   
-  
-    return (0);   
-    }  
+typedef std::unordered_map<char, int> Mymap;
+typedef std::allocator<std::pair<const char, int> > Myalloc;
+int main()
+{
+    Mymap c1;
+
+    Mymap::allocator_type al = c1.get_allocator();
+    std::cout << "al == std::allocator() is "
+        << std::boolalpha << (al == Myalloc()) << std::endl;
+
+    return (0);
+}
   
 ```  
   
@@ -182,7 +181,6 @@ al == std::allocator() is true
   
 ```  
 Ty& at(const Key& key);
-
 const Ty& at(const Key& key) const;
 ```  
   
@@ -201,28 +199,29 @@ const Ty& at(const Key& key) const;
   
 ### Example  
   
-```  
+```cpp  
 // unordered_map_at.cpp  
 // compile with: /EHsc  
 #include <unordered_map>  
 #include <iostream>  
   
 typedef std::unordered_map<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    c1.insert(Mymap::value_type('a', 1));   
-    c1.insert(Mymap::value_type('b', 2));   
-    c1.insert(Mymap::value_type('c', 3));   
-  
-// find and show elements  
-    std::cout << "c1.at('a') == " << c1.at('a') << std::endl;   
-    std::cout << "c1.at('b') == " << c1.at('b') << std::endl;   
-    std::cout << "c1.at('c') == " << c1.at('c') << std::endl;   
-  
-    return (0);   
-    }   
+typedef std::unordered_map<char, int> Mymap;
+int main()
+{
+    Mymap c1;
+
+    c1.insert(Mymap::value_type('a', 1));
+    c1.insert(Mymap::value_type('b', 2));
+    c1.insert(Mymap::value_type('c', 3));
+
+    // find and show elements  
+    std::cout << "c1.at('a') == " << c1.at('a') << std::endl;
+    std::cout << "c1.at('b') == " << c1.at('b') << std::endl;
+    std::cout << "c1.at('c') == " << c1.at('c') << std::endl;
+
+    return (0);
+}  
 ```  
   
 ##  <a name="unordered_map__begin"></a>  unordered_map::begin  
@@ -230,12 +229,8 @@ int main()
   
 ```  
 iterator begin();
-
-const_iterator begin() const;
-
- 
+const_iterator begin() const; 
 local_iterator begin(size_type nbucket);
-
 const_local_iterator begin(size_type nbucket) const;
 ```  
   
@@ -251,41 +246,40 @@ const_local_iterator begin(size_type nbucket) const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_begin.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
   
-typedef std::unordered_map<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    c1.insert(Mymap::value_type('a', 1));   
-    c1.insert(Mymap::value_type('b', 2));   
-    c1.insert(Mymap::value_type('c', 3));   
-  
-// display contents " [c 3] [b 2] [a 1]"   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-// inspect first two items " [c 3] [b 2]"   
-    Mymap::iterator it2 = c1.begin();   
-    std::cout << " [" << it2->first << ", " << it2->second << "]";   
-    ++it2;   
-    std::cout << " [" << it2->first << ", " << it2->second << "]";   
-    std::cout << std::endl;   
-  
-// inspect bucket containing 'a'   
-    Mymap::const_local_iterator lit = c1.begin(c1.bucket('a'));   
-    std::cout << " [" << lit->first << ", " << lit->second << "]";   
-  
-    return (0);   
-    }  
-  
+#typedef std::unordered_map<char, int> Mymap;
+int main()
+{
+    Mymap c1;
+
+    c1.insert(Mymap::value_type('a', 1));
+    c1.insert(Mymap::value_type('b', 2));
+    c1.insert(Mymap::value_type('c', 3));
+
+    // display contents " [c 3] [b 2] [a 1]"   
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    // inspect first two items " [c 3] [b 2]"   
+    Mymap::iterator it2 = c1.begin();
+    std::cout << " [" << it2->first << ", " << it2->second << "]";
+    ++it2;
+    std::cout << " [" << it2->first << ", " << it2->second << "]";
+    std::cout << std::endl;
+
+    // inspect bucket containing 'a'   
+    Mymap::const_local_iterator lit = c1.begin(c1.bucket('a'));
+    std::cout << " [" << lit->first << ", " << lit->second << "]";
+
+    return (0);
+}
 ```  
   
 ```Output  
@@ -310,36 +304,35 @@ size_type bucket(const Key& keyval) const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_bucket.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
   
-typedef std::unordered_map<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    c1.insert(Mymap::value_type('a', 1));   
-    c1.insert(Mymap::value_type('b', 2));   
-    c1.insert(Mymap::value_type('c', 3));   
-  
-// display contents " [c 3] [b 2] [a 1]"   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-// display buckets for keys   
-    Mymap::size_type bs = c1.bucket('a');   
-    std::cout << "bucket('a') == " << bs << std::endl;   
-    std::cout << "bucket_size(" << bs << ") == " << c1.bucket_size(bs)   
-        << std::endl;   
-  
-    return (0);   
-    }  
-  
+typedef std::unordered_map<char, int> Mymap;
+int main()
+{
+    Mymap c1;
+
+    c1.insert(Mymap::value_type('a', 1));
+    c1.insert(Mymap::value_type('b', 2));
+    c1.insert(Mymap::value_type('c', 3));
+
+    // display contents " [c 3] [b 2] [a 1]"   
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    // display buckets for keys   
+    Mymap::size_type bs = c1.bucket('a');
+    std::cout << "bucket('a') == " << bs << std::endl;
+    std::cout << "bucket_size(" << bs << ") == " << c1.bucket_size(bs)
+        << std::endl;
+
+    return (0);
+}
 ```  
   
 ```Output  
@@ -360,78 +353,78 @@ size_type bucket_count() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_bucket_count.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
   
-typedef std::unordered_map<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    c1.insert(Mymap::value_type('a', 1));   
-    c1.insert(Mymap::value_type('b', 2));   
-    c1.insert(Mymap::value_type('c', 3));   
-  
-// display contents " [c 3] [b 2] [a 1]"   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-// inspect current parameters   
-    std::cout << "bucket_count() == " << c1.bucket_count() << std::endl;   
-    std::cout << "load_factor() == " << c1.load_factor() << std::endl;   
-    std::cout << "max_bucket_count() == "   
-        << c1.max_bucket_count() << std::endl;   
-    std::cout << "max_load_factor() == "   
-        << c1.max_load_factor() << std::endl;   
-    std::cout << std::endl;   
-  
-// change max_load_factor and redisplay   
-    c1.max_load_factor(0.10f);   
-    std::cout << "bucket_count() == " << c1.bucket_count() << std::endl;   
-    std::cout << "load_factor() == " << c1.load_factor() << std::endl;   
-    std::cout << "max_bucket_count() == "   
-        << c1.max_bucket_count() << std::endl;   
-    std::cout << "max_load_factor() == "   
-        << c1.max_load_factor() << std::endl;   
-    std::cout << std::endl;   
-  
-// rehash and redisplay   
-    c1.rehash(100);   
-    std::cout << "bucket_count() == " << c1.bucket_count() << std::endl;   
-    std::cout << "load_factor() == " << c1.load_factor() << std::endl;   
-    std::cout << "max_bucket_count() == "   
-        << c1.max_bucket_count() << std::endl;   
-    std::cout << "max_load_factor() == "   
-        << c1.max_load_factor() << std::endl;   
-    std::cout << std::endl;   
-  
-    return (0);   
-    }  
-  
-```  
-  
-```Output  
- [c, 3] [b, 2] [a, 1]  
-bucket_count() == 8  
-load_factor() == 0.375  
-max_bucket_count() == 8  
-max_load_factor() == 4  
-  
-bucket_count() == 8  
-load_factor() == 0.375  
-max_bucket_count() == 8  
-max_load_factor() == 0.1  
-  
-bucket_count() == 128  
-load_factor() == 0.0234375  
-max_bucket_count() == 128  
-max_load_factor() == 0.1  
-  
+typedef std::unordered_map<char, int> Mymap;
+int main()
+{
+    Mymap c1;
+
+    c1.insert(Mymap::value_type('a', 1));
+    c1.insert(Mymap::value_type('b', 2));
+    c1.insert(Mymap::value_type('c', 3));
+
+    // display contents " [c 3] [b 2] [a 1]"   
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    // inspect current parameters   
+    std::cout << "bucket_count() == " << c1.bucket_count() << std::endl;
+    std::cout << "load_factor() == " << c1.load_factor() << std::endl;
+    std::cout << "max_bucket_count() == "
+        << c1.max_bucket_count() << std::endl;
+    std::cout << "max_load_factor() == "
+        << c1.max_load_factor() << std::endl;
+    std::cout << std::endl;
+
+    // change max_load_factor and redisplay   
+    c1.max_load_factor(0.10f);
+    std::cout << "bucket_count() == " << c1.bucket_count() << std::endl;
+    std::cout << "load_factor() == " << c1.load_factor() << std::endl;
+    std::cout << "max_bucket_count() == "
+        << c1.max_bucket_count() << std::endl;
+    std::cout << "max_load_factor() == "
+        << c1.max_load_factor() << std::endl;
+    std::cout << std::endl;
+
+    // rehash and redisplay   
+    c1.rehash(100);
+    std::cout << "bucket_count() == " << c1.bucket_count() << std::endl;
+    std::cout << "load_factor() == " << c1.load_factor() << std::endl;
+    std::cout << "max_bucket_count() == "
+        << c1.max_bucket_count() << std::endl;
+    std::cout << "max_load_factor() == "
+        << c1.max_load_factor() << std::endl;
+    std::cout << std::endl;
+
+    return (0);
+}
+
+```
+
+```Output
+[c, 3][b, 2][a, 1]
+bucket_count() == 8
+load_factor() == 0.375
+max_bucket_count() == 8
+max_load_factor() == 4
+
+bucket_count() == 8
+load_factor() == 0.375
+max_bucket_count() == 8
+max_load_factor() == 0.1
+
+bucket_count() == 128
+load_factor() == 0.0234375
+max_bucket_count() == 128
+max_load_factor() == 0.1
+
 ```  
   
 ##  <a name="unordered_map__bucket_size"></a>  unordered_map::bucket_size  
@@ -450,36 +443,35 @@ size_type bucket_size(size_type nbucket) const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_bucket_size.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
   
 typedef std::unordered_map<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    c1.insert(Mymap::value_type('a', 1));   
-    c1.insert(Mymap::value_type('b', 2));   
-    c1.insert(Mymap::value_type('c', 3));   
-  
-// display contents " [c 3] [b 2] [a 1]"   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-// display buckets for keys   
-    Mymap::size_type bs = c1.bucket('a');   
-    std::cout << "bucket('a') == " << bs << std::endl;   
-    std::cout << "bucket_size(" << bs << ") == " << c1.bucket_size(bs)   
-        << std::endl;   
-  
-    return (0);   
-    }  
-  
+int main()
+{
+    Mymap c1;
+
+    c1.insert(Mymap::value_type('a', 1));
+    c1.insert(Mymap::value_type('b', 2));
+    c1.insert(Mymap::value_type('c', 3));
+
+    // display contents " [c 3] [b 2] [a 1]"   
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    // display buckets for keys   
+    Mymap::size_type bs = c1.bucket('a');
+    std::cout << "bucket('a') == " << bs << std::endl;
+    std::cout << "bucket_size(" << bs << ") == " << c1.bucket_size(bs)
+        << std::endl;
+
+    return (0);
+}
 ```  
   
 ```Output  
@@ -532,7 +524,6 @@ const_iterator cend() const;
 auto i1 = Container.end();
 // i1 is Container<T>::iterator   
 auto i2 = Container.cend();
-
 // i2 is Container<T>::const_iterator  
 ```  
   
@@ -550,47 +541,47 @@ void clear();
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_clear.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
   
 typedef std::unordered_map<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    c1.insert(Mymap::value_type('a', 1));   
-    c1.insert(Mymap::value_type('b', 2));   
-    c1.insert(Mymap::value_type('c', 3));   
-  
-// display contents " [c 3] [b 2] [a 1]"   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-// clear the container and reinspect   
-    c1.clear();   
-    std::cout << "size == " << c1.size() << std::endl;   
-    std::cout << "empty() == " << std::boolalpha << c1.empty() << std::endl;   
-    std::cout << std::endl;   
-  
-    c1.insert(Mymap::value_type('d', 4));   
-    c1.insert(Mymap::value_type('e', 5));   
-  
-// display contents " [e 5] [d 4]"   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-    std::cout << "size == " << c1.size() << std::endl;   
-    std::cout << "empty() == " << std::boolalpha << c1.empty() << std::endl;   
-  
-    return (0);   
-    }  
+int main()
+{
+    Mymap c1;
+
+    c1.insert(Mymap::value_type('a', 1));
+    c1.insert(Mymap::value_type('b', 2));
+    c1.insert(Mymap::value_type('c', 3));
+
+    // display contents " [c 3] [b 2] [a 1]"   
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    // clear the container and reinspect   
+    c1.clear();
+    std::cout << "size == " << c1.size() << std::endl;
+    std::cout << "empty() == " << std::boolalpha << c1.empty() << std::endl;
+    std::cout << std::endl;
+
+    c1.insert(Mymap::value_type('d', 4));
+    c1.insert(Mymap::value_type('e', 5));
+
+    // display contents " [e 5] [d 4]"   
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    std::cout << "size == " << c1.size() << std::endl;
+    std::cout << "empty() == " << std::boolalpha << c1.empty() << std::endl;
+
+    return (0);
+}
   
 ```  
   
@@ -616,29 +607,29 @@ typedef T1 const_iterator;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_const_iterator.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
   
-typedef std::unordered_map<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    c1.insert(Mymap::value_type('a', 1));   
-    c1.insert(Mymap::value_type('b', 2));   
-    c1.insert(Mymap::value_type('c', 3));   
-  
-// display contents " [c 3] [b 2] [a 1]"   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-    return (0);   
-    }  
+typedef std::unordered_map<char, int> Mymap;
+int main()
+{
+    Mymap c1;
+
+    c1.insert(Mymap::value_type('a', 1));
+    c1.insert(Mymap::value_type('b', 2));
+    c1.insert(Mymap::value_type('c', 3));
+
+    // display contents " [c 3] [b 2] [a 1]"   
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    return (0);
+}
   
 ```  
   
@@ -658,33 +649,33 @@ typedef T5 const_local_iterator;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_const_local_iterator.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
-  
-typedef std::unordered_map<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    c1.insert(Mymap::value_type('a', 1));   
-    c1.insert(Mymap::value_type('b', 2));   
-    c1.insert(Mymap::value_type('c', 3));   
-  
-// display contents " [c 3] [b 2] [a 1]"   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-// inspect bucket containing 'a'   
-    Mymap::const_local_iterator lit = c1.begin(c1.bucket('a'));   
-    std::cout << " [" << lit->first << ", " << lit->second << "]";   
-  
-    return (0);   
-    }  
+
+typedef std::unordered_map<char, int> Mymap;
+int main()
+{
+    Mymap c1;
+
+    c1.insert(Mymap::value_type('a', 1));
+    c1.insert(Mymap::value_type('b', 2));
+    c1.insert(Mymap::value_type('c', 3));
+
+    // display contents " [c 3] [b 2] [a 1]"   
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    // inspect bucket containing 'a'   
+    Mymap::const_local_iterator lit = c1.begin(c1.bucket('a'));
+    std::cout << " [" << lit->first << ", " << lit->second << "]";
+
+    return (0);
+}
   
 ```  
   
@@ -705,32 +696,32 @@ typedef Alloc::const_pointer const_pointer;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_const_pointer.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
-  
-typedef std::unordered_map<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    c1.insert(Mymap::value_type('a', 1));   
-    c1.insert(Mymap::value_type('b', 2));   
-    c1.insert(Mymap::value_type('c', 3));   
-  
-// display contents " [c 3] [b 2] [a 1]"   
-    for (Mymap::iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        {   
-        Mymap::const_pointer p = &*it;   
-        std::cout << " [" << p->first << ", " << p->second << "]";   
-        }   
-    std::cout << std::endl;   
-  
-    return (0);   
-    }  
+
+typedef std::unordered_map<char, int> Mymap;
+int main()
+{
+    Mymap c1;
+
+    c1.insert(Mymap::value_type('a', 1));
+    c1.insert(Mymap::value_type('b', 2));
+    c1.insert(Mymap::value_type('c', 3));
+
+    // display contents " [c 3] [b 2] [a 1]"   
+    for (Mymap::iterator it = c1.begin();
+        it != c1.end(); ++it)
+    {
+        Mymap::const_pointer p = &*it;
+        std::cout << " [" << p->first << ", " << p->second << "]";
+    }
+    std::cout << std::endl;
+
+    return (0);
+}
   
 ```  
   
@@ -750,33 +741,33 @@ typedef Alloc::const_reference const_reference;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_const_reference.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
   
 typedef std::unordered_map<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    c1.insert(Mymap::value_type('a', 1));   
-    c1.insert(Mymap::value_type('b', 2));   
-    c1.insert(Mymap::value_type('c', 3));   
-  
-// display contents " [c 3] [b 2] [a 1]"   
-    for (Mymap::iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        {   
-        Mymap::const_reference ref = *it;   
-        std::cout << " [" << ref.first << ", " << ref.second << "]";   
-        }   
-    std::cout << std::endl;   
-  
-    return (0);   
-    }  
-  
+int main()
+{
+    Mymap c1;
+
+    c1.insert(Mymap::value_type('a', 1));
+    c1.insert(Mymap::value_type('b', 2));
+    c1.insert(Mymap::value_type('c', 3));
+
+    // display contents " [c 3] [b 2] [a 1]"   
+    for (Mymap::iterator it = c1.begin();
+        it != c1.end(); ++it)
+    {
+        Mymap::const_reference ref = *it;
+        std::cout << " [" << ref.first << ", " << ref.second << "]";
+    }
+    std::cout << std::endl;
+
+    return (0);
+}
+
 ```  
   
 ```Output  
@@ -799,34 +790,34 @@ size_type count(const Key& keyval) const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_count.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
   
 typedef std::unordered_map<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    c1.insert(Mymap::value_type('a', 1));   
-    c1.insert(Mymap::value_type('b', 2));   
-    c1.insert(Mymap::value_type('c', 3));   
-  
-// display contents " [c 3] [b 2] [a 1]"   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-    std::cout << "count('A') == " << c1.count('A') << std::endl;   
-    std::cout << "count('b') == " << c1.count('b') << std::endl;   
-    std::cout << "count('C') == " << c1.count('C') << std::endl;   
-  
-    return (0);   
-    }  
-  
+int main()
+{
+    Mymap c1;
+
+    c1.insert(Mymap::value_type('a', 1));
+    c1.insert(Mymap::value_type('b', 2));
+    c1.insert(Mymap::value_type('c', 3));
+
+    // display contents " [c 3] [b 2] [a 1]"   
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    std::cout << "count('A') == " << c1.count('A') << std::endl;
+    std::cout << "count('b') == " << c1.count('b') << std::endl;
+    std::cout << "count('C') == " << c1.count('C') << std::endl;
+
+    return (0);
+}
+
 ```  
   
 ```Output  
@@ -848,44 +839,43 @@ typedef T3 difference_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_difference_type.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
   
 typedef std::unordered_map<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    c1.insert(Mymap::value_type('a', 1));   
-    c1.insert(Mymap::value_type('b', 2));   
-    c1.insert(Mymap::value_type('c', 3));   
-  
-// display contents " [c 3] [b 2] [a 1]"   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-// compute positive difference   
-    Mymap::difference_type diff = 0;   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        ++diff;   
-    std::cout << "end()-begin() == " << diff << std::endl;   
-  
-// compute negative difference   
-    diff = 0;   
-    for (Mymap::const_iterator it = c1.end();   
-        it != c1.begin(); --it)   
-        --diff;   
-    std::cout << "begin()-end() == " << diff << std::endl;   
-  
-    return (0);   
-    }  
-  
+int main()
+{
+    Mymap c1;
+
+    c1.insert(Mymap::value_type('a', 1));
+    c1.insert(Mymap::value_type('b', 2));
+    c1.insert(Mymap::value_type('c', 3));
+
+    // display contents " [c 3] [b 2] [a 1]"   
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    // compute positive difference   
+    Mymap::difference_type diff = 0;
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        ++diff;
+    std::cout << "end()-begin() == " << diff << std::endl;
+
+    // compute negative difference   
+    diff = 0;
+    for (Mymap::const_iterator it = c1.end();
+        it != c1.begin(); --it)
+        --diff;
+    std::cout << "begin()-end() == " << diff << std::endl;
+
+    return (0);
+}
 ```  
   
 ```Output  
@@ -899,9 +889,7 @@ begin()-end() == -3
   
 ```  
 template <class... Args>  
-pair<iterator, bool>  
-emplace(
-    Args&&... args);
+pair<iterator, bool>  emplace( Args&&... args);
 ```  
   
 ### Parameters  
@@ -928,9 +916,7 @@ emplace(
   
 ```  
 template <class... Args>  
-iterator emplace_hint(
-    const_iterator where,  
-    Args&&... args);
+iterator emplace_hint(const_iterator where, Args&&... args);
 ```  
   
 ### Parameters  
@@ -967,48 +953,47 @@ bool empty() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_empty.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
   
 typedef std::unordered_map<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    c1.insert(Mymap::value_type('a', 1));   
-    c1.insert(Mymap::value_type('b', 2));   
-    c1.insert(Mymap::value_type('c', 3));   
-  
-// display contents " [c 3] [b 2] [a 1]"   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-// clear the container and reinspect   
-    c1.clear();   
-    std::cout << "size == " << c1.size() << std::endl;   
-    std::cout << "empty() == " << std::boolalpha << c1.empty() << std::endl;   
-    std::cout << std::endl;   
-  
-    c1.insert(Mymap::value_type('d', 4));   
-    c1.insert(Mymap::value_type('e', 5));   
-  
-// display contents " [e 5] [d 4]"   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-    std::cout << "size == " << c1.size() << std::endl;   
-    std::cout << "empty() == " << std::boolalpha << c1.empty() << std::endl;   
-  
-    return (0);   
-    }  
-  
+int main()
+{
+    Mymap c1;
+
+    c1.insert(Mymap::value_type('a', 1));
+    c1.insert(Mymap::value_type('b', 2));
+    c1.insert(Mymap::value_type('c', 3));
+
+    // display contents " [c 3] [b 2] [a 1]"   
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    // clear the container and reinspect   
+    c1.clear();
+    std::cout << "size == " << c1.size() << std::endl;
+    std::cout << "empty() == " << std::boolalpha << c1.empty() << std::endl;
+    std::cout << std::endl;
+
+    c1.insert(Mymap::value_type('d', 4));
+    c1.insert(Mymap::value_type('e', 5));
+
+    // display contents " [e 5] [d 4]"   
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    std::cout << "size == " << c1.size() << std::endl;
+    std::cout << "empty() == " << std::boolalpha << c1.empty() << std::endl;
+
+    return (0);
+}
 ```  
   
 ```Output  
@@ -1026,12 +1011,8 @@ empty() == false
   
 ```  
 iterator end();
-
-const_iterator end() const;
-
- 
+const_iterator end() const; 
 local_iterator end(size_type nbucket);
-
 const_local_iterator end(size_type nbucket) const;
 ```  
   
@@ -1049,11 +1030,8 @@ const_local_iterator end(size_type nbucket) const;
  Finds range that matches a specified key.  
   
 ```  
-std::pair<iterator, iterator>  
-    equal_range(const Key& keyval);
-
-std::pair<const_iterator, const_iterator>  
-    equal_range(const Key& keyval) const;
+std::pair<iterator, iterator>  equal_range(const Key& keyval);
+std::pair<const_iterator, const_iterator>  equal_range(const Key& keyval) const;
 ```  
   
 ### Parameters  
@@ -1065,47 +1043,47 @@ std::pair<const_iterator, const_iterator>
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_equal_range.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
   
-typedef std::unordered_map<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    c1.insert(Mymap::value_type('a', 1));   
-    c1.insert(Mymap::value_type('b', 2));   
-    c1.insert(Mymap::value_type('c', 3));   
-  
-// display contents " [c 3] [b 2] [a 1]"   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-// display results of failed search   
-    std::pair<Mymap::iterator, Mymap::iterator> pair1 =   
-        c1.equal_range('x');   
-    std::cout << "equal_range('x'):";   
-    for (; pair1.first != pair1.second; ++pair1.first)   
-        std::cout << " [" << pair1.first->first   
-            << ", " << pair1.first->second << "]";   
-    std::cout << std::endl;   
-  
-// display results of successful search   
-    pair1 = c1.equal_range('b');   
-    std::cout << "equal_range('b'):";   
-    for (; pair1.first != pair1.second; ++pair1.first)   
-        std::cout << " [" << pair1.first->first   
-            << ", " << pair1.first->second << "]";   
-    std::cout << std::endl;   
-  
-    return (0);   
-    }  
-  
+typedef std::unordered_map<char, int> Mymap;
+int main()
+{
+    Mymap c1;
+
+    c1.insert(Mymap::value_type('a', 1));
+    c1.insert(Mymap::value_type('b', 2));
+    c1.insert(Mymap::value_type('c', 3));
+
+    // display contents " [c 3] [b 2] [a 1]"   
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    // display results of failed search   
+    std::pair<Mymap::iterator, Mymap::iterator> pair1 =
+        c1.equal_range('x');
+    std::cout << "equal_range('x'):";
+    for (; pair1.first != pair1.second; ++pair1.first)
+        std::cout << " [" << pair1.first->first
+        << ", " << pair1.first->second << "]";
+    std::cout << std::endl;
+
+    // display results of successful search   
+    pair1 = c1.equal_range('b');
+    std::cout << "equal_range('b'):";
+    for (; pair1.first != pair1.second; ++pair1.first)
+        std::cout << " [" << pair1.first->first
+        << ", " << pair1.first->second << "]";
+    std::cout << std::endl;
+
+    return (0);
+}
+
 ```  
   
 ```Output  
@@ -1118,15 +1096,9 @@ equal_range('b'): [b, 2]
  Removes an element or a range of elements in a unordered_map from specified positions or removes elements that match a specified key.  
   
 ```  
-iterator erase(
-    const_iterator Where);
-
-iterator erase(
-    const_iterator First,  
-    const_iterator Last);
-
-size_type erase(
-    const key_type& Key);
+iterator erase(const_iterator Where);
+iterator erase(const_iterator First, const_iterator Last);
+size_type erase(const key_type& Key);
 ```  
   
 ### Parameters  
@@ -1166,40 +1138,40 @@ const_iterator find(const Key& keyval) const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_find.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
   
 typedef std::unordered_map<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    c1.insert(Mymap::value_type('a', 1));   
-    c1.insert(Mymap::value_type('b', 2));   
-    c1.insert(Mymap::value_type('c', 3));   
-  
-// display contents " [c 3] [b 2] [a 1]"   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-// try to find and fail   
-    std::cout << "find('A') == "   
-        << std::boolalpha << (c1.find('A') != c1.end()) << std::endl;   
-  
-// try to find and succeed   
-    Mymap::iterator it = c1.find('b');   
-    std::cout << "find('b') == "   
-        << std::boolalpha << (it != c1.end())   
-        << ": [" << it->first << ", " << it->second << "]" << std::endl;   
-  
-    return (0);   
-    }  
-  
+int main()
+{
+    Mymap c1;
+
+    c1.insert(Mymap::value_type('a', 1));
+    c1.insert(Mymap::value_type('b', 2));
+    c1.insert(Mymap::value_type('c', 3));
+
+    // display contents " [c 3] [b 2] [a 1]"   
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    // try to find and fail   
+    std::cout << "find('A') == "
+        << std::boolalpha << (c1.find('A') != c1.end()) << std::endl;
+
+    // try to find and succeed   
+    Mymap::iterator it = c1.find('b');
+    std::cout << "find('b') == "
+        << std::boolalpha << (it != c1.end())
+        << ": [" << it->first << ", " << it->second << "]" << std::endl;
+
+    return (0);
+}
+
 ```  
   
 ```Output  
@@ -1220,25 +1192,25 @@ Alloc get_allocator() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_get_allocator.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
   
 typedef std::unordered_map<char, int> Mymap;   
-typedef std::allocator<std::pair<const char, int> > Myalloc;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    Mymap::allocator_type al = c1.get_allocator();   
-    std::cout << "al == std::allocator() is "   
-        << std::boolalpha << (al == Myalloc()) << std::endl;   
-  
-    return (0);   
-    }  
-  
+typedef std::allocator<std::pair<const char, int> > Myalloc;
+int main()
+{
+    Mymap c1;
+
+    Mymap::allocator_type al = c1.get_allocator();
+    std::cout << "al == std::allocator() is "
+        << std::boolalpha << (al == Myalloc()) << std::endl;
+
+    return (0);
+}
+
 ```  
   
 ```Output  
@@ -1257,23 +1229,23 @@ Hash hash_function() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_hash_function.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
   
-typedef std::unordered_map<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    Mymap::hasher hfn = c1.hash_function();   
-    std::cout << "hfn('a') == " << hfn('a') << std::endl;   
-    std::cout << "hfn('b') == " << hfn('b') << std::endl;   
-  
-    return (0);   
-    }  
+typedef std::unordered_map<char, int> Mymap;
+int main()
+{
+    Mymap c1;
+
+    Mymap::hasher hfn = c1.hash_function();
+    std::cout << "hfn('a') == " << hfn('a') << std::endl;
+    std::cout << "hfn('b') == " << hfn('b') << std::endl;
+
+    return (0);
+}
   
 ```  
   
@@ -1294,24 +1266,24 @@ typedef Hash hasher;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_hasher.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
   
-typedef std::unordered_map<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    Mymap::hasher hfn = c1.hash_function();   
-    std::cout << "hfn('a') == " << hfn('a') << std::endl;   
-    std::cout << "hfn('b') == " << hfn('b') << std::endl;   
-  
-    return (0);   
-    }  
-  
+typedef std::unordered_map<char, int> Mymap;
+int main()
+{
+    Mymap c1;
+
+    Mymap::hasher hfn = c1.hash_function();
+    std::cout << "hfn('a') == " << hfn('a') << std::endl;
+    std::cout << "hfn('b') == " << hfn('b') << std::endl;
+
+    return (0);
+}
+
 ```  
   
 ```Output  
@@ -1324,40 +1296,34 @@ hfn('b') == 1647086
   
 ```  
 // (1) single element  
-pair<iterator, bool> insert(
-    const value_type& Val);
+pair<iterator, bool> insert(    const value_type& Val);
 
  
 // (2) single element, perfect forwarded  
 template <class ValTy>  
 pair<iterator, bool>  
-insert(
-    ValTy&& Val);
+insert(    ValTy&& Val);
 
  
 // (3) single element with hint  
-iterator insert(
-    const_iterator Where,  
+iterator insert(    const_iterator Where,  
     const value_type& Val);
 
  
 // (4) single element, perfect forwarded, with hint  
 template <class ValTy>  
-iterator insert(
-    const_iterator Where,  
+iterator insert(    const_iterator Where,  
     ValTy&& Val);
 
  
 // (5) range   
 template <class InputIterator>   
-void insert(
-    InputIterator First,  
+void insert(InputIterator First,  
     InputIterator Last);
 
  
 // (6) initializer list  
-void insert(
-    initializer_list<value_type>  
+void insert(initializer_list<value_type>  
 IList);
 ```  
   
@@ -1408,7 +1374,7 @@ typedef T0 iterator;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_iterator.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -1450,7 +1416,7 @@ Pred key_eq() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_key_eq.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -1489,7 +1455,7 @@ typedef Pred key_equal;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_key_equal.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -1528,7 +1494,7 @@ typedef Key key_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_key_type.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -1582,7 +1548,7 @@ float load_factor() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_load_factor.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -1668,7 +1634,7 @@ typedef T4 local_iterator;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_local_iterator.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -1715,7 +1681,7 @@ typedef Ty mapped_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_mapped_type.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -1769,7 +1735,7 @@ size_type max_bucket_count() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_max_bucket_count.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -1862,7 +1828,7 @@ void max_load_factor(float factor);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_max_load_factor.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -1948,7 +1914,7 @@ size_type max_size() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_max_size.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -1998,7 +1964,7 @@ Ty& operator[](Key&& keyval);
   
 ### Example  
   
-```  
+```cpp  
 // std__unordered_map__unordered_map_operator_sub.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -2080,7 +2046,7 @@ unordered_map& operator=(unordered_map&& right);
   
 ### Example  
   
-```  
+```cpp  
 // unordered_map_operator_as.cpp  
 // compile with: /EHsc  
 #include <unordered_map>  
@@ -2127,7 +2093,7 @@ typedef Alloc::pointer pointer;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_pointer.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -2172,7 +2138,7 @@ typedef Alloc::reference reference;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_reference.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -2221,7 +2187,7 @@ void rehash(size_type nbuckets);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_rehash.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -2293,7 +2259,7 @@ size_type size() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_size.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -2359,7 +2325,7 @@ typedef T2 size_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_size_type.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -2398,7 +2364,7 @@ void swap(unordered_map& right);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_swap.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -2456,8 +2422,7 @@ int main()
  Constructs a container object.  
   
 ```  
-unordered_map(
-    const unordered_map& Right);
+unordered_map(const unordered_map& Right);
 
 explicit unordered_map(
     size_type Bucket_count = N0,  
@@ -2465,15 +2430,9 @@ explicit unordered_map(
     const Comp& Comp = Comp(),  
     const Allocator& Al = Allocator());
 
-unordered_map(
-    unordered_map&& Right);
-
-unordered_map(
-    initializer_list<Type> IList);
-
-unordered_map(
-    initializer_list<Type> IList,   
-    size_type Bucket_count);
+unordered_map(unordered_map&& Right);
+unordered_map(initializer_list<Type> IList);
+unordered_map(initializer_list<Type> IList, size_type Bucket_count);
 
 unordered_map(
     initializer_list<Type> IList,   
@@ -2532,7 +2491,7 @@ unordered_map(
   
 ### Example  
   
-```  
+```cpp  
 // std__unordered_map__unordered_map_construct.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -2666,41 +2625,41 @@ typedef std::pair<const Key, Ty> value_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__unordered_map_value_type.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
   
-typedef std::unordered_map<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    c1.insert(Mymap::value_type('a', 1));   
-    c1.insert(Mymap::value_type('b', 2));   
-    c1.insert(Mymap::value_type('c', 3));   
-  
-// display contents " [c 3] [b 2] [a 1]"   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-// add a value and reinspect   
-    Mymap::key_type key = 'd';   
-    Mymap::mapped_type mapped = 4;   
-    Mymap::value_type val = Mymap::value_type(key, mapped);   
-    c1.insert(val);   
-  
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-    return (0);   
-    }  
-  
+typedef std::unordered_map<char, int> Mymap;
+int main()
+{
+    Mymap c1;
+
+    c1.insert(Mymap::value_type('a', 1));
+    c1.insert(Mymap::value_type('b', 2));
+    c1.insert(Mymap::value_type('c', 3));
+
+    // display contents " [c 3] [b 2] [a 1]"   
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    // add a value and reinspect   
+    Mymap::key_type key = 'd';
+    Mymap::mapped_type mapped = 4;
+    Mymap::value_type val = Mymap::value_type(key, mapped);
+    c1.insert(val);
+
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    return (0);
+}
+
 ```  
   
 ```Output  

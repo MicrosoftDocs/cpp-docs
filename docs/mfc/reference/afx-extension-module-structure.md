@@ -2,7 +2,6 @@
 title: "AFX_EXTENSION_MODULE Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `AFX_EXTENSION_MODULE` is used during initialization of MFC extension DLLs t
 ## Syntax  
   
 ```  
- 
-    struct AFX_EXTENSION_MODULE  
+struct AFX_EXTENSION_MODULE  
 {  
     BOOL bInitialized;  
     HMODULE hModule;  

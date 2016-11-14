@@ -22,7 +22,7 @@ manager: "ghogen"
 ##  <a name="advance"></a>  advance  
  Increments an iterator by a specified number of positions.  
   
-```cpp  
+```  
 template <class InputIterator, class Distance>  
 void advance(
     InputIterator& InIt,   
@@ -110,7 +110,7 @@ back_insert_iterator<Container> back_inserter(Container& _Cont);
   
 ### Example  
   
-```  
+```cpp  
 // iterator_back_inserter.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -162,14 +162,12 @@ After the insertions, the vector vec is: ( 0 1 2 30 40 500 600 ).
   
 ```  
 template <class Container>  
-auto begin(Container& cont)  
- ->  
-decltype(cont.begin());
+auto begin(Container& cont)  `
+   -> decltype(cont.begin());
 
 template <class Container>  
-auto begin(const Container& cont)   
- ->  
-decltype(cont.begin());
+auto begin(const Container& cont)   `
+   -> decltype(cont.begin());
 
 template <class Ty, class Size>  
 Ty *begin(Ty (& array)[Size]);
@@ -262,11 +260,10 @@ error C2228: left of '.begin' must have class/struct/union
 ##  <a name="cbegin"></a>  cbegin  
  Retrieves a const iterator to the first element in a specified container.  
   
-```cpp  
+```  
 template <class Container>  
-auto cbegin(const Container& cont)   
- ->  
-decltype(cont.begin());
+auto cbegin(const Container& cont)   `
+   -> decltype(cont.begin());
 ```  
   
 ### Parameters  
@@ -293,11 +290,10 @@ auto i2 = Container.cbegin();
 ##  <a name="cend"></a>  cend  
  Retrieves a const iterator to the element that follows the last element in the specified container.  
   
-```cpp  
+```  
 template <class Container>  
-auto cend(const Container& cont)   
- ->  
-decltype(cont.end());
+auto cend(const Container& cont)   `
+   -> decltype(cont.end());
 ```  
   
 ### Parameters  
@@ -344,7 +340,7 @@ typename iterator_traits<InputIterator>::difference_type distance(InputIterator 
   
 ### Example  
   
-```  
+```cpp  
 // iterator_distance.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -393,16 +389,14 @@ The distance from L.begin( ) to LPOS is: 7.
 ##  <a name="end"></a>  end  
  Retrieves an iterator to the element that follows the last element in the specified container.  
   
-```cpp  
+```  
 template <class Container>  
-auto end(Container& cont)   
- ->  
-decltype(cont.end());
+auto end(Container& cont)   `
+   -> decltype(cont.end());
 
 template <class Container>  
-auto end(const Container& cont)   
- ->  
-decltype(cont.end());
+auto end(const Container& cont)   `
+   -> decltype(cont.end());
 
 template <class Ty, class Size>  
 Ty *end(Ty (& array)[Size]);
@@ -445,7 +439,7 @@ front_insert_iterator<Container> front_inserter(Container& _Cont);
   
 ### Example  
   
-```  
+```cpp  
 // iterator_front_inserter.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -513,7 +507,7 @@ inserter(
   
 ### Example  
   
-```  
+```cpp  
 // iterator_inserter.cpp  
 // compile with: /EHsc  
 #include <iterator>  

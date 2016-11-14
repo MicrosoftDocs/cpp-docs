@@ -133,3 +133,6 @@
 ### [__writefsbyte, __writefsdword, __writefsqword, __writefsword](writefsbyte-writefsdword-writefsqword-writefsword.md)
 ### [__writegsbyte, __writegsdword, __writegsqword, __writegsword](writegsbyte-writegsdword-writegsqword-writegsword.md)
 ### [__writemsr](writemsr.md)
+# [ARM Assembler](../assembler/arm/TOC.md)
+# [Inline Assembly](../assembler/inline/TOC.md)
+# [Microsoft Macro Assembler (MASM)](../assembler/masm/TOC.md)

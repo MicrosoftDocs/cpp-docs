@@ -2,7 +2,6 @@
 title: "CDaoWorkspaceInfo Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,8 +41,7 @@ The `CDaoWorkspaceInfo` structure contains information about a workspace defined
 ## Syntax  
   
 ```  
- 
-    struct CDaoWorkspaceInfo  
+struct CDaoWorkspaceInfo  
 {  
     CString m_strName;           // Primary  
     CString m_strUserName;       // Secondary  

@@ -2,7 +2,6 @@
 title: "&#39;ReDim&#39; Preserve operand cannot be Nothing | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

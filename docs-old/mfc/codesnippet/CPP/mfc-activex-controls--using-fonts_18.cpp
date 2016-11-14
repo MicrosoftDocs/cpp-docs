@@ -1,1 +1,0 @@
-BEGIN_PROPPAGEIDS(CMyAxFontCtrl, 2)

@@ -2,7 +2,6 @@
 title: "move_iterator Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,39 +42,7 @@ Class template `move_iterator` is a wrapper for an iterator. The move_iterator p
   
 ## Syntax  
 ```
-class move_iterator {
-   public:
-   typedef Iterator iterator_type;
-   typedef typename
-   iterator_traits<Iterator>::iterator_category
-   iterator_category;
-   typedef typename iterator_traits<Iterator>::value_type
-   value_type;
-   typedef typename iterator_traits<Iterator>::difference_type
-   difference_type;
-   typedef Iterator
-   pointer;
-   typedef value_type&&
-   reference;
-   move_iterator();
-   explicit move_iterator (Iterator right);
-   template <class Type>
-   move_iterator (const move_iterator<Type>& right);
-   template <class Type>  
-   move_iterator& operator=(const move_iterator<Type>& right);
-   iterator_type base () const;
-   reference operator* () const;
-   pointer operator-> () const;
-   move_iterator& operator++ ();
-   move_iterator operator++ (int);
-   move_iterator& operator-- ();
-   move_iterator operator-- (int);
-   move_iterator& operator+= (difference_type off);
-   move_iterator operator+ (difference_type off) const;
-   move_iterator& operator-= (difference_type off);
-   move_iterator operator- (difference_type off) const;
-   reference operator[] (difference_type off) const;
-   };  
+class move_iterator;  
 ```
 ## Remarks  
  The template class describes an object that behaves like an iterator except when dereferenced. It stores a random-access iterator of type `Iterator`, accessed by way of the member function `base``()`. All operations on a `move_iterator` are performed directly on the stored iterator, except that the result of `operator*` is implicitly cast to `value_type&&` to make an rvalue reference.  
@@ -138,8 +105,7 @@ RandomIterator base() const;
  The type `difference_type` is a `move_iterator``typedef` based on the iterator trait `difference_type`, and can be used interchangeably with it.  
   
 ```
-typedef typename iterator_traits<RandomIterator>::difference_type
-    difference_type;
+typedef typename iterator_traits<RandomIterator>::difference_type difference_type;
 ```    
   
 ### Remarks  
@@ -149,8 +115,7 @@ typedef typename iterator_traits<RandomIterator>::difference_type
  The type `iterator_category` is a `move_iterator``typedef` based on the iterator trait `iterator_category`, and can be used interchangeably with it.  
   
 ```
-typedef typename iterator_traits<RandomIterator>::iterator_category
-    iterator_category;
+typedef typename iterator_traits<RandomIterator>::iterator_category  iterator_category;
 ```    
   
 ### Remarks  
@@ -171,9 +136,7 @@ typedef RandomIterator iterator_type;
   
 ```
 move_iterator();
-
 explicit move_iterator(RandomIterator right);
-
 template <class Type>
 move_iterator(const move_iterator<Type>& right);
 ```  
@@ -219,7 +182,6 @@ move_iterator& operator-=(difference_type _Off);
   
 ```
 move_iterator& operator++();
-
 move_iterator operator++(int);
 ```  
   
@@ -259,7 +221,6 @@ reference operator[](difference_type _Off) const;
   
 ```
 move_iterator& operator--();
-
 move_iterator operator--();
 ```  
   
@@ -306,8 +267,7 @@ pointer operator->() const;
  The type `pointer` is a `typedef` based on the random iterator `RandomIterator` for `move_iterator`, and can be used interchangeably.  
   
 ```
-typedef RandomIterator
-    pointer;
+typedef RandomIterator  pointer;
 ```    
   
 ### Remarks  
@@ -317,8 +277,7 @@ typedef RandomIterator
  The type `reference` is a `typedef` based on `value_type&&` for `move_iterator`, and can be used interchangeably with `value_type&&`.  
   
 ```
-typedef value_type&&
-    reference;
+typedef value_type&& reference;
 ```    
   
 ### Remarks  
@@ -328,8 +287,7 @@ typedef value_type&&
  The type `value_type` is a `move_iterator``typedef` based on the iterator trait `value_type`, and can be used interchangeably with it.  
   
 ```
-typedef typename iterator_traits<RandomIterator>::value_type
-    value_type;
+typedef typename iterator_traits<RandomIterator>::value_type   value_type;
 ```    
   
 ### Remarks  

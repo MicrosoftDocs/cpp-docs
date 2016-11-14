@@ -60,7 +60,7 @@ bool operator!=(
   
 ### Example  
   
-```  
+```cpp  
 // memory_op_me.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -89,7 +89,7 @@ The allocator objects Alloc & v1Alloc are equal.
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__operator_ne.cpp   
 // compile with: /EHsc   
 #include <memory>   
@@ -158,7 +158,7 @@ bool operator==(
   
 ### Example  
   
-```  
+```cpp  
 // memory_op_eq.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -198,7 +198,7 @@ The allocator objects cAlloc & Alloc are equal.
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__operator_eq.cpp   
 // compile with: /EHsc   
 #include <memory>   
@@ -372,7 +372,7 @@ std::basic_ostream<Elem, Tr>& operator<<(std::basic_ostream<Elem, Tr>& out,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__memory__operator_sl.cpp   
 // compile with: /EHsc   
 #include <memory>   

@@ -1,1 +1,0 @@
-   TEXTMETRICW* lptmw = TEXTMETRICA2W(lptma);

@@ -2,7 +2,6 @@
 title: "Universal Windows Apps (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,7 +33,15 @@ translation.priority.mt:
 ---
 # Universal Windows Apps (C++)
 Univeral Windows Platform (UWP) apps embody a set of design principles that emphasize simple user interfaces that are centered around content that automatically adjusts for different screen sizes on different devices. You create the UI in XAML markup, and the code-behind in native C++. You can also create components (DLLs) that can be consumed by UWP apps that are written in other languages. The API surface for UWP apps is the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)], which is a well-factored library that provides a wide variety of operating system services.  
+<<<<<<< HEAD
+
+> [!TIP]  
+> For Windows 10, you can use the Desktop App Converter to package your existing desktop application for deployment through the Windows Store. For more information, see [Using Visual C++ Runtime in Centennial project](https://blogs.msdn.microsoft.com/vcblog/2016/07/07/using-visual-c-runtime-in-centennial-project) and [Bring your desktop app to the Universal Windows Platform (UWP) with the Desktop Bridge](https://msdn.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root).
+   
+ 
+=======
   
+>>>>>>> 4fb27148eac56a901697540dcd4b3c596ff2c0ef
 > [!NOTE]
 >  Much of the documentation for UWP app development in C++ is on the [Windows Developer Center](http://go.microsoft.com/fwlink/p/?LinkId=255563) website. Some of the links in this article go to that website.  
   
@@ -53,4 +60,8 @@ Univeral Windows Platform (UWP) apps embody a set of design principles that emph
  The [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] provides the low-level COM interfaces by which ISO C++ code can access the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] in an exception-free environment. In most cases, we recommend that you use C++/CX instead of the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] for [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] app development. For information about the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)], see [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
   
 ## See Also  
+<<<<<<< HEAD
  [Visual C++](../top/visual-cpp-in-visual-studio-2015.md)
+=======
+ [Visual C++](../top/visual-cpp-in-visual-studio.md)
+>>>>>>> 4fb27148eac56a901697540dcd4b3c596ff2c0ef

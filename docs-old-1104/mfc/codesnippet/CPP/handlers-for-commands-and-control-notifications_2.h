@@ -1,1 +1,0 @@
-   afx_msg void OnBnClickedMybutton();

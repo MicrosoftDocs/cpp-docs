@@ -1,1 +1,0 @@
-		GetStatusBar ().SetPaneAnimation (nStatusAnimation, NULL);

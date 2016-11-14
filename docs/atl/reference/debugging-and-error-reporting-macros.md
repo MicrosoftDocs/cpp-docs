@@ -2,7 +2,6 @@
 title: "Debugging and Error Reporting Macros | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -106,9 +105,7 @@ ATLASSERT(booleanExpression);
   
 ```
 ATLENSURE(booleanExpression);
-
-ATLENSURE_THROW(
-booleanExpression, hr);
+ATLENSURE_THROW(booleanExpression, hr);
 ```  
   
 ### Parameters  
@@ -153,15 +150,12 @@ ATLTRACENOTIMPL(funcname);
  Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels. Included for backward compatibility.  
   
 ```
-ATLTRACE(
-exp);
+ATLTRACE(exp);
 
 ATLTRACE(
-    DWORD
-category,
- UINTlevel,
-    LPCSTR
-lpszFormat, ...);
+  DWORD category,
+  UINT  level,
+  LPCSTR lpszFormat, ...);
 ```  
   
 ### Parameters  
@@ -184,16 +178,14 @@ lpszFormat, ...);
  Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels.  
   
 ```
-ATLTRACE2(
-exp);
+ATLTRACE2(exp);
 
 ATLTRACE2(
-    DWORD
-category,
- UINTlevel,
-    LPCSTR
-lpszFormat,
- ...);
+    DWORD category,
+    UINT level,
+    LPCSTRlpszFormat,
+    ...
+ );
 ```  
   
 ### Parameters  

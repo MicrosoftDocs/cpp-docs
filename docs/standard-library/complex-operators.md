@@ -24,24 +24,18 @@ manager: "ghogen"
  
 template <class Type>  
 bool operator!=(
-    const complex<Type>& 
-    left ,  
-    const complex<Type>& 
-    right);
+    const complex<Type>& left,  
+    const complex<Type>& right);
 
 template <class Type>  
 bool operator!=(
-    const complex<Type>& 
-    left ,  
-    const Type& 
-    right);
+    const complex<Type>& left,  
+    const Type& right);
 
 template <class Type>  
 bool operator!=(
-    const Type& 
-    left ,  
-    const complex<Type>& 
-    right);
+    const Type& left,  
+    const complex<Type>& right);
 ```  
   
 ### Parameters  
@@ -61,7 +55,7 @@ bool operator!=(
   
 ### Example  
   
-```  
+```cpp  
 // complex_op_NE.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -74,9 +68,9 @@ int main( )
   
    // Example of the first member function  
    // type complex<double> compared with type complex<double>  
-   complex <double> cl1 ( polar (3.0 , pi / 6 ) );  
-   complex <double> cr1a ( polar (3.0 , pi /6 ) );  
-   complex <double> cr1b ( polar (2.0 , pi / 3 ) );  
+   complex <double> cl1 ( polar (3.0, pi / 6 ) );  
+   complex <double> cr1a ( polar (3.0, pi /6 ) );  
+   complex <double> cr1b ( polar (2.0, pi / 3 ) );  
   
    cout << "The left-side complex number is cl1 = " << cl1 << endl;  
    cout << "The 1st right-side complex number is cr1a = " << cr1a << endl;  
@@ -93,8 +87,8 @@ int main( )
   
    // Example of the second member function  
    // type complex<int> compared with type int  
-   complex <int> cl2a ( 3 , 4 );  
-   complex <int> cl2b ( 5 ,0 );  
+   complex <int> cl2a ( 3, 4 );  
+   complex <int> cl2b ( 5,0 );  
    int cr2a =3;  
    int cr2b =5;  
   
@@ -117,8 +111,8 @@ int main( )
    // type double compared with type complex<double>  
    double cl3a =3;  
    double cl3b =5;  
-   complex <double> cr3a ( 3 , 4 );  
-   complex <double> cr3b ( 5 ,0 );  
+   complex <double> cr3a ( 3, 4 );  
+   complex <double> cr3b ( 5,0 );  
   
    cout << "The 1st left-side complex number is cl3a = " << cl3a << endl;  
    cout << "The 1st right-side complex number is cr3a = " << cr3a << endl;  
@@ -165,28 +159,19 @@ The complex numbers cl3b & cr3b are equal.
 ```  
  
 template <class Type>  
-complex<Type>  
-operator*(
-    const complex<Type>& 
-    left ,  
-    const complex<Type>& 
-    right);
+complex<Type> operator*(
+    const complex<Type>& left,  
+    const complex<Type>& right);
 
 template <class Type>  
-complex<Type>  
-operator*(
-    const complex<Type>& 
-    left ,  
-    const Type& 
-    right);
+complex<Type> operator*(
+    const complex<Type>& left,  
+    const Type& right);
 
 template <class Type>  
-complex<Type>  
-operator*(
-    const Type& 
-    left ,  
-    const complex<Type>& 
-    right);
+complex<Type> operator*(
+    const Type& left,  
+    const complex<Type>& right);
 ```  
   
 ### Parameters  
@@ -204,7 +189,7 @@ operator*(
   
 ### Example  
   
-```  
+```cpp  
 // complex_op_mult.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -217,8 +202,8 @@ int main( )
   
    // Example of the first member function  
    // type complex<double> times type complex<double>  
-   complex <double> cl1 ( polar (3.0 , pi / 6 ) );  
-   complex <double> cr1 ( polar (2.0 , pi / 3 ) );  
+   complex <double> cl1 ( polar (3.0, pi / 6 ) );  
+   complex <double> cr1 ( polar (2.0, pi / 3 ) );  
    complex <double> cs1 = cl1 * cr1;  
   
    cout << "The left-side complex number is cl1 = " << cl1 << endl;  
@@ -232,7 +217,7 @@ int main( )
   
    // Example of the second member function  
    // type complex<double> times type double  
-   complex <double> cl2 ( polar ( 3.0 , pi / 6 ) );  
+   complex <double> cl2 ( polar ( 3.0, pi / 6 ) );  
    double cr2 =5;  
    complex <double> cs2 = cl2 * cr2;  
   
@@ -248,7 +233,7 @@ int main( )
    // Example of the third member function  
    // type double times type complex<double>  
    double cl3 = 5;  
-   complex <double> cr3 ( polar (3.0 , pi / 6 ) );  
+   complex <double> cr3 ( polar (3.0, pi / 6 ) );  
    complex <double> cs3 = cl3 * cr3;  
   
    cout << "The left-side complex number is cl3 = " << cl3 << endl;  
@@ -268,34 +253,22 @@ int main( )
 ```  
  
 template <class Type>  
-complex<Type>  
-operator+(
-    const complex<Type>& 
-    left ,  
-    const complex<Type>& 
-    right);
+complex<Type> operator+(
+    const complex<Type>& left,  
+    const complex<Type>& right);
 
 template <class Type>  
-complex<Type>  
-operator+(
-    const complex<Type>& 
-    left ,  
-    const Type& 
-    right);
+complex<Type> operator+(
+    const complex<Type>& left,  
+    const Type& right);
 
 template <class Type>  
-complex<Type>  
-operator+(
-    const Type& 
-    left ,  
-    const complex<Type>& 
-    right);
+complex<Type> operator+(
+    const Type& left,  
+    const complex<Type>& right);
 
 template <class Type>  
-complex<Type>  
-operator+(
-    const complex<Type>& 
-    left);
+complex<Type> operator+(const complex<Type>& left);
 ```  
   
 ### Parameters  
@@ -313,7 +286,7 @@ operator+(
   
 ### Example  
   
-```  
+```cpp  
 // complex_op_add.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -326,8 +299,8 @@ int main( )
   
    // Example of the first member function  
    // type complex<double> plus type complex<double>  
-   complex <double> cl1 ( 3.0 , 4.0 );  
-   complex <double> cr1 ( 2.0 , 5.0 );  
+   complex <double> cl1 ( 3.0, 4.0 );  
+   complex <double> cr1 ( 2.0, 5.0 );  
    complex <double> cs1 = cl1 + cr1;  
   
    cout << "The left-side complex number is cl1 = " << cl1 << endl;  
@@ -341,7 +314,7 @@ int main( )
   
    // Example of the second member function  
    // type complex<double> plus type double  
-   complex <double> cl2 ( 3.0 , 4.0 );  
+   complex <double> cl2 ( 3.0, 4.0 );  
    double cr2 =5.0;  
    complex <double> cs2 = cl2 + cr2;  
   
@@ -357,7 +330,7 @@ int main( )
    // Example of the third member function  
    // type double plus type complex<double>  
    double cl3 = 5.0;  
-   complex <double> cr3 ( 3.0 , 4.0 );  
+   complex <double> cr3 ( 3.0, 4.0 );  
    complex <double> cs3 = cl3 + cr3;  
   
    cout << "The left-side complex number is cl3 = " << cl3 << endl;  
@@ -371,7 +344,7 @@ int main( )
   
    // Example of the fourth member function  
    // plus type complex<double>  
-   complex <double> cr4 ( 3.0 , 4.0 );  
+   complex <double> cr4 ( 3.0, 4.0 );  
    complex <double> cs4 = + cr4;  
   
    cout << "The right-side complex number is cr4 = " << cr4 << endl;  
@@ -414,37 +387,24 @@ The argument of cs4 is: 0.927295 radians, which is 53.1301 degrees.
 ##  <a name="operator-"></a>  operator-  
  Subtracts two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.  
   
-```  
- 
+```   
 template <class Type>  
-complex<Type>  
-operator-(
-    const complex<Type>& 
-    left ,  
-    const complex<Type>& 
-    right);
+complex<Type> operator-(
+    const complex<Type>& left,  
+    const complex<Type>& right);
 
 template <class Type>  
-complex<Type>  
-operator-(
-    const complex<Type>& 
-    left ,  
-    const Type& 
-    right);
+complex<Type> operator-(
+    const complex<Type>& left,  
+    const Type& right);
 
 template <class Type>  
-complex<Type>  
-operator-(
-    const Type& 
-    left ,  
-    const complex<Type>& 
-    right);
+complex<Type> operator-(
+    const Type& left,  
+    const complex<Type>& right);
 
 template <class Type>  
-complex<Type>  
-operator-(
-    const complex<Type>& 
-    left);
+complex<Type> operator-(const complex<Type>& left);
 ```  
   
 ### Parameters  
@@ -464,7 +424,7 @@ operator-(
   
 ### Example  
   
-```  
+```cpp  
 // complex_op_sub.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -477,8 +437,8 @@ int main( )
   
    // Example of the first member function  
    // type complex<double> minus type complex<double>  
-   complex <double> cl1 ( 3.0 , 4.0 );  
-   complex <double> cr1 ( 2.0 , 5.0 );  
+   complex <double> cl1 ( 3.0, 4.0 );  
+   complex <double> cr1 ( 2.0, 5.0 );  
    complex <double> cs1 = cl1 - cr1;  
   
    cout << "The left-side complex number is cl1 = " << cl1 << endl;  
@@ -492,7 +452,7 @@ int main( )
   
    // Example of the second member function  
    // type complex<double> minus type double  
-   complex <double> cl2 ( 3.0 , 4.0 );  
+   complex <double> cl2 ( 3.0, 4.0 );  
    double cr2 =5.0;  
    complex <double> cs2 = cl2 - cr2;  
   
@@ -508,7 +468,7 @@ int main( )
    // Example of the third member function  
    // type double minus type complex<double>  
    double cl3 = 5.0;  
-   complex <double> cr3 ( 3.0 , 4.0 );  
+   complex <double> cr3 ( 3.0, 4.0 );  
    complex <double> cs3 = cl3 - cr3;  
   
    cout << "The left-side complex number is cl3 = " << cl3 << endl;  
@@ -522,7 +482,7 @@ int main( )
   
    // Example of the fourth member function  
    // minus type complex<double>  
-   complex <double> cr4 ( 3.0 , 4.0 );  
+   complex <double> cr4 ( 3.0, 4.0 );  
    complex <double> cs4 = - cr4;  
   
    cout << "The right-side complex number is cr4 = " << cr4 << endl;  
@@ -565,31 +525,21 @@ The argument of cs4 is: -2.2143 radians, which is -126.87 degrees.
 ##  <a name="operator_"></a>  operator/  
  Divides two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.  
   
-```  
- 
+```   
 template <class Type>  
-complex<Type>  
-operator*(
-    const complex<Type>& 
-    left ,  
-    const complex<Type>& 
-    right);
+complex<Type> operator*(
+    const complex<Type>& left,  
+    const complex<Type>& right);
 
 template <class Type>  
-complex<Type>  
-operator*(
-    const complex<Type>& 
-    left ,  
-    const Type& 
-    right);
+complex<Type> operator*(
+    const complex<Type>& left,  
+    const Type& right);
 
 template <class Type>  
-complex<Type>  
-operator*(
-    const Type& 
-    left ,  
-    const complex<Type>& 
-    right);
+complex<Type> operator*(
+    const Type& left,  
+    const complex<Type>& right);
 ```  
   
 ### Parameters  
@@ -607,7 +557,7 @@ operator*(
   
 ### Example  
   
-```  
+```cpp  
 // complex_op_div.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -620,8 +570,8 @@ int main( )
   
    // Example of the first member function  
    // type complex<double> divided by type complex<double>  
-   complex <double> cl1 ( polar ( 3.0 , pi / 6 ) );  
-   complex <double> cr1 ( polar ( 2.0 , pi / 3 ) );  
+   complex <double> cl1 ( polar ( 3.0, pi / 6 ) );  
+   complex <double> cr1 ( polar ( 2.0, pi / 3 ) );  
    complex <double> cs1 = cl1 / cr1;  
   
    cout << "The left-side complex number is cl1 = " << cl1 << endl;  
@@ -636,7 +586,7 @@ int main( )
   
    // example of the second member function  
    // type complex<double> divided by type double  
-   complex <double> cl2 ( polar (3.0 , pi / 6 ) );  
+   complex <double> cl2 ( polar (3.0, pi / 6 ) );  
    double cr2 =5;  
    complex <double> cs2 = cl2 / cr2;  
   
@@ -653,7 +603,7 @@ int main( )
    // Example of the third member function  
    // type double divided by type complex<double>  
    double cl3 = 5;  
-   complex <double> cr3 ( polar ( 3.0 , pi / 6 ) );  
+   complex <double> cr3 ( polar ( 3.0, pi / 6 ) );  
    complex <double> cs3 = cl3 / cr3;  
   
    cout << "The left-side complex number is cl3 = " << cl3 << endl;  
@@ -691,32 +641,29 @@ The argument of cs3 is: -0.523599 radians, which is -30 degrees.
 ##  <a name="operator_lt__lt_"></a>  operator&lt;&lt;  
  Inserts a complex number specified into the output stream.  
   
-```  
- 
+```   
 template <class Type, class Elem, class Traits>  
 basic_ostream<Elem, Traits>& operator<<(
- basic_ostream<Elem, Traits>& 
-_Ostr  ,  
-    const complex<Type>& 
-    right);
+    basic_ostream<Elem, Traits>& Ostr,  
+    const complex<Type>& right);
 ```  
   
 ### Parameters  
- `_Ostr`  
+ `Ostr`  
  The output stream into which the complex number is being entered.  
   
  ` right`  
  The complex number to be entered into the output stream  
   
 ### Return Value  
- Writes the value of the specified complex number to the `_Ostr` in a Cartesian format: ( *real part, imaginary part* ).  
+ Writes the value of the specified complex number to the `Ostr` in a Cartesian format: ( *real part, imaginary part* ).  
   
 ### Remarks  
  The output stream is overloaded so that it will accept any form of a complex number, and its default output format is the Cartesian format.  
   
 ### Example  
   
-```  
+```cpp  
 // complex_op_insert.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -727,10 +674,10 @@ int main( )
    using namespace std;  
    double pi = 3.14159265359;  
   
-   complex <double> c1 ( 3.0 , 4.0 );  
+   complex <double> c1 ( 3.0, 4.0 );  
    cout << "Complex number c1 = " << c1 << endl;  
   
-   complex <double> c2  ( polar ( 2.0 , pi / 6 ) );  
+   complex <double> c2  ( polar ( 2.0, pi / 6 ) );  
    cout << "Complex number c2 = " << c2 << endl;  
   
    // To display in polar form  
@@ -756,24 +703,18 @@ The argument of c2 is: 0.523599 radians, which is 30 degrees.
  
 template <class Type>  
 bool operator==(
-    const complex<Type>& 
-    left ,  
-    const complex<Type>& 
-    right);
+    const complex<Type>& left,  
+    const complex<Type>& right);
 
 template <class Type>  
 bool operator==(
-    const complex<Type>& 
-    left ,  
-    const Type& 
-    right);
+    const complex<Type>& left,  
+    const Type& right);
 
 template <class Type>  
 bool operator==(
-    const Type& 
-    left ,  
-    const complex<Type>& 
-    right);
+    const Type& left,  
+    const complex<Type>& right);
 ```  
   
 ### Parameters  
@@ -793,7 +734,7 @@ bool operator==(
   
 ### Example  
   
-```  
+```cpp  
 // complex_op_EQ.cpp  
 // compile with: /EHsc  
 #include <complex>  
@@ -806,9 +747,9 @@ int main( )
   
    // Example of the first member function  
    // type complex<double> compared with type complex<double>  
-   complex <double> cl1 ( polar ( 3.0 , pi / 6 ) );  
-   complex <double> cr1a ( polar ( 3.0 , pi /6 ) );  
-   complex <double> cr1b ( polar ( 2.0 , pi / 3 ) );  
+   complex <double> cl1 ( polar ( 3.0, pi / 6 ) );  
+   complex <double> cr1a ( polar ( 3.0, pi /6 ) );  
+   complex <double> cr1b ( polar ( 2.0, pi / 3 ) );  
   
    cout << "The left-side complex number is cl1 = " << cl1 << endl;  
    cout << "The 1st right-side complex number is cr1a = " << cr1a << endl;  
@@ -825,8 +766,8 @@ int main( )
   
    // Example of the second member function  
    // type complex<int> compared with type int  
-   complex <int> cl2a ( 3 , 4 );  
-   complex <int> cl2b ( 5 ,0 );  
+   complex <int> cl2a ( 3, 4 );  
+   complex <int> cl2b ( 5,0 );  
    int cr2a =3;  
    int cr2b =5;  
   
@@ -849,8 +790,8 @@ int main( )
    // type double compared with type complex<double>  
    double cl3a =3;  
    double cl3b =5;  
-   complex <double> cr3a (3 , 4 );  
-   complex <double> cr3b (5 ,0 );  
+   complex <double> cr3a (3, 4 );  
+   complex <double> cr3b (5,0 );  
   
    cout << "The 1st left-side complex number is cl3a = " << cl3a << endl;  
    cout << "The 1st right-side complex number is cr3a = " << cr3a << endl;  
@@ -898,21 +839,19 @@ The complex numbers cl3b & cr3b are equal.
  
 template <class Type, class Elem, class Traits>  
 basic_istream<Elem, Traits>& operator>>(
- basic_istream<Elem, Traits>& 
-_Istr  ,  
-    complex<Type>& 
-    right);
+   basic_istream<Elem, Traits>& Istr,  
+   complex<Type>& right);
 ```  
   
 ### Parameters  
- `_Istr`  
+ `Istr`  
  The input stream from which the complex number is being extracted.  
   
  ` right`  
  The complex number that is being extracted from the input stream.  
   
 ### Return Value  
- Reads the value of the specified complex number from `_Istr` and returns it into ` right.`  
+ Reads the value of the specified complex number from `Istr` and returns it into ` right.`  
   
 ### Remarks  
  The valid input formats are  
@@ -925,7 +864,7 @@ _Istr  ,
   
 ### Example  
   
-```  
+```cpp  
 // complex_op_extract.cpp  
 // compile with: /EHsc  
 #include <complex>  

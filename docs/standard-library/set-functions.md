@@ -13,9 +13,9 @@ manager: "ghogen"
 # &lt;set&gt; functions
 |||  
 |-|-|  
-|[swap](#swap)|[swap](#swap_multiset)|  
+|[swap (map)](#swap)|[swap (multiset)](#swap_multiset)|  
   
-##  <a name="swap"></a>  swap  
+##  <a name="swap"></a>  swap  (map)
  Exchanges the elements of two sets.  
   
 ```
@@ -40,7 +40,7 @@ void swap(set<Key, Traits, Allocator>& left, set<Key, Traits, Allocator>& right)
 ### Example  
   See the code example for the member class [set::swap](../standard-library/set-class.md#set__swap) for an example of the use of the template version of `swap`.  
   
-##  <a name="swap_multiset"></a>  swap  
+##  <a name="swap_multiset"></a>  swap  (multiset)
  Exchanges the elements of two multisets.  
   
 ```

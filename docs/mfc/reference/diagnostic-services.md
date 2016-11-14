@@ -2,7 +2,6 @@
 title: "Diagnostic Services | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -108,10 +107,8 @@ The Microsoft Foundation Class Library supplies many diagnostic services that ma
 ##  <a name="assert__mfc_"></a>  ASSERT (MFC)  
  Evaluates its argument.  
   
-```  
- 
-ASSERT(booleanExpression)  
- 
+```   
+ASSERT(booleanExpression)   
 ```  
   
 ### Parameters  
@@ -138,11 +135,8 @@ ASSERT(booleanExpression)
 ##  <a name="assert_kindof"></a>  ASSERT_KINDOF  
  This macro asserts that the object pointed to is an object of the specified class, or is an object of a class derived from the specified class.  
   
-```  
- 
-ASSERT_KINDOF(
-classname  ,   pobject)  
- 
+```   
+ASSERT_KINDOF(classname, pobject)  
 ```  
   
 ### Parameters  
@@ -169,10 +163,8 @@ classname  ,   pobject)
 ##  <a name="assert_valid"></a>  ASSERT_VALID  
  Use to test your assumptions about the validity of an object's internal state.  
   
-```  
- 
-ASSERT_VALID(pObject)  
- 
+```   
+ASSERT_VALID(pObject)   
 ```  
   
 ### Parameters  
@@ -195,12 +187,8 @@ ASSERT_VALID(pObject)
 ##  <a name="debug_new"></a>  DEBUG_NEW  
  Assists in finding memory leaks.  
   
-```  
- 
-#define  
-new  
-DEBUG_NEW  
- 
+```   
+#define  new DEBUG_NEW   
 ```  
   
 ### Remarks  
@@ -220,10 +208,8 @@ DEBUG_NEW
 ##  <a name="debug_only"></a>  DEBUG_ONLY  
  In debug mode (when the **_DEBUG** symbol is defined), `DEBUG_ONLY` evaluates its argument.  
   
-```  
- 
-DEBUG_ONLY(expression)  
- 
+```   
+DEBUG_ONLY(expression)   
 ```  
   
 ### Remarks  
@@ -237,15 +223,9 @@ DEBUG_ONLY(expression)
 ##  <a name="trace"></a>  TRACE  
  Sends the specified string to the debugger of the current application.  
   
-```  
- 
+```   
 TRACE(exp)  
-TRACE(DWORD   
-category  ,
-    UINT   
-level  ,
-    LPCSTR   
-lpszFormat  , ...)  
+TRACE(DWORD  category,  UINT  level, LPCSTR lpszFormat, ...)  
  
 ```  
   
@@ -259,10 +239,8 @@ lpszFormat  , ...)
 ##  <a name="verify"></a>  VERIFY  
  In the Debug version of MFC, evaluates its argument.  
   
-```  
- 
-VERIFY(booleanExpression)  
- 
+```   
+VERIFY(booleanExpression)   
 ```  
   
 ### Parameters  
@@ -286,11 +264,8 @@ VERIFY(booleanExpression)
 ##  <a name="afxdump__cdumpcontext_in_mfc_"></a>  afxDump (CDumpContext in MFC)  
  Provides basic object-dumping capability in your application.  
   
-```  
- 
-CDumpContext  
-afxDump;  
- 
+```   
+CDumpContext  afxDump;   
 ```  
   
 ### Remarks  
@@ -306,11 +281,8 @@ afxDump;
 ##  <a name="afxmemdf"></a>  afxMemDF  
  This variable is accessible from a debugger or your program and allows you to tune allocation diagnostics.  
   
-```  
- 
-int  
-afxMemDF;  
- 
+```   
+int  afxMemDF;  
 ```  
   
 ### Remarks  
@@ -328,13 +300,10 @@ afxMemDF;
 ##  <a name="afxcheckerror"></a>  AfxCheckError  
  This function tests the passed **SCODE** to see if it is an error.  
   
-```  
- 
+```   
 void AFXAPI AfxCheckError(SCODE sc);
-
 throw CMemoryException* 
-throw COleException* 
- 
+throw COleException*  
 ```  
   
 ### Remarks  
@@ -351,12 +320,8 @@ throw COleException*
 ##  <a name="afxcheckmemory"></a>  AfxCheckMemory  
  This function validates the free memory pool and prints error messages as required.  
   
-```  
- 
-BOOL  
-AfxCheckMemory();
-
- 
+```   
+BOOL  AfxCheckMemory(); 
 ```  
   
 ### Return Value  
@@ -384,13 +349,8 @@ AfxCheckMemory();
 ##  <a name="afxdump__mfc_"></a>  AfxDump (MFC)  
  Call this function while in the debugger to dump the state of an object while debugging.  
   
-```  
- 
-void  
-AfxDump(const 
-CObject* pOb);
-
- 
+```   
+void AfxDump(const CObject* pOb); 
 ```  
   
 ### Parameters  
@@ -405,12 +365,8 @@ CObject* pOb);
 ##  <a name="afxdumpstack"></a>  AfxDumpStack  
  This global function can be used to generate an image of the current stack.  
   
-```  
- 
-void AFXAPI AfxDumpStack(DWORD 
-dwTarget   = AFX_STACK_DUMP_TARGET_DEFAULT);
-
- 
+```   
+void AFXAPI AfxDumpStack(DWORD dwTarget = AFX_STACK_DUMP_TARGET_DEFAULT); 
 ```  
   
 ### Parameters  
@@ -518,12 +474,8 @@ BOOL AFXAPI AfxEnableMemoryLeakDump(BOOL bDump);
 ##  <a name="afxenablememorytracking"></a>  AfxEnableMemoryTracking  
  Diagnostic memory tracking is normally enabled in the Debug version of MFC.  
   
-```  
- 
-BOOL  
-AfxEnableMemoryTracking(BOOL bTrack);
-
- 
+```   
+BOOL AfxEnableMemoryTracking(BOOL bTrack); 
 ```  
   
 ### Parameters  
@@ -547,20 +499,11 @@ AfxEnableMemoryTracking(BOOL bTrack);
 ##  <a name="afxismemoryblock"></a>  AfxIsMemoryBlock  
  Tests a memory address to make sure it represents a currently active memory block that was allocated by the diagnostic version of **new**.  
   
-```  
- 
-BOOL  
-AfxIsMemoryBlock(
-    const 
-void* 
-p  ,  
-    UINT 
-nBytes  ,  
-    LONG* 
-plRequestNumber  
-= NULL);
-
- 
+```   
+BOOL AfxIsMemoryBlock(
+    const void* p,  
+    UINT nBytes,  
+    LONG* plRequestNumber = NULL); 
 ```  
   
 ### Parameters  
@@ -585,20 +528,11 @@ plRequestNumber
 ##  <a name="afxisvalidaddress"></a>  AfxIsValidAddress  
  Tests any memory address to ensure that it is contained entirely within the program's memory space.  
   
-```  
- 
-BOOL  
-AfxIsValidAddress(
-    const 
-void* 
-lp  ,  
-    UINT 
-nBytes  ,  
-    BOOL 
-bReadWrite  
-= TRUE);
-
- 
+```   
+BOOL AfxIsValidAddress(
+    const void* lp,  
+    UINT nBytes,  
+    BOOL bReadWrite = TRUE); 
 ```  
   
 ### Parameters  
@@ -625,17 +559,10 @@ bReadWrite
 ##  <a name="afxisvalidstring"></a>  AfxIsValidString  
  Use this function to determine whether a pointer to a string is valid.  
   
-```  
- 
-BOOL  
-AfxIsValidString(
-    LPCSTR 
-lpsz  ,  
-    int 
-nLength  
-= -1);
-
- 
+```   
+BOOL  AfxIsValidString(
+    LPCSTR lpsz,  
+    int nLength = -1); 
 ```  
   
 ### Parameters  
@@ -656,12 +583,8 @@ nLength
 ##  <a name="afxsetallochook"></a>  AfxSetAllocHook  
  Sets a hook that enables calling of the specified function before each memory block is allocated.  
   
-```  
- 
-AFX_ALLOC_HOOK  
-AfxSetAllocHook(AFX_ALLOC_HOOK pfnAllocHook);
-
- 
+```   
+AFX_ALLOC_HOOK AfxSetAllocHook(AFX_ALLOC_HOOK pfnAllocHook); 
 ```  
   
 ### Parameters  
@@ -690,19 +613,11 @@ AfxSetAllocHook(AFX_ALLOC_HOOK pfnAllocHook);
 ##  <a name="afxdoforallclasses"></a>  AfxDoForAllClasses  
  Calls the specified iteration function for all serializable `CObject`-derived classes in the application's memory space.  
   
-```  
- 
+```   
 void  
-AFXAPI  
-AfxDoForAllClasses(
-    void 
-(* pfn)(const 
-CRuntimeClass* 
-pClass  ,  
-    void* pContext),  
-    void* pContext);
-
- 
+AFXAPI AfxDoForAllClasses(
+    void (* pfn)(const CRuntimeClass* pClass, void* pContext),  
+    void* pContext); 
 ```  
   
 ### Parameters  
@@ -726,17 +641,10 @@ pClass  ,
 ##  <a name="afxdoforallobjects"></a>  AfxDoForAllObjects  
  Executes the specified iteration function for all objects derived from `CObject` that have been allocated with **new**.  
   
-```  
- 
-void  
-AfxDoForAllObjects(
-    void 
-(* pfn)(CObject* 
-pObject  ,  
-    void* pContext),  
-    void* pContext);
-
- 
+```   
+void AfxDoForAllObjects(
+    void (* pfn)(CObject* pObject, void* pContext),  
+    void* pContext); 
 ```  
   
 ### Parameters  

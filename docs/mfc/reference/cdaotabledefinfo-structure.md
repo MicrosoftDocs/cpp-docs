@@ -2,7 +2,6 @@
 title: "CDaoTableDefInfo Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,8 +41,7 @@ The `CDaoTableDefInfo` structure contains information about a tabledef object de
 ## Syntax  
   
 ```  
- 
-    struct CDaoTableDefInfo  
+struct CDaoTableDefInfo  
 {  
     CString m_strName;               // Primary  
     BOOL m_bUpdatable;               // Primary  

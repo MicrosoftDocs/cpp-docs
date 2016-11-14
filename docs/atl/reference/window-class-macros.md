@@ -2,7 +2,6 @@
 title: "Window Class Macros | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,8 +43,7 @@ These macros define window class utilities.
  Allows you to specify the name of a new window class. Place this macro in an ATL ActiveX control's control class.  
   
 ```
-DECLARE_WND_CLASS(Â
-    WndClassName Â)
+DECLARE_WND_CLASS( WndClassName )
 ```  
   
 ### Parameters  
@@ -75,9 +73,7 @@ DECLARE_WND_CLASS(Â
  Allows you to specify the parameters of a class. Place this macro in an ATL ActiveX control's control class.  
   
 ```
-DECLARE_WND_SUPERCLASS(Â
-    WndClassName, Â
-    OrigWndClassName Â)
+DECLARE_WND_SUPERCLASS( WndClassName, OrigWndClassName )
 ```  
   
 ### Parameters  
@@ -104,10 +100,7 @@ DECLARE_WND_SUPERCLASS(Â
  Allows you to specify the name of an existing window class on which a new window class will be based. Place this macro in an ATL ActiveX control's control class.  
   
 ```
-DECLARE_WND_CLASS_EX(Â
-    WndClassName, Â
-    style, Â
-    bkgnd Â)
+DECLARE_WND_CLASS_EX( WndClassName, style, bkgnd )
 ```  
   
 ### Parameters  

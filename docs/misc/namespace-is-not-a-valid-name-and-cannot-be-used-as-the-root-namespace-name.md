@@ -2,7 +2,6 @@
 title: "&#39;&lt;namespace&gt;&#39; is not a valid name and cannot be used as the root namespace name | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

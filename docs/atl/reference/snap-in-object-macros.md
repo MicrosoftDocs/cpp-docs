@@ -2,7 +2,6 @@
 title: "Snap-In Object Macros | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,8 +48,7 @@ These macros provide support for snap-in extensions.
  Marks the beginning of the snap-in extension data class map.  
   
 ```
-BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP(
-classname)
+BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP(classname)
 ```  
   
 ### Parameters  
@@ -94,8 +92,7 @@ END_EXTENSION_SNAPIN_NODEINFO_MAP()
  Declares the end of the toolbar ID map for the Snap-In object.  
   
 ```
-END_SNAPINTOOLBARID_MAP(Â
-    _class Â)
+END_SNAPINTOOLBARID_MAP( _class )
 ```  
   
 ### Parameters  
@@ -109,8 +106,7 @@ END_SNAPINTOOLBARID_MAP(Â
  Adds a data member to the snap-in extension data class for an **ISnapInItemImpl**-derived class.  
   
 ```
-EXTENSION_SNAPIN_DATACLASS(Â
-    dataClass Â)
+EXTENSION_SNAPIN_DATACLASS(dataClass )
 ```  
   
 ### Parameters  
@@ -127,8 +123,7 @@ EXTENSION_SNAPIN_DATACLASS(Â
  Adds a snap-in extension data class to the snap-in extension data class map.  
   
 ```
-EXTENSION_SNAPIN_NODEINFO_ENTRY(Â
-    dataClass Â)
+EXTENSION_SNAPIN_NODEINFO_ENTRY( dataClass )
 ```  
   
 ### Parameters  
@@ -145,8 +140,7 @@ EXTENSION_SNAPIN_NODEINFO_ENTRY(Â
  Use this macro to declare the context menu resource of the Snap-In object.  
   
 ```
-SNAPINMENUID(Â
-    id Â)
+SNAPINMENUID( id )
 ```  
   
 ### Parameters  
@@ -157,8 +151,7 @@ SNAPINMENUID(Â
  Use this macro to enter a toolbar ID into the Snap-In object's toolbar ID map.  
   
 ```
-SNAPINTOOLBARID_ENTRY(Â
-    id Â)
+SNAPINTOOLBARID_ENTRY( id )
 ```  
   
 ### Parameters  

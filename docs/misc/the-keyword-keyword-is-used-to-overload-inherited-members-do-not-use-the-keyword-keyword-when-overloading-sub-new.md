@@ -2,7 +2,6 @@
 title: "The &#39;&lt;keyword&gt;&#39; keyword is used to overload inherited members; do not use the &#39;&lt;keyword&gt;&#39; keyword when overloading &#39;Sub New&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

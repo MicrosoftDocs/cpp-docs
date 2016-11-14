@@ -2,7 +2,6 @@
 title: "numpunct Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -113,7 +112,7 @@ CharType decimal_point() const;
   
 ### Example  
   
-```  
+```cpp  
 // numpunct_decimal_point.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -231,7 +230,7 @@ string_type falsename() const;
   
 ### Example  
   
-```  
+```cpp  
 // numpunct_falsename.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -275,7 +274,7 @@ string grouping() const;
   
 ### Example  
   
-```  
+```cpp  
 // numpunct_grouping.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -352,7 +351,7 @@ CharType thousands_sep() const;
   
 ### Example  
   
-```  
+```cpp  
 // numpunct_thou_sep.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -394,7 +393,7 @@ string_type falsename() const;
   
 ### Example  
   
-```  
+```cpp  
 // numpunct_truename.cpp  
 // compile with: /EHsc  
 #include <locale>  

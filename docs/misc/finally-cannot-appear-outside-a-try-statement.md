@@ -2,7 +2,6 @@
 title: "&#39;Finally&#39; cannot appear outside a &#39;Try&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

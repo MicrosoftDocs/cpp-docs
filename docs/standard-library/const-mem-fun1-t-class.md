@@ -2,7 +2,6 @@
 title: "const_mem_fun1_t Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,11 +48,7 @@ class const_mem_fun1_t
  : public binary_function<const Type *, Arg, Result>  
 {
     explicit const_mem_fun1_t(Result (Type::* _Pm)(Arg) const);
-
-    Result operator()(
-    const Type* _Pleft,
-    Arg right) const;
-
+    Result operator()(const Type* _Pleft, Arg right) const;
  };
 ```  
   

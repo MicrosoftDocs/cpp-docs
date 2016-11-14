@@ -2,7 +2,6 @@
 title: "bitset Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -139,7 +138,7 @@ bool any() const;
   
 ### Example  
   
-```  
+```cpp  
 // bitset_any.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -260,7 +259,7 @@ explicit bitset(
   
 ### Example  
   
-```  
+```cpp  
 // bitset_bitset.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -397,7 +396,7 @@ typedef bool element_type;
   
 ### Example  
   
-```  
+```cpp  
 // bitset_elem_type.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -464,7 +463,7 @@ bitset\<N>& flip(size_t _Pos);
   
 ### Example  
   
-```  
+```cpp  
 // bitset_flip.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -526,7 +525,7 @@ bool none() const;
   
 ### Example  
   
-```  
+```cpp  
 // bitset_none.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -590,7 +589,7 @@ bool operator!=(const bitset\<N>&
   
 ### Example  
   
-```  
+```cpp  
 // bitset_op_NE.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -652,7 +651,7 @@ bitset\<N>& operator&=(const bitset\<N>&
   
 ### Example  
   
-```  
+```cpp  
 // bitset_op_bitwise.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -713,7 +712,7 @@ bitset\<N> operator<<(size_t _Pos) const;
   
 ### Example  
   
-```  
+```cpp  
 // bitset_op_LS.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -761,7 +760,7 @@ bitset\<N>& operator<<=(size_t _Pos);
   
 ### Example  
   
-```  
+```cpp  
 // bitset_op_LSE.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -806,7 +805,7 @@ bool operator==(const bitset\<N>&
   
 ### Example  
   
-```  
+```cpp  
 // bitset_op_EQ.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -860,7 +859,7 @@ bitset\<N> operator>>(size_t _Pos) const;
   
 ### Example  
   
-```  
+```cpp  
 // bitset_op_RS.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -913,7 +912,7 @@ bitset\<N>& operator>>=(size_t _Pos);
   
 ### Example  
   
-```  
+```cpp  
 // bitset_op_RSE.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -957,7 +956,7 @@ reference operator[](size_t _Pos);
   
 ### Example  
   
-```  
+```cpp  
 // bitset_op_REF.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -1004,7 +1003,7 @@ bitset\<N>& operator^=(const bitset\<N>&
   
 ### Example  
   
-```  
+```cpp  
 // bitset_op_bitwiseOR.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -1068,7 +1067,7 @@ bitset\<N>& operator|=(const bitset\<N>&
   
 ### Example  
   
-```  
+```cpp  
 // bitset_op_BIO.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -1122,7 +1121,7 @@ bitset\<N> operator~() const;
   
 ### Example  
   
-```  
+```cpp  
 // bitset_op_toggle.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -1191,7 +1190,7 @@ class reference {
   
 ### Example  
   
-```  
+```cpp  
 // bitset_reference.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -1292,7 +1291,7 @@ bitset\<N>& reset(size_t _Pos);
   
 ### Example  
   
-```  
+```cpp  
 // bitset_reset.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -1357,7 +1356,7 @@ _Pos  ,
   
 ### Example  
   
-```  
+```cpp  
 // bitset_set.cpp  
 // compile with: /EHsc  
 #include <bitset>  

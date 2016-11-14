@@ -2,7 +2,6 @@
 title: "&#39;&lt;membername1&gt;&#39; and &#39;&lt;membername2&gt;&#39; cannot overload each other because they differ only by the types of optional parameters | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

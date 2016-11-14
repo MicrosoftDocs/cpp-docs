@@ -2,7 +2,6 @@
 title: "add_lvalue_reference Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -60,7 +59,7 @@ using add_lvalue_reference_t = typename add_lvalue_reference<T>::type;
   
 ## Example  
   
-```  
+```cpp  
 #include <type_traits>   
 #include <iostream>   
   

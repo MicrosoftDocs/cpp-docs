@@ -1,1 +1,0 @@
-   ON_NOTIFY_EX(TTN_NEEDTEXT, 0, &CMyDialog::OnTtnNeedText)

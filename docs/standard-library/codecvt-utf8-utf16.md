@@ -2,7 +2,6 @@
 title: "codecvt_utf8_utf16 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,4 +38,26 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # codecvt_utf8_utf16
-Represents a [locale](../standard-library/locale-class.md)
+Represents a [locale](../standard-library/locale-class.md) facet that converts between wide characters encoded as UTF-16 and a byte stream encoded as UTF-8.
+
+```
+template<class Elem, unsigned long Maxcode = 0x10ffff, codecvt_mode Mode = (codecvt_mode)0>
+class codecvt_utf8_utf16 : public _STD codecvt<Elem, char, StateType>
+```
+
+## Parameters
+
+`Elem`  
+The wide-character element type.  
+`Maxcode`  
+The maximum number of characters for the locale facet.  
+`Mode`  
+Configuration information for the locale facet.  
+
+## Remarks
+
+The byte stream can be written to either a binary file or a text file.  
+
+## Requirements
+
+Header: <codecvt> Namespace: std

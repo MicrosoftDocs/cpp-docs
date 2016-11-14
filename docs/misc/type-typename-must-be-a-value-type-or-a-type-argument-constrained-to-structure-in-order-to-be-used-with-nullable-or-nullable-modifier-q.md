@@ -2,7 +2,6 @@
 title: "Type &#39;&lt;typeName&gt;&#39; must be a value type or a type argument constrained to &#39;Structure&#39; in order to be used with &#39;Nullable&#39; or nullable modifier &#39;?&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

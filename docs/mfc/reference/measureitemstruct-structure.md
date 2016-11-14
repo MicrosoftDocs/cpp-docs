@@ -2,7 +2,6 @@
 title: "MEASUREITEMSTRUCT Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `MEASUREITEMSTRUCT` structure informs Windows of the dimensions of an owner-
 ## Syntax  
   
 ```  
- 
-    typedef struct tagMEASUREITEMSTRUCT {  
+typedef struct tagMEASUREITEMSTRUCT {  
     UINT CtlType;  
     UINT CtlID;  
     UINT itemID;  

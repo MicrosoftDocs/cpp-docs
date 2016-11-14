@@ -1,1 +1,0 @@
-   GetParentFrame()->RecalcLayout();

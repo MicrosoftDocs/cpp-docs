@@ -2,7 +2,6 @@
 title: "Overview of Windows Programming in C++ | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,6 +48,10 @@ You can use Visual C++ to write a wide variety of programs that run on a Windows
   
 ##  <a name="BK_WindowsUniversal"></a> Windows Universal Apps  
  With Windows 10, apps are able to run on all Windows 10 devices such as tablets and mobile phones, as well as on the desktop. On the desktop, they are able to run as a desktop window, instead of always running full-screen. These apps can also run on the Xbox, and on future devices.  The programming model for the two types of apps is different from Win32 desktop applications. These Windows apps run on the Windows Runtime, which provides user interface elements, essential services for these apps and provides, and an interface to the diverse hardware devices that are supported. These apps compile to native code and have a XAML user interface, or use DirectX. You can also write [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] components in native code that other Windows apps can consume—these include apps that are written in C#, Visual Basic, or JavaScript. For more information, see [Create your first Windows Store app using C++](http://go.microsoft.com/fwlink/?LinkID=534976), [Create your first Windows Store game using DirectX](http://go.microsoft.com/fwlink/p/?LinkId=244656), and [Creating Windows Runtime components in C++](http://go.microsoft.com/fwlink/p/?LinkId=244658).  
+
+ > [!TIP]  
+> For Windows 10, you can use the Desktop App Converter to package your existing desktop application for deployment through the Windows Store. For more information, see [Using Visual C++ Runtime in Centennial project](https://blogs.msdn.microsoft.com/vcblog/2016/07/07/using-visual-c-runtime-in-centennial-project) and [Bring your desktop app to the Universal Windows Platform (UWP) with the Desktop Bridge](https://msdn.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root).
+  
   
  For Universal Windows Platform samples, see [Windows Universal Samples on GitHub](https://github.com/Microsoft/Windows-universal-samples)  
   
@@ -111,4 +114,4 @@ You can use Visual C++ to write a wide variety of programs that run on a Windows
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Visual C++](../top/visual-cpp-in-visual-studio-2015.md)|Parent topic for MSDN Library content about C++.|
+|[Visual C++](../top/visual-cpp-in-visual-studio.md)|Parent topic for MSDN Library content about C++.|

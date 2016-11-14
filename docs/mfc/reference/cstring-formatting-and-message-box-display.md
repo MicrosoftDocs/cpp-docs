@@ -2,7 +2,6 @@
 title: "CString Formatting and Message-Box Display | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -52,19 +51,12 @@ A number of functions are provided to format and parse `CString` objects. You ca
 ##  <a name="afxextractsubstring"></a>  AfxExtractSubString  
  This global function can be used to extract a substring from a given source string.  
   
-```  
- 
+```   
 BOOL AFXAPI AfxExtractSubString (
-    CString& 
-rString  ,  
-    LPCTSTR 
-lpszFullString  ,  
-    int 
-iSubString  ,  
-    TCHAR 
-chSep   = '\n');
-
- 
+    CString& rString,  
+    LPCTSTR lpszFullString,  
+    int iSubString,  
+    TCHAR chSep  = '\n'); 
 ```  
   
 ### Parameters  
@@ -95,16 +87,10 @@ chSep   = '\n');
  Substitutes the string pointed to by `lpsz1` for any instances of the characters "%1" in the template string resource identified by `nIDS`.  
   
 ```  
- 
-void  
-AfxFormatString1(
-    CString& 
-rString  ,  
-    UINT 
-nIDS  ,  
-    LPCTSTR lpsz1);
-
- 
+void  AfxFormatString1(
+    CString& rString,  
+    UINT nIDS,  
+    LPCTSTR lpsz1); 
 ```  
   
 ### Parameters  
@@ -128,19 +114,12 @@ nIDS  ,
 ##  <a name="afxformatstring2"></a>  AfxFormatString2  
  Substitutes the string pointed to by `lpsz1` for any instances of the characters "%1", and the string pointed to by `lpsz2` for any instances of the characters "%2", in the template string resource identified by `nIDS`.  
   
-```  
- 
-void  
-AfxFormatString2(
-    CString& 
-rString  ,  
-    UINT 
-nIDS  ,  
-    LPCTSTR 
-lpsz1  ,  
-    LPCTSTR lpsz2);
-
- 
+```   
+void AfxFormatString2(
+    CString& rString,  
+    UINT nIDS,  
+    LPCTSTR lpsz1,  
+    LPCTSTR lpsz2); 
 ```  
   
 ### Parameters  
@@ -168,33 +147,15 @@ lpsz1  ,
  Displays a message box on the screen.  
   
 ```  
- 
-int  
-AfxMessageBox(
-    LPCTSTR 
-lpszText  ,  
-    UINT 
-nType  
-= 
-MB_OK,  
-    UINT 
-nIDHelp  
-= 0);
+int AfxMessageBox(
+    LPCTSTR lpszText,  
+    UINT nType = MB_OK,  
+    UINT nIDHelp = 0);
 
-int  
-AFXAPI  
-AfxMessageBox(
-    UINT 
-nIDPrompt  ,  
-    UINT 
-nType  
-= 
-MB_OK,  
-    UINT 
-nIDHelp  
-= (UINT)  -1);
-
- 
+int AFXAPI AfxMessageBox(
+    UINT nIDPrompt,  
+    UINT nType = MB_OK,  
+    UINT nIDHelp = (UINT) -1); 
 ```  
   
 ### Parameters  

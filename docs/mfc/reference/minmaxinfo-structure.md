@@ -2,7 +2,6 @@
 title: "MINMAXINFO Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `MINMAXINFO` structure contains information about a window's maximized size 
 ## Syntax  
   
 ```  
- 
-    typedef struct tagMINMAXINFO {  
+typedef struct tagMINMAXINFO {  
     POINT ptReserved;  
     POINT ptMaxSize;  
     POINT ptMaxPosition;  

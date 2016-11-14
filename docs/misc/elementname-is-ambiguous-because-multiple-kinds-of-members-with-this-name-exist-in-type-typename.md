@@ -2,7 +2,6 @@
 title: "&#39;&lt;elementname&gt;&#39; is ambiguous because multiple kinds of members with this name exist in &lt;type&gt; &#39;&lt;typename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,7 +39,7 @@ An expression accesses a programming element defined in a class, structure, modu
   
  The most likely cause of this error is *case sensitivity*. Visual Basic names are case-insensitive, which means you can capitalize them differently at different places in your code. For example, if you define a variable with the name `XYZ` and later access it as `xyz`, the compiler considers the two names to be equivalent.  
   
- However, other languages, such as [C#](/dotnet/csharp/csharp) and [Visual C++](../top/visual-cpp-in-visual-studio-2015.md), are case-sensitive. In such a language, `XYZ` and `xyz` are not considered to be the same name. Therefore, a class written in such a language could define a variable named `XYZ` and a property named `xyz`. The common language runtime (CLR) preserves case sensitivity in assemblies. However, if a Visual Basic application accesses an assembly with names `XYZ` and `xyz`, they appear as the same name.  
+ However, other languages, such as [C#](/dotnet/csharp/csharp) and [Visual C++](../top/visual-cpp-in-visual-studio.md), are case-sensitive. In such a language, `XYZ` and `xyz` are not considered to be the same name. Therefore, a class written in such a language could define a variable named `XYZ` and a property named `xyz`. The common language runtime (CLR) preserves case sensitivity in assemblies. However, if a Visual Basic application accesses an assembly with names `XYZ` and `xyz`, they appear as the same name.  
   
  **Error ID:** BC31429  
   

@@ -1,1 +1,0 @@
-BEGIN_MESSAGE_MAP(CMyView, CFormView)

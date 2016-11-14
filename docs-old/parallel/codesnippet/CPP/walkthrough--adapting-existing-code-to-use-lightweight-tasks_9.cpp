@@ -1,1 +1,0 @@
-   pData->signal.set();

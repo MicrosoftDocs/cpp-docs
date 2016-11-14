@@ -38,7 +38,7 @@ bool operator!=(const stack <Type, Container>& left, const stack <Type, Containe
   
 ### Example  
   
-```  
+```cpp  
 // stack_op_me.cpp  
 // compile with: /EHsc  
 #include <stack>  
@@ -99,7 +99,7 @@ bool operator<(const stack <Type, Container>& left, const stack <Type, Container
   
 ### Example  
   
-```  
+```cpp  
 // stack_op_lt.cpp  
 // compile with: /EHsc  
 #include <stack>  
@@ -179,7 +179,7 @@ bool operator<=(const stack <Type, Container>& left, const stack <Type, Containe
   
 ### Example  
   
-```  
+```cpp  
 // stack_op_le.cpp  
 // compile with: /EHsc  
 #include <stack>  
@@ -242,7 +242,7 @@ bool operator==(const stack <Type, Container>& left, const stack <Type, Containe
   
 ### Example  
   
-```  
+```cpp  
 // stack_op_eq.cpp  
 // compile with: /EHsc  
 #include <stack>  
@@ -303,7 +303,7 @@ bool operator>(const stack <Type, Container>& left, const stack <Type, Container
   
 ### Example  
   
-```  
+```cpp  
 // stack_op_gt.cpp  
 // compile with: /EHsc  
 #include <stack>  
@@ -368,7 +368,7 @@ bool operator>=(const stack <Type, Container>& left, const stack <Type, Containe
   
 ### Example  
   
-```  
+```cpp  
 // stack_op_ge.cpp  
 // compile with: /EHsc  
 #include <stack>  

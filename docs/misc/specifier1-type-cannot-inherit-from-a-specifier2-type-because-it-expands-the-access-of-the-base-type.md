@@ -2,7 +2,6 @@
 title: "&lt;specifier1&gt; &lt;type&gt; cannot inherit from a &lt;specifier2&gt; &lt;type&gt; because it expands the access of the base &lt;type&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

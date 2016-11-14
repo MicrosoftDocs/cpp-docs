@@ -2,7 +2,6 @@
 title: "Statement does not declare an &#39;AddHandler&#39;, &#39;RemoveHandler&#39; or &#39;RaiseEvent&#39; method | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

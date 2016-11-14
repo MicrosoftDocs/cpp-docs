@@ -2,7 +2,6 @@
 title: "Types declared &#39;Private&#39; must be inside another type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

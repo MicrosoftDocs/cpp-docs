@@ -2,7 +2,6 @@
 title: "less_equal Struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,23 +48,17 @@ A binary predicate that performs the less-than-or-equal-to operation ( `operator
 template <class Type = void>
 struct less_equal : public binary_function <Type, Type, bool>  
 {
-    bool operator()(
-    const Type& Left,
-    const Type& Right) const;
-
- };
+    bool operator()(const Type& Left, const Type& Right) const;
+};
 
 // specialized transparent functor for operator<=
 template <>
 struct less_equal<void>  
 {
-template <class T, class U>
-auto operator()(T&& Left, U&& Right) const
- ->  
-decltype(std::forward<T>(Left)
- <= std::forward<U>(Right));
-
- };
+  template <class T, class U>
+  auto operator()(T&& Left, U&& Right) const`
+    -> decltype(std::forward<T>(Left) <= std::forward<U>(Right));
+};
 ```  
   
 #### Parameters  
@@ -86,7 +79,7 @@ decltype(std::forward<T>(Left)
   
 ## Example  
   
-```  
+```cpp  
 // functional_less_equal.cpp  
 // compile with: /EHsc  
 #define _CRT_RAND_S  

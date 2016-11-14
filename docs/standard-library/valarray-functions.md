@@ -37,7 +37,7 @@ valarray<Type> abs(const valarray<Type>& left);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_abs.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -94,7 +94,7 @@ valarray<Type> acos(const valarray<Type>& left);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_acos.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -163,7 +163,7 @@ valarray<Type> asin(const valarray<Type>& left);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_asin.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -232,7 +232,7 @@ valarray<Type> atan(const valarray<Type>& left);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_atan.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -321,7 +321,7 @@ valarray<Type> atan2(const Type& left, const valarray<Type>& right);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_atan2.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -389,7 +389,7 @@ valarray<Type> cos(const valarray<Type>& left);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_cos.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -468,7 +468,7 @@ valarray<Type> cosh(const valarray<Type>& left);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_cosh.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -542,7 +542,7 @@ valarray<Type> exp(const valarray<Type>& left);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_exp.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -602,7 +602,7 @@ valarray<Type> log(const valarray<Type>& left);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_log.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -662,7 +662,7 @@ valarray<Type> log10(const valarray<Type>& left);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_log10.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -751,7 +751,7 @@ pow(
   
 ### Example  
   
-```  
+```cpp  
 #include <valarray>  
 #include <iostream>  
 #include <iomanip>  
@@ -817,7 +817,7 @@ valarray<Type> sin(const valarray<Type>& left);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_sin.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -896,7 +896,7 @@ valarray<Type> sinh(const valarray<Type>& left);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_sinh.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -970,7 +970,7 @@ valarray<Type> sqrt(const valarray<Type>& left);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_sqrt.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -1041,7 +1041,7 @@ valarray<Type> tan(const valarray<Type>& left);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_tan.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -1120,7 +1120,7 @@ valarray<Type> tanh(const valarray<Type>& left);
   
 ### Example  
   
-```  
+```cpp  
 // valarray_tanh.cpp  
 // compile with: /EHsc  
 #include <valarray>  

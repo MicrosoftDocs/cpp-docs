@@ -11,9 +11,6 @@ caps.latest.revision: 10
 manager: "ghogen"
 ---
 # &lt;codecvt&gt; enums
-||  
-|-|  
-|[codecvt_mode Enumeration](#codecvt_mode_enumeration)|  
   
 ##  <a name="codecvt_mode_enumeration"></a>  codecvt_mode Enumeration  
  Specifies configuration information for [locale](../standard-library/locale-class.md) facets.  

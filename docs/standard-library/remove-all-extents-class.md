@@ -2,7 +2,6 @@
 title: "remove_all_extents Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -63,7 +62,7 @@ using remove_all_extents_t = typename remove_all_extents<T>::type;
   
 ## Example  
   
-```  
+```cpp  
 #include <type_traits>   
 #include <iostream>   
   

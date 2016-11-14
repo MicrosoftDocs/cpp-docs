@@ -44,7 +44,7 @@ bool operator!=(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_op_ne.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -110,7 +110,7 @@ bool operator==(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_op_eq.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -176,7 +176,7 @@ bool operator!=(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_op_ne.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -242,7 +242,7 @@ bool operator==(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
   
 ### Example  
   
-```  
+```cpp  
 // hash_multimap_op_eq.cpp  
 // compile with: /EHsc  
 #include <hash_map>  

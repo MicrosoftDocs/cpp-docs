@@ -2,7 +2,6 @@
 title: "NCCALCSIZE_PARAMS Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `NCCALCSIZE_PARAMS` structure contains information that an application can u
 ## Syntax  
   
 ```  
- 
-    typedef struct tagNCCALCSIZE_PARAMS {  
+typedef struct tagNCCALCSIZE_PARAMS {  
     RECT rgrc[3];  
     PWINDOWPOS lppos;  
 } NCCALCSIZE_PARAMS;  

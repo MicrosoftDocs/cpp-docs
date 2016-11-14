@@ -2,7 +2,6 @@
 title: "queue Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -118,7 +117,7 @@ const_reference back() const;
   
 ### Example  
   
-```  
+```cpp  
 // queue_back.cpp  
 // compile with: /EHsc  
 #include <queue>  
@@ -169,7 +168,7 @@ bool empty() const;
   
 ### Example  
   
-```  
+```cpp  
 // queue_empty.cpp  
 // compile with: /EHsc  
 #include <queue>  
@@ -222,7 +221,7 @@ const_reference front() const;
   
 ### Example  
   
-```  
+```cpp  
 // queue_front.cpp  
 // compile with: /EHsc  
 #include <queue>  
@@ -262,7 +261,7 @@ void pop();
   
 ### Example  
   
-```  
+```cpp  
 // queue_pop.cpp  
 // compile with: /EHsc  
 #include <queue>  
@@ -320,7 +319,7 @@ void push(const Type& val);
   
 ### Example  
   
-```  
+```cpp  
 // queue_push.cpp  
 // compile with: /EHsc  
 #include <queue>  
@@ -368,7 +367,7 @@ explicit queue(const container_type& right);
   
 ### Example  
   
-```  
+```cpp  
 // queue_queue.cpp  
 // compile with: /EHsc  
 #include <queue>  
@@ -426,7 +425,7 @@ size_type size() const;
   
 ### Example  
   
-```  
+```cpp  
 // queue_size.cpp  
 // compile with: /EHsc  
 #include <queue>  
@@ -478,7 +477,7 @@ typedef typename Container::value_type value_type;
   
 ### Example  
   
-```  
+```cpp  
 // queue_value_type.cpp  
 // compile with: /EHsc  
 #include <queue>  

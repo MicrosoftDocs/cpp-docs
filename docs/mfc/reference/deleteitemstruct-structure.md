@@ -2,7 +2,6 @@
 title: "DELETEITEMSTRUCT Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `DELETEITEMSTRUCT` structure describes a deleted owner-drawn list-box or com
 ## Syntax  
   
 ```  
- 
-    typedef struct tagDELETEITEMSTRUCT { /* ditms */  
+typedef struct tagDELETEITEMSTRUCT { /* ditms */  
     UINT CtlType;  
     UINT CtlID;  
     UINT itemID;  

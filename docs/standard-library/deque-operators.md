@@ -38,7 +38,7 @@ bool operator!=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
   
 ### Example  
   
-```  
+```cpp  
 // deque_op_ne.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -84,7 +84,7 @@ bool operator<(const deque<Type, Allocator>& left, const deque<Type, Allocator>&
   
 ### Example  
   
-```  
+```cpp  
 // deque_op_lt.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -134,7 +134,7 @@ bool operator<=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
   
 ### Example  
   
-```  
+```cpp  
 // deque_op_le.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -185,7 +185,7 @@ bool operator==(const deque<Type, Allocator>& left, const deque<Type, Allocator>
   
 ### Example  
   
-```  
+```cpp  
 // deque_op_eq.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -239,7 +239,7 @@ bool operator>(const deque<Type, Allocator>& left, const deque<Type, Allocator>&
   
 ### Example  
   
-```  
+```cpp  
 // deque_op_gt.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -291,7 +291,7 @@ bool operator>=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
   
 ### Example  
   
-```  
+```cpp  
 // deque_op_ge.cpp  
 // compile with: /EHsc  
 #include <deque>  

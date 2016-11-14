@@ -15,9 +15,9 @@ manager: "ghogen"
 # &lt;istream&gt; functions
 |||  
 |-|-|  
-|[&lt;istream&gt; swap](#istream_swap)|[ws](#ws)|  
+|[swap](#istream_swap)|[ws](#ws)|  
   
-##  <a name="istream_swap"></a>  &lt;istream&gt; swap  
+##  <a name="istream_swap"></a>  swap  
  Exchanges the elements of two stream objects.  
   
 ```  

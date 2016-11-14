@@ -2,7 +2,6 @@
 title: ".NET Framework 2.0 update not found. The win32manifest will not be embedded. | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

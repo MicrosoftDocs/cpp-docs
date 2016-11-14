@@ -1,6 +1,0 @@
-BEGIN_COM_MAP(CExample)
-   COM_INTERFACE_ENTRY(IExample)
-   COM_INTERFACE_ENTRY_IID(IID_IDispatch, CExampleDispatch)
-   COM_INTERFACE_ENTRY(IExampleBase)
-   COM_INTERFACE_ENTRY(ISupportErrorInfo)
-END_COM_MAP()

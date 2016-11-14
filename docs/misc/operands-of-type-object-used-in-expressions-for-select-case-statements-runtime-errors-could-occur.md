@@ -2,7 +2,6 @@
 title: "Operands of type Object used in expressions for &#39;Select&#39;, &#39;Case&#39; statements; runtime errors could occur | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

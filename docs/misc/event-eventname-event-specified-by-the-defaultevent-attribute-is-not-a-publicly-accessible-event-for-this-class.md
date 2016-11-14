@@ -2,7 +2,6 @@
 title: "Event &#39;&lt;eventname&gt;&#39; event specified by the &#39;DefaultEvent&#39; attribute is not a publicly accessible event for this class | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

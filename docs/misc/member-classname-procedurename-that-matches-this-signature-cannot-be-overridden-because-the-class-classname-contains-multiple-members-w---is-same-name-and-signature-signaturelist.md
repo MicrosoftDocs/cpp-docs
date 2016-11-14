@@ -2,7 +2,6 @@
 title: "Member &#39;&lt;classname&gt;.&lt;procedurename&gt;&#39; that matches this signature cannot be overridden because the class &#39;&lt;classname&gt;&#39; contains multiple members with this same name and signature: &lt;signaturelist&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

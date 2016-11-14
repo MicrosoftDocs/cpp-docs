@@ -2,7 +2,6 @@
 title: "POINT Structure1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,8 +42,7 @@ The **POINT** structure defines the x*-* and y-coordinates of a point.
 ## Syntax  
   
 ```  
- 
-    typedef struct tagPOINT {  
+typedef struct tagPOINT {  
     LONG x;  
     LONG y;  
 } POINT;  

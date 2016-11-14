@@ -2,7 +2,6 @@
 title: "insert_iterator Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -94,7 +93,7 @@ typedef Container container_type;
   
 ### Example  
   
-```  
+```cpp  
 // insert_iterator_container_type.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -141,7 +140,7 @@ insert_iterator(Container& _Cont, typename Container::iterator _It);
   
 ### Example  
   
-```  
+```cpp  
 // insert_iterator_insert_iterator.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -200,7 +199,7 @@ insert_iterator<Container>& operator*();
   
 ### Example  
   
-```  
+```cpp  
 // insert_iterator_op_deref.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -259,7 +258,7 @@ insert_iterator<Container> operator++(int);
   
 ### Example  
   
-```  
+```cpp  
 // insert_iterator_op_incr.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -340,7 +339,7 @@ insert_iterator<Container>& operator=(
   
 ### Example  
   
-```  
+```cpp  
 // insert_iterator_op_assign.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -394,7 +393,7 @@ typedef typename Container::reference reference;
   
 ### Example  
   
-```  
+```cpp  
 // insert_iterator_container_reference.cpp  
 // compile with: /EHsc  
 #include <iterator>  

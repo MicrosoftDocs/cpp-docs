@@ -2,7 +2,6 @@
 title: "XML comment tag &#39;&lt;tag&gt;&#39; appears with identical attributes more than once in the same XML comment block | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

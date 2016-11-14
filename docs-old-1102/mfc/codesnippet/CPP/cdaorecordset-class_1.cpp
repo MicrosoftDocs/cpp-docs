@@ -1,1 +1,0 @@
-   rs.SetBookmark(rs.GetLastModifiedBookmark());

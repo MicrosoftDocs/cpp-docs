@@ -1,1 +1,0 @@
-	GetMouseManager()->AddView (IDR_MAINFRAME, _T("My view"), IDR_MAINFRAME);

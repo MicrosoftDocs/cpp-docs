@@ -2,7 +2,6 @@
 title: "modulus Struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,23 +48,17 @@ A predefined function object that performs the modulus division operation ( `ope
 template <class Type = void>
 struct modulus : public binary_function <Type, Type, Type>  
 {
-    Type operator()(
-    const Type& Left,
-    const Type& Right) const;
-
- };
+    Type operator()(const Type& Left, const Type& Right) const;
+};
 
 // specialized transparent functor for operator%
 template <>
 struct modulus<void>  
 {
-template <class T, class U>
-auto operator()(T&& Left, U&& Right) const
- ->  
-decltype(std::forward<T>(Left)
- % std::forward<U>(Right));
-
- };
+  template <class T, class U>
+  auto operator()(T&& Left, U&& Right) const`
+    -> decltype(std::forward<T>(Left) % std::forward<U>(Right));
+};
 ```  
   
 #### Parameters  
@@ -86,7 +79,7 @@ decltype(std::forward<T>(Left)
   
 ## Example  
   
-```  
+```cpp  
 // functional_modulus.cpp  
 // compile with: /EHsc  
 #include <vector>  

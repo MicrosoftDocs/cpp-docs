@@ -2,7 +2,6 @@
 title: "ostream_iterator Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -99,7 +98,7 @@ typedef CharType char_type;
   
 ### Example  
   
-```  
+```cpp  
 // ostream_iterator_char_type.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -149,7 +148,7 @@ ostream_iterator<Type, CharType, Traits>& operator*();
   
 ### Example  
   
-```  
+```cpp  
 // ostream_iterator_op_deref.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -185,7 +184,6 @@ Elements written to output stream:
   
 ```
 ostream_iterator<Type, CharType, Traits>& operator++();
-
 ostream_iterator<Type, CharType, Traits> operator++(int);
 ```  
   
@@ -197,7 +195,7 @@ ostream_iterator<Type, CharType, Traits> operator++(int);
   
 ### Example  
   
-```  
+```cpp  
 // ostream_iterator_op_incr.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -232,8 +230,7 @@ Elements written to output stream:
  Assignment operator used to implement the output_iterator expression * `i` = `x` for writing to an output stream.  
   
 ```
-ostream_iterator<Type, CharType, Traits>& operator=(
-    const Type& val);
+ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
 ```  
   
 ### Parameters  
@@ -248,7 +245,7 @@ ostream_iterator<Type, CharType, Traits>& operator=(
   
 ### Example  
   
-```  
+```cpp  
 // ostream_iterator_op_assign.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -305,7 +302,7 @@ ostream_iterator(
   
 ### Example  
   
-```  
+```cpp  
 // ostream_iterator_ostream_iterator.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -375,7 +372,7 @@ typedef Traits traits_type;
   
 ### Example  
   
-```  
+```cpp  
 // ostream_iterator_traits_type.cpp  
 // compile with: /EHsc  
 #include <iterator>  

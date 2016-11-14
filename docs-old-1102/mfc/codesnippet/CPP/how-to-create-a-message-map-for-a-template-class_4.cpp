@@ -1,1 +1,0 @@
-#define LBN_SYNCHRONIZE (WM_USER + 1)

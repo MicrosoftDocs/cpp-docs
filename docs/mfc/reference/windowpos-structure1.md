@@ -2,7 +2,6 @@
 title: "WINDOWPOS Structure1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `WINDOWPOS` structure contains information about the size and position of a 
 ## Syntax  
   
 ```  
- 
-    typedef struct tagWINDOWPOS { /* wp */  
+typedef struct tagWINDOWPOS { /* wp */  
     HWND hwnd;  
     HWND hwndInsertAfter;  
     int x;  
