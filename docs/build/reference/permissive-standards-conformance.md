@@ -39,7 +39,16 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # /permissive- (Standards conformance)
-You can use the **/permissive-** compiler option to specify strict standards-conformant compiler behavior. Note that the trailing dash is required. This option disables language extensions, similar to the deprecated [/Za](../../build/reference/za-ze-disable-language-extensions.md) option, and sets the [/Zc](../../build/reference/zc-conformance.md) compiler options for strict conformance.  
+Specify strict standards conformance mode to the compiler.  
+  
+## Syntax  
+```
+/permissive-  
+```  
+
+## Remarks  
+  
+You can use the **/permissive-** compiler option to specify strict standards-conformant compiler behavior. Note that the trailing dash is required. This option disables Microsoft-specific language extensions, similar to the deprecated [/Za](../../build/reference/za-ze-disable-language-extensions.md) option, and sets the [/Zc](../../build/reference/zc-conformance.md) compiler options for strict conformance.  
   
 Not all standards-conformant code is supported by the Visual C++ compiler in Visual Studio 2017 RC. However, when this option is set, the compiler generates errors or warnings when non-standard language constructs are detected in your code. The **/permissive-** option uses the conformance support in the current compiler version to determine which language constructs are non-conformant. The option does not determine if your code is conformant to a specific version of the C++ standard. To restrict the compiler support to more closely match the C++14 standard, use the [/std:c++14](../../build/reference/std-specify-language-standard-version.md) option.  
 
