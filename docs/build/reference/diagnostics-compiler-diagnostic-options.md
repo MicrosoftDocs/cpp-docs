@@ -54,7 +54,9 @@ The **/diagnostics:column** option also includes the column where the issue was 
 
 The **/diagnostics:caret** option includes the column where the issue was found and places a caret (^) under the location in the line of code where the issue was detected.
 
-Note that in some cases, the compiler does not detect an issue where it occurred. For example, a missing semicolon may not be detected until other, unexpected symbols have been encountered. The caret is placed and column is reported where the compiler detected that something was wrong, which is not always where you need to make your correction.  
+Note that in some cases, the compiler does not detect an issue where it occurred. For example, a missing semicolon may not be detected until other, unexpected symbols have been encountered. The column is reported and the caret is placed where the compiler detected that something was wrong, which is not always where you need to make your correction.  
+
+The /diagnostics option is available starting in Visual Studio 2017 RC.
   
 ## See Also  
  [Compiler Options](../../build/reference/compiler-options.md)   
