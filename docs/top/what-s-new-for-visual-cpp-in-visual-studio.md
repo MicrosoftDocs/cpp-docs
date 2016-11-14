@@ -38,7 +38,7 @@ The compiler and tools version number in [!INCLUDE[vs_dev15_md](../misc/includes
 
 ## C++ Compiler
 
-In this release, we've updated the C++ compiler and standard library with enhanced support for C++11 and C++14 features, as well as preliminary support for certain features expected to be in the C++17 standard. For more information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).  
+In this release, we've updated the C++ compiler and standard library with enhanced support for C++11 and C++14 features, as well as preliminary support for certain features expected to be in the C++17 standard. In addition, several new compiler switches have been added. For detailed information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md). 
 
 This release brings several improvements in optimization, code generation, toolset versioning and diagnostics. Some notable improvements include:  
 
@@ -82,6 +82,7 @@ The CPPRestSDK, a cross-platform web API for C++, has been updated to version 2.
 
 ## C++ IDE
 
+### Intellisense  
 * The new SQLite-based database engine is now being used by default. This will speed up database operations like Go To Definition and Find All References, and will significantly improve initial solution parse time. The setting has been moved to Tools > Options > Text Editor > C/C++ > Advanced (it was formerly under ...C/C++ > Experimental).
 
 * We've improved IntelliSense performance on projects and files not using precompiled headers – an Automatic Precompiled Header will be created for headers in the current file.
@@ -106,17 +107,18 @@ The CPPRestSDK, a cross-platform web API for C++, has been updated to version 2.
 
 * _**New in RC**_ We've enabled the new experimental feature for C++ projects ‘Faster project load’. The next time you open a C++ project it will load faster, and the time after that it will load really fast!
 
-* _**New in RC**_ Improvements to the Open Folder experience.  
-   Visual Studio 2017 introduces the “Open Folder” feature, which enables you to code, build and debug in a folder containing source code without the need to create any solutions or projects. This makes it a lot simpler to get started with Visual Studio even if your project is not an MSBuild-based project. With “Open Folder” you get access to the powerful code understanding, editing, building and debugging capabilities that Visual Studio already provides for MSBuild projects. 
+### Support for non-MSBuild projects with Open Folder
+Visual Studio 2017 introduces the “Open Folder” feature, which enables you to code, build and debug in a folder containing source code without the need to create any solutions or projects. This makes it a lot simpler to get started with Visual Studio even if your project is not an MSBuild-based project. With “Open Folder” you get access to the powerful code understanding, editing, building and debugging capabilities that Visual Studio already provides for MSBuild projects. For more information, see [Bring your C++ codebase to Visual Studio with “Open Folder”](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/bring-your-c-codebase-to-visual-studio-with-open-folder/).
+* _**New in RC**_ Improvements to the Open Folder experience.     
 You can customize the experience through these json files:
   -	CppProperties.json to customize the IntelliSense and browsing experience.
   -	Tasks.json to customize the build steps. 
   -	Launch.json to customize the debugging experience.
-  - For more information, see [Bring your C++ codebase to Visual Studio with “Open Folder”](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/bring-your-c-codebase-to-visual-studio-with-open-folder/).
+
+### CMake support via Open Folder
+Visual Studio 2017 introduces support for using CMake projects without converting to MSBuild project files (.vcxproj). For more information, see [CMake support in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/cmake-support-in-visual-studio/). Opening CMake projects with “Open Folder” will automatically configure the environment for C++ editing, building and debugging.
 
 * _**New in RC**_ C++ IntelliSense will work without the need to create a CppProperties.json file in the root folder. Along with this, we've added a new dropdown to allow users to easily switch between configurations provided by CMake and CppProperties.json files.
-CMake support in Open Folder
-Opening CMake projects with “Open Folder” will automatically configure the environment for C++ editing, building and debugging.
 
 * _**New in RC**_ Further configuration is supported via a CMakeSettings.json file that sits in the same folder as the CMakeLists.txt file.
 
