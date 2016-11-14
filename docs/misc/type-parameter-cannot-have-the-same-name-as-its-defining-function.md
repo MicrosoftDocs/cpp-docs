@@ -2,7 +2,6 @@
 title: "Type parameter cannot have the same name as its defining function | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

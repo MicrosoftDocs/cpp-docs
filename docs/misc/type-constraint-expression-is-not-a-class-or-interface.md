@@ -2,7 +2,6 @@
 title: "Type constraint &#39;&lt;expression&gt;&#39; is not a class or interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

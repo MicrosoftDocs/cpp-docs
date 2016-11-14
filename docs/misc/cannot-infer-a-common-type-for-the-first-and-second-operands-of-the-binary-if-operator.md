@@ -2,7 +2,6 @@
 title: "Cannot infer a common type for the first and second operands of the binary &#39;If&#39; operator | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

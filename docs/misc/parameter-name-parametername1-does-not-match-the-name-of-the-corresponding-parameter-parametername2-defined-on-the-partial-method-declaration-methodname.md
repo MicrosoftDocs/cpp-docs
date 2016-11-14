@@ -2,7 +2,6 @@
 title: "Parameter name &#39;&lt;parametername1&gt;&#39; does not match the name of the corresponding parameter, &#39;&lt;parametername2&gt;&#39;, defined on the partial method declaration &#39;&lt;methodname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

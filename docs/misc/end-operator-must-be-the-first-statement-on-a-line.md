@@ -2,7 +2,6 @@
 title: "&#39;End Operator&#39; must be the first statement on a line | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,7 +2,6 @@
 title: "&#39;&lt;functionname&gt;&#39; is not declared (Visual Basic Error) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

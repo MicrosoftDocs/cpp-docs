@@ -2,7 +2,6 @@
 title: "You must reference at least one range variable on both sides of the &#39;Equals&#39; operator | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

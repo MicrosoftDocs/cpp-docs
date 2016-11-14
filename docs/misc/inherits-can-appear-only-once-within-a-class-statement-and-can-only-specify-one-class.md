@@ -2,7 +2,6 @@
 title: "&#39;Inherits&#39; can appear only once within a &#39;Class&#39; statement and can only specify one class | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

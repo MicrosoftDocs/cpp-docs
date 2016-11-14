@@ -2,7 +2,6 @@
 title: "&#39;RemoveHandler&#39; declaration must end with a matching &#39;End RemoveHandler&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

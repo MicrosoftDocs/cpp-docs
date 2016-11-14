@@ -2,7 +2,6 @@
 title: "Namespace or type &#39;&lt;name&gt;&#39; has already been imported | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

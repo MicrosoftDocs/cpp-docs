@@ -2,7 +2,6 @@
 title: "&#39;Microsoft.VisualBasic.ComClassAttribute&#39; on class &#39;&lt;classname&gt;&#39; implicitly declares &lt;type&gt; &#39;&lt;membername&gt;&#39;, which conflicts with a member of the same name in &lt;type&gt; &#39;&lt;typename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

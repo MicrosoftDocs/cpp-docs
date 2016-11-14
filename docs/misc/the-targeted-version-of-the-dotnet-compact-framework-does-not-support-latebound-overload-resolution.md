@@ -2,7 +2,6 @@
 title: "The targeted version of the .NET Compact Framework does not support latebound overload resolution | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

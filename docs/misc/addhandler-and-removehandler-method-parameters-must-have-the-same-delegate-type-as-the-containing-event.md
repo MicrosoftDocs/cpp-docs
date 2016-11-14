@@ -2,7 +2,6 @@
 title: "&#39;AddHandler&#39; and &#39;RemoveHandler&#39; method parameters must have the same delegate type as the containing event | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

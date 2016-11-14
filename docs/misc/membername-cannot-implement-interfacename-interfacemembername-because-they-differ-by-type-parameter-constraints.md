@@ -2,7 +2,6 @@
 title: "&#39;&lt;membername&gt;&#39; cannot implement &#39;&lt;interfacename&gt;.&lt;interfacemembername&gt;&#39; because they differ by type parameter constraints | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

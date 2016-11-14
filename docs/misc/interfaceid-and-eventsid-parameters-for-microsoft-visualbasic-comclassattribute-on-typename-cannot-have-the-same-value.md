@@ -2,7 +2,6 @@
 title: "&#39;InterfaceId&#39; and &#39;EventsId&#39; parameters for &#39;Microsoft.VisualBasic.ComClassAttribute&#39; on &#39;&lt;typename&gt;&#39; cannot have the same value | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

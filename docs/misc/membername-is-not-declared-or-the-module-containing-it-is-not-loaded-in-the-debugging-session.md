@@ -2,7 +2,6 @@
 title: "&#39;&lt;membername&gt;&#39; is not declared or the module containing it is not loaded in the debugging session | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

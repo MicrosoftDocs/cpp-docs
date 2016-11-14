@@ -2,7 +2,6 @@
 title: "Structure &#39;&lt;structurename&gt;&#39; cannot contain an instance of itself: &lt;error&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

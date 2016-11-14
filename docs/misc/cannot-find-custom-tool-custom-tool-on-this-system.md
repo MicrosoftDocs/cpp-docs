@@ -2,7 +2,6 @@
 title: "Cannot find custom tool &#39;custom tool&#39; on this system | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

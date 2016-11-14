@@ -2,7 +2,6 @@
 title: "&#39;Variant&#39; is no longer a supported type; use the &#39;Object&#39; type instead | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

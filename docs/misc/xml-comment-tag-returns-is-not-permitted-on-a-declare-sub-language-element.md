@@ -2,7 +2,6 @@
 title: "XML comment tag &#39;returns&#39; is not permitted on a &#39;declare sub&#39; language element | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

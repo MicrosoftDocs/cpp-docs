@@ -2,7 +2,6 @@
 title: "&#39;TypeOf...Is&#39; requires its left operand to have a reference type, but this operand has the type &#39;&lt;type&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

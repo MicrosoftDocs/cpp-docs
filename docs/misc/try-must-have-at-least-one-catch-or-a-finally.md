@@ -2,7 +2,6 @@
 title: "Try must have at least one &#39;Catch&#39; or a &#39;Finally&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

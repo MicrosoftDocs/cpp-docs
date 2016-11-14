@@ -2,7 +2,6 @@
 title: "Event &#39;&lt;eventname&gt;&#39; implicitly declares &#39;&lt;membername&gt;&#39;, which conflicts with a member in the base &lt;type&gt; &#39;&lt;classname&gt;&#39;, and so the event should be declared &#39;Shadows&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

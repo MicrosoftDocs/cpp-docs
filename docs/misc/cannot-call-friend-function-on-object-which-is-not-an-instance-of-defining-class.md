@@ -2,7 +2,6 @@
 title: "Cannot call friend function on object which is not an instance of defining class | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

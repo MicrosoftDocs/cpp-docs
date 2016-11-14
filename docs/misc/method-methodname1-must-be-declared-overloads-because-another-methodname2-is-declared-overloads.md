@@ -2,7 +2,6 @@
 title: "&lt;method&gt; &#39;&lt;methodname1&gt;&#39; must be declared &#39;Overloads&#39; because another &#39;&lt;methodname2&gt;&#39; is declared &#39;Overloads&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

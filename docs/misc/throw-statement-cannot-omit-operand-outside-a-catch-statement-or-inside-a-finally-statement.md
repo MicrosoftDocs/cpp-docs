@@ -2,7 +2,6 @@
 title: "&#39;Throw&#39; statement cannot omit operand outside a &#39;Catch&#39; statement or inside a &#39;Finally&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

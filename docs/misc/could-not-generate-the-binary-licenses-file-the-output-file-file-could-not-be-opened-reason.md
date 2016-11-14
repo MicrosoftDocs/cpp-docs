@@ -2,7 +2,6 @@
 title: "Could not generate the binary licenses file. The output file &#39;file&#39; could not be opened. &lt;reason&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

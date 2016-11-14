@@ -2,7 +2,6 @@
 title: "&#39;Shared&#39; cannot be combined with &#39;&lt;specifier&gt;&#39; on a method declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

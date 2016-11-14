@@ -2,7 +2,6 @@
 title: "&#39;Namespace&#39; statements can occur only at file or namespace level | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
