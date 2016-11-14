@@ -11,7 +11,7 @@
 # [.NET Development](dotnet\TOC.md)
 # [Cloud and Web Programming in Visual C++](top/cloud-and-web-programming-in-visual-cpp.md)
 ## [C++ REST SDK (Codename "Casablanca")](top/cpp-rest-sdk-codename-casablanca.md)
-# [Parallel Programming](parallel\TOC.md)
+# [Parallel Programming](parallel/parallel-programming-in-visual-cpp.md)
 # [Data Access](data\TOC.md)
 # [Text and Strings](text\TOC.md)
 # [Using the Visual Studio IDE for C++](ide\TOC.md)
