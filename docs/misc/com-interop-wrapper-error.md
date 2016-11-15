@@ -52,7 +52,7 @@ This message box is displayed when the project system could not create a COM int
   
 ## See Also  
  [Component Model Namespaces in Visual Studio](http://msdn.microsoft.com/en-us/705d0add-0707-44ba-a6de-637381d9c937)   
- [Component Authoring](../Topic/Component%20Authoring.md)   
+ [Component Authoring](http://msdn.microsoft.com/Library/4a5a5e49-0378-4a31-83bc-24da0f1a727d)   
  [COM Interop](/dotnet/articles/visual-basic/programming-guide/com-interop/index)   
- [Common Language Runtime](../Topic/Common%20Language%20Runtime%20\(CLR\).md)   
+ [Common Language Runtime](http://msdn.microsoft.com/Library/059a624e-f7db-4134-ba9f-08b676050482)   
  [COM Interoperability in .NET Framework Applications](/dotnet/articles/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications)

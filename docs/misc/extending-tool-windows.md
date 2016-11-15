@@ -50,7 +50,7 @@ Visual Studio tool windows are, in general, read-only windows that are not file-
   
  Tool windows can be *dynamic* (also known as *auto-visible*). Dynamic tool windows are visible whenever their related UI context applies. The use of auto-visibility can reduce the clutter of windows in the IDE. For more information, see [Opening a Dynamic Tool Window](/visualstudio/extensibility/opening-a-dynamic-tool-window).  
   
- VSPackages are not the only way to create a tool window. Add-ins can create a tool window by using the Visual Studio Automation model. For more information, see [How to: Create and Control Tool Windows](../Topic/How%20to:%20Create%20and%20Control%20Tool%20Windows.md).  
+ VSPackages are not the only way to create a tool window. Add-ins can create a tool window by using the Visual Studio Automation model. For more information, see [How to: Create and Control Tool Windows](http://msdn.microsoft.com/Library/15984015-b1a3-4368-9f17-756833cec969).  
   
 ## See Also  
  [Tool Windows](../misc/extending-tool-windows.md)   

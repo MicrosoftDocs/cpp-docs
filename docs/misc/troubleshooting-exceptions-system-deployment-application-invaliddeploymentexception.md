@@ -50,4 +50,4 @@ An <xref:System.Deployment.Application.InvalidDeploymentException> exception is 
  <xref:System.Deployment.Application.InvalidDeploymentException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
  [Troubleshooting ClickOnce Deployments](/visualstudio/deployment/troubleshooting-clickonce-deployments)   
- [ClickOnce Deployment for Windows Forms](../Topic/ClickOnce%20Deployment%20for%20Windows%20Forms.md)
+ [ClickOnce Deployment for Windows Forms](http://msdn.microsoft.com/Library/1451fce9-1965-4a03-b4d3-831b5fe4ad66)

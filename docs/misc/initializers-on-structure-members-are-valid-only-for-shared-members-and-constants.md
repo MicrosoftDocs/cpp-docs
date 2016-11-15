@@ -55,5 +55,5 @@ A structure member variable was initialized as part of its declaration.
     ```  
   
 ## See Also  
- [How to: Declare a Structure](../Topic/How%20to:%20Declare%20a%20Structure%20\(Visual%20Basic\).md)   
+ [How to: Declare a Structure](http://msdn.microsoft.com/Library/d5e98381-eb81-47d4-af83-48cc534a2572)   
  [Constants and Enumerations](/dotnet/articles/visual-basic/programming-guide/language-features/constants-enums/index)

@@ -174,7 +174,7 @@ translation.priority.mt:
         }  
     ```  
   
-     For more information on authoring Windows Forms controls and toolbox controls, see [Developing Custom Windows Forms Controls with the .NET Framework](../Topic/Developing%20Custom%20Windows%20Forms%20Controls%20with%20the%20.NET%20Framework.md) or [Walkthrough: Autoloading Toolbox Items](../misc/walkthrough-autoloading-toolbox-items.md).  
+     For more information on authoring Windows Forms controls and toolbox controls, see [Developing Custom Windows Forms Controls with the .NET Framework](http://msdn.microsoft.com/Library/236cebc0-bd71-4f18-9fd6-5d0e592375df) or [Walkthrough: Autoloading Toolbox Items](../misc/walkthrough-autoloading-toolbox-items.md).  
   
 2.  (Optional) An application can choose to use a custom object derived from the <xref:System.Drawing.Design.ToolboxItem> object to provide its Toolbox control to the **Toolbox**.  
   
@@ -661,4 +661,4 @@ translation.priority.mt:
  [Registering Toolbox Support Features](../misc/registering-toolbox-support-features.md)   
  [How to: Provide Custom Toolbox Items By Using Interop Assemblies](../misc/how-to-provide-custom-toolbox-items-by-using-interop-assemblies.md)   
  [Managing the Toolbox](../misc/managing-the-toolbox.md)   
- [How to: Control the Toolbox](../Topic/How%20to:%20Control%20the%20Toolbox.md)
+ [How to: Control the Toolbox](http://msdn.microsoft.com/Library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)

@@ -47,4 +47,4 @@ A statement attempts to construct a type from a generic type, or call a generic 
   
 ## See Also  
  [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [How to: Use a Generic Class](../Topic/How%20to:%20Use%20a%20Generic%20Class%20\(Visual%20Basic\).md)
+ [How to: Use a Generic Class](http://msdn.microsoft.com/Library/242dd2a6-86c4-4ce7-83f2-f2661803f752)

@@ -58,5 +58,5 @@ You can create an XML-based .vsct file from an existing command table .ctc sourc
     >  You can improve the readability of the .vsct file by reformatting the XML comments.  
   
 ## See Also  
- [How to: Create a .Vsct File](../Topic/How%20to:%20Create%20a%20.Vsct%20File.md)   
+ [How to: Create a .Vsct File](http://msdn.microsoft.com/Library/b955f51c-f9f9-49c3-a8e4-63b6eb0e0341)   
  [Visual Studio Command Table (.Vsct) Files](/visualstudio/extensibility/internals/visual-studio-command-table-dot-vsct-files)

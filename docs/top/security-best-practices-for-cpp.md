@@ -109,5 +109,5 @@ This article contains information about security tools and practices. Using them
   
 ## See Also  
  <xref:System.Security>   
- [Security](../Topic/Security%20in%20the%20.NET%20Framework.md)   
+ [Security](http://msdn.microsoft.com/Library/9a9621d7-8883-4a4f-a874-65e8e09e20a6)   
  [How User Account Control (UAC) Affects Your Application](../top/how-user-account-control-uac-affects-your-application.md)

@@ -46,4 +46,4 @@ This example demonstrates the Windows `ReadFile` function by reading and display
  [C# Reference](/dotnet/articles/csharp/language-reference/index)   
  [Unsafe Code and Pointers](/dotnet/articles/csharp/programming-guide/unsafe-code-pointers/index)   
  [Pointer types](/dotnet/articles/csharp/programming-guide/unsafe-code-pointers/pointer-types)   
- [Garbage Collection](../Topic/Garbage%20Collection.md)
+ [Garbage Collection](http://msdn.microsoft.com/Library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9)

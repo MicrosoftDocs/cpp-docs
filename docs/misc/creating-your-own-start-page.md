@@ -100,4 +100,4 @@ You can create a custom Start Page either by using the Start Page Project Templa
   
 ## See Also  
  [Customizing the Start Page](/visualstudio/ide/customizing-the-start-page-for-visual-studio)   
- [Walkthrough: Adding Custom XAML to the Start Page](../Topic/Walkthrough:%20Adding%20Custom%20XAML%20to%20the%20Start%20Page.md)
+ [Walkthrough: Adding Custom XAML to the Start Page](http://msdn.microsoft.com/Library/9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6)

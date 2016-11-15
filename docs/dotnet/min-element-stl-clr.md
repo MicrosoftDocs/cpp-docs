@@ -47,7 +47,7 @@ template<class _FwdIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `min_element`. For more information, see [min_element](../Topic/min_element.md).  
+ This function behaves the same as the STL function `min_element`. For more information, see [min_element](http://msdn.microsoft.com/Library/4cf188f9-59f6-4d2c-a1aa-a259c0b1ac6c).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

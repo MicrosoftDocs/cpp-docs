@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0643
 'arg' duplicate named attribute argument  
   
- A parameter, `arg`, on a user-defined attribute was specified twice. For more information, see [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md).  
+ A parameter, `arg`, on a user-defined attribute was specified twice. For more information, see [Attributes](http://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).  
   
 ## Example  
  The following sample generates CS0643:  

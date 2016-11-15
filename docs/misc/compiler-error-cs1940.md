@@ -71,4 +71,4 @@ class Test
 ```  
   
 ## See Also  
- [Standard Query Operators Overview](../Topic/Standard%20Query%20Operators%20Overview.md)
+ [Standard Query Operators Overview](http://msdn.microsoft.com/Library/24cda21e-8af8-4632-b519-c404a839b9b2)

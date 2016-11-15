@@ -161,6 +161,6 @@ For a **Tools Options** page to be available to users and support automation, it
  [Creating Registrar Scripts](../atl/creating-registrar-scripts.md)   
  [Using Options Pages](../misc/using-options-pages.md)   
  [Creating Options Pages By Using Interop Assemblies](../misc/creating-options-pages-by-using-interop-assemblies.md)   
- [How to: Create Custom Options Pages](../Topic/How%20to:%20Create%20Custom%20Options%20Pages.md)   
+ [How to: Create Custom Options Pages](http://msdn.microsoft.com/Library/850b7335-2677-40d7-8604-27fcab93a589)   
  [Options Pages](../misc/options-pages.md)   
  [Automation Support for Options Pages](/visualstudio/extensibility/internals/automation-support-for-options-pages)

@@ -289,7 +289,7 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [Internal error (Visual Basic)](../misc/internal-error-visual-basic.md)  
   
- [Internal error happened at \<location>](../Topic/Internal%20error%20happened%20at%20%3Clocation%3E.md)  
+ [Internal error happened at \<location>](http://msdn.microsoft.com/Library/0af78cbc-89ec-40ea-9dee-bac9f2cb7c1e)  
   
  [Internal error in the Microsoft Visual Basic runtime](../misc/internal-error-in-the-microsoft-visual-basic-runtime.md)  
   

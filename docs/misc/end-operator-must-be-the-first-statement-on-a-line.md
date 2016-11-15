@@ -44,7 +44,7 @@ An `End Operator` statement follows a colon (`:`) statement separator. `End Oper
 -   Separate the multiple statements onto different lines.  
   
 ## See Also  
- [How to: Break and Combine Statements in Code](../Topic/How%20to:%20Break%20and%20Combine%20Statements%20in%20Code%20\(Visual%20Basic\).md)   
+ [How to: Break and Combine Statements in Code](http://msdn.microsoft.com/Library/dea01dad-a8ac-484a-bb3a-8c45a1b1eccc)   
  [Operator Statement](/dotnet/articles/visual-basic/language-reference/statements/operator-statement)   
- [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
- [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)
+ [How to: Define an Operator](http://msdn.microsoft.com/Library/d4b0e253-092a-4e6e-9fe2-01f562140a29)   
+ [How to: Define a Conversion Operator](http://msdn.microsoft.com/Library/54203dfa-c24b-463f-9942-d5153e89e762)

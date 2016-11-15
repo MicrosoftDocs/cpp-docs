@@ -39,5 +39,5 @@ An attempt has been made to access a file that is currently open for reading.
 ## See Also  
  <xref:System.Security.Permissions.FileIOPermission>   
  [How to: Get Information About a File in Visual Basic](http://msdn.microsoft.com/en-us/ca0720ec-f40e-4c11-9748-0ce1685c78f0)   
- [How to: Read from Text Files](../Topic/How%20to:%20Read%20From%20Text%20Files%20in%20Visual%20Basic.md)   
- [How to: Read From Binary Files](../Topic/How%20to:%20Read%20From%20Binary%20Files%20in%20Visual%20Basic.md)
+ [How to: Read from Text Files](http://msdn.microsoft.com/Library/735fe9d7-0f7a-4185-ba02-f35e580ec4b8)   
+ [How to: Read From Binary Files](http://msdn.microsoft.com/Library/d2b1269e-24b6-42e0-9414-ae708db282d8)

@@ -41,7 +41,7 @@ Return by reference is not verifiable: reason
   
  A reference can only be verifiably returned when it can be tracked by the verifier from creation to return point and when it is a reference to an element of an array, or a member of a class.  
   
- For more information, see [Peverify.exe (PEVerify Tool)](../Topic/Peverify.exe%20\(PEVerify%20Tool\).md).  
+ For more information, see [Peverify.exe (PEVerify Tool)](http://msdn.microsoft.com/Library/f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa).  
   
  A reference must remain on the stack from creation to return in order to be verifiable.  
   

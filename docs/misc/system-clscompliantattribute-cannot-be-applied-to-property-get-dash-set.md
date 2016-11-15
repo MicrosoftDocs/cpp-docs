@@ -37,7 +37,7 @@ translation.priority.mt:
 # System.CLSCompliantAttribute cannot be applied to property &#39;Get&#39;/&#39;Set&#39;
 A property definition applies the <xref:System.CLSCompliantAttribute> attribute to its `Get` or `Set` statement.  
   
- For a property to be compliant with the [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md) (CLS), the entire property must be marked as `<CLSCompliant(True)>`. You must apply <xref:System.CLSCompliantAttribute> to the [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement), not to either the `Get` or the `Set` statement.  
+ For a property to be compliant with the [Language Independence and Language-Independent Components](http://msdn.microsoft.com/Library/4f0b77d0-4844-464f-af73-6e06bedeafc6) (CLS), the entire property must be marked as `<CLSCompliant(True)>`. You must apply <xref:System.CLSCompliantAttribute> to the [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement), not to either the `Get` or the `Set` statement.  
   
  When you apply <xref:System.CLSCompliantAttribute> to a programming element, you set the attribute's `isCompliant` parameter to either `True` or `False` to indicate compliance or noncompliance. There is no default for this parameter, and you must supply a value.  
   

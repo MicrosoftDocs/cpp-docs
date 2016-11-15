@@ -44,4 +44,4 @@ translation.priority.mt:
 -   Download the package file for which the information is missing and copy it into the bootstrapper cache.  
   
 ## See Also  
- [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)
+ [\<PackageFiles> Element](http://msdn.microsoft.com/Library/3ea252d7-18a3-47d8-af83-47feebcfe82b)

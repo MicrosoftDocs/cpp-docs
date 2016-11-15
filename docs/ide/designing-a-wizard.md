@@ -42,7 +42,7 @@ You might need to create projects with standardized features that differ from th
   
  The wizard architecture allows you to access the following object models directly in your wizards, and call their methods, properties, and events from either the JScript or the HTML files. (See the examples in [The HTML Files](../ide/html-files.md) and [The JScript File](../ide/jscript-file.md) for more information.)  
   
--   [Developer Tools Environment (DTE) Object Model](../Topic/Extending%20the%20Visual%20Studio%20Environment.md)  
+-   [Developer Tools Environment (DTE) Object Model](http://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792)  
   
 -   [Visual C++ Code Model](http://msdn.microsoft.com/en-us/dd6452c2-1054-44a1-b0eb-639a94a1216b)  
   

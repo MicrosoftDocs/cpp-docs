@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0185
 'type' is not a reference type as required by the lock statement  
   
- The [lock](/dotnet/articles/csharp/language-reference/keywords/lock-statement) statement can only evaluate reference types. For more information, see [Thread Synchronization](../Topic/Thread%20Synchronization%20\(C%23%20and%20Visual%20Basic\).md) and [Reference Types](/dotnet/articles/csharp/language-reference/keywords/reference-types).  
+ The [lock](/dotnet/articles/csharp/language-reference/keywords/lock-statement) statement can only evaluate reference types. For more information, see [Thread Synchronization](http://msdn.microsoft.com/Library/413e1f28-a2c5-4eec-8338-aa43e7982ff4) and [Reference Types](/dotnet/articles/csharp/language-reference/keywords/reference-types).  
   
 ## Example  
  The following sample generates CS0185:  

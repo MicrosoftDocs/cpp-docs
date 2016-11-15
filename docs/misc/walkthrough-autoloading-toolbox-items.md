@@ -131,7 +131,7 @@ This walkthrough illustrates how a managed VSPackage can use reflection to autom
 3.  Close the experimental version of [!INCLUDE[vs_current_short](../misc/includes/vs_current_short_md.md)].  
   
 ## Creating a Toolbox Control  
- In this section, you create and register a user control, `Control1`, that declares an associated default **Toolbox** item. For more information about how to author Windows Form controls and the <xref:System.Drawing.Design.ToolboxItem> class, see [Developing Windows Forms Controls at Design Time](../Topic/Developing%20Windows%20Forms%20Controls%20at%20Design%20Time.md).  
+ In this section, you create and register a user control, `Control1`, that declares an associated default **Toolbox** item. For more information about how to author Windows Form controls and the <xref:System.Drawing.Design.ToolboxItem> class, see [Developing Windows Forms Controls at Design Time](http://msdn.microsoft.com/Library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
   
 #### To create a Toolbox control that will be used with a default ToolboxItem  
   

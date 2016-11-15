@@ -47,5 +47,5 @@ A [Get Statement](/dotnet/articles/visual-basic/language-reference/statements/ge
   
 ## See Also  
  [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)   
- [How to: Declare a Property with Mixed Access Levels](../Topic/How%20to:%20Declare%20a%20Property%20with%20Mixed%20Access%20Levels%20\(Visual%20Basic\).md)   
- [How to: Declare and Call a Default Property in Visual Basic](../Topic/How%20to:%20Declare%20and%20Call%20a%20Default%20Property%20in%20Visual%20Basic.md)
+ [How to: Declare a Property with Mixed Access Levels](http://msdn.microsoft.com/Library/fdbb2d97-279a-4956-b26c-cbdfbc34915a)   
+ [How to: Declare and Call a Default Property in Visual Basic](http://msdn.microsoft.com/Library/68b4026e-09ef-4613-808e-f6287494ff63)

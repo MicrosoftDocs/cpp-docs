@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1507
 Cannot link resource file 'file' when building a module  
   
- [/linkresource](/dotnet/articles/csharp/language-reference/compiler-options/linkresource-compiler-option) was used in the same compilation with [/target:module](../Topic/-target:module%20\(C%23%20Compiler%20Options\).md), which is not allowed. For example, the following options would generate CS1507:  
+ [/linkresource](/dotnet/articles/csharp/language-reference/compiler-options/linkresource-compiler-option) was used in the same compilation with [/target:module](http://msdn.microsoft.com/Library/9af1e4fa-c749-44e7-ae58-90a3d05d4e72), which is not allowed. For example, the following options would generate CS1507:  
   
 ```  
 csc /linkresource:rf.resource /target:module in.cs  

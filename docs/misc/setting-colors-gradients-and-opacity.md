@@ -86,7 +86,7 @@ All of the user interface (UI) elements in Visual Studio are created in Windows 
   
      [!code-xml[TWShortcutMenu#32](../misc/codesnippet/Xaml/setting-colors-gradients-and-opacity_1.xaml)]  
   
-     Using the [DynamicResource](../Topic/DynamicResource%20Markup%20Extension.md) extension enables the value to change as required, for example, when a user changes the settings. You must use the [x:Static](../Topic/x:Static%20Markup%20Extension.md) extension because the `VsBrushes` class is not part of the default WPF namespace.  
+     Using the [DynamicResource](http://msdn.microsoft.com/Library/7324f243-03af-4c2b-b0db-26ac6cdfcbe4) extension enables the value to change as required, for example, when a user changes the settings. You must use the [x:Static](http://msdn.microsoft.com/Library/056aee79-7cdd-434f-8174-dfc856cad343) extension because the `VsBrushes` class is not part of the default WPF namespace.  
   
 ## See Also  
  [Extending Tool Windows](../misc/extending-tool-windows.md)

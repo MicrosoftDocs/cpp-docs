@@ -48,5 +48,5 @@ A <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exception is thrown
 ## See Also  
  <xref:Microsoft.VisualBasic.FileIO.MalformedLineException>   
  [Parsing Text Files with the TextFieldParser Object](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object)   
- [How to: Read From Comma-Delimited Text Files](../Topic/How%20to:%20Read%20From%20Comma-Delimited%20Text%20Files%20in%20Visual%20Basic.md)   
- [How to: Read From Fixed-width Text Files](../Topic/How%20to:%20Read%20From%20Fixed-width%20Text%20Files%20in%20Visual%20Basic.md)
+ [How to: Read From Comma-Delimited Text Files](http://msdn.microsoft.com/Library/a8413fe4-0dba-49c8-8692-44fb67a9ec4f)   
+ [How to: Read From Fixed-width Text Files](http://msdn.microsoft.com/Library/99be5692-967a-4e85-993e-cd18139a5a69)

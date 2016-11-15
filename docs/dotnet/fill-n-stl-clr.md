@@ -45,7 +45,7 @@ template<class _OutIt, class _Diff, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `fill_n`. For more information, see [fill_n](../Topic/fill_n.md).  
+ This function behaves the same as the STL function `fill_n`. For more information, see [fill_n](http://msdn.microsoft.com/Library/ebcda70f-d82c-4f43-b4c8-c7e7cbbccb69).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

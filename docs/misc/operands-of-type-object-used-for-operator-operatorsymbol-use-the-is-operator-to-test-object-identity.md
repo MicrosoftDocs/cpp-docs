@@ -52,5 +52,5 @@ An expression uses the `=` with one or both operands of the [Object Data Type](/
 ## See Also  
  [Comparison Operators in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators)   
  [Is Operator](/dotnet/articles/visual-basic/language-reference/operators/is-operator)   
- [How to: Determine Whether Two Objects Are Related](../Topic/How%20to:%20Determine%20Whether%20Two%20Objects%20Are%20Related%20\(Visual%20Basic\).md)   
- [How to: Determine Whether Two Objects Are Identical](../Topic/How%20to:%20Determine%20Whether%20Two%20Objects%20Are%20Identical%20\(Visual%20Basic\).md)
+ [How to: Determine Whether Two Objects Are Related](http://msdn.microsoft.com/Library/da002e3f-6616-4bad-a229-f842d06652bb)   
+ [How to: Determine Whether Two Objects Are Identical](http://msdn.microsoft.com/Library/7829f817-0d1f-4749-a707-de0b95e0cf5c)

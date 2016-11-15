@@ -40,4 +40,4 @@ The exception that is thrown when an unexpected operation occurs during a crypto
 ## See Also  
  <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Cryptography Model](../Topic/.NET%20Framework%20Cryptography%20Model.md)
+ [Cryptography Model](http://msdn.microsoft.com/Library/12fecad4-fbab-432a-bade-2f05976a2971)

@@ -93,4 +93,4 @@ This walkthrough illustrates how to create a Visual Studio add-in that consumes 
     ```  
   
 ## See Also  
- [How to: Deactivate and Remove an Add-In](../Topic/How%20to:%20Deactivate%20and%20Remove%20an%20Add-In.md)
+ [How to: Deactivate and Remove an Add-In](http://msdn.microsoft.com/Library/5d9bc34f-ab3b-4477-950f-79fb820acb8c)

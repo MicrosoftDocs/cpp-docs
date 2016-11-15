@@ -51,7 +51,7 @@ The database classes provide a simpler interface to a [data source](../../data/o
   
 -   Allocate storage for any results the call returns.  
   
--   Pass an ODBC **HDBC** or **HSTMT** handle, depending on the parameter signature of the function. Use the [AFXGetHENV](../Topic/AfxGetHENV.md) macro to retrieve the ODBC handle.  
+-   Pass an ODBC **HDBC** or **HSTMT** handle, depending on the parameter signature of the function. Use the [AFXGetHENV](http://msdn.microsoft.com/Library/d8be2a8e-b93a-460f-affb-cf65b2f3dc10) macro to retrieve the ODBC handle.  
   
      Member variables **CDatabase::m_hdbc** and **CRecordset::m_hstmt** are available so that you do not need to allocate and initialize these yourself.  
   

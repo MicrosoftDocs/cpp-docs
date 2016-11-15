@@ -47,7 +47,7 @@ A <xref:System.Security.SecurityException> exception is thrown when a security e
  For more information, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.SqlPermissionLevel%2A>.  
   
  Store application data in isolated storage.  
- Isolated storage is a data storage that provides isolation and safety by defining standardized ways of associating code with saved data. For more information, [Isolated Storage](../Topic/Isolated%20Storage.md).  
+ Isolated storage is a data storage that provides isolation and safety by defining standardized ways of associating code with saved data. For more information, [Isolated Storage](http://msdn.microsoft.com/Library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
   
  If using <xref:System.Windows.Forms.OpenFileDialog> , use the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method to open or save a file.  
  This allows the application to perform in a partial-trust situation.  
@@ -74,7 +74,7 @@ A <xref:System.Security.SecurityException> exception is thrown when a security e
  For more information see [Specific Security Considerations for Office Solutions](/office-dev/office-dev/specific-security-considerations-for-office-solutions).  
   
  If an assembly implementing the custom security object references other assemblies, add the referenced assemblies to the full trust assembly list.  
- For more information, see [Caspol.exe (Code Access Security Policy Tool)](../Topic/Caspol.exe%20\(Code%20Access%20Security%20Policy%20Tool\).md).  
+ For more information, see [Caspol.exe (Code Access Security Policy Tool)](http://msdn.microsoft.com/Library/d2bf6123-7b0c-4e60-87ad-a39a1c3eb2e0).  
   
 ## See Also  
  <xref:System.Security.SecurityException>   

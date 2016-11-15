@@ -43,7 +43,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Consumer Wizard-Generated Methods
-The ATL OLE DB Consumer Wizard and the MFC Application Wizard generate certain functions of which you should be aware. Note that some methods are implemented differently in attributed projects, so there are a few caveats; each case is covered below. For information about viewing injected code, see [Debugging Injected Code](../Topic/How%20to:%20Debug%20Injected%20Code.md).  
+The ATL OLE DB Consumer Wizard and the MFC Application Wizard generate certain functions of which you should be aware. Note that some methods are implemented differently in attributed projects, so there are a few caveats; each case is covered below. For information about viewing injected code, see [Debugging Injected Code](http://msdn.microsoft.com/Library/a1b4104d-d49e-451f-a91e-e39ceaf35875).  
   
 -   `OpenAll` opens the data source, rowsets, and turns on bookmarks if they are available.  
   

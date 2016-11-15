@@ -146,7 +146,7 @@ End Sub
  ![Back to top](../misc/media/pcs_backtotop.png "PCS_BackToTop") [Sections in this article](#BKMK_Contents)  
   
 ###  <a name="BKMK_A_property_or_field_is_null"></a> A property or field is null  
- The fields and properties of a class are automatically initialized to their [default value](../Topic/Data%20Member%20Default%20Values.md) when the class is created. The default value of a reference type is `null` (`Nothing` in Visual Basic) Calling member methods on a field or property of a parent class when the field or property value is null causes a NullReferenceException.  
+ The fields and properties of a class are automatically initialized to their [default value](http://msdn.microsoft.com/Library/53a3b505-4b27-444b-b079-0eb84a97cfd8) when the class is created. The default value of a reference type is `null` (`Nothing` in Visual Basic) Calling member methods on a field or property of a parent class when the field or property value is null causes a NullReferenceException.  
   
  In this example, the highlighted line throws a NullReferenceException because the `Engine` property of `car` is auto-initialized to null.  
   
@@ -438,7 +438,7 @@ End Sub
  ![Back to top](../misc/media/pcs_backtotop.png "PCS_BackToTop") [Sections in this article](#BKMK_Contents)  
   
 ###  <a name="BKMK_Walk_the_call_stack_to_find_where_a_type_reference_is_not_initialized_or_set_to_null_"></a> Walk the call stack to find where a reference variable is not initialized or set to null  
- The Visual Studio [Call Stack window](../Topic/How%20to:%20Use%20the%20Call%20Stack%20Window.md) displays a list of the names of methods that have not completed when the debugger stops at an exception or breakpoint. You can select a name in the **Call Stack** window and choose **Switch to frame** to change the execution context to the method and examine its variables.  
+ The Visual Studio [Call Stack window](http://msdn.microsoft.com/Library/5154a2a1-4729-4dbb-b675-db611a72a731) displays a list of the names of methods that have not completed when the debugger stops at an exception or breakpoint. You can select a name in the **Call Stack** window and choose **Switch to frame** to change the execution context to the method and examine its variables.  
   
  ![Back to top](../misc/media/pcs_backtotop.png "PCS_BackToTop") [Finding the source of a null reference exception during development](#BKMK_Find_the_source_of_a_null_reference_exception_during_development)  
   
@@ -570,7 +570,7 @@ End Class
 > [!NOTE]
 >  **Use lazy initialization for large or infrequently used properties**  
 >   
->  To reduce the memory footprint of your class and to increase its performance, consider using lazy initialization of reference-type properties. See [Lazy Initialization](../Topic/Lazy%20Initialization.md).  
+>  To reduce the memory footprint of your class and to increase its performance, consider using lazy initialization of reference-type properties. See [Lazy Initialization](http://msdn.microsoft.com/Library/56b4ae5c-4745-44ff-ad78-ffe4fcde6b9b).  
   
 ##  <a name="BKMK_Handle_NullReferenceExceptions_in_release_code"></a> Handling NullReferenceExceptions in release code  
  [Check for null (Nothing in Visual Basic) before you use a reference type](#BKMK_Check_for_null_Nothing_in_Visual_Basic_before_using_a_reference_type)  

@@ -57,5 +57,5 @@ translation.priority.mt:
   
 ## See Also  
  [Building from the Command Line](/dotnet/articles/visual-basic/reference/command-line-compiler/building-from-the-command-line)   
- [How to: Invoke the Command-Line Compiler](../Topic/How%20to:%20Invoke%20the%20Command-Line%20Compiler%20\(Visual%20Basic\).md)   
+ [How to: Invoke the Command-Line Compiler](http://msdn.microsoft.com/Library/0fd9a8f6-f34e-4c35-a49d-9b9bbd8da4a9)   
  [Talk to Us](/visualstudio/ide/talk-to-us)

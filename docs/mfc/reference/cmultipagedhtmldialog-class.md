@@ -53,7 +53,7 @@ class CMultiPageDHtmlDialog : public CDHtmlDialog
 |[CMultiPageDHtmlDialog::~CMultiPageDHtmlDialog](#cmultipagedhtmldialog__~cmultipagedhtmldialog)|Destroys a multipage DHTML dialog object.|  
   
 ## Remarks  
- The mechanism for doing this is a [DHTML and URL event map](http://msdn.microsoft.com/en-us/2a7332f0-79d7-46e4-b816-0a618c46777a), which contains [embedded event maps](../Topic/BEGIN_EMBED_DHTML_EVENT_MAP.md) for each page.  
+ The mechanism for doing this is a [DHTML and URL event map](http://msdn.microsoft.com/en-us/2a7332f0-79d7-46e4-b816-0a618c46777a), which contains [embedded event maps](http://msdn.microsoft.com/Library/5346210f-f8b7-4e28-9d2c-d9d7fd42421d) for each page.  
   
 ## Example  
  This multipage dialog assumes three HTML resources that define simple wizard-like functionality. The first page has a `Next` button, the second a **Prev** and `Next` button, and the third a **Prev** button. When one of the buttons is pressed, a handler function calls [CDHtmlDialog::LoadFromResource](../../mfc/reference/cdhtmldialog-class.md#cdhtmldialog__loadfromresource) to load the appropriate new page.  

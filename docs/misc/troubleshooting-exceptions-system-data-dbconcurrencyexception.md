@@ -39,4 +39,4 @@ The exception that is thrown by the `DataAdapter` during the update operation if
 ## See Also  
  <xref:System.Data.DBConcurrencyException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [DataAdapters and DataReaders](../Topic/DataAdapters%20and%20DataReaders.md)
+ [DataAdapters and DataReaders](http://msdn.microsoft.com/Library/cc952ca2-ec19-46ab-9189-15174b52cb74)

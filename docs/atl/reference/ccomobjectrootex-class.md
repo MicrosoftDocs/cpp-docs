@@ -92,7 +92,7 @@ template<class ThreadModel>  class CComObjectRootEx : public CComObjectRootBase
   
  A class that implements a COM server must inherit from `CComObjectRootEx` or [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md).  
   
- If your class definition specifies the [DECLARE_POLY_AGGREGATABLE](../Topic/DECLARE_POLY_AGGREGATABLE.md) macro, ATL creates an instance of **CComPolyObject\<CYourClass>** when **IClassFactory::CreateInstance** is called. During creation, the value of the outer unknown is checked. If it is **NULL**, **IUnknown** is implemented for a nonaggregated object. If the outer unknown is not **NULL**, **IUnknown** is implemented for an aggregated object.  
+ If your class definition specifies the [DECLARE_POLY_AGGREGATABLE](http://msdn.microsoft.com/Library/7569e738-cfbc-4404-ba1d-78dcefa3bdb3) macro, ATL creates an instance of **CComPolyObject\<CYourClass>** when **IClassFactory::CreateInstance** is called. During creation, the value of the outer unknown is checked. If it is **NULL**, **IUnknown** is implemented for a nonaggregated object. If the outer unknown is not **NULL**, **IUnknown** is implemented for an aggregated object.  
   
  If your class does not specify the `DECLARE_POLY_AGGREGATABLE` macro, ATL creates an instance of **CAggComObject\<CYourClass>** for aggregated objects or an instance of **CComObject\<CYourClass>** for nonaggregated objects.  
   
@@ -140,7 +140,7 @@ HRESULT FinalConstruct();
   
  [!code-cpp[NVC_ATL_COM#40](../../atl/codesnippet/CPP/ccomobjectrootex-class_1.h)]  
   
- If the construction fails, you can return an error. You can also use the macro [DECLARE_PROTECT_FINAL_CONSTRUCT](../Topic/DECLARE_PROTECT_FINAL_CONSTRUCT.md) to protect your outer object from being deleted if, during creation, the internal aggregated object increments the reference count then decrements the count to 0.  
+ If the construction fails, you can return an error. You can also use the macro [DECLARE_PROTECT_FINAL_CONSTRUCT](http://msdn.microsoft.com/Library/2d2e5ddc-057a-43ca-87c8-d3477a8193a0) to protect your outer object from being deleted if, during creation, the internal aggregated object increments the reference count then decrements the count to 0.  
   
  Here is a typical way to create an aggregate:  
   
@@ -148,7 +148,7 @@ HRESULT FinalConstruct();
   
 -   Override `FinalConstruct` to create the aggregate.  
   
--   Use the **IUnknown** pointer you defined as the parameter to the [COM_INTERFACE_ENTRY_AGGREGATE](../Topic/COM_INTERFACE_ENTRY_AGGREGATE.md) macro.  
+-   Use the **IUnknown** pointer you defined as the parameter to the [COM_INTERFACE_ENTRY_AGGREGATE](http://msdn.microsoft.com/Library/c671fa40-a57b-4797-ae88-c9762dabd4dc) macro.  
   
 -   Override `FinalRelease` to release the **IUnknown** pointer.  
   
@@ -205,7 +205,7 @@ static HRESULT InternalQueryInterface(
  One of the standard `HRESULT` values.  
   
 ### Remarks  
- `InternalQueryInterface` only handles interfaces in the COM map table. If your object is aggregated, `InternalQueryInterface` does not delegate to the outer unknown. You can enter interfaces into the COM map table with the macro [COM_INTERFACE_ENTRY](../Topic/COM_INTERFACE_ENTRY%20Macros.md) or one of its variants.  
+ `InternalQueryInterface` only handles interfaces in the COM map table. If your object is aggregated, `InternalQueryInterface` does not delegate to the outer unknown. You can enter interfaces into the COM map table with the macro [COM_INTERFACE_ENTRY](http://msdn.microsoft.com/Library/19dcb768-2e1f-4b8d-a618-453a01a4bd00) or one of its variants.  
   
 ##  <a name="ccomobjectrootex__internalrelease"></a>  CComObjectRootEx::InternalRelease  
  Decrements the reference count of a nonaggregated object by 1.  

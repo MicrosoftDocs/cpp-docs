@@ -44,7 +44,7 @@ You can add a label to a statement only within a `Sub`, `Function`, property `Ge
 1.  Remove the label from the statement, or move the statement inside a procedure.  
   
 ## See Also  
- [How to: Label Statements](../Topic/How%20to:%20Label%20Statements%20\(Visual%20Basic\).md)   
+ [How to: Label Statements](http://msdn.microsoft.com/Library/38f1ff43-2054-42cb-963b-1998e60c6ed4)   
  [Sub Statement](/dotnet/articles/visual-basic/language-reference/statements/sub-statement)   
  [Function Statement](/dotnet/articles/visual-basic/language-reference/statements/function-statement)   
  [Get Statement](/dotnet/articles/visual-basic/language-reference/statements/get-statement)   
