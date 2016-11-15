@@ -50,7 +50,7 @@ The Microsoft Foundation Class (MFC) Library provides an object-oriented wrapper
  Public and protected class members are documented only when they are normally used in application programs or derived classes. See the class header files for a complete listing of class members.  
   
 > [!IMPORTANT]
->  The MFC classes and their members cannot be used in applications that execute in the [!INCLUDE[wrt](../Token/wrt_md.md)].  
+>  The MFC classes and their members cannot be used in applications that execute in the Windows Runtime environment.  
 >   
 >  MFC libraries (DLLs) for multibyte character encoding (MBCS) are no longer included in Visual Studio, but are available as a Visual Studio add-on. For more information, see [MFC MBCS DLL Add-on](mfc-MBCS-DLL-Add-on.md).  
   
