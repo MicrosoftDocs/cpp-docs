@@ -34,21 +34,6 @@ translation.priority.ht:
 ## New language features  
 ith support for generalized constexpr and NSDMI for aggregates, the compiler is complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards.
 
-### New compiler switches  
-New compiler switches enable you to opt-in to specific versions of the ISO C++ programming language in a project. The switches available in Visual Studio 2017 are  /std:c++14 and /std:c++latest. For more information, see [Standards version switches in the compiler](https://blogs.msdn.microsoft.com/vcblog/2016/06/07/standards-version-switches-in-the-compiler). Most of the new draft standard features are guarded by the /std:c++latest switch. In addtion, these new compiler switches have been added:
-
--**/permissive-** : vcppdocs/build/reference/permissive-standards-conformance.md
-Enable all strict standards conformance compiler options and disable all Microsoft-specific compiler extensions. (off by default but will be on by default at some point in the future.)
-
--**/diagnostics** : vcppdocs/build/reference/diagnostics-compiler-diagnostic-options.md
-Enable display of the line number, the line number and column, or the line number and column and a caret under the line of code where the diagnostic error or warning was found.
-
--**/debug:fastlink** : vcppdocs/build/reference/debug-generate-debug-info.md
-Enable faster incremental link by not copying all debug information into the PDB file. The PDB file instead points to the debug information for the object and library files used to create the executable.
-The new /permissive- switch introduces the concept of a “less permissive mode" in the compiler. It is 
-
-[!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] RC allows using /sdl with /await. We removed /rtc limitation with Coroutines. 
-
 ### C++11:
 **Expression SFINAE (via more libraries) support in more libraries** 
 The Visual C++ compiler is now capable  continues to improve its support for expression SFINAE, which is required for template argument deduction and substitution where decltype and constexpr expressions may appear as template parameters. For more information, see [Expression SFINAE improvements in VS 2015 Update 3](https://blogs.msdn.microsoft.com/vcblog/2016/06/07/expression-sfinae-improvements-in-vs-2015-update-3). 
@@ -73,8 +58,6 @@ Range-based for loops no longer require that begin() and end() return objects of
 
 
 For the complete list of conformance improvements up through Visual Studio 2015, Update 3, see [Visual C++ What's New 2003 through 2015](https://msdn.microsoft.com/en-us/library/mt723604.aspx).
-
-
 
 ## Bug fixes
 ### Copy-list-initialization

@@ -38,17 +38,31 @@ The compiler and tools version number in [!INCLUDE[vs_dev15_md](../misc/includes
 
 ## C++ Compiler
 
+### C++ conformance improvements
 In this release, we've updated the C++ compiler and standard library with enhanced support for C++11 and C++14 features, as well as preliminary support for certain features expected to be in the C++17 standard. In addition, several new compiler switches have been added. For detailed information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md). 
 
+### New compiler switches  
+
+New compiler switches enable you to opt-in to specific versions of the ISO C++ programming language in a project. The switches available in Visual Studio 2017 are  /std:c++14 and /std:c++latest. For more information, see [Standards version switches in the compiler](https://blogs.msdn.microsoft.com/vcblog/2016/06/07/standards-version-switches-in-the-compiler). Most of the new draft standard features are guarded by the /std:c++latest switch. In addtion, these new compiler switches have been added:
+
+-[/permissive-](vcppdocs/build/reference/permissive-standards-conformance.md): Enable all strict standards conformance compiler options and disable all Microsoft-specific compiler extensions. (off by default but will be on by default at some point in the future.)
+
+-[/diagnostics](vcppdocs/build/reference/diagnostics-compiler-diagnostic-options.md): 
+Enable display of the line number, the line number and column, or the line number and column and a caret under the line of code where the diagnostic error or warning was found.
+
+-[/debug:fastlink](vcppdocs/build/reference/debug-generate-debug-info.md):  
+Enable up to 30% faster incremental link times (vs. Visual Studio 2015) by not copying all debug information into the PDB file. The PDB file instead points to the debug information for the object and library files used to create the executable. See [Faster C++ build cycle in VS “15” with /Debug:fastlink](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-build-cycle-in-vs-15-with-debugfastlink/) and [Recommendations to speed C++ builds in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2016/10/26/recommendations-to-speed-c-builds-in-visual-studio/).
+
+[!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] RC allows using /sdl with /await. We removed /rtc limitation with Coroutines. 
+
+### Codegen, security, diagnostics and versioning
 This release brings several improvements in optimization, code generation, toolset versioning and diagnostics. Some notable improvements include:  
 
 - Improved code generation of loops: Support for automatic vectorization of division of constant integers, better identification of memset patterns.
 - Improved code security: Improved emission of buffer overrun compiler diagnostics, and /guard:cf now guards switch statements that generate jump tables.
 - Versioning: The value of the built-in preprocessor macro _MSC_VER is now being monotonically updated at every Visual C++ toolset update. For more information, see [Visual C++ Compiler Version](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/visual-c-compiler-version/).
 - New toolset layout: The compiler and related build tools have a new location and directory structure on your development machine. The new layout enables side-by-side installations of multiple versions of the compiler. For more information, see [Compiler Tools Layout in Visual Studio “15”](https://blogs.msdn.microsoft.com/vcblog/2016/10/07/compiler-tools-layout-in-visual-studio-15/).
-- The /debug:fastlink option has been improved to provide 30% faster link times on large components than in VS 2015. See [Faster C++ build cycle in VS “15” with /Debug:fastlink](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-build-cycle-in-vs-15-with-debugfastlink/) and [Recommendations to speed C++ builds in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2016/10/26/recommendations-to-speed-c-builds-in-visual-studio/).
 - Improved diagnostics: The output window now shows the column where an error occurs. For more information, see [C++ compiler diagnostics improvements in VS “15” Preview 5](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/c-compiler-diagnostics-improvements-in-vs-15-rc/).
-
 
 ## C++ Libraries
 
