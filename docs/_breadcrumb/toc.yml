@@ -50,6 +50,9 @@
         - name: Reference
           tocHref: /cpp/atl-mfc-shared/reference/
           topicHref: /cpp/atl-mfc/shared/reference/classes-shared-by-atl-and-mfc
+    - name: Linux
+      tocHref: /cpp/linux/
+      topicHref: /cpp/linux/download-install-and-setup-the-linux-development-workload
     - name: .NET
       tocHref: /cpp/dotnet/
       topicHref: /cpp/dotnet/dotnet-programming-with-cpp-cli
