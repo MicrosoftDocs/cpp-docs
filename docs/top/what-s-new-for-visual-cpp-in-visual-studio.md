@@ -30,9 +30,9 @@ translation.priority.ht:
 
 # What's New for Visual C++ in [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)]
 
-[!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] brings many updates and fixes to the Visual C++ environment. We've fixed over 250 bugs and reported issues in the compiler and tools, many submitted by customers through [Microsoft Connect](https://connect.microsoft.com/VisualStudio "Microsoft Connect"). Thank you for reporting bugs!  For more more information on what's new in all of Visual Studio, please visit [What's new in [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)]](https://go.microsoft.com/fwlink/?linkid=834481).
+[!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] brings many updates and fixes to the Visual C++ environment. We've fixed over 250 bugs and reported issues in the compiler and tools, many submitted by customers through [Microsoft Connect](https://connect.microsoft.com/VisualStudio "Microsoft Connect"). Thank you for reporting bugs!  For more information on what's new in all of Visual Studio, please visit [What's new in [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)]](https://go.microsoft.com/fwlink/?linkid=834481).
 
-The compiler and tools version number in [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] RC is 14.10.24629. 
+The compiler and tools version number in [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] is 14.10.24629. 
 
 
 ## C++ Compiler
@@ -42,9 +42,9 @@ In this release, we've updated the C++ compiler and standard library with enhanc
 
 ### New compiler switches  
 
- -**/std:c++14** and **/std:c++latest**: These new compiler switches enable you to opt-in to specific versions of the ISO C++ programming language in a project. For more information, see [Standards version switches in the compiler](https://blogs.msdn.microsoft.com/vcblog/2016/06/07/standards-version-switches-in-the-compiler). Most of the new draft standard features are guarded by the /std:c++latest switch. 
+ -**/std:c++14** and **/std:c++latest**: These compiler switches enable you to opt-in to specific versions of the ISO C++ programming language in a project. For more information, see [Standards version switches in the compiler](https://blogs.msdn.microsoft.com/vcblog/2016/06/07/standards-version-switches-in-the-compiler). Most of the new draft standard features are guarded by the /std:c++latest switch. 
 
--[/permissive-](vcppdocs/build/reference/permissive-standards-conformance.md): Enable all strict standards conformance compiler options and disable all Microsoft-specific compiler extensions. (Off by default but will be on by default at some point in the future.)
+-[/permissive-](vcppdocs/build/reference/permissive-standards-conformance.md): Enable all strict standards conformance compiler options and disable most Microsoft-specific compiler extensions (but not __declspec(dllimport), for example). (Off by default but will be on by default at some point in the future.)
 
 -[/diagnostics](vcppdocs/build/reference/diagnostics-compiler-diagnostic-options.md): 
 Enable display of the line number, the line number and column, or the line number and column and a caret under the line of code where the diagnostic error or warning was found.
@@ -52,7 +52,7 @@ Enable display of the line number, the line number and column, or the line numbe
 -[/debug:fastlink](vcppdocs/build/reference/debug-generate-debug-info.md):  
 Enable up to 30% faster incremental link times (vs. Visual Studio 2015) by not copying all debug information into the PDB file. The PDB file instead points to the debug information for the object and library files used to create the executable. See [Faster C++ build cycle in VS “15” with /Debug:fastlink](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-build-cycle-in-vs-15-with-debugfastlink/) and [Recommendations to speed C++ builds in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2016/10/26/recommendations-to-speed-c-builds-in-visual-studio/).
 
-[!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] allows using /sdl with /await. We removed the /rtc limitation with Coroutines. 
+[!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] allows using /sdl with /await. We removed the /RTC limitation with Coroutines. 
 
 ### Codegen, security, diagnostics and versioning
 This release brings several improvements in optimization, code generation, toolset versioning and diagnostics. Some notable improvements include:  
@@ -112,13 +112,15 @@ The CPPRestSDK, a cross-platform web API for C++, has been updated to version 2.
 
 * Added a new experimental Predictive IntelliSense feature that provides contextually-aware filtering of what appears in the Member List. See [C++ IntelliSense Improvements – Predictive IntelliSense & Filtering](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/c-intellisense-improvements-predictive-intellisense-filtering/)
 
-* The new Find All References UI includes information about whether we are reading from or writing to a variable in the results for C++ code.
+* Find All References (Shift+F12) now helps you get around easily, even in complex codebases. It provides advanced grouping, filtering, sorting, searching within results, and (for some languages) colorization, so you can get a clear understanding of your references. For C++, the new UI includes information about whether we are reading from or writing to a variable.
 
 * _**New in RC**_ The Dot-to-Arrow IntelliSense feature has been moved from experimental to advanced, and is now enabled by default. The editor features Expand Scopes and Expand Precedence have also been moved from experimental to advanced.
 
 * _**New in RC**_ The experimental refactoring features Change Signature and Extract Function are now available by default.
 
 * _**New in RC**_ We've enabled the new experimental feature for C++ projects ‘Faster project load’. The next time you open a C++ project it will load faster, and the time after that it will load really fast!
+
+Some of these features are common to other languages, and some are specific to C++. For more information about these new features, see [Announcing Visual Studio “15”](https://blogs.msdn.microsoft.com/visualstudio/2016/10/05/announcing-visual-studio-15-preview-5/). 
 
 ### Support for non-MSBuild projects with Open Folder
 Visual Studio 2017 introduces the “Open Folder” feature, which enables you to code, build and debug in a folder containing source code without the need to create any solutions or projects. This makes it a lot simpler to get started with Visual Studio even if your project is not an MSBuild-based project. With “Open Folder” you get access to the powerful code understanding, editing, building and debugging capabilities that Visual Studio already provides for MSBuild projects. For more information, see [Bring your C++ codebase to Visual Studio with “Open Folder”](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/bring-your-c-codebase-to-visual-studio-with-open-folder/).
@@ -164,7 +166,7 @@ When writing new code, you can now use C++/WinRT, a standard C++ language projec
 
 
 ## Clang/C2 Platform Toolset
-The Clang/C2 toolset that ships with [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] RC now supports the /bigobj switch, which is crucial for building large projects. It also includes several important bug fixes, both in the front-end and the back-end of the compiler.
+The Clang/C2 toolset that ships with [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] now supports the /bigobj switch, which is crucial for building large projects. It also includes several important bug fixes, both in the front-end and the back-end of the compiler.
 
 ## C++ Code Analysis
 

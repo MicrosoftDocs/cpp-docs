@@ -96,7 +96,7 @@ public:
  Also, notice that the wizard overrides the `DoFieldExchange` member function of class `CRecordset`.  
   
 ##  <a name="_core_the_dofieldexchange_override"></a> DoFieldExchange Override  
- [DoFieldExchange](../Topic/CRecordset::DoFieldExchange.md) is the heart of RFX. The framework calls `DoFieldExchange` any time it needs to move data either from data source to recordset or from recordset to data source. `DoFieldExchange` also supports obtaining information about field data members through the [IsFieldDirty](../Topic/CRecordset::IsFieldDirty.md) and [IsFieldNull](../Topic/CRecordset::IsFieldNull.md) member functions.  
+ [DoFieldExchange](../mfc/reference/crecordset-class.md#crecordset__dofieldexchange) is the heart of RFX. The framework calls `DoFieldExchange` any time it needs to move data either from data source to recordset or from recordset to data source. `DoFieldExchange` also supports obtaining information about field data members through the [IsFieldDirty](../Topic/CRecordset::IsFieldDirty.md) and [IsFieldNull](../Topic/CRecordset::IsFieldNull.md) member functions.  
   
  The following `DoFieldExchange` override is for the `CSections` class. The wizard writes the function in the .cpp file for your recordset class.  
   
