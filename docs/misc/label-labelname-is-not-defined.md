@@ -46,4 +46,4 @@ A line label or line number is referred to but not defined within the scope of t
 ## See Also  
  [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement)   
  [Procedures](/dotnet/articles/visual-basic/language-reference/procedures/index)   
- [How to: Label Statements](../Topic/How%20to:%20Label%20Statements%20\(Visual%20Basic\).md)
+ [How to: Label Statements](http://msdn.microsoft.com/Library/38f1ff43-2054-42cb-963b-1998e60c6ed4)

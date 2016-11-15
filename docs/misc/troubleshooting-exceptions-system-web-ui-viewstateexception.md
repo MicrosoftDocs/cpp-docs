@@ -40,4 +40,4 @@ The exception that is thrown when the view state cannot be loaded or validated.
 ## See Also  
  <xref:System.Web.UI.ViewStateException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [ASP.NET View State Overview](../Topic/ASP.NET%20View%20State%20Overview.md)
+ [ASP.NET View State Overview](http://msdn.microsoft.com/Library/19d2a6ed-9a77-4c7c-a7f5-74dd4b6c3818)

@@ -48,6 +48,6 @@ The `Option Strict` statement takes only `On` and `Off` as arguments; `Option St
 2.  Specify the `/optionstrict:custom` option. For more information, see [/optionstrict](/dotnet/articles/visual-basic/reference/command-line-compiler/optionstrict).  
   
 ## See Also  
- [Option \<keyword> Statement](../Topic/Option%20%3Ckeyword%3E%20Statement.md)   
+ [Option \<keyword> Statement](http://msdn.microsoft.com/Library/6b2f41c4-2403-43b6-8a14-94a3775e5b47)   
  [Option Strict Statement](/dotnet/articles/visual-basic/language-reference/statements/option-strict-statement)   
  [/optionstrict](/dotnet/articles/visual-basic/reference/command-line-compiler/optionstrict)

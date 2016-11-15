@@ -45,4 +45,4 @@ Insert introduction here.
   
 ## See Also  
  [Capturing Graphics Information](/visualstudio/debugger/capturing-graphics-information)   
- [Walkthrough: Capturing Graphics Information](../Topic/Walkthrough:%20Capturing%20Graphics%20Information.md)
+ [Walkthrough: Capturing Graphics Information](http://msdn.microsoft.com/Library/48f12f6e-57b4-48ec-a145-89fa71a42424)

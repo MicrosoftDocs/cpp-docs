@@ -63,7 +63,7 @@ An <xref:System.InvalidOperationException?displayProperty=fullName> is thrown wh
 ###  <a name="BKMK_Causing_an_InvalidOperationException_with_a_UI_update_from_a_non_UI_thread"></a> Causing an InvalidOperationException with a UI update from a non-UI thread  
   
 > [!NOTE]
->  The following examples use the [Task-based Asynchronous Pattern (TAP)](../Topic/Task-based%20Asynchronous%20Pattern%20\(TAP\).md) to create non-UI threads. However, the examples are also relevant to all .NET [Asynchronous Programming Patterns](../Topic/Asynchronous%20Programming%20Patterns.md).  
+>  The following examples use the [Task-based Asynchronous Pattern (TAP)](http://msdn.microsoft.com/Library/8cef1fcf-6f9f-417c-b21f-3fd8bac75007) to create non-UI threads. However, the examples are also relevant to all .NET [Asynchronous Programming Patterns](http://msdn.microsoft.com/Library/4ece5c0b-f8fe-4114-9862-ac02cfe5a5d7).  
   
  In these examples, the `ThreadsExampleBtn_Click` event handler calls the `DoSomeWork` method twice. The first call to the method (`DoSomeWork(20);` runs sychronously and succeeds. But the second call (`Task.Run( () => { DoSomeWork(1000);});`) runs on a thread in the app's [thread pool](http://msdn.microsoft.com/en-us/library/system.threading.threadpool.aspx). Because this call attempts to update the UI from a non-UI thread, the statement throws a <xref:System.InvalidOperationException>  
   

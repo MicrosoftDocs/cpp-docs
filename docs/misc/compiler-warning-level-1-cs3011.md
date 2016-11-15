@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS3011
 'member': only CLS-compliant members can be abstract  
   
- A class member cannot be both [abstract](/dotnet/articles/csharp/language-reference/keywords/abstract) and non-compliant with the Common Language Specification (CLS). The CLS specifies that all class members shall be implemented. For more information about CLS Compliance, see [Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3) and [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md).  
+ A class member cannot be both [abstract](/dotnet/articles/csharp/language-reference/keywords/abstract) and non-compliant with the Common Language Specification (CLS). The CLS specifies that all class members shall be implemented. For more information about CLS Compliance, see [Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3) and [Language Independence and Language-Independent Components](http://msdn.microsoft.com/Library/4f0b77d0-4844-464f-af73-6e06bedeafc6).  
   
 ## Example  
  The following example generates CS3011:  

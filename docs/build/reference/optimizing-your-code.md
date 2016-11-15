@@ -87,7 +87,7 @@ By optimizing an executable, you can achieve a balance between fast execution sp
   
  The following topics provide more advanced information about how to debug.  
   
--   [How to: Debug Optimized Code](../Topic/How%20to:%20Debug%20Optimized%20Code.md)  
+-   [How to: Debug Optimized Code](http://msdn.microsoft.com/Library/fc8eeeb8-6629-4c9b-99f7-2016aee81dff)  
   
 -   [Why Floating-Point Numbers May Lose Precision](../../build/reference/why-floating-point-numbers-may-lose-precision.md)  
   

@@ -37,7 +37,7 @@ translation.priority.mt:
 # Generic parameter constraint type &lt;typename&gt; is not CLS-compliant
 A generic type is marked as `<CLSCompliant(True)>`, but a constraint on one of its type parameters specifies a type that is marked as `<CLSCompliant(False)>`, is not marked, or does not qualify because it is a noncompliant type.  
   
- For a type to be compliant with the [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md) (CLS), it must use only CLS-compliant types. This applies also to the constraints on the type parameters of a generic type.  
+ For a type to be compliant with the [Language Independence and Language-Independent Components](http://msdn.microsoft.com/Library/4f0b77d0-4844-464f-af73-6e06bedeafc6) (CLS), it must use only CLS-compliant types. This applies also to the constraints on the type parameters of a generic type.  
   
  The following [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] data types are not CLS-compliant:  
   

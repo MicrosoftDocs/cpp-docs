@@ -37,7 +37,7 @@ translation.priority.mt:
 # &#39;Handles&#39; is not valid on operator declaration
 An [Operator Statement](/dotnet/articles/visual-basic/language-reference/statements/operator-statement) specifies the [Handles](/dotnet/articles/visual-basic/language-reference/statements/handles-clause) keyword.  
   
- Only a `Sub` procedure can handle events. An `Operator` procedure cannot. For more information on event handlers, see [How to: Call an Event Handler in Visual Basic](../Topic/How%20to:%20Call%20an%20Event%20Handler%20in%20Visual%20Basic.md).  
+ Only a `Sub` procedure can handle events. An `Operator` procedure cannot. For more information on event handlers, see [How to: Call an Event Handler in Visual Basic](http://msdn.microsoft.com/Library/72e18ef8-144e-40df-a1f4-066a57271e28).  
   
  An `Operator` procedure requires both the `Public` and `Shared` keywords, and a conversion operator requires either the `Widening` or the `Narrowing` keyword. For more information, see [Operator Procedures](/dotnet/articles/visual-basic/language-reference/procedures/operator-procedures).  
   
@@ -51,5 +51,5 @@ An [Operator Statement](/dotnet/articles/visual-basic/language-reference/stateme
   
 ## See Also  
  [Operator Statement](/dotnet/articles/visual-basic/language-reference/statements/operator-statement)   
- [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
- [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)
+ [How to: Define an Operator](http://msdn.microsoft.com/Library/d4b0e253-092a-4e6e-9fe2-01f562140a29)   
+ [How to: Define a Conversion Operator](http://msdn.microsoft.com/Library/54203dfa-c24b-463f-9942-d5153e89e762)

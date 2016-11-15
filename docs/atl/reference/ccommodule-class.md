@@ -364,7 +364,7 @@ HRESULT RegisterServer(BOOL bRegTypeLib = FALSE,  const CLSID* pCLSID = NULL) th
   
  If `bRegTypeLib` is **TRUE**, the type library information will also be updated.  
   
- See [OBJECT_ENTRY_AUTO](../Topic/OBJECT_ENTRY_AUTO.md) for information on how to add an entry to the object map.  
+ See [OBJECT_ENTRY_AUTO](http://msdn.microsoft.com/Library/5a0f4fa5-0905-43d2-b337-e22f979c9e4c) for information on how to add an entry to the object map.  
   
  `RegisterServer` will be called automatically by **DLLRegisterServer** for a DLL or by `WinMain` for an EXE run with the **/RegServer** command line option.  
   
@@ -461,7 +461,7 @@ inline HRESULT UnregisterServer(BOOL bUnRegTypeLib,  const CLSID* pCLSID = NULL)
   
  `UnregisterServer` will be called automatically by **DLLUnregisterServer** for a DLL or by `WinMain` for an EXE run with the **/UnregServer** command line option.  
   
- See [OBJECT_ENTRY_AUTO](../Topic/OBJECT_ENTRY_AUTO.md) for information on how to add an entry to the object map.  
+ See [OBJECT_ENTRY_AUTO](http://msdn.microsoft.com/Library/5a0f4fa5-0905-43d2-b337-e22f979c9e4c) for information on how to add an entry to the object map.  
   
 ##  <a name="ccommodule__updateregistryclass"></a>  CComModule::UpdateRegistryClass  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -514,7 +514,7 @@ ATL_DEPRECATED HRESULT UpdateRegistryClass(const CLSID& clsid,
   
  Depending on the value of `bRegister`, `UpdateRegistryClass` calls either [RegisterClassHelper](#ccommodule__registerclasshelper) or [UnregisterClassHelper](#ccommodule__unregisterclasshelper).  
   
- By specifying the [DECLARE_REGISTRY](../Topic/DECLARE_REGISTRY.md) macro, `UpdateRegistryClass` will be invoked automatically when your object map is processed.  
+ By specifying the [DECLARE_REGISTRY](http://msdn.microsoft.com/Library/89b8949b-5c27-4a9c-8a51-ad276bba3a54) macro, `UpdateRegistryClass` will be invoked automatically when your object map is processed.  
   
 ##  <a name="ccommodule__updateregistryfromresourced"></a>  CComModule::UpdateRegistryFromResourceD  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -549,7 +549,7 @@ virtual HRESULT UpdateRegistryFromResourceD(UINT nResID,
   
  If `bRegister` is **TRUE**, this method registers the object in the system registry; otherwise, it unregisters the object.  
   
- By specifying the [DECLARE_REGISTRY_RESOURCE](../Topic/DECLARE_REGISTRY_RESOURCE.md) or [DECLARE_REGISTRY_RESOURCEID](../Topic/DECLARE_REGISTRY_RESOURCEID.md) macro, `UpdateRegistryFromResourceD` will be invoked automatically when your object map is processed.  
+ By specifying the [DECLARE_REGISTRY_RESOURCE](http://msdn.microsoft.com/Library/7ac11498-8ee2-4156-8df2-7076f7ddda8b) or [DECLARE_REGISTRY_RESOURCEID](http://msdn.microsoft.com/Library/65bf3576-5396-416e-ba48-e14b3236c49b) macro, `UpdateRegistryFromResourceD` will be invoked automatically when your object map is processed.  
   
 > [!NOTE]
 >  To substitute replacement values at run time, do not specify the `DECLARE_REGISTRY_RESOURCE` or `DECLARE_REGISTRY_RESOURCEID` macro. Instead, create an array of **_ATL_REGMAP_ENTRIES** structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call `UpdateRegistryFromResourceD`, passing the array for the `pMapEntries` parameter. This adds all the replacement values in the **_ATL_REGMAP_ENTRIES** structures to the Registrar's replacement map.  
@@ -593,7 +593,7 @@ virtual HRESULT UpdateRegistryFromResourceS(UINT nResID,
  `UpdateRegistryFromResourceS` will be invoked automatically when your object map is processed, provided you add `#define _ATL_STATIC_REGISTRY` to your stdafx.h.  
   
 > [!NOTE]
->  To substitute replacement values at run time, do not specify the [DECLARE_REGISTRY_RESOURCE](../Topic/DECLARE_REGISTRY_RESOURCE.md) or [DECLARE_REGISTRY_RESOURCEID](../Topic/DECLARE_REGISTRY_RESOURCEID.md) macro. Instead, create an array of **_ATL_REGMAP_ENTRIES** structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call `UpdateRegistryFromResourceS`, passing the array for the `pMapEntries` parameter. This adds all the replacement values in the **_ATL_REGMAP_ENTRIES** structures to the Registrar's replacement map.  
+>  To substitute replacement values at run time, do not specify the [DECLARE_REGISTRY_RESOURCE](http://msdn.microsoft.com/Library/7ac11498-8ee2-4156-8df2-7076f7ddda8b) or [DECLARE_REGISTRY_RESOURCEID](http://msdn.microsoft.com/Library/65bf3576-5396-416e-ba48-e14b3236c49b) macro. Instead, create an array of **_ATL_REGMAP_ENTRIES** structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call `UpdateRegistryFromResourceS`, passing the array for the `pMapEntries` parameter. This adds all the replacement values in the **_ATL_REGMAP_ENTRIES** structures to the Registrar's replacement map.  
   
  For more information about replaceable parameters and scripting, see the article [The ATL Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md).  
   

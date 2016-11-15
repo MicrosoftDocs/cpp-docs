@@ -58,7 +58,7 @@ Creates a C++ project.
  The project object.  
   
 ## Remarks  
- Call this function to create a C++ project that you can open in Visual Studio. If the wizard's context parameter **WizardType** is specified as **vsWizardAddSubProject**, the project is added as a subproject to the existing project. See [ContextParams Enum](../Topic/Context%20Parameters%20for%20Launching%20Wizards.md) for more information.  
+ Call this function to create a C++ project that you can open in Visual Studio. If the wizard's context parameter **WizardType** is specified as **vsWizardAddSubProject**, the project is added as a subproject to the existing project. See [ContextParams Enum](http://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24) for more information.  
   
 ## Example  
  See [AddFilesToProject](../ide/addfilestoproject.md).  

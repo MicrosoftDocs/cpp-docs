@@ -39,4 +39,4 @@ The project property in the project system's object model that lets you specify 
 1.  Ensure that either a key container name or a key file is specified in code.  
   
 ## See Also  
- [Creating and Using Strong-Named Assemblies](../Topic/Creating%20and%20Using%20Strong-Named%20Assemblies.md)
+ [Creating and Using Strong-Named Assemblies](http://msdn.microsoft.com/Library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9)

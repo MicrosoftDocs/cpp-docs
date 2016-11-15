@@ -2422,7 +2422,7 @@ BOOL ProcessCommand(CMFCToolBarButton* pButton);
 ### Remarks  
  This method posts a `WM_COMMAND` message to the window that owns the toolbar by calling [CWnd::PostMessage](../../mfc/reference/cwnd-class.md#cwnd__postmessage) and passing the command ID of the specified button as the `wParam` parameter.  
   
- Use the [ON_COMMAND](../Topic/ON_COMMAND.md) macro to map the `WM_COMMAND` message to a member function.  
+ Use the [ON_COMMAND](http://msdn.microsoft.com/Library/f24f8bda-2cf4-49d5-aa3d-6f2e6bb003f2) macro to map the `WM_COMMAND` message to a member function.  
   
 ##  <a name="cmfctoolbar__removeallbuttons"></a>  CMFCToolBar::RemoveAllButtons  
  Removes all buttons and separators from the toolbar.  

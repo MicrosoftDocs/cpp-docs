@@ -91,10 +91,10 @@ template<int t_nBufferLength = 128>  class CA2CAEX
   
 - **CA2CA**  
   
- For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](../Topic/ATL%20and%20MFC%20String%20Conversion%20Macros.md).  
+ For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/Library/8f53659e-0464-4424-97db-6b8453c49863).  
   
 ## Example  
- See [ATL and MFC String Conversion Macros](../Topic/ATL%20and%20MFC%20String%20Conversion%20Macros.md) for an example of using these string conversion macros.  
+ See [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/Library/8f53659e-0464-4424-97db-6b8453c49863) for an example of using these string conversion macros.  
   
 ## Requirements  
  **Header:** atlconv.h  

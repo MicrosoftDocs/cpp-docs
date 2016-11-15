@@ -46,7 +46,7 @@ template<class _InIt, class _OutIt, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `remove_copy`. For more information, see [remove_copy](../Topic/remove_copy.md).  
+ This function behaves the same as the STL function `remove_copy`. For more information, see [remove_copy](http://msdn.microsoft.com/Library/04a5af2c-4d15-483e-9ee0-39812fb344c4).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

@@ -33,6 +33,6 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # string::getline
-Topic deprecated, see [string::getline](../Topic/getline%20Template%20Function.md).  
+Topic deprecated, see [string::getline](http://msdn.microsoft.com/Library/d8c3bf01-8c1d-4f40-8cca-1401e165b49e).  
   
 ## Syntax

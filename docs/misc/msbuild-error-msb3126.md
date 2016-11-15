@@ -40,7 +40,7 @@ translation.priority.mt:
   
 ### To correct this error  
   
--   Set the **Install Mode and Settings** to **The application is available offline as well (launchable from Start menu)**. For more information, see [How to: Specify the ClickOnce Offline or Online Install Mode](../Topic/How%20to:%20Specify%20the%20ClickOnce%20Offline%20or%20Online%20Install%20Mode.md).  
+-   Set the **Install Mode and Settings** to **The application is available offline as well (launchable from Start menu)**. For more information, see [How to: Specify the ClickOnce Offline or Online Install Mode](http://msdn.microsoft.com/Library/0aee5fc1-e966-4bda-9b8f-d9997aeaa779).  
   
 ## See Also  
  [Publish Page, Project Designer](/visualstudio/ide/reference/publish-page-project-designer)   

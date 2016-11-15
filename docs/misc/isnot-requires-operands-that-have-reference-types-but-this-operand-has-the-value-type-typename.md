@@ -49,4 +49,4 @@ An expression uses the [IsNot Operator](/dotnet/articles/visual-basic/language-r
   
 ## See Also  
  [Comparison Operators in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators)   
- [How to: Test Whether Two Objects Are the Same](../Topic/How%20to:%20Test%20Whether%20Two%20Objects%20Are%20the%20Same%20\(Visual%20Basic\).md)
+ [How to: Test Whether Two Objects Are the Same](http://msdn.microsoft.com/Library/f760e828-8704-4256-bc2d-c22a4c93b524)

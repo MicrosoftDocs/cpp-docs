@@ -46,7 +46,7 @@ template<class _InIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `count_if`. For more information, see [count_if](../Topic/count_if.md).  
+ This function behaves the same as the STL function `count_if`. For more information, see [count_if](http://msdn.microsoft.com/Library/b785887c-83cd-4099-becc-3284dee05295).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

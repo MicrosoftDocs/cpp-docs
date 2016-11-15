@@ -85,4 +85,4 @@ Generalized view of the Visual Studio architecture
  [Visual Studio Shell](/visualstudio/extensibility/internals/visual-studio-shell)   
  [VSPackages](/visualstudio/extensibility/internals/vspackages)   
  [Using and Providing Services](/visualstudio/extensibility/using-and-providing-services)   
- [How to: Get a Service](../Topic/How%20to:%20Get%20a%20Service.md)
+ [How to: Get a Service](http://msdn.microsoft.com/Library/1f000020-8fb7-4e39-8e1e-2e38c7fec3d4)

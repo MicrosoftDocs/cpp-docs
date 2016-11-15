@@ -39,4 +39,4 @@ translation.priority.mt:
  This warning is generated during application manifest generation when two or more of the referenced assemblies or files share the same target path. The path includes the file name and all these assemblies will overwrite each other at deployment time.  
   
 ## See Also  
- [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)
+ [\<PackageFiles> Element](http://msdn.microsoft.com/Library/3ea252d7-18a3-47d8-af83-47feebcfe82b)

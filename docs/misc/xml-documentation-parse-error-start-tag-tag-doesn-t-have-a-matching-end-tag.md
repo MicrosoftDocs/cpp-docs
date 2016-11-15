@@ -47,7 +47,7 @@ XML documentation parse error: Start tag \<tag> doesn't have a matching end tag.
   
      — or —  
   
--   If the tag contains no inner text, such as [\<seealso>](../Topic/%3Cseealso%3E%20\(Visual%20Basic\).md), specify a forward slash before the closing angle bracket.  
+-   If the tag contains no inner text, such as [\<seealso>](http://msdn.microsoft.com/Library/36050c95-1af2-4284-b9b6-1a70691ed978), specify a forward slash before the closing angle bracket.  
   
 ## See Also  
  [XML Comment Tags](/dotnet/articles/visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments)   

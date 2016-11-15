@@ -76,4 +76,4 @@ You need to understand security for VSPackage extensions so that you can create 
 ## See Also  
  [Best Practices for Security in VSPackages](/visualstudio/extensibility/internals/best-practices-for-security-in-vspackages)   
  [Resources for Creating Secure Applications](http://msdn.microsoft.com/en-us/0ebf5f69-76f2-498a-a2df-83cf3443e132)   
- [Key Security Concepts](../Topic/Key%20Security%20Concepts.md)
+ [Key Security Concepts](http://msdn.microsoft.com/Library/3cfced4f-ea02-4e66-ae98-d69286363e98)

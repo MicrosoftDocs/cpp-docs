@@ -51,4 +51,4 @@ A `Module` statement uses the `Of` keyword to introduce generic type parameters.
  [Module Statement](/dotnet/articles/visual-basic/language-reference/statements/module-statement)   
  [Of](/dotnet/articles/visual-basic/language-reference/statements/of-clause)   
  [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [How to: Define a Class That Can Provide Identical Functionality on Different Data Types](../Topic/How%20to:%20Define%20a%20Class%20That%20Can%20Provide%20Identical%20Functionality%20on%20Different%20Data%20Types%20\(Visual%20Basic\).md)
+ [How to: Define a Class That Can Provide Identical Functionality on Different Data Types](http://msdn.microsoft.com/Library/a914adf8-e68f-4819-a6b1-200d1cf1c21c)

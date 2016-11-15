@@ -44,4 +44,4 @@ This error occurs when you attempt to customize menus or toolbars while debuggin
      Stop debugging, and then make the toolbar or menu customizations.  
   
 ## See Also  
- [How to: Customize Menus and Toolbars](../Topic/How%20to:%20Customize%20Menus%20and%20Toolbars%20in%20Visual%20Studio.md)
+ [How to: Customize Menus and Toolbars](http://msdn.microsoft.com/Library/b570ae2f-5302-45dc-9cc9-8d4d1ad50603)

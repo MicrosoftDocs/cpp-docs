@@ -46,7 +46,7 @@ A <xref:System.StackOverflowException> exception is thrown when the execution st
 ## Remarks  
  You cannot catch stack overflow exceptions, because the exception-handling code may require the stack. Instead, when a stack overflow occurs in a normal application, the Common Language Runtime (CLR) terminates the process.  
   
- An application that hosts the CLR can change the default behavior and specify that the CLR unload the application domain where the exception occurs, but lets the process continue. For more information, see [ICLRPolicyManager Interface](../Topic/ICLRPolicyManager%20Interface.md).  
+ An application that hosts the CLR can change the default behavior and specify that the CLR unload the application domain where the exception occurs, but lets the process continue. For more information, see [ICLRPolicyManager Interface](http://msdn.microsoft.com/Library/5c834aa1-f2db-408a-b230-c7bec093d364).  
   
 ## See Also  
  <xref:System.StackOverflowException>   

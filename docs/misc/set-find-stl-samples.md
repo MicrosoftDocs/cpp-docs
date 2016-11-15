@@ -33,4 +33,4 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # set::find (STL Samples)
-Topic deprecated, see [set::find](../Topic/set::find.md).  
+Topic deprecated, see [set::find](http://msdn.microsoft.com/Library/11aa5a57-db54-4ada-bbda-80dc27a23114).  

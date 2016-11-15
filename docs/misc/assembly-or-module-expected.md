@@ -49,6 +49,6 @@ A global attribute is specified without indicating whether it applies to the ent
   
 ## See Also  
  [Assembly](/dotnet/articles/visual-basic/language-reference/modifiers/assembly)   
- [Module \<keyword>](../Topic/Module%20%3Ckeyword%3E%20\(Visual%20Basic\).md)   
+ [Module \<keyword>](http://msdn.microsoft.com/Library/d971b940-05ab-4d56-8485-e3b8a661906b)   
  [NOT IN BUILD: Application of Attributes](http://msdn.microsoft.com/en-us/2b1703ed-4437-49b3-bc0b-568094324f47)   
  [NOT IN BUILD: Global Attributes in Visual Basic](http://msdn.microsoft.com/en-us/253a32d8-1531-4504-b687-088554ab71d2)

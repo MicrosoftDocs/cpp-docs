@@ -37,7 +37,7 @@ translation.priority.mt:
 # Non-CLS-compliant &#39;MustOverride&#39; member is not allowed in a CLS-compliant &lt;classname&gt;
 A class is marked as `<CLSCompliant(True)>`, but it contains a `MustOverride` property or procedure that is marked as `<CLSCompliant(False)>` or is not marked.  
   
- When a class is compliant with the [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md) (CLS), an application that uses that class accesses only the members that are also marked as `<CLSCompliant(True)>` and ignores the members that are not. However, the application cannot ignore a `MustOverride` property or procedure, because it must access that property or procedure to override it.  
+ When a class is compliant with the [Language Independence and Language-Independent Components](http://msdn.microsoft.com/Library/4f0b77d0-4844-464f-af73-6e06bedeafc6) (CLS), an application that uses that class accesses only the members that are also marked as `<CLSCompliant(True)>` and ignores the members that are not. However, the application cannot ignore a `MustOverride` property or procedure, because it must access that property or procedure to override it.  
   
  When you apply the <xref:System.CLSCompliantAttribute> to a programming element, you set the attribute's `isCompliant` parameter to either `True` or `False` to indicate compliance or noncompliance. There is no default for this parameter, and you must supply a value.  
   

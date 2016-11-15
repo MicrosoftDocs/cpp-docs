@@ -42,5 +42,5 @@ This error generally occurs when an Add-in has been selected to be used from the
 2.  In **the Add-In Manager** dialog box, clear **Command Line** for the add-in.  
   
 ## See Also  
- [How to: Control Add-Ins By Using the Add-In Manager](../Topic/How%20to:%20Control%20Add-Ins%20By%20Using%20the%20Add-In%20Manager.md)   
- [How to: Create an Add-In](../Topic/How%20to:%20Create%20an%20Add-In.md)
+ [How to: Control Add-Ins By Using the Add-In Manager](http://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb)   
+ [How to: Create an Add-In](http://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

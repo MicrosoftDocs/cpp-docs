@@ -71,7 +71,7 @@ This page highlights some of the most important features that are new in the rel
   
  The C# and Visual Basic languages both contain many smallish improvements in the core language and in IDE support. These improvements all add up to make your .NET coding experience even more intuitive, convenient, and productive.  
   
- For more information, see [What's New](../Topic/What's%20New%20in%20the%20.NET%20Framework.md) and the [.NET Blog](http://blogs.msdn.com/b/dotnet/).  
+ For more information, see [What's New](http://msdn.microsoft.com/Library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) and the [.NET Blog](http://blogs.msdn.com/b/dotnet/).  
   
 #### C++  
  Visual C++ provides significant advances in C++11/14 language conformance, support for cross-platform mobile device development, support for resumable functions and await (currently planned for standardization in C++17), improvements and bug fixes in the C Runtime Library (CRT) and C++ standard library (STL) implementations, resizeable dialogs in MFC, new compiler optimizations, better build performance, new diagnostics capabilities and new productivity tools in the code editor.  

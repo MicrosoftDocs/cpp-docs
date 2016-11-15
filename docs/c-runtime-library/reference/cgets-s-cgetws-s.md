@@ -134,7 +134,7 @@ errno_t _cgetws_s(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   

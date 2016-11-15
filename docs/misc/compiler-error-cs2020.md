@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS2020
 Only the first set of input files can build a target other than 'module'  
   
- In a multi-output compilation, the first output file must be built with [/target:exe](../Topic/-target:exe%20\(C%23%20Compiler%20Options\).md), [/target:winexe](../Topic/-target:winexe%20\(C%23%20Compiler%20Options\).md), or [/target:library](../Topic/-target:library%20\(C%23%20Compiler%20Options\).md). Any subsequent output files must be built with [/target:module](../Topic/-target:module%20\(C%23%20Compiler%20Options\).md).
+ In a multi-output compilation, the first output file must be built with [/target:exe](http://msdn.microsoft.com/Library/bda5717d-1b91-4848-956b-fcf85c30e432), [/target:winexe](http://msdn.microsoft.com/Library/b5a0619c-8caa-46a5-a743-1cf68408ad7a), or [/target:library](http://msdn.microsoft.com/Library/c5670e88-2126-47c1-8d1c-217923837d17). Any subsequent output files must be built with [/target:module](http://msdn.microsoft.com/Library/9af1e4fa-c749-44e7-ae58-90a3d05d4e72).

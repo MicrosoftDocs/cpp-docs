@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS3008
 Identifier 'identifier' differing only in case is not CLS-compliant  
   
- A [public](/dotnet/articles/csharp/language-reference/keywords/public), [protected](/dotnet/articles/csharp/language-reference/keywords/protected), or `protected``internal` identifier breaks compliance with the Common Language Specification (CLS) if it begins with an underscore character (_).For more information on CLS Compliance, see [Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3) and [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md).  
+ A [public](/dotnet/articles/csharp/language-reference/keywords/public), [protected](/dotnet/articles/csharp/language-reference/keywords/protected), or `protected``internal` identifier breaks compliance with the Common Language Specification (CLS) if it begins with an underscore character (_).For more information on CLS Compliance, see [Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3) and [Language Independence and Language-Independent Components](http://msdn.microsoft.com/Library/4f0b77d0-4844-464f-af73-6e06bedeafc6).  
   
 ## Example  
  The following example generates CS3008:  

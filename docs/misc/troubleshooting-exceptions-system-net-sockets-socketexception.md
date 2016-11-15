@@ -46,4 +46,4 @@ A <xref:System.Net.Sockets.SocketException> exception is thrown by the <xref:Sys
 ## See Also  
  <xref:System.Net.Sockets.SocketException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Using Secure Sockets Layer](../Topic/Using%20Secure%20Sockets%20Layer.md)
+ [Using Secure Sockets Layer](http://msdn.microsoft.com/Library/6e4289e6-d1b7-4e82-ab0d-e83e3b6063ed)

@@ -63,5 +63,5 @@ End Namespace
 ## See Also  
  [NOT IN BUILD: Application of Attributes](http://msdn.microsoft.com/en-us/2b1703ed-4437-49b3-bc0b-568094324f47)   
  [Extension Methods](/dotnet/articles/visual-basic/language-reference/procedures/extension-methods)   
- [Module \<keyword>](../Topic/Module%20%3Ckeyword%3E%20\(Visual%20Basic\).md)   
+ [Module \<keyword>](http://msdn.microsoft.com/Library/d971b940-05ab-4d56-8485-e3b8a661906b)   
  [Module Statement](/dotnet/articles/visual-basic/language-reference/statements/module-statement)

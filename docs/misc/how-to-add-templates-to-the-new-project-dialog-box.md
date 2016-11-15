@@ -32,7 +32,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Add Templates to the New Project Dialog Box
-A number of predefined project templates are installed during [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] installation. For a complete list of predefined project templates, see [NIB Creating Projects from Templates](http://msdn.microsoft.com/en-us/7c36d86a-6b79-4480-8228-0f925f1204b2). In addition to default project templates you can create custom or subtype-specific project templates. For example, the **Smart Device** subtype provides its own templates for [!INCLUDE[csprcs](../ide/includes/csprcs_md.md)] and [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] projects. For instructions on how to create a custom template, see [How to: Create Project Templates](../Topic/How%20to:%20Create%20Project%20Templates.md).  
+A number of predefined project templates are installed during [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] installation. For a complete list of predefined project templates, see [NIB Creating Projects from Templates](http://msdn.microsoft.com/en-us/7c36d86a-6b79-4480-8228-0f925f1204b2). In addition to default project templates you can create custom or subtype-specific project templates. For example, the **Smart Device** subtype provides its own templates for [!INCLUDE[csprcs](../ide/includes/csprcs_md.md)] and [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] projects. For instructions on how to create a custom template, see [How to: Create Project Templates](http://msdn.microsoft.com/Library/a1a6999d-a34c-48a8-b1cf-027eb5c76398).  
   
 ## Adding a Template to the New Project Dialog Box  
   

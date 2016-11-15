@@ -77,5 +77,5 @@ End Class
   
 ## See Also  
  [Auto-Implemented Properties](/dotnet/articles/visual-basic/language-reference/procedures/auto-implemented-properties)   
- [How to: Create a Property](../Topic/How%20to:%20Create%20a%20Property%20\(Visual%20Basic\).md)   
+ [How to: Create a Property](http://msdn.microsoft.com/Library/4d229712-6be8-4c5c-bac5-06995ce9185a)   
  [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)

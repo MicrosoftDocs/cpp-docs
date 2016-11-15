@@ -44,7 +44,7 @@ translation.priority.mt:
 > [!NOTE]
 >  [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] does support [!INCLUDE[ndptecclick](../ide/includes/ndptecclick_md.md)] in the [!INCLUDE[csprcs](../ide/includes/csprcs_md.md)] and [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] development environments. If your [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] project is a dependency of a [!INCLUDE[csprcs](../ide/includes/csprcs_md.md)] project, you can publish the application (including its dependencies) using [!INCLUDE[ndptecclick](../ide/includes/ndptecclick_md.md)] deployment from the [!INCLUDE[csprcs](../ide/includes/csprcs_md.md)] development environment.  
   
- To deploy a [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] application using [!INCLUDE[ndptecclick](../ide/includes/ndptecclick_md.md)], you first have to build a [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest) and a [ClickOnce Deployment Manifest](/visualstudio/deployment/clickonce-deployment-manifest) using the [Mage.exe (Manifest Generation and Editing Tool)](../Topic/Mage.exe%20\(Manifest%20Generation%20and%20Editing%20Tool\).md) or its graphical user interface version (for information, see [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../Topic/MageUI.exe%20\(Manifest%20Generation%20and%20Editing%20Tool,%20Graphical%20Client\).md)).  
+ To deploy a [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] application using [!INCLUDE[ndptecclick](../ide/includes/ndptecclick_md.md)], you first have to build a [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest) and a [ClickOnce Deployment Manifest](/visualstudio/deployment/clickonce-deployment-manifest) using the [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/Library/77dfe576-2962-407e-af13-82255df725a1) or its graphical user interface version (for information, see [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/Library/f9e130a6-8117-49c4-839c-c988f641dc14)).  
   
  You first use Mage.exe to build the application manifest; the resulting file will have the extension .manifest. You then use Mage.exe to build the deployment manifest; the resulting file will have the extension .application. You then sign the manifests.  
   
@@ -56,11 +56,11 @@ translation.priority.mt:
   
  You may also need to build a bootstrapper (prerequisites installer) for your application to deploy prerequisite components; for information on the bootstrapper, see [Creating Bootstrapper Packages](/visualstudio/deployment/creating-bootstrapper-packages).  
   
- For a more detailed description of the technology, see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment). For a detailed example of [!INCLUDE[ndptecclick](../ide/includes/ndptecclick_md.md)] deployment, see [Walkthrough: Manually Deploying a ClickOnce Application](../Topic/Walkthrough:%20Manually%20Deploying%20a%20ClickOnce%20Application.md).  
+ For a more detailed description of the technology, see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment). For a detailed example of [!INCLUDE[ndptecclick](../ide/includes/ndptecclick_md.md)] deployment, see [Walkthrough: Manually Deploying a ClickOnce Application](http://msdn.microsoft.com/Library/ccee6551-a1b9-4ca2-8845-9c1cf4ac2560).  
   
 ## See Also  
- [Mage.exe (Manifest Generation and Editing Tool)](../Topic/Mage.exe%20\(Manifest%20Generation%20and%20Editing%20Tool\).md)   
- [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../Topic/MageUI.exe%20\(Manifest%20Generation%20and%20Editing%20Tool,%20Graphical%20Client\).md)   
+ [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/Library/77dfe576-2962-407e-af13-82255df725a1)   
+ [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/Library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [Makecert.exe (Certificate Creation Tool)](../Topic/Makecert.exe%20\(Certificate%20Creation%20Tool\).md)   
  [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)   
  [Deploying Applications, Services, and Components](/visualstudio/deployment/deploying-applications-services-and-components)   

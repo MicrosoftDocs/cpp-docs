@@ -107,4 +107,4 @@ This walkthrough illustrates how to use automation to create a managed VSPackage
      For more information about automation samples, see [Automation Samples for Visual Studio](http://www.microsoft.com/downloads/details.aspx?familyid=3ff9c915-30e5-430e-95b3-621dccd25150&displaylang=en).  
   
 ## See Also  
- [Extending the Visual Studio Environment](../Topic/Extending%20the%20Visual%20Studio%20Environment.md)
+ [Extending the Visual Studio Environment](http://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792)

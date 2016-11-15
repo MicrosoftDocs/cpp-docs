@@ -48,7 +48,7 @@ template<class _FwdIt, class _Ty, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `binary_search`. For more information, see [binary_search](../Topic/binary_search.md).  
+ This function behaves the same as the STL function `binary_search`. For more information, see [binary_search](http://msdn.microsoft.com/Library/6dec2260-8aeb-4a66-9fb1-3afcf7a415f6).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

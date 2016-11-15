@@ -148,7 +148,7 @@ expression
 ### Remarks  
  The expression `safe_cast<`*type-id*`>(`*expression*`)` converts the operand expression to an object of type type-id.  
   
- The compiler will accept a [static_cast](../cpp/static-cast-operator.md) in most places that it will accept a `safe_cast`.  However, `safe_cast` is guaranteed to produce verifiable MSIL, where as a `static_cast` could produce unverifiable MSIL.  See [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md) and [Peverify.exe (PEVerify Tool)](../Topic/Peverify.exe%20\(PEVerify%20Tool\).md) for more information on verifiable code.  
+ The compiler will accept a [static_cast](../cpp/static-cast-operator.md) in most places that it will accept a `safe_cast`.  However, `safe_cast` is guaranteed to produce verifiable MSIL, where as a `static_cast` could produce unverifiable MSIL.  See [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md) and [Peverify.exe (PEVerify Tool)](http://msdn.microsoft.com/Library/f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa) for more information on verifiable code.  
   
  Like `static_cast`, `safe_cast` invokes user-defined conversions.  
   

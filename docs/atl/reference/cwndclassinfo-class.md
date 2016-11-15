@@ -71,9 +71,9 @@ class CWndClassInfo
   
 |Macro|Description|  
 |-----------|-----------------|  
-|[DECLARE_WND_CLASS](../Topic/DECLARE_WND_CLASS.md)|`CWndClassInfo` registers information for a new window class.|  
-|[DECLARE_WND_CLASS_EX](../Topic/DECLARE_WND_CLASS_EX.md)|`CWndClassInfo` registers information for a new window class, including the class parameters.|  
-|[DECLARE_WND_SUPERCLASS](../Topic/DECLARE_WND_SUPERCLASS.md)|`CWndClassInfo` registers information for a window class that is based on an existing class but uses a different window procedure. This technique is called superclassing.|  
+|[DECLARE_WND_CLASS](http://msdn.microsoft.com/Library/55247a72-fb9e-4bde-87f3-747c08076971)|`CWndClassInfo` registers information for a new window class.|  
+|[DECLARE_WND_CLASS_EX](http://msdn.microsoft.com/Library/0672c144-f2aa-4f6a-ae16-566e3a1f5411)|`CWndClassInfo` registers information for a new window class, including the class parameters.|  
+|[DECLARE_WND_SUPERCLASS](http://msdn.microsoft.com/Library/650337b6-4973-41e5-8c36-55f90327bdcd)|`CWndClassInfo` registers information for a window class that is based on an existing class but uses a different window procedure. This technique is called superclassing.|  
   
  By default, [CWindowImpl](../../atl/reference/cwindowimpl-class.md) includes the `DECLARE_WND_CLASS` macro to create a window based on a new window class. DECLARE_WND_CLASS provides default styles and background color for the control. If you want to specify the style and background color yourself, derive your class from `CWindowImpl` and include the `DECLARE_WND_CLASS_EX` macro in your class definition.  
   
@@ -105,7 +105,7 @@ BOOL m_bSystemCursor;
 ### Remarks  
  Otherwise, the cursor resource contained in your module will be loaded.  
   
- `CWndClassInfo` uses `m_bSystemCursor` only when the [DECLARE_WND_CLASS](../Topic/DECLARE_WND_CLASS.md) (the default in [CWindowImpl](../../atl/reference/cwindowimpl-class.md)) or the [DECLARE_WND_CLASS_EX](../Topic/DECLARE_WND_CLASS_EX.md) macro is specified. In this case, `m_bSystemCursor` is initialized to **TRUE**. For more information, see the [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) overview.  
+ `CWndClassInfo` uses `m_bSystemCursor` only when the [DECLARE_WND_CLASS](http://msdn.microsoft.com/Library/55247a72-fb9e-4bde-87f3-747c08076971) (the default in [CWindowImpl](../../atl/reference/cwindowimpl-class.md)) or the [DECLARE_WND_CLASS_EX](http://msdn.microsoft.com/Library/0672c144-f2aa-4f6a-ae16-566e3a1f5411) macro is specified. In this case, `m_bSystemCursor` is initialized to **TRUE**. For more information, see the [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) overview.  
   
 ##  <a name="cwndclassinfo__m_lpszcursorid"></a>  CWndClassInfo::m_lpszCursorID  
  Specifies either the name of the cursor resource or the resource identifier in the low-order word and zero in the high-order word.  
@@ -117,7 +117,7 @@ LPCTSTR m_lpszCursorID;
 ### Remarks  
  When the window class is registered, the handle to the cursor identified by `m_lpszCursorID` is retrieved and stored by [m_wc](#cwndclassinfo__m_wc).  
   
- `CWndClassInfo` uses `m_lpszCursorID` only when the [DECLARE_WND_CLASS](../Topic/DECLARE_WND_CLASS.md) (the default in [CWindowImpl](../../atl/reference/cwindowimpl-class.md)) or the [DECLARE_WND_CLASS_EX](../Topic/DECLARE_WND_CLASS_EX.md) macro is specified. In this case, `m_lpszCursorID` is initialized to **IDC_ARROW**. For more information, see the [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) overview.  
+ `CWndClassInfo` uses `m_lpszCursorID` only when the [DECLARE_WND_CLASS](http://msdn.microsoft.com/Library/55247a72-fb9e-4bde-87f3-747c08076971) (the default in [CWindowImpl](../../atl/reference/cwindowimpl-class.md)) or the [DECLARE_WND_CLASS_EX](http://msdn.microsoft.com/Library/0672c144-f2aa-4f6a-ae16-566e3a1f5411) macro is specified. In this case, `m_lpszCursorID` is initialized to **IDC_ARROW**. For more information, see the [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) overview.  
   
 ##  <a name="cwndclassinfo__m_lpszorigname"></a>  CWndClassInfo::m_lpszOrigName  
  Contains the name of an existing window class.  
@@ -127,7 +127,7 @@ LPCTSTR m_lpszOrigName;
 ```  
   
 ### Remarks  
- `CWndClassInfo` uses `m_lpszOrigName` only when you include the [DECLARE_WND_SUPERCLASS](../Topic/DECLARE_WND_SUPERCLASS.md) macro in your class definition. In this case, `CWndClassInfo` registers a window class based on the class named by `m_lpszOrigName`. For more information, see the [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) overview.  
+ `CWndClassInfo` uses `m_lpszOrigName` only when you include the [DECLARE_WND_SUPERCLASS](http://msdn.microsoft.com/Library/650337b6-4973-41e5-8c36-55f90327bdcd) macro in your class definition. In this case, `CWndClassInfo` registers a window class based on the class named by `m_lpszOrigName`. For more information, see the [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) overview.  
   
 ##  <a name="cwndclassinfo__m_szautoname"></a>  CWndClassInfo::m_szAutoName  
  Holds the name of the window class.  
@@ -137,7 +137,7 @@ TCHAR m_szAutoName[13];
 ```  
   
 ### Remarks  
- `CWndClassInfo` uses `m_szAutoName` only if **NULL** is passed for the `WndClassName` parameter to [DECLARE_WND_CLASS](../Topic/DECLARE_WND_CLASS.md), the [DECLARE_WND_CLASS_EX](../Topic/DECLARE_WND_CLASS_EX.md) or [DECLARE_WND_SUPERCLASS](../Topic/DECLARE_WND_SUPERCLASS.md). ATL will construct a name when the window class is registered.  
+ `CWndClassInfo` uses `m_szAutoName` only if **NULL** is passed for the `WndClassName` parameter to [DECLARE_WND_CLASS](http://msdn.microsoft.com/Library/55247a72-fb9e-4bde-87f3-747c08076971), the [DECLARE_WND_CLASS_EX](http://msdn.microsoft.com/Library/0672c144-f2aa-4f6a-ae16-566e3a1f5411) or [DECLARE_WND_SUPERCLASS](http://msdn.microsoft.com/Library/650337b6-4973-41e5-8c36-55f90327bdcd). ATL will construct a name when the window class is registered.  
   
 ##  <a name="cwndclassinfo__m_wc"></a>  CWndClassInfo::m_wc  
  Maintains the window class information in a [WNDCLASSEX](http://msdn.microsoft.com/library/windows/desktop/ms633577) structure.  
@@ -147,9 +147,9 @@ WNDCLASSEX m_wc;
 ```  
   
 ### Remarks  
- If you have specified the [DECLARE_WND_CLASS](../Topic/DECLARE_WND_CLASS.md) (the default in [CWindowImpl](../../atl/reference/cwindowimpl-class.md)) or the [DECLARE_WND_CLASS_EX](../Topic/DECLARE_WND_CLASS_EX.md) macro, `m_wc` contains information about a new window class.  
+ If you have specified the [DECLARE_WND_CLASS](http://msdn.microsoft.com/Library/55247a72-fb9e-4bde-87f3-747c08076971) (the default in [CWindowImpl](../../atl/reference/cwindowimpl-class.md)) or the [DECLARE_WND_CLASS_EX](http://msdn.microsoft.com/Library/0672c144-f2aa-4f6a-ae16-566e3a1f5411) macro, `m_wc` contains information about a new window class.  
   
- If you have specified the [DECLARE_WND_SUPERCLASS](../Topic/DECLARE_WND_SUPERCLASS.md) macro, `m_wc` contains information about a superclass — a window class that is based on an existing class but uses a different window procedure. [m_lpszOrigName](#cwndclassinfo__m_lpszorigname) and [pWndProc](#cwndclassinfo__pwndproc) save the existing window class's name and window procedure, respectively.  
+ If you have specified the [DECLARE_WND_SUPERCLASS](http://msdn.microsoft.com/Library/650337b6-4973-41e5-8c36-55f90327bdcd) macro, `m_wc` contains information about a superclass — a window class that is based on an existing class but uses a different window procedure. [m_lpszOrigName](#cwndclassinfo__m_lpszorigname) and [pWndProc](#cwndclassinfo__pwndproc) save the existing window class's name and window procedure, respectively.  
   
 ##  <a name="cwndclassinfo__pwndproc"></a>  CWndClassInfo::pWndProc  
  Points to the window procedure of an existing window class.  
@@ -159,7 +159,7 @@ WNDPROC pWndProc;
 ```  
   
 ### Remarks  
- `CWndClassInfo` uses `pWndProc` only when you include the [DECLARE_WND_SUPERCLASS](../Topic/DECLARE_WND_SUPERCLASS.md) macro in your class definition. In this case, `CWndClassInfo` registers a window class that is based on an existing class but uses a different window procedure. The existing window class's window procedure is saved in `pWndProc`. For more information, see the [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) overview.  
+ `CWndClassInfo` uses `pWndProc` only when you include the [DECLARE_WND_SUPERCLASS](http://msdn.microsoft.com/Library/650337b6-4973-41e5-8c36-55f90327bdcd) macro in your class definition. In this case, `CWndClassInfo` registers a window class that is based on an existing class but uses a different window procedure. The existing window class's window procedure is saved in `pWndProc`. For more information, see the [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) overview.  
   
 ##  <a name="cwndclassinfo__register"></a>  CWndClassInfo::Register  
  Called by [CWindowImpl::Create](../../atl/reference/cwindowimpl-class.md#cwindowimpl__create) to register the window class if it has not yet been registered.  
@@ -176,9 +176,9 @@ ATOM Register(WNDPROC* pProc);
  If successful, an atom that uniquely identifies the window class being registered. Otherwise, 0.  
   
 ### Remarks  
- If you have specified the [DECLARE_WND_CLASS](../Topic/DECLARE_WND_CLASS.md) (the default in [CWindowImpl](../../atl/reference/cwindowimpl-class.md)) or the [DECLARE_WND_CLASS_EX](../Topic/DECLARE_WND_CLASS_EX.md) macro, `Register` registers a new window class. In this case, the `pProc` parameter is not used.  
+ If you have specified the [DECLARE_WND_CLASS](http://msdn.microsoft.com/Library/55247a72-fb9e-4bde-87f3-747c08076971) (the default in [CWindowImpl](../../atl/reference/cwindowimpl-class.md)) or the [DECLARE_WND_CLASS_EX](http://msdn.microsoft.com/Library/0672c144-f2aa-4f6a-ae16-566e3a1f5411) macro, `Register` registers a new window class. In this case, the `pProc` parameter is not used.  
   
- If you have specified the [DECLARE_WND_SUPERCLASS](../Topic/DECLARE_WND_SUPERCLASS.md) macro, `Register` registers a superclass — a window class that is based on an existing class but uses a different window procedure. The existing window class's window procedure is returned in `pProc`.  
+ If you have specified the [DECLARE_WND_SUPERCLASS](http://msdn.microsoft.com/Library/650337b6-4973-41e5-8c36-55f90327bdcd) macro, `Register` registers a superclass — a window class that is based on an existing class but uses a different window procedure. The existing window class's window procedure is returned in `pProc`.  
   
 ## See Also  
  [CComControl Class](../../atl/reference/ccomcontrol-class.md)   

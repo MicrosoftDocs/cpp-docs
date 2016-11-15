@@ -267,7 +267,7 @@ DECLARE_OLECREATE(class_name)
  If `DECLARE_OLECREATE` is included in the class declaration, then `IMPLEMENT_OLECREATE` must be included in the class implementation. A class declaration using `DECLARE_OLECREATE` must also use `DECLARE_DYNCREATE` or `DECLARE_SERIAL`.  
   
 ##  <a name="implement_olecreate"></a>  IMPLEMENT_OLECREATE  
- Either this macro or [IMPLEMENT_OLECREATE_FLAGS](../Topic/IMPLEMENT_OLECREATE_FLAGS.md) must appear in the implementation file for any class that uses `DECLARE_OLECREATE`.  
+ Either this macro or [IMPLEMENT_OLECREATE_FLAGS](http://msdn.microsoft.com/Library/d1589f6a-5a69-4742-b07c-4c621cfd040d) must appear in the implementation file for any class that uses `DECLARE_OLECREATE`.  
   
 ```
 IMPLEMENT_OLECREATE(class_name, external_name, l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8)  

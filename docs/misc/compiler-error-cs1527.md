@@ -65,6 +65,6 @@ private struct S1{}
 ## See Also  
  [Namespaces](/dotnet/articles/csharp/programming-guide/namespaces/index)   
  [global](/dotnet/articles/csharp/language-reference/keywords/global)   
- [:: Operator](../Topic/::%20Operator%20\(C%23%20Reference\).md)   
+ [:: Operator](http://msdn.microsoft.com/Library/698b5a73-85cf-4e0e-9e8e-6496887f8527)   
  [Accessibility Domain](/dotnet/articles/csharp/language-reference/keywords/accessibility-domain)   
  [Access Modifiers](/dotnet/articles/csharp/programming-guide/classes-and-structs/access-modifiers)

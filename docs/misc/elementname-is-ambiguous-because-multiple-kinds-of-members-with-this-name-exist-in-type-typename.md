@@ -52,4 +52,4 @@ An expression accesses a programming element defined in a class, structure, modu
 ## See Also  
  [Declared Element Names](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
  [Troubleshooting Variables](/dotnet/articles/visual-basic/programming-guide/language-features/variables/troubleshooting-variables)   
- [Common Language Runtime](../Topic/Common%20Language%20Runtime%20\(CLR\).md)
+ [Common Language Runtime](http://msdn.microsoft.com/Library/059a624e-f7db-4134-ba9f-08b676050482)

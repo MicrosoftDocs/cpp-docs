@@ -46,6 +46,6 @@ A security link demand action has been added to the method. However, the method 
 -   Add link demands to the overridden and/or implemented methods.  
   
 ## See Also  
- [Link Demands](../Topic/Link%20Demands.md)   
+ [Link Demands](http://msdn.microsoft.com/Library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)   
  [Demand vs. LinkDemand](http://msdn.microsoft.com/en-us/1ab877f2-70f4-4e0d-8116-943999dfe8f5)   
  [Security Optimizations](http://msdn.microsoft.com/en-us/cf255069-d85d-4de3-914a-e4625215a7c0)

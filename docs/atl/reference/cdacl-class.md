@@ -78,7 +78,7 @@ class CDacl : public CAcl
   
  To retrieve an object's DACL, you must be the object's owner or have READ_CONTROL access to the object. To change an object's DACL, you must have WRITE_DAC access to the object.  
   
- Use the class methods provided to create, add, remove, and delete ACEs from the `CDacl` object. See also [AtlGetDacl](../Topic/AtlGetDacl.md) and [AtlSetDacl](../Topic/AtlSetDacl.md).  
+ Use the class methods provided to create, add, remove, and delete ACEs from the `CDacl` object. See also [AtlGetDacl](http://msdn.microsoft.com/Library/a0973648-0d46-4c1a-914f-bda861fe5d19) and [AtlSetDacl](http://msdn.microsoft.com/Library/eb88ccb6-1f1b-444d-b0c9-8d5cd0dd6c0b).  
   
  For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   

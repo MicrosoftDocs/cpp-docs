@@ -47,7 +47,7 @@ template<class _RanIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `push_heap`. For more information, see [push_heap](../Topic/push_heap.md).  
+ This function behaves the same as the STL function `push_heap`. For more information, see [push_heap](http://msdn.microsoft.com/Library/451cfdac-1021-42f9-abdd-ea2e35ceb8ba).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

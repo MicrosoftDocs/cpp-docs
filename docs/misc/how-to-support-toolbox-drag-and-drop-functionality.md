@@ -41,7 +41,7 @@ translation.priority.mt:
   
  By default, all [!INCLUDE[dnprdnshort](../error-messages/tool-errors/includes/dnprdnshort_md.md)] objects derived from <xref:System.Windows.Forms.Control?displayProperty=fullName> automatically and transparently provide support for consuming **Toolbox** controls, and the procedures described below are unnecessary. The basic functionality can be extended by creating a designer.  
   
- For more information, see [Windows Forms Overview](../Topic/Windows%20Forms%20Overview.md) and [Extending Design-Time Support](../Topic/Extending%20Design-Time%20Support.md).  
+ For more information, see [Windows Forms Overview](http://msdn.microsoft.com/Library/3a2b6284-c8d6-4e1c-8c69-0bed38f38cd4) and [Extending Design-Time Support](http://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
 ### To implement basic drag-and-drop functionality  
   

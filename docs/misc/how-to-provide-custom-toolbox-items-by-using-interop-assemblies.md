@@ -41,7 +41,7 @@ translation.priority.mt:
   
  For information on how a VSPackage manages the **Toolbox** using [!INCLUDE[vsipsdk](../mfc/includes/vsipsdk_md.md)], see [Managing the Toolbox](../misc/managing-the-toolbox.md).  
   
- For information on managing the **Toolbox** through automation, see [How to: Control the Toolbox](../Topic/How%20to:%20Control%20the%20Toolbox.md).  
+ For information on managing the **Toolbox** through automation, see [How to: Control the Toolbox](http://msdn.microsoft.com/Library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## Procedures  
  Items added to the **Toolbox** should implement the standard **Toolbox** Clipboard formats unless the VSPackage adding the items acts as a **Toolbox** item provider — providing implementation support for the new format.  
@@ -154,4 +154,4 @@ translation.priority.mt:
  [Registering Toolbox Support Features](../misc/registering-toolbox-support-features.md)   
  [Advanced Toolbox Control Development](../misc/advanced-toolbox-control-development.md)   
  [Managing the Toolbox](../misc/managing-the-toolbox.md)   
- [How to: Control the Toolbox](../Topic/How%20to:%20Control%20the%20Toolbox.md)
+ [How to: Control the Toolbox](http://msdn.microsoft.com/Library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)

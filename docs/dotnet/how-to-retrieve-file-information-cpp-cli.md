@@ -74,5 +74,5 @@ int main()
 ```  
   
 ## See Also  
- [File and Stream I-O](../Topic/File%20and%20Stream%20I-O.md)   
+ [File and Stream I-O](http://msdn.microsoft.com/Library/4f4a33a9-66b7-4cd7-a285-4ad3e4276cd2)   
  [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

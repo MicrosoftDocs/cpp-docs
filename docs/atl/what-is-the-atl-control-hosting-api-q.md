@@ -39,21 +39,21 @@ ATL's control-hosting API is the set of functions that allows any window to act 
   
 |Function|Description|  
 |--------------|-----------------|  
-|[AtlAxAttachControl](../Topic/AtlAxAttachControl.md)|Creates a host object, connects it to the supplied window, then attaches an existing control.|  
-|[AtlAxCreateControl](../Topic/AtlAxCreateControl.md)|Creates a host object, connects it to the supplied window, then loads a control.|  
-|[AtlAxCreateControlLic](../Topic/AtlAxCreateControlLic.md)|Creates a licensed ActiveX control, initializes it, and hosts it in the specified window, similar to [AtlAxCreateControl](../Topic/AtlAxCreateControl.md).|  
-|[AtlAxCreateControlEx](../Topic/AtlAxCreateControlEx.md)|Creates a host object, connects it to the supplied window, then loads a control (also allows event sinks to be set up).|  
-|[AtlAxCreateControlLicEx](../Topic/AtlAxCreateControlLicEx.md)|Creates a licensed ActiveX control, initializes it, and hosts it in the specified window, similar to [AtlAxCreateControlLic](../Topic/AtlAxCreateControlLic.md).|  
-|[AtlAxCreateDialog](../Topic/AtlAxCreateDialog.md)|Creates a modeless dialog box from a dialog resource and returns the window handle.|  
-|[AtlAxDialogBox](../Topic/AtlAxDialogBox.md)|Creates a modal dialog box from a dialog resource.|  
-|[AtlAxGetControl](../Topic/AtlAxGetControl.md)|Returns the **IUnknown** interface pointer of the control hosted in a window.|  
-|[AtlAxGetHost](../Topic/AtlAxGetHost.md)|Returns the **IUnknown** interface pointer of the host object connected to a window.|  
-|[AtlAxWinInit](../Topic/AtlAxWinInit.md)|Initializes the control-hosting code.|  
-|[AtlAxWinTerm](../Topic/AtlAxWinTerm.md)|Uninitializes the control-hosting code.|  
+|[AtlAxAttachControl](http://msdn.microsoft.com/Library/80b5b2e8-dc67-4b22-ba95-632a089dbe47)|Creates a host object, connects it to the supplied window, then attaches an existing control.|  
+|[AtlAxCreateControl](http://msdn.microsoft.com/Library/582a883e-2050-4af0-bf27-e89a0948f41d)|Creates a host object, connects it to the supplied window, then loads a control.|  
+|[AtlAxCreateControlLic](http://msdn.microsoft.com/Library/b409bd0e-28c9-4d9a-80a4-8df77a3aff88)|Creates a licensed ActiveX control, initializes it, and hosts it in the specified window, similar to [AtlAxCreateControl](http://msdn.microsoft.com/Library/582a883e-2050-4af0-bf27-e89a0948f41d).|  
+|[AtlAxCreateControlEx](http://msdn.microsoft.com/Library/8b21d43b-7c3e-4ff1-9419-e0bd695d34df)|Creates a host object, connects it to the supplied window, then loads a control (also allows event sinks to be set up).|  
+|[AtlAxCreateControlLicEx](http://msdn.microsoft.com/Library/abcbef3f-fcb0-4c87-8524-bff31e31e1b2)|Creates a licensed ActiveX control, initializes it, and hosts it in the specified window, similar to [AtlAxCreateControlLic](http://msdn.microsoft.com/Library/b409bd0e-28c9-4d9a-80a4-8df77a3aff88).|  
+|[AtlAxCreateDialog](http://msdn.microsoft.com/Library/ffde4deb-f681-461f-9732-b1bdb4084370)|Creates a modeless dialog box from a dialog resource and returns the window handle.|  
+|[AtlAxDialogBox](http://msdn.microsoft.com/Library/fd1effa3-ccc2-4384-b474-95903ea3082f)|Creates a modal dialog box from a dialog resource.|  
+|[AtlAxGetControl](http://msdn.microsoft.com/Library/40ac5fe9-3e04-41c2-b1ef-a17832fbaaad)|Returns the **IUnknown** interface pointer of the control hosted in a window.|  
+|[AtlAxGetHost](http://msdn.microsoft.com/Library/ad1f4f16-608d-4e96-8d30-04d4ca906a7b)|Returns the **IUnknown** interface pointer of the host object connected to a window.|  
+|[AtlAxWinInit](http://msdn.microsoft.com/Library/fe1b3bd1-3fc9-42e5-ba03-66cae7dd5b7e)|Initializes the control-hosting code.|  
+|[AtlAxWinTerm](http://msdn.microsoft.com/Library/3aba9ffb-4f66-43b0-85eb-db219a8d4bd7)|Uninitializes the control-hosting code.|  
   
  The `HWND` parameters in the first three functions must be an existing window of (almost) any type. If you call any of these three functions explicitly (typically, you won't have to), do not pass a handle to a window that's already acting as a host (if you do, the existing host object won't be freed).  
   
- The first seven functions call [AtlAxWinInit](../Topic/AtlAxWinInit.md) implicitly.  
+ The first seven functions call [AtlAxWinInit](http://msdn.microsoft.com/Library/fe1b3bd1-3fc9-42e5-ba03-66cae7dd5b7e) implicitly.  
   
 > [!NOTE]
 >  The control-hosting API forms the foundation of ATL's support for ActiveX control containment. However, there is usually little need to call these functions directly if you take advantage of or make full use of ATL's wrapper classes. For more information, see [Which ATL Classes Facilitate ActiveX Control Containment] $$brokenlink$$(../Topic/Which%20ATL%20Classes%20Facilitate%20ActiveX%20Control%20Containment.md).  

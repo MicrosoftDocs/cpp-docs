@@ -67,7 +67,7 @@ int fesetexceptflag(
   
 #### Parameters  
  `pstatus`  
- Pointer to an  `fexcept_t` object containing the values to set the exception status flags to. The object may be set by a previous call to [fegetexceptflag](../Topic/fegetexceptflag1.md).  
+ Pointer to an  `fexcept_t` object containing the values to set the exception status flags to. The object may be set by a previous call to [fegetexceptflag](http://msdn.microsoft.com/Library/5031bc1a-9834-4573-9113-160a55eb9654).  
   
  `excepts`  
  The floating-point exception status flags to set.  
