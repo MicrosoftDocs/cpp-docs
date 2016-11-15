@@ -82,7 +82,7 @@ shared_ptr<int> sp6(sp2);   // error, template parameter int and argument shared
   
 -   if it was constructed from a `shared_ptr` object that owns that resource,  
   
--   if it was constructed from a [weak_ptr Class](../Topic/weak_ptr%20Class.md) object that points to that resource, or  
+-   if it was constructed from a [weak_ptr Class](weak_ptr-class.md) object that points to that resource, or  
   
 -   if ownership of that resource was assigned to it, either with [shared_ptr::operator=](#shared_ptr__operator_eq) or by calling the member function [shared_ptr::reset](#shared_ptr__reset).  
   
@@ -581,7 +581,7 @@ shared_ptr(const unique_ptr<Other, D>& up) = delete;
  The auto pointer to copy.  
   
 ### Remarks  
- The constructors each construct an object that owns the resource named by the operand sequence. The constructor `shared_ptr(const weak_ptr<Other>& wp)` throws an exception object of type [bad_weak_ptr Class](../Topic/bad_weak_ptr%20Class.md) if `wp.expired()`.  
+ The constructors each construct an object that owns the resource named by the operand sequence. The constructor `shared_ptr(const weak_ptr<Other>& wp)` throws an exception object of type [bad_weak_ptr Class](bad_weak_ptr-class.md) if `wp.expired()`.  
   
 ### Example  
   
@@ -843,8 +843,8 @@ sp1.use_count() == 2
 ```  
   
 ## See Also  
- [weak_ptr Class](../Topic/weak_ptr%20Class.md)   
- [Thread Safety in the C++ Standard Library](../Topic/Thread%20Safety%20in%20the%20C++%20Standard%20Library.md)
+ [weak_ptr Class](weak_ptr-class.md)   
+ [Thread Safety in the C++ Standard Library](thread-safety-in-the-cpp-standard-library.md)
 
 
 
