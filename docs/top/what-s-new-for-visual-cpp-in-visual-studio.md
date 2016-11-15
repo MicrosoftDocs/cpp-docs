@@ -123,6 +123,7 @@ The CPPRestSDK, a cross-platform web API for C++, has been updated to version 2.
 
 ### Support for non-MSBuild projects with Open Folder
 Visual Studio 2017 introduces the “Open Folder” feature, which enables you to code, build and debug in a folder containing source code without the need to create any solutions or projects. This makes it a lot simpler to get started with Visual Studio even if your project is not an MSBuild-based project. With “Open Folder” you get access to the powerful code understanding, editing, building and debugging capabilities that Visual Studio already provides for MSBuild projects. For more information, see [Bring your C++ codebase to Visual Studio with “Open Folder”](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/bring-your-c-codebase-to-visual-studio-with-open-folder/).
+
 * _**New in RC**_ Improvements to the Open Folder experience.     
 You can customize the experience through these json files:
   -	CppProperties.json to customize the IntelliSense and browsing experience.
