@@ -55,4 +55,4 @@ A statement attempts to convert one data type to another in a way that is not de
   
 ## See Also  
  [Type Conversions in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/type-conversions)   
- [How to: Initialize an Array Variable in Visual Basic](../Topic/How%20to:%20Initialize%20an%20Array%20Variable%20in%20Visual%20Basic.md)
+ [How to: Initialize an Array Variable in Visual Basic](http://msdn.microsoft.com/Library/aadd7a60-7ca4-4608-b986-091f19e7fc10)

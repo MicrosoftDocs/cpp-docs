@@ -44,4 +44,4 @@ Module blocks must end with an `End``Module` statement.
 -   Add an `End Module` statement to the end of the `Module` block.  
   
 ## See Also  
- [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)
+ [End \<keyword> Statement](http://msdn.microsoft.com/Library/42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f)

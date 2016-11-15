@@ -32,7 +32,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Visual Studio Interop Assembly Parameter Marshaling
-VSPackages that are written in managed code might have to call or be called by unmanaged COM code. Typically, method arguments are transformed, or marshaled, automatically by the interop marshaler. However, sometimes arguments cannot be transformed in a straightforward manner. In those cases, the interop assembly method prototype parameters are used to match the COM function parameters as closely as possible. For more information, see [Interop Marshaling](../Topic/Interop%20Marshaling.md).  
+VSPackages that are written in managed code might have to call or be called by unmanaged COM code. Typically, method arguments are transformed, or marshaled, automatically by the interop marshaler. However, sometimes arguments cannot be transformed in a straightforward manner. In those cases, the interop assembly method prototype parameters are used to match the COM function parameters as closely as possible. For more information, see [Interop Marshaling](http://msdn.microsoft.com/Library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
   
 ## General Suggestions  
   
@@ -137,6 +137,6 @@ else
   
 ## See Also  
  [Interop Marshaling](http://msdn.microsoft.com/en-us/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
- [Interop Marshaling](../Topic/Interop%20Marshaling.md)   
+ [Interop Marshaling](http://msdn.microsoft.com/Library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
  [Troubleshooting Interoperability](/dotnet/articles/visual-basic/programming-guide/com-interop/troubleshooting-interoperability)   
  [Managed VSPackages](../misc/managed-vspackages.md)

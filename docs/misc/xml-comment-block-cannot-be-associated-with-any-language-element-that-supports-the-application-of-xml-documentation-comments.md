@@ -44,5 +44,5 @@ XML comment block cannot be associated with any valid language element. The XML 
 -   Find and remove the extraneous XML tag, or supply the language element it describes.  
   
 ## See Also  
- [How to: Create XML Documentation](../Topic/How%20to:%20Create%20XML%20Documentation%20in%20Visual%20Basic.md)   
+ [How to: Create XML Documentation](http://msdn.microsoft.com/Library/27b5b06c-09b9-496a-8245-f9542d846230)   
  [XML Comment Tags](/dotnet/articles/visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments)

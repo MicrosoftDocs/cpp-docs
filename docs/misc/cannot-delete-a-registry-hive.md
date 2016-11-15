@@ -39,4 +39,4 @@ An attempt has been made to delete a registry hive. Hives are top-level registry
 ## See Also  
  [My.Computer.Registry Object](/dotnet/articles/visual-basic/language-reference/objects/my-computer-registry-object)   
  [Common Registry Tasks (Visual Basic)](http://msdn.microsoft.com/en-us/0bde9f77-b38b-4c76-bac2-ff6cda3087c4)   
- [How to: Delete a Registry Key](../Topic/How%20to:%20Delete%20a%20Registry%20Key%20in%20Visual%20Basic.md)
+ [How to: Delete a Registry Key](http://msdn.microsoft.com/Library/ab9aca0e-42b0-4ff7-8ff9-845a4bfdf9f2)

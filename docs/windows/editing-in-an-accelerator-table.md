@@ -53,7 +53,7 @@ translation.priority.ht:
   
     -   For [Type](../windows/accelerator-type-property.md), select ASCII or VIRTKEY from the list.  
   
- For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.*  
   
  **Requirements**  
   

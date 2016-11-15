@@ -39,6 +39,8 @@ translation.priority.ht:
 ---
 # C++ Language Reference
 This reference explains the C++ programming language as implemented in Microsoft Visual C++. The organization is based on *The Annotated C++ Reference Manual* by Margaret Ellis and Bjarne Stroustrup and on the ANSI/ISO C++ International Standard (ISO/IEC FDIS 14882). Microsoft-specific implementations of C++ language features are included.  
+
+For an overview of Modern C++ programming practices, see [Welcome Back to C++](welcome-back-to-cpp-modern-cpp.md).
   
  See the following tables to quickly find a keyword or operator:  
   
@@ -47,6 +49,7 @@ This reference explains the C++ programming language as implemented in Microsoft
 -   [C++ Operators](../cpp/cpp-built-in-operators-precedence-and-associativity.md)  
   
 ## In This Section  
+
  [Lexical Conventions](../cpp/lexical-conventions.md)  
  Fundamental lexical elements of a C++ program: tokens, comments, operators, keywords, punctuators, literals. Also, file translation, operator precedence/associativity.  
   
@@ -115,6 +118,9 @@ This reference explains the C++ programming language as implemented in Microsoft
   
  [Nonstandard Behavior](../cpp/nonstandard-behavior.md)  
  Information about nonstandard behavior of the Visual C++ compiler.  
+
+ [Welcome Back to C++](welcome-back-to-cpp-modern-cpp.md)
+ An overview of modern C++ programming practices for writing safe, correct and efficient programs.
   
 ## Related Sections  
  [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)  
@@ -126,7 +132,7 @@ This reference explains the C++ programming language as implemented in Microsoft
  [C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)  
  Reference material on pragmas, preprocessor directives, predefined macros, and the preprocessor.  
   
- [Visual C++ Libraries](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)  
+ [Visual C++ Libraries](../standard-library/cpp-standard-library-reference.md)  
  A list of links to the reference start pages for the various Visual C++ libraries.  
   
 ## See Also  

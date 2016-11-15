@@ -63,10 +63,10 @@ The sample in this topic shows how to create AXHost and how to host an ActiveX c
   
 ## See Also  
  [Control Containment FAQ](../atl/atl-control-containment-faq.md)   
- [AtlAxCreateControl](../Topic/AtlAxCreateControl.md)   
- [AtlAxCreateControlEx](../Topic/AtlAxCreateControlEx.md)   
- [AtlAxCreateControlLic](../Topic/AtlAxCreateControlLic.md)   
- [AtlAxCreateControlLicEx](../Topic/AtlAxCreateControlLicEx.md)   
+ [AtlAxCreateControl](http://msdn.microsoft.com/Library/582a883e-2050-4af0-bf27-e89a0948f41d)   
+ [AtlAxCreateControlEx](http://msdn.microsoft.com/Library/8b21d43b-7c3e-4ff1-9419-e0bd695d34df)   
+ [AtlAxCreateControlLic](http://msdn.microsoft.com/Library/b409bd0e-28c9-4d9a-80a4-8df77a3aff88)   
+ [AtlAxCreateControlLicEx](http://msdn.microsoft.com/Library/abcbef3f-fcb0-4c87-8524-bff31e31e1b2)   
  [CAxWindow2T Class](../atl/reference/caxwindow2t-class.md)   
  [IAxWinHostWindowLic Interface](../atl/reference/iaxwinhostwindowlic-interface.md)
 

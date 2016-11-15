@@ -58,7 +58,7 @@ When you're designing a dialog box, you can simulate and test its run-time behav
   
 2.  To end the simulation, press Esc, or just choose the **Close** button in the dialog box you are testing.  
   
- For information about how to add resources to managed projects, see [Resources in Desktop Apps](../Topic/Resources%20in%20Desktop%20Apps.md).  
+ For information about how to add resources to managed projects, see [Resources in Desktop Apps](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890).  
   
  Requirements  
   

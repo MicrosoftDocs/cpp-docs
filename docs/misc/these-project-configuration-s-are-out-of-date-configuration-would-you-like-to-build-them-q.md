@@ -48,8 +48,8 @@ You are editing a Visual Studio project or have selected a project in Solution E
   
 ## See Also  
  [Configuration Manager Dialog Box](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)   
- [How to: Create Solution and Project Build Configurations](../Topic/How%20to:%20Create%20Solution%20and%20Project%20Build%20Configurations.md)   
- [How to: Create and Remove Project Dependencies](../Topic/How%20to:%20Create%20and%20Remove%20Project%20Dependencies.md)   
+ [How to: Create Solution and Project Build Configurations](http://msdn.microsoft.com/Library/1844bff7-1ba0-4fcf-b6ab-97e26db0024d)   
+ [How to: Create and Remove Project Dependencies](http://msdn.microsoft.com/Library/e2a0a8ff-dae7-40a8-b774-b88aa5235183)   
  [Project Dependencies Dialog Box](http://msdn.microsoft.com/en-us/d66e48c3-3722-40dd-99b4-53d93cac128e)   
  [Project Dependencies, Common Properties, Solution Property Pages Dialog Box](http://msdn.microsoft.com/en-us/2ba638fc-719c-4a79-b166-3455a4374e31)   
  [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio)   

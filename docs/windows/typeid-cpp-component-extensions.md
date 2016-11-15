@@ -65,7 +65,7 @@ Platform::Type^ type = T::typeid;
  A type name.  
   
 ### Remarks  
- In [!INCLUDE[cppwrt_short](../build/reference/includes/cppwrt_short_md.md)],  typeid returns a [Platform::Type](../Topic/Platform::Type%20Class.md) that is constructed from runtime type information.  
+ In [!INCLUDE[cppwrt_short](../build/reference/includes/cppwrt_short_md.md)],  typeid returns a [Platform::Type](http://msdn.microsoft.com/Library/d6b03f1e-b240-49b9-a08e-53a460030475) that is constructed from runtime type information.  
   
 ### Requirements  
  Compiler option: **/ZW**  

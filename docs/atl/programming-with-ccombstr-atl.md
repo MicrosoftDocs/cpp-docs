@@ -47,7 +47,7 @@ The ATL class [CComBSTR](../atl/reference/ccombstr-class.md) provides a wrapper 
 -   [Memory Leak Issues](#programmingwithccombstr_memoryleaks)  
   
 ##  <a name="programmingwithccombstr_conversionissues"></a> Conversion Issues  
- Although several `CComBSTR` methods will automatically convert an ANSI string argument into Unicode, the methods will always return Unicode format strings. To convert the output string back to ANSI, use an ATL conversion class. For more information on the ATL conversion classes, see [ATL and MFC String Conversion Macros](../Topic/ATL%20and%20MFC%20String%20Conversion%20Macros.md).  
+ Although several `CComBSTR` methods will automatically convert an ANSI string argument into Unicode, the methods will always return Unicode format strings. To convert the output string back to ANSI, use an ATL conversion class. For more information on the ATL conversion classes, see [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/Library/8f53659e-0464-4424-97db-6b8453c49863).  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#114](../atl/codesnippet/CPP/programming-with-ccombstr-atl_1.cpp)]  
@@ -89,6 +89,6 @@ The ATL class [CComBSTR](../atl/reference/ccombstr-class.md) provides a wrapper 
 ## See Also  
  [Concepts](../atl/active-template-library-atl-concepts.md)   
  [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md)   
- [wstring](../Topic/wstring.md)   
+ [wstring](http://msdn.microsoft.com/Library/77953dd7-ee2f-4f6c-90e7-27da549ca631)   
  [String Conversion Macros](../atl/reference/string-conversion-macros.md)
 

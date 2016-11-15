@@ -87,4 +87,4 @@ Visual C++ provides several ways to work with databases. The preferred way is to
 |Distributing ActiveX controls|[MFC ActiveX Controls: Distributing ActiveX Controls](../mfc/mfc-activex-controls-distributing-activex-controls.md)|  
   
 ## See Also  
- [Data Access](../Topic/Data%20Access%20in%20Visual%20C++.md)
+ [Data Access](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b)

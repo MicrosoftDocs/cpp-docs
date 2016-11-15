@@ -155,7 +155,7 @@ virtual BOOL AutosaveDocumentInfo(
 > [!NOTE]
 >  Using `bResetModifiedFlag` to change the state of the document to unmodified may cause the user to lose unsaved data. If the framework considers a document unmodified, closing it does not prompt the user to save.  
   
- This method throws an exception with the [ASSERT](../Topic/ASSERT%20\(MFC\).md) macro if `pDocument` is not a valid `CDocument` object.  
+ This method throws an exception with the [ASSERT](http://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) macro if `pDocument` is not a valid `CDocument` object.  
   
  To use this method, either `AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART` or `AFX_RESTARTMANAGER_AUTOSAVE_AT_INTERVAL` must be set in `m_dwRestartManagerSupportFlags`. See [CDataRecoveryHandler Class](../../mfc/reference/cdatarecoveryhandler-class.md) for more information about the `m_dwRestartManagerSupportFlags` parameter.  
   

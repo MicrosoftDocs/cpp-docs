@@ -44,5 +44,5 @@ More than one XML comment block has been applied to a language element.
 -   Remove the superfluous XML comment block.  
   
 ## See Also  
- [How to: Create XML Documentation](../Topic/How%20to:%20Create%20XML%20Documentation%20in%20Visual%20Basic.md)   
+ [How to: Create XML Documentation](http://msdn.microsoft.com/Library/27b5b06c-09b9-496a-8245-f9542d846230)   
  [Documenting Your Code with XML](/dotnet/articles/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)

@@ -111,4 +111,4 @@ translation.priority.ht:
  [Hosting a Windows Forms User Control as an MFC View](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)   
  [ICommandSource Interface](../mfc/reference/icommandsource-interface.md)   
  [ICommandTarget Interface](../mfc/reference/icommandtarget-interface.md)   
- [CommandHandler](../Topic/CommandHandler%20Delegate.md)
+ [CommandHandler](http://msdn.microsoft.com/Library/22096734-e074-4aca-8523-4b15590109f9)

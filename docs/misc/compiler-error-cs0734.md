@@ -40,7 +40,7 @@ The /moduleassemblyname option may only be specified when building a target type
   
  The compiler option **/moduleassemblyname** should only be used when building a .netmodule. See [/moduleassemblyname (C# Compiler Option)](/dotnet/articles/csharp/language-reference/compiler-options/moduleassemblyname-compiler-option) for more information.  
   
- For more information on building a .netmodule, see [/target:module (C# Compiler Options)](../Topic/-target:module%20\(C%23%20Compiler%20Options\).md).  
+ For more information on building a .netmodule, see [/target:module (C# Compiler Options)](http://msdn.microsoft.com/Library/9af1e4fa-c749-44e7-ae58-90a3d05d4e72).  
   
 ## Example  
  The following sample generates CS0734. To resolve, add **/target:module** to the compilation.  

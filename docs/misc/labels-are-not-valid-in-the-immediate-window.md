@@ -45,4 +45,4 @@ Line labels enable branching and are not permitted in a debugging context.
   
 ## See Also  
  [Immediate Window](/visualstudio/ide/reference/immediate-window)   
- [How to: Label Statements](../Topic/How%20to:%20Label%20Statements%20\(Visual%20Basic\).md)
+ [How to: Label Statements](http://msdn.microsoft.com/Library/38f1ff43-2054-42cb-963b-1998e60c6ed4)

@@ -30,7 +30,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Use GetGlobalService
-Sometimes you may need to get a service from a tool window or control container that has not been sited, or else has been sited with a service provider that does not know about the service you want. For example, you might want to write to the activity log from within a control. For more information about these and other scenarios, see [How to: Troubleshoot Services](../Topic/How%20to:%20Troubleshoot%20Services.md).  
+Sometimes you may need to get a service from a tool window or control container that has not been sited, or else has been sited with a service provider that does not know about the service you want. For example, you might want to write to the activity log from within a control. For more information about these and other scenarios, see [How to: Troubleshoot Services](http://msdn.microsoft.com/Library/001551da-4847-4f59-a0b2-fcd327d7f5ca).  
   
  You can get most [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] services by calling the static <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> method.  
   
@@ -51,9 +51,9 @@ Sometimes you may need to get a service from a tool window or control container 
      [!code-vb[UseGetGlobalService#1](../misc/codesnippet/VisualBasic/how-to-use-getglobalservice_1.vb)]
      [!code-cs[UseGetGlobalService#1](../misc/codesnippet/CSharp/how-to-use-getglobalservice_1.cs)]  
   
-     This code obtains an SVsActivityLog service and casts it to an <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, which can be used to write to the activity log. For an example, see [How to: Use the Activity Log](../Topic/How%20to:%20Use%20the%20Activity%20Log.md).  
+     This code obtains an SVsActivityLog service and casts it to an <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, which can be used to write to the activity log. For an example, see [How to: Use the Activity Log](http://msdn.microsoft.com/Library/bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd).  
   
 ## See Also  
- [How to: Troubleshoot Services](../Topic/How%20to:%20Troubleshoot%20Services.md)   
+ [How to: Troubleshoot Services](http://msdn.microsoft.com/Library/001551da-4847-4f59-a0b2-fcd327d7f5ca)   
  [Using and Providing Services](/visualstudio/extensibility/using-and-providing-services)   
  [Service Essentials](/visualstudio/extensibility/internals/service-essentials)

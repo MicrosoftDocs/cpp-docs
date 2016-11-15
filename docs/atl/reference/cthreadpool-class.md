@@ -122,7 +122,7 @@ CThreadPool() throw();
 ```  
   
 ### Remarks  
- Initializes the timeout value to [ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT](../Topic/ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT.md).  
+ Initializes the timeout value to [ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT](http://msdn.microsoft.com/Library/c1e660a7-d490-42af-bbe1-ded76e80cc10).  
   
 ##  <a name="cthreadpool___dtorcthreadpool"></a>  CThreadPool::~CThreadPool  
  The destructor for the thread pool.  
@@ -205,7 +205,7 @@ HRESULT Initialize(
   
  If `nNumThreads` is negative, its absolute value will be multiplied by the number of processors in the machine to get the total number of threads.  
   
- If `nNumThreads` is zero, [ATLS_DEFAULT_THREADSPERPROC](../Topic/ATLS_DEFAULT_THREADSPERPROC.md) will be multiplied by the number of processors in the machine to get the total number of threads.  
+ If `nNumThreads` is zero, [ATLS_DEFAULT_THREADSPERPROC](http://msdn.microsoft.com/Library/e0dcf107-72a9-4122-abb4-83c63aa7d571) will be multiplied by the number of processors in the machine to get the total number of threads.  
   
  `dwStackSize`  
  The stack size for each thread in the pool.  
@@ -271,7 +271,7 @@ HRESULT STDMETHODCALLTYPE SetSize(int   nNumThreads) throw();
   
  If `nNumThreads` is negative, its absolute value will be multiplied by the number of processors in the machine to get the total number of threads.  
   
- If `nNumThreads` is zero, [ATLS_DEFAULT_THREADSPERPROC](../Topic/ATLS_DEFAULT_THREADSPERPROC.md) will be multiplied by the number of processors in the machine to get the total number of threads.  
+ If `nNumThreads` is zero, [ATLS_DEFAULT_THREADSPERPROC](http://msdn.microsoft.com/Library/e0dcf107-72a9-4122-abb4-83c63aa7d571) will be multiplied by the number of processors in the machine to get the total number of threads.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -294,7 +294,7 @@ HRESULT STDMETHODCALLTYPE SetTimeout(DWORD   dwMaxWait) throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- The timeout is initialized to [ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT](../Topic/ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT.md) in the constructor.  
+ The timeout is initialized to [ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT](http://msdn.microsoft.com/Library/c1e660a7-d490-42af-bbe1-ded76e80cc10) in the constructor.  
   
  Note that `dwMaxWait` is the time that the pool will wait for a single thread to shut down. The maximum time that could be taken to remove multiple threads from the pool could be slightly less than `dwMaxWait` multiplied by the number of threads.  
   

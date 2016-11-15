@@ -45,5 +45,5 @@ An XML literal has been defined that includes a full-width character as a delimi
   
 ## See Also  
  [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
- [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md)   
+ [Character Encoding in the .NET Framework](http://msdn.microsoft.com/Library/bf6d9823-4c2d-48af-b280-919c5af66ae9)   
  [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

@@ -37,7 +37,7 @@ An <xref:System.AccessViolationException> is thrown when there is an attempt to 
   
 ## Associated Tips  
  Make sure that the memory that you are attempting to access has been allocated.  
- Automatic memory management is one of the services that the common language runtime provides. You may wish to move to managed code to take advantage of this service. For more information, see [Automatic Memory Management](../Topic/Automatic%20Memory%20Management.md).  
+ Automatic memory management is one of the services that the common language runtime provides. You may wish to move to managed code to take advantage of this service. For more information, see [Automatic Memory Management](http://msdn.microsoft.com/Library/d4850de5-fa63-4936-a250-5678d118acba).  
   
  Make sure that the memory that you are attempting to access has not been corrupted.  
  If several read or write operations have occurred through bad pointers, memory may be corrupted.  
@@ -54,4 +54,4 @@ An <xref:System.AccessViolationException> is thrown when there is an attempt to 
 ## See Also  
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
  [Memory Management: Examples](../mfc/memory-management-examples.md)   
- [Automatic Memory Management](../Topic/Automatic%20Memory%20Management.md)
+ [Automatic Memory Management](http://msdn.microsoft.com/Library/d4850de5-fa63-4936-a250-5678d118acba)

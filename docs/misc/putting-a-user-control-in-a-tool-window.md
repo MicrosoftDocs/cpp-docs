@@ -34,14 +34,14 @@ translation.priority.mt:
 # Putting a User Control in a Tool Window
 This walkthrough demonstrates how to add a user control to a tool window.  
   
- A user control is a collection of Windows controls bound together in one control. To add a user control to a tool window, all you really have to do is have the user control appear in the **Toolbox**. The user control that is used in this walkthrough is the clock control developed in [Walkthrough: Authoring a Composite Control with Visual C#](../Topic/Walkthrough:%20Authoring%20a%20Composite%20Control%20with%20Visual%20C%23.md).  
+ A user control is a collection of Windows controls bound together in one control. To add a user control to a tool window, all you really have to do is have the user control appear in the **Toolbox**. The user control that is used in this walkthrough is the clock control developed in [Walkthrough: Authoring a Composite Control with Visual C#](http://msdn.microsoft.com/Library/f88481a8-c746-4a36-9479-374ce5f2e91f).  
   
 ## Prerequisites  
  To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](/visualstudio/extensibility/visual-studio-sdk).  
   
 ## Creating the User Control  
   
-1.  Follow the steps in [Walkthrough: Authoring a Composite Control with Visual C#](../Topic/Walkthrough:%20Authoring%20a%20Composite%20Control%20with%20Visual%20C%23.md) to create the clock control. Do not create the alarm clock control.  
+1.  Follow the steps in [Walkthrough: Authoring a Composite Control with Visual C#](http://msdn.microsoft.com/Library/f88481a8-c746-4a36-9479-374ce5f2e91f) to create the clock control. Do not create the alarm clock control.  
   
 > [!NOTE]
 >  The following steps assume that you have named the clock control `ctlClock`.  
@@ -73,4 +73,4 @@ This walkthrough demonstrates how to add a user control to a tool window.
 10. In the experimental Visual Studio, on the **View** menu, point to **Other Windows** and then click **MyToolWindow**. This displays your tool window, which has a running time display.  
   
 ## See Also  
- [Walkthrough: Authoring a Composite Control with Visual C#](../Topic/Walkthrough:%20Authoring%20a%20Composite%20Control%20with%20Visual%20C%23.md)
+ [Walkthrough: Authoring a Composite Control with Visual C#](http://msdn.microsoft.com/Library/f88481a8-c746-4a36-9479-374ce5f2e91f)

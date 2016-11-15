@@ -39,6 +39,6 @@ An operation was attempted requiring that a filename be supplied, but the suppli
 -   Remove the extraneous character.  
   
 ## See Also  
- [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
+ [How to: Parse File Paths](http://msdn.microsoft.com/Library/c1bd99c9-8160-456a-b5ab-60a49139b923)   
  [Reading from Files](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files)   
  [Writing to Files](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files)

@@ -42,7 +42,7 @@ translation.priority.mt:
   
  CS0278 can occur if the compiler is unable to make the match due to ambiguities. For example, the "enumerable" pattern requires that there be a method called `MoveNext`, and your code might contain two methods called `MoveNext`. The compiler will attempt to find an interface to use, but it is recommended that you determine and resolve the cause of the ambiguity.  
   
- For more information, see [How to: Access a Collection Class with foreach](../Topic/How%20to:%20Access%20a%20Collection%20Class%20with%20foreach%20\(C%23%20Programming%20Guide\).md).  
+ For more information, see [How to: Access a Collection Class with foreach](http://msdn.microsoft.com/Library/a6b9cf5c-6c8d-4223-b12c-288949434493).  
   
 ## Example  
  The following sample generates CS0278.  

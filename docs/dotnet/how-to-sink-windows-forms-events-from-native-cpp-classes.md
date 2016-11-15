@@ -40,9 +40,9 @@ You can enable native C++ classes to receive callbacks from managed events raise
   
  To do this, you need to:  
   
--   Attach an `OnClick` event handler to the control using [MAKE_DELEGATE](../Topic/MAKE_DELEGATE.md).  
+-   Attach an `OnClick` event handler to the control using [MAKE_DELEGATE](http://msdn.microsoft.com/Library/acc07fd2-4ea7-4c56-8d2c-73175524caeb).  
   
--   Create a delegate map using [BEGIN_DELEGATE_MAP](../Topic/BEGIN_DELEGATE_MAP.md), [END_DELEGATE_MAP](../Topic/END_DELEGATE_MAP.md), and [EVENT_DELEGATE_ENTRY](../Topic/EVENT_DELEGATE_ENTRY.md).  
+-   Create a delegate map using [BEGIN_DELEGATE_MAP](http://msdn.microsoft.com/Library/cdf4341f-1c71-40bb-abc8-fc2c35b8247d), [END_DELEGATE_MAP](http://msdn.microsoft.com/Library/23992653-a52a-4c76-b1f8-8e67daae75da), and [EVENT_DELEGATE_ENTRY](http://msdn.microsoft.com/Library/17539da5-bad7-43ff-8a54-6ea3dc564965).  
   
  This sample continues the work you did in [How to: Do DDX/DDV Data Binding with Windows Forms](../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md).  
   
@@ -77,7 +77,7 @@ You can enable native C++ classes to receive callbacks from managed events raise
     ```  
   
 ## See Also  
- [MAKE_DELEGATE](../Topic/MAKE_DELEGATE.md)   
- [BEGIN_DELEGATE_MAP](../Topic/BEGIN_DELEGATE_MAP.md)   
- [END_DELEGATE_MAP](../Topic/END_DELEGATE_MAP.md)   
- [EVENT_DELEGATE_ENTRY](../Topic/EVENT_DELEGATE_ENTRY.md)
+ [MAKE_DELEGATE](http://msdn.microsoft.com/Library/acc07fd2-4ea7-4c56-8d2c-73175524caeb)   
+ [BEGIN_DELEGATE_MAP](http://msdn.microsoft.com/Library/cdf4341f-1c71-40bb-abc8-fc2c35b8247d)   
+ [END_DELEGATE_MAP](http://msdn.microsoft.com/Library/23992653-a52a-4c76-b1f8-8e67daae75da)   
+ [EVENT_DELEGATE_ENTRY](http://msdn.microsoft.com/Library/17539da5-bad7-43ff-8a54-6ea3dc564965)

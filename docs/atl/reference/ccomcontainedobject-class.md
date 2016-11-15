@@ -126,7 +126,7 @@ IUnknown* GetControllingUnknown();
  The owner object's **IUnknown**.  
   
 ### Remarks  
- This method may be virtual if `Base` has declared the [DECLARE_GET_CONTROLLING_UNKNOWN](../Topic/DECLARE_GET_CONTROLLING_UNKNOWN.md) macro.  
+ This method may be virtual if `Base` has declared the [DECLARE_GET_CONTROLLING_UNKNOWN](http://msdn.microsoft.com/Library/82b0199a-a9d5-4f95-a711-fa1ae18e1f77) macro.  
   
 ##  <a name="ccomcontainedobject__queryinterface"></a>  CComContainedObject::QueryInterface  
  Retrieves a pointer to the interface requested on the owner object.  

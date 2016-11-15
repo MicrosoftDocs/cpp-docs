@@ -55,7 +55,7 @@ Assembly '\<filepath1>' references assembly '\<assemblyidentity>', which is ambi
   
 ## See Also  
  [NOT IN BUILD: Assemblies](http://msdn.microsoft.com/en-us/6c5c7b30-fa78-4f40-b908-120d0743b0e6)   
- [Assemblies in the Common Language Runtime](../Topic/Assemblies%20in%20the%20Common%20Language%20Runtime.md)   
+ [Assemblies in the Common Language Runtime](http://msdn.microsoft.com/Library/2cfebe19-7436-49f1-bd99-3c4019f0b676)   
  [Assembly Benefits](../Topic/Assembly%20Benefits.md)   
  [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)   
  [NIB: Managing References](http://msdn.microsoft.com/en-us/910912ce-0dc9-4569-9274-32c44a20cb2c)   

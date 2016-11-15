@@ -48,4 +48,4 @@ An implementing class in the interop assembly is not available.
 ## See Also  
  [Implements Statement](/dotnet/articles/visual-basic/language-reference/statements/implements-statement)   
  [COM Interop](/dotnet/articles/visual-basic/programming-guide/com-interop/index)   
- [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md)
+ [Tlbimp.exe (Type Library Importer)](http://msdn.microsoft.com/Library/ec0a8d63-11b3-4acd-b398-da1e37e97382)

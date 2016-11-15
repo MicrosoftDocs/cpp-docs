@@ -40,4 +40,4 @@ You jumped into the middle of a `For...Next` loop.
   
 ## See Also  
  [For Each...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-each-next-statement)   
- [How to: Label Statements](../Topic/How%20to:%20Label%20Statements%20\(Visual%20Basic\).md)
+ [How to: Label Statements](http://msdn.microsoft.com/Library/38f1ff43-2054-42cb-963b-1998e60c6ed4)

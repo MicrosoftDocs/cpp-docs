@@ -230,7 +230,7 @@ TRACE(DWORD  category,  UINT  level, LPCSTR lpszFormat, ...)
 ```  
   
 ### Remarks  
- See [ATLTRACE2](../Topic/ATLTRACE2.md) for a description of **TRACE**. **TRACE** and `ATLTRACE2` have the same behavior.  
+ See [ATLTRACE2](http://msdn.microsoft.com/Library/467ff555-e7a5-4f94-bdd9-50ee27ab9986) for a description of **TRACE**. **TRACE** and `ATLTRACE2` have the same behavior.  
   
  In the debug version of MFC, this macro sends the specified string to the debugger of the current application. In a release build, this macro compiles to nothing (no code is generated at all).  
   

@@ -47,4 +47,4 @@ A property declaration specifies access levels in the [Property Statement](/dotn
   
 ## See Also  
  [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)   
- [How to: Declare a Property with Mixed Access Levels](../Topic/How%20to:%20Declare%20a%20Property%20with%20Mixed%20Access%20Levels%20\(Visual%20Basic\).md)
+ [How to: Declare a Property with Mixed Access Levels](http://msdn.microsoft.com/Library/fdbb2d97-279a-4956-b26c-cbdfbc34915a)

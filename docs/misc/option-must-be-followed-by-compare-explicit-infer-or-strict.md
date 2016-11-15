@@ -46,7 +46,7 @@ The only options that you can set with the `Option` statement are `Compare`, `Ex
 -   Check to see whether the `Option` statement is incomplete.  
   
 ## See Also  
- [Option \<keyword> Statement](../Topic/Option%20%3Ckeyword%3E%20Statement.md)   
+ [Option \<keyword> Statement](http://msdn.microsoft.com/Library/6b2f41c4-2403-43b6-8a14-94a3775e5b47)   
  [Option Compare Statement](/dotnet/articles/visual-basic/language-reference/statements/option-compare-statement)   
  [Option Explicit Statement](/dotnet/articles/visual-basic/language-reference/statements/option-explicit-statement)   
  [Option Infer Statement](/dotnet/articles/visual-basic/language-reference/statements/option-infer-statement)   

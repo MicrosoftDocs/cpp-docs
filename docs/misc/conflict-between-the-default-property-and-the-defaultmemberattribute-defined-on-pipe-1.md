@@ -51,4 +51,4 @@ A class, structure, or interface declares a default property with the [Default](
  <xref:System.Reflection.DefaultMemberAttribute>   
  [Default](/dotnet/articles/visual-basic/language-reference/modifiers/default)   
  [NOT IN BUILD: Default Properties](http://msdn.microsoft.com/en-us/a70f2a27-8176-4858-935e-f25afdd43ab5)   
- [How to: Declare and Call a Default Property in Visual Basic](../Topic/How%20to:%20Declare%20and%20Call%20a%20Default%20Property%20in%20Visual%20Basic.md)
+ [How to: Declare and Call a Default Property in Visual Basic](http://msdn.microsoft.com/Library/68b4026e-09ef-4613-808e-f6287494ff63)

@@ -46,6 +46,6 @@ First statement of this 'Sub New' must be a call to 'MyBase.New' or 'MyClass.New
 -   Add a call to a base class constructor `MyBase.New()`, or to another constructor of this class using `MyClass.New()` or `Me.New()`, as the first line of this constructor.  
   
 ## See Also  
- [Object Lifetime: How Objects Are Created and Destroyed](../Topic/Object%20Lifetime:%20How%20Objects%20Are%20Created%20and%20Destroyed%20\(Visual%20Basic\).md)   
+ [Object Lifetime: How Objects Are Created and Destroyed](http://msdn.microsoft.com/Library/f1ee8458-b156-44e0-9a8a-5dd171648cd8)   
  [NOT IN BUILD: Using Constructors and Destructors](http://msdn.microsoft.com/en-us/548eebe1-86c4-4377-b2f5-447cb8be3d90)   
  [MyBase - delete](http://msdn.microsoft.com/en-us/52491d06-6451-4f6f-9aa6-8fab59bbc2b9)

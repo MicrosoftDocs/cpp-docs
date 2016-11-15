@@ -60,4 +60,4 @@ A [Get Statement](/dotnet/articles/visual-basic/language-reference/statements/ge
 ## See Also  
  [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)   
  [Differences Between Shadowing and Overriding](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/differences-between-shadowing-and-overriding)   
- [How to: Declare a Property with Mixed Access Levels](../Topic/How%20to:%20Declare%20a%20Property%20with%20Mixed%20Access%20Levels%20\(Visual%20Basic\).md)
+ [How to: Declare a Property with Mixed Access Levels](http://msdn.microsoft.com/Library/fdbb2d97-279a-4956-b26c-cbdfbc34915a)

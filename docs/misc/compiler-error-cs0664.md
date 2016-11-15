@@ -60,4 +60,4 @@ class Example
 ```  
   
 ## See Also  
- [Type Conversion Tables](../Topic/Type%20Conversion%20Tables%20in%20the%20.NET%20Framework.md)
+ [Type Conversion Tables](http://msdn.microsoft.com/Library/0ea65c59-85eb-4a52-94ca-c36d3bd13058)
