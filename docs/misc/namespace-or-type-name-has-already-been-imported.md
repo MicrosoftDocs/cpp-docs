@@ -44,4 +44,4 @@ An attempt was made to import a namespace more than once.
 -   Remove redundant `Imports` statements.  
   
 ## See Also  
- [Imports Statement (.NET Namespace and Type)](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)
+ [Imports Statement (.NET Namespace and Type)](/dotnet/articles/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)

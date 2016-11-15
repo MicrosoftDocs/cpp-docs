@@ -56,7 +56,7 @@ A <xref:System.Security.SecurityException> exception is thrown when a security e
  The application may not have sufficient permissions to create logs on or write to non-local computers.  
   
  If calling unmanaged libraries, use equivalent managed libraries.  
- An equivalent API may exist in the Framework. For more information, see [Troubleshooting Interoperability](/dotnet/visual-basic/programming-guide/com-interop/troubleshooting-interoperability).  
+ An equivalent API may exist in the Framework. For more information, see [Troubleshooting Interoperability](/dotnet/articles/visual-basic/programming-guide/com-interop/troubleshooting-interoperability).  
   
  Use safe windows.  
  The <xref:System.Security.Permissions.UIPermissionWindow> enumeration specifies the type of windows that code is allowed to use.  

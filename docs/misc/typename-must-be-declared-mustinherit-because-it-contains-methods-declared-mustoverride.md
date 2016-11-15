@@ -44,5 +44,5 @@ Types that contain `MustOverride` members must be declared `MustInherit`.
 -   Add the `MustInherit` modifier to the type.  
   
 ## See Also  
- [MustInherit](/dotnet/visual-basic/language-reference/modifiers/mustinherit)   
- [MustOverride](/dotnet/visual-basic/language-reference/modifiers/mustoverride)
+ [MustInherit](/dotnet/articles/visual-basic/language-reference/modifiers/mustinherit)   
+ [MustOverride](/dotnet/articles/visual-basic/language-reference/modifiers/mustoverride)

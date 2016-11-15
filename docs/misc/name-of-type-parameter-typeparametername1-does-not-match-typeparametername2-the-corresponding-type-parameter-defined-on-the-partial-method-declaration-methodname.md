@@ -59,5 +59,5 @@ End Sub
 -   Examine the type parameters to determine where they do not match. Change the names as necessary to make them the same.  
   
 ## See Also  
- [Partial Methods](/dotnet/visual-basic/language-reference/procedures/partial-methods)   
- [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures)
+ [Partial Methods](/dotnet/articles/visual-basic/language-reference/procedures/partial-methods)   
+ [Generic Procedures in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-procedures)

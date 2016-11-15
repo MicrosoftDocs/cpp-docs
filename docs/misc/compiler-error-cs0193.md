@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0193
 The * or -> operator must be applied to a pointer  
   
- The **\*** or **->** operator was used with a nonpointer type. For more information, see [Pointer types](/dotnet/csharp/programming-guide/unsafe-code-pointers/pointer-types).  
+ The **\*** or **->** operator was used with a nonpointer type. For more information, see [Pointer types](/dotnet/articles/csharp/programming-guide/unsafe-code-pointers/pointer-types).  
   
  The following sample generates CS0193:  
   

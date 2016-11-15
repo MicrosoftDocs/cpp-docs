@@ -44,4 +44,4 @@ Nested `For` loops must all use unique control variables.
 -   Change one of the control variable names.  
   
 ## See Also  
- [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)
+ [For...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-next-statement)

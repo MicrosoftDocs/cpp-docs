@@ -40,7 +40,7 @@ Invalid preprocessor expression
   
  The compiler encountered an invalid preprocessor expression.  
   
- For more information, see [Preprocessor Directives](/dotnet/csharp/language-reference/preprocessor-directives/index).  
+ For more information, see [Preprocessor Directives](/dotnet/articles/csharp/language-reference/preprocessor-directives/index).  
   
  The following sample shows some valid and invalid preprocessor expressions:  
   

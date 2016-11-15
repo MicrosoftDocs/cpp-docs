@@ -35,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Interface &#39;&lt;interfacename&gt;&#39; cannot inherit from itself: &lt;message&gt;
-An [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement) in an interface definition specifies its own interface.  
+An [Inherits Statement](/dotnet/articles/visual-basic/language-reference/statements/inherits-statement) in an interface definition specifies its own interface.  
   
  An interface can inherit from another interface, which provides it with all the members of the interface it inherits from, so it does not have to define those members again. Such an interface is called a *derived interface*, and the interface it inherits from is called the *base interface*.  
   
@@ -53,4 +53,4 @@ An [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inher
   
 ## See Also  
  [NOT IN BUILD: Inheritance in Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)   
- [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)
+ [Interfaces](/dotnet/articles/visual-basic/programming-guide/language-features/interfaces/index)

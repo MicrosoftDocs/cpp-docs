@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0026
 Keyword 'this' is not valid in a static property, static method, or static field initializer  
   
- The [this](/dotnet/csharp/language-reference/keywords/this) keyword refers to an object, which is an instance of a type. Since static methods are independent of any instance of the containing class, the "this" keyword is meaningless and is therefore not allowed. For more information, see [Static Classes and Static Class Members](/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members) and [Objects](/dotnet/csharp/programming-guide/classes-and-structs/objects).  
+ The [this](/dotnet/articles/csharp/language-reference/keywords/this) keyword refers to an object, which is an instance of a type. Since static methods are independent of any instance of the containing class, the "this" keyword is meaningless and is therefore not allowed. For more information, see [Static Classes and Static Class Members](/dotnet/articles/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members) and [Objects](/dotnet/articles/csharp/programming-guide/classes-and-structs/objects).  
   
 ## Example  
  The following example generates CS0026:  

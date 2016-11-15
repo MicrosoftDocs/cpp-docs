@@ -64,4 +64,4 @@ public class C<T> : A<T> where T : ClassConstraint
 ```  
   
 ## See Also  
- [Constraints on Type Parameters](/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters)
+ [Constraints on Type Parameters](/dotnet/articles/csharp/programming-guide/generics/constraints-on-type-parameters)

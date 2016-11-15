@@ -44,4 +44,4 @@ Events can accept arguments but cannot directly return values.
 -   Remove the return type from the `Event` statement.  
   
 ## See Also  
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

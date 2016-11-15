@@ -46,4 +46,4 @@ A field is declared as a type that cannot be represented by [!INCLUDE[vsprvs](..
 2.  Develop a new type that describes the data in the field.  
   
 ## See Also  
- [Data Types](/dotnet/visual-basic/language-reference/data-types/data-type-summary)
+ [Data Types](/dotnet/articles/visual-basic/language-reference/data-types/data-type-summary)

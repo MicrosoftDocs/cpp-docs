@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1025
 Single-line comment or end-of-line expected  
   
- A line with a [preprocessor directive](/dotnet/csharp/language-reference/preprocessor-directives/index) cannot have a multiline comment.  
+ A line with a [preprocessor directive](/dotnet/articles/csharp/language-reference/preprocessor-directives/index) cannot have a multiline comment.  
   
  The following sample generates CS1025:  
   

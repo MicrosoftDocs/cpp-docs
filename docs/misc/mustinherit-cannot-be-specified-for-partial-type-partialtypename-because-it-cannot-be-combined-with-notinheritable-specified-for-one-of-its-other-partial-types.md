@@ -48,7 +48,7 @@ A class is defined in multiple partial declarations, one of which specifies `Mus
 -   Decide whether the class should require inheritance, forbid inheritance, or neither, and remove the keywords that are inappropriate to your decision.  
   
 ## See Also  
- [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)   
- [MustInherit](/dotnet/visual-basic/language-reference/modifiers/mustinherit)   
- [NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)   
- [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
+ [Partial](/dotnet/articles/visual-basic/language-reference/modifiers/partial)   
+ [MustInherit](/dotnet/articles/visual-basic/language-reference/modifiers/mustinherit)   
+ [NotInheritable](/dotnet/articles/visual-basic/language-reference/modifiers/notinheritable)   
+ [Inheritance Basics](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

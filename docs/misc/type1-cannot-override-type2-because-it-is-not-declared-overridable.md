@@ -46,6 +46,6 @@ A member in a derived class overrides a base class member that is not marked wit
 2.  Use the `Shadows` keyword to shadow the item in the base class.  
   
 ## See Also  
- [Overridable](/dotnet/visual-basic/language-reference/modifiers/overridable)   
- [Overrides](/dotnet/visual-basic/language-reference/modifiers/overrides)   
- [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)
+ [Overridable](/dotnet/articles/visual-basic/language-reference/modifiers/overridable)   
+ [Overrides](/dotnet/articles/visual-basic/language-reference/modifiers/overrides)   
+ [Shadows](/dotnet/articles/visual-basic/language-reference/modifiers/shadows)

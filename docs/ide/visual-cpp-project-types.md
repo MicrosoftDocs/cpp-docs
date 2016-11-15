@@ -74,7 +74,7 @@ You can use a project template to create the basic program structure, menus, too
   
 |Project template|How to create a project|  
 |----------------------|-----------------------------|  
-|Empty Project|[Creating Solutions and Projects](/visual-studio/ide/creating-solutions-and-projects)|  
+|Empty Project|[Creating Solutions and Projects](/visualstudio/ide/creating-solutions-and-projects)|  
 |Custom Wizard|[Creating a Custom Wizard](../ide/creating-a-custom-wizard.md)|  
 |Makefile Project|[Creating a Makefile Project](../ide/creating-a-makefile-project.md)|  
   
@@ -90,7 +90,7 @@ You can use a project template to create the basic program structure, menus, too
   
 |Project template|How to create a project|  
 |----------------------|-----------------------------|  
-|Managed Test Project|[Create a unit test project](/visual-studio/test/create-a-unit-test-project)|  
+|Managed Test Project|[Create a unit test project](/visualstudio/test/create-a-unit-test-project)|  
 |Native Unit Test Project|[Unit testing native code with Test Explorer](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)|  
   
 ### Win32  

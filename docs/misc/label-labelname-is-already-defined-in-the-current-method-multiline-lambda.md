@@ -44,5 +44,5 @@ The label name is duplicated within the procedure. All names within a procedure 
 1.  Rename the duplicate label.  
   
 ## See Also  
- [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
+ [Declared Element Names](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
  [How to: Label Statements](../Topic/How%20to:%20Label%20Statements%20\(Visual%20Basic\).md)

@@ -56,7 +56,7 @@ A type parameter with a `Structure` constraint is used as the constraint for ano
 -   If both type parameters require the same value type, define the generic type with only one type parameter.  
   
 ## See Also  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [Type List](/dotnet/visual-basic/language-reference/statements/type-list)   
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Type List](/dotnet/articles/visual-basic/language-reference/statements/type-list)   
  [Structure (Visual Basic)](http://msdn.microsoft.com/en-us/263ce115-ac36-4c05-8cb7-0e0eead5c6d0)   
- [Value Types and Reference Types](/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)
+ [Value Types and Reference Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)

@@ -44,4 +44,4 @@ You have attempted to apply `Default` to more than one property name within a cl
 -   Remove all but one of the `Default` declarations.  
   
 ## See Also  
- [Default](/dotnet/visual-basic/language-reference/modifiers/default)
+ [Default](/dotnet/articles/visual-basic/language-reference/modifiers/default)

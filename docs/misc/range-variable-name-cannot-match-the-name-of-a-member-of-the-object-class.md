@@ -45,7 +45,7 @@ A range variable in a LINQ query matches the name of a member of the <xref:Syste
   
 ## See Also  
  <xref:System.Object>   
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [From Clause](/dotnet/visual-basic/language-reference/queries/from-clause)   
- [Aggregate Clause](/dotnet/visual-basic/language-reference/queries/aggregate-clause)   
- [Select Clause](/dotnet/visual-basic/language-reference/queries/select-clause)
+ [Introduction to LINQ in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [From Clause](/dotnet/articles/visual-basic/language-reference/queries/from-clause)   
+ [Aggregate Clause](/dotnet/articles/visual-basic/language-reference/queries/aggregate-clause)   
+ [Select Clause](/dotnet/articles/visual-basic/language-reference/queries/select-clause)

@@ -47,5 +47,5 @@ A generic type is invoked passing a type argument of <xref:System.Nullable%601> 
   
 ## See Also  
  <xref:System.Nullable%601>   
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
  [Structure (Visual Basic)](http://msdn.microsoft.com/en-us/263ce115-ac36-4c05-8cb7-0e0eead5c6d0)

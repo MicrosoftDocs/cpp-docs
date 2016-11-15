@@ -44,6 +44,6 @@ An unsupported character is included at the beginning of the name of an XML lite
 -   Remove the unsupported character from the beginning of the name of the XML literal or XML axis property.  
   
 ## See Also  
- [Names of Declared XML Elements and Attributes](/dotnet/visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes)   
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [Names of Declared XML Elements and Attributes](/dotnet/articles/visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes)   
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

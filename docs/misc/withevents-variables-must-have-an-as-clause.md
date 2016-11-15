@@ -45,4 +45,4 @@ You did not supply an `As` clause with the keyword `WithEvents`. Declare the var
   
 ## See Also  
  [NOT IN BUILD:WithEvents and the Handles Clause](http://msdn.microsoft.com/en-us/072b9cf6-6298-46f1-849e-4edc1631564c)   
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)

@@ -44,9 +44,9 @@ You must reference at least one range variable on both sides of the 'Equals' ope
  **Error ID:** BC36622  
   
 ## See Also  
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)   
- [Join Clause](/dotnet/visual-basic/language-reference/queries/join-clause)   
- [Group Join Clause](/dotnet/visual-basic/language-reference/queries/group-join-clause)   
- [From Clause](/dotnet/visual-basic/language-reference/queries/from-clause)   
- [Select Clause](/dotnet/visual-basic/language-reference/queries/select-clause)
+ [Introduction to LINQ in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/articles/visual-basic/programming-guide/language-features/linq/index)   
+ [Join Clause](/dotnet/articles/visual-basic/language-reference/queries/join-clause)   
+ [Group Join Clause](/dotnet/articles/visual-basic/language-reference/queries/group-join-clause)   
+ [From Clause](/dotnet/articles/visual-basic/language-reference/queries/from-clause)   
+ [Select Clause](/dotnet/articles/visual-basic/language-reference/queries/select-clause)

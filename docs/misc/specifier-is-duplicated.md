@@ -44,4 +44,4 @@ A keyword appears more than once in the same declaration.
 -   Remove duplicate appearances of the keyword from the declaration.  
   
 ## See Also  
- [Declared Elements](/dotnet/visual-basic/programming-guide/language-features/declared-elements/index)
+ [Declared Elements](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/index)

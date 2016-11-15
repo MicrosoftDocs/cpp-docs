@@ -44,6 +44,6 @@ translation.priority.mt:
 -   Remove the `Using` statement from the **Immediate** window.  
   
 ## See Also  
- [Using Statement](/dotnet/visual-basic/language-reference/statements/using-statement)   
- [Immediate Window](/visual-studio/ide/reference/immediate-window)   
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Using Statement](/dotnet/articles/visual-basic/language-reference/statements/using-statement)   
+ [Immediate Window](/visualstudio/ide/reference/immediate-window)   
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

@@ -52,5 +52,5 @@ Initialization is not allowed when multiple variables are declared on the same l
     ```  
   
 ## See Also  
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
- [Variable Declaration](/dotnet/visual-basic/programming-guide/language-features/variables/variable-declaration)
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)   
+ [Variable Declaration](/dotnet/articles/visual-basic/programming-guide/language-features/variables/variable-declaration)

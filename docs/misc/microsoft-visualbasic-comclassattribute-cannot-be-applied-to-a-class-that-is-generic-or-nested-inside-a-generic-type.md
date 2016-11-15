@@ -57,5 +57,5 @@ A class is declared with <xref:Microsoft.VisualBasic.ComClassAttribute>, but it 
   
 ## See Also  
  <xref:Microsoft.VisualBasic.ComClassAttribute>   
- [COM Interop](/dotnet/visual-basic/programming-guide/com-interop/index)   
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)
+ [COM Interop](/dotnet/articles/visual-basic/programming-guide/com-interop/index)   
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)

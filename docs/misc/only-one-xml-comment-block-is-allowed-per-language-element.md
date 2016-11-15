@@ -45,4 +45,4 @@ More than one XML comment block has been applied to a language element.
   
 ## See Also  
  [How to: Create XML Documentation](../Topic/How%20to:%20Create%20XML%20Documentation%20in%20Visual%20Basic.md)   
- [Documenting Your Code with XML](/dotnet/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)
+ [Documenting Your Code with XML](/dotnet/articles/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)

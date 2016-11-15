@@ -46,5 +46,5 @@ A statement attempts to convert an `AddressOf` expression to a type that is not 
 -   Change the target type to a delegate type.  
   
 ## See Also  
- [AddressOf Operator](/dotnet/visual-basic/language-reference/operators/addressof-operator)   
+ [AddressOf Operator](/dotnet/articles/visual-basic/language-reference/operators/addressof-operator)   
  [NOT IN BUILD: Delegates and the AddressOf Operator](http://msdn.microsoft.com/en-us/7b2ed932-8598-4355-b2f7-5cedb23ee86f)

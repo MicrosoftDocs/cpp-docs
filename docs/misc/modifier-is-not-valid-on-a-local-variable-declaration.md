@@ -44,4 +44,4 @@ A `Dim` statement inside a procedure contains an invalid keyword, such as `Overl
 -   Remove the invalid keyword from the `Dim` statement.  
   
 ## See Also  
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)

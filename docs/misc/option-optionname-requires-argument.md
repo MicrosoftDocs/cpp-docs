@@ -44,4 +44,4 @@ A required argument has been omitted.
 -   Supply the missing argument.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

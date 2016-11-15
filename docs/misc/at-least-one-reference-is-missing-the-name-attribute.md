@@ -52,4 +52,4 @@ Each reference must have an associated **Name** property, as seen below:
   
 ## See Also  
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
- [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)

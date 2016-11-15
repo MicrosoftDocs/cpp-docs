@@ -46,5 +46,5 @@ A `Const` statement does not properly initialize a constant, or an array declara
 2.  If the declaration specifies an array, check to see if a variable is being used to specify the number of elements. If so, replace the variable with a constant expression.  
   
 ## See Also  
- [Const Statement](/dotnet/visual-basic/language-reference/statements/const-statement)   
+ [Const Statement](/dotnet/articles/visual-basic/language-reference/statements/const-statement)   
  [NOTINBUILD  an Array Variable](http://msdn.microsoft.com/en-us/c2da78bd-6928-46ba-805f-44f819dfaf93)

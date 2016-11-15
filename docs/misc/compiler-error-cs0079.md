@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0079
 The event 'event' can only appear on the left hand side of += or -=  
   
- An [event](/dotnet/csharp/language-reference/keywords/event) was called incorrectly. For more information, see [Events](/dotnet/csharp/programming-guide/events/index) and [Delegates](/dotnet/csharp/programming-guide/delegates/index).  
+ An [event](/dotnet/articles/csharp/language-reference/keywords/event) was called incorrectly. For more information, see [Events](/dotnet/articles/csharp/programming-guide/events/index) and [Delegates](/dotnet/articles/csharp/programming-guide/delegates/index).  
   
  The following sample generates CS0079:  
   

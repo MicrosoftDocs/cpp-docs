@@ -46,5 +46,5 @@ If a property is declared as `ReadOnly`, it must supply a procedure for reading 
 2.  Verify that other procedures within the `Property` declaration are correctly terminated.  
   
 ## See Also  
- [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
- [Get Statement](/dotnet/visual-basic/language-reference/statements/get-statement)
+ [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement)   
+ [Get Statement](/dotnet/articles/visual-basic/language-reference/statements/get-statement)

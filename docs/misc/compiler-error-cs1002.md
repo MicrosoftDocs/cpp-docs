@@ -59,4 +59,4 @@ namespace x
 ```  
   
 ## See Also  
- [Statements](/dotnet/csharp/programming-guide/statements-expressions-operators/statements)
+ [Statements](/dotnet/articles/csharp/programming-guide/statements-expressions-operators/statements)

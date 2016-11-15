@@ -43,4 +43,4 @@ translation.priority.mt:
 -   Provide a value for at least one of the parameters `ApplicationFile` or `BootstrapperItems`.  
   
 ## See Also  
- [Product and Package Schema Reference](/visual-studio/deployment/product-and-package-schema-reference)
+ [Product and Package Schema Reference](/visualstudio/deployment/product-and-package-schema-reference)

@@ -44,5 +44,5 @@ An `End` statement must match the block it terminates. A `Function` procedure de
 -   Add an `End Function` statement to the end of the procedure.  
   
 ## See Also  
- [Function Procedures](/dotnet/visual-basic/language-reference/procedures/function-procedures)   
- [End Statement](/dotnet/visual-basic/language-reference/statements/end-statement)
+ [Function Procedures](/dotnet/articles/visual-basic/language-reference/procedures/function-procedures)   
+ [End Statement](/dotnet/articles/visual-basic/language-reference/statements/end-statement)

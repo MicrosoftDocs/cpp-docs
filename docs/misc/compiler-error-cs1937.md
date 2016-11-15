@@ -69,4 +69,4 @@ class Test
  The left side is generally called the "outer" side and the right is generally called the "inner" side.  
   
 ## See Also  
- [join clause](/dotnet/csharp/language-reference/keywords/join-clause)
+ [join clause](/dotnet/articles/csharp/language-reference/keywords/join-clause)

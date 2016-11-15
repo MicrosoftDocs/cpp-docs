@@ -46,5 +46,5 @@ A `Delegate` statement does not specify a `Sub` or `Function` procedure. The `Su
 2.  Specify a procedure name, argument list, and return type as appropriate.  
   
 ## See Also  
- [Delegate Statement](/dotnet/visual-basic/language-reference/statements/delegate-statement)   
- [Procedures](/dotnet/visual-basic/language-reference/procedures/index)
+ [Delegate Statement](/dotnet/articles/visual-basic/language-reference/statements/delegate-statement)   
+ [Procedures](/dotnet/articles/visual-basic/language-reference/procedures/index)

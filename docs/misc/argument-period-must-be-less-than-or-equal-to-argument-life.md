@@ -41,4 +41,4 @@ The value of the `Period` argument, which specifies the period for which asset d
 ## See Also  
  [NOT IN BUILD: DDB Function](http://msdn.microsoft.com/en-us/c7cf8929-d158-4399-b3cb-31d897d12556)   
  [NOT IN BUILD: SYD Function](http://msdn.microsoft.com/en-us/23c25672-f5dd-49ac-9893-4faa82634181)   
- [Passing Arguments by Value and by Reference](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)
+ [Passing Arguments by Value and by Reference](/dotnet/articles/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)

@@ -47,4 +47,4 @@ XML comment has a tag with a 'cref' attribute \<attribute> that could not be res
   
 ## See Also  
  [How to: Create XML Documentation](../Topic/How%20to:%20Create%20XML%20Documentation%20in%20Visual%20Basic.md)   
- [XML Comment Tags](/dotnet/visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments)
+ [XML Comment Tags](/dotnet/articles/visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments)

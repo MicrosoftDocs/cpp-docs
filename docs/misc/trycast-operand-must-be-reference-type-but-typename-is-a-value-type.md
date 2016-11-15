@@ -37,7 +37,7 @@ translation.priority.mt:
 # &#39;TryCast&#39; operand must be reference type, but &#39;&lt;typename&gt;&#39; is a value type
 The `TryCast` operator is used with a value type for at least one of the arguments.  
   
- `TryCast` tests for an inheritance or implementation relationship between the two arguments. Therefore, it allows only reference types for the arguments. For more information, see [Value Types and Reference Types](/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types).  
+ `TryCast` tests for an inheritance or implementation relationship between the two arguments. Therefore, it allows only reference types for the arguments. For more information, see [Value Types and Reference Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types).  
   
  **Error ID:** BC30792  
   
@@ -46,7 +46,7 @@ The `TryCast` operator is used with a value type for at least one of the argumen
 -   Use `DirectCast` or `CType` to perform the conversion. They both allow value types.  
   
 ## See Also  
- [TryCast Operator](/dotnet/visual-basic/language-reference/operators/trycast-operator)   
- [DirectCast Operator](/dotnet/visual-basic/language-reference/operators/directcast-operator)   
- [CType Function](/dotnet/visual-basic/language-reference/functions/ctype-function)   
- [Value Types and Reference Types](/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)
+ [TryCast Operator](/dotnet/articles/visual-basic/language-reference/operators/trycast-operator)   
+ [DirectCast Operator](/dotnet/articles/visual-basic/language-reference/operators/directcast-operator)   
+ [CType Function](/dotnet/articles/visual-basic/language-reference/functions/ctype-function)   
+ [Value Types and Reference Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)

@@ -72,5 +72,5 @@ End Module
     ```  
   
 ## See Also  
- [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
- [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures)
+ [Option Strict Statement](/dotnet/articles/visual-basic/language-reference/statements/option-strict-statement)   
+ [Generic Procedures in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-procedures)

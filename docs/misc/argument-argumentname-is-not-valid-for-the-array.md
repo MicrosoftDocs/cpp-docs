@@ -39,5 +39,5 @@ An array contains an argument that is not valid.
 -   Check the spelling of arguments in the expression. A misspelled variable name can implicitly create a numeric variable that is initialized to zero.  
   
 ## See Also  
- [Passing Arguments by Value and by Reference](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)   
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)
+ [Passing Arguments by Value and by Reference](/dotnet/articles/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)   
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)

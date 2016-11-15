@@ -39,4 +39,4 @@ translation.priority.mt:
  This warning is generated when the build process detects that the application tried to redirect some of its assemblies to another version inside the app.config file. This will not work for partially trusted applications.  
   
 ## See Also  
- [Product and Package Schema Reference](/visual-studio/deployment/product-and-package-schema-reference)
+ [Product and Package Schema Reference](/visualstudio/deployment/product-and-package-schema-reference)

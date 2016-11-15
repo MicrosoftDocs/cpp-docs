@@ -44,5 +44,5 @@ translation.priority.mt:
 1.  Remove `AddressOf` statements from debugging code.  
   
 ## See Also  
- [AddressOf Operator](/dotnet/visual-basic/language-reference/operators/addressof-operator)   
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [AddressOf Operator](/dotnet/articles/visual-basic/language-reference/operators/addressof-operator)   
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

@@ -43,4 +43,4 @@ translation.priority.mt:
 -   Go to **Control Panel**, select **Add or Remove Programs**, and repair the Visual Studio SDK, or copy the files to the appropriate directory (\<SDK install path>\bootstrapper\engine\\<culture\>\setup.xml).  
   
 ## See Also  
- [Product and Package Schema Reference](/visual-studio/deployment/product-and-package-schema-reference)
+ [Product and Package Schema Reference](/visualstudio/deployment/product-and-package-schema-reference)

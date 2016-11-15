@@ -44,5 +44,5 @@ translation.priority.mt:
 -   Remove `Throw` statements from debugging code.  
   
 ## See Also  
- [Throw Statement](/dotnet/visual-basic/language-reference/statements/throw-statement)   
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Throw Statement](/dotnet/articles/visual-basic/language-reference/statements/throw-statement)   
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

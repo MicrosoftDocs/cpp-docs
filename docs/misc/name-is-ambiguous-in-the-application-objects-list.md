@@ -44,4 +44,4 @@ You have provided a name that is ambiguous and therefore conflicts with another 
 -   Fully qualify the name.  
   
 ## See Also  
- [Namespace Statement](/dotnet/visual-basic/language-reference/statements/namespace-statement)
+ [Namespace Statement](/dotnet/articles/visual-basic/language-reference/statements/namespace-statement)

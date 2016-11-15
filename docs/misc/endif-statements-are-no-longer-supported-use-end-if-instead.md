@@ -44,4 +44,4 @@ The `EndIf` statement is no longer supported.
 -   Use `End If` to terminate `If` statements.  
   
 ## See Also  
- [If...Then...Else Statement](/dotnet/visual-basic/language-reference/statements/if-then-else-statement)
+ [If...Then...Else Statement](/dotnet/articles/visual-basic/language-reference/statements/if-then-else-statement)

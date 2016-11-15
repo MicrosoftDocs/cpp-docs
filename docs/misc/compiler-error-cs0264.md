@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0264
 Partial declarations of 'type' must have the same type parameter names in the same order  
   
- This error occurs if you are defining a generic type in partial declarations and the type parameters are not consistent in name or order throughout all of the partial declarations. To get rid of this error, check the type parameters for each partial declaration and make sure the same name and order of parameters is used. For more information, see [Partial Classes and Methods](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).and [Generic Type Parameters](/dotnet/csharp/programming-guide/generics/generic-type-parameters).  
+ This error occurs if you are defining a generic type in partial declarations and the type parameters are not consistent in name or order throughout all of the partial declarations. To get rid of this error, check the type parameters for each partial declaration and make sure the same name and order of parameters is used. For more information, see [Partial Classes and Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).and [Generic Type Parameters](/dotnet/articles/csharp/programming-guide/generics/generic-type-parameters).  
   
 ## Example  
  The following example generates CS0264.  

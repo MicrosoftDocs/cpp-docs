@@ -45,4 +45,4 @@ Unexpected fatal error -- 'error'.
 1.  Recompile another project. If you receive the same error, try reinstalling Visual Studio. If you receive this error, send an error report to Microsoft.  
   
 ## See Also  
- [/errorreport (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)
+ [/errorreport (C# Compiler Options)](/dotnet/articles/csharp/language-reference/compiler-options/errorreport-compiler-option)

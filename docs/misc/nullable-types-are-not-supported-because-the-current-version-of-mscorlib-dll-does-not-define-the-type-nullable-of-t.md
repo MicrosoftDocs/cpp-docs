@@ -40,4 +40,4 @@ The framework version you are using does not support nullable types.
  **Error ID:** BC32130  
   
 ## See Also  
- [Nullable Value Types](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)
+ [Nullable Value Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

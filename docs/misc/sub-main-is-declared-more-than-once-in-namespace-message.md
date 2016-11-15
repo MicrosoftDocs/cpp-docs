@@ -44,4 +44,4 @@ translation.priority.mt:
 -   Make sure there is only a single `Sub Main` procedure in your project.  
   
 ## See Also  
- [Procedures](/dotnet/visual-basic/language-reference/procedures/index)
+ [Procedures](/dotnet/articles/visual-basic/language-reference/procedures/index)

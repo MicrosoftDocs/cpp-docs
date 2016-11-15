@@ -44,5 +44,5 @@ An attribute specified for an XML element literal matches that of an attribute t
 -   Rename the attribute to a name that is unique for the XML element literal.  
   
 ## See Also  
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

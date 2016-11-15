@@ -53,7 +53,7 @@ A comparison operator other than `And` has been used to combine two or more `Equ
   
 ## See Also  
  [How to: Combine Data with Joins](../Topic/How%20to:%20Combine%20Data%20with%20LINQ%20by%20Using%20Joins%20\(Visual%20Basic\).md)   
- [Join Clause](/dotnet/visual-basic/language-reference/queries/join-clause)   
- [Group Join Clause](/dotnet/visual-basic/language-reference/queries/group-join-clause)   
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)
+ [Join Clause](/dotnet/articles/visual-basic/language-reference/queries/join-clause)   
+ [Group Join Clause](/dotnet/articles/visual-basic/language-reference/queries/group-join-clause)   
+ [Introduction to LINQ in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/articles/visual-basic/programming-guide/language-features/linq/index)

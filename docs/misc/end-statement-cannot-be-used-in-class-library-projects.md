@@ -44,4 +44,4 @@ Class library projects used to create DLLs do not allow the use of the `End` key
 -   Use control structures such as `While` and `For` to control the flow of program execution.  
   
 ## See Also  
- [Control Flow](/dotnet/visual-basic/programming-guide/language-features/control-flow/index)
+ [Control Flow](/dotnet/articles/visual-basic/programming-guide/language-features/control-flow/index)

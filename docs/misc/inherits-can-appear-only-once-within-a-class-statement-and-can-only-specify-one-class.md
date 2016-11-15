@@ -44,5 +44,5 @@ More than one `Inherits` statement appears in the same class, or an `Inherits` s
 -   Remove any extra `Inherits` statements and make sure the remaining `Inherits` statement specifies only one base class.  
   
 ## See Also  
- [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement)   
- [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
+ [Inherits Statement](/dotnet/articles/visual-basic/language-reference/statements/inherits-statement)   
+ [Inheritance Basics](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

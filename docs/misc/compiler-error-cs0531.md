@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0531
 'member' : interface members cannot have a definition  
   
- Methods that are declared in an [interface](/dotnet/csharp/language-reference/keywords/interface) must be implemented in a class that inherits from it and not in the interface itself.  
+ Methods that are declared in an [interface](/dotnet/articles/csharp/language-reference/keywords/interface) must be implemented in a class that inherits from it and not in the interface itself.  
   
  The following sample generates CS0531:  
   

@@ -46,4 +46,4 @@ One of the indexes exceeds the range defined.
 -   Redefine the array to allow a wider range of values.  
   
 ## See Also  
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)

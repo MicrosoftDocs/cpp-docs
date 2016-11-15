@@ -39,7 +39,7 @@ translation.priority.mt:
   
  The `Class_Initialize` event of previous versions of [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] is replaced by class constructors.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42001  
   

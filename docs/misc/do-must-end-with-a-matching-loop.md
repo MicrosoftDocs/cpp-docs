@@ -46,4 +46,4 @@ A `Do` statement occurs without a corresponding `Loop` statement. A `Loop` state
 -   Add a `Loop` statement to the end of the `Do` loop.  
   
 ## See Also  
- [Do...Loop Statement](/dotnet/visual-basic/language-reference/statements/do-loop-statement)
+ [Do...Loop Statement](/dotnet/articles/visual-basic/language-reference/statements/do-loop-statement)

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1510
 A ref or out argument must be an assignable variable  
   
- Only a variable can be passed as a [ref](/dotnet/csharp/language-reference/keywords/ref) parameter in a method call. A `ref` value is like passing a pointer.  
+ Only a variable can be passed as a [ref](/dotnet/articles/csharp/language-reference/keywords/ref) parameter in a method call. A `ref` value is like passing a pointer.  
   
 ## Example  
  The following sample generates CS1510:  

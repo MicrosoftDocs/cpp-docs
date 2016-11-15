@@ -44,8 +44,8 @@ The `Group` keyword is included in the `Into` section of an `Aggregate` clause. 
 -   Remove the `Group` keyword from the `Aggregate` clause. You can add a `Group By` clause to the query to group results.  
   
 ## See Also  
- [Aggregate Clause](/dotnet/visual-basic/language-reference/queries/aggregate-clause)   
- [Group By Clause](/dotnet/visual-basic/language-reference/queries/group-by-clause)   
- [Group Join Clause](/dotnet/visual-basic/language-reference/queries/group-join-clause)   
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)
+ [Aggregate Clause](/dotnet/articles/visual-basic/language-reference/queries/aggregate-clause)   
+ [Group By Clause](/dotnet/articles/visual-basic/language-reference/queries/group-by-clause)   
+ [Group Join Clause](/dotnet/articles/visual-basic/language-reference/queries/group-join-clause)   
+ [Introduction to LINQ in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/articles/visual-basic/programming-guide/language-features/linq/index)

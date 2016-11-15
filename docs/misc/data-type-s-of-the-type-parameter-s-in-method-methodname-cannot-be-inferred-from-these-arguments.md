@@ -72,5 +72,5 @@ End Interface
 -   You may be able to specify a data type for the type parameter or parameters instead of relying on type inference.  
   
 ## See Also  
- [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures)   
- [Type Conversions in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/type-conversions)
+ [Generic Procedures in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-procedures)   
+ [Type Conversions in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/type-conversions)

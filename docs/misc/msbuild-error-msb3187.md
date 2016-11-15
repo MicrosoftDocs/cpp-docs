@@ -43,5 +43,5 @@ translation.priority.mt:
 -   Make sure that the application's target platform (processor architecture) matches all referenced assemblies and the entry point assembly architecture.  
   
 ## See Also  
- [Advanced Compiler Settings Dialog Box (Visual Basic)](/visual-studio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic)   
- [Build Page, Project Designer (C#)](/visual-studio/ide/reference/build-page-project-designer-csharp)
+ [Advanced Compiler Settings Dialog Box (Visual Basic)](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic)   
+ [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp)

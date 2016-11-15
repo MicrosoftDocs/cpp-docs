@@ -39,5 +39,5 @@ This error generally occurs when the **Title** field within the **External Tools
 1.  Enter a name for the new external tool in the **Title** text box.  
   
 ## See Also  
- [Managing External Tools](/visual-studio/ide/managing-external-tools)   
+ [Managing External Tools](/visualstudio/ide/managing-external-tools)   
  [Arguments for External Tools](../misc/arguments-for-external-tools.md)

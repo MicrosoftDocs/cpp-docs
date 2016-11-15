@@ -50,7 +50,7 @@ Use this dialog box to specify advanced options for [Mt.exe](http://msdn.microso
   
 ## See Also  
  [\<file> Element](../Topic/%3Cfile%3E%20Element%20\(ClickOnce%20Application\).md)   
- [ClickOnce Application Manifest](/visual-studio/deployment/clickonce-application-manifest)   
+ [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)   
  [Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)   
  [How to: Open Project Property Pages](../misc/how-to-open-project-property-pages.md)   
  [How to: Edit Project Property Sheets](../misc/how-to-edit-project-property-sheets.md)

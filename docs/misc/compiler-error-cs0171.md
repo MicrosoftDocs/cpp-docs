@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0171
 Backing field for automatically implemented property 'name' must be fully assigned before control is returned to the caller. Consider calling the default constructor from a constructor initializer.  
   
- A constructor in a [struct](/dotnet/csharp/language-reference/keywords/struct) must initialize all fields in the struct. For more information, see [Constructors](/dotnet/csharp/programming-guide/classes-and-structs/constructors).  
+ A constructor in a [struct](/dotnet/articles/csharp/language-reference/keywords/struct) must initialize all fields in the struct. For more information, see [Constructors](/dotnet/articles/csharp/programming-guide/classes-and-structs/constructors).  
   
  The following sample generates CS0171:  
   

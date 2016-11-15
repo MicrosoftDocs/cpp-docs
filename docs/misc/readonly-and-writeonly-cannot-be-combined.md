@@ -44,5 +44,5 @@ The `ReadOnly` and `WriteOnly` modifiers are mutually exclusive.
 -   Specify either `ReadOnly` or `WriteOnly`, but not both.  
   
 ## See Also  
- [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)   
- [WriteOnly](/dotnet/visual-basic/language-reference/modifiers/writeonly)
+ [ReadOnly](/dotnet/articles/visual-basic/language-reference/modifiers/readonly)   
+ [WriteOnly](/dotnet/articles/visual-basic/language-reference/modifiers/writeonly)

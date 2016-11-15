@@ -46,5 +46,5 @@ Unlike classes, structures do not support inheritance.
 -   Redesign your application to use classes instead.  
   
 ## See Also  
- [Structures](/dotnet/visual-basic/programming-guide/language-features/data-types/structures)   
- [Structures and Classes](/dotnet/visual-basic/programming-guide/language-features/data-types/structures-and-classes)
+ [Structures](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures)   
+ [Structures and Classes](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures-and-classes)

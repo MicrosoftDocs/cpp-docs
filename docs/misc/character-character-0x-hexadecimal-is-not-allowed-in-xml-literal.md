@@ -44,5 +44,5 @@ An unsupported character has been used in an XML literal.
 -   Remove the unsupported character.  
   
 ## See Also  
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

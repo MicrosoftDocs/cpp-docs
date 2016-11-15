@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0054
 Inconsistent accessibility: indexer return type 'type' is less accessible than indexer 'indexer'  
   
- A public construct must return a publicly accessible object. For more information, see [Access Modifiers](/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers).  
+ A public construct must return a publicly accessible object. For more information, see [Access Modifiers](/dotnet/articles/csharp/programming-guide/classes-and-structs/access-modifiers).  
   
  The following sample generates CS0054:  
   

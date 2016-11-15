@@ -44,6 +44,6 @@ You attempted to combine `Sub New` with `Handles`, which is invalid. Use the `Ha
 1.  Do not use `New` in this context.  
   
 ## See Also  
- [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause)   
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
- [WithEvents](/dotnet/visual-basic/language-reference/modifiers/withevents)
+ [Handles](/dotnet/articles/visual-basic/language-reference/statements/handles-clause)   
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)   
+ [WithEvents](/dotnet/articles/visual-basic/language-reference/modifiers/withevents)

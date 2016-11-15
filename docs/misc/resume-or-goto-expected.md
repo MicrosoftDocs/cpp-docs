@@ -44,6 +44,6 @@ An `On Error` statement does not contain either a `Resume` clause or a `GoTo` cl
 -   Add either a `Resume` clause or a `GoTo` clause to the `On Error` statement.  
   
 ## See Also  
- [On Error Statement](/dotnet/visual-basic/language-reference/statements/on-error-statement)   
- [Resume Statement](/dotnet/visual-basic/language-reference/statements/resume-statement)   
- [GoTo Statement](/dotnet/visual-basic/language-reference/statements/goto-statement)
+ [On Error Statement](/dotnet/articles/visual-basic/language-reference/statements/on-error-statement)   
+ [Resume Statement](/dotnet/articles/visual-basic/language-reference/statements/resume-statement)   
+ [GoTo Statement](/dotnet/articles/visual-basic/language-reference/statements/goto-statement)

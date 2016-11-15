@@ -41,6 +41,6 @@ This error occurs when you try to open the application definition file, but it i
 -   Re-create the application definition file.  
   
 ## See Also  
- [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)   
+ [Additional Resources](/visualstudio/msbuild/additional-msbuild-resources)   
  [The application definition file is already opened in an incompatible editor](../misc/the-application-definition-file-is-already-opened-in-an-incompatible-editor.md)   
  [An error occurred trying to create the application events file. '\<error>'](../misc/an-error-occurred-trying-to-create-the-application-events-file-error.md)

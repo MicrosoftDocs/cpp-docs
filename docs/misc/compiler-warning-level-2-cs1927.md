@@ -64,5 +64,5 @@ class ManifestWithModule
 ```  
   
 ## See Also  
- [/win32manifest (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/win32manifest-compiler-option)   
+ [/win32manifest (C# Compiler Options)](/dotnet/articles/csharp/language-reference/compiler-options/win32manifest-compiler-option)   
  [/target:module (C# Compiler Options)](../Topic/-target:module%20\(C%23%20Compiler%20Options\).md)

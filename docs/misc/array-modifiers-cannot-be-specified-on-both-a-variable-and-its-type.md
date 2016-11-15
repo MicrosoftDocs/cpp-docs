@@ -44,4 +44,4 @@ Array modifiers are present on both the variable and its type, indicating an arr
 -   Remove the array modifier from the type specifier.  
   
 ## See Also  
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)

@@ -35,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # XML attributes cannot be selected from type &#39;type&#39;
-An XML attribute has been referenced for an object that is not of type <xref:System.Xml.Linq.XElement> or `IEnumerable(Of XElement)`. For more information, see [XML Attribute Axis Property](/dotnet/visual-basic/language-reference/xml-axis/xml-attribute-axis-property).  
+An XML attribute has been referenced for an object that is not of type <xref:System.Xml.Linq.XElement> or `IEnumerable(Of XElement)`. For more information, see [XML Attribute Axis Property](/dotnet/articles/visual-basic/language-reference/xml-axis/xml-attribute-axis-property).  
   
 ```vb#  
 ' Generates an error.  
@@ -54,6 +54,6 @@ Dim var = "sample text".@attr
     ```  
   
 ## See Also  
- [XML Attribute Axis Property](/dotnet/visual-basic/language-reference/xml-axis/xml-attribute-axis-property)   
- [XML Axis Properties](/dotnet/visual-basic/language-reference/xml-axis/xml-axis-properties)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [XML Attribute Axis Property](/dotnet/articles/visual-basic/language-reference/xml-axis/xml-attribute-axis-property)   
+ [XML Axis Properties](/dotnet/articles/visual-basic/language-reference/xml-axis/xml-axis-properties)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

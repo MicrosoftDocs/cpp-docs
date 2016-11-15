@@ -56,7 +56,7 @@ Dim person = New With {.Name ="Mike Nash", .Age = 27}
 -   Change the declaration so that `With` or a type name follows `New`.  
   
 ## See Also  
- [Anonymous Types](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types)   
+ [Anonymous Types](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types)   
  [Object Initializers: Named and Anonymous Types](../Topic/Object%20Initializers:%20Named%20and%20Anonymous%20Types%20\(Visual%20Basic\).md)   
- [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator)   
+ [New Operator](/dotnet/articles/visual-basic/language-reference/operators/new-operator)   
  [NotInBuild:Declaration Statements in Visual Basic](http://msdn.microsoft.com/en-us/81f3c398-f45c-4d95-80bf-aa39d1a0fb30)

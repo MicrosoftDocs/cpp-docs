@@ -44,6 +44,6 @@ translation.priority.mt:
 -   Remove `Exit` statements from the debugging code.  
   
 ## See Also  
- [Exit Statement](/dotnet/visual-basic/language-reference/statements/exit-statement)   
- [End Statement](/dotnet/visual-basic/language-reference/statements/end-statement)   
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Exit Statement](/dotnet/articles/visual-basic/language-reference/statements/exit-statement)   
+ [End Statement](/dotnet/articles/visual-basic/language-reference/statements/end-statement)   
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

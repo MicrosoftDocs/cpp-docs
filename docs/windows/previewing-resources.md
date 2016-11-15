@@ -62,7 +62,7 @@ Previewing your resources allows you to view graphical resource without opening 
   
      **Note** If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  In the [Properties window](/visual-studio/ide/reference/properties-window), click the **Property Pages** button.  
+2.  In the [Properties window](/visualstudio/ide/reference/properties-window), click the **Property Pages** button.  
   
      \- or -  
   

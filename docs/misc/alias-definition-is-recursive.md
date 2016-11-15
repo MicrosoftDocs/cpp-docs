@@ -44,5 +44,5 @@ This error generally occurs when an alias has been defined that directly or indi
 2.  Review the current list of aliases and their definitions by entering `>alias` in the **Command** window and try again.  
   
 ## See Also  
- [Alias Command](/visual-studio/ide/reference/alias-command)   
- [Visual Studio Command Aliases](/visual-studio/ide/reference/visual-studio-command-aliases)
+ [Alias Command](/visualstudio/ide/reference/alias-command)   
+ [Visual Studio Command Aliases](/visualstudio/ide/reference/visual-studio-command-aliases)

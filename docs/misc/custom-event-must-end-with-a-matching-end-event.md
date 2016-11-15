@@ -44,4 +44,4 @@ A `Custom Event` declaration must end with an `End Event` statement.
 -   Check that the `Custom Event` declaration ends with an `End Event` statement.  
   
 ## See Also  
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

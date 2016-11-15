@@ -44,4 +44,4 @@ You cannot branch into a `SyncLock` block.
 -   Restructure your code so that the label precedes the `SyncLock` block.  
   
 ## See Also  
- [SyncLock Statement](/dotnet/visual-basic/language-reference/statements/synclock-statement)
+ [SyncLock Statement](/dotnet/articles/visual-basic/language-reference/statements/synclock-statement)

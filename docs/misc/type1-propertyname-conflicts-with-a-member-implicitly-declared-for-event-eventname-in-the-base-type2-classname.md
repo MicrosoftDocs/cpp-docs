@@ -37,7 +37,7 @@ translation.priority.mt:
 # &lt;type1&gt; &#39;&lt;propertyname&gt;&#39; conflicts with a member implicitly declared for event &#39;&lt;eventname&gt;&#39; in the base &lt;type2&gt; &#39;&lt;classname&gt;&#39;
 A property is declared with the same name as an implicit member formed from an event in the base class. For example, if the base class defines an event named `Event1`, the compiler generates the implicit procedures `add_Event1` and `remove_Event1`. If the property in this class has one of these names, it should shadow the base class member.  
   
- This message is a warning. `Shadows` is assumed by default. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ This message is a warning. `Shadows` is assumed by default. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40014  
   
@@ -48,7 +48,7 @@ A property is declared with the same name as an implicit member formed from an e
 2.  If you do not intend to hide the base class member, change the property name.  
   
 ## See Also  
- [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)   
- [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)   
- [Shadowing in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/shadowing)
+ [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)   
+ [Shadows](/dotnet/articles/visual-basic/language-reference/modifiers/shadows)   
+ [Shadowing in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/shadowing)

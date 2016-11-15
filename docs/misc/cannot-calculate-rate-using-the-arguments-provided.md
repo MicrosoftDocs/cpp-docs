@@ -41,4 +41,4 @@ The rate calculation does not contain the required arguments.
 2.  Check previous operations on variables in the expression, especially those passed into the procedure as arguments from other procedures.  
   
 ## See Also  
- [Financial Summary](/dotnet/visual-basic/language-reference/keywords/financial-summary)
+ [Financial Summary](/dotnet/articles/visual-basic/language-reference/keywords/financial-summary)

@@ -42,4 +42,4 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # Kinds of Windows
-This content has moved to [Customizing window layouts](/visual-studio/ide/customizing-window-layouts-in-visual-studio)
+This content has moved to [Customizing window layouts](/visualstudio/ide/customizing-window-layouts-in-visual-studio)

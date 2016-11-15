@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0220
 The operation overflows at compile time in checked mode  
   
- An operation was detected by [checked](/dotnet/csharp/language-reference/keywords/checked), which is the default, and a data loss resulted. Either correct the inputs to the assignment or use [unchecked](/dotnet/csharp/language-reference/keywords/unchecked) to resolve this error. For more information, see [Checked and Unchecked](/dotnet/csharp/language-reference/keywords/checked-and-unchecked).  
+ An operation was detected by [checked](/dotnet/articles/csharp/language-reference/keywords/checked), which is the default, and a data loss resulted. Either correct the inputs to the assignment or use [unchecked](/dotnet/articles/csharp/language-reference/keywords/unchecked) to resolve this error. For more information, see [Checked and Unchecked](/dotnet/articles/csharp/language-reference/keywords/checked-and-unchecked).  
   
  The following sample generates CS0220:  
   

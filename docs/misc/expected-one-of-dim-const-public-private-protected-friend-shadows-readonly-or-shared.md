@@ -46,5 +46,5 @@ A declaration statement is missing a declaration keyword. One possible cause is 
 2.  Start the statement with the appropriate declaration keyword.  
   
 ## See Also  
- [Declared Elements](/dotnet/visual-basic/programming-guide/language-features/declared-elements/index)   
+ [Declared Elements](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/index)   
  [Arrays cannot be declared with 'New'](../misc/arrays-cannot-be-declared-with-new.md)

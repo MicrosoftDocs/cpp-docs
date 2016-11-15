@@ -44,4 +44,4 @@ In evaluating this expression, you attempted to divide a number by zero.
 1.  Check your constant and variable values to determine how zero occurs in your expression's denominator.  
   
 ## See Also  
- [Assignment Operators](/dotnet/visual-basic/language-reference/operators/assignment-operators)
+ [Assignment Operators](/dotnet/articles/visual-basic/language-reference/operators/assignment-operators)

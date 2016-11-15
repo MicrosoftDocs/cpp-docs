@@ -44,5 +44,5 @@ A partial method definition cannot implement an interface or interface member.
 1.  Remove the `Implements` statement from the partial method definition.  
   
 ## See Also  
- [Partial Methods](/dotnet/visual-basic/language-reference/procedures/partial-methods)   
+ [Partial Methods](/dotnet/articles/visual-basic/language-reference/procedures/partial-methods)   
  [NOT IN BUILD: Implements Keyword and Implements Statement](http://msdn.microsoft.com/en-us/b96560f7-6413-480f-a1e2-f80253bab5be)

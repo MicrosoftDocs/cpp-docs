@@ -46,4 +46,4 @@ The specified library could not be found.
 -   Check the library name to make sure it is correct.  
   
 ## See Also  
- [Debugger Basics](/visual-studio/debugger/debugger-basics)
+ [Debugger Basics](/visualstudio/debugger/debugger-basics)

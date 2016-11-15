@@ -22,4 +22,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Displaying Properties of Related Elements - redirection
-This topic has been replaced. Please go to [Customizing the Properties Window](/visual-studio/modeling/customizing-the-properties-window).
+This topic has been replaced. Please go to [Customizing the Properties Window](/visualstudio/modeling/customizing-the-properties-window).

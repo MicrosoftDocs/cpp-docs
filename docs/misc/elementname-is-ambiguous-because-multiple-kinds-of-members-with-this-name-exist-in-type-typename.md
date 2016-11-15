@@ -39,7 +39,7 @@ An expression accesses a programming element defined in a class, structure, modu
   
  The most likely cause of this error is *case sensitivity*. Visual Basic names are case-insensitive, which means you can capitalize them differently at different places in your code. For example, if you define a variable with the name `XYZ` and later access it as `xyz`, the compiler considers the two names to be equivalent.  
   
- However, other languages, such as [C#](/dotnet/csharp/csharp) and [Visual C++](../top/visual-cpp-in-visual-studio.md), are case-sensitive. In such a language, `XYZ` and `xyz` are not considered to be the same name. Therefore, a class written in such a language could define a variable named `XYZ` and a property named `xyz`. The common language runtime (CLR) preserves case sensitivity in assemblies. However, if a Visual Basic application accesses an assembly with names `XYZ` and `xyz`, they appear as the same name.  
+ However, other languages, such as [C#](/dotnet/articles/csharp/csharp) and [Visual C++](../top/visual-cpp-in-visual-studio.md), are case-sensitive. In such a language, `XYZ` and `xyz` are not considered to be the same name. Therefore, a class written in such a language could define a variable named `XYZ` and a property named `xyz`. The common language runtime (CLR) preserves case sensitivity in assemblies. However, if a Visual Basic application accesses an assembly with names `XYZ` and `xyz`, they appear as the same name.  
   
  **Error ID:** BC31429  
   
@@ -50,6 +50,6 @@ An expression accesses a programming element defined in a class, structure, modu
 2.  If you cannot rename the members in the defining type, remove the cited programming element from your code. You cannot access an element that appears to Visual Basic to have multiple definitions.  
   
 ## See Also  
- [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
- [Troubleshooting Variables](/dotnet/visual-basic/programming-guide/language-features/variables/troubleshooting-variables)   
+ [Declared Element Names](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
+ [Troubleshooting Variables](/dotnet/articles/visual-basic/programming-guide/language-features/variables/troubleshooting-variables)   
  [Common Language Runtime](../Topic/Common%20Language%20Runtime%20\(CLR\).md)

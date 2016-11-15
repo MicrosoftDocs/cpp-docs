@@ -39,4 +39,4 @@ You are trying to connect to a remote server that is unavailable or does not exi
 -   Reconnect to the network and try again.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

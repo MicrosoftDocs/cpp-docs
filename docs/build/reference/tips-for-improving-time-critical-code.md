@@ -148,7 +148,7 @@ Writing fast code requires understanding all aspects of your application and how
   
  In some cases, however, using the default heap can reduce locality of reference. Use Process Viewer, Spy++, or Performance Monitor to measure the effects of moving objects from heap to heap.  
   
- Measure your heaps so you can account for every allocation on the heap. Use the C run-time [debug heap routines](/visual-studio/debugger/crt-debug-heap-details) to checkpoint and dump your heap. You can read the output into a spreadsheet program like Microsoft Excel and use pivot tables to view the results. Note the total number, size, and distribution of allocations. Compare these with the size of working sets. Also look at the clustering of related-sized objects.  
+ Measure your heaps so you can account for every allocation on the heap. Use the C run-time [debug heap routines](/visualstudio/debugger/crt-debug-heap-details) to checkpoint and dump your heap. You can read the output into a spreadsheet program like Microsoft Excel and use pivot tables to view the results. Note the total number, size, and distribution of allocations. Compare these with the size of working sets. Also look at the clustering of related-sized objects.  
   
  You can also use the performance counters to monitor memory usage.  
   

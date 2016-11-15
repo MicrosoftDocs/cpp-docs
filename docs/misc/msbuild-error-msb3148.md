@@ -43,4 +43,4 @@ translation.priority.mt:
 -   Make sure that `OutputPath` is not blank, or that it is not included in the project file.  
   
 ## See Also  
- [Product and Package Schema Reference](/visual-studio/deployment/product-and-package-schema-reference)
+ [Product and Package Schema Reference](/visualstudio/deployment/product-and-package-schema-reference)

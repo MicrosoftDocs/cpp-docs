@@ -44,4 +44,4 @@ You have tried to assign a value to a property that is declared `ReadOnly`.
 -   Remove the `ReadOnly` specifier from the property declaration.  
   
 ## See Also  
- [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)
+ [ReadOnly](/dotnet/articles/visual-basic/language-reference/modifiers/readonly)

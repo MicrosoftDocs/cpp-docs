@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0213
 You cannot use the fixed statement to take the address of an already fixed expression  
   
- A local variable in an [unsafe](/dotnet/csharp/language-reference/keywords/unsafe) method or a parameter is already fixed (on the stack), so you cannot take the address of either of these two variables in a [fixed](/dotnet/csharp/language-reference/keywords/fixed-statement) expression. For more information, see [Unsafe Code and Pointers](/dotnet/csharp/programming-guide/unsafe-code-pointers/index).  
+ A local variable in an [unsafe](/dotnet/articles/csharp/language-reference/keywords/unsafe) method or a parameter is already fixed (on the stack), so you cannot take the address of either of these two variables in a [fixed](/dotnet/articles/csharp/language-reference/keywords/fixed-statement) expression. For more information, see [Unsafe Code and Pointers](/dotnet/articles/csharp/programming-guide/unsafe-code-pointers/index).  
   
 ## Example  
  The following sample generates CS0213.  

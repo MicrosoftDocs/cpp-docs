@@ -40,7 +40,7 @@ translation.priority.mt:
   
  The implementation of a property in a derived class contains an accessor that was not specified in the base interface.  
   
- For more information, see [Using Properties](/dotnet/csharp/programming-guide/classes-and-structs/using-properties).  
+ For more information, see [Using Properties](/dotnet/articles/csharp/programming-guide/classes-and-structs/using-properties).  
   
 ## Example  
  The following sample generates CS0550.  

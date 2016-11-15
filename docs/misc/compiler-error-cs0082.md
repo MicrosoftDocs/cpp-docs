@@ -71,4 +71,4 @@ class MyClass
 ```  
   
 ## See Also  
- [Properties](/dotnet/csharp/programming-guide/classes-and-structs/properties)
+ [Properties](/dotnet/articles/csharp/programming-guide/classes-and-structs/properties)

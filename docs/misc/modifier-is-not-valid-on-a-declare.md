@@ -44,4 +44,4 @@ A `Declare` statement contains an invalid keyword, such as `ReadOnly`.
 -   Remove the invalid keyword from the `Declare` statement.  
   
 ## See Also  
- [Declare Statement](/dotnet/visual-basic/language-reference/statements/declare-statement)
+ [Declare Statement](/dotnet/articles/visual-basic/language-reference/statements/declare-statement)

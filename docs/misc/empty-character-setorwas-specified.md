@@ -39,7 +39,7 @@ This error generally occurs when the regular expressions option has been selecte
 1.  Review the topic Regular Expressions for information on the correct syntax for the pattern and enter the string again.  
   
 ## See Also  
- [Using Regular Expressions in Visual Studio](/visual-studio/ide/using-regular-expressions-in-visual-studio)   
+ [Using Regular Expressions in Visual Studio](/visualstudio/ide/using-regular-expressions-in-visual-studio)   
  [NIB: Find and Replace, Quick Find](http://msdn.microsoft.com/en-us/dad03582-4931-4893-83ba-84b37f5b1600)   
- [Find in Files](/visual-studio/ide/find-in-files)   
- [Finding and Replacing Text](/visual-studio/ide/finding-and-replacing-text)
+ [Find in Files](/visualstudio/ide/find-in-files)   
+ [Finding and Replacing Text](/visualstudio/ide/finding-and-replacing-text)

@@ -44,6 +44,6 @@ This error generally occurs when the path or file name specified in the Browse l
 2.  Navigate to the correct file or folder using the Browse list and **Available items** box.  
   
 ## See Also  
- [Finding and Replacing Text](/visual-studio/ide/finding-and-replacing-text)   
+ [Finding and Replacing Text](/visualstudio/ide/finding-and-replacing-text)   
  [Choose Search Folders](http://msdn.microsoft.com/en-us/85af6458-dcde-4a84-9ea4-f5cc6550dc80)   
- [Find in Files](/visual-studio/ide/find-in-files)
+ [Find in Files](/visualstudio/ide/find-in-files)

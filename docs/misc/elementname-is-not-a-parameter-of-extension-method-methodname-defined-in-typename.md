@@ -44,6 +44,6 @@ A procedure call supplies an additional argument that is not defined by the exte
 -   Remove the superfluous argument from the argument list.  
   
 ## See Also  
- [Extension Methods](/dotnet/visual-basic/language-reference/procedures/extension-methods)   
- [Procedure Parameters and Arguments](/dotnet/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)   
+ [Extension Methods](/dotnet/articles/visual-basic/language-reference/procedures/extension-methods)   
+ [Procedure Parameters and Arguments](/dotnet/articles/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)   
  [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)

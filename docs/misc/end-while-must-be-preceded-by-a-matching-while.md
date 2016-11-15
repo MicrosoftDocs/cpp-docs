@@ -48,4 +48,4 @@ An `End While` statement occurs without a corresponding `While` statement. `End 
 3.  Ensure that this `While` block is correctly formatted.  
   
 ## See Also  
- [While...End While Statement](/dotnet/visual-basic/language-reference/statements/while-end-while-statement)
+ [While...End While Statement](/dotnet/articles/visual-basic/language-reference/statements/while-end-while-statement)

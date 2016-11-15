@@ -44,5 +44,5 @@ You have attempted to use `Imports` to import a namespace that is already declar
 -   Check the namespace you are attempting to import.  
   
 ## See Also  
- [Imports Statement (.NET Namespace and Type)](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)   
- [Alias](/dotnet/visual-basic/language-reference/statements/alias-clause)
+ [Imports Statement (.NET Namespace and Type)](/dotnet/articles/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)   
+ [Alias](/dotnet/articles/visual-basic/language-reference/statements/alias-clause)

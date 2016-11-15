@@ -44,4 +44,4 @@ A `TypeOf` operator occurs without an `Is` clause.
 -   Add an `Is` clause following the `TypeOf` operator; for example, `TypeOf MyControl Is ComboBox`.  
   
 ## See Also  
- [Comparison Operators in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators)
+ [Comparison Operators in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators)

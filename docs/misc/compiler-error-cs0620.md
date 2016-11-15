@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0620
 Indexers cannot have void type  
   
- The return type of an [indexer](/dotnet/csharp/programming-guide/indexers/index) cannot be `void`. An indexer must return a value.  
+ The return type of an [indexer](/dotnet/articles/csharp/programming-guide/indexers/index) cannot be `void`. An indexer must return a value.  
   
  The following sample generates CS0620:  
   
@@ -63,4 +63,4 @@ class MyClass
 ```  
   
 ## See Also  
- [void](/dotnet/csharp/language-reference/keywords/void)
+ [void](/dotnet/articles/csharp/language-reference/keywords/void)

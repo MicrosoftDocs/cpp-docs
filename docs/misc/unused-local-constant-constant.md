@@ -44,5 +44,5 @@ A local constant has been declared that is not used anywhere in your code.
 1.  This error is a warning and can be ignored. To remove the warning, remove the unused constant declaration from your code.  
   
 ## See Also  
- [Const Statement](/dotnet/visual-basic/language-reference/statements/const-statement)   
- [Constants Overview](/dotnet/visual-basic/programming-guide/language-features/constants-enums/constants-overview)
+ [Const Statement](/dotnet/articles/visual-basic/language-reference/statements/const-statement)   
+ [Constants Overview](/dotnet/articles/visual-basic/programming-guide/language-features/constants-enums/constants-overview)

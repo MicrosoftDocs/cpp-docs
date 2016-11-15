@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1535
 Overloaded unary operator 'operator' takes one parameter  
   
- The definition of a unary [overloadable operator](/dotnet/csharp/programming-guide/statements-expressions-operators/overloadable-operators) must take one parameter.  
+ The definition of a unary [overloadable operator](/dotnet/articles/csharp/programming-guide/statements-expressions-operators/overloadable-operators) must take one parameter.  
   
 ## Example  
  The following sample generates CS1535:  

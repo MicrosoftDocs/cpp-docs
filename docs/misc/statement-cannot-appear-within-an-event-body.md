@@ -47,4 +47,4 @@ Statement cannot appear within an event body. End of event assumed.
   
 ## See Also  
  [Application Events Sample](http://msdn.microsoft.com/en-us/289a787f-b97e-43c8-a304-fe95e45f4a0d)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

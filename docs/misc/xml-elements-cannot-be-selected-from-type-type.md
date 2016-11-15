@@ -35,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # XML elements cannot be selected from type &#39;type&#39;
-An XML child element has been referenced for an object that is not of type <xref:System.Xml.Linq.XElement>, <xref:System.Xml.Linq.XDocument>, or `IEnumerable(Of XElement)`. For more information, see [XML Child Axis Property](/dotnet/visual-basic/language-reference/xml-axis/xml-child-axis-property).  
+An XML child element has been referenced for an object that is not of type <xref:System.Xml.Linq.XElement>, <xref:System.Xml.Linq.XDocument>, or `IEnumerable(Of XElement)`. For more information, see [XML Child Axis Property](/dotnet/articles/visual-basic/language-reference/xml-axis/xml-child-axis-property).  
   
 ```vb#  
 ' Generates an error.  
@@ -56,6 +56,6 @@ Dim var = "sample text".<child>
     ```  
   
 ## See Also  
- [XML Child Axis Property](/dotnet/visual-basic/language-reference/xml-axis/xml-child-axis-property)   
- [XML Axis Properties](/dotnet/visual-basic/language-reference/xml-axis/xml-axis-properties)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [XML Child Axis Property](/dotnet/articles/visual-basic/language-reference/xml-axis/xml-child-axis-property)   
+ [XML Axis Properties](/dotnet/articles/visual-basic/language-reference/xml-axis/xml-axis-properties)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

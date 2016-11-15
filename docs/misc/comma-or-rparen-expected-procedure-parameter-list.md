@@ -45,4 +45,4 @@ A parameter list contains an unexpected element. Use commas (`,`) to separate pa
   
 ## See Also  
  [How to: Define a Parameter for a Procedure](../Topic/How%20to:%20Define%20a%20Parameter%20for%20a%20Procedure%20\(Visual%20Basic\).md)   
- [Parameter List](/dotnet/visual-basic/language-reference/statements/parameter-list)
+ [Parameter List](/dotnet/articles/visual-basic/language-reference/statements/parameter-list)

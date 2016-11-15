@@ -51,5 +51,5 @@ An interface is declared with the <xref:System.Runtime.InteropServices.CoClassAt
   
 ## See Also  
  <xref:System.Runtime.InteropServices.CoClassAttribute>   
- [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator)   
- [Access Levels in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/access-levels)
+ [New Operator](/dotnet/articles/visual-basic/language-reference/operators/new-operator)   
+ [Access Levels in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/access-levels)

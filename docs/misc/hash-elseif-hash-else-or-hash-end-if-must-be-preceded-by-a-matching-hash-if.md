@@ -51,4 +51,4 @@ translation.priority.mt:
 3.  If everything else is in order, add an `#If` directive to the beginning of the conditional compilation block.  
   
 ## See Also  
- [#If...Then...#Else Directives](/dotnet/visual-basic/language-reference/directives/if-then-else-directives)
+ [#If...Then...#Else Directives](/dotnet/articles/visual-basic/language-reference/directives/if-then-else-directives)

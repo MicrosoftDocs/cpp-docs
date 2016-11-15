@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1010
 Newline in constant  
   
- A [string](/dotnet/csharp/language-reference/keywords/string) was not properly delimited.  
+ A [string](/dotnet/articles/csharp/language-reference/keywords/string) was not properly delimited.  
   
  The following sample generates CS1010:  
   

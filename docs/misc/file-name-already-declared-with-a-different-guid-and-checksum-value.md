@@ -46,4 +46,4 @@ An attempt has been made to declare a file, but the file already exists with a d
 -   Delete the redundant file if it is not needed.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

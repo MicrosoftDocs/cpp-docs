@@ -44,4 +44,4 @@ A `Case Else` statement occurs outside a `Select` block. A `Case Else` statement
 -   Remove the `Case Else` statement or move it to within a `Select` block.  
   
 ## See Also  
- [Select...Case Statement](/dotnet/visual-basic/language-reference/statements/select-case-statement)
+ [Select...Case Statement](/dotnet/articles/visual-basic/language-reference/statements/select-case-statement)

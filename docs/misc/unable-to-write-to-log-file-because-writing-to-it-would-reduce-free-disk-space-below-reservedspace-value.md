@@ -52,5 +52,5 @@ The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> class could not wr
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace%2A>   
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A>   
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>   
- [My.Application.Log Object](/dotnet/visual-basic/language-reference/objects/my-application-log-object)   
- [My.Log Object](/dotnet/visual-basic/language-reference/objects/my-log-object)
+ [My.Application.Log Object](/dotnet/articles/visual-basic/language-reference/objects/my-application-log-object)   
+ [My.Log Object](/dotnet/articles/visual-basic/language-reference/objects/my-log-object)

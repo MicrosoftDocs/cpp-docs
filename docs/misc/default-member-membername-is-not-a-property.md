@@ -44,4 +44,4 @@ You have tried to declare a member `Default`. However, the `Default` keyword is 
 -   Check to make sure you are identifying a property with `Default`, or else remove the `Default` keyword.  
   
 ## See Also  
- [Default](/dotnet/visual-basic/language-reference/modifiers/default)
+ [Default](/dotnet/articles/visual-basic/language-reference/modifiers/default)

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0247
 Cannot use a negative size with stackalloc  
   
- A negative number was passed to a [stackalloc](/dotnet/csharp/language-reference/keywords/stackalloc) statement.  
+ A negative number was passed to a [stackalloc](/dotnet/articles/csharp/language-reference/keywords/stackalloc) statement.  
   
  The following sample generates CS0247:  
   

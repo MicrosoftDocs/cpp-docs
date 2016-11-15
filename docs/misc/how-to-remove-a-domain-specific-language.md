@@ -27,6 +27,6 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Remove a Domain-Specific Language
-This topic is obsolete from Visual Studio 2010. For more information, see [Deploying Domain-Specific Language Solutions](/visual-studio/modeling/deploying-domain-specific-language-solutions).  
+This topic is obsolete from Visual Studio 2010. For more information, see [Deploying Domain-Specific Language Solutions](/visualstudio/modeling/deploying-domain-specific-language-solutions).  
   
 ## Example

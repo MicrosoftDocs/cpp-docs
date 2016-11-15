@@ -44,5 +44,5 @@ A type parameter list contains an unexpected element. Use commas (`,`) to separa
 -   Add a comma and continue the type parameter list, or add a closing parenthesis character to terminate the list.  
   
 ## See Also  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [Type List](/dotnet/visual-basic/language-reference/statements/type-list)
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Type List](/dotnet/articles/visual-basic/language-reference/statements/type-list)

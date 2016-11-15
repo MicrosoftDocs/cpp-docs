@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0631
 ref and out are not valid in this context  
   
- The declaration for an [indexer](/dotnet/csharp/programming-guide/indexers/index) cannot include the use of [ref](/dotnet/csharp/language-reference/keywords/ref) or [out](/dotnet/csharp/language-reference/keywords/out) parameters.  
+ The declaration for an [indexer](/dotnet/articles/csharp/programming-guide/indexers/index) cannot include the use of [ref](/dotnet/articles/csharp/language-reference/keywords/ref) or [out](/dotnet/articles/csharp/language-reference/keywords/out) parameters.  
   
 ## Example  
  The following sample generates CS0631:  

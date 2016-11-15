@@ -44,7 +44,7 @@ A procedure call supplies a `ByRef` argument with a data type that widens to the
 -   Supply each `ByRef` argument in the procedure call with the same data type as the declared type, or turn `Option Strict Off`.  
   
 ## See Also  
- [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
- [Passing Arguments by Value and by Reference](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)   
- [Widening and Narrowing Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)   
- [Implicit and Explicit Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)
+ [Option Strict Statement](/dotnet/articles/visual-basic/language-reference/statements/option-strict-statement)   
+ [Passing Arguments by Value and by Reference](/dotnet/articles/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)   
+ [Widening and Narrowing Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)   
+ [Implicit and Explicit Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)

@@ -25,4 +25,4 @@ translation.priority.mt:
 # Customizing Link Creation - redirection
 The content of this topic has been merged with the following topic:  
   
- [Customizing Tools and the Toolbox](/visual-studio/modeling/customizing-tools-and-the-toolbox)
+ [Customizing Tools and the Toolbox](/visualstudio/modeling/customizing-tools-and-the-toolbox)

@@ -45,4 +45,4 @@ The `Me` keyword always refers to the specific instance of a class where the cod
   
 ## See Also  
  [Me](http://msdn.microsoft.com/en-us/a65973c7-cf06-4547-9b25-9fba885525c2)   
- [Object Variable Assignment](/dotnet/visual-basic/programming-guide/language-features/variables/object-variable-assignment)
+ [Object Variable Assignment](/dotnet/articles/visual-basic/programming-guide/language-features/variables/object-variable-assignment)

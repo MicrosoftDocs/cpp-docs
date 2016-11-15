@@ -44,5 +44,5 @@ An attempt was made to use an assembly as a module.
 -   Change the reference to a module.  
   
 ## See Also  
- [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)   
- [Assembly](/dotnet/visual-basic/language-reference/modifiers/assembly)
+ [Module Statement](/dotnet/articles/visual-basic/language-reference/statements/module-statement)   
+ [Assembly](/dotnet/articles/visual-basic/language-reference/modifiers/assembly)

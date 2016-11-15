@@ -44,4 +44,4 @@ An `Option` statement specifies `Text` or `Binary`, but not `Compare`.
 -   Add the `Compare` keyword to the `Option` statement; for example, `Option Compare Binary`.  
   
 ## See Also  
- [Option Compare Statement](/dotnet/visual-basic/language-reference/statements/option-compare-statement)
+ [Option Compare Statement](/dotnet/articles/visual-basic/language-reference/statements/option-compare-statement)

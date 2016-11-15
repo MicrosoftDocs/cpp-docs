@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1655
 Cannot pass fields of 'variable' as a ref or out argument because it is a 'readonly variable type'  
   
- This error occurs if you are attempting to pass a member of a [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) variable, a [using](/dotnet/csharp/language-reference/keywords/using-statement) variable, or a [fixed](/dotnet/csharp/language-reference/keywords/fixed-statement) variable to a function as a ref or out argument. Because these variables are considered read-only in these contexts, this is not allowed.  
+ This error occurs if you are attempting to pass a member of a [foreach](/dotnet/articles/csharp/language-reference/keywords/foreach-in) variable, a [using](/dotnet/articles/csharp/language-reference/keywords/using-statement) variable, or a [fixed](/dotnet/articles/csharp/language-reference/keywords/fixed-statement) variable to a function as a ref or out argument. Because these variables are considered read-only in these contexts, this is not allowed.  
   
  The following sample generates CS1655:  
   

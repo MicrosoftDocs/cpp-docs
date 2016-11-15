@@ -40,4 +40,4 @@ Instances of restricted types, such as <xref:System.ArgIterator>, <xref:System.R
  **Error ID:** BC36640  
   
 ## See Also  
- [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)
+ [Lambda Expressions](/dotnet/articles/visual-basic/language-reference/procedures/lambda-expressions)

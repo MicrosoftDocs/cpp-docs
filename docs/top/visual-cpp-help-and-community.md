@@ -50,7 +50,7 @@ Here's how to getting information about how to write C++ code and use the Visual
 ### Online and Offline Documentation  
  You can view the content for both the MSDN Library and the Windows Developer Center online. This content is often updated.  
   
- You can also download and view the content locally in the offline Help Viewer. The offline documentation is organized by books of related content, which are also updated periodically. You can download the books you are interested in as they become available. For more information, see [Microsoft Help Viewer](/visual-studio/ide/microsoft-help-viewer).  
+ You can also download and view the content locally in the offline Help Viewer. The offline documentation is organized by books of related content, which are also updated periodically. You can download the books you are interested in as they become available. For more information, see [Microsoft Help Viewer](/visualstudio/ide/microsoft-help-viewer).  
   
 ## Related Articles  
   

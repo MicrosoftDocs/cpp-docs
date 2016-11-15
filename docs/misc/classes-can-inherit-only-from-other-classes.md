@@ -44,4 +44,4 @@ An `Inherits` statement specifies a type other than a class as its base type.
 -   Change the base type to a class that is already defined.  
   
 ## See Also  
- [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
+ [Inheritance Basics](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

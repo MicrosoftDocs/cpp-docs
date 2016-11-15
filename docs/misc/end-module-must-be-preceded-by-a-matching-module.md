@@ -44,4 +44,4 @@ Module blocks begin with a `Module` statement and end with an `End Module` const
 -   Make sure that the module block begins with a `Module` statement.  
   
 ## See Also  
- [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)
+ [Module Statement](/dotnet/articles/visual-basic/language-reference/statements/module-statement)

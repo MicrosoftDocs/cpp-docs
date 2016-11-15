@@ -44,4 +44,4 @@ You attempted to use an array initializer in a `Const` declaration.
 -   Change the initializer to a valid expression by removing the surrounding braces.  
   
 ## See Also  
- [Const Statement](/dotnet/visual-basic/language-reference/statements/const-statement)
+ [Const Statement](/dotnet/articles/visual-basic/language-reference/statements/const-statement)

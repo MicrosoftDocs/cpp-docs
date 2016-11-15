@@ -82,5 +82,5 @@ public class C
 ```  
   
 ## See Also  
- [LINQ Query Expressions](/dotnet/csharp/programming-guide/linq-query-expressions/index)   
- [group clause](/dotnet/csharp/language-reference/keywords/group-clause)
+ [LINQ Query Expressions](/dotnet/articles/csharp/programming-guide/linq-query-expressions/index)   
+ [group clause](/dotnet/articles/csharp/language-reference/keywords/group-clause)

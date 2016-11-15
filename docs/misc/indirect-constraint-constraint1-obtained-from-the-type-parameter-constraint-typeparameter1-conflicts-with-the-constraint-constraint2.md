@@ -50,8 +50,8 @@ A generic type is declared with conflicting constraints due to a combination of 
 -   Change the type parameter constraints to avoid conflicting constraints.  
   
 ## See Also  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [Type List](/dotnet/visual-basic/language-reference/statements/type-list)   
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Type List](/dotnet/articles/visual-basic/language-reference/statements/type-list)   
  [Structure (Visual Basic)](http://msdn.microsoft.com/en-us/263ce115-ac36-4c05-8cb7-0e0eead5c6d0)   
  [Class (Visual Basic)](http://msdn.microsoft.com/en-us/0777c6e6-46bc-451b-ad70-57b49d4ef4f7)   
- [Value Types and Reference Types](/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)
+ [Value Types and Reference Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)

@@ -37,7 +37,7 @@ translation.priority.mt:
 # Type characters are not allowed on Imports aliases
 An import alias in an `Imports` statement contains at least one identifier type character.  
   
- An import alias must be a valid Visual Basic name. The allowed characters do not include any of the identifier type characters (`%`, `&`, `@`, `!`, `#`, and `$`). See [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names).  
+ An import alias must be a valid Visual Basic name. The allowed characters do not include any of the identifier type characters (`%`, `&`, `@`, `!`, `#`, and `$`). See [Declared Element Names](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/declared-element-names).  
   
  **Error ID:** BC31398  
   
@@ -46,7 +46,7 @@ An import alias in an `Imports` statement contains at least one identifier type 
 -   Remove the type identifier character or characters from the import alias.  
   
 ## See Also  
- [Type Characters](/dotnet/visual-basic/programming-guide/language-features/data-types/type-characters)   
- [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
- [Imports Statement (.NET Namespace and Type)](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)   
+ [Type Characters](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/type-characters)   
+ [Declared Element Names](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
+ [Imports Statement (.NET Namespace and Type)](/dotnet/articles/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)   
  [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)

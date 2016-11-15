@@ -45,4 +45,4 @@ translation.priority.mt:
 -   Remove the colon after the name of the switch, that is, instead of typing `msbuild /<switch>:`, type `msbuild /<switch>`  
   
 ## See Also  
- [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)
+ [Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference)

@@ -30,4 +30,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Record Mouse Hovers in Coded UI Tests
-The content of this topic has been consolidated with the parent page. See [Validating the properties of UI controls](/visual-studio/test/use-ui-automation-to-test-your-code).
+The content of this topic has been consolidated with the parent page. See [Validating the properties of UI controls](/visualstudio/test/use-ui-automation-to-test-your-code).

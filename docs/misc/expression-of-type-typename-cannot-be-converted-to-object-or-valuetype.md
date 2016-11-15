@@ -52,4 +52,4 @@ An expression evaluates to a type that cannot be boxed by the common language ru
 3.  Rewrite the statement to avoid the boxing conversion.  
   
 ## See Also  
- [Implicit and Explicit Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)
+ [Implicit and Explicit Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)

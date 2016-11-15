@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS1584
 XML comment on 'member' has syntactically incorrect cref attribute 'invalid_syntax'  
   
- One of the parameters passed to a tag for documentation comments has invalid syntax. For more information, see [Recommended Tags for Documentation Comments](/dotnet/csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments).  
+ One of the parameters passed to a tag for documentation comments has invalid syntax. For more information, see [Recommended Tags for Documentation Comments](/dotnet/articles/csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments).  
   
 ## Example  
  The following sample generates CS1584.  

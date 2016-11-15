@@ -40,5 +40,5 @@ The body of a lambda expression must be an expression that calculates and return
  **Error ID:** BC36597  
   
 ## See Also  
- [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)   
- [GoTo Statement](/dotnet/visual-basic/language-reference/statements/goto-statement)
+ [Lambda Expressions](/dotnet/articles/visual-basic/language-reference/procedures/lambda-expressions)   
+ [GoTo Statement](/dotnet/articles/visual-basic/language-reference/statements/goto-statement)

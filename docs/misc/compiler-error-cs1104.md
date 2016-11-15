@@ -57,5 +57,5 @@ public static class Extensions
 ```  
   
 ## See Also  
- [Extension Methods](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)   
- [params](/dotnet/csharp/language-reference/keywords/params)
+ [Extension Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/extension-methods)   
+ [params](/dotnet/articles/csharp/language-reference/keywords/params)

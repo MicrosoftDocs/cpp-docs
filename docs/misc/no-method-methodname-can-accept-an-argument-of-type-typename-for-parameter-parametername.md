@@ -39,4 +39,4 @@ A method call contains an argument of a type that is not valid.
 2.  Match the argument types against the parameter types of the method to make sure they are in agreement. Alter the types as necessary.  
   
 ## See Also  
- [Passing Arguments by Value and by Reference](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)
+ [Passing Arguments by Value and by Reference](/dotnet/articles/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)

@@ -44,5 +44,5 @@ Two incompatible specifiers, such as `Shadows` and `Overrides` are used together
 -   Remove one or the other specifier.  
   
 ## See Also  
- [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)   
- [Overrides](/dotnet/visual-basic/language-reference/modifiers/overrides)
+ [Shadows](/dotnet/articles/visual-basic/language-reference/modifiers/shadows)   
+ [Overrides](/dotnet/articles/visual-basic/language-reference/modifiers/overrides)

@@ -44,4 +44,4 @@ An argument list in a procedure call does not begin with an opening parenthesis 
 -   Add an opening parenthesis character to the beginning of the list.  
   
 ## See Also  
- [Procedure Parameters and Arguments](/dotnet/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)
+ [Procedure Parameters and Arguments](/dotnet/articles/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)

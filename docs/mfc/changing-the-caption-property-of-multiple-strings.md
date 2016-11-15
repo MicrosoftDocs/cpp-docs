@@ -46,7 +46,7 @@ The following procedure shows you how to change the caption property of multiple
   
 2.  Select the strings you want to change by holding down the **CTRL** key as you click each one.  
   
-3.  In the [Properties Window](/visual-studio/ide/reference/properties-window), type a new value for the property you want to change.  
+3.  In the [Properties Window](/visualstudio/ide/reference/properties-window), type a new value for the property you want to change.  
   
 4.  Press **ENTER**.  
   

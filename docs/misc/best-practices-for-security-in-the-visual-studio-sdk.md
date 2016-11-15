@@ -74,6 +74,6 @@ You need to understand security for VSPackage extensions so that you can create 
  Note that UAC also affects deployment. Installation packages must be correctly authored to support UAC. An incorrectly authored package typically causes "access denied" errors because the installer tries to use normal user rights to perform a task that requires elevated rights.  
   
 ## See Also  
- [Best Practices for Security in VSPackages](/visual-studio/extensibility/internals/best-practices-for-security-in-vspackages)   
+ [Best Practices for Security in VSPackages](/visualstudio/extensibility/internals/best-practices-for-security-in-vspackages)   
  [Resources for Creating Secure Applications](http://msdn.microsoft.com/en-us/0ebf5f69-76f2-498a-a2df-83cf3443e132)   
  [Key Security Concepts](../Topic/Key%20Security%20Concepts.md)

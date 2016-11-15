@@ -44,5 +44,5 @@ An invalid modifier was specified with an enumeration declared in an interface.
 -   Remove modifiers such as `Public`, `Private`, `Shared`, `Friend`, `Protected`, `Protected Friend`, or `Overridable`.  
   
 ## See Also  
- [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)   
- [Enum Statement](/dotnet/visual-basic/language-reference/statements/enum-statement)
+ [Interfaces](/dotnet/articles/visual-basic/programming-guide/language-features/interfaces/index)   
+ [Enum Statement](/dotnet/articles/visual-basic/language-reference/statements/enum-statement)

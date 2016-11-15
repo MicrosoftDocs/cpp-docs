@@ -39,4 +39,4 @@ An operation cannot be carried out because it would invalidate the current state
 -   Stop the code execution, make modifications if necessary, and then retry the operation.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

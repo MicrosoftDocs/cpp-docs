@@ -41,6 +41,6 @@ translation.priority.mt:
 -   If you have defined a custom Toolset in the registry, make sure that it is in valid registry format, that is has the correct `ToolsVersion` name and that the correct `MSBuildBinPath` or `MSBuildToolsPath` value.  
   
 ## See Also  
- [Standard and Custom Toolset Configurations](/visual-studio/msbuild/standard-and-custom-toolset-configurations)   
- [Project Element (MSBuild)](/visual-studio/msbuild/project-element-msbuild)   
- [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)
+ [Standard and Custom Toolset Configurations](/visualstudio/msbuild/standard-and-custom-toolset-configurations)   
+ [Project Element (MSBuild)](/visualstudio/msbuild/project-element-msbuild)   
+ [Additional Resources](/visualstudio/msbuild/additional-msbuild-resources)

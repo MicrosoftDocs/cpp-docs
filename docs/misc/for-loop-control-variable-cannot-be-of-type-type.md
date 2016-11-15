@@ -45,5 +45,5 @@ You have attempted to use a loop control variable that is not a valid type. At t
   
 ## See Also  
  [For (Visual Basic)](http://msdn.microsoft.com/en-us/c470a263-9b49-4308-8fd6-8592b84a7980)   
- [Do...Loop Statement](/dotnet/visual-basic/language-reference/statements/do-loop-statement)   
- [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)
+ [Do...Loop Statement](/dotnet/articles/visual-basic/language-reference/statements/do-loop-statement)   
+ [For...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-next-statement)

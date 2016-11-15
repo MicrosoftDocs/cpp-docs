@@ -44,4 +44,4 @@ The variable used to iterate through a `For` loop must be of a numeric data type
 -   Change the declaration of the loop control variable to specify `Integer`, `Short`, `Long`, `Byte`, `Single`, `Double`, or `Decimal`.  
   
 ## See Also  
- [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)
+ [For...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-next-statement)

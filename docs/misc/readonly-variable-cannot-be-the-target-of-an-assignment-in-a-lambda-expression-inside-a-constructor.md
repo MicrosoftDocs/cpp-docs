@@ -94,6 +94,6 @@ End Class
     ```  
   
 ## See Also  
- [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)   
- [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)   
+ [Lambda Expressions](/dotnet/articles/visual-basic/language-reference/procedures/lambda-expressions)   
+ [ReadOnly](/dotnet/articles/visual-basic/language-reference/modifiers/readonly)   
  [NOT IN BUILD: Using Constructors and Destructors](http://msdn.microsoft.com/en-us/548eebe1-86c4-4377-b2f5-447cb8be3d90)

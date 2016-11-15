@@ -44,4 +44,4 @@ An `End Event` statement occurs without a corresponding `Custom Event` statement
 -   Ensure that a preceding `Custom Event` statement is valid and correctly spelled.  
   
 ## See Also  
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

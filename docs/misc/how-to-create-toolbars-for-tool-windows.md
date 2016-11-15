@@ -32,4 +32,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Create Toolbars for Tool Windows
-This content has been removed. For information, see [Adding a Toolbar to a Tool Window](/visual-studio/extensibility/adding-a-toolbar-to-a-tool-window).
+This content has been removed. For information, see [Adding a Toolbar to a Tool Window](/visualstudio/extensibility/adding-a-toolbar-to-a-tool-window).

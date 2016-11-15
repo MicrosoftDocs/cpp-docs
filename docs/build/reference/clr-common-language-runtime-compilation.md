@@ -122,7 +122,7 @@ Enables applications and components to use features from the common language run
   
  The global variables in a native object file are initialized first (during DllMain if the executable is a DLL), and then the global variables in the managed section are initialized (before any managed code is run). `#pragma`[init_seg](../../preprocessor/init-seg.md) only affects the order of initialization in the managed and unmanaged categories.  
   
- Compiling by using **/clr:safe** is analogous to compiling by using [/platform:anycpu](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option) in languages such as C#.  
+ Compiling by using **/clr:safe** is analogous to compiling by using [/platform:anycpu](/dotnet/articles/csharp/language-reference/compiler-options/platform-compiler-option) in languages such as C#.  
   
 ## Safe and Pure Images  
  A pure image uses a CLR version of the C run-time (CRT) library. However, the CRT is not verifiable, so you cannot use the CRT when you compile by using **/clr:safe**. For more information, see [CRT Library Features](../../c-runtime-library/crt-library-features.md).  
@@ -166,7 +166,7 @@ class {} x;
     > [!NOTE]
     >  When **/clr** is enabled in the **Property Pages** dialog box, compiler option properties that are not compatible with **/clr** are also adjusted, as required. For example, if **/RTC** is set and then **/clr** is enabled, **/RTC** will be turned off.  
     >   
-    >  Also, when you debug a **/clr** application, set the **Debugger Type** property to **Mixed** or **Managed only**. For more information, see [Project Settings for a C++ Debug Configuration](/visual-studio/debugger/project-settings-for-a-cpp-debug-configuration).  
+    >  Also, when you debug a **/clr** application, set the **Debugger Type** property to **Mixed** or **Managed only**. For more information, see [Project Settings for a C++ Debug Configuration](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration).  
   
      For information about how the create a module, see [/NOASSEMBLY (Create a MSIL Module)](../../build/reference/noassembly-create-a-msil-module.md).  
   

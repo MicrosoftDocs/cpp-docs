@@ -44,4 +44,4 @@ Arrays cannot have more than 32 dimensions.
 -   Reduce the number of dimensions in the declaration of the array.  
   
 ## See Also  
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)

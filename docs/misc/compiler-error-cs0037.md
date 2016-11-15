@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0037
 Cannot convert null to 'type' because it is a non-nullable value type  
   
- The compiler cannot assign null to a value type; null can only be assigned to a [reference type](/dotnet/csharp/language-reference/keywords/reference-types) or to a Nullable type. [struct](/dotnet/csharp/language-reference/keywords/struct) is a value type. For more information, see [Nullable Types](/dotnet/csharp/programming-guide/nullable-types/index).  
+ The compiler cannot assign null to a value type; null can only be assigned to a [reference type](/dotnet/articles/csharp/language-reference/keywords/reference-types) or to a Nullable type. [struct](/dotnet/articles/csharp/language-reference/keywords/struct) is a value type. For more information, see [Nullable Types](/dotnet/articles/csharp/programming-guide/nullable-types/index).  
   
  The following sample generates CS0037:  
   

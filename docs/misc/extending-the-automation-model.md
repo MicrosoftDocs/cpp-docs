@@ -40,7 +40,7 @@ This section discusses how the automation model and the VSPackage model represen
  [Automation Model](../misc/automation-model.md)  
  Provides an overview of the automation model and discusses how the automation model lets you customize, adjust, and automate the environment.  
   
- [Contributing to the Automation Model](/visual-studio/extensibility/internals/contributing-to-the-automation-model)  
+ [Contributing to the Automation Model](/visualstudio/extensibility/internals/contributing-to-the-automation-model)  
  Provides a more detailed view of the automation model and discusses the ways to provide automation for your VSPackage. This section also provides code examples that show how an automation consumer obtains the initial project automation objects.  
   
 ## Related Sections  

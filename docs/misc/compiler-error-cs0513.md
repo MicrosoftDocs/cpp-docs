@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0513
 'function' is abstract but it is contained in nonabstract class 'class'  
   
- A method cannot be an [abstract](/dotnet/csharp/language-reference/keywords/abstract) member of a nonabstract class.  
+ A method cannot be an [abstract](/dotnet/articles/csharp/language-reference/keywords/abstract) member of a nonabstract class.  
   
  The following sample generates CS0513:  
   

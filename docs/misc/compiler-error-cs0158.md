@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0158
 The label 'label' shadows another label by the same name in a contained scope  
   
- A label in an inner scope hides a label with the same name in an outer scope. For more information, see [goto](/dotnet/csharp/language-reference/keywords/goto).  
+ A label in an inner scope hides a label with the same name in an outer scope. For more information, see [goto](/dotnet/articles/csharp/language-reference/keywords/goto).  
   
  The following sample generates CS0158:  
   

@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS5000
 Unknown compiler option '/option'  
   
- An invalid [compiler option](/dotnet/csharp/language-reference/compiler-options/index) was specified.
+ An invalid [compiler option](/dotnet/articles/csharp/language-reference/compiler-options/index) was specified.

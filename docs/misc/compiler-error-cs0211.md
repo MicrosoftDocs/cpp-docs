@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0211
 Cannot take the address of the given expression  
   
- You can take the address of fields, local variables, and indirection of pointers, but you cannot take, for example, the address of the sum of two local variables. For more information, see [Unsafe Code and Pointers](/dotnet/csharp/programming-guide/unsafe-code-pointers/index).  
+ You can take the address of fields, local variables, and indirection of pointers, but you cannot take, for example, the address of the sum of two local variables. For more information, see [Unsafe Code and Pointers](/dotnet/articles/csharp/programming-guide/unsafe-code-pointers/index).  
   
  The following sample generates CS0211:  
   

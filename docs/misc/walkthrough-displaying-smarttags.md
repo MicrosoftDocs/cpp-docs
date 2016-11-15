@@ -42,7 +42,7 @@ Smart tags are deprecated in favor of light bulbs. See [Walkthrough: Displaying 
  The following walkthrough shows how to create a smart tag that appears on the current word and has two suggested actions: **Convert to upper case** and **Convert to lower case**.  
   
 ## Prerequisites  
- To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](/visual-studio/extensibility/visual-studio-sdk).  
+ To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](/visualstudio/extensibility/visual-studio-sdk).  
   
 ## Creating a Managed Extensibility Framework (MEF) Project  
   

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0035
 Operator 'operator' is ambiguous on an operand of type 'type'  
   
- The compiler has more than one available conversion and does not know which to choose before applying the operator. For more information, see [Templated User Defined Conversions](../misc/templated-user-defined-conversions.md) and [Conversion Operators](/dotnet/csharp/programming-guide/statements-expressions-operators/conversion-operators).  
+ The compiler has more than one available conversion and does not know which to choose before applying the operator. For more information, see [Templated User Defined Conversions](../misc/templated-user-defined-conversions.md) and [Conversion Operators](/dotnet/articles/csharp/programming-guide/statements-expressions-operators/conversion-operators).  
   
  The following sample generates CS0035:  
   

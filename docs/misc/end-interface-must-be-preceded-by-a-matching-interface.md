@@ -46,4 +46,4 @@ An `End Interface` statement occurs without a corresponding `Interface` statemen
 2.  Ensure that the `Interface` members are correctly formatted.  
   
 ## See Also  
- [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)
+ [Interface Statement](/dotnet/articles/visual-basic/language-reference/statements/interface-statement)

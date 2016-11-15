@@ -79,7 +79,7 @@ translation.priority.mt:
 ## See Also  
  [Introduction to Code Signing](https://msdn.microsoft.com/en-us/library/ms537361\(v=vs.85\).aspx)   
  [SignTool.exe (Sign Tool)](../Topic/SignTool.exe%20\(Sign%20Tool\).md)   
- [Signing Page, Project Designer](/visual-studio/ide/reference/signing-page-project-designer)   
+ [Signing Page, Project Designer](/visualstudio/ide/reference/signing-page-project-designer)   
  [How to: Sign an Assembly (Visual Studio)](http://msdn.microsoft.com/en-us/f468a7d3-234c-4353-924d-8e0ae5896564)   
  [How to: Sign an Assembly with a Strong Name](../Topic/How%20to:%20Sign%20an%20Assembly%20with%20a%20Strong%20Name.md)   
  [Strong-Named Assemblies](../Topic/Strong-Named%20Assemblies.md)   

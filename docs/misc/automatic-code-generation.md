@@ -34,4 +34,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Automatic Code Generation
-This content has moved to [Visual C# IntelliSense](/visual-studio/ide/visual-csharp-intellisense)
+This content has moved to [Visual C# IntelliSense](/visualstudio/ide/visual-csharp-intellisense)

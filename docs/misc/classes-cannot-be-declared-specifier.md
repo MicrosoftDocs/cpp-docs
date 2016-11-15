@@ -44,5 +44,5 @@ You have attempted to declare a `Class` or `Module` with an invalid specifier.
 -   Remove the specifier.  
   
 ## See Also  
- [Class Statement](/dotnet/visual-basic/language-reference/statements/class-statement)   
- [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)
+ [Class Statement](/dotnet/articles/visual-basic/language-reference/statements/class-statement)   
+ [Module Statement](/dotnet/articles/visual-basic/language-reference/statements/module-statement)

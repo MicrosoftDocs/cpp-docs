@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1902
 Invalid option 'option' for /debug; must be full or pdbonly  
   
- An invalid option was passed to the [/debug](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) compiler option.  
+ An invalid option was passed to the [/debug](/dotnet/articles/csharp/language-reference/compiler-options/debug-compiler-option) compiler option.  
   
  The following sample generates CS1902:  
   

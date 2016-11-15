@@ -44,6 +44,6 @@ An XML comment literal contains the character sequence '--', which is not suppor
 -   Remove the character sequence '--' from the XML comment literal.  
   
 ## See Also  
- [XML Comment Literal](/dotnet/visual-basic/language-reference/xml-literals/xml-comment-literal)   
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [XML Comment Literal](/dotnet/articles/visual-basic/language-reference/xml-literals/xml-comment-literal)   
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

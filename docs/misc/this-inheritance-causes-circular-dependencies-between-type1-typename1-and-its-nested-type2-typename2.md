@@ -61,4 +61,4 @@ End Class
 -   Change the inheritance structure so that there is no circular dependency.  
   
 ## See Also  
- [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
+ [Inheritance Basics](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

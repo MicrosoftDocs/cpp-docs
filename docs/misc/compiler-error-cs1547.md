@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1547
 Keyword 'void' cannot be used in this context  
   
- The compiler detected an invalid use of the [void](/dotnet/csharp/language-reference/keywords/void) keyword.  
+ The compiler detected an invalid use of the [void](/dotnet/articles/csharp/language-reference/keywords/void) keyword.  
   
  The following sample generates CS1547:  
   

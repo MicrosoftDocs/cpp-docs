@@ -39,4 +39,4 @@ The file name is incorrect, or the file does not exist.
 1.  Ensure that the file name is correct.  
   
 ## See Also  
- [My.Computer.FileSystem Object](/dotnet/visual-basic/language-reference/objects/my-computer-filesystem-object)
+ [My.Computer.FileSystem Object](/dotnet/articles/visual-basic/language-reference/objects/my-computer-filesystem-object)

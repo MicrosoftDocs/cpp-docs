@@ -44,5 +44,5 @@ An `End RemoveHandler` statement occurred without a corresponding `RemoveHandler
 -   Check that the preceding `RemoveHandler` statement is valid and correctly spelled.  
   
 ## See Also  
- [RemoveHandler Statement](/dotnet/visual-basic/language-reference/statements/removehandler-statement)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [RemoveHandler Statement](/dotnet/articles/visual-basic/language-reference/statements/removehandler-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

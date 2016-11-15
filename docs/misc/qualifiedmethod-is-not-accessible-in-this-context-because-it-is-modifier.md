@@ -45,6 +45,6 @@ You have attempted to access a method that is not accessible in this context due
   
 ## See Also  
  [NOT IN BUILD: Considerations for Choosing Access Levels for Methods](http://msdn.microsoft.com/en-us/8b696461-2191-4cea-bb64-5fa3449da2ff)   
- [Private](/dotnet/visual-basic/language-reference/modifiers/private)   
- [Protected](/dotnet/visual-basic/language-reference/modifiers/protected)   
- [Friend](/dotnet/visual-basic/language-reference/modifiers/friend)
+ [Private](/dotnet/articles/visual-basic/language-reference/modifiers/private)   
+ [Protected](/dotnet/articles/visual-basic/language-reference/modifiers/protected)   
+ [Friend](/dotnet/articles/visual-basic/language-reference/modifiers/friend)

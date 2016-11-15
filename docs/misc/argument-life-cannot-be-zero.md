@@ -44,4 +44,4 @@ An argument for `Life`, which must be a `Double` that specifies the length of us
  [NOT IN BUILD: DDB Function](http://msdn.microsoft.com/en-us/c7cf8929-d158-4399-b3cb-31d897d12556)   
  [NOT IN BUILD: SYD Function](http://msdn.microsoft.com/en-us/23c25672-f5dd-49ac-9893-4faa82634181)   
  [NOT IN BUILD: SLN Function](http://msdn.microsoft.com/en-us/8e06130a-056e-4266-a8a9-1592b86f58d2)   
- [Passing Arguments by Value and by Reference](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)
+ [Passing Arguments by Value and by Reference](/dotnet/articles/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)

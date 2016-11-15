@@ -43,4 +43,4 @@ translation.priority.mt:
 1.  Include the project file name on the command line. For example, instead of typing `msbuild`, type `msbuild myapp.proj`.  
   
 ## See Also  
- [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)
+ [Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference)

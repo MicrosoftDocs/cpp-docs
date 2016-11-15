@@ -44,8 +44,8 @@ A range variable name specified in a `Select` clause, or the `Into` part of an `
 1.  Ensure that all range variables in a query clause have unique names.  
   
 ## See Also  
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [Aggregate Clause](/dotnet/visual-basic/language-reference/queries/aggregate-clause)   
- [Select Clause](/dotnet/visual-basic/language-reference/queries/select-clause)   
- [Group By Clause](/dotnet/visual-basic/language-reference/queries/group-by-clause)   
- [Group Join Clause](/dotnet/visual-basic/language-reference/queries/group-join-clause)
+ [Introduction to LINQ in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [Aggregate Clause](/dotnet/articles/visual-basic/language-reference/queries/aggregate-clause)   
+ [Select Clause](/dotnet/articles/visual-basic/language-reference/queries/select-clause)   
+ [Group By Clause](/dotnet/articles/visual-basic/language-reference/queries/group-by-clause)   
+ [Group Join Clause](/dotnet/articles/visual-basic/language-reference/queries/group-join-clause)

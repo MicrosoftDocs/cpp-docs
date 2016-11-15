@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 3) CS0105
 The using directive for 'namespace' appeared previously in this namespace  
   
- A [namespace](/dotnet/csharp/language-reference/keywords/namespace), which should only be declared once, was declared more than once; remove all duplicate namespace declarations.  
+ A [namespace](/dotnet/articles/csharp/language-reference/keywords/namespace), which should only be declared once, was declared more than once; remove all duplicate namespace declarations.  
   
  The following sample generates CS0105:  
   

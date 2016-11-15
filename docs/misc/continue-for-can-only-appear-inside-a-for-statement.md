@@ -50,5 +50,5 @@ A `Continue For` statement can only appear within a `For...Next` loop.
 2.  Otherwise, remove the `Continue For` statement.  
   
 ## See Also  
- [Continue Statement](/dotnet/visual-basic/language-reference/statements/continue-statement)   
- [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)
+ [Continue Statement](/dotnet/articles/visual-basic/language-reference/statements/continue-statement)   
+ [For...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-next-statement)

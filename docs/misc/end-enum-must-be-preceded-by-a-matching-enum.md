@@ -46,4 +46,4 @@ An `End Enum` statement occurs without a corresponding `Enum` statement. `End En
 2.  Ensure that the `Enum` members are correctly formatted.  
   
 ## See Also  
- [Enum Statement](/dotnet/visual-basic/language-reference/statements/enum-statement)
+ [Enum Statement](/dotnet/articles/visual-basic/language-reference/statements/enum-statement)

@@ -43,5 +43,5 @@ translation.priority.mt:
 -   Specify either `DestinationFiles` or `DestinationDirectory` for the `Copy` task in the project file.  
   
 ## See Also  
- [Copy Task](/visual-studio/msbuild/copy-task)   
- [Tasks](/visual-studio/msbuild/msbuild-tasks)
+ [Copy Task](/visualstudio/msbuild/copy-task)   
+ [Tasks](/visualstudio/msbuild/msbuild-tasks)

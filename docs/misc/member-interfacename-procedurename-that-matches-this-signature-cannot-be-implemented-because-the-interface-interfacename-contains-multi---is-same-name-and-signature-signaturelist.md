@@ -65,6 +65,6 @@ End Class
 -   Do not implement this base class. You cannot implement it with the set of type arguments you are using, because you must implement every one of its members.  
   
 ## See Also  
- [Implements](/dotnet/visual-basic/language-reference/statements/implements-clause)   
- [Implements Statement](/dotnet/visual-basic/language-reference/statements/implements-statement)   
+ [Implements](/dotnet/articles/visual-basic/language-reference/statements/implements-clause)   
+ [Implements Statement](/dotnet/articles/visual-basic/language-reference/statements/implements-statement)   
  [NOT IN BUILD: Implements Keyword and Implements Statement](http://msdn.microsoft.com/en-us/b96560f7-6413-480f-a1e2-f80253bab5be)

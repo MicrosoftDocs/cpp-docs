@@ -43,4 +43,4 @@ You attempted to write to a field that is declared `ReadOnly`.
 -   Do not attempt to write to this field.  
   
 ## See Also  
- [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)
+ [ReadOnly](/dotnet/articles/visual-basic/language-reference/modifiers/readonly)

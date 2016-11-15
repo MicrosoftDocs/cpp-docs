@@ -46,6 +46,6 @@ An `On Error` statement appears within a `Using` statement but is not valid in t
 ## See Also  
  [Structured Exception Handling Overview for Visual Basic](http://msdn.microsoft.com/en-us/bb81af80-a735-4873-9711-6151a48e418a)   
  [Choosing When to Use Structured and Unstructured Exception Handling (Visual Basic)](http://msdn.microsoft.com/en-us/e897d7ca-07e8-45dd-8a6d-a5b2a2fc9b9a)   
- [On Error Statement](/dotnet/visual-basic/language-reference/statements/on-error-statement)   
+ [On Error Statement](/dotnet/articles/visual-basic/language-reference/statements/on-error-statement)   
  [How to: Test Code with a Try…Catch Block in Visual Basic](http://msdn.microsoft.com/en-us/8368e205-ed73-4185-a247-af84fb4fafa9)   
- [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
+ [Try...Catch...Finally Statement](/dotnet/articles/visual-basic/language-reference/statements/try-catch-finally-statement)

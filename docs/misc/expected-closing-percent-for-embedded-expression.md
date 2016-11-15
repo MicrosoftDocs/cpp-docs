@@ -44,6 +44,6 @@ An embedded expression in an XML literal is missing the required closing `%>` ch
 -   Add the required closing `%>` characters to the end of the embedded expression.  
   
 ## See Also  
- [Embedded Expressions in XML](/dotnet/visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml)   
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [Embedded Expressions in XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml)   
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

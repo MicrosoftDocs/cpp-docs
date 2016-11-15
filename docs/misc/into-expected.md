@@ -51,8 +51,8 @@ An `Aggregate`, `Group By`, or `Group Join` clause has been specified without an
     ```  
   
 ## See Also  
- [Aggregate Clause](/dotnet/visual-basic/language-reference/queries/aggregate-clause)   
- [Group By Clause](/dotnet/visual-basic/language-reference/queries/group-by-clause)   
- [Group Join Clause](/dotnet/visual-basic/language-reference/queries/group-join-clause)   
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)
+ [Aggregate Clause](/dotnet/articles/visual-basic/language-reference/queries/aggregate-clause)   
+ [Group By Clause](/dotnet/articles/visual-basic/language-reference/queries/group-by-clause)   
+ [Group Join Clause](/dotnet/articles/visual-basic/language-reference/queries/group-join-clause)   
+ [Introduction to LINQ in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/articles/visual-basic/programming-guide/language-features/linq/index)

@@ -44,5 +44,5 @@ If a property specifies `Default`, all properties overloaded on that name must a
 -   Make sure all of the overloaded properties are declared `Default`.  
   
 ## See Also  
- [Considerations in Overloading Procedures](/dotnet/visual-basic/language-reference/procedures/considerations-in-overloading-procedures)   
- [Default](/dotnet/visual-basic/language-reference/modifiers/default)
+ [Considerations in Overloading Procedures](/dotnet/articles/visual-basic/language-reference/procedures/considerations-in-overloading-procedures)   
+ [Default](/dotnet/articles/visual-basic/language-reference/modifiers/default)

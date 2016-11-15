@@ -28,4 +28,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Visual Studio Package Load Keys
-This topic is obsolete from Visual Studio 2010. DSLs are deployed using VSIX. For more information, see [Deploying Domain-Specific Language Solutions](/visual-studio/modeling/deploying-domain-specific-language-solutions).
+This topic is obsolete from Visual Studio 2010. DSLs are deployed using VSIX. For more information, see [Deploying Domain-Specific Language Solutions](/visualstudio/modeling/deploying-domain-specific-language-solutions).

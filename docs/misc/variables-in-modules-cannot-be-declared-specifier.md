@@ -44,4 +44,4 @@ You have used a specifier, such as `MustInherit`, on a variable in a `Module` st
 -   Remove the specifier.  
   
 ## See Also  
- [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)
+ [Module Statement](/dotnet/articles/visual-basic/language-reference/statements/module-statement)

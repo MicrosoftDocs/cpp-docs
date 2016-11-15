@@ -44,4 +44,4 @@ You have attempted to use `New` on a class that contains a `MustOverride` member
 -   Remove the `New` statement.  
   
 ## See Also  
- [MustOverride](/dotnet/visual-basic/language-reference/modifiers/mustoverride)
+ [MustOverride](/dotnet/articles/visual-basic/language-reference/modifiers/mustoverride)

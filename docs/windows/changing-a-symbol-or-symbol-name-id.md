@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Changing a Symbol or Symbol Name (ID)
-When you create a new resource or resource object, the development environment assigns it a default symbol name, for example, IDD_DIALOG1. You can use the [Properties Window](/visual-studio/ide/reference/properties-window) to change the default symbol name or to change the name of any symbol already associated with a resource.  
+When you create a new resource or resource object, the development environment assigns it a default symbol name, for example, IDD_DIALOG1. You can use the [Properties Window](/visualstudio/ide/reference/properties-window) to change the default symbol name or to change the name of any symbol already associated with a resource.  
   
 ### To change a resource's symbol name  
   

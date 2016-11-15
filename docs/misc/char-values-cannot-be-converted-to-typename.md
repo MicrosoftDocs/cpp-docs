@@ -48,4 +48,4 @@ translation.priority.mt:
 ## See Also  
  [NOT IN BUILD: Asc, AscW Functions](http://msdn.microsoft.com/en-us/6814bfec-12ba-41fb-b10e-bec99750d5e1)   
  [NOT IN BUILD: Val Function](http://msdn.microsoft.com/en-us/81650f77-9242-4ec1-8e04-e93b5daa451d)   
- [Char Data Type](/dotnet/visual-basic/language-reference/data-types/char-data-type)
+ [Char Data Type](/dotnet/articles/visual-basic/language-reference/data-types/char-data-type)

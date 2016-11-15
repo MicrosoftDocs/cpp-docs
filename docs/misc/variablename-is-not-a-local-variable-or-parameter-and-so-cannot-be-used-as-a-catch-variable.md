@@ -44,4 +44,4 @@ Variables in `Try...Catch...Finally` statements must be declared locally, or be 
 1.  Declare local variables or parameters for `Try...Catch...Finally` statements.  
   
 ## See Also  
- [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
+ [Try...Catch...Finally Statement](/dotnet/articles/visual-basic/language-reference/statements/try-catch-finally-statement)

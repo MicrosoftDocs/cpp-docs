@@ -45,4 +45,4 @@ Two variables with the same name are declared in the same block (which can be a 
   
 ## See Also  
  [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)   
- [Shadowing in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/shadowing)
+ [Shadowing in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/shadowing)

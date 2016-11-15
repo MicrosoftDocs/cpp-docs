@@ -44,6 +44,6 @@ A functionally empty structure occurs. At least one variable member must be decl
 -   Add a `Dim` statement or an `Event` statement to the structure.  
   
 ## See Also  
- [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)   
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [Structure Statement](/dotnet/articles/visual-basic/language-reference/statements/structure-statement)   
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

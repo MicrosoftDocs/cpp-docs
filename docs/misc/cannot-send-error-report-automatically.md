@@ -50,5 +50,5 @@ cannot send error report automatically. Please visit 'http://go.microsoft.com/fw
 -   Enable automatic error reporting by following the instructions at [http://go.microsoft.com/fwlink/?LinkId=42039](http://go.microsoft.com/fwlink/?LinkId=42039).  
   
 ## See Also  
- [/errorreport](/dotnet/visual-basic/reference/command-line-compiler/errorreport)   
+ [/errorreport](/dotnet/articles/visual-basic/reference/command-line-compiler/errorreport)   
  [http://go.microsoft.com/fwlink/?LinkId=42039](http://go.microsoft.com/fwlink/?LinkId=42039)

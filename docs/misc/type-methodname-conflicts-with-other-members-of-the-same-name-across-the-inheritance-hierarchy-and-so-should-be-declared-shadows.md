@@ -37,7 +37,7 @@ translation.priority.mt:
 # &lt;type&gt; &#39;&lt;methodname&gt;&#39; conflicts with other members of the same name across the inheritance hierarchy and so should be declared &#39;Shadows&#39;
 An interface inheriting from two or more interfaces defines a procedure with the same name as a procedure already defined in more than one of the base interfaces. The procedure in this interface should shadow one of the base interface procedures.  
   
- This message is a warning. `Shadows` is assumed by default. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ This message is a warning. `Shadows` is assumed by default. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42000  
   
@@ -48,5 +48,5 @@ An interface inheriting from two or more interfaces defines a procedure with the
 -   If you do not intend to hide any of the base interface procedures, change the name of the new procedure.  
   
 ## See Also  
- [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)   
- [Shadowing in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/shadowing)
+ [Shadows](/dotnet/articles/visual-basic/language-reference/modifiers/shadows)   
+ [Shadowing in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/shadowing)

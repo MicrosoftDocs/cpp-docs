@@ -33,7 +33,7 @@ translation.priority.mt:
 # How to: Unregister VSPackages
 By default, when you build VSPackages, they are registered to the experimental registry hive. Your experimental hive may fill with VSPackages that you do not intend to keep after you have experimented with them.  
   
- To delete all packages that are registered in the experimental hive, just reset the hive by using the CreateExpInstance tool with the /Reset option. For more information, see [The Experimental Instance](/visual-studio/extensibility/the-experimental-instance).  
+ To delete all packages that are registered in the experimental hive, just reset the hive by using the CreateExpInstance tool with the /Reset option. For more information, see [The Experimental Instance](/visualstudio/extensibility/the-experimental-instance).  
   
 ## Unregistering Individual VSPackages  
   

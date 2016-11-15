@@ -50,4 +50,4 @@ A `Continue` statement must be followed by `Do`, `For`, or `While`, depending on
 4.  Otherwise, remove the `Continue` statement.  
   
 ## See Also  
- [Continue Statement](/dotnet/visual-basic/language-reference/statements/continue-statement)
+ [Continue Statement](/dotnet/articles/visual-basic/language-reference/statements/continue-statement)

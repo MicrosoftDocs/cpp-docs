@@ -52,6 +52,6 @@ This error generally occurs when the `/stop` switch has been entered, along with
 3.  If you want to start a new Find in Files or Replace in Files operation, re-enter the command, omitting `/stop`.  
   
 ## See Also  
- [Replace In Files Command](/visual-studio/ide/reference/replace-in-files-command)   
- [Find in Files Command](/visual-studio/ide/reference/find-in-files-command)   
- [Visual Studio Commands](/visual-studio/ide/reference/visual-studio-commands)
+ [Replace In Files Command](/visualstudio/ide/reference/replace-in-files-command)   
+ [Find in Files Command](/visualstudio/ide/reference/find-in-files-command)   
+ [Visual Studio Commands](/visualstudio/ide/reference/visual-studio-commands)

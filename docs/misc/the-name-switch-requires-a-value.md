@@ -44,4 +44,4 @@ This error generally occurs when a switch is specified without a required value.
      Re-enter the command and omit the switch.  
   
 ## See Also  
- [Visual Studio Commands](/visual-studio/ide/reference/visual-studio-commands)
+ [Visual Studio Commands](/visualstudio/ide/reference/visual-studio-commands)

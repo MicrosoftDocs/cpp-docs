@@ -44,4 +44,4 @@ The item being referenced has either not been assigned a value, or it was assign
 -   Verify that item's name is spelled and set correctly.  
   
 ## See Also  
- [Nothing](/dotnet/visual-basic/language-reference/nothing)
+ [Nothing](/dotnet/articles/visual-basic/language-reference/nothing)

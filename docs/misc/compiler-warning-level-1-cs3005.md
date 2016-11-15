@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS3005
 Identifier 'identifier' differing only in case is not CLS-compliant  
   
- A [public](/dotnet/csharp/language-reference/keywords/public), [protected](/dotnet/csharp/language-reference/keywords/protected), or `protected``internal` identifier, which differs from another `public`, `protected`, or `protected``internal` identifier only in the case of one or more letters, is not compliant with the Common Language Specification (CLS). For more information on CLS Compliance, see [Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3) and [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md).  
+ A [public](/dotnet/articles/csharp/language-reference/keywords/public), [protected](/dotnet/articles/csharp/language-reference/keywords/protected), or `protected``internal` identifier, which differs from another `public`, `protected`, or `protected``internal` identifier only in the case of one or more letters, is not compliant with the Common Language Specification (CLS). For more information on CLS Compliance, see [Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3) and [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md).  
   
 ## Example  
  The following example generates CS3003:  

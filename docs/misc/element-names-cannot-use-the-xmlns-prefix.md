@@ -50,6 +50,6 @@ Dim elem = <xmlns:ElementName>
 -   Change the XML namespace prefix to a valid value, or remove the prefix.  
   
 ## See Also  
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [Imports Statement (XML Namespace)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [Imports Statement (XML Namespace)](/dotnet/articles/visual-basic/language-reference/statements/imports-statement-xml-namespace)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

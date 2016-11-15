@@ -44,5 +44,5 @@ You have used a specifier that is not valid on a member within a `Structure` sta
 -   Remove the specifier.  
   
 ## See Also  
- [Structures](/dotnet/visual-basic/programming-guide/language-features/data-types/structures)   
- [Structures and Classes](/dotnet/visual-basic/programming-guide/language-features/data-types/structures-and-classes)
+ [Structures](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures)   
+ [Structures and Classes](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures-and-classes)

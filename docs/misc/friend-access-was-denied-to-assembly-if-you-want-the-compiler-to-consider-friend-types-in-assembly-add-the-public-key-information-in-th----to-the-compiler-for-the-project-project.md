@@ -44,4 +44,4 @@ translation.priority.mt:
 ## See Also  
  <xref:System.Reflection.AssemblyName>   
  [NOT IN BUILD: Friend Assemblies (Visual Basic)](http://msdn.microsoft.com/en-us/80e7a33a-ca91-450b-a00e-c5a7986e228c)   
- [Visual Basic Command-Line Compiler](/dotnet/visual-basic/reference/command-line-compiler/index)
+ [Visual Basic Command-Line Compiler](/dotnet/articles/visual-basic/reference/command-line-compiler/index)

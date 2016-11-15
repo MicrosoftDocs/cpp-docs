@@ -48,5 +48,5 @@ A structure declares a variable and initializes it with an instance of itself.
 2.  If you intend to create another instance of the same structure, you must declare and create it outside the structure.  
   
 ## See Also  
- [Structures](/dotnet/visual-basic/programming-guide/language-features/data-types/structures)   
- [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)
+ [Structures](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures)   
+ [Structure Statement](/dotnet/articles/visual-basic/language-reference/statements/structure-statement)

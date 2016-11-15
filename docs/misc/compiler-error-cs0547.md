@@ -38,9 +38,9 @@ translation.priority.mt:
 # Compiler Error CS0547
 'property' : property or indexer cannot have void type  
   
- [void](/dotnet/csharp/language-reference/keywords/void) is invalid as a return value for a property.  
+ [void](/dotnet/articles/csharp/language-reference/keywords/void) is invalid as a return value for a property.  
   
- For more information, see [Properties](/dotnet/csharp/programming-guide/classes-and-structs/properties).  
+ For more information, see [Properties](/dotnet/articles/csharp/programming-guide/classes-and-structs/properties).  
   
  The following sample generates CS0547:  
   

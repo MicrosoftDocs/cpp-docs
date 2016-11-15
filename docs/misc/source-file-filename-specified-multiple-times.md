@@ -44,4 +44,4 @@ A file has been specified multiple times.
 -   Remove redundant file specifiers.  
   
 ## See Also  
- [My.Computer.FileSystem Object](/dotnet/visual-basic/language-reference/objects/my-computer-filesystem-object)
+ [My.Computer.FileSystem Object](/dotnet/articles/visual-basic/language-reference/objects/my-computer-filesystem-object)

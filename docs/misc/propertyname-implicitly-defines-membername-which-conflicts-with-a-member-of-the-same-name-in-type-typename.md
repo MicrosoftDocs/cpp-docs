@@ -45,5 +45,5 @@ The name of a type member conflicts with the name of a member implicitly created
   
 ## See Also  
  [NOT IN BUILD: How to: Add Fields and Properties to a Class](http://msdn.microsoft.com/en-us/ae53f61b-3abc-413e-8931-703c5f5e8fc2)   
- [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)   
+ [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)   
  [NOT IN BUILD: Properties and Property Procedures](http://msdn.microsoft.com/en-us/23e2a1ec-7e9d-4109-8940-c703d981077b)

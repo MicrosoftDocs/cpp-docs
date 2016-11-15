@@ -45,5 +45,5 @@ A programming element is defined in a project to which the current project does 
   
 ## See Also  
  [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)   
- [/reference (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/reference)   
+ [/reference (Visual Basic)](/dotnet/articles/visual-basic/reference/command-line-compiler/reference)   
  [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

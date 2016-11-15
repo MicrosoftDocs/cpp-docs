@@ -40,4 +40,4 @@ This error occurs when you enter a switch twice in the Command window, and the v
 -   Re-enter the command, but use each switch only once.  
   
 ## See Also  
- [Command Window](/visual-studio/ide/reference/command-window)
+ [Command Window](/visualstudio/ide/reference/command-window)

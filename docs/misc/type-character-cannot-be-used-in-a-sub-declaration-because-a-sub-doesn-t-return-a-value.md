@@ -44,5 +44,5 @@ A `Sub` procedure, like a `Function` procedure, is a separate procedure that can
 -   Change the `Sub` procedure to a `Function` procedure.  
   
 ## See Also  
- [Sub Procedures](/dotnet/visual-basic/language-reference/procedures/sub-procedures)   
- [Function Procedures](/dotnet/visual-basic/language-reference/procedures/function-procedures)
+ [Sub Procedures](/dotnet/articles/visual-basic/language-reference/procedures/sub-procedures)   
+ [Function Procedures](/dotnet/articles/visual-basic/language-reference/procedures/function-procedures)

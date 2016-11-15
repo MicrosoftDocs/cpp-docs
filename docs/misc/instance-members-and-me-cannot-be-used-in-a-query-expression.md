@@ -61,7 +61,7 @@ A LINQ query in a `Structure` includes a reference to `Me` or to an instance mem
     ```  
   
 ## See Also  
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)   
+ [Introduction to LINQ in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/articles/visual-basic/programming-guide/language-features/linq/index)   
  [Me](http://msdn.microsoft.com/en-us/a65973c7-cf06-4547-9b25-9fba885525c2)   
  [Structure (Visual Basic)](http://msdn.microsoft.com/en-us/263ce115-ac36-4c05-8cb7-0e0eead5c6d0)

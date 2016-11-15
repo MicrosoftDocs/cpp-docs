@@ -44,4 +44,4 @@ A response file has been specified more than once. Response files contain compil
 -   Remove redundant response file specifiers.  
   
 ## See Also  
- [Visual Basic Compiler Options Listed by Category](/dotnet/visual-basic/reference/command-line-compiler/compiler-options-listed-by-category)
+ [Visual Basic Compiler Options Listed by Category](/dotnet/articles/visual-basic/reference/command-line-compiler/compiler-options-listed-by-category)

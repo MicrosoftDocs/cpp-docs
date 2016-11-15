@@ -44,5 +44,5 @@ The type parameter that has been supplied is lacking an `As`, comma (`,`), or cl
 -   Supply the missing `As`, comma, or closing parenthesis.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)   
- [Troubleshooting Data Types](/dotnet/visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)   
+ [Troubleshooting Data Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types)

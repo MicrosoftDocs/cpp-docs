@@ -82,7 +82,7 @@ Designates a function as the handler for the reporting of run-time error checks 
   
  If an error has been assigned a type of –1 by using [_RTC_SetErrorType](../../c-runtime-library/reference/rtc-seterrortype.md), the error handling function is not called.  
   
- Before you can call this function, you must first call one of the run-time error-check initialization functions. For more information, see [Using Run-Time Checks Without the C Run-Time Library](/visual-studio/debugger/using-run-time-checks-without-the-c-run-time-library).  
+ Before you can call this function, you must first call one of the run-time error-check initialization functions. For more information, see [Using Run-Time Checks Without the C Run-Time Library](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library).  
   
  **_RTC_error_fnW** is defined as follows:  
   
@@ -105,7 +105,7 @@ Designates a function as the handler for the reporting of run-time error checks 
  *format*  
  printf style string to display an error message, using the remaining parameters. The first argument of the VA_ARGLIST is the RTC Error number that occurred.  
   
- For an example that shows how to use **_RTC_error_fnW**, see [Native Run-Time Checks Customization](/visual-studio/debugger/native-run-time-checks-customization).  
+ For an example that shows how to use **_RTC_error_fnW**, see [Native Run-Time Checks Customization](/visualstudio/debugger/native-run-time-checks-customization).  
   
 ## Requirements  
   

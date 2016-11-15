@@ -59,7 +59,7 @@ The Progress Bar region of the [!INCLUDE[vsprvs](../assembler/masm/includes/vspr
 -   Clears the progress bar by using the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar.Clear%2A> method.  
   
 ## See Also  
- [Extending the Status Bar](/visual-studio/extensibility/extending-the-status-bar)   
+ [Extending the Status Bar](/visualstudio/extensibility/extending-the-status-bar)   
  [How to: Read from and Write to the Feedback Region of the Status Bar](../misc/how-to-read-from-and-write-to-the-feedback-region-of-the-status-bar.md)   
  [How to: Use the Animation Region of the Status Bar](../misc/how-to-use-the-animation-region-of-the-status-bar.md)   
  [How to: Program the Designer Region of the Status Bar](../misc/how-to-program-the-designer-region-of-the-status-bar.md)

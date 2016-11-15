@@ -33,7 +33,7 @@ translation.priority.mt:
 > [!NOTE]
 >  The recommended way to add custom controls to the Toolbox is to use the Toolbox Control templates that come with the Visual Studio 10 SDK. This topic is retained only for backward compatibility, and for adding existing controls to the Toolbox.  
 >   
->  For more information on creating toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](/visual-studio/extensibility/creating-a-wpf-toolbox-control).  
+>  For more information on creating toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](/visualstudio/extensibility/creating-a-wpf-toolbox-control).  
   
  A VSPackage based on an interop assembly can extend [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] **Toolbox** functionality by adding ActiveX controls.  
   

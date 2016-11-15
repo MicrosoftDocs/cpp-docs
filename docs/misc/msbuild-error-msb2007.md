@@ -43,4 +43,4 @@ translation.priority.mt:
 1.  Check the spelling of the project file name.  
   
 ## See Also  
- [Project File Schema Reference](/visual-studio/msbuild/msbuild-project-file-schema-reference)
+ [Project File Schema Reference](/visualstudio/msbuild/msbuild-project-file-schema-reference)

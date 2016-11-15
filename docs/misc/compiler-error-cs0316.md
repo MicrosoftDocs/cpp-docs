@@ -61,5 +61,5 @@ public class Test
 ```  
   
 ## See Also  
- [Indexers](/dotnet/csharp/programming-guide/indexers/index)   
- [C# Keywords](/dotnet/csharp/language-reference/keywords/index)
+ [Indexers](/dotnet/articles/csharp/programming-guide/indexers/index)   
+ [C# Keywords](/dotnet/articles/csharp/language-reference/keywords/index)

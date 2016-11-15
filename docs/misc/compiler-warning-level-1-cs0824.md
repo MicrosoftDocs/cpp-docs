@@ -62,5 +62,5 @@ public class C
 ```  
   
 ## See Also  
- [extern](/dotnet/csharp/language-reference/keywords/extern)   
- [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)
+ [extern](/dotnet/articles/csharp/language-reference/keywords/extern)   
+ [#pragma warning](/dotnet/articles/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)

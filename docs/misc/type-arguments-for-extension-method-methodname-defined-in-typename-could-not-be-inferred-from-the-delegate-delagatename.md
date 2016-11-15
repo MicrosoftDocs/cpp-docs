@@ -46,8 +46,8 @@ An assignment statement uses `AddressOf` to assign the address of a generic exte
 -   In the `AddressOf` expression, specify the type arguments for the extension method.  
   
 ## See Also  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [AddressOf Operator](/dotnet/visual-basic/language-reference/operators/addressof-operator)   
- [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures)   
- [Type List](/dotnet/visual-basic/language-reference/statements/type-list)   
- [Extension Methods](/dotnet/visual-basic/language-reference/procedures/extension-methods)
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [AddressOf Operator](/dotnet/articles/visual-basic/language-reference/operators/addressof-operator)   
+ [Generic Procedures in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-procedures)   
+ [Type List](/dotnet/articles/visual-basic/language-reference/statements/type-list)   
+ [Extension Methods](/dotnet/articles/visual-basic/language-reference/procedures/extension-methods)

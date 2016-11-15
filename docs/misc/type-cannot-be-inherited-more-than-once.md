@@ -44,4 +44,4 @@ You have duplicated an `Inherits` statement.
 -   Remove the redundant `Inherits` statement.  
   
 ## See Also  
- [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement)
+ [Inherits Statement](/dotnet/articles/visual-basic/language-reference/statements/inherits-statement)

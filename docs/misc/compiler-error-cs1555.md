@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS1555
 Could not find 'class' specified for Main method  
   
- A class was specified to the [/main](/dotnet/csharp/language-reference/compiler-options/main-compiler-option) compiler option, but the class name was not found in the source code.
+ A class was specified to the [/main](/dotnet/articles/csharp/language-reference/compiler-options/main-compiler-option) compiler option, but the class name was not found in the source code.

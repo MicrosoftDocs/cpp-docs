@@ -37,10 +37,10 @@ This error generally occurs when a search string includes two or more regular ex
   
 ### To correct this error  
   
-1.  Enter the string again. For more information on syntax, see [Regular Expressions](/visual-studio/ide/using-regular-expressions-in-visual-studio).  
+1.  Enter the string again. For more information on syntax, see [Regular Expressions](/visualstudio/ide/using-regular-expressions-in-visual-studio).  
   
 ## See Also  
- [Finding and Replacing Text](/visual-studio/ide/finding-and-replacing-text)   
- [Using Regular Expressions in Visual Studio](/visual-studio/ide/using-regular-expressions-in-visual-studio)   
+ [Finding and Replacing Text](/visualstudio/ide/finding-and-replacing-text)   
+ [Using Regular Expressions in Visual Studio](/visualstudio/ide/using-regular-expressions-in-visual-studio)   
  [Wildcards (Visual Studio)](http://msdn.microsoft.com/en-us/9745c56f-0b73-44e1-b393-c17e39670c26)   
- [Find in Files](/visual-studio/ide/find-in-files)
+ [Find in Files](/visualstudio/ide/find-in-files)

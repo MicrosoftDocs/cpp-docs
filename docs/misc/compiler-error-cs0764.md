@@ -64,4 +64,4 @@ public partial class C
 ```  
   
 ## See Also  
- [Partial Classes and Methods](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
+ [Partial Classes and Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0218
 The type ('type') must contain declarations of operator true and operator false  
   
- If you define an operator for a user-defined type, and then try to use the operator as a short-circuit operator, the user-defined operator must have operator true and operator false defined. For more information on short-circuit operators, see [&& Operator](/dotnet/csharp/language-reference/operators/conditional-and-operator) and [&#124;&#124; Operator](../Topic/%7C%7C%20Operator%20\(C%23%20Reference\).md).  
+ If you define an operator for a user-defined type, and then try to use the operator as a short-circuit operator, the user-defined operator must have operator true and operator false defined. For more information on short-circuit operators, see [&& Operator](/dotnet/articles/csharp/language-reference/operators/conditional-and-operator) and [&#124;&#124; Operator](../Topic/%7C%7C%20Operator%20\(C%23%20Reference\).md).  
   
  The following sample generates CS0218:  
   
@@ -79,4 +79,4 @@ public class MyClass
 ```  
   
 ## See Also  
- [Conversion Operators](/dotnet/csharp/programming-guide/statements-expressions-operators/conversion-operators)
+ [Conversion Operators](/dotnet/articles/csharp/programming-guide/statements-expressions-operators/conversion-operators)

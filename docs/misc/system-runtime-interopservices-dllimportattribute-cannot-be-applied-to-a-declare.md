@@ -45,4 +45,4 @@ The `DllImportAttribute` attribute was applied to a `Declare` function. This att
   
 ## See Also  
  <xref:System.Runtime.InteropServices.DllImportAttribute>   
- [Declare Statement](/dotnet/visual-basic/language-reference/statements/declare-statement)
+ [Declare Statement](/dotnet/articles/visual-basic/language-reference/statements/declare-statement)

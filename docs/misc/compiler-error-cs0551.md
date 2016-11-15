@@ -40,7 +40,7 @@ Explicit interface implementation 'implementation' is missing accessor 'accessor
   
  A class that explicitly implements an interface's property must implement all the accessors that the interface defines.  
   
- For more information, see [Using Properties](/dotnet/csharp/programming-guide/classes-and-structs/using-properties).  
+ For more information, see [Using Properties](/dotnet/articles/csharp/programming-guide/classes-and-structs/using-properties).  
   
 ## Example  
  The following sample generates CS0551.  

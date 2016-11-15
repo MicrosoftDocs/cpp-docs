@@ -103,7 +103,7 @@ This topic discusses the various .lib files that comprise the C run-time librari
   
  For more information on using the CRT with **/clr**, see [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md); for **/clr:pure**, see [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md).  
   
- To build a debug version of your application, the [_DEBUG](../c-runtime-library/debug.md) flag must be defined and the application must be linked with a debug version of one of these libraries. For more information about using the debug versions of the library files, see [CRT Debugging Techniques](/visual-studio/debugger/crt-debugging-techniques).  
+ To build a debug version of your application, the [_DEBUG](../c-runtime-library/debug.md) flag must be defined and the application must be linked with a debug version of one of these libraries. For more information about using the debug versions of the library files, see [CRT Debugging Techniques](/visualstudio/debugger/crt-debugging-techniques).  
   
  This version of the CRT is not fully conformant with the C99 standard. In particular, the \<tgmath.h> header and the CX_LIMITED_RANGE/FP_CONTRACT pragma macros are not supported. Certain elements such as the meaning of parameter specifiers in standard IO functions use legacy interpretations by default. You can use /Zc compiler conformance options and specify linker options to control some aspects of library conformance,  
   

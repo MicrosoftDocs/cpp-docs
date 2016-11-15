@@ -58,7 +58,7 @@ In Visual C++, you can add comments to your source code that will be processed t
 |The ID strings that the compiler produces to identify the constructs in your code|[Processing the .xml File](../ide/dot-xml-file-processing.md)|  
 |How to delimit documentation tags|[Delimiters for Visual C++ Documentation Tags](../ide/delimiters-for-visual-cpp-documentation-tags.md)|  
 |Generating an .xml file from one or more .xdc files.|[XDCMake Reference](../ide/xdcmake-reference.md)|  
-|Links to information about XML as it relates to Visual Studio feature areas|[XML in Visual Studio](/visual-studio/xml-tools/xml-tools-in-visual-studio)|  
+|Links to information about XML as it relates to Visual Studio feature areas|[XML in Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio)|  
   
  If you need to put XML special characters in the text of a documentation comment, you must use XML entities or a CDATA section.  
   

@@ -44,5 +44,5 @@ More than one `RemoveHandler` declaration appeared in a custom event declaration
 -   Remove the redundant `RemoveHandler` statement.  
   
 ## See Also  
- [RemoveHandler Statement](/dotnet/visual-basic/language-reference/statements/removehandler-statement)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [RemoveHandler Statement](/dotnet/articles/visual-basic/language-reference/statements/removehandler-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

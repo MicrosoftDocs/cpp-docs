@@ -35,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Generic methods cannot use &#39;Handles&#39; clause
-A generic `Sub` procedure includes a [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause) clause in its declaration.  
+A generic `Sub` procedure includes a [Handles](/dotnet/articles/visual-basic/language-reference/statements/handles-clause) clause in its declaration.  
   
  A `Handles` clause specifies a list of events that the `Sub` procedure handles. To be an event handler, the `Sub` procedure must have the same signature as each event it is to handle. A generic procedure can be created more than once, with signatures that [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] cannot predict at compile time. Therefore, [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] cannot guarantee a signature that matches those of the events in the `Handles` clause.  
   
@@ -43,10 +43,10 @@ A generic `Sub` procedure includes a [Handles](/dotnet/visual-basic/language-ref
   
 ### To correct this error  
   
--   If the `Sub` procedure needs to be generic, remove the `Handles` clause from its declaration. Use the [AddHandler Statement](/dotnet/visual-basic/language-reference/statements/addhandler-statement) to associate this event handler with an event.  
+-   If the `Sub` procedure needs to be generic, remove the `Handles` clause from its declaration. Use the [AddHandler Statement](/dotnet/articles/visual-basic/language-reference/statements/addhandler-statement) to associate this event handler with an event.  
   
--   If the `Sub` procedure needs to use the `Handles` clause to associate events, remove the [Of](/dotnet/visual-basic/language-reference/statements/of-clause) clause from its declaration. You must use a nongeneric procedure with `Handles`.  
+-   If the `Sub` procedure needs to use the `Handles` clause to associate events, remove the [Of](/dotnet/articles/visual-basic/language-reference/statements/of-clause) clause from its declaration. You must use a nongeneric procedure with `Handles`.  
   
 ## See Also  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
  [NOT IN BUILD:Events and Event Handlers](http://msdn.microsoft.com/en-us/95074a0d-1cbc-4221-a95a-964185c7f962)

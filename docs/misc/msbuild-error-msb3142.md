@@ -45,4 +45,4 @@ translation.priority.mt:
  These are the same potential reasons that file.copy or directory.createdirectory fail.  
   
 ## See Also  
- [Product and Package Schema Reference](/visual-studio/deployment/product-and-package-schema-reference)
+ [Product and Package Schema Reference](/visualstudio/deployment/product-and-package-schema-reference)

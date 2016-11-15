@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0254
 The right hand side of a fixed statement assignment may not be a cast expression  
   
- The right side of a [fixed](/dotnet/csharp/language-reference/keywords/fixed-statement) expression may not use a cast. For more information, see [Unsafe Code and Pointers](/dotnet/csharp/programming-guide/unsafe-code-pointers/index).  
+ The right side of a [fixed](/dotnet/articles/csharp/language-reference/keywords/fixed-statement) expression may not use a cast. For more information, see [Unsafe Code and Pointers](/dotnet/articles/csharp/programming-guide/unsafe-code-pointers/index).  
   
  The following sample generates CS0254:  
   

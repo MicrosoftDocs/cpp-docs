@@ -46,4 +46,4 @@ An undefined field or property is being referenced for the attribute.
 2.  Verify that your project can access the correct attribute class, and add it to the project references if necessary.  
   
 ## See Also  
- [Imports Statement (.NET Namespace and Type)](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)
+ [Imports Statement (.NET Namespace and Type)](/dotnet/articles/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)

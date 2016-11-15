@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0500
 'class member' cannot declare a body because it is marked abstract  
   
- An [abstract](/dotnet/csharp/language-reference/keywords/abstract) method cannot contain its implementation.  
+ An [abstract](/dotnet/articles/csharp/language-reference/keywords/abstract) method cannot contain its implementation.  
   
  The following sample generates CS0500:  
   

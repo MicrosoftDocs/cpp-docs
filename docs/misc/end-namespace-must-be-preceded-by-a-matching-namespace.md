@@ -44,5 +44,5 @@ Namespace blocks begin with a `Namespace` statement and end with an `End Namespa
 -   Make sure that the namespace block begins with a `Namespace` statement.  
   
 ## See Also  
- [Namespace Statement](/dotnet/visual-basic/language-reference/statements/namespace-statement)   
- [Namespaces in Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces)
+ [Namespace Statement](/dotnet/articles/visual-basic/language-reference/statements/namespace-statement)   
+ [Namespaces in Visual Basic](/dotnet/articles/visual-basic/programming-guide/program-structure/namespaces)

@@ -44,6 +44,6 @@ You have attempted to use `ReDim` to change the rank (number of dimensions) of a
 -   Make sure that you intend the rank instead of the sizes of the array, and if possible, use `Dim` to declare a new array with the desired rank.  
   
 ## See Also  
- [ReDim Statement](/dotnet/visual-basic/language-reference/statements/redim-statement)   
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
+ [ReDim Statement](/dotnet/articles/visual-basic/language-reference/statements/redim-statement)   
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)   
  [NOTINBUILD Overview of Arrays in Visual Basic](http://msdn.microsoft.com/en-us/ca50e2f2-b4d2-4c57-9169-9abbcc3392d8)

@@ -41,7 +41,7 @@ An external project is a Visual C++ project that uses a makefile or other facili
   
  If you have an external project (for example, a makefile project) that you want to build in the Visual C++ development environment, create a Makefile project and specify your project's build command and output in the Makefile Application Wizard. For more information, see [Creating a Makefile Project](../ide/creating-a-makefile-project.md).  
   
- Note that Visual C++ no longer supports the ability to export a makefile for the active project from the development environment. Use [Devenv Command Line Switches](/visual-studio/ide/reference/devenv-command-line-switches) to build Visual Studio projects at the command line.  
+ Note that Visual C++ no longer supports the ability to export a makefile for the active project from the development environment. Use [Devenv Command Line Switches](/visualstudio/ide/reference/devenv-command-line-switches) to build Visual Studio projects at the command line.  
   
 ## See Also  
  [Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md)

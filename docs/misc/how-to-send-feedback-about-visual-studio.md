@@ -35,4 +35,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Send Feedback About Visual Studio
-This content has been removed. For information, see [Talk to Us](/visual-studio/ide/talk-to-us).
+This content has been removed. For information, see [Talk to Us](/visualstudio/ide/talk-to-us).

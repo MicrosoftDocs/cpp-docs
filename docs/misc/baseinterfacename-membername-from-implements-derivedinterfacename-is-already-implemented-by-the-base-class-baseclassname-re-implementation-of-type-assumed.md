@@ -39,9 +39,9 @@ A property, procedure, or event in a derived class uses an `Implements` clause s
   
  The member being implemented is defined by the base interface and inherited by the derived interface. The base class directly implements the base interface. The derived class implements the derived interface and can easily miss the fact that the base class has already implemented the member.  
   
- A derived class can reimplement an interface member that is implemented by its base class. This is not the same as overriding the base class implementation. For more information, see [Implements](/dotnet/visual-basic/language-reference/statements/implements-clause).  
+ A derived class can reimplement an interface member that is implemented by its base class. This is not the same as overriding the base class implementation. For more information, see [Implements](/dotnet/articles/visual-basic/language-reference/statements/implements-clause).  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42014  
   
@@ -52,5 +52,5 @@ A property, procedure, or event in a derived class uses an `Implements` clause s
 -   If you do not intend to reimplement the interface member, remove the `Implements` clause from the property, procedure, or event declaration.  
   
 ## See Also  
- [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)   
+ [Interfaces](/dotnet/articles/visual-basic/programming-guide/language-features/interfaces/index)   
  [NOT IN BUILD: Implements Keyword and Implements Statement](http://msdn.microsoft.com/en-us/b96560f7-6413-480f-a1e2-f80253bab5be)

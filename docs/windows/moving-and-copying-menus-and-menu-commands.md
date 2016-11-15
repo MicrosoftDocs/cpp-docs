@@ -55,7 +55,7 @@ You can move or copy menus and menu commands using the drag-and-drop method or b
   
 2.  From the shortcut menu, choose **Cut** (to move) or **Copy**.  
   
-3.  If you are moving the items to another menu resource or resource script file, [open it in another window](/visual-studio/ide/customizing-window-layouts-in-visual-studio).  
+3.  If you are moving the items to another menu resource or resource script file, [open it in another window](/visualstudio/ide/customizing-window-layouts-in-visual-studio).  
   
 4.  Select the position of the menu or menu command you want to move or copy to.  
   

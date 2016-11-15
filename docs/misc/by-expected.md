@@ -53,7 +53,7 @@ An `Order By` or `Group By` clause has been specified without the `By` keyword.
   
 ## See Also  
  [How to: Sort Query Results](../Topic/How%20to:%20Sort%20Query%20Results%20by%20Using%20LINQ%20\(Visual%20Basic\).md)   
- [Order By Clause](/dotnet/visual-basic/language-reference/queries/order-by-clause)   
- [Group By Clause](/dotnet/visual-basic/language-reference/queries/group-by-clause)   
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)
+ [Order By Clause](/dotnet/articles/visual-basic/language-reference/queries/order-by-clause)   
+ [Group By Clause](/dotnet/articles/visual-basic/language-reference/queries/group-by-clause)   
+ [Introduction to LINQ in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/articles/visual-basic/programming-guide/language-features/linq/index)

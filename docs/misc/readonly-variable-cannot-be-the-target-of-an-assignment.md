@@ -44,5 +44,5 @@ A `ReadOnly` property has been found in a context that assigns a value to it. On
 -   Remove the `ReadOnly` keyword from the `Dim` statement declaring the variable, or remove the statement that assigns it a value.  
   
 ## See Also  
- [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)   
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)
+ [ReadOnly](/dotnet/articles/visual-basic/language-reference/modifiers/readonly)   
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)

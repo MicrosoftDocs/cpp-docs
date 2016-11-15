@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1925
 Cannot initialize object of type 'type' with a collection initializer.  
   
- Collection initializers are only allowed for collection classes that meet certain criteria. For more information, see [Object and Collection Initializers](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers). This error is also produced when you try to use the short form of an array initializer nested inside a collection initializer.  
+ Collection initializers are only allowed for collection classes that meet certain criteria. For more information, see [Object and Collection Initializers](/dotnet/articles/csharp/programming-guide/classes-and-structs/object-and-collection-initializers). This error is also produced when you try to use the short form of an array initializer nested inside a collection initializer.  
   
 ### To correct this error  
   

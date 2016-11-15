@@ -44,5 +44,5 @@ The file specified for the `/win32manifest` compiler option cannot be found.
 1.  Provide a valid file name and path for the `/win32manifest` compiler option.  
   
 ## See Also  
- [/win32manifest (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/win32manifest)   
- [Visual Basic Command-Line Compiler](/dotnet/visual-basic/reference/command-line-compiler/index)
+ [/win32manifest (Visual Basic)](/dotnet/articles/visual-basic/reference/command-line-compiler/win32manifest)   
+ [Visual Basic Command-Line Compiler](/dotnet/articles/visual-basic/reference/command-line-compiler/index)

@@ -59,7 +59,7 @@ Normally, when you build an MFC application for Windows using the [MFC Applicati
   
 2.  In [Resource View](../windows/resource-view-window.md), highlight the resources folder (for example, MFC.rc).  
   
-3.  In the [Properties window](/visual-studio/ide/reference/properties-window), set the **MFC Mode** property to **True**.  
+3.  In the [Properties window](/visualstudio/ide/reference/properties-window), set the **MFC Mode** property to **True**.  
   
     > [!NOTE]
     >  In addition to setting this flag, the .rc file must be part of an MFC project. For example, just setting **MFC Mode** to **True** on an .rc file in a Win32 project won't give you any of the MFC features.  

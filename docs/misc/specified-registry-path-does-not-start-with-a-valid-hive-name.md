@@ -53,4 +53,4 @@ The specified registry path does not begin with a valid hive name. Valid hive na
 ## See Also  
  [Manipulating Strings](../Topic/Manipulating%20Strings%20in%20the%20.NET%20Framework.md)   
  [Common Registry Tasks (Visual Basic)](http://msdn.microsoft.com/en-us/0bde9f77-b38b-4c76-bac2-ff6cda3087c4)   
- [My.Computer.Registry Object](/dotnet/visual-basic/language-reference/objects/my-computer-registry-object)
+ [My.Computer.Registry Object](/dotnet/articles/visual-basic/language-reference/objects/my-computer-registry-object)

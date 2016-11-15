@@ -34,4 +34,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Walkthrough: Extending the Tool Window
-The content in this topic has been removed. To find out how to create a tool window, see [Adding a Tool Window](/visual-studio/extensibility/adding-a-tool-window). To find out how to give dynamic visibility to a menu command, see [Dynamically Adding Menu Items](/visual-studio/extensibility/dynamically-adding-menu-items).
+The content in this topic has been removed. To find out how to create a tool window, see [Adding a Tool Window](/visualstudio/extensibility/adding-a-tool-window). To find out how to give dynamic visibility to a menu command, see [Dynamically Adding Menu Items](/visualstudio/extensibility/dynamically-adding-menu-items).

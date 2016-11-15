@@ -50,8 +50,8 @@ A procedure or property is declared as `MustOverride` within a class that is def
 -   If the class must be `NotInheritable`, then remove the `MustOverride` keyword from the procedure or property. You cannot override it because you cannot inherit the class.  
   
 ## See Also  
- [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)   
- [MustOverride](/dotnet/visual-basic/language-reference/modifiers/mustoverride)   
- [MustInherit](/dotnet/visual-basic/language-reference/modifiers/mustinherit)   
- [NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)   
- [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
+ [Partial](/dotnet/articles/visual-basic/language-reference/modifiers/partial)   
+ [MustOverride](/dotnet/articles/visual-basic/language-reference/modifiers/mustoverride)   
+ [MustInherit](/dotnet/articles/visual-basic/language-reference/modifiers/mustinherit)   
+ [NotInheritable](/dotnet/articles/visual-basic/language-reference/modifiers/notinheritable)   
+ [Inheritance Basics](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

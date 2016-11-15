@@ -44,5 +44,5 @@ The `New` keyword occurs where a type name is required. The context calls for a 
 -   Remove the `New` keyword.  
   
 ## See Also  
- [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator)   
- [Enum Statement](/dotnet/visual-basic/language-reference/statements/enum-statement)
+ [New Operator](/dotnet/articles/visual-basic/language-reference/operators/new-operator)   
+ [Enum Statement](/dotnet/articles/visual-basic/language-reference/statements/enum-statement)

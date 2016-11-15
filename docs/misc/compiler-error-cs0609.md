@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0609
 Cannot set the IndexerName attribute on an indexer marked override  
   
- The name attribute (**IndexerNameAttribute**) cannot be applied to an indexed property that is an override. For more information, see [Indexers](/dotnet/csharp/programming-guide/indexers/index).  
+ The name attribute (**IndexerNameAttribute**) cannot be applied to an indexed property that is an override. For more information, see [Indexers](/dotnet/articles/csharp/programming-guide/indexers/index).  
   
  The following sample generates CS0609:  
   

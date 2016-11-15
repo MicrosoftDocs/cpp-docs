@@ -61,5 +61,5 @@ The Microsoft Program Maintenance Utility (NMAKE.EXE) is a command-line tool inc
  [Building on the Command Line](../build/building-on-the-command-line.md)   
  [C/C++ Build Tools](../build/reference/c-cpp-build-tools.md)   
  [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)   
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)   
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)   
  [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md)

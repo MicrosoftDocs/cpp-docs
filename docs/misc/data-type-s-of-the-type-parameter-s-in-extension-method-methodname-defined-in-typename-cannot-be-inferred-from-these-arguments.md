@@ -81,7 +81,7 @@ End Class
 -   You may be able to specify a data type for the type parameter or parameters instead of relying on type inference.  
   
 ## See Also  
- [Relaxed Delegate Conversion](/dotnet/visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion)   
- [Extension Methods](/dotnet/visual-basic/language-reference/procedures/extension-methods)   
- [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures)   
- [Type Conversions in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/type-conversions)
+ [Relaxed Delegate Conversion](/dotnet/articles/visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion)   
+ [Extension Methods](/dotnet/articles/visual-basic/language-reference/procedures/extension-methods)   
+ [Generic Procedures in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-procedures)   
+ [Type Conversions in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/type-conversions)

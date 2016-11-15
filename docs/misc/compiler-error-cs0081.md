@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0081
 Type parameter declaration must be an identifier not a type  
   
- When you declare a generic method or type, specify the type parameter as an identifier, for example "T" or "inputType". When client code calls the method, it supplies the type, which replaces each occurrence of the identifier in the method or class body. For more information, see [Generic Type Parameters](/dotnet/csharp/programming-guide/generics/generic-type-parameters).  
+ When you declare a generic method or type, specify the type parameter as an identifier, for example "T" or "inputType". When client code calls the method, it supplies the type, which replaces each occurrence of the identifier in the method or class body. For more information, see [Generic Type Parameters](/dotnet/articles/csharp/programming-guide/generics/generic-type-parameters).  
   
 ```  
 // CS0081.cs  
@@ -57,4 +57,4 @@ class MyClass
 ```  
   
 ## See Also  
- [Generics](/dotnet/csharp/programming-guide/generics/index)
+ [Generics](/dotnet/articles/csharp/programming-guide/generics/index)

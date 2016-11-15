@@ -57,4 +57,4 @@ class CS0748
 ```  
   
 ## See Also  
- [Lambda Expressions](/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions)
+ [Lambda Expressions](/dotnet/articles/csharp/programming-guide/statements-expressions-operators/lambda-expressions)

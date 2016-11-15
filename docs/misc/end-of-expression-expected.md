@@ -44,4 +44,4 @@ Extra characters were found at the end of an otherwise complete expression.
 -   Verify the syntax of the object or statement.  
   
 ## See Also  
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

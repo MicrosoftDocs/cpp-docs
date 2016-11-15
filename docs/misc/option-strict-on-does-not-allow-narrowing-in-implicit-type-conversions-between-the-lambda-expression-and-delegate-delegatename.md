@@ -65,7 +65,7 @@ Dim example3 As Del = Function(n As Short) "Not Valid"
     ```  
   
 ## See Also  
- [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)   
- [Delegates](/dotnet/visual-basic/programming-guide/language-features/delegates/delegates)   
- [Widening and Narrowing Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)   
- [Relaxed Delegate Conversion](/dotnet/visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion)
+ [Lambda Expressions](/dotnet/articles/visual-basic/language-reference/procedures/lambda-expressions)   
+ [Delegates](/dotnet/articles/visual-basic/programming-guide/language-features/delegates/delegates)   
+ [Widening and Narrowing Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)   
+ [Relaxed Delegate Conversion](/dotnet/articles/visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion)

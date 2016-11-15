@@ -47,6 +47,6 @@ There is a conflict between dependencies; more than one distinct assembly files 
 -   Copy one (or zero) assembly files to the bin directory, which can be done by putting the assembly files into the global assembly cache. The global assembly cache resolves file name conflicts. No local copies of the assembly file will be made because the common language runtime knows how to find assemblies in the global assembly cache. For more information, see [Working with Assemblies and the Global Assembly Cache](../Topic/Working%20with%20Assemblies%20and%20the%20Global%20Assembly%20Cache.md) and [Error: the dependency 'file' in project 'project' cannot be copied to the run directory because it would conflict with dependency 'file'](../misc/error-the-dependency-file-in-project-project-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-file.md).  
   
 ## See Also  
- [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)   
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)   
  [Global Assembly Cache](../Topic/Global%20Assembly%20Cache.md)   
  [How to: Create and Remove Project Dependencies](../Topic/How%20to:%20Create%20and%20Remove%20Project%20Dependencies.md)

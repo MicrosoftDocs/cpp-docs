@@ -37,8 +37,8 @@ translation.priority.ht:
   
 ### To correct this error  
   
--   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources).  
+-   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](/visualstudio/msbuild/additional-msbuild-resources).  
   
 ## See Also  
- [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)   
- [Devenv Command Line Switches](/visual-studio/ide/reference/devenv-command-line-switches)
+ [Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference)   
+ [Devenv Command Line Switches](/visualstudio/ide/reference/devenv-command-line-switches)

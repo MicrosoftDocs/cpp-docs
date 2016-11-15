@@ -38,9 +38,9 @@ translation.priority.mt:
 # Compiler Error CS0017
 Program 'output file name' has more than one entry point defined. Compile with /main to specify the type that contains the entry point.  
   
- A program can only have one [Main](/dotnet/csharp/programming-guide/main-and-command-args/main-and-command-line-arguments) method.  
+ A program can only have one [Main](/dotnet/articles/csharp/programming-guide/main-and-command-args/main-and-command-line-arguments) method.  
   
- To resolve this error, you can either delete all Main methods in your code, except one, or you can use the [/main](/dotnet/csharp/language-reference/compiler-options/main-compiler-option) compiler option to specify which Main method you want to use.  
+ To resolve this error, you can either delete all Main methods in your code, except one, or you can use the [/main](/dotnet/articles/csharp/language-reference/compiler-options/main-compiler-option) compiler option to specify which Main method you want to use.  
   
  The following sample generates CS0017:  
   

@@ -44,4 +44,4 @@ A `Set` statement appears more than once in a code block. The `Set` statement de
 -   Remove the redundant `Set` statement.  
   
 ## See Also  
- [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement)
+ [Set Statement](/dotnet/articles/visual-basic/language-reference/statements/set-statement)

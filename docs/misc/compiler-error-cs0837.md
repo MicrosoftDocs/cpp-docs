@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0837
 The first operand of an "is" or "as" operator may not be a lambda expression or anonymous method.  
   
- Lambda expressions and anonymous methods may not be used on the left side of [is](/dotnet/csharp/language-reference/keywords/is) or [as](/dotnet/csharp/language-reference/keywords/as).  
+ Lambda expressions and anonymous methods may not be used on the left side of [is](/dotnet/articles/csharp/language-reference/keywords/is) or [as](/dotnet/articles/csharp/language-reference/keywords/as).  
   
 ### To correct this error  
   

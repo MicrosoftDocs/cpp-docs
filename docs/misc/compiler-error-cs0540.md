@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0540
 'interface member' : containing type does not implement interface 'interface'  
   
- You attempted to implement an interface member in a [class](/dotnet/csharp/language-reference/keywords/class) that does not derive from the [interface](/dotnet/csharp/language-reference/keywords/interface). You should either delete the implementation of the interface member or add the interface to the base-class list of the class.  
+ You attempted to implement an interface member in a [class](/dotnet/articles/csharp/language-reference/keywords/class) that does not derive from the [interface](/dotnet/articles/csharp/language-reference/keywords/interface). You should either delete the implementation of the interface member or add the interface to the base-class list of the class.  
   
 ## Example  
  The following sample generates CS0540.  

@@ -30,4 +30,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Deploying an Isolated Shell-Based Application on a 64-Bit Operating System
-This content has been removed. For information on deploying an isolated shell application, see [Installing an Isolated Shell Application](/visual-studio/extensibility/installing-an-isolated-shell-application).
+This content has been removed. For information on deploying an isolated shell application, see [Installing an Isolated Shell Application](/visualstudio/extensibility/installing-an-isolated-shell-application).

@@ -44,6 +44,6 @@ An argument for a required parameter in an extension method has not been supplie
 -   Supply an argument for the specified parameter.  
   
 ## See Also  
- [Extension Methods](/dotnet/visual-basic/language-reference/procedures/extension-methods)   
+ [Extension Methods](/dotnet/articles/visual-basic/language-reference/procedures/extension-methods)   
  [NOT IN BUILD: Class Methods](http://msdn.microsoft.com/en-us/326214bb-6367-48e7-bb24-714844791400)   
- [Troubleshooting Procedures](/dotnet/visual-basic/language-reference/procedures/troubleshooting-procedures)
+ [Troubleshooting Procedures](/dotnet/articles/visual-basic/language-reference/procedures/troubleshooting-procedures)

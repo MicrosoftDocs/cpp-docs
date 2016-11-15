@@ -46,5 +46,5 @@ The `If` operator accepts only two or three arguments.
 -   Consider using another conditional construction, such as an `If...Then...Else` statement or a nested `If...Then...Else` statement to organize the arguments.  
   
 ## See Also  
- [If Operator](/dotnet/visual-basic/language-reference/operators/if-operator)   
- [If...Then...Else Statement](/dotnet/visual-basic/language-reference/statements/if-then-else-statement)
+ [If Operator](/dotnet/articles/visual-basic/language-reference/operators/if-operator)   
+ [If...Then...Else Statement](/dotnet/articles/visual-basic/language-reference/statements/if-then-else-statement)

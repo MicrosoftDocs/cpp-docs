@@ -126,4 +126,4 @@ could not find assembly 'platform.winmd': please specify the assembly search pat
   
 ## See Also  
  [Visual C++ Porting Guide](../porting/porting-to-the-universal-windows-platform-cpp.md)   
- [Develop apps for the Universal Windows Platform (UWP)](/visual-studio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp)
+ [Develop apps for the Universal Windows Platform (UWP)](/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp)

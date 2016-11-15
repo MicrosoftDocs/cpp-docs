@@ -40,4 +40,4 @@ This error generally occurs when too many arguments have been entered for a comm
 1.  Check the documentation for the correct syntax for the command and try again.  
   
 ## See Also  
- [Visual Studio Commands](/visual-studio/ide/reference/visual-studio-commands)
+ [Visual Studio Commands](/visualstudio/ide/reference/visual-studio-commands)

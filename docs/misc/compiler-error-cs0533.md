@@ -38,9 +38,9 @@ translation.priority.mt:
 # Compiler Error CS0533
 'derived-class member' hides inherited abstract member 'base-class member'  
   
- A base [class](/dotnet/csharp/language-reference/keywords/class) method is hidden. Check the syntax of your declaration to see if it is correct.  
+ A base [class](/dotnet/articles/csharp/language-reference/keywords/class) method is hidden. Check the syntax of your declaration to see if it is correct.  
   
- For more information, see [base](/dotnet/csharp/language-reference/keywords/base).  
+ For more information, see [base](/dotnet/articles/csharp/language-reference/keywords/base).  
   
  The following sample generates CS0533:  
   

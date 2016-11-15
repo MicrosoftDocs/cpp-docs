@@ -47,4 +47,4 @@ XML comment tag 'include' must have a \<attribute> attribute. XML comment will b
   
 ## See Also  
  [\<include>](../Topic/%3Cinclude%3E%20\(Visual%20Basic\).md)   
- [Documenting Your Code with XML](/dotnet/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)
+ [Documenting Your Code with XML](/dotnet/articles/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)

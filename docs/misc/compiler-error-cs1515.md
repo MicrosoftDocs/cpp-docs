@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1515
 'in' expected  
   
- In a [foreach, in](/dotnet/csharp/language-reference/keywords/foreach-in) statement, the "in" part is missing.  
+ In a [foreach, in](/dotnet/articles/csharp/language-reference/keywords/foreach-in) statement, the "in" part is missing.  
   
 ## Example  
  The following sample generates CS1515:  

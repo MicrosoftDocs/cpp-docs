@@ -44,6 +44,6 @@ A class attempts to inherit from another class, but the desired base class is sp
 -   Remove the `NotInheritable` keyword from the definition of the desired base class, or remove the `Inherits` statement.  
   
 ## See Also  
- [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)   
- [NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)   
- [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement)
+ [Inheritance Basics](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)   
+ [NotInheritable](/dotnet/articles/visual-basic/language-reference/modifiers/notinheritable)   
+ [Inherits Statement](/dotnet/articles/visual-basic/language-reference/statements/inherits-statement)

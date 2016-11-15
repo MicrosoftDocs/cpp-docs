@@ -46,5 +46,5 @@ A generic method has been invoked with more type arguments than there are type p
 -   Remove type arguments from your type argument list so that there is one for each type parameter on the generic method you are invoking.  
   
 ## See Also  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [Type List](/dotnet/visual-basic/language-reference/statements/type-list)
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Type List](/dotnet/articles/visual-basic/language-reference/statements/type-list)

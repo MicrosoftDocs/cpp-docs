@@ -37,4 +37,4 @@ This error generally occurs when a switch has been supplied for a command that r
   
 ### To correct this error  
   
-1.  Review the syntax requirements for the command. For more information, see [Visual Studio Commands with Arguments](/visual-studio/ide/reference/visual-studio-commands).
+1.  Review the syntax requirements for the command. For more information, see [Visual Studio Commands with Arguments](/visualstudio/ide/reference/visual-studio-commands).

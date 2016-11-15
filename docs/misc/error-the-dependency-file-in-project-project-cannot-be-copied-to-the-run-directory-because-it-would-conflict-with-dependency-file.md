@@ -47,7 +47,7 @@ There is a conflict between references; more than one distinct dependency with t
 -   Make sure that both copies of the assembly are strong-named and in the global assembly cache. This eliminates the need to copy the assemblies to the bin directory.  
   
 ## See Also  
- [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)   
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)   
  [Global Assembly Cache](../Topic/Global%20Assembly%20Cache.md)   
  [Strong-Named Assemblies](../Topic/Strong-Named%20Assemblies.md)   
  [Assembly Versioning](../Topic/Assembly%20Versioning.md)   

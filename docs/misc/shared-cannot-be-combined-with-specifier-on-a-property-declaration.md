@@ -44,4 +44,4 @@ You have attempted to combine the `Shared` modifier with a specifier that is not
 -   Remove the specifier.  
   
 ## See Also  
- [Shared](/dotnet/visual-basic/language-reference/modifiers/shared)
+ [Shared](/dotnet/articles/visual-basic/language-reference/modifiers/shared)

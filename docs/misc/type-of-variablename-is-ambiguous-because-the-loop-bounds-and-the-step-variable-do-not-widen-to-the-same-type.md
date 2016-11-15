@@ -85,8 +85,8 @@ Next
     ```  
   
 ## See Also  
- [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)   
- [Implicit and Explicit Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)   
- [Local Type Inference](/dotnet/visual-basic/programming-guide/language-features/variables/local-type-inference)   
- [Option Infer Statement](/dotnet/visual-basic/language-reference/statements/option-infer-statement)   
- [Widening and Narrowing Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)
+ [For...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-next-statement)   
+ [Implicit and Explicit Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)   
+ [Local Type Inference](/dotnet/articles/visual-basic/programming-guide/language-features/variables/local-type-inference)   
+ [Option Infer Statement](/dotnet/articles/visual-basic/language-reference/statements/option-infer-statement)   
+ [Widening and Narrowing Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)

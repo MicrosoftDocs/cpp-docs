@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1512
 Keyword 'base' is not available in the current context  
   
- The [base](/dotnet/csharp/language-reference/keywords/base) keyword was used outside of a method, property, or constructor.  
+ The [base](/dotnet/articles/csharp/language-reference/keywords/base) keyword was used outside of a method, property, or constructor.  
   
  The following example generates CS1512:  
   

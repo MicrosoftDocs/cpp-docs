@@ -32,7 +32,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Completion Lists in C#
-This content has moved to [Visual C# IntelliSense](/visual-studio/ide/visual-csharp-intellisense)  
+This content has moved to [Visual C# IntelliSense](/visualstudio/ide/visual-csharp-intellisense)  
   
 ## See Also  
- [Visual C# Code Snippets](/visual-studio/ide/visual-csharp-code-snippets)
+ [Visual C# Code Snippets](/visualstudio/ide/visual-csharp-code-snippets)

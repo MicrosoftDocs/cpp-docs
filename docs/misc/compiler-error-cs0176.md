@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0176
 Static member 'member' cannot be accessed with an instance reference; qualify it with a type name instead  
   
- Only a class name can be used to qualify a [static](/dotnet/csharp/language-reference/keywords/static) variable; an instance name cannot be a qualifier. For more information, see [Static Classes and Static Class Members](/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members).  
+ Only a class name can be used to qualify a [static](/dotnet/articles/csharp/language-reference/keywords/static) variable; an instance name cannot be a qualifier. For more information, see [Static Classes and Static Class Members](/dotnet/articles/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members).  
   
  The following sample generates CS0176:  
   

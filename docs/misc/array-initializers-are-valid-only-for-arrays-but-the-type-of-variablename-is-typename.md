@@ -50,6 +50,6 @@ An attempt was made to initialize a non-array variable with a list of values.
      `Dim intvalue As Integer = 1`  
   
 ## See Also  
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
- [Variable Declaration](/dotnet/visual-basic/programming-guide/language-features/variables/variable-declaration)   
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)   
+ [Variable Declaration](/dotnet/articles/visual-basic/programming-guide/language-features/variables/variable-declaration)   
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)

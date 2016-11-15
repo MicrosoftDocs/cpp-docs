@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0072
 'event' : cannot override; 'method' is not an event  
   
- An [event](/dotnet/csharp/language-reference/keywords/event) can only override another event. For more information, see [Events](/dotnet/csharp/programming-guide/events/index).  
+ An [event](/dotnet/articles/csharp/language-reference/keywords/event) can only override another event. For more information, see [Events](/dotnet/articles/csharp/programming-guide/events/index).  
   
  The following sample generates CS0072:  
   

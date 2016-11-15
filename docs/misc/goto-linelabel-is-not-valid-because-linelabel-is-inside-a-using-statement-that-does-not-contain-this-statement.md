@@ -50,5 +50,5 @@ A `GoTo` statement outside a `Using` construction attempts to branch to a line l
 -   Remove the `GoTo` statement entirely. The only way you can enter a `Using`...`End Using` construction is to allow control to pass to the `Using` statement itself.  
   
 ## See Also  
- [GoTo Statement](/dotnet/visual-basic/language-reference/statements/goto-statement)   
- [Using Statement](/dotnet/visual-basic/language-reference/statements/using-statement)
+ [GoTo Statement](/dotnet/articles/visual-basic/language-reference/statements/goto-statement)   
+ [Using Statement](/dotnet/articles/visual-basic/language-reference/statements/using-statement)

@@ -93,4 +93,4 @@ End Module
 ## See Also  
  <xref:System.IndexOutOfRangeException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)

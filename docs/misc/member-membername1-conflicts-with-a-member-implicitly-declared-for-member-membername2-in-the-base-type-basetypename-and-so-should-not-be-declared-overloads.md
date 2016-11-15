@@ -35,9 +35,9 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Member &#39;&lt;membername1&gt;&#39; conflicts with a member implicitly declared for member &#39;&lt;membername2&gt;&#39; in the base type &#39;&lt;basetypename&gt;&#39; and so should not be declared &#39;Overloads&#39;
-A property or procedure in a derived class uses the same name as an implicit member of the base class and specifies the [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads) keyword.  
+A property or procedure in a derived class uses the same name as an implicit member of the base class and specifies the [Overloads](/dotnet/articles/visual-basic/language-reference/modifiers/overloads) keyword.  
   
- Overloading is used to define multiple versions of a property or procedure all in the same class. You cannot define an additional version of a base class member unless that base class member already specifies `Overloads`. Because implicit members do not specify `Overloads`, the compiler assumes that this property or procedure [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows) the implicit base class member.  
+ Overloading is used to define multiple versions of a property or procedure all in the same class. You cannot define an additional version of a base class member unless that base class member already specifies `Overloads`. Because implicit members do not specify `Overloads`, the compiler assumes that this property or procedure [Shadows](/dotnet/articles/visual-basic/language-reference/modifiers/shadows) the implicit base class member.  
   
  The [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] compiler creates implicit members corresponding to certain programming elements you declare. The following table summarizes these implicit, or *synthetic*, members.  
   
@@ -51,7 +51,7 @@ A property or procedure in a derived class uses the same name as an implicit mem
   
  Because of the risk of name conflicts, you should avoid naming any declared programming element using the same form as any one of these implicit members. For example, you should avoid any element name that starts with `get_` or `set_`.  
   
- By default, this message is a warning. For more information about hiding warnings and treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information about hiding warnings and treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40023  
   
@@ -60,4 +60,4 @@ A property or procedure in a derived class uses the same name as an implicit mem
 -   Change the name of the property or procedure to avoid conflicts with the names listed in the previous table.  
   
 ## See Also  
- [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)
+ [Declared Element Names](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)

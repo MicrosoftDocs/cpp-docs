@@ -44,5 +44,5 @@ A variable is being used before it has been assigned a value, resulting in a <xr
 -   Make sure the variable has been assigned a value.  
   
 ## See Also  
- [Variable Declaration](/dotnet/visual-basic/programming-guide/language-features/variables/variable-declaration)   
+ [Variable Declaration](/dotnet/articles/visual-basic/programming-guide/language-features/variables/variable-declaration)   
  [Troubleshooting Exceptions: System.NullReferenceException](../misc/troubleshooting-exceptions-system-nullreferenceexception.md)

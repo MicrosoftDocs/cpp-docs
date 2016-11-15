@@ -59,4 +59,4 @@ You can create an XML-based .vsct file from an existing command table .ctc sourc
   
 ## See Also  
  [How to: Create a .Vsct File](../Topic/How%20to:%20Create%20a%20.Vsct%20File.md)   
- [Visual Studio Command Table (.Vsct) Files](/visual-studio/extensibility/internals/visual-studio-command-table-dot-vsct-files)
+ [Visual Studio Command Table (.Vsct) Files](/visualstudio/extensibility/internals/visual-studio-command-table-dot-vsct-files)

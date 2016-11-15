@@ -68,4 +68,4 @@ public class Test
 ```  
   
 ## See Also  
- [Classes and Structs](/dotnet/csharp/programming-guide/classes-and-structs/index)
+ [Classes and Structs](/dotnet/articles/csharp/programming-guide/classes-and-structs/index)

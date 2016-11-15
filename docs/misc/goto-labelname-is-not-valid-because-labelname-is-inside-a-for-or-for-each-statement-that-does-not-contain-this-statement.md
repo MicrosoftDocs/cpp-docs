@@ -44,5 +44,5 @@ translation.priority.mt:
 -   Restructure your code so that the `GoTo` statement and the label are both inside the `For` block.  
   
 ## See Also  
- [GoTo Statement](/dotnet/visual-basic/language-reference/statements/goto-statement)   
+ [GoTo Statement](/dotnet/articles/visual-basic/language-reference/statements/goto-statement)   
  [For (Visual Basic)](http://msdn.microsoft.com/en-us/c470a263-9b49-4308-8fd6-8592b84a7980)

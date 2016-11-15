@@ -44,4 +44,4 @@ A `Declare` statement specifies a library name without using the `Lib` keyword.
 -   Add the `Lib` keyword before the library name.  
   
 ## See Also  
- [Declare Statement](/dotnet/visual-basic/language-reference/statements/declare-statement)
+ [Declare Statement](/dotnet/articles/visual-basic/language-reference/statements/declare-statement)

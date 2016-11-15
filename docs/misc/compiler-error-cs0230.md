@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0230
 Type and identifier are both required in a foreach statement  
   
- A [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) statement was poorly formed.  
+ A [foreach](/dotnet/articles/csharp/language-reference/keywords/foreach-in) statement was poorly formed.  
   
  The following sample generates CS0230:  
   

@@ -44,5 +44,5 @@ A date constant is declared with an invalid date.
 -   Correct the date used in the constant.  
   
 ## See Also  
- [Date Data Type](/dotnet/visual-basic/language-reference/data-types/date-data-type)   
- [Constants and Enumerations](/dotnet/visual-basic/language-reference/constants-and-enumerations)
+ [Date Data Type](/dotnet/articles/visual-basic/language-reference/data-types/date-data-type)   
+ [Constants and Enumerations](/dotnet/articles/visual-basic/language-reference/constants-and-enumerations)

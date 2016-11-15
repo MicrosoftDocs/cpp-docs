@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Editing Properties for an ActiveX Control
-ActiveX controls supplied by independent vendors may come equipped with their own properties and characteristics. Properties for ActiveX controls are displayed in the Properties window. In addition, any property pages created by the writers of the ActiveX control are displayed in the **Properties Pages** dialog box (to view the Property Page for a specific ActiveX control, click the Property Page button in the [Properties Window](/visual-studio/ide/reference/properties-window)).  
+ActiveX controls supplied by independent vendors may come equipped with their own properties and characteristics. Properties for ActiveX controls are displayed in the Properties window. In addition, any property pages created by the writers of the ActiveX control are displayed in the **Properties Pages** dialog box (to view the Property Page for a specific ActiveX control, click the Property Page button in the [Properties Window](/visualstudio/ide/reference/properties-window)).  
   
  Various tabs are displayed in the property page for an ActiveX control, depending on the property sheets that come as part of the ActiveX control.  
   

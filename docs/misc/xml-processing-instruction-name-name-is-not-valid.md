@@ -44,6 +44,6 @@ The name provided for an XML processing instruction is invalid.
 -   Correct any errors in the name of the XML processing instruction, or remove it.  
   
 ## See Also  
- [XML Processing Instruction Literal](/dotnet/visual-basic/language-reference/xml-literals/xml-processing-instruction-literal)   
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [XML Processing Instruction Literal](/dotnet/articles/visual-basic/language-reference/xml-literals/xml-processing-instruction-literal)   
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0271
 The property or indexer 'property/indexer' cannot be used in this context because the get accessor is inaccessible  
   
- This error occurs when you try to access an inaccessible `get` accessor. To resolve this error, increase the accessibility of the accessor, or change the calling location. For more information, see [Accessor Accessibility](/dotnet/csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility) and [Properties](/dotnet/csharp/programming-guide/classes-and-structs/properties).  
+ This error occurs when you try to access an inaccessible `get` accessor. To resolve this error, increase the accessibility of the accessor, or change the calling location. For more information, see [Accessor Accessibility](/dotnet/articles/csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility) and [Properties](/dotnet/articles/csharp/programming-guide/classes-and-structs/properties).  
   
  The following example generates CS0271:  
   

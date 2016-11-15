@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0110
 The evaluation of the constant value for 'const declaration' involves a circular definition  
   
- The declaration of a [const](/dotnet/csharp/language-reference/keywords/const) variable (`a`) cannot reference another const variable (`b`) that also references (`a`).  
+ The declaration of a [const](/dotnet/articles/csharp/language-reference/keywords/const) variable (`a`) cannot reference another const variable (`b`) that also references (`a`).  
   
  The following sample generates CS0110:  
   
@@ -64,4 +64,4 @@ namespace MyNamespace
 ```  
   
 ## See Also  
- [Constants](/dotnet/csharp/programming-guide/classes-and-structs/constants)
+ [Constants](/dotnet/articles/csharp/programming-guide/classes-and-structs/constants)

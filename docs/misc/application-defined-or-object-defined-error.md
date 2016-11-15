@@ -39,4 +39,4 @@ An application-defined or user-defined error occurred. Check the error.
 -   Consult the error to see where it is defined and how to address it.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

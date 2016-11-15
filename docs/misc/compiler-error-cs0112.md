@@ -40,7 +40,7 @@ A static member 'function' cannot be marked as override, virtual or abstract
   
  Any method declaration that uses the `override`, **virtual**, or **abstract** keyword cannot also use the **static** keyword.  
   
- For more information, see [Methods](/dotnet/csharp/programming-guide/classes-and-structs/methods).  
+ For more information, see [Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/methods).  
   
  The following sample generates CS0112:  
   

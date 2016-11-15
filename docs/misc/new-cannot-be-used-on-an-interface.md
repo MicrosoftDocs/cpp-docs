@@ -35,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # &#39;New&#39; cannot be used on an interface
-A [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement) uses a [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator) clause when declaring a variable to be of an interface type.  
+A [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement) uses a [New Operator](/dotnet/articles/visual-basic/language-reference/operators/new-operator) clause when declaring a variable to be of an interface type.  
   
  Although an interface is a reference type, you cannot create an instance of it. You can use `New` only to create an instance of a class or a structure.  
   
@@ -48,6 +48,6 @@ A [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-stateme
 2.  If the variable is to refer to an instance, declare it to be of a class or structure type. Retain the `New` keyword to create an instance.  
   
 ## See Also  
- [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)   
- [Class Statement](/dotnet/visual-basic/language-reference/statements/class-statement)   
- [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)
+ [Interface Statement](/dotnet/articles/visual-basic/language-reference/statements/interface-statement)   
+ [Class Statement](/dotnet/articles/visual-basic/language-reference/statements/class-statement)   
+ [Structure Statement](/dotnet/articles/visual-basic/language-reference/statements/structure-statement)

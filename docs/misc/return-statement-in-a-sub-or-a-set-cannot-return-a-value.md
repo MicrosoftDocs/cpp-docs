@@ -46,7 +46,7 @@ translation.priority.mt:
 -   You can effectively return values from `Sub` procedures by modifying the value of parameters passed by reference using the `ByRef` keyword.  
   
 ## See Also  
- [Return Statement](/dotnet/visual-basic/language-reference/statements/return-statement)   
- [Sub Procedures](/dotnet/visual-basic/language-reference/procedures/sub-procedures)   
- [Function Procedures](/dotnet/visual-basic/language-reference/procedures/function-procedures)   
- [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)
+ [Return Statement](/dotnet/articles/visual-basic/language-reference/statements/return-statement)   
+ [Sub Procedures](/dotnet/articles/visual-basic/language-reference/procedures/sub-procedures)   
+ [Function Procedures](/dotnet/articles/visual-basic/language-reference/procedures/function-procedures)   
+ [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)

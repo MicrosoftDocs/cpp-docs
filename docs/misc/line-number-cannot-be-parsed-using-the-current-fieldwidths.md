@@ -41,7 +41,7 @@ The specified line cannot be parsed because its fields have widths other than th
 ## See Also  
  [How to: Read From Text Files with Multiple Formats](../Topic/How%20to:%20Read%20From%20Text%20Files%20with%20Multiple%20Formats%20in%20Visual%20Basic.md)   
  [My.Computer.FileSystem.OpenTextFieldParser Method](http://msdn.microsoft.com/en-us/e5869f85-c078-485f-8323-8dc716494546)   
- [Parsing Text Files with the TextFieldParser Object](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object)   
- [TextFieldParser Object](/dotnet/visual-basic/language-reference/objects/textfieldparser-object)   
+ [Parsing Text Files with the TextFieldParser Object](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object)   
+ [TextFieldParser Object](/dotnet/articles/visual-basic/language-reference/objects/textfieldparser-object)   
  [TextFieldParser.FieldWidths Property](http://msdn.microsoft.com/en-us/c6985360-60c6-494e-89e7-43b6b73f2597)   
  [TextFieldParser.SetFieldWidths Method](http://msdn.microsoft.com/en-us/958fed9f-e0f3-4fc5-83b4-386156bdf036)

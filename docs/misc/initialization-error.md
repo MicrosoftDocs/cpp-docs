@@ -44,4 +44,4 @@ An error occurred while initializing the program. This may be a result of cancel
 -   Reattempt the installation.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

@@ -44,4 +44,4 @@ translation.priority.mt:
 -   Make sure that the `SyncLock` block begins with a `SyncLock` statement.  
   
 ## See Also  
- [SyncLock Statement](/dotnet/visual-basic/language-reference/statements/synclock-statement)
+ [SyncLock Statement](/dotnet/articles/visual-basic/language-reference/statements/synclock-statement)

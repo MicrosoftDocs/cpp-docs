@@ -45,4 +45,4 @@ An `End Sub` statement follows a colon (:) statement separator. `End Sub` must b
   
 ## See Also  
  [How to: Break and Combine Statements in Code](../Topic/How%20to:%20Break%20and%20Combine%20Statements%20in%20Code%20\(Visual%20Basic\).md)   
- [Sub Statement](/dotnet/visual-basic/language-reference/statements/sub-statement)
+ [Sub Statement](/dotnet/articles/visual-basic/language-reference/statements/sub-statement)

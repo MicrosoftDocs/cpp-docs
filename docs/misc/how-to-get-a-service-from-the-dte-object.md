@@ -42,5 +42,5 @@ A service can be obtained from any program that has access to the [!INCLUDE[vspr
      [!code-vb[GetAServiceFromTheDTEObject#1](../misc/codesnippet/VisualBasic/how-to-get-a-service-from-the-dte-object_1.vb)]  
   
 ## See Also  
- [Using and Providing Services](/visual-studio/extensibility/using-and-providing-services)   
- [Service Essentials](/visual-studio/extensibility/internals/service-essentials)
+ [Using and Providing Services](/visualstudio/extensibility/using-and-providing-services)   
+ [Service Essentials](/visualstudio/extensibility/internals/service-essentials)

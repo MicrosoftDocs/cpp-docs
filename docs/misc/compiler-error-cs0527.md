@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0527
 Type 'type' in interface list is not an interface  
   
- It is possible for a [struct](/dotnet/csharp/language-reference/keywords/struct) or [interface](/dotnet/csharp/language-reference/keywords/interface) to inherit from another interface but not from any other type.  
+ It is possible for a [struct](/dotnet/articles/csharp/language-reference/keywords/struct) or [interface](/dotnet/articles/csharp/language-reference/keywords/interface) to inherit from another interface but not from any other type.  
   
  The following sample generates CS0527:  
   

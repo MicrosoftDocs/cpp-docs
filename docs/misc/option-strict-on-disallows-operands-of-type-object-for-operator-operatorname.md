@@ -48,6 +48,6 @@ Option Strict On disallows operands of type Object for operator '\<operatorname>
 2.  Use the `Is` operator to compare for object identity.  
   
 ## See Also  
- [Comparison Operators](/dotnet/visual-basic/language-reference/operators/comparison-operators)   
- [Is Operator](/dotnet/visual-basic/language-reference/operators/is-operator)   
- [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)
+ [Comparison Operators](/dotnet/articles/visual-basic/language-reference/operators/comparison-operators)   
+ [Is Operator](/dotnet/articles/visual-basic/language-reference/operators/is-operator)   
+ [Option Strict Statement](/dotnet/articles/visual-basic/language-reference/statements/option-strict-statement)

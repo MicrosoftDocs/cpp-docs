@@ -57,4 +57,4 @@ You have opened a project that was created in a previous version of Visual Studi
   
 ## See Also  
  [Project Dependencies Dialog Box](http://msdn.microsoft.com/en-us/d66e48c3-3722-40dd-99b4-53d93cac128e)   
- [Compiling and Building](/visual-studio/ide/compiling-and-building-in-visual-studio)
+ [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio)

@@ -55,7 +55,7 @@ The XML documentation file cannot be created due to an error.
   
 -   [XML comment type parameter must have a 'name' attribute](../misc/xml-comment-type-parameter-must-have-a-name-attribute.md).  
   
--   [XML comment exception must have a 'cref' attribute](/dotnet/visual-basic/language-reference/error-messages/xml-comment-exception-must-have-a-cref-attribute).  
+-   [XML comment exception must have a 'cref' attribute](/dotnet/articles/visual-basic/language-reference/error-messages/xml-comment-exception-must-have-a-cref-attribute).  
   
 ### To correct this error  
   

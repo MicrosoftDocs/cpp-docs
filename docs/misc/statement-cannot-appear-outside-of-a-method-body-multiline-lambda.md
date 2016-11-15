@@ -44,4 +44,4 @@ Executable statements must be used within procedures.
 -   Move the statement into a procedure or subroutine.  
   
 ## See Also  
- [Procedures](/dotnet/visual-basic/language-reference/procedures/index)
+ [Procedures](/dotnet/articles/visual-basic/language-reference/procedures/index)

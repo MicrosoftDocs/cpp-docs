@@ -45,7 +45,7 @@ translation.priority.ht:
   
 2.  Select the string you want to modify.  
   
-3.  In the [Properties Window](/visual-studio/ide/reference/properties-window), add any of the standard escape sequences listed below to the text in the **Caption** box, and press **ENTER**.  
+3.  In the [Properties Window](/visualstudio/ide/reference/properties-window), add any of the standard escape sequences listed below to the text in the **Caption** box, and press **ENTER**.  
   
     |To get this|Type this|  
     |-----------------|---------------|  

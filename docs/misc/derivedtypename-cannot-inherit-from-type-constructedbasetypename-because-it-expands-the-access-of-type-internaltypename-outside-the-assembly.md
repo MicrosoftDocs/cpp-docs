@@ -63,8 +63,8 @@ End Structure
 -   If you cannot adjust the access levels, do not use the restricted type as a type argument when constructing the base class or interface.  
   
 ## See Also  
- [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement)   
- [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)   
- [Access Levels in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/access-levels)   
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [Type List](/dotnet/visual-basic/language-reference/statements/type-list)
+ [Inherits Statement](/dotnet/articles/visual-basic/language-reference/statements/inherits-statement)   
+ [Inheritance Basics](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)   
+ [Access Levels in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/access-levels)   
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Type List](/dotnet/articles/visual-basic/language-reference/statements/type-list)

@@ -50,5 +50,5 @@ Data type(s) of the type parameter(s) cannot be inferred from these arguments be
  **Error ID:** BC36653 and BC36650  
   
 ## See Also  
- [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures)   
- [Overload Resolution](/dotnet/visual-basic/language-reference/procedures/overload-resolution)
+ [Generic Procedures in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-procedures)   
+ [Overload Resolution](/dotnet/articles/visual-basic/language-reference/procedures/overload-resolution)

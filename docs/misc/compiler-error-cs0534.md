@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0534
 'function1' does not implement inherited abstract member 'function2'  
   
- A class is required to implement all the [abstract](/dotnet/csharp/language-reference/keywords/abstract) members in the base class, unless the class is also abstract.  
+ A class is required to implement all the [abstract](/dotnet/articles/csharp/language-reference/keywords/abstract) members in the base class, unless the class is also abstract.  
   
  The following sample generates CS0534:  
   

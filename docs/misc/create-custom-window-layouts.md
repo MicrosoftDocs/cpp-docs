@@ -29,4 +29,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Create custom window layouts
-This content has moved to [Customizing window layouts](/visual-studio/ide/customizing-window-layouts-in-visual-studio)
+This content has moved to [Customizing window layouts](/visualstudio/ide/customizing-window-layouts-in-visual-studio)

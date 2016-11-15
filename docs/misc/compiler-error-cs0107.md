@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0107
 More than one protection modifier  
   
- Only one access modifier ([public](/dotnet/csharp/language-reference/keywords/public), [private](/dotnet/csharp/language-reference/keywords/private), [protected](/dotnet/csharp/language-reference/keywords/protected), or [internal](/dotnet/csharp/language-reference/keywords/internal)) is allowed on a class member, with the exception of except **internal protected**.  
+ Only one access modifier ([public](/dotnet/articles/csharp/language-reference/keywords/public), [private](/dotnet/articles/csharp/language-reference/keywords/private), [protected](/dotnet/articles/csharp/language-reference/keywords/protected), or [internal](/dotnet/articles/csharp/language-reference/keywords/internal)) is allowed on a class member, with the exception of except **internal protected**.  
   
  The following sample generates CS0107:  
   

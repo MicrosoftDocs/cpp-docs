@@ -68,6 +68,6 @@ End Structure
     ```  
   
 ## See Also  
- [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)   
+ [Lambda Expressions](/dotnet/articles/visual-basic/language-reference/procedures/lambda-expressions)   
  [Me](http://msdn.microsoft.com/en-us/a65973c7-cf06-4547-9b25-9fba885525c2)   
- [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)
+ [Structure Statement](/dotnet/articles/visual-basic/language-reference/statements/structure-statement)

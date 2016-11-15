@@ -46,5 +46,5 @@ If a property is declared as `WriteOnly`, it must supply a procedure for writing
 2.  Verify that other procedures within the `Property` declaration are correctly terminated.  
   
 ## See Also  
- [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
- [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement)
+ [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement)   
+ [Set Statement](/dotnet/articles/visual-basic/language-reference/statements/set-statement)

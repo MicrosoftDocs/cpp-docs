@@ -44,4 +44,4 @@ An `Exit` statement contains an invalid keyword. `Exit` must specify the block f
 -   Add a valid keyword following `Exit`, or remove the `Exit` statement.  
   
 ## See Also  
- [Exit Statement](/dotnet/visual-basic/language-reference/statements/exit-statement)
+ [Exit Statement](/dotnet/articles/visual-basic/language-reference/statements/exit-statement)

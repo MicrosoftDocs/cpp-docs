@@ -44,4 +44,4 @@ translation.priority.mt:
 -   Remove `On Error` statements from debugging code.  
   
 ## See Also  
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

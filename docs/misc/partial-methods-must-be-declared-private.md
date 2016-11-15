@@ -58,4 +58,4 @@ End Sub
 -   Add the keyword `Private` before `Sub` in the signature and implementation declarations.  
   
 ## See Also  
- [Partial Methods](/dotnet/visual-basic/language-reference/procedures/partial-methods)
+ [Partial Methods](/dotnet/articles/visual-basic/language-reference/procedures/partial-methods)

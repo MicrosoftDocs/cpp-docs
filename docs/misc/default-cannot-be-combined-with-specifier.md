@@ -48,4 +48,4 @@ You have attempted to combine the `Default` keyword with a specifier, such as `S
 -   Remove the conflicting specifier.  
   
 ## See Also  
- [Default](/dotnet/visual-basic/language-reference/modifiers/default)
+ [Default](/dotnet/articles/visual-basic/language-reference/modifiers/default)

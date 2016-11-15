@@ -44,5 +44,5 @@ translation.priority.mt:
 -   Remove `Error` statements from debugging code.  
   
 ## See Also  
- [Error Statement](/dotnet/visual-basic/language-reference/statements/error-statement)   
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Error Statement](/dotnet/articles/visual-basic/language-reference/statements/error-statement)   
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

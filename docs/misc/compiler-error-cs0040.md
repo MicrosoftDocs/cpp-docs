@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS0040
 Unexpected error creating debug information file — 'reason'  
   
- This error can occur when using the [/debug](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) compiler option and indicates that the compiler was unable to write to the .pdb file. Possible resolutions to this error include reinstalling Visual Studio, ensuring that the compiler has write access to a file or directory, or not compiling with /debug.
+ This error can occur when using the [/debug](/dotnet/articles/csharp/language-reference/compiler-options/debug-compiler-option) compiler option and indicates that the compiler was unable to write to the .pdb file. Possible resolutions to this error include reinstalling Visual Studio, ensuring that the compiler has write access to a file or directory, or not compiling with /debug.

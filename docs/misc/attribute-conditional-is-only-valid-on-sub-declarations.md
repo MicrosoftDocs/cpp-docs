@@ -45,4 +45,4 @@ The <xref:System.Diagnostics.ConditionalAttribute> attribute has been applied to
   
 ## See Also  
  <xref:System.Diagnostics.ConditionalAttribute>   
- [Sub Statement](/dotnet/visual-basic/language-reference/statements/sub-statement)
+ [Sub Statement](/dotnet/articles/visual-basic/language-reference/statements/sub-statement)

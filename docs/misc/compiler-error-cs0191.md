@@ -38,9 +38,9 @@ translation.priority.mt:
 # Compiler Error CS0191
 Property or indexer 'name' cannot be assigned to -- it is read only  
   
- A [readonly](/dotnet/csharp/language-reference/keywords/readonly) field can only take an assignment in a constructor or at declaration. For more information, see [Constructors](/dotnet/csharp/programming-guide/classes-and-structs/constructors).  
+ A [readonly](/dotnet/articles/csharp/language-reference/keywords/readonly) field can only take an assignment in a constructor or at declaration. For more information, see [Constructors](/dotnet/articles/csharp/programming-guide/classes-and-structs/constructors).  
   
- CS0191 also results if the `readonly` field is [static](/dotnet/csharp/language-reference/keywords/static) and the constructor is not marked `static`.  
+ CS0191 also results if the `readonly` field is [static](/dotnet/articles/csharp/language-reference/keywords/static) and the constructor is not marked `static`.  
   
 ## Example  
  The following sample generates CS0191.  

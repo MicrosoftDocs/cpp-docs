@@ -55,5 +55,5 @@ Sometimes you may need to get a service from a tool window or control container 
   
 ## See Also  
  [How to: Troubleshoot Services](../Topic/How%20to:%20Troubleshoot%20Services.md)   
- [Using and Providing Services](/visual-studio/extensibility/using-and-providing-services)   
- [Service Essentials](/visual-studio/extensibility/internals/service-essentials)
+ [Using and Providing Services](/visualstudio/extensibility/using-and-providing-services)   
+ [Service Essentials](/visualstudio/extensibility/internals/service-essentials)

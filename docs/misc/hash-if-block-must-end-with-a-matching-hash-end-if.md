@@ -44,4 +44,4 @@ translation.priority.mt:
 -   Add an `#End If` directive to the end of the conditional compilation block.  
   
 ## See Also  
- [#If...Then...#Else Directives](/dotnet/visual-basic/language-reference/directives/if-then-else-directives)
+ [#If...Then...#Else Directives](/dotnet/articles/visual-basic/language-reference/directives/if-then-else-directives)

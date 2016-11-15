@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0575
 Only class types can contain destructors  
   
- A [struct](/dotnet/csharp/language-reference/keywords/struct) cannot contain a destructor.  
+ A [struct](/dotnet/articles/csharp/language-reference/keywords/struct) cannot contain a destructor.  
   
  The following sample generates CS0575:  
   

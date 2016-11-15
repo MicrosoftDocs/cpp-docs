@@ -44,5 +44,5 @@ An XML literal or XML axis property has been specified without a name.
 -   Add a name for the XML literal or XML axis property.  
   
 ## See Also  
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

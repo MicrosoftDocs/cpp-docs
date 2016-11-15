@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1527
 Elements defined in a namespace cannot be explicitly declared as private, protected, or protected internal  
   
- Type declarations in a namespace can have either [public](/dotnet/csharp/language-reference/keywords/public) or [internal](/dotnet/csharp/language-reference/keywords/internal) access. If no accessibility is specified, **internal** is the default.  
+ Type declarations in a namespace can have either [public](/dotnet/articles/csharp/language-reference/keywords/public) or [internal](/dotnet/articles/csharp/language-reference/keywords/internal) access. If no accessibility is specified, **internal** is the default.  
   
  The following sample generates CS1527:  
   
@@ -63,8 +63,8 @@ private struct S1{}
 ```  
   
 ## See Also  
- [Namespaces](/dotnet/csharp/programming-guide/namespaces/index)   
- [global](/dotnet/csharp/language-reference/keywords/global)   
+ [Namespaces](/dotnet/articles/csharp/programming-guide/namespaces/index)   
+ [global](/dotnet/articles/csharp/language-reference/keywords/global)   
  [:: Operator](../Topic/::%20Operator%20\(C%23%20Reference\).md)   
- [Accessibility Domain](/dotnet/csharp/language-reference/keywords/accessibility-domain)   
- [Access Modifiers](/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
+ [Accessibility Domain](/dotnet/articles/csharp/language-reference/keywords/accessibility-domain)   
+ [Access Modifiers](/dotnet/articles/csharp/programming-guide/classes-and-structs/access-modifiers)

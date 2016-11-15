@@ -49,7 +49,7 @@ An operator is defined when its required matching operator is not defined.
   
  If you define any of these operators in a class or structure, you must also define its matching operator in the same class or structure.  
   
- Even if you do not use the matching operator explicitly, [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] might need to use it. For example, if you define a class or structure that you use as the counter variable in a [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement), [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] requires both the `>=` and `<=` operators (as well as the `+` operator).  
+ Even if you do not use the matching operator explicitly, [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] might need to use it. For example, if you define a class or structure that you use as the counter variable in a [For...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-next-statement), [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] requires both the `>=` and `<=` operators (as well as the `+` operator).  
   
  **Error ID:** BC33033  
   
@@ -58,8 +58,8 @@ An operator is defined when its required matching operator is not defined.
 -   Define the matching operator in the same class or structure. Make every effort to define it meaningfully, because [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] might use it in a situation you do not anticipate.  
   
 ## See Also  
- [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
- [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)   
+ [Operator Procedures](/dotnet/articles/visual-basic/language-reference/procedures/operator-procedures)   
+ [Operator Statement](/dotnet/articles/visual-basic/language-reference/statements/operator-statement)   
  [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
  [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)   
- [Operators and Expressions](/dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/index)
+ [Operators and Expressions](/dotnet/articles/visual-basic/programming-guide/language-features/operators-and-expressions/index)

@@ -80,4 +80,4 @@ You can use the project configurations in Visual Studio to set up C++ applicatio
 ## See Also  
  [64-bit Applications](../Topic/64-bit%20Applications.md)   
  [Configuring Programs for 64-Bit](../build/configuring-programs-for-64-bit-visual-cpp.md)   
- [Debug 64-Bit Applications](/visual-studio/debugger/debug-64-bit-applications)
+ [Debug 64-Bit Applications](/visualstudio/debugger/debug-64-bit-applications)

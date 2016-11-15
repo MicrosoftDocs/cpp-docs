@@ -44,4 +44,4 @@ An invalid conversion was attempted.
 -   Choose a compatible conversion type.  
   
 ## See Also  
- [Type Conversions in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/type-conversions)
+ [Type Conversions in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/type-conversions)

@@ -42,4 +42,4 @@ bad format string
   
  This error is identical to CAN0026.  
   
- For more information, see [Format Specifiers in C++](/visual-studio/debugger/format-specifiers-in-cpp).
+ For more information, see [Format Specifiers in C++](/visualstudio/debugger/format-specifiers-in-cpp).

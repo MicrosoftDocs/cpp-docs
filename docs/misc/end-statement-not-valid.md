@@ -46,5 +46,5 @@ The `End` keyword is used incorrectly or is inappropriate in the current context
 2.  Use `End` with other keywords to terminate a block of code such as a structure or property.  
   
 ## See Also  
- [End Statement](/dotnet/visual-basic/language-reference/statements/end-statement)   
+ [End Statement](/dotnet/articles/visual-basic/language-reference/statements/end-statement)   
  [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)

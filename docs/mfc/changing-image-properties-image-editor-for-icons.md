@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Changing Image Properties (Image Editor for Icons)
-You can set or modify properties of an image using the [Properties window](/visual-studio/ide/reference/properties-window).  
+You can set or modify properties of an image using the [Properties window](/visualstudio/ide/reference/properties-window).  
   
 ### To change an image's properties  
   

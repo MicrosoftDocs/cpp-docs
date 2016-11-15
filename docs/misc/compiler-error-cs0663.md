@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0663
 Cannot define overloaded methods that differ only on ref and out.  
   
- Methods that differ only on their use of [ref](/dotnet/csharp/language-reference/keywords/ref) and [out](/dotnet/csharp/language-reference/keywords/out) on a parameter are not allowed.  
+ Methods that differ only on their use of [ref](/dotnet/articles/csharp/language-reference/keywords/ref) and [out](/dotnet/articles/csharp/language-reference/keywords/out) on a parameter are not allowed.  
   
  The following sample generates CS0663:  
   

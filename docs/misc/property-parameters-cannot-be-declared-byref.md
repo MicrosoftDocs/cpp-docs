@@ -44,5 +44,5 @@ Parameters for properties must be declared using the `ByVal` modifier.
 -   Define property parameters as `ByVal`.  
   
 ## See Also  
- [ByVal](/dotnet/visual-basic/language-reference/modifiers/byval)   
- [ByRef](/dotnet/visual-basic/language-reference/modifiers/byref)
+ [ByVal](/dotnet/articles/visual-basic/language-reference/modifiers/byval)   
+ [ByRef](/dotnet/articles/visual-basic/language-reference/modifiers/byref)

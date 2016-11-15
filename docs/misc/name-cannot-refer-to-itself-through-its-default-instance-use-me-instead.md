@@ -46,4 +46,4 @@ An attempt has been made from inside a form to refer to that form as a default i
 -   Use `Me` to refer to the object.  
   
 ## See Also  
- [Debugger Basics](/visual-studio/debugger/debugger-basics)
+ [Debugger Basics](/visualstudio/debugger/debugger-basics)

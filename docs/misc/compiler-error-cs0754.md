@@ -67,5 +67,5 @@ using System;
 ```  
   
 ## See Also  
- [Explicit Interface Implementation](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)   
- [Partial Classes and Methods](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
+ [Explicit Interface Implementation](/dotnet/articles/csharp/programming-guide/interfaces/explicit-interface-implementation)   
+ [Partial Classes and Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)

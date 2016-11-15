@@ -44,5 +44,5 @@ translation.priority.mt:
 -   Test `RaiseEvent` statements from code in the **Code Editor**.  
   
 ## See Also  
- [RaiseEvent Statement](/dotnet/visual-basic/language-reference/statements/raiseevent-statement)   
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [RaiseEvent Statement](/dotnet/articles/visual-basic/language-reference/statements/raiseevent-statement)   
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

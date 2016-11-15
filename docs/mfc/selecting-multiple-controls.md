@@ -39,7 +39,7 @@ translation.priority.ht:
 # Selecting Multiple Controls
 ### To select multiple controls  
   
-1.  In the [Toolbox Window](/visual-studio/ide/reference/toolbox), select the **Pointer** tool.  
+1.  In the [Toolbox Window](/visualstudio/ide/reference/toolbox), select the **Pointer** tool.  
   
 2.  Drag the pointer to draw a selection box around the controls you want to select in your dialog box.  
   

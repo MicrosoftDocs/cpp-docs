@@ -46,6 +46,6 @@ A warning was encountered when running an assembly compiled with the **Treat War
 2.  Compile the assembly with the **Treat Warnings As Errors** option turned off.  
   
 ## See Also  
- [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)   
+ [/warnaserror (Visual Basic)](/dotnet/articles/visual-basic/reference/command-line-compiler/warnaserror)   
  [Property Pages Build Page](http://msdn.microsoft.com/en-us/1e499ee7-5bd6-44ca-a048-82c357fafaa7)   
  [Build, Configuration Properties, Deployment Project Properties Dialog Box](http://msdn.microsoft.com/en-us/45cf8bf4-56aa-4f2d-bdef-908c7010d7fc)

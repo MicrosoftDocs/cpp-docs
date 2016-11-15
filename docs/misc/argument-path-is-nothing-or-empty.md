@@ -41,4 +41,4 @@ A path name is not valid because it is initialized to `Nothing` or is empty. A p
 ## See Also  
  [My.Application.Info.DirectoryPath Property](http://msdn.microsoft.com/en-us/660586b9-638e-42a7-ae21-5eee34a3fccf)   
  [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
- [Nothing](/dotnet/visual-basic/language-reference/nothing)
+ [Nothing](/dotnet/articles/visual-basic/language-reference/nothing)

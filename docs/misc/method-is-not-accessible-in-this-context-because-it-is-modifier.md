@@ -46,4 +46,4 @@ You have attempted to access a method that is not accessible in this context bec
 -   If the error is caused by a name collision, differentiate the colliding names by more than case.  
   
 ## See Also  
- [Private](/dotnet/visual-basic/language-reference/modifiers/private)
+ [Private](/dotnet/articles/visual-basic/language-reference/modifiers/private)

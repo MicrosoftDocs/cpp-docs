@@ -42,4 +42,4 @@ The exception that is thrown when there is an error downloading ClickOnce manife
 ## See Also  
  <xref:System.Deployment.Application.DeploymentDownloadException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [ClickOnce Security and Deployment](/visual-studio/deployment/clickonce-security-and-deployment)
+ [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)

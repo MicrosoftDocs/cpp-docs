@@ -35,4 +35,4 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # Arguments for External Tools
-This content has moved to [Managing External Tools](/visual-studio/ide/managing-external-tools).
+This content has moved to [Managing External Tools](/visualstudio/ide/managing-external-tools).

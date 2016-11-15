@@ -40,7 +40,7 @@ Expected catch or finally
   
  A `try` block must be followed by a `catch` or `finally` block.  
   
- For more information on exceptions, see [Exception Handling Statements](/dotnet/csharp/language-reference/keywords/exception-handling-statements).  
+ For more information on exceptions, see [Exception Handling Statements](/dotnet/articles/csharp/language-reference/keywords/exception-handling-statements).  
   
 ## Example  
  The following sample generates CS1524:  

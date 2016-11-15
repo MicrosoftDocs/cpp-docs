@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1055
 An add or remove accessor expected  
   
- If your [event](/dotnet/csharp/language-reference/keywords/event) is not declared as a field, it must define both **add** and **remove** accessor functions.  
+ If your [event](/dotnet/articles/csharp/language-reference/keywords/event) is not declared as a field, it must define both **add** and **remove** accessor functions.  
   
  The following sample generates CS1055:  
   

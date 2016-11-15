@@ -48,4 +48,4 @@ A source line begins with a `#` character, but a valid conditional compilation d
 3.  Remove the `#` character or add a valid directive immediately after it.  
   
 ## See Also  
- [Directives](/dotnet/visual-basic/language-reference/directives/directives)
+ [Directives](/dotnet/articles/visual-basic/language-reference/directives/directives)

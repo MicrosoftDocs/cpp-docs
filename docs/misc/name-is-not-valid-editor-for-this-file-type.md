@@ -40,7 +40,7 @@ This error generally occurs when an incorrect value is entered for the /e:*edito
 1.  Check the documentation for the correct /e:*editorname* syntax and re-enter the command.  
   
 ## See Also  
- [New File Command](/visual-studio/ide/reference/new-file-command)   
- [Open File Command](/visual-studio/ide/reference/open-file-command)   
- [Add New Item Command](/visual-studio/ide/reference/add-new-item-command)   
- [Add Existing Item Command](/visual-studio/ide/reference/add-existing-item-command)
+ [New File Command](/visualstudio/ide/reference/new-file-command)   
+ [Open File Command](/visualstudio/ide/reference/open-file-command)   
+ [Add New Item Command](/visualstudio/ide/reference/add-new-item-command)   
+ [Add Existing Item Command](/visualstudio/ide/reference/add-existing-item-command)

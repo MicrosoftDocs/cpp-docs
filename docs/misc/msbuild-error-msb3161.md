@@ -43,5 +43,5 @@ translation.priority.mt:
 -   Remove the circular dependency, either by changing the dependencies described in the bootstrapper package files or by not installing one of the interdependent packages.  
   
 ## See Also  
- [Product and Package Schema Reference](/visual-studio/deployment/product-and-package-schema-reference)   
+ [Product and Package Schema Reference](/visualstudio/deployment/product-and-package-schema-reference)   
  [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)

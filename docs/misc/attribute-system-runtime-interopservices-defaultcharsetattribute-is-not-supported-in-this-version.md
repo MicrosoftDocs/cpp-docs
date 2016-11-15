@@ -43,7 +43,7 @@ The <xref:System.Runtime.InteropServices.DefaultCharSetAttribute?displayProperty
   
 ### To correct this error  
   
--   Use each [Declare Statement](/dotnet/visual-basic/language-reference/statements/declare-statement) to specify the character set for the external procedure it is declaring. The following example illustrates this.  
+-   Use each [Declare Statement](/dotnet/articles/visual-basic/language-reference/statements/declare-statement) to specify the character set for the external procedure it is declaring. The following example illustrates this.  
   
     ```  
     Ansi Declare Function GetUserName Lib "advapi32.dll" _  
@@ -58,4 +58,4 @@ The <xref:System.Runtime.InteropServices.DefaultCharSetAttribute?displayProperty
  <xref:System.Runtime.InteropServices.DefaultCharSetAttribute>   
  <xref:System.Runtime.InteropServices.CharSet>   
  [NOT IN BUILD: Attributes in Visual Basic](http://msdn.microsoft.com/en-us/620bfc0e-4582-4c8b-8432-ebc5c3dccc22)   
- [Declare Statement](/dotnet/visual-basic/language-reference/statements/declare-statement)
+ [Declare Statement](/dotnet/articles/visual-basic/language-reference/statements/declare-statement)

@@ -41,4 +41,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Generate From Usage
-This content has moved to [Visual C# IntelliSense](/visual-studio/ide/visual-csharp-intellisense).
+This content has moved to [Visual C# IntelliSense](/visualstudio/ide/visual-csharp-intellisense).

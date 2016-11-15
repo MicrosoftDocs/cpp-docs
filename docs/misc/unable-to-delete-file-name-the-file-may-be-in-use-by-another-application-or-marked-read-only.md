@@ -44,4 +44,4 @@ This error generally occurs when the keyboard scheme selected to be deleted is e
      If the file is read-only, remove the read-only attribute. You can modify the read-only attribute in the Properties dialog box for the file, available in File Explorer.  
   
 ## See Also  
- [Identifying and Customizing Keyboard Shortcuts](/visual-studio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)
+ [Identifying and Customizing Keyboard Shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)

@@ -43,5 +43,5 @@ This error generally occurs when the settings file is not readable, does not exi
 3.  Verify that the file contains correctly formed XML.  
   
 ## See Also  
- [/ResetSettings (devenv.exe)](/visual-studio/ide/reference/resetsettings-devenv-exe)   
- [Devenv Command Line Switches](/visual-studio/ide/reference/devenv-command-line-switches)
+ [/ResetSettings (devenv.exe)](/visualstudio/ide/reference/resetsettings-devenv-exe)   
+ [Devenv Command Line Switches](/visualstudio/ide/reference/devenv-command-line-switches)

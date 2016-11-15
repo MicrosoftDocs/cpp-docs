@@ -51,4 +51,4 @@ A <xref:System.StackOverflowException> exception is thrown when the execution st
 ## See Also  
  <xref:System.StackOverflowException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Loop Structures](/dotnet/visual-basic/programming-guide/language-features/control-flow/loop-structures)
+ [Loop Structures](/dotnet/articles/visual-basic/programming-guide/language-features/control-flow/loop-structures)

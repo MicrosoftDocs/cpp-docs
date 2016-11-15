@@ -36,7 +36,7 @@ translation.priority.ht:
 # How to: Implement is and as C# Keywords (C++/CLI)
 This topic shows how to implement the functionality of the `is` and `as` C# keywords in Visual C++.  
   
- For more information, see [is](/dotnet/csharp/language-reference/keywords/is) and [as](/dotnet/csharp/language-reference/keywords/as).  
+ For more information, see [is](/dotnet/articles/csharp/language-reference/keywords/is) and [as](/dotnet/articles/csharp/language-reference/keywords/as).  
   
 ## Example  
   

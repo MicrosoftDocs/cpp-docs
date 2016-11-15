@@ -35,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Type arguments cannot be applied to the expression &#39;&lt;expression&gt;&#39;
-An import alias is defined with an [Of](/dotnet/visual-basic/language-reference/statements/of-clause) clause that passes type arguments to the import alias.  
+An import alias is defined with an [Of](/dotnet/articles/visual-basic/language-reference/statements/of-clause) clause that passes type arguments to the import alias.  
   
  Type arguments are used for generic types, and only classes, structures, interfaces, procedures, and delegates can be generic. Neither namespaces nor import aliases can be generic.  
   
@@ -46,8 +46,8 @@ An import alias is defined with an [Of](/dotnet/visual-basic/language-reference/
 -   Remove the `Of` clause and its type arguments from the import alias.  
   
 ## See Also  
- [Imports Statement (.NET Namespace and Type)](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)   
- [References and the Imports Statement](/dotnet/visual-basic/programming-guide/program-structure/references-and-the-imports-statement)   
+ [Imports Statement (.NET Namespace and Type)](/dotnet/articles/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)   
+ [References and the Imports Statement](/dotnet/articles/visual-basic/programming-guide/program-structure/references-and-the-imports-statement)   
  [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)   
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [Type List](/dotnet/visual-basic/language-reference/statements/type-list)
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Type List](/dotnet/articles/visual-basic/language-reference/statements/type-list)

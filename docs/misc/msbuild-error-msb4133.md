@@ -42,5 +42,5 @@ translation.priority.mt:
   
 ## See Also  
  <xref:Microsoft.Build.BuildEngine.Toolset>   
- [Project Element (MSBuild)](/visual-studio/msbuild/project-element-msbuild)   
- [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)
+ [Project Element (MSBuild)](/visualstudio/msbuild/project-element-msbuild)   
+ [Additional Resources](/visualstudio/msbuild/additional-msbuild-resources)

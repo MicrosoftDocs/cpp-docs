@@ -46,5 +46,5 @@ The `/noconfig` option tells the compiler not to compile with the Vbc.rsp file. 
 2.  Specify the `/noconfig` option when invoking the command-line compiler.  
   
 ## See Also  
- [/noconfig](/dotnet/visual-basic/reference/command-line-compiler/noconfig)   
- [@ (Specify Response File)](/dotnet/visual-basic/reference/command-line-compiler/specify-response-file)
+ [/noconfig](/dotnet/articles/visual-basic/reference/command-line-compiler/noconfig)   
+ [@ (Specify Response File)](/dotnet/articles/visual-basic/reference/command-line-compiler/specify-response-file)

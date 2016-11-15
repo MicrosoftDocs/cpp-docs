@@ -68,8 +68,8 @@ End Class
 -   Remove from the `Implements` statement one of the interfaces resulting in the implementation conflict.  
   
 ## See Also  
- [Class Statement](/dotnet/visual-basic/language-reference/statements/class-statement)   
- [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)   
- [Implements Statement](/dotnet/visual-basic/language-reference/statements/implements-statement)   
+ [Class Statement](/dotnet/articles/visual-basic/language-reference/statements/class-statement)   
+ [Interface Statement](/dotnet/articles/visual-basic/language-reference/statements/interface-statement)   
+ [Implements Statement](/dotnet/articles/visual-basic/language-reference/statements/implements-statement)   
  [NOT IN BUILD: Implements Keyword and Implements Statement](http://msdn.microsoft.com/en-us/b96560f7-6413-480f-a1e2-f80253bab5be)   
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0678
 'variable': a field can not be both volatile and readonly  
   
- Use of the [volatile](/dotnet/csharp/language-reference/keywords/volatile) and [readonly](/dotnet/csharp/language-reference/keywords/readonly) keywords is mutually exclusive.  
+ Use of the [volatile](/dotnet/articles/csharp/language-reference/keywords/volatile) and [readonly](/dotnet/articles/csharp/language-reference/keywords/readonly) keywords is mutually exclusive.  
   
  The following sample generates CS0678:  
   

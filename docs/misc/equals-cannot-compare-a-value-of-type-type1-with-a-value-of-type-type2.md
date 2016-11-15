@@ -50,9 +50,9 @@ An `Equals` operator in a `Join` or `Group Join` clause has attempted to compare
     -   Convert the values to strings by using the `ToString` method.  
   
 ## See Also  
- [CType Function](/dotnet/visual-basic/language-reference/functions/ctype-function)   
- [Type Conversions in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/type-conversions)   
- [Join Clause](/dotnet/visual-basic/language-reference/queries/join-clause)   
- [Group Join Clause](/dotnet/visual-basic/language-reference/queries/group-join-clause)   
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)
+ [CType Function](/dotnet/articles/visual-basic/language-reference/functions/ctype-function)   
+ [Type Conversions in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/type-conversions)   
+ [Join Clause](/dotnet/articles/visual-basic/language-reference/queries/join-clause)   
+ [Group Join Clause](/dotnet/articles/visual-basic/language-reference/queries/group-join-clause)   
+ [Introduction to LINQ in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/articles/visual-basic/programming-guide/language-features/linq/index)

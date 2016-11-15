@@ -40,4 +40,4 @@ Response file 'file' included multiple times
   
  A response file was passed to the compiler more than once. A response file can only be passed to the compiler once per output file.  
   
- For more on response files, see [@ (Specify Response File)](/dotnet/csharp/language-reference/compiler-options/response-file-compiler-option).
+ For more on response files, see [@ (Specify Response File)](/dotnet/articles/csharp/language-reference/compiler-options/response-file-compiler-option).

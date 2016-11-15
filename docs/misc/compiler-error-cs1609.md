@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1609
 Modifiers cannot be placed on event accessor declarations  
   
- Modifiers can only be placed on event declarations and not on the event accessor declarations. For more information, see [Using Properties](/dotnet/csharp/programming-guide/classes-and-structs/using-properties).  
+ Modifiers can only be placed on event declarations and not on the event accessor declarations. For more information, see [Using Properties](/dotnet/articles/csharp/programming-guide/classes-and-structs/using-properties).  
   
 ## Example  
  The following sample generates CS1609.  

@@ -44,4 +44,4 @@ This property or procedure has the same name as another property or procedure ma
 -   Use the `Shadows` modifier.  
   
 ## See Also  
- [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)
+ [Shadows](/dotnet/articles/visual-basic/language-reference/modifiers/shadows)

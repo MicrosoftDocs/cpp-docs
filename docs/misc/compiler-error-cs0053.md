@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0053
 Inconsistent accessibility: property type 'type' is less accessible than property 'property'  
   
- A public construct must return a publicly accessible object. For more information, see [Access Modifiers](/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers).  
+ A public construct must return a publicly accessible object. For more information, see [Access Modifiers](/dotnet/articles/csharp/programming-guide/classes-and-structs/access-modifiers).  
   
  The following sample generates CS0053:  
   

@@ -44,5 +44,5 @@ An XML namespace prefix defined by an `Imports` statement matches a previously d
 -   Use a unique name for the XML namespace prefix.  
   
 ## See Also  
- [Imports Statement (XML Namespace)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [Imports Statement (XML Namespace)](/dotnet/articles/visual-basic/language-reference/statements/imports-statement-xml-namespace)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

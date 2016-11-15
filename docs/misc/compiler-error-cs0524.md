@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0524
 'type' : interfaces cannot declare types  
   
- An [interface](/dotnet/csharp/language-reference/keywords/interface) cannot contain a user-defined type; it should contain only methods and properties.  
+ An [interface](/dotnet/articles/csharp/language-reference/keywords/interface) cannot contain a user-defined type; it should contain only methods and properties.  
   
 ## Example  
  The following sample generates CS0524:  

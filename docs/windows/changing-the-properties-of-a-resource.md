@@ -40,7 +40,7 @@ translation.priority.ht:
   
      **Note** If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  In the [Properties window](/visual-studio/ide/reference/properties-window), change the properties of your resource.  
+2.  In the [Properties window](/visualstudio/ide/reference/properties-window), change the properties of your resource.  
   
 ### To undo a change you've made to the properties of a resource  
   

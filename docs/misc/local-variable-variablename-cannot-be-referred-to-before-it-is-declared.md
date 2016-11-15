@@ -44,4 +44,4 @@ A variable inside a procedure is used before its declaration.
 -   Move the declaration to precede the first reference to the variable.  
   
 ## See Also  
- [Variable Declaration](/dotnet/visual-basic/programming-guide/language-features/variables/variable-declaration)
+ [Variable Declaration](/dotnet/articles/visual-basic/programming-guide/language-features/variables/variable-declaration)

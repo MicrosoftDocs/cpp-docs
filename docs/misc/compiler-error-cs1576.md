@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1576
 The line number specified for #line directive is missing or invalid  
   
- The compiler detected an error with the value passed to the [#line](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-line) directive.  
+ The compiler detected an error with the value passed to the [#line](/dotnet/articles/csharp/language-reference/preprocessor-directives/preprocessor-line) directive.  
   
  The following sample generates CS1576:  
   

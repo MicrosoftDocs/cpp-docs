@@ -44,6 +44,6 @@ An XML processing instruction literal is missing the required closing `?>` chara
 -   Add the required closing `?>` characters to the end of the XML processing instruction literal.  
   
 ## See Also  
- [XML Processing Instruction Literal](/dotnet/visual-basic/language-reference/xml-literals/xml-processing-instruction-literal)   
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [XML Processing Instruction Literal](/dotnet/articles/visual-basic/language-reference/xml-literals/xml-processing-instruction-literal)   
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

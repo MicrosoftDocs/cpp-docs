@@ -43,5 +43,5 @@ translation.priority.mt:
 -   Check to see if the target file is locked (in use) by another application. Be sure you have permission to read the source file and to write the target file to the target folder. If the destination file path is extremely long, you may need to copy to a different location.  
   
 ## See Also  
- [Copy Task](/visual-studio/msbuild/copy-task)   
- [Tasks](/visual-studio/msbuild/msbuild-tasks)
+ [Copy Task](/visualstudio/msbuild/copy-task)   
+ [Tasks](/visualstudio/msbuild/msbuild-tasks)

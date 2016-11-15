@@ -50,7 +50,7 @@ translation.priority.ht:
 3.  In the new item box, type a name for the new menu command.  
   
     > [!NOTE]
-    >  The text you type appears in both the Menu editor and in the **Caption** box in the [Properties Window](/visual-studio/ide/reference/properties-window). You can edit the properties for your new menu in either location.  
+    >  The text you type appears in both the Menu editor and in the **Caption** box in the [Properties Window](/visualstudio/ide/reference/properties-window). You can edit the properties for your new menu in either location.  
   
     > [!TIP]
     >  You can define a mnemonic key (hot key) that allows the user to select the menu command. Type an ampersand (&) in front of a letter to specify it as the mnemonic. The user can select the menu command by typing that letter.  

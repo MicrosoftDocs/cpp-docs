@@ -35,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # &lt;type&gt; parameters cannot be declared &#39;Optional&#39;
-A definition of a delegate, event, or operator declares an [Optional](/dotnet/visual-basic/language-reference/modifiers/optional) parameter.  
+A definition of a delegate, event, or operator declares an [Optional](/dotnet/articles/visual-basic/language-reference/modifiers/optional) parameter.  
   
  `Optional` parameters are allowed only on `Declare`, `Function`, `Property`, and `Sub` parameters.  
   
@@ -47,9 +47,9 @@ A definition of a delegate, event, or operator declares an [Optional](/dotnet/vi
   
 -   If you are defining an operator, you might be able to achieve the `Optional` functionality with a series of overloads.  
   
--   If you are defining a delegate or event, you must rework the overall logic of this part of your application. You cannot use `Optional` or [ParamArray](/dotnet/visual-basic/language-reference/modifiers/paramarray) parameters, or overloaded versions, on delegate or event parameters.  
+-   If you are defining a delegate or event, you must rework the overall logic of this part of your application. You cannot use `Optional` or [ParamArray](/dotnet/articles/visual-basic/language-reference/modifiers/paramarray) parameters, or overloaded versions, on delegate or event parameters.  
   
 ## See Also  
- [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads)   
- [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
- [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)
+ [Overloads](/dotnet/articles/visual-basic/language-reference/modifiers/overloads)   
+ [Operator Procedures](/dotnet/articles/visual-basic/language-reference/procedures/operator-procedures)   
+ [Operator Statement](/dotnet/articles/visual-basic/language-reference/statements/operator-statement)

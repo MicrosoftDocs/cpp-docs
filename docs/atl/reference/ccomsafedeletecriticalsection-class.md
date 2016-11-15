@@ -104,7 +104,7 @@ CComSafeDeleteCriticalSection();
  Releases the internal **CRITICAL_SECTION** object from memory if the [m_bInitialized](#ccomsafedeletecriticalsection__m_binitialized) data member is set to **true**.  
   
 ##  <a name="ccomsafedeletecriticalsection__init"></a>  CComSafeDeleteCriticalSection::Init  
- Calls the base class implementation of [Init](/visual-studio/debugger/init) and sets [m_bInitialized](#ccomsafedeletecriticalsection__m_binitialized) to **true** if successful.  
+ Calls the base class implementation of [Init](/visualstudio/debugger/init) and sets [m_bInitialized](#ccomsafedeletecriticalsection__m_binitialized) to **true** if successful.  
   
 ```
 HRESULT Init() throw();

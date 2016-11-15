@@ -39,4 +39,4 @@ A conversion attempts to change an argument to a type that is not valid.
 -   Change the type to one that is valid.  
   
 ## See Also  
- [Conversion Functions](/dotnet/visual-basic/language-reference/functions/conversion-functions)
+ [Conversion Functions](/dotnet/articles/visual-basic/language-reference/functions/conversion-functions)

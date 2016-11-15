@@ -22,4 +22,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Add XML Relationship Data - redirection
-This topic has been consolidated with another topic. Please go to [Customizing File Storage and XML Serialization](/visual-studio/modeling/customizing-file-storage-and-xml-serialization).
+This topic has been consolidated with another topic. Please go to [Customizing File Storage and XML Serialization](/visualstudio/modeling/customizing-file-storage-and-xml-serialization).

@@ -52,7 +52,7 @@ A derived class does not declare a constructor, and [!INCLUDE[vbprvb](../dotnet/
 ## See Also  
  [Object Lifetime: How Objects Are Created and Destroyed](../Topic/Object%20Lifetime:%20How%20Objects%20Are%20Created%20and%20Destroyed%20\(Visual%20Basic\).md)   
  [NOT IN BUILD: Using Constructors and Destructors](http://msdn.microsoft.com/en-us/548eebe1-86c4-4377-b2f5-447cb8be3d90)   
- [Optional](/dotnet/visual-basic/language-reference/modifiers/optional)   
- [ParamArray](/dotnet/visual-basic/language-reference/modifiers/paramarray)   
- [Optional Parameters](/dotnet/visual-basic/language-reference/procedures/optional-parameters)   
- [Parameter Arrays](/dotnet/visual-basic/language-reference/procedures/parameter-arrays)
+ [Optional](/dotnet/articles/visual-basic/language-reference/modifiers/optional)   
+ [ParamArray](/dotnet/articles/visual-basic/language-reference/modifiers/paramarray)   
+ [Optional Parameters](/dotnet/articles/visual-basic/language-reference/procedures/optional-parameters)   
+ [Parameter Arrays](/dotnet/articles/visual-basic/language-reference/procedures/parameter-arrays)

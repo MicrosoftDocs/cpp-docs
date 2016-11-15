@@ -71,4 +71,4 @@ You have attempted to open a Solution containing one or more projects that were 
 ## See Also  
  [NIB:How to: Unload and Reload Projects](http://msdn.microsoft.com/en-us/abc0155b-8fcb-4ffc-95b6-698518a7100b)   
  [Project Dependencies Dialog Box](http://msdn.microsoft.com/en-us/d66e48c3-3722-40dd-99b4-53d93cac128e)   
- [Compiling and Building](/visual-studio/ide/compiling-and-building-in-visual-studio)
+ [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio)

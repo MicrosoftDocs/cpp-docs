@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0502
 'member' cannot be both abstract and sealed  
   
- A class member cannot be both [abstract](/dotnet/csharp/language-reference/keywords/abstract) and [sealed](/dotnet/csharp/language-reference/keywords/sealed).  
+ A class member cannot be both [abstract](/dotnet/articles/csharp/language-reference/keywords/abstract) and [sealed](/dotnet/articles/csharp/language-reference/keywords/sealed).  
   
  The following sample generates CS0502:  
   

@@ -56,4 +56,4 @@ You cannot initialize an instance of `Object` by using object initializer syntax
   
 ## See Also  
  [Object Initializers: Named and Anonymous Types](../Topic/Object%20Initializers:%20Named%20and%20Anonymous%20Types%20\(Visual%20Basic\).md)   
- [Object Data Type](/dotnet/visual-basic/language-reference/data-types/object-data-type)
+ [Object Data Type](/dotnet/articles/visual-basic/language-reference/data-types/object-data-type)

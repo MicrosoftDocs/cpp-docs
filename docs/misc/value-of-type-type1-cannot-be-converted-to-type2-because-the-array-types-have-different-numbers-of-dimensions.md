@@ -44,4 +44,4 @@ You have tried to convert one array to another with a different number of dimens
 -   Change one or both arrays so that the number of dimensions matches.  
   
 ## See Also  
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)

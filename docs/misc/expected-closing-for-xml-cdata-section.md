@@ -44,6 +44,6 @@ An XML CDATA literal is missing the required closing ']]>' characters.
 -   Add the required closing ']]>' characters to the end of the XML CDATA literal.  
   
 ## See Also  
- [XML CDATA Literal](/dotnet/visual-basic/language-reference/xml-literals/xml-cdata-literal)   
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [XML CDATA Literal](/dotnet/articles/visual-basic/language-reference/xml-literals/xml-cdata-literal)   
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

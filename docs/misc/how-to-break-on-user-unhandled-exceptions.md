@@ -40,4 +40,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Break on User-Unhandled Exceptions
-This content has been removed. Please see [Managing Exceptions with the Debugger](/visual-studio/debugger/managing-exceptions-with-the-debugger).
+This content has been removed. Please see [Managing Exceptions with the Debugger](/visualstudio/debugger/managing-exceptions-with-the-debugger).

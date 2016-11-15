@@ -49,7 +49,7 @@ The Animation region of the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_
  [!code-vb[VSSDKAnimationStatusBar#1](../misc/codesnippet/VisualBasic/how-to-use-the-animation-region-of-the-status-bar_1.vb)]  
   
 ## See Also  
- [Extending the Status Bar](/visual-studio/extensibility/extending-the-status-bar)   
+ [Extending the Status Bar](/visualstudio/extensibility/extending-the-status-bar)   
  [How to: Read from and Write to the Feedback Region of the Status Bar](../misc/how-to-read-from-and-write-to-the-feedback-region-of-the-status-bar.md)   
  [How to: Program the Progress Bar Region of the Status Bar](../misc/how-to-program-the-progress-bar-region-of-the-status-bar.md)   
  [How to: Program the Designer Region of the Status Bar](../misc/how-to-program-the-designer-region-of-the-status-bar.md)

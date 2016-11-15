@@ -84,4 +84,4 @@ To guarantee functional and visual compatibility with Visual Studio, create moda
  [!code-cs[VSModalDialog#21](../misc/codesnippet/CSharp/extending-modal-dialog-boxes_6.cs)]  
   
 ## See Also  
- [Creating and Managing Modal Dialog Boxes](/visual-studio/extensibility/creating-and-managing-modal-dialog-boxes)
+ [Creating and Managing Modal Dialog Boxes](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)

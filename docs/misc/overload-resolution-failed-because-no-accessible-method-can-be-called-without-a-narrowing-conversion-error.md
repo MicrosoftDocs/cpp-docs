@@ -44,6 +44,6 @@ You have made a call to an overloaded method, but the compiler cannot find a met
 -   Specify `Option Strict Off`.  
   
 ## See Also  
- [Overloaded Properties and Methods](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/overloaded-properties-and-methods)   
- [Widening and Narrowing Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)   
- [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)
+ [Overloaded Properties and Methods](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/overloaded-properties-and-methods)   
+ [Widening and Narrowing Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)   
+ [Option Strict Statement](/dotnet/articles/visual-basic/language-reference/statements/option-strict-statement)

@@ -62,5 +62,5 @@ IIf(i > 0, TruePart:="positive", FalsePart:="not positive")
     ```  
   
 ## See Also  
- [If Operator](/dotnet/visual-basic/language-reference/operators/if-operator)   
- [Passing Arguments by Position and by Name](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name)
+ [If Operator](/dotnet/articles/visual-basic/language-reference/operators/if-operator)   
+ [Passing Arguments by Position and by Name](/dotnet/articles/visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name)

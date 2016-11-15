@@ -39,4 +39,4 @@ A user pressed CTRL+BREAK or another interrupt key.
 -   Retry the operation.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

@@ -43,7 +43,7 @@ An `End Using` statement appears with no matching `Using` declaration preceding 
   
 -   Remove the `End Using` statement if it is redundant.  
   
--   Supply the missing [Using Statement](/dotnet/visual-basic/language-reference/statements/using-statement) if one is missing.  
+-   Supply the missing [Using Statement](/dotnet/articles/visual-basic/language-reference/statements/using-statement) if one is missing.  
   
 -   Move the `End Using` statement to the appropriate place in the code.  
   

@@ -44,4 +44,4 @@ The attribute being used has a property that requires one or more parameters.
 1.  Specify parameters for the property.  
   
 ## See Also  
- [Properties](/dotnet/visual-basic/language-reference/properties)
+ [Properties](/dotnet/articles/visual-basic/language-reference/properties)

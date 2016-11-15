@@ -37,7 +37,7 @@ translation.priority.ht:
 # Sizing a Control While You Add It
 ### To size a control while you add it  
   
-1.  Select a control in the [Toolbox Window](/visual-studio/ide/reference/toolbox).  
+1.  Select a control in the [Toolbox Window](/visualstudio/ide/reference/toolbox).  
   
 2.  Place your cursor (which appears as cross hairs) where you want the upper-left corner of the new control to be on your dialog box.  
   

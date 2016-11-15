@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS0167
 The delegate 'delegate' is missing the Invoke method  
   
- You imported and used a managed program (one that uses the .NET Framework common language runtime) that was created with another compiler. That compiler allowed an ill-formed [delegate](/dotnet/csharp/language-reference/keywords/delegate). Therefore, the `Invoke` method was not available. For more information, see [Delegates](/dotnet/csharp/programming-guide/delegates/index).
+ You imported and used a managed program (one that uses the .NET Framework common language runtime) that was created with another compiler. That compiler allowed an ill-formed [delegate](/dotnet/articles/csharp/language-reference/keywords/delegate). Therefore, the `Invoke` method was not available. For more information, see [Delegates](/dotnet/articles/csharp/programming-guide/delegates/index).

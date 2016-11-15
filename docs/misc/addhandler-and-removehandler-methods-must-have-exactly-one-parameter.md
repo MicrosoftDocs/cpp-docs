@@ -49,7 +49,7 @@ A custom event declaration must have `AddHandler` or `RemoveHandler` declaration
  [!code-vb[VbVbalrEventError#1](../misc/codesnippet/VisualBasic/addhandler-and-removehandler-methods-must-have-exactly-one-parameter_1.vb)]  
   
 ## See Also  
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)   
  [AddHandler - delete](http://msdn.microsoft.com/en-us/fc464cf8-582c-48a6-a9c2-185c4c3d5ff8)   
  [RemoveHandler - delete](http://msdn.microsoft.com/en-us/35c17f61-6e22-4b87-b6e1-3ed0c27a88a0)   
- [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)
+ [Events](/dotnet/articles/visual-basic/programming-guide/language-features/events/events)

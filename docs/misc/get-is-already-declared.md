@@ -44,4 +44,4 @@ A `Get` statement appears more than once in a code block. The `Get` statement de
 -   Remove the redundant `Get` statement.  
   
 ## See Also  
- [Get Statement](/dotnet/visual-basic/language-reference/statements/get-statement)
+ [Get Statement](/dotnet/articles/visual-basic/language-reference/statements/get-statement)

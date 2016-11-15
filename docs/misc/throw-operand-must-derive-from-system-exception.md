@@ -48,7 +48,7 @@ The argument supplied to `Throw` must either be an instance of `System.Exception
     ```  
   
 ## See Also  
- [Throw Statement](/dotnet/visual-basic/language-reference/statements/throw-statement)   
- [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
+ [Throw Statement](/dotnet/articles/visual-basic/language-reference/statements/throw-statement)   
+ [Try...Catch...Finally Statement](/dotnet/articles/visual-basic/language-reference/statements/try-catch-finally-statement)   
  [Exception Class in Visual Basic](http://msdn.microsoft.com/en-us/9aac396f-34ca-4afb-8e6c-e523cb690ba9)   
  [Exception and Error Handling in Visual Basic](http://msdn.microsoft.com/en-us/3e351e73-cf23-40ab-8b60-05794160529e)

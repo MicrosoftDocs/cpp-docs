@@ -46,6 +46,6 @@ A statement attempts to convert an `AddressOf` expression to a type that can onl
 -   Assign the `AddressOf` expression to a specific delegate type.  
   
 ## See Also  
- [AddressOf Operator](/dotnet/visual-basic/language-reference/operators/addressof-operator)   
+ [AddressOf Operator](/dotnet/articles/visual-basic/language-reference/operators/addressof-operator)   
  [NOT IN BUILD: Delegates and the AddressOf Operator](http://msdn.microsoft.com/en-us/7b2ed932-8598-4355-b2f7-5cedb23ee86f)   
- [Delegates](/dotnet/visual-basic/programming-guide/language-features/delegates/delegates)
+ [Delegates](/dotnet/articles/visual-basic/programming-guide/language-features/delegates/delegates)

@@ -46,5 +46,5 @@ translation.priority.mt:
 -   Apply the `Shared` modifier to make the constructor shared.  
   
 ## See Also  
- [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)   
- [Structures](/dotnet/visual-basic/programming-guide/language-features/data-types/structures)
+ [Structure Statement](/dotnet/articles/visual-basic/language-reference/statements/structure-statement)   
+ [Structures](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures)

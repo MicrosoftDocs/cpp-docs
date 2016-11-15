@@ -44,4 +44,4 @@ A `ParamArray` specification is followed by one or more other argument specifica
 -   Move the `ParamArray` to the end of the argument list.  
   
 ## See Also  
- [Parameter Arrays](/dotnet/visual-basic/language-reference/procedures/parameter-arrays)
+ [Parameter Arrays](/dotnet/articles/visual-basic/language-reference/procedures/parameter-arrays)

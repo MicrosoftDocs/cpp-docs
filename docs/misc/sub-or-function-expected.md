@@ -44,4 +44,4 @@ A `Declare` statement does not specify either `Sub` or `Function`. `Declare` ide
 -   Add either the `Sub` or `Function` keyword to the `Declare` statement.  
   
 ## See Also  
- [Declare Statement](/dotnet/visual-basic/language-reference/statements/declare-statement)
+ [Declare Statement](/dotnet/articles/visual-basic/language-reference/statements/declare-statement)

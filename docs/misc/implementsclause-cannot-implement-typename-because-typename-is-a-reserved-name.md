@@ -44,4 +44,4 @@ An `Implements` statement specified a reserved name.
 -   Rename the interface member that could not be implemented.  
   
 ## See Also  
- [Implements Statement](/dotnet/visual-basic/language-reference/statements/implements-statement)
+ [Implements Statement](/dotnet/articles/visual-basic/language-reference/statements/implements-statement)

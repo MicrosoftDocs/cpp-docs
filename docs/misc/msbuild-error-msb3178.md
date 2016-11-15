@@ -40,7 +40,7 @@ translation.priority.mt:
   
 ### To correct this error  
   
--   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources).  
+-   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](/visualstudio/msbuild/additional-msbuild-resources).  
   
 ## See Also  
  [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)

@@ -35,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Arguments cannot be passed to a &#39;New&#39; used on a type parameter
-A declaration or assignment statement invokes a generic type and supplies constructor arguments to a type parameter that has the [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator) constraint.  
+A declaration or assignment statement invokes a generic type and supplies constructor arguments to a type parameter that has the [New Operator](/dotnet/articles/visual-basic/language-reference/operators/new-operator) constraint.  
   
  A constraint list on a type parameter can specify that the type argument passed to that type parameter must expose a parameterless constructor that the creating code can access. A type parameter cannot require a constructor that takes parameters, and a type parameter with the `New` constraint cannot accept such a constructor.  
   
@@ -46,5 +46,5 @@ A declaration or assignment statement invokes a generic type and supplies constr
 -   Remove the argument list following the type argument in the statement invoking the generic type. You cannot pass constructor arguments to the corresponding type parameter.  
   
 ## See Also  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [Value Types and Reference Types](/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Value Types and Reference Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0022
 Wrong number of indices inside [], expected 'number'  
   
- An array-access operation specified the incorrect number of dimensions within the square brackets. For more information, see [Arrays](/dotnet/csharp/programming-guide/arrays/index).  
+ An array-access operation specified the incorrect number of dimensions within the square brackets. For more information, see [Arrays](/dotnet/articles/csharp/programming-guide/arrays/index).  
   
 ## Example  
  The following sample generates CS0022:  

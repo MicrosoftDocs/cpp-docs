@@ -126,13 +126,13 @@ Depending on your installation options, Visual Studio can make hundreds of macro
   
  To display the currently available macros, in the column to the right of a property name, click the drop-down arrow. If **Edit** is available, click it and then in the edit dialog box, click **Macros**. For more information, see the **Specifying User-Defined Values** section of [Property Pages](../ide/property-pages-visual-cpp.md).  
   
- Macros that are marked "Deprecated" are no longer used or have been replaced by an equivalent [item metadata macro](/visual-studio/msbuild/itemmetadata-element-msbuild) (**%(***name***)**). Macros that are marked "Deprecated; migrated" are also deprecated. And in addition, if the project that contains the macro is migrated from Visual Studio 2008, Visual Studio converts the macro to the equivalent current macro.  
+ Macros that are marked "Deprecated" are no longer used or have been replaced by an equivalent [item metadata macro](/visualstudio/msbuild/itemmetadata-element-msbuild) (**%(***name***)**). Macros that are marked "Deprecated; migrated" are also deprecated. And in addition, if the project that contains the macro is migrated from Visual Studio 2008, Visual Studio converts the macro to the equivalent current macro.  
   
- The following table describes a commonly used subset of the available macros. This list is not exhaustive. For details on how MSBuild property definitions are created and used as macros in .props, .targets, and .vcxproj files, see [MSBuild Properties](/visual-studio/msbuild/msbuild-properties).  
+ The following table describes a commonly used subset of the available macros. This list is not exhaustive. For details on how MSBuild property definitions are created and used as macros in .props, .targets, and .vcxproj files, see [MSBuild Properties](/visualstudio/msbuild/msbuild-properties).  
   
 |Macro|Description|  
 |-----------|-----------------|  
-|**$(RemoteMachine)**|Set to the value of the **Remote Machine** property on the Debug property page. See [Changing Project Settings for a C/C++ Debug Configuration](/visual-studio/debugger/project-settings-for-a-cpp-debug-configuration) for more information.|  
+|**$(RemoteMachine)**|Set to the value of the **Remote Machine** property on the Debug property page. See [Changing Project Settings for a C/C++ Debug Configuration](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration) for more information.|  
 |**$(Configuration)**|The name of the current project configuration, for example, "Debug".|  
 |**$(Platform)**|The name of current project platform, for example, "Win32".|  
 |**$(ParentName)**|(Deprecated.) Name of the item containing this project item. This will be the parent folder name, or project name.|  

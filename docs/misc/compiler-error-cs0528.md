@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0528
 'interface' is already listed in interface list  
   
- An interface-inheritance list includes a duplicate. An [interface](/dotnet/csharp/language-reference/keywords/interface) can only be specified once in the inheritance list.  
+ An interface-inheritance list includes a duplicate. An [interface](/dotnet/articles/csharp/language-reference/keywords/interface) can only be specified once in the inheritance list.  
   
  The following sample generates CS0528:  
   

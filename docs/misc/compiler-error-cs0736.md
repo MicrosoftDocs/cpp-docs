@@ -42,7 +42,7 @@ translation.priority.mt:
   
 ### To correct this error  
   
--   Remove the [static](/dotnet/csharp/language-reference/keywords/static) modifier from the method declaration.  
+-   Remove the [static](/dotnet/articles/csharp/language-reference/keywords/static) modifier from the method declaration.  
   
 -   Change the name of the interface method.  
   
@@ -72,4 +72,4 @@ namespace CS0736
 ```  
   
 ## See Also  
- [Interfaces](/dotnet/csharp/programming-guide/interfaces/index)
+ [Interfaces](/dotnet/articles/csharp/programming-guide/interfaces/index)

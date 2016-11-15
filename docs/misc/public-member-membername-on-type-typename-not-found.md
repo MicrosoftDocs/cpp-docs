@@ -39,5 +39,5 @@ The member you are trying to access cannot be found. This error can occur when a
 1.  If the member exists, ensure that it is declared as `Public`.  
   
 ## See Also  
- [Public](/dotnet/visual-basic/language-reference/modifiers/public)   
- [Early and Late Binding](/dotnet/visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding)
+ [Public](/dotnet/articles/visual-basic/language-reference/modifiers/public)   
+ [Early and Late Binding](/dotnet/articles/visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding)

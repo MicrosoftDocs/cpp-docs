@@ -45,4 +45,4 @@ You have failed to supply a default property for a class.
   
 ## See Also  
  [Default Property Changes in Visual Basic](http://msdn.microsoft.com/en-us/9b8cfad7-40ac-4b83-affb-1ff781755a4c)   
- [Default](/dotnet/visual-basic/language-reference/modifiers/default)
+ [Default](/dotnet/articles/visual-basic/language-reference/modifiers/default)

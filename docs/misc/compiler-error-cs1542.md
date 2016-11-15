@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS1542
 'dll' cannot be added to this assembly because it already is an assembly; use '/R' option instead  
   
- The file that was referenced with the [/addmodule](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option) compiler option was not built with [/target:module](../Topic/-target:module%20\(C%23%20Compiler%20Options\).md); use [/reference](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option) to reference the file in this compilation.
+ The file that was referenced with the [/addmodule](/dotnet/articles/csharp/language-reference/compiler-options/addmodule-compiler-option) compiler option was not built with [/target:module](../Topic/-target:module%20\(C%23%20Compiler%20Options\).md); use [/reference](/dotnet/articles/csharp/language-reference/compiler-options/reference-compiler-option) to reference the file in this compilation.

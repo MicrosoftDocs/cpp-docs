@@ -44,4 +44,4 @@ A character constant is not valid because either it contains more than one chara
 -   Change the character constant to a single character or change the null character to a valid character.  
   
 ## See Also  
- [Char Data Type](/dotnet/visual-basic/language-reference/data-types/char-data-type)
+ [Char Data Type](/dotnet/articles/visual-basic/language-reference/data-types/char-data-type)

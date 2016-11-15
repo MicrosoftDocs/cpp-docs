@@ -47,5 +47,5 @@ A `Using` statement specifies a resource of a type that does not implement the <
   
 ## See Also  
  <xref:System.IDisposable>   
- [Using Statement](/dotnet/visual-basic/language-reference/statements/using-statement)   
+ [Using Statement](/dotnet/articles/visual-basic/language-reference/statements/using-statement)   
  [How to: Dispose of a System Resource](../Topic/How%20to:%20Dispose%20of%20a%20System%20Resource%20\(Visual%20Basic\).md)

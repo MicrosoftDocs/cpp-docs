@@ -44,6 +44,6 @@ A method in a structure was declared as `Protected` or `Protected Friend`.
 -   Declare methods inside structures as `Public` or `Private`.  
   
 ## See Also  
- [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)   
- [Protected](/dotnet/visual-basic/language-reference/modifiers/protected)   
- [Friend](/dotnet/visual-basic/language-reference/modifiers/friend)
+ [Structure Statement](/dotnet/articles/visual-basic/language-reference/statements/structure-statement)   
+ [Protected](/dotnet/articles/visual-basic/language-reference/modifiers/protected)   
+ [Friend](/dotnet/articles/visual-basic/language-reference/modifiers/friend)

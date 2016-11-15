@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1593
 Delegate 'del' does not take 'number' arguments  
   
- The number of arguments passed to a [delegate](/dotnet/csharp/language-reference/keywords/delegate) invocation does not agree with the number of parameters in the delegate declaration.  
+ The number of arguments passed to a [delegate](/dotnet/articles/csharp/language-reference/keywords/delegate) invocation does not agree with the number of parameters in the delegate declaration.  
   
  The following sample generates CS1593:  
   

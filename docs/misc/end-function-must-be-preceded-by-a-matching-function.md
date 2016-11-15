@@ -48,5 +48,5 @@ An `End Function` statement appears in your code with no matching `Function` pro
 3.  Move the `End Function` to the appropriate place in the code.  
   
 ## See Also  
- [Function Procedures](/dotnet/visual-basic/language-reference/procedures/function-procedures)   
+ [Function Procedures](/dotnet/articles/visual-basic/language-reference/procedures/function-procedures)   
  [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)

@@ -53,5 +53,5 @@ Dim anon2 = New With {.Prop1 = 27, .Prop2 = .Prop1}
 -   Examine your code to determine what you want to assign. The variable name might be misspelled, or it might require qualification if it is a property of another object.  
   
 ## See Also  
- [Anonymous Types](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types)   
+ [Anonymous Types](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types)   
  [How to: Infer Property Names and Types in Anonymous Type Declarations](../Topic/How%20to:%20Infer%20Property%20Names%20and%20Types%20in%20Anonymous%20Type%20Declarations%20\(Visual%20Basic\).md)

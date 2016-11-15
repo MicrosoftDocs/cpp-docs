@@ -46,5 +46,5 @@ Optional parameters cannot be of the data type of a structure.
 2.  Use `CType` to cast the parameter to that structure type within the procedure.  
   
 ## See Also  
- [Structures and Classes](/dotnet/visual-basic/programming-guide/language-features/data-types/structures-and-classes)   
- [CType Function](/dotnet/visual-basic/language-reference/functions/ctype-function)
+ [Structures and Classes](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures-and-classes)   
+ [CType Function](/dotnet/articles/visual-basic/language-reference/functions/ctype-function)

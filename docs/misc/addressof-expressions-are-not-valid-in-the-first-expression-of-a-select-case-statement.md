@@ -44,6 +44,6 @@ You cannot use an `AddressOf` expression for the test expression in a `Select Ca
 -   Examine your code to determine whether a different conditional construction, such as an `If...Then...Else` statement, would work for you.  
   
 ## See Also  
- [AddressOf Operator](/dotnet/visual-basic/language-reference/operators/addressof-operator)   
- [If...Then...Else Statement](/dotnet/visual-basic/language-reference/statements/if-then-else-statement)   
- [Select...Case Statement](/dotnet/visual-basic/language-reference/statements/select-case-statement)
+ [AddressOf Operator](/dotnet/articles/visual-basic/language-reference/operators/addressof-operator)   
+ [If...Then...Else Statement](/dotnet/articles/visual-basic/language-reference/statements/if-then-else-statement)   
+ [Select...Case Statement](/dotnet/articles/visual-basic/language-reference/statements/select-case-statement)

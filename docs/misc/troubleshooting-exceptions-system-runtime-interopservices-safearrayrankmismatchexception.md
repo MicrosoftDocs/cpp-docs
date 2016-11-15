@@ -49,4 +49,4 @@ A <xref:System.Runtime.InteropServices.SafeArrayRankMismatchException> exception
  <xref:System.Runtime.InteropServices.SafeArrayRankMismatchException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
  [Default Marshaling for Arrays](../Topic/Default%20Marshaling%20for%20Arrays.md)   
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)

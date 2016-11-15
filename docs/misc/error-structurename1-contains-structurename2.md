@@ -44,4 +44,4 @@ A circular structure definition occurs when a structure designates itself as one
 -   Change the name of the structure member.  
   
 ## See Also  
- [Structures](/dotnet/visual-basic/programming-guide/language-features/data-types/structures)
+ [Structures](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures)

@@ -90,7 +90,7 @@ class CDumpContext
   
  Before you create your own `CDumpContext` object, you must create a `CFile` object that serves as the dump destination.  
   
- For more information on `CDumpContext`, see [Debugging MFC Applications](/visual-studio/debugger/mfc-debugging-techniques).  
+ For more information on `CDumpContext`, see [Debugging MFC Applications](/visualstudio/debugger/mfc-debugging-techniques).  
   
  **#define _DEBUG**  
   

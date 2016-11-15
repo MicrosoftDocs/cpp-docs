@@ -43,4 +43,4 @@ translation.priority.mt:
 1.  Check that the schema file exists in the specified directory if you have specified the absolute or relative location of the schema file.  
   
 ## See Also  
- [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)
+ [Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference)

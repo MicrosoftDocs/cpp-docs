@@ -51,4 +51,4 @@ Dim instanceName1 = New With {.memberName = 10}
 -   Add a period before the member name.  
   
 ## See Also  
- [Anonymous Types](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types)
+ [Anonymous Types](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types)

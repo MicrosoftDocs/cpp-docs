@@ -38,9 +38,9 @@ translation.priority.mt:
 # Compiler Error CS2005
 Missing file specification for 'option' option  
   
- A [compiler option](/dotnet/csharp/language-reference/compiler-options/index) was only partially specified.  
+ A [compiler option](/dotnet/articles/csharp/language-reference/compiler-options/index) was only partially specified.  
   
- For example, when using [/recurse](/dotnet/csharp/language-reference/compiler-options/recurse-compiler-option), you must specify the file to search: **/recurse:***filename***.cs**.  
+ For example, when using [/recurse](/dotnet/articles/csharp/language-reference/compiler-options/recurse-compiler-option), you must specify the file to search: **/recurse:***filename***.cs**.  
   
 ## Example  
  The following sample generates CS2005.  

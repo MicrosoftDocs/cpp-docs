@@ -40,4 +40,4 @@ The specified `For...Next` control values have different types, and therefore ar
   
 ## See Also  
  [Debugging Changes in Visual Basic .NET](http://msdn.microsoft.com/en-us/0e82bb0d-8bb2-4fe8-87d1-75f24c7cfd75)   
- [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)
+ [For...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-next-statement)

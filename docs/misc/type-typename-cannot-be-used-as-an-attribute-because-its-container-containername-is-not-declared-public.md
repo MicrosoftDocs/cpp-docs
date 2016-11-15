@@ -44,4 +44,4 @@ The class or module where this attribute is defined is not declared using the `P
 1.  Add the `Public` modifier to the class or module where this attribute is defined.  
   
 ## See Also  
- [Public](/dotnet/visual-basic/language-reference/modifiers/public)
+ [Public](/dotnet/articles/visual-basic/language-reference/modifiers/public)

@@ -47,6 +47,6 @@ translation.priority.mt:
 -   Check that the path to the logger assembly is correct, or the logger can be loaded using only the assembly name provided.  
   
 ## See Also  
- [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)   
- [Build Loggers](/visual-studio/msbuild/build-loggers)  
- [MSBuild](/visual-studio/msbuild/msbuild1)
+ [Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference)   
+ [Build Loggers](/visualstudio/msbuild/build-loggers)  
+ [MSBuild](/visualstudio/msbuild/msbuild1)

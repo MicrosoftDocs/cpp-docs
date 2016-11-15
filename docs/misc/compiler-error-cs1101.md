@@ -60,6 +60,6 @@ public static class Extensions
 ```  
   
 ## See Also  
- [Extension Methods](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)   
- [this](/dotnet/csharp/language-reference/keywords/this)   
- [ref](/dotnet/csharp/language-reference/keywords/ref)
+ [Extension Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/extension-methods)   
+ [this](/dotnet/articles/csharp/language-reference/keywords/this)   
+ [ref](/dotnet/articles/csharp/language-reference/keywords/ref)

@@ -44,5 +44,5 @@ The name for a specified resource in a dynamic-linked library or executable file
 -   Uniquely name resources.  
   
 ## See Also  
- [/linkresource (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/linkresource)   
- [/resource (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/resource)
+ [/linkresource (Visual Basic)](/dotnet/articles/visual-basic/reference/command-line-compiler/linkresource)   
+ [/resource (Visual Basic)](/dotnet/articles/visual-basic/reference/command-line-compiler/resource)

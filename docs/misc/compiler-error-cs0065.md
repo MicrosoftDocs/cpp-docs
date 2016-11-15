@@ -70,4 +70,4 @@ public class MyClass
 ```  
   
 ## See Also  
- [Events](/dotnet/csharp/programming-guide/events/index)
+ [Events](/dotnet/articles/csharp/programming-guide/events/index)

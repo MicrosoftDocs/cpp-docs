@@ -38,7 +38,7 @@ Visual C++ does not contain indexers; it has indexed properties. To consume a C#
   
  For more information about indexers, see:  
   
--   [Indexers](/dotnet/csharp/programming-guide/indexers/index)  
+-   [Indexers](/dotnet/articles/csharp/programming-guide/indexers/index)  
   
 -   [How to: Use Indexed Properties](../misc/how-to-use-indexed-properties.md)  
   

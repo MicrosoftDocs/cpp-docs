@@ -42,4 +42,4 @@ A `T:System.DeploymentFramework.DeploymentDownloadException` occurs if a network
   
 ## See Also  
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
+ [Try...Catch...Finally Statement](/dotnet/articles/visual-basic/language-reference/statements/try-catch-finally-statement)

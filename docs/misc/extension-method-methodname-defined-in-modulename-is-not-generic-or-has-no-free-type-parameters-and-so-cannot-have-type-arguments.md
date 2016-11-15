@@ -61,5 +61,5 @@ Dim str = "hi"
 -   Remove the extra type argument from the procedure call.  
   
 ## See Also  
- [Extension Methods](/dotnet/visual-basic/language-reference/procedures/extension-methods)   
- [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures)
+ [Extension Methods](/dotnet/articles/visual-basic/language-reference/procedures/extension-methods)   
+ [Generic Procedures in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-procedures)

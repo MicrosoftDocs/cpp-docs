@@ -47,7 +47,7 @@ translation.priority.mt:
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest.UseApplicationTrust%2A>   
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest.TargetFrameworkVersion%2A>   
  <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser%2A>   
- [Publish Page, Project Designer](/visual-studio/ide/reference/publish-page-project-designer)   
+ [Publish Page, Project Designer](/visualstudio/ide/reference/publish-page-project-designer)   
  [MSBuild Error MSB3116](../misc/msbuild-error-msb3116.md)   
  [MSBuild Error MSB3117](../misc/msbuild-error-msb3117.md)   
  [MSBuild Error MSB3119](../misc/msbuild-error-msb3119.md)   

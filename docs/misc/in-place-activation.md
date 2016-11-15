@@ -40,7 +40,7 @@ If your editor view hosts ActiveX or other active controls, you must implement y
 > [!NOTE]
 >  The <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> and <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> interfaces allow for a separation of data and view. However, Visual Studio does not support this functionality, and these interfaces are used only to represent the document view object.  
   
- Editors that use the <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> service can provide menu, toolbar, and command integration by calling the methods of the <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interface implemented by the <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> service. Editors can also offer other Visual Studio functionality, such as selection tracking and undo management. For more information, see [Creating Custom Editors and Designers](/visual-studio/extensibility/creating-custom-editors-and-designers).  
+ Editors that use the <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> service can provide menu, toolbar, and command integration by calling the methods of the <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interface implemented by the <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> service. Editors can also offer other Visual Studio functionality, such as selection tracking and undo management. For more information, see [Creating Custom Editors and Designers](/visualstudio/extensibility/creating-custom-editors-and-designers).  
   
 ## Objects and Interfaces Used  
  The objects that are used to create in-place activation are shown in the following illustration.  
@@ -49,9 +49,9 @@ If your editor view hosts ActiveX or other active controls, you must implement y
 In-place activation editor  
   
 > [!NOTE]
->  Of the objects in this drawing, only the `CYourEditorFactory` object is required to create a standard editor. If you are creating a custom editor, you are not required to implement <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> because your editor will likely have its own private persistence mechanism. For more information, see [Creating Custom Editors and Designers](/visual-studio/extensibility/creating-custom-editors-and-designers).  
+>  Of the objects in this drawing, only the `CYourEditorFactory` object is required to create a standard editor. If you are creating a custom editor, you are not required to implement <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> because your editor will likely have its own private persistence mechanism. For more information, see [Creating Custom Editors and Designers](/visualstudio/extensibility/creating-custom-editors-and-designers).  
   
- All interfaces that are implemented to create an in-place activation editor are shown on the single `CYourEditorDocument` object, but this configuration only supports a single view of document data. For more information about supporting multiple views of your document data, see [Supporting Multiple Document Views](/visual-studio/extensibility/supporting-multiple-document-views).  
+ All interfaces that are implemented to create an in-place activation editor are shown on the single `CYourEditorDocument` object, but this configuration only supports a single view of document data. For more information about supporting multiple views of your document data, see [Supporting Multiple Document Views](/visualstudio/extensibility/supporting-multiple-document-views).  
   
 |Interface|Type of object|Use|  
 |---------------|--------------------|---------|  

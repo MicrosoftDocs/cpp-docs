@@ -46,5 +46,5 @@ If an event is declared as `Custom`, it must supply a procedure for raising the 
 2.  Verify that other procedures within the event declaration are correctly terminated.  
   
 ## See Also  
- [RaiseEvent Statement](/dotnet/visual-basic/language-reference/statements/raiseevent-statement)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [RaiseEvent Statement](/dotnet/articles/visual-basic/language-reference/statements/raiseevent-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

@@ -39,4 +39,4 @@ You specified a named argument more than once.
 -   Remove all but one of the specifications.  
   
 ## See Also  
- [Passing Arguments by Position and by Name](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name)
+ [Passing Arguments by Position and by Name](/dotnet/articles/visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name)

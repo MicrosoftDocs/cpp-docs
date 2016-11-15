@@ -46,23 +46,23 @@ You can extend Visual Studio with automation add-ins, VSPackages, Managed Extens
  [Visual Studio IDE Concepts](../misc/visual-studio-ide-concepts.md)  
  Discusses the basics of VSPackages and how to use a service.  
   
- [Extending Other Parts of Visual Studio](/visual-studio/extensibility/extending-other-parts-of-visual-studio)  
+ [Extending Other Parts of Visual Studio](/visualstudio/extensibility/extending-other-parts-of-visual-studio)  
  Discusses common UI application elements in Visual Studio, such as the Status and Output windows.  
   
- [Hierarchies in Visual Studio](/visual-studio/extensibility/internals/hierarchies-in-visual-studio)  
+ [Hierarchies in Visual Studio](/visualstudio/extensibility/internals/hierarchies-in-visual-studio)  
  Gives an overview of Visual Studio hierarchies, which appear in the integrated development environment (IDE) as trees of nodes.  
   
- [Projects](/visual-studio/extensibility/internals/projects)  
+ [Projects](/visualstudio/extensibility/internals/projects)  
  Provides an overview of project and solution classes.  
   
- [Editor and Language Service Extensions](/visual-studio/extensibility/editor-and-language-service-extensions)  
+ [Editor and Language Service Extensions](/visualstudio/extensibility/editor-and-language-service-extensions)  
  Shows how to extend the code and text editor, and how to create custom editors and designers.  
   
- [Legacy Language Service Extensibility](/visual-studio/extensibility/internals/legacy-language-service-extensibility)  
+ [Legacy Language Service Extensibility](/visualstudio/extensibility/internals/legacy-language-service-extensibility)  
  Shows how to create language services.  
   
- [Visual Studio SDK Reference](/visual-studio/extensibility/visual-studio-sdk-reference)  
+ [Visual Studio SDK Reference](/visualstudio/extensibility/visual-studio-sdk-reference)  
  Reference documentation for the VSSDK.  
   
 ## See Also  
- [Starting to Develop Visual Studio Extensions](/visual-studio/extensibility/starting-to-develop-visual-studio-extensions)
+ [Starting to Develop Visual Studio Extensions](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

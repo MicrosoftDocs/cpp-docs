@@ -44,4 +44,4 @@ Conflicting accessibilities occur in an element declaration. Only one accessibil
 -   Choose one accessibility and remove the other keywords from the declaration.  
   
 ## See Also  
- [Access Levels in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/access-levels)
+ [Access Levels in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/access-levels)

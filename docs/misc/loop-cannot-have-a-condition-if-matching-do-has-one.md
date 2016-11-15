@@ -44,4 +44,4 @@ A `Loop` statement contains a `While` or `Until` clause, and the corresponding `
 -   Remove the `While` or `Until` clause from either the `Do` statement or the `Loop` statement.  
   
 ## See Also  
- [Do...Loop Statement](/dotnet/visual-basic/language-reference/statements/do-loop-statement)
+ [Do...Loop Statement](/dotnet/articles/visual-basic/language-reference/statements/do-loop-statement)

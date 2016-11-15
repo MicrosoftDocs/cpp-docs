@@ -48,4 +48,4 @@ A `Loop` statement occurs without a corresponding `Do` statement. `Loop` must be
 3.  Ensure that this `Do` loop is correctly formatted.  
   
 ## See Also  
- [Do...Loop Statement](/dotnet/visual-basic/language-reference/statements/do-loop-statement)
+ [Do...Loop Statement](/dotnet/articles/visual-basic/language-reference/statements/do-loop-statement)

@@ -46,5 +46,5 @@ There was an error opening the specified resource file.
 2.  Verify that the file is not damaged or corrupt.  
   
 ## See Also  
- [/linkresource (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/linkresource)   
- [/resource (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/resource)
+ [/linkresource (Visual Basic)](/dotnet/articles/visual-basic/reference/command-line-compiler/linkresource)   
+ [/resource (Visual Basic)](/dotnet/articles/visual-basic/reference/command-line-compiler/resource)

@@ -40,7 +40,7 @@ translation.priority.ht:
 Visual C++ provides several ways to work with databases. The preferred way is to use one of the class libraries such as the Active Template Class Library (ATL) or Microsoft Foundation Class (MFC) Library, which simplify working with the database APIs.  
   
 > [!NOTE]
->  This topic covers the older technologies you can use for database programming in Visual C++. For information on data access programming using Visual C++ and SQL Server, see [Data Access Using ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md), and [Accessing data in Visual Studio](/visual-studio/data-tools/accessing-data-in-visual-studio).  
+>  This topic covers the older technologies you can use for database programming in Visual C++. For information on data access programming using Visual C++ and SQL Server, see [Data Access Using ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md), and [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio).  
   
  The library classes support the following kinds of data access:  
   

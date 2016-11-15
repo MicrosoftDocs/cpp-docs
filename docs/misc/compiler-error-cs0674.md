@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0674
 Do not use 'System.ParamArrayAttribute'. Use the 'params' keyword instead.  
   
- The C# compiler does not allow for the use of <xref:System.ParamArrayAttribute?displayProperty=fullName>; use [params](/dotnet/csharp/language-reference/keywords/params) instead.  
+ The C# compiler does not allow for the use of <xref:System.ParamArrayAttribute?displayProperty=fullName>; use [params](/dotnet/articles/csharp/language-reference/keywords/params) instead.  
   
  The following sample generates CS0674:  
   

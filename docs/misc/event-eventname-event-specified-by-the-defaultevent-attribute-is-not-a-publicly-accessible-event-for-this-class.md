@@ -47,6 +47,6 @@ The <xref:System.ComponentModel.DefaultEventAttribute> attribute must specify th
   
 ## See Also  
  <xref:System.ComponentModel.DefaultEventAttribute>   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)   
- [Class Statement](/dotnet/visual-basic/language-reference/statements/class-statement)   
- [Public](/dotnet/visual-basic/language-reference/modifiers/public)
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)   
+ [Class Statement](/dotnet/articles/visual-basic/language-reference/statements/class-statement)   
+ [Public](/dotnet/articles/visual-basic/language-reference/modifiers/public)

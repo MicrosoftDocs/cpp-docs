@@ -45,7 +45,7 @@ You can add a label to a statement only within a `Sub`, `Function`, property `Ge
   
 ## See Also  
  [How to: Label Statements](../Topic/How%20to:%20Label%20Statements%20\(Visual%20Basic\).md)   
- [Sub Statement](/dotnet/visual-basic/language-reference/statements/sub-statement)   
- [Function Statement](/dotnet/visual-basic/language-reference/statements/function-statement)   
- [Get Statement](/dotnet/visual-basic/language-reference/statements/get-statement)   
- [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement)
+ [Sub Statement](/dotnet/articles/visual-basic/language-reference/statements/sub-statement)   
+ [Function Statement](/dotnet/articles/visual-basic/language-reference/statements/function-statement)   
+ [Get Statement](/dotnet/articles/visual-basic/language-reference/statements/get-statement)   
+ [Set Statement](/dotnet/articles/visual-basic/language-reference/statements/set-statement)

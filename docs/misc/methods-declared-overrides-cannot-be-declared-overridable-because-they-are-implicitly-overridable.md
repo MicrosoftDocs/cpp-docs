@@ -44,5 +44,5 @@ Unlike most methods, methods marked with the `Overrides` modifier are overridabl
 -   Omit the `Overridable` modifier from methods marked with the `Overrides` modifier.  
   
 ## See Also  
- [Overrides](/dotnet/visual-basic/language-reference/modifiers/overrides)   
- [Overridable](/dotnet/visual-basic/language-reference/modifiers/overridable)
+ [Overrides](/dotnet/articles/visual-basic/language-reference/modifiers/overrides)   
+ [Overridable](/dotnet/articles/visual-basic/language-reference/modifiers/overridable)

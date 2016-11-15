@@ -52,6 +52,6 @@ The **Security Warning** dialog box warns developers about security issues with 
 -   Network shares.  
   
 ## See Also  
-[MSBuild](/visual-studio/msbuild/msbuild1)  
- [MSBuild Reference](/visual-studio/msbuild/msbuild-reference)   
- [MSBuild Concepts](/visual-studio/msbuild/msbuild-concepts)
+[MSBuild](/visualstudio/msbuild/msbuild1)  
+ [MSBuild Reference](/visualstudio/msbuild/msbuild-reference)   
+ [MSBuild Concepts](/visualstudio/msbuild/msbuild-concepts)

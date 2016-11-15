@@ -44,5 +44,5 @@ The XML tag for an XML literal is missing the required closing '>' character.
 -   Add the closing '>' character to the end of the XML tag for the XML literal.  
   
 ## See Also  
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

@@ -206,5 +206,5 @@ Because the Start Page can access Visual Studio commands, and opens whenever Vis
   
 ## See Also  
  [Start Page Architecture](../misc/start-page-architecture.md)   
- [Deploying Custom Start Pages](/visual-studio/extensibility/deploying-custom-start-pages)   
- [Adding Visual Studio Commands to a Start Page](/visual-studio/extensibility/adding-visual-studio-commands-to-a-start-page)
+ [Deploying Custom Start Pages](/visualstudio/extensibility/deploying-custom-start-pages)   
+ [Adding Visual Studio Commands to a Start Page](/visualstudio/extensibility/adding-visual-studio-commands-to-a-start-page)

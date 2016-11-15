@@ -42,6 +42,6 @@ Assign the 'AddressOf' expression to a variable, and use the variable to add or 
 1.  
   
 ## See Also  
- [AddressOf Operator](/dotnet/visual-basic/language-reference/operators/addressof-operator)   
+ [AddressOf Operator](/dotnet/articles/visual-basic/language-reference/operators/addressof-operator)   
  [NOT IN BUILD:Events and Event Handlers](http://msdn.microsoft.com/en-us/95074a0d-1cbc-4221-a95a-964185c7f962)   
  [NOT IN BUILD: Delegates and the AddressOf Operator](http://msdn.microsoft.com/en-us/7b2ed932-8598-4355-b2f7-5cedb23ee86f)

@@ -44,5 +44,5 @@ A reserved XML namespace prefix, such as `xmlns`, has been used in an XML litera
 -   Change the XML namespace prefix to a value that is not reserved.  
   
 ## See Also  
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

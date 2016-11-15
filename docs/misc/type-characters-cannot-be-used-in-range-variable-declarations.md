@@ -44,8 +44,8 @@ A type character has been included at the end of the name of a range variable de
 1.  Remove the type character from the range variable declaration.  
   
 ## See Also  
- [Type Characters](/dotnet/visual-basic/programming-guide/language-features/data-types/type-characters)   
- [Aggregate Clause](/dotnet/visual-basic/language-reference/queries/aggregate-clause)   
- [From Clause](/dotnet/visual-basic/language-reference/queries/from-clause)   
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)
+ [Type Characters](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/type-characters)   
+ [Aggregate Clause](/dotnet/articles/visual-basic/language-reference/queries/aggregate-clause)   
+ [From Clause](/dotnet/articles/visual-basic/language-reference/queries/from-clause)   
+ [Introduction to LINQ in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/articles/visual-basic/programming-guide/language-features/linq/index)

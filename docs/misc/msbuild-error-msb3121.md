@@ -36,12 +36,12 @@ translation.priority.mt:
 # MSBuild Error MSB3121
 **MSB3121: The file association element in the application manifest is missing one or more of the following required attributes: extension, description, progid, or default icon.**  
   
- The [ClickOnce Deployment Manifest](/visual-studio/deployment/clickonce-deployment-manifest) must contain values for all four attributes.  
+ The [ClickOnce Deployment Manifest](/visualstudio/deployment/clickonce-deployment-manifest) must contain values for all four attributes.  
   
 ### To correct this error  
   
--   Set each [ClickOnce Deployment Manifest](/visual-studio/deployment/clickonce-deployment-manifest) attribute to a valid value.  
+-   Set each [ClickOnce Deployment Manifest](/visualstudio/deployment/clickonce-deployment-manifest) attribute to a valid value.  
   
 ## See Also  
- [Publish Page, Project Designer](/visual-studio/ide/reference/publish-page-project-designer)   
- [ClickOnce Application Manifest](/visual-studio/deployment/clickonce-application-manifest)
+ [Publish Page, Project Designer](/visualstudio/ide/reference/publish-page-project-designer)   
+ [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)

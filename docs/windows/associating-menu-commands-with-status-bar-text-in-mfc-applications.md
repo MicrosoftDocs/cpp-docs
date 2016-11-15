@@ -41,7 +41,7 @@ Your application can display descriptive text for each of the menu commands a us
   
 1.  In the **Menu** editor, select the menu command.  
   
-2.  In the [Properties Window](/visual-studio/ide/reference/properties-window), type the associated status bar text in the **Prompt** box.  
+2.  In the [Properties Window](/visualstudio/ide/reference/properties-window), type the associated status bar text in the **Prompt** box.  
   
  For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
   

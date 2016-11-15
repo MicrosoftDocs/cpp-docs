@@ -62,6 +62,6 @@ This document describes the architecture of the Start Page tool window that is i
  If you add an element to the right column grid outside of the tab control, we recommend that you define a new row or column in the grid to ensure that it appears as expected.  
   
 ## See Also  
- [Customizing the Start Page](/visual-studio/ide/customizing-the-start-page-for-visual-studio)   
+ [Customizing the Start Page](/visualstudio/ide/customizing-the-start-page-for-visual-studio)   
  [Start Page Best Practices](../misc/start-page-best-practices.md)   
- [Deploying Custom Start Pages](/visual-studio/extensibility/deploying-custom-start-pages)
+ [Deploying Custom Start Pages](/visualstudio/extensibility/deploying-custom-start-pages)
