@@ -32,28 +32,40 @@ translation.priority.ht:
 
 [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] brings many updates and fixes to the Visual C++ environment. We've fixed over 250 bugs and reported issues in the compiler and tools, many submitted by customers through [Microsoft Connect](https://connect.microsoft.com/VisualStudio "Microsoft Connect"). Thank you for reporting bugs!  For more more information on what's new in all of Visual Studio, please visit [What's new in [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)]](https://go.microsoft.com/fwlink/?linkid=834481).
 
-The compiler and tools version number in [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] RC is 14.10.24629.  
+The compiler and tools version number in [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] RC is 14.10.24629. 
 
-## C++ Code Analysis
-
-The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines) are now distributed with Visual Studio. Simply enable the checkers in the Code Analysis Extensions dialog in the project's property pages and the extensions will be included when you run code analysis. 
-
-![CppCoreCheck](media/CppCoreCheck.png "CppCoreCheck properties page") 
 
 ## C++ Compiler
 
-In this release, we've updated the C++ compiler and standard library with enhanced support for C++11 and C++14 features, as well as preliminary support for certain features expected to be in the C++17 standard. With support for generalized constexpr and NSDMI for aggregates, the compiler is complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards.
-[!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] RC allows using /sdl with /await. We removed /rtc limitation with Coroutines.  For more information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).
-This release brings several improvements in optimization and code generation. Some notable improvements include:  
+### C++ conformance improvements
+In this release, we've updated the C++ compiler and standard library with enhanced support for C++11 and C++14 features, as well as preliminary support for certain features expected to be in the C++17 standard. For detailed information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).
+
+### New compiler switches  
+
+ -**/std:c++14** and **/std:c++latest**: These new compiler switches enable you to opt-in to specific versions of the ISO C++ programming language in a project. For more information, see [Standards version switches in the compiler](https://blogs.msdn.microsoft.com/vcblog/2016/06/07/standards-version-switches-in-the-compiler). Most of the new draft standard features are guarded by the /std:c++latest switch. 
+
+-[/permissive-](vcppdocs/build/reference/permissive-standards-conformance.md): Enable all strict standards conformance compiler options and disable all Microsoft-specific compiler extensions. (Off by default but will be on by default at some point in the future.)
+
+-[/diagnostics](vcppdocs/build/reference/diagnostics-compiler-diagnostic-options.md): 
+Enable display of the line number, the line number and column, or the line number and column and a caret under the line of code where the diagnostic error or warning was found.
+
+-[/debug:fastlink](vcppdocs/build/reference/debug-generate-debug-info.md):  
+Enable up to 30% faster incremental link times (vs. Visual Studio 2015) by not copying all debug information into the PDB file. The PDB file instead points to the debug information for the object and library files used to create the executable. See [Faster C++ build cycle in VS “15” with /Debug:fastlink](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-build-cycle-in-vs-15-with-debugfastlink/) and [Recommendations to speed C++ builds in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2016/10/26/recommendations-to-speed-c-builds-in-visual-studio/).
+
+[!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] allows using /sdl with /await. We removed the /rtc limitation with Coroutines. 
+
+### Codegen, security, diagnostics and versioning
+This release brings several improvements in optimization, code generation, toolset versioning and diagnostics. Some notable improvements include:  
 
 - Improved code generation of loops: Support for automatic vectorization of division of constant integers, better identification of memset patterns.
 - Improved code security: Improved emission of buffer overrun compiler diagnostics, and /guard:cf now guards switch statements that generate jump tables.
-
-The /debug:fastlink option has been improved to provide 30% faster link times on large components than in VS 2015.
+- Versioning: The value of the built-in preprocessor macro _MSC_VER is now being monotonically updated at every Visual C++ toolset update. For more information, see [Visual C++ Compiler Version](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/visual-c-compiler-version/).
+- New toolset layout: The compiler and related build tools have a new location and directory structure on your development machine. The new layout enables side-by-side installations of multiple versions of the compiler. For more information, see [Compiler Tools Layout in Visual Studio “15”](https://blogs.msdn.microsoft.com/vcblog/2016/10/07/compiler-tools-layout-in-visual-studio-15/).
+- Improved diagnostics: The output window now shows the column where an error occurs. For more information, see [C++ compiler diagnostics improvements in VS “15” Preview 5](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/c-compiler-diagnostics-improvements-in-vs-15-rc/).
 
 ## C++ Libraries
 
-### Standard Template Library:
+### Standard Library improvements:
 
 * Minor basic_string _ITERATOR_DEBUG_LEVEL != 0 diagnostics improvements. Tripping an IDL check in string machinery will now report the specific behavior that caused the trip. For example, instead of "string iterator not dereferencable" you'll get "cannot dereference string iterator because it is out of range (e.g. an end iterator)".
 * Performance improvement: made basic_string::find(char) overloads only call traits::find once. Previously this was implemented as a general string search for a string of length 1.
@@ -74,8 +86,16 @@ The /debug:fastlink option has been improved to provide 30% faster link times on
 * To increase compiler throughput, STL headers now avoid including declarations for unnecessary compiler intrinsics.
 * Slightly improved compiler diagnostics for incorrect bind() calls.
 
+### Open source library support  
+Vcpkg is an open-source command line tool that greatly simplifies the process of acquiring and building open source C++ static libs and DLLS in Visual Studio. For more information, see [Vcpkg updates: Static linking is now available](https://blogs.msdn.microsoft.com/vcblog/2016/11/01/vcpkg-updates-static-linking-is-now-available/).
+
+### CPPRest SDK 2.9.0  
+The CPPRestSDK, a cross-platform web API for C++, has been updated to version 2.9.0. For more information, see [CppRestSDK 2.9.0 is available on GitHub](https://blogs.msdn.microsoft.com/vcblog/2016/10/21/cpprestsdk-2-9-0-is-available-on-github/).
+
+
 ## C++ IDE
 
+### Intellisense  
 * The new SQLite-based database engine is now being used by default. This will speed up database operations like Go To Definition and Find All References, and will significantly improve initial solution parse time. The setting has been moved to Tools > Options > Text Editor > C/C++ > Advanced (it was formerly under ...C/C++ > Experimental).
 
 * We've improved IntelliSense performance on projects and files not using precompiled headers – an Automatic Precompiled Header will be created for headers in the current file.
@@ -90,7 +110,7 @@ The /debug:fastlink option has been improved to provide 30% faster link times on
 
   ![Member List Filtering](media/mlfiltering.png "Member List Filtering")
 
-* Added a new experimental Predictive IntelliSense feature that provides contextually-aware filtering of what appears in the Member List.
+* Added a new experimental Predictive IntelliSense feature that provides contextually-aware filtering of what appears in the Member List. See [C++ IntelliSense Improvements – Predictive IntelliSense & Filtering](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/c-intellisense-improvements-predictive-intellisense-filtering/)
 
 * The new Find All References UI includes information about whether we are reading from or writing to a variable in the results for C++ code.
 
@@ -100,20 +120,24 @@ The /debug:fastlink option has been improved to provide 30% faster link times on
 
 * _**New in RC**_ We've enabled the new experimental feature for C++ projects ‘Faster project load’. The next time you open a C++ project it will load faster, and the time after that it will load really fast!
 
-* _**New in RC**_ Improvements to the Open Folder experience. 
-Edit, build and debug your non-MSBuild C++ project by loading your sources through “Open Folder”.
-Customize the experience through these json files:
+### Support for non-MSBuild projects with Open Folder
+Visual Studio 2017 introduces the “Open Folder” feature, which enables you to code, build and debug in a folder containing source code without the need to create any solutions or projects. This makes it a lot simpler to get started with Visual Studio even if your project is not an MSBuild-based project. With “Open Folder” you get access to the powerful code understanding, editing, building and debugging capabilities that Visual Studio already provides for MSBuild projects. For more information, see [Bring your C++ codebase to Visual Studio with “Open Folder”](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/bring-your-c-codebase-to-visual-studio-with-open-folder/).
+
+* _**New in RC**_ Improvements to the Open Folder experience.     
+You can customize the experience through these json files:
   -	CppProperties.json to customize the IntelliSense and browsing experience.
   -	Tasks.json to customize the build steps. 
   -	Launch.json to customize the debugging experience.
 
+### CMake support via Open Folder
+Visual Studio 2017 introduces support for using CMake projects without converting to MSBuild project files (.vcxproj). For more information, see [CMake support in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/cmake-support-in-visual-studio/). Opening CMake projects with “Open Folder” will automatically configure the environment for C++ editing, building and debugging.
+
 * _**New in RC**_ C++ IntelliSense will work without the need to create a CppProperties.json file in the root folder. Along with this, we've added a new dropdown to allow users to easily switch between configurations provided by CMake and CppProperties.json files.
-CMake support in Open Folder
-Opening CMake projects with “Open Folder” will automatically configure the environment for C++ editing, building and debugging.
 
 * _**New in RC**_ Further configuration is supported via a CMakeSettings.json file that sits in the same folder as the CMakeLists.txt file.
 
   ![Cmake Open Folder](media/cmake_cpp.png "CMake Open Folder")
+
 
 ## C++ Installation Workloads 
 
@@ -129,11 +153,24 @@ Use the full power of C++ to build professional games powered by DirectX or Coco
 ### Mobile Development with C++ (Android and iOS):  
 You can now create and debug mobile apps using Visual Studio that can target Android and iOS.  
 
-### Universal Windows App:  
+### Universal Windows Apps:  
 C++ comes as an optional component for the Universal Windows App workload.  
+
+## New options for C++ on Universal Windows Platform
+You now have new options for writing and packaging C++ applications for the Universal Windows Platform and the Windows Store:
+You can use the Desktop App Converter to package your existing desktop application for deployment through the Windows Store. For more information, see [Using Visual C++ Runtime in Centennial project](https://blogs.msdn.microsoft.com/vcblog/2016/07/07/using-visual-c-runtime-in-centennial-project/) and [Bring your desktop app to the Universal Windows Platform (UWP) with the Desktop Bridge](https://msdn.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root).
+
+When writing new code, you can now use C++/WinRT, a standard C++ language projection for the Windows Runtime implemented solely in header files. It allows you to both author and consume Windows Runtime APIs using any standards-compliant C++ compiler. C++/WinRT is designed to provide C++ developers with first-class access to the modern Windows API. For more information, see [C++/WinRT Available on GitHub](https://moderncpp.com/).
+
 
 ## Clang/C2 Platform Toolset
 The Clang/C2 toolset that ships with [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)] RC now supports the /bigobj switch, which is crucial for building large projects. It also includes several important bug fixes, both in the front-end and the back-end of the compiler.
+
+## C++ Code Analysis
+
+The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines) are now distributed with Visual Studio. Simply enable the checkers in the Code Analysis Extensions dialog in the project's property pages and the extensions will be included when you run code analysis. 
+
+![CppCoreCheck](media/CppCoreCheck.png "CppCoreCheck properties page") 
 
 ## Visual Studio Graphics Diagnostics
 
@@ -180,4 +217,6 @@ Visual Studio Graphics Diagnostics is a set of tools for recording and analyzing
   Traces opened in GPU View via this link support synchronized zooming and panning in the timeline between VS and GPU View. A checkbox in VS is used to control whether synchronization is enabled or not. 
 
   ![GPU View](media/gpu-view.png) 
+
+
  
