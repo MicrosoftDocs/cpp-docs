@@ -1,1 +1,0 @@
-    Public Event TagsChanged As EventHandler(Of SnapshotSpanEventArgs) Implements ITagger(Of TestSmartTag).TagsChanged
