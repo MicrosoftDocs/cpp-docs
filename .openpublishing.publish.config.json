@@ -10,6 +10,7 @@
       "locale": "en-us",
       "version": 0,
       "open_to_public_contributors": true,
+      "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/cpp-docs",
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
