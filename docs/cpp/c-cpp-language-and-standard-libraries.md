@@ -31,8 +31,8 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# C/C++ Language and Standard Libraries
-This section of the documentation includes guidelines and reference content for the Microsoft implementation of the ISO standards for C and C++.  
+# C/C++ Language Reference
+This section of the documentation includes guidelines and reference content for the Microsoft implementation of the ISO standard for C++.  
   
 ## Related Articles  
   
