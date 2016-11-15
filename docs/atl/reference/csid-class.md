@@ -92,11 +92,11 @@ class CSid
 |||  
 |-|-|  
 |[operator ==](#csid__operator__eq_eq)|Tests two security descriptor objects for equality|  
-|[operator !=](../Topic/CSid::operator%20!=.md)|Tests two security descriptor objects for inequality|  
-|[operator \<](../Topic/CSid::operator%20%3C.md)|Compares relative value of two security descriptor objects.|  
-|[operator >](../Topic/CSid::operator%20%3E.md)|Compares relative value of two security descriptor objects.|  
-|[operator \<=](../Topic/CSid::operator%20%3C=.md)|Compares relative value of two security descriptor objects.|  
-|[operator >=](../Topic/CSid::operator%20%3E=.md)|Compares relative value of two security descriptor objects.|  
+|[operator !=](#csid__operator__neq)|Tests two security descriptor objects for inequality|  
+|[operator \<](#csid__operator__lt_)|Compares relative value of two security descriptor objects.|  
+|[operator >](#csid__operator__gt_)|Compares relative value of two security descriptor objects.|  
+|[operator \<=](#csid__operator__lt__eq)|Compares relative value of two security descriptor objects.|  
+|[operator >=](#csid__operator__gt__eq)|Compares relative value of two security descriptor objects.|  
   
 ## Remarks  
  The `SID` structure is a variable-length structure used to uniquely identify users or groups.  
@@ -128,24 +128,21 @@ LPCTSTR AccountName() const throw(...);
   
 ```
 CSid() throw();
+CSid(const SID& rhs) throw(...);
+CSid(const CSid& rhs) throw(...);
+
 CSid(
- const SID& rhs) throw(...);
-
-    CSid(
- const CSid& rhs) throw(...);
-
-    CSid(
- const SID_IDENTIFIER_AUTHORITY& IdentifierAuthority,
+    const SID_IDENTIFIER_AUTHORITY& IdentifierAuthority,
     BYTE nSubAuthorityCount,
- ...) throw(...);
+    ...) throw(...);
 
     explicit CSid(
-    LPCTSTR pszAccountName,
-    LPCTSTR pszSystem = NULL) throw(...);
+        LPCTSTR pszAccountName,
+        LPCTSTR pszSystem = NULL) throw(...);
 
     explicit CSid(
-    const SID* pSid,
-    LPCTSTR pszSystem = NULL) throw(...);
+        const SID* pSid,
+        LPCTSTR pszSystem = NULL) throw(...);
 ```  
   
 ### Parameters  
