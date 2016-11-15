@@ -110,7 +110,7 @@ struct ATL_DRAWINFO {
 ## See Also  
  [Structures](../../atl/reference/atl-structures.md)   
  [IViewObject::Draw](http://msdn.microsoft.com/library/windows/desktop/ms688655)   
- [CComControlBase::OnDrawAdvanced](../Topic/CComControlBase::OnDrawAdvanced.md)
+ [CComControlBase::OnDrawAdvanced](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__ondrawadvanced)
 
 
 
