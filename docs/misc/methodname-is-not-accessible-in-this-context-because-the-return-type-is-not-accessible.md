@@ -83,4 +83,4 @@ End Module
 -   Write a method or extension method that returns an accessible type.  
   
 ## See Also  
- [Access Levels in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/access-levels)
+ [Access Levels in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/access-levels)

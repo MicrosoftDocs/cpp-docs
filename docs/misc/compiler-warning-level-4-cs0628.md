@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 4) CS0628
 'member' : new protected member declared in sealed class  
   
- A [sealed](/dotnet/csharp/language-reference/keywords/sealed) class cannot introduce a [protected](/dotnet/csharp/language-reference/keywords/protected) member because no other class will be able to inherit from the `sealed` class and use the `protected` member.  
+ A [sealed](/dotnet/articles/csharp/language-reference/keywords/sealed) class cannot introduce a [protected](/dotnet/articles/csharp/language-reference/keywords/protected) member because no other class will be able to inherit from the `sealed` class and use the `protected` member.  
   
  The following sample generates CS0628:  
   

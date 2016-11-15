@@ -52,5 +52,5 @@ translation.priority.mt:
 4.  Use `Set` property procedures for all property assignments. `Let` property procedures are no longer necessary, or supported.  
   
 ## See Also  
- [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
+ [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement)   
  [Language Changes for Visual Basic 6.0 Users](https://msdn.microsoft.com/en-us/library/skw8dhdd\(v=vs.90\).aspx)

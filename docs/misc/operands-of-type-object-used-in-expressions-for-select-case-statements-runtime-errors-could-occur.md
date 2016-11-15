@@ -35,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Operands of type Object used in expressions for &#39;Select&#39;, &#39;Case&#39; statements; runtime errors could occur
-A `Select`...`Case` construction uses one or more expressions of the [Object Data Type](/dotnet/visual-basic/language-reference/data-types/object-data-type).  
+A `Select`...`Case` construction uses one or more expressions of the [Object Data Type](/dotnet/articles/visual-basic/language-reference/data-types/object-data-type).  
   
  When a variable or expression evaluates to `Object`, the compiler must perform *late binding*, which causes extra operations at run time. It also exposes your application to potential run-time errors. For example, if you assign a <xref:System.Windows.Forms.Form> to an `Object` variable and then try to compare it with a number, the runtime throws an <xref:System.InvalidCastException> because Visual Basic cannot convert a <xref:System.Windows.Forms.Form> object to a numeric value.  
   
@@ -50,6 +50,6 @@ A `Select`...`Case` construction uses one or more expressions of the [Object Dat
 -   If possible, arrange all the expressions to evaluate to data types for which comparison operators are defined.  
   
 ## See Also  
- [Select...Case Statement](/dotnet/visual-basic/language-reference/statements/select-case-statement)   
- [Arithmetic Operators in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators)   
- [Comparison Operators in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators)
+ [Select...Case Statement](/dotnet/articles/visual-basic/language-reference/statements/select-case-statement)   
+ [Arithmetic Operators in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators)   
+ [Comparison Operators in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators)

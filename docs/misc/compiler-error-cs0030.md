@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0030
 Cannot convert type 'type' to 'type'  
   
- You must provide conversion routines to support certain operator overloads. For more information, see [Conversion Operators](/dotnet/csharp/programming-guide/statements-expressions-operators/conversion-operators).  
+ You must provide conversion routines to support certain operator overloads. For more information, see [Conversion Operators](/dotnet/articles/csharp/programming-guide/statements-expressions-operators/conversion-operators).  
   
  The following sample generates CS0030:  
   

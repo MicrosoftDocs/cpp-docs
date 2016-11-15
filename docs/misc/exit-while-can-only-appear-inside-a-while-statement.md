@@ -46,4 +46,4 @@ An `Exit While` statement occurs outside a `While` block. `Exit While` is valid 
 2.  Verify that other control structures within the `While` block are correctly terminated.  
   
 ## See Also  
- [While...End While Statement](/dotnet/visual-basic/language-reference/statements/while-end-while-statement)
+ [While...End While Statement](/dotnet/articles/visual-basic/language-reference/statements/while-end-while-statement)

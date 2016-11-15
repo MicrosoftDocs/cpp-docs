@@ -44,5 +44,5 @@ You have attempted to use a specifier, such as `MustOverride`, `NotOverridable`,
 -   Remove the specifier.  
   
 ## See Also  
- [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)   
+ [Module Statement](/dotnet/articles/visual-basic/language-reference/statements/module-statement)   
  [Module \<keyword>](../Topic/Module%20%3Ckeyword%3E%20\(Visual%20Basic\).md)

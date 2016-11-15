@@ -39,4 +39,4 @@ There is not enough room on the disk to either complete a `Print`, `Write`, or `
 -   Create more room on the disk by either moving some files to another disk or deleting some files.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

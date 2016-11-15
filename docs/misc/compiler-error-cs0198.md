@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0198
 Fields of static readonly field 'name' cannot be assigned to (except in a static constructor or a variable initializer)  
   
- A [readonly](/dotnet/csharp/language-reference/keywords/readonly) variable must have the same [static](/dotnet/csharp/language-reference/keywords/static) usage as the constructor in which you want to initialize it. For more information, see [Static Constructors](/dotnet/csharp/programming-guide/classes-and-structs/static-constructors).  
+ A [readonly](/dotnet/articles/csharp/language-reference/keywords/readonly) variable must have the same [static](/dotnet/articles/csharp/language-reference/keywords/static) usage as the constructor in which you want to initialize it. For more information, see [Static Constructors](/dotnet/articles/csharp/programming-guide/classes-and-structs/static-constructors).  
   
  The following sample generates CS0198:  
   

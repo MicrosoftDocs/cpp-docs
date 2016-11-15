@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0128
 A local variable named 'variable' is already defined in this scope  
   
- The compiler detected declarations of two local variables with the same name. For more information, see [Methods](/dotnet/csharp/programming-guide/classes-and-structs/methods).  
+ The compiler detected declarations of two local variables with the same name. For more information, see [Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/methods).  
   
  The following sample generates CS0128:  
   

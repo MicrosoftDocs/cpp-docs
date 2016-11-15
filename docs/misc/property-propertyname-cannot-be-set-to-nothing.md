@@ -39,6 +39,6 @@ The property requires a value other than `Nothing`. This may be a result of inco
 -   Supply a valid value.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)   
- [Nothing](/dotnet/visual-basic/language-reference/nothing)   
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)   
+ [Nothing](/dotnet/articles/visual-basic/language-reference/nothing)   
  [Troubleshooting Exceptions: System.NullReferenceException](../misc/troubleshooting-exceptions-system-nullreferenceexception.md)

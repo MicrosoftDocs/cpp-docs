@@ -68,4 +68,4 @@ static class Ext
  This error is often accompanied by CS1503: Argument 'n': cannot convert from 'typeA' to 'typeB'.  
   
 ## See Also  
- [Extension Methods](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)
+ [Extension Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/extension-methods)

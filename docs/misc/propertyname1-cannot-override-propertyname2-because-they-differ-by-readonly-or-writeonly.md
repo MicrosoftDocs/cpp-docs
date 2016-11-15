@@ -45,4 +45,4 @@ You have attempted to override a property with a second property that differs fr
   
 ## See Also  
  [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213)   
- [Overrides](/dotnet/visual-basic/language-reference/modifiers/overrides)
+ [Overrides](/dotnet/articles/visual-basic/language-reference/modifiers/overrides)

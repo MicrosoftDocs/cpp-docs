@@ -44,5 +44,5 @@ You have attempted to overload two methods that differ from each other only by a
 -   Make sure the methods are differentiated by more than the `ParamArray` parameters.  
   
 ## See Also  
- [Considerations in Overloading Procedures](/dotnet/visual-basic/language-reference/procedures/considerations-in-overloading-procedures)   
- [Parameter Arrays](/dotnet/visual-basic/language-reference/procedures/parameter-arrays)
+ [Considerations in Overloading Procedures](/dotnet/articles/visual-basic/language-reference/procedures/considerations-in-overloading-procedures)   
+ [Parameter Arrays](/dotnet/articles/visual-basic/language-reference/procedures/parameter-arrays)

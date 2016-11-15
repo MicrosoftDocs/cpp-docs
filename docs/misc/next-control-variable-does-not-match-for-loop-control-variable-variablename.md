@@ -48,4 +48,4 @@ The control variable in the `Next` statement of a `For...Next` loop must match t
 3.  If this loop is part of a set of nested loops, check that every loop is properly terminated.  
   
 ## See Also  
- [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)
+ [For...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-next-statement)

@@ -41,11 +41,11 @@ The preferred way to specify a file that contains a public key for an assembly, 
   
 ### To correct this error  
   
-1.  Use the [/keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile), [/keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer), or [/delaysign](/dotnet/visual-basic/reference/command-line-compiler/delaysign)[!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] compiler options instead of the <xref:System.Reflection.AssemblyKeyFileAttribute>, <xref:System.Reflection.AssemblyKeyNameAttribute>, or <xref:System.Reflection.AssemblyDelaySignAttribute> attributes in your code.  
+1.  Use the [/keyfile](/dotnet/articles/visual-basic/reference/command-line-compiler/keyfile), [/keycontainer](/dotnet/articles/visual-basic/reference/command-line-compiler/keycontainer), or [/delaysign](/dotnet/articles/visual-basic/reference/command-line-compiler/delaysign)[!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] compiler options instead of the <xref:System.Reflection.AssemblyKeyFileAttribute>, <xref:System.Reflection.AssemblyKeyNameAttribute>, or <xref:System.Reflection.AssemblyDelaySignAttribute> attributes in your code.  
   
 ## See Also  
  [How to: Create Signed Friend Assemblies](../Topic/How%20to:%20Create%20Signed%20Friend%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md)   
- [Visual Basic Command-Line Compiler](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [/keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile)   
- [/keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer)   
- [/delaysign](/dotnet/visual-basic/reference/command-line-compiler/delaysign)
+ [Visual Basic Command-Line Compiler](/dotnet/articles/visual-basic/reference/command-line-compiler/index)   
+ [/keyfile](/dotnet/articles/visual-basic/reference/command-line-compiler/keyfile)   
+ [/keycontainer](/dotnet/articles/visual-basic/reference/command-line-compiler/keycontainer)   
+ [/delaysign](/dotnet/articles/visual-basic/reference/command-line-compiler/delaysign)

@@ -44,4 +44,4 @@ An `Inherits` statement must be the first non-blank, non-comment line in a class
 -   Move your `Inherits` statement so that it precedes all declarations.  
   
 ## See Also  
- [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement)
+ [Inherits Statement](/dotnet/articles/visual-basic/language-reference/statements/inherits-statement)

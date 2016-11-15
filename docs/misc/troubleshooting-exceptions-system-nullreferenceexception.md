@@ -37,7 +37,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Troubleshooting Exceptions: System.NullReferenceException
-A <xref:System.NullReferenceException> occurs  when you try to use a method or property of a *reference type* ([C#](/dotnet/csharp/language-reference/keywords/reference-types), [Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)) whose value is `null`. For example, you may have tried to use an object without first using the [new](/dotnet/csharp/language-reference/keywords/new) keyword ([New](/dotnet/visual-basic/language-reference/operators/new-operator) in Visual Basic), or tried to use an object whose value was set to [null](/dotnet/csharp/language-reference/keywords/null) ([Nothing](/dotnet/visual-basic/language-reference/nothing) in Visual Basic).  
+A <xref:System.NullReferenceException> occurs  when you try to use a method or property of a *reference type* ([C#](/dotnet/articles/csharp/language-reference/keywords/reference-types), [Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)) whose value is `null`. For example, you may have tried to use an object without first using the [new](/dotnet/articles/csharp/language-reference/keywords/new) keyword ([New](/dotnet/articles/visual-basic/language-reference/operators/new-operator) in Visual Basic), or tried to use an object whose value was set to [null](/dotnet/articles/csharp/language-reference/keywords/null) ([Nothing](/dotnet/articles/visual-basic/language-reference/nothing) in Visual Basic).  
   
 ##  <a name="BKMK_Contents"></a> Sections in this article  
  [Classes used in this article](#BKMK_Classes_used_in_the_examples)  
@@ -646,7 +646,7 @@ End Sub
  ![Back to top](../misc/media/pcs_backtotop.png "PCS_BackToTop") [Sections in this article](#BKMK_Contents)  
   
 ###  <a name="BKMK_Use_try_catch_finally_Try_Catch_Finally_in_Visual_Basic_to_handle_the_exception"></a> Use try-catch-finally (Try-Catch-Finally in Visual Basic) to handle the exception  
- Using the built-in exception handling constructs ([try, catch, finally](/dotnet/csharp/language-reference/keywords/exception-handling-statements) in C#, [Try, Catch, Finally](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement) in Visual Basic) offers more options for dealing with NullReferenceExceptions than checking whether an object is not null.  
+ Using the built-in exception handling constructs ([try, catch, finally](/dotnet/articles/csharp/language-reference/keywords/exception-handling-statements) in C#, [Try, Catch, Finally](/dotnet/articles/visual-basic/language-reference/statements/try-catch-finally-statement) in Visual Basic) offers more options for dealing with NullReferenceExceptions than checking whether an object is not null.  
   
  In this example, `CatchNullReferenceFromMethodCall` uses two asserts to confirm the assumption that its parameter contains a complete automobile, including an engine. In the `try` block, the highlighted line throws a NullReferenceException because the call to `RarelyBadEngineSwap` can destroy the car's `Engine` property. The `catch` block captures the exception, writes the exception information to a file, and reports the error to the user. In the `finally` block, the method insures that the state of the car is no worse than when the method began.  
   

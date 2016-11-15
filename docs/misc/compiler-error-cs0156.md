@@ -38,9 +38,9 @@ translation.priority.mt:
 # Compiler Error CS0156
 A throw statement with no arguments is not allowed in a finally clause that is nested inside the nearest enclosing catch clause  
   
- A [throw](/dotnet/csharp/language-reference/keywords/throw) statement with no parameters can only appear in a **catch** clause that takes no parameters.  
+ A [throw](/dotnet/articles/csharp/language-reference/keywords/throw) statement with no parameters can only appear in a **catch** clause that takes no parameters.  
   
- For more information, see [Exception Handling Statements](/dotnet/csharp/language-reference/keywords/exception-handling-statements) and [Exceptions and Exception Handling](/dotnet/csharp/programming-guide/exceptions/exceptions-and-exception-handling).  
+ For more information, see [Exception Handling Statements](/dotnet/articles/csharp/language-reference/keywords/exception-handling-statements) and [Exceptions and Exception Handling](/dotnet/articles/csharp/programming-guide/exceptions/exceptions-and-exception-handling).  
   
  The following sample generates CS0156:  
   

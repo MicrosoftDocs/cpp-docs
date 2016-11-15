@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0225
 The params parameter must be a single dimensional array  
   
- When using the [params](/dotnet/csharp/language-reference/keywords/params) keyword, you must specify a single-dimensional array of the data type. For more information, see [Methods](/dotnet/csharp/programming-guide/classes-and-structs/methods).  
+ When using the [params](/dotnet/articles/csharp/language-reference/keywords/params) keyword, you must specify a single-dimensional array of the data type. For more information, see [Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/methods).  
   
 ## Example  
  The following sample generates CS0225:  

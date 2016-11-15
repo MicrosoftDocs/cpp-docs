@@ -46,4 +46,4 @@ The `Static` modifier cannot be used with local variables in structures.
 2.  Declare the variable as a static variable with broader scope.  
   
 ## See Also  
- [Static](/dotnet/visual-basic/language-reference/modifiers/static)
+ [Static](/dotnet/articles/visual-basic/language-reference/modifiers/static)

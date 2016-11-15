@@ -44,5 +44,5 @@ The `SyncLock` statement allows statements to be synchronized on a single expres
 -   Change the type to an appropriate reference type.  
   
 ## See Also  
- [SyncLock Statement](/dotnet/visual-basic/language-reference/statements/synclock-statement)   
+ [SyncLock Statement](/dotnet/articles/visual-basic/language-reference/statements/synclock-statement)   
  [NOT IN BUILD: Multithreading in Visual Basic](http://msdn.microsoft.com/en-us/c731a50c-09c1-4468-9646-54c86b75d269)

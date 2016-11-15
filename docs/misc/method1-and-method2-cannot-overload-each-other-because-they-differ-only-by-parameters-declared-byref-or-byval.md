@@ -44,5 +44,5 @@ You have attempted to overload a method with another method that differs from th
 -   Ensure that the methods are differentiated by more than the name of the `ByRef` or `ByVal` parameter.  
   
 ## See Also  
- [Procedure Overloading](/dotnet/visual-basic/language-reference/procedures/procedure-overloading)   
- [Considerations in Overloading Procedures](/dotnet/visual-basic/language-reference/procedures/considerations-in-overloading-procedures)
+ [Procedure Overloading](/dotnet/articles/visual-basic/language-reference/procedures/procedure-overloading)   
+ [Considerations in Overloading Procedures](/dotnet/articles/visual-basic/language-reference/procedures/considerations-in-overloading-procedures)

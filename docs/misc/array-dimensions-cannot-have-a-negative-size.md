@@ -44,4 +44,4 @@ One or more of the array bounds specified is a negative number. You can specify 
 -   Replace the negative array bound with a positive number.  
   
 ## See Also  
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)

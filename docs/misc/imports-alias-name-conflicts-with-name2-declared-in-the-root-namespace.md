@@ -44,4 +44,4 @@ The alias name used in the `Imports` statement conflicts with another name decla
 -   Choose a unique name for the alias used by the `Imports` statement.  
   
 ## See Also  
- [Imports Statement (.NET Namespace and Type)](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)
+ [Imports Statement (.NET Namespace and Type)](/dotnet/articles/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)

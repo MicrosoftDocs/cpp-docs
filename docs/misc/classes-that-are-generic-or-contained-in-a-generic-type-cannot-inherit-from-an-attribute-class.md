@@ -62,6 +62,6 @@ A class that is either generic or nested within a generic type specifies that it
 ## See Also  
  <xref:System.Attribute>   
  [NOT IN BUILD: Attributes Overview in Visual Basic](http://msdn.microsoft.com/en-us/0d0cff64-892d-4f57-83bd-bef388553d4f)   
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)   
- [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement)
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Inheritance Basics](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)   
+ [Inherits Statement](/dotnet/articles/visual-basic/language-reference/statements/inherits-statement)

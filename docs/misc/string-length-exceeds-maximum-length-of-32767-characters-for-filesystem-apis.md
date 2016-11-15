@@ -39,4 +39,4 @@ A string's length exceeds the maximum length of 32767 characters.
 1.  Shorten the string.  
   
 ## See Also  
- [Strings](/dotnet/visual-basic/programming-guide/language-features/strings/index)
+ [Strings](/dotnet/articles/visual-basic/programming-guide/language-features/strings/index)

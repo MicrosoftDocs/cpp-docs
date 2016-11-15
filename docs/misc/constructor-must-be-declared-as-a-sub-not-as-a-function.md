@@ -44,4 +44,4 @@ You have attempted to declare a `Function New`. Constructors must be declared as
 -   Use `Sub` instead of `Function`.  
   
 ## See Also  
- [Sub Statement](/dotnet/visual-basic/language-reference/statements/sub-statement)
+ [Sub Statement](/dotnet/articles/visual-basic/language-reference/statements/sub-statement)

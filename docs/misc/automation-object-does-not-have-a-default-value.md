@@ -39,5 +39,5 @@ translation.priority.mt:
 -   Check the object's documentation and give an explicit specification for the property or method.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)   
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)   
  [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)

@@ -40,5 +40,5 @@ You attempted an operation, such as moving or copying a file, which requires sup
   
 ## See Also  
  [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
- [My.Computer.FileSystem Object](/dotnet/visual-basic/language-reference/objects/my-computer-filesystem-object)   
- [File Access with Visual Basic](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/file-access)
+ [My.Computer.FileSystem Object](/dotnet/articles/visual-basic/language-reference/objects/my-computer-filesystem-object)   
+ [File Access with Visual Basic](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/file-access)

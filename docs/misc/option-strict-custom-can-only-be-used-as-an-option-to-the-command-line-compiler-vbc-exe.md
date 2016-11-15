@@ -45,9 +45,9 @@ The `Option Strict` statement takes only `On` and `Off` as arguments; `Option St
   
 1.  Remove `Option Strict Custom` from the source code.  
   
-2.  Specify the `/optionstrict:custom` option. For more information, see [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).  
+2.  Specify the `/optionstrict:custom` option. For more information, see [/optionstrict](/dotnet/articles/visual-basic/reference/command-line-compiler/optionstrict).  
   
 ## See Also  
  [Option \<keyword> Statement](../Topic/Option%20%3Ckeyword%3E%20Statement.md)   
- [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
- [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict)
+ [Option Strict Statement](/dotnet/articles/visual-basic/language-reference/statements/option-strict-statement)   
+ [/optionstrict](/dotnet/articles/visual-basic/reference/command-line-compiler/optionstrict)

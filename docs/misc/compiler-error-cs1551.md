@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1551
 Indexers must have at least one parameter  
   
- An [indexer](/dotnet/csharp/programming-guide/indexers/index) that takes no arguments was declared.  
+ An [indexer](/dotnet/articles/csharp/programming-guide/indexers/index) that takes no arguments was declared.  
   
  The following sample generates CS1551:  
   

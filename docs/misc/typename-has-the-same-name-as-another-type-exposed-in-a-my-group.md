@@ -59,4 +59,4 @@ translation.priority.mt:
  <xref:System.Windows.Forms.Form>   
  <xref:Microsoft.VisualBasic.MyGroupCollectionAttribute>   
  [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)   
- [My.Forms Object](/dotnet/visual-basic/language-reference/objects/my-forms-object)
+ [My.Forms Object](/dotnet/articles/visual-basic/language-reference/objects/my-forms-object)

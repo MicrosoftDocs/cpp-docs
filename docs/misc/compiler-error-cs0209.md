@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0209
 The type of local declared in a fixed statement must be a pointer type  
   
- The variable that you declare in a [fixed statement](/dotnet/csharp/language-reference/keywords/fixed-statement) must be a pointer. For more information, see [Unsafe Code and Pointers](/dotnet/csharp/programming-guide/unsafe-code-pointers/index).  
+ The variable that you declare in a [fixed statement](/dotnet/articles/csharp/language-reference/keywords/fixed-statement) must be a pointer. For more information, see [Unsafe Code and Pointers](/dotnet/articles/csharp/programming-guide/unsafe-code-pointers/index).  
   
  The following sample generates CS0209:  
   

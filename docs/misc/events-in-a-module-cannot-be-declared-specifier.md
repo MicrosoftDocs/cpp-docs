@@ -44,4 +44,4 @@ You have used a specifier that is not valid on an event within a `Module` statem
 -   Remove the specifier.  
   
 ## See Also  
- [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)
+ [Module Statement](/dotnet/articles/visual-basic/language-reference/statements/module-statement)

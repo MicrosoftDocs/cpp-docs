@@ -48,4 +48,4 @@ The `Line` statement is no longer supported. File I/O functionality is normally 
 ## See Also  
  <xref:System.IO>   
  <xref:System.Drawing>   
- [File Access with Visual Basic](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/file-access)
+ [File Access with Visual Basic](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/file-access)

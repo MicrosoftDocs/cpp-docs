@@ -46,5 +46,5 @@ The `#ExternalSource` directive references outside code, enabling the compiler t
 2.  Remove the initial `#ExternalSource` if it is unnecessary.  
   
 ## See Also  
- [#ExternalSource Directive](/dotnet/visual-basic/language-reference/directives/externalsource-directive)   
+ [#ExternalSource Directive](/dotnet/articles/visual-basic/language-reference/directives/externalsource-directive)   
  [NOTINBUILD Conditional Compilation (Visual Basic)](http://msdn.microsoft.com/en-us/ad1e35e0-935e-4a35-a2ae-738bcf2a9240)

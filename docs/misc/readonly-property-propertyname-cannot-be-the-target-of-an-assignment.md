@@ -44,5 +44,5 @@ A `ReadOnly` property occurs in a context that assigns a value to it. Only writa
 -   Remove the `ReadOnly` keyword from the `Property` statement declaring the variable, or remove the statement that assigns a value to it.  
   
 ## See Also  
- [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)   
- [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)
+ [ReadOnly](/dotnet/articles/visual-basic/language-reference/modifiers/readonly)   
+ [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement)

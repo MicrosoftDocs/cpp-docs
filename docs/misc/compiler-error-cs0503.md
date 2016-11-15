@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0503
 The abstract method 'method' cannot be marked virtual  
   
- It is redundant to mark a member method as both [abstract](/dotnet/csharp/language-reference/keywords/abstract) and [virtual](/dotnet/csharp/language-reference/keywords/virtual) because **abstract** implies **virtual**.  
+ It is redundant to mark a member method as both [abstract](/dotnet/articles/csharp/language-reference/keywords/abstract) and [virtual](/dotnet/articles/csharp/language-reference/keywords/virtual) because **abstract** implies **virtual**.  
   
  The following sample generates CS0503:  
   

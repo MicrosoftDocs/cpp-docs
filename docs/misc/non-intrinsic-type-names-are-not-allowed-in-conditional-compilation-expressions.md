@@ -37,7 +37,7 @@ translation.priority.mt:
 # Non-intrinsic type names are not allowed in conditional compilation expressions
 The conditional compilation expression refers to a non-intrinsic type, but only intrinsic types are allowed.  
   
- For more information about the intrinsic type in [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)], see [Data Types Summary](/dotnet/visual-basic/language-reference/keywords/data-types-summary).  
+ For more information about the intrinsic type in [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)], see [Data Types Summary](/dotnet/articles/visual-basic/language-reference/keywords/data-types-summary).  
   
  **Error ID:** BC31426  
   
@@ -47,4 +47,4 @@ The conditional compilation expression refers to a non-intrinsic type, but only 
   
 ## See Also  
  [NOTINBUILD Conditional Compilation (Visual Basic)](http://msdn.microsoft.com/en-us/ad1e35e0-935e-4a35-a2ae-738bcf2a9240)   
- [Data Types Summary](/dotnet/visual-basic/language-reference/keywords/data-types-summary)
+ [Data Types Summary](/dotnet/articles/visual-basic/language-reference/keywords/data-types-summary)

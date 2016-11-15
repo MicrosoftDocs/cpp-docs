@@ -44,5 +44,5 @@ A `RaiseEvent` declaration must end with an `End RaiseEvent` statement.
 -   Check that the `RaiseEvent` declaration ends with an `End RaiseEvent` statement.  
   
 ## See Also  
- [RaiseEvent Statement](/dotnet/visual-basic/language-reference/statements/raiseevent-statement)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [RaiseEvent Statement](/dotnet/articles/visual-basic/language-reference/statements/raiseevent-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

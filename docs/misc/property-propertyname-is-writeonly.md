@@ -44,4 +44,4 @@ You have tried to retrieve a value from a property that is declared `WriteOnly`.
 -   Remove the `WriteOnly` specifier from the property declaration.  
   
 ## See Also  
- [WriteOnly](/dotnet/visual-basic/language-reference/modifiers/writeonly)
+ [WriteOnly](/dotnet/articles/visual-basic/language-reference/modifiers/writeonly)

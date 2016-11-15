@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS2019
 Invalid target type for /target: must specify 'exe', 'winexe', 'library', or 'module'  
   
- The [/target](/dotnet/csharp/language-reference/compiler-options/target-compiler-option) compiler option was used, but an invalid parameter was passed. To resolve this error, recompile the program using the form of the **/target** option that is appropriate to your output file.  
+ The [/target](/dotnet/articles/csharp/language-reference/compiler-options/target-compiler-option) compiler option was used, but an invalid parameter was passed. To resolve this error, recompile the program using the form of the **/target** option that is appropriate to your output file.  
   
  The following sample generates CS2017:  
   

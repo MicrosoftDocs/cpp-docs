@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0216
 The operator 'operator' requires a matching operator 'missing_operator' to also be defined  
   
- A user-defined [true](/dotnet/csharp/language-reference/keywords/true) operator requires a user-defined [false](/dotnet/csharp/language-reference/keywords/false) operator, and vice versa. For more information, see [Operators](/dotnet/csharp/programming-guide/statements-expressions-operators/operators).  
+ A user-defined [true](/dotnet/articles/csharp/language-reference/keywords/true) operator requires a user-defined [false](/dotnet/articles/csharp/language-reference/keywords/false) operator, and vice versa. For more information, see [Operators](/dotnet/articles/csharp/programming-guide/statements-expressions-operators/operators).  
   
  The following sample generates CS0216:  
   

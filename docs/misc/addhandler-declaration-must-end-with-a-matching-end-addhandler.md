@@ -44,5 +44,5 @@ An `AddHandler` declaration must end with an `End AddHandler` statement.
 -   Check that the `AddHandler` declaration ends with an `End AddHandler` statement.  
   
 ## See Also  
- [AddHandler Statement](/dotnet/visual-basic/language-reference/statements/addhandler-statement)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [AddHandler Statement](/dotnet/articles/visual-basic/language-reference/statements/addhandler-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

@@ -44,5 +44,5 @@ A statement attempts to convert an array type to another array type in a situati
 -   Check the data types of the elements of both arrays to determine the source of the error.  
   
 ## See Also  
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)   
- [Array Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/array-conversions)
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)   
+ [Array Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/array-conversions)

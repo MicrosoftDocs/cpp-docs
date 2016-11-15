@@ -44,5 +44,5 @@ A declaration occurs that does not supply an `As` clause for one or more of the 
 -   Furnish the `As` clause as required, or turn `Option Strict Off`.  
   
 ## See Also  
- [As](/dotnet/visual-basic/language-reference/statements/as-clause)   
- [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)
+ [As](/dotnet/articles/visual-basic/language-reference/statements/as-clause)   
+ [Option Strict Statement](/dotnet/articles/visual-basic/language-reference/statements/option-strict-statement)

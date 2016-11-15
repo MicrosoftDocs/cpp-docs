@@ -48,5 +48,5 @@ A `Continue Do` statement can only appear within a `Do...Loop` loop.
 3.  Otherwise, remove the `Continue Do` statement.  
   
 ## See Also  
- [Continue Statement](/dotnet/visual-basic/language-reference/statements/continue-statement)   
- [Do...Loop Statement](/dotnet/visual-basic/language-reference/statements/do-loop-statement)
+ [Continue Statement](/dotnet/articles/visual-basic/language-reference/statements/continue-statement)   
+ [Do...Loop Statement](/dotnet/articles/visual-basic/language-reference/statements/do-loop-statement)

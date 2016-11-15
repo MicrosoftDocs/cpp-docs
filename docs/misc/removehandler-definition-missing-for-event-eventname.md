@@ -46,5 +46,5 @@ If an event is declared as `Custom`, it must supply a procedure for removing an 
 2.  Verify that other procedures within the event declaration are correctly terminated.  
   
 ## See Also  
- [RemoveHandler Statement](/dotnet/visual-basic/language-reference/statements/removehandler-statement)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [RemoveHandler Statement](/dotnet/articles/visual-basic/language-reference/statements/removehandler-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

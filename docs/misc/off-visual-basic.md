@@ -41,11 +41,11 @@ Turns a compiler option off.
 ## Remarks  
  The `Off` keyword can be used in these contexts:  
   
- [Option Explicit Statement](/dotnet/visual-basic/language-reference/statements/option-explicit-statement)  
+ [Option Explicit Statement](/dotnet/articles/visual-basic/language-reference/statements/option-explicit-statement)  
   
- [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)  
+ [Option Strict Statement](/dotnet/articles/visual-basic/language-reference/statements/option-strict-statement)  
   
- [Option Infer Statement](/dotnet/visual-basic/language-reference/statements/option-infer-statement)  
+ [Option Infer Statement](/dotnet/articles/visual-basic/language-reference/statements/option-infer-statement)  
   
 ## See Also  
- [Keywords](/dotnet/visual-basic/language-reference/keywords/index)
+ [Keywords](/dotnet/articles/visual-basic/language-reference/keywords/index)

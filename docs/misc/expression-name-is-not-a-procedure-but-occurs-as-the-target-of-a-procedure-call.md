@@ -41,4 +41,4 @@ You have made a procedure call to an expression that is not a procedure.
 2.  Supply the procedure that <`name`> calls.  
   
 ## See Also  
- [Procedures](/dotnet/visual-basic/language-reference/procedures/index)
+ [Procedures](/dotnet/articles/visual-basic/language-reference/procedures/index)

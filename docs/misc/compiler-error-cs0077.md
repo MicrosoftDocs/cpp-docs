@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0077
 The as operator must be used with a reference type or nullable type ('int' is a non-nullable value type).  
   
- The [as](/dotnet/csharp/language-reference/keywords/as) operator was passed a [value type](/dotnet/csharp/language-reference/keywords/value-types). Because `as` can return [null](/dotnet/csharp/language-reference/keywords/null), it can only be passed [reference types](/dotnet/csharp/language-reference/keywords/reference-types) or nullable type. For more information about nullable types, see [Nullable Types](/dotnet/csharp/programming-guide/nullable-types/index).  
+ The [as](/dotnet/articles/csharp/language-reference/keywords/as) operator was passed a [value type](/dotnet/articles/csharp/language-reference/keywords/value-types). Because `as` can return [null](/dotnet/articles/csharp/language-reference/keywords/null), it can only be passed [reference types](/dotnet/articles/csharp/language-reference/keywords/reference-types) or nullable type. For more information about nullable types, see [Nullable Types](/dotnet/articles/csharp/programming-guide/nullable-types/index).  
   
  The following sample generates CS0077:  
   

@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # COM Interop Wrapper Error
-This message box is displayed when the project system could not create a COM interop wrapper for a particular component.  COM interop wrappers are required by the common language runtime (CLR) to manage and communicate with COM components.  For more information, see [COM Interoperability in Visual Basic and Visual C#](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications).  
+This message box is displayed when the project system could not create a COM interop wrapper for a particular component.  COM interop wrappers are required by the common language runtime (CLR) to manage and communicate with COM components.  For more information, see [COM Interoperability in Visual Basic and Visual C#](/dotnet/articles/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications).  
   
  Common causes for the failure include:  
   
@@ -53,6 +53,6 @@ This message box is displayed when the project system could not create a COM int
 ## See Also  
  [Component Model Namespaces in Visual Studio](http://msdn.microsoft.com/en-us/705d0add-0707-44ba-a6de-637381d9c937)   
  [Component Authoring](../Topic/Component%20Authoring.md)   
- [COM Interop](/dotnet/visual-basic/programming-guide/com-interop/index)   
+ [COM Interop](/dotnet/articles/visual-basic/programming-guide/com-interop/index)   
  [Common Language Runtime](../Topic/Common%20Language%20Runtime%20\(CLR\).md)   
- [COM Interoperability in .NET Framework Applications](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications)
+ [COM Interoperability in .NET Framework Applications](/dotnet/articles/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications)

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1575
 A stackalloc expression requires [] after type  
   
- The size of the requested allocation, with [stackalloc](/dotnet/csharp/language-reference/keywords/stackalloc), must be specified in square brackets.  
+ The size of the requested allocation, with [stackalloc](/dotnet/articles/csharp/language-reference/keywords/stackalloc), must be specified in square brackets.  
   
  The following sample generates CS1575:  
   

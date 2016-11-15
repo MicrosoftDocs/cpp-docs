@@ -44,5 +44,5 @@ More than one `AddHandler` declaration appears in a custom event declaration. An
 -   Remove the redundant `AddHandler` statement.  
   
 ## See Also  
- [AddHandler Statement](/dotnet/visual-basic/language-reference/statements/addhandler-statement)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [AddHandler Statement](/dotnet/articles/visual-basic/language-reference/statements/addhandler-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

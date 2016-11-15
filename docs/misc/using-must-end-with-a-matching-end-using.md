@@ -48,5 +48,5 @@ A `Using` statement occurs without a corresponding `End Using` statement.
 2.  Add an `End Using` statement to the end of the `Using` block.  
   
 ## See Also  
- [Using Statement](/dotnet/visual-basic/language-reference/statements/using-statement)   
+ [Using Statement](/dotnet/articles/visual-basic/language-reference/statements/using-statement)   
  [How to: Dispose of a System Resource](../Topic/How%20to:%20Dispose%20of%20a%20System%20Resource%20\(Visual%20Basic\).md)

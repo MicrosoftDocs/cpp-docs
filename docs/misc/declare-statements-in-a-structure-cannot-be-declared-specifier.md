@@ -44,5 +44,5 @@ A `Declare` declaration has a specifier that is not valid within a `Structure` d
 -   Remove the specifier.  
   
 ## See Also  
- [Delegate Statement](/dotnet/visual-basic/language-reference/statements/delegate-statement)   
- [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)
+ [Delegate Statement](/dotnet/articles/visual-basic/language-reference/statements/delegate-statement)   
+ [Structure Statement](/dotnet/articles/visual-basic/language-reference/statements/structure-statement)

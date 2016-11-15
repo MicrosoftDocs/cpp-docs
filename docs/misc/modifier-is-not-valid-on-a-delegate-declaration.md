@@ -44,5 +44,5 @@ You attempted to use a modifier, such as `Shared`, on a delegate declaration. De
 1.  Remove the modifier.  
   
 ## See Also  
- [Delegate Statement](/dotnet/visual-basic/language-reference/statements/delegate-statement)   
+ [Delegate Statement](/dotnet/articles/visual-basic/language-reference/statements/delegate-statement)   
  [How to: Invoke a Delegate Method](../Topic/How%20to:%20Invoke%20a%20Delegate%20Method%20\(Visual%20Basic\).md)

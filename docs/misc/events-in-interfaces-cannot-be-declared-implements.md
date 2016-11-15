@@ -46,4 +46,4 @@ Events declared in interfaces cannot implement the events of other interfaces.
 2.  Implement the event within a class or structure.  
   
 ## See Also  
- [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)
+ [Interface Statement](/dotnet/articles/visual-basic/language-reference/statements/interface-statement)

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0212
 You can only take the address of an unfixed expression inside of a fixed statement initializer  
   
- For more information, see [Unsafe Code and Pointers](/dotnet/csharp/programming-guide/unsafe-code-pointers/index).  
+ For more information, see [Unsafe Code and Pointers](/dotnet/articles/csharp/programming-guide/unsafe-code-pointers/index).  
   
  The following sample shows how to take the address of an unfixed expression. The following sample generates CS0212.  
   

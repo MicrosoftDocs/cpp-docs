@@ -35,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Type &#39;&lt;typename&gt;&#39; cannot inherit from a type nested within it
-A class or interface definition includes an [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement) that specifies a type nested within it.  
+A class or interface definition includes an [Inherits Statement](/dotnet/articles/visual-basic/language-reference/statements/inherits-statement) that specifies a type nested within it.  
   
  Inheritance must be linear, not circular. A type cannot inherit from a type that inherits from it.  
   
@@ -58,7 +58,7 @@ End Class
   
 -   If the inheriting type (the outer type in the nesting) must inherit from the inner type, move the inner type out of the outer type.  
   
--   If the inner type must be nested within the outer type, the outer type cannot inherit from it. Remove the [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement).  
+-   If the inner type must be nested within the outer type, the outer type cannot inherit from it. Remove the [Inherits Statement](/dotnet/articles/visual-basic/language-reference/statements/inherits-statement).  
   
 ## See Also  
  [NOT IN BUILD: Inheritance in Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)

@@ -44,5 +44,5 @@ The `Type` keyword can no longer be used to define user-defined types.
 -   Use the `Structure` statement to define a new type.  
   
 ## See Also  
- [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)   
- [Structures](/dotnet/visual-basic/programming-guide/language-features/data-types/structures)
+ [Structure Statement](/dotnet/articles/visual-basic/language-reference/statements/structure-statement)   
+ [Structures](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures)

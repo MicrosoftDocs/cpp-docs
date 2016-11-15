@@ -40,13 +40,13 @@ translation.priority.mt:
   
  An attempt to override one of the accessor methods for a property failed because the accessor cannot be overridden. This error can occur if:  
   
--   the base class property is not declared as [virtual](/dotnet/csharp/language-reference/keywords/virtual).  
+-   the base class property is not declared as [virtual](/dotnet/articles/csharp/language-reference/keywords/virtual).  
   
--   the base class property does not declare the [get](/dotnet/csharp/language-reference/keywords/get) or [set](/dotnet/csharp/language-reference/keywords/set) accessor you are trying to override.  
+-   the base class property does not declare the [get](/dotnet/articles/csharp/language-reference/keywords/get) or [set](/dotnet/articles/csharp/language-reference/keywords/set) accessor you are trying to override.  
   
- If you do not want to override the base class property, you can use the [new](/dotnet/csharp/language-reference/keywords/new) keyword before the property in derived class.  
+ If you do not want to override the base class property, you can use the [new](/dotnet/articles/csharp/language-reference/keywords/new) keyword before the property in derived class.  
   
- For more information, see [Using Properties](/dotnet/csharp/programming-guide/classes-and-structs/using-properties).  
+ For more information, see [Using Properties](/dotnet/articles/csharp/programming-guide/classes-and-structs/using-properties).  
   
 ## Example  
  The following sample generates CS0546 because the base class does not declare a set accessor for the property.  
@@ -90,4 +90,4 @@ public class b : a
 ```  
   
 ## See Also  
- [Properties](/dotnet/csharp/programming-guide/classes-and-structs/properties)
+ [Properties](/dotnet/articles/csharp/programming-guide/classes-and-structs/properties)

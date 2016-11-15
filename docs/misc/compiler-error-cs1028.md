@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1028
 Unexpected preprocessor directive  
   
- A [preprocessor directive](/dotnet/csharp/language-reference/preprocessor-directives/index) was found but not expected.  
+ A [preprocessor directive](/dotnet/articles/csharp/language-reference/preprocessor-directives/index) was found but not expected.  
   
  For example, a `#endif` was found with no preceding `#if`.  
   

@@ -39,4 +39,4 @@ A named argument can not be used in a procedure invocation unless it appears in 
 -   Check the spelling of the argument name.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

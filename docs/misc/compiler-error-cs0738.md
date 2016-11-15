@@ -63,4 +63,4 @@ public class Test: ITest
 ```  
   
 ## See Also  
- [Interfaces](/dotnet/csharp/programming-guide/interfaces/index)
+ [Interfaces](/dotnet/articles/csharp/programming-guide/interfaces/index)

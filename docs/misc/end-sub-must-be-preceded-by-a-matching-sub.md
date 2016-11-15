@@ -48,5 +48,5 @@ An `End Sub` statement appears in your code with no matching `Sub` procedure def
 -   Move the `End Sub` to the appropriate place in the code.  
   
 ## See Also  
- [Sub Procedures](/dotnet/visual-basic/language-reference/procedures/sub-procedures)   
+ [Sub Procedures](/dotnet/articles/visual-basic/language-reference/procedures/sub-procedures)   
  [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)

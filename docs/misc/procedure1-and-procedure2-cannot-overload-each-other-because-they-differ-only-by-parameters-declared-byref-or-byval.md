@@ -50,4 +50,4 @@ translation.priority.mt:
 -   If you do not intend to overload a procedure, change the procedure name in one of the declarations.  
   
 ## See Also  
- [Procedure Overloading](/dotnet/visual-basic/language-reference/procedures/procedure-overloading)
+ [Procedure Overloading](/dotnet/articles/visual-basic/language-reference/procedures/procedure-overloading)

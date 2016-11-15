@@ -44,4 +44,4 @@ You have used a specifier that is not valid on an `Enum` declaration.
 1.  Remove the specifier.  
   
 ## See Also  
- [Enumerations Overview](/dotnet/visual-basic/programming-guide/language-features/constants-enums/enumerations-overview)
+ [Enumerations Overview](/dotnet/articles/visual-basic/programming-guide/language-features/constants-enums/enumerations-overview)

@@ -41,4 +41,4 @@ An assignment has been attempted that is not valid.
 2.  Check the property assignment.  
   
 ## See Also  
- [Assignment Operators](/dotnet/visual-basic/language-reference/operators/assignment-operators)
+ [Assignment Operators](/dotnet/articles/visual-basic/language-reference/operators/assignment-operators)

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0248
 Cannot create an array with a negative size  
   
- An array size was specified with a negative number. For more information, see [Arrays](/dotnet/csharp/programming-guide/arrays/index).  
+ An array size was specified with a negative number. For more information, see [Arrays](/dotnet/articles/csharp/programming-guide/arrays/index).  
   
 ## Example  
  The following sample generates CS0248:  

@@ -43,11 +43,11 @@ An aggregate function that does not exist has been included with the `Into` oper
   
 -   Check the spelling of the aggregate function name and make any necessary corrections.  
   
--   Add the method as a custom aggregate function (extension method). For more information about creating a custom aggregate function, see [Aggregate Clause](/dotnet/visual-basic/language-reference/queries/aggregate-clause).  
+-   Add the method as a custom aggregate function (extension method). For more information about creating a custom aggregate function, see [Aggregate Clause](/dotnet/articles/visual-basic/language-reference/queries/aggregate-clause).  
   
 ## See Also  
- [Aggregate Clause](/dotnet/visual-basic/language-reference/queries/aggregate-clause)   
- [Group By Clause](/dotnet/visual-basic/language-reference/queries/group-by-clause)   
- [Group Join Clause](/dotnet/visual-basic/language-reference/queries/group-join-clause)   
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)
+ [Aggregate Clause](/dotnet/articles/visual-basic/language-reference/queries/aggregate-clause)   
+ [Group By Clause](/dotnet/articles/visual-basic/language-reference/queries/group-by-clause)   
+ [Group Join Clause](/dotnet/articles/visual-basic/language-reference/queries/group-join-clause)   
+ [Introduction to LINQ in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/articles/visual-basic/programming-guide/language-features/linq/index)

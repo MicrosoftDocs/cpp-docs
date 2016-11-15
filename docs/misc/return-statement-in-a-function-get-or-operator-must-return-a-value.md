@@ -46,5 +46,5 @@ translation.priority.mt:
 2.  Use the `End` statement to cause the program to exit the current procedure.  
   
 ## See Also  
- [Return Statement](/dotnet/visual-basic/language-reference/statements/return-statement)   
+ [Return Statement](/dotnet/articles/visual-basic/language-reference/statements/return-statement)   
  [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)

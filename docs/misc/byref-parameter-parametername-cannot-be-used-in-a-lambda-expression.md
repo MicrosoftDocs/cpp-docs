@@ -62,4 +62,4 @@ A lambda expression declared within a `Sub` or function cannot use any `ByRef` p
     ```  
   
 ## See Also  
- [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)
+ [Lambda Expressions](/dotnet/articles/visual-basic/language-reference/procedures/lambda-expressions)

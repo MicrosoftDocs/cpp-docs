@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0179
 'member' cannot be extern and declare a body  
   
- When a class member is marked [extern](/dotnet/csharp/language-reference/keywords/extern), it means that the member's definition is located in another file. Therefore, a class member marked as **extern** cannot be defined in the class. Either remove the `extern` keyword or delete the definition. For more information, see [Methods](/dotnet/csharp/programming-guide/classes-and-structs/methods).  
+ When a class member is marked [extern](/dotnet/articles/csharp/language-reference/keywords/extern), it means that the member's definition is located in another file. Therefore, a class member marked as **extern** cannot be defined in the class. Either remove the `extern` keyword or delete the definition. For more information, see [Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/methods).  
   
  The following sample generates CS0179:  
   

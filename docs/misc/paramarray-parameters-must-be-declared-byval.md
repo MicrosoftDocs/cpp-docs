@@ -44,6 +44,6 @@ translation.priority.mt:
 -   Declare `ParamArray` parameters using the `ByVal` modifier.  
   
 ## See Also  
- [ParamArray](/dotnet/visual-basic/language-reference/modifiers/paramarray)   
- [ByRef](/dotnet/visual-basic/language-reference/modifiers/byref)   
- [ByVal](/dotnet/visual-basic/language-reference/modifiers/byval)
+ [ParamArray](/dotnet/articles/visual-basic/language-reference/modifiers/paramarray)   
+ [ByRef](/dotnet/articles/visual-basic/language-reference/modifiers/byref)   
+ [ByVal](/dotnet/articles/visual-basic/language-reference/modifiers/byval)

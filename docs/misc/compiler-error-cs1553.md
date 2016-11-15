@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1553
 Declaration is not valid; use 'modifier operator \<dest-type> (...' instead  
   
- The return type for an [operator](/dotnet/csharp/language-reference/keywords/operator) must immediately precede the parameter list, and *modifier* is either `implicit` or **explicit**.  
+ The return type for an [operator](/dotnet/articles/csharp/language-reference/keywords/operator) must immediately precede the parameter list, and *modifier* is either `implicit` or **explicit**.  
   
  The following sample generates CS1553:  
   

@@ -42,4 +42,4 @@ translation.priority.mt:
 1.  
   
 ## See Also  
- [/win32manifest (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/win32manifest)
+ [/win32manifest (Visual Basic)](/dotnet/articles/visual-basic/reference/command-line-compiler/win32manifest)

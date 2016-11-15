@@ -44,4 +44,4 @@ A property in a referenced assembly contains a type that cannot be represented.
 -   Specify a type that can be used with your application.  
   
 ## See Also  
- [Data Types](/dotnet/visual-basic/programming-guide/language-features/data-types/index)
+ [Data Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/index)

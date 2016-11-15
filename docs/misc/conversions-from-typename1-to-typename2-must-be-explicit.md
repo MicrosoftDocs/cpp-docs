@@ -44,4 +44,4 @@ This conversion cannot be accomplished implicitly.
 -   Use the `CType`, or one of the specific conversion functions, such as `CInt` or `CDec`.  
   
 ## See Also  
- [Type Conversion Functions](/dotnet/visual-basic/language-reference/functions/type-conversion-functions)
+ [Type Conversion Functions](/dotnet/articles/visual-basic/language-reference/functions/type-conversion-functions)

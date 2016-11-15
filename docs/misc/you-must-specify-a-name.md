@@ -37,5 +37,5 @@ When performing file operations such as renaming a file, you must specify the na
 -   Specify the name.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)   
- [My.Computer.FileSystem Object](/dotnet/visual-basic/language-reference/objects/my-computer-filesystem-object)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)   
+ [My.Computer.FileSystem Object](/dotnet/articles/visual-basic/language-reference/objects/my-computer-filesystem-object)

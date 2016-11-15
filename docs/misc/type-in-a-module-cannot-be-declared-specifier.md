@@ -44,5 +44,5 @@ A type with invalid modifiers was declared within a module.
 -   Do not use `Protected` or `Protected Friend` modifiers on types declared within a module.  
   
 ## See Also  
- [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)   
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)
+ [Module Statement](/dotnet/articles/visual-basic/language-reference/statements/module-statement)   
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)

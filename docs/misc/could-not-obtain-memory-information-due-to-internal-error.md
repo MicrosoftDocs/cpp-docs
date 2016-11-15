@@ -39,6 +39,6 @@ A call to one of the memory-information properties of the `My.Computer.Info` obj
 -   Add a `Try...Catch` block around the call to the memory-information property of the `My.Computer.Info` object.  
   
 ## See Also  
- [My.Computer.Info Object](/dotnet/visual-basic/language-reference/objects/my-computer-info-object)   
+ [My.Computer.Info Object](/dotnet/articles/visual-basic/language-reference/objects/my-computer-info-object)   
  [Exception and Error Handling in Visual Basic](http://msdn.microsoft.com/en-us/3e351e73-cf23-40ab-8b60-05794160529e)   
- [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
+ [Try...Catch...Finally Statement](/dotnet/articles/visual-basic/language-reference/statements/try-catch-finally-statement)

@@ -49,4 +49,4 @@ The '?' character can be used to specify that a value type or structure is nulla
 -   Remove the '?' character from the declaration.  
   
 ## See Also  
- [Nullable Value Types](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)
+ [Nullable Value Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

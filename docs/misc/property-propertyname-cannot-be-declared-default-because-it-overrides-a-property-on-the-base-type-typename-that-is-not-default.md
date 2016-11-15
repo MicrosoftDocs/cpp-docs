@@ -44,4 +44,4 @@ You have attempted to declare a property `Default`, which is not a valid declara
 -   Remove the `Default` declaration.  
   
 ## See Also  
- [Default](/dotnet/visual-basic/language-reference/modifiers/default)
+ [Default](/dotnet/articles/visual-basic/language-reference/modifiers/default)

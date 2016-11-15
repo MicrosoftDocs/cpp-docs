@@ -40,15 +40,15 @@ An attribute argument must be a constant expression, typeof expression or array 
   
  Certain restrictions apply to what kinds of arguments may be used with attributes. Note that in addition to the restrictions specified in the error message, the following types are NOT allowed as attribute arguments:  
   
--   [sbyte](/dotnet/csharp/language-reference/keywords/sbyte)  
+-   [sbyte](/dotnet/articles/csharp/language-reference/keywords/sbyte)  
   
--   [ushort](/dotnet/csharp/language-reference/keywords/ushort)  
+-   [ushort](/dotnet/articles/csharp/language-reference/keywords/ushort)  
   
--   [uint](/dotnet/csharp/language-reference/keywords/uint)  
+-   [uint](/dotnet/articles/csharp/language-reference/keywords/uint)  
   
--   [ulong](/dotnet/csharp/language-reference/keywords/ulong)  
+-   [ulong](/dotnet/articles/csharp/language-reference/keywords/ulong)  
   
--   [decimal](/dotnet/csharp/language-reference/keywords/decimal)  
+-   [decimal](/dotnet/articles/csharp/language-reference/keywords/decimal)  
   
  For more information, see [NOT IN BUILD: Global Attributes (C# Programming Guide)](http://msdn.microsoft.com/en-us/7c6c41f8-f0d5-4345-8987-3d91f9bae136).  
   

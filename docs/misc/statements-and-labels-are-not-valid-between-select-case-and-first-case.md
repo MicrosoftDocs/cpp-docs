@@ -44,4 +44,4 @@ A statement that is not a comment appears between the opening `Select` or `Selec
 -   If the intervening statement is a comment, precede it with a comment delimiter (`'` or `REM`). Otherwise, move or delete the statement.  
   
 ## See Also  
- [Select...Case Statement](/dotnet/visual-basic/language-reference/statements/select-case-statement)
+ [Select...Case Statement](/dotnet/articles/visual-basic/language-reference/statements/select-case-statement)

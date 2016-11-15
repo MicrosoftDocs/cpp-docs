@@ -59,5 +59,5 @@ class Program
 ```  
   
 ## See Also  
- [Constants](/dotnet/csharp/programming-guide/classes-and-structs/constants)   
- [null](/dotnet/csharp/language-reference/keywords/null)
+ [Constants](/dotnet/articles/csharp/programming-guide/classes-and-structs/constants)   
+ [null](/dotnet/articles/csharp/language-reference/keywords/null)

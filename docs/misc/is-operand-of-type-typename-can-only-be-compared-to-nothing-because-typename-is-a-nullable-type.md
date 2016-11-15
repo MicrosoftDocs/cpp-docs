@@ -54,5 +54,5 @@ A variable declared as nullable has been compared to an expression other than `N
     ```  
   
 ## See Also  
- [Nullable Value Types](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)   
- [Is Operator](/dotnet/visual-basic/language-reference/operators/is-operator)
+ [Nullable Value Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/nullable-value-types)   
+ [Is Operator](/dotnet/articles/visual-basic/language-reference/operators/is-operator)

@@ -48,4 +48,4 @@ An array initialization for a jagged array (array of arrays) sets the initial le
 ## See Also  
  [NOTINBUILD  an Array Variable](http://msdn.microsoft.com/en-us/c2da78bd-6928-46ba-805f-44f819dfaf93)   
  [NOTINBUILD Jagged Arrays in Visual Basic](http://msdn.microsoft.com/en-us/05c12439-ee8f-4fef-ba75-b35402b67ab9)   
- [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator)
+ [New Operator](/dotnet/articles/visual-basic/language-reference/operators/new-operator)

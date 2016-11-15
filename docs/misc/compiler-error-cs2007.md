@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS2007
 Unrecognized command-line option: 'option'  
   
- The compiler was passed a string that was not a [compiler option](/dotnet/csharp/language-reference/compiler-options/index), even though it began with a forward slash (/).  
+ The compiler was passed a string that was not a [compiler option](/dotnet/articles/csharp/language-reference/compiler-options/index), even though it began with a forward slash (/).  
   
  The following sample generates CS2007:  
   

@@ -44,5 +44,5 @@ A `ParamArray` argument is automatically optional, and it must be the only optio
 -   Remove the optional arguments in the declaration.  
   
 ## See Also  
- [Parameter Arrays](/dotnet/visual-basic/language-reference/procedures/parameter-arrays)   
- [ParamArray](/dotnet/visual-basic/language-reference/modifiers/paramarray)
+ [Parameter Arrays](/dotnet/articles/visual-basic/language-reference/procedures/parameter-arrays)   
+ [ParamArray](/dotnet/articles/visual-basic/language-reference/modifiers/paramarray)

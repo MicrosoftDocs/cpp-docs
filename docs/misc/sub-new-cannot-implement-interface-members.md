@@ -44,5 +44,5 @@ translation.priority.mt:
 -   Remove `Implements` statements from `Sub New` procedures.  
   
 ## See Also  
- [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)   
- [Implements](/dotnet/visual-basic/language-reference/statements/implements-clause)
+ [Interfaces](/dotnet/articles/visual-basic/programming-guide/language-features/interfaces/index)   
+ [Implements](/dotnet/articles/visual-basic/language-reference/statements/implements-clause)

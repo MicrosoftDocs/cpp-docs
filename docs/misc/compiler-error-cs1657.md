@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1657
 Cannot pass 'parameter' as a ref or out argument because 'reason''  
   
- This error occurs when a variable is passed as a [ref](/dotnet/csharp/language-reference/keywords/ref) or [out](/dotnet/csharp/language-reference/keywords/out) argument in a context in which that variable is readonly. Readonly contexts include [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) iteration variables, [using](/dotnet/csharp/language-reference/keywords/using-statement) variables, and `fixed` variables. To resolve this error, do not call functions that take the `foreach`, `using` or `fixed` variable as a `ref` or `out` parameter in `using` blocks, `foreach` statements, and `fixed` statements.  
+ This error occurs when a variable is passed as a [ref](/dotnet/articles/csharp/language-reference/keywords/ref) or [out](/dotnet/articles/csharp/language-reference/keywords/out) argument in a context in which that variable is readonly. Readonly contexts include [foreach](/dotnet/articles/csharp/language-reference/keywords/foreach-in) iteration variables, [using](/dotnet/articles/csharp/language-reference/keywords/using-statement) variables, and `fixed` variables. To resolve this error, do not call functions that take the `foreach`, `using` or `fixed` variable as a `ref` or `out` parameter in `using` blocks, `foreach` statements, and `fixed` statements.  
   
 ## Example  
  The following sample generates CS1657:  

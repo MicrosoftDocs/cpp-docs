@@ -44,5 +44,5 @@ A `RemoveHandler` declaration must end with an `End RemoveHandler` statement.
 -   Check that the `RemoveHandler` declaration ends with an `End RemoveHandler` statement.  
   
 ## See Also  
- [RemoveHandler Statement](/dotnet/visual-basic/language-reference/statements/removehandler-statement)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [RemoveHandler Statement](/dotnet/articles/visual-basic/language-reference/statements/removehandler-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

@@ -39,8 +39,8 @@ An attempt to read from or write to a file has failed because the parameter `enc
 -   Supply a valid value for the `encoding` parameter.  
   
 ## See Also  
- [File Encodings](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/file-encodings)   
- [Reading from Files](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files)   
- [Writing to Files](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files)   
+ [File Encodings](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/file-encodings)   
+ [Reading from Files](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files)   
+ [Writing to Files](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files)   
  [My.Computer.FileSystem.ReadAllText Method](http://msdn.microsoft.com/en-us/3a7ac8be-fb1d-4087-bc65-167d6754d57f)   
  [My.Computer.FileSystem.WriteAllText Method](http://msdn.microsoft.com/en-us/f507460c-87d9-4504-b74f-3ff825c7d5c4)

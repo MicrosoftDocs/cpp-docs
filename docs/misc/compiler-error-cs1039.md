@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1039
 Unterminated string literal  
   
- The compiler detected an ill-formed [string](/dotnet/csharp/language-reference/keywords/string) literal.  
+ The compiler detected an ill-formed [string](/dotnet/articles/csharp/language-reference/keywords/string) literal.  
   
 ## Example  
  The following sample generates CS1039. To resolve the error, add the terminating quotation mark.  

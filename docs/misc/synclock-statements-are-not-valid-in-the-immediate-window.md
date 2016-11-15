@@ -45,4 +45,4 @@ The `SyncLock` statement synchronizes threads and is not permitted in a debuggin
   
 ## See Also  
  [Immediate Window](/visualstudio/ide/reference/immediate-window)   
- [SyncLock Statement](/dotnet/visual-basic/language-reference/statements/synclock-statement)
+ [SyncLock Statement](/dotnet/articles/visual-basic/language-reference/statements/synclock-statement)

@@ -44,5 +44,5 @@ The object being referenced has not been set, or has been set to the value `Noth
 -   Verify that the name of object is spelled correctly, and that the object has been set.  
   
 ## See Also  
- [Nothing](/dotnet/visual-basic/language-reference/nothing)   
+ [Nothing](/dotnet/articles/visual-basic/language-reference/nothing)   
  [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

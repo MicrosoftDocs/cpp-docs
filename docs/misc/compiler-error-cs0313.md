@@ -78,4 +78,4 @@ public class NullableTest
 ```  
   
 ## See Also  
- [Nullable Types](/dotnet/csharp/programming-guide/nullable-types/index)
+ [Nullable Types](/dotnet/articles/csharp/programming-guide/nullable-types/index)

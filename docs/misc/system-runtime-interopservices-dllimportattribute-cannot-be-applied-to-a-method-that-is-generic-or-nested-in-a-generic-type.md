@@ -51,4 +51,4 @@ A procedure is declared with the <xref:System.Runtime.InteropServices.DllImportA
   
 ## See Also  
  <xref:System.Runtime.InteropServices.DllImportAttribute>   
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)

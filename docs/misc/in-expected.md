@@ -49,7 +49,7 @@ A `From` or `Aggregate` clause has been specified without an `In` operator. You 
     ```  
   
 ## See Also  
- [From Clause](/dotnet/visual-basic/language-reference/queries/from-clause)   
- [Aggregate Clause](/dotnet/visual-basic/language-reference/queries/aggregate-clause)   
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)
+ [From Clause](/dotnet/articles/visual-basic/language-reference/queries/from-clause)   
+ [Aggregate Clause](/dotnet/articles/visual-basic/language-reference/queries/aggregate-clause)   
+ [Introduction to LINQ in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/articles/visual-basic/programming-guide/language-features/linq/index)

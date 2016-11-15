@@ -44,4 +44,4 @@ Brackets in an escaped name must occur in matching pairs.
 -   Place a closing bracket at the end of the escaped name.  
   
 ## See Also  
- [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)
+ [Declared Element Names](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)

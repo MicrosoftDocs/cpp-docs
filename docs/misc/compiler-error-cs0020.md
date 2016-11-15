@@ -57,4 +57,4 @@ namespace x
 ```  
   
 ## See Also  
- [Operators](/dotnet/csharp/programming-guide/statements-expressions-operators/operators)
+ [Operators](/dotnet/articles/csharp/programming-guide/statements-expressions-operators/operators)

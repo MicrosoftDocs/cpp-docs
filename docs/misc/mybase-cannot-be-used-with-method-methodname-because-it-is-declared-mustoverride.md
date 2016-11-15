@@ -45,4 +45,4 @@ You have attempted to use `MyBase` with a method that has been declared `MustOve
   
 ## See Also  
  [MyBase - delete](http://msdn.microsoft.com/en-us/52491d06-6451-4f6f-9aa6-8fab59bbc2b9)   
- [MustOverride](/dotnet/visual-basic/language-reference/modifiers/mustoverride)
+ [MustOverride](/dotnet/articles/visual-basic/language-reference/modifiers/mustoverride)

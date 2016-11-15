@@ -46,5 +46,5 @@ A `Function` or `Sub` statement inside an interface contains an invalid keyword,
 2.  Move the implementation of interface members to a class that implements the interface.  
   
 ## See Also  
- [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)   
- [Implements Statement](/dotnet/visual-basic/language-reference/statements/implements-statement)
+ [Interface Statement](/dotnet/articles/visual-basic/language-reference/statements/interface-statement)   
+ [Implements Statement](/dotnet/articles/visual-basic/language-reference/statements/implements-statement)

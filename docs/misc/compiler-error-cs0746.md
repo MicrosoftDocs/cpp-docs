@@ -68,4 +68,4 @@ public class C
 ```  
   
 ## See Also  
- [Anonymous Types](/dotnet/csharp/programming-guide/classes-and-structs/anonymous-types)
+ [Anonymous Types](/dotnet/articles/csharp/programming-guide/classes-and-structs/anonymous-types)

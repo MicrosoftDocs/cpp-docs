@@ -67,5 +67,5 @@ using System;
 ```  
   
 ## See Also  
- [Partial Classes and Methods](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)   
- [static](/dotnet/csharp/language-reference/keywords/static)
+ [Partial Classes and Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)   
+ [static](/dotnet/articles/csharp/language-reference/keywords/static)

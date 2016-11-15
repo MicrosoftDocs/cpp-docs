@@ -46,4 +46,4 @@ An `If` statement occurs without a corresponding `End If` statement. An `End If`
 2.  Add an `End If` statement to the end of the `If` block.  
   
 ## See Also  
- [If...Then...Else Statement](/dotnet/visual-basic/language-reference/statements/if-then-else-statement)
+ [If...Then...Else Statement](/dotnet/articles/visual-basic/language-reference/statements/if-then-else-statement)

@@ -47,6 +47,6 @@ XML comment tag 'returns' is not permitted on a 'declare sub' language element. 
   
 ## See Also  
  [\<returns>](../Topic/%3Creturns%3E%20\(Visual%20Basic\).md)   
- [XML Comment Tags](/dotnet/visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments)   
- [Documenting Your Code with XML](/dotnet/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)   
- [Declare Statement](/dotnet/visual-basic/language-reference/statements/declare-statement)
+ [XML Comment Tags](/dotnet/articles/visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments)   
+ [Documenting Your Code with XML](/dotnet/articles/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)   
+ [Declare Statement](/dotnet/articles/visual-basic/language-reference/statements/declare-statement)

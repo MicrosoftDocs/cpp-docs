@@ -50,4 +50,4 @@ A `Dim` statement contains an invalid keyword. A `Dim` statement can include onl
 2.  If you have declared a `Static` variable outside of a procedure, either move the declaration inside a procedure or remove the `Static` keyword.  
   
 ## See Also  
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)

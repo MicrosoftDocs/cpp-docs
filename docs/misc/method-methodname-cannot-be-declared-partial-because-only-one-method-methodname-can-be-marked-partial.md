@@ -44,4 +44,4 @@ You cannot have two partial method declarations that have the same name and sign
 1.  Change the name or signature of one of the partial method declarations.  
   
 ## See Also  
- [Partial Methods](/dotnet/visual-basic/language-reference/procedures/partial-methods)
+ [Partial Methods](/dotnet/articles/visual-basic/language-reference/procedures/partial-methods)

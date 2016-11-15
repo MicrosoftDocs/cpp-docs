@@ -44,4 +44,4 @@ You attempted to use a character that is not valid in this context, such as $.
 1.  Remove the character.  
   
 ## See Also  
- [Type Characters](/dotnet/visual-basic/programming-guide/language-features/data-types/type-characters)
+ [Type Characters](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/type-characters)

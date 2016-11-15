@@ -50,6 +50,6 @@ Operator '\<operatorname>' is not defined for types '\<typename1>' and '\<typena
      [!code-vb[VbVbalrOOP#89](../misc/codesnippet/VisualBasic/operator-operatorname-is-not-defined-for-types-typename1-and-typename2_1.vb)]  
   
 ## See Also  
- [Is Operator](/dotnet/visual-basic/language-reference/operators/is-operator)   
- [= Operator](/dotnet/visual-basic/language-reference/operators/assignment-operator)   
- [Not Operator](/dotnet/visual-basic/language-reference/operators/not-operator)
+ [Is Operator](/dotnet/articles/visual-basic/language-reference/operators/is-operator)   
+ [= Operator](/dotnet/articles/visual-basic/language-reference/operators/assignment-operator)   
+ [Not Operator](/dotnet/articles/visual-basic/language-reference/operators/not-operator)

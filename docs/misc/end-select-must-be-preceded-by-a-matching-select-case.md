@@ -48,4 +48,4 @@ An `End Select` statement occurs without a corresponding `Select` or `Select Cas
 3.  Check that this `Select` block is correctly formatted.  
   
 ## See Also  
- [Select...Case Statement](/dotnet/visual-basic/language-reference/statements/select-case-statement)
+ [Select...Case Statement](/dotnet/articles/visual-basic/language-reference/statements/select-case-statement)

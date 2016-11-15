@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0104
 'reference' is an ambiguous reference between 'identifier' and 'identifier'  
   
- Your program contains [using](/dotnet/csharp/language-reference/keywords/using) directives for two namespaces and your code references a name that appears in both namespaces.  
+ Your program contains [using](/dotnet/articles/csharp/language-reference/keywords/using) directives for two namespaces and your code references a name that appears in both namespaces.  
   
  The following sample generates CS0104:  
   

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0111
 Type 'class' already defines a member called 'member' with the same parameter types  
   
- CS0111 occurs if a class contains two member declarations with the same name and parameter types. For more information, see [Methods](/dotnet/csharp/programming-guide/classes-and-structs/methods).  
+ CS0111 occurs if a class contains two member declarations with the same name and parameter types. For more information, see [Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/methods).  
   
 ## Example  
  The following sample generates CS0111.  

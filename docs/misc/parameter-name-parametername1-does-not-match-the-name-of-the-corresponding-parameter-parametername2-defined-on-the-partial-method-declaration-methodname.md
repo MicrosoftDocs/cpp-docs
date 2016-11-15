@@ -65,4 +65,4 @@ End Class
 1.  Change the parameter name or names in the declaration or in the implementation so that corresponding parameters have the same name.  
   
 ## See Also  
- [Partial Methods](/dotnet/visual-basic/language-reference/procedures/partial-methods)
+ [Partial Methods](/dotnet/articles/visual-basic/language-reference/procedures/partial-methods)

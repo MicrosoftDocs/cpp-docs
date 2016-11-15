@@ -44,4 +44,4 @@ You have included a parameter or parameters in a shared `Sub New` statement, whi
 -   Remove the parameter or parameters.  
   
 ## See Also  
- [Shared](/dotnet/visual-basic/language-reference/modifiers/shared)
+ [Shared](/dotnet/articles/visual-basic/language-reference/modifiers/shared)

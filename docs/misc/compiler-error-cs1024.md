@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1024
 Preprocessor directive expected  
   
- A line began with the pound symbol (#), but the subsequent string was not a valid [preprocessor directive](/dotnet/csharp/language-reference/preprocessor-directives/index).  
+ A line began with the pound symbol (#), but the subsequent string was not a valid [preprocessor directive](/dotnet/articles/csharp/language-reference/preprocessor-directives/index).  
   
  The following sample generates CS1024:  
   

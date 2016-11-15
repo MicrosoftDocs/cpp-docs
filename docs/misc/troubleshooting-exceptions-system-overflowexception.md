@@ -55,7 +55,7 @@ An <xref:System.OverflowException> exception is thrown when an arithmetic, casti
   
 -   In an unchecked context, the result is truncated by discarding any high-order bits that do not fit in the destination type.  
   
- For information about the value ranges of data types, see [Data Types](/dotnet/visual-basic/language-reference/data-types/data-type-summary), [Integral Types Table](/dotnet/csharp/language-reference/keywords/integral-types-table), or [Floating-Point Types Table](/dotnet/csharp/language-reference/keywords/floating-point-types-table).  
+ For information about the value ranges of data types, see [Data Types](/dotnet/articles/visual-basic/language-reference/data-types/data-type-summary), [Integral Types Table](/dotnet/articles/csharp/language-reference/keywords/integral-types-table), or [Floating-Point Types Table](/dotnet/articles/csharp/language-reference/keywords/floating-point-types-table).  
   
 ## See Also  
  <xref:System.OverflowException>   

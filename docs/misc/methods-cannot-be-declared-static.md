@@ -44,4 +44,4 @@ The `Static` modifier cannot be applied to entire procedures.
 -   Use the `Static` modifier to declare individual items within a procedure as static.  
   
 ## See Also  
- [Static](/dotnet/visual-basic/language-reference/modifiers/static)
+ [Static](/dotnet/articles/visual-basic/language-reference/modifiers/static)

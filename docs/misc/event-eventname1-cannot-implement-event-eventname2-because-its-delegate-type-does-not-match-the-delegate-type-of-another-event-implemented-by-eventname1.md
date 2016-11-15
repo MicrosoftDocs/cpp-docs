@@ -44,4 +44,4 @@ translation.priority.mt:
 -   Implement the events separately.  
   
 ## See Also  
- [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)
+ [Events](/dotnet/articles/visual-basic/programming-guide/language-features/events/events)

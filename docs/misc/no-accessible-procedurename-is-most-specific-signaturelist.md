@@ -37,7 +37,7 @@ translation.priority.mt:
 # No accessible &#39;&lt;procedurename&gt;&#39; is most specific: &lt;signaturelist&gt;
 An assignment statement assigns the address of an overloaded procedure to a delegate variable, but the compiler cannot resolve among the overloaded versions.  
   
- When code uses the address of a procedure that is defined in several overloaded versions, the compiler must decide which of the overloads to use. It tries to find a single version with a parameter list that matches the delegate parameter list. For more information, see [Overload Resolution](/dotnet/visual-basic/language-reference/procedures/overload-resolution).  
+ When code uses the address of a procedure that is defined in several overloaded versions, the compiler must decide which of the overloads to use. It tries to find a single version with a parameter list that matches the delegate parameter list. For more information, see [Overload Resolution](/dotnet/articles/visual-basic/language-reference/procedures/overload-resolution).  
   
  If the compiler finds more than one version of the procedure with a matching signature, it generates this error. This can happen, for example, if one of the overloads is generic and a type argument is passed to it that gives it a signature identical to that of another overload.  
   
@@ -48,8 +48,8 @@ An assignment statement assigns the address of an overloaded procedure to a dele
 -   If the conflict is caused by a generic overload having the same signature as another overload, change the type argument passed to that generic overload.  
   
 ## See Also  
- [AddressOf Operator](/dotnet/visual-basic/language-reference/operators/addressof-operator)   
- [Delegate Statement](/dotnet/visual-basic/language-reference/statements/delegate-statement)   
+ [AddressOf Operator](/dotnet/articles/visual-basic/language-reference/operators/addressof-operator)   
+ [Delegate Statement](/dotnet/articles/visual-basic/language-reference/statements/delegate-statement)   
  [NOT IN BUILD: Delegates and the AddressOf Operator](http://msdn.microsoft.com/en-us/7b2ed932-8598-4355-b2f7-5cedb23ee86f)   
- [Overload Resolution](/dotnet/visual-basic/language-reference/procedures/overload-resolution)   
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)
+ [Overload Resolution](/dotnet/articles/visual-basic/language-reference/procedures/overload-resolution)   
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)

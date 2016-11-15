@@ -46,4 +46,4 @@ An `Exit Do` statement occurs outside of a `Do` loop. `Exit Do` is valid only be
 2.  Verify that other control structures within the `Do` loop are correctly terminated.  
   
 ## See Also  
- [Do...Loop Statement](/dotnet/visual-basic/language-reference/statements/do-loop-statement)
+ [Do...Loop Statement](/dotnet/articles/visual-basic/language-reference/statements/do-loop-statement)

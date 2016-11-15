@@ -44,5 +44,5 @@ The name or identifier of every variable declared using `WithEvents` is limited 
 -   Reduce the length of the identifier.  
   
 ## See Also  
- [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
- [WithEvents](/dotnet/visual-basic/language-reference/modifiers/withevents)
+ [Declared Element Names](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
+ [WithEvents](/dotnet/articles/visual-basic/language-reference/modifiers/withevents)

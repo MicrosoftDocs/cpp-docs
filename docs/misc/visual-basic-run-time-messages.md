@@ -39,13 +39,13 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [A delimiter cannot be Nothing or an empty String](../misc/a-delimiter-cannot-be-nothing-or-an-empty-string.md)  
   
- [A double quote is not a valid comment token for delimited fields where EscapeQuote is set to True](/dotnet/visual-basic/language-reference/error-messages/a-double-quote-is-not-a-valid-comment-token-for-delimited-fields)  
+ [A double quote is not a valid comment token for delimited fields where EscapeQuote is set to True](/dotnet/articles/visual-basic/language-reference/error-messages/a-double-quote-is-not-a-valid-comment-token-for-delimited-fields)  
   
  [A log has already been created with this name on this machine](../misc/a-log-has-already-been-created-with-this-name-on-this-machine.md)  
   
- [A property or method call cannot include a reference to a private object, either as an argument or as a return value](/dotnet/visual-basic/language-reference/error-messages/a-property-or-method-call-cannot-include-a-reference-to-a-private-object)  
+ [A property or method call cannot include a reference to a private object, either as an argument or as a return value](/dotnet/articles/visual-basic/language-reference/error-messages/a-property-or-method-call-cannot-include-a-reference-to-a-private-object)  
   
- [A startup form has not been specified](/dotnet/visual-basic/language-reference/error-messages/a-startup-form-has-not-been-specified)  
+ [A startup form has not been specified](/dotnet/articles/visual-basic/language-reference/error-messages/a-startup-form-has-not-been-specified)  
   
  [Access denied to '\<name>'](../misc/access-denied-to-name.md)  
   
@@ -55,7 +55,7 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [An invalid name was specified for the event log](../misc/an-invalid-name-was-specified-for-the-event-log.md)  
   
- [An unexpected error has occurred because an operating system resource required for single instance startup cannot be acquired](/dotnet/visual-basic/language-reference/error-messages/an-unexpected-error-has-occurred)  
+ [An unexpected error has occurred because an operating system resource required for single instance startup cannot be acquired](/dotnet/articles/visual-basic/language-reference/error-messages/an-unexpected-error-has-occurred)  
   
  [Another event log has already registered a source with this name](../misc/another-event-log-has-already-registered-a-source-with-this-name.md)  
   
@@ -119,7 +119,7 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [Argument 'Life' cannot be zero](../misc/argument-life-cannot-be-zero.md)  
   
- [Argument not optional (Visual Basic)](/dotnet/visual-basic/language-reference/error-messages/argument-not-optional)  
+ [Argument not optional (Visual Basic)](/dotnet/articles/visual-basic/language-reference/error-messages/argument-not-optional)  
   
  [Argument 'NPer' must be greater than zero](../misc/argument-nper-must-be-greater-than-zero.md)  
   
@@ -135,17 +135,17 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [Array dimensions do not match those specified in the 'VBFixedArray' attribute](../misc/array-dimensions-do-not-match-those-specified-in-the-vbfixedarray-attribute.md)  
   
- [Automation error](/dotnet/visual-basic/language-reference/error-messages/automation-error)  
+ [Automation error](/dotnet/articles/visual-basic/language-reference/error-messages/automation-error)  
   
  [Automation object does not have a default value](../misc/automation-object-does-not-have-a-default-value.md)  
   
- [Bad DLL calling convention](/dotnet/visual-basic/language-reference/error-messages/bad-dll-calling-convention)  
+ [Bad DLL calling convention](/dotnet/articles/visual-basic/language-reference/error-messages/bad-dll-calling-convention)  
   
- [Bad file mode](/dotnet/visual-basic/language-reference/error-messages/bad-file-mode)  
+ [Bad file mode](/dotnet/articles/visual-basic/language-reference/error-messages/bad-file-mode)  
   
- [Bad file name or number](/dotnet/visual-basic/language-reference/error-messages/bad-file-name-or-number)  
+ [Bad file name or number](/dotnet/articles/visual-basic/language-reference/error-messages/bad-file-name-or-number)  
   
- [Bad record length](/dotnet/visual-basic/language-reference/error-messages/bad-record-length)  
+ [Bad record length](/dotnet/articles/visual-basic/language-reference/error-messages/bad-record-length)  
   
  [Bad record number](../misc/bad-record-number.md)  
   
@@ -167,7 +167,7 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [Cannot convert start value of type '\<type1>', limit value of '\<type2>' and step value of '\<type3>' to a common type](../misc/cannot-convert-start-value-of-type-type1-limit-value-of-type2-and-step-value-of-type3-to-a-common-type.md)  
   
- [Cannot create ActiveX Component](/dotnet/visual-basic/language-reference/error-messages/cannot-create-activex-component)  
+ [Cannot create ActiveX Component](/dotnet/articles/visual-basic/language-reference/error-messages/cannot-create-activex-component)  
   
  [Cannot delete a registry hive](../misc/cannot-delete-a-registry-hive.md)  
   
@@ -177,7 +177,7 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [Cannot save file to TEMP](../misc/cannot-save-file-to-temp.md)  
   
- [Can't create necessary temporary file](/dotnet/visual-basic/language-reference/error-messages/can-t-create-necessary-temporary-file)  
+ [Can't create necessary temporary file](/dotnet/articles/visual-basic/language-reference/error-messages/can-t-create-necessary-temporary-file)  
   
  [Can't perform requested operation (Visual Basic)](../misc/can-t-perform-requested-operation-visual-basic.md)  
   
@@ -187,11 +187,11 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [Class '\<classname>' does not implement the System.Collections.ICollection interface](../misc/class-classname-does-not-implement-the-system-collections-icollection-interface.md)  
   
- [Class does not support Automation or does not support expected interface](/dotnet/visual-basic/language-reference/error-messages/class-does-not-support-automation-or-does-not-support-expected-interface)  
+ [Class does not support Automation or does not support expected interface](/dotnet/articles/visual-basic/language-reference/error-messages/class-does-not-support-automation-or-does-not-support-expected-interface)  
   
  [Class not registered on local machine](../misc/class-not-registered-on-local-machine.md)  
   
- [Clipboard format is not valid](/dotnet/visual-basic/language-reference/error-messages/clipboard-format-is-not-valid)  
+ [Clipboard format is not valid](/dotnet/articles/visual-basic/language-reference/error-messages/clipboard-format-is-not-valid)  
   
  [Code resource lock error](../misc/code-resource-lock-error.md)  
   
@@ -209,11 +209,11 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [DataBits must be greater than 0](../misc/databits-must-be-greater-than-0.md)  
   
- [Device I/O error](/dotnet/visual-basic/language-reference/error-messages/device-i-o-error)  
+ [Device I/O error](/dotnet/articles/visual-basic/language-reference/error-messages/device-i-o-error)  
   
  [Device unavailable](../misc/device-unavailable.md)  
   
- ['Dir' function must first be called with a 'PathName' argument](/dotnet/visual-basic/language-reference/error-messages/dir-function-must-first-be-called-with-a-pathname-argument)  
+ ['Dir' function must first be called with a 'PathName' argument](/dotnet/articles/visual-basic/language-reference/error-messages/dir-function-must-first-be-called-with-a-pathname-argument)  
   
  [Disk full (Visual Basic)](../misc/disk-full-visual-basic.md)  
   
@@ -227,13 +227,13 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [Encoding cannot be set to Nothing](../misc/encoding-cannot-be-set-to-nothing.md)  
   
- [Error in loading DLL (Visual Basic)](/dotnet/visual-basic/language-reference/error-messages/error-in-loading-dll)  
+ [Error in loading DLL (Visual Basic)](/dotnet/articles/visual-basic/language-reference/error-messages/error-in-loading-dll)  
   
  [Error number must be within the range 0 and 65535](../misc/error-number-must-be-within-the-range-0-and-65535.md)  
   
  [Expression '\<name>' is not a procedure, but occurs as the target of a procedure call](../misc/expression-name-is-not-a-procedure-but-occurs-as-the-target-of-a-procedure-call.md)  
   
- [Expression too complex](/dotnet/visual-basic/language-reference/error-messages/expression-too-complex)  
+ [Expression too complex](/dotnet/articles/visual-basic/language-reference/error-messages/expression-too-complex)  
   
  [Feature not yet implemented](../misc/feature-not-yet-implemented.md)  
   
@@ -247,7 +247,7 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [File already exists](../misc/file-already-exists.md)  
   
- [File already open](/dotnet/visual-basic/language-reference/error-messages/file-already-open)  
+ [File already open](/dotnet/articles/visual-basic/language-reference/error-messages/file-already-open)  
   
  [File format not valid](../misc/file-format-not-valid.md)  
   
@@ -259,11 +259,11 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [File information cannot be queried while open for writing](../misc/file-information-cannot-be-queried-while-open-for-writing.md)  
   
- [File is too large to read into a byte array](/dotnet/visual-basic/language-reference/error-messages/file-is-too-large-to-read-into-a-byte-array)  
+ [File is too large to read into a byte array](/dotnet/articles/visual-basic/language-reference/error-messages/file-is-too-large-to-read-into-a-byte-array)  
   
- [File name or class name not found during Automation operation (Visual Basic)](/dotnet/visual-basic/language-reference/error-messages/file-name-or-class-name-not-found-during-automation-operation)  
+ [File name or class name not found during Automation operation (Visual Basic)](/dotnet/articles/visual-basic/language-reference/error-messages/file-name-or-class-name-not-found-during-automation-operation)  
   
- [File not found (Visual Basic Run-Time Error)](/dotnet/visual-basic/language-reference/error-messages/file-not-found-visual-basic-run-time-error)  
+ [File not found (Visual Basic Run-Time Error)](/dotnet/articles/visual-basic/language-reference/error-messages/file-not-found-visual-basic-run-time-error)  
   
  [File specified by FileName does not use the encoding specified by FileEncoding](../misc/file-specified-by-filename-does-not-use-the-encoding-specified-by-fileencoding.md)  
   
@@ -281,7 +281,7 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [Implicit reference to object under construction is not valid when calling another constructor](../misc/implicit-reference-to-object-under-construction-is-not-valid-when-calling-another-constructor.md)  
   
- [Input past end of file](/dotnet/visual-basic/language-reference/error-messages/input-past-end-of-file)  
+ [Input past end of file](/dotnet/articles/visual-basic/language-reference/error-messages/input-past-end-of-file)  
   
  [Insufficient security permissions to set the system date](../misc/insufficient-security-permissions-to-set-the-system-date.md)  
   
@@ -327,7 +327,7 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [Named arguments cannot match ParamArray parameters](../misc/named-arguments-cannot-match-paramarray-parameters.md)  
   
- [Need property array index](/dotnet/visual-basic/language-reference/error-messages/need-property-array-index)  
+ [Need property array index](/dotnet/articles/visual-basic/language-reference/error-messages/need-property-array-index)  
   
  [No accessible overloaded '\<methodname>' can be called with these arguments without a narrowing conversion](../misc/no-accessible-overloaded-methodname-can-be-called-with-these-arguments-without-a-narrowing-conversion.md)  
   
@@ -357,11 +357,11 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [Object doesn't support this property or method (Visual Basic)](../misc/object-doesn-t-support-this-property-or-method-visual-basic.md)  
   
- [Object or class does not support the set of events](/dotnet/visual-basic/language-reference/error-messages/object-or-class-does-not-support-the-set-of-events)  
+ [Object or class does not support the set of events](/dotnet/articles/visual-basic/language-reference/error-messages/object-or-class-does-not-support-the-set-of-events)  
   
- [Object required](/dotnet/visual-basic/language-reference/error-messages/object-required)  
+ [Object required](/dotnet/articles/visual-basic/language-reference/error-messages/object-required)  
   
- [Object variable or With block variable not set](/dotnet/visual-basic/language-reference/error-messages/object-variable-or-with-block-variable-not-set)  
+ [Object variable or With block variable not set](/dotnet/articles/visual-basic/language-reference/error-messages/object-variable-or-with-block-variable-not-set)  
   
  [One or more folders in the target path do not exist](../misc/one-or-more-folders-in-the-target-path-do-not-exist.md)  
   
@@ -371,29 +371,29 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [Operator is not valid for type '\<typename>'](../misc/operator-is-not-valid-for-type-typename.md)  
   
- [Ordinal is not valid](/dotnet/visual-basic/language-reference/error-messages/ordinal-is-not-valid)  
+ [Ordinal is not valid](/dotnet/articles/visual-basic/language-reference/error-messages/ordinal-is-not-valid)  
   
  [Out of memory (Visual Basic Run-Time Error)](../misc/out-of-memory-visual-basic-run-time-error.md)  
   
- [Out of stack space (Visual Basic)](/dotnet/visual-basic/language-reference/error-messages/out-of-stack-space)  
+ [Out of stack space (Visual Basic)](/dotnet/articles/visual-basic/language-reference/error-messages/out-of-stack-space)  
   
- [Out of string space (Visual Basic)](/dotnet/visual-basic/language-reference/error-messages/out-of-string-space)  
+ [Out of string space (Visual Basic)](/dotnet/articles/visual-basic/language-reference/error-messages/out-of-string-space)  
   
- [Overflow (Visual Basic Run-Time Error)](/dotnet/visual-basic/language-reference/error-messages/overflow-visual-basic-run-time-error)  
+ [Overflow (Visual Basic Run-Time Error)](/dotnet/articles/visual-basic/language-reference/error-messages/overflow-visual-basic-run-time-error)  
   
  [Path '\<pathname>' not found](../misc/path-pathname-not-found.md)  
   
- [Path not found](/dotnet/visual-basic/language-reference/error-messages/path-not-found)  
+ [Path not found](/dotnet/articles/visual-basic/language-reference/error-messages/path-not-found)  
   
- [Path/File access error](/dotnet/visual-basic/language-reference/error-messages/path-file-access-error)  
+ [Path/File access error](/dotnet/articles/visual-basic/language-reference/error-messages/path-file-access-error)  
   
- [Permission denied (Visual Basic)](/dotnet/visual-basic/language-reference/error-messages/permission-denied)  
+ [Permission denied (Visual Basic)](/dotnet/articles/visual-basic/language-reference/error-messages/permission-denied)  
   
  [Picture is not valid](../misc/picture-is-not-valid.md)  
   
  [Printer error](../misc/printer-error.md)  
   
- [Procedure call or argument is not valid (Visual Basic)](/dotnet/visual-basic/language-reference/error-messages/procedure-call-or-argument-is-not-valid)  
+ [Procedure call or argument is not valid (Visual Basic)](/dotnet/articles/visual-basic/language-reference/error-messages/procedure-call-or-argument-is-not-valid)  
   
  [Process '\<processname>' was not found](../misc/process-processname-was-not-found.md)  
   
@@ -401,13 +401,13 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [Property \<propertyname> cannot be set to Nothing](../misc/property-propertyname-cannot-be-set-to-nothing.md)  
   
- [Property array index is not valid](/dotnet/visual-basic/language-reference/error-messages/property-array-index-is-not-valid)  
+ [Property array index is not valid](/dotnet/articles/visual-basic/language-reference/error-messages/property-array-index-is-not-valid)  
   
- [Property let procedure not defined and property get procedure did not return an object](/dotnet/visual-basic/language-reference/error-messages/property-let-procedure-not-defined-and-property-get-procedure-did-not-return)  
+ [Property let procedure not defined and property get procedure did not return an object](/dotnet/articles/visual-basic/language-reference/error-messages/property-let-procedure-not-defined-and-property-get-procedure-did-not-return)  
   
- [Property not found](/dotnet/visual-basic/language-reference/error-messages/property-not-found)  
+ [Property not found](/dotnet/articles/visual-basic/language-reference/error-messages/property-not-found)  
   
- [Property or method not found](/dotnet/visual-basic/language-reference/error-messages/property-or-method-not-found)  
+ [Property or method not found](/dotnet/articles/visual-basic/language-reference/error-messages/property-or-method-not-found)  
   
  [Property value is not valid](../misc/property-value-is-not-valid.md)  
   
@@ -425,7 +425,7 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [Replacements too long](../misc/replacements-too-long.md)  
   
- [Resume without error](/dotnet/visual-basic/language-reference/error-messages/resume-without-error)  
+ [Resume without error](/dotnet/articles/visual-basic/language-reference/error-messages/resume-without-error)  
   
  [Root folder cannot be renamed](../misc/root-folder-cannot-be-renamed.md)  
   
@@ -441,7 +441,7 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [Some files and folders caused exceptions during the operation](../misc/some-files-and-folders-caused-exceptions-during-the-operation.md)  
   
- [Some subkeys cannot be deleted](/dotnet/visual-basic/language-reference/error-messages/some-subkeys-cannot-be-deleted)  
+ [Some subkeys cannot be deleted](/dotnet/articles/visual-basic/language-reference/error-messages/some-subkeys-cannot-be-deleted)  
   
  [Source folder and target folder are the same](../misc/source-folder-and-target-folder-are-the-same.md)  
   
@@ -463,9 +463,9 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [String length exceeds maximum length of 32767 characters for 'FileSystem' APIs](../misc/string-length-exceeds-maximum-length-of-32767-characters-for-filesystem-apis.md)  
   
- [Sub or Function not defined (Visual Basic)](/dotnet/visual-basic/language-reference/error-messages/sub-or-function-not-defined)  
+ [Sub or Function not defined (Visual Basic)](/dotnet/articles/visual-basic/language-reference/error-messages/sub-or-function-not-defined)  
   
- [Subscript out of range (Visual Basic)](/dotnet/visual-basic/language-reference/error-messages/subscript-out-of-range)  
+ [Subscript out of range (Visual Basic)](/dotnet/articles/visual-basic/language-reference/error-messages/subscript-out-of-range)  
   
  [System event log cannot be deleted](../misc/system-event-log-cannot-be-deleted.md)  
   
@@ -477,7 +477,7 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [TextFieldParser does not support delimiters that contain endline characters](../misc/textfieldparser-does-not-support-delimiters-that-contain-endline-characters.md)  
   
- [TextFieldParser is unable to complete the read operation because maximum buffer size has been exceeded](/dotnet/visual-basic/language-reference/error-messages/textfieldparser-is-unable-to-complete-read-operation)  
+ [TextFieldParser is unable to complete the read operation because maximum buffer size has been exceeded](/dotnet/articles/visual-basic/language-reference/error-messages/textfieldparser-is-unable-to-complete-read-operation)  
   
  [The address for UploadFile needs to include a filename](../misc/the-address-for-uploadfile-needs-to-include-a-filename.md)  
   
@@ -509,9 +509,9 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [The value of \<argumentname> must be greater than or equal to 1000](../misc/the-value-of-argumentname-must-be-greater-than-or-equal-to-1000.md)  
   
- [This array is fixed or temporarily locked (Visual Basic)](/dotnet/visual-basic/language-reference/error-messages/this-array-is-fixed-or-temporarily-locked)  
+ [This array is fixed or temporarily locked (Visual Basic)](/dotnet/articles/visual-basic/language-reference/error-messages/this-array-is-fixed-or-temporarily-locked)  
   
- [This key is already associated with an element of this collection](/dotnet/visual-basic/language-reference/error-messages/this-key-is-already-associated-with-an-element-of-this-collection)  
+ [This key is already associated with an element of this collection](/dotnet/articles/visual-basic/language-reference/error-messages/this-key-is-already-associated-with-an-element-of-this-collection)  
   
  [This operation can only be done when the File is closed](../misc/this-operation-can-only-be-done-when-the-file-is-closed.md)  
   
@@ -527,13 +527,13 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [Too many DLL application clients](../misc/too-many-dll-application-clients.md)  
   
- [Too many files](/dotnet/visual-basic/language-reference/error-messages/too-many-files)  
+ [Too many files](/dotnet/articles/visual-basic/language-reference/error-messages/too-many-files)  
   
- [Type mismatch (Visual Basic)](/dotnet/visual-basic/language-reference/error-messages/type-mismatch)  
+ [Type mismatch (Visual Basic)](/dotnet/articles/visual-basic/language-reference/error-messages/type-mismatch)  
   
  [Type of argument '\<argumentname>' is '\<typename>', which is not numeric](../misc/type-of-argument-argumentname-is-typename-which-is-not-numeric.md)  
   
- [Unable to get serial port names because of an internal system error](/dotnet/visual-basic/language-reference/error-messages/unable-to-get-serial-port-names-because-of-an-internal-system-error)  
+ [Unable to get serial port names because of an internal system error](/dotnet/articles/visual-basic/language-reference/error-messages/unable-to-get-serial-port-names-because-of-an-internal-system-error)  
   
  [Unable to obtain a stream for the log](../misc/unable-to-obtain-a-stream-for-the-log.md)  
   
@@ -559,7 +559,7 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
  [User interrupt occurred](../misc/user-interrupt-occurred.md)  
   
- [Variable uses an Automation type not supported in Visual Basic](/dotnet/visual-basic/language-reference/error-messages/variable-uses-an-automation-type-not-supported)  
+ [Variable uses an Automation type not supported in Visual Basic](/dotnet/articles/visual-basic/language-reference/error-messages/variable-uses-an-automation-type-not-supported)  
   
  [VbStrConv.Wide and VbStrConv.Narrow are not applicable to the locale specified](../misc/vbstrconv-wide-and-vbstrconv-narrow-are-not-applicable-to-the-locale-specified.md)  
   
@@ -575,4 +575,4 @@ This section contains the [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] er
   
 ## See Also  
  [NOTINBUILD How to: Get Information about Visual Basic Run-Time Errors](http://msdn.microsoft.com/en-us/22a7d0a6-b7d7-4c5d-971c-52ff0583c656)   
- [Error Messages](/dotnet/visual-basic/language-reference/error-messages/index)
+ [Error Messages](/dotnet/articles/visual-basic/language-reference/error-messages/index)

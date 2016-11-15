@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 2) CS1571
 XML comment on 'construct' has a duplicate param tag for 'parameter'  
   
- When using the [/doc](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option) compiler option, multiple comments were found for the same method parameter. Remove one of the duplicate lines.  
+ When using the [/doc](/dotnet/articles/csharp/language-reference/compiler-options/doc-compiler-option) compiler option, multiple comments were found for the same method parameter. Remove one of the duplicate lines.  
   
  The following sample generates CS1571:  
   

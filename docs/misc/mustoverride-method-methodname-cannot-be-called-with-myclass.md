@@ -44,6 +44,6 @@ translation.priority.mt:
 -   Remove the `MustOverride` modifier, or declare the method in a base class and inherit and override that class.  
   
 ## See Also  
- [MustOverride](/dotnet/visual-basic/language-reference/modifiers/mustoverride)   
- [MustInherit](/dotnet/visual-basic/language-reference/modifiers/mustinherit)   
- [NotOverridable](/dotnet/visual-basic/language-reference/modifiers/notoverridable)
+ [MustOverride](/dotnet/articles/visual-basic/language-reference/modifiers/mustoverride)   
+ [MustInherit](/dotnet/articles/visual-basic/language-reference/modifiers/mustinherit)   
+ [NotOverridable](/dotnet/articles/visual-basic/language-reference/modifiers/notoverridable)

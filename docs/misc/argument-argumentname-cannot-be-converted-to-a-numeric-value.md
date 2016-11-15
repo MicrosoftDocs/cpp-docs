@@ -39,4 +39,4 @@ A conversion attempted to convert a variable, such as a string, to a numeric val
 1.  Find a conversion that is meaningful.  
   
 ## See Also  
- [Type Conversions in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/type-conversions)
+ [Type Conversions in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/type-conversions)

@@ -49,5 +49,5 @@ The 'D' character cannot be used to indicate exponentiation.
     ```  
   
 ## See Also  
- [^ Operator](/dotnet/visual-basic/language-reference/operators/exponentiation-operator)   
- [Numeric Data Types](/dotnet/visual-basic/programming-guide/language-features/data-types/numeric-data-types)
+ [^ Operator](/dotnet/articles/visual-basic/language-reference/operators/exponentiation-operator)   
+ [Numeric Data Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/numeric-data-types)

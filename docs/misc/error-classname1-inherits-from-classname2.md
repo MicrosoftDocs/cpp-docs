@@ -46,4 +46,4 @@ A circular inheritance hierarchy has been detected. A class is designated as inh
 -   Break the circularity by removing at least one `Inherits` statement in the circular inheritance path.  
   
 ## See Also  
- [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
+ [Inheritance Basics](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

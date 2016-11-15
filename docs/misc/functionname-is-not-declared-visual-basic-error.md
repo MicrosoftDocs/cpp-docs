@@ -44,5 +44,5 @@ translation.priority.mt:
 -   Use the file I/O functions defined in `My.Computer.FileSystem`, the `System.IO` namespace, Visual Basic run-time functions, or the `Microsoft.VisualBasic.FileSystem` object.  
   
 ## See Also  
- [File Access with Visual Basic](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/file-access)   
- [My.Computer.FileSystem Object](/dotnet/visual-basic/language-reference/objects/my-computer-filesystem-object)
+ [File Access with Visual Basic](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/file-access)   
+ [My.Computer.FileSystem Object](/dotnet/articles/visual-basic/language-reference/objects/my-computer-filesystem-object)

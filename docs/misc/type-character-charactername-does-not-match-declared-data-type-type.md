@@ -44,4 +44,4 @@ A variable is declared with one data type but referred to with a type character 
 -   Change the declared data type of the variable, or change or remove the type character in the reference.  
   
 ## See Also  
- [Type Characters](/dotnet/visual-basic/programming-guide/language-features/data-types/type-characters)
+ [Type Characters](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/type-characters)

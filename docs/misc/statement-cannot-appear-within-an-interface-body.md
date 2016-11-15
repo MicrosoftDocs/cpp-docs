@@ -46,5 +46,5 @@ The declaration of an interface member includes a statement terminating the memb
 -   Remove the `End`*membername* statement from the interface definition.  
   
 ## See Also  
- [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)   
+ [Interface Statement](/dotnet/articles/visual-basic/language-reference/statements/interface-statement)   
  [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0180
 'member' cannot be both extern and abstract  
   
- The [abstract](/dotnet/csharp/language-reference/keywords/abstract) and [extern](/dotnet/csharp/language-reference/keywords/extern) keywords are mutually exclusive. The `extern` keyword means that the member is defined outside the file, and **abstract** means that the implementation is provided in a derived class. For more information, see [Methods](/dotnet/csharp/programming-guide/classes-and-structs/methods).  
+ The [abstract](/dotnet/articles/csharp/language-reference/keywords/abstract) and [extern](/dotnet/articles/csharp/language-reference/keywords/extern) keywords are mutually exclusive. The `extern` keyword means that the member is defined outside the file, and **abstract** means that the implementation is provided in a derived class. For more information, see [Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/methods).  
   
  The following sample generates CS0180:  
   

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0069
 An event in an interface cannot have add or remove accessors  
   
- You cannot define an event's accessor functions in an [interface](/dotnet/csharp/language-reference/keywords/interface). For more information, see [Events](/dotnet/csharp/programming-guide/events/index) and [Interfaces](/dotnet/csharp/programming-guide/interfaces/index).  
+ You cannot define an event's accessor functions in an [interface](/dotnet/articles/csharp/language-reference/keywords/interface). For more information, see [Events](/dotnet/articles/csharp/programming-guide/events/index) and [Interfaces](/dotnet/articles/csharp/programming-guide/interfaces/index).  
   
  The following sample generates CS0069:  
   

@@ -44,6 +44,6 @@ The `Set` procedure writes the value of a property. `ReadOnly` properties cannot
 -   Remove the `ReadOnly` keyword from the `Property` statement, or remove the `Set` procedure from the property body.  
   
 ## See Also  
- [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
- [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement)   
- [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)
+ [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement)   
+ [Set Statement](/dotnet/articles/visual-basic/language-reference/statements/set-statement)   
+ [ReadOnly](/dotnet/articles/visual-basic/language-reference/modifiers/readonly)

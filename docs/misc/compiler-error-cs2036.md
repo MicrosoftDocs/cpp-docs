@@ -63,5 +63,5 @@ class Test
 ```  
   
 ## See Also  
- [/pdb (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/pdb-compiler-option)   
- [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)
+ [/pdb (C# Compiler Options)](/dotnet/articles/csharp/language-reference/compiler-options/pdb-compiler-option)   
+ [/debug (C# Compiler Options)](/dotnet/articles/csharp/language-reference/compiler-options/debug-compiler-option)

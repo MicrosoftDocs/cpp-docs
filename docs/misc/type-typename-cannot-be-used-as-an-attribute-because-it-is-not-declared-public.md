@@ -44,4 +44,4 @@ Attributes must be public.
 1.  Add the `Public` modifier to the attribute class.  
   
 ## See Also  
- [Public](/dotnet/visual-basic/language-reference/modifiers/public)
+ [Public](/dotnet/articles/visual-basic/language-reference/modifiers/public)

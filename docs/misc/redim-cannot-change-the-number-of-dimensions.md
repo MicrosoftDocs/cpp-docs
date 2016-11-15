@@ -41,5 +41,5 @@ An operation attempts to use the `ReDim` statement to change the rank (number of
 ## See Also  
  [NOTINBUILD Overview of Arrays in Visual Basic](http://msdn.microsoft.com/en-us/ca50e2f2-b4d2-4c57-9169-9abbcc3392d8)   
  [NOTINBUILD Multidimensional Arrays in Visual Basic](http://msdn.microsoft.com/en-us/d92cad25-07e2-4d79-8ea4-ab269700f5de)   
- [ReDim Statement](/dotnet/visual-basic/language-reference/statements/redim-statement)   
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)
+ [ReDim Statement](/dotnet/articles/visual-basic/language-reference/statements/redim-statement)   
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)

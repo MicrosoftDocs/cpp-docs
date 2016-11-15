@@ -66,4 +66,4 @@ class Test
 ```  
   
 ## See Also  
- [LINQ Query Expressions](/dotnet/csharp/programming-guide/linq-query-expressions/index)
+ [LINQ Query Expressions](/dotnet/articles/csharp/programming-guide/linq-query-expressions/index)

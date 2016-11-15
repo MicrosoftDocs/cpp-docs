@@ -42,5 +42,5 @@ The value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFil
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFileSize%2A>   
- [My.Application.Log Object](/dotnet/visual-basic/language-reference/objects/my-application-log-object)   
- [My.Log Object](/dotnet/visual-basic/language-reference/objects/my-log-object)
+ [My.Application.Log Object](/dotnet/articles/visual-basic/language-reference/objects/my-application-log-object)   
+ [My.Log Object](/dotnet/articles/visual-basic/language-reference/objects/my-log-object)

@@ -40,8 +40,8 @@ translation.priority.mt:
 1.  
   
 ## See Also  
- [Friend](/dotnet/visual-basic/language-reference/modifiers/friend)   
- [Protected](/dotnet/visual-basic/language-reference/modifiers/protected)   
- [Access Levels in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/access-levels)   
- [Procedures](/dotnet/visual-basic/language-reference/procedures/index)   
+ [Friend](/dotnet/articles/visual-basic/language-reference/modifiers/friend)   
+ [Protected](/dotnet/articles/visual-basic/language-reference/modifiers/protected)   
+ [Access Levels in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/access-levels)   
+ [Procedures](/dotnet/articles/visual-basic/language-reference/procedures/index)   
  [NOT IN BUILD: Understanding Classes](http://msdn.microsoft.com/en-us/cc2355a2-cb98-4353-9440-736585aec46c)

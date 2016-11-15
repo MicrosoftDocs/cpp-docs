@@ -62,4 +62,4 @@ class CMain
 ```  
   
 ## See Also  
- [/langversion (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option)
+ [/langversion (C# Compiler Options)](/dotnet/articles/csharp/language-reference/compiler-options/langversion-compiler-option)

@@ -44,4 +44,4 @@ The `Nothing` keyword was used in the debug window.
 -   Do not use `Nothing` while debugging.  
   
 ## See Also  
- [Nothing](/dotnet/visual-basic/language-reference/nothing)
+ [Nothing](/dotnet/articles/visual-basic/language-reference/nothing)

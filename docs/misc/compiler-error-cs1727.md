@@ -54,4 +54,4 @@ class Test
 ```  
   
 ## See Also  
- [/errorreport (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)
+ [/errorreport (C# Compiler Options)](/dotnet/articles/csharp/language-reference/compiler-options/errorreport-compiler-option)

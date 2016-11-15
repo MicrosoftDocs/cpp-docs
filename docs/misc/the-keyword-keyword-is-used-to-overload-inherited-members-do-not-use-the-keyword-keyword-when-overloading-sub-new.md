@@ -46,5 +46,5 @@ A constructor is declared with the `Overloads` keyword.
 -   Remove the `Overloads` keyword from all constructor declarations.  
   
 ## See Also  
- [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads)   
+ [Overloads](/dotnet/articles/visual-basic/language-reference/modifiers/overloads)   
  [NOT IN BUILD: Using Constructors and Destructors](http://msdn.microsoft.com/en-us/548eebe1-86c4-4377-b2f5-447cb8be3d90)

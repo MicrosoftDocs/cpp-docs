@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS1036
 ( or . expected  
   
- The XML in a [doc](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option) comment was badly formed.
+ The XML in a [doc](/dotnet/articles/csharp/language-reference/compiler-options/doc-compiler-option) comment was badly formed.

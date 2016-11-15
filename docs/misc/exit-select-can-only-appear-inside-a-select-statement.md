@@ -46,4 +46,4 @@ An `Exit Select` statement occurs outside a `Select` block. `Exit Select` is val
 2.  Verify that other control structures within the `Select` block are correctly terminated.  
   
 ## See Also  
- [Select...Case Statement](/dotnet/visual-basic/language-reference/statements/select-case-statement)
+ [Select...Case Statement](/dotnet/articles/visual-basic/language-reference/statements/select-case-statement)

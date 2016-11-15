@@ -91,4 +91,4 @@ class Program
 ```  
   
 ## See Also  
- [Object and Collection Initializers](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)
+ [Object and Collection Initializers](/dotnet/articles/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)

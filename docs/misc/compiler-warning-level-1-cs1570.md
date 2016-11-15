@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS1570
 XML comment on 'construct' has badly formed XML — 'reason'  
   
- When using [/doc](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option), any comments in the source code must be in XML. Any error with your XML markup will generate CS1570. For example:  
+ When using [/doc](/dotnet/articles/csharp/language-reference/compiler-options/doc-compiler-option), any comments in the source code must be in XML. Any error with your XML markup will generate CS1570. For example:  
   
 -   If you are passing a string to a **cref**, such as in an [\<exception>](../Topic/%3Cexception%3E%20\(C%23%20Programming%20Guide\).md) tag, the string must be enclosed in double quotation marks.  
   

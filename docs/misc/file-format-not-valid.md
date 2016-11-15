@@ -41,4 +41,4 @@ Either you tried to load a file into a component, but the format of the data in 
 2.  Consult the documentation for the component to determine whether it provides support for converting from one format to another.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

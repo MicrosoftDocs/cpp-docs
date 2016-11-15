@@ -50,6 +50,6 @@ A generic type is invoked with a `MustInherit` class as a type argument, while t
 3.  If the corresponding type parameter does not need to create any objects from the type passed to it, then remove the `New` constraint from its declaration.  
   
 ## See Also  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator)   
- [MustInherit](/dotnet/visual-basic/language-reference/modifiers/mustinherit)
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [New Operator](/dotnet/articles/visual-basic/language-reference/operators/new-operator)   
+ [MustInherit](/dotnet/articles/visual-basic/language-reference/modifiers/mustinherit)

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0245
 Destructors and object.Finalize cannot be called directly. Consider calling IDisposable.Dispose if available.  
   
- For more information, see [Programming Essentials for Garbage Collection](../Topic/Garbage%20Collection.md) and [Destructors](/dotnet/csharp/programming-guide/classes-and-structs/destructors).  
+ For more information, see [Programming Essentials for Garbage Collection](../Topic/Garbage%20Collection.md) and [Destructors](/dotnet/articles/csharp/programming-guide/classes-and-structs/destructors).  
   
  The following sample generates CS0245:  
   

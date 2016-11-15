@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1528
 Expected ; or = (cannot specify constructor arguments in declaration)  
   
- A reference to a class was formed as if an object to the class was being created. For example, there was an attempt to pass a variable to a constructor. Use the [new](/dotnet/csharp/language-reference/keywords/new) operator to create an object of a class.  
+ A reference to a class was formed as if an object to the class was being created. For example, there was an attempt to pass a variable to a constructor. Use the [new](/dotnet/articles/csharp/language-reference/keywords/new) operator to create an object of a class.  
   
  The following sample generates CS1528:  
   

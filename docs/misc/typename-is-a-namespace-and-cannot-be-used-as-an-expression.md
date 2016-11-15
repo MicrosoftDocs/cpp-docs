@@ -44,4 +44,4 @@ A type name occurs where an expression is required. An expression must consist o
 -   Remove the type name and construct the expression using valid elements.  
   
 ## See Also  
- [Operators and Expressions](/dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/index)
+ [Operators and Expressions](/dotnet/articles/visual-basic/programming-guide/language-features/operators-and-expressions/index)

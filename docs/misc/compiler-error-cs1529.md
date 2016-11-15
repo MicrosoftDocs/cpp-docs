@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1529
 A using clause must precede all other elements defined in the namespace except extern alias declarations  
   
- A [using](/dotnet/csharp/language-reference/keywords/using) clause must appear first in a namespace.  
+ A [using](/dotnet/articles/csharp/language-reference/keywords/using) clause must appear first in a namespace.  
   
 ## Example  
  The following sample generates CS1529:  

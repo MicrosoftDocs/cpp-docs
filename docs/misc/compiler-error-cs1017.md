@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1017
 Catch clauses cannot follow the general catch clause of a try statement  
   
- A `catch` block that does not take any parameters must be the last in a series of `catch` blocks. For more information on exceptions, see [Exception Handling Statements](/dotnet/csharp/language-reference/keywords/exception-handling-statements).  
+ A `catch` block that does not take any parameters must be the last in a series of `catch` blocks. For more information on exceptions, see [Exception Handling Statements](/dotnet/articles/csharp/language-reference/keywords/exception-handling-statements).  
   
 ## Example  
  The following sample generates CS1017:  

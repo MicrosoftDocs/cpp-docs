@@ -46,4 +46,4 @@ A name was encountered that conflicts with a type with the same name.
 2.  Use square brackets around the conflicting member name.  
   
 ## See Also  
- [Program Structure and Code Conventions](/dotnet/visual-basic/programming-guide/program-structure/program-structure-and-code-conventions)
+ [Program Structure and Code Conventions](/dotnet/articles/visual-basic/programming-guide/program-structure/program-structure-and-code-conventions)

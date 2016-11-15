@@ -44,6 +44,6 @@ The `Erase` and `ReDim` statements require array data types. The type supplied i
 -   Change the data type to an array type.  
   
 ## See Also  
- [Erase Statement](/dotnet/visual-basic/language-reference/statements/erase-statement)   
- [ReDim Statement](/dotnet/visual-basic/language-reference/statements/redim-statement)   
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)
+ [Erase Statement](/dotnet/articles/visual-basic/language-reference/statements/erase-statement)   
+ [ReDim Statement](/dotnet/articles/visual-basic/language-reference/statements/redim-statement)   
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)

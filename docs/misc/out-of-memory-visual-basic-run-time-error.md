@@ -47,4 +47,4 @@ More memory was required than is available.
 5.  Reduce the number of public variables.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

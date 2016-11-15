@@ -46,5 +46,5 @@ If an event is declared as `Custom`, it must supply a procedure for adding an ev
 2.  Verify that other procedures within the event declaration end correctly.  
   
 ## See Also  
- [AddHandler Statement](/dotnet/visual-basic/language-reference/statements/addhandler-statement)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [AddHandler Statement](/dotnet/articles/visual-basic/language-reference/statements/addhandler-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

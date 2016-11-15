@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0664
 Literal of type double cannot be implicitly converted to type 'type'; use an 'suffix' suffix to create a literal of this type  
   
- An assignment could not be completed; use a suffix to correct the instruction. The documentation for each type identifies the corresponding suffix for the type. For more information on conversions, see [Casting and Type Conversions](/dotnet/csharp/programming-guide/types/casting-and-type-conversions).  
+ An assignment could not be completed; use a suffix to correct the instruction. The documentation for each type identifies the corresponding suffix for the type. For more information on conversions, see [Casting and Type Conversions](/dotnet/articles/csharp/programming-guide/types/casting-and-type-conversions).  
   
  The following sample generates CS0664:  
   

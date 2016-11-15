@@ -53,6 +53,6 @@ translation.priority.mt:
   
 ## See Also  
  [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213)   
- [Shadowing in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/shadowing)   
- [Overrides](/dotnet/visual-basic/language-reference/modifiers/overrides)   
- [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)
+ [Shadowing in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/shadowing)   
+ [Overrides](/dotnet/articles/visual-basic/language-reference/modifiers/overrides)   
+ [Shadows](/dotnet/articles/visual-basic/language-reference/modifiers/shadows)

@@ -39,7 +39,7 @@ Variable '\<variablename>' is passed by reference before it has been assigned a 
   
  A procedure call passes a structure variable as an argument to a `ByRef` parameter before any value is assigned to the variable.  
   
- If a structure variable has never been assigned a value, each structure member holds the default value for its data type. For a reference data type, that default value is [Nothing](/dotnet/visual-basic/language-reference/nothing). Reading a reference member that has a value of `Nothing` can cause a <xref:System.NullReferenceException> in some circumstances.  
+ If a structure variable has never been assigned a value, each structure member holds the default value for its data type. For a reference data type, that default value is [Nothing](/dotnet/articles/visual-basic/language-reference/nothing). Reading a reference member that has a value of `Nothing` can cause a <xref:System.NullReferenceException> in some circumstances.  
   
  Passing an argument to a procedure `ByRef` exposes the variable underlying the argument to possible modification by the procedure.  
   
@@ -53,14 +53,14 @@ Variable '\<variablename>' is passed by reference before it has been assigned a 
   
 -   If the logic in the procedure reads a structure member before assigning any value to it, and if the member is of a value type, then make sure that the procedure logic does not depend on whether the member holds its default value or not.  
   
--   If the logic in the procedure reads a structure member before assigning any value to it, and if the member is of a reference type, then make sure that the procedure logic can handle a value of `Nothing`. For example, it could use a [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement) to catch a <xref:System.NullReferenceException>.  
+-   If the logic in the procedure reads a structure member before assigning any value to it, and if the member is of a reference type, then make sure that the procedure logic can handle a value of `Nothing`. For example, it could use a [Try...Catch...Finally Statement](/dotnet/articles/visual-basic/language-reference/statements/try-catch-finally-statement) to catch a <xref:System.NullReferenceException>.  
   
 ## See Also  
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
- [Value Types and Reference Types](/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)   
- [Passing Arguments by Value and by Reference](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)   
- [ByRef](/dotnet/visual-basic/language-reference/modifiers/byref)   
- [Variable Declaration](/dotnet/visual-basic/programming-guide/language-features/variables/variable-declaration)   
- [Structures](/dotnet/visual-basic/programming-guide/language-features/data-types/structures)   
- [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)   
- [Troubleshooting Variables](/dotnet/visual-basic/programming-guide/language-features/variables/troubleshooting-variables)
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)   
+ [Value Types and Reference Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)   
+ [Passing Arguments by Value and by Reference](/dotnet/articles/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)   
+ [ByRef](/dotnet/articles/visual-basic/language-reference/modifiers/byref)   
+ [Variable Declaration](/dotnet/articles/visual-basic/programming-guide/language-features/variables/variable-declaration)   
+ [Structures](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures)   
+ [Structure Statement](/dotnet/articles/visual-basic/language-reference/statements/structure-statement)   
+ [Troubleshooting Variables](/dotnet/articles/visual-basic/programming-guide/language-features/variables/troubleshooting-variables)

@@ -44,5 +44,5 @@ You have supplied a named argument (specified with the argument's declared name 
 -   Pass the argument by position, rather than by name.  
   
 ## See Also  
- [ParamArray](/dotnet/visual-basic/language-reference/modifiers/paramarray)   
- [Passing Arguments by Position and by Name](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name)
+ [ParamArray](/dotnet/articles/visual-basic/language-reference/modifiers/paramarray)   
+ [Passing Arguments by Position and by Name](/dotnet/articles/visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name)

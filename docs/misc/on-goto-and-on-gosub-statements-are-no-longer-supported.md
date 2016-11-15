@@ -44,6 +44,6 @@ It is no longer valid to use the value of a variable or expression with the `GoT
 -   Restructure your application to use `If...Then...Else` or `Case` statements.  
   
 ## See Also  
- [On Error Statement](/dotnet/visual-basic/language-reference/statements/on-error-statement)   
- [If...Then...Else Statement](/dotnet/visual-basic/language-reference/statements/if-then-else-statement)   
+ [On Error Statement](/dotnet/articles/visual-basic/language-reference/statements/on-error-statement)   
+ [If...Then...Else Statement](/dotnet/articles/visual-basic/language-reference/statements/if-then-else-statement)   
  [Case (Visual Basic)](http://msdn.microsoft.com/en-us/a14efce6-5057-4b7d-8afd-056dd4abdcee)

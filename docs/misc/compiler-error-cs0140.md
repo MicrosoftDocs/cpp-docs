@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0140
 The label 'label' is a duplicate  
   
- A label with the same name appeared twice. For more information, see [goto](/dotnet/csharp/language-reference/keywords/goto).  
+ A label with the same name appeared twice. For more information, see [goto](/dotnet/articles/csharp/language-reference/keywords/goto).  
   
  The following sample generates CS0140:  
   

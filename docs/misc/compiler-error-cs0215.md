@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0215
 The return type of operator True or False must be bool  
   
- User-defined [true](/dotnet/csharp/language-reference/keywords/true) and [false](/dotnet/csharp/language-reference/keywords/false) operators must have a return type of [bool](/dotnet/csharp/language-reference/keywords/bool). For more information, see [Overloadable Operators](/dotnet/csharp/programming-guide/statements-expressions-operators/overloadable-operators).  
+ User-defined [true](/dotnet/articles/csharp/language-reference/keywords/true) and [false](/dotnet/articles/csharp/language-reference/keywords/false) operators must have a return type of [bool](/dotnet/articles/csharp/language-reference/keywords/bool). For more information, see [Overloadable Operators](/dotnet/articles/csharp/programming-guide/statements-expressions-operators/overloadable-operators).  
   
  The following sample generates CS0215:  
   

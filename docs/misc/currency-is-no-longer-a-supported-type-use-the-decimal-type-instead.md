@@ -44,5 +44,5 @@ The `Currency` data type has been replaced by the `Decimal` data type.
 -   Use the `Decimal` data type instead of `Currency`.  
   
 ## See Also  
- [Decimal Data Type](/dotnet/visual-basic/language-reference/data-types/decimal-data-type)   
+ [Decimal Data Type](/dotnet/articles/visual-basic/language-reference/data-types/decimal-data-type)   
  [Data Type Changes in Visual Basic](http://msdn.microsoft.com/en-us/0aca9f54-7231-49a5-ab26-a68ca79d08f3)

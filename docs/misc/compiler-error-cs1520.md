@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1520
 Method must have a return type  
   
- A method that is declared in a class, struct, or interface must have an explicit return type. In the following example, the Square method has a return value of [string](/dotnet/csharp/language-reference/keywords/string):  
+ A method that is declared in a class, struct, or interface must have an explicit return type. In the following example, the Square method has a return value of [string](/dotnet/articles/csharp/language-reference/keywords/string):  
   
 ```  
 class Test  
@@ -86,5 +86,5 @@ public class Class1
 ```  
   
 ## See Also  
- [Methods](/dotnet/csharp/programming-guide/classes-and-structs/methods)   
- [Constructors](/dotnet/csharp/programming-guide/classes-and-structs/constructors)
+ [Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/methods)   
+ [Constructors](/dotnet/articles/csharp/programming-guide/classes-and-structs/constructors)

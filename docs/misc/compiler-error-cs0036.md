@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0036
 An out parameter cannot have the '[In]' attribute  
   
- Currently, the **In** attribute is not permitted on an [out](/dotnet/csharp/language-reference/keywords/out) parameter.  
+ Currently, the **In** attribute is not permitted on an [out](/dotnet/articles/csharp/language-reference/keywords/out) parameter.  
   
  The following sample generates CS0036:  
   

@@ -39,5 +39,5 @@ A conversion attempted to change a variable to type `Date`, but the value is not
 -   Find a conversion that is meaningful.  
   
 ## See Also  
- [Type Conversions in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/type-conversions)   
- [Date Data Type](/dotnet/visual-basic/language-reference/data-types/date-data-type)
+ [Type Conversions in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/type-conversions)   
+ [Date Data Type](/dotnet/articles/visual-basic/language-reference/data-types/date-data-type)

@@ -52,5 +52,5 @@ A type argument supplied to a generic type does not satisfy the inheritance or i
 -   Select a type argument of a type that implements every interface specified for the type parameter, and that inherits from the specified class if there is one.  
   
 ## See Also  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
  [How to: Use a Generic Class](../Topic/How%20to:%20Use%20a%20Generic%20Class%20\(Visual%20Basic\).md)

@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS0076
 The enumerator name 'value__' is reserved and cannot be used  
   
- An item in an [enumeration](/dotnet/csharp/language-reference/keywords/enum) cannot have an identifier called **value__**.
+ An item in an [enumeration](/dotnet/articles/csharp/language-reference/keywords/enum) cannot have an identifier called **value__**.

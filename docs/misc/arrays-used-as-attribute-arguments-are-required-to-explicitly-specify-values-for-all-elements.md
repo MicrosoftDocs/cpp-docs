@@ -44,5 +44,5 @@ An array used as an attribute argument has an element with an unspecified value.
 -   Specify all element values.  
   
 ## See Also  
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)   
- [Troubleshooting Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays)
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)   
+ [Troubleshooting Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays)

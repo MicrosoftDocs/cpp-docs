@@ -44,4 +44,4 @@ The compiler maximum of 100 errors has been reached.
 -   Decrease the number of generated errors by debugging and addressing each in turn.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

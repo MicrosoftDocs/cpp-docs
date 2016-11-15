@@ -44,7 +44,7 @@ Properties and methods are `NotOverridable` by default. The `NotOverridable` mod
 -   Remove the `NotOverridable` modifier from properties and methods that do not override another member.  
   
 ## See Also  
- [Overrides](/dotnet/visual-basic/language-reference/modifiers/overrides)   
- [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads)   
- [NotOverridable](/dotnet/visual-basic/language-reference/modifiers/notoverridable)   
- [Overridable](/dotnet/visual-basic/language-reference/modifiers/overridable)
+ [Overrides](/dotnet/articles/visual-basic/language-reference/modifiers/overrides)   
+ [Overloads](/dotnet/articles/visual-basic/language-reference/modifiers/overloads)   
+ [NotOverridable](/dotnet/articles/visual-basic/language-reference/modifiers/notoverridable)   
+ [Overridable](/dotnet/articles/visual-basic/language-reference/modifiers/overridable)

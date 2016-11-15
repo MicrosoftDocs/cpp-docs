@@ -44,5 +44,5 @@ The only valid types you can use in enumerations are `SByte`, `Byte`, `Short`, `
 -   Specify a data type of `SByte`, `Byte`, `Short`, `UShort`, `Integer`, `UInteger`, `Long`, or `ULong`.  
   
 ## See Also  
- [Data Types](/dotnet/visual-basic/language-reference/data-types/data-type-summary)   
- [Enum Statement](/dotnet/visual-basic/language-reference/statements/enum-statement)
+ [Data Types](/dotnet/articles/visual-basic/language-reference/data-types/data-type-summary)   
+ [Enum Statement](/dotnet/articles/visual-basic/language-reference/statements/enum-statement)

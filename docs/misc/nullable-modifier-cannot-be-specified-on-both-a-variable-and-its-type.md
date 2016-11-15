@@ -44,4 +44,4 @@ The nullable type modifier (?) has been included for both a declared variable an
 1.  Remove the nullable type modifier (?) from either the variable or its declared type.  
   
 ## See Also  
- [Nullable Value Types](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)
+ [Nullable Value Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

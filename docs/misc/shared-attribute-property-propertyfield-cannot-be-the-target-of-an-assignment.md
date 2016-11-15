@@ -46,5 +46,5 @@ An attempt was made to assign a value to a `ReadOnly` or `Shared` property in an
 2.  If using properties you developed, remove the `ReadOnly` or `Shared` modifiers from the attribute property.  
   
 ## See Also  
- [Shared](/dotnet/visual-basic/language-reference/modifiers/shared)   
+ [Shared](/dotnet/articles/visual-basic/language-reference/modifiers/shared)   
  [NOT IN BUILD: Attributes in Visual Basic](http://msdn.microsoft.com/en-us/620bfc0e-4582-4c8b-8432-ebc5c3dccc22)

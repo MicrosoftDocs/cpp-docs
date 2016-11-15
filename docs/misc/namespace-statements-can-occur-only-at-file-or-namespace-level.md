@@ -44,5 +44,5 @@ translation.priority.mt:
 -   Move the `Namespace` statement to the top of your namespace declaration or source file.  
   
 ## See Also  
- [Namespace Statement](/dotnet/visual-basic/language-reference/statements/namespace-statement)   
- [Namespaces in Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces)
+ [Namespace Statement](/dotnet/articles/visual-basic/language-reference/statements/namespace-statement)   
+ [Namespaces in Visual Basic](/dotnet/articles/visual-basic/programming-guide/program-structure/namespaces)

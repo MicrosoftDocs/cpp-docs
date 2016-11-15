@@ -48,5 +48,5 @@ An `ElseIf` statement occurs without a corresponding `If` statement. `ElseIf` mu
 3.  Ensure that this `If` block is correctly formatted.  
   
 ## See Also  
- [If...Then...Else Statement](/dotnet/visual-basic/language-reference/statements/if-then-else-statement)   
- [Decision Structures](/dotnet/visual-basic/programming-guide/language-features/control-flow/decision-structures)
+ [If...Then...Else Statement](/dotnet/articles/visual-basic/language-reference/statements/if-then-else-statement)   
+ [Decision Structures](/dotnet/articles/visual-basic/programming-guide/language-features/control-flow/decision-structures)

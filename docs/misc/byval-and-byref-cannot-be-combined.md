@@ -44,5 +44,5 @@ The `ByVal` and `ByRef` keywords are mutually exclusive.
 -   Specify either `ByVal` or `ByRef`, but not both.  
   
 ## See Also  
- [ByVal](/dotnet/visual-basic/language-reference/modifiers/byval)   
- [ByRef](/dotnet/visual-basic/language-reference/modifiers/byref)
+ [ByVal](/dotnet/articles/visual-basic/language-reference/modifiers/byval)   
+ [ByRef](/dotnet/articles/visual-basic/language-reference/modifiers/byref)

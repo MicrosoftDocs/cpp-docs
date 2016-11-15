@@ -66,5 +66,5 @@ public class Test
 ```  
   
 ## See Also  
- [Constraints on Type Parameters](/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters)   
- [Boxing and Unboxing](/dotnet/csharp/programming-guide/types/boxing-and-unboxing)
+ [Constraints on Type Parameters](/dotnet/articles/csharp/programming-guide/generics/constraints-on-type-parameters)   
+ [Boxing and Unboxing](/dotnet/articles/csharp/programming-guide/types/boxing-and-unboxing)

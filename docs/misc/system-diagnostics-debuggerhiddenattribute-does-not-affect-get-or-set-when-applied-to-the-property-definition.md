@@ -53,7 +53,7 @@ System.Diagnostics.DebuggerHiddenAttribute does not affect 'Get' or 'Set' when a
   
 ## See Also  
  <xref:System.Diagnostics.DebuggerHiddenAttribute>   
- [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)   
- [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
- [Get Statement](/dotnet/visual-basic/language-reference/statements/get-statement)   
- [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement)
+ [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)   
+ [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement)   
+ [Get Statement](/dotnet/articles/visual-basic/language-reference/statements/get-statement)   
+ [Set Statement](/dotnet/articles/visual-basic/language-reference/statements/set-statement)

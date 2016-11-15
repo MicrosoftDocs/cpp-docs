@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0535
 'class' does not implement interface member 'member'  
   
- A [class](/dotnet/csharp/language-reference/keywords/class) derived from an [interface](/dotnet/csharp/language-reference/keywords/interface), but the class did not implement one or more of the interface's members. A class must implement all members of interfaces from which it derives or else be declared `abstract`.  
+ A [class](/dotnet/articles/csharp/language-reference/keywords/class) derived from an [interface](/dotnet/articles/csharp/language-reference/keywords/interface), but the class did not implement one or more of the interface's members. A class must implement all members of interfaces from which it derives or else be declared `abstract`.  
   
 ## Example  
  The following sample generates CS0535.  

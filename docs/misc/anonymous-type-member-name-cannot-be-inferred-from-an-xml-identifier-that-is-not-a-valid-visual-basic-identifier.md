@@ -42,8 +42,8 @@ translation.priority.mt:
 1.  
   
 ## See Also  
- [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
- [Anonymous Types](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types)   
- [Local Type Inference](/dotnet/visual-basic/programming-guide/language-features/variables/local-type-inference)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)   
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)
+ [Declared Element Names](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
+ [Anonymous Types](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types)   
+ [Local Type Inference](/dotnet/articles/visual-basic/programming-guide/language-features/variables/local-type-inference)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)   
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)

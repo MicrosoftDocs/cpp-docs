@@ -38,5 +38,5 @@ You attempted an operation that references a source folder that does not exist. 
   
 ## See Also  
  [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
- [Reading from Files](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files)   
- [Creating, Deleting, and Moving Files and Directories](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories)
+ [Reading from Files](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files)   
+ [Creating, Deleting, and Moving Files and Directories](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories)

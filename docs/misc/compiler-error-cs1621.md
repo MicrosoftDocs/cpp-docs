@@ -73,6 +73,6 @@ class C : IEnumerable
   
 ## See Also  
  [Iterators](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md)   
- [yield](/dotnet/csharp/language-reference/keywords/yield)   
- [Lambda Expressions](/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions)   
- [Anonymous Methods](/dotnet/csharp/programming-guide/statements-expressions-operators/anonymous-methods)
+ [yield](/dotnet/articles/csharp/language-reference/keywords/yield)   
+ [Lambda Expressions](/dotnet/articles/csharp/programming-guide/statements-expressions-operators/lambda-expressions)   
+ [Anonymous Methods](/dotnet/articles/csharp/programming-guide/statements-expressions-operators/anonymous-methods)

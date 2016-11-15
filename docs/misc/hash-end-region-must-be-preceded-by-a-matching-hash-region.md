@@ -44,4 +44,4 @@ With `#Region` you can specify a block of code to expand or collapse when using 
 -   Insert `#Region` at the appropriate place before the corresponding `#End``Region` statement.  
   
 ## See Also  
- [#Region Directive](/dotnet/visual-basic/language-reference/directives/region-directive)
+ [#Region Directive](/dotnet/articles/visual-basic/language-reference/directives/region-directive)

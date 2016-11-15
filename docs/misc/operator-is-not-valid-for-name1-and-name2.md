@@ -39,4 +39,4 @@ An operator is not appropriate for the types being operated on.
 1.  Ensure that the operator is appropriate for the types being operated on.  
   
 ## See Also  
- [Operators](/dotnet/visual-basic/language-reference/operators/index)
+ [Operators](/dotnet/articles/visual-basic/language-reference/operators/index)

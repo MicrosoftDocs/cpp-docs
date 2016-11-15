@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS2024
 Invalid file section alignment number '#'  
   
- An invalid value was passed to the [/filealign](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option) compiler option.  
+ An invalid value was passed to the [/filealign](/dotnet/articles/csharp/language-reference/compiler-options/filealign-compiler-option) compiler option.  
   
  The following sample generates CS2024:  
   

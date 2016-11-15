@@ -47,7 +47,7 @@ Cannot convert 'type1' to 'type2'. You can use the 'Value' property to get the s
   
 ## See Also  
  <xref:System.Convert>   
- [Accessing XML in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/xml/accessing-xml)   
- [Type Conversion Functions](/dotnet/visual-basic/language-reference/functions/type-conversion-functions)   
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [Accessing XML in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/xml/accessing-xml)   
+ [Type Conversion Functions](/dotnet/articles/visual-basic/language-reference/functions/type-conversion-functions)   
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

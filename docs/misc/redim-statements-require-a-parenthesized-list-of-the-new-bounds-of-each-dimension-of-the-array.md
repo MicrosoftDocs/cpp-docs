@@ -48,4 +48,4 @@ You must specify the new size of an array as part of a `ReDim` statement.
     ```  
   
 ## See Also  
- [ReDim Statement](/dotnet/visual-basic/language-reference/statements/redim-statement)
+ [ReDim Statement](/dotnet/articles/visual-basic/language-reference/statements/redim-statement)

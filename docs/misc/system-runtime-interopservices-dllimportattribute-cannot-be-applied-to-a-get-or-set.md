@@ -45,4 +45,4 @@ The `DllImportAttribute` attribute was applied to a `Get` or `Set` property proc
   
 ## See Also  
  <xref:System.Runtime.InteropServices.DllImportAttribute>   
- [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)
+ [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)

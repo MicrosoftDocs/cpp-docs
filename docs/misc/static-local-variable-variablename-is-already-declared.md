@@ -46,4 +46,4 @@ Another static local variable with the same name has already been declared.
 2.  Give each static local variable a unique name.  
   
 ## See Also  
- [Static](/dotnet/visual-basic/language-reference/modifiers/static)
+ [Static](/dotnet/articles/visual-basic/language-reference/modifiers/static)

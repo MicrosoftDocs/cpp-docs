@@ -43,7 +43,7 @@ An <xref:System.ArrayTypeMismatchException> exception is thrown when the system 
  **Make sure the object type is convertible to the array type.**  
  A conversion must be possible between the two types.  
   
- For more information, Visual Basic users can see [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index).  
+ For more information, Visual Basic users can see [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index).  
   
 ## See Also  
  <xref:System.ArrayTypeMismatchException>   

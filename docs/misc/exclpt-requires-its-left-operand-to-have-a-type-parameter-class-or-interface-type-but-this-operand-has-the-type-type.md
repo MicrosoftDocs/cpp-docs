@@ -44,4 +44,4 @@ Dictionary member access, which uses an exclamation point (`!`) instead of a per
 -   Replace the expression on the left of the exclamation point with one that evaluates to a defined class or interface type.  
   
 ## See Also  
- [Special Characters in Code](/dotnet/visual-basic/programming-guide/program-structure/special-characters-in-code)
+ [Special Characters in Code](/dotnet/articles/visual-basic/programming-guide/program-structure/special-characters-in-code)

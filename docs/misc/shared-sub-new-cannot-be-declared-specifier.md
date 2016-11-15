@@ -44,5 +44,5 @@ You have attempted to use a specifier in a `Shared Sub New` declaration, which i
 -   Remove the specifier.  
   
 ## See Also  
- [Shared](/dotnet/visual-basic/language-reference/modifiers/shared)   
- [Sub Statement](/dotnet/visual-basic/language-reference/statements/sub-statement)
+ [Shared](/dotnet/articles/visual-basic/language-reference/modifiers/shared)   
+ [Sub Statement](/dotnet/articles/visual-basic/language-reference/statements/sub-statement)

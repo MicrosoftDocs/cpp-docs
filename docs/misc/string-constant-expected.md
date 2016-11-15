@@ -46,4 +46,4 @@ A character other than a double quotation mark (") occurs where the context requ
 2.  Supply a string constant.  
   
 ## See Also  
- [Constant and Literal Data Types](/dotnet/visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types)
+ [Constant and Literal Data Types](/dotnet/articles/visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types)

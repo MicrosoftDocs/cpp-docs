@@ -44,4 +44,4 @@ Your statement fails to supply either a `Get` or `Set` declaration statement aro
 -   Supply a `Get` or `Set` declaration statement.  
   
 ## See Also  
- [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)
+ [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)

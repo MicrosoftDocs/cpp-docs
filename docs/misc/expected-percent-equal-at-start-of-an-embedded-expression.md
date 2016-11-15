@@ -44,6 +44,6 @@ The start identifier for an embedded expression, `<%=`, has not been coded corre
 -   Ensure that the start identifier for the embedded expression is coded as `<%=`.  
   
 ## See Also  
- [Embedded Expressions in XML](/dotnet/visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml)   
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [Embedded Expressions in XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml)   
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

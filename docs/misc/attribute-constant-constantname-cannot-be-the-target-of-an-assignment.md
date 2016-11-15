@@ -47,4 +47,4 @@ An attempt was made to assign a value to a constant declared in an attribute.
   
 ## See Also  
  [NOT IN BUILD: Attributes in Visual Basic](http://msdn.microsoft.com/en-us/620bfc0e-4582-4c8b-8432-ebc5c3dccc22)   
- [Constants and Enumerations](/dotnet/visual-basic/language-reference/constants-and-enumerations)
+ [Constants and Enumerations](/dotnet/articles/visual-basic/language-reference/constants-and-enumerations)

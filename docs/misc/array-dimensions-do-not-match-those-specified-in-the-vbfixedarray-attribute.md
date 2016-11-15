@@ -40,5 +40,5 @@ Your array's dimensions do not match the dimensions you have specified in the `V
   
 ## See Also  
  [NOTINBUILD Overview of Arrays in Visual Basic](http://msdn.microsoft.com/en-us/ca50e2f2-b4d2-4c57-9169-9abbcc3392d8)   
- [ReDim Statement](/dotnet/visual-basic/language-reference/statements/redim-statement)   
+ [ReDim Statement](/dotnet/articles/visual-basic/language-reference/statements/redim-statement)   
  [VBFixedArrayAttribute Class](http://msdn.microsoft.com/en-us/7b7e9ef6-2854-4114-892e-e7ae45dd0b49)

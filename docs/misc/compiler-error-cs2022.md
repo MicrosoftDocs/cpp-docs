@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS2022
 Options '/out' and '/target' must appear before source file names  
   
- The [/out (Set Output Filename)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option) and [/target (Specify Output File Format)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option) compiler options, when specified on the command line, must precede the source code files.
+ The [/out (Set Output Filename)](/dotnet/articles/csharp/language-reference/compiler-options/out-compiler-option) and [/target (Specify Output File Format)](/dotnet/articles/csharp/language-reference/compiler-options/target-compiler-option) compiler options, when specified on the command line, must precede the source code files.

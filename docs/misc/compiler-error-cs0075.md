@@ -65,4 +65,4 @@ namespace MyNamespace
 ```  
   
 ## See Also  
- [Casting and Type Conversions](/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
+ [Casting and Type Conversions](/dotnet/articles/csharp/programming-guide/types/casting-and-type-conversions)

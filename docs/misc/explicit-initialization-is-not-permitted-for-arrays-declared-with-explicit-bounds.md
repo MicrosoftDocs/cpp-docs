@@ -51,4 +51,4 @@ Arrays cannot be initialized if they are declared to be a specific size.
     ```  
   
 ## See Also  
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)

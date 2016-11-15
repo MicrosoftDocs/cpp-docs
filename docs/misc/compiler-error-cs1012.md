@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1012
 Too many characters in character literal  
   
- An attempt was made to initialize a [char](/dotnet/csharp/language-reference/keywords/char) constant with more than one character.  
+ An attempt was made to initialize a [char](/dotnet/articles/csharp/language-reference/keywords/char) constant with more than one character.  
   
  CS1012 can also occur when doing data binding. For example the following line will give an error:  
   

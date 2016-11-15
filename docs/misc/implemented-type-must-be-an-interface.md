@@ -46,6 +46,6 @@ An `Implements` statement does not specify an interface. A class can implement o
 2.  If the statement specifies a class, consider using the `Inherits` statement.  
   
 ## See Also  
- [Implements Statement](/dotnet/visual-basic/language-reference/statements/implements-statement)   
- [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement)   
+ [Implements Statement](/dotnet/articles/visual-basic/language-reference/statements/implements-statement)   
+ [Inherits Statement](/dotnet/articles/visual-basic/language-reference/statements/inherits-statement)   
  [NOT IN BUILD: Inheritance in Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)

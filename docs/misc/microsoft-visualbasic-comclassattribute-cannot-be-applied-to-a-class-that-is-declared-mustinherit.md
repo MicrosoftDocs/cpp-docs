@@ -57,5 +57,5 @@ A class is declared with the <xref:Microsoft.VisualBasic.ComClassAttribute>, but
   
 ## See Also  
  <xref:Microsoft.VisualBasic.ComClassAttribute>   
- [COM Interop](/dotnet/visual-basic/programming-guide/com-interop/index)   
- [MustInherit](/dotnet/visual-basic/language-reference/modifiers/mustinherit)
+ [COM Interop](/dotnet/articles/visual-basic/programming-guide/com-interop/index)   
+ [MustInherit](/dotnet/articles/visual-basic/language-reference/modifiers/mustinherit)

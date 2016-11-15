@@ -42,5 +42,5 @@ translation.priority.mt:
 1.  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [/moduleassemblyname](/dotnet/visual-basic/reference/command-line-compiler/moduleassemblyname)
+ [Visual Basic Command-Line Compiler](/dotnet/articles/visual-basic/reference/command-line-compiler/index)   
+ [/moduleassemblyname](/dotnet/articles/visual-basic/reference/command-line-compiler/moduleassemblyname)

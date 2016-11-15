@@ -53,4 +53,4 @@ Dim arrayexample3 = Function(arrayPara As Integer()) arrayPara.Length > 0
 -   Specify the type of the elements in the array parameter.  
   
 ## See Also  
- [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)
+ [Lambda Expressions](/dotnet/articles/visual-basic/language-reference/procedures/lambda-expressions)

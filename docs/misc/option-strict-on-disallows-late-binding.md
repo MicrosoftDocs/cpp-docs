@@ -56,6 +56,6 @@ translation.priority.mt:
 -   Turn `Option Strict` off by removing the word `On` after it or by explicitly specifying `Off`.  
   
 ## See Also  
- [Type Conversion Functions](/dotnet/visual-basic/language-reference/functions/type-conversion-functions)   
- [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
- [Widening and Narrowing Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)
+ [Type Conversion Functions](/dotnet/articles/visual-basic/language-reference/functions/type-conversion-functions)   
+ [Option Strict Statement](/dotnet/articles/visual-basic/language-reference/statements/option-strict-statement)   
+ [Widening and Narrowing Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)

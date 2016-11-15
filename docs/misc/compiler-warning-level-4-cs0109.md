@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 4) CS0109
 The member 'member' does not hide an inherited member. The new keyword is not required  
   
- A class declaration included the [new](/dotnet/csharp/language-reference/keywords/new) keyword even though the declaration does not override an existing declaration in a base class. You can delete the **new** keyword.  
+ A class declaration included the [new](/dotnet/articles/csharp/language-reference/keywords/new) keyword even though the declaration does not override an existing declaration in a base class. You can delete the **new** keyword.  
   
  The following sample generates CS0109:  
   

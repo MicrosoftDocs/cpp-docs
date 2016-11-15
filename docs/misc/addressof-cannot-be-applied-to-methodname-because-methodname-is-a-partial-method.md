@@ -56,5 +56,5 @@ A partial method has been passed to the `AddressOf` operator. Partial methods ar
     ```  
   
 ## See Also  
- [AddressOf Operator](/dotnet/visual-basic/language-reference/operators/addressof-operator)   
- [Partial Methods](/dotnet/visual-basic/language-reference/procedures/partial-methods)
+ [AddressOf Operator](/dotnet/articles/visual-basic/language-reference/operators/addressof-operator)   
+ [Partial Methods](/dotnet/articles/visual-basic/language-reference/procedures/partial-methods)

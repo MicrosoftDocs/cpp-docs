@@ -48,9 +48,9 @@ A class or structure is defined in multiple partial declarations with conflictin
 -   Decide what the access level of the class should be, and remove any conflicting access level specifications.  
   
 ## See Also  
- [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)   
- [Access Levels in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/access-levels)   
- [Class Statement](/dotnet/visual-basic/language-reference/statements/class-statement)   
- [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)   
+ [Partial](/dotnet/articles/visual-basic/language-reference/modifiers/partial)   
+ [Access Levels in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/access-levels)   
+ [Class Statement](/dotnet/articles/visual-basic/language-reference/statements/class-statement)   
+ [Structure Statement](/dotnet/articles/visual-basic/language-reference/statements/structure-statement)   
  [NOT IN BUILD: Classes: Blueprints for Objects](http://msdn.microsoft.com/en-us/2c86373d-0333-4616-a7d8-4790c4e89f7b)   
- [Structures](/dotnet/visual-basic/programming-guide/language-features/data-types/structures)
+ [Structures](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures)

@@ -44,5 +44,5 @@ A `Dim` statement contains a keyword, such as `ReadOnly`, that is invalid in com
 1.  Remove the invalid keyword from the `Dim` statement.  
   
 ## See Also  
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
- [WithEvents](/dotnet/visual-basic/language-reference/modifiers/withevents)
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)   
+ [WithEvents](/dotnet/articles/visual-basic/language-reference/modifiers/withevents)

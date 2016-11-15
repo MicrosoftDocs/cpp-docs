@@ -44,4 +44,4 @@ You have used a specifier, such as `Dim` or `Override`, that is not valid on a `
 -   Remove the specifier.  
   
 ## See Also  
- [Structures and Classes](/dotnet/visual-basic/programming-guide/language-features/data-types/structures-and-classes)
+ [Structures and Classes](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures-and-classes)

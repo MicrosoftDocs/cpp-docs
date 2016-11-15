@@ -46,5 +46,5 @@ A [!INCLUDE[dnprdnshort](../error-messages/tool-errors/includes/dnprdnshort_md.m
 -   Remove the generic procedure or procedures from the [!INCLUDE[dnprdnshort](../error-messages/tool-errors/includes/dnprdnshort_md.md)] component, or do not use it for COM interop.  
   
 ## See Also  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [COM Interop](/dotnet/visual-basic/programming-guide/com-interop/index)
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [COM Interop](/dotnet/articles/visual-basic/programming-guide/com-interop/index)

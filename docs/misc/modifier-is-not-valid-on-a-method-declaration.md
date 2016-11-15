@@ -44,5 +44,5 @@ A `Function` or `Sub` statement contains an invalid keyword.
 -   Remove the invalid keyword from the `Function` or `Sub` statement.  
   
 ## See Also  
- [Function Statement](/dotnet/visual-basic/language-reference/statements/function-statement)   
- [Sub Statement](/dotnet/visual-basic/language-reference/statements/sub-statement)
+ [Function Statement](/dotnet/articles/visual-basic/language-reference/statements/function-statement)   
+ [Sub Statement](/dotnet/articles/visual-basic/language-reference/statements/sub-statement)

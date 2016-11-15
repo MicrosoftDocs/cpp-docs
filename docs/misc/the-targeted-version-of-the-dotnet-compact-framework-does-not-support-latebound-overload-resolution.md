@@ -44,5 +44,5 @@ The targeted version of the .NET Compact Framework does not support late-bound o
 -   Cast parameters of type object to the appropriate type.  
   
 ## See Also  
- [Overload Resolution](/dotnet/visual-basic/language-reference/procedures/overload-resolution)   
+ [Overload Resolution](/dotnet/articles/visual-basic/language-reference/procedures/overload-resolution)   
  [NotInBuild:Objects in Visual Basic](http://msdn.microsoft.com/en-us/85bd757a-a19e-45e1-af89-d68765f5ee3c)

@@ -44,4 +44,4 @@ The array element being referenced has not been set, or it was previously set to
 -   Verify that the values in the array are being set correctly.  
   
 ## See Also  
- [Nothing](/dotnet/visual-basic/language-reference/nothing)
+ [Nothing](/dotnet/articles/visual-basic/language-reference/nothing)

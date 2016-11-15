@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS1030
 \#warning: 'text'  
   
- Displays the text of a warning defined with the [#warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-warning) directive.  
+ Displays the text of a warning defined with the [#warning](/dotnet/articles/csharp/language-reference/preprocessor-directives/preprocessor-warning) directive.  
   
  The following sample shows how to create a user-defined warning:  
   

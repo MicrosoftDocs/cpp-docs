@@ -48,5 +48,5 @@ A `Continue While` statement can only appear within a `For...Next` loop.
 3.  Otherwise, remove the `Continue While` statement.  
   
 ## See Also  
- [Continue Statement](/dotnet/visual-basic/language-reference/statements/continue-statement)   
- [While...End While Statement](/dotnet/visual-basic/language-reference/statements/while-end-while-statement)
+ [Continue Statement](/dotnet/articles/visual-basic/language-reference/statements/continue-statement)   
+ [While...End While Statement](/dotnet/articles/visual-basic/language-reference/statements/while-end-while-statement)

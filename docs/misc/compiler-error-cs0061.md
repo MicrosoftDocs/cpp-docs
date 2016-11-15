@@ -38,9 +38,9 @@ translation.priority.mt:
 # Compiler Error CS0061
 Inconsistent accessibility: base interface 'interface 1' is less accessible than interface 'interface 2'  
   
- A [public](/dotnet/csharp/language-reference/keywords/public) construct must return a publicly accessible object.  
+ A [public](/dotnet/articles/csharp/language-reference/keywords/public) construct must return a publicly accessible object.  
   
- Interface accessibility cannot be narrowed in a derived interface. For more information, see [Interfaces](/dotnet/csharp/programming-guide/interfaces/index) and [Access Modifiers](/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers).  
+ Interface accessibility cannot be narrowed in a derived interface. For more information, see [Interfaces](/dotnet/articles/csharp/programming-guide/interfaces/index) and [Access Modifiers](/dotnet/articles/csharp/programming-guide/classes-and-structs/access-modifiers).  
   
  The following sample generates CS0061.  
   

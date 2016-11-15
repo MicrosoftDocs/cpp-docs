@@ -46,5 +46,5 @@ translation.priority.mt:
 2.  Make sure that the `Set` property procedure begins with the `Set` keyword and ends with an `End Set` construct.  
   
 ## See Also  
- [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
+ [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement)   
  [Property Changes in Visual Basic](http://msdn.microsoft.com/en-us/1c138efa-9bc2-44d7-80a0-f3a7c2510264)

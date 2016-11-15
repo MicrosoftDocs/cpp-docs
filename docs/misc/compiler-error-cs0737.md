@@ -42,7 +42,7 @@ translation.priority.mt:
   
 ### To correct this error  
   
-1.  Add the [public](/dotnet/csharp/language-reference/keywords/public) access modifier to the method.  
+1.  Add the [public](/dotnet/articles/csharp/language-reference/keywords/public) access modifier to the method.  
   
 ## Example  
  The following code generates CS0737:  
@@ -75,4 +75,4 @@ public class Test
 ```  
   
 ## See Also  
- [Interfaces](/dotnet/csharp/programming-guide/interfaces/index)
+ [Interfaces](/dotnet/articles/csharp/programming-guide/interfaces/index)

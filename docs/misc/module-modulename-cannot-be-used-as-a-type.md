@@ -44,4 +44,4 @@ You have attempted to use a module as a type. A module cannot be used except as 
 -   Replace the module with something that can be used as a valid type.  
   
 ## See Also  
- [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)
+ [Module Statement](/dotnet/articles/visual-basic/language-reference/statements/module-statement)

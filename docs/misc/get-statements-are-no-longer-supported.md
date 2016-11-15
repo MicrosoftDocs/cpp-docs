@@ -46,6 +46,6 @@ translation.priority.mt:
 1.  Perform file operations using the members of `System.IO`, `FileSystemObject`, and [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] run-time functions.  
   
 ## See Also  
- [Processing Drives, Directories, and Files](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/index)   
- [Get Statement](/dotnet/visual-basic/language-reference/statements/get-statement)   
- [File Access with Visual Basic](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/file-access)
+ [Processing Drives, Directories, and Files](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/index)   
+ [Get Statement](/dotnet/articles/visual-basic/language-reference/statements/get-statement)   
+ [File Access with Visual Basic](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/file-access)

@@ -44,4 +44,4 @@ A list, such as an argument list in a procedure definition or a procedure call, 
 -   Add a closing parenthesis character to the end of the list.  
   
 ## See Also  
- [Procedure Parameters and Arguments](/dotnet/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)
+ [Procedure Parameters and Arguments](/dotnet/articles/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)

@@ -57,4 +57,4 @@ class MyClass
 ```  
   
 ## See Also  
- [Arrays](/dotnet/csharp/programming-guide/arrays/index)
+ [Arrays](/dotnet/articles/csharp/programming-guide/arrays/index)

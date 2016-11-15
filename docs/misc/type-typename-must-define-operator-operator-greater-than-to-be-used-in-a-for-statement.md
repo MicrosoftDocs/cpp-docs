@@ -62,9 +62,9 @@ A `For` loop specifies a counter variable of a type that does not support a requ
 3.  Depending on the data types of the `start`, `end`, and `step` expressions, you might have to define one or more `CType` conversion operators to convert them to the counter variable data type.  
   
 ## See Also  
- [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)   
- [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
- [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)   
+ [For...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-next-statement)   
+ [Operator Procedures](/dotnet/articles/visual-basic/language-reference/procedures/operator-procedures)   
+ [Operator Statement](/dotnet/articles/visual-basic/language-reference/statements/operator-statement)   
  [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
  [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)   
- [CType Function](/dotnet/visual-basic/language-reference/functions/ctype-function)
+ [CType Function](/dotnet/articles/visual-basic/language-reference/functions/ctype-function)

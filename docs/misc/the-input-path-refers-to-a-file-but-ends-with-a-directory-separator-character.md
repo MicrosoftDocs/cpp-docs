@@ -40,5 +40,5 @@ An operation was attempted requiring that a filename be supplied, but the suppli
   
 ## See Also  
  [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
- [Reading from Files](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files)   
- [Writing to Files](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files)
+ [Reading from Files](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files)   
+ [Writing to Files](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files)

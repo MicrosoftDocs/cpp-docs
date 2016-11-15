@@ -44,5 +44,5 @@ An `End` statement must match the block it terminates. A `Sub` procedure definit
 -   Add an `End Sub` statement to the end of the procedure.  
   
 ## See Also  
- [Sub Procedures](/dotnet/visual-basic/language-reference/procedures/sub-procedures)   
- [End Statement](/dotnet/visual-basic/language-reference/statements/end-statement)
+ [Sub Procedures](/dotnet/articles/visual-basic/language-reference/procedures/sub-procedures)   
+ [End Statement](/dotnet/articles/visual-basic/language-reference/statements/end-statement)

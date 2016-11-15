@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 3) CS0665
 Assignment in conditional expression is always constant; did you mean to use == instead of = ?  
   
- A conditional expression used the [= operator](/dotnet/csharp/language-reference/operators/assignment-operator) and not the [== operator](/dotnet/csharp/language-reference/operators/equality-comparison-operator).  
+ A conditional expression used the [= operator](/dotnet/articles/csharp/language-reference/operators/assignment-operator) and not the [== operator](/dotnet/articles/csharp/language-reference/operators/equality-comparison-operator).  
   
  The following sample generates CS0665:  
   

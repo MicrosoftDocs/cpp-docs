@@ -46,6 +46,6 @@ The specified method name conflicts with a `MustOverride` method implicitly gene
 2.  Remove the `MustOverride` modifier from the property in the base class.  
   
 ## See Also  
- [MustOverride](/dotnet/visual-basic/language-reference/modifiers/mustoverride)   
- [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)   
- [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)
+ [MustOverride](/dotnet/articles/visual-basic/language-reference/modifiers/mustoverride)   
+ [Shadows](/dotnet/articles/visual-basic/language-reference/modifiers/shadows)   
+ [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)

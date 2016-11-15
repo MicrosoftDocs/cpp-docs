@@ -47,4 +47,4 @@ The file you are attempting to access is unavailable.
   
 ## See Also  
  <xref:System.Security.Permissions.FileIOPermission>   
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

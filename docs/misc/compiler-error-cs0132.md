@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0132
 'constructor' : a static constructor must be parameterless  
   
- A [static](/dotnet/csharp/language-reference/keywords/static) constructor cannot be declared with one or more parameters. For more information, see [Constructors](/dotnet/csharp/programming-guide/classes-and-structs/constructors).  
+ A [static](/dotnet/articles/csharp/language-reference/keywords/static) constructor cannot be declared with one or more parameters. For more information, see [Constructors](/dotnet/articles/csharp/programming-guide/classes-and-structs/constructors).  
   
  The following sample generates CS0132:  
   

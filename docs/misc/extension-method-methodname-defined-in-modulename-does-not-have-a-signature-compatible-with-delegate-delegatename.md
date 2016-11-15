@@ -40,6 +40,6 @@ There is a mismatch between the signatures of the extension method and the deleg
  **Error ID:** BC36710  
   
 ## See Also  
- [Relaxed Delegate Conversion](/dotnet/visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion)   
- [Delegate Statement](/dotnet/visual-basic/language-reference/statements/delegate-statement)   
+ [Relaxed Delegate Conversion](/dotnet/articles/visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion)   
+ [Delegate Statement](/dotnet/articles/visual-basic/language-reference/statements/delegate-statement)   
  [NOT IN BUILD: Delegates and the AddressOf Operator](http://msdn.microsoft.com/en-us/7b2ed932-8598-4355-b2f7-5cedb23ee86f)

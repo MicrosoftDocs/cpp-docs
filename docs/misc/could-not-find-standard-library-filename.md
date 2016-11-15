@@ -56,6 +56,6 @@ translation.priority.mt:
 5.  Note the exact file name and extension and contact Microsoft Product Support Services.  
   
 ## See Also  
- [Building from the Command Line](/dotnet/visual-basic/reference/command-line-compiler/building-from-the-command-line)   
+ [Building from the Command Line](/dotnet/articles/visual-basic/reference/command-line-compiler/building-from-the-command-line)   
  [How to: Invoke the Command-Line Compiler](../Topic/How%20to:%20Invoke%20the%20Command-Line%20Compiler%20\(Visual%20Basic\).md)   
  [Talk to Us](/visualstudio/ide/talk-to-us)

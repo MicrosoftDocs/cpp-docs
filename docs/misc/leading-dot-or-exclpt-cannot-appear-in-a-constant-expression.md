@@ -51,4 +51,4 @@ Const c As String = .name
 ## See Also  
  [Object Initializers: Named and Anonymous Types](../Topic/Object%20Initializers:%20Named%20and%20Anonymous%20Types%20\(Visual%20Basic\).md)   
  [How to: Declare an Instance of an Anonymous Type (Visual Basic)](http://msdn.microsoft.com/en-us/119f616c-9bcd-4731-ac00-4285be5959f7)   
- [Const Statement](/dotnet/visual-basic/language-reference/statements/const-statement)
+ [Const Statement](/dotnet/articles/visual-basic/language-reference/statements/const-statement)

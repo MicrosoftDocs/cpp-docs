@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1032
 Cannot define/undefine preprocessor symbols after first token in file  
   
- The `#define` and `#undef` [preprocessor directives](/dotnet/csharp/language-reference/preprocessor-directives/index) must be used at the beginning of a program, before any other keywords, such as those used in the namespace declaration.  
+ The `#define` and `#undef` [preprocessor directives](/dotnet/articles/csharp/language-reference/preprocessor-directives/index) must be used at the beginning of a program, before any other keywords, such as those used in the namespace declaration.  
   
  The following sample generates CS1032:  
   

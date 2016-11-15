@@ -37,7 +37,7 @@ translation.priority.ht:
 # Compiler Error C2871
 'name' : a namespace with this name does not exist  
   
- This error will occur when you pass an identifier that is not a namespace to a [using](/dotnet/csharp/language-reference/keywords/using-directive) directive.  
+ This error will occur when you pass an identifier that is not a namespace to a [using](/dotnet/articles/csharp/language-reference/keywords/using-directive) directive.  
   
  The following sample generates C2871:  
   

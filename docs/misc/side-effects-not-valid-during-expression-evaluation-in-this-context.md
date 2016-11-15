@@ -44,4 +44,4 @@ Statements that change the state of an object are not allowed in this context.
 -   Change your code so that statements are evaluated without changing the state of other items.  
   
 ## See Also  
- [Nothing](/dotnet/visual-basic/language-reference/nothing)
+ [Nothing](/dotnet/articles/visual-basic/language-reference/nothing)

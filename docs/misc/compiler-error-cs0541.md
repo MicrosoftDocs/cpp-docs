@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0541
 'declaration' : explicit interface declaration can only be declared in a class or struct  
   
- An explicit [interface](/dotnet/csharp/language-reference/keywords/interface) declaration was found outside a [class](/dotnet/csharp/language-reference/keywords/class) or [struct](/dotnet/csharp/language-reference/keywords/struct).  
+ An explicit [interface](/dotnet/articles/csharp/language-reference/keywords/interface) declaration was found outside a [class](/dotnet/articles/csharp/language-reference/keywords/class) or [struct](/dotnet/articles/csharp/language-reference/keywords/struct).  
   
  The following sample generates CS0541:  
   

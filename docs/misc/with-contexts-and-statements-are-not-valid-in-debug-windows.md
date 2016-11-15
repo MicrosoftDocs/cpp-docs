@@ -44,5 +44,5 @@ translation.priority.mt:
 -   Remove `With` statements from debugging code.  
   
 ## See Also  
- [With...End With Statement](/dotnet/visual-basic/language-reference/statements/with-end-with-statement)   
+ [With...End With Statement](/dotnet/articles/visual-basic/language-reference/statements/with-end-with-statement)   
  [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

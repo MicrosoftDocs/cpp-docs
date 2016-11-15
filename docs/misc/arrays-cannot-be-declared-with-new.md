@@ -55,5 +55,5 @@ Dim formA as New Form
 -   Replace a statement such as `Dim myDates() As New Date` with a statement such as `Dim myDates() As Date = New Date() {}`.  
   
 ## See Also  
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)   
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)   
  [How to: Initialize an Array Variable in Visual Basic](../Topic/How%20to:%20Initialize%20an%20Array%20Variable%20in%20Visual%20Basic.md)

@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS2014
 Compiler option 'old option' is obsolete, please use 'new option' instead  
   
- The form of the compiler option is deprecated. See [C# Compiler Options](/dotnet/csharp/language-reference/compiler-options/index) for more information.
+ The form of the compiler option is deprecated. See [C# Compiler Options](/dotnet/articles/csharp/language-reference/compiler-options/index) for more information.

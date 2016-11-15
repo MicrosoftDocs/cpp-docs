@@ -44,6 +44,6 @@ translation.priority.mt:
 -   Replace the `Exit Function` with the `Exit Sub` or `Exit Property` statement as appropriate.  
   
 ## See Also  
- [Sub Procedures](/dotnet/visual-basic/language-reference/procedures/sub-procedures)   
- [Function Procedures](/dotnet/visual-basic/language-reference/procedures/function-procedures)   
- [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)
+ [Sub Procedures](/dotnet/articles/visual-basic/language-reference/procedures/sub-procedures)   
+ [Function Procedures](/dotnet/articles/visual-basic/language-reference/procedures/function-procedures)   
+ [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)

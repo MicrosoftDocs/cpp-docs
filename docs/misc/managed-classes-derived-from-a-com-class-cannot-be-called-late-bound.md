@@ -39,4 +39,4 @@ You attempted to make a late-bound call to a managed class derived from a COM Cl
 -   Make the call early bound.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

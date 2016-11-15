@@ -37,7 +37,7 @@ translation.priority.mt:
 # Root namespace &lt;namespacename&gt; is not CLS-compliant
 An assembly is marked as `<CLSCompliant(True)>`, but the root namespace name begins with an underscore (`_`).  
   
- A programming element can contain one or more underscores, but to be compliant with the [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md) (CLS), it must not begin with an underscore. See [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names).  
+ A programming element can contain one or more underscores, but to be compliant with the [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md) (CLS), it must not begin with an underscore. See [Declared Element Names](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/declared-element-names).  
   
  When you apply the <xref:System.CLSCompliantAttribute> to a programming element, you set the attribute's `isCompliant` parameter to either `True` or `False` to indicate compliance or noncompliance. There is no default for this parameter, and you must supply a value.  
   
@@ -54,10 +54,10 @@ An assembly is marked as `<CLSCompliant(True)>`, but the root namespace name beg
 -   If you require that the root namespace name remain unchanged, then remove the <xref:System.CLSCompliantAttribute> from the assembly or mark it as `<CLSCompliant(False)>`.  
   
 ## See Also  
- [Namespace Statement](/dotnet/visual-basic/language-reference/statements/namespace-statement)   
- [Namespaces in Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces)   
- [/rootnamespace](/dotnet/visual-basic/reference/command-line-compiler/rootnamespace)   
+ [Namespace Statement](/dotnet/articles/visual-basic/language-reference/statements/namespace-statement)   
+ [Namespaces in Visual Basic](/dotnet/articles/visual-basic/programming-guide/program-structure/namespaces)   
+ [/rootnamespace](/dotnet/articles/visual-basic/reference/command-line-compiler/rootnamespace)   
  [NIB: How to: Change the Namespace for an Application (Visual Basic)](http://msdn.microsoft.com/en-us/029d85c0-e173-4f7a-afba-a29f3aaf6ebf)   
- [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
- [Visual Basic Naming Conventions](/dotnet/visual-basic/programming-guide/program-structure/naming-conventions)   
+ [Declared Element Names](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
+ [Visual Basic Naming Conventions](/dotnet/articles/visual-basic/programming-guide/program-structure/naming-conventions)   
  [\<PAVE OVER> Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3)

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0175
 Use of keyword 'base' is not valid in this context  
   
- The [base](/dotnet/csharp/language-reference/keywords/base) keyword must be used to specify a particular member of the base class. For more information, see [Constructors](/dotnet/csharp/programming-guide/classes-and-structs/constructors).  
+ The [base](/dotnet/articles/csharp/language-reference/keywords/base) keyword must be used to specify a particular member of the base class. For more information, see [Constructors](/dotnet/articles/csharp/programming-guide/classes-and-structs/constructors).  
   
  The following sample generates CS0175:  
   

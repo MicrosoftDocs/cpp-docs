@@ -40,4 +40,4 @@ Nested parentheses in a lambda expression's parameter list cannot exceed a depth
  **Error ID:** BC36664  
   
 ## See Also  
- [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)
+ [Lambda Expressions](/dotnet/articles/visual-basic/language-reference/procedures/lambda-expressions)

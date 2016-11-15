@@ -37,7 +37,7 @@ translation.priority.mt:
 # Variable declaration without an &#39;As&#39; clause; type of Object assumed
 A variable declaration does not specify an `As` clause.  
   
- An `As` clause identifies a data type to be associated with a programming element. In a [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement), it specifies the data type of the variable or variables. If you do not include an `As` clause in the `Dim` statement, the variable's data type defaults to `Object`.  
+ An `As` clause identifies a data type to be associated with a programming element. In a [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement), it specifies the data type of the variable or variables. If you do not include an `As` clause in the `Dim` statement, the variable's data type defaults to `Object`.  
   
  By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
@@ -48,5 +48,5 @@ A variable declaration does not specify an `As` clause.
 -   Include an `As` clause in the `Dim` statement to specify the variable's data type.  
   
 ## See Also  
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
- [Variable Declaration](/dotnet/visual-basic/programming-guide/language-features/variables/variable-declaration)
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)   
+ [Variable Declaration](/dotnet/articles/visual-basic/programming-guide/language-features/variables/variable-declaration)

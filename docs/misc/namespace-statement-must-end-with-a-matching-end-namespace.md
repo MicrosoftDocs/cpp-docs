@@ -44,5 +44,5 @@ translation.priority.mt:
 -   Add an `End Namespace` statement to the end of the `Namespace` block.  
   
 ## See Also  
- [Namespace Statement](/dotnet/visual-basic/language-reference/statements/namespace-statement)   
- [Namespaces in Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces)
+ [Namespace Statement](/dotnet/articles/visual-basic/language-reference/statements/namespace-statement)   
+ [Namespaces in Visual Basic](/dotnet/articles/visual-basic/programming-guide/program-structure/namespaces)

@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS1509
 Referenced file 'file' is not an assembly; use '/addmodule' option instead  
   
- An output file (output file 1), produced in a compilation that used [/target:module](../Topic/-target:module%20\(C%23%20Compiler%20Options\).md) (does not have an assembly manifest), was specified to [/reference](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option). So, rather than appending an assembly to the assembly for the current program, the metadata information in output file 1 will be added to the assembly for the current program.
+ An output file (output file 1), produced in a compilation that used [/target:module](../Topic/-target:module%20\(C%23%20Compiler%20Options\).md) (does not have an assembly manifest), was specified to [/reference](/dotnet/articles/csharp/language-reference/compiler-options/reference-compiler-option). So, rather than appending an assembly to the assembly for the current program, the metadata information in output file 1 will be added to the assembly for the current program.

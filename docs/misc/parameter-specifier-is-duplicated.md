@@ -44,4 +44,4 @@ A parameter specifier is applied more than once to the parameter.
 -   Remove the duplicate specifiers.  
   
 ## See Also  
- [Parameter List](/dotnet/visual-basic/language-reference/statements/parameter-list)
+ [Parameter List](/dotnet/articles/visual-basic/language-reference/statements/parameter-list)

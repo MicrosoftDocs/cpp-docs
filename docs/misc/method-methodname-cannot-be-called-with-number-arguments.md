@@ -43,4 +43,4 @@ A method call contains the wrong number of arguments.
 3.  Adjust the number of arguments if the two numbers do not agree.  
   
 ## See Also  
- [Passing Arguments by Value and by Reference](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)
+ [Passing Arguments by Value and by Reference](/dotnet/articles/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)

@@ -52,5 +52,5 @@ public static class Extensions
 ```  
   
 ## See Also  
- [Extension Methods](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)   
- [unsafe](/dotnet/csharp/language-reference/keywords/unsafe)
+ [Extension Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/extension-methods)   
+ [unsafe](/dotnet/articles/csharp/language-reference/keywords/unsafe)

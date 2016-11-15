@@ -44,4 +44,4 @@ The number of indices used to access an array element must be exactly the same a
 -   Add subscripts to the array reference until the total number of subscripts equals the rank of the array.  
   
 ## See Also  
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 2) CS1572
 XML comment on 'construct' has a param tag for 'parameter', but there is no parameter by that name  
   
- When using the [/doc](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option) compiler option, a comment was specified for a parameter that does not exist for the method. Change the value passed to the name attribute or remove one of the comment lines.  
+ When using the [/doc](/dotnet/articles/csharp/language-reference/compiler-options/doc-compiler-option) compiler option, a comment was specified for a parameter that does not exist for the method. Change the value passed to the name attribute or remove one of the comment lines.  
   
  The following sample generates CS1572:  
   

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0205
 Cannot call an abstract base member: 'method'  
   
- You cannot call an [abstract](/dotnet/csharp/language-reference/keywords/abstract) method because it does not have a method body. For more information, see [Abstract and Sealed Classes and Class Members](/dotnet/csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members).  
+ You cannot call an [abstract](/dotnet/articles/csharp/language-reference/keywords/abstract) method because it does not have a method body. For more information, see [Abstract and Sealed Classes and Class Members](/dotnet/articles/csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members).  
   
  The following sample generates CS0205:  
   

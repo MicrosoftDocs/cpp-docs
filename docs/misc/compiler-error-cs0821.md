@@ -64,4 +64,4 @@ class A
 ```  
   
 ## See Also  
- [Implicitly Typed Local Variables](/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables)
+ [Implicitly Typed Local Variables](/dotnet/articles/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables)

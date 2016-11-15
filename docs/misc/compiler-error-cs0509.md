@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0509
 'class1' : cannot derive from sealed type 'class2'  
   
- A [sealed](/dotnet/csharp/language-reference/keywords/sealed) class cannot act as a [base](/dotnet/csharp/language-reference/keywords/base) class. Structs are sealed by default.  
+ A [sealed](/dotnet/articles/csharp/language-reference/keywords/sealed) class cannot act as a [base](/dotnet/articles/csharp/language-reference/keywords/base) class. Structs are sealed by default.  
   
  The following sample generates CS0509:  
   

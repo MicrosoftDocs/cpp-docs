@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 3) CS0693
 Type parameter 'type parameter' has the same name as the type parameter from outer type 'type'  
   
- This error occurs when you have a generic member such as a method inside a generic class. Since the method's type parameter is not necessarily the same as the class's type parameter, you cannot give them both the same name. For more information, see [Generic Methods](/dotnet/csharp/programming-guide/generics/generic-methods).  
+ This error occurs when you have a generic member such as a method inside a generic class. Since the method's type parameter is not necessarily the same as the class's type parameter, you cannot give them both the same name. For more information, see [Generic Methods](/dotnet/articles/csharp/programming-guide/generics/generic-methods).  
   
  To avoid this situation, use a different name for one of the type parameters.  
   

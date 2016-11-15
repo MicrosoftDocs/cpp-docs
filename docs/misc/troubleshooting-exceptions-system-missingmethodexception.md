@@ -49,4 +49,4 @@ A <xref:System.MissingMethodException> exception is thrown when there is an atte
 ## See Also  
  <xref:System.MissingMethodException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Troubleshooting Interoperability](/dotnet/visual-basic/programming-guide/com-interop/troubleshooting-interoperability)
+ [Troubleshooting Interoperability](/dotnet/articles/visual-basic/programming-guide/com-interop/troubleshooting-interoperability)

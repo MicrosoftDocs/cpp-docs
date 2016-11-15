@@ -44,4 +44,4 @@ There is a mismatch between the signatures of the method and delegate you are at
 -   Check the signatures to find the mismatch, and correct it.  
   
 ## See Also  
- [Delegate Statement](/dotnet/visual-basic/language-reference/statements/delegate-statement)
+ [Delegate Statement](/dotnet/articles/visual-basic/language-reference/statements/delegate-statement)

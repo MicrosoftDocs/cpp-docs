@@ -46,5 +46,5 @@ You attempted to override a delegate on the base class name that was declared wi
 2.  Do not try to override this method.  
   
 ## See Also  
- [Declare Statement](/dotnet/visual-basic/language-reference/statements/declare-statement)   
+ [Declare Statement](/dotnet/articles/visual-basic/language-reference/statements/declare-statement)   
  [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213)

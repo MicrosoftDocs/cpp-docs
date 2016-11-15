@@ -52,8 +52,8 @@ A custom event cannot be declared in an interface because a custom event must pr
   
 ## See Also  
  [Custom - delete](http://msdn.microsoft.com/en-us/dc62be07-c896-4866-a533-982a661d143f)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)   
- [Delegate Statement](/dotnet/visual-basic/language-reference/statements/delegate-statement)   
- [Class Statement](/dotnet/visual-basic/language-reference/statements/class-statement)   
- [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)   
- [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)   
+ [Delegate Statement](/dotnet/articles/visual-basic/language-reference/statements/delegate-statement)   
+ [Class Statement](/dotnet/articles/visual-basic/language-reference/statements/class-statement)   
+ [Interface Statement](/dotnet/articles/visual-basic/language-reference/statements/interface-statement)   
+ [Events](/dotnet/articles/visual-basic/programming-guide/language-features/events/events)

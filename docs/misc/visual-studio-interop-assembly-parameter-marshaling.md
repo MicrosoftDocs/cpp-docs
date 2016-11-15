@@ -138,5 +138,5 @@ else
 ## See Also  
  [Interop Marshaling](http://msdn.microsoft.com/en-us/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
  [Interop Marshaling](../Topic/Interop%20Marshaling.md)   
- [Troubleshooting Interoperability](/dotnet/visual-basic/programming-guide/com-interop/troubleshooting-interoperability)   
+ [Troubleshooting Interoperability](/dotnet/articles/visual-basic/programming-guide/com-interop/troubleshooting-interoperability)   
  [Managed VSPackages](../misc/managed-vspackages.md)

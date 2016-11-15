@@ -44,4 +44,4 @@ translation.priority.mt:
 -   Restructure your code so that the `GoTo` statement and the label are both inside the `With` block.  
   
 ## See Also  
- [GoTo Statement](/dotnet/visual-basic/language-reference/statements/goto-statement)
+ [GoTo Statement](/dotnet/articles/visual-basic/language-reference/statements/goto-statement)

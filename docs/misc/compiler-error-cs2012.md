@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS2012
 Cannot open 'file' for writing  
   
- While using the [/bugreport:](/dotnet/csharp/language-reference/compiler-options/bugreport-compiler-option)`file` compiler option, the file could not be opened for writing. Make sure you specified a valid file name and that the file is not read-only.
+ While using the [/bugreport:](/dotnet/articles/csharp/language-reference/compiler-options/bugreport-compiler-option)`file` compiler option, the file could not be opened for writing. Make sure you specified a valid file name and that the file is not read-only.

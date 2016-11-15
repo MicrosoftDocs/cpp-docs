@@ -44,4 +44,4 @@ A `Case Else` statement introduces statements to be executed if no match is foun
 -   Move the `Case Else` to the appropriate location after the `Case` statement.  
   
 ## See Also  
- [Select...Case Statement](/dotnet/visual-basic/language-reference/statements/select-case-statement)
+ [Select...Case Statement](/dotnet/articles/visual-basic/language-reference/statements/select-case-statement)

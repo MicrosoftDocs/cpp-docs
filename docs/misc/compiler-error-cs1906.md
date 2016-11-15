@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS1906
 Invalid option 'option'; Resource visibility must be either 'public' or 'private'  
   
- This error indicates an invalid [/resource (Embed Resource File to Output)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option) or [/linkresource (Link to .NET Framework Resource)](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option) command line option. Check the syntax of the **/resource** or **/linkresource** command line option, and make sure that the accessibility modifier used is either **public** or `private`.
+ This error indicates an invalid [/resource (Embed Resource File to Output)](/dotnet/articles/csharp/language-reference/compiler-options/resource-compiler-option) or [/linkresource (Link to .NET Framework Resource)](/dotnet/articles/csharp/language-reference/compiler-options/linkresource-compiler-option) command line option. Check the syntax of the **/resource** or **/linkresource** command line option, and make sure that the accessibility modifier used is either **public** or `private`.

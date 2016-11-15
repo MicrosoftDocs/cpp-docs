@@ -44,7 +44,7 @@ Interface members must be implemented by classes or structures.
 -   Implement interface members from classes or structures.  
   
 ## See Also  
- [Class Statement](/dotnet/visual-basic/language-reference/statements/class-statement)   
- [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)   
- [Implements Statement](/dotnet/visual-basic/language-reference/statements/implements-statement)   
- [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)
+ [Class Statement](/dotnet/articles/visual-basic/language-reference/statements/class-statement)   
+ [Structure Statement](/dotnet/articles/visual-basic/language-reference/statements/structure-statement)   
+ [Implements Statement](/dotnet/articles/visual-basic/language-reference/statements/implements-statement)   
+ [Interface Statement](/dotnet/articles/visual-basic/language-reference/statements/interface-statement)

@@ -44,6 +44,6 @@ translation.priority.mt:
 -   Remove the `Continue` statement from the debugging code.  
   
 ## See Also  
- [Continue Statement](/dotnet/visual-basic/language-reference/statements/continue-statement)   
+ [Continue Statement](/dotnet/articles/visual-basic/language-reference/statements/continue-statement)   
  [Immediate Window](/visualstudio/ide/reference/immediate-window)   
  [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

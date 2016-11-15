@@ -54,4 +54,4 @@ There is a failure in the registration of an assembly that exposes functionality
 -   Make sure that you are logged on as an Administrator or as a member of a group that has permission to access the registry.  
   
 ## See Also  
- [COM Interoperability in .NET Framework Applications](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications)
+ [COM Interoperability in .NET Framework Applications](/dotnet/articles/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications)

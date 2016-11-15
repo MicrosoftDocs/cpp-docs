@@ -57,5 +57,5 @@ A class is declared with <xref:Microsoft.VisualBasic.ComClassAttribute>, but its
   
 ## See Also  
  <xref:Microsoft.VisualBasic.ComClassAttribute>   
- [COM Interop](/dotnet/visual-basic/programming-guide/com-interop/index)   
- [Public](/dotnet/visual-basic/language-reference/modifiers/public)
+ [COM Interop](/dotnet/articles/visual-basic/programming-guide/com-interop/index)   
+ [Public](/dotnet/articles/visual-basic/language-reference/modifiers/public)

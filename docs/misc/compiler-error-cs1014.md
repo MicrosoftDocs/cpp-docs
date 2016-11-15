@@ -40,7 +40,7 @@ A get or set accessor expected
   
  A method declaration was found in a property declaration. You can only declare `get` and `set` methods in a property.  
   
- For more information on properties, see [Using Properties](/dotnet/csharp/programming-guide/classes-and-structs/using-properties).  
+ For more information on properties, see [Using Properties](/dotnet/articles/csharp/programming-guide/classes-and-structs/using-properties).  
   
 ## Example  
  The following sample generates CS1014.  

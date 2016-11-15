@@ -46,4 +46,4 @@ A class or interface either inherits from itself or from another class or interf
 -   Change the inheritance structure so that it is built on a base class or interface that does not inherit from any other class or interface.  
   
 ## See Also  
- [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
+ [Inheritance Basics](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

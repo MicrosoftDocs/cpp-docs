@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1583
 'file' is not a valid Win32 resource file  
   
- This error occurs when you specify a filename with the [/win32res](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option) compiler option that is not a valid or correctly formatted Win32 resource file. In Visual Studio, the filename is specified in the Application pane of the Project Designer.  
+ This error occurs when you specify a filename with the [/win32res](/dotnet/articles/csharp/language-reference/compiler-options/win32res-compiler-option) compiler option that is not a valid or correctly formatted Win32 resource file. In Visual Studio, the filename is specified in the Application pane of the Project Designer.  
   
 ## See Also  
  [Application Page, Project Designer (C#)](/visualstudio/ide/reference/application-page-project-designer-csharp)

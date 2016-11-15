@@ -48,5 +48,5 @@ An expression or an assignment statement takes a value of one data type and conv
 -   Use `CType` or one of the other conversion keywords so that the conversion is *explicit*.  
   
 ## See Also  
- [Implicit and Explicit Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)   
- [Type Conversion Functions](/dotnet/visual-basic/language-reference/functions/type-conversion-functions)
+ [Implicit and Explicit Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)   
+ [Type Conversion Functions](/dotnet/articles/visual-basic/language-reference/functions/type-conversion-functions)

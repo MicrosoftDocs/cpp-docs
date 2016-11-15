@@ -39,5 +39,5 @@ The line cannot be read because it exceeds the maximum line size. Usually this m
 -   Insert a closing quotation mark in the file.  
   
 ## See Also  
- [Parsing Text Files with the TextFieldParser Object](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object)   
- [TextFieldParser Object](/dotnet/visual-basic/language-reference/objects/textfieldparser-object)
+ [Parsing Text Files with the TextFieldParser Object](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object)   
+ [TextFieldParser Object](/dotnet/articles/visual-basic/language-reference/objects/textfieldparser-object)

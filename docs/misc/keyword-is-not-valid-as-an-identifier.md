@@ -44,4 +44,4 @@ A keyword occurs where an element name is required. The context calls for an ele
 -   Replace the keyword with a valid element name.  
   
 ## See Also  
- [Operators and Expressions](/dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/index)
+ [Operators and Expressions](/dotnet/articles/visual-basic/programming-guide/language-features/operators-and-expressions/index)

@@ -67,4 +67,4 @@ class Test
 ```  
   
 ## See Also  
- [join clause](/dotnet/csharp/language-reference/keywords/join-clause)
+ [join clause](/dotnet/articles/csharp/language-reference/keywords/join-clause)

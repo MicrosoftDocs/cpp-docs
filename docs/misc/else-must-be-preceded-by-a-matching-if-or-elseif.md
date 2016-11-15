@@ -48,4 +48,4 @@ An `Else` statement occurs without a corresponding `If` statement. `Else` must b
 3.  Ensure that this `If` block is correctly formatted.  
   
 ## See Also  
- [If...Then...Else Statement](/dotnet/visual-basic/language-reference/statements/if-then-else-statement)
+ [If...Then...Else Statement](/dotnet/articles/visual-basic/language-reference/statements/if-then-else-statement)

@@ -44,4 +44,4 @@ A `Property` statement in your code overrides a `Default` property on the base c
 -   Declare the property `Default`.  
   
 ## See Also  
- [Default](/dotnet/visual-basic/language-reference/modifiers/default)
+ [Default](/dotnet/articles/visual-basic/language-reference/modifiers/default)

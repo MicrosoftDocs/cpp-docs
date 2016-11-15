@@ -48,6 +48,6 @@ translation.priority.mt:
     ```  
   
 ## See Also  
- [Arrays Summary](/dotnet/visual-basic/language-reference/keywords/arrays-summary)   
- [ReDim Statement](/dotnet/visual-basic/language-reference/statements/redim-statement)   
+ [Arrays Summary](/dotnet/articles/visual-basic/language-reference/keywords/arrays-summary)   
+ [ReDim Statement](/dotnet/articles/visual-basic/language-reference/statements/redim-statement)   
  [ReDim Statement Changes in Visual Basic](http://msdn.microsoft.com/en-us/b4da14db-ff23-490f-b3c6-d7ae1b649532)

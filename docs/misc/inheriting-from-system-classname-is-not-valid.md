@@ -44,5 +44,5 @@ A class cannot inherit from `System.Array`, `System.Delegate`, `System.Enum`, or
 -   Remove the `Inherits` statement or change it to inherit from a valid base class.  
   
 ## See Also  
- [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)   
- [Object Variable Declaration](/dotnet/visual-basic/programming-guide/language-features/variables/object-variable-declaration)
+ [Inheritance Basics](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)   
+ [Object Variable Declaration](/dotnet/articles/visual-basic/programming-guide/language-features/variables/object-variable-declaration)

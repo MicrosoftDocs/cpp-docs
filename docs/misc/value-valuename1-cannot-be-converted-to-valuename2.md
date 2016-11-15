@@ -44,4 +44,4 @@ A type conversion was attempted between two incompatible types.
 -   Verify the types that are being cast.  
   
 ## See Also  
- [CType Function](/dotnet/visual-basic/language-reference/functions/ctype-function)
+ [CType Function](/dotnet/articles/visual-basic/language-reference/functions/ctype-function)

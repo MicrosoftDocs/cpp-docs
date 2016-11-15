@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS1522
 Empty switch block  
   
- The compiler detected a [switch](/dotnet/csharp/language-reference/keywords/switch) block with no **case** or **default** statement. A `switch` block must have one or more **case** or **default** statements.  
+ The compiler detected a [switch](/dotnet/articles/csharp/language-reference/keywords/switch) block with no **case** or **default** statement. A `switch` block must have one or more **case** or **default** statements.  
   
  The following sample generates CS1522:  
   

@@ -44,4 +44,4 @@ translation.priority.mt:
 -   Remove `Select` statements from debugging code.  
   
 ## See Also  
- [Select...Case Statement](/dotnet/visual-basic/language-reference/statements/select-case-statement)
+ [Select...Case Statement](/dotnet/articles/visual-basic/language-reference/statements/select-case-statement)

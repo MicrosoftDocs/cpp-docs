@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0073
 An add or remove accessor must have a body  
   
- An **add** or **remove** keyword in an [event](/dotnet/csharp/language-reference/keywords/event) definition must have a body. For more information, see [Events](/dotnet/csharp/programming-guide/events/index).  
+ An **add** or **remove** keyword in an [event](/dotnet/articles/csharp/language-reference/keywords/event) definition must have a body. For more information, see [Events](/dotnet/articles/csharp/programming-guide/events/index).  
   
  The following sample generates CS0073:  
   

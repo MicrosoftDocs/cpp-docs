@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1007
 Property accessor already defined  
   
- When you declare a [property](/dotnet/csharp/programming-guide/classes-and-structs/using-properties), you must also declare its accessor methods. However, a property cannot have more than one `get` accessor method or more than one `set` accessor method.  
+ When you declare a [property](/dotnet/articles/csharp/programming-guide/classes-and-structs/using-properties), you must also declare its accessor methods. However, a property cannot have more than one `get` accessor method or more than one `set` accessor method.  
   
 ## Example  
  The following sample generates CS1007:  

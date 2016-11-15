@@ -46,5 +46,5 @@ Optional parameters cannot be structure types.
 2.  Declare a static class member to take the place of a structure.  
   
 ## See Also  
- [Structures](/dotnet/visual-basic/programming-guide/language-features/data-types/structures)   
- [Static](/dotnet/visual-basic/language-reference/modifiers/static)
+ [Structures](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures)   
+ [Static](/dotnet/articles/visual-basic/language-reference/modifiers/static)

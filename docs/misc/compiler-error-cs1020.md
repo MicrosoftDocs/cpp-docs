@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1020
 Overloadable binary operator expected  
   
- An attempt was made to define an [operator overload](/dotnet/csharp/programming-guide/statements-expressions-operators/overloadable-operators), but the operator was not a binary operator, which takes two parameters.  
+ An attempt was made to define an [operator overload](/dotnet/articles/csharp/programming-guide/statements-expressions-operators/overloadable-operators), but the operator was not a binary operator, which takes two parameters.  
   
  The following sample generates CS1020:  
   

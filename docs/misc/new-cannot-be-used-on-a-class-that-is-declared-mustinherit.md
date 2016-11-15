@@ -44,5 +44,5 @@ A `MustInherit` class cannot be instantiated directly, and therefore the `New` o
 -   Remove the `New` operator.  
   
 ## See Also  
- [MustInherit](/dotnet/visual-basic/language-reference/modifiers/mustinherit)   
- [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator)
+ [MustInherit](/dotnet/articles/visual-basic/language-reference/modifiers/mustinherit)   
+ [New Operator](/dotnet/articles/visual-basic/language-reference/operators/new-operator)

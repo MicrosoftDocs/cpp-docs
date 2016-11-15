@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0177
 The out parameter 'parameter' must be assigned to before control leaves the current method  
   
- A parameter marked with the [out](/dotnet/csharp/language-reference/keywords/out) keyword was not assigned a value in the method body. For more information, see [Passing Parameters](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)  
+ A parameter marked with the [out](/dotnet/articles/csharp/language-reference/keywords/out) keyword was not assigned a value in the method body. For more information, see [Passing Parameters](/dotnet/articles/csharp/programming-guide/classes-and-structs/passing-parameters)  
   
  The following sample generates CS0177:  
   

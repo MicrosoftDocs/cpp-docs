@@ -44,5 +44,5 @@ translation.priority.mt:
 1.  Remove `Try...Catch...Finally` statements from debugging code.  
   
 ## See Also  
- [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
+ [Try...Catch...Finally Statement](/dotnet/articles/visual-basic/language-reference/statements/try-catch-finally-statement)   
  [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

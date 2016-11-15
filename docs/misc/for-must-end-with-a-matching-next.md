@@ -46,4 +46,4 @@ A `For` statement occurs without a corresponding `Next` statement. A `Next` stat
 -   Add a `Next` statement to the end of the `For` loop.  
   
 ## See Also  
- [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)
+ [For...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-next-statement)

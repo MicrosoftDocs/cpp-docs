@@ -37,25 +37,25 @@ translation.priority.mt:
 # Inappropriate use of &lt;keyword&gt; keyword in a module
 Modules do not have instances, support inheritance, or implement interfaces. Therefore, the following keywords do not apply to a module declaration:  
   
--   [MustInherit](/dotnet/visual-basic/language-reference/modifiers/mustinherit)  
+-   [MustInherit](/dotnet/articles/visual-basic/language-reference/modifiers/mustinherit)  
   
--   [NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)  
+-   [NotInheritable](/dotnet/articles/visual-basic/language-reference/modifiers/notinheritable)  
   
--   [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads)  
+-   [Overloads](/dotnet/articles/visual-basic/language-reference/modifiers/overloads)  
   
--   [Private](/dotnet/visual-basic/language-reference/modifiers/private)  
+-   [Private](/dotnet/articles/visual-basic/language-reference/modifiers/private)  
   
--   [Protected](/dotnet/visual-basic/language-reference/modifiers/protected)  
+-   [Protected](/dotnet/articles/visual-basic/language-reference/modifiers/protected)  
   
--   [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)  
+-   [Shadows](/dotnet/articles/visual-basic/language-reference/modifiers/shadows)  
   
--   [Shared](/dotnet/visual-basic/language-reference/modifiers/shared)  
+-   [Shared](/dotnet/articles/visual-basic/language-reference/modifiers/shared)  
   
--   [Static](/dotnet/visual-basic/language-reference/modifiers/static)  
+-   [Static](/dotnet/articles/visual-basic/language-reference/modifiers/static)  
   
- The only keywords supported in a [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement) are [Public](/dotnet/visual-basic/language-reference/modifiers/public) and [Friend](/dotnet/visual-basic/language-reference/modifiers/friend).  
+ The only keywords supported in a [Module Statement](/dotnet/articles/visual-basic/language-reference/statements/module-statement) are [Public](/dotnet/articles/visual-basic/language-reference/modifiers/public) and [Friend](/dotnet/articles/visual-basic/language-reference/modifiers/friend).  
   
- In addition, you cannot use the [Implements](/dotnet/visual-basic/language-reference/statements/implements-clause) statement or the [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement) in the statement block of the module.  
+ In addition, you cannot use the [Implements](/dotnet/articles/visual-basic/language-reference/statements/implements-clause) statement or the [Inherits Statement](/dotnet/articles/visual-basic/language-reference/statements/inherits-statement) in the statement block of the module.  
   
  By default, this message is a warning. For more information about how to hide warnings or treat warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
@@ -68,4 +68,4 @@ Modules do not have instances, support inheritance, or implement interfaces. The
 -   If you intend to create instances of this programming element, declare it as a class. You can then use the keywords that apply to a class declaration.  
   
 ## See Also  
- [Class Statement](/dotnet/visual-basic/language-reference/statements/class-statement)
+ [Class Statement](/dotnet/articles/visual-basic/language-reference/statements/class-statement)

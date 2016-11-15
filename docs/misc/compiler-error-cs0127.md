@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0127
 Since 'function' returns void, a return keyword must not be followed by an object expression  
   
- A method with a [void](/dotnet/csharp/language-reference/keywords/void) return type cannot return a value. For more information, see [Methods](/dotnet/csharp/programming-guide/classes-and-structs/methods).  
+ A method with a [void](/dotnet/articles/csharp/language-reference/keywords/void) return type cannot return a value. For more information, see [Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/methods).  
   
  The following sample generates CS0127:  
   

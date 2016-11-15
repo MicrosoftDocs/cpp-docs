@@ -53,4 +53,4 @@ Next J, I, K   ' Next J, I is valid, but there is no loop on K.
 2.  Remove any extraneous variables from the `Next` statement.  
   
 ## See Also  
- [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)
+ [For...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-next-statement)

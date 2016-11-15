@@ -44,4 +44,4 @@ translation.priority.mt:
 -   Specify either `Option Explicit On` or `Option Explicit Off`.  
   
 ## See Also  
- [Option Explicit Statement](/dotnet/visual-basic/language-reference/statements/option-explicit-statement)
+ [Option Explicit Statement](/dotnet/articles/visual-basic/language-reference/statements/option-explicit-statement)
