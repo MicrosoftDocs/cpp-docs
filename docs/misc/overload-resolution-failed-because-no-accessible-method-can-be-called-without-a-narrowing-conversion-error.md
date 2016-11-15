@@ -2,7 +2,6 @@
 title: "Overload resolution failed because no accessible &#39;&lt;method&gt;&#39; can be called without a narrowing conversion: &lt;error&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,6 +44,6 @@ You have made a call to an overloaded method, but the compiler cannot find a met
 -   Specify `Option Strict Off`.  
   
 ## See Also  
- [Overloaded Properties and Methods](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/overloaded-properties-and-methods)   
- [Widening and Narrowing Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)   
- [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)
+ [Overloaded Properties and Methods](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/overloaded-properties-and-methods)   
+ [Widening and Narrowing Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)   
+ [Option Strict Statement](/dotnet/articles/visual-basic/language-reference/statements/option-strict-statement)

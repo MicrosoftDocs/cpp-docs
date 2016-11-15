@@ -2,7 +2,6 @@
 title: "Constant cannot be the target of an assignment | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ A constant occurs in a context that assigns a value to it. Only writable variabl
 -   Replace the constant with a single writable variable, property, or array element.  
   
 ## See Also  
- [Constants and Enumerations](/dotnet/visual-basic/programming-guide/language-features/constants-enums/index)   
+ [Constants and Enumerations](/dotnet/articles/visual-basic/programming-guide/language-features/constants-enums/index)   
  [NotInBuild:Assignment Statements](http://msdn.microsoft.com/en-us/eb4f91e9-fbbf-45ca-b21d-e8ae069de4f9)

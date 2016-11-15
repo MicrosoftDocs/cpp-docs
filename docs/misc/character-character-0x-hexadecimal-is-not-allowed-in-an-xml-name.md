@@ -2,7 +2,6 @@
 title: "Character &#39;character&#39; (0x&lt;hexadecimal&gt;) is not allowed in an XML name | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,6 +44,6 @@ An unsupported character is included in the name of an XML literal or an XML axi
 -   Remove the unsupported character from the name of the XML literal or XML axis property.  
   
 ## See Also  
- [Names of Declared XML Elements and Attributes](/dotnet/visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes)   
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [Names of Declared XML Elements and Attributes](/dotnet/articles/visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes)   
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

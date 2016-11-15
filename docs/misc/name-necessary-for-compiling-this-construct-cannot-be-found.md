@@ -2,7 +2,6 @@
 title: "&#39;&lt;name&gt;&#39;, necessary for compiling this construct, cannot be found | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ An element necessary for compilation cannot be found.
 2.  Make sure the code is valid managed code.  
   
 ## See Also  
- [Managed Execution Process](../Topic/Managed%20Execution%20Process.md)
+ [Managed Execution Process](http://msdn.microsoft.com/Library/476b03dc-2b12-49a7-b067-41caeaa2f533)

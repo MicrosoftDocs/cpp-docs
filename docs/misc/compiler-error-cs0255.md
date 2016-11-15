@@ -2,7 +2,6 @@
 title: "Compiler Error CS0255 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0255
 stackalloc may not be used in a catch or finally block  
   
- The [stackalloc](/dotnet/csharp/language-reference/keywords/stackalloc) keyword may not be used in a [catch](/dotnet/csharp/language-reference/keywords/try-catch) or [finally](/dotnet/csharp/language-reference/keywords/try-catch-finally) block. For more information, see [Exceptions and Exception Handling](/dotnet/csharp/programming-guide/exceptions/exceptions-and-exception-handling).  
+ The [stackalloc](/dotnet/articles/csharp/language-reference/keywords/stackalloc) keyword may not be used in a [catch](/dotnet/articles/csharp/language-reference/keywords/try-catch) or [finally](/dotnet/articles/csharp/language-reference/keywords/try-catch-finally) block. For more information, see [Exceptions and Exception Handling](/dotnet/articles/csharp/programming-guide/exceptions/exceptions-and-exception-handling).  
   
  The following sample generates CS0255:  
   

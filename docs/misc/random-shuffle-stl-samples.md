@@ -2,7 +2,6 @@
 title: "random_shuffle (STL Samples) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,6 +33,6 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # random_shuffle (STL Samples)
-The std::random_shuffle() function is deprecated, replaced by [std::shuffle()](../Topic/std::shuffle.md). For a code example and more information, see [\<random>](../standard-library/random.md) and the Stackoverflow posting [Why are std::random_shuffle methods being deprecated in C++14?](http://go.microsoft.com/fwlink/?LinkId=397954).  
+The std::random_shuffle() function is deprecated, replaced by [std::shuffle()](http://msdn.microsoft.com/Library/ef345cd0-ef35-4019-9340-7d062fcd2eab). For a code example and more information, see [\<random>](../standard-library/random.md) and the Stackoverflow posting [Why are std::random_shuffle methods being deprecated in C++14?](http://go.microsoft.com/fwlink/?LinkId=397954).  
   
 ## Syntax

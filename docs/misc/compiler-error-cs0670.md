@@ -2,7 +2,6 @@
 title: "Compiler Error CS0670 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0670
 Field cannot have void type  
   
- A field was declared to be of type [void](/dotnet/csharp/language-reference/keywords/void).  
+ A field was declared to be of type [void](/dotnet/articles/csharp/language-reference/keywords/void).  
   
  The following sample generates CS0670:  
   

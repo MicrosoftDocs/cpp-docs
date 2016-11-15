@@ -2,7 +2,6 @@
 title: "Range specified for &#39;Case&#39; statement is not valid | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,6 +46,6 @@ An invalid range has been specified for a `Case` statement.
 -   Modify the range to include all values, or use a `Case Else` statement to catch an undefined value.  
   
 ## See Also  
- [Select...Case Statement](/dotnet/visual-basic/language-reference/statements/select-case-statement)   
- [Decision Structures](/dotnet/visual-basic/programming-guide/language-features/control-flow/decision-structures)   
- [Widening and Narrowing Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)
+ [Select...Case Statement](/dotnet/articles/visual-basic/language-reference/statements/select-case-statement)   
+ [Decision Structures](/dotnet/articles/visual-basic/programming-guide/language-features/control-flow/decision-structures)   
+ [Widening and Narrowing Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)

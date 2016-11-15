@@ -2,7 +2,6 @@
 title: "Value of type &#39;&lt;type1&gt;&#39; cannot be converted to &#39;&lt;type2&gt;&#39; because &#39;&lt;type3&gt;&#39; is not derived from &#39;&lt;type4&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ A statement attempts to convert an array type to another array type in a situati
 -   Check the data types of the elements of both arrays to determine the source of the error.  
   
 ## See Also  
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)   
- [Array Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/array-conversions)
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)   
+ [Array Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/array-conversions)

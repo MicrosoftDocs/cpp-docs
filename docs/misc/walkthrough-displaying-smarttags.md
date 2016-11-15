@@ -2,7 +2,6 @@
 title: "Walkthrough: Displaying SmartTags | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -31,7 +30,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Walkthrough: Displaying SmartTags
-Smart tags are deprecated in favor of light bulbs. See [Walkthrough: Displaying Light Bulb Suggestions](../Topic/Walkthrough:%20Displaying%20Light%20Bulb%20Suggestions.md).  
+Smart tags are deprecated in favor of light bulbs. See [Walkthrough: Displaying Light Bulb Suggestions](http://msdn.microsoft.com/Library/99e5566d-450e-4660-9bca-454e1c056a02).  
   
  Smart tags are tags on text that expand to display a set of actions. For example, in a Visual Basic or Visual C# project, a red line appears under a word when you rename an identifier such as a variable name. When you move the pointer over the underline, a button is displayed near the pointer. If you click the button, a suggested action is displayed, for example, **Rename IsRead to IsReady**. If you click the action, all references to **IsRead** in the project are renamed **IsReady**.  
   
@@ -43,7 +42,7 @@ Smart tags are deprecated in favor of light bulbs. See [Walkthrough: Displaying 
  The following walkthrough shows how to create a smart tag that appears on the current word and has two suggested actions: **Convert to upper case** and **Convert to lower case**.  
   
 ## Prerequisites  
- To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](/visual-studio/extensibility/visual-studio-sdk).  
+ To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](/visualstudio/extensibility/visual-studio-sdk).  
   
 ## Creating a Managed Extensibility Framework (MEF) Project  
   
@@ -197,4 +196,4 @@ Smart tags are deprecated in favor of light bulbs. See [Walkthrough: Displaying 
 5.  When you click the button, two suggested actions should be displayed: **Convert to upper case** and **Convert to lower case**. If you click the first action, all the text in the current word should be converted to upper case. If you click the second action, all the text should be converted to lower case.  
   
 ## See Also  
- [Walkthrough: Linking a Content Type to a File Name Extension](../Topic/Walkthrough:%20Linking%20a%20Content%20Type%20to%20a%20File%20Name%20Extension.md)
+ [Walkthrough: Linking a Content Type to a File Name Extension](http://msdn.microsoft.com/Library/21ee64ce-9afe-4b08-94a0-8389cc4dc67c)

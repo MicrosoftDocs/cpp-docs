@@ -2,7 +2,6 @@
 title: "Method &#39;&lt;methodname&gt;&#39; has no parameter named &#39;&lt;parametername&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,4 +39,4 @@ A supplied named argument does not match any of the arguments of the target meth
 1.  Ensure that the named argument was supplied correctly.  
   
 ## See Also  
- [Passing Arguments by Value and by Reference](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)
+ [Passing Arguments by Value and by Reference](/dotnet/articles/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)

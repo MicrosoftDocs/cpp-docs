@@ -2,7 +2,6 @@
 title: "Compiler Error CS1934 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -68,4 +67,4 @@ static class Test
 ```  
   
 ## See Also  
- [How to: Query an ArrayList with LINQ](../Topic/How%20to:%20Query%20an%20ArrayList%20with%20LINQ.md)
+ [How to: Query an ArrayList with LINQ](http://msdn.microsoft.com/Library/c318b79a-fa4d-4de3-b62d-c1162beb267e)

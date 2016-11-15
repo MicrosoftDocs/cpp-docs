@@ -2,7 +2,6 @@
 title: "Property access must assign to the property or use its value | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,5 +48,5 @@ You have tried to access a property without assigning to it or using its value.
 -   Use the value of the property.  
   
 ## See Also  
- [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)   
- [Assignment Operators](/dotnet/visual-basic/language-reference/operators/assignment-operators)
+ [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)   
+ [Assignment Operators](/dotnet/articles/visual-basic/language-reference/operators/assignment-operators)

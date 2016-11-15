@@ -2,7 +2,6 @@
 title: "&#39;&lt;procedurename&gt;&#39; has a return type that is not supported or parameter types that are not supported | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ A procedure is declared with parameters or a return type that cannot be represen
 -   Develop a new type that describes the data used by this procedure.  
   
 ## See Also  
- [Data Types](/dotnet/visual-basic/language-reference/data-types/data-type-summary)
+ [Data Types](/dotnet/articles/visual-basic/language-reference/data-types/data-type-summary)

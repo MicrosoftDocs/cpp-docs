@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB3123 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,5 +43,5 @@ translation.priority.mt:
 -   Limit the number of file associations to the specified number.  
   
 ## See Also  
- [Publish Page, Project Designer](/visual-studio/ide/reference/publish-page-project-designer)   
- [ClickOnce Application Manifest](/visual-studio/deployment/clickonce-application-manifest)
+ [Publish Page, Project Designer](/visualstudio/ide/reference/publish-page-project-designer)   
+ [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)

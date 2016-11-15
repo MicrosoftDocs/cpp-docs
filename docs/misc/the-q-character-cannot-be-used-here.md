@@ -2,7 +2,6 @@
 title: "The &#39;?&#39; character cannot be used here | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,4 +49,4 @@ The '?' character can be used to specify that a value type or structure is nulla
 -   Remove the '?' character from the declaration.  
   
 ## See Also  
- [Nullable Value Types](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)
+ [Nullable Value Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

@@ -2,7 +2,6 @@
 title: "&#39;MyClass&#39; must be followed by &#39;.&#39; and an identifier | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,5 +48,5 @@ translation.priority.mt:
 ## See Also  
  [MyClass - delete](http://msdn.microsoft.com/en-us/5db36f9b-f796-4b6a-ba34-cac1fde6eb62)   
  [Me](http://msdn.microsoft.com/en-us/a65973c7-cf06-4547-9b25-9fba885525c2)   
- [NotOverridable](/dotnet/visual-basic/language-reference/modifiers/notoverridable)   
- [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
+ [NotOverridable](/dotnet/articles/visual-basic/language-reference/modifiers/notoverridable)   
+ [Inheritance Basics](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

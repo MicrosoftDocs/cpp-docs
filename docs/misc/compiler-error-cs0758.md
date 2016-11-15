@@ -2,7 +2,6 @@
 title: "Compiler Error CS0758 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -67,5 +66,5 @@ using System;
 ```  
   
 ## See Also  
- [Partial Classes and Methods](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)   
- [params](/dotnet/csharp/language-reference/keywords/params)
+ [Partial Classes and Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)   
+ [params](/dotnet/articles/csharp/language-reference/keywords/params)

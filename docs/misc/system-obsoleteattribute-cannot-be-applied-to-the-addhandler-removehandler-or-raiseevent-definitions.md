@@ -2,7 +2,6 @@
 title: "&#39;System.ObsoleteAttribute&#39; cannot be applied to the &#39;AddHandler&#39;, &#39;RemoveHandler&#39;, or &#39;RaiseEvent&#39; definitions | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -52,7 +51,7 @@ translation.priority.mt:
   
 ## See Also  
  <xref:System.ObsoleteAttribute>   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)   
- [AddHandler Statement](/dotnet/visual-basic/language-reference/statements/addhandler-statement)   
- [RemoveHandler Statement](/dotnet/visual-basic/language-reference/statements/removehandler-statement)   
- [RaiseEvent Statement](/dotnet/visual-basic/language-reference/statements/raiseevent-statement)
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)   
+ [AddHandler Statement](/dotnet/articles/visual-basic/language-reference/statements/addhandler-statement)   
+ [RemoveHandler Statement](/dotnet/articles/visual-basic/language-reference/statements/removehandler-statement)   
+ [RaiseEvent Statement](/dotnet/articles/visual-basic/language-reference/statements/raiseevent-statement)

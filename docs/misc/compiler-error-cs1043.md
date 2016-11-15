@@ -2,7 +2,6 @@
 title: "Compiler Error CS1043 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1043
 { or ; expected  
   
- A property accessor was declared incorrectly. For more information, see [Using Properties](/dotnet/csharp/programming-guide/classes-and-structs/using-properties).  
+ A property accessor was declared incorrectly. For more information, see [Using Properties](/dotnet/articles/csharp/programming-guide/classes-and-structs/using-properties).  
   
 ## Example  
  The following sample generates CS1043.  

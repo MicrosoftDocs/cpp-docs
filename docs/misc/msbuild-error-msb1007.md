@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB1007 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -68,4 +67,4 @@ translation.priority.mt:
      `/logger:XMLLogger,..LoggersMyLogger.dll;OutputAsHTML`  
   
 ## See Also  
- [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)
+ [Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference)

@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB3171 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,7 +40,7 @@ translation.priority.mt:
   
 ### To correct this error  
   
--   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources).  
+-   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](/visualstudio/msbuild/additional-msbuild-resources).  
   
 ## See Also  
- [Product and Package Schema Reference](/visual-studio/deployment/product-and-package-schema-reference)
+ [Product and Package Schema Reference](/visualstudio/deployment/product-and-package-schema-reference)

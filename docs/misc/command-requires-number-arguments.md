@@ -2,7 +2,6 @@
 title: "Command requires &lt;number&gt; arguments. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,4 +40,4 @@ This error generally occurs when too few or too many arguments have been entered
 1.  Check the documentation for the correct syntax for the command and try again.  
   
 ## See Also  
- [Visual Studio Commands](/visual-studio/ide/reference/visual-studio-commands)
+ [Visual Studio Commands](/visualstudio/ide/reference/visual-studio-commands)

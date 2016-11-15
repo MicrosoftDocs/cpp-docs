@@ -2,7 +2,6 @@
 title: "&#39;Inherits&#39; not valid in Modules | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ An `Inherits` statement occurs inside a module. Modules cannot inherit from clas
 -   Remove the `Inherits` statement, or retype the module as a class.  
   
 ## See Also  
- [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement)   
- [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)
+ [Inherits Statement](/dotnet/articles/visual-basic/language-reference/statements/inherits-statement)   
+ [Module Statement](/dotnet/articles/visual-basic/language-reference/statements/module-statement)

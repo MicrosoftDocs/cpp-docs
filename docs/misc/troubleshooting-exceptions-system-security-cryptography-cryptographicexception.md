@@ -2,7 +2,6 @@
 title: "Troubleshooting Exceptions: System.Security.Cryptography.CryptographicException | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,4 +40,4 @@ The exception that is thrown when an error occurs during a cryptographic operati
 ## See Also  
  <xref:System.Security.Cryptography.CryptographicException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Cryptography Model](../Topic/.NET%20Framework%20Cryptography%20Model.md)
+ [Cryptography Model](http://msdn.microsoft.com/Library/12fecad4-fbab-432a-bade-2f05976a2971)

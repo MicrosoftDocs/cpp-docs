@@ -2,7 +2,6 @@
 title: "Type argument inference failed for type parameter &#39;&lt;typeparametername&gt;&#39; of &#39;&lt;genericproceduresignature&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -61,6 +60,6 @@ Call doSomething(6, 42)
 -   Supply normal arguments with types that match those of the type arguments.  
   
 ## See Also  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures)   
- [Type List](/dotnet/visual-basic/language-reference/statements/type-list)
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Generic Procedures in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-procedures)   
+ [Type List](/dotnet/articles/visual-basic/language-reference/statements/type-list)

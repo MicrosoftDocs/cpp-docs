@@ -2,7 +2,6 @@
 title: "&#39;Interface&#39; must end with a matching &#39;End Interface&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ An `Interface` statement occurs without a corresponding `End Interface` statemen
 2.  Add an `End Interface` statement tot the end of the interface definition.  
   
 ## See Also  
- [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)
+ [Interface Statement](/dotnet/articles/visual-basic/language-reference/statements/interface-statement)

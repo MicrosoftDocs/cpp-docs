@@ -2,7 +2,6 @@
 title: "File &#39;&lt;filename&gt;&#39; is write protected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,4 +37,4 @@ The file you are attempting to write to is write-protected and therefore cannot 
 1.  Change permissions on the file to read/write, or write to a different file.  
   
 ## See Also  
- [Troubleshooting: Reading from and Writing to Text Files](../Topic/Troubleshooting:%20Reading%20from%20and%20Writing%20to%20Text%20Files%20\(Visual%20Basic\).md)
+ [Troubleshooting: Reading from and Writing to Text Files](http://msdn.microsoft.com/Library/a8e9b44d-facb-4718-8c0f-466537171182)

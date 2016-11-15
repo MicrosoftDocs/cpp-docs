@@ -2,7 +2,6 @@
 title: "find_first_of (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,7 +49,7 @@ template<class _FwdIt1, class _FwdIt2, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `find_first_of`. For more information, see [find_first_of](../Topic/find_first_of.md).  
+ This function behaves the same as the STL function `find_first_of`. For more information, see [find_first_of](http://msdn.microsoft.com/Library/e00a4ca9-6d56-446e-9174-14ffdbc87079).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

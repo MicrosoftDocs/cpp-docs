@@ -2,7 +2,6 @@
 title: "&#39;&lt;typename&gt;&#39; is an unsupported type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ The type specified cannot be represented by [!INCLUDE[vsprvs](../assembler/masm/
 -   Develop a new type.  
   
 ## See Also  
- [Data Types](/dotnet/visual-basic/language-reference/data-types/data-type-summary)
+ [Data Types](/dotnet/articles/visual-basic/language-reference/data-types/data-type-summary)

@@ -2,7 +2,6 @@
 title: "Compiler Error CS0101 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0101
 The namespace 'namespace' already contains a definition for 'type'  
   
- A [namespace](/dotnet/csharp/language-reference/keywords/namespace) has duplicate identifiers. Rename or delete one of the duplicate identifiers. For more information, see [Namespaces](/dotnet/csharp/programming-guide/namespaces/index)  
+ A [namespace](/dotnet/articles/csharp/language-reference/keywords/namespace) has duplicate identifiers. Rename or delete one of the duplicate identifiers. For more information, see [Namespaces](/dotnet/articles/csharp/programming-guide/namespaces/index)  
   
  The following sample generates CS0101:  
   

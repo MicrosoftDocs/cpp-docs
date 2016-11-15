@@ -2,7 +2,6 @@
 title: "XML comment tag &#39;returns&#39; is not permitted on a &#39;WriteOnly&#39; Property | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,7 +46,7 @@ XML comment tag 'returns' is not permitted on a 'WriteOnly' Property. XML commen
 -   Remove the unsupported \<returns> tag.  
   
 ## See Also  
- [\<returns>](../Topic/%3Creturns%3E%20\(Visual%20Basic\).md)   
- [XML Comment Tags](/dotnet/visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments)   
- [Documenting Your Code with XML](/dotnet/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)   
- [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)
+ [\<returns>](http://msdn.microsoft.com/Library/a03a6469-d907-425d-882f-083187950e7e)   
+ [XML Comment Tags](/dotnet/articles/visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments)   
+ [Documenting Your Code with XML](/dotnet/articles/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)   
+ [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement)

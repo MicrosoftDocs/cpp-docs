@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB3072 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,5 +43,5 @@ translation.priority.mt:
 1.  In the project file, specify the attribute `Command` for the `Exec` task.  
   
 ## See Also  
- [Exec Task](/visual-studio/msbuild/exec-task)   
- [Tasks](/visual-studio/msbuild/msbuild-tasks)
+ [Exec Task](/visualstudio/msbuild/exec-task)   
+ [Tasks](/visualstudio/msbuild/msbuild-tasks)

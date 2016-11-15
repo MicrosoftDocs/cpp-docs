@@ -2,7 +2,6 @@
 title: "&#39;End&#39; statement cannot be used in class library projects | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ Class library projects used to create DLLs do not allow the use of the `End` key
 -   Use control structures such as `While` and `For` to control the flow of program execution.  
   
 ## See Also  
- [Control Flow](/dotnet/visual-basic/programming-guide/language-features/control-flow/index)
+ [Control Flow](/dotnet/articles/visual-basic/programming-guide/language-features/control-flow/index)

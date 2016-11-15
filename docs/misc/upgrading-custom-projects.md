@@ -2,7 +2,6 @@
 title: "Upgrading Custom Projects | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -134,4 +133,4 @@ If you change the information persisted in the project file between different Vi
 ## See Also  
  [Visual Studio Conversion Wizard](http://msdn.microsoft.com/en-us/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [Upgrading Project Items](../misc/upgrading-project-items.md)   
- [Projects](/visual-studio/extensibility/internals/projects)
+ [Projects](/visualstudio/extensibility/internals/projects)

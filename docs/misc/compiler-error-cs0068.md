@@ -2,7 +2,6 @@
 title: "Compiler Error CS0068 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0068
 'event': event in interface cannot have initializer  
   
- An event in an interface cannot have an initializer. For more information, see [Interfaces](/dotnet/csharp/programming-guide/interfaces/index).  
+ An event in an interface cannot have an initializer. For more information, see [Interfaces](/dotnet/articles/csharp/programming-guide/interfaces/index).  
   
  The following sample generates CS0068:  
   

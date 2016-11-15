@@ -2,7 +2,6 @@
 title: "&#39;RemoveHandler&#39; is already declared | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ More than one `RemoveHandler` declaration appeared in a custom event declaration
 -   Remove the redundant `RemoveHandler` statement.  
   
 ## See Also  
- [RemoveHandler Statement](/dotnet/visual-basic/language-reference/statements/removehandler-statement)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [RemoveHandler Statement](/dotnet/articles/visual-basic/language-reference/statements/removehandler-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

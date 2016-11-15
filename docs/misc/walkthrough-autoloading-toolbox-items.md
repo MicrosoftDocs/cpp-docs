@@ -2,7 +2,6 @@
 title: "Walkthrough: Autoloading Toolbox Items | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -37,7 +36,7 @@ This walkthrough illustrates how a managed VSPackage can use reflection to autom
 > [!NOTE]
 >  The recommended way to add custom controls to the Toolbox is to use the Toolbox Control templates that come with the Visual Studio SDK, which includes auto-loading support. This topic is retained for backward compatibility, for adding existing controls to the Toolbox, and for advanced Toolbox development.  
 >   
->  For more information on creating toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](/visual-studio/extensibility/creating-a-wpf-toolbox-control).  
+>  For more information on creating toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](/visualstudio/extensibility/creating-a-wpf-toolbox-control).  
   
  This walkthrough guides you through the following steps:  
   
@@ -132,7 +131,7 @@ This walkthrough illustrates how a managed VSPackage can use reflection to autom
 3.  Close the experimental version of [!INCLUDE[vs_current_short](../misc/includes/vs_current_short_md.md)].  
   
 ## Creating a Toolbox Control  
- In this section, you create and register a user control, `Control1`, that declares an associated default **Toolbox** item. For more information about how to author Windows Form controls and the <xref:System.Drawing.Design.ToolboxItem> class, see [Developing Windows Forms Controls at Design Time](../Topic/Developing%20Windows%20Forms%20Controls%20at%20Design%20Time.md).  
+ In this section, you create and register a user control, `Control1`, that declares an associated default **Toolbox** item. For more information about how to author Windows Form controls and the <xref:System.Drawing.Design.ToolboxItem> class, see [Developing Windows Forms Controls at Design Time](http://msdn.microsoft.com/Library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
   
 #### To create a Toolbox control that will be used with a default ToolboxItem  
   
@@ -317,7 +316,7 @@ This walkthrough illustrates how a managed VSPackage can use reflection to autom
   
 2.  Press F5 to start a second instance of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] in the experimental registry hive.  
   
-     For more information about how to use the experimental hive, see [The Experimental Instance](/visual-studio/extensibility/the-experimental-instance).  
+     For more information about how to use the experimental hive, see [The Experimental Instance](/visualstudio/extensibility/the-experimental-instance).  
   
 3.  Click the **Tools** menu.  
   

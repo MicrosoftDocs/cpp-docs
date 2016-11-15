@@ -2,7 +2,6 @@
 title: "Compiler Error CS0200 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0200
 Property or indexer 'property' cannot be assigned to — it is read only  
   
- An attempt was made to assign a value to a [property](/dotnet/csharp/programming-guide/classes-and-structs/using-properties), but the property does not have a set accessor. Resolve the error by adding a set accessor. For more information, see [How to: Declare and Use Read Write Properties](../Topic/How%20to:%20Declare%20and%20Use%20Read%20Write%20Properties%20\(C%23%20Programming%20Guide\).md).  
+ An attempt was made to assign a value to a [property](/dotnet/articles/csharp/programming-guide/classes-and-structs/using-properties), but the property does not have a set accessor. Resolve the error by adding a set accessor. For more information, see [How to: Declare and Use Read Write Properties](http://msdn.microsoft.com/Library/a4962fef-af7e-4c4b-a929-4ae4d646ab8a).  
   
 ## Example  
  The following sample generates CS0200:  

@@ -2,7 +2,6 @@
 title: "Could not find library &#39;&lt;libraryname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ The specified library could not be found.
 -   Check the library name to make sure it is correct.  
   
 ## See Also  
- [Debugger Basics](/visual-studio/debugger/debugger-basics)
+ [Debugger Basics](/visualstudio/debugger/debugger-basics)

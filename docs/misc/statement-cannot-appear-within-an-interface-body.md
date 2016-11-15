@@ -2,7 +2,6 @@
 title: "Statement cannot appear within an interface body | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,5 +46,5 @@ The declaration of an interface member includes a statement terminating the memb
 -   Remove the `End`*membername* statement from the interface definition.  
   
 ## See Also  
- [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)   
- [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)
+ [Interface Statement](/dotnet/articles/visual-basic/language-reference/statements/interface-statement)   
+ [End \<keyword> Statement](http://msdn.microsoft.com/Library/42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f)

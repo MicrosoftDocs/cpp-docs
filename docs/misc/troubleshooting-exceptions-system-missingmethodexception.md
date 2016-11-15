@@ -2,7 +2,6 @@
 title: "Troubleshooting Exceptions: System.MissingMethodException | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,4 +49,4 @@ A <xref:System.MissingMethodException> exception is thrown when there is an atte
 ## See Also  
  <xref:System.MissingMethodException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Troubleshooting Interoperability](/dotnet/visual-basic/programming-guide/com-interop/troubleshooting-interoperability)
+ [Troubleshooting Interoperability](/dotnet/articles/visual-basic/programming-guide/com-interop/troubleshooting-interoperability)

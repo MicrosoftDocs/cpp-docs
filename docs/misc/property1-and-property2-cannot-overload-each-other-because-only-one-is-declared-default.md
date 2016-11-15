@@ -2,7 +2,6 @@
 title: "&#39;&lt;property1&gt;&#39; and &#39;&lt;property2&gt;&#39; cannot overload each other because only one is declared &#39;Default&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ If a property specifies `Default`, all properties overloaded on that name must a
 -   Make sure all of the overloaded properties are declared `Default`.  
   
 ## See Also  
- [Considerations in Overloading Procedures](/dotnet/visual-basic/language-reference/procedures/considerations-in-overloading-procedures)   
- [Default](/dotnet/visual-basic/language-reference/modifiers/default)
+ [Considerations in Overloading Procedures](/dotnet/articles/visual-basic/language-reference/procedures/considerations-in-overloading-procedures)   
+ [Default](/dotnet/articles/visual-basic/language-reference/modifiers/default)

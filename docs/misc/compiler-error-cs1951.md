@@ -2,7 +2,6 @@
 title: "Compiler Error CS1951 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -62,4 +61,4 @@ class Test
 ```  
   
 ## See Also  
- [Expression Trees](../Topic/Expression%20Trees%20\(C%23%20and%20Visual%20Basic\).md)
+ [Expression Trees](http://msdn.microsoft.com/Library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)

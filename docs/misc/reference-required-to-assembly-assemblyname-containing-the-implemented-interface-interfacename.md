@@ -2,7 +2,6 @@
 title: "Reference required to assembly &#39;&lt;assemblyname&gt;&#39; containing the implemented interface &#39;&lt;interfacename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,4 +47,4 @@ Reference required to assembly '\<assemblyname>' containing the implemented inte
   
 ## See Also  
  [NIB: Referencing Namespaces and Components](http://msdn.microsoft.com/en-us/568fa759-796b-44cd-bf5e-1cf8de6e38fd)   
- [Troubleshooting Broken References](/visual-studio/ide/troubleshooting-broken-references)
+ [Troubleshooting Broken References](/visualstudio/ide/troubleshooting-broken-references)

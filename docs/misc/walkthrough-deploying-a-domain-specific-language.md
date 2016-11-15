@@ -2,7 +2,6 @@
 title: "Walkthrough: Deploying a Domain-Specific Language | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,4 +28,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Walkthrough: Deploying a Domain-Specific Language
-This topic is obsolete from Visual Studio 2010. DSLs are deployed using VSIX. For more information, see [Deploying Domain-Specific Language Solutions](/visual-studio/modeling/deploying-domain-specific-language-solutions).
+This topic is obsolete from Visual Studio 2010. DSLs are deployed using VSIX. For more information, see [Deploying Domain-Specific Language Solutions](/visualstudio/modeling/deploying-domain-specific-language-solutions).

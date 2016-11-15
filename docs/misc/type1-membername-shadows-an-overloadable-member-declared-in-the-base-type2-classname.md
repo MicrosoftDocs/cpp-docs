@@ -2,7 +2,6 @@
 title: "&lt;type1&gt; &#39;&lt;membername&gt;&#39; shadows an overloadable member declared in the base &lt;type2&gt; &#39;&lt;classname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,11 +37,11 @@ translation.priority.mt:
 # &lt;type1&gt; &#39;&lt;membername&gt;&#39; shadows an overloadable member declared in the base &lt;type2&gt; &#39;&lt;classname&gt;&#39;
 \<type1> '\<membername>' shadows an overloadable member declared in the base \<type2> '\<classname>. If you want to overload the base method, this method must be declared 'Overloads'.  
   
- A derived class defines a `Function` or `Sub` procedure or a `Property` with the same name as a procedure or property defined in the base class. Because procedures and properties are overloadable members, the derived class can either overload or shadow the base class member. However, the derived class code does not specify either [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads) or [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows) in the declaration. In the absence of either keyword, the compiler assumes `Shadows`.  
+ A derived class defines a `Function` or `Sub` procedure or a `Property` with the same name as a procedure or property defined in the base class. Because procedures and properties are overloadable members, the derived class can either overload or shadow the base class member. However, the derived class code does not specify either [Overloads](/dotnet/articles/visual-basic/language-reference/modifiers/overloads) or [Shadows](/dotnet/articles/visual-basic/language-reference/modifiers/shadows) in the declaration. In the absence of either keyword, the compiler assumes `Shadows`.  
   
  It is good programming practice to specify either `Overloads` or `Shadows`. This makes your code easier to read and understand.  
   
- By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40003  
   
@@ -55,10 +54,10 @@ translation.priority.mt:
 -   If you do not want to either overload or shadow the base class member, change the name of the derived class member.  
   
 ## See Also  
- [Procedure Overloading](/dotnet/visual-basic/language-reference/procedures/procedure-overloading)   
- [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads)   
- [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)   
- [Shadowing in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/shadowing)   
- [Function Statement](/dotnet/visual-basic/language-reference/statements/function-statement)   
- [Sub Statement](/dotnet/visual-basic/language-reference/statements/sub-statement)   
- [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)
+ [Procedure Overloading](/dotnet/articles/visual-basic/language-reference/procedures/procedure-overloading)   
+ [Overloads](/dotnet/articles/visual-basic/language-reference/modifiers/overloads)   
+ [Shadows](/dotnet/articles/visual-basic/language-reference/modifiers/shadows)   
+ [Shadowing in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/shadowing)   
+ [Function Statement](/dotnet/articles/visual-basic/language-reference/statements/function-statement)   
+ [Sub Statement](/dotnet/articles/visual-basic/language-reference/statements/sub-statement)   
+ [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement)

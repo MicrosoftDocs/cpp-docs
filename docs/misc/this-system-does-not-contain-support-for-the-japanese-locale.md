@@ -2,7 +2,6 @@
 title: "This system does not contain support for the Japanese locale | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,4 +41,4 @@ You are attempting to use the `VbStrConv.Japanese` enumeration member, but your 
 ## See Also  
  <xref:System.Globalization>   
  [NOTINBUILD VbStrConv Enumeration](http://msdn.microsoft.com/en-us/59f83dd9-6361-47df-a836-02ba9d4cb936)   
- [Introduction to International Applications Based on the .NET Framework](/visual-studio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)
+ [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)

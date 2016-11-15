@@ -2,7 +2,6 @@
 title: "VSCT Samples in C# and C++ | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -123,4 +122,4 @@ VSCT has become the new way of defining commands. Because of this, a change has 
  `<Bitmap guid="guidGenericCmdBmp" href="GenericCmd.bmp"    usedList="bmpArrow"/>`  
   
 ## See Also  
- [Visual Studio Command Table (.Vsct) Files](/visual-studio/extensibility/internals/visual-studio-command-table-dot-vsct-files)
+ [Visual Studio Command Table (.Vsct) Files](/visualstudio/extensibility/internals/visual-studio-command-table-dot-vsct-files)

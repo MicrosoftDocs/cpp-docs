@@ -2,7 +2,6 @@
 title: "Compiler Error CS1937 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -70,4 +69,4 @@ class Test
  The left side is generally called the "outer" side and the right is generally called the "inner" side.  
   
 ## See Also  
- [join clause](/dotnet/csharp/language-reference/keywords/join-clause)
+ [join clause](/dotnet/articles/csharp/language-reference/keywords/join-clause)

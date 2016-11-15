@@ -2,7 +2,6 @@
 title: "Compiler Error CS2017 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS2017
 Cannot specify /main if building a module or library  
   
- You cannot specify a main entry point when you are building a [/target:library](../Topic/-target:library%20\(C%23%20Compiler%20Options\).md).  
+ You cannot specify a main entry point when you are building a [/target:library](http://msdn.microsoft.com/Library/c5670e88-2126-47c1-8d1c-217923837d17).  
   
  The following sample generates CS2017:  
   

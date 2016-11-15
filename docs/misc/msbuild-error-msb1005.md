@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB1005 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,5 +43,5 @@ translation.priority.mt:
 1.  Specify a property name and value using the format `/property:<name>=<value>`. You can use either a comma or a semicolon to separate a list of properties, for example, `/property:WarningLevel=2;OutputDir=bin\Debug` or `/property:WarningLevel=2,OutputDir=bin\Debug`. Alternatively, you can repeat the switch, for example, `/p:WarningLevel=2 /p:OutputDir=bin\Debug`  
   
 ## See Also  
- [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)  
- [MSBuild Properties](/visual-studio/msbuild/msbuild-properties)
+ [Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference)  
+ [MSBuild Properties](/visualstudio/msbuild/msbuild-properties)

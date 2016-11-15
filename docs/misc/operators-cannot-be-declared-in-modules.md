@@ -2,7 +2,6 @@
 title: "Operators cannot be declared in Modules | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Operators cannot be declared in Modules
-An [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement) appears in a module definition.  
+An [Operator Statement](/dotnet/articles/visual-basic/language-reference/statements/operator-statement) appears in a module definition.  
   
  You can define an operator as part of a class or a structure that you are defining. The operator must take that class or structure as at least one of its operands.  
   
@@ -46,11 +45,11 @@ An [Operator Statement](/dotnet/visual-basic/language-reference/statements/opera
   
 ### To correct this error  
   
--   If you require an operation on the module, use a [Function Statement](/dotnet/visual-basic/language-reference/statements/function-statement) to define a `Function` procedure that performs the operation.  
+-   If you require an operation on the module, use a [Function Statement](/dotnet/articles/visual-basic/language-reference/statements/function-statement) to define a `Function` procedure that performs the operation.  
   
 -   You can also define a class or structure within the module and define an operator on that class or structure. However, that operator must take an instance of that class or structure as at least one of its operands.  
   
 ## See Also  
- [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
- [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
- [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)
+ [Operator Procedures](/dotnet/articles/visual-basic/language-reference/procedures/operator-procedures)   
+ [How to: Define an Operator](http://msdn.microsoft.com/Library/d4b0e253-092a-4e6e-9fe2-01f562140a29)   
+ [How to: Define a Conversion Operator](http://msdn.microsoft.com/Library/54203dfa-c24b-463f-9942-d5153e89e762)

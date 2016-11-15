@@ -2,7 +2,6 @@
 title: "Conversion from &#39;Date&#39; to &#39;Double&#39; requires calling the &#39;Date.ToOADate&#39; method | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ You have attempted to cast a `Date` value to a `Double` value, which cannot be d
 -   Use the <xref:System.DateTime.ToOADate%2A?displayProperty=fullName> method to convert the value.  
   
 ## See Also  
- [Type Conversions in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/type-conversions)
+ [Type Conversions in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/type-conversions)

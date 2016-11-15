@@ -2,7 +2,6 @@
 title: "Extension method &#39;&lt;methodName&gt;&#39; defined in &#39;&lt;typeName&gt;&#39; does not have the same signature as delegate &#39;&lt;delegateName&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -67,6 +66,6 @@ End Sub
 -   Compare the data type of each delegate parameter to the data type of the corresponding extension method parameter to make sure they are compatible.  
   
 ## See Also  
- [Extension Methods](/dotnet/visual-basic/language-reference/procedures/extension-methods)   
- [Delegate Statement](/dotnet/visual-basic/language-reference/statements/delegate-statement)   
- [Relaxed Delegate Conversion](/dotnet/visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion)
+ [Extension Methods](/dotnet/articles/visual-basic/language-reference/procedures/extension-methods)   
+ [Delegate Statement](/dotnet/articles/visual-basic/language-reference/statements/delegate-statement)   
+ [Relaxed Delegate Conversion](/dotnet/articles/visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion)

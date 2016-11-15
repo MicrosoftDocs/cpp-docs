@@ -2,7 +2,6 @@
 title: "&#39;Implements&#39; is not valid on operator declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,11 +35,11 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # &#39;Implements&#39; is not valid on operator declaration
-An [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement) specifies the [Implements](/dotnet/visual-basic/language-reference/statements/implements-clause) keyword.  
+An [Operator Statement](/dotnet/articles/visual-basic/language-reference/statements/operator-statement) specifies the [Implements](/dotnet/articles/visual-basic/language-reference/statements/implements-clause) keyword.  
   
  Only a `Function` or `Sub` procedure, a property, or an event can implement an interface member. For more information on implementation, see [NOT IN BUILD: Interface Implementation Examples in Visual Basic](http://msdn.microsoft.com/en-us/50bf2a30-73b6-4126-a921-075fd6eec278).  
   
- An `Operator` procedure requires both the `Public` and `Shared` keywords, and a conversion operator requires either the `Widening` or the `Narrowing` keyword. For more information, see [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures).  
+ An `Operator` procedure requires both the `Public` and `Shared` keywords, and a conversion operator requires either the `Widening` or the `Narrowing` keyword. For more information, see [Operator Procedures](/dotnet/articles/visual-basic/language-reference/procedures/operator-procedures).  
   
  **Error ID:** BC33004  
   
@@ -51,6 +50,6 @@ An [Operator Statement](/dotnet/visual-basic/language-reference/statements/opera
 -   If you intend this procedure to define an operator, remove the `Implements` keyword from its declaration.  
   
 ## See Also  
- [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)   
- [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
- [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)
+ [Operator Statement](/dotnet/articles/visual-basic/language-reference/statements/operator-statement)   
+ [How to: Define an Operator](http://msdn.microsoft.com/Library/d4b0e253-092a-4e6e-9fe2-01f562140a29)   
+ [How to: Define a Conversion Operator](http://msdn.microsoft.com/Library/54203dfa-c24b-463f-9942-d5153e89e762)

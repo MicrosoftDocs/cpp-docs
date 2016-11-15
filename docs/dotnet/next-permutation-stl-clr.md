@@ -2,7 +2,6 @@
 title: "next_permutation (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,7 +47,7 @@ template<class _BidIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `next_permutation`. For more information, see [next_permutation](../Topic/next_permutation.md).  
+ This function behaves the same as the STL function `next_permutation`. For more information, see [next_permutation](http://msdn.microsoft.com/Library/d412620b-73f7-4bdd-9ee6-e581504e9859).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

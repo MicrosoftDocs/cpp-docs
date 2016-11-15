@@ -2,7 +2,6 @@
 title: "Consumer Wizard-Generated Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,7 +43,7 @@ When you use the ATL OLE DB Consumer Wizard to generate a consumer, you have the
   
 -   If you select a templated consumer, the wizard generates a command class and a user record class. The command class will have the name that you enter in the Class box in the wizard (for example, `CProducts`), and the user record class will have a name of the form "*ClassName*Accessor" (for example, `CProductsAccessor`). Both classes are placed in the consumer's header file.  
   
--   If you select an attributed consumer, the user record class will have a name of the form "_*ClassName*Accessor" and will be injected. That is, you will be able to view only the command class in the text editor; you can only view the user record class as injected code. For information about viewing injected code, see [Debugging Injected Code](../Topic/How%20to:%20Debug%20Injected%20Code.md).  
+-   If you select an attributed consumer, the user record class will have a name of the form "_*ClassName*Accessor" and will be injected. That is, you will be able to view only the command class in the text editor; you can only view the user record class as injected code. For information about viewing injected code, see [Debugging Injected Code](http://msdn.microsoft.com/Library/a1b4104d-d49e-451f-a91e-e39ceaf35875).  
   
  The following examples use a command class created on the Products table of the Northwind database to demonstrate the wizard-generated consumer code for the command class and user record class.  
   
@@ -196,7 +195,7 @@ class CProducts : public CCommand<CAccessor<_CProductsAccessor> >
   
  Most of the injected code is the same as or similar to the templated version. The main differences are in the injected methods, which are described in [Consumer Wizard-Generated Methods](../../data/oledb/consumer-wizard-generated-methods.md).  
   
- For information about viewing injected code, see [Debugging Injected Code](../Topic/How%20to:%20Debug%20Injected%20Code.md).  
+ For information about viewing injected code, see [Debugging Injected Code](http://msdn.microsoft.com/Library/a1b4104d-d49e-451f-a91e-e39ceaf35875).  
   
 ## See Also  
  [Creating an OLE DB Consumer Using a Wizard](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

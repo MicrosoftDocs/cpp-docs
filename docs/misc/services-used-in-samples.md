@@ -2,7 +2,6 @@
 title: "Services Used in Samples | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,7 +39,7 @@ The samples included in the [!INCLUDE[vsipsdk](../mfc/includes/vsipsdk_md.md)] m
 |Service|Sample|  
 |-------------|------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry>|BscEdit, ProjectSubtype|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>|[How to: Use the Activity Log](../Topic/How%20to:%20Use%20the%20Activity%20Log.md)|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>|[How to: Use the Activity Log](http://msdn.microsoft.com/Library/bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd)|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsAddProjectItemDlg>|BscPrj, FigPkg|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject>|BscPrj|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChange>|Deprecated. Use <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> instead.|  
@@ -63,5 +62,5 @@ The samples included in the [!INCLUDE[vsipsdk](../mfc/includes/vsipsdk_md.md)] m
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame>|Reference.ToolWindow|  
   
 ## See Also  
- [List of Available Services](/visual-studio/extensibility/internals/list-of-available-services)   
- [Service Essentials](/visual-studio/extensibility/internals/service-essentials)
+ [List of Available Services](/visualstudio/extensibility/internals/list-of-available-services)   
+ [Service Essentials](/visualstudio/extensibility/internals/service-essentials)

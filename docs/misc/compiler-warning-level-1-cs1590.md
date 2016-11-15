@@ -2,7 +2,6 @@
 title: "Compiler Warning (level 1) CS1590 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS1590
 Invalid XML include element -- Missing file attribute  
   
- A path or doc attribute, passed to the [\<include>](../Topic/%3Cinclude%3E%20\(C%23%20Programming%20Guide\).md) tag, was missing or incomplete.  
+ A path or doc attribute, passed to the [\<include>](http://msdn.microsoft.com/Library/a8a70302-6196-4643-bd09-ef33f411f18f) tag, was missing or incomplete.  
   
  The following sample generates CS1590:  
   

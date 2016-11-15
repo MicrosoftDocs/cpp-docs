@@ -2,7 +2,6 @@
 title: "Compiler Error CS1028 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1028
 Unexpected preprocessor directive  
   
- A [preprocessor directive](/dotnet/csharp/language-reference/preprocessor-directives/index) was found but not expected.  
+ A [preprocessor directive](/dotnet/articles/csharp/language-reference/preprocessor-directives/index) was found but not expected.  
   
  For example, a `#endif` was found with no preceding `#if`.  
   

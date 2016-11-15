@@ -2,7 +2,6 @@
 title: "Compiler Error CS1630 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS1630
 Invalid option 'option' for /errorreport; must be prompt, send, queue, or none  
   
- The command line option [/errorreport](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option) must be followed by **prompt**, **send**, **queue**, or **none**, specifying what action you want taken when an internal compiler error occurs.
+ The command line option [/errorreport](/dotnet/articles/csharp/language-reference/compiler-options/errorreport-compiler-option) must be followed by **prompt**, **send**, **queue**, or **none**, specifying what action you want taken when an internal compiler error occurs.

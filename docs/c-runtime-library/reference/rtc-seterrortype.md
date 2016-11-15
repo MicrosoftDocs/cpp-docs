@@ -2,7 +2,6 @@
 title: "_RTC_SetErrorType | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -81,7 +80,7 @@ Associates an error that is detected by run-time error checks (RTCs) with a type
 ## Remarks  
  By default, all errors are set to *ErrType* = 1, which corresponds to **_CRT_ERROR**. For more information about the default error types such as **_CRT_ERROR**, see [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md).  
   
- Before you can call this function, you must first call one of the run-time error check initialization functions; see [Using Run-Time Checks without the C Run-Time Library](/visual-studio/debugger/using-run-time-checks-without-the-c-run-time-library)  
+ Before you can call this function, you must first call one of the run-time error check initialization functions; see [Using Run-Time Checks without the C Run-Time Library](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library)  
   
 ## Requirements  
   
@@ -95,7 +94,7 @@ Associates an error that is detected by run-time error checks (RTCs) with a type
  All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [_RTC_GetErrDesc](../../c-runtime-library/reference/rtc-geterrdesc.md)   

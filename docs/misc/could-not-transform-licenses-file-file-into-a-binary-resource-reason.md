@@ -2,7 +2,6 @@
 title: "Could not transform licenses file &#39;file&#39; into a binary resource. &lt;reason&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -52,4 +51,4 @@ The licenses processor used to transform .licx files into binary resources faile
 5.  Delete this file and rebuild the solution.  
   
 ## See Also  
- [How to: License Components and Controls](../Topic/How%20to:%20License%20Components%20and%20Controls.md)
+ [How to: License Components and Controls](http://msdn.microsoft.com/Library/8e66c1ed-a445-4b26-8185-990b6e2bbd57)

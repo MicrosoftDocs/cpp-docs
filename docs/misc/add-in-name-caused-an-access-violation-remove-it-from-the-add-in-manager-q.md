@@ -2,7 +2,6 @@
 title: "Add-in &lt;name&gt; caused an access violation. Remove it from the Add-in Manager? | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,5 +47,5 @@ This add-in has crashed and may be causing other problems in the integrated deve
     >  Contact the author of the add-in to report the problem.  
   
 ## See Also  
- [How to: Control Add-Ins By Using the Add-In Manager](../Topic/How%20to:%20Control%20Add-Ins%20By%20Using%20the%20Add-In%20Manager.md)   
- [How to: Create an Add-In](../Topic/How%20to:%20Create%20an%20Add-In.md)
+ [How to: Control Add-Ins By Using the Add-In Manager](http://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb)   
+ [How to: Create an Add-In](http://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

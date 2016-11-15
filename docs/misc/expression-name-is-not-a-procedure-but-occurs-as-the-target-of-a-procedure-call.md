@@ -2,7 +2,6 @@
 title: "Expression &#39;&lt;name&gt;&#39; is not a procedure, but occurs as the target of a procedure call | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,4 +41,4 @@ You have made a procedure call to an expression that is not a procedure.
 2.  Supply the procedure that <`name`> calls.  
   
 ## See Also  
- [Procedures](/dotnet/visual-basic/language-reference/procedures/index)
+ [Procedures](/dotnet/articles/visual-basic/language-reference/procedures/index)

@@ -2,7 +2,6 @@
 title: "Type &#39;&lt;typename&gt;&#39; cannot implement interface &#39;&lt;interfacename&gt;&#39; because it declares &#39;&lt;eventsignature&gt;&#39; which has a return type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,5 +47,5 @@ A class or structure attempts to implement an interface that declares an event t
   
 ## See Also  
  [NOT IN BUILD:Events and Event Handlers](http://msdn.microsoft.com/en-us/95074a0d-1cbc-4221-a95a-964185c7f962)   
- [Implements Statement](/dotnet/visual-basic/language-reference/statements/implements-statement)   
+ [Implements Statement](/dotnet/articles/visual-basic/language-reference/statements/implements-statement)   
  [NOT IN BUILD: Implements Keyword and Implements Statement](http://msdn.microsoft.com/en-us/b96560f7-6413-480f-a1e2-f80253bab5be)

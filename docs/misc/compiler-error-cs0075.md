@@ -2,7 +2,6 @@
 title: "Compiler Error CS0075 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -66,4 +65,4 @@ namespace MyNamespace
 ```  
   
 ## See Also  
- [Casting and Type Conversions](/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
+ [Casting and Type Conversions](/dotnet/articles/csharp/programming-guide/types/casting-and-type-conversions)

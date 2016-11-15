@@ -2,7 +2,6 @@
 title: "Sorry, we don&#39;t have specifics on this Visual Basic error | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -3093,8 +3092,8 @@ We’re sorry, but we don’t have any specific information about this error. Yo
  Provides a forum for questions about and issues with [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)].  
   
  Also see:  
- [Additional Resources for Visual Basic Programmers](/dotnet/visual-basic/getting-started/additional-resources)  
+ [Additional Resources for Visual Basic Programmers](/dotnet/articles/visual-basic/getting-started/additional-resources)  
   
 ## See Also  
- [Visual Basic Programming Guide](/dotnet/visual-basic/programming-guide/index)   
- [Visual Basic Reference](/dotnet/visual-basic/reference/index)
+ [Visual Basic Programming Guide](/dotnet/articles/visual-basic/programming-guide/index)   
+ [Visual Basic Reference](/dotnet/articles/visual-basic/reference/index)

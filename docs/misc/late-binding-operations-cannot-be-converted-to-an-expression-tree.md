@@ -2,7 +2,6 @@
 title: "Late binding operations cannot be converted to an expression tree | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -56,5 +55,5 @@ End Module
  **Error ID:** BC36604  
   
 ## See Also  
- [Early and Late Binding](/dotnet/visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding)   
+ [Early and Late Binding](/dotnet/articles/visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding)   
  [NOT IN BUILD: Expression Trees in LINQ](http://msdn.microsoft.com/en-us/1a2e8e74-4bbc-45ab-9a46-2b6cfce3bcb2)

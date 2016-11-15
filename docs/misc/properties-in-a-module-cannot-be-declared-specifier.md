@@ -2,7 +2,6 @@
 title: "Properties in a Module cannot be declared &#39;&lt;specifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ You have attempted to use a specifier, such as `MustOverride`, `NotOverridable`,
 -   Remove the specifier.  
   
 ## See Also  
- [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)   
- [Module \<keyword>](../Topic/Module%20%3Ckeyword%3E%20\(Visual%20Basic\).md)
+ [Module Statement](/dotnet/articles/visual-basic/language-reference/statements/module-statement)   
+ [Module \<keyword>](http://msdn.microsoft.com/Library/d971b940-05ab-4d56-8485-e3b8a661906b)

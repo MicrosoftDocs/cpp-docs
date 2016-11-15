@@ -2,7 +2,6 @@
 title: "Compiler Error CS1038 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1038
 \#endregion directive expected  
   
- A [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) directive did not have a matching [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion) directive.  
+ A [#region](/dotnet/articles/csharp/language-reference/preprocessor-directives/preprocessor-region) directive did not have a matching [#endregion](/dotnet/articles/csharp/language-reference/preprocessor-directives/preprocessor-endregion) directive.  
   
  The following sample generates CS1038:  
   

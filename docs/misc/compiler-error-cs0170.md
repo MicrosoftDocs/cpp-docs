@@ -2,7 +2,6 @@
 title: "Compiler Error CS0170 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0170
 Use of possibly unassigned field 'field'  
   
- A field in a structure was used without first being initialized. To solve this problem, first determine which field was uninitialized and then initialize it before you try to access it. For more information about initializing structs, see [Structs](/dotnet/csharp/programming-guide/classes-and-structs/structs) and [Using Structs](/dotnet/csharp/programming-guide/classes-and-structs/using-structs).  
+ A field in a structure was used without first being initialized. To solve this problem, first determine which field was uninitialized and then initialize it before you try to access it. For more information about initializing structs, see [Structs](/dotnet/articles/csharp/programming-guide/classes-and-structs/structs) and [Using Structs](/dotnet/articles/csharp/programming-guide/classes-and-structs/using-structs).  
   
  The following sample generates CS0170:  
   

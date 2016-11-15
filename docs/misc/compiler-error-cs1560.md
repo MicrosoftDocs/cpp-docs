@@ -2,7 +2,6 @@
 title: "Compiler Error CS1560 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1560
 Invalid filename specified for preprocessor directive. Filename is too long or not a valid filename  
   
- The file name that was specified with [#line](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-line) exceeded _MAX_PATH (256 characters) or the line on which `#line` was found exceeded 2000 characters.  
+ The file name that was specified with [#line](/dotnet/articles/csharp/language-reference/preprocessor-directives/preprocessor-line) exceeded _MAX_PATH (256 characters) or the line on which `#line` was found exceeded 2000 characters.  
   
 ## Example  
  The following sample generates CS1560.  

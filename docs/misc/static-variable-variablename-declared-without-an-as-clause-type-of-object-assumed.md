@@ -2,7 +2,6 @@
 title: "Static variable &#39;&lt;variablename&gt;&#39; declared without an &#39;As&#39; clause; type of &#39;Object&#39; assumed | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,7 +43,7 @@ Sub Main()
 End Sub  
 ```  
   
- By default, this message is a warning. For information about how to hide warnings or how to treat warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For information about how to hide warnings or how to treat warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42111  
   
@@ -62,8 +61,8 @@ End Sub
     ```  
   
 ## See Also  
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)   
  [NOTINBUILD How to: Lengthen a Variable's Lifetime](http://msdn.microsoft.com/en-us/04e7c56c-1db0-4fe5-a678-859a39ec654b)   
- [Local Type Inference](/dotnet/visual-basic/programming-guide/language-features/variables/local-type-inference)   
- [Option Infer Statement](/dotnet/visual-basic/language-reference/statements/option-infer-statement)   
- [Static](/dotnet/visual-basic/language-reference/modifiers/static)
+ [Local Type Inference](/dotnet/articles/visual-basic/programming-guide/language-features/variables/local-type-inference)   
+ [Option Infer Statement](/dotnet/articles/visual-basic/language-reference/statements/option-infer-statement)   
+ [Static](/dotnet/articles/visual-basic/language-reference/modifiers/static)

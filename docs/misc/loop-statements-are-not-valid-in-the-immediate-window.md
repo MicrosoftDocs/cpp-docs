@@ -2,7 +2,6 @@
 title: "Loop statements are not valid in the Immediate window | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,4 +45,4 @@ translation.priority.mt:
   
 ## See Also  
  [Loop - delete](http://msdn.microsoft.com/en-us/707e1afe-71d1-4ebd-83fd-3fa6a8e38e57)   
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

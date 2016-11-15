@@ -2,7 +2,6 @@
 title: "Compiler Error CS0617 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0617
 'reference' is not a valid named attribute argument because it is not a valid attribute parameter type  
   
- An attempt was made to access a [private](/dotnet/csharp/language-reference/keywords/private) member of an attribute class.  
+ An attempt was made to access a [private](/dotnet/articles/csharp/language-reference/keywords/private) member of an attribute class.  
   
 ## Example  
  The following sample generates CS0617.  

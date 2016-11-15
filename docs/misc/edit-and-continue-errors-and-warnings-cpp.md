@@ -2,7 +2,6 @@
 title: "Edit and Continue Errors and Warnings (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -61,7 +60,7 @@ translation.priority.ht:
 # Edit and Continue Errors and Warnings (C++)
 [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)] Edit and Continue lets you stop program execution in Break mode, make changes to the executing code, and then resume program execution with the newly incorporated changes.  
   
- Declarative code edits that affect the public structure of a class are generally prohibited, and some edits that you might make to a method, property body, or private declarations within a class are not allowed. Whenever possible, Edit and Continue marks code that cannot be edited as light gray and displays an error message. For more information about unsupported edits in Edit and Continue for [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)], see [Edit and Continue (Visual C++)](/visual-studio/debugger/edit-and-continue-visual-cpp).  
+ Declarative code edits that affect the public structure of a class are generally prohibited, and some edits that you might make to a method, property body, or private declarations within a class are not allowed. Whenever possible, Edit and Continue marks code that cannot be edited as light gray and displays an error message. For more information about unsupported edits in Edit and Continue for [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)], see [Edit and Continue (Visual C++)](/visualstudio/debugger/edit-and-continue-visual-cpp).  
   
  Edit and Continue errors and warnings can be resolved in one of the following ways:  
   
@@ -122,5 +121,5 @@ translation.priority.ht:
 |2008|Could not load debug symbols for file *file* in module *module*.<br /><br /> To resolve this issue, Rebuild the specified module with the current version of [!INCLUDE[vs_current_short](../misc/includes/vs_current_short_md.md)].|  
   
 ## See Also  
- [Edit and Continue (Visual C++)](/visual-studio/debugger/edit-and-continue-visual-cpp)   
- [Edit and Continue](/visual-studio/debugger/edit-and-continue)
+ [Edit and Continue (Visual C++)](/visualstudio/debugger/edit-and-continue-visual-cpp)   
+ [Edit and Continue](/visualstudio/debugger/edit-and-continue)

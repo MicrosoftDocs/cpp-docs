@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB4136 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,6 +41,6 @@ translation.priority.mt:
 -   Make sure that the configuration file is correct and well-formed. For example, if you have customized the .config file by adding a Toolset, check the Toolset definition.  
   
 ## See Also  
- [Overriding ToolsVersion Settings](/visual-studio/msbuild/overriding-toolsversion-settings)   
- [Project Element (MSBuild)](/visual-studio/msbuild/project-element-msbuild)   
- [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)
+ [Overriding ToolsVersion Settings](/visualstudio/msbuild/overriding-toolsversion-settings)   
+ [Project Element (MSBuild)](/visualstudio/msbuild/project-element-msbuild)   
+ [Additional Resources](/visualstudio/msbuild/additional-msbuild-resources)

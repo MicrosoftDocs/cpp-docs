@@ -2,7 +2,6 @@
 title: "Conversion from &#39;&lt;type1&gt;&#39; to &#39;&lt;type2&gt;&#39; cannot occur in a constant expression | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ The initialization expression in a `Const` statement evaluates to a data type th
 1.  Initialize the constant with an expression of a data type that can be converted to the type declared for the constant.  
   
 ## See Also  
- [Const Statement](/dotnet/visual-basic/language-reference/statements/const-statement)   
- [Type Conversions in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/type-conversions)
+ [Const Statement](/dotnet/articles/visual-basic/language-reference/statements/const-statement)   
+ [Type Conversions in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/type-conversions)

@@ -2,7 +2,6 @@
 title: "Module &#39;&lt;modulename&gt;&#39; cannot be used as a type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ You have attempted to use a module as a type. A module cannot be used except as 
 -   Replace the module with something that can be used as a valid type.  
   
 ## See Also  
- [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)
+ [Module Statement](/dotnet/articles/visual-basic/language-reference/statements/module-statement)

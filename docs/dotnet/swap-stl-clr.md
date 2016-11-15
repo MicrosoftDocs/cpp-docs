@@ -2,7 +2,6 @@
 title: "swap (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +45,7 @@ Exchanges the values of the elements between two types of objects, assigning the
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `swap`. For more information, see [swap](../Topic/swap.md).  
+ This function behaves the same as the STL function `swap`. For more information, see [swap](http://msdn.microsoft.com/Library/b471a2de-035e-4aff-b1c7-345d85d93972).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

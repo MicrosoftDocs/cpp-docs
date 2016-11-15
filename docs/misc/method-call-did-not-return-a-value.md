@@ -2,7 +2,6 @@
 title: "Method call did not return a value | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ The method called did not return a value as expected.
 -   Verify that the method called is a function that returns a value.  
   
 ## See Also  
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

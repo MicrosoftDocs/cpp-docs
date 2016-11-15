@@ -2,7 +2,6 @@
 title: "_CrtMemDumpAllObjectsSince | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -76,7 +75,7 @@ Dumps information about objects in the heap from the start of program execution 
   
  If the application has installed a dump hook function by calling [_CrtSetDumpClient](../../c-runtime-library/reference/crtsetdumpclient.md), then every time `_CrtMemDumpAllObjectsSince` dumps information about a `_CLIENT_BLOCK` type of block, it calls the application-supplied dump function as well. By default, internal C run-time blocks (`_CRT_BLOCK`) are not included in memory dump operations. The [_CrtSetDbgFlag](../../c-runtime-library/reference/crtsetdbgflag.md) function can be used to turn on the `_CRTDBG_CHECK_CRT_DF` bit of **_crtDbgFlag** to include these blocks. In addition, blocks marked as freed or ignored (**_FREE_BLOCK**, **_IGNORE_BLOCK**) are not included in the memory dump.  
   
- For more information about heap state functions and the `_CrtMemState` structure, see [Heap State Reporting Functions](/visual-studio/debugger/crt-debug-heap-details). For more information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visual-studio/debugger/crt-debug-heap-details).  
+ For more information about heap state functions and the `_CrtMemState` structure, see [Heap State Reporting Functions](/visualstudio/debugger/crt-debug-heap-details). For more information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).  
   
 ## Requirements  
   
@@ -93,7 +92,7 @@ Dumps information about objects in the heap from the start of program execution 
  For a sample of how to use `_CrtMemDumpAllObjectsSince`, see [crt_dbg2](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167).  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   

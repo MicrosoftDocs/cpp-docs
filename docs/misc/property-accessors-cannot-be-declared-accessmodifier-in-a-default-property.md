@@ -2,7 +2,6 @@
 title: "Property accessors cannot be declared &#39;&lt;accessmodifier&gt;&#39; in a &#39;Default&#39; property | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Property accessors cannot be declared &#39;&lt;accessmodifier&gt;&#39; in a &#39;Default&#39; property
-A [Get Statement](/dotnet/visual-basic/language-reference/statements/get-statement) or [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement) in a default property includes the `Private` keyword.  
+A [Get Statement](/dotnet/articles/visual-basic/language-reference/statements/get-statement) or [Set Statement](/dotnet/articles/visual-basic/language-reference/statements/set-statement) in a default property includes the `Private` keyword.  
   
  A default property cannot be `Private`, and neither can its individual property procedures (`Get` or `Set`).  
   
@@ -44,9 +43,9 @@ A [Get Statement](/dotnet/visual-basic/language-reference/statements/get-stateme
   
 ### To correct this error  
   
--   Remove the `Private` keyword from the `Get` or `Set` statement, or remove `Default` from the [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement).  
+-   Remove the `Private` keyword from the `Get` or `Set` statement, or remove `Default` from the [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement).  
   
 ## See Also  
- [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)   
- [How to: Declare a Property with Mixed Access Levels](../Topic/How%20to:%20Declare%20a%20Property%20with%20Mixed%20Access%20Levels%20\(Visual%20Basic\).md)   
- [How to: Declare and Call a Default Property in Visual Basic](../Topic/How%20to:%20Declare%20and%20Call%20a%20Default%20Property%20in%20Visual%20Basic.md)
+ [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)   
+ [How to: Declare a Property with Mixed Access Levels](http://msdn.microsoft.com/Library/fdbb2d97-279a-4956-b26c-cbdfbc34915a)   
+ [How to: Declare and Call a Default Property in Visual Basic](http://msdn.microsoft.com/Library/68b4026e-09ef-4613-808e-f6287494ff63)

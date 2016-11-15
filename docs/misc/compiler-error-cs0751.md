@@ -2,7 +2,6 @@
 title: "Compiler Error CS0751 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0751
 A partial method must be declared in a partial class or partial struct  
   
- It is not possible to declare a [partial](/dotnet/csharp/language-reference/keywords/partial-method) method unless it is encapsulated inside a partial class or partial struct.  
+ It is not possible to declare a [partial](/dotnet/articles/csharp/language-reference/keywords/partial-method) method unless it is encapsulated inside a partial class or partial struct.  
   
 ### To correct this error  
   
@@ -63,4 +62,4 @@ public class C
 ```  
   
 ## See Also  
- [Partial Classes and Methods](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
+ [Partial Classes and Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)

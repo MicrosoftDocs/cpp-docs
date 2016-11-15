@@ -2,7 +2,6 @@
 title: "Compiler Error CS2016 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS2016
 Code page 'codepage' is invalid or not installed  
   
- The [/codepage](/dotnet/csharp/language-reference/compiler-options/codepage-compiler-option) compiler option was passed an invalid value.  
+ The [/codepage](/dotnet/articles/csharp/language-reference/compiler-options/codepage-compiler-option) compiler option was passed an invalid value.  
   
  The following sample generates CS2016:  
   

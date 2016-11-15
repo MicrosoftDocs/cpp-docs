@@ -2,7 +2,6 @@
 title: "No default member found for type &#39;&lt;typename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,5 +39,5 @@ A late-bound index `Get` or `Set` call has been attempted.
 1.  Ensure that the object has a default property with a `Get` or `Set`, depending on which you are trying to make.  
   
 ## See Also  
- [Get Statement](/dotnet/visual-basic/language-reference/statements/get-statement)   
- [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement)
+ [Get Statement](/dotnet/articles/visual-basic/language-reference/statements/get-statement)   
+ [Set Statement](/dotnet/articles/visual-basic/language-reference/statements/set-statement)

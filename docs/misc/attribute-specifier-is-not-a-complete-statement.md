@@ -2,7 +2,6 @@
 title: "Attribute specifier is not a complete statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -52,4 +51,4 @@ Attribute specifier is not a complete statement. Use a line continuation to appl
   
 ## See Also  
  [NOT IN BUILD: Application of Attributes](http://msdn.microsoft.com/en-us/2b1703ed-4437-49b3-bc0b-568094324f47)   
- [How to: Break and Combine Statements in Code](../Topic/How%20to:%20Break%20and%20Combine%20Statements%20in%20Code%20\(Visual%20Basic\).md)
+ [How to: Break and Combine Statements in Code](http://msdn.microsoft.com/Library/dea01dad-a8ac-484a-bb3a-8c45a1b1eccc)

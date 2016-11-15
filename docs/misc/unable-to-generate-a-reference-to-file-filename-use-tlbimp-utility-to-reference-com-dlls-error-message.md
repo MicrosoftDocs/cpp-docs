@@ -2,7 +2,6 @@
 title: "Unable to generate a reference to file &#39;&lt;filename&gt;&#39; (use TLBIMP utility to reference COM DLLs): &lt;error message&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,12 +43,12 @@ The [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] compiler calls the Assem
   
 1.  Examine the quoted error message and consult the topic [Al.exe Tool Errors and Warnings](http://msdn.microsoft.com/en-us/7f125d49-0a03-47a6-9ba9-d61a679a7d4b) for further explanation and advice.  
   
-2.  If the desired reference is to a COM DLL rather than a COM+ DLL, use the [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md) to generate the reference.  
+2.  If the desired reference is to a COM DLL rather than a COM+ DLL, use the [Tlbimp.exe (Type Library Importer)](http://msdn.microsoft.com/Library/ec0a8d63-11b3-4acd-b398-da1e37e97382) to generate the reference.  
   
 3.  If the error persists, gather information about the circumstances and notify Microsoft Product Support Services.  
   
 ## See Also  
- [Al.exe (Assembly Linker)](../Topic/Al.exe%20\(Assembly%20Linker\).md)   
+ [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01)   
  [Al.exe Tool Errors and Warnings](http://msdn.microsoft.com/en-us/7f125d49-0a03-47a6-9ba9-d61a679a7d4b)   
- [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md)   
+ [Tlbimp.exe (Type Library Importer)](http://msdn.microsoft.com/Library/ec0a8d63-11b3-4acd-b398-da1e37e97382)   
  [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)

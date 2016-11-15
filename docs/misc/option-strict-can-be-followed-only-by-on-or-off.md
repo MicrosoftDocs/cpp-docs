@@ -2,7 +2,6 @@
 title: "&#39;Option Strict&#39; can be followed only by &#39;On&#39; or &#39;Off&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,7 +44,7 @@ translation.priority.mt:
 -   Specify either `On` or `Off` for the `Option Strict` statement.  
   
 ## See Also  
- [Option \<keyword> Statement](../Topic/Option%20%3Ckeyword%3E%20Statement.md)   
- [Option Compare Statement](/dotnet/visual-basic/language-reference/statements/option-compare-statement)   
- [Option Explicit Statement](/dotnet/visual-basic/language-reference/statements/option-explicit-statement)   
- [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)
+ [Option \<keyword> Statement](http://msdn.microsoft.com/Library/6b2f41c4-2403-43b6-8a14-94a3775e5b47)   
+ [Option Compare Statement](/dotnet/articles/visual-basic/language-reference/statements/option-compare-statement)   
+ [Option Explicit Statement](/dotnet/articles/visual-basic/language-reference/statements/option-explicit-statement)   
+ [Option Strict Statement](/dotnet/articles/visual-basic/language-reference/statements/option-strict-statement)

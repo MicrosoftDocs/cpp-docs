@@ -2,7 +2,6 @@
 title: "Compiler Error CS0833 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -63,4 +62,4 @@ public class C
 ```  
   
 ## See Also  
- [Anonymous Types](/dotnet/csharp/programming-guide/classes-and-structs/anonymous-types)
+ [Anonymous Types](/dotnet/articles/csharp/programming-guide/classes-and-structs/anonymous-types)

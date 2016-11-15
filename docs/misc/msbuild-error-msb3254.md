@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB3254 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -37,7 +36,7 @@ translation.priority.mt:
   
  This error occurs when the [!INCLUDE[net_client_v35_long](../misc/includes/net_client_v35_long_md.md)] XML file, client.xml, cannot be read. The file is unreadable because of corruption, locking, or some other problem.  
   
- The [!INCLUDE[net_client_v35_long](../misc/includes/net_client_v35_long_md.md)] is a subset of the full [!INCLUDE[dnprdnshort](../error-messages/tool-errors/includes/dnprdnshort_md.md)] 3.5 run-time library. For more information about the [!INCLUDE[net_client_v35_long](../misc/includes/net_client_v35_long_md.md)], see [.NET Framework Client Profile](../Topic/.NET%20Framework%20Client%20Profile.md).  
+ The [!INCLUDE[net_client_v35_long](../misc/includes/net_client_v35_long_md.md)] is a subset of the full [!INCLUDE[dnprdnshort](../error-messages/tool-errors/includes/dnprdnshort_md.md)] 3.5 run-time library. For more information about the [!INCLUDE[net_client_v35_long](../misc/includes/net_client_v35_long_md.md)], see [.NET Framework Client Profile](http://msdn.microsoft.com/Library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
  Procedures  
   
@@ -46,5 +45,5 @@ translation.priority.mt:
 -   Ensure that you have full permissions and full access to the file, or reinstall the [!INCLUDE[net_client_v35_long](../misc/includes/net_client_v35_long_md.md)] redistributable run-time library to replace the corrupted file.  
   
 ## See Also  
- [Project Element (MSBuild)](/visual-studio/msbuild/project-element-msbuild)   
- [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)
+ [Project Element (MSBuild)](/visualstudio/msbuild/project-element-msbuild)   
+ [Additional Resources](/visualstudio/msbuild/additional-msbuild-resources)

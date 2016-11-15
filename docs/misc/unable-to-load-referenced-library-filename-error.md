@@ -2,7 +2,6 @@
 title: "Unable to load referenced library &#39;&lt;filename&gt;&#39;: &lt;error&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ A library referenced by this project could not be loaded.
 1.  Verify that the file is in the specified location, and is not locked by another application.  
   
 ## See Also  
- [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)

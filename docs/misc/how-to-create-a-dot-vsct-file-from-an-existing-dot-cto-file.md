@@ -2,7 +2,6 @@
 title: "How to: Create a .Vsct File from an Existing .Cto File | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,5 +47,5 @@ You can create an XML-based .vsct file from an existing binary .cto file. Doing 
      This process creates a new .vsct XML command table compiler file. You can edit and compile the file with vsct.exe, the vsct compiler, as you would any other .vsct file.  
   
 ## See Also  
- [How to: Create a .Vsct File](../Topic/How%20to:%20Create%20a%20.Vsct%20File.md)   
- [Visual Studio Command Table (.Vsct) Files](/visual-studio/extensibility/internals/visual-studio-command-table-dot-vsct-files)
+ [How to: Create a .Vsct File](http://msdn.microsoft.com/Library/b955f51c-f9f9-49c3-a8e4-63b6eb0e0341)   
+ [Visual Studio Command Table (.Vsct) Files](/visualstudio/extensibility/internals/visual-studio-command-table-dot-vsct-files)

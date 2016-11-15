@@ -2,7 +2,6 @@
 title: "XML literals and XML axis properties are not available during this debugging session because they are not used in this assembly | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,7 +44,7 @@ An XML literal or XML axis property has been referenced in the **Watch** or **Im
 -   Start a new debugging session using the debug build of the assembly.  
   
 ## See Also  
- [Debugging Your Visual Basic Application](/dotnet/visual-basic/developing-apps/debugging)   
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML Axis Properties](/dotnet/visual-basic/language-reference/xml-axis/xml-axis-properties)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [Debugging Your Visual Basic Application](/dotnet/articles/visual-basic/developing-apps/debugging)   
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML Axis Properties](/dotnet/articles/visual-basic/language-reference/xml-axis/xml-axis-properties)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

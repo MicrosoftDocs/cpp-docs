@@ -2,7 +2,6 @@
 title: "&lt;type&gt; parameters cannot be declared &#39;ParamArray&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # &lt;type&gt; parameters cannot be declared &#39;ParamArray&#39;
-A definition of a delegate, event, or operator declares a [ParamArray](/dotnet/visual-basic/language-reference/modifiers/paramarray) parameter.  
+A definition of a delegate, event, or operator declares a [ParamArray](/dotnet/articles/visual-basic/language-reference/modifiers/paramarray) parameter.  
   
  `ParamArray` parameters are allowed only on `Declare`, `Function`, `Property`, and `Sub` parameters.  
   
@@ -48,9 +47,9 @@ A definition of a delegate, event, or operator declares a [ParamArray](/dotnet/v
   
 -   If you are defining an operator, you might be able to achieve the `ParamArray` functionality with a series of overloads.  
   
--   If you are defining a delegate or event, you must rework the overall logic of this part of your application. You cannot use [Optional](/dotnet/visual-basic/language-reference/modifiers/optional) or `ParamArray` parameters, or overloaded versions, on delegate or event parameters.  
+-   If you are defining a delegate or event, you must rework the overall logic of this part of your application. You cannot use [Optional](/dotnet/articles/visual-basic/language-reference/modifiers/optional) or `ParamArray` parameters, or overloaded versions, on delegate or event parameters.  
   
 ## See Also  
- [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads)   
- [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
- [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)
+ [Overloads](/dotnet/articles/visual-basic/language-reference/modifiers/overloads)   
+ [Operator Procedures](/dotnet/articles/visual-basic/language-reference/procedures/operator-procedures)   
+ [Operator Statement](/dotnet/articles/visual-basic/language-reference/statements/operator-statement)

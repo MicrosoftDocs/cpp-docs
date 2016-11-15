@@ -2,7 +2,6 @@
 title: "How to: Create Toolbars for Tool Windows | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -33,4 +32,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Create Toolbars for Tool Windows
-This content has been removed. For information, see [Adding a Toolbar to a Tool Window](/visual-studio/extensibility/adding-a-toolbar-to-a-tool-window).
+This content has been removed. For information, see [Adding a Toolbar to a Tool Window](/visualstudio/extensibility/adding-a-toolbar-to-a-tool-window).

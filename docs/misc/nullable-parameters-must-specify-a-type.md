@@ -2,7 +2,6 @@
 title: "Nullable parameters must specify a type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ A parameter includes the nullable type modifier (?) but does not specify a type.
 -   Specify a type when declaring the nullable parameter.  
   
 ## See Also  
- [Nullable Value Types](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)
+ [Nullable Value Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

@@ -2,7 +2,6 @@
 title: "&#39;Is&#39; operand of type &#39;typename&#39; can only be compared to &#39;Nothing&#39;, because &#39;typename&#39; is a nullable type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -55,5 +54,5 @@ A variable declared as nullable has been compared to an expression other than `N
     ```  
   
 ## See Also  
- [Nullable Value Types](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)   
- [Is Operator](/dotnet/visual-basic/language-reference/operators/is-operator)
+ [Nullable Value Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/nullable-value-types)   
+ [Is Operator](/dotnet/articles/visual-basic/language-reference/operators/is-operator)

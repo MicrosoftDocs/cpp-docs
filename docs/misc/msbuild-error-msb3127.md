@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB3127 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,7 +40,7 @@ translation.priority.mt:
   
 ### To correct this error  
   
--   Add the icon file to the current project and include it in the required download group. For more information, see [How to: Specify Which Files Are Published by ClickOnce](../Topic/How%20to:%20Specify%20Which%20Files%20Are%20Published%20by%20ClickOnce.md).  
+-   Add the icon file to the current project and include it in the required download group. For more information, see [How to: Specify Which Files Are Published by ClickOnce](http://msdn.microsoft.com/Library/579c134a-d50f-4e0c-8e05-2a4ff654896a).  
   
 ## See Also  
- [Publish Page, Project Designer](/visual-studio/ide/reference/publish-page-project-designer)
+ [Publish Page, Project Designer](/visualstudio/ide/reference/publish-page-project-designer)

@@ -2,7 +2,6 @@
 title: "&#39;ReadOnly&#39; and &#39;WriteOnly&#39; cannot be combined | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ The `ReadOnly` and `WriteOnly` modifiers are mutually exclusive.
 -   Specify either `ReadOnly` or `WriteOnly`, but not both.  
   
 ## See Also  
- [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)   
- [WriteOnly](/dotnet/visual-basic/language-reference/modifiers/writeonly)
+ [ReadOnly](/dotnet/articles/visual-basic/language-reference/modifiers/readonly)   
+ [WriteOnly](/dotnet/articles/visual-basic/language-reference/modifiers/writeonly)

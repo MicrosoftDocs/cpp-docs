@@ -2,7 +2,6 @@
 title: "Property &#39;&lt;propertyname&gt;&#39; with no parameters cannot be found | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ The attribute being used has a property that requires one or more parameters.
 1.  Specify parameters for the property.  
   
 ## See Also  
- [Properties](/dotnet/visual-basic/language-reference/properties)
+ [Properties](/dotnet/articles/visual-basic/language-reference/properties)

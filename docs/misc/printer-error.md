@@ -2,7 +2,6 @@
 title: "Printer error | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,4 +39,4 @@ An error occurred at the printer, but no other information was returned to the c
 -   Physically examine the printer. Make sure all connections between the computer and the printer are solid. Most printers provide a display for error information such as "Offline" or "Out of paper."  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

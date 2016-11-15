@@ -2,7 +2,6 @@
 title: "Type &#39;&lt;typename1&gt;&#39; cannot be marked CLS-compliant because its containing type &#39;&lt;typename2&gt;&#39; is not CLS-compliant | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,13 +37,13 @@ translation.priority.mt:
 # Type &#39;&lt;typename1&gt;&#39; cannot be marked CLS-compliant because its containing type &#39;&lt;typename2&gt;&#39; is not CLS-compliant
 A class or interface is marked as `<CLSCompliant(True)>` when it is nested in a type that is marked as `<CLSCompliant(False)>` or is not marked.  
   
- For a class or interface to be compliant with the [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md) (CLS), its entire containment hierarchy must be compliant. That means every type in which it is nested must be compliant.  
+ For a class or interface to be compliant with the [Language Independence and Language-Independent Components](http://msdn.microsoft.com/Library/4f0b77d0-4844-464f-af73-6e06bedeafc6) (CLS), its entire containment hierarchy must be compliant. That means every type in which it is nested must be compliant.  
   
  When you apply the <xref:System.CLSCompliantAttribute> to a programming element, you set the attribute's `isCompliant` parameter to either `True` or `False` to indicate compliance or noncompliance. There is no default for this parameter, and you must supply a value.  
   
  If you do not apply the <xref:System.CLSCompliantAttribute> to an element, it is considered to be noncompliant.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40030  
   

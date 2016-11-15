@@ -2,7 +2,6 @@
 title: "adjacent_find (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,7 +47,7 @@ template<class _FwdIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `adjacent_find`. For more information, see [adjacent_find](../Topic/adjacent_find.md).  
+ This function behaves the same as the STL function `adjacent_find`. For more information, see [adjacent_find](http://msdn.microsoft.com/Library/81efd39c-ff0e-476a-9a72-740ea788d966).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

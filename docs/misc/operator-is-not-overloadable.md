@@ -2,7 +2,6 @@
 title: "Operator is not overloadable | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -55,8 +54,8 @@ Only certain operators are eligible for overloading. The following table lists t
 2.  If you need the functionality of overloading an operator that you cannot overload directly, create a `Function` procedure that takes the appropriate parameters and returns the appropriate value.  
   
 ## See Also  
- [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)   
- [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
- [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
- [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)   
- [Function Statement](/dotnet/visual-basic/language-reference/statements/function-statement)
+ [Operator Statement](/dotnet/articles/visual-basic/language-reference/statements/operator-statement)   
+ [Operator Procedures](/dotnet/articles/visual-basic/language-reference/procedures/operator-procedures)   
+ [How to: Define an Operator](http://msdn.microsoft.com/Library/d4b0e253-092a-4e6e-9fe2-01f562140a29)   
+ [How to: Define a Conversion Operator](http://msdn.microsoft.com/Library/54203dfa-c24b-463f-9942-d5153e89e762)   
+ [Function Statement](/dotnet/articles/visual-basic/language-reference/statements/function-statement)

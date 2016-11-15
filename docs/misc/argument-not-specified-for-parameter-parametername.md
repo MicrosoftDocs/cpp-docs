@@ -2,7 +2,6 @@
 title: "Argument not specified for parameter &#39;&lt;parametername&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,4 +45,4 @@ An argument for a required parameter has not been supplied.
   
 ## See Also  
  [NOT IN BUILD: Class Methods](http://msdn.microsoft.com/en-us/326214bb-6367-48e7-bb24-714844791400)   
- [Troubleshooting Procedures](/dotnet/visual-basic/language-reference/procedures/troubleshooting-procedures)
+ [Troubleshooting Procedures](/dotnet/articles/visual-basic/language-reference/procedures/troubleshooting-procedures)

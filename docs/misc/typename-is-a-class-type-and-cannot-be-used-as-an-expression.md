@@ -2,7 +2,6 @@
 title: "&#39;&lt;typename&gt;&#39; is a class type and cannot be used as an expression | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ A type name occurs where an expression is required. An expression must consist o
 -   Remove the type name and construct the expression using valid elements.  
   
 ## See Also  
- [Operators and Expressions](/dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/index)
+ [Operators and Expressions](/dotnet/articles/visual-basic/programming-guide/language-features/operators-and-expressions/index)

@@ -2,7 +2,6 @@
 title: "Compiler Error CS1638 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -63,4 +62,4 @@ class CMain
 ```  
   
 ## See Also  
- [/langversion (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option)
+ [/langversion (C# Compiler Options)](/dotnet/articles/csharp/language-reference/compiler-options/langversion-compiler-option)

@@ -2,7 +2,6 @@
 title: "For loop not initialized (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,5 +39,5 @@ You jumped into the middle of a `For...Next` loop.
 1.  Remove the jump into the loop.  
   
 ## See Also  
- [For Each...Next Statement](/dotnet/visual-basic/language-reference/statements/for-each-next-statement)   
- [How to: Label Statements](../Topic/How%20to:%20Label%20Statements%20\(Visual%20Basic\).md)
+ [For Each...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-each-next-statement)   
+ [How to: Label Statements](http://msdn.microsoft.com/Library/38f1ff43-2054-42cb-963b-1998e60c6ed4)

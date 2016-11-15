@@ -2,7 +2,6 @@
 title: "Bad record number | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,4 +39,4 @@ The record number in `a FileGet`, `FilePut`, `FileGetObject`, or `FilePutObject`
 1.  Check the calculations used in generating the record number. Verify spelling of the variables containing the record number or used in calculating record numbers. A misspelled variable name is implicitly declared and initialized to zero, unless you used `Option Explicit On` in the module.  
   
 ## See Also  
- [Option Explicit Statement](/dotnet/visual-basic/language-reference/statements/option-explicit-statement)
+ [Option Explicit Statement](/dotnet/articles/visual-basic/language-reference/statements/option-explicit-statement)

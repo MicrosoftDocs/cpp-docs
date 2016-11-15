@@ -2,7 +2,6 @@
 title: "Solution &lt;name&gt; and its projects must be converted to the current formats. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -57,4 +56,4 @@ You have opened a solution that was created in a previous version of Visual Stud
   
 ## See Also  
  [Project Dependencies Dialog Box](http://msdn.microsoft.com/en-us/d66e48c3-3722-40dd-99b4-53d93cac128e)   
- [Compiling and Building](/visual-studio/ide/compiling-and-building-in-visual-studio)
+ [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio)

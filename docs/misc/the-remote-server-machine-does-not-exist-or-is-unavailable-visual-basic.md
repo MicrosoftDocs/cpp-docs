@@ -2,7 +2,6 @@
 title: "The remote server machine does not exist or is unavailable (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,4 +39,4 @@ You are trying to connect to a remote server that is unavailable or does not exi
 -   Reconnect to the network and try again.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

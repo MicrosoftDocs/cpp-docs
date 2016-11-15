@@ -2,7 +2,6 @@
 title: "&#39;&lt;methodname&gt;&#39; cannot shadow a method declared &#39;MustOverride&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ A property or method with the `MustOverride` modifier and the same name is decla
 2.  Remove the `MustOverride` modifier from the property or method in the base class.  
   
 ## See Also  
- [MustOverride](/dotnet/visual-basic/language-reference/modifiers/mustoverride)
+ [MustOverride](/dotnet/articles/visual-basic/language-reference/modifiers/mustoverride)

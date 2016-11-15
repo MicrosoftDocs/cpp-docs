@@ -2,7 +2,6 @@
 title: "&#39;End&#39; statement not valid | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,5 +46,5 @@ The `End` keyword is used incorrectly or is inappropriate in the current context
 2.  Use `End` with other keywords to terminate a block of code such as a structure or property.  
   
 ## See Also  
- [End Statement](/dotnet/visual-basic/language-reference/statements/end-statement)   
- [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)
+ [End Statement](/dotnet/articles/visual-basic/language-reference/statements/end-statement)   
+ [End \<keyword> Statement](http://msdn.microsoft.com/Library/42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f)

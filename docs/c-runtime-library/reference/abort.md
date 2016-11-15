@@ -2,7 +2,6 @@
 title: "abort | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -90,7 +89,7 @@ void abort( void );
   
  If the Windows error reporting handler is not invoked, then `abort` calls [_exit](../../c-runtime-library/reference/exit-exit-exit.md) to terminate the process with exit code 3 and returns control to the parent process or the operating system. `_exit` does not flush stream buffers or do `atexit`/`_onexit` processing.  
   
- For more information about CRT debugging, see [CRT Debugging Techniques](/visual-studio/debugger/crt-debugging-techniques).  
+ For more information about CRT debugging, see [CRT Debugging Techniques](/visualstudio/debugger/crt-debugging-techniques).  
   
  **End Microsoft Specific**  
   
@@ -136,7 +135,7 @@ File could not be opened: No such file or directory
 ```  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Using abort](../../cpp/using-abort.md)   

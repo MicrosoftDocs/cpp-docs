@@ -2,7 +2,6 @@
 title: "No input sources specified | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ When compiling, no input sources have been specified.
 -   Make sure you have included a source-code file.  
   
 ## See Also  
- [How to: Compile and Run a Project](../Topic/How%20to:%20Compile%20and%20Run%20a%20Project%20in%20Visual%20Basic.md)
+ [How to: Compile and Run a Project](http://msdn.microsoft.com/Library/967f5606-5656-489b-bd14-018cf08408c4)

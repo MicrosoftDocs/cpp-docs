@@ -2,7 +2,6 @@
 title: "Argument not specified for parameter &#39;&lt;parametername&gt;&#39; of &#39;&lt;methodname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,6 +44,6 @@ You have not supplied an argument for a required parameter.
 -   Supply an argument for the specified parameter.  
   
 ## See Also  
- [Procedure Parameters and Arguments](/dotnet/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)   
+ [Procedure Parameters and Arguments](/dotnet/articles/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)   
  [NOT IN BUILD: Class Methods](http://msdn.microsoft.com/en-us/326214bb-6367-48e7-bb24-714844791400)   
- [Troubleshooting Procedures](/dotnet/visual-basic/language-reference/procedures/troubleshooting-procedures)
+ [Troubleshooting Procedures](/dotnet/articles/visual-basic/language-reference/procedures/troubleshooting-procedures)

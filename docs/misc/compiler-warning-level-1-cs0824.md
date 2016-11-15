@@ -2,7 +2,6 @@
 title: "Compiler Warning (level 1) CS0824 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -63,5 +62,5 @@ public class C
 ```  
   
 ## See Also  
- [extern](/dotnet/csharp/language-reference/keywords/extern)   
- [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)
+ [extern](/dotnet/articles/csharp/language-reference/keywords/extern)   
+ [#pragma warning](/dotnet/articles/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)

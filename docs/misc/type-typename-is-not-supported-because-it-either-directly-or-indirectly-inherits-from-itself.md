@@ -2,7 +2,6 @@
 title: "Type &#39;&lt;typename&gt;&#39; is not supported because it either directly or indirectly inherits from itself | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ A class or interface either inherits from itself or from another class or interf
 -   Change the inheritance structure so that it is built on a base class or interface that does not inherit from any other class or interface.  
   
 ## See Also  
- [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
+ [Inheritance Basics](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

@@ -2,7 +2,6 @@
 title: "Troubleshooting Exceptions: System.RankException | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,9 +41,9 @@ A <xref:System.RankException> exception is thrown when an array with the wrong n
   
 ## Associated Tips  
  **Make sure your array has the required number of dimensions.**  
- For more information, Visual Basic users can see [Array Dimensions in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/array-dimensions).  
+ For more information, Visual Basic users can see [Array Dimensions in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/array-dimensions).  
   
- For more information, C# users can see [Arrays](/dotnet/csharp/programming-guide/arrays/index).  
+ For more information, C# users can see [Arrays](/dotnet/articles/csharp/programming-guide/arrays/index).  
   
 ## Remarks  
  Since array subscripts start at 0, the lowest available subscript for every dimension is always 0.  
@@ -52,4 +51,4 @@ A <xref:System.RankException> exception is thrown when an array with the wrong n
 ## See Also  
  <xref:System.RankException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)

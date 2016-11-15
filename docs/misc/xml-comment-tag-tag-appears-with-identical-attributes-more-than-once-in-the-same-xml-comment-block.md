@@ -2,7 +2,6 @@
 title: "XML comment tag &#39;&lt;tag&gt;&#39; appears with identical attributes more than once in the same XML comment block | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,5 +46,5 @@ XML comment tag \<tag> appears with identical attributes more than once in the s
 -   Remove the duplicate tag.  
   
 ## See Also  
- [XML Comment Tags](/dotnet/visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments)   
- [Documenting Your Code with XML](/dotnet/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)
+ [XML Comment Tags](/dotnet/articles/visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments)   
+ [Documenting Your Code with XML](/dotnet/articles/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)

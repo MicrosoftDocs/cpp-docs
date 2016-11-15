@@ -2,7 +2,6 @@
 title: "How to: Support Toolbox Drag-and-Drop Functionality | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,13 +35,13 @@ translation.priority.mt:
 > [!NOTE]
 >  The recommended way to add custom controls to the Toolbox is to use the Toolbox Control templates that come with the Visual Studio 10 SDK, which include drag and drop support. This topic is retained only for backward compatibility, and for working with existing controls.  
 >   
->  For more information on creating toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](/visual-studio/extensibility/creating-a-wpf-toolbox-control).  
+>  For more information on creating toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](/visualstudio/extensibility/creating-a-wpf-toolbox-control).  
   
  VSPackages must implement drag-and-drop support if they are to use **Toolbox** controls on document views, such as editors or designers.  
   
  By default, all [!INCLUDE[dnprdnshort](../error-messages/tool-errors/includes/dnprdnshort_md.md)] objects derived from <xref:System.Windows.Forms.Control?displayProperty=fullName> automatically and transparently provide support for consuming **Toolbox** controls, and the procedures described below are unnecessary. The basic functionality can be extended by creating a designer.  
   
- For more information, see [Windows Forms Overview](../Topic/Windows%20Forms%20Overview.md) and [Extending Design-Time Support](../Topic/Extending%20Design-Time%20Support.md).  
+ For more information, see [Windows Forms Overview](http://msdn.microsoft.com/Library/3a2b6284-c8d6-4e1c-8c69-0bed38f38cd4) and [Extending Design-Time Support](http://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
 ### To implement basic drag-and-drop functionality  
   

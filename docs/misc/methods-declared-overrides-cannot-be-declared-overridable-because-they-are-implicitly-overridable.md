@@ -2,7 +2,6 @@
 title: "Methods declared &#39;Overrides&#39; cannot be declared &#39;Overridable&#39; because they are implicitly overridable | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ Unlike most methods, methods marked with the `Overrides` modifier are overridabl
 -   Omit the `Overridable` modifier from methods marked with the `Overrides` modifier.  
   
 ## See Also  
- [Overrides](/dotnet/visual-basic/language-reference/modifiers/overrides)   
- [Overridable](/dotnet/visual-basic/language-reference/modifiers/overridable)
+ [Overrides](/dotnet/articles/visual-basic/language-reference/modifiers/overrides)   
+ [Overridable](/dotnet/articles/visual-basic/language-reference/modifiers/overridable)

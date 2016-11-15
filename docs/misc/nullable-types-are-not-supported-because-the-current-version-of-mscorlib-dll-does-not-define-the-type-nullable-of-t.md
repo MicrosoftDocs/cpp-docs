@@ -2,7 +2,6 @@
 title: "Nullable types are not supported because the current version of &#39;mscorlib.dll&#39; does not define the type &#39;Nullable(of T)&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,4 +40,4 @@ The framework version you are using does not support nullable types.
  **Error ID:** BC32130  
   
 ## See Also  
- [Nullable Value Types](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)
+ [Nullable Value Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

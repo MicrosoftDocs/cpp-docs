@@ -2,7 +2,6 @@
 title: "Troubleshooting Exceptions: System.Threading.AbandonedMutexException | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,4 +42,4 @@ The exception that is thrown when one thread is waiting on a Mutex object, and a
  <xref:System.Threading.AbandonedMutexException>   
  <xref:System.Threading.Mutex>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Threading](../Topic/Threading%20\(C%23%20and%20Visual%20Basic\).md)
+ [Threading](http://msdn.microsoft.com/Library/552f6c68-dbdb-4327-ae36-32cf9063d88c)

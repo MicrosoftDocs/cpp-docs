@@ -2,7 +2,6 @@
 title: "The path has not been set | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,5 +37,5 @@ A file operation, such as moving or copying a file, has been attempted without s
 -   Check that the file path has been supplied and is correct.  
   
 ## See Also  
- [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
- [File Access with Visual Basic](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/file-access)
+ [How to: Parse File Paths](http://msdn.microsoft.com/Library/c1bd99c9-8160-456a-b5ab-60a49139b923)   
+ [File Access with Visual Basic](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/file-access)

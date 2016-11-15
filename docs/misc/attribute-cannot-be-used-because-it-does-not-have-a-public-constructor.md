@@ -2,7 +2,6 @@
 title: "Attribute cannot be used because it does not have a Public constructor | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,4 +45,4 @@ The constructor for the attribute being used is `Private`, and cannot be used.
   
 ## See Also  
  [NOT IN BUILD: Attributes in Visual Basic](http://msdn.microsoft.com/en-us/620bfc0e-4582-4c8b-8432-ebc5c3dccc22)   
- [Object Lifetime: How Objects Are Created and Destroyed](../Topic/Object%20Lifetime:%20How%20Objects%20Are%20Created%20and%20Destroyed%20\(Visual%20Basic\).md)
+ [Object Lifetime: How Objects Are Created and Destroyed](http://msdn.microsoft.com/Library/f1ee8458-b156-44e0-9a8a-5dd171648cd8)

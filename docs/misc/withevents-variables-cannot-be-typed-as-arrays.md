@@ -2,7 +2,6 @@
 title: "&#39;WithEvents&#39; variables cannot be typed as arrays | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ You have attempted to declare an array using `WithEvents`. You can declare as ma
 1.  Declare the variables individually.  
   
 ## See Also  
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)   
  [NOT IN BUILD:WithEvents and the Handles Clause](http://msdn.microsoft.com/en-us/072b9cf6-6298-46f1-849e-4edc1631564c)

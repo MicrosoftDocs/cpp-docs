@@ -2,7 +2,6 @@
 title: "&#39;Case&#39; can only appear inside a &#39;Select Case&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ A `Case` statement occurs outside a `Select` block. A `Case` statement can be us
 -   Remove the `Case` statement or move it to within a `Select` block.  
   
 ## See Also  
- [Select...Case Statement](/dotnet/visual-basic/language-reference/statements/select-case-statement)
+ [Select...Case Statement](/dotnet/articles/visual-basic/language-reference/statements/select-case-statement)

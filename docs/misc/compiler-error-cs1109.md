@@ -2,7 +2,6 @@
 title: "Compiler Error CS1109 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -61,4 +60,4 @@ static class Out
 ```  
   
 ## See Also  
- [Extension Methods](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)
+ [Extension Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/extension-methods)

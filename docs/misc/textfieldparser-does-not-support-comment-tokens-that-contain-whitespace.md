@@ -2,7 +2,6 @@
 title: "TextFieldParser does not support comment tokens that contain whitespace | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,5 +40,5 @@ A comment token that contains white space has been supplied. The `TextFieldParse
   
 ## See Also  
  [TextFieldParser.CommentTokens Property](http://msdn.microsoft.com/en-us/2e6b6435-4bee-4c14-a353-e8f2c82e2d61)   
- [Parsing Text Files with the TextFieldParser Object](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object)   
- [TextFieldParser Object](/dotnet/visual-basic/language-reference/objects/textfieldparser-object)
+ [Parsing Text Files with the TextFieldParser Object](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object)   
+ [TextFieldParser Object](/dotnet/articles/visual-basic/language-reference/objects/textfieldparser-object)

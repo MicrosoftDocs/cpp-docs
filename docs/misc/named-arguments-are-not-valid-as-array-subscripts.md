@@ -2,7 +2,6 @@
 title: "Named arguments are not valid as array subscripts | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,4 +45,4 @@ An array index is specified using the syntax for passing a procedure argument by
   
 ## See Also  
  [NOTINBUILD Overview of Arrays in Visual Basic](http://msdn.microsoft.com/en-us/ca50e2f2-b4d2-4c57-9169-9abbcc3392d8)   
- [Passing Arguments by Position and by Name](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name)
+ [Passing Arguments by Position and by Name](/dotnet/articles/visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name)

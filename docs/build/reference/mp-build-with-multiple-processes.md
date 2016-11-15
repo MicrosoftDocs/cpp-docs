@@ -2,7 +2,6 @@
 title: "-MP (Build with Multiple Processes) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -128,9 +127,9 @@ The **/MP** option can reduce the total time to compile the source files on the 
 ### Visual Studio Project Settings  
   
 #### The MSBUILD.exe Tool  
- [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] uses the [MSBuild.exe](/visual-studio/msbuild/msbuild-reference) tool to build solutions and projects. The **/maxcpucount:**`number` (or **/m:**`number`) command-line option of the MSBuild.exe tool can build multiple projects at the same time. And the **/MP** compiler option can build multiple compilation units at the same time. If it is appropriate for your application, improve your solution's build time by using either or both **/MP** and **/maxcpucount**.  
+ [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] uses the [MSBuild.exe](/visualstudio/msbuild/msbuild-reference) tool to build solutions and projects. The **/maxcpucount:**`number` (or **/m:**`number`) command-line option of the MSBuild.exe tool can build multiple projects at the same time. And the **/MP** compiler option can build multiple compilation units at the same time. If it is appropriate for your application, improve your solution's build time by using either or both **/MP** and **/maxcpucount**.  
   
- The build time of your solution partly depends on the number of processes that perform the build. The `number` argument of the [/maxcpucount](/visual-studio/msbuild/msbuild-command-line-reference) MSBuild option specifies the maximum number of projects to build at the same time. Similarly, the `processMax` argument of the **/MP** compiler option specifies the maximum number of compilation units to build at the same time. If the **/maxcpucount** option specifies *P* projects and the **/MP** option specifies *C* processes, a maximum of *P*x*C* processes execute at the same time.  
+ The build time of your solution partly depends on the number of processes that perform the build. The `number` argument of the [/maxcpucount](/visualstudio/msbuild/msbuild-command-line-reference) MSBuild option specifies the maximum number of projects to build at the same time. Similarly, the `processMax` argument of the **/MP** compiler option specifies the maximum number of compilation units to build at the same time. If the **/maxcpucount** option specifies *P* projects and the **/MP** option specifies *C* processes, a maximum of *P*x*C* processes execute at the same time.  
   
  The guideline for deciding whether to use `MSBuild` or **/MP** technology is as follows:  
   
@@ -145,4 +144,4 @@ The **/MP** option can reduce the total time to compile the source files on the 
   
 ## See Also  
  [#import Directive](../../preprocessor/hash-import-directive-cpp.md)   
- [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)
+ [Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference)

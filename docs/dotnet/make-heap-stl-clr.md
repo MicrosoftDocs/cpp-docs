@@ -2,7 +2,6 @@
 title: "make_heap (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,7 +47,7 @@ template<class _RanIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `make_heap`. For more information, see [make_heap](../Topic/make_heap.md).  
+ This function behaves the same as the STL function `make_heap`. For more information, see [make_heap](http://msdn.microsoft.com/Library/b09f795c-f368-4aa8-b57e-61ee6100ddc2).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

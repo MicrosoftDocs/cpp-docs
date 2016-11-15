@@ -2,7 +2,6 @@
 title: "Comma, &#39;)&#39;, or a valid expression continuation expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ A list, such as an argument list in a procedure definition or a procedure call, 
 -   Use a comma (,) to separate list members and a closing parentheses ()) to terminate the list.  
   
 ## See Also  
- [Sub Procedures](/dotnet/visual-basic/language-reference/procedures/sub-procedures)   
- [Function Procedures](/dotnet/visual-basic/language-reference/procedures/function-procedures)
+ [Sub Procedures](/dotnet/articles/visual-basic/language-reference/procedures/sub-procedures)   
+ [Function Procedures](/dotnet/articles/visual-basic/language-reference/procedures/function-procedures)

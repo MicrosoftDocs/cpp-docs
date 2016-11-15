@@ -2,7 +2,6 @@
 title: "&#39;&lt;elementname&gt;&#39; for the Imports alias to &#39;&lt;qualifiedelementname&gt;&#39; does not refer to a Namespace, Class, Structure, Interface, Enum or Module | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # &#39;&lt;elementname&gt;&#39; for the Imports alias to &#39;&lt;qualifiedelementname&gt;&#39; does not refer to a Namespace, Class, Structure, Interface, Enum or Module
-An [Imports Statement (.NET Namespace and Type)](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type) specifies a programming element that cannot be imported.  
+An [Imports Statement (.NET Namespace and Type)](/dotnet/articles/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type) specifies a programming element that cannot be imported.  
   
  The `Imports` statement is used to reduce or remove the need for a qualifying string in front of an element name. You qualify the element in the `Imports` statement itself to provide an unambiguous path to a unique declaration of the element. Thereafter, you do not need to qualify references to the element.  
   
@@ -53,4 +52,4 @@ An [Imports Statement (.NET Namespace and Type)](/dotnet/visual-basic/language-r
 2.  Verify that the element you are qualifying is of an eligible type (namespace, class, module, structure, interface, or enumeration). If it is not, remove the `Imports` statement.  
   
 ## See Also  
- [References and the Imports Statement](/dotnet/visual-basic/programming-guide/program-structure/references-and-the-imports-statement)
+ [References and the Imports Statement](/dotnet/articles/visual-basic/programming-guide/program-structure/references-and-the-imports-statement)

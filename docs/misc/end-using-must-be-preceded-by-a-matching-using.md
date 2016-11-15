@@ -2,7 +2,6 @@
 title: "&#39;End Using&#39; must be preceded by a matching &#39;Using&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,9 +43,9 @@ An `End Using` statement appears with no matching `Using` declaration preceding 
   
 -   Remove the `End Using` statement if it is redundant.  
   
--   Supply the missing [Using Statement](/dotnet/visual-basic/language-reference/statements/using-statement) if one is missing.  
+-   Supply the missing [Using Statement](/dotnet/articles/visual-basic/language-reference/statements/using-statement) if one is missing.  
   
 -   Move the `End Using` statement to the appropriate place in the code.  
   
 ## See Also  
- [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)
+ [End \<keyword> Statement](http://msdn.microsoft.com/Library/42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f)

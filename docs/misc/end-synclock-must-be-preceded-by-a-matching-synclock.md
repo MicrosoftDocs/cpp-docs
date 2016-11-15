@@ -2,7 +2,6 @@
 title: "&#39;End SyncLock&#39; must be preceded by a matching &#39;SyncLock&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ translation.priority.mt:
 -   Make sure that the `SyncLock` block begins with a `SyncLock` statement.  
   
 ## See Also  
- [SyncLock Statement](/dotnet/visual-basic/language-reference/statements/synclock-statement)
+ [SyncLock Statement](/dotnet/articles/visual-basic/language-reference/statements/synclock-statement)

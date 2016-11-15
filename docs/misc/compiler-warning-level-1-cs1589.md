@@ -2,7 +2,6 @@
 title: "Compiler Warning (level 1) CS1589 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS1589
 Unable to include XML fragment 'fragment' of file 'file' -- reason  
   
- The syntax (*fragment*) of a [\<include>](../Topic/%3Cinclude%3E%20\(C%23%20Programming%20Guide\).md) tag, which referenced a file (`file`), was incorrect for the specified ***reason***.  
+ The syntax (*fragment*) of a [\<include>](http://msdn.microsoft.com/Library/a8a70302-6196-4643-bd09-ef33f411f18f) tag, which referenced a file (`file`), was incorrect for the specified ***reason***.  
   
  A malformed line will be placed in the generated XML file.  
   

@@ -2,7 +2,6 @@
 title: "find_end (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,7 +49,7 @@ template<class _FwdIt1, class _FwdIt2, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `find_end`. For more information, see [find_end](../Topic/find_end.md).  
+ This function behaves the same as the STL function `find_end`. For more information, see [find_end](http://msdn.microsoft.com/Library/831c0501-75d0-4ed8-9519-9b8c1dfef98a).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

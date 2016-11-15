@@ -2,7 +2,6 @@
 title: "How to: Export Settings By Using Interop Assemblies | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,7 +43,7 @@ A VSPackage may export settings from the [!INCLUDE[vsprvs](../assembler/masm/inc
   
     -   Register the VSPackage as supporting the settings mechanism by defining one or more Custom Settings Points.  
   
-         For more information, see [Support for User Settings](/visual-studio/extensibility/internals/support-for-user-settings).  
+         For more information, see [Support for User Settings](/visualstudio/extensibility/internals/support-for-user-settings).  
   
     -   Declare that the VSPackage implements <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings>. If desired, the VSPackage can also implement <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettingsQuery> interface. For example:  
   
@@ -357,7 +356,7 @@ HRESULT ImportSettings_KeyBindings(IVsSettingsReader *pSettings, UserSettings
 ```  
   
 ## See Also  
- [Support for User Settings](/visual-studio/extensibility/internals/support-for-user-settings)   
- [Extending User Settings and Options](/visual-studio/extensibility/extending-user-settings-and-options)   
+ [Support for User Settings](/visualstudio/extensibility/internals/support-for-user-settings)   
+ [Extending User Settings and Options](/visualstudio/extensibility/extending-user-settings-and-options)   
  [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
  [How to: Use Interop Assemblies to Import Settings](../misc/how-to-use-interop-assemblies-to-import-settings.md)

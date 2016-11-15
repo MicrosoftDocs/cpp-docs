@@ -2,7 +2,6 @@
 title: "Compiler Error CS0008 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS0008
 Unexpected error reading metadata from file 'file' — 'description'  
   
- A DLL was successfully opened for retrieving metadata but is corrupted, such that data could not be read from it. For more information, see [/reference (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).
+ A DLL was successfully opened for retrieving metadata but is corrupted, such that data could not be read from it. For more information, see [/reference (C# Compiler Options)](/dotnet/articles/csharp/language-reference/compiler-options/reference-compiler-option).

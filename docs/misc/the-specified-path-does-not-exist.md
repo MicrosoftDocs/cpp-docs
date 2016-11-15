@@ -2,7 +2,6 @@
 title: "The specified path does not exist | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,6 +37,6 @@ A specified path does not exist, perhaps due to an error combining strings.
 -   Make sure that the path is correct.  
   
 ## See Also  
- [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)   
- [Conversions Between Strings and Other Types](/dotnet/visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types)   
+ [How to: Parse File Paths](http://msdn.microsoft.com/Library/c1bd99c9-8160-456a-b5ab-60a49139b923)   
+ [Conversions Between Strings and Other Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types)   
  [Parsing Strings in Visual Basic](http://msdn.microsoft.com/en-us/927a4b26-5388-458c-85d8-aaf0851457e3)

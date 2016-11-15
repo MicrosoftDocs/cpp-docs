@@ -2,7 +2,6 @@
 title: "&#39;&lt;member&gt;&#39; conflicts with the reserved member by this name that is implicitly declared in all enums | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,5 +47,5 @@ The name of a type member conflicts with the name of a member implicitly declare
   
 ## See Also  
  [NotInBuild:Declaration Statements in Visual Basic](http://msdn.microsoft.com/en-us/81f3c398-f45c-4d95-80bf-aa39d1a0fb30)   
- [Enumerations Overview](/dotnet/visual-basic/programming-guide/language-features/constants-enums/enumerations-overview)   
- [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)
+ [Enumerations Overview](/dotnet/articles/visual-basic/programming-guide/language-features/constants-enums/enumerations-overview)   
+ [Declared Element Names](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)

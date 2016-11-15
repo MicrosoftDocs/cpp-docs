@@ -2,7 +2,6 @@
 title: "&#39;&lt;modifier&gt;&#39; is not valid on a local constant declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ A `Const` statement inside a procedure contains an invalid keyword, such as `Ove
 1.  Remove the invalid keyword from the `Const` statement.  
   
 ## See Also  
- [Const Statement](/dotnet/visual-basic/language-reference/statements/const-statement)
+ [Const Statement](/dotnet/articles/visual-basic/language-reference/statements/const-statement)

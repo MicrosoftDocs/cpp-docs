@@ -2,7 +2,6 @@
 title: "Compiler Error CS1021 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1021
 Integral constant is too large  
   
- A value assigned to an [integral type](/dotnet/csharp/language-reference/keywords/integral-types-table) is larger than the largest possible unsigned integer value.  
+ A value assigned to an [integral type](/dotnet/articles/csharp/language-reference/keywords/integral-types-table) is larger than the largest possible unsigned integer value.  
   
  The following sample generates CS1021:  
   

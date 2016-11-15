@@ -2,7 +2,6 @@
 title: "Interface can inherit only from another interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ You have attempted to inherit from something that is not an interface.
 -   Make sure that the base interface or interfaces from which you are attempting to inherit are actually interfaces.  
   
 ## See Also  
- [Interface Statement](/dotnet/visual-basic/language-reference/statements/interface-statement)   
- [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
+ [Interface Statement](/dotnet/articles/visual-basic/language-reference/statements/interface-statement)   
+ [Inheritance Basics](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

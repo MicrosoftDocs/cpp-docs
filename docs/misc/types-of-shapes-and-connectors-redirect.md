@@ -2,7 +2,6 @@
 title: "Types of Shapes and Connectors - redirect | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -31,4 +30,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Types of Shapes and Connectors - redirect
-This topic has been merged with another. Please see [Customizing Presentation on the Diagram](/visual-studio/modeling/customizing-presentation-on-the-diagram).
+This topic has been merged with another. Please see [Customizing Presentation on the Diagram](/visualstudio/modeling/customizing-presentation-on-the-diagram).

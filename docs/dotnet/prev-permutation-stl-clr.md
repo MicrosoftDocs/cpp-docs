@@ -2,7 +2,6 @@
 title: "prev_permutation (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,7 +47,7 @@ template<class _BidIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `prev_permutation`. For more information, see [prev_permutation](../Topic/prev_permutation.md).  
+ This function behaves the same as the STL function `prev_permutation`. For more information, see [prev_permutation](http://msdn.microsoft.com/Library/c467e0f9-931d-4028-b835-fbbf51158d97).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

@@ -2,7 +2,6 @@
 title: "Compiler Error CS1008 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1008
 Type byte, sbyte, short, ushort, int, uint, long, or ulong expected  
   
- Certain data types, such as [enums](/dotnet/csharp/language-reference/keywords/enum), can only be declared to hold data of specified types.  
+ Certain data types, such as [enums](/dotnet/articles/csharp/language-reference/keywords/enum), can only be declared to hold data of specified types.  
   
  The following sample generates CS1008:  
   

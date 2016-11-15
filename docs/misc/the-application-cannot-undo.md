@@ -2,7 +2,6 @@
 title: "The application cannot undo. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,4 +40,4 @@ This error generally occurs when an undo operation has been attempted for an ite
 1.  Manually reverse the change.  
   
 ## See Also  
- [Finding and Replacing Text](/visual-studio/ide/finding-and-replacing-text)
+ [Finding and Replacing Text](/visualstudio/ide/finding-and-replacing-text)

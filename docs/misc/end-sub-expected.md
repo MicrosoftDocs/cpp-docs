@@ -2,7 +2,6 @@
 title: "&#39;End Sub&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ An `End` statement must match the block it terminates. A `Sub` procedure definit
 -   Add an `End Sub` statement to the end of the procedure.  
   
 ## See Also  
- [Sub Procedures](/dotnet/visual-basic/language-reference/procedures/sub-procedures)   
- [End Statement](/dotnet/visual-basic/language-reference/statements/end-statement)
+ [Sub Procedures](/dotnet/articles/visual-basic/language-reference/procedures/sub-procedures)   
+ [End Statement](/dotnet/articles/visual-basic/language-reference/statements/end-statement)

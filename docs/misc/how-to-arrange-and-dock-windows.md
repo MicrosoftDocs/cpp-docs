@@ -2,7 +2,6 @@
 title: "How to: Arrange and Dock Windows | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -53,4 +52,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Arrange and Dock Windows
-This content has moved to [Customizing window layouts](/visual-studio/ide/customizing-window-layouts-in-visual-studio)
+This content has moved to [Customizing window layouts](/visualstudio/ide/customizing-window-layouts-in-visual-studio)

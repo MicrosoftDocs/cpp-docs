@@ -2,7 +2,6 @@
 title: "Compiler Warning (level 1) CS1030 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS1030
 \#warning: 'text'  
   
- Displays the text of a warning defined with the [#warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-warning) directive.  
+ Displays the text of a warning defined with the [#warning](/dotnet/articles/csharp/language-reference/preprocessor-directives/preprocessor-warning) directive.  
   
  The following sample shows how to create a user-defined warning:  
   

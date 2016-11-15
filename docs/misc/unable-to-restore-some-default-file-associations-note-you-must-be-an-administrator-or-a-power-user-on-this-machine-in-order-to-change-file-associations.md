@@ -2,7 +2,6 @@
 title: "Unable to restore some default file associations. Note: you must be an administrator or a power user on this machine in order to change file associations. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,4 +41,4 @@ This error occurs when the devenv command-line switch /AssociateFiles is used, b
   
 ## See Also  
  [User Rights and Visual Studio](http://msdn.microsoft.com/en-us/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
- [Devenv Command Line Switches](/visual-studio/ide/reference/devenv-command-line-switches)
+ [Devenv Command Line Switches](/visualstudio/ide/reference/devenv-command-line-switches)

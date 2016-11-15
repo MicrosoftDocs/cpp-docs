@@ -2,7 +2,6 @@
 title: "&#39;RaiseEvent&#39; statements are not valid in the Immediate window | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ translation.priority.mt:
 -   Test `RaiseEvent` statements from code in the **Code Editor**.  
   
 ## See Also  
- [RaiseEvent Statement](/dotnet/visual-basic/language-reference/statements/raiseevent-statement)   
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [RaiseEvent Statement](/dotnet/articles/visual-basic/language-reference/statements/raiseevent-statement)   
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

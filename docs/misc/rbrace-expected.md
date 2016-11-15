@@ -2,7 +2,6 @@
 title: "&#39;}&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -57,7 +56,7 @@ Public Class dictionaryMaker(Of t As {IComparable, IDisposable, New})
 -   Use "}" to end the array initializer or constraint list.  
   
 ## See Also  
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)   
- [How to: Initialize an Array Variable in Visual Basic](../Topic/How%20to:%20Initialize%20an%20Array%20Variable%20in%20Visual%20Basic.md)   
- [Type List](/dotnet/visual-basic/language-reference/statements/type-list)   
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)   
+ [How to: Initialize an Array Variable in Visual Basic](http://msdn.microsoft.com/Library/aadd7a60-7ca4-4608-b986-091f19e7fc10)   
+ [Type List](/dotnet/articles/visual-basic/language-reference/statements/type-list)   
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)

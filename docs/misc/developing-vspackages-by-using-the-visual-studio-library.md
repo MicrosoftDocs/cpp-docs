@@ -2,7 +2,6 @@
 title: "Developing VSPackages By Using the Visual Studio Library | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ Visual Studio Library is a set of template-based C++ classes for the easy creati
  [Introduction to ATL](../atl/introduction-to-atl.md)  
  Introduces the Active Template Library (ATL), which is a set of template-based C++ classes for creating small, fast Component Object Model (COM) objects.  
   
- [Starting to Develop Visual Studio Extensions](/visual-studio/extensibility/starting-to-develop-visual-studio-extensions)  
+ [Starting to Develop Visual Studio Extensions](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)  
  Provides an overview of the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] Development Environment SDK.

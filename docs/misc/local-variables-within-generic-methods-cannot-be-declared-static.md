@@ -2,7 +2,6 @@
 title: "Local variables within generic methods cannot be declared &#39;Static&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,7 +46,7 @@ The declaration of a local variable within a generic procedure specifies `Static
 -   Remove the `Static` keyword from the variable declaration.  
   
 ## See Also  
- [Static](/dotnet/visual-basic/language-reference/modifiers/static)   
+ [Static](/dotnet/articles/visual-basic/language-reference/modifiers/static)   
  [NOTINBUILD How to: Lengthen a Variable's Lifetime](http://msdn.microsoft.com/en-us/04e7c56c-1db0-4fe5-a678-859a39ec654b)   
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures)
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Generic Procedures in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-procedures)

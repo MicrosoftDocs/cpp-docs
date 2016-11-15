@@ -2,7 +2,6 @@
 title: "How to: Provide Custom Toolbox Items By Using Interop Assemblies | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,7 +33,7 @@ translation.priority.mt:
 > [!NOTE]
 >  The recommended way to add custom controls to the Toolbox is to use the Toolbox Control templates that come with the Visual Studio 10 SDK. This topic is retained only for backward compatibility, and for adding existing controls to the Toolbox.  
 >   
->  For more information on creating toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](/visual-studio/extensibility/creating-a-wpf-toolbox-control).  
+>  For more information on creating toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](/visualstudio/extensibility/creating-a-wpf-toolbox-control).  
   
  A VSPackage based on an interop assembly can extend [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] **Toolbox** functionality by adding ActiveX controls.  
   
@@ -42,7 +41,7 @@ translation.priority.mt:
   
  For information on how a VSPackage manages the **Toolbox** using [!INCLUDE[vsipsdk](../mfc/includes/vsipsdk_md.md)], see [Managing the Toolbox](../misc/managing-the-toolbox.md).  
   
- For information on managing the **Toolbox** through automation, see [How to: Control the Toolbox](../Topic/How%20to:%20Control%20the%20Toolbox.md).  
+ For information on managing the **Toolbox** through automation, see [How to: Control the Toolbox](http://msdn.microsoft.com/Library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## Procedures  
  Items added to the **Toolbox** should implement the standard **Toolbox** Clipboard formats unless the VSPackage adding the items acts as a **Toolbox** item provider — providing implementation support for the new format.  
@@ -155,4 +154,4 @@ translation.priority.mt:
  [Registering Toolbox Support Features](../misc/registering-toolbox-support-features.md)   
  [Advanced Toolbox Control Development](../misc/advanced-toolbox-control-development.md)   
  [Managing the Toolbox](../misc/managing-the-toolbox.md)   
- [How to: Control the Toolbox](../Topic/How%20to:%20Control%20the%20Toolbox.md)
+ [How to: Control the Toolbox](http://msdn.microsoft.com/Library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)

@@ -2,7 +2,6 @@
 title: "set_intersection (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,7 +49,7 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `set_intersection`. For more information, see [set_intersection](../Topic/set_intersection.md).  
+ This function behaves the same as the STL function `set_intersection`. For more information, see [set_intersection](http://msdn.microsoft.com/Library/49835507-0d59-4ca3-bcdb-1de1ac4eac00).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

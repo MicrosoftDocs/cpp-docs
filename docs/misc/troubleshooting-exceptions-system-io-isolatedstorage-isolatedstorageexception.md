@@ -2,7 +2,6 @@
 title: "Troubleshooting Exceptions: System.IO.IsolatedStorage.IsolatedStorageException | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,4 +38,4 @@ The exception that is thrown when an operation in isolated storage fails.
 ## See Also  
  <xref:System.IO.IsolatedStorage.IsolatedStorageException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Isolated Storage](../Topic/Isolated%20Storage.md)
+ [Isolated Storage](http://msdn.microsoft.com/Library/aff939d7-9e49-46f2-a8cd-938d3020e94e)

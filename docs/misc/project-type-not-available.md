@@ -2,7 +2,6 @@
 title: "Project Type Not Available | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,5 +45,5 @@ This dialog box appears with the error "The project \<project> cannot be opened 
 -   Install the correct version of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].  
   
 ## See Also  
- [Porting, Migrating, and Upgrading Visual Studio Projects](/visual-studio/porting/porting-migrating-and-upgrading-visual-studio-projects)   
- [Project Properties Reference](/visual-studio/ide/reference/project-properties-reference)
+ [Porting, Migrating, and Upgrading Visual Studio Projects](/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects)   
+ [Project Properties Reference](/visualstudio/ide/reference/project-properties-reference)

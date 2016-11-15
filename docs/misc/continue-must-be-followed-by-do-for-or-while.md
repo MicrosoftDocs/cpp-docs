@@ -2,7 +2,6 @@
 title: "&#39;Continue&#39; must be followed by &#39;Do&#39;, &#39;For&#39; or &#39;While&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,4 +50,4 @@ A `Continue` statement must be followed by `Do`, `For`, or `While`, depending on
 4.  Otherwise, remove the `Continue` statement.  
   
 ## See Also  
- [Continue Statement](/dotnet/visual-basic/language-reference/statements/continue-statement)
+ [Continue Statement](/dotnet/articles/visual-basic/language-reference/statements/continue-statement)

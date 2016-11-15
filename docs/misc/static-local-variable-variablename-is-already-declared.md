@@ -2,7 +2,6 @@
 title: "Static local variable &#39;&lt;variablename&gt;&#39; is already declared | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ Another static local variable with the same name has already been declared.
 2.  Give each static local variable a unique name.  
   
 ## See Also  
- [Static](/dotnet/visual-basic/language-reference/modifiers/static)
+ [Static](/dotnet/articles/visual-basic/language-reference/modifiers/static)

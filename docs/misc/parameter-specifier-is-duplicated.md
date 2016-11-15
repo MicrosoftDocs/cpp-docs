@@ -2,7 +2,6 @@
 title: "Parameter specifier is duplicated | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ A parameter specifier is applied more than once to the parameter.
 -   Remove the duplicate specifiers.  
   
 ## See Also  
- [Parameter List](/dotnet/visual-basic/language-reference/statements/parameter-list)
+ [Parameter List](/dotnet/articles/visual-basic/language-reference/statements/parameter-list)

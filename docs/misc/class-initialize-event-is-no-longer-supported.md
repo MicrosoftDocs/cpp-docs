@@ -2,7 +2,6 @@
 title: "&#39;Class_Initialize&#39; event is no longer supported | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,7 +39,7 @@ translation.priority.mt:
   
  The `Class_Initialize` event of previous versions of [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] is replaced by class constructors.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42001  
   

@@ -2,7 +2,6 @@
 title: "Compiler Error CS0748 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -58,4 +57,4 @@ class CS0748
 ```  
   
 ## See Also  
- [Lambda Expressions](/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions)
+ [Lambda Expressions](/dotnet/articles/csharp/programming-guide/statements-expressions-operators/lambda-expressions)

@@ -2,7 +2,6 @@
 title: "Delegate in an interface cannot be declared &#39;&lt;specifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ An invalid modifier was specified with a delegate declared in an interface.
 1.  Remove modifiers such as `Public`, `Private`, `Shared`, `Friend`, `Protected`, `Protected Friend`, and `Overridable`.  
   
 ## See Also  
- [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)   
+ [Interfaces](/dotnet/articles/visual-basic/programming-guide/language-features/interfaces/index)   
  [NOT IN BUILD: Interfaces Overview](http://msdn.microsoft.com/en-us/f96bb470-c1b8-4c73-89bc-6f536b798da1)

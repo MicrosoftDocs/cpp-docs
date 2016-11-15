@@ -2,7 +2,6 @@
 title: "&#39;&lt;method1&gt;&#39; cannot override &#39;&lt;method2&gt;&#39; because they differ by optional parameters | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,4 +45,4 @@ You have attempted to override a method with another method that differs from th
   
 ## See Also  
  [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213)   
- [Overrides](/dotnet/visual-basic/language-reference/modifiers/overrides)
+ [Overrides](/dotnet/articles/visual-basic/language-reference/modifiers/overrides)

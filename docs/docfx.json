@@ -30,6 +30,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+            "breadcrumb_path": "~/_breadcrumb/toc.yml",
             "ROBOTS": "INDEX,FOLLOW",
             "author": "",
             "ms.author": "",

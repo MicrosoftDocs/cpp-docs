@@ -2,7 +2,6 @@
 title: "Compiler Error CS1940 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -72,4 +71,4 @@ class Test
 ```  
   
 ## See Also  
- [Standard Query Operators Overview](../Topic/Standard%20Query%20Operators%20Overview.md)
+ [Standard Query Operators Overview](http://msdn.microsoft.com/Library/24cda21e-8af8-4632-b519-c404a839b9b2)

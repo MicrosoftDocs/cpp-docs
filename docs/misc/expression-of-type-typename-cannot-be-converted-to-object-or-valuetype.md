@@ -2,7 +2,6 @@
 title: "Expression of type &#39;&lt;typename&gt;&#39; cannot be converted to &#39;Object&#39; or &#39;ValueType&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -53,4 +52,4 @@ An expression evaluates to a type that cannot be boxed by the common language ru
 3.  Rewrite the statement to avoid the boxing conversion.  
   
 ## See Also  
- [Implicit and Explicit Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)
+ [Implicit and Explicit Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)

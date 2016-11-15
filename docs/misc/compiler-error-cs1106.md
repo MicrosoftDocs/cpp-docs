@@ -2,7 +2,6 @@
 title: "Compiler Error CS1106 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -53,5 +52,5 @@ public class Extensions // CS1106
 ```  
   
 ## See Also  
- [Extension Methods](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)   
- [static](/dotnet/csharp/language-reference/keywords/static)
+ [Extension Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/extension-methods)   
+ [static](/dotnet/articles/csharp/language-reference/keywords/static)

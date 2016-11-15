@@ -2,7 +2,6 @@
 title: "Parameter &#39;&lt;parametername&gt;&#39; already has a matching omitted argument | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -53,4 +52,4 @@ Call ABC(6, , Y:=3)
 -   Supply the argument by position, or remove the comma that omits it.  
   
 ## See Also  
- [Passing Arguments by Position and by Name](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name)
+ [Passing Arguments by Position and by Name](/dotnet/articles/visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name)

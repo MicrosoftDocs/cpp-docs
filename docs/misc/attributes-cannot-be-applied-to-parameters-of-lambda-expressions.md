@@ -2,7 +2,6 @@
 title: "Attributes cannot be applied to parameters of lambda expressions | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -55,5 +54,5 @@ End Sub
   
 ## See Also  
  <xref:System.Runtime.InteropServices.InAttribute>   
- [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)   
+ [Lambda Expressions](/dotnet/articles/visual-basic/language-reference/procedures/lambda-expressions)   
  [NOT IN BUILD: Attributes in Visual Basic](http://msdn.microsoft.com/en-us/620bfc0e-4582-4c8b-8432-ebc5c3dccc22)

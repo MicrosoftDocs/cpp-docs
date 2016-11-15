@@ -2,7 +2,6 @@
 title: "TargetFilePath specifies an existing folder | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,7 +37,7 @@ The parameter `TargetFilePath` specifies an existing directory but must specify 
 -   Change `TargetFilePath` to specify a new, rather than existing, directory.  
   
 ## See Also  
- [How to: Move a File](../Topic/How%20to:%20Move%20a%20File%20in%20Visual%20Basic.md)   
+ [How to: Move a File](http://msdn.microsoft.com/Library/53a7457b-5815-41ad-b37d-28537c1fb77a)   
  [How to: Move a Directory in Visual Basic](http://msdn.microsoft.com/en-us/0f26d1ef-c0a0-4445-8eb0-9b7d0490411c)   
- [How to: Rename a File](../Topic/How%20to:%20Rename%20a%20File%20in%20Visual%20Basic.md)   
+ [How to: Rename a File](http://msdn.microsoft.com/Library/0ea7e0c8-2cb2-4bf5-a00d-7b6e3c08a3bc)   
  [How to: Rename a Directory in Visual Basic](http://msdn.microsoft.com/en-us/780c7afc-a03c-4b01-865a-510fe331b1cc)

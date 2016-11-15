@@ -2,7 +2,6 @@
 title: "Reference to a non-shared member requires an object reference | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,5 +48,5 @@ You have referenced a non-shared member within your code and failed to supply an
 ## See Also  
  [NOT IN BUILD: Understanding Classes](http://msdn.microsoft.com/en-us/cc2355a2-cb98-4353-9440-736585aec46c)   
  [NOT IN BUILD: Shared Members in Visual Basic](http://msdn.microsoft.com/en-us/dbc3783f-83a2-4225-995d-c2d6d025663d)   
- [Shared](/dotnet/visual-basic/language-reference/modifiers/shared)   
+ [Shared](/dotnet/articles/visual-basic/language-reference/modifiers/shared)   
  [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)

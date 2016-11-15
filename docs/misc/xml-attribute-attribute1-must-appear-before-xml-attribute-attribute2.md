@@ -2,7 +2,6 @@
 title: "XML attribute &#39;attribute1&#39; must appear before XML attribute &#39;attribute2&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,7 +44,7 @@ Attributes in an XML document literal are specified in an invalid order. Valid a
 -   Update the attribute order for the XML document literal by using the guidelines specified in the XML 1.0 specification.  
   
 ## See Also  
- [XML Literals and the XML 1.0 Specification](/dotnet/visual-basic/programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification)   
- [XML Document Literal](/dotnet/visual-basic/language-reference/xml-literals/xml-document-literal)   
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [XML Literals and the XML 1.0 Specification](/dotnet/articles/visual-basic/programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification)   
+ [XML Document Literal](/dotnet/articles/visual-basic/language-reference/xml-literals/xml-document-literal)   
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

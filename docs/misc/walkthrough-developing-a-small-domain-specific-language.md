@@ -2,7 +2,6 @@
 title: "Walkthrough: Developing a Small Domain Specific Language | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,4 +25,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Walkthrough: Developing a Small Domain Specific Language
-This topic has been consolidated with other content. Please go to [How to Define a Domain-Specific Language](/visual-studio/modeling/how-to-define-a-domain-specific-language).
+This topic has been consolidated with other content. Please go to [How to Define a Domain-Specific Language](/visualstudio/modeling/how-to-define-a-domain-specific-language).

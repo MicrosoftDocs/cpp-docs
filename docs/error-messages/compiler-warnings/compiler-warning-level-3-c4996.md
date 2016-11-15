@@ -2,7 +2,6 @@
 title: "Compiler Warning (level 3) C4996 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -61,7 +60,7 @@ The compiler encountered a deprecated declaration.
   
  **Various messages in MFC or ATL code**  
   
- `C4996` can also occur if you use MFC or ATL functions that were deprecated for security reasons. To suppress these warnings, see [_AFX_SECURE_NO_WARNINGS](../Topic/_AFX_SECURE_NO_WARNINGS.md) and [_ATL_SECURE_NO_WARNINGS](../Topic/_ATL_SECURE_NO_WARNINGS.md).  
+ `C4996` can also occur if you use MFC or ATL functions that were deprecated for security reasons. To suppress these warnings, see [_AFX_SECURE_NO_WARNINGS](http://msdn.microsoft.com/Library/97dcfd41-1e56-41d5-bf7e-d240b950134b) and [_ATL_SECURE_NO_WARNINGS](http://msdn.microsoft.com/Library/587d29d8-a75a-44a3-bec8-f724087e5e73).  
   
  **Marshalling errors in CLR code**  
   

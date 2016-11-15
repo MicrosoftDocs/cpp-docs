@@ -2,7 +2,6 @@
 title: "Compiler Error CS2036 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -64,5 +63,5 @@ class Test
 ```  
   
 ## See Also  
- [/pdb (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/pdb-compiler-option)   
- [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)
+ [/pdb (C# Compiler Options)](/dotnet/articles/csharp/language-reference/compiler-options/pdb-compiler-option)   
+ [/debug (C# Compiler Options)](/dotnet/articles/csharp/language-reference/compiler-options/debug-compiler-option)

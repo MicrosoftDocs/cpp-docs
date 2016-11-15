@@ -2,7 +2,6 @@
 title: "Variable &#39;&lt;variablename&gt;&#39; is passed by reference before it has been assigned a value | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,11 +39,11 @@ Variable '\<variablename>' is passed by reference before it has been assigned a 
   
  A procedure call passes a variable as an argument to a `ByRef` parameter before any value is assigned to the variable.  
   
- If a variable has never been assigned a value, it holds the default value for its data type. For a reference data type, that default value is [Nothing](/dotnet/visual-basic/language-reference/nothing). Reading a reference variable that has a value of `Nothing` can cause a <xref:System.NullReferenceException> in some circumstances.  
+ If a variable has never been assigned a value, it holds the default value for its data type. For a reference data type, that default value is [Nothing](/dotnet/articles/visual-basic/language-reference/nothing). Reading a reference variable that has a value of `Nothing` can cause a <xref:System.NullReferenceException> in some circumstances.  
   
  Passing an argument to a procedure `ByRef` exposes the variable underlying the argument to possible modification by the procedure.  
   
- By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42030  
   
@@ -54,12 +53,12 @@ Variable '\<variablename>' is passed by reference before it has been assigned a 
   
 -   If the logic in the procedure reads the argument before assigning any value to it, and if the variable is of a value type, then make sure that the procedure logic does not depend on whether the variable holds its default value or not.  
   
--   If the logic in the procedure reads the argument before assigning any value to it, and if the variable is of a reference type, then make sure that the procedure logic can handle a value of `Nothing`. For example, it could use a [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement) to catch a <xref:System.NullReferenceException>.  
+-   If the logic in the procedure reads the argument before assigning any value to it, and if the variable is of a reference type, then make sure that the procedure logic can handle a value of `Nothing`. For example, it could use a [Try...Catch...Finally Statement](/dotnet/articles/visual-basic/language-reference/statements/try-catch-finally-statement) to catch a <xref:System.NullReferenceException>.  
   
 ## See Also  
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
- [Value Types and Reference Types](/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)   
- [Passing Arguments by Value and by Reference](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)   
- [ByRef](/dotnet/visual-basic/language-reference/modifiers/byref)   
- [Variable Declaration](/dotnet/visual-basic/programming-guide/language-features/variables/variable-declaration)   
- [Troubleshooting Variables](/dotnet/visual-basic/programming-guide/language-features/variables/troubleshooting-variables)
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)   
+ [Value Types and Reference Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)   
+ [Passing Arguments by Value and by Reference](/dotnet/articles/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)   
+ [ByRef](/dotnet/articles/visual-basic/language-reference/modifiers/byref)   
+ [Variable Declaration](/dotnet/articles/visual-basic/programming-guide/language-features/variables/variable-declaration)   
+ [Troubleshooting Variables](/dotnet/articles/visual-basic/programming-guide/language-features/variables/troubleshooting-variables)

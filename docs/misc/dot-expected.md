@@ -2,7 +2,6 @@
 title: "&#39;.&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,4 +48,4 @@ The code has a `Handles` clause that contains an exclamation point (`!`).
      [!code-vb[VbVbalrEventError#21](../misc/codesnippet/VisualBasic/dot-expected_1.vb)]  
   
 ## See Also  
- [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause)
+ [Handles](/dotnet/articles/visual-basic/language-reference/statements/handles-clause)

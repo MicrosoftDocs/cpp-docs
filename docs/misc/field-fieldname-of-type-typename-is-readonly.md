@@ -2,7 +2,6 @@
 title: "Field &#39;&lt;fieldname&gt;&#39; of type &#39;&lt;typename&gt;&#39; is &#39;ReadOnly&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,4 +43,4 @@ You attempted to write to a field that is declared `ReadOnly`.
 -   Do not attempt to write to this field.  
   
 ## See Also  
- [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)
+ [ReadOnly](/dotnet/articles/visual-basic/language-reference/modifiers/readonly)

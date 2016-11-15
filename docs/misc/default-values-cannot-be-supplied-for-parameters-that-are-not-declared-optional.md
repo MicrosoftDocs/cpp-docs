@@ -2,7 +2,6 @@
 title: "Default values cannot be supplied for parameters that are not declared &#39;Optional&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ Required arguments must be supplied when the procedure is called, and they do no
 -   Declare the argument to be `Optional` or remove the default value.  
   
 ## See Also  
- [Optional Parameters](/dotnet/visual-basic/language-reference/procedures/optional-parameters)   
- [Optional](/dotnet/visual-basic/language-reference/modifiers/optional)
+ [Optional Parameters](/dotnet/articles/visual-basic/language-reference/procedures/optional-parameters)   
+ [Optional](/dotnet/articles/visual-basic/language-reference/modifiers/optional)

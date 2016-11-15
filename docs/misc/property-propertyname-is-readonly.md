@@ -2,7 +2,6 @@
 title: "Property &#39;&lt;propertyname&gt;&#39; is &#39;ReadOnly&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ You have tried to assign a value to a property that is declared `ReadOnly`.
 -   Remove the `ReadOnly` specifier from the property declaration.  
   
 ## See Also  
- [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)
+ [ReadOnly](/dotnet/articles/visual-basic/language-reference/modifiers/readonly)

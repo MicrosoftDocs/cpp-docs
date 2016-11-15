@@ -2,7 +2,6 @@
 title: "Option Strict On does not allow narrowing in implicit type conversions between method &#39;&lt;methodname&gt;&#39; and delegate &#39;&lt;delegatename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -76,7 +75,7 @@ Dim funDel3 As Del = AddressOf Conversion3
 -   Change the data type of the parameter in the delegate or the method so that the required widening relationship exists.  
   
 ## See Also  
- [Relaxed Delegate Conversion](/dotnet/visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion)   
- [Delegates](/dotnet/visual-basic/programming-guide/language-features/delegates/delegates)   
- [Widening and Narrowing Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)   
+ [Relaxed Delegate Conversion](/dotnet/articles/visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion)   
+ [Delegates](/dotnet/articles/visual-basic/programming-guide/language-features/delegates/delegates)   
+ [Widening and Narrowing Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)   
  [NOT IN BUILD: Delegates and the AddressOf Operator](http://msdn.microsoft.com/en-us/7b2ed932-8598-4355-b2f7-5cedb23ee86f)

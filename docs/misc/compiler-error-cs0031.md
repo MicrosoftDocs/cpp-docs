@@ -2,7 +2,6 @@
 title: "Compiler Error CS0031 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0031
 Constant value 'value' cannot be converted to a 'type'. (use 'unchecked' syntax to override)  
   
- An attempt was made to assign a value to a variable whose type cannot store the value. For more information, see [Types](/dotnet/csharp/programming-guide/types/index).  
+ An attempt was made to assign a value to a variable whose type cannot store the value. For more information, see [Types](/dotnet/articles/csharp/programming-guide/types/index).  
   
  The following sample generates CS0031 in both checked and unchecked contexts:  
   
@@ -68,4 +67,4 @@ namespace CS0031
 ```  
   
 ## See Also  
- [unchecked](/dotnet/csharp/language-reference/keywords/unchecked)
+ [unchecked](/dotnet/articles/csharp/language-reference/keywords/unchecked)

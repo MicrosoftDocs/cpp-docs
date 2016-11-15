@@ -2,7 +2,6 @@
 title: "&#39;Nothing&#39; cannot be evaluated | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ The `Nothing` keyword was used in the debug window.
 -   Do not use `Nothing` while debugging.  
   
 ## See Also  
- [Nothing](/dotnet/visual-basic/language-reference/nothing)
+ [Nothing](/dotnet/articles/visual-basic/language-reference/nothing)

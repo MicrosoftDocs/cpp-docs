@@ -2,7 +2,6 @@
 title: "Compiler Error CS0653 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0653
 Cannot apply attribute class 'class' because it is abstract  
   
- An [abstract](/dotnet/csharp/language-reference/keywords/abstract) custom attribute class cannot be used as an attribute.  
+ An [abstract](/dotnet/articles/csharp/language-reference/keywords/abstract) custom attribute class cannot be used as an attribute.  
   
  The following sample generates CS0653:  
   

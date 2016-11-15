@@ -2,7 +2,6 @@
 title: "find (STL Samples) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,6 +34,6 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # find (STL Samples)
-Topic deprecated, see [find](../Topic/find%20\(STL\).md).  
+Topic deprecated, see [find](http://msdn.microsoft.com/Library/021e9ef9-8817-409f-92ee-cd7104867361).  
   
 ## Syntax

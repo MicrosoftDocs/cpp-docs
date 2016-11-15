@@ -2,7 +2,6 @@
 title: "Events declared with an &#39;As&#39; clause must have a delegate type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,7 +46,7 @@ A type was specified that is not a delegate.
 2.  Specify a delegate with the `As` clause.  
   
 ## See Also  
- [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)   
- [Delegates](/dotnet/visual-basic/programming-guide/language-features/delegates/delegates)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)   
- [Delegate Statement](/dotnet/visual-basic/language-reference/statements/delegate-statement)
+ [Events](/dotnet/articles/visual-basic/programming-guide/language-features/events/events)   
+ [Delegates](/dotnet/articles/visual-basic/programming-guide/language-features/delegates/delegates)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)   
+ [Delegate Statement](/dotnet/articles/visual-basic/language-reference/statements/delegate-statement)

@@ -2,7 +2,6 @@
 title: "File specified in FileName is not a valid XML file | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,7 +33,7 @@ translation.priority.mt:
 The file name that you supplied is not a valid XML file. To specify the allowed structure and content of an XML document, you can use a Document Type Definition (DTD), a Microsoft XML-Data Reduced (XDR) schema, or an XML Schema definition language (XSD) schema. XSD schemas are the preferred way to specify XML grammars in the [!INCLUDE[dnprdnshort](../error-messages/tool-errors/includes/dnprdnshort_md.md)].  
   
 > [!NOTE]
->  In some earlier versions of Visual Studio, the **XML Designer** is the designer for typed datasets and XML schema. The **XML Designer** can still be used to create and edit XML schema files. However, in [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)], the designer for creating and editing typed datasets is the **Dataset Designer**. For more information, see [Creating and Editing Typed Datasets](/visual-studio/data-tools/creating-and-editing-typed-datasets).  
+>  In some earlier versions of Visual Studio, the **XML Designer** is the designer for typed datasets and XML schema. The **XML Designer** can still be used to create and edit XML schema files. However, in [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)], the designer for creating and editing typed datasets is the **Dataset Designer**. For more information, see [Creating and Editing Typed Datasets](/visualstudio/data-tools/creating-and-editing-typed-datasets).  
   
 ### To correct this error  
   
@@ -46,4 +45,4 @@ The file name that you supplied is not a valid XML file. To specify the allowed 
   
 ## See Also  
  <xref:System.Xml>   
- [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)
+ [How to: Parse File Paths](http://msdn.microsoft.com/Library/c1bd99c9-8160-456a-b5ab-60a49139b923)

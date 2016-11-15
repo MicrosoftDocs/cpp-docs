@@ -2,7 +2,6 @@
 title: "Compiler Error CS0155 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0155
 The type caught or thrown must be derived from System.Exception  
   
- An attempt was made to pass a data type that does not derive from **System.Exception** into a [catch](/dotnet/csharp/language-reference/keywords/try-catch) block. Only data types that derive from **System.Exception** can be passed into a **catch** block. For more information, see [Exception Handling Statements](/dotnet/csharp/language-reference/keywords/exception-handling-statements) and [Exceptions and Exception Handling](/dotnet/csharp/programming-guide/exceptions/exceptions-and-exception-handling).  
+ An attempt was made to pass a data type that does not derive from **System.Exception** into a [catch](/dotnet/articles/csharp/language-reference/keywords/try-catch) block. Only data types that derive from **System.Exception** can be passed into a **catch** block. For more information, see [Exception Handling Statements](/dotnet/articles/csharp/language-reference/keywords/exception-handling-statements) and [Exceptions and Exception Handling](/dotnet/articles/csharp/programming-guide/exceptions/exceptions-and-exception-handling).  
   
  The following sample generates CS0155:  
   

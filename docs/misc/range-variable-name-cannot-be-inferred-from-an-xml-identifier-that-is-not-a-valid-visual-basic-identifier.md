@@ -2,7 +2,6 @@
 title: "Range variable name cannot be inferred from an XML identifier that is not a valid Visual Basic identifier. | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,8 +42,8 @@ translation.priority.mt:
 1.  
   
 ## See Also  
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [LINQ](/dotnet/visual-basic/programming-guide/language-features/linq/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)   
- [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
- [XML Literals and the XML 1.0 Specification](/dotnet/visual-basic/programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification)
+ [Introduction to LINQ in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [LINQ](/dotnet/articles/visual-basic/programming-guide/language-features/linq/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)   
+ [Declared Element Names](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
+ [XML Literals and the XML 1.0 Specification](/dotnet/articles/visual-basic/programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification)

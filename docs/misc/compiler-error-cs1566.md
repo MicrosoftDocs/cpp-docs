@@ -2,7 +2,6 @@
 title: "Compiler Error CS1566 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS1566
 Error reading resource file 'file' — 'reason'  
   
- The compiler had trouble with the file name passed to the [/resource](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option) compiler option.
+ The compiler had trouble with the file name passed to the [/resource](/dotnet/articles/csharp/language-reference/compiler-options/resource-compiler-option) compiler option.

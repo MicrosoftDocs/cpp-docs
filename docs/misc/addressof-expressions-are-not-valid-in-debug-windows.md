@@ -2,7 +2,6 @@
 title: "&#39;AddressOf&#39; expressions are not valid in debug windows | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ translation.priority.mt:
 1.  Remove `AddressOf` statements from debugging code.  
   
 ## See Also  
- [AddressOf Operator](/dotnet/visual-basic/language-reference/operators/addressof-operator)   
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [AddressOf Operator](/dotnet/articles/visual-basic/language-reference/operators/addressof-operator)   
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

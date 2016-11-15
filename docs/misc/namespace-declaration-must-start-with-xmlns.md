@@ -2,7 +2,6 @@
 title: "Namespace declaration must start with &#39;xmlns&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,6 +48,6 @@ An XML namespace has been specified without the required `xmlns` identifier. The
     ```  
   
 ## See Also  
- [Imports Statement (XML Namespace)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)   
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [Imports Statement (XML Namespace)](/dotnet/articles/visual-basic/language-reference/statements/imports-statement-xml-namespace)   
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

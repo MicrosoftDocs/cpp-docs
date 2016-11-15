@@ -2,7 +2,6 @@
 title: "&lt;member&gt; in class &lt;class&gt; cannot override &lt;baseMember&gt; in class &lt;baseClass&gt; because an intermediate class &lt;intermediateClass&gt; overrides &lt;member&gt; in class &lt;baseClass&gt; but is not accessible. | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,6 +40,6 @@ translation.priority.mt:
 1.  
   
 ## See Also  
- [Access Levels in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/access-levels)   
- [Procedures](/dotnet/visual-basic/language-reference/procedures/index)   
+ [Access Levels in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/access-levels)   
+ [Procedures](/dotnet/articles/visual-basic/language-reference/procedures/index)   
  [NOT IN BUILD: Understanding Classes](http://msdn.microsoft.com/en-us/cc2355a2-cb98-4353-9440-736585aec46c)

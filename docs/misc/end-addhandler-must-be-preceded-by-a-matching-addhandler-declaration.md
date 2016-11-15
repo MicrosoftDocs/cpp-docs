@@ -2,7 +2,6 @@
 title: "&#39;End AddHandler&#39; must be preceded by a matching &#39;AddHandler&#39; declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ An `End AddHandler` statement occurred without a corresponding `AddHandler` stat
 -   Check that a preceding `AddHandler` statement is valid and correctly spelled.  
   
 ## See Also  
- [AddHandler Statement](/dotnet/visual-basic/language-reference/statements/addhandler-statement)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [AddHandler Statement](/dotnet/articles/visual-basic/language-reference/statements/addhandler-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

@@ -2,7 +2,6 @@
 title: "Method &#39;&lt;methodname1&gt;&#39; must be declared &#39;Private&#39; in order to implement partial method &#39;&lt;methodname2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -73,5 +72,5 @@ End Class
     ```  
   
 ## See Also  
- [Partial Methods](/dotnet/visual-basic/language-reference/procedures/partial-methods)   
- [Access Levels in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/access-levels)
+ [Partial Methods](/dotnet/articles/visual-basic/language-reference/procedures/partial-methods)   
+ [Access Levels in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/access-levels)

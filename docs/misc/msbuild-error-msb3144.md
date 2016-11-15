@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB3144 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,4 +43,4 @@ translation.priority.mt:
 -   Provide a value for at least one of the parameters `ApplicationFile` or `BootstrapperItems`.  
   
 ## See Also  
- [Product and Package Schema Reference](/visual-studio/deployment/product-and-package-schema-reference)
+ [Product and Package Schema Reference](/visualstudio/deployment/product-and-package-schema-reference)

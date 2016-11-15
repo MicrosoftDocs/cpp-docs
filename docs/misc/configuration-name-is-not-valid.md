@@ -2,7 +2,6 @@
 title: "Configuration name is not valid. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,4 +42,4 @@ This error generally occurs when the name entered for the build configuration in
 2.  Re-type the name.  
   
 ## See Also  
- [Compiling and Building](/visual-studio/ide/compiling-and-building-in-visual-studio)
+ [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio)

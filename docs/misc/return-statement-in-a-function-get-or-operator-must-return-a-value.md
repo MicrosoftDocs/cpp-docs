@@ -2,7 +2,6 @@
 title: "&#39;Return&#39; statement in a Function, Get, or Operator must return a value | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,5 +46,5 @@ translation.priority.mt:
 2.  Use the `End` statement to cause the program to exit the current procedure.  
   
 ## See Also  
- [Return Statement](/dotnet/visual-basic/language-reference/statements/return-statement)   
- [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)
+ [Return Statement](/dotnet/articles/visual-basic/language-reference/statements/return-statement)   
+ [End \<keyword> Statement](http://msdn.microsoft.com/Library/42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f)

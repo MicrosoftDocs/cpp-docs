@@ -2,7 +2,6 @@
 title: "How to: Add UI Controls and Validation Code Using the Coded UI Test Builder | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -31,4 +30,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Add UI Controls and Validation Code Using the Coded UI Test Builder
-The content of this topic has been consolidated with the parent page. See [Validating the properties of UI controls](/visual-studio/test/use-ui-automation-to-test-your-code).
+The content of this topic has been consolidated with the parent page. See [Validating the properties of UI controls](/visualstudio/test/use-ui-automation-to-test-your-code).

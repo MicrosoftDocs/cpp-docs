@@ -2,7 +2,6 @@
 title: "Response file &lt;filename&gt; included multiple times | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ A response file has been specified more than once. Response files contain compil
 -   Remove redundant response file specifiers.  
   
 ## See Also  
- [Visual Basic Compiler Options Listed by Category](/dotnet/visual-basic/reference/command-line-compiler/compiler-options-listed-by-category)
+ [Visual Basic Compiler Options Listed by Category](/dotnet/articles/visual-basic/reference/command-line-compiler/compiler-options-listed-by-category)

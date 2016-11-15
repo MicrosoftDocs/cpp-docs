@@ -2,7 +2,6 @@
 title: "Deploying an Isolated Shell-Based Application on a 64-Bit Operating System | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -31,4 +30,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Deploying an Isolated Shell-Based Application on a 64-Bit Operating System
-This content has been removed. For information on deploying an isolated shell application, see [Installing an Isolated Shell Application](/visual-studio/extensibility/installing-an-isolated-shell-application).
+This content has been removed. For information on deploying an isolated shell application, see [Installing an Isolated Shell Application](/visualstudio/extensibility/installing-an-isolated-shell-application).

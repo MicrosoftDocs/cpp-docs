@@ -2,7 +2,6 @@
 title: "&#39;System.Runtime.InteropServices.DllImportAttribute&#39; cannot be applied to instance methods | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -52,4 +51,4 @@ A nonshared procedure is declared with the <xref:System.Runtime.InteropServices.
   
 ## See Also  
  <xref:System.Runtime.InteropServices.DllImportAttribute>   
- [Shared](/dotnet/visual-basic/language-reference/modifiers/shared)
+ [Shared](/dotnet/articles/visual-basic/language-reference/modifiers/shared)

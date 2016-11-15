@@ -2,7 +2,6 @@
 title: "&#39;&lt;elementname&gt;&#39; cannot be declared &#39;Partial&#39; because partial methods must be Subs | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -52,5 +51,5 @@ Only `Sub` procedures can be declared to be partial methods. For example, the fo
 -   Do not use a partial method in this case.  
   
 ## See Also  
- [Partial Methods](/dotnet/visual-basic/language-reference/procedures/partial-methods)   
- [Sub Procedures](/dotnet/visual-basic/language-reference/procedures/sub-procedures)
+ [Partial Methods](/dotnet/articles/visual-basic/language-reference/procedures/partial-methods)   
+ [Sub Procedures](/dotnet/articles/visual-basic/language-reference/procedures/sub-procedures)

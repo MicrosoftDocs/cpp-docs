@@ -2,7 +2,6 @@
 title: "Compiler Error CS0160 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,7 +40,7 @@ A previous catch clause already catches all exceptions of this or of a super typ
   
  A series of **catch** statements needs to be in decreasing order of derivation. For example, the most derived objects must appear first.  
   
- For more information, see [Exception Handling Statements](/dotnet/csharp/language-reference/keywords/exception-handling-statements) and [Exceptions and Exception Handling](/dotnet/csharp/programming-guide/exceptions/exceptions-and-exception-handling).  
+ For more information, see [Exception Handling Statements](/dotnet/articles/csharp/language-reference/keywords/exception-handling-statements) and [Exceptions and Exception Handling](/dotnet/articles/csharp/programming-guide/exceptions/exceptions-and-exception-handling).  
   
  The following sample generates CS0160:  
   

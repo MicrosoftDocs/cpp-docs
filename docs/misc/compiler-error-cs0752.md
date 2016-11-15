@@ -2,7 +2,6 @@
 title: "Compiler Error CS0752 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0752
 A partial method cannot have out parameters  
   
- A partial method cannot have an [out](/dotnet/csharp/language-reference/keywords/out) parameter. Out parameters are not allowed because if the partial method is removed by the compiler then there is no guarantee that the out parameter is ever assigned.  
+ A partial method cannot have an [out](/dotnet/articles/csharp/language-reference/keywords/out) parameter. Out parameters are not allowed because if the partial method is removed by the compiler then there is no guarantee that the out parameter is ever assigned.  
   
 ### To correct this error  
   
@@ -64,4 +63,4 @@ public partial class C
 ```  
   
 ## See Also  
- [Partial Classes and Methods](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
+ [Partial Classes and Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)

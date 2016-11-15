@@ -2,7 +2,6 @@
 title: "Isolation of the MFC Common Controls Library | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,7 +37,7 @@ The Common Controls library is now isolated within MFC, allowing different modul
   
  An MFC application (or user code called by MFC) makes calls to Common Controls library APIs through wrapper functions named `Afx`*FunctionName*, where *FunctionName* is the name of a Common Controls API. Those wrapper functions are defined in afxcomctl32.h and afxcomctl32.inl.  
   
- You can use the [AFX_COMCTL32_IF_EXISTS](../Topic/AFX_COMCTL32_IF_EXISTS.md) and [AFX_COMCTL32_IF_EXISTS2](../Topic/AFX_COMCTL32_IF_EXISTS2.md) macros (defined in afxcomctl32.h) to determine whether the Common Controls library implements a certain API instead of calling [GetProcAddress](../build/getprocaddress.md).  
+ You can use the [AFX_COMCTL32_IF_EXISTS](http://msdn.microsoft.com/Library/60b3af72-7113-43d7-9db5-012f40971d0d) and [AFX_COMCTL32_IF_EXISTS2](http://msdn.microsoft.com/Library/ed7dab14-fcce-4ca6-983d-196062104c60) macros (defined in afxcomctl32.h) to determine whether the Common Controls library implements a certain API instead of calling [GetProcAddress](../build/getprocaddress.md).  
   
  Technically, you make calls to Common Controls Library APIs through a wrapper class, `CComCtlWrapper` (defined in afxcomctl32.h). `CComCtlWrapper` is also responsible for the loading and unloading of comctl32.dll. The MFC Module State contains a pointer to an instance of `CComCtlWrapper`. You can access the wrapper class using the `afxComCtlWrapper` macro.  
   

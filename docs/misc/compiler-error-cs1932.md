@@ -2,7 +2,6 @@
 title: "Compiler Error CS1932 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -68,4 +67,4 @@ class Test
 ```  
   
 ## See Also  
- [LINQ Query Expressions](/dotnet/csharp/programming-guide/linq-query-expressions/index)
+ [LINQ Query Expressions](/dotnet/articles/csharp/programming-guide/linq-query-expressions/index)

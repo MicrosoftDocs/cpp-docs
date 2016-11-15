@@ -2,7 +2,6 @@
 title: "Data type(s) of the type parameter(s) in extension method &#39;&lt;methodname&gt;&#39; defined in &#39;&lt;typename&gt;&#39; cannot be inferred from these arguments because more than one type is possible | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -82,6 +81,6 @@ End Module
     ```  
   
 ## See Also  
- [Extension Methods](/dotnet/visual-basic/language-reference/procedures/extension-methods)   
- [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
- [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures)
+ [Extension Methods](/dotnet/articles/visual-basic/language-reference/procedures/extension-methods)   
+ [Option Strict Statement](/dotnet/articles/visual-basic/language-reference/statements/option-strict-statement)   
+ [Generic Procedures in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-procedures)

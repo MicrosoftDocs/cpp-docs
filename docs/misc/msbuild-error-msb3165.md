@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB3165 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,5 +40,5 @@ translation.priority.mt:
  This warning occurs when the public key specified in the bootstrapper package file does not match the signature of the redistributable package on disk, or the redistributable package is not signed. The build will take the public key value of that on disk if it is signed, or take the hash of the redistributable package on disk if it is not signed.  
   
 ## See Also  
- [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)   
- [Product and Package Schema Reference](/visual-studio/deployment/product-and-package-schema-reference)
+ [\<PackageFiles> Element](http://msdn.microsoft.com/Library/3ea252d7-18a3-47d8-af83-47feebcfe82b)   
+ [Product and Package Schema Reference](/visualstudio/deployment/product-and-package-schema-reference)

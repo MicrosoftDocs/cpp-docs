@@ -2,7 +2,6 @@
 title: "Most recently used list can contain &lt;number&gt; items. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,4 +40,4 @@ MRU lists can contain up to twenty-four items. This error generally occurs when 
 1.  Enter a number between one and twenty-four in the box.  
   
 ## See Also  
- [General, Environment, Options Dialog Box](/visual-studio/ide/reference/general-environment-options-dialog-box)
+ [General, Environment, Options Dialog Box](/visualstudio/ide/reference/general-environment-options-dialog-box)

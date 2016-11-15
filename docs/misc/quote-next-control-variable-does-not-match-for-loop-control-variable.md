@@ -2,7 +2,6 @@
 title: "&#39;Next&#39; control variable does not match &#39;For&#39; loop control variable | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,4 +48,4 @@ The control variable in the `Next` statement of a `For...Next` loop must match t
 -   If this loop is part of a set of nested loops, ensure that every loop is correctly terminated.  
   
 ## See Also  
- [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)
+ [For...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-next-statement)

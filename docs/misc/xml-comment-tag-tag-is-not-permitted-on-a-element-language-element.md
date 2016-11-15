@@ -2,7 +2,6 @@
 title: "XML comment tag &#39;&lt;tag&gt;&#39; is not permitted on a &#39;&lt;element&gt;&#39; language element | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,5 +46,5 @@ XML comment tag \<tag> is not permitted on a '\<element>' element. XML comment w
 -   Remove the unsupported XML comment tag.  
   
 ## See Also  
- [XML Comment Tags](/dotnet/visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments)   
- [Documenting Your Code with XML](/dotnet/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)
+ [XML Comment Tags](/dotnet/articles/visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments)   
+ [Documenting Your Code with XML](/dotnet/articles/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)

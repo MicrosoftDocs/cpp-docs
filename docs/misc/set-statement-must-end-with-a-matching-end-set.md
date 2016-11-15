@@ -2,7 +2,6 @@
 title: "&#39;Set&#39; statement must end with a matching &#39;End Set&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ translation.priority.mt:
 -   Make sure that the `Set` property procedure ends with an `End Set` construct.  
   
 ## See Also  
- [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
+ [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement)   
  [Property Changes in Visual Basic](http://msdn.microsoft.com/en-us/1c138efa-9bc2-44d7-80a0-f3a7c2510264)

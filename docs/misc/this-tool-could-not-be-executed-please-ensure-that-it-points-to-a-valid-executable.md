@@ -2,7 +2,6 @@
 title: "This tool could not be executed. Please ensure that it points to a valid executable. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,5 +39,5 @@ This error generally occurs when you attempt to launch an external tool and the 
 1.  Check that the external tool is a valid executable or batch file using the **ExternalTools** dialog box available from the **Tools** menu.  
   
 ## See Also  
- [Managing External Tools](/visual-studio/ide/managing-external-tools)   
+ [Managing External Tools](/visualstudio/ide/managing-external-tools)   
  [Arguments for External Tools](../misc/arguments-for-external-tools.md)

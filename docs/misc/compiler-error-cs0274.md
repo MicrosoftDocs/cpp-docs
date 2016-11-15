@@ -2,7 +2,6 @@
 title: "Compiler Error CS0274 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0274
 Cannot specify accessibility modifiers for both accessors of the property or indexer 'property/indexer'  
   
- This error occurs when you declare a property or indexer with access modifiers on both its accessors. To resolve this error, use an access modifier on only one of the two accessors. For more information, see [Accessor Accessibility](/dotnet/csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility).  
+ This error occurs when you declare a property or indexer with access modifiers on both its accessors. To resolve this error, use an access modifier on only one of the two accessors. For more information, see [Accessor Accessibility](/dotnet/articles/csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility).  
   
  The following example generates CS0274:  
   

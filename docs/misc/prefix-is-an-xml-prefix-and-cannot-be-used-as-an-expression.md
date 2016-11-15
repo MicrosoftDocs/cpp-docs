@@ -2,7 +2,6 @@
 title: "&#39;prefix&#39; is an XML prefix and cannot be used as an expression | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,8 +48,8 @@ translation.priority.mt:
 -   If you are using the XML namespace prefix to qualify an XML literal, ensure that you are using appropriate syntax for the XML literal.  
   
 ## See Also  
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [Imports Statement (XML Namespace)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)   
- [GetXmlNamespace Operator](/dotnet/visual-basic/language-reference/operators/getxmlnamespace-operator)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)   
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [Imports Statement (XML Namespace)](/dotnet/articles/visual-basic/language-reference/statements/imports-statement-xml-namespace)   
+ [GetXmlNamespace Operator](/dotnet/articles/visual-basic/language-reference/operators/getxmlnamespace-operator)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)   
+ [Introduction to LINQ in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/linq/introduction-to-linq)

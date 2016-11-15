@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB2004 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,4 +42,4 @@ translation.priority.ht:
 -   Check whether the project file has been modified or corrupted. If it has been modified or corrupted, open the project in the version of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] in which it was created, save it, and then attempt to convert it again.  
   
 ## See Also  
- [Devenv Command Line Switches](/visual-studio/ide/reference/devenv-command-line-switches)
+ [Devenv Command Line Switches](/visualstudio/ide/reference/devenv-command-line-switches)

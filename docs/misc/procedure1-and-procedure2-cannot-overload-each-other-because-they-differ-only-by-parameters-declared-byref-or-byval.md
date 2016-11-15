@@ -2,7 +2,6 @@
 title: "&#39;&lt;procedure1&gt;&#39; and &#39;&lt;procedure2&gt;&#39; cannot overload each other because they differ only by parameters declared &#39;ByRef&#39; or &#39;ByVal&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,7 +39,7 @@ translation.priority.mt:
   
  Two procedure declarations specify the same name and argument list, and the only difference is in the specification of `ByRef` or `ByVal` for one or more of the arguments. Overloaded versions of a procedure must differ from each other in the number, order, or data types of the arguments.  
   
- This message is a warning. `Shadows` is assumed by default. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ This message is a warning. `Shadows` is assumed by default. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42003  
   
@@ -51,4 +50,4 @@ translation.priority.mt:
 -   If you do not intend to overload a procedure, change the procedure name in one of the declarations.  
   
 ## See Also  
- [Procedure Overloading](/dotnet/visual-basic/language-reference/procedures/procedure-overloading)
+ [Procedure Overloading](/dotnet/articles/visual-basic/language-reference/procedures/procedure-overloading)

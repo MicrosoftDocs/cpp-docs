@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB3483 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,5 +39,5 @@ translation.priority.mt:
  SignTool issued the specified warning.  
   
 ## See Also  
- [SignTool.exe (Sign Tool)](../Topic/SignTool.exe%20\(Sign%20Tool\).md)   
- [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)
+ [SignTool.exe (Sign Tool)](http://msdn.microsoft.com/Library/0c25ff6c-bff3-422e-b017-146a3ee86cb9)   
+ [\<PackageFiles> Element](http://msdn.microsoft.com/Library/3ea252d7-18a3-47d8-af83-47feebcfe82b)

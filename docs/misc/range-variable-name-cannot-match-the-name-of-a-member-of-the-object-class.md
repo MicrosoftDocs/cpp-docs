@@ -2,7 +2,6 @@
 title: "Range variable name cannot match the name of a member of the &#39;Object&#39; class | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +45,7 @@ A range variable in a LINQ query matches the name of a member of the <xref:Syste
   
 ## See Also  
  <xref:System.Object>   
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [From Clause](/dotnet/visual-basic/language-reference/queries/from-clause)   
- [Aggregate Clause](/dotnet/visual-basic/language-reference/queries/aggregate-clause)   
- [Select Clause](/dotnet/visual-basic/language-reference/queries/select-clause)
+ [Introduction to LINQ in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [From Clause](/dotnet/articles/visual-basic/language-reference/queries/from-clause)   
+ [Aggregate Clause](/dotnet/articles/visual-basic/language-reference/queries/aggregate-clause)   
+ [Select Clause](/dotnet/articles/visual-basic/language-reference/queries/select-clause)

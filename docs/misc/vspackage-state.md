@@ -2,7 +2,6 @@
 title: "VSPackage State | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -63,33 +62,33 @@ Many factors determine the set of persisted values, or state, of a [!INCLUDE[vsp
  [Support for State Persistence](../misc/support-for-state-persistence.md)  
  Lists common strategies for saving, restoring, and resetting the state of a VSPackage.  
   
- [Options and Options Pages](/visual-studio/extensibility/internals/options-and-options-pages)  
+ [Options and Options Pages](/visualstudio/extensibility/internals/options-and-options-pages)  
  Introduces general and custom Options pages and explains how to implement them.  
   
- [Creating an Options Page](/visual-studio/extensibility/creating-an-options-page)  
+ [Creating an Options Page](/visualstudio/extensibility/creating-an-options-page)  
  Explains how to create two Options pages, a simple page and a custom page.  
   
  [Support for Settings Categories](../misc/support-for-settings-categories.md)  
  Discusses user settings and how they are created and persisted.  
   
- [Creating a Settings Category](/visual-studio/extensibility/creating-a-settings-category)  
+ [Creating a Settings Category](/visualstudio/extensibility/creating-a-settings-category)  
  Explains how to create a [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] settings category and use it to save values to and restore values from a settings file.  
   
- [Extending Properties and the Property Window](/visual-studio/extensibility/extending-properties-and-the-property-window)  
+ [Extending Properties and the Property Window](/visualstudio/extensibility/extending-properties-and-the-property-window)  
  Explains how to display and change the value of an object in the **Properties** window.  
   
- [Exposing Properties to the Properties Window](/visual-studio/extensibility/exposing-properties-to-the-properties-window)  
+ [Exposing Properties to the Properties Window](/visualstudio/extensibility/exposing-properties-to-the-properties-window)  
  Explains how to expose the public properties of an object to the **Properties** window.  
   
- [Support for Project and Configuration Properties](/visual-studio/extensibility/internals/support-for-project-and-configuration-properties)  
+ [Support for Project and Configuration Properties](/visualstudio/extensibility/internals/support-for-project-and-configuration-properties)  
  Explains how to display and change project and configuration properties.  
   
- [Getting Project Properties](/visual-studio/extensibility/getting-project-properties)  
+ [Getting Project Properties](/visualstudio/extensibility/getting-project-properties)  
  Guides you through the steps of creating a managed VSPackage that displays project properties in a tool window.  
   
- [Using the Settings Store](/visual-studio/extensibility/using-the-settings-store)  
+ [Using the Settings Store](/visualstudio/extensibility/using-the-settings-store)  
  Explains the Settings Store persistence mechanism and how to use it.  
   
 ## Related Sections  
- [VSPackages](/visual-studio/extensibility/internals/vspackages)  
+ [VSPackages](/visualstudio/extensibility/internals/vspackages)  
  Provides a general orientation to topics that explain how to create and use VSPackages.

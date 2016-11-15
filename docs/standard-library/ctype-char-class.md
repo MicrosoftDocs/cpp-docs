@@ -2,7 +2,6 @@
 title: "ctype&lt;char&gt; Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -164,7 +163,7 @@ protected:
  **Namespace:** std  
   
 ## See Also  
- [facet Class](../Topic/facet%20Class.md)   
+ [facet Class](http://msdn.microsoft.com/Library/dd4f12f5-cb1b-457f-af56-2fb204216ec1)   
  [ctype_base Class](../standard-library/ctype-base-class.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

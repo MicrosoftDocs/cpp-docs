@@ -2,7 +2,6 @@
 title: "&#39;Get&#39; is already declared | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ A `Get` statement appears more than once in a code block. The `Get` statement de
 -   Remove the redundant `Get` statement.  
   
 ## See Also  
- [Get Statement](/dotnet/visual-basic/language-reference/statements/get-statement)
+ [Get Statement](/dotnet/articles/visual-basic/language-reference/statements/get-statement)

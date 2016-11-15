@@ -2,7 +2,6 @@
 title: "Compiler Error CS0765 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -86,5 +85,5 @@ public partial class PartClass : IEnumerable
 ```  
   
 ## See Also  
- [Partial Classes and Methods](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)   
- [Expression Trees](../Topic/Expression%20Trees%20\(C%23%20and%20Visual%20Basic\).md)
+ [Partial Classes and Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)   
+ [Expression Trees](http://msdn.microsoft.com/Library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)

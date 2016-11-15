@@ -2,7 +2,6 @@
 title: "On (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,17 +43,17 @@ Introduces a response to a run-time error or turns a compiler option on.
 ## Remarks  
  The `On` keyword is used in these contexts:  
   
- [Group Join Clause](/dotnet/visual-basic/language-reference/queries/group-join-clause)  
+ [Group Join Clause](/dotnet/articles/visual-basic/language-reference/queries/group-join-clause)  
   
- [Join Clause](/dotnet/visual-basic/language-reference/queries/join-clause)  
+ [Join Clause](/dotnet/articles/visual-basic/language-reference/queries/join-clause)  
   
- [On Error Statement](/dotnet/visual-basic/language-reference/statements/on-error-statement)  
+ [On Error Statement](/dotnet/articles/visual-basic/language-reference/statements/on-error-statement)  
   
- [Option Explicit Statement](/dotnet/visual-basic/language-reference/statements/option-explicit-statement)  
+ [Option Explicit Statement](/dotnet/articles/visual-basic/language-reference/statements/option-explicit-statement)  
   
- [Option Infer Statement](/dotnet/visual-basic/language-reference/statements/option-infer-statement)  
+ [Option Infer Statement](/dotnet/articles/visual-basic/language-reference/statements/option-infer-statement)  
   
- [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)  
+ [Option Strict Statement](/dotnet/articles/visual-basic/language-reference/statements/option-strict-statement)  
   
 ## See Also  
- [Keywords](/dotnet/visual-basic/language-reference/keywords/index)
+ [Keywords](/dotnet/articles/visual-basic/language-reference/keywords/index)

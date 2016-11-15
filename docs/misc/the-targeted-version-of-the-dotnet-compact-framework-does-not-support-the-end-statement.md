@@ -2,7 +2,6 @@
 title: "The targeted version of the .NET Compact Framework does not support the &#39;End&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ The version of the .NET Compact Framework you are working with does not support 
 -   Remove the statement.  
   
 ## See Also  
- [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)
+ [End \<keyword> Statement](http://msdn.microsoft.com/Library/42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f)

@@ -2,7 +2,6 @@
 title: "Compiler Error CS0567 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0567
 Interfaces cannot contain operators  
   
- Operators are not permitted in [interface](/dotnet/csharp/language-reference/keywords/interface) definitions.  
+ Operators are not permitted in [interface](/dotnet/articles/csharp/language-reference/keywords/interface) definitions.  
   
  The following sample generates CS0567:  
   

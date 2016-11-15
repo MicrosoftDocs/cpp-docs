@@ -2,7 +2,6 @@
 title: "&#39;&lt;method&gt;&#39; is not accessible in this context because it is &#39;&lt;modifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ You have attempted to access a method that is not accessible in this context bec
 -   If the error is caused by a name collision, differentiate the colliding names by more than case.  
   
 ## See Also  
- [Private](/dotnet/visual-basic/language-reference/modifiers/private)
+ [Private](/dotnet/articles/visual-basic/language-reference/modifiers/private)

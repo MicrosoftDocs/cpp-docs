@@ -2,7 +2,6 @@
 title: "Compiler Error CS0202 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,7 +41,7 @@ foreach requires that the return type 'type' of 'type.GetEnumerator()' must have
  A <xref:System.Collections.IEnumerable.GetEnumerator%2A> function, used to enable the use of foreach statements, cannot return a pointer or array; it must return an instance of a class that is able to act as an enumerator. The proper requirements to serve as an enumerator include a public Current property and a public MoveNext method.  
   
 > [!NOTE]
->  In C# 2.0, the compiler will automatically generate Current and MoveNext for you. For more information, see the code example in [Generic Interfaces](/dotnet/csharp/programming-guide/generics/generic-interfaces).  
+>  In C# 2.0, the compiler will automatically generate Current and MoveNext for you. For more information, see the code example in [Generic Interfaces](/dotnet/articles/csharp/programming-guide/generics/generic-interfaces).  
   
  The following sample generates CS0202:  
   

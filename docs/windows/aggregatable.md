@@ -2,7 +2,6 @@
 title: "aggregatable | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -68,9 +67,9 @@ Indicates that the class supports aggregation.
   
 |Parameter value|Inserted macro|  
 |---------------------|--------------------|  
-|**Never**|[DECLARE_NOT_AGGREGATABLE](../Topic/DECLARE_NOT_AGGREGATABLE.md)|  
-|**Allowed**|[DECLARE_POLY_AGGREGATABLE](../Topic/DECLARE_POLY_AGGREGATABLE.md)|  
-|**Always**|[DECLARE_ONLY_AGGREGATABLE](../Topic/DECLARE_ONLY_AGGREGATABLE.md)|  
+|**Never**|[DECLARE_NOT_AGGREGATABLE](http://msdn.microsoft.com/Library/2a116c7c-bab8-4f2a-a9ad-03d7aba0f762)|  
+|**Allowed**|[DECLARE_POLY_AGGREGATABLE](http://msdn.microsoft.com/Library/7569e738-cfbc-4404-ba1d-78dcefa3bdb3)|  
+|**Always**|[DECLARE_ONLY_AGGREGATABLE](http://msdn.microsoft.com/Library/a54220df-4330-4e4d-b7fb-8b63dd62d337)|  
   
 ## Example  
   

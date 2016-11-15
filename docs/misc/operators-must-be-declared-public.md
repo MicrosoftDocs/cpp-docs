@@ -2,7 +2,6 @@
 title: "Operators must be declared &#39;Public&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,9 +35,9 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Operators must be declared &#39;Public&#39;
-An [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement) does not include the [Public](/dotnet/visual-basic/language-reference/modifiers/public) keyword.  
+An [Operator Statement](/dotnet/articles/visual-basic/language-reference/statements/operator-statement) does not include the [Public](/dotnet/articles/visual-basic/language-reference/modifiers/public) keyword.  
   
- An `Operator` procedure requires both the `Public` and [Shared](/dotnet/visual-basic/language-reference/modifiers/shared) keywords, and a conversion operator also requires either the [Widening](/dotnet/visual-basic/language-reference/modifiers/widening) or the [Narrowing](/dotnet/visual-basic/language-reference/modifiers/narrowing) keyword.  
+ An `Operator` procedure requires both the `Public` and [Shared](/dotnet/articles/visual-basic/language-reference/modifiers/shared) keywords, and a conversion operator also requires either the [Widening](/dotnet/articles/visual-basic/language-reference/modifiers/widening) or the [Narrowing](/dotnet/articles/visual-basic/language-reference/modifiers/narrowing) keyword.  
   
  **Error ID:** BC33011  
   
@@ -47,7 +46,7 @@ An [Operator Statement](/dotnet/visual-basic/language-reference/statements/opera
 -   Add the `Public` keyword to the `Operator` statement.  
   
 ## See Also  
- [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
- [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)   
- [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
- [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)
+ [Operator Procedures](/dotnet/articles/visual-basic/language-reference/procedures/operator-procedures)   
+ [Operator Statement](/dotnet/articles/visual-basic/language-reference/statements/operator-statement)   
+ [How to: Define an Operator](http://msdn.microsoft.com/Library/d4b0e253-092a-4e6e-9fe2-01f562140a29)   
+ [How to: Define a Conversion Operator](http://msdn.microsoft.com/Library/54203dfa-c24b-463f-9942-d5153e89e762)

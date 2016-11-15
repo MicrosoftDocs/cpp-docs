@@ -2,7 +2,6 @@
 title: "Variable declaration statements are not valid in the Immediate window | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ Variable declarations cannot be used in the **Immediate** window.
 -   Do not declare variables in the **Immediate** window.  
   
 ## See Also  
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)   
- [Immediate Window](/visual-studio/ide/reference/immediate-window)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)   
+ [Immediate Window](/visualstudio/ide/reference/immediate-window)

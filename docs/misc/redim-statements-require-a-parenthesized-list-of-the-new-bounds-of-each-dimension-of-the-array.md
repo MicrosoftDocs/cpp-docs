@@ -2,7 +2,6 @@
 title: "&#39;ReDim&#39; statements require a parenthesized list of the new bounds of each dimension of the array | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,4 +48,4 @@ You must specify the new size of an array as part of a `ReDim` statement.
     ```  
   
 ## See Also  
- [ReDim Statement](/dotnet/visual-basic/language-reference/statements/redim-statement)
+ [ReDim Statement](/dotnet/articles/visual-basic/language-reference/statements/redim-statement)

@@ -2,7 +2,6 @@
 title: "&#39;Get&#39; statements are no longer supported (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,5 +45,5 @@ translation.priority.mt:
   
 ## See Also  
  <xref:System.IO>   
- [Get Statement](/dotnet/visual-basic/language-reference/statements/get-statement)   
- [File Access with Visual Basic](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/file-access)
+ [Get Statement](/dotnet/articles/visual-basic/language-reference/statements/get-statement)   
+ [File Access with Visual Basic](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/file-access)

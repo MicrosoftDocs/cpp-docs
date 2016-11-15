@@ -2,7 +2,6 @@
 title: "How to: Make Typedefs for Managed Arrays | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

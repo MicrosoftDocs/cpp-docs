@@ -2,7 +2,6 @@
 title: "&#39;Continue For&#39; can only appear inside a &#39;For&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,5 +50,5 @@ A `Continue For` statement can only appear within a `For...Next` loop.
 2.  Otherwise, remove the `Continue For` statement.  
   
 ## See Also  
- [Continue Statement](/dotnet/visual-basic/language-reference/statements/continue-statement)   
- [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)
+ [Continue Statement](/dotnet/articles/visual-basic/language-reference/statements/continue-statement)   
+ [For...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-next-statement)

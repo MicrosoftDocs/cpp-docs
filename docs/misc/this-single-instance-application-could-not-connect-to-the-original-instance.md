@@ -2,7 +2,6 @@
 title: "This single-instance application could not connect to the original instance | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -37,7 +36,7 @@ This single-instance application could not connect to the original instance. Som
   
 -   The original instance stopped responding.  
   
--   The application does not have permissions to create kernel objects. For more information about kernel objects, see [Mutexes](../Topic/Mutexes.md).  
+-   The application does not have permissions to create kernel objects. For more information about kernel objects, see [Mutexes](http://msdn.microsoft.com/Library/9dd06e25-12c0-4a9e-855a-452dc83803e2).  
   
      The base name for the kernel objects comes from concatenating the assembly's GUID, major version number, and minor version number. For example, the base name could be `3639f15d-9547-43da-8145-60da347829915.1`.  
   
@@ -55,5 +54,5 @@ This single-instance application could not connect to the original instance. Som
   
 ## See Also  
  [NIB: How to: Specify Instancing Behavior for an Application (Visual Basic)](http://msdn.microsoft.com/en-us/48539ad8-d960-4210-beab-ee65f6c6dc6e)   
- [Debugger Basics](/visual-studio/debugger/debugger-basics)   
+ [Debugger Basics](/visualstudio/debugger/debugger-basics)   
  [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)

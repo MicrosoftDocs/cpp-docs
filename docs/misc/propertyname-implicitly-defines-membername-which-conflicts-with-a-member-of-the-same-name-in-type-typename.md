@@ -2,7 +2,6 @@
 title: "&#39;&lt;propertyname&gt;&#39; implicitly defines &#39;&lt;membername&gt;&#39;, which conflicts with a member of the same name in &lt;type&gt; &#39;&lt;typename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,5 +45,5 @@ The name of a type member conflicts with the name of a member implicitly created
   
 ## See Also  
  [NOT IN BUILD: How to: Add Fields and Properties to a Class](http://msdn.microsoft.com/en-us/ae53f61b-3abc-413e-8931-703c5f5e8fc2)   
- [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)   
+ [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)   
  [NOT IN BUILD: Properties and Property Procedures](http://msdn.microsoft.com/en-us/23e2a1ec-7e9d-4109-8940-c703d981077b)

@@ -2,7 +2,6 @@
 title: "Compiler Error CS1559 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS1559
 Cannot use 'object' for Main method because it is imported  
   
- An invalid class was specified to the [/main](/dotnet/csharp/language-reference/compiler-options/main-compiler-option) compiler option; the class cannot be used as a location for the [Main](/dotnet/csharp/programming-guide/main-and-command-args/main-and-command-line-arguments) method.
+ An invalid class was specified to the [/main](/dotnet/articles/csharp/language-reference/compiler-options/main-compiler-option) compiler option; the class cannot be used as a location for the [Main](/dotnet/articles/csharp/programming-guide/main-and-command-args/main-and-command-line-arguments) method.

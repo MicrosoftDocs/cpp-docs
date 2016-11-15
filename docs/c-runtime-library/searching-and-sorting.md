@@ -2,7 +2,6 @@
 title: "Searching and Sorting | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,8 +49,8 @@ Use the following functions for searching and sorting.
 |[bsearch_s](../c-runtime-library/reference/bsearch-s.md)|A more secure version of `bsearch`.|[System::Collections::ArrayList::BinarySearch](https://msdn.microsoft.com/en-us/library/system.collections.arraylist.binarysearch.aspx)|  
 |[_lfind](../c-runtime-library/reference/lfind.md)|Linear search for given value|[System::Collections::ArrayList::Contains](https://msdn.microsoft.com/en-us/library/system.collections.arraylist.contains.aspx)|  
 |[_lfind_s](../c-runtime-library/reference/lfind-s.md)|A more secure version of `_lfind`|[System::Collections::ArrayList::Contains](https://msdn.microsoft.com/en-us/library/system.collections.arraylist.contains.aspx)|  
-|[_lsearch](../c-runtime-library/reference/lsearch.md)|Linear search for given value, which is added to array if not found|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).|  
-|[_lsearch_s](../c-runtime-library/reference/lsearch-s.md)|A more secure version of `_lsearch`|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).|  
+|[_lsearch](../c-runtime-library/reference/lsearch.md)|Linear search for given value, which is added to array if not found|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
+|[_lsearch_s](../c-runtime-library/reference/lsearch-s.md)|A more secure version of `_lsearch`|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
 |[qsort](../c-runtime-library/reference/qsort.md)|Quick sort|[System::Collections::ArrayList::Sort](https://msdn.microsoft.com/en-us/library/system.collections.arraylist.sort.aspx)|  
 |[qsort_s](../c-runtime-library/reference/qsort-s.md)|A more secure version of `qsort`|[System::Collections::ArrayList::Sort](https://msdn.microsoft.com/en-us/library/system.collections.arraylist.sort.aspx)|  
   

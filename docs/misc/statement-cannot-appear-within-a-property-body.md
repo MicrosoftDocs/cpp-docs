@@ -2,7 +2,6 @@
 title: "Statement cannot appear within a property body | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,5 +46,5 @@ Statement cannot appear within a property body. End of property assumed.
 -   Verify that your property uses the correct syntax and terminates with an `End``Property` construct.  
   
 ## See Also  
- [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
+ [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement)   
  [Property Changes in Visual Basic](http://msdn.microsoft.com/en-us/1c138efa-9bc2-44d7-80a0-f3a7c2510264)

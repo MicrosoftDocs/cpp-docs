@@ -2,7 +2,6 @@
 title: "Unable to open response file &#39;&lt;filename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,4 +47,4 @@ The file you are attempting to access is unavailable.
   
 ## See Also  
  <xref:System.Security.Permissions.FileIOPermission>   
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

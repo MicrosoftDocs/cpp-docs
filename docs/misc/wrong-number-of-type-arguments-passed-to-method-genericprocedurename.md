@@ -2,7 +2,6 @@
 title: "Wrong number of type arguments passed to method &#39;&lt;genericprocedurename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,7 +48,7 @@ A generic procedure is called with a number of type arguments that does not matc
 -   Call the generic procedure with no type arguments at all, and let the compiler attempt to infer the type arguments.  
   
 ## See Also  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [AddressOf Operator](/dotnet/visual-basic/language-reference/operators/addressof-operator)   
- [Type List](/dotnet/visual-basic/language-reference/statements/type-list)   
- [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures)
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [AddressOf Operator](/dotnet/articles/visual-basic/language-reference/operators/addressof-operator)   
+ [Type List](/dotnet/articles/visual-basic/language-reference/statements/type-list)   
+ [Generic Procedures in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-procedures)

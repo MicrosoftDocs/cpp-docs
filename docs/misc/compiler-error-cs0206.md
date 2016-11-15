@@ -2,7 +2,6 @@
 title: "Compiler Error CS0206 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0206
 A property or indexer may not be passed as an out or ref parameter  
   
- A [property](/dotnet/csharp/programming-guide/classes-and-structs/properties) is not available to be passed as a [ref](/dotnet/csharp/language-reference/keywords/ref) or [out](/dotnet/csharp/language-reference/keywords/out) parameter. For more information, see [Passing Parameters](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+ A [property](/dotnet/articles/csharp/programming-guide/classes-and-structs/properties) is not available to be passed as a [ref](/dotnet/articles/csharp/language-reference/keywords/ref) or [out](/dotnet/articles/csharp/language-reference/keywords/out) parameter. For more information, see [Passing Parameters](/dotnet/articles/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
 ## Example  
  The following sample generates CS0206:  

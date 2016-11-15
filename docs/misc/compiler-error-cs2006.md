@@ -2,7 +2,6 @@
 title: "Compiler Error CS2006 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS2006
 Command-line syntax error: Missing 'text' for 'option' option  
   
- The syntax for *option* requires additional text. For information, see [Compiler Options](/dotnet/csharp/language-reference/compiler-options/index).
+ The syntax for *option* requires additional text. For information, see [Compiler Options](/dotnet/articles/csharp/language-reference/compiler-options/index).

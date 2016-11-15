@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB4142 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,6 +41,6 @@ translation.priority.mt:
 -   Make sure that the values for `MSBuildBinPath` and `MSBuildToolsPath` are the same in your Toolset definition.  
   
 ## See Also  
- [Standard and Custom Toolset Configurations](/visual-studio/msbuild/standard-and-custom-toolset-configurations)   
- [Project Element (MSBuild)](/visual-studio/msbuild/project-element-msbuild)   
- [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)
+ [Standard and Custom Toolset Configurations](/visualstudio/msbuild/standard-and-custom-toolset-configurations)   
+ [Project Element (MSBuild)](/visualstudio/msbuild/project-element-msbuild)   
+ [Additional Resources](/visualstudio/msbuild/additional-msbuild-resources)

@@ -2,7 +2,6 @@
 title: "OLE DB Programming | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -60,4 +59,4 @@ This home page is your starting point for information about the Microsoft OLE DB
 |Data-bound controls (ADO and RDO) conceptual topics|[Data-Bound Controls (ADO and RDO)](../../data/ado-rdo/data-bound-controls-ado-and-rdo.md)|  
   
 ## See Also  
- [Data Access](../Topic/Data%20Access%20in%20Visual%20C++.md)
+ [Data Access](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b)

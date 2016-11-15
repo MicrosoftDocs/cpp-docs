@@ -2,7 +2,6 @@
 title: "Compiler Error CS0281 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0281
 Friend access was granted to 'AssemblyName1', but the output assembly is named 'AssemblyName2'. Try adding a reference to 'AssemblyName1' or changing the output assembly name to match.  
   
- Friend access is a new common language runtime (CLR) feature that enables an assembly to see another assembly's non-public types. This error occurs when the assembly granting friend access specifies the wrong name for the grantee assembly. For more information, see [Friend Assemblies](../Topic/Friend%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md).  
+ Friend access is a new common language runtime (CLR) feature that enables an assembly to see another assembly's non-public types. This error occurs when the assembly granting friend access specifies the wrong name for the grantee assembly. For more information, see [Friend Assemblies](http://msdn.microsoft.com/Library/df0c70ea-2c2a-4bdc-9526-df951ad2d055).  
   
 ## Example  
  The following sequence of code samples will generate CS0281.  

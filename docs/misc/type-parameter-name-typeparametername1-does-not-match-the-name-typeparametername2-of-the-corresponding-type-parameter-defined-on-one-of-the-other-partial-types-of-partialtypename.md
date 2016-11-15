@@ -2,7 +2,6 @@
 title: "Type parameter name &#39;&lt;typeparametername1&gt;&#39; does not match the name &#39;&lt;typeparametername2&gt;&#39; of the corresponding type parameter defined on one of the other partial types of &#39;&lt;partialtypename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,10 +48,10 @@ A generic class or structure is defined in multiple partial declarations with co
 -   Decide what name the type parameter should have, and use the same name in every partial declaration.  
   
 ## See Also  
- [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)   
- [Class Statement](/dotnet/visual-basic/language-reference/statements/class-statement)   
- [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)   
+ [Partial](/dotnet/articles/visual-basic/language-reference/modifiers/partial)   
+ [Class Statement](/dotnet/articles/visual-basic/language-reference/statements/class-statement)   
+ [Structure Statement](/dotnet/articles/visual-basic/language-reference/statements/structure-statement)   
  [NOT IN BUILD: Classes: Blueprints for Objects](http://msdn.microsoft.com/en-us/2c86373d-0333-4616-a7d8-4790c4e89f7b)   
- [Structures](/dotnet/visual-basic/programming-guide/language-features/data-types/structures)   
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [Type List](/dotnet/visual-basic/language-reference/statements/type-list)
+ [Structures](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures)   
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Type List](/dotnet/articles/visual-basic/language-reference/statements/type-list)

@@ -2,7 +2,6 @@
 title: "Type of &#39;&lt;variablename&gt;&#39; is ambiguous because the loop bounds and the step variable do not widen to the same type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -86,8 +85,8 @@ Next
     ```  
   
 ## See Also  
- [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)   
- [Implicit and Explicit Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)   
- [Local Type Inference](/dotnet/visual-basic/programming-guide/language-features/variables/local-type-inference)   
- [Option Infer Statement](/dotnet/visual-basic/language-reference/statements/option-infer-statement)   
- [Widening and Narrowing Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)
+ [For...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-next-statement)   
+ [Implicit and Explicit Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)   
+ [Local Type Inference](/dotnet/articles/visual-basic/programming-guide/language-features/variables/local-type-inference)   
+ [Option Infer Statement](/dotnet/articles/visual-basic/language-reference/statements/option-infer-statement)   
+ [Widening and Narrowing Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)

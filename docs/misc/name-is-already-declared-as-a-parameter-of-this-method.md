@@ -2,7 +2,6 @@
 title: "&#39;&lt;name&gt;&#39; is already declared as a parameter of this method | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ The specified parameter name has already been declared for this method.
 -   Rename the parameter so that it is unique.  
   
 ## See Also  
- [Procedure Parameters and Arguments](/dotnet/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)
+ [Procedure Parameters and Arguments](/dotnet/articles/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)

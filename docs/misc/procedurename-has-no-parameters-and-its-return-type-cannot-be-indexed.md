@@ -2,7 +2,6 @@
 title: "&#39;&lt;procedurename&gt;&#39; has no parameters and its return type cannot be indexed | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,7 +44,7 @@ A call to a `Function` or `Sub` procedure supplies one or more arguments, but th
 -   Remove the argument or arguments from the procedure call.  
   
 ## See Also  
- [Sub Procedures](/dotnet/visual-basic/language-reference/procedures/sub-procedures)   
- [Function Procedures](/dotnet/visual-basic/language-reference/procedures/function-procedures)   
- [Function Statement](/dotnet/visual-basic/language-reference/statements/function-statement)   
- [Sub Statement](/dotnet/visual-basic/language-reference/statements/sub-statement)
+ [Sub Procedures](/dotnet/articles/visual-basic/language-reference/procedures/sub-procedures)   
+ [Function Procedures](/dotnet/articles/visual-basic/language-reference/procedures/function-procedures)   
+ [Function Statement](/dotnet/articles/visual-basic/language-reference/statements/function-statement)   
+ [Sub Statement](/dotnet/articles/visual-basic/language-reference/statements/sub-statement)

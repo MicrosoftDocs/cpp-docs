@@ -2,7 +2,6 @@
 title: "Expression cannot appear inside a quoted attribute value | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -55,6 +54,6 @@ Expression cannot appear inside a quoted attribute value. Try removing quotes.
     ```  
   
 ## See Also  
- [Embedded Expressions in XML](/dotnet/visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml)   
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [Embedded Expressions in XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml)   
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

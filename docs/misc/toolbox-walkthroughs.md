@@ -2,7 +2,6 @@
 title: "Toolbox Walkthroughs | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,7 +37,7 @@ This section contains several examples illustrating basic methods for adding and
  [Walkthrough: Creating a WPF Toolbox Control](../misc/walkthrough-creating-a-wpf-toolbox-control.md)  
  Shows how to create a control and add it to the Toolbox by using the WPF Toolbox Control template.  
   
- [Creating a Windows Forms Toolbox Control](/visual-studio/extensibility/creating-a-windows-forms-toolbox-control)  
+ [Creating a Windows Forms Toolbox Control](/visualstudio/extensibility/creating-a-windows-forms-toolbox-control)  
  Shows how to create a control and add it to the Toolbox by using the Windows Forms Toolbox Control template.  
   
  [Walkthrough: Autoloading Toolbox Items](../misc/walkthrough-autoloading-toolbox-items.md)  

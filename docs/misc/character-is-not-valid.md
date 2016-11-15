@@ -2,7 +2,6 @@
 title: "Character is not valid | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ The current context does not permit this character. For example, a tilde (`~`) o
 2.  Check that the programming element is spelled or constructed using only characters that are valid for that kind of element.  
   
 ## See Also  
- [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)
+ [Declared Element Names](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)

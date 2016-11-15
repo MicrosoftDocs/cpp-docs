@@ -2,7 +2,6 @@
 title: "How to: Register a Service | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ The managed package framework (MPF) provides attributes to control the registrat
  [!code-vb[VSSDKRegisterService#1](../misc/codesnippet/VisualBasic/how-to-register-a-service_1.vb)]
  [!code-cs[VSSDKRegisterService#1](../misc/codesnippet/CSharp/how-to-register-a-service_1.cs)]  
   
- The <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> registers the SMyGlobalService service with [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)]. For more information about <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute> and <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>, see [Registering and Unregistering VSPackages](/visual-studio/extensibility/registering-and-unregistering-vspackages).  
+ The <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> registers the SMyGlobalService service with [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)]. For more information about <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute> and <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>, see [Registering and Unregistering VSPackages](/visualstudio/extensibility/registering-and-unregistering-vspackages).  
   
  To register a service that replaces another service with the same name, use the <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute> instead of the <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>.  
   
@@ -56,4 +55,4 @@ The managed package framework (MPF) provides attributes to control the registrat
   
 ## See Also  
  [Registering VSPackages](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
- [Service Essentials](/visual-studio/extensibility/internals/service-essentials)
+ [Service Essentials](/visualstudio/extensibility/internals/service-essentials)

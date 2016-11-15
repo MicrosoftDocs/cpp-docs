@@ -2,7 +2,6 @@
 title: "&#39;Exit Do&#39; can only appear inside a &#39;Do&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ An `Exit Do` statement occurs outside of a `Do` loop. `Exit Do` is valid only be
 2.  Verify that other control structures within the `Do` loop are correctly terminated.  
   
 ## See Also  
- [Do...Loop Statement](/dotnet/visual-basic/language-reference/statements/do-loop-statement)
+ [Do...Loop Statement](/dotnet/articles/visual-basic/language-reference/statements/do-loop-statement)

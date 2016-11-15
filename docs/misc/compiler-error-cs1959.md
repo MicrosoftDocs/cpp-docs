@@ -2,7 +2,6 @@
 title: "Compiler Error CS1959 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -60,5 +59,5 @@ class Program
 ```  
   
 ## See Also  
- [Constants](/dotnet/csharp/programming-guide/classes-and-structs/constants)   
- [null](/dotnet/csharp/language-reference/keywords/null)
+ [Constants](/dotnet/articles/csharp/programming-guide/classes-and-structs/constants)   
+ [null](/dotnet/articles/csharp/language-reference/keywords/null)

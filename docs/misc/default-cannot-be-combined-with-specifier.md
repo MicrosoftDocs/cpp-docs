@@ -2,7 +2,6 @@
 title: "&#39;Default&#39; cannot be combined with &#39;&lt;specifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,4 +48,4 @@ You have attempted to combine the `Default` keyword with a specifier, such as `S
 -   Remove the conflicting specifier.  
   
 ## See Also  
- [Default](/dotnet/visual-basic/language-reference/modifiers/default)
+ [Default](/dotnet/articles/visual-basic/language-reference/modifiers/default)

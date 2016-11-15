@@ -2,7 +2,6 @@
 title: "Modules cannot be declared &#39;&lt;specifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ A module was declared with an invalid access modifier.
 -   Replace the access modifier with a valid access modifier, such as `Public` or `Friend`.  
   
 ## See Also  
- [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)
+ [Module Statement](/dotnet/articles/visual-basic/language-reference/statements/module-statement)

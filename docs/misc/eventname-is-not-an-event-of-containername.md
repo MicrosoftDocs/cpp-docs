@@ -2,7 +2,6 @@
 title: "&#39;&lt;eventname&gt;&#39; is not an event of &#39;&lt;containername&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,5 +46,5 @@ The event specified is not declared for the object.
 2.  Check that you are accessing the correct object. Use fully qualified references to the object or use the `Imports` statement to import the appropriate namespace if necessary.  
   
 ## See Also  
- [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)   
- [Imports Statement (.NET Namespace and Type)](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)
+ [Events](/dotnet/articles/visual-basic/programming-guide/language-features/events/events)   
+ [Imports Statement (.NET Namespace and Type)](/dotnet/articles/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)

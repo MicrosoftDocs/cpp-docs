@@ -2,7 +2,6 @@
 title: "&#39;RaiseEvent&#39; is already declared | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ More than one `RaiseEvent` declaration appeared in a custom event declaration. A
 -   Remove the redundant `RaiseEvent` statement.  
   
 ## See Also  
- [RaiseEvent Statement](/dotnet/visual-basic/language-reference/statements/raiseevent-statement)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [RaiseEvent Statement](/dotnet/articles/visual-basic/language-reference/statements/raiseevent-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

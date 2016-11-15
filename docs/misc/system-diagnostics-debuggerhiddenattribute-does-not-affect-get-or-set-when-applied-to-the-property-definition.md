@@ -2,7 +2,6 @@
 title: "System.Diagnostics.DebuggerHiddenAttribute does not affect &#39;Get&#39; or &#39;Set&#39; when applied to the Property definition | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,7 +43,7 @@ System.Diagnostics.DebuggerHiddenAttribute does not affect 'Get' or 'Set' when a
   
  Although you can apply <xref:System.Diagnostics.DebuggerHiddenAttribute> to a property, it does not have any effect. It has the effect that you want only if you apply it to the property's `Get` or `Set` procedure.  
   
- By default, this message is a warning. For information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40051  
   
@@ -54,7 +53,7 @@ System.Diagnostics.DebuggerHiddenAttribute does not affect 'Get' or 'Set' when a
   
 ## See Also  
  <xref:System.Diagnostics.DebuggerHiddenAttribute>   
- [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)   
- [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
- [Get Statement](/dotnet/visual-basic/language-reference/statements/get-statement)   
- [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement)
+ [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)   
+ [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement)   
+ [Get Statement](/dotnet/articles/visual-basic/language-reference/statements/get-statement)   
+ [Set Statement](/dotnet/articles/visual-basic/language-reference/statements/set-statement)

@@ -2,7 +2,6 @@
 title: "Type of &#39;&lt;variablename&gt;&#39; cannot be inferred from an expression containing &#39;&lt;variablename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -75,8 +74,8 @@ The compiler cannot infer the data type of a variable if the variable is used in
 -   Use an `As` clause to specify the type of the variable you are declaring.  
   
 ## See Also  
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
- [For Each...Next Statement](/dotnet/visual-basic/language-reference/statements/for-each-next-statement)   
- [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)   
- [Local Type Inference](/dotnet/visual-basic/programming-guide/language-features/variables/local-type-inference)   
- [Option Infer Statement](/dotnet/visual-basic/language-reference/statements/option-infer-statement)
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)   
+ [For Each...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-each-next-statement)   
+ [For...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-next-statement)   
+ [Local Type Inference](/dotnet/articles/visual-basic/programming-guide/language-features/variables/local-type-inference)   
+ [Option Infer Statement](/dotnet/articles/visual-basic/language-reference/statements/option-infer-statement)

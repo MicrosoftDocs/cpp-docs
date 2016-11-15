@@ -2,7 +2,6 @@
 title: "Compiler Error CS1010 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1010
 Newline in constant  
   
- A [string](/dotnet/csharp/language-reference/keywords/string) was not properly delimited.  
+ A [string](/dotnet/articles/csharp/language-reference/keywords/string) was not properly delimited.  
   
  The following sample generates CS1010:  
   

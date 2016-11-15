@@ -2,7 +2,6 @@
 title: "Generic parameter constraint type &lt;typename&gt; is not CLS-compliant | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,23 +37,23 @@ translation.priority.mt:
 # Generic parameter constraint type &lt;typename&gt; is not CLS-compliant
 A generic type is marked as `<CLSCompliant(True)>`, but a constraint on one of its type parameters specifies a type that is marked as `<CLSCompliant(False)>`, is not marked, or does not qualify because it is a noncompliant type.  
   
- For a type to be compliant with the [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md) (CLS), it must use only CLS-compliant types. This applies also to the constraints on the type parameters of a generic type.  
+ For a type to be compliant with the [Language Independence and Language-Independent Components](http://msdn.microsoft.com/Library/4f0b77d0-4844-464f-af73-6e06bedeafc6) (CLS), it must use only CLS-compliant types. This applies also to the constraints on the type parameters of a generic type.  
   
  The following [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] data types are not CLS-compliant:  
   
--   [SByte Data Type](/dotnet/visual-basic/language-reference/data-types/sbyte-data-type)  
+-   [SByte Data Type](/dotnet/articles/visual-basic/language-reference/data-types/sbyte-data-type)  
   
--   [UInteger Data Type](/dotnet/visual-basic/language-reference/data-types/uinteger-data-type)  
+-   [UInteger Data Type](/dotnet/articles/visual-basic/language-reference/data-types/uinteger-data-type)  
   
--   [ULong Data Type](/dotnet/visual-basic/language-reference/data-types/ulong-data-type)  
+-   [ULong Data Type](/dotnet/articles/visual-basic/language-reference/data-types/ulong-data-type)  
   
--   [UShort Data Type](/dotnet/visual-basic/language-reference/data-types/ushort-data-type)  
+-   [UShort Data Type](/dotnet/articles/visual-basic/language-reference/data-types/ushort-data-type)  
   
  When you apply the <xref:System.CLSCompliantAttribute> attribute to a programming element, you set the attribute's `isCompliant` parameter to either `True` or `False` to indicate compliance or noncompliance. There is no default for this parameter, and you must supply a value.  
   
  If you do not apply <xref:System.CLSCompliantAttribute> to an element, it is considered to be noncompliant.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40040  
   
@@ -65,5 +64,5 @@ A generic type is marked as `<CLSCompliant(True)>`, but a constraint on one of i
 -   If the generic type must be CLS-compliant, change the type of this constraint to the closest CLS-compliant type. For example, in place of `UInteger` you might be able to use `Integer` if you do not need the value range above 2,147,483,647. If you do need the extended range, you can replace `UInteger` with `Long`.  
   
 ## See Also  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
  [\<PAVE OVER> Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3)

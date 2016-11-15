@@ -2,7 +2,6 @@
 title: "Compiler Error CS0199 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0199
 Fields of static readonly field 'name' cannot be passed ref or out (except in a static constructor)  
   
- A [readonly](/dotnet/csharp/language-reference/keywords/readonly) variable must have the same [static](/dotnet/csharp/language-reference/keywords/static) usage as the constructor in which you want to pass it as a [ref](/dotnet/csharp/language-reference/keywords/ref) or [out](/dotnet/csharp/language-reference/keywords/out) parameter. For more information, see [Passing Parameters](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+ A [readonly](/dotnet/articles/csharp/language-reference/keywords/readonly) variable must have the same [static](/dotnet/articles/csharp/language-reference/keywords/static) usage as the constructor in which you want to pass it as a [ref](/dotnet/articles/csharp/language-reference/keywords/ref) or [out](/dotnet/articles/csharp/language-reference/keywords/out) parameter. For more information, see [Passing Parameters](/dotnet/articles/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
 ## Example  
  The following sample generates CS0199:  

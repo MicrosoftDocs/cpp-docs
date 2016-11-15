@@ -2,7 +2,6 @@
 title: "Advanced Toolbox Control Development | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,7 +33,7 @@ translation.priority.mt:
 > [!NOTE]
 >  The recommended way to add custom controls to the Toolbox is to use the Toolbox Control templates that come with the Visual Studio 10 SDK. This topic is retained for backward compatibility, for adding existing controls to the Toolbox, and for advanced Toolbox control development.  
 >   
->  For more information on creating toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](/visual-studio/extensibility/creating-a-wpf-toolbox-control).  
+>  For more information on creating toolbox controls by using the templates, see [How to: Create a Toolbox Control That Uses Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) and [Creating a WPF Toolbox Control](/visualstudio/extensibility/creating-a-wpf-toolbox-control).  
   
  A VSPackage based on the Managed Package Framework can extend [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] Toolbox functionality by adding controls, objects derived from <xref:System.Drawing.Design.ToolboxItem> objects. Each <xref:System.Drawing.Design.ToolboxItem> is implemented by an object derived from <xref:System.ComponentModel.Component>.  
   
@@ -175,7 +174,7 @@ translation.priority.mt:
         }  
     ```  
   
-     For more information on authoring Windows Forms controls and toolbox controls, see [Developing Custom Windows Forms Controls with the .NET Framework](../Topic/Developing%20Custom%20Windows%20Forms%20Controls%20with%20the%20.NET%20Framework.md) or [Walkthrough: Autoloading Toolbox Items](../misc/walkthrough-autoloading-toolbox-items.md).  
+     For more information on authoring Windows Forms controls and toolbox controls, see [Developing Custom Windows Forms Controls with the .NET Framework](http://msdn.microsoft.com/Library/236cebc0-bd71-4f18-9fd6-5d0e592375df) or [Walkthrough: Autoloading Toolbox Items](../misc/walkthrough-autoloading-toolbox-items.md).  
   
 2.  (Optional) An application can choose to use a custom object derived from the <xref:System.Drawing.Design.ToolboxItem> object to provide its Toolbox control to the **Toolbox**.  
   
@@ -417,7 +416,7 @@ translation.priority.mt:
      <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource%2A>, searches only directories specified in the registry entry HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\\*\<version>*\AssemblyFolders, where *\<version>* is the version number of the release of Visual Studio (for example, 8.0).  
   
     > [!NOTE]
-    >  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* can be overridden with an alternate root when the Visual Studio shell is initialized, or use of <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute>. For more information see, [Command-Line Switches](/visual-studio/extensibility/command-line-switches-visual-studio-sdk).  
+    >  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* can be overridden with an alternate root when the Visual Studio shell is initialized, or use of <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute>. For more information see, [Command-Line Switches](/visualstudio/extensibility/command-line-switches-visual-studio-sdk).  
   
      For details on the correct format of the AssemblyFolder registry entries, see the <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource%2A> reference page.  
   
@@ -662,4 +661,4 @@ translation.priority.mt:
  [Registering Toolbox Support Features](../misc/registering-toolbox-support-features.md)   
  [How to: Provide Custom Toolbox Items By Using Interop Assemblies](../misc/how-to-provide-custom-toolbox-items-by-using-interop-assemblies.md)   
  [Managing the Toolbox](../misc/managing-the-toolbox.md)   
- [How to: Control the Toolbox](../Topic/How%20to:%20Control%20the%20Toolbox.md)
+ [How to: Control the Toolbox](http://msdn.microsoft.com/Library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)

@@ -2,7 +2,6 @@
 title: "This inheritance causes circular dependencies between &lt;type1&gt; &#39;&lt;typename1&gt;&#39; and its nested &lt;type2&gt; &#39;&lt;typename2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -62,4 +61,4 @@ End Class
 -   Change the inheritance structure so that there is no circular dependency.  
   
 ## See Also  
- [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
+ [Inheritance Basics](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

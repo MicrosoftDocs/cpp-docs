@@ -2,7 +2,6 @@
 title: "At least one parameter type of this binary operator must be the containing type &#39;&lt;typename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,7 +46,7 @@ A definition of a binary operator specifies both parameters with types other tha
 -   Change the type of one or both of the parameters to the type of the class or structure in which the operator is defined.  
   
 ## See Also  
- [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
- [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)   
- [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
- [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)
+ [Operator Procedures](/dotnet/articles/visual-basic/language-reference/procedures/operator-procedures)   
+ [Operator Statement](/dotnet/articles/visual-basic/language-reference/statements/operator-statement)   
+ [How to: Define an Operator](http://msdn.microsoft.com/Library/d4b0e253-092a-4e6e-9fe2-01f562140a29)   
+ [How to: Define a Conversion Operator](http://msdn.microsoft.com/Library/54203dfa-c24b-463f-9942-d5153e89e762)

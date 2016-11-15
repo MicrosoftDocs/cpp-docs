@@ -2,7 +2,6 @@
 title: "The project type is not supported by this installation | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,5 +48,5 @@ This error occurs when you try to open a type of project that requires a softwar
  If you can't find the type of project that you're trying to open, you don't have the associated SDK installed. You must locate and install the associated SDK to open the project type.  
   
 ## See Also  
- [What's New in Visual Studio 2015](/visual-studio/ide/what-s-new-in-visual-studio-2015)   
- [Porting, Migrating, and Upgrading Visual Studio Projects](/visual-studio/porting/porting-migrating-and-upgrading-visual-studio-projects)
+ [What's New in Visual Studio 2015](/visualstudio/ide/what-s-new-in-visual-studio-2015)   
+ [Porting, Migrating, and Upgrading Visual Studio Projects](/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects)

@@ -2,7 +2,6 @@
 title: "Compiler Error CS0594 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0594
 Floating-point constant is outside the range of type 'type'  
   
- A value was assigned to a floating-point variable that is too large for the variables of this data type. See [Integral Types Table](/dotnet/csharp/language-reference/keywords/integral-types-table) for information about the range of values allowed in data types.  
+ A value was assigned to a floating-point variable that is too large for the variables of this data type. See [Integral Types Table](/dotnet/articles/csharp/language-reference/keywords/integral-types-table) for information about the range of values allowed in data types.  
   
  The following sample generates CS0594:  
   

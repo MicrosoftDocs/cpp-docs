@@ -2,7 +2,6 @@
 title: "Unable to open key file &#39;&lt;filename&gt;&#39;: &lt;error&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ The key file specified for this project could not be opened.
 -   Verify that the key file exists, and is not locked by another application.  
   
 ## See Also  
- [Sn.exe (Strong Name Tool)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md)   
+ [Sn.exe (Strong Name Tool)](http://msdn.microsoft.com/Library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)   
  [NOT IN BUILD: Global Attributes in Visual Basic](http://msdn.microsoft.com/en-us/253a32d8-1531-4504-b687-088554ab71d2)

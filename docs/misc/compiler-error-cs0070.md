@@ -2,7 +2,6 @@
 title: "Compiler Error CS0070 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0070
 The event 'event' can only appear on the left hand side of += or -= (except when used from within the type 'type')  
   
- Outside of the class it is defined in, an [event](/dotnet/csharp/language-reference/keywords/event) can only add or subtract references. For more information, see [Events](/dotnet/csharp/programming-guide/events/index).  
+ Outside of the class it is defined in, an [event](/dotnet/articles/csharp/language-reference/keywords/event) can only add or subtract references. For more information, see [Events](/dotnet/articles/csharp/programming-guide/events/index).  
   
  The following sample generates CS0070:  
   

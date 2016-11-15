@@ -2,7 +2,6 @@
 title: "&#39;Exit&#39; must be followed by &#39;Sub&#39;, &#39;Function&#39;, &#39;Property&#39;, &#39;Do&#39;, &#39;For&#39;, &#39;While&#39;, &#39;Select&#39;, or &#39;Try&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ An `Exit` statement contains an invalid keyword. `Exit` must specify the block f
 -   Add a valid keyword following `Exit`, or remove the `Exit` statement.  
   
 ## See Also  
- [Exit Statement](/dotnet/visual-basic/language-reference/statements/exit-statement)
+ [Exit Statement](/dotnet/articles/visual-basic/language-reference/statements/exit-statement)

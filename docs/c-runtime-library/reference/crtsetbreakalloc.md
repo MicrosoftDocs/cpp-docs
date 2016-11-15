@@ -2,7 +2,6 @@
 title: "_CrtSetBreakAlloc | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -76,7 +75,7 @@ Sets a breakpoint on a specified object allocation order number (debug version o
   
  The object allocation order number is stored in the *lRequest* field of the **_CrtMemBlockHeader** structure, defined in Crtdbg.h. When information about a memory block is reported by one of the debug dump functions, this number is enclosed in braces, such as {36}.  
   
- For more information about how `_CrtSetBreakAlloc` can be used with other memory management functions, see [Tracking Heap Allocation Requests](/visual-studio/debugger/crt-debug-heap-details). For more information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visual-studio/debugger/crt-debug-heap-details).  
+ For more information about how `_CrtSetBreakAlloc` can be used with other memory management functions, see [Tracking Heap Allocation Requests](/visualstudio/debugger/crt-debug-heap-details). For more information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).  
   
 ## Requirements  
   
@@ -136,7 +135,7 @@ int main( )
 ```  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)

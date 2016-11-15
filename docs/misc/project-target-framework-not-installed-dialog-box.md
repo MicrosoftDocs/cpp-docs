@@ -2,7 +2,6 @@
 title: "Project Target Framework Not Installed Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -60,6 +59,6 @@ You have opened a project which targets a framework that is not installed on you
  Leaves the project unloaded from the solution. You can later install the desired Framework and then reload the project.  
   
 ## See Also  
- [How to: Target a Version of the .NET Framework](../Topic/How%20to:%20Target%20a%20Version%20of%20the%20.NET%20Framework.md)   
- [Troubleshooting .NET Framework Targeting Errors](/visual-studio/msbuild/troubleshooting-dotnet-framework-targeting-errors)   
+ [How to: Target a Version of the .NET Framework](http://msdn.microsoft.com/Library/dea62d25-3d1b-492e-a6cc-b5154489800a)   
+ [Troubleshooting .NET Framework Targeting Errors](/visualstudio/msbuild/troubleshooting-dotnet-framework-targeting-errors)   
  [Adding references](../ide/adding-references-in-visual-cpp-projects.md)

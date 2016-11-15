@@ -2,7 +2,6 @@
 title: "Compiler Error CS0055 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0055
 Inconsistent accessibility: parameter type 'type' is less accessible than indexer 'indexer'  
   
- A public construct must return a publicly accessible object. For more information, see [Access Modifiers](/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers).  
+ A public construct must return a publicly accessible object. For more information, see [Access Modifiers](/dotnet/articles/csharp/programming-guide/classes-and-structs/access-modifiers).  
   
  The following sample generates CS0055:  
   

@@ -2,7 +2,6 @@
 title: "Troubleshooting Exceptions: System.OutOfMemoryException | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,9 +41,9 @@ An <xref:System.OutOfMemoryException> exception is thrown when an attempt to all
   
 ## Associated Tips  
  **If you are creating an array, make sure the size is correct.**  
- For more information, Visual Basic users can see [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index).  
+ For more information, Visual Basic users can see [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index).  
   
- For more information, C# users can see [Arrays](/dotnet/csharp/programming-guide/arrays/index).  
+ For more information, C# users can see [Arrays](/dotnet/articles/csharp/programming-guide/arrays/index).  
   
  **Be sure you have enough memory for internal purposes and new managed objects.**  
  If you are programming on the [!INCLUDE[Compact](../misc/includes/compact_md.md)], the common language runtime throws this exception when there is not enough memory for internal purposes or new managed objects. To prevent the exception, avoid programming large methods that consume 64 or more kilobytes of memory.  

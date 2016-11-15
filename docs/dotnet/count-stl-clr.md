@@ -2,7 +2,6 @@
 title: "count (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,7 +46,7 @@ template<class _InIt, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `count`. For more information, see [count](../Topic/count.md).  
+ This function behaves the same as the STL function `count`. For more information, see [count](http://msdn.microsoft.com/Library/42d33762-e593-4719-ad85-6fb27a83bf41).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

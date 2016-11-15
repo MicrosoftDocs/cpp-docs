@@ -2,7 +2,6 @@
 title: "Compiler Error CS1563 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS1563
 Output 'output file' does not have any source files  
   
- The [/out](/dotnet/csharp/language-reference/compiler-options/out-compiler-option) compiler option was specified, but no source code files follow. You should either not use **/out**, or you should specify the source code files following **/out**.
+ The [/out](/dotnet/articles/csharp/language-reference/compiler-options/out-compiler-option) compiler option was specified, but no source code files follow. You should either not use **/out**, or you should specify the source code files following **/out**.

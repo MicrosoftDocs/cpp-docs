@@ -2,7 +2,6 @@
 title: "Compiler Error CS0242 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0242
 The operation in question is undefined on void pointers  
   
- Incrementing a void pointer is not allowed. For more information, see [Unsafe Code and Pointers](/dotnet/csharp/programming-guide/unsafe-code-pointers/index).  
+ Incrementing a void pointer is not allowed. For more information, see [Unsafe Code and Pointers](/dotnet/articles/csharp/programming-guide/unsafe-code-pointers/index).  
   
  The following sample generates CS0242:  
   

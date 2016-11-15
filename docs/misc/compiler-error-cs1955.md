@@ -2,7 +2,6 @@
 title: "Compiler Error CS1955 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +45,7 @@ Non-invocable member 'name' cannot be used like a method.
 1.  Remove the parentheses from the expression.  
   
 ## Example  
- The following code generates CS1955 because the code is trying to invoke a field and a property by using the method call operator [()](/dotnet/csharp/language-reference/operators/invocation-operator). You cannot call a field or property, but you can access the value it stores by using the member access operator ( [.](/dotnet/csharp/language-reference/operators/member-access-operator) ).  
+ The following code generates CS1955 because the code is trying to invoke a field and a property by using the method call operator [()](/dotnet/articles/csharp/language-reference/operators/invocation-operator). You cannot call a field or property, but you can access the value it stores by using the member access operator ( [.](/dotnet/articles/csharp/language-reference/operators/member-access-operator) ).  
   
 ```  
 // cs1955.cs  

@@ -2,7 +2,6 @@
 title: "&#39;Microsoft.VisualBasic.ComClassAttribute&#39; cannot be applied to &#39;&lt;classname&gt;&#39; because it is not declared &#39;Public&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -58,5 +57,5 @@ A class is declared with <xref:Microsoft.VisualBasic.ComClassAttribute>, but its
   
 ## See Also  
  <xref:Microsoft.VisualBasic.ComClassAttribute>   
- [COM Interop](/dotnet/visual-basic/programming-guide/com-interop/index)   
- [Public](/dotnet/visual-basic/language-reference/modifiers/public)
+ [COM Interop](/dotnet/articles/visual-basic/programming-guide/com-interop/index)   
+ [Public](/dotnet/articles/visual-basic/language-reference/modifiers/public)

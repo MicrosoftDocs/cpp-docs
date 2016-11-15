@@ -2,7 +2,6 @@
 title: "Integer constant expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ An `#ExternalSource` directive occurs in which the second argument is not an int
 2.  Supply an integer literal as the second argument to the `#ExternalSource` directive.  
   
 ## See Also  
- [#ExternalSource Directive](/dotnet/visual-basic/language-reference/directives/externalsource-directive)
+ [#ExternalSource Directive](/dotnet/articles/visual-basic/language-reference/directives/externalsource-directive)

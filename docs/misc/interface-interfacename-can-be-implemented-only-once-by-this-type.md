@@ -2,7 +2,6 @@
 title: "Interface &#39;&lt;interfacename&gt;&#39; can be implemented only once by this type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ The specified interface is already implemented by this type, and cannot be imple
 -   Implement this interface using this type only once.  
   
 ## See Also  
- [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)   
- [Implements](/dotnet/visual-basic/language-reference/statements/implements-clause)
+ [Interfaces](/dotnet/articles/visual-basic/programming-guide/language-features/interfaces/index)   
+ [Implements](/dotnet/articles/visual-basic/language-reference/statements/implements-clause)

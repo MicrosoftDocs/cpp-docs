@@ -2,7 +2,6 @@
 title: "Compiler Error CS0214 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0214
 Pointers and fixed size buffers may only be used in an unsafe context  
   
- Pointers can only be used with the [unsafe](/dotnet/csharp/language-reference/keywords/unsafe) keyword. For more information, see [Unsafe Code and Pointers](/dotnet/csharp/programming-guide/unsafe-code-pointers/index).  
+ Pointers can only be used with the [unsafe](/dotnet/articles/csharp/language-reference/keywords/unsafe) keyword. For more information, see [Unsafe Code and Pointers](/dotnet/articles/csharp/programming-guide/unsafe-code-pointers/index).  
   
  The following sample generates CS0214:  
   

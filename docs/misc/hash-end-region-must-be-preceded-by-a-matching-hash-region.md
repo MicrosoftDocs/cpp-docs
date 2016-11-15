@@ -2,7 +2,6 @@
 title: "&#39;#End Region&#39; must be preceded by a matching &#39;#Region&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ With `#Region` you can specify a block of code to expand or collapse when using 
 -   Insert `#Region` at the appropriate place before the corresponding `#End``Region` statement.  
   
 ## See Also  
- [#Region Directive](/dotnet/visual-basic/language-reference/directives/region-directive)
+ [#Region Directive](/dotnet/articles/visual-basic/language-reference/directives/region-directive)

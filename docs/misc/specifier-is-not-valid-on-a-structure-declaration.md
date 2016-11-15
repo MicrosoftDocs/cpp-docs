@@ -2,7 +2,6 @@
 title: "&#39;&lt;specifier&gt;&#39; is not valid on a Structure declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ You have used a specifier, such as `Dim` or `Override`, that is not valid on a `
 -   Remove the specifier.  
   
 ## See Also  
- [Structures and Classes](/dotnet/visual-basic/programming-guide/language-features/data-types/structures-and-classes)
+ [Structures and Classes](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures-and-classes)

@@ -2,7 +2,6 @@
 title: "How to: Configure a SharePoint Site as a Private Gallery | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +31,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Configure a SharePoint Site as a Private Gallery
-You can create a SharePoint List page that describes and provides extensions as a private gallery, and add the list to **Extensions and Updates**. For more information, see [Private Galleries](/visual-studio/extensibility/private-galleries).  
+You can create a SharePoint List page that describes and provides extensions as a private gallery, and add the list to **Extensions and Updates**. For more information, see [Private Galleries](/visualstudio/extensibility/private-galleries).  
   
  To use SharePoint to create a private gallery,  
   
@@ -96,4 +95,4 @@ You can create a SharePoint List page that describes and provides extensions as 
  At present, only SharePoint 2010 is supported.  
   
 ## See Also  
- [Private Galleries](/visual-studio/extensibility/private-galleries)
+ [Private Galleries](/visualstudio/extensibility/private-galleries)

@@ -2,7 +2,6 @@
 title: "Opening an Options Page | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -37,7 +36,7 @@ You can display an options page programmatically so that users of your package c
   
 ### To display a custom options page  
   
-1.  Create an options page. For more information, see [Creating Options Pages](/visual-studio/extensibility/internals/creating-options-pages).  
+1.  Create an options page. For more information, see [Creating Options Pages](/visualstudio/extensibility/internals/creating-options-pages).  
   
 2.  Get the <xref:System.Type> of the options page by applying the `typeof` keyword to the name of the class that defines the options page.  
   

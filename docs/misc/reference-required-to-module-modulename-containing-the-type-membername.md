@@ -2,7 +2,6 @@
 title: "Reference required to module &#39;&lt;modulename&gt;&#39; containing the type &#39;&lt;membername&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ Reference required to module '\<modulename>' containing the type '\<membername>'
 -   Add a project reference for the dependent types in the project.  
   
 ## See Also  
- [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)

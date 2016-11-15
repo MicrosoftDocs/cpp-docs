@@ -2,7 +2,6 @@
 title: "Completion Lists in C# | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -33,7 +32,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Completion Lists in C#
-This content has moved to [Visual C# IntelliSense](/visual-studio/ide/visual-csharp-intellisense)  
+This content has moved to [Visual C# IntelliSense](/visualstudio/ide/visual-csharp-intellisense)  
   
 ## See Also  
- [Visual C# Code Snippets](/visual-studio/ide/visual-csharp-code-snippets)
+ [Visual C# Code Snippets](/visualstudio/ide/visual-csharp-code-snippets)

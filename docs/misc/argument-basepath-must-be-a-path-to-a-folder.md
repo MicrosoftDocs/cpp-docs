@@ -2,7 +2,6 @@
 title: "Argument BasePath must be a path to a folder | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,4 +40,4 @@ The argument `BasePath` must consist of a path to a folder. You may be parsing a
  <xref:System.CodeDom.Compiler.TempFileCollection.BasePath%2A>   
  <xref:System.Resources.ResXResourceWriter.BasePath%2A>   
  <xref:System.Resources.ResXResourceReader.BasePath%2A>   
- [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)
+ [How to: Parse File Paths](http://msdn.microsoft.com/Library/c1bd99c9-8160-456a-b5ab-60a49139b923)

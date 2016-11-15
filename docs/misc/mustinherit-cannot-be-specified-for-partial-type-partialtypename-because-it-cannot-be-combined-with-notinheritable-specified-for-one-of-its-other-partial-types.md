@@ -2,7 +2,6 @@
 title: "&#39;MustInherit&#39; cannot be specified for partial type &#39;&lt;partialtypename&gt;&#39; because it cannot be combined with &#39;NotInheritable&#39; specified for one of its other partial types | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,7 +48,7 @@ A class is defined in multiple partial declarations, one of which specifies `Mus
 -   Decide whether the class should require inheritance, forbid inheritance, or neither, and remove the keywords that are inappropriate to your decision.  
   
 ## See Also  
- [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)   
- [MustInherit](/dotnet/visual-basic/language-reference/modifiers/mustinherit)   
- [NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)   
- [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
+ [Partial](/dotnet/articles/visual-basic/language-reference/modifiers/partial)   
+ [MustInherit](/dotnet/articles/visual-basic/language-reference/modifiers/mustinherit)   
+ [NotInheritable](/dotnet/articles/visual-basic/language-reference/modifiers/notinheritable)   
+ [Inheritance Basics](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

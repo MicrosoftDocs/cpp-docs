@@ -2,7 +2,6 @@
 title: "Non-shared members in a Structure cannot be declared &#39;New&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -55,6 +54,6 @@ A nonshared variable in a structure is declared with a `New` clause.
 -   Remove either the `Shared` modifier or the `New` keyword from the reference variable declaration.  
   
 ## See Also  
- [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)   
- [Shared](/dotnet/visual-basic/language-reference/modifiers/shared)   
- [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator)
+ [Structure Statement](/dotnet/articles/visual-basic/language-reference/statements/structure-statement)   
+ [Shared](/dotnet/articles/visual-basic/language-reference/modifiers/shared)   
+ [New Operator](/dotnet/articles/visual-basic/language-reference/operators/new-operator)

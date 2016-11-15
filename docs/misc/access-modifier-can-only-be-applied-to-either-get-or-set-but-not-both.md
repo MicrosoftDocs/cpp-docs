@@ -2,7 +2,6 @@
 title: "Access modifier can only be applied to either &#39;Get&#39; or Set&#39;, but not both | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Access modifier can only be applied to either &#39;Get&#39; or Set&#39;, but not both
-A property declaration specifies access levels in the [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement), the [Get Statement](/dotnet/visual-basic/language-reference/statements/get-statement), and the [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement).  
+A property declaration specifies access levels in the [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement), the [Get Statement](/dotnet/articles/visual-basic/language-reference/statements/get-statement), and the [Set Statement](/dotnet/articles/visual-basic/language-reference/statements/set-statement).  
   
  You can always specify an access level for the property. In addition, you can specify a different access level for at most one of its property procedures (`Get` or `Set`), provided it is more restrictive than the property's access level. You cannot specify access levels for both of the property procedures.  
   
@@ -47,5 +46,5 @@ A property declaration specifies access levels in the [Property Statement](/dotn
 -   Remove the access modifier from either the `Get` statement or the `Set` statement.  
   
 ## See Also  
- [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)   
- [How to: Declare a Property with Mixed Access Levels](../Topic/How%20to:%20Declare%20a%20Property%20with%20Mixed%20Access%20Levels%20\(Visual%20Basic\).md)
+ [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)   
+ [How to: Declare a Property with Mixed Access Levels](http://msdn.microsoft.com/Library/fdbb2d97-279a-4956-b26c-cbdfbc34915a)

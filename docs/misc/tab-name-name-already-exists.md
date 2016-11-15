@@ -2,7 +2,6 @@
 title: "Tab name &lt;name&gt; already exists. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,4 +41,4 @@ Each tab on the Toolbox must have a unique name. This error generally occurs whe
   
 ## See Also  
  [How to: Manipulate Toolbox Tabs](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db)   
- [Toolbox](/visual-studio/ide/reference/toolbox)
+ [Toolbox](/visualstudio/ide/reference/toolbox)

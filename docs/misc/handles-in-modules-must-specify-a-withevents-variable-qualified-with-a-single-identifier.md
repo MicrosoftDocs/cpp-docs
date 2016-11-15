@@ -2,7 +2,6 @@
 title: "&#39;Handles&#39; in modules must specify a &#39;WithEvents&#39; variable qualified with a single identifier | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,6 +44,6 @@ To specify an event handler, `Handles` statements must specify an object variabl
 -   Use the `WithEvents` modifier to declare variables that will be used with the `Handles` statement.  
   
 ## See Also  
- [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause)   
- [WithEvents](/dotnet/visual-basic/language-reference/modifiers/withevents)   
- [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)
+ [Handles](/dotnet/articles/visual-basic/language-reference/statements/handles-clause)   
+ [WithEvents](/dotnet/articles/visual-basic/language-reference/modifiers/withevents)   
+ [Events](/dotnet/articles/visual-basic/programming-guide/language-features/events/events)

@@ -2,7 +2,6 @@
 title: "Walkthrough: Adding Validation to a Domain Model | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,4 +28,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Walkthrough: Adding Validation to a Domain Model
-This topic has been consolidated with other content. Please go to [Validation in a Domain-Specific Language](/visual-studio/modeling/validation-in-a-domain-specific-language).
+This topic has been consolidated with other content. Please go to [Validation in a Domain-Specific Language](/visualstudio/modeling/validation-in-a-domain-specific-language).

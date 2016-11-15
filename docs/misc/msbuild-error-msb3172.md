@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB3172 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,4 +41,4 @@ translation.priority.mt:
  You might have added an assembly or a manifest file as a content file. You should use the **Add Reference** command instead of **Add File** so that the dependent assembly is properly referenced by the project system. More sophisticated projects commonly mark the .exe.manifest in the bin folder as a project file, but you should avoid doing so. The hidden app.manifest file becomes the .exe.manifest file and can be edited manually for advanced scenarios.  
   
 ## See Also  
- [\<PackageFiles> Element](../Topic/%3CPackageFiles%3E%20Element%20\(Bootstrapper\).md)
+ [\<PackageFiles> Element](http://msdn.microsoft.com/Library/3ea252d7-18a3-47d8-af83-47feebcfe82b)

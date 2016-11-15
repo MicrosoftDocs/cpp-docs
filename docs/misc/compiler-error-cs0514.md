@@ -2,7 +2,6 @@
 title: "Compiler Error CS0514 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,7 +40,7 @@ translation.priority.mt:
   
  Calling `this` in the static constructor is not allowed because the static constructor is called automatically before creating any instance of the class. Also, static constructors are not inherited, and cannot be called directly.  
   
- For more information, see [this](/dotnet/csharp/language-reference/keywords/this) and [base](/dotnet/csharp/language-reference/keywords/base).  
+ For more information, see [this](/dotnet/articles/csharp/language-reference/keywords/this) and [base](/dotnet/articles/csharp/language-reference/keywords/base).  
   
 ## Example  
  The following example generates CS0514:  

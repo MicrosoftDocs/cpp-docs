@@ -2,7 +2,6 @@
 title: "Compiler Error CS0241 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,7 +42,7 @@ translation.priority.mt:
 # Compiler Error CS0241
 Default parameter specifiers are not permitted  
   
- [Method parameters](/dotnet/csharp/language-reference/keywords/method-parameters) cannot have default values. Use method overloads if you want to achieve the same effect. For more information, see [Passing Parameters](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+ [Method parameters](/dotnet/articles/csharp/language-reference/keywords/method-parameters) cannot have default values. Use method overloads if you want to achieve the same effect. For more information, see [Passing Parameters](/dotnet/articles/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
 ## Example  
  The following sample generates CS0241. In addition, the sample shows how to simulate, with overloading, a method with default arguments.  

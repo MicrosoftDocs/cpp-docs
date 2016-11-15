@@ -2,7 +2,6 @@
 title: "_CrtGetReportHook | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -68,7 +67,7 @@ _CRT_REPORT_HOOK _CrtGetReportHook( void );
 ## Remarks  
  `_CrtGetReportHook` allows an application to retrieve the current reporting function for the C run-time debug library reporting process.  
   
- For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug Hook Function Writing](/visual-studio/debugger/debug-hook-function-writing).  
+ For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug Hook Function Writing](/visualstudio/debugger/debug-hook-function-writing).  
   
 ## Requirements  
   
@@ -85,7 +84,7 @@ _CRT_REPORT_HOOK _CrtGetReportHook( void );
  For a sample of how to use `_CrtSetReportHook`, see [report](http://msdn.microsoft.com/en-us/f6e08c30-6bd9-459a-830a-56deec0d2051).  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   

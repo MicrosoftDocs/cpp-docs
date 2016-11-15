@@ -2,7 +2,6 @@
 title: "Type parameter &#39;&lt;typeparametername&gt;&#39; can only have one constraint that is a class | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,4 +48,4 @@ A constraint list includes more than one class.
 -   You might be able to define additional type parameters to accommodate the class or classes that you could not include in this constraint list.  
   
 ## See Also  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)

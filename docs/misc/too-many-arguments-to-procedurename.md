@@ -2,7 +2,6 @@
 title: "Too many arguments to &#39;&lt;procedurename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ The number of arguments supplied in a procedure call exceeds the number of argum
 -   Consult the definition of the procedure, and remove the extra arguments from the call.  
   
 ## See Also  
- [Procedure Parameters and Arguments](/dotnet/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)
+ [Procedure Parameters and Arguments](/dotnet/articles/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)

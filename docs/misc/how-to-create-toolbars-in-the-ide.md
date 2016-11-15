@@ -2,7 +2,6 @@
 title: "How to: Create Toolbars in the IDE | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -33,4 +32,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Create Toolbars in the IDE
-This content has been removed. For information, see [Adding a Toolbar](/visual-studio/extensibility/adding-a-toolbar).
+This content has been removed. For information, see [Adding a Toolbar](/visualstudio/extensibility/adding-a-toolbar).

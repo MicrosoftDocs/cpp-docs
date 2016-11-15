@@ -2,7 +2,6 @@
 title: "Compiler Warning (level 3) CS0659 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,7 +44,7 @@ translation.priority.mt:
   
 -   <xref:System.Collections.Hashtable>.  
   
--   [Equality Operators](../Topic/Equality%20Operators.md)  
+-   [Equality Operators](http://msdn.microsoft.com/Library/bc496a91-fefb-4ce0-ab4c-61f09964119a)  
   
 -   [NIB: Implementing the Equals Method](http://msdn.microsoft.com/en-us/30f28aaf-8b9e-46cd-a746-58a12473af2c)  
   

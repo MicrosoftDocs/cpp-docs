@@ -2,7 +2,6 @@
 title: "Statement is not valid in an interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ An invalid statement was encountered in the interface.
 -   Verify that statements in the interface define elements, but do not provide implementation.  
   
 ## See Also  
- [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)   
- [Implements](/dotnet/visual-basic/language-reference/statements/implements-clause)
+ [Interfaces](/dotnet/articles/visual-basic/programming-guide/language-features/interfaces/index)   
+ [Implements](/dotnet/articles/visual-basic/language-reference/statements/implements-clause)

@@ -2,7 +2,6 @@
 title: "Syntax error in cast operator; two arguments separated by comma are required | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,10 +45,10 @@ An expression uses the `CType` conversion function or the `DirectCast` or `TryCa
   
 -   Supply both arguments as required for the conversion.  
   
--   If you intend to use one of the specific [Type Conversion Functions](/dotnet/visual-basic/language-reference/functions/type-conversion-functions) such as `CString`, you must use that function name instead of `CType`. Then only one argument is required.  
+-   If you intend to use one of the specific [Type Conversion Functions](/dotnet/articles/visual-basic/language-reference/functions/type-conversion-functions) such as `CString`, you must use that function name instead of `CType`. Then only one argument is required.  
   
 ## See Also  
- [CType Function](/dotnet/visual-basic/language-reference/functions/ctype-function)   
- [DirectCast Operator](/dotnet/visual-basic/language-reference/operators/directcast-operator)   
- [TryCast Operator](/dotnet/visual-basic/language-reference/operators/trycast-operator)   
- [Type Conversion Functions](/dotnet/visual-basic/language-reference/functions/type-conversion-functions)
+ [CType Function](/dotnet/articles/visual-basic/language-reference/functions/ctype-function)   
+ [DirectCast Operator](/dotnet/articles/visual-basic/language-reference/operators/directcast-operator)   
+ [TryCast Operator](/dotnet/articles/visual-basic/language-reference/operators/trycast-operator)   
+ [Type Conversion Functions](/dotnet/articles/visual-basic/language-reference/functions/type-conversion-functions)

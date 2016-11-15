@@ -2,7 +2,6 @@
 title: "&#39;&gt;&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ The syntax for the specified code is incorrect. This error often indicates that 
 ## See Also  
  [NOT IN BUILD: Attributes in Visual Basic](http://msdn.microsoft.com/en-us/620bfc0e-4582-4c8b-8432-ebc5c3dccc22)   
  [NotInBuild:Declaration Statements in Visual Basic](http://msdn.microsoft.com/en-us/81f3c398-f45c-4d95-80bf-aa39d1a0fb30)   
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)

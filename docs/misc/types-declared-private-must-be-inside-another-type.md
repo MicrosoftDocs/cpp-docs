@@ -2,7 +2,6 @@
 title: "Types declared &#39;Private&#39; must be inside another type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ The `Private` modifier was used on a type not inside another type.
 2.  Declare the type within another type.  
   
 ## See Also  
- [Private](/dotnet/visual-basic/language-reference/modifiers/private)
+ [Private](/dotnet/articles/visual-basic/language-reference/modifiers/private)

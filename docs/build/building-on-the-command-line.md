@@ -2,7 +2,6 @@
 title: "Building on the Command Line | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -60,7 +59,7 @@ You can build C and C++ applications on the command line by using tools that are
  [MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)  
  Use MSBuild (msbuild.exe) to build [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] projects and [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] solutions. This is equivalent to running the **Build** project or **Build Solution** command in the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] IDE.  
   
- [DEVENV](/visual-studio/ide/reference/devenv-command-line-switches)  
+ [DEVENV](/visualstudio/ide/reference/devenv-command-line-switches)  
  Use DEVENV (devenv.exe) combined with a command-line switch—for example, **/Build** or **/Clean**—to perform certain build commands without displaying the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] IDE.  
   
  [NMAKE](../build/nmake-reference.md)  

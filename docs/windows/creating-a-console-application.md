@@ -2,7 +2,6 @@
 title: "Creating a Console Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -53,7 +52,7 @@ The easiest way to create a Win32 console application is to use the Win32 Applic
 4.  Click **Finish** to close the wizard, and your newly created project opens in **Solution Explorer**.  
   
 ## See Also  
- [Console Projects](../Topic/Debugging%20Preparation:%20Console%20Projects.md)   
+ [Console Projects](http://msdn.microsoft.com/Library/9641f1d9-2d5a-48b1-8731-6525e8f67892)   
  [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)   
  [Property Pages](../ide/property-pages-visual-cpp.md)   
  [Deploying Applications](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)

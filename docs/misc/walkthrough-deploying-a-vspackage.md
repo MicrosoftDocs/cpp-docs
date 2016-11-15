@@ -2,7 +2,6 @@
 title: "Walkthrough: Deploying a VSPackage | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -31,4 +30,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Walkthrough: Deploying a VSPackage
-Starting with Visual Studio 2010, you should use VSIX technology to deploy your VSPackage. For more information about VSIX, see [Shipping Visual Studio Extensions](/visual-studio/extensibility/shipping-visual-studio-extensions).
+Starting with Visual Studio 2010, you should use VSIX technology to deploy your VSPackage. For more information about VSIX, see [Shipping Visual Studio Extensions](/visualstudio/extensibility/shipping-visual-studio-extensions).

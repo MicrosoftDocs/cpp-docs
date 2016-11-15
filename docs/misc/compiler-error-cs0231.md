@@ -2,7 +2,6 @@
 title: "Compiler Error CS0231 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0231
 A params parameter must be the last parameter in a formal parameter list.  
   
- The [params](/dotnet/csharp/language-reference/keywords/params) parameter supports a variable numbers of arguments and must be after all other parameters. For more information, see [Methods](/dotnet/csharp/programming-guide/classes-and-structs/methods).  
+ The [params](/dotnet/articles/csharp/language-reference/keywords/params) parameter supports a variable numbers of arguments and must be after all other parameters. For more information, see [Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/methods).  
   
  The following sample generates CS0231:  
   

@@ -2,7 +2,6 @@
 title: "&lt;name&gt; is not a valid project name. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ This error generally occurs when the `File.NewProject` command is issued from th
      Re-type the command, omitting the project name.  
   
 ## See Also  
- [Command Window](/visual-studio/ide/reference/command-window)
+ [Command Window](/visualstudio/ide/reference/command-window)

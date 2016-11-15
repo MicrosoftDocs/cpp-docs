@@ -2,7 +2,6 @@
 title: "Troubleshooting Exceptions: System.ComponentModel.Win32Exception | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,4 +41,4 @@ The exception that is thrown for a Win32 error code.
 ## See Also  
  <xref:System.ComponentModel.Win32Exception>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Where Can I Look Up Win32 Error Codes?](/visual-studio/debugger/where-can-i-look-up-win32-error-codes-q)
+ [Where Can I Look Up Win32 Error Codes?](/visualstudio/debugger/where-can-i-look-up-win32-error-codes-q)

@@ -2,7 +2,6 @@
 title: "Classes cannot be declared &#39;&lt;specifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ You have attempted to declare a `Class` or `Module` with an invalid specifier.
 -   Remove the specifier.  
   
 ## See Also  
- [Class Statement](/dotnet/visual-basic/language-reference/statements/class-statement)   
- [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)
+ [Class Statement](/dotnet/articles/visual-basic/language-reference/statements/class-statement)   
+ [Module Statement](/dotnet/articles/visual-basic/language-reference/statements/module-statement)

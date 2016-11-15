@@ -2,7 +2,6 @@
 title: "Multithreading: Creating Worker Threads | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,7 +50,7 @@ A worker thread is commonly used to handle background tasks that the user should
  Creating a worker thread is a relatively simple task. Only two steps are required to get your thread running: implementing the controlling function and starting the thread. It is not necessary to derive a class from [CWinThread](../mfc/reference/cwinthread-class.md). You can derive a class if you need a special version of `CWinThread`, but it is not required for most simple worker threads. You can use `CWinThread` without modification.  
   
 ##  <a name="_core_starting_the_thread"></a> Starting the Thread  
- There are two overloaded versions of `AfxBeginThread`: one that can only create worker threads, and one that can create both user-interface threads and worker threads. To begin execution of your worker thread using the first overload, call [AfxBeginThread](../Topic/AfxBeginThread.md), providing the following information:  
+ There are two overloaded versions of `AfxBeginThread`: one that can only create worker threads, and one that can create both user-interface threads and worker threads. To begin execution of your worker thread using the first overload, call [AfxBeginThread](http://msdn.microsoft.com/Library/e9e8684d-24f7-4599-8fdf-1f4f560a753b), providing the following information:  
   
 -   The address of the controlling function.  
   

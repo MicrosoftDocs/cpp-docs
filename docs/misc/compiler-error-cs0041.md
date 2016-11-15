@@ -2,7 +2,6 @@
 title: "Compiler Error CS0041 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS0041
 The fully qualified name for 'type' is too long for debug information. Compile without '/debug' option.  
   
- This error can occur when using the [/debug](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) compiler option. If you encounter this error, try to delete the PDB files in the bin directory and recompiling. If you are still encountering this error, you may have to repair or reinstall [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].
+ This error can occur when using the [/debug](/dotnet/articles/csharp/language-reference/compiler-options/debug-compiler-option) compiler option. If you encounter this error, try to delete the PDB files in the bin directory and recompiling. If you are still encountering this error, you may have to repair or reinstall [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].

@@ -2,7 +2,6 @@
 title: "Character set is missing &#39;]&#39;. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,6 +42,6 @@ This error generally occurs when the closing bracket (`]`) is missing for a regu
 2.  To match a character set, enter the missing bracket `]`.  
   
 ## See Also  
- [Using Regular Expressions in Visual Studio](/visual-studio/ide/using-regular-expressions-in-visual-studio)   
+ [Using Regular Expressions in Visual Studio](/visualstudio/ide/using-regular-expressions-in-visual-studio)   
  [NIB: Find and Replace, Quick Find](http://msdn.microsoft.com/en-us/dad03582-4931-4893-83ba-84b37f5b1600)   
- [Find in Files](/visual-studio/ide/find-in-files)
+ [Find in Files](/visualstudio/ide/find-in-files)

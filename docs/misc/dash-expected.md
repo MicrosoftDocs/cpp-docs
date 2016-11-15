@@ -2,7 +2,6 @@
 title: "&#39;-&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ The syntax for this line is incorrect.
 -   Check the syntax of the code that raised this error.  
   
 ## See Also  
- [Program Structure and Code Conventions](/dotnet/visual-basic/programming-guide/program-structure/program-structure-and-code-conventions)
+ [Program Structure and Code Conventions](/dotnet/articles/visual-basic/programming-guide/program-structure/program-structure-and-code-conventions)

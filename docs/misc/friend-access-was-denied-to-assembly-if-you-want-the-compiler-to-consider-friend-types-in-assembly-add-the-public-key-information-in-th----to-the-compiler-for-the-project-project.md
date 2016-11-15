@@ -2,7 +2,6 @@
 title: "Friend access was denied to &lt;assembly&gt;. If you want the compiler to consider friend types in &lt;assembly&gt;, add the public key information in the project settings or through a command-line switch to the compiler for the project &lt;project&gt;. | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ translation.priority.mt:
 ## See Also  
  <xref:System.Reflection.AssemblyName>   
  [NOT IN BUILD: Friend Assemblies (Visual Basic)](http://msdn.microsoft.com/en-us/80e7a33a-ca91-450b-a00e-c5a7986e228c)   
- [Visual Basic Command-Line Compiler](/dotnet/visual-basic/reference/command-line-compiler/index)
+ [Visual Basic Command-Line Compiler](/dotnet/articles/visual-basic/reference/command-line-compiler/index)

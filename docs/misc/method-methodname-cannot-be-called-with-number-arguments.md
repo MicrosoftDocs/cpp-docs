@@ -2,7 +2,6 @@
 title: "Method &#39;&lt;methodname&gt;&#39; cannot be called with &lt;number&gt; arguments | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,4 +43,4 @@ A method call contains the wrong number of arguments.
 3.  Adjust the number of arguments if the two numbers do not agree.  
   
 ## See Also  
- [Passing Arguments by Value and by Reference](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)
+ [Passing Arguments by Value and by Reference](/dotnet/articles/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)

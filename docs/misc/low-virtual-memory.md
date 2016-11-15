@@ -2,7 +2,6 @@
 title: "Low Virtual Memory | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -75,4 +74,4 @@ This message appears when virtual memory is low and [!INCLUDE[vsprvs](../assembl
  Even after you increase your virtual memory allocation to 3 GB, this error might recur because any single application can still use only 2 GB of virtual memory. If this error continues to appear, reduce the size of your solution, and then restart [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)]. You can reduce your solution either by refactoring it to remove projects that are infrequently used or by unloading projects that aren’t needed. If the error occurs when you build your solution, try building it at a command prompt.  
   
 ## See Also  
- [Resources for Troubleshooting IDE Errors](/visual-studio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)
+ [Resources for Troubleshooting IDE Errors](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)

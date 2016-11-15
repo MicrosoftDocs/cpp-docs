@@ -2,7 +2,6 @@
 title: "The referenced component &#39;component&#39; could not be found. &lt;reason&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,7 +43,7 @@ The project system could not resolve a particular reference. Double-clicking thi
   
  When this error occurrs, the project may not build.  
   
- For more information on resolving assembly references, see [Troubleshooting Broken References](/visual-studio/ide/troubleshooting-broken-references).  
+ For more information on resolving assembly references, see [Troubleshooting Broken References](/visualstudio/ide/troubleshooting-broken-references).  
   
 ## See Also  
- [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)

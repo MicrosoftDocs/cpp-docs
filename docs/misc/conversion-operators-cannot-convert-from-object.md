@@ -2,7 +2,6 @@
 title: "Conversion operators cannot convert from Object | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Conversion operators cannot convert from Object
-A conversion operator is declared with a parameter of the [Object Data Type](/dotnet/visual-basic/language-reference/data-types/object-data-type).  
+A conversion operator is declared with a parameter of the [Object Data Type](/dotnet/articles/visual-basic/language-reference/data-types/object-data-type).  
   
  At compile time, [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] considers a predefined conversion to exist from any reference type to any type in its inheritance hierarchy, that is, any type from which it derives or which derives from it. `Object` is the universal data type in the [!INCLUDE[dnprdnshort](../error-messages/tool-errors/includes/dnprdnshort_md.md)], so every type derives from `Object`.  
   
@@ -49,8 +48,8 @@ A conversion operator is declared with a parameter of the [Object Data Type](/do
 -   Remove this operator definition entirely. It is already predefined.  
   
 ## See Also  
- [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
- [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)   
- [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
- [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)   
+ [Operator Procedures](/dotnet/articles/visual-basic/language-reference/procedures/operator-procedures)   
+ [Operator Statement](/dotnet/articles/visual-basic/language-reference/statements/operator-statement)   
+ [How to: Define an Operator](http://msdn.microsoft.com/Library/d4b0e253-092a-4e6e-9fe2-01f562140a29)   
+ [How to: Define a Conversion Operator](http://msdn.microsoft.com/Library/54203dfa-c24b-463f-9942-d5153e89e762)   
  [Object as the Universal Data Type (Visual Basic)](http://msdn.microsoft.com/en-us/5315bf21-2b22-45ab-98cd-5631dffbcb2f)

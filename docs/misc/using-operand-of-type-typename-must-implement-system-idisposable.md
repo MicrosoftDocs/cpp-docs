@@ -2,7 +2,6 @@
 title: "&#39;Using&#39; operand of type &#39;&lt;typename&gt;&#39; must implement System.IDisposable | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,5 +47,5 @@ A `Using` statement specifies a resource of a type that does not implement the <
   
 ## See Also  
  <xref:System.IDisposable>   
- [Using Statement](/dotnet/visual-basic/language-reference/statements/using-statement)   
- [How to: Dispose of a System Resource](../Topic/How%20to:%20Dispose%20of%20a%20System%20Resource%20\(Visual%20Basic\).md)
+ [Using Statement](/dotnet/articles/visual-basic/language-reference/statements/using-statement)   
+ [How to: Dispose of a System Resource](http://msdn.microsoft.com/Library/8be2b239-8090-419b-8e7e-bcaa75b0ecc8)

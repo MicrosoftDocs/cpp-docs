@@ -2,7 +2,6 @@
 title: "Several Documents About Solutions and Projects Are Available | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,6 +39,6 @@ translation.priority.ht:
 |[NIB:How to: Add New Project Items](http://msdn.microsoft.com/en-us/63d3e16b-de6e-4bb5-a0e3-ecec762201ce)|Describes how to add new items to a project. Typical project items are HTML pages, class files, Web services, ASP.NET pages, dataset files, and style sheets.|  
 |[NIB How to: Set Startup Projects](http://msdn.microsoft.com/en-us/31465836-0911-48db-a5d9-e456b635e970)|Describes how to set projects to be the first built and the first run when the application is deployed.|  
 |[NIB:How to: Unload and Reload Projects](http://msdn.microsoft.com/en-us/abc0155b-8fcb-4ffc-95b6-698518a7100b)|Describes how to make projects in a solution temporarily unavailable.|  
-|[Solutions and Projects](/visual-studio/ide/solutions-and-projects-in-visual-studio)|Describes the structure of a [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] solution.|  
-|[Solutions and Projects](/visual-studio/ide/solutions-and-projects-in-visual-studio)|Links to documents that describe common tasks for working with solutions and projects.|  
+|[Solutions and Projects](/visualstudio/ide/solutions-and-projects-in-visual-studio)|Describes the structure of a [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] solution.|  
+|[Solutions and Projects](/visualstudio/ide/solutions-and-projects-in-visual-studio)|Links to documents that describe common tasks for working with solutions and projects.|  
 |[Office Projects in the Visual Studio Environment](/office-dev/office-dev/office-projects-in-the-visual-studio-environment)|Describes the items in Office projects that are displayed in **Solution Explorer**, such as the document, workbook, or sheets in a document-level project.|

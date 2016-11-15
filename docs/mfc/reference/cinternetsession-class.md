@@ -2,7 +2,6 @@
 title: "CInternetSession Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -79,7 +78,7 @@ class CInternetSession : public CObject
 ## Remarks  
  If your Internet connection must be maintained for the duration of an application, you can create a `CInternetSession` member of the class [CWinApp](../../mfc/reference/cwinapp-class.md).  
   
- Once you have established an Internet session, you can call [OpenURL](#cinternetsession__openurl). `CInternetSession` then parses the URL for you by calling the global function [AfxParseURL](../Topic/AfxParseURL.md). Regardless of its protocol type, `CInternetSession` interprets the URL and manages it for you. It can handle requests for local files identified with the URL resource "file://". `OpenURL` will return a pointer to a [CStdioFile](../../mfc/reference/cstdiofile-class.md) object if the name you pass it is a local file.  
+ Once you have established an Internet session, you can call [OpenURL](#cinternetsession__openurl). `CInternetSession` then parses the URL for you by calling the global function [AfxParseURL](http://msdn.microsoft.com/Library/505c717e-aa52-4106-8522-eedff3d9bbae). Regardless of its protocol type, `CInternetSession` interprets the URL and manages it for you. It can handle requests for local files identified with the URL resource "file://". `OpenURL` will return a pointer to a [CStdioFile](../../mfc/reference/cstdiofile-class.md) object if the name you pass it is a local file.  
   
  If you open a URL on an Internet server using `OpenURL`, you can read information from the site. If you want to perform service-specific (for example, HTTP, FTP, or gopher) actions on files located on a server, you must establish the appropriate connection with that server. To open a particular kind of connection directly to a particular service, use one of the following member functions:  
   
@@ -153,7 +152,7 @@ CInternetSession(
 ### Remarks  
  **CInternetSession** is the first Internet function called by an application. It initializes internal data structures and prepares for future calls from the application.  
   
- If no Internet connection can be opened, `CInternetSession` throws an [AfxThrowInternetException](../Topic/AfxThrowInternetException.md).  
+ If no Internet connection can be opened, `CInternetSession` throws an [AfxThrowInternetException](http://msdn.microsoft.com/Library/c9645b10-9541-48b2-8b0c-94ca33fed3cb).  
   
 ### Example  
   See the example for [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md).  

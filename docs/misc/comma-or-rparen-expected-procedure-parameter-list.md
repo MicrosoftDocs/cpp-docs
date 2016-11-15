@@ -2,7 +2,6 @@
 title: "Comma or &#39;)&#39; expected (Procedure Parameter List) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ A parameter list contains an unexpected element. Use commas (`,`) to separate pa
 -   Add a comma and continue the type parameter list, or add a closing parenthesis character to terminate the list.  
   
 ## See Also  
- [How to: Define a Parameter for a Procedure](../Topic/How%20to:%20Define%20a%20Parameter%20for%20a%20Procedure%20\(Visual%20Basic\).md)   
- [Parameter List](/dotnet/visual-basic/language-reference/statements/parameter-list)
+ [How to: Define a Parameter for a Procedure](http://msdn.microsoft.com/Library/7962808d-407e-4e84-984e-43e9857c53c9)   
+ [Parameter List](/dotnet/articles/visual-basic/language-reference/statements/parameter-list)

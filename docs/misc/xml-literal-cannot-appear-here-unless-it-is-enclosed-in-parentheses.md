@@ -2,7 +2,6 @@
 title: "XML literal cannot appear here unless it is enclosed in parentheses | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -68,6 +67,6 @@ Dim queryResult = From element In elements _
     ```  
   
 ## See Also  
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML Axis Properties](/dotnet/visual-basic/language-reference/xml-axis/xml-axis-properties)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML Axis Properties](/dotnet/articles/visual-basic/language-reference/xml-axis/xml-axis-properties)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

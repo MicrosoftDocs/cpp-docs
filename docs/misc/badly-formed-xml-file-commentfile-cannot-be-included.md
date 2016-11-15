@@ -2,7 +2,6 @@
 title: "Badly formed XML. File &#39;&lt;commentfile&gt;&#39; cannot be included | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ An `<include>` tag in one of the XML comments refers to a file that does not exi
 2.  Verify that the XML in the file is valid.  
   
 ## See Also  
- [\<include>](../Topic/%3Cinclude%3E%20\(Visual%20Basic\).md)
+ [\<include>](http://msdn.microsoft.com/Library/ba8e9173-82cd-460b-8938-a075a2dfb36d)

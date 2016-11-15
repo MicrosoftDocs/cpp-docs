@@ -2,7 +2,6 @@
 title: "File is currently in use and cannot be overwritten. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ The current file cannot be saved. This error generally occurs when you attempt t
   
 ## See Also  
  [NIB: Save File As Dialog Box](http://msdn.microsoft.com/en-us/22380a20-2858-4391-b2f2-80c6bce64f14)   
- [Solutions and Projects](/visual-studio/ide/solutions-and-projects-in-visual-studio)
+ [Solutions and Projects](/visualstudio/ide/solutions-and-projects-in-visual-studio)

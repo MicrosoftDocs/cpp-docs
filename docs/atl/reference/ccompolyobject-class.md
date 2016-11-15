@@ -2,7 +2,6 @@
 title: "CComPolyObject Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -236,5 +235,5 @@ STDMETHOD_(ULONG, Release)();
   
 ## See Also  
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
- [DECLARE_POLY_AGGREGATABLE](../Topic/DECLARE_POLY_AGGREGATABLE.md)   
+ [DECLARE_POLY_AGGREGATABLE](http://msdn.microsoft.com/Library/7569e738-cfbc-4404-ba1d-78dcefa3bdb3)   
  [Class Overview](../../atl/atl-class-overview.md)

@@ -2,7 +2,6 @@
 title: "Security Best Practices for C++ | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -56,7 +55,7 @@ This article contains information about security tools and practices. Using them
  These compiler and linker options enable Data Execution Prevention (DEP) compatibility. DEP guards the CPU against the execution of non-code pages.  
   
  [/analyze (Code Analysis)](../build/reference/analyze-code-analysis.md)  
- This compiler option activates code analysis that reports potential security issues such as buffer overrun, un-initialized memory, null pointer dereferencing, and memory leaks. By default, this option is off. For more information, see [Code Analysis for C/C++ Overview](/visual-studio/code-quality/code-analysis-for-c-cpp-overview).  
+ This compiler option activates code analysis that reports potential security issues such as buffer overrun, un-initialized memory, null pointer dereferencing, and memory leaks. By default, this option is off. For more information, see [Code Analysis for C/C++ Overview](/visualstudio/code-quality/code-analysis-for-c-cpp-overview).  
   
  [/DYNAMICBASE (Use address space layout randomization)](../build/reference/dynamicbase-use-address-space-layout-randomization.md)  
  This linker option enables the building of an executable image that can be loaded at different locations in memory at the beginning of execution. This option also makes the stack location in memory much less predictable.  
@@ -110,5 +109,5 @@ This article contains information about security tools and practices. Using them
   
 ## See Also  
  <xref:System.Security>   
- [Security](../Topic/Security%20in%20the%20.NET%20Framework.md)   
+ [Security](http://msdn.microsoft.com/Library/9a9621d7-8883-4a4f-a874-65e8e09e20a6)   
  [How User Account Control (UAC) Affects Your Application](../top/how-user-account-control-uac-affects-your-application.md)

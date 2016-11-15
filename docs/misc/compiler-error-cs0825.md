@@ -2,7 +2,6 @@
 title: "Compiler Error CS0825 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -63,4 +62,4 @@ class Test
 ```  
   
 ## See Also  
- [Implicitly Typed Local Variables](/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables)
+ [Implicitly Typed Local Variables](/dotnet/articles/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables)

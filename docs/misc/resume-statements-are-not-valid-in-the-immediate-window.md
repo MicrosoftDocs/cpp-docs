@@ -2,7 +2,6 @@
 title: "&#39;Resume&#39; statements are not valid in the Immediate window | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,4 +45,4 @@ Resume statements can only be used in source code.
   
 ## See Also  
  [Resume - delete](http://msdn.microsoft.com/en-us/fc82a786-a342-49d0-82a3-63f33e28f00f)   
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

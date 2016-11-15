@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB3117 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +45,7 @@ translation.priority.mt:
 ## See Also  
  <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser%2A>   
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest.TargetFrameworkVersion%2A>   
- [Publish Page, Project Designer](/visual-studio/ide/reference/publish-page-project-designer)   
+ [Publish Page, Project Designer](/visualstudio/ide/reference/publish-page-project-designer)   
  [MSBuild Error MSB3116](../misc/msbuild-error-msb3116.md)   
  [MSBuild Error MSB3118](../misc/msbuild-error-msb3118.md)   
  [MSBuild Error MSB3174](../misc/msbuild-error-msb3174.md)   

@@ -2,7 +2,6 @@
 title: "Walkthrough: Extending Managed VSPackages By Using Automation | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +35,7 @@ translation.priority.mt:
 This walkthrough illustrates how to use automation to create a managed VSPackage that manipulates the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] integrated development environment (IDE). You create a sample managed VSPackage and then use automation methods in the resulting VSPackage to display [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] properties in the **Output** window.  
   
 ## Prerequisites  
- To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](/visual-studio/extensibility/visual-studio-sdk).  
+ To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](/visualstudio/extensibility/visual-studio-sdk).  
   
 ## Locations for the Visual Studio Package Project Template  
  The Visual Studio Package project template can be found in three different locations in the **New Project** dialog:  
@@ -108,4 +107,4 @@ This walkthrough illustrates how to use automation to create a managed VSPackage
      For more information about automation samples, see [Automation Samples for Visual Studio](http://www.microsoft.com/downloads/details.aspx?familyid=3ff9c915-30e5-430e-95b3-621dccd25150&displaylang=en).  
   
 ## See Also  
- [Extending the Visual Studio Environment](../Topic/Extending%20the%20Visual%20Studio%20Environment.md)
+ [Extending the Visual Studio Environment](http://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792)

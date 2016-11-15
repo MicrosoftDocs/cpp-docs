@@ -2,7 +2,6 @@
 title: "Project &#39;&lt;projectname&gt;&#39; requires a reference to version &#39;&lt;versionnumber1&gt;&#39; of assembly &#39;&lt;assemblyname&gt;&#39;, but references version &#39;&lt;versionnumber2&gt;&#39; of assembly &#39;&lt;assemblyname&gt;&#39; (Visual Basic Error) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,8 +46,8 @@ A project makes an indirect reference to an assembly that is defined elsewhere, 
 -   Remove the indirect reference to the earlier version of the assembly, and use the direct reference to the later version.  
   
 ## See Also  
- [Assemblies in the Common Language Runtime](../Topic/Assemblies%20in%20the%20Common%20Language%20Runtime.md)   
+ [Assemblies in the Common Language Runtime](http://msdn.microsoft.com/Library/2cfebe19-7436-49f1-bd99-3c4019f0b676)   
  [NIB: Referencing Namespaces and Components](http://msdn.microsoft.com/en-us/568fa759-796b-44cd-bf5e-1cf8de6e38fd)   
- [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)   
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)   
  [NIB: Managing References](http://msdn.microsoft.com/en-us/910912ce-0dc9-4569-9274-32c44a20cb2c)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

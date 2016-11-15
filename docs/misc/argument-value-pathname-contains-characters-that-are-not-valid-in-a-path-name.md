@@ -2,7 +2,6 @@
 title: "Argument value &#39;&lt;pathname&gt;&#39; contains characters that are not valid in a path name | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,4 +40,4 @@ A path name contains one or more characters that are not valid.
   
 ## See Also  
  [My.Application.Info.DirectoryPath Property](http://msdn.microsoft.com/en-us/660586b9-638e-42a7-ae21-5eee34a3fccf)   
- [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)
+ [How to: Parse File Paths](http://msdn.microsoft.com/Library/c1bd99c9-8160-456a-b5ab-60a49139b923)

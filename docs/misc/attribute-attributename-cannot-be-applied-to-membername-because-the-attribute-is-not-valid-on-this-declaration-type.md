@@ -2,7 +2,6 @@
 title: "Attribute &#39;&lt;attributename&gt;&#39; cannot be applied to &#39;&lt;membername&gt;&#39; because the attribute is not valid on this declaration type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

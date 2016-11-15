@@ -2,7 +2,6 @@
 title: "&#39;As&#39;, comma or &#39;)&#39; expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ The type parameter that has been supplied is lacking an `As`, comma (`,`), or cl
 -   Supply the missing `As`, comma, or closing parenthesis.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)   
- [Troubleshooting Data Types](/dotnet/visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)   
+ [Troubleshooting Data Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types)

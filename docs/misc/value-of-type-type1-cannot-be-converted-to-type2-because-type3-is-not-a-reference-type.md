@@ -2,7 +2,6 @@
 title: "Value of type &#39;&lt;type1&gt;&#39; cannot be converted to &#39;&lt;type2&gt;&#39; because &#39;&lt;type3&gt;&#39; is not a reference type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ A statement attempts to convert an array type to another array type where the da
 -   Check the data types of the elements of both arrays to determine the source of the error.  
   
 ## See Also  
- [Type Conversions in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/type-conversions)   
- [Array Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/array-conversions)
+ [Type Conversions in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/type-conversions)   
+ [Array Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/array-conversions)

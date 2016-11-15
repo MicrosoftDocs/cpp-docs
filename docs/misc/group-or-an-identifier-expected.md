@@ -2,7 +2,6 @@
 title: "&#39;Group&#39; or an identifier expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -52,6 +51,6 @@ The `Into` portion of a `Group By` or `Group Join` clause does not include the `
     ```  
   
 ## See Also  
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [Group By Clause](/dotnet/visual-basic/language-reference/queries/group-by-clause)   
- [Group Join Clause](/dotnet/visual-basic/language-reference/queries/group-join-clause)
+ [Introduction to LINQ in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [Group By Clause](/dotnet/articles/visual-basic/language-reference/queries/group-by-clause)   
+ [Group Join Clause](/dotnet/articles/visual-basic/language-reference/queries/group-join-clause)

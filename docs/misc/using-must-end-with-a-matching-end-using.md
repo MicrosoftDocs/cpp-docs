@@ -2,7 +2,6 @@
 title: "&#39;Using&#39; must end with a matching &#39;End Using&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,5 +48,5 @@ A `Using` statement occurs without a corresponding `End Using` statement.
 2.  Add an `End Using` statement to the end of the `Using` block.  
   
 ## See Also  
- [Using Statement](/dotnet/visual-basic/language-reference/statements/using-statement)   
- [How to: Dispose of a System Resource](../Topic/How%20to:%20Dispose%20of%20a%20System%20Resource%20\(Visual%20Basic\).md)
+ [Using Statement](/dotnet/articles/visual-basic/language-reference/statements/using-statement)   
+ [How to: Dispose of a System Resource](http://msdn.microsoft.com/Library/8be2b239-8090-419b-8e7e-bcaa75b0ecc8)

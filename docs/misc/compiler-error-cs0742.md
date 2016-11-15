@@ -2,7 +2,6 @@
 title: "Compiler Error CS0742 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,7 +42,7 @@ A query body must end with a select clause or a group clause
   
 ### To correct this error  
   
-1.  Add a [select clause](/dotnet/csharp/language-reference/keywords/select-clause) or [group clause](/dotnet/csharp/language-reference/keywords/group-clause) to the query.  
+1.  Add a [select clause](/dotnet/articles/csharp/language-reference/keywords/select-clause) or [group clause](/dotnet/articles/csharp/language-reference/keywords/group-clause) to the query.  
   
 ## Example  
  The following code generates CS0742:  
@@ -62,7 +61,7 @@ public class Test
 }  
 ```  
   
- If the `group` clause uses the [into](/dotnet/csharp/language-reference/keywords/into) keyword to store the results of the grouping into a temporary identifier, it cannot be the last clause in a query. A `select` or second `group` clause is still required.  
+ If the `group` clause uses the [into](/dotnet/articles/csharp/language-reference/keywords/into) keyword to store the results of the grouping into a temporary identifier, it cannot be the last clause in a query. A `select` or second `group` clause is still required.  
   
 ## See Also  
- [LINQ Query Expressions](/dotnet/csharp/programming-guide/linq-query-expressions/index)
+ [LINQ Query Expressions](/dotnet/articles/csharp/programming-guide/linq-query-expressions/index)

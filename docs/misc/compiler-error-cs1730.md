@@ -2,7 +2,6 @@
 title: "Compiler Error CS1730 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -57,4 +56,4 @@ class Test
 ```  
   
 ## See Also  
- [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)
+ [Attributes](http://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

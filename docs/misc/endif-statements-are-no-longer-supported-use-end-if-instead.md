@@ -2,7 +2,6 @@
 title: "&#39;EndIf&#39; statements are no longer supported; use &#39;End If&#39; instead | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ The `EndIf` statement is no longer supported.
 -   Use `End If` to terminate `If` statements.  
   
 ## See Also  
- [If...Then...Else Statement](/dotnet/visual-basic/language-reference/statements/if-then-else-statement)
+ [If...Then...Else Statement](/dotnet/articles/visual-basic/language-reference/statements/if-then-else-statement)

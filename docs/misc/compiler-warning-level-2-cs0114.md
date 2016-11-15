@@ -2,7 +2,6 @@
 title: "Compiler Warning (level 2) CS0114 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,7 +40,7 @@ translation.priority.mt:
   
  A declaration in a class conflicts with a declaration in a base class such that the base class member will be hidden.  
   
- For more information, see [base](/dotnet/csharp/language-reference/keywords/base).  
+ For more information, see [base](/dotnet/articles/csharp/language-reference/keywords/base).  
   
  The following sample generates CS0114:  
   

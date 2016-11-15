@@ -2,7 +2,6 @@
 title: "Cast from type &#39;&lt;typename1&gt;&#39; to type &#39;&lt;typename2&gt;&#39; is not valid | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,4 +39,4 @@ An attempt to convert a variable from one type to another is not valid.
 1.  Check the types involved in the conversion and make sure you are attempting to convert to a meaningful type.  
   
 ## See Also  
- [Type Conversions in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/type-conversions)
+ [Type Conversions in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/type-conversions)

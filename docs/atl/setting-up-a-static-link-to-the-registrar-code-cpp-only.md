@@ -2,7 +2,6 @@
 title: "Setting Up a Static Link to the Registrar Code (C++ Only) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,7 +37,7 @@ translation.priority.mt:
 # Setting Up a Static Link to the Registrar Code (C++ Only)
 C++ clients can create a static link to the Registrar's code. Static linking of the Registrar's parser adds approximately 5K to a release build.  
   
- The simplest way to set up static linking assumes you have specified [DECLARE_REGISTRY_RESOURCEID](../Topic/DECLARE_REGISTRY_RESOURCEID.md) in your object's declaration. (This is the default specification used by the ATL.)  
+ The simplest way to set up static linking assumes you have specified [DECLARE_REGISTRY_RESOURCEID](http://msdn.microsoft.com/Library/65bf3576-5396-416e-ba48-e14b3236c49b) in your object's declaration. (This is the default specification used by the ATL.)  
   
 ### To create a static link using DECLARE_REGISTRY_RESOURCEID  
   

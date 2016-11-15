@@ -2,7 +2,6 @@
 title: "partial_sort (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,7 +48,7 @@ template<class _RanIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `partial_sort`. For more information, see [partial_sort](../Topic/partial_sort.md).  
+ This function behaves the same as the STL function `partial_sort`. For more information, see [partial_sort](http://msdn.microsoft.com/Library/327453e4-16c0-423c-bc1a-abea8ca63157).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

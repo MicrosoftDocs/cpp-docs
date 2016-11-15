@@ -2,7 +2,6 @@
 title: "Too many arguments to extension method &#39;&lt;methodname&gt;&#39; defined in &#39;&lt;typename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ The number of arguments supplied in a call to an extension method exceeds the nu
 -   Consult the definition of the extension method, and remove the extra arguments from the call.  
   
 ## See Also  
- [Procedure Parameters and Arguments](/dotnet/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)   
- [Extension Methods](/dotnet/visual-basic/language-reference/procedures/extension-methods)
+ [Procedure Parameters and Arguments](/dotnet/articles/visual-basic/language-reference/procedures/procedure-parameters-and-arguments)   
+ [Extension Methods](/dotnet/articles/visual-basic/language-reference/procedures/extension-methods)

@@ -2,7 +2,6 @@
 title: "Troubleshooting Exceptions: System.Runtime.InteropServices.COMException | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,7 +43,7 @@ A <xref:System.Runtime.InteropServices.COMException> exception is thrown when an
   
 ## Associated Tips  
  **Check the ErrorCode property of the exception to determine the HRESULT returned by the COM object**  
- When the runtime encounters an unfamiliar HRESULT, it throws a <xref:System.Runtime.InteropServices.COMException> exception, which includes a public `ErrorCode` property that contains the HRESULT returned by the call. If an error message is available to the runtime, the message is returned to the caller. However, if the COM component developer fails to include an error message, the runtime returns the eight-digit HRESULT in place of a message string. Having an HRESULT allows the caller to determine the cause of the exception. For more information, see [How to: Map HRESULTs and Exceptions](../Topic/How%20to:%20Map%20HRESULTs%20and%20Exceptions.md).  
+ When the runtime encounters an unfamiliar HRESULT, it throws a <xref:System.Runtime.InteropServices.COMException> exception, which includes a public `ErrorCode` property that contains the HRESULT returned by the call. If an error message is available to the runtime, the message is returned to the caller. However, if the COM component developer fails to include an error message, the runtime returns the eight-digit HRESULT in place of a message string. Having an HRESULT allows the caller to determine the cause of the exception. For more information, see [How to: Map HRESULTs and Exceptions](http://msdn.microsoft.com/Library/610b364b-2761-429d-9c4a-afbc3e66f1b9).  
   
  **Disable the hosting process.**  
  COM is used to communicate between [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] and the hosting process. Because it is used before code runs, a call to `CoInitializeSecurity` causes this exception to be thrown.  
@@ -57,4 +56,4 @@ A <xref:System.Runtime.InteropServices.COMException> exception is thrown when an
 ## See Also  
  <xref:System.Runtime.InteropServices.COMException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Handling COM Interop Exceptions](../Topic/Handling%20COM%20Interop%20Exceptions.md)
+ [Handling COM Interop Exceptions](http://msdn.microsoft.com/Library/e6104aa8-8e5f-4069-b864-def85579c96c)

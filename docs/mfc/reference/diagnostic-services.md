@@ -2,7 +2,6 @@
 title: "Diagnostic Services | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -180,7 +179,7 @@ ASSERT_VALID(pObject)
 > [!NOTE]
 >  This function is available only in the Debug version of MFC.  
   
- For more information and examples, see [Debugging MFC Applications](/visual-studio/debugger/mfc-debugging-techniques).  
+ For more information and examples, see [Debugging MFC Applications](/visualstudio/debugger/mfc-debugging-techniques).  
   
 ### Example  
  [!code-cpp[NVC_MFCCObjectSample#19](../../mfc/codesnippet/CPP/diagnostic-services_5.cpp)]  
@@ -231,11 +230,11 @@ TRACE(DWORD  category,  UINT  level, LPCSTR lpszFormat, ...)
 ```  
   
 ### Remarks  
- See [ATLTRACE2](../Topic/ATLTRACE2.md) for a description of **TRACE**. **TRACE** and `ATLTRACE2` have the same behavior.  
+ See [ATLTRACE2](http://msdn.microsoft.com/Library/467ff555-e7a5-4f94-bdd9-50ee27ab9986) for a description of **TRACE**. **TRACE** and `ATLTRACE2` have the same behavior.  
   
  In the debug version of MFC, this macro sends the specified string to the debugger of the current application. In a release build, this macro compiles to nothing (no code is generated at all).  
   
- For more information, see [Debugging MFC Applications](/visual-studio/debugger/mfc-debugging-techniques).  
+ For more information, see [Debugging MFC Applications](/visualstudio/debugger/mfc-debugging-techniques).  
   
 ##  <a name="verify"></a>  VERIFY  
  In the Debug version of MFC, evaluates its argument.  
@@ -274,7 +273,7 @@ CDumpContext  afxDump;
   
  Under Windows NT and all versions of Windows, `afxDump` output is sent to the Output-Debug window of Visual C++ when you debug your application.  
   
- This variable is defined only in the Debug version of MFC. For more information on `afxDump`, see [Debugging MFC Applications](/visual-studio/debugger/mfc-debugging-techniques).  
+ This variable is defined only in the Debug version of MFC. For more information on `afxDump`, see [Debugging MFC Applications](/visualstudio/debugger/mfc-debugging-techniques).  
   
 ### Example  
  [!code-cpp[NVC_MFC_Utilities#23](../../mfc/codesnippet/CPP/diagnostic-services_8.cpp)]  
@@ -489,7 +488,7 @@ BOOL AfxEnableMemoryTracking(BOOL bTrack);
 ### Remarks  
  Use this function to disable tracking on sections of your code that you know are allocating blocks correctly.  
   
- For more information on `AfxEnableMemoryTracking`, see [Debugging MFC Applications](/visual-studio/debugger/mfc-debugging-techniques).  
+ For more information on `AfxEnableMemoryTracking`, see [Debugging MFC Applications](/visualstudio/debugger/mfc-debugging-techniques).  
   
 > [!NOTE]
 >  This function works only in the Debug version of MFC.  

@@ -2,7 +2,6 @@
 title: "Troubleshooting Code Access Security Exceptions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,9 +45,9 @@ Permissions control what your code is allowed to do and not do. At the time an a
   
  The permissions your code is given are determined by the location from which the application was launched (for example, the Internet, intranet, or the local computer) and the security settings on the computer on which the application is running. Since these settings can differ from computer to computer, you cannot always anticipate whether or not the code will receive sufficient permissions.  
   
- Requesting permissions ensures that your code will execute if the security policy on the local computer allows it. If you do not request the necessary permissions, you run the risk of your code not executing. For more information on Code Access permissions and requesting them, see [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675) or [NIB: Requesting Permissions](http://msdn.microsoft.com/en-us/0447c49d-8cba-45e4-862c-ff0b59bebdc2). For more information on `Try...Catch` blocks, see [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).  
+ Requesting permissions ensures that your code will execute if the security policy on the local computer allows it. If you do not request the necessary permissions, you run the risk of your code not executing. For more information on Code Access permissions and requesting them, see [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675) or [NIB: Requesting Permissions](http://msdn.microsoft.com/en-us/0447c49d-8cba-45e4-862c-ff0b59bebdc2). For more information on `Try...Catch` blocks, see [Try...Catch...Finally Statement](/dotnet/articles/visual-basic/language-reference/statements/try-catch-finally-statement).  
   
- [!INCLUDE[ndptecclick](../ide/includes/ndptecclick_md.md)] applications can request additional permissions, if needed, using the Security Page in the Application Designer. For more information, see [How to: Set Custom Permissions for a ClickOnce Application](../Topic/How%20to:%20Set%20Custom%20Permissions%20for%20a%20ClickOnce%20Application.md).  
+ [!INCLUDE[ndptecclick](../ide/includes/ndptecclick_md.md)] applications can request additional permissions, if needed, using the Security Page in the Application Designer. For more information, see [How to: Set Custom Permissions for a ClickOnce Application](http://msdn.microsoft.com/Library/660459ca-ef73-44a8-b323-610001f63b93).  
   
  Possible causes of Code Access security exceptions include:  
   
@@ -86,4 +85,4 @@ End Try
 ## See Also  
  [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675)   
  [NIB: Requesting Permissions](http://msdn.microsoft.com/en-us/0447c49d-8cba-45e4-862c-ff0b59bebdc2)   
- [Code Access Security Basics](../Topic/Code%20Access%20Security%20Basics.md)
+ [Code Access Security Basics](http://msdn.microsoft.com/Library/4eaa6535-d9fe-41a1-91d8-b437cfc16921)

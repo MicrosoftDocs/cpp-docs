@@ -2,7 +2,6 @@
 title: "XML descendant elements cannot be selected from type &#39;type&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # XML descendant elements cannot be selected from type &#39;type&#39;
-An XML descendant has been referenced for an object that is not of type <xref:System.Xml.Linq.XElement>, <xref:System.Xml.Linq.XDocument>, or `IEnumerable(Of XElement)`. For more information, see [XML Descendant Axis Property](/dotnet/visual-basic/language-reference/xml-axis/xml-descendant-axis-property).  
+An XML descendant has been referenced for an object that is not of type <xref:System.Xml.Linq.XElement>, <xref:System.Xml.Linq.XDocument>, or `IEnumerable(Of XElement)`. For more information, see [XML Descendant Axis Property](/dotnet/articles/visual-basic/language-reference/xml-axis/xml-descendant-axis-property).  
   
 ```vb#  
 ' Generates an error.  
@@ -57,6 +56,6 @@ Dim var = "sample text"...<childElement>
     ```  
   
 ## See Also  
- [XML Descendant Axis Property](/dotnet/visual-basic/language-reference/xml-axis/xml-descendant-axis-property)   
- [XML Axis Properties](/dotnet/visual-basic/language-reference/xml-axis/xml-axis-properties)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [XML Descendant Axis Property](/dotnet/articles/visual-basic/language-reference/xml-axis/xml-descendant-axis-property)   
+ [XML Axis Properties](/dotnet/articles/visual-basic/language-reference/xml-axis/xml-axis-properties)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

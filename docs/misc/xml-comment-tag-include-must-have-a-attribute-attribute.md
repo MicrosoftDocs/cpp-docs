@@ -2,7 +2,6 @@
 title: "XML comment tag &#39;include&#39; must have a &#39;&lt;attribute&gt;&#39; attribute | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,5 +46,5 @@ XML comment tag 'include' must have a \<attribute> attribute. XML comment will b
 -   Add or complete the required attribute to the \<include> tag.  
   
 ## See Also  
- [\<include>](../Topic/%3Cinclude%3E%20\(Visual%20Basic\).md)   
- [Documenting Your Code with XML](/dotnet/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)
+ [\<include>](http://msdn.microsoft.com/Library/ba8e9173-82cd-460b-8938-a075a2dfb36d)   
+ [Documenting Your Code with XML](/dotnet/articles/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)

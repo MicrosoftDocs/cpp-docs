@@ -2,7 +2,6 @@
 title: "HRESULT Information in Managed Code | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -78,7 +77,7 @@ The interaction between managed code and COM can cause problems when HRESULT ret
   
 ## See Also  
  [Managed VSPackages](../misc/managed-vspackages.md)   
- [Interoperating with Unmanaged Code](../Topic/Interoperating%20with%20Unmanaged%20Code.md)   
- [How to: Map HRESULTs and Exceptions](../Topic/How%20to:%20Map%20HRESULTs%20and%20Exceptions.md)   
+ [Interoperating with Unmanaged Code](http://msdn.microsoft.com/Library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)   
+ [How to: Map HRESULTs and Exceptions](http://msdn.microsoft.com/Library/610b364b-2761-429d-9c4a-afbc3e66f1b9)   
  [Building COM Components for Interoperation](http://msdn.microsoft.com/en-us/7a2c657a-cfef-40f0-bed3-7c2c0ac4abdf)   
  [Managed VSPackages](../misc/managed-vspackages.md)

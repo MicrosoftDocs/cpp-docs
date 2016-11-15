@@ -2,7 +2,6 @@
 title: "Start Page Best Practices | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -125,10 +124,10 @@ Because the Start Page can access Visual Studio commands, and opens whenever Vis
   
 |Area|Topic|  
 |----------|-----------|  
-|Accessibility|[Accessibility Best Practices](../Topic/Accessibility%20Best%20Practices.md)|  
-|Localization|[WPF Globalization and Localization Overview](../Topic/WPF%20Globalization%20and%20Localization%20Overview.md)|  
-|Performance|[Optimizing WPF Application Performance](../Topic/Optimizing%20WPF%20Application%20Performance.md)|  
-|Security|[Security (WPF)](../Topic/Security%20\(WPF\).md)|  
+|Accessibility|[Accessibility Best Practices](http://msdn.microsoft.com/Library/e6d5cd98-21a3-4b01-999c-fb953556d0e6)|  
+|Localization|[WPF Globalization and Localization Overview](http://msdn.microsoft.com/Library/56e5a5c8-6c96-4d19-b8e1-a5be1dc564af)|  
+|Performance|[Optimizing WPF Application Performance](http://msdn.microsoft.com/Library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)|  
+|Security|[Security (WPF)](http://msdn.microsoft.com/Library/ee1baea0-3611-4e36-9ad6-fcd5205376fb)|  
   
 ## User Interface Guidelines  
  To ensure a convenient and intuitive user experience for your Start Page, use the following UI guidelines where applicable.  
@@ -207,5 +206,5 @@ Because the Start Page can access Visual Studio commands, and opens whenever Vis
   
 ## See Also  
  [Start Page Architecture](../misc/start-page-architecture.md)   
- [Deploying Custom Start Pages](/visual-studio/extensibility/deploying-custom-start-pages)   
- [Adding Visual Studio Commands to a Start Page](/visual-studio/extensibility/adding-visual-studio-commands-to-a-start-page)
+ [Deploying Custom Start Pages](/visualstudio/extensibility/deploying-custom-start-pages)   
+ [Adding Visual Studio Commands to a Start Page](/visualstudio/extensibility/adding-visual-studio-commands-to-a-start-page)

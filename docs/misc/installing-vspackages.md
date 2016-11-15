@@ -2,7 +2,6 @@
 title: "Installing VSPackages | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,10 +34,10 @@ translation.priority.mt:
 This section discusses how to build and install VSPackages and how to support users who are running multiple versions of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] at the same time.  
   
 ## In This Section  
- [Supporting Multiple Versions of Visual Studio](/visual-studio/extensibility/supporting-multiple-versions-of-visual-studio)  
+ [Supporting Multiple Versions of Visual Studio](/visualstudio/extensibility/supporting-multiple-versions-of-visual-studio)  
  Describes issues related to multiple versions of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] and your VSPackage during development and deployment to end users.  
   
- [Installing VSPackages With Windows Installer](/visual-studio/extensibility/internals/installing-vspackages-with-windows-installer)  
+ [Installing VSPackages With Windows Installer](/visualstudio/extensibility/internals/installing-vspackages-with-windows-installer)  
  Describes how to release your VSPackages as an installable product.  
   
 ## Related Sections  

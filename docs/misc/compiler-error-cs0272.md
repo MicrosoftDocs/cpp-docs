@@ -2,7 +2,6 @@
 title: "Compiler Error CS0272 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0272
 The property or indexer 'property/indexer' cannot be used in this context because the set accessor is inaccessible  
   
- This error occurs when the `set` accessor is not accessible to the program code. To resolve this error, increase the accessibility of the accessor, or change the calling location. For more information, see [Restricting Accessor Accessibility](/dotnet/csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility).  
+ This error occurs when the `set` accessor is not accessible to the program code. To resolve this error, increase the accessibility of the accessor, or change the calling location. For more information, see [Restricting Accessor Accessibility](/dotnet/articles/csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility).  
   
 ## Example  
  The following example generates CS0272:  

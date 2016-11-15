@@ -2,7 +2,6 @@
 title: "Compiler Error CS0133 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0133
 The expression being assigned to 'variable' must be constant  
   
- A [const](/dotnet/csharp/language-reference/keywords/const) variable cannot take as its value an expression that is not constant. For more information, see [Constants](/dotnet/csharp/programming-guide/classes-and-structs/constants).  
+ A [const](/dotnet/articles/csharp/language-reference/keywords/const) variable cannot take as its value an expression that is not constant. For more information, see [Constants](/dotnet/articles/csharp/programming-guide/classes-and-structs/constants).  
   
  The following sample generates CS0133:  
   

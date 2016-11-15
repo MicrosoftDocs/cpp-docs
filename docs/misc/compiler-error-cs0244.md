@@ -2,7 +2,6 @@
 title: "Compiler Error CS0244 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0244
 Neither 'is' nor 'as' is valid on pointer types  
   
- The [is](/dotnet/csharp/language-reference/keywords/is) and [as](/dotnet/csharp/language-reference/keywords/as) keywords are not valid for use on pointer types. For more information, see [Unsafe Code and Pointers](/dotnet/csharp/programming-guide/unsafe-code-pointers/index).  
+ The [is](/dotnet/articles/csharp/language-reference/keywords/is) and [as](/dotnet/articles/csharp/language-reference/keywords/as) keywords are not valid for use on pointer types. For more information, see [Unsafe Code and Pointers](/dotnet/articles/csharp/programming-guide/unsafe-code-pointers/index).  
   
  The following sample generates CS0244:  
   

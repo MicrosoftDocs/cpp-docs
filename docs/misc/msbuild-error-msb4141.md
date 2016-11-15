@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB4141 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,6 +41,6 @@ translation.priority.mt:
 -   Specify a valid value for `MSBuildToolsPath` when you define a custom Toolset in the registry or the [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] configuration file.  
   
 ## See Also  
- [Standard and Custom Toolset Configurations](/visual-studio/msbuild/standard-and-custom-toolset-configurations)   
- [Project Element (MSBuild)](/visual-studio/msbuild/project-element-msbuild)   
- [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)
+ [Standard and Custom Toolset Configurations](/visualstudio/msbuild/standard-and-custom-toolset-configurations)   
+ [Project Element (MSBuild)](/visualstudio/msbuild/project-element-msbuild)   
+ [Additional Resources](/visualstudio/msbuild/additional-msbuild-resources)

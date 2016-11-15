@@ -2,7 +2,6 @@
 title: "&#39;Module&#39; statement must end with a matching &#39;End Module&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ Module blocks must end with an `End``Module` statement.
 -   Add an `End Module` statement to the end of the `Module` block.  
   
 ## See Also  
- [End \<keyword> Statement](../Topic/End%20%3Ckeyword%3E%20Statement%20\(Visual%20Basic\).md)
+ [End \<keyword> Statement](http://msdn.microsoft.com/Library/42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f)

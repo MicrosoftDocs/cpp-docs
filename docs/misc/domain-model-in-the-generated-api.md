@@ -2,7 +2,6 @@
 title: "Domain Model in the Generated API | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,4 +27,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Domain Model in the Generated API
-This topic has been consolidated with other content. Please go to [Navigating and Updating a Model in Program Code](/visual-studio/modeling/navigating-and-updating-a-model-in-program-code).
+This topic has been consolidated with other content. Please go to [Navigating and Updating a Model in Program Code](/visualstudio/modeling/navigating-and-updating-a-model-in-program-code).

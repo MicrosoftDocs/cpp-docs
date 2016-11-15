@@ -2,7 +2,6 @@
 title: "&#39;End Get&#39; must be the first statement on a line | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ An `End Get` statement follows a colon (:) statement separator. `End Get` must b
 -   Separate the multiple statements onto different lines.  
   
 ## See Also  
- [How to: Break and Combine Statements in Code](../Topic/How%20to:%20Break%20and%20Combine%20Statements%20in%20Code%20\(Visual%20Basic\).md)   
- [Get Statement](/dotnet/visual-basic/language-reference/statements/get-statement)
+ [How to: Break and Combine Statements in Code](http://msdn.microsoft.com/Library/dea01dad-a8ac-484a-bb3a-8c45a1b1eccc)   
+ [Get Statement](/dotnet/articles/visual-basic/language-reference/statements/get-statement)

@@ -2,7 +2,6 @@
 title: "Compiler Error CS0637 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0637
 The FieldOffset attribute is not allowed on static or const fields  
   
- The [FieldOffset](frlrfsystemruntimeinteropservicesfieldoffsetattributeclasstopic) attribute cannot be used on fields marked with [static](/dotnet/csharp/language-reference/keywords/static) or [const](/dotnet/csharp/language-reference/keywords/const).  
+ The [FieldOffset](frlrfsystemruntimeinteropservicesfieldoffsetattributeclasstopic) attribute cannot be used on fields marked with [static](/dotnet/articles/csharp/language-reference/keywords/static) or [const](/dotnet/articles/csharp/language-reference/keywords/const).  
   
  The following sample generates CS0637:  
   

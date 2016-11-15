@@ -2,7 +2,6 @@
 title: "How to: Create a Coded UI Test | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -31,4 +30,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Create a Coded UI Test
-The content of this topic has been consolidated with the parent page. See [Creating Coded UI Tests](/visual-studio/test/use-ui-automation-to-test-your-code).
+The content of this topic has been consolidated with the parent page. See [Creating Coded UI Tests](/visualstudio/test/use-ui-automation-to-test-your-code).

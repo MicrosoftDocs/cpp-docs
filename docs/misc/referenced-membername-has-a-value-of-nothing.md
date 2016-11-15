@@ -2,7 +2,6 @@
 title: "Referenced &#39;&lt;membername&gt;&#39; has a value of &#39;Nothing&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ The item being referenced has either not been assigned a value, or it was assign
 -   Verify that item's name is spelled and set correctly.  
   
 ## See Also  
- [Nothing](/dotnet/visual-basic/language-reference/nothing)
+ [Nothing](/dotnet/articles/visual-basic/language-reference/nothing)

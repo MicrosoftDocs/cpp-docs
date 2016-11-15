@@ -2,7 +2,6 @@
 title: "Structures cannot declare a non-shared &#39;Sub New&#39; with no parameters | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,5 +46,5 @@ translation.priority.mt:
 -   Apply the `Shared` modifier to make the constructor shared.  
   
 ## See Also  
- [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)   
- [Structures](/dotnet/visual-basic/programming-guide/language-features/data-types/structures)
+ [Structure Statement](/dotnet/articles/visual-basic/language-reference/statements/structure-statement)   
+ [Structures](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures)

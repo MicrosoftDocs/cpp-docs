@@ -2,7 +2,6 @@
 title: "Cannot determine array type because it is Nothing | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,5 +39,5 @@ The type of your array cannot be determined because it has been set to the value
 1.  Provide a value other than `Nothing` for the array.  
   
 ## See Also  
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)   
- [Nothing](/dotnet/visual-basic/language-reference/nothing)
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)   
+ [Nothing](/dotnet/articles/visual-basic/language-reference/nothing)

@@ -2,7 +2,6 @@
 title: "Property &#39;&lt;propertyname&gt;&#39; implicitly declares &#39;&lt;implicitmembername&gt;&#39;, which conflicts with a member implicitly declared for member &#39;&lt;membername&gt;&#39; in the base class &#39;&lt;baseclassname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,9 +37,9 @@ translation.priority.mt:
 # Property &#39;&lt;propertyname&gt;&#39; implicitly declares &#39;&lt;implicitmembername&gt;&#39;, which conflicts with a member implicitly declared for member &#39;&lt;membername&gt;&#39; in the base class &#39;&lt;baseclassname&gt;&#39;
 Member '\<membername1>' implicitly declares '\<implicitmembername>', which conflicts with a member implicitly declared for member '\<membername2>' in the base class '\<baseclassname>'. So the member should not be declared 'Overloads'.  
   
- A property in a derived class generates an implicit member with the same name as an implicit member of the base class and specifies the [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads) keyword.  
+ A property in a derived class generates an implicit member with the same name as an implicit member of the base class and specifies the [Overloads](/dotnet/articles/visual-basic/language-reference/modifiers/overloads) keyword.  
   
- Overloading is used to define multiple versions of a property or procedure all in the same class. You cannot define an additional version of a base class member unless that base class member already specifies `Overloads`. Because implicit members do not specify `Overloads`, the compiler assumes that this property [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows) the implicit base class member.  
+ Overloading is used to define multiple versions of a property or procedure all in the same class. You cannot define an additional version of a base class member unless that base class member already specifies `Overloads`. Because implicit members do not specify `Overloads`, the compiler assumes that this property [Shadows](/dotnet/articles/visual-basic/language-reference/modifiers/shadows) the implicit base class member.  
   
  The [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] compiler creates implicit members corresponding to certain programming elements you declare. The following table summarizes these implicit, or *synthetic*, members.  
   
@@ -54,15 +53,15 @@ Member '\<membername1>' implicitly declares '\<implicitmembername>', which confl
   
  Because of the risk of name conflicts, you should avoid naming any declared programming element using the same form as any one of these implicit members. For example, you should avoid any element name that starts with `get_` or `set_`.  
   
- By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40024  
   
 ### To correct this error  
   
--   If you intend to hide, or shadow, the implicit base class member, replace the [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads) keyword with the [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows) keyword in the declaration of the property.  
+-   If you intend to hide, or shadow, the implicit base class member, replace the [Overloads](/dotnet/articles/visual-basic/language-reference/modifiers/overloads) keyword with the [Shadows](/dotnet/articles/visual-basic/language-reference/modifiers/shadows) keyword in the declaration of the property.  
   
 -   If you do not intend to shadow the implicit base class member, change the name of the property to avoid conflicts with names listed in the previous table.  
   
 ## See Also  
- [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)
+ [Declared Element Names](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)

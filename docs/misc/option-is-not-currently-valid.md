@@ -2,7 +2,6 @@
 title: "Option is not currently valid. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,7 +37,7 @@ This error generally occurs when an argument or switch for a command has been sp
   
 ### To correct this error  
   
-1.  Verify that the arguments and switches entered are currently available. For more information, see [Visual Studio Commands with Arguments](/visual-studio/ide/reference/visual-studio-commands).  
+1.  Verify that the arguments and switches entered are currently available. For more information, see [Visual Studio Commands with Arguments](/visualstudio/ide/reference/visual-studio-commands).  
   
 ## See Also  
- [Visual Studio Commands](/visual-studio/ide/reference/visual-studio-commands)
+ [Visual Studio Commands](/visualstudio/ide/reference/visual-studio-commands)

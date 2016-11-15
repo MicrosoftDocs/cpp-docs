@@ -2,7 +2,6 @@
 title: "Compiler Error CS1727 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -55,4 +54,4 @@ class Test
 ```  
   
 ## See Also  
- [/errorreport (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)
+ [/errorreport (C# Compiler Options)](/dotnet/articles/csharp/language-reference/compiler-options/errorreport-compiler-option)

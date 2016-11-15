@@ -2,7 +2,6 @@
 title: "Type argument &#39;&lt;typeargumentname&gt;&#39; does not satisfy the &#39;Structure&#39; constraint for type parameter &#39;&lt;typeparametername&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -53,6 +52,6 @@ A type argument supplied to a generic type does not satisfy the value type const
 -   Select a type argument of any value type.  
   
 ## See Also  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [Value Types and Reference Types](/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)   
- [How to: Use a Generic Class](../Topic/How%20to:%20Use%20a%20Generic%20Class%20\(Visual%20Basic\).md)
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Value Types and Reference Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types)   
+ [How to: Use a Generic Class](http://msdn.microsoft.com/Library/242dd2a6-86c4-4ce7-83f2-f2661803f752)

@@ -2,7 +2,6 @@
 title: "Could not create output directory &#39;directory&#39;. &lt;reason&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,7 +46,7 @@ The project system could not create a project directory.
  Temporary assemblies used by designers at design-time are created here.  
   
  outputdir  
- The directory specified by the Output Path property. See [Build Page, Project Designer (C#)](/visual-studio/ide/reference/build-page-project-designer-csharp) for more information.  
+ The directory specified by the Output Path property. See [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp) for more information.  
   
  The most common reason for failing to create one of the directories under the obj folder is exceeding the MAX_PATH limit for directory names.  
   

@@ -2,7 +2,6 @@
 title: "Method cannot contain both an &#39;On Error GoTo&#39; statement and a lambda or query expression | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +45,7 @@ A method contains both an `On Error Goto` statement and either a lambda expressi
   
 ## See Also  
  [Introduction to Exception Handling (Visual Basic)](http://msdn.microsoft.com/en-us/9792f16a-0cd2-40bd-ace2-f7a4344c0e52)   
- [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)   
- [On Error Statement](/dotnet/visual-basic/language-reference/statements/on-error-statement)
+ [Try...Catch...Finally Statement](/dotnet/articles/visual-basic/language-reference/statements/try-catch-finally-statement)   
+ [Introduction to LINQ in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [Lambda Expressions](/dotnet/articles/visual-basic/language-reference/procedures/lambda-expressions)   
+ [On Error Statement](/dotnet/articles/visual-basic/language-reference/statements/on-error-statement)

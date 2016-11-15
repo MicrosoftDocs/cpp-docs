@@ -2,7 +2,6 @@
 title: "Types are not available in this context | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ You attempted to reference a type within an `#If` directive.
 1.  Remove the reference.  
   
 ## See Also  
- [#If...Then...#Else Directives](/dotnet/visual-basic/language-reference/directives/if-then-else-directives)   
+ [#If...Then...#Else Directives](/dotnet/articles/visual-basic/language-reference/directives/if-then-else-directives)   
  [NOTINBUILD Conditional Compilation (Visual Basic)](http://msdn.microsoft.com/en-us/ad1e35e0-935e-4a35-a2ae-738bcf2a9240)

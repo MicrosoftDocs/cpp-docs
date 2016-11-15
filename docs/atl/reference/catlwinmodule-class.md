@@ -2,7 +2,6 @@
 title: "CAtlWinModule Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -93,7 +92,7 @@ void AddCreateWndData(
  Pointer to an object's **this** pointer.  
   
 ### Remarks  
- This method calls [AtlWinModuleAddCreateWndData](../Topic/AtlWinModuleAddCreateWndData.md) which initializes an [_AtlCreateWndData](../../atl/reference/atlcreatewnddata-structure.md) structure. This structure will store the **this** pointer, used to obtain the class instance in window procedures.  
+ This method calls [AtlWinModuleAddCreateWndData](http://msdn.microsoft.com/Library/8463a6ed-07ea-4aad-92ec-ded681601b32) which initializes an [_AtlCreateWndData](../../atl/reference/atlcreatewnddata-structure.md) structure. This structure will store the **this** pointer, used to obtain the class instance in window procedures.  
   
 ##  <a name="catlwinmodule__catlwinmodule"></a>  CAtlWinModule::CAtlWinModule  
  The constructor.  

@@ -2,7 +2,6 @@
 title: "Compiler Error CS1954 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -92,4 +91,4 @@ class Program
 ```  
   
 ## See Also  
- [Object and Collection Initializers](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)
+ [Object and Collection Initializers](/dotnet/articles/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)

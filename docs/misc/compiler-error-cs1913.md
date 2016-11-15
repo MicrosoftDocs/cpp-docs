@@ -2,7 +2,6 @@
 title: "Compiler Error CS1913 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -69,4 +68,4 @@ public class Test
 ```  
   
 ## See Also  
- [Classes and Structs](/dotnet/csharp/programming-guide/classes-and-structs/index)
+ [Classes and Structs](/dotnet/articles/csharp/programming-guide/classes-and-structs/index)

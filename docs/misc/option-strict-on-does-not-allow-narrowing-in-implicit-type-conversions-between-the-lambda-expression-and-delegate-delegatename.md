@@ -2,7 +2,6 @@
 title: "Option Strict On does not allow narrowing in implicit type conversions between the lambda expression and delegate &#39;&lt;delegatename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -66,7 +65,7 @@ Dim example3 As Del = Function(n As Short) "Not Valid"
     ```  
   
 ## See Also  
- [Lambda Expressions](/dotnet/visual-basic/language-reference/procedures/lambda-expressions)   
- [Delegates](/dotnet/visual-basic/programming-guide/language-features/delegates/delegates)   
- [Widening and Narrowing Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)   
- [Relaxed Delegate Conversion](/dotnet/visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion)
+ [Lambda Expressions](/dotnet/articles/visual-basic/language-reference/procedures/lambda-expressions)   
+ [Delegates](/dotnet/articles/visual-basic/programming-guide/language-features/delegates/delegates)   
+ [Widening and Narrowing Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)   
+ [Relaxed Delegate Conversion](/dotnet/articles/visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion)

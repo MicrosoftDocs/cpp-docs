@@ -2,7 +2,6 @@
 title: "&#39;&lt;type&gt;&#39; cannot be inherited more than once | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ You have duplicated an `Inherits` statement.
 -   Remove the redundant `Inherits` statement.  
   
 ## See Also  
- [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement)
+ [Inherits Statement](/dotnet/articles/visual-basic/language-reference/statements/inherits-statement)

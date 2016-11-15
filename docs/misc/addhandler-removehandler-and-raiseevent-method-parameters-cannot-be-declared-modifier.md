@@ -2,7 +2,6 @@
 title: "&#39;AddHandler&#39;, &#39;RemoveHandler&#39; and &#39;RaiseEvent&#39; method parameters cannot be declared &#39;&lt;modifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,10 +46,10 @@ The parameters of the `AddHandler`, `RemoveHandler`, and `RaiseEvent` methods ca
 -   Remove the `Optional` or `ParamArray` keyword from the parameter list.  
   
 ## See Also  
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)   
  [AddHandler - delete](http://msdn.microsoft.com/en-us/fc464cf8-582c-48a6-a9c2-185c4c3d5ff8)   
  [RemoveHandler - delete](http://msdn.microsoft.com/en-us/35c17f61-6e22-4b87-b6e1-3ed0c27a88a0)   
  [RaiseEvent - delete](http://msdn.microsoft.com/en-us/7f765da0-5491-40b6-9ed5-24c98f9daad9)   
- [Optional](/dotnet/visual-basic/language-reference/modifiers/optional)   
- [ParamArray](/dotnet/visual-basic/language-reference/modifiers/paramarray)   
- [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)
+ [Optional](/dotnet/articles/visual-basic/language-reference/modifiers/optional)   
+ [ParamArray](/dotnet/articles/visual-basic/language-reference/modifiers/paramarray)   
+ [Events](/dotnet/articles/visual-basic/programming-guide/language-features/events/events)

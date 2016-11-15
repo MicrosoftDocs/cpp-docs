@@ -2,7 +2,6 @@
 title: "Compiler Error CS0726 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS0726
 'format specifier' is not a valid format specifier  
   
- This error occurs in the debugger. When you type a variable name into one of the debugger windows, you can follow it with a comma, and then a format specifier. Examples are: `myInt, h` or `myString,nq`. This error arises when the compiler does not recognize the [Format Specifiers in C#](/visual-studio/debugger/format-specifiers-in-csharp).
+ This error occurs in the debugger. When you type a variable name into one of the debugger windows, you can follow it with a comma, and then a format specifier. Examples are: `myInt, h` or `myString,nq`. This error arises when the compiler does not recognize the [Format Specifiers in C#](/visualstudio/debugger/format-specifiers-in-csharp).

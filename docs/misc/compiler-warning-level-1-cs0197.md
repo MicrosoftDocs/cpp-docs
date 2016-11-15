@@ -2,7 +2,6 @@
 title: "Compiler Warning (level 1) CS0197 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS0197
 Passing 'argument' as ref or out or taking its address may cause a runtime exception because it is a field of a marshal-by-reference class  
   
- Any class that derives, directly or indirectly, from <xref:System.MarshalByRefObject> is a marshal-by-reference class. Such a class can be marshaled by reference across process and machine boundaries. Thus, instances of this class could be proxies to remote objects. You cannot pass a field of a proxy object as [ref](/dotnet/csharp/language-reference/keywords/ref) or [out](/dotnet/csharp/language-reference/keywords/out). So, you cannot pass fields of such a class as `ref` or `out`, unless the instance is [this](/dotnet/csharp/language-reference/keywords/this), which can not be a proxy object.  
+ Any class that derives, directly or indirectly, from <xref:System.MarshalByRefObject> is a marshal-by-reference class. Such a class can be marshaled by reference across process and machine boundaries. Thus, instances of this class could be proxies to remote objects. You cannot pass a field of a proxy object as [ref](/dotnet/articles/csharp/language-reference/keywords/ref) or [out](/dotnet/articles/csharp/language-reference/keywords/out). So, you cannot pass fields of such a class as `ref` or `out`, unless the instance is [this](/dotnet/articles/csharp/language-reference/keywords/this), which can not be a proxy object.  
   
 ## Example  
  The following sample generates CS0197.  

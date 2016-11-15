@@ -2,7 +2,6 @@
 title: "Compiler Error CS0568 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0568
 Structs cannot contain explicit parameterless constructors  
   
- Each [struct](/dotnet/csharp/language-reference/keywords/struct) already has a default constructor that initializes the object to zero. Therefore, the constructors that you can create for a struct must take one or more parameters.  
+ Each [struct](/dotnet/articles/csharp/language-reference/keywords/struct) already has a default constructor that initializes the object to zero. Therefore, the constructors that you can create for a struct must take one or more parameters.  
   
  The following sample generates CS0568:  
   

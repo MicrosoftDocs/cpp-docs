@@ -2,7 +2,6 @@
 title: "Compiler Error CS1900 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1900
 Warning level must be in the range 0-4  
   
- The [/warn](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option) compiler option can only take one of five possible values (0, 1, 2, 3, or 4). Any other value passed to **/warn** will result in CS1900.  
+ The [/warn](/dotnet/articles/csharp/language-reference/compiler-options/warn-compiler-option) compiler option can only take one of five possible values (0, 1, 2, 3, or 4). Any other value passed to **/warn** will result in CS1900.  
   
  The following sample generates CS1900:  
   

@@ -2,7 +2,6 @@
 title: "Command &lt;name&gt; is not valid. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,4 +40,4 @@ This error generally occurs when a command or alias of a command not recognized 
 1.  Re-enter the command name or choose a valid command name.  
   
 ## See Also  
- [Command Window](/visual-studio/ide/reference/command-window)
+ [Command Window](/visualstudio/ide/reference/command-window)

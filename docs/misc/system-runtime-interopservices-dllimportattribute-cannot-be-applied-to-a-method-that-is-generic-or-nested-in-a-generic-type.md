@@ -2,7 +2,6 @@
 title: "&#39;System.Runtime.InteropServices.DllImportAttribute&#39; cannot be applied to a method that is generic or nested in a generic type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -52,4 +51,4 @@ A procedure is declared with the <xref:System.Runtime.InteropServices.DllImportA
   
 ## See Also  
  <xref:System.Runtime.InteropServices.DllImportAttribute>   
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)

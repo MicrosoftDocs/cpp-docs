@@ -2,7 +2,6 @@
 title: "&#39;&lt;membername&gt;&#39; cannot implement &#39;&lt;interfacename&gt;.&lt;interfacemembername&gt;&#39; because they differ by type parameter constraints | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,8 +49,8 @@ A generic event, property, or procedure attempts to implement a similar member d
   
 -   If you intend to implement the interface member, revise the type parameter constraints to exactly match those of the interface member.  
   
--   If the type parameter constraints must remain as you have them, you cannot implement the interface member in this declaration. Remove the [Implements](/dotnet/visual-basic/language-reference/statements/implements-clause) keyword from the declaration.  
+-   If the type parameter constraints must remain as you have them, you cannot implement the interface member in this declaration. Remove the [Implements](/dotnet/articles/visual-basic/language-reference/statements/implements-clause) keyword from the declaration.  
   
 ## See Also  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
  [NOT IN BUILD: Interface Implementation Examples in Visual Basic](http://msdn.microsoft.com/en-us/50bf2a30-73b6-4126-a921-075fd6eec278)

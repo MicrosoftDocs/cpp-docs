@@ -2,7 +2,6 @@
 title: "Compiler Error CS0009 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS0009
 Metadata file 'file' could not be opened — 'description'  
   
- The file specified with the [/reference](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option) compiler option does not contain valid metadata.
+ The file specified with the [/reference](/dotnet/articles/csharp/language-reference/compiler-options/reference-compiler-option) compiler option does not contain valid metadata.

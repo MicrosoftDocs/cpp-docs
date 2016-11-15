@@ -2,7 +2,6 @@
 title: "Handlers for Message-Map Ranges | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -83,11 +82,11 @@ This article explains how to map a range of messages to a single message handler
   
 -   The message-map range macro:  
   
-    -   [ON_COMMAND_RANGE](../Topic/ON_COMMAND_RANGE.md)  
+    -   [ON_COMMAND_RANGE](http://msdn.microsoft.com/Library/c52719fc-dd6e-48c9-af79-383f48d608e0)  
   
-    -   [ON_UPDATE_COMMAND_UI_RANGE](../Topic/ON_UPDATE_COMMAND_UI_RANGE.md)  
+    -   [ON_UPDATE_COMMAND_UI_RANGE](http://msdn.microsoft.com/Library/b7105bf1-44ad-4b00-b947-31478f964729)  
   
-    -   [ON_CONTROL_RANGE](../Topic/ON_CONTROL_RANGE.md)  
+    -   [ON_CONTROL_RANGE](http://msdn.microsoft.com/Library/46f0e1bb-569b-4b8b-9b80-89701d1cd7fd)  
   
 -   Parameters to the macro:  
   

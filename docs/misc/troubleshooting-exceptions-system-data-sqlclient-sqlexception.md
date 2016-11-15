@@ -2,7 +2,6 @@
 title: "Troubleshooting Exceptions: System.Data.SqlClient.SqlException | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,7 +41,7 @@ A <xref:System.Data.SqlClient.SqlException> exception is generated when a warnin
   
 ## Associated Tips  
  **Verify that you are connecting with valid credentials.**  
- Make sure that the credentials you are supplying are valid. For more information, see [How to: Access SQL Server Using Predetermined Credentials](../Topic/How%20to:%20Access%20SQL%20Server%20Using%20Predetermined%20Credentials.md).  
+ Make sure that the credentials you are supplying are valid. For more information, see [How to: Access SQL Server Using Predetermined Credentials](http://msdn.microsoft.com/Library/6cfbca2a-dbc4-481c-88ec-8f38c870a25a).  
   
  **Verify that the server name is correct and that the server is running.**  
  Make sure that you are using the correct server name, and that the server can be reached.  
@@ -59,4 +58,4 @@ A <xref:System.Data.SqlClient.SqlException> exception is generated when a warnin
 ## See Also  
  <xref:System.Data.SqlClient.SqlException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [How to: Access SQL Server Using Predetermined Credentials](../Topic/How%20to:%20Access%20SQL%20Server%20Using%20Predetermined%20Credentials.md)
+ [How to: Access SQL Server Using Predetermined Credentials](http://msdn.microsoft.com/Library/6cfbca2a-dbc4-481c-88ec-8f38c870a25a)

@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB1025 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ translation.priority.ht:
 2.  Contact Microsoft Product Support Services and report the error.  
   
 ## See Also  
-[MSBuild](/visual-studio/msbuild/msbuild1)
- [Talk to Us](/visual-studio/ide/talk-to-us)
+[MSBuild](/visualstudio/msbuild/msbuild1)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

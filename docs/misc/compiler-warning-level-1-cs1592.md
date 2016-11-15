@@ -2,7 +2,6 @@
 title: "Compiler Warning (level 1) CS1592 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,4 +38,4 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS1592
 Badly formed XML in included comments file -- 'reason'  
   
- A problem, reported as ***reason***, was found in the file specified by the [\<include>](../Topic/%3Cinclude%3E%20\(C%23%20Programming%20Guide\).md) tag.
+ A problem, reported as ***reason***, was found in the file specified by the [\<include>](http://msdn.microsoft.com/Library/a8a70302-6196-4643-bd09-ef33f411f18f) tag.

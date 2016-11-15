@@ -2,7 +2,6 @@
 title: "Miscellaneous Files projects can contain &lt;number&gt; items. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,4 +40,4 @@ The Miscellaneous Files project can save up to 256 items. This error generally o
 1.  Enter a number between one and 256 in the box.  
   
 ## See Also  
- [Documents, Environment, Options Dialog Box](/visual-studio/ide/reference/documents-environment-options-dialog-box)
+ [Documents, Environment, Options Dialog Box](/visualstudio/ide/reference/documents-environment-options-dialog-box)

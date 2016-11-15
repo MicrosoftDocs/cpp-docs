@@ -2,7 +2,6 @@
 title: "An embedded expression may not be used here | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,6 +44,6 @@ An embedded expression has been included at an unsupported location in an XML li
 -   Remove the embedded expression from the unsupported location.  
   
 ## See Also  
- [Embedded Expressions in XML](/dotnet/visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml)   
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [Embedded Expressions in XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml)   
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

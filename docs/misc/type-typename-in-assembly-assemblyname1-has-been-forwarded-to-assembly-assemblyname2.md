@@ -2,7 +2,6 @@
 title: "Type &#39;&lt;typename&gt;&#39; in assembly &#39;&lt;assemblyname1&gt;&#39; has been forwarded to assembly &#39;&lt;assemblyname2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -56,5 +55,5 @@ Type '\<typename>' in assembly '\<assemblyname1>' has been forwarded to assembly
 ## See Also  
  <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute>   
  [Type Forwarding (C++/CLI)](../windows/type-forwarding-cpp-cli.md)   
- [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)   
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

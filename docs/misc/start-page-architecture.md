@@ -2,7 +2,6 @@
 title: "Start Page Architecture | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,7 +33,7 @@ translation.priority.mt:
 # Start Page Architecture
 This document describes the architecture of the Start Page tool window that is included in Visual Studio. You can use this information to add or change items on the Start Page without changing its underlying structure.  
   
- The Visual Studio Start Page is written in Windows Presentation Foundation (WPF) Extensible Application Markup Language (XAML). For more information about XAML markup, see [XAML Overview (WPF)](../Topic/XAML%20Overview%20\(WPF\).md).  
+ The Visual Studio Start Page is written in Windows Presentation Foundation (WPF) Extensible Application Markup Language (XAML). For more information about XAML markup, see [XAML Overview (WPF)](http://msdn.microsoft.com/Library/a80db4cd-dd0f-479f-a45f-3740017c22e4).  
   
 ## Page Structure  
  The Start Page consists of an <xref:System.Windows.Controls.Image> element and two <xref:System.Windows.Controls.Grid> elements in a top level `Grid` element. The `Image` element spans the top of the tool window and contains the Visual Studio logo. Below the logo, the left `Grid` element contains the command buttons for new projects, the **Recent Projects** list, and an area for Start Page options. The right `Grid` element contains a <xref:System.Windows.Controls.TabControl> element that has a **Get Started** tab, a **Guidance and Resources** tab, and a **Latest News** tab. A central column is defined between the left and right `Grid` elements, but it has no content and is used only as a spacer.  
@@ -58,11 +57,11 @@ This document describes the architecture of the Start Page tool window that is i
 ### Right Column  
  The right column contains a `Grid` element at `Grid.Column="1"` and `Grid.Row="1"`. The grid contains a `TabControl` element that has three tabs.  
   
- You can add a tab by adding a <xref:System.Windows.Controls.TabItem> element to the tab control, as shown in [Walkthrough: Adding Custom XAML to the Start Page](../Topic/Walkthrough:%20Adding%20Custom%20XAML%20to%20the%20Start%20Page.md), or you can edit or remove existing tabs. Tabs appear left to right in the user interface (UI) in the same order as they appear top to bottom in the markup.  
+ You can add a tab by adding a <xref:System.Windows.Controls.TabItem> element to the tab control, as shown in [Walkthrough: Adding Custom XAML to the Start Page](http://msdn.microsoft.com/Library/9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6), or you can edit or remove existing tabs. Tabs appear left to right in the user interface (UI) in the same order as they appear top to bottom in the markup.  
   
  If you add an element to the right column grid outside of the tab control, we recommend that you define a new row or column in the grid to ensure that it appears as expected.  
   
 ## See Also  
- [Customizing the Start Page](/visual-studio/ide/customizing-the-start-page-for-visual-studio)   
+ [Customizing the Start Page](/visualstudio/ide/customizing-the-start-page-for-visual-studio)   
  [Start Page Best Practices](../misc/start-page-best-practices.md)   
- [Deploying Custom Start Pages](/visual-studio/extensibility/deploying-custom-start-pages)
+ [Deploying Custom Start Pages](/visualstudio/extensibility/deploying-custom-start-pages)

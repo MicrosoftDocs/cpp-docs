@@ -2,7 +2,6 @@
 title: "Porting to the Universal Windows Platform (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -127,4 +126,4 @@ could not find assembly 'platform.winmd': please specify the assembly search pat
   
 ## See Also  
  [Visual C++ Porting Guide](../porting/porting-to-the-universal-windows-platform-cpp.md)   
- [Develop apps for the Universal Windows Platform (UWP)](/visual-studio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp)
+ [Develop apps for the Universal Windows Platform (UWP)](/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp)

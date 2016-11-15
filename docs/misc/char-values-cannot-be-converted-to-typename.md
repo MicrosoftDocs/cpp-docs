@@ -2,7 +2,6 @@
 title: "&#39;Char&#39; values cannot be converted to &#39;&lt;typename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,4 +48,4 @@ translation.priority.mt:
 ## See Also  
  [NOT IN BUILD: Asc, AscW Functions](http://msdn.microsoft.com/en-us/6814bfec-12ba-41fb-b10e-bec99750d5e1)   
  [NOT IN BUILD: Val Function](http://msdn.microsoft.com/en-us/81650f77-9242-4ec1-8e04-e93b5daa451d)   
- [Char Data Type](/dotnet/visual-basic/language-reference/data-types/char-data-type)
+ [Char Data Type](/dotnet/articles/visual-basic/language-reference/data-types/char-data-type)

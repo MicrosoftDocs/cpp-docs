@@ -2,7 +2,6 @@
 title: "How to: Send Feedback About Visual Studio | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,4 +35,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Send Feedback About Visual Studio
-This content has been removed. For information, see [Talk to Us](/visual-studio/ide/talk-to-us).
+This content has been removed. For information, see [Talk to Us](/visualstudio/ide/talk-to-us).

@@ -2,7 +2,6 @@
 title: "Late-bound assignment to a field of value type &#39;&lt;typename&gt;&#39; is not valid when &#39;&lt;name&gt;&#39; is the result of a late-bound expression | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,5 +39,5 @@ You attempted a late-bound assignment that is not valid.
 -   Make the assignment early bound.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)   
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)   
  [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)

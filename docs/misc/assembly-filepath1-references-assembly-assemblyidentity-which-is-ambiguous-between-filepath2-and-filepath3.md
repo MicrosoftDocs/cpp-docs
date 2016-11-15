@@ -2,7 +2,6 @@
 title: "Assembly &#39;&lt;filepath1&gt;&#39; references assembly &#39;&lt;assemblyidentity&gt;&#39;, which is ambiguous between &#39;&lt;filepath2&gt;&#39; and &#39;&lt;filepath3&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,7 +43,7 @@ Assembly '\<filepath1>' references assembly '\<assemblyidentity>', which is ambi
   
  The *assembly identity* includes the assembly's name, version, public key if any, and culture. This information uniquely identifies the assembly.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42205  
   
@@ -56,8 +55,8 @@ Assembly '\<filepath1>' references assembly '\<assemblyidentity>', which is ambi
   
 ## See Also  
  [NOT IN BUILD: Assemblies](http://msdn.microsoft.com/en-us/6c5c7b30-fa78-4f40-b908-120d0743b0e6)   
- [Assemblies in the Common Language Runtime](../Topic/Assemblies%20in%20the%20Common%20Language%20Runtime.md)   
+ [Assemblies in the Common Language Runtime](http://msdn.microsoft.com/Library/2cfebe19-7436-49f1-bd99-3c4019f0b676)   
  [Assembly Benefits](../Topic/Assembly%20Benefits.md)   
- [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)   
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)   
  [NIB: Managing References](http://msdn.microsoft.com/en-us/910912ce-0dc9-4569-9274-32c44a20cb2c)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

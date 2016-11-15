@@ -2,7 +2,6 @@
 title: "Type &#39;&lt;typename&gt;&#39; and partial type &#39;&lt;typename&gt;&#39; declared in &#39;&lt;filename&gt;&#39; conflict in container &#39;&lt;containername&gt;&#39;, but are being merged because one of them is declared partial | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,12 +37,12 @@ translation.priority.mt:
 # Type &#39;&lt;typename&gt;&#39; and partial type &#39;&lt;typename&gt;&#39; declared in &#39;&lt;filename&gt;&#39; conflict in container &#39;&lt;containername&gt;&#39;, but are being merged because one of them is declared partial
 A class or structure is appears in multiple definitions in the same container type, and more than one definition is not marked `Partial`.  
   
- You must use the [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) keyword on at least one of the multiple definitions of a class or structure, but it is recommended that you use it on all the partial definitions.  
+ You must use the [Partial](/dotnet/articles/visual-basic/language-reference/modifiers/partial) keyword on at least one of the multiple definitions of a class or structure, but it is recommended that you use it on all the partial definitions.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40047  
   
 ### To correct this error  
   
--   Use the [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) keyword on every partial definition of the class or structure.
+-   Use the [Partial](/dotnet/articles/visual-basic/language-reference/modifiers/partial) keyword on every partial definition of the class or structure.

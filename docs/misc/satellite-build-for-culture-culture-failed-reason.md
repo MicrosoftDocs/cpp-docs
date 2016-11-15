@@ -2,7 +2,6 @@
 title: "Satellite build for culture &#39;culture&#39; failed. &lt;reason&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ A satellite assembly for a particular culture could not be built. This error wil
 -   When \<reason> is reported as "The assembly linker could not be launched. The file exists," empty the Temp folder in which the files are generated (for example, C:\Documents and Settings\\<user\>\Local Settings\Temp).  
   
 ## See Also  
- [Al.exe (Assembly Linker)](../Topic/Al.exe%20\(Assembly%20Linker\).md)
+ [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01)

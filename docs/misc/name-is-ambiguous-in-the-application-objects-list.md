@@ -2,7 +2,6 @@
 title: "&#39;&lt;name&gt;&#39; is ambiguous in the application objects &#39;&lt;list&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ You have provided a name that is ambiguous and therefore conflicts with another 
 -   Fully qualify the name.  
   
 ## See Also  
- [Namespace Statement](/dotnet/visual-basic/language-reference/statements/namespace-statement)
+ [Namespace Statement](/dotnet/articles/visual-basic/language-reference/statements/namespace-statement)

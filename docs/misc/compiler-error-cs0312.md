@@ -2,7 +2,6 @@
 title: "Compiler Error CS0312 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -67,4 +66,4 @@ class Program
  Although a nullable type is distinct from a non-nullable type, various kinds of conversions are allowed between nullable and non-nullable values.  
   
 ## See Also  
- [Nullable Types](/dotnet/csharp/programming-guide/nullable-types/index)
+ [Nullable Types](/dotnet/articles/csharp/programming-guide/nullable-types/index)

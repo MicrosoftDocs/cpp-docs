@@ -2,7 +2,6 @@
 title: "Property &#39;&lt;propertyname&gt;&#39; cannot be declared &#39;Default&#39; because it overrides a Property on the base &lt;type&gt; &#39;&lt;typename&gt;&#39; that is not default | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ You have attempted to declare a property `Default`, which is not a valid declara
 -   Remove the `Default` declaration.  
   
 ## See Also  
- [Default](/dotnet/visual-basic/language-reference/modifiers/default)
+ [Default](/dotnet/articles/visual-basic/language-reference/modifiers/default)

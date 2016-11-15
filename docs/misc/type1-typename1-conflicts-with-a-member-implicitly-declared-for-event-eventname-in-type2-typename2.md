@@ -2,7 +2,6 @@
 title: "&lt;type1&gt; &#39;&lt;typename1&gt;&#39; conflicts with a member implicitly declared for event &#39;&lt;eventname&gt;&#39; in &lt;type2&gt; &#39;&lt;typename2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,4 +45,4 @@ The name of a type member conflicts with the name of a member implicitly created
   
 ## See Also  
  [NotInBuild:Declaration Statements in Visual Basic](http://msdn.microsoft.com/en-us/81f3c398-f45c-4d95-80bf-aa39d1a0fb30)   
- [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)
+ [Events](/dotnet/articles/visual-basic/programming-guide/language-features/events/events)

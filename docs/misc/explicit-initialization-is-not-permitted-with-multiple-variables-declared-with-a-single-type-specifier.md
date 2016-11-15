@@ -2,7 +2,6 @@
 title: "Explicit initialization is not permitted with multiple variables declared with a single type specifier | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -53,5 +52,5 @@ Initialization is not allowed when multiple variables are declared on the same l
     ```  
   
 ## See Also  
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
- [Variable Declaration](/dotnet/visual-basic/programming-guide/language-features/variables/variable-declaration)
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)   
+ [Variable Declaration](/dotnet/articles/visual-basic/programming-guide/language-features/variables/variable-declaration)

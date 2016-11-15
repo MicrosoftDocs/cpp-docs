@@ -2,7 +2,6 @@
 title: "How to: Add XML Property Data - redirection | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,4 +22,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Add XML Property Data - redirection
-This topic has been consolidated with another topic. Please go to [Customizing File Storage and XML Serialization](/visual-studio/modeling/customizing-file-storage-and-xml-serialization).
+This topic has been consolidated with another topic. Please go to [Customizing File Storage and XML Serialization](/visualstudio/modeling/customizing-file-storage-and-xml-serialization).

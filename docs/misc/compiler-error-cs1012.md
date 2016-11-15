@@ -2,7 +2,6 @@
 title: "Compiler Error CS1012 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1012
 Too many characters in character literal  
   
- An attempt was made to initialize a [char](/dotnet/csharp/language-reference/keywords/char) constant with more than one character.  
+ An attempt was made to initialize a [char](/dotnet/articles/csharp/language-reference/keywords/char) constant with more than one character.  
   
  CS1012 can also occur when doing data binding. For example the following line will give an error:  
   

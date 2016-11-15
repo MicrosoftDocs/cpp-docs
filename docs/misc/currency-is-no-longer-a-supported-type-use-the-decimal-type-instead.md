@@ -2,7 +2,6 @@
 title: "&#39;Currency&#39; is no longer a supported type; use the &#39;Decimal&#39; type instead | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ The `Currency` data type has been replaced by the `Decimal` data type.
 -   Use the `Decimal` data type instead of `Currency`.  
   
 ## See Also  
- [Decimal Data Type](/dotnet/visual-basic/language-reference/data-types/decimal-data-type)   
+ [Decimal Data Type](/dotnet/articles/visual-basic/language-reference/data-types/decimal-data-type)   
  [Data Type Changes in Visual Basic](http://msdn.microsoft.com/en-us/0aca9f54-7231-49a5-ab26-a68ca79d08f3)

@@ -2,7 +2,6 @@
 title: "find (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +45,7 @@ template<class _InIt, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `find`. For more information, see [find](../Topic/find%20\(STL\).md).  
+ This function behaves the same as the STL function `find`. For more information, see [find](http://msdn.microsoft.com/Library/021e9ef9-8817-409f-92ee-cd7104867361).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

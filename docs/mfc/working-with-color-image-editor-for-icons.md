@@ -2,7 +2,6 @@
 title: "Working with Color (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +45,7 @@ The Image editor contains many features that specifically handle and customize c
   
  All colors for monochrome and 16-color images are shown in the Colors palette in the Colors window. In addition to the 16 standard colors, you can create your own custom colors. Changing any of the colors in the palette will immediately change the corresponding color in the image.  
   
- When working with 256-color icon and cursor images, the Colors property in the [Properties window](/visual-studio/ide/reference/properties-window) is used. For more information, see [Creating a 256-color icon or cursor](../mfc/creating-a-256-color-icon-or-cursor-image-editor-for-icons.md).  
+ When working with 256-color icon and cursor images, the Colors property in the [Properties window](/visualstudio/ide/reference/properties-window) is used. For more information, see [Creating a 256-color icon or cursor](../mfc/creating-a-256-color-icon-or-cursor-image-editor-for-icons.md).  
   
 > [!NOTE]
 >  Using the Image Editor, you can view 32-bit images, but you cannot edit them.  
@@ -71,7 +70,7 @@ The Image editor contains many features that specifically handle and customize c
   
 -   [Colors Window](../windows/colors-window-image-editor-for-icons.md)  
   
- For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
+ For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
 ## Requirements  
  None  

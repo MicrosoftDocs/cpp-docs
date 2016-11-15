@@ -2,7 +2,6 @@
 title: "Extension Analyzer | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,7 +49,7 @@ The **Extension Analyzer** captures and logs most common extension load failures
 >  You may receive a message asking you to turn on Fusion logging. To do so, select a location for the log files. You may be asked to restart all instances of Visual Studio before continuing.  
   
 ## Log Viewer  
- You can see logging messages with the **Extension Log Viewer** if you are running a project that has logging turned on (by adding /log to the command line arguments of your project). For more information, see [/Log (devenv.exe)](/visual-studio/ide/reference/log-devenv-exe). The **Extension Log Viewer** window displays the date, the listener, the entry type (type of message), the error type, class/interface information, and the log message. You can sort and filter the information.  
+ You can see logging messages with the **Extension Log Viewer** if you are running a project that has logging turned on (by adding /log to the command line arguments of your project). For more information, see [/Log (devenv.exe)](/visualstudio/ide/reference/log-devenv-exe). The **Extension Log Viewer** window displays the date, the listener, the entry type (type of message), the error type, class/interface information, and the log message. You can sort and filter the information.  
   
 ## Common Extension Loading Issues  
  Some of the typical reasons for an extension load failure in [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] are:  
@@ -62,4 +61,4 @@ The **Extension Analyzer** captures and logs most common extension load failures
 -   Improper registration. Verify that the extension is signed appropriately and that the VSPackage is registered by using the correct public key.  
   
 ## See Also  
- [Managing VSPackages](/visual-studio/extensibility/managing-vspackages)
+ [Managing VSPackages](/visualstudio/extensibility/managing-vspackages)

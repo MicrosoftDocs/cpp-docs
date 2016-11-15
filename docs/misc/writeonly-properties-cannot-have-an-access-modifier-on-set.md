@@ -2,7 +2,6 @@
 title: "&#39;WriteOnly&#39; properties cannot have an access modifier on &#39;Set&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # &#39;WriteOnly&#39; properties cannot have an access modifier on &#39;Set&#39;
-A `WriteOnly` property declaration specifies access levels in both the [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement) and the [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement).  
+A `WriteOnly` property declaration specifies access levels in both the [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement) and the [Set Statement](/dotnet/articles/visual-basic/language-reference/statements/set-statement).  
   
  You can always specify an access level for the property. In addition, you can specify a different access level for at most one of its property procedures (`Get` or `Set`), provided it is more restrictive than the property's access level. You cannot specify access levels for both of the property procedures.  
   
@@ -47,5 +46,5 @@ A `WriteOnly` property declaration specifies access levels in both the [Property
 -   Remove the access modifier from the `Set` statement. It represents the entire `WriteOnly` property, and you cannot have two access levels for the property.  
   
 ## See Also  
- [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)   
- [How to: Declare a Property with Mixed Access Levels](../Topic/How%20to:%20Declare%20a%20Property%20with%20Mixed%20Access%20Levels%20\(Visual%20Basic\).md)
+ [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)   
+ [How to: Declare a Property with Mixed Access Levels](http://msdn.microsoft.com/Library/fdbb2d97-279a-4956-b26c-cbdfbc34915a)

@@ -2,7 +2,6 @@
 title: "Unable to create XML documentation file &#39;&lt;name&gt;&#39;: &lt;message&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -56,11 +55,11 @@ The XML documentation file cannot be created due to an error.
   
 -   [XML comment type parameter must have a 'name' attribute](../misc/xml-comment-type-parameter-must-have-a-name-attribute.md).  
   
--   [XML comment exception must have a 'cref' attribute](/dotnet/visual-basic/language-reference/error-messages/xml-comment-exception-must-have-a-cref-attribute).  
+-   [XML comment exception must have a 'cref' attribute](/dotnet/articles/visual-basic/language-reference/error-messages/xml-comment-exception-must-have-a-cref-attribute).  
   
 ### To correct this error  
   
 -   Consult the provided message for recommendations.  
   
 ## See Also  
- [How to: Create XML Documentation](../Topic/How%20to:%20Create%20XML%20Documentation%20in%20Visual%20Basic.md)
+ [How to: Create XML Documentation](http://msdn.microsoft.com/Library/27b5b06c-09b9-496a-8245-f9542d846230)

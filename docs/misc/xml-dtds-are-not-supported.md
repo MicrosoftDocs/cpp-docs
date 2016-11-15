@@ -2,7 +2,6 @@
 title: "XML DTDs are not supported | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,6 +44,6 @@ A Document Type Definition (DTD) has been specified as an XML literal.
 -   Remove the DTD. Use XML Schema Definition (XSD) to specify the schema for an XML document.  
   
 ## See Also  
- [XML IntelliSense in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/xml/xml-intellisense)   
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [XML IntelliSense in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/xml/xml-intellisense)   
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

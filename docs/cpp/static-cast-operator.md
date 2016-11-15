@@ -2,7 +2,6 @@
 title: "static_cast Operator | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +45,7 @@ static_cast <type-id> ( expression )
 ```  
   
 ## Remarks  
- In standard C++, no run-time type check is made to help ensure the safety of the conversion. In C++/CX, a compile time and runtime check are performed. For more information, see [Casting](../Topic/Casting%20\(C++-CX\).md).  
+ In standard C++, no run-time type check is made to help ensure the safety of the conversion. In C++/CX, a compile time and runtime check are performed. For more information, see [Casting](http://msdn.microsoft.com/Library/5247f6c7-6a0a-4021-97c9-21c868bd9455).  
   
  The `static_cast` operator can be used for operations such as converting a pointer to a base class to a pointer to a derived class. Such conversions are not always safe.  
   

@@ -2,7 +2,6 @@
 title: "Compiler Error CS1101 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -61,6 +60,6 @@ public static class Extensions
 ```  
   
 ## See Also  
- [Extension Methods](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)   
- [this](/dotnet/csharp/language-reference/keywords/this)   
- [ref](/dotnet/csharp/language-reference/keywords/ref)
+ [Extension Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/extension-methods)   
+ [this](/dotnet/articles/csharp/language-reference/keywords/this)   
+ [ref](/dotnet/articles/csharp/language-reference/keywords/ref)

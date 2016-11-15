@@ -2,7 +2,6 @@
 title: "Specified DLL function not found | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,5 +41,5 @@ The dynamic-link library (DLL) in a user library reference was found, but the DL
 2.  Make sure the DLL name and alias are correct.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)   
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)   
  [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)

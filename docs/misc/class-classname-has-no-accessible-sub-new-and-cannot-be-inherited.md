@@ -2,7 +2,6 @@
 title: "Class &#39;&lt;classname&gt;&#39; has no accessible &#39;Sub New&#39; and cannot be inherited | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Class &#39;&lt;classname&gt;&#39; has no accessible &#39;Sub New&#39; and cannot be inherited
-A class uses an [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement) to specify a base class, but it cannot access any constructor on the intended base class.  
+A class uses an [Inherits Statement](/dotnet/articles/visual-basic/language-reference/statements/inherits-statement) to specify a base class, but it cannot access any constructor on the intended base class.  
   
  This can happen if the intended base class has no constructors or if it has constructors with access levels that prevent access from another class.  
   
@@ -51,8 +50,8 @@ A class uses an [Inherits Statement](/dotnet/visual-basic/language-reference/sta
 2.  If you cannot change the access levels of the intended base class constructors, then inherit from a different class or not at all.  
   
 ## See Also  
- [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement)   
- [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)   
+ [Inherits Statement](/dotnet/articles/visual-basic/language-reference/statements/inherits-statement)   
+ [Inheritance Basics](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)   
  [MyBase - delete](http://msdn.microsoft.com/en-us/52491d06-6451-4f6f-9aa6-8fab59bbc2b9)   
- [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator)   
- [Access Levels in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/access-levels)
+ [New Operator](/dotnet/articles/visual-basic/language-reference/operators/new-operator)   
+ [Access Levels in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/access-levels)

@@ -2,7 +2,6 @@
 title: "set::find (STL Samples) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,4 +33,4 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # set::find (STL Samples)
-Topic deprecated, see [set::find](../Topic/set::find.md).  
+Topic deprecated, see [set::find](http://msdn.microsoft.com/Library/11aa5a57-db54-4ada-bbda-80dc27a23114).  

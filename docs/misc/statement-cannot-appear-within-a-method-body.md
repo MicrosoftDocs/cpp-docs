@@ -2,7 +2,6 @@
 title: "Statement cannot appear within a method body | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ A procedure contains an invalid statement such as another procedure declaration.
 -   Remove the procedure declaration, or move it outside the enclosing procedure.  
   
 ## See Also  
- [Procedures](/dotnet/visual-basic/language-reference/procedures/index)
+ [Procedures](/dotnet/articles/visual-basic/language-reference/procedures/index)

@@ -2,7 +2,6 @@
 title: "The targeted version of the .NET Compact Framework does not support using the Ansi, Auto or Unicode modifier | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,6 +44,6 @@ The version of the .NET Compact Framework you are working with does not support 
 -   Remove the modifier.  
   
 ## See Also  
- [Ansi](/dotnet/visual-basic/language-reference/modifiers/ansi)   
- [Auto](/dotnet/visual-basic/language-reference/modifiers/auto)   
- [Unicode](/dotnet/visual-basic/language-reference/modifiers/unicode)
+ [Ansi](/dotnet/articles/visual-basic/language-reference/modifiers/ansi)   
+ [Auto](/dotnet/articles/visual-basic/language-reference/modifiers/auto)   
+ [Unicode](/dotnet/articles/visual-basic/language-reference/modifiers/unicode)

@@ -2,7 +2,6 @@
 title: "Path &#39;&lt;pathname&gt;&#39; not found | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,5 +39,5 @@ The operating system is unable to find the path specified path during a file-acc
 1.  Ensure that the path includes the required elements.  
   
 ## See Also  
- [My.Computer.FileSystem Object](/dotnet/visual-basic/language-reference/objects/my-computer-filesystem-object)   
- [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)
+ [My.Computer.FileSystem Object](/dotnet/articles/visual-basic/language-reference/objects/my-computer-filesystem-object)   
+ [How to: Parse File Paths](http://msdn.microsoft.com/Library/c1bd99c9-8160-456a-b5ab-60a49139b923)

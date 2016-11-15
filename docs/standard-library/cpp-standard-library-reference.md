@@ -2,7 +2,6 @@
 title: "C++ Standard Library Reference | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,5 +50,4 @@ A C++ program can call on a large number of functions from this conforming imple
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)  
  Provides links to reference topics discussing the Standard C++ Library header files, with code examples.  
   
-
 

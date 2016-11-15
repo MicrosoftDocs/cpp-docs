@@ -2,7 +2,6 @@
 title: "&#39;Set&#39; is already declared | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ A `Set` statement appears more than once in a code block. The `Set` statement de
 -   Remove the redundant `Set` statement.  
   
 ## See Also  
- [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement)
+ [Set Statement](/dotnet/articles/visual-basic/language-reference/statements/set-statement)

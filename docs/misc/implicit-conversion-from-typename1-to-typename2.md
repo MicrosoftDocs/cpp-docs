@@ -2,7 +2,6 @@
 title: "Implicit conversion from &#39;&lt;typename1&gt;&#39; to &#39;&lt;typename2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,7 +37,7 @@ translation.priority.mt:
 # Implicit conversion from &#39;&lt;typename1&gt;&#39; to &#39;&lt;typename2&gt;&#39;
 An expression or an assignment statement takes a value of one data type and converts it to another type. Because no conversion keyword is used, the conversion is *implicit*.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42016  
   
@@ -49,5 +48,5 @@ An expression or an assignment statement takes a value of one data type and conv
 -   Use `CType` or one of the other conversion keywords so that the conversion is *explicit*.  
   
 ## See Also  
- [Implicit and Explicit Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)   
- [Type Conversion Functions](/dotnet/visual-basic/language-reference/functions/type-conversion-functions)
+ [Implicit and Explicit Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)   
+ [Type Conversion Functions](/dotnet/articles/visual-basic/language-reference/functions/type-conversion-functions)

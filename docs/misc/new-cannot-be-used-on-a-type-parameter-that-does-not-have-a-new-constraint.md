@@ -2,7 +2,6 @@
 title: "&#39;New&#39; cannot be used on a type parameter that does not have a &#39;New&#39; constraint | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # &#39;New&#39; cannot be used on a type parameter that does not have a &#39;New&#39; constraint
-A declaration statement uses a [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator) clause specifying a type parameter as the type to be created, and the type parameter is declared without a `New` constraint.  
+A declaration statement uses a [New Operator](/dotnet/articles/visual-basic/language-reference/operators/new-operator) clause specifying a type parameter as the type to be created, and the type parameter is declared without a `New` constraint.  
   
  A *constraint* on a type parameter imposes a requirement on any type argument passed to that type parameter when the generic type is created. The `New` constraint specifies that the type argument must expose a parameterless constructor that the creating code can access. This is what allows a `New` clause in a declaration statement to create an instance of that type.  
   
@@ -49,5 +48,5 @@ A declaration statement uses a [New Operator](/dotnet/visual-basic/language-refe
 -   If you cannot require the type argument to expose an accessible parameterless constructor, remove the `New` clause from the declaration statement. You cannot guarantee that any type argument passed to that type parameter permits creation of an instance.  
   
 ## See Also  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
- [Type List](/dotnet/visual-basic/language-reference/statements/type-list)
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Type List](/dotnet/articles/visual-basic/language-reference/statements/type-list)

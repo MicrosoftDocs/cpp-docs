@@ -2,7 +2,6 @@
 title: "Property without a &#39;ReadOnly&#39; or &#39;WriteOnly&#39; specifier must provide both a &#39;Get&#39; and a &#39;Set&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,6 +46,6 @@ If a property is not declared as `ReadOnly` or `WriteOnly`, it must supply proce
 2.  Verify that other procedures within the `Property` declaration are correctly terminated.  
   
 ## See Also  
- [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
- [Get Statement](/dotnet/visual-basic/language-reference/statements/get-statement)   
- [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement)
+ [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement)   
+ [Get Statement](/dotnet/articles/visual-basic/language-reference/statements/get-statement)   
+ [Set Statement](/dotnet/articles/visual-basic/language-reference/statements/set-statement)

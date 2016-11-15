@@ -2,7 +2,6 @@
 title: "Loop control variable cannot be a property or a late-bound indexed array | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ The variable used to iterate through a `For` loop must be of a numeric data type
 -   Change the declaration of the loop control variable to specify `Integer`, `Short`, `Long`, `Byte`, `Single`, `Double`, or `Decimal`.  
   
 ## See Also  
- [For...Next Statement](/dotnet/visual-basic/language-reference/statements/for-next-statement)
+ [For...Next Statement](/dotnet/articles/visual-basic/language-reference/statements/for-next-statement)

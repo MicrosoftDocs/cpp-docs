@@ -2,7 +2,6 @@
 title: "Operator &#39;&lt;operatorname&gt;&#39; is not defined for types &#39;&lt;type1&gt;&#39; and &#39;&lt;type2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,6 +44,6 @@ You have attempted to use a binary operator to perform an operation that is not 
 -   Check the two elements and make sure they are compatible.  
   
 ## See Also  
- [Operators and Expressions](/dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/index)   
- [Efficient Combination of Operators](/dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/efficient-combination-of-operators)   
- [Operator Precedence in Visual Basic](/dotnet/visual-basic/language-reference/operators/operator-precedence)
+ [Operators and Expressions](/dotnet/articles/visual-basic/programming-guide/language-features/operators-and-expressions/index)   
+ [Efficient Combination of Operators](/dotnet/articles/visual-basic/programming-guide/language-features/operators-and-expressions/efficient-combination-of-operators)   
+ [Operator Precedence in Visual Basic](/dotnet/articles/visual-basic/language-reference/operators/operator-precedence)

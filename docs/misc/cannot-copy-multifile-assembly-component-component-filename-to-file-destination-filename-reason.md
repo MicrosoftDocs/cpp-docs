@@ -2,7 +2,6 @@
 title: "Cannot copy multifile assembly component &#39;component_filename&#39; to file &#39;destination_filename&#39;. &lt;reason.&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,4 +49,4 @@ The specified component was not copied to the bin directory.
 -   Restart [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].  
   
 ## See Also  
- [Debugging Web Applications: Errors and Troubleshooting](../Topic/Debugging%20Web%20Applications:%20Errors%20and%20Troubleshooting.md)
+ [Debugging Web Applications: Errors and Troubleshooting](http://msdn.microsoft.com/Library/63f2742e-2031-48a8-9773-d9b547c62230)

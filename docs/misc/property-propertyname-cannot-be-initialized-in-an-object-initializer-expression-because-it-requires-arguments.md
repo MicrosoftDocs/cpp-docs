@@ -2,7 +2,6 @@
 title: "Property &#39;&lt;propertyname&gt;&#39; cannot be initialized in an object initializer expression because it requires arguments | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -73,4 +72,4 @@ End Class
 ## See Also  
  [NOT IN BUILD: Default Properties](http://msdn.microsoft.com/en-us/a70f2a27-8176-4858-935e-f25afdd43ab5)   
  [NOT IN BUILD: Properties and Property Procedures](http://msdn.microsoft.com/en-us/23e2a1ec-7e9d-4109-8940-c703d981077b)   
- [Object Initializers: Named and Anonymous Types](../Topic/Object%20Initializers:%20Named%20and%20Anonymous%20Types%20\(Visual%20Basic\).md)
+ [Object Initializers: Named and Anonymous Types](http://msdn.microsoft.com/Library/e2df3807-a70f-49dd-ac94-f1e07f472b1b)

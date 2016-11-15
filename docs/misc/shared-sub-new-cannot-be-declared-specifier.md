@@ -2,7 +2,6 @@
 title: "Shared &#39;Sub New&#39; cannot be declared &#39;&lt;specifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ You have attempted to use a specifier in a `Shared Sub New` declaration, which i
 -   Remove the specifier.  
   
 ## See Also  
- [Shared](/dotnet/visual-basic/language-reference/modifiers/shared)   
- [Sub Statement](/dotnet/visual-basic/language-reference/statements/sub-statement)
+ [Shared](/dotnet/articles/visual-basic/language-reference/modifiers/shared)   
+ [Sub Statement](/dotnet/articles/visual-basic/language-reference/statements/sub-statement)

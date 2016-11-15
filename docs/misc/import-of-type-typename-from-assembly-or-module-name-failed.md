@@ -2,7 +2,6 @@
 title: "Import of type &#39;&lt;typename&gt;&#39; from assembly or module &#39;&lt;name&gt;&#39; failed | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ Make sure that all referenced libraries are compatible with each other.
 -   Verify that the files containing the referenced type are not corrupt.  
   
 ## See Also  
- [Imports Statement (.NET Namespace and Type)](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)   
- [References and the Imports Statement](/dotnet/visual-basic/programming-guide/program-structure/references-and-the-imports-statement)
+ [Imports Statement (.NET Namespace and Type)](/dotnet/articles/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)   
+ [References and the Imports Statement](/dotnet/articles/visual-basic/programming-guide/program-structure/references-and-the-imports-statement)

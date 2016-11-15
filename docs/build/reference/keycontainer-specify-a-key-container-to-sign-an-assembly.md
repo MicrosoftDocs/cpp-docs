@@ -2,7 +2,6 @@
 title: "-KEYCONTAINER (Specify a Key Container to Sign an Assembly) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,7 +49,7 @@ translation.priority.ht:
  Container that contains the key. Place the string in double quotation marks (" ") if it contains a space.  
   
 ## Remarks  
- The linker creates a signed assembly by inserting a public key into the assembly manifest and signing the final assembly with the private key. To generate a key file, type [sn -k](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md) `file` at the command line. **sn -i** installs the key pair into a container.  
+ The linker creates a signed assembly by inserting a public key into the assembly manifest and signing the final assembly with the private key. To generate a key file, type [sn -k](http://msdn.microsoft.com/Library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) `file` at the command line. **sn -i** installs the key pair into a container.  
   
  If you compile with [/LN](../../build/reference/ln-create-msil-module.md), the name of the key file is held in the module and incorporated into the assembly that is created when you compile an assembly that includes an explicit reference to the module, via [#using](../../preprocessor/hash-using-directive-cpp.md), or when linking with [/ASSEMBLYMODULE](../../build/reference/assemblymodule-add-a-msil-module-to-the-assembly.md).  
   

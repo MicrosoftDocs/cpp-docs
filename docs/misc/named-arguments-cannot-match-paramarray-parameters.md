@@ -2,7 +2,6 @@
 title: "Named arguments cannot match ParamArray parameters | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,6 +39,6 @@ Parameter arrays must be passed by value.
 1.  Pass the arguments `ByVal`, rather than by naming them.  
   
 ## See Also  
- [Parameter Arrays](/dotnet/visual-basic/language-reference/procedures/parameter-arrays)   
- [Passing Arguments by Value and by Reference](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)   
- [Passing Arguments by Position and by Name](/dotnet/visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name)
+ [Parameter Arrays](/dotnet/articles/visual-basic/language-reference/procedures/parameter-arrays)   
+ [Passing Arguments by Value and by Reference](/dotnet/articles/visual-basic/language-reference/procedures/passing-arguments-by-value-and-by-reference)   
+ [Passing Arguments by Position and by Name](/dotnet/articles/visual-basic/language-reference/procedures/passing-arguments-by-position-and-by-name)

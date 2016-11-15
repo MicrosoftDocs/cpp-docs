@@ -2,7 +2,6 @@
 title: "Evaluation of expression or statement stopped | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ The **Stop Evaluation** menu item was selected, causing evaluation to stop.
 -   Allow execution to continue without selecting **Stop Evaluation**.  
   
 ## See Also  
- [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

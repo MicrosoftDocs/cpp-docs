@@ -2,7 +2,6 @@
 title: "Compiler Error CS1928 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -69,4 +68,4 @@ static class Ext
  This error is often accompanied by CS1503: Argument 'n': cannot convert from 'typeA' to 'typeB'.  
   
 ## See Also  
- [Extension Methods](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)
+ [Extension Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/extension-methods)

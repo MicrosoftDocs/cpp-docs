@@ -2,7 +2,6 @@
 title: "Compiler Error CS0161 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0161
 'method': not all code paths return a value  
   
- A method that returns a value must have a `return` statement in all code paths. For more information, see [Methods](/dotnet/csharp/programming-guide/classes-and-structs/methods).  
+ A method that returns a value must have a `return` statement in all code paths. For more information, see [Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/methods).  
   
  The following sample generates CS0161:  
   

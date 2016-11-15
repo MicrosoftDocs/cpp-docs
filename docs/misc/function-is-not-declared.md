@@ -2,7 +2,6 @@
 title: "&#39;&lt;function&gt;&#39; is not declared | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ translation.priority.mt:
 -   Use the appropriate function from the `Microsoft.VisualBasic` namespace.  
   
 ## See Also  
- [Visual Basic Runtime Library Members](/dotnet/visual-basic/language-reference/runtime-library-members)
+ [Visual Basic Runtime Library Members](/dotnet/articles/visual-basic/language-reference/runtime-library-members)

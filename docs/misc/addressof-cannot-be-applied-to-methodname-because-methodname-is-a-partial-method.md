@@ -2,7 +2,6 @@
 title: "&#39;AddressOf&#39; cannot be applied to &#39;methodname&#39; because &#39;methodname&#39; is a partial method | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -57,5 +56,5 @@ A partial method has been passed to the `AddressOf` operator. Partial methods ar
     ```  
   
 ## See Also  
- [AddressOf Operator](/dotnet/visual-basic/language-reference/operators/addressof-operator)   
- [Partial Methods](/dotnet/visual-basic/language-reference/procedures/partial-methods)
+ [AddressOf Operator](/dotnet/articles/visual-basic/language-reference/operators/addressof-operator)   
+ [Partial Methods](/dotnet/articles/visual-basic/language-reference/procedures/partial-methods)

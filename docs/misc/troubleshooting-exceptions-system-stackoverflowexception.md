@@ -2,7 +2,6 @@
 title: "Troubleshooting Exceptions: System.StackOverflowException | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,9 +46,9 @@ A <xref:System.StackOverflowException> exception is thrown when the execution st
 ## Remarks  
  You cannot catch stack overflow exceptions, because the exception-handling code may require the stack. Instead, when a stack overflow occurs in a normal application, the Common Language Runtime (CLR) terminates the process.  
   
- An application that hosts the CLR can change the default behavior and specify that the CLR unload the application domain where the exception occurs, but lets the process continue. For more information, see [ICLRPolicyManager Interface](../Topic/ICLRPolicyManager%20Interface.md).  
+ An application that hosts the CLR can change the default behavior and specify that the CLR unload the application domain where the exception occurs, but lets the process continue. For more information, see [ICLRPolicyManager Interface](http://msdn.microsoft.com/Library/5c834aa1-f2db-408a-b230-c7bec093d364).  
   
 ## See Also  
  <xref:System.StackOverflowException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Loop Structures](/dotnet/visual-basic/programming-guide/language-features/control-flow/loop-structures)
+ [Loop Structures](/dotnet/articles/visual-basic/programming-guide/language-features/control-flow/loop-structures)

@@ -2,7 +2,6 @@
 title: "Constructors cannot implement interface methods | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ You have attempted to use the `New` keyword to implement an interface method, wh
 -   Implement interfaces with the `Implements` keyword.  
   
 ## See Also  
- [Implements Statement](/dotnet/visual-basic/language-reference/statements/implements-statement)   
+ [Implements Statement](/dotnet/articles/visual-basic/language-reference/statements/implements-statement)   
  [NOT IN BUILD: Interfaces Overview](http://msdn.microsoft.com/en-us/f96bb470-c1b8-4c73-89bc-6f536b798da1)

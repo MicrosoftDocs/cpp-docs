@@ -2,7 +2,6 @@
 title: "Compiler Error CS1654 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,10 +40,10 @@ Cannot modify members of 'variable' because it is a 'read-only variable type'
   
  This error occurs when you try to modify members of a variable which is read-only because it is in a special construct.  
   
- One common area that this occurs is within [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) loops. It is a compile-time error to modify the value of the collection elements. Therefore, you cannot make any modifications to elements that are [value types](/dotnet/csharp/language-reference/keywords/value-types), including [structs](/dotnet/csharp/programming-guide/classes-and-structs/structs). In a collection whose elements are [reference types](/dotnet/csharp/language-reference/keywords/reference-types), you can modify accessible members of each element, but any try to add or remove or replace complete elements will generate [Compiler Error CS1656](/dotnet/csharp/language-reference/compiler-messages/cs1656).  
+ One common area that this occurs is within [foreach](/dotnet/articles/csharp/language-reference/keywords/foreach-in) loops. It is a compile-time error to modify the value of the collection elements. Therefore, you cannot make any modifications to elements that are [value types](/dotnet/articles/csharp/language-reference/keywords/value-types), including [structs](/dotnet/articles/csharp/programming-guide/classes-and-structs/structs). In a collection whose elements are [reference types](/dotnet/articles/csharp/language-reference/keywords/reference-types), you can modify accessible members of each element, but any try to add or remove or replace complete elements will generate [Compiler Error CS1656](/dotnet/articles/csharp/language-reference/compiler-messages/cs1656).  
   
 ## Example  
- The following example generates error CS1654 because `Book` is a `struct`. To fix the error, change the `struct` to a [class](/dotnet/csharp/language-reference/keywords/class).  
+ The following example generates error CS1654 because `Book` is a `struct`. To fix the error, change the `struct` to a [class](/dotnet/articles/csharp/language-reference/keywords/class).  
   
 ```  
 using System.Collections.Generic;  

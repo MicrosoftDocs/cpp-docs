@@ -2,7 +2,6 @@
 title: "Compiler Warning (level 1) CS1635 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS1635
 Cannot restore warning 'warning code' because it was disabled globally  
   
- This warning occurs if you use the **/nowarn** command line option or project setting to disable a warning for the entire compilation unit, but you use `#pragma warning restore` to attempt to restore that warning. To resolve this error, remove the /nowarn command line option or project setting, or remove the `#pragma warning restore` for any warnings you are disabling via the command line or project settings. For more information, see the [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) topic.  
+ This warning occurs if you use the **/nowarn** command line option or project setting to disable a warning for the entire compilation unit, but you use `#pragma warning restore` to attempt to restore that warning. To resolve this error, remove the /nowarn command line option or project setting, or remove the `#pragma warning restore` for any warnings you are disabling via the command line or project settings. For more information, see the [#pragma warning](/dotnet/articles/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) topic.  
   
  The following sample generates CS1635:  
   

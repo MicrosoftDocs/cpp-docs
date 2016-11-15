@@ -2,7 +2,6 @@
 title: "Compiler Error CS0157 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0157
 Control cannot leave the body of a finally clause  
   
- All of the statements in a [finally](/dotnet/csharp/language-reference/keywords/try-catch-finally) clause must execute. For more information, see [Exception Handling Statements](/dotnet/csharp/language-reference/keywords/exception-handling-statements) and [Exceptions and Exception Handling](/dotnet/csharp/programming-guide/exceptions/exceptions-and-exception-handling).  
+ All of the statements in a [finally](/dotnet/articles/csharp/language-reference/keywords/try-catch-finally) clause must execute. For more information, see [Exception Handling Statements](/dotnet/articles/csharp/language-reference/keywords/exception-handling-statements) and [Exceptions and Exception Handling](/dotnet/articles/csharp/programming-guide/exceptions/exceptions-and-exception-handling).  
   
  The following sample generates CS0157:  
   

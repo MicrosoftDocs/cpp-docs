@@ -2,7 +2,6 @@
 title: "Expression expected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ An operator such as `+` or `=` requires an expression for its right operand, but
 -   Supply a valid expression for the right operand of the operator.  
   
 ## See Also  
- [Operators and Expressions](/dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/index)   
+ [Operators and Expressions](/dotnet/articles/visual-basic/programming-guide/language-features/operators-and-expressions/index)   
  [NotInBuild:Assignment Statements](http://msdn.microsoft.com/en-us/eb4f91e9-fbbf-45ca-b21d-e8ae069de4f9)

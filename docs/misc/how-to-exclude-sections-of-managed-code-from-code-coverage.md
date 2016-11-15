@@ -2,7 +2,6 @@
 title: "How to: Exclude sections of managed code from code coverage | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -33,4 +32,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Exclude sections of managed code from code coverage
-The material in this group of topics has been consolidated into [Using Code Coverage to Determine How Much Code is being Tested](/visual-studio/test/using-code-coverage-to-determine-how-much-code-is-being-tested).
+The material in this group of topics has been consolidated into [Using Code Coverage to Determine How Much Code is being Tested](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested).

@@ -2,7 +2,6 @@
 title: "File information cannot be queried if the file does not exist | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,6 +37,6 @@ An attempt has been made to query a <xref:System.IO.FileInfo> object for informa
 -   Check that you are supplying the correct file name.  
   
 ## See Also  
- [My.Computer.FileSystem Object](/dotnet/visual-basic/language-reference/objects/my-computer-filesystem-object)   
+ [My.Computer.FileSystem Object](/dotnet/articles/visual-basic/language-reference/objects/my-computer-filesystem-object)   
  [How to: Get Information About a File in Visual Basic](http://msdn.microsoft.com/en-us/ca0720ec-f40e-4c11-9748-0ce1685c78f0)   
- [How to: Parse File Paths](../Topic/How%20to:%20Parse%20File%20Paths%20in%20Visual%20Basic.md)
+ [How to: Parse File Paths](http://msdn.microsoft.com/Library/c1bd99c9-8160-456a-b5ab-60a49139b923)

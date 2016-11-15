@@ -2,7 +2,6 @@
 title: "Argument &lt;argumentname&gt; cannot be an empty string or Nothing | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,6 +39,6 @@ The argument requires a value other than an empty string ("") or `Nothing`. This
 -   Supply a valid value for the argument.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)   
- [Nothing](/dotnet/visual-basic/language-reference/nothing)   
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)   
+ [Nothing](/dotnet/articles/visual-basic/language-reference/nothing)   
  [Troubleshooting Exceptions: System.NullReferenceException](../misc/troubleshooting-exceptions-system-nullreferenceexception.md)

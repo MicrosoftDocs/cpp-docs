@@ -2,7 +2,6 @@
 title: "Sorry, we don&#39;t have specifics on this C# error | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -920,10 +919,10 @@ We’re sorry, but we don’t have any specific information about this error. Yo
  Provides a forum for questions about and issues with [!INCLUDE[csprcs](../ide/includes/csprcs_md.md)].  
   
  Also see:  
- [Additional Resources for Visual C# Programmers](/dotnet/csharp/getting-started/additional-resources)  
+ [Additional Resources for Visual C# Programmers](/dotnet/articles/csharp/getting-started/additional-resources)  
   
 ## See Also  
- [C# Programming Guide](/dotnet/csharp/programming-guide/index)   
- [C# Reference](/dotnet/csharp/language-reference/index)   
- [Talk to Us](/visual-studio/ide/talk-to-us)   
- [Talk to Us](/visual-studio/ide/talk-to-us)
+ [C# Programming Guide](/dotnet/articles/csharp/programming-guide/index)   
+ [C# Reference](/dotnet/articles/csharp/language-reference/index)   
+ [Talk to Us](/visualstudio/ide/talk-to-us)   
+ [Talk to Us](/visualstudio/ide/talk-to-us)

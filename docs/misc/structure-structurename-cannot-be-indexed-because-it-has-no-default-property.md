@@ -2,7 +2,6 @@
 title: "Structure &#39;&lt;structurename&gt;&#39; cannot be indexed because it has no default property | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,5 +45,5 @@ An attempt was made to use default property syntax with a structure that has no 
   
 ## See Also  
  [Default Property Changes in Visual Basic](http://msdn.microsoft.com/en-us/9b8cfad7-40ac-4b83-affb-1ff781755a4c)   
- [Structures and Other Programming Elements](/dotnet/visual-basic/programming-guide/language-features/data-types/structures-and-other-programming-elements)   
+ [Structures and Other Programming Elements](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures-and-other-programming-elements)   
  [NOT IN BUILD: Default Properties](http://msdn.microsoft.com/en-us/a70f2a27-8176-4858-935e-f25afdd43ab5)

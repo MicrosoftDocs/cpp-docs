@@ -2,7 +2,6 @@
 title: "Using C++ Interop (Implicit PInvoke) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -66,10 +65,10 @@ Unlike other .NET languages, Visual C++ has interoperability support that allows
  C++ Interop is recommended over explicit PInvoke because it provides better type safety, is typically less tedious to implement, is more forgiving if the unmanaged API is modified, and makes performance enhancements possible that are not possible with explicit PInvoke. However, C++ Interop is not possible if the unmanaged source code is not available or when compiling with **/clr:safe** (see [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md) for more information).  
   
 ## C++ COM Interop  
- The interoperability features supported by Visual C++ offer a particular advantage over other .NET languages when it comes to interoperating with COM components. Instead of being limited to the restrictions of the .NET Framework [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md), such as limited support for data types and the mandatory exposure of every member of every COM interface, C++ Interop allows COM components to be accessed at will and does not require separate interop assemblies. For more information, see [Using COM from .NET](http://msdn.microsoft.com/en-us/03976661-6278-4227-a6c1-3b3315502c15).  
+ The interoperability features supported by Visual C++ offer a particular advantage over other .NET languages when it comes to interoperating with COM components. Instead of being limited to the restrictions of the .NET Framework [Tlbimp.exe (Type Library Importer)](http://msdn.microsoft.com/Library/ec0a8d63-11b3-4acd-b398-da1e37e97382), such as limited support for data types and the mandatory exposure of every member of every COM interface, C++ Interop allows COM components to be accessed at will and does not require separate interop assemblies. For more information, see [Using COM from .NET](http://msdn.microsoft.com/en-us/03976661-6278-4227-a6c1-3b3315502c15).  
   
 ## Blittable Types  
- For unmanaged APIs that use simple, intrinsic types (see [Blittable and Non-Blittable Types](../Topic/Blittable%20and%20Non-Blittable%20Types.md)), no special coding is required because these data types have the same representation in memory, but more complex data types require explicit data marshaling. For an example, see [How to: Call Native DLLs from Managed Code Using PInvoke](../dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke.md).  
+ For unmanaged APIs that use simple, intrinsic types (see [Blittable and Non-Blittable Types](http://msdn.microsoft.com/Library/d03b050e-2916-49a0-99ba-f19316e5c1b3)), no special coding is required because these data types have the same representation in memory, but more complex data types require explicit data marshaling. For an example, see [How to: Call Native DLLs from Managed Code Using PInvoke](../dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke.md).  
   
 ## Example  
   

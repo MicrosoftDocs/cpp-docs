@@ -2,7 +2,6 @@
 title: "Compiler Error CS0811 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,7 +42,7 @@ The fully qualified name for 'name' is too long for debug information. Compile w
   
 ### To correct this error  
   
-1.  If modifying the name is not possible, the only alternative is to compile without the [/debug](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) option.  
+1.  If modifying the name is not possible, the only alternative is to compile without the [/debug](/dotnet/articles/csharp/language-reference/compiler-options/debug-compiler-option) option.  
   
 ## Example  
  The following code generates CS0811:  

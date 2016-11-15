@@ -2,7 +2,6 @@
 title: "&#39;&lt;typename&gt;&#39; must be declared &#39;MustInherit&#39; because it contains methods declared &#39;MustOverride&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ Types that contain `MustOverride` members must be declared `MustInherit`.
 -   Add the `MustInherit` modifier to the type.  
   
 ## See Also  
- [MustInherit](/dotnet/visual-basic/language-reference/modifiers/mustinherit)   
- [MustOverride](/dotnet/visual-basic/language-reference/modifiers/mustoverride)
+ [MustInherit](/dotnet/articles/visual-basic/language-reference/modifiers/mustinherit)   
+ [MustOverride](/dotnet/articles/visual-basic/language-reference/modifiers/mustoverride)

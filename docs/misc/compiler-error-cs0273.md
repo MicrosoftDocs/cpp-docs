@@ -2,7 +2,6 @@
 title: "Compiler Error CS0273 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,7 +40,7 @@ The accessibility modifier of the 'property_accessor' accessor must be more rest
   
  The accessibility modifier of the set/get accessor must be more restrictive than the property or indexer 'property/indexer'  
   
- This error occurs when you declare a property or indexer with an access modifier that is less restrictive than the access modifier on one of its accessors. To resolve this error, use the appropriate access modifier on either the property or the set accessor. For more information, see [Accessor Accessibility](/dotnet/csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility).  
+ This error occurs when you declare a property or indexer with an access modifier that is less restrictive than the access modifier on one of its accessors. To resolve this error, use the appropriate access modifier on either the property or the set accessor. For more information, see [Accessor Accessibility](/dotnet/articles/csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility).  
   
 ## Example  
  This sample contains an internal property with an internal set method. The following sample generates CS0273.  

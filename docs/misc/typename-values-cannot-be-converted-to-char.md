@@ -2,7 +2,6 @@
 title: "&#39;&lt;typename&gt;&#39; values cannot be converted to &#39;Char&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,5 +47,5 @@ translation.priority.mt:
   
 ## See Also  
  [NOT IN BUILD: Chr, ChrW Functions](http://msdn.microsoft.com/en-us/37f3c707-8a6f-4c51-9b02-9e634c4299ab)   
- [Implicit and Explicit Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)   
- [Char Data Type](/dotnet/visual-basic/language-reference/data-types/char-data-type)
+ [Implicit and Explicit Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)   
+ [Char Data Type](/dotnet/articles/visual-basic/language-reference/data-types/char-data-type)

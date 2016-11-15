@@ -2,7 +2,6 @@
 title: "Option Strict On requires all variable declarations to have an &#39;As&#39; clause | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,5 +46,5 @@ A declaration contains a declared variable without an `As` clause. When `Option 
 2.  Supply an `As` clause for the declared variable, or turn `Option Strict Off`.  
   
 ## See Also  
- [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
- [Variable Declaration](/dotnet/visual-basic/programming-guide/language-features/variables/variable-declaration)
+ [Option Strict Statement](/dotnet/articles/visual-basic/language-reference/statements/option-strict-statement)   
+ [Variable Declaration](/dotnet/articles/visual-basic/programming-guide/language-features/variables/variable-declaration)

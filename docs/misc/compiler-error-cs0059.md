@@ -2,7 +2,6 @@
 title: "Compiler Error CS0059 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0059
 Inconsistent accessibility: parameter type 'type' is less accessible than delegate 'delegate'  
   
- The return type and each of the types referenced in the formal parameter list of a method must be at least as accessible as the method itself. For more information, see [Access Modifiers](/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers).  
+ The return type and each of the types referenced in the formal parameter list of a method must be at least as accessible as the method itself. For more information, see [Access Modifiers](/dotnet/articles/csharp/programming-guide/classes-and-structs/access-modifiers).  
   
 ## Example  
  The following sample generates CS0059:  

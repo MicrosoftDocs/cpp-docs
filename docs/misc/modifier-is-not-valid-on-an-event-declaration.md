@@ -2,7 +2,6 @@
 title: "&#39;&lt;modifier&gt;&#39; is not valid on an event declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ An `Event` statement contains an invalid keyword, such as `ReadOnly`.
 1.  Remove the invalid keyword from the `Event` statement.  
   
 ## See Also  
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

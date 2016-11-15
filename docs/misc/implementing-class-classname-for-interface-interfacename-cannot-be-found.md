@@ -2,7 +2,6 @@
 title: "Implementing class &#39;&lt;classname&gt;&#39; for interface &lt;interfacename&gt; cannot be found | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,6 +46,6 @@ An implementing class in the interop assembly is not available.
 2.  Use the Type Library Importer (Tlbimp.exe) to manually create an interop assembly, and then add a reference to that interop assembly from your project.  
   
 ## See Also  
- [Implements Statement](/dotnet/visual-basic/language-reference/statements/implements-statement)   
- [COM Interop](/dotnet/visual-basic/programming-guide/com-interop/index)   
- [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md)
+ [Implements Statement](/dotnet/articles/visual-basic/language-reference/statements/implements-statement)   
+ [COM Interop](/dotnet/articles/visual-basic/programming-guide/com-interop/index)   
+ [Tlbimp.exe (Type Library Importer)](http://msdn.microsoft.com/Library/ec0a8d63-11b3-4acd-b398-da1e37e97382)

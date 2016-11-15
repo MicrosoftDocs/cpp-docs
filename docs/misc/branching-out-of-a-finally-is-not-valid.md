@@ -2,7 +2,6 @@
 title: "Branching out of a &#39;Finally&#39; is not valid | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,6 +44,6 @@ A `GoTo` statement inside a `Finally` block branches outside the block. It is no
 -   Remove the `GoTo` statement, and consider implementing the program logic with decision or loop control structures.  
   
 ## See Also  
- [Try...Catch...Finally Statement](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
- [GoTo Statement](/dotnet/visual-basic/language-reference/statements/goto-statement)   
- [Control Flow](/dotnet/visual-basic/programming-guide/language-features/control-flow/index)
+ [Try...Catch...Finally Statement](/dotnet/articles/visual-basic/language-reference/statements/try-catch-finally-statement)   
+ [GoTo Statement](/dotnet/articles/visual-basic/language-reference/statements/goto-statement)   
+ [Control Flow](/dotnet/articles/visual-basic/programming-guide/language-features/control-flow/index)

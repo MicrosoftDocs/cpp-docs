@@ -2,7 +2,6 @@
 title: "Option Strict On prohibits operands of type Object for operator &#39;&lt;operatorname&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,6 +44,6 @@ The only operators defined for object variables are `Is` and `TypeOf...Is`. When
 -   Use the appropriate type conversion functions, such as `CInt` or `CStr`, to convert the operands to data types defined for the operator.  
   
 ## See Also  
- [Is Operator](/dotnet/visual-basic/language-reference/operators/is-operator)   
- [Comparison Operators in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators)   
- [Type Conversion Functions](/dotnet/visual-basic/language-reference/functions/type-conversion-functions)
+ [Is Operator](/dotnet/articles/visual-basic/language-reference/operators/is-operator)   
+ [Comparison Operators in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators)   
+ [Type Conversion Functions](/dotnet/articles/visual-basic/language-reference/functions/type-conversion-functions)

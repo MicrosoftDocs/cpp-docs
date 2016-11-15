@@ -2,7 +2,6 @@
 title: "Troubleshooting Exceptions: System.IO.EndOfStreamException | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,5 +46,5 @@ An <xref:System.IO.EndOfStreamException> exception is thrown when there is an at
 ## See Also  
  <xref:System.IO.EndOfStreamException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)   
- [How to: Open and Append to a Log File](../Topic/How%20to:%20Open%20and%20Append%20to%20a%20Log%20File.md)
+ [How to: Read and Write to a Newly Created Data File](http://msdn.microsoft.com/Library/e209d949-31e8-44ea-8e38-87f9093f3093)   
+ [How to: Open and Append to a Log File](http://msdn.microsoft.com/Library/74423362-1721-49cb-aa0a-e04005f72a06)

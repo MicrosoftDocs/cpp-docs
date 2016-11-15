@@ -2,7 +2,6 @@
 title: "Statements and labels are not valid between &#39;Select Case&#39; and first &#39;Case&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ A statement that is not a comment appears between the opening `Select` or `Selec
 -   If the intervening statement is a comment, precede it with a comment delimiter (`'` or `REM`). Otherwise, move or delete the statement.  
   
 ## See Also  
- [Select...Case Statement](/dotnet/visual-basic/language-reference/statements/select-case-statement)
+ [Select...Case Statement](/dotnet/articles/visual-basic/language-reference/statements/select-case-statement)

@@ -2,7 +2,6 @@
 title: "File&#39;s open mode wasn&#39;t set to a valid value | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,6 +46,6 @@ The value supplied for the file's open mode was not valid. The following table s
   
 ## See Also  
  [NOTINBUILD OpenMode Enumeration](http://msdn.microsoft.com/en-us/e995bd42-d11f-455c-88c4-308345172633)   
- [My.Computer.FileSystem Object](/dotnet/visual-basic/language-reference/objects/my-computer-filesystem-object)   
- [Reading from Files](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files)   
- [Writing to Files](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files)
+ [My.Computer.FileSystem Object](/dotnet/articles/visual-basic/language-reference/objects/my-computer-filesystem-object)   
+ [Reading from Files](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files)   
+ [Writing to Files](/dotnet/articles/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files)

@@ -2,7 +2,6 @@
 title: "Member &#39;&lt;classname&gt;.&lt;procedurename&gt;&#39; that matches this signature cannot be overridden because the class &#39;&lt;classname&gt;&#39; contains multiple members with this same name and signature: &lt;signaturelist&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -67,6 +66,6 @@ End Class
 -   If you need to inherit the base class with the set of type arguments you are using, then do not override the procedure or property cited in this error message.  
   
 ## See Also  
- [Overridable](/dotnet/visual-basic/language-reference/modifiers/overridable)   
- [Overrides](/dotnet/visual-basic/language-reference/modifiers/overrides)   
+ [Overridable](/dotnet/articles/visual-basic/language-reference/modifiers/overridable)   
+ [Overrides](/dotnet/articles/visual-basic/language-reference/modifiers/overrides)   
  [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213)

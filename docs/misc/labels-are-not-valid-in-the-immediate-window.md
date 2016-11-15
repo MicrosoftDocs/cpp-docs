@@ -2,7 +2,6 @@
 title: "Labels are not valid in the Immediate window | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ Line labels enable branching and are not permitted in a debugging context.
 -   Do not enter a line label in the **Immediate** window.  
   
 ## See Also  
- [Immediate Window](/visual-studio/ide/reference/immediate-window)   
- [How to: Label Statements](../Topic/How%20to:%20Label%20Statements%20\(Visual%20Basic\).md)
+ [Immediate Window](/visualstudio/ide/reference/immediate-window)   
+ [How to: Label Statements](http://msdn.microsoft.com/Library/38f1ff43-2054-42cb-963b-1998e60c6ed4)

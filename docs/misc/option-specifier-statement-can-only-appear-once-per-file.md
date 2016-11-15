@@ -2,7 +2,6 @@
 title: "&#39;Option &lt;specifier&gt;&#39; statement can only appear once per file | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,7 +44,7 @@ The `Option Compare`, `Option Explicit`, and `Option Strict` statements can only
 -   Remove the duplicated `Option` statement.  
   
 ## See Also  
- [Option \<keyword> Statement](../Topic/Option%20%3Ckeyword%3E%20Statement.md)   
- [Option Compare Statement](/dotnet/visual-basic/language-reference/statements/option-compare-statement)   
- [Option Explicit Statement](/dotnet/visual-basic/language-reference/statements/option-explicit-statement)   
- [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)
+ [Option \<keyword> Statement](http://msdn.microsoft.com/Library/6b2f41c4-2403-43b6-8a14-94a3775e5b47)   
+ [Option Compare Statement](/dotnet/articles/visual-basic/language-reference/statements/option-compare-statement)   
+ [Option Explicit Statement](/dotnet/articles/visual-basic/language-reference/statements/option-explicit-statement)   
+ [Option Strict Statement](/dotnet/articles/visual-basic/language-reference/statements/option-strict-statement)

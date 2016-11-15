@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB3022 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,5 +43,5 @@ translation.priority.mt:
 -   Specify either `DestinationFiles` or `DestinationDirectory` for the `Copy` task in the project file.  
   
 ## See Also  
- [Copy Task](/visual-studio/msbuild/copy-task)   
- [Tasks](/visual-studio/msbuild/msbuild-tasks)
+ [Copy Task](/visualstudio/msbuild/copy-task)   
+ [Tasks](/visualstudio/msbuild/msbuild-tasks)

@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB3071 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,4 +45,4 @@ translation.priority.mt:
 -   Specify a local working directory before attempting this command again.  
   
 ## See Also  
- [Exec Task](/visual-studio/msbuild/exec-task)
+ [Exec Task](/visualstudio/msbuild/exec-task)

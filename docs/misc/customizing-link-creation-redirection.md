@@ -2,7 +2,6 @@
 title: "Customizing Link Creation - redirection | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,4 +25,4 @@ translation.priority.mt:
 # Customizing Link Creation - redirection
 The content of this topic has been merged with the following topic:  
   
- [Customizing Tools and the Toolbox](/visual-studio/modeling/customizing-tools-and-the-toolbox)
+ [Customizing Tools and the Toolbox](/visualstudio/modeling/customizing-tools-and-the-toolbox)

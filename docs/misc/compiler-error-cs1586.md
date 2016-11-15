@@ -2,7 +2,6 @@
 title: "Compiler Error CS1586 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -58,4 +57,4 @@ class MyClass
 ```  
   
 ## See Also  
- [Arrays](/dotnet/csharp/programming-guide/arrays/index)
+ [Arrays](/dotnet/articles/csharp/programming-guide/arrays/index)

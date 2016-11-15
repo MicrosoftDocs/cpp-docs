@@ -2,7 +2,6 @@
 title: "&#39;Microsoft.VisualBasic.ComClassAttribute&#39; cannot be applied to &#39;&lt;classname1&gt;&#39; because its container &#39;&lt;classname2&gt;&#39; is not declared &#39;Public&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,4 +47,4 @@ A class using a `COMClassAttribute` attribute block is declared inside a class t
  [NOT IN BUILD: Attributes Used in Visual Basic](http://msdn.microsoft.com/en-us/22231318-8a40-49af-9245-e0aab723563b)   
  [NOT IN BUILD: Application of Attributes](http://msdn.microsoft.com/en-us/2b1703ed-4437-49b3-bc0b-568094324f47)   
  [ComClassAttribute Class](http://msdn.microsoft.com/en-us/5c2f0835-9210-47dc-bc59-5c1769953574)   
- [Public](/dotnet/visual-basic/language-reference/modifiers/public)
+ [Public](/dotnet/articles/visual-basic/language-reference/modifiers/public)

@@ -2,7 +2,6 @@
 title: "&lt;type1&gt; &#39;&lt;membername&gt;&#39; conflicts with &lt;type2&gt; &#39;&lt;membername&gt;&#39; on the base class &lt;type3&gt; &#39;&lt;classname&gt;&#39; and should be declared &#39;Shadows&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,7 +37,7 @@ translation.priority.mt:
 # &lt;type1&gt; &#39;&lt;membername&gt;&#39; conflicts with &lt;type2&gt; &#39;&lt;membername&gt;&#39; on the base class &lt;type3&gt; &#39;&lt;classname&gt;&#39; and should be declared &#39;Shadows&#39;
 A programming element is declared with the same name as an element defined in the base class. In this situation, the element in this class should shadow the base class element.  
   
- This message is a warning. `Shadows` is assumed by default. For more information about hiding warnings or treating warnings as errors, please see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ This message is a warning. `Shadows` is assumed by default. For more information about hiding warnings or treating warnings as errors, please see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40004  
   
@@ -47,5 +46,5 @@ A programming element is declared with the same name as an element defined in th
 -   Add the `Shadows` keyword to the declaration, or change the name of the element being declared.  
   
 ## See Also  
- [Shadows](/dotnet/visual-basic/language-reference/modifiers/shadows)   
- [Shadowing in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/shadowing)
+ [Shadows](/dotnet/articles/visual-basic/language-reference/modifiers/shadows)   
+ [Shadowing in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/shadowing)

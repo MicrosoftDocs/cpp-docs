@@ -2,7 +2,6 @@
 title: "&#39;RaiseEvent&#39; method must have the same signature as the containing event&#39;s delegate type &#39;&lt;signature&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -52,7 +51,7 @@ A `Custom Event` declaration must have `RaiseEvent` declaration that has the sam
  [!code-vb[VbVbalrEventError#2](../misc/codesnippet/VisualBasic/raiseevent-method-must-have-the-same-signature-as-the-containing-event-s-delegate-type-signature_1.vb)]  
   
 ## See Also  
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)   
  [RaiseEvent - delete](http://msdn.microsoft.com/en-us/7f765da0-5491-40b6-9ed5-24c98f9daad9)   
- [Delegate Statement](/dotnet/visual-basic/language-reference/statements/delegate-statement)   
- [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)
+ [Delegate Statement](/dotnet/articles/visual-basic/language-reference/statements/delegate-statement)   
+ [Events](/dotnet/articles/visual-basic/programming-guide/language-features/events/events)

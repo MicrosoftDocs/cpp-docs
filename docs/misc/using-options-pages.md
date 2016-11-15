@@ -2,7 +2,6 @@
 title: "Using Options Pages | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -37,11 +36,11 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] automation model
   
 -   The settings of the **Dynamic Help** page cannot be accessed programmatically. The **Dynamic Help** feature can be controlled by using the automation model, but control must be accomplished directly in code. For more information, see [How to: Control the Dynamic Help Window](http://msdn.microsoft.com/en-us/7f5777aa-c270-4058-a175-8ce8a4ed25eb).  
   
--   Control of the **Fonts and Color** page settings is provided through its own API, not through the automation model. For more information, see [Using Fonts and Colors](/visual-studio/extensibility/using-fonts-and-colors).  
+-   Control of the **Fonts and Color** page settings is provided through its own API, not through the automation model. For more information, see [Using Fonts and Colors](/visualstudio/extensibility/using-fonts-and-colors).  
   
 -   Language-specific properties cannot be obtained through the automation model.  
   
- **Options** pages that do not support the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] automation model may not return an automation <xref:EnvDTE.Properties> collection when queried. If the collection is returned, not all features are present. For information about how to manage these features, see [DTE Properties Collections](../Topic/DTE%20Properties%20Collections.md).  
+ **Options** pages that do not support the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] automation model may not return an automation <xref:EnvDTE.Properties> collection when queried. If the collection is returned, not all features are present. For information about how to manage these features, see [DTE Properties Collections](http://msdn.microsoft.com/Library/c062b48c-d104-4560-a3fe-f9e2f56ca4c6).  
   
 ## Managing Options Pages  
  To manage **Options** pages, a VSPackage must get a <xref:EnvDTE.DTE> object from the automation model.  
@@ -102,7 +101,7 @@ hr= srpProperty.set_Value(4);
  [!code-cs[UI_UserSettings_ToolsOptionPages#03](../misc/codesnippet/CSharp/using-options-pages_3.cs)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#03](../misc/codesnippet/VisualBasic/using-options-pages_3.vb)]  
   
- For more information, see [Controlling Options Settings](../Topic/Controlling%20Options%20Settings.md).  
+ For more information, see [Controlling Options Settings](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d).  
   
 ## Persisting Options Page Settings  
  The IDE implements state persistence of **Options** pages that fully support the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] automation model.  
@@ -113,9 +112,9 @@ hr= srpProperty.set_Value(4);
   
 ## See Also  
  [Creating Options Pages By Using Interop Assemblies](../misc/creating-options-pages-by-using-interop-assemblies.md)   
- [Creating Options Pages](/visual-studio/extensibility/internals/creating-options-pages)   
+ [Creating Options Pages](/visualstudio/extensibility/internals/creating-options-pages)   
  [Creating Options Pages By Using Automation](../misc/creating-options-pages-by-using-automation.md)   
- [Controlling Options Settings](../Topic/Controlling%20Options%20Settings.md)   
+ [Controlling Options Settings](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
  [Registering Custom Options Pages](../misc/registering-custom-options-pages.md)   
  [Opening an Options Page](../misc/opening-an-options-page.md)   
- [Extending User Settings and Options](/visual-studio/extensibility/extending-user-settings-and-options)
+ [Extending User Settings and Options](/visualstudio/extensibility/extending-user-settings-and-options)

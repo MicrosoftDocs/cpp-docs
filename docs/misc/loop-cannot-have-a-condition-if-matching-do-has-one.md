@@ -2,7 +2,6 @@
 title: "&#39;Loop&#39; cannot have a condition if matching &#39;Do&#39; has one | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ A `Loop` statement contains a `While` or `Until` clause, and the corresponding `
 -   Remove the `While` or `Until` clause from either the `Do` statement or the `Loop` statement.  
   
 ## See Also  
- [Do...Loop Statement](/dotnet/visual-basic/language-reference/statements/do-loop-statement)
+ [Do...Loop Statement](/dotnet/articles/visual-basic/language-reference/statements/do-loop-statement)

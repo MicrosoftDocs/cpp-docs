@@ -2,7 +2,6 @@
 title: "Compiler Warning (level 1) CS2029 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,6 +38,6 @@ translation.priority.mt:
 # Compiler Warning (level 1) CS2029
 Invalid value for '/define'; 'identifier' is not a valid identifier  
   
- This warning occurs if the value that is used in the [/define](/dotnet/csharp/language-reference/compiler-options/define-compiler-option) option has some invalid characters.  
+ This warning occurs if the value that is used in the [/define](/dotnet/articles/csharp/language-reference/compiler-options/define-compiler-option) option has some invalid characters.  
   
- This warning cannot be suppressed by the [/nowarn](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option) option.
+ This warning cannot be suppressed by the [/nowarn](/dotnet/articles/csharp/language-reference/compiler-options/nowarn-compiler-option) option.

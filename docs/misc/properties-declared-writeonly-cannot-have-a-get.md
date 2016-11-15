@@ -2,7 +2,6 @@
 title: "Properties declared &#39;WriteOnly&#39; cannot have a &#39;Get&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,6 +44,6 @@ The `Get` procedure reads the value of a property. `WriteOnly` properties cannot
 -   Remove the `WriteOnly` keyword from the `Property` statement, or remove the `Get` procedure from the property body.  
   
 ## See Also  
- [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
- [Get Statement](/dotnet/visual-basic/language-reference/statements/get-statement)   
- [WriteOnly](/dotnet/visual-basic/language-reference/modifiers/writeonly)
+ [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement)   
+ [Get Statement](/dotnet/articles/visual-basic/language-reference/statements/get-statement)   
+ [WriteOnly](/dotnet/articles/visual-basic/language-reference/modifiers/writeonly)

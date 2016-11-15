@@ -23,4 +23,3 @@
 # [Visual C++ Samples](visual-cpp-samples.md)
 # [Visual C++ Help and Community](visual-cpp-help-and-community.md)
 # [How to Report a Problem with the Visual C++ Toolset](how-to-report-a-problem-with-the-visual-cpp-toolset.md)
-

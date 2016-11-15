@@ -2,7 +2,6 @@
 title: "Cannot infer a common type for the second and third operands of the &#39;If&#39; operator | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -55,6 +54,6 @@ Dim divisor = 3
 -   Use a different condition construction, such as an `If...Then...Else` statement.  
   
 ## See Also  
- [If Operator](/dotnet/visual-basic/language-reference/operators/if-operator)   
- [If...Then...Else Statement](/dotnet/visual-basic/language-reference/statements/if-then-else-statement)   
- [Widening and Narrowing Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)
+ [If Operator](/dotnet/articles/visual-basic/language-reference/operators/if-operator)   
+ [If...Then...Else Statement](/dotnet/articles/visual-basic/language-reference/statements/if-then-else-statement)   
+ [Widening and Narrowing Conversions](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)

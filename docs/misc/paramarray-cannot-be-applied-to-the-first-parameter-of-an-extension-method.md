@@ -2,7 +2,6 @@
 title: "&#39;ParamArray&#39; cannot be applied to the first parameter of an extension method | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -70,6 +69,6 @@ translation.priority.mt:
     ```  
   
 ## See Also  
- [Extension Methods](/dotnet/visual-basic/language-reference/procedures/extension-methods)   
- [Parameter Arrays](/dotnet/visual-basic/language-reference/procedures/parameter-arrays)   
- [Optional Parameters](/dotnet/visual-basic/language-reference/procedures/optional-parameters)
+ [Extension Methods](/dotnet/articles/visual-basic/language-reference/procedures/extension-methods)   
+ [Parameter Arrays](/dotnet/articles/visual-basic/language-reference/procedures/parameter-arrays)   
+ [Optional Parameters](/dotnet/articles/visual-basic/language-reference/procedures/optional-parameters)

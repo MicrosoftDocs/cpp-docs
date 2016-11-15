@@ -2,7 +2,6 @@
 title: "Identifier expected, preceded with a period | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -54,6 +53,6 @@ A value from which a property name cannot be inferred has been included in the i
     ```  
   
 ## See Also  
- [Object Initializers: Named and Anonymous Types](../Topic/Object%20Initializers:%20Named%20and%20Anonymous%20Types%20\(Visual%20Basic\).md)   
+ [Object Initializers: Named and Anonymous Types](http://msdn.microsoft.com/Library/e2df3807-a70f-49dd-ac94-f1e07f472b1b)   
  [How to: Declare an Instance of an Anonymous Type (Visual Basic)](http://msdn.microsoft.com/en-us/119f616c-9bcd-4731-ac00-4285be5959f7)   
- [How to: Infer Property Names and Types in Anonymous Type Declarations](../Topic/How%20to:%20Infer%20Property%20Names%20and%20Types%20in%20Anonymous%20Type%20Declarations%20\(Visual%20Basic\).md)
+ [How to: Infer Property Names and Types in Anonymous Type Declarations](http://msdn.microsoft.com/Library/7c748b22-913f-4d9d-b747-6b7bf296a0bc)

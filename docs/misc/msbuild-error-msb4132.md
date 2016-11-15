@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB4132 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,4 +42,4 @@ translation.priority.mt:
   
 ## See Also  
  <xref:Microsoft.Build.Tasks.MSBuild.ToolsVersion%2A>   
- [Additional Resources](/visual-studio/msbuild/additional-msbuild-resources)
+ [Additional Resources](/visualstudio/msbuild/additional-msbuild-resources)

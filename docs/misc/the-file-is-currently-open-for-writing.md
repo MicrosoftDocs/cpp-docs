@@ -2,7 +2,6 @@
 title: "The file is currently open for writing | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,5 +39,5 @@ An attempt has been made to access a file that is currently open for writing.
 ## See Also  
  <xref:System.Security.Permissions.FileIOPermission>   
  [How to: Get Information About a File in Visual Basic](http://msdn.microsoft.com/en-us/ca0720ec-f40e-4c11-9748-0ce1685c78f0)   
- [How to: Write Text to Files](../Topic/How%20to:%20Write%20Text%20to%20Files%20in%20Visual%20Basic.md)   
- [How to: Write to Binary Files](../Topic/How%20to:%20Write%20to%20Binary%20Files%20in%20Visual%20Basic.md)
+ [How to: Write Text to Files](http://msdn.microsoft.com/Library/304956eb-530d-4df7-b48f-9b4d1f2581a0)   
+ [How to: Write to Binary Files](http://msdn.microsoft.com/Library/59fae125-de5b-4c96-883c-209f4a55112c)

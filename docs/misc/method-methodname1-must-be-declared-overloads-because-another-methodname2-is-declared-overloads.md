@@ -2,7 +2,6 @@
 title: "&lt;method&gt; &#39;&lt;methodname1&gt;&#39; must be declared &#39;Overloads&#39; because another &#39;&lt;methodname2&gt;&#39; is declared &#39;Overloads&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ Another property or method with the same name is declared with the `Overloads` m
 2.  Remove the `Overloads` modifier from all properties or methods with the same name.  
   
 ## See Also  
- [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads)
+ [Overloads](/dotnet/articles/visual-basic/language-reference/modifiers/overloads)

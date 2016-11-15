@@ -2,7 +2,6 @@
 title: "Class in an interface cannot be declared &#39;&lt;specifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ An invalid modifier was specified with a class declared in an interface.
 -   Remove modifiers such as `Public`, `Private`, `Shared`, `Friend`, `Protected`, `Protected Friend`, or `Overridable`.  
   
 ## See Also  
- [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)   
- [Class Statement](/dotnet/visual-basic/language-reference/statements/class-statement)
+ [Interfaces](/dotnet/articles/visual-basic/programming-guide/language-features/interfaces/index)   
+ [Class Statement](/dotnet/articles/visual-basic/language-reference/statements/class-statement)

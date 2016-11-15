@@ -2,7 +2,6 @@
 title: "Compiler Error CS0426 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -63,4 +62,4 @@ class D
 ```  
   
 ## See Also  
- [Classes and Structs](/dotnet/csharp/programming-guide/classes-and-structs/index)
+ [Classes and Structs](/dotnet/articles/csharp/programming-guide/classes-and-structs/index)

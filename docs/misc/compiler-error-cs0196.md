@@ -2,7 +2,6 @@
 title: "Compiler Error CS0196 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0196
 A pointer must be indexed by only one value  
   
- A pointer cannot have multiple indices. For more information, see [Pointer types](/dotnet/csharp/programming-guide/unsafe-code-pointers/pointer-types)  
+ A pointer cannot have multiple indices. For more information, see [Pointer types](/dotnet/articles/csharp/programming-guide/unsafe-code-pointers/pointer-types)  
   
  The following sample generates CS0196:  
   

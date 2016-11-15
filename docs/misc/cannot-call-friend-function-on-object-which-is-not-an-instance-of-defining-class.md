@@ -2,7 +2,6 @@
 title: "Cannot call friend function on object which is not an instance of defining class | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,4 +39,4 @@ Either you tried to call the `Friend` procedure of a class, or you tried to acce
 -   Ensure that you are calling or accessing the procedure from a module that is part of the project in which the class is defined.  
   
 ## See Also  
- [Friend](/dotnet/visual-basic/language-reference/modifiers/friend)
+ [Friend](/dotnet/articles/visual-basic/language-reference/modifiers/friend)

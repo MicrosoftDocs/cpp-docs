@@ -2,7 +2,6 @@
 title: "XML declaration does not allow attribute &#39;attributeName&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,6 +44,6 @@ An invalid attribute for an XML document literal has been specified. Valid attri
 -   Remove the invalid attribute from the XML document literal.  
   
 ## See Also  
- [XML Literals and the XML 1.0 Specification](/dotnet/visual-basic/programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification)   
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [XML Literals and the XML 1.0 Specification](/dotnet/articles/visual-basic/programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification)   
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

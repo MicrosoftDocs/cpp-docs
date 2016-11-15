@@ -2,7 +2,6 @@
 title: "Arrays cannot be declared with &#39;New&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -56,5 +55,5 @@ Dim formA as New Form
 -   Replace a statement such as `Dim myDates() As New Date` with a statement such as `Dim myDates() As Date = New Date() {}`.  
   
 ## See Also  
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)   
- [How to: Initialize an Array Variable in Visual Basic](../Topic/How%20to:%20Initialize%20an%20Array%20Variable%20in%20Visual%20Basic.md)
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)   
+ [How to: Initialize an Array Variable in Visual Basic](http://msdn.microsoft.com/Library/aadd7a60-7ca4-4608-b986-091f19e7fc10)

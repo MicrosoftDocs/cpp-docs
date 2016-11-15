@@ -2,7 +2,6 @@
 title: "set_symmetric_difference (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,7 +49,7 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `set_symmetric_difference`. For more information, see [set_symmetric_difference](../Topic/set_symmetric_difference.md).  
+ This function behaves the same as the STL function `set_symmetric_difference`. For more information, see [set_symmetric_difference](http://msdn.microsoft.com/Library/39c673df-ea67-4336-a60e-8729e69e2ee4).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

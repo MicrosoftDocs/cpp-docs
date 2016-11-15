@@ -2,7 +2,6 @@
 title: "Compiler Warning (level 2) CS1587 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 2) CS1587
 XML comment is not placed on a valid language element  
   
- Recommended tags for documentation comments are not allowed on all language elements. For example, a tag is not allowed on a namespace. For more information on XML comments, see [Recommended Tags for Documentation Comments](/dotnet/csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments).  
+ Recommended tags for documentation comments are not allowed on all language elements. For example, a tag is not allowed on a namespace. For more information on XML comments, see [Recommended Tags for Documentation Comments](/dotnet/articles/csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments).  
   
 ## Example  
  The following sample generates CS1587:  

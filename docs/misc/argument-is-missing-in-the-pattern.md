@@ -2,7 +2,6 @@
 title: "Argument is missing in the pattern. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,9 +37,9 @@ This error generally occurs when incomplete syntax for a regular expression has 
   
 ### To correct this error  
   
-1.  Enter the string again. For more information on syntax, see [Regular Expressions](/visual-studio/ide/using-regular-expressions-in-visual-studio).  
+1.  Enter the string again. For more information on syntax, see [Regular Expressions](/visualstudio/ide/using-regular-expressions-in-visual-studio).  
   
 ## See Also  
- [Finding and Replacing Text](/visual-studio/ide/finding-and-replacing-text)   
- [Using Regular Expressions in Visual Studio](/visual-studio/ide/using-regular-expressions-in-visual-studio)   
+ [Finding and Replacing Text](/visualstudio/ide/finding-and-replacing-text)   
+ [Using Regular Expressions in Visual Studio](/visualstudio/ide/using-regular-expressions-in-visual-studio)   
  [Wildcards (Visual Studio)](http://msdn.microsoft.com/en-us/9745c56f-0b73-44e1-b393-c17e39670c26)

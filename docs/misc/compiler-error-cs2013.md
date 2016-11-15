@@ -2,7 +2,6 @@
 title: "Compiler Error CS2013 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS2013
 Invalid image base number 'value'  
   
- An invalid value (not a number) was passed to the [/baseaddress](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option) compiler option.  
+ An invalid value (not a number) was passed to the [/baseaddress](/dotnet/articles/csharp/language-reference/compiler-options/baseaddress-compiler-option) compiler option.  
   
  The following sample generates CS2013:  
   

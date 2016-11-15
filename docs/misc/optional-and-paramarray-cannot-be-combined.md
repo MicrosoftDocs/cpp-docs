@@ -2,7 +2,6 @@
 title: "&#39;Optional&#39; and &#39;ParamArray&#39; cannot be combined | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ The `Optional` and `ParamArray` modifiers are mutually exclusive.
 -   Specify either `ParamArray` or `Optional`, but not both.  
   
 ## See Also  
- [ParamArray](/dotnet/visual-basic/language-reference/modifiers/paramarray)   
- [Optional](/dotnet/visual-basic/language-reference/modifiers/optional)
+ [ParamArray](/dotnet/articles/visual-basic/language-reference/modifiers/paramarray)   
+ [Optional](/dotnet/articles/visual-basic/language-reference/modifiers/optional)

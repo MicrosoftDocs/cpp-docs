@@ -2,7 +2,6 @@
 title: "Operator without an &#39;As&#39; clause; type of Object assumed | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,9 +37,9 @@ translation.priority.mt:
 # Operator without an &#39;As&#39; clause; type of Object assumed
 An operator procedure does not specify an `As` clause.  
   
- An `As` clause identifies a data type to be associated with a programming element. In an [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement), it specifies the data type of the value the operator procedure returns to the calling code. If you do not include an `As` clause in the `Operator` statement, the return data type defaults to `Object`.  
+ An `As` clause identifies a data type to be associated with a programming element. In an [Operator Statement](/dotnet/articles/visual-basic/language-reference/statements/operator-statement), it specifies the data type of the value the operator procedure returns to the calling code. If you do not include an `As` clause in the `Operator` statement, the return data type defaults to `Object`.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC41005  
   
@@ -49,5 +48,5 @@ An operator procedure does not specify an `As` clause.
 -   Include an `As` clause in the `Operator` statement to specify the return data type.  
   
 ## See Also  
- [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
- [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)
+ [Operator Procedures](/dotnet/articles/visual-basic/language-reference/procedures/operator-procedures)   
+ [Operator Statement](/dotnet/articles/visual-basic/language-reference/statements/operator-statement)

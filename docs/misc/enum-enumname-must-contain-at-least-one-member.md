@@ -2,7 +2,6 @@
 title: "Enum &#39;&lt;enumname&gt;&#39; must contain at least one member | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ An empty enumeration occurs. At least one member must be declared between the `E
 1.  Add a member declaration to the enumeration.  
   
 ## See Also  
- [Enum Statement](/dotnet/visual-basic/language-reference/statements/enum-statement)
+ [Enum Statement](/dotnet/articles/visual-basic/language-reference/statements/enum-statement)

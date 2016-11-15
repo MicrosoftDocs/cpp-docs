@@ -2,7 +2,6 @@
 title: "Const declaration cannot have an array initializer | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ You attempted to use an array initializer in a `Const` declaration.
 -   Change the initializer to a valid expression by removing the surrounding braces.  
   
 ## See Also  
- [Const Statement](/dotnet/visual-basic/language-reference/statements/const-statement)
+ [Const Statement](/dotnet/articles/visual-basic/language-reference/statements/const-statement)

@@ -2,7 +2,6 @@
 title: "The custom-designed version of &#39;System.Runtime.CompilerServices.ExtensionAttribute&#39; found by the compiler is not valid | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -83,6 +82,6 @@ End Namespace
  <xref:System.Runtime.CompilerServices.ExtensionAttribute>   
  [NOT IN BUILD: Attributes Overview in Visual Basic](http://msdn.microsoft.com/en-us/0d0cff64-892d-4f57-83bd-bef388553d4f)   
  [NOT IN BUILD: Custom Attributes in Visual Basic](http://msdn.microsoft.com/en-us/d72d8a5c-8f64-4614-b15b-cad66845d047)   
- [Extension Methods](/dotnet/visual-basic/language-reference/procedures/extension-methods)   
+ [Extension Methods](/dotnet/articles/visual-basic/language-reference/procedures/extension-methods)   
  [NOT IN BUILD: How to: Define Your Own Attributes](http://msdn.microsoft.com/en-us/039609c4-ec43-4f44-945f-aa3b5b535c6a)   
- [Writing Custom Attributes](../Topic/Writing%20Custom%20Attributes.md)
+ [Writing Custom Attributes](http://msdn.microsoft.com/Library/97216f69-bde8-49fd-ac40-f18c500ef5dc)

@@ -2,7 +2,6 @@
 title: "Type declaration characters are not valid in this context | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ You attempted to use a character that is not valid in this context, such as $.
 1.  Remove the character.  
   
 ## See Also  
- [Type Characters](/dotnet/visual-basic/programming-guide/language-features/data-types/type-characters)
+ [Type Characters](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/type-characters)

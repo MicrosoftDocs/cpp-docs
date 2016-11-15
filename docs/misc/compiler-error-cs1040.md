@@ -2,7 +2,6 @@
 title: "Compiler Error CS1040 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1040
 Preprocessor directives must appear as the first non-whitespace character on a line  
   
- A [preprocessor directive](/dotnet/csharp/language-reference/preprocessor-directives/index) was found on a line and was not the first token on the line. A directive must be the first token on the line.  
+ A [preprocessor directive](/dotnet/articles/csharp/language-reference/preprocessor-directives/index) was found on a line and was not the first token on the line. A directive must be the first token on the line.  
   
  The following sample generates CS1040:  
   

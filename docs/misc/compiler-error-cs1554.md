@@ -2,7 +2,6 @@
 title: "Compiler Error CS1554 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1554
 Declaration is not valid; use '\<type> operator op (...' instead  
   
- The return type for a user-defined [operator](/dotnet/csharp/language-reference/keywords/operator) must appear before the keyword operator.  
+ The return type for a user-defined [operator](/dotnet/articles/csharp/language-reference/keywords/operator) must appear before the keyword operator.  
   
  The following sample generates CS1554:  
   

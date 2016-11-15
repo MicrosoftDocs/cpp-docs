@@ -2,7 +2,6 @@
 title: "Specifiers valid only at the beginning of a declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,8 +44,8 @@ Keywords specifying accessibility and other designations must appear before the 
 -   Move all specifiers between the attribute list (if any) and the declaration keyword.  
   
 ## See Also  
- [Class Statement](/dotnet/visual-basic/language-reference/statements/class-statement)   
- [Dim Statement](/dotnet/visual-basic/language-reference/statements/dim-statement)   
- [Function Statement](/dotnet/visual-basic/language-reference/statements/function-statement)   
- [Property Statement](/dotnet/visual-basic/language-reference/statements/property-statement)   
- [Structure Statement](/dotnet/visual-basic/language-reference/statements/structure-statement)
+ [Class Statement](/dotnet/articles/visual-basic/language-reference/statements/class-statement)   
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)   
+ [Function Statement](/dotnet/articles/visual-basic/language-reference/statements/function-statement)   
+ [Property Statement](/dotnet/articles/visual-basic/language-reference/statements/property-statement)   
+ [Structure Statement](/dotnet/articles/visual-basic/language-reference/statements/structure-statement)

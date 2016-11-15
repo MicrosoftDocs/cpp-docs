@@ -2,7 +2,6 @@
 title: "&#39;MyBase&#39; cannot be used with method &#39;&lt;methodname&gt;&#39; because it is declared &#39;MustOverride&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,4 +45,4 @@ You have attempted to use `MyBase` with a method that has been declared `MustOve
   
 ## See Also  
  [MyBase - delete](http://msdn.microsoft.com/en-us/52491d06-6451-4f6f-9aa6-8fab59bbc2b9)   
- [MustOverride](/dotnet/visual-basic/language-reference/modifiers/mustoverride)
+ [MustOverride](/dotnet/articles/visual-basic/language-reference/modifiers/mustoverride)

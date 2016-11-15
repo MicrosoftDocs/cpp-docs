@@ -2,7 +2,6 @@
 title: "&#39;RemoveHandler&#39; declaration must end with a matching &#39;End RemoveHandler&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ A `RemoveHandler` declaration must end with an `End RemoveHandler` statement.
 -   Check that the `RemoveHandler` declaration ends with an `End RemoveHandler` statement.  
   
 ## See Also  
- [RemoveHandler Statement](/dotnet/visual-basic/language-reference/statements/removehandler-statement)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [RemoveHandler Statement](/dotnet/articles/visual-basic/language-reference/statements/removehandler-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

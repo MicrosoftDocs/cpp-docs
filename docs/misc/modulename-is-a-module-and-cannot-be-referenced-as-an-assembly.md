@@ -2,7 +2,6 @@
 title: "&#39;&lt;modulename&gt;&#39; is a module and cannot be referenced as an assembly | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ An attempt was made to use a module as an assembly.
 -   Change the reference to an assembly.  
   
 ## See Also  
- [Module Statement](/dotnet/visual-basic/language-reference/statements/module-statement)   
- [Assembly](/dotnet/visual-basic/language-reference/modifiers/assembly)
+ [Module Statement](/dotnet/articles/visual-basic/language-reference/statements/module-statement)   
+ [Assembly](/dotnet/articles/visual-basic/language-reference/modifiers/assembly)

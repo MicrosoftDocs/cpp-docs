@@ -2,7 +2,6 @@
 title: "OLE DB Consumer Templates (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -79,6 +78,6 @@ The OLE DB Consumer Templates support the OLE DB version 2.6 specification. (The
   
 ## See Also  
  [OLE DB Programming](../../data/oledb/ole-db-programming.md)   
- [Data Access](../Topic/Data%20Access%20in%20Visual%20C++.md)   
+ [Data Access](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b)   
  [OLE DB SDK Documentation](https://msdn.microsoft.com/en-us/library/ms722784.aspx)   
  [OLE DB Programmer's Reference](https://msdn.microsoft.com/en-us/library/ms713643.aspx)

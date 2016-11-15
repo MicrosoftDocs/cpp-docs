@@ -2,7 +2,6 @@
 title: "&#39;&lt;parametername&gt;&#39; is already declared as a type parameter of this method | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,5 +46,5 @@ A generic procedure defines a normal parameter or a local variable with the same
 -   Change the name of the normal parameter or local variable.  
   
 ## See Also  
- [Generic Procedures in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-procedures)   
- [Parameter List](/dotnet/visual-basic/language-reference/statements/parameter-list)
+ [Generic Procedures in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-procedures)   
+ [Parameter List](/dotnet/articles/visual-basic/language-reference/statements/parameter-list)

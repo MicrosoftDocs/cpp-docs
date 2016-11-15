@@ -2,7 +2,6 @@
 title: "Welcome to the Visual Studio Package Wizard, Visual Studio Package Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ The [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] Package Template
  Moves to the next step.  
   
 ## See Also  
- [Creating an Extension with a Menu Command](/visual-studio/extensibility/creating-an-extension-with-a-menu-command)
+ [Creating an Extension with a Menu Command](/visualstudio/extensibility/creating-an-extension-with-a-menu-command)

@@ -2,7 +2,6 @@
 title: "Compiler Error CS0753 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0753
 Only methods, classes, structs, or interfaces may be partial.  
   
- The [partial](/dotnet/csharp/language-reference/keywords/partial-type) modifier can only be used with classes, structs, interfaces, and methods.  
+ The [partial](/dotnet/articles/csharp/language-reference/keywords/partial-type) modifier can only be used with classes, structs, interfaces, and methods.  
   
 ### To correct this error  
   
@@ -63,4 +62,4 @@ using System;
 ```  
   
 ## See Also  
- [Partial Classes and Methods](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
+ [Partial Classes and Methods](/dotnet/articles/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)

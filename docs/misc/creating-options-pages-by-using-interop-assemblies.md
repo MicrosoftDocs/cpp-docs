@@ -2,7 +2,6 @@
 title: "Creating Options Pages By Using Interop Assemblies | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -64,9 +63,9 @@ Managed VSPackages can use the COM-based interop assemblies of the [!INCLUDE[vsi
  To register the page, you can either manually edit the registry or use a registry script (.rgs file). For more information, see [Creating Registrar Scripts](../atl/creating-registrar-scripts.md).  
   
 ## See Also  
- [Extending the Visual Studio Environment](../Topic/Extending%20the%20Visual%20Studio%20Environment.md)   
+ [Extending the Visual Studio Environment](http://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792)   
  [Creating Registrar Scripts](../atl/creating-registrar-scripts.md)   
- [Automation Support for Options Pages](/visual-studio/extensibility/internals/automation-support-for-options-pages)   
+ [Automation Support for Options Pages](/visualstudio/extensibility/internals/automation-support-for-options-pages)   
  [Using Options Pages](../misc/using-options-pages.md)   
- [Creating Options Pages](/visual-studio/extensibility/internals/creating-options-pages)   
+ [Creating Options Pages](/visualstudio/extensibility/internals/creating-options-pages)   
  [Creating Options Pages By Using Automation](../misc/creating-options-pages-by-using-automation.md)

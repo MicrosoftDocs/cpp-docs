@@ -2,7 +2,6 @@
 title: "Compiler Error CS0065 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -71,4 +70,4 @@ public class MyClass
 ```  
   
 ## See Also  
- [Events](/dotnet/csharp/programming-guide/events/index)
+ [Events](/dotnet/articles/csharp/programming-guide/events/index)

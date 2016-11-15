@@ -2,7 +2,6 @@
 title: "partial_sort_copy (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,7 +49,7 @@ template<class _InIt, class _RanIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `partial_sort_copy`. For more information, see [partial_sort_copy](../Topic/partial_sort_copy.md).  
+ This function behaves the same as the STL function `partial_sort_copy`. For more information, see [partial_sort_copy](http://msdn.microsoft.com/Library/cf137213-7eb6-4109-a94b-3b3d572e19ce).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

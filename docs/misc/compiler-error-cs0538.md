@@ -2,7 +2,6 @@
 title: "Compiler Error CS0538 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0538
 'name' in explicit interface declaration is not an interface  
   
- An attempt was made to explicitly declare an [interface](/dotnet/csharp/language-reference/keywords/interface), but an interface was not specified.  
+ An attempt was made to explicitly declare an [interface](/dotnet/articles/csharp/language-reference/keywords/interface), but an interface was not specified.  
   
  The following sample generates CS0538:  
   

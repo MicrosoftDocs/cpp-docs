@@ -2,7 +2,6 @@
 title: "Event name length cannot exceed 1011 characters | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ The name or identifier of every event declared with an `Event` statement is limi
 -   Reduce the length of the identifier.  
   
 ## See Also  
- [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)
+ [Declared Element Names](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)

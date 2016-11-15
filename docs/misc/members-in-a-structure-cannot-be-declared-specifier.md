@@ -2,7 +2,6 @@
 title: "Members in a Structure cannot be declared &#39;&lt;specifier&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ You have used a specifier that is not valid on a member within a `Structure` sta
 -   Remove the specifier.  
   
 ## See Also  
- [Structures](/dotnet/visual-basic/programming-guide/language-features/data-types/structures)   
- [Structures and Classes](/dotnet/visual-basic/programming-guide/language-features/data-types/structures-and-classes)
+ [Structures](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures)   
+ [Structures and Classes](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/structures-and-classes)

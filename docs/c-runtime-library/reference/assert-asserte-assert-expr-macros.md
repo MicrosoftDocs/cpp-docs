@@ -2,7 +2,6 @@
 title: "_ASSERT, _ASSERTE, _ASSERT_EXPR Macros | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -101,7 +100,7 @@ _CrtSetReportMode(CRT_ASSERT, _CRTDBG_MODE_WNDW);
   
  When the destination is a debug message window and the user clicks the **Retry** button, `_CrtDbgReportW` returns 1, causing the `_ASSERT_EXPR`, `_ASSERT` and `_ASSERTE` macros to start the debugger provided that just-in-time (JIT) debugging is enabled.  
   
- For more information about the reporting process, see the [_CrtDbgReport, _CrtDbgReportW](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md) function. For more information about resolving assertion failures and using these macros as a debugging error handling mechanism, see [Using Macros for Verification and Reporting](/visual-studio/debugger/macros-for-reporting).  
+ For more information about the reporting process, see the [_CrtDbgReport, _CrtDbgReportW](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md) function. For more information about resolving assertion failures and using these macros as a debugging error handling mechanism, see [Using Macros for Verification and Reporting](/visualstudio/debugger/macros-for-reporting).  
   
  In addition to the `_ASSERT` macros, the [assert](../../c-runtime-library/reference/assert-macro-assert-wassert.md) macro can be used to verify program logic. This macro is available in both the debug and release versions of the libraries. The [_RPT, _RPTF](../../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md) debug macros are also available for generating a debug report, but they do not evaluate an expression. The `_RPT` macros generate a simple report. The `_RPTF` macros include the source file and line number where the report macro was called in the generated report. Wide character versions of these macros are available (`_RPTWn`, `_RPTFWn`). The wide character versions are identical to the narrow character versions except that wide character strings are used for all string parameters and output.  
   

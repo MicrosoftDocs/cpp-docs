@@ -2,7 +2,6 @@
 title: "Unable to include XML fragment &#39;&lt;elementpath&gt;&#39; of file &#39;&lt;commentfile&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +46,4 @@ An `<include>` tag in an XML comment contains an XPath expression for an element
 2.  Verify that the XML fragment exists in the file.  
   
 ## See Also  
- [\<include>](../Topic/%3Cinclude%3E%20\(Visual%20Basic\).md)
+ [\<include>](http://msdn.microsoft.com/Library/ba8e9173-82cd-460b-8938-a075a2dfb36d)

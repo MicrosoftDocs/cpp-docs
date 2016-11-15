@@ -2,7 +2,6 @@
 title: "Compiler Error CS0584 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,4 +38,4 @@ translation.priority.mt:
 # Compiler Error CS0584
 Internal Compiler Error: stage 'stage' symbol 'symbol'  
   
- Try to determine whether the compiler is failing because of its inability to parse unexpected syntax. If that is not the case, try [Talk to Us](/visual-studio/ide/talk-to-us).
+ Try to determine whether the compiler is failing because of its inability to parse unexpected syntax. If that is not the case, try [Talk to Us](/visualstudio/ide/talk-to-us).

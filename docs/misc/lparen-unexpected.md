@@ -2,7 +2,6 @@
 title: "&#39;(&#39; unexpected | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,6 +48,6 @@ translation.priority.mt:
 -   If you need a group of elements of the data type that is to be supplied for a data-type parameter, you must use a collection instead of an array.  
   
 ## See Also  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)   
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)   
  [NIB Collections in Visual Basic](http://msdn.microsoft.com/en-us/8b2b7845-2251-4573-8dd3-c9f9c0a66a21)   
  [Managing Groups of Objects in Visual Basic](http://msdn.microsoft.com/en-us/50be4910-4732-4d5f-a18a-055a162e9037)

@@ -2,7 +2,6 @@
 title: "Side effects not valid during expression evaluation in this context | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ Statements that change the state of an object are not allowed in this context.
 -   Change your code so that statements are evaluated without changing the state of other items.  
   
 ## See Also  
- [Nothing](/dotnet/visual-basic/language-reference/nothing)
+ [Nothing](/dotnet/articles/visual-basic/language-reference/nothing)

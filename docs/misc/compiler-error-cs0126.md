@@ -2,7 +2,6 @@
 title: "Compiler Error CS0126 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0126
 An object of a type convertible to 'type' is required  
   
- A return statement is present, but the statement does not return a value of the expected type. For more information, see [Properties](/dotnet/csharp/programming-guide/classes-and-structs/properties).  
+ A return statement is present, but the statement does not return a value of the expected type. For more information, see [Properties](/dotnet/articles/csharp/programming-guide/classes-and-structs/properties).  
   
  The following sample generates CS0126:  
   

@@ -2,7 +2,6 @@
 title: "Method cannot have both a ParamArray and Optional parameters | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ A `ParamArray` argument is automatically optional, and it must be the only optio
 -   Remove the optional arguments in the declaration.  
   
 ## See Also  
- [Parameter Arrays](/dotnet/visual-basic/language-reference/procedures/parameter-arrays)   
- [ParamArray](/dotnet/visual-basic/language-reference/modifiers/paramarray)
+ [Parameter Arrays](/dotnet/articles/visual-basic/language-reference/procedures/parameter-arrays)   
+ [ParamArray](/dotnet/articles/visual-basic/language-reference/modifiers/paramarray)

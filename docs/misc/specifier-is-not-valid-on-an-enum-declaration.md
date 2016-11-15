@@ -2,7 +2,6 @@
 title: "&#39;&lt;specifier&gt;&#39; is not valid on an Enum declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ You have used a specifier that is not valid on an `Enum` declaration.
 1.  Remove the specifier.  
   
 ## See Also  
- [Enumerations Overview](/dotnet/visual-basic/programming-guide/language-features/constants-enums/enumerations-overview)
+ [Enumerations Overview](/dotnet/articles/visual-basic/programming-guide/language-features/constants-enums/enumerations-overview)

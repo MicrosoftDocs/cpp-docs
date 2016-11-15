@@ -2,7 +2,6 @@
 title: "File already exists | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,4 +39,4 @@ This error occurs as a result of either naming a new file with the name of an ex
 -   Check the name and either change it to one that does not conflict, or delete the pre-existing file or project if it is no longer needed.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

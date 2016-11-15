@@ -2,7 +2,6 @@
 title: "Basic VSPackage Information, Visual Studio Package Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -83,4 +82,4 @@ This page of the wizard lets you define basic information about your VSPackage. 
  [Command Options, Visual Studio Package Wizard](../misc/command-options-visual-studio-package-wizard.md)   
  [Tool Window Options, Visual Studio Package Wizard](../misc/tool-window-options-visual-studio-package-wizard.md)   
  [Editor Options, Visual Studio Package Wizard](../misc/editor-options-visual-studio-package-wizard.md)   
- [Creating an Extension with a Menu Command](/visual-studio/extensibility/creating-an-extension-with-a-menu-command)
+ [Creating an Extension with a Menu Command](/visualstudio/extensibility/creating-an-extension-with-a-menu-command)

@@ -2,7 +2,6 @@
 title: "Compiler Error CS1621 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -73,7 +72,7 @@ class C : IEnumerable
 ```  
   
 ## See Also  
- [Iterators](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md)   
- [yield](/dotnet/csharp/language-reference/keywords/yield)   
- [Lambda Expressions](/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions)   
- [Anonymous Methods](/dotnet/csharp/programming-guide/statements-expressions-operators/anonymous-methods)
+ [Iterators](http://msdn.microsoft.com/Library/f45331db-d595-46ec-9142-551d3d1eb1a7)   
+ [yield](/dotnet/articles/csharp/language-reference/keywords/yield)   
+ [Lambda Expressions](/dotnet/articles/csharp/programming-guide/statements-expressions-operators/lambda-expressions)   
+ [Anonymous Methods](/dotnet/articles/csharp/programming-guide/statements-expressions-operators/anonymous-methods)

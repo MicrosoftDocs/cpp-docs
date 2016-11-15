@@ -2,7 +2,6 @@
 title: "Division by zero (Visual Basic Error) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,4 +41,4 @@ The value of an expression used as a divisor is zero.
 2.  Check previous operations on variable in the expression, especially those passed into the procedure as arguments from other procedures.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

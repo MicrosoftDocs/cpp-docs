@@ -2,7 +2,6 @@
 title: "&#39;Implements&#39; statement must follow any &#39;Inherits&#39; statement and precede all declarations in a class | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -55,5 +54,5 @@ An `Implements` statement was encountered in an invalid location.
     ```  
   
 ## See Also  
- [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)   
- [Implements](/dotnet/visual-basic/language-reference/statements/implements-clause)
+ [Interfaces](/dotnet/articles/visual-basic/programming-guide/language-features/interfaces/index)   
+ [Implements](/dotnet/articles/visual-basic/language-reference/statements/implements-clause)

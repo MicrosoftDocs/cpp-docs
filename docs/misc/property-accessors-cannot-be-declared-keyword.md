@@ -2,7 +2,6 @@
 title: "Property accessors cannot be declared &#39;&lt;keyword&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,7 +37,7 @@ translation.priority.mt:
 # Property accessors cannot be declared &#39;&lt;keyword&gt;&#39;
 A `Get` or `Set` procedure declaration includes a keyword that is not valid on a property procedure.  
   
- The [Get Statement](/dotnet/visual-basic/language-reference/statements/get-statement) and [Set Statement](/dotnet/visual-basic/language-reference/statements/set-statement) allow only an access modifier (`Public`, `Protected`, `Friend`, `Protected Friend`, `Private`).  
+ The [Get Statement](/dotnet/articles/visual-basic/language-reference/statements/get-statement) and [Set Statement](/dotnet/articles/visual-basic/language-reference/statements/set-statement) allow only an access modifier (`Public`, `Protected`, `Friend`, `Protected Friend`, `Private`).  
   
  **Error ID:** BC31099  
   
@@ -47,5 +46,5 @@ A `Get` or `Set` procedure declaration includes a keyword that is not valid on a
 -   Remove the invalid keyword from the `Get` or `Set` statement.  
   
 ## See Also  
- [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)   
- [How to: Declare a Property with Mixed Access Levels](../Topic/How%20to:%20Declare%20a%20Property%20with%20Mixed%20Access%20Levels%20\(Visual%20Basic\).md)
+ [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)   
+ [How to: Declare a Property with Mixed Access Levels](http://msdn.microsoft.com/Library/fdbb2d97-279a-4956-b26c-cbdfbc34915a)

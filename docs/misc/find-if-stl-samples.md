@@ -2,7 +2,6 @@
 title: "find_if (STL Samples) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,6 +33,6 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # find_if (STL Samples)
-Topic deprecated, see [find_if](../Topic/find_if.md).  
+Topic deprecated, see [find_if](http://msdn.microsoft.com/Library/aa8ff698-e47e-4ff8-8c88-cbda4b102a4a).  
   
 ## Syntax

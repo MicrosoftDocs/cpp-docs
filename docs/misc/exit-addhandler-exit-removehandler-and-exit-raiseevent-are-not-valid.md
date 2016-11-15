@@ -2,7 +2,6 @@
 title: "&#39;Exit AddHandler&#39;, &#39;Exit RemoveHandler&#39; and &#39;Exit RaiseEvent&#39; are not valid | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,9 +48,9 @@ translation.priority.mt:
      Make sure the `Return` statement does not specify a return expression.  
   
 ## See Also  
- [Event Statement](/dotnet/visual-basic/language-reference/statements/event-statement)   
+ [Event Statement](/dotnet/articles/visual-basic/language-reference/statements/event-statement)   
  [AddHandler - delete](http://msdn.microsoft.com/en-us/fc464cf8-582c-48a6-a9c2-185c4c3d5ff8)   
  [RemoveHandler - delete](http://msdn.microsoft.com/en-us/35c17f61-6e22-4b87-b6e1-3ed0c27a88a0)   
  [RaiseEvent - delete](http://msdn.microsoft.com/en-us/7f765da0-5491-40b6-9ed5-24c98f9daad9)   
- [Return Statement](/dotnet/visual-basic/language-reference/statements/return-statement)   
- [Events](/dotnet/visual-basic/programming-guide/language-features/events/events)
+ [Return Statement](/dotnet/articles/visual-basic/language-reference/statements/return-statement)   
+ [Events](/dotnet/articles/visual-basic/programming-guide/language-features/events/events)

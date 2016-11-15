@@ -2,7 +2,6 @@
 title: "Compiler Error CS0066 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS0066
 'event': event must be of a delegate type  
   
- The event keyword requires a [delegate](/dotnet/csharp/language-reference/keywords/delegate) type. For more information, see [Events](/dotnet/csharp/programming-guide/events/index) and [Delegates](/dotnet/csharp/programming-guide/delegates/index).  
+ The event keyword requires a [delegate](/dotnet/articles/csharp/language-reference/keywords/delegate) type. For more information, see [Events](/dotnet/articles/csharp/programming-guide/events/index) and [Delegates](/dotnet/articles/csharp/programming-guide/delegates/index).  
   
  The following sample generates CS0066:  
   

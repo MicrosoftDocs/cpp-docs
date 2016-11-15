@@ -2,7 +2,6 @@
 title: "Some files and folders caused exceptions during the operation | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,4 +38,4 @@ Directories and files may cause exceptions when an operation is attempted but th
   
 ## See Also  
  <xref:System.Security.Permissions.FileIOPermission>   
- [Troubleshooting: Reading from and Writing to Text Files](../Topic/Troubleshooting:%20Reading%20from%20and%20Writing%20to%20Text%20Files%20\(Visual%20Basic\).md)
+ [Troubleshooting: Reading from and Writing to Text Files](http://msdn.microsoft.com/Library/a8e9b44d-facb-4718-8c0f-466537171182)

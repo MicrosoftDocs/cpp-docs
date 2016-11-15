@@ -2,7 +2,6 @@
 title: "Class &#39;&lt;classname1&gt;&#39; must declare a &#39;Sub New&#39; because its base class &#39;&lt;classname2&gt;&#39; has more than one accessible &#39;Sub New&#39; that can be called with no arguments | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,9 +50,9 @@ A derived class does not declare a constructor, and [!INCLUDE[vbprvb](../dotnet/
 2.  Add a call to a base class constructor, `MyBase.New()`, as the first line of every `Sub New`.  
   
 ## See Also  
- [Object Lifetime: How Objects Are Created and Destroyed](../Topic/Object%20Lifetime:%20How%20Objects%20Are%20Created%20and%20Destroyed%20\(Visual%20Basic\).md)   
+ [Object Lifetime: How Objects Are Created and Destroyed](http://msdn.microsoft.com/Library/f1ee8458-b156-44e0-9a8a-5dd171648cd8)   
  [NOT IN BUILD: Using Constructors and Destructors](http://msdn.microsoft.com/en-us/548eebe1-86c4-4377-b2f5-447cb8be3d90)   
- [Optional](/dotnet/visual-basic/language-reference/modifiers/optional)   
- [ParamArray](/dotnet/visual-basic/language-reference/modifiers/paramarray)   
- [Optional Parameters](/dotnet/visual-basic/language-reference/procedures/optional-parameters)   
- [Parameter Arrays](/dotnet/visual-basic/language-reference/procedures/parameter-arrays)
+ [Optional](/dotnet/articles/visual-basic/language-reference/modifiers/optional)   
+ [ParamArray](/dotnet/articles/visual-basic/language-reference/modifiers/paramarray)   
+ [Optional Parameters](/dotnet/articles/visual-basic/language-reference/procedures/optional-parameters)   
+ [Parameter Arrays](/dotnet/articles/visual-basic/language-reference/procedures/parameter-arrays)

@@ -2,7 +2,6 @@
 title: "Label &#39;&lt;labelname&gt;&#39; is already defined in the current method-multiline lambda | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ The label name is duplicated within the procedure. All names within a procedure 
 1.  Rename the duplicate label.  
   
 ## See Also  
- [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
- [How to: Label Statements](../Topic/How%20to:%20Label%20Statements%20\(Visual%20Basic\).md)
+ [Declared Element Names](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)   
+ [How to: Label Statements](http://msdn.microsoft.com/Library/38f1ff43-2054-42cb-963b-1998e60c6ed4)

@@ -2,7 +2,6 @@
 title: "Assembly reference &#39;&lt;reference&gt;&#39; is invalid and cannot be resolved | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,5 +42,5 @@ translation.priority.mt:
 1.  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [/moduleassemblyname](/dotnet/visual-basic/reference/command-line-compiler/moduleassemblyname)
+ [Visual Basic Command-Line Compiler](/dotnet/articles/visual-basic/reference/command-line-compiler/index)   
+ [/moduleassemblyname](/dotnet/articles/visual-basic/reference/command-line-compiler/moduleassemblyname)

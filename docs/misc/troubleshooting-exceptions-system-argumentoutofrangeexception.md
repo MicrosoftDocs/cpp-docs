@@ -2,7 +2,6 @@
 title: "Troubleshooting Exceptions: System.ArgumentOutOfRangeException | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,7 +44,7 @@ An <xref:System.ArgumentOutOfRangeException> is thrown when a method is invoked 
  Arguments that are not null references must contain valid values.  
   
  **If you are working with a collection, make sure that the index is less than the size of the collection.**  
- The index must be within the size range of the collection and cannot exceed the size range or be less than zero. For more information, see [Collections](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md).  
+ The index must be within the size range of the collection and cannot exceed the size range or be less than zero. For more information, see [Collections](http://msdn.microsoft.com/Library/e76533a9-5033-4a0b-b003-9c2be60d185b).  
   
  **When using the overloaded two-argument FindString or FindStringExact methods of the ComboBox or ListBox class, check the startIndex parameter**.  
  This exception may be thrown if `startIndex` is equal to the index value of the last item of the associated list. To work around this, pass 0 as the `startIndex` parameter or use the one-argument `FindString` or `FindStringExact` method. For more information, see [CComboBox::FindString](../Topic/CComboBox::FindString.md) or [CListBox::FindString](../Topic/CListBox::FindString.md).  

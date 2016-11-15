@@ -2,7 +2,6 @@
 title: "&#39;Loop&#39; must be preceded by a matching &#39;Do&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,4 +48,4 @@ A `Loop` statement occurs without a corresponding `Do` statement. `Loop` must be
 3.  Ensure that this `Do` loop is correctly formatted.  
   
 ## See Also  
- [Do...Loop Statement](/dotnet/visual-basic/language-reference/statements/do-loop-statement)
+ [Do...Loop Statement](/dotnet/articles/visual-basic/language-reference/statements/do-loop-statement)

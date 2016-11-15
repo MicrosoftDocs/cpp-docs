@@ -2,7 +2,6 @@
 title: "Visual C++ in Visual Studio | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev15"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -111,7 +110,7 @@ The [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] programming language and 
  [Cloud and Web Programming](../top/cloud-and-web-programming-in-visual-cpp.md)  
  In C++, you have several options for connecting to the web and the cloud.  
   
- [Data Access](../Topic/Data%20Access%20in%20Visual%20C++.md)  
+ [Data Access](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b)  
  Connect to databases using ODBC and other database access technologies.  
   
  [Text and Strings](../text/text-and-strings-in-visual-cpp.md)  

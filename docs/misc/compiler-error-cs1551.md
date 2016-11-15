@@ -2,7 +2,6 @@
 title: "Compiler Error CS1551 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1551
 Indexers must have at least one parameter  
   
- An [indexer](/dotnet/csharp/programming-guide/indexers/index) that takes no arguments was declared.  
+ An [indexer](/dotnet/articles/csharp/programming-guide/indexers/index) that takes no arguments was declared.  
   
  The following sample generates CS1551:  
   

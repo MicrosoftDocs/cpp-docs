@@ -2,7 +2,6 @@
 title: "Interface &#39;&lt;interfacename&gt;&#39; is not implemented by this class | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,6 +46,6 @@ A member of this class or structure attempts to implement a member of an interfa
 -   Remove the `Implements` keyword from the member that causes this error.  
   
 ## See Also  
- [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)   
- [Implements](/dotnet/visual-basic/language-reference/statements/implements-clause)   
- [Implements Statement](/dotnet/visual-basic/language-reference/statements/implements-statement)
+ [Interfaces](/dotnet/articles/visual-basic/programming-guide/language-features/interfaces/index)   
+ [Implements](/dotnet/articles/visual-basic/language-reference/statements/implements-clause)   
+ [Implements Statement](/dotnet/articles/visual-basic/language-reference/statements/implements-statement)

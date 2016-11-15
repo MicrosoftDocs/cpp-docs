@@ -2,7 +2,6 @@
 title: "Tool requires a title. If you do not want to save this tool, click Delete in the External Tools dialog. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,4 +41,4 @@ This error generally occurs when a new tool has been added to the External Tools
 2.  If you do not intend to save the tool, click **OK** and then click **Delete** in the **External Tools** dialog box.  
   
 ## See Also  
- [Managing External Tools](/visual-studio/ide/managing-external-tools)
+ [Managing External Tools](/visualstudio/ide/managing-external-tools)

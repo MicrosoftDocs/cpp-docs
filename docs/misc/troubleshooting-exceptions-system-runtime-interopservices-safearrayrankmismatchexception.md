@@ -2,7 +2,6 @@
 title: "Troubleshooting Exceptions: System.Runtime.InteropServices.SafeArrayRankMismatchException | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,10 +43,10 @@ A <xref:System.Runtime.InteropServices.SafeArrayRankMismatchException> exception
   
 ## Associated Tips  
  **Make sure your array has the required number of dimensions.**  
- Because the rank and bounds of a safe array cannot be determined from the type library, the rank is assumed to equal 1, and the lower bound is assumed to equal 0. The rank and bounds must be defined in the managed signature produced by the [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md).  
+ Because the rank and bounds of a safe array cannot be determined from the type library, the rank is assumed to equal 1, and the lower bound is assumed to equal 0. The rank and bounds must be defined in the managed signature produced by the [Tlbimp.exe (Type Library Importer)](http://msdn.microsoft.com/Library/ec0a8d63-11b3-4acd-b398-da1e37e97382).  
   
 ## See Also  
  <xref:System.Runtime.InteropServices.SafeArrayRankMismatchException>   
  [Use the Exception Assistant](../Topic/How%20to:%20Use%20the%20Exception%20Assistant.md)   
- [Default Marshaling for Arrays](../Topic/Default%20Marshaling%20for%20Arrays.md)   
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)
+ [Default Marshaling for Arrays](http://msdn.microsoft.com/Library/8a3cca8b-dd94-4e3d-ad9a-9ee7590654bc)   
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)

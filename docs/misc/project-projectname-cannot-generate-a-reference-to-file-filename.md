@@ -2,7 +2,6 @@
 title: "Project &#39;&lt;projectname&gt;&#39; cannot generate a reference to file &#39;&lt;filename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,5 +48,5 @@ Project '<`projectname`>' cannot generate a reference to file '<`filename`>'. Yo
 2.  Restore the reference by right clicking **References** in the **Solution Explorer** and then clicking **Add Reference**.  
   
 ## See Also  
- [Managing references in a project](/visual-studio/ide/managing-references-in-a-project)   
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

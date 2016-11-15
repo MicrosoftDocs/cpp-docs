@@ -2,7 +2,6 @@
 title: "Object initializer syntax cannot be used to initialize an instance of type &#39;Object&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -56,5 +55,5 @@ You cannot initialize an instance of `Object` by using object initializer syntax
     ```  
   
 ## See Also  
- [Object Initializers: Named and Anonymous Types](../Topic/Object%20Initializers:%20Named%20and%20Anonymous%20Types%20\(Visual%20Basic\).md)   
- [Object Data Type](/dotnet/visual-basic/language-reference/data-types/object-data-type)
+ [Object Initializers: Named and Anonymous Types](http://msdn.microsoft.com/Library/e2df3807-a70f-49dd-ac94-f1e07f472b1b)   
+ [Object Data Type](/dotnet/articles/visual-basic/language-reference/data-types/object-data-type)

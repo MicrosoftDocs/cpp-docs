@@ -2,7 +2,6 @@
 title: "Properties cannot be declared &#39;&lt;modifiername&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ There is an error in the syntax used in the `Property` declaration. This error g
 -   Check the syntax for the `Property` declaration.  
   
 ## See Also  
- [Property Procedures](/dotnet/visual-basic/language-reference/procedures/property-procedures)
+ [Property Procedures](/dotnet/articles/visual-basic/language-reference/procedures/property-procedures)

@@ -2,7 +2,6 @@
 title: "Implementing class &#39;&lt;underlyingclassname&gt;&#39; for interface &#39;&lt;interfacename&gt;&#39; is not accessible in this context because it is &#39;&lt;accesslevel&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -52,5 +51,5 @@ An interface is declared with the <xref:System.Runtime.InteropServices.CoClassAt
   
 ## See Also  
  <xref:System.Runtime.InteropServices.CoClassAttribute>   
- [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator)   
- [Access Levels in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/access-levels)
+ [New Operator](/dotnet/articles/visual-basic/language-reference/operators/new-operator)   
+ [Access Levels in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/access-levels)

@@ -2,7 +2,6 @@
 title: "MSBuild Error MSB1019 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -62,5 +61,5 @@ translation.priority.mt:
      Example: /`logger:XMLLogger,MyLogger,Version=1.0.2,Culture=neutral`  
   
 ## See Also  
- [Command-Line Reference](/visual-studio/msbuild/msbuild-command-line-reference)   
- [Build Loggers](/visual-studio/msbuild/build-loggers)
+ [Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference)   
+ [Build Loggers](/visualstudio/msbuild/build-loggers)

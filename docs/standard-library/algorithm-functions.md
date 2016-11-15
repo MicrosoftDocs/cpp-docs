@@ -8517,6 +8517,5 @@ int main( )
 }  
   
 ```  
-  
-## See Also  
+## See Also   
  [\<algorithm>](../standard-library/algorithm.md)

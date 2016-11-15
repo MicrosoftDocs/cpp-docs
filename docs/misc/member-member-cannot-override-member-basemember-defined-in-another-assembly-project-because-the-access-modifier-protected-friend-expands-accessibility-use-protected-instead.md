@@ -2,7 +2,6 @@
 title: "Member &lt;member&gt; cannot override member &lt;baseMember&gt; defined in another assembly-project because the access modifier &#39;Protected Friend&#39; expands accessibility. Use &#39;Protected&#39; instead. | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,8 @@ translation.priority.mt:
 1.  
   
 ## See Also  
- [Friend](/dotnet/visual-basic/language-reference/modifiers/friend)   
- [Protected](/dotnet/visual-basic/language-reference/modifiers/protected)   
- [Access Levels in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/access-levels)   
- [Procedures](/dotnet/visual-basic/language-reference/procedures/index)   
+ [Friend](/dotnet/articles/visual-basic/language-reference/modifiers/friend)   
+ [Protected](/dotnet/articles/visual-basic/language-reference/modifiers/protected)   
+ [Access Levels in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/access-levels)   
+ [Procedures](/dotnet/articles/visual-basic/language-reference/procedures/index)   
  [NOT IN BUILD: Understanding Classes](http://msdn.microsoft.com/en-us/cc2355a2-cb98-4353-9440-736585aec46c)

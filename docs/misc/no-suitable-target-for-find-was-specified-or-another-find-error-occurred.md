@@ -2,7 +2,6 @@
 title: "No suitable target for find was specified or another find error occurred. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,5 +40,5 @@ This error generally occurs when a search has been attempted with the search sco
 1.  Open a file and try the search again or change the scope of the search.  
   
 ## See Also  
- [Finding and Replacing Text](/visual-studio/ide/finding-and-replacing-text)   
- [Find in Files](/visual-studio/ide/find-in-files)
+ [Finding and Replacing Text](/visualstudio/ide/finding-and-replacing-text)   
+ [Find in Files](/visualstudio/ide/find-in-files)

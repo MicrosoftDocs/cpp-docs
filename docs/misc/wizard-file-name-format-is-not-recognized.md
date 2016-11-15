@@ -2,7 +2,6 @@
 title: "Wizard file &lt;name&gt; format is not recognized. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ The wizard cannot be opened. This error is generally caused by a corrupted wizar
      Re-install Visual Studio to repair the corrupted file.  
   
 ## See Also  
- [Walkthrough: Creating a Wizard](../Topic/Walkthrough:%20Creating%20a%20Wizard.md)
+ [Walkthrough: Creating a Wizard](http://msdn.microsoft.com/Library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)

@@ -2,7 +2,6 @@
 title: "sort (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,7 +47,7 @@ template<class _RanIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `sort`. For more information, see [sort](../Topic/sort.md).  
+ This function behaves the same as the STL function `sort`. For more information, see [sort](http://msdn.microsoft.com/Library/9b0a4fc1-5131-4c73-9c2e-d72211f2d0ae).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

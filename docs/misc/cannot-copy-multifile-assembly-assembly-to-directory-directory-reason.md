@@ -2,7 +2,6 @@
 title: "Cannot copy multifile assembly &#39;assembly&#39; to directory &#39;directory&#39;. &lt;reason&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -54,6 +53,6 @@ c:\project1\bin\Test
 -   Change the output directory to a folder with a shorter absolute path length (applicable for client projects only).  
   
 ## See Also  
- [Troubleshooting Broken References](/visual-studio/ide/troubleshooting-broken-references)   
+ [Troubleshooting Broken References](/visualstudio/ide/troubleshooting-broken-references)   
  [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Assemblies in the Common Language Runtime](http://msdn.microsoft.com/en-us/33a0bc6a-6bb3-44c7-ada7-4a046e8c0945)

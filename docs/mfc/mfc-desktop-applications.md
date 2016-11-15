@@ -2,7 +2,6 @@
 title: "MFC Desktop Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -109,12 +108,3 @@ The Microsoft Foundation Class (MFC) Library provides an object-oriented wrapper
   
 ## See Also  
  [MFC and ATL](mfc-and-atl.md)
-
-
-
-
-
-
-
-
-

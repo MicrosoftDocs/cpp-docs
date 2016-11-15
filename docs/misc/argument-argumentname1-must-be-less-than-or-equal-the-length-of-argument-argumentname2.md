@@ -2,7 +2,6 @@
 title: "Argument &#39;&lt;argumentname1&gt;&#39; must be less than or equal the length of argument &#39;&lt;argumentname2&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,4 +37,4 @@ The length of a supplied argument exceeds the length of the argument it is repla
 -   Make the length of the first argument less than or equal to the length of the second argument.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)

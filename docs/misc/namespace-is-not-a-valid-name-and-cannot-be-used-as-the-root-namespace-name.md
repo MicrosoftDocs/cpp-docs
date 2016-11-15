@@ -2,7 +2,6 @@
 title: "&#39;&lt;namespace&gt;&#39; is not a valid name and cannot be used as the root namespace name | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ A qualifying namespace name is not a valid element name. A name must contain onl
 -   If the namespace is part of a set of nested namespaces, check to see if any of the outer names contain invalid characters.  
   
 ## See Also  
- [Namespaces in Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces)   
- [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)
+ [Namespaces in Visual Basic](/dotnet/articles/visual-basic/programming-guide/program-structure/namespaces)   
+ [Declared Element Names](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)

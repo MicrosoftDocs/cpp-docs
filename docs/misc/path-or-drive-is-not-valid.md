@@ -2,7 +2,6 @@
 title: "Path or drive is not valid. | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,5 +40,5 @@ This error generally occurs when the Browse box in the Look In dialog box is emp
 1.  Type a path or directory and press ENTER.  
   
 ## See Also  
- [Finding and Replacing Text](/visual-studio/ide/finding-and-replacing-text)   
+ [Finding and Replacing Text](/visualstudio/ide/finding-and-replacing-text)   
  [Choose Search Folders](http://msdn.microsoft.com/en-us/85af6458-dcde-4a84-9ea4-f5cc6550dc80)

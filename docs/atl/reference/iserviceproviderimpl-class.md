@@ -2,7 +2,6 @@
 title: "IServiceProviderImpl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -66,9 +65,9 @@ template <class T>   class ATL_NO_VTABLE IServiceProviderImpl :  public IService
   
  **IServiceProviderImpl** specifies one method: [QueryService](#iserviceproviderimpl__queryservice), which creates or accesses the specified service and returns an interface pointer to the specified interface for the service.  
   
- `IServiceProviderImpl` uses a service map, starting with [BEGIN_SERVICE_MAP](../Topic/BEGIN_SERVICE_MAP.md) and ending with [END_SERVICE_MAP](../Topic/END_SERVICE_MAP.md).  
+ `IServiceProviderImpl` uses a service map, starting with [BEGIN_SERVICE_MAP](http://msdn.microsoft.com/Library/3c6ae156-8776-4588-8227-2d234daec236) and ending with [END_SERVICE_MAP](http://msdn.microsoft.com/Library/9a35d02a-014c-413a-bb0b-bcca11ab45a6).  
   
- The service map contains two entries: [SERVICE_ENTRY](../Topic/SERVICE_ENTRY.md), which indicates a specified service id (SID) supported by the object, and [SERVICE_ENTRY_CHAIN](../Topic/SERVICE_ENTRY_CHAIN.md), which calls `QueryService` to chain to another object.  
+ The service map contains two entries: [SERVICE_ENTRY](http://msdn.microsoft.com/Library/e65ff9cc-15e8-41cf-b686-f99eb6686ca9), which indicates a specified service id (SID) supported by the object, and [SERVICE_ENTRY_CHAIN](http://msdn.microsoft.com/Library/09be4ce4-3ccd-4ff2-a95e-a9d5275354c1), which calls `QueryService` to chain to another object.  
   
 ## Inheritance Hierarchy  
  `IServiceProvider`  

@@ -2,7 +2,6 @@
 title: "&#39;TypeOf...Is&#39; requires its left operand to have a reference type, but this operand has the type &#39;&lt;type&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,7 +46,7 @@ The `TypeOf...Is` expression checks an object variable's run-time type compatibi
 -   If `Option Strict` is `On`, the variable declaration determines the variable's data type.  
   
 ## See Also  
- [Comparison Operators in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators)   
+ [Comparison Operators in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators)   
  [NOT IN BUILD: TypeName Function (Visual Basic)](http://msdn.microsoft.com/en-us/6197bc6c-e8a6-4711-883c-0c95e94e272c)   
  [NOT IN BUILD: VarType Function (Visual Basic)](http://msdn.microsoft.com/en-us/e820b6fc-faa6-4de4-836a-0466032dc190)   
- [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)
+ [Option Strict Statement](/dotnet/articles/visual-basic/language-reference/statements/option-strict-statement)

@@ -2,7 +2,6 @@
 title: "Array declarations cannot specify lower bounds | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -59,6 +58,6 @@ Arrays always have a lower bound of zero. You can specify zero as the lower boun
     ```  
   
 ## See Also  
- [Arrays](/dotnet/visual-basic/programming-guide/language-features/arrays/index)   
- [Array Dimensions in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/array-dimensions)   
+ [Arrays](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/index)   
+ [Array Dimensions in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/arrays/array-dimensions)   
  [NOTINBUILD How to: Specify a Zero Lower Bound on an Array](http://msdn.microsoft.com/en-us/20ffd49a-64f7-4634-8ed0-46ba1049d935)

@@ -2,7 +2,6 @@
 title: "&#39;New&#39; cannot be used on a class that is declared &#39;MustInherit&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,5 +44,5 @@ A `MustInherit` class cannot be instantiated directly, and therefore the `New` o
 -   Remove the `New` operator.  
   
 ## See Also  
- [MustInherit](/dotnet/visual-basic/language-reference/modifiers/mustinherit)   
- [New Operator](/dotnet/visual-basic/language-reference/operators/new-operator)
+ [MustInherit](/dotnet/articles/visual-basic/language-reference/modifiers/mustinherit)   
+ [New Operator](/dotnet/articles/visual-basic/language-reference/operators/new-operator)

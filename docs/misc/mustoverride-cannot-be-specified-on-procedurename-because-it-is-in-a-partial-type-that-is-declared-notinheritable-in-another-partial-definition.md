@@ -2,7 +2,6 @@
 title: "&#39;MustOverride&#39; cannot be specified on &#39;&lt;procedurename&gt;&#39; because it is in a partial type that is declared &#39;NotInheritable&#39; in another partial definition | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,8 +50,8 @@ A procedure or property is declared as `MustOverride` within a class that is def
 -   If the class must be `NotInheritable`, then remove the `MustOverride` keyword from the procedure or property. You cannot override it because you cannot inherit the class.  
   
 ## See Also  
- [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)   
- [MustOverride](/dotnet/visual-basic/language-reference/modifiers/mustoverride)   
- [MustInherit](/dotnet/visual-basic/language-reference/modifiers/mustinherit)   
- [NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)   
- [Inheritance Basics](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
+ [Partial](/dotnet/articles/visual-basic/language-reference/modifiers/partial)   
+ [MustOverride](/dotnet/articles/visual-basic/language-reference/modifiers/mustoverride)   
+ [MustInherit](/dotnet/articles/visual-basic/language-reference/modifiers/mustinherit)   
+ [NotInheritable](/dotnet/articles/visual-basic/language-reference/modifiers/notinheritable)   
+ [Inheritance Basics](/dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

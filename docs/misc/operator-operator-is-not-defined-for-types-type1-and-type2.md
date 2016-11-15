@@ -2,7 +2,6 @@
 title: "Operator &#39;operator&#39; is not defined for types &#39;type1&#39; and &#39;type2&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,5 +46,5 @@ Operator 'operator' is not defined for types 'type1' and 'type2'. You can use th
 -   Use the `Value` property of the XML literal for the binary or `Boolean` comparison.  
   
 ## See Also  
- [XML Literals](/dotnet/visual-basic/language-reference/xml-literals/index)   
- [XML](/dotnet/visual-basic/programming-guide/language-features/xml/index)
+ [XML Literals](/dotnet/articles/visual-basic/language-reference/xml-literals/index)   
+ [XML](/dotnet/articles/visual-basic/programming-guide/language-features/xml/index)

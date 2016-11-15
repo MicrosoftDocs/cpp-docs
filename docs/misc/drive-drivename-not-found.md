@@ -2,7 +2,6 @@
 title: "Drive &#39;&lt;drivename&gt;&#39; not found | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,5 +45,5 @@ The drive cannot be found. Either your network connection has been lost, or the 
 4.  Reconnect to the network and try again.  
   
 ## See Also  
- [Error Types](/dotnet/visual-basic/programming-guide/language-features/error-types)   
+ [Error Types](/dotnet/articles/visual-basic/programming-guide/language-features/error-types)   
  [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)

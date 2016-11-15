@@ -2,7 +2,6 @@
 title: "&#39;&lt;member&gt;&#39; is already declared in this structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ An enumeration member has been declared more than one time in this structure.
 -   Remove the extraneous declaration.  
   
 ## See Also  
- [Debugger Basics](/visual-studio/debugger/debugger-basics)
+ [Debugger Basics](/visualstudio/debugger/debugger-basics)

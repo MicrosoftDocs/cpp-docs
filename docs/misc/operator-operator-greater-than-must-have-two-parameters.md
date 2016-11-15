@@ -2,7 +2,6 @@
 title: "Operator &#39;&lt;operator&gt;&#39; must have two parameters | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,10 +47,10 @@ A binary operator is defined with fewer than two or more than two parameters.
   
 -   If you need only one parameter, you must define a unary operator.  
   
--   If you need no parameters or more than two, you must use the [Function Statement](/dotnet/visual-basic/language-reference/statements/function-statement) to define a `Function` procedure instead of an operator.  
+-   If you need no parameters or more than two, you must use the [Function Statement](/dotnet/articles/visual-basic/language-reference/statements/function-statement) to define a `Function` procedure instead of an operator.  
   
 ## See Also  
- [Operator Procedures](/dotnet/visual-basic/language-reference/procedures/operator-procedures)   
- [Operator Statement](/dotnet/visual-basic/language-reference/statements/operator-statement)   
- [How to: Define an Operator](../Topic/How%20to:%20Define%20an%20Operator%20\(Visual%20Basic\).md)   
- [How to: Define a Conversion Operator](../Topic/How%20to:%20Define%20a%20Conversion%20Operator%20\(Visual%20Basic\).md)
+ [Operator Procedures](/dotnet/articles/visual-basic/language-reference/procedures/operator-procedures)   
+ [Operator Statement](/dotnet/articles/visual-basic/language-reference/statements/operator-statement)   
+ [How to: Define an Operator](http://msdn.microsoft.com/Library/d4b0e253-092a-4e6e-9fe2-01f562140a29)   
+ [How to: Define a Conversion Operator](http://msdn.microsoft.com/Library/54203dfa-c24b-463f-9942-d5153e89e762)

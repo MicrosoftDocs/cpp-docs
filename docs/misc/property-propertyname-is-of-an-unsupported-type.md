@@ -2,7 +2,6 @@
 title: "Property &#39;&lt;propertyname&gt;&#39; is of an unsupported type | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,4 +44,4 @@ A property in a referenced assembly contains a type that cannot be represented.
 -   Specify a type that can be used with your application.  
   
 ## See Also  
- [Data Types](/dotnet/visual-basic/programming-guide/language-features/data-types/index)
+ [Data Types](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/index)

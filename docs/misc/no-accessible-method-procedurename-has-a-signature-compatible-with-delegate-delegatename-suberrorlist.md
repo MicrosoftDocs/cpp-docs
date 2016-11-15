@@ -2,7 +2,6 @@
 title: "No accessible method &#39;&lt;procedurename&gt;&#39; has a  signature compatible with delegate &#39;&lt;delegatename&gt;&#39;:&lt;suberrorlist&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,7 +37,7 @@ translation.priority.mt:
 # No accessible method &#39;&lt;procedurename&gt;&#39; has a  signature compatible with delegate &#39;&lt;delegatename&gt;&#39;:&lt;suberrorlist&gt;
 An assignment statement assigns the address of a procedure to a delegate variable, but the compiler cannot find a version of the procedure with a matching signature.  
   
- When code uses the address of a procedure, the compiler tries to find a version of that procedure with a parameter list that matches that of the delegate. If the procedure is defined in several overloaded versions, the compiler tries to find a single version with a matching signature. For more information, see [Overload Resolution](/dotnet/visual-basic/language-reference/procedures/overload-resolution).  
+ When code uses the address of a procedure, the compiler tries to find a version of that procedure with a parameter list that matches that of the delegate. If the procedure is defined in several overloaded versions, the compiler tries to find a single version with a matching signature. For more information, see [Overload Resolution](/dotnet/articles/visual-basic/language-reference/procedures/overload-resolution).  
   
  If the compiler cannot find any version of the procedure with a matching signature, it generates this error. This can happen, for example, if either the procedure or the delegate is generic and a type argument is passed to it that gives it a signature that does not match the other signature.  
   
@@ -55,8 +54,8 @@ An assignment statement assigns the address of a procedure to a delegate variabl
 2.  If either the procedure or the delegate is generic, then pass it a type argument that causes its signature to match the other signature.  
   
 ## See Also  
- [AddressOf Operator](/dotnet/visual-basic/language-reference/operators/addressof-operator)   
- [Delegate Statement](/dotnet/visual-basic/language-reference/statements/delegate-statement)   
+ [AddressOf Operator](/dotnet/articles/visual-basic/language-reference/operators/addressof-operator)   
+ [Delegate Statement](/dotnet/articles/visual-basic/language-reference/statements/delegate-statement)   
  [NOT IN BUILD: Delegates and the AddressOf Operator](http://msdn.microsoft.com/en-us/7b2ed932-8598-4355-b2f7-5cedb23ee86f)   
- [Overload Resolution](/dotnet/visual-basic/language-reference/procedures/overload-resolution)   
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)
+ [Overload Resolution](/dotnet/articles/visual-basic/language-reference/procedures/overload-resolution)   
+ [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)

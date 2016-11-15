@@ -2,7 +2,6 @@
 title: "The value of &lt;argumentname&gt; must be greater than or equal to 1000 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,5 +42,5 @@ The value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFil
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFileSize%2A>   
- [My.Application.Log Object](/dotnet/visual-basic/language-reference/objects/my-application-log-object)   
- [My.Log Object](/dotnet/visual-basic/language-reference/objects/my-log-object)
+ [My.Application.Log Object](/dotnet/articles/visual-basic/language-reference/objects/my-application-log-object)   
+ [My.Log Object](/dotnet/articles/visual-basic/language-reference/objects/my-log-object)

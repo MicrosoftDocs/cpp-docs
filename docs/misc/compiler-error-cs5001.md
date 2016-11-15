@@ -2,7 +2,6 @@
 title: "Compiler Error CS5001 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,9 +38,9 @@ translation.priority.mt:
 # Compiler Error CS5001
 Program 'program' does not contain a static 'Main' method suitable for an entry point  
   
- This error occurs when no static [Main](/dotnet/csharp/programming-guide/main-and-command-args/main-and-command-line-arguments) method with a correct signature is found in the code that produces an executable file. This error also occurs if the entry point function, `Main`, is defined with the wrong case, such as lower-case `main`.  
+ This error occurs when no static [Main](/dotnet/articles/csharp/programming-guide/main-and-command-args/main-and-command-line-arguments) method with a correct signature is found in the code that produces an executable file. This error also occurs if the entry point function, `Main`, is defined with the wrong case, such as lower-case `main`.  
   
--   `Main` must be declared as static and it must return [void](/dotnet/csharp/language-reference/keywords/void) or [int](/dotnet/csharp/language-reference/keywords/int), and it must have either no parameters or else one parameter of type `string[]`.  
+-   `Main` must be declared as static and it must return [void](/dotnet/articles/csharp/language-reference/keywords/void) or [int](/dotnet/articles/csharp/language-reference/keywords/int), and it must have either no parameters or else one parameter of type `string[]`.  
   
 ## Example  
  The following example generates CS5001:  
@@ -57,4 +56,4 @@ public class a
 ```  
   
 ## See Also  
- [Main() and Command-Line Arguments](/dotnet/csharp/programming-guide/main-and-command-args/main-and-command-line-arguments)
+ [Main() and Command-Line Arguments](/dotnet/articles/csharp/programming-guide/main-and-command-args/main-and-command-line-arguments)

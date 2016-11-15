@@ -2,7 +2,6 @@
 title: "Compiler Error CS1594 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error CS1594
 Delegate 'delegate' has some invalid arguments  
   
- The type of an argument passed to a [delegate](/dotnet/csharp/language-reference/keywords/delegate) invocation does not agree with the type of the parameter in the delegate declaration.  
+ The type of an argument passed to a [delegate](/dotnet/articles/csharp/language-reference/keywords/delegate) invocation does not agree with the type of the parameter in the delegate declaration.  
   
  The following sample generates CS1594:  
   

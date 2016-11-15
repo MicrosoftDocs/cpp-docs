@@ -2,7 +2,6 @@
 title: "Compiler Error CS1944 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -56,4 +55,4 @@ An expression tree may not contain an unsafe pointer operation
  This code is a valid expression tree because no type arguments are pointer types. They are arrays of pointers, and arrays are not pointer types. Also, the body of the expression tree does not do anything dangerous with any pointer.  
   
 ## See Also  
- [unsafe](/dotnet/csharp/language-reference/keywords/unsafe)
+ [unsafe](/dotnet/articles/csharp/language-reference/keywords/unsafe)

@@ -2,7 +2,6 @@
 title: "Generate From Usage | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,4 +41,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Generate From Usage
-This content has moved to [Visual C# IntelliSense](/visual-studio/ide/visual-csharp-intellisense).
+This content has moved to [Visual C# IntelliSense](/visualstudio/ide/visual-csharp-intellisense).

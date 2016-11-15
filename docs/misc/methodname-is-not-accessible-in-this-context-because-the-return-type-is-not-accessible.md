@@ -2,7 +2,6 @@
 title: "&#39;&lt;methodname&gt;&#39; is not accessible in this context because the return type is not accessible | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -84,4 +83,4 @@ End Module
 -   Write a method or extension method that returns an accessible type.  
   
 ## See Also  
- [Access Levels in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/declared-elements/access-levels)
+ [Access Levels in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/access-levels)

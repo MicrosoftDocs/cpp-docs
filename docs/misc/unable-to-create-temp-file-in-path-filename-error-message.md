@@ -2,7 +2,6 @@
 title: "Unable to create temp file in path &#39;&lt;filename&gt;&#39;: &lt;error message&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,6 +46,6 @@ The [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] compiler calls the Assem
 2.  If the error persists, gather information about the circumstances and notify Microsoft Product Support Services.  
   
 ## See Also  
- [Al.exe (Assembly Linker)](../Topic/Al.exe%20\(Assembly%20Linker\).md)   
+ [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01)   
  [Al.exe Tool Errors and Warnings](http://msdn.microsoft.com/en-us/7f125d49-0a03-47a6-9ba9-d61a679a7d4b)   
  [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)

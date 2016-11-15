@@ -2,7 +2,6 @@
 title: "Local variable cannot have the same name as the function containing it | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,4 +45,4 @@ A `Dim` statement specifies a variable with the same name as the `Function` proc
   
 ## See Also  
  [NOTINBUILD: Resolving a Reference When Multiple Variables Have the Same Name](http://msdn.microsoft.com/en-us/9601e39f-1911-44e1-ace5-3f6e090408b9)   
- [Function Procedures](/dotnet/visual-basic/language-reference/procedures/function-procedures)
+ [Function Procedures](/dotnet/articles/visual-basic/language-reference/procedures/function-procedures)

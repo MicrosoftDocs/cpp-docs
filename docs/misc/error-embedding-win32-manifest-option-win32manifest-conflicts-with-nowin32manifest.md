@@ -2,7 +2,6 @@
 title: "Error embedding Win32 manifest: Option -win32manifest conflicts with -nowin32manifest | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,6 +44,6 @@ The Visual Basic compiler has been passed both a `/win32manifest` compiler optio
 1.  Remove either the `/win32manifest` compiler option or the `/nowin32manifest` compiler option.  
   
 ## See Also  
- [/win32manifest (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/win32manifest)   
- [/nowin32manifest (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/nowin32manifest)   
- [Visual Basic Command-Line Compiler](/dotnet/visual-basic/reference/command-line-compiler/index)
+ [/win32manifest (Visual Basic)](/dotnet/articles/visual-basic/reference/command-line-compiler/win32manifest)   
+ [/nowin32manifest (Visual Basic)](/dotnet/articles/visual-basic/reference/command-line-compiler/nowin32manifest)   
+ [Visual Basic Command-Line Compiler](/dotnet/articles/visual-basic/reference/command-line-compiler/index)

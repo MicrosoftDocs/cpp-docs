@@ -2,7 +2,6 @@
 title: "&#39;Continue While&#39; can only appear inside a &#39;While&#39; statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,5 +48,5 @@ A `Continue While` statement can only appear within a `For...Next` loop.
 3.  Otherwise, remove the `Continue While` statement.  
   
 ## See Also  
- [Continue Statement](/dotnet/visual-basic/language-reference/statements/continue-statement)   
- [While...End While Statement](/dotnet/visual-basic/language-reference/statements/while-end-while-statement)
+ [Continue Statement](/dotnet/articles/visual-basic/language-reference/statements/continue-statement)   
+ [While...End While Statement](/dotnet/articles/visual-basic/language-reference/statements/while-end-while-statement)

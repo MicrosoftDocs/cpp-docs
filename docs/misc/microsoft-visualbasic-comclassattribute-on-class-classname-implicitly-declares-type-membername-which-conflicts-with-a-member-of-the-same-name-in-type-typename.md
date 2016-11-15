@@ -2,7 +2,6 @@
 title: "&#39;Microsoft.VisualBasic.ComClassAttribute&#39; on class &#39;&lt;classname&gt;&#39; implicitly declares &lt;type&gt; &#39;&lt;membername&gt;&#39;, which conflicts with a member of the same name in &lt;type&gt; &#39;&lt;typename&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -37,7 +36,7 @@ translation.priority.mt:
   
  A class using a `COMClassAttribute` attribute block implicitly defines an interface with the same name as a member of the base class. In this situation, the interface name should shadow the base class member.  
   
- By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42101  
   

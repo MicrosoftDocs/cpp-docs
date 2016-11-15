@@ -2,7 +2,6 @@
 title: "Property &#39;&lt;propertyname&gt;&#39; cannot be initialized in an object initializer expression because all accessible overloads require arguments | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -93,8 +92,8 @@ coinCollection.Item(1) = aCoinObject
   
 ## See Also  
  [NOT IN BUILD: Properties and Property Procedures](http://msdn.microsoft.com/en-us/23e2a1ec-7e9d-4109-8940-c703d981077b)   
- [Object Initializers: Named and Anonymous Types](../Topic/Object%20Initializers:%20Named%20and%20Anonymous%20Types%20\(Visual%20Basic\).md)   
- [How to: Call a Property Procedure](../Topic/How%20to:%20Call%20a%20Property%20Procedure%20\(Visual%20Basic\).md)   
+ [Object Initializers: Named and Anonymous Types](http://msdn.microsoft.com/Library/e2df3807-a70f-49dd-ac94-f1e07f472b1b)   
+ [How to: Call a Property Procedure](http://msdn.microsoft.com/Library/96bc4d74-d9c3-4b7a-954d-58ac8553cd94)   
  [NOT IN BUILD: Default Properties](http://msdn.microsoft.com/en-us/a70f2a27-8176-4858-935e-f25afdd43ab5)   
- [Overloads](/dotnet/visual-basic/language-reference/modifiers/overloads)   
- [Procedure Overloading](/dotnet/visual-basic/language-reference/procedures/procedure-overloading)
+ [Overloads](/dotnet/articles/visual-basic/language-reference/modifiers/overloads)   
+ [Procedure Overloading](/dotnet/articles/visual-basic/language-reference/procedures/procedure-overloading)

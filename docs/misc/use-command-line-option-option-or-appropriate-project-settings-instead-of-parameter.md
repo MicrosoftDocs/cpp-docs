@@ -2,7 +2,6 @@
 title: "Use command line option &#39;&lt;option&gt;&#39; or appropriate project settings instead of &#39;&lt;parameter&gt;&#39; | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,11 +41,11 @@ The preferred way to specify a file that contains a public key for an assembly, 
   
 ### To correct this error  
   
-1.  Use the [/keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile), [/keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer), or [/delaysign](/dotnet/visual-basic/reference/command-line-compiler/delaysign)[!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] compiler options instead of the <xref:System.Reflection.AssemblyKeyFileAttribute>, <xref:System.Reflection.AssemblyKeyNameAttribute>, or <xref:System.Reflection.AssemblyDelaySignAttribute> attributes in your code.  
+1.  Use the [/keyfile](/dotnet/articles/visual-basic/reference/command-line-compiler/keyfile), [/keycontainer](/dotnet/articles/visual-basic/reference/command-line-compiler/keycontainer), or [/delaysign](/dotnet/articles/visual-basic/reference/command-line-compiler/delaysign)[!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] compiler options instead of the <xref:System.Reflection.AssemblyKeyFileAttribute>, <xref:System.Reflection.AssemblyKeyNameAttribute>, or <xref:System.Reflection.AssemblyDelaySignAttribute> attributes in your code.  
   
 ## See Also  
- [How to: Create Signed Friend Assemblies](../Topic/How%20to:%20Create%20Signed%20Friend%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md)   
- [Visual Basic Command-Line Compiler](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [/keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile)   
- [/keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer)   
- [/delaysign](/dotnet/visual-basic/reference/command-line-compiler/delaysign)
+ [How to: Create Signed Friend Assemblies](http://msdn.microsoft.com/Library/f5542300-58b4-4e1c-b809-8df11e95e69b)   
+ [Visual Basic Command-Line Compiler](/dotnet/articles/visual-basic/reference/command-line-compiler/index)   
+ [/keyfile](/dotnet/articles/visual-basic/reference/command-line-compiler/keyfile)   
+ [/keycontainer](/dotnet/articles/visual-basic/reference/command-line-compiler/keycontainer)   
+ [/delaysign](/dotnet/articles/visual-basic/reference/command-line-compiler/delaysign)

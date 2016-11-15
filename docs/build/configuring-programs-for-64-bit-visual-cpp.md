@@ -2,7 +2,6 @@
 title: "Configuring Programs for 64-Bit (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,7 +50,7 @@ This section contains topics about targeting 64-bit hardware with the Visual C++
 -   [x64 Software Conventions](../build/x64-software-conventions.md)  
   
 ## Related Sections  
- [64-bit Applications](../Topic/64-bit%20Applications.md)  
+ [64-bit Applications](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)  
   
  [align](../cpp/align-cpp.md)  
   

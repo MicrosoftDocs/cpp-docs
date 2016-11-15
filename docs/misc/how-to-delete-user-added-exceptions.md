@@ -2,7 +2,6 @@
 title: "How to: Delete User-Added Exceptions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,4 +40,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Delete User-Added Exceptions
-This content has been removed. Please see [Managing Exceptions with the Debugger](/visual-studio/debugger/managing-exceptions-with-the-debugger).
+This content has been removed. Please see [Managing Exceptions with the Debugger](/visualstudio/debugger/managing-exceptions-with-the-debugger).
