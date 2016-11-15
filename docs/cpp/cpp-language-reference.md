@@ -133,7 +133,7 @@ For an overview of Modern C++ programming practices, see [Welcome Back to C++](w
  [C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)  
  Reference material on pragmas, preprocessor directives, predefined macros, and the preprocessor.  
   
- [Visual C++ Libraries](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)  
+ [Visual C++ Libraries](../standard-library/cpp-standard-library-reference.md)  
  A list of links to the reference start pages for the various Visual C++ libraries.  
   
 ## See Also  
