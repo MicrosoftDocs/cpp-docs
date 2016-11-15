@@ -73,7 +73,7 @@ layout: HubPage
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardText">
-                                            <h3>Pointing and Upgrading</h3>
+                                            <h3>Porting and Upgrading</h3>
 											<p>Guidelines for upgrading to Visual Studio 2017 from earlier versions and for porting code from UNIX to Windows.</p>
                                         </div>
                                     </div>
