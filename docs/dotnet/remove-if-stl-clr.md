@@ -2,7 +2,6 @@
 title: "remove_if (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +45,7 @@ template<class _FwdIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `remove_if`. For more information, see [remove_if](../Topic/remove_if.md).  
+ This function behaves the same as the STL function `remove_if`. For more information, see [remove_if](http://msdn.microsoft.com/Library/3b784953-0db6-42a8-84fc-865101abf901).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

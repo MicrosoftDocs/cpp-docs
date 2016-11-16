@@ -2,7 +2,6 @@
 title: "IDE and Tools for Visual C++ Development | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # IDE and Tools for Visual C++ Development
-As part of the Visual Studio Integrated Development Environment (IDE), Visual C++ shares many windows and tools in common with other languages. Many of those, including **Solution Explorer**, the Code Editor, and the Debugger, are documented in the MSDN library under [Visual Studio IDE](/visual-studio/ide/visual-studio-ide). Often, a shared tool or window has a slightly different set of features for C++ than for the .NET languages or Javascript. Some windows or tools are only available in Visual Studio Pro or Visual Studio Enterprise. This topic introduces the Visual Studio IDE from the perspective of Visual C++, and provides links to other topics relevant to Visual C++.  
+As part of the Visual Studio Integrated Development Environment (IDE), Visual C++ shares many windows and tools in common with other languages. Many of those, including **Solution Explorer**, the Code Editor, and the Debugger, are documented in the MSDN library under [Visual Studio IDE](/visualstudio/ide/visual-studio-ide). Often, a shared tool or window has a slightly different set of features for C++ than for the .NET languages or Javascript. Some windows or tools are only available in Visual Studio Pro or Visual Studio Enterprise. This topic introduces the Visual Studio IDE from the perspective of Visual C++, and provides links to other topics relevant to Visual C++.  
   
  In addition to shared tools in the Visual Studio IDE, Visual C++ has several tools specifically for native code development. These tools are also listed in this article. For a list of which tools are available in each edition of Visual Studio, see [Visual C++ Tools and Features in Visual Studio Editions](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md).  
   
@@ -66,14 +65,14 @@ As part of the Visual Studio Integrated Development Environment (IDE), Visual C+
   
  **Intellisense**  
   
- The code editor also supports several features that together are known as Intellisense. You can hover over a method and see some basic documentation for it. After you type a class variable name and a . or ->, a list of instance members of that class appears. If you type a class name and then a ::, a list of static members appears. When you start typing a class or method name, the code editor will offer suggestions to complete the statement. For more information, see [Using IntelliSense](/visual-studio/ide/using-intellisense).  
+ The code editor also supports several features that together are known as Intellisense. You can hover over a method and see some basic documentation for it. After you type a class variable name and a . or ->, a list of instance members of that class appears. If you type a class name and then a ::, a list of static members appears. When you start typing a class or method name, the code editor will offer suggestions to complete the statement. For more information, see [Using IntelliSense](/visualstudio/ide/using-intellisense).  
   
  **Code snippets**  
   
- You can use Intellisense code snippets to generate commonly-used or complicated code constructs with a shortcut keystroke. For more information, see [Code Snippets](/visual-studio/ide/code-snippets).  
+ You can use Intellisense code snippets to generate commonly-used or complicated code constructs with a shortcut keystroke. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
   
 ## Navigating code  
- The VIEW menu provides access to many windows and tools for navigating around in your code files. For detailed information about these windows, see [Viewing the Structure of Code](/visual-studio/ide/viewing-the-structure-of-code).  
+ The VIEW menu provides access to many windows and tools for navigating around in your code files. For detailed information about these windows, see [Viewing the Structure of Code](/visualstudio/ide/viewing-the-structure-of-code).  
   
  **Solution Explorer**  
   
@@ -105,22 +104,22 @@ As part of the Visual Studio Integrated Development Environment (IDE), Visual C+
  For more information on adding and editing resources in native desktop C++ projects, see [Working with Resource Files](../mfc/working-with-resource-files.md).  
   
 ## Building (compiling and linking)  
- Press **Ctrl + Shift + B** to compile and link a project. Visual Studio uses [MSBuild](/visual-studio/msbuild/msbuild1) to create executable code. You can set general build options under **Tools &#124; Options &#124; Projects and Solutions** and you can set properties for specific projects under **Project &#124; Properties**. Build errors and warnings are reported in the Error List (**Ctrl +\\, E**). Additional information is sometimes shown in the Output Window (**Alt + 2**). For more information, see  [Working with Project Properties](../ide/working-with-project-properties.md) and [Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md).  
+ Press **Ctrl + Shift + B** to compile and link a project. Visual Studio uses [MSBuild](/visualstudio/msbuild/msbuild1) to create executable code. You can set general build options under **Tools &#124; Options &#124; Projects and Solutions** and you can set properties for specific projects under **Project &#124; Properties**. Build errors and warnings are reported in the Error List (**Ctrl +\\, E**). Additional information is sometimes shown in the Output Window (**Alt + 2**). For more information, see  [Working with Project Properties](../ide/working-with-project-properties.md) and [Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md).  
   
  You can also use the Visual C++ compiler (cl.exe) and many other build-related standalone tools such as NMAKE and LIB directly from the command line. For more information, see [Building on the Command Line](../build/building-on-the-command-line.md) and [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md).  
   
 ## Testing  
- Visual Studio includes a unit test framework for both native C++ and C++/CLI. For more information, see [Verifying Code by Using Unit Tests](/visual-studio/test/unit-test-your-code) and [Writing Unit tests for C/C++ with the Microsoft Unit Testing Framework for C++](/visual-studio/test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp)  
+ Visual Studio includes a unit test framework for both native C++ and C++/CLI. For more information, see [Verifying Code by Using Unit Tests](/visualstudio/test/unit-test-your-code) and [Writing Unit tests for C/C++ with the Microsoft Unit Testing Framework for C++](/visualstudio/test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp)  
   
 ## Debugging  
- You can debug your program by pressing F5 when your project configuration is set to Debug. While debugging you can set breakpoints by pressing F9, step through code by pressing F10, view the values of specified variables or registers, and even in some cases make changes in code and continue debugging without re-compiling. For more information, see [Debugging in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio).  
+ You can debug your program by pressing F5 when your project configuration is set to Debug. While debugging you can set breakpoints by pressing F9, step through code by pressing F10, view the values of specified variables or registers, and even in some cases make changes in code and continue debugging without re-compiling. For more information, see [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio).  
   
 ## Deploying completed applications  
  You deploy a [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] to customers through the Windows Store through the **PROJECT &#124; Store** menu option. Deployment of the CRT is handled automatically behind the scenes. For more information, see [Selling Apps](http://go.microsoft.com/fwlink/p/?LinkId=262280).  
   
  When you deploy a native C++ desktop application to another computer, you must install the application itself and any library files that the application depends on. There are three ways to deploy the Visual C++ runtime with an application: central deployment, local deployment, or static linking. For more information, see [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md).  
   
- For more information about deploying a C++/CLI program, see [Deployment Guide for Developers](../Topic/.NET%20Framework%20Deployment%20Guide%20for%20Developers.md),  
+ For more information about deploying a C++/CLI program, see [Deployment Guide for Developers](http://msdn.microsoft.com/Library/094d043e-33c4-40ba-a503-e0b20b55f4cf),  
   
 ## Other tools  
   

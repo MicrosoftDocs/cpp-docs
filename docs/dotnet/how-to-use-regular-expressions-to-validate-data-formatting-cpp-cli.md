@@ -2,7 +2,6 @@
 title: "How to: Use Regular Expressions to Validate Data Formatting (C++-CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -78,5 +77,5 @@ int main()
 ```  
   
 ## See Also  
- [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md)   
+ [.NET Framework Regular Expressions](http://msdn.microsoft.com/Library/521b3f6d-f869-42e1-93e5-158c54a6895d)   
  [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

@@ -2,7 +2,6 @@
 title: "Compiler Warning C4867 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,7 +41,7 @@ translation.priority.ht:
   
  This warning can be generated as a result of compiler conformance work that was done for Visual C++ 2005: enhanced pointer-to-member conformance.  Code that compiled prior to Visual C++ 2005 will now generate C4867.  
   
- This warning is always issued as an error. Use the [warning](../../preprocessor/warning.md) pragma to disable this warning. For more information about C4867 and MFC/ATL, see [_ATL_ENABLE_PTM_WARNING](../Topic/_ATL_ENABLE_PTM_WARNING.md).  
+ This warning is always issued as an error. Use the [warning](../../preprocessor/warning.md) pragma to disable this warning. For more information about C4867 and MFC/ATL, see [_ATL_ENABLE_PTM_WARNING](http://msdn.microsoft.com/Library/00b9ff5c-9834-4c40-911e-ee88d512c4af).  
   
 ## Example  
  The following sample generates C4867.  

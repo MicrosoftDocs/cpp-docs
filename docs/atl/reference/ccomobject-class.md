@@ -2,7 +2,6 @@
 title: "CComObject Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -180,6 +179,6 @@ STDMETHOD_(ULONG, Release)();
 ## See Also  
  [CComAggObject Class](../../atl/reference/ccomaggobject-class.md)   
  [CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)   
- [DECLARE_AGGREGATABLE](../Topic/DECLARE_AGGREGATABLE.md)   
- [DECLARE_NOT_AGGREGATABLE](../Topic/DECLARE_NOT_AGGREGATABLE.md)   
+ [DECLARE_AGGREGATABLE](http://msdn.microsoft.com/Library/e7e568d7-04e0-4226-b5dc-224deed229ab)   
+ [DECLARE_NOT_AGGREGATABLE](http://msdn.microsoft.com/Library/2a116c7c-bab8-4f2a-a9ad-03d7aba0f762)   
  [Class Overview](../../atl/atl-class-overview.md)

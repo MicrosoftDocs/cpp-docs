@@ -2,7 +2,6 @@
 title: "multiset Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -181,7 +180,7 @@ iterator begin();
   
 ### Example  
   
-```  
+```cpp  
 // multiset_begin.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -277,7 +276,7 @@ void clear();
   
 ### Example  
   
-```  
+```cpp  
 // multiset_clear.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -339,7 +338,7 @@ typedef typename allocator_type::const_reference const_reference;
   
 ### Example  
   
-```  
+```cpp  
 // multiset_const_ref.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -462,7 +461,7 @@ const_reverse_iterator crbegin() const;
   
 ### Example  
   
-```  
+```cpp  
 // multiset_crbegin.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -509,7 +508,7 @@ const_reverse_iterator crend() const;
   
 ### Example  
   
-```  
+```cpp  
 // multiset_crend.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -545,7 +544,7 @@ typedef typename allocator_type::difference_type difference_type;
   
 ### Example  
   
-```  
+```cpp  
 // multiset_diff_type.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -706,7 +705,7 @@ bool empty() const;
   
 ### Example  
   
-```  
+```cpp  
 // multiset_empty.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -776,7 +775,7 @@ pair <iterator, iterator> equal_range (const Key& key);
   
 ### Example  
   
-```  
+```cpp  
 // multiset_equal_range.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -966,7 +965,7 @@ allocator_type get_allocator() const;
   
 ### Example  
   
-```  
+```cpp  
 // multiset_get_allocator.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1214,7 +1213,7 @@ key_compare key_comp() const;
   
 ### Example  
   
-```  
+```cpp  
 // multiset_key_comp.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1311,7 +1310,7 @@ iterator lower_bound(const Key& key);
   
 ### Example  
   
-```  
+```cpp  
 // multiset_lower_bound.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1370,7 +1369,7 @@ size_type max_size() const;
   
 ### Example  
   
-```  
+```cpp  
 // multiset_max_size.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1470,7 +1469,7 @@ multiset (
   
 ### Example  
   
-```  
+```cpp  
 // multiset_ctor.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1590,7 +1589,7 @@ multiset& operator=(multiset&& right);
   
 ### Example  
   
-```  
+```cpp  
 // multiset_operator_as.cpp  
 // compile with: /EHsc  
 #include <multiset>  
@@ -1658,7 +1657,7 @@ reverse_iterator rbegin();
   
 ### Example  
   
-```  
+```cpp  
 // multiset_rbegin.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1720,7 +1719,7 @@ typedef typename allocator_type::reference reference;
   
 ### Example  
   
-```  
+```cpp  
 // multiset_ref.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1769,7 +1768,7 @@ reverse_iterator rend();
   
 ### Example  
   
-```  
+```cpp  
 // multiset_rend.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1841,7 +1840,7 @@ size_type size() const;
   
 ### Example  
   
-```  
+```cpp  
 // multiset_size.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1895,7 +1894,7 @@ void swap(
   
 ### Example  
   
-```  
+```cpp  
 // multiset_swap.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -1961,7 +1960,7 @@ iterator upper_bound(const Key& key);
   
 ### Example  
   
-```  
+```cpp  
 // multiset_upper_bound.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -2031,7 +2030,7 @@ value_compare value_comp() const;
   
 ### Example  
   
-```  
+```cpp  
 // multiset_value_comp.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -2113,7 +2112,7 @@ typedef Key value_type;
   
 ### Example  
   
-```  
+```cpp  
 // multiset_value_type.cpp  
 // compile with: /EHsc  
 #include <set>  

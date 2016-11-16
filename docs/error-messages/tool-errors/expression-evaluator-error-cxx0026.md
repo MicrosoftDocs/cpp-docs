@@ -2,7 +2,6 @@
 title: "Expression Evaluator Error CXX0026 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,4 +42,4 @@ bad format string
   
  This error is identical to CAN0026.  
   
- For more information, see [Format Specifiers in C++](/visual-studio/debugger/format-specifiers-in-cpp).
+ For more information, see [Format Specifiers in C++](/visualstudio/debugger/format-specifiers-in-cpp).

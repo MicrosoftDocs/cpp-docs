@@ -23,7 +23,9 @@ manager: "ghogen"
  
 // (1)   
 template <class BidIt, class Alloc, class Elem, class RXtraits, class Alloc2>  
-bool regex_match(BidIt first, Bidit last,  
+bool regex_match(
+    BidIt first, 
+    Bidit last,  
     match_results<BidIt, Alloc>& match,  
     const basic_regex<Elem, RXtraits, Alloc2>& re,   
     match_flag_type flags = match_default);
@@ -31,14 +33,17 @@ bool regex_match(BidIt first, Bidit last,
  
 // (2)   
 template <class BidIt, class Elem, class RXtraits, class Alloc2>  
-bool regex_match(BidIt first, Bidit last,  
+bool regex_match(
+    BidIt first, 
+    Bidit last,  
     const basic_regex<Elem, RXtraits, Alloc2>& re,  
     match_flag_type flags = match_default);
 
  
 // (3)  
 template <class Elem, class Alloc, class RXtraits, class Alloc2>  
-bool regex_match(const Elem *ptr,  
+bool regex_match(
+    const Elem *ptr,  
     match_results<const Elem*, Alloc>& match,  
     const basic_regex<Elem, RXtraits, Alloc2>& re,  
     match_flag_type flags = match_default);
@@ -46,22 +51,24 @@ bool regex_match(const Elem *ptr,
  
 // (4)   
 template <class Elem, class RXtraits, class Alloc2>  
-bool regex_match(const Elem *ptr,  
+bool regex_match(
+    const Elem *ptr,  
     const basic_regex<Elem, RXtraits, Alloc2>& re,  
     match_flag_type flags = match_default);
 
  
 // (5)  
 template <class IOtraits, class IOalloc, class Alloc, class Elem, class RXtraits, class Alloc2>  
-bool regex_match(const basic_string<Elem, IOtraits, IOalloc>& str,  
+bool regex_match(
+    const basic_string<Elem, IOtraits, IOalloc>& str,  
     match_results<typename basic_string<Elem, IOtraits, IOalloc>::const_iterator, Alloc>& match,  
-    const basic_regex<Elem, RXtraits, Alloc2>& re,  
+    const basic_regex<Elem, RXtraits, Alloc2>& re, 
     match_flag_type flags = match_default);
-
  
 // (6)  
 template <class IOtraits, class IOalloc, class Elem, class RXtraits, class Alloc2>  
-bool regex_match(const basic_string<Elem, IOtraits, IOalloc>& str,  
+bool regex_match(
+    const basic_string<Elem, IOtraits, IOalloc>& str,  
     const basic_regex<Elem, RXtraits, Alloc2>& re,  
     match_flag_type flags = match_default);
 ```  
@@ -118,9 +125,7 @@ bool regex_match(const basic_string<Elem, IOtraits, IOalloc>& str,
   
 ### Example  
   
-```  
-// RegexTestBed.cpp : Defines the entry point for the console application.  
-//  
+```cpp  
   
 #include "stdafx.h"  
 #include <regex>   
@@ -177,15 +182,17 @@ int _tmain(int argc, _TCHAR* argv[])
   
 ```  
 template <class OutIt, class BidIt, class RXtraits, class Alloc, class Elem>  
-OutIt regex_replace(OutIt out,  
-    BidIt first, BidIt last,  
+OutIt regex_replace(
+    OutIt out,  
+    BidIt first, 
+    BidIt last,  
     const basic_regex<Elem, RXtraits, Alloc>& re,  
     const basic_string<Elem>& fmt,  
     match_flag_type flags = match_default);
 
 template <class RXtraits, class Alloc, class Elem>  
-basic_string<Elem>  
-regex_replace(const basic_string<Elem>& str,  
+basic_string<Elem> regex_replace(
+    const basic_string<Elem>& str,  
     const basic_regex<Elem, RXtraits, Alloc>& re,  
     const basic_string<Elem>& fmt,  
     match_flag_type flags = match_default);
@@ -235,7 +242,7 @@ regex_replace(const basic_string<Elem>& str,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__regex_replace.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -281,35 +288,43 @@ replacement == Adaeaf
   
 ```  
 template <class BidIt, class Alloc, class Elem, class RXtraits, class Alloc2>  
-bool regex_search(BidIt first, Bidit last,  
+bool regex_search(
+    BidIt first, 
+    Bidit last,  
     match_results<BidIt, Alloc>& match,  
     const basic_regex<Elem, RXtraits, Alloc2>& re,  
     match_flag_type flags = match_default);
 
 template <class BidIt, class Elem, class RXtraits, class Alloc2>  
-bool regex_search(BidIt first, Bidit last,  
+bool regex_search(
+    BidIt first, 
+    Bidit last,  
     const basic_regex<Elem, RXtraits, Alloc2>& re,  
     match_flag_type flags = match_default);
 
 template <class Elem, class Alloc, class RXtraits, class Alloc2>  
-bool regex_search(const Elem* ptr,  
+bool regex_search(
+    const Elem* ptr,  
     match_results<const Elem*, Alloc>& match,  
     const basic_regex<Elem, RXtraits, Alloc2>& re,  
     match_flag_type flags = match_default);
 
 template <class Elem, class RXtraits, class Alloc2>  
-bool regex_search(const Elem* ptr,  
+bool regex_search(
+    const Elem* ptr,  
     const basic_regex<Elem, RXtraits, Alloc2>& re,  
     match_flag_type flags = match_default);
 
 template <class IOtraits, class IOalloc, class Alloc, class Elem, class RXtraits, class Alloc2>  
-bool regex_search(const basic_string<Elem, IOtraits, IOalloc>& str,  
+bool regex_search(
+    const basic_string<Elem, IOtraits, IOalloc>& str,  
     match_results<typename basic_string<Elem, IOtraits, IOalloc>::const_iterator, Alloc>& match,  
     const basic_regex<Elem, RXtraits, Alloc2>& re,  
     match_flag_type flags = match_default);
 
 template <class IOtraits, class IOalloc, class Elem, class RXtraits, class Alloc2>  
-bool regex_search(const basic_string<Elem, IOtraits, IOalloc>& str,  
+bool regex_search(
+    const basic_string<Elem, IOtraits, IOalloc>& str,  
     const basic_regex<Elem, RXtraits, Alloc2>& re,  
     match_flag_type flags = match_default);
 ```  
@@ -362,7 +377,7 @@ bool regex_search(const basic_string<Elem, IOtraits, IOalloc>& str,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__regex_search.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -422,11 +437,13 @@ search(string, "abc") == true
   
 ```  
 template <class Elem, class RXtraits>  
-void swap(basic_regex<Elem, RXtraits, Alloc>& left,  
+void swap(
+    basic_regex<Elem, RXtraits, Alloc>& left,  
     basic_regex<Elem, RXtraits>& right) throw();
 
 template <class Elem, class IOtraits, class BidIt, class Alloc>  
-void swap(match_results<BidIt, Alloc>& left,  
+void swap(
+    match_results<BidIt, Alloc>& left,  
     match_results<BidIt, Alloc>& right) throw();
 ```  
   
@@ -442,7 +459,7 @@ void swap(match_results<BidIt, Alloc>& left,
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__swap.cpp   
 // compile with: /EHsc   
 #include <regex>   

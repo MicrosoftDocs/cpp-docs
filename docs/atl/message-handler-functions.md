@@ -2,7 +2,6 @@
 title: "Message Handler Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,9 +46,9 @@ ATL provides three types of message handler functions:
   
 |Type of message handler|Corresponding message macro|  
 |-----------------------------|---------------------------------|  
-|[MessageHandler](../atl/messagehandler.md)|[MESSAGE_HANDLER](../Topic/MESSAGE_HANDLER.md)|  
-|[CommandHandler](../atl/commandhandler.md)|[COMMAND_HANDLER](../Topic/COMMAND_HANDLER.md)|  
-|[NotifyHandler](../atl/notifyhandler.md)|[NOTIFY_HANDLER](../Topic/NOTIFY_HANDLER.md)|  
+|[MessageHandler](../atl/messagehandler.md)|[MESSAGE_HANDLER](http://msdn.microsoft.com/Library/0253a7f3-7eb3-4d2d-83b9-060161268d04)|  
+|[CommandHandler](../atl/commandhandler.md)|[COMMAND_HANDLER](http://msdn.microsoft.com/Library/7b53ffe3-be95-43f7-a21a-dc9516a19f2a)|  
+|[NotifyHandler](../atl/notifyhandler.md)|[NOTIFY_HANDLER](http://msdn.microsoft.com/Library/0c546767-9683-45f9-9cbc-e243a7106790)|  
   
 ## See Also  
  [Implementing a Window](../atl/implementing-a-window.md)   

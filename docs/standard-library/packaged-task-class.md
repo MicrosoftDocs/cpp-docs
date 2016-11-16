@@ -2,7 +2,6 @@
 title: "packaged_task Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -56,11 +55,11 @@ class packaged_task;
   
 |Name|Description|  
 |----------|-----------------|  
-|[packaged_task::get_future Method](#packaged_task__get_future_method)|Returns a [future](../standard-library/future-class.md) object that has the same associated asynchronous state.|  
-|[packaged_task::make_ready_at_thread_exit Method](#packaged_task__make_ready_at_thread_exit_method)|Calls the callable object that's stored in the associated asynchronous state and atomically stores the returned value.|  
-|[packaged_task::reset Method](#packaged_task__reset_method)|Replaces the associated asynchronous state.|  
-|[packaged_task::swap Method](#packaged_task__swap_method)|Exchanges the associated asynchronous state with that of a specified object.|  
-|[packaged_task::valid Method](#packaged_task__valid_method)|Specifies whether the object has an associated asynchronous state.|  
+|[packaged_task::get_future](#packaged_task__get_future_method)|Returns a [future](../standard-library/future-class.md) object that has the same associated asynchronous state.|  
+|[packaged_task::make_ready_at_thread_exit](#packaged_task__make_ready_at_thread_exit_method)|Calls the callable object that's stored in the associated asynchronous state and atomically stores the returned value.|  
+|[packaged_task::reset](#packaged_task__reset_method)|Replaces the associated asynchronous state.|  
+|[packaged_task::swap](#packaged_task__swap_method)|Exchanges the associated asynchronous state with that of a specified object.|  
+|[packaged_task::valid](#packaged_task__valid_method)|Specifies whether the object has an associated asynchronous state.|  
   
 ### Public Operators  
   
@@ -75,7 +74,7 @@ class packaged_task;
   
  **Namespace:** std  
   
-##  <a name="packaged_task__get_future_method"></a>  packaged_task::get_future Method  
+##  <a name="packaged_task__get_future_method"></a>  packaged_task::get_future  
  Returns an object of type `future<Ty>` that has the same *associated asynchronous state*.  
   
 ```cpp
@@ -87,7 +86,7 @@ future<Ty> get_future();
   
  If this method has already been called for a `packaged_task` object that has the same associated asynchronous state, the method throws a `future_error` that has an error code of `future_already_retrieved`.  
   
-##  <a name="packaged_task__make_ready_at_thread_exit_method"></a>  packaged_task::make_ready_at_thread_exit Method  
+##  <a name="packaged_task__make_ready_at_thread_exit_method"></a>  packaged_task::make_ready_at_thread_exit  
  Calls the callable object that's stored in the *associated asynchronous state* and atomically stores the returned value.  
   
 ```cpp
@@ -137,7 +136,8 @@ void operator()(ArgTypes... args);
 ##  <a name="packaged_task__operator_bool"></a>  packaged_task::operator bool  
  Specifies whether the object has an `associated asynchronous state`.  
   
-```cppoperator bool() const noexcept;
+```
+operator bool() const noexcept;
 ```  
   
 ### Return Value  
@@ -179,27 +179,27 @@ explicit packaged_task(allocator_arg_t,
 ##  <a name="packaged_task___dtorpackaged_task_destructor"></a>  packaged_task::~packaged_task Destructor  
  Destroys a `packaged_task` object.  
   
-```cpp
+```
 ~packaged_task();
 ```  
   
 ### Remarks  
  If the *associated asynchronous state* is not *ready*, the destructor stores a [future_error](../standard-library/future-error-class.md) exception that has an error code of `broken_promise` as the result in the associated asynchronous state, and any threads that are blocked on the associated asynchronous state become unblocked.  
   
-##  <a name="packaged_task__reset_method"></a>  packaged_task::reset Method  
+##  <a name="packaged_task__reset_method"></a>  packaged_task::reset  
  Uses a new *associated asynchronous state* to replace the existing associated asynchronous state.  
   
-```cpp
+```
 void reset();
 ```  
   
 ### Remarks  
  In effect, this method executes `*this = packaged_task(move(fn))`, where *fn* is the function object that's stored in the associated asynchronous state for this object. Therefore, the state of the object is cleared, and [get_future](#packaged_task__get_future_method), [operator()](#packaged_task__operator__), and [make_ready_at_thread_exit](#packaged_task__make_ready_at_thread_exit_method) can be called as if on a newly-constructed object.  
   
-##  <a name="packaged_task__swap_method"></a>  packaged_task::swap Method  
+##  <a name="packaged_task__swap_method"></a>  packaged_task::swap  
  Exchanges the associated asynchronous state with that of a specified object.  
   
-```cpp
+```
 void swap(packaged_task& Right) noexcept;
 ```  
   
@@ -207,10 +207,10 @@ void swap(packaged_task& Right) noexcept;
  `Right`  
  A `packaged_task` object.  
   
-##  <a name="packaged_task__valid_method"></a>  packaged_task::valid Method  
+##  <a name="packaged_task__valid_method"></a>  packaged_task::valid  
  Specifies whether the object has an `associated asynchronous state`.  
   
-```cpp
+```
 bool valid() const;
 ```  
   

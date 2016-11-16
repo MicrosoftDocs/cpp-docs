@@ -2,7 +2,6 @@
 title: "-clr (Common Language Runtime Compilation) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -73,7 +72,7 @@ Enables applications and components to use features from the common language run
  /clr:pure is deprecated. A future version of the compiler may not support this option. We recommend that you port code that must be pure MSIL to C#.  
   
  **/clr:safe**  
- Produces an MSIL-only (no native executable code), verifiable output file. **/clr:safe** enables verification diagnostics ([PEVerify Tool (Peverify.exe)](../Topic/Peverify.exe%20\(PEVerify%20Tool\).md)).  
+ Produces an MSIL-only (no native executable code), verifiable output file. **/clr:safe** enables verification diagnostics ([PEVerify Tool (Peverify.exe)](http://msdn.microsoft.com/Library/f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa)).  
   
  For more information, see [NIB: Writing Verifiably Type-Safe Code](http://msdn.microsoft.com/en-us/d18f10ef-3b48-4f47-8726-96714021547b).  
   
@@ -123,7 +122,7 @@ Enables applications and components to use features from the common language run
   
  The global variables in a native object file are initialized first (during DllMain if the executable is a DLL), and then the global variables in the managed section are initialized (before any managed code is run). `#pragma`[init_seg](../../preprocessor/init-seg.md) only affects the order of initialization in the managed and unmanaged categories.  
   
- Compiling by using **/clr:safe** is analogous to compiling by using [/platform:anycpu](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option) in languages such as C#.  
+ Compiling by using **/clr:safe** is analogous to compiling by using [/platform:anycpu](/dotnet/articles/csharp/language-reference/compiler-options/platform-compiler-option) in languages such as C#.  
   
 ## Safe and Pure Images  
  A pure image uses a CLR version of the C run-time (CRT) library. However, the CRT is not verifiable, so you cannot use the CRT when you compile by using **/clr:safe**. For more information, see [CRT Library Features](../../c-runtime-library/crt-library-features.md).  
@@ -167,7 +166,7 @@ class {} x;
     > [!NOTE]
     >  When **/clr** is enabled in the **Property Pages** dialog box, compiler option properties that are not compatible with **/clr** are also adjusted, as required. For example, if **/RTC** is set and then **/clr** is enabled, **/RTC** will be turned off.  
     >   
-    >  Also, when you debug a **/clr** application, set the **Debugger Type** property to **Mixed** or **Managed only**. For more information, see [Project Settings for a C++ Debug Configuration](/visual-studio/debugger/project-settings-for-a-cpp-debug-configuration).  
+    >  Also, when you debug a **/clr** application, set the **Debugger Type** property to **Mixed** or **Managed only**. For more information, see [Project Settings for a C++ Debug Configuration](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration).  
   
      For information about how the create a module, see [/NOASSEMBLY (Create a MSIL Module)](../../build/reference/noassembly-create-a-msil-module.md).  
   

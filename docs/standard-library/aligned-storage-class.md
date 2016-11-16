@@ -2,7 +2,6 @@
 title: "aligned_storage Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -66,7 +65,7 @@ using aligned_storage_t = typename aligned_storage<Len, Align>::type;
   
 ## Example  
   
-```  
+```cpp  
 #include <type_traits>   
 #include <iostream>   
   

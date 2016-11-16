@@ -2,7 +2,6 @@
 title: "condition_variable Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -55,11 +54,11 @@ class condition_variable;
 |Name|Description|  
 |----------|-----------------|  
 |[condition_variable::native_handle Method](#condition_variable__native_handle_method)|Returns the implementation-specific type representing the condition_variable handle.|  
-|[condition_variable::notify_all Method](#condition_variable__notify_all_method)|Unblocks all threads that are waiting for the `condition_variable` object.|  
-|[condition_variable::notify_one Method](#condition_variable__notify_one_method)|Unblocks one of the threads that are waiting for the `condition_variable` object.|  
-|[condition_variable::wait Method](#condition_variable__wait_method)|Blocks a thread.|  
-|[condition_variable::wait_for Method](#condition_variable__wait_for_method)|Blocks a thread, and sets a time interval after which the thread unblocks.|  
-|[condition_variable::wait_until Method](#condition_variable__wait_until_method)|Blocks a thread, and sets a maximum point in time at which the thread unblocks.|  
+|[condition_variable::notify_all](#condition_variable__notify_all_method)|Unblocks all threads that are waiting for the `condition_variable` object.|  
+|[condition_variable::notify_one](#condition_variable__notify_one_method)|Unblocks one of the threads that are waiting for the `condition_variable` object.|  
+|[condition_variable::wait](#condition_variable__wait_method)|Blocks a thread.|  
+|[condition_variable::wait_for](#condition_variable__wait_for_method)|Blocks a thread, and sets a time interval after which the thread unblocks.|  
+|[condition_variable::wait_until](#condition_variable__wait_until_method)|Blocks a thread, and sets a maximum point in time at which the thread unblocks.|  
   
 ## Requirements  
  **Header:** condition_variable  
@@ -76,7 +75,7 @@ condition_variable();
 ### Remarks  
  If not enough memory is available, the constructor throws a [system_error](../standard-library/system-error-class.md) object that has a `not_enough_memory` error code. If the object cannot be constructed because some other resource is not available, the constructor throws a `system_error` object that has a `resource_unavailable_try_again` error code.  
   
-##  <a name="condition_variable__native_handle_method"></a>  condition_variable::native_handle Method  
+##  <a name="condition_variable__native_handle_method"></a>  condition_variable::native_handle  
  Returns the implementation-specific type that represents the condition_variable handle.  
   
 ```
@@ -86,31 +85,28 @@ native_handle_type native_handle();
 ### Return Value  
  `native_handle_type` is defined as a pointer to Concurrency Runtime internal data structures.  
   
-##  <a name="condition_variable__notify_all_method"></a>  condition_variable::notify_all Method  
+##  <a name="condition_variable__notify_all_method"></a>  condition_variable::notify_all  
  Unblocks all threads that are waiting for the `condition_variable` object.  
   
 ```
 void notify_all() noexcept;
 ```  
   
-##  <a name="condition_variable__notify_one_method"></a>  condition_variable::notify_one Method  
+##  <a name="condition_variable__notify_one_method"></a>  condition_variable::notify_one  
  Unblocks one of the threads that are waiting on the `condition_variable` object.  
   
 ```
 void notify_one() noexcept;
 ```  
   
-##  <a name="condition_variable__wait_method"></a>  condition_variable::wait Method  
+##  <a name="condition_variable__wait_method"></a>  condition_variable::wait  
  Blocks a thread.  
   
 ```
-void wait(
-    unique_lock<mutex>& Lck);
+void wait(unique_lock<mutex>& Lck);
 
 template <class Predicate>
-void wait(
-    unique_lock<mutex>& Lck,
-    Predicate Pred);
+void wait(unique_lock<mutex>& Lck, Predicate Pred);
 ```  
   
 ### Parameters  
@@ -130,7 +126,7 @@ while(!Pred())
     wait(Lck);
 ```    
   
-##  <a name="condition_variable__wait_for_method"></a>  condition_variable::wait_for Method  
+##  <a name="condition_variable__wait_for_method"></a>  condition_variable::wait_for  
  Blocks a thread, and sets a time interval after which the thread unblocks.  
   
 ```
@@ -142,7 +138,8 @@ cv_status wait_for(
 template <class Rep, class Period, class Predicate>
 bool wait_for(
     unique_lock<mutex>& Lck,
-    const chrono::duration<Rep, Period>& Rel_time, Predicate Pred);
+    const chrono::duration<Rep, Period>& Rel_time, 
+    Predicate Pred);
 ```  
   
 ### Parameters  
@@ -165,7 +162,7 @@ bool wait_for(
   
  In effect, the second method executes the following code.  
   
-```css
+```cpp
 while(!Pred())
     if(wait_for(Lck, Rel_time) == cv_status::timeout)
     return Pred();
@@ -173,7 +170,7 @@ while(!Pred())
 return true;
 ```  
   
-##  <a name="condition_variable__wait_until_method"></a>  condition_variable::wait_until Method  
+##  <a name="condition_variable__wait_until_method"></a>  condition_variable::wait_until  
  Blocks a thread, and sets a maximum point in time at which the thread unblocks.  
   
 ```
@@ -185,7 +182,8 @@ cv_status wait_until(
 template <class Clock, class Duration, class Predicate>
 bool wait_until(
     unique_lock<mutex>& Lck,
-    const chrono::time_point<Clock, Duration>& Abs_time, Predicate Pred);
+    const chrono::time_point<Clock, Duration>& Abs_time, 
+    Predicate Pred);
 
 cv_status wait_until(
     unique_lock<mutex>& Lck,
@@ -194,7 +192,8 @@ cv_status wait_until(
 template <class Predicate>
 bool wait_until(
     unique_lock<mutex>& Lck,
-    const xtime* Abs_time, Predicate Pred);
+    const xtime* Abs_time, 
+    Predicate Pred);
 ```  
   
 ### Parameters  

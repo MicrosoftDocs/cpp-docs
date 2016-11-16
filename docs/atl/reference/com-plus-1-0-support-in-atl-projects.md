@@ -2,7 +2,6 @@
 title: "COM+ 1.0 Support in ATL Projects | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

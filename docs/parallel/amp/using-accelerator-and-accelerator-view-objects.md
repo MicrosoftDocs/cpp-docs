@@ -2,7 +2,6 @@
 title: "Using accelerator and accelerator_view Objects | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -197,7 +196,7 @@ accelerator chosen_one;
 ## Special Accelerators  
  The device paths of three special accelerators are available as properties of the `accelerator` class:  
   
-- [accelerator::direct3d_ref Data Member](../Topic/accelerator::direct3d_ref%20Data%20Member.md): This single-threaded accelerator uses software on the CPU to emulate a generic graphics card. It's used by default for debugging, but it's not useful in production because it's slower than the hardware accelerators. Additionally, it's available only in the DirectX SDK and the Windows SDK, and it's unlikely to be installed on your customers' computers. For more information, see [Debugging GPU Code](/visual-studio/debugger/debugging-gpu-code).  
+- [accelerator::direct3d_ref Data Member](../Topic/accelerator::direct3d_ref%20Data%20Member.md): This single-threaded accelerator uses software on the CPU to emulate a generic graphics card. It's used by default for debugging, but it's not useful in production because it's slower than the hardware accelerators. Additionally, it's available only in the DirectX SDK and the Windows SDK, and it's unlikely to be installed on your customers' computers. For more information, see [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code).  
   
 - [accelerator::direct3d_warp Data Member](../Topic/accelerator::direct3d_warp%20Data%20Member.md): This accelerator provides a fallback solution for executing C++ AMP code on multi-core CPUs that use Streaming SIMD Extensions (SSE).  
   
@@ -208,5 +207,5 @@ accelerator chosen_one;
   
 ## See Also  
  [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)   
- [Debugging GPU Code](/visual-studio/debugger/debugging-gpu-code)   
+ [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code)   
  [accelerator_view Class](../../parallel/amp/reference/accelerator-view-class.md)

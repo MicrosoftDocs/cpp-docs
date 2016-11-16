@@ -2,7 +2,6 @@
 title: "Deploying Native Desktop Applications (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -74,6 +73,6 @@ Deployment is the process by which you distribute a finished application or comp
 ## Related Sections  
  [Building C/C++ Isolated Applications and Side-by-side Assemblies](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)  
   
- [Deployment](../Topic/Deploying%20the%20.NET%20Framework%20and%20Applications.md)  
+ [Deployment](http://msdn.microsoft.com/Library/238d8284-6042-4a38-a7f6-1ee8efd719da)  
   
  [Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

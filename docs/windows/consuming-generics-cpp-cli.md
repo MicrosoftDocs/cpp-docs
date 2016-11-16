@@ -2,7 +2,6 @@
 title: "Consuming Generics (C++-CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,9 +38,9 @@ Generics authored in one .NET language may be used in other .NET languages. Unli
 ## Remarks  
  For more information, see:  
   
--   [Introduction to Generics](/dotnet/csharp/programming-guide/generics/introduction-to-generics)  
+-   [Introduction to Generics](/dotnet/articles/csharp/programming-guide/generics/introduction-to-generics)  
   
--   [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)  
+-   [Generic Types in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/data-types/generic-types)  
   
 ## Example  
   

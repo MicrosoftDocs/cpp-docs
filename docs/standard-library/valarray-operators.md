@@ -66,7 +66,7 @@ operator!=(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_ne.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -146,7 +146,7 @@ operator%(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_rem.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -231,7 +231,7 @@ operator&(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_bitand.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -314,7 +314,7 @@ operator&&(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_logand.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -401,7 +401,7 @@ operator>(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_gt.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -488,7 +488,7 @@ operator>=(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_ge.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -571,7 +571,7 @@ operator>>(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_rs.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -658,7 +658,7 @@ operator<(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_lt.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -745,7 +745,7 @@ operator<=(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_le.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -828,7 +828,7 @@ operator<<(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_ls.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -908,7 +908,7 @@ operator*(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_eprod.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -988,7 +988,7 @@ operator+(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_esum.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -1073,7 +1073,7 @@ operator-(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_ediff.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -1158,7 +1158,7 @@ operator/(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_equo.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -1245,7 +1245,7 @@ operator==(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_eq.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -1330,7 +1330,7 @@ operator^(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_xor.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -1419,7 +1419,7 @@ operator|(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_bitor.cpp  
 // compile with: /EHsc  
 #include <valarray>  
@@ -1506,7 +1506,7 @@ operator||(
   
 ### Example  
   
-```  
+```cpp  
 // valarray_op_logor.cpp  
 // compile with: /EHsc  
 #include <valarray>  

@@ -2,7 +2,6 @@
 title: "fill (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +45,7 @@ template<class _FwdIt, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `fill`. For more information, see [fill](../Topic/fill.md).  
+ This function behaves the same as the STL function `fill`. For more information, see [fill](http://msdn.microsoft.com/Library/b1f09e99-a9d2-4e4c-97f8-aaccc20b4420).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

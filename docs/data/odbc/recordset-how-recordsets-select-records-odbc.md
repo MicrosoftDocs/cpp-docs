@@ -2,7 +2,6 @@
 title: "Recordset: How Recordsets Select Records (ODBC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -71,7 +70,7 @@ This topic applies to the MFC ODBC classes.
   
 -   The string returned by [GetDefaultSQL](../Topic/CRecordset::GetDefaultSQL.md). By default, this is the name of the table you specified for the recordset in the wizard, but you can change what the function returns. The framework calls `GetDefaultSQL` — if the string does not begin with "SELECT" or "{CALL", it is assumed to be a table name, which is used to construct a SQL string.  
   
--   The field data members of the recordset, which are to be bound to specific columns of the table. The framework binds record columns to the addresses of these members, using them as buffers. The framework determines the correlation of field data members to table columns from the [RFX](../../data/odbc/record-field-exchange-using-rfx.md) or Bulk RFX function calls in the recordset's [DoFieldExchange](../Topic/CRecordset::DoFieldExchange.md) or [DoBulkFieldExchange](../Topic/CRecordset::DoBulkFieldExchange.md) member function.  
+-   The field data members of the recordset, which are to be bound to specific columns of the table. The framework binds record columns to the addresses of these members, using them as buffers. The framework determines the correlation of field data members to table columns from the [RFX](../../data/odbc/record-field-exchange-using-rfx.md) or Bulk RFX function calls in the recordset's [DoFieldExchange](../mfc/reference/crecordset-class.md#crecordset__dofieldexchange) or [DoBulkFieldExchange](../Topic/CRecordset::DoBulkFieldExchange.md) member function.  
   
 -   The [filter](../../data/odbc/recordset-filtering-records-odbc.md) for the recordset, if any, contained in the [m_strFilter](../Topic/CRecordset::m_strFilter.md) data member. The framework uses this string to construct a SQL **WHERE** clause.  
   
@@ -86,7 +85,7 @@ This topic applies to the MFC ODBC classes.
   
  After constructing the statement, **Open** sends the SQL to the ODBC Driver Manager (and the ODBC Cursor Library if it is in memory), which sends it on to the ODBC driver for the specific DBMS. The driver communicates with the DBMS to carry out the selection on the data source and fetches the first record. The framework loads the record into the field data members of the recordset.  
   
- You can use a combination of these techniques to open [tables](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md) and to construct a query based on a [join](../../data/odbc/recordset-performing-a-join-odbc.md) of multiple tables. With additional customization, you can call [predefined queries](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md) (stored procedures), select table columns not known at design time and [bind](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md) them to recordset fields or you can perform most other data-access tasks. Tasks you cannot accomplish by customizing recordsets can still be accomplished by [calling ODBC API functions](../../data/odbc/odbc-calling-odbc-api-functions-directly.md) or directly executing SQL statements with [CDatabase::ExecuteSQL](../Topic/CDatabase::ExecuteSQL.md).  
+ You can use a combination of these techniques to open [tables](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md) and to construct a query based on a [join](../../data/odbc/recordset-performing-a-join-odbc.md) of multiple tables. With additional customization, you can call [predefined queries](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md) (stored procedures), select table columns not known at design time and [bind](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md) them to recordset fields or you can perform most other data-access tasks. Tasks you cannot accomplish by customizing recordsets can still be accomplished by [calling ODBC API functions](../../data/odbc/odbc-calling-odbc-api-functions-directly.md) or directly executing SQL statements with [CDatabase::ExecuteSQL](../mfc/reference/cdatabase-class.md#cdatabase__executesql).  
   
 ##  <a name="_core_customizing_the_selection"></a> Customizing the Selection  
  Besides supplying a filter, a sort order, or parameters, you can take the following actions to customize your recordset's selection:  
@@ -104,7 +103,7 @@ This topic applies to the MFC ODBC classes.
   
      If you are performing a join of two or more tables, rewrite `GetDefaultSQL` to customize the table list used in the SQL **FROM** clause. For more information, see [Recordset: Performing a Join (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md).  
   
--   Manually bind additional field data members, perhaps based on information you obtain about the schema of your data source at run time. You add field data members to the recordset class, [RFX](../../data/odbc/record-field-exchange-using-rfx.md) or Bulk RFX function calls for them to the [DoFieldExchange](../Topic/CRecordset::DoFieldExchange.md) or [DoBulkFieldExchange](../Topic/CRecordset::DoBulkFieldExchange.md) member function, and initializations of the data members in the class constructor. For more information, see [Recordset: Dynamically Binding Data Columns (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).  
+-   Manually bind additional field data members, perhaps based on information you obtain about the schema of your data source at run time. You add field data members to the recordset class, [RFX](../../data/odbc/record-field-exchange-using-rfx.md) or Bulk RFX function calls for them to the [DoFieldExchange](../mfc/reference/crecordset-class.md#crecordset__dofieldexchange) or [DoBulkFieldExchange](../Topic/CRecordset::DoBulkFieldExchange.md) member function, and initializations of the data members in the class constructor. For more information, see [Recordset: Dynamically Binding Data Columns (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).  
   
 -   Override recordset member functions, such as `OnSetOptions`, to set application-specific options or to override defaults.  
   

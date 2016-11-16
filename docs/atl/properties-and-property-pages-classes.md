@@ -2,7 +2,6 @@
 title: "Properties and Property Pages Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,7 +39,7 @@ translation.priority.ht:
 # Properties and Property Pages Classes
 The following classes support properties and property pages:  
   
--   [CComDispatchDriver](../Topic/CComDispatchDriver.md) Retrieves or sets an object's properties through an `IDispatch` pointer.  
+-   [CComDispatchDriver](../atl/reference/atl-typedefs.md#ccomdispatchdriver) Retrieves or sets an object's properties through an `IDispatch` pointer.  
   
 -   [CStockPropImpl](../atl/reference/cstockpropimpl-class.md) Implements the stock properties supported by ATL.  
   

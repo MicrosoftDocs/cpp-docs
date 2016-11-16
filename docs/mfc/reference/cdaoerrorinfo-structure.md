@@ -2,7 +2,6 @@
 title: "CDaoErrorInfo Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,8 +41,7 @@ The `CDaoErrorInfo` structure contains information about an error object defined
 ## Syntax  
   
 ```  
- 
-    struct CDaoErrorInfo  
+struct CDaoErrorInfo  
 {  
     long m_lErrorCode;  
     CString m_strSource;  

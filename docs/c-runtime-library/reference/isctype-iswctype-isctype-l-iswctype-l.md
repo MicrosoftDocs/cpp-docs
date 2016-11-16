@@ -2,7 +2,6 @@
 title: "_isctype, iswctype, _isctype_l, _iswctype_l | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -131,7 +130,7 @@ int _iswctype_l(
  All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Character Classification](../../c-runtime-library/character-classification.md)   

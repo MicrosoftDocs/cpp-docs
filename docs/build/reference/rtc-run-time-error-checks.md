@@ -2,7 +2,6 @@
 title: "-RTC (Run-Time Error Checks) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -115,7 +114,7 @@ c = a;  // No run-time error with /RTCu
  If a variable could have been initialized, it will not be reported at run time by **/RTC**`u`. For example, after a variable is aliased through a pointer, the compiler will not track the variable and report uninitialized uses. In effect, you can initialize a variable by taking its address. The & operator works like an assignment operator in this situation.  
   
 ## Remarks  
- Run-time error checks are a way for you to find problems in your running code; for more information, see [How to: Use Native Run-Time Checks](../Topic/How%20to:%20Use%20Native%20Run-Time%20Checks.md).  
+ Run-time error checks are a way for you to find problems in your running code; for more information, see [How to: Use Native Run-Time Checks](http://msdn.microsoft.com/Library/dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1).  
   
  If you compile your program at the command line using any of the **/RTC** compiler options, any pragma [optimize](../../preprocessor/optimize.md) instructions in your code will silently fail. This is because run-time error checks are not valid in a release (optimized) build.  
   
@@ -140,4 +139,4 @@ c = a;  // No run-time error with /RTCu
 ## See Also  
  [Compiler Options](../../build/reference/compiler-options.md)   
  [Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
- [How to: Use Native Run-Time Checks](../Topic/How%20to:%20Use%20Native%20Run-Time%20Checks.md)
+ [How to: Use Native Run-Time Checks](http://msdn.microsoft.com/Library/dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1)

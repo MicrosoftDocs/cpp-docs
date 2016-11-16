@@ -2,7 +2,6 @@
 title: "Compiler Error C2094 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.mt:
 # Compiler Error C2094
 label 'identifier' was undefined  
   
- The label used by a [goto](/dotnet/csharp/language-reference/keywords/goto) statement does not exist in the function.  
+ The label used by a [goto](/dotnet/articles/csharp/language-reference/keywords/goto) statement does not exist in the function.  
   
  The following sample generates C2094:  
   

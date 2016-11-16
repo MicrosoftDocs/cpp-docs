@@ -2,7 +2,6 @@
 title: "back_insert_iterator Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -84,8 +83,7 @@ class back_insert_iterator;
 ##  <a name="back_insert_iterator__back_insert_iterator"></a>  back_insert_iterator::back_insert_iterator  
  Constructs a `back_insert_iterator` that inserts elements after the last element in a container.  
   
-```  
- 
+```   
 explicit back_insert_iterator(Container& _Cont);
 ```  
   
@@ -98,7 +96,7 @@ explicit back_insert_iterator(Container& _Cont);
   
 ### Example  
   
-```  
+```cpp  
 // back_insert_iterator_back_insert_iterator.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -147,8 +145,7 @@ After the insertions, the vector vec is: ( 1 2 3 40 50 600 700 ).
 ##  <a name="back_insert_iterator__container_type"></a>  back_insert_iterator::container_type  
  A type that provides a container for the `back_insert_iterator`.  
   
-```  
- 
+```   
 typedef Container  
 container_type;  
 ```  
@@ -158,7 +155,7 @@ container_type;
   
 ### Example  
   
-```  
+```cpp  
 // back_insert_iterator_container_type.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -212,7 +209,7 @@ back_insert_iterator<Container>& operator*();
   
 ### Example  
   
-```  
+```cpp  
 // back_insert_iterator_back_insert.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -259,7 +256,6 @@ After the insertions, the vector vec becomes: ( 1 2 3 10 20 ).
   
 ```  
 back_insert_iterator<Container>& operator++();
-
 back_insert_iterator<Container> operator++(int);
 ```  
   
@@ -271,7 +267,7 @@ back_insert_iterator<Container> operator++(int);
   
 ### Example  
   
-```  
+```cpp  
 // back_insert_iterator_op_incre.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -318,8 +314,7 @@ After the insertions, the vector vec becomes: ( 10 20 30 40 ).
   
 ```  
 back_insert_iterator<Container>& operator=(typename Container::const_reference val);
-
-    back_insert_iterator<Container>& operator=(typename Container::value_type&& val);
+back_insert_iterator<Container>& operator=(typename Container::value_type&& val);
 ```  
   
 ### Parameters  
@@ -340,7 +335,7 @@ back_insert_iterator<Container>& operator=(typename Container::const_reference v
   
 ### Example  
   
-```  
+```cpp  
 // back_insert_iterator_op_assign.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -381,7 +376,6 @@ int main( )
  A type that provides a reference for the `back_insert_iterator`.  
   
 ```  
- 
 typedef typename Container::reference reference;  
 ```  
   
@@ -390,7 +384,7 @@ typedef typename Container::reference reference;
   
 ### Example  
   
-```  
+```cpp  
 // back_insert_iterator_reference.cpp  
 // compile with: /EHsc  
 #include <iterator>  

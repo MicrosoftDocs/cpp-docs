@@ -21,8 +21,7 @@ manager: "ghogen"
   
 ```
 bool operator!=(
-    const list<Type, Allocator>&
-left,
+    const list<Type, Allocator>& left,
     const list<Type, Allocator>& right);
 ```  
   
@@ -41,7 +40,7 @@ left,
   
 ### Example  
   
-```  
+```cpp  
   
 // list_op_ne.cpp  
 // compile with: /EHsc  
@@ -70,8 +69,7 @@ Lists not equal.
   
 ```
 bool operator<(
-    const list<Type, Allocator>&
-left,
+    const list<Type, Allocator>& left,
     const list<Type, Allocator>& right);
 ```  
   
@@ -90,7 +88,7 @@ left,
   
 ### Example  
   
-```  
+```cpp  
 // list_op_lt.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -122,8 +120,7 @@ List c1 is less than list c2.
   
 ```
 bool operator<=(
-    const list<Type, Allocator>&
-left,
+    const list<Type, Allocator>& left,
     const list<Type, Allocator>& right);
 ```  
   
@@ -142,7 +139,7 @@ left,
   
 ### Example  
   
-```  
+```cpp  
 // list_op_le.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -174,8 +171,7 @@ List c1 is less than or equal to list c2.
   
 ```
 bool operator==(
-    const list<Type, Allocator>&
-left,
+    const list<Type, Allocator>& left,
     const list<Type, Allocator>& right);
 ```  
   
@@ -194,7 +190,7 @@ left,
   
 ### Example  
   
-```  
+```cpp  
 // list_op_eq.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -222,8 +218,7 @@ The lists are equal.
   
 ```
 bool operator>(
-    const list<Type, Allocator>&
-left,
+    const list<Type, Allocator>& left,
     const list<Type, Allocator>& right);
 ```  
   
@@ -242,7 +237,7 @@ left,
   
 ### Example  
   
-```  
+```cpp  
 // list_op_gt.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -274,8 +269,7 @@ List c1 is greater than list c2.
   
 ```
 bool operator>=(
-    const list<Type, Allocator>&
-left,
+    const list<Type, Allocator>& left,
     const list<Type, Allocator>& right);
 ```  
   
@@ -294,7 +288,7 @@ left,
   
 ### Example  
   
-```  
+```cpp  
 // list_op_ge.cpp  
 // compile with: /EHsc  
 #include <list>  

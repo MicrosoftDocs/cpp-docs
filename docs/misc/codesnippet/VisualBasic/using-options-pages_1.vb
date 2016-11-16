@@ -1,1 +1,0 @@
-        Dim vsEnvironment As DTE = DirectCast(GetService(GetType(SDTE)), DTE)

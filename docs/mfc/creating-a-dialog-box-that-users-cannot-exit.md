@@ -2,7 +2,6 @@
 title: "Creating a Dialog Box That Users Cannot Exit | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -54,7 +53,7 @@ You can create a runtime dialog box that a user cannot exit. This kind of dialog
 > [!NOTE]
 >  For MFC applications, to create a dialog box that users cannot exit, you must override the default behavior of `OnOK`and `OnCancel` because even if you delete the associated buttons, the dialog box can still be dismissed by pressing ENTER or ESC.  
   
- For information about how to add resources to managed projects, see [Resources in Desktop Apps](../Topic/Resources%20in%20Desktop%20Apps.md).  
+ For information about how to add resources to managed projects, see [Resources in Desktop Apps](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890).  
   
 ## Requirements  
  Win32  

@@ -2,7 +2,6 @@
 title: "How to: Create CLR Console Applications (C++-CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -52,7 +51,7 @@ You can use the Console Application template to create a console app project tha
   
     -   Console (.cpp file)—The main source file and entry point into the app that you just created. It identifies the project .dll file and the project namespace. Provide your own code in this file.  
   
-    -   AssemblyInfo.cpp—Contains attributes, files, resources, types, versioning information, signing information, and so on that you can use to modify the project's assembly metadata. For more information, see [Assembly Contents](../Topic/Assembly%20Contents.md).  
+    -   AssemblyInfo.cpp—Contains attributes, files, resources, types, versioning information, signing information, and so on that you can use to modify the project's assembly metadata. For more information, see [Assembly Contents](http://msdn.microsoft.com/Library/28116714-da77-45f7-826d-fa035d121948).  
   
     -   Stdafx.cpp—Used to build a precompiled header file that's named Win32.pch and a precompiled types file that's named StdAfx.obj.  
   

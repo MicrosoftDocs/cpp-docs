@@ -2,7 +2,6 @@
 title: "C++ Standard Library Reference | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,13 +50,4 @@ A C++ program can call on a large number of functions from this conforming imple
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)  
  Provides links to reference topics discussing the Standard C++ Library header files, with code examples.  
   
-## Related Sections  
- [Visual C++ Reference](http://msdn.microsoft.com/en-us/1ba03b5c-8229-4f63-b08c-6c12141d6ab1)  
- Provides links to topics describing the C and C++ language references, the libraries provided with Visual C++, the Visual C++ Extensibility Object Model, and the Microsoft Macro Assembler (MASM).  
-  
- [NIB: Samples Included in Visual C++](http://msdn.microsoft.com/en-us/c9ec56b3-2bbd-49b4-8a4c-9ed4b78b7a84)  
- Provides links to sample code showing the capabilities of Visual C++ and the libraries and technologies it supports.  
-  
-## See Also  
- [Visual C++ Libraries Reference](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)
 

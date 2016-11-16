@@ -2,7 +2,6 @@
 title: "copy (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +45,7 @@ template<class _InIt, class _OutIt> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `copy`. For more information, see [copy](../Topic/copy.md).  
+ This function behaves the same as the STL function `copy`. For more information, see [copy](http://msdn.microsoft.com/Library/f1fec7da-e01b-40f1-b5bd-6b81e304cae1).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

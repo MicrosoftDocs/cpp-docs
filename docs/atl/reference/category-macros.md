@@ -2,7 +2,6 @@
 title: "Category Macros | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -105,7 +104,7 @@ IMPLEMENTED_CATEGORY(catID)
 |Simple Data Binding|CATID_PropertyNotifyControl|{157083E1-2368-11cf-87B9-00AA006C8166}|  
 |Advanced Data Binding|CATID_VBDataBound|{157083E2-2368-11cf-87B9-00AA006C8166}|  
 |Windowless Controls|CATID_WindowlessObject|{1D06B600-3AE3-11cf-87B9-00AA006C8166}|  
-|Internet-Aware Objects|See [Internet Aware Objects](http://msdn.microsoft.com/library/windows/desktop/ms690561) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a sample list.|Â|  
+|Internet-Aware Objects|See [Internet Aware Objects](http://msdn.microsoft.com/library/windows/desktop/ms690561) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a sample list.||  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/CPP/category-macros_1.h)]  
@@ -114,8 +113,7 @@ IMPLEMENTED_CATEGORY(catID)
  Add a `REQUIRED_CATEGORY` macro to your component's [category map](#begin_category_map) to specify that it should be registered as requiring the category identified by the `catID` parameter.  
   
 ```
-REQUIRED_CATEGORY(Â
-    catID Â)
+REQUIRED_CATEGORY( catID )
 ```  
   
 ### Parameters  
@@ -139,7 +137,7 @@ REQUIRED_CATEGORY(Â
 |Simple Data Binding|CATID_PropertyNotifyControl|{157083E1-2368-11cf-87B9-00AA006C8166}|  
 |Advanced Data Binding|CATID_VBDataBound|{157083E2-2368-11cf-87B9-00AA006C8166}|  
 |Windowless Controls|CATID_WindowlessObject|{1D06B600-3AE3-11cf-87B9-00AA006C8166}|  
-|Internet-Aware Objects|See [Internet Aware Objects](http://msdn.microsoft.com/library/windows/desktop/ms690561) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a sample list.|Â|  
+|Internet-Aware Objects|See [Internet Aware Objects](http://msdn.microsoft.com/library/windows/desktop/ms690561) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a sample list.||  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#135](../../atl/codesnippet/CPP/category-macros_2.h)]  

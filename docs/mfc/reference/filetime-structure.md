@@ -2,7 +2,6 @@
 title: "FILETIME Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `FILETIME` structure is a 64-bit value representing the number of 100-nanose
 ## Syntax  
   
 ```  
- 
-    typedef struct _FILETIME {  
+typedef struct _FILETIME {  
     DWORD dwLowDateTime;   /* low 32 bits */  
     DWORD dwHighDateTime;  /* high 32 bits */  
 } FILETIME, *PFILETIME, *LPFILETIME;  

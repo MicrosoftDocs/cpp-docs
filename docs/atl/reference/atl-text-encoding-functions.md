@@ -2,7 +2,6 @@
 title: "ATL Text Encoding Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -336,7 +335,7 @@ inline int EscapeXML(
  The length in characters of the caller-allocated buffer.  
   
  `dwFlags`  
- Flags describing how the conversion is to be performed. See [ATL_ESC Flags](../Topic/ATL_ESC%20Flags.md).  
+ Flags describing how the conversion is to be performed. See [ATL_ESC Flags](http://msdn.microsoft.com/Library/daf3aa3c-7498-4d63-9fb6-e05b4815c2b8).  
   
 ### Return Value  
  The length in characters of the converted string.  
@@ -494,7 +493,7 @@ inline BOOL QPDecode(
  Pointer to a variable that contains the length in bytes of `szDest`. If the function succeeds, the variable receives the number of bytes written to the buffer. If the function fails, the variable receives the required length in bytes of the buffer.  
   
  [in] `dwFlags`  
- Flags describing how the conversion is to be performed. See [ATLSMTP_QPENCODE Flags](../Topic/ATLSMTP_QPENCODE%20Flags.md).  
+ Flags describing how the conversion is to be performed. See [ATLSMTP_QPENCODE Flags](http://msdn.microsoft.com/Library/6b15a3ab-8e57-49e4-8104-09b26ebb96c4).  
   
 ### Return Value  
  Returns `TRUE` on success, `FALSE` on failure.  
@@ -555,7 +554,7 @@ inline BOOL QPEncode(
  Pointer to a variable that contains the length in characters of `szDest`. If the function succeeds, the variable receives the number of characters written to the buffer. If the function fails, the variable receives the required length in characters of the buffer.  
   
  `dwFlags`  
- Flags describing how the conversion is to be performed. See [ATLSMTP_QPENCODE Flags](../Topic/ATLSMTP_QPENCODE%20Flags.md).  
+ Flags describing how the conversion is to be performed. See [ATLSMTP_QPENCODE Flags](http://msdn.microsoft.com/Library/6b15a3ab-8e57-49e4-8104-09b26ebb96c4).  
   
 ### Return Value  
  Returns **TRUE** on success, **FALSE** on failure.  
@@ -678,7 +677,7 @@ inline BOOL UUEncode(
  The file to be added to the header when ATLSMTP_UUENCODE_HEADER is specified in `dwFlags`.  
   
  `dwFlags`  
- Flags controlling the behavior of this function. See [ATLSMTP_UUENCODE Flags](../Topic/ATLSMTP_UUENCODE%20Flags.md).  
+ Flags controlling the behavior of this function. See [ATLSMTP_UUENCODE Flags](http://msdn.microsoft.com/Library/ecb79b81-b764-4a48-a05c-a9dee6e7bbce).  
   
 ### Return Value  
  Returns **TRUE** on success, **FALSE** on failure.  

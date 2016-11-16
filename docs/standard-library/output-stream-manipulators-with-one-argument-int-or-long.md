@@ -2,7 +2,6 @@
 title: "Output Stream Manipulators with One Argument (int or long) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,7 +37,7 @@ The iostream class library provides a set of macros for creating parameterized m
   
 ## Example  
   
-```  
+```cpp  
 // output_stream_manip.cpp  
 // compile with: /GR /EHsc  
 #include <iostream>  

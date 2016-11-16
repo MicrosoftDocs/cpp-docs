@@ -2,7 +2,6 @@
 title: "vector Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -151,17 +150,11 @@ typedef Allocator allocator_type;
  Erases a vector and copies the specified elements to the empty vector.  
   
 ```  
-void assign(
-    size_type Count,  
-    const Type& Val);
-
-void assign(
-    initializer_list<Type> IList);
+void assign(size_type Count, const Type& Val);
+void assign(initializer_list<Type> IList);
 
 template <class InputIterator>  
-void assign(
-    InputIterator First,  
-    InputIterator Last);
+void assign(InputIterator First, InputIterator Last);
 ```  
   
 ### Parameters  
@@ -185,7 +178,7 @@ void assign(
   
 ### Example  
   
-```  
+```cpp  
 / vector_assign.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -252,7 +245,7 @@ const_reference at(size_type _Pos) const;
   
 ### Example  
   
-```  
+```cpp  
 // vector_at.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -297,7 +290,7 @@ const_reference back() const;
   
 ### Example  
   
-```  
+```cpp  
 // vector_back.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -337,7 +330,7 @@ iterator begin();
   
 ### Example  
   
-```  
+```cpp  
 // vector_begin.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -395,7 +388,7 @@ size_type capacity() const;
   
 ### Example  
   
-```  
+```cpp  
 // vector_capacity.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -480,7 +473,7 @@ void clear();
   
 ### Example  
   
-```  
+```cpp  
 // vector_clear.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -543,7 +536,7 @@ typedef typename Allocator::const_reference const_reference;
   
 ### Example  
   
-```  
+```cpp  
 // vector_const_ref.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -601,7 +594,7 @@ const_reverse_iterator crbegin() const;
   
 ### Example  
   
-```  
+```cpp  
 // vector_crbegin.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -653,7 +646,7 @@ const_reverse_iterator crend() const;
   
 ### Example  
   
-```  
+```cpp  
 // vector_crend.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -693,7 +686,7 @@ pointer data();
   
 ### Example  
   
-```  
+```cpp  
 // vector_data.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -747,7 +740,7 @@ typedef typename Allocator::difference_type difference_type;
   
 ### Example  
   
-```  
+```cpp  
 // vector_diff_type.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -813,7 +806,7 @@ iterator emplace(
   
 ### Example  
   
-```  
+```cpp  
 // vector_emplace.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -869,7 +862,7 @@ void emplace_back(Types&&... _Args);
   
 ### Example  
   
-```cpp  
+```cppcpp  
   
 #include <vector>  
 struct obj  
@@ -897,7 +890,7 @@ bool empty() const;
   
 ### Example  
   
-```  
+```cpp  
 // vector_empty.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -938,7 +931,7 @@ const_iterator end() const;
   
 ### Example  
   
-```  
+```cpp  
 // vector_end.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -988,7 +981,7 @@ iterator erase(
   
 ### Example  
   
-```  
+```cpp  
 // vector_erase.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1050,7 +1043,7 @@ const_reference front() const;
   
 ### Example  
   
-```  
+```cpp  
 // vector_front.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1089,7 +1082,7 @@ Allocator get_allocator() const;
   
 ### Example  
   
-```  
+```cpp  
 // vector_get_allocator.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1153,7 +1146,7 @@ void insert(
   
 ### Example  
   
-```  
+```cpp  
 // vector_insert.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1240,7 +1233,7 @@ size_type max_size() const;
   
 ### Example  
   
-```  
+```cpp  
 // vector_max_size.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1283,7 +1276,7 @@ const_reference operator[](size_type Pos) const;
   
 ### Example  
   
-```cpp  
+```cppcpp  
 // vector_op_ref.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1323,7 +1316,7 @@ vector& operator=(vector&& right);
   
 ### Example  
   
-```  
+```cpp  
 // vector_operator_as.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1374,7 +1367,7 @@ typedef typename Allocator::pointer pointer;
   
 ### Example  
   
-```  
+```cpp  
 // vector_pointer.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1471,7 +1464,6 @@ int main()
   
 ```  
 reverse_iterator rbegin();
-
 const_reverse_iterator rbegin() const;
 ```  
   
@@ -1483,7 +1475,7 @@ const_reverse_iterator rbegin() const;
   
 ### Example  
   
-```  
+```cpp  
 // vector_rbegin.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1529,7 +1521,6 @@ typedef typename Allocator::reference reference;
   
 ```  
 const_reverse_iterator rend() const;
-
 reverse_iterator rend();
 ```  
   
@@ -1547,7 +1538,7 @@ reverse_iterator rend();
   
 ### Example  
   
-```  
+```cpp  
 // vector_rend.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1585,7 +1576,7 @@ void reserve(size_type count);
   
 ### Example  
   
-```  
+```cpp  
 // vector_reserve.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1616,7 +1607,6 @@ Current capacity of v1 = 20
   
 ```  
 void resize(size_type Newsize);
-
 void resize(size_type Newsize, Type Val);
 ```  
   
@@ -1760,7 +1750,7 @@ void shrink_to_fit();
   
 ### Example  
   
-```  
+```cpp  
 // vector_shrink_to_fit.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1802,7 +1792,7 @@ size_type size() const;
   
 ### Example  
   
-```  
+```cpp  
 // vector_size.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1860,7 +1850,7 @@ friend void swap(
   
 ### Example  
   
-```  
+```cpp  
 // vector_swap.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1909,7 +1899,7 @@ typedef typename Allocator::value_type value_type;
   
 ### Example  
   
-```  
+```cpp  
 // vector_value_type.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1933,42 +1923,19 @@ int main( )
   
 ```  
 vector();
+explicit vector(const Allocator& Al);
+explicit vector(size_type Count);
+vector(size_type Count, const Type& Val);
+vector(size_type Count, const Type& Val, const Allocator& Al);
 
-explicit vector(
-    const Allocator& Al);
-
-explicit vector(
-    size_type Count);
-
-vector(
-    size_type Count,  
-    const Type& Val);
-
-vector(
-    size_type Count,  
-    const Type& Val,  
-    const Allocator& Al);
-
-vector(
-    const vector& Right);
-
-vector(
-    vector&& Right);
-
-vector(
-    initializer_list<Type> IList,  
-    const _Allocator& Al);
+vector(const vector& Right);
+vector(vector&& Right);
+vector(initializer_list<Type> IList, const _Allocator& Al);
 
 template <class InputIterator>  
-vector(
- InputIterator First,  
-    InputIterator Last);
-
+vector(InputIterator First, InputIterator Last);
 template <class InputIterator>  
-vector(
- InputIterator First,  
-    InputIterator Last,  
-    const Allocator& Al);
+vector(InputIterator First, InputIterator Last, const Allocator& Al);
 ```  
   
 ### Parameters  

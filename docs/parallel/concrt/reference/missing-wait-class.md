@@ -2,7 +2,6 @@
 title: "missing_wait Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -81,6 +80,6 @@ missing_wait() throw();
 ## See Also  
  [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
  [task_group Class](../Topic/task_group%20Class.md)   
- [task_group::wait Method](../Topic/task_group%20Class.md#task_group__wait_method)   
- [task_group::run_and_wait Method](../Topic/task_group%20Class.md#task_group__run_and_wait_method)   
+ [task_group::wait Method](../Topic/task_group%20Class.md)   
+ [task_group::run_and_wait Method](../Topic/task_group%20Class.md)   
  [structured_task_group Class](../../../parallel/concrt/reference/structured-task-group-class.md)

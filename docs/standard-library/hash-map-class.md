@@ -2,7 +2,6 @@
 title: "hash_map Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -213,7 +212,7 @@ const Type& at(const Key& key) const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_at.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -256,7 +255,7 @@ iterator begin();
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_begin.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -314,7 +313,7 @@ const_iterator cbegin() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_cbegin.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -364,7 +363,7 @@ const_iterator cend() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_cend.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -501,7 +500,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::co
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_const_ref.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -662,7 +661,7 @@ const_reverse_iterator crbegin() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_crbegin.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -716,7 +715,7 @@ const_reverse_iterator crend() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_crend.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -757,7 +756,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::di
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_diff_type.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -847,7 +846,7 @@ emplace(
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_emplace.cpp  
 // compile with: /EHsc  
 #include<hash_map>  
@@ -908,7 +907,7 @@ iterator emplace_hint(
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_emplace_hint.cpp  
 // compile with: /EHsc  
 #include<hash_map>  
@@ -954,7 +953,7 @@ bool empty() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_empty.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -1009,7 +1008,7 @@ iterator end();
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_end.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -1082,7 +1081,7 @@ pair <iterator, iterator> equal_range (const Key& key);
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_equal_range.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -1292,7 +1291,7 @@ const_iterator find(const Key& key) const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_find.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -1362,7 +1361,7 @@ Allocator get_allocator() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_get_allocator.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -1554,7 +1553,7 @@ iterator insert(
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_insert.cpp  
 // compile with: /EHsc  
 #include<hash_map>  
@@ -1709,7 +1708,7 @@ key_compare key_comp() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_key_comp.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -1829,7 +1828,7 @@ const_iterator lower_bound(const Key& key) const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_lower_bound.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -1918,7 +1917,7 @@ size_type max_size() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_max_size.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -1974,7 +1973,7 @@ Type& operator[](Key&& key);
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_op_ref.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -2059,7 +2058,7 @@ hash_map& operator=(hash_map&& right);
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_operator_as.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -2140,7 +2139,7 @@ reverse_iterator rbegin();
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_rbegin.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -2213,7 +2212,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::re
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_reference.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -2290,7 +2289,7 @@ reverse_iterator rend();
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_rend.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -2464,7 +2463,7 @@ void swap(hash_map& right);
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_swap.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -2543,7 +2542,7 @@ const_iterator upper_bound(const Key& key) const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_upper_bound.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -2618,7 +2617,7 @@ value_compare value_comp() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_value_comp.cpp  
 // compile with: /EHsc  
 #include <hash_map>  
@@ -2679,7 +2678,7 @@ typedef pair<const Key, Type> value_type;
   
 ### Example  
   
-```  
+```cpp  
 // hash_map_value_type.cpp  
 // compile with: /EHsc  
 #include <hash_map>  

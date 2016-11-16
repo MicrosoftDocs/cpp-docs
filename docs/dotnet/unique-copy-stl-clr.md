@@ -2,7 +2,6 @@
 title: "unique_copy (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,7 +48,7 @@ template<class _InIt, class _OutIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `unique_copy`. For more information, see [unique_copy](../Topic/unique_copy.md).  
+ This function behaves the same as the STL function `unique_copy`. For more information, see [unique_copy](http://msdn.microsoft.com/Library/cdbc77b9-81d8-4453-88f5-e701b6dae02d).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

@@ -2,7 +2,6 @@
 title: "TN071: MFC IOleCommandTarget Implementation | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -136,7 +135,7 @@ DECLARE_DYNCREATE(CMyServerView)
     END_OLECMD_MAP() 
  ```  
   
-3.  To handle the standard OLE print command, add an [ON_OLECMD](../Topic/ON_OLECMD.md) macro to the command map specifying the OLE command ID for the standard print command and **ID_FILE_PRINT** for the **WM_COMMAND** ID. **ID_FILE_PRINT** is the standard print command ID used by AppWizard-generated MFC applications:  
+3.  To handle the standard OLE print command, add an [ON_OLECMD](http://msdn.microsoft.com/Library/6c86327c-3d48-42ac-9dae-e0ccd3a81793) macro to the command map specifying the OLE command ID for the standard print command and **ID_FILE_PRINT** for the **WM_COMMAND** ID. **ID_FILE_PRINT** is the standard print command ID used by AppWizard-generated MFC applications:  
   
  ```  
     BEGIN_OLECMD_MAP(CMyServerView,

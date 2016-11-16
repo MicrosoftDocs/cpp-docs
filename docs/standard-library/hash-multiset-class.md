@@ -2,7 +2,6 @@
 title: "hash_multiset Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -196,7 +195,7 @@ iterator begin();
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_begin.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -255,7 +254,7 @@ const_iterator cbegin() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_cbegin.cpp  
 // compile with: /EHsc  
 #include <hash_multiset>  
@@ -302,7 +301,7 @@ const_iterator cend() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_cend.cpp  
 // compile with: /EHsc  
 #include <hash_multiset>  
@@ -345,7 +344,7 @@ void clear();
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_clear.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -427,7 +426,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::co
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_const_reference.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -564,7 +563,7 @@ const_reverse_iterator crbegin() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_crbegin.cpp  
 // compile with: /EHsc  
 #include <hash_multiset>  
@@ -616,7 +615,7 @@ const_reverse_iterator crend() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_crend.cpp  
 // compile with: /EHsc  
 #include <hash_multiset>  
@@ -664,7 +663,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::di
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_diff_type.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -752,7 +751,7 @@ iterator insert(ValTy&& val);
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_emplace.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -808,7 +807,7 @@ iterator insert(
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_emplace_hint.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -851,7 +850,7 @@ bool empty() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_empty.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -904,7 +903,7 @@ iterator end();
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_end.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -970,7 +969,7 @@ pair <iterator, iterator> equal_range (const Key& key);
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_equal_range.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -1181,7 +1180,7 @@ const_iterator find(const Key& key) const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_find.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -1252,7 +1251,7 @@ Allocator get_allocator() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_get_allocator.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -1492,7 +1491,7 @@ key_compare key_comp() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_key_comp.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -1610,7 +1609,7 @@ iterator lower_bound(const Key& key);
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_lower_bound.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -1670,7 +1669,7 @@ size_type max_size() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_max_size.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -1714,7 +1713,7 @@ hash_multiset& operator=(hash_multiset&& right);
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_operator_as.cpp  
 // compile with: /EHsc  
 #include <hash_multiset>  
@@ -1795,7 +1794,7 @@ reverse_iterator rbegin();
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_rbegin.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -1867,7 +1866,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::re
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_reference.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -1929,7 +1928,7 @@ reverse_iterator rend();
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_rend.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -2026,7 +2025,7 @@ size_type size() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_size.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -2093,7 +2092,7 @@ void swap(hash_multiset& right);
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_swap.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -2170,7 +2169,7 @@ iterator upper_bound(const Key& key);
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_upper_bound.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -2252,7 +2251,7 @@ value_compare value_comp() const;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_value_comp.cpp  
 // compile with: /EHsc  
 #include <hash_set>  
@@ -2340,7 +2339,7 @@ typedef Key value_type;
   
 ### Example  
   
-```  
+```cpp  
 // hash_multiset_value_type.cpp  
 // compile with: /EHsc  
 #include <hash_set>  

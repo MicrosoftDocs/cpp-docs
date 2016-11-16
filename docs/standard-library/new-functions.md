@@ -32,22 +32,22 @@ extern const std::nothrow_t nothrow;
  Installs a user function that is to be called when `operator new` fails in its attempt to allocate memory.  
   
 ```  
-new_handler set_new_handler(new_handler _Pnew) throw();
+new_handler set_new_handler(new_handler Pnew) throw();
 ```  
   
 ### Parameters  
- `_Pnew`  
+ `Pnew`  
  The new_handler to be installed.  
   
 ### Return Value  
  0 on the first call and the previous `new_handler` on subsequent calls.  
   
 ### Remarks  
- The function stores `_Pnew` in a static [new handler](../standard-library/new-typedefs.md#new_handler) pointer that it maintains, then returns the value previously stored in the pointer. The new handler is used by [operator new](../standard-library/new-operators.md#operator_new)( **size_t**).  
+ The function stores `Pnew` in a static [new handler](../standard-library/new-typedefs.md#new_handler) pointer that it maintains, then returns the value previously stored in the pointer. The new handler is used by [operator new](../standard-library/new-operators.md#operator_new)( **size_t**).  
   
 ### Example  
   
-```  
+```cpp  
 // new_set_new_handler.cpp  
 // compile with: /EHsc  
 #include<new>  

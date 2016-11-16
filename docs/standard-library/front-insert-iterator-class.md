@@ -2,7 +2,6 @@
 title: "front_insert_iterator Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -93,7 +92,7 @@ typedef Container container_type;
   
 ### Example  
   
-```  
+```cpp  
 // front_insert_iterator_container_type.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -137,7 +136,7 @@ explicit front_insert_iterator(Container& _Cont);
   
 ### Example  
   
-```  
+```cpp  
 // front_insert_iterator_front_insert_iterator.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -196,7 +195,7 @@ front_insert_iterator<Container>& operator*();
   
 ### Example  
   
-```  
+```cpp  
 // front_insert_iterator_deref.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -256,7 +255,7 @@ front_insert_iterator<Container> operator++(int);
   
 ### Example  
   
-```  
+```cpp  
 // front_insert_iterator_op_incre.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -314,7 +313,7 @@ front_insert_iterator<Container>& operator=(typename Container::value_type&& val
   
 ### Example  
   
-```  
+```cpp  
 // front_insert_iterator_op_assign.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -354,7 +353,7 @@ typedef typename Container::reference reference;
   
 ### Example  
   
-```  
+```cpp  
 // front_insert_iterator_reference.cpp  
 // compile with: /EHsc  
 #include <iterator>  

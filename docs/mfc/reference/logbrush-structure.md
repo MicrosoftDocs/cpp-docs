@@ -2,7 +2,6 @@
 title: "LOGBRUSH Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `LOGBRUSH` structure defines the style, color, and pattern of a physical bru
 ## Syntax  
   
 ```  
- 
-    typedef struct tag LOGBRUSH { /* lb */  
+typedef struct tag LOGBRUSH { /* lb */  
     UINT lbStyle;  
     COLORREF lbColor;  
     LONG lbHatch;  

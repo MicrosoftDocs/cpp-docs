@@ -2,7 +2,6 @@
 title: "reference_wrapper Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -135,7 +134,7 @@ Ty& get() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__reference_wrapper_get.cpp   
 // compile with: /EHsc   
 #include <functional>   
@@ -175,7 +174,7 @@ i = -1
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__reference_wrapper_operator_cast.cpp   
 // compile with: /EHsc   
 #include <functional>   
@@ -219,7 +218,7 @@ typename result_of<T(T1, T2, ..., TN)>::type operator()(T1& t1, T2& t2, ..., TN&
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__reference_wrapper_operator_call.cpp   
 // compile with: /EHsc   
 #include <functional>   
@@ -264,7 +263,7 @@ explicit reference_wrapper(Ty& val);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__reference_wrapper_reference_wrapper.cpp   
 // compile with: /EHsc   
 #include <functional>   
@@ -308,7 +307,7 @@ typedef T0 result_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__reference_wrapper_result_type.cpp   
 // compile with: /EHsc   
 #include <functional>   
@@ -348,7 +347,7 @@ typedef Ty type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__reference_wrapper_type.cpp   
 // compile with: /EHsc   
 #include <functional>   

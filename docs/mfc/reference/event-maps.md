@@ -2,7 +2,6 @@
 title: "Event Maps | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -73,10 +72,8 @@ Whenever a control wishes to notify its container that some action (determined b
 ##  <a name="declare_event_map"></a>  DECLARE_EVENT_MAP  
  Each `COleControl`-derived class in your program can provide an event map to specify the events your control will fire.  
   
-```  
- 
-DECLARE_EVENT_MAP()  
- 
+```   
+DECLARE_EVENT_MAP()   
 ```  
   
 ### Remarks  
@@ -87,11 +84,8 @@ DECLARE_EVENT_MAP()
 ##  <a name="begin_event_map"></a>  BEGIN_EVENT_MAP  
  Begins the definition of your event map.  
   
-```  
- 
-BEGIN_EVENT_MAP(
-theClass  ,   baseClass)  
- 
+```   
+BEGIN_EVENT_MAP(theClass,  baseClass)  
 ```  
   
 ### Parameters  
@@ -109,22 +103,15 @@ theClass  ,   baseClass)
 ##  <a name="end_event_map"></a>  END_EVENT_MAP  
  Use the `END_EVENT_MAP` macro to end the definition of your event map.  
   
-```  
- 
-END_EVENT_MAP()  
- 
+```   
+END_EVENT_MAP()   
 ```  
   
 ##  <a name="event_custom"></a>  EVENT_CUSTOM  
  Defines an event-map entry for a custom event.  
   
-```  
- 
-EVENT_CUSTOM(
-pszName  ,   
-pfnFire  ,
-    vtsParams)  
- 
+```   
+EVENT_CUSTOM(pszName, pfnFire,  vtsParams) 
 ```  
   
 ### Parameters  
@@ -182,13 +169,12 @@ pfnFire  ,
 ##  <a name="event_custom_id"></a>  EVENT_CUSTOM_ID  
  Defines an event firing function for a custom event belonging to the dispatch ID specified by `dispid`.  
   
-```  
- 
+```   
 EVENT_CUSTOM_ID(
-pszName  ,   
-dispid  ,   
-pfnFire  ,
-    vtsParams)  
+  pszName,   
+  dispid,   
+  pfnFire,
+  vtsParams)  
  
 ```  
   
@@ -217,11 +203,8 @@ pfnFire  ,
 ##  <a name="on_oleverb"></a>  ON_OLEVERB  
  This macro defines a message map entry that maps a custom verb to a specific member function of your control.  
   
-```  
- 
-ON_OLEVERB(
-idsVerbName  ,   memberFxn)  
- 
+```   
+ON_OLEVERB(idsVerbName,  memberFxn)   
 ```  
   
 ### Parameters  
@@ -236,26 +219,18 @@ idsVerbName  ,   memberFxn)
   
  The function prototype for `memberFxn` is:  
   
- `BOOL memberFxn(`  
-  
- `LPMSG` `lpMsg` `,`  
-  
- `HWND` `hWndParent` `,`  
-  
- `LPCRECT` `lpRect`  
-  
- `);`  
+ `BOOL memberFxn(`    
+ `LPMSG` `lpMsg` `,`   
+ `HWND` `hWndParent` `,`   
+ `LPCRECT` `lpRect`   `);`  
   
  The values of the `lpMsg`, `hWndParent`, and `lpRect` parameters are taken from the corresponding parameters of the **IOleObject::DoVerb** member function.  
   
 ##  <a name="on_stdoleverb"></a>  ON_STDOLEVERB  
  Use this macro to override the default behavior of a standard verb.  
   
-```  
- 
-ON_STDOLEVERB(
-iVerb  ,   memberFxn)  
- 
+```   
+ON_STDOLEVERB(iVerb,   memberFxn)   
 ```  
   
 ### Parameters  

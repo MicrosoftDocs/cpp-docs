@@ -2,7 +2,6 @@
 title: "char_traits Struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -121,7 +120,7 @@ static char_type *assign(char_type* strTo,
   
 ### Example  
   
-```  
+```cpp  
 // char_traits_assign.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -202,7 +201,7 @@ static int compare(const char_type* str1,
   
 ### Example  
   
-```  
+```cpp  
 // char_traits_compare.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -262,7 +261,7 @@ static char_type *copy(char_type* _To,
   
 ### Example  
   
-```  
+```cpp  
 // char_traits_copy.cpp  
 // compile with: /EHsc /W3  
 #include <string>  
@@ -323,7 +322,7 @@ static char_type *_Copy_s(
   
 ### Example  
   
-```  
+```cpp  
 // char_traits__Copy_s.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -369,7 +368,7 @@ static int_type eof();
   
 ### Example  
   
-```  
+```cpp  
 // char_traits_eof.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -419,7 +418,7 @@ static bool eq(const char_type& _Ch1, const char_type& _Ch2);
   
 ### Example  
   
-```  
+```cpp  
 // char_traits_eq.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -476,7 +475,7 @@ static bool eq_int_type(const int_type& _Ch1, const int_type& _Ch2);
   
 ### Example  
   
-```  
+```cpp  
 // char_traits_eq_int_type.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -563,7 +562,7 @@ static const char_type* find(const char_type* str,
   
 ### Example  
   
-```  
+```cpp  
 // char_traits_find.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -632,7 +631,7 @@ static size_t length(const char_type* str);
   
 ### Example  
   
-```  
+```cpp  
 // char_traits_length.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -675,7 +674,7 @@ static bool lt(const char_type& _Ch1, const char_type& _Ch2);
   
 ### Example  
   
-```  
+```cpp  
 // char_traits_lt.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -741,7 +740,7 @@ static char_type *move(char_type* _To,
   
 ### Example  
   
-```  
+```cpp  
 // char_traits_move.cpp  
 // compile with: /EHsc /W3  
 #include <string>  
@@ -817,7 +816,7 @@ static char_type *_Move_s(
   
 ### Example  
   
-```  
+```cpp  
 // char_traits__Move_s.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -879,7 +878,7 @@ static int_type not_eof(const int_type& _Ch);
   
 ### Example  
   
-```  
+```cpp  
 // char_traits_not_eof.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -989,7 +988,7 @@ static char_type to_char_type(const int_type& _Ch);
   
 ### Example  
   
-```  
+```cpp  
 // char_traits_to_char_type.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -1089,7 +1088,7 @@ static int_type to_int_type(const char_type& _Ch);
   
 ### Example  
   
-```  
+```cpp  
 // char_traits_to_int_type.cpp  
 // compile with: /EHsc  
 #include <string>  

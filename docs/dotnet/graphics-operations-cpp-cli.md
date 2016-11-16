@@ -2,7 +2,6 @@
 title: "Graphics Operations (C++-CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -52,9 +51,9 @@ Demonstrates image manipulation using the [!INCLUDE[winsdklong](../dotnet/includ
  [How to: Rotate Images with the .NET Framework](../dotnet/how-to-rotate-images-with-the-dotnet-framework.md)  
   
 ## Related Sections  
- [Getting Started with Graphics Programming](../Topic/Getting%20Started%20with%20Graphics%20Programming.md)  
+ [Getting Started with Graphics Programming](http://msdn.microsoft.com/Library/eb0f6d6f-9e52-4167-9592-ff4b82fb5869)  
   
- [About GDI+ Managed Code](../Topic/About%20GDI+%20Managed%20Code.md)  
+ [About GDI+ Managed Code](http://msdn.microsoft.com/Library/a98a76ab-e455-49c9-891c-0491ac932f2c)  
   
  <xref:System.Drawing?displayProperty=fullName>  
   

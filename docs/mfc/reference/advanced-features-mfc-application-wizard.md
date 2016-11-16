@@ -2,7 +2,6 @@
 title: "Advanced Features, MFC Application Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,7 +49,7 @@ This topic lists options for additional features for your application, such as H
  Specifies that the application can handle objects that are implemented in another application, or exposes the application to Automation clients.  
   
  **ActiveX controls**  
- Supports ActiveX controls (default). If you do not select this option and later want to insert ActiveX controls into your project, you must add a call to [AfxEnableControlContainer](../Topic/AfxEnableControlContainer.md) in your application's [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#cwinapp__initinstance) member function.  
+ Supports ActiveX controls (default). If you do not select this option and later want to insert ActiveX controls into your project, you must add a call to [AfxEnableControlContainer](http://msdn.microsoft.com/Library/7aa0b9d2-5329-4bc3-9d41-856e30fe2c2b) in your application's [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#cwinapp__initinstance) member function.  
   
  **MAPI (Messaging API)**  
  Specifies that the application can create, manipulate, transfer, and store mail messages.  

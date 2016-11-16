@@ -2,7 +2,6 @@
 title: "ATL Macros | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -85,7 +84,7 @@ To find an ATL macro by category, see the following topics.
  [Snap-In Object Macros](../../atl/reference/snap-in-object-macros.md)  
  Provide support for snap-in extensions.  
   
- [String Conversion Macros](../Topic/ATL%20and%20MFC%20String%20Conversion%20Macros.md)  
+ [String Conversion Macros](http://msdn.microsoft.com/Library/8f53659e-0464-4424-97db-6b8453c49863)  
  Provide string conversion features.  
   
  [Window Class Macros](../../atl/reference/window-class-macros.md)  

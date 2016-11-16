@@ -2,7 +2,6 @@
 title: "C++ compiler conformance improvements | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/16/2016"
-ms.prod: "visual-studio-dev15"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -30,16 +29,13 @@ translation.priority.ht:
 ---
   
 # C++ conformance improvements in [!INCLUDE[vs_dev15_md](../misc/includes/vs_dev15_md.md)]
-In this release, we've updated the C++ compiler and standard library with enhanced support for C++11 and C++14 features, as well as preliminary support for certain features expected to be in the C++17 standard. With support for generalized constexpr and NSDMI for aggregates, the compiler is complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards. 
 
 ## New language features  
-
-### Standards version switches
-New compiler switches enable you to opt-in to specific versions of the ISO C++ programming language in a project. The switches available in Visual Studio 2017 are  /std:c++14 and /std:c++latest. For more information, see [Standards version switches in the compiler](https://blogs.msdn.microsoft.com/vcblog/2016/06/07/standards-version-switches-in-the-compiler). Most of the new draft standard features are guarded by the /std:c++latest switch.
+With support for generalized constexpr and NSDMI for aggregates, the compiler is now complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards.
 
 ### C++11:
-**Expression SFINAE (via more libraries)support in more libraries** 
-The Visual C++ compiler is now capable  continues to improve its support for expression SFINAE, which is required for template argument deduction and substitution where decltype and constexpr expressions may appear as template parameters. For more information, see [Expression SFINAE improvements in VS 2015 Update 3](https://blogs.msdn.microsoft.com/vcblog/2016/06/07/expression-sfinae-improvements-in-vs-2015-update-3). 
+**Expression SFINAE support in more libraries** 
+The Visual C++ compiler continues to improve its support for expression SFINAE, which is required for template argument deduction and substitution where decltype and constexpr expressions may appear as template parameters. For more information, see [Expression SFINAE improvements in Visual Studio 2017 RC](https://blogs.msdn.microsoft.com/vcblog/2016/06/07/expression-sfinae-improvements-in-vs-2015-update-3). 
 
 
 ### C++ 14:
@@ -49,7 +45,7 @@ An aggregate is an array or a class with no user-provided constructor, no privat
 **Extended constexpr**
 Expressions declared as constexpr are now allowed to contain certain kinds of declarations, if and switch statements, loop statements, and mutation of objects whose lifetime began within the constexpr expression evaluation. Also, there is no longer a requirement that a constexpr non-static member function be implicitly const. For more information, see [Relaxing constraints on constexpr functions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3652.html). 
 
-### C++17 (available with /std:c++latest):
+### C++17:
 **Terse static_assert**  (available with /std:c++latest)
 In C++17 the message parameter for static_assert is optional. For more information, see [Extending static_assert, v2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3928.pdf). 
 
@@ -62,11 +58,10 @@ Range-based for loops no longer require that begin() and end() return objects of
 
 For the complete list of conformance improvements up through Visual Studio 2015, Update 3, see [Visual C++ What's New 2003 through 2015](https://msdn.microsoft.com/en-us/library/mt723604.aspx).
 
-
-
 ## Bug fixes
 ### Copy-list-initialization
-Visual Studio 2017 correctly raises compiler errors related to object creation using initializer lists that were not caught in Visual Studio 2015 and could lead to crashes or undefined runtime behavior.  In copy-list-initialization, the compiler is required to consider an explicit constructor for overload resolution, but must raise an error if that overload is actually chosen. 
+Visual Studio 2017 correctly raises compiler errors related to object creation using initializer lists that were not caught in Visual Studio 2015 and could lead to crashes or undefined runtime behavior.  As per N4594 13.3.1.7p1, in copy-list-initialization, the compiler is required to consider an explicit constructor for overload resolution, but must raise an error if that overload is actually chosen. 
+
 The following two examples compile in Visual Studio 2015 but not in Visual Studio 2017.
 ```cpp
 struct A
@@ -193,7 +188,7 @@ int main()
                       // as an argument to a variadic function
 }
 ```
-To correct the error, you can callC2672 a member function that returns a trivially copyable type, 
+To correct the error, you can call a member function that returns a trivially copyable type, 
 
 ```cpp
     std::atomic<int> i(0);
@@ -205,6 +200,7 @@ or else perform a static cast to convert the object before passing it:
     printf("%i\n", static_cast<int>(s))
 ```
 For strings built and managed using CStringW, the provided ‘operator LPCWSTR()’ should be used to cast a CStringW object to the C pointer expected by the format string.
+
 ```cpp
 CStringW str1;
 CStringW str2;
@@ -250,13 +246,15 @@ In Visual Studio 2015 and earlier, the compiler did not diagnose missing templat
 ```cpp
 template <class T> class ListNode;
 template <class T> using ListNodeMember = ListNode<T> T::*;
-template <class T, ListNodeMember M> class ListHead; // C2955: 'ListNodeMember': use of alias template requires template argument list
+template <class T, ListNodeMember M> class ListHead; // C2955: 'ListNodeMember': use of alias 
+                                                     // template requires template argument list
 
 // correct:  template <class T, ListNodeMember<T> M> class ListHead;  
 ```
 
 ### Expression-SFINAE
-As part of supporting expression-SFINAE the compiler now parses decltype arguments when the templates are declared rather than instantiated. Consequently, if a non-dependent specialization is found in the decltype argument, it will not be deferred to instantiation-time and will be processed immediately and any resulting errors will be diagnosed at that time.
+To support expression-SFINAE, the compiler now parses decltype arguments when the templates are declared rather than instantiated. Consequently, if a non-dependent specialization is found in the decltype argument, it will not be deferred to instantiation-time and will be processed immediately and any resulting errors will be diagnosed at that time.  
+
 The following example shows such a compiler error that is raised at the point of declaration:
 
 ```cpp
@@ -284,7 +282,8 @@ In Visual Studio 2015 and earlier, the compiler permitted (but ignored) a defaul
 ```cpp
 value struct V
 {
-       int i = 0; // error C3446: 'V::i': a default member initializer is not allowed for a member of a value class
+       int i = 0; // error C3446: 'V::i': a default member initializer  
+                  // is not allowed for a member of a value class
 };
 ```
 

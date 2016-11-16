@@ -2,7 +2,6 @@
 title: "Generic-Text Mappings in Tchar.h | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -10,7 +9,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - ""tchar.h""
+  - "tchar.h"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

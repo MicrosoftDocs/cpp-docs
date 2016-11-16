@@ -2,7 +2,6 @@
 title: "Threading Models and Critical Sections Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,9 +50,9 @@ The following classes define a threading model and critical section:
   
 -   [CComSingleThreadModel](../atl/reference/ccomsinglethreadmodel-class.md) Provides methods for incrementing and decrementing a variable. Does not provide a critical section.  
   
--   [CComObjectThreadModel](../Topic/CComObjectThreadModel.md) Determines the appropriate threading-model class for a single object class.  
+-   [CComObjectThreadModel](../atl/reference/atl-typedefs.md#ccomobjectthreadmodel) Determines the appropriate threading-model class for a single object class.  
   
--   [CComGlobalsThreadModel](../Topic/CComGlobalsThreadModel.md) Determines the appropriate threading-model class for an object that is globally available.  
+-   [CComGlobalsThreadModel](../atl/reference/atl-typedefs.md#ccomglobalsthreadmodel) Determines the appropriate threading-model class for an object that is globally available.  
   
 -   [CComAutoCriticalSection](../atl/reference/ccomautocriticalsection-class.md) Contains methods for obtaining and releasing a critical section. The critical section is automatically initialized.  
   

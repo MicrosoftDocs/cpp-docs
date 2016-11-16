@@ -2,7 +2,6 @@
 title: "STL Containers | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -177,10 +176,10 @@ int main()
 >  You can also use [range-based for loops](../cpp/range-based-for-statement-cpp.md) to iterate over STL collections.  
   
 ## Comparing containers  
- All containers overload the operator== for comparing two containers of the same type that have the same element type. You can use == to compare a vector\<string> to another vector\<string>, but you cannot use it to compare a vector\<string> to a list\<string> or a vector\<string> to a vector\<char*>.  In C++98/03 you can use [std::equal](../Topic/equal.md) or [std::mismatch](../Topic/mismatch.md) to compare dissimilar container types and/or element types. In C++11 you can also use [std::is_permutation](../Topic/is_permutation.md). But in all these cases the functions assume that the containers are the same length. If the second range is shorter than the first, then undefined behavior results. If the second range is longer, results can still be incorrect because the comparison never continues past the end of the first range.  
+ All containers overload the operator== for comparing two containers of the same type that have the same element type. You can use == to compare a vector\<string> to another vector\<string>, but you cannot use it to compare a vector\<string> to a list\<string> or a vector\<string> to a vector\<char*>.  In C++98/03 you can use [std::equal](http://msdn.microsoft.com/Library/56533afd-b696-40a0-8fa9-d366539e49ae) or [std::mismatch](http://msdn.microsoft.com/Library/a9fe78f3-9a86-44dc-9400-0c2ed1083323) to compare dissimilar container types and/or element types. In C++11 you can also use [std::is_permutation](http://msdn.microsoft.com/Library/3384e786-e210-4648-b2bc-3896b5e14f1f). But in all these cases the functions assume that the containers are the same length. If the second range is shorter than the first, then undefined behavior results. If the second range is longer, results can still be incorrect because the comparison never continues past the end of the first range.  
   
 ### Comparing dissimilar containers (C++14)  
- In C++14 and later, you can compare dissimilar containers and/or dissimilar elements types by using one of the [std::equal](../Topic/equal.md), [std::mismatch](../Topic/mismatch.md), or [std::is_permutation](../Topic/is_permutation.md) function overloads that take two complete ranges. These overloads enable you to compare containers with different lengths. These overloads are much less susceptible to user error, and are optimized to return false in constant time when containers of dissimilar lengths are compared. Therefore, we recommend you use these overloads unless (1) you have a very clear reason not to, or (2) you are using a [std::list](../standard-library/list-class.md) container, which does not benefit from the dual-range optimizations.  
+ In C++14 and later, you can compare dissimilar containers and/or dissimilar elements types by using one of the [std::equal](http://msdn.microsoft.com/Library/56533afd-b696-40a0-8fa9-d366539e49ae), [std::mismatch](http://msdn.microsoft.com/Library/a9fe78f3-9a86-44dc-9400-0c2ed1083323), or [std::is_permutation](http://msdn.microsoft.com/Library/3384e786-e210-4648-b2bc-3896b5e14f1f) function overloads that take two complete ranges. These overloads enable you to compare containers with different lengths. These overloads are much less susceptible to user error, and are optimized to return false in constant time when containers of dissimilar lengths are compared. Therefore, we recommend you use these overloads unless (1) you have a very clear reason not to, or (2) you are using a [std::list](../standard-library/list-class.md) container, which does not benefit from the dual-range optimizations.  
   
 ## See Also  
  [Containers](../cpp/containers-modern-cpp.md)   

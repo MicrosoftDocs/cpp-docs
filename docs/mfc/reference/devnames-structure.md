@@ -2,7 +2,6 @@
 title: "DEVNAMES Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `DEVNAMES` structure contains strings that identify the driver, device, and 
 ## Syntax  
   
 ```  
- 
-    typedef struct tagDEVNAMES { /* dvnm */  
+typedef struct tagDEVNAMES { /* dvnm */  
     WORD wDriverOffset;  
     WORD wDeviceOffset;  
     WORD wOutputOffset;  

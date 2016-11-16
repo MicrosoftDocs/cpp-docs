@@ -2,7 +2,6 @@
 title: "&lt;iostream&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -88,7 +87,7 @@ extern ostream cerr;
   
 #### Example  
   
-```  
+```cpp  
 // iostream_cerr.cpp  
 // compile with: /EHsc  
 #include <iostream>  

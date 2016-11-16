@@ -2,7 +2,6 @@
 title: "CAtlArray Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -120,7 +119,7 @@ size_t Add(INARGTYPE element);
  Returns the index of the added element.  
   
 ### Remarks  
- The new element is added to the end of the array. If no element is provided, an empty element is added; that is, the array is increased in size as though a real element has been added. If the operation fails, [AtlThrow](../Topic/AtlThrow.md) is called with the argument E_OUTOFMEMORY.  
+ The new element is added to the end of the array. If no element is provided, an empty element is added; that is, the array is increased in size as though a real element has been added. If the operation fails, [AtlThrow](http://msdn.microsoft.com/Library/2bd111da-8170-488d-914a-c9bf6b6765f7) is called with the argument E_OUTOFMEMORY.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#1](../../atl/codesnippet/CPP/catlarray-class_1.cpp)]  

@@ -2,7 +2,6 @@
 title: "BITMAP Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The **BITMAP** structure defines the height, width, color format, and bit values
 ## Syntax  
   
 ```  
- 
-    typedef struct tagBITMAP {  /* bm */  
+typedef struct tagBITMAP {  /* bm */  
     int bmType;  
     int bmWidth;  
     int bmHeight;  

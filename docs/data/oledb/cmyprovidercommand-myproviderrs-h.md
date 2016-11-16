@@ -2,7 +2,6 @@
 title: "CMyProviderCommand (MyProviderRS.H) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,7 +10,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "cmyprovidercommand"
-  - ""myproviderrs.h""
+  - "myproviderrs.h"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

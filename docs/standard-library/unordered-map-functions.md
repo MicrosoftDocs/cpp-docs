@@ -13,9 +13,9 @@ manager: "ghogen"
 # &lt;unordered_map&gt; functions
 |||  
 |-|-|  
-|[swap Function (unordered_map)](#swap_function)|[swap Function (unordered_multimap)](#swap_function_multimap)|  
+|[swap (unordered_map)](#swap_function)|[swap (unordered_multimap)](#swap_function_multimap)|  
   
-##  <a name="swap_function"></a>  swap Function (unordered_map)  
+##  <a name="swap_function"></a>  swap (unordered_map)  
  Swaps the contents of two containers.  
   
 ```  
@@ -52,7 +52,7 @@ void swap(
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__u_m_swap.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
@@ -106,7 +106,7 @@ int main()
 [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="swap_function_multimap"></a>  swap Function  (unordered_multimap)  
+##  <a name="swap_function_multimap"></a>  swap (unordered_multimap)  
  Swaps the contents of two containers.  
   
 ```  
@@ -143,51 +143,51 @@ void swap(
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__unordered_map__u_mm_swap.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
   
-typedef std::unordered_multimap<char, int> Mymap;   
-int main()   
-    {   
-    Mymap c1;   
-  
-    c1.insert(Mymap::value_type('a', 1));   
-    c1.insert(Mymap::value_type('b', 2));   
-    c1.insert(Mymap::value_type('c', 3));   
-  
-// display contents " [c 3] [b 2] [a 1]"   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-    Mymap c2;   
-  
-    c2.insert(Mymap::value_type('d', 4));   
-    c2.insert(Mymap::value_type('e', 5));   
-    c2.insert(Mymap::value_type('f', 6));   
-  
-    c1.swap(c2);   
-  
-// display contents " [f 6] [e 5] [d 4]"   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-    swap(c1, c2);   
-  
-// display contents " [c 3] [b 2] [a 1]"   
-    for (Mymap::const_iterator it = c1.begin();   
-        it != c1.end(); ++it)   
-        std::cout << " [" << it->first << ", " << it->second << "]";   
-    std::cout << std::endl;   
-  
-    return (0);   
-    }  
+typedef std::unordered_multimap<char, int> Mymap;
+int main()
+{
+    Mymap c1;
+
+    c1.insert(Mymap::value_type('a', 1));
+    c1.insert(Mymap::value_type('b', 2));
+    c1.insert(Mymap::value_type('c', 3));
+
+    // display contents " [c 3] [b 2] [a 1]"   
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    Mymap c2;
+
+    c2.insert(Mymap::value_type('d', 4));
+    c2.insert(Mymap::value_type('e', 5));
+    c2.insert(Mymap::value_type('f', 6));
+
+    c1.swap(c2);
+
+    // display contents " [f 6] [e 5] [d 4]"   
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    swap(c1, c2);
+
+    // display contents " [c 3] [b 2] [a 1]"   
+    for (Mymap::const_iterator it = c1.begin();
+        it != c1.end(); ++it)
+        std::cout << " [" << it->first << ", " << it->second << "]";
+    std::cout << std::endl;
+
+    return (0);
+}
   
 ```  
   

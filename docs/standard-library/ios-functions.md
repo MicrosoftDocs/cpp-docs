@@ -13,7 +13,7 @@ manager: "ghogen"
 # &lt;ios&gt; functions
 ||||  
 |-|-|-|  
-|[&lt;ios&gt; defaultfloat](#ios_defaultfloat)|[boolalpha](#boolalpha)|[dec](#dec)|  
+|[defaultfloat](#ios_defaultfloat)|[boolalpha](#boolalpha)|[dec](#dec)|  
 |[fixed](#fixed)|[hex](#hex)|[internal](#internal)|  
 |[left](#left)|[noboolalpha](#noboolalpha)|[noshowbase](#noshowbase)|  
 |[noshowpoint](#noshowpoint)|[noshowpos](#noshowpos)|[noskipws](#noskipws)|  
@@ -45,7 +45,7 @@ ios_base& boolalpha(ios_base& str);
   
 ### Example  
   
-```  
+```cpp  
 // ios_boolalpha.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -91,7 +91,7 @@ ios_base& dec(ios_base& str);
   
 ### Example  
   
-```  
+```cpp  
 // ios_dec.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -154,7 +154,7 @@ ios_base& fixed(ios_base& str);
   
 ### Example  
   
-```  
+```cpp  
 // ios_fixed.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -220,7 +220,7 @@ ios_base& internal(ios_base& str);
   
 ### Example  
   
-```  
+```cpp  
 // ios_internal.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -260,7 +260,7 @@ ios_base& left(ios_base& str);
   
 ### Example  
   
-```  
+```cpp  
 // ios_left.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -347,7 +347,7 @@ ios_base& noshowpoint(ios_base& str);
   
 ### Example  
   
-```  
+```cpp  
 // ios_noshowpoint.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -412,7 +412,7 @@ ios_base& noskipws(ios_base& str);
   
 ### Example  
   
-```  
+```cpp  
 // ios_noskipws.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -511,7 +511,7 @@ ios_base& right(ios_base& str);
   
 ### Example  
   
-```  
+```cpp  
 // ios_right.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -564,7 +564,7 @@ ios_base& scientific(ios_base& str);
   
 ### Example  
   
-```  
+```cpp  
 // ios_scientific.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -605,7 +605,7 @@ ios_base& showbase(ios_base& str);
   
 ### Example  
   
-```  
+```cpp  
 // ios_showbase.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -677,7 +677,7 @@ ios_base& showpos(ios_base& str);
   
 ### Example  
   
-```  
+```cpp  
 // ios_showpos.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -718,7 +718,7 @@ ios_base& skipws(ios_base& str);
   
 ### Example  
   
-```  
+```cpp  
 #include <iostream>  
 #include <string>  
   
@@ -789,7 +789,7 @@ ios_base& uppercase(ios_base& str);
   
 ### Example  
   
-```  
+```cpp  
 // ios_uppercase.cpp  
 // compile with: /EHsc  
 #include <iostream>  

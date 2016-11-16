@@ -2,7 +2,6 @@
 title: "COMPAREITEMSTRUCT Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `COMPAREITEMSTRUCT` structure supplies the identifiers and application-suppl
 ## Syntax  
   
 ```  
- 
-    typedef struct tagCOMPAREITEMSTRUCT {  
+typedef struct tagCOMPAREITEMSTRUCT {  
     UINT CtlType;  
     UINT CtlID;  
     HWND hwndItem;  

@@ -2,7 +2,6 @@
 title: "Adding an ATL Property Page | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,7 +50,7 @@ To add an Active Template Library (ATL) property page to your project, your proj
   
 3.  In the [Add Class](../../ide/add-class-dialog-box.md) dialog box, in the Templates pane, click **ATL Property Page** and then click **Open** to display the [ATL Property Page Wizard](../../atl/reference/atl-property-page-wizard.md).  
   
- Once you create a property page for a control, you must provide the [PROP_PAGE](../Topic/PROP_PAGE.md) entry in the property map for the control.  
+ Once you create a property page for a control, you must provide the [PROP_PAGE](http://msdn.microsoft.com/Library/2155973e-b96c-4385-bf85-5d6112c969b8) entry in the property map for the control.  
   
 ## See Also  
  [Property Pages](../../atl/atl-com-property-pages.md)   

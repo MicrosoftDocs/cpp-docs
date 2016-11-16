@@ -2,7 +2,6 @@
 title: "COM Map Global Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -69,7 +68,7 @@ HRESULT     AtlInternalQueryInterface(
  One of the standard HRESULT values.  
   
 ### Remarks  
- `AtlInternalQueryInterface` only handles interfaces in the COM map table. If your object is aggregated, `AtlInternalQueryInterface` does not delegate to the outer unknown. You can enter interfaces into the COM map table with the macro [COM_INTERFACE_ENTRY](../Topic/COM_INTERFACE_ENTRY%20Macros.md) or one of its variants.  
+ `AtlInternalQueryInterface` only handles interfaces in the COM map table. If your object is aggregated, `AtlInternalQueryInterface` does not delegate to the outer unknown. You can enter interfaces into the COM map table with the macro [COM_INTERFACE_ENTRY](http://msdn.microsoft.com/Library/19dcb768-2e1f-4b8d-a618-453a01a4bd00) or one of its variants.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#94](../../atl/codesnippet/CPP/com-map-global-functions_1.cpp)]  

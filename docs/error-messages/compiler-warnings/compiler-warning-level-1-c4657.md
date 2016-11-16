@@ -2,7 +2,6 @@
 title: "Compiler Warning (level 1) C4657 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,7 +40,7 @@ expression involves a data type that is new since the last build
   
  You added or changed a data type, making it new to your source code since the last successful build. Edit and Continue does not support changes to existing data types.  
   
- This warning will always be followed by [Fatal Error C1092](../../error-messages/compiler-errors-1/fatal-error-c1092.md). For further information, see the [Supported Code Changes](/visual-studio/debugger/supported-code-changes-cpp).  
+ This warning will always be followed by [Fatal Error C1092](../../error-messages/compiler-errors-1/fatal-error-c1092.md). For further information, see the [Supported Code Changes](/visualstudio/debugger/supported-code-changes-cpp).  
   
 ### To remove this warning without ending the current debug session  
   

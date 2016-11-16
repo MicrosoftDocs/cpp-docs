@@ -2,7 +2,6 @@
 title: "RGNDATA Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `RGNDATA` structure contains a header and an array of rectangles that compos
 ## Syntax  
   
 ```  
- 
-    typedef struct _RGNDATA { /* rgnd */  
+typedef struct _RGNDATA { /* rgnd */  
     RGNDATAHEADER rdh;  
     char Buffer[1];  
 } RGNDATA;  

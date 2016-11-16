@@ -2,7 +2,6 @@
 title: "basic_istream Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,36 +38,44 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # basic_istream Class
-Describes an object that controls extraction of elements and encoded objects from a stream buffer with elements of type `Elem`, also known as [char_type](../standard-library/basic-ios-class.md#basic_ios__char_type), whose character traits are determined by the class *Tr*, also known as [traits_type](../standard-library/basic-ios-class.md#basic_ios__traits_type).  
+Describes an object that controls extraction of elements and encoded objects from a stream buffer with elements of type `Elem`, also known as [char_type](../standard-library/basic-ios-class.md#basic_ios_Char_type), whose character traits are determined by the class *Tr*, also known as [traits_type](../standard-library/basic-ios-class.md#basic_ios__traits_type).  
   
 ## Syntax  
   
 ```  
 template <class Elem, class Tr = char_traits<Elem>>  
-class basic_istream       : virtual public basic_ios<Elem, Tr>  
+class basic_istream : virtual public basic_ios<Elem, Tr>  
 ```  
   
 ## Remarks  
  Most of the member functions that overload [operator>>](#basic_istream__operator_gt__gt_) are formatted input functions. They follow the pattern:  
   
-```  
-iostate state = goodbit;  
+```cpp  
+iostate state = goodbit;
 const sentry ok(*this);
 
-if (ok)  
- {try  
- {<extract elements and convert  
-    accumulate flags in state  
-    store a successful conversion> }  
-    catch (...)  
- {try  
- {setstate(badbit);
+if (ok)
+{
+    try
+    {
+        /*extract elements and convert
+            accumulate flags in state.
+            store a successful conversion*/
+    }
+    catch (...)
+    {
+        try
+        {
+            setstate(badbit);
 
-}  
-    catch (...)  
- {}  
-    if ((exceptions()& badbit) != 0)  
-    throw; }}  
+        }
+        catch (...)
+        {
+        }
+        if ((exceptions()& badbit) != 0)
+            throw;
+    }
+}
 setstate(state);
 
 return (*this);
@@ -76,25 +83,33 @@ return (*this);
   
  Many other member functions are unformatted input functions. They follow the pattern:  
   
-```  
-iostate state = goodbit;  
+```cpp  
+iostate state = goodbit;
 count = 0;    // the value returned by gcount  
 const sentry ok(*this, true);
 
-if (ok)  
- {try  
- {<extract elements and deliver  
-    count extracted elements in count  
-    accumulate flags in state> }  
-    catch (...)  
- {try  
- {setstate(badbit);
+if (ok)
+{
+    try
+    {
+        /* extract elements and deliver
+            count extracted elements in count
+            accumulate flags in state */
+    }
+    catch (...)
+    {
+        try
+        {
+            setstate(badbit);
 
-}  
-    catch (...)  
- {}  
-    if ((exceptions()& badbit) != 0)  
-    throw; }}  
+        }
+        catch (...)
+        {
+        }
+        if ((exceptions()& badbit) != 0)
+            throw;
+    }
+}
 setstate(state);
 ```  
   
@@ -190,7 +205,7 @@ streamsize gcount() const;
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_gcount.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -229,37 +244,25 @@ a
 ```  
 int_type get();
 
-basic_istream<Elem, Tr>& get(
-    Elem& _Ch);
+basic_istream<Elem, Tr>& get(Elem& Ch);
+basic_istream<Elem, Tr>& get(Elem* str, streamsize count);
+basic_istream<Elem, Tr>& get(Elem* str, streamsize count, Elem Delim);
 
-basic_istream<Elem, Tr>& get(
-    Elem* str,  
-    streamsize count);
-
-basic_istream<Elem, Tr>& get(
-    Elem* str,  
-    streamsize count,  
-    Elem _Delim);
-
-basic_istream<Elem, Tr>& get(
-    basic_streambuf<Elem, Tr>& strbuf);
-
-basic_istream<Elem, Tr>& get(
-    basic_streambuf<Elem, Tr>& strbuf,  
-    Elem _Delim);
+basic_istream<Elem, Tr>& get(basic_streambuf<Elem, Tr>& strbuf);
+basic_istream<Elem, Tr>& get(basic_streambuf<Elem, Tr>& strbuf, Elem Delim);
 ```  
   
 ### Parameters  
  ` count`  
  The number of characters to read from `strbuf`.  
   
- `_Delim`  
+ `Delim`  
  The character that should terminate the read if it is encountered before ` count`.  
   
  ` str`  
  A string in which to write.  
   
- `_Ch`  
+ `Ch`  
  A character to get.  
   
  ` strbuf`  
@@ -271,7 +274,7 @@ basic_istream<Elem, Tr>& get(
 ### Remarks  
  The first of these unformatted input functions extracts an element, if possible, as if by returning `rdbuf`-> `sbumpc`. Otherwise, it returns **traits_type::**[eof](../standard-library/char-traits-struct.md#char_traits__eof). If the function extracts no element, it calls [setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)( **failbit**).  
   
- The second function extracts the [int_type](../standard-library/basic-ios-class.md#basic_ios__int_type) element `meta` the same way. If `meta` compares equal to **traits_type::eof**, the function calls `setstate`( **failbit**). Otherwise, it stores **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#char_traits__to_char_type)( `meta`) in `_Ch`. The function returns **\*this**.  
+ The second function extracts the [int_type](../standard-library/basic-ios-class.md#basic_ios__int_type) element `meta` the same way. If `meta` compares equal to **traits_type::eof**, the function calls `setstate`( **failbit**). Otherwise, it stores **traits_type::**[toChar_type](../standard-library/char-traits-struct.md#char_traits__toChar_type)( `meta`) in `Ch`. The function returns **\*this**.  
   
  The third function returns **get**(_ *Str*, ` count`, `widen`('\ **n**')).  
   
@@ -279,7 +282,7 @@ basic_istream<Elem, Tr>& get(
   
 -   At end of file.  
   
--   After the function extracts an element that compares equal to `_Delim`, in which case the element is put back to the controlled sequence.  
+-   After the function extracts an element that compares equal to `Delim`, in which case the element is put back to the controlled sequence.  
   
 -   After the function extracts ` count` - 1 elements.  
   
@@ -291,7 +294,7 @@ basic_istream<Elem, Tr>& get(
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_get.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -326,14 +329,14 @@ basic_istream<Elem, Tr>& getline(
 basic_istream<Elem, Tr>& getline(
     char_type* str,   
     streamsize count,   
-    char_type _Delim);
+    char_type Delim);
 ```  
   
 ### Parameters  
  ` count`  
  The number of characters to read from **strbuf**.  
   
- `_Delim`  
+ `Delim`  
  The character that should terminate the read if it is encountered before ` count`.  
   
  ` str`  
@@ -349,7 +352,7 @@ basic_istream<Elem, Tr>& getline(
   
 -   At end of file.  
   
--   After the function extracts an element that compares equal to `_Delim`, in which case the element is neither put back nor appended to the controlled sequence.  
+-   After the function extracts an element that compares equal to `Delim`, in which case the element is neither put back nor appended to the controlled sequence.  
   
 -   After the function extracts ` count` - 1 elements.  
   
@@ -357,7 +360,7 @@ basic_istream<Elem, Tr>& getline(
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_getline.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -383,25 +386,25 @@ int main( )
 ```  
 basic_istream<Elem, Tr>& ignore(
     streamsize count = 1,  
-    int_type _Delim = traits_type::eof());
+    int_type Delim = traits_type::eof());
 ```  
   
 ### Parameters  
  ` count`  
  The number of elements to skip from the current read position.  
   
- `_Delim`  
- The element that, if encountered before count, causes **ignore** to return and allowing all elements after `_Delim` to be read.  
+ `Delim`  
+ The element that, if encountered before count, causes **ignore** to return and allowing all elements after `Delim` to be read.  
   
 ### Return Value  
  The stream ( **\*this**).  
   
 ### Remarks  
- The unformatted input function extracts up to ` count` elements and discards them. If ` count` equals **numeric_limits\<int>::max**, however, it is taken as arbitrarily large. Extraction stops early on end of file or on an element `_Ch` such that **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#char_traits__to_int_type)( `_Ch`) compares equal to _ *Delim* (which is also extracted). The function returns **\*this**.  
+ The unformatted input function extracts up to ` count` elements and discards them. If ` count` equals **numeric_limits\<int>::max**, however, it is taken as arbitrarily large. Extraction stops early on end of file or on an element `Ch` such that **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#char_traits__to_int_type)( `Ch`) compares equal to _ *Delim* (which is also extracted). The function returns **\*this**.  
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_ignore.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -427,64 +430,32 @@ abcdef
 abcdefdef  
 ```  
   
-##  <a name="basic_istream__operator_gt__gt_"></a>  basic_istream::operator&gt;&gt;  
- Calls a function on the input stream or reads formatted data from the input stream.  
+##  <a name="basic_istream__operator_gt__gt_"></a>  basic_istream::operator&gt;&gt;
   
+Calls a function on the input stream or reads formatted data from the input stream.  
+    
 ```  
-basic_istream& operator>>(
-    basic_istream& (* _Pfn)(basic_istream&));
-
-basic_istream& operator>>(
-    ios_base& (* _Pfn)(ios_base&));
-
-basic_istream& operator>>(
-    basic_ios<Elem, Tr>& (* _Pfn)(basic_ios<Elem, Tr>&))  
-;  
-basic_istream& operator>>(
-    basic_streambuf<Elem, Tr>* strbuf);
-
-basic_istream& operator>>(
-    bool& val);
-
-basic_istream& operator>>(
-    short& val);
-
-basic_istream& operator>>(
-    unsigned short& val);
-
-basic_istream& operator>>(
-    int& val);
-
-basic_istream& operator>>(
-    unsigned int& val);
-
-basic_istream& operator>>(
-    long& val);
-
-basic_istream& operator>>(
-    unsigned long& val);
-
-basic_istream& operator>>(
-    long long& val);
-
-basic_istream& operator>>(
-    unsigned long long& val);
-
-basic_istream& operator>>(
-    void *& val);
-
-basic_istream& operator>>(
-    float& val);
-
-basic_istream& operator>>(
-    double& val);
-
-basic_istream& operator>>(
-    long double& val);
+basic_istream& operator>>(basic_istream& (* Pfn)(basic_istream&));
+basic_istream& operator>>(ios_base& (* Pfn)(ios_base&));
+basic_istream& operator>>(basic_ios<Elem, Tr>& (* Pfn)(basic_ios<Elem, Tr>&));  
+basic_istream& operator>>(basic_streambuf<Elem, Tr>* strbuf);
+basic_istream& operator>>(bool& val);
+basic_istream& operator>>(short& val);
+basic_istream& operator>>(unsigned short& val);
+basic_istream& operator>>(int& val);
+basic_istream& operator>>(unsigned int& val);
+basic_istream& operator>>(long& val);
+basic_istream& operator>>(unsigned long& val);
+basic_istream& operator>>(long long& val);
+basic_istream& operator>>(unsigned long long& val);
+basic_istream& operator>>(void *& val);
+basic_istream& operator>>(float& val);
+basic_istream& operator>>(double& val);
+basic_istream& operator>>(long double& val);
 ```  
   
 ### Parameters  
- `_Pfn`  
+ `Pfn`  
  A function pointer.  
   
  ` strbuf`  
@@ -522,23 +493,13 @@ basic_istream& operator>>(bool& val);
   
 ```  
 basic_istream& operator>>(short& val);
-
 basic_istream& operator>>(unsigned short& val);
-
 basic_istream& operator>>(int& val);
-
 basic_istream& operator>>(unsigned int& val);
-
 basic_istream& operator>>(long& val);
-
-basic_istream& operator>>(unsigned long& val);
-
- 
+basic_istream& operator>>(unsigned long& val); 
 basic_istream& operator>>(long long& val);
-
-basic_istream& operator>>(unsigned long long& val);
-
- 
+basic_istream& operator>>(unsigned long long& val); 
 basic_istream& operator>>(void *& val);
 ```  
   
@@ -550,9 +511,7 @@ basic_istream& operator>>(void *& val);
   
 ```  
 basic_istream& operator>>(float& val);
-
 basic_istream& operator>>(double& val);
-
 basic_istream& operator>>(long double& val);
 ```  
   
@@ -562,7 +521,7 @@ basic_istream& operator>>(long double& val);
   
 ### Example  
   
-```  
+```cpp  
 // istream_basic_istream_op_is.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -629,7 +588,7 @@ int_type peek();
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_peek.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -664,22 +623,22 @@ a abcde
   
 ```  
 basic_istream<Elem, Tr>& putback(
-    char_type _Ch);
+    char_type Ch);
 ```  
   
 ### Parameters  
- `_Ch`  
+ `Ch`  
  A character to put back into the stream.  
   
 ### Return Value  
  The stream ( **\*this**).  
   
 ### Remarks  
- The [unformatted input function](../standard-library/basic-istream-class.md) puts back `_Ch`, if possible, as if by calling [rdbuf](../standard-library/basic-ios-class.md#basic_ios__rdbuf)`->`[sputbackc](../standard-library/basic-streambuf-class.md#basic_streambuf__sputbackc). If rdbuf is a null pointer, or if the call to `sputbackc` returns **traits_type::**[eof](../standard-library/char-traits-struct.md#char_traits__eof), the function calls [setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)( **badbit**). In any case, it returns **\*this**.  
+ The [unformatted input function](../standard-library/basic-istream-class.md) puts back `Ch`, if possible, as if by calling [rdbuf](../standard-library/basic-ios-class.md#basic_ios__rdbuf)`->`[sputbackc](../standard-library/basic-streambuf-class.md#basic_streambuf__sputbackc). If rdbuf is a null pointer, or if the call to `sputbackc` returns **traits_type::**[eof](../standard-library/char-traits-struct.md#char_traits__eof), the function calls [setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)( **badbit**). In any case, it returns **\*this**.  
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_putback.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -728,7 +687,7 @@ basic_istream<Elem, Tr>& read(
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_read.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -790,7 +749,7 @@ streamsize readsome(
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_readsome.cpp  
 // compile with: /EHsc /W3  
 #include <iostream>  
@@ -821,12 +780,9 @@ int main( )
  Moves the read position in a stream.  
   
 ```  
-basic_istream<Elem, Tr>& seekg(
-    pos_type pos);
+basic_istream<Elem, Tr>& seekg(pos_type pos);
 
-basic_istream<Elem, Tr>& seekg(
-    off_type off,  
-    ios_base::seekdir way);
+basic_istream<Elem, Tr>& seekg(off_type off, ios_base::seekdir way);
 ```  
   
 ### Parameters  
@@ -854,7 +810,7 @@ basic_istream<Elem, Tr>& seekg(
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_seekg.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -932,7 +888,7 @@ pos_type tellg();
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_tellg.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -973,7 +929,7 @@ basic_istream<Elem, Tr>& unget();
   
 ### Example  
   
-```  
+```cpp  
 // basic_istream_unget.cpp  
 // compile with: /EHsc  
 #include <iostream>  

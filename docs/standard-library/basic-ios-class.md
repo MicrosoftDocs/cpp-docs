@@ -2,7 +2,6 @@
 title: "basic_ios Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,9 +44,7 @@ The template class describes the storage and member functions common to both inp
   
 ```  
  
-template <class   
-Elem  , class   
-Traits>  
+template <class Elem, class Traits>  
 class basic_ios : public ios_base  
 ```  
   
@@ -138,7 +135,7 @@ bool bad() const;
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_bad.cpp  
 // compile with: /EHsc  
@@ -146,13 +143,13 @@ bool bad() const;
   
 int main( void )  
 {  
-using namespace std;  
-bool b = cout.bad( );  
-cout << boolalpha;  
-cout << b << endl;  
-  
-b = cout.good( );  
-cout << b << endl;  
+  using namespace std;  
+  bool b = cout.bad( );  
+  cout << boolalpha;  
+  cout << b << endl;  
+    
+  b = cout.good( );  
+  cout << b << endl;  
 }  
   
 ```  
@@ -160,24 +157,13 @@ cout << b << endl;
 ##  <a name="basic_ios__basic_ios"></a>  basic_ios::basic_ios  
  Constructs the basic_ios class.  
   
-```  
- 
-explicit basic  
-_  
-ios(
-    basic 
-_  
-streambuf<
-_  
-Elem,  
-_  
-Traits>* _Sb);
-
+```   
+explicit basic_ios(basic_streambuf<Elem,  Traits>* sb);
 basic_ios();
 ```  
   
 ### Parameters  
- `_Sb`  
+ `sb`  
  Standard buffer to store input or output elements.  
   
 ### Remarks  
@@ -186,21 +172,15 @@ basic_ios();
 ##  <a name="basic_ios__char_type"></a>  basic_ios::char_type  
  A synonym for the template parameter **Elem**.  
   
-```  
- 
-typedef Elem char  
-_  
-type;  
+```   
+typedef Elem char_type;  
 ```  
   
 ##  <a name="basic_ios__clear"></a>  basic_ios::clear  
  Clears all error flags.  
   
-```  
- 
-void clear(iostate state = goodbit, bool reraise = false);
-
- 
+```   
+void clear(iostate state = goodbit, bool reraise = false); 
 void clear(io_state state);
 ```  
   
@@ -226,8 +206,7 @@ void clear(io_state state);
 ##  <a name="basic_ios__copyfmt"></a>  basic_ios::copyfmt  
  Copies flags from one stream to another.  
   
-```  
- 
+```   
 basic_ios<Elem, Traits>& copyfmt(
 const basic_ios<Elem, Traits>& right);
 ```  
@@ -244,8 +223,7 @@ const basic_ios<Elem, Traits>& right);
   
 ### Example  
   
-```  
-  
+```cpp    
 // basic_ios_copyfmt.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -253,14 +231,14 @@ const basic_ios<Elem, Traits>& right);
   
 int main( )  
 {  
-using namespace std;  
-ofstream x( "test.txt" );  
-int i = 10;  
-  
-x << showpos;  
-cout << i << endl;  
-cout.copyfmt( x );  
-cout << i << endl;  
+  using namespace std;  
+  ofstream x( "test.txt" );  
+  int i = 10;  
+    
+  x << showpos;  
+  cout << i << endl;  
+  cout.copyfmt( x );  
+  cout << i << endl;  
 }  
   
 ```  
@@ -280,8 +258,7 @@ bool eof() const;
   
 ### Example  
   
-```  
-  
+```cpp    
 // basic_ios_eof.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -291,13 +268,13 @@ using namespace std;
   
 int main( int argc, char* argv[] )  
 {  
-fstream   fs;  
-int n = 1;  
-fs.open( "basic_ios_eof.txt" );   // an empty file  
-cout << boolalpha  
-cout << fs.eof() << endl;  
-fs >> n;   // Read the char in the file  
-cout << fs.eof() << endl;  
+  fstream   fs;  
+  int n = 1;  
+  fs.open( "basic_ios_eof.txt" );   // an empty file  
+  cout << boolalpha  
+  cout << fs.eof() << endl;  
+  fs >> n;   // Read the char in the file  
+  cout << fs.eof() << endl;  
 }  
   
 ```  
@@ -305,18 +282,14 @@ cout << fs.eof() << endl;
 ##  <a name="basic_ios__exceptions"></a>  basic_ios::exceptions  
  Indicates which exceptions will be thrown by the stream.  
   
-```  
- 
-iostate exceptions() const;
-
- 
-void exceptions(iostate _Newexcept);
-
-void exceptions(io_state _Newexcept);
+```   
+iostate exceptions() const; 
+void exceptions(iostate Newexcept);
+void exceptions(io_state Newexcept);
 ```  
   
 ### Parameters  
- *_Newexcept*  
+ *Newexcept*  
  The flags that you want to throw an exception.  
   
 ### Return Value  
@@ -327,7 +300,7 @@ void exceptions(io_state _Newexcept);
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_exceptions.cpp  
 // compile with: /EHsc /GR  
@@ -335,22 +308,22 @@ void exceptions(io_state _Newexcept);
   
 int main( )  
 {  
-using namespace std;  
-  
-cout << cout.exceptions( ) << endl;  
-cout.exceptions( ios::eofbit );  
-cout << cout.exceptions( ) << endl;  
-try  
-{  
-cout.clear( ios::eofbit );   // Force eofbit on  
-}  
-catch ( exception &e )  
-{  
-cout.clear( );  
-cout << "Caught the exception." << endl;  
-cout << "Exception class: " << typeid(e).name()  << endl;  
-cout << "Exception description: " << e.what() << endl;  
-}  
+  using namespace std;  
+    
+  cout << cout.exceptions( ) << endl;  
+  cout.exceptions( ios::eofbit );  
+  cout << cout.exceptions( ) << endl;  
+  try  
+  {  
+    cout.clear( ios::eofbit );   // Force eofbit on  
+  }  
+  catch ( exception &e )  
+  {  
+    cout.clear( );  
+    cout << "Caught the exception." << endl;  
+    cout << "Exception class: " << typeid(e).name()  << endl;  
+    cout << "Exception description: " << e.what() << endl;  
+  }  
 }  
   
 ```  
@@ -378,7 +351,7 @@ bool fail() const;
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_fail.cpp  
 // compile with: /EHsc  
@@ -386,10 +359,10 @@ bool fail() const;
   
 int main( void )  
 {  
-using namespace std;  
-bool b = cout.fail( );  
-cout << boolalpha;  
-cout << b << endl;  
+  using namespace std;  
+  bool b = cout.fail( );  
+  cout << boolalpha;  
+  cout << b << endl;  
 }  
   
 ```  
@@ -397,33 +370,24 @@ cout << b << endl;
 ##  <a name="basic_ios__fill"></a>  basic_ios::fill  
  Specifies or returns the character that will be used when the text is not as wide as the stream.  
   
-```  
- 
-char  
-_  
-type fill() const;
-
- 
-char  
-_  
-type fill(char 
-_  
-type _Char);
+```   
+char_type fill() const; 
+char_type fill(char_type Char);
 ```  
   
 ### Parameters  
- `_Char`  
+ `Char`  
  The character you want as the fill character.  
   
 ### Return Value  
  The current fill character.  
   
 ### Remarks  
- The first member function returns the stored fill character. The second member function stores `_Char` in the fill character and returns its previous stored value.  
+ The first member function returns the stored fill character. The second member function stores `Char` in the fill character and returns its previous stored value.  
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_fill.cpp  
 // compile with: /EHsc  
@@ -432,14 +396,12 @@ type _Char);
   
 int main( )  
 {  
-using namespace std;  
-  
-cout << setw( 5 ) << 'a' << endl;  
-  
-cout.fill( 'x' );  
-cout << setw( 5 ) << 'a' << endl;  
-  
-cout << cout.fill( ) << endl;  
+  using namespace std;  
+    
+  cout << setw( 5 ) << 'a' << endl;     
+  cout.fill( 'x' );  
+  cout << setw( 5 ) << 'a' << endl;      
+  cout << cout.fill( ) << endl;  
 }  
   
 ```  
@@ -469,13 +431,12 @@ bool good() const;
 ##  <a name="basic_ios__imbue"></a>  basic_ios::imbue  
  Changes the locale.  
   
-```  
- 
-locale imbue(const locale& _Loc);
+```   
+locale imbue(const locale& Loc);
 ```  
   
 ### Parameters  
- `_Loc`  
+ `Loc`  
  A locale string.  
   
 ### Return Value  
@@ -490,7 +451,7 @@ locale imbue(const locale& _Loc);
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_imbue.cpp  
 // compile with: /EHsc  
@@ -499,11 +460,11 @@ locale imbue(const locale& _Loc);
   
 int main( )  
 {  
-using namespace std;  
-  
-cout.imbue( locale( "french_france" ) );  
-double x = 1234567.123456;  
-cout << x << endl;  
+  using namespace std;  
+    
+  cout.imbue( locale( "french_france" ) );  
+  double x = 1234567.123456;  
+  cout << x << endl;  
 }  
   
 ```  
@@ -513,9 +474,7 @@ cout << x << endl;
   
 ```  
  
-void init(
-basic_streambuf<Elem,Traits>* _Sb,  
-bool _Isstd = false);
+void init(basic_streambuf<Elem,Traits>* _Sb, bool _Isstd = false);
 ```  
   
 ### Parameters  
@@ -558,13 +517,12 @@ typedef typename traits_type::int_type int_type;
 ##  <a name="basic_ios__move"></a>  basic_ios::move  
  Moves all values, except the pointer to the stream buffer, from the parameter to the current object.  
   
-```  
- 
+```   
 void move(basic_ios&& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The `ios_base` object to move values from.  
   
 ### Remarks  
@@ -575,27 +533,25 @@ void move(basic_ios&& right);
   
 ```  
  
-char narrow(
-char_type _Char,  
-char _Default = '\0') const;
+char narrow(char_type Char, char Default = '\0') const;
 ```  
   
 ### Parameters  
- `_Char`  
+ `Char`  
  The `char` to convert.  
   
- `_Default`  
+ `Default`  
  The `char` that you want returned if no equivalent is found.  
   
 ### Return Value  
  The equivalent `char` to a given `char_type`.  
   
 ### Remarks  
- The member function returns [use_facet](../standard-library/basic-filebuf-class.md#basic_filebuf__open)**<**Â **ctype**\< **E**> >( [getloc](../standard-library/ios-base-class.md#ios_base__getloc)( ) ). `narrow`( `_Char`, `_Default`).  
+ The member function returns [use_facet](../standard-library/basic-filebuf-class.md#basic_filebuf__open)**<**Â **ctype**\< **E**> >( [getloc](../standard-library/ios-base-class.md#ios_base__getloc)( ) ). `narrow`( `Char`, `Default`).  
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_narrow.cpp  
 // compile with: /EHsc  
@@ -605,13 +561,13 @@ char _Default = '\0') const;
   
 int main( )  
 {  
-using namespace std;  
-wchar_t *x = L"test";  
-char y[10];  
-cout << x[0] << endl;  
-wcout << x << endl;  
-y[0] = wcout.narrow( x[0] );  
-cout << y[0] << endl;  
+  using namespace std;  
+  wchar_t *x = L"test";  
+  char y[10];  
+  cout << x[0] << endl;  
+  wcout << x << endl;  
+  y[0] = wcout.narrow( x[0] );  
+  cout << y[0] << endl;  
 }  
   
 ```  
@@ -635,7 +591,7 @@ typedef typename traits_type::off_type off_type;
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_opgood.cpp  
 // compile with: /EHsc  
@@ -643,8 +599,8 @@ typedef typename traits_type::off_type off_type;
   
 int main( )  
 {  
-using namespace std;  
-cout << (bool)(&cout != 0) << endl;   // Stream is still good  
+  using namespace std;  
+  cout << (bool)(&cout != 0) << endl;   // Stream is still good  
 }  
   
 ```  
@@ -656,8 +612,7 @@ cout << (bool)(&cout != 0) << endl;   // Stream is still good
 ##  <a name="basic_ios__operator_not"></a>  basic_ios::operator!  
  Indicates if the stream is not bad.  
   
-```  
- 
+```   
 bool operator!() const;
 ```  
   
@@ -666,7 +621,7 @@ bool operator!() const;
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_opbad.cpp  
 // compile with: /EHsc  
@@ -674,8 +629,8 @@ bool operator!() const;
   
 int main( )  
 {  
-using namespace std;  
-cout << !cout << endl;   // Stream is not bad  
+  using namespace std;  
+  cout << !cout << endl;   // Stream is not bad  
 }  
   
 ```  
@@ -704,11 +659,8 @@ typedef typename traits_type::pos_type pos_type;
 ##  <a name="basic_ios__rdbuf"></a>  basic_ios::rdbuf  
  Routes stream to specified buffer.  
   
-```  
- 
-basic_streambuf<Elem, Traits> *rdbuf() const;
-
- 
+```   
+basic_streambuf<Elem, Traits> *rdbuf() const; 
 basic_streambuf<Elem, Traits> *rdbuf(
 basic_streambuf<Elem, Traits>* _Sb);
 ```  
@@ -724,7 +676,7 @@ basic_streambuf<Elem, Traits>* _Sb);
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_rdbuf.cpp  
 // compile with: /EHsc  
@@ -734,12 +686,12 @@ basic_streambuf<Elem, Traits>* _Sb);
   
 int main( )  
 {  
-using namespace std;  
-ofstream file( "rdbuf.txt" );  
-streambuf *x = cout.rdbuf( file.rdbuf( ) );  
-cout << "test" << endl;   // Goes to file  
-cout.rdbuf(x);  
-cout << "test2" << endl;  
+  using namespace std;  
+  ofstream file( "rdbuf.txt" );  
+  streambuf *x = cout.rdbuf( file.rdbuf( ) );  
+  cout << "test" << endl;   // Goes to file  
+  cout.rdbuf(x);  
+  cout << "test2" << endl;  
 }  
   
 ```  
@@ -761,7 +713,7 @@ iostate rdstate() const;
   
 ### Example  
   
-```  
+```cpp  
   
 // basic_ios_rdstate.cpp  
 // compile with: /EHsc  
@@ -771,19 +723,19 @@ using namespace std;
   
 void TestFlags( ios& x )  
 {  
-cout << ( x.rdstate( ) & ios::badbit ) << endl;  
-cout << ( x.rdstate( ) & ios::failbit ) << endl;  
-cout << ( x.rdstate( ) & ios::eofbit ) << endl;  
-cout << endl;  
+  cout << ( x.rdstate( ) & ios::badbit ) << endl;  
+  cout << ( x.rdstate( ) & ios::failbit ) << endl;  
+  cout << ( x.rdstate( ) & ios::eofbit ) << endl;  
+  cout << endl;  
 }  
   
 int main( )  
 {  
-fstream x( "c:\test.txt", ios::out );  
-x.clear( );  
-TestFlags( x );  
-x.clear( ios::badbit | ios::failbit | ios::eofbit );  
-TestFlags( x );  
+  fstream x( "c:\test.txt", ios::out );  
+  x.clear( );  
+  TestFlags( x );  
+  x.clear( ios::badbit | ios::failbit | ios::eofbit );  
+  TestFlags( x );  
 }  
   
 ```  
@@ -802,8 +754,7 @@ TestFlags( x );
 ##  <a name="basic_ios__setstate"></a>  basic_ios::setstate  
  Sets additional flags.  
   
-```  
- 
+```   
 void setstate(iostate _State);
 ```  
   
@@ -816,8 +767,7 @@ void setstate(iostate _State);
   
 ### Example  
   
-```  
-  
+```cpp    
 // basic_ios_setstate.cpp  
 // compile with: /EHsc  
 #include <ios>  
@@ -826,19 +776,19 @@ using namespace std;
   
 int main( )  
 {  
-bool b = cout.bad( );  
-cout << b << endl;   // Good  
-cout.clear( ios::badbit );  
-b = cout.bad( );  
-// cout.clear( );  
-cout << b << endl;   // Is bad, good  
-b = cout.fail( );  
-cout << b << endl;   // Not failed  
-cout.setstate( ios::failbit );  
-b = cout.fail( );  
-cout.clear( );  
-cout << b << endl;   // Is failed, good  
-return 0;  
+  bool b = cout.bad( );  
+  cout << b << endl;   // Good  
+  cout.clear( ios::badbit );  
+  b = cout.bad( );  
+  // cout.clear( );  
+  cout << b << endl;   // Is bad, good  
+  b = cout.fail( );  
+  cout << b << endl;   // Not failed  
+  cout.setstate( ios::failbit );  
+  b = cout.fail( );  
+  cout.clear( );  
+  cout << b << endl;   // Is failed, good  
+  return 0;  
 }  
   
 ```  
@@ -852,8 +802,7 @@ return 0;
 ##  <a name="basic_ios__set_rdbuf"></a>  basic_ios::set_rdbuf  
  Assigns a stream buffer to be the read buffer for this stream object.  
   
-```  
- 
+```   
 void set_rdbuf(
 basic_streambuf<Elem, Tr>* strbuf)  
 ```  
@@ -870,9 +819,7 @@ basic_streambuf<Elem, Tr>* strbuf)
   
 ```  
  
-basic_ostream<Elem, Traits> *tie() const;
-
- 
+basic_ostream<Elem, Traits> *tie() const; 
 basic_ostream<Elem, Traits> *tie(
 basic_ostream<Elem, Traits>* str);
 ```  
@@ -897,11 +844,11 @@ basic_ostream<Elem, Traits>* str);
   
 int main( )  
 {  
-using namespace std;  
-int i;  
-cin.tie( &cout );  
-cout << "Enter a number:";  
-cin >> i;  
+  using namespace std;  
+  int i;  
+  cin.tie( &cout );  
+  cout << "Enter a number:";  
+  cin >> i;  
 }  
   
 ```  
@@ -909,35 +856,30 @@ cin >> i;
 ##  <a name="basic_ios__traits_type"></a>  basic_ios::traits_type  
  A synonym for the template parameter **Traits**.  
   
-```  
- 
-typedef Traits traits  
-_  
-type;  
+```   
+typedef Traits traits_type;  
 ```  
   
 ##  <a name="basic_ios__widen"></a>  basic_ios::widen  
  Finds the equivalent `char_type` to a given `char`.  
   
-```  
- 
-char_type widen(char _Char) const;
+```   
+char_type widen(char Char) const;
 ```  
   
 ### Parameters  
- `_Char`  
+ `Char`  
  The character to convert.  
   
 ### Return Value  
  Finds the equivalent `char_type` to a given `char`.  
   
 ### Remarks  
- The member function returns [use_facet](../standard-library/basic-filebuf-class.md#basic_filebuf__open)< **ctype**\< **E**> >( [getloc](../standard-library/ios-base-class.md#ios_base__getloc)). `widen`( `_Char`).  
+ The member function returns [use_facet](../standard-library/basic-filebuf-class.md#basic_filebuf__open)< **ctype**\< **E**> >( [getloc](../standard-library/ios-base-class.md#ios_base__getloc)). `widen`( `Char`).  
   
 ### Example  
   
-```  
-  
+```cpp    
 // basic_ios_widen.cpp  
 // compile with: /EHsc  
 #include <ios>  
@@ -946,12 +888,12 @@ char_type widen(char _Char) const;
   
 int main( )  
 {  
-using namespace std;  
-char *z = "Hello";  
-wchar_t y[2] = {0,0};  
-cout << z[0] << endl;  
-y[0] = wcout.widen( z[0] );  
-wcout << &y[0] << endl;  
+  using namespace std;  
+  char *z = "Hello";  
+  wchar_t y[2] = {0,0};  
+  cout << z[0] << endl;  
+  y[0] = wcout.widen( z[0] );  
+  wcout << &y[0] << endl;  
 }  
   
 ```  
@@ -959,13 +901,12 @@ wcout << &y[0] << endl;
 ##  <a name="basic_ios__swap"></a>  basic_ios::swap  
  Exchanges the values in this `basic_ios` object for those of another `basic_ios` object. However, the pointers to the stream buffers are not swapped.  
   
-```  
- 
+```   
 void swap(basic_ios&& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The `basic_ios` object that is used to exchange values.  
   
 ### Remarks  

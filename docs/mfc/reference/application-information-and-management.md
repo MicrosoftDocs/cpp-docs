@@ -2,7 +2,6 @@
 title: "Application Information and Management | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -67,51 +66,21 @@ When you write an application, you create a single [CWinApp](../../mfc/reference
 ##  <a name="afxbeginthread"></a>  AfxBeginThread  
  Call this function to create a new thread.  
   
-```  
- 
-CWinThread* 
-AfxBeginThread(
-    AFX_THREADPROC 
-pfnThreadProc  ,  
-    LPVOID 
-pParam  ,  
-    int 
-nPriority  
-= 
-THREAD_PRIORITY_NORMAL,  
-    UINT 
-nStackSize  
-= 
-0,  
-    DWORD 
-dwCreateFlags  
-= 
-0,  
-    LPSECURITY_ATTRIBUTES 
-lpSecurityAttrs  
-= NULL);
+```   
+CWinThread* AfxBeginThread(
+    AFX_THREADPROC pfnThreadProc,  
+    LPVOID pParam,  
+    int nPriority = THREAD_PRIORITY_NORMAL,  
+    UINT nStackSize = 0,  
+    DWORD dwCreateFlags = 0,  
+    LPSECURITY_ATTRIBUTES lpSecurityAttrs = NULL);
 
-CWinThread* 
-AfxBeginThread(
-    CRuntimeClass* 
-pThreadClass  ,  
-    int 
-nPriority  
-= 
-THREAD_PRIORITY_NORMAL,  
-    UINT 
-nStackSize  
-= 
-0,  
-    DWORD 
-dwCreateFlags  
-= 
-0,  
-    LPSECURITY_ATTRIBUTES 
-lpSecurityAttrs  
-= NULL);
-
- 
+CWinThread* AfxBeginThread(
+    CRuntimeClass* pThreadClass,  
+    int nPriority = THREAD_PRIORITY_NORMAL,  
+    UINT nStackSize = 0,  
+    DWORD dwCreateFlags = 0,  
+    LPSECURITY_ATTRIBUTES lpSecurityAttrs = NULL); 
 ```  
   
 ### Parameters  
@@ -121,7 +90,7 @@ lpSecurityAttrs
  `UINT __cdecl MyControllingFunction( LPVOID pParam );`  
   
  *pThreadClass*  
- The                                 RUNTIME_CLASS of an object derived from [CWinThread](../../mfc/reference/cwinthread-class.md).  
+ The RUNTIME_CLASS of an object derived from [CWinThread](../../mfc/reference/cwinthread-class.md).  
   
  *pParam*  
  Parameter to be passed to the controlling function as shown in the parameter to the function declaration in `pfnThreadProc`.  
@@ -160,15 +129,10 @@ lpSecurityAttrs
 ##  <a name="afxendthread"></a>  AfxEndThread  
  Call this function to terminate the currently executing thread.  
   
-```  
- 
+```   
 void AFXAPI AfxEndThread(
-    UINT 
-nExitCode  ,  
-    BOOL 
-bDelete   = TRUE);
-
- 
+    UINT nExitCode,  
+    BOOL bDelete  = TRUE); 
 ```  
   
 ### Parameters  
@@ -186,11 +150,8 @@ bDelete   = TRUE);
 ##  <a name="afxfreelibrary"></a>  AfxFreeLibrary  
  Both `AfxFreeLibrary` and `AfxLoadLibrary` maintain a reference count for each loaded library module.  
   
-```  
- 
-BOOL AFXAPI AfxFreeLibrary(HINSTANCE hInstLib);
-
- 
+```   
+BOOL AFXAPI AfxFreeLibrary(HINSTANCE hInstLib); 
 ```  
   
 ### Parameters  
@@ -215,12 +176,8 @@ BOOL AFXAPI AfxFreeLibrary(HINSTANCE hInstLib);
 ##  <a name="afxgetapp"></a>  AfxGetApp  
  The pointer returned by this function can be used to access application information such as the main message-dispatch code or the topmost window.  
   
-```  
- 
-CWinApp* 
-AFXAPI AfxGetApp();
-
- 
+```   
+CWinApp* AFXAPI AfxGetApp(); 
 ```  
   
 ### Return Value  
@@ -235,12 +192,8 @@ AFXAPI AfxGetApp();
 ##  <a name="afxgetappname"></a>  AfxGetAppName  
  The string returned by this function can be used for diagnostic messages or as a root for temporary string names.  
   
-```  
- 
-LPCTSTR  
-AFXAPI AfxGetAppName();
-
- 
+```   
+LPCTSTR AFXAPI AfxGetAppName(); 
 ```  
   
 ### Return Value  
@@ -252,12 +205,8 @@ AFXAPI AfxGetAppName();
 ##  <a name="afxgetinstancehandle"></a>  AfxGetInstanceHandle  
  This function allows you to retrieve the instance handle of the current application.  
   
-```  
- 
-HINSTANCE  
-AFXAPI AfxGetInstanceHandle();
-
- 
+```   
+HINSTANCE  AFXAPI AfxGetInstanceHandle(); 
 ```  
   
 ### Return Value  
@@ -272,12 +221,8 @@ AFXAPI AfxGetInstanceHandle();
 ##  <a name="afxgetmainwnd"></a>  AfxGetMainWnd  
  If your application is an OLE server, call this function to retrieve a pointer to the active main window of the application instead of directly referring to the [m_pMainWnd](../../mfc/reference/cwinthread-class.md#m_pmainwnd) member of the application object.  
   
-```  
- 
-CWnd* 
-AFXAPI AfxGetMainWnd();
-
- 
+```   
+CWnd* AFXAPI AfxGetMainWnd(); 
 ```  
   
 ### Return Value  
@@ -311,12 +256,8 @@ BOOL AFXAPI AfxGetPerUserRegistration();
 ##  <a name="afxgetresourcehandle"></a>  AfxGetResourceHandle  
  Use the `HINSTANCE` handle returned by this function to access the application's resources directly, for example, in calls to the Windows function **FindResource**.  
   
-```  
- 
-extern HINSTANCE  
-AfxGetResourceHandle();
-
- 
+```   
+extern HINSTANCE  AfxGetResourceHandle(); 
 ```  
   
 ### Return Value  
@@ -328,12 +269,8 @@ AfxGetResourceHandle();
 ##  <a name="afxgetthread"></a>  AfxGetThread  
  Call this function to get a pointer to the [CWinThread](../../mfc/reference/cwinthread-class.md) object representing the currently executing thread.  
   
-```  
- 
-CWinThread* 
-AfxGetThread();
-
- 
+```   
+CWinThread* AfxGetThread(); 
 ```  
   
 ### Return Value  
@@ -351,11 +288,8 @@ AfxGetThread();
 ##  <a name="afxinitrichedit"></a>  AfxInitRichEdit  
  Call this function to initialize the rich edit control (version 1.0) for the application.  
   
-```  
- 
-BOOL AFXAPI AfxInitRichEdit();
-
- 
+```   
+BOOL AFXAPI AfxInitRichEdit(); 
 ```  
   
 ### Remarks  
@@ -370,11 +304,8 @@ BOOL AFXAPI AfxInitRichEdit();
 ##  <a name="afxinitrichedit2"></a>  AfxInitRichEdit2  
  Call this function to initialize the rich edit control (version 2.0 and later) for the application.  
   
-```  
- 
-BOOL AFXAPI AfxInitRichEdit2();
-
- 
+```   
+BOOL AFXAPI AfxInitRichEdit2(); 
 ```  
   
 ### Remarks  
@@ -383,11 +314,8 @@ BOOL AFXAPI AfxInitRichEdit2();
 ##  <a name="afxloadlibrary"></a>  AfxLoadLibrary  
  Use `AfxLoadLibrary` to map a DLL module.  
   
-```  
- 
-HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
-
- 
+```   
+HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName); 
 ```  
   
 ### Parameters  
@@ -430,11 +358,8 @@ HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
 ##  <a name="afxregisterclass"></a>  AfxRegisterClass  
  Use this function to register window classes in a DLL that uses MFC.  
   
-```  
- 
-BOOL AFXAPI AfxRegisterClass(WNDCLASS* lpWndClass);
-
- 
+```   
+BOOL AFXAPI AfxRegisterClass(WNDCLASS* lpWndClass); 
 ```  
   
 ### Parameters  
@@ -457,22 +382,11 @@ BOOL AFXAPI AfxRegisterClass(WNDCLASS* lpWndClass);
   
 ```  
  
-LPCTSTR  
-AFXAPI  
-AfxRegisterWndClass(
-    UINT 
-nClassStyle  ,  
-    HCURSOR 
-hCursor  
-= 
-0,  
-    HBRUSH 
-hbrBackground  
-= 
-0,  
-    HICON 
-hIcon  
-= 0);
+LPCTSTR AFXAPI AfxRegisterWndClass(
+    UINT nClassStyle,  
+    HCURSOR hCursor = 0,  
+    HBRUSH hbrBackground = 0,  
+    HICON hIcon = 0);
 
  
 ```  
@@ -560,8 +474,7 @@ AFXAPI AfxSetResourceHandle(HINSTANCE hInstResource);
 ```  
  
 BOOL  
-AfxSocketInit(WSADATA* lpwsaData  
-= NULL);
+AfxSocketInit(WSADATA* lpwsaData = NULL);
 
  
 ```  
@@ -582,12 +495,9 @@ AfxSocketInit(WSADATA* lpwsaData
 ```  
  
 BOOL AFXAPI AfxWinInit(
-    HINSTANCE 
-hInstance  ,  
-    HINSTANCE 
-hPrevInstance  ,  
-    LPTSTR 
-lpCmdLine  ,  
+    HINSTANCE hInstance,  
+    HINSTANCE hPrevInstance,  
+    LPTSTR lpCmdLine,  
     int nCmdShow);
 
  

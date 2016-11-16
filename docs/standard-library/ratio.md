@@ -2,7 +2,6 @@
 title: "&lt;ratio&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -70,15 +69,15 @@ Include the standard header \<ratio> to define constants and templates that are 
 ```  
   
 ### ratio Structure  
-  
+
+```
 struct ratio
-   {
-   static constexpr intmax_t num;
-   static constexpr intmax_t den;
-   typedef ratio\<num, den>  
-   type;
-   };  
-  
+{
+    static constexpr intmax_t num;
+    static constexpr intmax_t den;
+    typedef ratio<num, den>  type;
+};
+```  
  The [ratio Structure](http://msdn.microsoft.com/en-us/3f7961f4-802b-4251-b3c3-090ef91c0dba) defines the static constants `num` and `den` such that `num` / `den` == N / D and `num` and `den` have no common factors. `num` / `den` is the `value` that is represented by the template class. Therefore, `type` designates the instantiation `ratio<N0, D0>` for which `num` == N0 and `den` == D0.  
   
 ### Specializations  

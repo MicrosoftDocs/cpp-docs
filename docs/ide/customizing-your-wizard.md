@@ -2,7 +2,6 @@
 title: "Customizing Your Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -70,9 +69,9 @@ You must consider the following common tasks as you customize the wizard you cre
     ```  
   
     > [!NOTE]
-    >  The methods, properties, and events exposed through [Automation and Extensibility for Visual Studio](../Topic/Automation%20and%20Extensibility%20for%20Visual%20Studio.md), [Visual C++ Code Model](http://msdn.microsoft.com/en-us/dd6452c2-1054-44a1-b0eb-639a94a1216b), [Project Model](http://msdn.microsoft.com/en-us/06c1bbd9-4c79-4f97-ad6d-2b1dea8ecd1f), and [Wizard Model](http://msdn.microsoft.com/en-us/159395ac-33c7-47bf-ad42-4e1435ddc758) allow you to programmatically manage all aspects of the wizard project, from creation through build, in both the JScript files and .htm files.  
+    >  The methods, properties, and events exposed through [Automation and Extensibility for Visual Studio](http://msdn.microsoft.com/Library/f71a2253-3e68-4e5e-9a18-edbba816caf6), [Visual C++ Code Model](http://msdn.microsoft.com/en-us/dd6452c2-1054-44a1-b0eb-639a94a1216b), [Project Model](http://msdn.microsoft.com/en-us/06c1bbd9-4c79-4f97-ad6d-2b1dea8ecd1f), and [Wizard Model](http://msdn.microsoft.com/en-us/159395ac-33c7-47bf-ad42-4e1435ddc758) allow you to programmatically manage all aspects of the wizard project, from creation through build, in both the JScript files and .htm files.  
   
--   If necessary, customize the [.vsdir file](../Topic/Adding%20Wizards%20to%20the%20Add%20Item%20and%20New%20Project%20Dialog%20Boxes%20by%20Using%20.Vsdir%20Files.md), allowing information about the .vsz file and all other templates to be understood by the shell. For example, indicate the icon resource ID, flags, localized names, and so on.  
+-   If necessary, customize the [.vsdir file](http://msdn.microsoft.com/Library/e0a20da0-3680-4084-997e-dbe02db51da9), allowing information about the .vsz file and all other templates to be understood by the shell. For example, indicate the icon resource ID, flags, localized names, and so on.  
   
 -   Create .htm files and template files in all languages for which your wizard needs to be localized. Add them to the appropriate project directories.  
   

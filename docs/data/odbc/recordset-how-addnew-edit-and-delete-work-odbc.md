@@ -2,7 +2,6 @@
 title: "Recordset: How AddNew, Edit, and Delete Work (ODBC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -65,7 +64,7 @@ This topic applies to the MFC ODBC classes.
  As a supplement, you might want to read [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md), which describes the corresponding role of RFX in update operations.  
   
 ##  <a name="_core_adding_a_record"></a> Adding a Record  
- Adding a new record to a recordset involves calling the recordset's [AddNew](../Topic/CRecordset::AddNew.md) member function, setting the values of the new record's field data members, and calling the [Update](../Topic/CRecordset::Update.md) member function to write the record to the data source.  
+ Adding a new record to a recordset involves calling the recordset's [AddNew](../mfc/reference/crecordset-class.md#crecordset__addnew) member function, setting the values of the new record's field data members, and calling the [Update](../Topic/CRecordset::Update.md) member function to write the record to the data source.  
   
  As a precondition for calling `AddNew`, the recordset must not have been opened as read-only. The `CanUpdate` and `CanAppend` member functions let you determine these conditions.  
   

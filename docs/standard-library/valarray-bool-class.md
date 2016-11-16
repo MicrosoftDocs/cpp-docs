@@ -2,7 +2,6 @@
 title: "valarray&lt;bool&gt; Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,7 +48,7 @@ class valarray<bool>
   
 ## Example  
   
-```  
+```cpp  
 // valarray_bool.cpp  
 // compile with: /EHsc  
 #include <valarray>  

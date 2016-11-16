@@ -2,7 +2,6 @@
 title: "File Types Created for Visual C++ Projects | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -106,7 +105,7 @@ This topic describes all the types of files that are associated with Visual C++ 
 |.vmx|Project|The macro project file.|  
 |.vup|Project|The utility project file.|  
   
- For information on other files associated with Visual Studio, see [File Types and File Extensions in Visual Studio .NET](/visual-studio/ide/reference/project-and-solution-file-types).  
+ For information on other files associated with Visual Studio, see [File Types and File Extensions in Visual Studio .NET](/visualstudio/ide/reference/project-and-solution-file-types).  
   
  Project files are organized into folders in Solution Explorer. Visual C++ creates a folder for source files, header files, and resource files, but you can reorganize these folders or create new ones. You can use folders to organize explicitly logical clusters of files within the hierarchy of a project. For example, you could create folders to contain all your user interface source files, or specifications, documentation, or test suites. All file folder names should be unique.  
   

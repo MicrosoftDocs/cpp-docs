@@ -2,7 +2,6 @@
 title: "How to: Create a Classic COM Component Using WRL | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -70,7 +69,7 @@ You can use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[
   
      <!--FIXME[!CODE [wrl-classic-com-component#5](../CodeSnippet/VS_Snippets_Misc/wrl-classic-com-component#5)]-->  
   
-2.  Run RegScript.reg or add it to your project’s **Post-Build Event**. For more information, see [Pre-build Event/Post-build Event Command Line Dialog Box](/visual-studio/ide/reference/pre-build-event-post-build-event-command-line-dialog-box).  
+2.  Run RegScript.reg or add it to your project’s **Post-Build Event**. For more information, see [Pre-build Event/Post-build Event Command Line Dialog Box](/visualstudio/ide/reference/pre-build-event-post-build-event-command-line-dialog-box).  
   
 3.  Add a **Win32 Console Application** project to the solution. Name the project, for example, `Calculator`.  
   

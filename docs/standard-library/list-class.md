@@ -2,7 +2,6 @@
 title: "list Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -186,7 +185,7 @@ void assign(
   
 ### Example  
   
-```  
+```cpp  
 // list_assign.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -253,7 +252,7 @@ const_reference back() const;
   
 ### Example  
   
-```  
+```cpp  
 // list_back.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -298,7 +297,7 @@ iterator begin();
   
 ### Example  
   
-```  
+```cpp  
 // list_begin.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -390,7 +389,7 @@ void clear();
   
 ### Example  
   
-```  
+```cpp  
 // list_clear.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -431,7 +430,7 @@ typedef implementation-defined const_iterator;
 ##  <a name="list__const_pointer"></a>  list::const_pointer  
  Provides a pointer to a `const` element in a list.  
   
-```unstlib  
+``` 
 typedef typename Allocator::const_pointer const_pointer;  
 ```  
   
@@ -452,7 +451,7 @@ typedef typename Allocator::const_reference const_reference;
   
 ### Example  
   
-```  
+```cpp  
 // list_const_ref.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -512,7 +511,7 @@ const_reverse_iterator rbegin() const;
   
 ### Example  
   
-```  
+```cpp  
 // list_crbegin.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -557,7 +556,7 @@ const_reverse_iterator rend() const;
   
 ### Example  
   
-```  
+```cpp  
 // list_crend.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -598,7 +597,7 @@ typedef typename Allocator::difference_type difference_type;
   
 ### Example  
   
-```  
+```cpp  
 // list_diff_type.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -643,7 +642,7 @@ The number '30' is in c1 collection 3 times.
  Inserts an element constructed in place into a list at a specified position.  
   
 ```  
-void emplace_back(iterator _Where, Type&& val);
+void emplace_back(iterator Where, Type&& val);
 ```  
   
 ### Parameters  
@@ -651,7 +650,7 @@ void emplace_back(iterator _Where, Type&& val);
 |||  
 |-|-|  
 |Parameter|Description|  
-|`_Where`|The position in the target [list](../standard-library/list-class.md) where the first element is inserted.|  
+|`Where`|The position in the target [list](../standard-library/list-class.md) where the first element is inserted.|  
 |` val`|The element added to the end of the `list`.|  
   
 ### Remarks  
@@ -659,7 +658,7 @@ void emplace_back(iterator _Where, Type&& val);
   
 ### Example  
   
-```  
+```cpp  
 // list_emplace.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -700,7 +699,7 @@ void emplace_back(Type&& val);
   
 ### Example  
   
-```  
+```cpp  
 // list_emplace_back.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -741,7 +740,7 @@ void emplace_front(Type&& val);
   
 ### Example  
   
-```  
+```cpp  
 // list_emplace_front.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -775,7 +774,7 @@ bool empty() const;
   
 ### Example  
   
-```  
+```cpp  
 // list_empty.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -803,7 +802,6 @@ The list is not empty.
   
 ```  
 const_iterator end() const;
-
 iterator end();
 ```  
   
@@ -815,7 +813,7 @@ iterator end();
   
 ### Example  
   
-```  
+```cpp  
 // list_end.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -860,13 +858,12 @@ The list is now: 10 400 30
  Removes an element or a range of elements in a list from specified positions.  
   
 ```  
-iterator erase(iterator _Where);
-
+iterator erase(iterator Where);
 iterator erase(iterator first, iterator last);
 ```  
   
 ### Parameters  
- `_Where`  
+ `Where`  
  Position of the element to be removed from the list.  
   
  ` first`  
@@ -885,7 +882,7 @@ iterator erase(iterator first, iterator last);
   
 ### Example  
   
-```  
+```cpp  
 // list_erase.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -933,7 +930,6 @@ After erasing all elements but the first, the list becomes:  20
   
 ```  
 reference front();
-
 const_reference front() const;
 ```  
   
@@ -947,7 +943,7 @@ const_reference front() const;
   
 ### Example  
   
-```  
+```cpp  
 // list_front.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -988,7 +984,7 @@ Allocator get_allocator() const;
   
 ### Example  
   
-```  
+```cpp  
 // list_get_allocator.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1014,28 +1010,14 @@ int main( )
  Inserts an element or a number of elements or a range of elements into a list at a specified position.  
   
 ```  
-iterator insert(
-    iterator Where,  
-    const Type& Val);
+iterator insert(iterator Where, const Type& Val);
+iterator insert(iterator Where, Type&& Val);
 
-iterator insert(
-    iterator Where,  
-    Type&& Val);
-
-void insert(
-    iterator Where,  
-    size_type Count,  
-    const Type& Val);
-
-iterator insert(
-    iterator Where,  
-    initializer_list<Type> IList);
+void insert(iterator Where, size_type Count, const Type& Val);
+iterator insert(iterator Where, initializer_list<Type> IList);
 
 template <class InputIterator>  
-void insert(
-    iterator Where,  
-    InputIterator First,  
-    InputIterator Last);
+void insert(iterator Where, InputIterator First, InputIterator Last);
 ```  
   
 ### Parameters  
@@ -1054,7 +1036,7 @@ void insert(
   
 ### Example  
   
-```  
+```cpp  
 // list_class_insert.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1140,42 +1122,20 @@ typedef implementation-defined iterator;
   
 ```  
 list();
+explicit list(const Allocator& Al);
+explicit list(size_type Count);
+list(size_type Count, const Type& Val);
+list(size_type Count, const Type& Val, const Allocator& Al);
 
-explicit list(
-    const Allocator& Al);
-
-explicit list(
-    size_type Count);
-
-list(
-    size_type Count,  
-    const Type& Val);
-
-list(
-    size_type Count,  
-    const Type& Val,  
-    const Allocator& Al);
-
-list(
-    const list& Right);
-
-list(
-    list&& Right);
-
-list(
-    initializer_list<Type> IList,  
-    const Allocator& Al);
+list(const list& Right);
+list(list&& Right);
+list(initializer_list<Type> IList, const Allocator& Al);
 
 template <class InputIterator>  
-list(
- InputIterator First,  
-    InputIterator Last);
+list(InputIterator First, InputIterator Last);
 
 template <class InputIterator>  
-list(
- InputIterator First,  
-    InputIterator Last,  
-    const Allocator& Al);
+list(InputIterator First, InputIterator Last, const Allocator& Al);
 ```  
   
 ### Parameters  
@@ -1306,7 +1266,7 @@ c1 = 0 0 0c2 = 2 2 2 2 2c3 = 1 1 1c4 = 2 2 2 2 2c5 = 2 2c6 = 2 2 2c7 = 2 2 2c8 =
 ##  <a name="list__max_size"></a>  list::max_size  
  Returns the maximum length of a list.  
   
-```unstlib  
+```
 size_type max_size() const;
 ```  
   
@@ -1315,7 +1275,7 @@ size_type max_size() const;
   
 ### Example  
   
-```  
+```cpp  
 // list_max_size.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1336,13 +1296,10 @@ int main( )
  Removes the elements from the argument list, inserts them into the target list, and orders the new, combined set of elements in ascending order or in some other specified order.  
   
 ```  
-void merge(
-    list<Type, Allocator>& right);
+void merge(list<Type, Allocator>& right);
 
 template <class Traits>  
-void merge(
-    list<Type, Allocator>& right,   
-    Traits comp);
+void merge(list<Type, Allocator>& right, Traits comp);
 ```  
   
 ### Parameters  
@@ -1359,7 +1316,7 @@ void merge(
   
 ### Example  
   
-```  
+```cpp  
 // list_merge.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1421,7 +1378,6 @@ After merging c3 with c2 according to the '>' comparison relation: c2 = 6 5 4 3 
   
 ```  
 list& operator=(const list& right);
-
 list& operator=(list&& right);
 ```  
   
@@ -1437,7 +1393,7 @@ list& operator=(list&& right);
   
 ### Example  
   
-```  
+```cpp  
 // list_operator_as.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1479,7 +1435,7 @@ int main( )
 ##  <a name="list__pointer"></a>  list::pointer  
  Provides a pointer to an element in a list.  
   
-```unstlib  
+```
 typedef typename Allocator::pointer pointer;  
 ```  
   
@@ -1491,7 +1447,7 @@ typedef typename Allocator::pointer pointer;
 ##  <a name="list__pop_back"></a>  list::pop_back  
  Deletes the element at the end of a list.  
   
-```unstlib  
+``` 
 void pop_back();
 ```  
   
@@ -1500,7 +1456,7 @@ void pop_back();
   
 ### Example  
   
-```  
+```cpp  
 // list_pop_back.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1531,7 +1487,7 @@ After deleting the element at the end of the list, the last element is: 1
 ##  <a name="list__pop_front"></a>  list::pop_front  
  Deletes the element at the beginning of a list.  
   
-```unstlib  
+``` 
 void pop_front();
 ```  
   
@@ -1540,7 +1496,7 @@ void pop_front();
   
 ### Example  
   
-```  
+```cpp  
 // list_pop_front.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1587,7 +1543,7 @@ void push_back(void push_back(Type&& val);
   
 ### Example  
   
-```  
+```cpp  
 // list_push_back.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1627,7 +1583,6 @@ Moved first element: a
   
 ```  
 void push_front(const Type& val);
-
 void push_front(Type&& val);
 ```  
   
@@ -1643,7 +1598,7 @@ void push_front(Type&& val);
   
 ### Example  
   
-```  
+```cpp  
 // list_push_front.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1681,9 +1636,8 @@ Moved first element: a
 ##  <a name="list__rbegin"></a>  list::rbegin  
  Returns an iterator that addresses the first element in a reversed list.  
   
-```unstlib  
+``` 
 const_reverse_iterator rbegin() const;
-
 reverse_iterator rbegin();
 ```  
   
@@ -1699,7 +1653,7 @@ reverse_iterator rbegin();
   
 ### Example  
   
-```  
+```cpp  
 // list_rbegin.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1756,7 +1710,7 @@ typedef typename Allocator::reference reference;
   
 ### Example  
   
-```  
+```cpp  
 // list_ref.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1785,7 +1739,7 @@ The second element is 20
 ##  <a name="list__remove"></a>  list::remove  
  Erases elements in a list that match a specified value.  
   
-```unstlib  
+``` 
 void remove(const Type& val);
 ```  
   
@@ -1798,7 +1752,7 @@ void remove(const Type& val);
   
 ### Example  
   
-```  
+```cpp  
 // list_remove.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1839,7 +1793,7 @@ After removing elements with value 5, the list becomes c2 = 100 200 300
 ##  <a name="list__remove_if"></a>  list::remove_if  
  Erases elements from a list for which a specified predicate is satisfied.  
   
-```unstlib  
+``` 
 template <class Predicate>  
 void remove_if(Predicate pred)  
 ```  
@@ -1850,7 +1804,7 @@ void remove_if(Predicate pred)
   
 ### Example  
   
-```  
+```cpp  
 // list_remove_if.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1902,9 +1856,8 @@ After removing the odd elements, the list becomes c2 = 4 6 8
 ##  <a name="list__rend"></a>  list::rend  
  Returns an iterator that addresses the location that follows the last element in a reversed list.  
   
-```unstlib  
+``` 
 const_reverse_iterator rend() const;
-
 reverse_iterator rend();
 ```  
   
@@ -1922,7 +1875,7 @@ reverse_iterator rend();
   
 ### Example  
   
-```  
+```cpp  
 // list_rend.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -1986,9 +1939,8 @@ The modified reversed list is: 30 20 40
 ##  <a name="list__resize"></a>  list::resize  
  Specifies a new size for a list.  
   
-```unstlib  
+``` 
 void resize(size_type _Newsize);
-
 void resize(size_type _Newsize, Type val);
 ```  
   
@@ -2010,7 +1962,7 @@ void resize(size_type _Newsize, Type val);
   
 ### Example  
   
-```  
+```cpp  
 // list_resize.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -2051,13 +2003,13 @@ The value of the last element is now 20
 ##  <a name="list__reverse"></a>  list::reverse  
  Reverses the order in which the elements occur in a list.  
   
-```unstlib  
+``` 
 void reverse();
 ```  
   
 ### Example  
   
-```  
+```cpp  
 // list_reverse.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -2107,7 +2059,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 ##  <a name="list__size"></a>  list::size  
  Returns the number of elements in a list.  
   
-```unstlib  
+``` 
 size_type size() const;
 ```  
   
@@ -2116,7 +2068,7 @@ size_type size() const;
   
 ### Example  
   
-```  
+```cpp  
 // list_size.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -2156,7 +2108,7 @@ typedef typename Allocator::size_type size_type;
 ##  <a name="list__sort"></a>  list::sort  
  Arranges the elements of a list in ascending order or with respect to some other user-specified order.  
   
-```unstlib  
+``` 
 void sort();
 
 template <class Traits>  
@@ -2174,7 +2126,7 @@ void sort(Traits comp);
   
 ### Example  
   
-```  
+```cpp  
 // list_sort.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -2221,20 +2173,15 @@ After sorting with 'greater than' operation, c1 = 30 20 10
 ```  
 // insert the entire source list  
 void splice(const_iterator Where, list<Type, Allocator>& Source);
+void splice(const_iterator Where, list<Type, Allocator>&& Source); 
 
-void splice(const_iterator Where, list<Type, Allocator>&& Source);
-
- 
 // insert one element of the source list  
 void splice(const_iterator Where, list<Type, Allocator>& Source, const_iterator Iter);
-
 void splice(const_iterator Where, list<Type, Allocator>&& Source, const_iterator Iter);
-
  
 // insert a range of elements from the source list  
 void splice(const_iterator Where, list<Type, Allocator>& Source, const_iterator First, const_iterator Last);
-
-    void splice(const_iterator Where, list<Type, Allocator>&& Source, const_iterator First, const_iterator Last);
+void splice(const_iterator Where, list<Type, Allocator>&& Source, const_iterator First, const_iterator Last);
 ```  
   
 ### Parameters  
@@ -2344,9 +2291,8 @@ Beginning state of lists:c1 = 2 elements: (10) (11)c2 = 3 elements: (20) (21) (2
 ##  <a name="list__swap"></a>  list::swap  
  Exchanges the elements of two lists.  
   
-```unstlib  
+``` 
 void swap(list<Type, Allocator>& right);
-
 friend void swap(list<Type, Allocator>& left, list<Type, Allocator>& right)  
 ```  
   
@@ -2359,7 +2305,7 @@ friend void swap(list<Type, Allocator>& left, list<Type, Allocator>& right)
   
 ### Example  
   
-```  
+```cpp  
 // list_swap.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -2428,7 +2374,7 @@ void unique(BinaryPredicate pred);
   
 ### Example  
   
-```  
+```cpp  
 // list_unique.cpp  
 // compile with: /EHsc  
 #include <list>  
@@ -2487,7 +2433,7 @@ typedef typename Allocator::value_type value_type;
   
 ### Example  
   
-```  
+```cpp  
 // list_value_type.cpp  
 // compile with: /EHsc  
 #include <list>  

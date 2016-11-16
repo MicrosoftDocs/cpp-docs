@@ -11,9 +11,6 @@ caps.latest.revision: 10
 manager: "ghogen"
 ---
 # &lt;random&gt; functions
-||  
-|-|  
-|[generate_canonical](#generate_canonical)|  
   
 ##  <a name="generate_canonical"></a>  generate_canonical  
  Returns a floating-point value from a random sequence.  

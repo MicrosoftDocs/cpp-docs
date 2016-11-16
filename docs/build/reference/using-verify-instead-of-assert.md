@@ -2,7 +2,6 @@
 title: "Using VERIFY Instead of ASSERT | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,7 +44,7 @@ Suppose that when you run the debug version of your MFC application, there are n
   
  This problem can be caused when you place important code in an ASSERT statement to verify that it performs correctly. Because ASSERT statements are commented out in a release build of an MFC program, the code does not run in a release build.  
   
- If you are using ASSERT to confirm that a function call succeeded, consider using [VERIFY](../Topic/VERIFY.md) instead. The VERIFY macro evaluates its own arguments in both debug and release builds of the application.  
+ If you are using ASSERT to confirm that a function call succeeded, consider using [VERIFY](http://msdn.microsoft.com/Library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) instead. The VERIFY macro evaluates its own arguments in both debug and release builds of the application.  
   
  Another preferred technique is to assign the function's return value to a temporary variable and then test the variable in an ASSERT statement.  
   

@@ -2,7 +2,6 @@
 title: "equal (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,7 +48,7 @@ template<class _InIt1, class _InIt2, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `equal`. For more information, see [equal](../Topic/equal.md).  
+ This function behaves the same as the STL function `equal`. For more information, see [equal](http://msdn.microsoft.com/Library/56533afd-b696-40a0-8fa9-d366539e49ae).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

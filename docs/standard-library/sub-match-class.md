@@ -2,7 +2,6 @@
 title: "sub_match Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -128,7 +127,7 @@ int compare(const value_type *ptr) const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__sub_match_compare.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -191,7 +190,7 @@ typedef typename iterator_traits<BidIt>::difference_type difference_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__sub_match_difference_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -254,7 +253,7 @@ typedef BidIt iterator;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__sub_match_iterator.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -317,7 +316,7 @@ difference_type length() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__sub_match_length.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -380,7 +379,7 @@ bool matched;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__sub_match_matched.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -442,7 +441,7 @@ compare(sub) == 0
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__sub_match_operator_str.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -505,7 +504,7 @@ basic_string<value_type> str() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__sub_match_str.cpp   
 // compile with: /EHsc   
 #include <regex>   
@@ -568,7 +567,7 @@ typedef typename iterator_traits<BidIt>::value_type value_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__regex__sub_match_value_type.cpp   
 // compile with: /EHsc   
 #include <regex>   

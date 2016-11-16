@@ -2,7 +2,6 @@
 title: "Internet-Related MFC Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,7 +39,7 @@ For information about Internet-related classes and functions, see:
   
 -   [AfxParseURL](../mfc/reference/internet-url-parsing-globals.md#afxparseurl)  
   
--   [AfxGetInternetHandleType](../Topic/AfxGetInternetHandleType.md)  
+-   [AfxGetInternetHandleType](http://msdn.microsoft.com/Library/754d6b3c-4eee-4190-8688-e4fb0381e92f)  
   
 ## ActiveX control classes  
   

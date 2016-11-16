@@ -2,7 +2,6 @@
 title: "CMenu Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -301,7 +300,7 @@ BOOL CheckMenuRadioItem(
  At the same time, the function unchecks all other menu items in the associated group and clears the radio-item type flag for those items. The checked item is displayed using a radio button (or bullet) bitmap instead of a check mark bitmap.  
   
 ### Example  
-  See the example for [ON_COMMAND_RANGE](../Topic/ON_COMMAND_RANGE.md).  
+  See the example for [ON_COMMAND_RANGE](http://msdn.microsoft.com/Library/c52719fc-dd6e-48c9-af79-383f48d608e0).  
   
 ##  <a name="cmenu__cmenu"></a>  CMenu::CMenu  
  Creates an empty menu and attaches it to a `CMenu` object.  

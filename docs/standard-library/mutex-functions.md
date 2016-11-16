@@ -1,5 +1,5 @@
 ---
-title: "&lt;mutex&gt; functions | Microsoft Docs"
+title: "&lt;mutex&gt; functions and variables | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -10,7 +10,7 @@ ms.assetid: 78ab3c8b-c7db-4226-ac93-e2e78ff8b964
 caps.latest.revision: 11
 manager: "ghogen"
 ---
-# &lt;mutex&gt; functions
+# &lt;mutex&gt; functions and variables
 ||||  
 |-|-|-|  
 |[adopt_lock Variable](#adopt_lock_variable)|[call_once Function](#call_once_function)|[defer_lock Variable](#defer_lock_variable)|  
@@ -23,7 +23,7 @@ manager: "ghogen"
 const adopt_lock_t adopt_lock;
 ```  
   
-##  <a name="call_once_function"></a>  call_once Function  
+##  <a name="call_once_function"></a>  call_once  
  Provides a mechanism for calling a specified callable object exactly once during execution.  
   
 ```
@@ -52,7 +52,7 @@ void call_once(once_flag& Flag,
 const defer_lock_t defer_lock;
 ```  
   
-##  <a name="lock_function"></a>  lock Function  
+##  <a name="lock_function"></a>  lock  
  Attempts to lock all arguments without deadlock.  
   
 ```cpp

@@ -2,7 +2,6 @@
 title: "PAINTSTRUCT Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `PAINTSTRUCT` structure contains information that can be used to paint the c
 ## Syntax  
   
 ```  
- 
-    typedef struct tagPAINTSTRUCT {  
+typedef struct tagPAINTSTRUCT {  
     HDC hdc;  
     BOOL fErase;  
     RECT rcPaint;  

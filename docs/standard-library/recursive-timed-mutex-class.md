@@ -2,7 +2,6 @@
 title: "recursive_timed_mutex Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,25 +47,25 @@ class recursive_timed_mutex;
   
 |Name|Description|  
 |----------|-----------------|  
-|[recursive_timed_mutex::recursive_timed_mutex Constructor](#recursive_timed_mutex__recursive_timed_mutex_constructor)|Constructs a `recursive_timed_mutex` object that's not locked.|  
-|[recursive_timed_mutex::~recursive_timed_mutex Destructor](#recursive_timed_mutex___dtorrecursive_timed_mutex_destructor)|Releases any resources that are used by the `recursive_timed_mutex` object.|  
+|[recursive_timed_mutex Constructor](#recursive_timed_mutex__recursive_timed_mutex_constructor)|Constructs a `recursive_timed_mutex` object that's not locked.|  
+|[~recursive_timed_mutex Destructor](#recursive_timed_mutex___dtorrecursive_timed_mutex_destructor)|Releases any resources that are used by the `recursive_timed_mutex` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[recursive_timed_mutex::lock Method](#recursive_timed_mutex__lock_method)|Blocks the calling thread until the thread obtains ownership of the `mutex`.|  
-|[recursive_timed_mutex::try_lock Method](#recursive_timed_mutex__try_lock_method)|Attempts to obtain ownership of the `mutex` without blocking.|  
-|[recursive_timed_mutex::try_lock_for Method](#recursive_timed_mutex__try_lock_for_method)|Attempts to obtain ownership of the `mutex` for a specified time interval.|  
-|[recursive_timed_mutex::try_lock_until Method](#recursive_timed_mutex__try_lock_until_method)|Attempts to obtain ownership of the `mutex` until a specified time.|  
-|[recursive_timed_mutex::unlock Method](#recursive_timed_mutex__unlock_method)|Releases ownership of the `mutex`.|  
+|[lock](#recursive_timed_mutex__lock_method)|Blocks the calling thread until the thread obtains ownership of the `mutex`.|  
+|[try_lock](#recursive_timed_mutex__try_lock_method)|Attempts to obtain ownership of the `mutex` without blocking.|  
+|[try_lock_for](#recursive_timed_mutex__try_lock_for_method)|Attempts to obtain ownership of the `mutex` for a specified time interval.|  
+|[try_lock_until](#recursive_timed_mutex__try_lock_until_method)|Attempts to obtain ownership of the `mutex` until a specified time.|  
+|[unlock](#recursive_timed_mutex__unlock_method)|Releases ownership of the `mutex`.|  
   
 ## Requirements  
  **Header:** mutex  
   
  **Namespace:** std  
   
-##  <a name="recursive_timed_mutex__lock_method"></a>  recursive_timed_mutex::lock Method  
+##  <a name="recursive_timed_mutex__lock_method"></a>  lock  
  Blocks the calling thread until the thread obtains ownership of the `mutex`.  
   
 ```cpp
@@ -76,14 +75,14 @@ void lock();
 ### Remarks  
  If the calling thread already owns the `mutex`, the method returns immediately, and the previous lock remains in effect.  
   
-##  <a name="recursive_timed_mutex__recursive_timed_mutex_constructor"></a>  recursive_timed_mutex::recursive_timed_mutex Constructor  
+##  <a name="recursive_timed_mutex__recursive_timed_mutex_constructor"></a>  recursive_timed_mutex Constructor  
  Constructs a `recursive_timed_mutex` object that is not locked.  
   
 ```cpp
 recursive_timed_mutex();
 ```  
   
-##  <a name="recursive_timed_mutex___dtorrecursive_timed_mutex_destructor"></a>  recursive_timed_mutex::~recursive_timed_mutex Destructor  
+##  <a name="recursive_timed_mutex___dtorrecursive_timed_mutex_destructor"></a>  ~recursive_timed_mutex Destructor  
  Releases any resources that are used by the `recursive_timed_mutex` object.  
   
 ```cpp
@@ -93,7 +92,7 @@ recursive_timed_mutex();
 ### Remarks  
  If the object is locked when the destructor runs, the behavior is undefined.  
   
-##  <a name="recursive_timed_mutex__try_lock_method"></a>  recursive_timed_mutex::try_lock Method  
+##  <a name="recursive_timed_mutex__try_lock_method"></a>  try_lock  
  Attempts to obtain ownership of the `mutex` without blocking.  
   
 ```cpp
@@ -106,7 +105,7 @@ bool try_lock() noexcept;
 ### Remarks  
  If the calling thread already owns the `mutex`, the function immediately returns `true`, and the previous lock remains in effect.  
   
-##  <a name="recursive_timed_mutex__try_lock_for_method"></a>  recursive_timed_mutex::try_lock_for Method  
+##  <a name="recursive_timed_mutex__try_lock_for_method"></a>  try_lock_for  
  Attempts to obtain ownership of the `mutex` without blocking.  
   
 ```cpp
@@ -124,7 +123,7 @@ bool try_lock_for(const chrono::duration<Rep, Period>& Rel_time);
 ### Remarks  
  If the calling thread already owns the `mutex`, the method immediately returns `true`, and the previous lock remains in effect.  
   
-##  <a name="recursive_timed_mutex__try_lock_until_method"></a>  recursive_timed_mutex::try_lock_until Method  
+##  <a name="recursive_timed_mutex__try_lock_until_method"></a>  try_lock_until  
  Attempts to obtain ownership of the `mutex` without blocking.  
   
 ```cpp
@@ -144,7 +143,7 @@ bool try_lock_until(const xtime* Abs_time);
 ### Remarks  
  If the calling thread already owns the `mutex`, the method immediately returns `true`, and the previous lock remains in effect.  
   
-##  <a name="recursive_timed_mutex__unlock_method"></a>  recursive_timed_mutex::unlock Method  
+##  <a name="recursive_timed_mutex__unlock_method"></a>  unlock  
  Releases ownership of the `mutex`.  
   
 ```cpp

@@ -2,7 +2,6 @@
 title: "negate Struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,20 +48,16 @@ A predefined function object that performs the arithmetic negation operation (un
 template <class Type = void>
 struct negate : public unary_function<Type, Type>  
 {
-    Type operator()(
-    const Type& Left) const;
-
- };
+    Type operator()(const Type& Left) const;
+};
 
 // specialized transparent functor for unary operator-
 template <>
 struct negate<void>  
 {
-template <class Type>
-auto operator()(Type&& Left) const
- ->  
-decltype(-std::forward<Type>(Left));
-
+  template <class Type>
+  auto operator()(Type&& Left) const`
+    -> decltype(-std::forward<Type>(Left));
  };
 ```  
   
@@ -78,7 +73,7 @@ decltype(-std::forward<Type>(Left));
   
 ## Example  
   
-```  
+```cpp  
 // functional_negate.cpp  
 // compile with: /EHsc  
 #include <vector>  

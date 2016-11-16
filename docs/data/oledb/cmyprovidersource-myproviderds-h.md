@@ -2,7 +2,6 @@
 title: "CMyProviderSource (MyProviderDS.H) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -10,7 +9,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - ""myproviderds.h""
+  - "myproviderds.h"
   - "cmyprovidersource"
 dev_langs: 
   - "C++"

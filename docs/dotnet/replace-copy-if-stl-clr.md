@@ -2,7 +2,6 @@
 title: "replace_copy_if (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,7 +46,7 @@ template<class _InIt, class _OutIt, class _Pr, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `replace_copy_if`. For more information, see [replace_copy_if](../Topic/replace_copy_if.md).  
+ This function behaves the same as the STL function `replace_copy_if`. For more information, see [replace_copy_if](http://msdn.microsoft.com/Library/3541f157-b8e0-4f83-bfdf-3e786ed26a3b).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

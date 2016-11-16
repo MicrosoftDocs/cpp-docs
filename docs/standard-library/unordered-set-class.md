@@ -2,7 +2,6 @@
 title: "unordered_set Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -1047,7 +1046,7 @@ const_local_iterator end(size_type nbucket) const;
   
 ### Example  
   
-```  
+```cpp  
   
 // std_tr1__unordered_set__unordered_set_end.cpp  
 // compile with: /EHsc  
@@ -1993,7 +1992,7 @@ unordered_set& operator=(unordered_set&& right);
   
 ### Example  
   
-```  
+```cpp  
   
 // unordered_set_operator_as.cpp  
 // compile with: /EHsc  

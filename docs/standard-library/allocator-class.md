@@ -2,7 +2,6 @@
 title: "allocator Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -121,7 +120,6 @@ class allocator
   
 ```  
 pointer address(reference val) const;
-
 const_pointer address(const_reference val) const;
 ```  
   
@@ -137,7 +135,7 @@ const_pointer address(const_reference val) const;
   
 ### Example  
   
-```  
+```cpp  
 // allocator_address.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -183,9 +181,7 @@ The integer addressed by v1Ptr has a value of: *v1Ptr = 8.
  Allocates a block of memory large enough to store at least some specified number of elements.  
   
 ```  
-pointer allocate(
-    size_type count,   
-    const void* _Hint);
+pointer allocate(size_type count, const void* _Hint);
 ```  
   
 ### Parameters  
@@ -203,7 +199,7 @@ pointer allocate(
   
 ### Example  
   
-```  
+```cpp  
 // allocator_allocate.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -214,10 +210,8 @@ using namespace std;
   
 int main( )   
 {  
-   allocator<int> v1Alloc;  
-  
-   allocator<int>::pointer v1aPtr;  
-  
+   allocator<int> v1Alloc;    
+   allocator<int>::pointer v1aPtr;    
    v1aPtr = v1Alloc.allocate ( 10 );  
   
    int i;  
@@ -230,8 +224,7 @@ int main( )
    {  
       cout << v1aPtr[ i ] << " ";  
    }  
-   cout << endl;  
-  
+   cout << endl;    
    v1Alloc.deallocate( v1aPtr, 10 );  
 }  
 ```  
@@ -245,9 +238,7 @@ int main( )
   
 ```  
 allocator();
-
 allocator(const allocator<Type>& right);
-
 template <class Other>  
 allocator(const allocator<Other>& right);
 ```  
@@ -261,7 +252,7 @@ allocator(const allocator<Other>& right);
   
 ### Example  
   
-```  
+```cpp  
 // allocator_allocator.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -334,7 +325,7 @@ typedef const value_type *const_pointer;
   
 ### Example  
   
-```  
+```cpp  
 // allocator_const_ptr.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -387,7 +378,7 @@ typedef const value_type& const_reference;
   
 ### Example  
   
-```  
+```cpp  
 // allocator_const_ref.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -444,9 +435,7 @@ The value of the element referred to by vcref,
   
 ```  
 void construct(pointer ptr, const Type& val);
-
 void construct(pointer ptr, Type&& val);
-
 template <class _Other>  
 void construct(pointer ptr, _Other&&...   val);
 ```  
@@ -463,7 +452,7 @@ void construct(pointer ptr, _Other&&...   val);
   
 ### Example  
   
-```  
+```cpp  
 // allocator_construct.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -546,7 +535,7 @@ void destroy(pointer ptr);
   
 ### Example  
   
-```  
+```cpp  
 // allocator_destroy.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -605,7 +594,7 @@ typedef ptrdiff_t difference_type;
   
 ### Example  
   
-```  
+```cpp  
 // allocator_diff_type.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -664,7 +653,7 @@ size_type max_size() const;
   
 ### Example  
   
-```  
+```cpp  
 // allocator_max_size.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -739,7 +728,7 @@ allocator<Type>& operator=(const allocator<Other>& right);
   
 ### Example  
   
-```  
+```cpp  
 // allocator_op_assign.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -790,7 +779,7 @@ typedef value_type *pointer;
   
 ### Example  
   
-```  
+```cpp  
 // allocator_ptr.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -833,9 +822,9 @@ The integer addressed by v1Ptr has a value of: *v1Ptr = 12.
   
 ##  <a name="allocator__rebind"></a>  allocator::rebind  
  A structure that enables an allocator for objects of one type to allocate storage for objects of another type.  
-  
-struct rebind {    typedef allocator\<_Other> other ;    };  
-  
+```  
+struct rebind {    typedef allocator<_Other> other ;    };  
+```  
 ### Parameters  
  *other*  
  The type of element for which memory is being allocated.  
@@ -859,7 +848,7 @@ A::rebind<Other>::other::pointer
   
 ### Example  
   
-```  
+```cpp  
 // allocator_rebind.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -894,7 +883,7 @@ typedef value_type& reference;
   
 ### Example  
   
-```  
+```cpp  
 // allocator_reference.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -949,7 +938,7 @@ typedef size_t size_type;
   
 ### Example  
   
-```  
+```cpp  
 // allocator_size_type.cpp  
 // compile with: /EHsc  
 #include <memory>  
@@ -996,7 +985,7 @@ typedef Type value_type;
   
 ### Example  
   
-```  
+```cpp  
 // allocator_value_type.cpp  
 // compile with: /EHsc  
 #include <memory>  

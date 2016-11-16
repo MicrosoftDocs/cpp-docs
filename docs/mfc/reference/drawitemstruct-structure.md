@@ -2,7 +2,6 @@
 title: "DRAWITEMSTRUCT Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `DRAWITEMSTRUCT` structure provides information the owner window must have t
 ## Syntax  
   
 ```  
- 
-    typedef struct tagDRAWITEMSTRUCT {  
+typedef struct tagDRAWITEMSTRUCT {  
     UINT CtlType;  
     UINT CtlID;  
     UINT itemID;  

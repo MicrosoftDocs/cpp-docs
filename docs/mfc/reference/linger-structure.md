@@ -2,7 +2,6 @@
 title: "LINGER Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `LINGER` structure is used for manipulating the **SO_LINGER** and **SO_DONTL
 ## Syntax  
   
 ```  
- 
-    struct linger {  
+struct linger {  
     u_short l_onoff;            // option on/off  
     u_short l_linger;           // linger time  
 };  

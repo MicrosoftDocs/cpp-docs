@@ -2,7 +2,6 @@
 title: "Visual C++ Help and Community | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,14 +50,13 @@ Here's how to getting information about how to write C++ code and use the Visual
 ### Online and Offline Documentation  
  You can view the content for both the MSDN Library and the Windows Developer Center online. This content is often updated.  
   
- You can also download and view the content locally in the offline Help Viewer. The offline documentation is organized by books of related content, which are also updated periodically. You can download the books you are interested in as they become available. For more information, see [Microsoft Help Viewer](/visual-studio/ide/microsoft-help-viewer).  
+ You can also download and view the content locally in the offline Help Viewer. The offline documentation is organized by books of related content, which are also updated periodically. You can download the books you are interested in as they become available. For more information, see [Microsoft Help Viewer](/visualstudio/ide/microsoft-help-viewer).  
   
 ## Related Articles  
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Visual C++ Developer Center](http://go.microsoft.com/fwlink/p/?LinkId=256536)|Contains articles and news that's specifically related to C++.|  
 |[Visual C++ Team Blog](http://go.microsoft.com/fwlink/p/?LinkId=256537)|Contains posts on various subjects by the experts on the Visual C++ product team.|  
 |[Channel 9](http://go.microsoft.com/fwlink/p/?LinkId=251694)|Contains video interviews and lectures. Use the search box on the Channel 9 home page to find C++ content.|  
-|[Visual Studio Developer Center](http://go.microsoft.com/fwlink/p/?LinkId=256535)|Contains articles and news about Visual Studio and related development tools.|  
+|[Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=256535)|Contains articles and news about Visual Studio and related development tools.|  
 |[MSDN forums](http://go.microsoft.com/fwlink/p/?LinkId=256538)|Official Microsoft forums where you can post questions and get answers from Microsoft and from experts in the community. Use the search box on the forums home page to find the forums that are specifically related to C++.|

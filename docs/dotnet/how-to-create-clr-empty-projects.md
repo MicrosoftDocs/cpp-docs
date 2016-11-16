@@ -2,7 +2,6 @@
 title: "How to: Create CLR Empty Projects | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -57,4 +56,4 @@ To create a CLR empty project, use the **CLR Empty Project** template, which is 
   
 ## See Also  
  [Visual C++ Project Types](../ide/visual-cpp-project-types.md)   
- [Visual C++ Project Types](../Topic/Debugging%20Preparation:%20Visual%20C++%20Project%20Types.md)
+ [Visual C++ Project Types](http://msdn.microsoft.com/Library/912b4ba2-7719-43d5-b087-db33e3f9329a)

@@ -2,7 +2,6 @@
 title: "is_reference Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -60,7 +59,7 @@ struct is_reference;
   
 ## Example  
   
-```  
+```cpp  
 // std__type_traits__is_reference.cpp   
 // compile with: /EHsc   
 #include <type_traits>   

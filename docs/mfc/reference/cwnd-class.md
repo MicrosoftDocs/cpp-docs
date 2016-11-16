@@ -2,7 +2,6 @@
 title: "CWnd Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -2028,7 +2027,7 @@ BOOL ExecuteDlgInit(LPVOID lpResource);
  **TRUE** if a dialog resource is executed; otherwise **FALSE**.  
   
 ### Remarks  
- `ExecuteDlgInit` will use resources bound to the executing module, or resources from other sources. To accomplish this, `ExecuteDlgInit` finds a resource handle by calling `AfxFindResourceHandle`. If your MFC application does not use the shared DLL (MFCx0[U][D].DLL), **AfxFindResourceHandle** calls [AfxGetResourceHandle](../Topic/AfxGetResourceHandle.md), which returns the current resource handle for the executable. If your MFC application that uses MFCx0[U][D].DLL, `AfxFindResourceHandle` traverses the **CDynLinkLibrary** object list of shared and extension DLLs looking for the correct resource handle.  
+ `ExecuteDlgInit` will use resources bound to the executing module, or resources from other sources. To accomplish this, `ExecuteDlgInit` finds a resource handle by calling `AfxFindResourceHandle`. If your MFC application does not use the shared DLL (MFCx0[U][D].DLL), **AfxFindResourceHandle** calls [AfxGetResourceHandle](http://msdn.microsoft.com/Library/d0eff6c4-f566-471a-96b7-a5a70a751a92), which returns the current resource handle for the executable. If your MFC application that uses MFCx0[U][D].DLL, `AfxFindResourceHandle` traverses the **CDynLinkLibrary** object list of shared and extension DLLs looking for the correct resource handle.  
   
 ##  <a name="cwnd__filtertooltipmessage"></a>  CWnd::FilterToolTipMessage  
  Called by the framework to display tool tip messages.  
@@ -10278,7 +10277,7 @@ BOOL UpdateData(BOOL bSaveAndValidate = TRUE);
  The framework automatically calls `UpdateData` with `bSaveAndValidate` set to **FALSE** when a modal dialog box is created in the default implementation of [CDialog::OnInitDialog](../../mfc/reference/cdialog-class.md#cdialog__oninitdialog). The call occurs before the dialog box is visible. The default implementation of [CDialog::OnOK](../../mfc/reference/cdialog-class.md#cdialog__onok) calls this member function with `bSaveAndValidate` set to **TRUE** to retrieve the data, and if successful, will close the dialog box. (If the Cancel button is clicked in the dialog box, the dialog box is closed without the data being retrieved.)  
   
 ##  <a name="cwnd__updatedialogcontrols"></a>  CWnd::UpdateDialogControls  
- Call this member function to update the state of dialog buttons and other controls in a dialog box or window that uses the [ON_UPDATE_COMMAND_UI](../Topic/ON_UPDATE_COMMAND_UI.md) callback mechanism.  
+ Call this member function to update the state of dialog buttons and other controls in a dialog box or window that uses the [ON_UPDATE_COMMAND_UI](http://msdn.microsoft.com/Library/c4de3c21-2d2e-4b89-a4ce-d0c0e2d9edc4) callback mechanism.  
   
 ```  
 void UpdateDialogControls(

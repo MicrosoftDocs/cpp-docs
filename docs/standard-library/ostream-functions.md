@@ -20,28 +20,28 @@ manager: "ghogen"
  Terminates a line and flushes the buffer.  
   
 ```  
-template class<_Elem, _Tr> basic_ostream<_Elem, _Tr>& endl(basic_ostream<_Elem, _Tr>& _Ostr);
+template class<Elem, Tr> basic_ostream<Elem, Tr>& endl(basic_ostream<Elem, Tr>& Ostr);
 ```  
   
 ### Parameters  
- `_Elem`  
+ `Elem`  
  The element type.  
   
- `_Ostr`  
+ `Ostr`  
  An object of type `basic_ostream`.  
   
- `_Tr`  
+ `Tr`  
  Character traits.  
   
 ### Return Value  
  An object of type `basic_ostream`.  
   
 ### Remarks  
- The manipulator calls `_Ostr`**.**[put](../standard-library/basic-ostream-class.md#basic_ostream__put)( `_Ostr`**.** [widen](../standard-library/basic-ios-class.md#basic_ios__widen)( **'\n'**)), and then calls `_Ostr`**.**[flush](../standard-library/basic-ostream-class.md#basic_ostream__flush). It returns `_Ostr`.  
+ The manipulator calls `Ostr`**.**[put](../standard-library/basic-ostream-class.md#basic_ostream__put)( `Ostr`**.** [widen](../standard-library/basic-ios-class.md#basic_ios__widen)( **'\n'**)), and then calls `Ostr`**.**[flush](../standard-library/basic-ostream-class.md#basic_ostream__flush). It returns `Ostr`.  
   
 ### Example  
   
-```  
+```cpp  
 // ostream_endl.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -61,28 +61,28 @@ testing
  Terminates a string.  
   
 ```  
-    template class<_Elem, _Tr> basic_ostream<_Elem, _Tr>& ends(basic_ostream<_Elem, _Tr>& _Ostr);
+template class<Elem, Tr> basic_ostream<Elem, Tr>& ends(basic_ostream<Elem, Tr>& Ostr);
 ```  
   
 ### Parameters  
- `_Elem`  
+ `Elem`  
  The element type.  
   
- `_Ostr`  
+ `Ostr`  
  An object of type `basic_ostream`.  
   
- `_Tr`  
+ `Tr`  
  Character traits.  
   
 ### Return Value  
  An object of type `basic_ostream`.  
   
 ### Remarks  
- The manipulator calls `_Ostr`**.**[put](../standard-library/basic-ostream-class.md#basic_ostream__put)( `_Elem`( **'\0'**)). It returns `_Ostr.`  
+ The manipulator calls `Ostr`**.**[put](../standard-library/basic-ostream-class.md#basic_ostream__put)( `Elem`( **'\0'**)). It returns `Ostr.`  
   
 ### Example  
   
-```  
+```cpp  
 // ostream_ends.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -104,28 +104,28 @@ ab c
  Flushes the buffer.  
   
 ```  
-template class<_Elem, _Tr> basic_ostream<_Elem, _Tr>& flush(basic_ostream<_Elem, _Tr>& _Ostr);
+template class<Elem, Tr> basic_ostream<Elem, Tr>& flush(basic_ostream<Elem, Tr>& Ostr);
 ```  
   
 ### Parameters  
- `_Elem`  
+ `Elem`  
  The element type.  
   
- `_Ostr`  
+ `Ostr`  
  An object of type `basic_ostream`.  
   
- `_Tr`  
+ `Tr`  
  Character traits.  
   
 ### Return Value  
  An object of type `basic_ostream`.  
   
 ### Remarks  
- The manipulator calls `_Ostr`**.**[flush](../standard-library/basic-ostream-class.md#basic_ostream__flush). It returns `_Ostr`.  
+ The manipulator calls `Ostr`**.**[flush](../standard-library/basic-ostream-class.md#basic_ostream__flush). It returns `Ostr`.  
   
 ### Example  
   
-```  
+```cpp  
 // ostream_flush.cpp  
 // compile with: /EHsc  
 #include <iostream>  
