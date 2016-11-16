@@ -44,7 +44,7 @@ This topic explains how to use the RFX function calls that make up the body of y
 > [!NOTE]
 >  This topic applies to classes derived from [CRecordset](../../mfc/reference/crecordset-class.md) in which bulk row fetching has not been implemented. If you are using bulk row fetching, bulk record field exchange (Bulk RFX) is implemented. Bulk RFX is similar to RFX. To understand the differences, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
- The RFX global functions exchange data between columns on the data source and field data members in your recordset. You write the RFX function calls in your recordset's [DoFieldExchange](../Topic/CRecordset::DoFieldExchange.md) member function. This topic describes the functions briefly and shows the data types for which RFX functions are available. [Technical Note 43](../../mfc/tn043-rfx-routines.md) describes how to write your own RFX functions for additional data types.  
+ The RFX global functions exchange data between columns on the data source and field data members in your recordset. You write the RFX function calls in your recordset's [DoFieldExchange](../mfc/reference/crecordset-class.md#crecordset__dofieldexchange) member function. This topic describes the functions briefly and shows the data types for which RFX functions are available. [Technical Note 43](../../mfc/tn043-rfx-routines.md) describes how to write your own RFX functions for additional data types.  
   
 ##  <a name="_core_rfx_function_syntax"></a> RFX Function Syntax  
  Each RFX function takes three parameters (and some take an optional fourth or fifth parameter):  

@@ -26,7 +26,7 @@ layout: HubPage
                             </a>
                         </li>
                         <li>
-                            <a href="https://aka.ms/cpp-get-started">
+                            <a href="https://go.microsoft.com/fwlink/?linkid=835686">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -40,7 +40,7 @@ layout: HubPage
                             </a>
                         </li>
                         <li>
-                            <a href="https://aka.ms/cpp-whatsnew2017">
+                            <a href="https://go.microsoft.com/fwlink/?linkid=835685">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -54,7 +54,7 @@ layout: HubPage
                             </a>
                         </li>
                         <li>
-                            <a href="https://aka.ms/cpp-stdlib">
+                            <a href="https://go.microsoft.com/fwlink/?linkid=835676">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -68,12 +68,12 @@ layout: HubPage
                             </a>
                         </li>
                         <li>
-                            <a href="https://aka.ms/cpp-porting">
+                            <a href="https://go.microsoft.com/fwlink/?linkid=835678">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardText">
-                                            <h3>Pointing and Upgrading</h3>
+                                            <h3>Porting and Upgrading</h3>
 											<p>Guidelines for upgrading to Visual Studio 2017 from earlier versions and for porting code from UNIX to Windows.</p>
                                         </div>
                                     </div>
@@ -82,7 +82,7 @@ layout: HubPage
                             </a>
                         </li>
                         <li>
-                            <a href="https://aka.ms/cpp-desktop">
+                            <a href="https://go.microsoft.com/fwlink/?linkid=835680">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -96,7 +96,7 @@ layout: HubPage
                             </a>
                         </li>
                         <li>
-                            <a href="https://aka.ms/cpp-uwp">
+                            <a href="https://go.microsoft.com/fwlink/?linkid=835681">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -110,7 +110,7 @@ layout: HubPage
                             </a>
                         </li>
                         <li>
-                            <a href="https://aka.ms/cpp-xplat">
+                            <a href="https://go.microsoft.com/fwlink/?linkid=835682">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -138,7 +138,7 @@ layout: HubPage
                             </a>
                         </li>
                         <li>
-                            <a href="https://aka.ms/cpp-parallel">
+                            <a href="https://go.microsoft.com/fwlink/?linkid=835683">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -152,7 +152,7 @@ layout: HubPage
                             </a>
                         </li>
                         <li>
-                            <a href="https://aka.ms/cpp-ide">
+                            <a href="https://go.microsoft.com/fwlink/?linkid=835684">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -166,7 +166,7 @@ layout: HubPage
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://go.microsoft.com/fwlink/?linkid=835689">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
