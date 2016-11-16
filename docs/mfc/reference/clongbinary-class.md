@@ -2,7 +2,6 @@
 title: "CLongBinary Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -66,7 +65,7 @@ class CLongBinary : public CObject
  For example, a record field in a SQL table might contain a bitmap representing a picture. A `CLongBinary` object stores such an object and keeps track of its size.  
   
 > [!NOTE]
->  In general, it is better practice now to use [CByteArray](../../mfc/reference/cbytearray-class.md) in conjunction with the [DFX_Binary](../Topic/DFX_Binary.md) function. You can still use `CLongBinary`, but in general `CByteArray` provides more functionality under Win32, since there is no longer the size limitation encountered with 16-bit `CByteArray`. This advice applies to programming with Data Access Objects (DAO) as well as Open Database Connectivity (ODBC).  
+>  In general, it is better practice now to use [CByteArray](../../mfc/reference/cbytearray-class.md) in conjunction with the [DFX_Binary](http://msdn.microsoft.com/Library/678021a3-2e46-44d7-8528-71bb692dcc07) function. You can still use `CLongBinary`, but in general `CByteArray` provides more functionality under Win32, since there is no longer the size limitation encountered with 16-bit `CByteArray`. This advice applies to programming with Data Access Objects (DAO) as well as Open Database Connectivity (ODBC).  
   
  To use a `CLongBinary` object, declare a field data member of type `CLongBinary` in your recordset class. This member will be an embedded member of the recordset class and will be constructed when the recordset is constructed. After the `CLongBinary` object is constructed, the record field exchange (RFX) mechanism loads the data object from a field in the current record on the data source and stores it back to the record when the record is updated. RFX queries the data source for the size of the binary large object, allocates storage for it (via the `CLongBinary` object's `m_hData` data member), and stores an `HGLOBAL` handle to the data in `m_hData`. RFX also stores the actual size of the data object in the `m_dwDataLength` data member. Work with the data in the object through `m_hData`, using the same techniques you would normally use to manipulate the data stored in a Windows `HGLOBAL` handle.  
   

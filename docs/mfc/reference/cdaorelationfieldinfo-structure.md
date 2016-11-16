@@ -2,7 +2,6 @@
 title: "CDaoRelationFieldInfo Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,8 +41,7 @@ The `CDaoRelationFieldInfo` structure contains information about a field in a re
 ## Syntax  
   
 ```  
- 
-    struct CDaoRelationFieldInfo  
+struct CDaoRelationFieldInfo  
 {  
     CString m_strName;           // Primary  
     CString m_strForeignName;    // Primary  

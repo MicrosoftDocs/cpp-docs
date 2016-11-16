@@ -2,7 +2,6 @@
 title: "File Handling and I-O (C++-CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -58,7 +57,7 @@ Demonstrates various file operations using the .NET Framework.
 -   [How to: Write a Text File (C++/CLI)](../dotnet/how-to-write-a-text-file-cpp-cli.md)  
   
 ## Related Sections  
- [File and Stream I-O](../Topic/File%20and%20Stream%20I-O.md)  
+ [File and Stream I-O](http://msdn.microsoft.com/Library/4f4a33a9-66b7-4cd7-a285-4ad3e4276cd2)  
   
 ## See Also  
  [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

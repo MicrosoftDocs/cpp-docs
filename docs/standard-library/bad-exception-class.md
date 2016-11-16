@@ -2,7 +2,6 @@
 title: "bad_exception Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,7 +50,7 @@ class bad_exception    : public exception {};
   
  The value returned by **what** is an implementation-defined C string. None of the member functions throw any exceptions.  
   
- For a list of members inherited by the `bad_exception` class, see [exception Class](../standard-library/exception-class1.md).  
+ For a list of members inherited by the `bad_exception` class, see [exception Class](../standard-library/exception-class.md).  
   
 ## Example  
  See [set_unexpected](../standard-library/exception-functions.md#set_unexpected) for an example of the use of [unexpected](../standard-library/exception-functions.md#unexpected) throwing a `bad_exception`.  
@@ -62,6 +61,6 @@ class bad_exception    : public exception {};
  **Namespace:** std  
   
 ## See Also  
-[exception Class](../standard-library/exception-class1.md)
+[exception Class](../standard-library/exception-class.md)
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

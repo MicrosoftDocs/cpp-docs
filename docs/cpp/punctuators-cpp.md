@@ -2,14 +2,13 @@
 title: "Punctuators (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
+ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
+f1_keywords:
   - ";"
   - ","
   - "{"
@@ -20,19 +19,19 @@ f1_keywords:
   - "]"
   - "!"
   - "%"
-  - "^"
-  - "*"
-  - """
-dev_langs: 
+  - "&#94;"
+  - "&#42;"
+  - "&#34;"
+dev_langs:
   - "C++"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "punctuators"
 ms.assetid: 1521564c-a977-488a-9490-068079897592
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
+translation.priority.ht:
   - "cs-cz"
   - "de-de"
   - "es-es"
@@ -49,15 +48,15 @@ translation.priority.ht:
 ---
 # Punctuators (C++)
 Punctuators in C++ have syntactic and semantic meaning to the compiler but do not, of themselves, specify an operation that yields a value. Some punctuators, either alone or in combination, can also be C++ operators or be significant to the preprocessor.  
-  
+
  Any of the following characters are considered punctuators:  
-  
+
 ```  
 ! % ^ & * ( ) – + = { } | ~  
 [ ] \ ; ' : " < > ? , . / #  
 ```  
-  
+
  The punctuators **[ ]**, **( )**, and **{ }** must appear in pairs after [translation phase](../preprocessor/phases-of-translation.md) 4.  
-  
+
 ## See Also  
  [Lexical Conventions](../cpp/lexical-conventions.md)

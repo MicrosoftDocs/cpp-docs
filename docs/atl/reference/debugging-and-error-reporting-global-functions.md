@@ -2,7 +2,6 @@
 title: "Debugging and Error Reporting Global Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,11 +37,11 @@ These functions provide useful debugging and trace facilities.
   
 |||  
 |-|-|  
-|[AtlHresultFromLastError](../Topic/AtlHresultFromLastError.md)|Returns a `GetLastError` error code in the form of an HRESULT.|  
-|[AtlHresultFromWin32](../Topic/AtlHresultFromWin32.md)|Converts a Win32 error code into an HRESULT.|  
-|[AtlReportError](../Topic/AtlReportError.md)|Sets up **IErrorInfo** to provide error details to a client.|  
-|[AtlThrow](../Topic/AtlThrow.md)|Throws a `CAtlException`.|  
-|[AtlThrowLastWin32](../Topic/AtlThrowLastWin32.md)|Call this function to signal an error based on the result of the Windows function `GetLastError`.|  
+|[AtlHresultFromLastError](http://msdn.microsoft.com/Library/74530d7d-3c91-484c-acf3-aff755715d66)|Returns a `GetLastError` error code in the form of an HRESULT.|  
+|[AtlHresultFromWin32](http://msdn.microsoft.com/Library/63add2dd-274c-4e72-a98c-040b93413a2f)|Converts a Win32 error code into an HRESULT.|  
+|[AtlReportError](http://msdn.microsoft.com/Library/86b046a5-ea18-4ecf-9aab-40fc1eab847c)|Sets up **IErrorInfo** to provide error details to a client.|  
+|[AtlThrow](http://msdn.microsoft.com/Library/2bd111da-8170-488d-914a-c9bf6b6765f7)|Throws a `CAtlException`.|  
+|[AtlThrowLastWin32](http://msdn.microsoft.com/Library/8bce8e56-c7cd-4ebb-8c62-80ebc63a3d07)|Call this function to signal an error based on the result of the Windows function `GetLastError`.|  
 |[AtlTraceLoadSettings](../../misc/atltraceloadsettings.md)|Call this function to load trace settings from a file.|  
 |[AtlTraceSaveSettings](../../misc/atltracesavesettings.md)|Call this function to save the current trace settings to a file.|  
   
@@ -73,7 +72,7 @@ AtlHresultFromWin32{
  Converts a Win32 error code into an HRESULT, using the macro **HRESULT_FROM_WIN32**.  
   
 > [!NOTE]
->  Instead of using **HRESULT_FROM_WIN32(GetLastError())**, use the function [AtlHresultFromLastError](../Topic/AtlHresultFromLastError.md).  
+>  Instead of using **HRESULT_FROM_WIN32(GetLastError())**, use the function [AtlHresultFromLastError](http://msdn.microsoft.com/Library/74530d7d-3c91-484c-acf3-aff755715d66).  
   
 ##  <a name="atlreporterror"></a>  AtlReportError  
  Sets up the `IErrorInfo` interface to provide error information to clients of the object.  

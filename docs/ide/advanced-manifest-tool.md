@@ -2,7 +2,6 @@
 title: "Advanced, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,8 +49,8 @@ Use this dialog box to specify advanced options for [Mt.exe](http://msdn.microso
  Specifies the search path for files that are referenced in `<file>` elements. This option also uses the /hashupdate option.  
   
 ## See Also  
- [\<file> Element](../Topic/%3Cfile%3E%20Element%20\(ClickOnce%20Application\).md)   
- [ClickOnce Application Manifest](/visual-studio/deployment/clickonce-application-manifest)   
+ [\<file> Element](http://msdn.microsoft.com/Library/56e3490c-eed5-4841-b1bf-eefe778b6ac9)   
+ [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)   
  [Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)   
  [How to: Open Project Property Pages](../misc/how-to-open-project-property-pages.md)   
  [How to: Edit Project Property Sheets](../misc/how-to-edit-project-property-sheets.md)

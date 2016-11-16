@@ -2,7 +2,6 @@
 title: "SOCKADDR_IN Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,11 +40,10 @@ In the Internet address family, the `SOCKADDR_IN` structure is used by Windows S
 ## Syntax  
   
 ```  
- 
-    struct sockaddr_in{  
+struct sockaddr_in{  
     short sin_family;  
     unsigned short sin_port;  
-    struct in_addr sin_addr;  
+struct in_addr sin_addr;  
     char sin_zero[8];  
 };  
 ```  

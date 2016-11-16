@@ -2,7 +2,6 @@
 title: "C Runtime Error R6017 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -52,4 +51,4 @@ unexpected multithread lock error
   
  The process received an unexpected error while trying to access a C runtime multithread lock on a system resource. This error usually occurs if the process inadvertently alters the runtime heap data. However, it can also be caused by an internal error in the runtime library or operating-system code.  
   
- To fix this issue, check for heap corruption bugs in your code. For more information and examples, see [CRT Debug Heap Details](/visual-studio/debugger/crt-debug-heap-details). Next, check that you are using the latest redistributables for your app deployment. For information, see [Deployment in Visual C++](../../ide/deployment-in-visual-cpp.md).
+ To fix this issue, check for heap corruption bugs in your code. For more information and examples, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details). Next, check that you are using the latest redistributables for your app deployment. For information, see [Deployment in Visual C++](../../ide/deployment-in-visual-cpp.md).

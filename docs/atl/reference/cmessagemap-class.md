@@ -2,7 +2,6 @@
 title: "CMessageMap Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -102,7 +101,7 @@ virtual BOOL ProcessWindowMessage(HWND hWnd,
  [out] The result of the message processing.  
   
  `dwMsgMapID`  
- [in] The identifier of the message map that will process the message. The default message map, declared with [BEGIN_MSG_MAP](../Topic/BEGIN_MSG_MAP.md), is identified by 0. An alternate message map, declared with [ALT_MSG_MAP(msgMapID)](../Topic/ALT_MSG_MAP.md), is identified by `msgMapID`.  
+ [in] The identifier of the message map that will process the message. The default message map, declared with [BEGIN_MSG_MAP](http://msdn.microsoft.com/Library/8bbb5af9-18b1-48c6-880e-166f599ee554), is identified by 0. An alternate message map, declared with [ALT_MSG_MAP(msgMapID)](http://msdn.microsoft.com/Library/2c8871bf-abc0-4d52-bcf7-6b2ab9eb5af8), is identified by `msgMapID`.  
   
 ### Return Value  
  **TRUE** if the message is fully handled; otherwise, **FALSE**.  
@@ -112,6 +111,6 @@ virtual BOOL ProcessWindowMessage(HWND hWnd,
   
 ## See Also  
  [CDynamicChain Class](../../atl/reference/cdynamicchain-class.md)   
- [BEGIN_MSG_MAP](../Topic/BEGIN_MSG_MAP.md)   
- [ALT_MSG_MAP](../Topic/ALT_MSG_MAP.md)   
+ [BEGIN_MSG_MAP](http://msdn.microsoft.com/Library/8bbb5af9-18b1-48c6-880e-166f599ee554)   
+ [ALT_MSG_MAP](http://msdn.microsoft.com/Library/2c8871bf-abc0-4d52-bcf7-6b2ab9eb5af8)   
  [Class Overview](../../atl/atl-class-overview.md)

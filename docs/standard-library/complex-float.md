@@ -2,7 +2,6 @@
 title: "complex&lt;float&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -82,7 +81,7 @@ constexpr complex(
   
 ## Example  
   
-```  
+```cpp  
 // complex_comp_flt.cpp  
 // compile with: /EHsc  
 #include <complex>  

@@ -2,7 +2,6 @@
 title: "CArchive Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -369,60 +368,20 @@ template<typename BaseType,
     StringTraits>& str);
 
  
-CArchive& operator<<(
-    BYTE by);
-
- 
-CArchive& operator<<(
-    WORD w);
-
- 
-CArchive& operator<<(
-    LONG l);
-
- 
-CArchive& operator<<(
-    DWORD dw);
-
- 
-CArchive& operator<<(
-    float f);
-
- 
-CArchive& operator<<(
-    double d);
-
- 
-CArchive& operator<<(
-    int i);
-
- 
-CArchive& operator<<(
-    short w);
-
- 
-CArchive& operator<<(
-    char ch);
-
- 
-CArchive& operator<<(
-    wchar_t ch);
-
- 
-CArchive& operator<<(
-    unsigned u);
-
- 
-CArchive& operator<<(
-    bool b);
-
- 
-CArchive& operator<<(
-    ULONGLONG dwdw);
-
- 
-CArchive& operator<<(
-    LONGLONG dwdw);
+CArchive& operator<<(BYTE by); 
+CArchive& operator<<(WORD w); 
+CArchive& operator<<(LONG l); 
+CArchive& operator<<(DWORD dw); 
+CArchive& operator<<(float f); 
+CArchive& operator<<(double d); 
+CArchive& operator<<(int i); 
+CArchive& operator<<(short w); 
+CArchive& operator<<(char ch); 
+CArchive& operator<<(wchar_t ch); 
+CArchive& operator<<(unsigned u); 
+CArchive& operator<<(bool b); 
+CArchive& operator<<(ULONGLONG dwdw); 
+CArchive& operator<<(LONGLONG dwdw);
 ```  
   
 ### Return Value  
@@ -492,60 +451,46 @@ template<typename BaseType,
     StringTraits>& str);
 
  
-CArchive& operator>>(
-    BYTE& by);
+CArchive& operator>>(BYTE& by);
 
  
-CArchive& operator>>(
-    WORD& w);
+CArchive& operator>>(WORD& w);
 
  
-CArchive& operator>>(
-    int& i);
+CArchive& operator>>(int& i);
 
  
-CArchive& operator>>(
-    LONG& l);
+CArchive& operator>>(LONG& l);
 
  
-CArchive& operator>>(
-    DWORD& dw);
+CArchive& operator>>(DWORD& dw);
 
  
-CArchive& operator>>(
-    float& f);
+CArchive& operator>>(float& f);
 
  
-CArchive& operator>>(
-    double& d);
+CArchive& operator>>(double& d);
 
  
-CArchive& operator>>(
-    short& w);
+CArchive& operator>>(short& w);
 
  
-CArchive& operator>>(
-    char& ch);
+CArchive& operator>>(char& ch);
 
  
-CArchive& operator>>(
-    wchar_t& ch);
+CArchive& operator>>(wchar_t& ch);
 
  
-CArchive& operator>>(
-    unsigned& u);
+CArchive& operator>>(unsigned& u);
 
  
-CArchive& operator>>(
-    bool& b);
+CArchive& operator>>(bool& b);
 
  
-CArchive& operator>>(
-    ULONGLONG& dwdw);
+CArchive& operator>>(ULONGLONG& dwdw);
 
  
-CArchive& operator>>(
-    LONGLONG& dwdw);
+CArchive& operator>>(LONGLONG& dwdw);
 ```  
   
 ### Return Value  
@@ -572,8 +517,7 @@ CArchive& operator>>(
  Reads a specified number of bytes from the archive.  
   
 ```  
-UINT Read(
-    void* lpBuf,  
+UINT Read(void* lpBuf,  
     UINT nMax);
 ```  
   
@@ -656,8 +600,7 @@ CObject* ReadObject(const CRuntimeClass* pClass);
  Call this member function to read text data into a buffer from the file associated with the `CArchive` object.  
   
 ```  
-BOOL ReadString(
-    CString& rString);
+BOOL ReadString(CString& rString);
 
  
 LPTSTR ReadString(

@@ -2,7 +2,6 @@
 title: "_CrtCheckMemory | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -77,7 +76,7 @@ int _CrtCheckMemory( void );
 _ASSERTE( _CrtCheckMemory( ) );  
 ```  
   
- For more information about how `_CrtCheckMemory` can be used with other debug functions, see [Heap State Reporting Functions](/visual-studio/debugger/crt-debug-heap-details). For an overview of memory management and the debug heap, see [CRT Debug Heap Details](/visual-studio/debugger/crt-debug-heap-details).  
+ For more information about how `_CrtCheckMemory` can be used with other debug functions, see [Heap State Reporting Functions](/visualstudio/debugger/crt-debug-heap-details). For an overview of memory management and the debug heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).  
   
 ## Requirements  
   

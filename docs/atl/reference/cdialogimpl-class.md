@@ -2,7 +2,6 @@
 title: "CDialogImpl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -333,5 +332,5 @@ static LRESULT CALLBACK StartDialogProc(
  After the initial call to `StartDialogProc`, `DialogProc` is set as a dialog procedure, and further calls go there.  
   
 ## See Also  
- [BEGIN_MSG_MAP](../Topic/BEGIN_MSG_MAP.md)   
+ [BEGIN_MSG_MAP](http://msdn.microsoft.com/Library/8bbb5af9-18b1-48c6-880e-166f599ee554)   
  [Class Overview](../../atl/atl-class-overview.md)

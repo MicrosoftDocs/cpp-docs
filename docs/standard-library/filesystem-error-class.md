@@ -2,7 +2,6 @@
 title: "filesystem_error Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -10,7 +9,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "filesystem/std::tr2::sys::filesystem_error"
+  - "filesystem/std::experimental::filesystem::filesystem_error"
 dev_langs: 
   - "C++"
 ms.assetid: c53aac27-c1fa-43e4-8967-48ea8ba1f172
@@ -90,7 +89,7 @@ const char *what() const noexcept;
 ## Requirements  
  **Header:** filesystem  
   
- **Namespace:** std::tr2::sys  
+ **Namespace:** std::experimental::filesystem  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   

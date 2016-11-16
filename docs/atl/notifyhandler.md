@@ -2,7 +2,6 @@
 title: "NotifyHandler | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -64,7 +63,7 @@ The name of the function identified by the third parameter of the `NOTIFY_HANDLE
  The result of message processing. 0 if successful.  
   
 ## Remarks  
- For an example of using this message handler in a message map, see [NOTIFY_HANDLER](../Topic/NOTIFY_HANDLER.md).  
+ For an example of using this message handler in a message map, see [NOTIFY_HANDLER](http://msdn.microsoft.com/Library/0c546767-9683-45f9-9cbc-e243a7106790).  
   
 ## See Also  
  [Implementing a Window](../atl/implementing-a-window.md)   

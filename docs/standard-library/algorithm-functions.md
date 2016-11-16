@@ -275,7 +275,7 @@ manager: "ghogen"
 # &lt;algorithm&gt; functions
 ||||  
 |-|-|-|  
-|[&lt;alg&gt; move](#alg_move)|[adjacent_find](#adjacent_find)|[all_of](#all_of)|  
+|[move](#alg_move)|[adjacent_find](#adjacent_find)|[all_of](#all_of)|  
 |[any_of](#any_of)|[binary_search](#binary_search)|[copy](#copy)|  
 |[copy_backward](#copy_backward)|[copy_if](#copy_if)|[copy_n](#copy_n)|  
 |[count](#count)|[count_if](#count_if)|[equal](#equal)|  
@@ -311,28 +311,28 @@ manager: "ghogen"
 ```  
 template<class ForwardIterator>  
     ForwardIterator adjacent_find(  
-        ForwardIterator _First,   
-        ForwardIterator _Last);
+        ForwardIterator first,   
+        ForwardIterator last);
   
 template<class ForwardIterator , class BinaryPredicate>  
     ForwardIterator adjacent_find(  
-        ForwardIterator _First,   
-        ForwardIterator _Last,   
-        BinaryPredicate _Comp);  
+        ForwardIterator first,   
+        ForwardIterator last,   
+        BinaryPredicate comp);  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A forward iterator addressing the position of the first element in the range to be searched.  
   
- `_Last`  
+ `last`  
  A forward iterator addressing the position one past the final element in the range to be searched.  
   
- `_Comp`  
+ `comp`  
  The binary predicate giving the condition to be satisfied by the values of the adjacent elements in the range being searched.  
   
 ### Return Value  
- A forward iterator to the first element of the adjacent pair that are either equal to each other (in the first version) or that satisfy the condition given by the binary predicate (in the second version), provided that such a pair of elements is found. Otherwise, an iterator pointing to `_Last` is returned.  
+ A forward iterator to the first element of the adjacent pair that are either equal to each other (in the first version) or that satisfy the condition given by the binary predicate (in the second version), provided that such a pair of elements is found. Otherwise, an iterator pointing to `last` is returned.  
   
 ### Remarks  
  The `adjacent_find` algorithm is a nonmutating sequence algorithm. The range to be searched must be valid; all pointers must be dereferenceable and the last position is reachable from the first by incrementation. The time complexity of the algorithm is linear in the number of elements contained in the range.  
@@ -407,26 +407,26 @@ There are two adjacent elements where the second is twice the first.
 ```  
 template<class InputIterator, class Predicate>  
     bool all_of(  
-        InputIterator_First,   
-        InputIterator_Last,   
-        BinaryPredicate_Comp);  
+        InputIterator first,   
+        InputIterator last,   
+        BinaryPredicatecomp);  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  An input iterator that indicates where to start to check for a condition. The iterator marks where a range of elements starts.  
   
- `_Last`  
+ `last`  
  An input iterator that indicates the end of the range of elements to check for a condition.  
   
- `_Comp`  
+ `comp`  
  A condition to test for. This is a user-defined predicate function object that defines the condition to be satisfied by an element being checked. A predicate takes a single argument and returns `true` or `false`.  
   
 ### Return Value  
  Returns `true` if the condition is detected at each element in the indicated range, and `false` if the condition is not detected at least one time.  
   
 ### Remarks  
- The template function returns `true` only if, for each `N` in the range `[0,Last - _First)`, the predicate `_Comp(*(_First + N))` is `true`.  
+ The template function returns `true` only if, for each `N` in the range `[0,Last - first)`, the predicate `comp(*(_First + N))` is `true`.  
   
 ##  <a name="any_of"></a>  any_of  
  Returns `true` when a condition is present at least once in the specified range of elements.  
@@ -434,19 +434,19 @@ template<class InputIterator, class Predicate>
 ```  
 template<class InputIterator, class UnaryPredicate>  
     bool any_of(  
-        InputIterator _First,   
-        InputIterator _Last,   
-        UnaryPredicate _Comp);  
+        InputIterator first,   
+        InputIterator last,   
+        UnaryPredicate comp);  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  An input iterator that indicates where to start checking a range of elements for a condition.  
   
- `_Last`  
+ `last`  
  An input iterator that indicates the end of the range of elements to check for a condition.  
   
- `_Comp`  
+ `comp`  
  A condition to test for. This is provided by a user-defined predicate function object. The predicate defines the condition to be satisfied by the element being tested. A predicate takes a single argument and returns `true` or `false`.  
   
 ### Return Value  
@@ -455,7 +455,7 @@ template<class InputIterator, class UnaryPredicate>
 ### Remarks  
  The template function returns `true` only if, for some `N` in the range  
   
- `[0,`  `_Last`  `-`  `_First` `)`, the predicate `_Comp``(*(``_First` `+ N))` is true.  
+ `[0,`  `last`  `-`   `first` `)`, the predicate `comp``(*(` `first` `+ N))` is true.  
   
 ##  <a name="binary_search"></a>  binary_search  
  Tests whether there is an element in a sorted range that is equal to a specified value or that is equivalent to it in a sense specified by a binary predicate.  
@@ -591,28 +591,28 @@ int main( )
 ```  
 template<class InputIterator, class OutputIterator>  
     OutputIterator copy(
-        InputIterator _First, 
-        InputIterator _Last, 
-        OutputIterator _DestBeg);  
+        InputIterator first, 
+        InputIterator last, 
+        OutputIterator destBeg);  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  An input iterator addressing the position of the first element in the source range.  
   
- `_Last`  
+ `last`  
  An input iterator addressing the position that is one past the final element in the source range.  
   
- *_DestBeg*  
+ *destBeg*  
  An output iterator addressing the position of the first element in the destination range.  
   
 ### Return Value  
- An output iterator addressing the position that is one past the final element in the destination range, that is, the iterator addresses `_Result` + ( `_Last` – `_First` ).  
+ An output iterator addressing the position that is one past the final element in the destination range, that is, the iterator addresses `result` + ( `last` –  `first` ).  
   
 ### Remarks  
  The source range must be valid and there must be sufficient space at the destination to hold all the elements being copied.  
   
- Because the algorithm copies the source elements in order beginning with the first element, the destination range can overlap with the source range provided the `_Last` position of the source range is not contained in the destination range. **copy** can be used to shift elements to the left but not the right, unless there is no overlap between the source and destination ranges. To shift to the right any number of positions, use the [copy_backward](../standard-library/algorithm-functions.md#copy_backward) algorithm.  
+ Because the algorithm copies the source elements in order beginning with the first element, the destination range can overlap with the source range provided the `last` position of the source range is not contained in the destination range. **copy** can be used to shift elements to the left but not the right, unless there is no overlap between the source and destination ranges. To shift to the right any number of positions, use the [copy_backward](../standard-library/algorithm-functions.md#copy_backward) algorithm.  
   
  The **copy** algorithm only modifies values pointed to by the iterators, assigning new values to elements in the destination range. It cannot be used to create new elements and cannot insert elements into an empty container directly.  
   
@@ -682,23 +682,23 @@ v2 with shifted insert = ( 0 3 0 10 20 10 20 21 24 27 30 )
 ```  
 template<class BidirectionalIterator1, class BidirectionalIterator2>  
     BidirectionalIterator2 copy_backward(
-        BidirectionalIterator1 _First, 
-        BidirectionalIterator1 _Last, 
-        BidirectionalIterator2 _DestEnd);  
+        BidirectionalIterator1 first, 
+        BidirectionalIterator1 last, 
+        BidirectionalIterator2 destEnd);  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A bidirectional iterator addressing the position of the first element in the source range.  
   
- `_Last`  
+ `last`  
  A bidirectional iterator addressing the position that is one past the final element in the source range.  
   
- `_DestEnd`  
+ `destEnd`  
  A bidirectional iterator addressing the position of one past the final element in the destination range.  
   
 ### Return Value  
- An output iterator addressing the position that is one past the final element in the destination range, that is, the iterator addresses `_DestEnd` – ( `_Last` – `_First` ).  
+ An output iterator addressing the position that is one past the final element in the destination range, that is, the iterator addresses `destEnd` – ( `last` –  `first` ).  
   
 ### Remarks  
  The source range must be valid and there must be sufficient space at the destination to hold all the elements being copied.  
@@ -707,7 +707,7 @@ template<class BidirectionalIterator1, class BidirectionalIterator2>
   
  The `copy_backward` and [move_backward](../standard-library/algorithm-functions.md#move_backward) algorithms are the only Standard Template Library algorithms designating the output range with an iterator pointing to the end of the destination range.  
   
- Because the algorithm copies the source elements in order beginning with the last element, the destination range can overlap with the source range provided the `_First` position of the source range is not contained in the destination range. `copy_backward` can be used to shift elements to the right but not the left, unless there is no overlap between the source and destination ranges. To shift to the left any number of positions, use the [copy](../standard-library/algorithm-functions.md#copy) algorithm.  
+ Because the algorithm copies the source elements in order beginning with the last element, the destination range can overlap with the source range provided the  `first` position of the source range is not contained in the destination range. `copy_backward` can be used to shift elements to the right but not the left, unless there is no overlap between the source and destination ranges. To shift to the left any number of positions, use the [copy](../standard-library/algorithm-functions.md#copy) algorithm.  
   
  The `copy_backward` algorithm only modifies values pointed to by the iterators, assigning new values to elements in the destination range. It cannot be used to create new elements and cannot insert elements into an empty container directly.  
   
@@ -768,34 +768,34 @@ int main() {
 ```  
 template<class InputIterator, class OutputIterator, class BinaryPredicate>  
     OutputIterator copy_if(  
-        InputIterator _First,   
-        InputIterator _Last,  
-        OutputIterator _Dest,  
-        Predicate _Pred);  
+        InputIterator first,   
+        InputIterator last,  
+        OutputIterator dest,  
+        Predicate pred);  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  An input iterator that indicates the start of a range to check for the condition.  
   
- `_Last`  
+ `last`  
  An input iterator that indicates the end of the range.  
   
- `_Dest`  
+ `dest`  
  The output iterator that indicates the destination for the copied elements.  
   
  `_Pred`  
  The condition against which every element in the range is tested. This condition is provided by a user-defined predicate function object. A predicate takes one argument and returns `true` or `false`.  
   
 ### Return Value  
- An output iterator that equals `_Dest` incremented once for each element that fulfills the condition. In other words, the return value minus `_Dest` equals the number of copied elements.  
+ An output iterator that equals `dest` incremented once for each element that fulfills the condition. In other words, the return value minus `dest` equals the number of copied elements.  
   
 ### Remarks  
  The template function evaluates  
   
- `if (_Pred(*_First + N)) * _Dest++ = *(_First + N))`  
+ `if (_Pred(*_First + N)) * dest++ = *(_First + N))`  
   
- once for each `N` in the range `[0, _Last - _First)`, for strictly increasing values of `N` starting with the lowest value. If `_Dest` and `_First` designate regions of storage, `_Dest` must not be in the range `[``_First``,` `_Last``)`.  
+ once for each `N` in the range `[0, last - first)`, for strictly increasing values of `N` starting with the lowest value. If `dest` and  `first` designate regions of storage, `dest` must not be in the range `[` `first``,` `last``)`.  
   
 ##  <a name="copy_n"></a>  copy_n  
  Copies a specified number of elements.  
@@ -830,23 +830,23 @@ template<class InputIterator, class Size, class OutputIterator>
 ```  
 template<class InputIterator, class Type> 
     typename iterator_traits<InputIterator>::difference_type count(
-        InputIterator _First, 
-        InputIterator _Last, 
-        const Type& _Val);  
+        InputIterator first, 
+        InputIterator last, 
+        const Type& val);  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  An input iterator addressing the position of the first element in the range to be traversed.  
   
- `_Last`  
+ `last`  
  An input iterator addressing the position one past the final element in the range to be traversed.  
   
- `_Val`  
+ `val`  
  The value of the elements to be counted.  
   
 ### Return Value  
- The difference type of the **InputIterator** that counts the number of elements in the range [ `_First`, `_Last` ) that have value `_Val`.  
+ The difference type of the **InputIterator** that counts the number of elements in the range [  `first`, `last` ) that have value `val`.  
   
 ### Remarks  
  The `operator==` used to determine the match between an element and the specified value must impose an equivalence relation between its operands.  
@@ -896,16 +896,16 @@ The number of 10s in v2 is: 3.
 ```  
 template<class InputIterator, class Predicate>
     typename iterator_traits<InputIterator>::difference_type count_if(
-        InputIterator _First, 
-        InputIterator _Last, 
-        Predicate _Pred);  
+        InputIterator first, 
+        InputIterator last, 
+        Predicate pred);  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  An input iterator addressing the position of the first element in the range to be searched.  
   
- `_Last`  
+ `last`  
  An input iterator addressing the position one past the final element in the range to be searched.  
   
  `_Pred`  
@@ -1226,20 +1226,20 @@ int main()
 ```  
 template<class ForwardIterator, class Type>  
 void fill(
-    ForwardIterator _First, 
-    ForwardIterator _Last, 
-    const Type& _Val);  
+    ForwardIterator first, 
+    ForwardIterator last, 
+    const Type& val);  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A forward iterator addressing the position of the first element in the range to be traversed.  
   
- `_Last`  
+ `last`  
  A forward iterator addressing the position one past the final element in the range to be traversed.  
   
- `_Val`  
- The value to be assigned to elements in the range [ `_First`, `_Last`).  
+ `val`  
+ The value to be assigned to elements in the range [  `first`, `last`).  
   
 ### Remarks  
  The destination range must be valid; all pointers must be dereferenceable, and the last position is reachable from the first by incrementation. The complexity is linear with the size of the range.  
@@ -1304,7 +1304,7 @@ OutputIterator fill_n(
  A signed or unsigned integer type specifying the number of elements to be assigned the value.  
   
  `Val`  
- The value to be assigned to elements in the range [ `First`,                                 *First + Count*).  
+ The value to be assigned to elements in the range [ `First`,          *First + Count*).  
   
 ### Return Value  
  An iterator to the element that follows the last element filled if `Count` > zero, otherwise the first element.  
@@ -1536,34 +1536,34 @@ There is a sequence of elements in v1 that are equivalent to those
 ```  
 template<class ForwardIterator1, class ForwardIterator2>  
 ForwardIterator1 find_first_of(    
-    ForwardIterator1  _First1,  
+    ForwardIterator1  first1,  
     ForwardIterator1 Last1,  
-    ForwardIterator2  _First2,  
+    ForwardIterator2  first2,  
     ForwardIterator2 Last2);  
   
 template<class ForwardIterator1, class ForwardIterator2, class BinaryPredicate>  
 ForwardIterator1 find_first_of(  
-    ForwardIterator1  _First1,  
+    ForwardIterator1  first1,  
     ForwardIterator1 Last1,  
-    ForwardIterator2  _First2,  
+    ForwardIterator2  first2,  
     ForwardIterator2 Last2,  
-    BinaryPredicate  _Comp);  
+    BinaryPredicate  comp);  
 ```  
   
 ### Parameters  
- `_First1`  
+  `first1`  
  A forward iterator addressing the position of the first element in the range to be searched.  
   
- `_Last1`  
+ `last1`  
  A forward iterator addressing the position one past the final element in the range to be searched.  
   
- `_First2`  
+  `first2`  
  A forward iterator addressing the position of the first element in the range to be matched.  
   
- `_Last2`  
+ `last2`  
  A forward iterator addressing the position one past the final element in the range to be matched.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.  
   
 ### Return Value  
@@ -1821,16 +1821,16 @@ InputIterator find_if_not(
 ```  
 template<class InputIterator, class Function>  
 Function for_each(
-    InputIterator _First, 
-    InputIterator _Last, 
+    InputIterator first, 
+    InputIterator last, 
     Function _Func);  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  An input iterator addressing the position of the first element in the range to be operated on.  
   
- `_Last`  
+ `last`  
  An input iterator addressing the position one past the final element in the range operated on.  
   
  `_Func`  
@@ -1844,7 +1844,7 @@ Function for_each(
   
  The range referenced must be valid; all pointers must be dereferenceable and, within the sequence, the last position must be reachable from the first by incrementation.  
   
- The complexity is linear with at most ( `_Last` – `_First`) comparisons.  
+ The complexity is linear with at most ( `last` –  `first`) comparisons.  
   
 ### Example  
   
@@ -1863,7 +1863,7 @@ private:
    Type Factor;   // The value to multiply by  
 public:  
    // Constructor initializes the value to multiply by  
-   MultValue ( const Type& _Val ) : Factor ( _Val ) {  
+   MultValue ( const Type& val ) : Factor ( val ) {  
    }  
   
    // The function call for the element to be multiplied  
@@ -1965,16 +1965,16 @@ The average of the elements of v1 is:
 ```  
 template<class ForwardIterator, class Generator>  
 void generate(
-    ForwardIterator _First, 
-    ForwardIteratorLast, 
+    ForwardIterator first, 
+    ForwardIterator last, 
     Generator _Gen);  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A forward iterator addressing the position of the first element in the range to which values are to be assigned.  
   
- `_Last`  
+ `last`  
  A forward iterator addressing the position one past the final element in the range to which values are to be assigned.  
   
  `_Gen`  
@@ -1985,7 +1985,7 @@ void generate(
   
  The range referenced must be valid; all pointers must be dereferenceable and, within the sequence, the last position must be reachable from the first by incrementation.  
   
- The complexity is linear, with exactly ( `_Last` – `_First`) calls to the generator being required.  
+ The complexity is linear, with exactly ( `last` –  `first`) calls to the generator being required.  
   
 ### Example  
   
@@ -2108,34 +2108,34 @@ int main()
 ```  
 template<class InputIterator1, class InputIterator2>  
 bool includes(  
-    InputIterator1 _First1,  
-    InputIterator1 _Last1,  
-    InputIterator2 _First2,  
-    InputIterator2 _Last2);  
+    InputIterator1 first1,  
+    InputIterator1 last1,  
+    InputIterator2 first2,  
+    InputIterator2 last2);  
   
 template<class InputIterator1, class InputIterator2, class BinaryPredicate>  
 bool includes(  
-    InputIterator1 _First1,  
-    InputIterator1 _Last1,  
-    InputIterator2 _First2,  
-    InputIterator2 _Last2,  
-    BinaryPredicate _Comp );  
+    InputIterator1 first1,  
+    InputIterator1 last1,  
+    InputIterator2 first2,  
+    InputIterator2 last2,  
+    BinaryPredicate comp );  
 ```  
   
 ### Parameters  
- `_First1`  
+  `first1`  
  An input iterator addressing the position of the first element in the first of two sorted source ranges to be tested for whether all the elements of the second are contained in the first.  
   
- `_Last1`  
+ `last1`  
  An input iterator addressing the position one past the last element in the first of two sorted source ranges to be tested for whether all the elements of the second are contained in the first.  
   
- `_First2`  
+  `first2`  
  An input iterator addressing the position of the first element in second of two consecutive sorted source ranges to be tested for whether all the elements of the second are contained in the first.  
   
- `_Last2`  
+ `last2`  
  An input iterator addressing the position one past the last element in second of two consecutive sorted source ranges to be tested for whether all the elements of the second are contained in the first.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.  
   
 ### Return Value  
@@ -2152,7 +2152,7 @@ bool includes(
   
  The value types of the input iterators need be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. More precisely, the algorithm tests whether all the elements in the first sorted range under a specified binary predicate have equivalent ordering to those in the second sorted range.  
   
- The complexity of the algorithm is linear with at most 2 \* ( (                        *_Last1 – _First1*) – (                        *_Last2 – _First2*) ) – 1 comparisons for nonempty source ranges.  
+ The complexity of the algorithm is linear with at most 2 \* ( ( *last1 – first1*) – ( * last2 – first2*) ) – 1 comparisons for nonempty source ranges.  
   
 ### Example  
   
@@ -2309,29 +2309,29 @@ At least one of the elements in vector v3b is  not contained under mod_lesser in
 ```  
 template<class BidirectionalIterator>  
 void inplace_merge(      
-    BidirectionalIterator _First,   
-    BidirectionalIterator _Middle,  
-    BidirectionalIterator _Last);  
+    BidirectionalIterator first,   
+    BidirectionalIterator middle,  
+    BidirectionalIterator last);  
   
 template<class BidirectionalIterator, class Predicate>  
 void inplace_merge(  
-    BidirectionalIterator _First,   
-    BidirectionalIterator _Middle,  
-    BidirectionalIterator _Last,  
-    Predicate _Comp);  
+    BidirectionalIterator first,   
+    BidirectionalIterator middle,  
+    BidirectionalIterator last,  
+    Predicate comp);  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A bidirectional iterator addressing the position of the first element in the first of two consecutive sorted ranges to be combined and sorted into a single range.  
   
- `_Middle`  
+ `middle`  
  A bidirectional iterator addressing the position of the first element in the second of two consecutive sorted ranges to be combined and sorted into a single range.  
   
- `_Last`  
+ `last`  
  A bidirectional iterator addressing the position one past the last element in the second of two consecutive sorted ranges to be combined and sorted into a single range.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines the sense in which one element is greater than another. The binary predicate takes two arguments and should return **true** when the first element is less than the second element and **false** otherwise.  
   
 ### Remarks  
@@ -2339,7 +2339,7 @@ void inplace_merge(
   
  The sorted consecutive ranges must each be arranged as a precondition to the application of the `inplace_merge` algorithm in accordance with the same ordering as is to be used by the algorithm to sort the combined ranges. The operation is stable as the relative order of elements within each range is preserved. When there are equivalent elements in both source ranges, the element is the first range precedes the element from the second in the combined range.  
   
- The complexity depends on the available memory as the algorithm allocates memory to a temporary buffer. If sufficient memory is available, the best case is linear with (                        *_Last – _First*) – 1 comparisons; if no auxiliary memory is available, the worst case is                         *N* log *(N)*, where                         *N* = (                        *_Last – _First*).  
+ The complexity depends on the available memory as the algorithm allocates memory to a temporary buffer. If sufficient memory is available, the best case is linear with ( * last – first*) – 1 comparisons; if no auxiliary memory is available, the worst case is  *N* log *(N)*, where  *N* = ( * last – first*).  
   
 ### Example  
   
@@ -2458,35 +2458,35 @@ Merged inplace with binary predicate mod_lesser specified,
 ```  
 template<class RandomAccessIterator>  
 bool is_heap(  
-    RandomAccessIterator _First,  
-    RandomAccessIterator _Last);  
+    RandomAccessIterator first,  
+    RandomAccessIterator last);  
 
 template<class RandomAccessIterator, class BinaryPredicate>  
 bool is_heap(  
-    RandomAccessIterator _First,  
-    RandomAccessIterator _Last,  
-    BinaryPredicate _Comp);   
+    RandomAccessIterator first,  
+    RandomAccessIterator last,  
+    BinaryPredicate comp);   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A random access iterator that indicates the start of a range to check for a heap.  
   
- `_Last`  
+ `last`  
  A random access iterator that indicates the end of a range.  
   
- `_Comp`  
+ `comp`  
  A condition to test to order elements. A binary predicate takes a single argument and returns `true`or `false`.  
   
 ### Return Value  
  Returns `true` if the elements in the specified range form a heap, `false` if they do not.  
   
 ### Remarks  
- The first template function returns [is_heap_until](../standard-library/algorithm-functions.md#is_heap_until)`(``_First``,` `_Last``) ==` `_Last`.  
+ The first template function returns [is_heap_until](../standard-library/algorithm-functions.md#is_heap_until)`(` `first``,` `last``) ==` `last`.  
   
  The second template function returns  
   
- `is_heap_until` `(` `_First` `,`  `_Last` `,`  `_Comp` `) ==`  `_Last`.  
+ `is_heap_until` `(`  `first` `,`  `last` `,`  `comp` `) ==`  `last`.  
   
 ##  <a name="is_heap_until"></a>  is_heap_until  
  Returns an iterator positioned at the first element in the range [ `begin`, `end`) that does not satisfy the heap ordering condition, or `end` if the range forms a heap.  
@@ -2528,26 +2528,26 @@ RandomAccessIterator is_heap_until(
 ```  
 template<class InputIterator, class BinaryPredicate>  
 bool is_partitioned(  
-    InputIterator _First,   
-    InputIterator _Last,  
-    BinaryPredicate _Comp);  
+    InputIterator first,   
+    InputIterator last,  
+    BinaryPredicate comp);  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  An input iterator that indicates where a range starts to check for a condition.  
   
- `_Last`  
+ `last`  
  An input iterator that indicates the end of a range.  
   
- `_Comp`  
+ `comp`  
  The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be satisfied by the element being searched for. A predicate takes a single argument and returns `true`or `false`.  
   
 ### Return Value  
  Returns true when all of the elements in the given range that test `true` for a condition come before any elements that test `false`, and otherwise returns `false`.  
   
 ### Remarks  
- The template function returns `true` only if all elements in `[``_First``,` `_Last``)` are partitioned by `_Comp`; that is, all elements `X` in `[``_First``,` `_Last``)` for which `_Comp``(X)` is true occur before all elements `Y` for which `_Comp``(Y)` is `false`.  
+ The template function returns `true` only if all elements in `[` `first``,` `last``)` are partitioned by `comp`; that is, all elements `X` in `[` `first``,` `last``)` for which `comp``(X)` is true occur before all elements `Y` for which `comp``(Y)` is `false`.  
   
 ##  <a name="is_permutation"></a>  is_permutation  
  Returns true if both ranges contain the same elements, whether or not the elements are in the same order. Use the dual-range overloads in C++14 code because the overloads that only take a single iterator for the second range will not detect differences if the second range is longer than the first range, and will result in undefined behavior if the second range is shorter than the first range.  
@@ -2671,30 +2671,30 @@ int main()
 ```  
 template<class ForwardIterator>  
 bool is_sorted(  
-    ForwardIterator _First,   
-    ForwardIterator _Last);
+    ForwardIterator first,   
+    ForwardIterator last);
 
 template<class ForwardIterator, class BinaryPredicate>  
 bool is_sorted(  
-    ForwardIterator _First,   
-    ForwardIterator _Last,   
-    BinaryPredicate _Comp);  
+    ForwardIterator first,   
+    ForwardIterator last,   
+    BinaryPredicate comp);  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A forward iterator that indicates where the range to check begins.  
   
- `_Last`  
+ `last`  
  A forward iterator that indicates the end of a range.  
   
- `_Comp`  
+ `comp`  
  The condition to test to determine an order between two elements. A predicate takes a single argument and returns `true` or `false`. This performs the same task as `operator<`.  
   
 ### Remarks  
- The first template function returns [is_sorted_until](http://msdn.microsoft.com/en-us/bbad99d0-deaa-4fe6-ae58-eb5b3e4dded0)`(``_First``,` `_Last``) ==` `_Last`. The operator< function performs the order comparison.  
+ The first template function returns [is_sorted_until](http://msdn.microsoft.com/en-us/bbad99d0-deaa-4fe6-ae58-eb5b3e4dded0)`(` `first``,` `last``) ==` `last`. The operator< function performs the order comparison.  
   
- The second template function returns `is_sorted_until``(``_First``,` `_Last``,` `_Comp``) ==` `_Last`. The `_Comp` predicate function performs the order comparison.  
+ The second template function returns `is_sorted_until``(` `first``,` `last``,` `comp``) ==` `last`. The `comp` predicate function performs the order comparison.  
   
 ##  <a name="is_sorted_until"></a>  is_sorted_until  
  Returns a `ForwardIterator` that is set to the last element that is in sorted order from a specified range.  
@@ -2704,49 +2704,49 @@ bool is_sorted(
 ```  
 template<class ForwardIterator>  
     ForwardIterator is_sorted_until(  
-        ForwardIterator _First,   
-        ForwardIterator _Last  
+        ForwardIterator first,   
+        ForwardIterator last  
     );  
 template<class ForwardIterator, class BinaryPredicate>  
     ForwardIterator is_sorted_until(  
-        ForwardIterator _First,   
-        ForwardIterator _Last,   
-        BinaryPredicate _Comp  
+        ForwardIterator first,   
+        ForwardIterator last,   
+        BinaryPredicate comp  
     );  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A forward iterator that indicates where the range to check starts.  
   
- `_Last`  
+ `last`  
  A forward iterator that indicates the end of a range.  
   
- `_Comp`  
+ `comp`  
  The condition to test to determine an order between two elements. A predicate takes a single argument and returns `true` or `false`.  
   
 ### Return Value  
- Returns a `ForwardIterator` set to the last element in sorted order. The sorted sequence starts from `_First`.  
+ Returns a `ForwardIterator` set to the last element in sorted order. The sorted sequence starts from  `first`.  
   
 ### Remarks  
- The first template function returns the last iterator `next` in `[``_First``,` `_Last``]` so that `[``_First``, next)` is a sorted sequence ordered by `operator<`. If `distance()` `< 2` the function returns `_Last`.  
+ The first template function returns the last iterator `next` in `[` `first``,` `last``]` so that `[` `first``, next)` is a sorted sequence ordered by `operator<`. If `distance()` `< 2` the function returns `last`.  
   
- The second template function behaves the same, except that it replaces `operator<(X, Y)` with `_Comp``(X, Y)`.  
+ The second template function behaves the same, except that it replaces `operator<(X, Y)` with `comp``(X, Y)`.  
   
 ##  <a name="iter_swap"></a>  iter_swap  
  Exchanges two values referred to by a pair of specified iterators.  
   
 ```  
 template<class ForwardIterator1, class ForwardIterator2>  
-void iter_swap( ForwardIterator1 _Left, ForwardIterator2 _Right );  
+void iter_swap( ForwardIterator1 left, ForwardIterator2 right );  
   
 ```  
   
 ### Parameters  
- `_Left`  
+ `left`  
  One of the forward iterators whose value is to be exchanged.  
   
- `_Right`  
+ `right`  
  The second of the forward iterators whose value is to be exchanged.  
   
 ### Remarks  
@@ -2893,35 +2893,35 @@ After exchanging first elements,
 ```  
 template<class InputIterator1, class InputIterator2>  
  bool lexicographical_compare(  
-     InputIterator1  _First1,  
+     InputIterator1  first1,  
      InputIterator1 Last1,  
-     InputIterator2  _First2,  
+     InputIterator2  first2,  
      InputIterator2 Last2  );  
   
 template<class InputIterator1, class InputIterator2, class BinaryPredicate>  
 bool lexicographical_compare(  
-     InputIterator1  _First1,  
+     InputIterator1  first1,  
      InputIterator1 Last1,  
-     InputIterator2  _First2,  
+     InputIterator2  first2,  
      InputIterator2 Last2,  
-     BinaryPredicate  _Comp  );  
+     BinaryPredicate  comp  );  
   
 ```  
   
 ### Parameters  
- `_First1`  
+  `first1`  
  An input iterator addressing the position of the first element in the first range to be compared.  
   
- `_Last1`  
+ `last1`  
  An input iterator addressing the position one past the final element in the first range to be compared.  
   
- `_First2`  
+  `first2`  
  An input iterator addressing the position of the first element in the second range to be compared.  
   
- `_Last2`  
+ `last2`  
  An input iterator addressing the position one past the final element in the second range to be compared.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.  
   
 ### Return Value  
@@ -3174,25 +3174,25 @@ int main( )
 ```  
  template<class RandomAccessIterator>  
  void make_heap(  
-     RandomAccessIterator _First,  
-     RandomAccessIteratorLast );  
+     RandomAccessIterator first,  
+     RandomAccessIterator last );  
   
 template<class RandomAccessIterator, class BinaryPredicate>   
 void make_heap(   
-     RandomAccessIterator _First,  
-     RandomAccessIteratorLast,  
-     BinaryPredicate _Comp );  
+     RandomAccessIterator first,  
+     RandomAccessIterator last,  
+     BinaryPredicate comp );  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A random-access iterator addressing the position of the first element in the range to be converted into a heap.  
   
- `_Last`  
+ `last`  
  A random-access iterator addressing the position one past the final element in the range to be converted into a heap.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.  
   
 ### Remarks  
@@ -3204,7 +3204,7 @@ void make_heap(
   
  Heaps are an ideal way to implement priority queues and they are used in the implementation of the Standard Template Library container adaptor [priority_queue Class](../standard-library/priority-queue-class.md).  
   
- The complexity is linear, requiring 3 \* (                        *_Last – _First*) comparisons.  
+ The complexity is linear, requiring 3 \* ( * last – first*) comparisons.  
   
 ### Example  
   
@@ -3254,14 +3254,14 @@ int main() {
 ```  
 template<class Type>  
     const Type& max(  
-        const Type& _Left,   
-        const Type& _Right  
+        const Type& left,   
+        const Type& right  
     );  
 template<class Type, class Pr>  
     const Type& max(  
-        const Type& _Left,   
-        const Type& _Right,  
-        BinaryPredicate _Comp  
+        const Type& left,   
+        const Type& right,  
+        BinaryPredicate comp  
     );  
 template<class Type>   
     Type& max (  
@@ -3270,18 +3270,18 @@ template<class Type>
 template<class Type, class Pr>   
     Type& max(  
         initializer_list<Type> _Ilist,   
-        BinaryPredicate _Comp  
+        BinaryPredicate comp  
     );  
 ```  
   
 ### Parameters  
- `_Left`  
+ `left`  
  The first of the two objects being compared.  
   
- `_Right`  
+ `right`  
  The second of the two objects being compared.  
   
- `_Comp`  
+ `comp`  
  A binary predicate used to compare the two objects.  
   
  `_IList`  
@@ -3466,21 +3466,21 @@ Vector v5 = max (v1,v3) is ( 0 2 4 ).
   
 ```  
 template<class ForwardIterator>  
-ForwardIterator max_element(ForwardIterator _First, ForwardIteratorLast );  
+ForwardIterator max_element(ForwardIterator first, ForwardIterator last );  
   
 template<class ForwardIterator, class BinaryPredicate>  
-ForwardIterator max_element(ForwardIterator _First, ForwardIteratorLast, BinaryPredicate _Comp );  
+ForwardIterator max_element(ForwardIterator first, ForwardIterator last, BinaryPredicate comp );  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A forward iterator addressing the position of the first element in the range to be searched for the largest element.  
   
- `_Last`  
+ `last`  
  A forward iterator addressing the position one past the final element in the range to be searched for the largest element.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines the sense in which one element is greater than another. The binary predicate takes two arguments and should return **true** when the first element is less than the second element and **false** otherwise.  
   
 ### Return Value  
@@ -3489,7 +3489,7 @@ ForwardIterator max_element(ForwardIterator _First, ForwardIteratorLast, BinaryP
 ### Remarks  
  The range referenced must be valid; all pointers must be dereferenceable and within each sequence the last position is reachable from the first by incrementation.  
   
- The complexity is linear: ( `_Last` – `_First`) – 1 comparisons are required for a nonempty range.  
+ The complexity is linear: ( `last` –  `first`) – 1 comparisons are required for a nonempty range.  
   
 ### Example  
   
@@ -3597,40 +3597,40 @@ int main( )
 ```  
 template<class InputIterator1, class InputIterator2, class OutputIterator>  
  OutputIterator merge(   
-     InputIterator1 _First1,   
-     InputIterator1Last1,   
-     InputIterator2 _First2,   
-     InputIterator2Last2,   
-     OutputIterator _Result );   
+     InputIterator1 first1,   
+     InputIterator1 last1,   
+     InputIterator2 first2,   
+     InputIterator2 last2,   
+     OutputIterator result );   
   
 template<class InputIterator1, class InputIterator2, class OutputIterator, class BinaryPredicate>  
 OutputIterator merge(   
-     InputIterator1 _First1,   
-     InputIterator1Last1,   
-     InputIterator2 _First2,   
-     InputIterator2Last2,   
-     OutputIterator _Result,  
-     BinaryPredicate _Comp );  
+     InputIterator1 first1,   
+     InputIterator1 last1,   
+     InputIterator2 first2,   
+     InputIterator2 last2,   
+     OutputIterator result,  
+     BinaryPredicate comp );  
   
 ```  
   
 ### Parameters  
- `_First1`  
+  `first1`  
  An input iterator addressing the position of the first element in the first of two sorted source ranges to be combined and sorted into a single range.  
   
- `_Last1`  
+ `last1`  
  An input iterator addressing the position one past the last element in the first of two sorted source ranges to be combined and sorted into a single range.  
   
- `_First2`  
+  `first2`  
  An input iterator addressing the position of the first element in second of two consecutive sorted source ranges to be combined and sorted into a single range.  
   
- `_Last2`  
+ `last2`  
  An input iterator addressing the position one past the last element in second of two consecutive sorted source ranges to be combined and sorted into a single range.  
   
- `_Result`  
+ `result`  
  An output iterator addressing the position of the first element in the destination range where the two source ranges are to be combined into a single sorted range.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines the sense in which one element is greater than another. The binary predicate takes two arguments and should return **true** when the first element is less than the second element and **false** otherwise.  
   
 ### Return Value  
@@ -3647,7 +3647,7 @@ OutputIterator merge(
   
  The value types of the input iterators need be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. When there are equivalent elements in both source ranges, the elements in the first range precede the elements from the second source range in the destination range.  
   
- The complexity of the algorithm is linear with at most (                        *_Last1 – _First1*) – (                        *_Last2 – _First2*) – 1 comparisons.  
+ The complexity of the algorithm is linear with at most ( * last1 – first1*) – ( * last2 – first2*) – 1 comparisons.  
   
  The [list class](../standard-library/list-class.md) provides a member function "merge" to merge the elements of two lists.  
   
@@ -3767,33 +3767,33 @@ int main() {
 ```  
 template<class Type>  
     const Type& min(  
-        const Type& _Left,   
-        const Type& _Right  
+        const Type& left,   
+        const Type& right  
     );  
 template<class Type, class Pr>  
     const Type& min(  
-        const Type& _Left,   
-        const Type& _Right,  
-        BinaryPredicate _Comp  
+        const Type& left,   
+        const Type& right,  
+        BinaryPredicate comp  
     );  
 template<class Type>   
     Type min ( initializer_list<Type> _Ilist  
     );  
 template<class Type, class Pr>    Type min (  
         initializer_list<Type> _Ilist,   
-        BinaryPredicate _Comp  
+        BinaryPredicate comp  
     );  
   
 ```  
   
 ### Parameters  
- `_Left`  
+ `left`  
  The first of the two objects being compared.  
   
- `_Right`  
+ `right`  
  The second of the two objects being compared.  
   
- `_Comp`  
+ `comp`  
  A binary predicate used to compare the two objects.  
   
  `_IList`  
@@ -4119,26 +4119,26 @@ The smallest element in v1 under the mod_lesser
 template<class ForwardIterator>  
     pair< ForwardIterator, ForwardIterator >  
         minmax_element(  
-            ForwardIterator  _First,   
+            ForwardIterator  first,   
             ForwardIterator Last  
                  );  
 template<class ForwardIterator, class BinaryPredicate>  
     pair< ForwardIterator, ForwardIterator >  
         minmax_element(  
-            ForwardIterator  _First,   
+            ForwardIterator  first,   
             ForwardIterator Last,   
-            BinaryPredicate  _Comp  
+            BinaryPredicate  comp  
                 );  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A forward iterator that indicates the beginning of a range.  
   
- `_Last`  
+ `last`  
  A forward iterator that indicates the end of a range.  
   
- `_Comp`  
+ `comp`  
  An optional test used to order elements.  
   
 ### Return Value  
@@ -4146,7 +4146,7 @@ template<class ForwardIterator, class BinaryPredicate>
   
  `pair<ForwardIterator, ForwardIterator>`  
   
- `(` [min_element](../standard-library/algorithm-functions.md#min_element)( `_First`, `_Last`), [max_element](../standard-library/algorithm-functions.md#max_element)( `_First`, `_Last`)).  
+ `(` [min_element](../standard-library/algorithm-functions.md#min_element)(  `first`, `last`), [max_element](../standard-library/algorithm-functions.md#max_element)(  `first`, `last`)).  
   
 ### Remarks  
  The first template function returns  
@@ -4155,9 +4155,9 @@ template<class ForwardIterator, class BinaryPredicate>
   
  `(min_element(_First,Last),max_element(_First,Last))`.  
   
- The second template function behaves the same, except that it replaces `operator<(X, Y)` with `_Comp``(X, Y)`.  
+ The second template function behaves the same, except that it replaces `operator<(X, Y)` with `comp``(X, Y)`.  
   
- If the sequence is non-empty, the function performs at most `3 * (``_Last` `-` `_First` `- 1) / 2` comparisons.  
+ If the sequence is non-empty, the function performs at most `3 * (``last` `-`  `first` `- 1) / 2` comparisons.  
   
 ##  <a name="minmax"></a>  minmax  
  Compares two input parameters and returns them as a pair, in order of lesser to greater.  
@@ -4166,15 +4166,15 @@ template<class ForwardIterator, class BinaryPredicate>
 template<class Type>  
     pair<const Type&, const Type&>  
         minmax(  
-            const Type& _Left,   
-            const Type& _Right  
+            const Type& left,   
+            const Type& right  
         );  
 template<class Type, class BinaryPredicate>  
     pair<const Type&, const Type&>  
         minmax(  
-            const Type& _Left,  
-            const Type& _Right,  
-            BinaryPredicate _Comp  
+            const Type& left,  
+            const Type& right,  
+            BinaryPredicate comp  
         );  
 template<class Type>     pair<Type&, Type&>         minmax(  
             initializer_list<Type> _Ilist  
@@ -4182,30 +4182,30 @@ template<class Type>     pair<Type&, Type&>         minmax(
 template<class Type, class BinaryPredicate>   
     pair<Type&, Type&>         minmax(  
             initializer_list<Type> _Ilist,   
-            BinaryPredicate _Comp  
+            BinaryPredicate comp  
         );  
   
 ```  
   
 ### Parameters  
- `_Left`  
+ `left`  
  The first of the two objects being compared.  
   
- `_Right`  
+ `right`  
  The second of the two objects being compared.  
   
- `_Comp`  
+ `comp`  
  A binary predicate used to compare the two objects.  
   
  `_IList`  
  The initializer_list that contains the members to be compared.  
   
 ### Remarks  
- The first template function returns `pair<const Type&, const Type&>(``_Right``,` `_Left``)` if `_Right` is less than `_Left`. Otherwise, it returns `pair<const Type&, const Type&>(``_Left``,` `_Right``)`.  
+ The first template function returns `pair<const Type&, const Type&>(``right``,` `left``)` if `right` is less than `left`. Otherwise, it returns `pair<const Type&, const Type&>(``left``,` `right``)`.  
   
- The second member function returns a pair where the first element is the lesser and the second is the greater when compared by the predicate `_Comp`.  
+ The second member function returns a pair where the first element is the lesser and the second is the greater when compared by the predicate `comp`.  
   
- The remaining template functions behave the same, except that they replace the `_Left` and `_Right` parameters with `_IList`.  
+ The remaining template functions behave the same, except that they replace the `left` and `right` parameters with `_IList`.  
   
  The function performs exactly one comparison.  
   
@@ -4375,24 +4375,24 @@ Press a key
 ```  
 template<class InputIterator, class OutputIterator>  
     OutputIterator move(  
-        InputIterator _First,   
-        InputIterator _Last,  
-        OutputIterator _Dest  
+        InputIterator first,   
+        InputIterator last,  
+        OutputIterator dest  
                   );  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  An input iterator that indicates where to start the range of elements to move.  
   
- `_Last`  
+ `last`  
  An input iterator that indicates the end of a range of elements to move.  
   
- `_Dest`  
+ `dest`  
  The output iterator that is to contain the moved elements.  
   
 ### Remarks  
- The template function evaluates `*(``_Dest` `+ N) =`  move `(*(``_First` `+ N)))` once for each `N` in the range `[0,` `_Last` `-` `_First``)`, for strictly increasing values of `N` starting with the lowest value. It then returns `_Dest` `+ N`. If `_Dest`and `_First` designate regions of storage, `_Dest` must not be in the range `[``_First``,` `_Last``)`.  
+ The template function evaluates `*(``dest` `+ N) =`  move `(*(` `first` `+ N)))` once for each `N` in the range `[0,` `last` `-`  `first``)`, for strictly increasing values of `N` starting with the lowest value. It then returns `dest` `+ N`. If `dest`and  `first` designate regions of storage, `dest` must not be in the range `[` `first``,` `last``)`.  
   
 ##  <a name="move_backward"></a>  move_backward  
  Moves the elements of one iterator to another. The move starts with the last element in a specified range, and ends with the first element in that range.  
@@ -4400,24 +4400,24 @@ template<class InputIterator, class OutputIterator>
 ```  
 template<class BidirectionalIterator1, class BidirectionalIterator2>  
    BidirectionalIterator2 move_backward(  
-       BidirectionalIterator1 _First,   
-       BidirectionalIterator1 _Last,  
-       BidirectionalIterator2 _DestEnd  
-   );  
+       BidirectionalIterator1 first,   
+       BidirectionalIterator1 last,  
+       BidirectionalIterator2 destEnd);
+  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  An iterator that indicates the start of a range to move elements from.  
   
- `_Last`  
+ `last`  
  An iterator that indicates the end of a range to move elements from. This element is not moved.  
   
- `_DestEnd`  
+ `destEnd`  
  A bidirectional iterator addressing the position of one past the final element in the destination range.  
   
 ### Remarks  
- The template function evaluates `*(``_DestEnd` `- N - 1) =` `move``(*(``_Last` `- N - 1)))` once for each `N` in the range `[0,` `_Last` `-` `_First``)`, for strictly increasing values of `N` starting with the lowest value. It then returns `_DestEnd` `- (``_Last` `-` `_First``)`. If `_DestEnd` and `_First` designate regions of storage, `_DestEnd` must not be in the range `[``_First``,` `_Last``)`.  
+ The template function evaluates `*(``destEnd` `- N - 1) =` `move``(*(``last` `- N - 1)))` once for each `N` in the range `[0,` `last` `-`  `first``)`, for strictly increasing values of `N` starting with the lowest value. It then returns `destEnd` `- (``last` `-`  `first``)`. If `destEnd` and  `first` designate regions of storage, `destEnd` must not be in the range `[` `first``,` `last``)`.  
   
  `move` and `move_backward` are functionally equivalent to using `copy` and `copy_backward` with a move iterator.  
   
@@ -4426,21 +4426,21 @@ template<class BidirectionalIterator1, class BidirectionalIterator2>
   
 ```  
 template<class BidirectionalIterator>  
-bool next_permutation(BidirectionalIterator _First, BidirectionalIteratorLast);  
+bool next_permutation(BidirectionalIterator first, BidirectionalIterator last);  
   
 template<class BidirectionalIterator, class BinaryPredicate>  
-bool next_permutation(BidirectionalIterator _First, BidirectionalIteratorLast, BinaryPredicate _Comp);  
+bool next_permutation(BidirectionalIterator first, BidirectionalIterator last, BinaryPredicate comp);  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A bidirectional iterator pointing to the position of the first element in the range to be permuted.  
   
- `_Last`  
+ `last`  
  A bidirectional iterator pointing to the position one past the final element in the range to be permuted.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.  
   
 ### Return Value  
@@ -4451,7 +4451,7 @@ bool next_permutation(BidirectionalIterator _First, BidirectionalIteratorLast, B
   
  The default binary predicate is less than and the elements in the range must be less than comparable to insure that the next permutation is well defined.  
   
- The complexity is linear with at most (                        *_Last – _First*)/2 swaps.  
+ The complexity is linear with at most ( * last – first*)/2 swaps.  
   
 ### Example  
   
@@ -4597,34 +4597,34 @@ After another next_permutation of vector v1,
   
 ```  
 template<class RandomAccessIterator>  
-void nth_element( RandomAccessIterator _First, RandomAccessIterator _Nth, RandomAccessIteratorLast);  
+void nth_element( RandomAccessIterator first, RandomAccessIterator _Nth, RandomAccessIterator last);  
   
  template<class RandomAccessIterator, class BinaryPredicate>  
- void nth_element( RandomAccessIterator _First, RandomAccessIterator _Nth, RandomAccessIteratorLast, BinaryPredicate _Comp);  
+ void nth_element( RandomAccessIterator first, RandomAccessIterator _Nth, RandomAccessIterator last, BinaryPredicate comp);  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A random-access iterator addressing the position of the first element in the range to be partitioned.  
   
  *_Nth*  
  A random-access iterator addressing the position of element to be correctly ordered on the boundary of the partition.  
   
- `_Last`  
+ `last`  
  A random-access iterator addressing the position one past the final element in the range to be partitioned.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.  
   
 ### Remarks  
  The range referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.  
   
- The `nth_element` algorithm does not guarantee that elements in the sub-ranges either side of the                         *n*th element are sorted. It thus makes fewer guarantees than `partial_sort`, which orders the elements in the range below some chosen element, and may be used as a faster alternative to `partial_sort` when the ordering of the lower range is not required.  
+ The `nth_element` algorithm does not guarantee that elements in the sub-ranges either side of the  *n*th element are sorted. It thus makes fewer guarantees than `partial_sort`, which orders the elements in the range below some chosen element, and may be used as a faster alternative to `partial_sort` when the ordering of the lower range is not required.  
   
  Elements are equivalent, but not necessarily equal, if neither is less than the other.  
   
- The average of a sort complexity is linear with respect to                         *_Last – _First*.  
+ The average of a sort complexity is linear with respect to  * last – first*.  
   
 ### Example  
   
@@ -4697,24 +4697,24 @@ int main() {
   
 ```  
 template<class InputIterator, class BinaryPredicate>  
-bool none_of(InputIterator _First, InputIterator _Last, BinaryPredicate _Comp);  
+bool none_of(InputIterator first, InputIterator last, BinaryPredicate comp);  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  An input iterator that indicates where to start to check a range of elements for a condition.  
   
- `_Last`  
+ `last`  
  An input iterator that indicates the end of a range of elements.  
   
- `_Comp`  
+ `comp`  
  The condition to test for. This is provided by a user-defined predicate function object that defines the condition. A predicate takes a single argument and returns `true` or `false`.  
   
 ### Return Value  
  Returns `true` if the condition is not detected at least once in the indicated range, and `false` if the condition is detected.  
   
 ### Remarks  
- The template function returns `true` only if, for some `N` in the range `[0,` `_Last` `-` `_First``)`, the predicate `_Comp``(*(``_First` `+ N))` is always `false`.  
+ The template function returns `true` only if, for some `N` in the range `[0,` `last` `-`  `first``)`, the predicate `comp``(*(` `first` `+ N))` is always `false`.  
   
 ##  <a name="partial_sort"></a>  partial_sort  
  Arranges a specified number of the smaller elements in a range into a nondescending order or according to an ordering criterion specified by a binary predicate.  
@@ -4724,15 +4724,15 @@ template<class RandomAccessIterator>
    void partial_sort(  
       RandomAccessIterator first,   
       RandomAccessIterator sortEnd,  
-      RandomAccessIterator last  
-   );  
+      RandomAccessIterator last);
+  
 template<class RandomAccessIterator, class BinaryPredicate>  
    void partial_sort(  
       RandomAccessIterator first,   
       RandomAccessIterator sortEnd,  
       RandomAccessIterator last  
-      BinaryPredicate comp  
-   );  
+      BinaryPredicate comp);
+  
 ```  
   
 ### Parameters  
@@ -4753,7 +4753,7 @@ template<class RandomAccessIterator, class BinaryPredicate>
   
  Elements are equivalent, but not necessarily equal, if neither is less than the other. The **sort** algorithm is not stable and does not guarantee that the relative ordering of equivalent elements will be preserved. The algorithm `stable_sort` does preserve this original ordering.  
   
- The average partial sort complexity is                         *O*(( `last`- `first`) log ( `sortEnd`- `first`)).  
+ The average partial sort complexity is  *O*(( `last`- `first`) log ( `sortEnd`- `first`)).  
   
 ### Example  
   
@@ -4834,35 +4834,35 @@ Partially resorted (UDgreater) vector:
 ```  
  template<class InputIterator, class RandomAccessIterator>  
  RandomAccessIterator partial_sort_copy(  
-    InputIterator _First1,  
-    InputIterator _Last1,  
-    RandomAccessIterator _First2,  
-    RandomAccessIteratorLast2 );  
+    InputIterator first1,  
+    InputIterator last1,  
+    RandomAccessIterator first2,  
+    RandomAccessIterator last2 );  
   
 template<class InputIterator, class RandomAccessIterator, class BinaryPredicate>  
  RandomAccessIterator partial_sort_copy(  
-     InputIterator _First1,  
-     InputIterator _Last1,  
-     RandomAccessIterator _First2,  
-     RandomAccessIteratorLast2,  
-     BinaryPredicate _Comp);  
+     InputIterator first1,  
+     InputIterator last1,  
+     RandomAccessIterator first2,  
+     RandomAccessIterator last2,  
+     BinaryPredicate comp);  
   
 ```  
   
 ### Parameters  
- `_First1`  
+  `first1`  
  An input iterator addressing the position of the first element in the source range.  
   
- `_Last1`  
+ `last1`  
  An input iterator addressing the position one past the final element in the source range.  
   
- `_First2`  
+  `first2`  
  A random-access iterator addressing the position of the first element in the sorted destination range.  
   
- `_Last2`  
+ `last2`  
  A random-access iterator addressing the position one past the final element in the sorted destination range.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns `true` when satisfied and `false` when not satisfied.  
   
 ### Return Value  
@@ -4955,20 +4955,20 @@ int main() {
 ```  
 template<class BidirectionalIterator, class Predicate>  
    BidirectionalIterator partition(  
-      BidirectionalIterator _First,   
-      BidirectionalIterator _Last,   
-      Predicate _Comp  
-   );  
+      BidirectionalIterator first,   
+      BidirectionalIterator last,   
+      Predicate comp);
+  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A bidirectional iterator addressing the position of the first element in the range to be partitioned.  
   
- `_Last`  
+ `last`  
  A bidirectional iterator addressing the position one past the final element in the range to be partitioned.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines the condition to be satisfied if an element is to be classified. A predicate takes a single argument and returns **true** or **false**.  
   
 ### Return Value  
@@ -4977,9 +4977,9 @@ template<class BidirectionalIterator, class Predicate>
 ### Remarks  
  The range referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.  
   
- Elements                         *a* and                         *b* are equivalent, but not necessarily equal, if both                         *Pr* (                        *a*,                         *b*) is false and                         *Pr* (                        *b*,                         *a*) if false, where                         *Pr* is the parameter-specified predicate. The **partition** algorithm is not stable and does not guarantee that the relative ordering of equivalent elements will be preserved. The algorithm **stable_ partition** does preserve this original ordering.  
+ Elements  *a* and  *b* are equivalent, but not necessarily equal, if both  *Pr* ( *a*,  *b*) is false and  *Pr* ( *b*,  *a*) if false, where  *Pr* is the parameter-specified predicate. The **partition** algorithm is not stable and does not guarantee that the relative ordering of equivalent elements will be preserved. The algorithm **stable_ partition** does preserve this original ordering.  
   
- The complexity is linear: there are ( `_Last` – `_First`) applications of `_Comp` and at most ( `_Last` – `_First`)/2 swaps.  
+ The complexity is linear: there are ( `last` –  `first`) applications of `comp` and at most ( `last` –  `first`)/2 swaps.  
   
 ### Example  
   
@@ -5027,32 +5027,32 @@ int main( ) {
 template<class InputIterator, class OutputIterator1, class OutputIterator2, class Predicate>  
     pair<OutputIterator1, OutputIterator2>  
         partition_copy(  
-            InputIterator _First,   
-            InputIterator _Last,  
-            OutputIterator1 _Dest1,   
-            OutputIterator2 _Dest2,   
-            Predicate _Pred  
+            InputIterator first,   
+            InputIterator last,  
+            OutputIterator1 dest1,   
+            OutputIterator2 dest2,   
+            Predicate pred  
         );  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  An input iterator that indicates the beginning of a range to check for a condition.  
   
- `_Last`  
+ `last`  
  An input iterator that indicates the end of a range.  
   
- `_Dest1`  
+ `dest1`  
  An output iterator used to copy elements that return true for a condition tested by using `_Pred`.  
   
- `_Dest2`  
+ `dest2`  
  An output iterator used to copy elements that return false for a condition tested by using `_Pred`.  
   
  `_Pred`  
  The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be tested. A predicate takes a single argument and returns `true` or `false`.  
   
 ### Remarks  
- The template function copies each element `X` in `[``_First``,` `_Last``)` to `*``_Dest1``++` if `_Pred``(X)` is true, or to `*``_Dest2``++ if not`. It returns `pair<OutputIterator1, OutputIterator2>(``_Dest1``,` `_Dest2``)`.  
+ The template function copies each element `X` in `[` `first``,` `last``)` to `*``dest1``++` if `_Pred``(X)` is true, or to `*``dest2``++ if not`. It returns `pair<OutputIterator1, OutputIterator2>(``dest1``,` `dest2``)`.  
   
 ##  <a name="partition_point"></a>  partition_point  
  Returns the first element in the given range that does not satisfy the condition. The elements are sorted so that those that satisfy the condition come before those that do not.  
@@ -5060,48 +5060,48 @@ template<class InputIterator, class OutputIterator1, class OutputIterator2, clas
 ```  
 template<class ForwardIterator, class Predicate>  
     ForwardIterator partition_point(  
-        ForwardIterator _First,   
-        ForwardIterator _Last,  
-        Predicate _Comp  
+        ForwardIterator first,   
+        ForwardIterator last,  
+        Predicate comp  
     );  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A `ForwardIterator` that indicates the start of a range to check for a condition.  
   
- `_Last`  
+ `last`  
  A `ForwardIterator` that indicates the end of a range.  
   
- `_Comp`  
+ `comp`  
  The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be satisfied by the element being searched for. A predicate takes a single argument and returns `true` or `false`.  
   
 ### Return Value  
- Returns a `ForwardIterator` that refers to the first element that does not fulfill the condition tested for by `_Comp`, or returns `_Last` if one is not found.  
+ Returns a `ForwardIterator` that refers to the first element that does not fulfill the condition tested for by `comp`, or returns `last` if one is not found.  
   
 ### Remarks  
- The template function finds the first iterator `it` in `[``_First``,``_Last``)` for which `_Comp(*it)` is `false`. The sequence must be ordered by `_Comp`.  
+ The template function finds the first iterator `it` in `[` `first``,``last``)` for which `comp(*it)` is `false`. The sequence must be ordered by `comp`.  
   
 ##  <a name="pop_heap"></a>  pop_heap  
  Removes the largest element from the front of a heap to the next-to-last position in the range and then forms a new heap from the remaining elements.  
   
 ```  
 template<class RandomAccessIterator>  
-void pop_heap( RandomAccessIterator _First, RandomAccessIteratorLast);  
+void pop_heap( RandomAccessIterator first, RandomAccessIterator last);  
   
 template<class RandomAccessIterator, class BinaryPredicate>  
-void pop_heap(RandomAccessIterator _First, RandomAccessIteratorLast, BinaryPredicate _Comp);  
+void pop_heap(RandomAccessIterator first, RandomAccessIterator last, BinaryPredicate comp);  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A random-access iterator addressing the position of the first element in the heap.  
   
- `_Last`  
+ `last`  
  A random-access iterator addressing the position one past the final element in the heap.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.  
   
 ### Remarks  
@@ -5119,7 +5119,7 @@ void pop_heap(RandomAccessIterator _First, RandomAccessIteratorLast, BinaryPredi
   
  The range excluding the newly added element at the end must be a heap.  
   
- The complexity is logarithmic, requiring at most log (                        *_Last – _First*) comparisons.  
+ The complexity is logarithmic, requiring at most log ( * last – first*) comparisons.  
   
 ### Example  
   
@@ -5189,25 +5189,25 @@ int main( )  {
 ```  
 template<class BidirectionalIterator>  
    bool prev_permutation(  
-      BidirectionalIterator _First,   
-      BidirectionalIterator _Last  
-   );  
+      BidirectionalIterator first,   
+      BidirectionalIterator last);
+  
 template<class BidirectionalIterator, class BinaryPredicate>  
    bool prev_permutation(  
-      BidirectionalIterator _First,   
-      BidirectionalIterator _Last,  
-      BinaryPredicate _Comp  
-   );  
+      BidirectionalIterator first,   
+      BidirectionalIterator last,  
+      BinaryPredicate comp);
+  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A bidirectional iterator pointing to the position of the first element in the range to be permuted.  
   
- `_Last`  
+ `last`  
  A bidirectional iterator pointing to the position one past the final element in the range to be permuted.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns `true` when satisfied and `false` when not satisfied.  
   
 ### Return Value  
@@ -5218,7 +5218,7 @@ template<class BidirectionalIterator, class BinaryPredicate>
   
  The default binary predicate is less than and the elements in the range must be less-than comparable to ensure that the previous permutation is well defined.  
   
- The complexity is linear, with at most ( `_Last` – `_First`)/2 swaps.  
+ The complexity is linear, with at most ( `last` –  `first`)/2 swaps.  
   
 ### Example  
   
@@ -5359,21 +5359,21 @@ After another prev_permutation of vector v1,
   
 ```  
 template<class RandomAccessIterator>  
-void push_heap( RandomAccessIterator _First, RandomAccessIteratorLast );  
+void push_heap( RandomAccessIterator first, RandomAccessIterator last );  
   
 template<class RandomAccessIterator, class BinaryPredicate>  
-void push_heap( RandomAccessIterator _First, RandomAccessIteratorLast, BinaryPredicate _Comp);  
+void push_heap( RandomAccessIterator first, RandomAccessIterator last, BinaryPredicate comp);  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A random-access iterator addressing the position of the first element in the heap.  
   
- `_Last`  
+ `last`  
  A random-access iterator addressing the position one past the final element in the range to be converted into a heap.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.  
   
 ### Remarks  
@@ -5391,7 +5391,7 @@ void push_heap( RandomAccessIterator _First, RandomAccessIteratorLast, BinaryPre
   
  The range excluding the newly added element at the end must be a heap.  
   
- The complexity is logarithmic, requiring at most log (                        *_Last – _First*) comparisons.  
+ The complexity is logarithmic, requiring at most log ( *last – first*) comparisons.  
   
 ### Example  
   
@@ -5468,18 +5468,18 @@ int main( ) {
   
 ```  
 template<class ForwardIterator, class Type>  
- ForwardIterator remove(ForwardIterator _First, ForwardIteratorLast, const Type& _Val);  
+ ForwardIterator remove(ForwardIterator first, ForwardIterator last, const Type& val);  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A forward iterator addressing the position of the first element in the range from which elements are being removed.  
   
- `_Last`  
+ `last`  
  A forward iterator addressing the position one past the final element in the range from which elements are being removed.  
   
- `_Val`  
+ `val`  
  The value that is to be removed from the range.  
   
 ### Return Value  
@@ -5492,7 +5492,7 @@ template<class ForwardIterator, class Type>
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear; there are ( `_Last` – `_First`) comparisons for equality.  
+ The complexity is linear; there are ( `last` –  `first`) comparisons for equality.  
   
  The [list class](../standard-library/list-class.md) has a more efficient member function version of **remove**, which also relinks pointers.  
   
@@ -5547,21 +5547,21 @@ int main( ) {
   
 ```  
 template<class InputIterator, class OutputIterator, class Type>  
- OutputIterator remove_copy(InputIterator _First, InputIterator _Last, OutputIterator _Result, const Type& _Val);  
+ OutputIterator remove_copy(InputIterator first, InputIterator last, OutputIterator result, const Type& val);  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  An input iterator addressing the position of the first element in the range from which elements are being removed.  
   
- `_Last`  
+ `last`  
  An input iterator addressing the position one past the final element in the range from which elements are being removed.  
   
- `_Result`  
+ `result`  
  An output iterator addressing the position of the first element in the destination range to which elements are being removed.  
   
- `_Val`  
+ `val`  
  The value that is to be removed from the range.  
   
 ### Return Value  
@@ -5576,7 +5576,7 @@ template<class InputIterator, class OutputIterator, class Type>
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear; there are ( `_Last` – `_First`) comparisons for equality and at most ( `_Last` – `_First`) assignments.  
+ The complexity is linear; there are ( `last` –  `first`) comparisons for equality and at most ( `last` –  `first`) assignments.  
   
 ### Example  
   
@@ -5626,18 +5626,18 @@ int main() {
   
 ```  
 template<class InputIterator, class OutputIterator, class Predicate>  
-OutputIterator remove_copy_if(InputIterator _First, InputIterator Last, OutputIterator _Result, Predicate _Pred);  
+OutputIterator remove_copy_if(InputIterator first, InputIterator Last, OutputIterator result, Predicate pred);  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  An input iterator addressing the position of the first element in the range from which elements are being removed.  
   
- `_Last`  
+ `last`  
  An input iterator addressing the position one past the final element in the range from which elements are being removed.  
   
- `_Result`  
+ `result`  
  An output iterator addressing the position of the first element in the destination range to which elements are being removed.  
   
  `_Pred`  
@@ -5655,7 +5655,7 @@ OutputIterator remove_copy_if(InputIterator _First, InputIterator Last, OutputIt
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear: there are ( `_Last` – `_First`) comparisons for equality and at most ( `_Last` – `_First`) assignments.  
+ The complexity is linear: there are ( `last` –  `first`) comparisons for equality and at most ( `last` –  `first`) assignments.  
   
  For information on how these functions behave, see [Checked Iterators](../standard-library/checked-iterators.md).  
   
@@ -5714,15 +5714,15 @@ int main() {
   
 ```  
 template<class ForwardIterator, class Predicate>  
- ForwardIterator remove_if(ForwardIterator _First, ForwardIteratorLast, Predicate _Pred);  
+ ForwardIterator remove_if(ForwardIterator first, ForwardIterator last, Predicate pred);  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A forward iterator pointing to the position of the first element in the range from which elements are being removed.  
   
- `_Last`  
+ `last`  
  A forward iterator pointing to the position one past the final element in the range from which elements are being removed.  
   
  `_Pred`  
@@ -5738,7 +5738,7 @@ template<class ForwardIterator, class Predicate>
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear: there are ( `_Last` – `_First`) comparisons for equality.  
+ The complexity is linear: there are ( `last` –  `first`) comparisons for equality.  
   
  List has a more efficient member function version of remove which relinks pointers.  
   
@@ -5797,14 +5797,14 @@ int main( ) {
   
 ```  
 template<class ForwardIterator, class Type>  
-void replace(ForwardIterator _First, ForwardIteratorLast, const Type& _OldVal, const Type& _NewVal);  
+void replace(ForwardIterator first, ForwardIterator last, const Type& _OldVal, const Type& _NewVal);  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A forward iterator pointing to the position of the first element in the range from which elements are being replaced.  
   
- `_Last`  
+ `last`  
  A forward iterator pointing to the position one past the final element in the range from which elements are being replaced.  
   
  `_OldVal`  
@@ -5820,7 +5820,7 @@ void replace(ForwardIterator _First, ForwardIteratorLast, const Type& _OldVal, c
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear; there are ( `_Last` – `_First`) comparisons for equality and at most ( `_Last` – `_First`) assignments of new values.  
+ The complexity is linear; there are ( `last` –  `first`) comparisons for equality and at most ( `last` –  `first`) assignments of new values.  
   
 ### Example  
   
@@ -5866,22 +5866,22 @@ int main( ) {
 ```  
  template<class InputIterator, class OutputIterator, class Type>  
  OutputIterator replace_copy(   
-     InputIterator _First,  
-	 InputIterator _Last,  
-	 OutputIterator _Result,  
+     InputIterator first,  
+	 InputIterator last,  
+	 OutputIterator result,  
 	 const Type& _OldVal,  
 	 const Type& _NewVal);  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  An input iterator pointing to the position of the first element in the range from which elements are being replaced.  
   
- `_Last`  
+ `last`  
  An input iterator pointing to the position one past the final element in the range from which elements are being replaced.  
   
- `_Result`  
+ `result`  
  An output iterator pointing to the first element in the destination range to where the altered sequence of elements is being copied.  
   
  `_OldVal`  
@@ -5900,7 +5900,7 @@ int main( ) {
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear: there are ( `_Last` – `_First`) comparisons for equality and at most ( `_Last` – `_First`) assignments of new values.  
+ The complexity is linear: there are ( `last` –  `first`) comparisons for equality and at most ( `last` –  `first`) assignments of new values.  
   
 ### Example  
   
@@ -5965,28 +5965,28 @@ int main( ) {
 ```  
 template<class InputIterator, class OutputIterator, class Predicate, class Type>  
 OutputIterator replace_copy_if(  
-    InputIterator _First,  
-    InputIterator _Last,  
-    OutputIterator _Result,  
-    Predicate _Pred,  
-    const Type& _Val);  
+    InputIterator first,  
+    InputIterator last,  
+    OutputIterator result,  
+    Predicate pred,  
+    const Type& val);  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  An input iterator pointing to the position of the first element in the range from which elements are being replaced.  
   
- `_Last`  
+ `last`  
  An input iterator pointing to the position one past the final element in the range from which elements are being replaced.  
   
- `_Result`  
+ `result`  
  An output iterator pointing to the position of the first element in the destination range to which elements are being copied.  
   
  `_Pred`  
  The unary predicate that must be satisfied is the value of an element is to be replaced.  
   
- `_Val`  
+ `val`  
  The new value being assigned to the elements whose old value satisfies the predicate.  
   
 ### Return Value  
@@ -5999,7 +5999,7 @@ OutputIterator replace_copy_if(
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear; there are ( `_Last` – `_First`) comparisons for equality and at most ( `_Last` – `_First`) assignments of new values.  
+ The complexity is linear; there are ( `last` –  `first`) comparisons for equality and at most ( `last` –  `first`) assignments of new values.  
   
 ### Example  
   
@@ -6070,21 +6070,21 @@ int main( ) {
   
 ```  
 template<class ForwardIterator, class Predicate, class Type>  
-void replace_if(ForwardIterator _First, ForwardIteratorLast, Predicate _Pred, const Type& _Val);  
+void replace_if(ForwardIterator first, ForwardIterator last, Predicate pred, const Type& val);  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A forward iterator pointing to the position of the first element in the range from which elements are being replaced.  
   
- `_Last`  
+ `last`  
  An iterator pointing to the position one past the final element in the range from which elements are being replaced.  
   
  `_Pred`  
  The unary predicate that must be satisfied is the value of an element is to be replaced.  
   
- `_Val`  
+ `val`  
  The new value being assigned to the elements whose old value satisfies the predicate.  
   
 ### Remarks  
@@ -6096,7 +6096,7 @@ void replace_if(ForwardIterator _First, ForwardIteratorLast, Predicate _Pred, co
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear: there are ( `_Last` – `_First`) comparisons for equality and at most ( `_Last` – `_First`) assignments of new values.  
+ The complexity is linear: there are ( `last` –  `first`) comparisons for equality and at most ( `last` –  `first`) assignments of new values.  
   
 ### Example  
   
@@ -6147,15 +6147,15 @@ int main( ) {
   
 ```  
 template<class BidirectionalIterator>  
- void reverse(BidirectionalIterator _First, BidirectionalIteratorLast);  
+ void reverse(BidirectionalIterator first, BidirectionalIterator last);  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A bidirectional iterator pointing to the position of the first element in the range within which the elements are being permuted.  
   
- `_Last`  
+ `last`  
  A bidirectional iterator pointing to the position one past the final element in the range within which the elements are being permuted.  
   
 ### Remarks  
@@ -6209,20 +6209,20 @@ The modified vector v1 with values reversed is:
 ```  
 template<class BidirectionalIterator, class OutputIterator>  
 OutputIterator reverse_copy(   
-    BidirectionalIterator  _First,  
+    BidirectionalIterator  first,  
     BidirectionalIterator Last,  
-    OutputIterator  _Result);  
+    OutputIterator  result);  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A bidirectional iterator pointing to the position of the first element in the source range within which the elements are being permuted.  
   
- `_Last`  
+ `last`  
  A bidirectional iterator pointing to the position one past the final element in the source range within which the elements are being permuted.  
   
- `_Result`  
+ `result`  
  An output iterator pointing to the position of the first element in the destination range to which elements are being copied.  
   
 ### Return Value  
@@ -6276,24 +6276,24 @@ int main( ) {
   
 ```  
 template<class ForwardIterator>  
- void rotate(ForwardIterator _First, ForwardIterator _Middle, ForwardIteratorLast);  
+ void rotate(ForwardIterator first, ForwardIterator middle, ForwardIterator last);  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A forward iterator addressing the position of the first element in the range to be rotated.  
   
- `_Middle`  
+ `middle`  
  A forward iterator defining the boundary within the range that addresses the position of the first element in the second part of the range whose elements are to be exchanged with those in the first part of the range.  
   
- _ `Last`  
+`Last`  
  A forward iterator addressing the position one past the final element in the range to be rotated.  
   
 ### Remarks  
  The ranges referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.  
   
- The complexity is linear with at most ( `_Last` – `_First`) swaps.  
+ The complexity is linear with at most ( `last` –  `first`) swaps.  
   
 ### Example  
   
@@ -6376,24 +6376,24 @@ After the rotation of a single deque element to the back,
 ```  
 template<class ForwardIterator, class OutputIterator>  
 OutputIterator rotate_copy(  
-    ForwardIterator _First,  
-    ForwardIterator _Middle,  
-    ForwardIteratorLast,  
-    OutputIterator _Result );  
+    ForwardIterator first,  
+    ForwardIterator middle,  
+    ForwardIterator last,  
+    OutputIterator result );  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A forward iterator addressing the position of the first element in the range to be rotated.  
   
- `_Middle`  
+ `middle`  
  A forward iterator defining the boundary within the range that addresses the position of the first element in the second part of the range whose elements are to be exchanged with those in the first part of the range.  
   
  _ `Last`  
  A forward iterator addressing the position one past the final element in the range to be rotated.  
   
- `_Result`  
+ `result`  
  An output iterator addressing the position of the first element in the destination range.  
   
 ### Return Value  
@@ -6402,7 +6402,7 @@ OutputIterator rotate_copy(
 ### Remarks  
  The ranges referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.  
   
- The complexity is linear with at most ( `_Last` – `_First`) swaps.  
+ The complexity is linear with at most ( `last` –  `first`) swaps.  
   
 ### Example  
   
@@ -6469,35 +6469,35 @@ int main() {
 ```  
 template<class ForwardIterator1, class ForwardIterator2>  
    ForwardIterator1 search(  
-      ForwardIterator1 _First1,   
-      ForwardIterator1 _Last1,  
-      ForwardIterator2 _First2,   
-      ForwardIterator2 _Last2  
-   );  
+      ForwardIterator1 first1,   
+      ForwardIterator1 last1,  
+      ForwardIterator2 first2,   
+      ForwardIterator2 last2);
+  
 template<class ForwardIterator1, class ForwardIterator2, class Predicate>  
    ForwardIterator1 search(  
-      ForwardIterator1 _First1,   
-      ForwardIterator1 _Last1,  
-      ForwardIterator2 _First2,   
-      ForwardIterator2 _Last2  
-      Predicate _Comp  
-   );  
+      ForwardIterator1 first1,   
+      ForwardIterator1 last1,  
+      ForwardIterator2 first2,   
+      ForwardIterator2 last2  
+      Predicate comp);
+  
 ```  
   
 ### Parameters  
- `_First1`  
+  `first1`  
  A forward iterator addressing the position of the first element in the range to be searched.  
   
- `_Last1`  
+ `last1`  
  A forward iterator addressing the position one past the final element in the range to be searched.  
   
- `_First2`  
+  `first2`  
  A forward iterator addressing the position of the first element in the range to be matched.  
   
- `_Last2`  
+ `last2`  
  A forward iterator addressing the position one past the final element in the range to be matched.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.  
   
 ### Return Value  
@@ -6614,35 +6614,35 @@ There is a sequence of elements in v1 that are equivalent
 ```  
 template<class ForwardIterator1, class Diff2, class Type>  
    ForwardIterator1 search_n(  
-      ForwardIterator1 _First1,   
-      ForwardIterator1 _Last1,  
-      Diff2 _Count,   
-      const Type& _Val  
-   );  
+      ForwardIterator1 first1,   
+      ForwardIterator1 last1,  
+      Diff2 count,   
+      const Type& val);
+  
 template<class ForwardIterator1, class Diff2, class Type, class BinaryPredicate>  
    ForwardIterator1 search_n(  
-      ForwardIterator1 _First1,   
-      ForwardIterator1 _Last1,  
-      Diff2 _Count,   
-      const Type& _Val,  
-      BinaryPredicate _Comp  
-   );  
+      ForwardIterator1 first1,   
+      ForwardIterator1 last1,  
+      Diff2 count,   
+      const Type& val,  
+      BinaryPredicate comp);
+  
 ```  
   
 ### Parameters  
- `_First1`  
+  `first1`  
  A forward iterator addressing the position of the first element in the range to be searched.  
   
- `_Last1`  
+ `last1`  
  A forward iterator addressing the position one past the final element in the range to be searched.  
   
- `_Count`  
+ `count`  
  The size of the subsequence being searched for.  
   
- `_Val`  
+ `val`  
  The value of the elements in the sequence being searched for.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.  
   
 ### Return Value  
@@ -6794,7 +6794,7 @@ OutputIterator set_difference(
   
  The value types of the input iterators need be less-than-comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. When there are equivalent elements in both source ranges, the elements in the first range precede the elements from the second source range in the destination range. If the source ranges contain duplicates of an element such that there are more in the first source range than in the second, then the destination range will contain the number by which the occurrences of those elements in the first source range exceed the occurrences of those elements in the second source range.  
   
- The complexity of the algorithm is linear with at most 2 \* ( (                        *last1 – first1*) – (                        *last2 – first2*) ) – 1 comparisons for nonempty source ranges.  
+ The complexity of the algorithm is linear with at most 2 \* ( ( *last1 – first1*) – ( *last2 – first2*) ) – 1 comparisons for nonempty source ranges.  
   
 ### Example  
   
@@ -6921,40 +6921,40 @@ int main( )
 ```  
  template<class InputIterator1, class InputIterator2, class OutputIterator>  
  OutputIterator set_intersection(   
-      InputIterator1 _First1,  
-      InputIterator1Last1,  
-      InputIterator2 _First2,  
-      InputIterator2Last2,  
-      OutputIterator _Result );  
+      InputIterator1 first1,  
+      InputIterator1 last1,  
+      InputIterator2 first2,  
+      InputIterator2 last2,  
+      OutputIterator result );  
   
 template<class InputIterator1, class InputIterator2, class OutputIterator, class BinaryPredicate>  
 OutputIterator set_intersection(  
-      InputIterator1 _First1,  
-      InputIterator1Last1,  
-      InputIterator2 _First2,  
-      InputIterator2Last2,  
-      OutputIterator _Result,  
-      BinaryPredicate _Comp );  
+      InputIterator1 first1,  
+      InputIterator1 last1,  
+      InputIterator2 first2,  
+      InputIterator2 last2,  
+      OutputIterator result,  
+      BinaryPredicate comp );  
   
 ```  
   
 ### Parameters  
- `_First1`  
+  `first1`  
  An input iterator addressing the position of the first element in the first of two sorted source ranges to be united and sorted into a single range representing the intersection of the two source ranges.  
   
- `_Last1`  
+ `last1`  
  An input iterator addressing the position one past the last element in the first of two sorted source ranges to be united and sorted into a single range representing the intersection of the two source ranges.  
   
- `_First2`  
+  `first2`  
  An input iterator addressing the position of the first element in second of two consecutive sorted source ranges to be united and sorted into a single range representing the intersection of the two source ranges.  
   
- `_Last2`  
+ `last2`  
  An input iterator addressing the position one past the last element in second of two consecutive sorted source ranges to be united and sorted into a single range representing the intersection of the two source ranges.  
   
  **_** *Result*  
  An output iterator addressing the position of the first element in the destination range where the two source ranges are to be united into a single sorted range representing the intersection of the two source ranges.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines the sense in which one element is greater than another. The binary predicate takes two arguments and should return **true** when the first element is less than the second element and **false** otherwise.  
   
 ### Return Value  
@@ -6971,7 +6971,7 @@ OutputIterator set_intersection(
   
  The value types of the input iterators need be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. When there are equivalent elements in both source ranges, the elements in the first range precede the elements from the second source range in the destination range. If the source ranges contain duplicates of an element, then the destination range will contain the maximum number of those elements that occur in both source ranges.  
   
- The complexity of the algorithm is linear with at most 2 \* ( (                        *_Last1 – _First1*) + (                        *_Last2 – _First2*) ) – 1 comparisons for nonempty source ranges.  
+ The complexity of the algorithm is linear with at most 2 \* ( ( *last1 – first1*) + ( *last2 – first2*) ) – 1 comparisons for nonempty source ranges.  
   
 ### Example  
   
@@ -7092,40 +7092,40 @@ int main() {
 ```  
 template<class InputIterator1, class InputIterator2, class OutputIterator>  
  OutputIterator set_symmetric_difference(  
-    InputIterator1 _First1,  
-    InputIterator1Last1,  
-    InputIterator2 _First2,  
-    InputIterator2Last2,  
-    OutputIterator _Result );  
+    InputIterator1 first1,  
+    InputIterator1 last1,  
+    InputIterator2 first2,  
+    InputIterator2 last2,  
+    OutputIterator result );  
   
 template<class InputIterator1, class InputIterator2, class OutputIterator, class BinaryPredicate>  
 OutputIterator set_symmetric_difference(  
-    InputIterator1 _First1,  
-    InputIterator1Last1,  
-    InputIterator2 _First2,  
-    InputIterator2Last2,  
-    OutputIterator _Result,  
-    BinaryPredicate _Comp );  
+    InputIterator1 first1,  
+    InputIterator1 last1,  
+    InputIterator2 first2,  
+    InputIterator2 last2,  
+    OutputIterator result,  
+    BinaryPredicate comp );  
   
 ```  
   
 ### Parameters  
- `_First1`  
+  `first1`  
  An input iterator addressing the position of the first element in the first of two sorted source ranges to be united and sorted into a single range representing the symmetric difference of the two source ranges.  
   
- `_Last1`  
+ `last1`  
  An input iterator addressing the position one past the last element in the first of two sorted source ranges to be united and sorted into a single range representing the symmetric difference of the two source ranges.  
   
- `_First2`  
+  `first2`  
  An input iterator addressing the position of the first element in second of two consecutive sorted source ranges to be united and sorted into a single range representing the symmetric difference of the two source ranges.  
   
- `_Last2`  
+ `last2`  
  An input iterator addressing the position one past the last element in second of two consecutive sorted source ranges to be united and sorted into a single range representing the symmetric difference of the two source ranges.  
   
  **_** *Result*  
  An output iterator addressing the position of the first element in the destination range where the two source ranges are to be united into a single sorted range representing the symmetric difference of the two source ranges.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines the sense in which one element is greater than another. The binary predicate takes two arguments and should return **true** when the first element is less than the second element and **false** otherwise.  
   
 ### Return Value  
@@ -7142,7 +7142,7 @@ OutputIterator set_symmetric_difference(
   
  The value types of the input iterators need be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. When there are equivalent elements in both source ranges, the elements in the first range precede the elements from the second source range in the destination range. If the source ranges contain duplicates of an element, then the destination range will contain the absolute value of the number by which the occurrences of those elements in the one of the source ranges exceeds the occurrences of those elements in the second source range.  
   
- The complexity of the algorithm is linear with at most 2 \* ( (                        *_Last1 – _First1*) – (                        *_Last2 – _First2*) ) – 1 comparisons for nonempty source ranges.  
+ The complexity of the algorithm is linear with at most 2 \* ( (*last1 – first1*) – (*last2 – first2*) ) – 1 comparisons for nonempty source ranges.  
   
 ### Example  
   
@@ -7269,39 +7269,39 @@ int main( )
 ```  
  template<class InputIterator1, class InputIterator2, class OutputIterator>  
  OutputIterator set_union(  
-    InputIterator1 _First1,  
-    InputIterator1Last1,  
-    InputIterator2 _First2,  
-    InputIterator2Last2,  
-    OutputIterator _Result );   
+    InputIterator1 first1,  
+    InputIterator1 last1,  
+    InputIterator2 first2,  
+    InputIterator2 last2,  
+    OutputIterator result );   
   
 template<class InputIterator1, class InputIterator2, class OutputIterator, class BinaryPredicate>  
 OutputIterator set_union(  
-    InputIterator1 _First1,  
-    InputIterator1Last1,  
-    InputIterator2 _First2,  
-    InputIterator2Last2,  
-    OutputIterator _Result,  
-    BinaryPredicate _Comp );  
+    InputIterator1 first1,  
+    InputIterator1 last1,  
+    InputIterator2 first2,  
+    InputIterator2 last2,  
+    OutputIterator result,  
+    BinaryPredicate comp );  
 ```  
   
 ### Parameters  
- `_First1`  
+  `first1`  
  An input iterator addressing the position of the first element in the first of two sorted source ranges to be united and sorted into a single range representing the union of the two source ranges.  
   
- `_Last1`  
+ `last1`  
  An input iterator addressing the position one past the last element in the first of two sorted source ranges to be united and sorted into a single range representing the union of the two source ranges.  
   
- `_First2`  
+  `first2`  
  An input iterator addressing the position of the first element in second of two consecutive sorted source ranges to be united and sorted into a single range representing the union of the two source ranges.  
   
- `_Last2`  
+ `last2`  
  An input iterator addressing the position one past the last element in second of two consecutive sorted source ranges to be united and sorted into a single range representing the union of the two source ranges.  
   
  **_** *Result*  
  An output iterator addressing the position of the first element in the destination range where the two source ranges are to be united into a single sorted range representing the union of the two source ranges.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines the sense in which one element is greater than another. The binary predicate takes two arguments and should return **true** when the first element is less than the second element and **false** otherwise.  
   
 ### Return Value  
@@ -7318,7 +7318,7 @@ OutputIterator set_union(
   
  The value types of the input iterators need be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. When there are equivalent elements in both source ranges, the elements in the first range precede the elements from the second source range in the destination range. If the source ranges contain duplicates of an element, then the destination range will contain the maximum number of those elements that occur in both source ranges.  
   
- The complexity of the algorithm is linear with at most 2 \* ( (                        *_Last1 – _First1*) – (                        *_Last2 – _First2*) ) – 1 comparisons.  
+ The complexity of the algorithm is linear with at most 2 \* ( ( *last1 – first1*) – ( *last2 – first2*) ) – 1 comparisons.  
   
 ### Example  
   
@@ -7442,7 +7442,7 @@ int main( )
 ##  <a name="std__shuffle"></a>  std::shuffle  
  Shuffles (rearranges) elements for a given range by using a random number generator.  
   
-```vb  
+```  
 template<class RandomAccessIterator, class UniformRandomNumberGenerator>  
 void shuffle(RandomAccessIterator first,  
     RandomAccessIterator last,  
@@ -7469,14 +7469,14 @@ void shuffle(RandomAccessIterator first,
 template<class RandomAccessIterator>  
    void sort(  
       RandomAccessIterator first,   
-      RandomAccessIterator last  
-   );  
+      RandomAccessIterator last);
+  
 template<class RandomAccessIterator, class Predicate>  
    void sort(  
       RandomAccessIterator first,   
       RandomAccessIterator last,   
-      Predicate comp  
-   );  
+      Predicate comp);
+  
 ```  
   
 ### Parameters  
@@ -7494,7 +7494,7 @@ template<class RandomAccessIterator, class Predicate>
   
  Elements are equivalent, but not necessarily equal, if neither is less than the other. The `sort` algorithm is not stable and so does not guarantee that the relative ordering of equivalent elements will be preserved. The algorithm `stable_sort` does preserve this original ordering.  
   
- The average of a sort complexity is                         *O*(                        *N* log                         *N*), where                         *N* =                         *last – first*.  
+ The average of a sort complexity is  *O*( *N* log  *N*), where  *N* =  *last – first*.  
   
 ### Example  
   
@@ -7570,25 +7570,24 @@ Resorted (UDgreater) vector v1 = ( 11 10 9 8 7 6 5 4 3 2 1 0 )
 ```  
 template<class RandomAccessIterator>  
    void sort_heap(  
-      RandomAccessIterator _First,   
-      RandomAccessIterator _Last  
-   );  
+      RandomAccessIterator first,   
+      RandomAccessIterator last);
+  
 template<class RandomAccessIterator, class Predicate>  
    void sort_heap(  
-      RandomAccessIterator _First,   
-      RandomAccessIterator _Last,  
-      Predicate _Comp  
-   );  
+      RandomAccessIterator first,   
+      RandomAccessIterator last,  
+      Predicate comp);  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A random-access iterator addressing the position of the first element in the target heap.  
   
- `_Last`  
+ `last`  
  A random-access iterator addressing the position one past the final element in the target heap.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.  
   
 ### Remarks  
@@ -7606,7 +7605,7 @@ template<class RandomAccessIterator, class Predicate>
   
  The range referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.  
   
- The complexity is at most                         *N* log                         *N*, where                         *N* = (                        *_Last – _First*).  
+ The complexity is at most  *N* log  *N*, where  *N* = ( *last – first*).  
   
 ### Example  
   
@@ -7664,17 +7663,17 @@ int main() {
 ```  
 template<class BidirectionalIterator, class Predicate>  
 BidirectionalIterator stable_partition(  
-    BidirectionalIterator _First,  
-    BidirectionalIteratorLast,  
-    Predicate _Pred );  
+    BidirectionalIterator first,  
+    BidirectionalIterator last,  
+    Predicate pred );  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A bidirectional iterator addressing the position of the first element in the range to be partitioned.  
   
- `_Last`  
+ `last`  
  A bidirectional iterator addressing the position one past the final element in the range to be partitioned.  
   
  `_Pred`  
@@ -7686,7 +7685,7 @@ BidirectionalIterator stable_partition(
 ### Remarks  
  The range referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.  
   
- Elements                         *a* and                         *b* are equivalent, but not necessarily equal, if both                         *Pr* (                        *a*,                         *b*) is false and                         *Pr* (                        *b*,                         *a*) if false, where                         *Pr* is the parameter-specified predicate. The **stable_ partition** algorithm is stable and guarantees that the relative ordering of equivalent elements will be preserved. The algorithm **partition** does not necessarily preserve this original ordering.  
+ Elements  *a* and  *b* are equivalent, but not necessarily equal, if both  *Pr* ( *a*,  *b*) is false and  *Pr* ( *b*,  *a*) if false, where  *Pr* is the parameter-specified predicate. The **stable_ partition** algorithm is stable and guarantees that the relative ordering of equivalent elements will be preserved. The algorithm **partition** does not necessarily preserve this original ordering.  
   
 ### Example  
   
@@ -7738,24 +7737,24 @@ int main( ) {
   
 ```  
 template<class BidirectionalIterator>  
- void stable_sort( BidirectionalIterator _First, BidirectionalIteratorLast );  
+ void stable_sort( BidirectionalIterator first, BidirectionalIterator last );  
   
 template<class BidirectionalIterator, class BinaryPredicate>  
 void stable_sort(   
-    BidirectionalIterator _First,  
-    BidirectionalIteratorLast,   
-    BinaryPredicate _Comp );  
+    BidirectionalIterator first,  
+    BidirectionalIterator last,   
+    BinaryPredicate comp );  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A bidirectional iterator addressing the position of the first element in the range to be sorted.  
   
- `_Last`  
+ `last`  
  A bidirectional iterator addressing the position one past the final element in the range to be sorted.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.  
   
 ### Remarks  
@@ -7763,7 +7762,7 @@ void stable_sort(
   
  Elements are equivalent, but not necessarily equal, if neither is less than the other. The **sort** algorithm is stable and guarantees that the relative ordering of equivalent elements will be preserved.  
   
- The run-time complexity of `stable_sort` depends on the amount of memory available, but the best case (given sufficient memory) is                         *O*(                        *N* log                         *N*) and the worst case is                         *O*(                         *N* ( log                         *N* )2 ), where                         *N* =                         *_Last – First.* Usually, the **sort** algorithm is significantly faster than `stable_sort`.  
+ The run-time complexity of `stable_sort` depends on the amount of memory available, but the best case (given sufficient memory) is  *O*( *N* log  *N*) and the worst case is  *O*(  *N* ( log  *N* )2 ), where  *N* =  *last – First.* Usually, the **sort** algorithm is significantly faster than `stable_sort`.  
   
 ### Example  
   
@@ -7838,21 +7837,20 @@ Resorted (UDgreater) vector v1 = ( 10 10 8 8 6 6 4 4 2 2 0 0 )
 ```  
 template<class Type>  
    void swap(  
-      Type& _Left,   
-      Type& _Right  
-   );  
+      Type& left,   
+      Type& right);  
 template<class Type, size_t N>  
    void swap(  
-      Type (& _Left)[N],  
-      Type (& _Right)[N]  
-   );  
+      Type (& left)[N],  
+      Type (& right)[N]);\r
+  
 ```  
   
 ### Parameters  
- `_Left`  
+ `left`  
  For the first override, the first object to have its contents exchanged. For the second override, the first array of objects to have its contents exchanged.  
   
- `_Right`  
+ `right`  
  For the first override, the second object to have its contents exchanged. For the second override, the second array of objects to have its contents exchanged.  
   
 ### Remarks  
@@ -7920,20 +7918,20 @@ Vector v2 is ( 0 1 2 3 4 5 6 7 8 9 10 ).
 ```  
 template<class ForwardIterator1, class ForwardIterator2>  
 ForwardIterator2 swap_ranges(   
-   ForwardIterator1 _First1,  
-   ForwardIterator1Last1,  
-   ForwardIterator2 _First2 );  
+   ForwardIterator1 first1,  
+   ForwardIterator1 last1,  
+   ForwardIterator2 first2 );  
   
 ```  
   
 ### Parameters  
- `_First1`  
+  `first1`  
  A forward iterator pointing to the first position of the first range whose elements are to be exchanged.  
   
- `_Last1`  
+ `last1`  
  A forward iterator pointing to one past the final position of the first range whose elements are to be exchanged.  
   
- `_First2`  
+  `first2`  
  A forward iterator pointing to the first position of the second range whose elements are to be exchanged.  
   
 ### Return Value  
@@ -7942,7 +7940,7 @@ ForwardIterator2 swap_ranges(
 ### Remarks  
  The ranges referenced must be valid; all pointers must be dereferenceable and within each sequence the last position is reachable from the first by incrementation. The second range has to be as large as the first range.  
   
- The complexity is linear with `_Last1` – `_First1` swaps performed. If elements from containers of the same type are being swapped, them the `swap` member function from that container should be used, because the member function typically has constant complexity.  
+ The complexity is linear with `last1` –  `first1` swaps performed. If elements from containers of the same type are being swapped, them the `swap` member function from that container should be used, because the member function typically has constant complexity.  
   
 ### Example  
   
@@ -8011,32 +8009,32 @@ After the swap_range deque d1 is   ( 0 1 2 3 4 5 ).
 ```  
  template<class InputIterator, class OutputIterator, class UnaryFunction>  
  OutputIterator transform(  
-    InputIterator _First1,  
-    InputIterator _Last1,  
-    OutputIterator _Result,  
+    InputIterator first1,  
+    InputIterator last1,  
+    OutputIterator result,  
     UnaryFunction _Func );  
   
 template<class InputIterator1, class InputIterator2, class OutputIterator, class BinaryFunction>  
 OutputIterator transform(   
-    InputIterator1 _First1,  
-    InputIterator1Last1,  
-    InputIterator2 _First2,  
-    OutputIterator _Result,  
+    InputIterator1 first1,  
+    InputIterator1 last1,  
+    InputIterator2 first2,  
+    OutputIterator result,  
     BinaryFunction _Func );  
   
 ```  
   
 ### Parameters  
- `_First1`  
+  `first1`  
  An input iterator addressing the position of the first element in the first source range to be operated on.  
   
- `_Last1`  
+ `last1`  
  An input iterator addressing the position one past the final element in the first source range operated on.  
   
- `_First2`  
+  `first2`  
  An input iterator addressing the position of the first element in the second source range to be operated on.  
   
- `_Result`  
+ `result`  
  An output iterator addressing the position of the first element in the destination range.  
   
  `_Func`  
@@ -8048,9 +8046,9 @@ OutputIterator transform(
 ### Remarks  
  The ranges referenced must be valid; all pointers must be dereferenceable and within each sequence the last position must be reachable from the first by incrementation. The destination range must be large enough to contain the transformed source range.  
   
- If `_Result` is set equal to `_First1` in the first version of the algorithm *,* then the source and destination ranges will be the same and the sequence will be modified in place. But the `_Result` may not address a position within the range [ `_First1` +1, `_Last1`).  
+ If `result` is set equal to  `first1` in the first version of the algorithm *,* then the source and destination ranges will be the same and the sequence will be modified in place. But the `result` may not address a position within the range [  `first1` +1, `last1`).  
   
- The complexity is linear with at most ( `_Last1` – `_First1`) comparisons.  
+ The complexity is linear with at most ( `last1` –  `first1`) comparisons.  
   
 ### Example  
   
@@ -8070,7 +8068,7 @@ class MultValue
       Type Factor;   // The value to multiply by  
    public:  
       // Constructor initializes the value to multiply by  
-      MultValue ( const Type& _Val ) : Factor ( _Val ) {  
+      MultValue ( const Type& val ) : Factor ( val ) {  
       }  
   
       // The function call for the element to be multiplied  
@@ -8145,25 +8143,25 @@ Multiplying elements of the vectors v1mod and v2 pairwise gives:
 ```  
 template<class ForwardIterator>  
    ForwardIterator unique(  
-      ForwardIterator _First,   
-      ForwardIterator _Last  
-   );  
+      ForwardIterator first,   
+      ForwardIterator last);
+  
 template<class ForwardIterator, class Predicate>  
    ForwardIterator unique(  
-      ForwardIterator _First,   
-      ForwardIterator _Last,  
-      Predicate _Comp  
-   );  
+      ForwardIterator first,   
+      ForwardIterator last,  
+      Predicate comp);
+  
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A forward iterator addressing the position of the first element in the range to be scanned for duplicate removal.  
   
- `_Last`  
+ `last`  
  A forward iterator addressing the position one past the final element in the range to be scanned for duplicate removal.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.  
   
 ### Return Value  
@@ -8176,7 +8174,7 @@ template<class ForwardIterator, class Predicate>
   
  The range referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation. he number of elements in the sequence is not changed by the algorithm **unique** and the elements beyond the end of the modified sequence are dereferenceable but not specified.  
   
- The complexity is linear, requiring ( `_Last` – `_First`) – 1 comparisons.  
+ The complexity is linear, requiring ( `last` –  `first`) – 1 comparisons.  
   
  List provides a more efficient member function "unique", which may perform better.  
   
@@ -8274,29 +8272,29 @@ Removing adjacent elements satisfying the binary
   
 ```  
  template<class InputIterator, class OutputIterator>  
- OutputIterator unique_copy( InputIterator _First,  
-    InputIterator _Last,  
-    OutputIterator _Result );  
+ OutputIterator unique_copy( InputIterator first,  
+    InputIterator last,  
+    OutputIterator result );  
   
 template<class InputIterator, class OutputIterator, class BinaryPredicate>  
-OutputIterator unique_copy( InputIterator _First,  
-    InputIterator _Last,  
-    OutputIterator _Result,  
-    BinaryPredicate _Comp );  
+OutputIterator unique_copy( InputIterator first,  
+    InputIterator last,  
+    OutputIterator result,  
+    BinaryPredicate comp );  
   
 ```  
   
 ### Parameters  
- `_First`  
+  `first`  
  A forward iterator addressing the position of the first element in the source range to be copied.  
   
- `_Last`  
+ `last`  
  A forward iterator addressing the position one past the final element in the source range to be copied.  
   
- `_Result`  
+ `result`  
  An output iterator addressing the position of the first element in the destination range that is receiving the copy with consecutive duplicates removed.  
   
- `_Comp`  
+ `comp`  
  User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.  
   
 ### Return Value  
@@ -8309,7 +8307,7 @@ OutputIterator unique_copy( InputIterator _First,
   
  The ranges referenced must be valid; all pointers must be dereferenceable and within a sequence the last position is reachable from the first by incrementation.  
   
- The complexity is linear, requiring ( `_Last` – `_First`) comparisons.  
+ The complexity is linear, requiring ( `last` –  `first`) comparisons.  
   
 ### Example  
   
@@ -8391,15 +8389,15 @@ template<class ForwardIterator, class Type>
    ForwardIterator upper_bound(  
       ForwardIterator first,   
       ForwardIterator last,  
-      const Type& value  
-   );  
+      const Type& value);
+  
 template<class ForwardIterator, class Type, class Predicate>  
    ForwardIterator upper_bound(  
       ForwardIterator first,   
       ForwardIterator last,  
       const Type& value,  
-      Predicate comp  
-   );  
+      Predicate comp);
+  
 ```  
   
 ### Parameters  
@@ -8519,6 +8517,5 @@ int main( )
 }  
   
 ```  
-  
-## See Also  
+## See Also   
  [\<algorithm>](../standard-library/algorithm.md)

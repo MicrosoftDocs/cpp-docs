@@ -2,7 +2,6 @@
 title: "Dynaset | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -64,7 +63,7 @@ This topic describes dynasets and discusses their [availability](#_core_availabi
   
 -   The ODBC cursor library DLL must not be in use for this data source.  
   
-     If the cursor library is used, it masks some functionality of the underlying ODBC driver that is necessary for dynaset support. If you want to use dynasets (and your ODBC driver has the functionality required for dynasets, as described in the rest of this section), you can cause MFC not to load the cursor library when you create a `CDatabase` object. For more information, see [ODBC](../../data/odbc/odbc-basics.md) and the [OpenEx](../Topic/CDatabase::OpenEx.md) or [Open](../Topic/CDatabase::Open.md) member function of class `CDatabase`.  
+     If the cursor library is used, it masks some functionality of the underlying ODBC driver that is necessary for dynaset support. If you want to use dynasets (and your ODBC driver has the functionality required for dynasets, as described in the rest of this section), you can cause MFC not to load the cursor library when you create a `CDatabase` object. For more information, see [ODBC](../../data/odbc/odbc-basics.md) and the [OpenEx](../mfc/reference/cdatabase-class.md#cdatabase__openex) or [Open](../mfc/reference/cdatabase-class.md#cdatabase__open) member function of class `CDatabase`.  
   
      In ODBC terminology, dynasets and snapshots are referred to as cursors. A cursor is a mechanism used for keeping track of its position in a recordset.  
   

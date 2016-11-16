@@ -2,7 +2,6 @@
 title: "String Conversion Macros | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,8 +35,8 @@ These macros provide string conversion features.
   
 |||  
 |-|-|  
-|[ATL and MFC String Conversion Macros](../Topic/ATL%20and%20MFC%20String%20Conversion%20Macros.md)|Set of macros that convert between string types.|  
-|[DEVMODE and TEXTMETRIC String Conversion Macros](../Topic/DEVMODE%20and%20TEXTMETRIC%20String%20Conversion%20Macros.md)|Set of macros that convert the strings within `DEVMODE` and `TEXTMETRIC` structures.|  
+|[ATL and MFC String Conversion Macros](http://msdn.microsoft.com/Library/8f53659e-0464-4424-97db-6b8453c49863)|Set of macros that convert between string types.|  
+|[DEVMODE and TEXTMETRIC String Conversion Macros](http://msdn.microsoft.com/Library/85cebec0-2a18-48e5-9c1c-99d5b7f15425)|Set of macros that convert the strings within `DEVMODE` and `TEXTMETRIC` structures.|  
   
 ##  <a name="atl_and_mfc_string_conversion_macros"></a>  ATL and MFC String Conversion Macros  
  The string conversion macros discussed here are valid for both ATL and MFC. For more information on MFC string conversion, see [TN059: Using MFC MBCS/Unicode Conversion Macros](../../mfc/tn059-using-mfc-mbcs-unicode-conversion-macros.md) and [MFC Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md).  
@@ -50,8 +49,7 @@ These macros provide string conversion features.
  These macros create a copy of a [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) or [TEXTMETRIC](http://msdn.microsoft.com/library/windows/desktop/dd145132) structure and convert the strings within the new structure to a new string type. The macros allocate memory on the stack for the new structure and return a pointer to the new structure.  
   
 ```
-MACRONAME(Â
-    address_of_structure Â)
+MACRONAME( address_of_structure )
 ```  
   
 ### Remarks  

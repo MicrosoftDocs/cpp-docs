@@ -2,7 +2,6 @@
 title: "overflow_error Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -54,11 +53,11 @@ public:
 ```  
   
 ## Remarks  
- The value returned by [what](../standard-library/exception-class1.md) is a copy of **message**`.`[data](../standard-library/basic-string-class.md#basic_string__data).  
+ The value returned by [what](../standard-library/exception-class.md) is a copy of **message**`.`[data](../standard-library/basic-string-class.md#basic_string__data).  
   
 ## Example  
   
-```  
+```cpp  
 // overflow_error.cpp  
 // compile with: /EHsc /GR  
 #include <bitset>  

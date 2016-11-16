@@ -2,7 +2,6 @@
 title: "AFX_GLOBAL_DATA Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -116,16 +115,16 @@ struct AFX_GLOBAL_DATA
 |[AFX_GLOBAL_DATA::m_nDragFrameThicknessDock](#afx_global_data__m_ndragframethicknessdock)|Specifies the thickness of the drag frame that is used to communicate the docked state.|  
 |[AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat](#afx_global_data__m_ndragframethicknessfloat)|Specifies the thickness of the drag frame that is used to communicate the floating state.|  
   
-## Remarks  
+### Remarks  
  Most of the data in the `AFX_GLOBAL_DATA` structure is initialized when your application starts.  
   
-## Inheritance Hierarchy  
+### Inheritance Hierarchy  
  [AFX_GLOBAL_DATA](../../mfc/reference/afx-global-data-structure.md)  
   
-## Requirements  
+### Requirements  
  **Header:** afxglobals.h  
   
-## See Also  
+### See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
 
@@ -138,7 +137,7 @@ Indicates whether the operating system supports alpha blending.
 BOOL  bIsOSAlphaBlendingSupport;  
 ```  
   
-## Remarks  
+### Remarks  
  `TRUE` indicates alpha blending is supported; otherwise, `FALSE`.  
   
 
@@ -160,7 +159,7 @@ HRESULT D2D1MakeRotateMatrix(
     D2D1_MATRIX_3X2_F *matrix);
 ```  
   
-#### Parameters  
+### Parameters   
  `angle`  
  The clockwise rotation angle, in degrees.  
   
@@ -170,7 +169,7 @@ HRESULT D2D1MakeRotateMatrix(
  `matrix`  
  When this method returns, contains the new rotation transformation. You must allocate storage for this parameter.  
   
-## Return Value  
+### Return Value  
  Returns S_OK if successful, or an error value otherwise.  
   
 ## <a name="afx_global_data__drawparentbackground"></a> AFX_GLOBAL_DATA::DrawParentBackground
@@ -184,7 +183,7 @@ BOOL DrawParentBackground(
     LPRECT lpRect = NULL);
 ```  
   
-#### Parameters  
+### Parameters   
  [in] `pWnd`  
  Pointer to a control's window.  
   
@@ -194,7 +193,7 @@ BOOL DrawParentBackground(
  [in] `lpRect`  
  Pointer to a rectangle that bounds the area to draw. The default value is `NULL`.  
   
-## Return Value  
+### Return Value  
  `TRUE` if this method is successful; otherwise, `FALSE`.  
   
 ## <a name="afx_global_data__drawtextonglass"></a> AFX_GLOBAL_DATA::DrawTextOnGlass
@@ -214,7 +213,7 @@ BOOL DrawTextOnGlass(
     COLORREF clrText = (COLORREF)-1);
 ```  
   
-#### Parameters  
+### Parameters   
  [in] `hTheme`  
  Handle to the theme data of a window, or `NULL`. The framework uses the specified theme to draw the text if this parameter is not `NULL` and themes are supported. Otherwise, the framework does not use a theme to draw the text.  
   
@@ -246,10 +245,10 @@ BOOL DrawTextOnGlass(
  [in] `clrText`  
  The color in which the specified text is drawn. The default value is the default color.  
   
-## Return Value  
+### Return Value  
  `TRUE` if a theme is used to draw the specified text; otherwise, `FALSE`.  
   
-## Remarks  
+### Remarks  
  A theme defines the visual style of an application. A theme is not used to draw the text if the `hTheme` parameter is `NULL`, or if the [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) method is not supported, or if [Desktop Window Manager](http://msdn.microsoft.com/library/windows/desktop/aa969540) (DWM) composition is disabled.  
   
  
@@ -271,18 +270,18 @@ Enables or disables Microsoft Active Accessibility support.
 void EnableAccessibilitySupport(BOOL bEnable=TRUE);
 ```  
   
-#### Parameters  
+### Parameters   
  [in] `bEnable`  
  `TRUE` to enable accessibility support; `FALSE` to disable accessibility support. The default value is `TRUE`.  
   
-## Remarks  
- Active Accessibility is a COM-based technology that improves the way programs and the Windows operating system work together with assistive technology products. It provides reliable methods for exposing information about user interface elements. However, a newer accessibility model called Microsoft UI Automation is now available. For a comparison of the two technologies, see [UI Automation and Microsoft Active Accessibility](../Topic/UI%20Automation%20and%20Microsoft%20Active%20Accessibility.md).  
+### Remarks  
+ Active Accessibility is a COM-based technology that improves the way programs and the Windows operating system work together with assistive technology products. It provides reliable methods for exposing information about user interface elements. However, a newer accessibility model called Microsoft UI Automation is now available. For a comparison of the two technologies, see [UI Automation and Microsoft Active Accessibility](http://msdn.microsoft.com/Library/87bee662-0a3e-4232-a421-20e7a5968321).  
   
  Use the [AFX_GLOBAL_DATA::IsAccessibilitySupport](#afx_global_data__IsAccessibilitySupport.md) method to determine whether Microsoft Active Accessibility support is enabled.  
   
  
 ## See Also  
- [UI Automation and Microsoft Active Accessibility](../Topic/UI%20Automation%20and%20Microsoft%20Active%20Accessibility.md)   
+ [UI Automation and Microsoft Active Accessibility](http://msdn.microsoft.com/Library/87bee662-0a3e-4232-a421-20e7a5968321)   
  [AFX_GLOBAL_DATA::IsAccessibilitySupport](#afx_global_data__IsAccessibilitySupport.md)
 
 ## <a name="afx_global_data__excludetag"></a> AFX_GLOBAL_DATA::ExcludeTag
@@ -297,7 +296,7 @@ BOOL ExcludeTag(
     BOOL bIsCharsList = FALSE);
 ```  
   
-#### Parameters  
+### Parameters   
  [in] `strBuffer`  
  A buffer of text.  
   
@@ -310,10 +309,10 @@ BOOL ExcludeTag(
  [in] `bIsCharsList`  
  `TRUE` to convert symbols for escape characters in the `strTag` parameter into actual escape characters; `FALSE` not to perform the conversion.The default value is `FALSE`. For more information, see Remarks.  
   
-## Return Value  
+### Return Value  
  `TRUE` if this method is successful; otherwise, `FALSE`.  
   
-## Remarks  
+### Remarks  
  An XML tag pair consists of named opening and closing tags that indicate the start and end of a run of text in the specified buffer. The `strBuffer` parameter specifies the buffer, and the `lpszTag` parameter specifies the name of the XML tags.  
   
  Use the symbols in the following table to encode a set of escape characters in the specified buffer. Specify `TRUE` for the `bIsCharsList` parameter to convert the symbols in the `strTag` parameter into actual escape characters. The following table uses the [_T()](../../c-runtime-library/data-type-mappings.md) macro to specify the symbol and escape character strings.  
@@ -336,14 +335,14 @@ Retrieves the current color of the specified user interface element.
 COLORREF GetColor(int nColor);
 ```  
   
-#### Parameters  
+### Parameters   
  [in] `nColor`  
  A value that specifies a user interface element whose color is retrieved. For a list of valid values, see the `nIndex` parameter of the [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371) method.  
   
-## Return Value  
+### Return Value  
  The RGB color value of the specified user interface element. For more information, see Remarks.  
   
-## Remarks  
+### Remarks  
  If the `nColor` parameter is out of range, the return value is zero. Because zero is also a valid RGB value, you cannot use this method to determine whether a system color is supported by the current operating system. Instead, use the [GetSysColorBrush](http://msdn.microsoft.com/library/windows/desktop/dd144927) method, which returns `NULL` if the color is not supported.  
   
 ## See Also  
@@ -360,7 +359,7 @@ COLORREF GetColor(int nColor);
 ID2D1Factory* GetDirect2dFactory();
 ```  
   
-## Return Value  
+### Return Value  
  A pointer to ID2D1Factory interface if creation of a factory succeeds, or NULL if creation fails or current Operation System don't have D2D support.  
   
 AFX_GLOBAL_DATA::GetHandCursor
@@ -371,7 +370,7 @@ Retrieves the predefined cursor that resembles a hand and whose identifier is `I
 HCURSOR GetHandCursor();
 ```  
   
-## Return Value  
+### Return Value  
  The handle of the hand cursor.  
 
 ## <a name="afx_global_data__getnonclientmetrics"></a> AFX_GLOBAL_DATA::GetNonClientMetrics
@@ -382,11 +381,11 @@ Retrieves the metrics associated with the nonclient area of nonminimized windows
 BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
 ```  
   
-#### Parameters  
+### Parameters   
  [in, out] `info`  
  A [NONCLIENTMETRICS](http://msdn.microsoft.com/library/windows/desktop/ff729175) structure that contains the scalable metrics associated with the nonclient area of a nonminimized window.  
   
-## Return Value  
+### Return Value  
  `TRUE` if this method succeeds; otherwise, `FALSE`.  
  
   
@@ -401,11 +400,11 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
 int GetTextHeight(BOOL bHorz = TRUE);
 ```  
   
-#### Parameters  
+### Parameters   
  [in] `bHorz`  
  `TRUE` to retrieve the height of characters when text runs horizontally; `FALSE` to retrieve the height of characters when text runs vertically. The default value is `TRUE`.  
   
-## Return Value  
+### Return Value  
  The height of the current font, which is measured from its ascender to its descender.  
   
 ## <a name="afx_global_data__getwicfactory"></a> AFX_GLOBAL_DATA::GetWICFactory
@@ -416,7 +415,7 @@ Returns a pointer to the IWICImagingFactory interface that is stored in the glob
 IWICImagingFactory* GetWICFactory();
 ```  
   
-## Return Value  
+### Return Value  
  A pointer to IWICImagingFactory interface if creation of a factory succeeds, or NULL if creation fails or current Operation System don't have WIC support.  
   
 ## <a name="afx_global_data__getwritefactory"></a> AFX_GLOBAL_DATA::GetWriteFactory
@@ -427,7 +426,7 @@ Returns a pointer to the IDWriteFactory interface that is stored in the global d
 IDWriteFactory* GetWriteFactory();
 ```  
   
-## Return Value  
+### Return Value  
  A pointer to IDWriteFactory interface if creation of a factory succeeds, or NULL if creation fails or current Operation System don't have DirectWrite support.  
  
 ## <a name="afx_global_data__initd2d"></a> AFX_GLOBAL_DATA::InitD2D
@@ -440,14 +439,14 @@ BOOL InitD2D(
     DWRITE_FACTORY_TYPE writeFactoryType = DWRITE_FACTORY_TYPE_SHARED);
 ```  
   
-#### Parameters  
+### Parameters   
  `d2dFactoryType`  
  The threading model of the D2D factory and the resources it creates.  
   
  `writeFactoryType`  
  A value that specifies whether the write factory object will be shared or isolated  
   
-## Return Value  
+### Return Value  
  Returns TRUE if the factories were intilalizrd, FALSE - otherwise  
   
 ## <a name="afx_global_data__is32biticons"></a> AFX_GLOBAL_DATA::Is32BitIcons
@@ -460,10 +459,10 @@ BOOL Is32BitIcons() const;
  
 ```  
   
-## Return Value  
+### Return Value  
  `TRUE` if predefined 32-bit icons are supported; otherwise, `FALSE`.  
   
-## Remarks  
+### Remarks  
  This method returns `TRUE` if the framework supports 32-bit built-in icons, and if the operating system supports 16 bits per pixel or more, and if images are not displayed in high contrast.  
   
 ## <a name="afx_global_data__isaccessibilitysupport"></a> AFX_GLOBAL_DATA::IsAccessibilitySupport
@@ -471,34 +470,30 @@ Indicates whether Microsoft Active Accessibility support is enabled.
   
   
 ```  
-BOOL IsAccessibilitySupport() const;
-
- 
+BOOL IsAccessibilitySupport() const; 
 ```  
   
-## Return Value  
+### Return Value  
  `TRUE` if accessibility support is enabled; otherwise, `FALSE`.  
   
-## Remarks  
- Microsoft Active Accessibility was the earlier solution for making applications accessible. Microsoft UI Automation is the new accessibility model for Microsoft Windows and is intended to address the needs of assistive technology products and automated testing tools. For more information, see [UI Automation and Microsoft Active Accessibility](../Topic/UI%20Automation%20and%20Microsoft%20Active%20Accessibility.md).  
+### Remarks  
+ Microsoft Active Accessibility was the earlier solution for making applications accessible. Microsoft UI Automation is the new accessibility model for Microsoft Windows and is intended to address the needs of assistive technology products and automated testing tools. For more information, see [UI Automation and Microsoft Active Accessibility](http://msdn.microsoft.com/Library/87bee662-0a3e-4232-a421-20e7a5968321).  
   
  Use the [AFX_GLOBAL_DATA::EnableAccessibilitySupport](#afx_global_data__EnableAccessibilitySupport.md) method to enable or disable Active Accessibility support.  
   
 
 ## See Also  
- [UI Automation and Microsoft Active Accessibility](../Topic/UI%20Automation%20and%20Microsoft%20Active%20Accessibility.md)
+ [UI Automation and Microsoft Active Accessibility](http://msdn.microsoft.com/Library/87bee662-0a3e-4232-a421-20e7a5968321)
 
 ## <a name="afx_global_data__isd2dinitialized"></a> AFX_GLOBAL_DATA::IsD2DInitialized
  Determines whether the D2D was initialized  
   
   
 ```  
-BOOL IsD2DInitialized() const;
-
- 
+BOOL IsD2DInitialized() const; 
 ```  
   
-## Return Value  
+### Return Value  
  TRUE if D2D was initialized; otherwise FALSE.  
   
 ## <a name="afx_global_data__isdwmcompositionenabled"></a> AFX_GLOBAL_DATA::IsDwmCompositionEnabled
@@ -509,7 +504,7 @@ Provides a simple way to call the Windows [DwmIsCompositionEnabled](http://msdn.
 BOOL IsDwmCompositionEnabled();
 ```  
   
-## Return Value  
+### Return Value  
  `TRUE` if [Desktop Window Manager](http://msdn.microsoft.com/library/windows/desktop/aa969540) (DWM) composition is enabled; otherwise, `FALSE`.  
   
 ## See Also    
@@ -519,15 +514,13 @@ BOOL IsDwmCompositionEnabled();
 ## <a name="afx_global_data__ishighcontrastmode"></a> AFX_GLOBAL_DATA::IsHighContrastMode
  Indicates whether images are currently displayed in high contrast.    
 ```  
-BOOL IsHighContrastMode() const;
-
- 
+BOOL IsHighContrastMode() const; 
 ```  
   
-## Return Value  
+### Return Value  
  `TRUE` if images are currently displayed in black or white high contrast mode; otherwise, `FALSE`.  
   
-## Remarks  
+### Remarks  
  In black high contrast mode, edges facing the light are white and the background is black. In white high contrast mode, edges facing the light are black and the background is white.  
   
 ## <a name="afx_global_data__iswindowslayersupportavailable"></a> AFX_GLOBAL_DATA::IsWindowsLayerSupportAvailable
@@ -535,15 +528,13 @@ Indicates whether the operating system supports layered windows.
   
   
 ```  
-BOOL IsWindowsLayerSupportAvailable() const;
-
- 
+BOOL IsWindowsLayerSupportAvailable() const; 
 ```  
   
-## Return Value  
+### Return Value  
  `TRUE` if layered windows are supported; otherwise, `FALSE`.  
   
-## Remarks  
+### Remarks  
  If layered windows are supported, *smart docking* markers use layered windows.  
   
 ## <a name="afx_global_data__m_busebuiltin32biticons"></a> AFX_GLOBAL_DATA::m_bUseBuiltIn32BitIcons
@@ -554,7 +545,7 @@ Indicates whether the framework uses predefined 32-bit color icons or icons of a
 BOOL  m_bUseBuiltIn32BitIcons;  
 ```  
   
-## Remarks  
+### Remarks  
  `TRUE` specifies that the framework use 32-bit color icons; `FALSE` specifies lower resolution icons. The `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` constructor initializes this member to `TRUE`.  
   
  This member must be set at application startup.  
@@ -567,7 +558,7 @@ Indicates whether a system font is used for menus, toolbars, and ribbons.
 BOOL m_bUseSystemFont;  
 ```  
   
-## Remarks  
+### Remarks  
  `TRUE` specifies to use a system font; otherwise, `FALSE`. The `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` constructor initializes this member to `FALSE`.  
   
  Testing this member is not the only way for the framework to determine the font to use. The `AFX_GLOBAL_DATA::UpdateFonts` method also tests default and alternative fonts to determine what visual styles are available to be applied to menus, toolbars, and ribbons.  
@@ -608,10 +599,10 @@ Specifies the offset from the leftmost autohide toolbar to the left side of the 
   
   
 ```  
-int   m_nAutoHideToolBarMargin;  
+int  m_nAutoHideToolBarMargin;  
 ```  
   
-## Remarks  
+### Remarks  
  The `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` constructor initializes this member to 4 pixels.  
   
 ## <a name="afx_global_data__m_nautohidetoolbarspacing"></a> AFX_GLOBAL_DATA::m_nAutoHideToolBarSpacing
@@ -622,7 +613,7 @@ Specifies the gap between autohide toolbars.
 int   m_nAutoHideToolBarSpacing;  
 ```  
   
-## Remarks  
+### Remarks  
  The `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` constructor initializes this member to 14 pixels.  
   
 ## <a name="afx_global_data__m_ndragframethicknessdock"></a> AFX_GLOBAL_DATA::m_nDragFrameThicknessDock
@@ -631,10 +622,10 @@ Specifies the thickness of the drag frame that is used to indicate the docked st
   
   
 ```  
-int   m_nDragFrameThicknessDock;  
+int  m_nDragFrameThicknessDock;  
 ```  
   
-## Remarks  
+### Remarks  
  The `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` constructor initializes this member to 3 pixels.  
   
 ## <a name="afx_global_data__m_ndragframethicknessfloat"></a> AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat
@@ -642,10 +633,10 @@ Specifies the thickness of the drag frame that is used to indicate the floating 
   
   
 ```  
-int   m_nDragFrameThicknessFloat;  
+int  m_nDragFrameThicknessFloat;  
 ```  
   
-## Remarks  
+### Remarks  
  The `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` constructor initializes this member to 4 pixels.  
   
 ## <a name="afx_global_data__onsettingchange"></a> AFX_GLOBAL_DATA::OnSettingChange
@@ -656,7 +647,7 @@ Detects the current state of the desktop's menu animation and taskbar autohide f
 void OnSettingChange();
 ```  
   
-## Remarks  
+### Remarks  
  This method sets framework variables to the state of certain attributes of the user's desktop. This method detects the current state of the menu animation, menu fade, and task bar autohide features.  
   
 ## <a name="afx_global_data__registerwindowclass"></a> AFX_GLOBAL_DATA::RegisterWindowClass
@@ -667,14 +658,14 @@ Registers the specified MFC window class.
 CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
 ```  
   
-#### Parameters  
+### Parameters   
  [in] `lpszClassNamePrefix`  
  The name of the window class to register.  
   
-## Return Value  
- The qualified name of the registered class if this method succeeds; otherwise, a [resource exception](../Topic/AfxThrowResourceException.md).  
+### Return Value  
+ The qualified name of the registered class if this method succeeds; otherwise, a [resource exception](http://msdn.microsoft.com/Library/ddd99292-819b-4fa4-8371-b1954ed5856d).  
   
-## Remarks  
+### Remarks  
  The return value is a colon-delimited list of the `lpszClassNamePrefix` parameter string, and the hexadecimal text representations of the handles of the current application instance; the application cursor, which is the arrow cursor whose identifier is IDC_ARROW; and the background brush. For more information about registering MFC window classes, see [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass).  
   
 ## See Also    
@@ -689,10 +680,10 @@ CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
 BOOL Resume();
 ```  
   
-## Return Value  
+### Return Value  
  `TRUE` if this method succeeds; otherwise, `FALSE`. In debug mode, this method asserts if this method is unsuccessful.  
   
-## Remarks  
+### Remarks  
  This method is called when the framework receives the [WM_POWERBROADCAST](http://msdn.microsoft.com/library/windows/desktop/aa373247) message.  
   
 ## <a name="afx_global_data__setlayeredattrib"></a> AFX_GLOBAL_DATA::SetLayeredAttrib
@@ -707,7 +698,7 @@ BOOL SetLayeredAttrib(
     DWORD dwFlags);
 ```  
   
-#### Parameters  
+### Parameters   
  [in] `hwnd`  
  Handle to the layered window.  
   
@@ -720,7 +711,7 @@ BOOL SetLayeredAttrib(
  [in] `dwFlags`  
  A bitwise combination (OR) of flags that specify which method parameters to use. Specify LWA_COLORKEY to use the `crKey` parameter as the transparency color. Specify LWA_ALPHA to use the `bAlpha` parameter to determine the opacity of the layered window.  
   
-## Return Value  
+### Return Value  
  `TRUE` if this method succeeds; otherwise, `FALSE`.   
  
 ## See Also   
@@ -737,17 +728,17 @@ BOOL SetMenuFont(
     BOOL bHorz);
 ```  
   
-#### Parameters  
+### Parameters   
  [in] `lpLogFont`  
  Pointer to a structure that contains the attributes of a font.  
   
  [in] `bHorz`  
  `TRUE` to specify that the text runs horizontally; `FALSE` to specify that the text runs vertically.  
   
-## Return Value  
+### Return Value  
  `TRUE` if this method succeeds; otherwise, `FALSE`. In debug mode, this method asserts if this method is unsuccessful.  
   
-## Remarks  
+### Remarks  
  This method creates a horizontal regular font, an underlined font, and a bold font that is used in default menu items. This method optionally creates a regular vertical font. For more information about logical fonts, see [CFont::CreateFontIndirect](../../mfc/reference/cfont-class.md#cfont__createfontindirect).  
   
 ## <a name="afx_global_data__updatefonts"></a> AFX_GLOBAL_DATA::UpdateFonts
@@ -758,7 +749,7 @@ Reintializes the logical fonts that are used by the framework.
 void UpdateFonts();
 ```  
   
-## Remarks  
+### Remarks  
  For more information about logical fonts, see `CFont::CreateFontIndirect`.  
   
 ## <a name="afx_global_data__updatesyscolors"></a> AFX_GLOBAL_DATA::UpdateSysColors
@@ -801,7 +792,7 @@ Creates and stores in the global data a pointer to the `ITaskBarList` interface.
 ITaskbarList *GetITaskbarList();
 ```  
   
-## Return Value  
+### Return Value  
  A pointer to the `ITaskbarList` interface if creation of a task bar list object succeeds; `NULL` if creation fails or if the current Operation System is less than Windows 7.  
   
 ## <a name="afx_global_data__getitaskbarlist3"></a> AFX_GLOBAL_DATA::GetITaskbarList3
@@ -812,7 +803,7 @@ Creates and stores in the global data a pointer to the `ITaskBarList3` interface
 ITaskbarList3 *GetITaskbarList3();
 ```  
   
-## Return Value  
+### Return Value  
  A pointer to the `ITaskbarList3` interface if creation of a task bar list object succeeds; `NULL` if creation fails or if the current Operation System is less than Windows 7.  
   
 ## <a name="afx_global_data__getshellautohidebars"></a> AFX_GLOBAL_DATA::GetShellAutohideBars
@@ -823,7 +814,7 @@ Determines positions of Shell auto hide bars.
 int GetShellAutohideBars();
 ```  
   
-## Return Value  
+### Return Value  
  An integer value with encoded flags that specify positions of auto hide bars. It may combine the following values: AFX_AUTOHIDE_BOTTOM, AFX_AUTOHIDE_TOP, AFX_AUTOHIDE_LEFT, AFX_AUTOHIDE_RIGHT.  
   
 ## <a name="afx_global_data__releasetaskbarrefs"></a> AFX_GLOBAL_DATA::ReleaseTaskBarRefs
@@ -846,7 +837,7 @@ HRESULT ShellCreateItemFromParsingName(
     void **ppv);
 ```  
   
-#### Parameters  
+### Parameters   
  `pszPath`  
  [in] A pointer to a display name.  
   
@@ -859,6 +850,6 @@ HRESULT ShellCreateItemFromParsingName(
  `ppv`  
  [out] When this function returns, contains the interface pointer requested in `riid`. This will typically be `IShellItem` or `IShellItem2`.  
   
-## Return Value  
+### Return Value  
  Returns S_OK if successful; an error value otherwise.  
 

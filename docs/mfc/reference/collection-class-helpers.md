@@ -2,7 +2,6 @@
 title: "Collection Class Helpers | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -59,21 +58,11 @@ The collection classes `CMap`, `CList`, and `CArray` use templated global helper
   
 ```  
  
-template<class  
-TYPE  ,  
-class  
-ARG_TYPE  
->  
-BOOL  
-AFXAPI  
+template<class TYPE, class ARG_TYPE>  
+BOOL AFXAPI  
 CompareElements(
-    const 
-TYPE  
-* 
-pElement1  ,  
-    const 
-ARG_TYPE  
-* pElement2);
+    const TYPE* pElement1,  
+    const ARG_TYPE* pElement2);
 
  
 ```  
@@ -106,18 +95,10 @@ ARG_TYPE
   
 ```  
  
-template<class   
-TYPE  
->  
-void AFXAPI  
-CopyElements(
-TYPE  
-* 
-pDest  ,  
-    const 
-TYPE  
-* 
-pSrc  ,  
+template<class TYPE>  
+void AFXAPI CopyElements(
+    TYPE* pDest,  
+    const TYPE* pSrc,  
     INT_PTR nCount);
 
  
@@ -146,18 +127,10 @@ pSrc  ,
   
 ```  
  
-template<class  
-TYPE  
->  
-void  
-AFXAPI  
-DumpElements(
-    CDumpContext& 
-dc  ,  
-    const 
-TYPE  
-* 
-pElements  ,  
+template<class TYPE>  
+void  AFXAPI DumpElements(
+    CDumpContext& dc,  
+    const TYPE* pElements,  
     INT_PTR nCount);
 
  
@@ -187,16 +160,8 @@ pElements  ,
  Calculates a hash value for the given key.  
   
 ```  
- 
-template<class  
-ARG_KEY  
->  
-AFX_INLINE UINT  
-AFXAPI  
-HashKey(
-ARG_KEY  key);
-
- 
+template<class ARG_KEY>  
+AFX_INLINE UINT AFXAPI HashKey(ARG_KEY  key); 
 ```  
   
 ### Parameters  
@@ -222,19 +187,8 @@ ARG_KEY  key);
   
 ```  
  
-template<
-class  
-TYPE  
->  
-void  
-AFXAPI  
-SerializeElements(
-    CArchive& 
-ar  ,  
-TYPE  
-* 
-pElements  ,  
-    INT_PTR nCount);
+template<class TYPE>  
+void AFXAPI SerializeElements(CArchive& ar, TYPE* pElements, INT_PTR nCount);
 
  
 ```  

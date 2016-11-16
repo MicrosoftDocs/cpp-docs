@@ -2,7 +2,6 @@
 title: "region, endregion | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,7 +42,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # region, endregion
-**#pragma region** lets you specify a block of code that you can expand or collapse when using the [outlining feature](/visual-studio/ide/outlining) of the Visual Studio Code Editor.  
+**#pragma region** lets you specify a block of code that you can expand or collapse when using the [outlining feature](/visualstudio/ide/outlining) of the Visual Studio Code Editor.  
   
 ## Syntax  
   

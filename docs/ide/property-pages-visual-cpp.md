@@ -2,7 +2,6 @@
 title: "Property Pages (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -150,6 +149,6 @@ By using property pages, you can specify settings for Visual Studio projects. To
 27. [XML Document Generator Tool Property Pages](../ide/xml-document-generator-tool-property-pages.md)  
   
 ## See Also  
- [How to: Create and Remove Project Dependencies](../Topic/How%20to:%20Create%20and%20Remove%20Project%20Dependencies.md)   
- [How to: Create and Edit Configurations](../Topic/How%20to:%20Create%20and%20Edit%20Configurations.md)   
+ [How to: Create and Remove Project Dependencies](http://msdn.microsoft.com/Library/e2a0a8ff-dae7-40a8-b774-b88aa5235183)   
+ [How to: Create and Edit Configurations](http://msdn.microsoft.com/Library/19be121c-148e-4ece-bbfc-d20b08cfc3f7)   
  [Deploying Applications](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)

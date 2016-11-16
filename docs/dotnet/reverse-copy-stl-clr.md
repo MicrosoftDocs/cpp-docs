@@ -2,7 +2,6 @@
 title: "reverse_copy (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +45,7 @@ template<class _BidIt, class _OutIt> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `reverse_copy`. For more information, see [reverse_copy](../Topic/reverse_copy.md).  
+ This function behaves the same as the STL function `reverse_copy`. For more information, see [reverse_copy](http://msdn.microsoft.com/Library/84567cb2-dc19-43a0-831f-6a03a85acb66).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

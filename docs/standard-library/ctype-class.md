@@ -2,7 +2,6 @@
 title: "ctype Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -235,7 +234,7 @@ virtual const CharType* do_narrow(
 virtual const CharType *do_scan_is(
     mask maskVal,   
     const CharType* first,   
-    const CharType* last,) const;
+    const CharType* last) const;
 ```  
   
 ### Parameters  
@@ -264,7 +263,7 @@ virtual const CharType *do_scan_is(
 virtual const CharType *do_scan_not(
     mask maskVal,   
     const CharType* first,   
-    const CharType* last,) const;
+    const CharType* last) const;
 ```  
   
 ### Parameters  
@@ -290,8 +289,7 @@ virtual const CharType *do_scan_not(
  A virtual function called to convert a character or a range of characters to lower case.  
   
 ```  
-virtual CharType do_tolower(
-    CharType ch) const;
+virtual CharType do_tolower(CharType ch) const;
 
  
 virtual const CharType *do_tolower(
@@ -322,8 +320,7 @@ virtual const CharType *do_tolower(
  A virtual function called to convert a character or a range of characters to upper case.  
   
 ```  
-virtual CharType do_toupper(
-    CharType ch) const;
+virtual CharType do_toupper(CharType ch) const;
 
  
 virtual const CharType *do_toupper(
@@ -354,8 +351,7 @@ virtual const CharType *do_toupper(
  A virtual function called to converts a character of type `char` in the native character set to the corresponding character of type `CharType` used by a locale.  
   
 ```  
-virtual CharType do_widen(
-    char byte) const;
+virtual CharType do_widen(char byte) const;
 
  
 virtual const char *do_widen(
@@ -392,9 +388,7 @@ virtual const char *do_widen(
  Tests whether a single character has a particular attribute or classifies the attributes of each character in a range and stores them in an array.  
   
 ```  
-bool is(
-    mask maskVal,   
-    CharType ch) const;
+bool is(mask maskVal, CharType ch) const;
 
  
 const CharType *is(
@@ -429,7 +423,7 @@ const CharType *is(
   
 ### Example  
   
-```  
+```cpp  
 // ctype_is.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -470,9 +464,7 @@ int main() {
  Converts characters of type `CharType` used by a locale to the corresponding characters of type `char` in the native character set.  
   
 ```  
-char narrow(
-    CharType ch,   
-    char default = '\0') const;
+char narrow(CharType ch, char default = '\0') const;
 
  
 const CharType* narrow(
@@ -508,7 +500,7 @@ const CharType* narrow(
   
 ### Example  
   
-```  
+```cpp  
 // ctype_narrow.cpp  
 // compile with: /EHsc /W3  
 #include <locale>  
@@ -539,7 +531,7 @@ Xhello everyone
 const CharType *scan_is(
     mask maskVal,   
     const CharType* first,   
-    const CharType* last,) const;
+    const CharType* last) const;
 ```  
   
 ### Parameters  
@@ -560,7 +552,7 @@ const CharType *scan_is(
   
 ### Example  
   
-```  
+```cpp  
 // ctype_scan_is.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -591,7 +583,7 @@ The first punctuation is "," at position: 5
 const CharType *scan_not(
     mask maskVal,   
     const CharType* first,   
-    const CharType* last,) const;
+    const CharType* last) const;
 ```  
   
 ### Parameters  
@@ -612,7 +604,7 @@ const CharType *scan_not(
   
 ### Example  
   
-```  
+```cpp  
 // ctype_scan_not.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -640,13 +632,10 @@ First nonalpha character is "," at position: 5
  Converts a character or a range of characters to lower case.  
   
 ```  
-CharType tolower(
-    CharType ch) const;
+CharType tolower(CharType ch) const;
 
  
-const CharType *tolower(
-    CharType* first,   
-    const CharType* last,) const;
+const CharType *tolower(CharType* first, const CharType* last) const;
 ```  
   
 ### Parameters  
@@ -669,7 +658,7 @@ const CharType *tolower(
   
 ### Example  
   
-```  
+```cpp  
 // ctype_tolower.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -696,13 +685,8 @@ The lowercase string is: hello, my name is john
  Converts a character or a range of characters to upper case.  
   
 ```  
-CharType toupper(
-    CharType ch) const;
-
- 
-const CharType *toupper(
-    CharType* first,   
-    const CharType* last) const;
+CharType toupper(CharType ch) const; 
+const CharType *toupper(CharType* first, const CharType* last) const;
 ```  
   
 ### Parameters  
@@ -725,7 +709,7 @@ const CharType *toupper(
   
 ### Example  
   
-```  
+```cpp  
 // ctype_toupper.cpp  
 // compile with: /EHsc  
 #include <locale>  
@@ -752,14 +736,8 @@ The uppercase string is: HELLO, MY NAME IS JOHN
  Converts a character of type `char` in the native character set to the corresponding character of type `CharType` used by a locale.  
   
 ```  
-CharType widen(
-    char byte) const;
-
- 
-const char *widen(
-    const char* first,   
-    const char* last,   
-    CharType* dest) const;
+CharType widen(char byte) const; 
+const char *widen(const char* first, const char* last, CharType* dest) const;
 ```  
   
 ### Parameters  
@@ -785,7 +763,7 @@ const char *widen(
   
 ### Example  
   
-```  
+```cpp  
 // ctype_widen.cpp  
 // compile with: /EHsc /W3  
 #include <locale>  

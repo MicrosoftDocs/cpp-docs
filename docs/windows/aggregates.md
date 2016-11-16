@@ -2,7 +2,6 @@
 title: "aggregates | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -72,7 +71,7 @@ Indicates that the object aggregates the object specified by the CLSID.
 COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(_m_spAttrXXX, clsid)  
 ```  
   
- Second, the [DECLARE_GET_CONTROLLING_UNKNOWN](../Topic/DECLARE_GET_CONTROLLING_UNKNOWN.md) macro is also added.  
+ Second, the [DECLARE_GET_CONTROLLING_UNKNOWN](http://msdn.microsoft.com/Library/82b0199a-a9d5-4f95-a711-fa1ae18e1f77) macro is also added.  
   
 ## Example  
   
@@ -120,5 +119,5 @@ struct CObject : IObject
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
  [Aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558)   
  [Aggregatable](http://msdn.microsoft.com/library/windows/desktop/aa366721)   
- [COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../Topic/COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND.md)   
+ [COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](http://msdn.microsoft.com/Library/4e867f24-0a4f-465e-ad17-06939fcf9c1c)   
  [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

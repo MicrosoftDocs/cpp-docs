@@ -2,7 +2,6 @@
 title: "CommandHandler | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -68,7 +67,7 @@ translation.priority.ht:
  The result of message processing. 0 if successful.  
   
 ## Remarks  
- For an example of using this message handler in a message map, see [COMMAND_HANDLER](../Topic/COMMAND_HANDLER.md).  
+ For an example of using this message handler in a message map, see [COMMAND_HANDLER](http://msdn.microsoft.com/Library/7b53ffe3-be95-43f7-a21a-dc9516a19f2a).  
   
 ## See Also  
  [Implementing a Window](../atl/implementing-a-window.md)   

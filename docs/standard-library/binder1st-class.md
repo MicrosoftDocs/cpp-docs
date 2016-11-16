@@ -2,7 +2,6 @@
 title: "binder1st Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,30 +45,27 @@ A template class providing a constructor that converts a binary function object 
 ```
 template <class Operation>
 class binder1st
- : public unary_function <typename Operation::second_argument_type,
-    typename Operation::result_type>  
+    : public unaryFunction <typename Operation::second_argument_type,
+                             typename Operation::result_type>
 {
-    public:
- typedef typename Operation::argument_type argument_type;
+public:
+    typedef typename Operation::argument_type argument_type;
     typedef typename Operation::result_type result_type;
     binder1st(
- const Operation& _Func,
-    const typename Operation::first_argument_type& left);
+        const Operation& Func,
+        const typename Operation::first_argument_type& left);
 
-    result_type operator()(
-    const argument_type& right) const;
+    result_type operator()(const argument_type& right) const;
+    result_type operator()(const argument_type& right) const;
 
-    result_type operator()(
-    const argument_type& right) const;
-
-    protected:
- Operation op;
+protected:
+    Operation op;
     typename Operation::first_argument_type value;
- };
+};
 ```  
   
 #### Parameters  
- `_Func`  
+ `Func`  
  The binary function object to be converted to a unary function object.  
   
  `left`  
@@ -82,13 +78,13 @@ class binder1st
  The unary function object that results from binding the first argument of the binary function object to the value `left.`  
   
 ## Remarks  
- The template class stores a copy of a binary function object `_Func` in **op**, and a copy of `left` in **value**. It defines its member function `operator()` as returning **op**( **value**, `right`).  
+ The template class stores a copy of a binary function object `Func` in **op**, and a copy of `left` in **value**. It defines its member function `operator()` as returning **op**( **value**, `right`).  
   
- If `_Func` is an object of type **Operation** and `c` is a constant , then [bind1st](../standard-library/functional-functions.md#bind1st_function) ( `_Func`, `c` ) is equivalent to the `binder1st` class constructor `binder1st`\< **Operation**> ( `_Func`, `c` ) and more convenient.  
+ If `Func` is an object of type **Operation** and `c` is a constant , then [bind1st](../standard-library/functional-functions.md#bind1stFunction) ( `Func`, `c` ) is equivalent to the `binder1st` class constructor `binder1st`\< **Operation**> ( `Func`, `c` ) and more convenient.  
   
 ## Example  
   
-```  
+```cpp  
 // functional_binder1st.cpp  
 // compile with: /EHsc  
 #include <vector>  

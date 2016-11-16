@@ -2,7 +2,6 @@
 title: "replace_copy (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,7 +46,7 @@ template<class _InIt, class _OutIt, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `replace_copy`. For more information, see [replace_copy](../Topic/replace_copy.md).  
+ This function behaves the same as the STL function `replace_copy`. For more information, see [replace_copy](http://msdn.microsoft.com/Library/2493e702-894c-4798-87a1-0138cc348e6f).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

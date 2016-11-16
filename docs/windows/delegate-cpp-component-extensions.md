@@ -2,7 +2,6 @@
 title: "delegate  (C++ Component Extensions) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -79,7 +78,7 @@ delegate-type-identifier
  (Optional) The types and identifiers of the function prototype.  
   
 ### Remarks  
- Use the *delegate-type-identifier* to declare an event with the same prototype as the delegate. For more information, see [Delegates (C++/CX)](../Topic/Delegates%20\(C++-CX\).md).  
+ Use the *delegate-type-identifier* to declare an event with the same prototype as the delegate. For more information, see [Delegates (C++/CX)](http://msdn.microsoft.com/Library/3175bf1c-86d8-4eda-8d8f-c5b6753d8e38).  
   
 ### Requirements  
  Compiler option: **/ZW**  

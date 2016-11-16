@@ -2,7 +2,6 @@
 title: "bad_weak_ptr Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,12 +46,11 @@ Reports bad weak_ptr exception.
 ## Syntax  
   
 ```  
-class bad_weak_ptr  
- : public std::exception {  
+class bad_weak_ptr : public std::exception 
+ {  
 public:  
     bad_weak_ptr();
-const char *what() throw();
-
+    const char *what() throw();
  };  
 ```  
   
@@ -61,37 +59,36 @@ const char *what() throw();
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__memory__bad_weak_ptr.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
-  
-int main()   
-    {   
-    std::weak_ptr<int> wp;   
-  
-     {   
-    std::shared_ptr<int> sp(new int);   
-    wp = sp;   
-     }   
-  
-    try   
-        {   
+ 
+int main()
+{
+    std::weak_ptr<int> wp;
+
+    {
+        std::shared_ptr<int> sp(new int);
+        wp = sp;
+    }
+
+    try
+    {
         std::shared_ptr<int> sp1(wp); // weak_ptr has expired   
-        }   
-    catch (const std::bad_weak_ptr&)   
-        {   
-        std::cout << "bad weak pointer" << std::endl;   
-        }   
-    catch (...)   
-        {   
-        std::cout << "unknown exception" << std::endl;   
-        }   
-  
-    return (0);   
-    }  
-  
+    }
+    catch (const std::bad_weak_ptr&)
+    {
+        std::cout << "bad weak pointer" << std::endl;
+    }
+    catch (...)
+    {
+        std::cout << "unknown exception" << std::endl;
+    }
+
+    return (0);
+}
 ```  
   
 ```Output  

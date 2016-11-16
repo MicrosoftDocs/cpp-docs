@@ -15,12 +15,12 @@ manager: "ghogen"
 # &lt;string&gt; functions
 ||||  
 |-|-|-|  
-|[getline Template Function](#getline_template_function)|[stod](#stod)|[stof](#stof)|  
+|[getline](#getline)|[stod](#stod)|[stof](#stof)|  
 |[stoi](#stoi)|[stol](#stol)|[stold](#stold)|  
 |[stoll](#stoll)|[stoul](#stoul)|[stoull](#stoull)|  
 |[swap](#swap)|[to_string](#to_string)|[to_wstring](#to_wstring)|  
   
-##  <a name="getline_template_function"></a>  getline Template Function  
+##  <a name="getline"></a>  getline  
  Extract strings from the input stream line-by-line.  
   
 ```  
@@ -28,13 +28,15 @@ manager: "ghogen"
 template <class CharType, class Traits, class Allocator>  
 basic_istream<CharType, Traits>& getline(
     basic_istream<CharType, Traits>& is,  
-    basic_string<CharType, Traits, Allocator>& str, CharType delim);
+    basic_string<CharType, Traits, Allocator>& str, 
+    CharType delim);
 
  
 template <class CharType, class Traits, class Allocator>  
 basic_istream<CharType, Traits>& getline(
     basic_istream<CharType, Traits>&& is,  
-    basic_string<CharType, Traits, Allocator>& str, const CharType delim);
+    basic_string<CharType, Traits, Allocator>& str, 
+    const CharType delim);
 
  
 // (2) default delimiter used  
@@ -135,11 +137,11 @@ int main()
 ```  
 double stod(
     const string& str,   
-    size_t* _Idx = 0);
+    size_t* Idx = 0);
 
 double stod(
     const wstring& str,   
-    size_t* _Idx = 0  
+    size_t* Idx = 0  
 ;  
 ```  
   
@@ -148,13 +150,13 @@ double stod(
 |Parameter|Description|  
 |---------------|-----------------|  
 |` str`|The character sequence to be converted.|  
-|`_Idx`|The index value of the first unconverted character.|  
+|`Idx`|The index value of the first unconverted character.|  
   
 ### Return Value  
  The `double` value.  
   
 ### Remarks  
- The function converts the sequence of elements in ` str` to a value ` val` of type `double` as if by calling `strtod( str.c_str(), _Eptr)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `_Idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*_Idx` and returns ` val`.  
+ The function converts the sequence of elements in ` str` to a value ` val` of type `double` as if by calling `strtod( str.c_str(), _Eptr)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `Idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*Idx` and returns ` val`.  
   
 ##  <a name="stof"></a>  stof  
  Converts a character sequence to a float.  
@@ -162,11 +164,11 @@ double stod(
 ```  
 float stof(
     const string& str,   
-    size_t* _Idx = 0);
+    size_t* Idx = 0);
 
 float stof(
     const wstring& str,   
-    size_t* _Idx = 0);
+    size_t* Idx = 0);
 ```  
   
 ### Parameters  
@@ -174,13 +176,13 @@ float stof(
 |Parameter|Description|  
 |---------------|-----------------|  
 |` str`|The character sequence to be converted.|  
-|`_Idx`|The index value of the first unconverted character.|  
+|`Idx`|The index value of the first unconverted character.|  
   
 ### Return Value  
  The float value.  
   
 ### Remarks  
- The function converts the sequence of elements in ` str` to a value ` val` of type `float` as if by calling `strtof( str.c_str(), _Eptr)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `_Idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*_Idx` and returns ` val`.  
+ The function converts the sequence of elements in ` str` to a value ` val` of type `float` as if by calling `strtof( str.c_str(), _Eptr)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `Idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*Idx` and returns ` val`.  
   
 ##  <a name="stoi"></a>  stoi  
  Converts a character sequence to an integer.  
@@ -188,13 +190,13 @@ float stof(
 ```  
 int stoi(
     const string& str,   
-    size_t* _Idx = 0,  
-    int _Base = 10);
+    size_t* Idx = 0,  
+    int Idx = 10);
 
 int stoi(
     const wstring& str,   
-    size_t* _Idx = 0,  
-    int _Base = 10);
+    size_t* Idx = 0,  
+    int Idx = 10);
 ```  
   
 ### Return Value  
@@ -205,15 +207,15 @@ int stoi(
 |Parameter|Description|  
 |---------------|-----------------|  
 |` str`|The character sequence to be converted.|  
-|`_Idx`|Contains the index of the first unconverted character on return.|  
-|`_Base`|The number base to use.|  
+|`Idx`|Contains the index of the first unconverted character on return.|  
+|`Idx`|The number base to use.|  
   
 ### Remarks  
  The function `stoi` converts the sequence of characters in ` str` to a value of type `int` and returns the value. For example, when passed a character sequence "10", the value returned by `stoi` is the integer 10.  
   
- `stoi` behaves similarly to the function `strtol` for single-byte characters when it is called in the manner `strtol( str.c_str(), _Eptr, _Base)`, where `_Eptr` is an object internal to the function; or `wcstol` for wide characters, when it is called in similar manner, `wcstol(Str.c_str(), _Eptr, _Base)`. For more information, see [strtol, wcstol, _strtol_l, _wcstol_l](../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md).  
+ `stoi` behaves similarly to the function `strtol` for single-byte characters when it is called in the manner `strtol( str.c_str(), _Eptr, Idx)`, where `_Eptr` is an object internal to the function; or `wcstol` for wide characters, when it is called in similar manner, `wcstol(Str.c_str(), _Eptr, Idx)`. For more information, see [strtol, wcstol, _strtol_l, _wcstol_l](../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md).  
   
- If ` str.c_str() == *_Eptr,``stoi` throws an object of type `invalid_argument`. If such a call would set `errno`, or if the returned value cannot be represented as an object of type `int`, it throws an object of type `out_of_range`. Otherwise, if `_Idx` is not a null pointer, the function stores `*_Eptr - _ str.c_str()` in `*_Idx`.  
+ If ` str.c_str() == *_Eptr,``stoi` throws an object of type `invalid_argument`. If such a call would set `errno`, or if the returned value cannot be represented as an object of type `int`, it throws an object of type `out_of_range`. Otherwise, if `Idx` is not a null pointer, the function stores `*_Eptr - _ str.c_str()` in `*Idx`.  
   
 ##  <a name="stol"></a>  stol  
  Converts a character sequence to a `long`.  
@@ -221,13 +223,13 @@ int stoi(
 ```  
 long stol(
     const string& str,  
-    size_t* _Idx = 0,  
-    int _Base = 10);
+    size_t* Idx = 0,  
+    int Idx = 10);
 
 long stol(
     const wstring& str,   
-    size_t* _Idx = 0,  
-    int _Base = 10);
+    size_t* Idx = 0,  
+    int Idx = 10);
 ```  
   
 ### Parameters  
@@ -235,14 +237,14 @@ long stol(
 |Parameter|Description|  
 |---------------|-----------------|  
 |` str`|The character sequence to be converted.|  
-|`_Idx`|The index value of the first unconverted character.|  
-|`_Base`|The number base to use.|  
+|`Idx`|The index value of the first unconverted character.|  
+|`Idx`|The number base to use.|  
   
 ### Return Value  
  The long-integer value.  
   
 ### Remarks  
- The function converts the sequence of elements in ` str` to a value ` val` of type `long` as if by calling `strtol( str.c_str(), _Eptr, _Base)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `_Idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*_Idx` and returns ` val`.  
+ The function converts the sequence of elements in ` str` to a value ` val` of type `long` as if by calling `strtol( str.c_str(), _Eptr, Idx)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `Idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*Idx` and returns ` val`.  
   
 ##  <a name="stold"></a>  stold  
  Converts a character sequence to a `long double`.  
@@ -250,11 +252,11 @@ long stol(
 ```  
 double stold(
     const string& str,   
-    size_t* _Idx = 0);
+    size_t* Idx = 0);
 
 double stold(
     const wstring& str,   
-    size_t* _Idx = 0);
+    size_t* Idx = 0);
 ```  
   
 ### Parameters  
@@ -262,13 +264,13 @@ double stold(
 |Parameter|Description|  
 |---------------|-----------------|  
 |` str`|The character sequence to be converted.|  
-|`_Idx`|The index value of the first unconverted character.|  
+|`Idx`|The index value of the first unconverted character.|  
   
 ### Return Value  
  The `long double` value.  
   
 ### Remarks  
- The function converts the sequence of elements in ` str` to a value ` val` of type `long double` as if by calling `strtold( str.c_str(), _Eptr)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `_Idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*_Idx` and returns ` val`.  
+ The function converts the sequence of elements in ` str` to a value ` val` of type `long double` as if by calling `strtold( str.c_str(), _Eptr)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `Idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*Idx` and returns ` val`.  
   
 ##  <a name="stoll"></a>  stoll  
  Converts a character sequence to a `long long`.  
@@ -276,13 +278,13 @@ double stold(
 ```  
 long long stoll(
     const string& str,   
-    size_t* _Idx = 0,  
-    int _Base = 10);
+    size_t* Idx = 0,  
+    int Idx = 10);
 
 long long stoll(
     const wstring& str,   
-    size_t* _Idx = 0,  
-    int _Base = 10);
+    size_t* Idx = 0,  
+    int Idx = 10);
 ```  
   
 ### Parameters  
@@ -290,14 +292,14 @@ long long stoll(
 |Parameter|Description|  
 |---------------|-----------------|  
 |` str`|The character sequence to be converted.|  
-|`_Idx`|The index value of the first unconverted character.|  
-|`_Base`|The number base to use.|  
+|`Idx`|The index value of the first unconverted character.|  
+|`Idx`|The number base to use.|  
   
 ### Return Value  
  The `long long` value.  
   
 ### Remarks  
- The function converts the sequence of elements in ` str` to a value ` val` of type `long long` as if by calling `strtoll( str.c_str(), _Eptr, _Base)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `_Idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*_Idx` and returns ` val`.  
+ The function converts the sequence of elements in ` str` to a value ` val` of type `long long` as if by calling `strtoll( str.c_str(), _Eptr, Idx)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `Idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*Idx` and returns ` val`.  
   
 ##  <a name="stoul"></a>  stoul  
  Converts a character sequence to an unsigned long.  
@@ -305,13 +307,13 @@ long long stoll(
 ```  
 unsigned long stoul(
     const string& str,   
-    size_t* _Idx = 0,  
-    int _Base = 10);
+    size_t* Idx = 0,  
+    int Idx = 10);
 
 unsigned long stoul(
     const wstring& str,   
-    size_t* _Idx = 0,  
-    int _Base = 10);
+    size_t* Idx = 0,  
+    int Idx = 10);
 ```  
   
 ### Parameters  
@@ -319,14 +321,14 @@ unsigned long stoul(
 |Parameter|Description|  
 |---------------|-----------------|  
 |` str`|The character sequence to be converted.|  
-|`_Idx`|The index value of the first unconverted character.|  
-|`_Base`|The number base to use.|  
+|`Idx`|The index value of the first unconverted character.|  
+|`Idx`|The number base to use.|  
   
 ### Return Value  
  The unsigned long-integer value.  
   
 ### Remarks  
- The function converts the sequence of elements in ` str` to a value ` val` of type `unsigned long` as if by calling `strtoul( str.c_str(), _Eptr, _Base)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `_Idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*_Idx` and returns ` val`.  
+ The function converts the sequence of elements in ` str` to a value ` val` of type `unsigned long` as if by calling `strtoul( str.c_str(), _Eptr, Idx)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `Idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*Idx` and returns ` val`.  
   
 ##  <a name="stoull"></a>  stoull  
  Converts a character sequence to an `unsigned long long`.  
@@ -334,13 +336,13 @@ unsigned long stoul(
 ```  
 unsigned long long stoull(
     const string& str,   
-    size_t* _Idx = 0,  
-    int _Base = 10);
+    size_t* Idx = 0,  
+    int Idx = 10);
 
 unsigned long long stoull(
     const wstring& str,   
-    size_t* _Idx = 0,  
-    int _Base = 10);
+    size_t* Idx = 0,  
+    int Idx = 10);
 ```  
   
 ### Parameters  
@@ -348,14 +350,14 @@ unsigned long long stoull(
 |Parameter|Description|  
 |---------------|-----------------|  
 |` str`|The character sequence to be converted.|  
-|`_Idx`|The index value of the first unconverted character.|  
-|`_Base`|The number base to use.|  
+|`Idx`|The index value of the first unconverted character.|  
+|`Idx`|The number base to use.|  
   
 ### Return Value  
  The `unsigned long long` value.  
   
 ### Remarks  
- The function converts the sequence of elements in ` str` to a value ` val` of type `unsigned long long` as if by calling `strtoull( str.c_str(), _Eptr, _Base)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `_Idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*_Idx` and returns ` val`.  
+ The function converts the sequence of elements in ` str` to a value ` val` of type `unsigned long long` as if by calling `strtoull( str.c_str(), _Eptr, Idx)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `Idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*Idx` and returns ` val`.  
   
 ##  <a name="swap"></a>  swap  
  Exchanges the arrays of characters of two strings.  
@@ -377,7 +379,7 @@ void swap(basic_string<CharType, Traits, Allocator>& left, basic_string<CharType
   
 ### Example  
   
-```  
+```cpp  
 // string_swap.cpp  
 // compile with: /EHsc  
 #include <string>  
@@ -415,21 +417,13 @@ The basic_string s2 = Tweedledee.
   
 ```  
 string to_string(int Val);
-
 string to_string(unsigned int Val);
-
 string to_string(long Val);
-
 string to_string(unsigned long Val);
-
 string to_string(long long Val);
-
 string to_string(unsigned long long Val);
-
 string to_string(float Val);
-
 string to_string(double Val);
-
 string to_string(long double Val);
 ```  
   
@@ -468,21 +462,13 @@ string to_string(long double Val);
   
 ```  
 wstring to_wstring(int Val);
-
 wstring to_wstring(unsigned int Val);
-
 wstring to_wstring(long Val);
-
 wstring to_wstring(unsigned long Val);
-
 wstring to_wstring(long long Val);
-
 wstring to_wstring(unsigned long long Val);
-
 wstring to_wstring(float Val);
-
 wstring to_wstring(double Val);
-
 wstring to_wstring(long double Val);
 ```  
   

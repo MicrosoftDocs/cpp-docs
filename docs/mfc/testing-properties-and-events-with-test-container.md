@@ -2,7 +2,6 @@
 title: "Testing Properties and Events with Test Container | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -77,5 +76,5 @@ The Test Container application, shipped in Visual C++, is an ActiveX control con
   
 ## See Also  
  [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)   
- [How to: Debug an ActiveX Control](../Topic/How%20to:%20Debug%20an%20ActiveX%20Control.md)
+ [How to: Debug an ActiveX Control](http://msdn.microsoft.com/Library/bbc02cf7-a7e6-44fe-99af-87a43e1d7251)
 

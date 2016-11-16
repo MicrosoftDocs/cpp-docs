@@ -2,7 +2,6 @@
 title: "Implement Interface Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -72,7 +71,7 @@ This wizard implements an interface for a COM object. Implementations of many in
  Displays the names of the interfaces that you have selected to implement on your object.  
   
 > [!NOTE]
->  If you include more than one interface that derives from `IDispatch`, or if you try to implement an interface that is derived from another interface already on your class, then you must disambiguate the COM_MAP entries. See [COM_INTERFACE_ENTRY2](../Topic/COM_INTERFACE_ENTRY2.md) for more information.  
+>  If you include more than one interface that derives from `IDispatch`, or if you try to implement an interface that is derived from another interface already on your class, then you must disambiguate the COM_MAP entries. See [COM_INTERFACE_ENTRY2](http://msdn.microsoft.com/Library/3d48c53b-827b-42cc-9e22-594f7ea2bf0b) for more information.  
   
 ## See Also  
  [Implementing an Interface](../ide/implementing-an-interface-visual-cpp.md)

@@ -2,7 +2,6 @@
 title: "priority_queue Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -130,7 +129,7 @@ bool empty() const;
   
 ### Example  
   
-```  
+```cpp  
 // pqueue_empty.cpp  
 // compile with: /EHsc  
 #include <queue>  
@@ -174,7 +173,7 @@ void pop();
   
 ### Example  
   
-```  
+```cpp  
 // pqueue_pop.cpp  
 // compile with: /EHsc  
 #include <queue>  
@@ -263,7 +262,7 @@ priority_queue(InputIterator first, InputIterator last, const Traits&_comp, cons
   
 ### Example  
   
-```  
+```cpp  
 // pqueue_ctor.cpp  
 // compile with: /EHsc  
 #include <queue>  
@@ -388,7 +387,7 @@ void push(const Type& val);
   
 ### Example  
   
-```  
+```cpp  
 // pqueue_push.cpp  
 // compile with: /EHsc  
 #include <queue>  
@@ -430,7 +429,7 @@ size_type size() const;
   
 ### Example  
   
-```  
+```cpp  
 // pqueue_size.cpp  
 // compile with: /EHsc  
 #include <queue>  
@@ -485,7 +484,7 @@ const_reference top() const;
   
 ### Example  
   
-```  
+```cpp  
 // pqueue_top.cpp  
 // compile with: /EHsc  
 #include <queue>  
@@ -527,7 +526,7 @@ typedef typename Container::value_type value_type;
   
 ### Example  
   
-```  
+```cpp  
 // pqueue_value_type.cpp  
 // compile with: /EHsc  
 #include <queue>  

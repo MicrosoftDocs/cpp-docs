@@ -2,7 +2,6 @@
 title: "identity Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,12 +42,12 @@ translation.priority.ht:
 A struct that provides a type definition as the template parameter.  
   
 ## Syntax  
-  
+```  
 struct identity {
    typedef Type type;
    Type operator()(const Type& left) const;
    };  
-  
+```  
 #### Parameters  
   
 |Parameter|Description|  

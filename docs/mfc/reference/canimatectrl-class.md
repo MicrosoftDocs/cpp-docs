@@ -2,7 +2,6 @@
 title: "CAnimateCtrl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -324,5 +323,5 @@ BOOL Stop();
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CAnimateCtrl::Create](#canimatectrl__create)   
- [ON_CONTROL](../Topic/ON_CONTROL.md)
+ [ON_CONTROL](http://msdn.microsoft.com/Library/2cb7ebdf-296b-4606-b191-3449835003db)
 

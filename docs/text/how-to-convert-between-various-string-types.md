@@ -2,7 +2,6 @@
 title: "How to: Convert Between Various String Types | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -833,7 +832,7 @@ Hello, World! (basic_string)
   
 ## See Also  
  [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)   
- [ATL and MFC String Conversion Macros](../Topic/ATL%20and%20MFC%20String%20Conversion%20Macros.md)   
+ [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/Library/8f53659e-0464-4424-97db-6b8453c49863)   
  [CString Operations Relating to C-Style Strings](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)   
  [How to: Convert Standard String to System::String](../dotnet/how-to-convert-standard-string-to-system-string.md)   
  [How to: Convert System::String to Standard String](../dotnet/how-to-convert-system-string-to-standard-string.md)   

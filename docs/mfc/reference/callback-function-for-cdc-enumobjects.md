@@ -2,7 +2,6 @@
 title: "Callback Function for CDC::EnumObjects | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The *ObjectFunc* name is a placeholder for the application-supplied function nam
 ## Syntax  
   
 ```  
- 
-    int CALLBACK EXPORT ObjectFunc(
+int CALLBACK EXPORT ObjectFunc(
     LPSTR lpszLogObject,  
     LPSTR* lpData);
 ```  

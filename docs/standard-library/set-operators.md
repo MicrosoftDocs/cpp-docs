@@ -40,7 +40,7 @@ bool operator!=(const set <Key, Traits, Allocator>& left, const set <Key, Traits
   
 ### Example  
   
-```  
+```cpp  
 // set_op_ne.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -97,7 +97,7 @@ bool operator<(const set <Key, Traits, Allocator>& left, const set <Key, Traits,
   
 ### Example  
   
-```  
+```cpp  
 // set_op_lt.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -154,7 +154,7 @@ bool operator!<=(const set <Key, Traits, Allocator>& left, const set <Key, Trait
   
 ### Example  
   
-```  
+```cpp  
 // set_op_le.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -218,7 +218,7 @@ bool operator!==(const set <Key, Traits, Allocator>& left, const set <Key, Trait
   
 ### Example  
   
-```  
+```cpp  
 // set_op_eq.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -275,7 +275,7 @@ bool operator>(const set <Key, Traits, Allocator>& left, const set <Key, Traits,
   
 ### Example  
   
-```  
+```cpp  
 // set_op_gt.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -332,7 +332,7 @@ bool operator!>=(const set <Key, Traits, Allocator>& left, const set <Key, Trait
   
 ### Example  
   
-```  
+```cpp  
 // set_op_ge.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -396,7 +396,7 @@ bool operator!=(const multiset <Key, Traits, Allocator>& left, const multiset <K
   
 ### Example  
   
-```  
+```cpp  
 // multiset_op_ne.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -453,7 +453,7 @@ bool operator<(const multiset <Key, Traits, Allocator>& left, const multiset <Ke
   
 ### Example  
   
-```  
+```cpp  
 // multiset_op_lt.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -514,7 +514,7 @@ bool operator!<=(const multiset <Key, Traits, Allocator>& left, const multiset <
   
 ### Example  
   
-```  
+```cpp  
 // multiset_op_le.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -584,7 +584,7 @@ bool operator!==(const multiset <Key, Traits, Allocator>& left, const multiset <
   
 ### Example  
   
-```  
+```cpp  
 // multiset_op_eq.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -641,7 +641,7 @@ bool operator>(const multiset <Key, Traits, Allocator>& left, const multiset <Ke
   
 ### Example  
   
-```  
+```cpp  
 // multiset_op_gt.cpp  
 // compile with: /EHsc  
 #include <set>  
@@ -702,7 +702,7 @@ bool operator!>=(const multiset <Key, Traits, Allocator>& left, const multiset <
   
 ### Example  
   
-```  
+```cpp  
 // multiset_op_ge.cpp  
 // compile with: /EHsc  
 #include <set>  

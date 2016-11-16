@@ -2,7 +2,6 @@
 title: "WSADATA Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `WSADATA` structure is used to store Windows Sockets initialization informat
 ## Syntax  
   
 ```  
- 
-    struct WSAData {  
+struct WSAData {  
     WORD wVersion;  
     WORD wHighVersion;  
     char szDescription[WSADESCRIPTION_LEN+1];  

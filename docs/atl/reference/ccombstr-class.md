@@ -2,7 +2,6 @@
 title: "CComBSTR Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -677,4 +676,4 @@ HRESULT WriteToStream(IStream* pStream) throw();
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)   
- [ATL and MFC String Conversion Macros](../Topic/ATL%20and%20MFC%20String%20Conversion%20Macros.md)
+ [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/Library/8f53659e-0464-4424-97db-6b8453c49863)

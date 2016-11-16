@@ -2,7 +2,6 @@
 title: "Callback Function for CDC::SetAbortProc | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The name *AbortFunc* is a placeholder for the application-supplied function name
 ## Syntax  
   
 ```  
- 
-    BOOL CALLBACK EXPORT AbortFunc(
+BOOL CALLBACK EXPORT AbortFunc(
     HDC hPr,  
     int code);
 ```  

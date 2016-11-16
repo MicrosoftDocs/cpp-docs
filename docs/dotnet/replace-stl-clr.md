@@ -2,7 +2,6 @@
 title: "replace (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,7 +46,7 @@ template<class _FwdIt, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `replace`. For more information, see [replace](../Topic/replace.md).  
+ This function behaves the same as the STL function `replace`. For more information, see [replace](http://msdn.microsoft.com/Library/8324dd0c-f3f7-4035-9fbe-654010366149).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

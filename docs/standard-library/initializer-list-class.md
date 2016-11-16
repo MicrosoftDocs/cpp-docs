@@ -2,7 +2,6 @@
 title: "initializer_list Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,18 +35,17 @@ Provides access to an array of elements in which each member is of the specified
   
 ## Syntax  
   
-```cpp  
+```  
 template <class Type>  
-class initializer_list  
+class initializer_list
 ```  
   
 #### Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|`_Elem`|The element data type to be stored in the `initializer_list`.|  
-|` first`|The pointer to the first element of the `initializer_list`.|  
-|` last`|The pointer to the last element of the `initializer_list`.|  
+|`Type`|The element data type to be stored in the `initializer_list`.|  
+
   
 ## Remarks  
  An `initializer_list` can be constructed using a braced initializer list:  
@@ -114,7 +112,8 @@ constexpr const InputIterator* end() const noexcept;
  Constructs an object of type `initializer_list`.  
   
 ```  
-constexpr initializer_list() noexcept;initializer_list(const InputIterator First, const InputIterator Last);
+constexpr initializer_list() noexcept;
+initializer_list(const InputIterator First, const InputIterator Last);
 ```  
   
 ### Parameters  

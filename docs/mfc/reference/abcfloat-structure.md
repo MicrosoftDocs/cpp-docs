@@ -2,7 +2,6 @@
 title: "ABCFLOAT Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `ABCFLOAT` structure contains the A, B, and C widths of a font character.
 ## Syntax  
   
 ```  
- 
-    typedef struct _ABCFLOAT { /* abcf */  
+typedef struct _ABCFLOAT { /* abcf */  
     FLOAT abcfA;  
     FLOAT abcfB;  
     FLOAT abcfC;  

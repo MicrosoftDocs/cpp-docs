@@ -2,7 +2,6 @@
 title: "Run-Time Object Model Services | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -75,8 +74,7 @@ The classes [CObject](../../mfc/reference/cobject-class.md) and [CRuntimeClass](
  Adds the ability to access run-time information about an object's class when deriving a class from `CObject`.  
   
 ```
-DECLARE_DYNAMIC(class_name)  
- 
+DECLARE_DYNAMIC(class_name) 
 ```  
   
 ### Parameters  
@@ -99,8 +97,7 @@ DECLARE_DYNAMIC(class_name)
  Enables objects of `CObject`-derived classes to be created dynamically at run time.  
   
 ```
-DECLARE_DYNCREATE(class_name)  
- 
+DECLARE_DYNCREATE(class_name)   
 ```  
   
 ### Parameters  
@@ -126,8 +123,7 @@ DECLARE_DYNCREATE(class_name)
  Generates the C++ header code necessary for a `CObject`-derived class that can be serialized.  
   
 ```
-DECLARE_SERIAL(class_name)  
- 
+DECLARE_SERIAL(class_name)   
 ```  
   
 ### Parameters  
@@ -156,8 +152,7 @@ DECLARE_SERIAL(class_name)
  Generates the C++ code necessary for a dynamic `CObject`-derived class with run-time access to the class name and position within the hierarchy.  
   
 ```
-IMPLEMENT_DYNAMIC(class_name,    base_class_name)  
- 
+IMPLEMENT_DYNAMIC(class_name, base_class_name)  
 ```  
   
 ### Parameters  
@@ -181,8 +176,7 @@ IMPLEMENT_DYNAMIC(class_name,    base_class_name)
  Enables objects of `CObject`-derived classes to be created dynamically at run time when used with the `DECLARE_DYNCREATE` macro.  
   
 ```
-IMPLEMENT_DYNCREATE(class_name, base_class_name)  
- 
+IMPLEMENT_DYNCREATE(class_name, base_class_name)   
 ```  
   
 ### Parameters  
@@ -240,7 +234,6 @@ IMPLEMENT_SERIAL(class_name, base_class_name, wSchema)
   
 ```
 RUNTIME_CLASS(class_name)  
- 
 ```  
   
 ### Parameters  
@@ -259,8 +252,7 @@ RUNTIME_CLASS(class_name)
  Enables objects of `CCmdTarget`-derived classes to be created through OLE automation.  
   
 ```
-DECLARE_OLECREATE(class_name)  
- 
+DECLARE_OLECREATE(class_name) 
 ```  
   
 ### Parameters  
@@ -275,11 +267,10 @@ DECLARE_OLECREATE(class_name)
  If `DECLARE_OLECREATE` is included in the class declaration, then `IMPLEMENT_OLECREATE` must be included in the class implementation. A class declaration using `DECLARE_OLECREATE` must also use `DECLARE_DYNCREATE` or `DECLARE_SERIAL`.  
   
 ##  <a name="implement_olecreate"></a>  IMPLEMENT_OLECREATE  
- Either this macro or [IMPLEMENT_OLECREATE_FLAGS](../Topic/IMPLEMENT_OLECREATE_FLAGS.md) must appear in the implementation file for any class that uses `DECLARE_OLECREATE`.  
+ Either this macro or [IMPLEMENT_OLECREATE_FLAGS](http://msdn.microsoft.com/Library/d1589f6a-5a69-4742-b07c-4c621cfd040d) must appear in the implementation file for any class that uses `DECLARE_OLECREATE`.  
   
 ```
 IMPLEMENT_OLECREATE(class_name, external_name, l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8)  
- 
 ```  
   
 ### Parameters  

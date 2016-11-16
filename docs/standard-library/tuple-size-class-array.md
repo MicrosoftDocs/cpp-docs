@@ -2,7 +2,6 @@
 title: "tuple_size Class &lt;array&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -76,7 +75,7 @@ struct tuple_size<const volatile Tuple>;
   
 ## Example  
   
-```  
+```cpp  
 #include <array>   
 #include <iostream>   
   

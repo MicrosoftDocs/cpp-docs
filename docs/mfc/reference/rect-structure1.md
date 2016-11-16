@@ -2,7 +2,6 @@
 title: "RECT Structure1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,8 +42,7 @@ The `RECT` structure defines the coordinates of the upper-left and lower-right c
 ## Syntax  
   
 ```  
- 
-    typedef struct tagRECT {  
+typedef struct tagRECT {  
     LONG left;  
     LONG top;  
     LONG right;  

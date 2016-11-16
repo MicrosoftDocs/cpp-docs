@@ -2,7 +2,6 @@
 title: "_CrtDbgReport, _CrtDbgReportW | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -124,7 +123,7 @@ int _CrtDbgReportW(
 |`_CRTDBG_MODE_FILE`|`_CRTDBG_FILE_STDERR`|Writes message to `stderr`.|  
 |`_CRTDBG_MODE_FILE`|`_CRTDBG_FILE_STDOUT`|Writes message to `stdout`.|  
   
- The report can be sent to one, two, or three destinations or to no destination at all. For more information about specifying the report mode or modes and report file, see the [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md) and [_CrtSetReportFile](../../c-runtime-library/reference/crtsetreportfile.md) functions. For more information about using the debug macros and reporting functions, see [Macros for Reporting](/visual-studio/debugger/macros-for-reporting).  
+ The report can be sent to one, two, or three destinations or to no destination at all. For more information about specifying the report mode or modes and report file, see the [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md) and [_CrtSetReportFile](../../c-runtime-library/reference/crtsetreportfile.md) functions. For more information about using the debug macros and reporting functions, see [Macros for Reporting](/visualstudio/debugger/macros-for-reporting).  
   
  If your application needs more flexibility than that provided by `_CrtDbgReport` and `_CrtDbgReportW`, you can write your own reporting function and hook it into the C run-time library reporting mechanism by using the [_CrtSetReportHook](../../c-runtime-library/reference/crtsetreporthook.md) function.  
   

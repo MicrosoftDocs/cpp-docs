@@ -2,7 +2,6 @@
 title: "implements_category | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -88,5 +87,5 @@ class CMyClass {};
 ## See Also  
  [COM Attributes](../windows/com-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
- [IMPLEMENTED_CATEGORY](../Topic/IMPLEMENTED_CATEGORY.md)   
+ [IMPLEMENTED_CATEGORY](http://msdn.microsoft.com/Library/d898ef34-5684-4709-beb9-7114ddd96674)   
  [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

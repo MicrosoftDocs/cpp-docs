@@ -2,7 +2,6 @@
 title: "CODBCFieldInfo Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,8 +41,7 @@ The `CODBCFieldInfo` structure contains information about the fields in an ODBC 
 ## Syntax  
   
 ```  
- 
-    struct CODBCFieldInfo  
+struct CODBCFieldInfo  
 {  
     CString m_strName;  
     SWORD m_nSQLType;  

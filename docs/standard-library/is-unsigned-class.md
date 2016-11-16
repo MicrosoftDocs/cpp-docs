@@ -2,7 +2,6 @@
 title: "is_unsigned Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -60,7 +59,7 @@ struct is_unsigned;
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__type_traits__is_unsigned.cpp   
 // compile with: /EHsc   
 #include <type_traits>   

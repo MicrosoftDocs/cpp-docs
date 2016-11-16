@@ -2,7 +2,6 @@
 title: "array Class (STL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -148,7 +147,7 @@ array(const array& right);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_array.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -199,7 +198,7 @@ void assign(const Ty& val);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_assign.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -253,7 +252,7 @@ constexpr const_reference at(size_type off) const;
   
 ### Example  
   
-```  
+```cpp  
 // std__array__array_at.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -294,7 +293,7 @@ constexpr const_reference back() const;
   
 ### Example  
   
-```  
+```cpp  
 // std__array__array_back.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -338,7 +337,7 @@ const_iterator begin() const noexcept;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_begin.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -484,7 +483,7 @@ typedef const Ty *const_pointer;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_const_pointer.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -528,7 +527,7 @@ typedef const Ty& const_reference;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_const_reference.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -572,7 +571,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_const_reverse_iterator.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -619,7 +618,7 @@ const_reverse_iterator crbegin() const;
   
 ### Example  
   
-```  
+```cpp  
 // array_crbegin.cpp  
 // compile with: /EHsc  
 #include <array>  
@@ -668,7 +667,7 @@ const_reverse_iterator crend() const noexcept;
   
 ### Example  
   
-```  
+```cpp  
 // array_crend.cpp  
 // compile with: /EHsc  
 #include <array>  
@@ -704,7 +703,7 @@ const Ty *data() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_data.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -748,7 +747,7 @@ typedef std::ptrdiff_t difference_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_difference_type.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -792,7 +791,7 @@ constexpr bool empty() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_empty.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -844,7 +843,7 @@ const_reference end() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_end.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -895,7 +894,7 @@ void fill(const Type& val);
   
 ### Example  
   
-```  
+```cpp  
 // array_fill.cpp  
 // compile with: /EHsc  
 #include <array>  
@@ -934,7 +933,7 @@ constexpr const_reference front() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_front.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -1029,7 +1028,7 @@ constexpr size_type max_size() const;
   
 ### Example  
   
-```  
+```cpp  
 // std__array__array_max_size.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -1079,7 +1078,7 @@ constexpr const_reference operator[](size_type off) const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_operator_sub.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -1127,7 +1126,7 @@ array <Value>%  operator=(array <Value>% right);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_operator_as.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -1175,7 +1174,7 @@ typedef Ty *pointer;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_pointer.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -1220,7 +1219,7 @@ const_reverse_iterator rbegin() const noexcept;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_rbegin.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -1264,7 +1263,7 @@ typedef Ty& reference;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_reference.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -1309,7 +1308,7 @@ const_reverse_iterator rend() const noexcept;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_rend.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -1353,7 +1352,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_reverse_iterator.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -1397,7 +1396,7 @@ constexpr size_type size() const;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_size.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -1440,7 +1439,7 @@ typedef std::size_t size_type;
   
 ### Example  
   
-```  
+```cpp  
 // std__array__array_size_type.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -1488,7 +1487,7 @@ void swap(array& right);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_swap.cpp   
 // compile with: /EHsc   
 #include <array>   
@@ -1545,7 +1544,7 @@ typedef Ty value_type;
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__array__array_value_type.cpp   
 // compile with: /EHsc   
 #include <array>   

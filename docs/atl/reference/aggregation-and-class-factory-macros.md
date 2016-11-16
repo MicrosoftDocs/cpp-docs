@@ -2,7 +2,6 @@
 title: "Aggregation and Class Factory Macros | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -56,8 +55,7 @@ These macros provide ways of controlling aggregation and of declaring class fact
  Specifies that your object can be aggregated.  
   
 ```
-DECLARE_AGGREGATABLE(Ã‚
-    x Ã‚)
+DECLARE_AGGREGATABLE( x )
 ```  
   
 ### Parameters  
@@ -112,8 +110,7 @@ public CComObjectRootEx<CComGlobalsThreadModel>
  Declares `cf` to be the class factory.  
   
 ```
-DECLARE_CLASSFACTORY_EX(Ã‚
-    cf Ã‚)
+DECLARE_CLASSFACTORY_EX( cf )
 ```  
   
 ### Parameters  
@@ -132,8 +129,7 @@ DECLARE_CLASSFACTORY_EX(Ã‚
  Declares [CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md) to be the class factory.  
   
 ```
-DECLARE_CLASSFACTORY2(Ã‚
-    lic Ã‚)
+DECLARE_CLASSFACTORY2( lic )
 ```  
   
 ### Parameters  
@@ -150,12 +146,10 @@ DECLARE_CLASSFACTORY2(Ã‚
  This class implements the [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) interface.  
   
 ```
-template <class
-license>
+template <class license>
 class  CComClassFactory2 : public IClassFactory2,
     public CComObjectRootEx<CComGlobalsThreadModel>,
-    public
-license
+    public license
 ```    
   
 ### Parameters  
@@ -218,8 +212,7 @@ public CComObjectRootEx<CComGlobalsThreadModel>
  Declares [CComClassFactorySingleton](../../atl/reference/ccomclassfactorysingleton-class.md) to be the class factory.  
   
 ```
-DECLARE_CLASSFACTORY_SINGLETON(Ã‚
-    obj Ã‚)
+DECLARE_CLASSFACTORY_SINGLETON( obj )
 ```  
   
 ### Parameters  
@@ -239,9 +232,7 @@ DECLARE_CLASSFACTORY_SINGLETON(Ã‚
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ```
-template<
-class
-T>
+template<class T>
 class CComClassFactorySingleton :
 public CComClassFactory
 ```  
@@ -271,8 +262,7 @@ DECLARE_GET_CONTROLLING_UNKNOWN()
  Specifies that your object cannot be aggregated.  
   
 ```
-DECLARE_NOT_AGGREGATABLE(Ã‚
-    x Ã‚)
+DECLARE_NOT_AGGREGATABLE( x )
 ```  
   
 ### Parameters  
@@ -291,8 +281,7 @@ DECLARE_NOT_AGGREGATABLE(Ã‚
  Specifies that your object must be aggregated.  
   
 ```
-DECLARE_ONLY_AGGREGATABLE(Ã‚
-    x Ã‚)
+DECLARE_ONLY_AGGREGATABLE( x )
 ```  
   
 ### Parameters  
@@ -311,8 +300,7 @@ DECLARE_ONLY_AGGREGATABLE(Ã‚
  Specifies that an instance of **CComPolyObject \<** *x* **>** is created when your object is created.  
   
 ```
-DECLARE_POLY_AGGREGATABLE(Ã‚
-    x Ã‚)
+DECLARE_POLY_AGGREGATABLE( x )
 ```  
   
 ### Parameters  
@@ -337,8 +325,7 @@ DECLARE_PROTECT_FINAL_CONSTRUCT()
  Place this macro in an ATL ActiveX control's control class to specify the **VIEWSTATUS** flags to the container.  
   
 ```
-DECLARE_VIEW_STATUS(Ã‚
-    statusFlags Ã‚)
+DECLARE_VIEW_STATUS( statusFlags )
 ```  
   
 ### Parameters  

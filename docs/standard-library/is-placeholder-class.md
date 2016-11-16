@@ -2,7 +2,6 @@
 title: "is_placeholder Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -52,7 +51,7 @@ struct is_placeholder {
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__functional__is_placeholder.cpp   
 // compile with: /EHsc   
 #include <functional>   
@@ -60,20 +59,19 @@ struct is_placeholder {
   
 using namespace std::placeholders;   
   
-template<class Expr>   
-    void test_for_placeholder(const Expr&)   
-    {   
-    std::cout << std::is_placeholder<Expr>::value << std::endl;   
-    }   
-  
-int main()   
-    {   
-    test_for_placeholder(3.0);   
-    test_for_placeholder(_3);   
-  
-    return (0);   
-    }  
-  
+template<class Expr>
+void test_for_placeholder(const Expr&)
+{
+    std::cout << std::is_placeholder<Expr>::value << std::endl;
+}
+
+int main()
+{
+    test_for_placeholder(3.0);
+    test_for_placeholder(_3);
+
+    return (0);
+}  
 ```  
   
 ```Output  

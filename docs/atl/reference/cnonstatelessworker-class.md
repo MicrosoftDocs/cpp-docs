@@ -2,7 +2,6 @@
 title: "CNonStatelessWorker Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -61,15 +60,15 @@ template <class Worker>  class CNonStatelessWorker
   
 |Name|Description|  
 |----------|-----------------|  
-|[CNonStatelessWorker::RequestType](#cnonstatelessworker__requesttype)|Implementation of [WorkerArchetype::RequestType](../Topic/WorkerArchetype::RequestType.md).|  
+|[CNonStatelessWorker::RequestType](#cnonstatelessworker__requesttype)|Implementation of [WorkerArchetype::RequestType](worker-archetype.md#workerarchetype_requesttype).|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
 |[CNonStatelessWorker::Execute](#cnonstatelessworker__execute)|Implementation of [WorkerArchetype::Execute](../Topic/WorkerArchetype::Execute.md).|  
-|[CNonStatelessWorker::Initialize](#cnonstatelessworker__initialize)|Implementation of [WorkerArchetype::Initialize](../Topic/WorkerArchetype::Initialize.md).|  
-|[CNonStatelessWorker::Terminate](#cnonstatelessworker__terminate)|Implementation of [WorkerArchetype::Terminate](../Topic/WorkerArchetype::Terminate.md).|  
+|[CNonStatelessWorker::Initialize](#cnonstatelessworker__initialize)|Implementation of [WorkerArchetype::Initialize](worker-archetype.md#workerarchetype_initialize).|  
+|[CNonStatelessWorker::Terminate](#cnonstatelessworker__terminate)|Implementation of [WorkerArchetype::Terminate](worker-archetype.md#workerarchetype_terminate).|  
   
 ## Remarks  
  This class is a simple worker thread for use with [CThreadPool](../../atl/reference/cthreadpool-class.md). This class doesn't provide any request-handling capabilities of its own. Instead, it instantiates one instance of *Worker* per request and delegates the implementation of its methods to that instance.  
@@ -90,10 +89,10 @@ void Execute(
 ```  
   
 ### Remarks  
- This method creates an instance of the *Worker* class on the stack and calls [Initialize](../Topic/WorkerArchetype::Initialize.md) on that object. If the initialization is successful, this method also calls [Execute](../Topic/WorkerArchetype::Execute.md) and [Terminate](../Topic/WorkerArchetype::Terminate.md) on the same object.  
+ This method creates an instance of the *Worker* class on the stack and calls [Initialize](worker-archetype.md#workerarchetype_initialize) on that object. If the initialization is successful, this method also calls [Execute](../Topic/WorkerArchetype::Execute.md) and [Terminate](worker-archetype.md#workerarchetype_terminate) on the same object.  
   
 ##  <a name="cnonstatelessworker__initialize"></a>  CNonStatelessWorker::Initialize  
- Implementation of [WorkerArchetype::Initialize](../Topic/WorkerArchetype::Initialize.md).  
+ Implementation of [WorkerArchetype::Initialize](worker-archetype.md#workerarchetype_initialize).  
   
 ```
 BOOL Initialize(void* /* pvParam
@@ -107,7 +106,7 @@ BOOL Initialize(void* /* pvParam
  This class does not do any initialization in `Initialize`.  
   
 ##  <a name="cnonstatelessworker__requesttype"></a>  CNonStatelessWorker::RequestType  
- Implementation of [WorkerArchetype::RequestType](../Topic/WorkerArchetype::RequestType.md).  
+ Implementation of [WorkerArchetype::RequestType](worker-archetype.md#workerarchetype_requesttype).  
   
 ```
 typedef Worker::RequestType RequestType;
@@ -117,7 +116,7 @@ typedef Worker::RequestType RequestType;
  This class handles the same type of work item as the class used for the *Worker* template parameter. See [CNonStatelessWorker Overview](../../atl/reference/cnonstatelessworker-class.md) for details.  
   
 ##  <a name="cnonstatelessworker__terminate"></a>  CNonStatelessWorker::Terminate  
- Implementation of [WorkerArchetype::Terminate](../Topic/WorkerArchetype::Terminate.md).  
+ Implementation of [WorkerArchetype::Terminate](worker-archetype.md#workerarchetype_terminate).  
   
 ```
 void Terminate(void* /* pvParam

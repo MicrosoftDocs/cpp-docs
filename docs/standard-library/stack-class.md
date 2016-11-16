@@ -2,7 +2,6 @@
 title: "stack Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -124,7 +123,7 @@ bool empty() const;
   
 ### Example  
   
-```  
+```cpp  
 // stack_empty.cpp  
 // compile with: /EHsc  
 #include <stack>  
@@ -167,7 +166,7 @@ void pop();
   
 ### Example  
   
-```  
+```cpp  
 // stack_pop.cpp  
 // compile with: /EHsc  
 #include <stack>  
@@ -225,7 +224,7 @@ void push(const Type& val);
   
 ### Example  
   
-```  
+```cpp  
 // stack_push.cpp  
 // compile with: /EHsc  
 #include <stack>  
@@ -267,7 +266,7 @@ size_type size() const;
   
 ### Example  
   
-```  
+```cpp  
 // stack_size.cpp  
 // compile with: /EHsc  
 #include <stack>  
@@ -322,7 +321,7 @@ explicit stack(const container_type& right);
   
 ### Example  
   
-```  
+```cpp  
 // stack_stack.cpp  
 // compile with: /EHsc  
 #include <stack>  
@@ -378,7 +377,7 @@ const_reference top() const;
   
 ### Example  
   
-```  
+```cpp  
 // stack_top.cpp  
 // compile with: /EHsc  
 #include <stack>  
@@ -419,7 +418,7 @@ typedef typename Container::value_type value_type;
   
 ### Example  
   
-```  
+```cpp  
 // stack_value_type.cpp  
 // compile with: /EHsc  
 #include <stack>  

@@ -2,7 +2,6 @@
 title: "LoadLibrary and AfxLoadLibrary | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,7 +39,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # LoadLibrary and AfxLoadLibrary
-Processes call [LoadLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259187) (or [AfxLoadLibrary](../Topic/AfxLoadLibrary.md)) to explicitly link to a DLL. If the function succeeds, it maps the specified DLL into the address space of the calling process and returns a handle to the DLL that can be used with other functions in explicit linking—for example, `GetProcAddress` and `FreeLibrary`.  
+Processes call [LoadLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259187) (or [AfxLoadLibrary](http://msdn.microsoft.com/Library/1339678b-c843-4474-b9c9-8f3bd9905e2e)) to explicitly link to a DLL. If the function succeeds, it maps the specified DLL into the address space of the calling process and returns a handle to the DLL that can be used with other functions in explicit linking—for example, `GetProcAddress` and `FreeLibrary`.  
   
  `LoadLibrary` attempts to locate the DLL by using the same search sequence that is used for implicit linking. If the system cannot find the DLL or if the entry-point function returns FALSE, `LoadLibrary` returns NULL. If the call to `LoadLibrary` specifies a DLL module that is already mapped into the address space of the calling process, the function returns a handle of the DLL and increments the reference count of the module.  
   
@@ -70,4 +69,4 @@ Processes call [LoadLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259187) (o
 ## See Also  
  [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)   
  [LoadLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259187)   
- [AfxLoadLibrary](../Topic/AfxLoadLibrary.md)
+ [AfxLoadLibrary](http://msdn.microsoft.com/Library/1339678b-c843-4474-b9c9-8f3bd9905e2e)

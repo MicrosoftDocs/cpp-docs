@@ -41,7 +41,7 @@ operator&(
   
 ### Example  
   
-```  
+```cpp  
 // bitset_and.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -93,7 +93,7 @@ basic_ostream<CharType, Traits>& operator<<(
   
 ### Example  
   
-```  
+```cpp  
 // bitset_op_insert.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -158,7 +158,7 @@ _Istr,
   
 ### Example  
   
-```  
+```cpp  
 #include <bitset>  
 #include <iostream>  
 #include <string>  
@@ -228,7 +228,7 @@ operator^(
   
 ### Example  
   
-```  
+```cpp  
 // bitset_xor.cpp  
 // compile with: /EHsc  
 #include <bitset>  
@@ -277,7 +277,7 @@ operator|(
   
 ### Example  
   
-```  
+```cpp  
 // bitset_or.cpp  
 // compile with: /EHsc  
 #include <bitset>  

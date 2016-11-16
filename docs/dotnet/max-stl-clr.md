@@ -2,7 +2,6 @@
 title: "max (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,7 +47,7 @@ template<class _Ty, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `max`. For more information, see [max](../Topic/max.md).  
+ This function behaves the same as the STL function `max`. For more information, see [max](http://msdn.microsoft.com/Library/342d6303-fac9-46f2-a7f2-3a8c3c048cd6).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

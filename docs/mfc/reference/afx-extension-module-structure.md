@@ -2,7 +2,6 @@
 title: "AFX_EXTENSION_MODULE Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `AFX_EXTENSION_MODULE` is used during initialization of MFC extension DLLs t
 ## Syntax  
   
 ```  
- 
-    struct AFX_EXTENSION_MODULE  
+struct AFX_EXTENSION_MODULE  
 {  
     BOOL bInitialized;  
     HMODULE hModule;  
@@ -71,7 +69,7 @@ The `AFX_EXTENSION_MODULE` is used during initialization of MFC extension DLLs t
 ## Remarks  
  MFC extension DLLs need to do two things in their `DllMain` function:  
   
--   Call [AfxInitExtensionModule](../Topic/AfxInitExtensionModule.md) and check the return value.  
+-   Call [AfxInitExtensionModule](http://msdn.microsoft.com/Library/15f0c820-ff34-4da6-8077-79afbbb8dac1) and check the return value.  
   
 -   Create a **CDynLinkLibrary** object if the DLL will be exporting [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) objects or has its own custom resources.  
   
@@ -88,6 +86,6 @@ The `AFX_EXTENSION_MODULE` is used during initialization of MFC extension DLLs t
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [AfxInitExtensionModule](../Topic/AfxInitExtensionModule.md)   
- [AfxTermExtensionModule](../Topic/AfxTermExtensionModule.md)
+ [AfxInitExtensionModule](http://msdn.microsoft.com/Library/15f0c820-ff34-4da6-8077-79afbbb8dac1)   
+ [AfxTermExtensionModule](http://msdn.microsoft.com/Library/b64de402-f1e3-4c26-9823-08c07876aaaa)
 

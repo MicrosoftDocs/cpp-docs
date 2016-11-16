@@ -2,7 +2,6 @@
 title: "Callback Function for CDC::GrayString | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ translation.priority.ht:
 ## Syntax  
   
 ```  
- 
-    BOOL CALLBACK EXPORT OutputFunc(
+BOOL CALLBACK EXPORT OutputFunc(
     HDC hDC,  
     LPARAM lpData,  
     int nCount);

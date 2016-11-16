@@ -2,7 +2,6 @@
 title: "binary_function Struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,12 +41,13 @@ translation.priority.ht:
 An empty base struct that defines types that may be inherited by derived classes that provides a binary function object.  
   
 ## Syntax  
-  
+```    
 struct binary_function {
    typedef Arg1 first_argument_type;
    typedef Arg2 second_argument_type;
-   typedef Result result_type;    };  
-  
+   typedef Result result_type;    
+   };  
+ ```  
 ## Remarks  
  The template struct serves as a base for classes that define a member function of the form:  
   
@@ -59,7 +59,7 @@ struct binary_function {
   
 ## Example  
   
-```  
+```cpp  
 // functional_binary_function.cpp  
 // compile with: /EHsc  
 #include <vector>  

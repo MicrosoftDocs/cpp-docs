@@ -2,7 +2,6 @@
 title: "rotate (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +45,7 @@ template<class _FwdIt> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `rotate`. For more information, see [rotate](../Topic/rotate.md).  
+ This function behaves the same as the STL function `rotate`. For more information, see [rotate](http://msdn.microsoft.com/Library/dacfa67d-4139-45a5-8265-2e2187231392).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

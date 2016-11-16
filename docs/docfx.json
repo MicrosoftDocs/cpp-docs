@@ -30,6 +30,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+            "breadcrumb_path": "~/_breadcrumb/toc.yml",
             "ROBOTS": "INDEX,FOLLOW",
             "author": "",
             "ms.author": "",
@@ -39,7 +40,7 @@
             "audience": "developer",
             "ms.reviewer": "",
             "ms.prod": "visual-studio-dev15",
-            "ms.technology": "",
+            "ms.technology": "devlang-cpp",
             "ms.tgt_pltfrm": ""
     },
     "fileMetadata": {},

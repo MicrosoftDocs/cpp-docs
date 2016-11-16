@@ -2,7 +2,6 @@
 title: "Gray and Dithered Bitmap Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -59,20 +58,13 @@ translation.priority.ht:
 ##  <a name="afxdrawgraybitmap"></a>  AfxDrawGrayBitmap  
  Draws a gray version of a bitmap.  
   
-```  
- 
+```   
 void AFXAPI AfxDrawGrayBitmap(
-    CDC* 
-pDC  ,  
-    int 
-x  ,  
-    int 
-y  ,  
-    const CBitmap& 
-rSrc  ,  
-    COLORREF crBackground);
-
- 
+    CDC* pDC,  
+    int x,  
+    int y,  
+    const CBitmap& rSrc,  
+    COLORREF crBackground); 
 ```  
   
 ### Parameters  
@@ -102,16 +94,11 @@ rSrc  ,
 ##  <a name="afxgetgraybitmap"></a>  AfxGetGrayBitmap  
  Copies a gray version of a bitmap.  
   
-```  
- 
+```   
 void AFXAPI AfxGetGrayBitmap(
-    const CBitmap& 
-rSrc  ,  
-    CBitmap* 
-pDest  ,  
-    COLORREF crBackground);
-
- 
+    const CBitmap& rSrc,  
+    CBitmap* pDest,  
+    COLORREF crBackground); 
 ```  
   
 ### Parameters  
@@ -135,22 +122,14 @@ pDest  ,
 ##  <a name="afxdrawditheredbitmap"></a>  AfxDrawDitheredBitmap  
  Draws a bitmap, replacing its background with a dithered (checker) pattern.  
   
-```  
- 
+```   
 void AFXAPI AfxDrawDitheredBitmap(
-    CDC* 
-pDC  ,  
-    int 
-x  ,  
-    int 
-y  ,  
-    const CBitmap& 
-rSrc  ,  
-    COLORREF 
-cr1  ,  
-    COLORREF cr2);
-
- 
+    CDC* pDC,  
+    int x,  
+    int y,  
+    const CBitmap& rSrc,  
+    COLORREF cr1  ,  
+    COLORREF cr2); 
 ```  
   
 ### Parameters  
@@ -183,18 +162,12 @@ cr1  ,
 ##  <a name="afxgetditheredbitmap"></a>  AfxGetDitheredBitmap  
  Copies a bitmap, replacing its background with a dithered (checker) pattern.  
   
-```  
- 
+```   
 void AFXAPI AfxGetDitheredBitmap(
-    const CBitmap& 
-rSrc  ,  
-    CBitmap* 
-pDest  ,  
-    COLORREF 
-cr1  ,  
-    COLORREF cr2);
-
- 
+    const CBitmap& rSrc,  
+    CBitmap* pDest,  
+    COLORREF cr1  ,  
+    COLORREF cr2); 
 ```  
   
 ### Parameters  

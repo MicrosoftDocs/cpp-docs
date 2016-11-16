@@ -2,7 +2,6 @@
 title: "hash Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,9 +50,7 @@ Computes hash code for a value.
 template <class Ty>  
 struct hash  
  : public unary_function<Ty, size_t> {  
-    size_t operator()(Ty val) const;
-
- 
+    size_t operator()(Ty val) const; 
  };  
 ```  
   
@@ -62,7 +59,7 @@ struct hash
   
 ## Example  
   
-```  
+```cpp  
 // std_tr1__functional__hash.cpp   
 // compile with: /EHsc   
 #include <functional>   

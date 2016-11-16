@@ -2,7 +2,6 @@
 title: "COLORADJUSTMENT Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `COLORADJUSTMENT` structure defines the color adjustment values used by the 
 ## Syntax  
   
 ```  
- 
-    typedef struct  tagCOLORADJUSTMENT {    /* ca */  
+typedef struct  tagCOLORADJUSTMENT {    /* ca */  
     WORD caSize;  
     WORD caFlags;  
     WORD caIlluminantIndex;  

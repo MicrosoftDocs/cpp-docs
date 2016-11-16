@@ -2,7 +2,6 @@
 title: "Class Factories and Licensing | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -55,10 +54,8 @@ To create an instance of your OLE control, a container application calls a membe
 ##  <a name="declare_olecreate_ex"></a>  DECLARE_OLECREATE_EX  
  Declares a class factory and the `GetClassID` member function of your control class.  
   
-```  
- 
-DECLARE_OLECREATE_EX(class_name)  
- 
+```   
+DECLARE_OLECREATE_EX(class_name)   
 ```  
   
 ### Parameters  
@@ -75,23 +72,21 @@ DECLARE_OLECREATE_EX(class_name)
 ##  <a name="implement_olecreate_ex"></a>  IMPLEMENT_OLECREATE_EX  
  Implements your control's class factory and the [GetClassID](../../mfc/reference/colecontrol-class.md#GetClassID) member function of your control class.  
   
-```  
- 
+```   
 IMPLEMENT_OLECREATE_EX(
-class_name  ,   
-external_name  ,   
-l  ,   
-w1  ,   
-w2  ,   
-b1  ,   
-b2  ,   
-b3  ,   
-b4  ,   
-b5  ,   
-b6  ,   
-b7  ,
-    b8)  
- 
+   class_name,   
+    external_name,    
+    l,   
+    w1,   
+    w2,   
+    b1,   
+    b2,   
+    b3,   
+    b4,   
+    b5,   
+    b6,   
+    b7,
+    b8)   
 ```  
   
 ### Parameters  
@@ -110,10 +105,8 @@ b7  ,
 ##  <a name="begin_olefactory"></a>  BEGIN_OLEFACTORY  
  Begins the declaration of your class factory in the header file of your control class.  
   
-```  
- 
+``` 
 BEGIN_OLEFACTORY(class_name)  
- 
 ```  
   
 ### Parameters  
@@ -127,9 +120,7 @@ BEGIN_OLEFACTORY(class_name)
  Ends the declaration of your control's class factory.  
   
 ```  
- 
-END_OLEFACTORY(class_name)  
- 
+END_OLEFACTORY(class_name)   
 ```  
   
 ### Parameters  
@@ -139,22 +130,12 @@ END_OLEFACTORY(class_name)
 ##  <a name="afxverifylicfile"></a>  AfxVerifyLicFile  
  Call this function to verify that the license file named by `pszLicFileName` is valid for the OLE control.  
   
-```  
- 
-BOOL  
-AFXAPI  
-AfxVerifyLicFile(
-    HINSTANCE 
-hInstance  ,  
-    LPCTSTR 
-pszLicFileName  ,  
-    LPOLESTR 
-pszLicFileContents  ,  
-    UINT 
-cch  
-= -1);
-
- 
+```   
+BOOL AFXAPI AfxVerifyLicFile(
+    HINSTANCE  hInstance,  
+    LPCTSTR  pszLicFileName,  
+    LPOLESTR  pszLicFileContents,  
+    UINT cch = -1); 
 ```  
   
 ### Parameters  

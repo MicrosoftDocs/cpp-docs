@@ -2,7 +2,6 @@
 title: "DHtmlUrlEventMapEntry Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `DHtmlUrlEventMapEntry` structure provides multi-URL event map support.
 ## Syntax  
   
 ```  
- 
-    struct DHtmlUrlEventMapEntry  
+struct DHtmlUrlEventMapEntry  
 {  
 LPCTSTR szUrl;  
 const DHtmlEventMapEntry *pEventMap;  

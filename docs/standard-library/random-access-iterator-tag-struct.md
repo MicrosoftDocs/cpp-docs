@@ -2,7 +2,6 @@
 title: "random_access_iterator_tag Struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -55,7 +54,7 @@ struct random_access_iterator_tag    : public bidirectional_iterator_tag {};
   
 ## Example  
   
-```  
+```cpp  
 // iterator_rait.cpp  
 // compile with: /EHsc  
 #include <iterator>  

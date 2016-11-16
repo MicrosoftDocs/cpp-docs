@@ -41,29 +41,29 @@ bool operator==(null_ptr_type npc, const function<Fty>& f);
   
 ### Example  
   
-```  
-// std_tr1__functional__operator_eq.cpp   
+```cpp  
+// std_tr1__functional__operator_eq.cpp
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
-  
-int neg(int val)   
-    {   
-    return (-val);   
-    }   
-  
-int main()   
-    {   
-    std::function<int (int)> fn0;   
-    std::cout << std::boolalpha << "empty == "   
-        << (fn0 == 0) << std::endl;   
-  
-    std::function<int (int)> fn1(neg);   
-    std::cout << std::boolalpha << "empty == "   
-        << (fn1 == 0) << std::endl;   
-  
-    return (0);   
-    }  
+
+int neg(int val)
+{
+    return (-val);
+}
+
+int main()
+{
+    std::function<int(int)> fn0;
+    std::cout << std::boolalpha << "empty == "
+        << (fn0 == 0) << std::endl;
+
+    std::function<int(int)> fn1(neg);
+    std::cout << std::boolalpha << "empty == "
+        << (fn1 == 0) << std::endl;
+
+    return (0);
+}
   
 ```  
   
@@ -98,7 +98,7 @@ bool operator!=(null_ptr_type npc, const function<Fty>& f);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__functional__operator_ne.cpp   
 // compile with: /EHsc   
 #include <functional>   

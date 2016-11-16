@@ -2,7 +2,6 @@
 title: "Property Map Macros | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -70,10 +69,7 @@ BEGIN_PROP_MAP(theClass)
  Indicates the extent, or dimensions, of an ActiveX control.  
   
 ```
-PROP_DATA_ENTRY(
-    szDesc,
- member,
-    vt)
+PROP_DATA_ENTRY( szDesc, member, vt)
 ```    
   
 ### Parameters  
@@ -102,11 +98,7 @@ PROP_DATA_ENTRY(
  Use this macro to enter a property description, property DISPID, and property page CLSID into the object's property map.  
   
 ```
-PROP_ENTRY_TYPE(
-    szDesc,
- dispid,
-    clsid,
- vt)
+PROP_ENTRY_TYPE( szDesc, dispid, clsid, vt)
 ```  
   
 ### Parameters  
@@ -134,12 +126,7 @@ PROP_ENTRY_TYPE(
  Similar to [PROP_ENTRY_TYPE](#prop_entry_type), but allows you specify a particular IID if your object supports multiple dual interfaces.  
   
 ```
-PROP_ENTRY_TYPE_EX(
-    szDesc,
- dispid,
-    clsid,
- iidDispatch,
-    vt)
+PROP_ENTRY_TYPE_EX( szDesc, dispid, clsid, iidDispatch, vt)
 ```    
   
 ### Parameters  

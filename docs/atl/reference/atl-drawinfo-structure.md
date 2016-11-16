@@ -2,7 +2,6 @@
 title: "ATL_DRAWINFO Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -111,7 +110,7 @@ struct ATL_DRAWINFO {
 ## See Also  
  [Structures](../../atl/reference/atl-structures.md)   
  [IViewObject::Draw](http://msdn.microsoft.com/library/windows/desktop/ms688655)   
- [CComControlBase::OnDrawAdvanced](../Topic/CComControlBase::OnDrawAdvanced.md)
+ [CComControlBase::OnDrawAdvanced](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__ondrawadvanced)
 
 
 

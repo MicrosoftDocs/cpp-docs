@@ -2,7 +2,6 @@
 title: "CDaoFieldInfo Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,8 +41,7 @@ The `CDaoFieldInfo` structure contains information about a field object defined 
 ## Syntax  
   
 ```  
- 
-    struct CDaoFieldInfo  
+struct CDaoFieldInfo  
 {  
     CString m_strName;           // Primary  
     short m_nType;               // Primary  

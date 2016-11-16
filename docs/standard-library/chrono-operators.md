@@ -22,27 +22,24 @@ manager: "ghogen"
  Operator for subtraction or negation of [duration](../standard-library/duration-class.md) and [time_point](../standard-library/time-point-class.md) objects.  
   
 ```  
-template <class Rep1, class Period1,  
-    class Rep2, class Period2>  
-constexpr typename common_type<
-    duration<Rep1, Period1>,   
-    duration<Rep2, Period2>>::type operator-(
- const duration<Rep1, Period1>& Left,  
-    const duration<Rep2, Period2>& Right);
-
+template <class Rep1, class Period1, class Rep2, class Period2>  
+constexpr typename common_type<duration<Rep1, Period1>, duration<Rep2, Period2>>::type 
+   operator-(
+       const duration<Rep1, Period1>& Left, 
+       cconst duration<Rep2, Period2>& Right);
  
 template <class Clock, class Duration1, class Rep2, class Period2>  
-constexpr time_point<Clock,   
-    typename common_type<Duration1, duration<Rep2, Period2>>::type>  
-operator-(
-    const time_point<Clock, Duration1>& Time,  
-    const duration<Rep2, Period2>& Dur);
+constexpr time_point<Clock, typename common_type<Duration1, duration<Rep2, Period2>>::type  
+   operator-(
+       const time_point<Clock, Duration1>& Time, 
+       const duration<Rep2, Period2>& Dur);
 
  
 template <class Clock, class Duration1, class Duration2>  
-constexpr typename common_type<Duration1, Duration2>::type operator-(
- const time_point<Clock, Duration1>& Left,  
-    const time_point<Clock, Duration2>& Right);
+constexpr typename common_type<Duration1, Duration2>::type 
+   operator-(
+       const time_point<Clock, Duration1>& Left, 
+       const time_point<Clock, Duration2>& Right);
 ```  
   
 ### Parameters  
@@ -96,11 +93,18 @@ constexpr bool operator!=(
   
 ```  
 template <class Rep1, class Period1, class Rep2>  
-constexpr duration<typename common_type<Rep1, Rep2>::type, Period1> operator*(const duration<Rep1, Period1>& Dur, const Rep2& Mult);
+constexpr duration<typename common_type<Rep1, Rep2>::type, Period1> 
+   operator*(
+      const duration<Rep1, Period1>& Dur, 
+      const Rep2& Mult);
 
  
 template <class Rep1, class Rep2, class Period2>  
-constexpr duration<typename common_type<Rep1, Rep2>::type, Period2> operator*(const Rep1& Mult, const duration<Rep2, Period2>& Dur);
+constexpr duration<typename common_type<Rep1, Rep2>::type, Period2> 
+   operator*(
+       const Rep1& Mult,
+       const duration<Rep2, 
+       Period2>& Dur);
 ```  
   
 ### Parameters  
@@ -122,15 +126,17 @@ constexpr duration<typename common_type<Rep1, Rep2>::type, Period2> operator*(co
   
 ```  
 template <class Rep1, class Period1, class Rep2>  
-constexpr duration<typename common_type<Rep1, Rep2>::type, Period1> operator/(
- const duration<Rep1, Period1>& Dur,  
-    const Rep2& Div);
+constexpr duration<typename common_type<Rep1, Rep2>::type, Period1> 
+   operator/(
+     const duration<Rep1, Period1>& Dur,  
+     const Rep2& Div);
 
  
 template <class Rep1, class Period1, class Rep2, class Period2>  
-constexpr typename common_type<Rep1, Rep2>::type operator/(
- const duration<Rep1, Period1>& Left,  
-    const duration<Rep2, Period2>& Right);
+constexpr typename common_type<Rep1, Rep2>::type 
+   operator/(
+     const duration<Rep1, Period1>& Left,  
+     const duration<Rep2, Period2>& Right);
 ```  
   
 ### Parameters  
@@ -158,21 +164,24 @@ constexpr typename common_type<Rep1, Rep2>::type operator/(
   
 ```  
 template <class Rep1, class Period1, class Rep2, class Period2>  
-constexpr typename common_type<duration<Rep1, Period1>,   
-    duration<Rep2, Period2>>::type operator+(const duration<Rep1, Period1>& Left,  
-    const duration<Rep2, Period2>& Right);
+constexpr typename common_type<duration<Rep1, Period1>, duration<Rep2, Period2>>::type 
+   operator+(
+      const duration<Rep1, Period1>& Left,  
+      const duration<Rep2, Period2>& Right);
 
  
 template <class Clock, class Duration1, class Rep2, class Period2>  
-constexpr time_point<Clock,   
-    typename common_type<Duration1, duration<Rep2, Period2>>::type> operator+(const time_point<Clock, Duration1>& Time,  
-    const duration<Rep2, Period2>& Dur);
+constexpr time_point<Clock, typename common_type<Duration1, duration<Rep2, Period2>>::type>
+   operator+(
+      const time_point<Clock, Duration1>& Time,  
+      const duration<Rep2, Period2>& Dur);
 
  
 template <class Rep1, class Period1, class Clock, class Duration2>  
-time_point<Clock, 
-    constexpr typename common_type<duration<Rep1, Period1>, Duration2>::type> operator+(const duration<Rep1, Period1>& Dur,  
-    const time_point<Clock, Duration2>& Time);
+time_point<Clock, constexpr typename common_type<duration<Rep1, Period1>, Duration2>::type>
+   operator+(
+      const duration<Rep1, Period1>& Dur,  
+      const time_point<Clock, Duration2>& Time);
 ```  
   
 ### Parameters  
@@ -229,7 +238,6 @@ template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr bool operator<=(
     const duration<Rep1, Period1>& Left,  
     const duration<Rep2, Period2>& Right);
-
  
 template <class Clock, class Duration1, class Duration2>  
 constexpr bool operator<=(
@@ -255,7 +263,6 @@ template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr bool operator==(
     const duration<Rep1, Period1>& Left,  
     const duration<Rep2, Period2>& Right);
-
  
 template <class Clock, class Duration1, class Duration2>  
 constexpr bool operator==(
@@ -283,7 +290,6 @@ template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr bool operator>(
     const duration<Rep1, Period1>& Left,  
     const duration<Rep2, Period2>& Right);
-
  
 template <class Clock, class Duration1, class Duration2>  
 constexpr bool operator>(
@@ -309,7 +315,6 @@ template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr bool operator>=(
     const duration<Rep1, Period1>& Left,  
     const duration<Rep2, Period2>& Right);
-
  
 template <class Clock, class Duration1, class Duration2>  
 constexpr bool operator>=(
@@ -332,14 +337,16 @@ constexpr bool operator>=(
   
 ```  
 template <class Rep1, class Period1, class Rep2>  
-constexpr duration<Rep1, Period1, Rep2>::type operator%(
- const duration<Rep1, Period1>& Dur,  
-    const Rep2& Div);
+constexpr duration<Rep1, Period1, Rep2>::type 
+   operator%(
+      const duration<Rep1, Period1>& Dur,  
+      const Rep2& Div);
 
 template <class Rep1, class Period1, class Rep2, class Period2>  
-constexpr typename common_type<duration<Rep1, _Period1>, duration<Rep2, Period2>>::type operator%(
- const duration<Rep1, Period1>& Left,  
-    const duration<Rep2, Period2>& Right);
+constexpr typename common_type<duration<Rep1, _Period1>, duration<Rep2, Period2>>::type
+   operator%(
+     const duration<Rep1, Period1>& Left,  
+     const duration<Rep2, Period2>& Right);
 ```  
   
 ### Parameters  

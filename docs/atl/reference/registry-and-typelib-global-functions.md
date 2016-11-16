@@ -2,7 +2,6 @@
 title: "Registry and TypeLib Global Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -57,8 +56,6 @@ These functions provide support for loading and registering a type library.
 ##  <a name="atlregistertypelib"></a>  AtlRegisterTypeLib  
  This function is called to register a type library.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
   
 ```
 ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
@@ -80,9 +77,7 @@ ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
 ##  <a name="atlunregistertypelib"></a>  AtlUnRegisterTypeLib  
  This function is called to unregister a type library.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
-  
+
 ```
 ATLAPI AtlUnRegisterTypeLib(
     HINSTANCE hInstTypeLib,  LPCOLESTR lpszIndex);
@@ -104,9 +99,7 @@ ATLAPI AtlUnRegisterTypeLib(
 ##  <a name="atlloadtypelib"></a>  AtlLoadTypeLib  
  This function is called to load a type library.  
   
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
-  
+
 ```
 ATLINLINE ATLAPI AtlLoadTypeLib(
     HINSTANCE hInstTypeLib,
@@ -149,10 +142,7 @@ ATLINLINE ATLAPI AtlLoadTypeLib(
   
 ##  <a name="registrydataexchange"></a>  RegistryDataExchange  
  This function is called to read from, or write to, the system registry.  
-  
-> [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
-  
+ 
 ```
 HRESULT RegistryDataExchange(
     T* pT,
@@ -174,7 +164,7 @@ HRESULT RegistryDataExchange(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- The macros [BEGIN_RDX_MAP](../Topic/BEGIN_RDX_MAP.md) and [END_RDX_MAP](../Topic/END_RDX_MAP.md) expand to a function that calls `RegistryDataExchange`.  
+ The macros [BEGIN_RDX_MAP](http://msdn.microsoft.com/Library/95bbba6a-d550-4e36-8e6e-1c619d9e660d) and [END_RDX_MAP](http://msdn.microsoft.com/Library/77efa3bd-ded7-430c-b5b4-2131a2d7e71d) expand to a function that calls `RegistryDataExchange`.  
   
  The possible enum values that indicate the operation the function should perform are shown in the following table:  
   
@@ -189,12 +179,12 @@ HRESULT RegistryDataExchange(
   
 |||  
 |-|-|  
-|[BEGIN_RDX_MAP](../Topic/BEGIN_RDX_MAP.md)|Marks the beginning of the Registry Data Exchange map.|  
-|[END_RDX_MAP](../Topic/END_RDX_MAP.md)|Marks the end of the Registry Data Exchange map.|  
-|[RDX_BINARY](../Topic/RDX_BINARY.md)|Associates the specified registry entry with a specified member variable of type BYTE.|  
-|[RDX_CSTRING_TEXT](../Topic/RDX_CSTRING_TEXT.md)|Associates the specified registry entry with a specified member variable of type CString.|  
-|[RDX_DWORD](../Topic/RDX_DWORD.md)|Associates the specified registry entry with a specified member variable of type DWORD.|  
-|[RDX_TEXT](../Topic/RDX_TEXT.md)|Associates the specified registry entry with a specified member variable of type TCHAR.|  
+|[BEGIN_RDX_MAP](http://msdn.microsoft.com/Library/95bbba6a-d550-4e36-8e6e-1c619d9e660d)|Marks the beginning of the Registry Data Exchange map.|  
+|[END_RDX_MAP](http://msdn.microsoft.com/Library/77efa3bd-ded7-430c-b5b4-2131a2d7e71d)|Marks the end of the Registry Data Exchange map.|  
+|[RDX_BINARY](http://msdn.microsoft.com/Library/cc872cdb-fe5a-45cd-8ed8-00be54911f2a)|Associates the specified registry entry with a specified member variable of type BYTE.|  
+|[RDX_CSTRING_TEXT](http://msdn.microsoft.com/Library/897ac6dc-2700-4818-8327-3a779aa7bc6c)|Associates the specified registry entry with a specified member variable of type CString.|  
+|[RDX_DWORD](http://msdn.microsoft.com/Library/1e7d4888-284f-4fe7-99de-5f193af19c4d)|Associates the specified registry entry with a specified member variable of type DWORD.|  
+|[RDX_TEXT](http://msdn.microsoft.com/Library/47566a2e-f293-4b67-8e1c-fa83a0a0c558)|Associates the specified registry entry with a specified member variable of type TCHAR.|  
   
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)

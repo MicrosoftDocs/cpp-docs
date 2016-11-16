@@ -2,7 +2,6 @@
 title: "MFC ActiveX Controls: Adding Custom Methods | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -94,5 +93,5 @@ Custom methods differ from stock methods in that they are not already implemente
   
 ## See Also  
  [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)   
- [Class View and Object Browser Icons](/visual-studio/ide/class-view-and-object-browser-icons)
+ [Class View and Object Browser Icons](/visualstudio/ide/class-view-and-object-browser-icons)
 

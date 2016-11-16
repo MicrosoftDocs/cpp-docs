@@ -2,7 +2,6 @@
 title: "fmax, fmaxf, fmaxl | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -127,4 +126,4 @@ long double fmaxl(
   
 ## See Also  
  [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [fmin, fminf, fminl](../Topic/fmin,%20fminf,%20fminl1.md)
+ [fmin, fminf, fminl](http://msdn.microsoft.com/Library/719840c7-8edd-4a83-bad9-5cc39b73d5a7)

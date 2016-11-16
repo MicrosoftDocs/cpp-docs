@@ -2,7 +2,6 @@
 title: "swap_ranges (STL-CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,7 +46,7 @@ template<class _FwdIt1, class _FwdIt2> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `swap_ranges`. For more information, see [swap_ranges](../Topic/swap_ranges.md).  
+ This function behaves the same as the STL function `swap_ranges`. For more information, see [swap_ranges](http://msdn.microsoft.com/Library/6dbc8367-d97b-4a25-978d-7f94eb465cbc).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

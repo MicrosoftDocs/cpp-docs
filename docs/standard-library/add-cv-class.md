@@ -2,7 +2,6 @@
 title: "add_cv Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -62,7 +61,7 @@ template <class T>using add_cv_t = typename add_cv<T>::type;
   
 ## Example  
   
-```  
+```cpp  
 #include <type_traits>   
 #include <iostream>   
   

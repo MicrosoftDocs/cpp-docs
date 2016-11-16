@@ -2,7 +2,6 @@
 title: "Recordset: Declaring a Class for a Predefined Query (ODBC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,7 +49,7 @@ This topic applies to the MFC ODBC classes.
  The database classes do not support updating predefined queries. The difference between a snapshot predefined query and a dynaset predefined query is not updateability but whether changes made by other users (or other recordsets in your program) are visible in your recordset.  
   
 > [!TIP]
->  You do not need a recordset to call a predefined query that does not return records. Prepare the SQL statement as described below, but execute it by calling the `CDatabase` member function [ExecuteSQL](../Topic/CDatabase::ExecuteSQL.md).  
+>  You do not need a recordset to call a predefined query that does not return records. Prepare the SQL statement as described below, but execute it by calling the `CDatabase` member function [ExecuteSQL](../mfc/reference/cdatabase-class.md#cdatabase__executesql).  
   
  You can create a single recordset class to manage calling a predefined query, but you must do some of the work yourself. The wizards do not support creating a class specifically for this purpose.  
   
@@ -62,7 +61,7 @@ This topic applies to the MFC ODBC classes.
   
      For example, if the query returns three columns each from two additional tables, add six field data members (of the appropriate data types) to the class.  
   
-3.  Manually add [RFX](../../data/odbc/record-field-exchange-rfx.md) function calls in the [DoFieldExchange](../Topic/CRecordset::DoFieldExchange.md) member function of the class, one corresponding to the data type of each added field data member.  
+3.  Manually add [RFX](../../data/odbc/record-field-exchange-rfx.md) function calls in the [DoFieldExchange](../mfc/reference/crecordset-class.md#crecordset__dofieldexchange) member function of the class, one corresponding to the data type of each added field data member.  
   
     ```  
     Immediately before these RFX calls, call <MSHelp:link keywords="_mfc_CFieldExchange.3a3a.SetFieldType" TABINDEX="0">SetFieldType</MSHelp:link>, as shown here:   

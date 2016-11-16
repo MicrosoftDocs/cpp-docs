@@ -2,7 +2,6 @@
 title: "_ATL_FUNC_INFO Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -66,7 +65,7 @@ struct _ATL_FUNC_INFO {
  An array of variant types of the function parameters.  
   
 ## Remarks  
- Internally, ATL uses this structure to hold information obtained from a type library. You may need to manipulate this structure directly if you provide type information for an event handler used with the [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) class and [SINK_ENTRY_INFO](../Topic/SINK_ENTRY_INFO.md) macro.  
+ Internally, ATL uses this structure to hold information obtained from a type library. You may need to manipulate this structure directly if you provide type information for an event handler used with the [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) class and [SINK_ENTRY_INFO](http://msdn.microsoft.com/Library/1a0ae260-2c82-4926-a537-db01e5f206a7) macro.  
   
 ## Example  
  Given a dispinterface method defined in IDL:  
@@ -83,7 +82,7 @@ struct _ATL_FUNC_INFO {
 ## See Also  
  [Structures](../../atl/reference/atl-structures.md)   
  [IDispEventSimpleImpl Class](../../atl/reference/idispeventsimpleimpl-class.md)   
- [SINK_ENTRY_INFO](../Topic/SINK_ENTRY_INFO.md)
+ [SINK_ENTRY_INFO](http://msdn.microsoft.com/Library/1a0ae260-2c82-4926-a537-db01e5f206a7)
 
 
 

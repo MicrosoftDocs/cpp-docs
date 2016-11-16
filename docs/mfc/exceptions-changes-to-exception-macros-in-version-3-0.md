@@ -2,7 +2,6 @@
 title: "Exceptions: Changes to Exception Macros in Version 3.0 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

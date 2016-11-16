@@ -2,7 +2,6 @@
 title: "Connection Maps | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -66,11 +65,8 @@ OLE controls are able to expose interfaces to other applications. These interfac
 ##  <a name="begin_connection_part"></a>  BEGIN_CONNECTION_PART  
  Use the `BEGIN_CONNECTION_PART` macro to begin the definition of additional connection points beyond the event and property notification connection points.  
   
-```  
- 
-BEGIN_CONNECTION_PART(
-theClass  ,   localClass)  
- 
+```   
+BEGIN_CONNECTION_PART(theClass, localClass)   
 ```  
   
 ### Parameters  
@@ -86,10 +82,8 @@ theClass  ,   localClass)
 ##  <a name="end_connection_part"></a>  END_CONNECTION_PART  
  Ends the declaration of your connection point.  
   
-```  
- 
-END_CONNECTION_PART(localClass)  
- 
+```   
+END_CONNECTION_PART(localClass)   
 ```  
   
 ### Parameters  
@@ -99,10 +93,8 @@ END_CONNECTION_PART(localClass)
 ##  <a name="connection_iid"></a>  CONNECTION_IID  
  Use between the `BEGIN_CONNECTION_PART` and `END_CONNECTION_PART` macros to define an interface ID for a connection point supported by your OLE control.  
   
-```  
- 
-CONNECTION_IID(iid)  
- 
+```   
+CONNECTION_IID(iid)   
 ```  
   
 ### Parameters  
@@ -119,10 +111,8 @@ CONNECTION_IID(iid)
 ##  <a name="declare_connection_map"></a>  DECLARE_CONNECTION_MAP  
  Each `COleControl`-derived class in your program can provide a connection map to specify additional connection points that your control supports.  
   
-```  
- 
-DECLARE_CONNECTION_MAP()  
- 
+```   
+DECLARE_CONNECTION_MAP() 
 ```  
   
 ### Remarks  
@@ -131,11 +121,8 @@ DECLARE_CONNECTION_MAP()
 ##  <a name="begin_connection_map"></a>  BEGIN_CONNECTION_MAP  
  Each `COleControl`-derived class in your program can provide a connection map to specify connection points that your control will support.  
   
-```  
- 
-BEGIN_CONNECTION_MAP(
-theClass  ,   theBase)  
- 
+```   
+BEGIN_CONNECTION_MAP(theClass, theBase)   
 ```  
   
 ### Parameters  
@@ -151,22 +138,15 @@ theClass  ,   theBase)
 ##  <a name="end_connection_map"></a>  END_CONNECTION_MAP  
  Ends the definition of your connection map.  
   
-```  
- 
+```   
 END_CONNECTION_MAP()  
- 
 ```  
   
 ##  <a name="connection_part"></a>  CONNECTION_PART  
  Maps a connection point for your OLE control to a specific interface ID.  
   
-```  
- 
-CONNECTION_PART(
-theClass  ,   
-iid  ,
-    localClass)  
- 
+```   
+CONNECTION_PART(theClass, iid, localClass)   
 ```  
   
 ### Parameters  
@@ -189,23 +169,13 @@ iid  ,
 ##  <a name="afxconnectionadvise"></a>  AfxConnectionAdvise  
  Call this function to establish a connection between a source, specified by `pUnkSrc`, and a sink, specified by `pUnkSink`.  
   
-```  
- 
-BOOL  
-AFXAPI  
-AfxConnectionAdvise(
-    LPUNKNOWN 
-pUnkSrc  ,  
-    REFIID 
-iid  ,  
-    LPUNKNOWN 
-pUnkSink  ,  
-    BOOL 
-bRefCount  ,  
-    DWORD 
-FAR* pdwCookie);
-
- 
+```   
+BOOL AFXAPI AfxConnectionAdvise(
+    LPUNKNOWN pUnkSrc, 
+    REFIID iid, 
+    LPUNKNOWN pUnkSink, 
+    BOOL bRefCount, 
+    DWORD FAR* pdwCookie);
 ```  
   
 ### Parameters  
@@ -233,22 +203,13 @@ FAR* pdwCookie);
 ##  <a name="afxconnectionunadvise"></a>  AfxConnectionUnadvise  
  Call this function to disconnect a connection between a source, specified by `pUnkSrc`, and a sink, specified by `pUnkSink`.  
   
-```  
- 
-BOOL  
-AFXAPI  
-AfxConnectionUnadvise(
-    LPUNKNOWN 
-pUnkSrc  ,  
-    REFIID 
-iid  ,  
-    LPUNKNOWN 
-pUnkSink  ,  
-    BOOL 
-bRefCount  ,  
-    DWORD dwCookie);
-
- 
+```   
+BOOL AFXAPI AfxConnectionUnadvise(
+    LPUNKNOWN pUnkSrc, 
+    REFIID iid, 
+    LPUNKNOWN pUnkSink, 
+    BOOL bRefCount, 
+    DWORD dwCookie); 
 ```  
   
 ### Parameters  

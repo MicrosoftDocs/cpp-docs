@@ -2,7 +2,6 @@
 title: "-DEBUG (Generate Debug Info) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -74,7 +73,7 @@ It is not possible to create an .exe or .dll that contains debug information. De
   
 ### To set this linker option in the Visual Studio development environment  
   
-1.  Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../Topic/Working%20with%20Project%20Properties.md).  
+1.  Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](http://msdn.microsoft.com/Library/9b0d6f8b-7d4e-4e61-aa75-7d14944816cd).  
   
 2.  Click the **Linker** folder.  
   

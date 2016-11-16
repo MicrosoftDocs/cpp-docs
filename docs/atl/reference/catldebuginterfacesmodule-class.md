@@ -2,7 +2,6 @@
 title: "CAtlDebugInterfacesModule Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,7 +47,7 @@ class CAtlDebugInterfacesModule
 ```  
   
 ## Remarks  
- `CAtlDebugInterfacesModule` provides the support required for debugging interfaces. It is included in any project that defines the symbol [_ATL_DEBUG_QI](../Topic/_ATL_DEBUG_QI.md).  
+ `CAtlDebugInterfacesModule` provides the support required for debugging interfaces. It is included in any project that defines the symbol [_ATL_DEBUG_QI](http://msdn.microsoft.com/Library/4f1feddf-1469-42ad-a2f7-5a816d1c0bc5).  
   
 ## Requirements  
  **Header:** atlbase.h  

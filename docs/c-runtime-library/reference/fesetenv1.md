@@ -2,7 +2,6 @@
 title: "fesetenv1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -67,7 +66,7 @@ int fesetenv(
   
 #### Parameters  
  `penv`  
- Pointer to a `fenv_t` object that contains a floating-point environment as set by a call to [fegetenv](../Topic/fegetenv2.md) or [feholdexcept](../Topic/feholdexcept1.md). You can also specify the default startup floating-point environment by using the FE_DFL_ENV macro.  
+ Pointer to a `fenv_t` object that contains a floating-point environment as set by a call to [fegetenv](http://msdn.microsoft.com/Library/61df848d-6ba8-4c6e-be35-216436fe7736) or [feholdexcept](http://msdn.microsoft.com/Library/c286ace3-ec39-482a-be8b-f998d31003d9). You can also specify the default startup floating-point environment by using the FE_DFL_ENV macro.  
   
 ## Return Value  
  Returns 0 if the environment was successfully set.        Otherwise, returns a nonzero value.  

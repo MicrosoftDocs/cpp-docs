@@ -2,7 +2,6 @@
 title: "Regular Expressions (C++-CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -57,7 +56,7 @@ Demonstrates various string operations using regular expressions classes in the 
 -   [How to: Use Regular Expressions to Validate Data Formatting (C++/CLI)](../dotnet/how-to-use-regular-expressions-to-validate-data-formatting-cpp-cli.md)  
   
 ## Related Sections  
- [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md)  
+ [.NET Framework Regular Expressions](http://msdn.microsoft.com/Library/521b3f6d-f869-42e1-93e5-158c54a6895d)  
   
 ## See Also  
  [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

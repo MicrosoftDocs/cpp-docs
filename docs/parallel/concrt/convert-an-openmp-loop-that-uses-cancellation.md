@@ -2,7 +2,6 @@
 title: "How to: Convert an OpenMP Loop that Uses Cancellation to Use the Concurrency Runtime | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,7 +40,7 @@ Some parallel loops do not require that all iterations be executed. For example,
  This example demonstrates how to convert an OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[for](../../parallel/openmp/reference/for-openmp.md) loop that does not require for all iterations to run to use the Concurrency Runtime cancellation mechanism.  
   
 ## Example  
- This example uses both OpenMP and the Concurrency Runtime to implement a parallel version of the [std::any_of](../Topic/any_of.md) algorithm. The OpenMP version of this example uses a flag to coordinate among all parallel loop iterations that the condition has been met. The version that uses the Concurrency Runtime uses the [concurrency::structured_task_group::cancel](../Topic/structured_task_group::cancel%20Method.md) method to stop the overall operation when the condition is met.  
+ This example uses both OpenMP and the Concurrency Runtime to implement a parallel version of the [std::any_of](http://msdn.microsoft.com/Library/c0a685f6-8242-42c6-b1bc-3956d25ae535) algorithm. The OpenMP version of this example uses a flag to coordinate among all parallel loop iterations that the condition has been met. The version that uses the Concurrency Runtime uses the [concurrency::structured_task_group::cancel](../Topic/structured_task_group::cancel%20Method.md) method to stop the overall operation when the condition is met.  
   
  [!code-cpp[concrt-openmp#2](../../parallel/concrt/codesnippet/CPP/convert-an-openmp-loop-that-uses-cancellation_1.cpp)]  
   

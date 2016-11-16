@@ -2,7 +2,6 @@
 title: "Version Issues for Value Types Nested in Native Types (C++-CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -37,7 +36,7 @@ translation.priority.ht:
 # Version Issues for Value Types Nested in Native Types (C++/CLI)
 Consider a signed (strong name) assembly component used to build a client assembly. The component contains a value type that is used in the client as the type for a member of a native union, a class, or an array. If a future version of the component changes the size or layout of the value type, the client must be recompiled.  
   
- Create a keyfile with [sn.exe](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md) (`sn -k mykey.snk`).  
+ Create a keyfile with [sn.exe](http://msdn.microsoft.com/Library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) (`sn -k mykey.snk`).  
   
 ## Example  
  The following sample is the component.  

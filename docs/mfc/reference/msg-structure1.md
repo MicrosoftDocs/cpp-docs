@@ -2,7 +2,6 @@
 title: "MSG Structure1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,8 +40,7 @@ The `MSG` structure contains message information from a thread's message queue.
 ## Syntax  
   
 ```  
- 
-    typedef struct tagMSG {     // msg    
+typedef struct tagMSG {     // msg    
     HWND hwnd;  
     UINT message;  
     WPARAM wParam;  

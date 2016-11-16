@@ -2,7 +2,6 @@
 title: "logical_and Struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,22 +48,16 @@ A predefined function object that performs the logical conjunction operation ( `
 template <class Type = void>
 struct logical_and : public binary_function<Type, Type, bool>  
 {
-    bool operator()(
-    const Type& Left,
-    const Type& Right) const;
-
- };
+    bool operator()(const Type& Left, const Type& Right) const;
+};
 
 // specialized transparent functor for operator&&
 template <>
 struct logical_and<void>  
 {
-template <class T, class U>
-auto operator()(T&& Left, U&& Right) const
- ->  
-decltype(std::forward<T>(Left)
-&& std::forward<U>(Right));
-
+  template <class T, class U>
+  auto operator()(T&& Left, U&& Right) const`
+    -> decltype(std::forward<T>(Left) && std::forward<U>(Right));
  };
 ```  
   
@@ -86,7 +79,7 @@ decltype(std::forward<T>(Left)
   
 ## Example  
   
-```  
+```cpp  
 // functional_logical_and.cpp  
 // compile with: /EHsc  
   

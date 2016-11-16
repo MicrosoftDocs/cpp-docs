@@ -2,7 +2,6 @@
 title: "istreambuf_iterator Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,7 +44,8 @@ The template class istreambuf_iterator describes an input iterator object that e
   
 ```
 template <class CharType class Traits = char_traits <CharType>>  
-class istreambuf_iterator : public iterator<input_iterator_tag, CharType, typename Traits ::off_type, CharType *, CharType &>
+class istreambuf_iterator 
+: public iterator<input_iterator_tag, CharType, typename Traits ::off_type, CharType*, CharType&>
 ```  
   
 #### Parameters  
@@ -107,7 +107,7 @@ typedef CharType char_type;
   
 ### Example  
   
-```  
+```cpp  
 // istreambuf_iterator_char_type.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -142,8 +142,7 @@ int main( )
  Tests for equivalence between two input stream buffer iterators.  
   
 ```
-bool equal(
-    const istreambuf_iterator<CharType, Traits>& right) const;
+bool equal(const istreambuf_iterator<CharType, Traits>& right) const;
 ```  
   
 ### Parameters  
@@ -158,7 +157,7 @@ bool equal(
   
 ### Example  
   
-```  
+```cpp  
 // istreambuf_iterator_equal.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -196,7 +195,7 @@ typedef typename traits_type::int_type int_type;
   
 ### Example  
   
-```  
+```cpp  
 // istreambuf_iterator_int_type.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -231,7 +230,6 @@ typedef basic_istream<CharType, Traits> istream_type;
   
 ```
 istreambuf_iterator(streambuf_type* strbuf = 0) throw();
-
 istreambuf_iterator(istream_type& _Istr) throw();
 ```  
   
@@ -247,7 +245,7 @@ istreambuf_iterator(istream_type& _Istr) throw();
   
 ### Example  
   
-```  
+```cpp  
 // istreambuf_iterator_istreambuf_iterator.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -289,7 +287,7 @@ CharType operator*() const;
   
 ### Example  
   
-```  
+```cpp  
 // istreambuf_iterator_operator_deref.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -320,7 +318,6 @@ int main( )
   
 ```
 istreambuf_iterator<CharType, Traits>& operator++();
-
 istreambuf_iterator<CharType, Traits> operator++(int);
 ```  
   
@@ -332,7 +329,7 @@ istreambuf_iterator<CharType, Traits> operator++(int);
   
 ### Example  
   
-```  
+```cpp  
 // istreambuf_iterator_operator_incr.cpp  
 // compile with: /EHsc  
 #include <iterator>  
@@ -393,7 +390,7 @@ typedef Traits traits_type;
   
 ### Example  
   
-```  
+```cpp  
 // istreambuf_iterator_traits_type.cpp  
 // compile with: /EHsc  
 #include <iterator>  

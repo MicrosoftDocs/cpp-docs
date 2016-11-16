@@ -2,7 +2,6 @@
 title: "Calling DLL Functions from Visual Basic Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -79,7 +78,7 @@ EXPORTS
    INITCODE=_InitCode@0  
 ```  
   
- For DLLs to be called by programs written in Visual Basic, the alias technique shown in this topic is needed in the .def file. If the alias is done in the Visual Basic program, use of aliasing in the .def file is not necessary. It can be done in the Visual Basic program by adding an alias clause to the [Declare](/dotnet/visual-basic/language-reference/statements/declare-statement) statement.  
+ For DLLs to be called by programs written in Visual Basic, the alias technique shown in this topic is needed in the .def file. If the alias is done in the Visual Basic program, use of aliasing in the .def file is not necessary. It can be done in the Visual Basic program by adding an alias clause to the [Declare](/dotnet/articles/visual-basic/language-reference/statements/declare-statement) statement.  
   
 ## What do you want to know more about?  
   

@@ -2,7 +2,6 @@
 title: "COM Interface Entry Points | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # COM Interface Entry Points
-For member functions of a COM interface, use the [METHOD_PROLOGUE](../Topic/METHOD_PROLOGUE.md) macro to maintain the proper global state when calling methods of an exported interface.  
+For member functions of a COM interface, use the [METHOD_PROLOGUE](http://msdn.microsoft.com/Library/e94c4939-64ea-42de-a501-55594c952828) macro to maintain the proper global state when calling methods of an exported interface.  
   
  Typically, member functions of interfaces implemented by `CCmdTarget`-derived objects already use this macro to provide automatic initialization of the `pThis` pointer. For example:  
   

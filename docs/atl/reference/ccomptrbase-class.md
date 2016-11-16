@@ -2,7 +2,6 @@
 title: "CComPtrBase Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -122,7 +121,7 @@ HRESULT Advise(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- See [AtlAdvise](../Topic/AtlAdvise.md) for more information.  
+ See [AtlAdvise](http://msdn.microsoft.com/Library/625a2f03-6b7f-4761-be5d-d2871d1d3254) for more information.  
   
 ##  <a name="ccomptrbase__attach"></a>  CComPtrBase::Attach  
  Call this method to take ownership of an existing pointer.  
@@ -367,7 +366,7 @@ HRESULT SetSite(IUnknown* punkParent) throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This method calls [AtlSetChildSite](../Topic/AtlSetChildSite.md).  
+ This method calls [AtlSetChildSite](http://msdn.microsoft.com/Library/2a8ece19-6bfd-4e89-9d1d-e5a78f95e2df).  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

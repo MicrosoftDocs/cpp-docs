@@ -2,7 +2,6 @@
 title: "deque Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,8 +44,7 @@ Arranges elements of a given type in a linear arrangement and, like a vector, en
 ## Syntax  
   
 ```unstlib  
-template <class Type,   
-    class Allocator =allocator<Type>>  
+template <class Type, class Allocator =allocator<Type>>  
 class deque  
 ```  
   
@@ -105,14 +103,14 @@ class deque
 |[at](#deque__at)|Returns a reference to the element at a specified location in the `deque`.|  
 |[back](#deque__back)|Returns a reference to the last element of the `deque`.|  
 |[begin](#deque__begin)|Returns a random-access  iterator addressing the first element in the `deque`.|  
-|[deque::cbegin](#deque__cbegin)|Returns a const iterator to the first element in the `deque`.|  
-|[deque::cend](#deque__cend)|Returns a random-access `const` iterator that points just beyond the end of the `deque`.|  
+|[cbegin](#deque__cbegin)|Returns a const iterator to the first element in the `deque`.|  
+|[cend](#deque__cend)|Returns a random-access `const` iterator that points just beyond the end of the `deque`.|  
 |[clear](#deque__clear)|Erases all the elements of a `deque`.|  
-|[deque::crbegin](#deque__crbegin)|Returns a random-access const iterator to the first element in a `deque` viewed in reverse order.|  
-|[deque::crend](#deque__crend)|Returns a random-access const iterator to the first element in a `deque` viewed in reverse order.|  
-|[deque::emplace](#deque__emplace)|Inserts an element constructed in place into the `deque` at a specified position.|  
-|[deque::emplace_back](#deque__emplace_back)|Adds an element constructed in place to the end of the `deque`.|  
-|[deque::emplace_front](#deque__emplace_front)|Adds an element constructed in place to the start of the `deque`.|  
+|[crbegin](#deque__crbegin)|Returns a random-access const iterator to the first element in a `deque` viewed in reverse order.|  
+|[crend](#deque__crend)|Returns a random-access const iterator to the first element in a `deque` viewed in reverse order.|  
+|[emplace](#deque__emplace)|Inserts an element constructed in place into the `deque` at a specified position.|  
+|[emplace_back](#deque__emplace_back)|Adds an element constructed in place to the end of the `deque`.|  
+|[emplace_front](#deque__emplace_front)|Adds an element constructed in place to the start of the `deque`.|  
 |[empty](#deque__empty)|Returns `true` if the `deque` contains zero elements, and `false` if it contains one or more elements.|  
 |[end](#deque__end)|Returns a random-access iterator that points just beyond the end of the `deque`.|  
 |[erase](#deque__erase)|Removes an element or a range of elements in a `deque` from specified positions.|  
@@ -127,7 +125,7 @@ class deque
 |[rbegin](#deque__rbegin)|Returns a random-access iterator to the first element in a reversed `deque`.|  
 |[rend](#deque__rend)|Returns a random-access iterator that points just beyond the last element in a reversed `deque`.|  
 |[resize](#deque__resize)|Specifies a new size for a `deque`.|  
-|[deque::shrink_to_fit](#deque__shrink_to_fit)|Discards excess capacity.|  
+|[shrink_to_fit](#deque__shrink_to_fit)|Discards excess capacity.|  
 |[size](#deque__size)|Returns the number of elements in the `deque`.|  
 |[swap](#deque__swap)|Exchanges the elements of two `deque`s.|  
   
@@ -136,7 +134,7 @@ class deque
 |||  
 |-|-|  
 |[operator&#91;&#93;](#deque__operator_at)|Returns a reference to the `deque` element at a specified position.|  
-|[deque::operator=](#deque__operator_eq)|Replaces the elements of the `deque` with a copy of another `deque`.|  
+|[operator=](#deque__operator_eq)|Replaces the elements of the `deque` with a copy of another `deque`.|  
   
 ## Requirements  
  **Header**: \<deque>  
@@ -167,9 +165,7 @@ void assign(
     size_type Count,  
     const Type& Val);
 
-void assign(
-    initializer_list<Type>  
-IList);
+void assign(initializer_list<Type> IList);
 ```  
   
 ### Parameters  
@@ -193,7 +189,7 @@ IList);
   
 ### Example  
   
-```  
+```cpp 
 // deque_assign.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -251,24 +247,24 @@ d1 = 5678c1 =102030c1 =5060c1 =4444444
  Returns a reference to the element at a specified location in the deque.  
   
 ```  
-reference at(size_type _Pos);
+reference at(size_type pos);
 
-const_reference at(size_type _Pos) const;
+const_reference at(size_type pos) const;
 ```  
   
 ### Parameters  
- `_Pos`  
+ `pos`  
  The subscript (or position number) of the element to reference in the deque.  
   
 ### Return Value  
- If `_Pos` is greater than the size of the deque, **at** throws an exception.  
+ If `pos` is greater than the size of the deque, **at** throws an exception.  
   
 ### Return Value  
  If the return value of **at** is assigned to a `const_reference`, the deque object cannot be modified. If the return value of **at** is assigned to a **reference**, the deque object can be modified.  
   
 ### Example  
   
-```  
+```cpp 
 // deque_at.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -299,7 +295,6 @@ The second element is 20
   
 ```  
 reference back();
-
 const_reference back() const;
 ```  
   
@@ -313,7 +308,7 @@ const_reference back() const;
   
 ### Example  
   
-```  
+```cpp 
 // deque_back.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -346,7 +341,6 @@ The next-to-last integer of c1 is 10
   
 ```  
 const_iterator begin() const;
-
 iterator begin();
 ```  
   
@@ -358,7 +352,7 @@ iterator begin();
   
 ### Example  
   
-```  
+```cpp  
 // deque_begin.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -450,7 +444,7 @@ void clear();
   
 ### Example  
   
-```  
+```cpp 
 // deque_clear.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -492,7 +486,7 @@ typedef implementation-defined const_iterator;
 ##  <a name="deque__const_pointer"></a>  deque::const_pointer  
  Provides a pointer to a `const` element in a deque.  
   
-```unstlib  
+```
 typedef typename Allocator::const_pointer const_pointer;  
 ```  
   
@@ -511,7 +505,7 @@ typedef typename Allocator::const_reference const_reference;
   
 ### Example  
   
-```  
+```cpp
 // deque_const_ref.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -569,7 +563,7 @@ const_reverse_iterator crbegin() const;
   
 ### Example  
   
-```  
+```cpp 
 // deque_crbegin.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -621,7 +615,7 @@ const_reverse_iterator crend() const;
   
 ### Example  
   
-```  
+```cpp 
 // deque_crend.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -652,39 +646,27 @@ int main( )
 ```  
 deque();
 
-explicit deque(
-    const Allocator& Al);
-
-explicit deque(
-    size_type Count);
-
-deque(
-    size_type Count,  
-    const Type& Val);
+explicit deque(const Allocator& Al);
+explicit deque(size_type Count);
+deque(size_type Count, const Type& Val);
 
 deque(
     size_type Count,  
     const Type& Val,  
     const Allocator& Al);
 
-deque(
-    const deque& Right);
+deque(const deque& Right);
+
+template <class InputIterator>  
+deque(InputIterator First,  InputIterator Last);
 
 template <class InputIterator>  
 deque(
- InputIterator First,  
-    InputIterator Last);
+   InputIterator First,  
+   InputIterator Last,  
+   const Allocator& Al);
 
-template <class InputIterator>  
-deque(
- InputIterator First,  
-    InputIterator Last,  
-    const Allocator& Al);
-
-deque(
-    initializer_list<value_type>  
-IList,  
-    const Allocator& Al);
+deque(initializer_list<value_type> IList, const Allocator& Al);
 ```  
   
 ### Parameters  
@@ -721,7 +703,7 @@ IList,
   
 ### Example  
   
-```  
+```cpp 
 / compile with: /EHsc  
 #include <deque>  
 #include <iostream>  
@@ -935,7 +917,7 @@ typedef typename Allocator::difference_type difference_type;
   
 ### Example  
   
-```  
+```cpp 
 // deque_diff_type.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -1001,7 +983,7 @@ iterator emplace(
   
 ### Example  
   
-```  
+```cpp 
 // deque_emplace.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -1057,7 +1039,7 @@ void emplace_back(Type&& val);
   
 ### Example  
   
-```  
+```cpp 
 // deque_emplace_back.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -1107,7 +1089,7 @@ void emplace_front(Type&& val);
   
 ### Example  
   
-```  
+```cpp 
 // deque_emplace_front.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -1153,7 +1135,7 @@ bool empty() const;
   
 ### Example  
   
-```  
+```cpp 
 // deque_empty.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -1193,7 +1175,7 @@ iterator end();
   
 ### Example  
   
-```  
+```cpp 
 // deque_end.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -1262,7 +1244,7 @@ iterator erase(iterator first, iterator last);
   
 ### Example  
   
-```  
+```cpp 
 // deque_erase.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -1323,7 +1305,7 @@ const_reference front() const;
   
 ### Example  
   
-```  
+```cpp 
 // deque_front.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -1366,7 +1348,7 @@ Allocator get_allocator() const;
   
 ### Example  
   
-```  
+```cpp 
 // deque_get_allocator.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -1458,7 +1440,7 @@ size_type max_size() const;
   
 ### Example  
   
-```  
+```cpp 
 // deque_max_size.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -1479,13 +1461,13 @@ int main( )
  Returns a reference to the deque element at a specified position.  
   
 ```  
-reference operator[](size_type _Pos);
+reference operator[](size_type pos);
 
-const_reference operator[](size_type _Pos) const;
+const_reference operator[](size_type pos) const;
 ```  
   
 ### Parameters  
- `_Pos`  
+ `pos`  
  The position of the deque element to be referenced.  
   
 ### Return Value  
@@ -1498,7 +1480,7 @@ const_reference operator[](size_type _Pos) const;
   
 ### Example  
   
-```  
+```cpp 
 // deque_op_ref.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -1546,7 +1528,7 @@ deque& operator=(deque&& right);
   
 ### Example  
   
-```  
+```cpp 
 // deque_operator_as.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -1619,7 +1601,7 @@ void pop_back();
   
 ### Example  
   
-```  
+```cpp 
 // deque_pop_back.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -1659,7 +1641,7 @@ void pop_front();
   
 ### Example  
   
-```  
+```cpp 
 // deque_pop_front.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -1727,7 +1709,7 @@ void push_front(Type&& val);
   
 ### Example  
   
-```  
+```cpp 
 // deque_push_front.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -1783,7 +1765,7 @@ reverse_iterator rbegin();
   
 ### Example  
   
-```  
+```cpp 
 // deque_rbegin.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -1844,7 +1826,7 @@ typedef typename Allocator::reference reference;
   
 ### Example  
   
-```  
+```cpp 
 // deque_reference.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -1893,7 +1875,7 @@ reverse_iterator rend();
   
 ### Example  
   
-```  
+```cpp 
 // deque_rend.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -1979,7 +1961,7 @@ void resize(size_type _Newsize, Type val);
   
 ### Example  
   
-```  
+```cpp 
 // deque_resize.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -2042,7 +2024,7 @@ void shrink_to_fit();
   
 ### Example  
   
-```  
+```cpp 
 // deque_shrink_to_fit.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -2081,7 +2063,7 @@ size_type size() const;
   
 ### Example  
   
-```  
+```cpp 
 // deque_size.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -2137,7 +2119,7 @@ void swap(deque<Type, Allocator>& left, deque<Type, Allocator>& right);
   
 ### Example  
   
-```  
+```cpp 
 // deque_swap.cpp  
 // compile with: /EHsc  
 #include <deque>  
@@ -2202,7 +2184,7 @@ typedef typename Allocator::value_type value_type;
   
 ### Example  
   
-```  
+```cpp 
 // deque_value_type.cpp  
 // compile with: /EHsc  
 #include <deque>  

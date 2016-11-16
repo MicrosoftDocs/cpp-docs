@@ -2,7 +2,6 @@
 title: "basic_streambuf Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -244,7 +243,7 @@ locale getloc() const;
   
 ### Example  
   
-```  
+```cpp  
 // basic_streambuf_getloc.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -299,7 +298,7 @@ streamsize in_avail();
   
 ### Example  
   
-```  
+```cpp  
 // basic_streambuf_in_avail.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -544,7 +543,7 @@ int_type sbumpc();
   
 ### Example  
   
-```  
+```cpp  
 // basic_streambuf_sbumpc.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -700,7 +699,7 @@ int_type sgetc();
   
 ### Example  
   
-```  
+```cpp  
 // basic_streambuf_sgetc.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -744,7 +743,7 @@ streamsize sgetn(
   
 ### Example  
   
-```  
+```cpp  
 // basic_streambuf_sgetn.cpp  
 // compile with: /EHsc /W3  
 #include <iostream>  
@@ -794,7 +793,7 @@ int_type snextc();
   
 ### Example  
   
-```  
+```cpp  
 // basic_streambuf_snextc.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -838,7 +837,7 @@ int_type sputbackc(char_type _Ch);
   
 ### Example  
   
-```  
+```cpp  
 // basic_streambuf_sputbackc.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -882,7 +881,7 @@ int_type sputc(char_type _Ch);
   
 ### Example  
   
-```  
+```cpp  
 // basic_streambuf_sputc.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -924,7 +923,7 @@ streamsize sputn(const char_type* ptr, streamsize count);
   
 ### Example  
   
-```  
+```cpp  
 // basic_streambuf_sputn.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -956,7 +955,7 @@ void stossc();
   
 ### Example  
   
-```  
+```cpp  
 // basic_streambuf_stossc.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -988,7 +987,7 @@ int_type sungetc();
   
 ### Example  
   
-```  
+```cpp  
 // basic_streambuf_sungetc.cpp  
 // compile with: /EHsc  
 #include <iostream>  

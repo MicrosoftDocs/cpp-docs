@@ -2,7 +2,6 @@
 title: "tuple Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -75,7 +74,7 @@ class tuple {
   
 ## Example  
   
-```  
+```cpp  
 // tuple.cpp  
 // compile with: /EHsc  
   
@@ -177,7 +176,7 @@ tuple& operator=(pair<U1, U2>&& right);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__tuple__tuple_operator_as.cpp   
 // compile with: /EHsc   
 #include <tuple>   
@@ -301,7 +300,7 @@ constexpr tuple(pair<U1, U2>&&);
   
 ### Example  
   
-```  
+```cpp  
 // std_tr1__tuple__tuple_tuple.cpp   
 // compile with: /EHsc   
 #include <tuple>   
