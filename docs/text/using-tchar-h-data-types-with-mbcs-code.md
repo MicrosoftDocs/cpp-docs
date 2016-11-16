@@ -9,7 +9,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - ""tchar.h""
+  - "tchar.h"
   - "TCHAR"
 dev_langs: 
   - "C++"

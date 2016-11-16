@@ -9,7 +9,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - ""stdafx.h""
   - "stdafx.h"
 dev_langs: 
   - "C++"
