@@ -61,7 +61,7 @@ This topic explains the RFX process. This is an advanced topic covering:
  This section describes the sequence of RFX events as a recordset object is opened and as you add, update, and delete records. The table [Sequence of RFX Operations During Recordset Open](#_core_sequence_of_rfx_operations_during_recordset_open) and the table [Sequence of RFX Operations During Scrolling](#_core_sequence_of_rfx_operations_during_scrolling) in this topic show the process as RFX processes a **Move** command in the recordset and as RFX manages an update. During these processes, [DoFieldExchange](../Topic/CRecordset::DoFieldExchange.md) is called to perform many different operations. The **m_nOperation** data member of the [CFieldExchange](../../mfc/reference/cfieldexchange-class.md) object determines which operation is requested. You might find it helpful to read [Recordset: How Recordsets Select Records (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md) and [Recordset: How Recordsets Update Records (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) before you read this material.  
   
 ###  <a name="_mfc_rfx.3a_.initial_binding_of_columns_and_parameters"></a> RFX: Initial Binding of Columns and Parameters  
- The following RFX activities occur, in the order shown, when you call a recordset object's [Open](../Topic/CRecordset::Open.md) member function:  
+ The following RFX activities occur, in the order shown, when you call a recordset object's [Open](../mfc/reference/crecordset-class.md#crecordset__open) member function:  
   
 -   If the recordset has parameter data members, the framework calls `DoFieldExchange` to bind the parameters to parameter placeholders in the recordset's SQL statement string. A data type-dependent representation of the value of the parameter is used for each placeholder found in the **SELECT** statement. This occurs after the SQL statement is prepared but before it is executed. For information about statement preparation, see the **::SQLPrepare** function in the ODBC *Programmer's Reference*.  
   
@@ -111,7 +111,7 @@ This topic explains the RFX process. This is an advanced topic covering:
   
 3.  You directly set the values of field data members whose values you want to edit or that you want filled for a new record. This can include calling `SetFieldNull`.  
   
-4.  Your call to [Update](../Topic/CRecordset::Update.md) checks for changed field data members, as described in step 2 (see the table [Sequence of RFX Operations During Scrolling](#_core_sequence_of_rfx_operations_during_scrolling)). If none have changed, **Update** returns 0. If some field data members have changed, **Update** prepares and executes a SQL **INSERT** statement that contains values for all updated fields in the record.  
+4.  Your call to [Update](../mfc/reference/crecordset-class.md#crecordset__update) checks for changed field data members, as described in step 2 (see the table [Sequence of RFX Operations During Scrolling](#_core_sequence_of_rfx_operations_during_scrolling)). If none have changed, **Update** returns 0. If some field data members have changed, **Update** prepares and executes a SQL **INSERT** statement that contains values for all updated fields in the record.  
   
 5.  For `AddNew`, **Update** concludes by restoring the previously stored values of the record that was current before the `AddNew` call. For **Edit**, the new, edited values remain in place.  
   

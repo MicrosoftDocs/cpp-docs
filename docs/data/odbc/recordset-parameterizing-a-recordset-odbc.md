@@ -64,7 +64,7 @@ This topic applies to the MFC ODBC classes.
   
 -   Passing run-time arguments to a predefined query.  
   
-     To pass parameters to a stored procedure, you must specify a complete custom ODBC **CALL** statement — with parameter placeholders — when you call **Open**, overriding the recordset's default SQL statement. For more information, see [CRecordset::Open](../Topic/CRecordset::Open.md) in the *Class Library Reference* and [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordset’s-sql-statement-odbc.md) and [Recordset: Declaring a Class for a Predefined Query (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md).  
+     To pass parameters to a stored procedure, you must specify a complete custom ODBC **CALL** statement — with parameter placeholders — when you call **Open**, overriding the recordset's default SQL statement. For more information, see [CRecordset::Open](../mfc/reference/crecordset-class.md#crecordset__open) in the *Class Library Reference* and [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordset’s-sql-statement-odbc.md) and [Recordset: Declaring a Class for a Predefined Query (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md).  
   
 -   Efficiently performing numerous requeries with different parameter information.  
   
@@ -145,13 +145,13 @@ This topic applies to the MFC ODBC classes.
   
 6.  When you write the code that creates a recordset object of this class, place a "?" (question mark) symbol in each place in your SQL statement strings where a parameter is to be replaced.  
   
-     At run time, "?" placeholders are filled, in order, by the parameter values you pass. The first parameter data member set after the [SetFieldType](../Topic/CFieldExchange::SetFieldType.md) call replaces the first "?" in the SQL string, the second parameter data member replaces the second "?", and so on.  
+     At run time, "?" placeholders are filled, in order, by the parameter values you pass. The first parameter data member set after the [SetFieldType](../mfc/reference/cfieldexchange-class.md#cfieldexchange__setfieldtype) call replaces the first "?" in the SQL string, the second parameter data member replaces the second "?", and so on.  
   
 > [!NOTE]
 >  Parameter order is important: the order of RFX calls for parameters in your `DoFieldExchange` function must match the order of the parameter placeholders in your SQL string.  
   
 > [!TIP]
->  The most likely string to work with is the string you specify (if any) for the class's [m_strFilter](../Topic/CRecordset::m_strFilter.md) data member, but some ODBC drivers might allow parameters in other SQL clauses.  
+>  The most likely string to work with is the string you specify (if any) for the class's [m_strFilter](../mfc/reference/crecordset-class.md#crecordset__m_strfilter) data member, but some ODBC drivers might allow parameters in other SQL clauses.  
   
 ##  <a name="_core_passing_parameter_values_at_run_time"></a> Passing Parameter Values at Run Time  
  You must specify parameter values before you call **Open** (for a new recordset object) or **Requery** (for an existing one).  
@@ -188,7 +188,7 @@ if( !rsStudents.Requery( ) )
  The recordset contains records for those students whose records meet the conditions specified by the filter, which was constructed from run-time parameters. In this case, the recordset contains records for all senior students.  
   
 > [!NOTE]
->  If needed, you can set the value of a parameter data member to Null, using [SetParamNull](../Topic/CRecordset::SetParamNull.md). You can likewise check whether a parameter data member is Null, using [IsFieldNull](../Topic/CRecordset::IsFieldNull.md).  
+>  If needed, you can set the value of a parameter data member to Null, using [SetParamNull](../mfc/reference/crecordset-class.md#crecordset__setparamnull). You can likewise check whether a parameter data member is Null, using [IsFieldNull](../mfc/reference/crecordset-class.md#crecordset__isfieldnull).  
   
 ## See Also  
  [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)   

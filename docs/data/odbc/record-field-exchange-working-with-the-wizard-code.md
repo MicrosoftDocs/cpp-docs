@@ -96,7 +96,7 @@ public:
  Also, notice that the wizard overrides the `DoFieldExchange` member function of class `CRecordset`.  
   
 ##  <a name="_core_the_dofieldexchange_override"></a> DoFieldExchange Override  
- [DoFieldExchange](../Topic/CRecordset::DoFieldExchange.md) is the heart of RFX. The framework calls `DoFieldExchange` any time it needs to move data either from data source to recordset or from recordset to data source. `DoFieldExchange` also supports obtaining information about field data members through the [IsFieldDirty](../Topic/CRecordset::IsFieldDirty.md) and [IsFieldNull](../Topic/CRecordset::IsFieldNull.md) member functions.  
+ [DoFieldExchange](../Topic/CRecordset::DoFieldExchange.md) is the heart of RFX. The framework calls `DoFieldExchange` any time it needs to move data either from data source to recordset or from recordset to data source. `DoFieldExchange` also supports obtaining information about field data members through the [IsFieldDirty](../mfc/reference/crecordset-class.md#crecordset__isfielddirty) and [IsFieldNull](../mfc/reference/crecordset-class.md#crecordset__isfieldnull) member functions.  
   
  The following `DoFieldExchange` override is for the `CSections` class. The wizard writes the function in the .cpp file for your recordset class.  
   
@@ -116,7 +116,7 @@ void CSections::DoFieldExchange(CFieldExchange* pFX)
   
 -   This section of the function is called the field map.  
   
--   A call to `CFieldExchange::SetFieldType`, through the `pFX` pointer. This call specifies that all RFX function calls up to the end of `DoFieldExchange` or the next call to `SetFieldType` are output columns. For more information, see [CFieldExchange::SetFieldType](../Topic/CFieldExchange::SetFieldType.md).  
+-   A call to `CFieldExchange::SetFieldType`, through the `pFX` pointer. This call specifies that all RFX function calls up to the end of `DoFieldExchange` or the next call to `SetFieldType` are output columns. For more information, see [CFieldExchange::SetFieldType](../mfc/reference/cfieldexchange-class.md#cfieldexchange__setfieldtype).  
   
 -   Several calls to the `RFX_Text` global function — one per field data member (all of which are `CString` variables in the example). These calls specify the relationship between a column name on the data source and a field data member. The RFX functions do the actual data transfer. The class library supplies RFX functions for all the common data types. For more information about RFX functions, see [Record Field Exchange: Using the RFX Functions](../../data/odbc/record-field-exchange-using-the-rfx-functions.md).  
   
@@ -130,7 +130,7 @@ void CSections::DoFieldExchange(CFieldExchange* pFX)
   
 -   An initialization for each field data member  
   
--   An initialization for the [m_nFields](../Topic/CRecordset::m_nFields.md) data member, which contains the number of field data members  
+-   An initialization for the [m_nFields](../mfc/reference/crecordset-class.md#crecordset__m_n_fields) data member, which contains the number of field data members  
   
  The constructor for the `CSections` recordset example looks like this:  
   
@@ -154,7 +154,7 @@ CSections::CSections(CDatabase* pdb)
 m_nFields += 3;  
 ```  
   
- This is the code for adding three new fields. If you add any parameter data members, you must initialize the [m_nParams](../Topic/CRecordset::m_nParams.md) data member, which contains the number of parameter data members. Put the `m_nParams` initialization outside the brackets.  
+ This is the code for adding three new fields. If you add any parameter data members, you must initialize the [m_nParams](../mfc/reference/crecordset-class.md#crecordset__m_n_params) data member, which contains the number of parameter data members. Put the `m_nParams` initialization outside the brackets.  
   
 ## See Also  
  [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)

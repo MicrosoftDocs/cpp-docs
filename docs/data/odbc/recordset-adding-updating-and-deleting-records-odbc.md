@@ -86,7 +86,7 @@ This topic applies to the MFC ODBC classes.
   
      `CanUpdate` returns a nonzero value if the recordset is updateable.  
   
- By default, recordsets are fully updateable (you can perform `AddNew`, **Edit**, and **Delete** operations). But you can also use the [appendOnly](../Topic/CRecordset::Open.md) option to open updateable recordsets. A recordset opened this way allows only the addition of new records with `AddNew`. You cannot edit or delete existing records. You can test whether a recordset is open only for appending by calling the [CanAppend](../Topic/CRecordset::CanAppend.md) member function. `CanAppend` returns a nonzero value if the recordset is either fully updateable or open only for appending.  
+ By default, recordsets are fully updateable (you can perform `AddNew`, **Edit**, and **Delete** operations). But you can also use the [appendOnly](../mfc/reference/crecordset-class.md#crecordset__open) option to open updateable recordsets. A recordset opened this way allows only the addition of new records with `AddNew`. You cannot edit or delete existing records. You can test whether a recordset is open only for appending by calling the [CanAppend](../Topic/CRecordset::CanAppend.md) member function. `CanAppend` returns a nonzero value if the recordset is either fully updateable or open only for appending.  
   
  The following code shows how you might use `CanUpdate` for a recordset object called `rsStudentSet`:  
   
@@ -112,7 +112,7 @@ if( !rsStudentSet.CanUpdate( ) )
   
 2.  Call the recordset object's [AddNew](../Topic/CRecordset::AddNew.md) member function.  
   
-     `AddNew` prepares the recordset to act as an edit buffer. All field data members are set to the special value Null and marked as unchanged so only changed (dirty) values are written to the data source when you call [Update](../Topic/CRecordset::Update.md).  
+     `AddNew` prepares the recordset to act as an edit buffer. All field data members are set to the special value Null and marked as unchanged so only changed (dirty) values are written to the data source when you call [Update](../mfc/reference/crecordset-class.md#crecordset__update).  
   
 3.  Set the values of the new record's field data members.  
   
@@ -156,7 +156,7 @@ if( !rsStudent.Update( ) )
   
 3.  Call the recordset object's [Edit](../Topic/CRecordset::Edit.md) member function.  
   
-     **Edit** prepares the recordset to act as an edit buffer. All field data members are marked so that the recordset can tell later whether they were changed. The new values for changed field data members are written to the data source when you call [Update](../Topic/CRecordset::Update.md).  
+     **Edit** prepares the recordset to act as an edit buffer. All field data members are marked so that the recordset can tell later whether they were changed. The new values for changed field data members are written to the data source when you call [Update](../mfc/reference/crecordset-class.md#crecordset__update).  
   
 4.  Set the values of the new record's field data members.  
   
@@ -204,7 +204,7 @@ if( !rsStudent.Update( ) )
 4.  Scroll to another record.  
   
     > [!NOTE]
-    >  When moving through the recordset, deleted records might not be skipped. For more information, see the [IsDeleted](../Topic/CRecordset::IsDeleted.md) member function.  
+    >  When moving through the recordset, deleted records might not be skipped. For more information, see the [IsDeleted](../mfc/reference/crecordset-class.md#crecordset__isdeleted) member function.  
   
  The following example shows a **Delete** operation. It assumes that the user has moved to a record that the user wants to delete. After **Delete** is called, it is important to move to a new record.  
   
