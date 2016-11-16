@@ -1,0 +1,49 @@
+---
+title: "Method declaration statements must be the first on a logical line | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc32009"
+  - "vbc32009"
+helpviewer_keywords: 
+  - "BC32009"
+ms.assetid: 77275387-5584-4419-aee3-a1b600f0412d
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Method declaration statements must be the first on a logical line
+A `Function` or `Sub` statement follows a colon (:) statement separator. `Function` or `Sub` must be the only statement on its source line.  
+  
+ **Error ID:** BC32009  
+  
+### To correct this error  
+  
+-   Separate the multiple statements onto different lines.  
+  
+## See Also  
+ [How to: Break and Combine Statements in Code](http://msdn.microsoft.com/Library/dea01dad-a8ac-484a-bb3a-8c45a1b1eccc)   
+ [Sub Statement](/dotnet/articles/visual-basic/language-reference/statements/sub-statement)   
+ [Function Statement](/dotnet/articles/visual-basic/language-reference/statements/function-statement)

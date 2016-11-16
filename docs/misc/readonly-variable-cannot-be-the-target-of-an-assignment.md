@@ -1,0 +1,48 @@
+---
+title: "&#39;ReadOnly&#39; variable cannot be the target of an assignment | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30064"
+  - "bc30064"
+helpviewer_keywords: 
+  - "BC30064"
+ms.assetid: 17e0751d-4c22-40b2-bb07-cb5c845dbc30
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# &#39;ReadOnly&#39; variable cannot be the target of an assignment
+A `ReadOnly` property has been found in a context that assigns a value to it. Only writable variables, properties, and array elements can have values assigned to them during execution.  
+  
+ **Error ID:** BC30064  
+  
+### To correct this error  
+  
+-   Remove the `ReadOnly` keyword from the `Dim` statement declaring the variable, or remove the statement that assigns it a value.  
+  
+## See Also  
+ [ReadOnly](/dotnet/articles/visual-basic/language-reference/modifiers/readonly)   
+ [Dim Statement](/dotnet/articles/visual-basic/language-reference/statements/dim-statement)

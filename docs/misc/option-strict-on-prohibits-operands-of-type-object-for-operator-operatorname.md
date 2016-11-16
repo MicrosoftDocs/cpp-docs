@@ -1,0 +1,49 @@
+---
+title: "Option Strict On prohibits operands of type Object for operator &#39;&lt;operatorname&gt;&#39; | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc30038"
+  - "vbc30038"
+helpviewer_keywords: 
+  - "BC30038"
+ms.assetid: eb047d36-1fb4-460d-ae98-c76f31a89bed
+caps.latest.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Option Strict On prohibits operands of type Object for operator &#39;&lt;operatorname&gt;&#39;
+The only operators defined for object variables are `Is` and `TypeOf...Is`. When `Option Strict` is `On`, all operands must be of data types defined for the given operator.  
+  
+ **Error ID:** BC30038  
+  
+### To correct this error  
+  
+-   Use the appropriate type conversion functions, such as `CInt` or `CStr`, to convert the operands to data types defined for the operator.  
+  
+## See Also  
+ [Is Operator](/dotnet/articles/visual-basic/language-reference/operators/is-operator)   
+ [Comparison Operators in Visual Basic](/dotnet/articles/visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators)   
+ [Type Conversion Functions](/dotnet/articles/visual-basic/language-reference/functions/type-conversion-functions)

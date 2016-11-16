@@ -1,0 +1,50 @@
+---
+title: "XML comment tag &#39;include&#39; must have a &#39;&lt;attribute&gt;&#39; attribute | Microsoft Docs"
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc42310"
+  - "bc42310"
+helpviewer_keywords: 
+  - "BC42310"
+ms.assetid: b3c377d6-401a-477e-8f2d-b2881f2818a9
+caps.latest.revision: 11
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# XML comment tag &#39;include&#39; must have a &#39;&lt;attribute&gt;&#39; attribute
+XML comment tag 'include' must have a \<attribute> attribute. XML comment will be ignored.  
+  
+ A `file` or `path` attribute, passed to the `<`include`>` tag, was missing or incomplete.  
+  
+ **Error ID:** BC42310  
+  
+### To correct this error  
+  
+-   Add or complete the required attribute to the \<include> tag.  
+  
+## See Also  
+ [\<include>](http://msdn.microsoft.com/Library/ba8e9173-82cd-460b-8938-a075a2dfb36d)   
+ [Documenting Your Code with XML](/dotnet/articles/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)
