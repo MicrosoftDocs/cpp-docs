@@ -49,11 +49,11 @@ Specify strict standards conformance mode to the compiler. Use this option to he
   
 You can use the **/permissive-** compiler option to specify strict standards-conformant compiler behavior. This option disables non-standard language extensions and permissive behaviors, and sets the [/Zc](../../build/reference/zc-conformance.md) compiler options for strict conformance. In the IDE, this option also makes the IntelliSense engine underline non-conformant code. 
 
-By default, the **/permissive-** option is not set. When the option is set, the compiler generates diagnostic errors or warnings when non-standard language constructs are detected in your code, including some common bugs in pre-C++11 code. 
+By default, the **/permissive-** option is not set. When the option is set, the compiler generates diagnostic errors or warnings when non-standard language constructs are detected in your code, including some common bugs in pre-C++11 code.  
 
 The **/permissive-** option sets the [/Zc:strictStrings](../../build/reference/zc-conformance.md) and [/Zc:rvalueCast](../../build/reference/zc-conformance.md) options to conformant behavior. They default to non-conforming behavior. You can pass specific /Zc options after **/permissive-** on the command line to override this behavior if needed.  
   
-Environment-specific extensions and language areas that the standard leaves up to the implementation are not affected by **/permissive-**. For example, the Microsoft-specific `__declspec`, calling convention and structured exception handling keywords, and compiler-specific pragma directives or attributes are not flagged by the compiler in **/permissive-** mode.
+Environment-specific extensions and language areas that the standard leaves up to the implementation are not affected by **/permissive-**. For example, the Microsoft-specific `__declspec`, calling convention and structured exception handling keywords, and compiler-specific pragma directives or attributes are not flagged by the compiler in **/permissive-** mode.  
   
 The **/permissive-** option uses the conformance support in the current compiler version to determine which language constructs are non-conformant. The option does not determine if your code is conformant to a specific version of the C++ standard. To restrict the compiler support to more closely match the C++14 standard, use the [/std:c++14](../../build/reference/std-specify-language-standard-version.md) option.  
 
