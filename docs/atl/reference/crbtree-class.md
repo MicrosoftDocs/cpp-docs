@@ -127,8 +127,8 @@ class CPair : public __POSITION
   
 |||  
 |-|-|  
-|[m_key](../Topic/CAtlMap::CPair::m_key.md)|The data member storing the key element.|  
-|[m_value](../Topic/CAtlMap::CPair::m_value.md)|The data member storing the value element.|  
+|[m_key](catlmap-class.md#cpair-class.md#m_key)|The data member storing the key element.|  
+|[m_value](catlmap-class.md#cpair-class.md#m_value)|The data member storing the value element.|  
   
 ##  <a name="crbtree___dtorcrbtree"></a>  CRBTree::~CRBTree  
  The destructor.  

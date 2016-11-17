@@ -57,15 +57,15 @@ template<class TLock> class CComCritSecLock
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCritSecLock::CComCritSecLock](../Topic/CComCritSecLock::CComCritSecLock.md)|The constructor.|  
-|[CComCritSecLock::~CComCritSecLock](../Topic/CComCritSecLock::~CComCritSecLock.md)|The destructor.|  
+|[CComCritSecLock::CComCritSecLock](ccomcritseclock-class.md#ccomcritseclock)|The constructor.|  
+|[CComCritSecLock::~CComCritSecLock](ccomcritseclock-class.md#~ccomcritseclock)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCritSecLock::Lock](../Topic/CComCritSecLock::Lock.md)|Call this method to lock the critical section object.|  
-|[CComCritSecLock::Unlock](../Topic/CComCritSecLock::Unlock.md)|Call this method to unlock the critical section object.|  
+|[CComCritSecLock::Lock](ccomcritseclock-class.md#lock)|Call this method to lock the critical section object.|  
+|[CComCritSecLock::Unlock](ccomcritseclock-class.md#unlock)|Call this method to unlock the critical section object.|  
   
 ## Remarks  
  Use this class to lock and unlock objects in a safer way than with the [CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md) or [CComAutoCriticalSection Class](../../atl/reference/ccomautocriticalsection-class.md).  

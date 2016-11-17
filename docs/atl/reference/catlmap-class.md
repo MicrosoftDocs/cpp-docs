@@ -123,7 +123,7 @@ template <typename   K,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlMap::operator](../Topic/CAtlMap::operator.md)|Replaces or adds a new element to the `CAtlMap`.|  
+|[CAtlMap::operator](catlmap-class.md#operator)|Replaces or adds a new element to the `CAtlMap`.|  
   
 ## Remarks  
  `CAtlMap` provides support for a mapping array of any given type, managing an unordered array of key elements and their associated values. Elements (consisting of a key and a value) are stored using a hashing algorithm, allowing a large amount of data to be efficiently stored and retrieved.  

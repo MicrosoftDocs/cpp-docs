@@ -43,7 +43,7 @@ The Active Template Library includes the following typedefs.
 |[_ATL_COM_MODULE](#_atl_com_module)|Defined as a typedef based on [_ATL_COM_MODULE70](../../atl/reference/atl-com-module70-structure.md).|  
 |[_ATL_MODULE](#_atl_module)|Defined as a typedef based on [_ATL_MODULE70](../../atl/reference/atl-module70-structure.md).|  
 |[_ATL_WIN_MODULE](#_atl_win_module)|Defined as a typedef based on [_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md)|  
-|[ATL_URL_PORT](../Topic/ATL_URL_PORT.md)|The type used by [CUrl](../../atl/reference/curl-class.md) for specifying a port number.|  
+|[ATL_URL_PORT](atl-typedefs.md#atl_url_port)|The type used by [CUrl](../../atl/reference/curl-class.md) for specifying a port number.|  
 |[CComDispatchDriver](#ccomdispatchdriver)|This class manages COM interface pointers.|  
 |[CComGlobalsThreadModel](#ccomglobalsthreadmodel)|Calls the appropriate thread model methods, regardless of the threading model being used.|  
 |[CComObjectThreadModel](#ccomobjectthreadmodel)|Calls the appropriate thread model methods, regardless of the threading model being used.|  
