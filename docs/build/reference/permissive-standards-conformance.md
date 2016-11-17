@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # /permissive- (Standards conformance)
-Specify strict standards conformance mode to the compiler. Use this option to help you identify and fix conformance issues in your code, to make it both more correct and more portable.  
+Specify standards conformance mode to the compiler. Use this option to help you identify and fix conformance issues in your code, to make it both more correct and more portable.  
   
 ## Syntax  
 ```
@@ -47,20 +47,20 @@ Specify strict standards conformance mode to the compiler. Use this option to he
 
 ## Remarks  
   
-You can use the **/permissive-** compiler option to specify strict standards-conformant compiler behavior. This option disables non-standard language extensions and permissive behaviors, and sets the [/Zc](../../build/reference/zc-conformance.md) compiler options for strict conformance. In the IDE, this option also makes the IntelliSense engine underline non-conformant code. 
+You can use the **/permissive-** compiler option to specify standards-conforming compiler behavior. This option disables permissive behaviors, and sets the [/Zc](../../build/reference/zc-conformance.md) compiler options for strict conformance. In the IDE, this option also makes the IntelliSense engine underline non-conforming code. 
 
 By default, the **/permissive-** option is not set. When the option is set, the compiler generates diagnostic errors or warnings when non-standard language constructs are detected in your code, including some common bugs in pre-C++11 code.  
 
-The **/permissive-** option sets the [/Zc:strictStrings](../../build/reference/zc-conformance.md) and [/Zc:rvalueCast](../../build/reference/zc-conformance.md) options to conformant behavior. They default to non-conforming behavior. You can pass specific /Zc options after **/permissive-** on the command line to override this behavior if needed.  
+The **/permissive-** option sets the [/Zc:strictStrings](../../build/reference/zc-conformance.md) and [/Zc:rvalueCast](../../build/reference/zc-conformance.md) options to conforming behavior. They default to non-conforming behavior. You can pass specific **/Zc** options after **/permissive-** on the command line to override this behavior.  
   
 Environment-specific extensions and language areas that the standard leaves up to the implementation are not affected by **/permissive-**. For example, the Microsoft-specific `__declspec`, calling convention and structured exception handling keywords, and compiler-specific pragma directives or attributes are not flagged by the compiler in **/permissive-** mode.  
   
-The **/permissive-** option uses the conformance support in the current compiler version to determine which language constructs are non-conformant. The option does not determine if your code is conformant to a specific version of the C++ standard. To restrict the compiler support to more closely match the C++14 standard, use the [/std:c++14](../../build/reference/std-specify-language-standard-version.md) option.  
+The **/permissive-** option uses the conformance support in the current compiler version to determine which language constructs are non-conforming. The option does not determine if your code conforms to a specific version of the C++ standard. To enable all implemented compiler support for the latest draft standard, use the [/std:latest](../../build/reference/std-specify-language-standard-version.md) option. To restrict the compiler support to more closely match the C++14 standard, use the [/std:c++14](../../build/reference/std-specify-language-standard-version.md) option, which is the default.  
 
-Not all C++11, C++14, or C++17 standard conformant code is supported by the Visual C++ compiler in Visual Studio 2017 RC. The **/permissive-** option may not detect issues regarding two-phase name lookup, binding a non-const reference to a temporary, treating copy init as direct init, allowing multiple user-defined conversions in initialization, or alternative tokens for logical operators, and other non-supported conformance areas. For more information about conformance issues in Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).  
+Not all C++11, C++14, or draft C++17 standards-conforming code is supported by the Visual C++ compiler in Visual Studio 2017 RC. The **/permissive-** option may not detect issues regarding two-phase name lookup, binding a non-const reference to a temporary, treating copy init as direct init, allowing multiple user-defined conversions in initialization, or alternative tokens for logical operators, and other non-supported conformance areas. For more information about conformance issues in Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).  
   
 ### How to fix your code
-Here are some examples of code that is detected as non-conformant when you use **/permissive-**, along with suggested ways to fix the issues.
+Here are some examples of code that is detected as non-conforming when you use **/permissive-**, along with suggested ways to fix the issues.
   
 #### Use default as an identifier in native code
 ```cpp  
@@ -110,8 +110,8 @@ union U
 {
     U()
         : i(1), j(1) // error C3442: Initializing multiple members of 
-                     // union: 'U::i' and 'U::j'
-                     // Remove all but one of the initializations to fix
+                     // union: 'U::i' and 'U::j'.
+                     // Remove all but one of the initializations to fix.
     {}
     int i;
     int j;
@@ -128,7 +128,7 @@ struct S {
 // void f(S *); // This declaration makes the hidden friend visible
 
 using type = void (*)(S *);
-type p = &f; // error C2065: 'f': undeclared identifier
+type p = &f; // error C2065: 'f': undeclared identifier.
 ```  
 ```cpp  
 // Example 2
