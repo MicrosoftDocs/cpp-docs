@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # InitInstance Member Function
-The Windows operating system allows you to run more than one copy, or "instance," of the same application. `WinMain` calls [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) every time a new instance of the application starts.  
+The Windows operating system allows you to run more than one copy, or "instance," of the same application. `WinMain` calls [InitInstance](../mfc/reference/cwinapp-class.md#cwinapp__initinstance) every time a new instance of the application starts.  
   
  The standard `InitInstance` implementation created by the MFC Application Wizard performs the following tasks:  
   

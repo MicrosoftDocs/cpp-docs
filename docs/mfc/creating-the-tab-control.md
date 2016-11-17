@@ -49,13 +49,13 @@ How the tab control is created depends on whether you are using the control in a
   
 3.  Map handler functions in the dialog class for any tab control notification messages you need to handle. For more information, see [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md).  
   
-4.  In [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog), set the styles for the `CTabCtrl`.  
+4.  In [OnInitDialog](../mfc/reference/cdialog-class.md#cdialog__oninitdialog), set the styles for the `CTabCtrl`.  
   
 ### To use CTabCtrl in a nondialog window  
   
 1.  Define the control in the view or window class.  
   
-2.  Call the control's [Create](../mfc/reference/ctabctrl-class.md#create) member function, possibly in [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate), possibly as early as the parent window's [OnCreate](../mfc/reference/cwnd-class.md#oncreate) handler function (if you're subclassing the control). Set the styles for the control.  
+2.  Call the control's [Create](../mfc/reference/ctabctrl-class.md#ctabctrl__create) member function, possibly in [OnInitialUpdate](../mfc/reference/cview-class.md#cview__oninitialupdate), possibly as early as the parent window's [OnCreate](../mfc/reference/cwnd-class.md#cwnd__oncreate) handler function (if you're subclassing the control). Set the styles for the control.  
   
  After the `CTabCtrl` object has been created, you can set or clear the following extended styles:  
   
@@ -66,7 +66,7 @@ How the tab control is created depends on whether you are using the control in a
     > [!NOTE]
     >  To receive the **TCN_GETOBJECT** notification, you must initialize the OLE libraries with a call to [AfxOleInit](../mfc/reference/ole-initialization.md#afxoleinit).  
   
- These styles can be retrieved and set, after the control has been created, with respective calls to the [GetExtendedStyle](../mfc/reference/ctabctrl-class.md#getextendedstyle) and [SetExtendedStyle](../mfc/reference/ctabctrl-class.md#setextendedstyle) member functions.  
+ These styles can be retrieved and set, after the control has been created, with respective calls to the [GetExtendedStyle](../mfc/reference/ctabctrl-class.md#ctabctrl__getextendedstyle) and [SetExtendedStyle](../mfc/reference/ctabctrl-class.md#ctabctrl__setextendedstyle) member functions.  
   
  For instance, set the **TCS_EX_FLATSEPARATORS** style with the following lines of code:  
   

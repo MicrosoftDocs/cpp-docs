@@ -58,7 +58,7 @@ This article describes the [CSocket programming model](#_core_the_csocket_progra
   
 2.  Use the object to create the underlying **SOCKET** handle.  
   
-     For a `CSocket` client object, you should normally use the default parameters to [Create](../mfc/reference/casyncsocket-class.md#create), unless you need a datagram socket. For a `CSocket` server object, you must specify a port in the **Create** call.  
+     For a `CSocket` client object, you should normally use the default parameters to [Create](../mfc/reference/casyncsocket-class.md#casyncsocket__create), unless you need a datagram socket. For a `CSocket` server object, you must specify a port in the **Create** call.  
   
     > [!NOTE]
     >  `CArchive` does not work with datagram sockets. If you want to use `CSocket` for a datagram socket, you must use the class as you would use `CAsyncSocket`, that is, without an archive. Because datagrams are unreliable (not guaranteed to arrive and may be repeated or out of sequence), they are not compatible with serialization through an archive. You expect a serialization operation to complete reliably and in sequence. If you try to use `CSocket` with a `CArchive` object for a datagram, an MFC assertion fails.  

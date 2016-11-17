@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Creating Modal Dialog Boxes
-To create a modal dialog box, call either of the two public constructors declared in [CDialog](../mfc/reference/cdialog-class.md). Next, call the dialog object's [DoModal](../mfc/reference/cdialog-class.md#domodal) member function to display the dialog box and manage interaction with it until the user chooses OK or Cancel. This management by `DoModal` is what makes the dialog box modal. For modal dialog boxes, `DoModal` loads the dialog resource.  
+To create a modal dialog box, call either of the two public constructors declared in [CDialog](../mfc/reference/cdialog-class.md). Next, call the dialog object's [DoModal](../mfc/reference/cdialog-class.md#cdialog__domodal) member function to display the dialog box and manage interaction with it until the user chooses OK or Cancel. This management by `DoModal` is what makes the dialog box modal. For modal dialog boxes, `DoModal` loads the dialog resource.  
   
 ## See Also  
  [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)

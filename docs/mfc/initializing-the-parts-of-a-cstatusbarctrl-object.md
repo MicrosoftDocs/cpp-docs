@@ -43,7 +43,7 @@ translation.priority.ht:
 # Initializing the Parts of a CStatusBarCtrl Object
 By default, a status bar displays status information using separate panes. These panes (also referred to as parts) can contain either a text string, an icon, or both.  
   
- Use [SetParts](../mfc/reference/cstatusbarctrl-class.md#setparts) to define how many parts, and the length, the status bar will have. After you have created the parts of the status bar, make calls to [SetText](../mfc/reference/cstatusbarctrl-class.md#settext) and [SetIcon](../mfc/reference/cstatusbarctrl-class.md#seticon) to set the text or icon for a specific part of the status bar. Once the part has been successfully set, the control is automatically redrawn.  
+ Use [SetParts](../mfc/reference/cstatusbarctrl-class.md#cstatusbarctrl__setparts) to define how many parts, and the length, the status bar will have. After you have created the parts of the status bar, make calls to [SetText](../mfc/reference/cstatusbarctrl-class.md#cstatusbarctrl__settext) and [SetIcon](../mfc/reference/cstatusbarctrl-class.md#cstatusbarctrl__seticon) to set the text or icon for a specific part of the status bar. Once the part has been successfully set, the control is automatically redrawn.  
   
  The following example initializes an existing `CStatusBarCtrl` object (`m_StatusBarCtrl`) with four panes and then sets an icon (IDI_ICON1) and some text in the second part.  
   
