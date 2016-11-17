@@ -62,7 +62,7 @@ When you create `BSTR`s and pass them between COM objects, you must take care in
   
 ## See Also  
  [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)   
- [CStringT::AllocSysString](../atl-mfc-shared/reference/cstringt-class.md#allocsysstring)   
+ [CStringT::AllocSysString](../atl-mfc-shared/reference/cstringt-class.md#cstringt__allocsysstring)   
  [SysAllocString](http://msdn.microsoft.com/en-us/9e0437a2-9b4a-4576-88b0-5cb9d08ca29b)   
  [SysFreeString](http://msdn.microsoft.com/en-us/8f230ee3-5f6e-4cb9-a910-9c90b754dcd3)
 

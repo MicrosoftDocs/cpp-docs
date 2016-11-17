@@ -153,7 +153,7 @@ CPair* Lookup(
  Variable that receives the looked-up value.  
   
 ### Return Value  
- The first form of the method returns true if the key is found, otherwise false. The second and third forms return a pointer to a [CPair](../Topic/CRBTree::CPair%20Class.md).  
+ The first form of the method returns true if the key is found, otherwise false. The second and third forms return a pointer to a [CPair](crbtree-class.md#crbtree__cpair_class).  
   
 ### Remarks  
  See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.  
