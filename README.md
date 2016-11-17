@@ -1,6 +1,6 @@
 # Visual Studio 2017 RC documentation for Visual C++
 
-Welcome! This repo contains source files for the work-in-progress Visual C++ RC technical documentation. The topics are published on the [Visual Studio documentation site](https://docs.microsoft.com/cpp-docs).
+Welcome! This repo contains source files for the work-in-progress Visual C++ RC technical documentation. The topics are published on the [Visual Studio documentation site](https://docs.microsoft.com/cpp).
 
 The documentation for Visual Basic and Visual C# are located in a separate repo at [http://github.com/dotnet/core-docs](http://github.com/dotnet/core-docs), and the Visual C++ documentation is located in the repo located at [http://github.com/Microsoft/cpp-docs](http://github.com/Microsoft/cpp-docs).
 
