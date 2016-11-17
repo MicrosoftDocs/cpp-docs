@@ -24,7 +24,7 @@ manager: "ghogen"
 |[interruption_point Function](#interruption_point_function)|[is_current_task_group_canceling Function](#is_current_task_group_canceling_function)|[make_choice Function](#make_choice_function)|  
 |[make_greedy_join Function](#make_greedy_join_function)|[make_join Function](#make_join_function)|[make_task Function](#make_task_function)|  
 |[parallel_buffered_sort Function](#parallel_buffered_sort_function)|[parallel_for Function](#parallel_for_function)|[parallel_for_each Function](#parallel_for_each_function)|  
-|[parallel_invoke Function](#parallel_invoke_function)|[parallel_radixsort Function](#parallel_radixsort_function)|[parallel_reduce Function](#parallel_reduce_function)|  
+|[parallel_invoke Function](#parallel_invoke)|[parallel_radixsort Function](#parallel_radixsort_function)|[parallel_reduce Function](#parallel_reduce_function)|  
 |[parallel_sort Function](#parallel_sort_function)|[parallel_transform Function](#parallel_transform_function)|[receive Function](#receive_function)|  
 |[run_with_cancellation_token Function](#run_with_cancellation_token_function)|[send Function](#send_function)|[set_ambient_scheduler Function (Concurrency Runtime)](#set_ambient_scheduler_function__concurrency_runtime_)|  
 |[set_task_execution_resources Function](#set_task_execution_resources_function)|[swap Function](#swap_function)|[task_from_exception Function (Concurrency Runtime)](#task_from_exception_function__concurrency_runtime_)|  
@@ -332,7 +332,7 @@ bool __cdecl is_current_task_group_canceling();
  `true` if the task group which is currently executing is canceling, `false` otherwise.  
   
 ### Remarks  
- For more information, see [Cancellation](../../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl).  
+ For more information, see [Cancellation](../../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
   
 ##  <a name="make_choice_function"></a>  make_choice Function  
  Constructs a `choice` messaging block from an optional `Scheduler` or `ScheduleGroup` and two or more input sources.  

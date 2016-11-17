@@ -75,6 +75,6 @@ fib(42): 267914296
 |[Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)|Describes the role of tasks and task groups in the PPL.|  
 |[Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)|Describes how to use parallel algorithms such as `parallel_for` and `parallel_for_each`.|  
 |[Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)|Describes the various parallel containers and objects that are provided by the PPL.|  
-|[Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl)|Explains how to cancel the work that is being performed by a parallel algorithm.|  
+|[Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation)|Explains how to cancel the work that is being performed by a parallel algorithm.|  
 |[Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)|Describes the Concurrency Runtime, which simplifies parallel programming, and contains links to related topics.|
 
