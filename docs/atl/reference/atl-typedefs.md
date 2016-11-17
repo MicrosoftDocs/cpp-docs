@@ -43,7 +43,7 @@ The Active Template Library includes the following typedefs.
 |[_ATL_COM_MODULE](#_atl_com_module)|Defined as a typedef based on [_ATL_COM_MODULE70](../../atl/reference/atl-com-module70-structure.md).|  
 |[_ATL_MODULE](#_atl_module)|Defined as a typedef based on [_ATL_MODULE70](../../atl/reference/atl-module70-structure.md).|  
 |[_ATL_WIN_MODULE](#_atl_win_module)|Defined as a typedef based on [_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md)|  
-|[ATL_URL_PORT](atl-typedefs.md#atl_url_port)|The type used by [CUrl](../../atl/reference/curl-class.md) for specifying a port number.|  
+|[ATL_URL_PORT](#atl_url_port)|The type used by [CUrl](../../atl/reference/curl-class.md) for specifying a port number.|  
 |[CComDispatchDriver](#ccomdispatchdriver)|This class manages COM interface pointers.|  
 |[CComGlobalsThreadModel](#ccomglobalsthreadmodel)|Calls the appropriate thread model methods, regardless of the threading model being used.|  
 |[CComObjectThreadModel](#ccomobjectthreadmodel)|Calls the appropriate thread model methods, regardless of the threading model being used.|  
@@ -52,7 +52,7 @@ The Active Template Library includes the following typedefs.
 |[CPathA](#cpatha)|A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CStringA`.|  
 |[CPathW](#cpathw)|A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CStringW`.|  
 |[CSimpleValArray](#csimplevalarray)|Represents an array for storing simple types.|  
-|[DefaultThreadTraits](../../atl/reference/atl-typedefs.md)|The default thread traits class.|  
+|[DefaultThreadTraits](../../atl/reference/defaultthreadtraits-class.md)|The default thread traits class.|  
 |[LPCURL](#lpcurl)|A pointer to a constant [CUrl](../../atl/reference/curl-class.md) object.|  
 |[LPURL](#lpurl)|A pointer to a [CUrl](../../atl/reference/curl-class.md) object.|  
   
@@ -221,6 +221,21 @@ typedef ATL::CPathT<CStringW> CPathW;
 ```   
 typedef const CUrl* LPCURL;   
 ```  
+
+##  <a name="defaultthreadtraits"></a>  DefaultThreadTraits
+The default thread traits class.
+
+### Syntax
+```  
+      #if defined(_MT)  
+   typedef CRTThreadTraits DefaultThreadTraits;  
+#else  
+   typedef Win32ThreadTraits DefaultThreadTraits;  
+#endif  
+```
+
+## Remarks
+If the current project uses the multithreaded CRT, DefaultThreadTraits is defined as CRTThreadTraits. Otherwise, Win32ThreadTraits is used.
   
 ##  <a name="lpurl"></a>  LPURL  
  A pointer to a [CUrl](../../atl/reference/curl-class.md) object.  

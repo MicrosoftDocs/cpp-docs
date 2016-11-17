@@ -43,7 +43,7 @@ Insert "Search Results" summary here.
  **View status**  
  Sets the appearance of the control within the container.  
   
--   **Opaque**: Sets the `VIEWSTATUS_OPAQUE` bit in the [VIEWSTATUS](http://msdn.microsoft.com/library/windows/desktop/ms687201) enumeration and draws the entire control rectangle passed to the [CComControlBase::OnDraw](../../atl/reference/ccomcontrolbase-class.md#ondraw) method. The control appears completely opaque, and none of the container shows behind the control boundaries.  
+-   **Opaque**: Sets the `VIEWSTATUS_OPAQUE` bit in the [VIEWSTATUS](http://msdn.microsoft.com/library/windows/desktop/ms687201) enumeration and draws the entire control rectangle passed to the [CComControlBase::OnDraw](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__ondraw) method. The control appears completely opaque, and none of the container shows behind the control boundaries.  
   
      This setting helps the container draw the control more quickly. If this option is not selected, the control can contain transparent parts.  
   
@@ -54,7 +54,7 @@ Insert "Search Results" summary here.
      This option is available only if the **Opaque** option is also selected.  
   
  **Add control based on**  
- Sets the control to be based on a Windows control type by adding a [CContainedWindow](../Topic/CContainedWindow.md) data member to the class implementing the control. It also adds a message map and message handler functions to handle Windows messages for the control. Choose from the list the type of Windows control you want to create, if any.  
+ Sets the control to be based on a Windows control type by adding a [CContainedWindow](ccontainedwindowt-class.md) data member to the class implementing the control. It also adds a message map and message handler functions to handle Windows messages for the control. Choose from the list the type of Windows control you want to create, if any.  
   
 -   `Button`  
   
@@ -93,7 +93,7 @@ Insert "Search Results" summary here.
   
 -   **Invisible at run-time**: Sets the control to be invisible at run time. You can use invisible controls to perform operations in the background, such as firing events at timed intervals.  
   
--   **Acts like button**: Sets the `OLEMISC_ACTSLIKEBUTTON` bit in the [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) enumeration to enable a control to act like a button. If the container has marked the control's client site as a default button, selecting this option enables your button control to display itself as a default button by drawing itself with a thicker frame. See [CComControlBase::GetAmbientDisplayAsDefault](../../atl/reference/ccomcontrolbase-class.md#getambientdisplayasdefault) for more information.  
+-   **Acts like button**: Sets the `OLEMISC_ACTSLIKEBUTTON` bit in the [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) enumeration to enable a control to act like a button. If the container has marked the control's client site as a default button, selecting this option enables your button control to display itself as a default button by drawing itself with a thicker frame. See [CComControlBase::GetAmbientDisplayAsDefault](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__getambientdisplayasdefault) for more information.  
   
 -   **Acts like label**: Sets the `OLEMISC_ACTSLIKELABEL` bit in the `OLEMISC` enumeration to enable a control to replace the container's native label. The container determines what to do with this flag, if anything.  
   

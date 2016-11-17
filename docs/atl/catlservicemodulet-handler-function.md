@@ -43,5 +43,5 @@ translation.priority.ht:
   
 ## See Also  
  [Services](../atl/atl-services.md)   
- [CAtlServiceModuleT::Handler](../atl/reference/catlservicemodulet-class.md#handler)
+ [CAtlServiceModuleT::Handler](../atl/reference/catlservicemodulet-class.md#catlservicemodulet__handler)
 

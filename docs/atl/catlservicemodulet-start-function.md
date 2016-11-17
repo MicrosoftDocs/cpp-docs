@@ -45,5 +45,5 @@ When the service is run, **_tWinMain** calls **CAtlServiceModuleT::WinMain**, wh
   
 ## See Also  
  [Services](../atl/atl-services.md)   
- [CAtlServiceModuleT::Start](../atl/reference/catlservicemodulet-class.md#start)
+ [CAtlServiceModuleT::Start](../atl/reference/catlservicemodulet-class.md#catlservicemodulet__start)
 

@@ -314,5 +314,5 @@ void Shutdown(DWORD   dwMaxWait = 0) throw();
   
 ## See Also  
  [IThreadPoolConfig Interface](../../atl/reference/ithreadpoolconfig-interface.md)   
- [DefaultThreadTraits](../Topic/DefaultThreadTraits.md)   
+ [DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)   
  [Classes](../../atl/reference/atl-classes.md)

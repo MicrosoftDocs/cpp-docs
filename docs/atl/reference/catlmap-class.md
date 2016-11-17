@@ -75,7 +75,7 @@ template <typename   K,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlMap::CPair Class](../Topic/CAtlMap::CPair%20Class.md)|A class containing the key and value elements.|  
+|[CAtlMap::CPair Class](#catlmap__cpair_class)|A class containing the key and value elements.|  
   
 ### CPair Data Members  
   
@@ -499,7 +499,7 @@ CPair* Lookup(
  Variable that receives the looked-up value.  
   
 ### Return Value  
- The first form of the method returns true if the key is found, otherwise false. The second and third forms return a pointer to a [CPair](../Topic/CAtlMap::CPair%20Class.md) which can be used as a position for calls to [CAtlMap::GetNext](#catlmap__getnext) and so on.  
+ The first form of the method returns true if the key is found, otherwise false. The second and third forms return a pointer to a [CPair](#catlmap__cpair_class) which can be used as a position for calls to [CAtlMap::GetNext](#catlmap__getnext) and so on.  
   
 ### Remarks  
  `Lookup` uses a hashing algorithm to quickly find the map element containing a key that exactly matches the given key parameter.  

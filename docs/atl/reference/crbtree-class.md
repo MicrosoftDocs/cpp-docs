@@ -74,7 +74,7 @@ template <typename   K,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRBTree::CPair Class](../Topic/CRBTree::CPair%20Class.md)|A class containing the key and value elements.|  
+|[CRBTree::CPair Class](#crbtree__cpair_class)|A class containing the key and value elements.|  
   
 ### Public Constructors  
   
@@ -183,7 +183,7 @@ void GetAt(
  The variable that receives the value.  
   
 ### Return Value  
- The first two forms return a pointer to a [CPair](../Topic/CRBTree::CPair%20Class.md). The third form obtains a key and a value for the given position.  
+ The first two forms return a pointer to a [CPair](#crbtree__cpair_class). The third form obtains a key and a value for the given position.  
   
 ### Remarks  
  The position value can be previously determined with a call to a method such as [CRBTree::GetHeadPosition](#crbtree__getheadposition) or [CRBTree::GetTailPosition](#crbtree__gettailposition).  
@@ -243,7 +243,7 @@ CPair* GetNext(POSITION& pos) throw();
  The position counter, returned by a previous call to methods such as [CRBTree::GetHeadPosition](#crbtree__getheadposition) or [CRBTree::FindFirstKeyAfter](#crbtree__findfirstkeyafter).  
   
 ### Return Value  
- Returns a pointer to the next [CPair](../Topic/CRBTree::CPair%20Class.md) value in the tree.  
+ Returns a pointer to the next [CPair](#crbtree__cpair_class) value in the tree.  
   
 ### Remarks  
  The `pos` position counter is updated after each call. If the retrieved element is the last in the tree, `pos` is set to NULL.  
@@ -319,7 +319,7 @@ CPair* GetPrev(POSITION& pos) throw();
  The position counter, returned by a previous call to methods such as [CRBTree::GetHeadPosition](#crbtree__getheadposition) or [CRBTree::FindFirstKeyAfter](#crbtree__findfirstkeyafter).  
   
 ### Return Value  
- Returns a pointer to the previous [CPair](../Topic/CRBTree::CPair%20Class.md) value stored in the tree.  
+ Returns a pointer to the previous [CPair](#crbtree_cpair_class) value stored in the tree.  
   
 ### Remarks  
  Updates the current position counter, `pos`. If there are no more entries in the tree, the position counter is set to NULL.  
