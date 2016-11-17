@@ -132,7 +132,7 @@ This topic applies to the MFC ODBC classes.
   
      Add your parameter data members after the wizard-generated field data members. The convention is to append the word "Param" to each user-defined parameter name.  
   
-4.  Modify the [DoFieldExchange](../Topic/CRecordset::DoFieldExchange.md) member function definition in the .cpp file. Add an RFX function call for each parameter data member you added to the class. For information about writing your RFX functions, see [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md). Precede the RFX calls for the parameters with a single call to:  
+4.  Modify the [DoFieldExchange](../mfc/reference/crecordset-class.md#crecordset__dofieldexchange) member function definition in the .cpp file. Add an RFX function call for each parameter data member you added to the class. For information about writing your RFX functions, see [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md). Precede the RFX calls for the parameters with a single call to:  
   
     ```  
     pFX->SetFieldType( CFieldExchange::param );  

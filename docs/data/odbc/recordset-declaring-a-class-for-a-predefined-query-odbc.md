@@ -61,7 +61,7 @@ This topic applies to the MFC ODBC classes.
   
      For example, if the query returns three columns each from two additional tables, add six field data members (of the appropriate data types) to the class.  
   
-3.  Manually add [RFX](../../data/odbc/record-field-exchange-rfx.md) function calls in the [DoFieldExchange](../Topic/CRecordset::DoFieldExchange.md) member function of the class, one corresponding to the data type of each added field data member.  
+3.  Manually add [RFX](../../data/odbc/record-field-exchange-rfx.md) function calls in the [DoFieldExchange](../mfc/reference/crecordset-class.md#crecordset__dofieldexchange) member function of the class, one corresponding to the data type of each added field data member.  
   
     ```  
     Immediately before these RFX calls, call <MSHelp:link keywords="_mfc_CFieldExchange.3a3a.SetFieldType" TABINDEX="0">SetFieldType</MSHelp:link>, as shown here:   

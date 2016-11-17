@@ -26,7 +26,7 @@
 #### [-clr (Common Language Runtime Compilation)](clr-common-language-runtime-compilation.md)
 ##### [-clr Restrictions](clr-restrictions.md)
 #### [-D (Preprocessor Definitions)](d-preprocessor-definitions.md)
-#### [-diagnostics (Compiler diagnostics options)](diagnostics-compiler-diagnostics-options.md)
+#### [-diagnostics (Compiler diagnostics options)](diagnostics-compiler-diagnostic-options.md)
 #### [-doc (Process Documentation Comments) (C-C++)](doc-process-documentation-comments-c-cpp.md)
 #### [-E (Preprocess to stdout)](e-preprocess-to-stdout.md)
 #### [-EH (Exception Handling Model)](eh-exception-handling-model.md)

@@ -10,7 +10,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "cmyprovidersession"
-  - ""myprovidersess.h""
+  - "myprovidersess.h"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

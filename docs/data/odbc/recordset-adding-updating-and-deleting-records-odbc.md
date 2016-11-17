@@ -110,7 +110,7 @@ if( !rsStudentSet.CanUpdate( ) )
   
 1.  Make sure the recordset is appendable.  
   
-2.  Call the recordset object's [AddNew](../Topic/CRecordset::AddNew.md) member function.  
+2.  Call the recordset object's [AddNew](../mfc/reference/crecordset-class.md#crecordset__addnew) member function.  
   
      `AddNew` prepares the recordset to act as an edit buffer. All field data members are set to the special value Null and marked as unchanged so only changed (dirty) values are written to the data source when you call [Update](../mfc/reference/crecordset-class.md#crecordset__update).  
   

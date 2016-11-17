@@ -11,7 +11,7 @@
 # [.NET Development with C++/CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 # [Cloud and Web Programming in Visual C++](cloud-and-web-programming-in-visual-cpp.md)
 ## [C++ REST SDK (Codename "Casablanca")](cpp-rest-sdk-codename-casablanca.md)
-# [Parallel Programming](parallel/parallel-programming-in-visual-cpp.md)
+# [Parallel Programming](../parallel/parallel-programming-in-visual-cpp.md)
 # [Data Access](../data/data-access-programming-mfc-atl.md)
 # [Text and Strings](../text/text-and-strings-in-visual-cpp.md)
 # [Using the Visual Studio IDE for C++](../ide/ide-and-tools-for-visual-cpp-development.md)

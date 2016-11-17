@@ -79,7 +79,7 @@ This topic applies to the MFC ODBC classes.
   
 -   When you update (edit) a record, the edit buffer is used to set the field data members of the recordset to new values. When you finish updating, the updated record is still current.  
   
- When you call [AddNew](../Topic/CRecordset::AddNew.md) or [Edit](../Topic/CRecordset::Edit.md), the current record is stored so it can be restored later as needed. When you call [Delete](../Topic/CRecordset::Delete.md), the current record is not stored but is marked as deleted and you must scroll to another record.  
+ When you call [AddNew](../mfc/reference/crecordset-class.md#crecordset__addnew) or [Edit](../Topic/CRecordset::Edit.md), the current record is stored so it can be restored later as needed. When you call [Delete](../Topic/CRecordset::Delete.md), the current record is not stored but is marked as deleted and you must scroll to another record.  
   
 > [!NOTE]
 >  The edit buffer plays no role in record deletion. When you delete the current record, the record is marked as deleted, and the recordset is "not on a record" until you scroll to a different record.  

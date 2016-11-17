@@ -130,7 +130,7 @@ This topic applies to the MFC ODBC classes.
   
 2.  Call its `OpenEx` or **Open** member function.  
   
- For more information about how to specify the data source if it is something other than the one you specified with a wizard, see [CDatabase::OpenEx](../Topic/CDatabase::OpenEx.md) or [CDatabase::Open](../Topic/CDatabase::Open.md) in the *MFC Reference*.  
+ For more information about how to specify the data source if it is something other than the one you specified with a wizard, see [CDatabase::OpenEx](../mfc/reference/cdatabase-class.md#cdatabase__openex) or [CDatabase::Open](../mfc/reference/cdatabase-class.md#cdatabase__open) in the *MFC Reference*.  
   
 ##  <a name="_core_disconnecting_from_a_data_source"></a> Disconnecting from a Data Source  
  You must close any open recordsets before calling the **Close** member function of `CDatabase`. In recordsets associated with the `CDatabase` object you want to close, any pending `AddNew` or **Edit** statements are canceled and all pending transactions are rolled back.  
