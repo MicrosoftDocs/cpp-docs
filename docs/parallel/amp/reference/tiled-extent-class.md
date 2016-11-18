@@ -73,35 +73,35 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_extent::tiled_extent Constructor](../Topic/tiled_extent::tiled_extent%20Constructor.md)|Initializes a new instance of the `tiled_extent` class.|  
+|[tiled_extent::tiled_extent Constructor](#tiled_extent_ctor)|Initializes a new instance of the `tiled_extent` class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_extent::get_tile_extent Method](../Topic/tiled_extent::get_tile_extent%20Method.md)|Returns an `extent` object  that captures the values of the `tiled_extent` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
-|[tiled_extent::pad Method](../Topic/tiled_extent::pad%20Method.md)|Returns a new `tiled_extent` object with extents adjusted up to be evenly divisible by the tile dimensions.|  
-|[tiled_extent::truncate Method](../Topic/tiled_extent::truncate%20Method.md)|Returns a new `tiled_extent` object with extents adjusted down to be evenly divisible by the tile dimensions.|  
+|[tiled_extent::get_tile_extent Method](#tiled_extent__get_tile_extent)|Returns an `extent` object  that captures the values of the `tiled_extent` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+|[tiled_extent::pad Method](#tiled_extent__pad)|Returns a new `tiled_extent` object with extents adjusted up to be evenly divisible by the tile dimensions.|  
+|[tiled_extent::truncate Method](#tiled_extent__truncate)|Returns a new `tiled_extent` object with extents adjusted down to be evenly divisible by the tile dimensions.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_extent::operator= Operator](../Topic/tiled_extent::operator=%20Operator.md)|Copies the contents of the specified `tiled_index` object into this one.|  
+|[tiled_extent::operator= Operator](#tiled_extent__operator_eq)|Copies the contents of the specified `tiled_index` object into this one.|  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_extent::tile_dim0 Constant](../Topic/tiled_extent::tile_dim0%20Constant.md)|Stores the length of the most significant dimension.|  
-|[tiled_extent::tile_dim1 Constant](../Topic/tiled_extent::tile_dim1%20Constant.md)|Stores the length of the next-to-most significant dimension.|  
-|[tiled_extent::tile_dim2 Constant](../Topic/tiled_extent::tile_dim2%20Constant.md)|Stores the length of the least significant dimension.|  
+|[tiled_extent::tile_dim0 Constant](#tiled_extent__tile_dim0)|Stores the length of the most significant dimension.|  
+|[tiled_extent::tile_dim1 Constant](#tiled_extent__tile_dim1)|Stores the length of the next-to-most significant dimension.|  
+|[tiled_extent::tile_dim2 Constant](#tiled_extent__tile_dim2)|Stores the length of the least significant dimension.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_extent::tile_extent Data Member](../Topic/tiled_extent::tile_extent%20Data%20Member.md)|Gets an `extent` object  that captures the values of the `tiled_extent` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+|[tiled_extent::tile_extent Data Member](#tiled_extent__tile_extent)|Gets an `extent` object  that captures the values of the `tiled_extent` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
   
 ## Inheritance Hierarchy  
  `extent`  
@@ -112,6 +112,17 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
  **Header:** amp.h  
   
  **Namespace:** Concurrency  
+
+## <a name="tiled_extent_ctor"> </a>  tiled_extent Constructor  
+## <a name="tiled_extent__get_tile_extent"> </a>  get_tile_extent   
+## <a name="tiled_extent__pad"> </a>  pad   
+## <a name="tiled_extent__truncate"> </a>  truncate   
+## <a name="operator_eq"> </a>  operator=   
+## <a name="tiled_extent__tile_dim0"> </a>  tile_dim0   
+## <a name="tiled_extent__tile_dim1"> </a>  tile_dim1   
+## <a name="tiled_extent__tile_dim2"> </a>  tile_dim2   
+## <a name="tiled_extent__tile_extent"> </a>  tile_extent   
+  
   
 ## See Also  
  [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
