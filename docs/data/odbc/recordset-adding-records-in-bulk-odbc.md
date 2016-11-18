@@ -42,7 +42,7 @@ This topic applies to the MFC ODBC classes.
 > [!NOTE]
 >  This topic applies to objects derived from `CRecordset` in which bulk row fetching has not been implemented. If you are using bulk row fetching, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
- A new option for the **dwOptions** parameter to the [CRecordset::Open](../mfc/reference/crecordset-class.md#crecordset__open) member function, **optimizeBulkAdd**, improves performance when you are adding multiple records consecutively without calling **Requery** or **Close**. Only those fields that are dirty before the first **Update** call are marked as dirty for subsequent `AddNew`/**Update** calls.  
+ A new option for the **dwOptions** parameter to the [CRecordset::Open](../../mfc/reference/crecordset-class.md#crecordset__open) member function, **optimizeBulkAdd**, improves performance when you are adding multiple records consecutively without calling **Requery** or **Close**. Only those fields that are dirty before the first **Update** call are marked as dirty for subsequent `AddNew`/**Update** calls.  
   
  If you are using the database classes to take advantage of the **::SQLSetPos** ODBC API function for adding, editing, and deleting records, this optimization is unnecessary.  
   

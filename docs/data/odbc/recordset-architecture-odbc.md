@@ -103,7 +103,7 @@ SELECT CourseID, CourseTitle FROM Course WHERE CourseID = MATH101
 >  The order of parameters is important. For information about this and more information about parameters, see [Recordset: Parameterizing a Recordset (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).  
   
 ##  <a name="_core_using_m_nfields_and_m_nparams"></a> Using m_nFields and m_nParams  
- When a wizard writes a constructor for your class, it also initializes the [m_nFields](../mfc/reference/crecordset-class.md#crecordset__m_n_fields) data member, which specifies the number of [field data members](#_core_field_data_members) in the class. If you add any [parameters](#_core_parameter_data_members) to your class, you must also add an initialization for the [m_nParams](../mfc/reference/crecordset-class.md#crecordset__m_n_params) data member, which specifies the number of parameter data members. The framework uses these values to work with the data members.  
+ When a wizard writes a constructor for your class, it also initializes the [m_nFields](../../mfc/reference/crecordset-class.md#crecordset__m_n_fields) data member, which specifies the number of [field data members](#_core_field_data_members) in the class. If you add any [parameters](#_core_parameter_data_members) to your class, you must also add an initialization for the [m_nParams](../../mfc/reference/crecordset-class.md#crecordset__m_n_params) data member, which specifies the number of parameter data members. The framework uses these values to work with the data members.  
   
  For more information and examples, see [Record Field Exchange: Using RFX](../../data/odbc/record-field-exchange-using-rfx.md).  
   
