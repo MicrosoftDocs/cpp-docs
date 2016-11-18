@@ -65,6 +65,8 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C2428](../../error-messages/compiler-errors-1/compiler-error-c2428.md)  
   
+ [Compiler Error C2429](../../error-messages/compiler-errors-1/compiler-error-c2429.md)  
+  
  [Compiler Error C2430](../../error-messages/compiler-errors-1/compiler-error-c2430.md)  
   
  [Compiler Error C2431](../../error-messages/compiler-errors-1/compiler-error-c2431.md)  
