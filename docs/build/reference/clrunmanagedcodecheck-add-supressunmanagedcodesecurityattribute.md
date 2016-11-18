@@ -57,7 +57,7 @@ translation.priority.ht:
   
 ### To set this linker option in the Visual Studio development environment  
   
-1.  Open the project's **Property Pages** dialog box. For details, see [How to: Open Project Property Pages](../../misc/how-to-open-project-property-pages.md).  
+1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
 2.  Expand the **Configuration Properties** node.  
   

@@ -63,7 +63,7 @@ This topic describes Unicode support in the Visual C++ build tools.
  .asm and .cod dumps  
  .asm and .cod dumps are in ANSI by default for compatibility with MASM.  Use /FAu to output UTF-8.  Note that if you specify /FAs, the intermingled source will just be directly printed and may look garbled, for example if source code is UTF-8 and you didn't specify /FAsu.  
   
- You can enable Unicode file names in the development environment (see  [How to: Open Project Property Pages](../../misc/how-to-open-project-property-pages.md)) by selecting the appropriate tool and by selecting the **Enable Unicode Response Files** property, which is enabled by default. One reason you might change this default is if you modify your development environment to use a compiler that does not have Unicode support.  
+ You can enable Unicode file names in the development environment (see  [Working with Project Properties](../../ide/working-with-project-properties.md)) by selecting the appropriate tool and by selecting the **Enable Unicode Response Files** property, which is enabled by default. One reason you might change this default is if you modify your development environment to use a compiler that does not have Unicode support.  
   
 ## See Also  
  [Building on the Command Line](../../build/building-on-the-command-line.md)

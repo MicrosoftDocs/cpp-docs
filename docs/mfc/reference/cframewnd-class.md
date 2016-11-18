@@ -343,7 +343,7 @@ void EnableDocking(DWORD dwDockStyle);
  By default, control bars will be docked to a side of the frame window in the following order: top, bottom, left, right.  
   
 ### Example  
-  See the example for [CToolBar::Create](../../mfc/reference/ctoolbar-class.md#create).  
+  See the example for [CToolBar::Create](../../mfc/reference/ctoolbar-class.md#ctoolbar__create).  
   
 ##  <a name="cframewnd__endmodalstate"></a>  CFrameWnd::EndModalState  
  Call this member function to change a frame window from modal to modeless.  

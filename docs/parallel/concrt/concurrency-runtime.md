@@ -47,7 +47,7 @@ The Concurrency Runtime for C++ helps you write robust, scalable, and responsive
   
 |||  
 |-|-|  
-|[Overview](../../parallel/concrt/asynchronous-message-blocks.md#overview_of_the_concurrency_runtime)|Teaches why the Concurrency Runtime is important and describes its key features.|  
+|[Overview](../../parallel/concrt/asynchronous-message-blocks.md#overview)|Teaches why the Concurrency Runtime is important and describes its key features.|  
 |[Comparing to Other Concurrency Models](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md)|Shows how the Concurrency Runtime compares to other concurrency models, such as the Windows thread pool and OpenMP, so that you can use the concurrency model that best fits your application requirements.|  
 |[Migrating from OpenMP to the Concurrency Runtime](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)|Compares OpenMP to the Concurrency Runtime and provides examples about how to migrate existing OpenMP code to use the Concurrency Runtime.|  
 |[Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)|Introduces you to the PPL, which provides parallel loops, tasks, and parallel containers.|  
@@ -75,7 +75,7 @@ The Concurrency Runtime for C++ helps you write robust, scalable, and responsive
   
 |||  
 |-|-|  
-|[Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl)|Describes the role of cancellation in the PPL, including how to initiate and respond to cancellation requests.|  
+|[Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation)|Describes the role of cancellation in the PPL, including how to initiate and respond to cancellation requests.|  
 |[How to: Use Cancellation to Break from a Parallel Loop](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)<br /><br /> [How to: Use Exception Handling to Break from a Parallel Loop](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md)|Demonstrates two ways to cancel data-parallel work.|  
   
 ## Windows Store Apps  

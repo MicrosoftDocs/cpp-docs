@@ -35,7 +35,7 @@ translation.priority.ht:
 # Understanding Window Traits
 Window traits classes provide a simple method for standardizing the styles used for the creation of an ATL window object. Window traits are accepted as template parameters by [CWindowImpl](../atl/reference/cwindowimpl-class.md) and other ATL window classes as a way of providing default window styles at the class level.  
   
- If the creator of a window instance doesn't provide styles explicitly in the call to [Create](../atl/reference/cwindowimpl-class.md#create), you can use a traits class to ensure that the window is still created with the correct styles. You can even ensure that certain styles are set for all instances of that window class while permitting other styles to be set on a per-instance basis.  
+ If the creator of a window instance doesn't provide styles explicitly in the call to [Create](../atl/reference/cwindowimpl-class.md#cwindowimpl__create), you can use a traits class to ensure that the window is still created with the correct styles. You can even ensure that certain styles are set for all instances of that window class while permitting other styles to be set on a per-instance basis.  
   
 ## ATL Window Traits Templates  
  ATL provides two window traits templates that allow you to set default styles at compile time using their template parameters.  
@@ -52,7 +52,7 @@ Window traits classes provide a simple method for standardizing the styles used 
   
  [!code-cpp[NVC_ATL_Windowing#68](../atl/codesnippet/CPP/understanding-window-traits_1.h)]  
   
- Each of these functions will be passed some style value at run time which it can use to produce a new style value. If your window traits class is being used as the template argument to an ATL window class, the style values passed to these static functions will be whatever was passed as the style arguments to [Create](../atl/reference/cwindowimpl-class.md#create).  
+ Each of these functions will be passed some style value at run time which it can use to produce a new style value. If your window traits class is being used as the template argument to an ATL window class, the style values passed to these static functions will be whatever was passed as the style arguments to [Create](../atl/reference/cwindowimpl-class.md#cwindowimpl__create).  
   
 ## See Also  
  [Window Classes](../atl/atl-window-classes.md)

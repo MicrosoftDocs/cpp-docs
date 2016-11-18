@@ -47,7 +47,7 @@ This topic applies to the MFC ODBC classes.
   
 1.  Construct a new recordset object (or prepare to call **Requery** for an existing object).  
   
-2.  Set the value of the object's [m_strFilter](../Topic/CRecordset::m_strFilter.md) data member.  
+2.  Set the value of the object's [m_strFilter](../../mfc/reference/crecordset-class.md#crecordset__m_strfilter) data member.  
   
      The filter is a null-terminated string that contains the contents of the SQL **WHERE** clause but not the keyword **WHERE**. For example, use:  
   

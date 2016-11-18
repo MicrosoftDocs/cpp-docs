@@ -120,5 +120,5 @@ template <class Base,
  [ATLCollections Sample: Demonstrates ICollectionOnSTLImpl, CComEnumOnSTL, and Custom Copy Policy Classes](../../top/visual-cpp-samples.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
- [CComObjectThreadModel](../Topic/CComObjectThreadModel.md)   
+ [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)   
  [IEnumOnSTLImpl Class](../../atl/reference/ienumonstlimpl-class.md)

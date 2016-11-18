@@ -37,7 +37,7 @@ translation.priority.mt:
 # How to: Use Exception Handling to Break from a Parallel Loop
 This topic shows how to write a search algorithm for a basic tree structure.  
   
- The topic [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl) explains the role of cancellation in the Parallel Patterns Library. The use of exception handling is a less efficient way to cancel parallel work than the use of the [concurrency::task_group::cancel](../Topic/task_group::cancel%20Method.md) and [concurrency::structured_task_group::cancel](../Topic/structured_task_group::cancel%20Method.md) methods. However, one scenario where the use of exception handling to cancel work is appropriate is when you call into a third-party library that uses tasks or parallel algorithms but does not provide a `task_group` or `structured_task_group` object to cancel.  
+ The topic [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation) explains the role of cancellation in the Parallel Patterns Library. The use of exception handling is a less efficient way to cancel parallel work than the use of the [concurrency::task_group::cancel](../Topic/task_group::cancel%20Method.md) and [concurrency::structured_task_group::cancel](../Topic/structured_task_group::cancel%20Method.md) methods. However, one scenario where the use of exception handling to cancel work is appropriate is when you call into a third-party library that uses tasks or parallel algorithms but does not provide a `task_group` or `structured_task_group` object to cancel.  
   
 ## Example  
  The following example shows a basic `tree` type that contains a data element and a list of child nodes. The following section shows the body of the `for_all` method, which recursively performs a work function on each child node.  
@@ -84,7 +84,7 @@ Did not find node with value 17522.
  **cl.exe /EHsc task-tree-search.cpp**  
   
 ## See Also  
- [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl)   
+ [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation)   
  [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)   
  [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)   
  [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)   

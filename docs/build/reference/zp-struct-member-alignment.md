@@ -82,7 +82,7 @@ Controls how the members of a structure are packed into memory and specifies the
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Property Pages** dialog box. For details, see [How to: Open Project Property Pages](../../misc/how-to-open-project-property-pages.md).  
+1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
 2.  Click the **C/C++** folder.  
   

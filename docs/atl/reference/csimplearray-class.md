@@ -79,7 +79,7 @@ template <class T, class TEqual = CSimpleArrayEqualHelper<T>>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleArray::operator](../Topic/CSimpleArray::operator.md)|Retrieves an element from the array.|  
+|[CSimpleArray::operator](csimplearray-class.md#operator)|Retrieves an element from the array.|  
 |[CSimpleArray::operator =](#csimplearray__operator__eq)|Assignment operator.|  
   
 ## Remarks  

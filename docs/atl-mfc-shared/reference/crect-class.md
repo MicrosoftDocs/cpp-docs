@@ -112,12 +112,9 @@ class CRect : public tagRECT
   
  When specifying a `CRect`, you must be careful to construct it so that it is normalized — in other words, such that the value of the left coordinate is less than the right and the top is less than the bottom. For example, a top left of (10,10) and bottom right of (20,20) defines a normalized rectangle but a top left of (20,20) and bottom right of (10,10) defines a non-normalized rectangle. If the rectangle is not normalized, many `CRect` member functions may return incorrect results. (See [CRect::NormalizeRect](#crect__normalizerect) for a list of these functions.) Before you call a function that requires normalized rectangles, you can normalize non-normalized rectangles by calling the `NormalizeRect` function.  
   
- Use caution when manipulating a `CRect` with the [CDC::DPtoLP](../Topic/CDC%20Class.md#cdc__dptolp and [CDC::LPtoDP](../Topic/CDC%20Class.md#cdc__lptodp member functions. If the mapping mode of a display context is such that the y-extent is negative, as in `MM_LOENGLISH`, then `CDC::DPtoLP` will transform the `CRect` so that its top is greater than the bottom. Functions such as **Height** and **Size** will then return negative values for the height of the transformed `CRect`, and the rectangle will be non-normalized.  
+ Use caution when manipulating a `CRect` with the [CDC::DPtoLP](../../mfc/reference/cdc-class.md#cdc__dptolp and [CDC::LPtoDP](../../mfc/reference/cdc-class.md#cdc__lptodp member functions. If the mapping mode of a display context is such that the y-extent is negative, as in `MM_LOENGLISH`, then `CDC::DPtoLP` will transform the `CRect` so that its top is greater than the bottom. Functions such as **Height** and **Size** will then return negative values for the height of the transformed `CRect`, and the rectangle will be non-normalized.  
   
  When using overloaded `CRect` operators, the first operand must be a `CRect`; the second can be either a [RECT](RECT%20Structure1.md) structure or a `CRect` object.  
-  
-> [!NOTE]
->  For more information on shared utility classes (like `CRect`), see [Shared Classes](../Topic/ATL-MFC%20Shared%20Classes.md).  
   
 ## Inheritance Hierarchy  
  `tagRECT`  
@@ -128,7 +125,7 @@ class CRect : public tagRECT
  **Header:** atltypes.h  
   
 ##  <a name="crect__bottomright"></a>  CRect::BottomRight  
- The coordinates are returned as a reference to a [CPoint](../Topic/CPoint%20Class.md) object that is contained in `CRect`.  
+ The coordinates are returned as a reference to a [CPoint](cpoint-class.md) object that is contained in `CRect`.  
   
 ```  
  
@@ -291,7 +288,7 @@ void DeflateRect(
  Specifies the number of units to deflate the top and bottom of `CRect`.  
   
  `size`  
- A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) or [CSize](../Topic/CSize%20Class.md) that specifies the number of units to deflate `CRect`. The `cx` value specifies the number of units to deflate the left and right sides and the `cy` value specifies the number of units to deflate the top and bottom.  
+ A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) or [CSize](csize-class.md) that specifies the number of units to deflate `CRect`. The `cx` value specifies the number of units to deflate the left and right sides and the `cy` value specifies the number of units to deflate the top and bottom.  
   
  `lpRect`  
  Points to a [RECT](RECT%20Structure1.md) structure or `CRect` that specifies the number of units to deflate each side.  
@@ -397,7 +394,7 @@ void InflateRect(
  Specifies the number of units to inflate the top and bottom of `CRect`.  
   
  `size`  
- A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) or [CSize](../Topic/CSize%20Class.md) that specifies the number of units to inflate `CRect`. The `cx` value specifies the number of units to inflate the left and right sides and the `cy` value specifies the number of units to inflate the top and bottom.  
+ A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) or [CSize](csize-class.md) that specifies the number of units to inflate `CRect`. The `cx` value specifies the number of units to inflate the left and right sides and the `cy` value specifies the number of units to inflate the top and bottom.  
   
  `lpRect`  
  Points to a [RECT](RECT%20Structure1.md) structure or `CRect` that specifies the number of units to inflate each side.  
@@ -602,10 +599,10 @@ void OffsetRect(
  Specifies the amount to move up or down. It must be negative to move up.  
   
  `point`  
- Contains a [POINT](../Topic/POINT%20Structure1.md) structure or [CPoint](../Topic/CPoint%20Class.md) object specifying both dimensions by which to move.  
+ Contains a [POINT](../../mfc/reference/point-structure1.md) structure or [CPoint](cpoint-class.md) object specifying both dimensions by which to move.  
   
  `size`  
- Contains a [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](../Topic/CSize%20Class.md) object specifying both dimensions by which to move.  
+ Contains a [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object specifying both dimensions by which to move.  
   
 ### Remarks  
  Moves `CRect`*x* units along the x-axis and *y* units along the y-axis. The *x* and *y* parameters are signed values, so `CRect` can be moved left or right and up or down.  
@@ -614,7 +611,7 @@ void OffsetRect(
  <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#50](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#50)] -->  
   
 ##  <a name="crect__operator_lpcrect"></a>  CRect::operator LPCRECT  
- Converts a `CRect` to an [LPCRECT](../Topic/Data%20Types%20\(MFC\).md).  
+ Converts a `CRect` to an `LPCRECT`.  
   
 ```  operator LPCRECT() const throw();
 ```  
@@ -626,7 +623,7 @@ void OffsetRect(
  [!CODE [NVC_ATLMFC_Utilities#58](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#58)]  
   
 ##  <a name="crect__operator_lprect"></a>  CRect::operator LPRECT  
- Converts a `CRect` to an [LPRECT](../Topic/Data%20Types%20\(MFC\).md).  
+ Converts a `CRect` to an `LPRECT`.  
   
 ```  operator LPRECT() throw();
 ```  
@@ -732,10 +729,10 @@ lpRect) throw();
   
 ### Parameters  
  `point`  
- A [POINT](../Topic/POINT%20Structure1.md) structure or [CPoint](../Topic/CPoint%20Class.md) object that specifies the number of units to move the rectangle.  
+ A [POINT](../../mfc/reference/point-structure1.md) structure or [CPoint](cpoint-class.md) object that specifies the number of units to move the rectangle.  
   
  `size`  
- A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](../Topic/CSize%20Class.md) object that specifies the number of units to move the rectangle.  
+ A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object that specifies the number of units to move the rectangle.  
   
  `lpRect`  
  Points to a [RECT](RECT%20Structure1.md) structure or `CRect` object that contains the number of units to inflate each side of `CRect`.  
@@ -770,10 +767,10 @@ lpRect) throw();
   
 ### Parameters  
  `point`  
- A [POINT](../Topic/POINT%20Structure1.md) structure or [CPoint](../Topic/CPoint%20Class.md) object that specifies the number of units to move the rectangle.  
+ A [POINT](../../mfc/reference/point-structure1.md) structure or [CPoint](cpoint-class.md) object that specifies the number of units to move the rectangle.  
   
  `size`  
- A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](../Topic/CSize%20Class.md) object that specifies the number of units to move the rectangle.  
+ A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object that specifies the number of units to move the rectangle.  
   
  `lpRect`  
  Points to a [RECT](RECT%20Structure1.md) structure or `CRect` object that contains the number of units to deflate each side of `CRect`.  
@@ -858,10 +855,10 @@ size) const throw();
   
 ### Parameters  
  `point`  
- A [POINT](../Topic/POINT%20Structure1.md) structure or [CPoint](../Topic/CPoint%20Class.md) object that specifies the number of units to move the return value.  
+ A [POINT](../../mfc/reference/point-structure1.md) structure or [CPoint](cpoint-class.md) object that specifies the number of units to move the return value.  
   
  `size`  
- A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](../Topic/CSize%20Class.md) object that specifies the number of units to move the return value.  
+ A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object that specifies the number of units to move the return value.  
   
  `lpRect`  
  Points to a [RECT](RECT%20Structure1.md) structure or `CRect` object that contains the number of units to inflate each side of the return value.  
@@ -899,7 +896,7 @@ lpRect) const throw();
   
 ### Parameters  
  `point`  
- A [POINT](../Topic/POINT%20Structure1.md) structure or `CPoint` object that specifies the number of units to move the return value.  
+ A [POINT](../../mfc/reference/point-structure1.md) structure or `CPoint` object that specifies the number of units to move the return value.  
   
  `size`  
  A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or `CSize` object that specifies the number of units to move the return value.  
@@ -988,7 +985,7 @@ point) const throw();
   
 ### Parameters  
  `point`  
- Contains a [POINT](../Topic/POINT%20Structure1.md) structure or [CPoint](../Topic/CPoint%20Class.md) object.  
+ Contains a [POINT](../../mfc/reference/point-structure1.md) structure or [CPoint](cpoint-class.md) object.  
   
 ### Return Value  
  Nonzero if the point lies within `CRect`; otherwise 0.  
@@ -1054,7 +1051,7 @@ CSize Size() const throw();
 ```  
   
 ### Return Value  
- A [CSize](../Topic/CSize%20Class.md) object that contains the size of `CRect`.  
+ A [CSize](csize-class.md) object that contains the size of `CRect`.  
   
 ### Remarks  
  Either the height or width can be negative.  
@@ -1105,7 +1102,7 @@ CSize Size() const throw();
  <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#55](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#55)] -->  
   
 ##  <a name="crect__topleft"></a>  CRect::TopLeft  
- The coordinates are returned as a reference to a [CPoint](../Topic/CPoint%20Class.md) object that is contained in `CRect`.  
+ The coordinates are returned as a reference to a [CPoint](cpoint-class.md) object that is contained in `CRect`.  
   
 ```  
  
@@ -1180,8 +1177,7 @@ int Width() const throw();
  <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#57](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#57)] -->  
   
 ## See Also  
- [Hierarchy Chart](../Topic/Hierarchy%20Chart.md)   
- [CPoint Class](../Topic/CPoint%20Class.md)   
- [CSize Class](../Topic/CSize%20Class.md)   
- [RECT](RECT%20Structure1.md)
+ [CPoint Class](cpoint-class.md)   
+ [CSize Class](csize-class.md)   
+ [RECT](../../mfc/reference/rect-structure1.md)
 

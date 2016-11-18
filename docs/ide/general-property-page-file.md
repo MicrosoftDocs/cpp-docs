@@ -46,7 +46,7 @@ When a file is selected in **Solution Explorer**, the **General** property page 
   
  To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.Tool%2A>.  
   
- For information on how to access the **General** property page under the **Configuration Properties** node, see [How To: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md).  
+ For information on how to access the **General** property page under the **Configuration Properties** node, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
 ## See Also  
  [Property Pages](../ide/property-pages-visual-cpp.md)

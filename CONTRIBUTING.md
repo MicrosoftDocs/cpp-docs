@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing to the Visual C++ documentation!
 
-In this topic, you'll see the basic process for adding or updating content in the [Visual C++ documentation site](https://docs.microsoft.com/cpp-docs).
+In this topic, you'll see the basic process for adding or updating content in the [Visual C++ documentation site](https://docs.microsoft.com/cpp).
 
 In this topic, we'll cover:
 

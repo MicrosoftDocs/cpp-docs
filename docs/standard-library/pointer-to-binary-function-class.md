@@ -80,7 +80,7 @@ public:
  **Namespace:** std  
   
 ## See Also  
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 
 
 
