@@ -62,15 +62,15 @@ class index;
   
 |Name|Description|  
 |----------|-----------------|  
-|[index::operator-- Operator](operator--)|Decrements each element of the `index` object.|  
-|[index::operator(mod)= Operator](operator_mod_eq)|Calculates the modulus (remainder) of each element in the `index` object when that element is divided by a number.|  
-|[index::operator*= Operator](operator_star_eq)|Multiplies each element of the `index` object by a number.|  
-|[index::operator/= Operator](operator_div_eq)|Divides each element of the `index` object by a number.|  
-|[index::operator\[\]](operator_at)|Returns the element that's at the specified index.|  
-|[index::operator++ Operator](operator_add_add)|Increments each element of the `index` object.|  
-|[index::operator+= Operator](operator_add_eq)|Adds the specified number to each element of the `index` object.|  
-|[index::operator= Operator](operator_eq)|Copies the contents of the specified `index` object into this one.|  
-|[index::operator-= Operator](operator_-_eq)|Subtracts the specified number from each element of the `index` object.|  
+|[index::operator-- Operator](#operator--)|Decrements each element of the `index` object.|  
+|[index::operator(mod)= Operator](#operator_mod_eq)|Calculates the modulus (remainder) of each element in the `index` object when that element is divided by a number.|  
+|[index::operator*= Operator](#operator_star_eq)|Multiplies each element of the `index` object by a number.|  
+|[index::operator/= Operator](#operator_div_eq)|Divides each element of the `index` object by a number.|  
+|[index::operator\[\]](#operator_at)|Returns the element that's at the specified index.|  
+|[index::operator++ Operator](#operator_add_add)|Increments each element of the `index` object.|  
+|[index::operator+= Operator](#operator_add_eq)|Adds the specified number to each element of the `index` object.|  
+|[index::operator= Operator](#operator_eq)|Copies the contents of the specified `index` object into this one.|  
+|[index::operator-= Operator](#operator_-_eq)|Subtracts the specified number from each element of the `index` object.|  
   
 ### Public Constants  
   

@@ -56,8 +56,8 @@ class task_handle : public ::Concurrency::details::_UnrealizedChore;
   
 |Name|Description|  
 |----------|-----------------|  
-|[task_handle::task_handle Constructor](#task_handle__task_handle_constructor)|Constructs a new `task_handle` object. The work of the task is performed by invoking the function specified as a parameter to the constructor.|  
-|[task_handle::~task_handle Destructor](#task_handle___dtortask_handle_destructor)|Destroys the `task_handle` object.|  
+|[task_handle::task_handle Constructor](#task_handle__ctor)|Constructs a new `task_handle` object. The work of the task is performed by invoking the function specified as a parameter to the constructor.|  
+|[task_handle::~task_handle Destructor](#task_handle__dtor)|Destroys the `task_handle` object.|  
   
 ### Public Operators  
   
@@ -91,7 +91,7 @@ void operator()() const;
  
 ```  
   
-##  <a name="task_handle__task_handle_constructor"></a>  task_handle::task_handle Constructor  
+##  <a name="task_handle__ctor"></a>  task_handle::task_handle Constructor  
  Constructs a new `task_handle` object. The work of the task is performed by invoking the function specified as a parameter to the constructor.  
   
 ```  
@@ -105,7 +105,7 @@ task_handle(const _Function& _Func);
 ### Remarks  
  The runtime creates a copy of the work function that you pass to the constructor. Therefore, any state changes that occur in a function object that you pass to a `task_handle` object will not appear in your copy of that function object.  
   
-##  <a name="task_handle___dtortask_handle_destructor"></a>  task_handle::~task_handle Destructor  
+##  <a name="task_handle__dtor"></a>  task_handle::~task_handle Destructor  
  Destroys the `task_handle` object.  
   
 ```  
@@ -113,6 +113,5 @@ task_handle(const _Function& _Func);
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [task_group Class](task-group-class.md)   
+ [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)  
  [structured_task_group Class](../../../parallel/concrt/reference/structured-task-group-class.md)

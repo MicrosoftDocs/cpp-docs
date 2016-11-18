@@ -15,14 +15,14 @@ manager: "ghogen"
 # concurrency namespace constants
 ||||  
 |-|-|-|  
-|[AgentEventGuid](#agenteventguid_constant)|[CONCRT_RM_VERSION_1](#concrt_rm_version_1_constant)|[COOPERATIVE_TIMEOUT_INFINITE](#cooperative_timeout_infinite_constant)|  
-|[COOPERATIVE_WAIT_TIMEOUT](#cooperative_wait_timeout_constant)|[ChoreEventGuid](#choreeventguid_constant)|[ConcRTEventGuid](#concrteventguid_constant)|  
-|[ConcRT_ProviderGuid](#concrt_providerguid_constant)|[ContextEventGuid](#contexteventguid_constant)|[INHERIT_THREAD_PRIORITY](#inherit_thread_priority_constant)|  
-|[LockEventGuid](#lockeventguid_constant)|[MaxExecutionResources](#maxexecutionresources_constant)|[PPLParallelForEventGuid](#pplparallelforeventguid_constant)|  
-|[PPLParallelForeachEventGuid](#pplparallelforeacheventguid_constant)|[PPLParallelInvokeEventGuid](#pplparallelinvokeeventguid_constant)|[ResourceManagerEventGuid](#resourcemanagereventguid_constant)|  
-|[ScheduleGroupEventGuid](#schedulegroupeventguid_constant)|[SchedulerEventGuid](#schedulereventguid_constant)|[VirtualProcessorEventGuid](#virtualprocessoreventguid_constant)|  
+|[AgentEventGuid](#agenteventguid)|[CONCRT_RM_VERSION_1](#concrt_rm_version_1)|[COOPERATIVE_TIMEOUT_INFINITE](#cooperative_timeout_infinite)|  
+|[COOPERATIVE_WAIT_TIMEOUT](#cooperative_wait_timeout)|[ChoreEventGuid](#choreeventguid)|[ConcRTEventGuid](#concrteventguid)|  
+|[ConcRT_ProviderGuid](#concrt_providerguid)|[ContextEventGuid](#contexteventguid)|[INHERIT_THREAD_PRIORITY](#inherit_thread_priority)|  
+|[LockEventGuid](#lockeventguid)|[MaxExecutionResources](#maxexecutionresources)|[PPLParallelForEventGuid](#pplparallelforeventguid)|  
+|[PPLParallelForeachEventGuid](#pplparallelforeacheventguid)|[PPLParallelInvokeEventGuid](#pplparallelinvokeeventguid)|[ResourceManagerEventGuid](#resourcemanagereventguid)|  
+|[ScheduleGroupEventGuid](#schedulegroupeventguid)|[SchedulerEventGuid](#schedulereventguid)|[VirtualProcessorEventGuid](#virtualprocessoreventguid)|  
   
-##  <a name="agenteventguid_constant"></a>  AgentEventGuid  
+##  <a name="agenteventguid"></a>  AgentEventGuid  
  A category GUID ({B9B5B78C-0713-4898-A21A-C67949DCED07}) describing ETW events fired by the Agents library in the Concurrency Runtime.  
   
 ```
@@ -38,7 +38,7 @@ const __declspec(selectany) GUID AgentEventGuid = {0xb9b5b78c,
     0x7 } };
 ```  
   
-##  <a name="choreeventguid_constant"></a>  ChoreEventGuid  
+##  <a name="choreeventguid"></a>  ChoreEventGuid  
  A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to chores or tasks.  
   
 ```
@@ -57,7 +57,7 @@ const __declspec(selectany) GUID ChoreEventGuid = { 0x7E854EC7,
 ### Remarks  
  This category of events is not currently fired by the Concurrency Runtime.  
   
-##  <a name="concrt_providerguid_constant"></a>  ConcRT_ProviderGuid  
+##  <a name="concrt_providerguid"></a>  ConcRT_ProviderGuid  
  The ETW provider GUID for the Concurrency Runtime.  
   
 ```
@@ -73,14 +73,14 @@ const __declspec(selectany) GUID ConcRT_ProviderGuid = { 0xF7B697A3,
     0x2F } };
 ```  
   
-##  <a name="concrt_rm_version_1_constant"></a>  CONCRT_RM_VERSION_1  
+##  <a name="concrt_rm_version_1"></a>  CONCRT_RM_VERSION_1  
  Indicates support of the Resource Manager interface defined in Visual Studio 2010.  
   
 ```
 const unsigned int CONCRT_RM_VERSION_1 = 0x00010000;
 ```  
   
-##  <a name="concrteventguid_constant"></a>  ConcRTEventGuid  
+##  <a name="concrteventguid"></a>  ConcRTEventGuid  
  A category GUID describing ETW events fired by the Concurrency Runtime that are not more specifically described by another category.  
   
 ```
@@ -99,21 +99,21 @@ const __declspec(selectany) GUID ConcRTEventGuid = { 0x72B14A7D,
 ### Remarks  
  This category of events is not currently fired by the Concurrency Runtime.  
   
-##  <a name="cooperative_timeout_infinite_constant"></a>  COOPERATIVE_TIMEOUT_INFINITE  
+##  <a name="cooperative_timeout_infinite"></a>  COOPERATIVE_TIMEOUT_INFINITE  
  Value indicating that a wait should never time out.  
   
 ```
 const unsigned int COOPERATIVE_TIMEOUT_INFINITE = (unsigned int)-1;
 ```  
   
-##  <a name="cooperative_wait_timeout_constant"></a>  COOPERATIVE_WAIT_TIMEOUT  
+##  <a name="cooperative_wait_timeout"></a>  COOPERATIVE_WAIT_TIMEOUT  
  Value indicating that a wait timed out.  
   
 ```
 const size_t COOPERATIVE_WAIT_TIMEOUT = SIZE_MAX;
 ```  
   
-##  <a name="contexteventguid_constant"></a>  ContextEventGuid  
+##  <a name="contexteventguid"></a>  ContextEventGuid  
  A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to contexts.  
   
 ```
@@ -129,14 +129,14 @@ const __declspec(selectany) GUID ContextEventGuid = { 0x5727A00F,
     0xCB } };
 ```  
   
-##  <a name="inherit_thread_priority_constant"></a>  INHERIT_THREAD_PRIORITY  
+##  <a name="inherit_thread_priority"></a>  INHERIT_THREAD_PRIORITY  
  Special value for the policy key `ContextPriority` indicating that the thread priority of all contexts in the scheduler should be the same as that of the thread which created the scheduler.  
   
 ```
 const unsigned int INHERIT_THREAD_PRIORITY = 0x0000F000;
 ```  
   
-##  <a name="lockeventguid_constant"></a>  LockEventGuid  
+##  <a name="lockeventguid"></a>  LockEventGuid  
  A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to locks.  
   
 ```
@@ -155,14 +155,14 @@ const __declspec(selectany) GUID LockEventGuid = { 0x79A60DC6,
 ### Remarks  
  This category of events is not currently fired by the Concurrency Runtime.  
   
-##  <a name="maxexecutionresources_constant"></a>  MaxExecutionResources  
+##  <a name="maxexecutionresources"></a>  MaxExecutionResources  
  Special value for the policy keys `MinConcurrency` and `MaxConcurrency`. Defaults to the number of hardware threads on the machine in the absence of other constraints.  
   
 ```
 const unsigned int MaxExecutionResources = 0xFFFFFFFF;
 ```  
   
-##  <a name="pplparallelforeventguid_constant"></a>  PPLParallelForEventGuid  
+##  <a name="pplparallelforeventguid"></a>  PPLParallelForEventGuid  
  A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to usage of the `parallel_for` function.  
   
 ```
@@ -178,7 +178,7 @@ const __declspec(selectany) GUID PPLParallelForEventGuid = { 0x31c8da6b,
     0x84 } };
 ```  
   
-##  <a name="pplparallelforeacheventguid_constant"></a>  PPLParallelForeachEventGuid  
+##  <a name="pplparallelforeacheventguid"></a>  PPLParallelForeachEventGuid  
  A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to usage of the `parallel_for_each` function.  
   
 ```
@@ -194,7 +194,7 @@ const __declspec(selectany) GUID PPLParallelForeachEventGuid = { 0x5cb7d785,
     0x34 } };
 ```  
   
-##  <a name="pplparallelinvokeeventguid_constant"></a>  PPLParallelInvokeEventGuid  
+##  <a name="pplparallelinvokeeventguid"></a>  PPLParallelInvokeEventGuid  
  A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to usage of the `parallel_invoke` function.  
   
 ```
@@ -210,7 +210,7 @@ const __declspec(selectany) GUID PPLParallelInvokeEventGuid = { 0xd1b5b133,
     0x82 } };
 ```  
   
-##  <a name="resourcemanagereventguid_constant"></a>  ResourceManagerEventGuid  
+##  <a name="resourcemanagereventguid"></a>  ResourceManagerEventGuid  
  A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to the resource manager.  
   
 ```
@@ -229,7 +229,7 @@ const __declspec(selectany) GUID ResourceManagerEventGuid = { 0x2718D25B,
 ### Remarks  
  This category of events is not currently fired by the Concurrency Runtime.  
   
-##  <a name="schedulegroupeventguid_constant"></a>  ScheduleGroupEventGuid  
+##  <a name="schedulegroupeventguid"></a>  ScheduleGroupEventGuid  
  A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to schedule groups.  
   
 ```
@@ -248,7 +248,7 @@ const __declspec(selectany) GUID ScheduleGroupEventGuid = { 0xE8A3BF1F,
 ### Remarks  
  This category of events is not currently fired by the Concurrency Runtime.  
   
-##  <a name="schedulereventguid_constant"></a>  SchedulerEventGuid  
+##  <a name="schedulereventguid"></a>  SchedulerEventGuid  
  A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to scheduler activity.  
   
 ```
@@ -264,7 +264,7 @@ const __declspec(selectany) GUID SchedulerEventGuid = { 0xE2091F8A,
     0x61 } };
 ```  
   
-##  <a name="virtualprocessoreventguid_constant"></a>  VirtualProcessorEventGuid  
+##  <a name="virtualprocessoreventguid"></a>  VirtualProcessorEventGuid  
  A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to virtual processors.  
   
 ```

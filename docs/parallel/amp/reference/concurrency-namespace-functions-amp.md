@@ -15,15 +15,15 @@ manager: "ghogen"
 # Concurrency namespace functions (AMP)
 ||||  
 |-|-|-|  
-|[all_memory_fence Function](#all_memory_fence_function)|[amp_uninitialize Function](#amp_uninitialize_function)|[atomic_compare_exchange Function](#atomic_compare_exchange_function)|  
-|[atomic_exchange Function (C++ AMP)](#atomic_exchange_function__c_add_add_amp_)|[atomic_fetch_add Function (C++ AMP)](#atomic_fetch_add_function__c_add_add_amp_)|[atomic_fetch_and Function (C++ AMP)](#atomic_fetch_and_function__c_add_add_amp_)|  
-|[atomic_fetch_dec Function](#atomic_fetch_dec_function)|[atomic_fetch_inc Function](#atomic_fetch_inc_function)|[atomic_fetch_max Function](#atomic_fetch_max_function)|  
-|[atomic_fetch_min Function](#atomic_fetch_min_function)|[atomic_fetch_or Function (C++ AMP)](#atomic_fetch_or_function__c_add_add_amp_)|[atomic_fetch_sub Function (C++ AMP)](#atomic_fetch_sub_function__c_add_add_amp_)|  
-|[atomic_fetch_xor Function (C++ AMP)](#atomic_fetch_xor_function__c_add_add_amp_)|[copy Function](#copy_function)|[copy_async Function](#copy_async_function)|  
-|[direct3d_abort Function](#direct3d_abort_function)|[direct3d_errorf Function](#direct3d_errorf_function)|[direct3d_printf Function](#direct3d_printf_function)|  
-|[global_memory_fence Function](#global_memory_fence_function)|[parallel_for_each Function (C++ AMP)](#parallel_for_each_function__c_add_add_amp_)|[tile_static_memory_fence Function](#tile_static_memory_fence_function)|  
+|[all_memory_fence](#all_memory_fence)|[amp_uninitialize](#amp_uninitialize)|[atomic_compare_exchange](#atomic_compare_exchange)|  
+|[atomic_exchange Function (C++ AMP)](#atomic_exchange)|[atomic_fetch_add Function (C++ AMP)](#atomic_fetch_add)|[atomic_fetch_and Function (C++ AMP)](#atomic_fetch_and)|  
+|[atomic_fetch_dec](#atomic_fetch_dec)|[atomic_fetch_inc](#atomic_fetch_inc)|[atomic_fetch_max](#atomic_fetch_max)|  
+|[atomic_fetch_min](#atomic_fetch_min)|[atomic_fetch_or Function (C++ AMP)](#atomic_fetch_or)|[atomic_fetch_sub Function (C++ AMP)](#atomic_fetch_sub)|  
+|[atomic_fetch_xor Function (C++ AMP)](#atomic_fetch_xor)|[copy](#copy)|[copy_async](#copy_async)|  
+|[direct3d_abort](#direct3d_abort)|[direct3d_errorf](#direct3d_errorf)|[direct3d_printf](#direct3d_printf)|  
+|[global_memory_fence](#global_memory_fence)|[parallel_for_each Function (C++ AMP)](#parallel_for_each)|[tile_static_memory_fence](#tile_static_memory_fence)|  
   
-##  <a name="all_memory_fence_function"></a>  all_memory_fence Function  
+##  <a name="all_memory_fence  "></a>  all_memory_fence  
  Blocks execution of all threads in a tile until all memory accesses have been completed. This ensures that all memory accesses are visible to other threads in the thread tile, and are executed in program order.  
   
 ```  
@@ -34,14 +34,14 @@ inline void all_memory_fence(const tile_barrier& _Barrier) restrict(amp);
  `_Barrier`  
  A `tile_barrier` object.  
   
-##  <a name="amp_uninitialize_function"></a>  amp_uninitialize Function  
+##  <a name="amp_uninitialize  "></a>  amp_uninitialize  
  Uninitializes the C++ AMP runtime. It is legal to call this function multiple times during an applications lifetime. Calling any C++ AMP API afer calling this function will reinitialize the C++ AMP runtime. Note that it is illegal to use C++ AMP objects across calls to this function and doing so will result in undefined behavior. Also, concurrently calling this function and any other AMP APIs is illegal and would result in undefined behavior.  
   
 ```  
 void __cdecl amp_uninitialize();
 ```  
   
-##  <a name="atomic_compare_exchange_function"></a>  atomic_compare_exchange Function  
+##  <a name="atomic_compare_exchange  "></a>  atomic_compare_exchange  
  Atomically compares the value stored at a memory location specified in the first argument for equality with the value of the second specified argument, and if the values are the same, the value at the memory location is changed to that of the third specified argument.  
   
 ```  
@@ -70,7 +70,7 @@ inline bool atomic_compare_exchange(
 ### Return Value  
  `true` if the operation is successful; otherwise, `false`.  
   
-##  <a name="atomic_exchange_function__c_add_add_amp_"></a>  atomic_exchange Function (C++ AMP)  
+##  <a name="atomic_exchange"></a>  atomic_exchange Function (C++ AMP)  
  Sets the value of destination location as an atomic operation.  
   
 ```  
@@ -99,7 +99,7 @@ inline float atomic_exchange(
 ### Return Value  
  The original value of the destination location.  
   
-##  <a name="atomic_fetch_add_function__c_add_add_amp_"></a>  atomic_fetch_add Function (C++ AMP)  
+##  <a name="atomic_fetch_add"></a>  atomic_fetch_add Function (C++ AMP)  
  Atomically add a value to the value of a memory location.  
   
 ```  
@@ -123,7 +123,7 @@ inline unsigned int atomic_fetch_add(
 ### Return Value  
  The original value of the memory location.  
   
-##  <a name="atomic_fetch_and_function__c_add_add_amp_"></a>  atomic_fetch_and Function (C++ AMP)  
+##  <a name="atomic_fetch_and"></a>  atomic_fetch_and Function (C++ AMP)  
  Atomically performs a bitwise AND operation of a value and the value of a memory location.  
   
 ```  
@@ -147,7 +147,7 @@ inline unsigned int atomic_fetch_and(
 ### Return Value  
  The original value of the memory location.  
   
-##  <a name="atomic_fetch_dec_function"></a>  atomic_fetch_dec Function  
+##  <a name="atomic_fetch_dec  "></a>  atomic_fetch_dec  
  Atomically decrements the value stored at the specified memory location.  
   
 ```  
@@ -164,7 +164,7 @@ inline unsigned int atomic_fetch_dec(_Inout_ unsigned int* _Dest) restrict(amp);
 ### Return Value  
  The original value stored at the memory location.  
   
-##  <a name="atomic_fetch_inc_function"></a>  atomic_fetch_inc Function  
+##  <a name="atomic_fetch_inc  "></a>  atomic_fetch_inc  
  Atomically increments the value stored at the specified memory location.  
   
 ```  
@@ -181,7 +181,7 @@ inline unsigned int atomic_fetch_inc(_Inout_ unsigned int* _Dest) restrict(amp);
 ### Return Value  
  The original value stored at the memory location.  
   
-##  <a name="atomic_fetch_max_function"></a>  atomic_fetch_max Function  
+##  <a name="atomic_fetch_max  "></a>  atomic_fetch_max  
  Atomically computes the maximum value between the value stored at the memory location specified in the first argument and the value specified in the second argument, and stores it at the same memory location.  
   
 ```  
@@ -205,7 +205,7 @@ inline unsigned int atomic_fetch_max(
 ### Return Value  
  The original value stored at the specified location location.  
   
-##  <a name="atomic_fetch_min_function"></a>  atomic_fetch_min Function  
+##  <a name="atomic_fetch_min  "></a>  atomic_fetch_min  
  Atomically computes the minimum value between the value stored at the memory location specified in the first argument and the value specified in the second argument, and stores it at the same memory location.  
   
 ```  
@@ -229,7 +229,7 @@ inline unsigned int atomic_fetch_min(
 ### Return Value  
  The original value stored at the specified location location.  
   
-##  <a name="atomic_fetch_or_function__c_add_add_amp_"></a>  atomic_fetch_or Function (C++ AMP)  
+##  <a name="atomic_fetch_or"></a>  atomic_fetch_or Function (C++ AMP)  
  Atomically performs a bitwise OR operation with a value and the value of a memory location.  
   
 ```  
@@ -253,7 +253,7 @@ inline unsigned int atomic_fetch_or(
 ### Return Value  
  The original value of the memory location.  
   
-##  <a name="atomic_fetch_sub_function__c_add_add_amp_"></a>  atomic_fetch_sub Function (C++ AMP)  
+##  <a name="atomic_fetch_sub"></a>  atomic_fetch_sub Function (C++ AMP)  
  Atomically subtracts a value from a memory location.  
   
 ```  
@@ -277,7 +277,7 @@ inline unsigned int atomic_fetch_sub(
 ### Return Value  
  The original value of the memory location.  
   
-##  <a name="atomic_fetch_xor_function__c_add_add_amp_"></a>  atomic_fetch_xor Function (C++ AMP)  
+##  <a name="atomic_fetch_xor"></a>  atomic_fetch_xor Function (C++ AMP)  
  Atomically peforms an bitwise XOR operation of a value and a memory location.  
   
 ```  
@@ -301,7 +301,7 @@ inline unsigned int atomic_fetch_xor(
 ### Return Value  
  The original value of the memory location.  
   
-##  <a name="copy_function"></a>  copy Function  
+##  <a name="copy  "></a>  copy  
  Copies a C++ AMP object. All synchronous data transfer requirements are met. You can't copy data when running code on an accelerator. The general form of this function is `copy(src, dest)`.  
   
 ```  
@@ -441,7 +441,7 @@ void copy(
  `value_type`  
  The data type of the elements that are copied.  
   
-##  <a name="copy_async_function"></a>  copy_async Function  
+##  <a name="copy_async  "></a>  copy_async  
  Copies a C++ AMP object and returns a [completion_future](../../../parallel/amp/reference/completion-future-class.md) object that can be waited on. You can't copy data when running code on an accelerator.  The general form of this function is `copy(src, dest)`.  
   
 ```  
@@ -584,14 +584,14 @@ concurrency::completion_future copy_async(
 ### Return Value  
  A `future<void>` that can be waited on.  
   
-##  <a name="direct3d_abort_function"></a>  direct3d_abort Function  
+##  <a name="direct3d_abort  "></a>  direct3d_abort  
  Aborts the execution of a function with the `restrict(amp)` restriction clause. When the AMP runtime detects the call, it raises a [runtime_exception](../../../parallel/amp/reference/runtime-exception-class.md) exception with the error message "Reference Rasterizer: Shader abort instruction hit".  
   
 ```  
 void direct3d_abort() restrict(amp);
 ```  
   
-##  <a name="direct3d_errorf_function"></a>  direct3d_errorf Function  
+##  <a name="direct3d_errorf  "></a>  direct3d_errorf  
  Prints a formatted string to the Visual Studio output window. It is called from a function with the `restrict(amp)` restriction clause. When the AMP runtime detects the call, it raises a [runtime_exception](../../../parallel/amp/reference/runtime-exception-class.md) exception with the same formatting string.  
   
 ```  
@@ -600,7 +600,7 @@ void direct3d_errorf(
  ...) restrict(amp);
 ```  
   
-##  <a name="direct3d_printf_function"></a>  direct3d_printf Function  
+##  <a name="direct3d_printf  "></a>  direct3d_printf  
  Prints a formatted string to the Visual Studio output window. It is called from a function with the `restrict(amp)` restriction clause.  
   
 ```  
@@ -609,7 +609,7 @@ void direct3d_printf(
  ...) restrict(amp);
 ```  
   
-##  <a name="global_memory_fence_function"></a>  global_memory_fence Function  
+##  <a name="global_memory_fence  "></a>  global_memory_fence  
  Blocks execution of all threads in a tile until all global memory accesses have been completed. This ensures that global memory accesses are visible to other threads in the thread tile, and are executed in program order.  
   
 ```  
@@ -620,7 +620,7 @@ inline void global_memory_fence(const tile_barrier& _Barrier) restrict(amp);
  `_Barrier`  
  A tile_barrier object  
   
-##  <a name="parallel_for_each_function__c_add_add_amp_"></a>  parallel_for_each Function (C++ AMP)  
+##  <a name="parallel_for_each"></a>  parallel_for_each Function (C++ AMP)  
  Runs a function across the compute domain. For more information, see [C++ AMP Overview](../../../parallel/amp/cpp-amp-overview.md).  
   
 ```  
@@ -731,7 +731,7 @@ void parallel_for_each(
  `_Rank`  
  The rank of the extent.  
   
-##  <a name="tile_static_memory_fence_function"></a>  tile_static_memory_fence Function  
+##  <a name="tile_static_memory_fence  "></a>  tile_static_memory_fence  
  Blocks execution of all threads in a tile until all outstanding `tile_static` memory accesses have been completed. This ensures that `tile_static` memory accesses are visible to other threads in the thread tile, and that accesses are executed in program order.  
   
 ```  
