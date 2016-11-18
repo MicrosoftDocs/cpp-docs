@@ -67,7 +67,7 @@ This document demonstrates how to create a network of asynchronous message block
   
  [!code-cpp[concrt-image-processing-filter#2](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-an-image-processing-network_1.cpp)]  
   
- The following function, `ProcessImage`, calls the given [std::function](../../standard-library/function-class.md) object to transform the color value of each pixel in a [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] [Bitmap](https://msdn.microsoft.com/library/ms534420.aspx) object. The `ProcessImage` function uses the [concurrency::parallel_for](../Topic/parallel_for%20Function.md) algorithm to process each row of the bitmap in parallel.  
+ The following function, `ProcessImage`, calls the given [std::function](../../standard-library/function-class.md) object to transform the color value of each pixel in a [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] [Bitmap](https://msdn.microsoft.com/library/ms534420.aspx) object. The `ProcessImage` function uses the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm to process each row of the bitmap in parallel.  
   
  [!code-cpp[concrt-image-processing-filter#3](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-an-image-processing-network_2.cpp)]  
   
@@ -135,7 +135,7 @@ This document demonstrates how to create a network of asynchronous message block
 |Member|Description|  
 |------------|-----------------|  
 |`load_bitmap`|A [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) object that loads a `Bitmap` object from disk and adds an entry to the `map` object to associate the image with its original file name.|  
-|`loaded_bitmaps`|A [concurrency::unbounded_buffer](../Topic/unbounded_buffer%20Class.md) object that sends the loaded images to the image processing filters.|  
+|`loaded_bitmaps`|A [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) object that sends the loaded images to the image processing filters.|  
 |`grayscale`|A `transformer` object that converts images that are authored by Tom to grayscale. It uses the metadata of the image to determine its author.|  
 |`colormask`|A `transformer` object that removes the green and blue color components from images that have red as the dominant color.|  
 |`darken`|A `transformer` object that darkens images that have red as the dominant color.|  

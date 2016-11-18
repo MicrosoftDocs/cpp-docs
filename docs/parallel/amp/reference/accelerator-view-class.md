@@ -203,7 +203,7 @@ unsigned int get_version() const;
  The version of the `accelerator_view`.  
   
 ## <a name="is_auto_selection"></a> accelerator_view::is_auto_selection Data Member  
-Gets a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the accelerator_view is passed to a [parallel_for_each](../Topic/parallel_for_each__Function__\(C++__AMP\)).  
+Gets a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the accelerator_view is passed to a [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each).  
   
 ### Syntax  
   
@@ -299,7 +299,7 @@ void wait();
  Returns `void`.  
   
 #### Remarks  
- If the [queuing_mode](../Topic/queuing_mode__Enumeration) is `immediate`, this method returns immediately without blocking.  
+ If the [queuing_mode](concurrency-namespace-enums-amp.md#queuing_mode) is `immediate`, this method returns immediately without blocking.  
   
 ##  <a name="accelerator_view_dtor"></a> accelerator_view::~accelerator_view Destructor
 Destroys the accelerator_view object.  

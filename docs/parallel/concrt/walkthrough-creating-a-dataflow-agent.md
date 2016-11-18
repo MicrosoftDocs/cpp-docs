@@ -110,7 +110,7 @@ This document demonstrates how to create agent-based applications that are based
 |`increment_active`|A [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) object that increments the active event counter and passes the input value to the rest of the network.|  
 |`negatives`, `positives`|[concurrency::call](../../parallel/concrt/reference/call-class.md) objects that increment the count of numbers and decrements the active event counter. The objects each use a filter to accept either negative numbers or positive numbers.|  
 |`sentinel`|A [concurrency::call](../../parallel/concrt/reference/call-class.md) object that accepts only the sentinel value of zero and decrements the active event counter.|  
-|`connector`|A [concurrency::unbounded_buffer](../Topic/unbounded_buffer%20Class.md) object that connects the source message buffer to the internal network.|  
+|`connector`|A [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) object that connects the source message buffer to the internal network.|  
   
  Because the `run` method is called on a separate thread, other threads can send messages to the network before the network is fully connected. The `_source` data member is an `unbounded_buffer` object that buffers all input that is sent from the application to the agent. To make sure that the network processes all input messages, the agent first links the internal nodes of the network and then links the start of that network, `connector`, to the `_source` data member. This guarantees that messages do not get processed as the network is being formed.  
   

@@ -114,7 +114,7 @@ class CEdit : public CWnd
   
  Construction can be a one-step process in a class derived from `CEdit`. Write a constructor for the derived class and call **Create** from within the constructor.  
   
- `CEdit` inherits significant functionality from `CWnd`. To set and retrieve text from a `CEdit` object, use the `CWnd` member functions [SetWindowText](../../mfc/reference/cwnd-class.md#cwnd__setwindowtext) and [GetWindowText](../../mfc/reference/cwnd-class.md#cwnd__getwindowtext), which set or get the entire contents of an edit control, even if it is a multiline control. Text lines in a multiline control are separated by '\r\n' character sequences. Also, if an edit control is multiline, get and set part of the control's text by calling the `CEdit` member functions [GetLine](#cedit__getline), [SetSel](#cedit__setsel), [GetSel](#cedit__getsel), and [ReplaceSel](#cedit__replacesel).  
+ `CEdit` inherits significant functionality from `CWnd`. To set and retrieve text from a `CEdit` object, use the `CWnd` member functions [SetWindowText](cwnd-class.md#cwnd__setwindowtext) and [GetWindowText](cwnd-class.md#cwnd__getwindowtext), which set or get the entire contents of an edit control, even if it is a multiline control. Text lines in a multiline control are separated by '\r\n' character sequences. Also, if an edit control is multiline, get and set part of the control's text by calling the `CEdit` member functions [GetLine](#cedit__getline), [SetSel](#cedit__setsel), [GetSel](#cedit__getsel), and [ReplaceSel](#cedit__replacesel).  
   
  If you want to handle Windows notification messages sent by an edit control to its parent (usually a class derived from `CDialog`), add a message-map entry and message-handler member function to the parent class for each message.  
   
@@ -152,7 +152,7 @@ class CEdit : public CWnd
   
  If you create a `CEdit` object within a window, you may also need to destroy it. If you create the `CEdit` object on the stack, it is destroyed automatically. If you create the `CEdit` object on the heap by using the **new** function, you must call **delete** on the object to destroy it when the user terminates the Windows edit control. If you allocate any memory in the `CEdit` object, override the `CEdit` destructor to dispose of the allocations.  
   
- To modify certain styles in an edit control (such as **ES_READONLY**) you must send specific messages to the control instead of using [ModifyStyle](../../mfc/reference/cwnd-class.md#cwnd__modifystyle). See [Edit Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775464) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ To modify certain styles in an edit control (such as **ES_READONLY**) you must send specific messages to the control instead of using [ModifyStyle](cwnd-class.md#cwnd__modifystyle). See [Edit Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775464) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
  For more information on `CEdit`, see:  
   
@@ -161,11 +161,11 @@ class CEdit : public CWnd
 -   Knowledge Base article Q259949 : INFO: SetCaretPos() Is Not Appropriate with CEdit or CRichEditCtrl Controls  
   
 ## Inheritance Hierarchy  
- [CObject](../../mfc/reference/cobject-class.md)  
+ [CObject](cobject-class.md)  
   
- [CCmdTarget](../../mfc/reference/ccmdtarget-class.md)  
+ [CCmdTarget](ccmdtarget-class.md)  
   
- [CWnd](../../mfc/reference/cwnd-class.md)  
+ [CWnd](cwnd-class.md)  
   
  `CEdit`  
   
@@ -272,7 +272,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `dwStyle`  
- Specifies the edit control's style. Apply any combination of [edit styles](../../mfc/reference/edit-styles.md) to the control.  
+ Specifies the edit control's style. Apply any combination of [edit styles](edit-styles.md) to the control.  
   
  `rect`  
  Specifies the edit control's size and position. Can be a `CRect` object or `RECT` structure.  
@@ -291,9 +291,9 @@ virtual BOOL Create(
   
  When **Create** executes, Windows sends the [WM_NCCREATE](http://msdn.microsoft.com/library/windows/desktop/ms632635), [WM_NCCALCSIZE](http://msdn.microsoft.com/library/windows/desktop/ms632634), [WM_CREATE](http://msdn.microsoft.com/library/windows/desktop/ms632619), and [WM_GETMINMAXINFO](http://msdn.microsoft.com/library/windows/desktop/ms632626) messages to the edit control.  
   
- These messages are handled by default by the [OnNcCreate](../../mfc/reference/cwnd-class.md#cwnd__onnccreate), [OnNcCalcSize](../../mfc/reference/cwnd-class.md#cwnd__onnccalcsize), [OnCreate](../../mfc/reference/cwnd-class.md#cwnd__oncreate), and [OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#cwnd__ongetminmaxinfo) member functions in the `CWnd` base class. To extend the default message handling, derive a class from `CEdit`, add a message map to the new class, and override the above message-handler member functions. Override `OnCreate`, for example, to perform needed initialization for the new class.  
+ These messages are handled by default by the [OnNcCreate](cwnd-class.md#cwnd__onnccreate), [OnNcCalcSize](cwnd-class.md#cwnd__onnccalcsize), [OnCreate](cwnd-class.md#cwnd__oncreate), and [OnGetMinMaxInfo](cwnd-class.md#cwnd__ongetminmaxinfo) member functions in the `CWnd` base class. To extend the default message handling, derive a class from `CEdit`, add a message map to the new class, and override the above message-handler member functions. Override `OnCreate`, for example, to perform needed initialization for the new class.  
   
- Apply the following [window styles](../../mfc/reference/window-styles.md) to an edit control.  
+ Apply the following [window styles](window-styles.md) to an edit control.  
   
 - **WS_CHILD** Always  
   
@@ -570,7 +570,7 @@ DWORD GetMargins() const;
  For more information, see [EM_GETMARGINS](http://msdn.microsoft.com/library/windows/desktop/bb761590) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
-  See the example for [CEditView::GetEditCtrl](../../mfc/reference/ceditview-class.md#ceditview__geteditctrl).  
+  See the example for [CEditView::GetEditCtrl](ceditview-class.md#ceditview__geteditctrl).  
   
 ##  <a name="cedit__getmodify"></a>  CEdit::GetModify  
  Call this function to determine whether the contents of an edit control have been modified.  
@@ -691,7 +691,7 @@ void LimitText(int nChars = 0);
  Specifies the length (in bytes) of the text that the user can enter. If this parameter is 0, the text length is set to **UINT_MAX** bytes. This is the default behavior.  
   
 ### Remarks  
- Changing the text limit restricts only the text the user can enter. It has no effect on any text already in the edit control, nor does it affect the length of the text copied to the edit control by the [SetWindowText](../../mfc/reference/cwnd-class.md#cwnd__setwindowtext) member function in `CWnd`. If an application uses the `SetWindowText` function to place more text into an edit control than is specified in the call to `LimitText`, the user can delete any of the text within the edit control. However, the text limit will prevent the user from replacing the existing text with new text, unless deleting the current selection causes the text to fall below the text limit.  
+ Changing the text limit restricts only the text the user can enter. It has no effect on any text already in the edit control, nor does it affect the length of the text copied to the edit control by the [SetWindowText](cwnd-class.md#cwnd__setwindowtext) member function in `CWnd`. If an application uses the `SetWindowText` function to place more text into an edit control than is specified in the call to `LimitText`, the user can delete any of the text within the edit control. However, the text limit will prevent the user from replacing the existing text with new text, unless deleting the current selection causes the text to fall below the text limit.  
   
 > [!NOTE]
 >  In Win32 (Windows NT and Windows 95/98), [SetLimitText](#cedit__setlimittext) replaces this function.  
@@ -869,7 +869,7 @@ void ReplaceSel(
  To specify that this function can be undone, set the value of this parameter to **TRUE** . The default value is **FALSE**.  
   
 ### Remarks  
- Replaces only a portion of the text in an edit control. If you want to replace all of the text, use the [CWnd::SetWindowText](../../mfc/reference/cwnd-class.md#cwnd__setwindowtext) member function.  
+ Replaces only a portion of the text in an edit control. If you want to replace all of the text, use the [CWnd::SetWindowText](cwnd-class.md#cwnd__setwindowtext) member function.  
   
  If there is no current selection, the replacement text is inserted at the current cursor location.  
   
@@ -976,14 +976,14 @@ void SetLimitText(UINT nMax);
 ### Remarks  
  The text limit is the maximum amount of text, in characters, that the edit control can accept.  
   
- Changing the text limit restricts only the text the user can enter. It has no effect on any text already in the edit control, nor does it affect the length of the text copied to the edit control by the [SetWindowText](../../mfc/reference/cwnd-class.md#cwnd__setwindowtext) member function in `CWnd`. If an application uses the `SetWindowText` function to place more text into an edit control than is specified in the call to `LimitText`, the user can delete any of the text within the edit control. However, the text limit will prevent the user from replacing the existing text with new text, unless deleting the current selection causes the text to fall below the text limit.  
+ Changing the text limit restricts only the text the user can enter. It has no effect on any text already in the edit control, nor does it affect the length of the text copied to the edit control by the [SetWindowText](cwnd-class.md#cwnd__setwindowtext) member function in `CWnd`. If an application uses the `SetWindowText` function to place more text into an edit control than is specified in the call to `LimitText`, the user can delete any of the text within the edit control. However, the text limit will prevent the user from replacing the existing text with new text, unless deleting the current selection causes the text to fall below the text limit.  
   
  This function replaces [LimitText](#cedit__limittext) in Win32.  
   
  For more information, see [EM_SETLIMITTEXT](http://msdn.microsoft.com/library/windows/desktop/bb761647) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
-  See the example for [CEditView::GetEditCtrl](../../mfc/reference/ceditview-class.md#ceditview__geteditctrl).  
+  See the example for [CEditView::GetEditCtrl](ceditview-class.md#ceditview__geteditctrl).  
   
 ##  <a name="cedit__setmargins"></a>  CEdit::SetMargins  
  Call this method to set the left and right margins of this edit control.  
@@ -1009,7 +1009,7 @@ void SetMargins(
  For more information, see [EM_SETMARGINS](http://msdn.microsoft.com/library/windows/desktop/bb761649) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
-  See the example for [CEditView::GetEditCtrl](../../mfc/reference/ceditview-class.md#ceditview__geteditctrl).  
+  See the example for [CEditView::GetEditCtrl](ceditview-class.md#ceditview__geteditctrl).  
   
 ##  <a name="cedit__setmodify"></a>  CEdit::SetModify  
  Call this function to set or clear the modified flag for an edit control.  
@@ -1048,7 +1048,7 @@ void SetPasswordChar(TCHAR ch);
   
  When the `SetPasswordChar` member function is called, `CEdit` will redraw all visible characters using the character specified by *ch*.  
   
- If the edit control is created with the [ES_PASSWORD](../../mfc/reference/edit-styles.md) style, the default password character is set to an asterisk ( **\***). This style is removed if `SetPasswordChar` is called with *ch* set to 0.  
+ If the edit control is created with the [ES_PASSWORD](edit-styles.md) style, the default password character is set to an asterisk ( **\***). This style is removed if `SetPasswordChar` is called with *ch* set to 0.  
   
  For more information, see [EM_SETPASSWORDCHAR](http://msdn.microsoft.com/library/windows/desktop/bb761653) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -1070,7 +1070,7 @@ BOOL SetReadOnly(BOOL bReadOnly = TRUE);
  Nonzero if the operation is successful, or 0 if an error occurs.  
   
 ### Remarks  
- The current setting can be found by testing the [ES_READONLY](../../mfc/reference/edit-styles.md) flag in the return value of [CWnd::GetStyle](../../mfc/reference/cwnd-class.md#cwnd__getstyle).  
+ The current setting can be found by testing the [ES_READONLY](edit-styles.md) flag in the return value of [CWnd::GetStyle](cwnd-class.md#cwnd__getstyle).  
   
  For more information, see [EM_SETREADONLY](http://msdn.microsoft.com/library/windows/desktop/bb761655) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -1199,12 +1199,12 @@ BOOL SetTabStops(
   
  This member function is only processed by multiple-line edit controls.  
   
- `SetTabStops` does not automatically redraw the edit window. If you change the tab stops for text already in the edit control, call [CWnd::InvalidateRect](../../mfc/reference/cwnd-class.md#cwnd__invalidaterect) to redraw the edit window.  
+ `SetTabStops` does not automatically redraw the edit window. If you change the tab stops for text already in the edit control, call [CWnd::InvalidateRect](cwnd-class.md#cwnd__invalidaterect) to redraw the edit window.  
   
  For more information, see [EM_SETTABSTOPS](http://msdn.microsoft.com/library/windows/desktop/bb761663) and [GetDialogBaseUnits](http://msdn.microsoft.com/library/windows/desktop/ms645475) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
-  See the example for [CEditView::SetTabStops](../../mfc/reference/ceditview-class.md#ceditview__settabstops).  
+  See the example for [CEditView::SetTabStops](ceditview-class.md#ceditview__settabstops).  
   
 ##  <a name="cedit__showballoontip"></a>  CEdit::ShowBalloonTip  
  Displays a balloon tip that is associated with the current edit control.  
@@ -1268,10 +1268,10 @@ BOOL Undo();
  [MFC Sample CMNCTRL2](../../top/visual-cpp-samples.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
- [CWnd Class](../../mfc/reference/cwnd-class.md)   
- [CButton Class](../../mfc/reference/cbutton-class.md)   
- [CComboBox Class](../../mfc/reference/ccombobox-class.md)   
- [CListBox Class](../../mfc/reference/clistbox-class.md)   
- [CScrollBar Class](../../mfc/reference/cscrollbar-class.md)   
- [CStatic Class](../../mfc/reference/cstatic-class.md)   
- [CDialog Class](../../mfc/reference/cdialog-class.md)
+ [CWnd Class](cwnd-class.md)   
+ [CButton Class](cbutton-class.md)   
+ [CComboBox Class](ccombobox-class.md)   
+ [CListBox Class](clistbox-class.md)   
+ [CScrollBar Class](cscrollbar-class.md)   
+ [CStatic Class](cstatic-class.md)   
+ [CDialog Class](cdialog-class.md)

@@ -15,23 +15,23 @@ manager: "ghogen"
 # concurrency namespace functions
 ||||  
 |-|-|-|  
-|[Alloc Function](#alloc_function)|[CreateResourceManager Function](#createresourcemanager_function)|[DisableTracing Function](#disabletracing_function)|  
-|[EnableTracing Function](#enabletracing_function)|[Free Function](#free_function)|[GetExecutionContextId Function](#getexecutioncontextid_function)|  
-|[GetOSVersion Function](#getosversion_function)|[GetProcessorCount Function](#getprocessorcount_function)|[GetProcessorNodeCount Function](#getprocessornodecount_function)|  
-|[GetSchedulerId Function](#getschedulerid_function)|[Trace_agents_register_name Function](#trace_agents_register_name_function)|[asend Function](#asend_function)|  
-|[cancel_current_task Function](#cancel_current_task_function)|[clear Function](#clear_function)|[create_async Function](#create_async_function)|  
-|[create_task Function](#create_task_function)|[get_ambient_scheduler Function (Concurrency Runtime)](#get_ambient_scheduler_function__concurrency_runtime_)|[internal_assign_iterators Function](#internal_assign_iterators_function)|  
-|[interruption_point Function](#interruption_point_function)|[is_current_task_group_canceling Function](#is_current_task_group_canceling_function)|[make_choice Function](#make_choice_function)|  
-|[make_greedy_join Function](#make_greedy_join_function)|[make_join Function](#make_join_function)|[make_task Function](#make_task_function)|  
-|[parallel_buffered_sort Function](#parallel_buffered_sort_function)|[parallel_for Function](#parallel_for_function)|[parallel_for_each Function](#parallel_for_each_function)|  
-|[parallel_invoke Function](#parallel_invoke)|[parallel_radixsort Function](#parallel_radixsort_function)|[parallel_reduce Function](#parallel_reduce_function)|  
-|[parallel_sort Function](#parallel_sort_function)|[parallel_transform Function](#parallel_transform_function)|[receive Function](#receive_function)|  
-|[run_with_cancellation_token Function](#run_with_cancellation_token_function)|[send Function](#send_function)|[set_ambient_scheduler Function (Concurrency Runtime)](#set_ambient_scheduler_function__concurrency_runtime_)|  
-|[set_task_execution_resources Function](#set_task_execution_resources_function)|[swap Function](#swap_function)|[task_from_exception Function (Concurrency Runtime)](#task_from_exception_function__concurrency_runtime_)|  
-|[task_from_result Function (Concurrency Runtime)](#task_from_result_function__concurrency_runtime_)|[try_receive Function](#try_receive_function)|[wait Function](#wait_function)|  
-|[when_all Function](#when_all_function)|[when_any Function](#when_any_function)|  
+|[Alloc](#alloc)|[CreateResourceManager](#createresourcemanager)|[DisableTracing](#disabletracing)|  
+|[EnableTracing](#enabletracing)|[Free](#free)|[GetExecutionContextId](#getexecutioncontextid)|  
+|[GetOSVersion](#getosversion)|[GetProcessorCount](#getprocessorcount)|[GetProcessorNodeCount](#getprocessornodecount)|  
+|[GetSchedulerId](#getschedulerid)|[Trace_agents_register_name](#trace_agents_register_name)|[asend](#asend)|  
+|[cancel_current_task](#cancel_current_task)|[clear](#clear)|[create_async](#create_async)|  
+|[create_task](#create_task)|[get_ambient_scheduler](#get_ambient_scheduler)|[internal_assign_iterators](#internal_assign_iterators)|  
+|[interruption_point](#interruption_point)|[is_current_task_group_canceling](#is_current_task_group_canceling)|[make_choice](#make_choice)|  
+|[make_greedy_join](#make_greedy_join)|[make_join](#make_join)|[make_task](#make_task)|  
+|[parallel_buffered_sort](#parallel_buffered_sort)|[parallel_for](#parallel_for)|[parallel_for_each](#parallel_for_each)|  
+|[parallel_invoke](#parallel_invoke)|[parallel_radixsort](#parallel_radixsort)|[parallel_reduce](#parallel_reduce)|  
+|[parallel_sort](#parallel_sort)|[parallel_transform](#parallel_transform)|[receive](#receive)|  
+|[run_with_cancellation_token](#run_with_cancellation_token)|[send](#send)|[set_ambient_scheduler](#set_ambient_scheduler__concurrency_runtime_)|  
+|[set_task_execution_resources](#set_task_execution_resources)|[swap](#swap)|[task_from_exception](#task_from_exception__concurrency_runtime_)|  
+|[task_from_result](#task_from_result__concurrency_runtime_)|[try_receive](#try_receive)|[wait](#wait)|  
+|[when_all](#when_all)|[when_any](#when_any)|  
   
-##  <a name="alloc_function"></a>  Alloc Function  
+##  <a name="alloc"></a>  Alloc  
  Allocates a block of memory of the size specified from the Concurrency Runtime Caching Suballocator.  
   
 ```
@@ -48,7 +48,7 @@ void* __cdecl Alloc(size_t _NumBytes);
 ### Remarks  
  For more information about which scenarios in your application could benefit from using the Caching Suballocator, see [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md).  
   
-##  <a name="asend_function"></a>  asend Function  
+##  <a name="asend"></a>  asend  
  An asynchronous send operation, which schedules a task to propagate the data to the target block.  
   
 ```
@@ -79,7 +79,7 @@ bool asend(
 ### Remarks  
  For more information, see [Message Passing Functions](../../../parallel/concrt/message-passing-functions.md).  
   
-##  <a name="cancel_current_task_function"></a>  cancel_current_task Function  
+##  <a name="cancel_current_task"></a>  cancel_current_task  
  Cancels the currently executing task. This function can be called from within the body of a task to abort the task's execution and cause it to enter the `canceled` state.  
   
  It is not a supported scenario to call this function if you are not within the body of a `task`. Doing so will result in undefined behavior such as a crash or a hang in your application.  
@@ -88,7 +88,7 @@ bool asend(
 inline __declspec(noreturn) void __cdecl cancel_current_task();
 ```  
   
-##  <a name="clear_function"></a>  clear Function  
+##  <a name="clear"></a>  clear  
  Clears the concurrent queue, destroying any currently enqueued elements. This method is not concurrency-safe.  
   
 ```
@@ -101,7 +101,7 @@ void concurrent_queue<T,
  `T`  
  `_Ax`  
   
-##  <a name="create_async_function"></a>  create_async Function  
+##  <a name="create_async"></a>  create_async  
  Creates a Windows Runtime asynchronous construct based on a user supplied lambda or function object. The return type of `create_async` is one of either `IAsyncAction^`, `IAsyncActionWithProgress<TProgress>^`, `IAsyncOperation<TResult>^`, or `IAsyncOperationWithProgress<TResult, TProgress>^` based on the signature of the lambda passed to the method.  
   
 ```
@@ -132,7 +132,7 @@ __declspec(noinline) auto create_async(const _Function& _Func) -> decltype(ref n
   
  This function is only available to Windows Store apps.  
   
-##  <a name="createresourcemanager_function"></a>  CreateResourceManager Function  
+##  <a name="createresourcemanager"></a>  CreateResourceManager  
  Returns an interface that represents the singleton instance of the Concurrency Runtime's Resource Manager. The Resource Manager is responsible for assigning resources to schedulers that want to cooperate with each other.  
   
 ```
@@ -147,7 +147,7 @@ IResourceManager* __cdecl CreateResourceManager();
   
  [unsupported_os](../../../parallel/concrt/reference/unsupported-os-class.md) is thrown if the operating system is not supported by the Concurrency Runtime.  
   
-##  <a name="create_task_function"></a>  create_task Function  
+##  <a name="create_task"></a>  create_task  
  Creates a PPL [task](http://msdn.microsoft.com/en-us/5389e8a5-5038-40b6-844a-55e9b58ad35f) object. `create_task` can be used anywhere you would have used a task constructor. It is provided mainly for convenience, because it allows use of the `auto` keyword while creating tasks.  
   
 ```
@@ -183,7 +183,7 @@ __declspec(
   
  In a Windows Store app, if `_Param` is of type Windows::Foundation::IAsyncOperation\<T>^ or Windows::Foundation::IAsyncOperationWithProgress\<T,P>^, or a functor that returns either of those types, the created task will be of type `task<T>`. If `_Param` is of type Windows::Foundation::IAsyncAction^ or Windows::Foundation::IAsyncActionWithProgress\<P>^, or a functor that returns either of those types, the created task will have type `task<void>`.  
   
-##  <a name="disabletracing_function"></a>  DisableTracing Function  
+##  <a name="disabletracing"></a>  DisableTracing  
  Disables tracing in the Concurrency Runtime. This function is deprecated because ETW tracing is unregistered by default.  
   
 ```
@@ -193,7 +193,7 @@ __declspec(deprecated("Concurrency::DisableTracing is a deprecated function.")) 
 ### Return Value  
  If tracing was correctly disabled, `S_OK` is returned. If tracing was not previously initiated, `E_NOT_STARTED` is returned  
   
-##  <a name="enabletracing_function"></a>  EnableTracing Function  
+##  <a name="enabletracing"></a>  EnableTracing  
  Enables tracing in the Concurrency Runtime. This function is deprecated because ETW tracing is now on by default.  
   
 ```
@@ -203,7 +203,7 @@ __declspec(deprecated("Concurrency::EnableTracing is a deprecated function.")) _
 ### Return Value  
  If tracing was correctly initiated, `S_OK` is returned; otherwise, `E_NOT_STARTED` is returned.  
   
-##  <a name="free_function"></a>  Free Function  
+##  <a name="free"></a>  Free  
  Releases a block of memory previously allocated by the `Alloc` method to the Concurrency Runtime Caching Suballocator.  
   
 ```
@@ -217,7 +217,7 @@ void __cdecl Free(_Pre_maybenull_ _Post_invalid_ void* _PAllocation);
 ### Remarks  
  For more information about which scenarios in your application could benefit from using the Caching Suballocator, see [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md).  
   
-##  <a name="get_ambient_scheduler_function__concurrency_runtime_"></a>  get_ambient_scheduler Function (Concurrency Runtime)  
+##  <a name="get_ambient_scheduler__concurrency_runtime_"></a>  get_ambient_scheduler  
   
 ```
 inline std::shared_ptr<::Concurrency::scheduler_interface> get_ambient_scheduler();
@@ -225,7 +225,7 @@ inline std::shared_ptr<::Concurrency::scheduler_interface> get_ambient_scheduler
   
 ### Return Value  
   
-##  <a name="getexecutioncontextid_function"></a>  GetExecutionContextId Function  
+##  <a name="getexecutioncontextid"></a>  GetExecutionContextId  
  Returns a unique identifier that can be assigned to an execution context that implements the `IExecutionContext` interface.  
   
 ```
@@ -238,7 +238,7 @@ unsigned int __cdecl GetExecutionContextId();
 ### Remarks  
  Use this method to obtain an identifier for your execution context before you pass an `IExecutionContext` interface as a parameter to any of the methods offered by the Resource Manager.  
   
-##  <a name="getosversion_function"></a>  GetOSVersion Function  
+##  <a name="getosversion"></a>  GetOSVersion  
  Returns the operating system version.  
   
 ```
@@ -251,7 +251,7 @@ IResourceManager::OSVersion __cdecl GetOSVersion();
 ### Remarks  
  [unsupported_os](../../../parallel/concrt/reference/unsupported-os-class.md) is thrown if the operating system is not supported by the Concurrency Runtime.  
   
-##  <a name="getprocessorcount_function"></a>  GetProcessorCount Function  
+##  <a name="getprocessorcount"></a>  GetProcessorCount  
  Returns the number of hardware threads on the underlying system.  
   
 ```
@@ -264,7 +264,7 @@ unsigned int __cdecl GetProcessorCount();
 ### Remarks  
  [unsupported_os](../../../parallel/concrt/reference/unsupported-os-class.md) is thrown if the operating system is not supported by the Concurrency Runtime.  
   
-##  <a name="getprocessornodecount_function"></a>  GetProcessorNodeCount Function  
+##  <a name="getprocessornodecount"></a>  GetProcessorNodeCount  
  Returns the number of NUMA nodes or processor packages on the underlying system.  
   
 ```
@@ -279,7 +279,7 @@ unsigned int __cdecl GetProcessorNodeCount();
   
  [unsupported_os](../../../parallel/concrt/reference/unsupported-os-class.md) is thrown if the operating system is not supported by the Concurrency Runtime.  
   
-##  <a name="getschedulerid_function"></a>  GetSchedulerId Function  
+##  <a name="getschedulerid"></a>  GetSchedulerId  
  Returns a unique identifier that can be assigned to a scheduler that implements the `IScheduler` interface.  
   
 ```
@@ -292,7 +292,7 @@ unsigned int __cdecl GetSchedulerId();
 ### Remarks  
  Use this method to obtain an identifier for your scheduler before you pass an `IScheduler` interface as a parameter to any of the methods offered by the Resource Manager.  
   
-##  <a name="internal_assign_iterators_function"></a>  internal_assign_iterators Function  
+##  <a name="internal_assign_iterators"></a>  internal_assign_iterators  
   
 ```
 template<typename T, class _Ax>
@@ -311,7 +311,7 @@ template<class _I> void concurrent_vector<T,
  `first`  
  `last`  
   
-##  <a name="interruption_point_function"></a>  interruption_point Function  
+##  <a name="interruption_point"></a>  interruption_point  
  Creates an interruption point for cancellation. If a cancellation is in progress in the context where this function is called, this will throw an internal exception that aborts the execution of the currently executing parallel work. If cancellation is not in progress, the function does nothing.  
   
 ```
@@ -321,7 +321,7 @@ inline void interruption_point();
 ### Remarks  
  You should not catch the internal cancellation exception thrown by the `interruption_point()` function. The exception will be caught and handled by the runtime, and catching it may cause your program to behave abnormally.  
   
-##  <a name="is_current_task_group_canceling_function"></a>  is_current_task_group_canceling Function  
+##  <a name="is_current_task_group_canceling"></a>  is_current_task_group_canceling  
  Returns an indication of whether the task group which is currently executing inline on the current context is in the midst of an active cancellation (or will be shortly). Note that if there is no task group currently executing inline on the current context, `false` will be returned.  
   
 ```
@@ -334,7 +334,7 @@ bool __cdecl is_current_task_group_canceling();
 ### Remarks  
  For more information, see [Cancellation](../../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
   
-##  <a name="make_choice_function"></a>  make_choice Function  
+##  <a name="make_choice"></a>  make_choice  
  Constructs a `choice` messaging block from an optional `Scheduler` or `ScheduleGroup` and two or more input sources.  
   
 ```
@@ -402,7 +402,7 @@ choice<std::tuple<T1,
 ### Return Value  
  A `choice` message block with two or more input sources.  
   
-##  <a name="make_greedy_join_function"></a>  make_greedy_join Function  
+##  <a name="make_greedy_join"></a>  make_greedy_join  
  Constructs a `greedy multitype_join` messaging block from an optional `Scheduler` or `ScheduleGroup` and two or more input sources.  
   
 ```
@@ -473,7 +473,7 @@ multitype_join<std::tuple<T1,
 ### Return Value  
  A `greedy multitype_join` message block with two or more input sources.  
   
-##  <a name="make_join_function"></a>  make_join Function  
+##  <a name="make_join"></a>  make_join  
  Constructs a `non_greedy multitype_join` messaging block from an optional `Scheduler` or `ScheduleGroup` and two or more input sources.  
   
 ```
@@ -526,7 +526,7 @@ make_join(
 ### Return Value  
  A `non_greedy multitype_join` message block with two or more input sources.  
   
-##  <a name="make_task_function"></a>  make_task Function  
+##  <a name="make_task"></a>  make_task  
  A factory method for creating a `task_handle` object.  
   
 ```
@@ -547,7 +547,7 @@ task_handle<_Function> make_task(const _Function& _Func);
 ### Remarks  
  This function is useful when you need to create a `task_handle` object with a lambda expression, because it allows you to create the object without knowing the true type of the lambda functor.  
   
-##  <a name="parallel_buffered_sort_function"></a>  parallel_buffered_sort Function  
+##  <a name="parallel_buffered_sort"></a>  parallel_buffered_sort  
  Arranges the elements in a specified range into a nondescending order, or according to an ordering criterion specified by a binary predicate, in parallel. This function is semantically similar to `std::sort` in that it is a compare-based, unstable, in-place sort except that it needs `O(n)` additional space, and requires default initialization for the elements being sorted.  
   
 ```
@@ -631,7 +631,7 @@ inline void parallel_buffered_sort(
   
  The algorithm divides the input range into two chunks and successively divides each chunk into two sub-chunks for execution in parallel. The optional argument `_Chunk_size` can be used to indicate to the algorithm that it should handles chunks of size < `_Chunk_size` serially.  
   
-##  <a name="parallel_for_function"></a>  parallel_for Function  
+##  <a name="parallel_for"></a>  parallel_for  
  `parallel_for` iterates over a range of indices and executes a user-supplied function at each iteration, in parallel.  
   
 ```
@@ -707,7 +707,7 @@ void parallel_for(
 ### Remarks  
  For more information, see [Parallel Algorithms](../../../parallel/concrt/parallel-algorithms.md).  
   
-##  <a name="parallel_for_each_function"></a>  parallel_for_each Function  
+##  <a name="parallel_for_each"></a>  parallel_for_each  
  `parallel_for_each` applies a specified function to each element within a range, in parallel. It is semantically equivalent to the `for_each` function in the `std` namespace, except that iteration over the elements is performed in parallel, and the order of iteration is unspecified. The argument `_Func` must support a function call operator of the form `operator()(T)` where the parameter `T` is the item type of the container being iterated over.  
   
 ```
@@ -752,7 +752,7 @@ void parallel_for_each(
   
  For more information, see [Parallel Algorithms](../../../parallel/concrt/parallel-algorithms.md).  
   
-##  <a name="parallel_invoke_function"></a>  parallel_invoke Function  
+##  <a name="parallel_invoke"></a>  parallel_invoke  
  Executes the function objects supplied as parameters in parallel, and blocks until they have finished executing. Each function object could be a lambda expression, a pointer to function, or any object that supports the function call operator with the signature `void operator()()`.  
   
 ```
@@ -948,7 +948,7 @@ void parallel_invoke(
   
  For more information, see [Parallel Algorithms](../../../parallel/concrt/parallel-algorithms.md).  
   
-##  <a name="parallel_radixsort_function"></a>  parallel_radixsort Function  
+##  <a name="parallel_radixsort"></a>  parallel_radixsort  
  Arranges elements in a specified range into an non descending order using a radix sorting algorithm. This is a stable sort function which requires a projection function that can project elements to be sorted into unsigned integer-like keys. Default initialization is required for the elements being sorted.  
   
 ```
@@ -1028,7 +1028,7 @@ inline void parallel_radixsort(
   
  The algorithm divides the input range into two chunks and successively divides each chunk into two sub-chunks for execution in parallel. The optional argument `_Chunk_size` can be used to indicate to the algorithm that it should handles chunks of size < `_Chunk_size` serially.  
   
-##  <a name="parallel_reduce_function"></a>  parallel_reduce Function  
+##  <a name="parallel_reduce"></a>  parallel_reduce  
  Computes the sum of all elements in a specified range by computing successive partial sums, or computes the result of successive partial results similarly obtained from using a specified binary operation other than sum, in parallel. `parallel_reduce` is semantically similar to `std::accumulate`, except that it requires the binary operation to be associative, and requires an identity value instead of an initial value.  
   
 ```
@@ -1098,7 +1098,7 @@ inline _Reduce_type parallel_reduce(
   
  For the third overload, the identity value type must be the same as the reduction result type, but the iterator's `value_type` may be different from both. The range reduction function `_Range_fun` is used in the first phase with the identity value as the initial value, and the binary function `_Sym_reduce_fun` is applied to sub results in the second phase.  
   
-##  <a name="parallel_sort_function"></a>  parallel_sort Function  
+##  <a name="parallel_sort"></a>  parallel_sort  
  Arranges the elements in a specified range into a nondescending order, or according to an ordering criterion specified by a binary predicate, in parallel. This function is semantically similar to `std::sort` in that it is a compare-based, unstable, in-place sort.  
   
 ```
@@ -1141,7 +1141,7 @@ inline void parallel_sort(
   
  The algorithm divides the input range into two chunks and successively divides each chunk into two sub-chunks for execution in parallel. The optional argument `_Chunk_size` can be used to indicate to the algorithm that it should handles chunks of size < `_Chunk_size` serially.  
   
-##  <a name="parallel_transform_function"></a>  parallel_transform Function  
+##  <a name="parallel_transform"></a>  parallel_transform  
  Applies a specified function object to each element in a source range, or to a pair of elements from two source ranges, and copies the return values of the function object into a destination range, in parallel. This functional is semantically equivalent to `std::transform`.  
   
 ```
@@ -1264,7 +1264,7 @@ _Output_iterator parallel_transform(
   
  For more information, see [Parallel Algorithms](../../../parallel/concrt/parallel-algorithms.md).  
   
-##  <a name="receive_function"></a>  receive Function  
+##  <a name="receive"></a>  receive  
  A general receive implementation, allowing a context to wait for data from exactly one source and filter the values that are accepted.  
   
 ```
@@ -1312,7 +1312,7 @@ T receive(
   
  For more information, see [Message Passing Functions](../../../parallel/concrt/message-passing-functions.md).  
   
-##  <a name="run_with_cancellation_token_function"></a>  run_with_cancellation_token Function  
+##  <a name="run_with_cancellation_token"></a>  run_with_cancellation_token  
  Executes a function object immediately and synchronously in the context of a given cancellation token.  
   
 ```
@@ -1335,7 +1335,7 @@ void run_with_cancellation_token(
 ### Remarks  
  Any interruption points in the function object will be triggered when the `cancellation_token` is canceled. The explicit token `_Ct` will isolate this `_Func` from parent cancellation if the parent has a different token or no token.  
   
-##  <a name="send_function"></a>  send Function  
+##  <a name="send"></a>  send  
  A synchronous send operation, which waits until the target either accepts or declines the message.  
   
 ```
@@ -1366,7 +1366,7 @@ bool send(
 ### Remarks  
  For more information, see [Message Passing Functions](../../../parallel/concrt/message-passing-functions.md).  
   
-##  <a name="set_ambient_scheduler_function__concurrency_runtime_"></a>  set_ambient_scheduler Function (Concurrency Runtime)  
+##  <a name="set_ambient_scheduler__concurrency_runtime_"></a>  set_ambient_scheduler  
   
 ```
 inline void set_ambient_scheduler(std::shared_ptr<::Concurrency::scheduler_interface> _Scheduler);
@@ -1375,7 +1375,7 @@ inline void set_ambient_scheduler(std::shared_ptr<::Concurrency::scheduler_inter
 ### Parameters  
  `_Scheduler`  
   
-##  <a name="set_task_execution_resources_function"></a>  set_task_execution_resources Function  
+##  <a name="set_task_execution_resources"></a>  set_task_execution_resources  
  Restricts the execution resources used by the Concurrency Runtime internal worker threads to the affinity set specified.  
   
  It is valid to call this method only before the Resource Manager has been created, or between two Resource Manager lifetimes. It can be invoked multiple times as long as the Resource Manager does not exist at the time of invocation. After an affinity limit has been set, it remains in effect until the next valid call to the `set_task_execution_resources` method.  
@@ -1408,7 +1408,7 @@ void __cdecl set_task_execution_resources(
   
  Programatically modifying the process affinity after this method has been invoked will not cause the Resource Manager to re-evaluate the affinity it is restricted to. Therefore, all changes to process affinity should be made before calling this method.  
   
-##  <a name="swap_function"></a>  swap Function  
+##  <a name="swap"></a>  swap  
  Exchanges the elements of two `concurrent_vector` objects.  
   
 ```
@@ -1436,7 +1436,7 @@ inline void swap(
   
  This method is not concurrency-safe. You must ensure that no other threads are performing operations on either of the concurrent vectors when you call this method.  
   
-##  <a name="task_from_exception_function__concurrency_runtime_"></a>  task_from_exception Function (Concurrency Runtime)  
+##  <a name="task_from_exception__concurrency_runtime_"></a>  task_from_exception  
   
 ```
 template<typename _TaskType, typename _ExType>
@@ -1453,7 +1453,7 @@ task<_TaskType> task_from_exception(
   
 ### Return Value  
   
-##  <a name="task_from_result_function__concurrency_runtime_"></a>  task_from_result Function (Concurrency Runtime)  
+##  <a name="task_from_result__concurrency_runtime_"></a>  task_from_result  
   
 ```
 template<typename T>
@@ -1474,7 +1474,7 @@ inline task<void> task_from_result(
   
 ### Return Value  
   
-##  <a name="trace_agents_register_name_function"></a>  Trace_agents_register_name Function  
+##  <a name="trace_agents_register_name"></a>  Trace_agents_register_name  
  Associates the given name to the message block or agent in the ETW trace.  
   
 ```
@@ -1494,7 +1494,7 @@ void Trace_agents_register_name(
  `_Name`  
  The name for the given object.  
   
-##  <a name="try_receive_function"></a>  try_receive Function  
+##  <a name="try_receive"></a>  try_receive  
  A general try-receive implementation, allowing a context to look for data from exactly one source and filter the values that are accepted. If the data is not ready, the method will return false.  
   
 ``` 
@@ -1540,7 +1540,7 @@ bool try_receive(
 ### Remarks  
  For more information, see [Message Passing Functions](../../../parallel/concrt/message-passing-functions.md).  
   
-##  <a name="wait_function"></a>  wait Function  
+##  <a name="wait"></a>  wait  
  Pauses the current context for a specified amount of time.  
   
 ```
@@ -1554,7 +1554,7 @@ void __cdecl wait(unsigned int _Milliseconds);
 ### Remarks  
  If this method is called on a Concurrency Runtime scheduler context, the scheduler will find a different context to run on the underlying resource. Because the scheduler is cooperative in nature, this context cannot resume exactly after the number of milliseconds specified. If the scheduler is busy executing other tasks that do not cooperatively yield to the scheduler, the wait period could be indefinite.  
   
-##  <a name="when_all_function"></a>  when_all Function  
+##  <a name="when_all"></a>  when_all  
  Creates a task that will complete successfully when all of the tasks supplied as arguments complete successfully.  
   
 ```
@@ -1591,7 +1591,7 @@ auto when_all(
   
  For more information, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
-##  <a name="when_any_function"></a>  when_any Function  
+##  <a name="when_any"></a>  when_any  
  Creates a task that will complete successfully when any of the tasks supplied as arguments completes successfully.  
   
 ```

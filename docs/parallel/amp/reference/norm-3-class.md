@@ -121,7 +121,7 @@ class norm_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[norm_3::norm_3 Constructor](../Topic/norm_3::norm_3%20Constructor.md)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[norm_3::norm_3 Constructor] --brokenlink-- (#norm_3::norm_3%20Constructor.md)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -181,7 +181,7 @@ class norm_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[norm_3::size Constant](../Topic/norm_3::size%20Constant.md)||  
+|[norm_3::size Constant] --brokenlink-- (#norm_3::size%20Constant.md)||  
   
 ### Public Data Members  
   
