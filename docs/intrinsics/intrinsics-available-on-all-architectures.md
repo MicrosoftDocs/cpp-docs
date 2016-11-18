@@ -145,8 +145,8 @@ The following intrinsics are available with the x86, AMD64, and ARM architecture
 |[fmod](../c-runtime-library/reference/fmod-fmodf.md)|math.h|  
 |[fmodf](../c-runtime-library/reference/fmod-fmodf.md)|math.h|  
 |[fmodl](../c-runtime-library/reference/fmod-fmodf.md)|math.h|  
-|[labs](../misc/labs-llabs.md)|stdlib.h|  
-|[llabs](../misc/labs-llabs.md)|stdlib.h|  
+|[labs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|  
+|[llabs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|  
 |[log](../c-runtime-library/reference/log-logf-log10-log10f.md)|math.h|  
 |[log10](../c-runtime-library/reference/log-logf-log10-log10f.md)|math.h|  
 |[log10f](../c-runtime-library/reference/log-logf-log10-log10f.md)|math.h|  
