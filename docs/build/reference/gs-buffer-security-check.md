@@ -131,7 +131,7 @@ struct { int a; int b; };
   
 1.  In **Solution Explorer**, right-click the project and then click **Properties**.  
   
-     For more information, see [How to: Open Project Property Pages](../../misc/how-to-open-project-property-pages.md).  
+     For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
 2.  In the **Property Pages** dialog box, click the **C/C++** folder.  
   

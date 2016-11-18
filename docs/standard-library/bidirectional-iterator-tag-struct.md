@@ -63,7 +63,7 @@ struct bidirectional_iterator_tag    : public forward_iterator_tag {};
 ## See Also  
  [forward_iterator_tag Struct](../standard-library/forward-iterator-tag-struct.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../istandard-library/cpp-standard-library-reference.md)
 
 
 

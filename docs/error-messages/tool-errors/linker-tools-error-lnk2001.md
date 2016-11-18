@@ -45,7 +45,7 @@ unresolved external symbol "symbol"
   
 -   When upgrading a managed library or web service project from Visual C++ 2003, the **/Zl** compiler option is added to the **Command Line** property page. This will cause LNK2001.  
   
-     To resolve this error, either add msvcrt.lib and msvcmrt.lib to the linker's Additional Dependencies property. Or, remove **/Zl** from the **Command Line** property page. For more information, see [/Zl (Omit Default Library Name)](../../build/reference/zl-omit-default-library-name.md) and [How to: Open Project Property Pages](../../misc/how-to-open-project-property-pages.md).  
+     To resolve this error, either add msvcrt.lib and msvcmrt.lib to the linker's Additional Dependencies property. Or, remove **/Zl** from the **Command Line** property page. For more information, see [/Zl (Omit Default Library Name)](../../build/reference/zl-omit-default-library-name.md) and [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
 -   What the code asks for doesn't exist (the symbol is spelled incorrectly or uses the wrong case, for example).  
   

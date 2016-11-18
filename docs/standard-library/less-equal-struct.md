@@ -144,7 +144,7 @@ Sorted vector v1 = (2836 2836 2836 6205 15251 31247 37154 48755)
  **Namespace:** std  
   
 ## See Also  
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../istandard-library/cpp-standard-library-reference.md)
 
 
 

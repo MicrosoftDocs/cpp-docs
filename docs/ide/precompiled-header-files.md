@@ -51,4 +51,4 @@ These files are used to build a precompiled header file *Projname*.pch and a pre
   
 ## See Also  
  [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)   
- [How to: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md)
+ [Working with Project Properties](../ide/working-with-project-properties.md)

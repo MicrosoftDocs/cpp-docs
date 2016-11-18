@@ -2149,5 +2149,5 @@ The multiset has elements: 10 20.
  [\<set> Members](http://msdn.microsoft.com/en-us/0c2d57c0-173f-4204-b579-c5f06aad8b95)   
  [Containers](../cpp/containers-modern-cpp.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../istandard-library/cpp-standard-library-reference.md)
 

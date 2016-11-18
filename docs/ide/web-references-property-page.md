@@ -54,7 +54,7 @@ The **Web References** property page specifies how the XML Web service proxy cla
  **Additional References**  
  Specifies the additional DLLs referenced by the proxy DLL.  
   
- For information on how to access the **Web Reference** property page, see [How To: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md).  
+ For information on how to access the **Web Reference** property page, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
 ## See Also  
  [Property Pages](../ide/property-pages-visual-cpp.md)

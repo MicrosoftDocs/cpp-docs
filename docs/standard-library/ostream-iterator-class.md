@@ -411,7 +411,7 @@ by intOut are:
 ## See Also  
  [\<iterator>](../standard-library/iterator.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../istandard-library/cpp-standard-library-reference.md)
 
 
 

@@ -64,7 +64,7 @@ For each combination of project configuration and target platform in your projec
   
 ### To specify a custom build step  
   
-1.  On the menu bar, choose **Project**, **Properties**. For more information, see [How to: Open Project Property Pages](../misc/how-to-open-project-property-pages.md).  
+1.  On the menu bar, choose **Project**, **Properties**. For more information, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
 2.  In the **Property Pages** dialog box, navigate to the **Configuration Properties**, **Custom Build Step**, **General** page.  
   

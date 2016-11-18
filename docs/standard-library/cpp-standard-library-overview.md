@@ -50,7 +50,7 @@ All C++ library entities are declared or defined in one or more standard headers
   
 -   [iostreams](../standard-library/iostreams-conventions.md) conventions.  
   
--   [Standard Template Library](../misc/standard-template-library.md) conventions.  
+-   [C++ Standard Library Reference](../istandard-library/cpp-standard-library-reference.md) conventions.  
   
  This section contains the following sections:  
   
@@ -68,7 +68,7 @@ All C++ library entities are declared or defined in one or more standard headers
   
 -   [Debug Iterator Support](../standard-library/debug-iterator-support.md)  
   
--   [Standard Template Library](../misc/standard-template-library.md)  
+-   [C++ Standard Library Reference](../istandard-library/cpp-standard-library-reference.md)  
   
 -   [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)  
   

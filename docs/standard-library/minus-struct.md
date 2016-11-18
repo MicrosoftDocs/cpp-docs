@@ -136,7 +136,7 @@ The element-wise differences between v1 and v2 are: ( 2 3 4 5 6 7 )
   
 ## See Also  
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../istandard-library/cpp-standard-library-reference.md)
 
 
 

@@ -93,5 +93,5 @@ The vector with first element flipped is:
   
 ## See Also  
  [vector\<bool>::reference Class](../standard-library/vector-bool-reference-class.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../istandard-library/cpp-standard-library-reference.md)
 

@@ -63,7 +63,7 @@ struct forward_iterator_tag    : public input_iterator_tag {};
 ## See Also  
  [input_iterator_tag Struct](../standard-library/input-iterator-tag-struct.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../istandard-library/cpp-standard-library-reference.md)
 
 
 
