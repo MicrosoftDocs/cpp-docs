@@ -66,15 +66,15 @@ The Internet requires new approaches to application design because of its slow n
 ## MFC Classes for Data Paths in ActiveX Controls  
  The MFC classes `CDataPathProperty` and [CCachedDataPathProperty](../mfc/reference/ccacheddatapathproperty-class.md) implement ActiveX control properties that can be loaded asynchronously. Asynchronous properties are loaded after synchronous initiation. Asynchronous ActiveX controls repeatedly invoke a callback to indicate availability of new data during a lengthy property exchange process.  
   
- `CDataPathProperty` is derived from `CAsyncMonikerFile`. `CCachedDataPathProperty` is derived from `CDataPathProperty`. To implement asynchronous properties in your ActiveX controls, derive a class from `CDataPathProperty` or `CCachedDataPathProperty`, and override [OnDataAvailable](../mfc/reference/casyncmonikerfile-class.md#ondataavailable) and other notifications you wish to receive.  
+ `CDataPathProperty` is derived from `CAsyncMonikerFile`. `CCachedDataPathProperty` is derived from `CDataPathProperty`. To implement asynchronous properties in your ActiveX controls, derive a class from `CDataPathProperty` or `CCachedDataPathProperty`, and override [OnDataAvailable](../mfc/reference/casyncmonikerfile-class.md#casyncmonikerfile__ondataavailable) and other notifications you wish to receive.  
   
 #### To download a file using asynchronous monikers  
   
 1.  Declare a class derived from [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md).  
   
-2.  Override [OnDataAvailable](../mfc/reference/casyncmonikerfile-class.md#ondataavailable) to display the data.  
+2.  Override [OnDataAvailable](../mfc/reference/casyncmonikerfile-class.md#casyncmonikerfile__ondataavailable) to display the data.  
   
-3.  Override other member functions, including [OnProgress](../mfc/reference/casyncmonikerfile-class.md#onprogress), [OnStartBinding](../mfc/reference/casyncmonikerfile-class.md#onstartbinding), and [OnStopBinding](../mfc/reference/casyncmonikerfile-class.md#onstopbinding).  
+3.  Override other member functions, including [OnProgress](../mfc/reference/casyncmonikerfile-class.md#casyncmonikerfile__onprogress), [OnStartBinding](../mfc/reference/casyncmonikerfile-class.md#casyncmonikerfile__onstartbinding), and [OnStopBinding](../mfc/reference/casyncmonikerfile-class.md#casyncmonikerfile__onstopbinding).  
   
 4.  Declare an instance of this class and use it to open URLs.  
   

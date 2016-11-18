@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Run Member Function
-A framework application spends most of its time in the [Run](../mfc/reference/cwinapp-class.md#run) member function of class [CWinApp](../mfc/reference/cwinapp-class.md). After initialization, `WinMain` calls **Run** to process the message loop.  
+A framework application spends most of its time in the [Run](../mfc/reference/cwinapp-class.md#cwinapp__run) member function of class [CWinApp](../mfc/reference/cwinapp-class.md). After initialization, `WinMain` calls **Run** to process the message loop.  
   
  **Run** cycles through a message loop, checking the message queue for available messages. If a message is available, **Run** dispatches it for action. If no messages are available, which is often true, **Run** calls `OnIdle` to do any idle-time processing that you or the framework may need done. If there are no messages and no idle processing to do, the application waits until something happens. When the application terminates, **Run** calls `ExitInstance`. The figure in [OnIdle Member Function](../mfc/onidle-member-function.md) shows the sequence of actions in the message loop.  
   

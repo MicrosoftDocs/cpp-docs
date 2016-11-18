@@ -248,7 +248,7 @@ STDMETHOD(SetAdvise)(DWORD /* aspects */,
 ```  
   
 ### Remarks  
- The pointer to the [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513) interface on the advise sink is stored in the control class data member [CComControlBase::m_spAdviseSink](../Topic/CComControlBase::m_spAdviseSink.md).  
+ The pointer to the [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513) interface on the advise sink is stored in the control class data member [CComControlBase::m_spAdviseSink](ccomcontrolbase-class.md#m_spadvisesink).  
   
  See [IViewObject::SetAdvise](http://msdn.microsoft.com/library/windows/desktop/ms683950) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   

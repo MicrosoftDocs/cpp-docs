@@ -68,21 +68,21 @@ class CComCurrency
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCurrency::operator -](../Topic/CComCurrency::operator%20-2.md)|This operator is used to perform subtraction on a `CComCurrency` object.|  
-|[CComCurrency::operator !=](../Topic/CComCurrency::operator%20!=.md)|Compares two `CComCurrency` objects for inequality.|  
-|[CComCurrency::operator *](#ccomcurrency__operator__star)|This operator is used to perform multiplication on a `CComCurrency` object.|  
-|[CComCurrency::operator *=](#ccomcurrency__operator__star_eq)|This operator is used to perform multiplication on a `CComCurrency` object and assign it the result.|  
-|[CComCurrency::operator /](../Topic/CComCurrency::operator%20-1.md)|This operator is used to perform division on a `CComCurrency` object.|  
-|[CComCurrency::operator /=](../Topic/CComCurrency::operator%20-=2.md)|This operator is used to perform division on a `CComCurrency` object and assign it the result.|  
-|[CComCurrency::operator +](#ccomcurrency__operator__add)|This operator is used to perform addition on a `CComCurrency` object.|  
-|[CComCurrency::operator +=](#ccomcurrency__operator__add_eq)|This operator is used to perform addition on a `CComCurrency` object and assign the result to the current object.|  
-|[CComCurrency::operator <](../Topic/CComCurrency::operator%20%3C.md)|This operator compares two `CComCurrency` objects to determine the lesser.|  
-|[CComCurrency::operator <=](../Topic/CComCurrency::operator%20%3C=.md)|This operator compares two `CComCurrency` objects to determine equality or the lesser.|  
-|[CComCurrency::operator =](#ccomcurrency__operator__eq)|This operator assigns the `CComCurrency` object to a new value.|  
-|[CComCurrency::operator -=](../Topic/CComCurrency::operator%20-=1.md)|This operator is used to perform subtraction on a `CComCurrency` object and assign it the result.|  
-|[CComCurrency::operator ==](#ccomcurrency__operator__eq_eq)|This operator compares two `CComCurrency` objects for equality.|  
-|[CComCurrency::operator >](../Topic/CComCurrency::operator%20%3E.md)|This operator compares two `CComCurrency` objects to determine the larger.|  
-|[CComCurrency::operator >=](../Topic/CComCurrency::operator%20%3E=.md)|This operator compares two `CComCurrency` objects to determine equality or the larger.|  
+|[CComCurrency::operator -](#ccomcurrency__operator_-)|This operator is used to perform subtraction on a `CComCurrency` object.|  
+|[CComCurrency::operator !=](#ccomcurrency__operator_neq)|Compares two `CComCurrency` objects for inequality.|  
+|[CComCurrency::operator *](#ccomcurrency__operator_star)|This operator is used to perform multiplication on a `CComCurrency` object.|  
+|[CComCurrency::operator *=](#ccomcurrency__operator_star_eq)|This operator is used to perform multiplication on a `CComCurrency` object and assign it the result.|  
+|[CComCurrency::operator /](#ccomcurrency__operator_div)|This operator is used to perform division on a `CComCurrency` object.|  
+|[CComCurrency::operator /=](#ccomcurrency__operator_div_eq)|This operator is used to perform division on a `CComCurrency` object and assign it the result.|  
+|[CComCurrency::operator +](#ccomcurrency__operator_add)|This operator is used to perform addition on a `CComCurrency` object.|  
+|[CComCurrency::operator +=](#ccomcurrency__operator_add_eq)|This operator is used to perform addition on a `CComCurrency` object and assign the result to the current object.|  
+|[CComCurrency::operator <](#ccomcurrency__operator_lt)|This operator compares two `CComCurrency` objects to determine the lesser.|  
+|[CComCurrency::operator <=](#ccomcurrency__operator_lt_eq)|This operator compares two `CComCurrency` objects to determine equality or the lesser.|  
+|[CComCurrency::operator =](#ccomcurrency__operator_eq)|This operator assigns the `CComCurrency` object to a new value.|  
+|[CComCurrency::operator -=](#ccomcurrency__operator_-_eq)|This operator is used to perform subtraction on a `CComCurrency` object and assign it the result.|  
+|[CComCurrency::operator ==](#ccomcurrency__operator_eq_eq)|This operator compares two `CComCurrency` objects for equality.|  
+|[CComCurrency::operator >](#ccomcurrency__operator_gt)|This operator compares two `CComCurrency` objects to determine the larger.|  
+|[CComCurrency::operator >=](#ccomcurrency__operator_gt_eq)|This operator compares two `CComCurrency` objects to determine equality or the larger.|  
 |[CComCurrency::operator CURRENCY](#ccomcurrency__operator_currency)|Casts a `CURRENCY` object.|  
   
 ### Public Data Members  
@@ -263,7 +263,7 @@ CComCurrency operator-() const;
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#55](../../atl/codesnippet/CPP/ccomcurrency-class_3.cpp)]  
   
-##  <a name="ccomcurrency__operator__neq"></a>  CComCurrency::operator !=  
+##  <a name="ccomcurrency__operator_neq"></a>  CComCurrency::operator !=  
  This operator compares two objects for inequality.  
   
 ```
@@ -280,7 +280,7 @@ bool operator!= (const CComCurrency& cur) const;
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#56](../../atl/codesnippet/CPP/ccomcurrency-class_4.cpp)]  
   
-##  <a name="ccomcurrency__operator__star"></a>  CComCurrency::operator *  
+##  <a name="ccomcurrency__operator_star"></a>  CComCurrency::operator *  
  This operator is used to perform multiplication on a `CComCurrency` object.  
   
 ```
@@ -302,7 +302,7 @@ CComCurrency operator*(long nOperand) const;
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#57](../../atl/codesnippet/CPP/ccomcurrency-class_5.cpp)]  
   
-##  <a name="ccomcurrency__operator__star_eq"></a>  CComCurrency::operator *=  
+##  <a name="ccomcurrency__operator_star_eq"></a>  CComCurrency::operator *=  
  This operator is used to perform multiplication on a `CComCurrency` object and assign it the result.  
   
 ```
@@ -324,7 +324,7 @@ const CComCurrency& operator*= (const CComCurrency& cur);
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#58](../../atl/codesnippet/CPP/ccomcurrency-class_6.cpp)]  
   
-##  <a name="ccomcurrency__operator__"></a>  CComCurrency::operator /  
+##  <a name="ccomcurrency__operator_div"></a>  CComCurrency::operator /  
  This operator is used to perform division on a `CComCurrency` object.  
   
 ```
@@ -341,7 +341,7 @@ CComCurrency operator/(long nOperand) const;
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#59](../../atl/codesnippet/CPP/ccomcurrency-class_7.cpp)]  
   
-##  <a name="ccomcurrency__operator___eq"></a>  CComCurrency::operator /=  
+##  <a name="ccomcurrency__operator_div_eq"></a>  CComCurrency::operator /=  
  This operator is used to perform division on a `CComCurrency` object and assign it the result.  
   
 ```
@@ -358,7 +358,7 @@ const CComCurrency& operator/= (long nOperand);
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#60](../../atl/codesnippet/CPP/ccomcurrency-class_8.cpp)]  
   
-##  <a name="ccomcurrency__operator__add"></a>  CComCurrency::operator +  
+##  <a name="ccomcurrency__operator_add"></a>  CComCurrency::operator +  
  This operator is used to perform addition on a `CComCurrency` object.  
   
 ```
@@ -375,7 +375,7 @@ CComCurrency operator+(const CComCurrency& cur) const;
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#61](../../atl/codesnippet/CPP/ccomcurrency-class_9.cpp)]  
   
-##  <a name="ccomcurrency__operator__add_eq"></a>  CComCurrency::operator +=  
+##  <a name="ccomcurrency__operator_add_eq"></a>  CComCurrency::operator +=  
  This operator is used to perform addition on a `CComCurrency` object and assign the result to the current object.  
   
 ```
@@ -392,7 +392,7 @@ const CComCurrency& operator+= (const CComCurrency& cur);
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#62](../../atl/codesnippet/CPP/ccomcurrency-class_10.cpp)]  
   
-##  <a name="ccomcurrency__operator__lt_"></a>  CComCurrency::operator &lt;  
+##  <a name="ccomcurrency__operator_lt"></a>  CComCurrency::operator &lt;  
  This operator compares two `CComCurrency` objects to determine the lesser.  
   
 ```
@@ -409,7 +409,7 @@ bool operator<(const CComCurrency& cur) const;
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#63](../../atl/codesnippet/CPP/ccomcurrency-class_11.cpp)]  
   
-##  <a name="ccomcurrency__operator__lt__eq"></a>  CComCurrency::operator &lt;=  
+##  <a name="ccomcurrency__operator_lt_eq"></a>  CComCurrency::operator &lt;=  
  This operator compares two `CComCurrency` objects to determine equality or the lesser.  
   
 ```
@@ -426,7 +426,7 @@ bool operator<= (const CComCurrency& cur) const;
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#64](../../atl/codesnippet/CPP/ccomcurrency-class_12.cpp)]  
   
-##  <a name="ccomcurrency__operator__eq"></a>  CComCurrency::operator =  
+##  <a name="ccomcurrency__operator_eq"></a>  CComCurrency::operator =  
  This operator assigns the `CComCurrency` object to a new value.  
   
 ```
@@ -486,7 +486,7 @@ const CComCurrency& operator-= (const CComCurrency& cur);
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#66](../../atl/codesnippet/CPP/ccomcurrency-class_14.cpp)]  
   
-##  <a name="ccomcurrency__operator__eq_eq"></a>  CComCurrency::operator ==  
+##  <a name="ccomcurrency__operator_eq_eq"></a>  CComCurrency::operator ==  
  This operator compares two `CComCurrency` objects for equality.  
   
 ```
@@ -503,7 +503,7 @@ bool operator== (const CComCurrency& cur) const;
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#67](../../atl/codesnippet/CPP/ccomcurrency-class_15.cpp)]  
   
-##  <a name="ccomcurrency__operator__gt_"></a>  CComCurrency::operator &gt;  
+##  <a name="ccomcurrency__operator_gt"></a>  CComCurrency::operator &gt;  
  This operator compares two `CComCurrency` objects to determine the larger.  
   
 ```
@@ -520,7 +520,7 @@ bool operator>(const CComCurrency& cur) const;
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#68](../../atl/codesnippet/CPP/ccomcurrency-class_16.cpp)]  
   
-##  <a name="ccomcurrency__operator__gt__eq"></a>  CComCurrency::operator &gt;=  
+##  <a name="ccomcurrency__operator_gt__eq"></a>  CComCurrency::operator &gt;=  
  This operator compares two `CComCurrency` objects to determine equality or the larger.  
   
 ```

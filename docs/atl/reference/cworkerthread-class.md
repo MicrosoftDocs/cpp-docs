@@ -259,7 +259,7 @@ HRESULT Shutdown(DWORD   dwWait = ATL_WORKER_THREAD_WAIT) throw();
  Note that calling **Shutdown** on an object initialized with a pointer to another `CWorkerThread` object has no effect and always returns S_OK.  
   
 ## See Also  
- [DefaultThreadTraits](../Topic/DefaultThreadTraits.md)   
+ [DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)   
  [Classes](../../atl/reference/atl-classes.md)   
  [Multithreading: Creating Worker Threads](../../parallel/multithreading-creating-worker-threads.md)   
  [IWorkerThreadClient Interface](../../atl/reference/iworkerthreadclient-interface.md)

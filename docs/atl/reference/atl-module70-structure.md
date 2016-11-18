@@ -65,7 +65,7 @@ struct _ATL_MODULE70 {
  Used to coordinate access to internal data in multithreaded situations.  
   
 ## Remarks  
- [_ATL_MODULE](../Topic/_ATL_MODULE.md) is defined as a typedef of `_ATL_MODULE70`.  
+ [_ATL_MODULE](atl-typedefs.md#_atl_module) is defined as a typedef of `_ATL_MODULE70`.  
   
 ## Requirements  
  **Header:** atlbase.h  

@@ -67,7 +67,7 @@ class CComSingleThreadModel
 ## Remarks  
  `CComSingleThreadModel` provides methods for incrementing and decrementing the value of a variable. Unlike [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) and [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md), these methods are not thread-safe.  
   
- Typically, you use `CComSingleThreadModel` through one of two `typedef` names, either [CComObjectThreadModel](../Topic/CComObjectThreadModel.md) or [CComGlobalsThreadModel](../Topic/CComGlobalsThreadModel.md). The class referenced by each `typedef` depends on the threading model used, as shown in the following table:  
+ Typically, you use `CComSingleThreadModel` through one of two `typedef` names, either [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) or [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel). The class referenced by each `typedef` depends on the threading model used, as shown in the following table:  
   
 |typedef|Single threading model|Apartment threading model|Free threading model|  
 |-------------|----------------------------|-------------------------------|--------------------------|  

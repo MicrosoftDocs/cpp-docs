@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Adding Items to the Control
-To add items to the list control ([CListCtrl](../mfc/reference/clistctrl-class.md)), call one of several versions of the [InsertItem](../mfc/reference/clistctrl-class.md#insertitem) member function, depending on what information you have. One version takes a [LV_ITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure that you prepare. Because the `LV_ITEM` structure contains numerous members, you have greater control over the attributes of the list control item.  
+To add items to the list control ([CListCtrl](../mfc/reference/clistctrl-class.md)), call one of several versions of the [InsertItem](../mfc/reference/clistctrl-class.md#clistctrl__insertitem) member function, depending on what information you have. One version takes a [LV_ITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure that you prepare. Because the `LV_ITEM` structure contains numerous members, you have greater control over the attributes of the list control item.  
   
  Two important members (in regard to the report view) of the `LV_ITEM` structure are the `iItem` and `iSubItem` members. The `iItem` member is the zero-based index of the item the structure is referencing and the `iSubItem` member is the one-based index of a subitem, or zero if the structure contains information about an item. With these two members you determine, per item, the type and value of subitem information that is displayed when the list control is in report view. For more information, see [CListCtrl::SetItem](../mfc/reference/clistctrl-class.md#clistctrl__setitem).  
   

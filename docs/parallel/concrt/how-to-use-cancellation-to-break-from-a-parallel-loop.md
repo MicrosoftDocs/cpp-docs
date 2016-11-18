@@ -49,7 +49,7 @@ This example shows how to use cancellation to implement a basic parallel search 
  **cl.exe /EHsc parallel-array-search.cpp**  
   
 ## See Also  
- [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl)   
+ [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation)   
  [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)   
  [parallel_for Function](../Topic/parallel_for%20Function.md)   
  [cancellation_token_source Class](../../parallel/concrt/reference/cancellation-token-source-class.md)

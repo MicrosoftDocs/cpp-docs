@@ -221,5 +221,5 @@ STDMETHOD(RequestLicKey)(DWORD dwReserved,
  [CComClassFactoryAutoThread Class](../../atl/reference/ccomclassfactoryautothread-class.md)   
  [CComClassFactorySingleton Class](../../atl/reference/ccomclassfactorysingleton-class.md)   
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
- [CComGlobalsThreadModel](../Topic/CComGlobalsThreadModel.md)   
+ [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)   
  [Class Overview](../../atl/atl-class-overview.md)

@@ -50,5 +50,5 @@ translation.priority.ht:
  [CSecurityDesc Class](../atl/reference/csecuritydesc-class.md)   
  [CSid Class](../atl/reference/csid-class.md)   
  [CDacl Class](../atl/reference/cdacl-class.md)   
- [CAtlServiceModuleT::Run](../atl/reference/catlservicemodulet-class.md#run)
+ [CAtlServiceModuleT::Run](../atl/reference/catlservicemodulet-class.md#catlservicemodulet__run)
 

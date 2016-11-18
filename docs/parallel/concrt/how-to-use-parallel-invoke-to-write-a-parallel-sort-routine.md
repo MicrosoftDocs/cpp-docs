@@ -38,7 +38,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Use parallel_invoke to Write a Parallel Sort Routine
-This document describes how to use the [parallel_invoke](../../parallel/concrt/parallel-algorithms.md#parallel_invoke_function) algorithm to improve the performance of the bitonic sort algorithm. The bitonic sort algorithm recursively divides the input sequence into smaller sorted partitions. The bitonic sort algorithm can run in parallel because each partition operation is independent of all other operations.  
+This document describes how to use the [parallel_invoke](../../parallel/concrt/parallel-algorithms.md#parallel_invoke) algorithm to improve the performance of the bitonic sort algorithm. The bitonic sort algorithm recursively divides the input sequence into smaller sorted partitions. The bitonic sort algorithm can run in parallel because each partition operation is independent of all other operations.  
   
  Although the bitonic sort is an example of a *sorting network* that sorts all combinations of input sequences, this example sorts sequences whose lengths are a power of two.  
   
