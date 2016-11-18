@@ -63,14 +63,14 @@ class task_handle : public ::Concurrency::details::_UnrealizedChore;
   
 |Name|Description|  
 |----------|-----------------|  
-|[task_handle::operator() Operator](#task_handle__operator___operator)|The function call operator that the runtime invokes to perform the work of the task handle.|  
+|[task_handle::operator() Operator](#task_handle__operator_call)|The function call operator that the runtime invokes to perform the work of the task handle.|  
   
 ## Remarks  
  `task_handle` objects can be used in conjunction with a `structured_task_group` or a more general `task_group` object, to decompose work into parallel tasks. For more information, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
  Note that the creator of a `task_handle` object is responsible for maintaining the lifetime of the created `task_handle` object until it is no longer required by the Concurrency Runtime. Typically, this means that the `task_handle` object must not destruct until either the `wait` or `run_and_wait` method of the `task_group` or `structured_task_group` to which it is queued has been called.  
   
- `task_handle` objects are typically used in conjunction with C++ lambdas. Because you do not know the true type of the lambda, the [make_task]--brokenlink--(../Topic/Concurrency%Namespace%20Functions.md#make_task) function is typically used to create a `task_handle` object.  
+ `task_handle` objects are typically used in conjunction with C++ lambdas. Because you do not know the true type of the lambda, the [make_task](concurrency-namespace-functions.md#make_task) function is typically used to create a `task_handle` object.  
   
  The runtime creates a copy of the work function that you pass to a `task_handle` object. Therefore, any state changes that occur in a function object that you pass to a `task_handle` object will not appear in your copy of that function object.  
   
@@ -82,7 +82,7 @@ class task_handle : public ::Concurrency::details::_UnrealizedChore;
   
  **Namespace:** concurrency  
   
-##  <a name="task_handle__operator___operator"></a>  task_handle::operator() Operator  
+##  <a name="task_handle__operator_call"></a>  task_handle::operator() Operator  
  The function call operator that the runtime invokes to perform the work of the task handle.  
   
 ```  
@@ -114,5 +114,5 @@ task_handle(const _Function& _Func);
   
 ## See Also  
  [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [task_group Class](../Topic/task_group%20Class.md)   
+ [task_group Class](task-group-class.md)   
  [structured_task_group Class](../../../parallel/concrt/reference/structured-task-group-class.md)
