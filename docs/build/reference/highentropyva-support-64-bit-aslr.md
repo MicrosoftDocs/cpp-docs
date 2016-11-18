@@ -46,7 +46,7 @@ Specifies that the executable image supports high-entropy 64-bit address space l
   
 ### To set this linker option in Visual Studio  
   
-1.  Open the project **Property Pages** dialog box. For more information, see [How to: Open Project Property Pages](../../misc/how-to-open-project-property-pages.md).  
+1.  Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
 2.  Expand the **Configuration Properties** node.  
   

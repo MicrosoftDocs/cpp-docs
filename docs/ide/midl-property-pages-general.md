@@ -66,7 +66,7 @@ The **General** property page in the **MIDL** folder specifies the following MID
   
 -   Generate Stubless Proxies ([/Oicf](http://msdn.microsoft.com/library/windows/desktop/aa367352))  
   
- For information on how to access the **General** property page in the **MIDL** folder, see [How To: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md).  
+ For information on how to access the **General** property page in the **MIDL** folder, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
  For information on how to programmatically access MIDL options for C++ projects, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool> object.  
   

@@ -53,7 +53,7 @@ Generate enhanced debugging information for optimized code in non-debug builds.
   
 ### To set the /Zo compiler option in Visual Studio  
   
-1.  Open the **Property Pages** dialog box for the project. For more information, see [How to: Open Project Property Pages](../../misc/how-to-open-project-property-pages.md).  
+1.  Open the **Property Pages** dialog box for the project. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
 2.  Select the **Configuration Properties**, **C/C++** folder.  
   
