@@ -43,7 +43,7 @@ This document describes how to use the [parallel_invoke](../../parallel/concrt/p
  Although the bitonic sort is an example of a *sorting network* that sorts all combinations of input sequences, this example sorts sequences whose lengths are a power of two.  
   
 > [!NOTE]
->  This example uses a parallel sort routine for illustration. You can also use the built-in sorting algorithms that the PPL provides: [concurrency::parallel_sort](../Topic/parallel_sort%20Function.md), [concurrency::parallel_buffered_sort](../Topic/parallel_buffered_sort%20Function.md), and [concurrency::parallel_radixsort](../Topic/parallel_radixsort%20Function.md). For more information, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
+>  This example uses a parallel sort routine for illustration. You can also use the built-in sorting algorithms that the PPL provides: [concurrency::parallel_sort](reference/concurrency-namespace-functions.md#parallel_sort), [concurrency::parallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort), and [concurrency::parallel_radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort). For more information, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
   
 ##  <a name="top"></a> Sections  
  This document describes the following tasks:  
@@ -109,7 +109,7 @@ parallel time: 1248
  **cl.exe /EHsc parallel-bitonic-sort.cpp**  
   
 ## Robust Programming  
- This example uses the `parallel_invoke` algorithm instead of the [concurrency::task_group](../Topic/task_group%20Class.md) class because the lifetime of each task group does not extend beyond a function. We recommend that you use `parallel_invoke` when you can because it has less execution overhead than `task group` objects, and therefore lets you write better performing code.  
+ This example uses the `parallel_invoke` algorithm instead of the [concurrency::task_group](reference/task-group-class.md) class because the lifetime of each task group does not extend beyond a function. We recommend that you use `parallel_invoke` when you can because it has less execution overhead than `task group` objects, and therefore lets you write better performing code.  
   
  The parallel versions of some algorithms perform better only when there is sufficient work to do. For example, the `parallel_bitonic_merge` function calls the serial version, `bitonic_merge`, if there are 500 or fewer elements in the sequence. You can also plan your overall sorting strategy based on the amount of work. For example, it might be more efficient to use the serial version of the quick sort algorithm if the array contains fewer than 500 items, as shown in the following example:  
   
@@ -119,5 +119,5 @@ parallel time: 1248
   
 ## See Also  
  [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)   
- [parallel_invoke Function](../Topic/parallel_invoke%20Function.md)
+ [parallel_invoke Function](reference/concurrency-namespace-functions.md#parallel_invoke)
 

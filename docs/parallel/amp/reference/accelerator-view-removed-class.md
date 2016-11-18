@@ -71,7 +71,7 @@ class accelerator_view_removed : public runtime_exception;
  **Namespace:** Concurrency  
 
 ## <a name="accelerator_view_removed_ctor"></a> accelerator_view_removed::accelerator_view_removed Constructor
-Initializes a new instance of the [accelerator_view_removed](../Topic/accelerator_view_removed%20Class.md) class.  
+Initializes a new instance of the [accelerator_view_removed](reference/accelerator-view-removed-class.md) class.  
   
 ### Syntax  
   

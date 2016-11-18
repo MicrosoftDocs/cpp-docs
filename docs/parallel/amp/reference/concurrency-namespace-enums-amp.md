@@ -15,16 +15,16 @@ manager: "ghogen"
 # Concurrency namespace enums (AMP)
 |||  
 |-|-|  
-|[access_type Enumeration](#access_type_enumeration)|[queuing_mode Enumeration](#queuing_mode_enumeration)|  
+|[access_type Enumeration](#access_type)|[queuing_mode Enumeration](#queuing_mode)|  
   
-##  <a name="access_type_enumeration"></a>  access_type Enumeration  
+##  <a name="access_type"></a>  access_type Enumeration  
  Enumeration type used to denote the various types of access to data.  
   
 ```  
 enum access_type;  
 ```  
   
-##  <a name="queuing_mode_enumeration"></a>  queuing_mode Enumeration  
+##  <a name="queuing_mode"></a>  queuing_mode Enumeration  
  Specifies the queuing modes that are supported on the accelerator.  
   
 ```  

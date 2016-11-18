@@ -111,13 +111,13 @@ This topic describes how to create a basic agent-based application. In this walk
   
      The `get_error` method retrieves any error that occurs during the life of the agent.  
   
-7.  Implement the [concurrency::agent::run](../Topic/agent::run%20Method.md) method in the `protected` section of your class.  
+7.  Implement the [concurrency::agent::run](reference/agent-class.md#agent__run) method in the `protected` section of your class.  
   
  [!code-cpp[concrt-basic-agent#6](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-an-agent-based-application_7.h)]  
   
      The `run` method opens the file and reads data from it. The `run` method uses exception handling to capture any errors that occur during file processing.  
   
-     Each time this method reads data from the file, it calls the [concurrency::asend](../Topic/asend%20Function.md) function to send that data to the target buffer. It sends the empty string to its target buffer to indicate the end of processing.  
+     Each time this method reads data from the file, it calls the [concurrency::asend](reference/concurrency-namespace-functions.md#asend) function to send that data to the target buffer. It sends the empty string to its target buffer to indicate the end of processing.  
   
  The following example shows the complete contents of file_reader.h.  
   
@@ -189,7 +189,7 @@ Adler-32 sum is fefb0d75
 ## Robust Programming  
  To prevent concurrent access to data members, we recommend that you add methods that perform work to the `protected` or `private` section of your class. Only add methods that send or receive messages to or from the agent to the `public` section of your class.  
   
- Always call the [concurrency::agent::done](../Topic/agent::done%20Method.md) method to move your agent to the completed state. You typically call this method before you return from the `run` method.  
+ Always call the [concurrency::agent::done](reference/agent-class.md#agent__done) method to move your agent to the completed state. You typically call this method before you return from the `run` method.  
   
 ## Next Steps  
  For another example of an agent-based application, see [Walkthrough: Using join to Prevent Deadlock](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md).  

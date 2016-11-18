@@ -35,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Write a parallel_for Loop
-This example demonstrates how to use [concurrency::parallel_for](../Topic/parallel_for%20Function.md) to compute the product of two matrices.  
+This example demonstrates how to use [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) to compute the product of two matrices.  
   
 ## Example  
  The following example shows the `matrix_multiply` function, which computes the product of two square matrices.  
@@ -68,5 +68,5 @@ parallel: 1311
   
 ## See Also  
  [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)   
- [parallel_for Function](../Topic/parallel_for%20Function.md)
+ [parallel_for Function](reference/concurrency-namespace-functions.md#parallel_for)
 
