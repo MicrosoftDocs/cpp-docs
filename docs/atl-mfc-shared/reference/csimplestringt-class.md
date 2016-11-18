@@ -46,8 +46,10 @@ This class represents a `CSimpleStringT` object.
 ### Syntax  
   
 ```
-    template <typename   BaseType>
-class CSimpleStringT```  
+template <typename BaseType>
+class CSimpleStringT
+
+```  
 #### Parameters  
  `BaseType`  
  The character type of the string class. Can be one of the following:  
@@ -148,7 +150,15 @@ void Append(PCXSTR pszSrc);
 ## Example  
  The following example demonstrates the use of `CSimpleStringT::Append`.  
   
- [!CODE [NVC_ATLMFC_Utilities#75](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#75)]  
+```cpp
+CSimpleString str1(pMgr), str2(pMgr);
+
+str1.SetString(_T("Soccer is"));
+str2.SetString(_T(" an elegant game"));
+
+str1.Append(str2);
+ASSERT(_tcscmp(str1, _T("Soccer is an elegant game")) == 0);
+```
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -196,7 +206,15 @@ static void CopyChars(XCHAR* pchDest, const XCHAR* pchSrc, int nChars
 ## Example  
  The following example demonstrates the use of `CSimpleStringT::CopyChars`.  
   
- [!CODE [NVC_ATLMFC_Utilities#76](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#76)]  
+ ```cpp
+ CSimpleString str(_T("xxxxxxxxxxxxxxxxxxx"), 20, pMgr);
+TCHAR* pszSrc = _T("Hello world!");
+
+_tprintf_s(_T("%s\n"), str);
+
+str.CopyChars(str.GetBuffer(), pszSrc, 12);
+_tprintf_s(_T("%s\n"), str);
+```
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -263,9 +281,16 @@ explicit CSimpleStringT(IAtlStringMgr* pStringMgr
 ## Example  
  The following example demonstrates the use of `CSimpleStringT::CSimpleStringT` by using the ATL `typedef``CSimpleString`. `CSimpleString` is a commonly used specialization of the class template `CSimpleStringT`.  
   
- A specialization defines a class by putting specific type parameters into a class template.
-  
- [!CODE [NVC_ATLMFC_Utilities#77](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#77)]  
+```cpp
+CSimpleString s1(pMgr);                   // Empty string
+CSimpleString s2(_T("cat"), pMgr);        // From a C string literal
+
+CSimpleString s3(s2);                     // Copy constructor
+CSimpleString s4(s2 + _T(" ") + s3);      // From a string expression
+
+CSimpleString s5(_T("xxxxxx"), 6, pMgr);  // s5 = "xxxxxx"   
+```
+
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -286,7 +311,10 @@ void Empty() throw();
 ## Example  
  The following example demonstrates the use of `CSimpleStringT::Empty`.  
   
- [!CODE [NVC_ATLMFC_Utilities#78](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#78)]  
+ ```cpp  
+CSimpleString s(pMgr);
+ASSERT(s.IsEmpty());   
+```  
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -305,7 +333,30 @@ void FreeExtra();
  This should reduce the memory overhead consumed by the string object. The method reallocates the buffer to the exact length returned by [GetLength](#csimplestringt__GetLength).  
   
 ## Example  
- [!CODE [NVC_ATLMFC_Utilities#79](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#79)]  
+```cpp  
+CAtlString basestr;
+IAtlStringMgr* pMgr;
+
+pMgr= basestr.GetManager();
+ASSERT(pMgr != NULL);
+
+// Create a CSimpleString with 28 characters
+CSimpleString str(_T("Many sports are fun to play."), 28, pMgr);
+_tprintf_s(_T("Alloc length is %d, String length is %d\n"),
+   str.GetAllocLength(), str.GetLength());
+
+// Assigning a smaller string won't cause CSimpleString to free its 
+// memory, because it assumes the string will grow again anyway.
+str = _T("Soccer is best!");
+_tprintf_s(_T("Alloc length is %d, String length is %d\n"),
+   str.GetAllocLength(), str.GetLength());
+
+// This call forces CSimpleString to release the extra 
+// memory it doesn't need.
+str.FreeExtra();
+_tprintf_s(_T("Alloc length is %d, String length is %d\n"),
+   str.GetAllocLength(), str.GetLength());
+```
   
 ### Remarks  
  The output from this example is as follows:  
@@ -360,7 +411,10 @@ XCHAR GetAt(int iChar
 ## Example  
  The following example demonstrates how to use `CSimpleStringT::GetAt`.  
   
- [!CODE [NVC_ATLMFC_Utilities#80](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#80)]  
+```cpp  
+CSimpleString s(_T("abcdef"), pMgr);
+ASSERT(s.GetAt(2) == _T('c'));   
+```
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -397,7 +451,18 @@ PXSTR GetBuffer();
  If there is insufficient memory to satisfy the `GetBuffer` request, this method throws a CMemoryException*.  
   
 ## Example  
- [!CODE [NVC_ATLMFC_Utilities#81](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#81)]  
+```cpp  
+CSimpleString s(_T("abcd"), pMgr);
+
+LPTSTR pBuffer = s.GetBuffer(10);
+int    sizeOfBuffer = s.GetAllocLength();
+
+// Directly access CSimpleString buffer
+_tcscpy_s(pBuffer, sizeOfBuffer, _T("Hello")); 
+ASSERT(_tcscmp(s, _T("Hello")) == 0);
+
+s.ReleaseBuffer();   
+```
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -430,16 +495,28 @@ PXSTR GetBufferSetLength(int nLength);
   
  For more information about reference counting, see the following articles:  
   
--   [Managing Object Lifetimes through Reference Counting](http://msdn.microsoft.com/library/windows/desktop/ms687260) in the [!INCLUDE[winSDK](../Token/winSDK_md)]*.*  
+-   [Managing Object Lifetimes through Reference Counting](http://msdn.microsoft.com/library/windows/desktop/ms687260) in the Windows SDK. 
   
--   [Implementing Reference Counting](http://msdn.microsoft.com/library/windows/desktop/ms693431) in the [!INCLUDE[winSDK](../Token/winSDK_md)]*.*  
+-   [Implementing Reference Counting](http://msdn.microsoft.com/library/windows/desktop/ms693431) in the Windows SDK.
   
--   [Rules for Managing Reference Counts](http://msdn.microsoft.com/library/windows/desktop/ms692481) in the [!INCLUDE[winSDK](../Token/winSDK_md)]*.*  
+-   [Rules for Managing Reference Counts](http://msdn.microsoft.com/library/windows/desktop/ms692481) in the Windows SDK.  
   
 ## Example  
  The following example demonstrates the use of `CSimpleStringT::GetBufferSetLength`.  
   
- [!CODE [NVC_ATLMFC_Utilities#82](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#82)]  
+```cpp  
+CSimpleString str(pMgr);
+LPTSTR pstr = str.GetBufferSetLength(3);
+pstr[0] = _T('C');
+pstr[1] = _T('u');
+pstr[2] = _T('p');
+
+// No need for trailing zero or call to ReleaseBuffer() 
+// because GetBufferSetLength() set it for us.
+
+str += _T(" soccer is best!");
+ASSERT(_tcscmp(str, _T("Cup soccer is best!")) == 0);   
+```
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -505,7 +582,12 @@ PCXSTR GetString() const throw();
 ## Example  
  The following example demonstrates the use of `CSimpleStringT::GetString`.  
   
- [!CODE [NVC_ATLMFC_Utilities#83](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#83)]  
+```cpp  
+CSimpleString str(pMgr);
+
+str += _T("Cup soccer is best!");
+_tprintf_s(_T("%s"), str.GetString());
+```
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -529,7 +611,10 @@ bool IsEmpty() const throw();
 ## Example  
  The following example demonstrates the use of `CSimpleStringT::IsEmpty`.  
   
- [!CODE [NVC_ATLMFC_Utilities#84](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#84)]  
+```cpp  
+CSimpleString s(pMgr);
+ASSERT(s.IsEmpty());   
+```
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -561,16 +646,24 @@ PXSTR LockBuffer();
   
  For more information about reference counting, see the following articles:  
   
--   [Managing Object Lifetimes through Reference Counting](http://msdn.microsoft.com/library/windows/desktop/ms687260) in the [!INCLUDE[winSDK](../Token/winSDK_md)]  
+-   [Managing Object Lifetimes through Reference Counting](http://msdn.microsoft.com/library/windows/desktop/ms687260) in the Windows SDK  
   
--   [Implementing Reference Counting](http://msdn.microsoft.com/library/windows/desktop/ms693431) in the [!INCLUDE[winSDK](../Token/winSDK_md)]  
+-   [Implementing Reference Counting](http://msdn.microsoft.com/library/windows/desktop/ms693431) in the Windows SDK  
   
--   [Rules for Managing Reference Counts](http://msdn.microsoft.com/library/windows/desktop/ms692481) in the [!INCLUDE[winSDK](../Token/winSDK_md)]  
+-   [Rules for Managing Reference Counts](http://msdn.microsoft.com/library/windows/desktop/ms692481) in the Windows SDK  
   
 ## Example  
  The following example demonstrates the use of `CSimpleStringT::LockBuffer`.  
   
- [!CODE [NVC_ATLMFC_Utilities#85](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#85)]  
+```cpp  
+CSimpleString str(_T("Hello"), pMgr);
+TCHAR ch;
+
+str.LockBuffer();
+ch = str.GetAt(2);
+_tprintf_s(_T("%c"), ch);
+str.UnlockBuffer();
+```
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -597,7 +690,10 @@ XCHAR operator[](int iChar
 ## Example  
  The following example demonstrates the use of **CSimpleStringT::operator []**.  
   
- [!CODE [NVC_ATLMFC_Utilities#95](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#95)]  
+```cpp  
+CSimpleString s(_T("abc"), pMgr);
+ASSERT(s[1] == _T('b')); 
+```
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -632,7 +728,10 @@ CSimpleStringT& operator +=(wchar_t ch);
 ## Example  
  The following example demonstrates the use of **CSimpleStringT::operator +=**.  
   
- [!CODE [NVC_ATLMFC_Utilities#93](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#93)]  
+```cpp  
+CSimpleString str(_T("abc"), pMgr);
+ASSERT(_tcscmp((str += _T("def")), _T("abcdef")) == 0);  
+```
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -659,7 +758,21 @@ CSimpleStringT& operator =(const CSimpleStringT& strSrc);
 ## Example  
  The following example demonstrates the use of **CSimpleStringT::operator =**.  
   
- [!CODE [NVC_ATLMFC_Utilities#94](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#94)]  
+```cpp  
+CSimpleString s1(pMgr), s2(pMgr);  // Empty CSimpleStringT objects
+
+s1 = _T("cat");            // s1 = "cat"
+ASSERT(_tcscmp(s1, _T("cat")) == 0);
+
+s2 = s1;               // s1 and s2 each = "cat"
+ASSERT(_tcscmp(s2, _T("cat")) == 0);
+
+s1 = _T("the ") + s1;      // Or expressions
+ASSERT(_tcscmp(s1, _T("the cat")) == 0);
+
+s1 = _T("x");              // Or just individual characters
+ASSERT(_tcscmp(s1, _T("x")) == 0); 
+```
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -682,7 +795,35 @@ operator PCXSTR() const throw();
 ## Example  
  The following example demonstrates the use of **CSimpleStringT::operator PCXSTR**.  
   
- [!CODE [NVC_ATLMFC_Utilities#96](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#96)]  
+```cpp  
+// If the prototype of a function is known to the compiler, 
+// the PCXSTR cast operator may be invoked implicitly.
+
+CSimpleString strSports(L"Soccer is Best!", pMgr);
+WCHAR sz[1024];
+
+wcscpy_s(sz, strSports);
+
+// If the prototype isn't known or is a va_arg prototype, 
+// you must invoke the cast operator explicitly. For example, 
+// the va_arg part of a call to swprintf_s() needs the cast:
+
+swprintf_s(sz, 1024, L"I think that %s!\n", (PCWSTR)strSports);
+
+// While the format parameter is known to be an PCXSTR and 
+// therefore doesn't need the cast:
+
+swprintf_s(sz, 1024, strSports);
+
+// Note that some situations are ambiguous. This line will 
+// put the address of the strSports object to stdout:
+
+wcout << strSports;
+
+// while this line will put the content of the string out:
+
+wcout << (PCWSTR)strSports;   
+``` 
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -721,7 +862,13 @@ void Preallocate( int nLength);
 ## Example  
  The following example demonstrates the use of `CSimpleStringT::Preallocate`.  
   
- [!CODE [NVC_ATLMFC_Utilities#86](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#86)]  
+```cpp  
+CSimpleString str(pMgr);
+
+_tprintf_s(_T("Allocated length: %d\n"), str.GetAllocLength());
+str.Preallocate(100);
+_tprintf_s(_T("Allocated length: %d\n"), str.GetAllocLength());
+```
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -760,7 +907,16 @@ void ReleaseBuffer(int nNewLength = -1);
 ## Example  
  The following example demonstrates the use of `CSimpleStringT::ReleaseBuffer`.  
   
- [!CODE [NVC_ATLMFC_Utilities#87](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#87)]  
+```cpp  
+const int bufferSize = 1024;
+CSimpleString s(_T("abc"), pMgr);
+
+LPTSTR p = s.GetBuffer(bufferSize);
+_tcscpy_s(p, bufferSize , _T("abc"));   // use the buffer directly
+ASSERT(s.GetLength() == 3); // String length = 3
+s.ReleaseBuffer();  // Surplus memory released, p is now invalid.
+ASSERT(s.GetLength() == 3); // Length still 3
+```
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -808,7 +964,12 @@ void SetAt(int iChar, XCHAR ch);
 ## Example  
  The following example demonstrates the use of `CSimpleStringT::SetAt`.  
   
- [!CODE [NVC_ATLMFC_Utilities#88](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#88)]  
+```cpp  
+CSimpleString s(_T("abcdef"), pMgr);
+
+s.SetAt(1, _T('a'));
+ASSERT(_tcscmp(s, _T("aacdef")) == 0);   
+``` 
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -833,7 +994,10 @@ void SetManager(IAtlStringMgr* pStringMgr);
 ## Example  
  The following example demonstrates the use of `CSimpleStringT::SetManager`.  
   
- [!CODE [NVC_ATLMFC_Utilities#89](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#89)]  
+```cpp  
+CSimpleString s(pMgr);
+s.SetManager(pCustomMgr); 
+```
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -870,7 +1034,13 @@ void SetString(PCXSTR pszSrc);
 ## Example  
  The following example demonstrates the use of `CSimpleStringT::SetString`.  
   
- [!CODE [NVC_ATLMFC_Utilities#90](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#90)]  
+```cpp  
+CSimpleString s(_T("abcdef"), pMgr);
+ASSERT(_tcscmp(s, _T("abcdef")) == 0);
+
+s.SetString(_T("Soccer"), 6);
+ASSERT(_tcscmp(s, _T("Soccer")) == 0);  
+```
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -896,7 +1066,9 @@ ATL_NOINLINE static int StringLength(PCXSTR psz) throw();
 ## Example  
  The following example demonstrates the use of `CSimpleStringT::StringLength`.  
   
- [!CODE [NVC_ATLMFC_Utilities#91](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#91)]  
+```cpp  
+ASSERT(CSimpleString::StringLength(_T("soccer")) == 6);
+``` 
   
 ### Requirements  
  **Header:** atlsimpstr.h  
@@ -923,7 +1095,16 @@ void Truncate(int nNewLength);
 ## Example  
  The following example demonstrates the use of `CSimpleStringT::Truncate`.  
   
- [!CODE [NVC_ATLMFC_Utilities#92](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#92)]  
+```cpp  
+CSimpleString str(_T("abcdefghi"), pMgr);
+
+_tprintf_s(_T("Allocated length: %d\n"), str.GetLength());
+_tprintf_s(_T("Contents: %s\n"), str);
+
+str.Truncate(4);
+_tprintf_s(_T("Allocated length: %d\n"), str.GetLength());
+_tprintf_s(_T("Contents: %s\n"), str);
+``` 
   
 ### Requirements  
  **Header:** atlsimpstr.h  
