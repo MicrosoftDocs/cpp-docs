@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # HLSL Property Pages: Advanced
-To configure the following properties of the HLSL compiler (fxc.exe), use its **Advanced** property page. For information about how to access the **Advanced** property page in the HLSL folder, see [How to: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md).  
+To configure the following properties of the HLSL compiler (fxc.exe), use its **Advanced** property page. For information about how to access the **Advanced** property page in the HLSL folder, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
 ## UIElement List  
  **Suppress Startup Banner**  

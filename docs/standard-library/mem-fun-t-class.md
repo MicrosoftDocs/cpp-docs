@@ -76,7 +76,7 @@ class mem_fun_t : public unary_function<Type *, Result> {
 ## See Also  
  [\<functional>](../standard-library/functional.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 
 
 
