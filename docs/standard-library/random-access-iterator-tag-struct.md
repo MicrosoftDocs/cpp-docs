@@ -125,7 +125,7 @@ The iterators are not the same.
 ## See Also  
  [bidirectional_iterator_tag Struct](../standard-library/bidirectional-iterator-tag-struct.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [C++ Standard Library Reference](../istandard-library/cpp-standard-library-reference.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 
 
 

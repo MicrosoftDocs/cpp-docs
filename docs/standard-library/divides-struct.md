@@ -137,7 +137,7 @@ The element-wise quotients are: ( 0 1.75 2.33333 2.625 2.8 2.91667 )
   
 ## See Also  
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [C++ Standard Library Reference](../istandard-library/cpp-standard-library-reference.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 
 
 

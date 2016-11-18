@@ -297,7 +297,7 @@ typedef typename iterator_traits<RandomIterator>::value_type   value_type;
  [\<iterator>](../standard-library/iterator.md)   
  [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md)   
  [Move Constructors and Move Assignment Operators (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md)   
- [C++ Standard Library Reference](../istandard-library/cpp-standard-library-reference.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 
 
 

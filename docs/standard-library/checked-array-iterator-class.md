@@ -948,7 +948,7 @@ typedef typename iterator_traits<_Iterator>::reference reference;
   
 ## See Also  
  [\<iterator>](../standard-library/iterator.md)   
- [C++ Standard Library Reference](../istandard-library/cpp-standard-library-reference.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 
 
 

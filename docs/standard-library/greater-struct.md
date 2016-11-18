@@ -140,7 +140,7 @@ Resorted vector v1 = (29358 26500 19169 18467 15724 11478 6334 41)
  **Namespace:** std  
   
 ## See Also  
- [C++ Standard Library Reference](../istandard-library/cpp-standard-library-reference.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 
 
 

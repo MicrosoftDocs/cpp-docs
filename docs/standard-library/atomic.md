@@ -218,7 +218,7 @@ Defines classes and template classes to use to create types that support atomic 
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   
- [C++ Standard Library Reference](../istandard-library/cpp-standard-library-reference.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 
 
 

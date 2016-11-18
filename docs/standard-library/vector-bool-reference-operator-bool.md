@@ -59,5 +59,5 @@ Provides an implicit conversion from `vector<bool>::reference` to `bool`.
   
 ## See Also  
  [vector\<bool>::reference Class](../standard-library/vector-bool-reference-class.md)   
- [C++ Standard Library Reference](../istandard-library/cpp-standard-library-reference.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 

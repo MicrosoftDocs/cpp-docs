@@ -142,7 +142,7 @@ between v1 & v2 is: ( 0 0 1 0 1 0 )
  **Namespace:** std  
   
 ## See Also  
- [C++ Standard Library Reference](../istandard-library/cpp-standard-library-reference.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 
 
 
