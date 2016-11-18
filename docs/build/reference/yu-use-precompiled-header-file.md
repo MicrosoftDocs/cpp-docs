@@ -81,7 +81,7 @@ Instructs the compiler to use an existing precompiled header (.pch) file in the 
   
 1.  Specify [/Yc (Create Precompiled Header File)](../../build/reference/yc-create-precompiled-header-file.md) on a .cpp file in your project.  
   
-2.  Open the project's **Property Pages** dialog box. For details, see [How to: Open Project Property Pages](../../misc/how-to-open-project-property-pages.md).  
+2.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
 3.  Click the **C/C++** folder.  
   

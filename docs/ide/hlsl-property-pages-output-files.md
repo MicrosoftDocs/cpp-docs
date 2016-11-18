@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # HLSL Property Pages: Output Files
-To configure the following properties of the HLSL compiler (fxc.exe), use its **Output Files** property. For information about how to access the **Output Files** property page in the HLSL folder, see [How to: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md).  
+To configure the following properties of the HLSL compiler (fxc.exe), use its **Output Files** property. For information about how to access the **Output Files** property page in the HLSL folder, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
 ## UIElement List  
  **Header Variable Name**  

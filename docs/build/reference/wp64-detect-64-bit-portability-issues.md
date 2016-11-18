@@ -69,7 +69,7 @@ This compiler option is obsolete. In versions of Visual Studio before Visual Stu
   
 1.  Open the project **Property Pages** dialog box.  
   
-     For more information, see [How to: Open Project Property Pages](../../misc/how-to-open-project-property-pages.md).  
+     For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
 2.  Click the **C/C++** folder.  
   

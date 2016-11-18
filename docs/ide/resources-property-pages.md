@@ -42,7 +42,7 @@ translation.priority.ht:
 # Resources Property Pages
 For more information on using the resource compiler, see [Using RC (The RC Command Line)](http://msdn.microsoft.com/library/windows/desktop/aa381055).  
   
- For information on how to access the **Resources** property pages, see [How To: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md).  
+ For information on how to access the **Resources** property pages, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
  To programmatically access these properties, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCResourceCompilerTool>.  
   

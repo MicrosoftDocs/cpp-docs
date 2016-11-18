@@ -320,4 +320,4 @@ int main()
  When you call the clear or erase method of a container of handle objects, the objects that the handles refer to are not freed from memory. You must either explicitly delete the object, or, because these objects reside on the managed heap, allow the garbage collector to free the memory once it determines that the object is no longer being used.  
   
 ## See Also  
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

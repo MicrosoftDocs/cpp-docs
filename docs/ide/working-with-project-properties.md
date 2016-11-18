@@ -60,7 +60,7 @@ In the IDE, all information that is needed to build a project is exposed as     
 ## Build configurations  
  A configuration is just an arbitrary group of properties that are given a name. Visual Studio provides Debug and Release configurations and each sets various properties appropriately for a debug build or release build. You can use the                  **Configuration Manager** to define custom configurations as a convenient way to group properties for a specific flavor of build.  The Property Manager is used for advanced work with properties, but we introduce it here because it helps visualize property configurations. You access it from                  **View &#124;  Property Manager** or                  **View &#124; Other Windows &#124; Property Manager** depending on your settings. It has nodes for each configuration/platform pair in the project. Under each of these nodes are nodes for property sheets (.props files) that set some specific properties for that configuration.  
   
- ![Property Manager](../misc/property-manager.md "Property Manager")  
+ ![Property Manager](../ide/media/property-manager.png "Property Manager")  
   
  If you go to the General pane in the Property Pages (see the illustration above) and set the Character Set property to "Not Set" instead of "Use Unicode" and click                  **OK**,  Property Manager will  show no                  **Unicode Support** property sheet for the current configuration, but it will still be there for other configurations.  
   

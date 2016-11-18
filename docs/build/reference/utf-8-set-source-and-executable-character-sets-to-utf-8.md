@@ -43,7 +43,7 @@ Specifies both the source character set and the execution character set as UTF-8
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project **Property Pages** dialog box. For more information, see [How to: Open Project Property Pages](../../misc/how-to-open-project-property-pages.md).  
+1.  Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
 2.  Expand the **Configuration Properties**, **C/C++**, **Command Line** folder.  
   

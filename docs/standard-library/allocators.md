@@ -140,7 +140,7 @@ void Mallocator<T>::deallocate(T * const p, size_t) const noexcept
  For more information on these type definitions and methods, see [allocator Class](../standard-library/allocator-class.md).  
   
 ## See Also  
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 
 
 

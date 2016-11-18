@@ -71,6 +71,6 @@ Algorithms are a fundamental part of the Standard Template Library. Algorithms d
  The STL algorithms are located in the [\<algorithm>](../standard-library/algorithm.md) and [\<numeric>](../standard-library/numeric.md) header files.  
   
 ## See Also  
- [Standard Template Library](../misc/standard-template-library.md)   
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
