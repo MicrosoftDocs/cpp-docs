@@ -137,4 +137,4 @@ It is very common for programs to call into APIs in other binaries such as DLLs,
   
 ## See Also  
  [Property Pages](../ide/property-pages-visual-cpp.md)   
- [How to: Open Project Property Pages](../misc/how-to-open-project-property-pages.md)
+ [Working with Project Properties](../ide/working-with-project-properties.md)

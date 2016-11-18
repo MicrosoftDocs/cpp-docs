@@ -118,6 +118,6 @@ forward iterator
  [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] now offers checked iterators and debug iterators to ensure that you do not overwrite the bounds of your container. For more information, see [Checked Iterators](../standard-library/checked-iterators.md) and [Debug Iterator Support](../standard-library/debug-iterator-support.md).  
   
 ## See Also  
- [Standard Template Library](../misc/standard-template-library.md)   
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

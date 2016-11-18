@@ -81,5 +81,5 @@ ForwardIterator remove_if(
  The last argument to `remove_if` is a function object that returns a boolean value (a *predicate*). If the result of the function object is `true`, then the element is removed from the container being accessed by the iterators ` first` and ` last`. You can use any of the function objects declared in the [\<functional>](../standard-library/functional.md) header for the argument ` pred` or you can create your own.  
   
 ## See Also  
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 

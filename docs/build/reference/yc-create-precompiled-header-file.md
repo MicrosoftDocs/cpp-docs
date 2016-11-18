@@ -75,7 +75,7 @@ Instructs the compiler to create a precompiled header (.pch) file that represent
   
 1.  Select a .cpp file. The .cpp file must #include the .h file that contains precompiled header information. The project's **/Yc** setting can be overridden at the file level.  
   
-2.  Open the project's **Property Pages** dialog box. For details, see [How to: Open Project Property Pages](../../misc/how-to-open-project-property-pages.md).  
+2.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
 3.  Click the **C/C++** folder.  
   

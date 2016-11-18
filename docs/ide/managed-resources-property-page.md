@@ -50,7 +50,7 @@ Enables settings for the resource compiler.
  **Default Localized Resources**  
  Specifies whether the given .resx file contributes to the default resources or to a satellite .dll.  
   
- For information on how to access the **Managed Resources** property page, see [How to: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md).  
+ For information on how to access the **Managed Resources** property page, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
 ## See Also  
  [Using RC (The RC Command Line)](http://msdn.microsoft.com/library/windows/desktop/aa381055)   

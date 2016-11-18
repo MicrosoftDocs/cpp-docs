@@ -42,7 +42,7 @@ You can use the project configurations in Visual Studio to set up C++ applicatio
   
 1.  Open the C++ project that you want to configure.  
   
-2.  Open the property pages for that project. For more information, see [How to: Open Project Property Pages](../misc/how-to-open-project-property-pages.md).  
+2.  Open the property pages for that project. For more information, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
     > [!NOTE]
     >  For .NET projects, make sure that the **Configuration Properties** node, or one of its child nodes, is selected in the **\<Projectname> Property Pages** dialog box; otherwise, the **Configuration Manager** button remains unavailable.  

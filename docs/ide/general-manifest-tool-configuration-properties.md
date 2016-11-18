@@ -59,5 +59,4 @@ Use this dialog box to specify general options for [Mt.exe](http://msdn.microsof
 ## See Also  
  [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)   
  [Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)   
- [How to: Open Project Property Pages](../misc/how-to-open-project-property-pages.md)   
- [How to: Edit Project Property Sheets](../misc/how-to-edit-project-property-sheets.md)
+ [Working with Project Properties](../ide/working-with-project-properties.md)   

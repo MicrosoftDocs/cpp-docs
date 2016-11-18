@@ -156,7 +156,7 @@ Defines Standard Template Library (STL) container template functions that perfor
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 
 
 
