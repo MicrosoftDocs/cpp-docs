@@ -271,4 +271,4 @@ T *TObject =::new TObject;
 ## See Also  
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   
  [Keywords](../cpp/keywords-cpp.md)   
- [operator new Function](../misc/operator-new-function.md)
+ [new and delete operators](../cpp/new-and-delete-operators.md)
