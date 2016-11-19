@@ -45,7 +45,7 @@ C++ offers new capabilities, some of which supplant those offered by the ANSI C 
   
     -   Correct handling of arguments that have side effects. Inline functions evaluate the expressions supplied as arguments prior to entering the function body. Therefore, there is no chance that an expression with side effects will be unsafe.  
   
- For more information on inline functions, see [inline, __inline, \__forceinline](../misc/inline-inline-forceinline.md).  
+ For more information on inline functions, see [inline, __inline, \__forceinline](../cpp/inline-functions-cpp.md).  
   
  For backward compatibility, all preprocessor facilities that existed in ANSI C and in earlier C++ specifications are preserved for Microsoft C++.  
   
