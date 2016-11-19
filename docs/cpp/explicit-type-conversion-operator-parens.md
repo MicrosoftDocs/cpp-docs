@@ -147,5 +147,5 @@ Point pt = Point( 3, 10 );
   
 ## See Also  
  [Postfix Expressions](../cpp/postfix-expressions.md)   
- [C++ Operators](../misc/cpp-operators.md)   
+ [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
