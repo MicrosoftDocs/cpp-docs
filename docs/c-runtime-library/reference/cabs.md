@@ -118,4 +118,3 @@ The absolute value of 3.000000 + 4.000000i is 5.000000
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)   
  [fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)   
- [labs, llabs](../../misc/labs-llabs.md)
