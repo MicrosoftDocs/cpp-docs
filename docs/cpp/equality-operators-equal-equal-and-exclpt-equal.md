@@ -83,6 +83,6 @@ int main() {
   
 ## See Also  
  [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)   
- [C++ Operators](../misc/cpp-operators.md)   
+ [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C Relational and Equality Operators](../c-language/c-relational-and-equality-operators.md)
