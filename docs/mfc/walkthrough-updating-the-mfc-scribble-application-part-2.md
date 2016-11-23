@@ -36,7 +36,7 @@ translation.priority.ht:
 [Part 1](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md) of this walkthrough showed how to add an Office Fluent Ribbon to the classic Scribble application. This part shows how to add ribbon panels and controls that users can use instead of menus and commands.  
   
 ## Prerequisites  
- [Visual C++ Samples](../top/visual-cpp-samples.md)  
+ [Visual C++ Samples](../visual-cpp-samples.md)  
   
 ##  <a name="top"></a> Sections  
  This part of the walkthrough has the following sections:  

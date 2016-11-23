@@ -311,7 +311,7 @@ virtual DROPEFFECT OnDragEnter(
   
 - `DROPEFFECT_MOVE` for **MK_ALT** Creates a copy of the dropped object and delete the original object. This is typically the default drop effect, when the view can accept this data object.  
   
- For more information, see the MFC Advanced Concepts sample [OCLIENT](../../top/visual-cpp-samples.md).  
+ For more information, see the MFC Advanced Concepts sample [OCLIENT](../../visual-cpp-samples.md).  
   
 ### Remarks  
  Default implementation is to do nothing and return `DROPEFFECT_NONE`.  
@@ -359,7 +359,7 @@ virtual DROPEFFECT OnDragOver(
   
 - `DROPEFFECT_MOVE` for **MK_ALT** Creates a copy of the dropped object and delete the original object. This is typically the default drop effect, when the view can accept the data object.  
   
- For more information, see the MFC Advanced Concepts sample [OCLIENT](../../top/visual-cpp-samples.md).  
+ For more information, see the MFC Advanced Concepts sample [OCLIENT](../../visual-cpp-samples.md).  
   
 ### Remarks  
  The default implementation is to do nothing and return `DROPEFFECT_NONE`.  
@@ -395,7 +395,7 @@ virtual DROPEFFECT OnDragScroll(
   
 - `DROPEFFECT_SCROLL` Indicates that a drag scroll operation is about to occur or is occurring in the target view.  
   
- For more information, see the MFC Advanced Concepts sample [OCLIENT](../../top/visual-cpp-samples.md).  
+ For more information, see the MFC Advanced Concepts sample [OCLIENT](../../visual-cpp-samples.md).  
   
 ### Remarks  
  Override this function when you want to provide special behavior for this event. The default implementation automatically scrolls windows when the cursor is dragged into the default scroll region inside the border of each window.For more information, see the article [Drag and Drop: Implementing a Drop Target](../../mfc/drag-and-drop-implementing-a-drop-target.md).  
@@ -777,7 +777,7 @@ virtual void OnUpdate(
  If `lHint` is 0 and `pHint` is **NULL**, the document has sent a generic update notification. If a view receives a generic update notification, or if it cannot decode the hints, it should invalidate its entire client area.  
   
 ## See Also  
- [MFC Sample MDIDOCVW](../../top/visual-cpp-samples.md)   
+ [MFC Sample MDIDOCVW](../../visual-cpp-samples.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   

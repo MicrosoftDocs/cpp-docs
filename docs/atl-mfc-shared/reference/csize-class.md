@@ -262,7 +262,7 @@ CSize operator-() const throw();
  [!code-cpp[NVC_ATLMFC_Utilities#103](../../atl-mfc-shared/codesnippet/CPP/csize-class_7.cpp)]  
   
 ## See Also  
- [MFC Sample MDI](../../top/visual-cpp-samples.md)   
+ [MFC Sample MDI](../../visual-cpp-samples.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CRect Class](../../atl-mfc-shared/reference/crect-class.md)   
  [CPoint Class](../../atl-mfc-shared/reference/cpoint-class.md)

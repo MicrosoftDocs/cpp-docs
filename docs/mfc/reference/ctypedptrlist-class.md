@@ -368,7 +368,7 @@ void SetAt(
  For more detailed remarks, see [CObList::SetAt](../../mfc/reference/coblist-class.md#coblist__setat).  
   
 ## See Also  
- [MFC Sample COLLECT](../../top/visual-cpp-samples.md)   
+ [MFC Sample COLLECT](../../visual-cpp-samples.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CPtrList Class](../../mfc/reference/cptrlist-class.md)   
  [CObList Class](../../mfc/reference/coblist-class.md)

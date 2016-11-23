@@ -100,7 +100,7 @@ Document and View
   
 -   [Using database classes without documents and views](../data/mfc-using-database-classes-without-documents-and-views.md)  
   
--   [Samples](../top/visual-cpp-samples.md)  
+-   [Samples](../visual-cpp-samples.md)  
   
 ## See Also  
  [User Interface Elements](../mfc/user-interface-elements-mfc.md)   

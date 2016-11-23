@@ -67,5 +67,5 @@ Property pages are COM objects that implement the `IPropertyPage` or **IProperty
   
 ## See Also  
  [Property Pages](../atl/atl-com-property-pages.md)   
- [ATLPages Sample](../top/visual-cpp-samples.md)
+ [ATLPages Sample](../visual-cpp-samples.md)
 

@@ -100,7 +100,7 @@ By default, the control's drawing code displays a square and the text **PolyCtl*
   
 #### To use the ActiveX Control Test Container  
   
-1.  Build and start the ActiveX Control Test Container. For more information, see [TSTCON Sample: ActiveX Control Test Container](../top/visual-cpp-samples.md).  
+1.  Build and start the ActiveX Control Test Container. For more information, see [TSTCON Sample: ActiveX Control Test Container](../visual-cpp-samples.md).  
   
 2.  In Test Container, on the **Edit** menu, click **Insert New Control**.  
   

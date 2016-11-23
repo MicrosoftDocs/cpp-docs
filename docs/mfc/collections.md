@@ -73,7 +73,7 @@ The Microsoft Foundation Class Library provides collection classes to manage gro
      A map is a collection that associates a key object with a value object.  
   
 ##  <a name="_core_the_template.2d.based_collection_classes"></a> The Template-Based Collection Classes  
- The easiest way to implement a type-safe collection that contains objects of any type is to use one of the MFC template-based classes. For examples of these classes, see the MFC sample [COLLECT](../top/visual-cpp-samples.md).  
+ The easiest way to implement a type-safe collection that contains objects of any type is to use one of the MFC template-based classes. For examples of these classes, see the MFC sample [COLLECT](../visual-cpp-samples.md).  
   
  The following table lists the MFC template-based collection classes.  
   

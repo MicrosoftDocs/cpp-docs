@@ -263,9 +263,9 @@ void SetHandles(
  Call this function to set the menu and accelerator resources used by the MDI child window object.  
   
 ## See Also  
- [MFC Sample MDI](../../top/visual-cpp-samples.md)   
- [MFC Sample MDIDOCVW](../../top/visual-cpp-samples.md)   
- [MFC Sample SNAPVW](../../top/visual-cpp-samples.md)   
+ [MFC Sample MDI](../../visual-cpp-samples.md)   
+ [MFC Sample MDIDOCVW](../../visual-cpp-samples.md)   
+ [MFC Sample SNAPVW](../../visual-cpp-samples.md)   
  [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   

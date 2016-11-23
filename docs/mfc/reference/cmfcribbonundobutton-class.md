@@ -64,7 +64,7 @@ class CMFCRibbonUndoButton : public CMFCRibbonGallery
  The `CMFCRibbonUndoButton` class uses a stack to represent the drop-down list.  
   
 ## Example  
- The following example demonstrates how to construct an object of the `CMFCRibbonUndoButton` class, and add a new action to the list of actions. This code snippet is part of the [Ribbon Gadgets sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to construct an object of the `CMFCRibbonUndoButton` class, and add a new action to the list of actions. This code snippet is part of the [Ribbon Gadgets sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_RibbonGadgets#2](../../mfc/reference/codesnippet/CPP/cmfcribbonundobutton-class_1.cpp)]  
   

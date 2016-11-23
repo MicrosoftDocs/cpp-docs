@@ -1264,8 +1264,8 @@ BOOL Undo();
  [!code-cpp[NVC_MFC_CEdit#25](../../mfc/reference/codesnippet/CPP/cedit-class_27.cpp)]  
   
 ## See Also  
- [MFC Sample CALCDRIV](../../top/visual-cpp-samples.md)   
- [MFC Sample CMNCTRL2](../../top/visual-cpp-samples.md)   
+ [MFC Sample CALCDRIV](../../visual-cpp-samples.md)   
+ [MFC Sample CMNCTRL2](../../visual-cpp-samples.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   

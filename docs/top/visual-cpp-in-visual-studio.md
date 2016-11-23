@@ -55,7 +55,7 @@ The [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] programming language and 
 -   If you are looking for the Visual C++ compiler, you need to download a paid or free edition of Visual Studio from [https://www.visualstudio.com/](https://www.visualstudio.com/).  
 
 ## General Information about Visual C++  
- [What's New for Visual C++](../top/what-s-new-for-visual-cpp-in-visual-studio.md)  
+ [What's New for Visual C++](../what-s-new-for-visual-cpp-in-visual-studio.md)  
  Find out what’s new in Visual C++.  
   
  [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-20151.md)  
@@ -64,7 +64,7 @@ The [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] programming language and 
  [Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)  
  Learn more about modern C++ programming techniques based on C++11 and C++14 that enable you to write fast, safe code and avoid many of the pitfalls of C-style programming.  
   
- [How to Report a Problem with the Visual C++ Toolset](../top/how-to-report-a-problem-with-the-visual-cpp-toolset.md)  
+ [How to Report a Problem with the Visual C++ Toolset](../how-to-report-a-problem-with-the-visual-cpp-toolset.md)  
  Learn how to create effective error reports against the Visual C++ toolset (compiler, linker, and other tools), and ways to submit your report.  
   
  [Visual C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md)  
@@ -82,10 +82,10 @@ The [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] programming language and 
  [Visual C++ Tools and Features in Visual Studio Editions](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)  
  Find out about different Visual Studio editions.  
   
- [Supported Platforms](../top/supported-platforms-visual-cpp.md)  
+ [Supported Platforms](../supported-platforms-visual-cpp.md)  
  Find out which platforms are supported.  
   
- [Visual C++ Samples](../top/visual-cpp-samples.md)  
+ [Visual C++ Samples](../visual-cpp-samples.md)  
  Information about samples.  
   
  [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=235296)  
@@ -104,10 +104,10 @@ The [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] programming language and 
  [Parallel Programming](../parallel/parallel-programming-in-visual-cpp.md)  
  Learn how to use the Parallel Patterns Library, C++ AMP, OpenMP, and other features that are related to multithreading on Windows.  
   
- [Security Best Practices](../top/security-best-practices-for-cpp.md)  
+ [Security Best Practices](../security-best-practices-for-cpp.md)  
  Learn how to protect applications from malicious code and unauthorized use.  
   
- [Cloud and Web Programming](../top/cloud-and-web-programming-in-visual-cpp.md)  
+ [Cloud and Web Programming](../cloud-and-web-programming-in-visual-cpp.md)  
  In C++, you have several options for connecting to the web and the cloud.  
   
  [Data Access](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b)  

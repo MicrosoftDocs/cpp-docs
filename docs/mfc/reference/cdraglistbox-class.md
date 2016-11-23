@@ -205,7 +205,7 @@ int ItemFromPt(
  Zero-based index of the drag list box item.  
   
 ## See Also  
- [MFC Sample TSTCON](../../top/visual-cpp-samples.md)   
+ [MFC Sample TSTCON](../../visual-cpp-samples.md)   
  [CListBox Class](../../mfc/reference/clistbox-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CListBox Class](../../mfc/reference/clistbox-class.md)

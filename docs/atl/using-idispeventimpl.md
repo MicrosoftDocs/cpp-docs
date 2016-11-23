@@ -50,7 +50,7 @@ When using `IDispEventImpl` to handle events, you will need to:
 ## Example  
  The example below shows how to handle the **DocumentChange** event fired by Word's **Application** object. This event is defined as a method on the **ApplicationEvents** dispinterface.  
   
- The example is from the [ATLEventHandling sample](../top/visual-cpp-samples.md).  
+ The example is from the [ATLEventHandling sample](../visual-cpp-samples.md).  
   
  `[`  
   
@@ -90,5 +90,5 @@ When using `IDispEventImpl` to handle events, you will need to:
   
 ## See Also  
  [Event Handling](../atl/event-handling-and-atl.md)   
- [ATLEventHandling Sample](../top/visual-cpp-samples.md)
+ [ATLEventHandling Sample](../visual-cpp-samples.md)
 

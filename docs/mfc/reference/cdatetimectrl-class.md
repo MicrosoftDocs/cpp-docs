@@ -548,7 +548,7 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew = NULL);
  [!code-cpp[NVC_MFC_CDateTimeCtrl#8](../../mfc/reference/codesnippet/CPP/cdatetimectrl-class_13.cpp)]  
   
 ## See Also  
- [MFC Sample CMNCTRL1](../../top/visual-cpp-samples.md)   
+ [MFC Sample CMNCTRL1](../../visual-cpp-samples.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CMonthCalCtrl Class](../../mfc/reference/cmonthcalctrl-class.md)

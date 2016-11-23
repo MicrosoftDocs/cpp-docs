@@ -1302,7 +1302,7 @@ void ShowDropDown(BOOL bShowIt = TRUE);
   See the example for [CComboBox::GetDroppedState](#ccombobox__getdroppedstate).  
   
 ## See Also  
- [MFC Sample CTRLBARS](../../top/visual-cpp-samples.md)   
+ [MFC Sample CTRLBARS](../../visual-cpp-samples.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   

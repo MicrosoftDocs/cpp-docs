@@ -38,7 +38,7 @@ translation.priority.ht:
 # TN014: Custom Controls
 This note describes the MFC Support for custom and self-drawing controls. It also describes dynamic subclassing, and describes the relationship between [CWnd](../mfc/reference/cwnd-class.md) objects and `HWND`s.  
   
- The MFC sample application CTRLTEST illustrates how to use many custom controls. See the source code for the MFC General sample [CTRLTEST](../top/visual-cpp-samples.md) and online help.  
+ The MFC sample application CTRLTEST illustrates how to use many custom controls. See the source code for the MFC General sample [CTRLTEST](../visual-cpp-samples.md) and online help.  
   
 ## Owner-Draw Controls/Menus  
  Windows provides support for owner-draw controls and menus by using Windows messages. The parent window of any control or menu receives these messages and calls functions in response. You can override these functions to customize the visual appearance and behavior of your owner-draw control or menu.  
@@ -120,7 +120,7 @@ This note describes the MFC Support for custom and self-drawing controls. It als
  For self-drawing list boxes and combo boxes, `OnDeleteItem` is not usually overridden. You can override `OnDeleteItem` if you want to perform any special processing. One case where this would be applicable is when additional memory or other resources are stored with each list box or combo box item.  
   
 ## Examples of Self-Drawing Controls and Menus  
- The MFC General sample [CTRLTEST](../top/visual-cpp-samples.md) provides samples of a self-draw menu and a self-draw list box.  
+ The MFC General sample [CTRLTEST](../visual-cpp-samples.md) provides samples of a self-draw menu and a self-draw list box.  
   
  The most typical example of a self-drawing button is a bitmap button. A bitmap button is a button that shows one, two, or three bitmap images for the different states. An example of this is provided in the MFC class [CBitmapButton](../mfc/reference/cbitmapbutton-class.md).  
   
@@ -145,7 +145,7 @@ This note describes the MFC Support for custom and self-drawing controls. It als
   
  Both routines attach a `CWnd` object to an existing `HWND`. `SubclassWindow` takes the `HWND` directly. `SubclassDlgItem` is a helper function that takes a control ID and the parent window. `SubclassDlgItem` is designed for attaching C++ objects to dialog controls created from a dialog template.  
   
- See the [CTRLTEST](../top/visual-cpp-samples.md) example for several examples of when to use `SubclassWindow` and `SubclassDlgItem`.  
+ See the [CTRLTEST](../visual-cpp-samples.md) example for several examples of when to use `SubclassWindow` and `SubclassDlgItem`.  
   
 ## See Also  
  [Technical Notes by Number](../mfc/technical-notes-by-number.md)   

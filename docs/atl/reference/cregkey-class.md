@@ -906,5 +906,5 @@ static LONG WINAPI SetValue(HKEY hKeyParent,
  The third method calls [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923).  
   
 ## See Also  
- [DCOM Sample](../../top/visual-cpp-samples.md)   
+ [DCOM Sample](../../visual-cpp-samples.md)   
  [Class Overview](../../atl/atl-class-overview.md)

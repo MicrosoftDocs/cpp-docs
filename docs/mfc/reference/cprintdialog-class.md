@@ -449,7 +449,7 @@ BOOL PrintSelection() const;
   See the example for [CPrintDialog::m_pd](#cprintdialog__m_pd).  
   
 ## See Also  
- [MFC Sample DIBLOOK](../../top/visual-cpp-samples.md)   
+ [MFC Sample DIBLOOK](../../visual-cpp-samples.md)   
  [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CPrintInfo Structure](../../mfc/reference/cprintinfo-structure.md)

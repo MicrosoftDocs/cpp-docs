@@ -511,7 +511,7 @@ SID_NAME_USE SidNameUse() const throw();
  Call [CSid::LoadAccount](#csid__loadaccount) to update the `CSid` object before calling `SidNameUse` to return its state. `SidNameUse` does not change the state of the object (by calling to **LookupAccountName** or **LookupAccountSid**), but only returns the current state.  
   
 ## See Also  
- [Security Sample](../../top/visual-cpp-samples.md)   
+ [Security Sample](../../visual-cpp-samples.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Security Global Functions](../../atl/reference/security-global-functions.md)   
  [Operators](../../atl/reference/atl-operators.md)

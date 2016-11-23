@@ -127,8 +127,8 @@ BOOL IsInitDlgCompleted() const;
  True if the initialization function for this dialog has completed.  
   
 ## See Also  
- [MFC Sample SNAPVW](../../top/visual-cpp-samples.md)   
- [MFC Sample VIEWEX](../../top/visual-cpp-samples.md)   
+ [MFC Sample SNAPVW](../../visual-cpp-samples.md)   
+ [MFC Sample VIEWEX](../../visual-cpp-samples.md)   
  [CScrollView Class](../../mfc/reference/cscrollview-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CDialog Class](../../mfc/reference/cdialog-class.md)   

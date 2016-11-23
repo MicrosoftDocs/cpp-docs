@@ -2003,8 +2003,8 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
  This member function emulates the functionality of the [TB_SETWINDOWTHEME](http://msdn.microsoft.com/library/windows/desktop/bb787465) message, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ## See Also  
- [MFC Sample CMNCTRL1](../../top/visual-cpp-samples.md)   
- [MFC Sample MFCIE](../../top/visual-cpp-samples.md)   
+ [MFC Sample CMNCTRL1](../../visual-cpp-samples.md)   
+ [MFC Sample MFCIE](../../visual-cpp-samples.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CToolBar Class](../../mfc/reference/ctoolbar-class.md)

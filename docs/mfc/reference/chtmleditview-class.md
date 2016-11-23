@@ -148,7 +148,7 @@ virtual LPCTSTR GetStartDocument();
 ```  
   
 ## See Also  
- [HTMLEdit Sample](../../top/visual-cpp-samples.md)   
+ [HTMLEdit Sample](../../visual-cpp-samples.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
 

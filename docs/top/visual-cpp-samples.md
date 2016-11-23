@@ -54,7 +54,7 @@ The Visual C++ samples listed below demonstrate different functionalities across
   
  [STL Samples](../misc/standard-template-library-samples.md)  
   
- [!INCLUDE[note_security_samplecode](../top/includes/note_security_samplecode_md.md)]  
+ [!INCLUDE[note_security_samplecode](../includes/note_security_samplecode_md.md)]  
   
 ## See Also  
  [Visual C++ Reference](http://msdn.microsoft.com/en-us/1ba03b5c-8229-4f63-b08c-6c12141d6ab1)

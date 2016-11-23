@@ -296,7 +296,7 @@ void SetMinPage(UINT nMinPage);
  Page numbers normally start at 1. This value is stored in the `CPrintDialog` object referenced by the `m_pPD` member.  
   
 ## See Also  
- [MFC Sample DIBLOOK](../../top/visual-cpp-samples.md)   
+ [MFC Sample DIBLOOK](../../visual-cpp-samples.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CView::OnBeginPrinting](../../mfc/reference/cview-class.md#cview__onbeginprinting)   
  [CView::OnEndPrinting](../../mfc/reference/cview-class.md#cview__onendprinting)   

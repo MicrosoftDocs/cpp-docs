@@ -122,7 +122,7 @@ class CRichEditView : public CCtrlView
   
  This Windows Common control (and therefore the [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) and related classes) is available only to programs running under Windows 95/98 and Windows NT versions 3.51 and later.  
   
- For an example of using a rich edit view in an MFC application, see the [WORDPAD](../../top/visual-cpp-samples.md) sample application.  
+ For an example of using a rich edit view in an MFC application, see the [WORDPAD](../../visual-cpp-samples.md) sample application.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -1084,7 +1084,7 @@ virtual void WrapChanged();
  [!code-cpp[NVC_MFCDocView#163](../../mfc/codesnippet/CPP/cricheditview-class_13.cpp)]  
   
 ## See Also  
- [MFC Sample WORDPAD](../../top/visual-cpp-samples.md)   
+ [MFC Sample WORDPAD](../../visual-cpp-samples.md)   
  [CCtrlView Class](../../mfc/reference/cctrlview-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CRichEditDoc Class](../../mfc/reference/cricheditdoc-class.md)   

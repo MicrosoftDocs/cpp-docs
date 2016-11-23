@@ -177,7 +177,7 @@ CReBarCtrl& GetReBarCtrl() const;
  [!code-cpp[NVC_MFC_CReBarCtrl#2](../../mfc/reference/codesnippet/CPP/crebar-class_2.cpp)]  
   
 ## See Also  
- [MFC Sample MFCIE](../../top/visual-cpp-samples.md)   
+ [MFC Sample MFCIE](../../visual-cpp-samples.md)   
  [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

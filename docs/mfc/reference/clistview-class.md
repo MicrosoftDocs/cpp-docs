@@ -117,7 +117,7 @@ void RemoveImageList(int nImageList);
  The zero-based index of the image to remove.  
   
 ## See Also  
- [MFC Sample ROWLIST](../../top/visual-cpp-samples.md)   
+ [MFC Sample ROWLIST](../../visual-cpp-samples.md)   
  [CCtrlView Class](../../mfc/reference/cctrlview-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CCtrlView Class](../../mfc/reference/cctrlview-class.md)

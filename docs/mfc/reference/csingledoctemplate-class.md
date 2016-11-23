@@ -132,7 +132,7 @@ CSingleDocTemplate(
  [!code-cpp[NVC_MFCDocViewSDI#14](../../mfc/codesnippet/CPP/csingledoctemplate-class_2.cpp)]  
   
 ## See Also  
- [MFC Sample DOCKTOOL](../../top/visual-cpp-samples.md)   
+ [MFC Sample DOCKTOOL](../../visual-cpp-samples.md)   
  [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)   

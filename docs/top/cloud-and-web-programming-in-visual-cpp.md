@@ -40,7 +40,7 @@ In C++, you have several options for connecting to the web and the cloud.
  [Live REST Interface](http://msdn.microsoft.com/library/live/hh243648.aspx)  
  Provides REST endpoints that you can use in Windows Store apps, Windows desktop apps, or C++ Linux applications to connect to [Live](http://msdn.microsoft.com/live/ff519582) services such as SkyDrive, Outlook.com, and Skype. C++ apps use these endpoints directly rather than going through the Live SDK, which is for .NET apps only.  
   
- [C++ REST SDK (Codename "Casablanca")](../top/cpp-rest-sdk-codename-casablanca.md)  
+ [C++ REST SDK (Codename "Casablanca")](../cpp-rest-sdk-codename-casablanca.md)  
  Provides convenient asynchronous HTTP wrapper methods that are designed for cross-platform compatibility and for use in desktop apps on operating systems back to Windows 7 and Windows Server 2012. You can also use these in Universal Windows Platform apps; however, for apps that target only Universal Windows Platform, we recommend that you use the `Windows::Web:HttpClient` class. The C++ REST SDK (codename "Casablanca") also provides helper classes that support REST calls and convert JSON data into C++ types. The SDK is available on [CodePlex](http://casablanca.codeplex.com/) and it contains sample files such as [live_connect.h](http://casablanca.codeplex.com/SourceControl/latest#Release/collateral/Samples/WindowsLiveAuth/live_connect.h), which provides helper methods for connecting to [Live](http://msdn.microsoft.com/live/ff519582) services.  
   
  [Windows::Web::Http::HttpClient](https://msdn.microsoft.com/en-us/library/windows/apps/windows.web.http.httpclient.aspx)  
@@ -53,5 +53,5 @@ In C++, you have several options for connecting to the web and the cloud.
  Windows API that you can use in Windows desktop apps to connect to the Internet.  
   
 ## See Also  
- [Visual C++](../top/visual-cpp-in-visual-studio.md)   
+ [Visual C++](../visual-cpp-in-visual-studio.md)   
  [Connecting to networks and web services (Windows Store apps using C#/VB/C++ and XAML)](http://msdn.microsoft.com/library/windows/apps/br229573.aspx)

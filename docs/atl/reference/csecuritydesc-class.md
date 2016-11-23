@@ -601,7 +601,7 @@ bool ToString(
  This method is only available with Windows 2000 and later, as it calls [ConvertStringSecurityDescriptorToSecurityDescriptor](http://msdn.microsoft.com/library/windows/desktop/aa376401).  
   
 ## See Also  
- [Security Sample](../../top/visual-cpp-samples.md)   
+ [Security Sample](../../visual-cpp-samples.md)   
  [SECURITY_DESCRIPTOR](http://msdn.microsoft.com/library/windows/desktop/aa379561)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Security Global Functions](../../atl/reference/security-global-functions.md)
