@@ -474,9 +474,9 @@ size_type max_size() const;
  Finds or inserts an element with the specified key. This method is concurrency-safe.  
   
 ```
-mapped_type& operator[](const key_type& KVal);
+mapped_type& operator[](const key_type& kval);
 
-mapped_type& operator[](key_type&& KVal);
+mapped_type& operator[](key_type&& kval);
 ```  
   
 ### Parameters  

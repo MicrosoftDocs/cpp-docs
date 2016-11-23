@@ -105,7 +105,7 @@ int main()
  For examples of using **delete**, see [new operator](../cpp/new-operator-cpp.md).  
   
 ## How delete works  
- The [delete operator](../cpp/delete-operator-cpp.md) invokes the function [operator delete](../misc/operator-delete-function.md).  
+ The delete operator invokes the function **operator delete**.  
   
  For objects not of class type ([class](../cpp/class-cpp.md), [struct](../cpp/struct-cpp.md), or [union](../cpp/unions.md)), the global delete operator is invoked. For objects of class type, the name of the deallocation function is resolved in global scope if the delete expression begins with the unary scope resolution operator (::). Otherwise, the delete operator invokes the destructor for an object prior to deallocating memory (if the pointer is not null). The delete operator can be defined on a per-class basis; if there is no such definition for a given class, the global operator delete is invoked. If the delete expression is used to deallocate a class object whose static type has a virtual destructor, the deallocation function is resolved through the virtual destructor of the dynamic type of the object.  
   
@@ -113,4 +113,3 @@ int main()
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [new and delete Operators](../cpp/new-and-delete-operators.md)   
- [operator delete Function](../misc/operator-delete-function.md)

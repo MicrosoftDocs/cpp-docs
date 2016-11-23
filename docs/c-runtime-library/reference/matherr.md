@@ -195,4 +195,3 @@ Normal: log( 0.0 ) = -1.#INF00e+000
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
- [Long Double](../../misc/long-double.md)

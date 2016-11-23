@@ -282,13 +282,13 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 |Method|Description|  
 |------------|-----------------|  
-|[local](reference/combinable-class.md#local_method)|Retrieves a reference to the local variable that is associated with the current thread context.|  
-|[clear](reference/combinable-class.md#clear_method)|Removes all thread-local variables from the `combinable` object.|  
-|[combine](reference/combinable-class.md#combine_method)<br /><br /> [combine_each](reference/combinable-class.md#combine_each_method)|Uses the provided combine function to generate a final value from the set of all thread-local computations.|  
+|[local](reference/combinable-class.md#combinable__local_method)|Retrieves a reference to the local variable that is associated with the current thread context.|  
+|[clear](reference/combinable-class.md#combinable__clear_method)|Removes all thread-local variables from the `combinable` object.|  
+|[combine](reference/combinable-class.md#combinable__combine_method)<br /><br /> [combine_each](reference/combinable-class.md#combinable__combine_each_method)|Uses the provided combine function to generate a final value from the set of all thread-local computations.|  
   
  The `combinable` class is a template class that is parameterized on the final merged result. If you call the default constructor, the `T` template parameter type must have a default constructor and a copy constructor. If the `T` template parameter type does not have a default constructor, call the overloaded version of the constructor that takes an initialization function as its parameter.  
   
- You can store additional data in a `combinable` object after you call the [combine](reference/combinable-class.md#combine_method) or [combine_each](reference/combinable-class.md#combine_each_method) methods. You can also call the `combine` and `combine_each` methods multiple times. If no local value in a `combinable` object changes, the `combine` and `combine_each` methods produce the same result every time that they are called.  
+ You can store additional data in a `combinable` object after you call the [combine](reference/combinable-class.md#combinable__combine_method) or [combine_each](reference/combinable-class.md#combinable__combine_each_method) methods. You can also call the `combine` and `combine_each` methods multiple times. If no local value in a `combinable` object changes, the `combine` and `combine_each` methods produce the same result every time that they are called.  
   
 ###  <a name="combinable-examples"></a> Examples  
  For examples about how to use the `combinable` class, see the following topics:  

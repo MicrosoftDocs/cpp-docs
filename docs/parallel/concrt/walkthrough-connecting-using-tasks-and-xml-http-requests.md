@@ -59,7 +59,7 @@ This example shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/e
   
  Because the `IXMLHTTPRequest2` interfaces act asynchronously, this example uses [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) to create a task that completes after the callback object completes or cancels the download operation. The `HttpRequest` class creates a task-based continuation from this task to set the final result. The `HttpRequest` class uses a task-based continuation to ensure that the continuation task runs even if the previous task produces an error or is canceled. For more information about task-based continuations, see [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)  
   
- To support cancellation, the `HttpRequest`, `HttpRequestBuffersCallback`, and `HttpRequestStringCallback` classes use cancellation tokens. The `HttpRequestBuffersCallback` and `HttpRequestStringCallback` classes use the [concurrency::cancellation_token::register_callback](../Topic/cancellation_token::register_callback%20Method.md) method to enable the task completion event to respond to cancellation. This cancellation callback aborts the download. For more info about cancellation, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
+ To support cancellation, the `HttpRequest`, `HttpRequestBuffersCallback`, and `HttpRequestStringCallback` classes use cancellation tokens. The `HttpRequestBuffersCallback` and `HttpRequestStringCallback` classes use the [concurrency::cancellation_token::register_callback](reference/cancellation-token-class.md#cancellation_token__register_callback) method to enable the task completion event to respond to cancellation. This cancellation callback aborts the download. For more info about cancellation, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
   
 #### To Define the HttpRequest Class  
   
@@ -109,7 +109,7 @@ This example shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/e
      [!code-cpp[concrt-using-ixhr2#A6](../../parallel/concrt/codesnippet/CPP/walkthrough-connecting-using-tasks-and-xml-http-requests_9.cpp)]  
   
     > [!TIP]
-    >  If your app does not require support for cancellation, pass [concurrency::cancellation_token::none](../Topic/cancellation_token::none%20Method.md) to the `HttpRequest::GetAsync` and `HttpRequest::PostAsync` methods.  
+    >  If your app does not require support for cancellation, pass [concurrency::cancellation_token::none](reference/cancellation-token-class.md#cancellation_token__none) to the `HttpRequest::GetAsync` and `HttpRequest::PostAsync` methods.  
   
 7.  In MainPage.xaml.cpp, implement the `MainPage::ProcessHttpRequest` method.  
   

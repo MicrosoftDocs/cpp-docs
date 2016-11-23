@@ -39,7 +39,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # C Operators
-The C operators are a subset of the [C++ operators](../misc/cpp-operators.md).  
+The C operators are a subset of the [C++ built-in operators](../cpp/cpp-built-in-operators-precedence-and-associativity.md).  
   
  There are three types of operators. A unary expression consists of either a unary operator prepended to an operand, or the `sizeof` keyword followed by an expression. The expression can be either the name of a variable or a cast expression. If the expression is a cast expression, it must be enclosed in parentheses. A binary expression consists of two operands joined by a binary operator. A ternary expression consists of three operands joined by the conditional-expression operator.  
   

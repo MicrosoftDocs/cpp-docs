@@ -49,13 +49,13 @@ This document explains the role of cancellation in the Parallel Patterns Library
   
 -   When possible, use cancellation tokens to cancel work. The [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) class defines a cancellation token.  
   
--   When you use cancellation tokens, use the [concurrency::cancellation_token_source::cancel](../Topic/cancellation_token_source::cancel%20Method.md) method to initiate cancellation and the [concurrency::cancel_current_task](../Topic/cancel_current_task%20Function.md) function to respond to cancellation.  
+-   When you use cancellation tokens, use the [concurrency::cancellation_token_source::cancel](reference/cancellation_token_source-class.md#cancellation_token_source__cancel) method to initiate cancellation and the [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) function to respond to cancellation.  
   
 -   Cancellation does not occur immediately. Although new work is not started if a task or task group is cancelled, active work must check for and respond to cancellation.  
   
 -   A value-based continuation inherits the cancellation token of its antecedent task. A task-based continuation never inherits the token of its antecedent task.  
   
--   Use the [concurrency::cancellation_token::none](../Topic/cancellation_token::none%20Method.md) method when you call a constructor or function that takes a `cancellation_token` object but you do not want the operation to be cancellable. Also, if you do not pass a cancellation token to the [concurrency::task](../../parallel/concrt/reference/task-class-concurrency-runtime.md) constructor or the [concurrency::create_task](../Topic/create_task%20Function.md) function, that task is not cancellable.  
+-   Use the [concurrency::cancellation_token::none](reference/cancellation-token-class.md#cancellation_token__none) method when you call a constructor or function that takes a `cancellation_token` object but you do not want the operation to be cancellable. Also, if you do not pass a cancellation token to the [concurrency::task](../../parallel/concrt/reference/task-class-concurrency-runtime.md) constructor or the [concurrency::create_task](reference/concurrency-namespace-functions.md#create_task) function, that task is not cancellable.  
   
 ##  <a name="top"></a> In this Document  
   
@@ -82,23 +82,23 @@ This document explains the role of cancellation in the Parallel Patterns Library
   
  [!code-cpp[concrt-task-tree#1](../../parallel/concrt/codesnippet/CPP/cancellation-in-the-ppl_1.cpp)]  
   
- You can also use the [concurrency::task_group](../Topic/task_group%20Class.md) class to create a similar work tree. The [concurrency::task](../../parallel/concrt/reference/task-class-concurrency-runtime.md) class also supports the notion of a tree of work. However, a `task` tree is a dependency tree. In a `task` tree, future works completes after current work. In a task group tree, internal work completes before outer work. For more information about the differences between tasks and task groups, see [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
+ You can also use the [concurrency::task_group](reference/task-group-class.md) class to create a similar work tree. The [concurrency::task](../../parallel/concrt/reference/task-class-concurrency-runtime.md) class also supports the notion of a tree of work. However, a `task` tree is a dependency tree. In a `task` tree, future works completes after current work. In a task group tree, internal work completes before outer work. For more information about the differences between tasks and task groups, see [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
  [[Top](#top)]  
   
 ##  <a name="tasks"></a> Canceling Parallel Tasks  
- There are multiple ways to cancel parallel work. The preferred way is to use a cancellation token. Task groups also support the [concurrency::task_group::cancel](../Topic/task_group::cancel%20Method.md) method and the [concurrency::structured_task_group::cancel](../Topic/structured_task_group::cancel%20Method.md) method. The final way is to throw an exception in the body of a task work function. No matter which method you choose, understand that cancellation does not occur immediately. Although new work is not started if a task or task group is cancelled, active work must check for and respond to cancellation.  
+ There are multiple ways to cancel parallel work. The preferred way is to use a cancellation token. Task groups also support the [concurrency::task_group::cancel](reference/task-group-class.md#task_group__cancel) method and the [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#structured_task_group__cancel) method. The final way is to throw an exception in the body of a task work function. No matter which method you choose, understand that cancellation does not occur immediately. Although new work is not started if a task or task group is cancelled, active work must check for and respond to cancellation.  
   
  For more examples that cancel parallel tasks, see [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md), [How to: Use Cancellation to Break from a Parallel Loop](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md), and [How to: Use Exception Handling to Break from a Parallel Loop](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md).  
   
 ###  <a name="tokens"></a> Using a Cancellation Token to Cancel Parallel Work  
  The `task`, `task_group`, and `structured_task_group` classes support cancellation through the use of cancellation tokens. The PPL defines the [concurrency::cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md) and [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) classes for this purpose. When you use a cancellation token to cancel work, the runtime does not start new work that subscribes to that token. Work that is already active can monitor its cancellation token and stop when it can.  
   
- To initiate cancellation, call the [concurrency::cancellation_token_source::cancel](../Topic/cancellation_token_source::cancel%20Method.md) method. You respond to cancellation in these ways:  
+ To initiate cancellation, call the [concurrency::cancellation_token_source::cancel](reference/cancellation_token_source-class.md#cancellation_token_source__cancel) method. You respond to cancellation in these ways:  
   
--   For `task` objects, use the [concurrency::cancel_current_task](../Topic/cancel_current_task%20Function.md) function. `cancel_current_task` cancels the current task and any of its value-based continuations. (It does not cancel the cancellation *token* that is associated with the task or its continuations.)  
+-   For `task` objects, use the [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) function. `cancel_current_task` cancels the current task and any of its value-based continuations. (It does not cancel the cancellation *token* that is associated with the task or its continuations.)  
   
--   For task groups and parallel algorithms, use the [concurrency::is_current_task_group_canceling](../Topic/is_current_task_group_canceling%20Function.md) function to detect cancellation and return as soon as possible from the task body when this function returns `true`. (Do not call `cancel_current_task` from a task group.)  
+-   For task groups and parallel algorithms, use the [concurrency::is_current_task_group_canceling](reference/concurrency-namespace-functions.md#is_current_task_group_canceling) function to detect cancellation and return as soon as possible from the task body when this function returns `true`. (Do not call `cancel_current_task` from a task group.)  
   
  The following example shows the first basic pattern for task cancellation. The task body occasionally checks for cancellation inside a loop.  
   
@@ -107,14 +107,14 @@ This document explains the role of cancellation in the Parallel Patterns Library
  The `cancel_current_task` function throws; therefore, you do not need to explicitly return from the current loop or function.  
   
 > [!TIP]
->  Alternatively, you can call the [concurrency::interruption_point](../Topic/interruption_point%20Function.md) function instead of `cancel_current_task`.  
+>  Alternatively, you can call the [concurrency::interruption_point](reference/concurrency-namespace-functions.md#interruption_point) function instead of `cancel_current_task`.  
   
  It is important to call `cancel_current_task` when you respond to cancellation because it transitions the task to the canceled state. If you return early instead of calling `cancel_current_task`, the operation transitions to the completed state and any value-based continuations are run.  
   
 > [!CAUTION]
 >  Never throw `task_canceled` from your code. Call `cancel_current_task` instead.  
   
- When a task ends in the canceled state, the [concurrency::task::get](../Topic/task::get%20Method.md) method throws [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md). (Conversely, [concurrency::task::wait](../Topic/task::wait%20Method.md) returns [task_status::canceled](../Topic/task_group_status%20Enumeration.md) and does not throw.) The following example illustrates this behavior for a task-based continuation. A task-based continuation is always called, even when the antecedent task is canceled.  
+ When a task ends in the canceled state, the [concurrency::task::get](reference/task-class-concurrency-runtime.md#task__get) method throws [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md). (Conversely, [concurrency::task::wait](reference/task-class-concurrency-runtime.md#task__wait) returns [task_status::canceled](reference/concurrency-namespace-enums.md#task_group_status) and does not throw.) The following example illustrates this behavior for a task-based continuation. A task-based continuation is always called, even when the antecedent task is canceled.  
   
  [!code-cpp[concrt-task-canceled#1](../../parallel/concrt/codesnippet/CPP/cancellation-in-the-ppl_3.cpp)]  
   
@@ -123,9 +123,9 @@ This document explains the role of cancellation in the Parallel Patterns Library
  [!code-cpp[concrt-task-canceled#2](../../parallel/concrt/codesnippet/CPP/cancellation-in-the-ppl_4.cpp)]  
   
 > [!CAUTION]
->  If you do not pass a cancellation token to the `task` constructor or the [concurrency::create_task](../Topic/create_task%20Function.md) function, that task is not cancellable. In addition, you must pass the same cancellation token to the constructor of any nested tasks (that is, tasks that are created in the body of another task) to cancel all tasks simultaneously.  
+>  If you do not pass a cancellation token to the `task` constructor or the [concurrency::create_task](reference/concurrency-namespace-functions.md#create_task) function, that task is not cancellable. In addition, you must pass the same cancellation token to the constructor of any nested tasks (that is, tasks that are created in the body of another task) to cancel all tasks simultaneously.  
   
- You might want to run arbitrary code when a cancellation token is canceled. For example, if your user chooses a **Cancel** button on the user interface to cancel the operation, you could disable that button until the user starts another operation. The following example shows how to use the [concurrency::cancellation_token::register_callback](../Topic/cancellation_token::register_callback%20Method.md) method to register a callback function that runs when a cancellation token is canceled.  
+ You might want to run arbitrary code when a cancellation token is canceled. For example, if your user chooses a **Cancel** button on the user interface to cancel the operation, you could disable that button until the user starts another operation. The following example shows how to use the [concurrency::cancellation_token::register_callback](reference/cancellation-token-class.md#cancellation_token__register_callback) method to register a callback function that runs when a cancellation token is canceled.  
   
  [!code-cpp[concrt-task-cancellation-callback#1](../../parallel/concrt/codesnippet/CPP/cancellation-in-the-ppl_5.cpp)]  
   
@@ -141,14 +141,14 @@ This document explains the role of cancellation in the Parallel Patterns Library
 >  A task that is created in another task (in other words, a nested task) does not inherit the cancellation token of the parent task. Only a value-based continuation inherits the cancellation token of its antecedent task.  
   
 > [!TIP]
->  Use the [concurrency::cancellation_token::none](../Topic/cancellation_token::none%20Method.md) method when you call a constructor or function that takes a `cancellation_token` object and you do not want the operation to be cancellable.  
+>  Use the [concurrency::cancellation_token::none](reference/cancellation-token-class.md#cancellation_token__none) method when you call a constructor or function that takes a `cancellation_token` object and you do not want the operation to be cancellable.  
   
- You can also provide a cancellation token to the constructor of a `task_group` or `structured_task_group` object. An important aspect of this is that child task groups inherit this cancellation token. For an example that demonstrates this concept by using the [concurrency::run_with_cancellation_token](../Topic/run_with_cancellation_token%20Function.md) function to run to call `parallel_for`, see [Canceling Parallel Algorithms](#algorithms) later in this document.  
+ You can also provide a cancellation token to the constructor of a `task_group` or `structured_task_group` object. An important aspect of this is that child task groups inherit this cancellation token. For an example that demonstrates this concept by using the [concurrency::run_with_cancellation_token](reference/concurrency-namespace-functions.md#run_with_cancellation_token) function to run to call `parallel_for`, see [Canceling Parallel Algorithms](#algorithms) later in this document.  
   
  [[Top](#top)]  
   
 #### Cancellation Tokens and Task Composition  
- The [concurrency:: HYPERLINK "http://msdn.microsoft.com/library/system.threading.tasks.task.whenall(v=VS.110).aspx" when_all](../Topic/when_all%20Function.md) and [concurrency::when_any](../Topic/when_all%20Function.md) functions can help you compose multiple tasks to implement common patterns. This section describes how these functions work with cancellation tokens.  
+ The [concurrency:: HYPERLINK "http://msdn.microsoft.com/library/system.threading.tasks.task.whenall(v=VS.110).aspx" when_all](reference/concurrency-namespace-functions.md#when_all) and [concurrency::when_any](reference/concurrency-namespace-functions.md#when_all) functions can help you compose multiple tasks to implement common patterns. This section describes how these functions work with cancellation tokens.  
   
  When you provide a cancellation token to either the `when_all` and `when_any` function, that function cancels only when that cancellation token is cancelled or when one of the participant tasks ends in a canceled state or throws an exception.  
   
@@ -159,7 +159,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
  [[Top](#top)]  
   
 ###  <a name="cancel"></a> Using the cancel Method to Cancel Parallel Work  
- The [concurrency::task_group::cancel](../Topic/task_group::cancel%20Method.md) and [concurrency::structured_task_group::cancel](../Topic/structured_task_group::cancel%20Method.md) methods set a task group to the canceled state. After you call `cancel`, the task group does not start future tasks. The `cancel` methods can be called by multiple child tasks. A canceled task causes the [concurrency::task_group::wait](../Topic/task_group::wait%20Method.md) and [concurrency::structured_task_group::wait](../Topic/structured_task_group::wait%20Method.md) methods to return [concurrency::canceled](../Topic/task_group_status%20Enumeration.md).  
+ The [concurrency::task_group::cancel](reference/task-group-class.md#task_group__cancel) and [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#structured_task_group__cancel) methods set a task group to the canceled state. After you call `cancel`, the task group does not start future tasks. The `cancel` methods can be called by multiple child tasks. A canceled task causes the [concurrency::task_group::wait](reference/task-group-class.md#task_group__wait) and [concurrency::structured_task_group::wait](reference/structured-task-group-class.md#structured_task_group__wait) methods to return [concurrency::canceled](reference/concurrency-namespace-enums.md#task_group_status).  
   
  If a task group is canceled, calls from each child task into the runtime can trigger an *interruption point*, which causes the runtime to throw and catch an internal exception type to cancel active tasks. The Concurrency Runtime does not define specific interruption points; they can occur in any call to the runtime. The runtime must handle the exceptions that it throws in order to perform cancellation. Therefore, do not handle unknown exceptions in the body of a task.  
   
@@ -169,7 +169,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
   
  This example checks for cancellation on every 100<sup>th</sup> iteration of the task loop. The frequency with which you check for cancellation depends on the amount of work your task performs and how quickly you need for tasks to respond to cancellation.  
   
- If you do not have access to the parent task group object, call the [concurrency::is_current_task_group_canceling](../Topic/is_current_task_group_canceling%20Function.md) function to determine whether the parent task group is canceled.  
+ If you do not have access to the parent task group object, call the [concurrency::is_current_task_group_canceling](reference/concurrency-namespace-functions.md#is_current_task_group_canceling) function to determine whether the parent task group is canceled.  
   
  The `cancel` method only affects child tasks. For example, if you cancel the task group `tg1` in the illustration of the parallel work tree, all tasks in the tree (`t1`, `t2`, `t3`, `t4`, and `t5`) are affected. If you cancel the nested task group, `tg2`, only tasks `t4` and `t5` are affected.  
   
@@ -183,7 +183,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
   
  [!code-cpp[concrt-task-tree#3](../../parallel/concrt/codesnippet/CPP/cancellation-in-the-ppl_8.cpp)]  
   
- The `structured_task_group` class is not thread-safe. Therefore, a child task that calls a method of its parent `structured_task_group` object produces unspecified behavior. The exceptions to this rule are the `structured_task_group::cancel` and [concurrency::structured_task_group::is_canceling](../Topic/structured_task_group::is_canceling%20Method.md) methods. A child task can call these methods to cancel the parent task group and check for cancellation.  
+ The `structured_task_group` class is not thread-safe. Therefore, a child task that calls a method of its parent `structured_task_group` object produces unspecified behavior. The exceptions to this rule are the `structured_task_group::cancel` and [concurrency::structured_task_group::is_canceling](reference/structured-task-group-class.md#structured_task_group__is_canceling) methods. A child task can call these methods to cancel the parent task group and check for cancellation.  
   
 > [!CAUTION]
 >  Although you can use a cancellation token to cancel work that is performed by a task group that runs as a child of a `task` object, you cannot use the `task_group::cancel` or `structured_task_group::cancel` methods to cancel `task` objects that run in a task group.  
@@ -219,7 +219,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
   
  [!code-cpp[concrt-cancel-parallel-for#1](../../parallel/concrt/codesnippet/CPP/cancellation-in-the-ppl_11.cpp)]  
   
- The following example uses the [concurrency::structured_task_group::run_and_wait](../Topic/structured_task_group::run_and_wait%20Method.md) method to call the `parallel_for` algorithm. The `structured_task_group::run_and_wait` method waits for the provided task to finish. The `structured_task_group` object enables the work function to cancel the task.  
+ The following example uses the [concurrency::structured_task_group::run_and_wait](reference/structured-task-group-class.md#structured_task_group__run_and_wait) method to call the `parallel_for` algorithm. The `structured_task_group::run_and_wait` method waits for the provided task to finish. The `structured_task_group` object enables the work function to cancel the task.  
   
  [!code-cpp[concrt-task-tree#7](../../parallel/concrt/codesnippet/CPP/cancellation-in-the-ppl_12.cpp)]  
   
@@ -270,9 +270,9 @@ Caught 50
   
  [cancellation_token Class](../../parallel/concrt/reference/cancellation-token-class.md)  
   
- [task_group Class](../Topic/task_group%20Class.md)  
+ [task_group Class](reference/task-group-class.md)  
   
  [structured_task_group Class](../../parallel/concrt/reference/structured-task-group-class.md)  
   
- [parallel_for Function](../Topic/parallel_for%20Function.md)
+ [parallel_for Function](reference/concurrency-namespace-functions.md#parallel_for)
 

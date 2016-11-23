@@ -42,7 +42,7 @@ translation.priority.mt:
   
 ### To correct this error  
   
-1.  Ensure that the 'identifier' function is not modified with the [__forceinline](../../misc/inline-inline-forceinline.md) specifier.  
+1.  Ensure that the 'identifier' function is not modified with the [__forceinline](../../cpp/inline-functions-cpp.md) specifier.  
   
 2.  Ensure that the 'identifier' function does not contain a [_alloca](../../c-runtime-library/reference/alloca.md) function that is contained in a loop.  
   

@@ -77,8 +77,8 @@ invalid_multiple_scheduling() throw();
 ## See Also  
  [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
  [task_handle Class](../../../parallel/concrt/reference/task-handle-class.md)   
- [task_group Class](../Topic/task_group%20Class.md)   
- [task_group::run Method](../Topic/task_group%20Class.md)   
- [task_group::wait Method](../Topic/task_group%20Class.md)   
- [task_group::run_and_wait Method](../Topic/task_group%20Class.md)   
+ [task_group Class](task-group-class.md)   
+ [task_group::run Method](task-group-class.md)   
+ [task_group::wait Method](task-group-class.md)   
+ [task_group::run_and_wait Method](task-group-class.md)   
  [structured_task_group Class](../../../parallel/concrt/reference/structured-task-group-class.md)
