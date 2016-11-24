@@ -108,5 +108,3 @@ int main()
   
  For more information about overloaded assignment operators, see [Assignment](../cpp/assignment.md).  
   
-## See Also  
- [Special Member Functions](../misc/special-member-functions-cpp.md)

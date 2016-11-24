@@ -82,7 +82,7 @@ expression – expression
   
  Note that addition and subtraction are not equivalent operations.  
   
- If both operands are of arithmetic type, the conversions covered in [Arithmetic Conversions](../misc/arithmetic-conversions.md) are applied to the operands, and the result is of the converted type.  
+ If both operands are of arithmetic type, the conversions covered in [Standard Conversions](standard-conversions.md) are applied to the operands, and the result is of the converted type.  
   
 ## Example  
   
@@ -131,8 +131,6 @@ for( int i = 0; i < 10; ++i )
   
 ## See Also  
  [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)   
- [C++ Operators](../misc/cpp-operators.md)   
+ [C++ Operators](cpp-built-in-operators-precedence-and-associativity.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
- [Addition of Pointer Types](../misc/addition-of-pointer-types.md)   
- [Subtraction of Pointer Types](../misc/subtraction-of-pointer-types.md)   
  [C Additive Operators](../c-language/c-additive-operators.md)

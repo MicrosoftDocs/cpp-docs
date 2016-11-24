@@ -346,7 +346,7 @@ int main(){
   
  The following code shows some examples of list initialization:  
   
-```vb  
+```cpp  
 class MyClass {  
 public:  
     MyClass(int myInt, char myChar) {}    

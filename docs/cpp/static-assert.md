@@ -128,4 +128,4 @@ public:
  [assert Macro, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md)   
  [Templates](../cpp/templates-cpp.md)   
  [ASCII Character Set](../c-language/ascii-character-set.md)   
- [Declarations](../misc/declarations.md)
+ [Declarations and Definitions](declarations-and-definitions-cpp.md)

@@ -37,7 +37,7 @@ translation.priority.ht:
   
 ## Syntax  
   
-```vb  
+```cpp  
 ReturnType FunctionName(params) noexcept;  
 ReturnType FunctionName(params) noexcept(noexcept(expression);  
 ```  

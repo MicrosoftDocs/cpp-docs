@@ -213,5 +213,4 @@ int main()
   
 ## See Also  
  [Keywords](../cpp/keywords-cpp.md)   
- [Type of this Pointer](../misc/type-of-this-pointer.md)   
- [Argument Matching and the this Pointer](../misc/argument-matching-and-the-this-pointer.md)
+ 

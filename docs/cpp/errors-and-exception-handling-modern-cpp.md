@@ -98,7 +98,7 @@ int main()
   
 -   Don't use exception specifications, which are deprecated in C++11. For more information, see the section titled **Exception specifications and noexcept**.  
   
--   Use standard library exception types when they apply. Derive custom exception types from the [exception Class](../standard-library/exception-class1.md) hierarchy. For more information, see [(NOTINBUILD)How to: Use the Standard Library Exception Objects](http://msdn.microsoft.com/en-us/ad1fb785-ed4e-4d94-8e84-964353aed7b6).  
+-   Use standard library exception types when they apply. Derive custom exception types from the [exception Class](../standard-library/exception-class.md) hierarchy. For more information, see [(NOTINBUILD)How to: Use the Standard Library Exception Objects](http://msdn.microsoft.com/en-us/ad1fb785-ed4e-4d94-8e84-964353aed7b6).  
   
 -   Don't allow exceptions to escape from destructors or memory-deallocation functions.  
   

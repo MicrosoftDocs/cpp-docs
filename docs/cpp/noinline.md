@@ -57,4 +57,4 @@ class X {
 ## See Also  
  [__declspec](../cpp/declspec.md)   
  [Keywords](../cpp/keywords-cpp.md)   
- [inline, __inline, \__forceinline](../misc/inline-inline-forceinline.md)
+ [inline, __inline, \__forceinline](inline-functions-cpp.md)

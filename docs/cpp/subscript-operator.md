@@ -125,7 +125,7 @@ int main() {
   
 ## See Also  
  [Postfix Expressions](../cpp/postfix-expressions.md)   
- [C++ Operators](../misc/cpp-operators.md)   
+ [C++ Operators](cpp-built-in-operators-precedence-and-associativity.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Arrays](../cpp/arrays-cpp.md)   
  [One-Dimensional Arrays](../c-language/one-dimensional-arrays.md)   

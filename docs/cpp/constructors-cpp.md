@@ -711,5 +711,3 @@ int main()
   
  `Base::Base` calls the function `f`, which is a virtual function. Ordinarily, `Derived::f` would be called because the object `d` is of type `Derived`. Because the `Base::Base` function is a constructor, the object is not yet of the `Derived` type, and `Base::f` is called.  
   
-## See Also  
- [Special Member Functions](../misc/special-member-functions-cpp.md)

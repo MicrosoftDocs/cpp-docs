@@ -90,7 +90,7 @@ int main() {
 (cout << "The true expression 3 > 2 yields: " << 3) < (2 << "\n");  
 ```  
   
- The usual arithmetic conversions covered in [Arithmetic Conversions](../misc/arithmetic-conversions.md) are applied to operands of arithmetic types.  
+ The usual arithmetic conversions covered in [Standard Conversions](standard-conversions.md) are applied to operands of arithmetic types.  
   
 ## Comparing pointers  
  When two pointers to objects of the same type are compared, the result is determined by the location of the objects pointed to in the program's address space. Pointers can also be compared to a constant expression that evaluates to 0 or to a pointer of type void *. If a pointer comparison is made against a pointer of type void \*, the other pointer is implicitly converted to type void \*. Then the comparison is made.  
@@ -113,6 +113,6 @@ int main() {
   
 ## See Also  
  [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)   
- [C++ Operators](../misc/cpp-operators.md)   
+ [C++ Operators](cpp-built-in-operators-precedence-and-associativity.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C Relational and Equality Operators](../c-language/c-relational-and-equality-operators.md)

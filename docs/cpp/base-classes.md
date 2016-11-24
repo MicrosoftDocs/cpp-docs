@@ -45,7 +45,3 @@ Multiple Instances of a Single Base Class
   
  In the figure, pictorial representations of the components of `CollectibleString` and `CollectibleSortable` are shown. However, the base class, `Collectible`, is in `CollectibleSortableString` through the `CollectibleString` path and the `CollectibleSortable` path. To eliminate this redundancy, such classes can be declared as virtual base classes when they are inherited.  
   
- For information about declaring virtual base classes and how objects with virtual base classes are composed, see [Virtual Base Classes](../misc/virtual-base-classes.md).  
-  
-## See Also  
- [Overview of Derived Classes](../misc/overview-of-derived-classes.md)

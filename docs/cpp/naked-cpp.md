@@ -51,7 +51,7 @@ __declspec(naked) declarator
 ## Remarks  
  Because the `naked` attribute is only relevant to the definition of a function and is not a type modifier, naked functions must use extended attribute syntax and the [__declspec](../cpp/declspec.md) keyword.  
   
- The compiler cannot generate an inline function for a function marked with the naked attribute, even if the function is also marked with the [__forceinline](../misc/inline-inline-forceinline.md) keyword.  
+ The compiler cannot generate an inline function for a function marked with the naked attribute, even if the function is also marked with the [__forceinline](inline-functions-cpp.md) keyword.  
   
  The compiler issues an error if the `naked` attribute is applied to anything other than the definition of a non-member method.  
   

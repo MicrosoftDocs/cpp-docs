@@ -244,6 +244,4 @@ void f() {
    delete [] pX;  
 }  
 ```  
-  
-## See Also  
- [Special Member Functions](../misc/special-member-functions-cpp.md)
+ 

@@ -289,4 +289,4 @@ namespace
 ## Remarks  
   
 ## See Also  
- [Declarations](../misc/declarations.md)
+ [Declarations and Definitions](declarations-and-definitions-cpp.md)

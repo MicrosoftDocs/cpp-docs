@@ -145,7 +145,7 @@ int main()
 |[C3535](../error-messages/compiler-errors-2/compiler-error-c3535.md)|A method or template parameter cannot be declared with the `auto` keyword.|  
 |[C3536](../error-messages/compiler-errors-2/compiler-error-c3536.md)|A symbol cannot be used before it is initialized. In practice, this means that a variable cannot be used to initialize itself.|  
 |[C3537](../error-messages/compiler-errors-2/compiler-error-c3537.md)|You cannot cast to a type that is declared with the `auto` keyword.|  
-|[C3538](../error-messages/compiler-errors-2/compiler-error-c3538.md)|All the symbols in a declarator list that is declared with the `auto` keyword must resolve to the same type. For more information, see [Declarations](../misc/declarations.md).|  
+|[C3538](../error-messages/compiler-errors-2/compiler-error-c3538.md)|All the symbols in a declarator list that is declared with the `auto` keyword must resolve to the same type. For more information, see [Declarations and Definitions](declarations-and-definitions-cpp.md).|  
 |[C3540](../error-messages/compiler-errors-2/compiler-error-c3540.md), [C3541](../error-messages/compiler-errors-2/compiler-error-c3541.md)|The [sizeof](../cpp/sizeof-operator.md) and [typeid](../windows/typeid-cpp-component-extensions.md) operators cannot be applied to a symbol that is declared with the `auto` keyword.|  
   
 ## Examples  
@@ -247,7 +247,7 @@ int main()
  [sizeof Operator](../cpp/sizeof-operator.md)   
  [typeid](../windows/typeid-cpp-component-extensions.md)   
  [operator new](../Topic/operator%20new%20\(%3Cnew%3E\).md)   
- [Declarations](../misc/declarations.md)   
+ [Declarations and Definitions](declarations-and-definitions-cpp.md)   
  [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md)   
  [Initializers](../cpp/initializers.md)   
  [decltype](../cpp/decltype-cpp.md)

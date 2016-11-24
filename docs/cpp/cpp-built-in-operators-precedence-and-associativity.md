@@ -68,7 +68,7 @@ The C++ language includes all C operators and adds several new operators. Operat
 |[Prefix decrement](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md)|`––`|  
 |[One's complement](../cpp/one-s-complement-operator-tilde.md)|`~`|  
 |[Logical not](../cpp/logical-negation-operator-exclpt.md)|`!`|  
-|[Unary negation](../misc/unary-negation-operator.md)|`-`|  
+|[Unary negation](../cpp/unary-plus-and-negation-operators-plus-and.md)|`-`|  
 |[Unary plus](../cpp/unary-plus-and-negation-operators-plus-and.md)|`+`|  
 |[Address-of](../cpp/lvalue-reference-declarator-amp.md)|`&`|  
 |[Indirection](../cpp/indirection-operator-star.md)|`*`|  
@@ -125,5 +125,5 @@ The C++ language includes all C operators and adds several new operators. Operat
 |[Comma](../cpp/comma-operator.md)|`,`|  
   
 ## See Also  
- [C++ Operators](../misc/cpp-operators.md)   
+ [C++ Operators](cpp-built-in-operators-precedence-and-associativity.md)   
  [Operator Overloading](../cpp/operator-overloading.md)
