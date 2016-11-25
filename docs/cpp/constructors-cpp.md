@@ -604,7 +604,7 @@ class Derived : T {
  A deriving class cannot inherit from multiple base classes if those base classes have constructors that have an identical signature.  
   
 ##  <a name="rules_for_declaring_constructors"></a> Rules for Declaring Constructors  
- A constructor has the same name as its class. Any number of constructors can be declared, subject to the rules of overloaded functions. (For more information, see [Overloading](../misc/overloading-cpp.md).)  
+ A constructor has the same name as its class. Any number of constructors can be declared, subject to the rules of overloaded functions.  
   
  The `argument-declaration-list` may be empty.  
   
@@ -631,7 +631,7 @@ class Derived : T {
   
  The stdcall calling convention is used on static member functions and global functions declared with the **__stdcall** keyword, and that do not use a variable argument list. When you use the **__stdcall** keyword on a non-static member function, such as a constructor, the compiler will use the thiscall calling convention."  
   
- Constructors of base classes are not inherited by derived classes. When an object of derived class type is created, it is constructed starting with the base class components; then it moves to the derived class components. The compiler uses each base class's constructor as that part of the complete object is initialized (except in cases of virtual derivation, as described in [Initializing Base Classes](../misc/initializing-base-classes.md)).  
+ Constructors of base classes are not inherited by derived classes. When an object of derived class type is created, it is constructed starting with the base class components; then it moves to the derived class components. The compiler uses each base class's constructor as that part of the complete object is initialized (except in cases of virtual derivation.  
   
 ##  <a name="explicitly_invoking_constructors"></a> Explicitly invoking constructors  
  Constructors can be explicitly called in a program to create objects of a given type. For example, to create two `Point` objects that describe the ends of a line, the following code can be written:  

@@ -192,4 +192,3 @@ int main() {
 ## See Also  
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Namespaces](../cpp/namespaces-cpp.md)   
- [Names and Qualified Names](../misc/names-and-qualified-names.md)

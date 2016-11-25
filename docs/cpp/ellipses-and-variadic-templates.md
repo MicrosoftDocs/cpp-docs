@@ -32,7 +32,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Ellipses and Variadic Templates
-This article shows how to use the ellipsis (`...`) with C++ variadic templates. The ellipsis has had [many uses](../misc/ellipsis-dot-dot-dot.md) in C and C++. These include variable argument lists for functions. The `printf()` function from the C Runtime Library is one of the most well-known examples.  
+This article shows how to use the ellipsis (`...`) with C++ variadic templates. The ellipsis has had many uses in C and C++. These include variable argument lists for functions. The `printf()` function from the C Runtime Library is one of the most well-known examples.  
   
  A *variadic template* is a class or function template that supports an arbitrary number of arguments. This mechanism is especially useful to C++ library developers because you can apply it to both class templates and function templates, and thereby provide a wide range of type-safe and non-trivial functionality and flexibility.  
   
@@ -190,5 +190,3 @@ first, 2, third, 3.14159
 > [!NOTE]
 >  Most implementations that incorporate variadic template functions use recursion of some form, but it's slightly different from traditional recursion.  Traditional recursion involves a function calling itself by using the same signature. (It may be overloaded or templated, but the same signature is chosen each time.) Variadic recursion involves calling a variadic function template by using differing (almost always decreasing) numbers of arguments, and thereby stamping out a different signature every time. A "base case" is still required, but the nature of the recursion is different.  
   
-## See Also  
- [Ellipsis (...)](../misc/ellipsis-dot-dot-dot.md)
