@@ -86,6 +86,12 @@ For an overview of Modern C++ programming practices, see [Welcome Back to C++](w
  [Member-Access Control](../cpp/member-access-control-cpp.md)  
  Controlling access to class members: public, private, and protected keywords. Friend functions and classes.  
   
+ [Special Member Functions](../misc/special-member-functions-cpp.md)  
+ Special functions unique to class types: constructors, destructors, conversion functions, assignment operator, operator new and operator delete functions.  
+  
+ [Overloading](operator-overloading-cpp.md)  
+ Overloaded operators, rules for operator overloading.  
+  
  [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)  
  C++ exception handling, structured exception handling (SEH), keywords used in writing exception handling statements.  
   
