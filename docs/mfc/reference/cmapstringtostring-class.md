@@ -195,7 +195,7 @@ CPair* PLookup(LPCTSTR key);
  [!code-cpp[NVC_MFCCollections#74](../../mfc/codesnippet/cpp/cmapstringtostring-class_2.cpp)]  
   
 ## See Also  
- [MFC Sample COLLECT](../../visual-cpp-samples.md)   
+ [MFC Sample COLLECT](../../top/visual-cpp-samples.md)   
  [CObject Class](../../mfc/reference/cobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

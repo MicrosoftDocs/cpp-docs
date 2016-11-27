@@ -37,41 +37,41 @@ See the following sample programs that illustrate dialog boxes and property shee
   
  *MDI Sample Application with Dialog Boxes*  
   
--   [SCRIBBLE](../visual-cpp-samples.md)  
+-   [SCRIBBLE](../top/visual-cpp-samples.md)  
   
  *Modeless Dialog Box*  
   
--   [MODELESS](../visual-cpp-samples.md)  
+-   [MODELESS](../top/visual-cpp-samples.md)  
   
  *Property Sheet Dialog Box (Tab Dialog Box)*  
   
--   [PROPDLG](../visual-cpp-samples.md)  
+-   [PROPDLG](../top/visual-cpp-samples.md)  
   
--   [CMNCTRL1](../visual-cpp-samples.md)  
+-   [CMNCTRL1](../top/visual-cpp-samples.md)  
   
--   [CMNCTRL2](../visual-cpp-samples.md)  
+-   [CMNCTRL2](../top/visual-cpp-samples.md)  
   
  *Application Based on a Dialog Box*  
   
--   [CMNCTRL1](../visual-cpp-samples.md)  
+-   [CMNCTRL1](../top/visual-cpp-samples.md)  
   
--   [CMNCTRL2](../visual-cpp-samples.md)  
+-   [CMNCTRL2](../top/visual-cpp-samples.md)  
   
  *Dialog-Box Controls*  
   
--   [CMNCTRL1](../visual-cpp-samples.md)  
+-   [CMNCTRL1](../top/visual-cpp-samples.md)  
   
--   [CMNCTRL2](../visual-cpp-samples.md)  
+-   [CMNCTRL2](../top/visual-cpp-samples.md)  
   
--   [CTRLTEST](../visual-cpp-samples.md)  
+-   [CTRLTEST](../top/visual-cpp-samples.md)  
   
  *Dialog-Like Form Views*  
   
--   [VIEWEX](../visual-cpp-samples.md)  
+-   [VIEWEX](../top/visual-cpp-samples.md)  
   
  *In-Memory Dialog Template*  
   
--   [DLGTEMPL](../visual-cpp-samples.md)  
+-   [DLGTEMPL](../top/visual-cpp-samples.md)  
   
 ## See Also  
  [Dialog Boxes](../mfc/dialog-boxes.md)

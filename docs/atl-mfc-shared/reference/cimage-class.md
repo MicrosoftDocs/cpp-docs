@@ -1442,8 +1442,8 @@ BOOL TransparentBlt(HDC hDestDC,
  <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#199](../codesnippet/vs_snippets_cpp/nvc_atlmfc_utilities#199)]  -->
   
 ## See Also  
- [MMXSwarm Sample](../../visual-cpp-samples.md)   
- [SimpleImage Sample](../../visual-cpp-samples.md)   
+ [MMXSwarm Sample](../../top/visual-cpp-samples.md)   
+ [SimpleImage Sample](../../top/visual-cpp-samples.md)   
  [Device-Independent Bitmaps](http://msdn.microsoft.com/library/windows/desktop/dd183562)   
  [CreateDIBSection](http://msdn.microsoft.com/library/windows/desktop/dd183494)   
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)

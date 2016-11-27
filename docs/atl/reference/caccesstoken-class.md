@@ -1005,6 +1005,6 @@ bool SetPrimaryGroup(const CSid& rSid) throw(...);
  The primary group is the default group for new objects created while this access token is in effect.  
   
 ## See Also  
- [ATLSecurity Sample](../../visual-cpp-samples.md)   
+ [ATLSecurity Sample](../../top/visual-cpp-samples.md)   
  [Access Tokens](http://msdn.microsoft.com/library/windows/desktop/aa374909)   
  [Class Overview](../../atl/atl-class-overview.md)

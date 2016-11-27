@@ -222,7 +222,7 @@ COleControlSite* PrepareOleCtrl(int nIDC);
  For more information on writing your own DDX and DDV routines, see [Technical Note 26](../../mfc/tn026-ddx-and-ddv-routines.md). For an overview of DDX and DDV, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md) and [Dialog Box Topics](../../mfc/dialog-boxes.md).  
   
 ## See Also  
- [MFC Sample VIEWEX](../../visual-cpp-samples.md)   
+ [MFC Sample VIEWEX](../../top/visual-cpp-samples.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CWnd::DoDataExchange](../../mfc/reference/cwnd-class.md#cwnd__dodataexchange)   
  [CWnd::UpdateData](../../mfc/reference/cwnd-class.md#cwnd__updatedata)

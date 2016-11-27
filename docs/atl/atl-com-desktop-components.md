@@ -71,7 +71,7 @@ The ATL Reference documents the Active Template Library (ATL), a set of template
  [ATL Tutorial](../atl/active-template-library-atl-tutorial.md)  
  Leads you through the creation of a control and demonstrates some ATL fundamentals in the process.  
   
- [ATL Samples](../visual-cpp-samples.md)  
+ [ATL Samples](../top/visual-cpp-samples.md)  
  Sample code that shows how to use ATL to write COM objects.  
   
  [OLE DB Templates](../data/oledb/ole-db-templates.md)  

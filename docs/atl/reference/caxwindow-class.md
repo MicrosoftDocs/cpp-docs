@@ -349,7 +349,7 @@ HRESULT SetExternalUIHandler(IDocHostUIHandlerDispatch* pUIHandler);
  The external `IDocHostUIHandlerDispatch` interface is used by controls that query the host's site for the `IDocHostUIHandlerDispatch` interface. The WebBrowser control is one control that does this.  
   
 ## See Also  
- [ATLCON Sample](../../visual-cpp-samples.md)   
+ [ATLCON Sample](../../top/visual-cpp-samples.md)   
  [CWindow Class](../../atl/reference/cwindow-class.md)   
  [Composite Control Fundamentals](../../atl/atl-composite-control-fundamentals.md)   
  [Class Overview](../../atl/atl-class-overview.md)   

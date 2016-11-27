@@ -480,9 +480,9 @@ void SetAtGrow(size_t iElement,  INARGTYPE element);
  [!code-cpp[NVC_ATL_Utilities#12](../../atl/codesnippet/cpp/catlarray-class_12.cpp)]  
   
 ## See Also  
- [MMXSwarm Sample](../../visual-cpp-samples.md)   
- [DynamicConsumer Sample](../../visual-cpp-samples.md)   
- [UpdatePV Sample](../../visual-cpp-samples.md)   
- [Marquee Sample](../../visual-cpp-samples.md)   
+ [MMXSwarm Sample](../../top/visual-cpp-samples.md)   
+ [DynamicConsumer Sample](../../top/visual-cpp-samples.md)   
+ [UpdatePV Sample](../../top/visual-cpp-samples.md)   
+ [Marquee Sample](../../top/visual-cpp-samples.md)   
  [CArray Class](../../mfc/reference/carray-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)

@@ -137,9 +137,9 @@ class CSplitterWnd : public CWnd
   
  For more information on how to create dynamic splitter windows, see:  
   
--   MFC sample [Scribble](../../visual-cpp-samples.md)  
+-   MFC sample [Scribble](../../top/visual-cpp-samples.md)  
   
--   MFC sample [VIEWEX](../../visual-cpp-samples.md).  
+-   MFC sample [VIEWEX](../../top/visual-cpp-samples.md).  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -901,7 +901,7 @@ virtual void OnDraw(CDC* pDC);
 ### Remarks  
   
 ## See Also  
- [MFC Sample VIEWEX](../../visual-cpp-samples.md)   
+ [MFC Sample VIEWEX](../../top/visual-cpp-samples.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CView Class](../../mfc/reference/cview-class.md)   

@@ -139,7 +139,7 @@ CMFCDropDownToolbarButton(
  Typically, a drop-down toolbar button uses the text from the most recently used button in the toolbar that `pToolBar` specifies. It uses the text specified by `lpszName` when the button is converted to a menu button or is displayed in the **Commands** tab of the **Customize** dialog box. For more information about the **Customize** dialog box, see [CMFCToolBarsCustomizeDialog Class](../../mfc/reference/cmfctoolbarscustomizedialog-class.md).  
   
 ### Example  
- The following example demonstrates how to construct an object of the `CMFCDropDownToolbarButton` class. This code snippet is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).  
+ The following example demonstrates how to construct an object of the `CMFCDropDownToolbarButton` class. This code snippet is part of the [Visual Studio Demo sample](../../top/visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#31](../../mfc/codesnippet/cpp/cmfcdropdowntoolbarbutton-class_1.cpp)]  
   

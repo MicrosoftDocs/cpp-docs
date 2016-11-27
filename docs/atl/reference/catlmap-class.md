@@ -683,6 +683,6 @@ V
  The value element type.  
   
 ## See Also  
- [Marquee Sample](../../visual-cpp-samples.md)   
- [UpdatePV Sample](../../visual-cpp-samples.md)   
+ [Marquee Sample](../../top/visual-cpp-samples.md)   
+ [UpdatePV Sample](../../top/visual-cpp-samples.md)   
  [Class Overview](../../atl/atl-class-overview.md)

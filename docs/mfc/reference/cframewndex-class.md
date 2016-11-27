@@ -138,7 +138,7 @@ class CFrameWndEx : public CFrameWnd
 |[CFrameWndEx::WinHelp](#cframewndex__winhelp)|Invokes either the `WinHelp` application or context related help.|  
   
 ## Example  
- The following example demonstrates how to inherit a class from the `CFrameWndEx` class. The example illustrates the method signatures in the subclass, and how to override the `OnShowPopupMenu` method. This code snippet is part of the [Word Pad sample](../../visual-cpp-samples.md).  
+ The following example demonstrates how to inherit a class from the `CFrameWndEx` class. The example illustrates the method signatures in the subclass, and how to override the `OnShowPopupMenu` method. This code snippet is part of the [Word Pad sample](../../top/visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_WordPad#3](../../mfc/reference/codesnippet/cpp/cframewndex-class_1.h)]  
 [!code-cpp[NVC_MFC_WordPad#4](../../mfc/reference/codesnippet/cpp/cframewndex-class_2.cpp)]  

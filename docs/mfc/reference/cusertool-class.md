@@ -76,7 +76,7 @@ class CUserTool : public CObject
  For more information about how to enable user tools in your application, see [CUserToolsManager Class](../../mfc/reference/cusertoolsmanager-class.md).  
   
 ## Example  
- The following example demonstrates how to create a tool from a `CUserToolsManager` object, set the `m_strLabel` member variable, and set the application that the user tool runs. This code snippet is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).  
+ The following example demonstrates how to create a tool from a `CUserToolsManager` object, set the `m_strLabel` member variable, and set the application that the user tool runs. This code snippet is part of the [Visual Studio Demo sample](../../top/visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#35](../../mfc/codesnippet/cpp/cusertool-class_1.cpp)]  
   

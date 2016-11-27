@@ -64,7 +64,7 @@ This note describes the MFC [CSplitterWnd Class](../mfc/reference/csplitterwnd-c
 -   2 rows x 2 columns : for grid or table oriented data  
   
 ## Splitter Examples  
- Many of the MFC sample programs use splitter windows directly or indirectly. The MFC General sample [VIEWEX](../visual-cpp-samples.md) illustrates several uses of static splitters, including how to place a splitter in a splitter.  
+ Many of the MFC sample programs use splitter windows directly or indirectly. The MFC General sample [VIEWEX](../top/visual-cpp-samples.md) illustrates several uses of static splitters, including how to place a splitter in a splitter.  
   
  You can also use ClassWizard to create a new multiple document interface (MDI) Child frame window class that contains a splitter window. For more information on splitter windows, see [Multiple Document Types, Views, and Frame Windows](../mfc/multiple-document-types-views-and-frame-windows.md).  
   

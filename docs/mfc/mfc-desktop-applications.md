@@ -97,7 +97,7 @@ The Microsoft Foundation Class (MFC) Library provides an object-oriented wrapper
  [ATL/MFC Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md)  
  Provides links to classes that are shared between MFC and ATL.  
   
- [MFC Samples](../visual-cpp-samples.md)  
+ [MFC Samples](../top/visual-cpp-samples.md)  
  Provides links to samples that demonstrate how to use MFC.  
   
  [Visual C++ Libraries Reference](../standard-library/cpp-standard-library-reference.md)  

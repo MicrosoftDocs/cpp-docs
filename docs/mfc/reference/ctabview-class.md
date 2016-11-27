@@ -68,7 +68,7 @@ class CTabbedView : public CView
   
  For example, you might have a document that can be represented in different ways: as a spreadsheet, a chart, an editable form, and so on. You can create individual views drawing the data as needed, insert them into your `CTabView`-derived object and have them tabbed without any additional coding.  
   
- [TabbedView Sample: MFC Tabbed View Application](../../visual-cpp-samples.md) illustrates usage of `CTabView`.  
+ [TabbedView Sample: MFC Tabbed View Application](../../top/visual-cpp-samples.md) illustrates usage of `CTabView`.  
   
 ## Example  
  The following example shows how `CTabView` is used in the TabbedView sample.  

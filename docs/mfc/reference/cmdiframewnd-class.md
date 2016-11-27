@@ -403,9 +403,9 @@ void MDITile(int nType);
  See the example for [CMDIFrameWnd::MDICascade](#cmdiframewnd__mdicascade).  
   
 ## See Also  
- [MFC Sample MDI](../../visual-cpp-samples.md)   
- [MFC Sample MDIDOCVW](../../visual-cpp-samples.md)   
- [MFC Sample SNAPVW](../../visual-cpp-samples.md)   
+ [MFC Sample MDI](../../top/visual-cpp-samples.md)   
+ [MFC Sample MDIDOCVW](../../top/visual-cpp-samples.md)   
+ [MFC Sample SNAPVW](../../top/visual-cpp-samples.md)   
  [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   

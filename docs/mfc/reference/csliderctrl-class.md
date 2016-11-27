@@ -690,7 +690,7 @@ void SetToolTips(CToolTipCtrl* pWndTip);
  This member function implements the behavior of the Win32 message [TBM_SETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb760242), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. When a slider control is created with the **TBS_TOOLTIPS** style, it creates a default tooltip control that appears next to the slider, displaying the slider's current position. For a description of the slider control styles, see [Trackbar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760147) in the [!INCLUDE[winsdkshort](../../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
   
 ## See Also  
- [MFC Sample CMNCTRL2](../../visual-cpp-samples.md)   
+ [MFC Sample CMNCTRL2](../../top/visual-cpp-samples.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CProgressCtrl Class](../../mfc/reference/cprogressctrl-class.md)

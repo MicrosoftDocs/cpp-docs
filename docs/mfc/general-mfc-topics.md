@@ -42,7 +42,7 @@ This family of articles includes technical details about the Microsoft Foundatio
  The MFC framework is a powerful approach that lets you build upon the work of expert programmers for Windows. MFC shortens development time; makes code more portable; provides tremendous support without reducing programming freedom and flexibility; and gives easy access to "hard to program" user-interface elements and technologies, like Active technology, OLE, and Internet programming. Furthermore, MFC simplifies database programming through Data Access Objects (DAO) and Open Database Connectivity (ODBC), and network programming through Windows Sockets. MFC makes it easy to program features like property sheets ("tab dialogs"), print preview, and floating, customizable toolbars.  
   
 ## In This Section  
- `MFC Samples`, which are supplied in [Visual C++ Samples](../visual-cpp-samples.md)  
+ `MFC Samples`, which are supplied in [Visual C++ Samples](../top/visual-cpp-samples.md)  
   
  [Using the MFC Source Files](../mfc/using-the-mfc-source-files.md)  
   

@@ -89,4 +89,4 @@ Adds a parameter entry to the parameter entry structures.
 ## See Also  
  [CManualAccessor Class](../../data/oledb/cmanualaccessor-class.md)   
  [CManualAccessor::AddBindEntry](../../data/oledb/cmanualaccessor-addbindentry.md)   
- [DBViewer sample](../../visual-cpp-samples.md)
+ [DBViewer sample](../../top/visual-cpp-samples.md)

@@ -1034,9 +1034,9 @@ void UpdateAllViews(
  [!code-cpp[NVC_MFCDocView#64](../../mfc/codesnippet/cpp/cdocument-class_9.cpp)]  
   
 ## See Also  
- [MFC Sample MDIDOCVW](../../visual-cpp-samples.md)   
- [MFC Sample SNAPVW](../../visual-cpp-samples.md)   
- [MFC Sample NPP](../../visual-cpp-samples.md)   
+ [MFC Sample MDIDOCVW](../../top/visual-cpp-samples.md)   
+ [MFC Sample SNAPVW](../../top/visual-cpp-samples.md)   
+ [MFC Sample NPP](../../top/visual-cpp-samples.md)   
  [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)   

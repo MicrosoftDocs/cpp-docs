@@ -136,6 +136,6 @@ const CAccessToken* GetAccessToken() throw();
  If this method is called for the purposes that include the reversion of an impersonation of the `CAccessToken` object, the [Detach](#cautorevertimpersonation__detach) method should be used instead.  
   
 ## See Also  
- [ATLSecurity Sample](../../visual-cpp-samples.md)   
+ [ATLSecurity Sample](../../top/visual-cpp-samples.md)   
  [Access Tokens](http://msdn.microsoft.com/library/windows/desktop/aa374909)   
  [Class Overview](../../atl/atl-class-overview.md)

@@ -37,7 +37,7 @@ This tutorial walks you step-by-step through a nonattributed ATL project that cr
 >  ATL and MFC are not generally supported in the Express editions of Visual Studio.  
   
 > [!NOTE]
->  This tutorial creates the same source code as the Polygon sample. If you want to avoid entering the source code manually, you can download it from the [Polygon sample abstract](../visual-cpp-samples.md). You can then refer to the Polygon source code as you work through the tutorial, or use it to check for errors in your own project.  
+>  This tutorial creates the same source code as the Polygon sample. If you want to avoid entering the source code manually, you can download it from the [Polygon sample abstract](../top/visual-cpp-samples.md). You can then refer to the Polygon source code as you work through the tutorial, or use it to check for errors in your own project.  
   
 ### To create the initial ATL project using the ATL Project Wizard  
   

@@ -216,7 +216,7 @@ void SetAt(
  For more detailed remarks, see [CMapStringToOb::SetAt](../../mfc/reference/cmapstringtoob-class.md#cmapstringtoob__setat).  
   
 ## See Also  
- [MFC Sample COLLECT](../../visual-cpp-samples.md)   
+ [MFC Sample COLLECT](../../top/visual-cpp-samples.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CMapPtrToPtr Class](../../mfc/reference/cmapptrtoptr-class.md)   
  [CMapPtrToWord Class](../../mfc/reference/cmapptrtoword-class.md)   

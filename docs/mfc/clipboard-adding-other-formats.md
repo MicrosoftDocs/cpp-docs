@@ -54,7 +54,7 @@ This topic explains how to expand the list of supported formats, particularly fo
   
 3.  Add standard formats by calling `COleDataSource::CacheGlobalData` for each standard format you want to support.  
   
- This technique is used in the MFC OLE sample program [HIERSVR](../visual-cpp-samples.md) (examine the `OnGetClipboardData` member function of the **CServerItem** class). The only difference in this sample is that step three is not implemented because HIERSVR supports no other standard formats.  
+ This technique is used in the MFC OLE sample program [HIERSVR](../top/visual-cpp-samples.md) (examine the `OnGetClipboardData` member function of the **CServerItem** class). The only difference in this sample is that step three is not implemented because HIERSVR supports no other standard formats.  
   
 ### What do you want to know more about  
   

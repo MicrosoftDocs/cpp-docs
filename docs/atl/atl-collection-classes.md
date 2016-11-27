@@ -128,13 +128,13 @@ ATL provides many classes for storing and accessing data. Which class you decide
 ## Collection Classes Samples  
  The following samples demonstrate the collection classes:  
   
--   [MMXSwarm Sample](../visual-cpp-samples.md)  
+-   [MMXSwarm Sample](../top/visual-cpp-samples.md)  
   
--   [DynamicConsumer Sample](../visual-cpp-samples.md)  
+-   [DynamicConsumer Sample](../top/visual-cpp-samples.md)  
   
--   [UpdatePV Sample](../visual-cpp-samples.md)  
+-   [UpdatePV Sample](../top/visual-cpp-samples.md)  
   
--   [Marquee Sample](../visual-cpp-samples.md)  
+-   [Marquee Sample](../top/visual-cpp-samples.md)  
   
 ## See Also  
  [Concepts](../atl/active-template-library-atl-concepts.md)   

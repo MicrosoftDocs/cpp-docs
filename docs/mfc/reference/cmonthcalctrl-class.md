@@ -1151,7 +1151,7 @@ LPRECT SizeRectToMin(LPRECT lpRect);
  This method sends the [MCM_SIZERECTTOMIN](http://msdn.microsoft.com/library/windows/desktop/bb761020) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ## See Also  
- [MFC Sample CMNCTRL1](../../visual-cpp-samples.md)   
+ [MFC Sample CMNCTRL1](../../top/visual-cpp-samples.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CDateTimeCtrl Class](../../mfc/reference/cdatetimectrl-class.md)

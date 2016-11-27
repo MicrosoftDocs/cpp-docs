@@ -380,7 +380,7 @@ virtual UINT PreDrawPage(
  Override this function to customize the drawing of the image. If you override this function and return **TRUE**, you must draw the entire image. If you override this function and return **FALSE**, the entire default image is drawn by the framework.  
   
 ## See Also  
- [MFC Sample WORDPAD](../../visual-cpp-samples.md)   
+ [MFC Sample WORDPAD](../../top/visual-cpp-samples.md)   
  [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

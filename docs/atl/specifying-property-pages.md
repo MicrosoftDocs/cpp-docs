@@ -58,5 +58,5 @@ When you create an ActiveX control, you will often want to associate it with pro
   
 ## See Also  
  [Property Pages](../atl/atl-com-property-pages.md)   
- [ATLPages Sample](../visual-cpp-samples.md)
+ [ATLPages Sample](../top/visual-cpp-samples.md)
 

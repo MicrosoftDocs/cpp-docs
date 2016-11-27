@@ -92,8 +92,8 @@ class CRowset
  **Header:** atldbcli.h  
   
 ## See Also  
- [DBViewer Sample](../../visual-cpp-samples.md)   
- [MultiRead Sample](../../visual-cpp-samples.md)   
- [MultiRead Attributes Sample](../../visual-cpp-samples.md)   
+ [DBViewer Sample](../../top/visual-cpp-samples.md)   
+ [MultiRead Sample](../../top/visual-cpp-samples.md)   
+ [MultiRead Attributes Sample](../../top/visual-cpp-samples.md)   
  [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
  [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

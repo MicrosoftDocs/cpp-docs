@@ -137,7 +137,7 @@ virtual void RepositionFrame(
  Layout of control bars in the container window differs from that performed by a non-OLE frame window. The non-OLE frame window calculates the positions of control bars and other objects from a given frame-window size, as in a call to [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#cframewnd__recalclayout). The client area is what remains after space for control bars and other objects is subtracted. A `COleIPFrameWnd` window, on the other hand, positions toolbars in accordance with a given client area. In other words, `CFrameWnd::RecalcLayout` works "from the outside in," whereas `COleIPFrameWnd::RepositionFrame` works "from the inside out."  
   
 ## See Also  
- [MFC Sample HIERSVR](../../visual-cpp-samples.md)   
+ [MFC Sample HIERSVR](../../top/visual-cpp-samples.md)   
  [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)

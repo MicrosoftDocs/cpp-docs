@@ -72,7 +72,7 @@ class CMFCVisualManagerVS2005 : public CMFCVisualManagerOffice2003
  All of the members of this class are virtual functions that are derived from the ancestor of this class, [CMFCVisualManager Class](../../mfc/reference/cmfcvisualmanager-class.md).  
   
 ## Example  
- The following example demonstrates how to use the visual manager VS 2005. This code snippet is part of the [Desktop Alert Demo sample](../../visual-cpp-samples.md).  
+ The following example demonstrates how to use the visual manager VS 2005. This code snippet is part of the [Desktop Alert Demo sample](../../top/visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_DesktopAlertDemo#9](../../mfc/reference/codesnippet/cpp/cmfcvisualmanagervs2005-class_1.cpp)]  
   

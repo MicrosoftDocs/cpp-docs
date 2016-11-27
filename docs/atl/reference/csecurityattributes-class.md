@@ -110,7 +110,7 @@ void Set(const CSecurityDesc& rSecurityDescriptor,  bool bInheritHandle = false)
  This method is used by the constructor to initialize the `CSecurityAttributes` object.  
   
 ## See Also  
- [Security Sample](../../visual-cpp-samples.md)   
+ [Security Sample](../../top/visual-cpp-samples.md)   
  [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560)   
  [security descriptor](http://msdn.microsoft.com/library/windows/desktop/aa379561)   
  [Class Overview](../../atl/atl-class-overview.md)   

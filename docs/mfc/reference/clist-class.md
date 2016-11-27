@@ -613,7 +613,7 @@ void SetAt(
  [!code-cpp[NVC_MFCCollections#55](../../mfc/codesnippet/cpp/clist-class_21.cpp)]  
   
 ## See Also  
- [MFC Sample COLLECT](../../visual-cpp-samples.md)   
+ [MFC Sample COLLECT](../../top/visual-cpp-samples.md)   
  [CObject Class](../../mfc/reference/cobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CMap Class](../../mfc/reference/cmap-class.md)   

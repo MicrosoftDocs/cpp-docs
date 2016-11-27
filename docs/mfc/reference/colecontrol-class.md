@@ -3469,8 +3469,8 @@ virtual LRESULT WindowProc(
  Call this function to dispatch specific messages through the control's message map.  
   
 ## See Also  
- [MFC Sample CIRC3](../../visual-cpp-samples.md)   
- [MFC Sample TESTHELP](../../visual-cpp-samples.md)   
+ [MFC Sample CIRC3](../../top/visual-cpp-samples.md)   
+ [MFC Sample TESTHELP](../../top/visual-cpp-samples.md)   
  [COlePropertyPage Class](../../mfc/reference/colepropertypage-class.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

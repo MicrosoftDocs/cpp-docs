@@ -441,8 +441,8 @@ void SetClipboard();
 ```  
   
 ## See Also  
- [MFC Sample HIERSVR](../../visual-cpp-samples.md)   
- [MFC Sample OCLIENT](../../visual-cpp-samples.md)   
+ [MFC Sample HIERSVR](../../top/visual-cpp-samples.md)   
+ [MFC Sample OCLIENT](../../top/visual-cpp-samples.md)   
  [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [COleDataObject Class](../../mfc/reference/coledataobject-class.md)

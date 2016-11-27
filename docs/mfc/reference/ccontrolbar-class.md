@@ -489,7 +489,7 @@ void SetInPlaceOwner(CWnd* pWnd);
 ### Remarks  
   
 ## See Also  
- [MFC Sample CTRLBARS](../../visual-cpp-samples.md)   
+ [MFC Sample CTRLBARS](../../top/visual-cpp-samples.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CToolBar Class](../../mfc/reference/ctoolbar-class.md)   

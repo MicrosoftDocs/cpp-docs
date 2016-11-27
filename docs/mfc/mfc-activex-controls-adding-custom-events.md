@@ -109,7 +109,7 @@ Custom events differ from stock events in that they are not automatically fired 
   
 6.  Double-click the new handler function in Class View to jump to the message handler code in the implementation (.CPP) file of your ActiveX control.  
   
- The following code sample calls the **InCircle** function every time the left mouse button is clicked within the control window. This sample can be found in the `WM_LBUTTONDOWN` handler function, `OnLButtonDown`, in the [Circ sample](../visual-cpp-samples.md) abstract.  
+ The following code sample calls the **InCircle** function every time the left mouse button is clicked within the control window. This sample can be found in the `WM_LBUTTONDOWN` handler function, `OnLButtonDown`, in the [Circ sample](../top/visual-cpp-samples.md) abstract.  
   
  [!code-cpp[NVC_MFC_AxUI#10](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_4.cpp)]  
   

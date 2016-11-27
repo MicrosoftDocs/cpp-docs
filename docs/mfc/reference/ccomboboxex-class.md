@@ -410,7 +410,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
  This member function emulates the functionality of the [CBEM_SETWINDOWTHEME](http://msdn.microsoft.com/library/windows/desktop/bb775790) message, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ## See Also  
- [MFC Sample MFCIE](../../visual-cpp-samples.md)   
+ [MFC Sample MFCIE](../../top/visual-cpp-samples.md)   
  [CComboBox Class](../../mfc/reference/ccombobox-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CComboBox Class](../../mfc/reference/ccombobox-class.md)

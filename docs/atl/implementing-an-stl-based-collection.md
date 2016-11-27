@@ -35,7 +35,7 @@ translation.priority.ht:
 # Implementing an STL-Based Collection
 ATL provides the `ICollectionOnSTLImpl` interface to enable you to quickly implement Standard Template Library (STL)-based collection interfaces on your objects. To understand how this class works, you will work through a simple example (below) that uses this class to implement a read-only collection aimed at Automation clients.  
   
- The sample code is from the [ATLCollections sample](../visual-cpp-samples.md).  
+ The sample code is from the [ATLCollections sample](../top/visual-cpp-samples.md).  
   
  To complete this procedure, you will:  
   
@@ -91,7 +91,7 @@ ATL provides the `ICollectionOnSTLImpl` interface to enable you to quickly imple
   
  [!code-cpp[NVC_ATL_COM#26](../atl/codesnippet/cpp/implementing-an-stl-based-collection_3.h)]  
   
- In this example, you can use the custom `GenericCopy` class defined in VCUE_Copy.h and VCUE_CopyString.h from the [ATLCollections](../visual-cpp-samples.md) sample. You can use this class in other code, but you may need to define further specializations of `GenericCopy` to support data types used in your own collections. For more information, see [ATL Copy Policy Classes](../atl/atl-copy-policy-classes.md).  
+ In this example, you can use the custom `GenericCopy` class defined in VCUE_Copy.h and VCUE_CopyString.h from the [ATLCollections](../top/visual-cpp-samples.md) sample. You can use this class in other code, but you may need to define further specializations of `GenericCopy` to support data types used in your own collections. For more information, see [ATL Copy Policy Classes](../atl/atl-copy-policy-classes.md).  
   
 ##  <a name="vcconenumeration_and_collection"></a> Creating Typedefs for Enumeration and Collection  
  Now all the template parameters necessary to specialize the `CComEnumOnSTL` and `ICollectionOnSTLImpl` classes for this situation have been provided in the form of typedefs. To simplify the use of the specializations, create two more typedefs as shown below:  
@@ -114,6 +114,6 @@ ATL provides the `ICollectionOnSTLImpl` interface to enable you to quickly imple
   
 ## See Also  
  [Collections and Enumerators](../atl/atl-collections-and-enumerators.md)   
- [ATLCollections Sample](../visual-cpp-samples.md)   
+ [ATLCollections Sample](../top/visual-cpp-samples.md)   
  [ATL Copy Policy Classes](../atl/atl-copy-policy-classes.md)
 

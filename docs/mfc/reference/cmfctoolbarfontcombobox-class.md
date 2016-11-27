@@ -150,7 +150,7 @@ CMFCToolBarFontComboBox();
  Usually, `CMFCToolBarFontComboBox` objects store the list of available fonts in a single shared `CObList` object. If you use the second overload of the constructor and provide a valid pointer to `pLstFontsExternal`, that `CMFCToolBarFontComboBox` object will instead fill the `CObList` that `pLstFontsExternal` points to with available fonts.  
   
 ### Example  
- The following example demonstrates how to construct a `CMFCToolBarFontComboBox` object. This code snippet is part of the [Word Pad sample](../../visual-cpp-samples.md).  
+ The following example demonstrates how to construct a `CMFCToolBarFontComboBox` object. This code snippet is part of the [Word Pad sample](../../top/visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_WordPad#7](../../mfc/reference/codesnippet/cpp/cmfctoolbarfontcombobox-class_1.cpp)]  
   

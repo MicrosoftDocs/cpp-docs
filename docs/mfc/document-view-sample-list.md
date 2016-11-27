@@ -35,25 +35,25 @@ See the following sample programs that illustrate using MFC's document/view arch
   
  *Document/View Variations*  
   
--   [MDI](../visual-cpp-samples.md)  
+-   [MDI](../top/visual-cpp-samples.md)  
   
--   [SCRIBBLE](../visual-cpp-samples.md)  
+-   [SCRIBBLE](../top/visual-cpp-samples.md)  
   
--   [VIEWEX](../visual-cpp-samples.md)  
+-   [VIEWEX](../top/visual-cpp-samples.md)  
   
  *Dialog-Box Interface Replaces Document/View*  
   
--   [CMNCTRL1](../visual-cpp-samples.md)  
+-   [CMNCTRL1](../top/visual-cpp-samples.md)  
   
--   [CMNCTRL2](../visual-cpp-samples.md)  
+-   [CMNCTRL2](../top/visual-cpp-samples.md)  
   
  *Using COleDocument and Its Derived Classes*  
   
--   [CONTAINER](../visual-cpp-samples.md)  
+-   [CONTAINER](../top/visual-cpp-samples.md)  
   
--   [HIERSVR](../visual-cpp-samples.md)  
+-   [HIERSVR](../top/visual-cpp-samples.md)  
   
--   [OCLIENT](../visual-cpp-samples.md)  
+-   [OCLIENT](../top/visual-cpp-samples.md)  
   
 ## See Also  
  [Document/View Architecture](../mfc/document-view-architecture.md)

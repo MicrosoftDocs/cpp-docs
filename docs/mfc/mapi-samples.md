@@ -36,9 +36,9 @@ translation.priority.ht:
 # MAPI Samples
 See the following sample programs that illustrate Microsoft Messaging Application Programming Interface (MAPI) functionality:  
   
--   [NPP](../visual-cpp-samples.md)  
+-   [NPP](../top/visual-cpp-samples.md)  
   
--   [DRAWCLI](../visual-cpp-samples.md)  
+-   [DRAWCLI](../top/visual-cpp-samples.md)  
   
 ## See Also  
  [MAPI](../mfc/mapi.md)

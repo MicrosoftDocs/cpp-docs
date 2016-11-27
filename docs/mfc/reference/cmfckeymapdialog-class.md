@@ -110,7 +110,7 @@ CMFCKeyMapDialog(
 ### Remarks  
   
 ### Example  
- The following example demonstrates how to construct an object of the `CMFCKeyMapDialog` class. This example is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).  
+ The following example demonstrates how to construct an object of the `CMFCKeyMapDialog` class. This example is part of the [Visual Studio Demo sample](../../top/visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#21](../../mfc/codesnippet/cpp/cmfckeymapdialog-class_1.cpp)]  
   

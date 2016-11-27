@@ -105,7 +105,7 @@ The Active Template Library (ATL) is a set of template-based C++ classes that le
  Provides code for manipulating paths and URLs in the form of [CPathT](../atl/reference/cpatht-class.md) and [CUrl](../atl/reference/curl-class.md). A thread pool, [CThreadPool](../atl/reference/cthreadpool-class.md), can be used in your own applications. This code can be found in atlpath.h and atlutil.h.  
   
 ## Related Sections  
- [ATL Samples](../visual-cpp-samples.md)  
+ [ATL Samples](../top/visual-cpp-samples.md)  
  Provides descriptions of and links to the ATL sample programs.  
   
  [Creating an ATL Project](../atl/reference/creating-an-atl-project.md)  

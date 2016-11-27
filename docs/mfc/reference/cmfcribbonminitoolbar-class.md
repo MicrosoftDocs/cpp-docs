@@ -109,7 +109,7 @@ void SetCommands(
  Use this function to set the list of commands to be displayed in the mini toolbar.  
   
 ### Example  
- The following example demonstrates how to use the `SetCommands` method of the `CMFCRibbonMiniToolBar` class. This code snippet is part of the [MS Office 2007 Demo sample](../../visual-cpp-samples.md).  
+ The following example demonstrates how to use the `SetCommands` method of the `CMFCRibbonMiniToolBar` class. This code snippet is part of the [MS Office 2007 Demo sample](../../top/visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_MSOffice2007Demo#9](../../mfc/reference/codesnippet/cpp/cmfcribbonminitoolbar-class_1.cpp)]  
   

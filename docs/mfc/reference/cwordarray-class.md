@@ -470,7 +470,7 @@ void OnUpdate();
  This function allows the view to update its display to reflect modifications.  
   
 ## See Also  
- [MFC Sample COLLECT](../../visual-cpp-samples.md)   
+ [MFC Sample COLLECT](../../top/visual-cpp-samples.md)   
  [CObject Class](../../mfc/reference/cobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

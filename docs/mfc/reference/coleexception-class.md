@@ -115,7 +115,7 @@ static SCODE PASCAL Process(const CException* pAnyException);
   See the example for [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#coledispatchdriver__createdispatch).  
   
 ## See Also  
- [MFC Sample CALCDRIV](../../visual-cpp-samples.md)   
+ [MFC Sample CALCDRIV](../../top/visual-cpp-samples.md)   
  [CException Class](../../mfc/reference/cexception-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

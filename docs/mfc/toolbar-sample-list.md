@@ -35,11 +35,11 @@ translation.priority.ht:
 # Toolbar Sample List
 See the following sample programs that illustrate using MFC's toolbars:  
   
--   [SCRIBBLE](../visual-cpp-samples.md)  
+-   [SCRIBBLE](../top/visual-cpp-samples.md)  
   
--   [CTRLBARS](../visual-cpp-samples.md)  
+-   [CTRLBARS](../top/visual-cpp-samples.md)  
   
--   [DOCKTOOL](../visual-cpp-samples.md)  
+-   [DOCKTOOL](../top/visual-cpp-samples.md)  
   
 ## See Also  
  [Toolbars](../mfc/toolbars.md)

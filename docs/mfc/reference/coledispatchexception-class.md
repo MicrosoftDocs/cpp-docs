@@ -129,7 +129,7 @@ WORD m_wCode;
  This member is set by the function [AfxThrowOleDispatchException]--brokenlink--(../Topic/not%20found.md#afxthrowoledispatchexception) when an exception is thrown.  
   
 ## See Also  
- [MFC Sample CALCDRIV](../../visual-cpp-samples.md)   
+ [MFC Sample CALCDRIV](../../top/visual-cpp-samples.md)   
  [CException Class](../../mfc/reference/cexception-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [COleDispatchDriver Class](../../mfc/reference/coledispatchdriver-class.md)   

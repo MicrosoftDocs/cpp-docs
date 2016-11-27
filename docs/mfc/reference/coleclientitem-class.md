@@ -1827,8 +1827,8 @@ BOOL UpdateLink();
  For more information, see [IOleLink::Update](http://msdn.microsoft.com/library/windows/desktop/ms692660) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ## See Also  
- [MFC Sample MFCBIND](../../visual-cpp-samples.md)   
- [MFC Sample OCLIENT](../../visual-cpp-samples.md)   
+ [MFC Sample MFCBIND](../../top/visual-cpp-samples.md)   
+ [MFC Sample OCLIENT](../../top/visual-cpp-samples.md)   
  [CDocItem Class](../../mfc/reference/cdocitem-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [COleServerItem Class](../../mfc/reference/coleserveritem-class.md)

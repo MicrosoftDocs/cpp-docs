@@ -57,7 +57,7 @@ This section documents the structures, styles, and callback functions used by th
  [Class Library Overview](../../mfc/class-library-overview.md)  
  Lists the classes in the MFC Library according to category.  
   
- [MFC Samples](../../visual-cpp-samples.md)  
+ [MFC Samples](../../top/visual-cpp-samples.md)  
  Provides links to samples that demonstrate using the MFC Library.
 
 

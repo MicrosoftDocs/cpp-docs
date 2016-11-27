@@ -84,4 +84,4 @@ Adds a bind entry to the output columns.
   
 ## See Also  
  [CManualAccessor Class](../../data/oledb/cmanualaccessor-class.md)   
- [DBViewer sample](../../visual-cpp-samples.md)
+ [DBViewer sample](../../top/visual-cpp-samples.md)

@@ -152,7 +152,7 @@ void SetTooltipParams(
  `nTypes` can be any combination of the valid tooltip types that [CTooltipManager::CreateToolTip](#ctooltipmanager__createtooltip) uses, or it can be AFX_TOOLTIP_TYPE_ALL. If you pass AFX_TOOLTIP_TYPE_ALL, all tooltip types are affected.  
   
 ### Example  
- The following example demonstrates how to use the `SetTooltipParams` method of the `CTooltipManager` class. This code snippet is part of the [Draw Client sample](../../visual-cpp-samples.md).  
+ The following example demonstrates how to use the `SetTooltipParams` method of the `CTooltipManager` class. This code snippet is part of the [Draw Client sample](../../top/visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_DrawClient#11](../../mfc/reference/codesnippet/cpp/ctooltipmanager-class_1.cpp)]  
   

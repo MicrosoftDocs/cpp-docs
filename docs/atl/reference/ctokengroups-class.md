@@ -253,7 +253,7 @@ CTokenGroups& operator= (const TOKEN_GROUPS& rhs) throw(...);
  Casts a value to a pointer to the [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) structure.  
   
 ## See Also  
- [Security Sample](../../visual-cpp-samples.md)   
+ [Security Sample](../../top/visual-cpp-samples.md)   
  [CSid Class](../../atl/reference/csid-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Security Global Functions](../../atl/reference/security-global-functions.md)

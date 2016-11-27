@@ -442,7 +442,7 @@ void UnlockBuffer() const;
  Call `UnlockBuffer` after you have finished using the pointer returned by [LockBuffer](#ceditview__lockbuffer).  
   
 ## See Also  
- [MFC Sample SUPERPAD](../../visual-cpp-samples.md)   
+ [MFC Sample SUPERPAD](../../top/visual-cpp-samples.md)   
  [CCtrlView Class](../../mfc/reference/cctrlview-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CEdit Class](../../mfc/reference/cedit-class.md)   

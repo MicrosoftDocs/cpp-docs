@@ -2199,5 +2199,5 @@ HRESULT UnorderList(LPCTSTR szId = NULL) const;
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
- [HTMLEdit Sample](../../visual-cpp-samples.md)
+ [HTMLEdit Sample](../../top/visual-cpp-samples.md)
 

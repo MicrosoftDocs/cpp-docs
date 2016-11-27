@@ -1295,7 +1295,7 @@ virtual int VKeyToItem(
  [!code-cpp[NVC_MFC_CListBox#41](../../mfc/codesnippet/cpp/clistbox-class_41.cpp)]  
   
 ## See Also  
- [MFC Sample CTRLTEST](../../visual-cpp-samples.md)   
+ [MFC Sample CTRLTEST](../../top/visual-cpp-samples.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   

@@ -49,7 +49,7 @@ The following classes provide general support for ATL controls:
 -   [IPointerInactiveImpl](../atl/reference/ipointerinactiveimpl-class.md) Provides minimal mouse interaction for an otherwise inactive control.  
   
 ## Sample Program  
- [ATLFire](../visual-cpp-samples.md)  
+ [ATLFire](../top/visual-cpp-samples.md)  
   
 ## Related Articles  
  [ATL Tutorial](../atl/active-template-library-atl-tutorial.md)  

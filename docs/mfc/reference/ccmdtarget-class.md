@@ -444,7 +444,7 @@ void RestoreWaitCursor();
  [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/cpp/ccmdtarget-class_1.cpp)]  
   
 ## See Also  
- [MFC Sample ACDUAL](../../visual-cpp-samples.md)   
+ [MFC Sample ACDUAL](../../top/visual-cpp-samples.md)   
  [CObject Class](../../mfc/reference/cobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CCmdUI Class](../../mfc/reference/ccmdui-class.md)   

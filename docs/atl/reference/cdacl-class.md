@@ -252,7 +252,7 @@ void RemoveAllAces() throw();
  Removes every **ACE** (access-control entry) structure (if any) in the `CDacl` object.  
   
 ## See Also  
- [Security Sample](../../visual-cpp-samples.md)   
+ [Security Sample](../../top/visual-cpp-samples.md)   
  [CAcl Class](../../atl/reference/cacl-class.md)   
  [ACLs](http://msdn.microsoft.com/library/windows/desktop/aa374872)   
  [ACEs](http://msdn.microsoft.com/library/windows/desktop/aa374868)   

@@ -456,7 +456,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
  See [CWnd::OnDrawItem](../../mfc/reference/cwnd-class.md#cwnd__ondrawitem) for a description of the `DRAWITEMSTRUCT` structure.  
   
 ### Example  
- The following code is from the MFC [CTRLTEST](../../visual-cpp-samples.md) sample:  
+ The following code is from the MFC [CTRLTEST](../../top/visual-cpp-samples.md) sample:  
   
  [!code-cpp[NVC_MFCWindowing#24](../../mfc/reference/codesnippet/cpp/cmenu-class_4.cpp)]  
   
@@ -937,7 +937,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
  See [CWnd::OnMeasureItem](../../mfc/reference/cwnd-class.md#cwnd__onmeasureitem) for a description of the `MEASUREITEMSTRUCT` structure.  
   
 ### Example  
- The following code is from the MFC [CTRLTEST](../../visual-cpp-samples.md) sample:  
+ The following code is from the MFC [CTRLTEST](../../top/visual-cpp-samples.md) sample:  
   
  [!code-cpp[NVC_MFCWindowing#31](../../mfc/reference/codesnippet/cpp/cmenu-class_11.cpp)]  
   
@@ -1282,8 +1282,8 @@ BOOL TrackPopupMenuEx(
  A floating pop-up menu can appear anywhere on the screen. For more information on handling errors when creating the pop-up menu, see [TrackPopupMenuEx](http://msdn.microsoft.com/library/windows/desktop/ms648003).  
   
 ## See Also  
- [MFC Sample CTRLTEST](../../visual-cpp-samples.md)   
- [MFC Sample DYNAMENU](../../visual-cpp-samples.md)   
+ [MFC Sample CTRLTEST](../../top/visual-cpp-samples.md)   
+ [MFC Sample DYNAMENU](../../top/visual-cpp-samples.md)   
  [CObject Class](../../mfc/reference/cobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CObject Class](../../mfc/reference/cobject-class.md)

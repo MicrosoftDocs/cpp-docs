@@ -80,5 +80,5 @@ Call the typedef class **CTranslations** to implement its parameter class **CTra
  **Header:** atldbsch.h  
   
 ## See Also  
- [CatDB](../../visual-cpp-samples.md)   
+ [CatDB](../../top/visual-cpp-samples.md)   
  [CRestrictions Class](../../data/oledb/crestrictions-class.md)

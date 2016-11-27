@@ -507,10 +507,10 @@ void SetModified(BOOL bChanged = TRUE);
  [!code-cpp[NVC_MFCDocView#127](../../mfc/codesnippet/cpp/cpropertypage-class_17.cpp)]  
   
 ## See Also  
- [MFC Sample CMNCTRL1](../../visual-cpp-samples.md)   
- [MFC Sample CMNCTRL2](../../visual-cpp-samples.md)   
- [MFC Sample PROPDLG](../../visual-cpp-samples.md)   
- [MFC Sample SNAPVW](../../visual-cpp-samples.md)   
+ [MFC Sample CMNCTRL1](../../top/visual-cpp-samples.md)   
+ [MFC Sample CMNCTRL2](../../top/visual-cpp-samples.md)   
+ [MFC Sample PROPDLG](../../top/visual-cpp-samples.md)   
+ [MFC Sample SNAPVW](../../top/visual-cpp-samples.md)   
  [CDialog Class](../../mfc/reference/cdialog-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CPropertySheet Class](../../mfc/reference/cpropertysheet-class.md)   

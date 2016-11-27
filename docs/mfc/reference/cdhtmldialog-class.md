@@ -1293,7 +1293,7 @@ STDMETHOD(UpdateUI)(void);
  This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::UpdateUI](https://msdn.microsoft.com/library/aa753268.aspx), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ## See Also  
- [MFC Sample DHtmlExplore](../../visual-cpp-samples.md)   
+ [MFC Sample DHtmlExplore](../../top/visual-cpp-samples.md)   
  [DDX_DHtml Helper Macros](#ddx_dhtml_helper_macros)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

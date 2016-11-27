@@ -51,7 +51,7 @@ ATL implements contained windows with [CContainedWindowT](../atl/reference/ccont
   
  [!code-cpp[NVC_ATL_Windowing#67](../atl/codesnippet/cpp/using-contained-windows_1.h)]  
   
- For more information about contained windows, see the [SUBEDIT](../visual-cpp-samples.md) sample.  
+ For more information about contained windows, see the [SUBEDIT](../top/visual-cpp-samples.md) sample.  
   
 ## See Also  
  [Window Classes](../atl/atl-window-classes.md)

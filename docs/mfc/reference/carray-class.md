@@ -562,7 +562,7 @@ void SetSize(
   See the example for [GetData](#carray__getdata).  
   
 ## See Also  
- [MFC Sample COLLECT](../../visual-cpp-samples.md)   
+ [MFC Sample COLLECT](../../top/visual-cpp-samples.md)   
  [CObject Class](../../mfc/reference/cobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CObArray Class](../../mfc/reference/cobarray-class.md)   

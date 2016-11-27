@@ -52,5 +52,5 @@ A Dialog Bar
   
 ## See Also  
  [User Interface Elements](../mfc/user-interface-elements-mfc.md)   
- [Sample](../visual-cpp-samples.md)
+ [Sample](../top/visual-cpp-samples.md)
 

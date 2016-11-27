@@ -75,17 +75,17 @@ Automation (formerly known as OLE Automation) makes it possible for one applicat
   
 ## Automation Samples  
   
--   [AUTOCLIK](../visual-cpp-samples.md) Use this sample to learn Automation techniques and as a foundation for learning Remote Automation.  
+-   [AUTOCLIK](../top/visual-cpp-samples.md) Use this sample to learn Automation techniques and as a foundation for learning Remote Automation.  
   
--   [ACDUAL](../visual-cpp-samples.md) Adds dual interfaces to an Automation server application.  
+-   [ACDUAL](../top/visual-cpp-samples.md) Adds dual interfaces to an Automation server application.  
   
--   [CALCDRIV](../visual-cpp-samples.md) Automation client application driving MFCCALC.  
+-   [CALCDRIV](../top/visual-cpp-samples.md) Automation client application driving MFCCALC.  
   
--   [INPROC](../visual-cpp-samples.md) Demonstrates an In-Process Automation server application.  
+-   [INPROC](../top/visual-cpp-samples.md) Demonstrates an In-Process Automation server application.  
   
--   [IPDRIVE](../visual-cpp-samples.md) Automation client application driving INPROC.  
+-   [IPDRIVE](../top/visual-cpp-samples.md) Automation client application driving INPROC.  
   
--   [MFCCALC](../visual-cpp-samples.md) Demonstrates an Automation client application.  
+-   [MFCCALC](../top/visual-cpp-samples.md) Demonstrates an Automation client application.  
   
 ## What do you want to know more about  
   

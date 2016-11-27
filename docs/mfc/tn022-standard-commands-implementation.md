@@ -236,7 +236,7 @@ translation.priority.ht:
   
      Currently there is no standard implementation for this command. You must implement this for each `CView`-derived class.  
   
-     If you choose to implement this command, we recommend you use this command ID. See the MFC Tutorial sample [SCRIBBLE](../visual-cpp-samples.md) for an example implementation.  
+     If you choose to implement this command, we recommend you use this command ID. See the MFC Tutorial sample [SCRIBBLE](../top/visual-cpp-samples.md) for an example implementation.  
   
 -   ID_EDIT_COPY   Copies the current selection to the Clipboard.  
   
@@ -453,7 +453,7 @@ translation.priority.ht:
   
      All OLE client applications should implement this command. AppWizard, with the OLE option, will create a skeleton implementation of **OnInsertObject** in your view class that you will have to complete.  
   
-     See the MFC OLE sample [OCLIENT](../visual-cpp-samples.md) example for a complete implementation of this command.  
+     See the MFC OLE sample [OCLIENT](../top/visual-cpp-samples.md) example for a complete implementation of this command.  
   
 -   ID_OLE_EDIT_LINKS   Edits OLE links  
   

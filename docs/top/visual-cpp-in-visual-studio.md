@@ -85,7 +85,7 @@ The [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] programming language and 
  [Supported Platforms](../supported-platforms-visual-cpp.md)  
  Find out which platforms are supported.  
   
- [Visual C++ Samples](../visual-cpp-samples.md)  
+ [Visual C++ Samples](../top/visual-cpp-samples.md)  
  Information about samples.  
   
  [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=235296)  

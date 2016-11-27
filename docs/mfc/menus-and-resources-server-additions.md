@@ -48,7 +48,7 @@ translation.priority.ht:
 # Menus and Resources: Server Additions
 This article explains the changes that need to be made to the menus and other resources in a visual editing server (component) application. A server application requires many additions to the menu structure and other resources because it can be started in one of three modes: stand alone, embedded, or in place. As described in the [Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md) article, there are a maximum of four sets of menus. All four are used for an MDI full-server application, while only three are used for a miniserver. The application wizard will create the menu layout necessary for the type of server you want. Some customization may be necessary.  
   
- If you do not use the application wizard, you may want to look at HIERSVR.RC, the resource script for the MFC sample application [HIERSVR](../visual-cpp-samples.md), to see how these changes are implemented.  
+ If you do not use the application wizard, you may want to look at HIERSVR.RC, the resource script for the MFC sample application [HIERSVR](../top/visual-cpp-samples.md), to see how these changes are implemented.  
   
  Topics covered in this article include:  
   
@@ -74,7 +74,7 @@ This article explains the changes that need to be made to the menus and other re
   
  The second table is nearly an exact copy of the view's accelerator table. Any differences parallel changes made in the fully open menu mentioned in [Server Menu Additions](#_core_server_menu_additions).  
   
- For an example of these accelerator table changes, compare the **IDR_HIERSVRTYPE_SRVR_IP** and **IDR_HIERSVRTYPE_SRVR_EMB** accelerator tables with **IDR_MAINFRAME** in the HIERSVR.RC file included in the MFC OLE sample [HIERSVR](../visual-cpp-samples.md). The File and Window accelerators are missing from the in-place table and exact copies of them are in the embedded table.  
+ For an example of these accelerator table changes, compare the **IDR_HIERSVRTYPE_SRVR_IP** and **IDR_HIERSVRTYPE_SRVR_EMB** accelerator tables with **IDR_MAINFRAME** in the HIERSVR.RC file included in the MFC OLE sample [HIERSVR](../top/visual-cpp-samples.md). The File and Window accelerators are missing from the in-place table and exact copies of them are in the embedded table.  
   
 ##  <a name="_core_string_table_additions_for_server_applications"></a> String Table Additions for Server Applications  
  Only one string table addition is necessary in a server application — a string to signify that the OLE initialization failed. As an example, here is the string-table entry that the application wizard generates:  

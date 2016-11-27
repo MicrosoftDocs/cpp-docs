@@ -155,7 +155,7 @@ class CDockingManager : public CObject
 -   If you want to create a non-floating, non-resizable pane, call the [CDockingManager::AddPane](#cdockingmanager__addpane) method. This method registers the pane with the docking manager, which is responsible for the layout of the pane.  
   
 ## Example  
- The following example demonstrates how to use various methods in the `CDockingManager` class to configure a `CDockingManager` object. The example shows how to display an additional button that opens a pop-up menu on the captions of all docking panes and how to set the docking mode of the object. This code snippet is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).  
+ The following example demonstrates how to use various methods in the `CDockingManager` class to configure a `CDockingManager` object. The example shows how to display an additional button that opens a pop-up menu on the captions of all docking panes and how to set the docking mode of the object. This code snippet is part of the [Visual Studio Demo sample](../../top/visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#24](../../mfc/codesnippet/cpp/cdockingmanager-class_1.cpp)]  
   

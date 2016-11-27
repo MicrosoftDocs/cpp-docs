@@ -213,6 +213,6 @@ virtual void SetText(LPCTSTR lpszText);
  [!code-cpp[NVC_MFCDocView#48](../../mfc/codesnippet/cpp/ccmdui-class_3.cpp)]  
   
 ## See Also  
- [MFC Sample MDI](../../visual-cpp-samples.md)   
+ [MFC Sample MDI](../../top/visual-cpp-samples.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)

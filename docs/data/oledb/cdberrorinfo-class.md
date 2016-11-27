@@ -65,6 +65,6 @@ class CDBErrorInfo
  **Header:** atldbcli.h  
   
 ## See Also  
- [DBViewer](../../visual-cpp-samples.md)   
+ [DBViewer](../../top/visual-cpp-samples.md)   
  [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
  [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

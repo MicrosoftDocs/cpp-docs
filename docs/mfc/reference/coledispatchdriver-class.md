@@ -374,7 +374,7 @@ void AFX_CDECL SetProperty(
  [!code-cpp[NVC_MFCOleContainer#7](../../mfc/codesnippet/cpp/coledispatchdriver-class_7.cpp)]  
   
 ## See Also  
- [MFC Sample CALCDRIV](../../visual-cpp-samples.md)   
- [MFC Sample ACDUAL](../../visual-cpp-samples.md)   
+ [MFC Sample CALCDRIV](../../top/visual-cpp-samples.md)   
+ [MFC Sample ACDUAL](../../top/visual-cpp-samples.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)

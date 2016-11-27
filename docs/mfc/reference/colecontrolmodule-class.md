@@ -66,7 +66,7 @@ class COleControlModule : public CWinApp
  **Header:** afxctl.h  
   
 ## See Also  
- [MFC Sample TESTHELP](../../visual-cpp-samples.md)   
+ [MFC Sample TESTHELP](../../top/visual-cpp-samples.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
 

@@ -249,8 +249,8 @@ void SetCurrentColor(COLORREF clr);
   See the example for [CColorDialog::OnColorOK](#ccolordialog__oncolorok).  
   
 ## See Also  
- [MFC Sample MDI](../../visual-cpp-samples.md)   
- [MFC Sample DRAWCLI](../../visual-cpp-samples.md)   
+ [MFC Sample MDI](../../top/visual-cpp-samples.md)   
+ [MFC Sample DRAWCLI](../../top/visual-cpp-samples.md)   
  [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

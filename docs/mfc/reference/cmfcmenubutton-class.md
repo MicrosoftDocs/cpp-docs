@@ -75,7 +75,7 @@ class CMFCMenuButton : public CMFCButton
  When you create a `CMFCMenuButton`, you must pass in a handle to the associated pop-up menu. Next, call the function `CMFCMenuButton::SizeToContent`. `CMFCMenuButton::SizeToContent` checks that the button size is sufficient to include an arrow that points to the location where the pop-up window will appear - namely, underneath or to the right of the button.  
   
 ## Example  
- The following example demonstrates how to set the handle of the menu attached to the button, resize the button according to its text and image size, and set the pop-up menu that is displayed by the framework. This code snippet is part of the [New Controls sample](../../visual-cpp-samples.md).  
+ The following example demonstrates how to set the handle of the menu attached to the button, resize the button according to its text and image size, and set the pop-up menu that is displayed by the framework. This code snippet is part of the [New Controls sample](../../top/visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_NewControls#38](../../mfc/reference/codesnippet/cpp/cmfcmenubutton-class_1.h)]  
 [!code-cpp[NVC_MFC_NewControls#39](../../mfc/reference/codesnippet/cpp/cmfcmenubutton-class_2.cpp)]  

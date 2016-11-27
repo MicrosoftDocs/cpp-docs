@@ -37,11 +37,11 @@ See the following sample programs that illustrate creating, editing, and updatin
   
  *MDI Sample: Enable and Disable Menu Items*  
   
--   [SCRIBBLE](../visual-cpp-samples.md)  
+-   [SCRIBBLE](../top/visual-cpp-samples.md)  
   
  *Dynamically Change Menus*  
   
--   [DYNAMENU](../visual-cpp-samples.md)  
+-   [DYNAMENU](../top/visual-cpp-samples.md)  
   
 ## See Also  
  [Menus](../mfc/menus-mfc.md)

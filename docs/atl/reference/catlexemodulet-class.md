@@ -313,7 +313,7 @@ int WinMain(int nShowCmd) throw();
  This method can be overridden. If overriding [CAtlExeModuleT::PreMessageLoop](#catlexemodulet__premessageloop), [CAtlExeModuleT::PostMessageLoop](#catlexemodulet__postmessageloop), or [CAtlExeModuleT::RunMessageLoop](#catlexemodulet__runmessageloop) doesn't provide enough flexibility, it's possible to override the `WinMain` function using this method.  
   
 ## See Also  
- [ATLDuck Sample](../../visual-cpp-samples.md)   
+ [ATLDuck Sample](../../top/visual-cpp-samples.md)   
  [CAtlModuleT Class](../../atl/reference/catlmodulet-class.md)   
  [CAtlDllModuleT Class](../../atl/reference/catldllmodulet-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)

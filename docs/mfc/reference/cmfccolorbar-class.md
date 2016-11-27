@@ -179,7 +179,7 @@ class CMFCColorBar : public CMFCPopupMenuBar
  When the user clicks a color bar control button, the framework uses the `ON_COMMAND` macro to notify the parent of the color bar control. In the macro, the command ID parameter is the value that you assigned to the color bar control button in step 1 (ID_CHAR_COLOR in this example). For more information, see the [CMFCColorMenuButton Class](../../mfc/reference/cmfccolormenubutton-class.md), [CMFCColorButton Class](../../mfc/reference/cmfccolorbutton-class.md), [CMFCColorPickerCtrl Class](../../mfc/reference/cmfccolorpickerctrl-class.md), [CFrameWndEx Class](../../mfc/reference/cframewndex-class.md), and [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md) classes.  
   
 ## Example  
- The following example demonstrates how to configure a color bar by using various methods in the `CMFCColorBar` class. The methods set the horizontal and vertical margins, enable the other button, create a color bar control window, and sets the currently selected color. This example is part of the [New Controls sample](../../visual-cpp-samples.md).  
+ The following example demonstrates how to configure a color bar by using various methods in the `CMFCColorBar` class. The methods set the horizontal and vertical margins, enable the other button, create a color bar control window, and sets the currently selected color. This example is part of the [New Controls sample](../../top/visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_NewControls#1](../../mfc/reference/codesnippet/cpp/cmfccolorbar-class_1.h)]  
 [!code-cpp[NVC_MFC_NewControls#2](../../mfc/reference/codesnippet/cpp/cmfccolorbar-class_2.cpp)]  

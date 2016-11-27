@@ -433,8 +433,8 @@ BOOL TrackRubberBand(
  Tracking is performed with a rubber-band-type selection from the lower-right handle. If inverting is allowed, the rectangle can be sized by dragging either up and to the left or down and to the right.  
   
 ## See Also  
- [MFC Sample TRACKER](../../visual-cpp-samples.md)   
- [MFC Sample DRAWCLI](../../visual-cpp-samples.md)   
+ [MFC Sample TRACKER](../../top/visual-cpp-samples.md)   
+ [MFC Sample DRAWCLI](../../top/visual-cpp-samples.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [COleResizeBar Class](../../mfc/reference/coleresizebar-class.md)   
  [CRect Class](../../atl-mfc-shared/reference/crect-class.md)

@@ -146,7 +146,7 @@ class CRichEditCtrl : public CWnd
   
 -   Knowledge Base article Q259949 : INFO: SetCaretPos() Is Not Appropriate with CEdit or CRichEditCtrl Controls  
   
- For an example of using a rich edit control in an MFC application, see the [WORDPAD](../../visual-cpp-samples.md) sample application.  
+ For an example of using a rich edit control in an MFC application, see the [WORDPAD](../../top/visual-cpp-samples.md) sample application.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -1879,7 +1879,7 @@ BOOL Undo();
   See the example for [CanUndo](#cricheditctrl__canundo).  
   
 ## See Also  
- [MFC Sample WORDPAD](../../visual-cpp-samples.md)   
+ [MFC Sample WORDPAD](../../top/visual-cpp-samples.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CEdit Class](../../mfc/reference/cedit-class.md)   

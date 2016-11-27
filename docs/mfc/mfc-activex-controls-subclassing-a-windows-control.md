@@ -45,7 +45,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # MFC ActiveX Controls: Subclassing a Windows Control
-This article describes the process for subclassing a common Windows control to create an ActiveX control. Subclassing an existing Windows control is a quick way to develop an ActiveX control. The new control will have the abilities of the subclassed Windows control, such as painting and responding to mouse clicks. The MFC ActiveX controls sample [BUTTON](../visual-cpp-samples.md) is an example of subclassing a Windows control.  
+This article describes the process for subclassing a common Windows control to create an ActiveX control. Subclassing an existing Windows control is a quick way to develop an ActiveX control. The new control will have the abilities of the subclassed Windows control, such as painting and responding to mouse clicks. The MFC ActiveX controls sample [BUTTON](../top/visual-cpp-samples.md) is an example of subclassing a Windows control.  
   
  To subclass a Windows control, complete the following tasks:  
   
@@ -109,7 +109,7 @@ This article describes the process for subclassing a common Windows control to c
   
 -   Also in the .CPP file, implement the **OnOcmCommand** member function to process the reflected message. The **wParam** and **lParam** parameters are the same as those of the original window message.  
   
- For an example of how reflected messages are processed, refer to the MFC ActiveX controls sample [BUTTON](../visual-cpp-samples.md). It demonstrates an **OnOcmCommand** handler that detects the **BN_CLICKED** notification code and responds by firing (sending) a Click event.  
+ For an example of how reflected messages are processed, refer to the MFC ActiveX controls sample [BUTTON](../top/visual-cpp-samples.md). It demonstrates an **OnOcmCommand** handler that detects the **BN_CLICKED** notification code and responds by firing (sending) a Click event.  
   
 ## See Also  
  [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)

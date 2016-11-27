@@ -60,6 +60,6 @@ Ribbon controls are elements, such as buttons and combo boxes, that you add to p
  ```  
   
 ## See Also  
- [RibbonGadgets Sample: Ribbon Gadgets Application](../visual-cpp-samples.md)   
+ [RibbonGadgets Sample: Ribbon Gadgets Application](../top/visual-cpp-samples.md)   
  [Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)
 

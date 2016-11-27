@@ -117,7 +117,7 @@ virtual BOOL Create(
  Nonzero if the resize bar was created; otherwise 0.  
   
 ## See Also  
- [MFC Sample SUPERPAD](../../visual-cpp-samples.md)   
+ [MFC Sample SUPERPAD](../../top/visual-cpp-samples.md)   
  [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [COleServerDoc Class](../../mfc/reference/coleserverdoc-class.md)
