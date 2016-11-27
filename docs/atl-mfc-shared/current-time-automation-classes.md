@@ -45,7 +45,7 @@ The following procedure shows how to create a `COleDateTime` object and initiali
   
 2.  Call `GetCurrentTime`.  
   
-     [!code-cpp[NVC_ATLMFC_Utilities#177](../atl-mfc-shared/codesnippet/CPP/current-time-automation-classes_1.cpp)]  
+     [!code-cpp[NVC_ATLMFC_Utilities#177](../atl-mfc-shared/codesnippet/cpp/current-time-automation-classes_1.cpp)]  
   
 ## See Also  
  [Date and Time: Automation Support](../atl-mfc-shared/date-and-time-automation-support.md)

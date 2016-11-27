@@ -68,24 +68,24 @@ The following map entries on the left correspond to the function prototypes on t
   
 |Map entry|Function prototype|  
 |---------------|------------------------|  
-|ON_WM_ACTIVATE()|afx_msg void [OnActivate](../../mfc/reference/cwnd-class.md#cwnd__OnActivate)(UINT, CWnd*, BOOL);|  
-|ON_WM_ACTIVATEAPP()|afx_msg void [OnActivateApp](../../mfc/reference/cwnd-class.md#cwnd__OnActivateApp)(BOOL, DWORD);|  
-|ON_WM_APPCOMMAND()|afx_msg void [OnAppCommand](../../mfc/reference/cwnd-class.md#cwnd__OnAppCommand)(CWnd*, UINT, UINT, UINT);|  
-|ON_WM_ASKCBFORMATNAME()|afx_msg void [OnAskCbFormatName](../../mfc/reference/cwnd-class.md#cwnd__OnAskCbFormatName)(UINT, LPSTR);|  
-|ON_WM_CANCELMODE()|afx_msg void [OnCancelMode](../../mfc/reference/cwnd-class.md#cwnd__OnCancelMode)();|  
-|ON_WM_CAPTURECHANGED()|afx_msg void [OnCaptureChanged](../../mfc/reference/cwnd-class.md#cwnd__OnCaptureChanged)(CWnd*);|  
-|ON_WM_CHANGECBCHAIN()|afx_msg void [OnChangeCbChain](../../mfc/reference/cwnd-class.md#cwnd__OnChangeCbChain)(HWND, HWND);|  
-|ON_WM_CHAR()|afx_msg void [OnChar](../../mfc/reference/cwnd-class.md#cwnd__OnChar)(UINT, UINT, UINT);|  
-|ON_WM_CHARTOITEM()|afx_msg int [OnCharToItem](../../mfc/reference/cwnd-class.md#cwnd__OnCharToItem)(UINT, CWnd*, UINT);|  
-|ON_WM_CHILDACTIVATE()|afx_msg void [OnChildActivate](../../mfc/reference/cwnd-class.md#cwnd__OnChildActivate)();|  
-|ON_WM_CLIPBOARDUPDATE()|afx_msg void [OnClipboardUpdate](../../mfc/reference/cwnd-class.md#cwnd__OnClipboardUpdate)();|  
-|ON_WM_CLOSE()|afx_msg void [OnClose](../../mfc/reference/cwnd-class.md#cwnd__OnClose)();|  
-|ON_WM_COMPACTING()|afx_msg void [OnCompacting](../../mfc/reference/cwnd-class.md#cwnd__OnCompacting)(UINT);|  
-|ON_WM_COMPAREITEM()|afx_msg int [OnCompareItem](../../mfc/reference/cwnd-class.md#cwnd__OnCompareItem)(LPCOMPAREITEMSTRUCT);|  
-|ON_WM_CONTEXTMENU()|afx_msg void [OnContextMenu](../../mfc/reference/cwnd-class.md#cwnd__OnContextMenu)(CWnd*, CPoint);|  
-|ON_WM_COPYDATA()|afx_msg BOOL [OnCopyData](../../mfc/reference/cwnd-class.md#cwnd__OnCopyData)(CWnd* pWnd, COPYDATASTRUCT\* pCopyDataStruct);|  
-|ON_WM_CREATE()|afx_msg int [OnCreate](../../mfc/reference/cwnd-class.md#cwnd__OnCreate)(LPCREATESTRUCT);|  
-|ON_WM_CTLCOLOR()|afx_msg HBRUSH [OnCtlColor](../../mfc/reference/cwnd-class.md#cwnd__OnCtlColor)(CDC*, CWnd\*, UINT);|  
+|ON_WM_ACTIVATE()|afx_msg void [OnActivate](../../mfc/reference/cwnd-class.md#cwnd__onactivate)(UINT, CWnd*, BOOL);|  
+|ON_WM_ACTIVATEAPP()|afx_msg void [OnActivateApp](../../mfc/reference/cwnd-class.md#cwnd__onactivateapp)(BOOL, DWORD);|  
+|ON_WM_APPCOMMAND()|afx_msg void [OnAppCommand](../../mfc/reference/cwnd-class.md#cwnd__onappcommand)(CWnd*, UINT, UINT, UINT);|  
+|ON_WM_ASKCBFORMATNAME()|afx_msg void [OnAskCbFormatName](../../mfc/reference/cwnd-class.md#cwnd__onaskcbformatname)(UINT, LPSTR);|  
+|ON_WM_CANCELMODE()|afx_msg void [OnCancelMode](../../mfc/reference/cwnd-class.md#cwnd__oncancelmode)();|  
+|ON_WM_CAPTURECHANGED()|afx_msg void [OnCaptureChanged](../../mfc/reference/cwnd-class.md#cwnd__oncapturechanged)(CWnd*);|  
+|ON_WM_CHANGECBCHAIN()|afx_msg void [OnChangeCbChain](../../mfc/reference/cwnd-class.md#cwnd__onchangecbchain)(HWND, HWND);|  
+|ON_WM_CHAR()|afx_msg void [OnChar](../../mfc/reference/cwnd-class.md#cwnd__onchar)(UINT, UINT, UINT);|  
+|ON_WM_CHARTOITEM()|afx_msg int [OnCharToItem](../../mfc/reference/cwnd-class.md#cwnd__onchartoitem)(UINT, CWnd*, UINT);|  
+|ON_WM_CHILDACTIVATE()|afx_msg void [OnChildActivate](../../mfc/reference/cwnd-class.md#cwnd__onchildactivate)();|  
+|ON_WM_CLIPBOARDUPDATE()|afx_msg void [OnClipboardUpdate](../../mfc/reference/cwnd-class.md#cwnd__onclipboardupdate)();|  
+|ON_WM_CLOSE()|afx_msg void [OnClose](../../mfc/reference/cwnd-class.md#cwnd__onclose)();|  
+|ON_WM_COMPACTING()|afx_msg void [OnCompacting](../../mfc/reference/cwnd-class.md#cwnd__oncompacting)(UINT);|  
+|ON_WM_COMPAREITEM()|afx_msg int [OnCompareItem](../../mfc/reference/cwnd-class.md#cwnd__oncompareitem)(LPCOMPAREITEMSTRUCT);|  
+|ON_WM_CONTEXTMENU()|afx_msg void [OnContextMenu](../../mfc/reference/cwnd-class.md#cwnd__oncontextmenu)(CWnd*, CPoint);|  
+|ON_WM_COPYDATA()|afx_msg BOOL [OnCopyData](../../mfc/reference/cwnd-class.md#cwnd__oncopydata)(CWnd* pWnd, COPYDATASTRUCT\* pCopyDataStruct);|  
+|ON_WM_CREATE()|afx_msg int [OnCreate](../../mfc/reference/cwnd-class.md#cwnd__oncreate)(LPCREATESTRUCT);|  
+|ON_WM_CTLCOLOR()|afx_msg HBRUSH [OnCtlColor](../../mfc/reference/cwnd-class.md#cwnd__onctlcolor)(CDC*, CWnd\*, UINT);|  
   
 ## See Also  
  [Message Maps](../../mfc/reference/message-maps-mfc.md)   

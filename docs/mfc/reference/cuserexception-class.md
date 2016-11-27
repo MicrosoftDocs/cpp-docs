@@ -55,7 +55,7 @@ class CUserException : public CSimpleException
   
  In the example below, a function containing operations that may fail alerts the user and throws a `CUserException`. The calling function catches the exception and handles it specially:  
   
- [!code-cpp[NVC_MFCExceptions#24](../../mfc/codesnippet/CPP/cuserexception-class_1.cpp)]  
+ [!code-cpp[NVC_MFCExceptions#24](../../mfc/codesnippet/cpp/cuserexception-class_1.cpp)]  
   
  For more information on using `CUserException`, see the article [Exception Handling (MFC)](../../mfc/exception-handling-in-mfc.md).  
   

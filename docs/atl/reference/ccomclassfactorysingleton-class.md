@@ -71,9 +71,9 @@ template<class T>  class CComClassFactorySingleton :  public CComClassFactory
 |[CComClassFactorySingleton::m_spObj](#ccomclassfactorysingleton__m_spobj)|The [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) object constructed by `CComClassFactorySingleton`.|  
   
 ## Remarks  
- ATL objects normally acquire a class factory by deriving from [CComCoClass](../../atl/reference/ccomcoclass-class.md). This class includes the macro [DECLARE_CLASSFACTORY](http://msdn.microsoft.com/Library/51a6b925-07c0-4d3a-9174-0b8c808975e4), which declares `CComClassFactory` as the default class factory. To use `CComClassFactorySingleton`, specify the [DECLARE_CLASSFACTORY_SINGLETON](http://msdn.microsoft.com/Library/0e4a3964-c03d-463e-884c-fe3b416db478) macro in your object's class definition. For example:  
+ ATL objects normally acquire a class factory by deriving from [CComCoClass](../../atl/reference/ccomcoclass-class.md). This class includes the macro [DECLARE_CLASSFACTORY](http://msdn.microsoft.com/library/51a6b925-07c0-4d3a-9174-0b8c808975e4), which declares `CComClassFactory` as the default class factory. To use `CComClassFactorySingleton`, specify the [DECLARE_CLASSFACTORY_SINGLETON](http://msdn.microsoft.com/library/0e4a3964-c03d-463e-884c-fe3b416db478) macro in your object's class definition. For example:  
   
- [!code-cpp[NVC_ATL_COM#10](../../atl/codesnippet/CPP/ccomclassfactorysingleton-class_1.h)]  
+ [!code-cpp[NVC_ATL_COM#10](../../atl/codesnippet/cpp/ccomclassfactorysingleton-class_1.h)]  
   
 ## Inheritance Hierarchy  
  `CComObjectRootBase`  
@@ -128,5 +128,5 @@ CComPtr<IUnknown> m_spObj;
  [CComClassFactory2 Class](../../atl/reference/ccomclassfactory2-class.md)   
  [CComClassFactoryAutoThread Class](../../atl/reference/ccomclassfactoryautothread-class.md)   
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
- [CComGlobalsThreadModel](../Topic/CComGlobalsThreadModel.md)   
+ [CComGlobalsThreadModel](../topic/ccomglobalsthreadmodel.md)   
  [Class Overview](../../atl/atl-class-overview.md)

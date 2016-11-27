@@ -116,7 +116,7 @@ BOOL AddView(
 ### Example  
  The following example demonstrates how to retrieve a pointer to a `CMouseManager` object by using the `CWinAppEx::GetMouseManager` method and the `AddView` method in the `CMouseManager` class. This code snippet is part of the [State Collection sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_StateCollection#4](../../mfc/reference/codesnippet/CPP/cmousemanager-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_StateCollection#4](../../mfc/reference/codesnippet/cpp/cmousemanager-class_1.cpp)]  
   
 ##  <a name="cmousemanager__getviewdblclickcommand"></a>  CMouseManager::GetViewDblClickCommand  
  Returns the command that is executed when the user double-clicks inside the provided view.  

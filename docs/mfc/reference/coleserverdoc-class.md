@@ -260,7 +260,7 @@ virtual CDocObjectServer* GetDocObjectServer(LPOLEDOCUMENTSITE pDocSite);
   
  A typical implementation for a document that supports DocObjects will simply allocate a new `CDocObjectServer` object and return it to the caller. For example:  
   
- [!code-cpp[NVC_MFCOleServer#3](../../mfc/codesnippet/CPP/coleserverdoc-class_1.cpp)]  
+ [!code-cpp[NVC_MFCOleServer#3](../../mfc/codesnippet/cpp/coleserverdoc-class_1.cpp)]  
   
 ##  <a name="coleserverdoc__getembeddeditem"></a>  COleServerDoc::GetEmbeddedItem  
  Call this function to get a pointer to an item representing the entire document.  

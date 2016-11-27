@@ -112,7 +112,7 @@ CSettingsStore& CSettingsStoreSP Create(
 ### Example  
  The following example demonstrates how to use the `Create` method of the `CSettingsStoreSP` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#33](../../mfc/reference/codesnippet/CPP/csettingsstoresp-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#33](../../mfc/reference/codesnippet/cpp/csettingsstoresp-class_1.cpp)]  
   
 ##  <a name="csettingsstoresp__csettingsstoresp"></a>  CSettingsStoreSP::CSettingsStoreSP  
  Constructs a [CSettingsStoreSP Class](../../mfc/reference/csettingsstoresp-class.md) object.  

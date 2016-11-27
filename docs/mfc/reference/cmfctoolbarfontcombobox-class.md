@@ -152,7 +152,7 @@ CMFCToolBarFontComboBox();
 ### Example  
  The following example demonstrates how to construct a `CMFCToolBarFontComboBox` object. This code snippet is part of the [Word Pad sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_WordPad#7](../../mfc/reference/codesnippet/CPP/cmfctoolbarfontcombobox-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_WordPad#7](../../mfc/reference/codesnippet/cpp/cmfctoolbarfontcombobox-class_1.cpp)]  
   
 ##  <a name="cmfctoolbarfontcombobox__getfontdesc"></a>  CMFCToolBarFontComboBox::GetFontDesc  
  Returns a pointer to the `CMFCFontInfo` object for a specified index in the combo box.  

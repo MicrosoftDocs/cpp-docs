@@ -67,7 +67,7 @@ translation.priority.ht:
  The result of message processing. 0 if successful.  
   
 ## Remarks  
- For an example of using this message handler in a message map, see [MESSAGE_HANDLER](http://msdn.microsoft.com/Library/0253a7f3-7eb3-4d2d-83b9-060161268d04).  
+ For an example of using this message handler in a message map, see [MESSAGE_HANDLER](http://msdn.microsoft.com/library/0253a7f3-7eb3-4d2d-83b9-060161268d04).  
   
 ## See Also  
  [Implementing a Window](../atl/implementing-a-window.md)   

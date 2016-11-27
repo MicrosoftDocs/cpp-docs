@@ -57,13 +57,13 @@ The following figures give an overview of the creation process for documents, vi
   
  Upon completion of this process, the cooperating objects exist and store pointers to each other. The following figures show the sequence in which objects are created. You can follow the sequence from figure to figure.  
   
- ![Sequence for creating a document](../mfc/media/vc387l1.gif "vc387L1")  
+ ![Sequence for creating a document](../mfc/media/vc387l1.gif "vc387l1")  
 Sequence in Creating a Document  
   
- ![Frame Window Creation Sequence](../mfc/media/vc387l2.png "vc387L2")  
+ ![Frame Window Creation Sequence](../mfc/media/vc387l2.png "vc387l2")  
 Sequence in Creating a Frame Window  
   
- ![Sequence for creating a view](../mfc/media/vc387l3.gif "vc387L3")  
+ ![Sequence for creating a view](../mfc/media/vc387l3.gif "vc387l3")  
 Sequence in Creating a View  
   
  For information about how the framework initializes the new document, view, and frame-window objects, see classes [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md), [CFrameWnd](../mfc/reference/cframewnd-class.md), [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md), and [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md) in the MFC Library Reference. Also see [Technical Note 22](../mfc/tn022-standard-commands-implementation.md), which explains the creation and initialization processes further under its discussion of the framework's standard commands for the `New` and **Open** items on the **File** menu.  

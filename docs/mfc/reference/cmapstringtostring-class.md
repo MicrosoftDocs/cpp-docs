@@ -145,7 +145,7 @@ CPair* PGetFirstAssoc();
  Call this function to return a pointer the first element in the map object.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#73](../../mfc/codesnippet/CPP/cmapstringtostring-class_1.cpp)]  
+ [!code-cpp[NVC_MFCCollections#73](../../mfc/codesnippet/cpp/cmapstringtostring-class_1.cpp)]  
   
 ##  <a name="cmapstringtostring__pgetnextassoc"></a>  CMapStringToString::PGetNextAssoc  
  Retrieves the map element pointed to by `pAssocRec`.  
@@ -192,7 +192,7 @@ CPair* PLookup(LPCTSTR key);
  Call this method to search for a map element with a key that exactly matches the given key.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#74](../../mfc/codesnippet/CPP/cmapstringtostring-class_2.cpp)]  
+ [!code-cpp[NVC_MFCCollections#74](../../mfc/codesnippet/cpp/cmapstringtostring-class_2.cpp)]  
   
 ## See Also  
  [MFC Sample COLLECT](../../visual-cpp-samples.md)   

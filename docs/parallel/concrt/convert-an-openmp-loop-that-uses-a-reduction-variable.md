@@ -44,7 +44,7 @@ This example demonstrates how to convert an OpenMP [parallel](../../parallel/con
 ## Example  
  This example uses both OpenMP and the Concurrency Runtime to compute the sum of the first 35 Fibonacci numbers.  
   
- [!code-cpp[concrt-openmp#7](../../parallel/concrt/codesnippet/CPP/convert-an-openmp-loop-that-uses-a-reduction-variable_1.cpp)]  
+ [!code-cpp[concrt-openmp#7](../../parallel/concrt/codesnippet/cpp/convert-an-openmp-loop-that-uses-a-reduction-variable_1.cpp)]  
   
  This example produces the following output.  
   

@@ -182,7 +182,7 @@ BOOL CanPaste(UINT nFormat = 0) const;
  For more information, see [EM_CANPASTE](http://msdn.microsoft.com/library/windows/desktop/bb787993) message and [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#1](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#1](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_1.cpp)]  
   
 ##  <a name="cricheditctrl__canredo"></a>  CRichEditCtrl::CanRedo  
  Determines if the redo queue contains any actions.  
@@ -217,7 +217,7 @@ BOOL CanUndo() const;
  For more information, see [EM_CANUNDO](http://msdn.microsoft.com/library/windows/desktop/bb775468) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#2](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#2](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_2.cpp)]  
   
 ##  <a name="cricheditctrl__charfrompos"></a>  CRichEditCtrl::CharFromPos  
  Retrieves information about the character at the point specified by the parameter `pt`.  
@@ -255,7 +255,7 @@ void Clear();
  For more information, see [WM_CLEAR](http://msdn.microsoft.com/library/windows/desktop/ms649020) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#3](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#3](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_3.cpp)]  
   
 ##  <a name="cricheditctrl__copy"></a>  CRichEditCtrl::Copy  
  Copies the current selection (if any) in the rich edit control to the Clipboard.  
@@ -268,7 +268,7 @@ void Copy();
  For more information, see [WM_COPY](http://msdn.microsoft.com/library/windows/desktop/ms649022) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#4](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#4](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_4.cpp)]  
   
 ##  <a name="cricheditctrl__create"></a>  CRichEditCtrl::Create  
  Creates the Windows rich edit control and associates it with this `CRichEditCtrl` object.  
@@ -321,7 +321,7 @@ virtual BOOL Create(
  For more information about window styles, see [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#5](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#5](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_5.cpp)]  
   
 ##  <a name="cricheditctrl__createex"></a>  CRichEditCtrl::CreateEx  
  Creates a control (a child window) and associates it with the `CRichEditCtrl` object.  
@@ -368,7 +368,7 @@ CRichEditCtrl();
  Use [Create](#cricheditctrl__create) to construct the Windows rich edit control.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#6](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#6](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_6.cpp)]  
   
 ##  <a name="cricheditctrl__cut"></a>  CRichEditCtrl::Cut  
  Delete (cuts) the current selection (if any) in the rich edit control and copies the deleted text to the Clipboard.  
@@ -385,7 +385,7 @@ void Cut();
  For more information, see [WM_CUT](http://msdn.microsoft.com/library/windows/desktop/ms649023) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#7](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_7.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#7](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_7.cpp)]  
   
 ##  <a name="cricheditctrl__displayband"></a>  CRichEditCtrl::DisplayBand  
  Displays a portion of the contents of the rich edit control (text and OLE items), as previously formatted by [FormatRange](#cricheditctrl__formatrange).  
@@ -424,7 +424,7 @@ void EmptyUndoBuffer();
  For more information, see [EM_EMPTYUNDOBUFFER](http://msdn.microsoft.com/library/windows/desktop/bb761568) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#8](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_8.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#8](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_8.cpp)]  
   
 ##  <a name="cricheditctrl__findtext"></a>  CRichEditCtrl::FindText  
  Finds text within the rich edit control.  
@@ -453,7 +453,7 @@ long FindText(
  For more information, see [EM_FINDTEXTEX](http://msdn.microsoft.com/library/windows/desktop/bb788011) message and [FINDTEXTEX](http://msdn.microsoft.com/library/windows/desktop/bb787909) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#9](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_9.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#9](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_9.cpp)]  
   
 ##  <a name="cricheditctrl__findwordbreak"></a>  CRichEditCtrl::FindWordBreak  
  Finds the next word break before or after the position specified by `nStart`.  
@@ -504,7 +504,7 @@ long FormatRange(
  For more information, see [EM_FORMATRANGE](http://msdn.microsoft.com/library/windows/desktop/bb788020) message and [FORMATRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787911) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#10](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_10.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#10](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_10.cpp)]  
   
 ##  <a name="cricheditctrl__getcharpos"></a>  CRichEditCtrl::GetCharPos  
  Gets the position (top-left corner) of a given character within this `CRichEditCtrl` object.  
@@ -591,7 +591,7 @@ int GetFirstVisibleLine() const;
  For more information, see [EM_GETFIRSTVISIBLELINE](http://msdn.microsoft.com/library/windows/desktop/bb761574) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#11](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_11.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#11](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_11.cpp)]  
   
 ##  <a name="cricheditctrl__getiricheditole"></a>  CRichEditCtrl::GetIRichEditOle  
  Accesses the **IRichEditOle** interface for this `CRichEditCtrl` object.  
@@ -628,7 +628,7 @@ long GetLimitText() const;
  For more information, see [EM_GETLIMITTEXT](http://msdn.microsoft.com/library/windows/desktop/bb761582) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#12](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_12.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#12](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_12.cpp)]  
   
 ##  <a name="cricheditctrl__getline"></a>  CRichEditCtrl::GetLine  
  Retrieves a line of text from this `CRichEditCtrl` object.  
@@ -688,7 +688,7 @@ int GetLineCount() const;
  For more information, see [EM_GETLINECOUNT](http://msdn.microsoft.com/library/windows/desktop/bb761586) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#13](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_13.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#13](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_13.cpp)]  
   
 ##  <a name="cricheditctrl__getmodify"></a>  CRichEditCtrl::GetModify  
  Determines if the contents of this `CRichEditCtrl` object have been modified.  
@@ -708,7 +708,7 @@ BOOL GetModify() const;
  For more information, see [EM_GETMODIFY](http://msdn.microsoft.com/library/windows/desktop/bb761592) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#14](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_14.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#14](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_14.cpp)]  
   
 ##  <a name="cricheditctrl__getoptions"></a>  CRichEditCtrl::GetOptions  
  Retrieves the options currently set for the rich edit control.  
@@ -850,7 +850,7 @@ void GetSel(
  For more information, see [EM_EXGETSEL](http://msdn.microsoft.com/library/windows/desktop/bb788001) message and [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#15](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_15.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#15](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_15.cpp)]  
   
 ##  <a name="cricheditctrl__getselectioncharformat"></a>  CRichEditCtrl::GetSelectionCharFormat  
  Gets the character formatting attributes of the current selection.  
@@ -908,7 +908,7 @@ WORD GetSelectionType() const;
  For more information, see [EM_SELECTIONTYPE](http://msdn.microsoft.com/library/windows/desktop/bb774223) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#16](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_16.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#16](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_16.cpp)]  
   
 ##  <a name="cricheditctrl__getseltext"></a>  CRichEditCtrl::GetSelText  
  Retrieves the text from the current selection in this `CRichEditCtrl` object.  
@@ -958,7 +958,7 @@ long GetTextLength() const;
  For more information, see [WM_GETTEXTLENGTH](http://msdn.microsoft.com/library/windows/desktop/ms632628) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#17](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_17.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#17](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_17.cpp)]  
   
 ##  <a name="cricheditctrl__gettextlengthex"></a>  CRichEditCtrl::GetTextLengthEx  
  Calculates the length of the text in the rich edit control.  
@@ -1078,7 +1078,7 @@ void HideSelection(
  For more information, see [EM_HIDESELECTION](http://msdn.microsoft.com/library/windows/desktop/bb774210) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#18](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_18.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#18](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_18.cpp)]  
   
 ##  <a name="cricheditctrl__limittext"></a>  CRichEditCtrl::LimitText  
  Limits the length of the text that the user can enter into an edit control.  
@@ -1100,7 +1100,7 @@ void LimitText(long nChars = 0);
  For more information, see [EM_EXLIMITTEXT](http://msdn.microsoft.com/library/windows/desktop/bb788003) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#19](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_19.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#19](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_19.cpp)]  
   
 ##  <a name="cricheditctrl__linefromchar"></a>  CRichEditCtrl::LineFromChar  
  Retrieves the line number of the line that contains the specified character index.  
@@ -1124,7 +1124,7 @@ long LineFromChar(long nIndex) const;
  For more information, see [EM_EXLINEFROMCHAR](http://msdn.microsoft.com/library/windows/desktop/bb788005) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#20](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_20.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#20](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_20.cpp)]  
   
 ##  <a name="cricheditctrl__lineindex"></a>  CRichEditCtrl::LineIndex  
  Retrieves the character index of a line within this `CRichEditCtrl` object.  
@@ -1148,7 +1148,7 @@ int LineIndex(int nLine = -1) const;
  For more information, see [EM_LINEINDEX](http://msdn.microsoft.com/library/windows/desktop/bb761611) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#21](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_21.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#21](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_21.cpp)]  
   
 ##  <a name="cricheditctrl__linelength"></a>  CRichEditCtrl::LineLength  
  Retrieves the length of a line in a rich edit control.  
@@ -1213,7 +1213,7 @@ void Paste();
  For more information, see [WM_PASTE](http://msdn.microsoft.com/library/windows/desktop/ms649028) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#22](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_22.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#22](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_22.cpp)]  
   
 ##  <a name="cricheditctrl__pastespecial"></a>  CRichEditCtrl::PasteSpecial  
  Pastes data in a specific Clipboard format into this `CRichEditCtrl` object.  
@@ -1241,7 +1241,7 @@ void PasteSpecial(
  For more information, see [EM_PASTESPECIAL](http://msdn.microsoft.com/library/windows/desktop/bb774214) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#23](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_23.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#23](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_23.cpp)]  
   
 ##  <a name="cricheditctrl__posfromchar"></a>  CRichEditCtrl::PosFromChar  
  Retrieves the client area coordinates of a specified character in an edit control.  
@@ -1360,7 +1360,7 @@ COLORREF SetBackgroundColor(
  For more information, see [EM_SETBKGNDCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb774228) message and [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#24](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_24.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#24](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_24.cpp)]  
   
 ##  <a name="cricheditctrl__setdefaultcharformat"></a>  CRichEditCtrl::SetDefaultCharFormat  
  Sets the character formatting attributes for new text in this `CRichEditCtrl` object.  
@@ -1387,7 +1387,7 @@ BOOL SetDefaultCharFormat(CHARFORMAT2& cf);
  For more information, see the [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) message and the **CHARFORMAT** and **CHARFORMAT2** structures in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#25](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_25.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#25](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_25.cpp)]  
   
 ##  <a name="cricheditctrl__seteventmask"></a>  CRichEditCtrl::SetEventMask  
  Sets the event mask for this `CRichEditCtrl` object.  
@@ -1409,7 +1409,7 @@ DWORD SetEventMask(DWORD dwEventMask);
  For more information, see [EM_SETEVENTMASK](http://msdn.microsoft.com/library/windows/desktop/bb774238) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#26](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_26.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#26](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_26.cpp)]  
   
 ##  <a name="cricheditctrl__setmodify"></a>  CRichEditCtrl::SetModify  
  Sets or clears the modified flag for an edit control.  
@@ -1495,7 +1495,7 @@ void SetOptions(
  For more information, see [EM_SETOPTIONS](http://msdn.microsoft.com/library/windows/desktop/bb774254) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#27](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_27.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#27](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_27.cpp)]  
   
 ##  <a name="cricheditctrl__setparaformat"></a>  CRichEditCtrl::SetParaFormat  
  Sets the paragraph formatting attributes for the current selection in this `CRichEditCtrl` object.  
@@ -1522,7 +1522,7 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
  For more information, see the [EM_SETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774276) message and the **PARAFORMAT** and **PARAFORMAT2** structures in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#28](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_28.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#28](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_28.cpp)]  
   
 ##  <a name="cricheditctrl__setpunctuation"></a>  CRichEditCtrl::SetPunctuation  
  Sets the punctuation in a rich edit control.  
@@ -1566,7 +1566,7 @@ BOOL SetReadOnly(BOOL bReadOnly = TRUE);
  For more information, see [EM_SETREADONLY](http://msdn.microsoft.com/library/windows/desktop/bb761655) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#29](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_29.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#29](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_29.cpp)]  
   
 ##  <a name="cricheditctrl__setrect"></a>  CRichEditCtrl::SetRect  
  Sets the formatting rectangle for this `CRichEditCtrl` object.  
@@ -1585,7 +1585,7 @@ void SetRect(LPCRECT lpRect);
  For more information, see [EM_SETRECT](http://msdn.microsoft.com/library/windows/desktop/bb761657) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#30](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_30.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#30](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_30.cpp)]  
   
 ##  <a name="cricheditctrl__setsel"></a>  CRichEditCtrl::SetSel  
  Sets the selection within this `CRichEditCtrl` object.  
@@ -1651,7 +1651,7 @@ BOOL SetSelectionCharFormat(CHARFORMAT2& cf);
  For more information, see the [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) and the **CHARFORMAT** and **CHARFORMAT2** structures in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#31](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_31.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#31](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_31.cpp)]  
   
 ##  <a name="cricheditctrl__settargetdevice"></a>  CRichEditCtrl::SetTargetDevice  
  Sets the target device and line width used for WYSIWYG (what you see is what you get) formatting in this `CRichEditCtrl` object.  
@@ -1686,7 +1686,7 @@ BOOL SetTargetDevice(
  For more information, see [EM_SETTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/bb774282) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#32](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_32.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#32](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_32.cpp)]  
   
 ##  <a name="cricheditctrl__settextmode"></a>  CRichEditCtrl::SetTextMode  
  Sets the text mode or undo and redo level for a rich edit control.  
@@ -1749,7 +1749,7 @@ BOOL SetWordCharFormat(CHARFORMAT2& cf);
  For more information, see the [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) message and the **CHARFORMAT** and **CHARFORMAT2** structures in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#33](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_33.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#33](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_33.cpp)]  
   
 ##  <a name="cricheditctrl__setwordwrapmode"></a>  CRichEditCtrl::SetWordWrapMode  
  Sets the word-wrapping and word-breaking options for the rich edit control.  
@@ -1815,9 +1815,9 @@ long StreamIn(
  For more information, see [EM_STREAMIN](http://msdn.microsoft.com/library/windows/desktop/bb774302) message and [EDITSTREAM](http://msdn.microsoft.com/library/windows/desktop/bb787891) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#34](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_34.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#34](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_34.cpp)]  
   
- [!code-cpp[NVC_MFC_CRichEditCtrl#35](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_35.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#35](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_35.cpp)]  
   
 ##  <a name="cricheditctrl__streamout"></a>  CRichEditCtrl::StreamOut  
  Writes out the contents of this `CRichEditCtrl` object to the specified output stream.  
@@ -1856,9 +1856,9 @@ long StreamOut(
  For more information, see [EM_STREAMOUT](http://msdn.microsoft.com/library/windows/desktop/bb774304) message and [EDITSTREAM](http://msdn.microsoft.com/library/windows/desktop/bb787891) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CRichEditCtrl#36](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_36.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#36](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_36.cpp)]  
   
- [!code-cpp[NVC_MFC_CRichEditCtrl#37](../../mfc/reference/codesnippet/CPP/cricheditctrl-class_37.cpp)]  
+ [!code-cpp[NVC_MFC_CRichEditCtrl#37](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_37.cpp)]  
   
 ##  <a name="cricheditctrl__undo"></a>  CRichEditCtrl::Undo  
  Undoes the last operation in the rich edit control.  

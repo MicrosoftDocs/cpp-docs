@@ -41,17 +41,17 @@ translation.priority.ht:
 ##  <a name="top"></a> Sections  
  This part of the walkthrough has the following sections:  
   
-- [Adding New Panels to the Ribbon](#addNewPanel)  
+- [Adding New Panels to the Ribbon](#addnewpanel)  
   
-- [Adding a Help Panel to the Ribbon](#addHelpPanel)  
+- [Adding a Help Panel to the Ribbon](#addhelppanel)  
   
-- [Adding a Pen Panel to the Ribbon](#addPenPanel)  
+- [Adding a Pen Panel to the Ribbon](#addpenpanel)  
   
-- [Adding a Color Button to the Ribbon](#addColorButton)  
+- [Adding a Color Button to the Ribbon](#addcolorbutton)  
   
-- [Adding a Color Member to the Document Class](#addColorMember)  
+- [Adding a Color Member to the Document Class](#addcolormember)  
   
-- [Initializing Pens and Saving Preferences](#initPenSave)  
+- [Initializing Pens and Saving Preferences](#initpensave)  
   
 ##  <a name="addNewPanel"></a> Adding New Panels to the Ribbon  
  These steps show how to add a **View** panel that contains two check boxes that control the visibility of the toolbar and the status bar, and also a **Window** panel that contains a vertically oriented split button that controls the creation and arrangement of multiple-document interface (MDI) windows.  

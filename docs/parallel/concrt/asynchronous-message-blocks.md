@@ -81,7 +81,7 @@ The Agents Library provides several message-block types that enable you to propa
   
  The Agents Library enables message blocks to asynchronously or synchronously pass messages. When you pass a message to a message block synchronously, for example, by using the `send` function, the runtime blocks the current context until the target block either accepts or rejects the message. When you pass a message to a message block asynchronously, for example, by using the `asend` function, the runtime offers the message to the target, and if the target accepts the message, the runtime schedules an asynchronous task that propagates the message to the receiver. The runtime uses lightweight tasks to propagate messages in a cooperative manner. For more information about lightweight tasks, see [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md).  
   
- Applications connect sources and targets together to form messaging networks. Typically, you link the network and call `send` or `asend` to pass data to the network. To connect a source message block to a target, call the [concurrency::ISource::link_target](reference/ISource-class.md#ISource__link_target_method) method. To disconnect a source block from a target, call the [concurrency::ISource::unlink_target](reference/ISource-class.md#ISource__unlink_target_method) method. To disconnect a source block from all of its targets, call the [concurrency::ISource::unlink_targets](reference/ISource-class.md#ISource__unlink_targets_method) method. When one of the predefined message block types leaves scope or is destroyed, it automatically disconnects itself from any target blocks. Some message block types restrict the maximum number of targets that they can write to. The following section describes the restrictions that apply to the predefined message block types.  
+ Applications connect sources and targets together to form messaging networks. Typically, you link the network and call `send` or `asend` to pass data to the network. To connect a source message block to a target, call the [concurrency::ISource::link_target](reference/isource-class.md#isource__link_target_method) method. To disconnect a source block from a target, call the [concurrency::ISource::unlink_target](reference/isource-class.md#isource__unlink_target_method) method. To disconnect a source block from all of its targets, call the [concurrency::ISource::unlink_targets](reference/isource-class.md#isource__unlink_targets_method) method. When one of the predefined message block types leaves scope or is destroyed, it automatically disconnects itself from any target blocks. Some message block types restrict the maximum number of targets that they can write to. The following section describes the restrictions that apply to the predefined message block types.  
   
  [[Top](#top)]  
   
@@ -146,7 +146,7 @@ The Agents Library provides several message-block types that enable you to propa
 ### Example  
  The following example shows the basic structure of how to work with the `unbounded_buffer` class. This example sends three values to an `unbounded_buffer` object and then reads those values back from the same object.  
   
- [!code-cpp[concrt-unbounded_buffer-structure#1](../../parallel/concrt/codesnippet/CPP/asynchronous-message-blocks_1.cpp)]  
+ [!code-cpp[concrt-unbounded_buffer-structure#1](../../parallel/concrt/codesnippet/cpp/asynchronous-message-blocks_1.cpp)]  
   
  This example produces the following output:  
   
@@ -166,7 +166,7 @@ The Agents Library provides several message-block types that enable you to propa
 ### Example  
  The following example shows the basic structure of how to work with the `overwrite_buffer` class. This example sends three values to an `overwrite _buffer` object and then reads the current value from the same object three times. This example is similar to the example for the `unbounded_buffer` class. However, the `overwrite_buffer` class stores just one message. In addition, the runtime does not remove the message from an `overwrite_buffer` object after it is read.  
   
- [!code-cpp[concrt-overwrite_buffer-structure#1](../../parallel/concrt/codesnippet/CPP/asynchronous-message-blocks_2.cpp)]  
+ [!code-cpp[concrt-overwrite_buffer-structure#1](../../parallel/concrt/codesnippet/cpp/asynchronous-message-blocks_2.cpp)]  
   
  This example produces the following output:  
   
@@ -184,7 +184,7 @@ The Agents Library provides several message-block types that enable you to propa
 ### Example  
  The following example shows the basic structure of how to work with the `single_assignment` class. This example sends three values to a `single_assignment` object and then reads the current value from the same object three times. This example is similar to the example for the `overwrite_buffer` class. Although both the `overwrite_buffer` and `single_assignment` classes store a single message, the `single_assignment` class can be written to one time only.  
   
- [!code-cpp[concrt-single_assignment-structure#1](../../parallel/concrt/codesnippet/CPP/asynchronous-message-blocks_3.cpp)]  
+ [!code-cpp[concrt-single_assignment-structure#1](../../parallel/concrt/codesnippet/cpp/asynchronous-message-blocks_3.cpp)]  
   
  This example produces the following output:  
   
@@ -202,7 +202,7 @@ The Agents Library provides several message-block types that enable you to propa
 ### Example  
  The following example shows the basic structure of how to work with the `call` class. This example creates a `call` object that prints each value that it receives to the console. The example then sends three values to the `call` object. Because the `call` object processes messages on a separate thread, this example also uses a counter variable and an [event](../../parallel/concrt/reference/event-class.md) object to ensure that the `call` object processes all messages before the `wmain` function returns.  
   
- [!code-cpp[concrt-call-structure#1](../../parallel/concrt/codesnippet/CPP/asynchronous-message-blocks_4.cpp)]  
+ [!code-cpp[concrt-call-structure#1](../../parallel/concrt/codesnippet/cpp/asynchronous-message-blocks_4.cpp)]  
   
  This example produces the following output:  
   
@@ -224,7 +224,7 @@ The Agents Library provides several message-block types that enable you to propa
 ### Example  
  The following example shows the basic structure of how to work with the `transformer` class. This example creates a `transformer` object that multiples each input `int` value by 0.33 in order to produce a `double` value as output. The example then receives the transformed values from the same `transformer` object and prints them to the console.  
   
- [!code-cpp[concrt-transformer-structure#1](../../parallel/concrt/codesnippet/CPP/asynchronous-message-blocks_5.cpp)]  
+ [!code-cpp[concrt-transformer-structure#1](../../parallel/concrt/codesnippet/cpp/asynchronous-message-blocks_5.cpp)]  
   
  This example produces the following output:  
   
@@ -248,7 +248,7 @@ The Agents Library provides several message-block types that enable you to propa
 ### Example  
  The following example shows the basic structure of how to work with the `choice` class. This example uses the [concurrency::make_choice](concurrency-namespace-functions.md#make_choice_function) function to create a `choice` object that selects among three message blocks. The example then computes various Fibonacci numbers and stores each result in a different message block. The example then prints to the console a message that is based on the operation that finished first.  
   
- [!code-cpp[concrt-choice-structure#1](../../parallel/concrt/codesnippet/CPP/asynchronous-message-blocks_6.cpp)]  
+ [!code-cpp[concrt-choice-structure#1](../../parallel/concrt/codesnippet/cpp/asynchronous-message-blocks_6.cpp)]  
   
  This example produces the following sample output:  
   
@@ -279,7 +279,7 @@ fib35 received its value first. Result = 9227465
 ### Example  
  The following example shows the basic structure of how to work with the `join` class. This example uses the [concurrency::make_join](concurrency-namespace-functions.md#make_join_function) function to create a `join` object that receives from three `single_assignment` objects. This example computes various Fibonacci numbers, stores each result in a different `single_assignment` object, and then prints to the console each result that the `join` object holds. This example is similar to the example for the `choice` class, except that the `join` class waits for all source message blocks to receive a message.  
   
- [!code-cpp[concrt-join-structure#1](../../parallel/concrt/codesnippet/CPP/asynchronous-message-blocks_7.cpp)]  
+ [!code-cpp[concrt-join-structure#1](../../parallel/concrt/codesnippet/cpp/asynchronous-message-blocks_7.cpp)]  
   
  This example produces the following output:  
   
@@ -305,7 +305,7 @@ fib35 = 9227465fib37 = 24157817half_of_fib42 = 1.33957e+008
 ### Example  
  The following example shows the basic structure of how to work with the `timer` class. The example uses `timer` and `call` objects to report the progress of a lengthy operation.  
   
- [!code-cpp[concrt-timer-structure#1](../../parallel/concrt/codesnippet/CPP/asynchronous-message-blocks_8.cpp)]  
+ [!code-cpp[concrt-timer-structure#1](../../parallel/concrt/codesnippet/cpp/asynchronous-message-blocks_8.cpp)]  
   
  This example produces the following sample output:  
   
@@ -322,7 +322,7 @@ Computing fib(42)..................................................result is 267
   
  The following example shows how to create an `unbounded_buffer` object that uses a filter function to accept only even numbers. The `unbounded_buffer` object rejects odd numbers, and therefore does not propagate odd numbers to its target blocks.  
   
- [!code-cpp[concrt-filter-function#1](../../parallel/concrt/codesnippet/CPP/asynchronous-message-blocks_9.cpp)]  
+ [!code-cpp[concrt-filter-function#1](../../parallel/concrt/codesnippet/cpp/asynchronous-message-blocks_9.cpp)]  
   
  This example produces the following output:  
   

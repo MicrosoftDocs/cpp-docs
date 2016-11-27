@@ -339,11 +339,11 @@ int AddStrings(LPCTSTR lpszStrings);
 ### Remarks  
  Strings in the buffer must be separated by a null character. You must ensure that the last string has two null terminators. To properly format a constant string, you might write it as:  
   
- [!code-cpp[NVC_MFCControlLadenDialog#72](../../mfc/codesnippet/CPP/ctoolbarctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#72](../../mfc/codesnippet/cpp/ctoolbarctrl-class_1.cpp)]  
   
  or:  
   
- [!code-cpp[NVC_MFCControlLadenDialog#73](../../mfc/codesnippet/CPP/ctoolbarctrl-class_2.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#73](../../mfc/codesnippet/cpp/ctoolbarctrl-class_2.cpp)]  
   
  You should not pass a `CString` object to this function since it is not possible to have more than one null character in a `CString`.  
   
@@ -384,7 +384,7 @@ BOOL ChangeBitmap(
 ### Example  
  The following code example changes the bitmap for the **File Save** button to the bitmap for the **About** button.  
   
- [!code-cpp[NVC_MFC_CToolBarCtrl_s1#1](../../mfc/reference/codesnippet/CPP/ctoolbarctrl-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_CToolBarCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_3.cpp)]  
   
 ##  <a name="ctoolbarctrl__checkbutton"></a>  CToolBarCtrl::CheckButton  
  Checks or clears a given button in a toolbar control.  
@@ -1442,7 +1442,7 @@ BOOL ReplaceBitmap(LPTBREPLACEBITMAP pReplaceBitmap);
 ### Example  
  The following code example replaces the bitmap for the standard toolbar with a different bitmap.  
   
- [!code-cpp[NVC_MFC_CToolBarCtrl_s1#2](../../mfc/reference/codesnippet/CPP/ctoolbarctrl-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_CToolBarCtrl_s1#2](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_4.cpp)]  
   
 ##  <a name="ctoolbarctrl__restorestate"></a>  CToolBarCtrl::RestoreState  
  Restores the state of the toolbar control from the location in the registry specified by the parameters.  
@@ -1654,7 +1654,7 @@ void SetColorScheme(const COLORSCHEME* lpColorScheme);
 ### Example  
  The following code example sets the color scheme for the current toolbar control. The code example makes the left and top edges of each tool button red and the right and bottom edges blue. When the user presses the button, the button's red edges turn blue and its blue edges turn red.  
   
- [!code-cpp[NVC_MFC_CToolBarCtrl_s1#3](../../mfc/reference/codesnippet/CPP/ctoolbarctrl-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_CToolBarCtrl_s1#3](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_5.cpp)]  
   
 ##  <a name="ctoolbarctrl__setdisabledimagelist"></a>  CToolBarCtrl::SetDisabledImageList  
  Sets the image list that the toolbar control will use to display disabled buttons.  
@@ -1879,7 +1879,7 @@ DWORD SetPadding(
 ### Example  
  The following code example sets the horizontal and vertical padding of the current toolbar control to 20 pixels.  
   
- [!code-cpp[NVC_MFC_CToolBarCtrl_s1#4](../../mfc/reference/codesnippet/CPP/ctoolbarctrl-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_CToolBarCtrl_s1#4](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_6.cpp)]  
   
 ##  <a name="ctoolbarctrl__setpressedimagelist"></a>  CToolBarCtrl::SetPressedImageList  
  Sets the image list that the current toolbar control uses to represent buttons in the pressed state.  
@@ -1906,7 +1906,7 @@ CImagelist* SetPressedImageList(
 ### Example  
  The following code example sets the pressed image list to be the same as the default image list.  
   
- [!code-cpp[NVC_MFC_CToolBarCtrl_s1#5](../../mfc/reference/codesnippet/CPP/ctoolbarctrl-class_7.cpp)]  
+ [!code-cpp[NVC_MFC_CToolBarCtrl_s1#5](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_7.cpp)]  
   
 ##  <a name="ctoolbarctrl__setrows"></a>  CToolBarCtrl::SetRows  
  Asks the toolbar control to resize itself to the requested number of rows.  

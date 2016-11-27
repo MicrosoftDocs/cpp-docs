@@ -47,8 +47,8 @@ class completion_future;
   
 |Name|Description|  
 |----------|-----------------|  
-|[completion_future::completion_future Constructor](../Topic/completion_future::completion_future%20Constructor.md)|Initializes a new instance of the `completion_future` class.|  
-|[completion_future::~completion_future Destructor](../Topic/completion_future::~completion_future%20Destructor.md)|Destroys the `completion_future` object.|  
+|[completion_future::completion_future Constructor](../topic/completion_future::completion_future%20constructor.md)|Initializes a new instance of the `completion_future` class.|  
+|[completion_future::~completion_future Destructor](../topic/completion_future::~completion_future%20destructor.md)|Destroys the `completion_future` object.|  
   
 ### Public Methods  
   
@@ -66,8 +66,8 @@ class completion_future;
   
 |Name|Description|  
 |----------|-----------------|  
-|[completion_future::operator std::shared_future\<void> Operator](../Topic/completion_future::operator%20std::shared_future%3Cvoid%3E%20Operator.md)|Implicitly converts the `completion_future` object to an `std::shared_future` object.|  
-|[completion_future::operator= Operator](../Topic/completion_future::operator=%20Operator.md)|Copies the contents of the specified `completion_future` object into this one.|  
+|[completion_future::operator std::shared_future\<void> Operator](../topic/completion_future::operator%20std::shared_future%3cvoid%3e%20operator.md)|Implicitly converts the `completion_future` object to an `std::shared_future` object.|  
+|[completion_future::operator= Operator](../topic/completion_future::operator=%20operator.md)|Copies the contents of the specified `completion_future` object into this one.|  
   
 ## Inheritance Hierarchy  
  `completion_future`  

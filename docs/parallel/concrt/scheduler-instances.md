@@ -66,9 +66,9 @@ This document describes the role of scheduler instances in the Concurrency Runti
   
 -   If no scheduler exists, the runtime creates a default scheduler for you when you use runtime functionality, for example, a parallel algorithm, to perform work. The default scheduler becomes the current scheduler for the context that initiates the parallel work.  
   
--   The [concurrency::CurrentScheduler::Create](reference/CurrentScheduler-class.md#CurrentScheduler__Create_method) method creates a `Scheduler` object that uses a specific policy and associates that scheduler with the current context.  
+-   The [concurrency::CurrentScheduler::Create](reference/currentscheduler-class.md#currentscheduler__create_method) method creates a `Scheduler` object that uses a specific policy and associates that scheduler with the current context.  
   
--   The [concurrency::Scheduler::Create](reference/Scheduler-class.md#Scheduler__Create_method) method creates a `Scheduler` object that uses a specific policy, but does not associate it with the current context.  
+-   The [concurrency::Scheduler::Create](reference/scheduler-class.md#scheduler__create_method) method creates a `Scheduler` object that uses a specific policy, but does not associate it with the current context.  
   
  Allowing the runtime to create a default scheduler enables all concurrent tasks to share the same scheduler. Typically, the functionality that is provided by the [Parallel Patterns Library](../../parallel/concrt/parallel-patterns-library-ppl.md) (PPL) or the [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md) is used to perform parallel work. Therefore, you do not have to work directly with the scheduler to control its policy or lifetime. When you use the PPL or the Agents Library, the runtime creates the default scheduler if it does not exist and makes it the current scheduler for each context. When you create a scheduler and set it as the current scheduler, then the runtime uses that scheduler to schedule tasks. Create additional scheduler instances only when you require a specific scheduling policy. For more information about the policies that are associated with a scheduler, see [Scheduler Policies](../../parallel/concrt/scheduler-policies.md).  
   
@@ -77,9 +77,9 @@ This document describes the role of scheduler instances in the Concurrency Runti
 ##  <a name="managing"></a> Managing the Lifetime of a Scheduler Instance  
  The runtime uses a reference-counting mechanism to control the lifetime of `Scheduler` objects.  
   
- When you use the `CurrentScheduler::Create` method or the `Scheduler::Create` method to create a `Scheduler` object, the runtime sets the initial reference count of that scheduler to one. The runtime increments the reference count when you call the [concurrency::Scheduler::Attach](reference/Scheduler-class.md#Scheduler__Attach_method) method. The `Scheduler::Attach` method associates the `Scheduler` object together with the current context. This makes it the current scheduler. When you call the `CurrentScheduler::Create` method, the runtime both creates a `Scheduler` object and attaches it to the current context (and sets the reference count to one). You can also use the [concurrency::Scheduler::Reference](reference/Scheduler-class.md#Scheduler__Reference_method) method to increment the reference count of a `Scheduler` object.  
+ When you use the `CurrentScheduler::Create` method or the `Scheduler::Create` method to create a `Scheduler` object, the runtime sets the initial reference count of that scheduler to one. The runtime increments the reference count when you call the [concurrency::Scheduler::Attach](reference/scheduler-class.md#scheduler__attach_method) method. The `Scheduler::Attach` method associates the `Scheduler` object together with the current context. This makes it the current scheduler. When you call the `CurrentScheduler::Create` method, the runtime both creates a `Scheduler` object and attaches it to the current context (and sets the reference count to one). You can also use the [concurrency::Scheduler::Reference](reference/scheduler-class.md#scheduler__reference_method) method to increment the reference count of a `Scheduler` object.  
   
- The runtime decrements the reference count when you call the [concurrency::CurrentScheduler::Detach](reference/CurrentScheduler-class.md#CurrentScheduler__Detach_method) method to detach the current scheduler, or call the [concurrency::Scheduler::Release](reference/Scheduler-class.md#Scheduler__Release_method) method. When the reference count reaches zero, the runtime destroys the `Scheduler` object after all scheduled tasks finish. A running task is allowed to increment the reference count of the current scheduler. Therefore, if the reference count reaches zero and a task increments the reference count, the runtime does not destroy the `Scheduler` object until the reference count again reaches zero and all tasks finish.  
+ The runtime decrements the reference count when you call the [concurrency::CurrentScheduler::Detach](reference/currentscheduler-class.md#currentscheduler__detach_method) method to detach the current scheduler, or call the [concurrency::Scheduler::Release](reference/scheduler-class.md#scheduler__release_method) method. When the reference count reaches zero, the runtime destroys the `Scheduler` object after all scheduled tasks finish. A running task is allowed to increment the reference count of the current scheduler. Therefore, if the reference count reaches zero and a task increments the reference count, the runtime does not destroy the `Scheduler` object until the reference count again reaches zero and all tasks finish.  
   
  The runtime maintains an internal stack of `Scheduler` objects for each context. When you call the `Scheduler::Attach` or `CurrentScheduler::Create` method, the runtime pushes that `Scheduler` object onto the stack for the current context. This makes it the current scheduler. When you call `CurrentScheduler::Detach`, the runtime pops the current scheduler from the stack for current context and sets the previous one as the current scheduler.  
   
@@ -96,7 +96,7 @@ This document describes the role of scheduler instances in the Concurrency Runti
   
  When you use functionality, for example, the PPL, that causes the runtime to create the default scheduler for you, do not release or detach this scheduler. The runtime manages the lifetime of any scheduler that it creates.  
   
- Because the runtime does not destroy a `Scheduler` object before all tasks have finished, you can use the [concurrency::Scheduler::RegisterShutdownEvent](reference/Scheduler-class.md#Scheduler__RegisterShutdownEvent_method) method or the [concurrency::CurrentScheduler::RegisterShutdownEvent](reference/CurrentScheduler-class.md#CurrentScheduler__RegisterShutdownEvent_method) method to receive a notification when a `Scheduler` object is destroyed. This is useful when you must wait for every task that is scheduled by a `Scheduler` object to finish.  
+ Because the runtime does not destroy a `Scheduler` object before all tasks have finished, you can use the [concurrency::Scheduler::RegisterShutdownEvent](reference/scheduler-class.md#scheduler__registershutdownevent_method) method or the [concurrency::CurrentScheduler::RegisterShutdownEvent](reference/currentscheduler-class.md#currentscheduler__registershutdownevent_method) method to receive a notification when a `Scheduler` object is destroyed. This is useful when you must wait for every task that is scheduled by a `Scheduler` object to finish.  
   
  [[Top](#top)]  
   
@@ -109,28 +109,28 @@ This document describes the role of scheduler instances in the Concurrency Runti
   
 |Method|Description|  
 |------------|-----------------|  
-|[Create](reference/CurrentScheduler-class.md#CurrentScheduler__Create_method)|Creates a `Scheduler` object that uses the specified policy and associates it with the current context.|  
-|[Get](reference/CurrentScheduler-class.md#CurrentScheduler__Get_method)|Retrieves a pointer to the `Scheduler` object that is associated with the current context. This method does not increment the reference count of the `Scheduler` object.|  
-|[Detach](reference/CurrentScheduler-class.md#CurrentScheduler__Detach_method)|Detaches the current scheduler from the current context and sets the previous one as the current scheduler.|  
-|[RegisterShutdownEvent](reference/CurrentScheduler-class.md#CurrentScheduler__RegisterShutdownEvent_method)|Registers an event that the runtime sets when the current scheduler is destroyed.|  
-|[CreateScheduleGroup](reference/CurrentScheduler-class.md#CurrentScheduler__CreateScheduleGroup_method)|Creates a [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) object in the current scheduler.|  
-|[ScheduleTask](reference/CurrentScheduler-class.md#CurrentScheduler__ScheduleTask_method)|Adds a lightweight task to the scheduling queue of the current scheduler.|  
-|[GetPolicy](reference/CurrentScheduler-class.md#CurrentScheduler__GetPolicy_method)|Retrieves a copy of the policy that is associated with the current scheduler.|  
+|[Create](reference/currentscheduler-class.md#currentscheduler__create_method)|Creates a `Scheduler` object that uses the specified policy and associates it with the current context.|  
+|[Get](reference/currentscheduler-class.md#currentscheduler__get_method)|Retrieves a pointer to the `Scheduler` object that is associated with the current context. This method does not increment the reference count of the `Scheduler` object.|  
+|[Detach](reference/currentscheduler-class.md#currentscheduler__detach_method)|Detaches the current scheduler from the current context and sets the previous one as the current scheduler.|  
+|[RegisterShutdownEvent](reference/currentscheduler-class.md#currentscheduler__registershutdownevent_method)|Registers an event that the runtime sets when the current scheduler is destroyed.|  
+|[CreateScheduleGroup](reference/currentscheduler-class.md#currentscheduler__createschedulegroup_method)|Creates a [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) object in the current scheduler.|  
+|[ScheduleTask](reference/currentscheduler-class.md#currentscheduler__scheduletask_method)|Adds a lightweight task to the scheduling queue of the current scheduler.|  
+|[GetPolicy](reference/currentscheduler-class.md#currentscheduler__getpolicy_method)|Retrieves a copy of the policy that is associated with the current scheduler.|  
   
  The following table shows the important methods that are defined by the `Scheduler` class.  
   
 |Method|Description|  
 |------------|-----------------|  
-|[Create](reference/Scheduler-class.md#Scheduler__Create_method)|Creates a `Scheduler` object that uses the specified policy.|  
-|[Attach](reference/Scheduler-class.md#Scheduler__Attach_method)|Associates the `Scheduler` object together with the current context.|  
-|[Reference](reference/Scheduler-class.md#Scheduler__Reference_method)|Increments the reference counter of the `Scheduler` object.|  
-|[Release](reference/Scheduler-class.md#Scheduler__Release_method)|Decrements the reference counter of the `Scheduler` object.|  
-|[RegisterShutdownEvent](reference/Scheduler-class.md#Scheduler__RegisterShutdownEvent_method)|Registers an event that the runtime sets when the `Scheduler` object is destroyed.|  
-|[CreateScheduleGroup](reference/Scheduler-class.md#Scheduler__CreateScheduleGroup_method)|Creates a [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) object in the `Scheduler` object.|  
-|[ScheduleTask](reference/Scheduler-class.md#Scheduler__ScheduleTask_method)|Schedules a lightweight task from the `Scheduler` object.|  
-|[GetPolicy](reference/Scheduler-class.md#Scheduler__GetPolicy_method)|Retrieves a copy of the policy that is associated with the `Scheduler` object.|  
-|[SetDefaultSchedulerPolicy](reference/Scheduler-class.md#Scheduler__SetDefaultSchedulerPolicy_method)|Sets the policy for the runtime to use when it creates the default scheduler.|  
-|[ResetDefaultSchedulerPolicy](reference/Scheduler-class.md#Scheduler__ResetDefaultSchedulerPolicy_method)|Restores the default policy to the one that was active before the call to `SetDefaultSchedulerPolicy`. If the default scheduler is created after this call, the runtime uses default policy settings to create the scheduler.|  
+|[Create](reference/scheduler-class.md#scheduler__create_method)|Creates a `Scheduler` object that uses the specified policy.|  
+|[Attach](reference/scheduler-class.md#scheduler__attach_method)|Associates the `Scheduler` object together with the current context.|  
+|[Reference](reference/scheduler-class.md#scheduler__reference_method)|Increments the reference counter of the `Scheduler` object.|  
+|[Release](reference/scheduler-class.md#scheduler__release_method)|Decrements the reference counter of the `Scheduler` object.|  
+|[RegisterShutdownEvent](reference/scheduler-class.md#scheduler__registershutdownevent_method)|Registers an event that the runtime sets when the `Scheduler` object is destroyed.|  
+|[CreateScheduleGroup](reference/scheduler-class.md#scheduler__createschedulegroup_method)|Creates a [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) object in the `Scheduler` object.|  
+|[ScheduleTask](reference/scheduler-class.md#scheduler__scheduletask_method)|Schedules a lightweight task from the `Scheduler` object.|  
+|[GetPolicy](reference/scheduler-class.md#scheduler__getpolicy_method)|Retrieves a copy of the policy that is associated with the `Scheduler` object.|  
+|[SetDefaultSchedulerPolicy](reference/scheduler-class.md#scheduler__setdefaultschedulerpolicy_method)|Sets the policy for the runtime to use when it creates the default scheduler.|  
+|[ResetDefaultSchedulerPolicy](reference/scheduler-class.md#scheduler__resetdefaultschedulerpolicy_method)|Restores the default policy to the one that was active before the call to `SetDefaultSchedulerPolicy`. If the default scheduler is created after this call, the runtime uses default policy settings to create the scheduler.|  
   
  [[Top](#top)]  
   

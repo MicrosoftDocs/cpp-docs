@@ -102,7 +102,7 @@ CMFCRibbonLinkCtrl(
 ### Example  
  The following example demonstrates how to use the constructor of the `CMFCRibbonLinkCtrl` class. This code snippet is part of the [Ribbon Gadgets sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_RibbonGadgets#1](../../mfc/reference/codesnippet/CPP/cmfcribbonlinkctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonGadgets#1](../../mfc/reference/codesnippet/cpp/cmfcribbonlinkctrl-class_1.cpp)]  
   
 ##  <a name="cmfcribbonlinkctrl__copyfrom"></a>  CMFCRibbonLinkCtrl::CopyFrom  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  

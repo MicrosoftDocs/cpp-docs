@@ -248,7 +248,7 @@ STDMETHOD(SetAdvise)(DWORD /* aspects */,
 ```  
   
 ### Remarks  
- The pointer to the [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513) interface on the advise sink is stored in the control class data member [CComControlBase::m_spAdviseSink](../Topic/CComControlBase::m_spAdviseSink.md).  
+ The pointer to the [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513) interface on the advise sink is stored in the control class data member [CComControlBase::m_spAdviseSink](../topic/ccomcontrolbase::m_spadvisesink.md).  
   
  See [IViewObject::SetAdvise](http://msdn.microsoft.com/library/windows/desktop/ms683950) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -282,7 +282,7 @@ HRESULT CloseHandle(HANDLE hHandle);
 ### Example  
  The following code shows a simple implementation of `IWorkerThreadClient::CloseHandle`.  
   
- [!code-cpp[NVC_ATL_Utilities#135](../../atl/codesnippet/CPP/iviewobjecteximpl-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#135](../../atl/codesnippet/cpp/iviewobjecteximpl-class_1.cpp)]  
   
 ##  <a name="iworkerthreadclient__execute"></a>  IWorkerThreadClient::Execute  
  Implement this method to execute code when the handle associated with this object becomes signaled.  
@@ -307,7 +307,7 @@ HRESULT Execute(DWORD_PTR dwParam,  HANDLE hObject);
 ### Example  
  The following code shows a simple implementation of `IWorkerThreadClient::Execute`.  
   
- [!code-cpp[NVC_ATL_Utilities#136](../../atl/codesnippet/CPP/iviewobjecteximpl-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#136](../../atl/codesnippet/cpp/iviewobjecteximpl-class_2.cpp)]  
   
 ## See Also  
  [CComControl Class](../../atl/reference/ccomcontrol-class.md)   

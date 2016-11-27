@@ -45,11 +45,11 @@ The main feature of extended combo box controls is the ability to associate imag
   
 2.  Initialize the new image list object by calling [CImageList::Create](../mfc/reference/cimagelist-class.md#cimagelist__create). The following code is one example of this call.  
   
-     [!code-cpp[NVC_MFCControlLadenDialog#10](../mfc/codesnippet/CPP/using-image-lists-in-an-extended-combo-box-control_1.cpp)]  
+     [!code-cpp[NVC_MFCControlLadenDialog#10](../mfc/codesnippet/cpp/using-image-lists-in-an-extended-combo-box-control_1.cpp)]  
   
 3.  Add optional images for each possible state: selected or nonselected, and an overlay. The following code adds three predefined images.  
   
-     [!code-cpp[NVC_MFCControlLadenDialog#11](../mfc/codesnippet/CPP/using-image-lists-in-an-extended-combo-box-control_2.cpp)]  
+     [!code-cpp[NVC_MFCControlLadenDialog#11](../mfc/codesnippet/cpp/using-image-lists-in-an-extended-combo-box-control_2.cpp)]  
   
 4.  Associate the image list with the control with a call to [CComboBoxEx::SetImageList](../mfc/reference/ccomboboxex-class.md#ccomboboxex__setimagelist).  
   

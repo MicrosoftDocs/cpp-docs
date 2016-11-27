@@ -101,7 +101,7 @@ class CList : public CObject
  For more information on using `CList`, see the article [Collections](../../mfc/collections.md).  
   
 ## Example  
- [!code-cpp[NVC_MFCCollections#35](../../mfc/codesnippet/CPP/clist-class_1.cpp)]  
+ [!code-cpp[NVC_MFCCollections#35](../../mfc/codesnippet/cpp/clist-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -138,7 +138,7 @@ void AddHead(CList* pNewList);
  The list can be empty before the operation.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#36](../../mfc/codesnippet/CPP/clist-class_2.cpp)]  
+ [!code-cpp[NVC_MFCCollections#36](../../mfc/codesnippet/cpp/clist-class_2.cpp)]  
   
 ##  <a name="clist__addtail"></a>  CList::AddTail  
  Adds a new element or list of elements to the tail of this list.  
@@ -167,7 +167,7 @@ void AddTail(CList* pNewList);
  The list can be empty before the operation.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#37](../../mfc/codesnippet/CPP/clist-class_3.cpp)]  
+ [!code-cpp[NVC_MFCCollections#37](../../mfc/codesnippet/cpp/clist-class_3.cpp)]  
   
 ##  <a name="clist__clist"></a>  CList::CList  
  Constructs an empty ordered list.  
@@ -184,7 +184,7 @@ CList(INT_PTR nBlockSize = 10);
  As the list grows, memory is allocated in units of `nBlockSize` entries.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#38](../../mfc/codesnippet/CPP/clist-class_4.cpp)]  
+ [!code-cpp[NVC_MFCCollections#38](../../mfc/codesnippet/cpp/clist-class_4.cpp)]  
   
 ##  <a name="clist__find"></a>  CList::Find  
  Searches the list sequentially to find the first element matching the specified `searchValue`.  
@@ -211,7 +211,7 @@ POSITION Find(
  A **POSITION** value that can be used for iteration or object pointer retrieval; **NULL** if the object is not found.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#39](../../mfc/codesnippet/CPP/clist-class_5.cpp)]  
+ [!code-cpp[NVC_MFCCollections#39](../../mfc/codesnippet/cpp/clist-class_5.cpp)]  
   
 ##  <a name="clist__findindex"></a>  CList::FindIndex  
  Uses the value of `nIndex` as an index into the list.  
@@ -233,7 +233,7 @@ POSITION FindIndex(INT_PTR nIndex) const;
  It starts a sequential scan from the head of the list, stopping on the *n*th element.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#40](../../mfc/codesnippet/CPP/clist-class_6.cpp)]  
+ [!code-cpp[NVC_MFCCollections#40](../../mfc/codesnippet/cpp/clist-class_6.cpp)]  
   
 ##  <a name="clist__getat"></a>  CList::GetAt  
  Gets the list element at a given position.  
@@ -307,7 +307,7 @@ TYPE& GetHead();
  You must ensure that the list is not empty before calling `GetHead`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](#clist__isempty) to verify that the list contains elements.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#41](../../mfc/codesnippet/CPP/clist-class_7.cpp)]  
+ [!code-cpp[NVC_MFCCollections#41](../../mfc/codesnippet/cpp/clist-class_7.cpp)]  
   
 ##  <a name="clist__getheadposition"></a>  CList::GetHeadPosition  
  Gets the position of the head element of this list.  
@@ -322,7 +322,7 @@ POSITION GetHeadPosition() const;
  A **POSITION** value that can be used for iteration or object pointer retrieval; **NULL** if the list is empty.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#42](../../mfc/codesnippet/CPP/clist-class_8.cpp)]  
+ [!code-cpp[NVC_MFCCollections#42](../../mfc/codesnippet/cpp/clist-class_8.cpp)]  
   
 ##  <a name="clist__getnext"></a>  CList::GetNext  
  Gets the list element identified by `rPosition`, then sets `rPosition` to the **POSITION** value of the next entry in the list.  
@@ -356,7 +356,7 @@ const TYPE& GetNext(POSITION& rPosition) const;
  If the retrieved element is the last in the list, then the new value of `rPosition` is set to **NULL**.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#43](../../mfc/codesnippet/CPP/clist-class_9.cpp)]  
+ [!code-cpp[NVC_MFCCollections#43](../../mfc/codesnippet/cpp/clist-class_9.cpp)]  
   
 ##  <a name="clist__getprev"></a>  CList::GetPrev  
  Gets the list element identified by `rPosition`, then sets `rPosition` to the **POSITION** value of the previous entry in the list.  
@@ -390,7 +390,7 @@ const TYPE& GetPrev(POSITION& rPosition) const;
  If the retrieved element is the first in the list, then the new value of `rPosition` is set to **NULL**.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#44](../../mfc/codesnippet/CPP/clist-class_10.cpp)]  
+ [!code-cpp[NVC_MFCCollections#44](../../mfc/codesnippet/cpp/clist-class_10.cpp)]  
   
 ##  <a name="clist__getsize"></a>  CList::GetSize  
  Returns the number of list elements.  
@@ -408,7 +408,7 @@ INT_PTR GetSize() const;
  Call this method to retrieve the number of elements in the list.  Calling this method will generate the same result as the [CList::GetCount](#clist__getcount) method.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#45](../../mfc/codesnippet/CPP/clist-class_11.cpp)]  
+ [!code-cpp[NVC_MFCCollections#45](../../mfc/codesnippet/cpp/clist-class_11.cpp)]  
   
 ##  <a name="clist__gettail"></a>  CList::GetTail  
  Gets the `CObject` pointer that represents the tail element of this list.  
@@ -433,7 +433,7 @@ const TYPE& GetTail() const;
  You must ensure that the list is not empty before calling `GetTail`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](../../mfc/reference/coblist-class.md#coblist__isempty) to verify that the list contains elements.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#46](../../mfc/codesnippet/CPP/clist-class_12.cpp)]  
+ [!code-cpp[NVC_MFCCollections#46](../../mfc/codesnippet/cpp/clist-class_12.cpp)]  
   
 ##  <a name="clist__gettailposition"></a>  CList::GetTailPosition  
  Gets the position of the tail element of this list; **NULL** if the list is empty.  
@@ -448,7 +448,7 @@ POSITION GetTailPosition() const;
  A **POSITION** value that can be used for iteration or object pointer retrieval; **NULL** if the list is empty.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#47](../../mfc/codesnippet/CPP/clist-class_13.cpp)]  
+ [!code-cpp[NVC_MFCCollections#47](../../mfc/codesnippet/cpp/clist-class_13.cpp)]  
   
 ##  <a name="clist__insertafter"></a>  CList::InsertAfter  
  Adds an element to this list after the element at the specified position.  
@@ -472,7 +472,7 @@ POSITION InsertAfter(
  A **POSITION** value that can be used for iteration or list element retrieval.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#48](../../mfc/codesnippet/CPP/clist-class_14.cpp)]  
+ [!code-cpp[NVC_MFCCollections#48](../../mfc/codesnippet/cpp/clist-class_14.cpp)]  
   
 ##  <a name="clist__insertbefore"></a>  CList::InsertBefore  
  Adds an element to this list before the element at the specified position.  
@@ -499,7 +499,7 @@ POSITION InsertBefore(
  If *position* is **NULL**, the element is inserted at the head of the list.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#49](../../mfc/codesnippet/CPP/clist-class_15.cpp)]  
+ [!code-cpp[NVC_MFCCollections#49](../../mfc/codesnippet/cpp/clist-class_15.cpp)]  
   
 ##  <a name="clist__isempty"></a>  CList::IsEmpty  
  Indicates whether this list contains no elements.  
@@ -514,7 +514,7 @@ BOOL IsEmpty() const;
  Nonzero if this list is empty; otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#50](../../mfc/codesnippet/CPP/clist-class_16.cpp)]  
+ [!code-cpp[NVC_MFCCollections#50](../../mfc/codesnippet/cpp/clist-class_16.cpp)]  
   
 ##  <a name="clist__removeall"></a>  CList::RemoveAll  
  Removes all the elements from this list and frees the associated memory.  
@@ -527,7 +527,7 @@ void RemoveAll();
  No error is generated if the list is already empty.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#51](../../mfc/codesnippet/CPP/clist-class_17.cpp)]  
+ [!code-cpp[NVC_MFCCollections#51](../../mfc/codesnippet/cpp/clist-class_17.cpp)]  
   
 ##  <a name="clist__removeat"></a>  CList::RemoveAt  
  Removes the specified element from this list.  
@@ -544,7 +544,7 @@ void RemoveAt(POSITION position);
  You must ensure that your **POSITION** value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#52](../../mfc/codesnippet/CPP/clist-class_18.cpp)]  
+ [!code-cpp[NVC_MFCCollections#52](../../mfc/codesnippet/cpp/clist-class_18.cpp)]  
   
 ##  <a name="clist__removehead"></a>  CList::RemoveHead  
  Removes the element from the head of the list and returns a pointer to it.  
@@ -564,7 +564,7 @@ TYPE RemoveHead();
  You must ensure that the list is not empty before calling `RemoveHead`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](#clist__isempty) to verify that the list contains elements.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#53](../../mfc/codesnippet/CPP/clist-class_19.cpp)]  
+ [!code-cpp[NVC_MFCCollections#53](../../mfc/codesnippet/cpp/clist-class_19.cpp)]  
   
 ##  <a name="clist__removetail"></a>  CList::RemoveTail  
  Removes the element from the tail of the list and returns a pointer to it.  
@@ -584,7 +584,7 @@ TYPE RemoveTail();
  You must ensure that the list is not empty before calling `RemoveTail`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](#clist__isempty) to verify that the list contains elements.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#54](../../mfc/codesnippet/CPP/clist-class_20.cpp)]  
+ [!code-cpp[NVC_MFCCollections#54](../../mfc/codesnippet/cpp/clist-class_20.cpp)]  
   
 ##  <a name="clist__setat"></a>  CList::SetAt  
  A variable of type **POSITION** is a key for the list.  
@@ -610,7 +610,7 @@ void SetAt(
  You must ensure that your **POSITION** value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#55](../../mfc/codesnippet/CPP/clist-class_21.cpp)]  
+ [!code-cpp[NVC_MFCCollections#55](../../mfc/codesnippet/cpp/clist-class_21.cpp)]  
   
 ## See Also  
  [MFC Sample COLLECT](../../visual-cpp-samples.md)   

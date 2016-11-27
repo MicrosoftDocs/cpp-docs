@@ -74,6 +74,6 @@ translation.priority.ht:
   
 ## See Also  
  [Styles Used by MFC](../../mfc/reference/styles-used-by-mfc.md)   
- [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#cscrollbar__Create)   
+ [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#cscrollbar__create)   
  [Scroll Bar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb787533)
 

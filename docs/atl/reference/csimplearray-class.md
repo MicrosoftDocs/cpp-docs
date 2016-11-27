@@ -79,7 +79,7 @@ template <class T, class TEqual = CSimpleArrayEqualHelper<T>>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleArray::operator](CSimpleArray-class.md#CSimpleArray__operator)|Retrieves an element from the array.|  
+|[CSimpleArray::operator](csimplearray-class.md#csimplearray__operator)|Retrieves an element from the array.|  
 |[CSimpleArray::operator =](#csimplearray__operator_eq)|Assignment operator.|  
   
 ## Remarks  
@@ -93,7 +93,7 @@ template <class T, class TEqual = CSimpleArrayEqualHelper<T>>
  **Header:** atlsimpcoll.h  
   
 ## Example  
- [!code-cpp[NVC_ATL_Utilities#86](../../atl/codesnippet/CPP/csimplearray-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#86](../../atl/codesnippet/cpp/csimplearray-class_1.cpp)]  
   
 ##  <a name="csimplearray__add"></a>  CSimpleArray::Add  
  Adds a new element to the array.  
@@ -110,7 +110,7 @@ BOOL Add(const T& t);
  Returns TRUE if the element is successfully added to the array, FALSE otherwise.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#87](../../atl/codesnippet/CPP/csimplearray-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#87](../../atl/codesnippet/cpp/csimplearray-class_2.cpp)]  
   
 ##  <a name="csimplearray__csimplearray"></a>  CSimpleArray::CSimpleArray  
  The constructor for the array object.  
@@ -154,7 +154,7 @@ int Find(const T& t) const;
  Returns the index of the found element, or -1 if the element is not found.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#88](../../atl/codesnippet/CPP/csimplearray-class_3.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#88](../../atl/codesnippet/cpp/csimplearray-class_3.cpp)]  
   
 ##  <a name="csimplearray__getdata"></a>  CSimpleArray::GetData  
  Returns a pointer to the data stored in the array.  
@@ -180,7 +180,7 @@ int GetSize() const;
  Retrieves an element from the array.  
   
 ```
-T& operator[](int   nIndex);
+T& operator[](int   nindex);
 ```  
   
 ### Parameters  
@@ -191,7 +191,7 @@ T& operator[](int   nIndex);
  Returns the element of the array referenced by `nIndex`.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#89](../../atl/codesnippet/CPP/csimplearray-class_4.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#89](../../atl/codesnippet/cpp/csimplearray-class_4.cpp)]  
   
 ##  <a name="csimplearray__operator_eq"></a>  CSimpleArray::operator =  
  Assignment operator.  
@@ -215,7 +215,7 @@ CSimpleArray<T,
  Copies all elements from the `CSimpleArray` object referenced by *src* into the current array object, replacing all existing data.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#90](../../atl/codesnippet/CPP/csimplearray-class_5.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#90](../../atl/codesnippet/cpp/csimplearray-class_5.cpp)]  
   
 ##  <a name="csimplearray__remove"></a>  CSimpleArray::Remove  
  Removes a given element from the array.  

@@ -175,7 +175,7 @@ CMemFile(
  The second overload acts the same as if you used the first constructor and immediately called [Attach](#cmemfile__attach) with the same parameters. See **Attach** for details.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#36](../../atl-mfc-shared/reference/codesnippet/CPP/cmemfile-class_1.cpp)]  
+ [!code-cpp[NVC_MFCFiles#36](../../atl-mfc-shared/reference/codesnippet/cpp/cmemfile-class_1.cpp)]  
   
 ##  <a name="cmemfile__detach"></a>  CMemFile::Detach  
  Call this function to get a pointer to the memory block being used by `CMemFile`.  

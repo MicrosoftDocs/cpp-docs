@@ -213,7 +213,7 @@ COleClientItem* GetNextClientItem(POSITION& pos) const;
  After each call, the value of `pos` is set for the next item in the document, which might or might not be a client item.  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#1](../../mfc/codesnippet/CPP/coledocument-class_1.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#1](../../mfc/codesnippet/cpp/coledocument-class_1.cpp)]  
   
 ##  <a name="coledocument__getnextitem"></a>  COleDocument::GetNextItem  
  Call this function repeatedly to access each of the items in your document.  
@@ -235,7 +235,7 @@ virtual CDocItem* GetNextItem(POSITION& pos) const;
  After each call, the value of `pos` is set to the **POSITION** value of the next item in the document. If the retrieved element is the last element in the document, the new value of `pos` is **NULL**.  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#2](../../mfc/codesnippet/CPP/coledocument-class_2.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#2](../../mfc/codesnippet/cpp/coledocument-class_2.cpp)]  
   
 ##  <a name="coledocument__getnextserveritem"></a>  COleDocument::GetNextServerItem  
  Call this function repeatedly to access each of the server items in your document.  
@@ -257,7 +257,7 @@ COleServerItem* GetNextServerItem(POSITION& pos) const;
  After each call, the value of `pos` is set for the next item in the document, which might or might not be a server item.  
   
 ### Example  
- [!code-cpp[NVC_MFCOleServer#2](../../mfc/codesnippet/CPP/coledocument-class_3.cpp)]  
+ [!code-cpp[NVC_MFCOleServer#2](../../mfc/codesnippet/cpp/coledocument-class_3.cpp)]  
   
 ##  <a name="coledocument__getprimaryselecteditem"></a>  COleDocument::GetPrimarySelectedItem  
  Called by the framework to retrieve the currently selected OLE item in the specified view.  

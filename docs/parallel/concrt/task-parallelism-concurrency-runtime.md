@@ -101,7 +101,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
   
  To solve this problem, use a smart pointer, such as [std::shared_ptr](../../standard-library/shared-ptr-class.md), to wrap the variable and pass the smart pointer by value. In this way, the underlying object can be assigned to and read from, and will outlive the tasks that use it. Use this technique even when the variable is a pointer or a reference-counted handle (`^`) to a Windows Runtime object. Here’s a basic example:  
   
- [!code-cpp[concrt-lambda-task-lifetime#1](../../parallel/concrt/codesnippet/CPP/task-parallelism-concurrency-runtime_1.cpp)]  
+ [!code-cpp[concrt-lambda-task-lifetime#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_1.cpp)]  
   
  For more information about lambda expressions, see [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md).  
   
@@ -110,19 +110,19 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
   
  `task` is a template class. The type parameter `T` is the type of the result that is produced by the task. This type can be `void` if the task does not return a value. `T` cannot use the `const` modifier.  
   
- When you create a task, you provide a *work function* that performs the task body. This work function comes in the form of a lambda function, function pointer, or function object. To wait for a task to finish without obtaining the result, call the [concurrency::task::wait](reference/task-class.md#task__wait_method) method. The `task::wait` method returns a [concurrency::task_status](../Topic/task_group_status%20Enumeration.md) value that describes whether the task was completed or canceled. To get the result of the task, call the [concurrency::task::get](reference/task-class.md#task__get_method) method. This method calls `task::wait` to wait for the task to finish, and therefore blocks execution of the current thread until the result is available.  
+ When you create a task, you provide a *work function* that performs the task body. This work function comes in the form of a lambda function, function pointer, or function object. To wait for a task to finish without obtaining the result, call the [concurrency::task::wait](reference/task-class.md#task__wait_method) method. The `task::wait` method returns a [concurrency::task_status](../topic/task_group_status%20enumeration.md) value that describes whether the task was completed or canceled. To get the result of the task, call the [concurrency::task::get](reference/task-class.md#task__get_method) method. This method calls `task::wait` to wait for the task to finish, and therefore blocks execution of the current thread until the result is available.  
   
  The following example shows how to create a task, wait for its result, and display its value. The examples in this documentation use lambda functions because they provide a more succinct syntax. However, you can also use function pointers and function objects when you use tasks.  
   
- [!code-cpp[concrt-basic-task#1](../../parallel/concrt/codesnippet/CPP/task-parallelism-concurrency-runtime_2.cpp)]  
+ [!code-cpp[concrt-basic-task#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_2.cpp)]  
   
  When you use the [concurrency::create_task](concurrency-namespace-functions.md#create_task_function) function, you can use the `auto` keyword instead of declaring the type. For example, consider this code that creates and prints the identity matrix:  
   
- [!code-cpp[concrt-create-task#1](../../parallel/concrt/codesnippet/CPP/task-parallelism-concurrency-runtime_3.cpp)]  
+ [!code-cpp[concrt-create-task#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_3.cpp)]  
   
  You can use the `create_task` function to create the equivalent operation.  
   
- [!code-cpp[concrt-create-task#2](../../parallel/concrt/codesnippet/CPP/task-parallelism-concurrency-runtime_4.cpp)]  
+ [!code-cpp[concrt-create-task#2](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_4.cpp)]  
   
  If an exception is thrown during the execution of a task, the runtime marshals that exception in the subsequent call to `task::get` or `task::wait`, or to a task-based continuation. For more information about the task exception-handling mechanism, see [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).  
   
@@ -154,15 +154,15 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
   
  The following example modifies the previous one to use the [concurrency::task::then](reference/task-class.md#task__then_method) method to schedule a continuation that prints the value of the antecedent task when it is available.  
   
- [!code-cpp[concrt-basic-continuation#1](../../parallel/concrt/codesnippet/CPP/task-parallelism-concurrency-runtime_5.cpp)]  
+ [!code-cpp[concrt-basic-continuation#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_5.cpp)]  
   
  You can chain and nest tasks to any length. A task can also have multiple continuations. The following example illustrates a basic continuation chain that increments the value of the previous task three times.  
   
- [!code-cpp[concrt-continuation-chain#1](../../parallel/concrt/codesnippet/CPP/task-parallelism-concurrency-runtime_6.cpp)]  
+ [!code-cpp[concrt-continuation-chain#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_6.cpp)]  
   
  A continuation can also return another task. If there is no cancellation, then this task is executed before the subsequent continuation. This technique is known as *asynchronous unwrapping*. Asynchronous unwrapping is useful when you want to perform additional work in the background, but do not want the current task to block the current thread. (This is common in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps, where continuations can run on the UI thread). The following example shows three tasks. The first task returns another task that is run before a continuation task.  
   
- [!code-cpp[concrt-async-unwrapping#1](../../parallel/concrt/codesnippet/CPP/task-parallelism-concurrency-runtime_7.cpp)]  
+ [!code-cpp[concrt-async-unwrapping#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_7.cpp)]  
   
 > [!IMPORTANT]
 >  When a continuation of a task returns a nested task of type `N`, the resulting task has the type `N`, not `task<N>`, and completes when the nested task completes. In other words, the continuation performs the unwrapping of the nested task.  
@@ -176,7 +176,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
 ###  <a name="when-all"></a> The when_all Function  
  The `when_all` function produces a task that completes after a set of tasks complete. This function returns a std::[vector](../../standard-library/vector-class.md) object that contains the result of each task in the set. The following basic example uses `when_all` to create a task that represents the completion of three other tasks.  
   
- [!code-cpp[concrt-join-tasks#1](../../parallel/concrt/codesnippet/CPP/task-parallelism-concurrency-runtime_8.cpp)]  
+ [!code-cpp[concrt-join-tasks#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_8.cpp)]  
   
 > [!NOTE]
 >  The tasks that you pass to `when_all` must be uniform. In other words, they must all return the same type.  
@@ -187,7 +187,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
   
  It is common to use a continuation together with `when_all` to perform an action after a set of tasks finishes. The following example modifies the previous one to print the sum of three tasks that each produce an `int` result.  
   
- [!code-cpp[concrt-join-tasks#2](../../parallel/concrt/codesnippet/CPP/task-parallelism-concurrency-runtime_9.cpp)]  
+ [!code-cpp[concrt-join-tasks#2](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_9.cpp)]  
   
  In this example, you can also specify`task<vector<int>>` to produce a task-based continuation.  
   
@@ -195,25 +195,25 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
   
  Here’s a utility function that you can use to ensure that your program observes all exceptions. For each task in the provided range, `observe_all_exceptions` triggers any exception that occurred to be rethrown and then swallows that exception.  
   
- [!code-cpp[concrt-eh-when_all#1](../../parallel/concrt/codesnippet/CPP/task-parallelism-concurrency-runtime_10.cpp)]  
+ [!code-cpp[concrt-eh-when_all#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_10.cpp)]  
   
  Consider a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app that uses C++ and XAML and writes a set of files to disk. The following example shows how to use `when_all` and `observe_all_exceptions` to ensure that the program observes all exceptions.  
   
- [!code-cpp[concrt-eh-when_all#2](../../parallel/concrt/codesnippet/CPP/task-parallelism-concurrency-runtime_11.cpp)]  
+ [!code-cpp[concrt-eh-when_all#2](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_11.cpp)]  
   
 ##### To run this example  
   
 1.  In MainPage.xaml, add a `Button` control.  
   
- [!code-xml[concrt-eh-when_all#3](../../parallel/concrt/codesnippet/Xaml/task-parallelism-concurrency-runtime_12.xaml)]  
+ [!code-xml[concrt-eh-when_all#3](../../parallel/concrt/codesnippet/xaml/task-parallelism-concurrency-runtime_12.xaml)]  
   
 2.  In MainPage.xaml.h, add these forward declarations to the `private` section of the `MainPage` class declaration.  
   
- [!code-cpp[concrt-eh-when_all#4](../../parallel/concrt/codesnippet/CPP/task-parallelism-concurrency-runtime_13.h)]  
+ [!code-cpp[concrt-eh-when_all#4](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_13.h)]  
   
 3.  In MainPage.xaml.cpp, implement the `Button_Click` event handler.  
   
- [!code-cpp[concrt-eh-when_all#5](../../parallel/concrt/codesnippet/CPP/task-parallelism-concurrency-runtime_14.cpp)]  
+ [!code-cpp[concrt-eh-when_all#5](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_14.cpp)]  
   
 4.  In MainPage.xaml.cpp, implement `WriteFilesAsync` as shown in the example.  
   
@@ -235,7 +235,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
   
  As with `when_all`, it is common to use a continuation that has `when_any` to perform action when the first in a set of tasks finish. The following basic example uses `when_any` to create a task that completes when the first of three other tasks completes.  
   
- [!code-cpp[concrt-select-task#1](../../parallel/concrt/codesnippet/CPP/task-parallelism-concurrency-runtime_15.cpp)]  
+ [!code-cpp[concrt-select-task#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_15.cpp)]  
   
  In this example, you can also specify `task<pair<int, size_t>>` to produce a task-based continuation.  
   
@@ -287,7 +287,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
   
  Unstructured task groups and structured task groups work with task handles in different ways. You can pass work functions directly to a `task_group` object; the `task_group` object will create and manage the task handle for you. The `structured_task_group` class requires you to manage a `task_handle` object for each task. Every `task_handle` object must remain valid throughout the lifetime of its associated `structured_task_group` object. Use the [concurrency::make_task](concurrency-namespace-functions.md#make_task_function) function to create a `task_handle` object, as shown in the following basic example:  
   
- [!code-cpp[concrt-make-task-structure#1](../../parallel/concrt/codesnippet/CPP/task-parallelism-concurrency-runtime_16.cpp)]  
+ [!code-cpp[concrt-make-task-structure#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_16.cpp)]  
   
  To manage task handles for cases where you have a variable number of tasks, use a stack-allocation routine such as [_malloca](../../c-runtime-library/reference/malloca.md) or a container class, such as std::[vector](../../standard-library/vector-class.md).  
   
@@ -296,7 +296,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
 ##  <a name="example"></a> Example  
  The following basic example shows how to work with task groups. This example uses the `parallel_invoke` algorithm to perform two tasks concurrently. Each task adds sub-tasks to a `task_group` object. Note that the `task_group` class allows for multiple tasks to add tasks to it concurrently.  
   
- [!code-cpp[concrt-using-task-groups#1](../../parallel/concrt/codesnippet/CPP/task-parallelism-concurrency-runtime_17.cpp)]  
+ [!code-cpp[concrt-using-task-groups#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_17.cpp)]  
   
  The following is sample output for this example:  
   

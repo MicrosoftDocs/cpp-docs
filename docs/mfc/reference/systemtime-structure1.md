@@ -78,12 +78,12 @@ typedef struct _SYSTEMTIME {
  The current millisecond.  
   
 ## Example  
- [!code-cpp[NVC_MFC_Utilities#39](../../mfc/codesnippet/CPP/systemtime-structure1_1.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#39](../../mfc/codesnippet/cpp/systemtime-structure1_1.cpp)]  
   
 ## Requirements  
  **Header:** winbase.h  
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CTime::CTime](../../atl-mfc-shared/reference/ctime-class.md#ctime__CTime)
+ [CTime::CTime](../../atl-mfc-shared/reference/ctime-class.md#ctime__ctime)
 

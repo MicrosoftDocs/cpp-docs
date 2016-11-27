@@ -73,7 +73,7 @@ class CTabbedView : public CView
 ## Example  
  The following example shows how `CTabView` is used in the TabbedView sample.  
   
- [!code-cpp[NVC_MFC_TabbedView#1](../../mfc/reference/codesnippet/CPP/ctabview-class_1.h)]  
+ [!code-cpp[NVC_MFC_TabbedView#1](../../mfc/reference/codesnippet/cpp/ctabview-class_1.h)]  
   
 ## Requirements  
  **Header:** afxTabView.h  

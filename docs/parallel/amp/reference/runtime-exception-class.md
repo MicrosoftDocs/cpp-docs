@@ -50,8 +50,8 @@ class runtime_exception : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[runtime_exception::runtime_exception Constructor](../Topic/runtime_exception::runtime_exception%20Constructor.md)|Initializes a new instance of the `runtime_exception` class.|  
-|[runtime_exception::~runtime_exception Destructor](../Topic/runtime_exception::~runtime_exception%20Destructor.md)|Destroys the `runtime_exception` object.|  
+|[runtime_exception::runtime_exception Constructor](../topic/runtime_exception::runtime_exception%20constructor.md)|Initializes a new instance of the `runtime_exception` class.|  
+|[runtime_exception::~runtime_exception Destructor](../topic/runtime_exception::~runtime_exception%20destructor.md)|Destroys the `runtime_exception` object.|  
   
 ### Public Methods  
   
@@ -63,7 +63,7 @@ class runtime_exception : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[runtime_exception::operator= Operator](../Topic/runtime_exception::operator=%20Operator.md)|Copies the contents of the specified `runtime_exception` object into this one.|  
+|[runtime_exception::operator= Operator](../topic/runtime_exception::operator=%20operator.md)|Copies the contents of the specified `runtime_exception` object into this one.|  
   
 ## Inheritance Hierarchy  
  `exception`  

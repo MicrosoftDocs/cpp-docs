@@ -101,7 +101,7 @@ CAtlFileMappingBase(CAtlFileMappingBase& orig);
  Creates a new file-mapping object, optionally using an existing object. It is still necessary to call [CAtlFileMappingBase::MapFile](#catlfilemappingbase__mapfile) to open or create the file-mapping object for a particular file.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#71](../../atl/codesnippet/CPP/catlfilemappingbase-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#71](../../atl/codesnippet/cpp/catlfilemappingbase-class_1.cpp)]  
   
 ##  <a name="catlfilemappingbase___dtorcatlfilemappingbase"></a>  CAtlFileMappingBase::~CAtlFileMappingBase  
  The destructor.  

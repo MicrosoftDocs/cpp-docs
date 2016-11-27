@@ -95,7 +95,7 @@ class ATL_NO_VTABLE IDispatchImpl :  public T```
   
  The following example shows a typical implementation of `IDispatchImpl`.  
   
- [!code-cpp[NVC_ATL_COM#47](../../atl/codesnippet/CPP/idispatchimpl-class_1.h)]  
+ [!code-cpp[NVC_ATL_COM#47](../../atl/codesnippet/cpp/idispatchimpl-class_1.h)]  
   
  By default, the `IDispatchImpl` class looks up the type information for `T` in the registry. To implement an unregistered interface, you can use the `IDispatchImpl` class without accessing the registry by using a predefined version number. If you create an `IDispatchImpl` object that has 0xFFFF as the value for `wMajor` and 0xFFFF as the value for `wMinor`, the `IDispatchImpl` class retrieves the type library from the .dll file instead of the registry.  
   

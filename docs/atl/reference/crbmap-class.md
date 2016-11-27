@@ -117,7 +117,7 @@ explicit CRBMap(size_t   nBlockSize = 10) throw();
  See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#81](../../atl/codesnippet/CPP/crbmap-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#81](../../atl/codesnippet/cpp/crbmap-class_1.cpp)]  
   
 ##  <a name="crbmap___dtorcrbmap"></a>  CRBMap::~CRBMap  
  The destructor.  
@@ -153,13 +153,13 @@ CPair* Lookup(
  Variable that receives the looked-up value.  
   
 ### Return Value  
- The first form of the method returns true if the key is found, otherwise false. The second and third forms return a pointer to a [CPair](../Topic/CRBTree::CPair%20Class.md).  
+ The first form of the method returns true if the key is found, otherwise false. The second and third forms return a pointer to a [CPair](../topic/crbtree::cpair%20class.md).  
   
 ### Remarks  
  See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#82](../../atl/codesnippet/CPP/crbmap-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#82](../../atl/codesnippet/cpp/crbmap-class_2.cpp)]  
   
 ##  <a name="crbmap__removekey"></a>  CRBMap::RemoveKey  
  Call this method to remove an element from the `CRBMap` object, given the key.  
@@ -179,7 +179,7 @@ bool RemoveKey(KINARGTYPE   key) throw();
  See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#83](../../atl/codesnippet/CPP/crbmap-class_3.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#83](../../atl/codesnippet/cpp/crbmap-class_3.cpp)]  
   
 ##  <a name="crbmap__setat"></a>  CRBMap::SetAt  
  Call this method to insert an element pair into the map.  
@@ -206,7 +206,7 @@ POSITION SetAt(
  See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#84](../../atl/codesnippet/CPP/crbmap-class_4.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#84](../../atl/codesnippet/cpp/crbmap-class_4.cpp)]  
   
 ## See Also  
  [CRBTree Class](../../atl/reference/crbtree-class.md)   

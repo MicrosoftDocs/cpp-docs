@@ -270,7 +270,7 @@ CMFCVisualManager::GetInstance ()->RedrawAll ();
 ## Example  
  The following example demonstrates how to retrieve the default values of a `CMFCVisualManager` object. This code snippet is part of the [Tasks Pane sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_TasksPane#1](../../mfc/reference/codesnippet/CPP/cmfcvisualmanager-class_1.h)]  
+ [!code-cpp[NVC_MFC_TasksPane#1](../../mfc/reference/codesnippet/cpp/cmfcvisualmanager-class_1.h)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -3226,7 +3226,7 @@ virtual void OnDrawSpinButtons(
  Override this method in a derived visual manager to customize the appearance of a spin control.  
   
 ##  <a name="cmfcvisualmanager__ondrawsplitterborder"></a>  CMFCVisualManager::OnDrawSplitterBorder  
- The framework calls this method when it draws the border around an instance of the [CSplitterWndEx Class](../Topic/CSplitterWndEx%20Class.md).  
+ The framework calls this method when it draws the border around an instance of the [CSplitterWndEx Class](../topic/csplitterwndex%20class.md).  
   
 ```  
 virtual void OnDrawSplitterBorder(
@@ -3249,7 +3249,7 @@ virtual void OnDrawSplitterBorder(
  Override this method in a derived visual manager to customize the appearance of the border for a splitter window.  
   
 ##  <a name="cmfcvisualmanager__ondrawsplitterbox"></a>  CMFCVisualManager::OnDrawSplitterBox  
- The framework calls this method when it draws the drag box for an instance of the [CSplitterWndEx Class](../Topic/CSplitterWndEx%20Class.md). The drag box appears when the user selects the splitter bar and changes the dimensions of the child windows.  
+ The framework calls this method when it draws the drag box for an instance of the [CSplitterWndEx Class](../topic/csplitterwndex%20class.md). The drag box appears when the user selects the splitter bar and changes the dimensions of the child windows.  
   
 ```  
 virtual void OnDrawSplitterBox(
@@ -3838,7 +3838,7 @@ virtual void OnFillBarBackground(
 ### Example  
  The following example demonstrates how to use the `OnFillBarBackground` in the `CMFCVisualManager` class. This code snippet is part of the [Outlook Demo sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_OutlookDemo#4](../../mfc/reference/codesnippet/CPP/cmfcvisualmanager-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_OutlookDemo#4](../../mfc/reference/codesnippet/cpp/cmfcvisualmanager-class_2.cpp)]  
   
 ##  <a name="cmfcvisualmanager__onfillbuttoninterior"></a>  CMFCVisualManager::OnFillButtonInterior  
  The framework calls this method when it fills the background of a toolbar button.  
@@ -4198,7 +4198,7 @@ virtual void OnFillSplitterBackground(
  A pointer to a device context.  
   
  [in] `pSplitterWnd`  
- A pointer to an instance of the [CSplitterWndEx Class](../Topic/CSplitterWndEx%20Class.md). The framework fills the background for this splitter window.  
+ A pointer to an instance of the [CSplitterWndEx Class](../topic/csplitterwndex%20class.md). The framework fills the background for this splitter window.  
   
  [in] `rect`  
  A rectangle that specifies the boundaries of the splitter window.  

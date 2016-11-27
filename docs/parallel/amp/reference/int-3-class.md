@@ -121,7 +121,7 @@ class int_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[int_3::int_3 Constructor](../Topic/int_3::int_3%20Constructor.md)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[int_3::int_3 Constructor](../topic/int_3::int_3%20constructor.md)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -188,7 +188,7 @@ class int_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[int_3::size Constant](../Topic/int_3::size%20Constant.md)||  
+|[int_3::size Constant](../topic/int_3::size%20constant.md)||  
   
 ### Public Data Members  
   

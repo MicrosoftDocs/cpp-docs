@@ -71,7 +71,7 @@ class CMFCTabDropTarget : public COleDropTarget
 ## Example  
  The following example demonstrates how to construct a `CMFCTabDropTarget` object and use its `Register` method.  
   
- [!code-cpp[NVC_MFC_RibbonApp#39](../../mfc/reference/codesnippet/CPP/cmfctabdroptarget-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#39](../../mfc/reference/codesnippet/cpp/cmfctabdroptarget-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

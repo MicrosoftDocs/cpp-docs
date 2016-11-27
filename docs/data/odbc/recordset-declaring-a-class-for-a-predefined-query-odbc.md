@@ -73,7 +73,7 @@ This topic applies to the MFC ODBC classes.
   
 4.  Manually add initializations for the new field data members in the recordset class constructor.  
   
-     You must also increment the initialization value for the [m_nFields](../Topic/CRecordset::m_nFields.md) data member. The wizard writes the initialization, but it only covers the field data members it adds for you. For example:  
+     You must also increment the initialization value for the [m_nFields](../topic/crecordset::m_nfields.md) data member. The wizard writes the initialization, but it only covers the field data members it adds for you. For example:  
   
     ```  
     m_nFields += 6;  
@@ -134,7 +134,7 @@ CDelinquents::CDelinquents(CDatabase* pdb)
 }  
 ```  
   
- Note the initializations for [m_nFields](../Topic/CRecordset::m_nFields.md) and [m_nParams](../Topic/CRecordset::m_nParams.md). The wizard initializes `m_nFields`; you initialize `m_nParams`.  
+ Note the initializations for [m_nFields](../topic/crecordset::m_nfields.md) and [m_nParams](../topic/crecordset::m_nparams.md). The wizard initializes `m_nFields`; you initialize `m_nParams`.  
   
  The next example shows the RFX functions in `CDelinquents::DoFieldExchange`:  
   
@@ -168,7 +168,7 @@ if( rsDel.Open( CRecordset::snapshot, strSQL ) )
  This code constructs a snapshot, passes it a parameter obtained earlier from the user, and calls the predefined query. When the query runs, it returns records for the specified sales district. Each record contains columns for the account number, customer's last name, and customer's phone number.  
   
 > [!TIP]
->  You might want to handle a return value (output parameter) from a stored procedure. For more information and an example, see [CFieldExchange::SetFieldType](../../mfc/reference/CFieldExchange-class.md#CFieldExchange__SetFieldType).  
+>  You might want to handle a return value (output parameter) from a stored procedure. For more information and an example, see [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#cfieldexchange__setfieldtype).  
   
 ## See Also  
  [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)   

@@ -93,7 +93,7 @@ This topic applies to the MFC ODBC classes.
  If multiple users are connected to a data source, they can change data while you are manipulating it in your recordsets. Similarly, your changes might affect other users' recordsets. For more information, see [Recordset: How Recordsets Update Records (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) and [Transaction (ODBC)](../../data/odbc/transaction-odbc.md).  
   
 ##  <a name="_core_generalizing_the_connection_string"></a> Generalizing the Connection String  
- The wizards use a default connection string to establish a connection to a data source. You use this connection to view tables and columns while you are developing your application. However, this default connection string might not be appropriate for your users' connections to the data source through your application. For example, their data source and the path to its location might be different from the one used in developing your application. In that case, you should reimplement the [CRecordset::GetDefaultConnect](../../mfc/reference/CRecordset-class.md#CRecordset__GetDefaultConnect) member function in a more generic fashion and discard the wizard implementation. For example, use one of the following approaches:  
+ The wizards use a default connection string to establish a connection to a data source. You use this connection to view tables and columns while you are developing your application. However, this default connection string might not be appropriate for your users' connections to the data source through your application. For example, their data source and the path to its location might be different from the one used in developing your application. In that case, you should reimplement the [CRecordset::GetDefaultConnect](../../mfc/reference/crecordset-class.md#crecordset__getdefaultconnect) member function in a more generic fashion and discard the wizard implementation. For example, use one of the following approaches:  
   
 -   Register and manage the connection strings using ODBC Administrator.  
   
@@ -137,7 +137,7 @@ This topic applies to the MFC ODBC classes.
   
 #### To disconnect from a data source  
   
-1.  Call the `CDatabase` object's [Close](../../mfc/reference/CDatabase-class.md#CDatabase__Close) member function.  
+1.  Call the `CDatabase` object's [Close](../../mfc/reference/cdatabase-class.md#cdatabase__close) member function.  
   
 2.  Destroy the object unless you want to reuse it.  
   

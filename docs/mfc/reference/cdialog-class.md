@@ -207,7 +207,7 @@ virtual BOOL Create(
  Use the `CWnd::DestroyWindow` function to destroy a dialog box created by the **Create** function.  
   
 ### Example  
- [!code-cpp[NVC_MFCControlLadenDialog#62](../../mfc/codesnippet/CPP/cdialog-class_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#62](../../mfc/codesnippet/cpp/cdialog-class_1.cpp)]  
   
 ##  <a name="cdialog__createindirect"></a>  CDialog::CreateIndirect  
  Call this member function to create a modeless dialog box from a dialog-box template in memory.  
@@ -268,7 +268,7 @@ virtual INT_PTR DoModal();
 > `PreTranslateMessage` is now called for modal dialog box message processing.  
   
 ### Example  
- [!code-cpp[NVC_MFCControlLadenDialog#63](../../mfc/codesnippet/CPP/cdialog-class_2.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#63](../../mfc/codesnippet/cpp/cdialog-class_2.cpp)]  
   
 ##  <a name="cdialog__enddialog"></a>  CDialog::EndDialog  
  Call this member function to terminate a modal dialog box.  
@@ -289,9 +289,9 @@ void EndDialog(int nResult);
  `EndDialog` does not close the dialog box immediately. Instead, it sets a flag that directs the dialog box to close as soon as the current message handler returns.  
   
 ### Example  
- [!code-cpp[NVC_MFCControlLadenDialog#64](../../mfc/codesnippet/CPP/cdialog-class_3.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#64](../../mfc/codesnippet/cpp/cdialog-class_3.cpp)]  
   
- [!code-cpp[NVC_MFCControlLadenDialog#65](../../mfc/codesnippet/CPP/cdialog-class_4.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#65](../../mfc/codesnippet/cpp/cdialog-class_4.cpp)]  
   
 ##  <a name="cdialog__getdefid"></a>  CDialog::GetDefID  
  Call the `GetDefID` member function to get the ID of the default pushbutton control for a dialog box.  
@@ -409,7 +409,7 @@ virtual void OnCancel();
 >  You cannot override this method when you use a `CFileDialog` object in a program that is compiled under Windows XP. For more information about `CFileDialog`, see [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCControlLadenDialog#66](../../mfc/codesnippet/CPP/cdialog-class_5.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#66](../../mfc/codesnippet/cpp/cdialog-class_5.cpp)]  
   
 ##  <a name="cdialog__oninitdialog"></a>  CDialog::OnInitDialog  
  This method is called in response to the `WM_INITDIALOG` message.  
@@ -432,7 +432,7 @@ virtual BOOL OnInitDialog();
 >  You cannot override this method when you use a `CFileDialog` object in a program that is compiled under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]. For more information about changes to `CFileDialog` under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)] see [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCControlLadenDialog#67](../../mfc/codesnippet/CPP/cdialog-class_6.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#67](../../mfc/codesnippet/cpp/cdialog-class_6.cpp)]  
   
 ##  <a name="cdialog__onok"></a>  CDialog::OnOK  
  Called when the user clicks the **OK** button (the button with an ID of IDOK).  
@@ -450,7 +450,7 @@ virtual void OnOK();
 >  You cannot override this method when you use a `CFileDialog` object in a program that is compiled under Windows XP. For more information about `CFileDialog`, see [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCControlLadenDialog#68](../../mfc/codesnippet/CPP/cdialog-class_7.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#68](../../mfc/codesnippet/cpp/cdialog-class_7.cpp)]  
   
 ##  <a name="cdialog__onsetfont"></a>  CDialog::OnSetFont  
  Specifies the font a dialog-box control will use when drawing text.  

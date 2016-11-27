@@ -78,6 +78,6 @@ The OLE DB Consumer Templates support the OLE DB version 2.6 specification. (The
   
 ## See Also  
  [OLE DB Programming](../../data/oledb/ole-db-programming.md)   
- [Data Access](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b)   
+ [Data Access](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)   
  [OLE DB SDK Documentation](https://msdn.microsoft.com/en-us/library/ms722784.aspx)   
  [OLE DB Programmer's Reference](https://msdn.microsoft.com/en-us/library/ms713643.aspx)

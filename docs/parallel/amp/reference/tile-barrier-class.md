@@ -49,7 +49,7 @@ class tile_barrier;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tile_barrier::tile_barrier Constructor](../Topic/tile_barrier::tile_barrier%20Constructor.md)|Initializes a new instance of the `tile_barrier` class.|  
+|[tile_barrier::tile_barrier Constructor](../topic/tile_barrier::tile_barrier%20constructor.md)|Initializes a new instance of the `tile_barrier` class.|  
   
 ### Public Methods  
   

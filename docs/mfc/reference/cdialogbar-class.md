@@ -149,7 +149,7 @@ virtual BOOL Create(
  If you specify the `CBRS_TOP` or `CBRS_BOTTOM` alignment style, the dialog bar's width is that of the frame window and its height is that of the resource specified by `nIDTemplate`. If you specify the `CBRS_LEFT` or `CBRS_RIGHT` alignment style, the dialog bar's height is that of the frame window and its width is that of the resource specified by `nIDTemplate`.  
   
 ### Example  
- [!code-cpp[NVC_MFCMessageMaps#13](../../mfc/reference/codesnippet/CPP/cdialogbar-class_1.cpp)]  
+ [!code-cpp[NVC_MFCMessageMaps#13](../../mfc/reference/codesnippet/cpp/cdialogbar-class_1.cpp)]  
   
 ## See Also  
  [MFC Sample CTRLBARS](../../visual-cpp-samples.md)   

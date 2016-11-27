@@ -64,7 +64,7 @@ type
 -   **DBPARAMIO_INPUT &#124; DBPARAMIO_OUTPUT** The parameter is both an input and an output parameter.  
   
 ## Example  
- <!--FIXME[!CODE [NVC_OLEDB_Consumer#18](../CodeSnippet/VS_Snippets_Cpp/NVC_OLEDB_Consumer#18)]-->  
+ <!--FIXME[!CODE [NVC_OLEDB_Consumer#18](../codesnippet/vs_snippets_cpp/nvc_oledb_consumer#18)]-->  
   
 ## Requirements  
  **Header:** atldbcli.h  

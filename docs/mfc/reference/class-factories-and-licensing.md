@@ -67,10 +67,10 @@ DECLARE_OLECREATE_EX(class_name)
   
  Note that this macro serves the same purpose as the following code sample:  
   
- [!code-cpp[NVC_MFCAxCtl#14](../../mfc/reference/codesnippet/CPP/class-factories-and-licensing_1.h)]  
+ [!code-cpp[NVC_MFCAxCtl#14](../../mfc/reference/codesnippet/cpp/class-factories-and-licensing_1.h)]  
   
 ##  <a name="implement_olecreate_ex"></a>  IMPLEMENT_OLECREATE_EX  
- Implements your control's class factory and the [GetClassID](../../mfc/reference/colecontrol-class.md#colecontrol__GetClassID) member function of your control class.  
+ Implements your control's class factory and the [GetClassID](../../mfc/reference/colecontrol-class.md#colecontrol__getclassid) member function of your control class.  
   
 ```   
 IMPLEMENT_OLECREATE_EX(
@@ -157,7 +157,7 @@ BOOL AFXAPI AfxVerifyLicFile(
 ### Remarks  
  If `cch` is â€“ 1, this function uses:  
   
- [!code-cpp[NVC_MFC_Utilities#36](../../mfc/codesnippet/CPP/class-factories-and-licensing_2.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#36](../../mfc/codesnippet/cpp/class-factories-and-licensing_2.cpp)]  
   
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

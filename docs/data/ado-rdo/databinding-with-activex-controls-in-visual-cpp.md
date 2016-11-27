@@ -46,7 +46,7 @@ Databinding is implemented through two types of ActiveX controls: data controls 
 >  ADO and RDO data controls are an older technology that was released in a earlier version of Visual Studio, and might not be available in the current version. To use the information in this section, you might have to obtain a earlier release to acquire the appropriate control.  
   
  **Data-bound controls**  
- A data-bound control is responsible for presenting the data. Data-bound controls connect to data controls to receive data and present the data through a variety of user interfaces. A Visual C++ application can also bind variables to data values set in the data-bound controls; see [CWnd::BindProperty](../Topic/CWnd::BindProperty.md).  
+ A data-bound control is responsible for presenting the data. Data-bound controls connect to data controls to receive data and present the data through a variety of user interfaces. A Visual C++ application can also bind variables to data values set in the data-bound controls; see [CWnd::BindProperty](../topic/cwnd::bindproperty.md).  
   
  For more information about databinding, see:  
   

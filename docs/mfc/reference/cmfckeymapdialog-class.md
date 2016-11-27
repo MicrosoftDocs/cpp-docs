@@ -112,7 +112,7 @@ CMFCKeyMapDialog(
 ### Example  
  The following example demonstrates how to construct an object of the `CMFCKeyMapDialog` class. This example is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#21](../../mfc/codesnippet/CPP/cmfckeymapdialog-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#21](../../mfc/codesnippet/cpp/cmfckeymapdialog-class_1.cpp)]  
   
 ##  <a name="cmfckeymapdialog__domodal"></a>  CMFCKeyMapDialog::DoModal  
  Displays a keyboard mapping dialog box.  

@@ -116,7 +116,7 @@ class CMFCToolBarMenuButton : public CMFCToolBarButton
 ## Example  
  The following example demonstrates how to configure a `CMFCToolBarMenuButton` object. The code illustrates how to specify that the drop-down menu is in palette mode, and specify the ID for the tear-off bar that is created when the user drags the menu button off of a menu bar. This code snippet is part of the [Word Pad sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_WordPad#10](../../mfc/reference/codesnippet/CPP/cmfctoolbarmenubutton-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_WordPad#10](../../mfc/reference/codesnippet/cpp/cmfctoolbarmenubutton-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject]--brokenlink--(../Topic/CObject%20Class.md)  
@@ -170,7 +170,7 @@ CMFCToolBarMenuButton(
 ### Example  
  The following example demonstrates how to construct an object of the `CMFCToolBarMenuButton` class. This code snippet is part of the [Word Pad sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_WordPad#9](../../mfc/reference/codesnippet/CPP/cmfctoolbarmenubutton-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_WordPad#9](../../mfc/reference/codesnippet/cpp/cmfctoolbarmenubutton-class_2.cpp)]  
   
 ##  <a name="cmfctoolbarmenubutton__comparewith"></a>  CMFCToolBarMenuButton::CompareWith  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  

@@ -55,7 +55,7 @@ This document describes how to use the [parallel_invoke](../../parallel/concrt/p
 ##  <a name="serial"></a> Performing Bitonic Sort Serially  
  The following example shows the serial version of the bitonic sort algorithm. The `bitonic_sort` function divides the sequence into two partitions, sorts those partitions in opposite directions, and then merges the results. This function calls itself two times recursively to sort each partition.  
   
- [!code-cpp[concrt-parallel-bitonic-sort#1](../../parallel/concrt/codesnippet/CPP/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_1.cpp)]  
+ [!code-cpp[concrt-parallel-bitonic-sort#1](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_1.cpp)]  
   
  [[Top](#top)]  
   
@@ -68,31 +68,31 @@ This document describes how to use the [parallel_invoke](../../parallel/concrt/p
   
 1.  Add a `#include` directive for the header file ppl.h.  
   
- [!code-cpp[concrt-parallel-bitonic-sort#10](../../parallel/concrt/codesnippet/CPP/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_2.cpp)]  
+ [!code-cpp[concrt-parallel-bitonic-sort#10](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_2.cpp)]  
   
 2.  Add a `using` directive for the `concurrency` namespace.  
   
- [!code-cpp[concrt-parallel-bitonic-sort#11](../../parallel/concrt/codesnippet/CPP/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_3.cpp)]  
+ [!code-cpp[concrt-parallel-bitonic-sort#11](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_3.cpp)]  
   
 3.  Create a new function, called `parallel_bitonic_mege`, which uses the `parallel_invoke` algorithm to merge the sequences in parallel if there is sufficient amount of work to do. Otherwise, call `bitonic_merge` to merge the sequences serially.  
   
- [!code-cpp[concrt-parallel-bitonic-sort#2](../../parallel/concrt/codesnippet/CPP/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_4.cpp)]  
+ [!code-cpp[concrt-parallel-bitonic-sort#2](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_4.cpp)]  
   
 4.  Perform a process that resembles the one in the previous step, but for the `bitonic_sort` function.  
   
- [!code-cpp[concrt-parallel-bitonic-sort#3](../../parallel/concrt/codesnippet/CPP/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_5.cpp)]  
+ [!code-cpp[concrt-parallel-bitonic-sort#3](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_5.cpp)]  
   
 5.  Create an overloaded version of the `parallel_bitonic_sort` function that sorts the array in increasing order.  
   
- [!code-cpp[concrt-parallel-bitonic-sort#4](../../parallel/concrt/codesnippet/CPP/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_6.cpp)]  
+ [!code-cpp[concrt-parallel-bitonic-sort#4](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_6.cpp)]  
   
  The `parallel_invoke` algorithm reduces overhead by performing the last of the series of tasks on the calling context. For example, in the `parallel_bitonic_sort` function, the first task runs on a separate context, and the second task runs on the calling context.  
   
- [!code-cpp[concrt-parallel-bitonic-sort#5](../../parallel/concrt/codesnippet/CPP/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_7.cpp)]  
+ [!code-cpp[concrt-parallel-bitonic-sort#5](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_7.cpp)]  
   
  The following complete example performs both the serial and the parallel versions of the bitonic sort algorithm. The example also prints to the console the time that is required to perform each computation.  
   
- [!code-cpp[concrt-parallel-bitonic-sort#8](../../parallel/concrt/codesnippet/CPP/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_8.cpp)]  
+ [!code-cpp[concrt-parallel-bitonic-sort#8](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_8.cpp)]  
   
  The following sample output is for a computer that has four processors.  
   
@@ -113,7 +113,7 @@ parallel time: 1248
   
  The parallel versions of some algorithms perform better only when there is sufficient work to do. For example, the `parallel_bitonic_merge` function calls the serial version, `bitonic_merge`, if there are 500 or fewer elements in the sequence. You can also plan your overall sorting strategy based on the amount of work. For example, it might be more efficient to use the serial version of the quick sort algorithm if the array contains fewer than 500 items, as shown in the following example:  
   
- [!code-cpp[concrt-parallel-bitonic-sort#9](../../parallel/concrt/codesnippet/CPP/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_9.cpp)]  
+ [!code-cpp[concrt-parallel-bitonic-sort#9](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_9.cpp)]  
   
  As with any parallel algorithm, we recommend that you profile and tune your code as appropriate.  
   

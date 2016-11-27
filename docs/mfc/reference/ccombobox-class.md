@@ -164,7 +164,7 @@ class CComboBox : public CWnd
   
  If you embed a `CComboBox` object within another window object, you do not need to destroy it. If you create the `CComboBox` object on the stack, it is destroyed automatically. If you create the `CComboBox` object on the heap by using the **new** function, you must call **delete** on the object to destroy it when the Windows combo box is destroyed.  
   
- **Note** If you want to handle `WM_KEYDOWN` and `WM_CHAR` messages, you have to subclass the combo box's edit and list box controls, derive classes from `CEdit` and `CListBox`, and add handlers for those messages to the derived classes. For more information, see [http://support.microsoft.com/default.aspxscid=kb;en-us;Q174667](http://support.microsoft.com/default.aspxscid=kb;en-us;Q174667) and [CWnd::SubclassWindow](../../mfc/reference/cwnd-class.md#cwnd__subclasswindow).  
+ **Note** If you want to handle `WM_KEYDOWN` and `WM_CHAR` messages, you have to subclass the combo box's edit and list box controls, derive classes from `CEdit` and `CListBox`, and add handlers for those messages to the derived classes. For more information, see [http://support.microsoft.com/default.aspxscid=kb;en-us;Q174667](http://support.microsoft.com/default.aspxscid=kb;en-us;q174667) and [CWnd::SubclassWindow](../../mfc/reference/cwnd-class.md#cwnd__subclasswindow).  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -201,7 +201,7 @@ int AddString(LPCTSTR lpszString);
  To insert a string into a specific location within the list, use the [InsertString](#ccombobox__insertstring) member function.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#3](../../mfc/reference/codesnippet/CPP/ccombobox-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#3](../../mfc/reference/codesnippet/cpp/ccombobox-class_1.cpp)]  
   
 ##  <a name="ccombobox__ccombobox"></a>  CComboBox::CComboBox  
  Constructs a `CComboBox` object.  
@@ -211,7 +211,7 @@ CComboBox();
 ```  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#1](../../mfc/reference/codesnippet/CPP/ccombobox-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#1](../../mfc/reference/codesnippet/cpp/ccombobox-class_2.cpp)]  
   
 ##  <a name="ccombobox__clear"></a>  CComboBox::Clear  
  Deletes (clears) the current selection, if any, in the edit control of the combo box.  
@@ -224,7 +224,7 @@ void Clear();
  To delete the current selection and place the deleted contents onto the Clipboard, use the [Cut](#ccombobox__cut) member function.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#4](../../mfc/reference/codesnippet/CPP/ccombobox-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#4](../../mfc/reference/codesnippet/cpp/ccombobox-class_3.cpp)]  
   
 ##  <a name="ccombobox__compareitem"></a>  CComboBox::CompareItem  
  Called by the framework to determine the relative position of a new item in the list-box portion of a sorted owner-draw combo box.  
@@ -252,7 +252,7 @@ virtual int CompareItem(LPCOMPAREITEMSTRUCT lpCompareItemStruct);
  By default, this member function does nothing. If you create an owner-draw combo box with the **LBS_SORT** style, you must override this member function to assist the framework in sorting new items added to the list box.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#5](../../mfc/reference/codesnippet/CPP/ccombobox-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#5](../../mfc/reference/codesnippet/cpp/ccombobox-class_4.cpp)]  
   
 ##  <a name="ccombobox__copy"></a>  CComboBox::Copy  
  Copies the current selection, if any, in the edit control of the combo box onto the Clipboard in **CF_TEXT** format.  
@@ -262,7 +262,7 @@ void Copy();
 ```  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#6](../../mfc/reference/codesnippet/CPP/ccombobox-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#6](../../mfc/reference/codesnippet/cpp/ccombobox-class_5.cpp)]  
   
 ##  <a name="ccombobox__create"></a>  CComboBox::Create  
  Creates the combo box and attaches it to the `CComboBox` object.  
@@ -315,7 +315,7 @@ virtual BOOL Create(
 - **WS_TABSTOP** To include the combo box in the tabbing order  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#2](../../mfc/reference/codesnippet/CPP/ccombobox-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#2](../../mfc/reference/codesnippet/cpp/ccombobox-class_6.cpp)]  
   
 ##  <a name="ccombobox__cut"></a>  CComboBox::Cut  
  Deletes (cuts) the current selection, if any, in the combo-box edit control and copies the deleted text onto the Clipboard in **CF_TEXT** format.  
@@ -328,7 +328,7 @@ void Cut();
  To delete the current selection without placing the deleted text onto the Clipboard, call the [Clear](#ccombobox__clear) member function.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#7](../../mfc/reference/codesnippet/CPP/ccombobox-class_7.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#7](../../mfc/reference/codesnippet/cpp/ccombobox-class_7.cpp)]  
   
 ##  <a name="ccombobox__deleteitem"></a>  CComboBox::DeleteItem  
  Called by the framework when the user deletes an item from an owner-draw `CComboBox` object or destroys the combo box.  
@@ -345,7 +345,7 @@ virtual void DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct);
  The default implementation of this function does nothing. Override this function to redraw the combo box as needed.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#8](../../mfc/reference/codesnippet/CPP/ccombobox-class_8.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#8](../../mfc/reference/codesnippet/cpp/ccombobox-class_8.cpp)]  
   
 ##  <a name="ccombobox__deletestring"></a>  CComboBox::DeleteString  
  Deletes the item in position `nIndex` from the combo box.  
@@ -365,7 +365,7 @@ int DeleteString(UINT nIndex);
  All items following `nIndex` now move down one position. For example, if a combo box contains two items, deleting the first item will cause the remaining item to now be in the first position. `nIndex`=0 for the item in the first position.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#9](../../mfc/reference/codesnippet/CPP/ccombobox-class_9.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#9](../../mfc/reference/codesnippet/cpp/ccombobox-class_9.cpp)]  
   
 ##  <a name="ccombobox__dir"></a>  CComboBox::Dir  
  Adds a list of filenames or drives to the list box of a combo box.  
@@ -406,7 +406,7 @@ int Dir(
  This function is not supported by the Windows **ComboBoxEx** control. For more information on this control, see [ComboBoxEx Controls](http://msdn.microsoft.com/library/windows/desktop/bb775738) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#10](../../mfc/reference/codesnippet/CPP/ccombobox-class_10.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#10](../../mfc/reference/codesnippet/cpp/ccombobox-class_10.cpp)]  
   
 ##  <a name="ccombobox__drawitem"></a>  CComboBox::DrawItem  
  Called by the framework when a visual aspect of an owner-draw combo box changes.  
@@ -425,7 +425,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
  By default, this member function does nothing. Override this member function to implement drawing for an owner-draw `CComboBox` object. Before this member function terminates, the application should restore all graphics device interface (GDI) objects selected for the display context supplied in `lpDrawItemStruct`.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#11](../../mfc/reference/codesnippet/CPP/ccombobox-class_11.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#11](../../mfc/reference/codesnippet/cpp/ccombobox-class_11.cpp)]  
   
 ##  <a name="ccombobox__findstring"></a>  CComboBox::FindString  
  Finds, but doesn't select, the first string that contains the specified prefix in the list box of a combo box.  
@@ -452,7 +452,7 @@ int FindString(
  This function is not supported by the Windows **ComboBoxEx** control. For more information on this control, see [ComboBoxEx Controls](http://msdn.microsoft.com/library/windows/desktop/bb775738) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#12](../../mfc/reference/codesnippet/CPP/ccombobox-class_12.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#12](../../mfc/reference/codesnippet/cpp/ccombobox-class_12.cpp)]  
   
 ##  <a name="ccombobox__findstringexact"></a>  CComboBox::FindStringExact  
  Call the `FindStringExact` member function to find the first list-box string (in a combo box) that matches the string specified in `lpszFind`.  
@@ -479,7 +479,7 @@ int FindStringExact(
  If the combo box was created with an owner-draw style but without the [CBS_HASSTRINGS](../../mfc/reference/combo-box-styles.md) style, `FindStringExact` attempts to match the doubleword value against the value of `lpszFind`.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#13](../../mfc/reference/codesnippet/CPP/ccombobox-class_13.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#13](../../mfc/reference/codesnippet/cpp/ccombobox-class_13.cpp)]  
   
 ##  <a name="ccombobox__getcomboboxinfo"></a>  CComboBox::GetComboBoxInfo  
  Retrieves information for the `CComboBox` object.  
@@ -513,7 +513,7 @@ int GetCount() const;
  The number of items. The returned count is one greater than the index value of the last item (the index is zero-based). It is **CB_ERR** if an error occurs.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#14](../../mfc/reference/codesnippet/CPP/ccombobox-class_14.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#14](../../mfc/reference/codesnippet/cpp/ccombobox-class_14.cpp)]  
   
 ##  <a name="ccombobox__getcuebanner"></a>  CComboBox::GetCueBanner  
  Gets the cue text that is displayed for a combo box control.  
@@ -564,7 +564,7 @@ int GetCurSel() const;
  `GetCurSel` returns an index into the list.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#15](../../mfc/reference/codesnippet/CPP/ccombobox-class_15.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#15](../../mfc/reference/codesnippet/cpp/ccombobox-class_15.cpp)]  
   
 ##  <a name="ccombobox__getdroppedcontrolrect"></a>  CComboBox::GetDroppedControlRect  
  Call the `GetDroppedControlRect` member function to retrieve the screen coordinates of the visible (dropped-down) list box of a drop-down combo box.  
@@ -580,7 +580,7 @@ void GetDroppedControlRect(LPRECT lprect) const;
  Points to the [RECT structure](../../mfc/reference/rect-structure1.md) that is to receive the coordinates.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#16](../../mfc/reference/codesnippet/CPP/ccombobox-class_16.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#16](../../mfc/reference/codesnippet/cpp/ccombobox-class_16.cpp)]  
   
 ##  <a name="ccombobox__getdroppedstate"></a>  CComboBox::GetDroppedState  
  Call the `GetDroppedState` member function to determine whether the list box of a drop-down combo box is visible (dropped down).  
@@ -595,7 +595,7 @@ BOOL GetDroppedState() const;
  Nonzero if the list box is visible; otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#17](../../mfc/reference/codesnippet/CPP/ccombobox-class_17.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#17](../../mfc/reference/codesnippet/cpp/ccombobox-class_17.cpp)]  
   
 ##  <a name="ccombobox__getdroppedwidth"></a>  CComboBox::GetDroppedWidth  
  Call this function to retrieve the minimum allowable width, in pixels, of the list box of a combo box.  
@@ -630,7 +630,7 @@ DWORD GetEditSel() const;
  A 32-bit value that contains the starting position in the low-order word and the position of the first nonselected character after the end of the selection in the high-order word. If this function is used on a combo box without an edit control, **CB_ERR** is returned.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#18](../../mfc/reference/codesnippet/CPP/ccombobox-class_18.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#18](../../mfc/reference/codesnippet/cpp/ccombobox-class_18.cpp)]  
   
 ##  <a name="ccombobox__getextendedui"></a>  CComboBox::GetExtendedUI  
  Call the `GetExtendedUI` member function to determine whether a combo box has the default user interface or the extended user interface.  
@@ -654,7 +654,7 @@ BOOL GetExtendedUI() const;
  Scrolling in the static control is disabled when the item list is not visible (arrow keys are disabled).  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#19](../../mfc/reference/codesnippet/CPP/ccombobox-class_19.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#19](../../mfc/reference/codesnippet/cpp/ccombobox-class_19.cpp)]  
   
 ##  <a name="ccombobox__gethorizontalextent"></a>  CComboBox::GetHorizontalExtent  
  Retrieves from the combo box the width in pixels by which the list-box portion of the combo box can be scrolled horizontally.  
@@ -672,7 +672,7 @@ UINT GetHorizontalExtent() const;
  This is applicable only if the list-box portion of the combo box has a horizontal scroll bar.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#20](../../mfc/reference/codesnippet/CPP/ccombobox-class_20.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#20](../../mfc/reference/codesnippet/cpp/ccombobox-class_20.cpp)]  
   
 ##  <a name="ccombobox__getitemdata"></a>  CComboBox::GetItemData  
  Retrieves the application-supplied 32-bit value associated with the specified combo-box item.  
@@ -694,7 +694,7 @@ DWORD_PTR GetItemData(int nIndex) const;
  The 32-bit value can be set with the `dwItemData` parameter of a [SetItemData](#ccombobox__setitemdata) member function call. Use the `GetItemDataPtr` member function if the 32-bit value to be retrieved is a pointer ( **void\***).  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#21](../../mfc/reference/codesnippet/CPP/ccombobox-class_21.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#21](../../mfc/reference/codesnippet/cpp/ccombobox-class_21.cpp)]  
   
 ##  <a name="ccombobox__getitemdataptr"></a>  CComboBox::GetItemDataPtr  
  Retrieves the application-supplied 32-bit value associated with the specified combo-box item as a pointer ( **void\***).  
@@ -713,7 +713,7 @@ void* GetItemDataPtr(int nIndex) const;
  Retrieves a pointer, or –1 if an error occurs.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#22](../../mfc/reference/codesnippet/CPP/ccombobox-class_22.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#22](../../mfc/reference/codesnippet/cpp/ccombobox-class_22.cpp)]  
   
 ##  <a name="ccombobox__getitemheight"></a>  CComboBox::GetItemHeight  
  Call the `GetItemHeight` member function to retrieve the height of list items in a combo box.  
@@ -732,7 +732,7 @@ int GetItemHeight(int nIndex) const;
  The height, in pixels, of the specified item in a combo box. The return value is **CB_ERR** if an error occurs.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#23](../../mfc/reference/codesnippet/CPP/ccombobox-class_23.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#23](../../mfc/reference/codesnippet/cpp/ccombobox-class_23.cpp)]  
   
 ##  <a name="ccombobox__getlbtext"></a>  CComboBox::GetLBText  
  Gets a string from the list box of a combo box.  
@@ -768,7 +768,7 @@ void GetLBText(
  The second form of this member function fills a `CString` object with the item's text.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#24](../../mfc/reference/codesnippet/CPP/ccombobox-class_24.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#24](../../mfc/reference/codesnippet/cpp/ccombobox-class_24.cpp)]  
   
 ##  <a name="ccombobox__getlbtextlen"></a>  CComboBox::GetLBTextLen  
  Gets the length of a string in the list box of a combo box.  
@@ -838,7 +838,7 @@ int GetTopIndex() const;
  Initially, item 0 is at the top of the list box, but if the list box is scrolled, another item may be at the top.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#25](../../mfc/reference/codesnippet/CPP/ccombobox-class_25.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#25](../../mfc/reference/codesnippet/cpp/ccombobox-class_25.cpp)]  
   
 ##  <a name="ccombobox__initstorage"></a>  CComboBox::InitStorage  
  Allocates memory for storing list box items in the list-box portion of the combo box.  
@@ -867,7 +867,7 @@ int InitStorage(
  This function helps speed up the initialization of list boxes that have a large number of items (more than 100). It preallocates the specified amount of memory so that subsequent [AddString](#ccombobox__addstring), [InsertString](#ccombobox__insertstring), and [Dir](#ccombobox__dir) functions take the shortest possible time. You can use estimates for the parameters. If you overestimate, some extra memory is allocated; if you underestimate, the normal allocation is used for items that exceed the preallocated amount.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#26](../../mfc/reference/codesnippet/CPP/ccombobox-class_26.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#26](../../mfc/reference/codesnippet/cpp/ccombobox-class_26.cpp)]  
   
 ##  <a name="ccombobox__insertstring"></a>  CComboBox::InsertString  
  Inserts a string into the list box of a combo box.  
@@ -895,7 +895,7 @@ int InsertString(
 >  This function is not supported by the Windows **ComboBoxEx** control. For more information on this control, see [ComboBoxEx Controls](http://msdn.microsoft.com/library/windows/desktop/bb775738) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#27](../../mfc/reference/codesnippet/CPP/ccombobox-class_27.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#27](../../mfc/reference/codesnippet/cpp/ccombobox-class_27.cpp)]  
   
 ##  <a name="ccombobox__limittext"></a>  CComboBox::LimitText  
  Limits the length in bytes of the text that the user can enter into the edit control of a combo box.  
@@ -917,7 +917,7 @@ BOOL LimitText(int nMaxChars);
  `LimitText` only limits the text the user can enter. It has no effect on any text already in the edit control when the message is sent, nor does it affect the length of the text copied to the edit control when a string in the list box is selected.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#28](../../mfc/reference/codesnippet/CPP/ccombobox-class_28.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#28](../../mfc/reference/codesnippet/cpp/ccombobox-class_28.cpp)]  
   
 ##  <a name="ccombobox__measureitem"></a>  CComboBox::MeasureItem  
  Called by the framework when a combo box with an owner-draw style is created.  
@@ -938,7 +938,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
  See [CWnd::OnMeasureItem](../../mfc/reference/cwnd-class.md#cwnd__onmeasureitem) for a description of the `MEASUREITEMSTRUCT` structure.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#29](../../mfc/reference/codesnippet/CPP/ccombobox-class_29.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#29](../../mfc/reference/codesnippet/cpp/ccombobox-class_29.cpp)]  
   
 ##  <a name="ccombobox__paste"></a>  CComboBox::Paste  
  Inserts the data from the Clipboard into the edit control of the combo box at the current cursor position.  
@@ -951,7 +951,7 @@ void Paste();
  Data is inserted only if the Clipboard contains data in **CF_TEXT** format.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#30](../../mfc/reference/codesnippet/CPP/ccombobox-class_30.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#30](../../mfc/reference/codesnippet/cpp/ccombobox-class_30.cpp)]  
   
 ##  <a name="ccombobox__resetcontent"></a>  CComboBox::ResetContent  
  Removes all items from the list box and edit control of a combo box.  
@@ -961,7 +961,7 @@ void ResetContent();
 ```  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#31](../../mfc/reference/codesnippet/CPP/ccombobox-class_31.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#31](../../mfc/reference/codesnippet/cpp/ccombobox-class_31.cpp)]  
   
 ##  <a name="ccombobox__selectstring"></a>  CComboBox::SelectString  
  Searches for a string in the list box of a combo box, and if the string is found, selects the string in the list box and copies it to the edit control.  
@@ -988,7 +988,7 @@ int SelectString(
  Note that the `SelectString` and `FindString` member functions both find a string, but the `SelectString` member function also selects the string.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#32](../../mfc/reference/codesnippet/CPP/ccombobox-class_32.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#32](../../mfc/reference/codesnippet/cpp/ccombobox-class_32.cpp)]  
   
 ##  <a name="ccombobox__setcuebanner"></a>  CComboBox::SetCueBanner  
  Sets the cue text that is displayed for a combo box control.  
@@ -1014,12 +1014,12 @@ BOOL SetCueBanner(LPCTSTR lpszText);
 ### Example  
  The following code example defines the variable, `m_combobox`, that is used to programmatically access the combo box control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CComboBox_s1#1](../../mfc/reference/codesnippet/CPP/ccombobox-class_33.h)]  
+ [!code-cpp[NVC_MFC_CComboBox_s1#1](../../mfc/reference/codesnippet/cpp/ccombobox-class_33.h)]  
   
 ### Example  
  The following code example sets the cue banner for the combo box control.  
   
- [!code-cpp[NVC_MFC_CComboBox_s1#2](../../mfc/reference/codesnippet/CPP/ccombobox-class_34.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox_s1#2](../../mfc/reference/codesnippet/cpp/ccombobox-class_34.cpp)]  
   
 ##  <a name="ccombobox__setcursel"></a>  CComboBox::SetCurSel  
  Selects a string in the list box of a combo box.  
@@ -1039,7 +1039,7 @@ int SetCurSel(int nSelect);
  If necessary, the list box scrolls the string into view (if the list box is visible). The text in the edit control of the combo box is changed to reflect the new selection. Any previous selection in the list box is removed.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#33](../../mfc/reference/codesnippet/CPP/ccombobox-class_35.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#33](../../mfc/reference/codesnippet/cpp/ccombobox-class_35.cpp)]  
   
 ##  <a name="ccombobox__setdroppedwidth"></a>  CComboBox::SetDroppedWidth  
  Call this function to set the minimum allowable width, in pixels, of the list box of a combo box.  
@@ -1061,7 +1061,7 @@ int SetDroppedWidth(UINT nWidth);
  By default, the minimum allowable width of the drop-down list box is 0. When the list-box portion of the combo box is displayed, its width is the larger of the minimum allowable width or the combo box width.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#34](../../mfc/reference/codesnippet/CPP/ccombobox-class_36.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#34](../../mfc/reference/codesnippet/cpp/ccombobox-class_36.cpp)]  
   
 ##  <a name="ccombobox__seteditsel"></a>  CComboBox::SetEditSel  
  Selects characters in the edit control of a combo box.  
@@ -1132,7 +1132,7 @@ void SetHorizontalExtent(UINT nExtent);
  If the width of the list box is smaller than this value, the horizontal scroll bar will horizontally scroll items in the list box. If the width of the list box is equal to or greater than this value, the horizontal scroll bar is hidden or, if the combo box has the [CBS_DISABLENOSCROLL](../../mfc/reference/combo-box-styles.md) style, disabled.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#35](../../mfc/reference/codesnippet/CPP/ccombobox-class_37.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#35](../../mfc/reference/codesnippet/cpp/ccombobox-class_37.cpp)]  
   
 ##  <a name="ccombobox__setitemdata"></a>  CComboBox::SetItemData  
  Sets the 32-bit value associated with the specified item in a combo box.  
@@ -1157,7 +1157,7 @@ int SetItemData(
  Use the `SetItemDataPtr` member function if the 32-bit item is to be a pointer.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#36](../../mfc/reference/codesnippet/CPP/ccombobox-class_38.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#36](../../mfc/reference/codesnippet/cpp/ccombobox-class_38.cpp)]  
   
 ##  <a name="ccombobox__setitemdataptr"></a>  CComboBox::SetItemDataPtr  
  Sets the 32-bit value associated with the specified item in a combo box to be the specified pointer ( **void\***).  
@@ -1182,7 +1182,7 @@ int SetItemDataPtr(
  This pointer remains valid for the life of the combo box, even though the item's relative position within the combo box might change as items are added or removed. Hence, the item's index within the box can change, but the pointer remains reliable.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#37](../../mfc/reference/codesnippet/CPP/ccombobox-class_39.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#37](../../mfc/reference/codesnippet/cpp/ccombobox-class_39.cpp)]  
   
 ##  <a name="ccombobox__setitemheight"></a>  CComboBox::SetItemHeight  
  Call the `SetItemHeight` member function to set the height of list items in a combo box or the height of the edit-control (or static-text) portion of a combo box.  
@@ -1211,7 +1211,7 @@ int SetItemHeight(
  The height of the edit-control (or static-text) portion of the combo box is set independently of the height of the list items. An application must ensure that the height of the edit-control (or static-text) portion is not smaller than the height of a particular list-box item.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#38](../../mfc/reference/codesnippet/CPP/ccombobox-class_40.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#38](../../mfc/reference/codesnippet/cpp/ccombobox-class_40.cpp)]  
   
 ##  <a name="ccombobox__setlocale"></a>  CComboBox::SetLocale  
  Sets the locale identifier for this combo box.  
@@ -1231,7 +1231,7 @@ LCID SetLocale(LCID nNewLocale);
  If **SetLocale** is not called, the default locale is obtained from the system. This system default locale can be modified by using Control Panel's Regional (or International) application.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#39](../../mfc/reference/codesnippet/CPP/ccombobox-class_41.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#39](../../mfc/reference/codesnippet/cpp/ccombobox-class_41.cpp)]  
   
 ##  <a name="ccombobox__setminvisibleitems"></a>  CComboBox::SetMinVisibleItems  
  Sets the minimum number of visible items in the drop-down list of the current combo box control.  
@@ -1255,12 +1255,12 @@ BOOL SetMinVisibleItems(int iMinVisible);
 ### Example  
  The following code example defines the variable, `m_combobox`, that is used to programmatically access the combo box control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CComboBox_s1#1](../../mfc/reference/codesnippet/CPP/ccombobox-class_33.h)]  
+ [!code-cpp[NVC_MFC_CComboBox_s1#1](../../mfc/reference/codesnippet/cpp/ccombobox-class_33.h)]  
   
 ### Example  
  The following code example inserts 20 items into the drop-down list of a combo box control. Then it specifies that a minimum of 10 items be displayed when a user presses the drop-down arrow.  
   
- [!code-cpp[NVC_MFC_CComboBox_s1#2](../../mfc/reference/codesnippet/CPP/ccombobox-class_34.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox_s1#2](../../mfc/reference/codesnippet/cpp/ccombobox-class_34.cpp)]  
   
 ##  <a name="ccombobox__settopindex"></a>  CComboBox::SetTopIndex  
  Ensures that a particular item is visible in the list-box portion of the combo box.  
@@ -1280,7 +1280,7 @@ int SetTopIndex(int nIndex);
  The system scrolls the list box until either the item specified by `nIndex` appears at the top of the list box or the maximum scroll range has been reached.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CComboBox#40](../../mfc/reference/codesnippet/CPP/ccombobox-class_42.cpp)]  
+ [!code-cpp[NVC_MFC_CComboBox#40](../../mfc/reference/codesnippet/cpp/ccombobox-class_42.cpp)]  
   
 ##  <a name="ccombobox__showdropdown"></a>  CComboBox::ShowDropDown  
  Shows or hides the list box of a combo box that has the [CBS_DROPDOWN](../../mfc/reference/combo-box-styles.md) or [CBS_DROPDOWNLIST](../../mfc/reference/combo-box-styles.md) style.  

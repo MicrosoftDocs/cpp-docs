@@ -53,7 +53,7 @@ This topic applies to the MFC ODBC classes.
 >  This topic applies to objects derived from `CRecordset` in which bulk row fetching has not been implemented. If you have implemented bulk row fetching, some of the information does not apply. For example, you cannot call the **Edit** and **Update** member functions. For more information about bulk row fetching, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
 ##  <a name="_core_record.2d.locking_modes"></a> Record-Locking Modes  
- The database classes provide two [record-locking modes](../../mfc/reference/CRecordset-class.md#CRecordset__SetLockingMode):  
+ The database classes provide two [record-locking modes](../../mfc/reference/crecordset-class.md#crecordset__setlockingmode):  
   
 -   Optimistic locking (the default)  
   
@@ -61,11 +61,11 @@ This topic applies to the MFC ODBC classes.
   
  Updating a record occurs in three steps:  
   
-1.  You begin the operation by calling the [Edit](../../mfc/reference/CRecordset-class.md#CRecordset__Edit) member function.  
+1.  You begin the operation by calling the [Edit](../../mfc/reference/crecordset-class.md#crecordset__edit) member function.  
   
 2.  You change the appropriate fields of the current record.  
   
-3.  You end the operation — and normally commit the update — by calling the [Update](../../mfc/reference/CRecordset-class.md#CRecordset__Update) member function.  
+3.  You end the operation — and normally commit the update — by calling the [Update](../../mfc/reference/crecordset-class.md#crecordset__update) member function.  
   
  Optimistic locking locks the record on the data source only during the **Update** call. If you use optimistic locking in a multiuser environment, the application should handle an **Update** failure condition. Pessimistic locking locks the record as soon as you call **Edit** and does not release it until you call **Update** (failures are indicated through the `CDBException` mechanism, not by a value of **FALSE** returned by **Update**). Pessimistic locking has a potential performance penalty for other users, because concurrent access to the same record might have to wait until completion of your application's **Update** process.  
   
@@ -74,7 +74,7 @@ This topic applies to the MFC ODBC classes.
   
 #### To change the current locking mode for your recordset  
   
-1.  Call the [SetLockingMode](../../mfc/reference/CRecordset-class.md#CRecordset__SetLockingMode) member function, specifying either **CRecordset::pessimistic** or **CRecordset::optimistic**.  
+1.  Call the [SetLockingMode](../../mfc/reference/crecordset-class.md#crecordset__setlockingmode) member function, specifying either **CRecordset::pessimistic** or **CRecordset::optimistic**.  
   
  The new locking mode remains in effect until you change it again or the recordset is closed.  
   

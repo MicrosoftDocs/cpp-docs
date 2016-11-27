@@ -110,9 +110,9 @@ CFormView(UINT nIDTemplate);
 >  Your derived class *must* supply its own constructor. In the constructor, invoke the constructor, `CFormView::CFormView`, with the resource name or ID as an argument as shown in the preceding class overview.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#90](../../mfc/codesnippet/CPP/cformview-class_1.h)]  
+ [!code-cpp[NVC_MFCDocView#90](../../mfc/codesnippet/cpp/cformview-class_1.h)]  
   
- [!code-cpp[NVC_MFCDocView#91](../../mfc/codesnippet/CPP/cformview-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#91](../../mfc/codesnippet/cpp/cformview-class_2.cpp)]  
   
 ##  <a name="cformview__isinitdlgcompleted"></a>  CFormView::IsInitDlgCompleted  
  Used by MFC to ensure that initialization is completed before performing other operations.  

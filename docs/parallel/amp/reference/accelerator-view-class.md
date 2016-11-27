@@ -49,8 +49,8 @@ class accelerator_view;
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view::accelerator_view Constructor](../Topic/accelerator_view::accelerator_view%20Constructor.md)|Initializes a new instance of the `accelerator_view` class.|  
-|[accelerator_view::~accelerator_view Destructor](../Topic/accelerator_view::~accelerator_view%20Destructor.md)|Destroys the `accelerator_view` object.|  
+|[accelerator_view::accelerator_view Constructor](../topic/accelerator_view::accelerator_view%20constructor.md)|Initializes a new instance of the `accelerator_view` class.|  
+|[accelerator_view::~accelerator_view Destructor](../topic/accelerator_view::~accelerator_view%20destructor.md)|Destroys the `accelerator_view` object.|  
   
 ### Public Methods  
   
@@ -69,9 +69,9 @@ class accelerator_view;
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view::operator!= Operator](../Topic/accelerator_view::operator!=%20Operator.md)|Compares this `accelerator_view` object with another and returns `false` if they are the same; otherwise, returns `true`.|  
-|[accelerator_view::operator= Operator](../Topic/accelerator_view::operator=%20Operator.md)|Copies the contents of the specified `accelerator_view` object into this one.|  
-|[accelerator_view::operator== Operator](../Topic/accelerator_view::operator==%20Operator.md)|Compares this `accelerator_view` object with another and returns `true` if they are the same; otherwise, returns `false`.|  
+|[accelerator_view::operator!= Operator](../topic/accelerator_view::operator!=%20operator.md)|Compares this `accelerator_view` object with another and returns `false` if they are the same; otherwise, returns `true`.|  
+|[accelerator_view::operator= Operator](../topic/accelerator_view::operator=%20operator.md)|Copies the contents of the specified `accelerator_view` object into this one.|  
+|[accelerator_view::operator== Operator](../topic/accelerator_view::operator==%20operator.md)|Compares this `accelerator_view` object with another and returns `true` if they are the same; otherwise, returns `false`.|  
   
 ### Public Data Members  
   

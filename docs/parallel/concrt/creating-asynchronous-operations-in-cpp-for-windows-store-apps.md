@@ -37,7 +37,7 @@ translation.priority.mt:
 # Creating Asynchronous Operations in C++ for Windows Store Apps
 This document describes some of the key points to keep in mind when you use the task class to produce Windows ThreadPool-based asynchronous operations in a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app.  
   
- The use of asynchronous programming is a key component in the [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app model because it enables apps to remain responsive to user input. You can start a long-running task without blocking the UI thread, and you can receive the results of the task later. You can also cancel tasks and receive progress notifications as tasks run in the background. The document [Asynchronous programming in C++](http://msdn.microsoft.com/library/windows/apps/Hh780559.aspx) provides an overview of the asynchronous pattern that's available in Visual C++ to create [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. That document teaches how to both consume and create chains of asynchronous [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)] operations. This section describes how to use the types in ppltasks.h to produce asynchronous operations that can be consumed by another [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)] component and how to control how asynchronous work is executed. Also consider reading [Async programming patterns and tips in Hilo (Windows Store apps using C++ and XAML)](http://msdn.microsoft.com/library/windows/apps/jj160321.aspx) to learn how we used the task class to implement asynchronous operations in Hilo, a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app using C++ and XAML.  
+ The use of asynchronous programming is a key component in the [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app model because it enables apps to remain responsive to user input. You can start a long-running task without blocking the UI thread, and you can receive the results of the task later. You can also cancel tasks and receive progress notifications as tasks run in the background. The document [Asynchronous programming in C++](http://msdn.microsoft.com/library/windows/apps/hh780559.aspx) provides an overview of the asynchronous pattern that's available in Visual C++ to create [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. That document teaches how to both consume and create chains of asynchronous [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)] operations. This section describes how to use the types in ppltasks.h to produce asynchronous operations that can be consumed by another [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)] component and how to control how asynchronous work is executed. Also consider reading [Async programming patterns and tips in Hilo (Windows Store apps using C++ and XAML)](http://msdn.microsoft.com/library/windows/apps/jj160321.aspx) to learn how we used the task class to implement asynchronous operations in Hilo, a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app using C++ and XAML.  
   
 > [!NOTE]
 >  You can use the [Parallel Patterns Library](../../parallel/concrt/parallel-patterns-library-ppl.md) (PPL) and [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md) in a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app. However, you cannot use the Task Scheduler or the Resource Manager. This document describes additional features that the PPL provides that are available only to a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app, and not to a desktop app.  
@@ -108,19 +108,19 @@ This document describes some of the key points to keep in mind when you use the 
   
  The following example shows the various ways to create an `IAsyncAction` object that can be consumed by another [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)] component.  
   
- [!code-cpp[concrt-windowsstore-primes#100](../../parallel/concrt/codesnippet/CPP/creating-asynchronous-operations-in-cpp-for-windows-store-apps_1.cpp)]  
+ [!code-cpp[concrt-windowsstore-primes#100](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_1.cpp)]  
   
 ##  <a name="example-component"></a> Example: Creating a C++ Windows Runtime Component and Consuming it from C#  
  Consider an app that uses XAML and C# to define the UI and a C++ [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)] component to perform compute-intensive operations. In this example, the C++ component computes which numbers in a given range are prime. To illustrate the differences among the four [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)] asynchronous task interfaces, start, in Visual Studio, by creating a **Blank Solution** and naming it `Primes`. Then add to the solution a **Windows Runtime Component** project and naming it `PrimesLibrary`. Add the following code to the generated C++ header file (this example renames Class1.h to Primes.h). Each `public` method defines one of the four asynchronous interfaces. The methods that return a value return a [Windows::Foundation::Collections::IVector\<int>](http://msdn.microsoft.com/library/windows/apps/br206631.aspx) object. The methods that report progress produce `double` values that define the percentage of overall work that has completed.  
   
- [!code-cpp[concrt-windowsstore-primes#1](../../parallel/concrt/codesnippet/CPP/creating-asynchronous-operations-in-cpp-for-windows-store-apps_2.h)]  
+ [!code-cpp[concrt-windowsstore-primes#1](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_2.h)]  
   
 > [!NOTE]
 >  By convention, asynchronous method names in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)] typically end with "Async".  
   
  Add the following code to the generated C++ source file (this example renames Class1.cpp to Primes.cpp). The `is_prime` function determines whether its input is prime. The remaining methods implement the `Primes` class. Each call to `create_async` uses a signature that's compatible with the method from which it is called. For example, because `Primes::ComputePrimesAsync` returns `IAsyncAction`, the work function that's provided to `create_async` doesn't return a value and doesn't take a `progress_reporter` object as its parameter.  
   
- [!code-cpp[concrt-windowsstore-primes#2](../../parallel/concrt/codesnippet/CPP/creating-asynchronous-operations-in-cpp-for-windows-store-apps_3.cpp)]  
+ [!code-cpp[concrt-windowsstore-primes#2](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_3.cpp)]  
   
  Each method first performs validation to ensure that that the input parameters are non-negative. If an input value is negative, the method throws [Platform::InvalidArgumentException](http://msdn.microsoft.com/library/windows/apps/hh755794\(v=vs.110\).aspx). Error handling is explained later in this section.  
   
@@ -128,11 +128,11 @@ This document describes some of the key points to keep in mind when you use the 
   
  Add the following code to MainPage.xaml. This code defines the UI so that you can call the C++ component and display results.  
   
- [!code-xml[concrt-windowsstore-primes#3](../../parallel/concrt/codesnippet/Xaml/creating-asynchronous-operations-in-cpp-for-windows-store-apps_4.xaml)]  
+ [!code-xml[concrt-windowsstore-primes#3](../../parallel/concrt/codesnippet/xaml/creating-asynchronous-operations-in-cpp-for-windows-store-apps_4.xaml)]  
   
  Add the following code to the `MainPage` class in MainPage.xaml. This code defines a `Primes` object and the button event handlers.  
   
- [!code-cs[concrt-windowsstore-primes#4](../../parallel/concrt/codesnippet/CSharp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_5.cs)]  
+ [!code-cs[concrt-windowsstore-primes#4](../../parallel/concrt/codesnippet/csharp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_5.cs)]  
   
  These methods use the `async` and `await` keywords to update the UI after the asynchronous operations complete. For information about the asynchronous patterns that are available to C# and Visual Basic, see [Asynchronous patterns in Windows Store apps with C#](http://msdn.microsoft.com/library/windows/apps/hh464924.aspx) and [Asynchronous patterns in Windows Store apps with VB](http://msdn.microsoft.com/library/windows/apps/hh464924.aspx).  
   
@@ -143,9 +143,9 @@ This document describes some of the key points to keep in mind when you use the 
   
  The following illustration shows the `Primes` app after each option has been chosen.  
   
- ![Windows Store Primes app](../../parallel/concrt/media/concrt_windows_primes.png "ConcRT_windows_Primes")  
+ ![Windows Store Primes app](../../parallel/concrt/media/concrt_windows_primes.png "concrt_windows_primes")  
   
- For examples that use `create_async` to create asynchronous tasks that can be consumed by other languages, see [Using C++ in the Bing Maps Trip Optimizer sample](http://msdn.microsoft.com/library/windows/apps/hh699891\(v=vs.110\).aspx) and [Windows 8 Asynchronous Operations in C++ with PPL](http://code.msdn.microsoft.com/windowsapps/Windows-8-Asynchronous-08009a0d).  
+ For examples that use `create_async` to create asynchronous tasks that can be consumed by other languages, see [Using C++ in the Bing Maps Trip Optimizer sample](http://msdn.microsoft.com/library/windows/apps/hh699891\(v=vs.110\).aspx) and [Windows 8 Asynchronous Operations in C++ with PPL](http://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d).  
   
 ##  <a name="exethread"></a> Controlling the Execution Thread  
  The [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)] uses the COM threading model. In this model, objects are hosted in different apartments, depending on how they handle their synchronization. Thread-safe objects are hosted in the multi-threaded apartment (MTA). Objects that must be accessed by a single thread are hosted in a single-threaded apartment (STA).  
@@ -176,34 +176,34 @@ This document describes some of the key points to keep in mind when you use the 
   
  Update the `Grid` element in MainPage.xaml to include a `ProgressRing` element and a `TextBlock` element. The `ProgressRing` indicates that the operation is in progress and the `TextBlock` shows the results of the computation.  
   
- [!code-xml[concrt-windowsstore-commonwords#1](../../parallel/concrt/codesnippet/Xaml/creating-asynchronous-operations-in-cpp-for-windows-store-apps_6.xaml)]  
+ [!code-xml[concrt-windowsstore-commonwords#1](../../parallel/concrt/codesnippet/xaml/creating-asynchronous-operations-in-cpp-for-windows-store-apps_6.xaml)]  
   
  Add the following `#include` statements to pch.h.  
   
- [!code-cpp[concrt-windowsstore-commonwords#2](../../parallel/concrt/codesnippet/CPP/creating-asynchronous-operations-in-cpp-for-windows-store-apps_7.h)]  
+ [!code-cpp[concrt-windowsstore-commonwords#2](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_7.h)]  
   
  Add the following method declarations to the `MainPage` class (MainPage.h).  
   
- [!code-cpp[concrt-windowsstore-commonwords#3](../../parallel/concrt/codesnippet/CPP/creating-asynchronous-operations-in-cpp-for-windows-store-apps_8.h)]  
+ [!code-cpp[concrt-windowsstore-commonwords#3](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_8.h)]  
   
  Add the following `using` statements to MainPage.cpp.  
   
- [!code-cpp[concrt-windowsstore-commonwords#4](../../parallel/concrt/codesnippet/CPP/creating-asynchronous-operations-in-cpp-for-windows-store-apps_9.cpp)]  
+ [!code-cpp[concrt-windowsstore-commonwords#4](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_9.cpp)]  
   
  In MainPage.cpp, implement the `MainPage::MakeWordList`, `MainPage::FindCommonWords`, and `MainPage::ShowResults` methods. The `MainPage::MakeWordList` and `MainPage::FindCommonWords` perform computationally-intensive operations. The `MainPage::ShowResults` method displays the result of the computation in the UI.  
   
- [!code-cpp[concrt-windowsstore-commonwords#5](../../parallel/concrt/codesnippet/CPP/creating-asynchronous-operations-in-cpp-for-windows-store-apps_10.cpp)]  
+ [!code-cpp[concrt-windowsstore-commonwords#5](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_10.cpp)]  
   
  Modify the `MainPage` constructor to create a chain of continuation tasks that displays in the UI the common words in the book *The Iliad* by Homer. The first two continuation tasks, which split the text into individual words and find common words, can be time consuming and are therefore explicitly set to run in the background. The final continuation task, which updates the UI, specifies no continuation context, and therefore follows the apartment threading rules.  
   
- [!code-cpp[concrt-windowsstore-commonwords#6](../../parallel/concrt/codesnippet/CPP/creating-asynchronous-operations-in-cpp-for-windows-store-apps_11.cpp)]  
+ [!code-cpp[concrt-windowsstore-commonwords#6](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_11.cpp)]  
   
 > [!NOTE]
 >  This example demonstrates how to specify execution contexts and how to compose a chain of continuations. Recall that by default a task that's created from an asynchronous operation runs its continuations on the apartment that called `task::then`. Therefore, this example uses `task_continuation_context::use_arbitrary` to specify that operations that do not involve the UI be performed on a background thread.  
   
  The following illustration shows the results of the `CommonWords` app.  
   
- ![Windows Store CommonWords app](../../parallel/concrt/media/concrt_windows_common_words.png "ConcRT_windows_Common_Words")  
+ ![Windows Store CommonWords app](../../parallel/concrt/media/concrt_windows_common_words.png "concrt_windows_common_words")  
   
  In this example, it’s possible to support cancellation because the `task` objects that support `create_async` use an implicit cancellation token. Define your work function to take a `cancellation_token` object if your tasks need to respond to cancellation in a cooperative manner. For more info about cancellation in the PPL, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl)  
   

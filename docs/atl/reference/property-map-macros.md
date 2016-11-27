@@ -63,7 +63,7 @@ BEGIN_PROP_MAP(theClass)
  `BEGIN_PROP_MAP` does not save out the extent (that is, the dimensions) of a property map, because an object using a property map may not have a user interface, so it would have no extent. If the object is an ActiveX control with a user interface, it has an extent. In this case, you must specify [PROP_DATA_ENTRY](#prop_data_entry) in your property map to supply the extent.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#103](../../atl/codesnippet/CPP/property-map-macros_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#103](../../atl/codesnippet/cpp/property-map-macros_1.h)]  
   
 ##  <a name="prop_data_entry"></a>  PROP_DATA_ENTRY  
  Indicates the extent, or dimensions, of an ActiveX control.  
@@ -90,9 +90,9 @@ PROP_DATA_ENTRY( szDesc, member, vt)
 ### Example  
  In the following example, the extent of the object ( `m_sizeExtent`) is being persisted.  
   
- [!code-cpp[NVC_ATL_Windowing#131](../../atl/codesnippet/CPP/property-map-macros_2.h)]  
+ [!code-cpp[NVC_ATL_Windowing#131](../../atl/codesnippet/cpp/property-map-macros_2.h)]  
   
- [!code-cpp[NVC_ATL_Windowing#132](../../atl/codesnippet/CPP/property-map-macros_3.h)]  
+ [!code-cpp[NVC_ATL_Windowing#132](../../atl/codesnippet/cpp/property-map-macros_3.h)]  
   
 ##  <a name="prop_entry_type"></a>  PROP_ENTRY_TYPE  
  Use this macro to enter a property description, property DISPID, and property page CLSID into the object's property map.  
@@ -153,7 +153,7 @@ PROP_ENTRY_TYPE_EX( szDesc, dispid, clsid, iidDispatch, vt)
 ### Example  
  The following example groups entries for `IMyDual1` followed by an entry for `IMyDual2`. Grouping by dual interface will improve performance.  
   
- [!code-cpp[NVC_ATL_Windowing#133](../../atl/codesnippet/CPP/property-map-macros_4.h)]  
+ [!code-cpp[NVC_ATL_Windowing#133](../../atl/codesnippet/cpp/property-map-macros_4.h)]  
   
 ##  <a name="prop_page"></a>  PROP_PAGE  
  Use this macro to enter a property page CLSID into the object's property map.  
@@ -175,7 +175,7 @@ PROP_PAGE(clsid)
  The [BEGIN_PROP_MAP](#begin_prop_map) macro marks the beginning of the property map; the [END_PROP_MAP](#end_prop_map) macro marks the end.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#134](../../atl/codesnippet/CPP/property-map-macros_5.h)]  
+ [!code-cpp[NVC_ATL_Windowing#134](../../atl/codesnippet/cpp/property-map-macros_5.h)]  
   
 ##  <a name="end_prop_map"></a>  END_PROP_MAP  
  Marks the end of the object's property map.  

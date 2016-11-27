@@ -62,23 +62,23 @@ The following map entries on the left correspond to the function prototypes on t
   
 |Map entry|Function prototype|  
 |---------------|------------------------|  
-|ON_WM_FONTCHANGE()|afx_msg void [OnFontChange](../../mfc/reference/cwnd-class.md#cwnd__OnFontChange)();|  
-|ON_WM_GETDLGCODE()|afx_msg UINT [OnGetDlgCode](../../mfc/reference/cwnd-class.md#cwnd__OnGetDlgCode)();|  
-|ON_WM_GETMINMAXINFO()|afx_msg void [OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#cwnd__OnGetMinMaxInfo)(LPPOINT);|  
-|ON_WM_HELPINFO()|afx_msg BOOL [OnHelpInfo](../../mfc/reference/cwnd-class.md#cwnd__OnHelpInfo)(HELPINFO*);|  
-|ON_WM_HOTKEY()|afx_msg void [OnHotKey](../../mfc/reference/cwnd-class.md#cwnd__OnHotKey)(UINT, UINT, UINT);|  
-|ON_WM_HSCROLL()|afx_msg void [OnHScroll](../../mfc/reference/cwnd-class.md#cwnd__OnHScroll)(UINT, UINT, CWnd*);|  
-|ON_WM_HSCROLLCLIPBOARD()|afx_msg void [OnHScrollClipboard](../../mfc/reference/cwnd-class.md#cwnd__OnHScrollClipboard)(CWnd*, UINT, UINT);|  
-|ON_WM_ICONERASEBKGND()|afx_msg void [OnIconEraseBkgnd](../../mfc/reference/cwnd-class.md#cwnd__OnIconEraseBkgnd)(CDC*);|  
-|ON_WM_INITMENU()|afx_msg void [OnInitMenu](../../mfc/reference/cwnd-class.md#cwnd__OnInitMenu)(CMenu*);|  
-|ON_WM_INITMENUPOPUP()|afx_msg void [OnInitMenuPopup](../../mfc/reference/cwnd-class.md#cwnd__OnInitMenuPopup)(CMenu*, UINT, BOOL);|  
-|ON_WM_INPUT()|afx_msg void [OnRawInput](../../mfc/reference/cwnd-class.md#cwnd__OnRawInput)(UINT, HRAWINPUT);|  
-|ON_WM_INPUT_DEVICE_CHANGE()|afx_msg void [OnInputDeviceChange](../../mfc/reference/cwnd-class.md#cwnd__OnInputDeviceChange)(unsigned short);|  
-|ON_WM_INPUTLANGCHANGE()|afx_msg void [OnInputLangChange](../../mfc/reference/cwnd-class.md#cwnd__OnInputLangChange)(BYTE, UINT);|  
-|ON_WM_INPUTLANGCHANGEREQUEST()|afx_msg void [OnInputLangChangeRequest](../../mfc/reference/cwnd-class.md#cwnd__OnInputLangChangeRequest)(UINT, HKL);|  
-|ON_WM_KEYDOWN()|afx_msg void [OnKeyDown](../../mfc/reference/cwnd-class.md#cwnd__OnKeyDown)(UINT, UINT, UINT);|  
-|ON_WM_KEYUP()|afx_msg void [OnKeyUp](../../mfc/reference/cwnd-class.md#cwnd__OnKeyUp)(UINT, UINT, UINT);|  
-|ON_WM_KILLFOCUS()|afx_msg void [OnKillFocus](../../mfc/reference/cwnd-class.md#cwnd__OnKillFocus)(CWnd*);|  
+|ON_WM_FONTCHANGE()|afx_msg void [OnFontChange](../../mfc/reference/cwnd-class.md#cwnd__onfontchange)();|  
+|ON_WM_GETDLGCODE()|afx_msg UINT [OnGetDlgCode](../../mfc/reference/cwnd-class.md#cwnd__ongetdlgcode)();|  
+|ON_WM_GETMINMAXINFO()|afx_msg void [OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#cwnd__ongetminmaxinfo)(LPPOINT);|  
+|ON_WM_HELPINFO()|afx_msg BOOL [OnHelpInfo](../../mfc/reference/cwnd-class.md#cwnd__onhelpinfo)(HELPINFO*);|  
+|ON_WM_HOTKEY()|afx_msg void [OnHotKey](../../mfc/reference/cwnd-class.md#cwnd__onhotkey)(UINT, UINT, UINT);|  
+|ON_WM_HSCROLL()|afx_msg void [OnHScroll](../../mfc/reference/cwnd-class.md#cwnd__onhscroll)(UINT, UINT, CWnd*);|  
+|ON_WM_HSCROLLCLIPBOARD()|afx_msg void [OnHScrollClipboard](../../mfc/reference/cwnd-class.md#cwnd__onhscrollclipboard)(CWnd*, UINT, UINT);|  
+|ON_WM_ICONERASEBKGND()|afx_msg void [OnIconEraseBkgnd](../../mfc/reference/cwnd-class.md#cwnd__oniconerasebkgnd)(CDC*);|  
+|ON_WM_INITMENU()|afx_msg void [OnInitMenu](../../mfc/reference/cwnd-class.md#cwnd__oninitmenu)(CMenu*);|  
+|ON_WM_INITMENUPOPUP()|afx_msg void [OnInitMenuPopup](../../mfc/reference/cwnd-class.md#cwnd__oninitmenupopup)(CMenu*, UINT, BOOL);|  
+|ON_WM_INPUT()|afx_msg void [OnRawInput](../../mfc/reference/cwnd-class.md#cwnd__onrawinput)(UINT, HRAWINPUT);|  
+|ON_WM_INPUT_DEVICE_CHANGE()|afx_msg void [OnInputDeviceChange](../../mfc/reference/cwnd-class.md#cwnd__oninputdevicechange)(unsigned short);|  
+|ON_WM_INPUTLANGCHANGE()|afx_msg void [OnInputLangChange](../../mfc/reference/cwnd-class.md#cwnd__oninputlangchange)(BYTE, UINT);|  
+|ON_WM_INPUTLANGCHANGEREQUEST()|afx_msg void [OnInputLangChangeRequest](../../mfc/reference/cwnd-class.md#cwnd__oninputlangchangerequest)(UINT, HKL);|  
+|ON_WM_KEYDOWN()|afx_msg void [OnKeyDown](../../mfc/reference/cwnd-class.md#cwnd__onkeydown)(UINT, UINT, UINT);|  
+|ON_WM_KEYUP()|afx_msg void [OnKeyUp](../../mfc/reference/cwnd-class.md#cwnd__onkeyup)(UINT, UINT, UINT);|  
+|ON_WM_KILLFOCUS()|afx_msg void [OnKillFocus](../../mfc/reference/cwnd-class.md#cwnd__onkillfocus)(CWnd*);|  
   
 ## See Also  
  [Message Maps](../../mfc/reference/message-maps-mfc.md)   

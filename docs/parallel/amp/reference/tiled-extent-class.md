@@ -73,7 +73,7 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_extent::tiled_extent Constructor](../Topic/tiled_extent::tiled_extent%20Constructor.md)|Initializes a new instance of the `tiled_extent` class.|  
+|[tiled_extent::tiled_extent Constructor](../topic/tiled_extent::tiled_extent%20constructor.md)|Initializes a new instance of the `tiled_extent` class.|  
   
 ### Public Methods  
   
@@ -87,15 +87,15 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_extent::operator= Operator](../Topic/tiled_extent::operator=%20Operator.md)|Copies the contents of the specified `tiled_index` object into this one.|  
+|[tiled_extent::operator= Operator](../topic/tiled_extent::operator=%20operator.md)|Copies the contents of the specified `tiled_index` object into this one.|  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_extent::tile_dim0 Constant](../Topic/tiled_extent::tile_dim0%20Constant.md)|Stores the length of the most significant dimension.|  
-|[tiled_extent::tile_dim1 Constant](../Topic/tiled_extent::tile_dim1%20Constant.md)|Stores the length of the next-to-most significant dimension.|  
-|[tiled_extent::tile_dim2 Constant](../Topic/tiled_extent::tile_dim2%20Constant.md)|Stores the length of the least significant dimension.|  
+|[tiled_extent::tile_dim0 Constant](../topic/tiled_extent::tile_dim0%20constant.md)|Stores the length of the most significant dimension.|  
+|[tiled_extent::tile_dim1 Constant](../topic/tiled_extent::tile_dim1%20constant.md)|Stores the length of the next-to-most significant dimension.|  
+|[tiled_extent::tile_dim2 Constant](../topic/tiled_extent::tile_dim2%20constant.md)|Stores the length of the least significant dimension.|  
   
 ### Public Data Members  
   

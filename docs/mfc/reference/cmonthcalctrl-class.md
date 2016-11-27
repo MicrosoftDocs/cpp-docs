@@ -189,7 +189,7 @@ virtual BOOL Create(
 -   To size the control yourself, call the override of this function that uses the `rect` parameter.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CMonthCalCtrl#1](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl#1](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_1.cpp)]  
   
 ##  <a name="cmonthcalctrl__getcalendarborder"></a>  CMonthCalCtrl::GetCalendarBorder  
  Retrieves the width of the border of the current month calendar control.  
@@ -245,12 +245,12 @@ BOOL GetCalendarGridInfo(PMCGRIDINFO pmcGridInfo) const;
 ### Example  
  The following code example defines the variable, `m_monthCalCtrl`, that is used to programmatically access the month calendar control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#9](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_2.h)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_2.h)]  
   
 ### Example  
  The following code example uses the `GetCalendarGridInfo` method to retrieve the calendar date that the current month calendar control displays.  
   
- [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#3](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#3](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_3.cpp)]  
   
 ##  <a name="cmonthcalctrl__getcalid"></a>  CMonthCalCtrl::GetCalID  
  Retrieves the calendar identifier for the current month calendar control.  
@@ -310,12 +310,12 @@ DWORD GetCurrentView() const;
 ### Example  
  The following code example defines the variable, `m_monthCalCtrl`, that is used to programmatically access the month calendar control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#9](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_2.h)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_2.h)]  
   
 ### Example  
  The following code example reports which view the month calendar control currently displays.  
   
- [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#7](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#7](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_4.cpp)]  
   
 ##  <a name="cmonthcalctrl__getcursel"></a>  CMonthCalCtrl::GetCurSel  
  Retrieves the system time as indicated by the currently-selected date.  
@@ -417,12 +417,12 @@ DWORD GetMaxTodayWidth() const;
 ### Example  
  The following code example defines the variable, `m_monthCalCtrl`, that is used to programmatically access the month calendar control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#9](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_2.h)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_2.h)]  
   
 ### Example  
  The following code example demonstrates the `GetMaxTodayWidth` method.  
   
- [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#1](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_5.cpp)]  
   
 ### Remarks  
  The user can return to the current date by clicking the "Today" string, which is displayed at the bottom of the month calendar control. The "Today" string includes label text and date text.  
@@ -561,7 +561,7 @@ DWORD GetRange(
  This member function implements the behavior of the Win32 message [MCM_GETRANGE](http://msdn.microsoft.com/library/windows/desktop/bb760983), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. In MFC's implementation of `GetRange`, you can specify a `COleDateTime` usage, a `CTime` usage, or a `SYSTEMTIME` structure usage.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CMonthCalCtrl#2](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl#2](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_6.cpp)]  
   
 ##  <a name="cmonthcalctrl__getselrange"></a>  CMonthCalCtrl::GetSelRange  
  Retrieves date information representing the upper and lower limits of the date range currently selected by the user.  
@@ -638,7 +638,7 @@ BOOL GetToday(LPSYSTEMTIME pDateTime) const;
  This member function implements the behavior of the Win32 message [MCM_GETTODAY](http://msdn.microsoft.com/library/windows/desktop/bb760987), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. In MFC's implementation of `GetToday`, you can specify a `COleDateTime` usage, a `CTime` usage, or a `SYSTEMTIME` structure usage.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CMonthCalCtrl#3](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_7.cpp)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl#3](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_7.cpp)]  
   
 ##  <a name="cmonthcalctrl__hittest"></a>  CMonthCalCtrl::HitTest  
  Determines which month calendar control, if any, is at a specified position.  
@@ -738,12 +738,12 @@ void SetCalendarBorder(int cxyBorder);
 ### Example  
  The following code example defines the variable, `m_monthCalCtrl`, that is used to programmatically access the month calendar control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#9](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_2.h)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_2.h)]  
   
 ### Example  
  The following code example sets the border width of the month calendar control to eight pixels. Use the [CMonthCalCtrl::GetCalendarBorder](#cmonthcalctrl__getcalendarborder) method to determine whether this method succeeded.  
   
- [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#6](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_8.cpp)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#6](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_8.cpp)]  
   
 ##  <a name="cmonthcalctrl__setcalendarborderdefault"></a>  CMonthCalCtrl::SetCalendarBorderDefault  
  Sets the default width of the border of the current month calendar control.  
@@ -781,12 +781,12 @@ BOOL SetCalID(CALID calid);
 ### Example  
  The following code example defines the variable, `m_monthCalCtrl`, that is used to programmatically access the month calendar control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#9](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_2.h)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_2.h)]  
   
 ### Example  
  The following code example sets the month calendar control to display the Japanese Emperor Era calendar. The `SetCalID` method succeeds only if that calendar is installed on your computer.  
   
- [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#4](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_9.cpp)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#4](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_9.cpp)]  
   
 ##  <a name="cmonthcalctrl__setcenturyview"></a>  CMonthCalCtrl::SetCenturyView  
  Sets the current month calendar control to display the century view.  
@@ -833,7 +833,7 @@ COLORREF SetColor(
  This member function implements the behavior of the Win32 message [MCM_SETCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760997), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CMonthCalCtrl#4](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_10.cpp)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl#4](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_10.cpp)]  
   
 ##  <a name="cmonthcalctrl__setcurrentview"></a>  CMonthCalCtrl::SetCurrentView  
  Sets the current month calendar control to display the specified view.  
@@ -881,7 +881,7 @@ BOOL SetCurSel(const LPSYSTEMTIME pDateTime);
  This member function implements the behavior of the Win32 message [MCM_SETCURSEL](http://msdn.microsoft.com/library/windows/desktop/bb761002), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. In MFC's implementation of `SetCurSel`, you can specify a `COleDateTime` usage, a `CTime` usage, or a `SYSTEMTIME` structure usage.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CMonthCalCtrl#5](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_11.cpp)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl#5](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_11.cpp)]  
   
 ##  <a name="cmonthcalctrl__setdaystate"></a>  CMonthCalCtrl::SetDayState  
  Sets the display for days in a month calendar control.  
@@ -906,7 +906,7 @@ BOOL SetDayState(
  This member function implements the behavior of the Win32 message [MCM_SETDAYSTATE](http://msdn.microsoft.com/library/windows/desktop/bb761004), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CMonthCalCtrl#6](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_12.cpp)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl#6](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_12.cpp)]  
   
 ##  <a name="cmonthcalctrl__setdecadeview"></a>  CMonthCalCtrl::SetDecadeView  
  Sets the current month calendar control to the decade view.  
@@ -944,7 +944,7 @@ BOOL SetFirstDayOfWeek(
  This member function implements the behavior of the Win32 message [MCM_SETFIRSTDAYOFWEEK](http://msdn.microsoft.com/library/windows/desktop/bb761006), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CMonthCalCtrl#7](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_13.cpp)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl#7](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_13.cpp)]  
   
 ##  <a name="cmonthcalctrl__setmaxselcount"></a>  CMonthCalCtrl::SetMaxSelCount  
  Sets the maximum number of days that can be selected in a month calendar control.  
@@ -964,7 +964,7 @@ BOOL SetMaxSelCount(int nMax);
  This member function implements the behavior of the Win32 message [MCM_SETMAXSELCOUNT](http://msdn.microsoft.com/library/windows/desktop/bb761008), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CMonthCalCtrl#8](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_14.cpp)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl#8](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_14.cpp)]  
   
 ##  <a name="cmonthcalctrl__setmonthdelta"></a>  CMonthCalCtrl::SetMonthDelta  
  Sets the scroll rate for a month calendar control.  
@@ -999,12 +999,12 @@ BOOL SetMonthView();
 ### Example  
  The following code example defines the variable, `m_monthCalCtrl`, that is used to programmatically access the month calendar control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#9](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_2.h)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_2.h)]  
   
 ### Example  
  The following code example sets the month calendar control to display the month, year, decade, and century views.  
   
- [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#2](../../mfc/reference/codesnippet/CPP/cmonthcalctrl-class_15.cpp)]  
+ [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_15.cpp)]  
   
 ##  <a name="cmonthcalctrl__setrange"></a>  CMonthCalCtrl::SetRange  
  Sets the minimum and maximum allowable dates for a month calendar control.  

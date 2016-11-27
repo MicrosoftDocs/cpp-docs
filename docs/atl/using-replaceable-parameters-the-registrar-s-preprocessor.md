@@ -51,7 +51,7 @@ Replaceable parameters allow a Registrar's client to specify run-time data. To d
   
  Then, before calling one of the script processing methods listed in [Invoking Scripts](../atl/invoking-scripts.md), add a replacement to the map:  
   
- [!code-cpp[NVC_ATL_Utilities#113](../atl/codesnippet/CPP/using-replaceable-parameters-the-registrar-s-preprocessor_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#113](../atl/codesnippet/cpp/using-replaceable-parameters-the-registrar-s-preprocessor_1.cpp)]  
   
  During the parsing of the script, the Registrar expands `'%MODULE%, 1'` to `c:\mycode\mydll.dll, 1`.  
   

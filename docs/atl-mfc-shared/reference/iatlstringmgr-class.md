@@ -121,7 +121,7 @@ void Free(CStringData* pData) throw();
  A pointer to the memory block to be freed.  
   
 ### Remarks  
- Frees the specified memory block previously allocated by [Allocate](#iatlstringmgr__allocate) or [Reallocate](../Topic/IAtlMemMgr::Reallocate.md).  
+ Frees the specified memory block previously allocated by [Allocate](#iatlstringmgr__allocate) or [Reallocate](../topic/iatlmemmgr::reallocate.md).  
   
 > [!NOTE]
 >  For usage examples, see [Memory Management and CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).  

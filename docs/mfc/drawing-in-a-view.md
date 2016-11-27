@@ -56,7 +56,7 @@ Nearly all drawing in your application occurs in the view's `OnDraw` member func
   
  Your code for drawing in the view first retrieves a pointer to the document, then makes drawing calls through the device context. The following simple `OnDraw` example illustrates the process:  
   
- [!code-cpp[NVC_MFCDocView#1](../mfc/codesnippet/CPP/drawing-in-a-view_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#1](../mfc/codesnippet/cpp/drawing-in-a-view_1.cpp)]  
   
  In this example, you would define the `GetData` function as a member of your derived document class.  
   

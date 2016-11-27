@@ -98,7 +98,7 @@ CFont();
  The resulting object must be initialized with `CreateFont`, `CreateFontIndirect`, `CreatePointFont`, or `CreatePointFontIndirect` before it can be used.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#70](../../mfc/codesnippet/CPP/cfont-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#70](../../mfc/codesnippet/cpp/cfont-class_1.cpp)]  
   
 ##  <a name="cfont__createfont"></a>  CFont::CreateFont  
  Initializes a `CFont` object with the specified characteristics.  
@@ -187,7 +187,7 @@ BOOL CreateFont(
  When you finish with the `CFont` object created by the `CreateFont` function, use `CDC::SelectObject` to select a different font into the device context, then delete the `CFont` object that is no longer needed.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#71](../../mfc/codesnippet/CPP/cfont-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#71](../../mfc/codesnippet/cpp/cfont-class_2.cpp)]  
   
 ##  <a name="cfont__createfontindirect"></a>  CFont::CreateFontIndirect  
  Initializes a `CFont` object with the characteristics given in a [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037)structure.  
@@ -211,7 +211,7 @@ BOOL CreateFontIndirect(const LOGFONT* lpLogFont);
  When you no longer need the `CFont` object created by the `CreateFontIndirect` function, use `CDC::SelectObject` to select a different font into the device context, then delete the `CFont` object that is no longer needed.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#72](../../mfc/codesnippet/CPP/cfont-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#72](../../mfc/codesnippet/cpp/cfont-class_3.cpp)]  
   
 ##  <a name="cfont__createpointfont"></a>  CFont::CreatePointFont  
  This function provides a simple way to create a font of a specified typeface and point size.  
@@ -242,7 +242,7 @@ BOOL CreatePointFont(
  When you finish with the `CFont` object created by the `CreatePointFont` function, first select the font out of the device context, then delete the `CFont` object.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#73](../../mfc/codesnippet/CPP/cfont-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDocView#73](../../mfc/codesnippet/cpp/cfont-class_4.cpp)]  
   
 ##  <a name="cfont__createpointfontindirect"></a>  CFont::CreatePointFontIndirect  
  This function is the same as [CreateFontIndirect](#cfont__createfontindirect) except that the **lfHeight** member of the `LOGFONT` is interpreted in tenths of a point rather than device units.  
@@ -269,7 +269,7 @@ BOOL CreatePointFontIndirect(
  When you finish with the `CFont` object created by the `CreatePointFontIndirect` function, first select the font out of the device context, then delete the `CFont` object.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#74](../../mfc/codesnippet/CPP/cfont-class_5.cpp)]  
+ [!code-cpp[NVC_MFCDocView#74](../../mfc/codesnippet/cpp/cfont-class_5.cpp)]  
   
 ##  <a name="cfont__fromhandle"></a>  CFont::FromHandle  
  Returns a pointer to a `CFont` object when given an **HFONT** handle to a Windows GDI font object.  
@@ -289,7 +289,7 @@ static CFont* PASCAL FromHandle(HFONT hFont);
  If a `CFont` object is not already attached to the handle, a temporary `CFont` object is created and attached. This temporary `CFont` object is valid only until the next time the application has idle time in its event loop, at which time all temporary graphic objects are deleted. Another way of saying this is that the temporary object is valid only during the processing of one window message.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#75](../../mfc/codesnippet/CPP/cfont-class_6.cpp)]  
+ [!code-cpp[NVC_MFCDocView#75](../../mfc/codesnippet/cpp/cfont-class_6.cpp)]  
   
 ##  <a name="cfont__getlogfont"></a>  CFont::GetLogFont  
  Call this function to retrieve a copy of the `LOGFONT` structure for `CFont`.  
@@ -306,7 +306,7 @@ int GetLogFont(LOGFONT* pLogFont);
  Nonzero if the function succeeds, otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#76](../../mfc/codesnippet/CPP/cfont-class_7.cpp)]  
+ [!code-cpp[NVC_MFCDocView#76](../../mfc/codesnippet/cpp/cfont-class_7.cpp)]  
   
 ##  <a name="cfont__operator_hfont"></a>  CFont::operator HFONT  
  Use this operator to get the Windows GDI handle of the font attached to the `CFont` object.  
@@ -325,7 +325,7 @@ int GetLogFont(LOGFONT* pLogFont);
  For more information about using graphic objects, see [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#77](../../mfc/codesnippet/CPP/cfont-class_8.cpp)]  
+ [!code-cpp[NVC_MFCDocView#77](../../mfc/codesnippet/cpp/cfont-class_8.cpp)]  
   
 ## See Also  
  [MFC Sample HIERSVR](../../visual-cpp-samples.md)   

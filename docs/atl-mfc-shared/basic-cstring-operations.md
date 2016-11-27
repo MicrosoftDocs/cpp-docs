@@ -50,7 +50,7 @@ This topic explains the following basic [CString](../atl-mfc-shared/reference/cs
   
 - [Converting CString objects](#_core_converting_cstring_objects)  
   
- `Class CString` is based on class template [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md). `CString` is a `typedef` of `CStringT`. More exactly, `CString` is a `typedef` of an *explicit specialization* of `CStringT`, which is a common way to use a class template to define a class. Similarly defined classes are `CStringA` and `CStringW`. For more information on explicit specialization, see [Class Template Instantiation](../Topic/Class%20Template%20Instantiation.md).  
+ `Class CString` is based on class template [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md). `CString` is a `typedef` of `CStringT`. More exactly, `CString` is a `typedef` of an *explicit specialization* of `CStringT`, which is a common way to use a class template to define a class. Similarly defined classes are `CStringA` and `CStringW`. For more information on explicit specialization, see [Class Template Instantiation](../topic/class%20template%20instantiation.md).  
   
  `CString`, `CStringA`, and `CStringW` are defined in atlstr.h. `CStringT` is defined in cstringt.h.  
   
@@ -63,11 +63,11 @@ This topic explains the following basic [CString](../atl-mfc-shared/reference/cs
   
 -   Assign the value of a C literal string to a `CString` object.  
   
- [!code-cpp[NVC_ATLMFC_Utilities#183](../atl-mfc-shared/codesnippet/CPP/basic-cstring-operations_1.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#183](../atl-mfc-shared/codesnippet/cpp/basic-cstring-operations_1.cpp)]  
   
 -   Assign the value of one `CString` to another `CString` object.  
   
- [!code-cpp[NVC_ATLMFC_Utilities#184](../atl-mfc-shared/codesnippet/CPP/basic-cstring-operations_2.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#184](../atl-mfc-shared/codesnippet/cpp/basic-cstring-operations_2.cpp)]  
   
      The contents of a `CString` object are copied when one `CString` object is assigned to another. Therefore, the two strings do not share a reference to the actual characters that make up the string. For more information about how to use `CString` objects as values, see [CString Semantics](../atl-mfc-shared/cstring-semantics.md).  
   
@@ -80,7 +80,7 @@ This topic explains the following basic [CString](../atl-mfc-shared/reference/cs
 ##  <a name="_core_concatenating_two_cstring_objects"></a> Concatenating Two CString Objects  
  To concatenate two `CString` objects, use the concatenation operators (+ or +=), as follows.  
   
- [!code-cpp[NVC_ATLMFC_Utilities#185](../atl-mfc-shared/codesnippet/CPP/basic-cstring-operations_3.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#185](../atl-mfc-shared/codesnippet/cpp/basic-cstring-operations_3.cpp)]  
   
  At least one argument to the concatenation operators (+ or +=) must be a `CString` object, but you can use a constant character string (for example, `"big"`) or a `char` (for example, 'x') for the other argument.  
   
@@ -97,7 +97,7 @@ This topic explains the following basic [CString](../atl-mfc-shared/reference/cs
   
  The `CStringT` class template defines the relational operators (<, \<=, >=, >, ==, and !=), which are available for use by `CString`. You can compare two `CStrings` by using these operators, as shown in the following example.  
   
- [!code-cpp[NVC_ATLMFC_Utilities#186](../atl-mfc-shared/codesnippet/CPP/basic-cstring-operations_4.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#186](../atl-mfc-shared/codesnippet/cpp/basic-cstring-operations_4.cpp)]  
   
 ##  <a name="_core_converting_cstring_objects"></a> Converting CString Objects  
  For information about converting CString objects to other string types, see [How to: Convert Between Various String Types](../text/how-to-convert-between-various-string-types.md).  
@@ -117,8 +117,8 @@ CString cs("meow");
 ## See Also  
  [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)   
  [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md)   
- [Class Template Instantiation](../Topic/Class%20Template%20Instantiation.md)   
- [Explicit Specialization of Class Templates](../Topic/Explicit%20Specialization%20of%20Class%20Templates.md)   
+ [Class Template Instantiation](../topic/class%20template%20instantiation.md)   
+ [Explicit Specialization of Class Templates](../topic/explicit%20specialization%20of%20class%20templates.md)   
  [Template Specialization](../cpp/template-specialization-cpp.md)   
  [How to: Convert Between Various String Types](../text/how-to-convert-between-various-string-types.md)
 

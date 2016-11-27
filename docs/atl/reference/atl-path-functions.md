@@ -15,21 +15,21 @@ ms.author: "mblome"
 ---
 # ATL Path functions
 
-ATL provides the ATLPath class for manipulating paths in the form of [CPathT](CPathT-class.md). This code can be found in atlpath.h.  
+ATL provides the ATLPath class for manipulating paths in the form of [CPathT](cpatht-class.md). This code can be found in atlpath.h.  
   
 ### Related Classes  
   
 |||  
 |-|-|  
-|[CPathT Class](CPathT-class.md)|This class represents a path.|  
+|[CPathT Class](cpatht-class.md)|This class represents a path.|  
 
 ### Related Typedefs  
   
 |||  
 |-|-|  
-|[CPath](CPath.md)|A specialization of [CPathT](CPathT-class.md) using `CString`.|  
-|[CPathA](CPathA.md)|A specialization of [CPathT](CPathT-class.md) using `CStringA`.|  
-|[CPathW](CPathW.md)|A specialization of [CPathT](CPathT-class.md) using `CStringW`.|  
+|[CPath](cpath.md)|A specialization of [CPathT](cpatht-class.md) using `CString`.|  
+|[CPathA](cpatha.md)|A specialization of [CPathT](cpatht-class.md) using `CStringA`.|  
+|[CPathW](cpathw.md)|A specialization of [CPathT](cpatht-class.md) using `CStringW`.|  
   
 ### Functions  
   
@@ -53,7 +53,7 @@ ATL provides the ATLPath class for manipulating paths in the form of [CPathT](CP
 |[ATLPath::IsPrefix](#atlpath_isprefix)|This function is an overloaded wrapper for [PathIsPrefix](http://msdn.microsoft.com/library/windows/desktop/bb773650).|  
 |[ATLPath::IsRelative](#atlpath_isrelative)|This function is an overloaded wrapper for [PathIsRelative](http://msdn.microsoft.com/library/windows/desktop/bb773660).|  
 |[ATLPath::IsRoot](#atlpath_isroot)|This function is an overloaded wrapper for [PathIsRoot](http://msdn.microsoft.com/library/windows/desktop/bb773674).|  
-|[ATLPath::IsSameRoot](#atlpath_issameRoot)|This function is an overloaded wrapper for [PathIsSameRoot](http://msdn.microsoft.com/library/windows/desktop/bb773687).|  
+|[ATLPath::IsSameRoot](#atlpath_issameroot)|This function is an overloaded wrapper for [PathIsSameRoot](http://msdn.microsoft.com/library/windows/desktop/bb773687).|  
 |[ATLPath::IsUNC](#atlpath_isunc)|This function is an overloaded wrapper for [PathIsUNC](http://msdn.microsoft.com/library/windows/desktop/bb773712).|  
 |[ATLPath::IsUNCServer](#atlpath_isuncserver)|This function is an overloaded wrapper for [PathIsUNCServer](http://msdn.microsoft.com/library/windows/desktop/bb773722).|  
 |[ATLPath::IsUNCServerShare](#atlpath_isuncservershare)|This function is an overloaded wrapper for [PathIsUNCServerShare](http://msdn.microsoft.com/library/windows/desktop/bb773723).|  

@@ -45,7 +45,7 @@ This example shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/e
   
  This document first shows how to create `HttpRequest` and its supporting classes. It then shows how to use this class from a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app that uses C++ and XAML.  
   
- For a more complete example that uses the `HttpReader` class described in this document, see [Developing Bing Maps Trip Optimizer, a Windows Store app in JavaScript and C++](http://msdn.microsoft.com/Library/974cf025-de1a-4299-b7dd-c6c7bf0e5d30). For another example that uses `IXMLHTTPRequest2` but does not use tasks, see [Quickstart: Connecting using XML HTTP Request (IXMLHTTPRequest2)](http://msdn.microsoft.com/en-us/cc7aed53-b2c5-4d83-b85d-cff2f5ba7b35).  
+ For a more complete example that uses the `HttpReader` class described in this document, see [Developing Bing Maps Trip Optimizer, a Windows Store app in JavaScript and C++](http://msdn.microsoft.com/library/974cf025-de1a-4299-b7dd-c6c7bf0e5d30). For another example that uses `IXMLHTTPRequest2` but does not use tasks, see [Quickstart: Connecting using XML HTTP Request (IXMLHTTPRequest2)](http://msdn.microsoft.com/en-us/cc7aed53-b2c5-4d83-b85d-cff2f5ba7b35).  
   
 > [!TIP]
 >  `IXMLHTTPRequest2` and `IXMLHTTPRequest2Callback` are the interfaces that we recommend for use in a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app. You can also adapt this example for use in a desktop app.  
@@ -69,15 +69,15 @@ This example shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/e
   
 3.  In pch.h, add this code:  
   
-     [!code-cpp[concrt-using-ixhr2#1](../../parallel/concrt/codesnippet/CPP/walkthrough-connecting-using-tasks-and-xml-http-requests_1.h)]  
+     [!code-cpp[concrt-using-ixhr2#1](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_1.h)]  
   
 4.  In HttpRequest.h, add this code:  
   
-     [!code-cpp[concrt-using-ixhr2#2](../../parallel/concrt/codesnippet/CPP/walkthrough-connecting-using-tasks-and-xml-http-requests_2.h)]  
+     [!code-cpp[concrt-using-ixhr2#2](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_2.h)]  
   
 5.  In HttpRequest.cpp, add this code:  
   
-     [!code-cpp[concrt-using-ixhr2#3](../../parallel/concrt/codesnippet/CPP/walkthrough-connecting-using-tasks-and-xml-http-requests_3.cpp)]  
+     [!code-cpp[concrt-using-ixhr2#3](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_3.cpp)]  
   
 ## Using the HttpRequest Class in a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] App  
  This section demonstrates how to use the `HttpRequest` class in a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app. The app provides an input box that defines a URL resource, and button commands that perform GET and POST operations, and a button command that cancels the current operation.  
@@ -86,40 +86,40 @@ This example shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/e
   
 1.  In MainPage.xaml, define the [StackPanel](http://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.stackpanel.aspx) element as follows.  
   
-     [!code-xml[concrt-using-ixhr2#A1](../../parallel/concrt/codesnippet/Xaml/walkthrough-connecting-using-tasks-and-xml-http-requests_4.xaml)]  
+     [!code-xml[concrt-using-ixhr2#A1](../../parallel/concrt/codesnippet/xaml/walkthrough-connecting-using-tasks-and-xml-http-requests_4.xaml)]  
   
 2.  In MainPage.xaml.h, add this `#include` directive:  
   
-     [!code-cpp[concrt-using-ixhr2#A2](../../parallel/concrt/codesnippet/CPP/walkthrough-connecting-using-tasks-and-xml-http-requests_5.h)]  
+     [!code-cpp[concrt-using-ixhr2#A2](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_5.h)]  
   
 3.  In MainPage.xaml.h, add these `private` member variables to the `MainPage` class:  
   
-     [!code-cpp[concrt-using-ixhr2#A3](../../parallel/concrt/codesnippet/CPP/walkthrough-connecting-using-tasks-and-xml-http-requests_6.h)]  
+     [!code-cpp[concrt-using-ixhr2#A3](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_6.h)]  
   
 4.  In MainPage.xaml.h, declare the `private` method `ProcessHttpRequest`:  
   
-     [!code-cpp[concrt-using-ixhr2#A4](../../parallel/concrt/codesnippet/CPP/walkthrough-connecting-using-tasks-and-xml-http-requests_7.h)]  
+     [!code-cpp[concrt-using-ixhr2#A4](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_7.h)]  
   
 5.  In MainPage.xaml.cpp, add these `using` statements:  
   
-     [!code-cpp[concrt-using-ixhr2#A5](../../parallel/concrt/codesnippet/CPP/walkthrough-connecting-using-tasks-and-xml-http-requests_8.cpp)]  
+     [!code-cpp[concrt-using-ixhr2#A5](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_8.cpp)]  
   
 6.  In MainPage.xaml.cpp, implement the `GetButton_Click`, `PostButton_Click`, and `CancelButton_Click` methods of the `MainPage` class.  
   
-     [!code-cpp[concrt-using-ixhr2#A6](../../parallel/concrt/codesnippet/CPP/walkthrough-connecting-using-tasks-and-xml-http-requests_9.cpp)]  
+     [!code-cpp[concrt-using-ixhr2#A6](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_9.cpp)]  
   
     > [!TIP]
     >  If your app does not require support for cancellation, pass [concurrency::cancellation_token::none](reference/cancellation_token-class.md#cancellation_token__none_method) to the `HttpRequest::GetAsync` and `HttpRequest::PostAsync` methods.  
   
 7.  In MainPage.xaml.cpp, implement the `MainPage::ProcessHttpRequest` method.  
   
-     [!code-cpp[concrt-using-ixhr2#A7](../../parallel/concrt/codesnippet/CPP/walkthrough-connecting-using-tasks-and-xml-http-requests_10.cpp)]  
+     [!code-cpp[concrt-using-ixhr2#A7](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_10.cpp)]  
   
 8.  In the project properties, under **Linker**, **Input**, specify `shcore.lib` and `msxml6.lib`.  
   
  Here is the running app:  
   
- ![The running Windows Store app](../../parallel/concrt/media/concrt_usingixhr2.png "ConcRT_UsingIXHR2")  
+ ![The running Windows Store app](../../parallel/concrt/media/concrt_usingixhr2.png "concrt_usingixhr2")  
   
 ## Next Steps  
  [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)  

@@ -116,7 +116,7 @@ The Microsoft Foundation Class Library supports dockable toolbars. A dockable to
 ##  <a name="_core_setting_wrap_positions_for_a_fixed.2d.style_toolbar"></a> Setting Wrap Positions for a Fixed-Style Toolbar  
  For a toolbar with the size fixed style, designate toolbar button indexes at which the toolbar will wrap. The following code shows how to do this in your main frame window's `OnCreate` override:  
   
- [!code-cpp[NVC_MFCDocViewSDI#10](../mfc/codesnippet/CPP/docking-and-floating-toolbars_1.cpp)]  
+ [!code-cpp[NVC_MFCDocViewSDI#10](../mfc/codesnippet/cpp/docking-and-floating-toolbars_1.cpp)]  
   
  The MFC General sample [DOCKTOOL](../visual-cpp-samples.md) shows how to use member functions of classes [CControlBar](../mfc/reference/ccontrolbar-class.md) and [CToolBar](../mfc/reference/ctoolbar-class.md) to manage dynamic layout of a toolbar. See the file EDITBAR.CPP in DOCKTOOL.  
   

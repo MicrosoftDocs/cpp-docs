@@ -70,7 +70,7 @@ Visual C++ provides several ways to manage string data:
 > [!NOTE]
 >  which the compiler treats as a Unicode string. For example, the following code:  
   
- [!code-cpp[NVC_ATLMFC_Utilities#187](../atl-mfc-shared/codesnippet/CPP/string-data-management_1.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#187](../atl-mfc-shared/codesnippet/cpp/string-data-management_1.cpp)]  
   
 > [!NOTE]
 >  is translated as a Unicode string if **_UNICODE** is defined or as an ANSI string if not. For more information, see the article [Unicode and Multibyte Character Set (MBCS) Support](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md).  

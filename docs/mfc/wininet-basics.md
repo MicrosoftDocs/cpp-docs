@@ -54,16 +54,16 @@ You can use WinInet to add FTP support to download and upload files from within 
  For additional information on WinInet, see [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md).  
   
 ##  <a name="_core_create_a_very_simple_browser"></a> Create a Very Simple Browser  
- [!code-cpp[NVC_MFCWinInet#1](../mfc/codesnippet/CPP/wininet-basics_1.cpp)]  
+ [!code-cpp[NVC_MFCWinInet#1](../mfc/codesnippet/cpp/wininet-basics_1.cpp)]  
   
 ##  <a name="_core_download_a_web_page"></a> Download a Web Page  
- [!code-cpp[NVC_MFCWinInet#2](../mfc/codesnippet/CPP/wininet-basics_2.cpp)]  
+ [!code-cpp[NVC_MFCWinInet#2](../mfc/codesnippet/cpp/wininet-basics_2.cpp)]  
   
 ##  <a name="_core_ftp_a_file"></a> FTP a File  
- [!code-cpp[NVC_MFCWinInet#3](../mfc/codesnippet/CPP/wininet-basics_3.cpp)]  
+ [!code-cpp[NVC_MFCWinInet#3](../mfc/codesnippet/cpp/wininet-basics_3.cpp)]  
   
 ##  <a name="_core_retrieve_a_gopher_directory"></a> Retrieve a Gopher Directory  
- [!code-cpp[NVC_MFCWinInet#4](../mfc/codesnippet/CPP/wininet-basics_4.cpp)]  
+ [!code-cpp[NVC_MFCWinInet#4](../mfc/codesnippet/cpp/wininet-basics_4.cpp)]  
   
 ## Use OnStatusCallback  
  When using the WinInet classes, you can use the [OnStatusCallback](../mfc/reference/cinternetsession-class.md#cinternetsession__onstatuscallback) member of your application's [CInternetSession](../mfc/reference/cinternetsession-class.md) object to retrieve status information. If you derive your own `CInternetSession` object, override `OnStatusCallback`, and enable status callbacks, MFC will call your `OnStatusCallback` function with progress information about all the activity in that Internet session.  

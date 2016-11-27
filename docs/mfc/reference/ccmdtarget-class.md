@@ -113,7 +113,7 @@ void BeginWaitCursor();
  Call `EndWaitCursor` to restore the previous cursor.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/CPP/ccmdtarget-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/cpp/ccmdtarget-class_1.cpp)]  
   
 ##  <a name="ccmdtarget__ccmdtarget"></a>  CCmdTarget::CCmdTarget  
  Constructs a `CCmdTarget` object.  
@@ -193,7 +193,7 @@ void EndWaitCursor();
  The framework also calls this member function after it has called the hourglass cursor.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/CPP/ccmdtarget-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/cpp/ccmdtarget-class_1.cpp)]  
   
 ##  <a name="ccmdtarget__enumoleverbs"></a>  CCmdTarget::EnumOleVerbs  
  Enumerates an object's OLE verbs.  
@@ -419,9 +419,9 @@ virtual BOOL OnCmdMsg(
 |CN_OLE_UNREGISTER|NULL|  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#44](../../mfc/codesnippet/CPP/ccmdtarget-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#44](../../mfc/codesnippet/cpp/ccmdtarget-class_2.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#45](../../mfc/codesnippet/CPP/ccmdtarget-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#45](../../mfc/codesnippet/cpp/ccmdtarget-class_3.cpp)]  
   
 ##  <a name="ccmdtarget__onfinalrelease"></a>  CCmdTarget::OnFinalRelease  
  Called by the framework when the last OLE reference to or from the object is released.  
@@ -441,7 +441,7 @@ void RestoreWaitCursor();
 ```  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/CPP/ccmdtarget-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/cpp/ccmdtarget-class_1.cpp)]  
   
 ## See Also  
  [MFC Sample ACDUAL](../../visual-cpp-samples.md)   

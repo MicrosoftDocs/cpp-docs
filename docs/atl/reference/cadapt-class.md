@@ -67,9 +67,9 @@ template <class T>  class CAdapt
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAdapt::operator const T&](../Topic/CAdapt::operator%20const%20T&.md)|Returns a `const` reference to `m_T`.|  
-|[CAdapt::operator T&](../Topic/CAdapt::operator%20T&.md)|Returns a reference to `m_T`.|  
-|[CAdapt::operator <](../Topic/CAdapt::operator%20%3C.md)|Compares an object of the adapted type with `m_T`.|  
+|[CAdapt::operator const T&](../topic/cadapt::operator%20const%20t&.md)|Returns a `const` reference to `m_T`.|  
+|[CAdapt::operator T&](../topic/cadapt::operator%20t&.md)|Returns a reference to `m_T`.|  
+|[CAdapt::operator <](../topic/cadapt::operator%20%3c.md)|Compares an object of the adapted type with `m_T`.|  
 |[CAdapt::operator =](#cadapt__operator_eq)|Assigns an object of the adapted type to `m_T`.|  
 |[CAdapt::operator ==](#cadapt__operator_eq_eq)|Compares an object of the adapted type with `m_T`.|  
   
@@ -86,7 +86,7 @@ template <class T>  class CAdapt
   
  The adapter class `CAdapt` is useful because some container-style classes expect to be able to obtain the addresses of their contained objects using the address-of operator. The redefinition of the address-of operator can confound this requirement, typically causing compilation errors and preventing the use of the non-adapted type with classes that expect it to "just work". `CAdapt` provides a way around those problems.  
   
- Typically, you will use `CAdapt` when you want to store `CComBSTR`, `CComPtr`, `CComQIPtr`, or `_com_ptr_t` objects in a container-style class. This was most commonly necessary for C++ Standard Library containers prior to support for the C++11 Standard, but C++11 Standard Library containers automatically work with types that have overloaded `operator&()`. The Standard Library achieves this by internally using [std::addressof()](http://msdn.microsoft.com/Library/6243ddc8-486a-4961-8b0c-33e9dc2e0648) to get the true addresses of objects.  
+ Typically, you will use `CAdapt` when you want to store `CComBSTR`, `CComPtr`, `CComQIPtr`, or `_com_ptr_t` objects in a container-style class. This was most commonly necessary for C++ Standard Library containers prior to support for the C++11 Standard, but C++11 Standard Library containers automatically work with types that have overloaded `operator&()`. The Standard Library achieves this by internally using [std::addressof()](http://msdn.microsoft.com/library/6243ddc8-486a-4961-8b0c-33e9dc2e0648) to get the true addresses of objects.  
   
 ## Requirements  
  **Header:** atlcomcli.h  
@@ -116,7 +116,7 @@ T m_T;
 ```  
   
 ### Remarks  
- This **public** data member can be accessed directly or indirectly with [operator const T&](../Topic/CAdapt::operator%20const%20T&.md) and [operator T&](../Topic/CAdapt::operator%20T&.md).  
+ This **public** data member can be accessed directly or indirectly with [operator const T&](../topic/cadapt::operator%20const%20t&.md) and [operator T&](../topic/cadapt::operator%20t&.md).  
   
 ##  <a name="cadapt__operator_const_t_amp"></a>  CAdapt::operator const T&amp;  
  Returns a **const** reference to the [m_T](#cadapt__m_t) member, allowing the adapter object to be treated as if it were an object of type `T`.  

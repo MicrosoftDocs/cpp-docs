@@ -205,7 +205,7 @@ virtual BOOL Create(
  It also sets the toolbar height to a default value.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#179](../../mfc/codesnippet/CPP/ctoolbar-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#179](../../mfc/codesnippet/cpp/ctoolbar-class_1.cpp)]  
   
 ##  <a name="ctoolbar__createex"></a>  CToolBar::CreateEx  
  Call this function to create a Windows toolbar (a child window) and associate it with the `CToolBar` object.  
@@ -248,7 +248,7 @@ virtual BOOL CreateEx(
  Use `CreateEx`, instead of [Create](#ctoolbar__create), when certain styles need to be present during the creation of the embedded tool bar control. For example, set `dwCtrlStyle` to **TBSTYLE_FLAT &#124; TBSTYLE_TRANSPARENT** to create a toolbar that resembles the Internet Explorer 4 toolbars.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#180](../../mfc/codesnippet/CPP/ctoolbar-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#180](../../mfc/codesnippet/cpp/ctoolbar-class_2.cpp)]  
   
 ##  <a name="ctoolbar__ctoolbar"></a>  CToolBar::CToolBar  
  This member function constructs a `CToolBar` object and sets the default sizes.  
@@ -402,7 +402,7 @@ CToolBarCtrl& GetToolBarCtrl() const;
  For more information about using common controls, see the article [Controls](../../mfc/controls-mfc.md) and [Common Controls](http://msdn.microsoft.com/library/windows/desktop/bb775493) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocViewSDI#15](../../mfc/codesnippet/CPP/ctoolbar-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocViewSDI#15](../../mfc/codesnippet/cpp/ctoolbar-class_3.cpp)]  
   
 ##  <a name="ctoolbar__loadbitmap"></a>  CToolBar::LoadBitmap  
  Call this member function to load the bitmap specified by `lpszResourceName` or `nIDResource`.  
@@ -517,7 +517,7 @@ void SetButtonInfo(
  For separators, which have the style **TBBS_SEPARATOR**, this function sets the separator's width in pixels to the value stored in `iImage`.  
   
 > [!NOTE]
->  You can also set button states using the `nStyle` parameter; however, because button states are controlled by the [ON_UPDATE_COMMAND_UI](http://msdn.microsoft.com/Library/c4de3c21-2d2e-4b89-a4ce-d0c0e2d9edc4) handler, any state you set using `SetButtonInfo` will be lost during the next idle processing. See [How to Update User-Interface Objects](../../mfc/how-to-update-user-interface-objects.md) and [TN031: Control Bars](../../mfc/tn031-control-bars.md) for more information.  
+>  You can also set button states using the `nStyle` parameter; however, because button states are controlled by the [ON_UPDATE_COMMAND_UI](http://msdn.microsoft.com/library/c4de3c21-2d2e-4b89-a4ce-d0c0e2d9edc4) handler, any state you set using `SetButtonInfo` will be lost during the next idle processing. See [How to Update User-Interface Objects](../../mfc/how-to-update-user-interface-objects.md) and [TN031: Control Bars](../../mfc/tn031-control-bars.md) for more information.  
   
  For information on bitmap images and buttons, see the [CToolBar](../../mfc/reference/ctoolbar-class.md) Overview and [CToolBar::LoadBitmap](#ctoolbar__loadbitmap).  
   
@@ -585,7 +585,7 @@ void SetButtonStyle(
  Before calling `SetButtonStyle`, call the [GetButtonStyle](#ctoolbar__getbuttonstyle) member function to retrieve the button or separator style.  
   
 > [!NOTE]
->  You can also set button states using the `nStyle` parameter; however, because button states are controlled by the [ON_UPDATE_COMMAND_UI](http://msdn.microsoft.com/Library/c4de3c21-2d2e-4b89-a4ce-d0c0e2d9edc4) handler, any state you set using `SetButtonStyle` will be lost during the next idle processing. See [How to Update User-Interface Objects](../../mfc/how-to-update-user-interface-objects.md) and [TN031: Control Bars](../../mfc/tn031-control-bars.md) for more information.  
+>  You can also set button states using the `nStyle` parameter; however, because button states are controlled by the [ON_UPDATE_COMMAND_UI](http://msdn.microsoft.com/library/c4de3c21-2d2e-4b89-a4ce-d0c0e2d9edc4) handler, any state you set using `SetButtonStyle` will be lost during the next idle processing. See [How to Update User-Interface Objects](../../mfc/how-to-update-user-interface-objects.md) and [TN031: Control Bars](../../mfc/tn031-control-bars.md) for more information.  
   
 ##  <a name="ctoolbar__setbuttontext"></a>  CToolBar::SetButtonText  
  Call this function to set the text on a button.  
@@ -647,7 +647,7 @@ void SetSizes(
  Call this member function only for toolbars that do not follow *Windows Interface Guidelines for Software Design* recommendations for button and image sizes.  
   
 ### Example  
- [!code-cpp[NVC_MFCListView#8](../../atl/reference/codesnippet/CPP/ctoolbar-class_4.cpp)]  
+ [!code-cpp[NVC_MFCListView#8](../../atl/reference/codesnippet/cpp/ctoolbar-class_4.cpp)]  
   
 ## See Also  
  [MFC Sample CTRLBARS](../../visual-cpp-samples.md)   

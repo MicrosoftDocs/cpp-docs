@@ -106,7 +106,7 @@ class CUrl
   
  [CUrl::CrackUrl](#curl__crackurl) parses it as follows:  
   
--   Scheme: "http" or [ATL_URL_SCHEME_HTTP](http://msdn.microsoft.com/Library/f4131046-8ba0-4ec1-8209-84203f05d20e)  
+-   Scheme: "http" or [ATL_URL_SCHEME_HTTP](http://msdn.microsoft.com/library/f4131046-8ba0-4ec1-8209-84203f05d20e)  
   
 -   UserName: "someone"  
   
@@ -210,7 +210,7 @@ inline BOOL CreateUrl(LPTSTR lpszUrl,
 ### Example  
  This sample demonstrates creation of a CUrl object and retrieving its URL string  
   
- [!code-cpp[NVC_ATL_Utilities#133](../../atl/codesnippet/CPP/curl-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#133](../../atl/codesnippet/cpp/curl-class_1.cpp)]  
   
 ##  <a name="curl__curl"></a>  CUrl::CUrl  
  The constructor.  
@@ -309,7 +309,7 @@ inline ATL_URL_SCHEME GetScheme() const throw();
 ```  
   
 ### Return Value  
- Returns the [ATL_URL_SCHEME](http://msdn.microsoft.com/Library/f4131046-8ba0-4ec1-8209-84203f05d20e) value describing the scheme of the URL.  
+ Returns the [ATL_URL_SCHEME](http://msdn.microsoft.com/library/f4131046-8ba0-4ec1-8209-84203f05d20e) value describing the scheme of the URL.  
   
 ##  <a name="curl__getschemename"></a>  CUrl::GetSchemeName  
  Call this method to get the URL scheme name.  
@@ -460,7 +460,7 @@ inline BOOL SetScheme(ATL_URL_SCHEME nScheme) throw();
   
 ### Parameters  
  `nScheme`  
- One of the [ATL_URL_SCHEME](http://msdn.microsoft.com/Library/f4131046-8ba0-4ec1-8209-84203f05d20e) values for the scheme.  
+ One of the [ATL_URL_SCHEME](http://msdn.microsoft.com/library/f4131046-8ba0-4ec1-8209-84203f05d20e) values for the scheme.  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  
@@ -483,7 +483,7 @@ inline BOOL SetSchemeName(LPCTSTR lpszSchm) throw();
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- You can also set the scheme by using an [ATL_URL_SCHEME](http://msdn.microsoft.com/Library/f4131046-8ba0-4ec1-8209-84203f05d20e) constant (see [CUrl::SetScheme](#curl__setscheme)).  
+ You can also set the scheme by using an [ATL_URL_SCHEME](http://msdn.microsoft.com/library/f4131046-8ba0-4ec1-8209-84203f05d20e) constant (see [CUrl::SetScheme](#curl__setscheme)).  
   
 ##  <a name="curl__seturlpath"></a>  CUrl::SetUrlPath  
  Call this method to set the URL path.  

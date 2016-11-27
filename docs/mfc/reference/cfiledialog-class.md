@@ -153,7 +153,7 @@ class CFileDialog : public CCommonDialog
  After you initialize the dialog box controls, call the [CFileDialog::DoModal](#cfiledialog__domodal) method to display the dialog box so that the user can type the path and file name. `DoModal` returns whether the user clicked the OK (IDOK) or the Cancel (IDCANCEL) button. If `DoModal` returns IDOK, you can use one of the `CFileDialog` public member functions to retrieve the information put in by the user.  
   
 > [!NOTE]
->  Under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)], multiple calls to [IFileDialog::SetFileTypes](http://msdn.microsoft.com/library/windows/desktop/bb775980) causes an error. The second call to `SetFileTypes` for any instance of a `CFileDialog` will return `E_UNEXPECTED` in [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]. Some `CFileDialog` method functions call `SetFileTypes`. For example, two calls to `CFileDialog::DoModal` for the same instance of a `CFileDialog` generates [ASSERT](http://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c).  
+>  Under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)], multiple calls to [IFileDialog::SetFileTypes](http://msdn.microsoft.com/library/windows/desktop/bb775980) causes an error. The second call to `SetFileTypes` for any instance of a `CFileDialog` will return `E_UNEXPECTED` in [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]. Some `CFileDialog` method functions call `SetFileTypes`. For example, two calls to `CFileDialog::DoModal` for the same instance of a `CFileDialog` generates [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c).  
   
  `CFileDialog` includes several protected members that let you do custom handling of share violations, file name validation, and list-box change notification. These protected members are callback functions that most applications do not have to use because default handling is performed automatically. Message-map entries for these functions are not required because they are standard virtual functions.  
   
@@ -167,7 +167,7 @@ class CFileDialog : public CCommonDialog
   
  The following example demonstrates how to use a buffer to retrieve and list multiple file names.  
   
- [!code-cpp[NVC_MFCFiles#23](../../atl-mfc-shared/reference/codesnippet/CPP/cfiledialog-class_1.cpp)]  
+ [!code-cpp[NVC_MFCFiles#23](../../atl-mfc-shared/reference/codesnippet/cpp/cfiledialog-class_1.cpp)]  
   
  To change the buffer size in response to the user selecting multiple file names, you must derive a new class from `CFileDialog` and override the [CFileDialog::OnFileNameChange](#cfiledialog__onfilenamechange) method.  
   
@@ -442,7 +442,7 @@ explicit CFileDialog(
   
  To enable the user to select multiple files, set the `OFN_ALLOWMULTISELECT` flag before you call [DoModal](#cfiledialog__domodal). You must supply your own file name buffer to store the returned list of multiple file names. Do this by replacing `m_ofn.lpstrFile` with a pointer to a buffer you have allocated, after you construct the [CFileDialog](../../mfc/reference/cfiledialog-class.md), but before you call `DoModal`. Additionally, you must set `m_ofn.nMaxFile` with the number of characters in the buffer pointed to by `m_ofn.lpstrFile`. If you set the maximum number of files to be selected to `n`, the necessary buffer size is `n`*(_MAX_PATH + 1) + 1. For example:  
   
- [!code-cpp[NVC_MFCFiles#23](../../atl-mfc-shared/reference/codesnippet/CPP/cfiledialog-class_1.cpp)]  
+ [!code-cpp[NVC_MFCFiles#23](../../atl-mfc-shared/reference/codesnippet/cpp/cfiledialog-class_1.cpp)]  
   
  To enable the user to resize an Explorer-style dialog box by using either the mouse or keyboard, set the `OFN_ENABLESIZING` flag. Setting this flag is necessary only if you provide a hook procedure or custom template. The flag works only with an Explorer-style dialog box; old-style dialog boxes cannot be resized.  
   
@@ -450,7 +450,7 @@ explicit CFileDialog(
   
  For example, [!INCLUDE[ofprexcel](../../mfc/reference/includes/ofprexcel_md.md)] allows users to open files that have extensions .xlc (chart) or .xls (worksheet), among others. The filter for Excel could be written as:  
   
- [!code-cpp[NVC_MFCFiles#24](../../atl-mfc-shared/reference/codesnippet/CPP/cfiledialog-class_2.cpp)]  
+ [!code-cpp[NVC_MFCFiles#24](../../atl-mfc-shared/reference/codesnippet/cpp/cfiledialog-class_2.cpp)]  
   
  However, if you plan to use this string to directly update the `OPENFILENAME` structure, you should delimit your strings with the null character, '\0', instead of the vertical bars ('&#124;').  
   
@@ -483,7 +483,7 @@ virtual INT_PTR DoModal();
  `DoModal` is a virtual function overridden from class `CDialog`.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#25](../../atl-mfc-shared/reference/codesnippet/CPP/cfiledialog-class_3.cpp)]  
+ [!code-cpp[NVC_MFCFiles#25](../../atl-mfc-shared/reference/codesnippet/cpp/cfiledialog-class_3.cpp)]  
   
 ##  <a name="cfiledialog__enableopendropdown"></a>  CFileDialog::EnableOpenDropDown  
  Enables a drop-down list on the Open or Save button in the dialog.  
@@ -675,7 +675,7 @@ IFileDialogCustomize* GetIFileDialogCustomize();
 ### Example  
  This example retrieves the internal COM object. To run this code example, you must compile it under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)].  
   
- [!code-cpp[NVC_MFC_CFileDialog#4](../../mfc/reference/codesnippet/CPP/cfiledialog-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_CFileDialog#4](../../mfc/reference/codesnippet/cpp/cfiledialog-class_4.cpp)]  
   
 ##  <a name="cfiledialog__getifileopendialog"></a>  CFileDialog::GetIFileOpenDialog  
  Retrieves a pointer to the internal COM object for a given `CFileDialog`.  
@@ -695,7 +695,7 @@ IFileOpenDialog* GetIFileOpenDialog();
 ### Example  
  This example retrieves the internal COM object. To run this code, you must compile it under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)].  
   
- [!code-cpp[NVC_MFC_CFileDialog#2](../../mfc/reference/codesnippet/CPP/cfiledialog-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_CFileDialog#2](../../mfc/reference/codesnippet/cpp/cfiledialog-class_5.cpp)]  
   
 ##  <a name="cfiledialog__getifilesavedialog"></a>  CFileDialog::GetIFileSaveDialog  
  Retrieves a pointer to the internal COM object for a given `CFileDialog`.  
@@ -715,7 +715,7 @@ IFileSaveDialog* GetIFileSaveDialog();
 ### Example  
  This example retrieves the internal COM object. To run this code example, you must compile it under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)].  
   
- [!code-cpp[NVC_MFC_CFileDialog#3](../../mfc/reference/codesnippet/CPP/cfiledialog-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_CFileDialog#3](../../mfc/reference/codesnippet/cpp/cfiledialog-class_6.cpp)]  
   
 ##  <a name="cfiledialog__getnextpathname"></a>  CFileDialog::GetNextPathName  
  Call this function to retrieve the next filename from the group selected in the dialog box.  
@@ -1395,7 +1395,7 @@ void UpdateOFNFromShellDialog();
 ### Example  
  This example updates the `CFileDialog` before displaying it. Before updating the `m_ofn` member variable, we need to synchronize it to the current state of the dialog box.  
   
- [!code-cpp[NVC_MFC_CFileDialog#1](../../mfc/reference/codesnippet/CPP/cfiledialog-class_7.cpp)]  
+ [!code-cpp[NVC_MFC_CFileDialog#1](../../mfc/reference/codesnippet/cpp/cfiledialog-class_7.cpp)]  
   
 ## See Also  
  [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)   

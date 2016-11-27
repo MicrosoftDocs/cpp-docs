@@ -48,7 +48,7 @@ This topic describes how to implement the producer-consumer pattern in your appl
   
  This example uses a [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) object to enable the producer to queue messages. The `unbounded_buffer` class implements `ITarget` and `ISource` so that the producer and the consumer can send and receive messages to and from a shared buffer. The `send` and `receive` functions coordinate the task of propagating the data from the producer to the consumer.  
   
- [!code-cpp[concrt-producer-consumer-average#1](../../parallel/concrt/codesnippet/CPP/how-to-implement-various-producer-consumer-patterns_1.cpp)]  
+ [!code-cpp[concrt-producer-consumer-average#1](../../parallel/concrt/codesnippet/cpp/how-to-implement-various-producer-consumer-patterns_1.cpp)]  
   
  This example produces the following output.  
   
@@ -61,7 +61,7 @@ The average is 50.
   
  This example resembles the previous one, except that it uses a [concurrency::overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md) object to enable the producer to share one message with the consumer. As in the previous example, `overwrite_buffer` class implements `ITarget` and `ISource` so that the producer and the consumer can act on a shared message buffer.  
   
- [!code-cpp[concrt-producer-consumer-quotes#1](../../parallel/concrt/codesnippet/CPP/how-to-implement-various-producer-consumer-patterns_2.cpp)]  
+ [!code-cpp[concrt-producer-consumer-quotes#1](../../parallel/concrt/codesnippet/cpp/how-to-implement-various-producer-consumer-patterns_2.cpp)]  
   
  This example produces the following sample output.  
   

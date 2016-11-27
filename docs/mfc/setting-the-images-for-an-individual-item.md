@@ -41,7 +41,7 @@ The different types of images used by the extended combo box item are determined
   
  The following example inserts a new extended combo box item (`cbi`) into the extended combo box control (`m_comboEx`), supplying indices for all three image states:  
   
- [!code-cpp[NVC_MFCControlLadenDialog#12](../mfc/codesnippet/CPP/setting-the-images-for-an-individual-item_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#12](../mfc/codesnippet/cpp/setting-the-images-for-an-individual-item_1.cpp)]  
   
 ## Setting the Image for an Existing Item  
  If you are modifying an existing item, you need to work with the **mask** member of a **COMBOBOXEXITEM** structure.  
@@ -58,7 +58,7 @@ The different types of images used by the extended combo box item are determined
   
  The following example demonstrates this procedure by swapping the selected and unselected images of the third extended combo box item:  
   
- [!code-cpp[NVC_MFCControlLadenDialog#13](../mfc/codesnippet/CPP/setting-the-images-for-an-individual-item_2.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#13](../mfc/codesnippet/cpp/setting-the-images-for-an-individual-item_2.cpp)]  
   
 ## See Also  
  [Using CComboBoxEx](../mfc/using-ccomboboxex.md)   

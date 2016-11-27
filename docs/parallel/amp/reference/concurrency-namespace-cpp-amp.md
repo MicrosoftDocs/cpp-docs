@@ -79,7 +79,7 @@ namespace Concurrency;
   
 |Name|Description|  
 |----------|-----------------|  
-|[access_type Enumeration](../Topic/access_type%20Enumeration.md)|Specifies the data access type.|  
+|[access_type Enumeration](../topic/access_type%20enumeration.md)|Specifies the data access type.|  
 |[queuing_mode Enumeration](../../../parallel/amp/reference/queuing-mode-enumeration.md)|Specifies the queuing modes that are supported on the accelerator.|  
   
 ### Operators  
@@ -113,9 +113,9 @@ namespace Concurrency;
 |[atomic_fetch_xor Function](concurrency-namespace-functions-amp.md#atomic_fetch_xor_function)|Overloaded. Sets the value stored at the specified location to the bitwise `xor` of that value and a specified value as an atomic operation.|  
 |[copy Function](concurrency-namespace-functions-amp.md#copy_function)|Copies a C++ AMP object. All synchronous data transfer requirements are met. Data can't be copied when code is running code on an accelerator. The general form of this function is `copy(src, dest)`.|  
 |[copy_async Function](concurrency-namespace-functions-amp.md#copy_async_function)|Copies a C++ AMP object and returns [completion_future](../../../parallel/amp/reference/completion-future-class.md) that can be waited on. Data can't be copied when code is running on an accelerator. The general form of this function is `copy(src, dest)`.|  
-|[direct3d_abort Function](../Topic/direct3d_abort%20Function.md)|Aborts the execution of a function that has the `restrict(amp)` restriction clause.|  
-|[direct3d_errorf Function](../Topic/direct3d_errorf%20Function.md)|Prints a formatted string to the Visual Studio **Output** window and raises a [runtime_exception](../../../parallel/amp/reference/runtime-exception-class.md) exception that has the same formatting string.|  
-|[direct3d_printf Function](../Topic/direct3d_printf%20Function.md)|Prints a formatted string to the Visual Studio **Output** window. It is called from a function that has the `restrict(amp)` restriction clause.|  
+|[direct3d_abort Function](../topic/direct3d_abort%20function.md)|Aborts the execution of a function that has the `restrict(amp)` restriction clause.|  
+|[direct3d_errorf Function](../topic/direct3d_errorf%20function.md)|Prints a formatted string to the Visual Studio **Output** window and raises a [runtime_exception](../../../parallel/amp/reference/runtime-exception-class.md) exception that has the same formatting string.|  
+|[direct3d_printf Function](../topic/direct3d_printf%20function.md)|Prints a formatted string to the Visual Studio **Output** window. It is called from a function that has the `restrict(amp)` restriction clause.|  
 |[global_memory_fence Function](concurrency-namespace-functions-amp.md#global_memory_fence_function)|Blocks execution of all threads in a tile until all global memory accesses have been completed.|  
 |[parallel_for_each Function (C++ AMP)](concurrency-namespace-functions-amp.md#parallel_for_each_function)|Runs a function across the compute domain.|  
 |[tile_static_memory_fence Function](concurrency-namespace-functions-amp.md#tile_static_memory_fence_function)|Blocks execution of all threads in a tile until `tile_static` memory accesses have been completed.|  
@@ -124,8 +124,8 @@ namespace Concurrency;
   
 |Name|Description|  
 |----------|-----------------|  
-|[HLSL_MAX_NUM_BUFFERS Constant](../Topic/HLSL_MAX_NUM_BUFFERS%20Constant.md)|The maximum number of buffers allowed by DirectX.|  
-|[MODULENAME_MAX_LENGTH Constant](../Topic/MODULENAME_MAX_LENGTH%20Constant.md)|Stores the maximum length of the module name. This value must be the same on the compiler and the runtime.|  
+|[HLSL_MAX_NUM_BUFFERS Constant](../topic/hlsl_max_num_buffers%20constant.md)|The maximum number of buffers allowed by DirectX.|  
+|[MODULENAME_MAX_LENGTH Constant](../topic/modulename_max_length%20constant.md)|Stores the maximum length of the module name. This value must be the same on the compiler and the runtime.|  
   
 ## Requirements  
  **Header:** amp.h  

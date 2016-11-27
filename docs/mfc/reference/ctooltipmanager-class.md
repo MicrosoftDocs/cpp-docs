@@ -154,7 +154,7 @@ void SetTooltipParams(
 ### Example  
  The following example demonstrates how to use the `SetTooltipParams` method of the `CTooltipManager` class. This code snippet is part of the [Draw Client sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_DrawClient#11](../../mfc/reference/codesnippet/CPP/ctooltipmanager-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_DrawClient#11](../../mfc/reference/codesnippet/cpp/ctooltipmanager-class_1.cpp)]  
   
 ##  <a name="ctooltipmanager__settooltiptext"></a>  CTooltipManager::SetTooltipText  
  Sets the text and description for a tooltip.  

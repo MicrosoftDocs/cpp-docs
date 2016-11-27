@@ -140,7 +140,7 @@ void AddHead(CObList* pNewList);
 ### Example  
   See [CObList::CObList](#coblist__coblist) for a listing of the `CAge` class.  
   
- [!code-cpp[NVC_MFCCollections#89](../../mfc/codesnippet/CPP/coblist-class_1.cpp)]  
+ [!code-cpp[NVC_MFCCollections#89](../../mfc/codesnippet/cpp/coblist-class_1.cpp)]  
   
  The results from this program are as follows:  
   
@@ -183,7 +183,7 @@ void AddTail(CObList* pNewList);
 ### Example  
   See [CObList::CObList](#coblist__coblist) for a listing of the `CAge` class.  
   
- [!code-cpp[NVC_MFCCollections#90](../../mfc/codesnippet/CPP/coblist-class_2.cpp)]  
+ [!code-cpp[NVC_MFCCollections#90](../../mfc/codesnippet/cpp/coblist-class_2.cpp)]  
   
  The results from this program are as follows:  
   
@@ -217,11 +217,11 @@ CObList(INT_PTR nBlockSize = 10);
 ### Example  
   Below is a listing of the `CObject`-derived class `CAge` used in all the collection examples:  
   
- [!code-cpp[NVC_MFCCollections#91](../../mfc/codesnippet/CPP/coblist-class_3.h)]  
+ [!code-cpp[NVC_MFCCollections#91](../../mfc/codesnippet/cpp/coblist-class_3.h)]  
   
  Below is an example of `CObList` constructor usage:  
   
- [!code-cpp[NVC_MFCCollections#92](../../mfc/codesnippet/CPP/coblist-class_4.cpp)]  
+ [!code-cpp[NVC_MFCCollections#92](../../mfc/codesnippet/cpp/coblist-class_4.cpp)]  
   
 ##  <a name="coblist__find"></a>  CObList::Find  
  Searches the list sequentially to find the first `CObject` pointer matching the specified `CObject` pointer.  
@@ -257,7 +257,7 @@ POSITION Find(
 ### Example  
  See [CObList::CObList](#coblist__coblist) for a listing of the `CAge` class.  
   
- [!code-cpp[NVC_MFCCollections#93](../../mfc/codesnippet/CPP/coblist-class_5.cpp)]  
+ [!code-cpp[NVC_MFCCollections#93](../../mfc/codesnippet/cpp/coblist-class_5.cpp)]  
   
 ##  <a name="coblist__findindex"></a>  CObList::FindIndex  
  Uses the value of `nIndex` as an index into the list.  
@@ -288,7 +288,7 @@ POSITION FindIndex(INT_PTR nIndex) const;
 ### Example  
  See [CObList::CObList](#coblist__coblist) for a listing of the `CAge` class.  
   
- [!code-cpp[NVC_MFCCollections#94](../../mfc/codesnippet/CPP/coblist-class_6.cpp)]  
+ [!code-cpp[NVC_MFCCollections#94](../../mfc/codesnippet/cpp/coblist-class_6.cpp)]  
   
 ##  <a name="coblist__getat"></a>  CObList::GetAt  
  A variable of type **POSITION** is a key for the list.  
@@ -346,7 +346,7 @@ INT_PTR GetCount() const;
 ### Example  
  See [CObList::CObList](#coblist__coblist) for a listing of the `CAge` class.  
   
- [!code-cpp[NVC_MFCCollections#95](../../mfc/codesnippet/CPP/coblist-class_7.cpp)]  
+ [!code-cpp[NVC_MFCCollections#95](../../mfc/codesnippet/cpp/coblist-class_7.cpp)]  
   
 ##  <a name="coblist__gethead"></a>  CObList::GetHead  
  Gets the `CObject` pointer that represents the head element of this list.  
@@ -380,7 +380,7 @@ const CObject*& GetHead() const;
   
  The following example illustrates the use of `GetHead` on the left side of an assignment statement.  
   
- [!code-cpp[NVC_MFCCollections#96](../../mfc/codesnippet/CPP/coblist-class_8.cpp)]  
+ [!code-cpp[NVC_MFCCollections#96](../../mfc/codesnippet/cpp/coblist-class_8.cpp)]  
   
 ##  <a name="coblist__getheadposition"></a>  CObList::GetHeadPosition  
  Gets the position of the head element of this list.  
@@ -404,7 +404,7 @@ POSITION GetHeadPosition() const;
 ### Example  
  See [CObList::CObList](#coblist__coblist) for a listing of the `CAge` class.  
   
- [!code-cpp[NVC_MFCCollections#97](../../mfc/codesnippet/CPP/coblist-class_9.cpp)]  
+ [!code-cpp[NVC_MFCCollections#97](../../mfc/codesnippet/cpp/coblist-class_9.cpp)]  
   
 ##  <a name="coblist__getnext"></a>  CObList::GetNext  
  Gets the list element identified by `rPosition`, then sets `rPosition` to the `POSITION` value of the next entry in the list.  
@@ -447,7 +447,7 @@ const CObject* GetNext(POSITION& rPosition) const;
 ### Example  
   See [CObList::CObList](#coblist__coblist) for a listing of the `CAge` class.  
   
- [!code-cpp[NVC_MFCCollections#98](../../mfc/codesnippet/CPP/coblist-class_10.cpp)]  
+ [!code-cpp[NVC_MFCCollections#98](../../mfc/codesnippet/cpp/coblist-class_10.cpp)]  
   
  The results from this program are as follows:  
   
@@ -494,7 +494,7 @@ const CObject* GetPrev(POSITION& rPosition) const;
 ### Example  
   See [CObList::CObList](#coblist__coblist) for a listing of the `CAge` class.  
   
- [!code-cpp[NVC_MFCCollections#99](../../mfc/codesnippet/CPP/coblist-class_11.cpp)]  
+ [!code-cpp[NVC_MFCCollections#99](../../mfc/codesnippet/cpp/coblist-class_11.cpp)]  
   
  The results from this program are as follows:  
   
@@ -527,7 +527,7 @@ INT_PTR GetSize() const;
 ### Example  
  See [CObList::CObList](#coblist__coblist) for a listing of the `CAge` class.  
   
- [!code-cpp[NVC_MFCCollections#100](../../mfc/codesnippet/CPP/coblist-class_12.cpp)]  
+ [!code-cpp[NVC_MFCCollections#100](../../mfc/codesnippet/cpp/coblist-class_12.cpp)]  
   
 ##  <a name="coblist__gettail"></a>  CObList::GetTail  
  Gets the `CObject` pointer that represents the tail element of this list.  
@@ -557,7 +557,7 @@ const CObject*& GetTail() const;
 ### Example  
  See [CObList::CObList](#coblist__coblist) for a listing of the `CAge` class.  
   
- [!code-cpp[NVC_MFCCollections#101](../../mfc/codesnippet/CPP/coblist-class_13.cpp)]  
+ [!code-cpp[NVC_MFCCollections#101](../../mfc/codesnippet/cpp/coblist-class_13.cpp)]  
   
 ##  <a name="coblist__gettailposition"></a>  CObList::GetTailPosition  
  Gets the position of the tail element of this list; **NULL** if the list is empty.  
@@ -581,7 +581,7 @@ POSITION GetTailPosition() const;
 ### Example  
  See [CObList::CObList](#coblist__coblist) for a listing of the `CAge` class.  
   
- [!code-cpp[NVC_MFCCollections#102](../../mfc/codesnippet/CPP/coblist-class_14.cpp)]  
+ [!code-cpp[NVC_MFCCollections#102](../../mfc/codesnippet/cpp/coblist-class_14.cpp)]  
   
 ##  <a name="coblist__insertafter"></a>  CObList::InsertAfter  
  Adds an element to this list after the element at the specified position.  
@@ -612,7 +612,7 @@ POSITION InsertAfter(
 ### Example  
   See [CObList::CObList](#coblist__coblist) for a listing of the `CAge` class.  
   
- [!code-cpp[NVC_MFCCollections#103](../../mfc/codesnippet/CPP/coblist-class_15.cpp)]  
+ [!code-cpp[NVC_MFCCollections#103](../../mfc/codesnippet/cpp/coblist-class_15.cpp)]  
   
  The results from this program are as follows:  
   
@@ -653,7 +653,7 @@ POSITION InsertBefore(
 ### Example  
   See [CObList::CObList](#coblist__coblist) for a listing of the `CAge` class.  
   
- [!code-cpp[NVC_MFCCollections#104](../../mfc/codesnippet/CPP/coblist-class_16.cpp)]  
+ [!code-cpp[NVC_MFCCollections#104](../../mfc/codesnippet/cpp/coblist-class_16.cpp)]  
   
  The results from this program are as follows:  
   
@@ -709,7 +709,7 @@ void RemoveAll();
 ### Example  
  See [CObList::CObList](#coblist__coblist) for a listing of the `CAge` class.  
   
- [!code-cpp[NVC_MFCCollections#105](../../mfc/codesnippet/CPP/coblist-class_17.cpp)]  
+ [!code-cpp[NVC_MFCCollections#105](../../mfc/codesnippet/cpp/coblist-class_17.cpp)]  
   
 ##  <a name="coblist__removeat"></a>  CObList::RemoveAt  
  Removes the specified element from this list.  
@@ -739,7 +739,7 @@ void RemoveAt(POSITION position);
   
  See [CObList::CObList](#coblist__coblist) for a listing of the `CAge` class.  
   
- [!code-cpp[NVC_MFCCollections#106](../../mfc/codesnippet/CPP/coblist-class_18.cpp)]  
+ [!code-cpp[NVC_MFCCollections#106](../../mfc/codesnippet/cpp/coblist-class_18.cpp)]  
   
  The results from this program are as follows:  
   
@@ -772,7 +772,7 @@ CObject* RemoveHead();
 ### Example  
  See [CObList::CObList](#coblist__coblist) for a listing of the `CAge` class.  
   
- [!code-cpp[NVC_MFCCollections#107](../../mfc/codesnippet/CPP/coblist-class_19.cpp)]  
+ [!code-cpp[NVC_MFCCollections#107](../../mfc/codesnippet/cpp/coblist-class_19.cpp)]  
   
 ##  <a name="coblist__removetail"></a>  CObList::RemoveTail  
  Removes the element from the tail of the list and returns a pointer to it.  
@@ -797,7 +797,7 @@ CObject* RemoveTail();
 ### Example  
  See [CObList::CObList](#coblist__coblist) for a listing of the `CAge` class.  
   
- [!code-cpp[NVC_MFCCollections#108](../../mfc/codesnippet/CPP/coblist-class_20.cpp)]  
+ [!code-cpp[NVC_MFCCollections#108](../../mfc/codesnippet/cpp/coblist-class_20.cpp)]  
   
 ##  <a name="coblist__setat"></a>  CObList::SetAt  
  Sets the element at a given position.  
@@ -830,7 +830,7 @@ void SetAt(
 ### Example  
   See [CObList::CObList](#coblist__coblist) for a listing of the `CAge` class.  
   
- [!code-cpp[NVC_MFCCollections#109](../../mfc/codesnippet/CPP/coblist-class_21.cpp)]  
+ [!code-cpp[NVC_MFCCollections#109](../../mfc/codesnippet/cpp/coblist-class_21.cpp)]  
   
  The results from this program are as follows:  
   

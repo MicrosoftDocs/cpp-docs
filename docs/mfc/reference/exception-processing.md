@@ -150,7 +150,7 @@ CATCH(exception_class, exception_object_pointer_name)
  For more information on exceptions and the **CATCH** macro, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCExceptions#26](../../mfc/codesnippet/CPP/exception-processing_1.cpp)]  
+ [!code-cpp[NVC_MFCExceptions#26](../../mfc/codesnippet/cpp/exception-processing_1.cpp)]  
   
 ##  <a name="catch_all"></a>  CATCH_ALL  
  Defines a block of code that catches all exception types thrown in the preceding **TRY** block.  
@@ -372,7 +372,7 @@ void AFXAPI AfxThrowOleDispatchException(
  The information provided to this function can be displayed by the driving application (Microsoft Visual Basic or another OLE automation client application).  
   
 ### Example  
- [!code-cpp[NVC_MFCExceptions#25](../../mfc/codesnippet/CPP/exception-processing_2.cpp)]  
+ [!code-cpp[NVC_MFCExceptions#25](../../mfc/codesnippet/cpp/exception-processing_2.cpp)]  
   
 ##  <a name="afxthrowoleexception"></a>  AfxThrowOleException  
  Creates an object of type `COleException` and throws an exception.  

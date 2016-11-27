@@ -51,7 +51,7 @@ The Microsoft Foundation Class (MFC) Library provides an object-oriented wrapper
 > [!IMPORTANT]
 >  The MFC classes and their members cannot be used in applications that execute in the Windows Runtime environment.  
 >   
->  MFC libraries (DLLs) for multibyte character encoding (MBCS) are no longer included in Visual Studio, but are available as a Visual Studio add-on. For more information, see [MFC MBCS DLL Add-on](mfc-MBCS-DLL-Add-on.md).  
+>  MFC libraries (DLLs) for multibyte character encoding (MBCS) are no longer included in Visual Studio, but are available as a Visual Studio add-on. For more information, see [MFC MBCS DLL Add-on](mfc-mbcs-dll-add-on.md).  
   
 ## In This Section  
  [Concepts](mfc-concepts.md)  
@@ -69,7 +69,7 @@ The Microsoft Foundation Class (MFC) Library provides an object-oriented wrapper
  [Technical Notes](mfc-technical-notes.md)  
  Provides links to specialized topics, written by the MFC development team, on the class library.  
   
- [Customization for MFC](customization-for-MFC.md)  
+ [Customization for MFC](customization-for-mfc.md)  
  Provides some tips for customizing your MFC application.  
   
  [Classes](mfc-classes.md)  

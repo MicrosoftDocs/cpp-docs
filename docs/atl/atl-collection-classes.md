@@ -116,14 +116,14 @@ ATL provides many classes for storing and accessing data. Which class you decide
 ## Example  
   
 ### Code  
- [!code-cpp[NVC_ATL_Utilities#112](../atl/codesnippet/CPP/atl-collection-classes_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#112](../atl/codesnippet/cpp/atl-collection-classes_1.cpp)]  
   
 ## Comments  
  For a list of the CTraits classes, see [Collection Classes](../atl/collection-classes.md).  
   
  The following diagram shows the class hierarchy for the CTraits classes.  
   
- ![Traits hierarchy for collection classes](../atl/media/vctraitscollectionclasseshierarchy.gif "vcTraitsCollectionClassesHierarchy")  
+ ![Traits hierarchy for collection classes](../atl/media/vctraitscollectionclasseshierarchy.gif "vctraitscollectionclasseshierarchy")  
   
 ## Collection Classes Samples  
  The following samples demonstrate the collection classes:  

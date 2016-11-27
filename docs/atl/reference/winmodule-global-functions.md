@@ -62,7 +62,7 @@ ATLINLINE ATLAPI_(void) AtlWinModuleAddCreateWndData(
  Pointer to an object's **this** pointer.  
   
 ### Remarks  
- Initializes an `_AtlCreateWndData` structure, which is used to store the **this** pointer used to refer to class instances, and adds it to the list referenced by a module's `_ATL_WIN_MODULE70` structure. Called by [CAtlWinModule::AddCreateWndData](CAtlWinModule-class.md#CAtlWinModule__AddCreateWndData).  
+ Initializes an `_AtlCreateWndData` structure, which is used to store the **this** pointer used to refer to class instances, and adds it to the list referenced by a module's `_ATL_WIN_MODULE70` structure. Called by [CAtlWinModule::AddCreateWndData](catlwinmodule-class.md#catlwinmodule__addcreatewnddata).  
   
 ##  <a name="atlwinmoduleextractcreatewnddata"></a>  AtlWinModuleExtractCreateWndData  
  Call this function to extract an existing `_AtlCreateWndData` structure.  

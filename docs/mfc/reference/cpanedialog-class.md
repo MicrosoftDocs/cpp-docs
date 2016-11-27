@@ -169,8 +169,8 @@ BOOL Create(
 ### Example  
  The following example demonstrates how to use the `Create` method in the `CPaneDialog` class. This example is part of the [Set Pane Size sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_SetPaneSize#2](../../mfc/reference/codesnippet/CPP/cpanedialog-class_1.h)]  
-[!code-cpp[NVC_MFC_SetPaneSize#3](../../mfc/reference/codesnippet/CPP/cpanedialog-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_SetPaneSize#2](../../mfc/reference/codesnippet/cpp/cpanedialog-class_1.h)]  
+[!code-cpp[NVC_MFC_SetPaneSize#3](../../mfc/reference/codesnippet/cpp/cpanedialog-class_2.cpp)]  
   
 ##  <a name="cpanedialog__handleinitdialog"></a>  CPaneDialog::HandleInitDialog  
  Handles the [WM_INITDIALOG](http://msdn.microsoft.com/library/windows/desktop/ms645428) message.  

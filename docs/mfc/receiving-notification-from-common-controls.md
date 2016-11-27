@@ -59,7 +59,7 @@ Common controls are child windows that send notification messages to the parent 
   
  Add the following code to the body of the notification message handler (in this example, **NM_RCLICK**):  
   
- [!code-cpp[NVC_MFCControlLadenDialog#4](../mfc/codesnippet/CPP/receiving-notification-from-common-controls_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#4](../mfc/codesnippet/cpp/receiving-notification-from-common-controls_1.cpp)]  
   
  At this point, the mouse cursor location is stored in the `cursorPos` object.  
   

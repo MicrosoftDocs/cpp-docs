@@ -92,16 +92,16 @@ class AFX_NOVTABLE CException : public CObject
 |[CDaoException](../../mfc/reference/cdaoexception-class.md)|Data access object exception (that is, exception conditions arising for DAO classes)|  
 |[CInternetException](../../mfc/reference/cinternetexception-class.md)|Internet exception (that is, exception conditions arising for Internet classes).|  
   
- These exceptions are intended to be used with the [THROW](http://msdn.microsoft.com/Library/794b8de1-bf90-4877-b96a-bc7b17b1e460), [THROW_LAST](../Topic/Exception%20Processing.md#not_found.md#throw_last, [try](../topic/not_found.md#try, [catch](../topic/not_found.md#catch, [and_catch](../topic/not_found.md#and_catch, and [end_catch](../topic/not_found.md#end_catch macros. for more information on exceptions, see [exception processing]--brokenlink--(../topic/exception_processing), or see the article [Exception Handling (MFC)](../Topic/Exception%20Handling%20in%20MFC.md).  
+ These exceptions are intended to be used with the [THROW](http://msdn.microsoft.com/library/794b8de1-bf90-4877-b96a-bc7b17b1e460), [THROW_LAST](../topic/exception%20processing.md#not_found.md#throw_last, [try](../topic/not_found.md#try, [catch](../topic/not_found.md#catch, [and_catch](../topic/not_found.md#and_catch, and [end_catch](../topic/not_found.md#end_catch macros. for more information on exceptions, see [exception processing]--brokenlink--(../topic/exception_processing), or see the article [Exception Handling (MFC)](../topic/exception%20handling%20in%20mfc.md).  
   
- To catch a specific exception, use the appropriate derived class. To catch all types of exceptions, use `CException`, and then use [CObject::IsKindOf](../Topic/CObject%20Class.md#cobject__iskindof) to differentiate among `CException`-derived classes. Note that `CObject::IsKindOf` works only for classes declared with the [IMPLEMENT_DYNAMIC](../Topic/IMPLEMENT_DYNAMIC.md) macro, in order to take advantage of dynamic type checking. Any `CException`-derived class that you create should use the `IMPLEMENT_DYNAMIC` macro, too.  
+ To catch a specific exception, use the appropriate derived class. To catch all types of exceptions, use `CException`, and then use [CObject::IsKindOf](../topic/cobject%20class.md#cobject__iskindof) to differentiate among `CException`-derived classes. Note that `CObject::IsKindOf` works only for classes declared with the [IMPLEMENT_DYNAMIC](../topic/implement_dynamic.md) macro, in order to take advantage of dynamic type checking. Any `CException`-derived class that you create should use the `IMPLEMENT_DYNAMIC` macro, too.  
   
- You can report details about exceptions to the user by calling [GetErrorMessage](../Topic/CFileException%20Class.md#cfileexception__geterrormessage) or [ReportError](#cexception__reporterror), two member functions that work with any of `CException`'s derived classes.  
+ You can report details about exceptions to the user by calling [GetErrorMessage](../topic/cfileexception%20class.md#cfileexception__geterrormessage) or [ReportError](#cexception__reporterror), two member functions that work with any of `CException`'s derived classes.  
   
- If an exception is caught by one of the macros, the `CException` object is deleted automatically; do not delete it yourself. If an exception is caught by using a **catch** keyword, it is not automatically deleted. See the article [Exception Handling (MFC)](../Topic/Exception%20Handling%20in%20MFC.md) for more information about when to delete an exeption object.  
+ If an exception is caught by one of the macros, the `CException` object is deleted automatically; do not delete it yourself. If an exception is caught by using a **catch** keyword, it is not automatically deleted. See the article [Exception Handling (MFC)](../topic/exception%20handling%20in%20mfc.md) for more information about when to delete an exeption object.  
   
 ## Inheritance Hierarchy  
- [CObject](../Topic/CObject%20Class.md)  
+ [CObject](../topic/cobject%20class.md)  
   
  `CException`  
   
@@ -137,7 +137,7 @@ void Delete();
  You only need to call **Delete** if you are using the C++ **try**- **catch** mechanism. If you are using the MFC macros **TRY** and **CATCH**, then these macros will automatically call this function.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFCExceptions#21](../CodeSnippet/VS_Snippets_Cpp/NVC_MFCExceptions#21)] -->  
+ <!-- FIXME [!CODE [NVC_MFCExceptions#21](../codesnippet/vs_snippets_cpp/nvc_mfcexceptions#21)] -->  
   
 ##  <a name="cexception__reporterror"></a>  CException::ReportError  
  Call this member function to report error text in a message box to the user.  
@@ -150,7 +150,7 @@ virtual int ReportError(
   
 ### Parameters  
  `nType`  
- Specifies the style of the message box. Apply any combination of the [message-box styles](../Topic/Message-Box%20Styles.md) to the box. If you don't specify this parameter, the default is **MB_OK**.  
+ Specifies the style of the message box. Apply any combination of the [message-box styles](../topic/message-box%20styles.md) to the box. If you don't specify this parameter, the default is **MB_OK**.  
   
  *nMessageID*  
  Specifies the resource ID (string table entry) of a message to display if the exception object does not have an error message. If 0, the message "No error message is available" is displayed.  
@@ -161,12 +161,12 @@ virtual int ReportError(
 ### Example  
  Here is an example of the use of `CException::ReportError`. For another example, see the example for [CATCH]--brokenlink--(../Topic/not%20found.md#catch).  
   
- <!-- FIXME [!CODE [NVC_MFCExceptions#23](../CodeSnippet/VS_Snippets_Cpp/NVC_MFCExceptions#23)] -->  
+ <!-- FIXME [!CODE [NVC_MFCExceptions#23](../codesnippet/vs_snippets_cpp/nvc_mfcexceptions#23)] -->  
   
 ## See Also  
- [CObject Class](../Topic/CObject%20Class.md)   
- [Hierarchy Chart](../Topic/Hierarchy%20Chart.md)   
- [Exception Processing](../Topic/Exception%20Processing.md)   
- [How Do I: Create my Own Custom Exception Classes](http://go.microsoft.com/fwlink/LinkId=128045)
+ [CObject Class](../topic/cobject%20class.md)   
+ [Hierarchy Chart](../topic/hierarchy%20chart.md)   
+ [Exception Processing](../topic/exception%20processing.md)   
+ [How Do I: Create my Own Custom Exception Classes](http://go.microsoft.com/fwlink/linkid=128045)
 
 

@@ -50,7 +50,7 @@ Scheduler policies let you control the strategy that the scheduler uses when it 
   
  To illustrate the benefits of using a scheduler that has a custom policy, this example performs the overall task two times. The example first uses the default scheduler to schedule both tasks. The example then uses the default scheduler to schedule the first task, and a scheduler that has a custom policy to schedule the second task.  
   
- [!code-cpp[concrt-scheduler-policy#1](../../parallel/concrt/codesnippet/CPP/how-to-specify-specific-scheduler-policies_1.cpp)]  
+ [!code-cpp[concrt-scheduler-policy#1](../../parallel/concrt/codesnippet/cpp/how-to-specify-specific-scheduler-policies_1.cpp)]  
   
  This example produces the following output.  
   

@@ -109,7 +109,7 @@ CMFCRibbonCheckBox(
 ### Example  
  The following example demonstrates how to construct an object of the `CMFCRibbonCheckBox` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#17](../../mfc/reference/codesnippet/CPP/cmfcribboncheckbox-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#17](../../mfc/reference/codesnippet/cpp/cmfcribboncheckbox-class_1.cpp)]  
   
 ##  <a name="cmfcribboncheckbox__getcompactsize"></a>  CMFCRibbonCheckBox::GetCompactSize  
  When overridden, gets the compact size of the checkbox.  

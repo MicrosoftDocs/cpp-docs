@@ -75,22 +75,22 @@ The Concurrency Runtime uses C++ exception handling to communicate many kinds of
   
  When you throw an exception in the body of a work function that you pass to a `task` object, the runtime stores that exception and marshals it to the context that calls [concurrency::task::get](reference/task-class.md#task__get_method) or [concurrency::task::wait](reference/task-class.md#task__wait_method). The document [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md) describes task-based versus value-based continuations, but to summarize, a value-based continuation takes a parameter of type `T` and a task-based continuation takes a parameter of type `task<T>`. If a task that throws has one or more value-based continuations, those continuations are not scheduled to run. The following example illustrates this behavior:  
   
- [!code-cpp[concrt-eh-task#1](../../parallel/concrt/codesnippet/CPP/exception-handling-in-the-concurrency-runtime_1.cpp)]  
+ [!code-cpp[concrt-eh-task#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_1.cpp)]  
   
  A task-based continuation enables you to handle any exception that is thrown by the antecedent task. A task-based continuation always runs; it does not matter whether the task completed successfully, threw an exception, or was canceled. When a task throws an exception, its task-based continuations are scheduled to run. The following example shows a task that always throws. The task has two continuations; one is value-based and the other is task-based. The task-based exception always runs, and therefore can catch the exception that is thrown by the antecedent task. When the example waits for both continuations to finish, the exception is thrown again because the task exception is always thrown when `task::get` or `task::wait` is called.  
   
- [!code-cpp[concrt-eh-continuations#1](../../parallel/concrt/codesnippet/CPP/exception-handling-in-the-concurrency-runtime_2.cpp)]  
+ [!code-cpp[concrt-eh-continuations#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_2.cpp)]  
   
  We recommend that you use task-based continuations to catch exceptions that you are able to handle. Because task-based continuations always run, consider whether to add a task-based continuation at the end of your continuation chain. This can help guarantee that your code observes all exceptions. The following example shows a basic value-based continuation chain. The third task in the chain throws, and therefore any value-based continuations that follow it are not run. However, the final continuation is task-based, and therefore always runs. This final continuation handles the exception that is thrown by the third task.  
   
  We recommend that you catch the most specific exceptions that you can. You can omit this final task-based continuation if you don’t have specific exceptions to catch. Any exception will remain unhandled and can terminate the app.  
   
- [!code-cpp[concrt-eh-task-chain#1](../../parallel/concrt/codesnippet/CPP/exception-handling-in-the-concurrency-runtime_3.cpp)]  
+ [!code-cpp[concrt-eh-task-chain#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_3.cpp)]  
   
 > [!TIP]
 >  You can use the [concurrency::task_completion_event::set_exception](../../parallel/concrt/reference/task-completion-event-class.md) method to associate an exception with a task completion event. The document [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md) describes the [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) class in greater detail.  
   
- [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) is an important runtime exception type that relates to `task`. The runtime throws `task_canceled` when you call `task::get` and that task is canceled. (Conversely, `task::wait` returns [task_status::canceled](../Topic/task_group_status%20Enumeration.md) and does not throw.) You can catch and handle this exception from a task-based continuation or when you call `task::get`. For more information about task cancellation, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl).  
+ [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) is an important runtime exception type that relates to `task`. The runtime throws `task_canceled` when you call `task::get` and that task is canceled. (Conversely, `task::wait` returns [task_status::canceled](../topic/task_group_status%20enumeration.md) and does not throw.) You can catch and handle this exception from a task-based continuation or when you call `task::get`. For more information about task cancellation, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl).  
   
 > [!CAUTION]
 >  Never throw `task_canceled` from your code. Call [concurrency::cancel_current_task](concurrency-namespace-functions.md#cancel_current_task_function) instead.  
@@ -113,7 +113,7 @@ The Concurrency Runtime uses C++ exception handling to communicate many kinds of
   
  The following example shows the basic structure of a work function that throws an exception. The example uses a `task_group` object to print the values of two `point` objects in parallel. The `print_point` work function prints the values of a `point` object to the console. The work function throws an exception if the input value is `NULL`. The runtime stores this exception and marshals it to the context that calls `task_group::wait`.  
   
- [!code-cpp[concrt-eh-task-group#1](../../parallel/concrt/codesnippet/CPP/exception-handling-in-the-concurrency-runtime_4.cpp)]  
+ [!code-cpp[concrt-eh-task-group#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_4.cpp)]  
   
  This example produces the following output.  
   
@@ -132,7 +132,7 @@ X = 15, Y = 30Caught exception: point is NULL.
   
  The following example uses the [concurrency::parallel_invoke](concurrency-namespace-functions.md#parallel_invoke_function) algorithm to run two tasks in parallel. The first task waits five seconds and then sends a message to a message buffer. The second task uses the `receive` function to wait three seconds to receive a message from the same message buffer. The `receive` function throws `operation_timed_out` if it does not receive the message in the time period.  
   
- [!code-cpp[concrt-eh-time-out#1](../../parallel/concrt/codesnippet/CPP/exception-handling-in-the-concurrency-runtime_5.cpp)]  
+ [!code-cpp[concrt-eh-time-out#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_5.cpp)]  
   
  This example produces the following output.  
   
@@ -149,7 +149,7 @@ The operation timed out.
   
  The following example uses the `parallel_for` algorithm to print numbers to the console. It throws an exception if the input value is less than some minimum value or greater than some maximum value. In this example, multiple work functions can throw an exception.  
   
- [!code-cpp[concrt-eh-multiple#1](../../parallel/concrt/codesnippet/CPP/exception-handling-in-the-concurrency-runtime_6.cpp)]  
+ [!code-cpp[concrt-eh-multiple#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_6.cpp)]  
   
  The following shows sample output for this example.  
   
@@ -176,7 +176,7 @@ The operation timed out.
   
  The `run` method surrounds all work in a `try`-`catch` block. The `catch` block stores the exception in a message buffer. The application checks whether the agent encountered an error by reading from this buffer after the agent finishes.  
   
- [!code-cpp[concrt-eh-agents#1](../../parallel/concrt/codesnippet/CPP/exception-handling-in-the-concurrency-runtime_7.cpp)]  
+ [!code-cpp[concrt-eh-agents#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_7.cpp)]  
   
  This example produces the following output.  
   

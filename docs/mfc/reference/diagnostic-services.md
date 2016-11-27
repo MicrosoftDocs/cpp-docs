@@ -62,7 +62,7 @@ The Microsoft Foundation Class Library supplies many diagnostic services that ma
   
  In the Debug library, all allocated memory blocks are bracketed with a series of "guard bytes." If these bytes are disturbed by an errant memory write, then the diagnostic routines can report a problem. If you include the line:  
   
- [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/CPP/diagnostic-services_1.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/diagnostic-services_1.cpp)]  
   
  in your implementation file, all calls to **new** will store the filename and line number where the memory allocation took place. The function [CMemoryState::DumpAllObjectsSince]--brokenlink--(../Topic/CMemoryState%20Class.md#cmemorystate__dumpallobjectssince) will display this extra information, allowing you to identify memory leaks. Refer also to the class [CDumpContext](../../mfc/reference/cdumpcontext-class.md) for additional information on diagnostic output.  
   
@@ -130,7 +130,7 @@ ASSERT(booleanExpression)
 >  This function is available only in the Debug version of MFC.  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#44](../../mfc/codesnippet/CPP/diagnostic-services_2.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#44](../../mfc/codesnippet/cpp/diagnostic-services_2.cpp)]  
   
 ##  <a name="assert_kindof"></a>  ASSERT_KINDOF  
  This macro asserts that the object pointed to is an object of the specified class, or is an object of a class derived from the specified class.  
@@ -149,11 +149,11 @@ ASSERT_KINDOF(classname, pobject)
 ### Remarks  
  The *pobject* parameter should be a pointer to an object and can be **const**. The object pointed to and the class must support `CObject` run-time class information. As an example, to ensure that `pDocument` is a pointer to an object of the `CMyDoc` class, or any of its derivatives, you could code:  
   
- [!code-cpp[NVC_MFCDocView#194](../../mfc/codesnippet/CPP/diagnostic-services_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#194](../../mfc/codesnippet/cpp/diagnostic-services_3.cpp)]  
   
  Using the `ASSERT_KINDOF` macro is exactly the same as coding:  
   
- [!code-cpp[NVC_MFCDocView#195](../../mfc/codesnippet/CPP/diagnostic-services_4.cpp)]  
+ [!code-cpp[NVC_MFCDocView#195](../../mfc/codesnippet/cpp/diagnostic-services_4.cpp)]  
   
  This function works only for classes declared with the [DECLARE_DYNAMIC]--brokenlink--(../Topic/not%20found.md#declare_dynamic or [DECLARE_SERIAL]--brokenlink--(../Topic/not%20found.md#declare_serial) macro.  
   
@@ -182,7 +182,7 @@ ASSERT_VALID(pObject)
  For more information and examples, see [Debugging MFC Applications](/visualstudio/debugger/mfc-debugging-techniques).  
   
 ### Example  
- [!code-cpp[NVC_MFCCObjectSample#19](../../mfc/codesnippet/CPP/diagnostic-services_5.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#19](../../mfc/codesnippet/cpp/diagnostic-services_5.cpp)]  
   
 ##  <a name="debug_new"></a>  DEBUG_NEW  
  Assists in finding memory leaks.  
@@ -198,7 +198,7 @@ ASSERT_VALID(pObject)
   
  To use `DEBUG_NEW`, insert the following directive into your source files:  
   
- [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/CPP/diagnostic-services_1.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/diagnostic-services_1.cpp)]  
   
  Once you insert this directive, the preprocessor will insert `DEBUG_NEW` wherever you use **new**, and MFC does the rest. When you compile a release version of your program, `DEBUG_NEW` resolves to a simple **new** operation, and the filename and line number information are not generated.  
   
@@ -218,7 +218,7 @@ DEBUG_ONLY(expression)
  The `DEBUG_ONLY` macro is equivalent to surrounding *expression* with **#ifdef _DEBUG** and `#endif`.  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#32](../../mfc/codesnippet/CPP/diagnostic-services_6.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#32](../../mfc/codesnippet/cpp/diagnostic-services_6.cpp)]  
   
 ##  <a name="trace"></a>  TRACE  
  Sends the specified string to the debugger of the current application.  
@@ -230,7 +230,7 @@ TRACE(DWORD  category,  UINT  level, LPCSTR lpszFormat, ...)
 ```  
   
 ### Remarks  
- See [ATLTRACE2](http://msdn.microsoft.com/Library/467ff555-e7a5-4f94-bdd9-50ee27ab9986) for a description of **TRACE**. **TRACE** and `ATLTRACE2` have the same behavior.  
+ See [ATLTRACE2](http://msdn.microsoft.com/library/467ff555-e7a5-4f94-bdd9-50ee27ab9986) for a description of **TRACE**. **TRACE** and `ATLTRACE2` have the same behavior.  
   
  In the debug version of MFC, this macro sends the specified string to the debugger of the current application. In a release build, this macro compiles to nothing (no code is generated at all).  
   
@@ -259,7 +259,7 @@ VERIFY(booleanExpression)
  In the Release version of MFC, **VERIFY** evaluates the expression but does not print or interrupt the program. For example, if the expression is a function call, the call will be made.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#198](../../mfc/codesnippet/CPP/diagnostic-services_7.cpp)]  
+ [!code-cpp[NVC_MFCDocView#198](../../mfc/codesnippet/cpp/diagnostic-services_7.cpp)]  
   
 ##  <a name="afxdump__cdumpcontext_in_mfc_"></a>  afxDump (CDumpContext in MFC)  
  Provides basic object-dumping capability in your application.  
@@ -276,7 +276,7 @@ CDumpContext  afxDump;
  This variable is defined only in the Debug version of MFC. For more information on `afxDump`, see [Debugging MFC Applications](/visualstudio/debugger/mfc-debugging-techniques).  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#23](../../mfc/codesnippet/CPP/diagnostic-services_8.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#23](../../mfc/codesnippet/cpp/diagnostic-services_8.cpp)]  
   
 ##  <a name="afxmemdf"></a>  afxMemDF  
  This variable is accessible from a debugger or your program and allows you to tune allocation diagnostics.  
@@ -295,7 +295,7 @@ int  afxMemDF;
 - **checkAlwaysMemDF** Calls `AfxCheckMemory` every time memory is allocated or freed. This will significantly slow memory allocations and deallocations.  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#30](../../mfc/codesnippet/CPP/diagnostic-services_9.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#30](../../mfc/codesnippet/cpp/diagnostic-services_9.cpp)]  
   
 ##  <a name="afxcheckerror"></a>  AfxCheckError  
  This function tests the passed **SCODE** to see if it is an error.  
@@ -315,7 +315,7 @@ throw COleException*
 >  This function has the same effect in debug and non-debug builds.  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#33](../../mfc/codesnippet/CPP/diagnostic-services_10.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#33](../../mfc/codesnippet/cpp/diagnostic-services_10.cpp)]  
   
 ##  <a name="afxcheckmemory"></a>  AfxCheckMemory  
  This function validates the free memory pool and prints error messages as required.  
@@ -334,7 +334,7 @@ BOOL  AfxCheckMemory();
   
  If you include the line  
   
- [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/CPP/diagnostic-services_1.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/diagnostic-services_1.cpp)]  
   
  in a program module, then subsequent calls to `AfxCheckMemory` show the filename and line number where the memory was allocated.  
   
@@ -344,7 +344,7 @@ BOOL  AfxCheckMemory();
  This function works only in the Debug version of MFC.  
   
 ### Example  
- [!code-cpp[NVC_MFCCObjectSample#26](../../mfc/codesnippet/CPP/diagnostic-services_11.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#26](../../mfc/codesnippet/cpp/diagnostic-services_11.cpp)]  
   
 ##  <a name="afxdump__mfc_"></a>  AfxDump (MFC)  
  Call this function while in the debugger to dump the state of an object while debugging.  
@@ -494,7 +494,7 @@ BOOL AfxEnableMemoryTracking(BOOL bTrack);
 >  This function works only in the Debug version of MFC.  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#24](../../mfc/codesnippet/CPP/diagnostic-services_12.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#24](../../mfc/codesnippet/cpp/diagnostic-services_12.cpp)]  
   
 ##  <a name="afxismemoryblock"></a>  AfxIsMemoryBlock  
  Tests a memory address to make sure it represents a currently active memory block that was allocated by the diagnostic version of **new**.  
@@ -523,7 +523,7 @@ BOOL AfxIsMemoryBlock(
  It also checks the specified size against the original allocated size. If the function returns nonzero, the allocation sequence number is returned in `plRequestNumber`. This number represents the order in which the block was allocated relative to all other **new** allocations.  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#27](../../mfc/codesnippet/CPP/diagnostic-services_13.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#27](../../mfc/codesnippet/cpp/diagnostic-services_13.cpp)]  
   
 ##  <a name="afxisvalidaddress"></a>  AfxIsValidAddress  
  Tests any memory address to ensure that it is contained entirely within the program's memory space.  
@@ -554,7 +554,7 @@ BOOL AfxIsValidAddress(
  The address is not restricted to blocks allocated by **new**.  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#28](../../mfc/codesnippet/CPP/diagnostic-services_14.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#28](../../mfc/codesnippet/cpp/diagnostic-services_14.cpp)]  
   
 ##  <a name="afxisvalidstring"></a>  AfxIsValidString  
  Use this function to determine whether a pointer to a string is valid.  
@@ -578,7 +578,7 @@ BOOL  AfxIsValidString(
  In non-debug builds, nonzero if `lpsz` is not NULL; otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#29](../../mfc/codesnippet/CPP/diagnostic-services_15.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#29](../../mfc/codesnippet/cpp/diagnostic-services_15.cpp)]  
   
 ##  <a name="afxsetallochook"></a>  AfxSetAllocHook  
  Sets a hook that enables calling of the specified function before each memory block is allocated.  
@@ -634,9 +634,9 @@ AFXAPI AfxDoForAllClasses(
 >  This function works only in the Debug version of MFC.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#113](../../mfc/codesnippet/CPP/diagnostic-services_16.cpp)]  
+ [!code-cpp[NVC_MFCCollections#113](../../mfc/codesnippet/cpp/diagnostic-services_16.cpp)]  
   
- [!code-cpp[NVC_MFCCollections#114](../../mfc/codesnippet/CPP/diagnostic-services_17.cpp)]  
+ [!code-cpp[NVC_MFCCollections#114](../../mfc/codesnippet/cpp/diagnostic-services_17.cpp)]  
   
 ##  <a name="afxdoforallobjects"></a>  AfxDoForAllObjects  
  Executes the specified iteration function for all objects derived from `CObject` that have been allocated with **new**.  
@@ -661,9 +661,9 @@ void AfxDoForAllObjects(
 >  This function works only in the Debug version of MFC.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#115](../../mfc/codesnippet/CPP/diagnostic-services_18.cpp)]  
+ [!code-cpp[NVC_MFCCollections#115](../../mfc/codesnippet/cpp/diagnostic-services_18.cpp)]  
   
- [!code-cpp[NVC_MFCCollections#116](../../mfc/codesnippet/CPP/diagnostic-services_19.cpp)]  
+ [!code-cpp[NVC_MFCCollections#116](../../mfc/codesnippet/cpp/diagnostic-services_19.cpp)]  
   
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

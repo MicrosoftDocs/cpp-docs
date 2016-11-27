@@ -122,9 +122,9 @@ virtual void Enable(BOOL bOn = TRUE);
  **TRUE** to enable the item, **FALSE** to disable it.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#46](../../mfc/codesnippet/CPP/ccmdui-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#46](../../mfc/codesnippet/cpp/ccmdui-class_1.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#47](../../mfc/codesnippet/CPP/ccmdui-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#47](../../mfc/codesnippet/cpp/ccmdui-class_2.cpp)]  
   
 ##  <a name="ccmdui__m_nid"></a>  CCmdUI::m_nID  
  The ID of the menu item, toolbar button, or other user-interface object represented by the `CCmdUI` object.  
@@ -210,7 +210,7 @@ virtual void SetText(LPCTSTR lpszText);
  A pointer to a text string.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#48](../../mfc/codesnippet/CPP/ccmdui-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#48](../../mfc/codesnippet/cpp/ccmdui-class_3.cpp)]  
   
 ## See Also  
  [MFC Sample MDI](../../visual-cpp-samples.md)   

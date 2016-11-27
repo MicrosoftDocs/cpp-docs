@@ -97,7 +97,7 @@ template <class T,
 > [!NOTE]
 >  Your class must define an **IDD** member that specifies the dialog template resource ID. For example, the ATL Project Wizard automatically adds the following line to your class:  
   
- [!code-cpp[NVC_ATL_Windowing#41](../../atl/codesnippet/CPP/cdialogimpl-class_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#41](../../atl/codesnippet/cpp/cdialogimpl-class_1.h)]  
   
  where `MyDlg` is the **Short name** entered in the wizard's **Names** page.  
   
@@ -332,5 +332,5 @@ static LRESULT CALLBACK StartDialogProc(
  After the initial call to `StartDialogProc`, `DialogProc` is set as a dialog procedure, and further calls go there.  
   
 ## See Also  
- [BEGIN_MSG_MAP](http://msdn.microsoft.com/Library/8bbb5af9-18b1-48c6-880e-166f599ee554)   
+ [BEGIN_MSG_MAP](http://msdn.microsoft.com/library/8bbb5af9-18b1-48c6-880e-166f599ee554)   
  [Class Overview](../../atl/atl-class-overview.md)

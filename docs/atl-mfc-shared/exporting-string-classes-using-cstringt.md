@@ -43,7 +43,7 @@ In the past, MFC developers have derived from `CString` to specialize their own 
   
  The following scenario will cause the linker to produce symbol errors for multiply defined classes. Assume that you are exporting a `CString`-derived class (`CMyString`) from an MFC extension DLL:  
   
- [!code-cpp[NVC_MFC_DLL#6](../atl-mfc-shared/codesnippet/CPP/exporting-string-classes-using-cstringt_1.cpp)]  
+ [!code-cpp[NVC_MFC_DLL#6](../atl-mfc-shared/codesnippet/cpp/exporting-string-classes-using-cstringt_1.cpp)]  
   
  The consumer code uses a mixture of `CString` and `CMyString`. "MyString.h" is not included in the precompiled header, and some usage of `CString` does not have `CMyString` visible.  
   
@@ -55,11 +55,11 @@ In the past, MFC developers have derived from `CString` to specialize their own 
   
  Then create a exportable derived class using the `CStringT` template, as `CStringT_Exported` is below, for example:  
   
- [!code-cpp[NVC_MFC_DLL#7](../atl-mfc-shared/codesnippet/CPP/exporting-string-classes-using-cstringt_2.cpp)]  
+ [!code-cpp[NVC_MFC_DLL#7](../atl-mfc-shared/codesnippet/cpp/exporting-string-classes-using-cstringt_2.cpp)]  
   
  In AfxStr.h, replace the previous `CString`, `CStringA`, and `CStringW` typedefs as follows:  
   
- [!code-cpp[NVC_MFC_DLL#8](../atl-mfc-shared/codesnippet/CPP/exporting-string-classes-using-cstringt_3.cpp)]  
+ [!code-cpp[NVC_MFC_DLL#8](../atl-mfc-shared/codesnippet/cpp/exporting-string-classes-using-cstringt_3.cpp)]  
   
  There are several caveats:  
   

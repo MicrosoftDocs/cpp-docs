@@ -139,7 +139,7 @@ INT_PTR Add(ARG_TYPE newElement);
  If [SetSize](#carray__setsize) has been used with an `nGrowBy` value greater than 1, then extra memory may be allocated. However, the upper bound will increase by only 1.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#22](../../mfc/codesnippet/CPP/carray-class_1.cpp)]  
+ [!code-cpp[NVC_MFCCollections#22](../../mfc/codesnippet/cpp/carray-class_1.cpp)]  
   
 ##  <a name="carray__append"></a>  CArray::Append  
  Call this member function to add the contents of one array to the end of another.  
@@ -161,7 +161,7 @@ INT_PTR Append(const CArray& src);
  If necessary, **Append** may allocate extra memory to accommodate the elements appended to the array.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#23](../../mfc/codesnippet/CPP/carray-class_2.cpp)]  
+ [!code-cpp[NVC_MFCCollections#23](../../mfc/codesnippet/cpp/carray-class_2.cpp)]  
   
 ##  <a name="carray__carray"></a>  CArray::CArray  
  Constructs an empty array.  
@@ -174,7 +174,7 @@ CArray();
  The array grows one element at a time.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#24](../../mfc/codesnippet/CPP/carray-class_3.cpp)]  
+ [!code-cpp[NVC_MFCCollections#24](../../mfc/codesnippet/cpp/carray-class_3.cpp)]  
   
 ##  <a name="carray__copy"></a>  CArray::Copy  
  Use this member function to copy the elements of one array to another.  
@@ -193,7 +193,7 @@ void Copy(const CArray& src);
  **Copy** does not free memory; however, if necessary, **Copy** may allocate extra memory to accommodate the elements copied to the array.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#25](../../mfc/codesnippet/CPP/carray-class_4.cpp)]  
+ [!code-cpp[NVC_MFCCollections#25](../../mfc/codesnippet/cpp/carray-class_4.cpp)]  
   
 ##  <a name="carray__elementat"></a>  CArray::ElementAt  
  Returns a temporary reference to the specified element within the array.  
@@ -259,7 +259,7 @@ const TYPE& GetAt(INT_PTR nIndex) const;
  Passing a negative value or a value greater than the value returned by `GetUpperBound` will result in a failed assertion.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#26](../../mfc/codesnippet/CPP/carray-class_5.cpp)]  
+ [!code-cpp[NVC_MFCCollections#26](../../mfc/codesnippet/cpp/carray-class_5.cpp)]  
   
 ##  <a name="carray__getcount"></a>  CArray::GetCount  
  Returns the number of array elements.  
@@ -277,7 +277,7 @@ INT_PTR GetCount() const;
  Call this method to retrieve the number of elements in the array. Because indexes are zero-based, the size is 1 greater than the largest index. Calling this method will generate the same result as the [CArray::GetSize](#carray__getsize) method.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#27](../../mfc/codesnippet/CPP/carray-class_6.cpp)]  
+ [!code-cpp[NVC_MFCCollections#27](../../mfc/codesnippet/cpp/carray-class_6.cpp)]  
   
 ##  <a name="carray__getdata"></a>  CArray::GetData  
  Use this member function to gain direct access to the elements in an array.  
@@ -303,7 +303,7 @@ TYPE* GetData();
  While direct access to the elements of an array can help you work more quickly, use caution when calling `GetData`; any errors you make directly affect the elements of your array.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#28](../../mfc/codesnippet/CPP/carray-class_7.cpp)]  
+ [!code-cpp[NVC_MFCCollections#28](../../mfc/codesnippet/cpp/carray-class_7.cpp)]  
   
 ##  <a name="carray__getsize"></a>  CArray::GetSize  
  Returns the size of the array.  
@@ -318,7 +318,7 @@ INT_PTR GetSize() const;
  Because indexes are zero-based, the size is 1 greater than the largest index. Calling this method will generate the same result as the [CArray::GetCount](#carray__getcount) method.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#29](../../mfc/codesnippet/CPP/carray-class_8.cpp)]  
+ [!code-cpp[NVC_MFCCollections#29](../../mfc/codesnippet/cpp/carray-class_8.cpp)]  
   
 ##  <a name="carray__getupperbound"></a>  CArray::GetUpperBound  
  Returns the current upper bound of this array.  
@@ -379,7 +379,7 @@ void InsertAt(
  The `SetAt` function, in contrast, replaces one specified array element and does not shift any elements.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#30](../../mfc/codesnippet/CPP/carray-class_9.cpp)]  
+ [!code-cpp[NVC_MFCCollections#30](../../mfc/codesnippet/cpp/carray-class_9.cpp)]  
   
 ##  <a name="carray__isempty"></a>  CArray::IsEmpty  
  Determines whether the array is empty.  
@@ -397,10 +397,10 @@ BOOL IsEmpty() const;
  These subscript operators are a convenient substitute for the [SetAt](#carray__setat) and [GetAt](#carray__getat) functions.  
   
 ```  
-TYPE& operator[](INT_PTR nIndex);
+TYPE& operator[](int_ptr nindex);
 
  
-const TYPE& operator[](INT_PTR nIndex) const;
+const TYPE& operator[](int_ptr nindex) const;
 
  
 ```  
@@ -418,7 +418,7 @@ const TYPE& operator[](INT_PTR nIndex) const;
  The Debug version of the library asserts if the subscript (either on the left or right side of an assignment statement) is out of bounds.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#34](../../mfc/codesnippet/CPP/carray-class_10.cpp)]  
+ [!code-cpp[NVC_MFCCollections#34](../../mfc/codesnippet/cpp/carray-class_10.cpp)]  
   
 ##  <a name="carray__relocateelements"></a>  CArray::RelocateElements  
  Relocates data to a new buffer when the array should grow or shrink.  
@@ -459,7 +459,7 @@ void RemoveAll();
  If the array is already empty, the function still works.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#31](../../mfc/codesnippet/CPP/carray-class_11.cpp)]  
+ [!code-cpp[NVC_MFCCollections#31](../../mfc/codesnippet/cpp/carray-class_11.cpp)]  
   
 ##  <a name="carray__removeat"></a>  CArray::RemoveAt  
  Removes one or more elements starting at a specified index in an array.  
@@ -483,7 +483,7 @@ void RemoveAt(
  If you try to remove more elements than are contained in the array above the removal point, then the Debug version of the library asserts.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#32](../../mfc/codesnippet/CPP/carray-class_12.cpp)]  
+ [!code-cpp[NVC_MFCCollections#32](../../mfc/codesnippet/cpp/carray-class_12.cpp)]  
   
 ##  <a name="carray__setat"></a>  CArray::SetAt  
  Sets the array element at the specified index.  
@@ -533,7 +533,7 @@ void SetAtGrow(
  The array grows automatically if necessary (that is, the upper bound is adjusted to accommodate the new element).  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#33](../../mfc/codesnippet/CPP/carray-class_13.cpp)]  
+ [!code-cpp[NVC_MFCCollections#33](../../mfc/codesnippet/cpp/carray-class_13.cpp)]  
   
 ##  <a name="carray__setsize"></a>  CArray::SetSize  
  Establishes the size of an empty or existing array; allocates memory if necessary.  

@@ -43,7 +43,7 @@ Information about the tables in a data source can include the names of tables an
  For more information, see [Data Source: Determining the Schema of the Data Source (ODBC)](../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md).  
   
 > [!NOTE]
->  In the MFC DAO classes, you can get catalog information as follows: Use [CDaoDatabase::GetTableDefCount](../Topic/CDaoDatabase::GetTableDefCount.md) and [CDaoDatabase::GetTableDefInfo](../Topic/CDaoDatabase::GetTableDefInfo.md) to enumerate the tables in the database and obtain information for each table in a [CDaoTableDefInfo](../mfc/reference/cdaotabledefinfo-structure.md) structure.  
+>  In the MFC DAO classes, you can get catalog information as follows: Use [CDaoDatabase::GetTableDefCount](../topic/cdaodatabase::gettabledefcount.md) and [CDaoDatabase::GetTableDefInfo](../topic/cdaodatabase::gettabledefinfo.md) to enumerate the tables in the database and obtain information for each table in a [CDaoTableDefInfo](../mfc/reference/cdaotabledefinfo-structure.md) structure.  
   
 ## See Also  
  [Data Access Programming (MFC/ATL)](../data/data-access-programming-mfc-atl.md)

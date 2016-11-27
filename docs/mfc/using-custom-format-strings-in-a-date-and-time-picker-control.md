@@ -47,7 +47,7 @@ By default, date and time picker controls provide three format types (each forma
   
  The following example code (where `m_dtPicker` is the `CDateTimeCtrl` object) demonstrates one possible solution:  
   
- [!code-cpp[NVC_MFCControlLadenDialog#7](../mfc/codesnippet/CPP/using-custom-format-strings-in-a-date-and-time-picker-control_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#7](../mfc/codesnippet/cpp/using-custom-format-strings-in-a-date-and-time-picker-control_1.cpp)]  
   
  In addition to custom format strings, date and time picker controls also support [callback fields](../mfc/using-callback-fields-in-a-date-and-time-picker-control.md).  
   

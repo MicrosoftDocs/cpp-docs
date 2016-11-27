@@ -115,7 +115,7 @@ ON_EVENT(theClass, id, dispid, pfnHandler,  vtsParams)
 ### Remarks  
  The `vtsParams` argument is a space-separated list of values from the **VTS_** constants. One or more of these values separated by spaces (not commas) specifies the function's parameter list. For example:  
   
- [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/CPP/event-sink-maps_1.cpp)]  
+ [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/cpp/event-sink-maps_1.cpp)]  
   
  specifies a list containing a short integer followed by a **BOOL**.  
   
@@ -150,7 +150,7 @@ ON_EVENT_RANGE(theClass, idFirst, idLast, dispid, pfnHandler,  vtsParams)
 ### Remarks  
  The `vtsParams` argument is a space-separated list of values from the **VTS_** constants. One or more of these values separated by spaces (not commas) specifies the function's parameter list. For example:  
   
- [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/CPP/event-sink-maps_1.cpp)]  
+ [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/cpp/event-sink-maps_1.cpp)]  
   
  specifies a list containing a short integer followed by a **BOOL**.  
   
@@ -159,11 +159,11 @@ ON_EVENT_RANGE(theClass, idFirst, idLast, dispid, pfnHandler,  vtsParams)
 ### Example  
  The following example demonstrates an event handler, for the MouseDown event, implemented for three controls ( `IDC_MYCTRL1` through `IDC_MYCTRL3`). The event handler function, `OnRangeMouseDown`, is declared in the header file of the dialog class ( `CMyDlg`) as:  
   
- [!code-cpp[NVC_MFCAutomation#12](../../mfc/codesnippet/CPP/event-sink-maps_2.h)]  
+ [!code-cpp[NVC_MFCAutomation#12](../../mfc/codesnippet/cpp/event-sink-maps_2.h)]  
   
  The code below is defined in the implementation file of the dialog class.  
   
- [!code-cpp[NVC_MFCAutomation#13](../../mfc/codesnippet/CPP/event-sink-maps_3.cpp)]  
+ [!code-cpp[NVC_MFCAutomation#13](../../mfc/codesnippet/cpp/event-sink-maps_3.cpp)]  
   
 ##  <a name="on_event_reflect"></a>  ON_EVENT_REFLECT  
  The `ON_EVENT_REFLECT` macro, when used in the event sink map of an OLE control's wrapper class, receives events fired by the control before they are handled by the control's container.  
@@ -190,7 +190,7 @@ ON_EVENT_REFLECT(theClass,  dispid, pfnHandler,  vtsParams)
   
  One or more of these values separated by spaces (not commas) specifies the function's parameter list. For example:  
   
- [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/CPP/event-sink-maps_1.cpp)]  
+ [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/cpp/event-sink-maps_1.cpp)]  
   
  specifies a list containing a short integer followed by a **BOOL**.  
   
@@ -223,7 +223,7 @@ ON_PROPNOTIFY(theClass, id, dispid, pfnRequest, pfnChanged)
 ### Remarks  
  The `vtsParams` argument is a space-separated list of values from the **VTS_** constants. One or more of these values separated by spaces (not commas) specifies the function's parameter list. For example:  
   
- [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/CPP/event-sink-maps_1.cpp)]  
+ [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/cpp/event-sink-maps_1.cpp)]  
   
  specifies a list containing a short integer followed by a **BOOL**.  
   

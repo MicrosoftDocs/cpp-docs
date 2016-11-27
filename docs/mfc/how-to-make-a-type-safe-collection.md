@@ -55,11 +55,11 @@ This article explains how to make type-safe collections for your own data types.
   
 1.  Declare a variable of the collection class type. For example:  
   
-     [!code-cpp[NVC_MFCCollections#7](../mfc/codesnippet/CPP/how-to-make-a-type-safe-collection_1.cpp)]  
+     [!code-cpp[NVC_MFCCollections#7](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_1.cpp)]  
   
 2.  Call the member functions of the collection object. For example:  
   
-     [!code-cpp[NVC_MFCCollections#8](../mfc/codesnippet/CPP/how-to-make-a-type-safe-collection_2.cpp)]  
+     [!code-cpp[NVC_MFCCollections#8](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_2.cpp)]  
   
 3.  If necessary, implement the [helper functions](../mfc/reference/collection-class-helpers.md) and [SerializeElements](../mfc/reference/collection-class-helpers.md#serializeelements). For information on implementing these functions, see [Implementing Helper Functions](#_core_implementing_helper_functions).  
   
@@ -75,7 +75,7 @@ This article explains how to make type-safe collections for your own data types.
   
  If your collection stores objects derived from `CObject` and you use the `IMPLEMENT_SERIAL` macro in the implementation of the collection element class, you can take advantage of the serialization functionality built into `CArchive` and `CObject`:  
   
- [!code-cpp[NVC_MFCCollections#9](../mfc/codesnippet/CPP/how-to-make-a-type-safe-collection_3.cpp)]  
+ [!code-cpp[NVC_MFCCollections#9](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_3.cpp)]  
   
  The overloaded insertion operators for `CArchive` call `CObject::Serialize` (or an override of that function) for each **CPerson** object.  
   
@@ -96,7 +96,7 @@ This article explains how to make type-safe collections for your own data types.
   
      You can also use a predefined collection, such as `CObList`, to hold any objects derived from `CObject`. A `CObList` collection is defined to hold pointers to `CObject`. When you retrieve an object from the list, you may have to cast the result to the proper type since the `CObList` functions return pointers to `CObject`. For example, if you store `CPerson` objects in a `CObList` collection, you have to cast a retrieved element to be a pointer to a `CPerson` object. The following example uses a `CObList` collection to hold `CPerson` objects:  
   
-     [!code-cpp[NVC_MFCCollections#10](../mfc/codesnippet/CPP/how-to-make-a-type-safe-collection_4.cpp)]  
+     [!code-cpp[NVC_MFCCollections#10](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_4.cpp)]  
   
      This technique of using a predefined collection type and casting as necessary may be adequate for many of your collection needs. If you need further functionality or more type safety, use a template-based class, or follow the next procedure.  
   
@@ -108,7 +108,7 @@ This article explains how to make type-safe collections for your own data types.
   
      For example, if you derived a list from `CObList` to hold `CPerson` objects, you might add the wrapper functions `AddHeadPerson` and `GetHeadPerson`, as shown below.  
   
-     [!code-cpp[NVC_MFCCollections#11](../mfc/codesnippet/CPP/how-to-make-a-type-safe-collection_5.h)]  
+     [!code-cpp[NVC_MFCCollections#11](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_5.h)]  
   
      These wrapper functions provide a type-safe way to add and retrieve `CPerson` objects from the derived list. You can see that for the `GetHeadPerson` function, you are simply encapsulating the type casting.  
   

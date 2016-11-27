@@ -67,7 +67,7 @@ class CPoint : public tagPOINT
 |[CPoint::operator !=](#cpoint__operator__neq)|Checks for inequality between two points.|  
 |[CPoint::operator +](#cpoint__operator__add)|Returns the sum of a `CPoint` and a size or point, or a `CRect` offset by a size.|  
 |[CPoint::operator +=](#cpoint__operator__add_eq)|Offsets `CPoint` by adding a size or point.|  
-|[CPoint::operator -=](CPoint::operator%20-=.xml)|Offsets `CPoint` by subtracting a size or point.|  
+|[CPoint::operator -=](cpoint::operator%20-=.xml)|Offsets `CPoint` by subtracting a size or point.|  
 |[CPoint::operator ==](#cpoint__operator__eq_eq)|Checks for equality between two points.|  
   
 ## Remarks  
@@ -198,7 +198,7 @@ void Offset(
  Specifies the amount ( [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) or [CSize](../../atl-mfc-shared/reference/csize-class.md)) to offset the `CPoint`.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#28](../../atl-mfc-shared/codesnippet/CPP/cpoint-class_1.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#28](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_1.cpp)]  
   
 ##  <a name="cpoint__operator__eq_eq"></a>  CPoint::operator ==  
  Checks for equality between two points.  
@@ -215,7 +215,7 @@ BOOL operator==(POINT point) const throw();
  Nonzero if the points are equal; otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#29](../../atl-mfc-shared/codesnippet/CPP/cpoint-class_2.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#29](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_2.cpp)]  
   
 ##  <a name="cpoint__operator__neq"></a>  CPoint::operator !=  
  Checks for inequality between two points.  
@@ -232,7 +232,7 @@ BOOL operator!=(POINT point) const throw();
  Nonzero if the points are not equal; otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#30](../../atl-mfc-shared/codesnippet/CPP/cpoint-class_3.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#30](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_3.cpp)]  
   
 ##  <a name="cpoint__operator__add_eq"></a>  CPoint::operator +=  
  The first overload adds a size to the `CPoint`.  
@@ -259,7 +259,7 @@ void operator+=(SIZE size) throw();
  For example, adding `CPoint(5, -7)` to a variable which contains `CPoint(30, 40)` changes the variable to `CPoint(35, 33)`.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#31](../../atl-mfc-shared/codesnippet/CPP/cpoint-class_4.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#31](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_4.cpp)]  
   
 ##  <a name="cpoint__operator_-_eq"></a>  CPoint::operator -=  
  The first overload subtracts a size from the `CPoint`.  
@@ -286,7 +286,7 @@ void operator-=(SIZE size) throw();
  For example, subtracting `CPoint(5, -7)` from a variable which contains `CPoint(30, 40)` changes the variable to `CPoint(25, 47)`.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#32](../../atl-mfc-shared/codesnippet/CPP/cpoint-class_5.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#32](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_5.cpp)]  
   
 ##  <a name="cpoint__operator__add"></a>  CPoint::operator +  
  Use this operator to offset `CPoint` by a `CPoint` or `CSize` object, or to offset a `CRect` by a `CPoint`.  
@@ -320,7 +320,7 @@ CPoint operator+(SIZE size) const throw();
  Adding a rectangle to a point returns the rectangle after being offset by the **x** and **y** values specified in the point. For example, using the last overload to offset a rectangle `CRect(125, 219, 325, 419)` by a point `CPoint(25, -19)` returns `CRect(150, 200, 350, 400)`.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#33](../../atl-mfc-shared/codesnippet/CPP/cpoint-class_6.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#33](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_6.cpp)]  
   
 ##  <a name="cpoint__operator_-"></a>  CPoint::operator -  
  Use one of the first two overloads to subtract a `CPoint` or `CSize` object from `CPoint`.  
@@ -363,7 +363,7 @@ CSize operator-(POINT point) const throw();
  Use the unary operator to negate a point. For example, using the unary operator with the point `CPoint(25, -19)` returns `CPoint(-25, 19)`.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#34](../../atl-mfc-shared/codesnippet/CPP/cpoint-class_7.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#34](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_7.cpp)]  
   
 ## See Also  
  [MFC Sample MDI](../../visual-cpp-samples.md)   

@@ -64,7 +64,7 @@ This article discusses procedures for localizing ActiveX control interfaces.
   
  When you develop a localized control, include the locale ID as an attribute at the type library level. For example, if you want to provide a type library with French localized property names, make a copy of your SAMPLE.IDL file, and call it SAMPLEFR.IDL. Add a locale ID attribute to the file (the locale ID for French is 0x040c), similar to the following:  
   
- [!code-cpp[NVC_MFC_AxLoc#1](../mfc/codesnippet/CPP/mfc-activex-controls-localizing-an-activex-control_1.idl)]  
+ [!code-cpp[NVC_MFC_AxLoc#1](../mfc/codesnippet/cpp/mfc-activex-controls-localizing-an-activex-control_1.idl)]  
   
  Change the property names in SAMPLEFR.IDL to their French equivalents, and then use MKTYPLIB.EXE to produce the French type library, SAMPLEFR.TLB.  
   
@@ -92,7 +92,7 @@ This article discusses procedures for localizing ActiveX control interfaces.
   
  To ensure that clients of your control can find the localized type library, register your locale-specific .TLB file(s) under the TypeLib section of the Windows system registry. The third parameter (normally optional) of the [AfxOleRegisterTypeLib](../mfc/reference/registering-ole-controls.md#afxoleregistertypelib) function is provided for this purpose. The following example registers a French type library for an ActiveX control:  
   
- [!code-cpp[NVC_MFC_AxLoc#2](../mfc/codesnippet/CPP/mfc-activex-controls-localizing-an-activex-control_2.cpp)]  
+ [!code-cpp[NVC_MFC_AxLoc#2](../mfc/codesnippet/cpp/mfc-activex-controls-localizing-an-activex-control_2.cpp)]  
   
  When your control is registered, the `AfxOleRegisterTypeLib` function automatically looks for the specified .TLB file in the same directory as the control and registers it in the Windows registration database. If the .TLB file is not found, the function has no effect.  
   
@@ -101,19 +101,19 @@ This article discusses procedures for localizing ActiveX control interfaces.
   
  The following code example demonstrates one approach to locate and load the resource DLL for a specific locale. This member function, called `GetLocalizedResourceHandle` for this example, can be a member function of your ActiveX control class:  
   
- [!code-cpp[NVC_MFC_AxLoc#3](../mfc/codesnippet/CPP/mfc-activex-controls-localizing-an-activex-control_3.cpp)]  
+ [!code-cpp[NVC_MFC_AxLoc#3](../mfc/codesnippet/cpp/mfc-activex-controls-localizing-an-activex-control_3.cpp)]  
   
  Note that the sublanguage ID could be checked in each case of the switch statement, to provide more specialized localization. For a demonstration of this function, see the `GetResourceHandle` function in the MFC ActiveX controls sample [LOCALIZE](../visual-cpp-samples.md).  
   
  When the control first loads itself into a container, it can call [COleControl::AmbientLocaleID](../mfc/reference/colecontrol-class.md#colecontrol__ambientlocaleid) to retrieve the locale ID. The control can then pass the returned locale ID value to the `GetLocalizedResourceHandle` function, which loads the proper resource library. The control should pass the resulting handle, if any, to [AfxSetResourceHandle](../mfc/reference/application-information-and-management.md#afxsetresourcehandle):  
   
- [!code-cpp[NVC_MFC_AxLoc#4](../mfc/codesnippet/CPP/mfc-activex-controls-localizing-an-activex-control_4.cpp)]  
+ [!code-cpp[NVC_MFC_AxLoc#4](../mfc/codesnippet/cpp/mfc-activex-controls-localizing-an-activex-control_4.cpp)]  
   
  Place the code sample above into a member function of the control, such as an override of [COleControl::OnSetClientSite](../mfc/reference/colecontrol-class.md#colecontrol__onsetclientsite). In addition, `m_hResDLL` should be a member variable of the control class.  
   
  You can use similar logic for localizing a control's property page. To localize the property page, add code similar to the following sample to your property page's implementation file (in an override of [COlePropertyPage::OnSetPageSite](../mfc/reference/colepropertypage-class.md#colepropertypage__onsetpagesite)):  
   
- [!code-cpp[NVC_MFC_AxLoc#5](../mfc/codesnippet/CPP/mfc-activex-controls-localizing-an-activex-control_5.cpp)]  
+ [!code-cpp[NVC_MFC_AxLoc#5](../mfc/codesnippet/cpp/mfc-activex-controls-localizing-an-activex-control_5.cpp)]  
   
 ## See Also  
  [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)

@@ -38,7 +38,7 @@ This document describes the memory management functions that the Concurrency Run
 > [!TIP]
 >  The Concurrency Runtime provides a default scheduler, and therefore you are not required to create one in your application. Because the Task Scheduler helps you fine-tune the performance of your applications, we recommend that you start with the [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) or the [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md) if you are new to the Concurrency Runtime.  
   
- The Concurrency Runtime provides two memory management functions that are optimized for allocating and freeing blocks of memory in a concurrent manner. The [concurrency::Alloc](reference/concurrency-namespace-functions.md#Alloc_function) function allocates a block of memory by using the specified size. The [concurrency::Free](reference/concurrency-namespace-functions.md#Free_function) function frees the memory that was allocated by `Alloc`.  
+ The Concurrency Runtime provides two memory management functions that are optimized for allocating and freeing blocks of memory in a concurrent manner. The [concurrency::Alloc](reference/concurrency-namespace-functions.md#alloc_function) function allocates a block of memory by using the specified size. The [concurrency::Free](reference/concurrency-namespace-functions.md#free_function) function frees the memory that was allocated by `Alloc`.  
   
 > [!NOTE]
 >  The `Alloc` and `Free` functions rely on each other. Use the `Free` function only to release memory that you allocate by using the `Alloc` function. Also, when you use the `Alloc` function to allocate memory, use only the `Free` function to release that memory.  

@@ -98,7 +98,7 @@ int main() {
  [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)  
  Contains links to topics that describe several ways to manage string data.  
   
- [Class Template Instantiation](../Topic/Class%20Template%20Instantiation.md)  
+ [Class Template Instantiation](../topic/class%20template%20instantiation.md)  
  `CString` is a `typedef` based on `CStringT`, an instance of a specialization of a class template.  
   
  [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)

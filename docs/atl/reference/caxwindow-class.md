@@ -164,7 +164,7 @@ HRESULT CreateControl(
   
  This method gives you the same result as calling:  
   
- [!code-cpp[NVC_ATL_Windowing#42](../../atl/codesnippet/CPP/caxwindow-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#42](../../atl/codesnippet/cpp/caxwindow-class_1.cpp)]  
   
  See [CAxWindow2T::CreateControlLic](../../atl/reference/caxwindow2t-class.md#caxwindow2t__createcontrollic) to create, initialize, and host a licensed ActiveX control.  
   

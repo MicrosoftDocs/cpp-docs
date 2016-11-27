@@ -436,7 +436,7 @@ void SetByRef(T* pT) throw();
 ### Remarks  
  `SetByRef` is a function template that initializes the `CComVariant` object to the pointer *pT* and sets the **vt** member to **VT_BYREF**. For example:  
   
- [!code-cpp[NVC_ATL_Utilities#76](../../atl/codesnippet/CPP/ccomvariant-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#76](../../atl/codesnippet/cpp/ccomvariant-class_1.cpp)]  
   
 ##  <a name="ccomvariant__writetostream"></a>  CComVariant::WriteToStream  
  Saves the underlying **VARIANT** to a stream.  

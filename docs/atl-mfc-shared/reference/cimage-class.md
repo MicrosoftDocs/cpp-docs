@@ -141,12 +141,12 @@ class CImage
  `CImage` cannot be selected into a new [CDC](../../mfc/reference/cdc-class.md). `CImage` creates its own **HDC** for the image. Because an `HBITMAP` can only be selected into one **HDC** at a time, the `HBITMAP` associated with the `CImage` cannot be selected into another **HDC**. If you need a `CDC`, retrieve the **HDC** from the `CImage` and give it to [CDC::FromHandle](../../mfc/reference/cdc-class.md#cdc__fromhandle.  
   
 ## Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#70](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#70)] -->  
+ <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#70](../codesnippet/vs_snippets_cpp/nvc_atlmfc_utilities#70)] -->  
   
  When you use `CImage` in an MFC project, note which member functions in your project expect a pointer to a [CBitmap](../../mfc/reference/cbitmap-class.md) object. If you want to use `CImage` with such a function, like [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#cmenu__appendmenu), use [CBitmap::FromHandle](../../mfc/reference/cbitmap-class.md#cbitmap__fromhandle), pass it your `CImage` `HBITMAP`, and use the returned `CBitmap*`.  
   
 ## Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#71](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#71)]-->  
+ <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#71](../codesnippet/vs_snippets_cpp/nvc_atlmfc_utilities#71)]-->  
   
  Through `CImage`, you have access to the actual bits of a DIB section. You can use a `CImage` object anywhere you previously used a Win32 HBITMAP or DIB section.  
   
@@ -441,7 +441,7 @@ BOOL CreateEx(int nWidth,
 ### Example  
  The following example creates a 100x100 pixel bitmap, using 16 bits to encode each pixel. In a given 16-bit pixel, bits 0-3 encode the red component, bits 4-7 encode green, and bits 8-11 encode blue. The remaining 4 bits are unused.  
   
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#69](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#69)]-->  
+ <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#69](../codesnippet/vs_snippets_cpp/nvc_atlmfc_utilities#69)]-->  
   
 ##  <a name="cimage__destroy"></a>  CImage::Destroy  
  Detaches the bitmap from the `CImage` object and destroys the bitmap.  
@@ -629,7 +629,7 @@ static HRESULT GetExporterFilterString(CSimpleString& strExporters,
   
  For example:  
   
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#73](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#73)] -->  
+ <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#73](../codesnippet/vs_snippets_cpp/nvc_atlmfc_utilities#73)] -->  
   
  `dwExclude`  
  Set of bit flags specifying which file types to exclude from the list. Allowable flags are:  
@@ -711,7 +711,7 @@ static HRESULT GetImporterFilterString(CSimpleString& strImporters,
   
  For example:  
   
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#74](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#74)] -->  
+ <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#74](../codesnippet/vs_snippets_cpp/nvc_atlmfc_utilities#74)] -->  
   
  `dwExclude`  
  Set of bit flags specifying which file types to exclude from the list. Allowable flags are:  
@@ -1439,7 +1439,7 @@ BOOL TransparentBlt(HDC hDestDC,
  This method is applicable to Microsoft Windows 2000, Windows 98, and later systems. See [TransparentBlt](http://msdn.microsoft.com/library/windows/desktop/dd145141) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)] for more detailed information.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#199](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#199)]  -->
+ <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#199](../codesnippet/vs_snippets_cpp/nvc_atlmfc_utilities#199)]  -->
   
 ## See Also  
  [MMXSwarm Sample](../../visual-cpp-samples.md)   

@@ -94,7 +94,7 @@ class CMFCRibbonEdit : public CMFCRibbonButton
 ## Example  
  The following example demonstrates how to construct a `CMFCRibbonEdit` object, show spin buttons next to the edit control, and set the text of the edit control. This code snippet is part of the [MS Office 2007 Demo sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_MSOffice2007Demo#7](../../mfc/reference/codesnippet/CPP/cmfcribbonedit-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_MSOffice2007Demo#7](../../mfc/reference/codesnippet/cpp/cmfcribbonedit-class_1.cpp)]  
   
 ## Requirements  
  **Header:** afxRibbonEdit.h  
@@ -442,7 +442,7 @@ virtual void OnDrawOnList(
  Pointer to a device context for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.  
   
  [in] `strText`  
- The display text [](../../mfc/reference/cmfcribbonedit-class.md "CMFCRibbonEdit Class").  
+ The display text [](../../mfc/reference/cmfcribbonedit-class.md "cmfcribbonedit class").  
   
  [in] `nTextOffset`  
  Distance, in pixels, from the left side of the list box to the display text.  

@@ -119,7 +119,7 @@ CCheckListBox();
  You construct a `CCheckListBox` object in two steps. First define a class derived from `CCheckListBox`, then call **Create**, which initializes the Windows checklist box and attaches it to the `CCheckListBox` object.  
   
 ### Example  
- [!code-cpp[NVC_MFCControlLadenDialog#60](../../mfc/codesnippet/CPP/cchecklistbox-class_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#60](../../mfc/codesnippet/cpp/cchecklistbox-class_1.cpp)]  
   
 ##  <a name="cchecklistbox__create"></a>  CCheckListBox::Create  
  Creates the Windows checklist box and attaches it to the `CCheckListBox` object.  

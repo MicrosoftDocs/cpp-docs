@@ -104,7 +104,7 @@ CONNECTION_IID(iid)
 ### Remarks  
  The `iid` argument is an interface ID used to identify the interface that the connection point will call on its connected sinks. For example:  
   
- [!code-cpp[NVC_MFCConnectionPoints#10](../../mfc/codesnippet/CPP/connection-maps_1.h)]  
+ [!code-cpp[NVC_MFCConnectionPoints#10](../../mfc/codesnippet/cpp/connection-maps_1.h)]  
   
  specifies a connection point that calls the `ISinkInterface` interface.  
   
@@ -162,7 +162,7 @@ CONNECTION_PART(theClass, iid, localClass)
 ### Remarks  
  For example:  
   
- [!code-cpp[NVC_MFCConnectionPoints#2](../../mfc/codesnippet/CPP/connection-maps_2.cpp)]  
+ [!code-cpp[NVC_MFCConnectionPoints#2](../../mfc/codesnippet/cpp/connection-maps_2.cpp)]  
   
  implements a connection map, with a connection point, that calls the `IID_ISinkInterface` interface .  
   
@@ -198,7 +198,7 @@ BOOL AFXAPI AfxConnectionAdvise(
  Nonzero if a connection was established; otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_MFCConnectionPoints#8](../../mfc/codesnippet/CPP/connection-maps_3.cpp)]  
+ [!code-cpp[NVC_MFCConnectionPoints#8](../../mfc/codesnippet/cpp/connection-maps_3.cpp)]  
   
 ##  <a name="afxconnectionunadvise"></a>  AfxConnectionUnadvise  
  Call this function to disconnect a connection between a source, specified by `pUnkSrc`, and a sink, specified by `pUnkSink`.  
@@ -232,7 +232,7 @@ BOOL AFXAPI AfxConnectionUnadvise(
  Nonzero if a connection was disconnected; otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_MFCConnectionPoints#9](../../mfc/codesnippet/CPP/connection-maps_4.cpp)]  
+ [!code-cpp[NVC_MFCConnectionPoints#9](../../mfc/codesnippet/cpp/connection-maps_4.cpp)]  
   
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

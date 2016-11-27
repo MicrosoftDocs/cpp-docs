@@ -55,7 +55,7 @@ class extent;
   
 |Name|Description|  
 |----------|-----------------|  
-|[extent::extent Constructor](../Topic/extent::extent%20Constructor.md)|Initializes a new instance of the `extent` class.|  
+|[extent::extent Constructor](../topic/extent::extent%20constructor.md)|Initializes a new instance of the `extent` class.|  
   
 ### Public Methods  
   
@@ -69,17 +69,17 @@ class extent;
   
 |Name|Description|  
 |----------|-----------------|  
-|[extent::operator- Operator](../Topic/extent::operator-%20Operator.md)|Returns a new `extent` object that's created by subtracting the `index` elements from the corresponding `extent` elements.|  
-|[extent::operator-- Operator](../Topic/extent::operator--%20Operator.md)|Decrements each element of the `extent` object.|  
-|[extent::operator(mod)= Operator](../Topic/extent::operator\(mod\)=%20Operator.md)|Calculates the modulus (remainder) of each element in the `extent` object when that element is divided by a number.|  
-|[extent::operator*= Operator](../Topic/extent::operator*=%20Operator.md)|Multiplies each element of the `extent` object by a number.|  
-|[extent::operator/= Operator](../Topic/extent::operator-=%20Operator1.md)|Divides each element of the `extent` object by a number.|  
-|[extent::operatorOperator](../Topic/extent::operatorOperator.md)|Returns the element that's at the specified index.|  
-|[extent::operator+ Operator](../Topic/extent::operator+%20Operator.md)|Returns a new `extent` object that's created by adding the corresponding `index` and `extent` elements.|  
-|[extent::operator++ Operator](../Topic/extent::operator++%20Operator.md)|Increments each element of the `extent` object.|  
-|[extent::operator+= Operator](../Topic/extent::operator+=%20Operator.md)|Adds the specified number to each element of the `extent` object.|  
-|[extent::operator= Operator](../Topic/extent::operator=%20Operator.md)|Copies the contents of another `extent` object into this one.|  
-|[extent::operator-= Operator](../Topic/extent::operator-=%20Operator2.md)|Subtracts the specified number from each element of the `extent` object.|  
+|[extent::operator- Operator](../topic/extent::operator-%20operator.md)|Returns a new `extent` object that's created by subtracting the `index` elements from the corresponding `extent` elements.|  
+|[extent::operator-- Operator](../topic/extent::operator--%20operator.md)|Decrements each element of the `extent` object.|  
+|[extent::operator(mod)= Operator](../topic/extent::operator\(mod\)=%20Operator.md)|Calculates the modulus (remainder) of each element in the `extent` object when that element is divided by a number.|  
+|[extent::operator*= Operator](../topic/extent::operator*=%20operator.md)|Multiplies each element of the `extent` object by a number.|  
+|[extent::operator/= Operator](../topic/extent::operator-=%20operator1.md)|Divides each element of the `extent` object by a number.|  
+|[extent::operatorOperator](../topic/extent::operatoroperator.md)|Returns the element that's at the specified index.|  
+|[extent::operator+ Operator](../topic/extent::operator+%20operator.md)|Returns a new `extent` object that's created by adding the corresponding `index` and `extent` elements.|  
+|[extent::operator++ Operator](../topic/extent::operator++%20operator.md)|Increments each element of the `extent` object.|  
+|[extent::operator+= Operator](../topic/extent::operator+=%20operator.md)|Adds the specified number to each element of the `extent` object.|  
+|[extent::operator= Operator](../topic/extent::operator=%20operator.md)|Copies the contents of another `extent` object into this one.|  
+|[extent::operator-= Operator](../topic/extent::operator-=%20operator2.md)|Subtracts the specified number from each element of the `extent` object.|  
   
 ### Public Constants  
   

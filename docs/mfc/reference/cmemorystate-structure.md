@@ -113,7 +113,7 @@ CMemoryState();
 ```  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#18](../../mfc/codesnippet/CPP/cmemorystate-structure_1.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#18](../../mfc/codesnippet/cpp/cmemorystate-structure_1.cpp)]  
   
 ##  <a name="cmemorystate__difference"></a>  CMemoryState::Difference  
  Compares two `CMemoryState` objects, then stores the difference into this `CMemoryState` object.  
@@ -164,7 +164,7 @@ void DumpStatistics() const;
 ```  
   
 ### Remarks  
- The report, which is printed on the [afxDump](http://msdn.microsoft.com/Library/4b3cfa3f-fb75-456a-9d99-a5601acbcb11) device, shows the following:  
+ The report, which is printed on the [afxDump](http://msdn.microsoft.com/library/4b3cfa3f-fb75-456a-9d99-a5601acbcb11) device, shows the following:  
   
  A sample report gives information on the number (or amount) of:  
   
@@ -187,15 +187,15 @@ void DumpStatistics() const;
 ### Example  
   The following code should be placed in *projname*App.cpp. Define the following global variables:  
   
- [!code-cpp[NVC_MFC_Utilities#40](../../mfc/codesnippet/CPP/cmemorystate-structure_2.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#40](../../mfc/codesnippet/cpp/cmemorystate-structure_2.cpp)]  
   
  In the `InitInstance` function, add the line:  
   
- [!code-cpp[NVC_MFC_Utilities#41](../../mfc/codesnippet/CPP/cmemorystate-structure_3.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#41](../../mfc/codesnippet/cpp/cmemorystate-structure_3.cpp)]  
   
  Add a handler for the `ExitInstance` function and use the following code:  
   
- [!code-cpp[NVC_MFC_Utilities#42](../../mfc/codesnippet/CPP/cmemorystate-structure_4.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#42](../../mfc/codesnippet/cpp/cmemorystate-structure_4.cpp)]  
   
  You can now run the program in Debug mode to see the output of the `DumpStatistics` function.  
   

@@ -35,9 +35,9 @@ These macros define window class utilities.
   
 |||  
 |-|-|  
-|[DECLARE_WND_CLASS](http://msdn.microsoft.com/Library/55247a72-fb9e-4bde-87f3-747c08076971)|Allows you to specify the name of a new window class.|  
-|[DECLARE_WND_SUPERCLASS](http://msdn.microsoft.com/Library/650337b6-4973-41e5-8c36-55f90327bdcd)|Allows you to specify the name of an existing window class on which a new window class will be based.|  
-|[DECLARE_WND_CLASS_EX](http://msdn.microsoft.com/Library/0672c144-f2aa-4f6a-ae16-566e3a1f5411)|Allows you to specify the parameters of a class.|  
+|[DECLARE_WND_CLASS](http://msdn.microsoft.com/library/55247a72-fb9e-4bde-87f3-747c08076971)|Allows you to specify the name of a new window class.|  
+|[DECLARE_WND_SUPERCLASS](http://msdn.microsoft.com/library/650337b6-4973-41e5-8c36-55f90327bdcd)|Allows you to specify the name of an existing window class on which a new window class will be based.|  
+|[DECLARE_WND_CLASS_EX](http://msdn.microsoft.com/library/0672c144-f2aa-4f6a-ae16-566e3a1f5411)|Allows you to specify the parameters of a class.|  
   
 ##  <a name="declare_wnd_class"></a>  DECLARE_WND_CLASS  
  Allows you to specify the name of a new window class. Place this macro in an ATL ActiveX control's control class.  
@@ -53,7 +53,7 @@ DECLARE_WND_CLASS( WndClassName )
 ### Remarks  
  This macro allows you to specify the name of a new window class whose information will be managed by [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md). `DECLARE_WND_CLASS` defines the new window class by implementing the following static function:  
   
- [!code-cpp[NVC_ATL_Windowing#127](../../atl/codesnippet/CPP/window-class-macros_1.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#127](../../atl/codesnippet/cpp/window-class-macros_1.cpp)]  
   
  `DECLARE_WND_CLASS` specifies the following styles for the new window:  
   
@@ -63,9 +63,9 @@ DECLARE_WND_CLASS( WndClassName )
   
 -   CS_DBLCLKS  
   
- `DECLARE_WND_CLASS` also specifies the default window's background color. Use the [DECLARE_WND_CLASS_EX](http://msdn.microsoft.com/Library/0672c144-f2aa-4f6a-ae16-566e3a1f5411) macro to provide your own styles and background color.  
+ `DECLARE_WND_CLASS` also specifies the default window's background color. Use the [DECLARE_WND_CLASS_EX](http://msdn.microsoft.com/library/0672c144-f2aa-4f6a-ae16-566e3a1f5411) macro to provide your own styles and background color.  
   
- [CWindowImpl](../../atl/reference/cwindowimpl-class.md) uses the `DECLARE_WND_CLASS` macro to create a window based on a new window class. To override this behavior, use the [DECLARE_WND_SUPERCLASS](http://msdn.microsoft.com/Library/650337b6-4973-41e5-8c36-55f90327bdcd) macro, or provide your own implementation of the [GetWndClassInfo](CWindowImpl-class.md#CWindowImpl__GetWndClassInfo) function.  
+ [CWindowImpl](../../atl/reference/cwindowimpl-class.md) uses the `DECLARE_WND_CLASS` macro to create a window based on a new window class. To override this behavior, use the [DECLARE_WND_SUPERCLASS](http://msdn.microsoft.com/library/650337b6-4973-41e5-8c36-55f90327bdcd) macro, or provide your own implementation of the [GetWndClassInfo](cwindowimpl-class.md#cwindowimpl__getwndclassinfo) function.  
   
  For more information about using windows in ATL, see the article [ATL Window Classes](../../atl/atl-window-classes.md).  
   
@@ -88,11 +88,11 @@ DECLARE_WND_SUPERCLASS( WndClassName, OrigWndClassName )
   
  `DECLARE_WND_SUPERCLASS` implements the following static function:  
   
- [!code-cpp[NVC_ATL_Windowing#127](../../atl/codesnippet/CPP/window-class-macros_1.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#127](../../atl/codesnippet/cpp/window-class-macros_1.cpp)]  
   
- By default, [CWindowImpl](../../atl/reference/cwindowimpl-class.md) uses the [DECLARE_WND_CLASS](http://msdn.microsoft.com/Library/55247a72-fb9e-4bde-87f3-747c08076971) macro to create a window based on a new window class. By specifying the `DECLARE_WND_SUPERCLASS` macro in a `CWindowImpl`-derived class, the window class will be based on an existing class but will use your window procedure. This technique is called superclassing.  
+ By default, [CWindowImpl](../../atl/reference/cwindowimpl-class.md) uses the [DECLARE_WND_CLASS](http://msdn.microsoft.com/library/55247a72-fb9e-4bde-87f3-747c08076971) macro to create a window based on a new window class. By specifying the `DECLARE_WND_SUPERCLASS` macro in a `CWindowImpl`-derived class, the window class will be based on an existing class but will use your window procedure. This technique is called superclassing.  
   
- Besides using the `DECLARE_WND_CLASS` and `DECLARE_WND_SUPERCLASS` macros, you can override the [GetWndClassInfo](CWindowImpl-class.md#CWindowImpl__GetWndClassInfo) function with your own implementation.  
+ Besides using the `DECLARE_WND_CLASS` and `DECLARE_WND_SUPERCLASS` macros, you can override the [GetWndClassInfo](cwindowimpl-class.md#cwindowimpl__getwndclassinfo) function with your own implementation.  
   
  For more information about using windows in ATL, see the article [ATL Window Classes](../../atl/atl-window-classes.md).  
   
@@ -116,9 +116,9 @@ DECLARE_WND_CLASS_EX( WndClassName, style, bkgnd )
 ### Remarks  
  This macro allows you to specify the class parameters of a new window class, whose information will be managed by [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md). `DECLARE_WND_CLASS_EX` defines the new window class by implementing the following static function:  
   
- [!code-cpp[NVC_ATL_Windowing#127](../../atl/codesnippet/CPP/window-class-macros_1.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#127](../../atl/codesnippet/cpp/window-class-macros_1.cpp)]  
   
- If you want to use the default styles and background color, use the [DECLARE_WND_CLASS](http://msdn.microsoft.com/Library/55247a72-fb9e-4bde-87f3-747c08076971) macro. For more information about using windows in ATL, see the article [ATL Window Classes](../../atl/atl-window-classes.md).  
+ If you want to use the default styles and background color, use the [DECLARE_WND_CLASS](http://msdn.microsoft.com/library/55247a72-fb9e-4bde-87f3-747c08076971) macro. For more information about using windows in ATL, see the article [ATL Window Classes](../../atl/atl-window-classes.md).  
   
 ## See Also  
  [Macros](../../atl/reference/atl-macros.md)

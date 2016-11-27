@@ -143,7 +143,7 @@ HRESULT Open( 
 ## Example  
  The following code shows how to open a Jet 4.0 data source with OLE DB Templates. You treat the Jet data source as an OLE DB data source. However, your call to **Open** needs two property sets: one for **DBPROPSET_DBINIT** and the other for **DBPROPSET_JETOLEDB_DBINIT**, so that you can set **DBPROP_JETOLEDB_DATABASEPASSWORD**.  
   
- [!code-cpp[NVC_OLEDB_Consumer#7](../../data/oledb/codesnippet/CPP/cdatasource-open_1.cpp)]  
+ [!code-cpp[NVC_OLEDB_Consumer#7](../../data/oledb/codesnippet/cpp/cdatasource-open_1.cpp)]  
   
 ## Requirements  
  **Header:** atldbcli.h  

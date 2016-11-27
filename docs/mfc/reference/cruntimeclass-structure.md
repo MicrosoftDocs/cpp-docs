@@ -126,7 +126,7 @@ static CRuntimeClass* PASCAL FromName(LPCWSTR lpszClassName);
  A pointer to a `CRuntimeClass` object, corresponding to the name as passed in `lpszClassName`. The function returns **NULL** if no matching class name was found.  
   
 ### Example  
- [!code-cpp[NVC_MFCCObjectSample#17](../../mfc/codesnippet/CPP/cruntimeclass-structure_1.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#17](../../mfc/codesnippet/cpp/cruntimeclass-structure_1.cpp)]  
   
 ##  <a name="cruntimeclass__isderivedfrom"></a>  CRuntimeClass::IsDerivedFrom  
  Call this function to determine if the calling class is derived from the class specified in the *pBaseClass* parameter.  
@@ -153,7 +153,7 @@ BOOL IsDerivedFrom(const CRuntimeClass* pBaseClass) const;
  For more information on using `CRuntimeClass`, see the article [CObject Class: Accessing Run-Time Class Information](../../mfc/accessing-run-time-class-information.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCCObjectSample#18](../../mfc/codesnippet/CPP/cruntimeclass-structure_2.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#18](../../mfc/codesnippet/cpp/cruntimeclass-structure_2.cpp)]  
   
 ##  <a name="cruntimeclass__m_lpszclassname"></a>  CRuntimeClass::m_lpszClassName  
  A null-terminated string containing the ASCII class name.  

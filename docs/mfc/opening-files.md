@@ -63,7 +63,7 @@ In MFC, the most common way to open a file is a two-stage process.
   
  The following example shows how to create a new file with read/write permission (replacing any previous file with the same path):  
   
- [!code-cpp[NVC_MFCFiles#1](../atl-mfc-shared/reference/codesnippet/CPP/opening-files_1.cpp)]  
+ [!code-cpp[NVC_MFCFiles#1](../atl-mfc-shared/reference/codesnippet/cpp/opening-files_1.cpp)]  
   
 > [!NOTE]
 >  This example creates and opens a file. If there are problems, the `Open` call can return a `CFileException` object in its last parameter, as shown here. The `TRACE` macro prints both the file name and a code indicating the reason for failure. You can call the `AfxThrowFileException` function if you require more detailed error reporting.  

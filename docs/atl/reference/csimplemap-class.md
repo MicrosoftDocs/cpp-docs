@@ -103,7 +103,7 @@ template <class TKey, class TVal, class TEqual = CSimpleMapEqualHelper<TKey,
  **Header:** atlsimpcoll.h  
   
 ## Example  
- [!code-cpp[NVC_ATL_Utilities#91](../../atl/codesnippet/CPP/csimplemap-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#91](../../atl/codesnippet/cpp/csimplemap-class_1.cpp)]  
   
 ##  <a name="csimplemap__add"></a>  CSimpleMap::Add  
  Adds a key and associated value to the map array.  

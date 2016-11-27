@@ -78,7 +78,7 @@ template <class T>
  `CAtlModuleT` provides support for initializing, registering, and unregistering of the module.  
   
 ## Inheritance Hierarchy  
- [_ATL_MODULE](../Topic/_ATL_MODULE.md)  
+ [_ATL_MODULE](../topic/_atl_module.md)  
   
  [CAtlModule](../../atl/reference/catlmodule-class.md)  
   

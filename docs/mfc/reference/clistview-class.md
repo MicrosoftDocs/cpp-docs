@@ -103,7 +103,7 @@ CListCtrl& GetListCtrl() const;
  A reference to the list control associated with the view.  
   
 ### Example  
- [!code-cpp[NVC_MFCListView#7](../../atl/reference/codesnippet/CPP/clistview-class_1.cpp)]  
+ [!code-cpp[NVC_MFCListView#7](../../atl/reference/codesnippet/cpp/clistview-class_1.cpp)]  
   
 ##  <a name="clistview__removeimagelist"></a>  CListView::RemoveImageList  
  Removes the specified image list from the list view.  

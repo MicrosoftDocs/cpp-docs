@@ -111,7 +111,7 @@ void SetCommands(
 ### Example  
  The following example demonstrates how to use the `SetCommands` method of the `CMFCRibbonMiniToolBar` class. This code snippet is part of the [MS Office 2007 Demo sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_MSOffice2007Demo#9](../../mfc/reference/codesnippet/CPP/cmfcribbonminitoolbar-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_MSOffice2007Demo#9](../../mfc/reference/codesnippet/cpp/cmfcribbonminitoolbar-class_1.cpp)]  
   
 ##  <a name="cmfcribbonminitoolbar__show"></a>  CMFCRibbonMiniToolBar::Show  
  Displays the mini toolbar at the specified screen coordinates.  

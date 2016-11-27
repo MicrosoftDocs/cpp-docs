@@ -342,7 +342,7 @@ virtual void Close();
  You can call **Open** again after calling **Close**. This lets you reuse the recordset object. The alternative is to call **Requery**.  
   
 ### Example  
- [!code-cpp[NVC_MFCDatabase#17](../../mfc/codesnippet/CPP/crecordset-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#17](../../mfc/codesnippet/cpp/crecordset-class_1.cpp)]  
   
 ##  <a name="crecordset__crecordset"></a>  CRecordset::CRecordset  
  Constructs a `CRecordset` object.  
@@ -387,7 +387,7 @@ virtual void Delete();
 ### Example  
  This example shows a recordset created on the frame of a function. The example assumes the existence of `m_dbCust`, a member variable of type `CDatabase` already connected to the data source.  
   
- [!code-cpp[NVC_MFCDatabase#18](../../mfc/codesnippet/CPP/crecordset-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#18](../../mfc/codesnippet/cpp/crecordset-class_2.cpp)]  
   
 ##  <a name="crecordset__dobulkfieldexchange"></a>  CRecordset::DoBulkFieldExchange  
  Called to exchange bulk rows of data from the data source to the recordset. Implements bulk record field exchange (Bulk RFX).  
@@ -439,7 +439,7 @@ virtual void DoFieldExchange(CFieldExchange* pFX);
   
  When you declare your derived recordset class with ClassWizard, the wizard writes an override of `DoFieldExchange` for you, which resembles the following example:  
   
- [!code-cpp[NVC_MFCDatabase#19](../../mfc/codesnippet/CPP/crecordset-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#19](../../mfc/codesnippet/cpp/crecordset-class_3.cpp)]  
   
  For more information about the RFX functions, see the topic [Record Field Exchange Functions](../../mfc/reference/record-field-exchange-functions.md).  
   
@@ -471,7 +471,7 @@ virtual void Edit();
  For more information, see the articles [Transaction (ODBC)](../../data/odbc/transaction-odbc.md) and [Recordset: Locking Records (ODBC)](../../data/odbc/recordset-locking-records-odbc.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCDatabase#20](../../mfc/codesnippet/CPP/crecordset-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#20](../../mfc/codesnippet/cpp/crecordset-class_4.cpp)]  
   
 ##  <a name="crecordset__flushresultset"></a>  CRecordset::FlushResultSet  
  Retrieves the next result set of a predefined query (stored procedure), if there are multiple result sets.  
@@ -495,9 +495,9 @@ BOOL FlushResultSet();
 ### Example  
  The following code assumes that `COutParamRecordset` is a `CRecordset`-derived object based on a predefined query with an input parameter and an output parameter, and having multiple result sets. Note the structure of the [DoFieldExchange](#crecordset__dofieldexchange) override.  
   
- [!code-cpp[NVC_MFCDatabase#21](../../mfc/codesnippet/CPP/crecordset-class_5.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#21](../../mfc/codesnippet/cpp/crecordset-class_5.cpp)]  
   
- [!code-cpp[NVC_MFCDatabase#22](../../mfc/codesnippet/CPP/crecordset-class_6.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#22](../../mfc/codesnippet/cpp/crecordset-class_6.cpp)]  
   
 ##  <a name="crecordset__getbookmark"></a>  CRecordset::GetBookmark  
  Obtains the bookmark value for the current record.  
@@ -629,7 +629,7 @@ void GetFieldValue(
 ### Example  
  The following sample code illustrates calls to `GetFieldValue` for a recordset object declared directly from `CRecordset`.  
   
- [!code-cpp[NVC_MFCDatabase#23](../../mfc/codesnippet/CPP/crecordset-class_7.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#23](../../mfc/codesnippet/cpp/crecordset-class_7.cpp)]  
   
 > [!NOTE]
 >  Unlike the DAO class `CDaoRecordset`, `CRecordset` does not have a `SetFieldValue` member function. If you create an object directly from `CRecordset`, it is effectively read-only.  
@@ -738,7 +738,7 @@ DWORD GetRowsFetched() const;
  For more information about bulk row fetching, see the article [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCDatabase#24](../../mfc/codesnippet/CPP/crecordset-class_8.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#24](../../mfc/codesnippet/cpp/crecordset-class_8.cpp)]  
   
 ##  <a name="crecordset__getrowstatus"></a>  CRecordset::GetRowStatus  
  Obtains the status for a row in the current rowset.  
@@ -862,7 +862,7 @@ BOOL IsBOF() const;
 ### Example  
  This example uses `IsBOF` and `IsEOF` to detect the limits of a recordset as the code scrolls through the recordset in both directions.  
   
- [!code-cpp[NVC_MFCDatabase#25](../../mfc/codesnippet/CPP/crecordset-class_9.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#25](../../mfc/codesnippet/cpp/crecordset-class_9.cpp)]  
   
 ##  <a name="crecordset__isdeleted"></a>  CRecordset::IsDeleted  
  Determines whether the current record has been deleted.  
@@ -975,13 +975,13 @@ BOOL IsFieldNullable(void* pv);
   
  Using **NULL** for the first argument of the function will apply the function only to **outputColumn** fields, not **param** fields. For instance, the call  
   
- [!code-cpp[NVC_MFCDatabase#26](../../mfc/codesnippet/CPP/crecordset-class_10.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#26](../../mfc/codesnippet/cpp/crecordset-class_10.cpp)]  
   
  will set only **outputColumn** fields to **NULL**; **param** fields will be unaffected.  
   
  To work on **param** fields, you must supply the actual address of the individual **param** you want to work on, such as:  
   
- [!code-cpp[NVC_MFCDatabase#27](../../mfc/codesnippet/CPP/crecordset-class_11.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#27](../../mfc/codesnippet/cpp/crecordset-class_11.cpp)]  
   
  This means you cannot set all **param** fields to **NULL**, as you can with **outputColumn** fields.  
   
@@ -1065,7 +1065,7 @@ BOOL IsOpen() const;
  For more information about SQL **WHERE** clauses, see the article [SQL](../../data/odbc/sql.md). For more information about selecting and filtering records, see the article [Recordset: Filtering Records (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCDatabase#30](../../mfc/codesnippet/CPP/crecordset-class_12.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#30](../../mfc/codesnippet/cpp/crecordset-class_12.cpp)]  
   
 ##  <a name="crecordset__m_strsort"></a>  CRecordset::m_strSort  
  After you construct the recordset object, but before you call its **Open** member function, use this data member to store a `CString` containing a SQL **ORDER BY** clause.  
@@ -1082,7 +1082,7 @@ BOOL IsOpen() const;
  For more information about SQL clauses, see the article [SQL](../../data/odbc/sql.md). For more information about sorting records, see the article [Recordset: Sorting Records (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCDatabase#31](../../mfc/codesnippet/CPP/crecordset-class_13.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#31](../../mfc/codesnippet/cpp/crecordset-class_13.cpp)]  
   
 ##  <a name="crecordset__move"></a>  CRecordset::Move  
  Moves the current record pointer within the recordset, either forward or backward.  
@@ -1137,7 +1137,7 @@ virtual void Move(
  For more information about recordset navigation, see the articles [Recordset: Scrolling (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) and [Recordset: Bookmarks and Absolute Positions (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md). For more information about bulk row fetching, see the article [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md). For related information, see the ODBC API function **SQLExtendedFetch** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDatabase#28](../../mfc/codesnippet/CPP/crecordset-class_14.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#28](../../mfc/codesnippet/cpp/crecordset-class_14.cpp)]  
   
 ##  <a name="crecordset__movefirst"></a>  CRecordset::MoveFirst  
  Makes the first record in the first rowset the current record.  
@@ -1394,7 +1394,7 @@ virtual BOOL Open(
 ### Example  
  The following code examples show different forms of the **Open** call.  
   
- [!code-cpp[NVC_MFCDatabase#16](../../mfc/codesnippet/CPP/crecordset-class_15.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#16](../../mfc/codesnippet/cpp/crecordset-class_15.cpp)]  
   
 ##  <a name="crecordset__refreshrowset"></a>  CRecordset::RefreshRowset  
  Updates the data and the status for a row in the current rowset.  
@@ -1452,7 +1452,7 @@ virtual BOOL Requery();
 ### Example  
  This example rebuilds a recordset to apply a different sort order.  
   
- [!code-cpp[NVC_MFCDatabase#29](../../mfc/codesnippet/CPP/crecordset-class_16.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#29](../../mfc/codesnippet/cpp/crecordset-class_16.cpp)]  
   
 ##  <a name="crecordset__setabsoluteposition"></a>  CRecordset::SetAbsolutePosition  
  Positions the recordset on the record corresponding to the specified record number.  
@@ -1532,13 +1532,13 @@ void SetFieldDirty(
   
  Using **NULL** for the first argument of the function will apply the function only to **outputColumn** fields, not **param** fields. For instance, the call  
   
- [!code-cpp[NVC_MFCDatabase#26](../../mfc/codesnippet/CPP/crecordset-class_10.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#26](../../mfc/codesnippet/cpp/crecordset-class_10.cpp)]  
   
  will set only **outputColumn** fields to **NULL**; **param** fields will be unaffected.  
   
  To work on **param** fields, you must supply the actual address of the individual **param** you want to work on, such as:  
   
- [!code-cpp[NVC_MFCDatabase#27](../../mfc/codesnippet/CPP/crecordset-class_11.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#27](../../mfc/codesnippet/cpp/crecordset-class_11.cpp)]  
   
  This means you cannot set all **param** fields to **NULL**, as you can with **outputColumn** fields.  
   
@@ -1570,13 +1570,13 @@ void SetFieldNull(
   
  Using **NULL** for the first argument of the function will apply the function only to **outputColumn** fields, not **param** fields. For instance, the call  
   
- [!code-cpp[NVC_MFCDatabase#26](../../mfc/codesnippet/CPP/crecordset-class_10.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#26](../../mfc/codesnippet/cpp/crecordset-class_10.cpp)]  
   
  will set only **outputColumn** fields to **NULL**; **param** fields will be unaffected.  
   
  To work on **param** fields, you must supply the actual address of the individual **param** you want to work on, such as:  
   
- [!code-cpp[NVC_MFCDatabase#27](../../mfc/codesnippet/CPP/crecordset-class_11.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#27](../../mfc/codesnippet/cpp/crecordset-class_11.cpp)]  
   
  This means you cannot set all **param** fields to **NULL**, as you can with **outputColumn** fields.  
   

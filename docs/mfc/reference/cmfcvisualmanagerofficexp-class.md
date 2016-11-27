@@ -52,7 +52,7 @@ class CMFCVisualManagerOfficeXP : public CMFCVisualManager
 ## Example  
  The following example demonstrates how to use `CMFCVisualManagerOfficeXP`. This code snippet is part of the [Desktop Alert Demo sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_DesktopAlertDemo#8](../../mfc/reference/codesnippet/CPP/cmfcvisualmanagerofficexp-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_DesktopAlertDemo#8](../../mfc/reference/codesnippet/cpp/cmfcvisualmanagerofficexp-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Hierarchy Chart Categories
-![MFC hierarchy chart categories](../mfc/media/vc369r1.png "vc369R1")  
+![MFC hierarchy chart categories](../mfc/media/vc369r1.png "vc369r1")  
   
 ## See Also  
  [Hierarchy Chart](../mfc/hierarchy-chart.md)   

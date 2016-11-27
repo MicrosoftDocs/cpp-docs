@@ -88,7 +88,7 @@ class CComSafeArray
 |Name|Description|  
 |----------|-----------------|  
 |[CComSafeArray::operator LPSAFEARRAY](#ccomsafearray__operator_lpsafearray)|Casts a value to a **SAFEARRAY** pointer.|  
-|[CComSafeArray::operator](CComSafeArray-class.md#CComSafeArray__operator)|Retrieves an element from the array.|  
+|[CComSafeArray::operator](ccomsafearray-class.md#ccomsafearray__operator)|Retrieves an element from the array.|  
 |[CComSafeArray::operator =](#ccomsafearray__operator_eq)|Assignment operator.|  
   
 ### Public Data Members  
@@ -130,7 +130,7 @@ class CComSafeArray
  **Header:** atlsafe.h  
   
 ## Example  
- [!code-cpp[NVC_ATL_Utilities#75](../../atl/codesnippet/CPP/ccomsafearray-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#75](../../atl/codesnippet/cpp/ccomsafearray-class_1.cpp)]  
   
 ##  <a name="ccomsafearray__add"></a>  CComSafeArray::Add  
  Adds one or more elements, or a **SAFEARRAY** structure, to a `CComSafeArray`.  
@@ -518,9 +518,9 @@ HRESULT MultiDimSetAt(
  Retrieves an element from the array.  
   
 ```
-T& operator[](LONG   lIndex) const;
+T& operator[](long   lindex) const;
 
-    T& operator[](int   nIndex) const;
+    T& operator[](int   nindex) const;
 ```  
   
 ### Parameters  

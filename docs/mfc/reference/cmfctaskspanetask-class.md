@@ -76,7 +76,7 @@ class CMFCTasksPaneTask : public CObject
 ## Remarks  
  The following illustration shows a task group that contains three tasks:  
   
- ![Task group, expanded](../../mfc/reference/media/nexttaskgrpexpand.png "NextTaskGrpExpand")  
+ ![Task group, expanded](../../mfc/reference/media/nexttaskgrpexpand.png "nexttaskgrpexpand")  
   
 > [!NOTE]
 >  If a task does not have a valid command ID, it is treated as a simple label.  

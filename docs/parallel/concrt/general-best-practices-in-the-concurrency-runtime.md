@@ -63,15 +63,15 @@ This document describes best practices that apply to multiple areas of the Concu
   
  The following example performs more tasks than the number of allocated processing resources. The first task does not yield to the task scheduler and therefore the second task does not start until the first task finishes.  
   
- [!code-cpp[concrt-cooperative-tasks#1](../../parallel/concrt/codesnippet/CPP/general-best-practices-in-the-concurrency-runtime_1.cpp)]  
+ [!code-cpp[concrt-cooperative-tasks#1](../../parallel/concrt/codesnippet/cpp/general-best-practices-in-the-concurrency-runtime_1.cpp)]  
   
  This example produces the following output:  
   
  1: 250000000 1: 500000000 1: 750000000 1: 1000000000 2: 250000000 2: 500000000 2: 750000000 2: 1000000000  
   
- There are several ways to enable cooperation between the two tasks. One way is to occasionally yield to the task scheduler in a long-running task. The following example modifies the `task` function to call the [concurrency::Context::Yield](reference/Context-class.md#Context__Yield_method) method to yield execution to the task scheduler so that another task can run.  
+ There are several ways to enable cooperation between the two tasks. One way is to occasionally yield to the task scheduler in a long-running task. The following example modifies the `task` function to call the [concurrency::Context::Yield](reference/context-class.md#context__yield_method) method to yield execution to the task scheduler so that another task can run.  
   
- [!code-cpp[concrt-cooperative-tasks#2](../../parallel/concrt/codesnippet/CPP/general-best-practices-in-the-concurrency-runtime_2.cpp)]  
+ [!code-cpp[concrt-cooperative-tasks#2](../../parallel/concrt/codesnippet/cpp/general-best-practices-in-the-concurrency-runtime_2.cpp)]  
   
  This example produces the following output:  
   
@@ -97,16 +97,16 @@ This document describes best practices that apply to multiple areas of the Concu
   
  There are cases in which you cannot use the cooperative blocking mechanism that is provided by the Concurrency Runtime. For example, an external library that you use might use a different synchronization mechanism. Another example is when you perform an operation that could have a high amount of latency, for example, when you use the Windows API `ReadFile` function to read data from a network connection. In these cases, oversubscription can enable other tasks to run when another task is idle. Oversubscription lets you create more threads than the available number of hardware threads.  
   
- Consider the following function, `download`, which downloads the file at the given URL. This example uses the [concurrency::Context::Oversubscribe](reference/Context-class.md#Context__Oversubscribe_method) method to temporarily increase the number of active threads.  
+ Consider the following function, `download`, which downloads the file at the given URL. This example uses the [concurrency::Context::Oversubscribe](reference/context-class.md#context__oversubscribe_method) method to temporarily increase the number of active threads.  
   
- [!code-cpp[concrt-download-oversubscription#4](../../parallel/concrt/codesnippet/CPP/general-best-practices-in-the-concurrency-runtime_3.cpp)]  
+ [!code-cpp[concrt-download-oversubscription#4](../../parallel/concrt/codesnippet/cpp/general-best-practices-in-the-concurrency-runtime_3.cpp)]  
   
  Because the `GetHttpFile` function performs a potentially latent operation, oversubscription can enable other tasks to run as the current task waits for data. For the complete version of this example, see [How to: Use Oversubscription to Offset Latency](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md).  
   
  [[Top](#top)]  
   
 ##  <a name="memory"></a> Use Concurrent Memory Management Functions When Possible  
- Use the memory management functions, [concurrency::Alloc](reference/concurrency-namespace-functions.md#Alloc_function) and [concurrency::Free](reference/concurrency-namespace-functions.md#Free_function), when you have fine-grained tasks that frequently allocate small objects that have a relatively short lifetime. The Concurrency Runtime holds a separate memory cache for each running thread. The `Alloc` and `Free` functions allocate and free memory from these caches without the use of locks or memory barriers.  
+ Use the memory management functions, [concurrency::Alloc](reference/concurrency-namespace-functions.md#alloc_function) and [concurrency::Free](reference/concurrency-namespace-functions.md#free_function), when you have fine-grained tasks that frequently allocate small objects that have a relatively short lifetime. The Concurrency Runtime holds a separate memory cache for each running thread. The `Alloc` and `Free` functions allocate and free memory from these caches without the use of locks or memory barriers.  
   
  For more information about these memory management functions, see [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md). For an example that uses these functions, see [How to: Use Alloc and Free to Improve Memory Performance](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md).  
   
@@ -117,15 +117,15 @@ This document describes best practices that apply to multiple areas of the Concu
   
  The *Resource Acquisition Is Initialization* (RAII) pattern is one way to safely manage the lifetime of a concurrency object under a given scope. Under the RAII pattern, a data structure is allocated on the stack. That data structure initializes or acquires a resource when it is created and destroys or releases that resource when the data structure is destroyed. The RAII pattern guarantees that the destructor is called before the enclosing scope exits. This pattern is useful when a function contains multiple `return` statements. This pattern also helps you write exception-safe code. When a `throw` statement causes the stack to unwind, the destructor for the RAII object is called; therefore, the resource is always correctly deleted or released.  
   
- The runtime defines several classes that use the RAII pattern, for example, [concurrency::critical_section::scoped_lock](../Topic/critical_section::scoped_lock%20Class.md) and [concurrency::reader_writer_lock::scoped_lock](../Topic/reader_writer_lock::scoped_lock%20Class.md). These helper classes are known as *scoped locks*. These classes provide several benefits when you work with [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) or [concurrency::reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) objects. The constructor of these classes acquires access to the provided `critical_section` or `reader_writer_lock` object; the destructor releases access to that object. Because a scoped lock releases access to its mutual exclusion object automatically when it is destroyed, you do not manually unlock the underlying object.  
+ The runtime defines several classes that use the RAII pattern, for example, [concurrency::critical_section::scoped_lock](../topic/critical_section::scoped_lock%20class.md) and [concurrency::reader_writer_lock::scoped_lock](../topic/reader_writer_lock::scoped_lock%20class.md). These helper classes are known as *scoped locks*. These classes provide several benefits when you work with [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) or [concurrency::reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) objects. The constructor of these classes acquires access to the provided `critical_section` or `reader_writer_lock` object; the destructor releases access to that object. Because a scoped lock releases access to its mutual exclusion object automatically when it is destroyed, you do not manually unlock the underlying object.  
   
  Consider the following class, `account`, which is defined by an external library and therefore cannot be modified.  
   
- [!code-cpp[concrt-account-transactions#1](../../parallel/concrt/codesnippet/CPP/general-best-practices-in-the-concurrency-runtime_4.h)]  
+ [!code-cpp[concrt-account-transactions#1](../../parallel/concrt/codesnippet/cpp/general-best-practices-in-the-concurrency-runtime_4.h)]  
   
  The following example performs multiple transactions on an `account` object in parallel. The example uses a `critical_section` object to synchronize access to the `account` object because the `account` class is not concurrency-safe. Each parallel operation uses a `critical_section::scoped_lock` object to guarantee that the `critical_section` object is unlocked when the operation either succeeds or fails. When the account balance is negative, the `withdraw` operation fails by throwing an exception.  
   
- [!code-cpp[concrt-account-transactions#2](../../parallel/concrt/codesnippet/CPP/general-best-practices-in-the-concurrency-runtime_5.cpp)]  
+ [!code-cpp[concrt-account-transactions#2](../../parallel/concrt/codesnippet/cpp/general-best-practices-in-the-concurrency-runtime_5.cpp)]  
   
  This example produces the following sample output:  
   
@@ -150,7 +150,7 @@ Error details:
   
  The following example demonstrates the creation of a global [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) object. This pattern applies not only to the `Scheduler` class but all other types that are provided by the Concurrency Runtime. We recommend that you do not follow this pattern because it can cause unexpected behavior in your application.  
   
- [!code-cpp[concrt-global-scheduler#1](../../parallel/concrt/codesnippet/CPP/general-best-practices-in-the-concurrency-runtime_6.cpp)]  
+ [!code-cpp[concrt-global-scheduler#1](../../parallel/concrt/codesnippet/cpp/general-best-practices-in-the-concurrency-runtime_6.cpp)]  
   
  For examples of the correct way to create `Scheduler` objects, see [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md).  
   

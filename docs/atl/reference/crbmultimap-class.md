@@ -119,7 +119,7 @@ explicit CRBMultiMap(size_t nBlockSize = 10) throw();
  See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#85](../../atl/codesnippet/CPP/crbmultimap-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#85](../../atl/codesnippet/cpp/crbmultimap-class_1.cpp)]  
   
 ##  <a name="crbmultimap___dtorcrbmultimap"></a>  CRBMultiMap::~CRBMultiMap  
  The destructor.  
@@ -205,7 +205,7 @@ CPair* GetNextWithKey(
  Specifies the key that identifies the element to be found.  
   
 ### Return Value  
- Returns the next [CRBTree::CPair Class](../Topic/CRBTree::CPair%20Class.md) element associated with the given key.  
+ Returns the next [CRBTree::CPair Class](../topic/crbtree::cpair%20class.md) element associated with the given key.  
   
 ### Remarks  
  The position value is updated to point to the next value associated with the key. If no more values exist, the position value is set to NULL.  

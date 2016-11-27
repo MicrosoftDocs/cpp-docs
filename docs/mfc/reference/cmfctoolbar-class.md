@@ -238,8 +238,8 @@ class CMFCToolBar : public CMFCBaseToolBar
 ## Example  
  The following example demonstrates how to use various methods in the `CMFCToolBar` class. The example shows how to set the text of the window label of the tool bar, set the borders, set the style of the pane, and enable the **Add or Remove Buttons** button that appears on the end of the toolbar. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/CPP/cmfctoolbar-class_1.h)]  
-[!code-cpp[NVC_MFC_IEDemo#8](../../mfc/reference/codesnippet/CPP/cmfctoolbar-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]  
+[!code-cpp[NVC_MFC_IEDemo#8](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_2.cpp)]  
   
 ## Requirements  
  **Header:** afxtoolbar.h  
@@ -689,8 +689,8 @@ virtual BOOL CreateEx(
 ### Example  
  The following example demonstrates how to use the `CreateEx` method of the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/CPP/cmfctoolbar-class_1.h)]  
-[!code-cpp[NVC_MFC_IEDemo#7](../../mfc/reference/codesnippet/CPP/cmfctoolbar-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]  
+[!code-cpp[NVC_MFC_IEDemo#7](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_3.cpp)]  
   
 ##  <a name="cmfctoolbar__deactivate"></a>  CMFCToolBar::Deactivate  
  Deactivates the toolbar.  
@@ -1378,8 +1378,8 @@ virtual void GetItemRect(
 ### Example  
  The following example demonstrates how to use the `GetItemRect` method of the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/CPP/cmfctoolbar-class_1.h)]  
-[!code-cpp[NVC_MFC_IEDemo#9](../../mfc/reference/codesnippet/CPP/cmfctoolbar-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]  
+[!code-cpp[NVC_MFC_IEDemo#9](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_4.cpp)]  
   
 ##  <a name="cmfctoolbar__getlargecoldimages"></a>  CMFCToolBar::GetLargeColdImages  
  Returns a pointer to the collection of large cold toolbar button images in the application.  
@@ -2203,8 +2203,8 @@ virtual BOOL LoadToolBar(
 ### Example  
  The following example demonstrates how to use the `LoadToolBar` method in the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/CPP/cmfctoolbar-class_1.h)]  
-[!code-cpp[NVC_MFC_IEDemo#7](../../mfc/reference/codesnippet/CPP/cmfctoolbar-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]  
+[!code-cpp[NVC_MFC_IEDemo#7](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_3.cpp)]  
   
 ##  <a name="cmfctoolbar__loadtoolbarex"></a>  CMFCToolBar::LoadToolBarEx  
  Loads the toolbar from application resources by using the `CMFCToolBarInfo` helper class to enable the application to use large images.  
@@ -2422,7 +2422,7 @@ BOOL ProcessCommand(CMFCToolBarButton* pButton);
 ### Remarks  
  This method posts a `WM_COMMAND` message to the window that owns the toolbar by calling [CWnd::PostMessage](../../mfc/reference/cwnd-class.md#cwnd__postmessage) and passing the command ID of the specified button as the `wParam` parameter.  
   
- Use the [ON_COMMAND](http://msdn.microsoft.com/Library/f24f8bda-2cf4-49d5-aa3d-6f2e6bb003f2) macro to map the `WM_COMMAND` message to a member function.  
+ Use the [ON_COMMAND](http://msdn.microsoft.com/library/f24f8bda-2cf4-49d5-aa3d-6f2e6bb003f2) macro to map the `WM_COMMAND` message to a member function.  
   
 ##  <a name="cmfctoolbar__removeallbuttons"></a>  CMFCToolBar::RemoveAllButtons  
  Removes all buttons and separators from the toolbar.  
@@ -2510,8 +2510,8 @@ int ReplaceButton(
 ### Example  
  The following example demonstrates how to use the `ReplaceButton` method in the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/CPP/cmfctoolbar-class_1.h)]  
-[!code-cpp[NVC_MFC_IEDemo#10](../../mfc/reference/codesnippet/CPP/cmfctoolbar-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]  
+[!code-cpp[NVC_MFC_IEDemo#10](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_5.cpp)]  
   
 ##  <a name="cmfctoolbar__resetall"></a>  CMFCToolBar::ResetAll  
  Restores all toolbars to their original states.  

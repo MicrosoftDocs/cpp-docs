@@ -116,7 +116,7 @@ CComObject();
 ```  
   
 ### Remarks  
- Frees all allocated resources, calls [FinalRelease](CComObjectRootEx-class.md#CComObjectRootEx__FinalRelease), and decrements the module lock count.  
+ Frees all allocated resources, calls [FinalRelease](ccomobjectrootex-class.md#ccomobjectrootex__finalrelease), and decrements the module lock count.  
   
 ##  <a name="ccomobject__createinstance"></a>  CComObject::CreateInstance  
  This static function allows you to create a new **CComObject<**`Base`**>** object, without the overhead of [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
@@ -138,9 +138,9 @@ static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);
  If you do not need direct access to the object, but still want to create a new object without the overhead of `CoCreateInstance`, use [CComCoClass::CreateInstance](../../atl/reference/ccomcoclass-class.md#ccomcoclass__createinstance) instead.  
   
 ### Example  
- [!code-cpp[NVC_ATL_COM#38](../../atl/codesnippet/CPP/ccomobject-class_1.h)]  
+ [!code-cpp[NVC_ATL_COM#38](../../atl/codesnippet/cpp/ccomobject-class_1.h)]  
   
- [!code-cpp[NVC_ATL_COM#39](../../atl/codesnippet/CPP/ccomobject-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_COM#39](../../atl/codesnippet/cpp/ccomobject-class_2.cpp)]  
   
 ##  <a name="ccomobject__queryinterface"></a>  CComObject::QueryInterface  
  Retrieves a pointer to the requested interface.  
@@ -179,6 +179,6 @@ STDMETHOD_(ULONG, Release)();
 ## See Also  
  [CComAggObject Class](../../atl/reference/ccomaggobject-class.md)   
  [CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)   
- [DECLARE_AGGREGATABLE](http://msdn.microsoft.com/Library/e7e568d7-04e0-4226-b5dc-224deed229ab)   
- [DECLARE_NOT_AGGREGATABLE](http://msdn.microsoft.com/Library/2a116c7c-bab8-4f2a-a9ad-03d7aba0f762)   
+ [DECLARE_AGGREGATABLE](http://msdn.microsoft.com/library/e7e568d7-04e0-4226-b5dc-224deed229ab)   
+ [DECLARE_NOT_AGGREGATABLE](http://msdn.microsoft.com/library/2a116c7c-bab8-4f2a-a9ad-03d7aba0f762)   
  [Class Overview](../../atl/atl-class-overview.md)

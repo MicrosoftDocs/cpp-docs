@@ -68,21 +68,21 @@ class CComCurrency
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCurrency::operator -](../Topic/CComCurrency::operator%20-2.md)|This operator is used to perform subtraction on a `CComCurrency` object.|  
-|[CComCurrency::operator !=](../Topic/CComCurrency::operator%20!=.md)|Compares two `CComCurrency` objects for inequality.|  
+|[CComCurrency::operator -](../topic/ccomcurrency::operator%20-2.md)|This operator is used to perform subtraction on a `CComCurrency` object.|  
+|[CComCurrency::operator !=](../topic/ccomcurrency::operator%20!=.md)|Compares two `CComCurrency` objects for inequality.|  
 |[CComCurrency::operator *](#ccomcurrency__operator_star)|This operator is used to perform multiplication on a `CComCurrency` object.|  
 |[CComCurrency::operator *=](#ccomcurrency__operator_star_eq)|This operator is used to perform multiplication on a `CComCurrency` object and assign it the result.|  
-|[CComCurrency::operator /](../Topic/CComCurrency::operator%20-1.md)|This operator is used to perform division on a `CComCurrency` object.|  
-|[CComCurrency::operator /=](../Topic/CComCurrency::operator%20-=2.md)|This operator is used to perform division on a `CComCurrency` object and assign it the result.|  
+|[CComCurrency::operator /](../topic/ccomcurrency::operator%20-1.md)|This operator is used to perform division on a `CComCurrency` object.|  
+|[CComCurrency::operator /=](../topic/ccomcurrency::operator%20-=2.md)|This operator is used to perform division on a `CComCurrency` object and assign it the result.|  
 |[CComCurrency::operator +](#ccomcurrency__operator_add)|This operator is used to perform addition on a `CComCurrency` object.|  
 |[CComCurrency::operator +=](#ccomcurrency__operator_add_eq)|This operator is used to perform addition on a `CComCurrency` object and assign the result to the current object.|  
-|[CComCurrency::operator <](../Topic/CComCurrency::operator%20%3C.md)|This operator compares two `CComCurrency` objects to determine the lesser.|  
-|[CComCurrency::operator <=](../Topic/CComCurrency::operator%20%3C=.md)|This operator compares two `CComCurrency` objects to determine equality or the lesser.|  
+|[CComCurrency::operator <](../topic/ccomcurrency::operator%20%3c.md)|This operator compares two `CComCurrency` objects to determine the lesser.|  
+|[CComCurrency::operator <=](../topic/ccomcurrency::operator%20%3c=.md)|This operator compares two `CComCurrency` objects to determine equality or the lesser.|  
 |[CComCurrency::operator =](#ccomcurrency__operator_eq)|This operator assigns the `CComCurrency` object to a new value.|  
-|[CComCurrency::operator -=](../Topic/CComCurrency::operator%20-=1.md)|This operator is used to perform subtraction on a `CComCurrency` object and assign it the result.|  
+|[CComCurrency::operator -=](../topic/ccomcurrency::operator%20-=1.md)|This operator is used to perform subtraction on a `CComCurrency` object and assign it the result.|  
 |[CComCurrency::operator ==](#ccomcurrency__operator_eq_eq)|This operator compares two `CComCurrency` objects for equality.|  
-|[CComCurrency::operator >](../Topic/CComCurrency::operator%20%3E.md)|This operator compares two `CComCurrency` objects to determine the larger.|  
-|[CComCurrency::operator >=](../Topic/CComCurrency::operator%20%3E=.md)|This operator compares two `CComCurrency` objects to determine equality or the larger.|  
+|[CComCurrency::operator >](../topic/ccomcurrency::operator%20%3e.md)|This operator compares two `CComCurrency` objects to determine the larger.|  
+|[CComCurrency::operator >=](../topic/ccomcurrency::operator%20%3e=.md)|This operator compares two `CComCurrency` objects to determine equality or the larger.|  
 |[CComCurrency::operator CURRENCY](#ccomcurrency__operator_currency)|Casts a `CURRENCY` object.|  
   
 ### Public Data Members  
@@ -219,7 +219,7 @@ SHORT GetFraction() const;
  The fractional component is a 4-digit integer value between -9999 ( **CY_MIN_FRACTION**) and +9999 ( **CY_MAX_FRACTION**). `GetFraction` returns this value scaled by 10000 ( **CY_SCALE**). The values of **CY_MIN_FRACTION**, **CY_MAX_FRACTION**, and **CY_SCALE** are defined in atlcur.h.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#50](../../atl/codesnippet/CPP/ccomcurrency-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#50](../../atl/codesnippet/cpp/ccomcurrency-class_1.cpp)]  
   
 ##  <a name="ccomcurrency__getinteger"></a>  CComCurrency::GetInteger  
  Call this method to get the integer component of a `CComCurrency` object.  
@@ -232,7 +232,7 @@ LONGLONG GetInteger() const;
  Returns the integer component of the `m_currency` data member.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#51](../../atl/codesnippet/CPP/ccomcurrency-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#51](../../atl/codesnippet/cpp/ccomcurrency-class_2.cpp)]  
   
 ##  <a name="ccomcurrency__m_currency"></a>  CComCurrency::m_currency  
  The **CURRENCY** data member.  
@@ -261,7 +261,7 @@ CComCurrency operator-() const;
  Returns a `CComCurrency` object representing the result of the subtraction. In the event of an error, such as an overflow, this operator calls `AtlThrow` with an HRESULT describing the error.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#55](../../atl/codesnippet/CPP/ccomcurrency-class_3.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#55](../../atl/codesnippet/cpp/ccomcurrency-class_3.cpp)]  
   
 ##  <a name="ccomcurrency__operator_neq"></a>  CComCurrency::operator !=  
  This operator compares two objects for inequality.  
@@ -278,7 +278,7 @@ bool operator!= (const CComCurrency& cur) const;
  Returns **true** if the item being compared is not equal to the `CComCurrency` object; otherwise, **false**.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#56](../../atl/codesnippet/CPP/ccomcurrency-class_4.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#56](../../atl/codesnippet/cpp/ccomcurrency-class_4.cpp)]  
   
 ##  <a name="ccomcurrency__operator_star"></a>  CComCurrency::operator *  
  This operator is used to perform multiplication on a `CComCurrency` object.  
@@ -300,7 +300,7 @@ CComCurrency operator*(long nOperand) const;
  Returns a `CComCurrency` object representing the result of the multiplication. In the event of an error, such as an overflow, this operator calls `AtlThrow` with an HRESULT describing the error.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#57](../../atl/codesnippet/CPP/ccomcurrency-class_5.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#57](../../atl/codesnippet/cpp/ccomcurrency-class_5.cpp)]  
   
 ##  <a name="ccomcurrency__operator_star_eq"></a>  CComCurrency::operator *=  
  This operator is used to perform multiplication on a `CComCurrency` object and assign it the result.  
@@ -322,7 +322,7 @@ const CComCurrency& operator*= (const CComCurrency& cur);
  Returns the updated `CComCurrency` object. In the event of an error, such as an overflow, this operator calls `AtlThrow` with an HRESULT describing the error.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#58](../../atl/codesnippet/CPP/ccomcurrency-class_6.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#58](../../atl/codesnippet/cpp/ccomcurrency-class_6.cpp)]  
   
 ##  <a name="ccomcurrency__operator_"></a>  CComCurrency::operator /  
  This operator is used to perform division on a `CComCurrency` object.  
@@ -339,7 +339,7 @@ CComCurrency operator/(long nOperand) const;
  Returns a `CComCurrency` object representing the result of the division. If the divisor is 0, an assert failure will occur.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#59](../../atl/codesnippet/CPP/ccomcurrency-class_7.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#59](../../atl/codesnippet/cpp/ccomcurrency-class_7.cpp)]  
   
 ##  <a name="ccomcurrency__operator__eq"></a>  CComCurrency::operator /=  
  This operator is used to perform division on a `CComCurrency` object and assign it the result.  
@@ -356,7 +356,7 @@ const CComCurrency& operator/= (long nOperand);
  Returns the updated `CComCurrency` object. If the divisor is 0, an assert failure will occur.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#60](../../atl/codesnippet/CPP/ccomcurrency-class_8.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#60](../../atl/codesnippet/cpp/ccomcurrency-class_8.cpp)]  
   
 ##  <a name="ccomcurrency__operator_add"></a>  CComCurrency::operator +  
  This operator is used to perform addition on a `CComCurrency` object.  
@@ -373,7 +373,7 @@ CComCurrency operator+(const CComCurrency& cur) const;
  Returns a `CComCurrency` object representing the result of the addition. In the event of an error, such as an overflow, this operator calls `AtlThrow` with an HRESULT describing the error.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#61](../../atl/codesnippet/CPP/ccomcurrency-class_9.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#61](../../atl/codesnippet/cpp/ccomcurrency-class_9.cpp)]  
   
 ##  <a name="ccomcurrency__operator_add_eq"></a>  CComCurrency::operator +=  
  This operator is used to perform addition on a `CComCurrency` object and assign the result to the current object.  
@@ -390,7 +390,7 @@ const CComCurrency& operator+= (const CComCurrency& cur);
  Returns the updated `CComCurrency` object. In the event of an error, such as an overflow, this operator calls `AtlThrow` with an HRESULT describing the error.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#62](../../atl/codesnippet/CPP/ccomcurrency-class_10.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#62](../../atl/codesnippet/cpp/ccomcurrency-class_10.cpp)]  
   
 ##  <a name="ccomcurrency__operator_lt"></a>  CComCurrency::operator &lt;  
  This operator compares two `CComCurrency` objects to determine the lesser.  
@@ -407,7 +407,7 @@ bool operator<(const CComCurrency& cur) const;
  Returns **true** if the first object is less than the second, **false** otherwise.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#63](../../atl/codesnippet/CPP/ccomcurrency-class_11.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#63](../../atl/codesnippet/cpp/ccomcurrency-class_11.cpp)]  
   
 ##  <a name="ccomcurrency__operator_lt__eq"></a>  CComCurrency::operator &lt;=  
  This operator compares two `CComCurrency` objects to determine equality or the lesser.  
@@ -424,7 +424,7 @@ bool operator<= (const CComCurrency& cur) const;
  Returns **true** if the first object is less than or equal to the second, **false** otherwise.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#64](../../atl/codesnippet/CPP/ccomcurrency-class_12.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#64](../../atl/codesnippet/cpp/ccomcurrency-class_12.cpp)]  
   
 ##  <a name="ccomcurrency__operator_eq"></a>  CComCurrency::operator =  
  This operator assigns the `CComCurrency` object to a new value.  
@@ -467,7 +467,7 @@ const CComCurrency& operator= (DECIMAL dSrc);
  Returns the updated `CComCurrency` object. In the event of an error, such as an overflow, this operator calls `AtlThrow` with an HRESULT describing the error.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#65](../../atl/codesnippet/CPP/ccomcurrency-class_13.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#65](../../atl/codesnippet/cpp/ccomcurrency-class_13.cpp)]  
   
 ##  <a name="ccomcurrency__operator_-_eq"></a>  CComCurrency::operator -=  
  This operator is used to perform subtraction on a `CComCurrency` object and assign it the result.  
@@ -484,7 +484,7 @@ const CComCurrency& operator-= (const CComCurrency& cur);
  Returns the updated `CComCurrency` object. In the event of an error, such as an overflow, this operator calls `AtlThrow` with an HRESULT describing the error.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#66](../../atl/codesnippet/CPP/ccomcurrency-class_14.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#66](../../atl/codesnippet/cpp/ccomcurrency-class_14.cpp)]  
   
 ##  <a name="ccomcurrency__operator_eq_eq"></a>  CComCurrency::operator ==  
  This operator compares two `CComCurrency` objects for equality.  
@@ -501,7 +501,7 @@ bool operator== (const CComCurrency& cur) const;
  Returns **true** if the objects are equal (that is, the `m_currency` data members, both integer and fractional, in both objects have the same value), **false** otherwise.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#67](../../atl/codesnippet/CPP/ccomcurrency-class_15.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#67](../../atl/codesnippet/cpp/ccomcurrency-class_15.cpp)]  
   
 ##  <a name="ccomcurrency__operator_gt"></a>  CComCurrency::operator &gt;  
  This operator compares two `CComCurrency` objects to determine the larger.  
@@ -518,7 +518,7 @@ bool operator>(const CComCurrency& cur) const;
  Returns **true** if the first object is greater than the second, **false** otherwise.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#68](../../atl/codesnippet/CPP/ccomcurrency-class_16.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#68](../../atl/codesnippet/cpp/ccomcurrency-class_16.cpp)]  
   
 ##  <a name="ccomcurrency__operator_gt__eq"></a>  CComCurrency::operator &gt;=  
  This operator compares two `CComCurrency` objects to determine equality or the larger.  
@@ -535,7 +535,7 @@ bool operator>= (const CComCurrency& cur) const;
  Returns **true** if the first object is greater than or equal to the second, **false** otherwise.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#69](../../atl/codesnippet/CPP/ccomcurrency-class_17.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#69](../../atl/codesnippet/cpp/ccomcurrency-class_17.cpp)]  
   
 ##  <a name="ccomcurrency__operator_currency"></a>  CComCurrency::operator CURRENCY  
  These operators are used to cast a `CComCurrency` object to a **CURRENCY** data type.  
@@ -548,7 +548,7 @@ operator const CURRENCY&() const throw();
  Returns a reference to a **CURRENCY** object.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#70](../../atl/codesnippet/CPP/ccomcurrency-class_18.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#70](../../atl/codesnippet/cpp/ccomcurrency-class_18.cpp)]  
   
 ##  <a name="ccomcurrency__round"></a>  CComCurrency::Round  
  Call this method to round the currency to a specified number of decimal places.  
@@ -565,7 +565,7 @@ HRESULT Round(int nDecimals);
  Returns `S_OK` on success, or an error `HRESULT` on failure.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#52](../../atl/codesnippet/CPP/ccomcurrency-class_19.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#52](../../atl/codesnippet/cpp/ccomcurrency-class_19.cpp)]  
   
 ##  <a name="ccomcurrency__setfraction"></a>  CComCurrency::SetFraction  
  Call this method to set the fractional component of a `CComCurrency` object.  
@@ -582,7 +582,7 @@ HRESULT SetFraction(SHORT nFraction);
  Returns `S_OK` on success, or an error `HRESULT` on failure.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#53](../../atl/codesnippet/CPP/ccomcurrency-class_20.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#53](../../atl/codesnippet/cpp/ccomcurrency-class_20.cpp)]  
   
 ##  <a name="ccomcurrency__setinteger"></a>  CComCurrency::SetInteger  
  Call this method to set the integer component of a `CComCurrency` object.  
@@ -601,7 +601,7 @@ HRESULT SetInteger(LONGLONG nInteger);
  Returns `S_OK` on success, or an error `HRESULT` on failure.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#54](../../atl/codesnippet/CPP/ccomcurrency-class_21.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#54](../../atl/codesnippet/cpp/ccomcurrency-class_21.cpp)]  
   
 ## See Also  
  [COleCurrency Class](../../mfc/reference/colecurrency-class.md)   

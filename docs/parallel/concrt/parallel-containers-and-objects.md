@@ -111,7 +111,7 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 ||||  
 |-|-|-|  
-|[at](reference/concurrent_vector-class.md#concurrent_vector__at_method)|[end](reference/concurrent_vector-class.md#concurrent_vector__end_method)|[operator&#91;&#93;](../Topic/concurrent_vector::operatorOperator.md)|  
+|[at](reference/concurrent_vector-class.md#concurrent_vector__at_method)|[end](reference/concurrent_vector-class.md#concurrent_vector__end_method)|[operator&#91;&#93;](../topic/concurrent_vector::operatoroperator.md)|  
 |[begin](reference/concurrent_vector-class.md#concurrent_vector__begin_method)|[front](reference/concurrent_vector-class.md#concurrent_vector__front_method)|[push_back](reference/concurrent_vector-class.md#concurrent_vector__push_back_method)|  
 |[back](reference/concurrent_vector-class.md#concurrent_vector__back_method)|[grow_by](reference/concurrent_vector-class.md#concurrent_vector__grow_by_method)|[rbegin](reference/concurrent_vector-class.md#concurrent_vector__rbegin_method)|  
 |[capacity](reference/concurrent_vector-class.md#concurrent_vector__capacity_method)|[grow_to_at_least](reference/concurrent_vector-class.md#concurrent_vector__grow_to_at_least_method)|[rend](reference/concurrent_vector-class.md#concurrent_vector__rend_method)|  
@@ -123,13 +123,13 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
 |-|-|  
 |[assign](reference/concurrent_vector-class.md#concurrent_vector__assign_method)|[reserve](reference/concurrent_vector-class.md#concurrent_vector__reserve_method)|  
 |[clear](reference/concurrent_vector-class.md#concurrent_vector__clear_method)|[resize](reference/concurrent_vector-class.md#concurrent_vector__resize_method)|  
-|[operator=](../Topic/concurrent_vector::operator=%20Operator.md)|[shrink_to_fit](reference/concurrent_vector-class.md#concurrent_vector__shrink_to_fit_method)|  
+|[operator=](../topic/concurrent_vector::operator=%20operator.md)|[shrink_to_fit](reference/concurrent_vector-class.md#concurrent_vector__shrink_to_fit_method)|  
   
  Operations that modify the value of existing elements are not concurrency-safe. Use a synchronization object such as a [reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) object to synchronize concurrent read and write operations to the same data element. For more information about synchronization objects, see [Synchronization Data Structures](../../parallel/concrt/synchronization-data-structures.md).  
   
  When you convert existing code that uses `vector` to use `concurrent_vector`, concurrent operations can cause the behavior of your application to change. For example, consider the following program that concurrently performs two tasks on a `concurrent_vector` object. The first task appends additional elements to a `concurrent_vector` object. The second task computes the sum of all elements in the same object.  
   
- [!code-cpp[concrt-vector-safety#1](../../parallel/concrt/codesnippet/CPP/parallel-containers-and-objects_1.cpp)]  
+ [!code-cpp[concrt-vector-safety#1](../../parallel/concrt/codesnippet/cpp/parallel-containers-and-objects_1.cpp)]  
   
  Although the `end` method is concurrency-safe, a concurrent call to the [push_back](reference/concurrent_vector-class.md#concurrent_vector__push_back_method) method causes the value that is returned by `end` to change. The number of elements that the iterator traverses is indeterminate. Therefore, this program can produce a different result each time that you run it.  
   
@@ -197,7 +197,7 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
  The following example shows the basic structure for using `concurrent_unordered_map`. This example inserts character keys in the range ['a', 'i']. Because the order of operations is undetermined, the final value for each key is also undetermined. However, it is safe to perform the insertions in parallel.  
   
- [!code-cpp[concrt-unordered-map-structure#1](../../parallel/concrt/codesnippet/CPP/parallel-containers-and-objects_2.cpp)]  
+ [!code-cpp[concrt-unordered-map-structure#1](../../parallel/concrt/codesnippet/cpp/parallel-containers-and-objects_2.cpp)]  
   
  For an example that uses `concurrent_unordered_map` to perform a map and reduce operation in parallel, see [How to: Perform Map and Reduce Operations in Parallel](../../parallel/concrt/how-to-perform-map-and-reduce-operations-in-parallel.md).  
   
@@ -221,7 +221,7 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
 |-|-|-|-|  
 |[at](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__at_method)|`count`|`find`|[key_eq](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__key_eq_method)|  
 |`begin`|`empty`|`get_allocator`|`max_size`|  
-|`cbegin`|`end`|`hash_function`|[operator&#91;&#93;](../Topic/concurrent_unordered_map::operatorOperator.md)|  
+|`cbegin`|`end`|`hash_function`|[operator&#91;&#93;](../topic/concurrent_unordered_map::operatoroperator.md)|  
 |`cend`|`equal_range`|[insert](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__insert_method)|`size`|  
   
  Although the `count` method can be called safely from concurrently running threads, different threads can receive different results if a new value is simultaneously inserted into the container.  
@@ -231,7 +231,7 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
 ||||  
 |-|-|-|  
 |`clear`|`max_load_factor`|`rehash`|  
-|`load_factor`|[operator=](../Topic/concurrent_unordered_map::operator=%20Operator.md)|[swap](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__swap_method)|  
+|`load_factor`|[operator=](../topic/concurrent_unordered_map::operator=%20operator.md)|[swap](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__swap_method)|  
   
  In addition to these methods, any method that begins with `unsafe_` is also not concurrency-safe.  
   
@@ -246,7 +246,7 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
  The following example shows the basic structure for using `concurrent_unordered_multimap`. This example inserts character keys in the range ['a', 'i']. `concurrent_unordered_multimap` enables a key to have multiple values.  
   
- [!code-cpp[concrt-unordered-multimap-structure#1](../../parallel/concrt/codesnippet/CPP/parallel-containers-and-objects_3.cpp)]  
+ [!code-cpp[concrt-unordered-multimap-structure#1](../../parallel/concrt/codesnippet/cpp/parallel-containers-and-objects_3.cpp)]  
   
  [[Top](#top)]  
   
@@ -255,7 +255,7 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
  The following example shows the basic structure for using `concurrent_unordered_set`. This example inserts character values in the range ['a', 'i']. It is safe to perform the insertions in parallel.  
   
- [!code-cpp[concrt-unordered-set#1](../../parallel/concrt/codesnippet/CPP/parallel-containers-and-objects_4.cpp)]  
+ [!code-cpp[concrt-unordered-set#1](../../parallel/concrt/codesnippet/cpp/parallel-containers-and-objects_4.cpp)]  
   
  [[Top](#top)]  
   
@@ -268,7 +268,7 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
  The following example shows the basic structure for using `concurrent_unordered_multiset`. This example inserts character values in the range ['a', 'i']. `concurrent_unordered_multiset` enables a value to occur multiple times.  
   
- [!code-cpp[concrt-unordered-multiset#1](../../parallel/concrt/codesnippet/CPP/parallel-containers-and-objects_5.cpp)]  
+ [!code-cpp[concrt-unordered-multiset#1](../../parallel/concrt/codesnippet/cpp/parallel-containers-and-objects_5.cpp)]  
   
  [[Top](#top)]  
   

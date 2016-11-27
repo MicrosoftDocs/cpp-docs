@@ -117,9 +117,9 @@ class CPathT
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPathT::operator const StringType &](../Topic/CPathT::operator%20const%20StringType%20&.md)|This operator allows the object to be treated like a string.|  
+|[CPathT::operator const StringType &](../topic/cpatht::operator%20const%20stringtype%20&.md)|This operator allows the object to be treated like a string.|  
 |[CPathT::operator CPathT::PCXSTR](#cpatht__operator_cpatht__pcxstr)|This operator allows the object to be treated like a string.|  
-|[CPathT::operator StringType &](../Topic/CPathT::operator%20StringType%20&.md)|This operator allows the object to be treated like a string.|  
+|[CPathT::operator StringType &](../topic/cpatht::operator%20stringtype%20&.md)|This operator allows the object to be treated like a string.|  
 |[CPathT::operator +=](#cpatht__operator_add_eq)|This operator appends a string to the path.|  
   
 ### Public Data Members  

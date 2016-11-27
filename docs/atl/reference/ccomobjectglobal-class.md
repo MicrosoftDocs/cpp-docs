@@ -120,7 +120,7 @@ CComObjectGlobal();
 ```  
   
 ### Remarks  
- Frees all allocated resources and calls [FinalRelease](CComObjectRootEx-class.md#CComObjectRootEx__FinalRelease).  
+ Frees all allocated resources and calls [FinalRelease](ccomobjectrootex-class.md#ccomobjectrootex__finalrelease).  
   
 ##  <a name="ccomobjectglobal__m_hresfinalconstruct"></a>  CComObjectGlobal::m_hResFinalConstruct  
  Contains the `HRESULT` from calling `FinalConstruct` during construction of the `CComObjectGlobal` object.  

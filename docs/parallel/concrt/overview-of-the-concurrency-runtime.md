@@ -66,7 +66,7 @@ This document provides an overview of the Concurrency Runtime. It describes the 
   
  **Concurrency Runtime Architecture**  
   
- ![The Concurrency Runtime Architecture](../../parallel/concrt/media/concurrencyrun.png "ConcurrencyRun")  
+ ![The Concurrency Runtime Architecture](../../parallel/concrt/media/concurrencyrun.png "concurrencyrun")  
   
 > [!IMPORTANT]
 >  The Task Scheduler and Resource Manager components are not available from a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app or when you use the task class or other types in ppltasks.h.  
@@ -112,7 +112,7 @@ This document provides an overview of the Concurrency Runtime. It describes the 
   
  The following example compares the syntax of lambda functions, function objects, and function pointers in multiple calls to the [concurrency::parallel_for_each](concurrency-namespace-functions.md#parallel_for_each_function) algorithm. Each call to `parallel_for_each` uses a different technique to compute the square of each element in a [std::array](../../standard-library/array-class-stl.md) object.  
   
- [!code-cpp[concrt-comparing-work-functions#1](../../parallel/concrt/codesnippet/CPP/overview-of-the-concurrency-runtime_1.cpp)]  
+ [!code-cpp[concrt-comparing-work-functions#1](../../parallel/concrt/codesnippet/cpp/overview-of-the-concurrency-runtime_1.cpp)]  
   
  **Output**  
   

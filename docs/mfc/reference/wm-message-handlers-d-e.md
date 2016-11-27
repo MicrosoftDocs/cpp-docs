@@ -64,25 +64,25 @@ The following map entries on the left correspond to the function prototypes on t
   
 |Map entry|Function prototype|  
 |---------------|------------------------|  
-|ON_WM_DEADCHAR()|afx_msg void [OnDeadChar](../../mfc/reference/cwnd-class.md#cwnd__OnDeadChar)(UINT, UINT, UINT);|  
-|ON_WM_DELETEITEM()|afx_msg void [OnDeleteItem](../../mfc/reference/cwnd-class.md#cwnd__OnDeleteItem)(LPDELETEITEMSTRUCT);|  
-|ON_WM_DESTROY()|afx_msg void [OnDestroy](../../mfc/reference/cwnd-class.md#cwnd__OnDestroy)();|  
-|ON_WM_DESTROYCLIPBOARD()|afx_msg void [OnDestroyClipboard](../../mfc/reference/cwnd-class.md#cwnd__OnDestroyClipboard)();|  
-|ON_WM_DEVICECHANGE()|afx_msg void [OnDeviceChange](../../mfc/reference/cwnd-class.md#cwnd__OnDeviceChange)(UINT, DWORD);|  
-|ON_WM_DEVMODECHANGE()|afx_msg void [OnDevModeChange](../../mfc/reference/cwnd-class.md#cwnd__OnDevModeChange)(LPSTR);|  
-|ON_WM_DRAWCLIPBOARD()|afx_msg void [OnDrawClipboard](../../mfc/reference/cwnd-class.md#cwnd__OnDrawClipboard)();|  
-|ON_WM_DRAWITEM()|afx_msg void [OnDrawItem](../../mfc/reference/cwnd-class.md#cwnd__OnDrawItem)(LPDRAWITEMSTRUCT);|  
-|ON_WM_DROPFILES()|afx_msg void [OnDropFiles](../../mfc/reference/cwnd-class.md#cwnd__OnDropFiles)(HDROP);|  
-|ON_WM_DWMCOLORIZATIONCOLORCHANGED()|afx_msg void [OnColorizationColorChanged](../../mfc/reference/cwnd-class.md#cwnd__OnColorizationColorChanged)(DWORD, BOOL);|  
-|ON_WM_DWMCOMPOSITIONCHANGED()|afx_msg void [OnCompositionChanged](../../mfc/reference/cwnd-class.md#cwnd__OnCompositionChanged)();|  
-|ON_WM_DWMNCRENDERINGCHANGED()|afx_msg void [OnNcRenderingChanged](../../mfc/reference/cwnd-class.md#cwnd__OnNcRenderingChanged)(BOOL);|  
-|ON_WM_DWMWINDOWMAXIMIZEDCHANGE()|afx_msg void [OnWindowMaximizedChanged](../../mfc/reference/cwnd-class.md#cwnd__OnWindowMaximizedChanged)(BOOL);|  
-|ON_WM_ENABLE()|afx_msg void [OnEnable](../../mfc/reference/cwnd-class.md#cwnd__OnEnable)(BOOL);|  
-|ON_WM_ENDSESSION()|afx_msg void [OnEndSession](../../mfc/reference/cwnd-class.md#cwnd__OnEndSession)(BOOL);|  
-|ON_WM_ENTERIDLE()|afx_msg void [OnEnterIdle](../../mfc/reference/cwnd-class.md#cwnd__OnEnterIdle)(UINT, CWnd*);|  
-|ON_WM_ENTERSIZEMOVE()|afx_msg void [OnEnterSizeMove](../../mfc/reference/cwnd-class.md#cwnd__OnEnterSizeMove)();|  
-|ON_WM_ERASEBKGND()|afx_msg BOOL [OnEraseBkgnd](../../mfc/reference/cwnd-class.md#cwnd__OnEraseBkgnd)(CDC*);|  
-|ON_WM_EXITSIZEMOVE()|afx_msg void [OnExitSizeMove](../../mfc/reference/cwnd-class.md#cwnd__OnExitSizeMove)();|  
+|ON_WM_DEADCHAR()|afx_msg void [OnDeadChar](../../mfc/reference/cwnd-class.md#cwnd__ondeadchar)(UINT, UINT, UINT);|  
+|ON_WM_DELETEITEM()|afx_msg void [OnDeleteItem](../../mfc/reference/cwnd-class.md#cwnd__ondeleteitem)(LPDELETEITEMSTRUCT);|  
+|ON_WM_DESTROY()|afx_msg void [OnDestroy](../../mfc/reference/cwnd-class.md#cwnd__ondestroy)();|  
+|ON_WM_DESTROYCLIPBOARD()|afx_msg void [OnDestroyClipboard](../../mfc/reference/cwnd-class.md#cwnd__ondestroyclipboard)();|  
+|ON_WM_DEVICECHANGE()|afx_msg void [OnDeviceChange](../../mfc/reference/cwnd-class.md#cwnd__ondevicechange)(UINT, DWORD);|  
+|ON_WM_DEVMODECHANGE()|afx_msg void [OnDevModeChange](../../mfc/reference/cwnd-class.md#cwnd__ondevmodechange)(LPSTR);|  
+|ON_WM_DRAWCLIPBOARD()|afx_msg void [OnDrawClipboard](../../mfc/reference/cwnd-class.md#cwnd__ondrawclipboard)();|  
+|ON_WM_DRAWITEM()|afx_msg void [OnDrawItem](../../mfc/reference/cwnd-class.md#cwnd__ondrawitem)(LPDRAWITEMSTRUCT);|  
+|ON_WM_DROPFILES()|afx_msg void [OnDropFiles](../../mfc/reference/cwnd-class.md#cwnd__ondropfiles)(HDROP);|  
+|ON_WM_DWMCOLORIZATIONCOLORCHANGED()|afx_msg void [OnColorizationColorChanged](../../mfc/reference/cwnd-class.md#cwnd__oncolorizationcolorchanged)(DWORD, BOOL);|  
+|ON_WM_DWMCOMPOSITIONCHANGED()|afx_msg void [OnCompositionChanged](../../mfc/reference/cwnd-class.md#cwnd__oncompositionchanged)();|  
+|ON_WM_DWMNCRENDERINGCHANGED()|afx_msg void [OnNcRenderingChanged](../../mfc/reference/cwnd-class.md#cwnd__onncrenderingchanged)(BOOL);|  
+|ON_WM_DWMWINDOWMAXIMIZEDCHANGE()|afx_msg void [OnWindowMaximizedChanged](../../mfc/reference/cwnd-class.md#cwnd__onwindowmaximizedchanged)(BOOL);|  
+|ON_WM_ENABLE()|afx_msg void [OnEnable](../../mfc/reference/cwnd-class.md#cwnd__onenable)(BOOL);|  
+|ON_WM_ENDSESSION()|afx_msg void [OnEndSession](../../mfc/reference/cwnd-class.md#cwnd__onendsession)(BOOL);|  
+|ON_WM_ENTERIDLE()|afx_msg void [OnEnterIdle](../../mfc/reference/cwnd-class.md#cwnd__onenteridle)(UINT, CWnd*);|  
+|ON_WM_ENTERSIZEMOVE()|afx_msg void [OnEnterSizeMove](../../mfc/reference/cwnd-class.md#cwnd__onentersizemove)();|  
+|ON_WM_ERASEBKGND()|afx_msg BOOL [OnEraseBkgnd](../../mfc/reference/cwnd-class.md#cwnd__onerasebkgnd)(CDC*);|  
+|ON_WM_EXITSIZEMOVE()|afx_msg void [OnExitSizeMove](../../mfc/reference/cwnd-class.md#cwnd__onexitsizemove)();|  
   
 ## See Also  
  [Message Maps](../../mfc/reference/message-maps-mfc.md)   

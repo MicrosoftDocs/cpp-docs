@@ -158,8 +158,8 @@ BOOL SelectFont(
 ### Example  
  The following example demonstrates how to use the `SelectFont` method in the `CMFCFontComboBox` class. This example is part of the [New Controls sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_NewControls#34](../../mfc/reference/codesnippet/CPP/cmfcfontcombobox-class_1.h)]  
-[!code-cpp[NVC_MFC_NewControls#35](../../mfc/reference/codesnippet/CPP/cmfcfontcombobox-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_NewControls#34](../../mfc/reference/codesnippet/cpp/cmfcfontcombobox-class_1.h)]  
+[!code-cpp[NVC_MFC_NewControls#35](../../mfc/reference/codesnippet/cpp/cmfcfontcombobox-class_2.cpp)]  
   
 ##  <a name="cmfcfontcombobox__setup"></a>  CMFCFontComboBox::Setup  
  Initializes the list of items in the font combo box.  
@@ -190,8 +190,8 @@ BOOL Setup(
 ### Example  
  The following example demonstrates how to use the `Setup` method in the `CMFCFontComboBox` class. This example is part of the [New Controls sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_NewControls#34](../../mfc/reference/codesnippet/CPP/cmfcfontcombobox-class_1.h)]  
-[!code-cpp[NVC_MFC_NewControls#36](../../mfc/reference/codesnippet/CPP/cmfcfontcombobox-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_NewControls#34](../../mfc/reference/codesnippet/cpp/cmfcfontcombobox-class_1.h)]  
+[!code-cpp[NVC_MFC_NewControls#36](../../mfc/reference/codesnippet/cpp/cmfcfontcombobox-class_3.cpp)]  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

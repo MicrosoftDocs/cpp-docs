@@ -75,7 +75,7 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_index::tiled_index Constructor](../Topic/tiled_index::tiled_index%20Constructor.md)|Initializes a new instance of the `tile_index` class.|  
+|[tiled_index::tiled_index Constructor](../topic/tiled_index::tiled_index%20constructor.md)|Initializes a new instance of the `tile_index` class.|  
   
 ### Public Methods  
   
@@ -93,9 +93,9 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
 |[tiled_index::local Constant](reference/tiled_index-class.md#tiled_index__local_constant)|Stores an `index` object of rank 1, 2, or 3 that represents the relative index in the current tile of a [tiled_extent](../../../parallel/amp/reference/tiled-extent-class.md) object.|  
 |[tiled_index::rank Constant](reference/tiled_index-class.md#tiled_index__rank_constant)|Stores the rank of the [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) object.|  
 |[tiled_index::tile Constant](reference/tiled_index-class.md#tiled_index__tile_constant)|Stores an `index` object of rank 1, 2, or 3 that represents the coordinates of the current tile of a `tiled_extent` object.|  
-|[tiled_index::tile_dim0 Constant](../Topic/tiled_index::tile_dim0%20Constant.md)|Stores the length of the most significant dimension.|  
-|[tiled_index::tile_dim1 Constant](../Topic/tiled_index::tile_dim1%20Constant.md)|Stores the length of the next-to-most significant dimension.|  
-|[tiled_index::tile_dim2 Constant](../Topic/tiled_index::tile_dim2%20Constant.md)|Stores the length of the least significant dimension.|  
+|[tiled_index::tile_dim0 Constant](../topic/tiled_index::tile_dim0%20constant.md)|Stores the length of the most significant dimension.|  
+|[tiled_index::tile_dim1 Constant](../topic/tiled_index::tile_dim1%20constant.md)|Stores the length of the next-to-most significant dimension.|  
+|[tiled_index::tile_dim2 Constant](../topic/tiled_index::tile_dim2%20constant.md)|Stores the length of the least significant dimension.|  
 |[tiled_index::tile_origin Constant](reference/tiled_index-class.md#tiled_index__tile_origin_constant)|Stores an `index` object of rank 1, 2, or 3 that represents the global coordinates of the origin of the current tile in a `tiled_extent` object.|  
   
 ### Public Data Members  

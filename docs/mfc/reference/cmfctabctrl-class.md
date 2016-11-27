@@ -171,8 +171,8 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 ## Example  
  The following example demonstrates how to use various methods in the `CMFCTabCtrl` class to configure a `CMFCTabCtrl` object. The example explains how to add a tab, show the Close button on the active tab, enable editable tab labels, and display a pop-up menu of tabbed window labels. This example is part of the [State Collection sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_StateCollection#1](../../mfc/reference/codesnippet/CPP/cmfctabctrl-class_1.h)]  
-[!code-cpp[NVC_MFC_StateCollection#3](../../mfc/reference/codesnippet/CPP/cmfctabctrl-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_StateCollection#1](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_1.h)]  
+[!code-cpp[NVC_MFC_StateCollection#3](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_2.cpp)]  
   
 ## Requirements  
  **Header:** afxtabctrl.h  
@@ -273,8 +273,8 @@ BOOL Create(
 ### Example  
  The following example demonstrates how to use the `Create` method in the `CMFCTabCtrl` class. This example is part of the [State Collection sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_StateCollection#1](../../mfc/reference/codesnippet/CPP/cmfctabctrl-class_1.h)]  
-[!code-cpp[NVC_MFC_StateCollection#2](../../mfc/reference/codesnippet/CPP/cmfctabctrl-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_StateCollection#1](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_1.h)]  
+[!code-cpp[NVC_MFC_StateCollection#2](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_3.cpp)]  
   
 ##  <a name="cmfctabctrl__calcrectedit"></a>  CMFCTabCtrl::CalcRectEdit  
  Deflates the size of the specified tab area.  

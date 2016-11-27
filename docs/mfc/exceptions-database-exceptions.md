@@ -75,12 +75,12 @@ This article explains how to handle database exceptions. Most of the material in
 ### ODBC Exception Example  
  The [Open](../mfc/reference/crecordset-class.md#crecordset__open) member function could throw an exception (of type [CDBException](../mfc/reference/cdbexception-class.md) for the ODBC classes), so this code brackets the **Open** call with a **try** block. The subsequent **catch** block will catch a `CDBException`. You could examine the exception object itself, called `e`, but in this case it is enough to know that the attempt to create a recordset has failed. The **catch** block displays a message box and cleans up by deleting the recordset object.  
   
- [!code-cpp[NVC_MFCDatabase#36](../mfc/codesnippet/CPP/exceptions-database-exceptions_1.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#36](../mfc/codesnippet/cpp/exceptions-database-exceptions_1.cpp)]  
   
 ### DAO Exception Example  
  The DAO example is similar to the example for ODBC, but you can typically retrieve more kinds of information. The following code also attempts to open a recordset. If that attempt throws an exception, you can examine a data member of the exception object for error information. As with the previous ODBC example, it is probably enough to know that the attempt to create a recordset failed.  
   
- [!code-cpp[NVC_MFCDatabase#37](../mfc/codesnippet/CPP/exceptions-database-exceptions_2.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#37](../mfc/codesnippet/cpp/exceptions-database-exceptions_2.cpp)]  
   
  This code gets an error message string from the [m_pErrorInfo](../mfc/reference/cdaoexception-class.md#m_perrorinfo) member of the exception object. MFC fills this member when it throws the exception.  
   

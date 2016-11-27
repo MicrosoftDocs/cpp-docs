@@ -70,7 +70,7 @@ class CComMultiThreadModelNoCS
  Typically, you use `CComMultiThreadModelNoCS` through the `ThreadModelNoCS``typedef` name. This `typedef` is defined in `CComMultiThreadModelNoCS`, `CComMultiThreadModel`, and [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md).  
   
 > [!NOTE]
->  The global `typedef` names [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) and [CComGlobalsThreadModel](../Topic/CComGlobalsThreadModel.md) do not reference `CComMultiThreadModelNoCS`.  
+>  The global `typedef` names [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) and [CComGlobalsThreadModel](../topic/ccomglobalsthreadmodel.md) do not reference `CComMultiThreadModelNoCS`.  
   
  In addition to `ThreadModelNoCS`, `CComMultiThreadModelNoCS` defines `AutoCriticalSection` and `CriticalSection`. These latter two `typedef` names reference [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md), which provides empty methods associated with obtaining and releasing a critical section.  
   
@@ -175,7 +175,7 @@ typedef CComMultiThreadModelNoCS ThreadModelNoCS;
   
  Note that the definition of `ThreadModelNoCS` in `CComMultiThreadModelNoCS` provides symmetry with `CComMultiThreadModel` and `CComSingleThreadModel`. For example, suppose the sample code in `CComMultiThreadModel::AutoCriticalSection` declared the following `typedef`:  
   
- [!code-cpp[NVC_ATL_COM#37](../../atl/codesnippet/CPP/ccommultithreadmodelnocs-class_1.h)]  
+ [!code-cpp[NVC_ATL_COM#37](../../atl/codesnippet/cpp/ccommultithreadmodelnocs-class_1.h)]  
   
  Regardless of the class specified for `ThreadModel` (such as `CComMultiThreadModelNoCS`), `_ThreadModel` resolves accordingly.  
   

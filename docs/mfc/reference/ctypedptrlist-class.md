@@ -89,9 +89,9 @@ class CTypedPtrList : public BASE_CLASS
 ## Example  
  This example creates an instance of `CTypedPtrList`, adds one object, serializes the list to disk, and then deletes the object:  
   
- [!code-cpp[NVC_MFCCollections#110](../../mfc/codesnippet/CPP/ctypedptrlist-class_1.cpp)]  
+ [!code-cpp[NVC_MFCCollections#110](../../mfc/codesnippet/cpp/ctypedptrlist-class_1.cpp)]  
   
- [!code-cpp[NVC_MFCCollections#111](../../mfc/codesnippet/CPP/ctypedptrlist-class_2.cpp)]  
+ [!code-cpp[NVC_MFCCollections#111](../../mfc/codesnippet/cpp/ctypedptrlist-class_2.cpp)]  
   
 ## Inheritance Hierarchy  
  `BASE_CLASS`  

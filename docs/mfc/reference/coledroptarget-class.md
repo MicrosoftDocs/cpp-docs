@@ -195,7 +195,7 @@ virtual DROPEFFECT OnDragOver(
  For more information, see [IDropTarget::DragOver](http://msdn.microsoft.com/library/windows/desktop/ms680129) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#21](../../mfc/codesnippet/CPP/coledroptarget-class_1.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#21](../../mfc/codesnippet/cpp/coledroptarget-class_1.cpp)]  
   
 ##  <a name="coledroptarget__ondragscroll"></a>  COleDropTarget::OnDragScroll  
  Called by the framework before calling [OnDragEnter](#coledroptarget__ondragenter) or [OnDragOver](#coledroptarget__ondragover) to determine whether `point` is in the scrolling region.  

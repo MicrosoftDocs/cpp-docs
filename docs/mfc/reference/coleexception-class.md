@@ -88,7 +88,7 @@ SCODE m_sc;
  For more information on `SCODE`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#22](../../mfc/codesnippet/CPP/coleexception-class_1.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#22](../../mfc/codesnippet/cpp/coleexception-class_1.cpp)]  
   
 ##  <a name="coleexception__process"></a>  COleException::Process  
  Call the **Process** member function to translate a caught exception into an OLE status code.  

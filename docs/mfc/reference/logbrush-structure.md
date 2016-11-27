@@ -90,12 +90,12 @@ typedef struct tag LOGBRUSH { /* lb */
  If `lbStyle` is **BS_PATTERN**, **lbHatch** is a handle to the bitmap that defines the pattern. If `lbStyle` is **BS_SOLID** or **BS_HOLLOW**, **lbHatch** is ignored.  
   
 ## Remarks  
- Although **lbColor** controls the foreground color of a hatch brush, the [CDC::SetBkMode](../../mfc/reference/cdc-class.md#cdc__SetBkMode) and [CDC::SetBkColor](../../mfc/reference/cdc-class.md#cdc__SetBkColor) functions control the background color.  
+ Although **lbColor** controls the foreground color of a hatch brush, the [CDC::SetBkMode](../../mfc/reference/cdc-class.md#cdc__setbkmode) and [CDC::SetBkColor](../../mfc/reference/cdc-class.md#cdc__setbkcolor) functions control the background color.  
   
 ## Requirements  
  **Header:** wingdi.h  
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CDC::GetCharABCWidths](../../mfc/reference/cdc-class.md#cdc__GetCharABCWidths)
+ [CDC::GetCharABCWidths](../../mfc/reference/cdc-class.md#cdc__getcharabcwidths)
 

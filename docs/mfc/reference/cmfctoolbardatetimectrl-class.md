@@ -168,7 +168,7 @@ CMFCToolBarDateTimeCtrl(
 ### Example  
  The following example demonstrates how to construct an object of the `CMFCToolBarDateTimeCtrl` class. This code snippet is part of the [Toolbar Date Time Picker sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_ToolbarDateTimePicker#1](../../mfc/reference/codesnippet/CPP/cmfctoolbardatetimectrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_ToolbarDateTimePicker#1](../../mfc/reference/codesnippet/cpp/cmfctoolbardatetimectrl-class_1.cpp)]  
   
 ##  <a name="cmfctoolbardatetimectrl__copyfrom"></a>  CMFCToolBarDateTimeCtrl::CopyFrom  
  Copies the properties of another toolbar button to the current button.  

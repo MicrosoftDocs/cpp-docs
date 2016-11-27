@@ -70,22 +70,22 @@ The following map entries correspond to the function prototypes.
   
 |Map entry|Function prototype|  
 |---------------|------------------------|  
-|ON_WM_SETCURSOR( )|afx_msg BOOL [OnSetCursor](../../mfc/reference/cwnd-class.md#cwnd__OnSetCursor)( CWnd*, UINT, UINT );|  
-|ON_WM_SETFOCUS( )|afx_msg void [OnSetFocus](../../mfc/reference/cwnd-class.md#cwnd__OnSetFocus)( CWnd* );|  
-|ON_WM_SETTINGCHANGE( )|afx_msg void [OnSettingChange](../../mfc/reference/cwnd-class.md#cwnd__OnSettingChange)( UINT uFlags, LPCTSTR lpszSection );|  
-|ON_WM_SHOWWINDOW( )|afx_msg void [OnShowWindow](../../mfc/reference/cwnd-class.md#cwnd__OnShowWindow)( BOOL, UINT );|  
-|ON_WM_SIZE( )|afx_msg void [OnSize](../../mfc/reference/cwnd-class.md#cwnd__OnSize)( UINT, int, int );|  
-|ON_WM_SIZECLIPBOARD( )|afx_msg void [OnSizeClipboard](../../mfc/reference/cwnd-class.md#cwnd__OnSizeClipboard)( CWnd*, HANDLE );|  
-|ON_WM_SIZING( )|afx_msg void [OnSizing](../../mfc/reference/cwnd-class.md#cwnd__OnSizing)( UINT, LPRECT );|  
-|ON_WM_SPOOLERSTATUS( )|afx_msg void [OnSpoolerStatus](../../mfc/reference/cwnd-class.md#cwnd__OnSpoolerStatus)( UINT, UINT );|  
-|ON_WM_STYLECHANGED( )|afx_msg void [OnStyleChanged](../../mfc/reference/cwnd-class.md#cwnd__OnStyleChanged)( int, LPSTYLESTRUCT );|  
-|ON_WM_STYLECHANGING( )|afx_msg void [OnStyleChanging](../../mfc/reference/cwnd-class.md#cwnd__OnStyleChanging)( int, LPSTYLESTRUCT );|  
-|ON_WM_SYSCHAR( )|afx_msg void [OnSysChar](../../mfc/reference/cwnd-class.md#cwnd__OnSysChar)( UINT, UINT, UINT );|  
-|ON_WM_SYSCOLORCHANGE( )|afx_msg void [OnSysColorChange](../../mfc/reference/cwnd-class.md#cwnd__OnSysColorChange)( );|  
-|ON_WM_SYSCOMMAND( )|afx_msg void [OnSysCommand](../../mfc/reference/cwnd-class.md#cwnd__OnSysCommand)( UINT, LONG );|  
+|ON_WM_SETCURSOR( )|afx_msg BOOL [OnSetCursor](../../mfc/reference/cwnd-class.md#cwnd__onsetcursor)( CWnd*, UINT, UINT );|  
+|ON_WM_SETFOCUS( )|afx_msg void [OnSetFocus](../../mfc/reference/cwnd-class.md#cwnd__onsetfocus)( CWnd* );|  
+|ON_WM_SETTINGCHANGE( )|afx_msg void [OnSettingChange](../../mfc/reference/cwnd-class.md#cwnd__onsettingchange)( UINT uFlags, LPCTSTR lpszSection );|  
+|ON_WM_SHOWWINDOW( )|afx_msg void [OnShowWindow](../../mfc/reference/cwnd-class.md#cwnd__onshowwindow)( BOOL, UINT );|  
+|ON_WM_SIZE( )|afx_msg void [OnSize](../../mfc/reference/cwnd-class.md#cwnd__onsize)( UINT, int, int );|  
+|ON_WM_SIZECLIPBOARD( )|afx_msg void [OnSizeClipboard](../../mfc/reference/cwnd-class.md#cwnd__onsizeclipboard)( CWnd*, HANDLE );|  
+|ON_WM_SIZING( )|afx_msg void [OnSizing](../../mfc/reference/cwnd-class.md#cwnd__onsizing)( UINT, LPRECT );|  
+|ON_WM_SPOOLERSTATUS( )|afx_msg void [OnSpoolerStatus](../../mfc/reference/cwnd-class.md#cwnd__onspoolerstatus)( UINT, UINT );|  
+|ON_WM_STYLECHANGED( )|afx_msg void [OnStyleChanged](../../mfc/reference/cwnd-class.md#cwnd__onstylechanged)( int, LPSTYLESTRUCT );|  
+|ON_WM_STYLECHANGING( )|afx_msg void [OnStyleChanging](../../mfc/reference/cwnd-class.md#cwnd__onstylechanging)( int, LPSTYLESTRUCT );|  
+|ON_WM_SYSCHAR( )|afx_msg void [OnSysChar](../../mfc/reference/cwnd-class.md#cwnd__onsyschar)( UINT, UINT, UINT );|  
+|ON_WM_SYSCOLORCHANGE( )|afx_msg void [OnSysColorChange](../../mfc/reference/cwnd-class.md#cwnd__onsyscolorchange)( );|  
+|ON_WM_SYSCOMMAND( )|afx_msg void [OnSysCommand](../../mfc/reference/cwnd-class.md#cwnd__onsyscommand)( UINT, LONG );|  
 |ON_WM_SYSDEADCHAR( )|afx_msg void [OnSysDeadChar](../../mfc/reference/cwnd-class.md#cwnd__onsysdeadchar)( UINT, UINT, UINT );|  
-|ON_WM_SYSKEYDOWN( )|afx_msg void [OnSysKeyDown](../../mfc/reference/cwnd-class.md#cwnd__OnSysKeyDown)( UINT, UINT, UINT );|  
-|ON_WM_SYSKEYUP( )|afx_msg void [OnSysKeyUp](../../mfc/reference/cwnd-class.md#cwnd__OnSysKeyUp)( UINT, UINT, UINT );|  
+|ON_WM_SYSKEYDOWN( )|afx_msg void [OnSysKeyDown](../../mfc/reference/cwnd-class.md#cwnd__onsyskeydown)( UINT, UINT, UINT );|  
+|ON_WM_SYSKEYUP( )|afx_msg void [OnSysKeyUp](../../mfc/reference/cwnd-class.md#cwnd__onsyskeyup)( UINT, UINT, UINT );|  
   
 ## See Also  
  [Message Maps](../../mfc/reference/message-maps-mfc.md)   

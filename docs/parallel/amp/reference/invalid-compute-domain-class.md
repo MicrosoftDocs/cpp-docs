@@ -50,7 +50,7 @@ class invalid_compute_domain : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_compute_domain::invalid_compute_domain Constructor](../Topic/invalid_compute_domain::invalid_compute_domain%20Constructor.md)|Initializes a new instance of the `invalid_compute_domain` class.|  
+|[invalid_compute_domain::invalid_compute_domain Constructor](../topic/invalid_compute_domain::invalid_compute_domain%20constructor.md)|Initializes a new instance of the `invalid_compute_domain` class.|  
   
 ## Inheritance Hierarchy  
  `exception`  

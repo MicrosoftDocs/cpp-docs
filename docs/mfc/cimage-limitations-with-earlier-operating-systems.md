@@ -44,11 +44,11 @@ Many `CImage` functions work only with newer versions of Windows: Windows 95/98 
  You can include `AlphaBlend` and `TransparentBlt` in an application that runs on Windows 95 or Windows NT 4.0 only if these methods never get called. If your application includes these methods, and it must run on earlier operating systems, you must use the linker's [/delayload](../build/reference/delayload-delay-load-import.md) to delay the loading of msimg32.lib. As long as your application does not call one of these methods while running under Windows NT 4.0 or Windows 95, it will not attempt to load msimg32.lib. You can check the whether transparency support is available using the `CImage::IsTransparencySupported` method.  
   
 ## Example  
- [!code-cpp[NVC_MFCDocViewSDI#8](../mfc/codesnippet/CPP/cimage-limitations-with-earlier-operating-systems_1.cpp)]  
+ [!code-cpp[NVC_MFCDocViewSDI#8](../mfc/codesnippet/cpp/cimage-limitations-with-earlier-operating-systems_1.cpp)]  
   
  To compile an application that calls these methods, insert a #define _WIN32_WINNT statement before #including any system headers, indicating that the version of Windows is equal to or greater than 5.0:  
   
- [!code-cpp[NVC_MFCDocViewSDI#9](../mfc/codesnippet/CPP/cimage-limitations-with-earlier-operating-systems_2.h)]  
+ [!code-cpp[NVC_MFCDocViewSDI#9](../mfc/codesnippet/cpp/cimage-limitations-with-earlier-operating-systems_2.h)]  
   
  If your application does not need to run on an operating system older than Windows 2000 or Windows 98, you can link directly to msimg32.lib without using **/delayload**.  
   

@@ -44,7 +44,7 @@ A DHTML control can be hosted in a container, such as Test Container or Internet
   
  Examine `OnClick` in the control's .h file:  
   
- [!code-cpp[NVC_ATL_COM#4](../atl/codesnippet/CPP/calling-cpp-code-from-dhtml_1.h)]  
+ [!code-cpp[NVC_ATL_COM#4](../atl/codesnippet/cpp/calling-cpp-code-from-dhtml_1.h)]  
   
  The first parameter, `pdispBody`, is a pointer to the body object's dispatch interface. The second parameter, `varColor`, identifies the color to apply to the control.  
   

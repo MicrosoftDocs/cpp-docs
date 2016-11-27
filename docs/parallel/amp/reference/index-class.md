@@ -56,21 +56,21 @@ class index;
   
 |Name|Description|  
 |----------|-----------------|  
-|[index::index Constructor](../Topic/index::index%20Constructor.md)|Initializes a new instance of the `index` class.|  
+|[index::index Constructor](../topic/index::index%20constructor.md)|Initializes a new instance of the `index` class.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[index::operator-- Operator](../Topic/index::operator--%20Operator.md)|Decrements each element of the `index` object.|  
-|[index::operator(mod)= Operator](../Topic/index::operator\(mod\)=%20Operator.md)|Calculates the modulus (remainder) of each element in the `index` object when that element is divided by a number.|  
-|[index::operator*= Operator](../Topic/index::operator*=%20Operator.md)|Multiplies each element of the `index` object by a number.|  
-|[index::operator/= Operator](../Topic/index::operator-=%20Operator2.md)|Divides each element of the `index` object by a number.|  
-|[index::operatorOperator](../Topic/index::operatorOperator.md)|Returns the element that's at the specified index.|  
-|[index::operator++ Operator](../Topic/index::operator++%20Operator.md)|Increments each element of the `index` object.|  
-|[index::operator+= Operator](../Topic/index::operator+=%20Operator.md)|Adds the specified number to each element of the `index` object.|  
-|[index::operator= Operator](../Topic/index::operator=%20Operator.md)|Copies the contents of the specified `index` object into this one.|  
-|[index::operator-= Operator](../Topic/index::operator-=%20Operator1.md)|Subtracts the specified number from each element of the `index` object.|  
+|[index::operator-- Operator](../topic/index::operator--%20operator.md)|Decrements each element of the `index` object.|  
+|[index::operator(mod)= Operator](../topic/index::operator\(mod\)=%20Operator.md)|Calculates the modulus (remainder) of each element in the `index` object when that element is divided by a number.|  
+|[index::operator*= Operator](../topic/index::operator*=%20operator.md)|Multiplies each element of the `index` object by a number.|  
+|[index::operator/= Operator](../topic/index::operator-=%20operator2.md)|Divides each element of the `index` object by a number.|  
+|[index::operatorOperator](../topic/index::operatoroperator.md)|Returns the element that's at the specified index.|  
+|[index::operator++ Operator](../topic/index::operator++%20operator.md)|Increments each element of the `index` object.|  
+|[index::operator+= Operator](../topic/index::operator+=%20operator.md)|Adds the specified number to each element of the `index` object.|  
+|[index::operator= Operator](../topic/index::operator=%20operator.md)|Copies the contents of the specified `index` object into this one.|  
+|[index::operator-= Operator](../topic/index::operator-=%20operator1.md)|Subtracts the specified number from each element of the `index` object.|  
   
 ### Public Constants  
   
@@ -82,7 +82,7 @@ class index;
  `index`  
   
 ## Remarks  
- The `index` structure represents a coordinate vector of *N* integers that specifies a unique position in an *N*-dimensional space. The values in the vector are ordered from most significant to least significant. You can retrieve the values of the components using [index::operator= Operator](../Topic/index::operator=%20Operator.md).  
+ The `index` structure represents a coordinate vector of *N* integers that specifies a unique position in an *N*-dimensional space. The values in the vector are ordered from most significant to least significant. You can retrieve the values of the components using [index::operator= Operator](../topic/index::operator=%20operator.md).  
   
 ## Requirements  
  **Header:** amp.h  

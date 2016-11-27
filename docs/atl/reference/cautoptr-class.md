@@ -97,7 +97,7 @@ template <typename   T>
  **Header:** atlbase.h  
   
 ## Example  
- [!code-cpp[NVC_ATL_Utilities#74](../../atl/codesnippet/CPP/cautoptr-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#74](../../atl/codesnippet/cpp/cautoptr-class_1.cpp)]  
   
 ##  <a name="cautoptr__attach"></a>  CAutoPtr::Attach  
  Call this method to take ownership of an existing pointer.  

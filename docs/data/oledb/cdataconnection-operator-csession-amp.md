@@ -55,9 +55,9 @@ operator const CSession&();
 ## Example  
  If you have a function (such as `func` below) that takes a `CSession` reference, you can use **CSession&** to pass a `CDataConnection` object instead.  
   
- [!code-cpp[NVC_OLEDB_Consumer#5](../../data/oledb/codesnippet/CPP/cdataconnection-operator-csession-amp_1.cpp)]  
+ [!code-cpp[NVC_OLEDB_Consumer#5](../../data/oledb/codesnippet/cpp/cdataconnection-operator-csession-amp_1.cpp)]  
   
- [!code-cpp[NVC_OLEDB_Consumer#6](../../data/oledb/codesnippet/CPP/cdataconnection-operator-csession-amp_2.cpp)]  
+ [!code-cpp[NVC_OLEDB_Consumer#6](../../data/oledb/codesnippet/cpp/cdataconnection-operator-csession-amp_2.cpp)]  
   
 ## Requirements  
  **Header:** atldbcli.h  

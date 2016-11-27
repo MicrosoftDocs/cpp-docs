@@ -102,7 +102,7 @@ class CFileFind : public CObject
   
  The following code will enumerate all the files in the current directory, printing the name of each file:  
   
- [!code-cpp[NVC_MFCFiles#31](../../atl-mfc-shared/reference/codesnippet/CPP/cfilefind-class_1.cpp)]  
+ [!code-cpp[NVC_MFCFiles#31](../../atl-mfc-shared/reference/codesnippet/cpp/cfilefind-class_1.cpp)]  
   
  To keep the example simple, this code uses the standard C++ library `cout` class. The `cout` line could be replaced with a call to `CListBox::AddString`, for example, in a program with a graphical user interface.  
   
@@ -333,7 +333,7 @@ virtual CString GetFileName() const;
 - [GetFileTitle](#cfilefind__getfiletitle) returns the file name, excluding the file extension. For example, calling `GetFileTitle` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file title `myfile`.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#32](../../atl-mfc-shared/reference/codesnippet/CPP/cfilefind-class_2.cpp)]  
+ [!code-cpp[NVC_MFCFiles#32](../../atl-mfc-shared/reference/codesnippet/cpp/cfilefind-class_2.cpp)]  
   
 ##  <a name="cfilefind__getfilepath"></a>  CFileFind::GetFilePath  
  Call this member function to get the full path of the specified file.  
@@ -492,7 +492,7 @@ ULONGLONG GetLength() const;
 >  As of MFC 7.0, `GetLength` supports 64-bit integer types. Previously existing code built with this newer version of the library may result in truncation warnings.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#33](../../atl-mfc-shared/reference/codesnippet/CPP/cfilefind-class_3.cpp)]  
+ [!code-cpp[NVC_MFCFiles#33](../../atl-mfc-shared/reference/codesnippet/cpp/cfilefind-class_3.cpp)]  
   
 ##  <a name="cfilefind__getroot"></a>  CFileFind::GetRoot  
  Call this member function to get the root of the found file.  
@@ -580,7 +580,7 @@ BOOL IsDirectory() const;
 ### Example  
  This small program recurses every directory on the C:\ drive and prints the name of the directory.  
   
- [!code-cpp[NVC_MFCFiles#34](../../atl-mfc-shared/reference/codesnippet/CPP/cfilefind-class_4.cpp)]  
+ [!code-cpp[NVC_MFCFiles#34](../../atl-mfc-shared/reference/codesnippet/cpp/cfilefind-class_4.cpp)]  
   
 ##  <a name="cfilefind__isdots"></a>  CFileFind::IsDots  
  Call this member function to test for the current directory and parent directory markers while iterating through files.  
@@ -755,7 +755,7 @@ virtual BOOL MatchesMask(DWORD dwMask) const;
  You must call [FindNextFile](#cfilefind__findnextfile) at least once before calling `MatchesMask`.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#35](../../atl-mfc-shared/reference/codesnippet/CPP/cfilefind-class_5.cpp)]  
+ [!code-cpp[NVC_MFCFiles#35](../../atl-mfc-shared/reference/codesnippet/cpp/cfilefind-class_5.cpp)]  
   
 ## See Also  
  [CObject Class](../../mfc/reference/cobject-class.md)   

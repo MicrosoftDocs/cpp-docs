@@ -114,7 +114,7 @@ CMFCPropertyGridFontProperty(
 ### Example  
  The following example demonstrates how construct an object of the `CMFCPropertyGridFontProperty` class. This example is part of the [New Controls sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_NewControls#26](../../mfc/reference/codesnippet/CPP/cmfcpropertygridfontproperty-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_NewControls#26](../../mfc/reference/codesnippet/cpp/cmfcpropertygridfontproperty-class_1.cpp)]  
   
 ##  <a name="cmfcpropertygridfontproperty__getcolor"></a>  CMFCPropertyGridFontProperty::GetColor  
  Retrieves the font color that the user selects from the font dialog box.  

@@ -50,7 +50,7 @@ class accelerator_view_removed : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view_removed::accelerator_view_removed Constructor](../Topic/accelerator_view_removed::accelerator_view_removed%20Constructor.md)|Initializes a new instance of the `accelerator_view_removed` class.|  
+|[accelerator_view_removed::accelerator_view_removed Constructor](../topic/accelerator_view_removed::accelerator_view_removed%20constructor.md)|Initializes a new instance of the `accelerator_view_removed` class.|  
   
 ### Public Methods  
   

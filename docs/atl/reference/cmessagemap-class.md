@@ -63,7 +63,7 @@ class ATL_NO_VTABLE CMessageMap
   
  ATL uses `CMessageMap` to support contained windows and dynamic message map chaining. For example, any class containing a [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) object must derive from `CMessageMap`. The following code is taken from the [SUBEDIT](../../visual-cpp-samples.md) sample. Through [CComControl](../../atl/reference/ccomcontrol-class.md), the `CAtlEdit` class automatically derives from `CMessageMap`.  
   
- [!code-cpp[NVC_ATL_Windowing#90](../../atl/codesnippet/CPP/cmessagemap-class_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#90](../../atl/codesnippet/cpp/cmessagemap-class_1.h)]  
   
  Because the contained window, `m_EditCtrl`, will use a message map in the containing class, `CAtlEdit` derives from `CMessageMap`.  
   
@@ -101,7 +101,7 @@ virtual BOOL ProcessWindowMessage(HWND hWnd,
  [out] The result of the message processing.  
   
  `dwMsgMapID`  
- [in] The identifier of the message map that will process the message. The default message map, declared with [BEGIN_MSG_MAP](http://msdn.microsoft.com/Library/8bbb5af9-18b1-48c6-880e-166f599ee554), is identified by 0. An alternate message map, declared with [ALT_MSG_MAP(msgMapID)](http://msdn.microsoft.com/Library/2c8871bf-abc0-4d52-bcf7-6b2ab9eb5af8), is identified by `msgMapID`.  
+ [in] The identifier of the message map that will process the message. The default message map, declared with [BEGIN_MSG_MAP](http://msdn.microsoft.com/library/8bbb5af9-18b1-48c6-880e-166f599ee554), is identified by 0. An alternate message map, declared with [ALT_MSG_MAP(msgMapID)](http://msdn.microsoft.com/library/2c8871bf-abc0-4d52-bcf7-6b2ab9eb5af8), is identified by `msgMapID`.  
   
 ### Return Value  
  **TRUE** if the message is fully handled; otherwise, **FALSE**.  
@@ -111,6 +111,6 @@ virtual BOOL ProcessWindowMessage(HWND hWnd,
   
 ## See Also  
  [CDynamicChain Class](../../atl/reference/cdynamicchain-class.md)   
- [BEGIN_MSG_MAP](http://msdn.microsoft.com/Library/8bbb5af9-18b1-48c6-880e-166f599ee554)   
- [ALT_MSG_MAP](http://msdn.microsoft.com/Library/2c8871bf-abc0-4d52-bcf7-6b2ab9eb5af8)   
+ [BEGIN_MSG_MAP](http://msdn.microsoft.com/library/8bbb5af9-18b1-48c6-880e-166f599ee554)   
+ [ALT_MSG_MAP](http://msdn.microsoft.com/library/2c8871bf-abc0-4d52-bcf7-6b2ab9eb5af8)   
  [Class Overview](../../atl/atl-class-overview.md)

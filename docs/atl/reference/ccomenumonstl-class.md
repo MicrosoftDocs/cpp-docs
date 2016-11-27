@@ -107,11 +107,11 @@ template <class Base,
 ## Example  
  The code shown below provides a generic function to handle the creation and initialization of an enumerator object:  
   
- [!code-cpp[NVC_ATL_COM#34](../../atl/codesnippet/CPP/ccomenumonstl-class_1.h)]  
+ [!code-cpp[NVC_ATL_COM#34](../../atl/codesnippet/cpp/ccomenumonstl-class_1.h)]  
   
  This template function can be used to implement the `_NewEnum` property of a collection interface as shown below:  
   
- [!code-cpp[NVC_ATL_COM#35](../../atl/codesnippet/CPP/ccomenumonstl-class_2.h)]  
+ [!code-cpp[NVC_ATL_COM#35](../../atl/codesnippet/cpp/ccomenumonstl-class_2.h)]  
   
  This code creates a `typedef` for `CComEnumOnSTL` that exposes a vector of `CComVariant`s by means of the **IEnumVariant** interface. The **CVariantCollection** class simply specializes **CreateSTLEnumerator** to work with enumerator objects of this type.  
   

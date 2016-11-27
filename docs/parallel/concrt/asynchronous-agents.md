@@ -39,9 +39,9 @@ An *asynchronous agent* (or just *agent*) is an application component that works
  The Agents Library defines the [concurrency::agent](../../parallel/concrt/reference/agent-class.md) class to represent an asynchronous agent. `agent` is an abstract class that declares the virtual method [concurrency::agent::run](reference/agent-class.md#agent__run_method). The `run` method executes the task that is performed by the agent. Because `run` is abstract, you must implement this method in every class that you derive from `agent`.  
   
 ## Agent Life Cycle  
- Agents have a set life cycle. The [concurrency::agent_status](../Topic/agent_status%20Enumeration.md) enumeration defines the various states of an agent. The following illustration is a state diagram that shows how agents progress from one state to another. In this illustration, solid lines represent methods that you call from your application; dotted lines represent methods that are called from the runtime.  
+ Agents have a set life cycle. The [concurrency::agent_status](../topic/agent_status%20enumeration.md) enumeration defines the various states of an agent. The following illustration is a state diagram that shows how agents progress from one state to another. In this illustration, solid lines represent methods that you call from your application; dotted lines represent methods that are called from the runtime.  
   
- ![Agent State Diagram](../../parallel/concrt/media/agentstate.png "AgentState")  
+ ![Agent State Diagram](../../parallel/concrt/media/agentstate.png "agentstate")  
   
  The following table describes each state in the `agent_status` enumeration.  
   

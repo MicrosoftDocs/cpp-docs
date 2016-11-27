@@ -273,8 +273,8 @@ virtual BOOL Create(
 ### Example  
  The following example demonstrates how to use the `Create` method of the `CMFCOutlookBar` class. This code snippet is part of the [Outlook Multi Views sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_OutlookMultiViews#1](../../mfc/reference/codesnippet/CPP/cmfcoutlookbar-class_1.h)]  
-[!code-cpp[NVC_MFC_OutlookMultiViews#2](../../mfc/reference/codesnippet/CPP/cmfcoutlookbar-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_OutlookMultiViews#1](../../mfc/reference/codesnippet/cpp/cmfcoutlookbar-class_1.h)]  
+[!code-cpp[NVC_MFC_OutlookMultiViews#2](../../mfc/reference/codesnippet/cpp/cmfcoutlookbar-class_2.cpp)]  
   
 ##  <a name="cmfcoutlookbar__createcustompage"></a>  CMFCOutlookBar::CreateCustomPage  
  Creates a custom Outlook bar tab.  

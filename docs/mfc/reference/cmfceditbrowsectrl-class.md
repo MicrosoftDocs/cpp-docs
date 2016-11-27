@@ -117,8 +117,8 @@ class CMFCEditBrowseCtrl : public CEdit
 ## Example  
  The following example demonstrates how to use two methods in the `CMFCEditBrowseCtrl` class: `EnableFolderBrowseButton` and `EnableFileBrowseButton`. This example is part of the [New Controls sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_NewControls#6](../../mfc/reference/codesnippet/CPP/cmfceditbrowsectrl-class_1.h)]  
-[!code-cpp[NVC_MFC_NewControls#7](../../mfc/reference/codesnippet/CPP/cmfceditbrowsectrl-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_NewControls#6](../../mfc/reference/codesnippet/cpp/cmfceditbrowsectrl-class_1.h)]  
+[!code-cpp[NVC_MFC_NewControls#7](../../mfc/reference/codesnippet/cpp/cmfceditbrowsectrl-class_2.cpp)]  
   
 ## Requirements  
  **Header:** afxeditbrowsectrl.h  

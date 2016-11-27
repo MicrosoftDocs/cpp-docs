@@ -66,7 +66,7 @@ class CMFCAcceleratorKey : public CObject
 ## Example  
  The following example demonstrates how to construct a `CMFCAcceleratorKey` object and how to use its `Format` method.  
   
- [!code-cpp[NVC_MFC_RibbonApp#30](../../mfc/reference/codesnippet/CPP/cmfcacceleratorkey-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#30](../../mfc/reference/codesnippet/cpp/cmfcacceleratorkey-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

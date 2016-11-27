@@ -154,7 +154,7 @@ CWinThread();
 ```  
   
 ### Remarks  
- To begin the thread's execution, call the [CreateThread](#cwinthread__createthread) member function. You will usually create threads by calling [AfxBeginThread](http://msdn.microsoft.com/Library/e9e8684d-24f7-4599-8fdf-1f4f560a753b), which will call this constructor and `CreateThread`.  
+ To begin the thread's execution, call the [CreateThread](#cwinthread__createthread) member function. You will usually create threads by calling [AfxBeginThread](http://msdn.microsoft.com/library/e9e8684d-24f7-4599-8fdf-1f4f560a753b), which will call this constructor and `CreateThread`.  
   
 ##  <a name="cwinthread__exitinstance"></a>  CWinThread::ExitInstance  
  Called by the framework from within a rarely overridden [Run](#cwinthread__run) member function to exit this instance of the thread, or if a call to [InitInstance](#cwinthread__initinstance) fails.  
@@ -250,7 +250,7 @@ virtual BOOL IsIdleMessage(MSG* pMsg);
   
  If an application has created a short timer, **OnIdle** will be called frequently, causing performance problems. To improve such an application's performance, override `IsIdleMessage` in the application's `CWinApp`-derived class to check for `WM_TIMER` messages as follows:  
   
- [!code-cpp[NVC_MFCDocView#189](../../mfc/codesnippet/CPP/cwinthread-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#189](../../mfc/codesnippet/cpp/cwinthread-class_1.cpp)]  
   
  Handling `WM_TIMER` in this fashion will improve performance of applications that use short timers.  
   

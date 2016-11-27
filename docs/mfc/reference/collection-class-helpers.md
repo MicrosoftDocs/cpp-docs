@@ -54,7 +54,7 @@ The collection classes `CMap`, `CList`, and `CArray` use templated global helper
 |[SerializeElements](#serializeelements)|Stores or retrieves elements to or from an archive.|  
   
 ##  <a name="compareelements"></a>  CompareElements  
- Called directly by [CList::Find](../Topic/CList%20Class.md#not_found.md#clist__find and indirectly by [cmap__lookup](../topic/not_found.md#cmap__lookup and [cmap__operator &#91;&#93;]--brokenlink--(../topic/cmap__operator).  
+ Called directly by [CList::Find](../topic/clist%20class.md#not_found.md#clist__find and indirectly by [cmap__lookup](../topic/not_found.md#cmap__lookup and [cmap__operator &#91;&#93;]--brokenlink--(../topic/cmap__operator).  
   
 ```  
  
@@ -91,7 +91,7 @@ CompareElements(
  The C++ language defines the comparison operator ( `==`) for simple types ( `char`, `int`, **float**, and so on) but does not define a comparison operator for classes and structures. If you want to use `CompareElements` or to instantiate one of the collection classes that uses it, you must either define the comparison operator or overload `CompareElements` with a version that returns appropriate values.  
   
 ##  <a name="copyelements"></a>  CopyElements  
- This function is called directly by [CArray::Append](../Topic/CArray%20Class.md#carray__append) and [CArray::Copy](../Topic/CArray%20Class.md#carray__copy).  
+ This function is called directly by [CArray::Append](../topic/carray%20class.md#carray__append) and [CArray::Copy](../topic/carray%20class.md#carray__copy).  
   
 ```  
  
@@ -120,7 +120,7 @@ void AFXAPI CopyElements(
 ### Remarks  
  The default implementation uses the simple assignment operator ( **=** ) to perform the copy operation. If the type being copied does not have an overloaded operator=, then the default implementation performs a bitwise copy.  
   
- For information on implementing this and other helper functions, see the article [Collections: How to Make a Type-Safe Collection](../Topic/How%20to:%20Make%20a%20Type-Safe%20Collection.md).  
+ For information on implementing this and other helper functions, see the article [Collections: How to Make a Type-Safe Collection](../topic/how%20to:%20make%20a%20type-safe%20collection.md).  
   
 ##  <a name="dumpelements"></a>  DumpElements  
  Provides stream-oriented diagnostic output in text form for the elements of your collection when overridden.  
@@ -154,7 +154,7 @@ void  AFXAPI DumpElements(
   
  The default implementation does nothing. If the elements of your collection are derived from `CObject`, your override will typically iterate through the collection's elements, calling `Dump` for each element in turn.  
   
- For information on diagnostics and on the `Dump` function, see [Debugging MFC Applications](../Topic/MFC%20Debugging%20Techniques.md).  
+ For information on diagnostics and on the `Dump` function, see [Debugging MFC Applications](../topic/mfc%20debugging%20techniques.md).  
   
 ##  <a name="hashkey"></a>  HashKey  
  Calculates a hash value for the given key.  
@@ -175,15 +175,15 @@ AFX_INLINE UINT AFXAPI HashKey(ARG_KEY  key);
  The key's hash value.  
   
 ### Remarks  
- This function is called directly by [CMap::RemoveKey](../Topic/CMap%20Class.md#cmap__removekey) and indirectly by [CMap::Lookup](../Topic/CMap%20Class.md#cmap__lookup) and [CMap::Operator &#91;&#93;](../Topic/CMap%20Class.md#operator&#91;&#93;).
+ This function is called directly by [CMap::RemoveKey](../topic/cmap%20class.md#cmap__removekey) and indirectly by [CMap::Lookup](../topic/cmap%20class.md#cmap__lookup) and [CMap::Operator &#91;&#93;](../topic/cmap%20class.md#operator&#91;&#93;).
   
  The default implementation creates a hash value by shifting `key` right by four positions. Override this function so that it returns hash values appropriate for your application.  
   
 ### Example  
- <!--FIXME[!CODE [NVC_MFC_Utilities#34](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_Utilities#34)] --> 
+ <!--FIXME[!CODE [NVC_MFC_Utilities#34](../codesnippet/vs_snippets_cpp/nvc_mfc_utilities#34)] --> 
   
 ##  <a name="serializeelements"></a>  SerializeElements  
- [CArray](../Topic/CArray%20Class.md), [CList](../Topic/CList%20Class.md), and [CMap](../Topic/CMap%20Class.md) call this function to serialize elements.  
+ [CArray](../topic/carray%20class.md), [CList](../topic/clist%20class.md), and [CMap](../topic/cmap%20class.md) call this function to serialize elements.  
   
 ```  
  
@@ -209,13 +209,13 @@ void AFXAPI SerializeElements(CArchive& ar, TYPE* pElements, INT_PTR nCount);
 ### Remarks  
  The default implementation does a bitwise read or write.  
   
- For information on implementing this and other helper functions, see the article [Collections: How to Make a Type-Safe Collection](../Topic/How%20to:%20Make%20a%20Type-Safe%20Collection.md).  
+ For information on implementing this and other helper functions, see the article [Collections: How to Make a Type-Safe Collection](../topic/how%20to:%20make%20a%20type-safe%20collection.md).  
   
 ### Example  
- See the example in the article [Collections: How to Make a Type-Safe Collection](../Topic/How%20to:%20Make%20a%20Type-Safe%20Collection.md).  
+ See the example in the article [Collections: How to Make a Type-Safe Collection](../topic/how%20to:%20make%20a%20type-safe%20collection.md).  
   
 ## See Also  
- [Macros and Globals](../Topic/MFC%20Macros%20and%20Globals.md)   
- [CMap Class](../Topic/CMap%20Class.md)   
- [CList Class](../Topic/CList%20Class.md)   
- [CArray Class](../Topic/CArray%20Class.md)
+ [Macros and Globals](../topic/mfc%20macros%20and%20globals.md)   
+ [CMap Class](../topic/cmap%20class.md)   
+ [CList Class](../topic/clist%20class.md)   
+ [CArray Class](../topic/carray%20class.md)

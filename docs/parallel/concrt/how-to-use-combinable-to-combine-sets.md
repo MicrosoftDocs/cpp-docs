@@ -42,7 +42,7 @@ This topic shows how to use the [concurrency::combinable](../../parallel/concrt/
   
  This example uses the [concurrency::parallel_for](concurrency-namespace-functions.md#parallel_for_function) algorithm and a `combinable` object to generate thread-local sets. It then uses the [concurrency::combinable::combine_each](reference/combinable-class.md#combinable__combine_each_method) method to combine the thread-local sets into the final set.  
   
- [!code-cpp[concrt-parallel-combine-primes#1](../../parallel/concrt/codesnippet/CPP/how-to-use-combinable-to-combine-sets_1.cpp)]  
+ [!code-cpp[concrt-parallel-combine-primes#1](../../parallel/concrt/codesnippet/cpp/how-to-use-combinable-to-combine-sets_1.cpp)]  
   
  The following sample output is for a computer that has four processors.  
   

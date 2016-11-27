@@ -160,7 +160,7 @@ CPageSetupDialog(
  Use the [DoModal](../../mfc/reference/cdialog-class.md#cdialog__domodal) function to display the dialog box.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#94](../../mfc/codesnippet/CPP/cpagesetupdialog-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#94](../../mfc/codesnippet/cpp/cpagesetupdialog-class_1.cpp)]  
   
 ##  <a name="cpagesetupdialog__createprinterdc"></a>  CPageSetupDialog::CreatePrinterDC  
  Creates a printer device context from the [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures.  
@@ -191,7 +191,7 @@ virtual INT_PTR DoModal();
   
  If you want to propagate the current settings entered by the user, make a call to [CWinApp::SelectPrinter](../../mfc/reference/cwinapp-class.md#cwinapp__selectprinter). This function takes the information from the `CPageSetupDialog` object and initializes and selects a new printer DC with the proper attributes.  
   
- [!code-cpp[NVC_MFCDocView#95](../../mfc/codesnippet/CPP/cpagesetupdialog-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#95](../../mfc/codesnippet/cpp/cpagesetupdialog-class_2.cpp)]  
   
 ### Example  
   See the example for [CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog__cpagesetupdialog).  
@@ -248,7 +248,7 @@ void GetMargins(
   
 ### Parameters  
  *lpRectMargins*  
- Pointer to a [RECT](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-US) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that describes (in 1/1000 inches or 1/100 mm) the print margins for the currently selected printer. Pass **NULL** for this parameter, if you are not interested in this rectangle.  
+ Pointer to a [RECT](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that describes (in 1/1000 inches or 1/100 mm) the print margins for the currently selected printer. Pass **NULL** for this parameter, if you are not interested in this rectangle.  
   
  *lpRectMinMargins*  
  Pointer to a `RECT` structure or `CRect` object that describes (in 1/1000 inches or 1/100 mm) the minimum print margins for the currently selected printer. Pass **NULL** for this parameter, if you are not interested in this rectangle.  
@@ -323,7 +323,7 @@ virtual UINT OnDrawPage(
 - **WM_PSD_YAFULLPAGERECT** Area for a return address representation. This area extends to the edges of the sample page area.  
   
  `lpRect`  
- Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-US) object containing the coordinates of the drawing area.  
+ Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us) object containing the coordinates of the drawing area.  
   
 ### Return Value  
  Nonzero value if handled; otherwise 0.  
@@ -333,7 +333,7 @@ virtual UINT OnDrawPage(
   
  Override this function to customize the drawing of a specific area of the image, or the entire image. You can do this by using a `switch` statement with **case** statements checking the value of `nMessage`. For example, to customize the rendering of the contents of the page image, you could use the following example code:  
   
- [!code-cpp[NVC_MFCDocView#96](../../mfc/codesnippet/CPP/cpagesetupdialog-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#96](../../mfc/codesnippet/cpp/cpagesetupdialog-class_3.cpp)]  
   
  Note that you do not need to handle every case of `nMessage`. You can choose to handle one component of the image, several components of the image, or the whole area.  
   

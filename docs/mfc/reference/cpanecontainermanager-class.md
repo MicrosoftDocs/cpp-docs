@@ -108,7 +108,7 @@ class CPaneContainerManager : public CObject
 ## Example  
  The following example demonstrates how to get a reference to a `CPaneContainerManager` object. This code snippet is part of the [Set Pane Size sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_SetPaneSize#5](../../mfc/reference/codesnippet/CPP/cpanecontainermanager-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_SetPaneSize#5](../../mfc/reference/codesnippet/cpp/cpanecontainermanager-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

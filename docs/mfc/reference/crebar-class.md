@@ -58,7 +58,7 @@ class CReBar : public CControlBar
 ## Remarks  
  A rebar object can contain a variety of child windows, usually other controls, including edit boxes, toolbars, and list boxes. A rebar object can display its child windows over a specified bitmap. Your application can automatically resize the rebar, or the user can manually resize the rebar by clicking or dragging its gripper bar.  
   
- ![Example of RebarMenu](../../mfc/reference/media/vc4sc61.gif "vc4SC61")  
+ ![Example of RebarMenu](../../mfc/reference/media/vc4sc61.gif "vc4sc61")  
   
 ## Rebar Control  
  A rebar object behaves similarly to a toolbar object. A rebar uses the click-and-drag mechanism to resize its bands. A rebar control can contain one or more bands, with each band having any combination of a gripper bar, a bitmap, a text label, and a child window. However, bands cannot contain more than one child window.  
@@ -124,7 +124,7 @@ BOOL AddBar(
  Nonzero if successful; otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CReBarCtrl#1](../../mfc/reference/codesnippet/CPP/crebar-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CReBarCtrl#1](../../mfc/reference/codesnippet/cpp/crebar-class_1.cpp)]  
   
 ##  <a name="crebar__create"></a>  CReBar::Create  
  Call this member function to create a rebar.  
@@ -174,7 +174,7 @@ CReBarCtrl& GetReBarCtrl() const;
  For more information about using `CReBarCtrl` to customize your rebar, see [Using CReBarCtrl](../../mfc/using-crebarctrl.md).  
   
 ### Example  
- [!code-cpp[NVC_MFC_CReBarCtrl#2](../../mfc/reference/codesnippet/CPP/crebar-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_CReBarCtrl#2](../../mfc/reference/codesnippet/cpp/crebar-class_2.cpp)]  
   
 ## See Also  
  [MFC Sample MFCIE](../../visual-cpp-samples.md)   

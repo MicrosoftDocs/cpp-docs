@@ -269,7 +269,7 @@ class CBasePane : public CWnd
 ## Example  
  The following example demonstrates how to use various methods in the `CBasePane` class. The example demonstrates how to retrieve a pane from the `CFrameWndEx` class and how to set the docking mode, the pane alignment, and the pane style. The code is from the [Word Pad sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_WordPad#2](../../mfc/reference/codesnippet/CPP/cbasepane-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_WordPad#2](../../mfc/reference/codesnippet/cpp/cbasepane-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

@@ -148,7 +148,7 @@ translation.priority.ht:
   
 ## See Also  
  [Styles Used by MFC](../../mfc/reference/styles-used-by-mfc.md)   
- [CStatic::Create](../../mfc/reference/cstatic-class.md#cstatic__Create)   
+ [CStatic::Create](../../mfc/reference/cstatic-class.md#cstatic__create)   
  [DrawEdge](http://msdn.microsoft.com/library/windows/desktop/dd162477)   
  [Static Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760773)
 

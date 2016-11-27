@@ -103,7 +103,7 @@ CComControl();
 ```  
   
 ### Remarks  
- Calls the [CComControlBase](CComControlBase-class.md#CComControlBase__CComControlBase) constructor, passing the `m_hWnd` data member inherited through [CWindowImpl](../../atl/reference/cwindowimpl-class.md).  
+ Calls the [CComControlBase](ccomcontrolbase-class.md#ccomcontrolbase__ccomcontrolbase) constructor, passing the `m_hWnd` data member inherited through [CWindowImpl](../../atl/reference/cwindowimpl-class.md).  
   
 ##  <a name="ccomcontrol__controlqueryinterface"></a>  CComControl::ControlQueryInterface  
  Retrieves a pointer to the requested interface.  
@@ -124,7 +124,7 @@ virtual HRESULT ControlQueryInterface(const IID& iid,
  Only handles interfaces in the COM map table.  
   
 ### Example  
- [!code-cpp[NVC_ATL_COM#15](../../atl/codesnippet/CPP/ccomcontrol-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_COM#15](../../atl/codesnippet/cpp/ccomcontrol-class_1.cpp)]  
   
 ##  <a name="ccomcontrol__createcontrolwindow"></a>  CComControl::CreateControlWindow  
  By default, creates a window for the control by calling `CWindowImpl::Create`.  
@@ -145,7 +145,7 @@ virtual HWND CreateControlWindow(HWND hWndParent,
  Override this method if you want to do something other than create a single window, for example, to create two windows, one of which becomes a toolbar for your control.  
   
 ### Example  
- [!code-cpp[NVC_ATL_COM#16](../../atl/codesnippet/CPP/ccomcontrol-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_COM#16](../../atl/codesnippet/cpp/ccomcontrol-class_2.cpp)]  
   
 ##  <a name="ccomcontrol__fireonchanged"></a>  CComControl::FireOnChanged  
  Notifies the container's sink that a control property has changed.  
@@ -162,12 +162,12 @@ HRESULT FireOnChanged(DISPID dispID);
  One of the standard HRESULT values.  
   
 ### Remarks  
- If your control class derives from [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638), this method calls [CFirePropNotifyEvent::FireOnChanged](CFirePropNotifyEvent-class.md#CFirePropNotifyEvent__FireOnChanged) to notify all connected `IPropertyNotifySink` interfaces that the specified control property has changed. If your control class does not derive from `IPropertyNotifySink`, this method returns `S_OK`.  
+ If your control class derives from [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638), this method calls [CFirePropNotifyEvent::FireOnChanged](cfirepropnotifyevent-class.md#cfirepropnotifyevent__fireonchanged) to notify all connected `IPropertyNotifySink` interfaces that the specified control property has changed. If your control class does not derive from `IPropertyNotifySink`, this method returns `S_OK`.  
   
  This method is safe to call even if your control doesn't support connection points.  
   
 ### Example  
- [!code-cpp[NVC_ATL_COM#17](../../atl/codesnippet/CPP/ccomcontrol-class_3.cpp)]  
+ [!code-cpp[NVC_ATL_COM#17](../../atl/codesnippet/cpp/ccomcontrol-class_3.cpp)]  
   
 ##  <a name="ccomcontrol__fireonrequestedit"></a>  CComControl::FireOnRequestEdit  
  Notifies the container's sink that a control property is about to change and that the object is asking the sink how to proceed.  
@@ -184,12 +184,12 @@ HRESULT FireOnRequestEdit(DISPID dispID);
  One of the standard HRESULT values.  
   
 ### Remarks  
- If your control class derives from [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638), this method calls [CFirePropNotifyEvent::FireOnRequestEdit](CFirePropNotifyEvent-class.md#CFirePropNotifyEvent__FireOnRequestEdit) to notify all connected `IPropertyNotifySink` interfaces that the specified control property is about to change. If your control class does not derive from `IPropertyNotifySink`, this method returns `S_OK`.  
+ If your control class derives from [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638), this method calls [CFirePropNotifyEvent::FireOnRequestEdit](cfirepropnotifyevent-class.md#cfirepropnotifyevent__fireonrequestedit) to notify all connected `IPropertyNotifySink` interfaces that the specified control property is about to change. If your control class does not derive from `IPropertyNotifySink`, this method returns `S_OK`.  
   
  This method is safe to call even if your control doesn't support connection points.  
   
 ### Example  
- [!code-cpp[NVC_ATL_COM#18](../../atl/codesnippet/CPP/ccomcontrol-class_4.cpp)]  
+ [!code-cpp[NVC_ATL_COM#18](../../atl/codesnippet/cpp/ccomcontrol-class_4.cpp)]  
   
 ##  <a name="ccomcontrol__messagebox"></a>  CComControl::MessageBox  
  Call this method to create, display, and operate a message box.  

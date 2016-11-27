@@ -48,7 +48,7 @@ The Microsoft Foundation Class Library defines a number of standard command and 
 > [!NOTE]
 >  The header file Afxres.h is indirectly included in Afxwin.h. You must explicitly include the following statement in your application's resource script (.rc) file:  
   
- [!code-cpp[NVC_MFC_Utilities#47](../../mfc/codesnippet/CPP/standard-command-and-window-ids_1.h)]  
+ [!code-cpp[NVC_MFC_Utilities#47](../../mfc/codesnippet/cpp/standard-command-and-window-ids_1.h)]  
   
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

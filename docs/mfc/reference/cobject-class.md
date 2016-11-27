@@ -120,7 +120,7 @@ virtual void AssertValid() const;
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all `CObject` examples.  
   
- [!code-cpp[NVC_MFCCObjectSample#7](../../mfc/codesnippet/CPP/cobject-class_1.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#7](../../mfc/codesnippet/cpp/cobject-class_1.cpp)]  
   
  For another example, see [AfxDoForAllObjects]--brokenlink--(../Topic/not%20found.md#afxdoforallobjects).  
   
@@ -148,7 +148,7 @@ CObject(const CObject& objectSrc);
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in the `CObject` examples.  
   
- [!code-cpp[NVC_MFCCObjectSample#8](../../mfc/codesnippet/CPP/cobject-class_2.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#8](../../mfc/codesnippet/cpp/cobject-class_2.cpp)]  
   
 ##  <a name="cobject__dump"></a>  CObject::Dump  
  Dumps the contents of your object to a [CDumpContext](../../mfc/reference/cdumpcontext-class.md) object.  
@@ -180,7 +180,7 @@ virtual void Dump(CDumpContext& dc) const;
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all `CObject` examples.  
   
- [!code-cpp[NVC_MFCCObjectSample#9](../../mfc/codesnippet/CPP/cobject-class_3.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#9](../../mfc/codesnippet/cpp/cobject-class_3.cpp)]  
   
 ##  <a name="cobject__getruntimeclass"></a>  CObject::GetRuntimeClass  
  Returns the `CRuntimeClass` structure corresponding to this object's class.  
@@ -214,7 +214,7 @@ virtual CRuntimeClass* GetRuntimeClass() const;
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all `CObject` examples.  
   
- [!code-cpp[NVC_MFCCObjectSample#10](../../mfc/codesnippet/CPP/cobject-class_4.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#10](../../mfc/codesnippet/cpp/cobject-class_4.cpp)]  
   
 ##  <a name="cobject__iskindof"></a>  CObject::IsKindOf  
  Tests this object's relationship to a given class.  
@@ -240,7 +240,7 @@ BOOL IsKindOf(const CRuntimeClass* pClass) const;
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all `CObject` examples.  
   
- [!code-cpp[NVC_MFCCObjectSample#11](../../mfc/codesnippet/CPP/cobject-class_5.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#11](../../mfc/codesnippet/cpp/cobject-class_5.cpp)]  
   
 ##  <a name="cobject__isserializable"></a>  CObject::IsSerializable  
  Tests whether this object is eligible for serialization.  
@@ -263,7 +263,7 @@ BOOL IsSerializable() const;
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all `CObject` examples.  
   
- [!code-cpp[NVC_MFCCObjectSample#12](../../mfc/codesnippet/CPP/cobject-class_6.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#12](../../mfc/codesnippet/cpp/cobject-class_6.cpp)]  
   
 ##  <a name="cobject__operator_delete"></a>  CObject::operator delete  
  For the Release version of the library, operator **delete** frees the memory allocated by operator **new**.  
@@ -289,7 +289,7 @@ void PASCAL operator delete(
   
  If you use the code line  
   
- [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/CPP/cobject-class_7.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/cobject-class_7.cpp)]  
   
  before any of your implementations in a .CPP file, then the third version of **delete** will be used, storing the filename and line number in the allocated block for later reporting. You do not have to worry about supplying the extra parameters; a macro takes care of that for you.  
   
@@ -300,7 +300,7 @@ void PASCAL operator delete(
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in the `CObject` examples.  
   
- [!code-cpp[NVC_MFCCObjectSample#15](../../mfc/codesnippet/CPP/cobject-class_8.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#15](../../mfc/codesnippet/cpp/cobject-class_8.cpp)]  
   
 ##  <a name="cobject__operator_new"></a>  CObject::operator new  
  For the Release version of the library, operator **new** performs an optimal memory allocation in a manner similar to `malloc`.  
@@ -326,7 +326,7 @@ void* PASCAL operator new(
   
  If you use the code line  
   
- [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/CPP/cobject-class_7.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/cobject-class_7.cpp)]  
   
  before any of your implementations in a .CPP file, then the second version of **new** will be used, storing the filename and line number in the allocated block for later reporting. You do not have to worry about supplying the extra parameters; a macro takes care of that for you.  
   
@@ -338,7 +338,7 @@ void* PASCAL operator new(
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in the `CObject` examples.  
   
- [!code-cpp[NVC_MFCCObjectSample#16](../../mfc/codesnippet/CPP/cobject-class_9.h)]  
+ [!code-cpp[NVC_MFCCObjectSample#16](../../mfc/codesnippet/cpp/cobject-class_9.h)]  
   
 ##  <a name="cobject__serialize"></a>  CObject::Serialize  
  Reads or writes this object from or to an archive.  
@@ -365,7 +365,7 @@ virtual void Serialize(CArchive& ar);
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all `CObject` examples.  
   
- [!code-cpp[NVC_MFCCObjectSample#13](../../mfc/codesnippet/CPP/cobject-class_10.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#13](../../mfc/codesnippet/cpp/cobject-class_10.cpp)]  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)

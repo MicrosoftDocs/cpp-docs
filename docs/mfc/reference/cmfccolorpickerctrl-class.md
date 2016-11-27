@@ -82,7 +82,7 @@ class CMFCColorPickerCtrl : public CButton
   
  The following illustration depicts several `CMFCColorPickerCtrl` objects.  
   
- ![CMFCColorPickerCtrl dialog box](../../mfc/reference/media/colorpicker.png "ColorPicker")  
+ ![CMFCColorPickerCtrl dialog box](../../mfc/reference/media/colorpicker.png "colorpicker")  
   
  The `CMFCColorPickerCtrl` supports two pairs of styles. The HEX and HEX_GREYSCALE styles are appropriate for standard color selection. The PICKER and LUMINANCE styles are appropriate for custom color selection.  
   
@@ -97,8 +97,8 @@ class CMFCColorPickerCtrl : public CButton
 ## Example  
  The following example demonstrates how to configure a `CMFCColorPickerCtrl` object by using various methods in the `CMFCColorPickerCtrl` class. The example demonstrates how to set the type of the picker control, and how to set its color, hue, luminance, and saturation. The example is part of the [New Controls sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_NewControls#4](../../mfc/reference/codesnippet/CPP/cmfccolorpickerctrl-class_1.h)]  
-[!code-cpp[NVC_MFC_NewControls#5](../../mfc/reference/codesnippet/CPP/cmfccolorpickerctrl-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_NewControls#4](../../mfc/reference/codesnippet/cpp/cmfccolorpickerctrl-class_1.h)]  
+[!code-cpp[NVC_MFC_NewControls#5](../../mfc/reference/codesnippet/cpp/cmfccolorpickerctrl-class_2.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

@@ -124,7 +124,7 @@ CMapStringToOb(INT_PTR nBlockSize = 10);
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**MapWordToPtr( INT_PTR** `nBlockSize` **= 10 );**|  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#63](../../mfc/codesnippet/CPP/cmapstringtoob-class_1.cpp)]  
+ [!code-cpp[NVC_MFCCollections#63](../../mfc/codesnippet/cpp/cmapstringtoob-class_1.cpp)]  
   
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
@@ -155,7 +155,7 @@ INT_PTR GetCount() const;
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#64](../../mfc/codesnippet/CPP/cmapstringtoob-class_2.cpp)]  
+ [!code-cpp[NVC_MFCCollections#64](../../mfc/codesnippet/cpp/cmapstringtoob-class_2.cpp)]  
   
 ##  <a name="cmapstringtoob__gethashtablesize"></a>  CMapStringToOb::GetHashTableSize  
  Determines the current number of elements in the hash table.  
@@ -210,7 +210,7 @@ void GetNextAssoc(
   
  For the *rValue* parameter, be sure to cast your object type to **CObject\*&**, which is what the compiler requires, as shown in the following example:  
   
- [!code-cpp[NVC_MFCCollections#65](../../mfc/codesnippet/CPP/cmapstringtoob-class_3.cpp)]  
+ [!code-cpp[NVC_MFCCollections#65](../../mfc/codesnippet/cpp/cmapstringtoob-class_3.cpp)]  
   
  This is not true of **GetNextAssoc** for maps based on templates.  
   
@@ -228,7 +228,7 @@ void GetNextAssoc(
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#66](../../mfc/codesnippet/CPP/cmapstringtoob-class_4.cpp)]  
+ [!code-cpp[NVC_MFCCollections#66](../../mfc/codesnippet/cpp/cmapstringtoob-class_4.cpp)]  
   
  The results from this program are as follows:  
   
@@ -267,7 +267,7 @@ INT_PTR GetSize() const;
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**INT_PTR GetSize( ) const;**|  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#67](../../mfc/codesnippet/CPP/cmapstringtoob-class_5.cpp)]  
+ [!code-cpp[NVC_MFCCollections#67](../../mfc/codesnippet/cpp/cmapstringtoob-class_5.cpp)]  
   
 ##  <a name="cmapstringtoob__getstartposition"></a>  CMapStringToOb::GetStartPosition  
  Starts a map iteration by returning a **POSITION** value that can be passed to a `GetNextAssoc` call.  
@@ -421,7 +421,7 @@ BOOL Lookup(
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#68](../../mfc/codesnippet/CPP/cmapstringtoob-class_6.cpp)]  
+ [!code-cpp[NVC_MFCCollections#68](../../mfc/codesnippet/cpp/cmapstringtoob-class_6.cpp)]  
   
 ##  <a name="cmapstringtoob__lookupkey"></a>  CMapStringToOb::LookupKey  
  Returns a reference to the key associated with the specified key value.  
@@ -458,7 +458,7 @@ BOOL LookupKey(
  A convenient substitute for the `SetAt` member function.  
   
 ```  
-CObject*& operator[ ](LPCTSTR key);
+CObject*& operator[ ](lpctstr key);
 ```  
   
 ### Return Value  
@@ -475,15 +475,15 @@ CObject*& operator[ ](LPCTSTR key);
 |-----------|---------------------|  
 |[CMapPtrToPtr](../../mfc/reference/cmapptrtoptr-class.md)|**void\*& operator[](void\*** `key` **\);**|  
 |[CMapPtrToWord](../../mfc/reference/cmapptrtoword-class.md)|**WORD& operator[](void\*** `key` **\);**|  
-|[CMapStringToPtr](../../mfc/reference/cmapstringtoptr-class.md)|**void\*& operator[](LPCTSTR** `key` **\);**|  
-|[CMapStringToString](../../mfc/reference/cmapstringtostring-class.md)|**CString& operator[](LPCTSTR** `key` **\);**|  
-|[CMapWordToOb](../../mfc/reference/cmapwordtoob-class.md)|**CObject\*& operator[](WORD** `key` **\);**|  
-|[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**void\*& operator[](WORD** `key` **\);**|  
+|[CMapStringToPtr](../../mfc/reference/cmapstringtoptr-class.md)|**void\*& operator[](lpctstr** `key` **\);**|  
+|[CMapStringToString](../../mfc/reference/cmapstringtostring-class.md)|**CString& operator[](lpctstr** `key` **\);**|  
+|[CMapWordToOb](../../mfc/reference/cmapwordtoob-class.md)|**CObject\*& operator[](word** `key` **\);**|  
+|[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**void\*& operator[](word** `key` **\);**|  
   
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#72](../../mfc/codesnippet/CPP/cmapstringtoob-class_7.cpp)]  
+ [!code-cpp[NVC_MFCCollections#72](../../mfc/codesnippet/cpp/cmapstringtoob-class_7.cpp)]  
   
  The results from this program are as follows:  
   
@@ -519,7 +519,7 @@ void RemoveAll();
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#69](../../mfc/codesnippet/CPP/cmapstringtoob-class_8.cpp)]  
+ [!code-cpp[NVC_MFCCollections#69](../../mfc/codesnippet/cpp/cmapstringtoob-class_8.cpp)]  
   
 ##  <a name="cmapstringtoob__removekey"></a>  CMapStringToOb::RemoveKey  
  Looks up the map entry corresponding to the supplied key; then, if the key is found, removes the entry.  
@@ -552,7 +552,7 @@ BOOL RemoveKey(LPCTSTR key);
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#70](../../mfc/codesnippet/CPP/cmapstringtoob-class_9.cpp)]  
+ [!code-cpp[NVC_MFCCollections#70](../../mfc/codesnippet/cpp/cmapstringtoob-class_9.cpp)]  
   
  The results from this program are as follows:  
   
@@ -597,7 +597,7 @@ void SetAt(
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#71](../../mfc/codesnippet/CPP/cmapstringtoob-class_10.cpp)]  
+ [!code-cpp[NVC_MFCCollections#71](../../mfc/codesnippet/cpp/cmapstringtoob-class_10.cpp)]  
   
  The results from this program are as follows:  
   

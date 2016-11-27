@@ -106,7 +106,7 @@ class CMFCPropertySheet : public CPropertySheet
   
  The following illustration depicts a property sheet that is in the style of a tree control.  
   
- ![Peroperty Tree](../../mfc/reference/media/proptree.png "PropTree")  
+ ![Peroperty Tree](../../mfc/reference/media/proptree.png "proptree")  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

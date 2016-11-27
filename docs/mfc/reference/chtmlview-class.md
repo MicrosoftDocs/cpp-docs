@@ -898,7 +898,7 @@ void Navigate2(
  Applies to Internet Explorer and WebBrowser.  
   
 ### Example  
- [!code-cpp[NVC_MFCHtmlHttp#7](../../mfc/reference/codesnippet/CPP/chtmlview-class_1.cpp)]  
+ [!code-cpp[NVC_MFCHtmlHttp#7](../../mfc/reference/codesnippet/cpp/chtmlview-class_1.cpp)]  
   
 ##  <a name="chtmlview__onbeforenavigate2"></a>  CHtmlView::OnBeforeNavigate2  
  This member function is called by the framework to cause an event to fire before a navigation occurs in the web browser.  

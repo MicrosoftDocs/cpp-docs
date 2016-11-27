@@ -534,7 +534,7 @@ BOOL Arc(
  The actual starting point of the arc is the point at which a ray drawn from the center of the bounding rectangle through the specified starting point intersects the ellipse. The actual ending point of the arc is the point at which a ray drawn from the center of the bounding rectangle through the specified ending point intersects the ellipse. The arc is drawn in a counterclockwise direction. Since an arc is not a closed figure, it is not filled. Both the width and height of the rectangle must be greater than 2 units and less than 32,767 units.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#29](../../mfc/codesnippet/CPP/cdc-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#29](../../mfc/codesnippet/cpp/cdc-class_1.cpp)]  
   
 ##  <a name="cdc__arcto"></a>  CDC::ArcTo  
  Draws an elliptical arc.  
@@ -632,7 +632,7 @@ BOOL BeginPath();
  See [BeginPath](http://msdn.microsoft.com/library/windows/desktop/dd183363) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of the drawing functions that define points in a path.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#30](../../mfc/codesnippet/CPP/cdc-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#30](../../mfc/codesnippet/cpp/cdc-class_2.cpp)]  
   
 ##  <a name="cdc__bitblt"></a>  CDC::BitBlt  
  Copies a bitmap from the source device context to this current device context.  
@@ -766,7 +766,7 @@ BOOL Chord(
  The figure drawn by the `Chord` function extends up to, but does not include the right and bottom coordinates. This means that the height of the figure is `y2` – `y1` and the width of the figure is `x2` – `x1`.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#31](../../mfc/codesnippet/CPP/cdc-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#31](../../mfc/codesnippet/cpp/cdc-class_3.cpp)]  
   
 ##  <a name="cdc__closefigure"></a>  CDC::CloseFigure  
  Closes an open figure in a path.  
@@ -805,7 +805,7 @@ BOOL CreateCompatibleDC(CDC* pDC);
  This function can only be used to create compatible device contexts for devices that support raster operations. See the [CDC::BitBlt](#cdc__bitblt) member function for information regarding bit-block transfers between device contexts. To determine whether a device context supports raster operations, see the **RC_BITBLT** raster capability in the member function `CDC::GetDeviceCaps`.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#32](../../mfc/codesnippet/CPP/cdc-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDocView#32](../../mfc/codesnippet/cpp/cdc-class_4.cpp)]  
   
 ##  <a name="cdc__createdc"></a>  CDC::CreateDC  
  Creates a device context for the specified device.  
@@ -1008,7 +1008,7 @@ void Draw3dRect(
  The rectangle will be drawn with the top and left sides in the color specified by *clrTopLeft* and the bottom and right sides in the color specified by `clrBottomRight`.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#33](../../mfc/codesnippet/CPP/cdc-class_5.cpp)]  
+ [!code-cpp[NVC_MFCDocView#33](../../mfc/codesnippet/cpp/cdc-class_5.cpp)]  
   
 ##  <a name="cdc__drawdragrect"></a>  CDC::DrawDragRect  
  Call this member function repeatedly to redraw a drag rectangle.  
@@ -1190,7 +1190,7 @@ BOOL DrawFrameControl(
 ### Example  
  This code draws the size gripper in the bottom-right corner of your window. It's appropriate for the `OnPaint` handler of a dialog box, which has no styles and normally doesn't contain other controls (like a status bar) that may give it a size gripper.  
   
- [!code-cpp[NVC_MFCDocView#34](../../mfc/codesnippet/CPP/cdc-class_6.cpp)]  
+ [!code-cpp[NVC_MFCDocView#34](../../mfc/codesnippet/cpp/cdc-class_6.cpp)]  
   
 ##  <a name="cdc__drawicon"></a>  CDC::DrawIcon  
  Draws an icon on the device represented by the current `CDC` object.  
@@ -1583,7 +1583,7 @@ int EnumObjects(
  Also note that all callback functions must trap Microsoft Foundation exceptions before returning to Windows, since exceptions cannot be thrown across callback boundaries. For more information about exceptions, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#35](../../mfc/codesnippet/CPP/cdc-class_7.cpp)]  
+ [!code-cpp[NVC_MFCDocView#35](../../mfc/codesnippet/cpp/cdc-class_7.cpp)]  
   
 ##  <a name="cdc__escape"></a>  CDC::Escape  
  This member function is practically obsolete for Win32 programming.  
@@ -2683,7 +2683,7 @@ static CBrush* PASCAL GetHalftoneBrush();
 ### Remarks  
  A halftone brush shows pixels that are alternately foreground and background colors to create a dithered pattern. The following is an example of a dithered pattern created by a halftone brush.  
   
- ![Detail of a dithered pen stroke](../../mfc/reference/media/vc318s1.gif "vc318S1")  
+ ![Detail of a dithered pen stroke](../../mfc/reference/media/vc318s1.gif "vc318s1")  
   
 ##  <a name="cdc__getkerningpairs"></a>  CDC::GetKerningPairs  
  Retrieves the character kerning pairs for the font that is currently selected in the specified device context.  
@@ -3624,7 +3624,7 @@ void InvertRect(LPCRECT lpRect);
  If the rectangle is empty, nothing is drawn.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#36](../../mfc/codesnippet/CPP/cdc-class_8.cpp)]  
+ [!code-cpp[NVC_MFCDocView#36](../../mfc/codesnippet/cpp/cdc-class_8.cpp)]  
   
 ##  <a name="cdc__invertrgn"></a>  CDC::InvertRgn  
  Inverts the colors in the region specified by `pRgn`.  
@@ -4096,7 +4096,7 @@ BOOL Pie(
  The figure drawn by this function extends up to but does not include the right and bottom coordinates. This means that the height of the figure is `y2` – `y1` and the width of the figure is `x2` – `x1`. Both the width and the height of the bounding rectangle must be greater than 2 units and less than 32,767 units.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#37](../../mfc/codesnippet/CPP/cdc-class_9.cpp)]  
+ [!code-cpp[NVC_MFCDocView#37](../../mfc/codesnippet/cpp/cdc-class_9.cpp)]  
   
 ##  <a name="cdc__playmetafile"></a>  CDC::PlayMetaFile  
  Plays the contents of the specified metafile on the device context.  
@@ -4312,7 +4312,7 @@ BOOL Polygon(
  The current polygon-filling mode can be retrieved or set by using the `GetPolyFillMode` and `SetPolyFillMode` member functions.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#38](../../mfc/codesnippet/CPP/cdc-class_10.cpp)]  
+ [!code-cpp[NVC_MFCDocView#38](../../mfc/codesnippet/cpp/cdc-class_10.cpp)]  
   
 ##  <a name="cdc__polyline"></a>  CDC::Polyline  
  Draws a set of line segments connecting the points specified by `lpPoints`.  
@@ -4516,7 +4516,7 @@ BOOL Rectangle(
  The rectangle extends up to, but does not include, the right and bottom coordinates. This means that the height of the rectangle is `y2` – `y1` and the width of the rectangle is `x2` – `x1`. Both the width and the height of a rectangle must be greater than 2 units and less than 32,767 units.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#39](../../mfc/codesnippet/CPP/cdc-class_11.cpp)]  
+ [!code-cpp[NVC_MFCDocView#39](../../mfc/codesnippet/cpp/cdc-class_11.cpp)]  
   
 ##  <a name="cdc__rectvisible"></a>  CDC::RectVisible  
  Determines whether any part of the given rectangle lies within the clipping region of the display context.  
@@ -4648,7 +4648,7 @@ BOOL RoundRect(
  The figure this function draws extends up to but does not include the right and bottom coordinates. This means that the height of the figure is `y2` – `y1` and the width of the figure is `x2` – `x1`. Both the height and the width of the bounding rectangle must be greater than 2 units and less than 32,767 units.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#40](../../mfc/codesnippet/CPP/cdc-class_12.cpp)]  
+ [!code-cpp[NVC_MFCDocView#40](../../mfc/codesnippet/cpp/cdc-class_12.cpp)]  
   
 ##  <a name="cdc__savedc"></a>  CDC::SaveDC  
  Saves the current state of the device context by copying state information (such as clipping region, selected objects, and mapping mode) to a context stack maintained by Windows.  
@@ -5866,7 +5866,7 @@ int StartDoc(LPCTSTR lpszDocName);
 ### Example  
  This code fragment gets the default printer, opens a print job, and spools one page with "Hello, World!" on it. Because the text printed by this code isn't scaled to the printer's logical units, the output text may be in such small letters that the result is unreadable. The CDC scaling functions, such as `SetMapMode`, `SetViewportOrg`, and `SetWindowExt`, can be used to fix the scaling.  
   
- [!code-cpp[NVC_MFCDocView#41](../../mfc/codesnippet/CPP/cdc-class_13.cpp)]  
+ [!code-cpp[NVC_MFCDocView#41](../../mfc/codesnippet/cpp/cdc-class_13.cpp)]  
   
 ##  <a name="cdc__startpage"></a>  CDC::StartPage  
  Call this member function to prepare the printer driver to receive data.  

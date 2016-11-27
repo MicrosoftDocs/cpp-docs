@@ -120,7 +120,7 @@ BOOL BrowseForFolder(
 ### Example  
  The following example demonstrates how to retrieve a reference to a `CShellManager` object by using the `CWinAppEx::GetShellManager` method and how to use the `BrowseForFolder` method. This code snippet is part of the [Explorer sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_Explorer#6](../../mfc/reference/codesnippet/CPP/cshellmanager-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_Explorer#6](../../mfc/reference/codesnippet/cpp/cshellmanager-class_1.cpp)]  
   
 ##  <a name="cshellmanager__concatenateitem"></a>  CShellManager::ConcatenateItem  
  Creates a new list containing two PIDLs.  
