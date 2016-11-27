@@ -123,7 +123,7 @@ CComObjectStack();
 ```  
   
 ### Remarks  
- Frees all allocated resources and calls [FinalRelease](../Topic/CComObjectRootEx::FinalRelease.md).  
+ Frees all allocated resources and calls [FinalRelease](CComObjectRootEx-class.md#CComObjectRootEx__FinalRelease).  
   
 ##  <a name="ccomobjectstack__m_hresfinalconstruct"></a>  CComObjectStack::m_hResFinalConstruct  
  Contains the `HRESULT` returned from calling `FinalConstruct` during construction of the `CComObjectStack` object.  

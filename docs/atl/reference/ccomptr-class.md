@@ -59,7 +59,7 @@ template<class T>  class CComPtr
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComPtr::operator =](#ccomptr__operator__eq)|Assigns a pointer to the member pointer.|  
+|[CComPtr::operator =](#ccomptr__operator_eq)|Assigns a pointer to the member pointer.|  
   
 ## Remarks  
  ATL uses `CComPtr` and [CComQIPtr](../../atl/reference/ccomqiptr-class.md) to manage COM interface pointers. Both are derived from [CComPtrBase](../../atl/reference/ccomptrbase-class.md), and both perform automatic reference counting.  
@@ -96,7 +96,7 @@ CComPtr (const CComPtr<T>& lp) throw ();
  `T`  
  A COM interface.  
   
-##  <a name="ccomptr__operator__eq"></a>  CComPtr::operator =  
+##  <a name="ccomptr__operator_eq"></a>  CComPtr::operator =  
  Assignment operator.  
   
 ```

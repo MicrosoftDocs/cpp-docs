@@ -79,8 +79,8 @@ template <class T, class TEqual = CSimpleArrayEqualHelper<T>>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleArray::operator](../Topic/CSimpleArray::operator.md)|Retrieves an element from the array.|  
-|[CSimpleArray::operator =](#csimplearray__operator__eq)|Assignment operator.|  
+|[CSimpleArray::operator](CSimpleArray-class.md#CSimpleArray__operator)|Retrieves an element from the array.|  
+|[CSimpleArray::operator =](#csimplearray__operator_eq)|Assignment operator.|  
   
 ## Remarks  
  `CSimpleArray` provides methods for creating and managing a simple array, of any given type `T`.  
@@ -176,7 +176,7 @@ int GetSize() const;
 ### Return Value  
  Returns the number of elements stored in the array.  
   
-##  <a name="csimplearray__operator__at"></a>  CSimpleArray::operator []  
+##  <a name="csimplearray__operator_at"></a>  CSimpleArray::operator []  
  Retrieves an element from the array.  
   
 ```
@@ -193,7 +193,7 @@ T& operator[](int   nIndex);
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#89](../../atl/codesnippet/CPP/csimplearray-class_4.cpp)]  
   
-##  <a name="csimplearray__operator__eq"></a>  CSimpleArray::operator =  
+##  <a name="csimplearray__operator_eq"></a>  CSimpleArray::operator =  
  Assignment operator.  
   
 ```

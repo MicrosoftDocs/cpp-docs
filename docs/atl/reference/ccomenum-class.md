@@ -106,6 +106,6 @@ template <class Base,
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)   
- [CComObjectThreadModel](../Topic/CComObjectThreadModel.md)   
+ [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)   
  [CComEnumImpl Class](../../atl/reference/ccomenumimpl-class.md)   
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)

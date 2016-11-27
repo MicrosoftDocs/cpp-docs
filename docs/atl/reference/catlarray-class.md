@@ -81,7 +81,7 @@ template<typename E,  class ETraits = CElementTraits<E>>  class CAtlArray
   
 |||  
 |-|-|  
-|[operator &#91;&#93;](../Topic/CAtlArray::operator.md)|Call this operator to return a reference to an element in the array.|  
+|[operator &#91;&#93;](CAtlArray-class.md#CAtlArray__operator)|Call this operator to return a reference to an element in the array.|  
   
 ### Typedefs  
   
@@ -349,7 +349,7 @@ bool IsEmpty() const throw();
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#10](../../atl/codesnippet/CPP/catlarray-class_10.cpp)]  
   
-##  <a name="catlarray__operator__at"></a>  CAtlArray::operator []  
+##  <a name="catlarray__operator_at"></a>  CAtlArray::operator []  
  Call this operator to return a reference to an element in the array.  
   
 ```

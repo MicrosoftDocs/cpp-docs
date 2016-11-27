@@ -78,8 +78,8 @@ template <class T,  class Allocator = CCRTAllocator> class CHeapPtrBase
 |Name|Description|  
 |----------|-----------------|  
 |[CHeapPtrBase::operator T*](#cheapptrbase__operator_t_star)|The cast operator.|  
-|[CHeapPtrBase::operator &](../Topic/CHeapPtrBase::operator%20&.md)|The & operator.|  
-|[CHeapPtrBase::operator ->](../Topic/CHeapPtrBase::operator%20-%3E.md)|The pointer-to-member operator.|  
+|[CHeapPtrBase::operator &](#cheapptrbase__operator_amp)|The & operator.|  
+|[CHeapPtrBase::operator ->](#cheapptrbase__operator_ptr)|The pointer-to-member operator.|  
   
 ### Public Data Members  
   
@@ -169,7 +169,7 @@ T* m_pData;
 ### Remarks  
  This member variable holds the pointer information.  
   
-##  <a name="cheapptrbase__operator__amp_"></a>  CHeapPtrBase::operator &amp;  
+##  <a name="cheapptrbase__operator_amp"></a>  CHeapPtrBase::operator &amp;  
  The & operator.  
   
 ```
@@ -179,7 +179,7 @@ T** operator&() throw();
 ### Return Value  
  Returns the address of the object pointed to by the `CHeapPtrBase` object.  
   
-##  <a name="cheapptrbase__operator_-_gt_"></a>  CHeapPtrBase::operator -&gt;  
+##  <a name="cheapptrbase__operator_ptr"></a>  CHeapPtrBase::operator -&gt;  
  The pointer-to-member operator.  
   
 ```

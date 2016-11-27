@@ -186,7 +186,7 @@ STDMETHOD(QueryInterface)(REFIID iid,
  A standard `HRESULT` value.  
   
 ### Remarks  
- If the requested interface is **IUnknown**, returns a pointer to the `CComCachedTearOffObject`'s own **IUnknown** and increments the reference count. Otherwise, queries for the interface on your tear-off class using the [InternalQueryInterface](../Topic/CComObjectRootEx::InternalQueryInterface.md) method inherited from `CComObjectRootEx`.  
+ If the requested interface is **IUnknown**, returns a pointer to the `CComCachedTearOffObject`'s own **IUnknown** and increments the reference count. Otherwise, queries for the interface on your tear-off class using the [InternalQueryInterface](CComObjectRootEx-class.md#CComObjectRootEx__InternalQueryInterface) method inherited from `CComObjectRootEx`.  
   
 ##  <a name="ccomcachedtearoffobject__release"></a>  CComCachedTearOffObject::Release  
  Decrements the reference count by 1 and, if the reference count is 0, deletes the `CComCachedTearOffObject` object.  

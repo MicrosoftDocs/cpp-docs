@@ -70,7 +70,7 @@ class CSacl : public CAcl
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSacl::operator =](#csacl__operator__eq)|Assignment operator.|  
+|[CSacl::operator =](#csacl__operator_eq)|Assignment operator.|  
   
 ## Remarks  
  A SACL contains access-control entries (ACEs) that specify the types of access attempts that generate audit records in the security event log of a domain controller. Note that a SACL generates log entries only on the domain controller where the access attempt occurred, not on every domain controller that contains a replica of the object.  
@@ -175,7 +175,7 @@ UINT GetAceCount() const throw();
 ### Return Value  
  Returns the number of ACEs contained in the `CSacl` object.  
   
-##  <a name="csacl__operator__eq"></a>  CSacl::operator =  
+##  <a name="csacl__operator_eq"></a>  CSacl::operator =  
  Assignment operator.  
   
 ```

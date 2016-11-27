@@ -209,7 +209,7 @@ class CWindow
 |Name|Description|  
 |----------|-----------------|  
 |[CWindow::operator HWND](#cwindow__operator_hwnd)|Converts the `CWindow` object to an `HWND`.|  
-|[CWindow::operator =](#cwindow__operator__eq)|Assigns an `HWND` to the `CWindow` object.|  
+|[CWindow::operator =](#cwindow__operator_eq)|Assigns an `HWND` to the `CWindow` object.|  
   
 ### Public Data Members  
   
@@ -1566,7 +1566,7 @@ BOOL OpenClipboard() throw();
 ```operator HWND() const throw();
 ```  
   
-##  <a name="cwindow__operator__eq"></a>  CWindow::operator =  
+##  <a name="cwindow__operator_eq"></a>  CWindow::operator =  
  Assigns an `HWND` to the `CWindow` object by setting the [m_hWnd](#cwindow__m_hwnd) member to `hWnd`.  
   
 ```

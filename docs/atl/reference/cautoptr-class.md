@@ -73,8 +73,8 @@ template <typename   T>
 |Name|Description|  
 |----------|-----------------|  
 |[CAutoPtr::operator T*](#cautoptr__operator_t_star)|The cast operator.|  
-|[CAutoPtr::operator =](#cautoptr__operator__eq)|The assignment operator.|  
-|[CAutoPtr::operator ->](../Topic/CAutoPtr::operator%20-%3E.md)|The pointer-to-member operator.|  
+|[CAutoPtr::operator =](#cautoptr__operator_eq)|The assignment operator.|  
+|[CAutoPtr::operator ->](#cautoptr__operator_ptr)|The pointer-to-member operator.|  
   
 ### Public Data Members  
   
@@ -189,7 +189,7 @@ T* m_p;
 ### Remarks  
  This member variable holds the pointer information.  
   
-##  <a name="cautoptr__operator__eq"></a>  CAutoPtr::operator =  
+##  <a name="cautoptr__operator_eq"></a>  CAutoPtr::operator =  
  The assignment operator.  
   
 ```
@@ -216,7 +216,7 @@ CAutoPtr<T>& operator= (CAutoPtr<TSrc>& p);
 ### Example  
  See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md).  
   
-##  <a name="cautoptr__operator_-_gt_"></a>  CAutoPtr::operator -&gt;  
+##  <a name="cautoptr__operator_-_gt"></a>  CAutoPtr::operator -&gt;  
  The pointer-to-member operator.  
   
 ```

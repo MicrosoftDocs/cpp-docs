@@ -88,8 +88,8 @@ class CComSafeArray
 |Name|Description|  
 |----------|-----------------|  
 |[CComSafeArray::operator LPSAFEARRAY](#ccomsafearray__operator_lpsafearray)|Casts a value to a **SAFEARRAY** pointer.|  
-|[CComSafeArray::operator](../Topic/CComSafeArray::operator.md)|Retrieves an element from the array.|  
-|[CComSafeArray::operator =](#ccomsafearray__operator__eq)|Assignment operator.|  
+|[CComSafeArray::operator](CComSafeArray-class.md#CComSafeArray__operator)|Retrieves an element from the array.|  
+|[CComSafeArray::operator =](#ccomsafearray__operator_eq)|Assignment operator.|  
   
 ### Public Data Members  
   
@@ -514,7 +514,7 @@ HRESULT MultiDimSetAt(
 ### Remarks  
  This is a multidimensional version of [CComSafeArray::SetAt](#ccomsafearray__setat).  
   
-##  <a name="ccomsafearray__operator__at"></a>  CComSafeArray::operator []  
+##  <a name="ccomsafearray__operator_at"></a>  CComSafeArray::operator []  
  Retrieves an element from the array.  
   
 ```
@@ -533,7 +533,7 @@ T& operator[](LONG   lIndex) const;
 ### Remarks  
  Performs a similar function to [CComSafeArray::GetAt](#ccomsafearray__getat), however this operator only works with single-dimensional arrays.  
   
-##  <a name="ccomsafearray__operator__eq"></a>  CComSafeArray::operator =  
+##  <a name="ccomsafearray__operator_eq"></a>  CComSafeArray::operator =  
  Assignment operator.  
   
 ```

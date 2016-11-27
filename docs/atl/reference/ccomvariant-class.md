@@ -289,7 +289,7 @@ ULONG GetSize() const;
   
  The size returned by this method matches the number of bytes used by [CComVariant::WriteToStream](#ccomvariant__writetostream) under successful conditions.  
   
-##  <a name="ccomvariant__operator__eq"></a>  CComVariant::operator =  
+##  <a name="ccomvariant__operator_eq"></a>  CComVariant::operator =  
  Assigns a value and corresponding type to the `CComVariant` object.  
   
 ```
@@ -357,7 +357,7 @@ CComVariant& operator=(const SAFEARRAY* pSrc);
  `cSrc`  
  [in] The char to be assigned to the `CComVariant` object. The type of the `CComVariant` object will be **VT_I1**.  
   
-##  <a name="ccomvariant__operator__eq_eq"></a>  CComVariant::operator ==  
+##  <a name="ccomvariant__operator_eq_eq"></a>  CComVariant::operator ==  
  Indicates whether the `CComVariant` object equals the specified **VARIANT**.  
   
 ```
@@ -369,7 +369,7 @@ bool operator==(const VARIANT& varSrc) const throw();
   
  The operator compares only the value of the variant types. It compares strings, integers, and floating points, but not arrays or records.  
   
-##  <a name="ccomvariant__operator__neq"></a>  CComVariant::operator !=  
+##  <a name="ccomvariant__operator_neq"></a>  CComVariant::operator !=  
  Indicates whether the `CComVariant` object does not equal the specified **VARIANT**.  
   
 ```
@@ -381,7 +381,7 @@ bool operator!=(const VARIANT& varSrc) const throw();
   
  The operator compares only the value of the variant types. It compares strings, integers, and floating points, but not arrays or records.  
   
-##  <a name="ccomvariant__operator__lt_"></a>  CComVariant::operator &lt;  
+##  <a name="ccomvariant__operator_lt"></a>  CComVariant::operator &lt;  
  Indicates whether the `CComVariant` object is less than the specified **VARIANT**.  
   
 ```
@@ -391,7 +391,7 @@ bool operator<(const VARIANT& varSrc) const throw();
 ### Remarks  
  Returns **true** if the value of the `CComVariant` object is less than the value of *varSrc*. Otherwise, **false**. The operator uses the user's default locale to perform the comparison.  
   
-##  <a name="ccomvariant__operator__gt_"></a>  CComVariant::operator &gt;  
+##  <a name="ccomvariant__operator_gt"></a>  CComVariant::operator &gt;  
  Indicates whether the `CComVariant` object is greater than the specified **VARIANT**.  
   
 ```

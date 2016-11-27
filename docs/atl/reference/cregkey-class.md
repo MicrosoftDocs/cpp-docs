@@ -99,7 +99,7 @@ class CRegKey
 |Name|Description|  
 |----------|-----------------|  
 |[CRegKey::operator HKEY](#cregkey__operator_hkey)|Converts a `CRegKey` object to an HKEY.|  
-|[CRegKey::operator =](#cregkey__operator__eq)|Assignment operator.|  
+|[CRegKey::operator =](#cregkey__operator_eq)|Assignment operator.|  
   
 ### Public Data Members  
   
@@ -416,7 +416,7 @@ LONG Open(HKEY hKeyParent,
 ```operator HKEY() const throw();
 ```  
   
-##  <a name="cregkey__operator__eq"></a>  CRegKey::operator =  
+##  <a name="cregkey__operator_eq"></a>  CRegKey::operator =  
  Assignment operator.  
   
 ```

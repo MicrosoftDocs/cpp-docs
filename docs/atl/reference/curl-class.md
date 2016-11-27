@@ -93,7 +93,7 @@ class CUrl
   
 |Name|Description|  
 |----------|-----------------|  
-|[CUrl::operator =](#curl__operator__eq)|Assigns the specified `CUrl` object to the current `CUrl` object.|  
+|[CUrl::operator =](#curl__operator_eq)|Assigns the specified `CUrl` object to the current `CUrl` object.|  
   
 ## Remarks  
  `CUrl` allows you to manipulate the fields of a URL, such as the path or port number. `CUrl` understands URLs of the following form:  
@@ -381,7 +381,7 @@ inline DWORD GetUserNameLength() const throw();
 ### Return Value  
  Returns the user name length.  
   
-##  <a name="curl__operator__eq"></a>  CUrl::operator =  
+##  <a name="curl__operator_eq"></a>  CUrl::operator =  
  Assigns the specified `CUrl` object to the current `CUrl` object.  
   
 ```

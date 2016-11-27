@@ -116,7 +116,7 @@ CComObject();
 ```  
   
 ### Remarks  
- Frees all allocated resources, calls [FinalRelease](../Topic/CComObjectRootEx::FinalRelease.md), and decrements the module lock count.  
+ Frees all allocated resources, calls [FinalRelease](CComObjectRootEx-class.md#CComObjectRootEx__FinalRelease), and decrements the module lock count.  
   
 ##  <a name="ccomobject__createinstance"></a>  CComObject::CreateInstance  
  This static function allows you to create a new **CComObject<**`Base`**>** object, without the overhead of [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  

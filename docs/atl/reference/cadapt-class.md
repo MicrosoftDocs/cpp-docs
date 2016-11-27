@@ -70,8 +70,8 @@ template <class T>  class CAdapt
 |[CAdapt::operator const T&](../Topic/CAdapt::operator%20const%20T&.md)|Returns a `const` reference to `m_T`.|  
 |[CAdapt::operator T&](../Topic/CAdapt::operator%20T&.md)|Returns a reference to `m_T`.|  
 |[CAdapt::operator <](../Topic/CAdapt::operator%20%3C.md)|Compares an object of the adapted type with `m_T`.|  
-|[CAdapt::operator =](#cadapt__operator__eq)|Assigns an object of the adapted type to `m_T`.|  
-|[CAdapt::operator ==](#cadapt__operator__eq_eq)|Compares an object of the adapted type with `m_T`.|  
+|[CAdapt::operator =](#cadapt__operator_eq)|Assigns an object of the adapted type to `m_T`.|  
+|[CAdapt::operator ==](#cadapt__operator_eq_eq)|Compares an object of the adapted type with `m_T`.|  
   
 ### Public Data Members  
   
@@ -118,7 +118,7 @@ T m_T;
 ### Remarks  
  This **public** data member can be accessed directly or indirectly with [operator const T&](../Topic/CAdapt::operator%20const%20T&.md) and [operator T&](../Topic/CAdapt::operator%20T&.md).  
   
-##  <a name="cadapt__operator_const_t_amp_"></a>  CAdapt::operator const T&amp;  
+##  <a name="cadapt__operator_const_t_amp"></a>  CAdapt::operator const T&amp;  
  Returns a **const** reference to the [m_T](#cadapt__m_t) member, allowing the adapter object to be treated as if it were an object of type `T`.  
   
 ```operator const T&() const;
@@ -127,7 +127,7 @@ T m_T;
 ### Return Value  
  A **const** reference to `m_T`.  
   
-##  <a name="cadapt__operator_t_amp_"></a>  CAdapt::operator T&amp;  
+##  <a name="cadapt__operator_t_amp"></a>  CAdapt::operator T&amp;  
  Returns a reference to the [m_T](#cadapt__m_t) member, allowing the adapter object to be treated as if it were an object of type `T`.  
   
 ```operator T&();
@@ -136,7 +136,7 @@ T m_T;
 ### Return Value  
  A reference to `m_T`.  
   
-##  <a name="cadapt__operator__lt_"></a>  CAdapt::operator &lt;  
+##  <a name="cadapt__operator_lt"></a>  CAdapt::operator &lt;  
  Compares an object of the adapted type with [m_T](#cadapt__m_t).  
   
 ```
@@ -150,7 +150,7 @@ bool operator<(const T& rSrc) const;
 ### Return Value  
  The result of the comparison between `m_T` and `rSrc`.  
   
-##  <a name="cadapt__operator__eq"></a>  CAdapt::operator =  
+##  <a name="cadapt__operator_eq"></a>  CAdapt::operator =  
  The assignment operator assigns the argument, `rSrc`, to the data member [m_T](#cadapt__m_t) and returns the current adapter object.  
   
 ```
@@ -164,7 +164,7 @@ CAdapt& operator= (const T& rSrc);
 ### Return Value  
  A reference to the current object.  
   
-##  <a name="cadapt__operator__eq_eq"></a>  CAdapt::operator ==  
+##  <a name="cadapt__operator_eq_eq"></a>  CAdapt::operator ==  
  Compares an object of the adapted type with [m_T](#cadapt__m_t).  
   
 ```

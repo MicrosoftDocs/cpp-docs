@@ -77,7 +77,7 @@ class CTokenPrivileges
 |Name|Description|  
 |----------|-----------------|  
 |[CTokenPrivileges::operator const TOKEN_PRIVILEGES *](#ctokenprivileges__operator_const_token_privileges__star)|Casts a value to a pointer to the **TOKEN_PRIVILEGES** structure.|  
-|[CTokenPrivileges::operator =](#ctokenprivileges__operator__eq)|Assignment operator.|  
+|[CTokenPrivileges::operator =](#ctokenprivileges__operator_eq)|Assignment operator.|  
   
 ## Remarks  
  An [access token](http://msdn.microsoft.com/library/windows/desktop/aa374909) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows NT or Windows 2000 system.  
@@ -274,7 +274,7 @@ bool LookupPrivilege(LPCTSTR pszPrivilege,
 ### Return Value  
  Returns true if the attribute is successfully retrieved, false otherwise.  
   
-##  <a name="ctokenprivileges__operator__eq"></a>  CTokenPrivileges::operator =  
+##  <a name="ctokenprivileges__operator_eq"></a>  CTokenPrivileges::operator =  
  Assignment operator.  
   
 ```

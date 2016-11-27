@@ -103,7 +103,7 @@ CComControl();
 ```  
   
 ### Remarks  
- Calls the [CComControlBase](../Topic/CComControlBase::CComControlBase.md) constructor, passing the `m_hWnd` data member inherited through [CWindowImpl](../../atl/reference/cwindowimpl-class.md).  
+ Calls the [CComControlBase](CComControlBase-class.md#CComControlBase__CComControlBase) constructor, passing the `m_hWnd` data member inherited through [CWindowImpl](../../atl/reference/cwindowimpl-class.md).  
   
 ##  <a name="ccomcontrol__controlqueryinterface"></a>  CComControl::ControlQueryInterface  
  Retrieves a pointer to the requested interface.  
@@ -162,7 +162,7 @@ HRESULT FireOnChanged(DISPID dispID);
  One of the standard HRESULT values.  
   
 ### Remarks  
- If your control class derives from [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638), this method calls [CFirePropNotifyEvent::FireOnChanged](../Topic/CFirePropNotifyEvent::FireOnChanged.md) to notify all connected `IPropertyNotifySink` interfaces that the specified control property has changed. If your control class does not derive from `IPropertyNotifySink`, this method returns `S_OK`.  
+ If your control class derives from [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638), this method calls [CFirePropNotifyEvent::FireOnChanged](CFirePropNotifyEvent-class.md#CFirePropNotifyEvent__FireOnChanged) to notify all connected `IPropertyNotifySink` interfaces that the specified control property has changed. If your control class does not derive from `IPropertyNotifySink`, this method returns `S_OK`.  
   
  This method is safe to call even if your control doesn't support connection points.  
   
@@ -184,7 +184,7 @@ HRESULT FireOnRequestEdit(DISPID dispID);
  One of the standard HRESULT values.  
   
 ### Remarks  
- If your control class derives from [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638), this method calls [CFirePropNotifyEvent::FireOnRequestEdit](../Topic/CFirePropNotifyEvent::FireOnRequestEdit.md) to notify all connected `IPropertyNotifySink` interfaces that the specified control property is about to change. If your control class does not derive from `IPropertyNotifySink`, this method returns `S_OK`.  
+ If your control class derives from [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638), this method calls [CFirePropNotifyEvent::FireOnRequestEdit](CFirePropNotifyEvent-class.md#CFirePropNotifyEvent__FireOnRequestEdit) to notify all connected `IPropertyNotifySink` interfaces that the specified control property is about to change. If your control class does not derive from `IPropertyNotifySink`, this method returns `S_OK`.  
   
  This method is safe to call even if your control doesn't support connection points.  
   

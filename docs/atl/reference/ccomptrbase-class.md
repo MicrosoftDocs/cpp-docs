@@ -78,11 +78,11 @@ template <class T> class CComPtrBase
 |Name|Description|  
 |----------|-----------------|  
 |[CComPtrBase::operator T*](#ccomptrbase__operator_t_star)|The cast operator.|  
-|[CComPtrBase::operator !](#ccomptrbase__operator__not)|The NOT operator.|  
+|[CComPtrBase::operator !](#ccomptrbase__operator_not)|The NOT operator.|  
 |[CComPtrBase::operator &](../Topic/CComPtrBase::operator%20&.md)|The & operator.|  
-|[CComPtrBase::operator *](#ccomptrbase__operator__star)|The * operator.|  
+|[CComPtrBase::operator *](#ccomptrbase__operator_star)|The * operator.|  
 |[CComPtrBase::operator \<](../Topic/CComPtrBase::operator%20%3C.md)|The less-than operator.|  
-|[CComPtrBase::operator ==](#ccomptrbase__operator__eq_eq)|The equality operator.|  
+|[CComPtrBase::operator ==](#ccomptrbase__operator_eq_eq)|The equality operator.|  
 |[CComPtrBase::operator ->](../Topic/CComPtrBase::operator%20-%3E.md)|The pointer-to-members operator.|  
   
 ### Public Data Members  
@@ -226,7 +226,7 @@ bool IsEqualObject(IUnknown* pOther) throw();
 ### Return Value  
  Returns true if the objects are identical, false otherwise.  
   
-##  <a name="ccomptrbase__operator__not"></a>  CComPtrBase::operator !  
+##  <a name="ccomptrbase__operator_not"></a>  CComPtrBase::operator !  
  The NOT operator.  
   
 ```
@@ -236,7 +236,7 @@ bool operator!() const throw();
 ### Return Value  
  Returns true if the `CComHeapPtr` pointer is equal to NULL, false otherwise.  
   
-##  <a name="ccomptrbase__operator__amp_"></a>  CComPtrBase::operator &amp;  
+##  <a name="ccomptrbase__operator_amp"></a>  CComPtrBase::operator &amp;  
  The & operator.  
   
 ```
@@ -246,7 +246,7 @@ T** operator&() throw();
 ### Return Value  
  Returns the address of the object pointed to by the `CComPtrBase` object.  
   
-##  <a name="ccomptrbase__operator__star"></a>  CComPtrBase::operator *  
+##  <a name="ccomptrbase__operator_star"></a>  CComPtrBase::operator *  
  The * operator.  
   
 ```
@@ -258,7 +258,7 @@ T& operator*() const throw();
   
  If debug builds, an assertion error will occur if [CComPtrBase::p](#ccomptrbase__p) is not equal to NULL.  
   
-##  <a name="ccomptrbase__operator__eq_eq"></a>  CComPtrBase::operator ==  
+##  <a name="ccomptrbase__operator_eq_eq"></a>  CComPtrBase::operator ==  
  The equality operator.  
   
 ```
@@ -272,7 +272,7 @@ bool operator== (T* pT) const throw();
 ### Return Value  
  Returns true if `CComPtrBase` and *pT* point to the same object, false otherwise.  
   
-##  <a name="ccomptrbase__operator_-_gt_"></a>  CComPtrBase::operator -&gt;  
+##  <a name="ccomptrbase__operator_ptr_"></a>  CComPtrBase::operator -&gt;  
  The pointer-to-member operator.  
   
 ```
@@ -285,7 +285,7 @@ _NoAddRefReleaseOnCComPtr<T>* operator->() const throw();
 ### Remarks  
  Use this operator to call a method in a class pointed to by the `CComPtrBase` object. In debug builds, an assertion failure will occur if the `CComPtrBase` data member points to NULL.  
   
-##  <a name="ccomptrbase__operator__lt_"></a>  CComPtrBase::operator &lt;  
+##  <a name="ccomptrbase__operator_lt"></a>  CComPtrBase::operator &lt;  
  The less-than operator.  
   
 ```

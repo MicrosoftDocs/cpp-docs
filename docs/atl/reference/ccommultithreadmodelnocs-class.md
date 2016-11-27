@@ -70,7 +70,7 @@ class CComMultiThreadModelNoCS
  Typically, you use `CComMultiThreadModelNoCS` through the `ThreadModelNoCS``typedef` name. This `typedef` is defined in `CComMultiThreadModelNoCS`, `CComMultiThreadModel`, and [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md).  
   
 > [!NOTE]
->  The global `typedef` names [CComObjectThreadModel](../Topic/CComObjectThreadModel.md) and [CComGlobalsThreadModel](../Topic/CComGlobalsThreadModel.md) do not reference `CComMultiThreadModelNoCS`.  
+>  The global `typedef` names [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) and [CComGlobalsThreadModel](../Topic/CComGlobalsThreadModel.md) do not reference `CComMultiThreadModelNoCS`.  
   
  In addition to `ThreadModelNoCS`, `CComMultiThreadModelNoCS` defines `AutoCriticalSection` and `CriticalSection`. These latter two `typedef` names reference [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md), which provides empty methods associated with obtaining and releasing a critical section.  
   

@@ -87,7 +87,7 @@ class CAcl
 |Name|Description|  
 |----------|-----------------|  
 |[CAcl::operator const ACL *](#cacl__operator_const_acl__star)|Casts a `CAcl` object to an `ACL` structure.|  
-|[CAcl::operator =](#cacl__operator__eq)|Assignment operator.|  
+|[CAcl::operator =](#cacl__operator_eq)|Assignment operator.|  
   
 ## Remarks  
  The **ACL** structure is the header of an ACL (access-control list). An ACL includes a sequential list of zero or more [ACEs](http://msdn.microsoft.com/library/windows/desktop/aa374868) (access-control entries). The individual ACEs in an ACL are numbered from 0 to *n-1*, where *n* is the number of ACEs in the ACL. When editing an ACL, an application refers to an access-control entry (ACE) within the ACL by its index.  
@@ -295,7 +295,7 @@ bool IsNull() const throw();
 ### Remarks  
  Returns the address of the **ACL** structure.  
   
-##  <a name="cacl__operator__eq"></a>  CAcl::operator =  
+##  <a name="cacl__operator_eq"></a>  CAcl::operator =  
  Assignment operator.  
   
 ```

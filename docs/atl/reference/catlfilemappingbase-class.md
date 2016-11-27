@@ -74,7 +74,7 @@ class CAtlFileMappingBase
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlFileMappingBase::operator =](#catlfilemappingbase__operator__eq)|Sets the current file-mapping object to another file-mapping object.|  
+|[CAtlFileMappingBase::operator =](#catlfilemappingbase__operator_eq)|Sets the current file-mapping object to another file-mapping object.|  
   
 ## Remarks  
  File mapping is the association of a file's contents with a portion of the virtual address space of a process. This class provides methods for creating file-mapping objects that permit programs to easily access and share data.  
@@ -265,7 +265,7 @@ HRESULT OpenMapping(
 ### Remarks  
  In debug builds, an assertion error will occur if the input parameters are invalid.  
   
-##  <a name="catlfilemappingbase__operator__eq"></a>  CAtlFileMappingBase::operator =  
+##  <a name="catlfilemappingbase__operator_eq"></a>  CAtlFileMappingBase::operator =  
  Sets the current file-mapping object to another file-mapping object.  
   
 ```

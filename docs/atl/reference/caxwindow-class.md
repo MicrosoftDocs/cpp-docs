@@ -68,7 +68,7 @@ class CAxWindow : public CWindow
   
 |||  
 |-|-|  
-|[operator =](#caxwindow__operator__eq)|Assigns an **HWND** to an existing **CAxWindow** object.|  
+|[operator =](#caxwindow__operator_eq)|Assigns an **HWND** to an existing **CAxWindow** object.|  
   
 ## Remarks  
  This class provides methods for manipulating a window that hosts an ActiveX control. The hosting is provided by " **AtlAxWin80"**, which is wrapped by `CAxWindow`.  
@@ -248,7 +248,7 @@ static LPCTSTR GetWndClassName();
 ### Return Value  
  A pointer to a string containing the name of the window class that can host nonlicensed ActiveX controls.  
   
-##  <a name="caxwindow__operator__eq"></a>  CAxWindow::operator =  
+##  <a name="caxwindow__operator_eq"></a>  CAxWindow::operator =  
  Assigns an `HWND` to an existing `CAxWindow` object.  
   
 ```

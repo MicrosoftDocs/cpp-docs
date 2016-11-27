@@ -84,19 +84,19 @@ class CSid
   
 |||  
 |-|-|  
-|[operator =](#csid__operator__eq)|Assignment operator.|  
+|[operator =](#csid__operator_eq)|Assignment operator.|  
 |[operator const SID *](#csid__operator_const_sid__star)|Casts a `CSid` object to a pointer to a `SID` structure.|  
   
 ### Global Operators  
   
 |||  
 |-|-|  
-|[operator ==](#csid__operator__eq_eq)|Tests two security descriptor objects for equality|  
-|[operator !=](#csid__operator__neq)|Tests two security descriptor objects for inequality|  
-|[operator \<](#csid__operator__lt_)|Compares relative value of two security descriptor objects.|  
-|[operator >](#csid__operator__gt_)|Compares relative value of two security descriptor objects.|  
-|[operator \<=](#csid__operator__lt__eq)|Compares relative value of two security descriptor objects.|  
-|[operator >=](#csid__operator__gt__eq)|Compares relative value of two security descriptor objects.|  
+|[operator ==](#csid__operator_eq_eq)|Tests two security descriptor objects for equality|  
+|[operator !=](#csid__operator_neq)|Tests two security descriptor objects for inequality|  
+|[operator \<](#csid__operator_lt_)|Compares relative value of two security descriptor objects.|  
+|[operator >](#csid__operator_gt_)|Compares relative value of two security descriptor objects.|  
+|[operator \<=](#csid__operator_lt__eq)|Compares relative value of two security descriptor objects.|  
+|[operator >=](#csid__operator_gt__eq)|Compares relative value of two security descriptor objects.|  
   
 ## Remarks  
  The `SID` structure is a variable-length structure used to uniquely identify users or groups.  
@@ -336,7 +336,7 @@ bool LoadAccount(const SID* pSid,
 ### Remarks  
  `LoadAccount` attempts to find a security identifier for the specified name. See [LookupAccountSid](http://msdn.microsoft.com/library/windows/desktop/aa379166\(v=vs.85\).aspx) for more details.  
   
-##  <a name="csid__operator__eq"></a>  CSid::operator =  
+##  <a name="csid__operator_eq"></a>  CSid::operator =  
  Assignment operator.  
   
 ```
@@ -352,7 +352,7 @@ CSid& operator= (const CSid& rhs) throw(...);
 ### Return Value  
  Returns a reference to the updated `CSid` object.  
   
-##  <a name="csid__operator__eq_eq"></a>  CSid::operator ==  
+##  <a name="csid__operator_eq_eq"></a>  CSid::operator ==  
  Tests two security descriptor objects for equality.  
   
 ```
@@ -371,7 +371,7 @@ bool operator==(
 ### Return Value  
  **true** if the security descriptors are equal, otherwise **false**.  
   
-##  <a name="csid__operator__neq"></a>  CSid::operator !=  
+##  <a name="csid__operator_neq"></a>  CSid::operator !=  
  Tests two security descriptor objects for inequality.  
   
 ```
@@ -390,7 +390,7 @@ bool operator!=(
 ### Return Value  
  **true** if the security descriptors are not equal, otherwise **false**.  
   
-##  <a name="csid__operator__lt_"></a>  CSid::operator &lt;  
+##  <a name="csid__operator_lt"></a>  CSid::operator &lt;  
  Compares relative value of two security descriptor objects.  
   
 ```
@@ -409,7 +409,7 @@ bool operator<(
 ### Return Value  
  **true** if `lhs` is less than `rhs`, otherwise **false**.  
   
-##  <a name="csid__operator__lt__eq"></a>  CSid::operator &lt;=  
+##  <a name="csid__operator_lt__eq"></a>  CSid::operator &lt;=  
  Compares relative value of two security descriptor objects.  
   
 ```
@@ -428,7 +428,7 @@ bool operator<(
 ### Return Value  
  **true** if `lhs` is less than or equal to `rhs`, otherwise **false**.  
   
-##  <a name="csid__operator__gt_"></a>  CSid::operator &gt;  
+##  <a name="csid__operator_gt"></a>  CSid::operator &gt;  
  Compares relative value of two security descriptor objects.  
   
 ```
@@ -447,7 +447,7 @@ bool operator<(
 ### Return Value  
  **true** if `lhs` is greater than `rhs`, otherwise **false**.  
   
-##  <a name="csid__operator__gt__eq"></a>  CSid::operator &gt;=  
+##  <a name="csid__operator_gt__eq"></a>  CSid::operator &gt;=  
  Compares relative value of two security descriptor objects.  
   
 ```

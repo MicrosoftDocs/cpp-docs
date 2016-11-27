@@ -75,7 +75,7 @@ class CTokenGroups
 |Name|Description|  
 |----------|-----------------|  
 |[CTokenGroups::operator const TOKEN_GROUPS *](#ctokengroups__operator_const_token_groups__star)|Casts the `CTokenGroups` object to a pointer to the **TOKEN_GROUPS** structure.|  
-|[CTokenGroups::operator =](#ctokengroups__operator__eq)|Assignment operator.|  
+|[CTokenGroups::operator =](#ctokengroups__operator_eq)|Assignment operator.|  
   
 ## Remarks  
  An [access token](http://msdn.microsoft.com/library/windows/desktop/aa374909) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows NT or Windows 2000 system.  
@@ -227,7 +227,7 @@ bool LookupSid(const CSid& rSid,
 ### Remarks  
  Setting `pdwAttributes` to NULL provides a way of confirming the existence of the `CSid` without accessing the attribute. Note that this method should not be used to check access rights as incorrect results may occur under Windows 2000. Applications should instead use the [CAccessToken::CheckTokenMembership](../../atl/reference/caccesstoken-class.md#caccesstoken__checktokenmembership) method.  
   
-##  <a name="ctokengroups__operator__eq"></a>  CTokenGroups::operator =  
+##  <a name="ctokengroups__operator_eq"></a>  CTokenGroups::operator =  
  Assignment operator.  
   
 ```

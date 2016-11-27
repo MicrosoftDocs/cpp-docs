@@ -83,7 +83,7 @@ Allocator>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHeapPtr::operator =](#cheapptr__operator__eq)|The assignment operator.|  
+|[CHeapPtr::operator =](#cheapptr__operator_eq)|The assignment operator.|  
   
 ## Remarks  
  `CHeapPtr` is derived from [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md) and by default uses the CRT routines (in [CCRTAllocator](../../atl/reference/ccrtallocator-class.md)) to allocate and free memory. The class [CHeapPtrList](../../atl/reference/cheapptrlist-class.md) may be used to construct a list of heap pointers. See also [CComHeapPtr](../../atl/reference/ccomheapptr-class.md), which uses COM memory allocation routines.  
@@ -140,7 +140,7 @@ CHeapPtr(
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#78](../../atl/codesnippet/CPP/cheapptr-class_2.cpp)]  
   
-##  <a name="cheapptr__operator__eq"></a>  CHeapPtr::operator =  
+##  <a name="cheapptr__operator_eq"></a>  CHeapPtr::operator =  
  Assignment operator.  
   
 ```

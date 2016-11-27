@@ -93,7 +93,7 @@ class CSecurityDesc
 |Name|Description|  
 |----------|-----------------|  
 |[CSecurityDesc::operator const SECURITY_DESCRIPTOR *](#csecuritydesc__operator_const_security_descriptor__star)|Returns a pointer to the **SECURITY_DESCRIPTOR** structure.|  
-|[CSecurityDesc::operator =](#csecuritydesc__operator__eq)|Assignment operator.|  
+|[CSecurityDesc::operator =](#csecuritydesc__operator_eq)|Assignment operator.|  
   
 ## Remarks  
  The **SECURITY_DESCRIPTOR** structure contains the security information associated with an object. Applications use this structure to set and query an object's security status. See also [AtlGetSecurityDescriptor](http://msdn.microsoft.com/Library/233578b8-dcc5-4f51-8e62-7cdcc2ff6b11).  
@@ -442,7 +442,7 @@ bool MakeSelfRelative() throw(...);
 ### Remarks  
  A security descriptor in absolute format contains pointers to the information it contains, rather than containing the information itself. A security descriptor in self-relative format contains the information in a contiguous block of memory. In a self-relative security descriptor, a **SECURITY_DESCRIPTOR** structure always starts the information, but the security descriptor's other components can follow the structure in any order. Instead of using memory addresses, the components of the security descriptor are identified by offsets from the beginning of the security descriptor. This format is useful when a security descriptor must be stored on a disk or transmitted by means of a communications protocol. For more information, see [Absolute and Self-Relative Security Descriptors](http://msdn.microsoft.com/library/windows/desktop/aa374807).  
   
-##  <a name="csecuritydesc__operator__eq"></a>  CSecurityDesc::operator =  
+##  <a name="csecuritydesc__operator_eq"></a>  CSecurityDesc::operator =  
  Assignment operator.  
   
 ```

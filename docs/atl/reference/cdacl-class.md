@@ -71,7 +71,7 @@ class CDacl : public CAcl
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDacl::operator =](#cdacl__operator__eq)|Assignment operator.|  
+|[CDacl::operator =](#cdacl__operator_eq)|Assignment operator.|  
   
 ## Remarks  
  An object's security descriptor can contain a DACL. A DACL contains zero or more ACEs (access-control entries) that identify the users and groups who can access the object. If a DACL is empty (that is, it contains zero ACEs), no access is explicitly granted, so access is implicitly denied. However, if an object's security descriptor does not have a DACL, the object is unprotected and everyone has complete access.  
@@ -210,7 +210,7 @@ UINT GetAceCount() const throw();
 ### Return Value  
  Returns the number of ACEs contained in the `CDacl` object.  
   
-##  <a name="cdacl__operator__eq"></a>  CDacl::operator =  
+##  <a name="cdacl__operator_eq"></a>  CDacl::operator =  
  Assignment operator.  
   
 ```

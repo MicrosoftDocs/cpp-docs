@@ -120,7 +120,7 @@ class CPathT
 |[CPathT::operator const StringType &](../Topic/CPathT::operator%20const%20StringType%20&.md)|This operator allows the object to be treated like a string.|  
 |[CPathT::operator CPathT::PCXSTR](#cpatht__operator_cpatht__pcxstr)|This operator allows the object to be treated like a string.|  
 |[CPathT::operator StringType &](../Topic/CPathT::operator%20StringType%20&.md)|This operator allows the object to be treated like a string.|  
-|[CPathT::operator +=](#cpatht__operator__add_eq)|This operator appends a string to the path.|  
+|[CPathT::operator +=](#cpatht__operator_add_eq)|This operator appends a string to the path.|  
   
 ### Public Data Members  
   
@@ -537,7 +537,7 @@ BOOL MatchSpec(PCXSTR    pszSpec) const;
 ### Remarks  
  For more information, see [PathMatchSpec](http://msdn.microsoft.com/library/windows/desktop/bb773727).  
   
-##  <a name="cpatht__operator__add_eq"></a>  CPathT::operator +=  
+##  <a name="cpatht__operator_add_eq"></a>  CPathT::operator +=  
  This operator appends a string to the path.  
   
 ```
@@ -551,7 +551,7 @@ CPathT<StringType>& operator+=(PCXSTR    pszMore);
 ### Return Value  
  Returns the updated path.  
   
-##  <a name="cpatht__operator_const_stringtype__amp_"></a>  CPathT::operator const StringType &amp;  
+##  <a name="cpatht__operator_const_stringtype__amp"></a>  CPathT::operator const StringType &amp;  
  This operator allows the object to be treated like a string.  
   
 ```
@@ -571,7 +571,7 @@ CPathT<StringType>& operator+=(PCXSTR    pszMore);
 ### Return Value  
  Returns a string representing the current path managed by this object.  
   
-##  <a name="cpatht__operator_stringtype__amp_"></a>  CPathT::operator StringType &amp;  
+##  <a name="cpatht__operator_stringtype__amp"></a>  CPathT::operator StringType &amp;  
  This operator allows the object to be treated like a string.  
   
 ```
