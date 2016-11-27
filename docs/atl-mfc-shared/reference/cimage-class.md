@@ -138,12 +138,12 @@ class CImage
 > [!NOTE]
 >  Using global `CImage` objects in a DLL is not recommended. If you need to use a global `CImage` object in a DLL, call [CImage::ReleaseGDIPlus](#cimage__releasegdiplus) to explicitly release resources used by GDI+.  
   
- `CImage` cannot be selected into a new [CDC](../../mfc/reference/cdc-class.md). `CImage` creates its own **HDC** for the image. Because an `HBITMAP` can only be selected into one **HDC** at a time, the `HBITMAP` associated with the `CImage` cannot be selected into another **HDC**. If you need a `CDC`, retrieve the **HDC** from the `CImage` and give it to [CDC::FromHandle](../Topic/CDC%20Class.md#cdc__fromhandle.  
+ `CImage` cannot be selected into a new [CDC](../../mfc/reference/cdc-class.md). `CImage` creates its own **HDC** for the image. Because an `HBITMAP` can only be selected into one **HDC** at a time, the `HBITMAP` associated with the `CImage` cannot be selected into another **HDC**. If you need a `CDC`, retrieve the **HDC** from the `CImage` and give it to [CDC::FromHandle](../../mfc/reference/cdc-class.md#cdc__fromhandle.  
   
 ## Example  
  <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#70](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#70)] -->  
   
- When you use `CImage` in an MFC project, note which member functions in your project expect a pointer to a [CBitmap](../Topic/CBitmap%20Class.md) object. If you want to use `CImage` with such a function, like [CMenu::AppendMenu](../Topic/not%20found.md#cmenu__appendmenu, use [CBitmap::FromHandle](../Topic/not%20found.md#cbitmap__fromhandle, pass it your `CImage` `HBITMAP`, and use the returned `CBitmap*`.  
+ When you use `CImage` in an MFC project, note which member functions in your project expect a pointer to a [CBitmap](../../mfc/reference/cbitmap-class.md) object. If you want to use `CImage` with such a function, like [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#cmenu__appendmenu), use [CBitmap::FromHandle](../../mfc/reference/cbitmap-class.md#cbitmap__fromhandle), pass it your `CImage` `HBITMAP`, and use the returned `CBitmap*`.  
   
 ## Example  
  <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#71](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#71)]-->  
@@ -161,7 +161,6 @@ class CImage
 |[TransparentBlt](#cimage__transparentblt)|Works with only Windows 2000, Windows 98, and later systems.|  
 |[Draw](#cimage__draw)|Supports transparency with only Windows 2000, Windows 98, and later systems.|  
   
- See [CImage Limitations with Earlier Operating Systems](../Topic/CImage%20Limitations%20with%20Earlier%20Operating%20Systems.md) for more detailed information about the limitations on these methods.  
   
  You can use `CImage` from either MFC or ATL.  
   
@@ -258,7 +257,7 @@ BOOL AlphaBlend(HDC hDestDC,
   
  When `bBlendOp` is set to the default of **AC_SRC_OVER**, the source bitmap is placed over the destination bitmap based on the alpha values of the source pixels.  
   
- This method is applicable to Microsoft Windows 2000, Windows 98, and later systems. See [AlphaBlend](http://msdn.microsoft.com/library/windows/desktop/dd183351) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)] and [CImage Limitations with Earlier Operating Systems](../Topic/CImage%20Limitations%20with%20Earlier%20Operating%20Systems.md) for more detailed information.  
+ This method is applicable to Microsoft Windows 2000, Windows 98, and later systems. See [AlphaBlend](http://msdn.microsoft.com/library/windows/desktop/dd183351) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)] for more detailed information.  
   
 ##  <a name="cimage__attach"></a>  CImage::Attach  
  Attaches `hBitmap` to a `CImage` object.  
@@ -664,7 +663,7 @@ static HRESULT GetExporterFilterString(CSimpleString& strExporters,
  A standard `HRESULT`.  
   
 ### Remarks  
- You can pass the resulting format string to your MFC [CFileDialog](../Topic/CFileDialog%20Class.md) object to expose the file extensions of the available image formats in the File Save As dialog box.  
+ You can pass the resulting format string to your MFC [CFileDialog](../../mfc/reference/cfiledialog-class.md) object to expose the file extensions of the available image formats in the File Save As dialog box.  
   
  The parameter *strExporter* has the format:  
   
@@ -743,7 +742,7 @@ static HRESULT GetImporterFilterString(CSimpleString& strImporters,
  The separator used between the image formats. See **Remarks** for more information.  
   
 ### Remarks  
- You can pass the resulting format string to your MFC [CFileDialog](../Topic/CFileDialog%20Class.md) object to expose the file extensions of the available image formats in the **File Open** dialog box.  
+ You can pass the resulting format string to your MFC [CFileDialog](../../mfc/reference/cfiledialog-class.md) object to expose the file extensions of the available image formats in the **File Open** dialog box.  
   
  The parameter *strImporter* has the format:  
   
@@ -913,7 +912,6 @@ static BOOL IsTransparencySupported() throw();
   
  If the application is compiled for use with operating systems before Windows 2000 or Windows 98, this method will always return 0, even on newer operating systems.  
   
- See [CImage Limitations with Earlier Operating Systems](../Topic/CImage%20Limitations%20with%20Earlier%20Operating%20Systems.md) for more detailed information.  
   
 ##  <a name="cimage__load"></a>  CImage::Load  
  Loads an image.  
@@ -1050,7 +1048,7 @@ BOOL MaskBlt(HDC hDestDC,
 ### Remarks  
  This method applies to Windows NT, versions 4.0 and later only.  
   
- See `MaskBlt` in the [!INCLUDE[winsdkshort](./includes/winsdkshort_md.md)] and [CImage Limitations with Earlier Operating Systems](../Topic/CImage%20Limitations%20with%20Earlier%20Operating%20Systems.md) for more detailed information.  
+ See `MaskBlt` in the [!INCLUDE[winsdkshort](./includes/winsdkshort_md.md)] for more detailed information.  
   
 ##  <a name="cimage__operator_hbitmap"></a>  CImage::operator HBITMAP  
  Use this operator to get the attached Windows GDI handle of the `CImage` object. This operator is a casting operator, which supports direct use of an `HBITMAP` object.  
@@ -1121,7 +1119,7 @@ BOOL PlgBlt(HDC hDestDC,
 ### Remarks  
  If `hbmMask` identifies a valid monochrome bitmap, **PlgBit** uses this bitmap to mask the bits of color data from the source rectangle.  
   
- This method applies to Windows NT, versions 4.0 and later only. See [PlgBlt](http://msdn.microsoft.com/library/windows/desktop/dd162804) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)] and [CImage Limitations with Earlier Operating Systems](../Topic/CImage%20Limitations%20with%20Earlier%20Operating%20Systems.md) for more detailed information.  
+ This method applies to Windows NT, versions 4.0 and later only. See [PlgBlt](http://msdn.microsoft.com/library/windows/desktop/dd162804) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)] for more detailed information.  
   
 ##  <a name="cimage__releasedc"></a>  CImage::ReleaseDC  
  Releases the device context.  
@@ -1438,17 +1436,17 @@ BOOL TransparentBlt(HDC hDestDC,
 ### Remarks  
  `TransparentBlt` is supported for source bitmaps of 4 bits per pixel and 8 bits per pixel. Use [CImage::AlphaBlend](#cimage__alphablend) to specify 32 bits-per-pixel bitmaps with transparency.  
   
- This method is applicable to Microsoft Windows 2000, Windows 98, and later systems. See [TransparentBlt](http://msdn.microsoft.com/library/windows/desktop/dd145141) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)] and [CImage Limitations with Earlier Operating Systems](../Topic/CImage%20Limitations%20with%20Earlier%20Operating%20Systems.md) for more detailed information.  
+ This method is applicable to Microsoft Windows 2000, Windows 98, and later systems. See [TransparentBlt](http://msdn.microsoft.com/library/windows/desktop/dd145141) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)] for more detailed information.  
   
 ### Example  
  <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#199](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#199)]  -->
   
 ## See Also  
- [MMXSwarm Sample](../Topic/Visual%20C++%20Samples.md)   
- [SimpleImage Sample](../Topic/Visual%20C++%20Samples.md)   
+ [MMXSwarm Sample](../../visual-cpp-samples.md)   
+ [SimpleImage Sample](../../visual-cpp-samples.md)   
  [Device-Independent Bitmaps](http://msdn.microsoft.com/library/windows/desktop/dd183562)   
  [CreateDIBSection](http://msdn.microsoft.com/library/windows/desktop/dd183494)   
- [ATL COM Desktop Components](../Topic/ATL%20COM%20Desktop%20Components.md)
+ [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)
 
 
 
