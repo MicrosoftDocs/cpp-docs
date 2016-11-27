@@ -1259,7 +1259,7 @@ virtual void ResetImageToDefault();
 ```  
   
 ### Remarks  
- This method retrieves the default image from its parent toolbar by using the [CMFCToolBar::GetDefaultImage](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__getdefaultimage) method. If the button has no associated default image, this method sets the text label of the button according to its string resource by using the [CStringT::LoadString](../../atl-mfc-shared/reference/cstringt-class.md#loadstring) method. For more information about string resources, see [Working with Resource Files](../../mfc/working-with-resource-files.md).  
+ This method retrieves the default image from its parent toolbar by using the [CMFCToolBar::GetDefaultImage](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__getdefaultimage) method. If the button has no associated default image, this method sets the text label of the button according to its string resource by using the [CStringT::LoadString](../../atl-mfc-shared/reference/cstringt-class.md#cstringt__loadstring) method. For more information about string resources, see [Working with Resource Files](../../mfc/working-with-resource-files.md).  
   
  This method does nothing if the button has a user-defined image.  
   

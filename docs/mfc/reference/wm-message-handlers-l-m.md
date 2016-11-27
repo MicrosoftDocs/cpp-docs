@@ -66,27 +66,27 @@ The following map entries on the left correspond to the function prototypes on t
   
 |Map entry|Function prototype|  
 |---------------|------------------------|  
-|ON_WM_LBUTTONDBLCLK()|afx_msg void [OnLButtonDblClk](../../mfc/reference/cwnd-class.md#OnLButtonDblClk)(UINT, CPoint);|  
-|ON_WM_LBUTTONDOWN()|afx_msg void [OnLButtonDown](../../mfc/reference/cwnd-class.md#OnLButtonDown)(UINT, CPoint);|  
-|ON_WM_LBUTTONUP()|afx_msg void [OnLButtonUp](../../mfc/reference/cwnd-class.md#OnLButtonUp)(UINT, CPoint);|  
-|ON_WM_MBUTTONDBLCLK()|afx_msg void [OnMButtonDblClk](../../mfc/reference/cwnd-class.md#OnMButtonDblClk)(UINT, CPoint);|  
-|ON_WM_MBUTTONDOWN()|afx_msg void [OnMButtonDown](../../mfc/reference/cwnd-class.md#OnMButtonDown)(UINT, CPoint);|  
-|ON_WM_MBUTTONUP()|afx_msg void [OnMButtonUp](../../mfc/reference/cwnd-class.md#OnMButtonUp)(UINT, CPoint);|  
-|ON_WM_MDIACTIVATE()|afx_msg void [OnMDIActivate](../../mfc/reference/cwnd-class.md#OnMDIActivate)(BOOL, CWnd*, CWnd\*);|  
-|ON_WM_MEASUREITEM()|afx_msg void [OnMeasureItem](../../mfc/reference/cwnd-class.md#OnMeasureItem)(LPMEASUREITEMSTRUCT);|  
-|ON_WM_MENUCHAR()|afx_msg LONG [OnMenuChar](../../mfc/reference/cwnd-class.md#OnMenuChar)(UINT, UINT, CMenu*);|  
-|ON_WM_MENUDRAG()|afx_msg UINT [OnMenuDrag](../../mfc/reference/cwnd-class.md#OnMenuDrag)(UINT, CMenu*);|  
-|ON_WM_MENUGETOBJECT()|afx_msg UINT [OnMenuGetObject](../../mfc/reference/cwnd-class.md#OnMenuGetObject)(MENUGETOBJECTINFO*);|  
-|ON_WM_MENURBUTTONUP()|afx_msg void [OnMenuRButtonUp](../../mfc/reference/cwnd-class.md#OnMenuRButtonUp)(UINT, CMenu*);|  
-|ON_WM_MENUSELECT()|afx_msg void [OnMenuSelect](../../mfc/reference/cwnd-class.md#OnMenuSelect)(UINT, UINT, HMENU);|  
-|ON_WM_MOUSEACTIVATE()|afx_msg int [OnMouseActivate](../../mfc/reference/cwnd-class.md#OnMouseActivate)( CWnd*, UINT, UINT );|  
-|ON_WM_MOUSEHOVER()|afx_msg void [OnMouseHover](../../mfc/reference/cwnd-class.md#OnMouseHover)(UINT, CPoint);|  
-|ON_WM_MOUSEHWHEEL()|afx_msg void [OnMouseHWheel](../../mfc/reference/cwnd-class.md#OnMouseHWheel)(UINT, short, CPoint);|  
-|ON_WM_MOUSELEAVE()|afx_msg void [OnMouseLeave](../../mfc/reference/cwnd-class.md#OnMouseLeave)();|  
-|ON_WM_MOUSEMOVE()|afx_msg void [OnMouseMove](../../mfc/reference/cwnd-class.md#OnMouseMove)( UINT, CPoint);|  
-|ON_WM_MOUSEWHEEL()|afx_msg BOOL [OnMouseWheel](../../mfc/reference/cwnd-class.md#OnMouseWheel)(UINT, short, CPoint);|  
-|ON_WM_MOVE()|afx_msg void [OnMove](../../mfc/reference/cwnd-class.md#OnMove)(int, int);|  
-|ON_WM_MOVING()|afx_msg void [OnMoving](../../mfc/reference/cwnd-class.md#OnMoving)(UINT, LPRECT);|  
+|ON_WM_LBUTTONDBLCLK()|afx_msg void [OnLButtonDblClk](../../mfc/reference/cwnd-class.md#cwnd__OnLButtonDblClk)(UINT, CPoint);|  
+|ON_WM_LBUTTONDOWN()|afx_msg void [OnLButtonDown](../../mfc/reference/cwnd-class.md#cwnd__OnLButtonDown)(UINT, CPoint);|  
+|ON_WM_LBUTTONUP()|afx_msg void [OnLButtonUp](../../mfc/reference/cwnd-class.md#cwnd__OnLButtonUp)(UINT, CPoint);|  
+|ON_WM_MBUTTONDBLCLK()|afx_msg void [OnMButtonDblClk](../../mfc/reference/cwnd-class.md#cwnd__OnMButtonDblClk)(UINT, CPoint);|  
+|ON_WM_MBUTTONDOWN()|afx_msg void [OnMButtonDown](../../mfc/reference/cwnd-class.md#cwnd__OnMButtonDown)(UINT, CPoint);|  
+|ON_WM_MBUTTONUP()|afx_msg void [OnMButtonUp](../../mfc/reference/cwnd-class.md#cwnd__OnMButtonUp)(UINT, CPoint);|  
+|ON_WM_MDIACTIVATE()|afx_msg void [OnMDIActivate](../../mfc/reference/cwnd-class.md#cwnd__OnMDIActivate)(BOOL, CWnd*, CWnd\*);|  
+|ON_WM_MEASUREITEM()|afx_msg void [OnMeasureItem](../../mfc/reference/cwnd-class.md#cwnd__OnMeasureItem)(LPMEASUREITEMSTRUCT);|  
+|ON_WM_MENUCHAR()|afx_msg LONG [OnMenuChar](../../mfc/reference/cwnd-class.md#cwnd__OnMenuChar)(UINT, UINT, CMenu*);|  
+|ON_WM_MENUDRAG()|afx_msg UINT [OnMenuDrag](../../mfc/reference/cwnd-class.md#cwnd__OnMenuDrag)(UINT, CMenu*);|  
+|ON_WM_MENUGETOBJECT()|afx_msg UINT [OnMenuGetObject](../../mfc/reference/cwnd-class.md#cwnd__OnMenuGetObject)(MENUGETOBJECTINFO*);|  
+|ON_WM_MENURBUTTONUP()|afx_msg void [OnMenuRButtonUp](../../mfc/reference/cwnd-class.md#cwnd__OnMenuRButtonUp)(UINT, CMenu*);|  
+|ON_WM_MENUSELECT()|afx_msg void [OnMenuSelect](../../mfc/reference/cwnd-class.md#cwnd__OnMenuSelect)(UINT, UINT, HMENU);|  
+|ON_WM_MOUSEACTIVATE()|afx_msg int [OnMouseActivate](../../mfc/reference/cwnd-class.md#cwnd__OnMouseActivate)( CWnd*, UINT, UINT );|  
+|ON_WM_MOUSEHOVER()|afx_msg void [OnMouseHover](../../mfc/reference/cwnd-class.md#cwnd__OnMouseHover)(UINT, CPoint);|  
+|ON_WM_MOUSEHWHEEL()|afx_msg void [OnMouseHWheel](../../mfc/reference/cwnd-class.md#cwnd__OnMouseHWheel)(UINT, short, CPoint);|  
+|ON_WM_MOUSELEAVE()|afx_msg void [OnMouseLeave](../../mfc/reference/cwnd-class.md#cwnd__OnMouseLeave)();|  
+|ON_WM_MOUSEMOVE()|afx_msg void [OnMouseMove](../../mfc/reference/cwnd-class.md#cwnd__OnMouseMove)( UINT, CPoint);|  
+|ON_WM_MOUSEWHEEL()|afx_msg BOOL [OnMouseWheel](../../mfc/reference/cwnd-class.md#cwnd__OnMouseWheel)(UINT, short, CPoint);|  
+|ON_WM_MOVE()|afx_msg void [OnMove](../../mfc/reference/cwnd-class.md#cwnd__OnMove)(int, int);|  
+|ON_WM_MOVING()|afx_msg void [OnMoving](../../mfc/reference/cwnd-class.md#cwnd__OnMoving)(UINT, LPRECT);|  
   
 ## See Also  
  [Message Maps](../../mfc/reference/message-maps-mfc.md)   

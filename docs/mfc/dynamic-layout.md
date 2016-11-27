@@ -72,7 +72,7 @@ With MFC in [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)], you can create
   
 1.  Find or create a place in your dialog class's implementation code where you want to specify the dynamic layout for the dialog. For example, you might want to add a method such as `AdjustLayout` in your dialog, and call it from places where the layout needs to be changed. You might first call this from the constructor, or after making changes to the dialog.  
   
-2.  For the dialog, call [GetDynamicLayout](../mfc/reference/cwnd-class.md#getdynamiclayout), a method of the CWnd class. GetDynamicLayout returns a pointer to a CMFCDynamicLayout object.  
+2.  For the dialog, call [GetDynamicLayout](../mfc/reference/cwnd-class.md#cwnd__getdynamiclayout), a method of the CWnd class. GetDynamicLayout returns a pointer to a CMFCDynamicLayout object.  
   
  ```  
     CMFCDynamicLayout* dynamicLayout = pDialog->GetDynamicLayout();

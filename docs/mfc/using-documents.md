@@ -69,9 +69,9 @@ Working together, documents and views:
   
 -   [Handling commands in the document](../mfc/handling-commands-in-the-document.md)  
   
--   [The OnNewDocument member function](../mfc/reference/cdocument-class.md#onnewdocument)  
+-   [The OnNewDocument member function](../mfc/reference/cdocument-class.md#cdocument__onnewdocument)  
   
--   [The DeleteContents member function](../mfc/reference/cdocument-class.md#deletecontents)  
+-   [The DeleteContents member function](../mfc/reference/cdocument-class.md#cdocument__deletecontents)  
   
 ## See Also  
  [Document/View Architecture](../mfc/document-view-architecture.md)

@@ -3685,7 +3685,7 @@ BOOL LineTo(
  The line is drawn with the selected pen. The current position is set to *x*, *y* or to `point`.  
   
 ### Example  
-  See the example for [CRect::CenterPoint](../../atl-mfc-shared/reference/crect-class.md#centerpoint).  
+  See the example for [CRect::CenterPoint](../../atl-mfc-shared/reference/crect-class.md#crect__centerpoint).  
   
 ##  <a name="cdc__lptodp"></a>  CDC::LPtoDP  
  Converts logical units into device units.  
@@ -3879,7 +3879,7 @@ CPoint MoveTo(
  The x- and y-coordinates of the previous position as a `CPoint` object.  
   
 ### Example  
-  See the example for [CRect::CenterPoint](../../atl-mfc-shared/reference/crect-class.md#centerpoint).  
+  See the example for [CRect::CenterPoint](../../atl-mfc-shared/reference/crect-class.md#crect__centerpoint).  
   
 ##  <a name="cdc__offsetcliprgn"></a>  CDC::OffsetClipRgn  
  Moves the clipping region of the device context by the specified offsets.  

@@ -201,7 +201,7 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
  This method returns `TRUE`.  
   
 ### Remarks  
- This method overrides the base class implementation ( [CMFCToolBarButton::ExportToMenuButton](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__exporttomenubutton)) by loading the string resource that is associated with the command ID of the control. For more information about string resources, see [CStringT::LoadString](../../atl-mfc-shared/reference/cstringt-class.md#loadstring).  
+ This method overrides the base class implementation ( [CMFCToolBarButton::ExportToMenuButton](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__exporttomenubutton)) by loading the string resource that is associated with the command ID of the control. For more information about string resources, see [CStringT::LoadString](../../atl-mfc-shared/reference/cstringt-class.md#cstringt__loadstring).  
   
 ##  <a name="cmfctoolbardatetimectrl__getbycmd"></a>  CMFCToolBarDateTimeCtrl::GetByCmd  
  Retrieves the first `CMFCToolBarDateTimeCtrl` object in the application that has the specified command ID.  

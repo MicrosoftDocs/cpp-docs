@@ -38,7 +38,7 @@ Each rebar band can contain, among other things, an image from an associated ima
   
 ### To display images in a rebar band  
   
-1.  Attach an image list to your rebar control object by making a call to [SetImageList](../mfc/reference/crebarctrl-class.md#setimagelist), passing a pointer to an existing image list.  
+1.  Attach an image list to your rebar control object by making a call to [SetImageList](../mfc/reference/crebarctrl-class.md#crebarctrl__setimagelist), passing a pointer to an existing image list.  
   
 2.  Modify the **REBARBANDINFO** structure to assign an image to a rebar band:  
   

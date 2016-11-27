@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Accessing the Embedded Month Calendar Control
-The embedded month calendar control object can be accessed from the `CDateTimeCtrl` object with a call to the [GetMonthCalCtrl](../mfc/reference/cdatetimectrl-class.md#getmonthcalctrl) member function.  
+The embedded month calendar control object can be accessed from the `CDateTimeCtrl` object with a call to the [GetMonthCalCtrl](../mfc/reference/cdatetimectrl-class.md#cdatetimectrl__getmonthcalctrl) member function.  
   
 > [!NOTE]
 >  The embedded month calendar control is used only when the date and time picker control does not have the **DTS_UPDOWN** style set.  
@@ -47,7 +47,7 @@ The embedded month calendar control object can be accessed from the `CDateTimeCt
   
  In other words, when the user requests the display of the month calendar control, a new month calendar control is created (before the **DTN_DROPDOWN** notification). The control is destroyed (after the **DTN_CLOSEUP** notification) when dismissed by the user. This means that any attributes you modify, before the embedded control is displayed, are lost when the embedded control is dismissed.  
   
- The following example demonstrates this procedure, using a handler for the **DTN_DROPDOWN** notification. The code changes the background color of the month calendar control, with a call to [SetMonthCalColor](../mfc/reference/cdatetimectrl-class.md#setmonthcalcolor), to gray. The code is as follows:  
+ The following example demonstrates this procedure, using a handler for the **DTN_DROPDOWN** notification. The code changes the background color of the month calendar control, with a call to [SetMonthCalColor](../mfc/reference/cdatetimectrl-class.md#cdatetimectrl__setmonthcalcolor), to gray. The code is as follows:  
   
  [!code-cpp[NVC_MFCControlLadenDialog#5](../mfc/codesnippet/CPP/accessing-the-embedded-month-calendar-control_1.cpp)]  
   

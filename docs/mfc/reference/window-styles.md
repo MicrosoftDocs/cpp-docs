@@ -146,7 +146,7 @@ translation.priority.ht:
   
 ## See Also  
  [Styles Used by MFC](../../mfc/reference/styles-used-by-mfc.md)   
- [CWnd::Create](../../mfc/reference/cwnd-class.md#Create)   
- [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#CreateEx)   
+ [CWnd::Create](../../mfc/reference/cwnd-class.md#cwnd__Create)   
+ [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#cwnd__CreateEx)   
  [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679)
 

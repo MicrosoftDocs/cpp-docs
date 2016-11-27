@@ -4394,7 +4394,7 @@ virtual BOOL OnSetWindowRegion(
  `TRUE` if the method is successful; `FALSE` otherwise.  
   
 ### Remarks  
- The framework calls this method to notify the visual manager that a region has been set for frames and pop-up menus. For more information, see [CWindow::SetWindowRgn](../../atl/reference/cwindow-class.md#setwindowrgn).  
+ The framework calls this method to notify the visual manager that a region has been set for frames and pop-up menus. For more information, see [CWindow::SetWindowRgn](../../atl/reference/cwindow-class.md#cwindow__setwindowrgn).  
   
 ##  <a name="cmfcvisualmanager__onupdatesystemcolors"></a>  CMFCVisualManager::OnUpdateSystemColors  
  The framework calls this function when it changes the system colors.  

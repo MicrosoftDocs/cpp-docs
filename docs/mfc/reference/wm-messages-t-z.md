@@ -56,22 +56,22 @@ The following map entries correspond to the function prototypes:
   
 |Map entry|Function prototype|  
 |---------------|------------------------|  
-|ON_WM_TCARD()|afx_msg void [OnTCard](../../mfc/reference/cwnd-class.md#ontcard)( UINT, DWORD );|  
-|ON_WM_TIMECHANGE()|afx_msg void [OnTimeChange](../../mfc/reference/cwnd-class.md#ontimechange)( );|  
-|ON_WM_TIMER()|afx_msg void [OnTimer](../../mfc/reference/cwnd-class.md#ontimer)( UINT_PTR );|  
-|ON_WM_UNICHAR()|afx_msg void [OnUniChar](../../mfc/reference/cwnd-class.md#onunichar)( UINT, UINT, UINT );|  
-|ON_WM_UNINITMENUPOPUP()|afx_msg void [OnUnInitMenuPopup](../../mfc/reference/cwnd-class.md#onuninitmenupopup)( CMenu*, UINT );|  
-|ON_WM_USERCHANGED()|afx_msg void [OnUserChanged](../../mfc/reference/cwnd-class.md#onuserchanged)();|  
-|ON_WM_VKEYTOITEM()|afx_msg int [OnVKeyToItem](../../mfc/reference/cwnd-class.md#onvkeytoitem)( UINT, CWnd*, UINT );|  
-|ON_WM_VSCROLL()|afx_msg void [OnVScroll](../../mfc/reference/cwnd-class.md#onvscroll)( UINT, UINT, CWnd* );|  
-|ON_WM_VSCROLLCLIPBOARD()|afx_msg void [OnVScrollClipboard](../../mfc/reference/cwnd-class.md#onvscrollclipboard)( CWnd*, UINT, UINT );|  
-|ON_WM_WINDOWPOSCHANGED()|afx_msg void [OnWindowPosChanged](../../mfc/reference/cwnd-class.md#onwindowposchanged)( WINDOWPOS*);|  
-|ON_WM_WINDOWPOSCHANGING()|afx_msg void [OnWindowPosChanging](../../mfc/reference/cwnd-class.md#onwindowposchanging)( WINDOWPOS*);|  
-|ON_WM_WININICHANGE()|afx_msg void [OnWinIniChange](../../mfc/reference/cwnd-class.md#onwininichange)( LPSTR );|  
-|ON_WM_WTSSESSION_CHANGE()|afx_msg void [OnSessionChange](../../mfc/reference/cwnd-class.md#onsessionchange)( UINT, UINT );|  
-|ON_WM_XBUTTONDBLCLK()|afx_msg void [OnXButtonDblClk](../../mfc/reference/cwnd-class.md#onxbuttondblclk)( UINT, UINT, CPoint );|  
-|ON_WM_XBUTTONDOWN()|afx_msg void [OnXButtonDown](../../mfc/reference/cwnd-class.md#onxbuttondown)( UINT, UINT, CPoint );|  
-|ON_WM_XBUTTONUP()|afx_msg void [OnXButtonUp](../../mfc/reference/cwnd-class.md#onxbuttonup)( UINT, UINT, CPoint );|  
+|ON_WM_TCARD()|afx_msg void [OnTCard](../../mfc/reference/cwnd-class.md#cwnd__ontcard)( UINT, DWORD );|  
+|ON_WM_TIMECHANGE()|afx_msg void [OnTimeChange](../../mfc/reference/cwnd-class.md#cwnd__ontimechange)( );|  
+|ON_WM_TIMER()|afx_msg void [OnTimer](../../mfc/reference/cwnd-class.md#cwnd__ontimer)( UINT_PTR );|  
+|ON_WM_UNICHAR()|afx_msg void [OnUniChar](../../mfc/reference/cwnd-class.md#cwnd__onunichar)( UINT, UINT, UINT );|  
+|ON_WM_UNINITMENUPOPUP()|afx_msg void [OnUnInitMenuPopup](../../mfc/reference/cwnd-class.md#cwnd__onuninitmenupopup)( CMenu*, UINT );|  
+|ON_WM_USERCHANGED()|afx_msg void [OnUserChanged](../../mfc/reference/cwnd-class.md#cwnd__onuserchanged)();|  
+|ON_WM_VKEYTOITEM()|afx_msg int [OnVKeyToItem](../../mfc/reference/cwnd-class.md#cwnd__onvkeytoitem)( UINT, CWnd*, UINT );|  
+|ON_WM_VSCROLL()|afx_msg void [OnVScroll](../../mfc/reference/cwnd-class.md#cwnd__onvscroll)( UINT, UINT, CWnd* );|  
+|ON_WM_VSCROLLCLIPBOARD()|afx_msg void [OnVScrollClipboard](../../mfc/reference/cwnd-class.md#cwnd__onvscrollclipboard)( CWnd*, UINT, UINT );|  
+|ON_WM_WINDOWPOSCHANGED()|afx_msg void [OnWindowPosChanged](../../mfc/reference/cwnd-class.md#cwnd__onwindowposchanged)( WINDOWPOS*);|  
+|ON_WM_WINDOWPOSCHANGING()|afx_msg void [OnWindowPosChanging](../../mfc/reference/cwnd-class.md#cwnd__onwindowposchanging)( WINDOWPOS*);|  
+|ON_WM_WININICHANGE()|afx_msg void [OnWinIniChange](../../mfc/reference/cwnd-class.md#cwnd__onwininichange)( LPSTR );|  
+|ON_WM_WTSSESSION_CHANGE()|afx_msg void [OnSessionChange](../../mfc/reference/cwnd-class.md#cwnd__onsessionchange)( UINT, UINT );|  
+|ON_WM_XBUTTONDBLCLK()|afx_msg void [OnXButtonDblClk](../../mfc/reference/cwnd-class.md#cwnd__onxbuttondblclk)( UINT, UINT, CPoint );|  
+|ON_WM_XBUTTONDOWN()|afx_msg void [OnXButtonDown](../../mfc/reference/cwnd-class.md#cwnd__onxbuttondown)( UINT, UINT, CPoint );|  
+|ON_WM_XBUTTONUP()|afx_msg void [OnXButtonUp](../../mfc/reference/cwnd-class.md#cwnd__onxbuttonup)( UINT, UINT, CPoint );|  
   
 ## See Also  
  [Message Maps](../../mfc/reference/message-maps-mfc.md)   

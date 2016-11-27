@@ -88,15 +88,15 @@ Verification of a Licensed ActiveX Control During Execution
   
  These member functions are:  
   
--   [VerifyUserLicense](../mfc/reference/coleobjectfactory-class.md#verifyuserlicense)  
+-   [VerifyUserLicense](../mfc/reference/coleobjectfactory-class.md#coleobjectfactory__verifyuserlicense)  
   
      Verifies that the control allows design-time usage by checking the system for the presence of the control license file. This function is called by the framework as part of processing **IClassFactory2::GetLicInfo** and **IClassFactory::CreateInstanceLic**.  
   
--   [GetLicenseKey](../mfc/reference/coleobjectfactory-class.md#getlicensekey)  
+-   [GetLicenseKey](../mfc/reference/coleobjectfactory-class.md#coleobjectfactory__getlicensekey)  
   
      Requests a unique key from the control DLL. This key is embedded in the container application and used later, in conjunction with `VerifyLicenseKey`, to create an instance of the control. This function is called by the framework as part of processing **IClassFactory2::RequestLicKey**.  
   
--   [VerifyLicenseKey](../mfc/reference/coleobjectfactory-class.md#verifylicensekey)  
+-   [VerifyLicenseKey](../mfc/reference/coleobjectfactory-class.md#coleobjectfactory__verifylicensekey)  
   
      Verifies that the embedded key and the control's unique key are the same. This allows the container to create an instance of the control for its use. This function is called by the framework as part of processing **IClassFactory2::CreateInstanceLic** and can be overridden to provide customized verification of the license key. The default implementation performs a string comparison. For more information, see [Customizing the Licensing of an ActiveX Control](#_core_customizing_the_licensing_of_an_activex_control), later in this article.  
   

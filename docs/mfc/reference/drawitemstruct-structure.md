@@ -115,21 +115,21 @@ typedef struct tagDRAWITEMSTRUCT {
  `itemData`  
  For a combo box or list box, this member contains the value that was passed to the list box by one of the following:  
   
-- [CComboBox::AddString](../../mfc/reference/ccombobox-class.md#AddString)  
+- [CComboBox::AddString](../../mfc/reference/ccombobox-class.md#ccombobox__AddString)  
   
-- [CComboBox::InsertString](../../mfc/reference/ccombobox-class.md#InsertString)  
+- [CComboBox::InsertString](../../mfc/reference/ccombobox-class.md#ccombobox__InsertString)  
   
-- [CListBox::AddString](../../mfc/reference/clistbox-class.md#AddString)  
+- [CListBox::AddString](../../mfc/reference/clistbox-class.md#clistbox__AddString)  
   
-- [CListBox::InsertString](../../mfc/reference/clistbox-class.md#InsertString)  
+- [CListBox::InsertString](../../mfc/reference/clistbox-class.md#clistbox__InsertString)  
   
  For a menu, this member contains the value that was passed to the menu by one of the following:  
   
-- [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#AppendMenu)  
+- [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#cmenu__AppendMenu)  
   
-- [CMenu::InsertMenu](../../mfc/reference/cmenu-class.md#InsertMenu)  
+- [CMenu::InsertMenu](../../mfc/reference/cmenu-class.md#cmenu__InsertMenu)  
   
-- [CMenu::ModifyMenu](../../mfc/reference/cmenu-class.md#ModifyMenu)  
+- [CMenu::ModifyMenu](../../mfc/reference/cmenu-class.md#cmenu__ModifyMenu)  
   
 ## Remarks  
  The owner window of the owner-drawn control or menu item receives a pointer to this structure as the `lParam` parameter of the `WM_DRAWITEM` message.  
@@ -139,5 +139,5 @@ typedef struct tagDRAWITEMSTRUCT {
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CWnd::OnDrawItem](../../mfc/reference/cwnd-class.md#OnDrawItem)
+ [CWnd::OnDrawItem](../../mfc/reference/cwnd-class.md#cwnd__OnDrawItem)
 

@@ -55,9 +55,9 @@ Microsoft Windows implements device-independent display. In MFC, this means that
   
 -   Create a [CDC](../mfc/reference/cdc-class.md) object for the printer.  
   
--   Call the [StartDoc](../mfc/reference/cdc-class.md#startdoc) and [EndDoc](../mfc/reference/cdc-class.md#enddoc) member functions of the `CDC` object.  
+-   Call the [StartDoc](../mfc/reference/cdc-class.md#cdc__startdoc) and [EndDoc](../mfc/reference/cdc-class.md#cdc__enddoc) member functions of the `CDC` object.  
   
--   Repeatedly call the [StartPage](../mfc/reference/cdc-class.md#startpage) member function of the `CDC` object, inform the view class which page should be printed, and call the [EndPage](../mfc/reference/cdc-class.md#endpage) member function of the `CDC` object.  
+-   Repeatedly call the [StartPage](../mfc/reference/cdc-class.md#cdc__startpage) member function of the `CDC` object, inform the view class which page should be printed, and call the [EndPage](../mfc/reference/cdc-class.md#cdc__endpage) member function of the `CDC` object.  
   
 -   Call overridable functions in the view at the appropriate times.  
   

@@ -81,7 +81,7 @@ This note describes regular DLLs, which allow you to use the MFC library as part
  `AFX_MANAGE_STATE(AfxGetStaticModuleState( ))`  
   
 ## WinMain -> DllMain  
- The MFC library defines the standard Win32 `DllMain` entry point that initializes your [CWinApp](../mfc/reference/cwinapp-class.md) derived object as in a typical MFC application. Place all DLL-specific initialization in the [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) method as in a typical MFC application.  
+ The MFC library defines the standard Win32 `DllMain` entry point that initializes your [CWinApp](../mfc/reference/cwinapp-class.md) derived object as in a typical MFC application. Place all DLL-specific initialization in the [InitInstance](../mfc/reference/cwinapp-class.md#cwinapp__initinstance) method as in a typical MFC application.  
   
  Note that the [CWinApp::Run](../mfc/reference/cwinapp-class.md#cwinapp__run) mechanism does not apply to a DLL, because the application owns the main message pump. If your DLL displays modeless dialogs or has a main frame window of its own, your application's main message pump must call a DLL-exported routine that calls [CWinApp::PreTranslateMessage](../mfc/reference/cwinapp-class.md#cwinapp__pretranslatemessage).  
   

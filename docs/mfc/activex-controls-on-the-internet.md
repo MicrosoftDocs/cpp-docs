@@ -144,11 +144,11 @@ ActiveX controls are the updated version of the OLE control specification. Contr
   
      [!code-cpp[NVC_MFCActiveXControl#4](../mfc/codesnippet/CPP/activex-controls-on-the-internet_4.cpp)]  
   
-6.  In [DoPropExchange](../mfc/reference/colecontrol-class.md#dopropexchange), add the following line:  
+6.  In [DoPropExchange](../mfc/reference/colecontrol-class.md#colecontrol__dopropexchange), add the following line:  
   
      [!code-cpp[NVC_MFCActiveXControl#5](../mfc/codesnippet/CPP/activex-controls-on-the-internet_5.cpp)]  
   
-7.  Override [ResetData](../mfc/reference/cdatapathproperty-class.md#resetdata) to notify the property to reset its control by adding this line:  
+7.  Override [ResetData](../mfc/reference/cdatapathproperty-class.md#cdatapathproperty__resetdata) to notify the property to reset its control by adding this line:  
   
      [!code-cpp[NVC_MFCActiveXControl#6](../mfc/codesnippet/CPP/activex-controls-on-the-internet_6.cpp)]  
   

@@ -70,7 +70,7 @@ DECLARE_OLECREATE_EX(class_name)
  [!code-cpp[NVC_MFCAxCtl#14](../../mfc/reference/codesnippet/CPP/class-factories-and-licensing_1.h)]  
   
 ##  <a name="implement_olecreate_ex"></a>  IMPLEMENT_OLECREATE_EX  
- Implements your control's class factory and the [GetClassID](../../mfc/reference/colecontrol-class.md#GetClassID) member function of your control class.  
+ Implements your control's class factory and the [GetClassID](../../mfc/reference/colecontrol-class.md#colecontrol__GetClassID) member function of your control class.  
   
 ```   
 IMPLEMENT_OLECREATE_EX(

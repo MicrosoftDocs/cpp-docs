@@ -42,7 +42,7 @@ Your view also plays two important roles in printing its associated document.
   
  The view:  
   
--   Uses the same [OnDraw](../mfc/reference/cview-class.md#ondraw) code to draw on the printer as to draw on the screen.  
+-   Uses the same [OnDraw](../mfc/reference/cview-class.md#cview__ondraw) code to draw on the printer as to draw on the screen.  
   
 -   Manages dividing the document into pages for printing.  
   

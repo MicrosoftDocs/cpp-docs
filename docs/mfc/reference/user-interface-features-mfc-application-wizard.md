@@ -59,7 +59,7 @@ This topic explains the options that you can use to specify the look of your app
 |------------|-----------------|  
 |**Child minimize box**|Specifies whether a child window has a minimize button (enabled by default).|  
 |**Child maximize box**|Specifies whether a child window has a maximize button (enabled by default).|  
-|**Child maximized**|Specifies whether a child window is initially maximized by setting the cs.style flag **WS_MAXIMIZE** in the [PreCreateWindow](../../mfc/reference/cwnd-class.md#precreatewindow) member function of `CChildFrame`.|  
+|**Child maximized**|Specifies whether a child window is initially maximized by setting the cs.style flag **WS_MAXIMIZE** in the [PreCreateWindow](../../mfc/reference/cwnd-class.md#cwnd__precreatewindow) member function of `CChildFrame`.|  
   
  **Command bars (menu/toolbar/ribbon)**  
  Indicates whether your application includes menus, toolbars, and/or a ribbon. Not available for dialog-based applications.  

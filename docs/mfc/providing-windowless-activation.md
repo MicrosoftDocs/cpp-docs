@@ -56,17 +56,17 @@ Window creation code (that is, everything that happens when you call **CreateWin
   
  `COleControl` provides member functions that invoke mouse capture, keyboard focus, scrolling, and other window services from the container as appropriate, including:  
   
--   [GetFocus](../mfc/reference/colecontrol-class.md#getfocus), [SetFocus](../mfc/reference/colecontrol-class.md#setfocus)  
+-   [GetFocus](../mfc/reference/colecontrol-class.md#colecontrol__getfocus), [SetFocus](../mfc/reference/colecontrol-class.md#colecontrol__setfocus)  
   
--   [GetCapture](../mfc/reference/colecontrol-class.md#getcapture), [SetCapture](../mfc/reference/colecontrol-class.md#setcapture), [ReleaseCapture](../mfc/reference/colecontrol-class.md#releasecapture)  
+-   [GetCapture](../mfc/reference/colecontrol-class.md#colecontrol__getcapture), [SetCapture](../mfc/reference/colecontrol-class.md#colecontrol__setcapture), [ReleaseCapture](../mfc/reference/colecontrol-class.md#colecontrol__releasecapture)  
   
--   [GetDC](../mfc/reference/colecontrol-class.md#getdc), [ReleaseDC](../mfc/reference/colecontrol-class.md#releasedc)  
+-   [GetDC](../mfc/reference/colecontrol-class.md#colecontrol__getdc), [ReleaseDC](../mfc/reference/colecontrol-class.md#colecontrol__releasedc)  
   
--   [InvalidateRgn](../mfc/reference/colecontrol-class.md#invalidatergn)  
+-   [InvalidateRgn](../mfc/reference/colecontrol-class.md#colecontrol__invalidatergn)  
   
--   [ScrollWindow](../mfc/reference/colecontrol-class.md#scrollwindow)  
+-   [ScrollWindow](../mfc/reference/colecontrol-class.md#colecontrol__scrollwindow)  
   
--   [GetClientRect](../mfc/reference/colecontrol-class.md#getclientrect)  
+-   [GetClientRect](../mfc/reference/colecontrol-class.md#colecontrol__getclientrect)  
   
  In windowless controls, you should always use the `COleControl` member functions instead of the corresponding `CWnd` member functions or their related Win32 API functions.  
   

@@ -312,7 +312,7 @@ virtual int CompareProps(
 |> 0|The name of the `pProp1` object is greater than the name of the `pProp2` parameter.|  
   
 ### Remarks  
- By default, this method uses the [CString::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) method to compare the `CMFCPropertyGridProperty::m_strName` members of the specified parameters.  
+ By default, this method uses the [CString::Compare](../../atl-mfc-shared/reference/cstringt-class.md#cstringt__compare) method to compare the `CMFCPropertyGridProperty::m_strName` members of the specified parameters.  
   
 ##  <a name="cmfcpropertygridctrl__create"></a>  CMFCPropertyGridCtrl::Create  
  Creates a property grid control and attaches it to the property grid control object.  
