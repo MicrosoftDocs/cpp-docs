@@ -35,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Use Alloc and Free to Improve Memory Performance
-This document shows how to use the [concurrency::Alloc](../Topic/Alloc%20Function.md) and [concurrency::Free](../Topic/Free%20Function.md) functions to improve memory performance. It compares the time that is required to reverse the elements of an array in parallel for three different types that each specify the `new` and `delete` operators.  
+This document shows how to use the [concurrency::Alloc](reference/concurrency-namespace-functions.md#Alloc_function) and [concurrency::Free](reference/concurrency-namespace-functions.md#Free_function) functions to improve memory performance. It compares the time that is required to reverse the elements of an array in parallel for three different types that each specify the `new` and `delete` operators.  
   
  The `Alloc` and `Free` functions are most useful when multiple threads frequently call both `Alloc` and `Free`. The runtime holds a separate memory cache for each thread; therefore, the runtime manages memory without the use of locks or memory barriers.  
   
@@ -76,6 +76,6 @@ Took 656 ms with Alloc/Free.
   
 ## See Also  
  [Memory Management Functions](../../parallel/concrt/memory-management-functions.md)   
- [Alloc Function](../Topic/Alloc%20Function.md)   
- [Free Function](../Topic/Free%20Function.md)
+ [Alloc Function](reference/concurrency-namespace-functions.md#Alloc_function)   
+ [Free Function](reference/concurrency-namespace-functions.md#Free_function)
 

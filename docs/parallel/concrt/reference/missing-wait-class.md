@@ -79,7 +79,7 @@ missing_wait() throw();
   
 ## See Also  
  [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [task_group Class](../Topic/task_group%20Class.md)   
- [task_group::wait Method](../Topic/task_group%20Class.md)   
- [task_group::run_and_wait Method](../Topic/task_group%20Class.md)   
+ [task_group Class](reference/task-group-class.md)   
+ [task_group::wait Method](reference/task-group-class.md)   
+ [task_group::run_and_wait Method](reference/task-group-class.md)   
  [structured_task_group Class](../../../parallel/concrt/reference/structured-task-group-class.md)

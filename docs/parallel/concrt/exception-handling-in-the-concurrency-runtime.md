@@ -44,13 +44,13 @@ The Concurrency Runtime uses C++ exception handling to communicate many kinds of
   
 -   When a task or task group throws an exception, the runtime holds that exception and marshals it to the context that waits for the task or task group to finish.  
   
--   When possible, surround every call to [concurrency::task::get](../Topic/task::get%20Method.md) and [concurrency::task::wait](../Topic/task::wait%20Method.md) with a `try`/`catch` block to handle errors that you can recover from. The runtime terminates the app if a task throws an exception and that exception is not caught by the task, one of its continuations, or the main app.  
+-   When possible, surround every call to [concurrency::task::get](reference/task-class.md#task__get_method) and [concurrency::task::wait](reference/task-class.md#task__wait_method) with a `try`/`catch` block to handle errors that you can recover from. The runtime terminates the app if a task throws an exception and that exception is not caught by the task, one of its continuations, or the main app.  
   
 -   A task-based continuation always runs; it does not matter whether the antecedent task completed successfully, threw an exception, or was canceled. A value-based continuation does not run if the antecedent task throws or cancels.  
   
 -   Because task-based continuations always run, consider whether to add a task-based continuation at the end of your continuation chain. This can help guarantee that your code observes all exceptions.  
   
--   The runtime throws [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) when you call [concurrency::task::get](../Topic/task::get%20Method.md) and that task is canceled.  
+-   The runtime throws [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) when you call [concurrency::task::get](reference/task-class.md#task__get_method) and that task is canceled.  
   
 -   The runtime does not manage exceptions for lightweight tasks and agents.  
   
@@ -73,7 +73,7 @@ The Concurrency Runtime uses C++ exception handling to communicate many kinds of
 ##  <a name="tasks"></a> Tasks and Continuations  
  This section describes how the runtime handles exceptions that are thrown by [concurrency::task](../../parallel/concrt/reference/task-class-concurrency-runtime.md) objects and their continuations. For more information about the task and continuation model, see [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
- When you throw an exception in the body of a work function that you pass to a `task` object, the runtime stores that exception and marshals it to the context that calls [concurrency::task::get](../Topic/task::get%20Method.md) or [concurrency::task::wait](../Topic/task::wait%20Method.md). The document [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md) describes task-based versus value-based continuations, but to summarize, a value-based continuation takes a parameter of type `T` and a task-based continuation takes a parameter of type `task<T>`. If a task that throws has one or more value-based continuations, those continuations are not scheduled to run. The following example illustrates this behavior:  
+ When you throw an exception in the body of a work function that you pass to a `task` object, the runtime stores that exception and marshals it to the context that calls [concurrency::task::get](reference/task-class.md#task__get_method) or [concurrency::task::wait](reference/task-class.md#task__wait_method). The document [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md) describes task-based versus value-based continuations, but to summarize, a value-based continuation takes a parameter of type `T` and a task-based continuation takes a parameter of type `task<T>`. If a task that throws has one or more value-based continuations, those continuations are not scheduled to run. The following example illustrates this behavior:  
   
  [!code-cpp[concrt-eh-task#1](../../parallel/concrt/codesnippet/CPP/exception-handling-in-the-concurrency-runtime_1.cpp)]  
   
@@ -93,7 +93,7 @@ The Concurrency Runtime uses C++ exception handling to communicate many kinds of
  [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) is an important runtime exception type that relates to `task`. The runtime throws `task_canceled` when you call `task::get` and that task is canceled. (Conversely, `task::wait` returns [task_status::canceled](../Topic/task_group_status%20Enumeration.md) and does not throw.) You can catch and handle this exception from a task-based continuation or when you call `task::get`. For more information about task cancellation, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl).  
   
 > [!CAUTION]
->  Never throw `task_canceled` from your code. Call [concurrency::cancel_current_task](../Topic/cancel_current_task%20Function.md) instead.  
+>  Never throw `task_canceled` from your code. Call [concurrency::cancel_current_task](concurrency-namespace-functions.md#cancel_current_task_function) instead.  
   
  The runtime terminates the app if a task throws an exception and that exception is not caught by the task, one of its continuations, or the main app. If your application crashes, you can configure Visual Studio to break when C++ exceptions are thrown. After you diagnose the location of the unhandled exception, use a task-based continuation to handle it.  
   
@@ -102,14 +102,14 @@ The Concurrency Runtime uses C++ exception handling to communicate many kinds of
  [[Top](#top)]  
   
 ##  <a name="task_groups"></a> Task Groups and Parallel Algorithms  
- This section describes how the runtime handles exceptions that are thrown by task groups. This section also applies to parallel algorithms such as [concurrency::parallel_for](../Topic/parallel_for%20Function.md), because these algorithms build on task groups.  
+ This section describes how the runtime handles exceptions that are thrown by task groups. This section also applies to parallel algorithms such as [concurrency::parallel_for](concurrency-namespace-functions.md#parallel_for_function), because these algorithms build on task groups.  
   
 > [!CAUTION]
 >  Make sure that you understand the effects that exceptions have on dependent tasks. For recommended practices about how to use exception handling with tasks or parallel algorithms, see the [Understand how Cancellation and Exception Handling Affect Object Destruction](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md#object-destruction) section in the Best Practices in the Parallel Patterns Library topic.  
   
  For more information about task groups, see [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md). For more information about parallel algorithms, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
   
- When you throw an exception in the body of a work function that you pass to a [concurrency::task_group](../Topic/task_group%20Class.md) or [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) object, the runtime stores that exception and marshals it to the context that calls [concurrency::task_group::wait](../Topic/task_group::wait%20Method.md), [concurrency::structured_task_group::wait](../Topic/structured_task_group::wait%20Method.md), [concurrency::task_group::run_and_wait](../Topic/task_group::run_and_wait%20Method.md), or [concurrency::structured_task_group::run_and_wait](../Topic/structured_task_group::run_and_wait%20Method.md). The runtime also stops all active tasks that are in the task group (including those in child task groups) and discards any tasks that have not yet started.  
+ When you throw an exception in the body of a work function that you pass to a [concurrency::task_group](reference/task-group-class.md) or [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) object, the runtime stores that exception and marshals it to the context that calls [concurrency::task_group::wait](reference/task_group-class.md#task_group__wait_method), [concurrency::structured_task_group::wait](reference/structured_task_group-class.md#structured_task_group__wait_method), [concurrency::task_group::run_and_wait](reference/task_group-class.md#task_group__run_and_wait_method), or [concurrency::structured_task_group::run_and_wait](reference/structured_task_group-class.md#structured_task_group__run_and_wait_method). The runtime also stops all active tasks that are in the task group (including those in child task groups) and discards any tasks that have not yet started.  
   
  The following example shows the basic structure of a work function that throws an exception. The example uses a `task_group` object to print the values of two `point` objects in parallel. The `print_point` work function prints the values of a `point` object to the console. The work function throws an exception if the input value is `NULL`. The runtime stores this exception and marshals it to the context that calls `task_group::wait`.  
   
@@ -128,9 +128,9 @@ X = 15, Y = 30Caught exception: point is NULL.
 ##  <a name="runtime"></a> Exceptions Thrown by the Runtime  
  An exception can result from a call to the runtime. Most exception types, except for [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) and [concurrency::operation_timed_out](../../parallel/concrt/reference/operation-timed-out-class.md), indicate a programming error. These errors are typically unrecoverable, and therefore should not be caught or handled by application code. We suggest that you only catch or handle unrecoverable errors in your application code when you need to diagnose programming errors. However, understanding the exception types that are defined by the runtime can help you diagnose programming errors.  
   
- The exception handling mechanism is the same for exceptions that are thrown by the runtime as exceptions that are thrown by work functions. For example, the [concurrency::receive](../Topic/receive%20Function.md) function throws `operation_timed_out` when it does not receive a message in the specified time period. If `receive` throws an exception in a work function that you pass to a task group, the runtime stores that exception and marshals it to the context that calls `task_group::wait`, `structured_task_group::wait`, `task_group::run_and_wait`, or `structured_task_group::run_and_wait`.  
+ The exception handling mechanism is the same for exceptions that are thrown by the runtime as exceptions that are thrown by work functions. For example, the [concurrency::receive](reference/concurrency-namespace-functions.md#receive_function) function throws `operation_timed_out` when it does not receive a message in the specified time period. If `receive` throws an exception in a work function that you pass to a task group, the runtime stores that exception and marshals it to the context that calls `task_group::wait`, `structured_task_group::wait`, `task_group::run_and_wait`, or `structured_task_group::run_and_wait`.  
   
- The following example uses the [concurrency::parallel_invoke](../Topic/parallel_invoke%20Function.md) algorithm to run two tasks in parallel. The first task waits five seconds and then sends a message to a message buffer. The second task uses the `receive` function to wait three seconds to receive a message from the same message buffer. The `receive` function throws `operation_timed_out` if it does not receive the message in the time period.  
+ The following example uses the [concurrency::parallel_invoke](concurrency-namespace-functions.md#parallel_invoke_function) algorithm to run two tasks in parallel. The first task waits five seconds and then sends a message to a message buffer. The second task uses the `receive` function to wait three seconds to receive a message from the same message buffer. The `receive` function throws `operation_timed_out` if it does not receive the message in the time period.  
   
  [!code-cpp[concrt-eh-time-out#1](../../parallel/concrt/codesnippet/CPP/exception-handling-in-the-concurrency-runtime_5.cpp)]  
   
@@ -189,7 +189,7 @@ the status of the agent is: done
   
  Because the `try`-`catch` block exists outside the `while` loop, the agent ends processing when it encounters the first error. If the `try`-`catch` block was inside the `while` loop, the agent would continue after an error occurs.  
   
- This example stores exceptions in a message buffer so that another component can monitor the agent for errors as it runs. This example uses a [concurrency::single_assignment](../../parallel/concrt/reference/single-assignment-class.md) object to store the error. In the case where an agent handles multiple exceptions, the `single_assignment` class stores only the first message that is passed to it. To store only the last exception, use the [concurrency::overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md) class. To store all exceptions, use the [concurrency::unbounded_buffer](../Topic/unbounded_buffer%20Class.md) class. For more information about these message blocks, see [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md).  
+ This example stores exceptions in a message buffer so that another component can monitor the agent for errors as it runs. This example uses a [concurrency::single_assignment](../../parallel/concrt/reference/single-assignment-class.md) object to store the error. In the case where an agent handles multiple exceptions, the `single_assignment` class stores only the first message that is passed to it. To store only the last exception, use the [concurrency::overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md) class. To store all exceptions, use the [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) class. For more information about these message blocks, see [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md).  
   
  For more information about asynchronous agents, see [Asynchronous Agents](../../parallel/concrt/asynchronous-agents.md).  
   

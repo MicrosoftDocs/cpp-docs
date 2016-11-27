@@ -46,31 +46,31 @@ translation.priority.ht:
   
  Tools such as the [Concurrency Visualizer](/visualstudio/profiling/concurrency-visualizer) utilize this functionality; therefore, you typically do not have to work with these events directly. However, these events are useful when you are developing a custom profiler or when you use event tracing tools such as [Xperf](http://go.microsoft.com/fwlink/LinkID=160628).  
   
- The Concurrency Runtime raises these events only when tracing is enabled. Call the [concurrency::EnableTracing](../Topic/EnableTracing%20Function.md) function to enable event tracing and the [concurrency::DisableTracing](../Topic/DisableTracing%20Function.md) function to disable tracing.  
+ The Concurrency Runtime raises these events only when tracing is enabled. Call the [concurrency::EnableTracing](reference/concurrency-namespace-functions.md#EnableTracing_function) function to enable event tracing and the [concurrency::DisableTracing](reference/concurrency-namespace-functions.md#DisableTracing_function) function to disable tracing.  
   
  The following table describes the events that the runtime raises when event tracing is enabled:  
   
 |Event|Description|Value|  
 |-----------|-----------------|-----------|  
 |[concurrency::ConcRT_ProviderGuid](../Topic/ConcRT_ProviderGuid%20Constant.md)|The ETW provider identifier for the Concurrency Runtime.|`f7b697a3-4db5-4d3b-be71-c4d284e6592f`|  
-|[concurrency::ContextEventGuid](../Topic/ContextEventGuid%20Constant.md)|Marks events that are related to contexts.|`5727a00f-50be-4519-8256-f7699871fecb`|  
-|[concurrency::PPLParallelForEventGuid](../Topic/PPLParallelForEventGuid%20Constant.md)|Marks the entrance and exit to calls to the [concurrency::parallel_for](../Topic/parallel_for%20Function.md) algorithm.|`31c8da6b-6165-4042-8b92-949e315f4d84`|  
-|[concurrency::PPLParallelForeachEventGuid](../Topic/PPLParallelForeachEventGuid%20Constant.md)|Marks the entrance and exit to calls to the [concurrency::parallel_for_each](../Topic/parallel_for_each%20Function.md) algorithm.|`5cb7d785-9d66-465d-bae1-4611061b5434`|  
-|[concurrency::PPLParallelInvokeEventGuid](../Topic/PPLParallelInvokeEventGuid%20Constant.md)|Marks the entrance and exit to calls to the [concurrency::parallel_invoke](../Topic/parallel_invoke%20Function.md) algorithm.|`d1b5b133-ec3d-49f4-98a3-464d1a9e4682`|  
-|[concurrency::SchedulerEventGuid](../Topic/SchedulerEventGuid%20Constant.md)|Marks events that are related to the [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md).|`e2091f8a-1e0a-4731-84a2-0dd57c8a5261`|  
-|[concurrency::VirtualProcessorEventGuid](../Topic/VirtualProcessorEventGuid%20Constant.md)|Marks events that are related to virtual processors.|`2f27805f-1676-4ecc-96fa-7eb09d44302f`|  
+|[concurrency::ContextEventGuid](reference/concurrency-namespace-constants1.md#ContextEventGuid_constant)|Marks events that are related to contexts.|`5727a00f-50be-4519-8256-f7699871fecb`|  
+|[concurrency::PPLParallelForEventGuid](reference/concurrency-namespace-constants1.md#PPLParallelForEventGuid_constant)|Marks the entrance and exit to calls to the [concurrency::parallel_for](concurrency-namespace-functions.md#parallel_for_function) algorithm.|`31c8da6b-6165-4042-8b92-949e315f4d84`|  
+|[concurrency::PPLParallelForeachEventGuid](reference/concurrency-namespace-constants1.md#PPLParallelForeachEventGuid_constant)|Marks the entrance and exit to calls to the [concurrency::parallel_for_each](concurrency-namespace-functions.md#parallel_for_each_function) algorithm.|`5cb7d785-9d66-465d-bae1-4611061b5434`|  
+|[concurrency::PPLParallelInvokeEventGuid](reference/concurrency-namespace-constants1.md#PPLParallelInvokeEventGuid_constant)|Marks the entrance and exit to calls to the [concurrency::parallel_invoke](concurrency-namespace-functions.md#parallel_invoke_function) algorithm.|`d1b5b133-ec3d-49f4-98a3-464d1a9e4682`|  
+|[concurrency::SchedulerEventGuid](reference/concurrency-namespace-constants1.md#SchedulerEventGuid_constant)|Marks events that are related to the [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md).|`e2091f8a-1e0a-4731-84a2-0dd57c8a5261`|  
+|[concurrency::VirtualProcessorEventGuid](reference/concurrency-namespace-constants1.md#VirtualProcessorEventGuid_constant)|Marks events that are related to virtual processors.|`2f27805f-1676-4ecc-96fa-7eb09d44302f`|  
   
  The Concurrency Runtime defines, but does not currently raise, the following events. The runtime reserves these events for future use:  
   
--   [concurrency::ConcRTEventGuid](../Topic/ConcRTEventGuid%20Constant.md)  
+-   [concurrency::ConcRTEventGuid](reference/concurrency-namespace-constants1.md#ConcRTEventGuid_constant)  
   
--   [concurrency::ScheduleGroupEventGuid](../Topic/SchedulerEventGuid%20Constant.md)  
+-   [concurrency::ScheduleGroupEventGuid](reference/concurrency-namespace-constants1.md#SchedulerEventGuid_constant)  
   
--   [concurrency::ChoreEventGuid](../Topic/ChoreEventGuid%20Constant.md)  
+-   [concurrency::ChoreEventGuid](reference/concurrency-namespace-constants1.md#ChoreEventGuid_constant)  
   
--   [concurrency::LockEventGuid](../Topic/LockEventGuid%20Constant.md)  
+-   [concurrency::LockEventGuid](reference/concurrency-namespace-constants1.md#LockEventGuid_constant)  
   
--   [concurrency::ResourceManagerEventGuid](../Topic/ResourceManagerEventGuid%20Constant.md)  
+-   [concurrency::ResourceManagerEventGuid](reference/concurrency-namespace-constants1.md#ResourceManagerEventGuid_constant)  
   
  The [concurrency::ConcRT_EventType](../Topic/ConcRT_EventType%20Enumeration.md) enumeration specifies the possible operations that an event tracks. For example, at the entrance of the `parallel_for` algorithm, the runtime raises the `PPLParallelForEventGuid` event and provides `CONCRT_EVENT_START` as the operation. Before the `parallel_for` algorithm returns, the runtime again raises the `PPLParallelForEventGuid` event and provides `CONCRT_EVENT_END` as the operation.  
   

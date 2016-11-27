@@ -37,11 +37,11 @@ translation.priority.ht:
 This example shows how to use cancellation to implement a basic parallel search algorithm.  
   
 ## Example  
- The following example uses cancellation to search for an element in an array. The `parallel_find_any` function uses the [concurrency::parallel_for](../Topic/parallel_for%20Function.md) algorithm and the [concurrency::run_with_cancellation_token](../Topic/run_with_cancellation_token%20Function.md) function to search for the position that contains the given value. When the parallel loop finds the value, it calls the [concurrency::cancellation_token_source::cancel](../Topic/cancellation_token_source::cancel%20Method.md) method to cancel future work.  
+ The following example uses cancellation to search for an element in an array. The `parallel_find_any` function uses the [concurrency::parallel_for](concurrency-namespace-functions.md#parallel_for_function) algorithm and the [concurrency::run_with_cancellation_token](concurrency-namespace-functions.md#run_with_cancellation_token_function) function to search for the position that contains the given value. When the parallel loop finds the value, it calls the [concurrency::cancellation_token_source::cancel](reference/cancellation_token_source-class.md#cancellation_token_source__cancel_method) method to cancel future work.  
   
  [!code-cpp[concrt-parallel-array-search#1](../../parallel/concrt/codesnippet/CPP/how-to-use-cancellation-to-break-from-a-parallel-loop_1.cpp)]  
   
- The [concurrency::parallel_for](../Topic/parallel_for%20Function.md) algorithm acts concurrently. Therefore, it does not perform the operations in a pre-determined order. If the array contains multiple instances of the value, the result can be any one of its positions.  
+ The [concurrency::parallel_for](concurrency-namespace-functions.md#parallel_for_function) algorithm acts concurrently. Therefore, it does not perform the operations in a pre-determined order. If the array contains multiple instances of the value, the result can be any one of its positions.  
   
 ## Compiling the Code  
  Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `parallel-array-search.cpp` and then run the following command in a Visual Studio Command Prompt window.  
@@ -51,5 +51,5 @@ This example shows how to use cancellation to implement a basic parallel search 
 ## See Also  
  [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl)   
  [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)   
- [parallel_for Function](../Topic/parallel_for%20Function.md)   
+ [parallel_for Function](concurrency-namespace-functions.md#parallel_for_function)   
  [cancellation_token_source Class](../../parallel/concrt/reference/cancellation-token-source-class.md)

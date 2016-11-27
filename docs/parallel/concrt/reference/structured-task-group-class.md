@@ -217,5 +217,5 @@ task_group_status wait();
   
 ## See Also  
  [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [task_group Class](../Topic/task_group%20Class.md)   
+ [task_group Class](reference/task-group-class.md)   
  [task_handle Class](../../../parallel/concrt/reference/task-handle-class.md)

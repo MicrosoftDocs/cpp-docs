@@ -36,7 +36,7 @@ translation.priority.mt:
 # Parallel Algorithms
 The Parallel Patterns Library (PPL) provides algorithms that concurrently perform work on collections of data. These algorithms resemble those provided by the Standard Template Library (STL).  
   
- The parallel algorithms are composed from existing functionality in the Concurrency Runtime. For example, the [concurrency::parallel_for](../Topic/parallel_for%20Function.md) algorithm uses a [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) object to perform the parallel loop iterations. The `parallel_for` algorithm partitions work in an optimal way given the available number of computing resources.  
+ The parallel algorithms are composed from existing functionality in the Concurrency Runtime. For example, the [concurrency::parallel_for](concurrency-namespace-functions.md#parallel_for_function) algorithm uses a [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) object to perform the parallel loop iterations. The `parallel_for` algorithm partitions work in an optimal way given the available number of computing resources.  
   
 ##  <a name="top"></a> Sections  
   
@@ -61,7 +61,7 @@ The Parallel Patterns Library (PPL) provides algorithms that concurrently perfor
     - [Choosing a Sorting Algorithm](#choose_sort)  
   
 ##  <a name="parallel_for"></a> The parallel_for Algorithm  
- The [concurrency::parallel_for](../Topic/parallel_for%20Function.md) algorithm repeatedly performs the same task in parallel. Each of these tasks is parameterized by an iteration value. This algorithm is useful when you have a loop body that does not share resources among iterations of that loop.  
+ The [concurrency::parallel_for](concurrency-namespace-functions.md#parallel_for_function) algorithm repeatedly performs the same task in parallel. Each of these tasks is parameterized by an iteration value. This algorithm is useful when you have a loop body that does not share resources among iterations of that loop.  
   
  The `parallel_for` algorithm partitions tasks in an optimum way for parallel execution. It uses a work-stealing algorithm and range stealing to balance these partitions when workloads are unbalanced. When one loop iteration blocks cooperatively, the runtime redistributes the range of iterations that is assigned to the current thread to other threads or processors. Similarly, when a thread completes a range of iterations, the runtime redistributes work from other threads to that thread. The `parallel_for` algorithm also supports *nested parallelism*. When one parallel loop contains another parallel loop, the runtime coordinates processing resources between the loop bodies in an efficient way for parallel execution.  
   
@@ -102,7 +102,7 @@ The Parallel Patterns Library (PPL) provides algorithms that concurrently perfor
  [[Top](#top)]  
   
 ##  <a name="parallel_for_each"></a> The parallel_for_each Algorithm  
- The [concurrency::parallel_for_each](../Topic/parallel_for_each%20Function.md) algorithm performs tasks on an iterative container, such as those provided by the STL, in parallel. It uses the same partitioning logic that the `parallel_for` algorithm uses.  
+ The [concurrency::parallel_for_each](concurrency-namespace-functions.md#parallel_for_each_function) algorithm performs tasks on an iterative container, such as those provided by the STL, in parallel. It uses the same partitioning logic that the `parallel_for` algorithm uses.  
   
  The `parallel_for_each` algorithm resembles the STL [std::for_each](http://msdn.microsoft.com/Library/8cb2ae72-bef6-488b-b011-0475c0787e33) algorithm, except that the `parallel_for_each` algorithm executes the tasks concurrently. Like other parallel algorithms, `parallel_for_each` does not execute the tasks in a specific order.  
   
@@ -126,7 +126,7 @@ The Parallel Patterns Library (PPL) provides algorithms that concurrently perfor
  [[Top](#top)]  
   
 ##  <a name="parallel_invoke"></a> The parallel_invoke Algorithm  
- The [concurrency::parallel_invoke](../Topic/parallel_invoke%20Function.md) algorithm executes a set of tasks in parallel. It does not return until each task finishes. This algorithm is useful when you have several independent tasks that you want to execute at the same time.  
+ The [concurrency::parallel_invoke](concurrency-namespace-functions.md#parallel_invoke_function) algorithm executes a set of tasks in parallel. It does not return until each task finishes. This algorithm is useful when you have several independent tasks that you want to execute at the same time.  
   
  The `parallel_invoke` algorithm takes as its parameters a series of work functions (lambda functions, function objects, or function pointers). The `parallel_invoke` algorithm is overloaded to take between two and ten parameters. Every function that you pass to `parallel_invoke` must take zero parameters.  
   
@@ -148,7 +148,7 @@ The Parallel Patterns Library (PPL) provides algorithms that concurrently perfor
  [[Top](#top)]  
   
 ##  <a name="parallel_transform_reduce"></a> The parallel_transform and parallel_reduce Algorithms  
- The [concurrency::parallel_transform](../Topic/parallel_transform%20Function.md) and [concurrency::parallel_reduce](../Topic/parallel_reduce%20Function.md) algorithms are parallel versions of the STL algorithms [std::transform](http://msdn.microsoft.com/Library/99396865-54fb-47dd-a661-38ce03467854) and [std::accumulate](../Topic/accumulate.md), respectively. The Concurrency Runtime versions behave like the STL versions except that the operation order is not determined because they execute in parallel. Use these algorithms when you work with a set that is large enough to get performance and scalability benefits from being processed in parallel.  
+ The [concurrency::parallel_transform](concurrency-namespace-functions.md#parallel_transform_function) and [concurrency::parallel_reduce](concurrency-namespace-functions.md#parallel_reduce_function) algorithms are parallel versions of the STL algorithms [std::transform](http://msdn.microsoft.com/Library/99396865-54fb-47dd-a661-38ce03467854) and [std::accumulate](../Topic/accumulate.md), respectively. The Concurrency Runtime versions behave like the STL versions except that the operation order is not determined because they execute in parallel. Use these algorithms when you work with a set that is large enough to get performance and scalability benefits from being processed in parallel.  
   
 > [!IMPORTANT]
 >  The `parallel_transform` and `parallel_reduce` algorithms support only random access, bi-directional, and forward iterators because these iterators produce stable memory addresses. Also, these iterators must produce non-`const` l-values.  
@@ -240,7 +240,7 @@ The Parallel Patterns Library (PPL) provides algorithms that concurrently perfor
  [[Top](#top)]  
   
 ##  <a name="parallel_sorting"></a> Parallel Sorting  
- The PPL provides three sorting algorithms: [concurrency::parallel_sort](../Topic/parallel_sort%20Function.md), [concurrency::parallel_buffered_sort](../Topic/parallel_buffered_sort%20Function.md), and [concurrency::parallel_radixsort](../Topic/parallel_radixsort%20Function.md). These sorting algorithms are useful when you have a data set that can benefit from being sorted in parallel. In particular, sorting in parallel is useful when you have a large dataset or when you use a computationally-expensive compare operation to sort your data. Each of these algorithms sorts elements in place.  
+ The PPL provides three sorting algorithms: [concurrency::parallel_sort](concurrency-namespace-functions.md#parallel_sort_function), [concurrency::parallel_buffered_sort](concurrency-namespace-functions.md#parallel_buffered_sort_function), and [concurrency::parallel_radixsort](concurrency-namespace-functions.md#parallel_radixsort_function). These sorting algorithms are useful when you have a data set that can benefit from being sorted in parallel. In particular, sorting in parallel is useful when you have a large dataset or when you use a computationally-expensive compare operation to sort your data. Each of these algorithms sorts elements in place.  
   
  The `parallel_sort` and `parallel_buffered_sort` algorithms are both compare-based algorithms. That is, they compare elements by value. The `parallel_sort` algorithm has no additional memory requirements, and is suitable for general-purpose sorting. The `parallel_buffered_sort` algorithm can perform better than `parallel_sort`, but it requires O(N) space.  
   
@@ -331,11 +331,11 @@ The Parallel Patterns Library (PPL) provides algorithms that concurrently perfor
 |[Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)|Explains the role of exception handling in the Concurrency Runtime.|  
   
 ## Reference  
- [parallel_for Function](../Topic/parallel_for%20Function.md)  
+ [parallel_for Function](concurrency-namespace-functions.md#parallel_for_function)  
   
- [parallel_for_each Function](../Topic/parallel_for_each%20Function.md)  
+ [parallel_for_each Function](concurrency-namespace-functions.md#parallel_for_each_function)  
   
- [parallel_invoke Function](../Topic/parallel_invoke%20Function.md)  
+ [parallel_invoke Function](concurrency-namespace-functions.md#parallel_invoke_function)  
   
  [affinity_partitioner Class](../../parallel/concrt/reference/affinity-partitioner-class.md)  
   
@@ -345,9 +345,9 @@ The Parallel Patterns Library (PPL) provides algorithms that concurrently perfor
   
  [static_partitioner Class](../../parallel/concrt/reference/static-partitioner-class.md)  
   
- [parallel_sort Function](../Topic/parallel_sort%20Function.md)  
+ [parallel_sort Function](concurrency-namespace-functions.md#parallel_sort_function)  
   
- [parallel_buffered_sort Function](../Topic/parallel_buffered_sort%20Function.md)  
+ [parallel_buffered_sort Function](concurrency-namespace-functions.md#parallel_buffered_sort_function)  
   
- [parallel_radixsort Function](../Topic/parallel_radixsort%20Function.md)
+ [parallel_radixsort Function](concurrency-namespace-functions.md#parallel_radixsort_function)
 

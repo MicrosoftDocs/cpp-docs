@@ -66,7 +66,7 @@ The Concurrency Runtime enables a variety of programming models. These models ma
   
 ## Related Topics  
  [How to: Convert an OpenMP parallel for Loop to Use the Concurrency Runtime](../../parallel/concrt/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime.md)  
- Given a basic loop that uses the OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) and [for](../../parallel/openmp/reference/for-openmp.md) directives, demonstrates how to convert it to use the Concurrency Runtime [concurrency::parallel_for](../Topic/parallel_for%20Function.md) algorithm.  
+ Given a basic loop that uses the OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) and [for](../../parallel/openmp/reference/for-openmp.md) directives, demonstrates how to convert it to use the Concurrency Runtime [concurrency::parallel_for](concurrency-namespace-functions.md#parallel_for_function) algorithm.  
   
  [How to: Convert an OpenMP Loop that Uses Cancellation to Use the Concurrency Runtime](../../parallel/concrt/convert-an-openmp-loop-that-uses-cancellation.md)  
  Given an OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[for](../../parallel/openmp/reference/for-openmp.md) loop that does not require all iterations to run, demonstrates how to convert it to use the Concurrency Runtime cancellation mechanism.  

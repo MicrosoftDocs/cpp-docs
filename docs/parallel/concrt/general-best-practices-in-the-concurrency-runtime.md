@@ -69,7 +69,7 @@ This document describes best practices that apply to multiple areas of the Concu
   
  1: 250000000 1: 500000000 1: 750000000 1: 1000000000 2: 250000000 2: 500000000 2: 750000000 2: 1000000000  
   
- There are several ways to enable cooperation between the two tasks. One way is to occasionally yield to the task scheduler in a long-running task. The following example modifies the `task` function to call the [concurrency::Context::Yield](../Topic/Context::Yield%20Method.md) method to yield execution to the task scheduler so that another task can run.  
+ There are several ways to enable cooperation between the two tasks. One way is to occasionally yield to the task scheduler in a long-running task. The following example modifies the `task` function to call the [concurrency::Context::Yield](reference/Context-class.md#Context__Yield_method) method to yield execution to the task scheduler so that another task can run.  
   
  [!code-cpp[concrt-cooperative-tasks#2](../../parallel/concrt/codesnippet/CPP/general-best-practices-in-the-concurrency-runtime_2.cpp)]  
   
@@ -86,7 +86,7 @@ This document describes best practices that apply to multiple areas of the Concu
 2: 1000000000  
 ```  
   
- The `Context::Yield` method yields only another active thread on the scheduler to which the current thread belongs, a lightweight task, or another operating system thread. This method does not yield to work that is scheduled to run in a [concurrency::task_group](../Topic/task_group%20Class.md) or [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) object but has not yet started.  
+ The `Context::Yield` method yields only another active thread on the scheduler to which the current thread belongs, a lightweight task, or another operating system thread. This method does not yield to work that is scheduled to run in a [concurrency::task_group](reference/task-group-class.md) or [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) object but has not yet started.  
   
  There are other ways to enable cooperation among long-running tasks. You can break a large task into smaller subtasks. You can also enable oversubscription during a lengthy task. Oversubscription lets you create more threads than the available number of hardware threads. Oversubscription is especially useful when a lengthy task contains a high amount of latency, for example, reading data from disk or from a network connection. For more information about lightweight tasks and oversubscription, see [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md).  
   
@@ -97,7 +97,7 @@ This document describes best practices that apply to multiple areas of the Concu
   
  There are cases in which you cannot use the cooperative blocking mechanism that is provided by the Concurrency Runtime. For example, an external library that you use might use a different synchronization mechanism. Another example is when you perform an operation that could have a high amount of latency, for example, when you use the Windows API `ReadFile` function to read data from a network connection. In these cases, oversubscription can enable other tasks to run when another task is idle. Oversubscription lets you create more threads than the available number of hardware threads.  
   
- Consider the following function, `download`, which downloads the file at the given URL. This example uses the [concurrency::Context::Oversubscribe](../Topic/Context::Oversubscribe%20Method.md) method to temporarily increase the number of active threads.  
+ Consider the following function, `download`, which downloads the file at the given URL. This example uses the [concurrency::Context::Oversubscribe](reference/Context-class.md#Context__Oversubscribe_method) method to temporarily increase the number of active threads.  
   
  [!code-cpp[concrt-download-oversubscription#4](../../parallel/concrt/codesnippet/CPP/general-best-practices-in-the-concurrency-runtime_3.cpp)]  
   
@@ -106,7 +106,7 @@ This document describes best practices that apply to multiple areas of the Concu
  [[Top](#top)]  
   
 ##  <a name="memory"></a> Use Concurrent Memory Management Functions When Possible  
- Use the memory management functions, [concurrency::Alloc](../Topic/Alloc%20Function.md) and [concurrency::Free](../Topic/Free%20Function.md), when you have fine-grained tasks that frequently allocate small objects that have a relatively short lifetime. The Concurrency Runtime holds a separate memory cache for each running thread. The `Alloc` and `Free` functions allocate and free memory from these caches without the use of locks or memory barriers.  
+ Use the memory management functions, [concurrency::Alloc](reference/concurrency-namespace-functions.md#Alloc_function) and [concurrency::Free](reference/concurrency-namespace-functions.md#Free_function), when you have fine-grained tasks that frequently allocate small objects that have a relatively short lifetime. The Concurrency Runtime holds a separate memory cache for each running thread. The `Alloc` and `Free` functions allocate and free memory from these caches without the use of locks or memory barriers.  
   
  For more information about these memory management functions, see [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md). For an example that uses these functions, see [How to: Use Alloc and Free to Improve Memory Performance](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md).  
   

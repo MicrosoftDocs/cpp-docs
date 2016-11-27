@@ -37,7 +37,7 @@ translation.priority.mt:
 # How to: Use a Message Block Filter
 This document demonstrates how to use a filter function to enable an asynchronous message block to accept or reject a message on the basis of the payload of that message.  
   
- When you create a message block object such as a [concurrency::unbounded_buffer](../Topic/unbounded_buffer%20Class.md), a [concurrency::call](../../parallel/concrt/reference/call-class.md), or a [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md), you can supply a *filter function* that determines whether the message block accepts or rejects a message. A filter function is a useful way to guarantee that a message block receives only certain values.  
+ When you create a message block object such as a [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md), a [concurrency::call](../../parallel/concrt/reference/call-class.md), or a [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md), you can supply a *filter function* that determines whether the message block accepts or rejects a message. A filter function is a useful way to guarantee that a message block receives only certain values.  
   
  Filter functions are important because they enable you to connect message blocks to form *dataflow networks*. In a dataflow network, message blocks control the flow of data by processing only those messages that meet specific criteria. Compare this to the control-flow model, where the flow of data is regulated by using control structures such as conditional statements, loops, and so on.  
   
@@ -57,7 +57,7 @@ This document demonstrates how to use a filter function to enable an asynchronou
   
  [!code-cpp[concrt-primes-filter#2](../../parallel/concrt/codesnippet/CPP/how-to-use-a-message-block-filter_2.cpp)]  
   
- The `transformer` object now processes only those values that are prime. In the previous example, `transformer` object processes all messages. Therefore, the previous example must receive the same number of messages that it sends. This example uses the result of the [concurrency::send](../Topic/send%20Function.md) function to determine how many messages to receive from the `transformer` object. The `send` function returns `true` when the message buffer accepts the message and `false` when the message buffer rejects the message. Therefore, the number of times that the message buffer accepts the message matches the count of prime numbers.  
+ The `transformer` object now processes only those values that are prime. In the previous example, `transformer` object processes all messages. Therefore, the previous example must receive the same number of messages that it sends. This example uses the result of the [concurrency::send](reference/concurrency-namespace-functions.md#send_function) function to determine how many messages to receive from the `transformer` object. The `send` function returns `true` when the message buffer accepts the message and `false` when the message buffer rejects the message. Therefore, the number of times that the message buffer accepts the message matches the count of prime numbers.  
   
 ## Example  
  The following code shows the complete example. The example calls both the `count_primes` function and the `count_primes_filter` function.  
