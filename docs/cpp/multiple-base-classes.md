@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Multiple Base Classes
-As described in [Multiple Inheritance](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca), a class can be derived from more than one base class. In a multiple-inheritance model (where classes are derived from more than one base class), the base classes are specified using the *base-list* grammar element (see the Grammar section in [Overview](../misc/overview-of-derived-classes.md)). For example, the class declaration for `CollectionOfBook`, derived from `Collection` and `Book`, can be specified:  
+As described in [Multiple Inheritance](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca), a class can be derived from more than one base class. In a multiple-inheritance model (where classes are derived from more than one base class), the base classes are specified using the *base-list* grammar element. For example, the class declaration for `CollectionOfBook`, derived from `Collection` and `Book`, can be specified:  
   
 ```  
 // deriv_MultipleBaseClasses.cpp  
@@ -158,7 +158,7 @@ pc->b();
   
 1.  If access to the name is ambiguous (as just described), an error message is generated.  
   
-2.  If overloaded functions are unambiguous, they are resolved. (For more information about function overloading ambiguity, see [Argument Matching](../misc/argument-matching.md).)  
+2.  If overloaded functions are unambiguous, they are resolved.
   
 3.  If access to the name violates member-access permission, an error message is generated. (For more information, see [Member-Access Control](../cpp/member-access-control-cpp.md).)  
   

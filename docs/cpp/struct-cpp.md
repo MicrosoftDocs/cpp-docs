@@ -50,7 +50,7 @@ The `struct` keyword defines a structure type and/or a variable of a structure t
   
 #### Parameters  
  `template-spec`  
- Optional template specifications. For more information, refer to [Template Specifications](../Topic/Template%20Specifications.md).  
+ Optional template specifications. For more information, refer to [Template Specifications](templates-cpp.md).  
   
  `struct`  
  The `struct` keyword.  

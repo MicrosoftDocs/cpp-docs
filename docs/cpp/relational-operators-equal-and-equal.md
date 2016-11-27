@@ -103,7 +103,7 @@ int main() {
   
  Two pointers of the same type that point to the same object are guaranteed to compare equal. If two pointers to nonstatic members of an object are compared, the following rules apply:  
   
--   If the class type is not a union, and if the two members are not separated by an *access-specifier*, such as public, protected, or private, the pointer to the member declared last will compare greater than the pointer to the member declared earlier. (For information on *access-specifier*, see the Syntax section in [Access Specifiers](../misc/access-specifiers.md).)  
+-   If the class type is not a union, and if the two members are not separated by an *access-specifier*, such as public, protected, or private, the pointer to the member declared last will compare greater than the pointer to the member declared earlier.  
   
 -   If the two members are separated by an *access-specifier*, the results are undefined.  
   

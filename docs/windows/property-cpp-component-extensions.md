@@ -175,19 +175,6 @@ modifierpropertytypedefault[index];
   
  `property` is a context-sensitive keyword.  For more information, see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
   
- For more information about properties, see  
-  
--   [Indexed Properties](../misc/how-to-use-indexed-properties.md)  
-  
--   [Static Properties](../misc/how-to-declare-and-use-static-properties.md)  
-  
--   [Virtual Properties](../misc/how-to-declare-and-use-virtual-properties.md)  
-  
--   [Multidimensional Properties](../misc/how-to-use-multidimensional-properties.md)  
-  
--   [Overloading Property Accessor Methods](../misc/how-to-overload-property-accessor-methods.md)  
-  
--   [How to: Declare Abstract and Sealed Properties](../misc/how-to-declare-abstract-and-sealed-properties.md)  
   
 ### Requirements  
  Compiler option: **/clr**  

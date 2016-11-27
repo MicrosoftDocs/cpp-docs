@@ -142,7 +142,7 @@ T* factory(A1&& a1, A2&& a2)
 }  
 ```  
   
- This example uses rvalue references as the parameters to the `factory` function. The purpose of the [std::forward](../Topic/forward.md) function is to forward the parameters of the factory function to the constructor of the template class.  
+ This example uses rvalue references as the parameters to the `factory` function. The purpose of the [std::forward](../standard-library/memory-functions.md#forward) function is to forward the parameters of the factory function to the constructor of the template class.  
   
  The following example shows the `main` function that uses the revised `factory` function to create instances of the `W`, `X`, `Y`, and `Z` classes. The revised `factory` function forwards its parameters (either lvalues or rvalues) to the appropriate class constructor.  
   

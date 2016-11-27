@@ -53,7 +53,7 @@ The `class` keyword declares a class type or defines an object of a class type.
   
 #### Parameters  
  `template-spec`  
- Optional template specifications. For more information, refer to [Template Specifications](../Topic/Template%20Specifications.md).  
+ Optional template specifications. For more information, refer to [Templates](templates-cpp.md).  
   
  `class`  
  The `class` keyword.  

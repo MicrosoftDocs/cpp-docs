@@ -66,7 +66,7 @@ Controls inline expansion of functions.
  Disables inline expansions. By default, expansion occurs at the compiler's discretion on all functions, often referred to as *auto-inlining*.  
   
  **1**  
- Allows expansion only of functions marked [inline](../../misc/inline-inline-forceinline.md), [__inline](../../misc/inline-inline-forceinline.md), or [__forceinline](../../misc/inline-inline-forceinline.md), or in a C++ member function defined in a class declaration.  
+ Allows expansion only of functions marked [inline](../../cpp/inline-functions-cpp.md), `__inline`, or `__forceinline`, or in a C++ member function defined in a class declaration.  
   
  **2**  
  The default value. Allows expansion of functions marked as `inline`, `__inline`, or `__forceinline`, and any other function that the compiler chooses.  

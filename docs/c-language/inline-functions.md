@@ -58,5 +58,3 @@ translation.priority.ht:
   
  **END Microsoft Specific**  
   
-## See Also  
- [inline, __inline, \__forceinline](../misc/inline-inline-forceinline.md)

@@ -264,8 +264,6 @@ exception_ptr 1: Caught a  myException exception.
  **Header:** \<exception>  
   
 ## See Also  
- [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)   
- [EXCEPTION_RECORD Structure](#base.exception_record_str)   
- [Handler Syntax](#base.handler_syntax)   
+ [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)     
  [/EH (Exception Handling Model)](../build/reference/eh-exception-handling-model.md)   
  [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md)

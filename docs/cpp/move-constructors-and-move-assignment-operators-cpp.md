@@ -324,7 +324,7 @@ MemoryBlock(MemoryBlock&& other)
 }  
 ```  
   
- The [std::move](../Topic/move.md) function preserves the rvalue property of the `other` parameter.  
+ The [std::move](../standard-library/memory-functions.md#move) function preserves the rvalue property of the `other` parameter.  
   
 ## See Also  
  [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md)   

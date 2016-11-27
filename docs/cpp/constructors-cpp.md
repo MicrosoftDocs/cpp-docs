@@ -41,33 +41,31 @@ A constructor is a kind of member function that initializes an instance of its c
   
 -   [Order of Construction](#order_of_construction)  
   
--   [Member Lists](../cpp/constructors-cpp.md#member_lists)  
+-   [Member Lists](#member_lists)  
   
--   [Explicit Constructors](../cpp/constructors-cpp.md#explicit_constructors)  
+-   [Explicit Constructors](#explicit_constructors)  
   
--   [Default Constructors](../cpp/constructors-cpp.md#default_constructors)  
+-   [Default Constructors](#default_constructors)  
   
--   [Copy and Move Constructors](../cpp/constructors-cpp.md#copy_and_move_constructors)  
+-   [Copy and Move Constructors](#copy_and_move_constructors)  
   
--   [Explicitly Defaulted and Deleted Constructors](../cpp/constructors-cpp.md#explicitly_defaulted_and_deleted_constructors)  
+-   [Explicitly Defaulted and Deleted Constructors](#explicitly_defaulted_and_deleted_constructors)  
   
--   [Constructors in Derived Classes](../cpp/constructors-cpp.md#constructors_in_derived_classes)  
+-   [Constructors in Derived Classes](#constructors_in_derived_classes)  
   
--   [Constructors for Classes That Have Multiple Inheritance](../cpp/constructors-cpp.md#constructors_for_classes_that_have_multiple_inheritance)  
+-   [Virtual Functions in Constructors](#virtual_functions_in_constructors)  
   
--   [Virtual Functions in Constructors](../cpp/constructors-cpp.md#virtual_functions_in_constructors)  
+-   [Constructors and Composite Classes](#constructors_in_composite_classes)  
   
--   [Constructors and Composite Classes](../cpp/constructors-cpp.md#constructors_in_composite_classes)  
+-   [Delegating Constructors](#delegating_constructors)  
   
--   [Delegating Constructors](../cpp/constructors-cpp.md#delegating_constructors)  
+-   [Inheriting constructors (C++11)](#inheriting_constructors)  
   
--   [Inheriting constructors (C++11)](../cpp/constructors-cpp.md#inheriting_constructors)  
-  
--   [Rules for Declaring Constructors](../cpp/constructors-cpp.md#rules_for_declaring_constructors)  
+-   [Rules for Declaring Constructors](#rules_for_declaring_constructors)  
   
 -   Default and Copy Constructors  
   
--   [Explicitly invoking constructors](../cpp/constructors-cpp.md#explicitly_invoking_constructors)  
+-   [Explicitly invoking constructors](#explicitly_invoking_constructors)  
   
 ##  <a name="order_of_construction"></a> Order of Construction  
  A constructor performs its work in this order:  

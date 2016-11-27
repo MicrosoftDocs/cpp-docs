@@ -53,7 +53,7 @@ simple-type-name ( expression-list )
 int i = int( d );  
 ```  
   
- The following example uses a modified version of the `Point` class defined in [Function-Call Results](../misc/function-call-results.md).  
+ The following example shows a `Point` class.  
   
 ## Example  
   

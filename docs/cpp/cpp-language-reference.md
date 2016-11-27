@@ -89,7 +89,7 @@ For an overview of Modern C++ programming practices, see [Welcome Back to C++](w
  [Special Member Functions](../misc/special-member-functions-cpp.md)  
  Special functions unique to class types: constructors, destructors, conversion functions, assignment operator, operator new and operator delete functions.  
   
- [Overloading](operator-overloading-cpp.md)  
+ [Overloading](operator-overloading.md)  
  Overloaded operators, rules for operator overloading.  
   
  [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)  
