@@ -57,7 +57,7 @@ class runtime_exception : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[runtime_exception::get_error_code Method](../Topic/runtime_exception::get_error_code%20Method.md)|Returns the error code that caused the exception.|  
+|[runtime_exception::get_error_code Method](reference/runtime_exception-class.md#runtime_exception__get_error_code_method)|Returns the error code that caused the exception.|  
   
 ### Public Operators  
   

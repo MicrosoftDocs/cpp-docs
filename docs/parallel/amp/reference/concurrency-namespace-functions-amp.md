@@ -16,12 +16,12 @@ manager: "ghogen"
 ||||  
 |-|-|-|  
 |[all_memory_fence Function](#all_memory_fence_function)|[amp_uninitialize Function](#amp_uninitialize_function)|[atomic_compare_exchange Function](#atomic_compare_exchange_function)|  
-|[atomic_exchange Function (C++ AMP)](#atomic_exchange_function__c_add_add_amp_)|[atomic_fetch_add Function (C++ AMP)](#atomic_fetch_add_function__c_add_add_amp_)|[atomic_fetch_and Function (C++ AMP)](#atomic_fetch_and_function__c_add_add_amp_)|  
+|[atomic_exchange Function (C++ AMP)](#atomic_exchange_function)|[atomic_fetch_add Function (C++ AMP)](#atomic_fetch_add_function)|[atomic_fetch_and Function (C++ AMP)](#atomic_fetch_and_function)|  
 |[atomic_fetch_dec Function](#atomic_fetch_dec_function)|[atomic_fetch_inc Function](#atomic_fetch_inc_function)|[atomic_fetch_max Function](#atomic_fetch_max_function)|  
-|[atomic_fetch_min Function](#atomic_fetch_min_function)|[atomic_fetch_or Function (C++ AMP)](#atomic_fetch_or_function__c_add_add_amp_)|[atomic_fetch_sub Function (C++ AMP)](#atomic_fetch_sub_function__c_add_add_amp_)|  
-|[atomic_fetch_xor Function (C++ AMP)](#atomic_fetch_xor_function__c_add_add_amp_)|[copy Function](#copy_function)|[copy_async Function](#copy_async_function)|  
+|[atomic_fetch_min Function](#atomic_fetch_min_function)|[atomic_fetch_or Function (C++ AMP)](#atomic_fetch_or_function)|[atomic_fetch_sub Function (C++ AMP)](#atomic_fetch_sub_function)|  
+|[atomic_fetch_xor Function (C++ AMP)](#atomic_fetch_xor_function)|[copy Function](#copy_function)|[copy_async Function](#copy_async_function)|  
 |[direct3d_abort Function](#direct3d_abort_function)|[direct3d_errorf Function](#direct3d_errorf_function)|[direct3d_printf Function](#direct3d_printf_function)|  
-|[global_memory_fence Function](#global_memory_fence_function)|[parallel_for_each Function (C++ AMP)](#parallel_for_each_function__c_add_add_amp_)|[tile_static_memory_fence Function](#tile_static_memory_fence_function)|  
+|[global_memory_fence Function](#global_memory_fence_function)|[parallel_for_each Function (C++ AMP)](#parallel_for_each_function)|[tile_static_memory_fence Function](#tile_static_memory_fence_function)|  
   
 ##  <a name="all_memory_fence_function"></a>  all_memory_fence Function  
  Blocks execution of all threads in a tile until all memory accesses have been completed. This ensures that all memory accesses are visible to other threads in the thread tile, and are executed in program order.  
@@ -48,13 +48,15 @@ void __cdecl amp_uninitialize();
 inline bool atomic_compare_exchange(
     _Inout_ int* _Dest,  
     _Inout_ int* _Expected_value,  
-    int value) restrict(amp);
+    int value  
+    ) restrict(amp)
 
  
 inline bool atomic_compare_exchange(
     _Inout_ unsigned int* _Dest,  
     _Inout_ unsigned int* _Expected_value,  
-    unsigned int value) restrict(amp);
+    unsigned int value  
+    ) restrict(amp)
 ```  
   
 ### Parameters  
@@ -70,23 +72,26 @@ inline bool atomic_compare_exchange(
 ### Return Value  
  `true` if the operation is successful; otherwise, `false`.  
   
-##  <a name="atomic_exchange_function__c_add_add_amp_"></a>  atomic_exchange Function (C++ AMP)  
+##  <a name="atomic_exchange_function"></a>  atomic_exchange Function (C++ AMP)  
  Sets the value of destination location as an atomic operation.  
   
 ```  
 inline int atomic_exchange(
     _Inout_ int* _Dest,  
-    int value) restrict(amp);
+    int value  
+    ) restrict(amp)
 
  
 inline unsigned int atomic_exchange(
     _Inout_ unsigned int* _Dest,  
-    unsigned int value) restrict(amp);
+    unsigned int value  
+    ) restrict(amp)
 
  
 inline float atomic_exchange(
     _Inout_ float* _Dest,  
-    float value) restrict(amp);
+    float value  
+    ) restrict(amp)
 ```  
   
 ### Parameters  
@@ -99,18 +104,20 @@ inline float atomic_exchange(
 ### Return Value  
  The original value of the destination location.  
   
-##  <a name="atomic_fetch_add_function__c_add_add_amp_"></a>  atomic_fetch_add Function (C++ AMP)  
+##  <a name="atomic_fetch_add_function"></a>  atomic_fetch_add Function (C++ AMP)  
  Atomically add a value to the value of a memory location.  
   
 ```  
 inline int atomic_fetch_add(
     _Inout_ int* _Dest,  
-    int value) restrict(amp);
+    int value  
+    ) restrict(amp)
 
  
 inline unsigned int atomic_fetch_add(
     _Inout_ unsigned int* _Dest,  
-    unsigned int value) restrict(amp);
+    unsigned int value  
+    ) restrict(amp)
 ```  
   
 ### Parameters  
@@ -123,18 +130,20 @@ inline unsigned int atomic_fetch_add(
 ### Return Value  
  The original value of the memory location.  
   
-##  <a name="atomic_fetch_and_function__c_add_add_amp_"></a>  atomic_fetch_and Function (C++ AMP)  
+##  <a name="atomic_fetch_and_function"></a>  atomic_fetch_and Function (C++ AMP)  
  Atomically performs a bitwise AND operation of a value and the value of a memory location.  
   
 ```  
 inline int atomic_fetch_and(
     _Inout_ int* _Dest,  
-    int value) restrict(amp);
+    int value  
+    ) restrict(amp)
 
  
 inline unsigned int atomic_fetch_and(
     _Inout_ unsigned int* _Dest,  
-    unsigned int value) restrict(amp);
+    unsigned int value  
+    ) restrict(amp)
 ```  
   
 ### Parameters  
@@ -151,7 +160,8 @@ inline unsigned int atomic_fetch_and(
  Atomically decrements the value stored at the specified memory location.  
   
 ```  
-inline int atomic_fetch_dec(_Inout_ int* _Dest) restrict(amp);
+inline int atomic_fetch_dec(_Inout_ int* _Dest  
+    ) restrict(amp)
 
  
 inline unsigned int atomic_fetch_dec(_Inout_ unsigned int* _Dest) restrict(amp);
@@ -187,12 +197,14 @@ inline unsigned int atomic_fetch_inc(_Inout_ unsigned int* _Dest) restrict(amp);
 ```  
 inline int atomic_fetch_max(
     _Inout_ int* _Dest,  
-    int value) restrict(amp);
+    int value  
+    ) restrict(amp)
 
  
 inline unsigned int atomic_fetch_max(
     _Inout_ unsigned int* _Dest,  
-    unsigned int value) restrict(amp);
+    unsigned int value  
+    ) restrict(amp)
 ```  
   
 ### Parameters  
@@ -211,12 +223,14 @@ inline unsigned int atomic_fetch_max(
 ```  
 inline int atomic_fetch_min(
     _Inout_ int* _Dest,  
-    int value) restrict(amp);
+    int value  
+    ) restrict(amp)
 
  
 inline unsigned int atomic_fetch_min(
     _Inout_ unsigned int* _Dest,  
-    unsigned int value) restrict(amp);
+    unsigned int value  
+    ) restrict(amp)
 ```  
   
 ### Parameters  
@@ -229,18 +243,20 @@ inline unsigned int atomic_fetch_min(
 ### Return Value  
  The original value stored at the specified location location.  
   
-##  <a name="atomic_fetch_or_function__c_add_add_amp_"></a>  atomic_fetch_or Function (C++ AMP)  
+##  <a name="atomic_fetch_or_function"></a>  atomic_fetch_or Function (C++ AMP)  
  Atomically performs a bitwise OR operation with a value and the value of a memory location.  
   
 ```  
 inline int atomic_fetch_or(
     _Inout_ int* _Dest,  
-    int value) restrict(amp);
+    int value  
+    ) restrict(amp)
 
  
 inline unsigned int atomic_fetch_or(
     _Inout_ unsigned int* _Dest,  
-    unsigned int value) restrict(amp);
+    unsigned int value  
+    ) restrict(amp)
 ```  
   
 ### Parameters  
@@ -253,18 +269,20 @@ inline unsigned int atomic_fetch_or(
 ### Return Value  
  The original value of the memory location.  
   
-##  <a name="atomic_fetch_sub_function__c_add_add_amp_"></a>  atomic_fetch_sub Function (C++ AMP)  
+##  <a name="atomic_fetch_sub_function"></a>  atomic_fetch_sub Function (C++ AMP)  
  Atomically subtracts a value from a memory location.  
   
 ```  
 inline int atomic_fetch_sub(
     _Inout_ int* _Dest,  
-    int value) restrict(amp);
+    int value  
+    ) restrict(amp)
 
  
 inline unsigned int atomic_fetch_sub(
     _Inout_ unsigned int* _Dest,  
-    unsigned int value) restrict(amp);
+    unsigned int value  
+    ) restrict(amp)
 ```  
   
 ### Parameters  
@@ -277,18 +295,20 @@ inline unsigned int atomic_fetch_sub(
 ### Return Value  
  The original value of the memory location.  
   
-##  <a name="atomic_fetch_xor_function__c_add_add_amp_"></a>  atomic_fetch_xor Function (C++ AMP)  
+##  <a name="atomic_fetch_xor_function"></a>  atomic_fetch_xor Function (C++ AMP)  
  Atomically peforms an bitwise XOR operation of a value and a memory location.  
   
 ```  
 inline int atomic_fetch_xor(
     _Inout_ int* _Dest,  
-    int value) restrict(amp);
+    int value  
+    ) restrict(amp)
 
  
 inline unsigned int atomic_fetch_xor(
     _Inout_ unsigned int* _Dest,  
-    unsigned int value) restrict(amp);
+    unsigned int value  
+    ) restrict(amp)
 ```  
   
 ### Parameters  
@@ -305,112 +325,78 @@ inline unsigned int atomic_fetch_xor(
  Copies a C++ AMP object. All synchronous data transfer requirements are met. You can't copy data when running code on an accelerator. The general form of this function is `copy(src, dest)`.  
   
 ```  
-template <
-    typename value_type,  
-    int _Rank  
->  
+template <typename value_type, int _Rank>  
 void copy(
     const array<value_type, _Rank>& _Src,  
     array<value_type, _Rank>& _Dest);
 
  
-template <
-    typename InputIterator,  
-    typename value_type,  
-    int _Rank  
->  
-void copy(InputIterator _SrcFirst, InputIterator _SrcLast,  
-    array<value_type, _Rank>& _Dest);
-
- 
-template <
-    typename InputIterator,  
-    typename value_type,  
-    int _Rank  
->  
-void copy(InputIterator _SrcFirst,  
-    array<value_type, _Rank>& _Dest);
-
- 
-template <
-    typename OutputIterator,  
-    typename value_type,  
-    int _Rank  
->  
+template <typename InputIterator, typename value_type, int _Rank>  
 void copy(
-    const array<value_type, _Rank>& _Src, OutputIterator _DestIter);
+    InputIterator _SrcFirst,
+    InputIterator _SrcLast,  
+    array<value_type, _Rank>& _Dest);
 
  
-template <
-    typename value_type,  
-    int _Rank  
->  
+template <typename InputIterator, typename value_type, int _Rank>  
+void copy(
+    InputIterator _SrcFirst,  
+    array<value_type, _Rank>& _Dest);
+
+ 
+template <typename OutputIterator, typename value_type, int _Rank>  
+void copy(
+    const array<value_type, _Rank>& _Src,
+     OutputIterator _DestIter);
+
+ 
+template <typename value_type, int _Rank>  
 void copy(
     const array<value_type, _Rank>& _Src,  
     array_view<value_type, _Rank>& _Dest);
 
  
-template <
-    typename value_type,  
-    int _Rank  
->  
+template <typename value_type, int _Rank>  
 void copy(
     const array_view<const value_type, _Rank>& _Src,  
     array<value_type, _Rank>& _Dest);
 
  
-template <
-    typename value_type,  
-    int _Rank  
->  
+template <typename value_type, int _Rank>  
 void copy(
     const array_view<value_type, _Rank>& _Src,  
     array<value_type, _Rank>& _Dest);
 
  
-template <
-    typename value_type,  
-    int _Rank  
->  
+template <typename value_type, int _Rank>  
 void copy(
     const array_view<const value_type, _Rank>& _Src,  
     array_view<value_type, _Rank>& _Dest);
 
  
-template <
-    typename value_type,  
-    int _Rank  
->  
+template <typename value_type, int _Rank>  
 void copy(
     const array_view<value_type, _Rank>& _Src,  
     array_view<value_type, _Rank>& _Dest);
 
  
-template <
-    typename InputIterator,  
-    typename value_type,  
-    int _Rank  
->  
-void copy(InputIterator _SrcFirst, InputIterator _SrcLast,  
-    array_view<value_type, _Rank>& _Dest);
-
- 
-template <
-    typename InputIterator,  
-    typename value_type,  
-    int _Rank  
->  
-void copy(InputIterator _SrcFirst,  
-    array_view<value_type, _Rank>& _Dest);
-
- 
-template <
-    typename OutputIterator,  
-    typename value_type,  
-    int _Rank  
->  
+template <typename InputIterator, typename value_type, int _Rank>  
 void copy(
-    const array_view<value_type, _Rank>& _Src, OutputIterator _DestIter);
+    InputIterator _SrcFirst, 
+    InputIterator _SrcLast,  
+    array_view<value_type, _Rank>& _Dest);
+
+ 
+template <typename InputIterator, typename value_type, int _Rank>  
+void copy(
+    InputIterator _SrcFirst,  
+    array_view<value_type, _Rank>& _Dest);
+
+ 
+template <typename OutputIterator, typename value_type, int _Rank>  
+void copy(
+    const array_view<value_type, _Rank>& _Src,
+    OutputIterator _DestIter);
 ```  
   
 ### Parameters  
@@ -445,110 +431,68 @@ void copy(
  Copies a C++ AMP object and returns a [completion_future](../../../parallel/amp/reference/completion-future-class.md) object that can be waited on. You can't copy data when running code on an accelerator.  The general form of this function is `copy(src, dest)`.  
   
 ```  
-template <
-    typename value_type,  
-    int _Rank  
->  
+template <typename value_type, int _Rank>  
 concurrency::completion_future copy_async(
     const array<value_type, _Rank>& _Src,  
     array<value_type, _Rank>& _Dest);
 
  
-template <
-    typename InputIterator,  
-    typename value_type,  
-    int _Rank  
->  
+template <typename InputIterator, typename value_type, int _Rank>  
 concurrency::completion_future copy_async(InputIterator _SrcFirst, InputIterator _SrcLast,  
     array<value_type, _Rank>& _Dest);
 
  
-template <
-    typename InputIterator,  
-    typename value_type,  
-    int _Rank  
->  
+template <typename InputIterator, typename value_type, int _Rank>  
 concurrency::completion_future copy_async(InputIterator _SrcFirst,  
     array<value_type, _Rank>& _Dest);
 
  
-template <
-    typename OutputIterator,  
-    typename value_type,  
-    int _Rank  
->  
+template <typename OutputIterator, typename value_type, int _Rank>  
 concurrency::completion_future copy_async(
     const array<value_type, _Rank>& _Src, OutputIterator _DestIter);
 
  
-template <
-    typename value_type,  
-    int _Rank  
->  
+template <typename value_type, int _Rank>  
 concurrency::completion_future copy_async(
     const array<value_type, _Rank>& _Src,  
     array_view<value_type, _Rank>& _Dest);
 
  
-template <
-    typename value_type,  
-    int _Rank  
->  
+template <typename value_type, int _Rank>  
 concurrency::completion_future copy_async(
     const array_view<const value_type, _Rank>& _Src,  
     array<value_type, _Rank>& _Dest);
 
  
-template <
-    typename value_type,  
-    int _Rank  
->  
+template <typename value_type, int _Rank>  
 concurrency::completion_future copy_async(
     const array_view<value_type, _Rank>& _Src,  
     array<value_type, _Rank>& _Dest);
 
  
-template <
-    typename value_type,  
-    int _Rank  
->  
+template <typename value_type, int _Rank>  
 concurrency::completion_future copy_async(
     const array_view<const value_type, _Rank>& _Src,  
     array_view<value_type, _Rank>& _Dest);
 
  
-template <
-    typename value_type,  
-    int _Rank  
->  
+template <typename value_type, int _Rank>  
 concurrency::completion_future copy_async(
     const array_view<value_type, _Rank>& _Src,  
     array_view<value_type, _Rank>& _Dest);
 
  
-template <
-    typename InputIterator,  
-    typename value_type,  
-    int _Rank  
->  
+template <typename InputIterator, typename value_type, int _Rank>  
 concurrency::completion_future copy_async(InputIterator _SrcFirst, InputIterator _SrcLast,  
     array_view<value_type, _Rank>& _Dest);
 
  
-template <
-    typename InputIterator,  
-    typename value_type,  
-    int _Rank  
->  
+template <typename InputIterator, typename value_type, int _Rank>  
 concurrency::completion_future copy_async(InputIterator _SrcFirst,  
     array_view<value_type, _Rank>& _Dest);
 
  
-template <
-    typename OutputIterator,  
-    typename value_type,  
-    int _Rank  
->  
+template <typename OutputIterator, typename value_type, int _Rank>  
 concurrency::completion_future copy_async(
     const array_view<value_type, _Rank>& _Src, OutputIterator _DestIter);
 ```  
@@ -620,86 +564,56 @@ inline void global_memory_fence(const tile_barrier& _Barrier) restrict(amp);
  `_Barrier`  
  A tile_barrier object  
   
-##  <a name="parallel_for_each_function__c_add_add_amp_"></a>  parallel_for_each Function (C++ AMP)  
+##  <a name="parallel_for_each_function"></a>  parallel_for_each Function (C++ AMP)  
  Runs a function across the compute domain. For more information, see [C++ AMP Overview](../../../parallel/amp/cpp-amp-overview.md).  
   
 ```  
-template <
-    int _Rank,  
-    typename _Kernel_type  
->  
+template <int _Rank, typename _Kernel_type>  
 void parallel_for_each(
     const extent<_Rank>& _Compute_domain,  
     const _Kernel_type& _Kernel);
 
  
-template <
-    int _Dim0,  
-    int _Dim1,  
-    int _Dim2,  
-    typename _Kernel_type  
->  
+template <int _Dim0, int _Dim1, int _Dim2, typename _Kernel_type>  
 void parallel_for_each(
-    const tiled_extent<_Dim0, _Dim1, _Dim2>& _Compute_domain,  
+    const tiled_extent<_Dim0, _Dim1, _Dim2>& _Compute_domain,
+     const _Kernel_type& _Kernel);
+
+ 
+template <int _Dim0, int _Dim1, typename _Kernel_type>  
+void parallel_for_each(
+    const tiled_extent<_Dim0, _Dim1>& _Compute_domain,
     const _Kernel_type& _Kernel);
 
  
-template <
-    int _Dim0,  
-    int _Dim1,  
-    typename _Kernel_type  
->  
-void parallel_for_each(
-    const tiled_extent<_Dim0, _Dim1>& _Compute_domain,  
-    const _Kernel_type& _Kernel);
-
- 
-template <
-    int _Dim0,  
-    typename _Kernel_type  
->  
+template <int _Dim0, typename _Kernel_type>  
 void parallel_for_each(
     const tiled_extent<_Dim0>& _Compute_domain,  
     const _Kernel_type& _Kernel);
 
  
-template <
-    int _Rank,  
-    typename _Kernel_type  
->  
+template <int _Rank, typename _Kernel_type>  
 void parallel_for_each(
     const accelerator_view& _Accl_view,  
     const extent<_Rank>& _Compute_domain,  
     const _Kernel_type& _Kernel);
 
  
-template <
-    int _Dim0,  
-    int _Dim1,  
-    int _Dim2,  
-    typename _Kernel_type  
->  
+template <int _Dim0, int _Dim1, int _Dim2, typename _Kernel_type>  
 void parallel_for_each(
     const accelerator_view& _Accl_view,  
     const tiled_extent<_Dim0, _Dim1, _Dim2>& _Compute_domain,  
     const _Kernel_type& _Kernel);
 
  
-template <
-    int _Dim0,  
-    int _Dim1,  
-    typename _Kernel_type  
->  
+template <int _Dim0, int _Dim1, typename _Kernel_type>  
 void parallel_for_each(
     const accelerator_view& _Accl_view,  
     const tiled_extent<_Dim0, _Dim1>& _Compute_domain,  
     const _Kernel_type& _Kernel);
 
  
-template <
-    int _Dim0,  
-    typename _Kernel_type  
->  
+template <int _Dim0, typename _Kernel_type>  
 void parallel_for_each(
     const accelerator_view& _Accl_view,  
     const tiled_extent<_Dim0>& _Compute_domain,  

@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # invalid_compute_domain Class
-The exception that's thrown when the runtime can't start a kernel by using the compute domain specified at the [parallel_for_each](../Topic/parallel_for_each%20Function%20\(C++%20AMP\).md) call site.  
+The exception that's thrown when the runtime can't start a kernel by using the compute domain specified at the [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each_function) call site.  
   
 ## Syntax  
   

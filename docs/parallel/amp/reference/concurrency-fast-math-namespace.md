@@ -47,71 +47,71 @@ namespace fast_math;
   
 |Name|Description|  
 |----------|-----------------|  
-|[cos Function  (fast_math)](../Topic/cos%20Function%20%20\(fast_math\).md)|Calculates the arccosine of the argument|  
-|[cosf Function (fast_math)](../Topic/cosf%20Function%20\(fast_math\).md)|Calculates the arccosine of the argument|  
-|[asin Function (fast_math)](../Topic/asin%20Function%20\(fast_math\).md)|Calculates the arcsine of the argument|  
-|[asinf Function (fast_math)](../Topic/asinf%20Function%20\(fast_math\).md)|Calculates the arcsine of the argument|  
-|[atan Function (fast_math)](../Topic/atan%20Function%20\(fast_math\).md)|Calculates the arctangent of the argument|  
-|[atan2 Function (fast_math)](../Topic/atan2%20Function%20\(fast_math\).md)|Calculates the arctangent of _Y/_X|  
-|[atan2f Function (fast_math)](../Topic/atan2f%20Function%20\(fast_math\).md)|Calculates the arctangent of _Y/_X|  
-|[atanf Function (fast_math)](../Topic/atanf%20Function%20\(fast_math\).md)|Calculates the arctangent of the argument|  
-|[ceil Function (fast_math)](../Topic/ceil%20Function%20\(fast_math\).md)|Calculates the ceiling of the argument|  
-|[ceilf Function (fast_math)](../Topic/ceilf%20Function%20\(fast_math\).md)|Calculates the ceiling of the argument|  
-|[cos Function  (fast_math)](../Topic/cos%20Function%20%20\(fast_math\).md)|Calculates the cosine of the argument|  
-|[cosf Function (fast_math)](../Topic/cosf%20Function%20\(fast_math\).md)|Calculates the cosine of the argument|  
-|[cosh Function (fast_math)](../Topic/cosh%20Function%20\(fast_math\).md)|Calculates the hyperbolic cosine value of the argument|  
-|[coshf Function (fast_math)](../Topic/coshf%20Function%20\(fast_math\).md)|Calculates the hyperbolic cosine value of the argument|  
-|[exp Function (fast_math)](../Topic/exp%20Function%20\(fast_math\).md)|Calculates the base-e exponential of the argument|  
-|[exp2 Function (fast_math)](../Topic/exp2%20Function%20\(fast_math\).md)|Calculates the base-2 exponential of the argument|  
-|[exp2f Function (fast_math)](../Topic/exp2f%20Function%20\(fast_math\).md)|Calculates the base-2 exponential of the argument|  
-|[expf Function (fast_math)](../Topic/expf%20Function%20\(fast_math\).md)|Calculates the base-e exponential of the argument|  
-|[fabs Function (fast_math)](../Topic/fabs%20Function%20\(fast_math\).md)|Returns the absolute value of the argument|  
-|[fabsf Function (fast_math)](../Topic/fabsf%20Function%20\(fast_math\).md)|Returns the absolute value of the argument|  
-|[floor Function (fast_math)](../Topic/floor%20Function%20\(fast_math\).md)|Calculates the floor of the argument|  
-|[floorf Function (fast_math)](../Topic/floorf%20Function%20\(fast_math\).md)|Calculates the floor of the argument|  
-|[fmax Function (fast_math)](../Topic/fmax%20Function%20\(fast_math\).md)|Determine the maximum numeric value of the arguments|  
-|[fmaxf Function (fast_math)](../Topic/fmaxf%20Function%20\(fast_math\).md)|Determine the maximum numeric value of the arguments|  
-|[fmin Function (fast_math)](../Topic/fmin%20Function%20\(fast_math\).md)|Determine the minimum numeric value of the arguments|  
-|[fminf Function (fast_math)](../Topic/fminf%20Function%20\(fast_math\).md)|Determine the minimum numeric value of the arguments|  
-|[fmod Function (fast_math)](../Topic/fmod%20Function%20\(fast_math\).md)|Calculates the floating-point remainder of _X/_Y|  
-|[fmodf Function (fast_math)](../Topic/fmodf%20Function%20\(fast_math\).md)|Calculates the floating-point remainder of _X/_Y|  
-|[frexp Function (fast_math)](../Topic/frexp%20Function%20\(fast_math\).md)|Gets the mantissa and exponent of _X|  
-|[frexpf Function (fast_math)](../Topic/frexpf%20Function%20\(fast_math\).md)|Gets the mantissa and exponent of _X|  
-|[isfinite Function (fast_math)](../Topic/isfinite%20Function%20\(fast_math\).md)|Determines whether the argument has a finite value|  
-|[isinf Function (fast_math)](../Topic/isinf%20Function%20\(fast_math\).md)|Determines whether the argument is an infinity|  
-|[isnan Function (fast_math)](../Topic/isnan%20Function%20\(fast_math\).md)|Determines whether the argument is a NaN|  
-|[ldexp Function (fast_math)](../Topic/ldexp%20Function%20\(fast_math\).md)|Computes a real number from the mantissa and exponent|  
-|[ldexpf Function (fast_math)](../Topic/ldexpf%20Function%20\(fast_math\).md)|Computes a real number from the mantissa and exponent|  
-|[log Function (fast_math)](../Topic/log%20Function%20\(fast_math\).md)|Calculates the base-e logarithm of the argument|  
-|[log10 Function (fast_math)](../Topic/log10%20Function%20\(fast_math\).md)|Calculates the base-10 logarithm of the argument|  
-|[log10f Function (fast_math)](../Topic/log10f%20Function%20\(fast_math\).md)|Calculates the base-10 logarithm of the argument|  
-|[log2 Function (fast_math)](../Topic/log2%20Function%20\(fast_math\).md)|Calculates the base-2 logarithm of the argument|  
-|[log2f Function (fast_math)](../Topic/log2f%20Function%20\(fast_math\).md)|Calculates the base-2 logarithm of the argument|  
-|[logf Function (fast_math)](../Topic/logf%20Function%20\(fast_math\).md)|Calculates the base-e logarithm of the argument|  
-|[modf Function (fast_math)](../Topic/modf%20Function%20\(fast_math\).md)|Splits _X into fractional and integer parts.|  
-|[modff Function (fast_math)](../Topic/modff%20Function%20\(fast_math\).md)|Splits _X into fractional and integer parts.|  
-|[pow Function (fast_math)](../Topic/pow%20Function%20\(fast_math\).md)|Calculates _X raised to the power of _Y|  
-|[powf Function (fast_math)](../Topic/powf%20Function%20\(fast_math\).md)|Calculates _X raised to the power of _Y|  
-|[round Function (fast_math)](../Topic/round%20Function%20\(fast_math\).md)|Rounds _X to the nearest integer|  
-|[roundf Function (fast_math)](../Topic/roundf%20Function%20\(fast_math\).md)|Rounds _X to the nearest integer|  
-|[rsqrt Function (fast_math)](../Topic/rsqrt%20Function%20\(fast_math\).md)|Returns the reciprocal of the square root of the argument|  
-|[rsqrtf Function (fast_math)](../Topic/rsqrtf%20Function%20\(fast_math\).md)|Returns the reciprocal of the square root of the argument|  
-|[signbit Function (fast_math)](../Topic/signbit%20Function%20\(fast_math\).md)|Returns the sign of the argument|  
-|[signbitf Function (fast_math)](../Topic/signbitf%20Function%20\(fast_math\).md)|Returns the sign of the argument|  
-|[sin Function (fast_math)](../Topic/sin%20Function%20\(fast_math\).md)|Calculates the sine value of the argument|  
-|[sincos Function (fast_math)](../Topic/sincos%20Function%20\(fast_math\).md)|Calculates sine and cosine value of _X|  
-|[sincosf Function (fast_math)](../Topic/sincosf%20Function%20\(fast_math\).md)|Calculates sine and cosine value of _X|  
-|[sinf Function (fast_math)](../Topic/sinf%20Function%20\(fast_math\).md)|Calculates the sine value of the argument|  
-|[sinh Function (fast_math)](../Topic/sinh%20Function%20\(fast_math\).md)|Calculates the hyperbolic sine value of the argument|  
-|[sinhf Function (fast_math)](../Topic/sinhf%20Function%20\(fast_math\).md)|Calculates the hyperbolic sine value of the argument|  
-|[sqrt Function (fast_math)](../Topic/sqrt%20Function%20\(fast_math\).md)|Calculates the square root of the argument|  
-|[sqrtf Function (fast_math)](../Topic/sqrtf%20Function%20\(fast_math\).md)|Calculates the square root of the argument|  
-|[tan Function (fast_math)](../Topic/tan%20Function%20\(fast_math\).md)|Calculates the tangent value of the argument|  
-|[tanf Function (fast_math)](../Topic/tanf%20Function%20\(fast_math\).md)|Calculates the tangent value of the argument|  
-|[tanh Function (fast_math)](../Topic/tanh%20Function%20\(fast_math\).md)|Calculates the hyperbolic tangent value of the argument|  
-|[tanhf Function (fast_math)](../Topic/tanhf%20Function%20\(fast_math\).md)|Calculates the hyperbolic tangent value of the argument|  
-|[trunc Function (fast_math)](../Topic/trunc%20Function%20\(fast_math\).md)|Truncates the argument to the integer component|  
-|[truncf Function (fast_math)](../Topic/truncf%20Function%20\(fast_math\).md)|Truncates the argument to the integer component|  
+|[cos Function  (fast_math)](concurrency-fast-math-namespace-functions.md#cos_function.md)|Calculates the arccosine of the argument|  
+|[cosf Function (fast_math)](concurrency-fast-math-namespace-functions.md#cosf_function.md)|Calculates the arccosine of the argument|  
+|[asin Function (fast_math)](concurrency-fast-math-namespace-functions.md#asin_function.md)|Calculates the arcsine of the argument|  
+|[asinf Function (fast_math)](concurrency-fast-math-namespace-functions.md#asinf_function.md)|Calculates the arcsine of the argument|  
+|[atan Function (fast_math)](concurrency-fast-math-namespace-functions.md#atan_function.md)|Calculates the arctangent of the argument|  
+|[atan2 Function (fast_math)](concurrency-fast-math-namespace-functions.md#atan2_function.md)|Calculates the arctangent of _Y/_X|  
+|[atan2f Function (fast_math)](concurrency-fast-math-namespace-functions.md#atan2f_function.md)|Calculates the arctangent of _Y/_X|  
+|[atanf Function (fast_math)](concurrency-fast-math-namespace-functions.md#atanf_function.md)|Calculates the arctangent of the argument|  
+|[ceil Function (fast_math)](concurrency-fast-math-namespace-functions.md#ceil_function.md)|Calculates the ceiling of the argument|  
+|[ceilf Function (fast_math)](concurrency-fast-math-namespace-functions.md#ceilf_function.md)|Calculates the ceiling of the argument|  
+|[cos Function  (fast_math)](concurrency-fast-math-namespace-functions.md#cos_function.md)|Calculates the cosine of the argument|  
+|[cosf Function (fast_math)](concurrency-fast-math-namespace-functions.md#cosf_function.md)|Calculates the cosine of the argument|  
+|[cosh Function (fast_math)](concurrency-fast-math-namespace-functions.md#cosh_function.md)|Calculates the hyperbolic cosine value of the argument|  
+|[coshf Function (fast_math)](concurrency-fast-math-namespace-functions.md#coshf_function.md)|Calculates the hyperbolic cosine value of the argument|  
+|[exp Function (fast_math)](concurrency-fast-math-namespace-functions.md#exp_function.md)|Calculates the base-e exponential of the argument|  
+|[exp2 Function (fast_math)](concurrency-fast-math-namespace-functions.md#exp2_function.md)|Calculates the base-2 exponential of the argument|  
+|[exp2f Function (fast_math)](concurrency-fast-math-namespace-functions.md#exp2f_function.md)|Calculates the base-2 exponential of the argument|  
+|[expf Function (fast_math)](concurrency-fast-math-namespace-functions.md#expf_function.md)|Calculates the base-e exponential of the argument|  
+|[fabs Function (fast_math)](concurrency-fast-math-namespace-functions.md#fabs_function.md)|Returns the absolute value of the argument|  
+|[fabsf Function (fast_math)](concurrency-fast-math-namespace-functions.md#fabsf_function.md)|Returns the absolute value of the argument|  
+|[floor Function (fast_math)](concurrency-fast-math-namespace-functions.md#floor_function.md)|Calculates the floor of the argument|  
+|[floorf Function (fast_math)](concurrency-fast-math-namespace-functions.md#floorf_function.md)|Calculates the floor of the argument|  
+|[fmax Function (fast_math)](concurrency-fast-math-namespace-functions.md#fmax_function.md)|Determine the maximum numeric value of the arguments|  
+|[fmaxf Function (fast_math)](concurrency-fast-math-namespace-functions.md#fmaxf_function.md)|Determine the maximum numeric value of the arguments|  
+|[fmin Function (fast_math)](concurrency-fast-math-namespace-functions.md#fmin_function.md)|Determine the minimum numeric value of the arguments|  
+|[fminf Function (fast_math)](concurrency-fast-math-namespace-functions.md#fminf_function.md)|Determine the minimum numeric value of the arguments|  
+|[fmod Function (fast_math)](concurrency-fast-math-namespace-functions.md#fmod_function.md)|Calculates the floating-point remainder of _X/_Y|  
+|[fmodf Function (fast_math)](concurrency-fast-math-namespace-functions.md#fmodf_function.md)|Calculates the floating-point remainder of _X/_Y|  
+|[frexp Function (fast_math)](concurrency-fast-math-namespace-functions.md#frexp_function.md)|Gets the mantissa and exponent of _X|  
+|[frexpf Function (fast_math)](concurrency-fast-math-namespace-functions.md#frexpf_function.md)|Gets the mantissa and exponent of _X|  
+|[isfinite Function (fast_math)](concurrency-fast-math-namespace-functions.md#isfinite_function.md)|Determines whether the argument has a finite value|  
+|[isinf Function (fast_math)](concurrency-fast-math-namespace-functions.md#isinf_function.md)|Determines whether the argument is an infinity|  
+|[isnan Function (fast_math)](concurrency-fast-math-namespace-functions.md#isnan_function.md)|Determines whether the argument is a NaN|  
+|[ldexp Function (fast_math)](concurrency-fast-math-namespace-functions.md#ldexp_function.md)|Computes a real number from the mantissa and exponent|  
+|[ldexpf Function (fast_math)](concurrency-fast-math-namespace-functions.md#ldexpf_function.md)|Computes a real number from the mantissa and exponent|  
+|[log Function (fast_math)](concurrency-fast-math-namespace-functions.md#log_function.md)|Calculates the base-e logarithm of the argument|  
+|[log10 Function (fast_math)](concurrency-fast-math-namespace-functions.md#log10_function.md)|Calculates the base-10 logarithm of the argument|  
+|[log10f Function (fast_math)](concurrency-fast-math-namespace-functions.md#log10f_function.md)|Calculates the base-10 logarithm of the argument|  
+|[log2 Function (fast_math)](concurrency-fast-math-namespace-functions.md#log2_function.md)|Calculates the base-2 logarithm of the argument|  
+|[log2f Function (fast_math)](concurrency-fast-math-namespace-functions.md#log2f_function.md)|Calculates the base-2 logarithm of the argument|  
+|[logf Function (fast_math)](concurrency-fast-math-namespace-functions.md#logf_function.md)|Calculates the base-e logarithm of the argument|  
+|[modf Function (fast_math)](concurrency-fast-math-namespace-functions.md#modf_function.md)|Splits _X into fractional and integer parts.|  
+|[modff Function (fast_math)](concurrency-fast-math-namespace-functions.md#modff_function.md)|Splits _X into fractional and integer parts.|  
+|[pow Function (fast_math)](concurrency-fast-math-namespace-functions.md#pow_function.md)|Calculates _X raised to the power of _Y|  
+|[powf Function (fast_math)](concurrency-fast-math-namespace-functions.md#powf_function.md)|Calculates _X raised to the power of _Y|  
+|[round Function (fast_math)](concurrency-fast-math-namespace-functions.md#round_function.md)|Rounds _X to the nearest integer|  
+|[roundf Function (fast_math)](concurrency-fast-math-namespace-functions.md#roundf_function.md)|Rounds _X to the nearest integer|  
+|[rsqrt Function (fast_math)](concurrency-fast-math-namespace-functions.md#rsqrt_function.md)|Returns the reciprocal of the square root of the argument|  
+|[rsqrtf Function (fast_math)](concurrency-fast-math-namespace-functions.md#rsqrtf_function.md)|Returns the reciprocal of the square root of the argument|  
+|[signbit Function (fast_math)](concurrency-fast-math-namespace-functions.md#signbit_function.md)|Returns the sign of the argument|  
+|[signbitf Function (fast_math)](concurrency-fast-math-namespace-functions.md#signbitf_function.md)|Returns the sign of the argument|  
+|[sin Function (fast_math)](concurrency-fast-math-namespace-functions.md#sin_function.md)|Calculates the sine value of the argument|  
+|[sincos Function (fast_math)](concurrency-fast-math-namespace-functions.md#sincos_function.md)|Calculates sine and cosine value of _X|  
+|[sincosf Function (fast_math)](concurrency-fast-math-namespace-functions.md#sincosf_function.md)|Calculates sine and cosine value of _X|  
+|[sinf Function (fast_math)](concurrency-fast-math-namespace-functions.md#sinf_function.md)|Calculates the sine value of the argument|  
+|[sinh Function (fast_math)](concurrency-fast-math-namespace-functions.md#sinh_function.md)|Calculates the hyperbolic sine value of the argument|  
+|[sinhf Function (fast_math)](concurrency-fast-math-namespace-functions.md#sinhf_function.md)|Calculates the hyperbolic sine value of the argument|  
+|[sqrt Function (fast_math)](concurrency-fast-math-namespace-functions.md#sqrt_function.md)|Calculates the square root of the argument|  
+|[sqrtf Function (fast_math)](concurrency-fast-math-namespace-functions.md#sqrtf_function.md)|Calculates the square root of the argument|  
+|[tan Function (fast_math)](concurrency-fast-math-namespace-functions.md#tan_function.md)|Calculates the tangent value of the argument|  
+|[tanf Function (fast_math)](concurrency-fast-math-namespace-functions.md#tanf_function.md)|Calculates the tangent value of the argument|  
+|[tanh Function (fast_math)](concurrency-fast-math-namespace-functions.md#tanh_function.md)|Calculates the hyperbolic tangent value of the argument|  
+|[tanhf Function (fast_math)](concurrency-fast-math-namespace-functions.md#tanhf_function.md)|Calculates the hyperbolic tangent value of the argument|  
+|[trunc Function (fast_math)](concurrency-fast-math-namespace-functions.md#trunc_function.md)|Truncates the argument to the integer component|  
+|[truncf Function (fast_math)](concurrency-fast-math-namespace-functions.md#truncf_function.md)|Truncates the argument to the integer component|  
   
 ## Requirements  
  **Header:** amp_math.h  

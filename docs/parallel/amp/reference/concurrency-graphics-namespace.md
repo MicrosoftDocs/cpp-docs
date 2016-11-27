@@ -96,8 +96,8 @@ namespace graphics;
   
 |Name|Description|  
 |----------|-----------------|  
-|[copy Function](../Topic/copy%20Function.md)|Overloaded. Copies the contents of the source texture into the destination host buffer.|  
-|[copy_async Function](../Topic/copy_async%20Function.md)|Overloaded. Asynchronously copies the contents of the source texture into the destination host buffer.|  
+|[copy Function](concurrency-graphics-namespace-functions.md#copy_function)|Overloaded. Copies the contents of the source texture into the destination host buffer.|  
+|[copy_async Function](concurrency-graphics-namespace-functions.md#copy_async_function)|Overloaded. Asynchronously copies the contents of the source texture into the destination host buffer.|  
   
 ## Requirements  
  **Header:** amp_graphics.h  

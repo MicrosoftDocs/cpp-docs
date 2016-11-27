@@ -61,9 +61,9 @@ class extent;
   
 |Name|Description|  
 |----------|-----------------|  
-|[extent::contains Method](../Topic/extent::contains%20Method.md)|Verifies that the specified `extent` object has the specified rank.|  
-|[extent::size Method](../Topic/extent::size%20Method.md)|Returns the total linear size of the extent (in units of elements).|  
-|[extent::tile Method](../Topic/extent::tile%20Method.md)|Produces a `tiled_extent` object with the tile extents given by specified dimensions.|  
+|[extent::contains Method](reference/extent-class.md#extent__contains_method)|Verifies that the specified `extent` object has the specified rank.|  
+|[extent::size Method](reference/extent-class.md#extent__size_method)|Returns the total linear size of the extent (in units of elements).|  
+|[extent::tile Method](reference/extent-class.md#extent__tile_method)|Produces a `tiled_extent` object with the tile extents given by specified dimensions.|  
   
 ### Public Operators  
   
@@ -85,7 +85,7 @@ class extent;
   
 |Name|Description|  
 |----------|-----------------|  
-|[extent::rank Constant](../Topic/extent::rank%20Constant.md)|Gets the rank of the `extent` object.|  
+|[extent::rank Constant](reference/extent-class.md#extent__rank_constant)|Gets the rank of the `extent` object.|  
   
 ## Inheritance Hierarchy  
  `extent`  

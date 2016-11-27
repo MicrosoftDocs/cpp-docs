@@ -188,7 +188,7 @@ inline BOOL AtlIsUnsafeUrlChar(char chIn) throw();
 ### Requirements  
  **Header:** atlutil.h  
 
- ## <a name="atlenescapeurl"></a> AtlUnescapeUrl
+ ## <a name="atlunescapeurl"></a> AtlUnescapeUrl
  Call this function to convert escaped characters back to their original values.  
   
 ### Syntax  

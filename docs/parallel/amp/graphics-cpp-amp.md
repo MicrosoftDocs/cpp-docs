@@ -162,7 +162,7 @@ void createTextureWithBPC() { *// Create the source data.
 |texture\<T,2>|2048|  
   
 ### Reading from Texture Objects  
- You can read from a `texture` object by using [texture::operatorOperator](../Topic/texture::operatorOperator.md), [texture::operator() Operator](../Topic/texture::operator\(\)%20Operator.md), or [texture::get Method](../Topic/texture::get%20Method.md). [texture::operatorOperator](../Topic/texture::operatorOperator.md) and [texture::operator() Operator](../Topic/texture::operator\(\)%20Operator.md) return a value, not a reference. Therefore, you cannot write to a `texture` object by using [texture::operatorOperator](../Topic/texture::operatorOperator.md).  
+ You can read from a `texture` object by using [texture::operatorOperator](../Topic/texture::operatorOperator.md), [texture::operator() Operator](../Topic/texture::operator\(\)%20Operator.md), or [texture::get Method](reference/texture-class.md#texture__get_method). [texture::operatorOperator](../Topic/texture::operatorOperator.md) and [texture::operator() Operator](../Topic/texture::operator\(\)%20Operator.md) return a value, not a reference. Therefore, you cannot write to a `texture` object by using [texture::operatorOperator](../Topic/texture::operatorOperator.md).  
   
 ```cpp  
  
@@ -240,7 +240,7 @@ void UseBitsPerScalarElement() { *// Create the image data. *// Each unsigned in
 |norm, norm_2, norm_4<br /><br /> unorm, unorm_2, unorm, 4|8, 16|  
   
 ### Writing to Texture Objects  
- Use the [texture::set](../Topic/texture::set%20Method.md) method to write to `texture` objects. A texture object can be readonly or read/write. For a texture object to be readable and writeable, the following conditions must be true:  
+ Use the [texture::set](reference/texture-class.md#texture__set_method) method to write to `texture` objects. A texture object can be readonly or read/write. For a texture object to be readable and writeable, the following conditions must be true:  
   
 -   T has only one scalar component. (Short vectors are not allowed.)  
   
@@ -268,7 +268,7 @@ void writeTexture() {
 ```  
   
 ### Copying Texture Objects  
- You can copy between texture objects by using the [copy](../Topic/copy%20Function.md) function or the [copy_async](../Topic/copy_async%20Function.md) function, as shown in the following code example.  
+ You can copy between texture objects by using the [copy](reference/concurrency-namespace-functions-amp.md#copy_function) function or the [copy_async](reference/concurrency-namespace-functions-amp.md#copy_async_function) function, as shown in the following code example.  
   
 ```cpp  
  
@@ -296,7 +296,7 @@ void copyHostArrayToTexture() { *// Copy from source array to texture object by 
  
 ```  
   
- You can also copy from one texture to another by using the [texture::copy_to](../Topic/texture::copy_to%20Method.md) method. The two textures can be on different accelerator_views. When you copy to a `writeonly_texture_view` object, the data is copied to the underlying `texture` object. The bits per scalar element and the extent must be the same on the source and destination `texture` objects. If those requirements are not met, the runtime throws an exception.  
+ You can also copy from one texture to another by using the [texture::copy_to](reference/texture-class.md#texture__copy_to_method) method. The two textures can be on different accelerator_views. When you copy to a `writeonly_texture_view` object, the data is copied to the underlying `texture` object. The bits per scalar element and the extent must be the same on the source and destination `texture` objects. If those requirements are not met, the runtime throws an exception.  
   
 ## Texture View Classes  
  C++ AMP introduces the [texture_view Class](../../parallel/amp/reference/texture-view-class.md) in [!INCLUDE[vs_dev12](../../atl-mfc-shared/includes/vs_dev12_md.md)]. Texture views support the same texel types and ranks as the [texture Class](../../parallel/amp/reference/texture-class.md), but unlike textures, they provide access to additional hardware features such as texture sampling and mipmaps. Texture views support read-only, write-only, and read-write access to the underlying texture data.  
@@ -425,7 +425,7 @@ void write2ComponentTexture() {
  Texture views also support the reading of mipmaps. Read-only texture views (those that have a const element type) offer the most flexibility because a range of mip-levels that is determined at instantiation can be dynamically sampled, and because elements that have 1, 2, or 4 components are supported. Read-write texture views that have elements that have one component also support mipmaps, but only of a level that's determined at instantiation. For more information, see [Texture with Mipmaps](http://blogs.msdn.com/b/nativeconcurrency/archive/2013/08/22/texture-with-mipmaps.aspx) on the Parallel Programming in Native Code blog.  
   
 ### Writing to Texture View Objects  
- Use the [texture_view::get Method](../Topic/texture_view::get%20Method.md) to write to the underlying `texture` through the `texture_view` object. A texture view can be read-only, read-write, or write-only. For a texture view to be writable it must have an element type that is non-const; for a texture view to be readable and writable, its element type must also have only one component. Otherwise, the texture view is read-only. You can only access one mipmap level of a texture at a time through a texture view, and the level is specified when the view is instantiated.  
+ Use the [texture_view::get Method](reference/texture_view-class.md#texture_view__get_method) to write to the underlying `texture` through the `texture_view` object. A texture view can be read-only, read-write, or write-only. For a texture view to be writable it must have an element type that is non-const; for a texture view to be readable and writable, its element type must also have only one component. Otherwise, the texture view is read-only. You can only access one mipmap level of a texture at a time through a texture view, and the level is specified when the view is instantiated.  
   
  This example shows how to write to the second-most detailed mipmap level of a texture that has 4 mipmap levels. The most detailed mipmap level is level 0.  
   
@@ -446,7 +446,7 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
 ```  
   
 ## Interoperability  
- The C++ AMP runtime supports interoperability between `texture<T,1>` and the [ID3D11Texture1D interface](http://go.microsoft.com/fwlink/p/LinkId=248503), between `texture<T,2>` and the [ID3D11Texture2D interface](http://go.microsoft.com/fwlink/p/LinkId=255317), and between `texture<T,3>` and the [ID3D11Texture3D interface](http://go.microsoft.com/fwlink/p/LinkId=255377). The [get_texture](../Topic/get_texture%20Function.md) method takes a `texture` object and returns an `IUnknown` interface. The [make_texture](../Topic/make_texture%20Function.md) method takes an `IUnknown` interface and an `accelerator_view` object and returns a `texture` object.  
+ The C++ AMP runtime supports interoperability between `texture<T,1>` and the [ID3D11Texture1D interface](http://go.microsoft.com/fwlink/p/LinkId=248503), between `texture<T,2>` and the [ID3D11Texture2D interface](http://go.microsoft.com/fwlink/p/LinkId=255317), and between `texture<T,3>` and the [ID3D11Texture3D interface](http://go.microsoft.com/fwlink/p/LinkId=255377). The [get_texture](reference/concurrency-namespace-functions-amp.md#get_texture_function) method takes a `texture` object and returns an `IUnknown` interface. The [make_texture](reference/concurrency-namespace-functions-amp.md#make_texture_function) method takes an `IUnknown` interface and an `accelerator_view` object and returns a `texture` object.  
   
 ## See Also  
  [double_2 Class](../../parallel/amp/reference/double-2-class.md)   

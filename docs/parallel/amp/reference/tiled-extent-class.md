@@ -79,9 +79,9 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_extent::get_tile_extent Method](../Topic/tiled_extent::get_tile_extent%20Method.md)|Returns an `extent` object  that captures the values of the `tiled_extent` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
-|[tiled_extent::pad Method](../Topic/tiled_extent::pad%20Method.md)|Returns a new `tiled_extent` object with extents adjusted up to be evenly divisible by the tile dimensions.|  
-|[tiled_extent::truncate Method](../Topic/tiled_extent::truncate%20Method.md)|Returns a new `tiled_extent` object with extents adjusted down to be evenly divisible by the tile dimensions.|  
+|[tiled_extent::get_tile_extent Method](reference/tiled_extent-class.md#tiled_extent__get_tile_extent_method)|Returns an `extent` object  that captures the values of the `tiled_extent` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+|[tiled_extent::pad Method](reference/tiled_extent-class.md#tiled_extent__pad_method)|Returns a new `tiled_extent` object with extents adjusted up to be evenly divisible by the tile dimensions.|  
+|[tiled_extent::truncate Method](reference/tiled_extent-class.md#tiled_extent__truncate_method)|Returns a new `tiled_extent` object with extents adjusted down to be evenly divisible by the tile dimensions.|  
   
 ### Public Operators  
   
@@ -101,7 +101,7 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_extent::tile_extent Data Member](../Topic/tiled_extent::tile_extent%20Data%20Member.md)|Gets an `extent` object  that captures the values of the `tiled_extent` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+|[tiled_extent::tile_extent Data Member](reference/tiled_extent-class.md#tiled_extent__tile_extent_data_member)|Gets an `extent` object  that captures the values of the `tiled_extent` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
   
 ## Inheritance Hierarchy  
  `extent`  

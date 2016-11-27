@@ -54,13 +54,13 @@ class completion_future;
   
 |Name|Description|  
 |----------|-----------------|  
-|[completion_future::get Method](../Topic/completion_future::get%20Method.md)|Waits until the associated asynchronous operation completes.|  
-|[completion_future::then Method](../Topic/completion_future::then%20Method.md)|Chains a callback function object to the `completion_future` object to be executed when the associated asynchronous operation finishes execution.|  
-|[completion_future::to_task Method](../Topic/completion_future::to_task%20Method.md)|Returns a `task` object corresponding to the associated asynchronous operation.|  
-|[completion_future::valid Method](../Topic/completion_future::valid%20Method.md)|Gets a Boolean value that indicates whether the object is associated with an asynchronous operation.|  
-|[completion_future::wait Method](../Topic/completion_future::wait%20Method.md)|Blocks until the associated asynchronous operation completes.|  
-|[completion_future::wait_for Method](../Topic/completion_future::wait_for%20Method.md)|Blocks until the associated asynchronous operation completes or the time specified by `_Rel_time` has elapsed.|  
-|[completion_future::wait_until Method](../Topic/completion_future::wait_until%20Method.md)|Blocks until the associated asynchronous operation completes or until the current time exceeds the value specified by `_Abs_time`.|  
+|[completion_future::get Method](reference/completion_future-class.md#completion_future__get_method)|Waits until the associated asynchronous operation completes.|  
+|[completion_future::then Method](reference/completion_future-class.md#completion_future__then_method)|Chains a callback function object to the `completion_future` object to be executed when the associated asynchronous operation finishes execution.|  
+|[completion_future::to_task Method](reference/completion_future-class.md#completion_future__to_task_method)|Returns a `task` object corresponding to the associated asynchronous operation.|  
+|[completion_future::valid Method](reference/completion_future-class.md#completion_future__valid_method)|Gets a Boolean value that indicates whether the object is associated with an asynchronous operation.|  
+|[completion_future::wait Method](reference/completion_future-class.md#completion_future__wait_method)|Blocks until the associated asynchronous operation completes.|  
+|[completion_future::wait_for Method](reference/completion_future-class.md#completion_future__wait_for_method)|Blocks until the associated asynchronous operation completes or the time specified by `_Rel_time` has elapsed.|  
+|[completion_future::wait_until Method](reference/completion_future-class.md#completion_future__wait_until_method)|Blocks until the associated asynchronous operation completes or until the current time exceeds the value specified by `_Abs_time`.|  
   
 ### Public Operators  
   
