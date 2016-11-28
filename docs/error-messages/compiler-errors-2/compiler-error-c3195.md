@@ -35,13 +35,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiler Error C3195
-'operator' : is reserved and cannot be used as a member of a ref class or value type. CLR or WinRToperators must be defined using the 'operator' keyword  
+'operator' : is reserved and cannot be used as a member of a ref class or value type. CLR or WinRT operators must be defined using the 'operator' keyword  
   
- The compiler detected an operator definition using the Managed Extensions for C++ syntax.  
+The compiler detected an operator definition using the Managed Extensions for C++ syntax. You must use the C++ syntax for operators.  
   
- Either use the new C++ syntax or use the **/clr:oldSyntax** compiler option to enable the Managed Extensions for C++ syntax.  
-  
- The following sample generates C3195 and shows how to fix it:  
+The following sample generates C3195 and shows how to fix it:  
   
 ```  
 // C3195.cpp  

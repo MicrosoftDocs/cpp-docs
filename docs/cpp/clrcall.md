@@ -55,15 +55,6 @@ translation.priority.ht:
  `__clrcall` function pointers are only meant to be used in the application domain in which they were created.  Instead of passing `__clrcall` function pointers across application domains, use <xref:System.CrossAppDomainDelegate>. For more information, see [Application Domains and Visual C++](../dotnet/application-domains-and-visual-cpp.md).  
   
 ## Example  
-  
-```  
-// clrcall.cpp  
-// compile with: /clr:oldSyntax /LD  
-void __clrcall Test1( ) {}  
-void (__clrcall *fpTest1)( ) = &Test1;  
-```  
-  
-## Example  
  Note that when a function is declared with `__clrcall`, code will be generated when needed; for example, when function is called.  
   
 ```  

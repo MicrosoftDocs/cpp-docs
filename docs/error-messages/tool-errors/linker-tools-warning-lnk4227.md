@@ -37,21 +37,21 @@ translation.priority.ht:
 # Linker Tools Warning LNK4227
 metadata operation warning (HRESULT) : warning_message  
   
- The linker detected metadata differences when merging:  
+The linker detected metadata differences when merging:  
   
 -   One or more referenced assemblies with the assembly currently being built.  
   
 -   One or more source code files in a compilation.  
   
- For example, LNK4227 may be caused if you have two global functions with the same name but parameter information declared differently (declarations are not consistent in all compilands). Use ildasm.exe /TEXT /METADATA `object_file` on each .obj file and you should see how the types differ.  
+For example, LNK4227 may be caused if you have two global functions with the same name but parameter information declared differently (declarations are not consistent in all compilands). Use ildasm.exe /TEXT /METADATA `object_file` on each .obj file and you should see how the types differ.  
   
- LNK4227 also reports problems that originate with another tool. For example, al.exe; see [Al.exe Tool Errors and Warnings](http://msdn.microsoft.com/en-us/7f125d49-0a03-47a6-9ba9-d61a679a7d4b).  
+LNK4227 also reports problems that originate with another tool. For example, al.exe; see [Al.exe Tool Errors and Warnings](http://msdn.microsoft.com/en-us/7f125d49-0a03-47a6-9ba9-d61a679a7d4b).  
   
- The metadata problems must be fixed to resolve the warning.  
+The metadata problems must be fixed to resolve the warning.  
   
- For example, LNK4227 is generated when a referenced assembly was signed differently than the assembly that references it.  
+For example, LNK4227 is generated when a referenced assembly was signed differently than the assembly that references it.  
   
- The following sample generates LNK4227:  
+The following sample generates LNK4227:  
   
 ```  
 // LNK4227.cpp  
@@ -80,38 +80,9 @@ ref class MyClass
 };  
 ```  
   
- The following sample generates LNK4227:  
+LNK4227 can also be generated when version numbers in the wrong format are passed to assembly attributes.  The '*' notation is specific to the AssemblyVersionAttribute.  To resolve this warning, use only numbers in the version attributes other than AssemblyVersionAttribute.  
   
-```  
-// LNK4227c.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-using namespace System::Reflection;  
-  
-[assembly:AssemblyDelaySignAttribute(false)];  
-  
-int main() {}  
-```  
-  
- and then,  
-  
-```  
-// LNK4227d.cpp  
-// compile with: /clr:oldSyntax LNK4227c.cpp /FeLNK4227d.exe  
-#using <mscorlib.dll>  
-using namespace System::Reflection;  
-using namespace System::Runtime::CompilerServices;  
-  
-[assembly:AssemblyDelaySignAttribute(true)];  
-  
-__gc class MyClass  
-{  
-};  
-```  
-  
- LNK4227 can also be generated when version numbers in the wrong format are passed to assembly attributes.  The '*' notation is specific to the AssemblyVersionAttribute.  To resolve this warning, use only numbers in the version attributes other than AssemblyVersionAttribute.  
-  
- The following sample generates LNK4227:  
+The following sample generates LNK4227:  
   
 ```  
 // LNK4227e.cpp  

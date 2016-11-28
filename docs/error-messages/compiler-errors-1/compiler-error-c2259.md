@@ -133,25 +133,3 @@ int main() {
    MyDerivedClass^ instance = gcnew MyDerivedClass; // C2259  
 }  
 ```  
-  
- The following sample generates C2259:  
-  
-```  
-// C2259d.cpp  
-// compile with: /clr:oldSyntax  
-public __gc __interface MyInterface {  
-   void MyMethod();  
-};  
-  
-__gc class MyDerivedClass : public MyInterface {  
-// Uncomment the following line to resolve.  
-// public:  
-   void MyMethod() {};  
-   // or the following line  
-   // void MyInterface::MyMethod() {};  
-};  
-  
-int main() {  
-   MyDerivedClass *instance = new MyDerivedClass();   // C2259  
-}  
-```

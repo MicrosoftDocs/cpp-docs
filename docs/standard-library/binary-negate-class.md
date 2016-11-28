@@ -71,7 +71,7 @@ public:
 ## Remarks  
  The template class stores a copy of a binary function object _ *Func*. It defines its member function `operator()` as returning **!**\_ *Func(left, right).*  
   
- The constructor of `binary_negate` is rarely used directly. The helper function [not2](../standard-library/functional-functions.md#not2Function) is usually preferred to declare and use the **binary_negator** adaptor predicate.  
+ The constructor of `binary_negate` is rarely used directly. The helper function [not2](../standard-library/functional-functions.md#not2_function) is usually preferred to declare and use the **binary_negator** adaptor predicate.  
   
 ## Example  
   

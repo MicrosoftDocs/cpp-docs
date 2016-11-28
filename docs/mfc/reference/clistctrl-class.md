@@ -335,7 +335,12 @@ BOOL Arrange(UINT nCode);
  The `nCode` parameter specifies the alignment style.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#2](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#2)]-->  
+```cpp
+	// Align all of the list view control items along the top
+	// of the window (the list view control must be in icon or
+	// small icon mode).
+	m_myListCtrl.Arrange(LVA_ALIGNTOP);
+```
   
 ##  <a name="clistctrl__canceleditlabel"></a>  CListCtrl::CancelEditLabel  
  Cancels item text editing operation.  
@@ -387,7 +392,11 @@ virtual BOOL Create(
  To apply extended Windows styles to the list control object, call [CreateEx](#clistctrl__createex) instead of **Create**.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#1](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#1)] -->  
+```cpp
+	m_myListCtrl.Create(
+		WS_CHILD|WS_VISIBLE|WS_BORDER|LVS_REPORT|LVS_EDITLABELS,
+		CRect(10,10,400,200), pParentWnd, IDD_MYLISTCTRL);   
+```
   
 ##  <a name="clistctrl__createex"></a>  CListCtrl::CreateEx  
  Creates a control (a child window) and associates it with the `CListCtrl` object.  
@@ -447,7 +456,13 @@ CImageList* CreateDragImage(
 ### Remarks  
  The `CImageList` object is permanent, and you must delete it when finished. For example:  
   
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#3](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#3)] -->  
+```cpp
+		CImageList* pImageList = m_myListCtrl.CreateDragImage(nItem, &point);
+
+		// do something
+
+		delete pImageList;
+```
   
 ##  <a name="clistctrl__deleteallitems"></a>  CListCtrl::DeleteAllItems  
  Deletes all items from the list view control.  
@@ -460,7 +475,11 @@ BOOL DeleteAllItems();
  Nonzero if successful; otherwise zero.  
   
 ### Example  
- <!-- FIXME[!CODE [NVC_MFC_CListCtrl#4](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#4)] -->  
+```cpp
+	// Delete all of the items from the list view control.
+	m_myListCtrl.DeleteAllItems();
+	ASSERT(m_myListCtrl.GetItemCount() == 0);
+```
   
 ##  <a name="clistctrl__deletecolumn"></a>  CListCtrl::DeleteColumn  
  Deletes a column from the list view control.  
@@ -477,7 +496,15 @@ BOOL DeleteColumn(int nCol);
  Nonzero if successful; otherwise zero.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#5](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#5)] -->  
+```cpp
+		int nColumnCount = m_myListCtrl.GetHeaderCtrl()->GetItemCount();
+
+		// Delete all of the columns.
+		for (int i=0; i < nColumnCount; i++)
+		{
+			m_myListCtrl.DeleteColumn(0);
+		}
+```
   
 ##  <a name="clistctrl__deleteitem"></a>  CListCtrl::DeleteItem  
  Deletes an item from a list view control.  
@@ -494,7 +521,15 @@ BOOL DeleteItem(int nItem);
  Nonzero if successful; otherwise zero.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#6](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#6)] -->  
+```cpp
+		int nCount = m_myListCtrl.GetItemCount();
+
+		// Delete all of the items from the list view control.
+		for (int i=0; i < nCount; i++)
+		{
+			m_myListCtrl.DeleteItem(0);
+		}
+```
   
 ##  <a name="clistctrl__drawitem"></a>  CListCtrl::DrawItem  
  Called by the framework when a visual aspect of an owner-draw list view control changes.  
@@ -534,7 +569,15 @@ CEdit* EditLabel(int nItem);
  Use this function to begin in-place editing of the specified list view item's text.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#7](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#7)] -->  
+```cpp
+		// Make sure the focus is set to the list view control.
+		m_myListCtrl.SetFocus();
+
+		// Show the edit control on the label of the first
+		// item in the list view control.
+		CEdit* pmyEdit = m_myListCtrl.EditLabel(1);
+		ASSERT(pmyEdit != NULL);
+```
   
 ##  <a name="clistctrl__enablegroupview"></a>  CListCtrl::EnableGroupView  
  Enables or disables whether the items in a list view control display as a group.  
@@ -582,7 +625,12 @@ BOOL EnsureVisible(
  The list view control is scrolled if necessary. If the `bPartialOK` parameter is nonzero, no scrolling occurs if the item is partially visible.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#8](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#8)] -->  
+```cpp
+		// Ensure that the last item is visible.
+		int nCount = m_myListCtrl.GetItemCount();
+		if (nCount > 0)
+			m_myListCtrl.EnsureVisible(nCount-1, FALSE);
+```
   
 ##  <a name="clistctrl__finditem"></a>  CListCtrl::FindItem  
  Searches for a list view item having specified characteristics.  
@@ -609,7 +657,19 @@ int FindItem(
  The `pFindInfo` parameter points to an **LVFINDINFO** structure, which contains information used to search for a list view item.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#9](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#9)] -->  
+```cpp
+		LVFINDINFO info;
+		int nIndex;
+
+		info.flags = LVFI_PARTIAL|LVFI_STRING;
+		info.psz = _T("item");
+
+		// Delete all of the items that begin with the string.
+		while ((nIndex = m_myListCtrl.FindItem(&info)) != -1)
+		{
+			m_myListCtrl.DeleteItem(nIndex);
+		}
+```
   
 ##  <a name="clistctrl__getbkcolor"></a>  CListCtrl::GetBkColor  
  Retrieves the background color of a list view control.  
@@ -646,7 +706,18 @@ BOOL GetBkImage(LVBKIMAGE* plvbkImage) const;
  This method implements the behavior of the Win32 macro, [ListView_GetBkImage](http://msdn.microsoft.com/library/windows/desktop/bb761246), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#10](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#10)] -->  
+```cpp
+		LVBKIMAGE bki;
+
+		// If no background image is set for the list view control use
+		// the Microsoft homepage image as the background image.
+		if (m_myListCtrl.GetBkImage(&bki) && (bki.ulFlags == LVBKIF_SOURCE_NONE))
+		{
+			m_myListCtrl.SetBkImage(
+				_T("http://www.microsoft.com/library/images/gifs/homepage/microsoft.gif"),
+				TRUE);
+		}
+```
   
 ##  <a name="clistctrl__getcallbackmask"></a>  CListCtrl::GetCallbackMask  
  Retrieves the callback mask for a list view control.  
@@ -713,7 +784,18 @@ BOOL GetColumn(
  The **LVCOLUMN** structure contains information about a column in report view.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#11](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#11)] -->  
+```cpp
+		LVCOLUMN col;
+
+		col.mask = LVCF_WIDTH;
+
+		// Double the column width of the first column.
+		if (m_myListCtrl.GetColumn(0, &col))
+		{
+			col.cx *= 2;
+			m_myListCtrl.SetColumn(0, &col);
+		}
+```
   
 ##  <a name="clistctrl__getcolumnorderarray"></a>  CListCtrl::GetColumnOrderArray  
  Retrieves the column order (left to right) of a list view control.  
@@ -738,7 +820,32 @@ BOOL GetColumnOrderArray(
  This member function implements the behavior of the Win32 macro, [ListView_GetColumnOrderArray](http://msdn.microsoft.com/library/windows/desktop/bb761254), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#12](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#12)] -->  
+```cpp
+		// Reverse the order of the columns in the list view control
+		// (i.e. make the first column the last, the last column
+		// the first, and so on...).
+		CHeaderCtrl* pHeaderCtrl = m_myListCtrl.GetHeaderCtrl();
+
+		if (pHeaderCtrl != NULL)
+		{
+			int  nColumnCount = pHeaderCtrl->GetItemCount();
+			LPINT pnOrder = (LPINT) malloc(nColumnCount*sizeof(int));
+			ASSERT(pnOrder != NULL);
+
+			m_myListCtrl.GetColumnOrderArray(pnOrder, nColumnCount);
+
+			int i, j, nTemp;
+			for (i = 0, j = nColumnCount-1; i < j; i++, j--)
+			{
+				nTemp = pnOrder[i];
+				pnOrder[i] = pnOrder[j];
+				pnOrder[j] = nTemp;
+			}
+
+			m_myListCtrl.SetColumnOrderArray(nColumnCount, pnOrder);
+			free(pnOrder);
+		}
+```
   
 ##  <a name="clistctrl__getcolumnwidth"></a>  CListCtrl::GetColumnWidth  
  Retrieves the width of a column in report view or list view.  
@@ -757,7 +864,11 @@ int GetColumnWidth(int nCol) const;
  The width, in pixels, of the column specified by `nCol`.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#13](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#13)] -->  
+```cpp
+		// Increase the column width of the second column by 20.
+		int nWidth = m_myListCtrl.GetColumnWidth(1);
+		m_myListCtrl.SetColumnWidth(1, 20 + nWidth);
+```
   
 ##  <a name="clistctrl__getcountperpage"></a>  CListCtrl::GetCountPerPage  
  Calculates the number of items that can fit vertically in the visible area of a list view control when in list view or report view.  
@@ -787,7 +898,18 @@ CEdit* GetEditControl() const;
  If successful, a pointer to the [CEdit](../Topic/CEdit%20Class.md) object that is used to edit the item text; otherwise **NULL**.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#14](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#14)] -->  
+```cpp
+		// The string replacing the text in the edit control.
+		LPCTSTR lpszmyString = _T("custom label!");
+
+		// If possible, replace the text in the label edit control.
+		CEdit* pEdit = m_myListCtrl.GetEditControl();
+
+		if (pEdit != NULL)
+		{
+			pEdit->SetWindowText(lpszmyString);
+		}
+```
   
 ##  <a name="clistctrl__getemptytext"></a>  CListCtrl::GetEmptyText  
  Retrieves the string to display if the current list-view control is empty.  
@@ -835,7 +957,22 @@ POSITION GetFirstSelectedItemPosition() const;
 ### Example  
  The following code sample demonstrates the usage of this function.  
   
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#15](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#15)] -->  
+```cpp
+		POSITION pos = m_myListCtrl.GetFirstSelectedItemPosition();
+		if (pos == NULL)
+		{
+			TRACE(_T("No items were selected!\n"));
+		}
+		else
+		{
+			while (pos)
+			{
+				int nItem = m_myListCtrl.GetNextSelectedItem(pos);
+				TRACE(_T("Item %d was selected!\n"), nItem);
+				// you could do your own processing on nItem here
+			}
+		}
+```
   
 ##  <a name="clistctrl__getfocusedgroup"></a>  CListCtrl::GetFocusedGroup  
  Retrieves the group that has the keyboard focus in the current list-view control.  
@@ -918,12 +1055,41 @@ BOOL GetGroupInfoByIndex(
 ### Example  
  The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.  
   
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl_s2#6](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl_s2#6)] -->  
+```cpp
+public:
+	// Variable used to access the list control.
+	CListCtrl m_listCtrl; 
+```
   
 ### Example  
  The following code example demonstrates the `GetGroupInfoByIndex` method. In an earlier section of this code example we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example retrieves information about the group whose index is 0, if such a group exists.  
   
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl_s2#2](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl_s2#2)]  -->
+```cpp
+	// GetGroupInfoByIndex
+	const int GROUP_HEADER_BUFFER_SIZE = 40;
+
+// Initialize the structure 
+	LVGROUP gInfo = {0};
+	gInfo.cbSize = sizeof(LVGROUP);
+	wchar_t wstrHeadGet[GROUP_HEADER_BUFFER_SIZE] = {0};
+	gInfo.cchHeader = GROUP_HEADER_BUFFER_SIZE;
+	gInfo.pszHeader = wstrHeadGet;
+	gInfo.mask = (LVGF_ALIGN | LVGF_STATE | LVGF_HEADER | LVGF_GROUPID);
+	gInfo.state = LVGS_NORMAL;
+	gInfo.uAlign  = LVGA_HEADER_LEFT;
+
+	BOOL bRet = m_listCtrl.GetGroupInfoByIndex( 0, &gInfo );
+	if (bRet == TRUE) {
+		CString strHeader = CString( gInfo.pszHeader );
+		CString str;
+		str.Format(_T("Header: '%s'"), strHeader);
+		AfxMessageBox(str, MB_ICONINFORMATION);
+	}
+	else
+	{
+		AfxMessageBox(_T("No group information was retrieved."));
+	}
+```
   
 ##  <a name="clistctrl__getgroupmetrics"></a>  CListCtrl::GetGroupMetrics  
  Retrieves the metrics of a group.  
@@ -972,12 +1138,29 @@ BOOL GetGroupRect(
 ### Example  
  The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.  
   
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl_s2#6](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl_s2#6)] -->  
+```cpp
+public:
+	// Variable used to access the list control.
+	CListCtrl m_listCtrl; 
+```
   
 ### Example  
  The following code example demonstrates the `GetGroupRect` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example draws a 3D rectangle around the group whose index is 0, if such a group exists.  
   
- <!-- [!CODE [NVC_MFC_CListCtrl_s2#5](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl_s2#5)]  -->
+```cpp
+	// GetGroupRect
+
+	// Get the graphics rectangle that surrounds group 0.
+	CRect rect;
+	BOOL bRet = m_listCtrl.GetGroupRect( 0, &rect, LVGGR_GROUP); 
+	// Draw a blue rectangle around group 0.
+	if (bRet == TRUE) {
+		m_listCtrl.GetDC()->Draw3dRect( &rect, RGB(0, 0, 255), RGB(0, 0, 255));
+	}
+	else {
+		AfxMessageBox(_T("No group information was retrieved."), MB_ICONINFORMATION);
+	}
+```
   
 ##  <a name="clistctrl__getgroupstate"></a>  CListCtrl::GetGroupState  
  Retrieves the state for a specified group in the current list-view control.  
@@ -1035,7 +1218,12 @@ HCURSOR GetHotCursor();
  This member function implements the behavior of the Win32 macro, [ListView_GetHotCursor](http://msdn.microsoft.com/library/windows/desktop/bb761292), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)]. The hot cursor, only visible when hover selection is enabled, appears when the cursor passes over any list view item. Hover selection is enabled by setting the **LVS_EX_TRACKSELECT** extended style.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#17](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#17)] -->  
+```cpp
+		// Set the hot cursor to be the system app starting cursor.
+		HCURSOR hCursor = ::LoadCursor(NULL, IDC_APPSTARTING);
+		m_myListCtrl.SetHotCursor(hCursor);
+		ASSERT(m_myListCtrl.GetHotCursor() == hCursor);
+```
   
 ##  <a name="clistctrl__gethotitem"></a>  CListCtrl::GetHotItem  
  Retrieves the list view item currently under the cursor.  
@@ -1053,7 +1241,12 @@ int GetHotItem();
  If hot tracking is enabled, when a user pauses over a list view item, the item label is automatically highlighted without the use of a mouse button.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#18](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#18)] -->  
+```cpp
+	// Set the hot item to the first item only if no other item is 
+	// highlighted.
+	if (m_myListCtrl.GetHotItem() == -1)
+		m_myListCtrl.SetHotItem(0);
+```
   
 ##  <a name="clistctrl__gethovertime"></a>  CListCtrl::GetHoverTime  
  Retrieves the current hover time of a list view control.  
@@ -1071,7 +1264,12 @@ DWORD GetHoverTime() const;
  This member function implements the behavior of the Win32 macro, [ListView_GetHoverTime](http://msdn.microsoft.com/library/windows/desktop/bb761296), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#19](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#19)] -->  
+```cpp
+		// If the hover time is the default set to 1 sec.
+		DWORD dwTime = m_myListCtrl.GetHoverTime();
+		if (dwTime == -1)
+			m_myListCtrl.SetHoverTime(1000);
+```
   
 ##  <a name="clistctrl__getimagelist"></a>  CListCtrl::GetImageList  
  Retrieves the handle of an image list used for drawing list view items.  
@@ -1096,7 +1294,12 @@ CImageList* GetImageList(int nImageList) const;
  A pointer to the image list used for drawing list view items.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#20](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#20)] -->  
+```cpp
+		ASSERT(m_myListCtrl.GetImageList(LVSIL_NORMAL) == NULL);
+
+		m_myListCtrl.SetImageList(&m_lcImageList, LVSIL_NORMAL);
+		ASSERT(m_myListCtrl.GetImageList(LVSIL_NORMAL) == &m_lcImageList);
+```
   
 ##  <a name="clistctrl__getinsertmark"></a>  CListCtrl::GetInsertMark  
  Retrieves the current position of the insertion mark.  
@@ -1209,7 +1412,16 @@ DWORD_PTR GetItemData(int nItem) const;
  This value is the **lParam** member of the [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)]  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#21](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#21)]  
+```cpp
+	// If any item's data is equal to zero then reset it to -1.
+	for (int i=0; i < m_myListCtrl.GetItemCount(); i++)
+	{
+		if (m_myListCtrl.GetItemData(i) == 0)
+		{
+			m_myListCtrl.SetItemData(i, (DWORD) -1);
+		}
+	}
+```
   
 ##  <a name="clistctrl__getitemindexrect"></a>  CListCtrl::GetItemIndexRect  
  Retrieves the bounding rectangle for all or part of a subitem in the current list-view control.  
@@ -1242,12 +1454,28 @@ BOOL GetItemIndexRect(
 ### Example  
  The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.  
   
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl_s2#6](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl_s2#6)] -->  
+```cpp
+public:
+	// Variable used to access the list control.
+	CListCtrl m_listCtrl; 
+```
   
 ### Example  
  The following code example demonstrates the `GetGroupRect` method. Prior to entering this code example we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example draws a 3D rectangle around the second subitem in both columns.  
   
- <!-- [!CODE [NVC_MFC_CListCtrl_s2#4](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl_s2#4)]  -->
+```cpp
+	// GetItemIndexRect
+	// Get the rectangle that bounds the second item in the first group.
+	LVITEMINDEX lvItemIndex;
+	lvItemIndex.iGroup = 0;
+	lvItemIndex.iItem = 1;
+	CRect rect;
+	BOOL bRet = m_listCtrl.GetItemIndexRect(
+		&lvItemIndex, 0, LVIR_BOUNDS, &rect);
+
+	// Draw a red rectangle around the item.
+	m_listCtrl.GetDC()->Draw3dRect( &rect, RGB(255, 0, 0), RGB(255, 0, 0) );
+```
   
 ##  <a name="clistctrl__getitemposition"></a>  CListCtrl::GetItemPosition  
  Retrieves the position of a list view item.  
@@ -1271,7 +1499,19 @@ BOOL GetItemPosition(
  Nonzero if successful; otherwise zero.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#22](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#22)] -->  
+```cpp
+		POINT pt;
+
+		// Move all items in the list control 100 pixels to the right.
+		UINT i, nCount = m_myListCtrl.GetItemCount();
+
+		for (i=0; i < nCount; i++)
+		{
+			m_myListCtrl.GetItemPosition(i, &pt);
+			pt.x += 100;
+			m_myListCtrl.SetItemPosition(i, pt);
+		}   
+```
   
 ##  <a name="clistctrl__getitemrect"></a>  CListCtrl::GetItemRect  
  Retrieves the bounding rectangle for all or part of an item in the current view.  
@@ -1305,7 +1545,46 @@ BOOL GetItemRect(
  Nonzero if successful; otherwise zero.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#23](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#23)] -->  
+```cpp
+// OnClick is the handler for the NM_CLICK notification
+void CListCtrlDlg::OnClick(NMHDR* pNMHDR, LRESULT* pResult)
+{
+	UNREFERENCED_PARAMETER(pResult);
+
+	LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
+
+	// Get the current mouse location and convert it to client
+	// coordinates.
+	CPoint pos( ::GetMessagePos() ); 
+	ScreenToClient(&pos);
+
+	// Get indexes of the first and last visible items in 
+	// the listview control.
+	int index = m_myListCtrl.GetTopIndex();
+	int last_visible_index = index + m_myListCtrl.GetCountPerPage();
+	if (last_visible_index > m_myListCtrl.GetItemCount())
+		last_visible_index = m_myListCtrl.GetItemCount();
+
+	// Loop until number visible items has been reached.
+	while (index <= last_visible_index)
+	{
+		// Get the bounding rectangle of an item. If the mouse
+		// location is within the bounding rectangle of the item,
+		// you know you have found the item that was being clicked.
+		CRect r;
+		m_myListCtrl.GetItemRect(index, &r, LVIR_BOUNDS);
+		if (r.PtInRect(pia->ptAction))
+		{
+			UINT flag = LVIS_SELECTED | LVIS_FOCUSED;
+			m_myListCtrl.SetItemState(index, flag, flag);
+			break;
+		}
+
+		// Get the next item in listview control.
+		index++;
+	}
+}
+```
   
 ##  <a name="clistctrl__getitemspacing"></a>  CListCtrl::GetItemSpacing  
  Calculates the spacing between items in the current list-view control.  
@@ -1491,7 +1770,22 @@ int GetNextSelectedItem(POSITION& pos) const;
 ### Example  
  The following code sample demonstrates the usage of this function.  
   
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#15](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#15)] -->  
+```cpp
+		POSITION pos = m_myListCtrl.GetFirstSelectedItemPosition();
+		if (pos == NULL)
+		{
+			TRACE(_T("No items were selected!\n"));
+		}
+		else
+		{
+			while (pos)
+			{
+				int nItem = m_myListCtrl.GetNextSelectedItem(pos);
+				TRACE(_T("Item %d was selected!\n"), nItem);
+				// you could do your own processing on nItem here
+			}
+		}
+```
   
 ##  <a name="clistctrl__getnumberofworkareas"></a>  CListCtrl::GetNumberOfWorkAreas  
  Retrieves the current number of working areas for a list view control.  
@@ -1509,7 +1803,31 @@ UINT GetNumberOfWorkAreas() const;
  This member function implements the behavior of the Win32 macro, [ListView_GetNumberOfWorkAreas](http://msdn.microsoft.com/library/windows/desktop/bb774988), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#25](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#25)] -->  
+```cpp
+		UINT i, uCount = m_myListCtrl.GetNumberOfWorkAreas();
+		LPRECT lpRects = (LPRECT) malloc(uCount*sizeof(RECT));
+
+		if (lpRects != NULL)
+		{
+			// Dump all of the work area dimensions.
+			m_myListCtrl.GetWorkAreas(uCount, lpRects);
+
+			for (i=0; i < uCount; i++)
+			{
+				TRACE(_T("Work area %d; left = %d, top = %d, right = %d, ")
+					_T("bottom = %d\r\n"),
+					i, lpRects[i].left, lpRects[i].top, lpRects[i].right, 
+					lpRects[i].bottom);
+			}
+
+			free(lpRects);
+		}
+		else
+		{
+			TRACE(_T("Couldn't allocate enough memory!"));   
+		}
+
+```
   
 ##  <a name="clistctrl__getoutlinecolor"></a>  CListCtrl::GetOutlineColor  
  Retrieves the color of the border of a list view control.  
@@ -1570,7 +1888,21 @@ UINT GetSelectedCount() const;
  The number of selected items in the list view control.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#26](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#26)] -->  
+```cpp
+		UINT i, uSelectedCount = m_myListCtrl.GetSelectedCount();
+		int  nItem = -1;
+
+		// Update all of the selected items.
+		if (uSelectedCount > 0)
+		{
+			for (i=0; i < uSelectedCount; i++)
+			{
+				nItem = m_myListCtrl.GetNextItem(nItem, LVNI_SELECTED);
+				ASSERT(nItem != -1);
+				m_myListCtrl.Update(nItem); 
+			}
+		}
+```
   
 ##  <a name="clistctrl__getselectionmark"></a>  CListCtrl::GetSelectionMark  
  Retrieves the selection mark of a list view control.  
@@ -1586,7 +1918,12 @@ int GetSelectionMark();
  This member function implements the behavior of the Win32 macro, [ListView_GetSelectionMark](http://msdn.microsoft.com/library/windows/desktop/bb774998), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
- <!--[!CODE [NVC_MFC_CListCtrl#27](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#27)]-->  
+```cpp
+	// Set the selection mark to the first item only if no other item is 
+	// selected.
+	if (m_myListCtrl.GetSelectionMark() == -1)
+		m_myListCtrl.SetSelectionMark(0);
+```
   
 ##  <a name="clistctrl__getstringwidth"></a>  CListCtrl::GetStringWidth  
  Determines the minimum column width necessary to display all of a given string.  
@@ -1608,7 +1945,19 @@ int GetStringWidth(LPCTSTR lpsz) const;
  The returned width takes into account the control's current font and column margins, but not the width of a small icon.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#28](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#28)]  
+```cpp
+		CString strColumn;
+		int nWidth;
+
+		// Insert six columns in the list view control. Make the width of
+		// the column be the width of the column header plus 50%.
+		for (int i = 0; i < 6; i++)
+		{
+			strColumn.Format(_T("column %d"), i);
+			nWidth = 3*m_myListCtrl.GetStringWidth(strColumn)/2;
+			m_myListCtrl.InsertColumn(i, strColumn, LVCFMT_LEFT, nWidth);
+		}
+```
   
 ##  <a name="clistctrl__getsubitemrect"></a>  CListCtrl::GetSubItemRect  
  Retrieves the bounding rectangle of an item in a list view control.  
@@ -1730,7 +2079,14 @@ CToolTipCtrl* GetToolTips() const;
  This member function implements the behavior of the Win32 message [LVM_GETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb761085), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)]. The MFC implementation of `GetToolTips` returns a `CToolTipCtrl` object, which is used by the list control, rather than a handle to a tooltip control.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#29](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#29)]  
+```cpp
+		CToolTipCtrl* pTip = m_myListCtrl.GetToolTips();
+		if (NULL != pTip)
+		{
+			pTip->UpdateTipText(_T("I'm a list view!"), &m_myListCtrl,
+				IDD_MYLISTCTRL);
+		}
+```
   
 ##  <a name="clistctrl__gettopindex"></a>  CListCtrl::GetTopIndex  
  Retrieves the index of the topmost visible item when in list view or report view.  
@@ -1745,7 +2101,20 @@ int GetTopIndex() const;
  The index of the topmost visible item.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#30](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#30)]  -->
+```cpp
+		// Make sure the focus is set to the list view control.
+		m_myListCtrl.SetFocus();
+
+		// Select all of the items that are completely visible.
+		int n = m_myListCtrl.GetTopIndex();
+		int nLast = n + m_myListCtrl.GetCountPerPage();
+
+		for (; n < nLast; n++)
+		{
+			m_myListCtrl.SetItemState(n, LVIS_SELECTED, LVIS_SELECTED);
+			ASSERT(m_myListCtrl.GetItemState(n, LVIS_SELECTED) == LVIS_SELECTED); 
+		}
+```
   
 ##  <a name="clistctrl__getview"></a>  CListCtrl::GetView  
  Gets the view of the list view control.  
@@ -1859,7 +2228,25 @@ int HitTest(
  You can test for the **LVHT_ONITEM** value of the structure's **flag** member to determine whether a given position is over a list view item. This value is a bitwise-OR operation on the `LVHT_ONITEMICON`, `LVHT_ONITEMLABEL`, and `LVHT_ONITEMSTATEICON` values of the structure's **flag** member.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#31](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#31)]  
+```cpp
+void CListCtrlDlg::OnRClick(NMHDR* pNMHDR, LRESULT* pResult)
+{
+	LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
+	CPoint point(pia->ptAction);
+
+	// Select the item the user clicked on.
+	UINT uFlags;
+	int nItem = m_myListCtrl.HitTest(point, &uFlags);
+
+	if (uFlags & LVHT_ONITEMLABEL)
+	{
+		m_myListCtrl.SetItem(nItem, 0, LVIF_STATE, NULL, 0, LVIS_SELECTED, 
+			LVIS_SELECTED, 0);
+	}
+
+	*pResult = 0;
+}
+```
   
 ##  <a name="clistctrl__insertcolumn"></a>  CListCtrl::InsertColumn  
  Inserts a new column in a list view control.  
@@ -2005,7 +2392,27 @@ int InsertItem(
  Calling this method may cause the **LVM_INSERTITEM** message to be sent to your control window. The associated message handler for the control may fail to set the item text under certain conditions (such as using window styles such as **LVS_OWNERDRAW**). For more information on these conditions, refer to [LVM_INSERTITEM](http://msdn.microsoft.com/library/windows/desktop/bb761107) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#42](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#42)]  
+```cpp
+		CString strText;
+		int nColumnCount = m_myListCtrl.GetHeaderCtrl()->GetItemCount();
+
+		// Insert 10 items in the list view control.
+		for (int i = 0; i < 10; i++)
+		{
+			strText.Format(TEXT("item %d"), i);
+
+			// Insert the item, select every other item.
+			m_myListCtrl.InsertItem(LVIF_TEXT | LVIF_STATE, i, strText, 
+				(i % 2) == 0 ? LVIS_SELECTED : 0, LVIS_SELECTED, 0, 0);
+
+			// Initialize the text of the subitems.
+			for (int j = 1; j < nColumnCount; j++)
+			{
+				strText.Format(TEXT("sub-item %d %d"), i, j);
+				m_myListCtrl.SetItemText(i, j, strText);
+			}
+		}
+```
   
 ##  <a name="clistctrl__insertmarkhittest"></a>  CListCtrl::InsertMarkHitTest  
  Retrieves the insertion point closest to a specified point.  
@@ -2120,12 +2527,40 @@ UINT MapIndexToID(UINT index) const;
 ### Example  
  The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.  
   
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl_s2#6](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl_s2#6)]  -->
+```cpp
+public:
+	// Variable used to access the list control.
+	CListCtrl m_listCtrl; 
+```
   
 ### Example  
  The following code example demonstrates the `MapIndexToID` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following example maps the index of each list-view item to an identification number, and then retrieves the index for each identification number. Finally, the example reports whether the original indexes were retrieved.  
   
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl_s2#3](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl_s2#3)]-->  
+```cpp
+	// MapIndexToID
+	int iCount = m_listCtrl.GetItemCount();
+	UINT nId = 0;
+	UINT nIndex = 0;
+	for (int iIndexOriginal = 0; iIndexOriginal < iCount; iIndexOriginal++)
+	{
+		// Map index to ID.
+		nId = m_listCtrl.MapIndexToID((UINT)iIndexOriginal);
+
+		// Map ID to index.
+		nIndex = m_listCtrl.MapIDToIndex(nId);
+
+		if (nIndex != (UINT)(iIndexOriginal))
+		{
+			CString str;
+			str.Format(_T("Mapped index (%d) is not equal to original index (%d)"),
+				nIndex, (UINT)(iIndexOriginal));
+			AfxMessageBox(str);
+			return;
+		}
+	}
+	AfxMessageBox(_T("The mapped indexes and original indexes are equal."), 
+		MB_ICONINFORMATION);
+```
   
 ##  <a name="clistctrl__movegroup"></a>  CListCtrl::MoveGroup  
  Moves the specified group to the specified zero based index of the list view control.  
@@ -2250,7 +2685,12 @@ BOOL SetBkColor(COLORREF cr);
  Nonzero if successful; otherwise zero.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#32](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#32)]  -->
+```cpp
+		// Use the 3D button face color for the background.
+		COLORREF crBkColor = ::GetSysColor(COLOR_3DFACE);
+		m_myListCtrl.SetBkColor(crBkColor);
+		ASSERT(m_myListCtrl.GetBkColor() == crBkColor);
+```
   
 ##  <a name="clistctrl__setbkimage"></a>  CListCtrl::SetBkImage  
  Sets the background image of a list view control.  
@@ -2319,7 +2759,13 @@ BOOL SetCallbackMask(UINT nMask);
  Nonzero if successful; otherwise zero.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#33](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#33)]  -->
+```cpp
+	// Set the callback mask so that only the selected and focused states
+	// are stored for each item.
+	m_myListCtrl.SetCallbackMask(LVIS_SELECTED|LVIS_FOCUSED);
+	ASSERT(m_myListCtrl.GetCallbackMask() == 
+		(LVIS_SELECTED|LVIS_FOCUSED));
+```
 
 ##  <a name="clistctrl__setcheck"></a>  CListCtrl::SetCheck  
  Determines if the state image of a list control item is visible.  
@@ -2341,7 +2787,20 @@ BOOL SetCheck(
  Nonzero if the item is checked, otherwise 0.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#43](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#43)]  -->
+```cpp
+		int nCount = m_myListCtrl.GetItemCount();
+		BOOL fCheck = FALSE;
+
+		// Set the check state of every other item to TRUE and 
+		// all others to FALSE.
+		for (int i = 0; i < nCount; i++)
+		{
+			m_myListCtrl.SetCheck(i, fCheck);
+			ASSERT((m_myListCtrl.GetCheck(i) && fCheck) || 
+				(!m_myListCtrl.GetCheck(i) && !fCheck));
+			fCheck = !fCheck;
+		}
+```
   
 ##  <a name="clistctrl__setcolumn"></a>  CListCtrl::SetColumn  
  Sets the attributes of a list view column.  
@@ -2427,7 +2886,11 @@ DWORD SetExtendedStyle(DWORD dwNewStyle);
  This member function implements the behavior of the Win32 macro, [ListView_SetExtendedListViewStyle](http://msdn.microsoft.com/library/windows/desktop/bb775076), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#16](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#16)]  -->
+```cpp
+	// Allow the header controls item to be movable by the user.
+	m_myListCtrl.SetExtendedStyle
+		(m_myListCtrl.GetExtendedStyle()|LVS_EX_HEADERDRAGDROP);
+```
   
 ##  <a name="clistctrl__setgroupinfo"></a>  CListCtrl::SetGroupInfo  
  Sets the information that describes the specified group of the current list-view control.  
@@ -2557,7 +3020,10 @@ CSize SetIconSpacing(
  This member function implements the behavior of the Win32 macro, [ListView_SetIconSpacing](http://msdn.microsoft.com/library/windows/desktop/bb775085), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#34](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#34)]  -->
+```cpp
+	// Leave lots of space between icons.
+	m_myListCtrl.SetIconSpacing(CSize(100, 100));
+```
   
 ##  <a name="clistctrl__setimagelist"></a>  CListCtrl::SetImageList  
  Assigns an image list to a list view control.  
@@ -2733,7 +3199,18 @@ void SetItemCount(int nItems);
  This member function implements the behavior of the Win32 macro, [ListView_SetItemCount](http://msdn.microsoft.com/library/windows/desktop/bb775093), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#35](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#35)]  -->
+```cpp
+		CString str;
+
+		// Add 1024 items to the list view control.
+		m_myListCtrl.SetItemCount(1024);
+
+		for (int i = 0; i < 1024; i++)
+		{
+			str.Format(TEXT("item %d"), i);
+			m_myListCtrl.InsertItem(i, str);
+		}
+```
   
 ##  <a name="clistctrl__setitemcountex"></a>  CListCtrl::SetItemCountEx  
  Sets the item count for a virtual list view control.  
@@ -2762,7 +3239,22 @@ BOOL SetItemCountEx(
  This member function implements the behavior of the Win32 macro, [ListView_SetItemCountEx](http://msdn.microsoft.com/library/windows/desktop/bb775095), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)]and should only be called for virtual list views.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#36](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#36)]  -->
+```cpp
+		CString str;
+
+		// Add 1024 items to the list view control.
+
+		// Force my virtual list view control to allocate 
+		// enough memory for my 1024 items.
+		m_myVirtualListCtrl.SetItemCountEx(1024, LVSICF_NOSCROLL|
+			LVSICF_NOINVALIDATEALL);
+
+		for (int i = 0; i < 1024; i++)
+		{
+			str.Format(TEXT("item %d"), i);
+			m_myVirtualListCtrl.InsertItem(i, str);
+		}
+```
   
 ##  <a name="clistctrl__setitemdata"></a>  CListCtrl::SetItemData  
  Sets the 32-bit application-specific value associated with the item specified by `nItem`.  
@@ -2786,7 +3278,13 @@ BOOL SetItemData(
  This value is the **lParam** member of the [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#37](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#37)]  -->
+```cpp
+	// Set the data of each item to be equal to its index.
+	for (int i = 0; i < m_myListCtrl.GetItemCount(); i++)
+	{
+		m_myListCtrl.SetItemData(i, i);
+	}
+```
   
 ##  <a name="clistctrl__setitemindexstate"></a>  CListCtrl::SetItemIndexState  
  Sets the state of an item in the current list-view control.  
@@ -2980,7 +3478,12 @@ BOOL SetTextBkColor(COLORREF cr);
  Nonzero if successful; otherwise zero.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#24](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#24)]  -->
+```cpp
+		// Use the 3D button face color for the background.
+		COLORREF crBkColor = ::GetSysColor(COLOR_3DFACE);
+		m_myListCtrl.SetTextBkColor(crBkColor);
+		ASSERT(m_myListCtrl.GetTextBkColor() == crBkColor);
+```
   
 ##  <a name="clistctrl__settextcolor"></a>  CListCtrl::SetTextColor  
  Sets the text color of a list view control.  
@@ -2997,7 +3500,13 @@ BOOL SetTextColor(COLORREF cr);
  Nonzero if successful; otherwise zero.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#38](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#38)]  -->
+```cpp
+	// Use the window text color for
+	// the item text of the list view control.
+	COLORREF crTextColor = ::GetSysColor(COLOR_WINDOWTEXT);
+	m_myListCtrl.SetTextColor(crTextColor);
+	ASSERT(m_myListCtrl.GetTextColor() == crTextColor);
+```
   
 ##  <a name="clistctrl__settileinfo"></a>  CListCtrl::SetTileInfo  
  Sets the information for a tile of the list view control.  
@@ -3089,7 +3598,10 @@ void SetWorkAreas(
  This member function implements the behavior of the Win32 macro, [ListView_SetWorkAreas](http://msdn.microsoft.com/library/windows/desktop/bb775128), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#39](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#39)]  -->
+```cpp
+	// Remove all working areas.
+	m_myListCtrl.SetWorkAreas(0, NULL);
+```
   
 ##  <a name="clistctrl__sortgroups"></a>  CListCtrl::SortGroups  
  Uses an application-defined comparison function to sort groups by ID within a list view control.  
@@ -3154,9 +3666,24 @@ int CALLBACK CompareFunc(LPARAM lParam1,
 ### Example  
  The following is a simple comparison function that results in items being sorted by their `lParam` values.  
   
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#40](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#40)]  -->
+```cpp
+// Sort items by associated lParam
+int CALLBACK CListCtrlDlg::MyCompareProc(LPARAM lParam1, LPARAM lParam2, 
+	LPARAM lParamSort)
+{
+	UNREFERENCED_PARAMETER(lParamSort);
+
+	return (int)(lParam1 - lParam2);
+}
+```
   
- <!-- [!CODE [NVC_MFC_CListCtrl#44](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#44)]  -->
+```cpp
+// Sort the items by passing in the comparison function.
+void CListCtrlDlg::Sort()
+{
+	m_myListCtrl.SortItems(&CListCtrlDlg::MyCompareProc, 0);
+}
+```
   
 ##  <a name="clistctrl__sortitemsex"></a>  CListCtrl::SortItemsEx  
  Sorts the items of the current list-view control by using an application-defined comparison function.  
@@ -3200,12 +3727,45 @@ int CALLBACK CompareFunc(LPARAM lParam1,
 ### Example  
  The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.  
   
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl_s2#6](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl_s2#6)]  -->
+```cpp
+public:
+	// Variable used to access the list control.
+	CListCtrl m_listCtrl; 
+```
   
 ### Example  
  The following code example demonstrates the `SortItemEx` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example sorts the table by using the values in the "Grade" column.  
   
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl_s2#1](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl_s2#1)]  -->
+```cpp
+// The ListCompareFunc() method is a global function used by SortItemEx().
+int CALLBACK ListCompareFunc(
+							 LPARAM lParam1, 
+							 LPARAM lParam2, 
+							 LPARAM lParamSort)
+{
+	CListCtrl* pListCtrl = (CListCtrl*) lParamSort;
+	CString    strItem1 = pListCtrl->GetItemText(static_cast<int>(lParam1), 1);
+	CString    strItem2 = pListCtrl->GetItemText(static_cast<int>(lParam2), 1);
+
+	int x1 = _tstoi(strItem1.GetBuffer());
+	int x2 = _tstoi(strItem2.GetBuffer());
+	int result = 0;
+	if ((x1 - x2) < 0)
+		result = -1;
+	else if ((x1 - x2) == 0)
+		result = 0;
+	else
+		result = 1;
+
+	return result;
+}
+
+void CCListCtrl_s2Dlg::OnBnClickedButton1()
+{
+	// SortItemsEx
+	m_listCtrl.SortItemsEx( ListCompareFunc, (LPARAM)&m_listCtrl );
+}
+```
   
 ##  <a name="clistctrl__subitemhittest"></a>  CListCtrl::SubItemHitTest  
  Determines which list view item, if any, is at a given position.  
@@ -3225,7 +3785,24 @@ int SubItemHitTest(LPLVHITTESTINFO pInfo);
  This member function implements the behavior of the Win32 macro, [ListView_SubItemHitTest](http://msdn.microsoft.com/library/windows/desktop/bb775135), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFC_CListCtrl#41](../CodeSnippet/VS_Snippets_Cpp/NVC_MFC_CListCtrl#41)]  -->
+```cpp
+void CListCtrlDlg::OnDblClk(NMHDR* pNMHDR, LRESULT* pResult)
+{
+	UNREFERENCED_PARAMETER(pResult);
+
+	LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
+	LVHITTESTINFO lvhti;
+
+	// Clear the subitem text the user clicked on.
+	lvhti.pt = pia->ptAction;
+	m_myListCtrl.SubItemHitTest(&lvhti);
+
+	if (lvhti.flags & LVHT_ONITEMLABEL)
+	{
+		m_myListCtrl.SetItemText(lvhti.iItem, lvhti.iSubItem, NULL);
+	}
+}
+```
   
 ##  <a name="clistctrl__update"></a>  CListCtrl::Update  
  Forces the list view control to repaint the item specified by `nItem`.  

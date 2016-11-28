@@ -40,7 +40,7 @@ translation.priority.mt:
   
  A finalizer or destructor was declared incorrectly.  
   
- For example, a destructor should not be marked as sealed.  The destructor will be inaccessible to derived types.  For more information, see [Explicit Overrides](../../windows/explicit-overrides-cpp-component-extensions.md) and [Destructors and Finalizers in Visual C++](../../misc/destructors-and-finalizers-in-visual-cpp.md).  
+ For example, a destructor should not be marked as sealed.  The destructor will be inaccessible to derived types.  For more information, see [Explicit Overrides](../../windows/explicit-overrides-cpp-component-extensions.md) and [Destructors and finalizers in How to: Define and consume classes and structs (C++/CLI)](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).  
   
 ## Example  
  The following sample generates C3084.  

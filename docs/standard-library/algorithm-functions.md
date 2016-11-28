@@ -667,8 +667,6 @@ int main() {
 }  
 ```  
   
-  For another sample showing how to use copy, see [accumulate, copy, and vector::push_back](../misc/accumulate-copy-and-vector-push-back.md).  
-  
 ```Output  
 v1 = ( 0 10 20 30 40 50 )  
 v2 = ( 0 3 6 9 12 15 18 21 24 27 30 )  

@@ -54,27 +54,3 @@ int main() {
    System::Type ^ MyType = Base::typeid;   // OK  
 };  
 ```  
-  
- **Managed Extensions for C++**  
-  
- You cannot apply [typeid](../../cpp/typeid-operator.md) to a managed type; use [__typeof](../../misc/typeof.md) instead.  
-  
- The following sample generates C3185:  
-  
-```  
-// C3185b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-__gc class Base {};  
-__gc class Derived : public Base {};  
-  
-int main() {  
-   Derived *pd = new Derived;  
-   Base *pb = pd;  
-   const type_info & t1 = typeid(*pb);   // C3185  
-  
-   // OK  
-   Type * t = __typeof(Base);  
-   Type * t1 = __typeof(Derived);  
-};  
-```

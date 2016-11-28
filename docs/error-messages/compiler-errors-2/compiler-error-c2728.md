@@ -54,20 +54,3 @@ int main() {
    array<int>^arr2;  
 }  
 ```  
-  
- A [__nogc](../../misc/nogc.md) array cannot be of a [__gc](../../misc/gc.md) type.  
-  
- The following sample generates C2728 and shows how to fix it:  
-  
-```  
-// C2728_b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-  
-int main() {  
-   int __gc* arr __nogc[5];   // C2728  
-  
-   // try the following line instead  
-   int arr2 __gc[];  
-}  
-```

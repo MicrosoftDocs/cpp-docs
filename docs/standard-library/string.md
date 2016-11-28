@@ -97,7 +97,7 @@ Defines the container template class `basic_string` and various supporting templ
   
 |||  
 |-|-|  
-|[getline Template Function](../standard-library/string-functions.md#getline_template_function)|Extract strings from the input stream line by line.|  
+|[getline Template Function](../standard-library/string-functions.md#getline)|Extract strings from the input stream line by line.|  
   
 ### Classes  
   

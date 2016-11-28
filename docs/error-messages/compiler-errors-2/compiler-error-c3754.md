@@ -39,6 +39,7 @@ delegate constructor: member function 'function' cannot be called on an instance
   
  A call was made to a function through a pointer to a type that does not contain the function.  
   
+## Example  
  The following sample generates C3754:  
   
 ```  
@@ -61,27 +62,3 @@ int main() {
 //   MyDel^ q = gcnew MyDel(safe_cast<MyClass^>(p), &MyClass::f);  
 }  
 ```  
-  
- The following sample generates C3754:  
-  
-```  
-// C3754b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-using namespace System;  
-  
-__delegate void MyDel();  
-  
-__gc __interface MyInterface {};  
-  
-__gc struct MyClass : MyInterface {  
-   void f() {}  
-};  
-  
-int main() {  
-   MyInterface* p = new MyClass;  
-   MyDel* q = new MyDel(p, &MyClass::f);   // C3754  
-   // try the following line instead  
-   // MyDel* q = new MyDel(__try_cast<MyClass*>(p), &MyClass::f);  
-}  
-```

@@ -60,27 +60,3 @@ int main() {
    SumDelegate ^ pSD2 = gcnew SumDelegate(&X::F2);  
 }  
 ```  
-  
- **Managed Extensions for C++**  
-  
- The following sample generates C3350:  
-  
-```  
-// C3350b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-__delegate void SumDelegate();  
-  
-public __gc class X {  
-public:  
-   void F() {}  
-   static void F2() {}  
-};  
-  
-int main() {  
-   X * MyX = new X();  
-   SumDelegate *pSD = new SumDelegate();   // C3350  
-   SumDelegate *pSD1 = new SumDelegate(MyX, &X::F);  
-   SumDelegate *pSD2 = new SumDelegate(&X::F2);  
-}  
-```

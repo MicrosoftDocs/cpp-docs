@@ -38,31 +38,6 @@ translation.priority.mt:
 # Compiler Error C3275
 'enum member' : cannot use this symbol without qualifier  
   
- When using managed code and when two or more enumerations contain an identifier with the same name, you must explicitly qualify references to the identifier.  
+When using managed code and when two or more enumerations contain an identifier with the same name, you must explicitly qualify references to the identifier.  
   
- C3275 is only reachable using **/clr:oldSyntax**.  
-  
- The following sample shows two situations in which C3275 could be generated:  
-  
-```  
-// C3275.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-__value enum Jewelry {  
-   necklace, brooch, pin, ring, earring  
-   };  
-  
-__value enum Phone {  
-   busy, ring, disconnect  
-   };  
-  
-int main() {  
-   Phone p = ring;   // C3275  
-   // try the following line instead  
-   // Phone p = Phone::ring;  
-  
-   Console::Out->Write(ring);   // C3275  
-   // try the following line instead  
-   // Console::Out->Write(Phone::ring);  
-}  
-```
+C3275 is only reachable using the obsolete compiler option **/clr:oldSyntax**.  

@@ -143,7 +143,29 @@ const CPoint& BottomRight() const throw();
  You can use this function to either get or set the bottom-right corner of the rectangle. Set the corner by using this function on the left side of the assignment operator.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#35](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#35)] -->  
+```cpp
+   // use BottomRight() to retrieve the bottom
+   // right point
+
+   CRect rect(210, 150, 350, 900);
+   CPoint ptDown;
+
+   ptDown = rect.BottomRight();
+
+   // ptDown is now set to (350, 900)
+   ASSERT(ptDown == CPoint(350, 900));
+
+   // or, use BottomRight() to set the bottom
+   // right point
+
+   CRect rect2(10, 10, 350, 350);
+   CPoint ptLow(180, 180);
+
+   rect2.BottomRight() = ptLow;
+
+   // rect2 is now (10, 10, 180, 180)
+   ASSERT(rect2 == CRect(10, 10, 180, 180));   
+```
   
 ##  <a name="crect__centerpoint"></a>  CRect::CenterPoint  
  Calculates the centerpoint of `CRect` by adding the left and right values and dividing by two, and adding the top and bottom values and dividing by two.  
@@ -156,7 +178,52 @@ CPoint CenterPoint() const throw();
  A `CPoint` object that is the centerpoint of `CRect`.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#36](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#36)] -->  
+```cpp
+// Code from this OnPaint() implementation can be pasted into your own application
+// to draw lines that would look like a letter "Y" within your dialog. 
+void CMyDlg::OnPaint()
+{
+   CPaintDC dc(this); // device context for painting
+
+   // get the size and position of the client area of 
+   // your window
+
+   CRect rect;
+   GetClientRect(&rect);
+
+   // Move the current pen to the top left of the window. We call the
+   // TopLeft() member of CRect here and it returns a CPoint object we
+   // pass to the override of CDC::MoveTo() that accepts a CPoint.
+
+   dc.MoveTo(rect.TopLeft());
+
+   // Draw a line from the top left to the center of the window.
+   // CenterPoint() gives us the middle point of the window as a
+   // CPoint, and since CDC::LineTo() has an override that accepts a
+   // CPoint, we can just pass it along.
+
+   dc.LineTo(rect.CenterPoint());
+
+   // Now, draw a line to the top right of the window. There's no
+   // CRect member which returns a CPoint for the top right of the
+   // window, so we'll reference the CPoint members directly and call
+   // the CDC::LineTo() override which takes two integers.
+
+   dc.LineTo(rect.right, rect.top);
+
+   // The top part of the "Y" is drawn. Now, we'll draw the stem. We
+   // start from the center point.
+
+   dc.MoveTo(rect.CenterPoint());
+
+   // and then draw to the middle of the bottom edge of the window.
+   // We'll get the x-coordinate from the x member of the CPoint
+   // returned by CenterPoint(), and the y value comes directly from
+   // the rect.
+
+   dc.LineTo(rect.CenterPoint().x, rect.bottom);
+}
+```
   
 ##  <a name="crect__copyrect"></a>  CRect::CopyRect  
  Copies the `lpSrcRect` rectangle into `CRect`.  
@@ -175,7 +242,25 @@ lpSrcRect) throw();
  Points to the [RECT](RECT%20Structure1.md) structure or `CRect` object that is to be copied.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#37](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#37)] -->  
+```cpp
+   CRect rectSource(35, 10, 125, 10);
+   CRect rectDest;
+
+   rectDest.CopyRect(&rectSource);
+
+   // rectDest is now set to (35, 10, 125, 10)
+
+   RECT rectSource2;
+   rectSource2.left = 0;
+   rectSource2.top = 0;
+   rectSource2.bottom = 480;
+   rectSource2.right = 640;
+
+   rectDest.CopyRect(&rectSource2);
+
+   // works against RECT structures, too!
+   // rectDest is now set to (0, 0, 640, 480)   
+```
   
 ##  <a name="crect__crect"></a>  CRect::CRect  
  Constructs a `CRect` object.  
@@ -249,7 +334,38 @@ CRect(
  The `CRect`( **const RECT&**) and `CRect`( **LPCRECT**) constructors perform a [CopyRect](#crect__copyrect). The other constructors initialize the member variables of the object directly.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#38](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#38)] -->  
+```cpp
+   // default constructor doesn't initialize!
+   CRect rectUnknown;
+
+   // four-integers are left, top, right, and bottom
+   CRect rect(0, 0, 100, 50);
+   ASSERT(rect.Width() == 100);
+   ASSERT(rect.Height() == 50);
+
+   // Initialize from RECT stucture
+   RECT sdkRect;
+   sdkRect.left = 0;
+   sdkRect.top = 0;
+   sdkRect.right = 100;
+   sdkRect.bottom = 50;
+
+   CRect rect2(sdkRect);   // by reference
+   CRect rect3(&sdkRect);  // by address
+   ASSERT(rect2 == rect);
+   ASSERT(rect3 == rect);
+
+   // from a point and a size
+   CPoint pt(0, 0);
+   CSize sz(100, 50);
+   CRect rect4(pt, sz);
+   ASSERT(rect4 == rect2);
+
+   // from two points
+   CPoint ptBottomRight(100, 50);
+   CRect rect5(pt, ptBottomRight);
+   ASSERT(rect5 == rect4);   
+```
   
 ##  <a name="crect__deflaterect"></a>  CRect::DeflateRect  
  `DeflateRect` deflates `CRect` by moving its sides toward its center.  
@@ -311,7 +427,21 @@ void DeflateRect(
  The first two overloads deflate both pairs of opposite sides of `CRect` so that its total width is decreased by two times *x* (or `cx`) and its total height is decreased by two times *y* (or `cy`). The other two overloads deflate each side of `CRect` independently of the others.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#39](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#39)] -->  
+```cpp
+   CRect rect(10, 10, 50, 50);
+
+   rect.DeflateRect(1, 2);
+
+   ASSERT(rect.left == 11 && rect.right == 49);
+   ASSERT(rect.top == 12 && rect.bottom == 48);
+
+   CRect rect2(10, 10, 50, 50);
+   CRect rectDeflate(1, 2, 3, 4);
+
+   rect2.DeflateRect(&rectDeflate);
+   ASSERT(rect2.left == 11 && rect2.right == 47);
+   ASSERT(rect2.top == 12 && rect2.bottom == 46);   
+```
   
 ##  <a name="crect__equalrect"></a>  CRect::EqualRect  
  Determines whether `CRect` is equal to the given rectangle.  
@@ -336,7 +466,24 @@ lpRect) const throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#40](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#40)] -->  
+```cpp
+   CRect rect1(35, 150, 10, 25);
+   CRect rect2(35, 150, 10, 25);
+   CRect rect3(98, 999,  6,  3);
+
+   ASSERT(rect1.EqualRect(rect2));
+   ASSERT(!rect1.EqualRect(rect3));
+
+   // works just fine against RECTs, as well
+
+   RECT test;
+   test.left = 35;
+   test.top = 150;
+   test.right = 10;
+   test.bottom = 25;
+
+   ASSERT(rect1.EqualRect(&test));   
+```
   
 ##  <a name="crect__height"></a>  CRect::Height  
  Calculates the height of `CRect` by subtracting the top value from the bottom value.  
@@ -355,7 +502,14 @@ int Height() const throw();
 >  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangle before calling this function.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#41](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#41)] -->  
+```cpp
+   CRect rect(20, 30, 80, 70);
+
+   int nHt = rect.Height();
+
+   // nHt is now 40
+   ASSERT(nHt == 40);   
+```
   
 ##  <a name="crect__inflaterect"></a>  CRect::InflateRect  
  `InflateRect` inflates `CRect` by moving its sides away from its center.  
@@ -417,7 +571,13 @@ void InflateRect(
  The first two overloads inflate both pairs of opposite sides of `CRect` so that its total width is increased by two times *x* (or `cx`) and its total height is increased by two times *y* (or `cy`). The other two overloads inflate each side of `CRect` independently of the others.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#42](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#42)] -->  
+```cpp
+   CRect rect(0, 0, 300, 300);
+   rect.InflateRect(50, 200);
+
+   // rect is now (-50, -200, 350, 500)
+   ASSERT(rect == CRect(-50, -200, 350, 500));   
+```
   
 ##  <a name="crect__intersectrect"></a>  CRect::IntersectRect  
  Makes a `CRect` equal to the intersection of two existing rectangles.  
@@ -450,7 +610,23 @@ void InflateRect(
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#43](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#43)] -->  
+```cpp
+   CRect rectOne(125,   0, 150, 200);
+   CRect rectTwo(0,  75, 350,  95);
+   CRect rectInter;
+
+   rectInter.IntersectRect(rectOne, rectTwo);
+
+   // rectInter is now (125, 75, 150, 95)
+
+   ASSERT(rectInter == CRect(125, 75, 150, 95));
+
+   // operator &= can do the same task:
+
+   CRect rectInter2 = rectOne;
+   rectInter2 &= rectTwo;
+   ASSERT(rectInter2 == CRect(125, 75, 150, 95));   
+```
   
 ##  <a name="crect__isrectempty"></a>  CRect::IsRectEmpty  
  Determines whether `CRect` is empty.  
@@ -469,7 +645,16 @@ BOOL IsRectEmpty() const throw();
 >  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangle before calling this function.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#44](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#44)] -->  
+```cpp
+   CRect rectNone(0, 0, 0, 0);
+   CRect rectSome(35, 50, 135, 150);
+
+   ASSERT(rectNone.IsRectEmpty());
+   ASSERT(!rectSome.IsRectEmpty());
+
+   CRect rectEmpty(35, 35, 35, 35);
+   ASSERT(rectEmpty.IsRectEmpty());   
+```
   
 ##  <a name="crect__isrectnull"></a>  CRect::IsRectNull  
  Determines whether the top, left, bottom, and right values of `CRect` are all equal to 0.  
@@ -485,7 +670,18 @@ BOOL IsRectNull() const throw();
  Differs from `IsRectEmpty`, which determines whether the rectangle is empty.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#45](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#45)]  -->
+```cpp
+   CRect rectNone(0, 0, 0, 0);
+   CRect rectSome(35, 50, 135, 150);
+
+   ASSERT(rectNone.IsRectNull());
+   ASSERT(!rectSome.IsRectNull());
+
+   // note that null means _all_ zeros
+
+   CRect rectNotNull(0, 0, 35, 50);
+   ASSERT(!rectNotNull.IsRectNull());   
+```
   
 ##  <a name="crect__movetox"></a>  CRect::MoveToX  
  Call this function to move the rectangle to the absolute x-coordinate specified by *x*.  
@@ -504,7 +700,14 @@ x) throw();
  The absolute x-coordinate for the upper-left corner of the rectangle.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#46](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#46)] -->  
+```cpp
+   CRect rect(0, 0, 100, 100);
+
+   rect.MoveToX(10);
+
+   // rect is now (10, 0, 110, 100);
+   ASSERT(rect == CRect(10, 0, 110, 100));   
+```
   
 ##  <a name="crect__movetoxy"></a>  CRect::MoveToXY  
  Call this function to move the rectangle to the absolute x- and y-coordinates specified.  
@@ -534,7 +737,14 @@ void MoveToXY(
  A **POINT** structure specifying the absolute upper-left corner of the rectangle.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#47](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#47)] -->  
+```cpp
+   CRect rect(0, 0, 100, 100);
+
+   rect.MoveToXY(10, 10);
+
+   // rect is now (10, 10, 110, 110);
+   ASSERT(rect == CRect(10, 10, 110, 110));   
+```
   
 ##  <a name="crect__movetoy"></a>  CRect::MoveToY  
  Call this function to move the rectangle to the absolute y-coordinate specified by *y*.  
@@ -553,7 +763,14 @@ y) throw();
  The absolute y-coordinate for the upper-left corner of the rectangle.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#48](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#48)] -->  
+```cpp
+   CRect rect(0, 0, 100, 100);
+
+   rect.MoveToY(10);
+
+   // rect is now (0, 10, 100, 110);
+   ASSERT(rect == CRect(0, 10, 100, 110));   
+```
   
 ##  <a name="crect__normalizerect"></a>  CRect::NormalizeRect  
  Normalizes `CRect` so that both the height and width are positive.  
@@ -569,7 +786,18 @@ void NormalizeRect() throw();
 >  The following `CRect` member functions require normalized rectangles in order to work properly: [Height](#crect__height), [Width](#crect__width), [Size](#crect__size), [IsRectEmpty](#crect__isrectempty), [PtInRect](#crect__ptinrect), [EqualRect](#crect__equalrect), [UnionRect](#crect__unionrect), [IntersectRect](#crect__intersectrect), [SubtractRect](#crect__subtractrect), [operator ==](#crect__operator__eq_eq), [operator !=](#crect__operator__neq), [operator &#124;](#crect__operator__or), [operator &#124;=](#crect__operator__or_eq), [operator &](#crect__operator__amp_), and [operator &=](#crect__operator__amp__eq).  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#49](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#49)] -->  
+```cpp
+   CRect rect1(110, 100, 250, 310);
+   CRect rect2(250, 310, 110, 100);
+
+   rect1.NormalizeRect();
+   rect2.NormalizeRect();
+
+   // rect1 should be unchanged
+   // rect2 becomes (110, 100, 250, 310)
+
+   ASSERT(rect1 == rect2);   
+```
   
 ##  <a name="crect__offsetrect"></a>  CRect::OffsetRect  
  Moves `CRect` by the specified offsets.  
@@ -608,7 +836,14 @@ void OffsetRect(
  Moves `CRect`*x* units along the x-axis and *y* units along the y-axis. The *x* and *y* parameters are signed values, so `CRect` can be moved left or right and up or down.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#50](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#50)] -->  
+```cpp
+   CRect rect(0, 0, 35, 35);
+
+   rect.OffsetRect(230, 230);
+
+   // rect is now (230, 230, 265, 265)
+   ASSERT(rect == CRect(230, 230, 265, 265));   
+```
   
 ##  <a name="crect__operator_lpcrect"></a>  CRect::operator LPCRECT  
  Converts a `CRect` to an `LPCRECT`.  
@@ -651,7 +886,14 @@ srcRect) throw();
  Refers to a source rectangle. Can be a [RECT](RECT%20Structure1.md) or `CRect`.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#59](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#59)] -->  
+```cpp
+   CRect rect(0, 0, 127, 168);
+   CRect rect2;
+
+   rect2 = rect;
+
+   ASSERT(rect2 == CRect(0, 0, 127, 168));   
+```
   
 ##  <a name="crect__operator__eq_eq"></a>  CRect::operator ==  
  Determines whether `rect` is equal to `CRect` by comparing the coordinates of their upper-left and lower-right corners.  
@@ -678,7 +920,23 @@ rect) const throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#60](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#60)] -->  
+```cpp
+   CRect rect1(35, 150, 10, 25);
+   CRect rect2(35, 150, 10, 25);
+   CRect rect3(98, 999,  6,  3);
+
+   ASSERT(rect1 == rect2);
+
+   // works just fine against RECTs, as well
+
+   RECT test;
+   test.left = 35;
+   test.top = 150;
+   test.right = 10;
+   test.bottom = 25;
+
+   ASSERT(rect1 == test);   
+```
   
 ##  <a name="crect__operator__neq"></a>  CRect::operator !=  
  Determines whether `rect` is not equal to `CRect` by comparing the coordinates of their upper-left and lower-right corners.  
@@ -705,7 +963,23 @@ rect) const throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#61](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#61)] -->  
+```cpp
+   CRect rect1(35, 150, 10, 25);
+   CRect rect2(35, 150, 10, 25);
+   CRect rect3(98, 999,  6,  3);
+
+   ASSERT(rect1 != rect3);
+
+   // works just fine against RECTs, as well
+
+   RECT test;
+   test.left = 35;
+   test.top = 150;
+   test.right = 10;
+   test.bottom = 25;
+
+   ASSERT(rect3 != test);   
+```
   
 ##  <a name="crect__operator__add_eq"></a>  CRect::operator +=  
  The first two overloads move `CRect` by the specified offsets.  
@@ -743,7 +1017,15 @@ lpRect) throw();
  The third overload inflates `CRect` by the number of units specifed in each member of the parameter.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#62](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#62)] -->  
+```cpp
+   CRect   rect1(100, 235, 200, 335);
+   CPoint   pt(35, 65);
+   CRect   rect2(135, 300, 235, 400);
+
+   rect1 += pt;
+
+   ASSERT(rect1 == rect2);   
+```
   
 ##  <a name="crect__operator_-_eq"></a>  CRect::operator -=  
  The first two overloads move `CRect` by the specified offsets.  
@@ -781,7 +1063,15 @@ lpRect) throw();
  The third overload deflates `CRect` by the number of units specifed in each member of the parameter. Note that this overload functions like [DeflateRect](#crect__deflaterect).  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#63](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#63)] -->  
+```cpp
+   CRect   rect1(100, 235, 200, 335);
+   CPoint   pt(35, 65);
+
+   rect1 -= pt;
+
+   CRect   rectResult(65, 170, 165, 270);
+   ASSERT(rect1 == rectResult);   
+```
   
 ##  <a name="crect__operator__amp__eq"></a>  CRect::operator &amp;=  
  Sets `CRect` equal to the intersection of `CRect` and `rect`.  
@@ -831,7 +1121,15 @@ rect) throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#64](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#64)] -->  
+```cpp
+   CRect   rect1(100,   0, 200, 300);
+   CRect   rect2( 0, 100, 300, 200);
+
+   rect1 |= rect2;
+
+   CRect   rectResult(0, 0, 300, 300);
+   ASSERT(rectResult == rect1);   
+```
   
 ##  <a name="crect__operator__add"></a>  CRect::operator +  
  The first two overloads return a `CRect` object that is equal to `CRect` displaced by the specified offsets.  
@@ -872,7 +1170,17 @@ size) const throw();
  The third overload returns a new `CRect` that is equal to `CRect` inflated by the number of units specifed in each member of the parameter.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#65](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#65)] -->  
+```cpp
+   CRect   rect1(100, 235, 200, 335);
+   CPoint   pt(35, 65);
+   CRect   rect2;
+
+   rect2 = rect1 + pt;
+
+   CRect   rectResult(135, 300, 235, 400);
+
+   ASSERT(rectResult == rect2);   
+```
   
 ##  <a name="crect__operator_-"></a>  CRect::operator -  
  The first two overloads return a `CRect` object that is equal to `CRect` displaced by the specified offsets.  
@@ -913,7 +1221,17 @@ lpRect) const throw();
  The third overload returns a new `CRect` that is equal to `CRect` deflated by the number of units specifed in each member of the parameter. Note that this overload functions like [DeflateRect](#crect__deflaterect), not [SubtractRect](#crect__subtractrect).  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#66](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#66)] -->  
+```cpp
+   CRect   rect1(100, 235, 200, 335);
+   CPoint   pt(35, 65);
+   CRect   rect2;
+
+   rect2 = rect1 - pt;
+
+   CRect   rectResult(65, 170, 165, 270);
+
+   ASSERT(rect2 == rectResult);   
+```
   
 ##  <a name="crect__operator__amp_"></a>  CRect::operator &amp;  
  Returns a `CRect` that is the intersection of `CRect` and *rect2*.  
@@ -941,7 +1259,16 @@ rect2) const throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#67](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#67)] -->  
+```cpp
+   CRect   rect1(100,   0, 200, 300);
+   CRect   rect2( 0, 100, 300, 200);
+   CRect   rect3;
+
+   rect3 = rect1 & rect2;
+
+   CRect   rectResult(100, 100, 200, 200);
+   ASSERT(rectResult == rect3);   
+```
   
 ##  <a name="crect__operator__or"></a>  CRect::operator &#124;  
  Returns a `CRect` that is the union of `CRect` and *rect2*.  
@@ -969,7 +1296,16 @@ rect2) const throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#68](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#68)] -->  
+```cpp
+   CRect   rect1(100,   0, 200, 300);
+   CRect   rect2( 0, 100, 300, 200);
+   CRect   rect3;
+
+   rect3 = rect1 | rect2;
+
+   CRect   rectResult(0, 0, 300, 300);
+   ASSERT(rectResult == rect3);   
+```
   
 ##  <a name="crect__ptinrect"></a>  CRect::PtInRect  
  Determines whether the specified point lies within `CRect`.  
@@ -997,7 +1333,31 @@ point) const throw();
 >  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangle before calling this function.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#51](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#51)] -->  
+```cpp
+   CRect rect(5, 5, 100, 100);
+   CPoint pt1(35, 50);
+   CPoint pt2(125, 298);
+
+   // this is true, because pt1 is inside the rectangle
+   ASSERT(rect.PtInRect(pt1));
+
+   // this is NOT true, because pt2 is outside the rectangle
+   ASSERT(!rect.PtInRect(pt2));
+
+   // note that the right and the bottom aren't inside
+   ASSERT(!rect.PtInRect(CPoint(35, 100)));
+   ASSERT(!rect.PtInRect(CPoint(100, 98)));
+
+   // but the top and the left are inside
+   ASSERT(rect.PtInRect(CPoint(5, 65)));
+   ASSERT(rect.PtInRect(CPoint(88, 5)));
+
+   // and that PtInRect() works against a POINT, too
+   POINT pt;
+   pt.x = 35;
+   pt.y = 50;
+   ASSERT(rect.PtInRect(pt));   
+```
   
 ##  <a name="crect__setrect"></a>  CRect::SetRect  
  Sets the dimensions of `CRect` to the specified coordinates.  
@@ -1031,7 +1391,12 @@ point) const throw();
  Specifies the y-coordinate of the lower-right corner.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#52](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#52)] -->  
+```cpp
+   CRect rect;
+   rect.SetRect(256, 256, 512, 512);
+
+   ASSERT(rect == CRect(256, 256, 512, 512));   
+```
   
 ##  <a name="crect__setrectempty"></a>  CRect::SetRectEmpty  
  Makes `CRect` a null rectangle by setting all coordinates to zero.  
@@ -1060,7 +1425,11 @@ CSize Size() const throw();
 >  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangle before calling this function.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#54](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#54)] -->  
+```cpp
+   CRect rect(10, 10, 50, 50);
+   CSize sz = rect.Size();
+   ASSERT(sz.cx == 40 && sz.cy == 40);   
+```
   
 ##  <a name="crect__subtractrect"></a>  CRect::SubtractRect  
  Makes the dimensions of the **CRect** equal to the subtraction of `lpRectSrc2` from `lpRectSrc1`.  
@@ -1099,7 +1468,38 @@ CSize Size() const throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#55](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#55)] -->  
+```cpp
+   RECT   rectOne;
+   RECT   rectTwo;
+
+   rectOne.left = 10;
+   rectOne.top = 10;
+   rectOne.bottom = 100;
+   rectOne.right = 100;
+
+   rectTwo.left = 50;
+   rectTwo.top = 10;
+   rectTwo.bottom = 150;
+   rectTwo.right = 150;
+
+   CRect   rectDiff;
+
+   rectDiff.SubtractRect(&rectOne, &rectTwo);
+
+   CRect   rectResult(10, 10, 50, 100);
+
+   ASSERT(rectDiff == rectResult);
+
+   // works for CRect, too, since there is
+   // implicit CRect -> LPCRECT conversion
+
+   CRect rect1(10, 10, 100, 100);
+   CRect rect2(50, 10, 150, 150);
+   CRect rectOut;
+
+   rectOut.SubtractRect(rect1, rect2);
+   ASSERT(rectResult == rectOut);   
+```
   
 ##  <a name="crect__topleft"></a>  CRect::TopLeft  
  The coordinates are returned as a reference to a [CPoint](cpoint-class.md) object that is contained in `CRect`.  
@@ -1155,7 +1555,16 @@ const CPoint& TopLeft() const throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#56](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#56)] -->  
+```cpp
+   CRect   rect1(100,   0, 200, 300);
+   CRect   rect2(0, 100, 300, 200);
+   CRect   rect3;
+
+   rect3.UnionRect(&rect1, &rect2);
+
+   CRect   rectResult(0, 0, 300, 300);
+   ASSERT(rectResult == rect3);   
+```
   
 ##  <a name="crect__width"></a>  CRect::Width  
  Calculates the width of `CRect` by subtracting the left value from the right value.  
@@ -1174,7 +1583,14 @@ int Width() const throw();
 >  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangle before calling this function.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#57](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#57)] -->  
+```cpp
+   CRect rect(20, 30, 80, 70);
+
+   int nWid = rect.Width();
+
+   // nWid is now 60
+   ASSERT(nWid == 60);   
+```
   
 ## See Also  
  [CPoint Class](cpoint-class.md)   

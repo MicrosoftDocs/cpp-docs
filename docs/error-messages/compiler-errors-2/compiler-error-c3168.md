@@ -37,9 +37,9 @@ translation.priority.ht:
 # Compiler Error C3168
 'type' : illegal underlying type for enum  
   
- The underlying type you specified for the `enum` type was not valid. The underlying type must be an integral C++ type or a corresponding CLR type.  
+The underlying type you specified for the `enum` type was not valid. The underlying type must be an integral C++ type or a corresponding CLR type.  
   
- The following sample generates C3168:  
+The following sample generates C3168:  
   
 ```  
 // C3168.cpp  
@@ -49,14 +49,3 @@ ref class G{};
 enum class E : G { e };   // C3168  
 enum class F { f };   // OK  
 ```  
-  
- The following sample generates C3168:  
-  
-```  
-// C3168_2.cpp  
-// compile with: /clr:oldSyntax /c  
-__gc class G {};  
-  
-__value enum E : G {e};   // C3168  
-__value enum F {f};   // OK  
-```

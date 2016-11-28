@@ -55,23 +55,3 @@ int main() {
    interior_ptr<int> pg2;   // OK  
 }  
 ```  
-  
- **Managed Extensions for C++**  
-  
- The following sample generates C3160:  
-  
-```  
-// C3160b.cpp  
-// compile with: /clr:oldSyntax  
-  
-__gc struct A {  
-   // cannot create interior pointers inside a class  
-   int __gc* pg; // C3160  
-   int g;   // OK  
-   int __nogc *pg2;   // OK  
-};  
-  
-int main() {  
-   int __gc* pg2;   // OK  
-}  
-```

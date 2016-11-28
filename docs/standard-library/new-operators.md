@@ -197,7 +197,7 @@ void* operator new[](std::size_t count,
   
  The third function is called by a placement `new[]` expression, of the form **new** ( *args*) **T**[ **N**]. Here, *args* consists of a single object pointer. The function returns `ptr`.  
   
- To free storage allocated by `operator new[]`, call [operator delete&#91;&#93;](../standard-library/new-operators.md#operator_delete_at).  
+ To free storage allocated by `operator new[]`, call [operator delete&#91;&#93;](../standard-library/new-operators.md#operator_delete_arr).  
   
  For information on throwing or nonthrowing behavior of new, see [The new and delete Operators](../cpp/new-and-delete-operators.md).  
   

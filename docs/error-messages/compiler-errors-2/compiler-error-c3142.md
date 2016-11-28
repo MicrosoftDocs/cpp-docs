@@ -56,22 +56,3 @@ int main() {
     &CSize::Size; // C3142  
 }  
 ```  
-  
- The following sample generates C3142:  
-  
-```  
-// C3142.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-using namespace System;  
-  
-__gc class CSize  
-{  
-   __property int get_Size();  
-};  
-  
-int main()  
-{  
-   &CSize::Size;   // C3142  
-}  
-```

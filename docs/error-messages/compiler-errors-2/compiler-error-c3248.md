@@ -38,22 +38,6 @@ translation.priority.mt:
 # Compiler Error C3248
 'function1': function declared as '__sealed' cannot be overridden by 'function2'  
   
- A derived class tried to override a [__sealed](../../misc/sealed.md) virtual method.  
+A derived class tried to override a **__sealed** virtual method.  
   
- C3248 is only reachable using **/clr:oldSyntax**.  
-  
- The following sample generates C3248:  
-  
-```  
-// C3248b.cpp  
-// compile with: /clr:oldSyntax  
-using namespace System;  
-  
-__gc struct B {  
-   __sealed virtual void func();  
-};  
-  
-__gc struct D : B {  
-   void func();   // C3248  
-};  
-```
+C3248 is only reachable using the obsolete compiler option **/clr:oldSyntax**.  

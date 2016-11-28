@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # basic_istream Class
-Describes an object that controls extraction of elements and encoded objects from a stream buffer with elements of type `Elem`, also known as [char_type](../standard-library/basic-ios-class.md#basic_ios_Char_type), whose character traits are determined by the class *Tr*, also known as [traits_type](../standard-library/basic-ios-class.md#basic_ios__traits_type).  
+Describes an object that controls extraction of elements and encoded objects from a stream buffer with elements of type `Elem`, also known as [char_type](../standard-library/basic-ios-class.md#basic_ios__char_type), whose character traits are determined by the class *Tr*, also known as [traits_type](../standard-library/basic-ios-class.md#basic_ios__traits_type).  
   
 ## Syntax  
   
@@ -274,7 +274,7 @@ basic_istream<Elem, Tr>& get(basic_streambuf<Elem, Tr>& strbuf, Elem Delim);
 ### Remarks  
  The first of these unformatted input functions extracts an element, if possible, as if by returning `rdbuf`-> `sbumpc`. Otherwise, it returns **traits_type::**[eof](../standard-library/char-traits-struct.md#char_traits__eof). If the function extracts no element, it calls [setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)( **failbit**).  
   
- The second function extracts the [int_type](../standard-library/basic-ios-class.md#basic_ios__int_type) element `meta` the same way. If `meta` compares equal to **traits_type::eof**, the function calls `setstate`( **failbit**). Otherwise, it stores **traits_type::**[toChar_type](../standard-library/char-traits-struct.md#char_traits__toChar_type)( `meta`) in `Ch`. The function returns **\*this**.  
+ The second function extracts the [int_type](../standard-library/basic-ios-class.md#basic_ios__int_type) element `meta` the same way. If `meta` compares equal to **traits_type::eof**, the function calls `setstate`( **failbit**). Otherwise, it stores **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#char_traits__to_char_type)( `meta`) in `Ch`. The function returns **\*this**.  
   
  The third function returns **get**(_ *Str*, ` count`, `widen`('\ **n**')).  
   

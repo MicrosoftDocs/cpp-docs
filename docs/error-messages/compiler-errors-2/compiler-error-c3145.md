@@ -81,28 +81,3 @@ int main() {
    interior_ptr<int> p = &(h_MyClass->data);  
 }  
 ```  
-  
- **Managed Extensions for C++**  
-  
- The following sample generates C3145:  
-  
-```  
-// C3145c.cpp  
-// compile with: /clr:oldSyntax  
-using namespace System;   
-__gc class G {};   
-  
-G *ptr;   // C3145  
-G *ptr2 = new G;   // C3145  
-  
-__gc class GlobalObjects {  
-public:  
-   static G *ptr;   // OK  
-   static G *ptr2 = new G;   // OK   
-};   
-  
-int main() {  
-   G *ptr;   // OK  
-   G *ptr2 = new G;   // OK  
-}  
-```

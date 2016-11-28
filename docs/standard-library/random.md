@@ -310,8 +310,8 @@ Randomized array: Si C Sc H Na O S Cr K Li Al Ti Cl B Mn He Fe Ne Be Ar V P Ca N
   
 |||  
 |-|-|  
-|[uniform_int_distribution Class](../standard-library/uniform-int-distribution-class.md)|Produces a uniform integer value distribution across a range in the closed interval [a, b] (inclusive- inclusive).|  
-|[uniform_real_distribution Class](../standard-library/uniform-real-distribution-class.md)|Produces a uniform real (floating-point) value distribution across a range in the interval [a, b) (inclusive-exclusive).|  
+|[uniform_int_distribution Class](../standard-library/uniform-int-distribution-class.md)|Produces a uniform integer value distribution across a range in the closed interval \[a, b] (inclusive-inclusive).|  
+|[uniform_real_distribution Class](../standard-library/uniform-real-distribution-class.md)|Produces a uniform real (floating-point) value distribution across a range in the half-open interval [a, b) (inclusive-exclusive).|  
 |[generate_canonical](../standard-library/random-functions.md#generate_canonical)|Produces an even distribution of real (floating point) values of a given precision across [0, 1) (inclusive-exclusive).|  
   
  [[Random Number Distributions](#distributions)]  

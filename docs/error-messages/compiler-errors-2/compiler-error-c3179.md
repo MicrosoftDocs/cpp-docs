@@ -35,11 +35,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiler Error C3179
-an unnamed managed or WinRTtype is not allowed  
+an unnamed managed or WinRT type is not allowed  
   
- All CLR and WinRT classes and structs must have names.  
+All CLR and WinRT classes and structs must have names.  
   
- The following sample generates C3179 and shows how to fix it:  
+The following sample generates C3179 and shows how to fix it:  
   
 ```  
 // C3179a.cpp  
@@ -50,16 +50,3 @@ typedef value struct { // C3179
    int i;  
 } V;  
 ```  
-  
- The following sample generates C3179 and shows how to fix it:  
-  
-```  
-// C3179b.cpp  
-// compile with: /clr:oldSyntax /c  
-#using <mscorlib.dll>  
-typedef __value struct {   // C3179  
-// try the following line instead  
-// typedef __value struct MyStruct {  
-   int i;  
-} V;  
-```

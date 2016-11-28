@@ -70,9 +70,7 @@ The `shared_ptr` type is a smart pointer in the C++ standard library that is des
   
 -   If you have to give a helper function access to the underlying pointer, and you know that the helper function will just use the pointer and return before the calling function returns, then that function does not have to share ownership of the underlying pointer. It just has to access the pointer within the lifetime of the caller's `shared_ptr`. In this case, it is safe to pass the `shared_ptr` by reference, or pass the raw pointer or a reference to the underlying object. Passing this way provides a small performance benefit, and may also help you express your programming intent.  
   
--   Sometimes, for example in a `std:vector<shared_ptr<T>>`, you may have to pass each `shared_ptr` to a lambda expression body or named function object. If the lambda or function is not storing the pointer, then pass the `shared_ptr` by reference to avoid invoking the copy constructor for each element.  
-  
- <!-- FIXME [!CODE [stl_smart_pointers#6](../CodeSnippet/VS_Snippets_Cpp/stl_smart_pointers#6)] -->  
+-   Sometimes, for example in a `std:vector<shared_ptr<T>>`, you may have to pass each `shared_ptr` to a lambda expression body or named function object. If the lambda or function is not storing the pointer, then pass the `shared_ptr` by reference to avoid invoking the copy constructor for each element.    
   
 ## Example  
  The following example shows how `shared_ptr` overloads various comparison operators to enable pointer comparisons on the memory that is owned by the `shared_ptr` instances.  

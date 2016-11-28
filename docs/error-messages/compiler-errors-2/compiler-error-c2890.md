@@ -49,18 +49,3 @@ ref class B {};
 ref class C : public A, public B {};   // C2890  
 ref class D : public A {};   // OK  
 ```  
-  
- **Managed Extensions for C++**  
-  
- The following sample generates C2890:  
-  
-```  
-// C2890b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-__gc class A {};  
-__gc class B {};  
-  
-__gc class C : public A, public B {};   // C2890  
-__gc class D : public A {};   // OK  
-```

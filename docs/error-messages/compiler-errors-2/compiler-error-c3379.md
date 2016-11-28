@@ -69,32 +69,3 @@ int main() {
    Console::WriteLine(myBA->ii);  
 }  
 ```  
-  
- The following sample generates C3379:  
-  
-```  
-// C3379b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-  
-public __gc class A {  
-public:  
-   static int i = 9;  
-  
-   public __gc class BA {   // C3379  
-   // try the following line instead  
-   // __gc class BA {  
-   public:  
-      static int ii = 8;  
-   };  
-};  
-  
-int main() {  
-  
-   A *myA = new A;  
-   Console::WriteLine(myA->i);  
-  
-   A::BA *myBA = new A::BA;  
-   Console::WriteLine(myBA->ii);  
-}  
-```

@@ -37,8 +37,9 @@ translation.priority.ht:
 # Compiler Error C3831
 'member': 'class' cannot have a pinned data member or a member function returning a pinning pointer  
   
- [pin_ptr (C++/CLI)](../../windows/pin-ptr-cpp-cli.md) or [__pin](../../misc/pin.md) was used incorrectly.  
+ [pin_ptr (C++/CLI)](../../windows/pin-ptr-cpp-cli.md) was used incorrectly.  
   
+## Example  
  The following sample generates C3831:  
   
 ```  
@@ -61,33 +62,3 @@ int main() {
    pin_ptr<int> p = &y.i;  
 }  
 ```  
-  
- The following sample generates C3831:  
-  
-```  
-// C3831b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-  
-__gc class Y  
-{  
-};  
-  
-__gc class X  
-{  
-   Y __pin * mbr_Y;   // C3831  
-   Y * mbr_Y2;   // OK  
-  
-   Y __pin * mf_Y()  // C3831  
-   {  
-      Y __pin * pY = new Y();  
-      return pY;  
-   }  
-  
-   Y * mf_Y2()   // OK  
-   {  
-      Y * pY = new Y();  
-      return pY;  
-   }  
-};  
-```

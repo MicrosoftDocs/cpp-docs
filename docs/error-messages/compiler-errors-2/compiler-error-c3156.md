@@ -50,15 +50,3 @@ void f() {
    ref class Y;   // C3156  
 }  
 ```  
-  
-## Example  
- The following sample generates C3156.  
-  
-```  
-// C3156_b.cpp  
-// compile with: /clr:oldSyntax /c  
-void f() {  
-   __gc class X {};   // C3156  
-   __gc class Y;   // C3156  
-}  
-```

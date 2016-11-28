@@ -52,16 +52,3 @@ public interface class IFace {
    // property int Size;  
 };  
 ```  
-  
- The following sample generates C2844:  
-  
-```  
-// C2844b.cpp  
-// compile with: /clr:oldSyntax /c  
-#using <mscorlib.dll>  
-__gc __interface IFace {  
-   int i;   // C2844  
-   // try the following line instead  
-   // __property int Size { get; set; };  
-};  
-```

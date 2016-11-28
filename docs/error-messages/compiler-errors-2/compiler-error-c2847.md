@@ -51,16 +51,3 @@ int main() {
    sizeof(*xA);   // C2847 cannot use sizeof on managed object  
 }  
 ```  
-  
- The following sample generates C2847:  
-  
-```  
-// C2847_b.cpp  
-// compile with: /clr:oldSyntax  
-__gc class A {};  
-  
-int main() {  
-   A *xA = new A;  
-   sizeof(*xA);   // C2847 cannot use sizeof on managed object  
-}  
-```

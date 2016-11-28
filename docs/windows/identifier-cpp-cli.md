@@ -39,19 +39,18 @@ translation.priority.ht:
 Enables the use of Visual C++ keywords as identifiers.  
   
 ## All Platforms  
- **Syntax**  
+**Syntax**  
   
 ```  
-  
 __identifier(  
 Visual_C++_keyword  
 )  
   
 ```  
   
- **Remarks**  
+**Remarks**  
   
- Use of the `__identifier` keyword for identifiers that are not keywords is permitted, but strongly discouraged as a matter of style.  
+Use of the `__identifier` keyword for identifiers that are not keywords is permitted, but strongly discouraged as a matter of style.  
   
 ## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
   
@@ -84,7 +83,7 @@ int main() {
 ## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
  **Remarks**  
   
- The `__identifier` keyword is valid with the **/clr** and **/clr:oldSyntax** compiler options.  
+ The `__identifier` keyword is valid with the **/clr** compiler option.  
   
 ### Requirements  
  Compiler option: **/clr**  

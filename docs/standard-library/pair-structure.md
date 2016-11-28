@@ -180,7 +180,6 @@ The element with a key value of
  **Namespace:** std  
   
 ## See Also  
- [Pair Logical Operator](../misc/pair-logical-operator.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
 

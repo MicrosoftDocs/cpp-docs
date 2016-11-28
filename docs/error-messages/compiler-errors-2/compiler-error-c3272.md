@@ -38,9 +38,9 @@ translation.priority.mt:
 # Compiler Error C3272
 'symbol' : symbol requires FieldOffset, as it is a member of type typename defined with StructLayout(LayoutKind::Explicit)  
   
- When [StructLayout](frlrfSystemRuntimeInteropServicesStructLayoutAttributeClassTopic) `Explicit` is in effect, fields must be marked with [FieldOffset](frlrfSystemRuntimeInteropServicesFieldOffsetAttributeClassTopic).  
+When `StructLayout(LayoutKind::Explicit)` is in effect, fields must be marked with `FieldOffset`.  
   
- The following sample generates C3272:  
+The following sample generates C3272:  
   
 ```  
 // C3272_2.cpp  
@@ -56,21 +56,3 @@ ref struct X
    // [FieldOffset(0)] int data_;  
 };  
 ```  
-  
- The following sample generates C3272:  
-  
-```  
-// C3272.cpp  
-// compile with: /clr:oldSyntax /LD  
-#using <mscorlib.dll>  
-using namespace System;  
-using namespace System::Runtime::InteropServices;  
-  
-[StructLayout(LayoutKind::Explicit)]  
-__gc struct X  
-{  
-   int data_;   // C3272  
-   // try the following line instead  
-   // [FieldOffset(0)] int data_;  
-};  
-```

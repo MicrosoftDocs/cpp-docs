@@ -73,18 +73,3 @@ int main() {
    // catch( System::Exception ^e) {}  
 }  
 ```  
-  
-## Example  
- The following sample generates C2725 and shows how to fix it.  
-  
-```  
-// C2725c.cpp  
-// compile with: /clr:oldSyntax  
-using namespace System;  
-int main() {  
-   try {}  
-   catch( System::Exception&) {}   // C2725  
-   // try the following line instead  
-   // catch( System::Exception *e) {}  
-}  
-```

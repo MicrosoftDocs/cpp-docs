@@ -35,17 +35,17 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # file_status Class
-Wraps a [file_type](../Topic/file_type%20Enumeration.md).  
+Wraps a [file_type](../standard-library/filesystem-enumerations.md#filesystem__file_type) and file [perms](../standard-library/filesystem-enumerations.md#filesystem__perms).  
   
 ## Syntax  
   
-```  
+```cpp  
 class file_status;  
 ```  
   
 ## file_status::file_status  
   
-```  
+```cpp  
 explicit file_status(file_type ftype = file_type::none, perms mask = perms::unknown) noexcept;
 file_status(const file_status&) noexcept = default;
 file_status(file_status&&) noexcept = default;  
@@ -53,7 +53,7 @@ file_status(file_status&&) noexcept = default;
   
 ## file_status::operator=  
   
-```  
+```cpp  
 file_status& operator=(const file_status&) noexcept = default;  
 file_status& operator=(file_status&&) nexcept = default;  
 ```  
@@ -62,7 +62,7 @@ file_status& operator=(file_status&&) nexcept = default;
   
 ## type  
   
-```  
+```cpp  
 file_type type() const noexcept  
 void type(file_type _Ftype) noexcept  
 ```  
@@ -71,7 +71,7 @@ void type(file_type _Ftype) noexcept
   
 ## permissions  
   
-```  
+``cpp  
 perms permissions() const noexcept  
 void permissions(perms_Prms) noexcept   
 ```  
