@@ -124,7 +124,6 @@ The element-wise averages are: ( 5.5 1.75 -0.166667 -1.625 -2.9 -4.08333 )
  **Namespace:** std  
   
 ## See Also  
- [binary_function Structure Sample](../misc/binary-function-structure-sample.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 

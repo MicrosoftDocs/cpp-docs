@@ -72,9 +72,9 @@ Defines several types and functions that control the allocation and freeing of s
 |||  
 |-|-|  
 |[operator delete](../standard-library/new-operators.md#operator_delete)|The function called by a delete expression to deallocate storage for individual of objects.|  
-|[operator delete&#91;&#93;](../standard-library/new-operators.md#operator_delete_at)|The function called by a delete expression to deallocate storage for an array of objects.|  
+|[operator delete&#91;&#93;](../standard-library/new-operators.md#operator_delete_arr)|The function called by a delete expression to deallocate storage for an array of objects.|  
 |[operator new](../standard-library/new-operators.md#operator_new)|The function called by a new expression to allocate storage for individual objects.|  
-|[operator new&#91;&#93;](../standard-library/new-operators.md#operator_new_at)|The function called by a new expression to allocate storage for an array of objects.|  
+|[operator new&#91;&#93;](../standard-library/new-operators.md#operator_new_arr)|The function called by a new expression to allocate storage for an array of objects.|  
   
 ### Classes  
   

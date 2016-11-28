@@ -56,8 +56,6 @@ Defines a class, an operator, and several templates that help allocate and free 
 |[addressof](../standard-library/memory-functions.md#addressof)|Gets the true address of an object.|  
 |[align](../standard-library/memory-functions.md#align)|Returns a pointer to a range of a given size, based on the provided alignment and starting address.|  
 |[allocate_shared](../standard-library/memory-functions.md#allocate_shared)|Creates a `shared_ptr` to objects that are allocated and constructed for a given type with a specified allocator.|  
-|[checked_uninitialized_copy](../misc/checked-uninitialized-copy.md)|Same as `uninitialized_copy` but enforces the use of a checked iterator as output iterator.|  
-|[checked_uninitialized_fill_n](../misc/checked-uninitialized-fill-n.md)|Same as `uninitialized_fill_n` but enforces the use of a checked iterator as output iterator.|  
 |[const_pointer_cast](../standard-library/memory-functions.md#const_pointer_cast)|Const cast to `shared_ptr`.|  
 |[declare_no_pointers](../standard-library/memory-functions.md#declare_no_pointers)|Informs a garbage collector that the characters starting at a specified address and falling within the indicated block size contain no traceable pointers.|  
 |[declare_reachable](../standard-library/memory-functions.md#declare_reachable)|Informs garbage collection that the indicated address is to allocated storage and is reachable.|  
@@ -72,9 +70,7 @@ Defines a class, an operator, and several templates that help allocate and free 
 |[pointer_safety](../standard-library/memory-enums.md#pointer_safety_enumeration)|An enumeration of all the possible return values for `get_pointer_safety`.|  
 |[return_temporary_buffer](../standard-library/memory-functions.md#return_temporary_buffer)|Deallocates the temporary memory that was allocated using the `get_temporary_buffer` template function.|  
 |[static_pointer_cast](../standard-library/memory-functions.md#static_pointer_cast)|Static cast to `shared_ptr`.|  
-|[swap](../standard-library/memory-functions.md#swap__c_add_add_standard_library_)|Swap two `shared_ptr` or `weak_ptr` objects.|  
-|[unchecked_uninitialized_copy](../misc/unchecked-uninitialized-copy.md)|Same as `uninitialized_copy` but allows the use of an unchecked iterator as output iterator when _SECURE_SCL=1 is defined.|  
-|[unchecked_uninitialized_fill_n](../misc/unchecked-uninitialized-fill-n.md)|Same as `uninitialized_fill_n` but allows the use of an unchecked iterator as output iterator when _SECURE_SCL=1 is defined.|  
+|[swap](../standard-library/memory-functions.md#swap)|Swap two `shared_ptr` or `weak_ptr` objects.|  
 |[undeclare_no_pointers](../standard-library/memory-functions.md#undeclare_no_pointers)|Informs a garbage collector that the characters in the memory block defined by a base address pointer and block size may now contain traceable pointers.|  
 |[undeclare_reachable](../standard-library/memory-functions.md#undeclare_reachable)|Informs a `garbage_collector` that a specified memory location is not reachable.|  
 |[uninitialized_copy](../standard-library/memory-functions.md#uninitialized_copy)|Copies objects from a specified input range into an uninitialized destination range.|  

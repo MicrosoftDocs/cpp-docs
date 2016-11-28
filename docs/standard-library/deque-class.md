@@ -1238,8 +1238,6 @@ iterator erase(iterator first, iterator last);
  A random-access iterator that designates the first element remaining beyond any elements removed, or a pointer to the end of the deque if no such element exists.  
   
 ### Remarks  
- For more information on **erase**, see [deque::erase and deque::clear](../misc/deque-erase-and-deque-clear.md).  
-  
  **erase** never throws an exception.  
   
 ### Example  

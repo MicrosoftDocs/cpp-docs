@@ -46,9 +46,7 @@ translation.priority.ht:
 ## Syntax  
   
 ```  
-  
-      postfix-expression   
-      ++  
+postfix-expression ++  
 postfix-expression ––  
 ```  
   
@@ -96,6 +94,5 @@ for( myCompass = North; myCompass != West; myCompass++ ) // Error
   
 ## See Also  
  [Postfix Expressions](../cpp/postfix-expressions.md)   
- [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C Postfix Increment and Decrement Operators](../c-language/c-postfix-increment-and-decrement-operators.md)
