@@ -49,16 +49,3 @@ ref class C {
    virtual int f2() sealed;   // OK  
 };  
 ```  
-  
- **Managed Extensions for C++**  
-  
- The following sample generates C3609:  
-  
-```  
-// C3609c.cpp  
-// compile with: /clr:oldSyntax /c  
-__gc class C {  
-   __sealed int f();   // C3609  
-   __sealed virtual int f2();   // OK  
-};  
-```

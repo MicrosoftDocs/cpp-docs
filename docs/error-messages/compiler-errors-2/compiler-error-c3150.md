@@ -37,18 +37,6 @@ translation.priority.ht:
 # Compiler Error C3150
 'element' : 'attribute' can only be applied to a class, interface, array or pointer  
   
- [__gc](../../misc/gc.md) can only be used on a class, interface, or array.  
+`__gc` can only be used on a class, interface, or array.  
   
- C3150 is only reachable using **/clr:oldSyntax**.  
-  
- The following sample generates C3150:  
-  
-```  
-// C3150.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-  
-__gc void f()   // C3150; function cannot be managed  
-{  
-}  
-```
+ C3150 is only reachable using the obsolete compiler option **/clr:oldSyntax**.  

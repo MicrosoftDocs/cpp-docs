@@ -63,33 +63,3 @@ void MyClass::Test() {    // C3414
 System::Object::Object() {    // C3414  
 }  
 ```  
-  
- The following sample generates C3414:  
-  
-```  
-// C3414a.cpp  
-// compile with: /clr:oldSyntax /LD  
-#using <mscorlib.dll>  
-public __gc class MyClass  
-{  
-public:  
-   void Test(){}  
-};  
-```  
-  
- and then:  
-  
-```  
-// C3414b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-#using <C3414a.dll>  
-  
-void MyClass::Test()  
-{    // C3414  
-}  
-  
-System::Object::Object()  
-{    // C3414  
-}  
-```

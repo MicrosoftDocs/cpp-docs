@@ -62,27 +62,3 @@ int main() {
    // System::Delegate^ pD = gcnew D(pC, &C::mf);  
 }  
 ```  
-  
- The following sample generates C3364:  
-  
-```  
-// C3364.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-  
-__delegate int D(int, int);  
-  
-__gc class C {  
-public:  
-   int mf(int, int) {  
-      return 1;  
-   }  
-};  
-  
-int main() {  
-   C *pC = new C;  
-   System::Delegate *pD = new D(pC, pC->mf(1, 2));   // C3364  
-   // try the following line instead  
-   // System::Delegate *pD = new D(pC, &C::mf);  
-}  
-```

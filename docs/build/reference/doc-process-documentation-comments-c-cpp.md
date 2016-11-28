@@ -57,8 +57,6 @@ Causes the compiler to process documentation comments in source code files and t
   
  You can add documentation comments to your source code files. For more information, see [Recommended Tags for Documentation Comments](../../ide/recommended-tags-for-documentation-comments-visual-cpp.md).  
   
- **/doc** is not compatible with **/clr:oldSyntax**.  See [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) for more information.  
-  
  To use the generated .xml file with IntelliSense, make the file name of the .xml file the same as the assembly that you want to support and put the .xml file is in the same directory as the assembly. When the assembly is referenced in the Visual Studio project, the .xml file is also found. For more information, see [Using IntelliSense](/visualstudio/ide/using-intellisense) and [Supplying XML Code Comments](/visualstudio/ide/supplying-xml-code-comments).  
   
 ### To set this compiler option in the Visual Studio development environment  

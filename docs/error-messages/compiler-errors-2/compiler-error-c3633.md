@@ -37,10 +37,10 @@ translation.priority.ht:
 # Compiler Error C3633
 cannot define 'member' as a member of managed 'type'  
   
- CLR reference class data members cannot be of a non-POD C++ type.  You can only instantiate a POD native type in a CLR type.  For example, a POD type cannot contain a copy constructor or an assignment operator.  
+CLR reference class data members cannot be of a non-POD C++ type.  You can only instantiate a POD native type in a CLR type.  For example, a POD type cannot contain a copy constructor or an assignment operator.  
   
 ## Example  
- The following sample generates C3633.  
+The following sample generates C3633.  
   
 ```  
 // C3633.cpp  
@@ -61,24 +61,3 @@ public:
     ~B() { delete a2; }  
 };  
 ```  
-  
-## Example  
- The following sample generates C3633.  
-  
-```  
-// C3633_b.cpp  
-// compile with: /clr:oldSyntax /c  
-class A1 {  
-public:  
-   A1() { II = 0; }  
-   int II;  
-};  
-  
-__gc class B {  
-public:  
-   A1 a1;   // C3633  
-   A1 * a2;   // OK  
-   B() : a2( new A1 ) {}  
-    ~B() { delete a2; }  
-};  
-```

@@ -37,9 +37,10 @@ translation.priority.ht:
 # Compiler Error C3737
 'delegate': a delegate may not have an explicit calling convention  
   
- You cannot specify the [calling convention](../../cpp/calling-conventions.md) for a [__delegate](../../misc/delegate.md).  
+ You cannot specify the [calling convention](../../cpp/calling-conventions.md) for a `delegate`.  
   
- The following sample generates C3737:  
+## Example  
+The following sample generates C3737:  
   
 ```  
 // C3737a.cpp  
@@ -51,17 +52,3 @@ delegate void __stdcall MyFunc();   // C3737
 int main() {  
 }  
 ```  
-  
- The following sample generates C3737:  
-  
-```  
-// C3737b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-__delegate void __stdcall MyFunc();   // C3737  
-// Try the following line instead.  
-// __delegate void MyFunc();  
-  
-int main() {  
-}  
-```

@@ -38,25 +38,3 @@ translation.priority.ht:
 'operator' : pointer arithmetic not allowed on this type  
   
  You cannot increment the pointer to a managed class.  
-  
- **Managed Extensions for C++**  
-  
- You cannot increment the pointer to a [__gc](../../misc/gc.md) class.  Also, string operators are only valid with **/clr** (not **/clr:oldSyntax**).  
-  
- The following sample generates C2845:  
-  
-```  
-// C2845b.cpp  
-// compile with: /clr:oldSyntax  
-using namespace System;  
-__gc class X {};  
-  
-int main() {  
-   X *pX = new X;  
-   pX++;   // C2845  
-  
-   String * a = new String("abc");  
-   String * b = new String("def");  
-   Console::WriteLine(a + b);   // C2845 not with /clr:oldSyntax  
-}  
-```

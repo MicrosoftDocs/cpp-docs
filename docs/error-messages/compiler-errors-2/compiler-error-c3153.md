@@ -51,17 +51,3 @@ int main() {
    A^ a = gcnew A;   // C3153  
 }  
 ```  
-  
- The following sample generates C3153:  
-  
-```  
-// C3153b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-__interface A {  
-};  
-  
-int main() {  
-   A *a = new A;   // C3153  
-}  
-```

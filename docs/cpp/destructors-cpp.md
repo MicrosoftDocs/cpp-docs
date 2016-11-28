@@ -40,7 +40,7 @@ translation.priority.ht:
 # Destructors (C++)
 "Destructor" functions are the inverse of constructor functions. They are called when objects are destroyed (deallocated). Designate a function as a class's destructor by preceding the class name with a tilde (`~`). For example, the destructor for class `String` is declared: `~String()`.  
   
- In a /clr compilation, the destructor has a special role in releasing managed and unmanaged resources. See [Destructors and Finalizers in Visual C++](../misc/destructors-and-finalizers-in-visual-cpp.md) for more information.  
+ In a /clr compilation, the destructor has a special role in releasing managed and unmanaged resources. See [Destructors and finalizers in How to: Define and consume classes and structs (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) for more information.  
   
  The destructor is commonly used to "clean up" when an object is no longer necessary. Consider the following declaration of a `String` class:  
   

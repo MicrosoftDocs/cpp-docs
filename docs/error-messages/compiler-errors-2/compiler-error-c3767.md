@@ -42,6 +42,7 @@ translation.priority.mt:
   
  C3767 may also be caused by a breaking change: native types are now private by default in a **/clr** compilation; see [Type visibility](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) for more information.  
   
+## Example  
  The following sample generates C3767:  
   
 ```  
@@ -76,37 +77,6 @@ int main() {
  The following sample generates C3767:  
   
 ```  
-// C3767b.cpp  
-// compile with: /clr:oldSyntax  
-using namespace System;  
-__delegate void TestDel();  
-  
-public __gc class MyClass {  
-public:  
-   static __event TestDel * MyClass_Event;  
-};  
-  
-public __gc class MyClass2 : public MyClass {  
-public:  
-   void Test() {  
-      MyClass* patient = new MyClass;  
-      patient->MyClass_Event();  
-    }  
-};  
-  
-int main() {  
-   MyClass* x = new MyClass;  
-   x->MyClass_Event();   // C3767  
-  
-   // OK  
-   MyClass2 * y = new MyClass2();  
-   y->Test();  
-};  
-```  
-  
- The following sample generates C3767:  
-  
-```  
 // C3767c.cpp  
 // compile with: /clr /c  
   
@@ -126,29 +96,7 @@ ref class Der : public Base {
 };  
 ```  
   
- The following sample generates C3767:  
-  
-```  
-// C3767d.cpp  
-// compile with: /clr:oldSyntax /c  
-  
-__gc class Base {  
-protected:  
-   void Method() {  
-      System::Console::WriteLine("protected");  
-   }  
-};  
-  
-__gc class Der : public Base {  
-   void Method() {  
-      ((Base*)this)->Method();   // C3767  
-      // try the following line instead  
-      // Base::Method();  
-   }  
-};  
-```  
-  
- In Visual C++ .NET 2002, the compiler changed the way it looked up symbols. In some cases, it would have automatically looked for symbols in a specified namespace. Now, it will use argument-dependent lookup.  
+ In Visual C++ .NET 2002, the compiler changed the way it looked up symbols. In some cases, it would have automatically looked for symbols in a specified namespace. Now, it uses argument-dependent lookup.  
   
  The following sample generates C3767:  
   

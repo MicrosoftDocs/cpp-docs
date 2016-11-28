@@ -60,23 +60,3 @@ public:
    }  
 };  
 ```  
-  
- The following example generates C3137:  
-  
-```  
-// C3137_2.cpp  
-// compile with: /clr:oldSyntax /c  
-__gc class CMyClass {  
-public:  
-   __property int get_Size() {  
-      return 0;  
-   }  
-   __property void set_Size(int i) {}  
-  
-   CMyClass() : Size(1) {   // C3137  
-      // to resolve this C3137, remove the initializer from the  
-      // ctor declaration and perform the assignment as follows  
-      // Size = 1;  
-   }  
-};  
-```

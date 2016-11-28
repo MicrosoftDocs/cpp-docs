@@ -59,22 +59,3 @@ int main() {
    System::Console::WriteLine(myA->i);  
 }  
 ```  
-  
- The following sample generates C3380:  
-  
-```  
-// C3380.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-protected __gc class A {   // C3380  
-// try the following line instead  
-// __gc class A {  
-public:  
-   static int i = 9;  
-};  
-  
-int main() {  
-   A *myA = new A;  
-   Console::WriteLine(myA->i);  
-}  
-```

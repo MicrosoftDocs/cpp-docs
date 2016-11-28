@@ -51,29 +51,3 @@ int main() {
    array<int>^ a2 = gcnew array<int>(20);   // value type OK  
 }  
 ```  
-  
- The following sample generates C2691:  
-  
-```  
-// C2691b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-int main() {  
-   int * a1 __gc[];   // C2691  
-   int * a1 = new int [20];   // OK  
-}  
-```  
-  
- C2691 can also occur if you attempt to define a jagged array using Managed Extensions for C++.  Jagged arrays are supported in the current syntax, see [Arrays](../../windows/arrays-cpp-component-extensions.md) for more information.  
-  
- The following sample generates C2691:  
-  
-```  
-// C2691c.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-using namespace System;  
-int main() {  
-   Int32 myJaggedArray[][] = new Int32 [50][];   // C2691  
-}  
-```

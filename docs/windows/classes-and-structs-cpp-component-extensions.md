@@ -111,7 +111,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
   
 -   [Hide-by-Signature Functions in Reference Types](../misc/hide-by-signature-functions-in-reference-types.md)  
   
--   [Destructors and Finalizers in Visual C++](../misc/destructors-and-finalizers-in-visual-cpp.md)  
+-   [Destructors and finalizers in How to: Define and consume classes and structs (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)  
   
 -   [Type and Member Visibility](../misc/type-and-member-visibility.md)  
   

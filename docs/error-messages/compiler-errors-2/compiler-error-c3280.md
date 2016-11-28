@@ -57,23 +57,3 @@ void A::func()   // C3280
   
 #pragma managed(pop)  
 ```  
-  
- The following sample generates C3280:  
-  
-```  
-// C3280.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-  
-__gc struct A {  
-   void func();  
-};  
-  
-#pragma managed(push,off)  
-  
-void A::func()   // C3280  
-{  
-}  
-  
-#pragma managed(pop)  
-```

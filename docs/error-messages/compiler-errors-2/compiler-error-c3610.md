@@ -39,23 +39,4 @@ translation.priority.ht:
   
  By default, a value type is not on the managed heap. Before you can call methods from .NET runtime classes, such as `Object`, you need to move the value type to the managed heap.  
   
- C3610 is only reachable using **/clr:oldSyntax**.  
-  
- The following sample generates C3610:  
-  
-```  
-// C3610.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-  
-__value class A {};  
-  
-int main() {  
-   A a;  
-   a.GetType(); // C3610  
-  
-   // OK  
-   __box A* ovar = __box(a);  
-   ovar->GetType();  
-}  
-```
+ C3610 is only reachable using the obsolete compiler option **/clr:oldSyntax**.  

@@ -38,9 +38,9 @@ translation.priority.mt:
 # Compiler Error C3246
 'class' : cannot inherit from 'type' as it has been declared as 'sealed'  
   
- A class that is marked as [sealed](../../misc/sealed.md) cannot be the base class for any other classes.  
+A class that is marked as [sealed](../../windows/sealed-cpp-component-extensions.md) cannot be the base class for any other classes.  
   
- The following sample generates C3246:  
+The following sample generates C3246:  
   
 ```  
 // C3246_2.cpp  
@@ -49,14 +49,3 @@ ref class X sealed {};
   
 ref class Y : public X {}; // C3246  
 ```  
-  
- The following sample generates C3246:  
-  
-```  
-// C3246.cpp  
-// compile with: /clr:oldSyntax /LD  
-#using <mscorlib.dll>  
-__sealed __gc class X {};  
-  
-__gc class Y : public X {}; // C3246  
-```

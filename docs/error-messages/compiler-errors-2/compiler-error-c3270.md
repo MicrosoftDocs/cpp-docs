@@ -38,9 +38,9 @@ translation.priority.mt:
 # Compiler Error C3270
 'field': the FieldOffset attribute can only be used in the context of StructLayout(Explicit), in which case it is required  
   
- A field was marked with [FieldOffset](frlrfSystemRuntimeInteropServicesFieldOffsetAttributeClassTopic), which is only allowed when [StructLayout](frlrfSystemRuntimeInteropServicesStructLayoutAttributeClassTopic) Explicit is in effect.  
+A field was marked with **FieldOffset**, which is only allowed when **StructLayout(Explicit)** is in effect.  
   
- The following sample generates C3270:  
+The following sample generates C3270:  
   
 ```  
 // C3270_2.cpp  
@@ -56,21 +56,3 @@ public value struct MYUNION
    // ...  
 };  
 ```  
-  
- The following sample generates C3270:  
-  
-```  
-// C3270.cpp  
-// compile with: /clr:oldSyntax /LD  
-#using <mscorlib.dll>  
-using namespace System::Runtime::InteropServices;  
-  
-[ StructLayout(LayoutKind::Sequential) ]  
-// try the following line instead  
-// [ StructLayout(LayoutKind::Explicit) ]  
-public __value struct MYUNION  
-{  
-   [FieldOffset(0)] int a;   // C3270  
-   // ...  
-};  
-```

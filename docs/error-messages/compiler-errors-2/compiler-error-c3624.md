@@ -39,7 +39,8 @@ translation.priority.ht:
   
  An assembly (reference) needed to compile your code was not specified; pass the assembly to the [#using](../../preprocessor/hash-using-directive-cpp.md) directive.  
   
- The following sample generates C3624:  
+## Example  
+The following sample generates C3624:  
   
 ```  
 // C3624.cpp  
@@ -54,19 +55,3 @@ using namespace System;
   
 public ref class MyForm : public Windows::Forms::Form {};   // C3624  
 ```  
-  
- The following sample generates C3624:  
-  
-```  
-// C3624_b.cpp  
-// compile with: /clr:oldSyntax /c  
-#using <System.Windows.Forms.dll>  
-  
-// Uncomment the following 2 lines to resolve.  
-// #using <System.dll>  
-// #using <System.Drawing.dll>  
-  
-using namespace System;  
-  
-public __gc class MyForm : public Windows::Forms::Form {};   // C3624  
-```

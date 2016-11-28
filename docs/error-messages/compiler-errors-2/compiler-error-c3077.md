@@ -40,7 +40,7 @@ translation.priority.mt:
   
  You cannot declare a finalizer in a native or value type.  
   
- For more information, see [Destructors and Finalizers in Visual C++](../../misc/destructors-and-finalizers-in-visual-cpp.md).  
+ For more information, see [Destructors and finalizers in How to: Define and consume classes and structs (C++/CLI)](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).  
   
 ## Example  
  The following sample generates C3077.  

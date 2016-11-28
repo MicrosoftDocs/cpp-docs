@@ -48,17 +48,3 @@ ref class A {
    ref class C {};   // OK  
 };  
 ```  
-  
-## Example  
- Using Managed Extensions for C++, you must explicitly specify the "managed-ness" of an embedded type using one of the following keywords: [__gc](../../misc/gc.md), [__nogc](../../misc/nogc.md), or [__value](../../misc/value.md).  
-  
- The following sample generates C2814 and shows how to fix it.  
-  
-```  
-// C2814_b.cpp  
-// compile with: /clr:oldSyntax /c  
-__gc class A {  
-   class B {};   // C2814  
-   __gc class C {};   // OK  
-};  
-```

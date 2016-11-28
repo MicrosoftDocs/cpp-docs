@@ -39,7 +39,8 @@ translation.priority.ht:
   
  A symbol could not be imported from a referenced assembly because it was previously imported from a referenced assembly.  
   
- The following sample generates C3846:  
+## Example
+The following sample generates C3846:  
   
 ```  
 // C3846a.cpp  
@@ -61,31 +62,3 @@ int main()
 {  
 }  
 ```  
-  
- The following sample generates C3846:  
-  
-```  
-// C3846c.cpp  
-// compile with: /LD /clr:oldSyntax  
-#using <mscorlib.dll>  
-using namespace System;  
-  
-public __gc struct G  
-{  
-};  
-```  
-  
- And then compile this:  
-  
-```  
-// C3846d.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-using namespace System;  
-#using "c3846c.dll"  
-#using "c3846c.obj"   // C3846  
-  
-int main()  
-{  
-}  
-```

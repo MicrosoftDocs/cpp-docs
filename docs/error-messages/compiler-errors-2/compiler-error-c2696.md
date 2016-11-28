@@ -37,26 +37,6 @@ translation.priority.ht:
 # Compiler Error C2696
 Cannot create a temporary object of a managed type 'type'  
   
- References to `const` in an unmanaged program cause the compiler to call the constructor and create a temporary object on the stack. However, a managed class can never be created on the stack.  
+References to `const` in an unmanaged program cause the compiler to call the constructor and create a temporary object on the stack. However, a managed class can never be created on the stack.  
   
- C2696 is only reachable using **/clr:oldSyntax**.  
-  
- The following sample generates C2696:  
-  
-```  
-// C2696b.cpp  
-// compile with: /clr:oldSyntax  
-  
-__gc class G {  
-public:  
-   G( int i ) {}  
-};  
-  
-void func( const G& g );  
-  
-int main() {  
-   func( 1 );   // C2696  
-   G *myG = new G( 1 );   // OK  
-   func( *myG );  
-}  
-```
+C2696 is only reachable using the obsolete compiler option **/clr:oldSyntax**.  

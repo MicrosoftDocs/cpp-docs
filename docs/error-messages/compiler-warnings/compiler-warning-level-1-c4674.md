@@ -38,9 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 1) C4674
 'method' should be declared 'static' and have exactly one parameter  
   
- The signature of a conversion operator was not correct. The method is not considered a user-defined conversion.  
-  
- When using the new syntax (**/clr**), see [User-Defined Operators (C++/CLI)](../../dotnet/user-defined-operators-cpp-cli.md) and [User-Defined Conversions (C++/CLI)](../../dotnet/user-defined-conversions-cpp-cli.md) for information on defining operators.  
+The signature of a conversion operator was not correct. The method is not considered a user-defined conversion. For more information on defining operators, see [User-Defined Operators (C++/CLI)](../../dotnet/user-defined-operators-cpp-cli.md) and [User-Defined Conversions (C++/CLI)](../../dotnet/user-defined-conversions-cpp-cli.md).  
   
 ## Example  
  The following sample generates C4674.  
@@ -54,18 +52,3 @@ ref class G {
    }  
 };  
 ```  
-  
-## Example  
- The following sample generates C4674.  
-  
-```  
-// C4674_b.cpp  
-// compile with: /clr:oldSyntax /W1 /LD  
-__gc class G {  
-   int op_Implicit(int i) {   // C4674  
-   // try the following line instead  
-   // static int op_Implicit(int i) {  
-      return 0;  
-   }  
-};  
-```

@@ -38,9 +38,9 @@ translation.priority.mt:
 # Compiler Error C3262
 invalid array indexing: '#' dimension(s) specified for '#'-dimensional 'array type'  
   
- An array was improperly subscripted. The number of indices may not match the number of dimensions in the array.  
+An array was improperly subscripted. The number of indices may not match the number of dimensions in the array.  
   
- The following sample generates C3262:  
+The following sample generates C3262:  
   
 ```  
 // C3262.cpp  
@@ -79,17 +79,3 @@ int main() {
    MyClass0 = Test0();  
 }  
 ```  
-  
- **Managed Extensions for C++**  
-  
- The following sample generates C3262:  
-  
-```  
-// C3262b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-int main() {  
-int iArr __gc[,] = new int __gc[10,20];  
-iArr[1,2,3]; // C3262: 3 dimensions specified for 2-dimensional array  
-}  
-```

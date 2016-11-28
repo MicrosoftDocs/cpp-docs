@@ -56,21 +56,3 @@ int main() {
    Console::Out->WriteLine(pMyClass->i);  
 }  
 ```  
-  
- The following sample generates C3623:  
-  
-```  
-// C3623_2.cpp  
-// compile with: /clr:oldSyntax  
-using namespace System;  
-__gc class CMyClass {  
-   public:  
-      int i : 1;   // C3623  
-};  
-  
-int main() {  
-   CMyClass *pMyClass = new CMyClass();  
-   pMyClass->i = 3;  
-   Console::Out->WriteLine(pMyClass->i);  
-}  
-```
