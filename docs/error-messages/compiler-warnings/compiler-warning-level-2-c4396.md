@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 2) C4396
 "name" : the inline specifier cannot be used when a friend declaration refers to a specialization of a function template  
   
- A specialization of a function template cannot specify any of the [inline](../../misc/inline-inline-forceinline.md) specifiers. The compiler issues warning C4396 and ignores the inline specifier.  
+ A specialization of a function template cannot specify any of the [inline](../../cpp/inline-functions-cpp.md) specifiers. The compiler issues warning C4396 and ignores the inline specifier.  
   
 ### To correct this error  
   

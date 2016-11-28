@@ -474,9 +474,9 @@ concurrent_vector& operator= (
  Provides access to the element at the given index in the concurrent vector. This method is concurrency-safe for read operations, and also while growing the vector, as long as the you have ensured that the value `_Index` is less than the size of the concurrent vector.  
   
 ```
-reference operator[](size_type _Index);
+reference operator[](size_type _index);
 
-const_reference operator[](size_type _Index) const;
+const_reference operator[](size_type _index) const;
 ```  
   
 ### Parameters  

@@ -161,7 +161,7 @@ inline ATL_URL_PORT AtlGetDefaultUrlPort(ATL_URL_SCHEME m_nScheme) throw();
  The [ATL_URL_SCHEME](http://msdn.microsoft.com/Library/f4131046-8ba0-4ec1-8209-84203f05d20e) value identifying the scheme for which you want to obtain the port number.  
   
 ### Return Value  
- The [ATL_URL_PORT](../Topic/ATL_URL_PORT.md) associated with the specified scheme or ATL_URL_INVALID_PORT_NUMBER if the scheme is not recognized.  
+ The [ATL_URL_PORT](atl-typedefs.md#atl_url_port) associated with the specified scheme or ATL_URL_INVALID_PORT_NUMBER if the scheme is not recognized.  
   
 ### Requirements  
  **Header:** atlutil.h  

@@ -84,14 +84,14 @@ class CComBSTR
 |Name|Description|  
 |----------|-----------------|  
 |[CComBSTR::operator BSTR](#ccombstr__operator_bstr)|Casts a `CComBSTR` object to a `BSTR`.|  
-|[CComBSTR::operator !](#ccombstr__operator__not)|Returns `true` or `false`, depending on whether `m_str`is `NULL`.|  
-|[CComBSTR::operator !=](../Topic/CComBSTR::operator%20!=.md)|Compares a `CComBSTR` with a string.|  
-|[CComBSTR::operator &](../Topic/CComBSTR::operator%20&.md)|Returns the address of `m_str`.|  
-|[CComBSTR::operator +=](#ccombstr__operator__add_eq)|Appends a `CComBSTR` to the object.|  
-|[CComBSTR::operator <](../Topic/CComBSTR::operator%20%3C.md)|Compares a `CComBSTR` with a string.|  
-|[CComBSTR::operator =](#ccombstr__operator__eq)|Assigns a value to `m_str`.|  
-|[CComBSTR::operator ==](#ccombstr__operator__eq_eq)|Compares a `CComBSTR` with a string.|  
-|[CComBSTR::operator >](../Topic/CComBSTR::operator%20%3E.md)|Compares a `CComBSTR` with a string.|  
+|[CComBSTR::operator !](#ccombstr__operator_not)|Returns `true` or `false`, depending on whether `m_str`is `NULL`.|  
+|[CComBSTR::operator !=](#ccombstr__operator_neq)|Compares a `CComBSTR` with a string.|  
+|[CComBSTR::operator &](#ccombstr__operator_amp)|Returns the address of `m_str`.|  
+|[CComBSTR::operator +=](#ccombstr__operator_add_eq)|Appends a `CComBSTR` to the object.|  
+|[CComBSTR::operator <](#ccombstr__operator_lt)|Compares a `CComBSTR` with a string.|  
+|[CComBSTR::operator =](#ccombstr__operator_eq)|Assigns a value to `m_str`.|  
+|[CComBSTR::operator ==](#ccombstr__operator_eq_eq)|Compares a `CComBSTR` with a string.|  
+|[CComBSTR::operator >](#ccombstr__operator_gt)|Compares a `CComBSTR` with a string.|  
   
 ### Public Data Members  
   
@@ -452,7 +452,7 @@ BSTR m_str;
 ### Example  
  See the example for [CComBSTR::m_str](#ccombstr__m_str).  
   
-##  <a name="ccombstr__operator__not"></a>  CComBSTR::operator !  
+##  <a name="ccombstr__operator_not"></a>  CComBSTR::operator !  
  Checks whether `BSTR` string is NULL.  
   
 ```
@@ -468,8 +468,8 @@ bool operator!() const throw();
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#35](../../atl/codesnippet/CPP/ccombstr-class_4.cpp)]  
   
-##  <a name="ccombstr__operator__neq"></a>  CComBSTR::operator !=  
- Returns the logical opposite of [operator ==](#ccombstr__operator__eq_eq).  
+##  <a name="ccombstr__operator_neq"></a>  CComBSTR::operator !=  
+ Returns the logical opposite of [operator ==](#ccombstr__operator_eq_eq).  
   
 ```
 bool operator!= (const CComBSTR& bstrSrc) const throw();
@@ -496,7 +496,7 @@ bool operator!= (LPCOLESTR pszSrc) const;
 ### Remarks  
  `CComBSTR`s are compared textually in the context of the user's default locale. The final comparison operator just compares the contained string against **NULL**.  
   
-##  <a name="ccombstr__operator__amp_"></a>  CComBSTR::operator &amp;  
+##  <a name="ccombstr__operator_amp"></a>  CComBSTR::operator &amp;  
  Returns the address of the `BSTR` stored in the [m_str](#ccombstr__m_str) member.  
   
 ```
@@ -513,7 +513,7 @@ BSTR* operator&() throw();
   
  [!code-cpp[NVC_ATL_Utilities#47](../../atl/codesnippet/CPP/ccombstr-class_15.cpp)]  
   
-##  <a name="ccombstr__operator__add_eq"></a>  CComBSTR::operator +=  
+##  <a name="ccombstr__operator_add_eq"></a>  CComBSTR::operator +=  
  Appends a string to the `CComBSTR` object.  
   
 ```
@@ -535,7 +535,7 @@ CComBSTR& operator+= (const CComBSTR& bstrSrc);
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#48](../../atl/codesnippet/CPP/ccombstr-class_16.cpp)]  
   
-##  <a name="ccombstr__operator__lt_"></a>  CComBSTR::operator &lt;  
+##  <a name="ccombstr__operator_lt"></a>  CComBSTR::operator &lt;  
  Compares a `CComBSTR` with a string.  
   
 ```
@@ -550,7 +550,7 @@ bool operator<(LPCSTR pszSrc) const throw();
 ### Remarks  
  The comparison is performed using the user's default locale.  
   
-##  <a name="ccombstr__operator__eq"></a>  CComBSTR::operator =  
+##  <a name="ccombstr__operator_eq"></a>  CComBSTR::operator =  
  Sets the [m_str](#ccombstr__m_str) member to a copy of `pSrc` or to a copy of the `BSTR` member of *src*.  
   
 ```
@@ -567,7 +567,7 @@ CComBSTR& operator= (const CComBSTR& src);
 ### Example  
  See the example for [CComBSTR::Copy](#ccombstr__copy).  
   
-##  <a name="ccombstr__operator__eq_eq"></a>  CComBSTR::operator ==  
+##  <a name="ccombstr__operator_eq_eq"></a>  CComBSTR::operator ==  
  Compares a `CComBSTR` with a string. `CComBSTR`s are compared textually in the context of the user's default locale.  
   
 ```
@@ -595,7 +595,7 @@ bool operator== (LPCOLESTR pszSrc) const;
 ### Remarks  
  The final comparison operator just compares the contained string against **NULL**.  
   
-##  <a name="ccombstr__operator__gt_"></a>  CComBSTR::operator &gt;  
+##  <a name="ccombstr__operator_gt"></a>  CComBSTR::operator &gt;  
  Compares a `CComBSTR` with a string.  
   
 ```

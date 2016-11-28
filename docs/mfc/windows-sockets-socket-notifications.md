@@ -37,18 +37,18 @@ translation.priority.ht:
 # Windows Sockets: Socket Notifications
 This article describes the notification functions in the socket classes. These member functions are callback functions that the framework calls to notify your socket object of important events. The notification functions are:  
   
--   [OnReceive](../mfc/reference/casyncsocket-class.md#onreceive): Notifies this socket that there is data in the buffer for it to retrieve by calling [Receive](../mfc/reference/casyncsocket-class.md#receive).  
+-   [OnReceive](../mfc/reference/casyncsocket-class.md#casyncsocket__onreceive): Notifies this socket that there is data in the buffer for it to retrieve by calling [Receive](../mfc/reference/casyncsocket-class.md#casyncsocket__receive).  
   
--   [OnSend](../mfc/reference/casyncsocket-class.md#onsend): Notifies this socket that it can now send data by calling [Send](../mfc/reference/casyncsocket-class.md#send).  
+-   [OnSend](../mfc/reference/casyncsocket-class.md#casyncsocket__onsend): Notifies this socket that it can now send data by calling [Send](../mfc/reference/casyncsocket-class.md#casyncsocket__send).  
   
--   [OnAccept](../mfc/reference/casyncsocket-class.md#onaccept): Notifies this listening socket that it can accept pending connection requests by calling [Accept](../mfc/reference/casyncsocket-class.md#accept).  
+-   [OnAccept](../mfc/reference/casyncsocket-class.md#casyncsocket__onaccept): Notifies this listening socket that it can accept pending connection requests by calling [Accept](../mfc/reference/casyncsocket-class.md#casyncsocket__accept).  
   
--   [OnConnect](../mfc/reference/casyncsocket-class.md#onconnect): Notifies this connecting socket that its connection attempt completed: perhaps successfully or perhaps in error.  
+-   [OnConnect](../mfc/reference/casyncsocket-class.md#casyncsocket__onconnect): Notifies this connecting socket that its connection attempt completed: perhaps successfully or perhaps in error.  
   
--   [OnClose](../mfc/reference/casyncsocket-class.md#onclose): Notifies this socket that the socket it is connected to has closed.  
+-   [OnClose](../mfc/reference/casyncsocket-class.md#casyncsocket__onclose): Notifies this socket that the socket it is connected to has closed.  
   
     > [!NOTE]
-    >  An additional notification function is [OnOutOfBandData](../mfc/reference/casyncsocket-class.md#onoutofbanddata). This notification tells the receiving socket that the sending socket has "out-of-band" data to send. Out-of-band data is a logically independent channel associated with each pair of connected stream sockets. The out-of-band channel is typically used to send "urgent" data. MFC supports out-of-band data. Advanced users working with class [CAsyncSocket](../mfc/reference/casyncsocket-class.md) might need to use the out-of-band channel, but users of class [CSocket](../mfc/reference/csocket-class.md) are discouraged from using it. The easier way is to create a second socket for passing such data. For more information about out-of-band data, see the Windows Sockets specification, available in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+    >  An additional notification function is [OnOutOfBandData](../mfc/reference/casyncsocket-class.md#casyncsocket__onoutofbanddata). This notification tells the receiving socket that the sending socket has "out-of-band" data to send. Out-of-band data is a logically independent channel associated with each pair of connected stream sockets. The out-of-band channel is typically used to send "urgent" data. MFC supports out-of-band data. Advanced users working with class [CAsyncSocket](../mfc/reference/casyncsocket-class.md) might need to use the out-of-band channel, but users of class [CSocket](../mfc/reference/csocket-class.md) are discouraged from using it. The easier way is to create a second socket for passing such data. For more information about out-of-band data, see the Windows Sockets specification, available in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
   
  If you derive from class `CAsyncSocket`, you must override the notification functions for those network events of interest to your application. If you derive a class from class `CSocket`, it is your choice whether to override the notification functions of interest. You can also use `CSocket` itself, in which case the notification functions default to doing nothing.  
   

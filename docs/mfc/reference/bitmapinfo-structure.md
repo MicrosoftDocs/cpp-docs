@@ -71,7 +71,7 @@ typedef struct tagBITMAPINFO {
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CBrush::CreateDIBPatternBrush](../../mfc/reference/cbrush-class.md#createdibpatternbrush)   
+ [CBrush::CreateDIBPatternBrush](../../mfc/reference/cbrush-class.md#cbrush__createdibpatternbrush)   
  [BITMAPINFOHEADER](http://msdn.microsoft.com/library/windows/desktop/dd183376)   
  [RGBQUAD](http://msdn.microsoft.com/library/windows/desktop/dd162938)
 

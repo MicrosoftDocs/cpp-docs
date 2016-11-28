@@ -110,7 +110,7 @@ CComObjectNoLock(void* = NULL);
 ```  
   
 ### Remarks  
- Frees all allocated resources and calls [FinalRelease](../Topic/CComObjectRootEx::FinalRelease.md).  
+ Frees all allocated resources and calls [FinalRelease](ccomobjectrootex-class.md#finalrelease).  
   
 ##  <a name="ccomobjectnolock__queryinterface"></a>  CComObjectNoLock::QueryInterface  
  Retrieves a pointer to the requested interface.  

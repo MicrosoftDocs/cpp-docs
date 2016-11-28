@@ -53,7 +53,7 @@ Tool tips are the tiny popup windows that present short descriptions of a toolba
 ##  <a name="_core_activating_tool_tips"></a> Activating Tool Tips  
  To activate tool tips in your application, you must do two things:  
   
--   Add the `CBRS_TOOLTIPS` style to the other styles (such as **WS_CHILD**, **WS_VISIBLE**, and other **CBRS_** styles) passed as the `dwStyle` parameter to the [CToolBar::Create](../mfc/reference/ctoolbar-class.md#ctoolbar__create) function or in [SetBarStyle](../mfc/reference/ccontrolbar-class.md#setbarstyle).  
+-   Add the `CBRS_TOOLTIPS` style to the other styles (such as **WS_CHILD**, **WS_VISIBLE**, and other **CBRS_** styles) passed as the `dwStyle` parameter to the [CToolBar::Create](../mfc/reference/ctoolbar-class.md#ctoolbar__create) function or in [SetBarStyle](../mfc/reference/ccontrolbar-class.md#ccontrolbar__setbarstyle).  
   
 -   As described in the procedure below, append the toolbar tip text, separated by a newline character ('\n'), to the string resource containing the command-line prompt for the toolbar command. The string resource shares the ID of the toolbar button.  
   

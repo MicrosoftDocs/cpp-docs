@@ -37,7 +37,7 @@ translation.priority.ht:
 # Creating a Modeless Property Sheet
 Normally, the property sheets you create will be modal. When using a modal property sheet, the user must close the property sheet before using any other part of the application. This article describes methods you can use to create a modeless property sheet that allows the user to keep the property sheet open while using other parts of the application.  
   
- To display a property sheet as a modeless dialog box instead of as a modal dialog box, call [CPropertySheet::Create](../mfc/reference/cpropertysheet-class.md#cpropertysheet__create) instead of [DoModal](../mfc/reference/cpropertysheet-class.md#domodal). You must also implement some extra tasks to support a modeless property sheet.  
+ To display a property sheet as a modeless dialog box instead of as a modal dialog box, call [CPropertySheet::Create](../mfc/reference/cpropertysheet-class.md#cpropertysheet__create) instead of [DoModal](../mfc/reference/cpropertysheet-class.md#cpropertysheet__domodal). You must also implement some extra tasks to support a modeless property sheet.  
   
  One of the additional tasks is exchanging data between the property sheet and the external object it is modifying when the property sheet is open. This is generally the same task as for standard modeless dialog boxes. Part of this task is implementing a channel of communication between the modeless property sheet and the external object to which the property settings apply. This implementation is far easier if you derive a class from [CPropertySheet](../mfc/reference/cpropertysheet-class.md) for your modeless property sheet. This article assumes you have done so.  
   

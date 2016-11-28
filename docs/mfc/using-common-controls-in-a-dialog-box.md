@@ -50,7 +50,7 @@ The Windows common controls can be used in [dialog boxes](../mfc/dialog-boxes.md
     > [!NOTE]
     >  You can add these member variables using the context menu in Class View (see [Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)).  
   
-4.  In [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) for your dialog class, set the initial conditions for the common control. Using the member variable created in the previous step, use the member functions to set initial value and other settings. See the following descriptions of the controls for details on settings.  
+4.  In [OnInitDialog](../mfc/reference/cdialog-class.md#cdialog__oninitdialog) for your dialog class, set the initial conditions for the common control. Using the member variable created in the previous step, use the member functions to set initial value and other settings. See the following descriptions of the controls for details on settings.  
   
      You can also use [dialog data exchange](../mfc/dialog-data-exchange-and-validation.md) (DDX) to initialize controls in a dialog box.  
   

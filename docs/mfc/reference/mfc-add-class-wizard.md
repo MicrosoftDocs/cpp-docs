@@ -76,7 +76,7 @@ Use this code wizard to add a class to an existing MFC project, or to add a clas
  The wizard does not overwrite a file. If you select the name of an existing file, when you click **Finish**, the wizard prompts you to indicate whether the class implementation should be appended to the contents of the file. Click **Yes** to append the file; click **No** to return to the wizard and specify another file name.  
   
  **Active accessibility**  
- Enables MFC's support for Active Accessibility by calling [EnableActiveAccessibility](../../mfc/reference/cwnd-class.md#enableactiveaccessibility) in the constructor. This option is available for classes derived from [CWnd](../../mfc/reference/cwnd-class.md).  
+ Enables MFC's support for Active Accessibility by calling [EnableActiveAccessibility](../../mfc/reference/cwnd-class.md#cwnd__enableactiveaccessibility) in the constructor. This option is available for classes derived from [CWnd](../../mfc/reference/cwnd-class.md).  
   
  **DHTML resource ID**  
  Applies to classes derived from `CDHtmlDialog` only. Specifies the resource ID of the DHTML dialog box. The resource ID appears in the HTML section of the project's .rc file, along with the HTML dialog box file name. The DHTML resource, identified by this ID, is hosted by the dialog box, identified by **Dialog ID**.  

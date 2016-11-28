@@ -94,7 +94,7 @@ This document describes the differences between the features and programming mod
  [[Top](#top)]  
   
 ##  <a name="openmp"></a> Comparing the Concurrency Runtime to OpenMP  
- The Concurrency Runtime enables a variety of programming models. These models may overlap or complement the models of other libraries. This section compares the Concurrency Runtime to [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp_in_visual_c_add_add).  
+ The Concurrency Runtime enables a variety of programming models. These models may overlap or complement the models of other libraries. This section compares the Concurrency Runtime to [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp).  
   
  The OpenMP programming model is defined by an open standard and has well-defined bindings to the Fortran and C/C++ programming languages. OpenMP versions 2.0 and 2.5 are well-suited for parallel algorithms that are iterative; that is, they perform parallel iteration over an array of data. OpenMP is most efficient when the degree of parallelism is pre-determined and matches the available resources on the system. The OpenMP model is an especially good match for high-performance computing, where very large computational problems are distributed across the processing resources of a single computer. In this scenario, the hardware environment is known and the developer can reasonably expect to have exclusive access to computing resources when the algorithm is executed.  
   
@@ -111,4 +111,4 @@ This document describes the differences between the features and programming mod
  [Overview](../../parallel/concrt/asynchronous-message-blocks.md)   
  [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)   
  [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)   
- [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp_in_visual_c_add_add)
+ [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp)

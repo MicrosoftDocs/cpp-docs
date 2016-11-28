@@ -37,7 +37,7 @@ translation.priority.ht:
 This example shows how you can use the `...` syntax in Visual C++ to implement functions that have a variable number of arguments.  
   
 > [!NOTE]
->  This topic pertains to C++/CLI. For information about using the `...` in ISO Standard C++, see [Ellipses and Variadic Templates](../cpp/ellipses-and-variadic-templates.md) and [Ellipses and Default Arguments](../misc/ellipses-and-default-arguments.md).  
+>  This topic pertains to C++/CLI. For information about using the `...` in ISO Standard C++, see [Ellipses and Variadic Templates](../cpp/ellipses-and-variadic-templates.md) and Ellipses and Default Arguments in [Postfix expressions](../cpp/postfix-expressions.md).  
   
  The parameter that uses `...` must be the last parameter in the parameter list.  
   

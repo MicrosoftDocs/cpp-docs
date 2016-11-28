@@ -51,7 +51,7 @@ For each dialog box in your program, create a new dialog class to work with the 
   
 -   A standard constructor for the dialog box.  
   
--   An override of the [DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) member function. Edit this function. It is used for dialog data exchange and validation capabilities as described later in [Dialog data exchange and validation](../mfc/dialog-data-exchange-and-validation.md).  
+-   An override of the [DoDataExchange](../mfc/reference/cwnd-class.md#cwnd__dodataexchange) member function. Edit this function. It is used for dialog data exchange and validation capabilities as described later in [Dialog data exchange and validation](../mfc/dialog-data-exchange-and-validation.md).  
   
 ## See Also  
  [Creating a Dialog Class with Code Wizards](../mfc/creating-a-dialog-class-with-code-wizards.md)   

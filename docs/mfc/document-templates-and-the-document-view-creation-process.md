@@ -49,7 +49,7 @@ An MDI Application with Two Document Types
   
  Document templates are created and maintained by the application object. One of the key tasks performed during your application's `InitInstance` function is to construct one or more document templates of the appropriate kind. This feature is described in [Document Template Creation](../mfc/document-template-creation.md). The application object stores a pointer to each document template in its template list and provides an interface for adding document templates.  
   
- If you need to support two or more document types, you must add an extra call to [AddDocTemplate](../mfc/reference/cwinapp-class.md#adddoctemplate) for each document type.  
+ If you need to support two or more document types, you must add an extra call to [AddDocTemplate](../mfc/reference/cwinapp-class.md#cwinapp__adddoctemplate) for each document type.  
   
  An icon is registered for each document template based on its position in the application's list of document templates. The order of the document templates is determined by the order they are added with calls to `AddDocTemplate`. MFC assumes that the first Icon resource in the application is the application icon, the next Icon resource is the first document icon, and so on.  
   

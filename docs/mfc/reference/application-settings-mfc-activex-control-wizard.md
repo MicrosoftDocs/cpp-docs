@@ -51,7 +51,7 @@ Use this page of the MFC ActiveX Control Wizard to design and add basic features
   
 -   The file .vcxproj contains code to build and configure the help file when the project is built.  
   
--   The file *projnamePropPage*.cpp file includes a [SetHelpInfo](../../mfc/reference/colepropertypage-class.md#sethelpinfo) function in the constructor.  
+-   The file *projnamePropPage*.cpp file includes a [SetHelpInfo](../../mfc/reference/colepropertypage-class.md#colepropertypage__sethelpinfo) function in the constructor.  
   
 -   The file projname.hpj, is the help project file used by the help compiler to create the ActiveX control's help file. The .hpj file is a text file containing the information about building your help file and the paths to the additional files (for example, bitmaps) the help file includes.  
   

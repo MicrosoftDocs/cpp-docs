@@ -81,7 +81,7 @@ struct _ATL_BASE_MODULE70 {
  Array used to search for resources in all the resource instances of which ATL is aware. Used internally by ATL.  
   
 ## Remarks  
- [_ATL_BASE_MODULE](../Topic/_ATL_BASE_MODULE.md) is defined as a typedef of `_ATL_BASE_MODULE70`.  
+ [_ATL_BASE_MODULE](atl-typedefs.md#-atl_base_module) is defined as a typedef of `_ATL_BASE_MODULE70`.  
   
 ## Requirements  
  **Header:** atlcore.h  
