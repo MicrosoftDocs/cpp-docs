@@ -107,7 +107,7 @@ CFileException(
  Points to a string containing the name of the `CFile` object causing the exception.  
   
 ### Remarks  
- Do not use this constructor directly, but rather call the global function [AfxThrowFileException]--brokenlink--(../Topic/not%20found.md#afxthrowfileexception).  
+ Do not use this constructor directly, but rather call the global function [AfxThrowFileException](exception-processing.md#afxthrowfileexception).  
   
 > [!NOTE]
 >  The variable `lOsError` applies only to `CFile` and `CStdioFile` objects. The `CMemFile` class does not handle this error code.  

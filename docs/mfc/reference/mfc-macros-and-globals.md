@@ -80,7 +80,7 @@ The Microsoft Foundation Class Library can be divided into two major sections: (
   
 -   [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md)  
   
--   [CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration](../../mfc/reference/cmfcimagepaintarea-class.md#image_edit_mode%20enumeration)  
+-   [CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration](../../mfc/reference/cmfcimagepaintarea-class.md#image_edit_mode_enumeration)  
   
 ## Database  
   

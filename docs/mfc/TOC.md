@@ -426,7 +426,7 @@
 ##### [Creating Modal Dialog Boxes](creating-modal-dialog-boxes.md)
 ##### [Creating Modeless Dialog Boxes](creating-modeless-dialog-boxes.md)
 ##### [Using a Dialog Template in Memory](using-a-dialog-template-in-memory.md)
-##### [Setting the Dialog Box’s Background Color](setting-the-dialog-box’s-background-color.md)
+##### [Setting the Dialog Box’s Background Color](setting-the-dialog-boxs-background-color.md)
 ##### [Initializing the Dialog Box](initializing-the-dialog-box.md)
 ##### [Handling Windows Messages in Your Dialog Box](handling-windows-messages-in-your-dialog-box.md)
 ##### [Retrieving Data from the Dialog Object](retrieving-data-from-the-dialog-object.md)

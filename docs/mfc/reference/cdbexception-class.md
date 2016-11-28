@@ -164,7 +164,6 @@ class CDBException : public CException
  [CDatabase Class](../../mfc/reference/cdatabase-class.md)   
  [CRecordset Class](../../mfc/reference/crecordset-class.md)   
  [CFieldExchange Class](../../mfc/reference/cfieldexchange-class.md)   
- [AfxThrowDBException]--brokenlink--(../Topic/not%20found.md#afxthrowdbexception)   
  [CRecordset::Update](../../mfc/reference/crecordset-class.md#crecordset__update)   
  [CRecordset::Delete](../../mfc/reference/crecordset-class.md#crecordset__delete)   
  [CException Class](../../mfc/reference/cexception-class.md)

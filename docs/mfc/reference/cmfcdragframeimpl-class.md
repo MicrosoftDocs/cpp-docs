@@ -46,7 +46,7 @@ class CMFCDragFrameImpl
 ## Remarks  
  An object of this class is embedded in each [CPane Class](../../mfc/reference/cpane-class.md) object. Thus, each pane that uses the `CanFloat` method displays a drag rectangle when the user drags it.  
   
- You can control the thickness of the drag rectangle by using [AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat]--brokenlink--(../Topic/AFX_GLOBAL_DATA%20Class.md#afx_global_data__m_ndragframethicknessfloat) and [AFX_GLOBAL_DATA::m_nDragFrameThicknessDock]--brokenlink--(../Topic/AFX_GLOBAL_DATA%20Class.md#afx_global_data__m_ndragframethicknessdock).  
+ You can control the thickness of the drag rectangle by using [AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat]--brokenlink--(../Topic/AFX_GLOBAL_DATA-class.md#afx_global_data__m_ndragframethicknessfloat) and [AFX_GLOBAL_DATA::m_nDragFrameThicknessDock]--brokenlink--(../Topic/AFX_GLOBAL_DATA-class.md#afx_global_data__m_ndragframethicknessdock).  
   
 ## Inheritance Hierarchy  
  [CMFCDragFrameImpl](../../mfc/reference/cmfcdragframeimpl-class.md)  

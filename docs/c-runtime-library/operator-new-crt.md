@@ -83,7 +83,7 @@ void *__cdecl operator new(
   
  You can configure whether operator new returns null or throws an exception on failure. See [The new and delete Operators](../cpp/new-and-delete-operators.md) for more information.  
   
- With the exception of throwing or no-throwing behavior, the CRT `operator new` behaves like [operator new](../Topic/operator%20new%20\(%3Cnew%3E\).md) in the Standard C++ Library.  
+ With the exception of throwing or no-throwing behavior, the CRT `operator new` behaves like [operator new](../standard-library/new-operators.md#operator_new) in the Standard C++ Library.  
   
 ## Requirements  
   

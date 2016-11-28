@@ -247,12 +247,12 @@ class CListCtrl : public CWnd
 ## Items and Subitems  
  Each item in a list view control consists of an icon (from an image list), a label, a current state, and an application-defined value (referred to as "item data"). One or more subitems can also be associated with each item. A "subitem" is a string that, in report view, can be displayed in a column to the right of an item's icon and label. All items in a list view control must have the same number of subitems.  
   
- Class **CListCtrl** provides several functions for inserting, deleting, finding, and modifying these items. For more information, see [CListCtrl::GetItem](#clistctrl__getitem), [CListCtrl::InsertItem](#clistctrl__insertitem), and [CListCtrl::FindItem](#clistctrl__finditem), [Using CListCtrl: Adding Items to the Control](../topic/clistctrl%20class.md#not_found.md#adding_items_to_the_control, and [using clistctrl_ scrolling, arranging, sorting, and finding in list controls]--brokenlink--(../topic/scrolling,_arranging,_sorting,_and_finding_in_list_controls).  
+ Class **CListCtrl** provides several functions for inserting, deleting, finding, and modifying these items. For more information, see [CListCtrl::GetItem](#clistctrl__getitem), [CListCtrl::InsertItem](#clistctrl__insertitem), and [CListCtrl::FindItem](#clistctrl__finditem), [Using CListCtrl: Adding Items to the Control](clistctrl-class.md#not_found.md#adding_items_to_the_control), and [Using CListCtrl: Scrolling, Arranging, Sorting, and Finding in list controls](../scrolling-arranging-sorting-and-finding-in-list-controls.md).  
   
- By default, the list view control is responsible for storing an item's icon and text attributes. However, in addition to these item types, class `CListCtrl` supports "callback items." A "callback item" is a list view item for which the application — rather than the control — stores the text, icon, or both. A callback mask is used to specify which item attributes (text and/or icon) are supplied by the application. If an application uses callback items, it must be able to supply the text and/or icon attributes on demand. Callback items are helpful when your application already maintains some of this information. For more information, see [Using CListCtrl: Callback Items and the Callback Mask](../topic/callback%20items%20and%20the%20callback%20mask.md).  
+ By default, the list view control is responsible for storing an item's icon and text attributes. However, in addition to these item types, class `CListCtrl` supports "callback items." A "callback item" is a list view item for which the application — rather than the control — stores the text, icon, or both. A callback mask is used to specify which item attributes (text and/or icon) are supplied by the application. If an application uses callback items, it must be able to supply the text and/or icon attributes on demand. Callback items are helpful when your application already maintains some of this information. For more information, see [Using CListCtrl: Callback Items and the Callback Mask](../callback-items-and-the-callback-mask.md).  
   
 ## Image Lists  
- The icons, header item images, and application– defined states for list view items are contained in several image lists (implemented by class [CImageList](../topic/cimagelist%20class.md)), which you create and assign to the list view control. Each list view control can have up to four different types of image lists:  
+ The icons, header item images, and application– defined states for list view items are contained in several image lists (implemented by class [CImageList](cimagelist-class.md)), which you create and assign to the list view control. Each list view control can have up to four different types of image lists:  
   
 -   Large icon  
   
@@ -270,14 +270,14 @@ class CListCtrl : public CWnd
   
      Used in the report view for small images that appear in each header control item.  
   
- By default, a list view control destroys the image lists assigned to it when it is destroyed; however, the developer can customize this behavior by destroying each image list when it is no longer used, as determined by the application. For more information, see [Using CListCtrl: List Items and Image Lists](../topic/list%20items%20and%20image%20lists.md).  
+ By default, a list view control destroys the image lists assigned to it when it is destroyed; however, the developer can customize this behavior by destroying each image list when it is no longer used, as determined by the application. For more information, see [Using CListCtrl: List Items and Image Lists](../list-items-and-image-lists.md).  
   
 ## Inheritance Hierarchy  
- [CObject](../topic/cobject%20class.md)  
+ [CObject](cobject-class.md)  
   
- [CCmdTarget](../topic/ccmdtarget%20class.md)  
+ [CCmdTarget](ccmdtarget-class.md)  
   
- [CWnd](../topic/cwnd%20class.md)  
+ [CWnd](cwnd-class.md)  
   
  `CListCtrl`  
   
@@ -784,7 +784,7 @@ CEdit* GetEditControl() const;
 ```  
   
 ### Return Value  
- If successful, a pointer to the [CEdit](../topic/cedit%20class.md) object that is used to edit the item text; otherwise **NULL**.  
+ If successful, a pointer to the [CEdit](cedit-class.md) object that is used to edit the item text; otherwise **NULL**.  
   
 ### Example  
  <!-- FIXME [!CODE [NVC_MFC_CListCtrl#14](../codesnippet/vs_snippets_cpp/nvc_mfc_clistctrl#14)] -->  
@@ -799,7 +799,7 @@ CString GetEmptyText() const;
 ```  
   
 ### Return Value  
- A [CString](../topic/using%20cstring.md) that contains the text to display if the control is empty.  
+ A [CString](../using-cstring.md) that contains the text to display if the control is empty.  
   
 ### Remarks  
  This method sends the [LVM_GETEMPTYTEXT](http://msdn.microsoft.com/library/windows/desktop/bb774921) message, which is described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
@@ -1638,7 +1638,7 @@ BOOL GetSubItemRect(
 - `LVIR_LABEL` Returns the bounding rectangle of the entire item, including the icon and label. This is identical to `LVIR_BOUNDS`.  
   
  `ref`  
- Reference to a [CRect](../topic/crect%20class.md) object that contains the coordinates of the subitem's bounding rectangle.  
+ Reference to a [CRect](crect-class.md) object that contains the coordinates of the subitem's bounding rectangle.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -1724,7 +1724,7 @@ CToolTipCtrl* GetToolTips() const;
 ```  
   
 ### Return Value  
- A pointer to a [CToolTipCtrl](../topic/ctooltipctrl%20class.md) object to be used by the list control. If the [Create](#clistctrl__create) member function uses the style **LVS_NOTOOLTIPS**, no tooltips are used, and **NULL** is returned.  
+ A pointer to a [CToolTipCtrl](ctooltipctrl-class.md) object to be used by the list control. If the [Create](#clistctrl__create) member function uses the style **LVS_NOTOOLTIPS**, no tooltips are used, and **NULL** is returned.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [LVM_GETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb761085), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)]. The MFC implementation of `GetToolTips` returns a `CToolTipCtrl` object, which is used by the list control, rather than a handle to a tooltip control.  
@@ -1797,7 +1797,7 @@ void GetWorkAreas(
  The number of `RECT` structures contained in the *prc* array.  
   
  `prc`  
- A pointer to an array of `RECT` structures (or [CRect](../topic/crect%20class.md) objects) that receive the working areas of the list view control. Values in these structures are in client coordinates.  
+ A pointer to an array of `RECT` structures (or [CRect](crect-class.md) objects) that receive the working areas of the list view control. Values in these structures are in client coordinates.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 macro, [ListView_GetWorkAreas](http://msdn.microsoft.com/library/windows/desktop/bb775024), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
@@ -2551,7 +2551,7 @@ CSize SetIconSpacing(
  A `CSize` object specifying the distance (in pixels) between icons on the x- and y-axes.  
   
 ### Return Value  
- A [CSize](../topic/csize%20class.md) object containing the previous values for icon spacing.  
+ A [CSize](csize-class.md) object containing the previous values for icon spacing.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 macro, [ListView_SetIconSpacing](http://msdn.microsoft.com/library/windows/desktop/bb775085), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
@@ -3045,7 +3045,7 @@ CToolTipCtrl* SetToolTips(CToolTipCtrl* pWndTip);
  A pointer to a `CToolTipCtrl` object that the list control will use.  
   
 ### Return Value  
- A pointer to a [CToolTipCtrl](../topic/ctooltipctrl%20class.md) object containing the tooltip previously used by the control, or `NULL` if no tooltips were used previously.  
+ A pointer to a [CToolTipCtrl](ctooltipctrl-class.md) object containing the tooltip previously used by the control, or `NULL` if no tooltips were used previously.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [LVM_SETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb761216), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
@@ -3080,7 +3080,7 @@ void SetWorkAreas(
   
 ### Parameters  
  `nWorkAreas`  
- The number of `RECT` structures (or [CRect](../topic/crect%20class.md) objects) in the array pointed to by `lpRect`.  
+ The number of `RECT` structures (or [CRect](crect-class.md) objects) in the array pointed to by `lpRect`.  
   
  `lpRect`  
  The address of an array of `RECT` structures (or `CRect` objects) that specify the new work areas of the list view control. These areas must be specified in client coordinates. If this parameter is **NULL**, the working area will be set to the client area of the control.  
@@ -3248,7 +3248,7 @@ BOOL Update(int nItem);
   See the example for [CListCtrl::GetSelectedCount](#clistctrl__getselectedcount).  
   
 ## See Also  
- [MFC Sample ROWLIST](../topic/visual%20c++%20samples.md)   
- [CWnd Class](../topic/cwnd%20class.md)   
- [Hierarchy Chart](../topic/hierarchy%20chart.md)   
- [CImageList Class](../topic/cimagelist%20class.md)
+ [MFC Sample ROWLIST](../../top/visual-cpp-samples.md)   
+ [CWnd Class](..cwnd-class.md)   
+ [Hierarchy Chart](../hierarchy-chart.md)   
+ [CImageList Class](cimagelist-class.md)

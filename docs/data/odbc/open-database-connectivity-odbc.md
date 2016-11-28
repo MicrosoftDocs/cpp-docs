@@ -79,7 +79,7 @@ The Microsoft Foundation Classes (MFC) library supplies classes for programming 
   
 -   [Fetching Records in Bulk](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)  
   
--   [Customizing my Recordset's SQL Statement](../../data/odbc/sql-customizing-your-recordset’s-sql-statement-odbc.md)  
+-   [Customizing my Recordset's SQL Statement](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)  
   
 -   [Making Direct SQL Calls](../../data/odbc/sql-making-direct-sql-calls-odbc.md)  
   

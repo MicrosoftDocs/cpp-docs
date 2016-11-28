@@ -67,7 +67,7 @@ When a program executes, a number of abnormal conditions and errors called "exce
 |[AND_CATCH_ALL](#and_catch_all)|Designates a block of code for catching all other additional exception types thrown in a preceding **TRY** block.|  
 |[END_CATCH](#end_catch)|Ends the last **CATCH** or `AND_CATCH` code block.|  
 |[END_CATCH_ALL](#end_catch_all)|Ends the last `CATCH_ALL` code block.|  
-|[THROW](#throw_mfc_)|Throws a specified exception.|  
+|[THROW](#throw)|Throws a specified exception.|  
 |[THROW_LAST](#throw_last)|Throws the currently handled exception to the next outer handler.|  
   
 ### Exception-Throwing Functions  
@@ -235,7 +235,7 @@ END_CATCH
 END_CATCH_ALL  
 ```  
   
-##  <a name="throw__mfc_"></a>  THROW (MFC)  
+##  <a name="throw"></a>  THROW (MFC)  
  Throws the specified exception.  
   
 ```   

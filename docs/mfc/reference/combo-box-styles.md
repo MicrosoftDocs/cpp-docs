@@ -91,7 +91,7 @@ The following combo-box styles are available in MFC.
   
 ## See Also  
  [Styles Used by MFC](../../mfc/reference/styles-used-by-mfc.md)   
- [CComboBox::Create](../Topic/CComboBox%20Class.md#ccombobox__create   
+ [CComboBox::Create](../Topic/CComboBox-class.md#ccombobox__create   
 
 
 

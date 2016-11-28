@@ -72,19 +72,19 @@ The Microsoft Foundation Class (MFC) Library provides an object-oriented wrapper
  [Customization for MFC](customization-for-mfc.md)  
  Provides some tips for customizing your MFC application.  
   
- [Classes](mfc-classes.md)  
+ [Classes](reference/mfc-classes.md)  
  Provides links to and header file information for the MFC classes.  
   
- [Internal Classes](internal-classes.md)  
+ [Internal Classes](reference/internal-classes.md)  
  Used internally in MFC. For completeness, this section describes these internal classes, but they are not intended to be used directly in your code.  
   
- [Macros and Globals](mfc-macros-and-globals.md)  
+ [Macros and Globals](reference/mfc-macros-and-globals.md)  
  Provides links to the macros and global functions in the MFC Library.  
   
- [Structures, Styles, Callbacks, and Message Maps](structures-styles-callbacks-and-message-maps.md)  
+ [Structures, Styles, Callbacks, and Message Maps](reference/structures-styles-callbacks-and-message-maps.md)  
  Provides links to the structures, styles, callbacks, and message maps used by the MFC Library.  
   
- [MFC Wizards and Dialog Boxes](mfc-wizards-and-dialog-boxes.md)  
+ [MFC Wizards and Dialog Boxes](reference/mfc-wizards-and-dialog-boxes.md)  
  A guide to the features in Visual Studio for creating MFC applications.  
   
  [Working with Resource Files](working-with-resource-files.md)  

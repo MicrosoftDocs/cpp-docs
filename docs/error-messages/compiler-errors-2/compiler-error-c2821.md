@@ -37,7 +37,7 @@ translation.priority.ht:
 # Compiler Error C2821
 first formal parameter to 'operator new' must be 'unsigned int'  
   
- The first formal parameter of the [operator new](../Topic/operator%20new%20\(%3Cnew%3E\).md) must be an unsigned `int`.  
+ The first formal parameter of the [operator new](../standard-library/new-operators.md#operator_new) must be an unsigned `int`.  
   
  The following sample generates C2821:  
   

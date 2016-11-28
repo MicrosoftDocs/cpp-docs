@@ -1211,7 +1211,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  [CSplitterWnd Class](../../mfc/reference/csplitterwnd-class.md)  
  Provides the functionality of a splitter window, which is a window that contains multiple panes.  
   
- [CSplitterWndEx Class](../topic/csplitterwndex%20class.md)  
+ [CSplitterWndEx Class](../topic/csplitterwndex-class.md)  
  Represents a customized splitter window.  
   
  [CStatic Class](../../mfc/reference/cstatic-class.md)  
