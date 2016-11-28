@@ -108,7 +108,7 @@ This document demonstrates how to use the Concurrency Runtime in an application 
  [!code-cpp[concrt-parallel-scripts#8](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_8.cpp)]  
   
 ### Calling the Script from the PPL  
- The following function, `ParallelFibonacci`, uses the [concurrency::parallel_for](concurrency-namespace-functions.md#parallel_for_function) algorithm to call the script in parallel. This function uses the `CCoInitializer` class to manage the lifetime of the COM library during every iteration of the task.  
+ The following function, `ParallelFibonacci`, uses the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for_function) algorithm to call the script in parallel. This function uses the `CCoInitializer` class to manage the lifetime of the COM library during every iteration of the task.  
   
  [!code-cpp[concrt-parallel-scripts#9](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_9.cpp)]  
   

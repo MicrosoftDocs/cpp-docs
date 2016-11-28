@@ -168,7 +168,7 @@ This document demonstrates how to use the Concurrency Runtime to move the work t
  [[Top](#top)]  
   
 ##  <a name="performance"></a> Improving Drawing Performance  
- The generation of the Mandelbrot fractal is a good candidate for parallelization because the computation of each pixel is independent of all other computations. To parallelize the drawing procedure, convert the outer `for` loop in the `CChildView::DrawMandelbrot` method to a call to the [concurrency::parallel_for](concurrency-namespace-functions.md#parallel_for_function) algorithm, as follows.  
+ The generation of the Mandelbrot fractal is a good candidate for parallelization because the computation of each pixel is independent of all other computations. To parallelize the drawing procedure, convert the outer `for` loop in the `CChildView::DrawMandelbrot` method to a call to the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for_function) algorithm, as follows.  
   
  [!code-cpp[concrt-mandelbrot#301](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_14.cpp)]  
   

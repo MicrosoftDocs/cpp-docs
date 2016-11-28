@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Perform Map and Reduce Operations in Parallel
-This example shows how to use the [concurrency::parallel_transform](concurrency-namespace-functions.md#parallel_transform_function) and [concurrency::parallel_reduce](concurrency-namespace-functions.md#parallel_reduce_function) algorithms and the [concurrency::concurrent_unordered_map](../../parallel/concrt/reference/concurrent-unordered-map-class.md) class to count the occurrences of words in files.  
+This example shows how to use the [concurrency::parallel_transform](reference/concurrency-namespace-functions.md#parallel_transform_function) and [concurrency::parallel_reduce](reference/concurrency-namespace-functions.md#parallel_reduce_function) algorithms and the [concurrency::concurrent_unordered_map](../../parallel/concrt/reference/concurrent-unordered-map-class.md) class to count the occurrences of words in files.  
   
  A *map* operation applies a function to each value in a sequence. A *reduce* operation combines the elements of a sequence into one value. You can use the Standard Template Library (STL) [std::transform](http://msdn.microsoft.com/library/99396865-54fb-47dd-a661-38ce03467854)[std::accumulate](../topic/accumulate.md) classes to perform map and reduce operations. However, to improve performance for many problems, you can use the `parallel_transform` algorithm to perform the map operation in parallel and the `parallel_reduce` algorithm to perform the reduce operation in parallel. In some cases, you can use `concurrent_unordered_map` to perform the map and the reduce in one operation.  
   
@@ -58,6 +58,6 @@ This example shows how to use the [concurrency::parallel_transform](concurrency-
   
 ## See Also  
  [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)   
- [parallel_transform Function](concurrency-namespace-functions.md#parallel_transform_function)   
- [parallel_reduce Function](concurrency-namespace-functions.md#parallel_reduce_function)   
+ [parallel_transform Function](reference/concurrency-namespace-functions.md#parallel_transform_function)   
+ [parallel_reduce Function](reference/concurrency-namespace-functions.md#parallel_reduce_function)   
  [concurrent_unordered_map Class](../../parallel/concrt/reference/concurrent-unordered-map-class.md)

@@ -94,11 +94,11 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 -   A `concurrent_vector` object does not use [move semantics](../../cpp/rvalue-reference-declarator-amp-amp.md) when you append to it.  
   
--   The `concurrent_vector` class does not provide the `erase` or `pop_back` methods. As with `vector`, use the [clear](reference/concurrent_vector-class.md#concurrent_vector__clear_method) method to remove all elements from a `concurrent_vector` object.  
+-   The `concurrent_vector` class does not provide the `erase` or `pop_back` methods. As with `vector`, use the [clear](reference/concurrent-vector-class.md#concurrent_vector__clear_method) method to remove all elements from a `concurrent_vector` object.  
   
 -   The `concurrent_vector` class does not store its elements contiguously in memory. Therefore, you cannot use the `concurrent_vector` class in all the ways that you can use an array. For example, for a variable named `v` of type `concurrent_vector`, the expression `&v[0]+2` produces undefined behavior.  
   
--   The `concurrent_vector` class defines the [grow_by](reference/concurrent_vector-class.md#concurrent_vector__grow_by_method) and [grow_to_at_least](reference/concurrent_vector-class.md#concurrent_vector__grow_to_at_least_method) methods. These methods resemble the [resize](reference/concurrent_vector-class.md#concurrent_vector__resize_method) method, except that they are concurrency-safe.  
+-   The `concurrent_vector` class defines the [grow_by](reference/concurrent-vector-class.md#concurrent_vector__grow_by_method) and [grow_to_at_least](reference/concurrent-vector-class.md#concurrent_vector__grow_to_at_least_method) methods. These methods resemble the [resize](reference/concurrent-vector-class.md#concurrent_vector__resize_method) method, except that they are concurrency-safe.  
   
 -   A `concurrent_vector` object does not relocate its elements when you append to it or resize it. This enables existing pointers and iterators to remain valid during concurrent operations.  
   
@@ -111,19 +111,19 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 ||||  
 |-|-|-|  
-|[at](reference/concurrent_vector-class.md#concurrent_vector__at_method)|[end](reference/concurrent_vector-class.md#concurrent_vector__end_method)|[operator&#91;&#93;](../topic/concurrent_vector::operatoroperator.md)|  
-|[begin](reference/concurrent_vector-class.md#concurrent_vector__begin_method)|[front](reference/concurrent_vector-class.md#concurrent_vector__front_method)|[push_back](reference/concurrent_vector-class.md#concurrent_vector__push_back_method)|  
-|[back](reference/concurrent_vector-class.md#concurrent_vector__back_method)|[grow_by](reference/concurrent_vector-class.md#concurrent_vector__grow_by_method)|[rbegin](reference/concurrent_vector-class.md#concurrent_vector__rbegin_method)|  
-|[capacity](reference/concurrent_vector-class.md#concurrent_vector__capacity_method)|[grow_to_at_least](reference/concurrent_vector-class.md#concurrent_vector__grow_to_at_least_method)|[rend](reference/concurrent_vector-class.md#concurrent_vector__rend_method)|  
-|[empty](reference/concurrent_vector-class.md#concurrent_vector__empty_method)|[max_size](reference/concurrent_vector-class.md#concurrent_vector__max_size_method)|[size](reference/concurrent_vector-class.md#concurrent_vector__size_method)|  
+|[at](reference/concurrent-vector-class.md#concurrent_vector__at_method)|[end](reference/concurrent-vector-class.md#concurrent_vector__end_method)|[operator&#91;&#93;](../topic/concurrent_vector::operatoroperator.md)|  
+|[begin](reference/concurrent-vector-class.md#concurrent_vector__begin_method)|[front](reference/concurrent-vector-class.md#concurrent_vector__front_method)|[push_back](reference/concurrent-vector-class.md#concurrent_vector__push_back_method)|  
+|[back](reference/concurrent-vector-class.md#concurrent_vector__back_method)|[grow_by](reference/concurrent-vector-class.md#concurrent_vector__grow_by_method)|[rbegin](reference/concurrent-vector-class.md#concurrent_vector__rbegin_method)|  
+|[capacity](reference/concurrent-vector-class.md#concurrent_vector__capacity_method)|[grow_to_at_least](reference/concurrent-vector-class.md#concurrent_vector__grow_to_at_least_method)|[rend](reference/concurrent-vector-class.md#concurrent_vector__rend_method)|  
+|[empty](reference/concurrent-vector-class.md#concurrent_vector__empty_method)|[max_size](reference/concurrent-vector-class.md#concurrent_vector__max_size_method)|[size](reference/concurrent-vector-class.md#concurrent_vector__size_method)|  
   
  Operations that the runtime provides for compatibility with the STL, for example, `reserve`, are not concurrency-safe. The following table shows the common methods and operators that are not concurrency-safe.  
   
 |||  
 |-|-|  
-|[assign](reference/concurrent_vector-class.md#concurrent_vector__assign_method)|[reserve](reference/concurrent_vector-class.md#concurrent_vector__reserve_method)|  
-|[clear](reference/concurrent_vector-class.md#concurrent_vector__clear_method)|[resize](reference/concurrent_vector-class.md#concurrent_vector__resize_method)|  
-|[operator=](../topic/concurrent_vector::operator=%20operator.md)|[shrink_to_fit](reference/concurrent_vector-class.md#concurrent_vector__shrink_to_fit_method)|  
+|[assign](reference/concurrent-vector-class.md#concurrent_vector__assign_method)|[reserve](reference/concurrent-vector-class.md#concurrent_vector__reserve_method)|  
+|[clear](reference/concurrent-vector-class.md#concurrent_vector__clear_method)|[resize](reference/concurrent-vector-class.md#concurrent_vector__resize_method)|  
+|[operator=](../topic/concurrent_vector::operator=%20operator.md)|[shrink_to_fit](reference/concurrent-vector-class.md#concurrent_vector__shrink_to_fit_method)|  
   
  Operations that modify the value of existing elements are not concurrency-safe. Use a synchronization object such as a [reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) object to synchronize concurrent read and write operations to the same data element. For more information about synchronization objects, see [Synchronization Data Structures](../../parallel/concrt/synchronization-data-structures.md).  
   
@@ -131,7 +131,7 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
  [!code-cpp[concrt-vector-safety#1](../../parallel/concrt/codesnippet/cpp/parallel-containers-and-objects_1.cpp)]  
   
- Although the `end` method is concurrency-safe, a concurrent call to the [push_back](reference/concurrent_vector-class.md#concurrent_vector__push_back_method) method causes the value that is returned by `end` to change. The number of elements that the iterator traverses is indeterminate. Therefore, this program can produce a different result each time that you run it.  
+ Although the `end` method is concurrency-safe, a concurrent call to the [push_back](reference/concurrent-vector-class.md#concurrent_vector__push_back_method) method causes the value that is returned by `end` to change. The number of elements that the iterator traverses is indeterminate. Therefore, this program can produce a different result each time that you run it.  
   
 ###  <a name="vector-exceptions"></a> Exception Safety  
  If a growth or assignment operation throws an exception, the state of the `concurrent_vector` object becomes invalid. The behavior of a `concurrent_vector` object that is in an invalid state is undefined unless stated otherwise. However, the destructor always frees the memory that the object allocates, even if the object is in an invalid state.  

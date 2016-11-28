@@ -63,7 +63,7 @@ Employee with id 61935 has salary 29905.00.
 No employee has id 899 or salary 31223.00.  
 ```  
   
- This example uses the [concurrency::make_choice](concurrency-namespace-functions.md#make_choice_function) helper function to create `choice` objects and the [concurrency::make_join](concurrency-namespace-functions.md#make_join_function) helper function to create `join` objects.  
+ This example uses the [concurrency::make_choice](reference/concurrency-namespace-functions.md#make_choice_function) helper function to create `choice` objects and the [concurrency::make_join](reference/concurrency-namespace-functions.md#make_join_function) helper function to create `join` objects.  
   
 ## Compiling the Code  
  Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `find-employee.cpp` and then run the following command in a Visual Studio Command Prompt window.  

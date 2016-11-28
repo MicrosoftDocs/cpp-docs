@@ -43,7 +43,7 @@ This document describes how to use the [parallel_invoke](../../parallel/concrt/p
  Although the bitonic sort is an example of a *sorting network* that sorts all combinations of input sequences, this example sorts sequences whose lengths are a power of two.  
   
 > [!NOTE]
->  This example uses a parallel sort routine for illustration. You can also use the built-in sorting algorithms that the PPL provides: [concurrency::parallel_sort](concurrency-namespace-functions.md#parallel_sort_function), [concurrency::parallel_buffered_sort](concurrency-namespace-functions.md#parallel_buffered_sort_function), and [concurrency::parallel_radixsort](concurrency-namespace-functions.md#parallel_radixsort_function). For more information, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
+>  This example uses a parallel sort routine for illustration. You can also use the built-in sorting algorithms that the PPL provides: [concurrency::parallel_sort](reference/concurrency-namespace-functions.md#parallel_sort_function), [concurrency::parallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort_function), and [concurrency::parallel_radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort_function). For more information, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
   
 ##  <a name="top"></a> Sections  
  This document describes the following tasks:  
@@ -119,5 +119,5 @@ parallel time: 1248
   
 ## See Also  
  [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)   
- [parallel_invoke Function](concurrency-namespace-functions.md#parallel_invoke_function)
+ [parallel_invoke Function](reference/concurrency-namespace-functions.md#parallel_invoke_function)
 

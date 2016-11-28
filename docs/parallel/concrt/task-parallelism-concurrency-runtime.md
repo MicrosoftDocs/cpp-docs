@@ -42,7 +42,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
  You use tasks when you write asynchronous code and want some operation to occur after the asynchronous operation completes. For example, you could use a task to asynchronously read from a file and then use another task—a *continuation task*, which is explained later in this document—to process the data after it becomes available. Conversely, you can use tasks groups to decompose parallel work into smaller pieces. For example, suppose you have a recursive algorithm that divides the remaining work into two partitions. You can use task groups to run these partitions concurrently, and then wait for the divided work to complete.  
   
 > [!TIP]
->  When you want to apply the same routine to every element of a collection in parallel, use a parallel algorithm, such as [concurrency::parallel_for](concurrency-namespace-functions.md#parallel_for_function), instead of a task or task group. For more information about parallel algorithms, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
+>  When you want to apply the same routine to every element of a collection in parallel, use a parallel algorithm, such as [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for_function), instead of a task or task group. For more information about parallel algorithms, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
   
 ## Key Points  
   
@@ -50,13 +50,13 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
   
 -   Use tasks (the [concurrency::task](../../parallel/concrt/reference/task-class-concurrency-runtime.md) class) when you write asynchronous code. The task class uses the Windows ThreadPool as its scheduler, not the Concurrency Runtime.  
   
--   Use task groups (the [concurrency::task_group](reference/task-group-class.md) class or the [concurrency::parallel_invoke](concurrency-namespace-functions.md#parallel_invoke_function) algorithm) when you want to decompose parallel work into smaller pieces and then wait for those smaller pieces to complete.  
+-   Use task groups (the [concurrency::task_group](reference/task-group-class.md) class or the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke_function) algorithm) when you want to decompose parallel work into smaller pieces and then wait for those smaller pieces to complete.  
   
 -   Use the [concurrency::task::then](reference/task-class.md#task__then_method) method to create continuations. A *continuation* is a task that runs asynchronously after another task completes. You can connect any number of continuations to form a chain of asynchronous work.  
   
 -   A task-based continuation is always scheduled for execution when the antecedent task finishes, even when the antecedent task is canceled or throws an exception.  
   
--   Use [concurrency:: HYPERLINK "http://msdn.microsoft.com/library/system.threading.tasks.task.whenall(v=VS.110).aspx" when_all](concurrency-namespace-functions.md#when_all_function) to create a task that completes after every member of a set of tasks completes. Use [concurrency::when_any](concurrency-namespace-functions.md#when_all_function) to create a task that completes after one member of a set of tasks completes.  
+-   Use [concurrency:: HYPERLINK "http://msdn.microsoft.com/library/system.threading.tasks.task.whenall(v=VS.110).aspx" when_all](reference/concurrency-namespace-functions.md#when_all_function) to create a task that completes after every member of a set of tasks completes. Use [concurrency::when_any](reference/concurrency-namespace-functions.md#when_all_function) to create a task that completes after one member of a set of tasks completes.  
   
 -   Tasks and task groups can participate in the Parallel Patterns Library (PPL) cancellation mechanism. For more information, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl).  
   
@@ -116,7 +116,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
   
  [!code-cpp[concrt-basic-task#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_2.cpp)]  
   
- When you use the [concurrency::create_task](concurrency-namespace-functions.md#create_task_function) function, you can use the `auto` keyword instead of declaring the type. For example, consider this code that creates and prints the identity matrix:  
+ When you use the [concurrency::create_task](reference/concurrency-namespace-functions.md#create_task_function) function, you can use the `auto` keyword instead of declaring the type. For example, consider this code that creates and prints the identity matrix:  
   
  [!code-cpp[concrt-create-task#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_3.cpp)]  
   
@@ -171,7 +171,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
  Given a `task` object whose return type is `T`, you can provide a value of type `T` or `task<T>` to its continuation tasks. A continuation that takes type `T` is known as a *value-based continuation*. A value-based continuation is scheduled for execution when the antecedent task completes without error and is not canceled. A continuation that takes type `task<T>` as its parameter is known as a *task-based continuation*. A task-based continuation is always scheduled for execution when the antecedent task finishes, even when the antecedent task is canceled or throws an exception. You can then call `task::get` to get the result of the antecedent task. If the antecedent task was canceled, `task::get` throws [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md). If the antecedent task threw an exception, `task::get` rethrows that exception. A task-based continuation is not marked as canceled when its antecedent task is canceled.  
   
 ##  <a name="composing-tasks"></a> Composing Tasks  
- This section describes the [concurrency::when_all](concurrency-namespace-functions.md#when_all_function) and [concurrency::when_any](concurrency-namespace-functions.md#when_all_function) functions, which can help you compose multiple tasks to implement common patterns.  
+ This section describes the [concurrency::when_all](reference/concurrency-namespace-functions.md#when_all_function) and [concurrency::when_any](reference/concurrency-namespace-functions.md#when_all_function) functions, which can help you compose multiple tasks to implement common patterns.  
   
 ###  <a name="when-all"></a> The when_all Function  
  The `when_all` function produces a task that completes after a set of tasks complete. This function returns a std::[vector](../../standard-library/vector-class.md) object that contains the result of each task in the set. The following basic example uses `when_all` to create a task that represents the completion of three other tasks.  
@@ -266,7 +266,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
  The PPL divides task groups into these two categories: *unstructured task groups* and *structured task groups*. The PPL uses the `task_group` class to represent unstructured task groups and the `structured_task_group` class to represent structured task groups.  
   
 > [!IMPORTANT]
->  The PPL also defines the [concurrency::parallel_invoke](concurrency-namespace-functions.md#parallel_invoke_function) algorithm, which uses the `structured_task_group` class to execute a set of tasks in parallel. Because the `parallel_invoke` algorithm has a more succinct syntax, we recommend that you use it instead of the `structured_task_group` class when you can. The topic [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md) describes `parallel_invoke` in greater detail.  
+>  The PPL also defines the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke_function) algorithm, which uses the `structured_task_group` class to execute a set of tasks in parallel. Because the `parallel_invoke` algorithm has a more succinct syntax, we recommend that you use it instead of the `structured_task_group` class when you can. The topic [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md) describes `parallel_invoke` in greater detail.  
   
  Use `parallel_invoke` when you have several independent tasks that you want to execute at the same time, and you must wait for all tasks to finish before you continue. This technique is often referred to as *fork and join* parallelism. Use `task_group` when you have several independent tasks that you want to execute at the same time, but you want to wait for the tasks to finish at a later time. For example, you can add tasks to a `task_group` object and wait for the tasks to finish in another function or from another thread.  
   
@@ -285,7 +285,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
   
  If you use one `structured_task_group` object inside another `structured_task_group` object, the inner object must finish and be destroyed before the outer object finishes. The `task_group` class does not require for nested task groups to finish before the outer group finishes.  
   
- Unstructured task groups and structured task groups work with task handles in different ways. You can pass work functions directly to a `task_group` object; the `task_group` object will create and manage the task handle for you. The `structured_task_group` class requires you to manage a `task_handle` object for each task. Every `task_handle` object must remain valid throughout the lifetime of its associated `structured_task_group` object. Use the [concurrency::make_task](concurrency-namespace-functions.md#make_task_function) function to create a `task_handle` object, as shown in the following basic example:  
+ Unstructured task groups and structured task groups work with task handles in different ways. You can pass work functions directly to a `task_group` object; the `task_group` object will create and manage the task handle for you. The `structured_task_group` class requires you to manage a `task_handle` object for each task. Every `task_handle` object must remain valid throughout the lifetime of its associated `structured_task_group` object. Use the [concurrency::make_task](reference/concurrency-namespace-functions.md#make_task_function) function to create a `task_handle` object, as shown in the following basic example:  
   
  [!code-cpp[concrt-make-task-structure#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_16.cpp)]  
   
@@ -328,12 +328,12 @@ Message from task: 42
   
  [task_completion_event Class](../../parallel/concrt/reference/task-completion-event-class.md)  
   
- [when_all Function](concurrency-namespace-functions.md#when_all_function)  
+ [when_all Function](reference/concurrency-namespace-functions.md#when_all_function)  
   
- [when_any Function](concurrency-namespace-functions.md#when_any_function)  
+ [when_any Function](reference/concurrency-namespace-functions.md#when_any_function)  
   
  [task_group Class](reference/task-group-class.md)  
   
- [parallel_invoke Function](concurrency-namespace-functions.md#parallel_invoke_function)  
+ [parallel_invoke Function](reference/concurrency-namespace-functions.md#parallel_invoke_function)  
   
  [structured_task_group Class](../../parallel/concrt/reference/structured-task-group-class.md)

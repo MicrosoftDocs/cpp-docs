@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Asynchronous Message Blocks
-The Agents Library provides several message-block types that enable you to propagate messages among application components in a thread-safe manner. These message-block types are often used with the various message-passing routines, such as [concurrency::send](reference/concurrency-namespace-functions.md#send_function), [concurrency::asend](reference/concurrency-namespace-functions.md#asend_function), [concurrency::receive](reference/concurrency-namespace-functions.md#receive_function), and [concurrency::try_receive](concurrency-namespace-functions.md#try_receive_function). For more information about the message passing routines that are defined by the Agents Library, see [Message Passing Functions](../../parallel/concrt/message-passing-functions.md).  
+The Agents Library provides several message-block types that enable you to propagate messages among application components in a thread-safe manner. These message-block types are often used with the various message-passing routines, such as [concurrency::send](reference/concurrency-namespace-functions.md#send_function), [concurrency::asend](reference/concurrency-namespace-functions.md#asend_function), [concurrency::receive](reference/concurrency-namespace-functions.md#receive_function), and [concurrency::try_receive](reference/concurrency-namespace-functions.md#try_receive_function). For more information about the message passing routines that are defined by the Agents Library, see [Message Passing Functions](../../parallel/concrt/message-passing-functions.md).  
   
 ##  <a name="top"></a> Sections  
  This topic contains the following sections:  
@@ -246,7 +246,7 @@ The Agents Library provides several message-block types that enable you to propa
  The order in which you link sources to a `choice` object is important because it can determine which message is selected. For example, consider the case where you link multiple message buffers that already contain a message to a `choice` object. The `choice` object selects the message from the first source that it is linked to. After you link all sources, the `choice` object preserves the order in which each source receives a message.  
   
 ### Example  
- The following example shows the basic structure of how to work with the `choice` class. This example uses the [concurrency::make_choice](concurrency-namespace-functions.md#make_choice_function) function to create a `choice` object that selects among three message blocks. The example then computes various Fibonacci numbers and stores each result in a different message block. The example then prints to the console a message that is based on the operation that finished first.  
+ The following example shows the basic structure of how to work with the `choice` class. This example uses the [concurrency::make_choice](reference/concurrency-namespace-functions.md#make_choice_function) function to create a `choice` object that selects among three message blocks. The example then computes various Fibonacci numbers and stores each result in a different message block. The example then prints to the console a message that is based on the operation that finished first.  
   
  [!code-cpp[concrt-choice-structure#1](../../parallel/concrt/codesnippet/cpp/asynchronous-message-blocks_6.cpp)]  
   
@@ -258,7 +258,7 @@ fib35 received its value first. Result = 9227465
   
  Because the task that computes the 35<sup>th</sup> Fibonacci number is not guaranteed to finish first, the output of this example can vary.  
   
- This example uses the [concurrency::parallel_invoke](concurrency-namespace-functions.md#parallel_invoke_function) algorithm to compute the Fibonacci numbers in parallel. For more information about `parallel_invoke`, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
+ This example uses the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke_function) algorithm to compute the Fibonacci numbers in parallel. For more information about `parallel_invoke`, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
   
  For a complete example that shows how to use the `choice` class, see [How to: Select Among Completed Tasks](../../parallel/concrt/how-to-select-among-completed-tasks.md).  
   
@@ -277,7 +277,7 @@ fib35 received its value first. Result = 9227465
  Greedy joins perform better than non-greedy joins because they accept messages immediately. However, in rare cases, greedy joins can lead to deadlocks. Use a non-greedy join when you have multiple joins that contain one or more shared source objects.  
   
 ### Example  
- The following example shows the basic structure of how to work with the `join` class. This example uses the [concurrency::make_join](concurrency-namespace-functions.md#make_join_function) function to create a `join` object that receives from three `single_assignment` objects. This example computes various Fibonacci numbers, stores each result in a different `single_assignment` object, and then prints to the console each result that the `join` object holds. This example is similar to the example for the `choice` class, except that the `join` class waits for all source message blocks to receive a message.  
+ The following example shows the basic structure of how to work with the `join` class. This example uses the [concurrency::make_join](reference/concurrency-namespace-functions.md#make_join_function) function to create a `join` object that receives from three `single_assignment` objects. This example computes various Fibonacci numbers, stores each result in a different `single_assignment` object, and then prints to the console each result that the `join` object holds. This example is similar to the example for the `choice` class, except that the `join` class waits for all source message blocks to receive a message.  
   
  [!code-cpp[concrt-join-structure#1](../../parallel/concrt/codesnippet/cpp/asynchronous-message-blocks_7.cpp)]  
   
@@ -287,7 +287,7 @@ fib35 received its value first. Result = 9227465
 fib35 = 9227465fib37 = 24157817half_of_fib42 = 1.33957e+008  
 ```  
   
- This example uses the [concurrency::parallel_invoke](concurrency-namespace-functions.md#parallel_invoke_function) algorithm to compute the Fibonacci numbers in parallel. For more information about `parallel_invoke`, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
+ This example uses the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke_function) algorithm to compute the Fibonacci numbers in parallel. For more information about `parallel_invoke`, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
   
  For complete examples that show how to use the `join` class, see [How to: Select Among Completed Tasks](../../parallel/concrt/how-to-select-among-completed-tasks.md) and [Walkthrough: Using join to Prevent Deadlock](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md).  
   

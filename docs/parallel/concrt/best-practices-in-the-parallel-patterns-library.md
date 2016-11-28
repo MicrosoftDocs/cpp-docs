@@ -79,7 +79,7 @@ This document describes how best to make effective use of the Parallel Patterns 
   
  [!code-cpp[concrt-image-processing-filter#20](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_2.cpp)]  
   
- Because each loop iteration is independent, you can parallelize much of the work, as shown in the following example. This example uses the [concurrency::parallel_for](concurrency-namespace-functions.md#parallel_for_function) algorithm to parallelize the outer loop.  
+ Because each loop iteration is independent, you can parallelize much of the work, as shown in the following example. This example uses the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for_function) algorithm to parallelize the outer loop.  
   
  [!code-cpp[concrt-image-processing-filter#3](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_3.cpp)]  
   
@@ -89,7 +89,7 @@ This document describes how best to make effective use of the Parallel Patterns 
   
  If each iteration of the parallel loop either performs almost no work, or the work that is performed by the parallel loop is imbalanced, that is, some loop iterations take longer than others, the scheduling overhead that is required to frequently fork and join work can outweigh the benefit to parallel execution. This overhead increases as the number of processors increases.  
   
- To reduce the amount of scheduling overhead in this example, you can parallelize outer loops before you parallelize inner loops or use another parallel construct such as pipelining. The following example modifies the `ProcessImages` function to use the [concurrency::parallel_for_each](concurrency-namespace-functions.md#parallel_for_each_function) algorithm to parallelize the outer loop.  
+ To reduce the amount of scheduling overhead in this example, you can parallelize outer loops before you parallelize inner loops or use another parallel construct such as pipelining. The following example modifies the `ProcessImages` function to use the [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each_function) algorithm to parallelize the outer loop.  
   
  [!code-cpp[concrt-image-processing-filter#22](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_5.cpp)]  
   
@@ -98,7 +98,7 @@ This document describes how best to make effective use of the Parallel Patterns 
  [[Top](#top)]  
   
 ##  <a name="divide-and-conquer"></a> Use parallel_invoke to Solve Divide-and-Conquer Problems  
- A *divide-and-conquer* problem is a form of the fork-join construct that uses recursion to break a task into subtasks. In addition to the [concurrency::task_group](reference/task-group-class.md) and [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) classes, you can also use the [concurrency::parallel_invoke](concurrency-namespace-functions.md#parallel_invoke_function) algorithm to solve divide-and-conquer problems. The `parallel_invoke` algorithm has a more succinct syntax than task group objects, and is useful when you have a fixed number of parallel tasks.  
+ A *divide-and-conquer* problem is a form of the fork-join construct that uses recursion to break a task into subtasks. In addition to the [concurrency::task_group](reference/task-group-class.md) and [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) classes, you can also use the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke_function) algorithm to solve divide-and-conquer problems. The `parallel_invoke` algorithm has a more succinct syntax than task group objects, and is useful when you have a fixed number of parallel tasks.  
   
  The following example illustrates the use of the `parallel_invoke` algorithm to implement the bitonic sorting algorithm.  
   
@@ -152,7 +152,7 @@ Container 1: Freeing resources...Exiting program...
   
  This code example contains the following issues that may cause it to behave differently than you expect:  
   
--   The cancellation of the parent task causes the child task, the call to [concurrency::parallel_invoke](concurrency-namespace-functions.md#parallel_invoke_function), to also be canceled. Therefore, these two resources are not freed.  
+-   The cancellation of the parent task causes the child task, the call to [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke_function), to also be canceled. Therefore, these two resources are not freed.  
   
 -   The cancellation of the parent task causes the child task to throw an internal exception. Because the `Container` destructor does not handle this exception, the exception is propagated upward and the third resource is not freed.  
   
@@ -163,7 +163,7 @@ Container 1: Freeing resources...Exiting program...
  [[Top](#top)]  
   
 ##  <a name="repeated-blocking"></a> Do Not Block Repeatedly in a Parallel Loop  
- A parallel loop such as [concurrency::parallel_for](concurrency-namespace-functions.md#parallel_for_function) or [concurrency::parallel_for_each](concurrency-namespace-functions.md#parallel_for_each_function) that is dominated by blocking operations may cause the runtime to create many threads over a short time.  
+ A parallel loop such as [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for_function) or [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each_function) that is dominated by blocking operations may cause the runtime to create many threads over a short time.  
   
  The Concurrency Runtime performs additional work when a task finishes or cooperatively blocks or yields. When one parallel loop iteration blocks, the runtime might begin another iteration. When there are no available idle threads, the runtime creates a new thread.  
   
@@ -197,7 +197,7 @@ Container 1: Freeing resources...Exiting program...
 ##  <a name="shared-writes"></a> Do Not Write to Shared Data in a Parallel Loop  
  The Concurrency Runtime provides several data structures, for example, [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md), that synchronize concurrent access to shared data. These data structures are useful in many cases, for example, when multiple tasks infrequently require shared access to a resource.  
   
- Consider the following example that uses the [concurrency::parallel_for_each](concurrency-namespace-functions.md#parallel_for_each_function) algorithm and a `critical_section` object to compute the count of prime numbers in a [std::array](../../standard-library/array-class-stl.md) object. This example does not scale because each thread must wait to access the shared variable `prime_sum`.  
+ Consider the following example that uses the [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each_function) algorithm and a `critical_section` object to compute the count of prime numbers in a [std::array](../../standard-library/array-class-stl.md) object. This example does not scale because each thread must wait to access the shared variable `prime_sum`.  
   
  [!code-cpp[concrt-parallel-sum-of-primes#2](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_15.cpp)]  
   

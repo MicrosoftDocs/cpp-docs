@@ -56,7 +56,7 @@ The Asynchronous Agents Library provides several functions that let you pass mes
  [[Top](#top)]  
   
 ##  <a name="receive"></a> receive and try_receive  
- The [concurrency::receive](reference/concurrency-namespace-functions.md#receive_function) and [concurrency::try_receive](concurrency-namespace-functions.md#try_receive_function) functions read data from a given source. The `receive` function waits for data to become available, whereas the `try_receive` function returns immediately.  
+ The [concurrency::receive](reference/concurrency-namespace-functions.md#receive_function) and [concurrency::try_receive](reference/concurrency-namespace-functions.md#try_receive_function) functions read data from a given source. The `receive` function waits for data to become available, whereas the `try_receive` function returns immediately.  
   
  Use the `receive` function when you must have the data to continue. Use the `try_receive` function if you must not block the current context or you do not have to have the data to continue.  
   
@@ -87,5 +87,5 @@ The Asynchronous Agents Library provides several functions that let you pass mes
  [send Function](reference/concurrency-namespace-functions.md#send_function)   
  [asend Function](reference/concurrency-namespace-functions.md#asend_function)   
  [receive Function](reference/concurrency-namespace-functions.md#receive_function)   
- [try_receive Function](concurrency-namespace-functions.md#try_receive_function)
+ [try_receive Function](reference/concurrency-namespace-functions.md#try_receive_function)
 

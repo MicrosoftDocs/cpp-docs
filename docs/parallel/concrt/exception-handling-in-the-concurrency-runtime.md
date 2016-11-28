@@ -93,7 +93,7 @@ The Concurrency Runtime uses C++ exception handling to communicate many kinds of
  [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) is an important runtime exception type that relates to `task`. The runtime throws `task_canceled` when you call `task::get` and that task is canceled. (Conversely, `task::wait` returns [task_status::canceled](../topic/task_group_status%20enumeration.md) and does not throw.) You can catch and handle this exception from a task-based continuation or when you call `task::get`. For more information about task cancellation, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl).  
   
 > [!CAUTION]
->  Never throw `task_canceled` from your code. Call [concurrency::cancel_current_task](concurrency-namespace-functions.md#cancel_current_task_function) instead.  
+>  Never throw `task_canceled` from your code. Call [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task_function) instead.  
   
  The runtime terminates the app if a task throws an exception and that exception is not caught by the task, one of its continuations, or the main app. If your application crashes, you can configure Visual Studio to break when C++ exceptions are thrown. After you diagnose the location of the unhandled exception, use a task-based continuation to handle it.  
   
@@ -102,7 +102,7 @@ The Concurrency Runtime uses C++ exception handling to communicate many kinds of
  [[Top](#top)]  
   
 ##  <a name="task_groups"></a> Task Groups and Parallel Algorithms  
- This section describes how the runtime handles exceptions that are thrown by task groups. This section also applies to parallel algorithms such as [concurrency::parallel_for](concurrency-namespace-functions.md#parallel_for_function), because these algorithms build on task groups.  
+ This section describes how the runtime handles exceptions that are thrown by task groups. This section also applies to parallel algorithms such as [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for_function), because these algorithms build on task groups.  
   
 > [!CAUTION]
 >  Make sure that you understand the effects that exceptions have on dependent tasks. For recommended practices about how to use exception handling with tasks or parallel algorithms, see the [Understand how Cancellation and Exception Handling Affect Object Destruction](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md#object-destruction) section in the Best Practices in the Parallel Patterns Library topic.  
@@ -130,7 +130,7 @@ X = 15, Y = 30Caught exception: point is NULL.
   
  The exception handling mechanism is the same for exceptions that are thrown by the runtime as exceptions that are thrown by work functions. For example, the [concurrency::receive](reference/concurrency-namespace-functions.md#receive_function) function throws `operation_timed_out` when it does not receive a message in the specified time period. If `receive` throws an exception in a work function that you pass to a task group, the runtime stores that exception and marshals it to the context that calls `task_group::wait`, `structured_task_group::wait`, `task_group::run_and_wait`, or `structured_task_group::run_and_wait`.  
   
- The following example uses the [concurrency::parallel_invoke](concurrency-namespace-functions.md#parallel_invoke_function) algorithm to run two tasks in parallel. The first task waits five seconds and then sends a message to a message buffer. The second task uses the `receive` function to wait three seconds to receive a message from the same message buffer. The `receive` function throws `operation_timed_out` if it does not receive the message in the time period.  
+ The following example uses the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke_function) algorithm to run two tasks in parallel. The first task waits five seconds and then sends a message to a message buffer. The second task uses the `receive` function to wait three seconds to receive a message from the same message buffer. The `receive` function throws `operation_timed_out` if it does not receive the message in the time period.  
   
  [!code-cpp[concrt-eh-time-out#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_5.cpp)]  
   

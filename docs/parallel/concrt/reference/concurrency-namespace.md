@@ -149,12 +149,12 @@ namespace concurrency;
 |[task_canceled Class](../../../parallel/concrt/reference/task-canceled-class.md)|This class describes an exception thrown by the PPL tasks layer in order to force the current task to cancel. It is also thrown by the `get()` method on [task](http://msdn.microsoft.com/en-us/5389e8a5-5038-40b6-844a-55e9b58ad35f), for a canceled task.|  
 |[task_completion_event Class](../../../parallel/concrt/reference/task-completion-event-class.md)|The `task_completion_event` class allows you to delay the execution of a task until a condition is satisfied, or start a task in response to an external event.|  
 |[task_continuation_context Class](../../../parallel/concrt/reference/task-continuation-context-class.md)|The `task_continuation_context` class allows you to specify where you would like a continuation to be executed. It is only useful to use this class from a Windows Store app. For non-Windows Store apps, the task continuation's execution context is determined by the runtime, and not configurable.|  
-|[task_group Class](reference/task-group-class.md)|The `task_group` class represents a collection of parallel work which can be waited on or canceled.|  
+|[task_group Class](task-group-class.md)|The `task_group` class represents a collection of parallel work which can be waited on or canceled.|  
 |[task_handle Class](../../../parallel/concrt/reference/task-handle-class.md)|The `task_handle` class represents an individual parallel work item. It encapsulates the instructions and the data required to execute a piece of work.|  
 |[task_options Class (Concurrency Runtime)](../../../parallel/concrt/reference/task-options-class-concurrency-runtime.md)|Represents the allowed options for creating a task|  
 |[timer Class](../../../parallel/concrt/reference/timer-class.md)|A `timer` messaging block is a single-target `source_block` capable of sending a message to its target after a specified time period has elapsed or at specific intervals.|  
 |[transformer Class](../../../parallel/concrt/reference/transformer-class.md)|A `transformer` messaging block is a single-target, multi-source, ordered `propagator_block` which can accept messages of one type and is capable of storing an unbounded number of messages of a different type.|  
-|[unbounded_buffer Class](reference/unbounded-buffer-class.md)|An `unbounded_buffer` messaging block is a multi-target, multi-source, ordered `propagator_block` capable of storing an unbounded number of messages.|  
+|[unbounded_buffer Class](unbounded-buffer-class.md)|An `unbounded_buffer` messaging block is a multi-target, multi-source, ordered `propagator_block` capable of storing an unbounded number of messages.|  
 |[unsupported_os Class](../../../parallel/concrt/reference/unsupported-os-class.md)|This class describes an exception thrown when an unsupported operating system is used.|  
   
 ### Structures  
