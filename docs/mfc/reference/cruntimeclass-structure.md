@@ -201,7 +201,7 @@ BOOL IsDerivedFrom(const CRuntimeClass* pBaseClass) const;
  The schema number ( -1 for nonserializable classes).  
   
 ### Remarks  
- For more information on schema numbers, see the [IMPLEMENT_SERIAL]--brokenlink--(../Topic/not%20found.md#implement_serial) macro.  
+ For more information on schema numbers, see the [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) macro.  
   
 ### Example  
   See the example for [IsDerivedFrom](#cruntimeclass__isderivedfrom).  
@@ -210,10 +210,10 @@ BOOL IsDerivedFrom(const CRuntimeClass* pBaseClass) const;
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CObject::GetRuntimeClass](../../mfc/reference/cobject-class.md#cobject__getruntimeclass)   
  [CObject::IsKindOf](../../mfc/reference/cobject-class.md#cobject__iskindof)   
- [RUNTIME_CLASS]--brokenlink--(../Topic/not%20found.md#runtime_class)   
- [IMPLEMENT_DYNAMIC]--brokenlink--(../Topic/not%20found.md#implement_dynamic)   
- [IMPLEMENT_DYNCREATE]--brokenlink--(../Topic/not%20found.md#implement_dyncreate)   
- [IMPLEMENT_SERIAL]--brokenlink--(../Topic/not%20found.md#implement_serial)
+ [RUNTIME_CLASS](run-time-object-model-services.md#runtime_class)   
+ [IMPLEMENT_DYNAMIC](run-time-object-model-services.md#implement_dynamic)   
+ [IMPLEMENT_DYNCREATE](run-time-object-model-services.md#implement_dyncreate)   
+ [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial)
 
 
 

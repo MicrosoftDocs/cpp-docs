@@ -64,7 +64,7 @@ The Microsoft Foundation Class Library supplies many diagnostic services that ma
   
  [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/diagnostic-services_1.cpp)]  
   
- in your implementation file, all calls to **new** will store the filename and line number where the memory allocation took place. The function [CMemoryState::DumpAllObjectsSince]--brokenlink--(../Topic/CMemoryState-class.md#cmemorystate__dumpallobjectssince) will display this extra information, allowing you to identify memory leaks. Refer also to the class [CDumpContext](../../mfc/reference/cdumpcontext-class.md) for additional information on diagnostic output.  
+ in your implementation file, all calls to **new** will store the filename and line number where the memory allocation took place. The function [CMemoryState::DumpAllObjectsSince](cmemorystate-class.md#cmemorystate__dumpallobjectssince) will display this extra information, allowing you to identify memory leaks. Refer also to the class [CDumpContext](../../mfc/reference/cdumpcontext-class.md) for additional information on diagnostic output.  
   
  In addition, the C run-time library also supports a set of diagnostic functions you can use to debug your applications. For more information, see [Debug Routines](../../c-runtime-library/debug-routines.md) in the Run-Time Library Reference.  
   
@@ -104,7 +104,7 @@ The Microsoft Foundation Class Library supplies many diagnostic services that ma
 |[AfxDoForAllClasses](#afxdoforallclasses)|Performs a specified function on all `CObject`-derived classes that support run-time type checking.|  
 |[AfxDoForAllObjects](#afxdoforallobjects)|Performs a specified function on all `CObject`-derived objects that were allocated with **new**.|  
   
-##  <a name="assert__mfc_"></a>  ASSERT (MFC)  
+##  <a name="assert__mfc"></a>  ASSERT (MFC)  
  Evaluates its argument.  
   
 ```   
@@ -155,7 +155,7 @@ ASSERT_KINDOF(classname, pobject)
   
  [!code-cpp[NVC_MFCDocView#195](../../mfc/codesnippet/cpp/diagnostic-services_4.cpp)]  
   
- This function works only for classes declared with the [DECLARE_DYNAMIC]--brokenlink--(../Topic/not%20found.md#declare_dynamic or [DECLARE_SERIAL]--brokenlink--(../Topic/not%20found.md#declare_serial) macro.  
+ This function works only for classes declared with the [DECLARE_DYNAMIC](run-time-object-model-services.md#declare_dynamic or [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) macro.  
   
 > [!NOTE]
 >  This function is available only in the Debug version of MFC.  
@@ -194,7 +194,7 @@ ASSERT_VALID(pObject)
 ### Remarks  
  You can use `DEBUG_NEW` everywhere in your program that you would ordinarily use the **new** operator to allocate heap storage.  
   
- In debug mode (when the **_DEBUG** symbol is defined), `DEBUG_NEW` keeps track of the filename and line number for each object that it allocates. Then, when you use the [CMemoryState::DumpAllObjectsSince]--brokenlink--(../Topic/CMemoryState-class.md#cmemorystate__dumpallobjectssince) member function, each object allocated with `DEBUG_NEW` is shown with the filename and line number where it was allocated.  
+ In debug mode (when the **_DEBUG** symbol is defined), `DEBUG_NEW` keeps track of the filename and line number for each object that it allocates. Then, when you use the [CMemoryState::DumpAllObjectsSince](cmemorystate-class.md#cmemorystate__dumpallobjectssince) member function, each object allocated with `DEBUG_NEW` is shown with the filename and line number where it was allocated.  
   
  To use `DEBUG_NEW`, insert the following directive into your source files:  
   
@@ -307,7 +307,7 @@ throw COleException*
 ```  
   
 ### Remarks  
- If it is an error, the function throws an exception. If the passed `SCODE` is **E_OUTOFMEMORY**, the function throws a [CMemoryException](../../mfc/reference/cmemoryexception-class.md) by calling [AfxThrowMemoryException]--brokenlink--(../Topic/not%20found.md#afxthrowmemoryexception). Otherwise, the function throws a [COleException](../../mfc/reference/coleexception-class.md) by calling [AfxThrowOleException]--brokenlink--(../Topic/not%20found.md#afxthrowoleexception).  
+ If it is an error, the function throws an exception. If the passed `SCODE` is **E_OUTOFMEMORY**, the function throws a [CMemoryException](../../mfc/reference/cmemoryexception-class.md) by calling [AfxThrowMemoryException](diagnostic-services.md#afxthrowmemoryexception). Otherwise, the function throws a [COleException](../../mfc/reference/coleexception-class.md) by calling [AfxThrowOleException](diagnostic-services.md#afxthrowoleexception).  
   
  This function can be used to check the return values of calls to OLE functions in your application. By testing the return value with this function in your application, you can properly react to error conditions with a minimal amount of code.  
   

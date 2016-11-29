@@ -95,7 +95,7 @@ class CObList : public CObject
  You can derive your own classes from `CObList`. Your new list class, designed to hold pointers to objects derived from `CObject`, adds new data members and new member functions. Note that the resulting list is not strictly type safe, because it allows insertion of any `CObject` pointer.  
   
 > [!NOTE]
->  You must use the [IMPLEMENT_SERIAL]--brokenlink--(../Topic/not%20found.md#implement_serial) macro in the implementation of your derived class if you intend to serialize the list.  
+>  You must use the [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) macro in the implementation of your derived class if you intend to serialize the list.  
   
  For more information on using `CObList`, see the article [Collections](../../mfc/collections.md).  
   

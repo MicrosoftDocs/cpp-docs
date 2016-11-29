@@ -1174,7 +1174,7 @@ virtual HRESULT GetClassID(LPCLSID pclsid) = 0;
  Nonzero if the call was not successful; otherwise 0.  
   
 ### Remarks  
- Usually implemented by the [IMPLEMENT_OLECREATE_EX]--brokenlink--(../Topic/not%20found.md#implement_olecreate_ex macro).  
+ Usually implemented by the [IMPLEMENT_OLECREATE_EX](run-time-object-model-services.md#implement_olecreate_ex macro).  
   
 ##  <a name="colecontrol__getclientoffset"></a>  COleControl::GetClientOffset  
  Retrieves the difference between the upper left corner of the control's rectangular area and the upper left corner of its client area.  
@@ -1651,7 +1651,7 @@ BOOL IsConvertingVBX();
  Nonzero if the control is being converted; otherwise 0.  
   
 ### Remarks  
- When converting a form that uses VBX controls to one that uses OLE controls, special loading code for the OLE controls may be required. For example, if you are loading an instance of your OLE control, you might have a call to [PX_Font]--brokenlink--(../Topic/not%20found.md#px_font) in your `DoPropExchange`:  
+ When converting a form that uses VBX controls to one that uses OLE controls, special loading code for the OLE controls may be required. For example, if you are loading an instance of your OLE control, you might have a call to [PX_Font](persistence-of-ole-controls.md#px_font) in your `DoPropExchange`:  
   
  [!code-cpp[NVC_MFCAxCtl#3](../../mfc/reference/codesnippet/cpp/colecontrol-class_4.cpp)]  
   

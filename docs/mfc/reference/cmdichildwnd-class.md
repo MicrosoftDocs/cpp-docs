@@ -79,7 +79,7 @@ class CMDIChildWnd : public CFrameWnd
   
 -   Indirectly construct it through a document template.  
   
- Before you call **Create** or `LoadFrame`, you must construct the frame-window object on the heap using the C++ **new** operator. Before calling **Create** you can also register a window class with the [AfxRegisterWndClass]--brokenlink--(../Topic/not%20found.md#afxregisterwndclass) global function to set the icon and class styles for the frame.  
+ Before you call **Create** or `LoadFrame`, you must construct the frame-window object on the heap using the C++ **new** operator. Before calling **Create** you can also register a window class with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function to set the icon and class styles for the frame.  
   
  Use the **Create** member function to pass the frame's creation parameters as immediate arguments.  
   

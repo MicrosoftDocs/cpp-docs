@@ -97,7 +97,7 @@ IMPLEMENT_OLECREATE_EX(
  The object name exposed to applications.  
   
  *l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8*  
- Components of the class's **CLSID**. For more information on these parameters, see the Remarks for [IMPLEMENT_OLECREATE]--brokenlink--(../Topic/not%20found.md#implement_olecreate.  
+ Components of the class's **CLSID**. For more information on these parameters, see the Remarks for [IMPLEMENT_OLECREATE](run-time-object-model-services.md#implement_olecreate).  
   
 ### Remarks  
  This macro must appear in the implementation file for any control class that uses the `DECLARE_OLECREATE_EX` macro or the `BEGIN_OLEFACTORY` and `END_OLEFACTORY` macros. The external name is the identifier of the OLE control that is exposed to other applications. Containers use this name to request an object of this control class.  

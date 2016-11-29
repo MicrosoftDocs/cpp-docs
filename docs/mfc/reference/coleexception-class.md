@@ -61,7 +61,7 @@ class COleException : public CException
 ## Remarks  
  The `COleException` class includes a public data member that holds the status code indicating the reason for the exception.  
   
- In general, you should not create a `COleException` object directly; instead, you should call [AfxThrowOleException]--brokenlink--(../Topic/not%20found.md#afxthrowoleexception).  
+ In general, you should not create a `COleException` object directly; instead, you should call [AfxThrowOleException]--brokenlink--(exception-processing.md#afxthrowoleexception).  
   
  For more information on exceptions, see the articles [Exception Handling (MFC)](../../mfc/exception-handling-in-mfc.md) and [Exceptions: OLE Exceptions](../../mfc/exceptions-ole-exceptions.md).  
   
@@ -83,7 +83,7 @@ SCODE m_sc;
 ```  
   
 ### Remarks  
- This variable's value is set by [AfxThrowOleException]--brokenlink--(../Topic/not%20found.md#afxthrowoleexception).  
+ This variable's value is set by [AfxThrowOleException](exception-processing.md#afxthrowoleexception).  
   
  For more information on `SCODE`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   

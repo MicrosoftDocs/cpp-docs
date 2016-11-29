@@ -104,7 +104,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `lpszClassName`  
- Points to a null-terminated character string that names the Windows class. The class name can be any name registered with the [AfxRegisterWndClass]--brokenlink--(../Topic/not%20found.md#afxregisterwndclass) global function or the **RegisterClass** Windows function. If **NULL**, uses the predefined default [CFrameWnd](../../mfc/reference/cframewnd-class.md) attributes.  
+ Points to a null-terminated character string that names the Windows class. The class name can be any name registered with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function or the **RegisterClass** Windows function. If **NULL**, uses the predefined default [CFrameWnd](../../mfc/reference/cframewnd-class.md) attributes.  
   
  `lpszWindowName`  
  Points to a null-terminated character string that represents the window name.  

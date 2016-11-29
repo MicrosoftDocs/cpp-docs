@@ -48,11 +48,11 @@ When a program executes, a number of abnormal conditions and errors called "exce
   
  Several macros included with the Microsoft Foundation Class Library will set up exception handlers. A number of other global functions help to throw specialized exceptions and terminate programs, if necessary. These macros and global functions fall into the following categories:  
   
-- [Exception macros](#_mfc_exception_macros), which structure your exception handler.  
+- Exception macros, which structure your exception handler.  
   
-- [Exception-throwing functions](#_mfc_exception.2d.throwing_functions), which generate exceptions of specific types.  
+- Exception-throwing functions), which generate exceptions of specific types.  
   
-- [Termination functions](#_mfc_termination_functions), which cause program termination.  
+- Termination functions, which cause program termination.  
   
  For examples and more details, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   

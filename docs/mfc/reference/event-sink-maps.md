@@ -119,7 +119,7 @@ ON_EVENT(theClass, id, dispid, pfnHandler,  vtsParams)
   
  specifies a list containing a short integer followed by a **BOOL**.  
   
- For a list of the **VTS_** constants, see [EVENT_CUSTOM]--brokenlink--(../Topic/not%20found.md#event_custom).  
+ For a list of the **VTS_** constants, see [EVENT_CUSTOM](event-maps.md#event_custom).  
   
 ##  <a name="on_event_range"></a>  ON_EVENT_RANGE  
  Use the `ON_EVENT_RANGE` macro to define an event handler function for an event fired by any OLE control having a control ID within a contiguous range of IDs.  
@@ -154,7 +154,7 @@ ON_EVENT_RANGE(theClass, idFirst, idLast, dispid, pfnHandler,  vtsParams)
   
  specifies a list containing a short integer followed by a **BOOL**.  
   
- For a list of the **VTS_** constants, see [EVENT_CUSTOM]--brokenlink--(../Topic/not%20found.md#event_custom).  
+ For a list of the **VTS_** constants, see [EVENT_CUSTOM](event-maps.md#event_custom).  
   
 ### Example  
  The following example demonstrates an event handler, for the MouseDown event, implemented for three controls ( `IDC_MYCTRL1` through `IDC_MYCTRL3`). The event handler function, `OnRangeMouseDown`, is declared in the header file of the dialog class ( `CMyDlg`) as:  
@@ -194,7 +194,7 @@ ON_EVENT_REFLECT(theClass,  dispid, pfnHandler,  vtsParams)
   
  specifies a list containing a short integer followed by a **BOOL**.  
   
- For a list of the **VTS_** constants, see [EVENT_CUSTOM]--brokenlink--(../Topic/not%20found.md#event_custom).  
+ For a list of the **VTS_** constants, see [EVENT_CUSTOM](event-maps.md#event_custom).  
   
 ##  <a name="on_propnotify"></a>  ON_PROPNOTIFY  
  Use the `ON_PROPNOTIFY` macro to define an event sink map entry for handling property notifications from an OLE control.  
@@ -227,7 +227,7 @@ ON_PROPNOTIFY(theClass, id, dispid, pfnRequest, pfnChanged)
   
  specifies a list containing a short integer followed by a **BOOL**.  
   
- For a list of the **VTS_** constants, see [EVENT_CUSTOM]--brokenlink--(../Topic/not%20found.md#event_custom).  
+ For a list of the **VTS_** constants, see [EVENT_CUSTOM](event-maps.md#event_custom).  
   
 ##  <a name="on_propnotify_range"></a>  ON_PROPNOTIFY_RANGE  
  Use the `ON_PROPNOTIFY_RANGE` macro to define an event sink map entry for handling property notifications from any OLE control having a control ID within a contiguous range of IDs.  

@@ -113,7 +113,7 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
 ||||  
 |-|-|-|  
 
-|[at](reference/concurrent-vector-class.md#concurrent_vector__at_method)|[end](reference/concurrent-vector-class.md#concurrent_vector__end_method)|[operator&#91;&#93;](../topic/concurrent_vector::operatoroperator.md)|  
+|[at](reference/concurrent-vector-class.md#concurrent_vector__at_method)|[end](reference/concurrent-vector-class.md#concurrent_vector__end_method)|[operator&#91;&#93;](reference/concurrent-vector-class.md#operator_at_operator)|  
 |[begin](reference/concurrent-vector-class.md#concurrent_vector__begin_method)|[front](reference/concurrent-vector-class.md#concurrent_vector__front_method)|[push_back](reference/concurrent-vector-class.md#concurrent_vector__push_back_method)|  
 |[back](reference/concurrent-vector-class.md#concurrent_vector__back_method)|[grow_by](reference/concurrent-vector-class.md#concurrent_vector__grow_by_method)|[rbegin](reference/concurrent-vector-class.md#concurrent_vector__rbegin_method)|  
 |[capacity](reference/concurrent-vector-class.md#concurrent_vector__capacity_method)|[grow_to_at_least](reference/concurrent-vector-class.md#concurrent_vector__grow_to_at_least_method)|[rend](reference/concurrent-vector-class.md#concurrent_vector__rend_method)|  
@@ -127,7 +127,7 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
 
 |[assign](reference/concurrent-vector-class.md#concurrent_vector__assign_method)|[reserve](reference/concurrent-vector-class.md#concurrent_vector__reserve_method)|  
 |[clear](reference/concurrent-vector-class.md#concurrent_vector__clear_method)|[resize](reference/concurrent-vector-class.md#concurrent_vector__resize_method)|  
-|[operator=](../topic/concurrent_vector::operator=%20operator.md)|[shrink_to_fit](reference/concurrent-vector-class.md#concurrent_vector__shrink_to_fit_method)|  
+|[operator=](reference/concurrent-vector-class.md#concurrent_vector__operator_eq_operator)|[shrink_to_fit](reference/concurrent-vector-class.md#concurrent_vector__shrink_to_fit_method)|  
   
  Operations that modify the value of existing elements are not concurrency-safe. Use a synchronization object such as a [reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) object to synchronize concurrent read and write operations to the same data element. For more information about synchronization objects, see [Synchronization Data Structures](../../parallel/concrt/synchronization-data-structures.md).  
   
@@ -232,7 +232,7 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
 
 |[at](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__at_method)|`count`|`find`|[key_eq](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__key_eq_method)|  
 |`begin`|`empty`|`get_allocator`|`max_size`|  
-|`cbegin`|`end`|`hash_function`|[operator&#91;&#93;](../topic/concurrent_unordered_map::operatoroperator.md)|  
+|`cbegin`|`end`|`hash_function`|[operator&#91;&#93;](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__operator_at_operator)|  
 |`cend`|`equal_range`|[insert](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__insert_method)|`size`|  
   
  Although the `count` method can be called safely from concurrently running threads, different threads can receive different results if a new value is simultaneously inserted into the container.  
@@ -243,7 +243,7 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
 |-|-|-|  
 |`clear`|`max_load_factor`|`rehash`|  
 
-|`load_factor`|[operator=](../topic/concurrent_unordered_map::operator=%20operator.md)|[swap](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__swap_method)|  
+|`load_factor`|[operator=](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__operator_eq_operator) 
 
   
  In addition to these methods, any method that begins with `unsafe_` is also not concurrency-safe.  

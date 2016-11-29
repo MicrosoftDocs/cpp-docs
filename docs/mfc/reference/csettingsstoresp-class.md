@@ -70,7 +70,7 @@ class CSettingsStoreSP
   
 1.  Create a class (such as `CMyStore`) and derive it from `CSettingsStore`.  
   
-2.  Use [DECLARE_DYNCREATE]--brokenlink--(../Topic/not%20found.md#declare_dyncreate) and [IMPLEMENT_DYNCREATE]--brokenlink--(../Topic/not%20found.md#implement_dyncreate) macros with your custom `CSettingsStore` class to enable dynamic creation.  
+2.  Use [DECLARE_DYNCREATE](run-time-object-model-services.md#declare_dyncreate) and [IMPLEMENT_DYNCREATE](run-time-object-model-services.md#implement_dyncreate) macros with your custom `CSettingsStore` class to enable dynamic creation.  
   
 3.  Override the virtual functions and implement the `Read` and `Write` functions in your custom class. Implement any other functionality to read and write data to your desired location.  
   

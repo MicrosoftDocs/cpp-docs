@@ -41,7 +41,7 @@ translation.priority.ht:
 ---
 # Remote Automation
 > [!NOTE]
->  It is recommended that Visual C++ .NET developers use DCOM rather than Remote Automation for new applications. Visual C++ .NET does not support Windows 95. Cases in which you would need to support Remote Automation are described in [Where Does Remote Automation Fit In]--brokenlink--(../Topic/Where%20Does%20Remote%20Automation%20Fit%20In.md).  
+>  It is recommended that Visual C++ .NET developers use DCOM rather than Remote Automation for new applications. Visual C++ .NET does not support Windows 95. Cases in which you would need to support Remote Automation are described in [Where Does Remote Automation Fit In](where-does-remote-automation-fit-in-q.md).  
   
  Remote Automation is a type of [Automation](../mfc/automation.md) that allows an interface consumer to execute an interface provider that resides on another machine, for example, on a network.  
   
@@ -50,9 +50,9 @@ translation.priority.ht:
 ## In This Section  
  [History of DCOM (Distributed Component Object Model)](../mfc/history-of-dcom.md)  
   
- [Where Does Remote Automation Fit In]--brokenlink--(../Topic/Where%20Does%20Remote%20Automation%20Fit%20In.md)  
+ [Where Does Remote Automation Fit In](where-does-remote-automation-fit-in-q.md)  
   
- [What Does Remote Automation Provide]--brokenlink--(../Topic/What%20Does%20Remote%20Automation%20Provide.md)  
+ [What Does Remote Automation Provide](what-does-remote-automation-provide-q.md)  
   
  [Remote Automation Security](../mfc/security-in-remote-automation.md)  
   

@@ -106,7 +106,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `lpClassName`  
- Points to a null-terminated character string that names the Windows class. The class name can be any name registered with the global [AfxRegisterWndClass]--brokenlink--(../Topic/not%20found.md#afxregisterwndclass) function. If **NULL**, the window class will be registered for you by the framework. MFC gives the default class the following styles and attributes:  
+ Points to a null-terminated character string that names the Windows class. The class name can be any name registered with the global [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) function. If **NULL**, the window class will be registered for you by the framework. MFC gives the default class the following styles and attributes:  
   
 -   Sets style bit **CS_DBLCLKS**, which sends double-click messages to the window procedure when the user double-clicks the mouse.  
   

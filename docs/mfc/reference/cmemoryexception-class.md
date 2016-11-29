@@ -80,10 +80,10 @@ CMemoryException();
 ```  
   
 ### Remarks  
- Do not use this constructor directly, but rather call the global function [AfxThrowMemoryException]--brokenlink--(../Topic/not%20found.md#not) _found.md#afxthrowmemoryexception. this global function can succeed in an out-of-memory situation because it constructs the exception object in previously allocated memory. for more information about exception processing, see the article [exceptions](../topic/exception_handling_in_mfc.  
+ Do not use this constructor directly, but rather call the global function [AfxThrowMemoryException](exception-processing.md#afxthrowmemoryexception). this global function can succeed in an out-of-memory situation because it constructs the exception object in previously allocated memory. for more information about exception processing, see the article [exceptions](../exception-handling-in-mfc.md).  
   
 ## See Also  
- [CException Class](../topic/cexception-class.md)   
+ [CException Class](cexception-class.md)   
  [Hierarchy Chart](../hierarchy-chart.md)
 
 

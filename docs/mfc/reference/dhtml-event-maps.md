@@ -768,7 +768,7 @@ BEGIN_EMBED_DHTML_EVENT_MAP(className, mapName)
 ### Remarks  
  Because a multipage DHTML dialog consists of multiple HTML pages, each of which can raise DHTML events, embedded event maps are used to map events to handlers on a per-page basis.  
   
- Embedded event maps within a DHTML and URL event map consist of a `BEGIN_EMBED_DHTML_EVENT_MAP` macro followed by [DHTML_EVENT]--brokenlink--(../Topic/not%20found.md#dhtml_event_maps) macros and an [END_EMBED_DHTML_EVENT_MAP](#end_embed_dhtml_event_map) macro.  
+ Embedded event maps within a DHTML and URL event map consist of a `BEGIN_EMBED_DHTML_EVENT_MAP` macro followed by [DHTML_EVENT](dhtml-event-maps.md#dhtml_event) macros and an [END_EMBED_DHTML_EVENT_MAP](dhtml-event-maps.md#end_embed_dhtml_event_map) macro.  
   
  Each embedded event map requires a corresponding [URL event entry](#url_event_entry) to map *mapName* (specified in `BEGIN_EMBED_DHTML_EVENT_MAP`) to a URL or HTML resource.  
   

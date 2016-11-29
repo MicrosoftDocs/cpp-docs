@@ -87,9 +87,9 @@ class AFX_NOVTABLE CObject
   
  You will realize major benefits from `CObject` derivation if you use some of the optional macros in your class implementation and declarations.  
   
- The first-level macros, [DECLARE_DYNAMIC]--brokenlink--(../Topic/not%20found.md#declare_dynamic and [IMPLEMENT_DYNAMIC]--brokenlink--(../Topic/not%20found.md#implement_dynamic), permit run-time access to the class name and its position in the hierarchy. This, in turn, allows meaningful diagnostic dumping.  
+ The first-level macros, [DECLARE_DYNAMIC](run-time-object-model-services.md#declare_dynamic) and [IMPLEMENT_DYNAMIC](run-time-object-model-services.md#implement_dynamic), permit run-time access to the class name and its position in the hierarchy. This, in turn, allows meaningful diagnostic dumping.  
   
- The second-level macros, [DECLARE_SERIAL]--brokenlink--(../Topic/not%20found.md#declare_serial and [IMPLEMENT_SERIAL]--brokenlink--(../Topic/not%20found.md#implement_serial), include all the functionality of the first-level macros, and they enable an object to be "serialized" to and from an "archive."  
+ The second-level macros, [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) and [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial), include all the functionality of the first-level macros, and they enable an object to be "serialized" to and from an "archive."  
   
  For information about deriving Microsoft Foundation classes and C++ classes in general and using `CObject`, see [Using CObject](../../mfc/using-cobject.md) and [Serialization](../../mfc/serialization-in-mfc.md).  
   
@@ -122,7 +122,7 @@ virtual void AssertValid() const;
   
  [!code-cpp[NVC_MFCCObjectSample#7](../../mfc/codesnippet/cpp/cobject-class_1.cpp)]  
   
- For another example, see [AfxDoForAllObjects]--brokenlink--(../Topic/not%20found.md#afxdoforallobjects).  
+ For another example, see [AfxDoForAllObjects](diagnostic-services.md#afxdoforallobjects).  
   
 ##  <a name="cobject__cobject"></a>  CObject::CObject  
  These functions are the standard `CObject` constructors.  
@@ -201,7 +201,7 @@ virtual CRuntimeClass* GetRuntimeClass() const;
   
 - **int m_nObjectSize** The size of the object, in bytes. If the object has data members that point to allocated memory, the size of that memory is not included.  
   
-- **UINT m_wSchema** The schema number ( – 1 for nonserializable classes). See the [IMPLEMENT_SERIAL]--brokenlink--(../Topic/not%20found.md#implement_serial) macro for a description of schema number.  
+- **UINT m_wSchema** The schema number ( – 1 for nonserializable classes). See the [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) macro for a description of schema number.  
   
 - **CObject\* ( PASCAL\* m_pfnCreateObject )( )** A function pointer to the default constructor that creates an object of your class (valid only if the class supports dynamic creation; otherwise, returns **NULL**).  
   
@@ -209,7 +209,7 @@ virtual CRuntimeClass* GetRuntimeClass() const;
   
 - **CRuntimeClass\* m_pBaseClass** If your application is statically linked to MFC, a pointer to the `CRuntimeClass` structure of the base class.  
   
- This function requires use of the [IMPLEMENT_DYNAMIC]--brokenlink--(../Topic/not%20found.md#implement_dynamic, [IMPLEMENT_DYNCREATE]--brokenlink--(../Topic/not%20found.md#implement_dyncreate), or [IMPLEMENT_SERIAL]--brokenlink--(../Topic/not%20found.md#implement_serial) macro in the class implementation. You will get incorrect results otherwise.  
+ This function requires use of the [IMPLEMENT_DYNAMIC](run-time-object-model-services.md#implement_dynamic), [IMPLEMENT_DYNCREATE](run-time-object-model-services.md#implement_dyncreate), or [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) macro in the class implementation. You will get incorrect results otherwise.  
   
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all `CObject` examples.  
@@ -233,7 +233,7 @@ BOOL IsKindOf(const CRuntimeClass* pClass) const;
  Nonzero if the object corresponds to the class; otherwise 0.  
   
 ### Remarks  
- This function tests `pClass` to see if (1) it is an object of the specified class or (2) it is an object of a class derived from the specified class. This function works only for classes declared with the [DECLARE_DYNAMIC]--brokenlink--(../Topic/not%20found.md#declare_dynamic), [DECLARE_DYNCREATE]--brokenlink--(../Topic/not%20found.md#declare_dyncreate, or [DECLARE_SERIAL]--brokenlink--(../Topic/not%20found.md#declare_serial) macro.  
+ This function tests `pClass` to see if (1) it is an object of the specified class or (2) it is an object of a class derived from the specified class. This function works only for classes declared with the [DECLARE_DYNAMIC](run-time-object-model-services.md#declare_dynamic), [DECLARE_DYNCREATE](run-time-object-model-services.md#declare_dyncreate), or [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) macro.  
   
  Do not use this function extensively because it defeats the C++ polymorphism feature. Use virtual functions instead.  
   
@@ -255,7 +255,7 @@ BOOL IsSerializable() const;
  Nonzero if this object can be serialized; otherwise 0.  
   
 ### Remarks  
- For a class to be serializable, its declaration must contain the [DECLARE_SERIAL]--brokenlink--(../Topic/not%20found.md#declare_serial) macro, and the implementation must contain the [IMPLEMENT_SERIAL]--brokenlink--(../Topic/not%20found.md#implement_serial) macro.  
+ For a class to be serializable, its declaration must contain the [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) macro, and the implementation must contain the [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) macro.  
   
 > [!NOTE]
 >  Do not override this function.  
@@ -354,7 +354,7 @@ virtual void Serialize(CArchive& ar);
 ### Remarks  
  You must override `Serialize` for each class that you intend to serialize. The overridden `Serialize` must first call the `Serialize` function of its base class.  
   
- You must also use the [DECLARE_SERIAL]--brokenlink--(../Topic/not%20found.md#declare_serial) macro in your class declaration, and you must use the [IMPLEMENT_SERIAL]--brokenlink--(../Topic/not%20found.md#implement_serial) macro in the implementation.  
+ You must also use the [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) macro in your class declaration, and you must use the [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) macro in the implementation.  
   
  Use [CArchive::IsLoading](../../mfc/reference/carchive-class.md#carchive__isloading) or [CArchive::IsStoring](../../mfc/reference/carchive-class.md#carchive__isstoring) to determine whether the archive is loading or storing.  
   

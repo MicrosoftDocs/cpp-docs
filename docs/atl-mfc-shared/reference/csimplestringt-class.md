@@ -82,30 +82,30 @@ class CSimpleStringT
 |Name|Description|  
 |----------|-----------------|  
 <<<<<<< 
-|[CSimpleStringT::Append](../topic/csimplestringt::append.md)|Appends a `CSimpleStringT` object to an existing `CSimpleStringT` object.|  
-|[CSimpleStringT::AppendChar](../topic/csimplestringt::appendchar.md)|Appends a character to an existing `CSimpleStringT` object.|  
-|[CSimpleStringT::CopyChars](../topic/csimplestringt::copychars.md)|Copies a character or characters to another string.|  
-|[CSimpleStringT::CopyCharsOverlapped](../topic/csimplestringt::copycharsoverlapped.md)|Copies a character or characters to another string in which the buffers overlap.|  
-|[CSimpleStringT::Empty](../topic/csimplestringt::empty.md)|Forces a string to have a length of zero.|  
-|[CSimpleStringT::FreeExtra](../topic/csimplestringt::freeextra.md)|Frees any extra memory previously allocated by the string object.|  
-|[CSimpleStringT::GetAllocLength](../topic/csimplestringt::getalloclength.md)|Retrieves the allocated length of a `CSimpleStringT` object.|  
-|[CSimpleStringT::GetAt](../topic/csimplestringt::getat.md)|Returns the character at a given position.|  
-|[CSimpleStringT::GetBuffer](../topic/csimplestringt::getbuffer.md)|Returns a pointer to the characters in a `CSimpleStringT`.|  
-|[CSimpleStringT::GetBufferSetLength](../topic/csimplestringt::getbuffersetlength.md)|Returns a pointer to the characters in a `CSimpleStringT`, truncating to the specified length.|  
-|[CSimpleStringT::GetLength](../topic/csimplestringt::getlength.md)|Returns the number of characters in a `CSimpleStringT` object.|  
-|[CSimpleStringT::GetManager](../topic/csimplestringt::getmanager.md)|Retrieves the memory manager of the `CSimpleStringT` object.|  
-|[CSimpleStringT::GetString](../topic/csimplestringt::getstring.md)|Retrieves the character string|  
-|[CSimpleStringT::IsEmpty](../topic/csimplestringt::isempty.md)|Tests whether a `CSimpleStringT` object contains no characters.|  
-|[CSimpleStringT::LockBuffer](../topic/csimplestringt::lockbuffer.md)|Disables reference counting and protects the string in the buffer.|  
-|[CSimpleStringT::Preallocate](../topic/csimplestringt::preallocate.md)|Allocates a specific amount of memory for the character buffer.|  
-|[CSimpleStringT::ReleaseBuffer](../topic/csimplestringt::releasebuffer.md)|Releases control of the buffer returned by `GetBuffer`.|  
-|[CSimpleStringT::ReleaseBufferSetLength](../topic/csimplestringt::releasebuffersetlength.md)|Releases control of the buffer returned by `GetBuffer`.|  
-|[CSimpleStringT::SetAt](../topic/csimplestringt::setat.md)|Sets a character at a given position.|  
-|[CSimpleStringT::SetManager](../topic/csimplestringt::setmanager.md)|Sets the memory manager of a `CSimpleStringT` object.|  
-|[CSimpleStringT::SetString](../topic/csimplestringt::setstring.md)|Sets the string of a `CSimpleStringT` object.|  
-|[CSimpleStringT::StringLength](../topic/csimplestringt::stringlength.md)|Returns the number of characters in the specified string.|  
-|[CSimpleStringT::Truncate](../topic/csimplestringt::truncate.md)|Truncates the string to a specified length.|  
-|[CSimpleStringT::UnlockBuffer](../topic/csimplestringt::unlockbuffer.md)|Enables reference counting and releases the string in the buffer.|  
+|[CSimpleStringT::Append](#csimplestringt__append)|Appends a `CSimpleStringT` object to an existing `CSimpleStringT` object.|  
+|[CSimpleStringT::AppendChar](#csimplestringt__appendchar)|Appends a character to an existing `CSimpleStringT` object.|  
+|[CSimpleStringT::CopyChars](#csimplestringt__copychars)|Copies a character or characters to another string.|  
+|[CSimpleStringT::CopyCharsOverlapped](#csimplestringt__copycharsoverlapped)|Copies a character or characters to another string in which the buffers overlap.|  
+|[CSimpleStringT::Empty](#csimplestringt__empty)|Forces a string to have a length of zero.|  
+|[CSimpleStringT::FreeExtra](#csimplestringt__freeextra)|Frees any extra memory previously allocated by the string object.|  
+|[CSimpleStringT::GetAllocLength](#csimplestringt__getalloclength)|Retrieves the allocated length of a `CSimpleStringT` object.|  
+|[CSimpleStringT::GetAt](#csimplestringt__getat)|Returns the character at a given position.|  
+|[CSimpleStringT::GetBuffer](#csimplestringt__getbuffer)|Returns a pointer to the characters in a `CSimpleStringT`.|  
+|[CSimpleStringT::GetBufferSetLength](#csimplestringt__getbuffersetlength)|Returns a pointer to the characters in a `CSimpleStringT`, truncating to the specified length.|  
+|[CSimpleStringT::GetLength](#csimplestringt__getlength)|Returns the number of characters in a `CSimpleStringT` object.|  
+|[CSimpleStringT::GetManager](#csimplestringt__getmanager)|Retrieves the memory manager of the `CSimpleStringT` object.|  
+|[CSimpleStringT::GetString](#csimplestringt__getstring)|Retrieves the character string|  
+|[CSimpleStringT::IsEmpty](#csimplestringt__isempty)|Tests whether a `CSimpleStringT` object contains no characters.|  
+|[CSimpleStringT::LockBuffer](#csimplestringt__lockbuffer)|Disables reference counting and protects the string in the buffer.|  
+|[CSimpleStringT::Preallocate](#csimplestringt__preallocate)|Allocates a specific amount of memory for the character buffer.|  
+|[CSimpleStringT::ReleaseBuffer](#csimplestringt__releasebuffer)|Releases control of the buffer returned by `GetBuffer`.|  
+|[CSimpleStringT::ReleaseBufferSetLength](#csimplestringt__releasebuffersetlength)|Releases control of the buffer returned by `GetBuffer`.|  
+|[CSimpleStringT::SetAt](#csimplestringt__setat)|Sets a character at a given position.|  
+|[CSimpleStringT::SetManager](#csimplestringt__setmanager)|Sets the memory manager of a `CSimpleStringT` object.|  
+|[CSimpleStringT::SetString](#csimplestringt__setstring)|Sets the string of a `CSimpleStringT` object.|  
+|[CSimpleStringT::StringLength](#csimplestringt__stringlength)|Returns the number of characters in the specified string.|  
+|[CSimpleStringT::Truncate](#csimplestringt__truncate)|Truncates the string to a specified length.|  
+|[CSimpleStringT::UnlockBuffer](#csimplestringt__unlockbuffer)|Enables reference counting and releases the string in the buffer.|  
 =======
 |[CSimpleStringT::Append](#csimplestringt__append)|Appends a `CSimpleStringT` object to an existing `CSimpleStringT` object.|  
 |[CSimpleStringT::AppendChar](#csimplestringt__appendchar)|Appends a character to an existing `CSimpleStringT` object.|  

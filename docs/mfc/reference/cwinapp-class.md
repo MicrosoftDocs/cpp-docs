@@ -65,7 +65,7 @@ class CWinApp : public CWinThread
 |[CWinApp::CloseAllDocuments](#cwinapp__closealldocuments)|Closes all open documents.|  
 |[CWinApp::CreatePrinterDC](#cwinapp__createprinterdc)|Creates a printer device context.|  
 |[CWinApp::DelRegTree](#cwinapp__delregtree)|Deletes a specified key and all its subkeys.|  
-|[CWinApp::DoMessageBox](#cwinapp__domessagebox)|Implements [AfxMessageBox]--brokenlink--(../Topic/not%20found.md#afxmessagebox) for the application.|  
+|[CWinApp::DoMessageBox](#cwinapp__domessagebox)|Implements [AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox) for the application.|  
 |[CWinApp::DoWaitCursor](#cwinapp__dowaitcursor)|Turns the wait cursor on and off.|  
 |[CWinApp::EnableD2DSupport](#cwinapp__enabled2dsupport)|Enables application `D2D` support. Call this method before the main window is initialized.|  
 |[CWinApp::EnableHtmlHelp](#cwinapp__enablehtmlhelp)|Implements HTMLHelp for the application, rather than WinHelp.|  
@@ -176,13 +176,13 @@ class CWinApp : public CWinThread
   
  In addition to the `CWinApp` member functions, the Microsoft Foundation Class Library provides the following global functions to access your `CWinApp` object and other global information:  
   
-- [AfxGetApp]--brokenlink--(../Topic/not%20found.md#afxgetapp) Obtains a pointer to the `CWinApp` object.  
+- [AfxGetApp](application-information-and-management.md#afxgetapp) Obtains a pointer to the `CWinApp` object.  
   
-- [AfxGetInstanceHandle]--brokenlink--(../Topic/not%20found.md#afxgetinstancehandle) Obtains a handle to the current application instance.  
+- [AfxGetInstanceHandle](application-information-and-management.md#afxgetinstancehandle) Obtains a handle to the current application instance.  
   
-- [AfxGetResourceHandle]--brokenlink--(../Topic/not%20found.md#afxgetresourcehandle) Obtains a handle to the application's resources.  
+- [AfxGetResourceHandle](.application-information-and-management.md#afxgetresourcehandle) Obtains a handle to the application's resources.  
   
-- [AfxGetAppName]--brokenlink--(../Topic/not%20found.md#afxgetappname) Obtains a pointer to a string containing the application's name. Alternately, if you have a pointer to the `CWinApp` object, use `m_pszExeName` to get the application's name.  
+- [AfxGetAppName](application-information-and-management.md#afxgetappname) Obtains a pointer to a string containing the application's name. Alternately, if you have a pointer to the `CWinApp` object, use `m_pszExeName` to get the application's name.  
   
  See [CWinApp: The Application Class](../../mfc/cwinapp-the-application-class.md) for more on the `CWinApp` class, including an overview of the following:  
   
@@ -346,7 +346,7 @@ LONG DelRegTree(
  Call this function to delete the specified key and its subkeys.  
   
 ##  <a name="cwinapp__domessagebox"></a>  CWinApp::DoMessageBox  
- The framework calls this member function to implement a message box for the global function [AfxMessageBox]--brokenlink--(../Topic/not%20found.md#afxmessagebox).  
+ The framework calls this member function to implement a message box for the global function [AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox).  
   
 ```  
 virtual int DoMessageBox(
@@ -1077,7 +1077,7 @@ HINSTANCE m_hInstance;
 ```  
   
 ### Remarks  
- The `m_hInstance` data member is a handle to the current instance of the application running under Windows. This is returned by the global function [AfxGetInstanceHandle]--brokenlink--(../Topic/not%20found.md#afxgetinstancehandle). `m_hInstance` is a public variable of type `HINSTANCE`.  
+ The `m_hInstance` data member is a handle to the current instance of the application running under Windows. This is returned by the global function [AfxGetInstanceHandle](application-information-and-management.md#afxgetinstancehandle). `m_hInstance` is a public variable of type `HINSTANCE`.  
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#55](../../mfc/reference/codesnippet/cpp/cwinapp-class_15.cpp)]  
@@ -1146,7 +1146,7 @@ LPCTSTR m_pszAppName;
 ### Remarks  
  The application name can come from the parameter passed to the [CWinApp](#cwinapp__cwinapp) constructor, or, if not specified, to the resource string with the ID of **AFX_IDS_APP_TITLE**. If the application name is not found in the resource, it comes from the program's .EXE filename.  
   
- Returned by the global function [AfxGetAppName]--brokenlink--(../Topic/not%20found.md#afxgetappname). `m_pszAppName` is a public variable of type **const char\***.  
+ Returned by the global function [AfxGetAppName](application-information-and-management.md#afxgetappname). `m_pszAppName` is a public variable of type **const char\***.  
   
 > [!NOTE]
 >  If you assign a value to `m_pszAppName`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:  

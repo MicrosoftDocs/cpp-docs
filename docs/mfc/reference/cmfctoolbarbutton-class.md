@@ -1398,7 +1398,7 @@ virtual void SetStyle(UINT nStyle);
  The new style of the button.  
   
 ### Remarks  
- The default implementation sets the [CMFCToolBarButton::m_nStyle](#cmfctoolbarbutton__m_nstyle) data member to `nStyle`. Override this method if you want to perform additional processing to handle the change in style. See [ToolBar Control Styles]--brokenlink--(../Topic/not%20found.md#toolbar_control_styles) for a list of valid style flags.  
+ The default implementation sets the [CMFCToolBarButton::m_nStyle](#cmfctoolbarbutton__m_nstyle) data member to `nStyle`. Override this method if you want to perform additional processing to handle the change in style. See [ToolBar Control Styles](toolbar-control-styles.md) for a list of valid style flags.  
   
 ##  <a name="cmfctoolbarbutton__setvisible"></a>  CMFCToolBarButton::SetVisible  
  Specifies whether the button is visible.  

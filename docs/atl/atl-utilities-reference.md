@@ -52,7 +52,7 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 |[CPath](../atl/reference/atl-typedefs.md#cpath)|A specialization of [CPathT](../atl/reference/cpatht-class.md) using `CString`.|  
 |[CPathA](../atl/reference/atl-typedefs.md#cpatha)|A specialization of [CPathT](../atl/reference/cpatht-class.md) using `CStringA`.|  
 |[CPathW](../atl/reference/atl-typedefs.md#cpathw)|A specialization of [CPathT](../atl/reference/cpatht-class.md) using `CStringW`.|  
-|[ATL_URL_PORT](../atl/reference/atl-http-utility-functions.md#atl_url_port)|The type used by [CUrl](../atl/reference/curl-class.md) for specifying a port number.|  
+|[ATL_URL_PORT](../atl/reference/atl-typedefs.md#atl_url_port)|The type used by [CUrl](../atl/reference/curl-class.md) for specifying a port number.|  
   
 ### Enums  
   
