@@ -1406,7 +1406,13 @@ void SetRectEmpty() throw();
 ```  
   
 ### Example  
- <!-- [!CODE [NVC_ATLMFC_Utilities#53](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#53)]  -->
+```cpp
+CRect rect;
+rect.SetRectEmpty();
+
+// rect is now (0, 0, 0, 0)
+ASSERT(rect.IsRectEmpty());   
+```
   
 ##  <a name="crect__size"></a>  CRect::Size  
  The `cx` and `cy` members of the return value contain the height and width of `CRect`.  
