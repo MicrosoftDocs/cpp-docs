@@ -124,7 +124,7 @@ class CRect : public tagRECT
 ## Requirements  
  **Header:** atltypes.h  
   
-##  `a name="crect__bottomright"></a>  CRect::BottomRight  
+##  <a name="crect__bottomright"></a>  CRect::BottomRight  
  The coordinates are returned as a reference to a [CPoint](cpoint-class.md) object that is contained in `CRect`.  
   
 ```  
