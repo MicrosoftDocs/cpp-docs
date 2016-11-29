@@ -572,7 +572,7 @@ int main() {
 ##  <a name="BKMK_Hide_by_signature_functions"></a> Hide-by-signature functions  
  In standard C++, a function in a base class is hidden by a function that has the same name in a derived class, even if the derived-class function does not have the same number or kind of parameters. This is referred to as *hide-by-name* semantics. In a reference type, a function in a base class can only be hidden by a function in a derived class if both the name and the parameter list are the same. This is known as *hide-by-signature* semantics.  
   
- A class is considered a hide-by-signature class when all of its functions are marked in the metadata as `hidebysig`. By default, all classes that are created under **/clr** have `hidebysig` functions. However, a class that's compiled by using **/clr:oldSyntax** does not have `hidebysig` functions; instead, they are hide-by-name functions. When a class has `hidebysig` functions, the compiler doesn't hide functions by name in any direct base classes, but if the compiler encounters a hide-by-name class in an inheritance chain, it continues that hide-by-name behavior.  
+ A class is considered a hide-by-signature class when all of its functions are marked in the metadata as `hidebysig`. By default, all classes that are created under **/clr** have `hidebysig` functions. When a class has `hidebysig` functions, the compiler doesn't hide functions by name in any direct base classes, but if the compiler encounters a hide-by-name class in an inheritance chain, it continues that hide-by-name behavior.  
   
  Under hide-by-signature semantics, when a function is called on an object, the compiler identifies the most derived class that contains a function that could satisfy the function call. If there is only one function in the class that could satisfy the call, the compiler calls that function. If there is more than one function in the class that could satisfy the call, the compiler uses overload resolution rules to determine which function to call. For more information about overload rules, see [Function Overloading](../cpp/function-overloading.md).  
   
@@ -677,48 +677,6 @@ int main() {
 ```Output  
 Derived::Test4  
 97  
-```  
-  
- The following sample defines a component that's compiled by using **/clr:oldSyntax**. Classes that are defined by using Managed Extensions for C++ have hide-by-name member functions.  
-  
-```  
-  
-// compile with: /clr:oldSyntax /LD  
-using namespace System;  
-public __gc struct Base0 {  
-   void Test() {   
-      Console::WriteLine("in Base0::Test");  
-   }  
-};  
-  
-public __gc struct Base1 : public Base0 {  
-   void Test(int i) {   
-      Console::WriteLine("in Base1::Test");  
-   }  
-};  
-```  
-  
- The next sample consumes the component that's built in the previous sample. Notice how hide-by-signature functionality is not applied to base classes of types that are compiled by using **/clr:oldSyntax**.  
-  
-```  
-  
-// compile with: /clr:oldSyntax /LD  
-// compile with: /clr  
-using namespace System;  
-#using "hide_by_signature_4.dll"  
-  
-ref struct Derived : public Base1 {  
-   void Test(int i, int j) {   
-      Console::WriteLine("Derived::Test");  
-   }  
-};  
-  
-int main() {  
-   Derived ^ t = gcnew Derived;  
-   t->Test(8, 8);   // OK  
-   t->Test(8);   // OK  
-   t->Test();   // C2661  
-}  
 ```  
   
 ##  <a name="BKMK_Copy_constructors"></a> Copy constructors  

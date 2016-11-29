@@ -109,7 +109,6 @@ The number of elements in v1 greater than 10 is: 3.
  **Namespace:** std  
   
 ## See Also  
- [unary_function<> Structure](../misc/unary-function-angles-structure.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 

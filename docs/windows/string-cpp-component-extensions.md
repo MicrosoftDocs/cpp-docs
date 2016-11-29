@@ -80,8 +80,6 @@ using namespace default;
   
  When passed a <xref:System.String>, the compiler will box, if necessary, and then concatenate the object (with ToString) with the string.  
   
- When compiling with **/clr:oldSyntax**, string literals will not be converted to <xref:System.String>.  
-  
 > [!NOTE]
 >  The caret ("^") indicates that the declared variable is a handle to a C++/CLI managed object.  
   

@@ -4,10 +4,43 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: 
+  - "copy_options"
+  - "filesystem::copy_options"
+  - "std::filesystem::copy_options"
+  - "filesystem/std::filesystem::copy_options"
+  - "experimental::filesystem::copy_options"
+  - "std::experimental::filesystem::copy_options"
+  - "filesystem/std::experimental::filesystem::copy_options"
+  - "directory_options"
+  - "filesystem::directory_options"
+  - "std::filesystem::directory_options"
+  - "filesystem/std::filesystem::directory_options"
+  - "experimental::filesystem::directory_options"
+  - "std::experimental::filesystem::directory_options"
+  - "filesystem/std::experimental::filesystem::directory_options"
+  - "file_type"
+  - "filesystem::file_type"
+  - "std::filesystem::file_type"
+  - "filesystem/std::filesystem::file_type"
+  - "experimental::filesystem::file_type"
+  - "std::experimental::filesystem::file_type"
+  - "filesystem/std::experimental::filesystem::file_type"
+  - "perms"
+  - "filesystem::perms"
+  - "std::filesystem::perms"
+  - "filesystem/std::filesystem::perms"
+  - "experimental::filesystem::perms"
+  - "std::experimental::filesystem::perms"
+  - "filesystem/std::experimental::filesystem::perms"
 ms.assetid: 0096c046-d101-464c-8259-b878a48280b0
 caps.latest.revision: 3
+author: "corob-msft"
+ms.author: "corob"
 manager: "ghogen"
 ---
 # &lt;filesystem&gt; enumerations
@@ -16,14 +49,14 @@ This topic documents the enums in the filesystem header.
 ## Requirements  
  **Header:** \<experimental/filesystem>  
   
- **Namespace:** std::experimental::filesystem::copy_option  
+ **Namespace:** std::experimental::filesystem  
 
-## copy_option
+##  <a name="filesystem__copy_options"></a>  copy_options
 An enumeration of bitmask values that is used with [copy](http://msdn.microsoft.com/en-us/4af7a9b0-8861-45ed-b84e-0307f0669d60) and [copy_file](http://msdn.microsoft.com/en-us/4af7a9b0-8861-45ed-b84e-0307f0669d60) functions to specify behavior.  
   
-## Syntax  
-  
-class copy_options {      
+### Syntax  
+```cpp  
+enum class copy_options {      
    none = 0,  
    skip_existing = 1,  
    overwrite_existing = 2,  
@@ -34,9 +67,8 @@ class copy_options {
    directories_only = 64,  
    create_symlinks = 128,  
    create_hard_links = 256  
-   };  
-  
-## Members  
+};  
+```  
   
 ### Values  
   
@@ -54,33 +86,44 @@ class copy_options {
 |`create_hard_links`|Make hard links instead of copying files.|  
   
 
-## directory_options
+##  <a name="filesystem__directory_options"></a> directory_options
 Specifies whether to follow symbolic links to directories or to ignore them.  
   
-## Syntax  
-  
-class directory_options {  
+### Syntax  
+```cpp  
+enum class directory_options {  
    none = 0,  
    follow_directory_symlink 
-   };  
+};  
+```  
   
-## Members  
+### Values  
   
 |Name|Description|  
 |----------|-----------------|  
 |`none`|Default behavior: ignore symbolic links to directories. Permission denied is an error.|  
 |`follow_directory_symlink`|Treat symbolic links to directories as actual directories.|  
   
-## file_type
+##  <a name="filesystem__file_type"></a>  file_type
 An enumeration for file types. The supported values are regular, and directory, not_found and unknown.  
   
-## Syntax  
-  
+### Syntax  
+```cpp  
+enum class file_type {
+    not_found = -1, 
+    none, 
+    regular, 
+    directory, 
+    symlink,
+    block, 
+    character, 
+    fifo, 
+    socket, 
+    unknown
+};  
 ```  
-enum file_type;  
-```  
   
-## Values  
+### Values  
   
 |Name|Value|Description|  
 |----------|-----------|-----------------|  
@@ -95,12 +138,12 @@ enum file_type;
 |`socket`|7|Represents a socket on UNIX based systems. (Not supported.)|  
 |`unknown`|8|Represents a file whose status cannot be determined.|  
   
-## perms
+##  <a name="filesystem__perms"></a>  perms
 Flags for file permissions. The supported values are essentially “readonly” and all. For a readonly file, none of the *_write bits are set. Otherwise the `all` bit (0x0777) is set.  
   
-## Syntax  
-  
-class perms {// names for permissions
+### Syntax  
+```cpp  
+enum class perms {// names for permissions
    none = 0,
    owner_read = 0400,  // S_IRUSR
    owner_write = 0200, // S_IWUSR
@@ -122,7 +165,9 @@ class perms {// names for permissions
    unknown = 0xFFFF,
    add_perms = 0x10000,
    remove_perms = 0x20000,
-   resolve_symlinks = 0x40000    };  
+   resolve_symlinks = 0x40000
+};  
+```  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   

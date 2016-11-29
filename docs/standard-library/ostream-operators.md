@@ -100,7 +100,7 @@ basic_ostream <_Elem, _Tr>& operator<<(
  The stream.  
   
 ### Remarks  
- The `basic_ostream` class also defines several insertion operators. For more information, see [basic_ostream::operator&lt;&lt;](../standard-library/basic-ostream-class.md#basic_ostream__operator_lt__lt_).  
+ The `basic_ostream` class also defines several insertion operators. For more information, see [basic_ostream::operator&lt;&lt;](../standard-library/basic-ostream-class.md#basic_ostream__operator_lt_lt_).  
   
  The template function  
   

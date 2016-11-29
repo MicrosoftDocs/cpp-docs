@@ -201,7 +201,7 @@ void clear(io_state state);
  If `state`**&**[exceptions](#basic_ios__exceptions) is nonzero, it then throws an object of class [failure](../standard-library/ios-base-class.md#ios_base__failure).  
   
 ### Example  
-  See [rdstate](#basic_ios__rdstate) and [getline](../standard-library/string-functions.md#getline_template_function) for examples using **clear**.  
+  See [rdstate](#basic_ios__rdstate) and [getline](../standard-library/string-functions.md#getline) for examples using **clear**.  
   
 ##  <a name="basic_ios__copyfmt"></a>  basic_ios::copyfmt  
  Copies flags from one stream to another.  

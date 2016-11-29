@@ -63,7 +63,48 @@ num
  If you have only one accessor in the user record, use the macro [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md).  
   
 ## Example  
- <!-- FIXME [!CODE [NVC_OLEDB_Consumer#15](../CodeSnippet/VS_Snippets_Cpp/NVC_OLEDB_Consumer#15)]  -->
+ ```cpp
+class CArtistsAccessor
+{
+public:
+// Data Elements
+   TCHAR m_szFirstName[21];
+   TCHAR m_szLastName[31];
+   short m_nAge;
+
+// Output binding map
+BEGIN_ACCESSOR_MAP(CArtistsAccessor, 2)
+   BEGIN_ACCESSOR(0, true)
+      COLUMN_ENTRY(1, m_szFirstName)
+      COLUMN_ENTRY(2, m_szLastName)
+   END_ACCESSOR()
+   BEGIN_ACCESSOR(1, false) // Not an auto accessor
+      COLUMN_ENTRY(3, m_nAge)
+   END_ACCESSOR()
+END_ACCESSOR_MAP()
+
+   HRESULT OpenDataSource()
+   {
+      CDataSource _db;
+      _db.Open();
+      return m_session.Open(_db);
+   }
+
+   void CloseDataSource()
+   {
+      m_session.Close();
+   }
+
+   CSession m_session;
+
+   DEFINE_COMMAND_EX(CArtistsAccessor, L" \
+   SELECT \
+      FirstName, \
+      LastName, \
+      Age \
+      FROM Artists")
+};
+ ```
   
 ## Requirements  
  **Header:** atldbcli.h  

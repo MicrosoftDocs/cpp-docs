@@ -49,12 +49,3 @@ ref class C {
    virtual int g() sealed;   // OK  
 };  
 ```  
-  
- The following sample generates C3152 and shows how to fix it:  
-  
-```  
-// C3152_2.cpp  
-// compile with: /clr:oldSyntax /c  
-__value __interface A {};   // C3152;  
-__value class X {};   // OK  
-```

@@ -39,6 +39,7 @@ translation.priority.ht:
   
  Pinning pointers cannot be function parameters, return types, or declared `static`.  
   
+## Example  
  The following sample generates C3824:  
   
 ```  
@@ -49,22 +50,3 @@ void func() {
    pin_ptr<int> b; // OK  
 }  
 ```  
-  
- **Managed Extensions for C++**  
-  
- Local pointers declared with the `__pin` keyword cannot be declared `static` and cannot be interior pointers.  
-  
- The following sample generates C3824:  
-  
-```  
-// C3824b.cpp  
-// compile with: /clr:oldSyntax /c  
-#using <mscorlib.dll>  
-  
-__gc struct A {};  
-  
-void func() {  
-   static A __pin* a;   // C3824  
-   A __pin* b;   // OK  
-}  
-```

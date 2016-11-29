@@ -74,7 +74,7 @@ Defines several types and functions related to the handling of exceptions. Excep
 |||  
 |-|-|  
 |[bad_exception Class](../standard-library/bad-exception-class.md)|The class describes an exception that can be thrown from an `unexpected_handler`.|  
-|[exception Class](Exception%20Class.xml)|The class serves as the base class for all exceptions thrown by certain expressions and by the Standard C++ Library.|  
+|[exception Class](../standard-library/exception-class.md)|The class serves as the base class for all exceptions thrown by certain expressions and by the Standard C++ Library.|  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   

@@ -39,7 +39,8 @@ translation.priority.ht:
   
  An abstract method can be declared in a managed or WinRT class, but it cannot be defined.  
   
- The following sample generates C3634:  
+## Example  
+The following sample generates C3634:  
   
 ```  
 // C3634.cpp  
@@ -51,20 +52,3 @@ ref class C {
 void C::f() {   // C3634 - don't define managed class' pure virtual method  
 }  
 ```  
-  
- **Managed Extensions for C++**  
-  
- The following sample generates C3634:  
-  
-```  
-// C3634b.cpp  
-// compile with: /clr:oldSyntax /LD  
-#using <mscorlib.dll>  
-  
-__gc class C {  
-   virtual void f() = 0;  
-};  
-  
-void C::f() {   // C3634 - don't define managed class' pure virtual method  
-}  
-```

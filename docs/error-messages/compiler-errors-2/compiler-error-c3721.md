@@ -39,27 +39,4 @@ translation.priority.ht:
   
  An event was declared incorrectly. For more information, see [__event](../../cpp/event.md).  
   
- C3721 is only reachable using **/clr:oldSyntax**.  
-  
-## Example  
- The following sample generates C3721.  
-  
-```  
-// C3721.cpp  
-// compile with: /clr:oldSyntax /c  
-using namespace System;  
-  
-public __delegate void MyDel();  
-  
-public __gc class X {  
-   __event void add_E1();      // C3721  
-   // try the following line instead  
-   // __event void add_E1(MyDel * p);  
-  
-   __event void remove_E1();   // C3721  
-   // __event void remove_E1(MyDel * p);  
-   // try the following line instead  
-  
-   __event void raise_E1();  
-};  
-```
+ C3721 is only reachable using the obsolete compiler option **/clr:oldSyntax**.  

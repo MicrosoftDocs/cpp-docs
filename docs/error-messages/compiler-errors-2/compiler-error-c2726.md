@@ -57,21 +57,3 @@ int main() {
   
 }  
 ```  
-  
- The following sample generates C2726 and shows how to fix it:  
-  
-```  
-// C2726b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-using namespace System;  
-  
-class U {};  
-__gc class V {};  
-  
-int main() {  
-   U* pU = __gc new U;    // C2726  
-   U* pU2 = new U;    // OK  
-   V* p2 = __gc new V;  
-}  
-```

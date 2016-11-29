@@ -52,25 +52,3 @@ int main() {
    pin_ptr<int> p2 = &x;   // OK  
 }  
 ```  
-  
-## Example  
- The following sample generates C3834.  
-  
-```  
-// C3834_b.cpp  
-// compile with: /clr:oldSyntax  
-using namespace System;  
-  
-int main() {  
-   const __wchar_t * pS = reinterpret_cast<const __wchar_t __pin*>(S"hello");   // C3834  
-  
-   // OK   
-   // declare a pinning variable  
-   String __pin* ppin = S"Hello";  
-  
-   // cast pinning variable to unmanaged type  
-   const __wchar_t * pS2 = reinterpret_cast<__wchar_t*>(ppin);     
-  
-   pS2 += 6;  
-}  
-```

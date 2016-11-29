@@ -83,7 +83,7 @@ using tuple_element_t = typename tuple_element<Index, Tuple>::type;
  type  
   
 ## Remarks  
- The templates are specializations of the template class [tuple_element Class](../standard-library/tuple-element-class-tuple.md). Each has a single member typedef, `type`, which is a synonym for the type of the element at the specified position in the `pair`, with any const and/or volatile qualifications preserved. `tuple_element_t` is a convenient alias for `tuple_element<N, pair<T1, T2>>::type`. Use the [get Function &lt;utility&gt;](../standard-library/utility-functions.md#get_function__lt_utility_gt_) to return the element at a specified position or (in C++14 / Visual Studio 2015) of a specified type.  
+ The templates are specializations of the template class [tuple_element Class](../standard-library/tuple-element-class-tuple.md). Each has a single member typedef, `type`, which is a synonym for the type of the element at the specified position in the `pair`, with any const and/or volatile qualifications preserved. `tuple_element_t` is a convenient alias for `tuple_element<N, pair<T1, T2>>::type`. Use the [get Function &lt;utility&gt;](../standard-library/utility-functions.md#get) to return the element at a specified position or (in C++14 / Visual Studio 2015) of a specified type.  
   
 ## Example  
   
@@ -125,5 +125,5 @@ Output:
   
 ## See Also  
  [\<utility>](../standard-library/utility.md)   
- [get Function &lt;utility&gt;](../standard-library/utility-functions.md#get_function__lt_utility_gt_)   
+ [get Function &lt;utility&gt;](../standard-library/utility-functions.md#get)   
  [tuple_size Class](../standard-library/tuple-size-class-utility.md)

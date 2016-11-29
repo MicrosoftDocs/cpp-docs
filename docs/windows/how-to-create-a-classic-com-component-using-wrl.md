@@ -59,15 +59,39 @@ You can use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[
   
 8.  Add this code to CalculatorComponent.def:  
   
-     <!--FIXME[!CODE [wrl-classic-com-component#4](../CodeSnippet/VS_Snippets_Misc/wrl-classic-com-component#4)]-->  
-  
+    ```
+    LIBRARY
+
+    EXPORTS
+        DllGetActivationFactory PRIVATE
+        DllGetClassObject       PRIVATE
+        DllCanUnloadNow         PRIVATE  
+    ```
+
 9. Add runtimeobject.lib to the linker line. To learn how, see [.Lib Files as Linker Input](../build/reference/dot-lib-files-as-linker-input.md).  
   
 ### To consume the COM component from a desktop app  
   
 1.  Register the COM component with the Windows Registry. To do so, create a registration entries file, name it `RegScript.reg`, and add the following text. Replace *\<dll-path>* with the path of your DLL—for example, `C:\\temp\\WRLClassicCOM\\Debug\\CalculatorComponent.dll`.  
   
-     <!--FIXME[!CODE [wrl-classic-com-component#5](../CodeSnippet/VS_Snippets_Misc/wrl-classic-com-component#5)]-->  
+    ```
+    Windows Registry Editor Version 5.00
+
+    [HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{E68F5EDD-6257-4E72-A10B-4067ED8E85F2}]
+    @="CalculatorComponent Class"
+
+    [HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{E68F5EDD-6257-4E72-A10B-4067ED8E85F2}\InprocServer32]
+    @="<dll-path>"
+    "ThreadingModel"="Apartment"
+
+    [HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{E68F5EDD-6257-4E72-A10B-4067ED8E85F2}\Programmable]
+
+    [HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{E68F5EDD-6257-4E72-A10B-4067ED8E85F2}\TypeLib]
+    @="{9D3E6826-CB8E-4D86-8B14-89F0D7EFCD01}"
+
+    [HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{E68F5EDD-6257-4E72-A10B-4067ED8E85F2}\Version]
+    @="1.0"
+    ```  
   
 2.  Run RegScript.reg or add it to your project’s **Post-Build Event**. For more information, see [Pre-build Event/Post-build Event Command Line Dialog Box](/visualstudio/ide/reference/pre-build-event-post-build-event-command-line-dialog-box).  
   

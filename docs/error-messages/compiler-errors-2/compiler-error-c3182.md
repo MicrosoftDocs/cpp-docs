@@ -55,28 +55,3 @@ ref struct D : B {
    }  
 };  
 ```  
-  
- The following sample generates C3182 and shows how to fix it.  
-  
-```  
-// C3182b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-  
-__gc struct B {  
-   void mf(int)  
-   {  
-   }  
-};  
-  
-__gc struct D : B {  
-   using B::mf;   // C3182, delete to resolve  
-   void mf(char)  
-   {  
-   }  
-};  
-  
-int main()  
-{  
-}  
-```

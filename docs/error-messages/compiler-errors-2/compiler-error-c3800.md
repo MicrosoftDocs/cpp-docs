@@ -39,24 +39,4 @@ translation.priority.ht:
   
  You cannot declare a construct to be both a property and an event.  
   
- C3800 is only reachable using **/clr:oldSyntax**.  
-  
- The following sample generates C3800:  
-  
-```  
-// C3800.cpp  
-// compile with: /clr:oldSyntax  
-#using "mscorlib.dll"  
-  
-__delegate void MyDel();  
-public __gc struct S  
-{  
-   __property __event void set_E(MyDel*)  
-   {  
-   }   // C3800  
-};  
-  
-int main()  
-{  
-}  
-```
+ C3800 is only reachable using the obsolete compiler option **/clr:oldSyntax**.  

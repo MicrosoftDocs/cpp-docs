@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiler Error C2843
-'member' : cannot take the address of a non-static data member or method of a managed or WinRTtype  
+'member' : cannot take the address of a non-static data member or method of a managed or WinRT type  
   
  An instance is needed to take the address of nonstatic data members of a managed or WinRT class or interface.  
   
@@ -68,34 +68,3 @@ int main() {
    interior_ptr<int> ii = &x->m_i;  
 }  
 ```  
-  
- The following sample generates C2843 and shows how to fix it:  
-  
-```  
-// C2843.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-public __gc class C {  
-public:  
-   int m_i;  
-};  
-  
-__gc struct MyStruct {  
-   static void sf() {}  
-   void f() {}  
-};  
-  
-int main() {  
-   MyStruct *ps = new MyStruct;  
-   void (__clrcall MyStruct::*F1)() = & MyStruct::f;   // C2843  
-   void (__clrcall MyStruct::*F2)() = & ps->f;   // C2843  
-   void (__clrcall MyStruct::*F3)();   // C2843  
-  
-   void (__clrcall *F5)() = MyStruct::sf;   // OK  
-   void (__clrcall *F6)() = & ps->sf;   // OK  
-  
-   int __gc *i = &C::m_i; // C2843  
-   C *x = new C();  
-   int __gc *i = &x->m_i;  
-}  
-```

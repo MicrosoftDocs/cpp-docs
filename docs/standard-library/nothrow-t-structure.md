@@ -49,7 +49,7 @@ struct std::nothrow_t {};
  The struct helps the compiler to select the correct version of the constructor. [nothrow](../standard-library/new-functions.md#nothrow) is a synonym for objects of type `std::nothrow_t`.  
   
 ## Example  
- See [operator new](../standard-library/new-operators.md#operator_new) and [operator new&#91;&#93;](../standard-library/new-operators.md#operator_new_at) for examples of how `std::nothrow_t` is used as a function parameter.  
+ See [operator new](../standard-library/new-operators.md#operator_new) and [operator new&#91;&#93;](../standard-library/new-operators.md#operator_new_arr) for examples of how `std::nothrow_t` is used as a function parameter.  
   
 ## Requirements  
  **Header:** \<new>  

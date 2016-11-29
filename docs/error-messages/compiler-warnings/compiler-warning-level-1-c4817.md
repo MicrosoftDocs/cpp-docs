@@ -53,17 +53,3 @@ int main() {
    Console::WriteLine( a->Length );   // OK  
 }  
 ```  
-  
-## Example  
- C4817 can also be generated using **/clr:oldSyntax**. The following sample generates C4817.  
-  
-```  
-// C4817_b.cpp  
-// compile with: /clr:oldSyntax /W1  
-using namespace System;  
-int main() {  
-   Int32 a[] = new Int32[11];  
-   Console::WriteLine( a.Length );  
-   // Console::WriteLine( a->Length );  
-}  
-```

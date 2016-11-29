@@ -62,7 +62,7 @@ Defines Standard Template Library (STL) types, functions, and operators that hel
 |||  
 |-|-|  
 |[forward](../standard-library/utility-functions.md#forward)|Preserves the reference type (either `lvalue` or `rvalue`) of the argument from being obscured by perfect forwarding.|  
-|[get](../standard-library/utility-functions.md#get_function__lt_utility_gt_)|A function that gets an element from a `pair` object.|  
+|[get](../standard-library/utility-functions.md#get)|A function that gets an element from a `pair` object.|  
 |[make_pair](../standard-library/utility-functions.md#make_pair)|A template helper function used to construct objects of type `pair`, where the component types are based on the data types passed as parameters.|  
 |[move](../standard-library/utility-functions.md#move)|Returns the passed in argument as an `rvalue` reference.|  
 |[swap](../standard-library/utility-functions.md#swap)|Exchanges the elements of two `pair` objects.|  

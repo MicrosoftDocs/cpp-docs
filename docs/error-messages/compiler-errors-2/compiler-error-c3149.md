@@ -65,20 +65,3 @@ delegate int MyDelegate(const int, int);
 void Test1(MyDelegate m) {}   // C3149  
 void Test2(MyDelegate ^ m) {}   // OK  
 ```  
-  
- **Managed Extensions for C++**  
-  
- A managed object was not used correctly.  
-  
- The following sample generates C3149:  
-  
-```  
-// C3149c.cpp  
-// compile with: /clr:oldSyntax  
-__gc class A {};  
-  
-int main() {  
-   A a = new A;   // C3149  
-   A *a = new A;   // OK  
-}  
-```

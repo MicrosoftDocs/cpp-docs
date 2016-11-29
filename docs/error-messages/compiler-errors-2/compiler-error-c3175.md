@@ -63,33 +63,3 @@ int main() {
    func2();  
 }  
 ```  
-  
- The following sample generates C3175:  
-  
-```  
-// C3175.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-  
-__gc struct A  
-{  
-   static void func()  
-   {  
-   }  
-};  
-  
-#pragma unmanaged   // remove this line to resolve  
-  
-void func2()  
-{  
-   A::func();   // C3175  
-}  
-  
-#pragma managed  
-  
-int main()  
-{  
-   A *a = new A;  
-   func2();  
-}  
-```
