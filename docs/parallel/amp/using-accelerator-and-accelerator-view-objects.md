@@ -188,22 +188,22 @@ accelerator chosen_one;
   
 ## Using Multiple Accelerators  
  There are two ways to use multiple accelerators in your app:  
-  
--   You can pass `accelerator_view` objects to the calls to the [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each_function) method.  
+
+-   You can pass `accelerator_view` objects to the calls to the [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) method.  
   
 -   You can construct an `array` object using a specific `accelerator_view` object. The C+AMP runtime will pick up the `accelerator_view` object from the captured `array` object in the lambda expression.  
   
 ## Special Accelerators  
  The device paths of three special accelerators are available as properties of the `accelerator` class:  
   
-- [accelerator::direct3d_ref Data Member](../topic/accelerator::direct3d_ref%20data%20member.md): This single-threaded accelerator uses software on the CPU to emulate a generic graphics card. It's used by default for debugging, but it's not useful in production because it's slower than the hardware accelerators. Additionally, it's available only in the DirectX SDK and the Windows SDK, and it's unlikely to be installed on your customers' computers. For more information, see [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code).  
+- [accelerator::direct3d_ref Data Member](reference/accelerator-class.md#accelerator__direct3d_ref): This single-threaded accelerator uses software on the CPU to emulate a generic graphics card. It's used by default for debugging, but it's not useful in production because it's slower than the hardware accelerators. Additionally, it's available only in the DirectX SDK and the Windows SDK, and it's unlikely to be installed on your customers' computers. For more information, see [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code).  
   
-- [accelerator::direct3d_warp Data Member](../topic/accelerator::direct3d_warp%20data%20member.md): This accelerator provides a fallback solution for executing C++ AMP code on multi-core CPUs that use Streaming SIMD Extensions (SSE).  
+- [accelerator::direct3d_warp Data Member](reference/accelerator-class.md#accelerator__direct3d_warp): This accelerator provides a fallback solution for executing C++ AMP code on multi-core CPUs that use Streaming SIMD Extensions (SSE).  
   
-- [accelerator::cpu_accelerator Data Member](reference/accelerator-class.md#accelerator__cpu_accelerator_data_member): You can use this accelerator for setting up staging arrays. It cannot execute C++ AMP code. For more information, see the [Staging Arrays in C++ AMP](http://go.microsoft.com/fwlink/p/linkid=248485) post on the Parallel Programming in Native Code blog.  
+- [accelerator::cpu_accelerator Data Member](reference/accelerator-class.md#accelerator__cpu_accelerator): You can use this accelerator for setting up staging arrays. It cannot execute C++ AMP code. For more information, see the [Staging Arrays in C++ AMP](http://go.microsoft.com/fwlink/p/LinkId=248485) post on the Parallel Programming in Native Code blog.  
   
 ## Interoperability  
- The C++ AMP runtime supports interoperability between the `accelerator_view` class and the Direct3D [ID3D11Device interface](http://go.microsoft.com/fwlink/p/linkid=248488). The [create_accelerator_view](reference/concurrency-namespace-functions-amp.md#create_accelerator_view_function) method takes an `IUnknown` interface and returns an `accelerator_view` object. The [get_device](http://msdn.microsoft.com/en-us/8194125e-8396-4d62-aa8a-65831dea8439) method takes an `accelerator_view` object and returns an `IUknown` interface.  
+ The C++ AMP runtime supports interoperability between the `accelerator_view` class and the Direct3D [ID3D11Device interface](http://go.microsoft.com/fwlink/p/LinkId=248488). The [create_accelerator_view](reference/concurrency-namespace-functions.md#create_accelerator_view) method takes an `IUnknown` interface and returns an `accelerator_view` object. The [get_device](http://msdn.microsoft.com/en-us/8194125e-8396-4d62-aa8a-65831dea8439) method takes an `accelerator_view` object and returns an `IUknown` interface.  
   
 ## See Also  
  [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)   

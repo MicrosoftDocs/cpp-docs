@@ -90,7 +90,6 @@ int main() {
 ```  
   
 ## See Also  
- [C++ Built-in Operators, Precedence and Associativity](cpp-built-in-operators-precedence-and-associativity.md)  
- [C++ Operators](cpp-built-in-operators-precedence-and-associativity.md)   
+ [Logical Operators](../misc/logical-operators.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C Logical Operators](../c-language/c-logical-operators.md)

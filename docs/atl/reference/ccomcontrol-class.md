@@ -162,7 +162,7 @@ HRESULT FireOnChanged(DISPID dispID);
  One of the standard HRESULT values.  
   
 ### Remarks  
- If your control class derives from [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638), this method calls [CFirePropNotifyEvent::FireOnChanged](cfirepropnotifyevent-class.md#cfirepropnotifyevent__fireonchanged) to notify all connected `IPropertyNotifySink` interfaces that the specified control property has changed. If your control class does not derive from `IPropertyNotifySink`, this method returns `S_OK`.  
+ If your control class derives from [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638), this method calls [CFirePropNotifyEvent::FireOnChanged](cfirepropnotifyevent-class.md#cfirepropnotifyevent__fireonchanged) to notify all connected `IPropertyNotifySink` interfaces that the specified control property has changed. If your control class does not derive from `IPropertyNotifySink`, this method returns `S_OK`. 
   
  This method is safe to call even if your control doesn't support connection points.  
   
@@ -185,6 +185,7 @@ HRESULT FireOnRequestEdit(DISPID dispID);
   
 ### Remarks  
  If your control class derives from [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638), this method calls [CFirePropNotifyEvent::FireOnRequestEdit](cfirepropnotifyevent-class.md#cfirepropnotifyevent__fireonrequestedit) to notify all connected `IPropertyNotifySink` interfaces that the specified control property is about to change. If your control class does not derive from `IPropertyNotifySink`, this method returns `S_OK`.  
+
   
  This method is safe to call even if your control doesn't support connection points.  
   

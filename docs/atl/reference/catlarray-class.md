@@ -81,7 +81,8 @@ template<typename E,  class ETraits = CElementTraits<E>>  class CAtlArray
   
 |||  
 |-|-|  
-|[operator &#91;&#93;](catlarray-class.md#catlarray__operator)|Call this operator to return a reference to an element in the array.|  
+|[operator &#91;&#93;](#operator__at)|Call this operator to return a reference to an element in the array.|  
+
   
 ### Typedefs  
   

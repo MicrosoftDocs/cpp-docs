@@ -49,7 +49,7 @@ This document demonstrates how to use the Concurrency Runtime to move the work t
   
 -   [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)  
   
--   [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl)  
+-   [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation)  
   
  We also recommend that you understand the basics of MFC application development and [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] before you start this walkthrough. For more information about MFC, see [MFC Desktop Applications](../../mfc/mfc-desktop-applications.md). For more information about [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)], see [GDI+]--brokenlink--(_gdiplus_GDI_start_cpp).  
   
@@ -151,7 +151,9 @@ This document demonstrates how to use the Concurrency Runtime to move the work t
   
      [!code-cpp[concrt-mandelbrot#103](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_11.cpp)]  
   
-4.  In the `CChildView::DrawMandelbrot` method, after the call to `Bitmap::UnlockBits`, call the [concurrency::send](reference/concurrency-namespace-functions.md#send_function) function to pass the `Bitmap` object to the UI thread. Then post a paint message to the UI thread and invalidate the client area.  
+
+4.  In the `CChildView::DrawMandelbrot` method, after the call to `Bitmap::UnlockBits`, call the [concurrency::send](reference/concurrency-namespace-functions.md#send) function to pass the `Bitmap` object to the UI thread. Then post a paint message to the UI thread and invalidate the client area.  
+
   
      [!code-cpp[concrt-mandelbrot#104](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_12.cpp)]  
   
@@ -168,7 +170,9 @@ This document demonstrates how to use the Concurrency Runtime to move the work t
  [[Top](#top)]  
   
 ##  <a name="performance"></a> Improving Drawing Performance  
- The generation of the Mandelbrot fractal is a good candidate for parallelization because the computation of each pixel is independent of all other computations. To parallelize the drawing procedure, convert the outer `for` loop in the `CChildView::DrawMandelbrot` method to a call to the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for_function) algorithm, as follows.  
+
+ The generation of the Mandelbrot fractal is a good candidate for parallelization because the computation of each pixel is independent of all other computations. To parallelize the drawing procedure, convert the outer `for` loop in the `CChildView::DrawMandelbrot` method to a call to the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm, as follows.  
+
   
  [!code-cpp[concrt-mandelbrot#301](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_14.cpp)]  
   
@@ -179,12 +183,12 @@ This document demonstrates how to use the Concurrency Runtime to move the work t
 ##  <a name="cancellation"></a> Adding Support for Cancellation  
  This section describes how to handle window resizing and how to cancel any active drawing tasks when the window is destroyed.  
   
- The document [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl) explains how cancellation works in the runtime. Cancellation is cooperative; therefore, it does not occur immediately. To stop a canceled task, the runtime throws an internal exception during a subsequent call from the task into the runtime. The previous section shows how to use the `parallel_for` algorithm to improve the performance of the drawing task. The call to `parallel_for` enables the runtime to stop the task, and therefore enables cancellation to work.  
+ The document [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation) explains how cancellation works in the runtime. Cancellation is cooperative; therefore, it does not occur immediately. To stop a canceled task, the runtime throws an internal exception during a subsequent call from the task into the runtime. The previous section shows how to use the `parallel_for` algorithm to improve the performance of the drawing task. The call to `parallel_for` enables the runtime to stop the task, and therefore enables cancellation to work.  
   
 ### Cancelling Active Tasks  
  The Mandelbrot application creates `Bitmap` objects whose dimensions match the size of the client window. Every time the client window is resized, the application creates an additional background task to generate an image for the new window size. The application does not require these intermediate images; it requires only the image for the final window size. To prevent the application from performing this additional work, you can cancel any active drawing tasks in the message handlers for the `WM_SIZE` and `WM_SIZING` messages and then reschedule drawing work after the window is resized.  
   
- To cancel active drawing tasks when the window is resized, the application calls the [concurrency::task_group::cancel](reference/task_group-class.md#task_group__cancel_method) method in the handlers for the `WM_SIZING` and `WM_SIZE` messages. The handler for the `WM_SIZE` message also calls the [concurrency::task_group::wait](reference/task_group-class.md#task_group__wait_method) method to wait for all active tasks to complete and then reschedules the drawing task for the updated window size.  
+ To cancel active drawing tasks when the window is resized, the application calls the [concurrency::task_group::cancel](reference/task-group-class.md#task_group__cancel) method in the handlers for the `WM_SIZING` and `WM_SIZE` messages. The handler for the `WM_SIZE` message also calls the [concurrency::task_group::wait](reference/task-group-class.md#task_group__wait) method to wait for all active tasks to complete and then reschedules the drawing task for the updated window size.  
   
  When the client window is destroyed, it is good practice to cancel any active drawing tasks. Canceling any active drawing tasks makes sure that worker threads do not post messages to the UI thread after the client window is destroyed. The application cancels any active drawing tasks in the handler for the `WM_DESTROY` message.  
   
@@ -239,5 +243,5 @@ This document demonstrates how to use the Concurrency Runtime to move the work t
  [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)   
  [Message Passing Functions](../../parallel/concrt/message-passing-functions.md)   
  [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)   
- [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl)   
+ [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation)   
  [MFC Desktop Applications](../../mfc/mfc-desktop-applications.md)

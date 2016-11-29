@@ -117,5 +117,5 @@ STDMETHOD(LockServer)(BOOL fLock);
   
 ## See Also  
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
- [CComGlobalsThreadModel](../topic/ccomglobalsthreadmodel.md)   
+ [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)   
  [Class Overview](../../atl/atl-class-overview.md)

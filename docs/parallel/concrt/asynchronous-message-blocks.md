@@ -36,7 +36,8 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Asynchronous Message Blocks
-The Agents Library provides several message-block types that enable you to propagate messages among application components in a thread-safe manner. These message-block types are often used with the various message-passing routines, such as [concurrency::send](reference/concurrency-namespace-functions.md#send_function), [concurrency::asend](reference/concurrency-namespace-functions.md#asend_function), [concurrency::receive](reference/concurrency-namespace-functions.md#receive_function), and [concurrency::try_receive](reference/concurrency-namespace-functions.md#try_receive_function). For more information about the message passing routines that are defined by the Agents Library, see [Message Passing Functions](../../parallel/concrt/message-passing-functions.md).  
+
+The Agents Library provides several message-block types that enable you to propagate messages among application components in a thread-safe manner. These message-block types are often used with the various message-passing routines, such as [concurrency::send](reference/concurrency-namespace-functions.md#send), [concurrency::asend](reference/concurrency-namespace-functions.md#asend), [concurrency::receive](reference/concurrency-namespace-functions.md#receive), and [concurrency::try_receive](reference/concurrency-namespace-functions.md#try_receive). For more information about the message passing routines that are defined by the Agents Library, see [Message Passing Functions](../../parallel/concrt/message-passing-functions.md).  
   
 ##  <a name="top"></a> Sections  
  This topic contains the following sections:  
@@ -81,6 +82,7 @@ The Agents Library provides several message-block types that enable you to propa
   
  The Agents Library enables message blocks to asynchronously or synchronously pass messages. When you pass a message to a message block synchronously, for example, by using the `send` function, the runtime blocks the current context until the target block either accepts or rejects the message. When you pass a message to a message block asynchronously, for example, by using the `asend` function, the runtime offers the message to the target, and if the target accepts the message, the runtime schedules an asynchronous task that propagates the message to the receiver. The runtime uses lightweight tasks to propagate messages in a cooperative manner. For more information about lightweight tasks, see [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md).  
   
+
  Applications connect sources and targets together to form messaging networks. Typically, you link the network and call `send` or `asend` to pass data to the network. To connect a source message block to a target, call the [concurrency::ISource::link_target](reference/isource-class.md#isource__link_target_method) method. To disconnect a source block from a target, call the [concurrency::ISource::unlink_target](reference/isource-class.md#isource__unlink_target_method) method. To disconnect a source block from all of its targets, call the [concurrency::ISource::unlink_targets](reference/isource-class.md#isource__unlink_targets_method) method. When one of the predefined message block types leaves scope or is destroyed, it automatically disconnects itself from any target blocks. Some message block types restrict the maximum number of targets that they can write to. The following section describes the restrictions that apply to the predefined message block types.  
   
  [[Top](#top)]  
@@ -218,6 +220,7 @@ The Agents Library provides several message-block types that enable you to propa
  The [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) class acts as both a message receiver and as a message sender. The `transformer` class resembles the `call` class because it performs a user-defined work function when it receives data. However, the `transformer` class also sends the result of the work function to receiver objects. Like a `call` object, a `transformer` object acts in parallel to other components that send messages to it. If a `transformer` object is performing work when it receives a message, it adds that message to a queue. Every `transformer` object processes its queued messages in the order in which they are received.  
   
  The `transformer` class sends its message to one target. If you set the `_PTarget` parameter in the constructor to `NULL`, you can later specify the target by calling the [concurrency::link_target](reference/source_block-class.md#source_block__link_target_method) method.  
+
   
  Unlike all other asynchronous message block types that are provided by the Agents Library, the `transformer` class can act on different input and output types. This ability to transform data from one type to another makes the `transformer` class a key component in many concurrent networks. In addition, you can add more fine-grained parallel functionality in the work function of a `transformer` object.  
   
@@ -241,12 +244,16 @@ The Agents Library provides several message-block types that enable you to propa
   
  Reading from a choice object resembles calling the Windows API function `WaitForMultipleObjects` when it has the `bWaitAll` parameter set to `FALSE`. However, the `choice` class binds data to the event itself instead of to an external synchronization object.  
   
- Typically, you use the `choice` class together with the [concurrency::receive](reference/concurrency-namespace-functions.md#receive_function) function to drive control-flow in your application. Use the `choice` class when you have to select among message buffers that have different types. Use the `single_assignment` class when you have to select among message buffers that have the same type.  
+
+ Typically, you use the `choice` class together with the [concurrency::receive](reference/concurrency-namespace-functions.md#receive) function to drive control-flow in your application. Use the `choice` class when you have to select among message buffers that have different types. Use the `single_assignment` class when you have to select among message buffers that have the same type.  
+
   
  The order in which you link sources to a `choice` object is important because it can determine which message is selected. For example, consider the case where you link multiple message buffers that already contain a message to a `choice` object. The `choice` object selects the message from the first source that it is linked to. After you link all sources, the `choice` object preserves the order in which each source receives a message.  
   
 ### Example  
- The following example shows the basic structure of how to work with the `choice` class. This example uses the [concurrency::make_choice](reference/concurrency-namespace-functions.md#make_choice_function) function to create a `choice` object that selects among three message blocks. The example then computes various Fibonacci numbers and stores each result in a different message block. The example then prints to the console a message that is based on the operation that finished first.  
+
+ The following example shows the basic structure of how to work with the `choice` class. This example uses the [concurrency::make_choice](reference/concurrency-namespace-functions.md#make_choice) function to create a `choice` object that selects among three message blocks. The example then computes various Fibonacci numbers and stores each result in a different message block. The example then prints to the console a message that is based on the operation that finished first.  
+
   
  [!code-cpp[concrt-choice-structure#1](../../parallel/concrt/codesnippet/cpp/asynchronous-message-blocks_6.cpp)]  
   
@@ -258,7 +265,8 @@ fib35 received its value first. Result = 9227465
   
  Because the task that computes the 35<sup>th</sup> Fibonacci number is not guaranteed to finish first, the output of this example can vary.  
   
- This example uses the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke_function) algorithm to compute the Fibonacci numbers in parallel. For more information about `parallel_invoke`, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
+
+ This example uses the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) algorithm to compute the Fibonacci numbers in parallel. For more information about `parallel_invoke`, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
   
  For a complete example that shows how to use the `choice` class, see [How to: Select Among Completed Tasks](../../parallel/concrt/how-to-select-among-completed-tasks.md).  
   
@@ -277,7 +285,8 @@ fib35 received its value first. Result = 9227465
  Greedy joins perform better than non-greedy joins because they accept messages immediately. However, in rare cases, greedy joins can lead to deadlocks. Use a non-greedy join when you have multiple joins that contain one or more shared source objects.  
   
 ### Example  
- The following example shows the basic structure of how to work with the `join` class. This example uses the [concurrency::make_join](reference/concurrency-namespace-functions.md#make_join_function) function to create a `join` object that receives from three `single_assignment` objects. This example computes various Fibonacci numbers, stores each result in a different `single_assignment` object, and then prints to the console each result that the `join` object holds. This example is similar to the example for the `choice` class, except that the `join` class waits for all source message blocks to receive a message.  
+
+ The following example shows the basic structure of how to work with the `join` class. This example uses the [concurrency::make_join](reference/concurrency-namespace-functions.md#make_join) function to create a `join` object that receives from three `single_assignment` objects. This example computes various Fibonacci numbers, stores each result in a different `single_assignment` object, and then prints to the console each result that the `join` object holds. This example is similar to the example for the `choice` class, except that the `join` class waits for all source message blocks to receive a message.  
   
  [!code-cpp[concrt-join-structure#1](../../parallel/concrt/codesnippet/cpp/asynchronous-message-blocks_7.cpp)]  
   
@@ -286,8 +295,8 @@ fib35 received its value first. Result = 9227465
 ```Output  
 fib35 = 9227465fib37 = 24157817half_of_fib42 = 1.33957e+008  
 ```  
-  
- This example uses the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke_function) algorithm to compute the Fibonacci numbers in parallel. For more information about `parallel_invoke`, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
+
+ This example uses the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) algorithm to compute the Fibonacci numbers in parallel. For more information about `parallel_invoke`, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
   
  For complete examples that show how to use the `join` class, see [How to: Select Among Completed Tasks](../../parallel/concrt/how-to-select-among-completed-tasks.md) and [Walkthrough: Using join to Prevent Deadlock](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md).  
   
@@ -296,6 +305,7 @@ fib35 = 9227465fib37 = 24157817half_of_fib42 = 1.33957e+008
 ##  <a name="timer"></a> timer Class  
  The concurrency::[timer class](../../parallel/concrt/reference/timer-class.md) acts as a message source. A `timer` object sends a message to a target after a specified period of time has elapsed. The `timer` class is useful when you must delay sending a message or you want to send a message at a regular interval.  
   
+
  The `timer` class sends its message to just one target. If you set the `_PTarget` parameter in the constructor to `NULL`, you can later specify the target by calling the [concurrency::ISource::link_target](reference/source_block-class.md#source_block__link_target_method) method.  
   
  A `timer` object can be repeating or non-repeating. To create a repeating timer, pass `true` for the `_Repeating` parameter when you call the constructor. Otherwise, pass `false` for the `_Repeating` parameter to create a non-repeating timer. If the timer is repeating, it sends the same message to its target after each interval.  

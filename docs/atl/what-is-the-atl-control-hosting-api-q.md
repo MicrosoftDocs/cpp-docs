@@ -56,8 +56,7 @@ ATL's control-hosting API is the set of functions that allows any window to act 
  The first seven functions call [AtlAxWinInit](http://msdn.microsoft.com/library/fe1b3bd1-3fc9-42e5-ba03-66cae7dd5b7e) implicitly.  
   
 > [!NOTE]
->  The control-hosting API forms the foundation of ATL's support for ActiveX control containment. However, there is usually little need to call these functions directly if you take advantage of or make full use of ATL's wrapper classes. For more information, see [Which ATL Classes Facilitate ActiveX Control Containment] $$brokenlink$$(../Topic/Which%20ATL%20Classes%20Facilitate%20ActiveX%20Control%20Containment.md).  
+>  The control-hosting API forms the foundation of ATL's support for ActiveX control containment. However, there is usually little need to call these functions directly if you take advantage of or make full use of ATL's wrapper classes. For more information, see [Which ATL Classes Facilitate ActiveX Control Containment](which-atl-classes-facilitate-activex-control-containment-q.md).  
   
 ## See Also  
- [Control Containment FAQ](../atl/atl-control-containment-faq.md)
-f
+ [Control Containment FAQ](which-atl-classes-facilitate-activex-control-containment-q.md)

@@ -69,7 +69,7 @@ class CAtlComModule :  public _ATL_COM_MODULE
  This class replaces the obsolete [CComModule](../../atl/reference/ccommodule-class.md) class used in earlier versions of ATL. See [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
   
 ## Inheritance Hierarchy  
- [_ATL_COM_MODULE](../topic/_atl_com_module.md)  
+ [_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module)  
   
  `CAtlComModule`  
   
@@ -175,5 +175,5 @@ HRESULT UnRegisterTypeLib(LPCTSTR lpszIndex);
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ## See Also  
- [_ATL_COM_MODULE](../topic/_atl_com_module.md)   
+ [_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module)   
  [Class Overview](../../atl/atl-class-overview.md)

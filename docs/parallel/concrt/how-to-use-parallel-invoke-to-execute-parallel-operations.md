@@ -35,7 +35,8 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Use parallel_invoke to Execute Parallel Operations
-This example shows how to use the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke_function) algorithm to improve the performance of a program that performs multiple operations on a shared data source. Because no operations modify the source, they can be executed in parallel in a straightforward manner.  
+This example shows how to use the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) algorithm to improve the performance of a program that performs multiple operations on a shared data source. Because no operations modify the source, they can be executed in parallel in a straightforward manner.  
+
   
 ## Example  
  Consider the following code example that creates a variable of type `MyDataType`, calls a function to initialize that variable, and then performs multiple lengthy operations on that data.  
@@ -95,5 +96,6 @@ The following palindromes appear in the text:
   
 ## See Also  
  [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)   
- [parallel_invoke Function](reference/concurrency-namespace-functions.md#parallel_invoke_function)
+ [parallel_invoke Function](reference/concurrency-namespace-functions.md#parallel_invoke)
+
 

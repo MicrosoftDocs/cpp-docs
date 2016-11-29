@@ -72,6 +72,7 @@ bool operator!= (
  `true` if the tuples are not equal; otherwise, `false`.  
   
 ##  <a name="operator_add"></a>  operator+   
+
  Computes the component-wise sum of the specified arguments.  
   
 ```  
@@ -116,6 +117,7 @@ class _Tuple_type> _Tuple_type<_Rank>   operator+(
  The component-wise sum of the specified arguments.  
   
 ##  <a name="operator-"></a>  operator-   
+
  Computes the component-wise difference between the specified arguments.  
   
 ```  
@@ -160,6 +162,7 @@ _Tuple_type<_Rank>   operator-(
  The component-wise difference between the specified arguments.  
   
 ##  <a name="operator_star"></a>  operator*   
+
  Computes the component-wise product of the specified arguments.  
   
 ```  
@@ -194,6 +197,7 @@ _Tuple_type<_Rank>   operator*(
 ### Return Value  
  The component-wise product of the specified arguments.  
   
+
 ##  <a name="operator_"></a>  operator/   
  Computes the component-wise quotient of the specified arguments.  
   
@@ -230,6 +234,7 @@ _Tuple_type<_Rank>   operator/(
  The component-wise quotient of the specified arguments.  
   
 ##  <a name="operator_mod"></a>  operator%   
+
  Computes the modulus of the first specified argument by the second specified argument.  
   
 ```  
@@ -265,4 +270,4 @@ _Tuple_type<_Rank>   operator%(
  The result of the first specified argument modulus the second specified argument.  
   
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace ](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)

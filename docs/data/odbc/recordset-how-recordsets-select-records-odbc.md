@@ -60,7 +60,9 @@ This topic applies to the MFC ODBC classes.
 |Declare your recordset class with the **Add Class** wizard|Specify which table to select from.<br /><br /> Specify which columns to include.<br /><br /> See [Adding an MFC ODBC Consumer](../../mfc/reference/adding-an-mfc-odbc-consumer.md).|  
 |Complete your recordset class implementation|Override member functions such as `OnSetOptions` (advanced) to set application-specific options or to change defaults. Specify parameter data members if you want a parameterized recordset.|  
 |Construct a recordset object (before you call **Open**)|Specify a search condition (possibly compound) for use in a **WHERE** clause that filters the records. See [Recordset: Filtering Records (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).<br /><br /> Specify a sort order for use in an **ORDER BY** clause that sorts the records. See [Recordset: Sorting Records (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md).<br /><br /> Specify parameter values for any parameters you added to the class. See [Recordset: Parameterizing a Recordset (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).|  
+
 |Run the recordset's query by calling **Open**|Specify a custom SQL string to replace the default SQL string set up by the wizard. See [CRecordset::Open](../../mfc/reference/crecordset-class.md#crecordset__open) in the *Class Library Reference* and [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).|  
+
 |Call **Requery** to requery the recordset with the latest values on the data source|Specify new parameters, filter, or sort. See [Recordset: Requerying a Recordset (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md).|  
   
 ##  <a name="_core_how_a_recordset_constructs_its_sql_statement"></a> How a Recordset Constructs Its SQL Statement  
@@ -70,11 +72,13 @@ This topic applies to the MFC ODBC classes.
   
 -   The string returned by [GetDefaultSQL](../../mfc/reference/crecordset-class.md#crecordset__getdefaultsql). By default, this is the name of the table you specified for the recordset in the wizard, but you can change what the function returns. The framework calls `GetDefaultSQL` — if the string does not begin with "SELECT" or "{CALL", it is assumed to be a table name, which is used to construct a SQL string.  
   
--   The field data members of the recordset, which are to be bound to specific columns of the table. The framework binds record columns to the addresses of these members, using them as buffers. The framework determines the correlation of field data members to table columns from the [RFX](../../data/odbc/record-field-exchange-using-rfx.md) or Bulk RFX function calls in the recordset's [DoFieldExchange](../../mfc/reference/crecordset-class.md#crecordset__dofieldexchange) or [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#crecordset__dobulkfieldexchange) member function.  
+
+-   The field data members of the recordset, which are to be bound to specific columns of the table. The framework binds record columns to the addresses of these members, using them as buffers. The framework determines the correlation of field data members to table columns from the [RFX](../../data/odbc/record-field-exchange-using-rfx.md) or Bulk RFX function calls in the recordset's [DoFieldExchange](../../mfc/reference/crecordset-class.md#crecordset__dofieldexchange) or [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#crecordset__dofieldexchange) member function.  
   
--   The [filter](../../data/odbc/recordset-filtering-records-odbc.md) for the recordset, if any, contained in the [m_strFilter](../topic/crecordset::m_strfilter.md) data member. The framework uses this string to construct a SQL **WHERE** clause.  
+-   The [filter](../../data/odbc/recordset-filtering-records-odbc.md) for the recordset, if any, contained in the [m_strFilter](../../mfc/reference/crecordset-class.md#crecordset__m_strfilter) data member. The framework uses this string to construct a SQL **WHERE** clause.  
   
--   The [sort](../../data/odbc/recordset-sorting-records-odbc.md) order for the recordset, if any, contained in the [m_strSort](../topic/crecordset::m_strsort.md) data member. The framework uses this string to construct a SQL **ORDER BY** clause.  
+-   The [sort](../../data/odbc/recordset-sorting-records-odbc.md) order for the recordset, if any, contained in the [m_strSort](../../mfc/reference/crecordset-class.md#crecordset__m_strsort) data member. The framework uses this string to construct a SQL **ORDER BY** clause.  
+
   
     > [!TIP]
     >  To use the SQL **GROUP BY** clause (and possibly the **HAVING** clause), append the clauses to the end of your filter string.  
@@ -103,6 +107,7 @@ This topic applies to the MFC ODBC classes.
   
      If you are performing a join of two or more tables, rewrite `GetDefaultSQL` to customize the table list used in the SQL **FROM** clause. For more information, see [Recordset: Performing a Join (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md).  
   
+
 -   Manually bind additional field data members, perhaps based on information you obtain about the schema of your data source at run time. You add field data members to the recordset class, [RFX](../../data/odbc/record-field-exchange-using-rfx.md) or Bulk RFX function calls for them to the [DoFieldExchange](../../mfc/reference/crecordset-class.md#crecordset__dofieldexchange) or [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#crecordset__dobulkfieldexchange) member function, and initializations of the data members in the class constructor. For more information, see [Recordset: Dynamically Binding Data Columns (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).  
   
 -   Override recordset member functions, such as `OnSetOptions`, to set application-specific options or to override defaults.  

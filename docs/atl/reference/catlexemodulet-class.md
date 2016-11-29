@@ -94,7 +94,8 @@ template <class T>  class ATL_NO_VTABLE CAtlExeModuleT :  public CAtlModuleT<T>
  For more information on modules in ATL, see [ATL Module Classes](../../atl/atl-module-classes.md).  
   
 ## Inheritance Hierarchy  
- [_ATL_MODULE](../topic/_atl_module.md)  
+ [_ATL_MODULE](atl-typedefs.md#_atl_module)  
+
   
  [CAtlModule](../../atl/reference/catlmodule-class.md)  
   

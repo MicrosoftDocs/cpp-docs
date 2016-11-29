@@ -90,7 +90,7 @@ template <class   ThreadAllocator = CComSimpleThreadAllocator>
  [!code-cpp[NVC_ATL_AxHost#2](../../atl/codesnippet/cpp/ccomautothreadmodule-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
- [_ATL_MODULE](../topic/_atl_module.md)  
+ [_ATL_MODULE](atl-typedefs.md#_atl_module)  
   
  [CAtlModule](../../atl/reference/catlmodule-class.md)  
   

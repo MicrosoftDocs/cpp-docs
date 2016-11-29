@@ -72,7 +72,7 @@ ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This helper function is utilized by [AtlComModuleUnregisterServer](#atlcomunregisterserver) and [CAtlComModule::RegisterTypeLib](../../atl/reference/catlcommodule-class.md#registertypelib).  
+ This helper function is utilized by [AtlComModuleUnregisterServer](#atlcomunregisterserver) and [CAtlComModule::RegisterTypeLib](../../atl/reference/catlcommodule-class.md#catlcommodule__registertypelib).  
   
 ##  <a name="atlunregistertypelib"></a>  AtlUnRegisterTypeLib  
  This function is called to unregister a type library.  
@@ -94,7 +94,7 @@ ATLAPI AtlUnRegisterTypeLib(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This helper function is utilized by [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) and [AtlComModuleUnregisterServer](#atlcommoduleunregisterserver).  
+ This helper function is utilized by [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#catlcommodule__unregistertypelib) and [AtlComModuleUnregisterServer](#atlcommoduleunregisterserver).  
   
 ##  <a name="atlloadtypelib"></a>  AtlLoadTypeLib  
  This function is called to load a type library.  

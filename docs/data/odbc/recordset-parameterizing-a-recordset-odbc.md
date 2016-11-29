@@ -65,6 +65,7 @@ This topic applies to the MFC ODBC classes.
 -   Passing run-time arguments to a predefined query.  
   
      To pass parameters to a stored procedure, you must specify a complete custom ODBC **CALL** statement — with parameter placeholders — when you call **Open**, overriding the recordset's default SQL statement. For more information, see [CRecordset::Open](../../mfc/reference/crecordset-class.md#crecordset__open) in the *Class Library Reference* and [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md) and [Recordset: Declaring a Class for a Predefined Query (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md).  
+
   
 -   Efficiently performing numerous requeries with different parameter information.  
   
@@ -151,7 +152,8 @@ This topic applies to the MFC ODBC classes.
 >  Parameter order is important: the order of RFX calls for parameters in your `DoFieldExchange` function must match the order of the parameter placeholders in your SQL string.  
   
 > [!TIP]
->  The most likely string to work with is the string you specify (if any) for the class's [m_strFilter](../topic/crecordset::m_strfilter.md) data member, but some ODBC drivers might allow parameters in other SQL clauses.  
+
+>  The most likely string to work with is the string you specify (if any) for the class's [m_strFilter](../../mfc/reference/crecordset-class.md#crecordset__m_strfilter) data member, but some ODBC drivers might allow parameters in other SQL clauses.  
   
 ##  <a name="_core_passing_parameter_values_at_run_time"></a> Passing Parameter Values at Run Time  
  You must specify parameter values before you call **Open** (for a new recordset object) or **Requery** (for an existing one).  

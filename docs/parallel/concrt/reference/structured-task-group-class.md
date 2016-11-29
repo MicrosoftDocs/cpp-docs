@@ -91,7 +91,7 @@ void cancel();
 ```  
   
 ### Remarks  
- For more information, see [Cancellation](../../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl).  
+ For more information, see [Cancellation](../../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
   
 ##  <a name="structured_task_group__is_canceling_method"></a>  structured_task_group::is_canceling Method  
  Informs the caller whether or not the task group is currently in the midst of a cancellation. This does not necessarily indicate that the `cancel` method was called on the `structured_task_group` object (although such certainly qualifies this method to return `true`). It may be the case that the `structured_task_group` object is executing inline and a task group further up in the work tree was canceled. In cases such as these where the runtime can determine ahead of time that cancellation will flow through this `structured_task_group` object, `true` will be returned as well.  
@@ -104,7 +104,7 @@ bool is_canceling();
  An indication of whether the `structured_task_group` object is in the midst of a cancellation (or is guaranteed to be shortly).  
   
 ### Remarks  
- For more information, see [Cancellation](../../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl).  
+ For more information, see [Cancellation](../../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
   
 ##  <a name="structured_task_group__run_method"></a>  structured_task_group::run Method  
  Schedules a task on the `structured_task_group` object. The caller manages the lifetime of the `task_handle` object passed in the `_Task_handle` parameter. The version that takes the parameter `_Placement` causes the task to be biased towards executing at the location specified by that parameter.  
@@ -217,5 +217,5 @@ task_group_status wait();
   
 ## See Also  
  [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [task_group Class](reference/task-group-class.md)   
+ [task_group Class](task-group-class.md)   
  [task_handle Class](../../../parallel/concrt/reference/task-handle-class.md)

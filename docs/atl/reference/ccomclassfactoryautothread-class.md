@@ -125,5 +125,5 @@ STDMETHODIMP LockServer(BOOL fLock);
  [CComClassFactory2 Class](../../atl/reference/ccomclassfactory2-class.md)   
  [CComClassFactorySingleton Class](../../atl/reference/ccomclassfactorysingleton-class.md)   
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
- [CComGlobalsThreadModel](../topic/ccomglobalsthreadmodel.md)   
+ [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)   
  [Class Overview](../../atl/atl-class-overview.md)

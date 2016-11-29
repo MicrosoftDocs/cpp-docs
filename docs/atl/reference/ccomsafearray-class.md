@@ -90,6 +90,7 @@ class CComSafeArray
 |[CComSafeArray::operator LPSAFEARRAY](#ccomsafearray__operator_lpsafearray)|Casts a value to a **SAFEARRAY** pointer.|  
 |[CComSafeArray::operator](ccomsafearray-class.md#ccomsafearray__operator)|Retrieves an element from the array.|  
 |[CComSafeArray::operator =](#ccomsafearray__operator_eq)|Assignment operator.|  
+
   
 ### Public Data Members  
   

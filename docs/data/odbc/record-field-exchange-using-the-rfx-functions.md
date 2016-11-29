@@ -77,7 +77,9 @@ This topic explains how to use the RFX function calls that make up the body of y
 |`RFX_Text`|`CString`|  
 |`RFX_Date`|`CTime`|  
   
+
  For more information, see the RFX function documentation under [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md) in the *Class Library Reference*. For information about how C++ data types map to SQL data types, see the table ANSI SQL Data Types Mapped to C++ Data Types in [SQL: SQL and C++ Data Types (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md).  
+=======
   
 ## See Also  
  [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)   

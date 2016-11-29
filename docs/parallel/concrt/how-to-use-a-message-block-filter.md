@@ -57,7 +57,7 @@ This document demonstrates how to use a filter function to enable an asynchronou
   
  [!code-cpp[concrt-primes-filter#2](../../parallel/concrt/codesnippet/cpp/how-to-use-a-message-block-filter_2.cpp)]  
   
- The `transformer` object now processes only those values that are prime. In the previous example, `transformer` object processes all messages. Therefore, the previous example must receive the same number of messages that it sends. This example uses the result of the [concurrency::send](reference/concurrency-namespace-functions.md#send_function) function to determine how many messages to receive from the `transformer` object. The `send` function returns `true` when the message buffer accepts the message and `false` when the message buffer rejects the message. Therefore, the number of times that the message buffer accepts the message matches the count of prime numbers.  
+ The `transformer` object now processes only those values that are prime. In the previous example, `transformer` object processes all messages. Therefore, the previous example must receive the same number of messages that it sends. This example uses the result of the [concurrency::send](reference/concurrency-namespace-functions.md#send) function to determine how many messages to receive from the `transformer` object. The `send` function returns `true` when the message buffer accepts the message and `false` when the message buffer rejects the message. Therefore, the number of times that the message buffer accepts the message matches the count of prime numbers.  
   
 ## Example  
  The following code shows the complete example. The example calls both the `count_primes` function and the `count_primes_filter` function.  

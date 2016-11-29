@@ -94,7 +94,7 @@ To find an ATL macro by category, see the following topics.
  Forward window messages.  
   
 ## See Also  
- [ATL Macros Alphabetical Reference](../topic/atl%20macros%20alphabetical%20reference.md)   
+
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)   
  [Functions](../../atl/reference/atl-functions.md)   
  [Global Variables](../../atl/reference/atl-global-variables.md)   

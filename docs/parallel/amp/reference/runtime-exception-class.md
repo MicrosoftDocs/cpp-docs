@@ -50,20 +50,21 @@ class runtime_exception : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[runtime_exception::runtime_exception Constructor](../topic/runtime_exception::runtime_exception%20constructor.md)|Initializes a new instance of the `runtime_exception` class.|  
-|[runtime_exception::~runtime_exception Destructor](../topic/runtime_exception::~runtime_exception%20destructor.md)|Destroys the `runtime_exception` object.|  
+|[runtime_exception::runtime_exception Constructor](#runtime_exception__ctor)|Initializes a new instance of the `runtime_exception` class.|  
+|[runtime_exception::~runtime_exception Destructor](#runtime_exception__dtor)|Destroys the `runtime_exception` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[runtime_exception::get_error_code Method](reference/runtime_exception-class.md#runtime_exception__get_error_code_method)|Returns the error code that caused the exception.|  
+|[runtime_exception::get_error_code Method](#runtime_exception__get_error_code)|Returns the error code that caused the exception.|  
+
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[runtime_exception::operator= Operator](../topic/runtime_exception::operator=%20operator.md)|Copies the contents of the specified `runtime_exception` object into this one.|  
+|[runtime_exception::operator= Operator](#runtime_exception__operator_eq)|Copies the contents of the specified `runtime_exception` object into this one.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -74,6 +75,13 @@ class runtime_exception : public std::exception;
  **Header:** amprt.h  
   
  **Namespace:** Concurrency  
+
+## <a name="runtime_exception__ctor"></a>  runtime_exception Constructor  
+## <a name="runtime_exception__dtor"></a>  ~runtime_exception Destructor  
+## <a name="runtime_exception__get_error_code"></a>  get_error_code   
+## <a name="runtime_exception__operator_eq"></a>  operator=   
+  
+
   
 ## See Also  
  [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)

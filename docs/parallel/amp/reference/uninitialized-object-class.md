@@ -50,7 +50,8 @@ class uninitialized_object : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[uninitialized_object::uninitialized_object Constructor](../topic/uninitialized_object::uninitialized_object%20constructor.md)|Initializes a new instance of the `uninitialized_object` class.|  
+|[uninitialized_object::uninitialized_object Constructor] --brokenlink-- (#uninitialized_object::uninitialized_object%20Constructor.md)|Initializes a new instance of the `uninitialized_object` class.|  
+
   
 ## Inheritance Hierarchy  
  `exception`  

@@ -50,6 +50,7 @@ template<class ThreadModel>  class CComObjectRootEx : public CComObjectRootBase
 #### Parameters  
  `ThreadModel`  
  The class whose methods implement the desired threading model. You can explicitly choose the threading model by setting `ThreadModel` to [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md), [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md), or [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md). You can accept the server's default thread model by setting `ThreadModel` to [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) or [CComGlobalsThreadModel](../topic/ccomglobalsthreadmodel.md).  
+
   
 ## Members  
   

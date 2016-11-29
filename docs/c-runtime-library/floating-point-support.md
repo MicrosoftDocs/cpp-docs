@@ -47,7 +47,7 @@ The Microsoft C Runtime library (CRT) provides many floating point math library 
   
  The CRT supports these floating point functions:  
   
- [abs, _abs64](../c-runtime-library/reference/abs-labs-llabs-abs64.md)  
+ [abs, labs, llabs, _abs64](../c-runtime-library/reference/abs-labs-llabs-abs64.md)  
   
  [acos, acosf, acosl](../c-runtime-library/reference/acos-acosf-acosl.md)  
   
@@ -178,8 +178,6 @@ The Microsoft C Runtime library (CRT) provides many floating point math library 
  [isnan, _isnan, _isnanf](../c-runtime-library/reference/isnan-isnan-isnanf.md)  
   
  [_j0, _j1, _jn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)  
-  
- [labs, llabs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)  
   
  [ldexp](../c-runtime-library/reference/ldexp.md)  
   

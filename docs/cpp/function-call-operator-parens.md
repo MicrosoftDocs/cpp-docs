@@ -196,6 +196,5 @@ int main() {
   
 ## See Also  
  [Postfix Expressions](../cpp/postfix-expressions.md)   
- [C++ Operators](cpp-built-in-operators-precedence-and-associativity.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Function Call](../c-language/function-call-c.md)   

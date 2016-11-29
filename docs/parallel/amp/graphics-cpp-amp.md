@@ -162,7 +162,7 @@ void createTextureWithBPC() { *// Create the source data.
 |texture\<T,2>|2048|  
   
 ### Reading from Texture Objects  
- You can read from a `texture` object by using [texture::operatorOperator](../topic/texture::operatoroperator.md), [texture::operator() Operator](../topic/texture::operator\(\)%20Operator.md), or [texture::get Method](reference/texture-class.md#texture__get_method). [texture::operatorOperator](../topic/texture::operatoroperator.md) and [texture::operator() Operator](../topic/texture::operator\(\)%20Operator.md) return a value, not a reference. Therefore, you cannot write to a `texture` object by using [texture::operatorOperator](../topic/texture::operatoroperator.md).  
+ You can read from a `texture` object by using [texture::operator\[\]](reference/texture-class.md#texture__operator_at), [texture::operator() Operator](reference/texture-class.md#texture__operator_call), or [texture::get Method](reference/texture-class.md#texture__get). [texture::operatorOperator](reference/texture-class.md#texture__operator.md) and [texture::operator() Operator](reference/texture-class.md#texture__operator\(\)%20Operator.md) return a value, not a reference. Therefore, you cannot write to a `texture` object by using `texture::operator\[\]`.  
   
 ```cpp  
  
@@ -241,6 +241,7 @@ void UseBitsPerScalarElement() { *// Create the image data. *// Each unsigned in
   
 ### Writing to Texture Objects  
  Use the [texture::set](reference/texture-class.md#texture__set_method) method to write to `texture` objects. A texture object can be readonly or read/write. For a texture object to be readable and writeable, the following conditions must be true:  
+
   
 -   T has only one scalar component. (Short vectors are not allowed.)  
   
@@ -268,7 +269,7 @@ void writeTexture() {
 ```  
   
 ### Copying Texture Objects  
- You can copy between texture objects by using the [copy](reference/concurrency-namespace-functions-amp.md#copy_function) function or the [copy_async](reference/concurrency-namespace-functions-amp.md#copy_async_function) function, as shown in the following code example.  
+ You can copy between texture objects by using the [copy](reference/concurrency-namespace-functions-amp.md#copy) function or the [copy_async](reference/concurrency-namespace-functions-amp.md#copy_async) function, as shown in the following code example.  
   
 ```cpp  
  
@@ -297,6 +298,7 @@ void copyHostArrayToTexture() { *// Copy from source array to texture object by 
 ```  
   
  You can also copy from one texture to another by using the [texture::copy_to](reference/texture-class.md#texture__copy_to_method) method. The two textures can be on different accelerator_views. When you copy to a `writeonly_texture_view` object, the data is copied to the underlying `texture` object. The bits per scalar element and the extent must be the same on the source and destination `texture` objects. If those requirements are not met, the runtime throws an exception.  
+
   
 ## Texture View Classes  
  C++ AMP introduces the [texture_view Class](../../parallel/amp/reference/texture-view-class.md) in [!INCLUDE[vs_dev12](../../atl-mfc-shared/includes/vs_dev12_md.md)]. Texture views support the same texel types and ranks as the [texture Class](../../parallel/amp/reference/texture-class.md), but unlike textures, they provide access to additional hardware features such as texture sampling and mipmaps. Texture views support read-only, write-only, and read-write access to the underlying texture data.  
@@ -417,8 +419,7 @@ void write2ComponentTexture() {
 
 }  
 ```  
-  
- Texture views whose elements are based on floating-point types—for example, float, float_2, or float_4—can also be read by using texture sampling to take advantage of hardware support for various filtering modes and addressing modes. C++ AMP supports the two filtering modes that are most common in compute scenarios—point-filtering (nearest-neighbor) and linear-filtering (weighted average)—and four addressing modes—wrapped, mirrored, clamped, and border. For more information about filtering modes, see [filter_mode Enumeration](../topic/filter_mode%20enumeration.md); for more information about addressing modes, see [address_mode Enumeration](../topic/address_mode%20enumeration.md).  
+ Texture views whose elements are based on floating-point types—for example, float, float_2, or float_4—can also be read by using texture sampling to take advantage of hardware support for various filtering modes and addressing modes. C++ AMP supports the two filtering modes that are most common in compute scenarios—point-filtering (nearest-neighbor) and linear-filtering (weighted average)—and four addressing modes—wrapped, mirrored, clamped, and border. For more information about filtering modes, see [filter_mode Enumeration](reference/concurrency-namespace-enums-amp.md#filter_mode); for more information about addressing modes, see [address_mode Enumeration](reference/concurrency-namespace-enums-amp.md#address_mode).  
   
  In addition to modes that C++ AMP supports directly, you can access other filtering modes and addressing modes of the underlying platform by using the interop APIs to adopt a texture sampler that was created by using the platform APIs directly. For example, Direct3D supports other filtering modes such as anisotropic filtering, and can apply a different addressing mode to each dimension of a texture. You could create a texture sampler whose coordinates are wrapped vertically, mirrored horizontally, and sampled with anisotropic filtering by using the Direct3D APIs, and then leverage the sampler in your C++ AMP code by using the `make_sampler` interop API. For more information see [Texture Sampling in C++ AMP](http://blogs.msdn.com/b/nativeconcurrency/archive/2013/07/18/texture-sampling-in-c-amp.aspx) on the Parallel Programming in Native Code blog.  
   
@@ -426,6 +427,7 @@ void write2ComponentTexture() {
   
 ### Writing to Texture View Objects  
  Use the [texture_view::get Method](reference/texture_view-class.md#texture_view__get_method) to write to the underlying `texture` through the `texture_view` object. A texture view can be read-only, read-write, or write-only. For a texture view to be writable it must have an element type that is non-const; for a texture view to be readable and writable, its element type must also have only one component. Otherwise, the texture view is read-only. You can only access one mipmap level of a texture at a time through a texture view, and the level is specified when the view is instantiated.  
+
   
  This example shows how to write to the second-most detailed mipmap level of a texture that has 4 mipmap levels. The most detailed mipmap level is level 0.  
   
@@ -446,7 +448,8 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
 ```  
   
 ## Interoperability  
- The C++ AMP runtime supports interoperability between `texture<T,1>` and the [ID3D11Texture1D interface](http://go.microsoft.com/fwlink/p/linkid=248503), between `texture<T,2>` and the [ID3D11Texture2D interface](http://go.microsoft.com/fwlink/p/linkid=255317), and between `texture<T,3>` and the [ID3D11Texture3D interface](http://go.microsoft.com/fwlink/p/linkid=255377). The [get_texture](reference/concurrency-namespace-functions-amp.md#get_texture_function) method takes a `texture` object and returns an `IUnknown` interface. The [make_texture](reference/concurrency-namespace-functions-amp.md#make_texture_function) method takes an `IUnknown` interface and an `accelerator_view` object and returns a `texture` object.  
+
+ The C++ AMP runtime supports interoperability between `texture<T,1>` and the [ID3D11Texture1D interface](http://go.microsoft.com/fwlink/p/LinkId=248503), between `texture<T,2>` and the [ID3D11Texture2D interface](http://go.microsoft.com/fwlink/p/LinkId=255317), and between `texture<T,3>` and the [ID3D11Texture3D interface](http://go.microsoft.com/fwlink/p/LinkId=255377). The [get_texture](reference/concurrency-namespace-functions-amp.md#get_texture) method takes a `texture` object and returns an `IUnknown` interface. The [make_texture](reference/concurrency-namespace-functions-amp.md#make_texture) method takes an `IUnknown` interface and an `accelerator_view` object and returns a `texture` object.  
   
 ## See Also  
  [double_2 Class](../../parallel/amp/reference/double-2-class.md)   

@@ -117,7 +117,7 @@ This example shows how to build a property page that displays (and allows you to
   
  [!code-cpp[NVC_ATL_Windowing#77](../atl/codesnippet/cpp/example-implementing-a-property-page_5.h)]  
   
- The base class implementation of the [Activate](../atl/reference/ipropertypageimpl-class.md#activate.md) method is responsible for creating the dialog box and its controls, so you can override this method and add your own initialization after calling the base class:  
+ The base class implementation of the [Activate](../atl/reference/ipropertypageimpl-class.md#ipropertypageimpl__activate.md) method is responsible for creating the dialog box and its controls, so you can override this method and add your own initialization after calling the base class:  
   
  [!code-cpp[NVC_ATL_Windowing#78](../atl/codesnippet/cpp/example-implementing-a-property-page_6.h)]  
   

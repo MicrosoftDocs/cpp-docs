@@ -49,7 +49,7 @@ class unsupported_feature : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unsupported_feature::unsupported_feature Constructor](../topic/unsupported_feature::unsupported_feature%20constructor.md)|Constructs a new instance of the `unsupported_feature` exception.|  
+|[unsupported_feature::unsupported_feature Constructor] --brokenlink-- (#unsupported_feature::unsupported_feature%20Constructor.md)|Constructs a new instance of the `unsupported_feature` exception.|  
   
 ## Inheritance Hierarchy  
  `exception`  

@@ -79,11 +79,11 @@ template <class T> class CComPtrBase
 |----------|-----------------|  
 |[CComPtrBase::operator T*](#ccomptrbase__operator_t_star)|The cast operator.|  
 |[CComPtrBase::operator !](#ccomptrbase__operator_not)|The NOT operator.|  
-|[CComPtrBase::operator &](../topic/ccomptrbase::operator%20&.md)|The & operator.|  
+|[CComPtrBase::operator &](#ccomptrbase__operator_amp)|The & operator.|  
 |[CComPtrBase::operator *](#ccomptrbase__operator_star)|The * operator.|  
-|[CComPtrBase::operator \<](../topic/ccomptrbase::operator%20%3c.md)|The less-than operator.|  
+|[CComPtrBase::operator \<](#ccomptrbase__operator_div)|The less-than operator.|  
 |[CComPtrBase::operator ==](#ccomptrbase__operator_eq_eq)|The equality operator.|  
-|[CComPtrBase::operator ->](../topic/ccomptrbase::operator%20-%3e.md)|The pointer-to-members operator.|  
+|[CComPtrBase::operator ->](#ccomptrbase__operator_-_gt)|The pointer-to-members operator.|  
   
 ### Public Data Members  
   
@@ -273,6 +273,7 @@ bool operator== (T* pT) const throw();
  Returns true if `CComPtrBase` and *pT* point to the same object, false otherwise.  
   
 ##  <a name="ccomptrbase__operator_ptr_"></a>  CComPtrBase::operator -&gt;  
+
  The pointer-to-member operator.  
   
 ```

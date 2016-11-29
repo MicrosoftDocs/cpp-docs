@@ -104,7 +104,7 @@ class CComModule : public _ATL_MODULE
  In addition to `CComModule`, ATL provides [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md), which implements an apartment-model module for EXEs and Windows services. Derive your module from `CComAutoThreadModule` when you want to create objects in multiple apartments.  
   
 ## Inheritance Hierarchy  
- [_ATL_MODULE](../topic/_atl_module.md)  
+ [_ATL_MODULE](atl-typedefs.md#_atl_module)  
   
  [CAtlModule](../../atl/reference/catlmodule-class.md)  
   

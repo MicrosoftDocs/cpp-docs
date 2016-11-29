@@ -45,7 +45,7 @@ This topic shows how to write a search algorithm for a basic tree structure.
  [!code-cpp[concrt-task-tree-search#2](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_1.cpp)]  
   
 ## Example  
- The following example shows the `for_all` method. It uses the [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each_function) algorithm to perform a work function on each node of the tree in parallel.  
+ The following example shows the `for_all` method. It uses the [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algorithm to perform a work function on each node of the tree in parallel.  
   
  [!code-cpp[concrt-task-tree-search#1](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_2.cpp)]  
   
@@ -63,7 +63,7 @@ This topic shows how to write a search algorithm for a basic tree structure.
   
  [!code-cpp[concrt-task-tree-search#4](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_4.cpp)]  
   
- This example uses the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke_function) algorithm to search for values in parallel. For more information about this algorithm, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
+ This example uses the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) algorithm to search for values in parallel. For more information about this algorithm, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
   
 ## Example  
  The following complete example uses exception handling to search for values in a basic tree structure.  
@@ -84,11 +84,12 @@ Did not find node with value 17522.
  **cl.exe /EHsc task-tree-search.cpp**  
   
 ## See Also  
- [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl)   
+ [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation)   
  [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)   
  [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)   
  [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)   
  [task_group Class](reference/task-group-class.md)   
  [structured_task_group Class](../../parallel/concrt/reference/structured-task-group-class.md)   
- [parallel_for_each Function](reference/concurrency-namespace-functions.md#parallel_for_each_function)
+ [parallel_for_each Function](reference/concurrency-namespace-functions.md#parallel_for_each)
+
 

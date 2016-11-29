@@ -65,6 +65,26 @@ class task_continuation_context : public details::_ContextCallback;
  **Header:** ppltasks.h  
   
  **Namespace:** concurrency  
+
+## <a name="task_continuation_context__get_current_winrt_context"></a> get_current_winrt_context
+ Returns a task continuation context object that represents the current WinRT thread context.  
+  
+## Syntax  
+  
+```  
+static task_continuation_context get_current_winrt_context();  
+```  
+  
+## Return Value  
+ The current Windows Runtime thread context. Returns an empty task_continuation_context if called from a non-Windows Runtime context.  
+  
+## Remarks  
+ The `get_current_winrt_context` method captures the caller's Windows Runtime thread context. It returns an empty context to non-Windows Runtime callers.  
+  
+ The value returned by `get_current_winrt_context` can be used to indicate to the Runtime that the continuation should execute in the apartment model of the captured context (STA vs MTA), regardless of whether the antecedent task is apartment aware. An apartment aware task is a task that unwraps a Windows Runtime `IAsyncInfo` interface, or a task that is descended from such a task.  
+  
+ This method is similar to the  `use_current` method, but it is also available to native C++ code without C++/CX extension support. It is intended for use by advanced users writing C++/CX-agnostic library code for both native and Windows Runtime callers. Unless you need this functionality, we recommend the `use_current` method, which is only available to C++/CX clients.  
+  
   
 ##  <a name="task_continuation_context__use_arbitrary_method"></a>  task_continuation_context::use_arbitrary Method  
  Creates a task continuation context which allows the Runtime to choose the execution context for a continuation.  
@@ -116,6 +136,24 @@ static task_continuation_context use_default();
  An apartment aware task is a task that unwraps a Windows Runtime `IAsyncInfo` interface, or a task that is descended from such a task. Therefore, if you schedule a continuation on an apartment aware task in a Windows Runtime STA, the continuation will execute in that STA.  
   
  A continuation on a non-apartment aware task will execute in a context the Runtime chooses.  
+
+## <a name="task_continuation_context__use_synchronous_execution"></a> task_continuation_context::use_synchronous_execution  
+Returns a task continuation context object that represents the synchronous execution context.  
   
+## Syntax  
+  
+```  
+static task_continuation_context use_synchronous_execution();  
+```  
+  
+## Return Value  
+ The synchronous execution context.  
+  
+## Remarks  
+ The `use_synchronous_execution` method forces the continuation task to run synchronously on the context, causing its antecedent task's completion.  
+  
+ If the antecedent task has already completed when the continuation is attached, the continuation runs synchronously on the context that attaches the continuation.  
+  
+ 
 ## See Also  
  [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)

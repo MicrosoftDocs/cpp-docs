@@ -75,7 +75,8 @@ template <typename   K,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlMap::CPair Class](#catlmap_cpair_class)|A class containing the key and value elements.|  
+|[CAtlMap::CPair Class](#catlmap__cpair_class)|A class containing the key and value elements.|  
+
   
 ### CPair Data Members  
   
@@ -123,7 +124,8 @@ template <typename   K,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlMap::operator](catlmap-class.md#catlmap__operator)|Replaces or adds a new element to the `CAtlMap`.|  
+|[CAtlMap::operator\[\]](catlmap-class.md#catlmap__operator_at)|Replaces or adds a new element to the `CAtlMap`.|  
+
   
 ## Remarks  
  `CAtlMap` provides support for a mapping array of any given type, managing an unordered array of key elements and their associated values. Elements (consisting of a key and a value) are stored using a hashing algorithm, allowing a large amount of data to be efficiently stored and retrieved.  
@@ -499,12 +501,12 @@ CPair* Lookup(
  Variable that receives the looked-up value.  
   
 ### Return Value  
- The first form of the method returns true if the key is found, otherwise false. The second and third forms return a pointer to a [CPair](#catlmap_cpair_class) which can be used as a position for calls to [CAtlMap::GetNext](#catlmap__getnext) and so on.  
+ The first form of the method returns true if the key is found, otherwise false. The second and third forms return a pointer to a [CPair](#catlmap__cpair_class) which can be used as a position for calls to [CAtlMap::GetNext](#catlmap__getnext) and so on.  
   
 ### Remarks  
  `Lookup` uses a hashing algorithm to quickly find the map element containing a key that exactly matches the given key parameter.  
   
-##  <a name="catlmap__operator_at"></a>  CAtlMap::operator []  
+##  <a name="catlmap__operator_at"></a>  CAtlMap::operator \[\]  
  Replaces or adds a new element to the `CAtlMap`.  
   
 ```

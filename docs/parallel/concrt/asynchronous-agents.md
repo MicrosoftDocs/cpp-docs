@@ -36,6 +36,7 @@ translation.priority.ht:
 # Asynchronous Agents
 An *asynchronous agent* (or just *agent*) is an application component that works asynchronously with other agents to solve larger computing tasks. Think of an agent as a task that has a set life cycle. For example, one agent might read data from an input/output device (such as the keyboard, a file on disk, or a network connection) and another agent might perform action on that data as it becomes available. The first agent uses message passing to inform the second agent that more data is available. The Concurrency Runtime task scheduler provides an efficient mechanism to enable agents to block and yield cooperatively without requiring less efficient preemption.  
   
+
  The Agents Library defines the [concurrency::agent](../../parallel/concrt/reference/agent-class.md) class to represent an asynchronous agent. `agent` is an abstract class that declares the virtual method [concurrency::agent::run](reference/agent-class.md#agent__run_method). The `run` method executes the task that is performed by the agent. Because `run` is abstract, you must implement this method in every class that you derive from `agent`.  
   
 ## Agent Life Cycle  
@@ -56,12 +57,14 @@ An *asynchronous agent* (or just *agent*) is an application component that works
  `agent_created` is the initial state of an agent, `agent_runnable` and `agent_started` are the active states, and `agent_done` and `agent_canceled` are the terminal states.  
   
  Use the [concurrency::agent::status](reference/agent-class.md#agent__status_method) method to retrieve the current state of an `agent` object. Although the `status` method is concurrency-safe, the state of the agent can change by the time the `status` method returns. For example, an agent could be in the `agent_started` state when you call the `status` method, but moved to the `agent_done` state just after the `status` method returns.  
+
   
 ## Methods and Features  
  The following table shows some of the important methods that belong to the `agent` class. For more information about all of the `agent` class methods, see [agent Class](../../parallel/concrt/reference/agent-class.md).  
   
 |Method|Description|  
 |------------|-----------------|  
+
 |[start](reference/agent-class.md#agent__start_method)|Schedules the `agent` object for execution and sets it to the `agent_runnable` state.|  
 |[run](reference/agent-class.md#agent__run_method)|Executes the task that is to be performed by the `agent` object.|  
 |[done](reference/agent-class.md#agent__done_method)|Moves an agent to the `agent_done` state.|  

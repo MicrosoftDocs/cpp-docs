@@ -313,5 +313,5 @@ T value();
   
 ## See Also  
  [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [unbounded_buffer Class](reference/unbounded-buffer-class.md)   
+ [unbounded_buffer Class](unbounded-buffer-class.md)   
  [single_assignment Class](../../../parallel/concrt/reference/single-assignment-class.md)

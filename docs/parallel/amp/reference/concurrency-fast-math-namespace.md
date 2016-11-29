@@ -112,7 +112,7 @@ namespace fast_math;
 |[tanhf Function (fast_math)](concurrency-fast-math-namespace-functions.md#tanhf_function)|Calculates the hyperbolic tangent value of the argument|  
 |[trunc Function (fast_math)](concurrency-fast-math-namespace-functions.md#trunc_function)|Truncates the argument to the integer component|  
 |[truncf Function (fast_math)](concurrency-fast-math-namespace-functions.md#truncf_function)|Truncates the argument to the integer component|  
-  
+
 ## Requirements  
  **Header:** amp_math.h  
   

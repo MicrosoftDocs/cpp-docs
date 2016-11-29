@@ -57,4 +57,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # y0, y1, yn
-These POSIX functions are deprecated. Use the ISO C++ conformant [Bessel Functions: _y0, _y1, _yn](../Topic/Bessel%20Functions:%20_y0,%20_y1,%20_yn.md) instead.
+These POSIX functions are deprecated. Use the ISO C++ conformant [Bessel Functions: _j0, _j1, _jn, _y0, _y1, _yn](../../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md) instead.

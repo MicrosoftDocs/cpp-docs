@@ -53,13 +53,13 @@ namespace direct3d;
   
 |Name|Description|  
 |----------|-----------------|  
-|[scoped_d3d_access_lock Class](../../../parallel/amp/reference/scoped-d3d-access-lock-class.md)|An RAII wrapper for a D3D access lock on an `accelerator_view` object.|  
+|[scoped_d3d_access_lock Class](scoped-d3d-access-lock-class.md)|An RAII wrapper for a D3D access lock on an `accelerator_view` object.|  
   
 ### Structures  
   
 |Name|Description|  
 |----------|-----------------|  
-|[adopt_d3d_access_lock_t Structure](../../../parallel/amp/reference/adopt-d3d-access-lock-t-structure.md)|Tag type to indicate the D3D access lock should be adopted rather than acquired.|  
+|[adopt_d3d_access_lock_t Structure](adopt-d3d-access-lock-t-structure.md)|Tag type to indicate the D3D access lock should be adopted rather than acquired.|  
   
 ### Functions  
   
@@ -90,11 +90,11 @@ namespace direct3d;
 |[step Function](concurrency-direct3d-namespace-functions-amp.md#step_function)|Compares two values, returning 0 or 1 based on which value is greater|  
 |[umax Function](concurrency-direct3d-namespace-functions-amp.md#umax_function)|Compares two unsigned values, returning the value which is greater.|  
 |[umin Function](concurrency-direct3d-namespace-functions-amp.md#umin_function)|Compares two unsigned values, returning the value which is smaller.|  
-  
+
 ## Requirements  
  **Header:** amp.h  
   
  **Namespace:** Concurrency  
   
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

@@ -67,7 +67,9 @@ This document describes how to create a custom message block type that orders in
   
  The `transformer` class derives from `propagator_block`, and therefore acts as both a source block and as a target block. It accepts messages of type `_Input` and sends messages of type `_Output`. The `transformer` class specifies `single_link_registry` as the link manager for any target blocks and `multi_link_registry` as the link manager for any source blocks. Therefore, a `transformer` object can have up to one target and an unlimited number of sources.  
   
+
  A class that derives from `source_block` must implement six methods: [propagate_to_any_targets](reference/source_block-class.md#source_block__propagate_to_any_targets_method), [accept_message](reference/source_block-class.md#source_block__accept_message_method), [reserve_message](reference/source_block-class.md#source_block__reserve_message_method), [consume_message](reference/source_block-class.md#source_block__consume_message_method), [release_message](reference/source_block-class.md#source_block__release_message_method), and [resume_propagation](reference/source_block-class.md#source_block__resume_propagation_method). A class that derives from `target_block` must implement the [propagate_message](reference/propagator_block-class.md#propagator_block__propagate_message_method) method and can optionally implement the [send_message](reference/propagator_block-class.md#propagator_block__send_message_method) method. Deriving from `propagator_block` is functionally equivalent to deriving from both `source_block` and `target_block`.  
+
   
  The `propagate_to_any_targets` method is called by the runtime to asynchronously or synchronously process any incoming messages and propagate out any outgoing messages. The `accept_message` method is called by target blocks to accept messages. Many message block types, such as `unbounded_buffer`, send messages only to the first target that would receive it. Therefore, it transfers ownership of the message to the target. Other message block types, such as [concurrency::overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md), offer messages to each of its target blocks. Therefore, `overwrite_buffer` creates a copy of the message for each of its targets.  
   
@@ -178,7 +180,9 @@ This document describes how to create a custom message block type that orders in
   
      The `propagate_message` method enables the `priority_buffer` class to act as a message receiver, or target. This method receives the message that is offered by the provided source block and inserts that message into the priority queue. The `propagate_message` method then asynchronously sends all output messages to the target blocks.  
   
+
      The runtime calls this method when you call the [concurrency::asend](reference/concurrency-namespace-functions.md#asend_function) function or when the message block is connected to other message blocks.  
+
   
 18. In the `protected` section, define the `send_message` method.  
   
@@ -186,6 +190,7 @@ This document describes how to create a custom message block type that orders in
   
      The `send_message` method resembles `propagate_message`. However it sends the output messages synchronously instead of asynchronously.  
   
+
      The runtime calls this method during a synchronous send operation, such as when you call the [concurrency::send](reference/concurrency-namespace-functions.md#send_function) function.  
   
  The `priority_buffer` class contains constructor overloads that are typical in many message block types. Some constructor overloads take [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) or [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) objects, which enable the message block to be managed by a specific task scheduler. Other constructor overloads take a filter function. Filter functions enable message blocks to accept or reject a message on the basis of its payload. For more information about message filters, see [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md). For more information about task schedulers, see [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md).  
@@ -199,7 +204,8 @@ This document describes how to create a custom message block type that orders in
   
  [!code-cpp[concrt-priority-buffer#18](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_19.h)]  
   
- The following example concurrently performs a number of `asend` and [concurrency::receive](reference/concurrency-namespace-functions.md#receive_function) operations on a `priority_buffer` object.  
+ The following example concurrently performs a number of `asend` and [concurrency::receive](reference/concurrency-namespace-functions.md#receive) operations on a `priority_buffer` object.  
+
   
  [!code-cpp[concrt-priority-buffer#19](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_20.cpp)]  
   

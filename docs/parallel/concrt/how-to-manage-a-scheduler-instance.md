@@ -43,6 +43,7 @@ Scheduler instances let you associate specific scheduling policies with various 
   
 1.  Create a [concurrency::SchedulerPolicy](../../parallel/concrt/reference/schedulerpolicy-class.md) object that contains the policy values for the scheduler to use.  
   
+
 2.  Call the [concurrency::CurrentScheduler::Create](reference/currentscheduler-class.md#currentscheduler__create_method) method or the [concurrency::Scheduler::Create](reference/scheduler-class.md#scheduler__create_method) method to create a scheduler instance.  
   
      If you use the `Scheduler::Create` method, call the [concurrency::Scheduler::Attach](reference/scheduler-class.md#scheduler__attach_method) method when you need to associate the scheduler with the current context.  

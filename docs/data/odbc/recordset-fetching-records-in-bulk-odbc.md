@@ -158,5 +158,6 @@ void MultiRowSet::DoBulkFieldExchange( CFieldExchange* pFX )
   
 ## See Also  
  [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)   
- [CRecordset::m_nFields](../topic/crecordset::m_nfields.md)   
- [CRecordset::m_nParams](../topic/crecordset::m_nparams.md)
+ [CRecordset::m_nFields](../../mfc/reference/crecordset-class.md#crecordset__m_n_fields)   
+ [CRecordset::m_nParams](../../mfc/reference/crecordset-class.md#crecordset__m_n_params)
+

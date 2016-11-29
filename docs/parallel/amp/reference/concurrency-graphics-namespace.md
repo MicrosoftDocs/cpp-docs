@@ -60,8 +60,8 @@ namespace graphics;
   
 |Name|Description|  
 |----------|-----------------|  
-|[address_mode Enumeration](../topic/address_mode%20enumeration.md)|Specifies address modes supported for texture sampling.|  
-|[filter_mode Enumeration](../topic/filter_mode%20enumeration.md)|Specifies filter modes supported for texture sampling.|  
+|[address_mode Enumeration](reference/concurrency-graphics-namespace-enums-amp.md#address_mode)|Specifies address modes supported for texture sampling.|  
+|[filter_mode Enumeration](reference/concurrency-graphics-namespace-enums-amp.md#filter_mode)|Specifies filter modes supported for texture sampling.|  
   
 ### Classes  
   

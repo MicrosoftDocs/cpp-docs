@@ -68,7 +68,7 @@ class CAtlWinModule : public _ATL_WIN_MODULE
  This class provides support for all ATL classes which require windowing features.  
   
 ## Inheritance Hierarchy  
- [_ATL_WIN_MODULE](../topic/_atl_win_module.md)  
+ [_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module)  
   
  `CAtlWinModule`  
   
@@ -125,6 +125,6 @@ void* ExtractCreateWndData();
  Returns a pointer to the `_AtlCreateWndData` structure previously added with [CAtlWinModule::AddCreateWndData](#catlwinmodule__addcreatewnddata), or NULL if no object is available.  
   
 ## See Also  
- [_ATL_WIN_MODULE](../topic/_atl_win_module.md)   
+ [_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Module Classes](../../atl/atl-module-classes.md)

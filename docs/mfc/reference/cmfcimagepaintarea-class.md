@@ -147,7 +147,7 @@ void SetColor(COLORREF color);
 ### Remarks  
  When you select a color from the image editor palette bar or color picker, the framework calls this method to update the current drawing color. The initial drawing color is black (a `COLORREF` value of 0).  
   
- The drawing color is used by the image editor dialog box for all drawing modes except for `IMAGE_EDIT_MODE_COLOR`. For more information about drawing modes, see [CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration](../../mfc/reference/cmfcimagepaintarea-class.md#image_edit_mode%20enumeration).  
+ The drawing color is used by the image editor dialog box for all drawing modes except for `IMAGE_EDIT_MODE_COLOR`. For more information about drawing modes, see [CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration](../../mfc/reference/cmfcimagepaintarea-class.md#cmfcimagepaintarea__image_edit_mode%20enumeration).  
   
 ##  <a name="cmfcimagepaintarea__setmode"></a>  CMFCImagePaintArea::SetMode  
  Sets the current drawing mode.  

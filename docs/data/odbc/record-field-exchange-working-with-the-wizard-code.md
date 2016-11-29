@@ -96,6 +96,7 @@ public:
  Also, notice that the wizard overrides the `DoFieldExchange` member function of class `CRecordset`.  
   
 ##  <a name="_core_the_dofieldexchange_override"></a> DoFieldExchange Override  
+
  [DoFieldExchange](../../mfc/reference/crecordset-class.md#crecordset__dofieldexchange) is the heart of RFX. The framework calls `DoFieldExchange` any time it needs to move data either from data source to recordset or from recordset to data source. `DoFieldExchange` also supports obtaining information about field data members through the [IsFieldDirty](../../mfc/reference/crecordset-class.md#crecordset__isfielddirty) and [IsFieldNull](../../mfc/reference/crecordset-class.md#crecordset__isfieldnull) member functions.  
   
  The following `DoFieldExchange` override is for the `CSections` class. The wizard writes the function in the .cpp file for your recordset class.  
@@ -130,7 +131,7 @@ void CSections::DoFieldExchange(CFieldExchange* pFX)
   
 -   An initialization for each field data member  
   
--   An initialization for the [m_nFields](../topic/crecordset::m_nfields.md) data member, which contains the number of field data members  
+-   An initialization for the [m_nFields](../../mfc/reference/crecordset-class.md#crecordset__m_n_fields) data member, which contains the number of field data members  
   
  The constructor for the `CSections` recordset example looks like this:  
   
@@ -153,8 +154,9 @@ CSections::CSections(CDatabase* pdb)
 ```  
 m_nFields += 3;  
 ```  
-  
- This is the code for adding three new fields. If you add any parameter data members, you must initialize the [m_nParams](../topic/crecordset::m_nparams.md) data member, which contains the number of parameter data members. Put the `m_nParams` initialization outside the brackets.  
+
+ This is the code for adding three new fields. If you add any parameter data members, you must initialize the [m_nParams](../../mfc/reference/crecordset-class.md#crecordset__m_n_params) data member, which contains the number of parameter data members. Put the `m_nParams` initialization outside the brackets.  
+
   
 ## See Also  
  [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)

@@ -72,42 +72,43 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 |[AtlIsUnsafeUrlChar](../atl/reference/atl-http-utility-functions.md#atlisunsafeurlchar)|Call this function to find out whether a character is safe for use in a URL.|  
 |[AtlUnescapeUrl](../atl/reference/atl-http-utility-functions.md#atlunescapeurl)|Call this function to convert escaped characters back to their original values.|  
 |[SystemTimeToHttpDate](../atl/reference/atl-http-utility-functions.md#systemtimetohttpdate)|Call this function to convert a system time to a string in a format suitable for using in HTTP headers.|  
-|[ATLPath::AddBackslash](../atl/reference/atl-path-functions.md#atlpath_addbackslash)|This function is an overloaded wrapper for [PathAddBackslash](http://msdn.microsoft.com/library/windows/desktop/bb773561).|  
-|[ATLPath::AddExtension](../atl/reference/atl-path-functions.md#atlpath_addextension)|This function is an overloaded wrapper for [PathAddExtension](http://msdn.microsoft.com/library/windows/desktop/bb773563).|  
-|[ATLPath::Append](../atl/reference/atl-path-functions.md#atlpath_append)|This function is an overloaded wrapper for [PathAppend](http://msdn.microsoft.com/library/windows/desktop/bb773565).|  
-|[ATLPath::BuildRoot](../atl/reference/atl-path-functions.md#atlpath_buildroot)|This function is an overloaded wrapper for [PathBuildRoot](http://msdn.microsoft.com/library/windows/desktop/bb773567).|  
-|[ATLPath::Canonicalize](../atl/reference/atl-path-functions.md#atlpath_canonicalize)|This function is an overloaded wrapper for [PathCanonicalize](http://msdn.microsoft.com/library/windows/desktop/bb773569).|  
-|[ATLPath::Combine](../atl/reference/atl-path-functions.md#atlpath_combine)|This function is an overloaded wrapper for [PathCombine](http://msdn.microsoft.com/library/windows/desktop/bb773571).|  
-|[ATLPath::CommonPrefix](../atl/reference/atl-path-functions.md#atlpath_commonprefix)|This function is an overloaded wrapper for [PathCommonPrefix](http://msdn.microsoft.com/library/windows/desktop/bb773574).|  
-|[ATLPath::CompactPath](../atl/reference/atl-path-functions.md#atlpath_compactpath)|This function is an overloaded wrapper for [PathCompactPath](http://msdn.microsoft.com/library/windows/desktop/bb773575).|  
-|[ATLPath::CompactPathEx](../atl/reference/atl-path-functions.md#atlpath_compactpathex)|This function is an overloaded wrapper for [PathCompactPathEx](http://msdn.microsoft.com/library/windows/desktop/bb773578).|  
-|[ATLPath::FileExists](../atl/reference/atl-path-functions.md#atlpath_fileexists)|This function is an overloaded wrapper for [PathFileExists](http://msdn.microsoft.com/library/windows/desktop/bb773584).|  
-|[ATLPath::FindExtension](../atl/reference/atl-path-functions.md#atlpath_findextension)|This function is an overloaded wrapper for [PathFindExtension](http://msdn.microsoft.com/library/windows/desktop/bb773587).|  
-|[ATLPath::FindFileName](../atl/reference/atl-path-functions.md#atlpath_findfilename)|This function is an overloaded wrapper for [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589).|  
-|[ATLPath::GetDriveNumber](../atl/reference/atl-path-functions.md#atlpath_getdrivenumber)|This function is an overloaded wrapper for [PathGetDriveNumber](http://msdn.microsoft.com/library/windows/desktop/bb773612).|  
-|[ATLPath::IsDirectory](../atl/reference/atl-path-functions.md#atlpath_isdirectory)|This function is an overloaded wrapper for [PathIsDirectory](http://msdn.microsoft.com/library/windows/desktop/bb773621).|  
-|[ATLPath::IsFileSpec](../atl/reference/atl-path-functions.md#atlpath_isfilespec)|This function is an overloaded wrapper for [PathIsFileSpec]$$brokenlink$$(http://msdn.microsoft.com/library/windows/desktop/bb773627).|  
-|[ATLPath::IsPrefix](../atl/reference/atl-path-functions.md#atlpath_isprefix)|This function is an overloaded wrapper for [PathIsPrefix](http://msdn.microsoft.com/library/windows/desktop/bb773650).|  
-|[ATLPath::IsRelative](../atl/reference/atl-path-functions.md#atlpath_isrelative)|This function is an overloaded wrapper for [PathIsRelative](http://msdn.microsoft.com/library/windows/desktop/bb773660).|  
-|[ATLPath::IsRoot](../atl/reference/atl-path-functions.md#atlpath_isroot)|This function is an overloaded wrapper for [PathIsRoot](http://msdn.microsoft.com/library/windows/desktop/bb773674).|  
-|[ATLPath::IsSameRoot](../atl/reference/atl-path-functions.md#atlpath_issameroot)|This function is an overloaded wrapper for [PathIsSameRoot](http://msdn.microsoft.com/library/windows/desktop/bb773687).|  
-|[ATLPath::IsUNC](../atl/reference/atl-path-functions.md#atlpath_isunc)|This function is an overloaded wrapper for [PathIsUNC](http://msdn.microsoft.com/library/windows/desktop/bb773712).|  
-|[ATLPath::IsUNCServer](../atl/reference/atl-path-functions.md#atlpath_isuncserver)|This function is an overloaded wrapper for [PathIsUNCServer](http://msdn.microsoft.com/library/windows/desktop/bb773722).|  
-|[ATLPath::IsUNCServerShare](../atl/reference/atl-path-functions.md#atlpath_isuncservershare)|This function is an overloaded wrapper for [PathIsUNCServerShare](http://msdn.microsoft.com/library/windows/desktop/bb773723).|  
-|[ATLPath::MakePretty](../atl/reference/atl-path-functions.md#atlpath_makepretty)|This function is an overloaded wrapper for [PathMakePretty](http://msdn.microsoft.com/library/windows/desktop/bb773725).|  
-|[ATLPath::MatchSpec](../atl/reference/atl-path-functions.md#atlpath_matchspec)|This function is an overloaded wrapper for [PathMatchSpec](http://msdn.microsoft.com/library/windows/desktop/bb773727).|  
-|[ATLPath::QuoteSpaces](../atl/reference/atl-path-functions.md#atlpath_quotespaces)|This function is an overloaded wrapper for [PathQuoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773739).|  
-|[ATLPath::RelativePathTo](../atl/reference/atl-path-functions.md#atlpath_relativepathto)|This function is an overloaded wrapper for [PathRelativePathTo](http://msdn.microsoft.com/library/windows/desktop/bb773740).|  
-|[ATLPath::RemoveArgs](../atl/reference/atl-path-functions.md#atlpath_removeargs)|This function is an overloaded wrapper for [PathRemoveArgs](http://msdn.microsoft.com/library/windows/desktop/bb773742).|  
-|[ATLPath::RemoveBackslash](../atl/reference/atl-path-functions.md#atlpath_removebackslash)|This function is an overloaded wrapper for [PathRemoveBackslash](http://msdn.microsoft.com/library/windows/desktop/bb773743).|  
-|[ATLPath::RemoveBlanks](../atl/reference/atl-path-functions.md#atlpath_removeblanks)|This function is an overloaded wrapper for [PathRemoveBlanks](http://msdn.microsoft.com/library/windows/desktop/bb773745).|  
-|[ATLPath::RemoveExtension](../atl/reference/atl-path-functions.md#atlpath_removeextension)|This function is an overloaded wrapper for [PathRemoveExtension](http://msdn.microsoft.com/library/windows/desktop/bb773746).|  
-|[ATLPath::RemoveFileSpec](../atl/reference/atl-path-functions.md#atlpath_removefilespec)|This function is an overloaded wrapper for [PathRemoveFileSpec](http://msdn.microsoft.com/library/windows/desktop/bb773748).|  
-|[ATLPath::RenameExtension](../atl/reference/atl-path-functions.md#atlpath_renameextension)|This function is an overloaded wrapper for [PathRenameExtension](http://msdn.microsoft.com/library/windows/desktop/bb773749).|  
-|[ATLPath::SkipRoot](../atl/reference/atl-path-functions.md#atlpath_skiproot)|This function is an overloaded wrapper for [PathSkipRoot](http://msdn.microsoft.com/library/windows/desktop/bb773754).|  
-|[ATLPath::StripPath](../atl/reference/atl-path-functions.md#atlpath_strippath)|This function is an overloaded wrapper for [PathStripPath](http://msdn.microsoft.com/library/windows/desktop/bb773756).|  
-|[ATLPath::StripToRoot](../atl/reference/atl-path-functions.md#atlpath_striptoroot)|This function is an overloaded wrapper for [PathStripToRoot](http://msdn.microsoft.com/library/windows/desktop/bb773757).|  
-|[ATLPath::UnquoteSpaces](../atl/reference/atl-path-functions.md#atlpath_unquotespaces)|This function is an overloaded wrapper for [PathUnquoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773763).|  
+
+|[ATLPath::AddBackslash](../atl/reference/atl-path-functions.md#atlpath__addbackslash)|This function is an overloaded wrapper for [PathAddBackslash](http://msdn.microsoft.com/library/windows/desktop/bb773561).|  
+|[ATLPath::AddExtension](../atl/reference/atl-path-functions.md#atlpath__addextension)|This function is an overloaded wrapper for [PathAddExtension](http://msdn.microsoft.com/library/windows/desktop/bb773563).|  
+|[ATLPath::Append](../atl/reference/atl-path-functions.md#atlpath__append)|This function is an overloaded wrapper for [PathAppend](http://msdn.microsoft.com/library/windows/desktop/bb773565).|  
+|[ATLPath::BuildRoot](../atl/reference/atl-path-functions.md#atlpath__buildroot)|This function is an overloaded wrapper for [PathBuildRoot](http://msdn.microsoft.com/library/windows/desktop/bb773567).|  
+|[ATLPath::Canonicalize](../atl/reference/atl-path-functions.md#atlpath__canonicalize)|This function is an overloaded wrapper for [PathCanonicalize](http://msdn.microsoft.com/library/windows/desktop/bb773569).|  
+|[ATLPath::Combine](../atl/reference/atl-path-functions.md#atlpath__combine)|This function is an overloaded wrapper for [PathCombine](http://msdn.microsoft.com/library/windows/desktop/bb773571).|  
+|[ATLPath::CommonPrefix](../atl/reference/atl-path-functions.md#atlpath__commonprefix)|This function is an overloaded wrapper for [PathCommonPrefix](http://msdn.microsoft.com/library/windows/desktop/bb773574).|  
+|[ATLPath::CompactPath](../atl/reference/atl-path-functions.md#atlpath__compactpath)|This function is an overloaded wrapper for [PathCompactPath](http://msdn.microsoft.com/library/windows/desktop/bb773575).|  
+|[ATLPath::CompactPathEx](../atl/reference/atl-path-functions.md#atlpath__compactpathex)|This function is an overloaded wrapper for [PathCompactPathEx](http://msdn.microsoft.com/library/windows/desktop/bb773578).|  
+|[ATLPath::FileExists](../atl/reference/atl-path-functions.md#atlpath__fileexists)|This function is an overloaded wrapper for [PathFileExists](http://msdn.microsoft.com/library/windows/desktop/bb773584).|  
+|[ATLPath::FindExtension](../atl/reference/atl-path-functions.md#atlpath__findextension)|This function is an overloaded wrapper for [PathFindExtension](http://msdn.microsoft.com/library/windows/desktop/bb773587).|  
+|[ATLPath::FindFileName](../atl/reference/atl-path-functions.md#atlpath__findfilename)|This function is an overloaded wrapper for [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589).|  
+|[ATLPath::GetDriveNumber](../atl/reference/atl-path-functions.md#atlpath__getdrivenumber)|This function is an overloaded wrapper for [PathGetDriveNumber](http://msdn.microsoft.com/library/windows/desktop/bb773612).|  
+|[ATLPath::IsDirectory](../atl/reference/atl-path-functions.md#atlpath__isdirectory)|This function is an overloaded wrapper for [PathIsDirectory](http://msdn.microsoft.com/library/windows/desktop/bb773621).|  
+|[ATLPath::IsFileSpec](../atl/reference/atl-path-functions.md#atlpath__isfilespec)|This function is an overloaded wrapper for [PathIsFileSpec]$$brokenlink$$(http://msdn.microsoft.com/library/windows/desktop/bb773627).|  
+|[ATLPath::IsPrefix](../atl/reference/atl-path-functions.md#atlpath__isprefix)|This function is an overloaded wrapper for [PathIsPrefix](http://msdn.microsoft.com/library/windows/desktop/bb773650).|  
+|[ATLPath::IsRelative](../atl/reference/atl-path-functions.md#atlpath__isrelative)|This function is an overloaded wrapper for [PathIsRelative](http://msdn.microsoft.com/library/windows/desktop/bb773660).|  
+|[ATLPath::IsRoot](../atl/reference/atl-path-functions.md#atlpath__isroot)|This function is an overloaded wrapper for [PathIsRoot](http://msdn.microsoft.com/library/windows/desktop/bb773674).|  
+|[ATLPath::IsSameRoot](../atl/reference/atl-path-functions.md#atlpath__issameroot)|This function is an overloaded wrapper for [PathIsSameRoot](http://msdn.microsoft.com/library/windows/desktop/bb773687).|  
+|[ATLPath::IsUNC](../atl/reference/atl-path-functions.md#atlpath__isunc)|This function is an overloaded wrapper for [PathIsUNC](http://msdn.microsoft.com/library/windows/desktop/bb773712).|  
+|[ATLPath::IsUNCServer](../atl/reference/atl-path-functions.md#atlpath__isuncserver)|This function is an overloaded wrapper for [PathIsUNCServer](http://msdn.microsoft.com/library/windows/desktop/bb773722).|  
+|[ATLPath::IsUNCServerShare](../atl/reference/atl-path-functions.md#atlpath__isuncservershare)|This function is an overloaded wrapper for [PathIsUNCServerShare](http://msdn.microsoft.com/library/windows/desktop/bb773723).|  
+|[ATLPath::MakePretty](../atl/reference/atl-path-functions.md#atlpath__makepretty)|This function is an overloaded wrapper for [PathMakePretty](http://msdn.microsoft.com/library/windows/desktop/bb773725).|  
+|[ATLPath::MatchSpec](../atl/reference/atl-path-functions.md#atlpath__matchspec)|This function is an overloaded wrapper for [PathMatchSpec](http://msdn.microsoft.com/library/windows/desktop/bb773727).|  
+|[ATLPath::QuoteSpaces](../atl/reference/atl-path-functions.md#atlpath__quotespaces)|This function is an overloaded wrapper for [PathQuoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773739).|  
+|[ATLPath::RelativePathTo](../atl/reference/atl-path-functions.md#atlpath__relativepathto)|This function is an overloaded wrapper for [PathRelativePathTo](http://msdn.microsoft.com/library/windows/desktop/bb773740).|  
+|[ATLPath::RemoveArgs](../atl/reference/atl-path-functions.md#atlpath__removeargs)|This function is an overloaded wrapper for [PathRemoveArgs](http://msdn.microsoft.com/library/windows/desktop/bb773742).|  
+|[ATLPath::RemoveBackslash](../atl/reference/atl-path-functions.md#atlpath__removebackslash)|This function is an overloaded wrapper for [PathRemoveBackslash](http://msdn.microsoft.com/library/windows/desktop/bb773743).|  
+|[ATLPath::RemoveBlanks](../atl/reference/atl-path-functions.md#atlpath__removeblanks)|This function is an overloaded wrapper for [PathRemoveBlanks](http://msdn.microsoft.com/library/windows/desktop/bb773745).|  
+|[ATLPath::RemoveExtension](../atl/reference/atl-path-functions.md#atlpath__removeextension)|This function is an overloaded wrapper for [PathRemoveExtension](http://msdn.microsoft.com/library/windows/desktop/bb773746).|  
+|[ATLPath::RemoveFileSpec](../atl/reference/atl-path-functions.md#atlpath__removefilespec)|This function is an overloaded wrapper for [PathRemoveFileSpec](http://msdn.microsoft.com/library/windows/desktop/bb773748).|  
+|[ATLPath::RenameExtension](../atl/reference/atl-path-functions.md#atlpath__renameextension)|This function is an overloaded wrapper for [PathRenameExtension](http://msdn.microsoft.com/library/windows/desktop/bb773749).|  
+|[ATLPath::SkipRoot](../atl/reference/atl-path-functions.md#atlpath__skiproot)|This function is an overloaded wrapper for [PathSkipRoot](http://msdn.microsoft.com/library/windows/desktop/bb773754).|  
+|[ATLPath::StripPath](../atl/reference/atl-path-functions.md#atlpath__strippath)|This function is an overloaded wrapper for [PathStripPath](http://msdn.microsoft.com/library/windows/desktop/bb773756).|  
+|[ATLPath::StripToRoot](../atl/reference/atl-path-functions.md#atlpath__striptoroot)|This function is an overloaded wrapper for [PathStripToRoot](http://msdn.microsoft.com/library/windows/desktop/bb773757).|  
+|[ATLPath::UnquoteSpaces](../atl/reference/atl-path-functions.md#atlpath__unquotespaces)|This function is an overloaded wrapper for [PathUnquoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773763).|  
   
 ### Macros  
   

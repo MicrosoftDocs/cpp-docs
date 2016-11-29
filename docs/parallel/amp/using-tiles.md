@@ -310,6 +310,7 @@ t_idx.barrier.wait();
   
  A *memory fence* ensures that memory accesses are available to other threads in the thread tile, and that memory accesses are executed according to program order. To ensure this, compilers and processors do not reorder reads and writes across the fence. In C++ AMP, a memory fence is created by a call to one of these methods:  
   
+
 - [tile_barrier::wait Method](reference/tile_barrier-class.md#tile_barrier__wait_method): Creates a fence around both global and `tile_static` memory.  
   
 - [tile_barrier::wait_with_all_memory_fence Method](reference/tile_barrier-class.md#tile_barrier__wait_with_all_memory_fence_method): Creates a fence around both global and `tile_static` memory.  

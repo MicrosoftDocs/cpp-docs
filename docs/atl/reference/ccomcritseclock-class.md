@@ -57,15 +57,15 @@ template<class TLock> class CComCritSecLock
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCritSecLock::CComCritSecLock](ccomcritseclock-class.md#ccomcritseclock__ccomcritseclock)|The constructor.|  
-|[CComCritSecLock::~CComCritSecLock](../topic/ccomcritseclock::~ccomcritseclock.md)|The destructor.|  
+|[CComCritSecLock::CComCritSecLock](#ccomcritseclock__ctor)|The constructor.|  
+|[CComCritSecLock::~CComCritSecLock](#ccomcritseclock__dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCritSecLock::Lock](ccomcritseclock-class.md#ccomcritseclock__lock)|Call this method to lock the critical section object.|  
-|[CComCritSecLock::Unlock](ccomcritseclock-class.md#ccomcritseclock__unlock)|Call this method to unlock the critical section object.|  
+|[CComCritSecLock::Lock](#ccomcritseclock__lock)|Call this method to lock the critical section object.|  
+|[CComCritSecLock::Unlock](#ccomcritseclock__unlock)|Call this method to unlock the critical section object.|  
   
 ## Remarks  
  Use this class to lock and unlock objects in a safer way than with the [CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md) or [CComAutoCriticalSection Class](../../atl/reference/ccomautocriticalsection-class.md).  
@@ -73,7 +73,7 @@ template<class TLock> class CComCritSecLock
 ## Requirements  
  **Header:** atlbase.h  
   
-##  <a name="ccomcritseclock__ccomcritseclock"></a>  CComCritSecLock::CComCritSecLock  
+##  <a name="ccomcritseclock__ctor"></a>  CComCritSecLock::CComCritSecLock  
  The constructor.  
   
 ```
@@ -91,7 +91,7 @@ CComCritSecLock(
 ### Remarks  
  Initializes the critical section object.  
   
-##  <a name="ccomcritseclock___dtorccomcritseclock"></a>  CComCritSecLock::~CComCritSecLock  
+##  <a name="ccomcritseclock___dtor"></a>  CComCritSecLock::~CComCritSecLock  
  The destructor.  
   
 ```

@@ -112,12 +112,13 @@ class CRect : public tagRECT
   
  When specifying a `CRect`, you must be careful to construct it so that it is normalized — in other words, such that the value of the left coordinate is less than the right and the top is less than the bottom. For example, a top left of (10,10) and bottom right of (20,20) defines a normalized rectangle but a top left of (20,20) and bottom right of (10,10) defines a non-normalized rectangle. If the rectangle is not normalized, many `CRect` member functions may return incorrect results. (See [CRect::NormalizeRect](#crect__normalizerect) for a list of these functions.) Before you call a function that requires normalized rectangles, you can normalize non-normalized rectangles by calling the `NormalizeRect` function.  
   
+<<<<<<< HEAD
  Use caution when manipulating a `CRect` with the [CDC::DPtoLP](../../mfc/reference/cdc-class.md#cdc__dptolp) and [CDC::LPtoDP](../../mfc/reference/cdc-class.md#cdc__lptodp) member functions. If the mapping mode of a display context is such that the y-extent is negative, as in `MM_LOENGLISH`, then `CDC::DPtoLP` will transform the `CRect` so that its top is greater than the bottom. Functions such as **Height** and **Size** will then return negative values for the height of the transformed `CRect`, and the rectangle will be non-normalized.  
+=======
+ Use caution when manipulating a `CRect` with the [CDC::DPtoLP](../../mfc/reference/cdc-class.md#cdc__dptolp and [CDC::LPtoDP](../../mfc/reference/cdc-class.md#cdc__lptodp member functions. If the mapping mode of a display context is such that the y-extent is negative, as in `MM_LOENGLISH`, then `CDC::DPtoLP` will transform the `CRect` so that its top is greater than the bottom. Functions such as **Height** and **Size** will then return negative values for the height of the transformed `CRect`, and the rectangle will be non-normalized.  
+>>>>>>> master
   
  When using overloaded `CRect` operators, the first operand must be a `CRect`; the second can be either a [RECT](../../mfc/reference/rect-structure1.md) structure or a `CRect` object.  
-  
-> [!NOTE]
->  For more information on shared utility classes (like `CRect`), see [Shared Classes](../topic/atl-mfc%20shared%20classes.md).  
   
 ## Inheritance Hierarchy  
  `tagRECT`  
@@ -614,7 +615,8 @@ void OffsetRect(
  <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#50](../codesnippet/vs_snippets_cpp/nvc_atlmfc_utilities#50)] -->  
   
 ##  <a name="crect__operator_lpcrect"></a>  CRect::operator LPCRECT  
- Converts a `CRect` to an [LPCRECT](../topic/data%20types%20\(mfc\).md).  
+ Converts a `CRect` to an [LPCRECT](../../mfc/reference/data-types-mfc.md).  
+
   
 ```  operator LPCRECT() const throw();
 ```  
@@ -626,7 +628,11 @@ void OffsetRect(
  [!CODE [NVC_ATLMFC_Utilities#58](../codesnippet/vs_snippets_cpp/nvc_atlmfc_utilities#58)]  
   
 ##  <a name="crect__operator_lprect"></a>  CRect::operator LPRECT  
- Converts a `CRect` to an [LPRECT](../topic/data%20types%20\(mfc\).md).  
+<<<<<<< HEAD
+ Converts a `CRect` to an [LPRECT](../../mfc/reference/data-types-mfc.md).  
+=======
+ Converts a `CRect` to an `LPRECT`.  
+>>>>>>> master
   
 ```  operator LPRECT() throw();
 ```  
@@ -1180,8 +1186,8 @@ int Width() const throw();
  <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#57](../codesnippet/vs_snippets_cpp/nvc_atlmfc_utilities#57)] -->  
   
 ## See Also  
-   
  [CPoint Class](cpoint-class.md)   
  [CSize Class](csize-class.md)   
- [RECT](../../mfc/reference)
+ [RECT](../../mfc/reference/rect-structure1.md)
+
 

@@ -67,9 +67,9 @@ template <class T>  class CAdapt
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAdapt::operator const T&](../topic/cadapt::operator%20const%20t&.md)|Returns a `const` reference to `m_T`.|  
-|[CAdapt::operator T&](../topic/cadapt::operator%20t&.md)|Returns a reference to `m_T`.|  
-|[CAdapt::operator <](../topic/cadapt::operator%20%3c.md)|Compares an object of the adapted type with `m_T`.|  
+|[CAdapt::operator const T&](#cadapt__operator_const_t_amp)|Returns a `const` reference to `m_T`.|  
+|[CAdapt::operator T&](#cadapt__operator_t_amp)|Returns a reference to `m_T`.|  
+|[CAdapt::operator <](#cadapt__operator_lt)|Compares an object of the adapted type with `m_T`.|  
 |[CAdapt::operator =](#cadapt__operator_eq)|Assigns an object of the adapted type to `m_T`.|  
 |[CAdapt::operator ==](#cadapt__operator_eq_eq)|Compares an object of the adapted type with `m_T`.|  
   
@@ -116,7 +116,7 @@ T m_T;
 ```  
   
 ### Remarks  
- This **public** data member can be accessed directly or indirectly with [operator const T&](../topic/cadapt::operator%20const%20t&.md) and [operator T&](../topic/cadapt::operator%20t&.md).  
+ This **public** data member can be accessed directly or indirectly with [operator const T&](#cadapt__operator_const_t_amp) and [operator T&](#cadapt__operator_t_amp).  
   
 ##  <a name="cadapt__operator_const_t_amp"></a>  CAdapt::operator const T&amp;  
  Returns a **const** reference to the [m_T](#cadapt__m_t) member, allowing the adapter object to be treated as if it were an object of type `T`.  

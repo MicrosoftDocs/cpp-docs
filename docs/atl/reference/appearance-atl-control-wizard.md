@@ -43,7 +43,7 @@ Insert "Search Results" summary here.
  **View status**  
  Sets the appearance of the control within the container.  
   
--   **Opaque**: Sets the `VIEWSTATUS_OPAQUE` bit in the [VIEWSTATUS](http://msdn.microsoft.com/library/windows/desktop/ms687201) enumeration and draws the entire control rectangle passed to the [CComControlBase::OnDraw](../../atl/reference/ccomcontrolbase-class.md#ondraw) method. The control appears completely opaque, and none of the container shows behind the control boundaries.  
+-   **Opaque**: Sets the `VIEWSTATUS_OPAQUE` bit in the [VIEWSTATUS](http://msdn.microsoft.com/library/windows/desktop/ms687201) enumeration and draws the entire control rectangle passed to the [CComControlBase::OnDraw](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__ondraw) method. The control appears completely opaque, and none of the container shows behind the control boundaries.  
   
      This setting helps the container draw the control more quickly. If this option is not selected, the control can contain transparent parts.  
   
@@ -54,7 +54,8 @@ Insert "Search Results" summary here.
      This option is available only if the **Opaque** option is also selected.  
   
  **Add control based on**  
- Sets the control to be based on a Windows control type by adding a [CContainedWindow](../topic/ccontainedwindow.md) data member to the class implementing the control. It also adds a message map and message handler functions to handle Windows messages for the control. Choose from the list the type of Windows control you want to create, if any.  
+ Sets the control to be based on a Windows control type by adding a [CContainedWindow](ccontainedwindowt-class.md) data member to the class implementing the control. It also adds a message map and message handler functions to handle Windows messages for the control. Choose from the list the type of Windows control you want to create, if any.  
+
   
 -   `Button`  
   

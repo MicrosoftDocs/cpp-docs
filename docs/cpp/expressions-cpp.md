@@ -65,7 +65,7 @@ This section describes C++ expressions. Expressions are sequences of operators a
   
  Topics on operators in other sections:  
   
--   [Table of C++ operators](cpp-built-in-operators-precedence-and-associativity.md)  
+-   [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)  
   
 -   [Overloaded operators](../cpp/operator-overloading.md)  
   

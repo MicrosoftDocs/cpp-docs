@@ -91,6 +91,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 |[__assume](../intrinsics/assume.md)|[__based](../cpp/based-pointers-cpp.md)|[__box](../dotnet/value-type-semantics.md) <sup>2</sup>|  
 |[__cdecl](../cpp/cdecl.md)|[__declspec](../cpp/declspec.md)|[__delegate](../dotnet/delegates-and-events.md) <sup>2</sup>|  
 |[__event](../cpp/event.md)|[__except](../cpp/try-except-statement.md)|[__fastcall](../cpp/fastcall.md)|  
+
 |[__finally](../cpp/try-finally-statement.md)|[__forceinline](inline-functions-cpp.md)|[__gc](../dotnet/value-type-semantics.md) <sup>2</sup>|  
 |[__hook](../cpp/hook.md) <sup>3</sup>|[__identifier](../windows/identifier-cpp-cli.md)|[__if_exists](../cpp/if-exists-statement.md)|  
 |[__if_not_exists](../cpp/if-not-exists-statement.md)|[__inline](inline-functions-cpp.md)|[__int16](../cpp/int8-int16-int32-int64.md)|  
@@ -117,7 +118,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 |[float](../cpp/fundamental-types-cpp.md)|[for](../cpp/for-statement-cpp.md)|[for each, in](../dotnet/for-each-in.md)|  
 |[friend](../cpp/friend-cpp.md)|[friend_as](../preprocessor/hash-using-directive-cpp.md)|[gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md)|  
 |[generic](../windows/generics-cpp-component-extensions.md)|[goto](../cpp/goto-statement-cpp.md)|[if](../cpp/if-else-statement-cpp.md)|  
-|[initonly](../dotnet/initonly-cpp-cli.md)|[inline](inline-functions-cpp.md)|[int](../cpp/fundamental-types-cpp.md)|  
+|[initonly](../dotnet/initonly-cpp-cli.md)|[inline](../cpp/inline-functions-cpp.md)|[int](../cpp/fundamental-types-cpp.md)|  
 |[interface class](../windows/interface-class-cpp-component-extensions.md)|[interface struct](../windows/interface-class-cpp-component-extensions.md)|[interior_ptr](../windows/interior-ptr-cpp-cli.md)|  
 |[literal](../windows/literal-cpp-component-extensions.md)|[long](../cpp/fundamental-types-cpp.md)|[mutable](../cpp/mutable-data-members-cpp.md)|  
 |[naked](../cpp/naked-cpp.md) <sup>1</sup>|[namespace](namespaces-cpp.md)|[new](../windows/new-new-slot-in-vtable-cpp-component-extensions.md)|  
@@ -161,4 +162,4 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
   
 ## See Also  
  [Lexical Conventions](../cpp/lexical-conventions.md)   
- [C++ Operators](cpp-built-in-operators-precedence-and-associativity.md)
+ [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

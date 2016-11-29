@@ -144,6 +144,7 @@ class CImage
  <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#70](../codesnippet/vs_snippets_cpp/nvc_atlmfc_utilities#70)] -->  
   
  When you use `CImage` in an MFC project, note which member functions in your project expect a pointer to a [CBitmap](../../mfc/reference/cbitmap-class.md) object. If you want to use `CImage` with such a function, like [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#cmenu__appendmenu), use [CBitmap::FromHandle](../../mfc/reference/cbitmap-class.md#cbitmap__fromhandle), pass it your `CImage` `HBITMAP`, and use the returned `CBitmap*`.  
+
   
 ## Example  
  <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#71](../codesnippet/vs_snippets_cpp/nvc_atlmfc_utilities#71)]-->  
@@ -160,7 +161,6 @@ class CImage
 |[AlphaBlend](#cimage__alphablend)|Works with only Windows 2000, Windows 98, and later systems.|  
 |[TransparentBlt](#cimage__transparentblt)|Works with only Windows 2000, Windows 98, and later systems.|  
 |[Draw](#cimage__draw)|Supports transparency with only Windows 2000, Windows 98, and later systems.|  
-  
   
  You can use `CImage` from either MFC or ATL.  
   
@@ -256,9 +256,7 @@ BOOL AlphaBlend(HDC hDestDC,
  Alpha-blend bitmaps support color blending on a per-pixel basis.  
   
  When `bBlendOp` is set to the default of **AC_SRC_OVER**, the source bitmap is placed over the destination bitmap based on the alpha values of the source pixels.  
-  
- This method is applicable to Microsoft Windows 2000, Windows 98, and later systems. See [AlphaBlend](http://msdn.microsoft.com/library/windows/desktop/dd183351) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)] for more detailed information.  
-  
+
 ##  <a name="cimage__attach"></a>  CImage::Attach  
  Attaches `hBitmap` to a `CImage` object.  
   
@@ -912,7 +910,7 @@ static BOOL IsTransparencySupported() throw();
   
  If the application is compiled for use with operating systems before Windows 2000 or Windows 98, this method will always return 0, even on newer operating systems.  
   
-  
+
 ##  <a name="cimage__load"></a>  CImage::Load  
  Loads an image.  
   
@@ -1047,8 +1045,6 @@ BOOL MaskBlt(HDC hDestDC,
   
 ### Remarks  
  This method applies to Windows NT, versions 4.0 and later only.  
-  
- See `MaskBlt` in the [!INCLUDE[winsdkshort](./includes/winsdkshort_md.md)] for more detailed information.  
   
 ##  <a name="cimage__operator_hbitmap"></a>  CImage::operator HBITMAP  
  Use this operator to get the attached Windows GDI handle of the `CImage` object. This operator is a casting operator, which supports direct use of an `HBITMAP` object.  
@@ -1436,7 +1432,6 @@ BOOL TransparentBlt(HDC hDestDC,
 ### Remarks  
  `TransparentBlt` is supported for source bitmaps of 4 bits per pixel and 8 bits per pixel. Use [CImage::AlphaBlend](#cimage__alphablend) to specify 32 bits-per-pixel bitmaps with transparency.  
   
- This method is applicable to Microsoft Windows 2000, Windows 98, and later systems. See [TransparentBlt](http://msdn.microsoft.com/library/windows/desktop/dd145141) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)] for more detailed information.  
   
 ### Example  
  <!-- FIXME [!CODE [NVC_ATLMFC_Utilities#199](../codesnippet/vs_snippets_cpp/nvc_atlmfc_utilities#199)]  -->
@@ -1447,6 +1442,9 @@ BOOL TransparentBlt(HDC hDestDC,
  [Device-Independent Bitmaps](http://msdn.microsoft.com/library/windows/desktop/dd183562)   
  [CreateDIBSection](http://msdn.microsoft.com/library/windows/desktop/dd183494)   
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)
+ [Device-Independent Bitmaps](http://msdn.microsoft.com/library/windows/desktop/dd183562)   
+ [CreateDIBSection](http://msdn.microsoft.com/library/windows/desktop/dd183494)   
+
 
 
 

@@ -58,7 +58,7 @@ template <class TBase = CWindow,  class TWinTraits = CControlWinTraits>  class C
  A traits class that defines styles for your window. The default is `CControlWinTraits`.  
   
 > [!NOTE]
-> [CContainedWindow](../topic/ccontainedwindow.md) is a specialization of `CContainedWindowT`. If you want to change the base class or traits, use `CContainedWindowT` directly.  
+> [CContainedWindow](ccontainedwindowt-class.md) is a specialization of `CContainedWindowT`. If you want to change the base class or traits, use `CContainedWindowT` directly.  
   
 ## Members  
   
