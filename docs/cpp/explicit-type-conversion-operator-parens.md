@@ -42,7 +42,6 @@ C++ allows explicit type conversion using syntax similar to the function-call sy
 ## Syntax  
   
 ```  
-  
 simple-type-name ( expression-list )  
 ```  
   

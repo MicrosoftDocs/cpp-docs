@@ -46,9 +46,7 @@ translation.priority.ht:
 ## Syntax  
   
 ```  
-  
-      postfix-expression   
-      . name  
+postfix-expression . name  
 postfix-expression –> name  
 ```  
   

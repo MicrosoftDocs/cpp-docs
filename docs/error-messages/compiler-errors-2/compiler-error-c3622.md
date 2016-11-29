@@ -37,10 +37,10 @@ translation.priority.ht:
 # Compiler Error C3622
 'class' : a class declared as 'keyword' cannot be instantiated  
   
- An attempt was made to instantiate a class marked as [abstract](../../windows/abstract-cpp-component-extensions.md) (or [__abstract](../../misc/abstract.md)). A class marked as abstract can be a base class, but it cannot be instantiated.  
+An attempt was made to instantiate a class marked as [abstract](../../windows/abstract-cpp-component-extensions.md). A class marked as `abstract` can be a base class, but it cannot be instantiated.  
   
 ## Example  
- The following sample generates C3622.  
+The following sample generates C3622.  
   
 ```  
 // C3622.cpp  
@@ -51,16 +51,3 @@ int main() {
    a aa;   // C3622  
 }  
 ```  
-  
-## Example  
- The following sample generates C3622.  
-  
-```  
-// C3622_b.cpp  
-// compile with: /clr:oldSyntax  
-__abstract class a {  
-};  
-int main() {  
-   a aa;   // C3622  
-}  
-```

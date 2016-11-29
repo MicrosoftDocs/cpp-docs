@@ -39,6 +39,7 @@ cannot explicitly inherit from 'type'
   
  The specified `type` cannot act as a base class in any class.  
   
+## Example
  The following sample generates C3838:  
   
 ```  
@@ -46,11 +47,3 @@ cannot explicitly inherit from 'type'
 // compile with: /clr /c  
 public ref class B : public System::Enum {};   // C3838  
 ```  
-  
- The following sample generates C3838:  
-  
-```  
-// C3838b.cpp  
-// compile with: /clr:oldSyntax /c  
-public __gc class B : public System::ValueType {};   // C3838  
-```

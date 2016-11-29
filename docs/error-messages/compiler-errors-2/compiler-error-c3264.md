@@ -38,9 +38,9 @@ translation.priority.mt:
 # Compiler Error C3264
 'class' : a class-constructor cannot have a return type  
   
- Class constructors cannot have return types.  
+Class constructors cannot have return types.  
   
- The following sample generates C3264:  
+The following sample generates C3264:  
   
 ```  
 // C3264_2.cpp  
@@ -59,24 +59,3 @@ ref class X {
 int main() {  
 }  
 ```  
-  
- The following sample generates C3264:  
-  
-```  
-// C3264.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-  
-__gc class X {  
-   public:  
-      static int X()   { // C3264  
-      }  
-  
-      /* use the code below to resolve the error  
-      static X() {  
-      }  
-      */  
-};  
-int main() {  
-}  
-```

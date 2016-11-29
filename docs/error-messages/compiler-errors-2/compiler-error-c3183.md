@@ -37,9 +37,9 @@ translation.priority.ht:
 # Compiler Error C3183
 cannot define unnamed class, struct or union inside of managed or WinRT type 'type'  
   
- A type that is embedded in a managed or WinRT type must be named.  
+A type that is embedded in a managed or WinRT type must be named.  
   
- The following sample generates C3183:  
+The following sample generates C3183:  
   
 ```  
 // C3183a.cpp  
@@ -53,24 +53,3 @@ ref class Test
    };  
 };  
 ```  
-  
- The following sample generates C3183:  
-  
-```  
-// C3183b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-  
-__gc class Test  
-{  
-   __gc class  
-   {  // C3183, delete class or name it  
-      int a;  
-      int b;  
-   };  
-};  
-  
-int main()  
-{  
-}  
-```

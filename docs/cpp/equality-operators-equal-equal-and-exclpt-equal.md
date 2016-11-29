@@ -46,8 +46,7 @@ translation.priority.ht:
 ## Syntax  
   
 ```  
-  
-      expression == expression  
+expression == expression  
 expression != expression  
 ```  
   

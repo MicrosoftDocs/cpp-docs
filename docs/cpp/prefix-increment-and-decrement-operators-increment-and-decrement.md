@@ -45,8 +45,7 @@ translation.priority.ht:
 ## Syntax  
   
 ```  
-  
-      ++ unary-expression  
+++ unary-expression  
 –– unary-expression  
 ```  
   

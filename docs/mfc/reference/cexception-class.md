@@ -137,7 +137,54 @@ void Delete();
  You only need to call **Delete** if you are using the C++ **try**- **catch** mechanism. If you are using the MFC macros **TRY** and **CATCH**, then these macros will automatically call this function.  
   
 ### Example  
- <!-- FIXME [!CODE [NVC_MFCExceptions#21](../codesnippet/vs_snippets_cpp/nvc_mfcexceptions#21)] -->  
+ ```cpp
+ CFile* pFile = NULL;
+// Constructing a CFile object with this override may throw
+// a CFile exception, and won't throw any other exceptions.
+// Calling CString::Format() may throw a CMemoryException,
+// so we have a catch block for such exceptions, too. Any
+// other exception types this function throws will be
+// routed to the calling function.
+// Note that this example performs the same actions as the 
+// example for CATCH, but uses C++ try/catch syntax instead
+// of using the MFC TRY/CATCH macros. This sample must use
+// CException::Delete() to delete the exception objects
+// before closing the catch block, while the CATCH example
+// implicitly performs the deletion via the macros.
+try
+{
+   pFile = new CFile(_T("C:\\WINDOWS\\SYSTEM.INI"),
+      CFile::modeRead | CFile::shareDenyNone);
+   ULONGLONG ullLength = pFile->GetLength();
+   CString str;
+   str.Format(_T("Your SYSTEM.INI file is %u bytes long."), ullLength);
+   AfxMessageBox(str);
+}
+catch(CFileException* pEx)
+{
+   // Simply show an error message to the user.
+   pEx->ReportError();
+   pEx->Delete();
+}
+catch(CMemoryException* pEx)
+{
+   // We can't recover from this memory exception, so we'll
+   // just terminate the app without any cleanup. Normally, an
+   // an application should do everything it possibly can to
+   // clean up properly and _not_ call AfxAbort().
+   pEx->Delete();
+   AfxAbort();
+}
+// If an exception occurrs in the CFile constructor,
+// the language will free the memory allocated by new
+// and will not complete the assignment to pFile.
+// Thus, our clean-up code needs to test for NULL.
+if (pFile != NULL)
+{
+   pFile->Close();
+   delete pFile;
+}   
+ ```
   
 ##  <a name="cexception__reporterror"></a>  CException::ReportError  
  Call this member function to report error text in a message box to the user.  
@@ -161,8 +208,38 @@ virtual int ReportError(
 ### Example  
  Here is an example of the use of `CException::ReportError`. For another example, see the example for [CATCH]--brokenlink--(exception-processing.md#catch).  
   
- <!-- FIXME [!CODE [NVC_MFCExceptions#23](../codesnippet/vs_snippets_cpp/nvc_mfcexceptions#23)] -->  
-  
+```cpp
+CFile fileInput;
+CFileException ex;
+
+// try to open a file for reading.  
+// The file will certainly not
+// exist because there are too many explicit
+// directories in the name.
+
+// if the call to Open() fails, ex will be
+// initialized with exception
+// information.  the call to ex.ReportError() will
+// display an appropriate
+// error message to the user, such as
+// "\Too\Many\Bad\Dirs.DAT contains an
+// invalid path."  The error message text will be
+// appropriate for the
+// file name and error condition.
+
+if (!fileInput.Open(_T("\\Too\\Many\\Bad\\Dirs.DAT"), CFile::modeRead, &ex))
+{
+  ex.ReportError();
+}
+else
+{
+  // the file was opened, so do whatever work
+  // with fileInput we were planning...
+
+  fileInput.Close();
+}
+```
+
 ## See Also  
  [CObject Class](cobject-class.md)   
  [Hierarchy Chart](../hierarchy-chart.md)   

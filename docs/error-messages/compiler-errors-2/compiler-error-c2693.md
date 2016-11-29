@@ -38,25 +38,3 @@ translation.priority.ht:
 'operator' : illegal comparison for references to a managed or WinRT array  
   
  You cannot test a managed or WinRT array for any kind of inequality. For example, you can test to see if managed arrays are equal but you cannot test to see if one array is greater or less than another array.  
-  
- **Managed Extensions for C++**  
-  
- You cannot test a [__gc](../../misc/gc.md) array for any kind of inequality. For example, you can test to see if managed arrays are equal but you cannot test to see if one array is greater or less than another array.  
-  
- The following sample generates C2693:  
-  
-```  
-// C2693b.cpp  
-// compile with: /clr:oldSyntax /c  
-#using <mscorlib.dll>  
-int func3(int a __gc[], int b __gc[]) {  
-   return a < b;    // C2693  
-}  
-int func1(int a __gc[], int b __gc[]) {  
-   return a != b;   // OK  
-}  
-  
-int func2(int a __gc[], int b __gc[]) {  
-   return a == b;   // OK  
-}  
-```

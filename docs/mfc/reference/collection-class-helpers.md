@@ -179,9 +179,16 @@ AFX_INLINE UINT AFXAPI HashKey(ARG_KEY  key);
   
  The default implementation creates a hash value by shifting `key` right by four positions. Override this function so that it returns hash values appropriate for your application.  
   
-### Example  
- <!--FIXME[!CODE [NVC_MFC_Utilities#34](../codesnippet/vs_snippets_cpp/nvc_mfc_utilities#34)] --> 
-  
+### Example
+ ```cpp  
+template <> UINT AFXAPI HashKey(unsigned __int64 key)
+{
+   // Generate the hash value by XORing the lower 32 bits of the number 
+   // with the upper 32 bits
+   return(UINT(key) ^ UINT(key >> 32));
+}
+ ```
+ 
 ##  <a name="serializeelements"></a>  SerializeElements  
  [CArray](carray-class.md), [CList](clist-class.md), and [CMap](cmap-class.md) call this function to serialize elements.  
   

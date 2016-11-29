@@ -55,20 +55,3 @@ public ref struct Wrap {
    static SomeStruct1 f1([In, Out] SomeStruct1 *pS);   // C3385  
 };  
 ```  
-  
- The following sample generates C3385:  
-  
-```  
-// C3385_2.cpp  
-// compile with: /clr:oldSyntax /c  
-  
-using namespace System;  
-using namespace System::Runtime::InteropServices;  
-  
-struct SomeStruct1 {};  
-  
-public __gc struct Wrap {  
-   [ DllImport("somedll.dll", CharSet=CharSet::Unicode) ]  
-   static SomeStruct1 f1([In, Out] SomeStruct1 *pS);   // C3385  
-};  
-```

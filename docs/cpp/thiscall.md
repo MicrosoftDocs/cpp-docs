@@ -54,17 +54,6 @@ translation.priority.mt:
   
  For non-static class functions, if the function is defined out-of-line, the calling convention modifier does not have to be specified on the out-of-line definition. That is, for class non-static member methods, the calling convention specified during declaration is assumed at the point of definition.  
   
-## Example  
-  
-```  
-// thiscall_cc.cpp  
-// compile with: /c /clr:oldSyntax  
-struct CMyClass {  
-   void __thiscall mymethod();  
-   void __clrcall mymethod2();  
-};  
-```  
-  
 ## END Microsoft Specific  
   
 ## See Also  

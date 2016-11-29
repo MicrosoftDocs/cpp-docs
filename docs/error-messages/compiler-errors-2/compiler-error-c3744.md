@@ -41,38 +41,4 @@ __unhook must have at least 3 arguments for managed events
   
  `__hook` and `__unhook` are not compatible with /clr programming. Use the += and -= operators instead.  
   
- C3744 is only reachable using **/clr:oldSyntax**.  
-  
- The following sample generates C3744:  
-  
-```  
-// C3744.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-using namespace System;  
-  
-public __delegate void delegate1();  
-  
-[ event_source(managed) ]  
-public __gc class CPSource {  
-public:  
-   __event delegate1* event1;  
-};  
-  
-[event_receiver(managed)]  
-public __gc class CReceiver {  
-public:  
-   void Handler1() {  
-   }  
-  
-   void UnhookAll1(CPSource* pSrc, CReceiver* pRec) {  
-      pRec;  
-      __unhook(pSrc);   // C3744  
-      // The following line resolves the error.  
-      // __unhook(&CPSource::event1, pSrc, &CReceiver::Handler1);  
-   }  
-};  
-  
-int main() {  
-}  
-```
+ C3744 is only reachable using the obsolete compiler option **/clr:oldSyntax**.  

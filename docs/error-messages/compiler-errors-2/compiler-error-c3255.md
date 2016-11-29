@@ -59,27 +59,3 @@ int main() {
    V v2;  
 }  
 ```  
-  
- **Managed Extensions for C++**  
-  
- The following sample generates C3255:  
-  
-```  
-// C3255b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-using namespace System;  
-  
-__value struct V {  
-   Object* o;  
-};  
-  
-__value struct V2 {  
-   int i;  
-};  
-  
-int main() {  
-   V* pv = __nogc new V;   // C3255  
-   V2* pv2 = __nogc new V2;   // OK  
-}  
-```

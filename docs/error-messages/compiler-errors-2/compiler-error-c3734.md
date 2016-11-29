@@ -50,15 +50,3 @@ translation.priority.ht:
 ref class CMyClass {   // C3734 remove the ref keyword to resolve  
 };  
 ```  
-  
- The following sample generates C3734 and shows how to fix it:  
-  
-```  
-// C3734_b.cpp  
-// compile with: /clr:oldSyntax /c  
-[module(name="x")];  
-  
-[coclass]  
-__gc class CMyClass {   // C3734 remove the __gc keyword to resolve  
-};  
-```

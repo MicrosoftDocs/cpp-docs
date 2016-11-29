@@ -46,7 +46,7 @@ Prior to Visual C++ 2005, an instance of a reference type could only be created 
   
  The compiler will not generate a default assignment operator for a reference type. An assignment operator allows you to create an object using stack semantics and initialize it with an existing object created using stack semantics. An assignment operator for a reference type has a signature of the following form: `void operator=( R% ){}`.  
   
- If your type's destructor releases critical resources and you use stack semantics for reference types, you do not need to explicitly call the destructor (or call `delete`). For more information on destructors in reference types, see [Destructors and Finalizers in Visual C++](../misc/destructors-and-finalizers-in-visual-cpp.md).  
+ If your type's destructor releases critical resources and you use stack semantics for reference types, you do not need to explicitly call the destructor (or call `delete`). For more information on destructors in reference types, see [Destructors and finalizers in How to: Define and consume classes and structs (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).  
   
  A compiler-generated assignment operator will follow the usual standard C++ rules with the following additions:  
   

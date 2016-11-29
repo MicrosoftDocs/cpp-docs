@@ -134,7 +134,7 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__has_finalizer(` `type` `)`  
   
-     (Not supported in [!INCLUDE[cppwrt](../build/reference/includes/cppwrt_md.md)].) Returns true if the CLR type has a finalizer. See [Destructors and Finalizers in Visual C++](../misc/destructors-and-finalizers-in-visual-cpp.md) for more information.  
+     (Not supported in [!INCLUDE[cppwrt](../build/reference/includes/cppwrt_md.md)].) Returns true if the CLR type has a finalizer. See [Destructors and finalizers in How to: Define and consume classes and structs (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) for more information.  
   
     ```  
   

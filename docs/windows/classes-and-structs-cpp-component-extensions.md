@@ -101,6 +101,21 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
   
 -   [Classes, Structures, and Unions](../cpp/classes-and-structs-cpp.md)  
   
+
+-   [public and private on Native Classes](../misc/how-to-declare-public-and-private-on-native-classes.md)  
+  
+-   [Implicitly Abstract Classes](../misc/implicitly-abstract-classes.md)  
+  
+-   [Define Static Constructors in a Class or Struct](../misc/how-to-define-static-constructors-in-a-class-or-struct.md)  
+  
+-   [Copy Constructor May Not Be Generated](../misc/copy-constructor-may-not-be-generated.md)  
+  
+-   [Hide-by-Signature Functions in Reference Types](../misc/hide-by-signature-functions-in-reference-types.md)  
+  
+-   [Destructors and finalizers in How to: Define and consume classes and structs (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)  
+  
+-   [Type and Member Visibility](../misc/type-and-member-visibility.md)  
+  
 -   [User-Defined Operators (C++/CLI)](../dotnet/user-defined-operators-cpp-cli.md)  
   
 -   [User-Defined Conversions (C++/CLI)](../dotnet/user-defined-conversions-cpp-cli.md)  

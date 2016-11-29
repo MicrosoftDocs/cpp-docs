@@ -37,19 +37,6 @@ translation.priority.ht:
 # Compiler Error C3619
 a template cannot be declared within a managed or WinRT type  
   
- Class templates are not allowed in a managed or WinRT class or interface.  
+Class templates are not allowed in a managed or WinRT class or interface.  
   
- C3619 is only reachable using **/clr:oldSyntax**.  
-  
- The following sample generates C3619:  
-  
-```  
-// C3619.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-  
-__gc class X {  
-   template<typename T> class Y {   // C3619  
-   };  
-};  
-```
+C3619 is only reachable using the obsolete compiler option **/clr:oldSyntax**.  

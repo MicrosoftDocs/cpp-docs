@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error C3354
 'function' : the function used to create a delegate cannot have return type 'type'  
   
- The following types are invalid as return types for a [delegate](../../misc/delegate.md):  
+ The following types are invalid as return types for a `delegate`:  
   
 -   Pointer to function  
   
@@ -62,18 +62,3 @@ delegate VoidPfn func(); // C3354
 // try the following line instead  
 // delegate  void func();  
 ```  
-  
- The following sample generates C3354:  
-  
-```  
-// C3354.cpp  
-// compile with: /clr:oldSyntax /c  
-#using <mscorlib.dll>  
-using namespace System;  
-  
-typedef void (*VoidPfn)();  
-  
-__delegate VoidPfn func();   // C3354  
-// try the following line instead  
-// __delegate void func();  
-```

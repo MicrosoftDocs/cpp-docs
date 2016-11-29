@@ -149,7 +149,7 @@ Al         653.7
 Stan     4358.24  
 ```  
   
- The left-align flag is set by using the [setiosflags](../standard-library/iomanip-functions.md#setiosflags) manipulator with the [left](../standard-library/basic-ios-class.md#left) enumerator. This enumerator is defined in the [ios](../standard-library/basic-ios-class.md) class, so its reference must include the **ios::** prefix. The [resetiosflags](../standard-library/iomanip-functions.md#resetiosflags) manipulator turns off the left-align flag. Unlike **width** and `setw`, the effect of `setiosflags` and `resetiosflags` is permanent.  
+ The left-align flag is set by using the [setiosflags](../standard-library/iomanip-functions.md#setiosflags) manipulator with the `left` enumerator. This enumerator is defined in the [ios](../standard-library/basic-ios-class.md) class, so its reference must include the **ios::** prefix. The [resetiosflags](../standard-library/iomanip-functions.md#resetiosflags) manipulator turns off the left-align flag. Unlike **width** and `setw`, the effect of `setiosflags` and `resetiosflags` is permanent.  
   
 ##  <a name="vclrfprecisionanchor5"></a> Precision  
  The default value for floating-point precision is six. For example, the number 3466.9768 prints as 3466.98. To change the way this value prints, use the [setprecision](../standard-library/iomanip-functions.md#setprecision) manipulator. The manipulator has two flags: [fixed](../standard-library/ios-functions.md#fixed) and [scientific](../standard-library/ios-functions.md#scientific). If [fixed](../standard-library/ios-functions.md#fixed) is set, the number prints as 3466.976800. If **scientific** is set, it prints as 3.4669773+003.  

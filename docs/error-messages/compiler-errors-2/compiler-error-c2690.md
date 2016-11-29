@@ -38,23 +38,3 @@ translation.priority.ht:
 'operator' : cannot perform pointer arithmetic on a managed or WinRT array  
   
  Pointer arithmetic is not allowed on a managed or WinRT array. Use array index notation to traverse the array.  
-  
- **Managed Extensions for C++**  
-  
- Pointer arithmetic is not allowed on a [__gc](../../misc/gc.md) array. Use array index notation to traverse the array.  
-  
- The following sample generates C2690:  
-  
-```  
-// C2690b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-using namespace System;  
-  
-int main() {  
-   String* x[] = new String*[10];  
-   x[0] = "test";  
-   Console::WriteLine(x[0]);  
-   x++;   // C2690  
-}  
-```

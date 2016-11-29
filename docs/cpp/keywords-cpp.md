@@ -91,16 +91,15 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 |[__assume](../intrinsics/assume.md)|[__based](../cpp/based-pointers-cpp.md)|[__box](../dotnet/value-type-semantics.md) <sup>2</sup>|  
 |[__cdecl](../cpp/cdecl.md)|[__declspec](../cpp/declspec.md)|[__delegate](../dotnet/delegates-and-events.md) <sup>2</sup>|  
 |[__event](../cpp/event.md)|[__except](../cpp/try-except-statement.md)|[__fastcall](../cpp/fastcall.md)|  
-
-|[__finally](../cpp/try-finally-statement.md)|[__forceinline](inline-functions-cpp.md)|[__gc](../dotnet/value-type-semantics.md) <sup>2</sup>|  
+|[__finally](../cpp/try-finally-statement.md)|[__forceinline](../cpp/inline-functions-cpp.md)|[__gc](../dotnet/declaration-of-a-clr-reference-class-object.md) <sup>2</sup>|  
 |[__hook](../cpp/hook.md) <sup>3</sup>|[__identifier](../windows/identifier-cpp-cli.md)|[__if_exists](../cpp/if-exists-statement.md)|  
 |[__if_not_exists](../cpp/if-not-exists-statement.md)|[__inline](inline-functions-cpp.md)|[__int16](../cpp/int8-int16-int32-int64.md)|  
 |[__int32](../cpp/int8-int16-int32-int64.md)|[__int64](../cpp/int8-int16-int32-int64.md)|[__int8](../cpp/int8-int16-int32-int64.md)|  
 |[__interface](../cpp/interface.md)|[__leave](../cpp/try-finally-statement.md)|[__m128](../cpp/m128.md)|  
 |[__m128d](../cpp/m128d.md)|[__m128i](../cpp/m128i.md)|[__m64](../cpp/m64.md)|  
-|[__multiple_inheritance](../cpp/inheritance-keywords.md)|[__nogc](../dotnet/value-type-semantics.md) <sup>2</sup>|[__noop](../intrinsics/noop.md)|  
-|[__pin](../dotnet/value-type-semantics.md) <sup>2</sup>|[__property](../dotnet/property-declaration.md) <sup>2</sup>|[__raise](../cpp/raise.md)|  
-|[__sealed](../dotnet/declaration-of-a-managed-class-type.md) <sup>2</sup>|[__single_inheritance](../cpp/inheritance-keywords.md)|[__stdcall](../cpp/stdcall.md)|  
+|[__multiple_inheritance](../cpp/inheritance-keywords.md)|[__nogc](../dotnet/declaration-of-a-clr-reference-class-object.md) <sup>2</sup>|[__noop](../intrinsics/noop.md)|  
+|[__pin](../misc/pin.md) <sup>2</sup>|[__property](../misc/property.md) <sup>2</sup>|[__raise](../cpp/raise.md)|  
+|[__sealed](../misc/sealed.md) <sup>2</sup>|[__single_inheritance](../cpp/inheritance-keywords.md)|[__stdcall](../cpp/stdcall.md)|  
 |[__super](../cpp/super.md)|[__thiscall](../cpp/thiscall.md)|[__try/\__except](../cpp/try-except-statement.md), [__try/\__finally](../cpp/try-finally-statement.md)|  
 |[__try_cast](../dotnet/cast-notation-and-introduction-of-safe-cast-angles.md) <sup>2</sup>|[__unaligned](../cpp/unaligned.md)|[__unhook](../cpp/unhook.md) <sup>3</sup>|  
 |[__uuidof](../cpp/uuidof-operator.md)|[__value](../dotnet/value-type-semantics.md) <sup>2</sup>|[__virtual_inheritance](../cpp/inheritance-keywords.md)|  
