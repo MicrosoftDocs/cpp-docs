@@ -35,7 +35,7 @@ You can use tiling to maximize the acceleration of your app. Tiling divides thre
   
 - `tile_static` variables. The primary benefit of tiling is the performance gain from `tile_static` access. Access to data in `tile_static` memory can be significantly faster than access to data in the global space (`array` or `array_view` objects). An instance of a `tile_static` variable is created for each tile, and all threads in the tile have access to the variable. In a typical tiled algorithm, data is copied into `tile_static` memory once from global memory and then accessed many times from the `tile_static` memory.  
   
-- [tile_barrier::wait Method](reference/tile_barrier-class.md#tile_barrier__wait_method). A call to `tile_barrier::wait` suspends execution of the current thread until all of the threads in the same tile reach the call to `tile_barrier::wait`. You cannot guarantee the order that the threads will run in, only that no threads in the tile will execute past the call to `tile_barrier::wait` until all of the threads have reached the call. This means that by using the `tile_barrier::wait` method, you can perform tasks on a tile-by-tile basis rather than a thread-by-thread basis. A typical tiling algorithm has code to initialize the `tile_static` memory for the whole tile followed by a call to `tile_barrer::wait`. Code that follows `tile_barrier::wait` contains computations that require access to all the `tile_static` values.  
+- [tile_barrier::wait Method](reference/tile-barrier-class.md#tile_barrier__wait_method). A call to `tile_barrier::wait` suspends execution of the current thread until all of the threads in the same tile reach the call to `tile_barrier::wait`. You cannot guarantee the order that the threads will run in, only that no threads in the tile will execute past the call to `tile_barrier::wait` until all of the threads have reached the call. This means that by using the `tile_barrier::wait` method, you can perform tasks on a tile-by-tile basis rather than a thread-by-thread basis. A typical tiling algorithm has code to initialize the `tile_static` memory for the whole tile followed by a call to `tile_barrer::wait`. Code that follows `tile_barrier::wait` contains computations that require access to all the `tile_static` values.  
   
 -   Local and global indexing. You have access to the index of the thread relative to the entire `array_view` or `array` object and the index relative to the tile. Using the local index can make your code easier to read and debug. Typically, you use local indexing to access `tile_static` variables, and global indexing to access `array` and `array_view` variables.  
   
@@ -311,13 +311,13 @@ t_idx.barrier.wait();
  A *memory fence* ensures that memory accesses are available to other threads in the thread tile, and that memory accesses are executed according to program order. To ensure this, compilers and processors do not reorder reads and writes across the fence. In C++ AMP, a memory fence is created by a call to one of these methods:  
   
 
-- [tile_barrier::wait Method](reference/tile_barrier-class.md#tile_barrier__wait_method): Creates a fence around both global and `tile_static` memory.  
+- [tile_barrier::wait Method](reference/tile-barrier-class.md#tile_barrier__wait_method): Creates a fence around both global and `tile_static` memory.  
   
-- [tile_barrier::wait_with_all_memory_fence Method](reference/tile_barrier-class.md#tile_barrier__wait_with_all_memory_fence_method): Creates a fence around both global and `tile_static` memory.  
+- [tile_barrier::wait_with_all_memory_fence Method](reference/tile-barrier-class.md#tile_barrier__wait_with_all_memory_fence_method): Creates a fence around both global and `tile_static` memory.  
   
-- [tile_barrier::wait_with_global_memory_fence Method](reference/tile_barrier-class.md#tile_barrier__wait_with_global_memory_fence_method): Creates a fence around only global memory.  
+- [tile_barrier::wait_with_global_memory_fence Method](reference/tile-barrier-class.md#tile_barrier__wait_with_global_memory_fence_method): Creates a fence around only global memory.  
   
-- [tile_barrier::wait_with_tile_static_memory_fence Method](reference/tile_barrier-class.md#tile_barrier__wait_with_tile_static_memory_fence_method): Creates a fence around only `tile_static` memory.  
+- [tile_barrier::wait_with_tile_static_memory_fence Method](reference/tile-barrier-class.md#tile_barrier__wait_with_tile_static_memory_fence_method): Creates a fence around only `tile_static` memory.  
   
  Calling the specific fence that you require can improve the performance of your app. The barrier type affects how the compiler and the hardware reorder statements. For example, if you use a global memory fence, it applies only to global memory accesses and therefore, the compiler and the hardware might reorder reads and writes to `tile_static` variables on the two sides of the fence.  
   

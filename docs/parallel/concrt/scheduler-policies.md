@@ -49,18 +49,18 @@ This document describes the role of scheduler policies in the Concurrency Runtim
  [!code-cpp[concrt-scheduler-policy#2](../../parallel/concrt/codesnippet/cpp/scheduler-policies_1.cpp)]  
   
 <<<<<<< HEAD
- The [concurrency::PolicyElementKey](reference/concurrency-namespace-enumerations.md#policyelementkey_enumeration) enumeration defines the policy keys that are associated with the Task Scheduler. The following table describes the policy keys and the default value that the runtime uses for each of them.  
+ The [concurrency::PolicyElementKey](reference/concurrency-namespace-enums.md#policyelementkey_enumeration) enumeration defines the policy keys that are associated with the Task Scheduler. The following table describes the policy keys and the default value that the runtime uses for each of them.  
   
 |Policy Key|Description|Default Value|  
 |----------------|-----------------|-------------------|  
-|`SchedulerKind`|A [concurrency::SchedulerType](reference/concurrency-namespace-enumerations.md#schedulertype_enumeration) value that specifies the type of threads to use to schedule tasks.|`ThreadScheduler` (use normal threads). This is the only valid value for this key.|  
+|`SchedulerKind`|A [concurrency::SchedulerType](reference/concurrency-namespace-enums.md#schedulertype_enumeration) value that specifies the type of threads to use to schedule tasks.|`ThreadScheduler` (use normal threads). This is the only valid value for this key.|  
 |`MaxConcurrency`|An `unsigned int` value that specifies the maximum number of concurrency resources that the scheduler uses.|[concurrency::MaxExecutionResources](reference/concurrency-namespace-constants1.md#maxexecutionresources_constant)|  
 =======
- The [concurrency::PolicyElementKey](reference/concurrency-namespace-enums.md#PolicyElementKey) enumeration defines the policy keys that are associated with the Task Scheduler. The following table describes the policy keys and the default value that the runtime uses for each of them.  
+ The [concurrency::PolicyElementKey](reference/concurrency-namespace-enums.md#policyelementkey_enumeration) enumeration defines the policy keys that are associated with the Task Scheduler. The following table describes the policy keys and the default value that the runtime uses for each of them.  
   
 |Policy Key|Description|Default Value|  
 |----------------|-----------------|-------------------|  
-|`SchedulerKind`|A [concurrency::SchedulerType](reference/concurrency-namespace-enums.md#SchedulerType) value that specifies the type of threads to use to schedule tasks.|`ThreadScheduler` (use normal threads). This is the only valid value for this key.|  
+|`SchedulerKind`|A [concurrency::SchedulerType](reference/concurrency-namespace-enums.md#schedulertype_enumeration) value that specifies the type of threads to use to schedule tasks.|`ThreadScheduler` (use normal threads). This is the only valid value for this key.|  
 |`MaxConcurrency`|An `unsigned int` value that specifies the maximum number of concurrency resources that the scheduler uses.|[concurrency::MaxExecutionResources](reference/concurrency-namespace-constants1.md#MaxExecutionResources)|  
 >>>>>>> master
 |`MinConcurrency`|An `unsigned int` value that specifies the minimum number of concurrency resources that the scheduler uses.|`1`|  
@@ -69,10 +69,10 @@ This document describes the role of scheduler policies in the Concurrency Runtim
 |`ContextStackSize`|An `unsigned int` value that specifies the size of the stack, in kilobytes, to reserve for each context.|`0` (use the default stack size)|  
 |`ContextPriority`|An `int` value that specifies the thread priority of each context. This can be any value that you can pass to [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) or `INHERIT_THREAD_PRIORITY`.|`THREAD_PRIORITY_NORMAL`|  
 <<<<<<< HEAD
-|`SchedulingProtocol`|A [concurrency::SchedulingProtocolType](reference/concurrency-namespace-enumerations.md#schedulingprotocoltype_enumeration) value that specifies the scheduling algorithm to use.|`EnhanceScheduleGroupLocality`|  
-|`DynamicProgressFeedback`|A [concurrency::DynamicProgressFeedbackType](reference/concurrency-namespace-enumerations.md#dynamicprogressfeedbacktype_enumeration) value that specifies whether to rebalance resources according to statistics-based progress information.<br /><br /> **Note** Do not set this policy to `ProgressFeedbackDisabled` because it is reserved for use by the runtime.|`ProgressFeedbackEnabled`|  
+|`SchedulingProtocol`|A [concurrency::SchedulingProtocolType](reference/concurrency-namespace-enums.md#schedulingprotocoltype_enumeration) value that specifies the scheduling algorithm to use.|`EnhanceScheduleGroupLocality`|  
+|`DynamicProgressFeedback`|A [concurrency::DynamicProgressFeedbackType](reference/concurrency-namespace-enums.md#dynamicprogressfeedbacktype_enumeration) value that specifies whether to rebalance resources according to statistics-based progress information.<br /><br /> **Note** Do not set this policy to `ProgressFeedbackDisabled` because it is reserved for use by the runtime.|`ProgressFeedbackEnabled`|  
 =======
-|`SchedulingProtocol`|A [concurrency::SchedulingProtocolType](reference/concurrency-namespace-enums.md#SchedulingProtocolType) value that specifies the scheduling algorithm to use.|`EnhanceScheduleGroupLocality`|  
+|`SchedulingProtocol`|A [concurrency::SchedulingProtocolType](reference/concurrency-namespace-enums.md#schedulingprotocoltype_enumeration) value that specifies the scheduling algorithm to use.|`EnhanceScheduleGroupLocality`|  
 |`DynamicProgressFeedback`|A [concurrency::DynamicProgressFeedbackType](reference/concurrency-namespace-enums.md#DynamicProgressFeedbackType) value that specifies whether to rebalance resources according to statistics-based progress information.<br /><br /> **Note** Do not set this policy to `ProgressFeedbackDisabled` because it is reserved for use by the runtime.|`ProgressFeedbackEnabled`|  
 >>>>>>> master
   

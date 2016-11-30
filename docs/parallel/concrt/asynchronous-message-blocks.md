@@ -219,7 +219,7 @@ The Agents Library provides several message-block types that enable you to propa
 ##  <a name="transformer"></a> transformer Class  
  The [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) class acts as both a message receiver and as a message sender. The `transformer` class resembles the `call` class because it performs a user-defined work function when it receives data. However, the `transformer` class also sends the result of the work function to receiver objects. Like a `call` object, a `transformer` object acts in parallel to other components that send messages to it. If a `transformer` object is performing work when it receives a message, it adds that message to a queue. Every `transformer` object processes its queued messages in the order in which they are received.  
   
- The `transformer` class sends its message to one target. If you set the `_PTarget` parameter in the constructor to `NULL`, you can later specify the target by calling the [concurrency::link_target](reference/source_block-class.md#source_block__link_target_method) method.  
+ The `transformer` class sends its message to one target. If you set the `_PTarget` parameter in the constructor to `NULL`, you can later specify the target by calling the [concurrency::link_target](reference/source-block-class.md#source_block__link_target_method) method.  
 
   
  Unlike all other asynchronous message block types that are provided by the Agents Library, the `transformer` class can act on different input and output types. This ability to transform data from one type to another makes the `transformer` class a key component in many concurrent networks. In addition, you can add more fine-grained parallel functionality in the work function of a `transformer` object.  
@@ -306,7 +306,7 @@ fib35 = 9227465fib37 = 24157817half_of_fib42 = 1.33957e+008
  The concurrency::[timer class](../../parallel/concrt/reference/timer-class.md) acts as a message source. A `timer` object sends a message to a target after a specified period of time has elapsed. The `timer` class is useful when you must delay sending a message or you want to send a message at a regular interval.  
   
 
- The `timer` class sends its message to just one target. If you set the `_PTarget` parameter in the constructor to `NULL`, you can later specify the target by calling the [concurrency::ISource::link_target](reference/source_block-class.md#source_block__link_target_method) method.  
+ The `timer` class sends its message to just one target. If you set the `_PTarget` parameter in the constructor to `NULL`, you can later specify the target by calling the [concurrency::ISource::link_target](reference/source-block-class.md#source_block__link_target_method) method.  
   
  A `timer` object can be repeating or non-repeating. To create a repeating timer, pass `true` for the `_Repeating` parameter when you call the constructor. Otherwise, pass `false` for the `_Repeating` parameter to create a non-repeating timer. If the timer is repeating, it sends the same message to its target after each interval.  
   

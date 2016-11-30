@@ -67,7 +67,7 @@ This document describes some of the key points to keep in mind when you use the 
 -   [Example: Controlling Execution in a Windows Store App with C++ and XAML](#example-app)  
   
 ##  <a name="create-async"></a> Creating Asynchronous Operations  
- You can use the task and continuation model in the Parallel Patterns Library (PPL) to define background tasks as well as additional tasks that run when the previous task completes. This functionality is provided by the [concurrency::task](../../parallel/concrt/reference/task-class-concurrency-runtime.md) class. For more information about this model and the `task` class, see [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
+ You can use the task and continuation model in the Parallel Patterns Library (PPL) to define background tasks as well as additional tasks that run when the previous task completes. This functionality is provided by the [concurrency::task](../../parallel/concrt/reference/task-class.md) class. For more information about this model and the `task` class, see [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
  The [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)] is a programming interface that you can use to create [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps that run only in a special operating system environment. Such apps use authorized functions, data types, and devices, and are distributed from the [!INCLUDE[win8_appstore_long](../../build/reference/includes/win8_appstore_long_md.md)]. The [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)] is represented by the *Application Binary Interface* (ABI). The ABI is an underlying binary contract that makes [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)] APIs available to programming languages such as Visual C++.  
   
@@ -157,9 +157,9 @@ This document describes some of the key points to keep in mind when you use the 
   
  A task that's created from an asynchronous operation, such as `IAsyncOperation<TResult>`, uses special semantics that can help you ignore the threading details. Although an operation might run on a background thread (or it may not be backed by a thread at all), its continuations are by default guaranteed to run on the apartment that started the continuation operations (in other words, from the apartment that called `task::then`). You can use the [concurrency::task_continuation_context](../../parallel/concrt/reference/task-continuation-context-class.md) class to control the execution context of a continuation. Use these static helper methods to create `task_continuation_context` objects:  
   
--   Use [concurrency::task_continuation_context::use_arbitrary](reference/task_continuation_context-class.md#task_continuation_context__use_arbitrary_method) to specify that the continuation runs on a background thread.  
+-   Use [concurrency::task_continuation_context::use_arbitrary](reference/task-continuation-context-class.md#task_continuation_context__use_arbitrary_method) to specify that the continuation runs on a background thread.  
   
--   Use [concurrency::task_continuation_context::use_current](reference/task_continuation_context-class.md#task_continuation_context__use_current_method) to specify that the continuation runs on the thread that called `task::then`.  
+-   Use [concurrency::task_continuation_context::use_current](reference/task-continuation-context-class.md#task_continuation_context__use_current_method) to specify that the continuation runs on the thread that called `task::then`.  
   
  You can pass a `task_continuation_context` object to the [task::then](reference/task-class.md#task__then_method) method to explicitly control the execution context of the continuation or you can pass the task to another apartment and then call the `task::then` method to implicitly control the execution context.  
   

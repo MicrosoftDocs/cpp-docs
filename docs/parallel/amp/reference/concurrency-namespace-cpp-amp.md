@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Concurrency Namespace (C++ AMP)
-Provides classes and functions that accelerate the execution of C++ code on data-parallel hardware. For more information, see [C++ AMP Overview](cpp-amp-overview.md)  
+Provides classes and functions that accelerate the execution of C++ code on data-parallel hardware. For more information, see [C++ AMP Overview](../cpp-amp-overview.md)  
   
 ## Syntax  
   
@@ -64,7 +64,7 @@ namespace Concurrency;
 |[array Class](array-class.md)|A data aggregate on an `accelerator_view` in the grid domain. It is a collection of variables, one for each element in a grid domain. Each variable holds a value that corresponds to some C++ type.|  
 |[array_view Class](array-view-class.md)|Represents a view into the data in an array\<T,N>.|  
 |[completion_future Class](completion-future-class.md)|Represents a future that corresponds to a C++ AMP asynchronous operation.|  
-|[extent Class](extent-class-cpp-amp.md)|Represents a vector of N integer values that specify the bounds of an N-dimensional space that has an origin of 0. The values in the coordinate vector are ordered from most significant to least significant. For example, in Cartesian 3-dimensional space, the extent vector (7,5,3) represents a space in which the z coordinate ranges from 0 to 7, the y coordinate ranges from 0 to 5, and the x coordinate ranges from 0 to 3.|  
+|[extent Class](extent-class.md)|Represents a vector of N integer values that specify the bounds of an N-dimensional space that has an origin of 0. The values in the coordinate vector are ordered from most significant to least significant. For example, in Cartesian 3-dimensional space, the extent vector (7,5,3) represents a space in which the z coordinate ranges from 0 to 7, the y coordinate ranges from 0 to 5, and the x coordinate ranges from 0 to 3.|  
 |[index Class](index-class.md)|Defines an N-dimensional index point.|  
 |[invalid_compute_domain Class](invalid-compute-domain-class.md)|The exception that's thrown when the runtime can't start a kernel by using the compute domain specified at the `parallel_for_each` call site.|  
 |[out_of_memory Class](out-of-memory-class.md)|The exception that is thrown when a method fails because of a lack of system or device memory.|  
@@ -80,7 +80,7 @@ namespace Concurrency;
 |Name|Description|  
 |----------|-----------------|  
 |[access_type Enumeration](concurrency-namespace-enums-amp.md#access_type)|Specifies the data access type.|  
-|[queuing_mode Enumeration](concurrency-namespace-enums-amp.mdqueuing_mode)|Specifies the queuing modes that are supported on the accelerator.|  
+|[queuing_mode Enumeration](oncurrency-namespace-enums-amp.md#queuing_mode_enumeration)|Specifies the queuing modes that are supported on the accelerator.|  
   
 ### Operators  
   
