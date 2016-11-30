@@ -77,7 +77,6 @@ Parameters = 50, 100
   
  [!code-cpp[concrt-migration-lwt#5](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_5.cpp)]  
   
-
 5.  Replace the call to `CreateThread` with a call to the [concurrency::CurrentScheduler::ScheduleTask](reference/currentscheduler-class.md#currentscheduler__scheduletask_method) method.  
 
   
@@ -86,7 +85,6 @@ Parameters = 50, 100
 
 6.  Replace the call to `WaitForSingleObject` with a call to the [concurrency::event::wait](reference/event-class.md#event__wait_method) method to wait for the task to finish.  
 
- 
  [!code-cpp[concrt-migration-lwt#7](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_7.cpp)]  
   
 7.  Remove the call to `CloseHandle`.  
@@ -96,8 +94,6 @@ Parameters = 50, 100
  [!code-cpp[concrt-migration-lwt#8](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_8.cpp)]  
   
 9. At the end of the `MyThreadFunction` function, call the [concurrency::event::set](reference/event-class.md#event__set_method) method to signal to the main application that the task has finished.  
-
-
   
  [!code-cpp[concrt-migration-lwt#9](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_9.cpp)]  
   

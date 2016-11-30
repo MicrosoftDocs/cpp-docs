@@ -40,7 +40,6 @@ This document describes the role of scheduler policies in the Concurrency Runtim
 > [!TIP]
 >  The Concurrency Runtime provides a default scheduler. Therefore, you don't have to create one in your application. Because the Task Scheduler helps you fine-tune the performance of your applications, we recommend that you start with the [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) or the [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md) if you are new to the Concurrency Runtime.  
   
-
  When you use the [concurrency::CurrentScheduler::Create](reference/currentscheduler-class.md#currentscheduler__create_method), [concurrency::Scheduler::Create](reference/scheduler-class.md#scheduler__create_method), or [concurrency::Scheduler::SetDefaultSchedulerPolicy](reference/scheduler-class.md#scheduler__setdefaultschedulerpolicy_method) method to create a scheduler instance, you provide a [concurrency::SchedulerPolicy](../../parallel/concrt/reference/schedulerpolicy-class.md) object that contains a collection of key-value pairs that specify the behavior of the scheduler. The `SchedulerPolicy` constructor takes a variable number of arguments. The first argument is the number of policy elements that you are about to specify. The remaining arguments are key-value pairs for each policy element. The following example creates a `SchedulerPolicy` object that specifies three policy elements. The runtime uses default values for the policy keys that are not specified.  
 
   
@@ -53,7 +52,6 @@ This document describes the role of scheduler policies in the Concurrency Runtim
 |----------------|-----------------|-------------------|  
 |`SchedulerKind`|A [concurrency::SchedulerType](reference/concurrency-namespace-enums.md#schedulertype_enumeration) value that specifies the type of threads to use to schedule tasks.|`ThreadScheduler` (use normal threads). This is the only valid value for this key.|  
 |`MaxConcurrency`|An `unsigned int` value that specifies the maximum number of concurrency resources that the scheduler uses.|[concurrency::MaxExecutionResources](reference/concurrency-namespace-constants1.md#maxexecutionresources_constant)|  
-
 |`MinConcurrency`|An `unsigned int` value that specifies the minimum number of concurrency resources that the scheduler uses.|`1`|  
 |`TargetOversubscriptionFactor`|An `unsigned int` value that specifies how many threads to allocate to each processing resource.|`1`|  
 |`LocalContextCacheSize`|An `unsigned int` value that specifies the maximum number of contexts that can be cached in the local queue of each virtual processor.|`8`|  
@@ -62,17 +60,16 @@ This document describes the role of scheduler policies in the Concurrency Runtim
 
 |`SchedulingProtocol`|A [concurrency::SchedulingProtocolType](reference/concurrency-namespace-enums.md#schedulingprotocoltype_enumeration) value that specifies the scheduling algorithm to use.|`EnhanceScheduleGroupLocality`|  
 |`DynamicProgressFeedback`|A [concurrency::DynamicProgressFeedbackType](reference/concurrency-namespace-enums.md#dynamicprogressfeedbacktype_enumeration) value that specifies whether to rebalance resources according to statistics-based progress information.<br /><br /> **Note** Do not set this policy to `ProgressFeedbackDisabled` because it is reserved for use by the runtime.|`ProgressFeedbackEnabled`|  
+
   
  Each scheduler uses its own policy when it schedules tasks. The policies that are associated with one scheduler do not affect the behavior of any other scheduler. In addition, you cannot change the scheduler policy after you create the `Scheduler` object.  
   
 > [!IMPORTANT]
 >  Use only scheduler policies to control the attributes for threads that the runtime creates. Do not change the thread affinity or priority of threads that are created by the runtime because that might cause undefined behavior.  
   
-
  The runtime creates a default scheduler for you if you do not explicitly create one. If you want to use the default scheduler in your application, but you want to specify a policy for that scheduler to use, call the [concurrency::Scheduler::SetDefaultSchedulerPolicy](reference/scheduler-class.md#scheduler__setdefaultschedulerpolicy_method) method before you schedule parallel work. If you do not call the `Scheduler::SetDefaultSchedulerPolicy` method, the runtime uses the default policy values from the table.  
   
  Use the [concurrency::CurrentScheduler::GetPolicy](reference/currentscheduler-class.md#currentscheduler__getpolicy_method) and the [concurrency::Scheduler::GetPolicy](reference/scheduler-class.md#scheduler__getpolicy_method) methods to retrieve a copy of the scheduler policy. The policy values that you receive from these methods can differ from the policy values that you specify when you create the scheduler.  
-
   
 ## Example  
  To examine examples that use specific scheduler policies to control the behavior of the scheduler, see [How to: Specify Specific Scheduler Policies](../../parallel/concrt/how-to-specify-specific-scheduler-policies.md) and [How to: Create Agents that Use Specific Scheduler Policies](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md).  

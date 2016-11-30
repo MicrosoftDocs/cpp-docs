@@ -83,7 +83,6 @@ class CComCurrency
 |[CComCurrency::operator ==](#ccomcurrency__operator_eq_eq)|This operator compares two `CComCurrency` objects for equality.|  
 |[CComCurrency::operator >](#ccomcurrency__operator_gt)|This operator compares two `CComCurrency` objects to determine the larger.|  
 |[CComCurrency::operator >=](#ccomcurrency__operator_gt_eq)|This operator compares two `CComCurrency` objects to determine equality or the larger.|  
->>>>>>> master
 |[CComCurrency::operator CURRENCY](#ccomcurrency__operator_currency)|Casts a `CURRENCY` object.|  
   
 ### Public Data Members  
