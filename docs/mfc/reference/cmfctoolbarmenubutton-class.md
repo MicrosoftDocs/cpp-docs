@@ -119,7 +119,7 @@ class CMFCToolBarMenuButton : public CMFCToolBarButton
  [!code-cpp[NVC_MFC_WordPad#10](../../mfc/reference/codesnippet/cpp/cmfctoolbarmenubutton-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
- [CObject](.cobject-class.md)  
+ [CObject](cobject-class.md)  
   
  [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)  
   

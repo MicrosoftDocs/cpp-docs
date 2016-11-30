@@ -247,7 +247,7 @@ class CListCtrl : public CWnd
 ## Items and Subitems  
  Each item in a list view control consists of an icon (from an image list), a label, a current state, and an application-defined value (referred to as "item data"). One or more subitems can also be associated with each item. A "subitem" is a string that, in report view, can be displayed in a column to the right of an item's icon and label. All items in a list view control must have the same number of subitems.  
   
- Class **CListCtrl** provides several functions for inserting, deleting, finding, and modifying these items. For more information, see [CListCtrl::GetItem](#clistctrl__getitem), [CListCtrl::InsertItem](#clistctrl__insertitem), and [CListCtrl::FindItem](#clistctrl__finditem), [Using CListCtrl: Adding Items to the Control](clistctrl-class.md#not_found.md#adding_items_to_the_control), and [Using CListCtrl: Scrolling, Arranging, Sorting, and Finding in list controls](../scrolling-arranging-sorting-and-finding-in-list-controls.md).  
+ Class **CListCtrl** provides several functions for inserting, deleting, finding, and modifying these items. For more information, see [CListCtrl::GetItem](#clistctrl__getitem), [CListCtrl::InsertItem](#clistctrl__insertitem), and [CListCtrl::FindItem](#clistctrl__finditem), [Adding Items to the Control](../adding-items-to-the-control.md), and [Scrolling, Arranging, Sorting, and Finding in list controls](../scrolling-arranging-sorting-and-finding-in-list-controls.md).  
   
  By default, the list view control is responsible for storing an item's icon and text attributes. However, in addition to these item types, class `CListCtrl` supports "callback items." A "callback item" is a list view item for which the application — rather than the control — stores the text, icon, or both. A callback mask is used to specify which item attributes (text and/or icon) are supplied by the application. If an application uses callback items, it must be able to supply the text and/or icon attributes on demand. Callback items are helpful when your application already maintains some of this information. For more information, see [Using CListCtrl: Callback Items and the Callback Mask](../callback-items-and-the-callback-mask.md).  
   
@@ -2076,7 +2076,7 @@ BOOL GetSubItemRect(
 - `LVIR_LABEL` Returns the bounding rectangle of the entire item, including the icon and label. This is identical to `LVIR_BOUNDS`.  
   
  `ref`  
- Reference to a [CRect](crect-class.md) object that contains the coordinates of the subitem's bounding rectangle.  
+ Reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the coordinates of the subitem's bounding rectangle.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -2260,7 +2260,7 @@ void GetWorkAreas(
  The number of `RECT` structures contained in the *prc* array.  
   
  `prc`  
- A pointer to an array of `RECT` structures (or [CRect](crect-class.md) objects) that receive the working areas of the list view control. Values in these structures are in client coordinates.  
+ A pointer to an array of `RECT` structures (or [CRect](../../atl-mfc-shared/reference/crect-class.md) objects) that receive the working areas of the list view control. Values in these structures are in client coordinates.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 macro, [ListView_GetWorkAreas](http://msdn.microsoft.com/library/windows/desktop/bb775024), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
@@ -3131,7 +3131,7 @@ CSize SetIconSpacing(
  A `CSize` object specifying the distance (in pixels) between icons on the x- and y-axes.  
   
 ### Return Value  
- A [CSize](csize-class.md) object containing the previous values for icon spacing.  
+ A [CSize](../../atl-mfc-shared/reference/csize-class.md) object containing the previous values for icon spacing.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 macro, [ListView_SetIconSpacing](http://msdn.microsoft.com/library/windows/desktop/bb775085), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
@@ -3724,7 +3724,7 @@ void SetWorkAreas(
   
 ### Parameters  
  `nWorkAreas`  
- The number of `RECT` structures (or [CRect](crect-class.md) objects) in the array pointed to by `lpRect`.  
+ The number of `RECT` structures (or [CRect](../../atl-mfc-shared/reference/crect-class.md) objects) in the array pointed to by `lpRect`.  
   
  `lpRect`  
  The address of an array of `RECT` structures (or `CRect` objects) that specify the new work areas of the list view control. These areas must be specified in client coordinates. If this parameter is **NULL**, the working area will be set to the client area of the control.  
@@ -3969,7 +3969,7 @@ BOOL Update(int nItem);
   
 ## See Also  
  [MFC Sample ROWLIST](../../top/visual-cpp-samples.md)   
- [CWnd Class](..cwnd-class.md)   
+ [CWnd Class](cwnd-class.md)   
  [Hierarchy Chart](../hierarchy-chart.md)   
  [CImageList Class](cimagelist-class.md)
 

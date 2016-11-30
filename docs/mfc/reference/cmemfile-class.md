@@ -79,7 +79,7 @@ class CMemFile : public CFile
   
  You can access the memory block through the pointer supplied when you detach it from the `CMemFile` object by calling [Detach](#cmemfile__detach).  
   
- The most common use of `CMemFile` is to create a `CMemFile` object and use it by calling [CFile](../../mfc/reference/cfile-class.md) member functions. Note that creating a `CMemFile` automatically opens it: you do not call [CFile::Open](../../mfc/reference/cfile-class.md#cfile__open), which is only used for disk files. Because `CMemFile` doesn't use a disk file, the data member `CFile::m_hFile` is not used and has no meaning.  
+ The most common use of `CMemFile` is to create a `CMemFile` object and use it by calling [CFile](../../mfc/reference/cfile-class.md) member functions. Note that creating a `CMemFile` automatically opens it: you do not call [CFile::Open](../../mfc/reference/cfile-class.md#cfile__open), which is only used for disk files. Because `CMemFile` doesn't use a disk file, the data member `CFile::m_hFile` is not used.  
   
  The `CFile` member functions [Duplicate](../../mfc/reference/cfile-class.md#cfile__duplicate), [LockRange](../../mfc/reference/cfile-class.md#cfile__lockrange), and [UnlockRange](../../mfc/reference/cfile-class.md#cfile__unlockrange) are not implemented for `CMemFile`. If you call these functions on a `CMemFile` object, you will get a [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).  
   

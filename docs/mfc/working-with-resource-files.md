@@ -58,7 +58,7 @@ translation.priority.mt:
  Describes the resource editors provided in Visual Studio, the types of resources you can modify with each editor, and provides links to detailed information on using each editor.  
   
 ## Related Sections  
- [Visual C++](../visual-cpp-in-visual-studio.md)  
+ [Visual C++](../top/visual-cpp-in-visual-studio.md)  
  Provides links into the Visual C++ documentation.  
   
  [Introducing Visual Studio](http://msdn.microsoft.com/en-us/99997089-56ff-4d60-81a9-447062dc98ac)  

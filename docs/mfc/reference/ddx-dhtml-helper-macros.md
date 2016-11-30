@@ -45,19 +45,19 @@ The DDX_DHtml helper macros allow easy access to the commonly used properties of
   
 |||  
 |-|-|  
-|[DDX_DHtml_ElementValue](#ddx_dhtml_elementvalue.md)|Sets or retrieves the Value property from the selected control.|  
-|[DDX_DHtml_ElementInnerText](#ddx_dhtml_elementvalue.md)|Sets or retrieves the text between the start and end tags of the current element.|  
-|[DDX_DHtml_ElementInnerHtml](#ddx_dhtml_elementinnerhtml.md)|Sets or retrieves the HTML between the start and end tags of the current element.|  
-|[DDX_DHtml_Anchor_Href](#ddx_dhtml_anchor_href.md)|Sets or retrieves the destination URL or anchor point.|  
-|[DDX_DHtml_Anchor_Target](#ddx_dhtml_anchor_target.md)|Sets or retrieves the target window or frame.|  
-|[DDX_DHtml_Img_Src](#ddx_dhtml_img_src.md)|Sets or retrieves the name of an image or a video clip in the document.|  
-|[DDX_DHtml_Frame_Src](#ddx_dhtml_frame_src.md)|Sets or retrieves the URL of the associated frame.|  
-|[DDX_DHtml_IFrame_Src](#ddx_dhtml_iframe_src.md)|Sets or retrieves the URL of the associated frame.|  
+|[DDX_DHtml_ElementValue](#ddx_dhtml_elementvalue)|Sets or retrieves the Value property from the selected control.|  
+|[DDX_DHtml_ElementInnerText](#ddx_dhtml_elementvalue)|Sets or retrieves the text between the start and end tags of the current element.|  
+|[DDX_DHtml_ElementInnerHtml](#ddx_dhtml_elementinnerhtml)|Sets or retrieves the HTML between the start and end tags of the current element.|  
+|[DDX_DHtml_Anchor_Href](#ddx_dhtml_anchor_href)|Sets or retrieves the destination URL or anchor point.|  
+|[DDX_DHtml_Anchor_Target](#ddx_dhtml_anchor_target)|Sets or retrieves the target window or frame.|  
+|[DDX_DHtml_Img_Src](#ddx_dhtml_img_src)|Sets or retrieves the name of an image or a video clip in the document.|  
+|[DDX_DHtml_Frame_Src](#ddx_dhtml_frame_src)|Sets or retrieves the URL of the associated frame.|  
+|[DDX_DHtml_IFrame_Src](#ddx_dhtml_iframe_src)|Sets or retrieves the URL of the associated frame.|  
   
 ## Requirements  
  **Header:** afxdhtml.h  
 
-## <a name="#ddx_dhtml_anchor_href.md"></a> DDX_DHtml_Anchor_Href
+## <a name="ddx_dhtml_anchor_href"></a> DDX_DHtml_Anchor_Href
 Sets or retrieves the destination URL or anchor point.  
   
   
@@ -82,7 +82,7 @@ DDX_DHtml_Anchor_Href(
 ## Remarks  
  This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#cdhtmldialog__ddx_dhtml_elementtext) function using the DISPID_IHTMLANCHORELEMENT_HREF dispatch ID.
 
-## <a name="#ddx_dhtml_anchor_target.md"></a>  DDX_DHtml_Anchor_Target
+## <a name="ddx_dhtml_anchor_target"></a>  DDX_DHtml_Anchor_Target
  Sets or retrieves the target window or frame.  
     
 ```  
@@ -105,7 +105,7 @@ DDX_DHtml_Anchor_Target(
 ## Remarks  
  This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#cdhtmldialog__ddx_dhtml_elementtext) function using the DISPID_IHTMLANCHORELEMENT_TARGET dispatch ID.  
 
-## <a name="#ddx_dhtml_elementinnerhtml.md"></a>  DDX_DHtml_ElementInnerHtml
+## <a name="ddx_dhtml_elementinnerhtml"></a>  DDX_DHtml_ElementInnerHtml
  Sets or retrieves the HTML between the start and end tags of the current element.  
   
   
@@ -131,7 +131,7 @@ DDX_DHtml_ElementInnerHtml(
  This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#cdhtmldialog__ddx_dhtml_elementtext) function using the DISPID_IHTMLELEMENT_INNERHTML dispatch ID.  
   
 
-## <a name="#ddx_dhtml_ElementInnerTextv.md"></a>  DDX_DHtml_ElementInnerText
+## <a name="ddx_dhtml_ElementInnerTextv"></a>  DDX_DHtml_ElementInnerText
 Sets or retrieves the text between the start and end tags of the current element.  
   
   
@@ -156,7 +156,7 @@ DDX_DHtml_ElementInnerText(
 ## Remarks  
  This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#cdhtmldialog__ddx_dhtml_elementtext) function using the DISPID_IHTMLELEMENT_INNERTEXT dispatch ID. 
 
-## <a name="#ddx_dhtml_elementvalue.md"></a> DDX_DHtml_ElementValue  
+## <a name="ddx_dhtml_elementvalue"></a> DDX_DHtml_ElementValue  
 Sets or retrieves the Value property from the selected control.  
  
 ```  
@@ -181,7 +181,7 @@ DDX_DHtml_ElementValue(
   
  This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#cdhtmldialog__ddx_dhtml_elementtext) function using the DISPID_A_VALUE dispatch ID.  
 
-## <a name="#ddx_dhtml_frame_src.md"></a> DDX_DHtml_Frame_Src
+## <a name="ddx_dhtml_frame_src"></a> DDX_DHtml_Frame_Src
 Sets or retrieves the URL of the associated frame.  
   
 ```  
@@ -204,7 +204,7 @@ DDX_DHtml_Frame_Src(
 ## Remarks  
  This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#cdhtmldialog__ddx_dhtml_elementtext) function using the DISPID_IHTMLFRAMEBASE_SRC dispatch ID.  
 
-## <a name="#ddx_dhtml_ddx_dhtml_iframe_src.md"></a> DDX_DHtml_IFrame_Src
+## <a name="ddx_dhtml_ddx_dhtml_iframe_src"></a> DDX_DHtml_IFrame_Src
 Sets or retrieves the URL of the associated frame.  
   
   
@@ -229,7 +229,7 @@ DDX_DHtml_IFrame_Src(
 ## Remarks  
  This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#cdhtmldialog__ddx_dhtml_elementtext) function using the DISPID_IHTMLFRAMEBASE_SRC dispatch ID. 
 
-## <a name="#ddx_dhtml_img_src.md"></a>DDX_DHtml_Img_Src
+## <a name="ddx_dhtml_img_src"></a>DDX_DHtml_Img_Src
 Gets or retrieves the name of an image or a video clip in the document.  
   
 ```  
