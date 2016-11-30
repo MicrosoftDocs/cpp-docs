@@ -52,7 +52,7 @@ This example shows how to use the [concurrency::choice](../../parallel/concrt/re
   
  The example uses a [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) object to run both search algorithms in parallel. Each search task writes to one of the `single_assignment` objects to indicate whether the given employee exists. The example uses the [concurrency::receive](reference/concurrency-namespace-functions.md#receive) function to obtain the index of the first buffer that contains a message and a `switch` block to print the result.  
   
- [!code-cpp[concrt-find-employee#1](../../parallel/concrt/codesnippet/CPP/how-to-select-among-completed-tasks_1.cpp)]  
+ [!code-cpp[concrt-find-employee#1](../../parallel/concrt/codesnippet/cpp/how-to-select-among-completed-tasks_1.cpp)]  
   
  This example produces the following output.  
   

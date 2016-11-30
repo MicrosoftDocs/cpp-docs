@@ -78,7 +78,7 @@ AFX_ODBC_CALL(SQLFunc)
 ### Example  
  This example uses `AFX_ODBC_CALL` to call the **SQLColumns** ODBC API function, which returns a list of the columns in the table named by `strTableName`. Note the declaration of `nRetCode` and the use of recordset data members to pass parameters to the function. The example also illustrates checking the results of the call with **Check**, a member function of class `CRecordset`. The variable `prs` is a pointer to a `CRecordset` object, declared elsewhere.  
   
- [!code-cpp[NVC_MFCDatabase#39](../../mfc/codesnippet/CPP/database-macros-and-globals_1.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#39](../../mfc/codesnippet/cpp/database-macros-and-globals_1.cpp)]  
   
 ##  <a name="afx_sql_async"></a>  AFX_SQL_ASYNC  
  The implementation of this macro changed in MFC 4.2.  
@@ -118,11 +118,11 @@ AFX_SQL_SYNC(SQLFunc)
   
  Note that the implementation of `AFX_SQL_SYNC` changed in MFC 4.2. Because checking the server status was no longer required, `AFX_SQL_SYNC` simply assigns a value to `nRetCode`. For example, instead of making the call  
   
- [!code-cpp[NVC_MFCDatabase#40](../../mfc/codesnippet/CPP/database-macros-and-globals_2.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#40](../../mfc/codesnippet/cpp/database-macros-and-globals_2.cpp)]  
   
  you can simply make the assignment  
   
- [!code-cpp[NVC_MFCDatabase#41](../../mfc/codesnippet/CPP/database-macros-and-globals_3.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#41](../../mfc/codesnippet/cpp/database-macros-and-globals_3.cpp)]  
   
 ##  <a name="afxgethenv"></a>  AfxGetHENV  
  You can use the returned handle in direct ODBC calls, but you must not close the handle or assume that the handle is still valid and available after any existing `CDatabase`- or `CRecordset`-derived objects have been destroyed.  

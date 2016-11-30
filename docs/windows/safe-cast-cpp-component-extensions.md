@@ -163,17 +163,7 @@ expression
 -   [C-Style Casts with /clr (C++/CLI)](../windows/c-style-casts-with-clr-cpp-cli.md)  
   
 -   [How to: Use safe_cast in C++/CLI](../dotnet/how-to-use-safe-cast-in-cpp-cli.md)  
-  
--   [How to: Downcast with safe_cast](../misc/how-to-downcast-with-safe-cast.md)  
-  
--   [How to: Use safe_cast and Generic Types](../misc/how-to-use-safe-cast-and-generic-types.md)  
-  
--   [How to: Use safe_cast and User-Defined Conversions](../misc/how-to-use-safe-cast-and-user-defined-conversions.md)  
-  
--   [How to: Use safe_cast and Boxing](../misc/how-to-use-safe-cast-and-boxing.md)  
-  
--   [How to: Use safe_cast and Unboxing](../misc/how-to-use-safe-cast-and-unboxing.md)  
-  
+
 ### Requirements  
  Compiler option: **/clr**  
   

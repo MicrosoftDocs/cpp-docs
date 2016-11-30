@@ -47,7 +47,7 @@ class CAtlDebugInterfacesModule
 ```  
   
 ## Remarks  
- `CAtlDebugInterfacesModule` provides the support required for debugging interfaces. It is included in any project that defines the symbol [_ATL_DEBUG_QI](http://msdn.microsoft.com/Library/4f1feddf-1469-42ad-a2f7-5a816d1c0bc5).  
+ `CAtlDebugInterfacesModule` provides the support required for debugging interfaces. It is included in any project that defines the symbol [_ATL_DEBUG_QI](http://msdn.microsoft.com/library/4f1feddf-1469-42ad-a2f7-5a816d1c0bc5).  
   
 ## Requirements  
  **Header:** atlbase.h  

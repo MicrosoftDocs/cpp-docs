@@ -80,10 +80,10 @@ CResourceException();
 ```  
   
 ### Remarks  
- Do not use this constructor directly, but rather call the global function [AfxThrowResourceException](../Topic/Exception%20Processing.md#not_found.md#afxthrowresourceexception. for more information about exceptions, see the article [exception handling (mfc)]---brokenlink--(../topic/exception_handling_in_mfc).  
+ Do not use this constructor directly, but rather call the global function [AfxThrowResourceException](exception-processing.md#afxthrowresourceexception). for more information about exceptions, see the article [Exception Handling in MFC](../exception-handling-in-mfc.md).  
   
 ## See Also  
- [CException Class](../Topic/CException%20Class.md)   
- [Hierarchy Chart](../Topic/Hierarchy%20Chart.md)
+ [CException Class](cexception-class.md)   
+ [Hierarchy Chart](../hierarchy-chart.md)
 
 

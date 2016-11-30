@@ -87,7 +87,7 @@ HRESULT AtlMarshalPtrInProc(
  `AtlMarshalPtrInProc` can only be used on a pointer to an in-process object.  
   
 ### Example  
- [!code-cpp[NVC_ATL_COM#50](../../atl/codesnippet/CPP/marshaling-global-functions_1.cpp)]  
+ [!code-cpp[NVC_ATL_COM#50](../../atl/codesnippet/cpp/marshaling-global-functions_1.cpp)]  
   
 ##  <a name="atlunmarshalptr"></a>  AtlUnmarshalPtr  
  Converts the stream's marshaling data into an interface pointer that can be used by the client.  

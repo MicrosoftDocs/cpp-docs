@@ -64,7 +64,7 @@ BEGIN_CATEGORY_MAP(theClass)
  For more information about component categories, see [What are Component Categories and how do they work](http://msdn.microsoft.com/library/windows/desktop/ms694322) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/CPP/category-macros_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/cpp/category-macros_1.h)]  
   
 ##  <a name="end_category_map"></a>  END_CATEGORY_MAP  
  Marks the end of the category map.  
@@ -107,7 +107,7 @@ IMPLEMENTED_CATEGORY(catID)
 |Internet-Aware Objects|See [Internet Aware Objects](http://msdn.microsoft.com/library/windows/desktop/ms690561) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a sample list.||  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/CPP/category-macros_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/cpp/category-macros_1.h)]  
   
 ##  <a name="required_category"></a>  REQUIRED_CATEGORY  
  Add a `REQUIRED_CATEGORY` macro to your component's [category map](#begin_category_map) to specify that it should be registered as requiring the category identified by the `catID` parameter.  
@@ -140,7 +140,7 @@ REQUIRED_CATEGORY( catID )
 |Internet-Aware Objects|See [Internet Aware Objects](http://msdn.microsoft.com/library/windows/desktop/ms690561) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a sample list.||  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#135](../../atl/codesnippet/CPP/category-macros_2.h)]  
+ [!code-cpp[NVC_ATL_Windowing#135](../../atl/codesnippet/cpp/category-macros_2.h)]  
   
 ## See Also  
  [Macros](../../atl/reference/atl-macros.md)

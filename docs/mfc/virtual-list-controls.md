@@ -46,7 +46,7 @@ A virtual list control is a list view control that has the **LVS_OWNERDATA** sty
 ## Handling the LVN_GETDISPINFO Notification  
  Virtual list controls maintain very little item information. Except for the item selection and focus information, all item information is managed by the owner of the control. Information is requested by the framework via a **LVN_GETDISPINFO** notification message. To provide the requested information, the owner of the virtual list control (or the control itself) must handle this notification. This can easily be done using the Properties window (see [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)). The resultant code should look something like the following example (where `CMyDialog` owns the virtual list control object and the dialog is handling the notification):  
   
- [!code-cpp[NVC_MFCControlLadenDialog#23](../mfc/codesnippet/CPP/virtual-list-controls_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#23](../mfc/codesnippet/cpp/virtual-list-controls_1.cpp)]  
   
  In the handler for the **LVN_GETDISPINFO** notification message, you must check to see what type of information is being requested. The possible values are:  
   
@@ -64,14 +64,14 @@ A virtual list control is a list view control that has the **LVS_OWNERDATA** sty
   
  The following example (taken from the body of the notification handler for the list control object) demonstrates one possible method by supplying information for the text buffers and image of an item:  
   
- [!code-cpp[NVC_MFCControlLadenDialog#24](../mfc/codesnippet/CPP/virtual-list-controls_2.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#24](../mfc/codesnippet/cpp/virtual-list-controls_2.cpp)]  
   
 ## Caching and Virtual List Controls  
  Because this type of list control is intended for large data sets, it is recommended that you cache requested item data to improve retrieval performance. The framework provides a cache-hinting mechanism to assist in optimizing the cache by sending an **LVN_ODCACHEHINT** notification message.  
   
  The following example updates the cache with the range passed to the handler function.  
   
- [!code-cpp[NVC_MFCControlLadenDialog#25](../mfc/codesnippet/CPP/virtual-list-controls_3.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#25](../mfc/codesnippet/cpp/virtual-list-controls_3.cpp)]  
   
  For more information on preparing and maintaining a cache, see the Cache Management section of the List-View Controls topic in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
   

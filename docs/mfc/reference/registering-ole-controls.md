@@ -156,11 +156,11 @@ BOOL AFXAPI AfxOleRegisterControlClass(
  This allows the control to be used by containers that are OLE-control aware. `AfxOleRegisterControlClass` updates the registry with the control's name and location on the system and also sets the threading model that the control supports in the registry. For more information, see [Technical Note 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "Apartment-Model Threading in OLE Controls," and [About Processes and Threads](http://msdn.microsoft.com/library/windows/desktop/ms681917) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCAxCtl#11](../../mfc/reference/codesnippet/CPP/registering-ole-controls_1.cpp)]  
+ [!code-cpp[NVC_MFCAxCtl#11](../../mfc/reference/codesnippet/cpp/registering-ole-controls_1.cpp)]  
   
  The above example demonstrates how `AfxOleRegisterControlClass` is called with the flag for insertable and the flag for apartment model ORed together to create the sixth parameter:  
   
- [!code-cpp[NVC_MFCAxCtl#12](../../mfc/reference/codesnippet/CPP/registering-ole-controls_2.cpp)]  
+ [!code-cpp[NVC_MFCAxCtl#12](../../mfc/reference/codesnippet/cpp/registering-ole-controls_2.cpp)]  
   
  The control will show up in the Insert Object dialog box for enabled containers, and it will be apartment model-aware. Apartment model-aware controls must ensure that static class data is protected by locks, so that while a control in one apartment is accessing the static data, it isn't disabled by the scheduler before it is finished, and another instance of the same class starts using the same static data. Any accesses to the static data will be surrounded by critical section code.  
   
@@ -230,9 +230,9 @@ BOOL AfxOleRegisterTypeLib(
  This function updates the registry with the type library name and its location on the system.  
   
 ### Example  
- [!code-cpp[NVC_MFCAutomation#7](../../mfc/codesnippet/CPP/registering-ole-controls_3.cpp)]  
+ [!code-cpp[NVC_MFCAutomation#7](../../mfc/codesnippet/cpp/registering-ole-controls_3.cpp)]  
   
- [!code-cpp[NVC_MFCAutomation#8](../../mfc/codesnippet/CPP/registering-ole-controls_4.cpp)]  
+ [!code-cpp[NVC_MFCAutomation#8](../../mfc/codesnippet/cpp/registering-ole-controls_4.cpp)]  
   
 ##  <a name="afxoleunregisterclass"></a>  AfxOleUnregisterClass  
  Removes the control or property page class entry from the Windows registration database.  
@@ -266,7 +266,7 @@ BOOL AFXAPI AfxOleUnregisterTypeLib(REFGUID tlID);
  Nonzero if the type library was successfully unregistered; otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_MFCAxCtl#13](../../mfc/reference/codesnippet/CPP/registering-ole-controls_5.cpp)]  
+ [!code-cpp[NVC_MFCAxCtl#13](../../mfc/reference/codesnippet/cpp/registering-ole-controls_5.cpp)]  
   
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

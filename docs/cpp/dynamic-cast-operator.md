@@ -166,7 +166,7 @@ void f() {
  ![Class hierarchy that shows virtual base classes](../cpp/media/vc39012.gif "vc39012")  
 Class Hierarchy Showing Virtual Base Classes  
   
- In this hierarchy, `A` is a virtual base class. See [Virtual Base Classes](../misc/virtual-base-classes.md) for the definition of a virtual base class. Given an instance of class `E` and a pointer to the `A` subobject, a `dynamic_cast` to a pointer to `B` will fail due to ambiguity. You must first cast back to the complete `E` object, then work your way back up the hierarchy, in an unambiguous manner, to reach the correct `B` object.  
+ In this hierarchy, `A` is a virtual base class. Given an instance of class `E` and a pointer to the `A` subobject, a `dynamic_cast` to a pointer to `B` will fail due to ambiguity. You must first cast back to the complete `E` object, then work your way back up the hierarchy, in an unambiguous manner, to reach the correct `B` object.  
   
  Consider the class hierarchy shown in the following figure.  
   

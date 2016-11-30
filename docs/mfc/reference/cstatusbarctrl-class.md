@@ -130,7 +130,7 @@ virtual BOOL Create(
  To create a status bar with extended window styles, call [CStatusBarCtrl::CreateEx](#cstatusbarctrl__createex) instead of **Create**.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatusBarCtrl#1](../../mfc/reference/codesnippet/CPP/cstatusbarctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CStatusBarCtrl#1](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_1.cpp)]  
   
 ##  <a name="cstatusbarctrl__createex"></a>  CStatusBarCtrl::CreateEx  
  Creates a control (a child window) and associates it with the `CStatusBarCtrl` object.  
@@ -228,7 +228,7 @@ BOOL GetBorders(
  These borders determine the spacing between the outside edge of the control and the rectangles within the control that contain text.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatusBarCtrl#2](../../mfc/reference/codesnippet/CPP/cstatusbarctrl-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_CStatusBarCtrl#2](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_2.cpp)]  
   
 ##  <a name="cstatusbarctrl__geticon"></a>  CStatusBarCtrl::GetIcon  
  Retrieves the icon for a part (also known as a pane) in the current status bar control.  
@@ -256,12 +256,12 @@ HICON GetIcon(int iPart) const;
 ### Example  
  The following code example defines a variable, `m_statusBar`, that is used to access the current status bar control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CStatusBarCtrl_s1#1](../../mfc/reference/codesnippet/CPP/cstatusbarctrl-class_3.h)]  
+ [!code-cpp[NVC_MFC_CStatusBarCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_3.h)]  
   
 ### Example  
  The following code example copies an icon to two panes of the current status bar control. In an earlier section of the code example we created a status bar control with three panes and then added an icon to the first pane. This example retrieves the icon from the first pane and then adds it to the second and third pane.  
   
- [!code-cpp[NVC_MFC_CStatusBarCtrl_s1#2](../../mfc/reference/codesnippet/CPP/cstatusbarctrl-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_CStatusBarCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_4.cpp)]  
   
 ##  <a name="cstatusbarctrl__getparts"></a>  CStatusBarCtrl::GetParts  
  Retrieves a count of the parts in a status bar control.  
@@ -288,7 +288,7 @@ int GetParts(
  This member function also retrieves the coordinate of the right edge of the given number of parts.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatusBarCtrl#3](../../mfc/reference/codesnippet/CPP/cstatusbarctrl-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_CStatusBarCtrl#3](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_5.cpp)]  
   
 ##  <a name="cstatusbarctrl__getrect"></a>  CStatusBarCtrl::GetRect  
  Retrieves the bounding rectangle of a part in a status bar control.  
@@ -312,7 +312,7 @@ BOOL GetRect(
  Nonzero if successful; otherwise zero.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatusBarCtrl#4](../../mfc/reference/codesnippet/CPP/cstatusbarctrl-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_CStatusBarCtrl#4](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_6.cpp)]  
   
 ##  <a name="cstatusbarctrl__gettext"></a>  CStatusBarCtrl::GetText  
  Retrieves the text from the given part of a status bar control.  
@@ -354,7 +354,7 @@ int GetText(
  The length, in characters, of the text or a [CString](../../atl-mfc-shared/reference/cstringt-class.md) containing the current text.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatusBarCtrl#5](../../mfc/reference/codesnippet/CPP/cstatusbarctrl-class_7.cpp)]  
+ [!code-cpp[NVC_MFC_CStatusBarCtrl#5](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_7.cpp)]  
   
 ##  <a name="cstatusbarctrl__gettextlength"></a>  CStatusBarCtrl::GetTextLength  
  Retrieves the length, in characters, of the text from the given part of a status bar control.  
@@ -386,7 +386,7 @@ int GetTextLength(
  The length, in characters, of the text.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatusBarCtrl#6](../../mfc/reference/codesnippet/CPP/cstatusbarctrl-class_8.cpp)]  
+ [!code-cpp[NVC_MFC_CStatusBarCtrl#6](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_8.cpp)]  
   
 ##  <a name="cstatusbarctrl__gettiptext"></a>  CStatusBarCtrl::GetTipText  
  Retrieves the tooltip text for a pane in a status bar.  
@@ -408,7 +408,7 @@ CString GetTipText(int nPane) const;
  This member function implements the behavior of the Win32 message [SB_GETTIPTEXT](http://msdn.microsoft.com/library/windows/desktop/bb760751), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatusBarCtrl#7](../../mfc/reference/codesnippet/CPP/cstatusbarctrl-class_9.cpp)]  
+ [!code-cpp[NVC_MFC_CStatusBarCtrl#7](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_9.cpp)]  
   
 ##  <a name="cstatusbarctrl__issimple"></a>  CStatusBarCtrl::IsSimple  
  Checks a status window control to determine if it is in simple mode.  
@@ -443,7 +443,7 @@ COLORREF SetBkColor(COLORREF cr);
  This member function implements the behavior of the Win32 message [SB_SETBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760754), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatusBarCtrl#8](../../mfc/reference/codesnippet/CPP/cstatusbarctrl-class_10.cpp)]  
+ [!code-cpp[NVC_MFC_CStatusBarCtrl#8](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_10.cpp)]  
   
 ##  <a name="cstatusbarctrl__seticon"></a>  CStatusBarCtrl::SetIcon  
  Sets the icon for a pane in a status bar.  
@@ -485,7 +485,7 @@ void SetMinHeight(int nMin);
  The minimum height is the sum of `nMin` and twice the width, in pixels, of the vertical border of the status bar control.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatusBarCtrl#9](../../mfc/reference/codesnippet/CPP/cstatusbarctrl-class_11.cpp)]  
+ [!code-cpp[NVC_MFC_CStatusBarCtrl#9](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_11.cpp)]  
   
 ##  <a name="cstatusbarctrl__setparts"></a>  CStatusBarCtrl::SetParts  
  Sets the number of parts in a status bar control and the coordinate of the right edge of each part.  
@@ -507,7 +507,7 @@ BOOL SetParts(
  Nonzero if successful; otherwise zero.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatusBarCtrl#10](../../mfc/reference/codesnippet/CPP/cstatusbarctrl-class_12.cpp)]  
+ [!code-cpp[NVC_MFC_CStatusBarCtrl#10](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_12.cpp)]  
   
 ##  <a name="cstatusbarctrl__setsimple"></a>  CStatusBarCtrl::SetSimple  
  Specifies whether a status bar control displays simple text or displays all control parts set by a previous call to [SetParts](#cstatusbarctrl__setparts).  
@@ -544,7 +544,7 @@ BOOL SetText(
  Zero-based index of the part to set. If this value is 255, the status bar control is assumed to be a simple control having only one part.  
   
  `nType`  
- Type of drawing operation. See [SB_SETTEXT message](http://msdn.microsoft.com/library/bb760758\(VS.85\).aspx) for a list of possible values.  
+ Type of drawing operation. See [SB_SETTEXT message](http://msdn.microsoft.com/library/bb760758\(vs.85\).aspx) for a list of possible values.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -553,7 +553,7 @@ BOOL SetText(
  The message invalidates the portion of the control that has changed, causing it to display the new text when the control next receives the `WM_PAINT` message.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatusBarCtrl#11](../../mfc/reference/codesnippet/CPP/cstatusbarctrl-class_13.cpp)]  
+ [!code-cpp[NVC_MFC_CStatusBarCtrl#11](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_13.cpp)]  
   
 ##  <a name="cstatusbarctrl__settiptext"></a>  CStatusBarCtrl::SetTipText  
  Sets the tooltip text for a pane in a status bar.  
@@ -575,7 +575,7 @@ void SetTipText(
  This member function implements the behavior of the Win32 message [SB_SETTIPTEXT](http://msdn.microsoft.com/library/windows/desktop/bb760759), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatusBarCtrl#12](../../mfc/reference/codesnippet/CPP/cstatusbarctrl-class_14.cpp)]  
+ [!code-cpp[NVC_MFC_CStatusBarCtrl#12](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_14.cpp)]  
   
 ## See Also  
  [CWnd Class](../../mfc/reference/cwnd-class.md)   

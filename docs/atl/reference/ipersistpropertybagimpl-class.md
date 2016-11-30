@@ -130,5 +130,5 @@ STDMETHOD(Save)(LPPROPERTYBAG pPropBag,
  See [IPersistPropertyBag::Save](https://msdn.microsoft.com/library/aa768207.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ## See Also  
- [BEGIN_PROP_MAP](http://msdn.microsoft.com/Library/bfe30be6-62c3-4dc2-bd49-21ef96f15427)   
+ [BEGIN_PROP_MAP](http://msdn.microsoft.com/library/bfe30be6-62c3-4dc2-bd49-21ef96f15427)   
  [Class Overview](../../atl/atl-class-overview.md)

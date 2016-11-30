@@ -59,7 +59,7 @@ BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP(classname)
  Start your snap-in extension map with the `BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP` macro, add entries for each of your snap-in extension data types with the [EXTENSION_SNAPIN_NODEINFO_ENTRY](#extension_snapin_nodeinfo_entry) macro, and complete the map with the [END_EXTENSION_SNAPIN_NODEINFO_MAP](#end_extension_snapin_nodeinfo_map) macro.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#105](../../atl/codesnippet/CPP/snap-in-object-macros_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#105](../../atl/codesnippet/cpp/snap-in-object-macros_1.h)]  
   
 ##  <a name="begin_snapintoolbarid_map"></a>  BEGIN_SNAPINTOOLBARID_MAP  
  Declares the beginning of the toolbar ID map for the Snap-In object.  
@@ -73,7 +73,7 @@ BEGIN_SNAPINTOOLBARID_MAP(_class)
  [in] Specifies the Snap-In object class.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#106](../../atl/codesnippet/CPP/snap-in-object-macros_2.h)]  
+ [!code-cpp[NVC_ATL_Windowing#106](../../atl/codesnippet/cpp/snap-in-object-macros_2.h)]  
   
 ##  <a name="end_extension_snapin_nodeinfo_map"></a>  END_EXTENSION_SNAPIN_NODEINFO_MAP  
  Marks the end of the snap-in extension data class map.  
@@ -117,7 +117,7 @@ EXTENSION_SNAPIN_DATACLASS(dataClass )
  This class should also be entered into a snap-in extension data class map. Start your snap-in extension data class map with the [BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP](#begin_extension_snapin_nodeinfo_map) macro, add entries for each of your snap-in extension data types with the [EXTENSION_SNAPIN_NODEINFO_ENTRY](#extension_snapin_nodeinfo_entry) macro, and complete the map with the [END_EXTENSION_SNAPIN_NODEINFO_MAP](#end_extension_snapin_nodeinfo_map) macro.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#105](../../atl/codesnippet/CPP/snap-in-object-macros_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#105](../../atl/codesnippet/cpp/snap-in-object-macros_1.h)]  
   
 ##  <a name="extension_snapin_nodeinfo_entry"></a>  EXTENSION_SNAPIN_NODEINFO_ENTRY  
  Adds a snap-in extension data class to the snap-in extension data class map.  

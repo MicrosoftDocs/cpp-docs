@@ -92,7 +92,7 @@ explicit CClientDC(CWnd* pWnd);
  An exception (of type `CResourceException`) is thrown if the Windows `GetDC` call fails. A device context may not be available if Windows has already allocated all of its available device contexts. Your application competes for the five common display contexts available at any given time under Windows.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#42](../../mfc/codesnippet/CPP/cclientdc-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#42](../../mfc/codesnippet/cpp/cclientdc-class_1.cpp)]  
   
 ##  <a name="cclientdc__m_hwnd"></a>  CClientDC::m_hWnd  
  The `HWND` of the `CWnd` pointer used to construct the `CClientDC` object.  

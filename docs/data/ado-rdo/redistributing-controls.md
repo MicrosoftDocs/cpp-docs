@@ -49,9 +49,9 @@ Visual C++ .NET supplies ActiveX controls that you can use in applications. You 
   
 -   **DCOM for Windows.** You need to run Dcom98.exe or Dcom95.exe on any computer running versions of Windows earlier than Windows 2000. (Dcom98.exe is specifically for Windows 98; Dcom95.exe is specifically for Windows 95.)  
   
--   **MDAC 2.8 SDK.** You should install the Microsoft Data Access 2.8 SDK on the target computer. You can download this from [http://go.microsoft.com/fwlink/?LinkId=205525](http://go.microsoft.com/fwlink/?LinkId=205525).  
+-   **MDAC 2.8 SDK.** You should install the Microsoft Data Access 2.8 SDK on the target computer. You can download this from [http://go.microsoft.com/fwlink/?LinkId=205525](http://go.microsoft.com/fwlink/?linkid=205525).  
   
--   **MDAC 2.8 redistribution program.** The MDAC 2.8 SDK is designed for use with the MDAC 2.8 redistribution program (MDAC_TYP.EXE). You can download MDAC_TYP.EXE from [http://go.microsoft.com/fwlink/?LinkId=164412](http://go.microsoft.com/fwlink/?LinkId=164412).  
+-   **MDAC 2.8 redistribution program.** The MDAC 2.8 SDK is designed for use with the MDAC 2.8 redistribution program (MDAC_TYP.EXE). You can download MDAC_TYP.EXE from [http://go.microsoft.com/fwlink/?LinkId=164412](http://go.microsoft.com/fwlink/?linkid=164412).  
   
 -   **Replicate the DSN.** You also need to replicate the data source name on the target computer. You can do this programmatically with functions such as [ConfigDSN](https://msdn.microsoft.com/en-us/library/ms709275.aspx).  
   

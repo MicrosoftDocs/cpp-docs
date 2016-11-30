@@ -103,9 +103,11 @@ template <UINT   nID, class T,
 ## Remarks  
  `IDispEventImpl` provides a way of implementing an event dispinterface without requiring you to supply implementation code for every method/event on that interface. `IDispEventImpl` provides implementations of the `IDispatch` methods. You only need to supply implementations for the events that you are interested in handling.  
   
- `IDispEventImpl` works in conjunction with the [event sink map](http://msdn.microsoft.com/Library/32542b3d-ac43-4139-8ac4-41c48481744f) in your class to route events to the appropriate handler function. To use this class:  
+ `IDispEventImpl` works in conjunction with the [event sink map](http://msdn.microsoft.com/library/32542b3d-ac43-4139-8ac4-41c48481744f) in your class to route events to the appropriate handler function. To use this class:  
   
- Add a [SINK_ENTRY](http://msdn.microsoft.com/Library/33a5fff6-5248-47c0-8cf4-8bdf760e86e5) or [SINK_ENTRY_EX](http://msdn.microsoft.com/Library/e1d14342-838f-4791-ac2f-5dae2801c1ac) macro to the event sink map for each event on each object that you want to handle. When using `IDispEventImpl` as a base class of a composite control, you can call [AtlAdviseSinkMap](http://msdn.microsoft.com/Library/0757a6af-3de3-4179-8b4f-ccd137d919b4) to establish and break the connection with the event sources for all entries in the event sink map. In other cases, or for greater control, call [DispEventAdvise](idispeventsimpleimpl-class.md#dispeventadvise) to establish the connection between the source object and the base class. Call [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise) to break the connection.  
+
+ Add a [SINK_ENTRY](http://msdn.microsoft.com/library/33a5fff6-5248-47c0-8cf4-8bdf760e86e5) or [SINK_ENTRY_EX](http://msdn.microsoft.com/library/e1d14342-838f-4791-ac2f-5dae2801c1ac) macro to the event sink map for each event on each object that you want to handle. When using `IDispEventImpl` as a base class of a composite control, you can call [AtlAdviseSinkMap](http://msdn.microsoft.com/library/0757a6af-3de3-4179-8b4f-ccd137d919b4) to establish and break the connection with the event sources for all entries in the event sink map. In other cases, or for greater control, call [DispEventAdvise](idispeventsimpleimpl-class.md#idispeventsimpleimpl__dispeventadvise) to establish the connection between the source object and the base class. Call [DispEventUnadvise](idispeventsimpleimpl-class.md#idispeventsimpleimpl__dispeventunadvise) to break the connection.  
+
   
  You must derive from `IDispEventImpl` (using a unique value for `nID`) for each object for which you need to handle events. You can reuse the base class by unadvising against one source object then advising against a different source object, but the maximum number of source objects that can be handled by a single object at one time is limited by the number of `IDispEventImpl` base classes.  
   
@@ -237,7 +239,7 @@ typedef tihclass _tihclass;
  [_ATL_FUNC_INFO Structure](../../atl/reference/atl-func-info-structure.md)   
  [IDispatchImpl Class](../../atl/reference/idispatchimpl-class.md)   
  [IDispEventSimpleImpl Class](../../atl/reference/idispeventsimpleimpl-class.md)   
- [SINK_ENTRY](http://msdn.microsoft.com/Library/33a5fff6-5248-47c0-8cf4-8bdf760e86e5)   
- [SINK_ENTRY_EX](http://msdn.microsoft.com/Library/e1d14342-838f-4791-ac2f-5dae2801c1ac)   
- [SINK_ENTRY_INFO](http://msdn.microsoft.com/Library/1a0ae260-2c82-4926-a537-db01e5f206a7)   
+ [SINK_ENTRY](http://msdn.microsoft.com/library/33a5fff6-5248-47c0-8cf4-8bdf760e86e5)   
+ [SINK_ENTRY_EX](http://msdn.microsoft.com/library/e1d14342-838f-4791-ac2f-5dae2801c1ac)   
+ [SINK_ENTRY_INFO](http://msdn.microsoft.com/library/1a0ae260-2c82-4926-a537-db01e5f206a7)   
  [Class Overview](../../atl/atl-class-overview.md)

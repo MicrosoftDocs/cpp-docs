@@ -79,7 +79,7 @@ std::cout.flags(fl_hex);
   
 ```  
   
- Aliases also work with function pointers, but much more readable than typedef's equivalent:  
+ Aliases also work with function pointers, but are much more readable than the equivalent typedef:  
   
 ```cpp  
   
@@ -195,12 +195,7 @@ int main()
   
 // typedef UL back in scope  
 ```  
-  
--   [Redeclaration of typedef Names](../misc/redeclaration-of-typedef-names.md)  
-  
--   [Use of typedef with Class Types](../misc/use-of-typedef-with-class-types.md)  
-  
--   [Namespace of typedef Names](../misc/name-space-of-typedef-names.md)  
+ 
   
 ```  
 // typedef_specifier1.cpp  
@@ -384,6 +379,3 @@ typedef struct {
 -   The name cannot be used as constructor or destructor names within a class declaration.  
   
  In summary, this syntax does not provide any mechanism for inheritance, construction, or destruction.  
-  
-## See Also  
- [using Keyword](../misc/using-keyword.md)

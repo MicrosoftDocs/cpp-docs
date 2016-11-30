@@ -137,5 +137,6 @@ This topic explains the RFX process. This is an advanced topic covering:
 ## See Also  
  [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)   
  [MFC ODBC Consume](../../mfc/reference/adding-an-mfc-odbc-consumer.md)   
+ [Macros, Global Functions, and Global Variables](../../mfc/reference/mfc-macros-and-globals.md)  
  [CFieldExchange Class](../../mfc/reference/cfieldexchange-class.md)   
  [CRecordset::DoFieldExchange](../../mfc/reference/crecordset-class.md#crecordset__dofieldexchange)

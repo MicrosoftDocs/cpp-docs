@@ -146,7 +146,7 @@ task_group_status run_and_wait(
  A function which will be called to invoke the body of the work. This may be a lambda expression or other object which supports a version of the function call operator with the signature `void operator()()`.  
   
 ### Return Value  
- An indication of whether the wait was satisfied or the task group was canceled, due to either an explicit cancel operation or an exception being thrown from one of its tasks. For more information, see [task_group_status](concurrency_namespace_Enumerations).  
+ An indication of whether the wait was satisfied or the task group was canceled, due to either an explicit cancel operation or an exception being thrown from one of its tasks. For more information, see [task_group_status](concurrency_namespace_enums.md#task_group_status).  
   
 ### Remarks  
  Note that one or more of the tasks scheduled to this `task_group` object may execute inline on the calling context.  
@@ -193,7 +193,7 @@ task_group_status wait();
 ```  
   
 ### Return Value  
- An indication of whether the wait was satisfied or the task group was canceled, due to either an explicit cancel operation or an exception being thrown from one of its tasks. For more information, see [task_group_status](concurrency_namespace_Enumerations).  
+ An indication of whether the wait was satisfied or the task group was canceled, due to either an explicit cancel operation or an exception being thrown from one of its tasks. For more information, see [task_group_status](concurrency_namespace_enums.md#task_group_status).  
   
 ### Remarks  
  Note that one or more of the tasks scheduled to this `task_group` object may execute inline on the calling context.  

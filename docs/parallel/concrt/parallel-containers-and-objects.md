@@ -94,11 +94,12 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 -   A `concurrent_vector` object does not use [move semantics](../../cpp/rvalue-reference-declarator-amp-amp.md) when you append to it.  
   
--   The `concurrent_vector` class does not provide the `erase` or `pop_back` methods. As with `vector`, use the `clear` method to remove all elements from a `concurrent_vector` object.  
+
+-   The `concurrent_vector` class does not provide the `erase` or `pop_back` methods. As with `vector`, use the [clear](reference/concurrent-vector-class.md#concurrent_vector__clear_method) method to remove all elements from a `concurrent_vector` object.  
   
 -   The `concurrent_vector` class does not store its elements contiguously in memory. Therefore, you cannot use the `concurrent_vector` class in all the ways that you can use an array. For example, for a variable named `v` of type `concurrent_vector`, the expression `&v[0]+2` produces undefined behavior.  
   
--   The `concurrent_vector` class defines the [grow_by](reference/concurrent-vector-class.md#concurrent_vector__grow_by) and [grow_to_at_least](reference/concurrent-vector-class.md#concurrent_vector__grow_to_at_least) methods. These methods resemble the [resize](reference/concurrent-vector-class.md#concurrent_vector__resize) method, except that they are concurrency-safe.  
+-   The `concurrent_vector` class defines the [grow_by](reference/concurrent-vector-class.md#concurrent_vector__grow_by_method) and [grow_to_at_least](reference/concurrent-vector-class.md#concurrent_vector__grow_to_at_least_method) methods. These methods resemble the [resize](reference/concurrent-vector-class.md#concurrent_vector__resize_method) method, except that they are concurrency-safe.  
   
 -   A `concurrent_vector` object does not relocate its elements when you append to it or resize it. This enables existing pointers and iterators to remain valid during concurrent operations.  
   
@@ -111,27 +112,31 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 ||||  
 |-|-|-|  
-|[at](reference/concurrent-vector-class.md#at_method)|[end](reference/concurrent-vector-class.md#end_method)|[operator&#91;&#93;](reference/concurrent-vector-class.md#operatorOperator.md)|  
-|[begin](reference/concurrent-vector-class.md#begin_method)|[front](reference/concurrent-vector-class.md#front_method)|[push_back](reference/concurrent-vector-class.md#push_back_method)|  
-|[back](reference/concurrent-vector-class.md#back_method)|[grow_by](reference/concurrent-vector-class.md#grow_by_method)|[rbegin](reference/concurrent-vector-class.md#rbegin_method)|  
-|[capacity](reference/concurrent-vector-class.md#capacity_method)|[grow_to_at_least](reference/concurrent-vector-class.md#grow_to_at_least_method)|[rend](reference/concurrent-vector-class.md#rend_method)|  
-|[empty](reference/concurrent-vector-class.md#empty_method)|[max_size](reference/concurrent-vector-class.md#max_size_method)|[size](reference/concurrent-vector-class.md#size_method)|  
+
+|[at](reference/concurrent-vector-class.md#concurrent_vector__at_method)|[end](reference/concurrent-vector-class.md#concurrent_vector__end_method)|[operator&#91;&#93;](reference/concurrent-vector-class.md#operator_at_operator)|  
+|[begin](reference/concurrent-vector-class.md#concurrent_vector__begin_method)|[front](reference/concurrent-vector-class.md#concurrent_vector__front_method)|[push_back](reference/concurrent-vector-class.md#concurrent_vector__push_back_method)|  
+|[back](reference/concurrent-vector-class.md#concurrent_vector__back_method)|[grow_by](reference/concurrent-vector-class.md#concurrent_vector__grow_by_method)|[rbegin](reference/concurrent-vector-class.md#concurrent_vector__rbegin_method)|  
+|[capacity](reference/concurrent-vector-class.md#concurrent_vector__capacity_method)|[grow_to_at_least](reference/concurrent-vector-class.md#concurrent_vector__grow_to_at_least_method)|[rend](reference/concurrent-vector-class.md#concurrent_vector__rend_method)|  
+|[empty](reference/concurrent-vector-class.md#concurrent_vector__empty_method)|[max_size](reference/concurrent-vector-class.md#concurrent_vector__max_size_method)|[size](reference/concurrent-vector-class.md#concurrent_vector__size_method)|  
+
   
  Operations that the runtime provides for compatibility with the STL, for example, `reserve`, are not concurrency-safe. The following table shows the common methods and operators that are not concurrency-safe.  
   
 |||  
 |-|-|  
-|[assign](reference/concurrent-vector-class.md#assign_method)|[reserve](reference/concurrent-vector-class.md#reserve_method)|  
-|[clear](reference/concurrent-vector-class.md#clear_method)|[resize](reference/concurrent-vector-class.md#resize_method)|  
-|[operator=](reference/concurrent-vector-class.md#operator_eq_operator)|[shrink_to_fit](reference/concurrent-vector-class.md#shrink_to_fit_method)|  
+
+|[assign](reference/concurrent-vector-class.md#concurrent_vector__assign_method)|[reserve](reference/concurrent-vector-class.md#concurrent_vector__reserve_method)|  
+|[clear](reference/concurrent-vector-class.md#concurrent_vector__clear_method)|[resize](reference/concurrent-vector-class.md#concurrent_vector__resize_method)|  
+|[operator=](reference/concurrent-vector-class.md#concurrent_vector__operator_eq_operator)|[shrink_to_fit](reference/concurrent-vector-class.md#concurrent_vector__shrink_to_fit_method)|  
   
  Operations that modify the value of existing elements are not concurrency-safe. Use a synchronization object such as a [reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) object to synchronize concurrent read and write operations to the same data element. For more information about synchronization objects, see [Synchronization Data Structures](../../parallel/concrt/synchronization-data-structures.md).  
   
  When you convert existing code that uses `vector` to use `concurrent_vector`, concurrent operations can cause the behavior of your application to change. For example, consider the following program that concurrently performs two tasks on a `concurrent_vector` object. The first task appends additional elements to a `concurrent_vector` object. The second task computes the sum of all elements in the same object.  
   
- [!code-cpp[concrt-vector-safety#1](../../parallel/concrt/codesnippet/CPP/parallel-containers-and-objects_1.cpp)]  
+ [!code-cpp[concrt-vector-safety#1](../../parallel/concrt/codesnippet/cpp/parallel-containers-and-objects_1.cpp)]  
   
- Although the `end` method is concurrency-safe, a concurrent call to the [push_back](reference/concurrent-vector-class.md#push_back_method) method causes the value that is returned by `end` to change. The number of elements that the iterator traverses is indeterminate. Therefore, this program can produce a different result each time that you run it.  
+
+ Although the `end` method is concurrency-safe, a concurrent call to the [push_back](reference/concurrent-vector-class.md#concurrent_vector__push_back_method) method causes the value that is returned by `end` to change. The number of elements that the iterator traverses is indeterminate. Therefore, this program can produce a different result each time that you run it.  
   
 ###  <a name="vector-exceptions"></a> Exception Safety  
  If a growth or assignment operation throws an exception, the state of the `concurrent_vector` object becomes invalid. The behavior of a `concurrent_vector` object that is in an invalid state is undefined unless stated otherwise. However, the destructor always frees the memory that the object allocates, even if the object is in an invalid state.  
@@ -154,11 +159,12 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 -   The `concurrent_queue` class provides iterator support that is not concurrency-safe.  
   
--   The `concurrent_queue` class does not provide the `front` or `pop` methods. The `concurrent_queue` class replaces these methods by defining the [try_pop](reference/concurrent-queue-class.md#try_pop_method) method.  
+
+-   The `concurrent_queue` class does not provide the `front` or `pop` methods. The `concurrent_queue` class replaces these methods by defining the [try_pop](reference/concurrent_queue-class.md#concurrent_queue__try_pop_method) method.  
   
 -   The `concurrent_queue` class does not provide the `back` method. Therefore, you cannot reference the end of the queue.  
   
--   The `concurrent_queue` class provides the [unsafe_size](reference/concurrent-queue-class.md#unsafe_size_method) method instead of the `size` method. The `unsafe_size` method is not concurrency-safe.  
+-   The `concurrent_queue` class provides the [unsafe_size](reference/concurrent_queue-class.md#concurrent_queue__unsafe_size_method) method instead of the `size` method. The `unsafe_size` method is not concurrency-safe.  
   
 ###  <a name="queue-safety"></a> Concurrency-Safe Operations  
  All methods that enqueue to or dequeue from a `concurrent_queue` object are concurrency-safe.  
@@ -167,8 +173,10 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 |||  
 |-|-|  
-|[empty](reference/concurrent-queue-class.md#empty_method)|[push](reference/concurrent-queue-class.md#push_method)|  
-|[get_allocator](reference/concurrent-queue-class.md#get_allocator_method)|[try_pop](reference/concurrent-queue-class.md#try_pop_method)|  
+
+|[empty](reference/concurrent_queue-class.md#concurrent_queue__empty_method)|[push](reference/concurrent_queue-class.md#concurrent_queue__push_method)|  
+|[get_allocator](reference/concurrent_queue-class.md#concurrent_queue__get_allocator_method)|[try_pop](reference/concurrent_queue-class.md#concurrent_queue__try_pop_method)|  
+
   
  Although the `empty` method is concurrency-safe, a concurrent operation may cause the queue to grow or shrink before the `empty` method returns.  
   
@@ -176,8 +184,10 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 |||  
 |-|-|  
-|[clear](reference/concurrent-queue-class.md#clear_method)|[unsafe_end](reference/concurrent-queue-class.md#unsafe_end_method)|  
-|[unsafe_begin](reference/concurrent-queue-class.md#unsafe_begin_method)|[unsafe_size](reference/concurrent-queue-class.md#unsafe_size_method)|  
+
+|[clear](reference/concurrent_queue-class.md#concurrent_queue__clear_method)|[unsafe_end](reference/concurrent_queue-class.md#concurrent_queue__unsafe_end_method)|  
+|[unsafe_begin](reference/concurrent_queue-class.md#concurrent_queue__unsafe_begin_method)|[unsafe_size](reference/concurrent_queue-class.md#concurrent_queue__unsafe_size_method)|  
+
   
 ###  <a name="queue-iterators"></a> Iterator Support  
  The `concurrent_queue` provides iterators that are not concurrency-safe. We recommend that you use these iterators for debugging only.  
@@ -197,7 +207,7 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
  The following example shows the basic structure for using `concurrent_unordered_map`. This example inserts character keys in the range ['a', 'i']. Because the order of operations is undetermined, the final value for each key is also undetermined. However, it is safe to perform the insertions in parallel.  
   
- [!code-cpp[concrt-unordered-map-structure#1](../../parallel/concrt/codesnippet/CPP/parallel-containers-and-objects_2.cpp)]  
+ [!code-cpp[concrt-unordered-map-structure#1](../../parallel/concrt/codesnippet/cpp/parallel-containers-and-objects_2.cpp)]  
   
  For an example that uses `concurrent_unordered_map` to perform a map and reduce operation in parallel, see [How to: Perform Map and Reduce Operations in Parallel](../../parallel/concrt/how-to-perform-map-and-reduce-operations-in-parallel.md).  
   
@@ -219,10 +229,11 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 |||||  
 |-|-|-|-|  
-|[at](reference/concurrent-unordered-map-class.md#at_method)|`count`|`find`|[key_eq](reference/concurrent-unordered-map-class.md#key_eq_method)|  
+
+|[at](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__at_method)|`count`|`find`|[key_eq](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__key_eq_method)|  
 |`begin`|`empty`|`get_allocator`|`max_size`|  
-|`cbegin`|`end`|`hash_function`|[operator&#91;&#93;](reference/concurrent-unordered-map-class.md#operatorOperator.md)|  
-|`cend`|`equal_range`|[insert](reference/concurrent-unordered-map-class.md#insert_method)|`size`|  
+|`cbegin`|`end`|`hash_function`|[operator&#91;&#93;](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__operator_at_operator)|  
+|`cend`|`equal_range`|[insert](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__insert_method)|`size`|  
   
  Although the `count` method can be called safely from concurrently running threads, different threads can receive different results if a new value is simultaneously inserted into the container.  
   
@@ -231,7 +242,9 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
 ||||  
 |-|-|-|  
 |`clear`|`max_load_factor`|`rehash`|  
-|`load_factor`|[operator=](reference/concurrent-unordered-map-class.md#operator=%20Operator.md)|[swap](reference/concurrent-unordered-map-class.md#swap_method)|  
+
+|`load_factor`|[operator=](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__operator_eq_operator) 
+
   
  In addition to these methods, any method that begins with `unsafe_` is also not concurrency-safe.  
   
@@ -240,13 +253,14 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
 ##  <a name="unordered_multimap"></a> concurrent_unordered_multimap Class  
  The [concurrency::concurrent_unordered_multimap](../../parallel/concrt/reference/concurrent-unordered-multimap-class.md) class closely resembles the `concurrent_unordered_map` class except that it allows for multiple values to map to the same key. It also differs from `concurrent_unordered_map` in the following ways:  
   
--   The [concurrent_unordered_multimap::insert](.referencereference/concurrent-unordered-multimap-class.md#insert_method) method returns an iterator instead of `std::pair<iterator, bool>`.  
+
+-   The [concurrent_unordered_multimap::insert](reference/concurrent_unordered_multimap-class.md#concurrent_unordered_multimap__insert_method) method returns an iterator instead of `std::pair<iterator, bool>`.  
   
 -   The `concurrent_unordered_multimap` class does not provide `operator[]` nor the `at` method.  
   
  The following example shows the basic structure for using `concurrent_unordered_multimap`. This example inserts character keys in the range ['a', 'i']. `concurrent_unordered_multimap` enables a key to have multiple values.  
   
- [!code-cpp[concrt-unordered-multimap-structure#1](../../parallel/concrt/codesnippet/CPP/parallel-containers-and-objects_3.cpp)]  
+ [!code-cpp[concrt-unordered-multimap-structure#1](../../parallel/concrt/codesnippet/cpp/parallel-containers-and-objects_3.cpp)]  
   
  [[Top](#top)]  
   
@@ -255,20 +269,20 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
  The following example shows the basic structure for using `concurrent_unordered_set`. This example inserts character values in the range ['a', 'i']. It is safe to perform the insertions in parallel.  
   
- [!code-cpp[concrt-unordered-set#1](../../parallel/concrt/codesnippet/CPP/parallel-containers-and-objects_4.cpp)]  
+ [!code-cpp[concrt-unordered-set#1](../../parallel/concrt/codesnippet/cpp/parallel-containers-and-objects_4.cpp)]  
   
  [[Top](#top)]  
   
 ##  <a name="unordered_multiset"></a> concurrent_unordered_multiset Class  
  The [concurrency::concurrent_unordered_multiset](../../parallel/concrt/reference/concurrent-unordered-multiset-class.md) class closely resembles the `concurrent_unordered_set` class except that it allows for duplicate values. It also differs from `concurrent_unordered_set` in the following ways:  
   
--   The [concurrent_unordered_multiset::insert](referencereference/concurrent-unordered-multiset-class.md#insert_method) method returns an iterator instead of `std::pair<iterator, bool>`.  
+-   The [concurrent_unordered_multiset::insert](reference/concurrent_unordered_multiset-class.md#concurrent_unordered_multiset__insert_method) method returns an iterator instead of `std::pair<iterator, bool>`.  
   
 -   The `concurrent_unordered_multiset` class does not provide `operator[]` nor the `at` method.  
   
  The following example shows the basic structure for using `concurrent_unordered_multiset`. This example inserts character values in the range ['a', 'i']. `concurrent_unordered_multiset` enables a value to occur multiple times.  
   
- [!code-cpp[concrt-unordered-multiset#1](../../parallel/concrt/codesnippet/CPP/parallel-containers-and-objects_5.cpp)]  
+ [!code-cpp[concrt-unordered-multiset#1](../../parallel/concrt/codesnippet/cpp/parallel-containers-and-objects_5.cpp)]  
   
  [[Top](#top)]  
   

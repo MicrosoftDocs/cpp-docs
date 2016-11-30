@@ -149,7 +149,7 @@ virtual BOOL Create(
 - **SS_CENTERIMAGE** Use to center the image in the static control.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatic#1](../../mfc/reference/codesnippet/CPP/cstatic-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CStatic#1](../../mfc/reference/codesnippet/cpp/cstatic-class_1.cpp)]  
   
 ##  <a name="cstatic__cstatic"></a>  CStatic::CStatic  
  Constructs a `CStatic` object.  
@@ -159,7 +159,7 @@ CStatic();
 ```  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatic#2](../../mfc/reference/codesnippet/CPP/cstatic-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_CStatic#2](../../mfc/reference/codesnippet/cpp/cstatic-class_2.cpp)]  
   
 ##  <a name="cstatic__drawitem"></a>  CStatic::DrawItem  
  Called by the framework to draw an owner-drawn static control.  
@@ -188,7 +188,7 @@ HBITMAP GetBitmap() const;
  A handle to the current bitmap, or **NULL** if no bitmap has been set.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/CPP/cstatic-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/cpp/cstatic-class_3.cpp)]  
   
 ##  <a name="cstatic__getcursor"></a>  CStatic::GetCursor  
  Gets the handle of the cursor, previously set with [SetCursor](#cstatic__setcursor), that is associated with `CStatic`.  
@@ -201,7 +201,7 @@ HCURSOR GetCursor();
  A handle to the current cursor, or **NULL** if no cursor has been set.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/CPP/cstatic-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/cpp/cstatic-class_4.cpp)]  
   
 ##  <a name="cstatic__getenhmetafile"></a>  CStatic::GetEnhMetaFile  
  Gets the handle of the enhanced metafile, previously set with [SetEnhMetafile](#cstatic__setenhmetafile), that is associated with `CStatic`.  
@@ -216,7 +216,7 @@ HENHMETAFILE GetEnhMetaFile() const;
  A handle to the current enhanced metafile, or **NULL** if no enhanced metafile has been set.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/CPP/cstatic-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/cpp/cstatic-class_5.cpp)]  
   
 ##  <a name="cstatic__geticon"></a>  CStatic::GetIcon  
  Gets the handle of the icon, previously set with [SetIcon](#cstatic__seticon), that is associated with `CStatic`.  
@@ -231,7 +231,7 @@ HICON GetIcon() const;
  A handle to the current icon, or **NULL** if no icon has been set.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatic#6](../../mfc/reference/codesnippet/CPP/cstatic-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_CStatic#6](../../mfc/reference/codesnippet/cpp/cstatic-class_6.cpp)]  
   
 ##  <a name="cstatic__setbitmap"></a>  CStatic::SetBitmap  
  Associates a new bitmap with the static control.  
@@ -269,7 +269,7 @@ MyStaticControl.SetBitmap(HBITMAP(MyBitmap));
  The following example creates two `CStatic` objects on the heap. It then loads one with a system bitmap using `CBitmap::LoadOEMBitmap` and the other from a file using `CImage::Load`.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/CPP/cstatic-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/cpp/cstatic-class_3.cpp)]  
   
 ##  <a name="cstatic__setcursor"></a>  CStatic::SetCursor  
  Associates a new cursor image with the static control.  
@@ -295,7 +295,7 @@ HCURSOR SetCursor(HCURSOR hCursor);
 - **SS_CENTERIMAGE** Use to center in the static control. If the image is larger than the static control, it will be clipped. If it is smaller than the static control, the empty space around the image will be filled with the background color of the static control.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/CPP/cstatic-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/cpp/cstatic-class_4.cpp)]  
   
 ##  <a name="cstatic__setenhmetafile"></a>  CStatic::SetEnhMetaFile  
  Associates a new enhanced metafile image with the static control.  
@@ -319,7 +319,7 @@ HENHMETAFILE SetEnhMetaFile(HENHMETAFILE hMetaFile);
 - **SS_ENHMETAFILE** Use this style always for enhanced metafiles.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/CPP/cstatic-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/cpp/cstatic-class_5.cpp)]  
   
 ##  <a name="cstatic__seticon"></a>  CStatic::SetIcon  
  Associates a new icon image with the static control.  
@@ -345,7 +345,7 @@ HICON SetIcon(HICON hIcon);
 - **SS_CENTERIMAGE** Use to center in the static control. If the image is larger than the static control, it will be clipped. If it is smaller than the static control, the empty space around the image will be filled with the background color of the static control.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CStatic#6](../../mfc/reference/codesnippet/CPP/cstatic-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_CStatic#6](../../mfc/reference/codesnippet/cpp/cstatic-class_6.cpp)]  
   
 ## See Also  
  [CWnd Class](../../mfc/reference/cwnd-class.md)   

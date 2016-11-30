@@ -43,7 +43,7 @@ The following macros are available to specify the threading model of an ATL proj
 |-----------|--------------------------|  
 |_ATL_SINGLE_THREADED|Define if all of your objects use the single threading model.|  
 |_ATL_APARTMENT_THREADED|Define if one or more of your objects use apartment threading.|  
-|_ATL_FREE_THREADED|Define if one or more of your objects use free or neutral threading. Existing code may contain references to the equivalent macro [_ATL_MULTI_THREADED](http://msdn.microsoft.com/Library/23fb6460-e651-46e6-b207-8559ccf49608).|  
+|_ATL_FREE_THREADED|Define if one or more of your objects use free or neutral threading. Existing code may contain references to the equivalent macro [_ATL_MULTI_THREADED](http://msdn.microsoft.com/library/23fb6460-e651-46e6-b207-8559ccf49608).|  
   
  If you do not define any of these macros for your project, _ATL_FREE_THREADED will be in effect.  
   

@@ -461,11 +461,11 @@ BOOL SetPaneText(
  After you call `SetPaneText`, you must add a UI update handler to display the new text in the status bar.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#176](../../mfc/codesnippet/CPP/cstatusbar-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#176](../../mfc/codesnippet/cpp/cstatusbar-class_1.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#177](../../mfc/codesnippet/CPP/cstatusbar-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#177](../../mfc/codesnippet/cpp/cstatusbar-class_2.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#178](../../mfc/codesnippet/CPP/cstatusbar-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#178](../../mfc/codesnippet/cpp/cstatusbar-class_3.cpp)]  
   
 ## See Also  
  [MFC Sample CTRLBARS](../../top/visual-cpp-samples.md)   

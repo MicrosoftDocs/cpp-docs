@@ -827,7 +827,7 @@ void SetValidationRule(LPCTSTR lpszValidationRule);
   
  For example, for fields named `hire_date` and `termination_date`, a validation rule might be:  
   
- [!code-cpp[NVC_MFCDatabase#34](../../mfc/codesnippet/CPP/cdaotabledef-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#34](../../mfc/codesnippet/cpp/cdaotabledef-class_1.cpp)]  
   
  For related information, see the topic "ValidationRule Property" in DAO Help.  
   

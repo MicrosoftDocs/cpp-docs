@@ -52,7 +52,7 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 |[CPath](../atl/reference/atl-typedefs.md#cpath)|A specialization of [CPathT](../atl/reference/cpatht-class.md) using `CString`.|  
 |[CPathA](../atl/reference/atl-typedefs.md#cpatha)|A specialization of [CPathT](../atl/reference/cpatht-class.md) using `CStringA`.|  
 |[CPathW](../atl/reference/atl-typedefs.md#cpathw)|A specialization of [CPathT](../atl/reference/cpatht-class.md) using `CStringW`.|  
-|[ATL_URL_PORT](../atl/reference/atl-http-utility-functions.md#atl_url_port)|The type used by [CUrl](../atl/reference/curl-class.md) for specifying a port number.|  
+|[ATL_URL_PORT](../atl/reference/atl-typedefs.md#atl_url_port)|The type used by [CUrl](../atl/reference/curl-class.md) for specifying a port number.|  
   
 ### Enums  
   
@@ -67,11 +67,12 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 |[AtlCanonicalizeUrl](../atl/reference/atl-http-utility-functions.md#atlcanonicalizeurl)|Call this function to canonicalize a URL, which includes converting unsafe characters and spaces into escape sequences.|  
 |[AtlCombineUrl](../atl/reference/atl-http-utility-functions.md#atlcombineurl)|Call this function to combine a base URL and a relative URL into a single, canonical URL.|  
 |[AtlEscapeUrl](../atl/reference/atl-http-utility-functions.md#atlescapeurl)|Call this function to convert all unsafe characters to escape sequences.|  
-|[AtlGetDefaultUrlPort](../atl/reference/atl-http-utility-functions.md#atlgetdefaultport)|Call this function to get the default port number associated with a particular internet protocol or scheme.|  
+|[AtlGetDefaultUrlPort](../atl/reference/atl-http-utility-functions.md#atlgetdefaulturlport)|Call this function to get the default port number associated with a particular internet protocol or scheme.|  
 |[AtlHexValue](../atl/reference/atl-text-encoding-functions.md#atlhexvalue)|Call this function to get the numeric value of a hexadecimal digit.|  
 |[AtlIsUnsafeUrlChar](../atl/reference/atl-http-utility-functions.md#atlisunsafeurlchar)|Call this function to find out whether a character is safe for use in a URL.|  
 |[AtlUnescapeUrl](../atl/reference/atl-http-utility-functions.md#atlunescapeurl)|Call this function to convert escaped characters back to their original values.|  
 |[SystemTimeToHttpDate](../atl/reference/atl-http-utility-functions.md#systemtimetohttpdate)|Call this function to convert a system time to a string in a format suitable for using in HTTP headers.|  
+
 |[ATLPath::AddBackslash](../atl/reference/atl-path-functions.md#atlpath__addbackslash)|This function is an overloaded wrapper for [PathAddBackslash](http://msdn.microsoft.com/library/windows/desktop/bb773561).|  
 |[ATLPath::AddExtension](../atl/reference/atl-path-functions.md#atlpath__addextension)|This function is an overloaded wrapper for [PathAddExtension](http://msdn.microsoft.com/library/windows/desktop/bb773563).|  
 |[ATLPath::Append](../atl/reference/atl-path-functions.md#atlpath__append)|This function is an overloaded wrapper for [PathAppend](http://msdn.microsoft.com/library/windows/desktop/bb773565).|  
@@ -113,10 +114,10 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
   
 |||  
 |-|-|  
-|[ATL_URL Flags](http://msdn.microsoft.com/Library/76e8cc5c-4e17-4eb1-ac29-a94d5256c4a7)|These flags modify the behavior of [AtlEscapeUrl](http://msdn.microsoft.com/Library/e4413300-dd10-43ad-9eaf-772e58398316) and [AtlCanonicalizeUrl](http://msdn.microsoft.com/Library/80015d95-081d-4bbb-a176-77670cdb16e8) .|  
-|[ATL_WORKER_THREAD_WAIT](http://msdn.microsoft.com/Library/4d209004-47f4-4c6a-98b4-aee49ffb0911)|This macro defines the default value in milliseconds that [CWorkerThread::Shutdown](../atl/reference/cworkerthread-class.md#shutdown) will wait for the worker thread to shut down.|  
-|[ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT](http://msdn.microsoft.com/Library/c1e660a7-d490-42af-bbe1-ded76e80cc10)|This macro defines the default time in milliseconds that [CThreadPool](../atl/reference/cthreadpool-class.md) will wait for a thread to shut down.|  
-|[ATLS_DEFAULT_THREADSPERPROC](http://msdn.microsoft.com/Library/e0dcf107-72a9-4122-abb4-83c63aa7d571)|This macro defines the default number of threads per processor used by [CThreadPool](../atl/reference/cthreadpool-class.md).|  
+|[ATL_URL Flags](http://msdn.microsoft.com/library/76e8cc5c-4e17-4eb1-ac29-a94d5256c4a7)|These flags modify the behavior of [AtlEscapeUrl](http://msdn.microsoft.com/library/e4413300-dd10-43ad-9eaf-772e58398316) and [AtlCanonicalizeUrl](http://msdn.microsoft.com/library/80015d95-081d-4bbb-a176-77670cdb16e8) .|  
+|[ATL_WORKER_THREAD_WAIT](http://msdn.microsoft.com/library/4d209004-47f4-4c6a-98b4-aee49ffb0911)|This macro defines the default value in milliseconds that [CWorkerThread::Shutdown](../atl/reference/cworkerthread-class.md#shutdown) will wait for the worker thread to shut down.|  
+|[ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT](http://msdn.microsoft.com/library/c1e660a7-d490-42af-bbe1-ded76e80cc10)|This macro defines the default time in milliseconds that [CThreadPool](../atl/reference/cthreadpool-class.md) will wait for a thread to shut down.|  
+|[ATLS_DEFAULT_THREADSPERPROC](http://msdn.microsoft.com/library/e0dcf107-72a9-4122-abb4-83c63aa7d571)|This macro defines the default number of threads per processor used by [CThreadPool](../atl/reference/cthreadpool-class.md).|  
   
 ## See Also  
  [Concepts](../atl/active-template-library-atl-concepts.md)   

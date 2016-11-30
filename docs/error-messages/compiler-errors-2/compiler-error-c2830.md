@@ -37,4 +37,4 @@ translation.priority.ht:
 # Compiler Error C2830
 only placement parameters to 'operator new' can have default values  
   
- The standard formal parameters for [operator new](../Topic/operator%20new%20\(%3Cnew%3E\).md) cannot have default values. Only user-defined placement parameters can specify defaults.
+ The standard formal parameters for [operator new](../standard-library/new-operators.md#operator_new) cannot have default values. Only user-defined placement parameters can specify defaults.

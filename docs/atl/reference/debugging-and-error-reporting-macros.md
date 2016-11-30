@@ -42,7 +42,7 @@ These macros provide useful debugging and trace facilities.
 |[ATLASSERT](#atlassert)|Performs the same functionality as the [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) macro found in the C run-time library.|  
 |[ATLENSURE](#atlensure)|Performs parameters validation. Call `AtlThrow` if needed|  
 |[ATLTRACENOTIMPL](#atltracenotimpl)|Sends a message to the dump device that the specified function is not implemented.|  
-|[ATLTRACE](http://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e)|Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels. Included for backward compatibility.|  
+|[ATLTRACE](http://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e)|Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels. Included for backward compatibility.|  
 |[ATLTRACE2](#atltrace2)|Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels.|  
   
 ##  <a name="_atl_debug_interfaces"></a>  _ATL_DEBUG_INTERFACES  
@@ -127,7 +127,7 @@ ATLENSURE_THROW(booleanExpression, hr);
  The difference between **ATLENSURE** and `ATLASSERT` is that **ATLENSURE** throws an exception in Release builds as well as in Debug builds.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#108](../../atl/codesnippet/CPP/debugging-and-error-reporting-macros_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#108](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_1.cpp)]  
   
 ##  <a name="atltracenotimpl"></a>  ATLTRACENOTIMPL  
  In debug builds of ATL, sends the string " `funcname` is not implemented" to the dump device and returns **E_NOTIMPL**.  
@@ -144,7 +144,7 @@ ATLTRACENOTIMPL(funcname);
  In release builds, simply returns **E_NOTIMPL**.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#127](../../atl/codesnippet/CPP/debugging-and-error-reporting-macros_2.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#127](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_2.cpp)]  
   
 ##  <a name="atltrace__atl_"></a>  ATLTRACE (ATL)  
  Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels. Included for backward compatibility.  
@@ -241,13 +241,13 @@ ATLTRACE2(
   
  To declare a custom trace category, declare a global instance of the `CTraceCategory` class as follows:  
   
- [!code-cpp[NVC_ATL_Utilities#109](../../atl/codesnippet/CPP/debugging-and-error-reporting-macros_3.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#109](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_3.cpp)]  
   
  The category name, `MY_CATEGORY` in this example, is the name you specify to the `category` parameter. The first parameter is the category name that will appear in the ATL/MFC Trace Tool. The second parameter is the default trace level. This parameter is optional, and the default trace level is 0.  
   
  To use a user-defined category:  
   
- [!code-cpp[NVC_ATL_Utilities#110](../../atl/codesnippet/CPP/debugging-and-error-reporting-macros_4.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#110](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_4.cpp)]  
   
  To specify that you want to filter the trace messages, insert definitions for these macros into Stdafx.h before the `#include <atlbase.h>` statement.  
   
@@ -262,7 +262,7 @@ ATLTRACE2(
  **ATLTRACE** and `ATLTRACE2` have the same behavior, **ATLTRACE** is included for backward compatibility.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#111](../../atl/codesnippet/CPP/debugging-and-error-reporting-macros_5.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#111](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_5.cpp)]  
   
 ## See Also  
  [Macros](../../atl/reference/atl-macros.md)   

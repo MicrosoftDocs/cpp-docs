@@ -74,7 +74,7 @@ class CDumpContext
 ## Remarks  
  `CDumpContext` does not have a base class.  
   
- You can use [afxDump](http://msdn.microsoft.com/Library/4b3cfa3f-fb75-456a-9d99-a5601acbcb11), a predeclared `CDumpContext` object, for most of your dumping. The `afxDump` object is available only in the Debug version of the Microsoft Foundation Class Library.  
+ You can use [afxDump](http://msdn.microsoft.com/library/4b3cfa3f-fb75-456a-9d99-a5601acbcb11), a predeclared `CDumpContext` object, for most of your dumping. The `afxDump` object is available only in the Debug version of the Microsoft Foundation Class Library.  
   
  Several of the memory [diagnostic services](../../mfc/reference/diagnostic-services.md) use `afxDump` for their output.  
   
@@ -117,7 +117,7 @@ CDumpContext(CFile* pFile = NULL);
  Do not write to the underlying `CFile` while the dump context is active; otherwise, you will interfere with the dump. Under the Windows environment, the output is routed to the debugger via the Windows function **OutputDebugString**.  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#12](../../mfc/codesnippet/CPP/cdumpcontext-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#12](../../mfc/codesnippet/cpp/cdumpcontext-class_1.cpp)]  
   
 ##  <a name="cdumpcontext__dumpashex"></a>  CDumpContext::DumpAsHex  
  Dumps the specified type formatted as hexadecimal numbers.  
@@ -154,7 +154,7 @@ CDumpContext& DumpAsHex(WORD w);
  Call this member function to dump the item of the specified type as a hexadecimal number. To dump an array, call [CDumpContext::HexDump](#cdumpcontext__hexdump).  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#13](../../mfc/codesnippet/CPP/cdumpcontext-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#13](../../mfc/codesnippet/cpp/cdumpcontext-class_2.cpp)]  
   
 ##  <a name="cdumpcontext__flush"></a>  CDumpContext::Flush  
  Forces any data remaining in buffers to be written to the file attached to the dump context.  
@@ -164,7 +164,7 @@ void Flush();
 ```  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#14](../../mfc/codesnippet/CPP/cdumpcontext-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#14](../../mfc/codesnippet/cpp/cdumpcontext-class_3.cpp)]  
   
 ##  <a name="cdumpcontext__getdepth"></a>  CDumpContext::GetDepth  
  Determines whether a deep or shallow dump is in process.  
@@ -209,7 +209,7 @@ void HexDump(
  To dump a single, specific item type as a hexadecimal number, call [CDumpContext::DumpAsHex](#cdumpcontext__dumpashex).  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#15](../../mfc/codesnippet/CPP/cdumpcontext-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#15](../../mfc/codesnippet/cpp/cdumpcontext-class_4.cpp)]  
   
 ##  <a name="cdumpcontext__operator__lt__lt_"></a>  CDumpContext::operator &lt;&lt;  
  Outputs the specified data to the dump context.  
@@ -329,7 +329,7 @@ CDumpContext& operator<<(HFONT h);
  If you use the `IMPLEMENT_DYNAMIC` or `IMPLEMENT_SERIAL` macro in the implementation of your class, then the insertion operator, through `CObject::Dump`, will print the name of your `CObject`-derived class. Otherwise, it will print `CObject`. If you override the `Dump` function of the class, then you can provide a more meaningful output of the object's contents instead of a hexadecimal dump.  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#17](../../mfc/codesnippet/CPP/cdumpcontext-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#17](../../mfc/codesnippet/cpp/cdumpcontext-class_5.cpp)]  
   
 ##  <a name="cdumpcontext__setdepth"></a>  CDumpContext::SetDepth  
  Sets the depth for the dump.  
@@ -349,7 +349,7 @@ void SetDepth(int nNewDepth);
 >  Circular references are not detected in deep dumps and can result in infinite loops.  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#16](../../mfc/codesnippet/CPP/cdumpcontext-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#16](../../mfc/codesnippet/cpp/cdumpcontext-class_6.cpp)]  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

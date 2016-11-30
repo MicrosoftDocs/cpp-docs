@@ -346,6 +346,3 @@ Sorted list:
 {101, banana}  
 {103, dog}  
 ```  
-  
-## See Also  
- [Explicit Specialization of Class Templates](../Topic/Explicit%20Specialization%20of%20Class%20Templates.md)

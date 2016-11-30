@@ -81,7 +81,7 @@ BOOL AFXAPI AfxExtractSubString (
  This function will return FALSE if either `lpszFullString` is set to **NULL** or the function reaches the end of `lpszFullString` without finding `iSubString`+1 occurrences of the specified separator character. The `rString` parameter will not be modified from its original value if `lpszFullString` was set to **NULL**; otherwise, the `rString` parameter is set to the empty string if the substring could not be extracted for the specified index.  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#48](../../mfc/codesnippet/CPP/cstring-formatting-and-message-box-display_1.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#48](../../mfc/codesnippet/cpp/cstring-formatting-and-message-box-display_1.cpp)]  
   
 ##  <a name="afxformatstring1"></a>  AfxFormatString1  
  Substitutes the string pointed to by `lpsz1` for any instances of the characters "%1" in the template string resource identified by `nIDS`.  
@@ -109,7 +109,7 @@ void  AfxFormatString1(
  If the format characters "%1" appear in the string more than once, multiple substitutions will be made.  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#25](../../mfc/codesnippet/CPP/cstring-formatting-and-message-box-display_2.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#25](../../mfc/codesnippet/cpp/cstring-formatting-and-message-box-display_2.cpp)]  
   
 ##  <a name="afxformatstring2"></a>  AfxFormatString2  
  Substitutes the string pointed to by `lpsz1` for any instances of the characters "%1", and the string pointed to by `lpsz2` for any instances of the characters "%2", in the template string resource identified by `nIDS`.  
@@ -141,7 +141,7 @@ void AfxFormatString2(
  If the format characters "%1" or "%2" appear in the string more than once, multiple substitutions will be made. They do not have to be in numerical order.  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#26](../../mfc/codesnippet/CPP/cstring-formatting-and-message-box-display_3.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#26](../../mfc/codesnippet/cpp/cstring-formatting-and-message-box-display_3.cpp)]  
   
 ##  <a name="afxmessagebox"></a>  AfxMessageBox  
  Displays a message box on the screen.  
@@ -198,7 +198,7 @@ int AFXAPI AfxMessageBox(
  The second form of the function uses the string resource with the ID `nIDPrompt` to display a message in the message box. The associated Help page is found through the value of `nIDHelp`. If the default value of `nIDHelp` is used (â€“ 1), the string resource ID, `nIDPrompt`, is used for the Help context. For more information about defining Help contexts, see [Technical Note 28](../../mfc/tn028-context-sensitive-help-support.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#133](../../mfc/reference/codesnippet/CPP/cstring-formatting-and-message-box-display_4.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#133](../../mfc/reference/codesnippet/cpp/cstring-formatting-and-message-box-display_4.cpp)]  
   
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)   

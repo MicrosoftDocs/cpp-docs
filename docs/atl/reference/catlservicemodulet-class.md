@@ -172,11 +172,11 @@ HRESULT InitializeSecurity() throw();
   
  For wizard-generated nonattributed service projects, this would be in  
   
- [!code-cpp[NVC_ATL_Service#1](../../atl/reference/codesnippet/CPP/catlservicemodulet-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Service#1](../../atl/reference/codesnippet/cpp/catlservicemodulet-class_1.cpp)]  
   
  For attributed service projects, this would be in  
   
- [!code-cpp[NVC_ATL_ServiceAttrib#1](../../atl/reference/codesnippet/CPP/catlservicemodulet-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_ServiceAttrib#1](../../atl/reference/codesnippet/cpp/catlservicemodulet-class_2.cpp)]  
   
 ##  <a name="catlservicemodulet__install"></a>  CAtlServiceModuleT::Install  
  Installs and creates the service.  

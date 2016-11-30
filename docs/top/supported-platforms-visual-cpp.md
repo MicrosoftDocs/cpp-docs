@@ -58,4 +58,4 @@ Apps built by using [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] 
   
 ## See Also  
  [Visual C++ Tools and Features in Visual Studio Editions](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)   
- [Getting Started](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md)
+ [Getting Started](getting-started-with-visual-cpp-in-visual-studio.md)

@@ -77,7 +77,7 @@ These macros control specific compiler features.
   
  By adding the following line to the stdafx.h file before including libraries headers, this behavior can be changed.  
   
- [!code-cpp[NVC_ATL_Utilities#97](../../atl/codesnippet/CPP/compiler-options-macros_1.h)]  
+ [!code-cpp[NVC_ATL_Utilities#97](../../atl/codesnippet/cpp/compiler-options-macros_1.h)]  
   
  If this `#define` is added, the ATL headers are careful to preserve the state of these warnings so that they are not disabled globally (or if the user explicitly disables individual warnings, not to enable them).  
   
@@ -119,11 +119,11 @@ _ATL_CSTRING_EXPLICIT_CONSTRUCTORS
   
  However, the non-standard form has been deprecated, so you need to move existing code to C++ standard compliant syntax. For example, the following:  
   
- [!code-cpp[NVC_MFCListView#14](../../atl/reference/codesnippet/CPP/compiler-options-macros_2.cpp)]  
+ [!code-cpp[NVC_MFCListView#14](../../atl/reference/codesnippet/cpp/compiler-options-macros_2.cpp)]  
   
  Should be changed to:  
   
- [!code-cpp[NVC_MFCListView#11](../../atl/reference/codesnippet/CPP/compiler-options-macros_3.cpp)]  
+ [!code-cpp[NVC_MFCListView#11](../../atl/reference/codesnippet/cpp/compiler-options-macros_3.cpp)]  
   
  Note that for map macros that add the '&' character, you should not add it again in your code.  
   
@@ -174,7 +174,7 @@ ATL_NO_VTABLE
  If the vtable pointer is prevented from being initialized in the class's constructor and destructor, the linker can eliminate the vtable and all of the functions to which it points. Expands to **__declspec(novtable)**.  
   
 ### Example  
- [!code-cpp[NVC_ATL_COM#53](../../atl/codesnippet/CPP/compiler-options-macros_4.h)]  
+ [!code-cpp[NVC_ATL_COM#53](../../atl/codesnippet/cpp/compiler-options-macros_4.h)]  
   
 ##  <a name="atl_noinline"></a>  ATL_NOINLINE  
  A symbol that indicates a function should not be inlined.  

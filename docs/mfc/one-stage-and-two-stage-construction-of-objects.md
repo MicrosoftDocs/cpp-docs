@@ -50,7 +50,7 @@ You have a choice between two techniques for creating graphic objects, such as p
 ## Example of Both Construction Techniques  
  The following brief example shows both methods of constructing a pen object:  
   
- [!code-cpp[NVC_MFCDocViewSDI#6](../mfc/codesnippet/CPP/one-stage-and-two-stage-construction-of-objects_1.cpp)]  
+ [!code-cpp[NVC_MFCDocViewSDI#6](../mfc/codesnippet/cpp/one-stage-and-two-stage-construction-of-objects_1.cpp)]  
   
 ### What do you want to know more about  
   

@@ -74,7 +74,7 @@ class CAtlFileMappingBase
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlFileMappingBase::operator =](#catlfilemappingbase__operator__eq)|Sets the current file-mapping object to another file-mapping object.|  
+|[CAtlFileMappingBase::operator =](#catlfilemappingbase__operator_eq)|Sets the current file-mapping object to another file-mapping object.|  
   
 ## Remarks  
  File mapping is the association of a file's contents with a portion of the virtual address space of a process. This class provides methods for creating file-mapping objects that permit programs to easily access and share data.  
@@ -101,7 +101,7 @@ CAtlFileMappingBase(CAtlFileMappingBase& orig);
  Creates a new file-mapping object, optionally using an existing object. It is still necessary to call [CAtlFileMappingBase::MapFile](#catlfilemappingbase__mapfile) to open or create the file-mapping object for a particular file.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#71](../../atl/codesnippet/CPP/catlfilemappingbase-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#71](../../atl/codesnippet/cpp/catlfilemappingbase-class_1.cpp)]  
   
 ##  <a name="catlfilemappingbase___dtorcatlfilemappingbase"></a>  CAtlFileMappingBase::~CAtlFileMappingBase  
  The destructor.  
@@ -265,7 +265,7 @@ HRESULT OpenMapping(
 ### Remarks  
  In debug builds, an assertion error will occur if the input parameters are invalid.  
   
-##  <a name="catlfilemappingbase__operator__eq"></a>  CAtlFileMappingBase::operator =  
+##  <a name="catlfilemappingbase__operator_eq"></a>  CAtlFileMappingBase::operator =  
  Sets the current file-mapping object to another file-mapping object.  
   
 ```

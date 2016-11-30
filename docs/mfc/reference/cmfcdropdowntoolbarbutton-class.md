@@ -141,7 +141,7 @@ CMFCDropDownToolbarButton(
 ### Example  
  The following example demonstrates how to construct an object of the `CMFCDropDownToolbarButton` class. This code snippet is part of the [Visual Studio Demo sample](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#31](../../mfc/codesnippet/CPP/cmfcdropdowntoolbarbutton-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#31](../../mfc/codesnippet/cpp/cmfcdropdowntoolbarbutton-class_1.cpp)]  
   
 ##  <a name="cmfcdropdowntoolbarbutton__dropdowntoolbar"></a>  CMFCDropDownToolbarButton::DropDownToolbar  
  Opens a drop-down toolbar.  

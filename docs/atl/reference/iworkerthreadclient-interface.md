@@ -83,7 +83,7 @@ HRESULT CloseHandle(HANDLE    hHandle);
 ### Example  
  The following code shows a simple implementation of `IWorkerThreadClient::CloseHandle`.  
   
- [!code-cpp[NVC_ATL_Utilities#135](../../atl/codesnippet/CPP/iworkerthreadclient-interface_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#135](../../atl/codesnippet/cpp/iworkerthreadclient-interface_1.cpp)]  
   
 ##  <a name="iworkerthreadclient__execute"></a>  IWorkerThreadClient::Execute  
  Implement this method to execute code when the handle associated with this object becomes signaled.  
@@ -111,7 +111,7 @@ dwParam,
 ### Example  
  The following code shows a simple implementation of `IWorkerThreadClient::Execute`.  
   
- [!code-cpp[NVC_ATL_Utilities#136](../../atl/codesnippet/CPP/iworkerthreadclient-interface_2.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#136](../../atl/codesnippet/cpp/iworkerthreadclient-interface_2.cpp)]  
   
 ## See Also  
  [Classes](../../atl/reference/atl-classes.md)   

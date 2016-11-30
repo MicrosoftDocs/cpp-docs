@@ -58,7 +58,7 @@ BEGIN_CONNECTION_POINT_MAP(x)
  For more information about connection points in ATL, see the article [Connection Points](../../atl/atl-connection-points.md).  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#101](../../atl/codesnippet/CPP/connection-point-macros_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#101](../../atl/codesnippet/cpp/connection-point-macros_1.h)]  
   
 ##  <a name="connection_point_entry"></a>  CONNECTION_POINT_ENTRY  
  Enters a connection point for the specified interface into the connection point map so that it can be accessed.  
@@ -79,7 +79,7 @@ CONNECTION_POINT_ENTRY(iid)
  For more information about connection points in ATL, see the article [Connection Points](../../atl/atl-connection-points.md).  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#120](../../atl/codesnippet/CPP/connection-point-macros_2.h)]  
+ [!code-cpp[NVC_ATL_Windowing#120](../../atl/codesnippet/cpp/connection-point-macros_2.h)]  
   
 ##  <a name="end_connection_point_map"></a>  END_CONNECTION_POINT_MAP  
  Marks the end of the connection point map entries.  
@@ -94,7 +94,7 @@ END_CONNECTION_POINT_MAP()
  For more information about connection points in ATL, see the article [Connection Points](../../atl/atl-connection-points.md).  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#128](../../atl/codesnippet/CPP/connection-point-macros_3.h)]  
+ [!code-cpp[NVC_ATL_Windowing#128](../../atl/codesnippet/cpp/connection-point-macros_3.h)]  
   
 ## See Also  
  [Macros](../../atl/reference/atl-macros.md)   

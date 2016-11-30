@@ -58,6 +58,3 @@ int main()
    f(x);     
 }  
 ```  
-  
-## See Also  
- [Visual C++ .NET 2003 Enhanced Compiler Conformance](../misc/visual-cpp-dotnet-2003-enhanced-compiler-conformance.md)

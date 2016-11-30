@@ -65,16 +65,16 @@ struct _ATL_FUNC_INFO {
  An array of variant types of the function parameters.  
   
 ## Remarks  
- Internally, ATL uses this structure to hold information obtained from a type library. You may need to manipulate this structure directly if you provide type information for an event handler used with the [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) class and [SINK_ENTRY_INFO](http://msdn.microsoft.com/Library/1a0ae260-2c82-4926-a537-db01e5f206a7) macro.  
+ Internally, ATL uses this structure to hold information obtained from a type library. You may need to manipulate this structure directly if you provide type information for an event handler used with the [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) class and [SINK_ENTRY_INFO](http://msdn.microsoft.com/library/1a0ae260-2c82-4926-a537-db01e5f206a7) macro.  
   
 ## Example  
  Given a dispinterface method defined in IDL:  
   
- [!code-cpp[NVC_ATL_Windowing#139](../../atl/codesnippet/CPP/atl-func-info-structure_1.idl)]  
+ [!code-cpp[NVC_ATL_Windowing#139](../../atl/codesnippet/cpp/atl-func-info-structure_1.idl)]  
   
  you would define an `_ATL_FUNC_INFO` structure:  
   
- [!code-cpp[NVC_ATL_Windowing#140](../../atl/codesnippet/CPP/atl-func-info-structure_2.h)]  
+ [!code-cpp[NVC_ATL_Windowing#140](../../atl/codesnippet/cpp/atl-func-info-structure_2.h)]  
   
 ## Requirements  
  **Header:** atlcom.h  
@@ -82,7 +82,7 @@ struct _ATL_FUNC_INFO {
 ## See Also  
  [Structures](../../atl/reference/atl-structures.md)   
  [IDispEventSimpleImpl Class](../../atl/reference/idispeventsimpleimpl-class.md)   
- [SINK_ENTRY_INFO](http://msdn.microsoft.com/Library/1a0ae260-2c82-4926-a537-db01e5f206a7)
+ [SINK_ENTRY_INFO](http://msdn.microsoft.com/library/1a0ae260-2c82-4926-a537-db01e5f206a7)
 
 
 

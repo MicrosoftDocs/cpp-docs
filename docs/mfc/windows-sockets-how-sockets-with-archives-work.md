@@ -50,14 +50,14 @@ This article explains how a [CSocket](../mfc/reference/csocket-class.md) object,
   
  The following figure shows the relationships among these objects on both sides of the communication.  
   
- ![CArchive, CSocketFile, and CSocket](../mfc/media/vc38ia1.gif "vc38IA1")  
+ ![CArchive, CSocketFile, and CSocket](../mfc/media/vc38ia1.gif "vc38ia1")  
 CArchive, CSocketFile, and CSocket  
   
  The purpose of this apparent complexity is to shield you from the necessity of managing the details of the socket yourself. You create the socket, the file, and the archive, and then begin sending or receiving data by inserting it to the archive or extracting it from the archive. [CArchive](../mfc/reference/carchive-class.md), [CSocketFile](../mfc/reference/csocketfile-class.md), and [CSocket](../mfc/reference/csocket-class.md) manage the details behind the scenes.  
   
  A `CSocket` object is actually a two-state object: sometimes asynchronous (the usual state) and sometimes synchronous. In its asynchronous state, a socket can receive asynchronous notifications from the framework. However, during an operation such as receiving or sending data the socket becomes synchronous. This means the socket will receive no further asynchronous notifications until the synchronous operation has completed. Because it switches modes, you can, for example, do something like the following:  
   
- [!code-cpp[NVC_MFCSimpleSocket#2](../mfc/codesnippet/CPP/windows-sockets-how-sockets-with-archives-work_1.cpp)]  
+ [!code-cpp[NVC_MFCSimpleSocket#2](../mfc/codesnippet/cpp/windows-sockets-how-sockets-with-archives-work_1.cpp)]  
   
  If `CSocket` were not implemented as a two-state object, it might be possible to receive additional notifications for the same kind of event while you were processing a previous notification. For example, you might get an `OnReceive` notification while processing an `OnReceive`. In the code fragment above, extracting `str` from the archive might lead to recursion. By switching states, `CSocket` prevents recursion by preventing additional notifications. The general rule is no notifications within notifications.  
   

@@ -67,7 +67,7 @@ class CMFCCustomColorsPropertyPage : public CPropertyPage
 ## Example  
  The following example demonstrates how to construct a `CMFCCustomColorsPropertyPage` object and set the color components of the property page.  
   
- [!code-cpp[NVC_MFC_RibbonApp#35](../../mfc/reference/codesnippet/CPP/cmfccustomcolorspropertypage-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#35](../../mfc/reference/codesnippet/cpp/cmfccustomcolorspropertypage-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

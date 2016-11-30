@@ -92,7 +92,7 @@ As explained in the article [Data Objects and Data Sources (OLE)](../mfc/data-ob
 ##  <a name="_core_destroying_data_sources"></a> Destroying Data Sources  
  Data sources must be destroyed by the application currently responsible for them. In situations where you hand the data source to OLE, such as calling [COleDataSource::DoDragDrop](../mfc/reference/coledatasource-class.md#coledatasource__dodragdrop), you need to call **pDataSrc->InternalRelease**. For example:  
   
- [!code-cpp[NVC_MFCListView#1](../atl/reference/codesnippet/CPP/data-objects-and-data-sources-creation-and-destruction_1.cpp)]  
+ [!code-cpp[NVC_MFCListView#1](../atl/reference/codesnippet/cpp/data-objects-and-data-sources-creation-and-destruction_1.cpp)]  
   
  If you have not handed your data source to OLE, then you are responsible for destroying it, as with any typical C++ object.  
   

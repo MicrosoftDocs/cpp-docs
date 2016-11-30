@@ -132,7 +132,7 @@ virtual BOOL Create(
 ### Example  
  The following example creates a pager control, then uses the [CPagerCtrl::SetChild](#cpagerctrl__setchild) method to associate a very long button control with the pager control. The example then uses the [CPagerCtrl::SetButtonSize](#cpagerctrl__setbuttonsize) method to set the height of the pager control to 20 pixels, and the [CPagerCtrl::SetBorder](#cpagerctrl__setborder) method to set the border thickness to 1 pixel.  
   
- [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/CPP/cpagerctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_1.cpp)]  
   
 ##  <a name="cpagerctrl__createex"></a>  CPagerCtrl::CreateEx  
  Creates a pager control with specified extended styles and attaches it to the current `CPagerCtrl` object.  
@@ -196,7 +196,7 @@ int GetBorder() const;
 ### Example  
  The following example uses the [CPagerCtrl::GetBorder](#cpagerctrl__getborder) method to retrieve the thickness of the pager control's border.  
   
- [!code-cpp[NVC_MFC_CSplitButton_s2#5](../../mfc/reference/codesnippet/CPP/cpagerctrl-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_CSplitButton_s2#5](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_2.cpp)]  
   
 ##  <a name="cpagerctrl__getbkcolor"></a>  CPagerCtrl::GetBkColor  
  Retrieves the background color of the current pager control.  
@@ -216,7 +216,7 @@ COLORREF GetBkColor() const;
 ### Example  
  The following example uses the [CPagerCtrl::SetBkColor](#cpagerctrl__setbkcolor) method to set the background color of the pager control to red, and the [CPagerCtrl::GetBkColor](#cpagerctrl__getbkcolor) method to confirm that the change was made.  
   
- [!code-cpp[NVC_MFC_CSplitButton_s2#4](../../mfc/reference/codesnippet/CPP/cpagerctrl-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_CSplitButton_s2#4](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_3.cpp)]  
   
 ##  <a name="cpagerctrl__getbuttonsize"></a>  CPagerCtrl::GetButtonSize  
  Retrieves the button size of the current pager control.  
@@ -291,7 +291,7 @@ int GetScrollPos() const;
 ### Example  
  The following example uses the [CPagerCtrl::GetScrollPos](#cpagerctrl__getscrollpos) method to retrieve the current scroll position of the pager control. If the pager control is not already scrolled to zero, the leftmost position, the example uses the [CPagerCtrl::SetScrollPos](#cpagerctrl__setscrollpos) method to set the scroll position to zero.  
   
- [!code-cpp[NVC_MFC_CSplitButton_s2#7](../../mfc/reference/codesnippet/CPP/cpagerctrl-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_CSplitButton_s2#7](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_4.cpp)]  
   
 ##  <a name="cpagerctrl__isbuttondepressed"></a>  CPagerCtrl::IsButtonDepressed  
  Indicates whether the specified scroll button of the current pager control is in pressed state.  
@@ -382,7 +382,7 @@ BOOL IsButtonInvisible(int iButton) const;
 ### Example  
  The following example uses the [CPagerCtrl::IsButtonInvisible](#cpagerctrl__isbuttoninvisible) method to determine whether the pager control's left and right scroll buttons are visible.  
   
- [!code-cpp[NVC_MFC_CSplitButton_s2#6](../../mfc/reference/codesnippet/CPP/cpagerctrl-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_CSplitButton_s2#6](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_5.cpp)]  
   
 ##  <a name="cpagerctrl__isbuttonnormal"></a>  CPagerCtrl::IsButtonNormal  
  Indicates whether the specified scroll button of the current pager control is in normal state.  
@@ -418,12 +418,12 @@ void RecalcSize();
 ### Example  
  The following example uses the [CPagerCtrl::RecalcSize](#cpagerctrl__recalcsize) method to request the current pager control to recalculate its size.  
   
- [!code-cpp[NVC_MFC_CSplitButton_s2#3](../../mfc/reference/codesnippet/CPP/cpagerctrl-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_CSplitButton_s2#3](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_6.cpp)]  
   
 ### Example  
  The following example uses [message reflection](../../mfc/tn062-message-reflection-for-windows-controls.md) to enable the pager control to recalculate its own size instead of requiring the control's parent dialog to perform the calculation. The example derives the `MyPagerCtrl` class from the [CPagerCtrl class](../../mfc/reference/cpagerctrl-class.md), then uses a message map to associate the [PGN_CALCSIZE](http://msdn.microsoft.com/library/windows/desktop/bb760864) notification with the `OnCalcsize` notification handler. In this example, the notification handler sets the width and height of the pager control to fixed values.  
   
- [!code-cpp[NVC_MFC_CSplitButton_s2#8](../../mfc/reference/codesnippet/CPP/cpagerctrl-class_7.cpp)]  
+ [!code-cpp[NVC_MFC_CSplitButton_s2#8](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_7.cpp)]  
   
 ##  <a name="cpagerctrl__setbkcolor"></a>  CPagerCtrl::SetBkColor  
  Sets the background color of the current pager control.  
@@ -447,7 +447,7 @@ COLORREF SetBkColor(COLORREF clrBk);
 ### Example  
  The following example uses the [CPagerCtrl::SetBkColor](#cpagerctrl__setbkcolor) method to set the background color of the pager control to red, and the [CPagerCtrl::GetBkColor](#cpagerctrl__getbkcolor) method to confirm that the change was made.  
   
- [!code-cpp[NVC_MFC_CSplitButton_s2#4](../../mfc/reference/codesnippet/CPP/cpagerctrl-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_CSplitButton_s2#4](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_3.cpp)]  
   
 ##  <a name="cpagerctrl__setborder"></a>  CPagerCtrl::SetBorder  
  Sets the border size of the current pager control.  
@@ -471,7 +471,7 @@ int SetBorder(int iBorder);
 ### Example  
  The following example creates a pager control, then uses the [CPagerCtrl::SetChild](#cpagerctrl__setchild) method to associate a very long button control with the pager control. The example then uses the [CPagerCtrl::SetButtonSize](#cpagerctrl__setbuttonsize) method to set the height of the pager control to 20 pixels, and the [CPagerCtrl::SetBorder](#cpagerctrl__setborder) method to set the border thickness to 1 pixel.  
   
- [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/CPP/cpagerctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_1.cpp)]  
   
 ##  <a name="cpagerctrl__setbuttonsize"></a>  CPagerCtrl::SetButtonSize  
  Sets the button size of the current pager control.  
@@ -497,7 +497,7 @@ int SetButtonSize(int iButtonSize);
 ### Example  
  The following example creates a pager control, then uses the [CPagerCtrl::SetChild](#cpagerctrl__setchild) method to associate a very long button control with the pager control. The example then uses the [CPagerCtrl::SetButtonSize](#cpagerctrl__setbuttonsize) method to set the height of the pager control to 20 pixels, and the [CPagerCtrl::SetBorder](#cpagerctrl__setborder) method to set the border thickness to 1 pixel.  
   
- [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/CPP/cpagerctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_1.cpp)]  
   
 ##  <a name="cpagerctrl__setchild"></a>  CPagerCtrl::SetChild  
  Sets the contained window for the current pager control.  
@@ -520,7 +520,7 @@ void SetChild(HWND hwndChild);
 ### Example  
  The following example creates a pager control, then uses the [CPagerCtrl::SetChild](#cpagerctrl__setchild) method to associate a very long button control with the pager control. The example then uses the [CPagerCtrl::SetButtonSize](#cpagerctrl__setbuttonsize) method to set the height of the pager control to 20 pixels, and the [CPagerCtrl::SetBorder](#cpagerctrl__setborder) method to set the border thickness to 1 pixel.  
   
- [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/CPP/cpagerctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_1.cpp)]  
   
 ##  <a name="cpagerctrl__setscrollpos"></a>  CPagerCtrl::SetScrollPos  
  Sets the scroll position of the current pager control.  

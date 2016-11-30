@@ -182,6 +182,7 @@ namespace concurrency;
   
 |Name|Description|  
 |----------|-----------------|  
+
 |[agent_status Enumeration](concurrency-namespace-enums.md#agent_status)|The valid states for an `agent`.|  
 |[Agents_EventType Enumeration](concurrency-namespace-enums.md#agents_eventtype)|The types of events that can be traced using the tracing functionality offered by the Agents Library|  
 |[ConcRT_EventType Enumeration](concurrency-namespace-enums.md#concrt_eventtype)|The types of events that can be traced using the tracing functionality offered by the Concurrency Runtime.|  
@@ -201,6 +202,7 @@ namespace concurrency;
   
 |Name|Description|  
 |----------|-----------------|  
+
 |[Alloc Function](concurrency-namespace-functions.md#alloc)|Allocates a block of memory of the size specified from the Concurrency Runtime Caching Suballocator.|  
 |[asend Function](concurrency-namespace-functions.md#asend)|Overloaded. An asynchronous send operation, which schedules a task to propagate the data to the target block.|  
 |[cancel_current_task Function](concurrency-namespace-functions.md#cancel_current_task)|Cancels the currently executing task. This function can be called from within the body of a task to abort the task's execution and cause it to enter the `canceled` state.<br /><br /> It is not a supported scenario to call this function if you are not within the body of a `task`. Doing so will result in undefined behavior such as a crash or a hang in your application.|  
@@ -248,6 +250,7 @@ namespace concurrency;
   
 |Name|Description|  
 |----------|-----------------|  
+
 |[operator!= Operator](concurrency-namespace-operators.md#operator_neq)|Tests if the `concurrent_vector` object on the left side of the operator is not equal to the `concurrent_vector` object on the right side.|  
 |[operator&& Operator](concurrency-namespace-operators.md#operator_amp_amp)|Overloaded. Creates a task that will complete succesfully when both of the tasks supplied as arguments complete successfully.|  
 |[operator&#124;&#124; Operator](concurrency-namespace-operators.md#operator_lor)|Overloaded. Creates a task that will complete successfully when either of the tasks supplied as arguments completes successfully.|  
@@ -261,6 +264,7 @@ namespace concurrency;
   
 |Name|Description|  
 |----------|-----------------|  
+
 |[AgentEventGuid Constant](concurrency-namespace-constants1.md#agenteventguid)|A category GUID ({B9B5B78C-0713-4898-A21A-C67949DCED07}) describing ETW events fired by the Agents library in the Concurrency Runtime.|  
 |[ChoreEventGuid Constant](concurrency-namespace-constants1.md#choreeventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to chores or tasks.|  
 |[ConcRT_ProviderGuid Constant](concurrency-namespace-constants1.md#concrt_providerguid)|The ETW provider GUID for the Concurrency Runtime.|  

@@ -55,7 +55,7 @@ This article explains what you must do to implement in-place frame windows in yo
   
      Override the `OnCreateControlBars` member function to create a toolbar when the server is active in place. For example:  
   
-     [!code-cpp[NVC_MFCOleServer#1](../mfc/codesnippet/CPP/servers-implementing-in-place-frame-windows_1.cpp)]  
+     [!code-cpp[NVC_MFCOleServer#1](../mfc/codesnippet/cpp/servers-implementing-in-place-frame-windows_1.cpp)]  
   
      See the discussion of this code following step 5.  
   

@@ -226,7 +226,7 @@ BOOL FindText(
  This function displays the wait cursor during the find operation.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#151](../../mfc/codesnippet/CPP/cricheditview-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#151](../../mfc/codesnippet/cpp/cricheditview-class_1.cpp)]  
   
 ##  <a name="cricheditview__findtextsimple"></a>  CRichEditView::FindTextSimple  
  Call this function to find the specified text and set it to be the current selection.  
@@ -272,7 +272,7 @@ CHARFORMAT2& GetCharFormatSelection();
  For more information, see the [EM_GETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb788026) message and the [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#152](../../mfc/codesnippet/CPP/cricheditview-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#152](../../mfc/codesnippet/cpp/cricheditview-class_2.cpp)]  
   
 ##  <a name="cricheditview__getclipboarddata"></a>  CRichEditView::GetClipboardData  
  The framework calls this function as part of the processing of [IRichEditOleCallback::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/bb774315).  
@@ -426,7 +426,7 @@ CSize GetPaperSize() const;
  The size of the paper used in printing, measured in `MM_TWIPS`.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#153](../../mfc/codesnippet/CPP/cricheditview-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#153](../../mfc/codesnippet/cpp/cricheditview-class_3.cpp)]  
   
 ##  <a name="cricheditview__getparaformatselection"></a>  CRichEditView::GetParaFormatSelection  
  Call this function to get the paragraph formatting attributes of the current selection.  
@@ -454,7 +454,7 @@ CRect GetPrintRect() const;
  The bounds of the image area used in printing, measured in `MM_TWIPS`.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#154](../../mfc/codesnippet/CPP/cricheditview-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDocView#154](../../mfc/codesnippet/cpp/cricheditview-class_4.cpp)]  
   
 ##  <a name="cricheditview__getprintwidth"></a>  CRichEditView::GetPrintWidth  
  Call this function to determine the width of the printing area.  
@@ -640,7 +640,7 @@ void OnCharEffect(
  For more information on the `dwMask` and `dwEffect` parameters and their potential values, see the corresponding data members of [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#155](../../mfc/codesnippet/CPP/cricheditview-class_5.cpp)]  
+ [!code-cpp[NVC_MFCDocView#155](../../mfc/codesnippet/cpp/cricheditview-class_5.cpp)]  
   
 ##  <a name="cricheditview__onfindnext"></a>  CRichEditView::OnFindNext  
  Called by the framework when processing commands from the Find/Replace dialog box.  
@@ -721,7 +721,7 @@ void OnParaAlign(WORD wAlign);
 - `PFA_CENTER` Center the paragraphs between the margins.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#156](../../mfc/codesnippet/CPP/cricheditview-class_6.cpp)]  
+ [!code-cpp[NVC_MFCDocView#156](../../mfc/codesnippet/cpp/cricheditview-class_6.cpp)]  
   
 ##  <a name="cricheditview__onprinterchanged"></a>  CRichEditView::OnPrinterChanged  
  Override this function to change characteristics for this rich edit view when the printer changes.  
@@ -815,7 +815,7 @@ virtual void OnTextNotFound(LPCTSTR lpszFind);
  For more information, see [MessageBeep](http://msdn.microsoft.com/library/windows/desktop/ms680356) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#157](../../mfc/codesnippet/CPP/cricheditview-class_7.cpp)]  
+ [!code-cpp[NVC_MFCDocView#157](../../mfc/codesnippet/cpp/cricheditview-class_7.cpp)]  
   
 ##  <a name="cricheditview__onupdatechareffect"></a>  CRichEditView::OnUpdateCharEffect  
  The framework calls this function to update the command UI for character effect commands.  
@@ -843,7 +843,7 @@ void OnUpdateCharEffect(
  For more information on the `dwMask` and `dwEffect` parameters and their potential values, see the corresponding data members of [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#158](../../mfc/codesnippet/CPP/cricheditview-class_8.cpp)]  
+ [!code-cpp[NVC_MFCDocView#158](../../mfc/codesnippet/cpp/cricheditview-class_8.cpp)]  
   
 ##  <a name="cricheditview__onupdateparaalign"></a>  CRichEditView::OnUpdateParaAlign  
  The framework calls this function to update the command UI for paragraph effect commands.  
@@ -868,7 +868,7 @@ void OnUpdateParaAlign(
 - `PFA_CENTER` Center the paragraphs between the margins.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#159](../../mfc/codesnippet/CPP/cricheditview-class_9.cpp)]  
+ [!code-cpp[NVC_MFCDocView#159](../../mfc/codesnippet/cpp/cricheditview-class_9.cpp)]  
   
 ##  <a name="cricheditview__printinsiderect"></a>  CRichEditView::PrintInsideRect  
  Call this function to format a range of text in a rich edit control to fit within *rectLayout* for the device specified by `pDC`.  
@@ -972,7 +972,7 @@ virtual HRESULT QueryAcceptData(
  For more information on `HRESULT` and `IDataObject`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) and [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421), respectively, in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#160](../../mfc/codesnippet/CPP/cricheditview-class_10.cpp)]  
+ [!code-cpp[NVC_MFCDocView#160](../../mfc/codesnippet/cpp/cricheditview-class_10.cpp)]  
   
 ##  <a name="cricheditview__setcharformat"></a>  CRichEditView::SetCharFormat  
  Call this function to set the character formatting attributes for new text in this `CRichEditView` object.  
@@ -991,7 +991,7 @@ void SetCharFormat(CHARFORMAT2 cf);
  For more information, see [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) message and [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#152](../../mfc/codesnippet/CPP/cricheditview-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#152](../../mfc/codesnippet/cpp/cricheditview-class_2.cpp)]  
   
 ##  <a name="cricheditview__setmargins"></a>  CRichEditView::SetMargins  
  Call this function to set the printing margins for this rich edit view.  
@@ -1027,7 +1027,7 @@ void SetPaperSize(CSize sizePaper);
  If [m_nWordWrap](#cricheditview__m_nwordwrap) is `WrapToTargetDevice`, you should call [WrapChanged](#cricheditview__wrapchanged) after using this function to adjust printing characteristics.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#161](../../mfc/codesnippet/CPP/cricheditview-class_11.cpp)]  
+ [!code-cpp[NVC_MFCDocView#161](../../mfc/codesnippet/cpp/cricheditview-class_11.cpp)]  
   
 ##  <a name="cricheditview__setparaformat"></a>  CRichEditView::SetParaFormat  
  Call this function to set the paragraph formatting attributes for the current selection in this `CRichEditView` object.  
@@ -1049,7 +1049,7 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
  For more information, see [EM_SETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774276) message and [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#162](../../mfc/codesnippet/CPP/cricheditview-class_12.cpp)]  
+ [!code-cpp[NVC_MFCDocView#162](../../mfc/codesnippet/cpp/cricheditview-class_12.cpp)]  
   
 ##  <a name="cricheditview__textnotfound"></a>  CRichEditView::TextNotFound  
  Call this function to reset the internal search state of the [CRichEditView](../../mfc/reference/cricheditview-class.md) control after a failed call to [FindText](#cricheditview__findtext).  
@@ -1081,7 +1081,7 @@ virtual void WrapChanged();
  Override this function to modify the way the rich edit view responds to changes in [m_nWordWrap](#cricheditview__m_nwordwrap) or the printing characteristics ( [OnPrinterChanged](#cricheditview__onprinterchanged)).  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#163](../../mfc/codesnippet/CPP/cricheditview-class_13.cpp)]  
+ [!code-cpp[NVC_MFCDocView#163](../../mfc/codesnippet/cpp/cricheditview-class_13.cpp)]  
   
 ## See Also  
  [MFC Sample WORDPAD](../../top/visual-cpp-samples.md)   

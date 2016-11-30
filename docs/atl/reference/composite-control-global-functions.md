@@ -534,9 +534,9 @@ ATLAPI AtlGetObjectSourceInterface(
 >  For this function to successfully retrieve the requested information, the object represented by `punkObj` must implement `IDispatch` (and return type information through **IDispatch::GetTypeInfo**) plus it must also implement either `IProvideClassInfo2` or `IPersist`. The type information for the source interface must be in the same type library as the type information for `IDispatch`.  
   
 ### Example  
- The example below shows how you might define an event sink class, `CEasySink`, that reduces the number of template arguments that you can pass to `IDispEventImpl` to the bare essentials. `EasyAdvise` and `EasyUnadvise` use `AtlGetObjectSourceInterface` to initialize the [IDispEventImpl](../../atl/reference/idispeventimpl-class.md) members before calling [DispEventAdvise](idispeventsimpleimpl-class.md#dispeventadvise) or [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise).  
+ The example below shows how you might define an event sink class, `CEasySink`, that reduces the number of template arguments that you can pass to `IDispEventImpl` to the bare essentials. `EasyAdvise` and `EasyUnadvise` use `AtlGetObjectSourceInterface` to initialize the [IDispEventImpl](../../atl/reference/idispeventimpl-class.md) members before calling [DispEventAdvise](idispeventsimpleimpl-class.md#idispeventsimpleimpl__dispeventadvise) or [DispEventUnadvise](idispeventsimpleimpl-class.md#idispeventsimpleimpl__dispeventunadvise).  
   
- [!code-cpp[NVC_ATL_Windowing#93](../../atl/codesnippet/CPP/composite-control-global-functions_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#93](../../atl/codesnippet/cpp/composite-control-global-functions_1.h)]  
   
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)   

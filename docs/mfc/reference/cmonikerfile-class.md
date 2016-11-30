@@ -185,11 +185,11 @@ virtual BOOL Open(
   
  You can use a URL or a filename for the `lpszURL` parameter. For example:  
   
- [!code-cpp[NVC_MFCWinInet#6](../../mfc/codesnippet/CPP/cmonikerfile-class_1.cpp)]  
+ [!code-cpp[NVC_MFCWinInet#6](../../mfc/codesnippet/cpp/cmonikerfile-class_1.cpp)]  
   
  – or –  
   
- [!code-cpp[NVC_MFCWinInet#7](../../mfc/codesnippet/CPP/cmonikerfile-class_2.cpp)]  
+ [!code-cpp[NVC_MFCWinInet#7](../../mfc/codesnippet/cpp/cmonikerfile-class_2.cpp)]  
   
 ## See Also  
  [COleStreamFile Class](../../mfc/reference/colestreamfile-class.md)   

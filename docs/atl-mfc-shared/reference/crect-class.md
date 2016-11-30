@@ -112,9 +112,10 @@ class CRect : public tagRECT
   
  When specifying a `CRect`, you must be careful to construct it so that it is normalized — in other words, such that the value of the left coordinate is less than the right and the top is less than the bottom. For example, a top left of (10,10) and bottom right of (20,20) defines a normalized rectangle but a top left of (20,20) and bottom right of (10,10) defines a non-normalized rectangle. If the rectangle is not normalized, many `CRect` member functions may return incorrect results. (See [CRect::NormalizeRect](#crect__normalizerect) for a list of these functions.) Before you call a function that requires normalized rectangles, you can normalize non-normalized rectangles by calling the `NormalizeRect` function.  
   
- Use caution when manipulating a `CRect` with the [CDC::DPtoLP](../../mfc/reference/cdc-class.md#cdc__dptolp and [CDC::LPtoDP](../../mfc/reference/cdc-class.md#cdc__lptodp member functions. If the mapping mode of a display context is such that the y-extent is negative, as in `MM_LOENGLISH`, then `CDC::DPtoLP` will transform the `CRect` so that its top is greater than the bottom. Functions such as **Height** and **Size** will then return negative values for the height of the transformed `CRect`, and the rectangle will be non-normalized.  
+ Use caution when manipulating a `CRect` with the [CDC::DPtoLP](../../mfc/reference/cdc-class.md#cdc__dptolp) and [CDC::LPtoDP](../../mfc/reference/cdc-class.md#cdc__lptodp) member functions. If the mapping mode of a display context is such that the y-extent is negative, as in `MM_LOENGLISH`, then `CDC::DPtoLP` will transform the `CRect` so that its top is greater than the bottom. Functions such as **Height** and **Size** will then return negative values for the height of the transformed `CRect`, and the rectangle will be non-normalized.  
+
   
- When using overloaded `CRect` operators, the first operand must be a `CRect`; the second can be either a [RECT](RECT%20Structure1.md) structure or a `CRect` object.  
+ When using overloaded `CRect` operators, the first operand must be a `CRect`; the second can be either a [RECT](../../mfc/reference/rect-structure1.md) structure or a `CRect` object.  
   
 ## Inheritance Hierarchy  
  `tagRECT`  
@@ -239,9 +240,10 @@ lpSrcRect) throw();
   
 ### Parameters  
  `lpSrcRect`  
- Points to the [RECT](RECT%20Structure1.md) structure or `CRect` object that is to be copied.  
+ Points to the [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object that is to be copied.  
   
 ### Example  
+
 ```cpp
    CRect rectSource(35, 10, 125, 10);
    CRect rectDest;
@@ -261,6 +263,7 @@ lpSrcRect) throw();
    // works against RECT structures, too!
    // rectDest is now set to (0, 0, 640, 480)   
 ```
+
   
 ##  <a name="crect__crect"></a>  CRect::CRect  
  Constructs a `CRect` object.  
@@ -311,7 +314,7 @@ CRect(
  Specifies the bottom of `CRect`.  
   
  *srcRect*  
- Refers to the [RECT](RECT%20Structure1.md) structure with the coordinates for `CRect`.  
+ Refers to the [RECT](../../mfc/reference/rect-structure1.md) structure with the coordinates for `CRect`.  
   
  `lpSrcRect`  
  Points to the `RECT` structure with the coordinates for `CRect`.  
@@ -407,7 +410,7 @@ void DeflateRect(
  A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) or [CSize](csize-class.md) that specifies the number of units to deflate `CRect`. The `cx` value specifies the number of units to deflate the left and right sides and the `cy` value specifies the number of units to deflate the top and bottom.  
   
  `lpRect`  
- Points to a [RECT](RECT%20Structure1.md) structure or `CRect` that specifies the number of units to deflate each side.  
+ Points to a [RECT](../../mfc/reference/rect-structure.md) structure or `CRect` that specifies the number of units to deflate each side.  
   
  *l*  
  Specifies the number of units to deflate the left side of `CRect`.  
@@ -457,7 +460,7 @@ lpRect) const throw();
   
 ### Parameters  
  `lpRect`  
- Points to a [RECT](RECT%20Structure1.md) structure or `CRect` object that contains the upper-left and lower-right corner coordinates of a rectangle.  
+ Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object that contains the upper-left and lower-right corner coordinates of a rectangle.  
   
 ### Return Value  
  Nonzero if the two rectangles have the same top, left, bottom, and right values; otherwise 0.  
@@ -484,7 +487,7 @@ lpRect) const throw();
 
    ASSERT(rect1.EqualRect(&test));   
 ```
-  
+
 ##  <a name="crect__height"></a>  CRect::Height  
  Calculates the height of `CRect` by subtracting the top value from the bottom value.  
   
@@ -502,6 +505,7 @@ int Height() const throw();
 >  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangle before calling this function.  
   
 ### Example  
+
 ```cpp
    CRect rect(20, 30, 80, 70);
 
@@ -510,6 +514,7 @@ int Height() const throw();
    // nHt is now 40
    ASSERT(nHt == 40);   
 ```
+
   
 ##  <a name="crect__inflaterect"></a>  CRect::InflateRect  
  `InflateRect` inflates `CRect` by moving its sides away from its center.  
@@ -551,7 +556,7 @@ void InflateRect(
  A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) or [CSize](csize-class.md) that specifies the number of units to inflate `CRect`. The `cx` value specifies the number of units to inflate the left and right sides and the `cy` value specifies the number of units to inflate the top and bottom.  
   
  `lpRect`  
- Points to a [RECT](RECT%20Structure1.md) structure or `CRect` that specifies the number of units to inflate each side.  
+ Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` that specifies the number of units to inflate each side.  
   
  *l*  
  Specifies the number of units to inflate the left side of `CRect`.  
@@ -571,6 +576,7 @@ void InflateRect(
  The first two overloads inflate both pairs of opposite sides of `CRect` so that its total width is increased by two times *x* (or `cx`) and its total height is increased by two times *y* (or `cy`). The other two overloads inflate each side of `CRect` independently of the others.  
   
 ### Example  
+
 ```cpp
    CRect rect(0, 0, 300, 300);
    rect.InflateRect(50, 200);
@@ -595,7 +601,7 @@ void InflateRect(
   
 ### Parameters  
  `lpRect1`  
- Points to a [RECT](RECT%20Structure1.md) structure or `CRect` object that contains a source rectangle.  
+ Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object that contains a source rectangle.  
   
  `lpRect2`  
  Points to a `RECT` structure or `CRect` object that contains a source rectangle.  
@@ -610,6 +616,7 @@ void InflateRect(
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
+
 ```cpp
    CRect rectOne(125,   0, 150, 200);
    CRect rectTwo(0,  75, 350,  95);
@@ -645,6 +652,7 @@ BOOL IsRectEmpty() const throw();
 >  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangle before calling this function.  
   
 ### Example  
+
 ```cpp
    CRect rectNone(0, 0, 0, 0);
    CRect rectSome(35, 50, 135, 150);
@@ -655,6 +663,7 @@ BOOL IsRectEmpty() const throw();
    CRect rectEmpty(35, 35, 35, 35);
    ASSERT(rectEmpty.IsRectEmpty());   
 ```
+
   
 ##  <a name="crect__isrectnull"></a>  CRect::IsRectNull  
  Determines whether the top, left, bottom, and right values of `CRect` are all equal to 0.  
@@ -670,6 +679,7 @@ BOOL IsRectNull() const throw();
  Differs from `IsRectEmpty`, which determines whether the rectangle is empty.  
   
 ### Example  
+
 ```cpp
    CRect rectNone(0, 0, 0, 0);
    CRect rectSome(35, 50, 135, 150);
@@ -700,6 +710,7 @@ x) throw();
  The absolute x-coordinate for the upper-left corner of the rectangle.  
   
 ### Example  
+
 ```cpp
    CRect rect(0, 0, 100, 100);
 
@@ -737,6 +748,7 @@ void MoveToXY(
  A **POINT** structure specifying the absolute upper-left corner of the rectangle.  
   
 ### Example  
+
 ```cpp
    CRect rect(0, 0, 100, 100);
 
@@ -745,6 +757,7 @@ void MoveToXY(
    // rect is now (10, 10, 110, 110);
    ASSERT(rect == CRect(10, 10, 110, 110));   
 ```
+
   
 ##  <a name="crect__movetoy"></a>  CRect::MoveToY  
  Call this function to move the rectangle to the absolute y-coordinate specified by *y*.  
@@ -763,6 +776,7 @@ y) throw();
  The absolute y-coordinate for the upper-left corner of the rectangle.  
   
 ### Example  
+
 ```cpp
    CRect rect(0, 0, 100, 100);
 
@@ -771,6 +785,7 @@ y) throw();
    // rect is now (0, 10, 100, 110);
    ASSERT(rect == CRect(0, 10, 100, 110));   
 ```
+
   
 ##  <a name="crect__normalizerect"></a>  CRect::NormalizeRect  
  Normalizes `CRect` so that both the height and width are positive.  
@@ -786,6 +801,7 @@ void NormalizeRect() throw();
 >  The following `CRect` member functions require normalized rectangles in order to work properly: [Height](#crect__height), [Width](#crect__width), [Size](#crect__size), [IsRectEmpty](#crect__isrectempty), [PtInRect](#crect__ptinrect), [EqualRect](#crect__equalrect), [UnionRect](#crect__unionrect), [IntersectRect](#crect__intersectrect), [SubtractRect](#crect__subtractrect), [operator ==](#crect__operator__eq_eq), [operator !=](#crect__operator__neq), [operator &#124;](#crect__operator__or), [operator &#124;=](#crect__operator__or_eq), [operator &](#crect__operator__amp_), and [operator &=](#crect__operator__amp__eq).  
   
 ### Example  
+
 ```cpp
    CRect rect1(110, 100, 250, 310);
    CRect rect2(250, 310, 110, 100);
@@ -836,6 +852,7 @@ void OffsetRect(
  Moves `CRect`*x* units along the x-axis and *y* units along the y-axis. The *x* and *y* parameters are signed values, so `CRect` can be moved left or right and up or down.  
   
 ### Example  
+
 ```cpp
    CRect rect(0, 0, 35, 35);
 
@@ -844,9 +861,11 @@ void OffsetRect(
    // rect is now (230, 230, 265, 265)
    ASSERT(rect == CRect(230, 230, 265, 265));   
 ```
+
   
 ##  <a name="crect__operator_lpcrect"></a>  CRect::operator LPCRECT  
- Converts a `CRect` to an `LPCRECT`.  
+ Converts a `CRect` to an [LPCRECT](../../mfc/reference/data-types-mfc.md).  
+
   
 ```  operator LPCRECT() const throw();
 ```  
@@ -855,10 +874,11 @@ void OffsetRect(
  When you use this function, you don't need the address-of ( **&**) operator. This operator will be automatically used when you pass a `CRect` object to a function that expects an **LPCRECT**.  
   
 ### Example  
- [!CODE [NVC_ATLMFC_Utilities#58](../CodeSnippet/VS_Snippets_Cpp/NVC_ATLMFC_Utilities#58)]  
+ [!CODE [NVC_ATLMFC_Utilities#58](../codesnippet/vs_snippets_cpp/nvc_atlmfc_utilities#58)]  
   
 ##  <a name="crect__operator_lprect"></a>  CRect::operator LPRECT  
- Converts a `CRect` to an `LPRECT`.  
+ Converts a `CRect` to an [LPRECT](../../mfc/reference/data-types-mfc.md).  
+
   
 ```  operator LPRECT() throw();
 ```  
@@ -883,9 +903,10 @@ srcRect) throw();
   
 ### Parameters  
  *srcRect*  
- Refers to a source rectangle. Can be a [RECT](RECT%20Structure1.md) or `CRect`.  
+ Refers to a source rectangle. Can be a [RECT](../../mfc/reference/rect-structure1.md) or `CRect`.  
   
 ### Example  
+
 ```cpp
    CRect rect(0, 0, 127, 168);
    CRect rect2;
@@ -894,6 +915,7 @@ srcRect) throw();
 
    ASSERT(rect2 == CRect(0, 0, 127, 168));   
 ```
+
   
 ##  <a name="crect__operator__eq_eq"></a>  CRect::operator ==  
  Determines whether `rect` is equal to `CRect` by comparing the coordinates of their upper-left and lower-right corners.  
@@ -909,7 +931,7 @@ rect) const throw();
   
 ### Parameters  
  `rect`  
- Refers to a source rectangle. Can be a [RECT](RECT%20Structure1.md) or `CRect`.  
+ Refers to a source rectangle. Can be a [RECT](../../mfc/reference/rect-structure1.md) or `CRect`.  
   
 ### Return Value  
  Nonzero if equal; otherwise 0.  
@@ -920,6 +942,7 @@ rect) const throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
+
 ```cpp
    CRect rect1(35, 150, 10, 25);
    CRect rect2(35, 150, 10, 25);
@@ -937,6 +960,7 @@ rect) const throw();
 
    ASSERT(rect1 == test);   
 ```
+
   
 ##  <a name="crect__operator__neq"></a>  CRect::operator !=  
  Determines whether `rect` is not equal to `CRect` by comparing the coordinates of their upper-left and lower-right corners.  
@@ -952,7 +976,7 @@ rect) const throw();
   
 ### Parameters  
  `rect`  
- Refers to a source rectangle. Can be a [RECT](RECT%20Structure1.md) or `CRect`.  
+ Refers to a source rectangle. Can be a [RECT](../../mfc/reference/rect-structure1.md) or `CRect`.  
   
 ### Return Value  
  Nonzero if not equal; otherwise 0.  
@@ -963,6 +987,7 @@ rect) const throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
+
 ```cpp
    CRect rect1(35, 150, 10, 25);
    CRect rect2(35, 150, 10, 25);
@@ -1009,7 +1034,7 @@ lpRect) throw();
  A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object that specifies the number of units to move the rectangle.  
   
  `lpRect`  
- Points to a [RECT](RECT%20Structure1.md) structure or `CRect` object that contains the number of units to inflate each side of `CRect`.  
+ Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object that contains the number of units to inflate each side of `CRect`.  
   
 ### Remarks  
  The parameter's *x* and *y* (or `cx` and `cy`) values are added to `CRect`.  
@@ -1017,6 +1042,7 @@ lpRect) throw();
  The third overload inflates `CRect` by the number of units specifed in each member of the parameter.  
   
 ### Example  
+
 ```cpp
    CRect   rect1(100, 235, 200, 335);
    CPoint   pt(35, 65);
@@ -1055,7 +1081,7 @@ lpRect) throw();
  A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object that specifies the number of units to move the rectangle.  
   
  `lpRect`  
- Points to a [RECT](RECT%20Structure1.md) structure or `CRect` object that contains the number of units to deflate each side of `CRect`.  
+ Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object that contains the number of units to deflate each side of `CRect`.  
   
 ### Remarks  
  The parameter's *x* and *y* (or `cx` and `cy`) values are subtracted from `CRect`.  
@@ -1063,6 +1089,7 @@ lpRect) throw();
  The third overload deflates `CRect` by the number of units specifed in each member of the parameter. Note that this overload functions like [DeflateRect](#crect__deflaterect).  
   
 ### Example  
+
 ```cpp
    CRect   rect1(100, 235, 200, 335);
    CPoint   pt(35, 65);
@@ -1087,7 +1114,7 @@ rect) throw();
   
 ### Parameters  
  `rect`  
- Contains a [RECT](RECT%20Structure1.md) or `CRect`.  
+ Contains a [RECT](../../mfc/reference/rect-structure1.md) or `CRect`.  
   
 ### Remarks  
  The intersection is the largest rectangle that is contained in both rectangles.  
@@ -1112,7 +1139,7 @@ rect) throw();
   
 ### Parameters  
  `rect`  
- Contains a `CRect` or [RECT](RECT%20Structure1.md).  
+ Contains a `CRect` or [RECT](../../mfc/reference/rect-structure1.md).  
   
 ### Remarks  
  The union is the smallest rectangle that contains both source rectangles.  
@@ -1121,6 +1148,7 @@ rect) throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
+
 ```cpp
    CRect   rect1(100,   0, 200, 300);
    CRect   rect2( 0, 100, 300, 200);
@@ -1130,6 +1158,7 @@ rect) throw();
    CRect   rectResult(0, 0, 300, 300);
    ASSERT(rectResult == rect1);   
 ```
+
   
 ##  <a name="crect__operator__add"></a>  CRect::operator +  
  The first two overloads return a `CRect` object that is equal to `CRect` displaced by the specified offsets.  
@@ -1159,7 +1188,7 @@ size) const throw();
  A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object that specifies the number of units to move the return value.  
   
  `lpRect`  
- Points to a [RECT](RECT%20Structure1.md) structure or `CRect` object that contains the number of units to inflate each side of the return value.  
+ Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object that contains the number of units to inflate each side of the return value.  
   
 ### Return Value  
  The `CRect` resulting from moving or inflating `CRect` by the number of units specified in the parameter.  
@@ -1170,6 +1199,7 @@ size) const throw();
  The third overload returns a new `CRect` that is equal to `CRect` inflated by the number of units specifed in each member of the parameter.  
   
 ### Example  
+
 ```cpp
    CRect   rect1(100, 235, 200, 335);
    CPoint   pt(35, 65);
@@ -1181,6 +1211,7 @@ size) const throw();
 
    ASSERT(rectResult == rect2);   
 ```
+
   
 ##  <a name="crect__operator_-"></a>  CRect::operator -  
  The first two overloads return a `CRect` object that is equal to `CRect` displaced by the specified offsets.  
@@ -1210,7 +1241,7 @@ lpRect) const throw();
  A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or `CSize` object that specifies the number of units to move the return value.  
   
  `lpRect`  
- Points to a [RECT](RECT%20Structure1.md) structure or `CRect` object that contains the number of units to deflate each side of the return value.  
+ Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object that contains the number of units to deflate each side of the return value.  
   
 ### Return Value  
  The `CRect` resulting from moving or deflating `CRect` by the number of units specified in the parameter.  
@@ -1221,6 +1252,7 @@ lpRect) const throw();
  The third overload returns a new `CRect` that is equal to `CRect` deflated by the number of units specifed in each member of the parameter. Note that this overload functions like [DeflateRect](#crect__deflaterect), not [SubtractRect](#crect__subtractrect).  
   
 ### Example  
+
 ```cpp
    CRect   rect1(100, 235, 200, 335);
    CPoint   pt(35, 65);
@@ -1232,6 +1264,7 @@ lpRect) const throw();
 
    ASSERT(rect2 == rectResult);   
 ```
+
   
 ##  <a name="crect__operator__amp_"></a>  CRect::operator &amp;  
  Returns a `CRect` that is the intersection of `CRect` and *rect2*.  
@@ -1247,7 +1280,7 @@ rect2) const throw();
   
 ### Parameters  
  *rect2*  
- Contains a [RECT](RECT%20Structure1.md) or `CRect`.  
+ Contains a [RECT](../../mfc/reference/rect-structure1.md) or `CRect`.  
   
 ### Return Value  
  A `CRect` that is the intersection of `CRect` and *rect2*.  
@@ -1259,6 +1292,7 @@ rect2) const throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
+
 ```cpp
    CRect   rect1(100,   0, 200, 300);
    CRect   rect2( 0, 100, 300, 200);
@@ -1269,6 +1303,7 @@ rect2) const throw();
    CRect   rectResult(100, 100, 200, 200);
    ASSERT(rectResult == rect3);   
 ```
+
   
 ##  <a name="crect__operator__or"></a>  CRect::operator &#124;  
  Returns a `CRect` that is the union of `CRect` and *rect2*.  
@@ -1284,7 +1319,7 @@ rect2) const throw();
   
 ### Parameters  
  *rect2*  
- Contains a [RECT](RECT%20Structure1.md) or `CRect`.  
+ Contains a [RECT](../../mfc/reference/rect-structure1.md) or `CRect`.  
   
 ### Return Value  
  A `CRect` that is the union of `CRect` and *rect2*.  
@@ -1296,6 +1331,7 @@ rect2) const throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
+
 ```cpp
    CRect   rect1(100,   0, 200, 300);
    CRect   rect2( 0, 100, 300, 200);
@@ -1306,6 +1342,7 @@ rect2) const throw();
    CRect   rectResult(0, 0, 300, 300);
    ASSERT(rectResult == rect3);   
 ```
+
   
 ##  <a name="crect__ptinrect"></a>  CRect::PtInRect  
  Determines whether the specified point lies within `CRect`.  
@@ -1333,6 +1370,7 @@ point) const throw();
 >  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangle before calling this function.  
   
 ### Example  
+
 ```cpp
    CRect rect(5, 5, 100, 100);
    CPoint pt1(35, 50);
@@ -1391,12 +1429,14 @@ point) const throw();
  Specifies the y-coordinate of the lower-right corner.  
   
 ### Example  
+
 ```cpp
    CRect rect;
    rect.SetRect(256, 256, 512, 512);
 
    ASSERT(rect == CRect(256, 256, 512, 512));   
 ```
+
   
 ##  <a name="crect__setrectempty"></a>  CRect::SetRectEmpty  
  Makes `CRect` a null rectangle by setting all coordinates to zero.  
@@ -1436,6 +1476,7 @@ CSize Size() const throw();
    CSize sz = rect.Size();
    ASSERT(sz.cx == 40 && sz.cy == 40);   
 ```
+>>>>>>> master
   
 ##  <a name="crect__subtractrect"></a>  CRect::SubtractRect  
  Makes the dimensions of the **CRect** equal to the subtraction of `lpRectSrc2` from `lpRectSrc1`.  
@@ -1453,7 +1494,7 @@ CSize Size() const throw();
   
 ### Parameters  
  `lpRectSrc1`  
- Points to the [RECT](RECT%20Structure1.md) structure or `CRect` object from which a rectangle is to be subtracted.  
+ Points to the [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object from which a rectangle is to be subtracted.  
   
  `lpRectSrc2`  
  Points to the `RECT` structure or `CRect` object that is to be subtracted from the rectangle pointed to by the `lpRectSrc1` parameter.  
@@ -1544,7 +1585,7 @@ const CPoint& TopLeft() const throw();
   
 ### Parameters  
  `lpRect1`  
- Points to a [RECT](RECT%20Structure1.md) or `CRect` that contains a source rectangle.  
+ Points to a [RECT](../../mfc/reference/rect-structure1.md) or `CRect` that contains a source rectangle.  
   
  `lpRect2`  
  Points to a `RECT` or `CRect` that contains a source rectangle.  
@@ -1571,6 +1612,7 @@ const CPoint& TopLeft() const throw();
    CRect   rectResult(0, 0, 300, 300);
    ASSERT(rectResult == rect3);   
 ```
+>>>>>>> master
   
 ##  <a name="crect__width"></a>  CRect::Width  
  Calculates the width of `CRect` by subtracting the left value from the right value.  
@@ -1589,6 +1631,7 @@ int Width() const throw();
 >  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangle before calling this function.  
   
 ### Example  
+
 ```cpp
    CRect rect(20, 30, 80, 70);
 
@@ -1597,9 +1640,11 @@ int Width() const throw();
    // nWid is now 60
    ASSERT(nWid == 60);   
 ```
+>>>>>>> master
   
 ## See Also  
  [CPoint Class](cpoint-class.md)   
  [CSize Class](csize-class.md)   
  [RECT](../../mfc/reference/rect-structure1.md)
+
 

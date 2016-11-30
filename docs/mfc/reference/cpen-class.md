@@ -175,7 +175,7 @@ CPen(
  If you use the constructor that takes arguments, then no further initialization is necessary. The constructor with arguments can throw an exception if errors are encountered, while the constructor with no arguments will always succeed.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#99](../../mfc/codesnippet/CPP/cpen-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#99](../../mfc/codesnippet/cpp/cpen-class_1.cpp)]  
   
 ##  <a name="cpen__createpen"></a>  CPen::CreatePen  
  Creates a logical cosmetic or geometric pen with the specified style, width, and brush attributes, and attaches it to the `CPen` object.  
@@ -239,7 +239,7 @@ BOOL CreatePen(
  When an application no longer requires a given pen, it should call the [CGdiObject::DeleteObject](../../mfc/reference/cgdiobject-class.md#cgdiobject__deleteobject) member function or destroy the `CPen` object so the resource is no longer in use. An application should not delete a pen when the pen is selected in a device context.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#100](../../mfc/codesnippet/CPP/cpen-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#100](../../mfc/codesnippet/cpp/cpen-class_2.cpp)]  
   
 ##  <a name="cpen__createpenindirect"></a>  CPen::CreatePenIndirect  
  Initializes a pen that has the style, width, and color given in the structure pointed to by `lpLogPen`.  
@@ -261,7 +261,7 @@ BOOL CreatePenIndirect(LPLOGPEN lpLogPen);
  If a pen has the **PS_INSIDEFRAME** style and a color that does not match a color in the logical color table, the pen is drawn with a dithered color. The **PS_INSIDEFRAME** style is identical to **PS_SOLID** if the pen width is less than or equal to 1.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#101](../../mfc/codesnippet/CPP/cpen-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#101](../../mfc/codesnippet/cpp/cpen-class_3.cpp)]  
   
 ##  <a name="cpen__fromhandle"></a>  CPen::FromHandle  
  Returns a pointer to a `CPen` object given a handle to a Windows GDI pen object.  
@@ -281,7 +281,7 @@ static CPen* PASCAL FromHandle(HPEN hPen);
  If a `CPen` object is not attached to the handle, a temporary `CPen` object is created and attached. This temporary `CPen` object is valid only until the next time the application has idle time in its event loop, at which time all temporary graphic objects are deleted. In other words, the temporary object is only valid during the processing of one window message.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#105](../../mfc/codesnippet/CPP/cpen-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDocView#105](../../mfc/codesnippet/cpp/cpen-class_4.cpp)]  
   
 ##  <a name="cpen__getextlogpen"></a>  CPen::GetExtLogPen  
  Gets an **EXTLOGPEN** underlying structure.  
@@ -313,7 +313,7 @@ int GetExtLogPen(EXTLOGPEN* pLogPen);
 ### Example  
  The following code example demonstrates calling `GetExtLogPen` to retrieve a pen's attributes, and then create a new, cosmetic pen with the same color.  
   
- [!code-cpp[NVC_MFCDocView#102](../../mfc/codesnippet/CPP/cpen-class_5.cpp)]  
+ [!code-cpp[NVC_MFCDocView#102](../../mfc/codesnippet/cpp/cpen-class_5.cpp)]  
   
 ##  <a name="cpen__getlogpen"></a>  CPen::GetLogPen  
  Gets a `LOGPEN` underlying structure.  
@@ -343,7 +343,7 @@ int GetLogPen(LOGPEN* pLogPen);
 ### Example  
  The following code example demonstrates calling `GetLogPen` to retrieve a pen character, and then create a new, solid pen with the same color.  
   
- [!code-cpp[NVC_MFCDocView#103](../../mfc/codesnippet/CPP/cpen-class_6.cpp)]  
+ [!code-cpp[NVC_MFCDocView#103](../../mfc/codesnippet/cpp/cpen-class_6.cpp)]  
   
 ##  <a name="cpen__operator_hpen"></a>  CPen::operator HPEN  
  Gets the attached Windows GDI handle of the `CPen` object.  
@@ -362,7 +362,7 @@ int GetLogPen(LOGPEN* pLogPen);
  For more information about using graphic objects, see the article [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#104](../../mfc/codesnippet/CPP/cpen-class_7.cpp)]  
+ [!code-cpp[NVC_MFCDocView#104](../../mfc/codesnippet/cpp/cpen-class_7.cpp)]  
   
 ## See Also  
  [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)   

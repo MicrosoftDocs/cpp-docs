@@ -301,3 +301,4 @@ T const& value();
  [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
  [overwrite_buffer Class](../../../parallel/concrt/reference/overwrite-buffer-class.md)   
  [unbounded_buffer Class](unbounded-buffer-class.md)
+

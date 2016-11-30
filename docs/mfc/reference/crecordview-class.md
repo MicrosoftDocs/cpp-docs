@@ -132,7 +132,7 @@ explicit CRecordView(UINT nIDTemplate);
 >  If you use ClassWizard, the wizard defines an `enum` value `CRecordView::IDD`, specifies it in the class declaration, and uses it in the member initialization list for the constructor.  
   
 ### Example  
- [!code-cpp[NVC_MFCDatabase#32](../../mfc/codesnippet/CPP/crecordview-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#32](../../mfc/codesnippet/cpp/crecordview-class_1.cpp)]  
   
 ##  <a name="crecordview__isonfirstrecord"></a>  CRecordView::IsOnFirstRecord  
  Call this member function to determine whether the current record is the first record in the recordset object associated with this record view.  

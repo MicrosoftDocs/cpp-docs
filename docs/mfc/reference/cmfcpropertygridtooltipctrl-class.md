@@ -83,7 +83,7 @@ class CMFCPropertyGridToolTipCtrl : public CWnd
 ## Example  
  The following example demonstrates how to construct an object of the `CMFCPropertyGridToolTipCtrl` class, and how to display the tooltip control.  
   
- [!code-cpp[NVC_MFC_RibbonApp#23](../../mfc/reference/codesnippet/CPP/cmfcpropertygridtooltipctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#23](../../mfc/reference/codesnippet/cpp/cmfcpropertygridtooltipctrl-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

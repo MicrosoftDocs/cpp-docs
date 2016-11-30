@@ -171,16 +171,12 @@ private:
   
 -   [Inline Class Member Functions](../cpp/inline-functions-cpp.md)  
   
--   [Inline Functions versus Macros](../misc/inline-functions-versus-macros.md)  
-  
--   [When to Use Inline Functions](../misc/when-to-use-inline-functions.md)  
-  
 -   [Defining Inline C++ Functions with dllexport and dllimport](../cpp/defining-inline-cpp-functions-with-dllexport-and-dllimport.md)  
   
 ## When to use inline functions  
  Inline functions are best used for small functions such as accessing private data members. The main purpose of these one- or two-line "accessor" functions is to return state information about objects; short functions are sensitive to the overhead of function calls. Longer functions spend proportionately less time in the calling/returning sequence and benefit less from inlining.  
   
- The `Point` class, introduced in [Function-Call Results](../misc/function-call-results.md) can be optimized as follows:  
+ A `Point` class can be defined as follows:  
   
 ```  
 // when_to_use_inline_functions.cpp  

@@ -54,11 +54,11 @@ When you initially create the progress control ([CProgressCtrl::Create](../mfc/r
   
  Without `PBS_SMOOTH` style:  
   
- ![Standard progress bar style](../mfc/media/vc4ruw1.gif "vc4RUW1")  
+ ![Standard progress bar style](../mfc/media/vc4ruw1.gif "vc4ruw1")  
   
  With `PBS_SMOOTH` and `PBS_VERTICAL` styles:  
   
- ![Progress bar style, smooth and vertical](../mfc/media/vc4ruw2.gif "vc4RUW2")  
+ ![Progress bar style, smooth and vertical](../mfc/media/vc4ruw2.gif "vc4ruw2")  
   
  For more information, see [Window Styles](../mfc/reference/frame-window-styles-mfc.md) in the *MFC Reference*.  
   

@@ -297,7 +297,7 @@ char *pszPath = szPath; // Equals &szPath[0].
 ## Reference conversions  
  A reference to a class can be converted to a reference to a base class in the following cases:  
   
--   The specified base class is accessible (as defined in [Pointers to Classes](../misc/pointers-to-classes.md)).  
+-   The specified base class is accessible.  
   
 -   The conversion is unambiguous. (See [Multiple Base Classes](../cpp/multiple-base-classes.md) for more information about ambiguous base-class references.)  
   

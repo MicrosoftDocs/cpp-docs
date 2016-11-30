@@ -41,33 +41,31 @@ A constructor is a kind of member function that initializes an instance of its c
   
 -   [Order of Construction](#order_of_construction)  
   
--   [Member Lists](../cpp/constructors-cpp.md#member_lists)  
+-   [Member Lists](#member_lists)  
   
--   [Explicit Constructors](../cpp/constructors-cpp.md#explicit_constructors)  
+-   [Explicit Constructors](#explicit_constructors)  
   
--   [Default Constructors](../cpp/constructors-cpp.md#default_constructors)  
+-   [Default Constructors](#default_constructors)  
   
--   [Copy and Move Constructors](../cpp/constructors-cpp.md#copy_and_move_constructors)  
+-   [Copy and Move Constructors](#copy_and_move_constructors)  
   
--   [Explicitly Defaulted and Deleted Constructors](../cpp/constructors-cpp.md#explicitly_defaulted_and_deleted_constructors)  
+-   [Explicitly Defaulted and Deleted Constructors](#explicitly_defaulted_and_deleted_constructors)  
   
--   [Constructors in Derived Classes](../cpp/constructors-cpp.md#constructors_in_derived_classes)  
+-   [Constructors in Derived Classes](#constructors_in_derived_classes)  
   
--   [Constructors for Classes That Have Multiple Inheritance](../cpp/constructors-cpp.md#constructors_for_classes_that_have_multiple_inheritance)  
+-   [Virtual Functions in Constructors](#virtual_functions_in_constructors)  
   
--   [Virtual Functions in Constructors](../cpp/constructors-cpp.md#virtual_functions_in_constructors)  
+-   [Constructors and Composite Classes](#constructors_in_composite_classes)  
   
--   [Constructors and Composite Classes](../cpp/constructors-cpp.md#constructors_in_composite_classes)  
+-   [Delegating Constructors](#delegating_constructors)  
   
--   [Delegating Constructors](../cpp/constructors-cpp.md#delegating_constructors)  
+-   [Inheriting constructors (C++11)](#inheriting_constructors)  
   
--   [Inheriting constructors (C++11)](../cpp/constructors-cpp.md#inheriting_constructors)  
-  
--   [Rules for Declaring Constructors](../cpp/constructors-cpp.md#rules_for_declaring_constructors)  
+-   [Rules for Declaring Constructors](#rules_for_declaring_constructors)  
   
 -   Default and Copy Constructors  
   
--   [Explicitly invoking constructors](../cpp/constructors-cpp.md#explicitly_invoking_constructors)  
+-   [Explicitly invoking constructors](#explicitly_invoking_constructors)  
   
 ##  <a name="order_of_construction"></a> Order of Construction  
  A constructor performs its work in this order:  
@@ -604,7 +602,7 @@ class Derived : T {
  A deriving class cannot inherit from multiple base classes if those base classes have constructors that have an identical signature.  
   
 ##  <a name="rules_for_declaring_constructors"></a> Rules for Declaring Constructors  
- A constructor has the same name as its class. Any number of constructors can be declared, subject to the rules of overloaded functions. (For more information, see [Overloading](../misc/overloading-cpp.md).)  
+ A constructor has the same name as its class. Any number of constructors can be declared, subject to the rules of overloaded functions.  
   
  The `argument-declaration-list` may be empty.  
   
@@ -631,7 +629,7 @@ class Derived : T {
   
  The stdcall calling convention is used on static member functions and global functions declared with the **__stdcall** keyword, and that do not use a variable argument list. When you use the **__stdcall** keyword on a non-static member function, such as a constructor, the compiler will use the thiscall calling convention."  
   
- Constructors of base classes are not inherited by derived classes. When an object of derived class type is created, it is constructed starting with the base class components; then it moves to the derived class components. The compiler uses each base class's constructor as that part of the complete object is initialized (except in cases of virtual derivation, as described in [Initializing Base Classes](../misc/initializing-base-classes.md)).  
+ Constructors of base classes are not inherited by derived classes. When an object of derived class type is created, it is constructed starting with the base class components; then it moves to the derived class components. The compiler uses each base class's constructor as that part of the complete object is initialized (except in cases of virtual derivation.  
   
 ##  <a name="explicitly_invoking_constructors"></a> Explicitly invoking constructors  
  Constructors can be explicitly called in a program to create objects of a given type. For example, to create two `Point` objects that describe the ends of a line, the following code can be written:  
@@ -711,5 +709,3 @@ int main()
   
  `Base::Base` calls the function `f`, which is a virtual function. Ordinarily, `Derived::f` would be called because the object `d` is of type `Derived`. Because the `Base::Base` function is a constructor, the object is not yet of the `Derived` type, and `Base::f` is called.  
   
-## See Also  
- [Special Member Functions](../misc/special-member-functions-cpp.md)

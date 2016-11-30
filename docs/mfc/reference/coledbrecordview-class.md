@@ -130,7 +130,7 @@ virtual CRowset<>* OnGetRowset(Â) = 0;
 >  Previous to MFC 7.0, `OnGetRowset` returned a pointer to `CRowset`. If you have code that calls `OnGetRowset`, you need to change the return type to the templatized class **CRowset<>**.  
   
 ### Example  
- [!code-cpp[NVC_MFCDatabase#38](../../mfc/codesnippet/CPP/coledbrecordview-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#38](../../mfc/codesnippet/cpp/coledbrecordview-class_1.cpp)]  
   
  For more information and examples, see the article [Record Views: Using a Record View](../../data/using-a-record-view-mfc-data-access.md).  
   

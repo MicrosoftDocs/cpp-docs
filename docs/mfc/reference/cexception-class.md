@@ -92,16 +92,16 @@ class AFX_NOVTABLE CException : public CObject
 |[CDaoException](../../mfc/reference/cdaoexception-class.md)|Data access object exception (that is, exception conditions arising for DAO classes)|  
 |[CInternetException](../../mfc/reference/cinternetexception-class.md)|Internet exception (that is, exception conditions arising for Internet classes).|  
   
- These exceptions are intended to be used with the [THROW](http://msdn.microsoft.com/Library/794b8de1-bf90-4877-b96a-bc7b17b1e460), [THROW_LAST](../Topic/Exception%20Processing.md#not_found.md#throw_last, [try](../topic/not_found.md#try, [catch](../topic/not_found.md#catch, [and_catch](../topic/not_found.md#and_catch, and [end_catch](../topic/not_found.md#end_catch macros. for more information on exceptions, see [exception processing]--brokenlink--(../topic/exception_processing), or see the article [Exception Handling (MFC)](../Topic/Exception%20Handling%20in%20MFC.md).  
+ These exceptions are intended to be used with the [THROW](exception-processing.md#throw), [THROW_LAST](exception-processing.md#throw_last), [try](exception-processing.md#try), [catch](exception-processing.md#catch), [and_catch](exception-processing.md#and_catch), and [end_catch](exception-processing.md#end_catch) macros. For more information on exceptions, see [Exception Processing](exception-processing.md), or see the article [Exception Handling (MFC)](../exception-handling-in-mfc.md).  
   
- To catch a specific exception, use the appropriate derived class. To catch all types of exceptions, use `CException`, and then use [CObject::IsKindOf](../Topic/CObject%20Class.md#cobject__iskindof) to differentiate among `CException`-derived classes. Note that `CObject::IsKindOf` works only for classes declared with the [IMPLEMENT_DYNAMIC](../Topic/IMPLEMENT_DYNAMIC.md) macro, in order to take advantage of dynamic type checking. Any `CException`-derived class that you create should use the `IMPLEMENT_DYNAMIC` macro, too.  
+ To catch a specific exception, use the appropriate derived class. To catch all types of exceptions, use `CException`, and then use [CObject::IsKindOf](cobject-class.md#cobject__iskindof) to differentiate among `CException`-derived classes. Note that `CObject::IsKindOf` works only for classes declared with the [IMPLEMENT_DYNAMIC](run-time-object-model-services.md#implement_dynamic) macro, in order to take advantage of dynamic type checking. Any `CException`-derived class that you create should use the `IMPLEMENT_DYNAMIC` macro, too.  
   
- You can report details about exceptions to the user by calling [GetErrorMessage](../Topic/CFileException%20Class.md#cfileexception__geterrormessage) or [ReportError](#cexception__reporterror), two member functions that work with any of `CException`'s derived classes.  
+ You can report details about exceptions to the user by calling [GetErrorMessage](cfileexception-class.md#cfileexception__geterrormessage) or [ReportError](#cexception__reporterror), two member functions that work with any of `CException`'s derived classes.  
   
- If an exception is caught by one of the macros, the `CException` object is deleted automatically; do not delete it yourself. If an exception is caught by using a **catch** keyword, it is not automatically deleted. See the article [Exception Handling (MFC)](../Topic/Exception%20Handling%20in%20MFC.md) for more information about when to delete an exeption object.  
+ If an exception is caught by one of the macros, the `CException` object is deleted automatically; do not delete it yourself. If an exception is caught by using a **catch** keyword, it is not automatically deleted. See the article [Exception Handling (MFC)](../exception-handling-in-mfc.md) for more information about when to delete an exeption object.  
   
 ## Inheritance Hierarchy  
- [CObject](../Topic/CObject%20Class.md)  
+ [CObject](cobject-class.md)  
   
  `CException`  
   
@@ -120,7 +120,7 @@ explicit CException(BOOL bAutoDelete);
  Specify **TRUE** if the memory for the `CException` object has been allocated on the heap. This will cause the `CException` object to be deleted when the **Delete** member function is called to delete the exception. Specify **FALSE** if the `CException` object is on the stack or is a global object. In this case, the `CException` object will not be deleted when the **Delete** member function is called.  
   
 ### Remarks  
- You would normally never need to call this constructor directly. A function that throws an exception should create an instance of a `CException`-derived class and call its constructor, or it should use one of the MFC throw functions, such as [AfxThrowFileException]--brokenlink--(../Topic/not%20found.md#afxthrowfileexception), to throw a predefined type. This documentation is provided only for completeness.  
+ You would normally never need to call this constructor directly. A function that throws an exception should create an instance of a `CException`-derived class and call its constructor, or it should use one of the MFC throw functions, such as [AfxThrowFileException](exception-processing.md#afxthrowfileexception), to throw a predefined type. This documentation is provided only for completeness.  
   
 ##  <a name="cexception__delete"></a>  CException::Delete  
  This function checks to see if the **CException** object was created on the heap, and if so, it calls the **delete** operator on the object.  
@@ -197,16 +197,16 @@ virtual int ReportError(
   
 ### Parameters  
  `nType`  
- Specifies the style of the message box. Apply any combination of the [message-box styles](../Topic/Message-Box%20Styles.md) to the box. If you don't specify this parameter, the default is **MB_OK**.  
+ Specifies the style of the message box. Apply any combination of the [message-box styles](message-box-styles.md) to the box. If you don't specify this parameter, the default is **MB_OK**.  
   
  *nMessageID*  
  Specifies the resource ID (string table entry) of a message to display if the exception object does not have an error message. If 0, the message "No error message is available" is displayed.  
   
 ### Return Value  
- An `AfxMessageBox` value; otherwise 0 if there is not enough memory to display the message box. See [AfxMessageBox]--brokenlink--(../Topic/not%20found.md#afxmessagebox) for the possible return values.  
+ An `AfxMessageBox` value; otherwise 0 if there is not enough memory to display the message box. See [AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox) for the possible return values.  
   
 ### Example  
- Here is an example of the use of `CException::ReportError`. For another example, see the example for [CATCH]--brokenlink--(../Topic/not%20found.md#catch).  
+ Here is an example of the use of `CException::ReportError`. For another example, see the example for [CATCH]--brokenlink--(exception-processing.md#catch).  
   
 ```cpp
 CFile fileInput;
@@ -241,9 +241,9 @@ else
 ```
 
 ## See Also  
- [CObject Class](../Topic/CObject%20Class.md)   
- [Hierarchy Chart](../Topic/Hierarchy%20Chart.md)   
- [Exception Processing](../Topic/Exception%20Processing.md)   
- [How Do I: Create my Own Custom Exception Classes](http://go.microsoft.com/fwlink/LinkId=128045)
+ [CObject Class](cobject-class.md)   
+ [Hierarchy Chart](../hierarchy-chart.md)   
+ [Exception Processing](exception-processing.md)   
+ [How Do I: Create my Own Custom Exception Classes](http://go.microsoft.com/fwlink/linkid=128045)
 
 

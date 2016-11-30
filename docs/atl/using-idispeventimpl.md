@@ -39,9 +39,9 @@ When using `IDispEventImpl` to handle events, you will need to:
   
 -   Derive your class from [IDispEventImpl](../atl/reference/idispeventimpl-class.md).  
   
--   Add an [event sink map](http://msdn.microsoft.com/Library/32542b3d-ac43-4139-8ac4-41c48481744f) to your class.  
+-   Add an [event sink map](http://msdn.microsoft.com/library/32542b3d-ac43-4139-8ac4-41c48481744f) to your class.  
   
--   Add entries to the event sink map using the [SINK_ENTRY](http://msdn.microsoft.com/Library/33a5fff6-5248-47c0-8cf4-8bdf760e86e5) or [SINK_ENTRY_EX](http://msdn.microsoft.com/Library/e1d14342-838f-4791-ac2f-5dae2801c1ac) macro.  
+-   Add entries to the event sink map using the [SINK_ENTRY](http://msdn.microsoft.com/library/33a5fff6-5248-47c0-8cf4-8bdf760e86e5) or [SINK_ENTRY_EX](http://msdn.microsoft.com/library/e1d14342-838f-4791-ac2f-5dae2801c1ac) macro.  
   
 -   Implement the methods that you're interested in handling.  
   
@@ -82,11 +82,11 @@ When using `IDispEventImpl` to handle events, you will need to:
   
  The example uses `#import` to generate the required header files from Word's type library. If you want to use this example with other versions of Word, you must specify the correct mso dll file. For example, Office 2000 provides mso9.dll and OfficeXP provides mso.dll. This code is simplified from stdafx.h:  
   
- [!code-cpp[NVC_ATL_EventHandlingSample#1](../atl/codesnippet/CPP/using-idispeventimpl_1.h)]  
+ [!code-cpp[NVC_ATL_EventHandlingSample#1](../atl/codesnippet/cpp/using-idispeventimpl_1.h)]  
   
  The following code appears in NotSoSimple.h. The relevant code is noted by comments:  
   
- [!code-cpp[NVC_ATL_EventHandlingSample#2](../atl/codesnippet/CPP/using-idispeventimpl_2.h)]  
+ [!code-cpp[NVC_ATL_EventHandlingSample#2](../atl/codesnippet/cpp/using-idispeventimpl_2.h)]  
   
 ## See Also  
  [Event Handling](../atl/event-handling-and-atl.md)   

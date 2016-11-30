@@ -77,7 +77,7 @@ class CMFCDisableMenuAnimation
 ## Example  
  The following example shows how to use the stack to temporarily disable menu animation.  
   
- [!code-cpp[NVC_MFC_Misc#1](../../mfc/reference/codesnippet/CPP/cmfcdisablemenuanimation-class_1.h)]  
+ [!code-cpp[NVC_MFC_Misc#1](../../mfc/reference/codesnippet/cpp/cmfcdisablemenuanimation-class_1.h)]  
   
 ## Inheritance Hierarchy  
  [CMFCDisableMenuAnimation](../../mfc/reference/cmfcdisablemenuanimation-class.md)  

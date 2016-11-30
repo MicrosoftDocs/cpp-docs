@@ -235,7 +235,7 @@ static CString GetKeyName(
  The key name that this function returns comes from the keyboard driver, so you can install a non-localized keyboard driver in a localized version of Windows, and vice versa.  
   
 ### Example  
- [!code-cpp[NVC_MFCControlLadenDialog#69](../../mfc/codesnippet/CPP/chotkeyctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#69](../../mfc/codesnippet/cpp/chotkeyctrl-class_1.cpp)]  
   
 ##  <a name="chotkeyctrl__sethotkey"></a>  CHotKeyCtrl::SetHotKey  
  Sets the keyboard shortcut for a hot key control.  

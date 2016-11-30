@@ -154,7 +154,7 @@ COleCurrency(
 ### Example  
  The following examples show the effects of the zero-parameter and two-parameter constructors:  
   
- [!code-cpp[NVC_MFCOleContainer#10](../../mfc/codesnippet/CPP/colecurrency-class_1.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#10](../../mfc/codesnippet/cpp/colecurrency-class_1.cpp)]  
   
 ##  <a name="colecurrency__format"></a>  COleCurrency::Format  
  Call this member function to create a formatted representation of the currency value.  
@@ -182,7 +182,7 @@ CString Format(Â    DWORD  dwFlags = 0,Â    LCID  lcid = LANG_USER_DEFAULT Â)
  It formats the value using the local language specifications (locale IDs). A currency symbol is not included in the value returned. If the status of this **COleCurrency** object is null, the return value is an empty string. If the status is invalid, the return string is specified by the string resource **IDS_INVALID_CURRENCY**.  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#11](../../mfc/codesnippet/CPP/colecurrency-class_2.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#11](../../mfc/codesnippet/cpp/colecurrency-class_2.cpp)]  
   
 ##  <a name="colecurrency__getstatus"></a>  COleCurrency::GetStatus  
  Call this member function to get the status (validity) of a given **COleCurrency** object.  
@@ -242,7 +242,7 @@ CurrencyStatus GetStatus() const;
 - [operator *= and /=](#colecurrency__operator_star_eq)  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#12](../../mfc/codesnippet/CPP/colecurrency-class_3.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#12](../../mfc/codesnippet/cpp/colecurrency-class_3.cpp)]  
   
 ##  <a name="colecurrency__m_cur"></a>  COleCurrency::m_cur  
  The underlying [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) structure for this **COleCurrency** object.  
@@ -326,7 +326,7 @@ const COleCurrency& operator=(const VARIANT& varSrc);
  For more information, see the [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) and [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) entries in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#15](../../mfc/codesnippet/CPP/colecurrency-class_4.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#15](../../mfc/codesnippet/cpp/colecurrency-class_4.cpp)]  
   
 ##  <a name="colecurrency__operator__add"></a>  COleCurrency::operator +, -  
  These operators allow you to add and subtract two **COleCurrency** values to and from each other and to change the sign of a **COleCurrency** value.  
@@ -355,7 +355,7 @@ COleCurrency operator-() const;
  For more information on the valid, invalid, and null status values, see the [m_status](#colecurrency__m_status) member variable.  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#16](../../mfc/codesnippet/CPP/colecurrency-class_5.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#16](../../mfc/codesnippet/cpp/colecurrency-class_5.cpp)]  
   
 ##  <a name="colecurrency__operator__add_eq_eq"></a>  COleCurrency::operator +=, -=  
  Allow you to add and subtract a **COleCurrency** value to and from this **COleCurrency** object.  
@@ -377,7 +377,7 @@ const COleCurrency& operator-=(const COleCurrency& cur);
  For more information on the valid, invalid, and null status values, see the [m_status](#colecurrency__m_status) member variable.  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#17](../../mfc/codesnippet/CPP/colecurrency-class_6.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#17](../../mfc/codesnippet/cpp/colecurrency-class_6.cpp)]  
   
 ##  <a name="colecurrency__operator_star"></a>  COleCurrency::operator * and /  
  Allow you to scale a **COleCurrency** value by an integral value.  
@@ -402,7 +402,7 @@ COleCurrency operator/(long nOperand) const;
  For more information on the valid, invalid, and null status values, see the [m_status](#colecurrency__m_status) member variable.  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#18](../../mfc/codesnippet/CPP/colecurrency-class_7.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#18](../../mfc/codesnippet/cpp/colecurrency-class_7.cpp)]  
   
 ##  <a name="colecurrency__operator_star__eq__eq"></a>  COleCurrency::operator *=, /=  
  Allow you to scale this **COleCurrency** value by an integral value.  
@@ -424,7 +424,7 @@ const COleCurrency& operator/=(long nOperand);
  For more information on the valid, invalid, and null status values, see the [m_status](#colecurrency__m_status) member variable.  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#19](../../mfc/codesnippet/CPP/colecurrency-class_8.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#19](../../mfc/codesnippet/cpp/colecurrency-class_8.cpp)]  
   
 ##  <a name="colecurrency__operator__lt__lt_and__gt__gt_"></a>  COleCurrency::operator &lt;&lt;, &gt;&gt;  
  Supports diagnostic dumping and storing to an archive.  
@@ -503,7 +503,7 @@ throw(
  If the string conversion failed due to memory allocation errors, this function throws a [CMemoryException](../../mfc/reference/cmemoryexception-class.md). In any other error state, this function throws a [COleException](../../mfc/reference/coleexception-class.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#13](../../mfc/codesnippet/CPP/colecurrency-class_9.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#13](../../mfc/codesnippet/cpp/colecurrency-class_9.cpp)]  
   
 ##  <a name="colecurrency_relational_operators"></a>  COleCurrency Relational Operators  
  Compare two currency values and return nonzero if the condition is true; otherwise 0.  
@@ -540,7 +540,7 @@ BOOL operator>=(const COleCurrency& cur) const;
 >  The return value of the ordering operations ( **<**, **\<=**, **>**, **>=**) is undefined if the status of either operand is null or invalid. The equality operators ( `==`, `!=`) consider the status of the operands.  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#20](../../mfc/codesnippet/CPP/colecurrency-class_10.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#20](../../mfc/codesnippet/cpp/colecurrency-class_10.cpp)]  
   
 ##  <a name="colecurrency__setcurrency"></a>  COleCurrency::SetCurrency  
  Call this member function to set the units and fractional part of this **COleCurrency** object.  
@@ -561,7 +561,7 @@ void SetCurrency(
  Note that the units and fractional part are specified by signed long values. The fourth of the following examples shows what happens when the parameters have different signs.  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#14](../../mfc/codesnippet/CPP/colecurrency-class_11.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#14](../../mfc/codesnippet/cpp/colecurrency-class_11.cpp)]  
   
 ##  <a name="colecurrency__setstatus"></a>  COleCurrency::SetStatus  
  Call this member function to set the status (validity) of this **COleCurrency** object.  

@@ -1,3 +1,3 @@
 ---
-redirect_url: /cpp/top/visual-cpp-in-visual-studio
+redirect_url: /cpp/visual-cpp-in-visual-studio
 ---

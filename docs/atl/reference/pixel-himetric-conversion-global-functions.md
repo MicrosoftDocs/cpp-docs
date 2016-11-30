@@ -58,7 +58,7 @@ extern void           AtlHiMetricToPixel(
  [out] Pointer to where the object's size in pixels is to be returned.  
   
 ### Example  
- [!code-cpp[NVC_ATL_COM#49](../../atl/codesnippet/CPP/pixel-himetric-conversion-global-functions_1.cpp)]  
+ [!code-cpp[NVC_ATL_COM#49](../../atl/codesnippet/cpp/pixel-himetric-conversion-global-functions_1.cpp)]  
   
 ##  <a name="atlpixeltohimetric"></a>  AtlPixelToHiMetric  
  Converts an object's size in pixels on the screen device to a size in HIMETRIC units (each unit is 0.01 millimeter).  
@@ -76,7 +76,7 @@ extern void           AtlPixelToHiMetric(
  [out] Pointer to where the object's size in HIMETRIC units is to be returned.  
   
 ### Example  
- [!code-cpp[NVC_ATL_COM#51](../../atl/codesnippet/CPP/pixel-himetric-conversion-global-functions_2.cpp)]  
+ [!code-cpp[NVC_ATL_COM#51](../../atl/codesnippet/cpp/pixel-himetric-conversion-global-functions_2.cpp)]  
   
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)

@@ -96,7 +96,7 @@ Note the following restrictions on the use of **/clr**:
   
 -   When using the va_arg macro, you may get unexpected results when compiling with **/clr:pure**.  For more information, see [va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md).  
   
--   If your application passes an argument of type [va_list](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) to a function declared to take a [variable number of arguments](../../misc/variable-argument-lists.md), and your application is compiled with **/clr:pure**, the CLR throws <xref:System.NotSupportedException>. If **/clr**  is used instead, the affected functions are compiled to native code and execute properly. If **/clr:safe** is used, an error diagnostic is emitted.  
+-   If your application passes an argument of type [va_list](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) to a function declared to take a variable number of arguments, and your application is compiled with **/clr:pure**, the CLR throws <xref:System.NotSupportedException>. If **/clr**  is used instead, the affected functions are compiled to native code and execute properly. If **/clr:safe** is used, an error diagnostic is emitted.  
   
 -   You should not call, from managed code, any functions that walk the stack to get parameter information (function arguments); the P/Invoke layer causes that information to be further down the stack.  For example, do not compile proxy/stub with **/clr**.  
   

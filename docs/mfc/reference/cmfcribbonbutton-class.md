@@ -117,7 +117,7 @@ class CMFCRibbonButton : public CMFCRibbonBaseElement
 ## Example  
  The following example demonstrates how to use the various methods in the `CMFCRibbonButton` class. The example shows how to construct an object of the `CMFCRibbonButton` class, assign a pop-up menu to the ribbon button, set the description of the button, remove a menu item from the pop-up menu, and right align the pop-up menu to the edge of the button.  
   
- [!code-cpp[NVC_MFC_RibbonApp#7](../../mfc/reference/codesnippet/CPP/cmfcribbonbutton-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#7](../../mfc/reference/codesnippet/cpp/cmfcribbonbutton-class_1.cpp)]  
   
 ## Remarks  
  To use a ribbon button in an application, construct the button object and add it to the appropriate ribbon [panel](../../mfc/reference/cmfcribbonpanel-class.md).  
@@ -247,7 +247,7 @@ CMFCRibbonButton(
 ### Example  
  The following example demonstrates how to construct a `CMFCRibbonButton` object.  
   
- [!code-cpp[NVC_MFC_RibbonApp#6](../../mfc/reference/codesnippet/CPP/cmfcribbonbutton-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#6](../../mfc/reference/codesnippet/cpp/cmfcribbonbutton-class_2.cpp)]  
   
 ##  <a name="cmfcribbonbutton__drawbottomtext"></a>  CMFCRibbonButton::DrawBottomText  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  

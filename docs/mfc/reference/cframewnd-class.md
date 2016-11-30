@@ -196,7 +196,7 @@ virtual void ActivateFrame(int nCmdShow = -1);
  Override this member function to change how a frame is activated. For example, you can force MDI child windows to be maximized. Add the appropriate functionality, then call the base class version with an explicit `nCmdShow`.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#1](../../mfc/reference/codesnippet/CPP/cframewnd-class_1.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#1](../../mfc/reference/codesnippet/cpp/cframewnd-class_1.cpp)]  
   
 ##  <a name="cframewnd__beginmodalstate"></a>  CFrameWnd::BeginModalState  
  Call this member function to make a frame window modal.  
@@ -428,7 +428,7 @@ CView* GetActiveView() const;
 ### Remarks  
  This function returns **NULL** when called for an MDI main frame window ( `CMDIFrameWnd`). In an MDI application, the MDI main frame window does not have a view associated with it. Instead, each individual child window ( `CMDIChildWnd`) has one or more associated views. The active view in an MDI application can be obtained by first finding the active MDI child window and then finding the active view for that child window. The active MDI child window can be found by calling the function `MDIGetActive` or **GetActiveFrame** as demonstrated in the following:  
   
- [!code-cpp[NVC_MFCWindowing#2](../../mfc/reference/codesnippet/CPP/cframewnd-class_2.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#2](../../mfc/reference/codesnippet/cpp/cframewnd-class_2.cpp)]  
   
 ##  <a name="cframewnd__getcontrolbar"></a>  CFrameWnd::GetControlBar  
  Call `GetControlBar` to gain access to the control bar that is associated with the ID.  
@@ -677,7 +677,7 @@ BOOL m_bAutoMenuEnable;
  This data member simplifies the implementation of optional commands based on the current selection and reduces the need to write `ON_UPDATE_COMMAND_UI` handlers for enabling and disabling menu items.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#3](../../mfc/reference/codesnippet/CPP/cframewnd-class_3.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#3](../../mfc/reference/codesnippet/cpp/cframewnd-class_3.cpp)]  
   
 ##  <a name="cframewnd__negotiateborderspace"></a>  CFrameWnd::NegotiateBorderSpace  
  Call this member function to negotiate border space in a frame window during OLE inplace activation.  
@@ -731,7 +731,7 @@ afx_msg void OnContextHelp();
 ### Remarks  
  To enable context-sensitive help, you must add an  
   
- [!code-cpp[NVC_MFCDocViewSDI#16](../../mfc/codesnippet/CPP/cframewnd-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDocViewSDI#16](../../mfc/codesnippet/cpp/cframewnd-class_4.cpp)]  
   
  statement to your `CFrameWnd` class message map and also add an accelerator-table entry, typically SHIFT+F1, to enable this member function.  
   

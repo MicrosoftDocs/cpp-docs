@@ -158,7 +158,7 @@ BOOL Lookup(
  This operator can be used only on the left side of an assignment statement (an l-value).  
   
 ```  
-VALUE& operator[ ](BASE_CLASS ::BASE_ARG_KEY key);
+VALUE& operator[ ](base_class ::base_arg_key key);
 ```  
   
 ### Parameters  

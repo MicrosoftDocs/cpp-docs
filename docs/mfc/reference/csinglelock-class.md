@@ -97,7 +97,7 @@ explicit CSingleLock(
  This function is generally called from within an access member function of the controlled resource.  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#19](../../mfc/codesnippet/CPP/csinglelock-class_1.h)]  
+ [!code-cpp[NVC_MFC_Utilities#19](../../mfc/codesnippet/cpp/csinglelock-class_1.h)]  
   
 ##  <a name="csinglelock__islocked"></a>  CSingleLock::IsLocked  
  Determines if the object associated with the `CSingleLock` object is nonsignaled (unavailable).  
@@ -110,7 +110,7 @@ BOOL IsLocked();
  Nonzero if the object is locked; otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#20](../../mfc/codesnippet/CPP/csinglelock-class_2.h)]  
+ [!code-cpp[NVC_MFC_Utilities#20](../../mfc/codesnippet/cpp/csinglelock-class_2.h)]  
   
 ##  <a name="csinglelock__lock"></a>  CSingleLock::Lock  
  Call this function to gain access to the resource controlled by the synchronization object supplied to the `CSingleLock` constructor.  
@@ -130,7 +130,7 @@ BOOL Lock(DWORD dwTimeOut = INFINITE);
  If the synchronization object is signaled, `Lock` will return successfully and the thread now owns the object. If the synchronization object is nonsignaled (unavailable), `Lock` will wait for the synchronization object to become signaled up to the number of milliseconds specified in the *dwTimeOut* parameter. If the synchronization object did not become signaled in the specified amount of time, `Lock` returns failure.  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#21](../../mfc/codesnippet/CPP/csinglelock-class_3.h)]  
+ [!code-cpp[NVC_MFC_Utilities#21](../../mfc/codesnippet/cpp/csinglelock-class_3.h)]  
   
 ##  <a name="csinglelock__unlock"></a>  CSingleLock::Unlock  
  Releases the synchronization object owned by `CSingleLock`.  
@@ -160,7 +160,7 @@ BOOL Unlock(
  If you need to release more than one access count of a semaphore, use the second form of `Unlock` and specify the number of accesses to release.  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#21](../../mfc/codesnippet/CPP/csinglelock-class_3.h)]  
+ [!code-cpp[NVC_MFC_Utilities#21](../../mfc/codesnippet/cpp/csinglelock-class_3.h)]  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

@@ -61,7 +61,7 @@ For .NET Programming, Visual C++ supports the creation of three distinct types o
   
 -   [Using Verifiable Assemblies with SQL Server (C++/CLI)](../dotnet/using-verifiable-assemblies-with-sql-server-cpp-cli.md)  
   
--   [Security Best Practices](../top/security-best-practices-for-cpp.md)  
+-   [Security Best Practices](../security-best-practices-for-cpp.md)  
   
 -   [Converting Projects from Mixed Mode to Pure Intermediate Language](../dotnet/converting-projects-from-mixed-mode-to-pure-intermediate-language.md)  
   

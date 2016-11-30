@@ -63,6 +63,7 @@ num
  If you have only one accessor in the user record, use the macro [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md).  
   
 ## Example  
+
  ```cpp
 class CArtistsAccessor
 {
@@ -105,6 +106,7 @@ END_ACCESSOR_MAP()
       FROM Artists")
 };
  ```
+
   
 ## Requirements  
  **Header:** atldbcli.h  

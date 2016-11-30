@@ -58,7 +58,7 @@ WM_FORWARDMSG
 ### Example  
  In the following example, `m_hWndOther` represents the other window that receives this message.  
   
- [!code-cpp[NVC_ATL_Windowing#137](../../atl/codesnippet/CPP/windows-messages-macros_1.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#137](../../atl/codesnippet/cpp/windows-messages-macros_1.cpp)]  
   
 ## See Also  
  [Macros](../../atl/reference/atl-macros.md)

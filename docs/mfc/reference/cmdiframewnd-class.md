@@ -75,7 +75,7 @@ class CMDIFrameWnd : public CFrameWnd
   
  You can construct an MDI frame window by calling the [Create](../../mfc/reference/cframewnd-class.md#cframewnd__create) or [LoadFrame](../../mfc/reference/cframewnd-class.md#cframewnd__loadframe) member function of `CFrameWnd`.  
   
- Before you call **Create** or `LoadFrame`, you must construct the frame window object on the heap using the C++ **new** operator. Before calling **Create** you can also register a window class with the [AfxRegisterWndClass]--brokenlink--(../Topic/not%20found.md#afxregisterwndclass) global function to set the icon and class styles for the frame.  
+ Before you call **Create** or `LoadFrame`, you must construct the frame window object on the heap using the C++ **new** operator. Before calling **Create** you can also register a window class with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function to set the icon and class styles for the frame.  
   
  Use the **Create** member function to pass the frame's creation parameters as immediate arguments.  
   
@@ -132,7 +132,7 @@ CMDIFrameWnd();
  Call the **Create** or `LoadFrame` member function to create the visible MDI frame window.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#13](../../mfc/reference/codesnippet/CPP/cmdiframewnd-class_1.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#13](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_1.cpp)]  
   
 ##  <a name="cmdiframewnd__createclient"></a>  CMDIFrameWnd::CreateClient  
  Creates the MDI client window that manages the `CMDIChildWnd` objects.  
@@ -157,7 +157,7 @@ virtual BOOL CreateClient(
  This member function should be called if you override the `OnCreate` member function directly.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#14](../../mfc/reference/codesnippet/CPP/cmdiframewnd-class_2.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#14](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_2.cpp)]  
   
 ##  <a name="cmdiframewnd__createnewchild"></a>  CMDIFrameWnd::CreateNewChild  
  Creates a new child window.  
@@ -187,7 +187,7 @@ CMDIChildWnd* CreateNewChild(
  Use this function to create child windows of an MDI frame window.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#15](../../mfc/reference/codesnippet/CPP/cmdiframewnd-class_3.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#15](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_3.cpp)]  
   
  This example is an excerpt from Knowledge Base article Q201045, "HOWTO: Add Multiple Window Types to a Non-Document/View MDI App." Knowledge Base articles are available in the MSDN Library Visual Studio documentation or at [http://support.microsoft.com](http://support.microsoft.com/).  
   
@@ -211,7 +211,7 @@ virtual HMENU GetWindowMenuPopup(HMENU hMenuBar);
  Override this member function if you have a Window menu that does not use the standard menu command IDs.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#16](../../mfc/reference/codesnippet/CPP/cmdiframewnd-class_4.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#16](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_4.cpp)]  
   
 ##  <a name="cmdiframewnd__mdiactivate"></a>  CMDIFrameWnd::MDIActivate  
  Activates a different MDI child window.  
@@ -253,7 +253,7 @@ void MDICascade(int nType);
  The first version of `MDICascade`, with no parameters, cascades all MDI child windows, including disabled ones. The second version optionally does not cascade disabled MDI child windows if you specify `MDITILE_SKIPDISABLED` for the `nType` parameter.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#17](../../mfc/reference/codesnippet/CPP/cmdiframewnd-class_5.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#17](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_5.cpp)]  
   
 ##  <a name="cmdiframewnd__mdigetactive"></a>  CMDIFrameWnd::MDIGetActive  
  Retrieves the current active MDI child window, along with a flag indicating whether the child window is maximized.  
@@ -317,7 +317,7 @@ void MDINext();
  If the currently active MDI child window is maximized, the member function restores the currently active child and maximizes the newly activated child.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#18](../../mfc/reference/codesnippet/CPP/cmdiframewnd-class_6.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#18](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_6.cpp)]  
   
 ##  <a name="cmdiframewnd__mdiprev"></a>  CMDIFrameWnd::MDIPrev  
  Activates the previous child window and places the currently active child window immediately behind it.  
@@ -372,9 +372,9 @@ CMenu* MDISetMenu(
  Do not call this member function if you use the framework to manage your MDI child windows.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#19](../../mfc/reference/codesnippet/CPP/cmdiframewnd-class_7.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#19](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_7.cpp)]  
   
- [!code-cpp[NVC_MFCWindowing#20](../../mfc/reference/codesnippet/CPP/cmdiframewnd-class_8.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#20](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_8.cpp)]  
   
 ##  <a name="cmdiframewnd__mditile"></a>  CMDIFrameWnd::MDITile  
  Arranges all child windows in a tiled format.  

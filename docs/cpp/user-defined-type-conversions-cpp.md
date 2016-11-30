@@ -68,7 +68,7 @@ A *conversion* produces a new value of some type from a value of a different typ
   
 -   An expression that controls a conditional statement, looping construct, or switch does not have the result type that's required to control it.  
   
--   An operand supplied to an operator does not have the same type as the matching operand-parameter. For built-in operators, both operands must have the same type, and are converted to a common type that can represent both. For more information, see [Arithmetic Conversions](../misc/arithmetic-conversions.md). For user-defined operators, each operand must have the same type as the matching operand-parameter.  
+-   An operand supplied to an operator does not have the same type as the matching operand-parameter. For built-in operators, both operands must have the same type, and are converted to a common type that can represent both. For more information, see [Standard Conversions](standard-conversions.md). For user-defined operators, each operand must have the same type as the matching operand-parameter.  
   
  When one standard conversion can't complete an implicit conversion, the compiler can use a user-defined conversion, followed optionally by an additional standard conversion, to complete it.  
   
@@ -243,5 +243,3 @@ void display_balance(const Money balance)
   
  Here the conversion function `operator double` has been made explicit, and an explicit cast to type `double` has been introduced in the function `display_balance` to perform the conversion. If this cast were omitted, the compiler would be unable to locate a suitable stream-insertion operator `<<` for type `Money` and an error would occur.  
   
-## See Also  
- [Special Member Functions](../misc/special-member-functions-cpp.md)

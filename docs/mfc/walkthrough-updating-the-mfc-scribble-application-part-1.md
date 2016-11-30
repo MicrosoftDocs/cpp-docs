@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Walkthrough: Updating the MFC Scribble Application (Part 1)
-This walkthrough demonstrates how to modify an existing MFC application to use the Ribbon user interface. Visual Studio supports both the Office 2007 Ribbon and the Windows 7 Scenic Ribbon. For more information about the Ribbon user interface, see [Ribbons](http://go.microsoft.com/fwlink/LinkId=129233) on the MSDN Web site.  
+This walkthrough demonstrates how to modify an existing MFC application to use the Ribbon user interface. Visual Studio supports both the Office 2007 Ribbon and the Windows 7 Scenic Ribbon. For more information about the Ribbon user interface, see [Ribbons](http://go.microsoft.com/fwlink/linkid=129233) on the MSDN Web site.  
   
  This walkthrough modifies the classic Scribble 1.0 MFC sample that lets you use the mouse to create line drawings. This part of the walkthrough shows how to modify the Scribble sample so that it displays a ribbon bar. [Part 2](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md) adds more buttons to the ribbon bar.  
   
@@ -50,17 +50,17 @@ This walkthrough demonstrates how to modify an existing MFC application to use t
 ##  <a name="top"></a> Sections  
  This part of the walkthrough has the following sections:  
   
-- [Replacing the Base Classes](#replaceClass)  
+- [Replacing the Base Classes](#replaceclass)  
   
-- [Adding Bitmaps to the Project](#addBitmap)  
+- [Adding Bitmaps to the Project](#addbitmap)  
   
-- [Adding a Ribbon Resource to the Project](#addRibbon)  
+- [Adding a Ribbon Resource to the Project](#addribbon)  
   
-- [Creating an Instance of the Ribbon Bar](#createInstance)  
+- [Creating an Instance of the Ribbon Bar](#createinstance)  
   
-- [Adding a Ribbon Category](#addCategory)  
+- [Adding a Ribbon Category](#addcategory)  
   
-- [Setting the Look of the Application](#setLook)  
+- [Setting the Look of the Application](#setlook)  
   
 ##  <a name="replaceClass"></a> Replacing the Base Classes  
  To convert an application that supports a menu to an application that supports a ribbon, you must derive the application, frame window, and toolbar classes from updated base classes. (We suggest that you do not modify the original Scribble sample; instead, clean the Scribble project, copy it to another directory, and then modify the copy.)  

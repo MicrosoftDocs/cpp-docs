@@ -97,7 +97,7 @@ explicit CSimpleException(BOOL bAutoDelete);
  Specify **TRUE** if the memory for the `CSimpleException` object has been allocated on the heap. This will cause the `CSimpleException` object to be deleted when the **Delete** member function is called to delete the exception. Specify **FALSE** if the `CSimpleException` object is on the stack or is a global object. In this case, the `CSimpleException` object will not be deleted when the **Delete** member function is called.  
   
 ### Remarks  
- You would normally never need to call this constructor directly. A function that throws an exception should create an instance of a `CException`-derived class and call its constructor, or it should use one of the MFC throw functions, such as [AfxThrowFileException]--brokenlink--(../Topic/not%20found.md#afxthrowfileexception), to throw a predefined type.  
+ You would normally never need to call this constructor directly. A function that throws an exception should create an instance of a `CException`-derived class and call its constructor, or it should use one of the MFC throw functions, such as [AfxThrowFileException]--brokenlink--(exception-processing.md#afxthrowfileexception), to throw a predefined type.  
   
 ##  <a name="csimpleexception__geterrormessage"></a>  CSimpleException::GetErrorMessage  
  Call this member function to provide text about an error that has occurred.  

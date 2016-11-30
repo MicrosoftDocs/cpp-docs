@@ -76,6 +76,7 @@ template <typename   K,
 |Name|Description|  
 |----------|-----------------|  
 |[CAtlMap::CPair Class](#catlmap__cpair_class)|A class containing the key and value elements.|  
+
   
 ### CPair Data Members  
   
@@ -123,7 +124,8 @@ template <typename   K,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlMap::operator](catlmap-class.md#operator)|Replaces or adds a new element to the `CAtlMap`.|  
+|[CAtlMap::operator\[\]](catlmap-class.md#catlmap__operator_at)|Replaces or adds a new element to the `CAtlMap`.|  
+
   
 ## Remarks  
  `CAtlMap` provides support for a mapping array of any given type, managing an unordered array of key elements and their associated values. Elements (consisting of a key and a value) are stored using a hashing algorithm, allowing a large amount of data to be efficiently stored and retrieved.  
@@ -198,7 +200,7 @@ CAtlMap(
  Before any data can be stored, it is necessary to initialize the hash table with a call to [CAtlMap::InitHashTable](#catlmap__inithashtable).  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#72](../../atl/codesnippet/CPP/catlmap-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#72](../../atl/codesnippet/cpp/catlmap-class_1.cpp)]  
   
 ##  <a name="catlmap___dtorcatlmap"></a>  CAtlMap::~CAtlMap  
  The destructor.  
@@ -504,11 +506,11 @@ CPair* Lookup(
 ### Remarks  
  `Lookup` uses a hashing algorithm to quickly find the map element containing a key that exactly matches the given key parameter.  
   
-##  <a name="catlmap__operator__at"></a>  CAtlMap::operator []  
+##  <a name="catlmap__operator_at"></a>  CAtlMap::operator \[\]  
  Replaces or adds a new element to the `CAtlMap`.  
   
 ```
-V& operator[](KINARGTYPE   key) throw();
+V& operator[](kinargtype   key) throw();
 ```  
   
 ### Parameters  

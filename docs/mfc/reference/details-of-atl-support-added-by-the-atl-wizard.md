@@ -45,7 +45,7 @@ When you [add ATL support to an existing MFC executable or DLL](../../mfc/refere
 -   To register the server properly, an entry for the new .rgs file is added to the project's resource file.  
   
 ## Notes for DLL Projects  
- When you add ATL support to an MFC DLL project, you will see some differences. Code is added to the **DLLRegisterServer** and **DLLUnregisterServer** functions for registering and unregistering the DLL. Code is also added to [DllCanUnloadNow](../../atl/reference/catldllmodulet-class.md#dllcanunloadnow) and [DllGetClassObject](../../atl/reference/catldllmodulet-class.md#dllgetclassobject).  
+ When you add ATL support to an MFC DLL project, you will see some differences. Code is added to the **DLLRegisterServer** and **DLLUnregisterServer** functions for registering and unregistering the DLL. Code is also added to [DllCanUnloadNow](../../atl/reference/catldllmodulet-class.md#catldllmodulet__dllcanunloadnow) and [DllGetClassObject](../../atl/reference/catldllmodulet-class.md#catldllmodulet__dllgetclassobject).  
   
 ## See Also  
  [ATL Support in an MFC Project](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)   

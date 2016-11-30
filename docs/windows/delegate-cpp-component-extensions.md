@@ -103,7 +103,7 @@ function_declaration
  *function_declaration*  
  The signature of the function that can be bound to the delegate. The return type of a delegate can be any managed type. For interoperability reasons, it is recommended that the return type of a delegate be a CLS type.  
   
- To define an unbound delegate, the first parameter in *function_declaration* should be the type of the `this` pointer for the object. For more information, see [Unbound Delegates](../misc/unbound-delegates.md).  
+ To define an unbound delegate, the first parameter in *function_declaration* should be the type of the `this` pointer for the object. 
   
 ### Remarks  
  Delegates are multicast: the "function pointer" can be bound to one or more methods within a managed class. The **delegate** keyword defines a multicast delegate type with a specific method signature.  
@@ -134,17 +134,7 @@ function_declaration
   
  For more information on delegates, see  
   
--   [Unbound Delegates](../misc/unbound-delegates.md)  
-  
 -   [How to: Define and Use Delegates (C++/CLI)](../dotnet/how-to-define-and-use-delegates-cpp-cli.md)  
-  
--   [Delegate to a Member of a Value Class](../misc/how-to-associate-delegates-to-members-of-a-value-class.md)  
-  
--   [Delegate to an Unmanaged Function](../misc/how-to-associate-delegates-to-unmanaged-functions.md)  
-  
--   [Composed Delegates](../misc/how-to-compose-delegates.md)  
-  
--   [How to: Pass a Delegate^ to a Native Function Expecting a Function Pointer](../misc/how-to-pass-a-delegate-hat-to-a-native-function-expecting-a-function-pointer.md)  
   
 -   [Generic Delegates (Visual C++)](../windows/generic-delegates-visual-cpp.md)  
   

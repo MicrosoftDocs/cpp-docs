@@ -242,10 +242,10 @@ void InsertAt(
  These inline operators call `BASE_CLASS`**::operator [ ]**.  
   
 ```  
-TYPE& operator[ ](INT_PTR nIndex);
+TYPE& operator[ ](int_ptr nindex);
 
  
-TYPE operator[ ](INT_PTR nIndex) const;
+TYPE operator[ ](int_ptr nindex) const;
 
  
 ```  

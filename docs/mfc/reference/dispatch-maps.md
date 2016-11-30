@@ -69,7 +69,7 @@ DECLARE_DISPATCH_MAP()
  The Application Wizard and code wizards assist in creating Automation classes and in maintaining dispatch maps. For more information on dispatch maps, see [Automation Servers](../../mfc/automation-servers.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCAutomation#10](../../mfc/codesnippet/CPP/dispatch-maps_1.h)]  
+ [!code-cpp[NVC_MFCAutomation#10](../../mfc/codesnippet/cpp/dispatch-maps_1.h)]  
   
 ##  <a name="begin_dispatch_map"></a>  BEGIN_DISPATCH_MAP  
  Declares the definition of your dispatch map.  
@@ -142,7 +142,7 @@ DISP_FUNCTION(theClass, pszName, pfnMember, vtRetVal, vtsParams)
   
  The `vtsParams` argument is a space-separated list of values from the **VTS_** constants. One or more of these values separated by spaces (not commas) specifies the function's parameter list. For example, 
   
- [!code-cpp[NVC_MFCAutomation#14](../../mfc/codesnippet/CPP/dispatch-maps_2.cpp)]  
+ [!code-cpp[NVC_MFCAutomation#14](../../mfc/codesnippet/cpp/dispatch-maps_2.cpp)]  
   
  specifies a list containing a short integer followed by a pointer to a short integer.  
   
@@ -319,19 +319,19 @@ DISP_PROPERTY_PARAM(theClass, pszExternalName, pfnGet, pfnSet, vtPropType, vtsPa
 ### Example  
  Consider the following declaration of get and set member functions that allow the user to request a specific row and column when accessing the property:  
   
- [!code-cpp[NVC_MFCActiveXControl#9](../../mfc/codesnippet/CPP/dispatch-maps_3.h)]  
+ [!code-cpp[NVC_MFCActiveXControl#9](../../mfc/codesnippet/cpp/dispatch-maps_3.h)]  
   
  These correspond to the following `DISP_PROPERTY_PARAM` macro in the control dispatch map:  
   
- [!code-cpp[NVC_MFCActiveXControl#10](../../mfc/codesnippet/CPP/dispatch-maps_4.cpp)]  
+ [!code-cpp[NVC_MFCActiveXControl#10](../../mfc/codesnippet/cpp/dispatch-maps_4.cpp)]  
   
  As another example, consider the following get and set member functions:  
   
- [!code-cpp[NVC_MFCActiveXControl#11](../../mfc/codesnippet/CPP/dispatch-maps_5.h)]  
+ [!code-cpp[NVC_MFCActiveXControl#11](../../mfc/codesnippet/cpp/dispatch-maps_5.h)]  
   
  These correspond to the following `DISP_PROPERTY_PARAM` macro in the control dispatch map:  
   
- [!code-cpp[NVC_MFCActiveXControl#12](../../mfc/codesnippet/CPP/dispatch-maps_6.cpp)]  
+ [!code-cpp[NVC_MFCActiveXControl#12](../../mfc/codesnippet/cpp/dispatch-maps_6.cpp)]  
   
 ##  <a name="disp_defvalue"></a>  DISP_DEFVALUE  
  Makes an existing property the default value of an object.  

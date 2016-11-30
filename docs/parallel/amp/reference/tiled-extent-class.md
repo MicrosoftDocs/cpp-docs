@@ -74,6 +74,7 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
 |Name|Description|  
 |----------|-----------------|  
 |[tiled_extent::tiled_extent Constructor](#tiled_extent_ctor)|Initializes a new instance of the `tiled_extent` class.|  
+
   
 ### Public Methods  
   
@@ -88,6 +89,7 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
 |Name|Description|  
 |----------|-----------------|  
 |[tiled_extent::operator= Operator](#tiled_extent__operator_eq)|Copies the contents of the specified `tiled_index` object into this one.|  
+
   
 ### Public Constants  
   
@@ -96,6 +98,7 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
 |[tiled_extent::tile_dim0 Constant](#tiled_extent__tile_dim0)|Stores the length of the most significant dimension.|  
 |[tiled_extent::tile_dim1 Constant](#tiled_extent__tile_dim1)|Stores the length of the next-to-most significant dimension.|  
 |[tiled_extent::tile_dim2 Constant](#tiled_extent__tile_dim2)|Stores the length of the least significant dimension.|  
+
   
 ### Public Data Members  
   

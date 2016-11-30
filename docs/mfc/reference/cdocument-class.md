@@ -185,7 +185,7 @@ void AddView(CView* pView);
  Call this function only if you are manually creating and attaching a view. Typically you will let the framework connect documents and views by defining a [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) object to associate a document class, view class, and frame window class.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocViewSDI#12](../../mfc/codesnippet/CPP/cdocument-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocViewSDI#12](../../mfc/codesnippet/cpp/cdocument-class_1.cpp)]  
   
 ##  <a name="cdocument__beginreadchunks"></a>  CDocument::BeginReadChunks  
  Initializes chunk reading.  
@@ -253,7 +253,7 @@ virtual void DeleteContents();
  It is called just before the document is to be destroyed. It is also called to ensure that a document is empty before it is reused. This is particularly important for an SDI application, which uses only one document; the document is reused whenever the user creates or opens another document. Call this function to implement an "Edit Clear All" or similar command that deletes all of the document's data. The default implementation of this function does nothing. Override this function to delete the data in your document.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#57](../../mfc/codesnippet/CPP/cdocument-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#57](../../mfc/codesnippet/cpp/cdocument-class_2.cpp)]  
   
 ##  <a name="cdocument__findchunk"></a>  CDocument::FindChunk  
  Looks for a chunk with a specified GUID.  
@@ -301,7 +301,7 @@ CDocTemplate* GetDocTemplate() const;
  A pointer to the document template for this document type, or **NULL** if the document is not managed by a document template.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#58](../../mfc/codesnippet/CPP/cdocument-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#58](../../mfc/codesnippet/cpp/cdocument-class_3.cpp)]  
   
 ##  <a name="cdocument__getfile"></a>  CDocument::GetFile  
  Call this member function to get a pointer to a `CFile` object.  
@@ -339,7 +339,7 @@ virtual POSITION GetFirstViewPosition() const;
  A **POSITION** value that can be used for iteration with the [GetNextView](#cdocument__getnextview) member function.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#59](../../mfc/codesnippet/CPP/cdocument-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDocView#59](../../mfc/codesnippet/cpp/cdocument-class_4.cpp)]  
   
 ##  <a name="cdocument__getnextview"></a>  CDocument::GetNextView  
  Call this function to iterate through all of the document's views.  
@@ -361,7 +361,7 @@ virtual CView* GetNextView(POSITION& rPosition) const;
  The function returns the view identified by `rPosition` and then sets `rPosition` to the **POSITION** value of the next view in the list. If the retrieved view is the last in the list, then `rPosition` is set to **NULL**.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#59](../../mfc/codesnippet/CPP/cdocument-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDocView#59](../../mfc/codesnippet/cpp/cdocument-class_4.cpp)]  
   
 ##  <a name="cdocument__getpathname"></a>  CDocument::GetPathName  
  Call this function to get the fully qualified path of the document's disk file.  
@@ -665,11 +665,11 @@ virtual BOOL OnNewDocument();
 ### Example  
  The following examples illustrate alternative methods of initializing a document object.  
   
- [!code-cpp[NVC_MFCDocView#60](../../mfc/codesnippet/CPP/cdocument-class_5.cpp)]  
+ [!code-cpp[NVC_MFCDocView#60](../../mfc/codesnippet/cpp/cdocument-class_5.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#61](../../mfc/codesnippet/CPP/cdocument-class_6.cpp)]  
+ [!code-cpp[NVC_MFCDocView#61](../../mfc/codesnippet/cpp/cdocument-class_6.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#62](../../mfc/codesnippet/CPP/cdocument-class_7.cpp)]  
+ [!code-cpp[NVC_MFCDocView#62](../../mfc/codesnippet/cpp/cdocument-class_7.cpp)]  
   
 ##  <a name="cdocument__onopendocument"></a>  CDocument::OnOpenDocument  
  Called by the framework as part of the File Open command.  
@@ -693,13 +693,13 @@ virtual BOOL OnOpenDocument(LPCTSTR lpszPathName);
 ### Example  
  The following examples illustrate alternative methods of initializing a document object.  
   
- [!code-cpp[NVC_MFCDocView#60](../../mfc/codesnippet/CPP/cdocument-class_5.cpp)]  
+ [!code-cpp[NVC_MFCDocView#60](../../mfc/codesnippet/cpp/cdocument-class_5.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#61](../../mfc/codesnippet/CPP/cdocument-class_6.cpp)]  
+ [!code-cpp[NVC_MFCDocView#61](../../mfc/codesnippet/cpp/cdocument-class_6.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#62](../../mfc/codesnippet/CPP/cdocument-class_7.cpp)]  
+ [!code-cpp[NVC_MFCDocView#62](../../mfc/codesnippet/cpp/cdocument-class_7.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#63](../../mfc/codesnippet/CPP/cdocument-class_8.cpp)]  
+ [!code-cpp[NVC_MFCDocView#63](../../mfc/codesnippet/cpp/cdocument-class_8.cpp)]  
   
 ##  <a name="cdocument__onpreviewhandlerqueryfocus"></a>  CDocument::OnPreviewHandlerQueryFocus  
  Directs the preview handler to return the HWND retrieved from calling the `GetFocus` function.  
@@ -1031,7 +1031,7 @@ void UpdateAllViews(
  This function calls the [CView::OnUpdate](../../mfc/reference/cview-class.md#cview__onupdate) member function for each of the document's views except the sending view, passing `pHint` and `lHint`. Use these parameters to pass information to the views about the modifications made to the document. You can encode information using `lHint` and/or you can define a [CObject](../../mfc/reference/cobject-class.md)-derived class to store information about the modifications and pass an object of that class using `pHint`. Override the `CView::OnUpdate` member function in your [CView](../../mfc/reference/cview-class.md)-derived class to optimize the updating of the view's display based on the information passed.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#64](../../mfc/codesnippet/CPP/cdocument-class_9.cpp)]  
+ [!code-cpp[NVC_MFCDocView#64](../../mfc/codesnippet/cpp/cdocument-class_9.cpp)]  
   
 ## See Also  
  [MFC Sample MDIDOCVW](../../top/visual-cpp-samples.md)   

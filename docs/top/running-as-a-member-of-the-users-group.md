@@ -68,4 +68,4 @@ This topic explains how configuring Windows user accounts as a member of the Use
  You can debug any applications that you launch within Visual Studio (native and unmanaged) as a non-administrator by becoming part of the Debugging Group. This includes the ability to attach to a running application using the Attach to Process command. However, it is necessary to be part of the Administrator Group in order to debug native or managed applications that were launched by a different user.  
   
 ## See Also  
- [Security Best Practices](../top/security-best-practices-for-cpp.md)
+ [Security Best Practices](../security-best-practices-for-cpp.md)

@@ -151,7 +151,7 @@ int CombineRgn(
  Use [CopyRgn](#crgn__copyrgn) to simply copy one region into another region.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#144](../../mfc/codesnippet/CPP/crgn-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#144](../../mfc/codesnippet/cpp/crgn-class_1.cpp)]  
   
 ##  <a name="crgn__copyrgn"></a>  CRgn::CopyRgn  
  Copies the region defined by `pRgnSrc` into the `CRgn` object.  
@@ -216,7 +216,7 @@ BOOL CreateEllipticRgn(
  When it has finished using a region created with the `CreateEllipticRgn` function, an application should select the region out of the device context and use the `DeleteObject` function to remove it.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#145](../../mfc/codesnippet/CPP/crgn-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#145](../../mfc/codesnippet/cpp/crgn-class_2.cpp)]  
   
 ##  <a name="crgn__createellipticrgnindirect"></a>  CRgn::CreateEllipticRgnIndirect  
  Creates an elliptical region.  
@@ -328,7 +328,7 @@ BOOL CreatePolygonRgn(
  When an application has finished using a region created with the `CreatePolygonRgn` function, it should select the region out of the device context and use the `DeleteObject` function to remove it.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#146](../../mfc/codesnippet/CPP/crgn-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#146](../../mfc/codesnippet/cpp/crgn-class_3.cpp)]  
   
 ##  <a name="crgn__createpolypolygonrgn"></a>  CRgn::CreatePolyPolygonRgn  
  Creates a region consisting of a series of closed polygons.  
@@ -411,7 +411,7 @@ BOOL CreateRectRgn(
  When it has finished using a region created by `CreateRectRgn`, an application should use the [CGDIObject::DeleteObject](../../mfc/reference/cgdiobject-class.md#cgdiobject__deleteobject) member function to remove the region.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#147](../../mfc/codesnippet/CPP/crgn-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDocView#147](../../mfc/codesnippet/cpp/crgn-class_4.cpp)]  
   
  For an additional example, see [CRgn::CombineRgn](#crgn__combinergn).  
   
@@ -447,7 +447,7 @@ BOOL CreateRectRgnIndirect(LPCRECT lpRect);
  When it has finished using a region created by `CreateRectRgnIndirect`, an application should use the [CGDIObject::DeleteObject](../../mfc/reference/cgdiobject-class.md#cgdiobject__deleteobject) member function to remove the region.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#148](../../mfc/codesnippet/CPP/crgn-class_5.cpp)]  
+ [!code-cpp[NVC_MFCDocView#148](../../mfc/codesnippet/cpp/crgn-class_5.cpp)]  
   
 ##  <a name="crgn__createroundrectrgn"></a>  CRgn::CreateRoundRectRgn  
  Creates a rectangular region with rounded corners that is stored in the `CRgn` object.  
@@ -490,7 +490,7 @@ BOOL CreateRoundRectRgn(
  When an application has finished using a region created with the `CreateRoundRectRgn` function, it should select the region out of the device context and use the [CGDIObject::DeleteObject](../../mfc/reference/cgdiobject-class.md#cgdiobject__deleteobject) member function to remove it.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#149](../../mfc/codesnippet/CPP/crgn-class_6.cpp)]  
+ [!code-cpp[NVC_MFCDocView#149](../../mfc/codesnippet/cpp/crgn-class_6.cpp)]  
   
 ##  <a name="crgn__crgn"></a>  CRgn::CRgn  
  Constructs a `CRgn` object.  
@@ -522,7 +522,7 @@ BOOL EqualRgn(CRgn* pRgn) const;
  Nonzero if the two regions are equivalent; otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#150](../../mfc/codesnippet/CPP/crgn-class_7.cpp)]  
+ [!code-cpp[NVC_MFCDocView#150](../../mfc/codesnippet/cpp/crgn-class_7.cpp)]  
   
 ##  <a name="crgn__fromhandle"></a>  CRgn::FromHandle  
  Returns a pointer to a `CRgn` object when given a handle to a Windows region.  

@@ -41,7 +41,7 @@ When the **/Zc:implicitNoexcept** option is specified, the compiler adds an impl
   
 ## Syntax  
   
-```vb  
+```cpp  
 /Zc:implicitNoexcept[-]  
 ```  
   

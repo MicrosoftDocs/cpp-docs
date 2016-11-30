@@ -15,26 +15,27 @@ ms.author: "mblome"
 ---
 # ATL Path functions
 
-ATL provides the ATLPath class for manipulating paths in the form of [CPathT](CPathT-class.md). This code can be found in atlpath.h.  
+ATL provides the ATLPath class for manipulating paths in the form of [CPathT](cpatht-class.md). This code can be found in atlpath.h.  
   
 ### Related Classes  
   
 |||  
 |-|-|  
-|[CPathT Class](CPathT-class.md)|This class represents a path.|  
+|[CPathT Class](cpatht-class.md)|This class represents a path.|  
 
 ### Related Typedefs  
   
 |||  
 |-|-|  
-|[CPath](CPath.md)|A specialization of [CPathT](CPathT-class.md) using `CString`.|  
-|[CPathA](CPathA.md)|A specialization of [CPathT](CPathT-class.md) using `CStringA`.|  
-|[CPathW](CPathW.md)|A specialization of [CPathT](CPathT-class.md) using `CStringW`.|  
+|[CPath](cpath.md)|A specialization of [CPathT](cpatht-class.md) using `CString`.|  
+|[CPathA](cpatha.md)|A specialization of [CPathT](cpatht-class.md) using `CStringA`.|  
+|[CPathW](cpathw.md)|A specialization of [CPathT](cpatht-class.md) using `CStringW`.|  
   
 ### Functions  
   
 |||  
 |-|-|  
+
 |[ATLPath::AddBackslash](#atlpath__addbackslash)|This function is an overloaded wrapper for [PathAddBackslash](http://msdn.microsoft.com/library/windows/desktop/bb773561).|  
 |[ATLPath::AddExtension](#atlpath__addextension)|This function is an overloaded wrapper for [PathAddExtension](http://msdn.microsoft.com/library/windows/desktop/bb773563).|  
 |[ATLPath::Append](#atlpath__append)|This function is an overloaded wrapper for [PathAppend](http://msdn.microsoft.com/library/windows/desktop/bb773565).|  
@@ -73,6 +74,7 @@ ATL provides the ATLPath class for manipulating paths in the form of [CPathT](CP
 |[ATLPath::UnquoteSpaces](#atlpath__unquotespaces)|This function is an overloaded wrapper for [PathUnquoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773763).|  
   
 ## <a name="atlpath__addbackslash"></a> ATLPath::AddBackSlash
+
 This function is an overloaded wrapper for [PathAddBackslash](http://msdn.microsoft.com/library/windows/desktop/bb773561).  
   
 ### Syntax  

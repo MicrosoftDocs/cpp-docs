@@ -147,7 +147,7 @@ HRESULT Append(LPCOLESTR lpsz,  int nLen) throw();
  An ANSI string will be converted to Unicode before being appended.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#32](../../atl/codesnippet/CPP/ccombstr-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#32](../../atl/codesnippet/cpp/ccombstr-class_1.cpp)]  
   
 ##  <a name="ccombstr__appendbstr"></a>  CComBSTR::AppendBSTR  
  Appends the specified `BSTR` to [m_str](#ccombstr__m_str).  
@@ -167,7 +167,7 @@ HRESULT AppendBSTR(BSTR p) throw();
  Do not pass an ordinary wide-character string to this method. The compiler cannot catch the error and run time errors will occur.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#33](../../atl/codesnippet/CPP/ccombstr-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#33](../../atl/codesnippet/cpp/ccombstr-class_2.cpp)]  
   
 ##  <a name="ccombstr__appendbytes"></a>  CComBSTR::AppendBytes  
  Appends the specified number of bytes to [m_str](#ccombstr__m_str) without conversion.  
@@ -187,7 +187,7 @@ HRESULT AppendBytes(const char* lpsz,  int nLen) throw();
  `S_OK` on success, or any standard `HRESULT` error value.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#34](../../atl/codesnippet/CPP/ccombstr-class_3.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#34](../../atl/codesnippet/cpp/ccombstr-class_3.cpp)]  
   
 ##  <a name="ccombstr__arraytobstr"></a>  CComBSTR::ArrayToBSTR  
  Frees any existing string held in the `CComBSTR` object, then creates a `BSTR` from the first character of each element in the safearray and attaches it to the `CComBSTR` object.  
@@ -235,7 +235,7 @@ void Attach(BSTR src) throw();
 >  This method will assert if `m_str` is non- **NULL**.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#35](../../atl/codesnippet/CPP/ccombstr-class_4.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#35](../../atl/codesnippet/cpp/ccombstr-class_4.cpp)]  
   
 ##  <a name="ccombstr__bstrtoarray"></a>  CComBSTR::BSTRToArray  
  Creates a zero-based one-dimensional safearray, where each element of the array is a character from the `CComBSTR` object.  
@@ -265,7 +265,7 @@ unsigned int ByteLength() const throw();
  Returns 0 if `m_str` is **NULL**.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#36](../../atl/codesnippet/CPP/ccombstr-class_5.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#36](../../atl/codesnippet/cpp/ccombstr-class_5.cpp)]  
   
 ##  <a name="ccombstr__ccombstr"></a>  CComBSTR::CComBSTR  
  The constructor. The default constructor sets the [m_str](#ccombstr__m_str) member to **NULL**.  
@@ -325,7 +325,7 @@ CComBSTR(
  The destructor frees the string pointed to by `m_str`.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#37](../../atl/codesnippet/CPP/ccombstr-class_6.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#37](../../atl/codesnippet/cpp/ccombstr-class_6.cpp)]  
   
 ##  <a name="ccombstr___dtorccombstr"></a>  CComBSTR::~CComBSTR  
  The destructor.  
@@ -348,7 +348,7 @@ BSTR Copy() const throw();
  A copy of the [m_str](#ccombstr__m_str) member. If `m_str` is **NULL**, returns **NULL**.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#38](../../atl/codesnippet/CPP/ccombstr-class_7.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#38](../../atl/codesnippet/cpp/ccombstr-class_7.cpp)]  
   
 ##  <a name="ccombstr__copyto"></a>  CComBSTR::CopyTo  
  Allocates and returns a copy of [m_str](#ccombstr__m_str) via the parameter.  
@@ -372,7 +372,7 @@ HRESULT CopyTo(VARIANT* pvarDest) throw();
  After calling this method, the **VARIANT** pointed to by `pvarDest` will be of type `VT_BSTR`.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#39](../../atl/codesnippet/CPP/ccombstr-class_8.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#39](../../atl/codesnippet/cpp/ccombstr-class_8.cpp)]  
   
 ##  <a name="ccombstr__detach"></a>  CComBSTR::Detach  
  Detaches [m_str](#ccombstr__m_str) from the `CComBSTR` object and sets `m_str` to **NULL**.  
@@ -385,7 +385,7 @@ BSTR Detach() throw();
  The `BSTR` associated with the `CComBSTR` object.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#40](../../atl/codesnippet/CPP/ccombstr-class_9.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#40](../../atl/codesnippet/cpp/ccombstr-class_9.cpp)]  
   
 ##  <a name="ccombstr__empty"></a>  CComBSTR::Empty  
  Frees the [m_str](#ccombstr__m_str) member.  
@@ -395,7 +395,7 @@ void Empty() throw();
 ```  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#41](../../atl/codesnippet/CPP/ccombstr-class_10.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#41](../../atl/codesnippet/cpp/ccombstr-class_10.cpp)]  
   
 ##  <a name="ccombstr__length"></a>  CComBSTR::Length  
  Returns the number of characters in `m_str`, excluding the terminating null character.  
@@ -408,7 +408,7 @@ unsigned int Length() const throw();
  The length of the [m_str](#ccombstr__m_str) member.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#42](../../atl/codesnippet/CPP/ccombstr-class_11.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#42](../../atl/codesnippet/cpp/ccombstr-class_11.cpp)]  
   
 ##  <a name="ccombstr__loadstring"></a>  CComBSTR::LoadString  
  Loads a string resource specified by `nID` and stores it in this object.  
@@ -428,7 +428,7 @@ bool LoadString(UINT nID) throw();
  The first function loads the resource from the module identified by you via the `hInst` parameter. The second function loads the resource from the resource module associated with the [CComModule](../../atl/reference/ccommodule-class.md)-derived object used in this project.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#43](../../atl/codesnippet/CPP/ccombstr-class_12.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#43](../../atl/codesnippet/cpp/ccombstr-class_12.cpp)]  
   
 ##  <a name="ccombstr__m_str"></a>  CComBSTR::m_str  
  Contains the `BSTR` associated with the `CComBSTR` object.  
@@ -438,7 +438,7 @@ BSTR m_str;
 ```  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#49](../../atl/codesnippet/CPP/ccombstr-class_13.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#49](../../atl/codesnippet/cpp/ccombstr-class_13.cpp)]  
   
 ##  <a name="ccombstr__operator_bstr"></a>  CComBSTR::operator BSTR  
  Casts a `CComBSTR` object to a `BSTR`.  
@@ -466,7 +466,7 @@ bool operator!() const throw();
  This operator only checks for a NULL value, not for an empty string.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#35](../../atl/codesnippet/CPP/ccombstr-class_4.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#35](../../atl/codesnippet/cpp/ccombstr-class_4.cpp)]  
   
 ##  <a name="ccombstr__operator_neq"></a>  CComBSTR::operator !=  
  Returns the logical opposite of [operator ==](#ccombstr__operator_eq_eq).  
@@ -509,9 +509,9 @@ BSTR* operator&() throw();
  This assertion is not enabled by default. Define `ATL_CCOMBSTR_ADDRESS_OF_ASSERT` to enable this assertion.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#46](../../atl/codesnippet/CPP/ccombstr-class_14.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#46](../../atl/codesnippet/cpp/ccombstr-class_14.cpp)]  
   
- [!code-cpp[NVC_ATL_Utilities#47](../../atl/codesnippet/CPP/ccombstr-class_15.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#47](../../atl/codesnippet/cpp/ccombstr-class_15.cpp)]  
   
 ##  <a name="ccombstr__operator_add_eq"></a>  CComBSTR::operator +=  
  Appends a string to the `CComBSTR` object.  
@@ -533,7 +533,7 @@ CComBSTR& operator+= (const CComBSTR& bstrSrc);
  `CComBSTR`s are compared textually in the context of the user's default locale. The **LPCOLESTR** comparison is done using `memcmp` on the raw data in each string. The `LPCSTR` comparison is carried out in the same way once a temporary Unicode copy of `pszSrc` has been created. The final comparison operator just compares the contained string against **NULL**.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#48](../../atl/codesnippet/CPP/ccombstr-class_16.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#48](../../atl/codesnippet/cpp/ccombstr-class_16.cpp)]  
   
 ##  <a name="ccombstr__operator_lt"></a>  CComBSTR::operator &lt;  
  Compares a `CComBSTR` with a string.  
@@ -626,7 +626,7 @@ HRESULT ReadFromStream(IStream* pStream) throw();
  **ReadToStream** requires the contents of the stream at the current position to be compatible with the data format written out by a call to [WriteToStream](#ccombstr__writetostream).  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#44](../../atl/codesnippet/CPP/ccombstr-class_17.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#44](../../atl/codesnippet/cpp/ccombstr-class_17.cpp)]  
   
 ##  <a name="ccombstr__tolower"></a>  CComBSTR::ToLower  
  Converts the contained string to lowercase.  
@@ -672,8 +672,8 @@ HRESULT WriteToStream(IStream* pStream) throw();
  You can recreate a BSTR from the contents of the stream using the [ReadFromStream](#ccombstr__readfromstream) function.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#45](../../atl/codesnippet/CPP/ccombstr-class_18.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#45](../../atl/codesnippet/cpp/ccombstr-class_18.cpp)]  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)   
- [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/Library/8f53659e-0464-4424-97db-6b8453c49863)
+ [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863)

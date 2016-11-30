@@ -101,7 +101,7 @@ template <class T,
   
  Typically, the `CBindStatusCallback` object is associated with a specific bind operation. For example, in the [ASYNC](../../top/visual-cpp-samples.md) sample, when you set the URL property, it creates a `CBindStatusCallback` object in the call to `Download`:  
   
- [!code-cpp[NVC_ATL_Windowing#86](../../atl/codesnippet/CPP/cbindstatuscallback-class_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#86](../../atl/codesnippet/cpp/cbindstatuscallback-class_1.h)]  
   
  The asynchronous moniker uses the callback function `OnData` to call your application when it has data. The asynchronous moniker is provided by the system.  
   
@@ -477,7 +477,7 @@ HRESULT StartAsyncDownload(T* pT,
  In the following example (taken from the [ASYNC](../../top/visual-cpp-samples.md) sample), the function `OnData` writes the received data into a text box.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#87](../../atl/codesnippet/CPP/cbindstatuscallback-class_2.h)]  
+ [!code-cpp[NVC_ATL_Windowing#87](../../atl/codesnippet/cpp/cbindstatuscallback-class_2.h)]  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

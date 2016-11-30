@@ -175,7 +175,7 @@ typedef CComMultiThreadModelNoCS ThreadModelNoCS;
   
  Note that the definition of `ThreadModelNoCS` in `CComMultiThreadModelNoCS` provides symmetry with `CComMultiThreadModel` and `CComSingleThreadModel`. For example, suppose the sample code in `CComMultiThreadModel::AutoCriticalSection` declared the following `typedef`:  
   
- [!code-cpp[NVC_ATL_COM#37](../../atl/codesnippet/CPP/ccommultithreadmodelnocs-class_1.h)]  
+ [!code-cpp[NVC_ATL_COM#37](../../atl/codesnippet/cpp/ccommultithreadmodelnocs-class_1.h)]  
   
  Regardless of the class specified for `ThreadModel` (such as `CComMultiThreadModelNoCS`), `_ThreadModel` resolves accordingly.  
   

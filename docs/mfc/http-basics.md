@@ -57,7 +57,7 @@ When writing an internet application, you often examine and add to the informati
   
  The Hypertext Transfer Protocol (HTTP) is an application-level protocol for hypermedia information systems. For more information about HTTP, and how Web browsers and servers communicate, see the Hypertext Transfer Protocol (HTTP) specification:  
   
- [http://www.w3.org/pub/WWW/Protocols/](http://www.w3.org/pub/WWW/Protocols/)  
+ [http://www.w3.org/pub/WWW/Protocols/](http://www.w3.org/pub/www/protocols/)  
   
 ## See Also  
  [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)

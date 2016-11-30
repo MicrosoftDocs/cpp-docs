@@ -38,7 +38,7 @@ translation.priority.ht:
 ## Data Sources and Sessions  
  The OLE DB provider architecture includes a data source object and one or more sessions. The data source object is the initial object that every provider must instantiate. When a consumer application needs data, it co-creates the data source object to start the provider. The data source object creates a session object (using the **IDBCreateSession** interface) through which the consumer connects to the data source object. ODBC programmers can think of the data source object as being equivalent to the **HENV** and the session object as equivalent to the **HDBC**.  
   
- ![Provider architecture](../../data/oledb/media/vc4twb1.gif "vc4TWB1")  
+ ![Provider architecture](../../data/oledb/media/vc4twb1.gif "vc4twb1")  
   
  Together with the source files created by the OLE DB Provider Wizard, the OLE DB templates implement a data source object. A session is an object that corresponds to the OLE DB **TSession**.  
   

@@ -71,7 +71,7 @@ int main () {
   
  In this example, the new value assigned to `y` is the one's complement of the unsigned value 0xFFFF, or 0x0000.  
   
- Integral promotion is performed on integral operands, and the resultant type is the type to which the operand is promoted. See [Integral Promotions](../misc/integral-promotions.md) for more information on how the promotion is done.  
+ Integral promotion is performed on integral operands, and the resultant type is the type to which the operand is promoted. See [Standard Conversions](standard-conversions.md) for more information on how the promotion is done.  
   
 ## See Also  
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   

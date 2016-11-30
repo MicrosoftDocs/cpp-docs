@@ -135,7 +135,7 @@ CMap(INT_PTR nBlockSize = 10);
  As the map grows, memory is allocated in units of `nBlockSize` entries.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#56](../../mfc/codesnippet/CPP/cmap-class_1.cpp)]  
+ [!code-cpp[NVC_MFCCollections#56](../../mfc/codesnippet/cpp/cmap-class_1.cpp)]  
   
 ##  <a name="cmap__cpair"></a>  CMap::CPair  
  Contains a key value and the value of the associated object.  
@@ -182,7 +182,7 @@ UINT GetHashTableSize() const;
  The number of elements in the hash table.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#57](../../mfc/codesnippet/CPP/cmap-class_2.cpp)]  
+ [!code-cpp[NVC_MFCCollections#57](../../mfc/codesnippet/cpp/cmap-class_2.cpp)]  
   
 ##  <a name="cmap__getnextassoc"></a>  CMap::GetNextAssoc  
  Retrieves the map element at `rNextPosition`, then updates `rNextPosition` to refer to the next element in the map.  
@@ -236,7 +236,7 @@ INT_PTR GetSize() const;
  Call this method to retrieve the number of elements in the map.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#58](../../mfc/codesnippet/CPP/cmap-class_3.cpp)]  
+ [!code-cpp[NVC_MFCCollections#58](../../mfc/codesnippet/cpp/cmap-class_3.cpp)]  
   
 ##  <a name="cmap__getstartposition"></a>  CMap::GetStartPosition  
  Starts a map iteration by returning a **POSITION** value that can be passed to a `GetNextAssoc` call.  
@@ -323,13 +323,13 @@ BOOL Lookup(
  `Lookup` uses a hashing algorithm to quickly find the map element with a key that exactly matches the given key.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#58](../../mfc/codesnippet/CPP/cmap-class_3.cpp)]  
+ [!code-cpp[NVC_MFCCollections#58](../../mfc/codesnippet/cpp/cmap-class_3.cpp)]  
   
 ##  <a name="cmap__operator_at"></a>  CMap::operator [ ]  
  A convenient substitute for the `SetAt` member function.  
   
 ```  
-VALUE& operator[](ARG_KEY key);
+VALUE& operator[](arg_key key);
 ```  
   
 ### Parameters  
@@ -366,7 +366,7 @@ const CPair* PGetFirstAssoc() const;Â CPair* PGetFirstAssoc();
  Call this function to return a pointer the first element in the map object.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#59](../../mfc/codesnippet/CPP/cmap-class_4.cpp)]  
+ [!code-cpp[NVC_MFCCollections#59](../../mfc/codesnippet/cpp/cmap-class_4.cpp)]  
   
 ##  <a name="cmap__pgetnextassoc"></a>  CMap::PGetNextAssoc  
  Retrieves the map element pointed to by `pAssocRec`.  
@@ -414,7 +414,7 @@ CPair* PLookup(Â    ARG_KEY  keyÂ);
  Call this method to search for a map element with a key that exactly matches the given key.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#60](../../mfc/codesnippet/CPP/cmap-class_5.cpp)]  
+ [!code-cpp[NVC_MFCCollections#60](../../mfc/codesnippet/cpp/cmap-class_5.cpp)]  
   
 ##  <a name="cmap__removeall"></a>  CMap::RemoveAll  
  Removes all the values from this map by calling the global helper function **DestructElements**.  
@@ -427,7 +427,7 @@ void RemoveAll();
  The function works correctly if the map is already empty.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#61](../../mfc/codesnippet/CPP/cmap-class_6.cpp)]  
+ [!code-cpp[NVC_MFCCollections#61](../../mfc/codesnippet/cpp/cmap-class_6.cpp)]  
   
 ##  <a name="cmap__removekey"></a>  CMap::RemoveKey  
  Looks up the map entry corresponding to the supplied key; then, if the key is found, removes the entry.  
@@ -477,7 +477,7 @@ void SetAt(
  First, the key is looked up. If the key is found, then the corresponding value is changed; otherwise a new key-value pair is created.  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#62](../../mfc/codesnippet/CPP/cmap-class_7.cpp)]  
+ [!code-cpp[NVC_MFCCollections#62](../../mfc/codesnippet/cpp/cmap-class_7.cpp)]  
   
 ## See Also  
  [MFC Sample COLLECT](../../top/visual-cpp-samples.md)   

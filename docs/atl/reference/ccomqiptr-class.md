@@ -64,7 +64,7 @@ template<class T,  const IID* piid= &__uuidof(T)>  class CComQIPtr: public CComP
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComQIPtr::operator =](#ccomqiptr__operator__eq)|Assigns a pointer to the member pointer.|  
+|[CComQIPtr::operator =](#ccomqiptr__operator_eq)|Assigns a pointer to the member pointer.|  
   
 ## Remarks  
  ATL uses `CComQIPtr` and [CComPtr](../../atl/reference/ccomptr-class.md) to manage COM interface pointers, both of which derive from [CComPtrBase](../../atl/reference/ccomptrbase-class.md). Both classes perform automatic reference counting through calls to `AddRef` and **Release**. Overloaded operators handle pointer operations.  
@@ -102,7 +102,7 @@ CComQIPtr(
  `piid`  
  A pointer to the IID of `T`.  
   
-##  <a name="ccomqiptr__operator__eq"></a>  CComQIPtr::operator =  
+##  <a name="ccomqiptr__operator_eq"></a>  CComQIPtr::operator =  
  The assignment operator.  
   
 ```

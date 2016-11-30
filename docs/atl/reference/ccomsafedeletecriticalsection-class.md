@@ -114,7 +114,8 @@ HRESULT Init() throw();
  Returns the result of [CComCriticalSection::Init](../../atl/reference/ccomcriticalsection-class.md#ccomcriticalsection__init).  
   
 ##  <a name="ccomsafedeletecriticalsection__lock"></a>  CComSafeDeleteCriticalSection::Lock  
- Calls the base class implementation of [Lock](ccomcriticalsection-class.md#lock).  
+Calls the base class implementation of [Lock](ccomcriticalsection-class.md#ccomcriticalsection__lock).  
+
   
 ```
 HRESULT Lock();

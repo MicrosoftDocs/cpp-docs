@@ -75,7 +75,7 @@ template <class T>  class CComGITPtr
 |Name|Description|  
 |----------|-----------------|  
 |[CComGITPtr::operator DWORD](#ccomgitptr__operator_dword)|Returns the cookie from the `CComGITPtr` object.|  
-|[CComGITPtr::operator =](#ccomgitptr__operator__eq)|Assignment operator.|  
+|[CComGITPtr::operator =](#ccomgitptr__operator_eq)|Assignment operator.|  
   
 ### Public Data Members  
   
@@ -209,7 +209,7 @@ DWORD m_dwCookie;
 ### Remarks  
  The cookie is a member variable used to identify an interface and its location.  
   
-##  <a name="ccomgitptr__operator__eq"></a>  CComGITPtr::operator =  
+##  <a name="ccomgitptr__operator_eq"></a>  CComGITPtr::operator =  
  The assignment operator.  
   
 ```

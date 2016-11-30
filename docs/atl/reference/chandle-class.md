@@ -67,7 +67,7 @@ class CHandle
 |Name|Description|  
 |----------|-----------------|  
 |[CHandle::operator HANDLE](#chandle__operator_handle)|Returns the value of the stored handle.|  
-|[CHandle::operator =](#chandle__operator__eq)|Assignment operator.|  
+|[CHandle::operator =](#chandle__operator_eq)|Assignment operator.|  
   
 ### Public Data Members  
   
@@ -154,7 +154,7 @@ HANDLE Detach() throw();
 HANDLE m_h;
 ```  
   
-##  <a name="chandle__operator__eq"></a>  CHandle::operator =  
+##  <a name="chandle__operator_eq"></a>  CHandle::operator =  
  The assignment operator.  
   
 ```

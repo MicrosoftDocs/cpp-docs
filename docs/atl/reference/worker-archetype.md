@@ -51,7 +51,7 @@ Classes that conform to the *worker* archetype provide the code to process work 
   
  A typical *worker* class looks like this:  
   
- [!code-cpp[NVC_ATL_Utilities#137](../../atl/codesnippet/CPP/worker-archetype_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#137](../../atl/codesnippet/cpp/worker-archetype_1.cpp)]  
   
  **Existing Implementations**  
   

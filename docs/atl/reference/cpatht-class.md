@@ -537,7 +537,7 @@ BOOL MatchSpec(PCXSTR    pszSpec) const;
 ### Remarks  
  For more information, see [PathMatchSpec](http://msdn.microsoft.com/library/windows/desktop/bb773727).  
   
-##  <a name="cpatht__operator__add_eq"></a>  CPathT::operator +=  
+##  <a name="cpatht__operator_add_eq"></a>  CPathT::operator +=  
  This operator appends a string to the path.  
   
 ```

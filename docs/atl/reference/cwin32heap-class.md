@@ -156,7 +156,7 @@ CWin32Heap(
 ### Remarks  
  Before allocating memory, it is necessary to provide the `CWin32Heap` object with a valid heap handle. The simplest way to achieve this is to use the process heap:  
   
- [!code-cpp[NVC_ATL_Utilities#92](../../atl/codesnippet/CPP/cwin32heap-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#92](../../atl/codesnippet/cpp/cwin32heap-class_1.cpp)]  
   
  It is also possible to supply an existing heap handle to the constructor, in which case the new object does not take over ownership of the heap. The original heap handle will still be valid when the `CWin32Heap` object is deleted.  
   
@@ -164,7 +164,7 @@ CWin32Heap(
   
  If a heap is required where operations are all performed from a single thread, the best way is to create the object as follows:  
   
- [!code-cpp[NVC_ATL_Utilities#93](../../atl/codesnippet/CPP/cwin32heap-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#93](../../atl/codesnippet/cpp/cwin32heap-class_2.cpp)]  
   
  The parameter **HEAP_NO_SERIALIZE** specifies that mutual exclusion will not be used when the heap functions allocate and free memory, with an according increase in performance.  
   

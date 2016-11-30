@@ -51,12 +51,12 @@ Two normal situations cause a thread to terminate: the controlling function exit
 -   [Retrieving the Exit Code of a Thread](#_core_retrieving_the_exit_code_of_a_thread)  
   
 ##  <a name="_core_normal_thread_termination"></a> Normal Thread Termination  
- For a worker thread, normal thread termination is simple: Exit the controlling function and return a value that signifies the reason for termination. You can use either the [AfxEndThread](http://msdn.microsoft.com/Library/b8215409-7724-4159-9156-16b543443b99) function or a `return` statement. Typically, 0 signifies successful completion, but that is up to you.  
+ For a worker thread, normal thread termination is simple: Exit the controlling function and return a value that signifies the reason for termination. You can use either the [AfxEndThread](http://msdn.microsoft.com/library/b8215409-7724-4159-9156-16b543443b99) function or a `return` statement. Typically, 0 signifies successful completion, but that is up to you.  
   
  For a user-interface thread, the process is just as simple: from within the user-interface thread, call [PostQuitMessage](http://msdn.microsoft.com/library/windows/desktop/ms644945) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)]. The only parameter that **PostQuitMessage** takes is the exit code of the thread. As for worker threads, 0 typically signifies successful completion.  
   
 ##  <a name="_core_premature_thread_termination"></a> Premature Thread Termination  
- Terminating a thread prematurely is almost as simple: Call [AfxEndThread](http://msdn.microsoft.com/Library/b8215409-7724-4159-9156-16b543443b99) from within the thread. Pass the desired exit code as the only parameter. This stops execution of the thread, deallocates the thread's stack, detaches all DLLs attached to the thread, and deletes the thread object from memory.  
+ Terminating a thread prematurely is almost as simple: Call [AfxEndThread](http://msdn.microsoft.com/library/b8215409-7724-4159-9156-16b543443b99) from within the thread. Pass the desired exit code as the only parameter. This stops execution of the thread, deallocates the thread's stack, detaches all DLLs attached to the thread, and deletes the thread object from memory.  
   
  `AfxEndThread` must be called from within the thread to be terminated. If you want to terminate a thread from another thread, you must set up a communication method between the two threads.  
   
@@ -69,7 +69,7 @@ Two normal situations cause a thread to terminate: the controlling function exit
   
 -   Set the `m_bAutoDelete` data member to **FALSE**. This allows the `CWinThread` object to survive after the thread has been terminated. You can then access the `m_hThread` data member after the thread has been terminated. If you use this technique, however, you are responsible for destroying the `CWinThread` object because the framework will not automatically delete it for you. This is the preferred method.  
   
--   Store the thread's handle separately. After the thread is created, copy its `m_hThread` data member (using **::DuplicateHandle**) to another variable and access it through that variable. This way the object is deleted automatically when termination occurs and you can still find out why the thread terminated. Be careful that the thread does not terminate before you can duplicate the handle. The safest way to do this is to pass **CREATE_SUSPENDED** to [AfxBeginThread](http://msdn.microsoft.com/Library/e9e8684d-24f7-4599-8fdf-1f4f560a753b), store the handle, and then resume the thread by calling [ResumeThread](../Topic/CWinThread::ResumeThread.md).  
+-   Store the thread's handle separately. After the thread is created, copy its `m_hThread` data member (using **::DuplicateHandle**) to another variable and access it through that variable. This way the object is deleted automatically when termination occurs and you can still find out why the thread terminated. Be careful that the thread does not terminate before you can duplicate the handle. The safest way to do this is to pass **CREATE_SUSPENDED** to [AfxBeginThread](http://msdn.microsoft.com/library/e9e8684d-24f7-4599-8fdf-1f4f560a753b), store the handle, and then resume the thread by calling [ResumeThread](../topic/../mfc/reference/cwinthread-resumethread-class.md).  
   
  Either method allows you to determine why a `CWinThread` object terminated.  
   

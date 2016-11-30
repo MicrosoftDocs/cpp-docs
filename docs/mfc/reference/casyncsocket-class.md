@@ -917,7 +917,7 @@ virtual void OnConnect(int nErrorCode);
  For more information, see [Windows Sockets: Socket Notifications](../../mfc/windows-sockets-socket-notifications.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCAsyncSocket#1](../../mfc/reference/codesnippet/CPP/casyncsocket-class_1.cpp)]  
+ [!code-cpp[NVC_MFCAsyncSocket#1](../../mfc/reference/codesnippet/cpp/casyncsocket-class_1.cpp)]  
   
 ##  <a name="casyncsocket__onoutofbanddata"></a>  CAsyncSocket::OnOutOfBandData  
  Called by the framework to notify the receiving socket that the sending socket has out-of-band data to send.  
@@ -958,7 +958,7 @@ virtual void OnReceive(int nErrorCode);
  For more information, see [Windows Sockets: Socket Notifications](../../mfc/windows-sockets-socket-notifications.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCAsyncSocket#2](../../mfc/reference/codesnippet/CPP/casyncsocket-class_2.cpp)]  
+ [!code-cpp[NVC_MFCAsyncSocket#2](../../mfc/reference/codesnippet/cpp/casyncsocket-class_2.cpp)]  
   
 ##  <a name="casyncsocket__onsend"></a>  CAsyncSocket::OnSend  
  Called by the framework to notify the socket that it can now send data by calling the **Send** member function.  
@@ -979,7 +979,7 @@ virtual void OnSend(int nErrorCode);
  For more information, see [Windows Sockets: Socket Notifications](../../mfc/windows-sockets-socket-notifications.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCAsyncSocket#3](../../mfc/reference/codesnippet/CPP/casyncsocket-class_3.cpp)]  
+ [!code-cpp[NVC_MFCAsyncSocket#3](../../mfc/reference/codesnippet/cpp/casyncsocket-class_3.cpp)]  
   
 ##  <a name="casyncsocket__operator__eq"></a>  CAsyncSocket::operator =  
  Assigns a new value to a `CAsyncSocket` object.  

@@ -57,7 +57,7 @@ User Account Control (UAC) is a feature of Windows Vista in which user accounts 
   
  The following flowchart describes how your application will run depending on whether UAC is enabled and whether the application has a UAC manifest:  
   
- ![Windows Vista Loader behavior](../top/media/uacflowchart.png "UACflowchart")  
+ ![Windows Vista Loader behavior](media/uacflowchart.png "UACflowchart")  
   
 ## See Also  
- [Security Best Practices](../top/security-best-practices-for-cpp.md)
+ [Security Best Practices](security-best-practices-for-cpp.md)

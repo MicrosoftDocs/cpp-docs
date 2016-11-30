@@ -170,7 +170,7 @@ class CMFCVisualManagerOffice2007 : public CMFCVisualManagerOffice2003
 ## Example  
  The following example demonstrates how to use the visual manager Office 2007. This code snippet is part of the [Desktop Alert Demo sample](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_DesktopAlertDemo#7](../../mfc/reference/codesnippet/CPP/cmfcvisualmanageroffice2007-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_DesktopAlertDemo#7](../../mfc/reference/codesnippet/cpp/cmfcvisualmanageroffice2007-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

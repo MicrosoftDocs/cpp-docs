@@ -235,7 +235,7 @@ virtual void OnDataAvailable(
  The default implementation of this function does nothing. See the following example for a sample implementation.  
   
 ### Example  
- [!code-cpp[NVC_MFCWinInet#5](../../mfc/codesnippet/CPP/casyncmonikerfile-class_1.cpp)]  
+ [!code-cpp[NVC_MFCWinInet#5](../../mfc/codesnippet/cpp/casyncmonikerfile-class_1.cpp)]  
   
 ##  <a name="casyncmonikerfile__onlowresource"></a>  CAsyncMonikerFile::OnLowResource  
  Called by the moniker when resources are low.  
@@ -408,11 +408,11 @@ virtual BOOL Open(
   
  You can use a URL or a filename for the `lpszURL` parameter. For example:  
   
- [!code-cpp[NVC_MFCWinInet#6](../../mfc/codesnippet/CPP/casyncmonikerfile-class_2.cpp)]  
+ [!code-cpp[NVC_MFCWinInet#6](../../mfc/codesnippet/cpp/casyncmonikerfile-class_2.cpp)]  
   
  – or –  
   
- [!code-cpp[NVC_MFCWinInet#7](../../mfc/codesnippet/CPP/casyncmonikerfile-class_3.cpp)]  
+ [!code-cpp[NVC_MFCWinInet#7](../../mfc/codesnippet/cpp/casyncmonikerfile-class_3.cpp)]  
   
 ## See Also  
  [CMonikerFile Class](../../mfc/reference/cmonikerfile-class.md)   

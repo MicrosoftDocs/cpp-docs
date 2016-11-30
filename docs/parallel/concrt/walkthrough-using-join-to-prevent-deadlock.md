@@ -66,7 +66,7 @@ This topic uses the dining philosophers problem to illustrate how to use the [co
 ##  <a name="problem"></a> The Dining Philosophers Problem  
  The dining philosophers problem illustrates how deadlock occurs in an application. In this problem, five philosophers sit at a round table. Every philosopher alternates between thinking and eating. Every philosopher must share a chopstick with the neighbor to the left and another chopstick with the neighbor to the right. The following illustration shows this layout.  
   
- ![The Dining Philosophers Problem](../../parallel/concrt/media/dining_philosophersproblem.png "Dining_PhilosophersProblem")  
+ ![The Dining Philosophers Problem](../../parallel/concrt/media/dining_philosophersproblem.png "dining_philosophersproblem")  
   
  To eat, a philosopher must hold two chopsticks. If every philosopher holds just one chopstick and is waiting for another one, then no philosopher can eat and all starve.  
   
@@ -86,7 +86,7 @@ This topic uses the dining philosophers problem to illustrate how to use the [co
 ### Description  
   
 ### Code  
- [!code-cpp[concrt-philosophers-deadlock#1](../../parallel/concrt/codesnippet/CPP/walkthrough-using-join-to-prevent-deadlock_1.cpp)]  
+ [!code-cpp[concrt-philosophers-deadlock#1](../../parallel/concrt/codesnippet/cpp/walkthrough-using-join-to-prevent-deadlock_1.cpp)]  
   
 ## Compiling the Code  
  Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `philosophers-deadlock.cpp` and then run the following command in a Visual Studio Command Prompt window.  
@@ -110,31 +110,31 @@ This topic uses the dining philosophers problem to illustrate how to use the [co
   
 1.  Remove the following code from the example.  
   
- [!code-cpp[concrt-philosophers-deadlock#2](../../parallel/concrt/codesnippet/CPP/walkthrough-using-join-to-prevent-deadlock_2.cpp)]  
+ [!code-cpp[concrt-philosophers-deadlock#2](../../parallel/concrt/codesnippet/cpp/walkthrough-using-join-to-prevent-deadlock_2.cpp)]  
   
 2.  Change the type of the `_left` and `_right` data members of the `philosopher` class to `unbounded_buffer`.  
   
- [!code-cpp[concrt-philosophers-join#2](../../parallel/concrt/codesnippet/CPP/walkthrough-using-join-to-prevent-deadlock_3.cpp)]  
+ [!code-cpp[concrt-philosophers-join#2](../../parallel/concrt/codesnippet/cpp/walkthrough-using-join-to-prevent-deadlock_3.cpp)]  
   
 3.  Modify the `philosopher` constructor to take `unbounded_buffer` objects as its parameters.  
   
- [!code-cpp[concrt-philosophers-join#3](../../parallel/concrt/codesnippet/CPP/walkthrough-using-join-to-prevent-deadlock_4.cpp)]  
+ [!code-cpp[concrt-philosophers-join#3](../../parallel/concrt/codesnippet/cpp/walkthrough-using-join-to-prevent-deadlock_4.cpp)]  
   
 4.  Modify the `pickup_chopsticks` method to use a non-greedy `join` object to receive messages from the message buffers for both chopsticks.  
   
- [!code-cpp[concrt-philosophers-join#4](../../parallel/concrt/codesnippet/CPP/walkthrough-using-join-to-prevent-deadlock_5.cpp)]  
+ [!code-cpp[concrt-philosophers-join#4](../../parallel/concrt/codesnippet/cpp/walkthrough-using-join-to-prevent-deadlock_5.cpp)]  
   
 5.  Modify the `putdown_chopsticks` method to release access to the chopsticks by sending a message to the message buffers for both chopsticks.  
   
- [!code-cpp[concrt-philosophers-join#5](../../parallel/concrt/codesnippet/CPP/walkthrough-using-join-to-prevent-deadlock_6.cpp)]  
+ [!code-cpp[concrt-philosophers-join#5](../../parallel/concrt/codesnippet/cpp/walkthrough-using-join-to-prevent-deadlock_6.cpp)]  
   
 6.  Modify the `run` method to hold the results of the `pickup_chopsticks` method and to pass those results to the `putdown_chopsticks` method.  
   
- [!code-cpp[concrt-philosophers-join#6](../../parallel/concrt/codesnippet/CPP/walkthrough-using-join-to-prevent-deadlock_7.cpp)]  
+ [!code-cpp[concrt-philosophers-join#6](../../parallel/concrt/codesnippet/cpp/walkthrough-using-join-to-prevent-deadlock_7.cpp)]  
   
 7.  Modify the declaration of the `chopsticks` variable in the `wmain` function to be an array of `unbounded_buffer` objects that each hold one message.  
   
- [!code-cpp[concrt-philosophers-join#7](../../parallel/concrt/codesnippet/CPP/walkthrough-using-join-to-prevent-deadlock_8.cpp)]  
+ [!code-cpp[concrt-philosophers-join#7](../../parallel/concrt/codesnippet/cpp/walkthrough-using-join-to-prevent-deadlock_8.cpp)]  
   
 ## Example  
   
@@ -142,7 +142,7 @@ This topic uses the dining philosophers problem to illustrate how to use the [co
  The following shows the completed example that uses non-greedy `join` objects to eliminate the risk of deadlock.  
   
 ### Code  
- [!code-cpp[concrt-philosophers-join#1](../../parallel/concrt/codesnippet/CPP/walkthrough-using-join-to-prevent-deadlock_9.cpp)]  
+ [!code-cpp[concrt-philosophers-join#1](../../parallel/concrt/codesnippet/cpp/walkthrough-using-join-to-prevent-deadlock_9.cpp)]  
   
 ### Comments  
  This example produces the following output.  

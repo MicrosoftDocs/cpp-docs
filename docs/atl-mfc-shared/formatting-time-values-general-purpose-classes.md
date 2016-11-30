@@ -42,7 +42,7 @@ The following procedure shows how to format time values.
   
 1.  Use the **Format** member function from either the [CTime](../atl-mfc-shared/reference/ctime-class.md) or [CTimeSpan](../atl-mfc-shared/reference/ctimespan-class.md) classes to create a character string representation of the time or elapsed time, as shown by the following example.  
   
-     [!code-cpp[NVC_ATLMFC_Utilities#175](../atl-mfc-shared/codesnippet/CPP/formatting-time-values-general-purpose-classes_1.cpp)]  
+     [!code-cpp[NVC_ATLMFC_Utilities#175](../atl-mfc-shared/codesnippet/cpp/formatting-time-values-general-purpose-classes_1.cpp)]  
   
 ## What do you want to know more about  
   

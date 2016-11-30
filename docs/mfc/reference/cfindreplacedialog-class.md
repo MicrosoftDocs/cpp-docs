@@ -87,7 +87,7 @@ class CFindReplaceDialog : public CCommonDialog
   
  Use the [m_fr](#cfindreplacedialog__m_fr) structure to initialize the dialog box before calling **Create**. The `m_fr` structure is of type [FINDREPLACE](http://msdn.microsoft.com/library/windows/desktop/ms646835). For more information on this structure, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
- In order for the parent window to be notified of find/replace requests, you must use the Windows [RegisterWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms644947) function and use the [ON_REGISTERED_MESSAGE](http://msdn.microsoft.com/Library/93c1c068-ae8c-4e04-8a60-a603800ab57d) message-map macro in your frame window that handles this registered message.  
+ In order for the parent window to be notified of find/replace requests, you must use the Windows [RegisterWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms644947) function and use the [ON_REGISTERED_MESSAGE](http://msdn.microsoft.com/library/93c1c068-ae8c-4e04-8a60-a603800ab57d) message-map macro in your frame window that handles this registered message.  
   
  You can determine whether the user has decided to terminate the dialog box with the `IsTerminating` member function.  
   
@@ -130,7 +130,7 @@ CFindReplaceDialog();
  For more information on the construction of `CFindReplaceDialog` objects, see the [CFindReplaceDialog](../../mfc/reference/cfindreplacedialog-class.md) overview. Use the [CFindReplaceDialog::Create](#cfindreplacedialog__create) member function to display the dialog box.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#170](../../mfc/codesnippet/CPP/cfindreplacedialog-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#170](../../mfc/codesnippet/cpp/cfindreplacedialog-class_1.cpp)]  
   
 ##  <a name="cfindreplacedialog__create"></a>  CFindReplaceDialog::Create  
  Creates and displays either a Find or Find/Replace dialog box object, depending on the value of `bFindDialogOnly`.  
@@ -166,11 +166,11 @@ virtual BOOL Create(
 ### Remarks  
  In order for the parent window to be notified of find/replace requests, you must use the Windows [RegisterWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms644947) function whose return value is a message number unique to the application's instance. Your frame window should have a message map entry that declares the callback function ( `OnFindReplace` in the example that follows) that handles this registered message. The following code fragment is an example of how to do this for a frame window class named `CMyRichEditView`:  
   
- [!code-cpp[NVC_MFCDocView#171](../../mfc/codesnippet/CPP/cfindreplacedialog-class_2.h)]  
+ [!code-cpp[NVC_MFCDocView#171](../../mfc/codesnippet/cpp/cfindreplacedialog-class_2.h)]  
   
- [!code-cpp[NVC_MFCDocView#172](../../mfc/codesnippet/CPP/cfindreplacedialog-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#172](../../mfc/codesnippet/cpp/cfindreplacedialog-class_3.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#173](../../mfc/codesnippet/CPP/cfindreplacedialog-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDocView#173](../../mfc/codesnippet/cpp/cfindreplacedialog-class_4.cpp)]  
   
  Within your `OnFindReplace` function, you interpret the intentions of the user by using the [CFindReplaceDialog::FindNext](#cfindreplacedialog__findnext) and [CFindReplaceDialog::IsTerminating](#cfindreplacedialog__isterminating) methods and you create the code for the find/replace operations.  
   
@@ -202,7 +202,7 @@ CString GetFindString() const;
  The default string to find.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#69](../../mfc/codesnippet/CPP/cfindreplacedialog-class_5.cpp)]  
+ [!code-cpp[NVC_MFCDocView#69](../../mfc/codesnippet/cpp/cfindreplacedialog-class_5.cpp)]  
   
 ##  <a name="cfindreplacedialog__getnotifier"></a>  CFindReplaceDialog::GetNotifier  
  Call this function to retrieve a pointer to the current Find Replace dialog box.  
@@ -224,7 +224,7 @@ static CFindReplaceDialog* PASCAL GetNotifier(LPARAM lParam);
 ### Example  
  See [CFindReplaceDialog::Create](#cfindreplacedialog__create) for an example of how to register the OnFindReplace handler to receive notifications from the Find Replace dialog box.  
   
- [!code-cpp[NVC_MFCDocView#69](../../mfc/codesnippet/CPP/cfindreplacedialog-class_5.cpp)]  
+ [!code-cpp[NVC_MFCDocView#69](../../mfc/codesnippet/cpp/cfindreplacedialog-class_5.cpp)]  
   
 ##  <a name="cfindreplacedialog__getreplacestring"></a>  CFindReplaceDialog::GetReplaceString  
  Call this function to retrieve the current replace string.  

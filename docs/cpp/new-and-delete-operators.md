@@ -40,6 +40,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # new and delete Operators
+
 C++ supports dynamic allocation and deallocation of objects using the [new](../cpp/new-operator-cpp.md) and [delete](../cpp/delete-operator-cpp.md) operators. These operators allocate memory for objects from a pool called the free store. The `new` operator calls the special function [operator new](../cpp/new-operator-cpp.md), and the `delete` operator calls the special function [operator delete](../cpp/delete-operator-cpp.md).  
   
  In [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] .NET 2002, the `new` function in the Standard C++ Library will support the behavior specified in the C++ standard, which is to throw a std::bad_alloc exception if the memory allocation fails. If you still want the non-throwing version of `new`, link your program with nothrownew.obj. However, when you link with nothrownew.obj, the default `operator new` in the Standard C++ Library no longer functions.  
@@ -56,6 +57,7 @@ char *pch = new char[BUFFER_SIZE];
 If the request is for zero bytes of storage, **operator new** returns a pointer to a distinct object (that is, repeated calls to **operator new** return different pointers). If there is insufficient memory for the allocation request, **operator new** throws a std::bad_alloc exception, or returns **nullptr** if you have linked in non-throwing `operator new` support.  
   
 You can write a routine that attempts to free memory and retry the allocation; see [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) for more information. For more details on the recovery scheme, see the Handling insufficient memory section of this topic.  
+
   
 The two scopes for `operator new` functions are described in the following table.  
   
@@ -240,6 +242,4 @@ void f() {
    delete [] pX;  
 }  
 ```  
-  
-## See Also  
- [Overview of Member Functions](../cpp/overview-of-member-functions.md)
+

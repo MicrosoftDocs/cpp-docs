@@ -346,7 +346,7 @@ int main(){
   
  The following code shows some examples of list initialization:  
   
-```vb  
+```cpp  
 class MyClass {  
 public:  
     MyClass(int myInt, char myChar) {}    
@@ -542,7 +542,5 @@ Decision Graph for Initialization of Reference Types
  References that are not qualified with either the **const** or `volatile` keyword can be initialized only with objects declared as neither **const** nor `volatile`.  
   
 ### Initialization of external variables  
- Declarations of automatic, register, static, and external variables can contain initializers. However, declarations of external variables can contain initializers only if the variables are not declared as `extern`. For more information, see [External](../misc/external.md).  
+ Declarations of automatic, register, static, and external variables can contain initializers. However, declarations of external variables can contain initializers only if the variables are not declared as `extern`.
   
-## See Also  
- [(NOTINBUILD)Declarators](http://msdn.microsoft.com/en-us/8a7b9b51-92bd-4ac0-b3fe-0c4abe771838)

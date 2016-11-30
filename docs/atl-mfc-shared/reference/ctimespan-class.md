@@ -124,7 +124,7 @@ bool operator>=(CTimeSpan span) const throw();
  These operators compare two relative time values. They return **true** if the condition is true; otherwise **false**.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#169](../../atl-mfc-shared/codesnippet/CPP/ctimespan-class_1.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#169](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_1.cpp)]  
   
 ##  <a name="ctimespan__ctimespan"></a>  CTimeSpan::CTimeSpan  
  Constructs `CTimeSpan` objects in various ways.  
@@ -171,7 +171,7 @@ CTimeSpan(LONG lDays,
  Note that the Debug version of the Microsoft Foundation Class Library asserts if one or more of the time-day components is out of range. It is your responsibility to validate the arguments prior to calling.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#162](../../atl-mfc-shared/codesnippet/CPP/ctimespan-class_2.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#162](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_2.cpp)]  
   
 ##  <a name="ctimespan__format"></a>  CTimeSpan::Format  
  Generates a formatted string that corresponds to this `CTimeSpan`.  
@@ -208,7 +208,7 @@ CString Format(UINT nID) const;
  The Debug version of the library checks the formatting codes and asserts if the code is not in the list above.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#163](../../atl-mfc-shared/codesnippet/CPP/ctimespan-class_3.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#163](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_3.cpp)]  
   
 ##  <a name="ctimespan__getdays"></a>  CTimeSpan::GetDays  
  Returns a value that represents the number of complete days in this `CTimeSpan`.  
@@ -225,7 +225,7 @@ GetDays() const throw();
  Note that Daylight Savings Time can cause `GetDays` to return a potentially surprising result. For example, when DST is in effect, **GetDays** reports the number of days between April 1 and May 1 as 29, not 30, because one day in April is shortened by an hour and therefore does not count as a complete day.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#164](../../atl-mfc-shared/codesnippet/CPP/ctimespan-class_4.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#164](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_4.cpp)]  
   
 ##  <a name="ctimespan__gethours"></a>  CTimeSpan::GetHours  
  Returns a value that represents the number of hours in the current day (–23 through 23).  
@@ -239,7 +239,7 @@ GetHours() const throw();
  Returns the number of hours in the current day. The range is –23 through 23.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#165](../../atl-mfc-shared/codesnippet/CPP/ctimespan-class_5.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#165](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_5.cpp)]  
   
 ##  <a name="ctimespan__getminutes"></a>  CTimeSpan::GetMinutes  
  Returns a value that represents the number of minutes in the current hour (–59 through 59).  
@@ -291,7 +291,7 @@ GetTotalHours() const throw();
  Returns the total number of complete hours in this `CTimeSpan`.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#166](../../atl-mfc-shared/codesnippet/CPP/ctimespan-class_6.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#166](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_6.cpp)]  
   
 ##  <a name="ctimespan__gettotalminutes"></a>  CTimeSpan::GetTotalMinutes  
  Returns a value that represents the total number of complete minutes in this `CTimeSpan`.  
@@ -341,7 +341,7 @@ CTimeSpan operator-(CTimeSpan span) const throw();
  These two operators allow you to add and subtract `CTimeSpan` objects to and from each other.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#167](../../atl-mfc-shared/codesnippet/CPP/ctimespan-class_7.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#167](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_7.cpp)]  
   
 ##  <a name="ctimespan__operator__add_eq_-_eq"></a>  CTimeSpan::operator +=, -=  
  Adds and subtracts a `CTimeSpan` object to and from this `CTimeSpan`.  
@@ -363,7 +363,7 @@ CTimeSpan& operator-=(CTimeSpan span) throw();
  These operators allow you to add and subtract a `CTimeSpan` object to and from this `CTimeSpan`.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#168](../../atl-mfc-shared/codesnippet/CPP/ctimespan-class_8.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#168](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_8.cpp)]  
   
 ##  <a name="ctimespan__serialize64"></a>  CTimeSpan::Serialize64  
   

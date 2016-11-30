@@ -59,6 +59,7 @@ class tile_barrier;
 |[tile_barrier::wait_with_all_memory_fence Method](#tile_barrier__wait_with_all_memory_fence)|Blocks execution of all threads in a tile until all memory accesses have been completed and all threads in the tile have reached this call.|  
 |[tile_barrier::wait_with_global_memory_fence Method](#tile_barrier__wait_with_global_memory_fence)|Blocks execution of all threads in a tile until all global memory accesses have been completed and all threads in the tile have reached this call.|  
 |[tile_barrier::wait_with_tile_static_memory_fence Method](#tile_barrier__wait_with_tile_static_memory_fence)|Blocks execution of all threads in a tile until all `tile_static` memory accesses have been completed and all threads in the tile have reached this call.|  
+
   
 ## Inheritance Hierarchy  
  `tile_barrier`  

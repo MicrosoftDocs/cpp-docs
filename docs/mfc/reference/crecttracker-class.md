@@ -214,7 +214,7 @@ virtual UINT GetHandleMask() const;
   
  A rectangle has 8 resize handles numbered 0–7. Each resize handle is represented by a bit in the mask; the value of that bit is 2^ *n*, where *n* is the resize handle number. Bits 0–3 correspond to the corner resize handles, starting at the top left moving clockwise. Bits 4–7 correspond to the side resize handles starting at the top moving clockwise. The following illustration shows a rectangle's resize handles and their corresponding resize handle numbers and values:  
   
- ![Resize handle numbers](../../mfc/reference/media/vc35dp1.gif "vc35DP1")  
+ ![Resize handle numbers](../../mfc/reference/media/vc35dp1.gif "vc35dp1")  
   
  The default implementation of **GetHandleMask** returns the mask of the bits so that the resize handles appear. If the single bit is on, the corresponding resize handle will be drawn.  
   

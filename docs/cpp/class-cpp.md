@@ -53,7 +53,7 @@ The `class` keyword declares a class type or defines an object of a class type.
   
 #### Parameters  
  `template-spec`  
- Optional template specifications. For more information, refer to [Template Specifications](../Topic/Template%20Specifications.md).  
+ Optional template specifications. For more information, refer to [Templates](templates-cpp.md).  
   
  `class`  
  The `class` keyword.  
@@ -65,7 +65,7 @@ The `class` keyword declares a class type or defines an object of a class type.
  The type name given to the class. The tag becomes a reserved word within the scope of the class. The tag is optional. If omitted, an anonymous class is defined. For more information, see [Anonymous Class Types](../cpp/anonymous-class-types.md).  
   
  `base-list`  
- Optional list of classes or structures this class will derive its members from. See [Base Classes](../cpp/base-classes.md) for more information. Each base class or structure name can be preceded by an access specifier ([public](../cpp/public-cpp.md), [private](../cpp/private-cpp.md), [protected](../cpp/protected-cpp.md)) and the [virtual](../cpp/virtual-cpp.md) keyword. See the member-access table in [Controlling Access to Class Members](../misc/controlling-access-to-class-members.md) for more information.  
+ Optional list of classes or structures this class will derive its members from. See [Base Classes](../cpp/base-classes.md) for more information. Each base class or structure name can be preceded by an access specifier ([public](../cpp/public-cpp.md), [private](../cpp/private-cpp.md), [protected](../cpp/protected-cpp.md)) and the [virtual](../cpp/virtual-cpp.md) keyword. See the member-access table in [Controlling Access to Class Members](member-access-control-cpp.md) for more information.  
   
  `member-list`  
  List of class members. Refer to [Class Member Overview](../cpp/class-member-overview.md) for more information.  

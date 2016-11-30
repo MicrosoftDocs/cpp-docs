@@ -121,7 +121,7 @@ int ContosoDataServer::Bar(){return 0;}
   
  A namespace can be declared in multiple blocks in a single file, and in multiple files. The compiler joins the parts together during preprocessing and the resulting namespace contains all the members declared in all the parts. An example of this is the std namespace which is declared in each of the header files in the standard library.  
   
- Members of a named namespace can be defined outside the namespace in which they are declared by [explicit qualification](../misc/explicit-qualification.md) of the name being defined. However, the definition must appear after the point of declaration in a namespace that encloses the declaration's namespace. For example:  
+ Members of a named namespace can be defined outside the namespace in which they are declared by explicit qualification of the name being defined. However, the definition must appear after the point of declaration in a namespace that encloses the declaration's namespace. For example:  
   
 ```  
 // defining_namespace_members.cpp  
@@ -289,4 +289,4 @@ namespace
 ## Remarks  
   
 ## See Also  
- [Declarations](../misc/declarations.md)
+ [Declarations and Definitions](declarations-and-definitions-cpp.md)

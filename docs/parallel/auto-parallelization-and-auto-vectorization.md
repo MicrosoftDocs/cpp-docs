@@ -131,7 +131,7 @@ for (int i = 0; i < 1000; ++i)
   
 ## See Also  
  [loop](../preprocessor/loop.md)   
- [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/?LinkId=263662)   
+ [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/?linkid=263662)   
  [/Qpar (Auto-Parallelizer)](../build/reference/qpar-auto-parallelizer.md)   
  [/Qpar-report (Auto-Parallelizer Reporting Level)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md)   
  [/Qvec-report (Auto-Vectorizer Reporting Level)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md)   

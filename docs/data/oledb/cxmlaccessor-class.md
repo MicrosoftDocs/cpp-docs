@@ -62,7 +62,7 @@ class CXMLAccessor : public CDynamicStringAccessorW
  The column information is stored in a buffer created and managed by this class. Obtain column information using [GetXMLColumnData](../../data/oledb/cxmlaccessor-getxmlcolumndata.md) or obtain column data by rows using [GetXMLRowData](../../data/oledb/cxmlaccessor-getxmlrowdata.md).  
   
 ## Example  
- [!code-cpp[NVC_OLEDB_Consumer#14](../../data/oledb/codesnippet/CPP/cxmlaccessor-class_1.cpp)]  
+ [!code-cpp[NVC_OLEDB_Consumer#14](../../data/oledb/codesnippet/cpp/cxmlaccessor-class_1.cpp)]  
   
 ## Requirements  
  **Header**: atldbcli.h  

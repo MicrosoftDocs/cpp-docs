@@ -42,7 +42,7 @@ MFC allows the user of your application to customize how it handles keyboard and
 ## Keyboard Customization  
  The following illustration shows the **Keyboard** tab of the **Customization** dialog box.  
   
- ![Keyboard tab in the Customize dialog box](../mfc/media/mfcnextkeyboardtab.png "MFCNextKeyboardTab")  
+ ![Keyboard tab in the Customize dialog box](../mfc/media/mfcnextkeyboardtab.png "mfcnextkeyboardtab")  
 Keyboard Customization Tab  
   
  The user interacts with the keyboard tab to assign one or more keyboard shortcuts to a command. The available commands are listed on the left side of the tab. The user can select any available command from the menu. Only menu commands can be associated with a keyboard shortcut. After the user enters a new shortcut, the **Assign** button becomes enabled. When the user clicks this button, the application associates the selected command with that shortcut.  
@@ -56,7 +56,7 @@ Keyboard Customization Tab
 ## Mouse Customization  
  The following illustration shows the **Mouse** tab of the **Customization** dialog box.  
   
- ![Mouse tab in the Customize dialog box](../mfc/media/mfcnextmousetab.png "MFCNextMouseTab")  
+ ![Mouse tab in the Customize dialog box](../mfc/media/mfcnextmousetab.png "mfcnextmousetab")  
 Mouse Customization Tab  
   
  The user interacts with this tab to assign a menu command to the mouse double-click action. The user selects a view from the left side of the window and then uses the controls on the right side to associate a command with the double-click action. After the user clicks **Close**, the application executes the associated command whenever the user double-clicks anywhere in the view.  

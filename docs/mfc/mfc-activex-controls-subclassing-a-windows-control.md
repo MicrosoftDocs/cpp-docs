@@ -63,24 +63,24 @@ This article describes the process for subclassing a common Windows control to c
 ##  <a name="_core_overriding_issubclassedcontrol_and_precreatewindow"></a> Overriding IsSubclassedControl and PreCreateWindow  
  To override `PreCreateWindow` and `IsSubclassedControl`, add the following lines of code to the `protected` section of the control class declaration:  
   
- [!code-cpp[NVC_MFC_AxSub#1](../mfc/codesnippet/CPP/mfc-activex-controls-subclassing-a-windows-control_1.h)]  
+ [!code-cpp[NVC_MFC_AxSub#1](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_1.h)]  
   
  In the control implementation file (.CPP), add the following lines of code to implement the two overridden functions:  
   
- [!code-cpp[NVC_MFC_AxSub#2](../mfc/codesnippet/CPP/mfc-activex-controls-subclassing-a-windows-control_2.cpp)]  
+ [!code-cpp[NVC_MFC_AxSub#2](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_2.cpp)]  
   
  Notice that, in this example, the Windows button control is specified in `PreCreateWindow`. However, any standard Windows controls can be subclassed. For more information on standard Windows controls, see [Controls](../mfc/controls-mfc.md).  
   
  When subclassing a Windows control, you may want to specify particular window style (**WS_**) or extended window style (**WS_EX_**) flags to be used in creating the control's window. You can set values for these parameters in the `PreCreateWindow` member function by modifying the **cs.style** and the **cs.dwExStyle** structure fields. Modifications to these fields should be made using an `OR` operation, to preserve the default flags that are set by class `COleControl`. For example, if the control is subclassing the BUTTON control and you want the control to appear as a check box, insert the following line of code into the implementation of `CSampleCtrl::PreCreateWindow`, before the return statement:  
   
- [!code-cpp[NVC_MFC_AxSub#3](../mfc/codesnippet/CPP/mfc-activex-controls-subclassing-a-windows-control_3.cpp)]  
+ [!code-cpp[NVC_MFC_AxSub#3](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_3.cpp)]  
   
  This operation adds the **BS_CHECKBOX** style flag, while leaving the default style flag (**WS_CHILD**) of class `COleControl` intact.  
   
 ##  <a name="_core_modifying_the_ondraw_member_function"></a> Modifying the OnDraw Member Function  
  If you want your subclassed control to keep the same appearance as the corresponding Windows control, the `OnDraw` member function for the control should contain only a call to the `DoSuperclassPaint` member function, as in the following example:  
   
- [!code-cpp[NVC_MFC_AxSub#4](../mfc/codesnippet/CPP/mfc-activex-controls-subclassing-a-windows-control_4.cpp)]  
+ [!code-cpp[NVC_MFC_AxSub#4](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_4.cpp)]  
   
  The `DoSuperclassPaint` member function, implemented by `COleControl`, uses the window procedure of the Windows control to draw the control in the specified device context, within the bounding rectangle. This makes the control visible even when it is not active.  
   
@@ -100,12 +100,12 @@ This article describes the process for subclassing a common Windows control to c
   
 -   In the control class .H file, declare a handler function. The function should have a return type of **LRESULT** and two parameters, with types **WPARAM** and **LPARAM**, respectively. For example:  
   
-     [!code-cpp[NVC_MFC_AxSub#5](../mfc/codesnippet/CPP/mfc-activex-controls-subclassing-a-windows-control_5.h)]  
-    [!code-cpp[NVC_MFC_AxSub#6](../mfc/codesnippet/CPP/mfc-activex-controls-subclassing-a-windows-control_6.h)]  
+     [!code-cpp[NVC_MFC_AxSub#5](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_5.h)]  
+    [!code-cpp[NVC_MFC_AxSub#6](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_6.h)]  
   
 -   In the control class .CPP file, add an `ON_MESSAGE` entry to the message map. The parameters of this entry should be the message identifier and the name of the handler function. For example:  
   
-     [!code-cpp[NVC_MFC_AxSub#7](../mfc/codesnippet/CPP/mfc-activex-controls-subclassing-a-windows-control_7.cpp)]  
+     [!code-cpp[NVC_MFC_AxSub#7](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_7.cpp)]  
   
 -   Also in the .CPP file, implement the **OnOcmCommand** member function to process the reflected message. The **wParam** and **lParam** parameters are the same as those of the original window message.  
   

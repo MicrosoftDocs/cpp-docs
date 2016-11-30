@@ -121,7 +121,7 @@ void AccessData(void** ppvData);
  On error, the function throws a [CMemoryException](../../mfc/reference/cmemoryexception-class.md) or [COleException](../../mfc/reference/coleexception-class.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#26](../../mfc/codesnippet/CPP/colesafearray-class_1.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#26](../../mfc/codesnippet/cpp/colesafearray-class_1.cpp)]  
   
 ##  <a name="colesafearray__allocdata"></a>  COleSafeArray::AllocData  
  Allocates memory for a safe array.  
@@ -275,7 +275,7 @@ void Create(
  This function will clear the current array data if necessary. On error, the function throws a [CMemoryException](../../mfc/reference/cmemoryexception-class.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#27](../../mfc/codesnippet/CPP/colesafearray-class_2.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#27](../../mfc/codesnippet/cpp/colesafearray-class_2.cpp)]  
   
 ##  <a name="colesafearray__createonedim"></a>  COleSafeArray::CreateOneDim  
  Creates a new one-dimensional `COleSafeArray` object.  
@@ -307,7 +307,7 @@ void CreateOneDim(
  On error, the function throws a [CMemoryException](../../mfc/reference/cmemoryexception-class.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#28](../../mfc/codesnippet/CPP/colesafearray-class_3.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#28](../../mfc/codesnippet/cpp/colesafearray-class_3.cpp)]  
   
 ##  <a name="colesafearray__destroy"></a>  COleSafeArray::Destroy  
  Destroys an existing array descriptor and all the data in the array.  
@@ -379,7 +379,7 @@ DWORD GetDim();
  The number of dimensions in the safe array.  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#27](../../mfc/codesnippet/CPP/colesafearray-class_2.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#27](../../mfc/codesnippet/cpp/colesafearray-class_2.cpp)]  
   
 ##  <a name="colesafearray__getelement"></a>  COleSafeArray::GetElement  
  Retrieves a single element of the safe array.  
@@ -403,7 +403,7 @@ void GetElement(
  On error, the function throws a [CMemoryException](../../mfc/reference/cmemoryexception-class.md) or [COleException](../../mfc/reference/coleexception-class.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#29](../../mfc/codesnippet/CPP/colesafearray-class_4.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#29](../../mfc/codesnippet/cpp/colesafearray-class_4.cpp)]  
   
 ##  <a name="colesafearray__getelemsize"></a>  COleSafeArray::GetElemSize  
  Retrieves the size of an element in a `COleSafeArray` object.  
@@ -435,7 +435,7 @@ void GetLBound(
  On error, the function throws a [COleException](../../mfc/reference/coleexception-class.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#30](../../mfc/codesnippet/CPP/colesafearray-class_5.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#30](../../mfc/codesnippet/cpp/colesafearray-class_5.cpp)]  
   
 ##  <a name="colesafearray__getonedimsize"></a>  COleSafeArray::GetOneDimSize  
  Returns the number of elements in the one-dimensional `COleSafeArray` object.  
@@ -470,7 +470,7 @@ void GetUBound(
  On error, the function throws a [COleException](../../mfc/reference/coleexception-class.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#31](../../mfc/codesnippet/CPP/colesafearray-class_6.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#31](../../mfc/codesnippet/cpp/colesafearray-class_6.cpp)]  
   
 ##  <a name="colesafearray__lock"></a>  COleSafeArray::Lock  
  Increments the lock count of an array and place a pointer to the array data in the array descriptor.  
@@ -609,7 +609,7 @@ void PutElement(
  On error, the function throws a [CMemoryException](../../mfc/reference/cmemoryexception-class.md) or [COleException](../../mfc/reference/coleexception-class.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#32](../../mfc/codesnippet/CPP/colesafearray-class_7.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#32](../../mfc/codesnippet/cpp/colesafearray-class_7.cpp)]  
   
 ##  <a name="colesafearray__redim"></a>  COleSafeArray::Redim  
  Changes the least significant (rightmost) bound of a safe array.  

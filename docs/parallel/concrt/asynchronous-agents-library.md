@@ -46,7 +46,7 @@ The Asynchronous Agents Library (or just *Agents Library*) provides a programmin
   
  The following illustration shows how two agents use message blocks and message-passing functions to communicate. In this illustration, `agent1` sends a message to `agent2` by using the [concurrency::send](reference/concurrency-namespace-functions.md#send) function and a [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) object. `agent2` uses the [concurrency::receive](reference/concurrency-namespace-functions.md#receive) function to read the message. `agent2` uses the same method to send a message to `agent1`. Dashed arrows represent the flow of data between agents. Solid arrows connect the agents to the message blocks that they write to or read from.  
   
- ![The components of the Agents Library](../../parallel/concrt/media/agent_librarycomp.png "Agent_LibraryComp")  
+ ![The components of the Agents Library](../../parallel/concrt/media/agent_librarycomp.png "agent_librarycomp")  
   
  A code example that implements this illustration is shown later in this topic.  
   
@@ -60,7 +60,7 @@ The Asynchronous Agents Library (or just *Agents Library*) provides a programmin
 ## Example  
  The following example implements the illustration shown earlier in this topic.  
   
- [!code-cpp[concrt-basic-agents#1](../../parallel/concrt/codesnippet/CPP/asynchronous-agents-library_1.cpp)]  
+ [!code-cpp[concrt-basic-agents#1](../../parallel/concrt/codesnippet/cpp/asynchronous-agents-library_1.cpp)]  
   
  This example produces the following output:  
   

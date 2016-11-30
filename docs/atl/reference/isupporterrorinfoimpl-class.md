@@ -69,7 +69,7 @@ template<const IID* piid>  class ATL_NO_VTABLE ISupportErrorInfoImpl :  public I
   
  Class `ISupportErrorInfoImpl` provides a default implementation of **ISupportErrorInfo** and can be used when only a single interface generates errors on an object. For example:  
   
- [!code-cpp[NVC_ATL_COM#48](../../atl/codesnippet/CPP/isupporterrorinfoimpl-class_1.h)]  
+ [!code-cpp[NVC_ATL_COM#48](../../atl/codesnippet/cpp/isupporterrorinfoimpl-class_1.h)]  
   
 ## Inheritance Hierarchy  
  `ISupportErrorInfo`  
@@ -104,7 +104,7 @@ STDMETHOD(GetSize)(int* pnNumThreads);
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#134](../../atl/codesnippet/CPP/isupporterrorinfoimpl-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#134](../../atl/codesnippet/cpp/isupporterrorinfoimpl-class_2.cpp)]  
   
 ##  <a name="ithreadpoolconfig__gettimeout"></a>  IThreadPoolConfig::GetTimeout  
  Call this method to get the maximum time in milliseconds that the thread pool will wait for a thread to shut down.  
@@ -136,7 +136,7 @@ STDMETHOD(SetSize)(int nNumThreads);
   
  If `nNumThreads` is negative, its absolute value will be multiplied by the number of processors in the machine to get the total number of threads.  
   
- If `nNumThreads` is zero, [ATLS_DEFAULT_THREADSPERPROC](http://msdn.microsoft.com/Library/e0dcf107-72a9-4122-abb4-83c63aa7d571) will be multiplied by the number of processors in the machine to get the total number of threads.  
+ If `nNumThreads` is zero, [ATLS_DEFAULT_THREADSPERPROC](http://msdn.microsoft.com/library/e0dcf107-72a9-4122-abb4-83c63aa7d571) will be multiplied by the number of processors in the machine to get the total number of threads.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
