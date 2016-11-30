@@ -493,7 +493,7 @@ BOOL SendRequestEx(
 ### Example  
  This code fragment sends the content of a string to a DLL named MFCISAPI.DLL on the LOCALHOST server. While this example uses only one call to `WriteString`, using multiple calls to send data in blocks is acceptable.  
   
- [!code-cpp[NVC_MFCWinInet#9](../../mfc/codesnippet/CPP/chttpfile-class_1.cpp)]  
+ [!code-cpp[NVC_MFCWinInet#9](../../mfc/codesnippet/cpp/chttpfile-class_1.cpp)]  
   
 ## See Also  
  [CInternetFile Class](../../mfc/reference/cinternetfile-class.md)   

@@ -49,7 +49,7 @@ When an application runs under Windows, the user interacts with documents displa
 ## Frame Windows and Views  
  The MFC framework uses frame windows to contain views. The two components — frame and contents — are represented and managed by two different classes in MFC. A frame-window class manages the frame, and a view class manages the contents. The view window is a child of the frame window. Drawing and other user interaction with the document take place in the view's client area, not the frame window's client area. The frame window provides a visible frame around a view, complete with a caption bar and standard window controls such as a control menu, buttons to minimize and maximize the window, and controls for resizing the window. The "contents" consist of the window's client area, which is fully occupied by a child window — the view. The following figure shows the relationship between a frame window and a view.  
   
- ![Frame window view](../mfc/media/vc37fx1.gif "vc37FX1")  
+ ![Frame window view](../mfc/media/vc37fx1.gif "vc37fx1")  
 Frame Window and View  
   
 ## Frame Windows and Splitter Windows  

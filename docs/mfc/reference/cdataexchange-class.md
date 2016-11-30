@@ -112,7 +112,7 @@ CDataExchange(
  Construct a `CDataExchange` object yourself to store extra information in the data exchange object to pass to your window's [CWnd::DoDataExchange](../../mfc/reference/cwnd-class.md#cwnd__dodataexchange) member function.  
   
 ### Example  
- [!code-cpp[NVC_MFCControlLadenDialog#70](../../mfc/codesnippet/CPP/cdataexchange-class_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#70](../../mfc/codesnippet/cpp/cdataexchange-class_1.cpp)]  
   
 ##  <a name="cdataexchange__fail"></a>  CDataExchange::Fail  
  The framework calls this member function when a dialog data validation (DDV) operation fails.  

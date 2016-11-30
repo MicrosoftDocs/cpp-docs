@@ -137,7 +137,7 @@ virtual BOOL Create(
 - **WS_GROUP** To group controls  
   
 ### Example  
- [!code-cpp[NVC_MFC_CScrollBar#1](../../mfc/reference/codesnippet/CPP/cscrollbar-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CScrollBar#1](../../mfc/reference/codesnippet/cpp/cscrollbar-class_1.cpp)]  
   
 ##  <a name="cscrollbar__cscrollbar"></a>  CScrollBar::CScrollBar  
  Constructs a `CScrollBar` object.  
@@ -150,7 +150,7 @@ CScrollBar();
  After constructing the object, call the **Create** member function to create and initialize the Windows scroll bar.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CScrollBar#2](../../mfc/reference/codesnippet/CPP/cscrollbar-class_2.h)]  
+ [!code-cpp[NVC_MFC_CScrollBar#2](../../mfc/reference/codesnippet/cpp/cscrollbar-class_2.h)]  
   
 ##  <a name="cscrollbar__enablescrollbar"></a>  CScrollBar::EnableScrollBar  
  Enables or disables one or both arrows of a scroll bar.  
@@ -305,7 +305,7 @@ BOOL SetScrollInfo(
  The `SCROLLINFO` structure contains information about a scroll bar, including the minimum and maximum scrolling positions, the page size, and the position of the scroll box (the thumb). See the [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure topic in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about changing the structure defaults.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CScrollBar#3](../../mfc/reference/codesnippet/CPP/cscrollbar-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_CScrollBar#3](../../mfc/reference/codesnippet/cpp/cscrollbar-class_3.cpp)]  
   
 ##  <a name="cscrollbar__setscrollpos"></a>  CScrollBar::SetScrollPos  
  Sets the current position of a scroll box to that specified by `nPos` and, if specified, redraws the scroll bar to reflect the new position.  
@@ -362,7 +362,7 @@ void SetScrollRange(
  The difference between the values specified by `nMinPos` and `nMaxPos` must not be greater than 32,767. The default range for a scroll-bar control is empty (both `nMinPos` and `nMaxPos` are 0).  
   
 ### Example  
- [!code-cpp[NVC_MFC_CScrollBar#4](../../mfc/reference/codesnippet/CPP/cscrollbar-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_CScrollBar#4](../../mfc/reference/codesnippet/cpp/cscrollbar-class_4.cpp)]  
   
 ##  <a name="cscrollbar__showscrollbar"></a>  CScrollBar::ShowScrollBar  
  Shows or hides a scroll bar.  

@@ -59,7 +59,7 @@ BEGIN_SERVICE_MAP(theClass)
 - [SERVICE_ENTRY_CHAIN](#service_entry_chain)   Instructs [IServiceProviderImpl::QueryService](#iserviceproviderimpl__queryservice) to chain to another, specified object.  
   
 ### Example  
- [!code-cpp[NVC_ATL_COM#57](../../atl/codesnippet/CPP/service-map-macros_1.h)]  
+ [!code-cpp[NVC_ATL_COM#57](../../atl/codesnippet/cpp/service-map-macros_1.h)]  
   
 ##  <a name="end_service_map"></a>  END_SERVICE_MAP  
  Marks the end of the service map.  

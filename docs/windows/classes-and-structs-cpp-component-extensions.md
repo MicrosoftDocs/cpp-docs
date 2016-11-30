@@ -95,12 +95,13 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
   
 -   [Instantiating Classes and Structs](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md)  
   
--   [Semantics of the this Pointer in Value and Reference Types](../misc/semantics-of-the-this-pointer-in-value-and-reference-types.md)  
+ 
   
 -   [C++ Stack Semantics for Reference Types](../dotnet/cpp-stack-semantics-for-reference-types.md)  
   
 -   [Classes, Structures, and Unions](../cpp/classes-and-structs-cpp.md)  
   
+
 -   [public and private on Native Classes](../misc/how-to-declare-public-and-private-on-native-classes.md)  
   
 -   [Implicitly Abstract Classes](../misc/implicitly-abstract-classes.md)  

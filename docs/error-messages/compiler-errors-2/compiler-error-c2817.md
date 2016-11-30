@@ -37,4 +37,4 @@ translation.priority.ht:
 # Compiler Error C2817
 return type for 'operator delete' must be 'void'  
   
- An overloaded [operator delete](../Topic/operator%20delete%20\(%3Cnew%3E\).md) function cannot return a value.
+ An overloaded [operator delete](../standard-library/new-operators.md#operator_delete) function cannot return a value.

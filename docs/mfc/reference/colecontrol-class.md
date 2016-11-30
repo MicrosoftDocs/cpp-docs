@@ -1063,7 +1063,7 @@ virtual DWORD GetActivationPolicy();
   
  You may also want an inactive control to be the target of an OLE drag and drop operation. This requires activating the control at the moment the user drags an object over it, so that the control's window can be registered as a drop target. To cause activation to occur during a drag, return the **POINTERINACTIVE_ACTIVATEONDRAG** flag:  
   
- [!code-cpp[NVC_MFCAxCtl#1](../../mfc/reference/codesnippet/CPP/colecontrol-class_1.cpp)]  
+ [!code-cpp[NVC_MFCAxCtl#1](../../mfc/reference/codesnippet/cpp/colecontrol-class_1.cpp)]  
   
  The information communicated by `GetActivationPolicy` should not be cached by a container. Instead, this method should be called every time the mouse enters an inactive object.  
   
@@ -1071,7 +1071,7 @@ virtual DWORD GetActivationPolicy();
   
  Enabling the `IPointerInactive` interface typically means that you want the control to be capable of processing mouse messages at all times. To get this behaviour in a container that doesn't support the `IPointerInactive` interface, you will need to have your control always activated when visible, which means the control should have the **OLEMISC_ACTIVATEWHENVISIBLE** flag among its miscellaneous flags. However, to prevent this flag from taking effect in a container that does support `IPointerInactive`, you can also specify the **OLEMISC_IGNOREACTIVATEWHENVISIBLE** flag:  
   
- [!code-cpp[NVC_MFCAxCtl#10](../../mfc/reference/codesnippet/CPP/colecontrol-class_2.cpp)]  
+ [!code-cpp[NVC_MFCAxCtl#10](../../mfc/reference/codesnippet/cpp/colecontrol-class_2.cpp)]  
   
 ##  <a name="colecontrol__getambientproperty"></a>  COleControl::GetAmbientProperty  
  Gets the value of an ambient property of the container.  
@@ -1174,7 +1174,7 @@ virtual HRESULT GetClassID(LPCLSID pclsid) = 0;
  Nonzero if the call was not successful; otherwise 0.  
   
 ### Remarks  
- Usually implemented by the [IMPLEMENT_OLECREATE_EX]--brokenlink--(../Topic/not%20found.md#implement_olecreate_ex macro).  
+ Usually implemented by the [IMPLEMENT_OLECREATE_EX](run-time-object-model-services.md#implement_olecreate_ex macro).  
   
 ##  <a name="colecontrol__getclientoffset"></a>  COleControl::GetClientOffset  
  Retrieves the difference between the upper left corner of the control's rectangular area and the upper left corner of its client area.  
@@ -1532,7 +1532,7 @@ virtual IDropTarget* GetWindowlessDropTarget();
 ### Remarks  
  Normally, this would require that the control's window be registered as a drop target. But since the control has no window of its own, the container will use its own window as a drop target. The control simply needs to provide an implementation of the `IDropTarget` interface to which the container can delegate calls at the appropriate time. For example:  
   
- [!code-cpp[NVC_MFCAxCtl#2](../../mfc/reference/codesnippet/CPP/colecontrol-class_3.cpp)]  
+ [!code-cpp[NVC_MFCAxCtl#2](../../mfc/reference/codesnippet/cpp/colecontrol-class_3.cpp)]  
   
 ##  <a name="colecontrol__initializeiids"></a>  COleControl::InitializeIIDs  
  Informs the base class of the IIDs the control will use.  
@@ -1651,13 +1651,13 @@ BOOL IsConvertingVBX();
  Nonzero if the control is being converted; otherwise 0.  
   
 ### Remarks  
- When converting a form that uses VBX controls to one that uses OLE controls, special loading code for the OLE controls may be required. For example, if you are loading an instance of your OLE control, you might have a call to [PX_Font]--brokenlink--(../Topic/not%20found.md#px_font) in your `DoPropExchange`:  
+ When converting a form that uses VBX controls to one that uses OLE controls, special loading code for the OLE controls may be required. For example, if you are loading an instance of your OLE control, you might have a call to [PX_Font](persistence-of-ole-controls.md#px_font) in your `DoPropExchange`:  
   
- [!code-cpp[NVC_MFCAxCtl#3](../../mfc/reference/codesnippet/CPP/colecontrol-class_4.cpp)]  
+ [!code-cpp[NVC_MFCAxCtl#3](../../mfc/reference/codesnippet/cpp/colecontrol-class_4.cpp)]  
   
  However, VBX controls did not have a Font object; each font property was saved individually. In this case, you would use `IsConvertingVBX` to distinguish between these two cases:  
   
- [!code-cpp[NVC_MFCAxCtl#4](../../mfc/reference/codesnippet/CPP/colecontrol-class_5.cpp)]  
+ [!code-cpp[NVC_MFCAxCtl#4](../../mfc/reference/codesnippet/cpp/colecontrol-class_5.cpp)]  
   
  Another case would be if your VBX control saved proprietary binary data (in its **VBM_SAVEPROPERTY** message handler), and your OLE control saves its binary data in a different format. If you want your OLE control to be backward-compatible with the VBX control, you could read both the old and new formats using the `IsConvertingVBX` function by distinguishing whether the VBX control or the OLE control was being loaded.  
   
@@ -1934,7 +1934,7 @@ virtual BOOL OnEdit(
   
  This function is typically used as the handler function for an `ON_OLEVERB` message map entry. This makes an "Edit" verb available on the control's "Object" menu. For example:  
   
- [!code-cpp[NVC_MFCAxCtl#5](../../mfc/reference/codesnippet/CPP/colecontrol-class_6.cpp)]  
+ [!code-cpp[NVC_MFCAxCtl#5](../../mfc/reference/codesnippet/cpp/colecontrol-class_6.cpp)]  
   
 ##  <a name="colecontrol__onenabledchanged"></a>  COleControl::OnEnabledChanged  
  Called by the framework when the stock Enabled property value has changed.  
@@ -1989,7 +1989,7 @@ virtual void OnFontChanged();
  Override this function if you want notification after this property changes.  
   
 ### Example  
- [!code-cpp[NVC_MFCAxCtl#6](../../mfc/reference/codesnippet/CPP/colecontrol-class_7.cpp)]  
+ [!code-cpp[NVC_MFCAxCtl#6](../../mfc/reference/codesnippet/cpp/colecontrol-class_7.cpp)]  
   
 ##  <a name="colecontrol__onforecolorchanged"></a>  COleControl::OnForeColorChanged  
  Called by the framework when the stock ForeColor property value has changed.  
@@ -2986,7 +2986,7 @@ void ResetStockProps();
  You can improve a control's binary initialization performance by using `ResetStockProps` and `ResetVersion` to override `COleControl::OnResetState`. See the example below. For further information on optimizing initialization, see [ActiveX Controls: Optimization](../../mfc/mfc-activex-controls-optimization.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCAxCtl#7](../../mfc/reference/codesnippet/CPP/colecontrol-class_8.cpp)]  
+ [!code-cpp[NVC_MFCAxCtl#7](../../mfc/reference/codesnippet/cpp/colecontrol-class_8.cpp)]  
   
 ##  <a name="colecontrol__resetversion"></a>  COleControl::ResetVersion  
  Initializes the version number to specified value.  
@@ -3074,7 +3074,7 @@ void SerializeExtent(CArchive& ar);
  You can improve a control's binary persistence performance by using `SerializeExtent`, `SerializeStockProps`, and `SerializeVersion` to override **COleControl::Serialize**. See the example below. For further information on optimizing initialization, see [ActiveX Controls: Optimization](../../mfc/mfc-activex-controls-optimization.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCAxCtl#8](../../mfc/reference/codesnippet/CPP/colecontrol-class_9.cpp)]  
+ [!code-cpp[NVC_MFCAxCtl#8](../../mfc/reference/codesnippet/cpp/colecontrol-class_9.cpp)]  
   
 ##  <a name="colecontrol__serializestockprops"></a>  COleControl::SerializeStockProps  
  Serializes or initializes the state of the `COleControl` stock properties: Appearance, BackColor, BorderStyle, Caption, Enabled, Font, ForeColor, and Text.  

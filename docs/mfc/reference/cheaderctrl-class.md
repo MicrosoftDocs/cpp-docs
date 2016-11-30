@@ -125,7 +125,7 @@ CHeaderCtrl();
 ```  
   
 ### Example  
- [!code-cpp[NVC_MFC_CHeaderCtrl#1](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl#1](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_1.cpp)]  
   
 ##  <a name="cheaderctrl__clearallfilters"></a>  CHeaderCtrl::ClearAllFilters  
  Clears all filters for a header control.  
@@ -141,7 +141,7 @@ BOOL ClearAllFilters();
  This method implements the behavior of the Win32 message [HDM_CLEARFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775306) with a column value of –1, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CHeaderCtrl#2](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl#2](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_2.cpp)]  
   
 ##  <a name="cheaderctrl__clearfilter"></a>  CHeaderCtrl::ClearFilter  
  Clears the filter for a header control.  
@@ -161,7 +161,7 @@ BOOL ClearFilter(int nColumn);
  This method implements the behavior of the Win32 message [HDM_CLEARFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775306), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CHeaderCtrl#3](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl#3](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_3.cpp)]  
   
 ##  <a name="cheaderctrl__create"></a>  CHeaderCtrl::Create  
  Creates a header control and attaches it to a `CHeaderCtrl` object.  
@@ -222,7 +222,7 @@ virtual BOOL Create(
  If you want to use extended windows styles with your control, call [CreateEx](#cheaderctrl__createex) instead of **Create**.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CHeaderCtrl#4](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl#4](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_4.cpp)]  
   
 ##  <a name="cheaderctrl__createex"></a>  CHeaderCtrl::CreateEx  
  Creates a control (a child window) and associate it with the `CHeaderCtrl` object.  
@@ -292,7 +292,7 @@ BOOL DeleteItem(int nPos);
  Nonzero if successful; otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CHeaderCtrl#5](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl#5](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_5.cpp)]  
   
 ##  <a name="cheaderctrl__drawitem"></a>  CHeaderCtrl::DrawItem  
  Called by the framework when a visual aspect of an owner-draw header control changes.  
@@ -313,7 +313,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
  The application should restore all graphics device interface (GDI) objects selected for the display context supplied in `lpDrawItemStruct` before this member function terminates.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CHeaderCtrl#6](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_6.cpp)]  
   
 ##  <a name="cheaderctrl__editfilter"></a>  CHeaderCtrl::EditFilter  
  Begins to edit the specified filter of a header control.  
@@ -340,7 +340,7 @@ BOOL EditFilter(
  This method implements the behavior of the Win32 message [HDM_EDITFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775312), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CHeaderCtrl#7](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_7.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl#7](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_7.cpp)]  
   
 ##  <a name="cheaderctrl__getbitmapmargin"></a>  CHeaderCtrl::GetBitmapMargin  
  Retrieves the width of the margin of a bitmap in a header control.  
@@ -358,7 +358,7 @@ int GetBitmapMargin() const;
  This member function implements the behavior of the Win32 message [HDM_GETBITMAPMARGIN](http://msdn.microsoft.com/library/windows/desktop/bb775314), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CHeaderCtrl#8](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_8.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl#8](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_8.cpp)]  
   
 ##  <a name="cheaderctrl__getfocuseditem"></a>  CHeaderCtrl::GetFocusedItem  
  Gets the index of the item that has the focus in the current header control.  
@@ -378,12 +378,12 @@ int GetFocusedItem() const;
 ### Example  
  The following code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_9.h)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]  
   
 ### Example  
  The following code example demonstrates the `SetFocusedItem` and `GetFocusedItem` methods. In an earlier section of the code, we created a header control with five columns. However, you can drag a column separator so that the column is not visible. The following example sets and then confirms the last column header as the focus item.  
   
- [!code-cpp[NVC_MFC_CHeaderCtrl_s4#4](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_10.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl_s4#4](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_10.cpp)]  
   
 ##  <a name="cheaderctrl__getimagelist"></a>  CHeaderCtrl::GetImageList  
  Retrieves the handle of an image list used for drawing header items in a header control.  
@@ -401,7 +401,7 @@ CImageList* GetImageList() const;
  This member function implements the behavior of the Win32 message [HDM_GETIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb775332), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. The `CImageList` object to which the returned pointer points is a temporary object and is deleted in the next idle-time processing.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CHeaderCtrl#9](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_11.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl#9](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_11.cpp)]  
   
 ##  <a name="cheaderctrl__getitem"></a>  CHeaderCtrl::GetItem  
  Retrieves information about a header control item.  
@@ -425,7 +425,7 @@ BOOL GetItem(
  Nonzero if successful; otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CHeaderCtrl#10](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_12.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl#10](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_12.cpp)]  
   
 ##  <a name="cheaderctrl__getitemcount"></a>  CHeaderCtrl::GetItemCount  
  Retrieves a count of the items in a header control.  
@@ -469,12 +469,12 @@ BOOL GetItemDropDownRect(
 ### Example  
  The following code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_9.h)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]  
   
 ### Example  
  The following code example demonstrates the `GetItemDropDownRect` method. In an earlier section of the code, we created a header control with five columns. The following code example draws a 3D rectangle around the location on the first column that is reserved for the header drop-down button.  
   
- [!code-cpp[NVC_MFC_CHeaderCtrl_s4#2](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_13.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl_s4#2](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_13.cpp)]  
   
 ##  <a name="cheaderctrl__getitemrect"></a>  CHeaderCtrl::GetItemRect  
  Retrieves the bounding rectangle for a given item in a header control.  
@@ -523,7 +523,7 @@ BOOL GetOrderArray(
  This member function implements the behavior of the Win32 message [HDM_GETORDERARRAY](http://msdn.microsoft.com/library/windows/desktop/bb775343), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. It is provided to support header item ordering.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CHeaderCtrl#11](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_14.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl#11](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_14.cpp)]  
   
 ##  <a name="cheaderctrl__getoverflowrect"></a>  CHeaderCtrl::GetOverflowRect  
  Gets the bounding rectangle of the overflow button of the current header control.  
@@ -551,12 +551,12 @@ BOOL GetOverflowRect(LPRECT lpRect) const;
 ### Example  
  The following code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_9.h)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]  
   
 ### Example  
  The following code example demonstrates the `GetOverflowRect` method. In an earlier section of the code, we created a header control with five columns. However, you can drag a column separator so that the column is not visible. If some columns are not visible, the header control draws an overflow button. The following code example draws a 3D rectangle around the location of the overflow button.  
   
- [!code-cpp[NVC_MFC_CHeaderCtrl_s4#3](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_15.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl_s4#3](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_15.cpp)]  
   
 ##  <a name="cheaderctrl__hittest"></a>  CHeaderCtrl::HitTest  
  Determines which header item, if any, is located at a specified point.  
@@ -580,12 +580,12 @@ int HitTest(LPHDHITTESTINFO* phdhti);
 ### Example  
  The following code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_9.h)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]  
   
 ### Example  
  The following code example demonstrates the `HitTest` method. In an earlier section of this code example, we created a header control with five columns. However, you can drag a column separator so that the column is not visible. This example reports the index of the column if it is visible and -1 if the column is not visible.  
   
- [!code-cpp[NVC_MFC_CHeaderCtrl_s4#1](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_16.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl_s4#1](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_16.cpp)]  
   
 ##  <a name="cheaderctrl__insertitem"></a>  CHeaderCtrl::InsertItem  
  Inserts a new item into a header control at the specified index.  
@@ -607,7 +607,7 @@ int InsertItem(
  Index of the new item if successful; otherwise – 1.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CHeaderCtrl#12](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_17.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl#12](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_17.cpp)]  
   
 ##  <a name="cheaderctrl__layout"></a>  CHeaderCtrl::Layout  
  Retrieves the size and position of a header control within a given rectangle.  
@@ -627,7 +627,7 @@ BOOL Layout(HDLAYOUT* pHeaderLayout);
  This function is used to determine the appropriate dimensions for a new header control that is to occupy the given rectangle.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CHeaderCtrl#13](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_18.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl#13](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_18.cpp)]  
   
 ##  <a name="cheaderctrl__ordertoindex"></a>  CHeaderCtrl::OrderToIndex  
  Retrieves the index value for an item based on its order in the header control.  
@@ -666,7 +666,7 @@ int SetBitmapMargin(int nWidth);
  This member function implements the behavior of the Win32 message [HDM_SETBITMAPMARGIN](http://msdn.microsoft.com/library/windows/desktop/bb775357), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CHeaderCtrl#14](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_19.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl#14](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_19.cpp)]  
   
 ##  <a name="cheaderctrl__setfilterchangetimeout"></a>  CHeaderCtrl::SetFilterChangeTimeout  
  Sets the timeout interval between the time a change takes place in the filter attributes and the posting of an [HDN_FILTERCHANGE](http://msdn.microsoft.com/library/windows/desktop/bb775277) notification.  
@@ -686,7 +686,7 @@ int SetFilterChangeTimeout(DWORD dwTimeOut);
  This member function implements the behavior of the Win32 message [HDM_SETFILTERCHANGETIMEOUT](http://msdn.microsoft.com/library/windows/desktop/bb775359), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CHeaderCtrl#15](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_20.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl#15](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_20.cpp)]  
   
 ##  <a name="cheaderctrl__setfocuseditem"></a>  CHeaderCtrl::SetFocusedItem  
  Sets the focus to a specified header item in the current header control.  
@@ -710,12 +710,12 @@ BOOL SetFocusedItem(int iItem);
 ### Example  
  The following code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_9.h)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]  
   
 ### Example  
  The following code example demonstrates the `SetFocusedItem` and `GetFocusedItem` methods. In an earlier section of the code, we created a header control with five columns. However, you can drag a column separator so that the column is not visible. The following example sets and then confirms the last column header as the focus item.  
   
- [!code-cpp[NVC_MFC_CHeaderCtrl_s4#4](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_10.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl_s4#4](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_10.cpp)]  
   
 ##  <a name="cheaderctrl__sethotdivider"></a>  CHeaderCtrl::SetHotDivider  
  Changes the divider between header items to indicate a manual drag and drop of a header item.  
@@ -741,7 +741,7 @@ int SetHotDivider(int nIndex);
  This member function implements the behavior of the Win32 message [HDM_SETHOTDIVIDER](http://msdn.microsoft.com/library/windows/desktop/bb775363), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. It is provided to support header item drag and drop.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CHeaderCtrl#16](../../mfc/reference/codesnippet/CPP/cheaderctrl-class_21.cpp)]  
+ [!code-cpp[NVC_MFC_CHeaderCtrl#16](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_21.cpp)]  
   
 ##  <a name="cheaderctrl__setimagelist"></a>  CHeaderCtrl::SetImageList  
  Assigns an image list to a header control.  

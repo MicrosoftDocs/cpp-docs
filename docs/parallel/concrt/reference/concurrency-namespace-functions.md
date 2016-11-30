@@ -26,9 +26,9 @@ manager: "ghogen"
 |[parallel_buffered_sort](#parallel_buffered_sort)|[parallel_for](#parallel_for)|[parallel_for_each](#parallel_for_each)|  
 |[parallel_invoke](#parallel_invoke)|[parallel_radixsort](#parallel_radixsort)|[parallel_reduce](#parallel_reduce)|  
 |[parallel_sort](#parallel_sort)|[parallel_transform](#parallel_transform)|[receive](#receive)|  
-|[run_with_cancellation_token](#run_with_cancellation_token)|[send](#send)|[set_ambient_scheduler](#set_ambient_scheduler__concurrency_runtime_)|  
-|[set_task_execution_resources](#set_task_execution_resources)|[swap](#swap)|[task_from_exception](#task_from_exception__concurrency_runtime_)|  
-|[task_from_result](#task_from_result__concurrency_runtime_)|[try_receive](#try_receive)|[wait](#wait)|  
+|[run_with_cancellation_token](#run_with_cancellation_token)|[send](#send)|[set_ambient_scheduler](#set_ambient_scheduler)|  
+|[set_task_execution_resources](#set_task_execution_resources)|[swap](#swap)|[task_from_exception](#task_from_exception)|  
+|[task_from_result](#task_from_result)|[try_receive](#try_receive)|[wait](#wait)|  
 |[when_all](#when_all)|[when_any](#when_any)|  
   
 ##  <a name="alloc"></a>  Alloc  
@@ -217,7 +217,7 @@ void __cdecl Free(_Pre_maybenull_ _Post_invalid_ void* _PAllocation);
 ### Remarks  
  For more information about which scenarios in your application could benefit from using the Caching Suballocator, see [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md).  
   
-##  <a name="get_ambient_scheduler__concurrency_runtime_"></a>  get_ambient_scheduler  
+##  <a name="get_ambient_scheduler"></a>  get_ambient_scheduler  
   
 ```
 inline std::shared_ptr<::Concurrency::scheduler_interface> get_ambient_scheduler();
@@ -1366,7 +1366,7 @@ bool send(
 ### Remarks  
  For more information, see [Message Passing Functions](../../../parallel/concrt/message-passing-functions.md).  
   
-##  <a name="set_ambient_scheduler__concurrency_runtime_"></a>  set_ambient_scheduler  
+##  <a name="set_ambient_scheduler"></a>  set_ambient_scheduler  
   
 ```
 inline void set_ambient_scheduler(std::shared_ptr<::Concurrency::scheduler_interface> _Scheduler);
@@ -1436,7 +1436,7 @@ inline void swap(
   
  This method is not concurrency-safe. You must ensure that no other threads are performing operations on either of the concurrent vectors when you call this method.  
   
-##  <a name="task_from_exception__concurrency_runtime_"></a>  task_from_exception  
+##  <a name="task_from_exception"></a>  task_from_exception  
   
 ```
 template<typename _TaskType, typename _ExType>
@@ -1453,7 +1453,7 @@ task<_TaskType> task_from_exception(
   
 ### Return Value  
   
-##  <a name="task_from_result__concurrency_runtime_"></a>  task_from_result  
+##  <a name="task_from_result"></a>  task_from_result  
   
 ```
 template<typename T>

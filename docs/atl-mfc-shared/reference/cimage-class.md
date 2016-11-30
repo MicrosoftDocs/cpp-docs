@@ -151,7 +151,8 @@ pDC->Rectangle(0, 40, 100, 50);
 m_myImage.ReleaseDC();
 ```  
   
- When you use `CImage` in an MFC project, note which member functions in your project expect a pointer to a [CBitmap](../../mfc/reference/cbitmap-class.md) object. If you want to use `CImage` with such a function, like [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#cmenu__appendmenu, use [CBitmap::FromHandle](../../mfc/reference/cbitmap-class.md#cbitmap__fromhandle, pass it your `CImage` `HBITMAP`, and use the returned `CBitmap*`.  
+ When you use `CImage` in an MFC project, note which member functions in your project expect a pointer to a [CBitmap](../../mfc/reference/cbitmap-class.md) object. If you want to use `CImage` with such a function, like [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#cmenu__appendmenu), use [CBitmap::FromHandle](../../mfc/reference/cbitmap-class.md#cbitmap__fromhandle), pass it your `CImage` `HBITMAP`, and use the returned `CBitmap*`.  
+
   
 ## Example  
 ```cpp
@@ -166,6 +167,7 @@ void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
       point.y, this);
 }
 ```  
+
   
  Through `CImage`, you have access to the actual bits of a DIB section. You can use a `CImage` object anywhere you previously used a Win32 HBITMAP or DIB section.  
   
@@ -180,7 +182,6 @@ void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
 |[TransparentBlt](#cimage__transparentblt)|Works with only Windows 2000, Windows 98, and later systems.|  
 |[Draw](#cimage__draw)|Supports transparency with only Windows 2000, Windows 98, and later systems.|  
   
-
  You can use `CImage` from either MFC or ATL.  
   
 > [!NOTE]
@@ -275,7 +276,7 @@ BOOL AlphaBlend(HDC hDestDC,
  Alpha-blend bitmaps support color blending on a per-pixel basis.  
   
  When `bBlendOp` is set to the default of **AC_SRC_OVER**, the source bitmap is placed over the destination bitmap based on the alpha values of the source pixels.  
-    
+
 ##  <a name="cimage__attach"></a>  CImage::Attach  
  Attaches `hBitmap` to a `CImage` object.  
   
@@ -458,10 +459,12 @@ BOOL CreateEx(int nWidth,
 ### Example  
  The following example creates a 100x100 pixel bitmap, using 16 bits to encode each pixel. In a given 16-bit pixel, bits 0-3 encode the red component, bits 4-7 encode green, and bits 8-11 encode blue. The remaining 4 bits are unused.  
   
+
 ```cpp
 DWORD adwBitmasks[3] = { 0x0000000f, 0x000000f0, 0x00000f00 };
 m_myImage.CreateEx(100, 100, 16, BI_BITFIELDS, adwBitmasks, 0);
 ```
+
 
 ##  <a name="cimage__destroy"></a>  CImage::Destroy  
  Detaches the bitmap from the `CImage` object and destroys the bitmap.  
@@ -649,12 +652,14 @@ static HRESULT GetExporterFilterString(CSimpleString& strExporters,
   
  For example:  
   
+
  ```cpp
 //First filter in the list will be titled "All Image Files", and
 //will accept files with any extension supported by any exporter.
 CImage::GetExporterFilterString( strExporters, aguidFileTypes, 
     _T("All Image Files"));
 ```  
+
   
  `dwExclude`  
  Set of bit flags specifying which file types to exclude from the list. Allowable flags are:  
@@ -736,12 +741,14 @@ static HRESULT GetImporterFilterString(CSimpleString& strImporters,
   
  For example:  
   
+
  ```cpp
 //First filter in the list will be titled "All Image Files", and
 //will accept files with any extension supported by any importer.
 CImage::GetImporterFilterString( strImporters, aguidFileTypes, 
     _T("All Image Files"));
 ```  
+
   
  `dwExclude`  
  Set of bit flags specifying which file types to exclude from the list. Allowable flags are:  
@@ -942,6 +949,7 @@ static BOOL IsTransparencySupported() throw();
   
  If the application is compiled for use with operating systems before Windows 2000 or Windows 98, this method will always return 0, even on newer operating systems.  
   
+
 ##  <a name="cimage__load"></a>  CImage::Load  
  Loads an image.  
   
@@ -1463,9 +1471,9 @@ BOOL TransparentBlt(HDC hDestDC,
 ### Remarks  
  `TransparentBlt` is supported for source bitmaps of 4 bits per pixel and 8 bits per pixel. Use [CImage::AlphaBlend](#cimage__alphablend) to specify 32 bits-per-pixel bitmaps with transparency.  
   
- This method is applicable to Microsoft Windows 2000, Windows 98, and later systems.  
   
 ### Example  
+
 ```cpp
 // Performs a transparent blit from the source image to the destination 
 // image using the images' current transparency settings
@@ -1493,8 +1501,14 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage, int xDest, int yDest,
    return bResult;
 }
 ```
+
   
 ## See Also  
+ [MMXSwarm Sample](../../top/visual-cpp-samples.md)   
+ [SimpleImage Sample](../../top/visual-cpp-samples.md)   
+ [Device-Independent Bitmaps](http://msdn.microsoft.com/library/windows/desktop/dd183562)   
+ [CreateDIBSection](http://msdn.microsoft.com/library/windows/desktop/dd183494)   
+ [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)
  [Device-Independent Bitmaps](http://msdn.microsoft.com/library/windows/desktop/dd183562)   
  [CreateDIBSection](http://msdn.microsoft.com/library/windows/desktop/dd183494)   
 

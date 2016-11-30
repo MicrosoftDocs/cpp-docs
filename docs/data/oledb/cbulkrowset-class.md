@@ -72,7 +72,7 @@ class CBulkRowset : public CRowset<TAccessor>
 ## Example  
  The following example demonstrates use of the `CBulkRowset` class.  
   
- [!code-cpp[NVC_OLEDB_Consumer#1](../../data/oledb/codesnippet/CPP/cbulkrowset-class_1.cpp)]  
+ [!code-cpp[NVC_OLEDB_Consumer#1](../../data/oledb/codesnippet/cpp/cbulkrowset-class_1.cpp)]  
   
 ## Requirements  
  **Header:** atldbcli.h  

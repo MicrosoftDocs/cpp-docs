@@ -121,4 +121,5 @@ scoped_d3d_access_lock& operator= (scoped_d3d_access_lock&& _Other);
  A reference to this `scoped_accelerator_view_lock`.  
 
 ## See Also  
- [Concurrency::direct3d Namespace] --brokenlink-- (#Concurrency::direct3d%20Namespace.md)
+ [concurrency::direct3d Namespace](concurrency-direct3d-namespace.md)
+>>>>>>> master

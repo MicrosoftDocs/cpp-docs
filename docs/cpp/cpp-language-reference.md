@@ -71,7 +71,7 @@ For an overview of Modern C++ programming practices, see [Welcome Back to C++](w
  [Statements](../cpp/statements-cpp.md)  
  Expression, null, compound, selection, iteration, jump, and declaration statements.  
   
- [Declarations](declarations-and-definitions-cpp.md)  
+ [Declarations and Definitions](declarations-and-definitions-cpp.md)  
  Storage-class specifiers, function definitions, initializations, enumerations, class, struct, and union declarations, and typedef declarations. Also, inline functions, const keyword, namespaces.  
   
  [Declarators](http://msdn.microsoft.com/en-us/8a7b9b51-92bd-4ac0-b3fe-0c4abe771838)  
@@ -89,7 +89,7 @@ For an overview of Modern C++ programming practices, see [Welcome Back to C++](w
  [Special Member Functions](../misc/special-member-functions-cpp.md)  
  Special functions unique to class types: constructors, destructors, conversion functions, assignment operator, operator new and operator delete functions.  
   
- [Overloading](operator-overloading-cpp.md)  
+ [Overloading](operator-overloading.md)  
  Overloaded operators, rules for operator overloading.  
   
  [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)  

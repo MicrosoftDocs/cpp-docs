@@ -80,7 +80,8 @@ The Microsoft Foundation Class Library can be divided into two major sections: (
   
 -   [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md)  
   
--   [CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration](../../mfc/reference/cmfcimagepaintarea-class.md#cmfcimagepaintarea__image_edit_mode%20enumeration)  
+-   [CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration](../../mfc/reference/cmfcimagepaintarea-class.md#image_edit_mode_enumeration)  
+
   
 ## Database  
   
@@ -114,7 +115,7 @@ The Microsoft Foundation Class Library can be divided into two major sections: (
   
 -   [Dispatch maps](../../mfc/reference/dispatch-maps.md)  
   
- In addition, MFC provides a function called [AfxEnableControlContainer](http://msdn.microsoft.com/Library/7aa0b9d2-5329-4bc3-9d41-856e30fe2c2b) that enables any OLE container developed with MFC 4.0 to fully support embedded OLE controls.  
+ In addition, MFC provides a function called [AfxEnableControlContainer](http://msdn.microsoft.com/library/7aa0b9d2-5329-4bc3-9d41-856e30fe2c2b) that enables any OLE container developed with MFC 4.0 to fully support embedded OLE controls.  
   
 ## OLE Controls  
   

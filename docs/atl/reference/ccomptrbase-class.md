@@ -79,7 +79,7 @@ template <class T> class CComPtrBase
 |----------|-----------------|  
 |[CComPtrBase::operator T*](#ccomptrbase__operator_t_star)|The cast operator.|  
 |[CComPtrBase::operator !](#ccomptrbase__operator_not)|The NOT operator.|  
-|[CComPtrBase::operator &](#ccomptrbase__operato_amp)|The & operator.|  
+|[CComPtrBase::operator &](#ccomptrbase__operator_amp)|The & operator.|  
 |[CComPtrBase::operator *](#ccomptrbase__operator_star)|The * operator.|  
 |[CComPtrBase::operator \<](#ccomptrbase__operator_div)|The less-than operator.|  
 |[CComPtrBase::operator ==](#ccomptrbase__operator_eq_eq)|The equality operator.|  
@@ -121,7 +121,7 @@ HRESULT Advise(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- See [AtlAdvise](http://msdn.microsoft.com/Library/625a2f03-6b7f-4761-be5d-d2871d1d3254) for more information.  
+ See [AtlAdvise](http://msdn.microsoft.com/library/625a2f03-6b7f-4761-be5d-d2871d1d3254) for more information.  
   
 ##  <a name="ccomptrbase__attach"></a>  CComPtrBase::Attach  
  Call this method to take ownership of an existing pointer.  
@@ -272,7 +272,8 @@ bool operator== (T* pT) const throw();
 ### Return Value  
  Returns true if `CComPtrBase` and *pT* point to the same object, false otherwise.  
   
-##  <a name="ccomptrbase__operator_-_gt"></a>  CComPtrBase::operator -&gt;  
+##  <a name="ccomptrbase__operator_ptr_"></a>  CComPtrBase::operator -&gt;  
+
  The pointer-to-member operator.  
   
 ```
@@ -366,7 +367,7 @@ HRESULT SetSite(IUnknown* punkParent) throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This method calls [AtlSetChildSite](http://msdn.microsoft.com/Library/2a8ece19-6bfd-4e89-9d1d-e5a78f95e2df).  
+ This method calls [AtlSetChildSite](http://msdn.microsoft.com/library/2a8ece19-6bfd-4e89-9d1d-e5a78f95e2df).  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

@@ -54,7 +54,7 @@ void Close( );
 ## Example  
  The following example shows how you can call `Close` and `ReleaseCommand` when you execute the same command repeatedly.  
   
- [!code-cpp[NVC_OLEDB_Consumer#2](../../data/oledb/codesnippet/CPP/ccommand-close_1.cpp)]  
+ [!code-cpp[NVC_OLEDB_Consumer#2](../../data/oledb/codesnippet/cpp/ccommand-close_1.cpp)]  
   
 ## Requirements  
  **Header:** atldbcli.h  

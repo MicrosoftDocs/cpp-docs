@@ -91,7 +91,7 @@ explicit CWindowDC(CWnd* pWnd);
  An exception (of type `CResourceException`) is thrown if the Windows `GetWindowDC` call fails. A device context may not be available if Windows has already allocated all of its available device contexts. Your application competes for the five common display contexts available at any given time under Windows.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#188](../../mfc/codesnippet/CPP/cwindowdc-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#188](../../mfc/codesnippet/cpp/cwindowdc-class_1.cpp)]  
   
 ##  <a name="cwindowdc__m_hwnd"></a>  CWindowDC::m_hWnd  
  The `HWND` of the `CWnd` pointer is used to construct the `CWindowDC` object.  

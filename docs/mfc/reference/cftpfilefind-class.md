@@ -70,7 +70,7 @@ class CFtpFileFind : public CFileFind
 ## Example  
  The following code demonstrates how to enumerate all files in the current directory of the FTP server.  
   
- [!code-cpp[NVC_MFCWinInet#8](../../mfc/codesnippet/CPP/cftpfilefind-class_1.cpp)]  
+ [!code-cpp[NVC_MFCWinInet#8](../../mfc/codesnippet/cpp/cftpfilefind-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

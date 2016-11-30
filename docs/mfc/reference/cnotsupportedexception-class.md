@@ -78,10 +78,10 @@ CNotSupportedException();
 ```  
   
 ### Remarks  
- Do not use this constructor directly, but rather call the global function [AfxThrowNotSupportedException](../Topic/Exception%20Processing.md#not_found.md#afxthrownotsupportedexception. for more information about exception processing, see the article [exceptions]--brokenlink--(../topic/exception_handling_in_mfc).  
+ Do not use this constructor directly, but rather call the global function [AfxThrowNotSupportedException](exception-processing.md#afxthrownotsupportedexception). for more information about exception processing, see the article [Exception Handling in MFC](../exception-handling-in-mfc.md).  
   
 ## See Also  
- [CException Class](../Topic/CException%20Class.md)   
- [Hierarchy Chart](../Topic/Hierarchy%20Chart.md)
+ [CException Class](cexception-class.md)   
+ [Hierarchy Chart](../hierarchy-chart.md)
 
 

@@ -563,7 +563,7 @@ bool GetProcessToken(
  Returns `true` on success, `false` on failure.  
   
 ### Remarks  
- Calls the [OpenProcessToken](http://msdn.microsoft.com/library/aa379295\(VS.85\).aspx) Win32 function.  
+ Calls the [OpenProcessToken](http://msdn.microsoft.com/library/aa379295\(vs.85\).aspx) Win32 function.  
   
 ##  <a name="caccesstoken__getprofile"></a>  CAccessToken::GetProfile  
  Call this method to get the handle pointing to the user profile associated with the `CAccessToken` object.  

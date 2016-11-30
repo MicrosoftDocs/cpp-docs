@@ -174,7 +174,7 @@ void Construct(
  You must use `Construct` when you work with arrays, and you must call **Construct** for each member of the array so that the data members are assigned proper values.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#112](../../mfc/codesnippet/CPP/cpropertypage-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#112](../../mfc/codesnippet/cpp/cpropertypage-class_1.cpp)]  
   
 ##  <a name="cpropertypage__cpropertypage"></a>  CPropertyPage::CPropertyPage  
  Constructs a `CPropertyPage` object.  
@@ -240,7 +240,7 @@ CPropertyPage(
  If you have multiple parameters (for example, if you are using an array), use [CPropertySheet::Construct](../../mfc/reference/cpropertysheet-class.md#cpropertysheet__construct) instead of `CPropertyPage`.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#113](../../mfc/codesnippet/CPP/cpropertypage-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#113](../../mfc/codesnippet/cpp/cpropertypage-class_2.cpp)]  
   
 ##  <a name="cpropertypage__getpsp"></a>  CPropertyPage::GetPSP  
  Retrieves the Windows [PROPSHEETPAGE](http://msdn.microsoft.com/library/windows/desktop/bb774548) structure associated with the `CPropertyPage` object.  
@@ -269,7 +269,7 @@ PROPSHEETPAGE m_psp;
  For more information on this structure, including a listing of its members, see **PROPSHEETPAGE** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#128](../../mfc/codesnippet/CPP/cpropertypage-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#128](../../mfc/codesnippet/cpp/cpropertypage-class_3.cpp)]  
   
 ##  <a name="cpropertypage__onapply"></a>  CPropertyPage::OnApply  
  This member function is called by the framework when the user chooses the OK or the Apply Now button.  
@@ -304,7 +304,7 @@ virtual void OnCancel();
  Override this member function to perform Cancel button actions. The default negates any changes that have been made.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#114](../../mfc/codesnippet/CPP/cpropertypage-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDocView#114](../../mfc/codesnippet/cpp/cpropertypage-class_4.cpp)]  
   
 ##  <a name="cpropertypage__onkillactive"></a>  CPropertyPage::OnKillActive  
  This member function is called by the framework when the page is no longer the active page.  
@@ -324,7 +324,7 @@ virtual BOOL OnKillActive();
  After this member function returns successfully, the framework will call the page's [OnOK](#cpropertypage__onok) function.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#115](../../mfc/codesnippet/CPP/cpropertypage-class_5.cpp)]  
+ [!code-cpp[NVC_MFCDocView#115](../../mfc/codesnippet/cpp/cpropertypage-class_5.cpp)]  
   
 ##  <a name="cpropertypage__onok"></a>  CPropertyPage::OnOK  
  This member function is called by the framework when the user chooses either the OK or the Apply Now button, immediately after the framework calls [OnKillActive](#cpropertypage__onkillactive).  
@@ -341,7 +341,7 @@ virtual void OnOK();
  The default implementation of this member function marks the page as "clean" to reflect that the data was updated in the `OnKillActive` function.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#116](../../mfc/codesnippet/CPP/cpropertypage-class_6.cpp)]  
+ [!code-cpp[NVC_MFCDocView#116](../../mfc/codesnippet/cpp/cpropertypage-class_6.cpp)]  
   
 ##  <a name="cpropertypage__onquerycancel"></a>  CPropertyPage::OnQueryCancel  
  This member function is called by the framework when the user clicks the Cancel button and before the cancel action has taken place.  
@@ -359,7 +359,7 @@ virtual BOOL OnQueryCancel();
  The default implementation of `OnQueryCancel` returns **TRUE**.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#117](../../mfc/codesnippet/CPP/cpropertypage-class_7.cpp)]  
+ [!code-cpp[NVC_MFCDocView#117](../../mfc/codesnippet/cpp/cpropertypage-class_7.cpp)]  
   
 ##  <a name="cpropertypage__onreset"></a>  CPropertyPage::OnReset  
  This member function is called by the framework when the user chooses the Cancel button.  
@@ -412,7 +412,7 @@ virtual LRESULT OnWizardBack();
  For more information on how to make a wizard-type property sheet, see [CPropertySheet::SetWizardMode](../../mfc/reference/cpropertysheet-class.md#cpropertysheet__setwizardmode).  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#118](../../mfc/codesnippet/CPP/cpropertypage-class_8.cpp)]  
+ [!code-cpp[NVC_MFCDocView#118](../../mfc/codesnippet/cpp/cpropertypage-class_8.cpp)]  
   
 ##  <a name="cpropertypage__onwizardfinish"></a>  CPropertyPage::OnWizardFinish  
  This member function is called by the framework when the user clicks on the Finish button in a wizard.  
@@ -434,13 +434,13 @@ virtual BOOL OnWizardFinish();
  For more information on how to make a wizard-type property sheet, see [CPropertySheet::SetWizardMode](../../mfc/reference/cpropertysheet-class.md#cpropertysheet__setwizardmode).  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#119](../../mfc/codesnippet/CPP/cpropertypage-class_9.cpp)]  
+ [!code-cpp[NVC_MFCDocView#119](../../mfc/codesnippet/cpp/cpropertypage-class_9.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#120](../../mfc/codesnippet/CPP/cpropertypage-class_10.cpp)]  
+ [!code-cpp[NVC_MFCDocView#120](../../mfc/codesnippet/cpp/cpropertypage-class_10.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#121](../../mfc/codesnippet/CPP/cpropertypage-class_11.cpp)]  
+ [!code-cpp[NVC_MFCDocView#121](../../mfc/codesnippet/cpp/cpropertypage-class_11.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#122](../../mfc/codesnippet/CPP/cpropertypage-class_12.cpp)]  
+ [!code-cpp[NVC_MFCDocView#122](../../mfc/codesnippet/cpp/cpropertypage-class_12.cpp)]  
   
 ##  <a name="cpropertypage__onwizardnext"></a>  CPropertyPage::OnWizardNext  
  This member function is called by the framework when the user clicks on the Next button in a wizard.  
@@ -458,7 +458,7 @@ virtual LRESULT OnWizardNext();
  For more information on how to make a wizard-type property sheet, see [CPropertySheet::SetWizardMode](../../mfc/reference/cpropertysheet-class.md#cpropertysheet__setwizardmode).  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#123](../../mfc/codesnippet/CPP/cpropertypage-class_13.cpp)]  
+ [!code-cpp[NVC_MFCDocView#123](../../mfc/codesnippet/cpp/cpropertypage-class_13.cpp)]  
   
 ##  <a name="cpropertypage__querysiblings"></a>  CPropertyPage::QuerySiblings  
  Call this member function to forward a message to each page in the property sheet.  
@@ -483,11 +483,11 @@ LRESULT QuerySiblings(
  If a page returns a nonzero value, the property sheet does not send the message to subsequent pages.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#124](../../mfc/codesnippet/CPP/cpropertypage-class_14.cpp)]  
+ [!code-cpp[NVC_MFCDocView#124](../../mfc/codesnippet/cpp/cpropertypage-class_14.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#125](../../mfc/codesnippet/CPP/cpropertypage-class_15.cpp)]  
+ [!code-cpp[NVC_MFCDocView#125](../../mfc/codesnippet/cpp/cpropertypage-class_15.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#126](../../mfc/codesnippet/CPP/cpropertypage-class_16.cpp)]  
+ [!code-cpp[NVC_MFCDocView#126](../../mfc/codesnippet/cpp/cpropertypage-class_16.cpp)]  
   
 ##  <a name="cpropertypage__setmodified"></a>  CPropertyPage::SetModified  
  Call this member function to enable or disable the Apply Now button, based on whether the settings in the property page should be applied to the appropriate external object.  
@@ -504,7 +504,7 @@ void SetModified(BOOL bChanged = TRUE);
  The framework keeps track of which pages are "dirty," that is, property pages for which you have called **SetModified( TRUE )**. The Apply Now button will always be enabled if you call **SetModified( TRUE )** for one of the pages. The Apply Now button will be disabled when you call **SetModified( FALSE )** for one of the pages, but only if none of the other pages is "dirty."  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#127](../../mfc/codesnippet/CPP/cpropertypage-class_17.cpp)]  
+ [!code-cpp[NVC_MFCDocView#127](../../mfc/codesnippet/cpp/cpropertypage-class_17.cpp)]  
   
 ## See Also  
  [MFC Sample CMNCTRL1](../../top/visual-cpp-samples.md)   

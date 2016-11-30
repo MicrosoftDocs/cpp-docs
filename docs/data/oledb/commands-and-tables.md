@@ -42,7 +42,7 @@ translation.priority.ht:
 # Commands and Tables
 Commands and tables allow you to access rowsets; that is, open rowsets, execute commands, and bind columns. The [CCommand](../../data/oledb/ccommand-class.md) and [CTable](../../data/oledb/ctable-class.md) classes instantiate the command and table objects, respectively. These classes derive from [CAccessorRowset](../../data/oledb/caccessorrowset-class.md) as shown in the following figure.  
   
- ![CCommand and CTable](../../data/oledb/media/vccommandstables.gif "vcCommandsTables")  
+ ![CCommand and CTable](../../data/oledb/media/vccommandstables.gif "vccommandstables")  
 Command and Table Classes  
   
  In the previous table, `TAccessor` can be any accessor type listed in [Accessor Types](../../data/oledb/accessors-and-rowsets.md). *TRowset* can be any rowset type listed in [Rowset Types](../../data/oledb/accessors-and-rowsets.md). *TMultiple* specifies the result type (a single or multiple result set).  

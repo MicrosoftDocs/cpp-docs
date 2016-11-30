@@ -187,7 +187,7 @@ CWinApp* AFXAPI AfxGetApp();
  If this method returns NULL, it might indicate that the applicationâ€™s main window has not been fully initialized yet. It might also indicate a problem.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#126](../../mfc/reference/codesnippet/CPP/application-information-and-management_1.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#126](../../mfc/reference/codesnippet/cpp/application-information-and-management_1.cpp)]  
   
 ##  <a name="afxgetappname"></a>  AfxGetAppName  
  The string returned by this function can be used for diagnostic messages or as a root for temporary string names.  
@@ -200,7 +200,7 @@ LPCTSTR AFXAPI AfxGetAppName();
  A null-terminated string containing the application's name.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#127](../../mfc/reference/codesnippet/CPP/application-information-and-management_2.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#127](../../mfc/reference/codesnippet/cpp/application-information-and-management_2.cpp)]  
   
 ##  <a name="afxgetinstancehandle"></a>  AfxGetInstanceHandle  
  This function allows you to retrieve the instance handle of the current application.  
@@ -216,7 +216,7 @@ HINSTANCE  AFXAPI AfxGetInstanceHandle();
  `AfxGetInstanceHandle` always returns the `HINSTANCE` of your executable file (.EXE) unless it is called from within a DLL linked with the USRDLL version of MFC. In this case, it returns an `HINSTANCE` to the DLL.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#128](../../mfc/reference/codesnippet/CPP/application-information-and-management_3.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#128](../../mfc/reference/codesnippet/cpp/application-information-and-management_3.cpp)]  
   
 ##  <a name="afxgetmainwnd"></a>  AfxGetMainWnd  
  If your application is an OLE server, call this function to retrieve a pointer to the active main window of the application instead of directly referring to the [m_pMainWnd](../../mfc/reference/cwinthread-class.md#cwinthread__m_pmainwnd) member of the application object.  
@@ -236,7 +236,7 @@ CWnd* AFXAPI AfxGetMainWnd();
  If your application is not an OLE server, then calling this function is equivalent to directly referring to the `m_pMainWnd` member of your application object.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#129](../../mfc/reference/codesnippet/CPP/application-information-and-management_4.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#129](../../mfc/reference/codesnippet/cpp/application-information-and-management_4.cpp)]  
   
 ##  <a name="afxgetperuserregistration"></a>  AfxGetPerUserRegistration  
  Use this function to determine whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.  
@@ -264,7 +264,7 @@ extern HINSTANCE  AfxGetResourceHandle();
  An `HINSTANCE` handle where the default resources of the application are loaded.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#130](../../mfc/reference/codesnippet/CPP/application-information-and-management_5.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#130](../../mfc/reference/codesnippet/cpp/application-information-and-management_5.cpp)]  
   
 ##  <a name="afxgetthread"></a>  AfxGetThread  
  Call this function to get a pointer to the [CWinThread](../../mfc/reference/cwinthread-class.md) object representing the currently executing thread.  
@@ -283,7 +283,7 @@ CWinThread* AfxGetThread();
 >  If you are porting an MFC project calling `AfxGetThread` from Visual C++ versions 4.2, 5.0, or 6.0, `AfxGetThread` calls [AfxGetApp](#afxgetapp) if no thread is found. In Visual C+ .NET and later, `AfxGetThread` returns **NULL** if no thread was found. If you want the application thread, you must call `AfxGetApp`.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#132](../../mfc/reference/codesnippet/CPP/application-information-and-management_6.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#132](../../mfc/reference/codesnippet/cpp/application-information-and-management_6.cpp)]  
   
 ##  <a name="afxinitrichedit"></a>  AfxInitRichEdit  
  Call this function to initialize the rich edit control (version 1.0) for the application.  
@@ -351,9 +351,9 @@ HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
  Using `AfxLoadLibrary` in an application requires you to dynamically link to the DLL version of MFC; the header file for `AfxLoadLibrary`, Afxdll_.h, is only included if MFC is linked to the application as a DLL. This is by design because you have to link to the DLL version of MFC to use or create extension DLLs.  
   
 ### Example  
- [!code-cpp[NVC_MFC_DLLUser#1](../../mfc/reference/codesnippet/CPP/application-information-and-management_7.cpp)]  
-[!code-cpp[NVC_MFC_DLLUser#2](../../mfc/reference/codesnippet/CPP/application-information-and-management_8.cpp)]  
-[!code-cpp[NVC_MFC_DLLUser#3](../../mfc/reference/codesnippet/CPP/application-information-and-management_9.cpp)]  
+ [!code-cpp[NVC_MFC_DLLUser#1](../../mfc/reference/codesnippet/cpp/application-information-and-management_7.cpp)]  
+[!code-cpp[NVC_MFC_DLLUser#2](../../mfc/reference/codesnippet/cpp/application-information-and-management_8.cpp)]  
+[!code-cpp[NVC_MFC_DLLUser#3](../../mfc/reference/codesnippet/cpp/application-information-and-management_9.cpp)]  
   
 ##  <a name="afxregisterclass"></a>  AfxRegisterClass  
  Use this function to register window classes in a DLL that uses MFC.  
@@ -375,7 +375,7 @@ BOOL AFXAPI AfxRegisterClass(WNDCLASS* lpWndClass);
  In non-DLL builds, the `AfxRegisterClass` identifier is defined as a macro that maps to the Windows function **RegisterClass**, since classes registered in an application are automatically unregistered. If you use `AfxRegisterClass` instead of **RegisterClass**, your code can be used without change both in an application and in a DLL.  
   
 ### Example  
- [!code-cpp[NVC_MFC_DLL#3](../../atl-mfc-shared/codesnippet/CPP/application-information-and-management_10.cpp)]  
+ [!code-cpp[NVC_MFC_DLL#3](../../atl-mfc-shared/codesnippet/cpp/application-information-and-management_10.cpp)]  
   
 ##  <a name="afxregisterwndclass"></a>  AfxRegisterWndClass  
  Allows you to register your own window classes.  
@@ -428,7 +428,7 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
  Refer to Technical Note [TN001: Window Class Registration](../../mfc/tn001-window-class-registration.md) for more information on window class registration and the `AfxRegisterWndClass` function.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#134](../../mfc/reference/codesnippet/CPP/application-information-and-management_11.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#134](../../mfc/reference/codesnippet/cpp/application-information-and-management_11.cpp)]  
   
 ##  <a name="afxsetperuserregistration"></a>  AfxSetPerUserRegistration  
  Sets whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.  
@@ -466,7 +466,7 @@ AFXAPI AfxSetResourceHandle(HINSTANCE hInstResource);
  The instance or module handle to an .EXE or DLL file from which the application's resources are loaded.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#135](../../mfc/reference/codesnippet/CPP/application-information-and-management_12.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#135](../../mfc/reference/codesnippet/cpp/application-information-and-management_12.cpp)]  
   
 ##  <a name="afxsocketinit"></a>  AfxSocketInit  
  Call this function in your `CWinApp::InitInstance` override to initialize Windows Sockets.  
@@ -525,7 +525,7 @@ BOOL AFXAPI AfxWinInit(
 >  When it creates an activation context for an assembly, MFC uses a manifest resource provided by the user module. The activation context is created in `AfxWinInit`. For more information, see [Support for Activation Contexts in the MFC Module State](../../mfc/support-for-activation-contexts-in-the-mfc-module-state.md).  
   
 ### Example  
- [!code-cpp[NVC_MFC_AfxWinInit#1](../../mfc/reference/codesnippet/CPP/application-information-and-management_13.cpp)]  
+ [!code-cpp[NVC_MFC_AfxWinInit#1](../../mfc/reference/codesnippet/cpp/application-information-and-management_13.cpp)]  
   
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)   

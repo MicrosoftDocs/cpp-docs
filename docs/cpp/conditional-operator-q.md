@@ -59,7 +59,7 @@ expression ? expression : expression
   
 -   If both operands are of the same type, the result is of that type.  
   
--   If both operands are of arithmetic or enumeration types, the usual arithmetic conversions (covered in [Arithmetic Conversions](../misc/arithmetic-conversions.md)) are performed to convert them to a common type.  
+-   If both operands are of arithmetic or enumeration types, the usual arithmetic conversions (covered in [Standard Conversions](standard-conversions.md)) are performed to convert them to a common type.  
   
 -   If both operands are of pointer types or if one is a pointer type and the other is a constant expression that evaluates to 0, pointer conversions are performed to convert them to a common type.  
   

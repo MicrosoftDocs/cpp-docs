@@ -95,6 +95,7 @@ template <class T>  class ATL_NO_VTABLE CAtlExeModuleT :  public CAtlModuleT<T>
   
 ## Inheritance Hierarchy  
  [_ATL_MODULE](atl-typedefs.md#_atl_module)  
+
   
  [CAtlModule](../../atl/reference/catlmodule-class.md)  
   

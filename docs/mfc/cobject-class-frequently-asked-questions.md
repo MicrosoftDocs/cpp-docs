@@ -39,9 +39,9 @@ This section covers questions on class `CObject`.
   
 ## What do you want to know more about  
   
--   [Do I have to derive new classes from CObject]--brokenlink--(../Topic/Do%20I%20Have%20to%20Derive%20New%20Classes%20from%20CObject.md)  
+-   [Do I have to derive new classes from CObject](do-i-have-to-derive-new-classes-from-cobject-q.md)  
   
--   [What does it cost me to derive a class from CObject]--brokenlink--(../Topic/What%20Does%20it%20Cost%20me%20to%20Derive%20a%20Class%20from%20CObject.md)  
+-   [What does it cost me to derive a class from CObject](what-does-it-cost-me-to-derive-a-class-from-cobject-q.md)  
   
 ## See Also  
  [Using CObject](../mfc/using-cobject.md)

@@ -43,15 +43,15 @@ A class or struct consists of its members. The work that a class does is perform
   
 -   Special Member functions.  
   
--   [Member functions](../misc/member-functions-cpp.md).  
+-   [Overview of Member Functions](overview-of-member-functions.md).  
   
--   [Data members](../cpp/static-members-cpp.md) including built-in types and other user defined types.  
+-   [Data members](static-members-cpp.md) including built-in types and other user defined types.  
   
 -   Operators  
   
--   [Nested Class Declarations](../cpp/nested-class-declarations.md) and.)  
+-   [Nested Class Declarations](nested-class-declarations.md) and.)  
   
--   [Unions](../cpp/unions.md)  
+-   [Unions](unions.md)  
   
 -   [Enumerations](../cpp/enumerations-cpp.md).  
   

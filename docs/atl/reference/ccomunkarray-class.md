@@ -139,7 +139,7 @@ IUnknown**
 ### Remarks  
  The `CComUnkArray` methods **begin** and **end** can be used to loop through all connection points, for example, when an event is fired.  
   
- [!code-cpp[NVC_ATL_COM#44](../../atl/codesnippet/CPP/ccomunkarray-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_COM#44](../../atl/codesnippet/cpp/ccomunkarray-class_1.cpp)]  
   
 ##  <a name="ccomunkarray__getcookie"></a>  CComUnkArray::GetCookie  
  Call this method to get the cookie associated with a given **IUnknown** pointer.  

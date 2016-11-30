@@ -61,7 +61,7 @@ The Microsoft Macro Assembler (MASM) provides several advantages over inline ass
  Information about how to create output files for [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)].  
   
 ## Related Sections  
- [Visual C++](../../top/visual-cpp-in-visual-studio.md)  
+ [Visual C++](../../visual-cpp-in-visual-studio.md)  
  Provides links to different areas of the Visual Studio and Visual C++ documentation.  
   
  [Visual C++ Reference](http://msdn.microsoft.com/en-us/1ba03b5c-8229-4f63-b08c-6c12141d6ab1)  

@@ -38,7 +38,7 @@ translation.priority.ht:
   
 ## Syntax  
   
-```vb  
+```cpp  
 __func__  
 ```  
   

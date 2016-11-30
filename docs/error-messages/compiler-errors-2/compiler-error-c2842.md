@@ -38,6 +38,7 @@ translation.priority.ht:
 'class' : a managed or WinRT type may not define its own 'operator new' or 'operator delete'  
   
  You can define your own **operator new or **operator delete** to manage memory allocation on the native heap. However, reference classes cannot define these operators because they are only allocated on the managed heap.  
+
   
  For more information, see [User-Defined Operators (C++/CLI)](../../dotnet/user-defined-operators-cpp-cli.md).  
   

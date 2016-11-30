@@ -1330,7 +1330,7 @@ The articles in this section of the documentation explain error messages that ar
   
  You may find assistance for errors and warnings on the MSDN public forums. The [Visual C++ Language](http://go.microsoft.com/fwlink/?LinkId=158195) forum is for questions and discussions about the [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] language syntax and compiler. The [Visual C++ General](http://go.microsoft.com/fwlink/?LinkId=158194) forum is for questions about [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] that are not discussed in other forums. You may also find help about errors and warnings on [Stack Overflow](http://stackoverflow.com/).  
   
- For links to additional resources about [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)], see [Visual C++ Help and Community](../../top/visual-cpp-help-and-community.md).  
+ For links to additional resources about [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)], see [Visual C++ Help and Community](../../visual-cpp-help-and-community.md).  
   
 ## See Also  
  [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)   

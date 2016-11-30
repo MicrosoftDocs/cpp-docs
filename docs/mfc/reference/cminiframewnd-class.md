@@ -106,7 +106,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `lpClassName`  
- Points to a null-terminated character string that names the Windows class. The class name can be any name registered with the global [AfxRegisterWndClass]--brokenlink--(../Topic/not%20found.md#afxregisterwndclass) function. If **NULL**, the window class will be registered for you by the framework. MFC gives the default class the following styles and attributes:  
+ Points to a null-terminated character string that names the Windows class. The class name can be any name registered with the global [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) function. If **NULL**, the window class will be registered for you by the framework. MFC gives the default class the following styles and attributes:  
   
 -   Sets style bit **CS_DBLCLKS**, which sends double-click messages to the window procedure when the user double-clicks the mouse.  
   
@@ -172,7 +172,7 @@ virtual BOOL CreateEx(
  Specifies the extended style of the `CMiniFrameWnd` being created. Apply any of the [extended window styles](../../mfc/reference/extended-window-styles.md) to the window.  
   
  `lpClassName`  
- Points to a null-terminated character string that names the Windows class (a [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure). The class name can be any name registered with the global [AfxRegisterWndClass](http://msdn.microsoft.com/Library/62c7d4b1-7a29-4abb-86f7-dec541659db0) function or any of the predefined control-class names. It must not be **NULL**.  
+ Points to a null-terminated character string that names the Windows class (a [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure). The class name can be any name registered with the global [AfxRegisterWndClass](http://msdn.microsoft.com/library/62c7d4b1-7a29-4abb-86f7-dec541659db0) function or any of the predefined control-class names. It must not be **NULL**.  
   
  `lpWindowName`  
  Points to a null-terminated character string that contains the window name.  

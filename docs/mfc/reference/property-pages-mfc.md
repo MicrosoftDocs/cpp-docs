@@ -270,7 +270,7 @@ void AFXAPI DDP_PostProcessing(CDataExchange * pDX);
 ### Remarks  
  This function should be called after all data exchange functions are completed. For example:  
   
- [!code-cpp[NVC_MFCAxCtl#15](../../mfc/reference/codesnippet/CPP/property-pages-mfc_1.cpp)]  
+ [!code-cpp[NVC_MFCAxCtl#15](../../mfc/reference/codesnippet/cpp/property-pages-mfc_1.cpp)]  
   
 ##  <a name="ddp_radio"></a>  DDP_Radio  
  Call this function in your control's `DoPropExchange` function to synchronize the value of the property with the associated property page radio button control.  

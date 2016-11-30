@@ -35,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Use Schedule Groups to Influence Order of Execution
-In the Concurrency Runtime, the order in which tasks are scheduled is non-deterministic. However, you can use scheduling policies to influence the order in which tasks run. This topic shows how to use schedule groups together with the [concurrency::SchedulingProtocol](reference/concurrency-namespace-enums.md#PolicyElementKey) scheduler policy to influence the order in which tasks run.  
+In the Concurrency Runtime, the order in which tasks are scheduled is non-deterministic. However, you can use scheduling policies to influence the order in which tasks run. This topic shows how to use schedule groups together with the [concurrency::SchedulingProtocol](reference/concurrency-namespace-enumerations.md#policyelementkey_enumeration) scheduler policy to influence the order in which tasks run.  
   
  The example runs a set of tasks two times, each with a different scheduling policy. Both policies limit the maximum number of processing resources to two. The first run uses the `EnhanceScheduleGroupLocality` policy, which is the default, and the second run uses the `EnhanceForwardProgress` policy. Under the `EnhanceScheduleGroupLocality` policy, the scheduler runs all tasks in one schedule group until each task finishes or yields. Under the `EnhanceForwardProgress` policy, the scheduler moves to the next schedule group in a round-robin manner after just one task finishes or yields.  
   
@@ -46,7 +46,7 @@ In the Concurrency Runtime, the order in which tasks are scheduled is non-determ
   
  This example creates four `work_yield_agent` objects. To illustrate how to set scheduler policies to affect the order in which the agents run, the example associates the first two agents with one schedule group and the other two agents with another schedule group. The example uses the [concurrency::CurrentScheduler::CreateScheduleGroup](reference/CurrentScheduler-class.md#CurrentScheduler__CreateScheduleGroup) method to create the [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) objects. The example runs all four agents two times, each time with a different scheduling policy.  
   
- [!code-cpp[concrt-scheduling-protocol#1](../../parallel/concrt/codesnippet/CPP/how-to-use-schedule-groups-to-influence-order-of-execution_1.cpp)]  
+ [!code-cpp[concrt-scheduling-protocol#1](../../parallel/concrt/codesnippet/cpp/how-to-use-schedule-groups-to-influence-order-of-execution_1.cpp)]  
   
  This example produces the following output.  
   

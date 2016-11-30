@@ -153,8 +153,8 @@ class CMFCToolBarButton : public CObject
 ## Example  
  The following example demonstrates how to configure a `CMFCToolBarButton` object by using various methods in the `CMFCToolBarButton` class. The example illustrates how to enable the mouse and keyboard input, set the image index of the button, set the bounding rectangle of the button, and make the button visible. This code snippet is part of the [Tab Control sample](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_TabControl#1](../../mfc/reference/codesnippet/CPP/cmfctoolbarbutton-class_1.cpp)]  
-[!code-cpp[NVC_MFC_TabControl#2](../../mfc/reference/codesnippet/CPP/cmfctoolbarbutton-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_TabControl#1](../../mfc/reference/codesnippet/cpp/cmfctoolbarbutton-class_1.cpp)]  
+[!code-cpp[NVC_MFC_TabControl#2](../../mfc/reference/codesnippet/cpp/cmfctoolbarbutton-class_2.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -1259,7 +1259,7 @@ virtual void ResetImageToDefault();
 ```  
   
 ### Remarks  
- This method retrieves the default image from its parent toolbar by using the [CMFCToolBar::GetDefaultImage](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__getdefaultimage) method. If the button has no associated default image, this method sets the text label of the button according to its string resource by using the [CStringT::LoadString](../../atl-mfc-shared/reference/cstringt-class.md#loadstring) method. For more information about string resources, see [Working with Resource Files](../../mfc/working-with-resource-files.md).  
+ This method retrieves the default image from its parent toolbar by using the [CMFCToolBar::GetDefaultImage](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__getdefaultimage) method. If the button has no associated default image, this method sets the text label of the button according to its string resource by using the [CStringT::LoadString](../../atl-mfc-shared/reference/cstringt-class.md#cstringt__loadstring) method. For more information about string resources, see [Working with Resource Files](../../mfc/working-with-resource-files.md).  
   
  This method does nothing if the button has a user-defined image.  
   
@@ -1398,7 +1398,7 @@ virtual void SetStyle(UINT nStyle);
  The new style of the button.  
   
 ### Remarks  
- The default implementation sets the [CMFCToolBarButton::m_nStyle](#cmfctoolbarbutton__m_nstyle) data member to `nStyle`. Override this method if you want to perform additional processing to handle the change in style. See [ToolBar Control Styles]--brokenlink--(../Topic/not%20found.md#toolbar_control_styles) for a list of valid style flags.  
+ The default implementation sets the [CMFCToolBarButton::m_nStyle](#cmfctoolbarbutton__m_nstyle) data member to `nStyle`. Override this method if you want to perform additional processing to handle the change in style. See [ToolBar Control Styles](toolbar-control-styles.md) for a list of valid style flags.  
   
 ##  <a name="cmfctoolbarbutton__setvisible"></a>  CMFCToolBarButton::SetVisible  
  Specifies whether the button is visible.  

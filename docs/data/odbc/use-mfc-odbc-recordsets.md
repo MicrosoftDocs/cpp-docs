@@ -91,7 +91,7 @@ These topics explain how to work with ODBC recordsets through MFC.
   
 -   [Select records from an ODBC data source](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)  
   
--   [Customize the SQL string for a recordset](../../data/odbc/sql-customizing-your-recordset’s-sql-statement-odbc.md)  
+-   [Customize the SQL string for a recordset](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)  
   
 ### Dynamic Binding of Recordsets  
   

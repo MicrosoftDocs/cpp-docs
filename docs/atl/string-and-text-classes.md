@@ -54,5 +54,5 @@ These classes provide support for strings and text string conversions.
   
 ## See Also  
  [Class Overview](../atl/atl-class-overview.md)   
- [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/Library/8f53659e-0464-4424-97db-6b8453c49863)
+ [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863)
 

@@ -90,7 +90,7 @@ CMFCToolBarComboBoxEdit(CMFCToolBarComboBoxButton& combo);
 ### Example  
  The following example demonstrates how to construct an object of the `CMFCToolBarComboBoxEdit` class. This code snippet is part of the [IE Demo sample](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_IEDemo#5](../../mfc/reference/codesnippet/CPP/cmfctoolbarcomboboxedit-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_IEDemo#5](../../mfc/reference/codesnippet/cpp/cmfctoolbarcomboboxedit-class_1.cpp)]  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

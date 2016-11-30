@@ -132,7 +132,7 @@ class CMDIChildWndEx : public CMDIChildWnd
 ## Example  
  The following example derives a class from `CMDIChildWndEx`. This code snippet comes from the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#3](../../mfc/codesnippet/CPP/cmdichildwndex-class_1.h)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#3](../../mfc/codesnippet/cpp/cmdichildwndex-class_1.h)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -334,7 +334,7 @@ virtual LPCTSTR GetDocumentName(CObject** pObj);
 ### Example  
  The following example demonstrates the use of the `GetDocumentName` method. This code snippet comes from the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#17](../../mfc/codesnippet/CPP/cmdichildwndex-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#17](../../mfc/codesnippet/cpp/cmdichildwndex-class_2.cpp)]  
   
 ##  <a name="cmdichildwndex__getframeicon"></a>  CMDIChildWndEx::GetFrameIcon  
  Called by the framework to retrieve the icon of the MDI child window.  
@@ -489,7 +489,7 @@ virtual BOOL IsReadOnly();
 ### Example  
  The following example demonstrates overriding the `IsReadOnly` method. This code snippet comes from the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#2](../../mfc/codesnippet/CPP/cmdichildwndex-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#2](../../mfc/codesnippet/cpp/cmdichildwndex-class_3.cpp)]  
   
 ##  <a name="cmdichildwndex__istabbedpane"></a>  CMDIChildWndEx::IsTabbedPane  
  Specifies whether the MDI child window contains a docking pane.  
@@ -709,7 +709,7 @@ void SetTaskbarTabProperties(DWORD dwFlags);
   
 ### Parameters  
  `dwFlags`  
- A combination of STPFLAG values. For more information, see [ITaskbarList4::SetTabProperties](http://msdn.microsoft.com/library/dd562049\(VS.85\).aspx).  
+ A combination of STPFLAG values. For more information, see [ITaskbarList4::SetTabProperties](http://msdn.microsoft.com/library/dd562049\(vs.85\).aspx).  
   
 ### Remarks  
   

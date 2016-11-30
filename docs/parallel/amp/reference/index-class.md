@@ -71,12 +71,14 @@ class index;
 |[index::operator+= Operator](#operator_add_eq)|Adds the specified number to each element of the `index` object.|  
 |[index::operator= Operator](#operator_eq)|Copies the contents of the specified `index` object into this one.|  
 |[index::operator-= Operator](#operator_-_eq)|Subtracts the specified number from each element of the `index` object.|  
+
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[index::rank Constant](#rank)|Stores the rank of the `index` object.|  
+|[index::rank Constant](reference/index-class.md#index__rank_constant)|Stores the rank of the `index` object.|  
+
   
 ## Inheritance Hierarchy  
  `index`  

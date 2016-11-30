@@ -262,7 +262,8 @@ for (int i = 0; i <5; i++)
 |Shape|Rectangular.|Rectangular.|  
 |Data storage|Is a data container.|Is a data wrapper.|  
 |Copy|Explicit and deep copy at definition.|Implicit copy when it is accessed by the kernel function.|  
-|Data retrieval|By copying the array data back to an object on the CPU thread.|By direct access of the `array_view` object or by calling the [array_view::synchronize Method](reference/array_view-class.md#array_view__synchronize) to continue accessing the data on the original container.|  
+|Data retrieval|By copying the array data back to an object on the CPU thread.|By direct access of the `array_view` object or by calling the [array_view::synchronize Method](reference/array_view-class.md#array_view__synchronize_method) to continue accessing the data on the original container.|  
+
   
 ### Shared memory with array and array_view  
  Shared memory is memory that can be accessed by both the CPU and the accelerator. The use of shared memory eliminates or significantly reduces the overhead of copying data between the CPU and the accelerator. Although the memory is shared, it cannot be accessed concurrently by both the CPU and the accelerator, and doing so causes undefined behavior.  
@@ -390,13 +391,14 @@ void AddArraysWithFunction() {
 ```  
   
 ## Accelerating Code: Tiles and Barriers  
- You can gain additional acceleration by using tiling. Tiling divides the threads into equal rectangular subsets or *tiles*. You determine the appropriate tile size based on your data set and the algorithm that you are coding. For each thread, you have access to the *global* location of a data element relative to the whole `array` or `array_view` and access to the *local* location relative to the tile. Using the local index value simplifies your code because you don't have to write the code to translate index values from global to local. To use tiling, call the [extent::tile Method](reference/extent-class.md#extent__tile) on the compute domain in the `parallel_for_each` method, and use a [tiled_index](../../parallel/amp/reference/tiled-index-class.md) object in the lambda expression.  
+
+ You can gain additional acceleration by using tiling. Tiling divides the threads into equal rectangular subsets or *tiles*. You determine the appropriate tile size based on your data set and the algorithm that you are coding. For each thread, you have access to the *global* location of a data element relative to the whole `array` or `array_view` and access to the *local* location relative to the tile. Using the local index value simplifies your code because you don't have to write the code to translate index values from global to local. To use tiling, call the [extent::tile Method](reference/extent-class.md#extent__tile_method) on the compute domain in the `parallel_for_each` method, and use a [tiled_index](../../parallel/amp/reference/tiled-index-class.md) object in the lambda expression.  
   
- In typical applications, the elements in a tile are related in some way, and the code has to access and keep track of values across the tile. Use the [tile_static Keyword](../../cpp/tile-static-keyword.md) keyword and the [tile_barrier::wait Method](reference/tile_barrier-class.md#tile_barrier__wait) to accomplish this. A variable that has the `tile_static` keyword has a scope across an entire tile, and an instance of the variable is created for each tile. You must handle synchronization of tile-thread access to the variable. The [tile_barrier::wait Method](reference/tile_barrier-class.md#tile_barrier__wait) stops execution of the current thread until all the threads in the tile have reached the call to `tile_barrier::wait`. So you can accumulate values across the tile by using `tile_static` variables. Then you can finish any computations that require access to all the values.  
+ In typical applications, the elements in a tile are related in some way, and the code has to access and keep track of values across the tile. Use the [tile_static Keyword](../../cpp/tile-static-keyword.md) keyword and the [tile_barrier::wait Method](reference/tile_barrier-class.md#tile_barrier__wait_method) to accomplish this. A variable that has the `tile_static` keyword has a scope across an entire tile, and an instance of the variable is created for each tile. You must handle synchronization of tile-thread access to the variable. The [tile_barrier::wait Method](reference/tile_barrier-class.md#tile_barrier__wait_method) stops execution of the current thread until all the threads in the tile have reached the call to `tile_barrier::wait`. So you can accumulate values across the tile by using `tile_static` variables. Then you can finish any computations that require access to all the values.  
   
  The following diagram represents a two-dimensional array of sampling data that is arranged in tiles.  
   
- ![Index values in a tiled extent](../../parallel/amp/media/camptiledgridexample.png "CampTiledGridExample")  
+ ![Index values in a tiled extent](../../parallel/amp/media/camptiledgridexample.png "camptiledgridexample")  
   
  The following code example uses the sampling data from the previous diagram. The code replaces each value in the tile by the average of the values in the tile.  
   
@@ -457,7 +459,8 @@ for (int i = 0; i <4; i++) {
 ```  
   
 ## Math Libraries  
- C++ AMP includes two math libraries. The double-precision library in the [Concurrency::precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) provides support for double-precision functions. It also provides support for single-precision functions, although double-precision support on the hardware is still required. It complies with the [C99 Specification (ISO/IEC 9899)](http://go.microsoft.com/fwlink/LinkId=225887). The accelerator must support full double precision. You can determine whether it does by checking the value of the [accelerator::supports_double_precision Data Member]reference/aaccelerator-class.md#aaccelerator__supports_double_precision). The fast math library,  in the [Concurrency::fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), contains another set of math functions. These functions, which support only `float` operands, execute more quickly but aren’t as precise as those in the double-precision math library. The functions are contained in the \<amp_math.h> header file and all are declared with `restrict(amp)`. The functions in the \<cmath> header file are imported into both the `fast_math` and `precise_math` namespaces. The `restrict` keyword is used to distinguish the \<cmath> version and the C++ AMP version. The following code calculates the base-10 logarithm, using the fast method, of each value that is in the compute domain.  
+ C++ AMP includes two math libraries. The double-precision library in the [Concurrency::precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) provides support for double-precision functions. It also provides support for single-precision functions, although double-precision support on the hardware is still required. It complies with the [C99 Specification (ISO/IEC 9899)](http://go.microsoft.com/fwlink/linkid=225887). The accelerator must support full double precision. You can determine whether it does by checking the value of the [accelerator::supports_double_precision Data Member](reference/accelerator-class.md#accelerator__supports_double_precision_data_member). The fast math library,  in the [Concurrency::fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), contains another set of math functions. These functions, which support only `float` operands, execute more quickly but aren’t as precise as those in the double-precision math library. The functions are contained in the \<amp_math.h> header file and all are declared with `restrict(amp)`. The functions in the \<cmath> header file are imported into both the `fast_math` and `precise_math` namespaces. The `restrict` keyword is used to distinguish the \<cmath> version and the C++ AMP version. The following code calculates the base-10 logarithm, using the fast method, of each value that is in the compute domain.  
+
   
 ```cpp  
   
@@ -499,13 +502,13 @@ void MathExample() {
   
 - [Using C++ AMP in Windows Store Apps](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)  
   
-- [Walkthrough: Creating a basic Windows Runtime component in C++ and calling it from JavaScript](http://go.microsoft.com/fwlink/p/LinkId=249077)  
+- [Walkthrough: Creating a basic Windows Runtime component in C++ and calling it from JavaScript](http://go.microsoft.com/fwlink/p/linkid=249077)  
   
-- [Bing Maps Trip Optimizer, a Window Store app in JavaScript and C++](http://go.microsoft.com/fwlink/p/LinkId=249078)  
+- [Bing Maps Trip Optimizer, a Window Store app in JavaScript and C++](http://go.microsoft.com/fwlink/p/linkid=249078)  
   
-- [How to use C++ AMP from C# using the Windows Runtime](http://go.microsoft.com/fwlink/p/LinkId=249080)  
+- [How to use C++ AMP from C# using the Windows Runtime](http://go.microsoft.com/fwlink/p/linkid=249080)  
   
-- [How to use C++ AMP from C#](http://go.microsoft.com/fwlink/p/LinkId=249081)  
+- [How to use C++ AMP from C#](http://go.microsoft.com/fwlink/p/linkid=249081)  
   
 - [Calling Native Functions from Managed Code](../../dotnet/calling-native-functions-from-managed-code.md)  
   
@@ -522,7 +525,7 @@ void MathExample() {
   
 - [Channels (Threads View)](/visualstudio/profiling/channels-threads-view)  
   
-- [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/LinkID=253987&clcid=0x409)  
+- [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/linkid=253987&clcid=0x409)  
   
 ## Performance Recommendations  
  Modulus and division of unsigned integers have significantly better performance than modulus and division of signed integers. We recommend that you use unsigned integers when possible.  
@@ -531,4 +534,4 @@ void MathExample() {
  [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)   
  [Lambda Expression Syntax](../../cpp/lambda-expression-syntax.md)   
  [Reference (C++ AMP)](../../parallel/amp/reference/reference-cpp-amp.md)   
- [Parallel Programming in Native Code Blog](http://go.microsoft.com/fwlink/p/LinkId=238472)
+ [Parallel Programming in Native Code Blog](http://go.microsoft.com/fwlink/p/linkid=238472)

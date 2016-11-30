@@ -40,7 +40,7 @@ The types char, wchar_t, char16_t and char32_t are built in types that represent
   
 ## Syntax  
   
-```vb  
+```cpp  
 char     ch1{ 'a' };    wchar_t  ch2{ 'a' }; // or {L'a'}    char16_t ch3{ L'a' };// or {L'a'}    char32_t ch4{ L'a' };// or {L'a'}  
 ```  
   

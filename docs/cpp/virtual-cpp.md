@@ -62,7 +62,7 @@ virtual [access-specifier] base-class-name
  Identifies a previously declared class type.  
   
 ## Remarks  
- See [Virtual Functions](../cpp/virtual-functions.md) and [Virtual Base Classes](../misc/virtual-base-classes.md) for more information.  
+ See [Virtual Functions](../cpp/virtual-functions.md) for more information.  
   
  Also see the following keywords: [class](../cpp/class-cpp.md), [private](../cpp/private-cpp.md), [public](../cpp/public-cpp.md), and [protected](../cpp/protected-cpp.md).  
   

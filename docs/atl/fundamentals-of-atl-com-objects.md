@@ -38,7 +38,7 @@ translation.priority.ht:
 # Fundamentals of ATL COM Objects
 The following illustration depicts the relationship among the classes and interfaces that are used to define an ATL COM object.  
   
- ![ATL structure](../atl/media/vc307y1.gif "vc307Y1")  
+ ![ATL structure](../atl/media/vc307y1.gif "vc307y1")  
   
 > [!NOTE]
 >  This diagram shows that `CComObject` is derived from `CYourClass` whereas `CComAggObject` and `CComPolyObject` include `CYourClass` as a member variable.  

@@ -99,6 +99,12 @@ typedef ATL::_ATL_WIN_MODULE70 _ATL_WIN_MODULE;
 ### Remarks  
  Used by any ATL projects which use windowing features. Based on [_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md).  
   
+##  <a name="atl_url_port"></a>  ATL_URL_PORT 
+  The type used by [CUrl](curl-class.md) for specifying a port number.
+```  
+typedef WORD ATL_URL_PORT;
+```  
+
 ##  <a name="ccomdispatchdriver"></a>  CComDispatchDriver  
  This class manages COM interface pointers.  
   

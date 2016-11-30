@@ -69,7 +69,7 @@ This article describes how to take advantage of the class library services relat
   
  Note that a workaround is used near the end of the example to display the date properly using `COleDateTime::Format`. See the Knowledge Base article "BUG: Format("%D") Fails for `COleDateTime` and `COleDateTimeSpan`" (Q167338).  
   
- [!code-cpp[NVC_ATLMFC_Utilities#176](../atl-mfc-shared/codesnippet/CPP/date-and-time-automation-support_1.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#176](../atl-mfc-shared/codesnippet/cpp/date-and-time-automation-support_1.cpp)]  
   
 ## See Also  
  [Date and Time](../atl-mfc-shared/date-and-time.md)

@@ -188,7 +188,7 @@ CMFCColorPopupMenu(
 ### Example  
  The following example demonstrates how to construct a `CMFCColorPopupMenu` object.  
   
- [!code-cpp[NVC_MFC_RibbonApp#34](../../mfc/reference/codesnippet/CPP/cmfccolorpopupmenu-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#34](../../mfc/reference/codesnippet/cpp/cmfccolorpopupmenu-class_1.cpp)]  
   
 ##  <a name="cmfccolorpopupmenu__createtearoffbar"></a>  CMFCColorPopupMenu::CreateTearOffBar  
  Creates a dockable tear-off color bar.  

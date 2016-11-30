@@ -104,7 +104,7 @@ class CDockingPanesRow : public CObject
 ## Example  
  The following example demonstrates how to get a `CDockingPanesRow` object from a `CMFCAutoHideBar` object.  
   
- [!code-cpp[NVC_MFC_RibbonApp#26](../../mfc/reference/codesnippet/CPP/cdockingpanesrow-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#26](../../mfc/reference/codesnippet/cpp/cdockingpanesrow-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

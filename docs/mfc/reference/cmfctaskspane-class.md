@@ -181,16 +181,16 @@ class CMFCTasksPane : public CDockablePane
   
  The following illustration shows a typical task pane control. The first group is a *special* group and its caption is a darker color. The third group is collapsed. The last group is aligned to the bottom of the task pane and has no caption, and the last task in the group is a simple label:  
   
- ![Example of Task Pane](../../mfc/reference/media/nexttaskpane.png "NextTaskPane")  
+ ![Example of Task Pane](../../mfc/reference/media/nexttaskpane.png "nexttaskpane")  
   
  You can customize the appearance of the task pane by adjusting various margins and offsets. The following illustration clarifies the meaning of these variables:  
   
- ![Custom task group](../../mfc/reference/media/nexttaskgrpcustom.png "NextTaskGrpCustom")  
+ ![Custom task group](../../mfc/reference/media/nexttaskgrpcustom.png "nexttaskgrpcustom")  
   
 ## Example  
  The following example demonstrates how to construct a `CMFCTasksPane` object and use various methods in the `CMFCTasksPane` class. The example shows how to enable the collapsing of task groups, enable the drop-down menus on the **Next** and **Previous** navigation buttons, enable the scroll buttons instead of a scroll bar, enable the word wrapping for the text in labels, set the caption name of the task pane, set the text color for a group caption, and set the horizontal and vertical margins.  
   
- [!code-cpp[NVC_MFC_RibbonApp#28](../../mfc/reference/codesnippet/CPP/cmfctaskspane-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#28](../../mfc/reference/codesnippet/cpp/cmfctaskspane-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md) [CCmdTarget](../../mfc/reference/ccmdtarget-class.md) [CWnd](../../mfc/reference/cwnd-class.md)  

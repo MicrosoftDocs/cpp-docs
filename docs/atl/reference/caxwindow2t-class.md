@@ -78,7 +78,7 @@ template <class   TBase = CWindow>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAxWindow2T::operator =](#caxwindow2t__operator__eq)|Assigns an `HWND` to an existing `CAxWindow2T` object.|  
+|[CAxWindow2T::operator =](#caxwindow2t__operator_eq)|Assigns an `HWND` to an existing `CAxWindow2T` object.|  
   
 ## Remarks  
  `CAxWindow2T` provides methods for manipulating a window that hosts an ActiveX control. `CAxWindow2T` also has support for hosting licensed ActiveX controls. The hosting is provided by " **AtlAxWinLic80**", which is wrapped by `CAxWindow2T`.  
@@ -207,7 +207,7 @@ static LPCTSTR GetWndClassName();
 ### Return Value  
  A pointer to a string containing the name of the window class ( **AtlAxWinLic80**) that can host licensed and nonlicensed ActiveX controls.  
   
-##  <a name="caxwindow2t__operator__eq"></a>  CAxWindow2T::operator =  
+##  <a name="caxwindow2t__operator_eq"></a>  CAxWindow2T::operator =  
  Assigns an `HWND` to an existing `CAxWindow2T` object.  
   
 ```

@@ -67,7 +67,7 @@ class CSplitButton : public CButton
   
  The following figure depicts a dialog box that contains a pager control and a (1) split button control. The (2) drop-down arrow has already been clicked and the (3) submenu is displayed.  
   
- ![Dialog with a splitbutton and pager control.](../../mfc/reference/media/splitbutton_pager.png "SplitButton_Pager")  
+ ![Dialog with a splitbutton and pager control.](../../mfc/reference/media/splitbutton_pager.png "splitbutton_pager")  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -191,12 +191,12 @@ void SetDropDownMenu(
   
  The following figure depicts a dialog box that contains a pager control and a (1) split button control. The (2) drop-down arrow has already been clicked and the (3) submenu is displayed.  
   
- ![Dialog with a splitbutton and pager control.](../../mfc/reference/media/splitbutton_pager.png "SplitButton_Pager")  
+ ![Dialog with a splitbutton and pager control.](../../mfc/reference/media/splitbutton_pager.png "splitbutton_pager")  
   
 ### Example  
  The first statement in the following code example demonstrates the [CSplitButton::SetDropDownMenu](#csplitbutton__setdropdownmenu) method. We created the menu with the Visual Studio resource editor, which automatically named the menu bar ID, `IDR_MENU1`. The `nSubMenuId` parameter, which is zero, refers to the only submenu of the menu bar.  
   
- [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/CPP/csplitbutton-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/csplitbutton-class_1.cpp)]  
   
 ## See Also  
  [CSplitButton Class](../../mfc/reference/csplitbutton-class.md)   

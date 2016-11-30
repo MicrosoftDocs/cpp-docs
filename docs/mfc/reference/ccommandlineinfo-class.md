@@ -116,7 +116,7 @@ CCommandLineInfo();
  The application framework calls [ParseParam](#ccommandlineinfo__parseparam) to fill data members of this object.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#54](../../mfc/codesnippet/CPP/ccommandlineinfo-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#54](../../mfc/codesnippet/cpp/ccommandlineinfo-class_1.cpp)]  
   
 ##  <a name="ccommandlineinfo__m_brunautomated"></a>  CCommandLineInfo::m_bRunAutomated  
  Indicates that the **/Automation** flag was found on the command line.  
@@ -201,7 +201,7 @@ m_nShellCommand;
 - `CCommandLineInfo::FileNothing` Turns off the display of a new MDI child window on startup. By design, Application Wizard-generated MDI applications display a new child window on startup. To turn off this feature, an application can use `CCommandLineInfo::FileNothing` as the shell command when it calls [ProcessShellCommand](../../mfc/reference/cwinapp-class.md#cwinapp__processshellcommand). `ProcessShellCommand` is called by the `InitInstance( )` of all `CWinApp` derived classes.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#55](../../mfc/codesnippet/CPP/ccommandlineinfo-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#55](../../mfc/codesnippet/cpp/ccommandlineinfo-class_2.cpp)]  
   
 ##  <a name="ccommandlineinfo__m_strdrivername"></a>  CCommandLineInfo::m_strDriverName  
  Stores the value of the third non-flag parameter on the command line.  

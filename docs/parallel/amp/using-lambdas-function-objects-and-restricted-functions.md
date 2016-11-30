@@ -142,7 +142,7 @@ void AddArraysWithFunctionObject() {
 }  
  
 ```  
-  
+
  The function object must include a constructor and must include an overload of the function call operator. The function call operator must include one indexing parameter. An instance of the function object is passed as the second argument to the [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) method. In this example, three [array_view](../../parallel/amp/reference/array-view-class.md) objects are passed to the function object constructor. The [array_view](../../parallel/amp/reference/array-view-class.md) object `sum` has a rank of 1. Therefore, the parameter to the function call operator is an [index](../../parallel/amp/reference/index-class.md) object that has rank 1. At runtime, the function is executed once for each element in the [array_view](../../parallel/amp/reference/array-view-class.md) object. For more information, see [Function Call](../../cpp/function-call-cpp.md) and [Function Objects in the STL](../../standard-library/function-objects-in-the-stl.md).  
   
 ## C++ AMP-Restricted Function  

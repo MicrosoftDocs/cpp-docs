@@ -102,7 +102,7 @@ CAtlTemporaryFile() throw();
  A file is not actually opened until a call is made to [CAtlTemporaryFile::Create](#catltemporaryfile__create).  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#73](../../atl/codesnippet/CPP/catltemporaryfile-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#73](../../atl/codesnippet/cpp/catltemporaryfile-class_1.cpp)]  
   
 ##  <a name="catltemporaryfile___dtorcatltemporaryfile"></a>  CAtlTemporaryFile::~CAtlTemporaryFile  
  The destructor.  

@@ -127,11 +127,11 @@ CMultiDocTemplate(
  Dynamically allocate one `CMultiDocTemplate` object for each document type that your application supports and pass each one to `CWinApp::AddDocTemplate` from the `InitInstance` member function of your application class.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#92](../../mfc/codesnippet/CPP/cmultidoctemplate-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#92](../../mfc/codesnippet/cpp/cmultidoctemplate-class_1.cpp)]  
   
  Here is a second example.  
   
- [!code-cpp[NVC_MFCDocView#93](../../mfc/codesnippet/CPP/cmultidoctemplate-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#93](../../mfc/codesnippet/cpp/cmultidoctemplate-class_2.cpp)]  
   
 ## See Also  
  [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)   

@@ -61,7 +61,7 @@ There are two ways to add a dialog box to your ATL project: use the ATL Dialog W
 ## Example  
  The following class implements a dialog box:  
   
- [!code-cpp[NVC_ATL_Windowing#66](../atl/codesnippet/CPP/implementing-a-dialog-box_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#66](../atl/codesnippet/cpp/implementing-a-dialog-box_1.h)]  
   
 ## See Also  
  [Window Classes](../atl/atl-window-classes.md)

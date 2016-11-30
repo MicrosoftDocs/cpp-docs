@@ -86,7 +86,7 @@ template <class T>  class CComCompositeControl :  public CComControl<T,CAxDialog
   
  `CComCompositeControl` identifies the dialog resource to use in creating the composite control by looking for an enumerated data member in the child class. The member IDD of this child class is set to the resource ID of the dialog resource that will be used as the control's window. The following is an example of the data member that the class derived from `CComCompositeControl` should contain to identify the dialog resource to be used for the control's window:  
   
- [!code-cpp[NVC_ATL_COM#13](../../atl/codesnippet/CPP/ccomcompositecontrol-class_1.h)]  
+ [!code-cpp[NVC_ATL_COM#13](../../atl/codesnippet/cpp/ccomcompositecontrol-class_1.h)]  
   
 > [!NOTE]
 >  Composite controls are always windowed controls, although they can contain windowless controls.  
@@ -97,7 +97,7 @@ template <class T>  class CComCompositeControl :  public CComControl<T,CAxDialog
 >  In order for accelerators to work properly with a `CComCompositeControl`, it is necessary to load an accelerator table as the control is created, pass the handle and number of accelerators back into [IOleControlImpl::GetControlInfo](../../atl/reference/iolecontrolimpl-class.md#iolecontrolimpl__getcontrolinfo), and finally destroy the table when the control is released.  
   
 ## Example  
- [!code-cpp[NVC_ATL_COM#14](../../atl/codesnippet/CPP/ccomcompositecontrol-class_2.h)]  
+ [!code-cpp[NVC_ATL_COM#14](../../atl/codesnippet/cpp/ccomcompositecontrol-class_2.h)]  
   
 ## Inheritance Hierarchy  
  `WinBase`  

@@ -1404,7 +1404,7 @@ long QueryStatus(long cmdID) const;
   
 ### Parameters  
  `cmdID`  
- The command ID. Command identifiers are taken from the `CGID_MSHTML`command group. These commands are defined in Mshtmcid.h. You can also find the list online at [MSHTML Command Identifiers](http://go.microsoft.com/fwlink/LinkId=149220).  
+ The command ID. Command identifiers are taken from the `CGID_MSHTML`command group. These commands are defined in Mshtmcid.h. You can also find the list online at [MSHTML Command Identifiers](http://go.microsoft.com/fwlink/linkid=149220).  
   
 ### Return Value  
  Returns an [OLECMDF](http://msdn.microsoft.com/library/windows/desktop/ms695237) indicating the status for `cmdID`, or 0 on failure.  

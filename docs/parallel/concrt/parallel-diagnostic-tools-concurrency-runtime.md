@@ -36,7 +36,7 @@ translation.priority.ht:
 [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] provides extensive support for debugging and profiling multi-threaded applications.  
   
 ## Debugging  
- The Visual Studio debugger includes the **Parallel Stacks** window, **Parallel Tasks** window, and **Parallel Watch** window. For more information, see [Walkthrough: Debugging a Parallel Application](http://msdn.microsoft.com/Library/2820ac4c-c893-4d87-8c62-83981d561493) and [How to: Use the Parallel Watch Window](http://msdn.microsoft.com/Library/28004d9b-420c-48f7-b80e-ab1519802558).  
+ The Visual Studio debugger includes the **Parallel Stacks** window, **Parallel Tasks** window, and **Parallel Watch** window. For more information, see [Walkthrough: Debugging a Parallel Application](http://msdn.microsoft.com/library/2820ac4c-c893-4d87-8c62-83981d561493) and [How to: Use the Parallel Watch Window](http://msdn.microsoft.com/library/28004d9b-420c-48f7-b80e-ab1519802558).  
   
 ## Profiling  
  The profiling tools provide three data views that display graphical, tabular and numerical information about how a multi-threaded application interacts with itself and with other programs. The views enable you to quickly identify areas of concern, and to navigate from points on the graphical displays to call stacks, call sites, and source code. For more information, see [Concurrency Visualizer](/visualstudio/profiling/concurrency-visualizer).  
@@ -44,7 +44,7 @@ translation.priority.ht:
 ## Event Tracing  
  The Concurrency Runtime uses [Event Tracing for Windows](http://msdn.microsoft.com/library/windows/desktop/bb968803) (ETW) to notify instrumentation tools, such as profilers, when various events occur. These events include when a scheduler is activated or deactivated, when a context begins, ends, blocks, unblocks, or yields, and when a parallel algorithm begins or ends.  
   
- Tools such as the [Concurrency Visualizer](/visualstudio/profiling/concurrency-visualizer) utilize this functionality; therefore, you typically do not have to work with these events directly. However, these events are useful when you are developing a custom profiler or when you use event tracing tools such as [Xperf](http://go.microsoft.com/fwlink/LinkID=160628).  
+ Tools such as the [Concurrency Visualizer](/visualstudio/profiling/concurrency-visualizer) utilize this functionality; therefore, you typically do not have to work with these events directly. However, these events are useful when you are developing a custom profiler or when you use event tracing tools such as [Xperf](http://go.microsoft.com/fwlink/linkid=160628).  
   
  The Concurrency Runtime raises these events only when tracing is enabled. Call the [concurrency::EnableTracing](reference/concurrency-namespace-functions.md#enabletracing) function to enable event tracing and the [concurrency::DisableTracing](reference/concurrency-namespace-functions.md#disabletracing) function to disable tracing.  
   
@@ -52,6 +52,7 @@ translation.priority.ht:
   
 |Event|Description|Value|  
 |-----------|-----------------|-----------|  
+
 |[concurrency::ConcRT_ProviderGuid](reference/concurrency-namespace-constants1.md#concrt_providerguid)|The ETW provider identifier for the Concurrency Runtime.|`f7b697a3-4db5-4d3b-be71-c4d284e6592f`|  
 |[concurrency::ContextEventGuid](reference/concurrency-namespace-constants1.md#contexteventguid)|Marks events that are related to contexts.|`5727a00f-50be-4519-8256-f7699871fecb`|  
 |[concurrency::PPLParallelForEventGuid](reference/concurrency-namespace-constants1.md#pplparallelforeventguid)|Marks the entrance and exit to calls to the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm.|`31c8da6b-6165-4042-8b92-949e315f4d84`|  
@@ -76,7 +77,7 @@ translation.priority.ht:
   
  The following example illustrates how to enable tracing for a call to `parallel_for`. The runtime does not trace the first call to `parallel_for` because tracing it not enabled. The call to `EnableTracing` enables the runtime to trace the second call to `parallel_for`.  
   
- [!code-cpp[concrt-etw#1](../../parallel/concrt/codesnippet/CPP/parallel-diagnostic-tools-concurrency-runtime_1.cpp)]  
+ [!code-cpp[concrt-etw#1](../../parallel/concrt/codesnippet/cpp/parallel-diagnostic-tools-concurrency-runtime_1.cpp)]  
   
  The runtime tracks the number of times that you call `EnableTracing` and `DisableTracing`. Therefore, if you call `EnableTracing` multiple times, you must call `DisableTracing` the same number of times in order to disable tracing.  
   

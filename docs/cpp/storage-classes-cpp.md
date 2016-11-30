@@ -45,13 +45,13 @@ A *storage class* in the context of C++ variable declarations is a type specifie
   
 2.  Starting with [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)], the `auto` keyword is no longer a C++ storage-class specifier, and the `register` keyword is deprecated.  
   
--   [Static](#static)  
+-   [static](#static)  
   
 -   [extern](#extern)  
   
 -   [thread_local](#thread_local)  
   
-## static  
+## <a name="static"></a>  static  
  The `static` keyword can be used to declare variables and functions at global scope, namespace scope, and class scope. Static variables can also be declared at local scope.  
   
  Static duration means that the object or variable is allocated when the program starts and is deallocated when the program ends. External linkage means that the name of the variable is visible from outside the file in which the variable is declared. Conversely, internal linkage means that the name is not visible outside the file in which the variable is declared. By default, an object or variable that is defined in the global namespace has static duration and external linkage. The `static` keyword can be used in the following situations.  
@@ -175,7 +175,7 @@ var == value
   
  Starting in C++11, a static local variable initialization is guaranteed to be thread-safe. This feature is sometimes called *magic statics*. However, in a multithreaded application all subsequent assignments must be synchronized. The thread-safe statics feature can be disabled by using the /Zc:threadSafeInit- flag to avoid taking a dependency on the CRT.  
   
-## extern  
+##  <a name="extern"></a>  extern  
  Objects and variables declared as `extern` declare an object that is defined in another translation unit or in an enclosing scope as having external linkage.  
   
  Declaration of **const** variables with the `extern` storage class forces the variable to have external linkage. An initialization of an **extern const** variable is allowed in the defining translation unit. Initializations in translation units other than the defining translation unit produce undefined results. For more information, see [Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)  
@@ -195,7 +195,7 @@ int main() {
 }  
 ```  
   
-## thread_local (C++11)  
+##  <a name="thread_local"></a>  thread_local (C++11)  
  A variable declared with the `thread_local` specifier is accessible only on the thread on which it is created. The variable is created when the thread is created, and destroyed when the thread is destroyed. Each thread has its own copy of the variable. On Windows, `thread_local` is functionally equivalent to the Microsoft-specific [__declspec( thread )](../cpp/thread.md) attribute.  
   
 ```  
@@ -229,7 +229,7 @@ thread_local C my_struct; // Apply  thread_local to a variable
   
  For more information, see [Thread Local Storage (TLS)](../parallel/thread-local-storage-tls.md).  
   
-## register  
+##  <a name="register"></a>  register  
  In C++11, the **register** keyword is deprecated. It specifies that the variable is to be stored in a machine register, if possible. Only function arguments and local variables can be declared with the register storage class.  
   
 ```  

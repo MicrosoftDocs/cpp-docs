@@ -64,7 +64,7 @@ This article covers advanced topics related to developing ActiveX controls. Thes
 ##  <a name="_core_implementing_a_parameterized_property"></a> Implementing a Parameterized Property  
  A parameterized property (sometimes called a property array) is a method for exposing a homogeneous collection of values as a single property of the control. For example, you can use a parameterized property to expose an array or a dictionary as a property. In Visual Basic, such a property is accessed using array notation:  
   
- [!code-vb[NVC_MFC_AxVb#1](../mfc/codesnippet/VisualBasic/mfc-activex-controls-advanced-topics_1.vb)]  
+ [!code-vb[NVC_MFC_AxVb#1](../mfc/codesnippet/visualbasic/mfc-activex-controls-advanced-topics_1.vb)]  
   
  Use the Add Property Wizard to implement a parameterized property. The Add Property Wizard implements the property by adding a pair of Get/Set functions that allow the control user to access the property using the above notation or in the standard fashion.  
   
@@ -101,13 +101,13 @@ This article covers advanced topics related to developing ActiveX controls. Thes
   
  The following lines are added to the control class .H file:  
   
- [!code-cpp[NVC_MFC_AxUI#35](../mfc/codesnippet/CPP/mfc-activex-controls-advanced-topics_2.h)]  
+ [!code-cpp[NVC_MFC_AxUI#35](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_2.h)]  
   
  This code declares two functions called `GetArray` and `SetArray` that allow the user to request a specific row and column when accessing the property.  
   
  In addition, the Add Property Wizard adds the following lines to the control dispatch map, located in the control class implementation (.CPP) file:  
   
- [!code-cpp[NVC_MFC_AxUI#36](../mfc/codesnippet/CPP/mfc-activex-controls-advanced-topics_3.cpp)]  
+ [!code-cpp[NVC_MFC_AxUI#36](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_3.cpp)]  
   
  Finally, the implementations of the `GetArray` and `SetArray` functions are added to the end of the .CPP file. In most cases, you will modify the Get function to return the value of the property. The Set function will usually contain code that should execute, either before or after the property changes.  
   
@@ -165,7 +165,7 @@ This article covers advanced topics related to developing ActiveX controls. Thes
   
  If necessary, use the **CUSTOM_CTL_SCODE** macro to define a custom error code for a condition that is not covered by one of the standard codes. The parameter for this macro should be an integer between 1000 and 32767, inclusive. For example:  
   
- [!code-cpp[NVC_MFC_AxUI#37](../mfc/codesnippet/CPP/mfc-activex-controls-advanced-topics_4.cpp)]  
+ [!code-cpp[NVC_MFC_AxUI#37](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_4.cpp)]  
   
  If you are creating an ActiveX control to replace an existing VBX control, define your ActiveX control error codes with the same numeric values the VBX control uses to ensure that the error codes are compatible.  
   
@@ -176,7 +176,7 @@ This article covers advanced topics related to developing ActiveX controls. Thes
   
  The following code example demonstrates a possible way of handling any messages related to the directional keys.  
   
- [!code-cpp[NVC_MFC_AxUI#38](../mfc/codesnippet/CPP/mfc-activex-controls-advanced-topics_5.cpp)]  
+ [!code-cpp[NVC_MFC_AxUI#38](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_5.cpp)]  
   
  For more information on handling keyboard interfaces for an ActiveX control, see the ActiveX SDK documentation.  
   
@@ -189,7 +189,7 @@ This article covers advanced topics related to developing ActiveX controls. Thes
   
 -   Declare a local variable and subclass as the dialog item. Insert code that resembles the following (`CMyCtrl` is the wrapper class, `IDC_MYCTRL1` is the control's ID):  
   
-     [!code-cpp[NVC_MFC_AxCont#19](../mfc/codesnippet/CPP/mfc-activex-controls-advanced-topics_6.cpp)]  
+     [!code-cpp[NVC_MFC_AxCont#19](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_6.cpp)]  
   
 ## See Also  
  [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)

@@ -84,7 +84,7 @@ template <class T,  class TBase = CWindow>  class ATL_NO_VTABLE CAxDialogImpl : 
   
  Your class must define an IDD member that specifies the dialog template resource ID. For example, adding an ATL Dialog object using the **Add Class** dialog box automatically adds the following line to your class:  
   
- [!code-cpp[NVC_ATL_Windowing#41](../../atl/codesnippet/CPP/caxdialogimpl-class_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#41](../../atl/codesnippet/cpp/caxdialogimpl-class_1.h)]  
   
  where `MyDialog` is the **Short name** entered in the ATL Dialog Wizard.  
   

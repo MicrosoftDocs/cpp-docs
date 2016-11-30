@@ -52,23 +52,11 @@ The `Platform::Array<T>` type in [!INCLUDE[cppwrt_short](../build/reference/incl
   
  For more information about arrays, see:  
   
--   [Array Covariance](../misc/array-covariance.md)  
   
 -   [How to: Use Arrays in C++/CLI](../dotnet/how-to-use-arrays-in-cpp-cli.md)  
-  
--   [How to: Create Multidimension Arrays](../misc/how-to-create-multidimension-arrays.md)  
-  
--   [How to: Create Arrays of Managed Arrays (Jagged Arrays)](../misc/how-to-create-arrays-of-managed-arrays-jagged-arrays.md)  
-  
--   [How to: Make Typedefs for Managed Arrays](../misc/how-to-make-typedefs-for-managed-arrays.md)  
-  
--   [How to: Use Managed Arrays as Template Type Parameters](../misc/how-to-use-managed-arrays-as-template-type-parameters.md)  
-  
+    
 -   [Variable Argument Lists (...) (C++/CLI)](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md)  
   
--   [How to: Sort Arrays](../misc/how-to-sort-arrays.md)  
-  
--   [How to: Sort Arrays Using Custom Criteria](../misc/how-to-sort-arrays-using-custom-criteria.md)  
   
 ## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
  Arrays are members of the `Platform` namespace. Arrays can be only one-dimensional.  
@@ -168,7 +156,7 @@ int main() {
  The type of the values that initialize the array. Typically, `array-type` and `initialization-type` are the same type. However, the types can be different if there is a conversion from `initialization-type` to `array-type`—for example, if `initialization-type` is derived from `array-type`.  
   
  `rank-size-list`  
- A comma-delimited list of the size of each dimension in the array. Alternatively, if the `initialization-list` parameter is specified, the compiler can deduce the size of each dimension and `rank-size-list` can be omitted. For more information, see [How to: Create Multidimension Arrays](../misc/how-to-create-multidimension-arrays.md).  
+ A comma-delimited list of the size of each dimension in the array. Alternatively, if the `initialization-list` parameter is specified, the compiler can deduce the size of each dimension and `rank-size-list` can be omitted. 
   
  `initialization-list` [optional]  
  A comma-delimited list of values in curly brackets that initialize the elements of the array. Or a comma-delimited list of nested *initialization-list* items that initialize the elements in a multi-dimensional array.  

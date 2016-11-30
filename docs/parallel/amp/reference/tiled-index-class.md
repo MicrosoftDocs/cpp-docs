@@ -76,12 +76,14 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
 |Name|Description|  
 |----------|-----------------|  
 |[tiled_index::tiled_index Constructor](#tiled_index__ctor)|Initializes a new instance of the `tile_index` class.|  
+
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
 |[tiled_index::get_tile_extent Method](#tiled_index__get_tile_extent)|Returns an [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object that has the values of the [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+
   
 ### Public Constants  
   
@@ -97,12 +99,14 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
 |[tiled_index::tile_dim1 Constant](#tiled_index__tile_dim1)|Stores the length of the next-to-most significant dimension.|  
 |[tiled_index::tile_dim2 Constant](#tiled_index__tile_dim2)|Stores the length of the least significant dimension.|  
 |[tiled_index::tile_origin Constant](#tiled_index__tile_origin)|Stores an `index` object of rank 1, 2, or 3 that represents the global coordinates of the origin of the current tile in a `tiled_extent` object.|  
+
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
 |[tiled_index::tile_extent Data Member](#tile_extent)|Gets an [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object that has the values of the [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) template arguments [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+
   
 ## Inheritance Hierarchy  
  `_Tiled_index_base`  

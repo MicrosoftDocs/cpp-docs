@@ -56,7 +56,7 @@ class accelerator_view_removed : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view_removed::get_view_removed_reason Method](#get_view_removed_reason)|Returns an HRESULT error code indicating the cause of the `accelerator_view` object's removal.|  
+|[accelerator_view_removed::get_view_removed_reason Method](reference/accelerator_view_removed-class.md#accelerator_view_removed__get_view_removed_reason_method)|Returns an HRESULT error code indicating the cause of the `accelerator_view` object's removal.|  
   
 ## Inheritance Hierarchy  
  `exception`  

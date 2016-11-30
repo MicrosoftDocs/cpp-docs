@@ -127,9 +127,9 @@ CSingleDocTemplate(
  Dynamically allocate a `CSingleDocTemplate` object and pass it to `CWinApp::AddDocTemplate` from the `InitInstance` member function of your application class.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocViewSDI#13](../../mfc/codesnippet/CPP/csingledoctemplate-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocViewSDI#13](../../mfc/codesnippet/cpp/csingledoctemplate-class_1.cpp)]  
   
- [!code-cpp[NVC_MFCDocViewSDI#14](../../mfc/codesnippet/CPP/csingledoctemplate-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocViewSDI#14](../../mfc/codesnippet/cpp/csingledoctemplate-class_2.cpp)]  
   
 ## See Also  
  [MFC Sample DOCKTOOL](../../top/visual-cpp-samples.md)   

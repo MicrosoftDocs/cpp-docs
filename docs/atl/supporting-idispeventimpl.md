@@ -60,7 +60,7 @@ The template class [IDispEventImpl](../atl/reference/idispeventimpl-class.md) ca
   
  The following example imports the type library of an external COM server (`MSCAL.Calendar.7`):  
   
- [!code-cpp[NVC_ATL_Windowing#141](../atl/codesnippet/CPP/supporting-idispeventimpl_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#141](../atl/codesnippet/cpp/supporting-idispeventimpl_1.h)]  
   
 > [!NOTE]
 >  You must have a separate `#import` statement for each external type library you will support.  
@@ -70,12 +70,12 @@ The template class [IDispEventImpl](../atl/reference/idispeventimpl-class.md) ca
   
  The following code declares two connection point sinks, for the `DCalendarEvents` interface, for the COM object implemented by class `CMyCompositCtrl2`:  
   
- [!code-cpp[NVC_ATL_Windowing#142](../atl/codesnippet/CPP/supporting-idispeventimpl_2.h)]  
+ [!code-cpp[NVC_ATL_Windowing#142](../atl/codesnippet/cpp/supporting-idispeventimpl_2.h)]  
   
 ## Declaring an Event Sink Map  
  In order for the event notifications to be handled by the proper function, your class must route each event to its correct handler. This is achieved by declaring an event sink map.  
   
- ATL provides several macros, [BEGIN_SINK_MAP](http://msdn.microsoft.com/Library/32542b3d-ac43-4139-8ac4-41c48481744f), [END_SINK_MAP](http://msdn.microsoft.com/Library/c8bb87a0-b224-46e5-9edc-fc4d7f1129b4), and [SINK_ENTRY_EX](http://msdn.microsoft.com/Library/33a5fff6-5248-47c0-8cf4-8bdf760e86e5), that make this mapping easier. The standard format is as follows:  
+ ATL provides several macros, [BEGIN_SINK_MAP](http://msdn.microsoft.com/library/32542b3d-ac43-4139-8ac4-41c48481744f), [END_SINK_MAP](http://msdn.microsoft.com/library/c8bb87a0-b224-46e5-9edc-fc4d7f1129b4), and [SINK_ENTRY_EX](http://msdn.microsoft.com/library/33a5fff6-5248-47c0-8cf4-8bdf760e86e5), that make this mapping easier. The standard format is as follows:  
   
  `BEGIN_SINK_MAP(comClass)`  
   
@@ -87,7 +87,7 @@ The template class [IDispEventImpl](../atl/reference/idispeventimpl-class.md) ca
   
  The following example declares an event sink map with two event handlers:  
   
- [!code-cpp[NVC_ATL_Windowing#136](../atl/codesnippet/CPP/supporting-idispeventimpl_3.h)]  
+ [!code-cpp[NVC_ATL_Windowing#136](../atl/codesnippet/cpp/supporting-idispeventimpl_3.h)]  
   
  The implementation is nearly complete. The last step concerns the advising and unadvising of the external interfaces.  
   

@@ -153,7 +153,7 @@ CPrintDialog(
  Note that when you call the constructor with `bPrintSetupOnly` set to **FALSE**, the **PD_RETURNDC** flag is automatically used. After calling `DoModal`, `GetDefaults`, or `GetPrinterDC`, a printer DC will be returned in `m_pd.hDC`. This DC must be freed with a call to [DeleteDC](http://msdn.microsoft.com/library/windows/desktop/dd183533) by the caller of `CPrintDialog`.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#174](../../mfc/codesnippet/CPP/cprintdialog-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#174](../../mfc/codesnippet/cpp/cprintdialog-class_1.cpp)]  
   
 ##  <a name="cprintdialog__createprinterdc"></a>  CPrintDialog::CreatePrinterDC  
  Creates a printer device context (DC) from the [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures.  
@@ -169,7 +169,7 @@ HDC CreatePrinterDC();
  This DC is assumed to be the current printer DC, and any other previously obtained printer DCs must be deleted by the user. This function can be called, and the resulting DC used, without ever displaying the Print dialog box.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#106](../../mfc/codesnippet/CPP/cprintdialog-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#106](../../mfc/codesnippet/cpp/cprintdialog-class_2.cpp)]  
   
 ##  <a name="cprintdialog__domodal"></a>  CPrintDialog::DoModal  
  Displays the Windows common print dialog box and allows the user to select various printing options such as the number of copies, page range, and whether copies should be collated.  
@@ -231,7 +231,7 @@ BOOL GetDefaults();
 ### Example  
  This code fragment gets the default printer's device context and reports to the user the resolution of the printer in dots per inch. (This attribute of the printer's capabilities is often referred to as DPI.)  
   
- [!code-cpp[NVC_MFCDocView#107](../../mfc/codesnippet/CPP/cprintdialog-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#107](../../mfc/codesnippet/cpp/cprintdialog-class_3.cpp)]  
   
 ##  <a name="cprintdialog__getdevicename"></a>  CPrintDialog::GetDeviceName  
  Retrieves the name of the currently selected printer device.  
@@ -251,7 +251,7 @@ CString GetDeviceName() const;
 ### Example  
  This code fragment shows the user's default printer name and the port it is connected to, along with the spooler name the printer uses. The code might show a message box that says, "Your default printer is HP LaserJet IIIP on \\\server\share using winspool.", for example.  
   
- [!code-cpp[NVC_MFCDocView#108](../../mfc/codesnippet/CPP/cprintdialog-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDocView#108](../../mfc/codesnippet/cpp/cprintdialog-class_4.cpp)]  
   
 ##  <a name="cprintdialog__getdevmode"></a>  CPrintDialog::GetDevMode  
  Retrieves the `DEVMODE` structure.  
@@ -341,7 +341,7 @@ HDC GetPrinterDC() const;
  If the `bPrintSetupOnly` parameter of the `CPrintDialog` constructor was **FALSE** (indicating that the Print dialog box is displayed), then `GetPrinterDC` returns a handle to the printer device context. You must call the Windows [DeleteDC](http://msdn.microsoft.com/library/windows/desktop/dd183533) function to delete the device context when you are done using it.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#109](../../mfc/codesnippet/CPP/cprintdialog-class_5.cpp)]  
+ [!code-cpp[NVC_MFCDocView#109](../../mfc/codesnippet/cpp/cprintdialog-class_5.cpp)]  
   
 ##  <a name="cprintdialog__gettopage"></a>  CPrintDialog::GetToPage  
  Retrieves the ending page of the print range.  
@@ -374,7 +374,7 @@ PRINTDLG& m_pd;
  If you modify the `m_pd` data member directly, you will override any default behavior.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#111](../../mfc/codesnippet/CPP/cprintdialog-class_6.cpp)]  
+ [!code-cpp[NVC_MFCDocView#111](../../mfc/codesnippet/cpp/cprintdialog-class_6.cpp)]  
   
 ##  <a name="cprintdialog__printall"></a>  CPrintDialog::PrintAll  
  Determines whether to print all pages of the document.  
@@ -410,7 +410,7 @@ BOOL PrintCollate() const;
  Call this function after calling `DoModal` to determine whether the printer should collate all printed copies of the document.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#110](../../mfc/codesnippet/CPP/cprintdialog-class_7.cpp)]  
+ [!code-cpp[NVC_MFCDocView#110](../../mfc/codesnippet/cpp/cprintdialog-class_7.cpp)]  
   
 ##  <a name="cprintdialog__printrange"></a>  CPrintDialog::PrintRange  
  Determines whether to print only a specified range of pages.  

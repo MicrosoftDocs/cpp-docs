@@ -61,7 +61,7 @@ class COleDispatchException : public CException
 ## Remarks  
  Like the other exception classes derived from the `CException` base class, `COleDispatchException` can be used with the **THROW**, `THROW_LAST`, **TRY**, **CATCH**, `AND_CATCH`, and `END_CATCH` macros.  
   
- In general, you should call [AfxThrowOleDispatchException]--brokenlink--(../Topic/not%20found.md#afxthrowoledispatchexception) to create and throw a `COleDispatchException` object.  
+ In general, you should call [AfxThrowOleDispatchException](exception-processing.md#afxthrowoledispatchexception) to create and throw a `COleDispatchException` object.  
   
  For more information on exceptions, see the articles [Exception Handling (MFC)](../../mfc/exception-handling-in-mfc.md) and [Exceptions: OLE Exceptions](../../mfc/exceptions-ole-exceptions.md).  
   
@@ -83,7 +83,7 @@ DWORD m_dwHelpContext;
 ```  
   
 ### Remarks  
- This member is set by the function [AfxThrowOleDispatchException]--brokenlink--(../Topic/not%20found.md#afxthrowoledispatchexception) when an exception is thrown.  
+ This member is set by the function [AfxThrowOleDispatchException](exception-processing.md#afxthrowoledispatchexception) when an exception is thrown.  
   
 ### Example  
   See the example for [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#coledispatchdriver__createdispatch).  
@@ -96,7 +96,7 @@ CString m_strDescription;
 ```  
   
 ### Remarks  
- This member is set by the function [AfxThrowOleDispatchException]--brokenlink--(../Topic/not%20found.md#afxthrowoledispatchexception) when an exception is thrown.  
+ This member is set by the function [AfxThrowOleDispatchException](exception-processing.md#afxthrowoledispatchexception) when an exception is thrown.  
   
 ### Example  
   See the example for [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#coledispatchdriver__createdispatch).  
@@ -126,7 +126,7 @@ WORD m_wCode;
 ```  
   
 ### Remarks  
- This member is set by the function [AfxThrowOleDispatchException]--brokenlink--(../Topic/not%20found.md#afxthrowoledispatchexception) when an exception is thrown.  
+ This member is set by the function [AfxThrowOleDispatchException](exception-processing.md#afxthrowoledispatchexception) when an exception is thrown.  
   
 ## See Also  
  [MFC Sample CALCDRIV](../../top/visual-cpp-samples.md)   

@@ -77,7 +77,7 @@ class COleMessageFilter : public CCmdTarget
   
  Common usage is for a server application to call [BeginBusyState](#colemessagefilter__beginbusystate) and [EndBusyState](#colemessagefilter__endbusystate) when it would be dangerous for a document or other OLE accessible object to be destroyed. These calls are made in [CWinApp::OnIdle](../../mfc/reference/cwinapp-class.md#cwinapp__onidle) during user-interface updates.  
   
- By default, a `COleMessageFilter` object is allocated when the application is initialized. It can be retrieved with [AfxOleGetMessageFilter]--brokenlink--(../Topic/not%20found.md#afxolegetmessagefilter).  
+ By default, a `COleMessageFilter` object is allocated when the application is initialized. It can be retrieved with [AfxOleGetMessageFilter](ole-initialization.md#afxolegetmessagefilter).  
   
  This is an advanced class; you seldom need to work with it directly.  
   

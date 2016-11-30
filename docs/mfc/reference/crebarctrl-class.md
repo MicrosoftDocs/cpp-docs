@@ -118,7 +118,7 @@ class CReBarCtrl : public CWnd
   
 -   Band 2 contains a combo box and four standard buttons.  
   
-     ![Example of a Rebar menu](../../mfc/reference/media/vc4scc1.gif "vc4SCC1")  
+     ![Example of a Rebar menu](../../mfc/reference/media/vc4scc1.gif "vc4scc1")  
   
 ## Rebar control  
  Rebar controls support:  
@@ -198,7 +198,7 @@ virtual BOOL Create(
  When you call **Create**, the common controls are initialized.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CReBarCtrl#3](../../mfc/reference/codesnippet/CPP/crebarctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CReBarCtrl#3](../../mfc/reference/codesnippet/cpp/crebarctrl-class_1.cpp)]  
   
 ##  <a name="crebarctrl__createex"></a>  CReBarCtrl::CreateEx  
  Creates a control (a child window) and associates it with the `CReBarCtrl` object.  
@@ -259,7 +259,7 @@ BOOL DeleteBand(UINT uBand);
  Nonzero if the band deleted successfully; otherwise zero.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CReBarCtrl#4](../../mfc/reference/codesnippet/CPP/crebarctrl-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_CReBarCtrl#4](../../mfc/reference/codesnippet/cpp/crebarctrl-class_2.cpp)]  
   
 ##  <a name="crebarctrl__dragmove"></a>  CReBarCtrl::DragMove  
  Implements the behavior of the Win32 message [RB_DRAGMOVE](https://msdn.microsoft.com/library/bb774433.aspx), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
@@ -459,7 +459,7 @@ CPalette* GetPalette() const;
  Note that this member function uses a `CPalette` object as its return value, rather than an `HPALETTE`.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CReBarCtrl#5](../../mfc/reference/codesnippet/CPP/crebarctrl-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_CReBarCtrl#5](../../mfc/reference/codesnippet/cpp/crebarctrl-class_3.cpp)]  
   
 ##  <a name="crebarctrl__getrect"></a>  CReBarCtrl::GetRect  
  Implements the behavior of the Win32 message [RB_GETRECT](http://msdn.microsoft.com/library/windows/desktop/bb774469), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
@@ -483,7 +483,7 @@ BOOL GetRect(
  Nonzero if successful; otherwise zero.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CReBarCtrl#6](../../mfc/reference/codesnippet/CPP/crebarctrl-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_CReBarCtrl#6](../../mfc/reference/codesnippet/cpp/crebarctrl-class_4.cpp)]  
   
 ##  <a name="crebarctrl__getrowcount"></a>  CReBarCtrl::GetRowCount  
  Implements the behavior of the Win32 message [RB_GETROWCOUNT](http://msdn.microsoft.com/library/windows/desktop/bb774471), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
@@ -498,7 +498,7 @@ UINT GetRowCount() const;
  A **UINT** value that represents the number of band rows in the control.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CReBarCtrl#7](../../mfc/reference/codesnippet/CPP/crebarctrl-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_CReBarCtrl#7](../../mfc/reference/codesnippet/cpp/crebarctrl-class_5.cpp)]  
   
 ##  <a name="crebarctrl__getrowheight"></a>  CReBarCtrl::GetRowHeight  
  Implements the behavior of the Win32 message [RB_GETROWHEIGHT](http://msdn.microsoft.com/library/windows/desktop/bb774473), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
@@ -517,7 +517,7 @@ UINT GetRowHeight(UINT uRow) const;
  A **UINT** value that represents the row height, in pixels.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CReBarCtrl#8](../../mfc/reference/codesnippet/CPP/crebarctrl-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_CReBarCtrl#8](../../mfc/reference/codesnippet/cpp/crebarctrl-class_6.cpp)]  
   
 ##  <a name="crebarctrl__gettextcolor"></a>  CReBarCtrl::GetTextColor  
  Implements the behavior of the Win32 message [RB_GETTEXTCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb774475), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
@@ -596,7 +596,7 @@ BOOL InsertBand(
  Nonzero if successful; otherwise zero.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CReBarCtrl#9](../../mfc/reference/codesnippet/CPP/crebarctrl-class_7.cpp)]  
+ [!code-cpp[NVC_MFC_CReBarCtrl#9](../../mfc/reference/codesnippet/cpp/crebarctrl-class_7.cpp)]  
   
 ##  <a name="crebarctrl__maximizeband"></a>  CReBarCtrl::MaximizeBand  
  Resizes a band in a rebar control to its largest size.  
@@ -613,7 +613,7 @@ void MaximizeBand(UINT uBand);
  Implements the behavior of the Win32 message [RB_MAXIMIZEBAND](http://msdn.microsoft.com/library/windows/desktop/bb774500) with `fIdeal` set to 0, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CReBarCtrl#10](../../mfc/reference/codesnippet/CPP/crebarctrl-class_8.cpp)]  
+ [!code-cpp[NVC_MFC_CReBarCtrl#10](../../mfc/reference/codesnippet/cpp/crebarctrl-class_8.cpp)]  
   
 ##  <a name="crebarctrl__minimizeband"></a>  CReBarCtrl::MinimizeBand  
  Resizes a band in a rebar control to its smallest size.  
@@ -630,7 +630,7 @@ void MinimizeBand(UINT uBand);
  Implements the behavior of the Win32 message [RB_MINIMIZEBAND](http://msdn.microsoft.com/library/windows/desktop/bb774502), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CReBarCtrl#11](../../mfc/reference/codesnippet/CPP/crebarctrl-class_9.cpp)]  
+ [!code-cpp[NVC_MFC_CReBarCtrl#11](../../mfc/reference/codesnippet/cpp/crebarctrl-class_9.cpp)]  
   
 ##  <a name="crebarctrl__moveband"></a>  CReBarCtrl::MoveBand  
  Implements the behavior of the Win32 message [RB_MOVEBAND](http://msdn.microsoft.com/library/windows/desktop/bb774504), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
@@ -682,7 +682,7 @@ void RestoreBand(UINT uBand);
  Implements the behavior of the Win32 message [RB_MAXIMIZEBAND](http://msdn.microsoft.com/library/windows/desktop/bb774500) with `fIdeal` set to 1, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFC_CReBarCtrl#12](../../mfc/reference/codesnippet/CPP/crebarctrl-class_10.cpp)]  
+ [!code-cpp[NVC_MFC_CReBarCtrl#12](../../mfc/reference/codesnippet/cpp/crebarctrl-class_10.cpp)]  
   
 ##  <a name="crebarctrl__setbandinfo"></a>  CReBarCtrl::SetBandInfo  
  Implements the behavior of the Win32 message [RB_SETBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774508), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
@@ -704,7 +704,7 @@ BOOL SetBandInfo(
  Nonzero if successful; otherwise zero.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CReBarCtrl#13](../../mfc/reference/codesnippet/CPP/crebarctrl-class_11.cpp)]  
+ [!code-cpp[NVC_MFC_CReBarCtrl#13](../../mfc/reference/codesnippet/cpp/crebarctrl-class_11.cpp)]  
   
 ##  <a name="crebarctrl__setbandwidth"></a>  CReBarCtrl::SetBandWidth  
  Sets the width of the specified docked band in the current rebar control.  
@@ -731,12 +731,12 @@ BOOL SetBandWidth(
 ### Example  
  The following code example defines the variable, `m_rebar`, that is used to access the current rebar control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CReBarCtrl_s1#1](../../mfc/reference/codesnippet/CPP/crebarctrl-class_12.h)]  
+ [!code-cpp[NVC_MFC_CReBarCtrl_s1#1](../../mfc/reference/codesnippet/cpp/crebarctrl-class_12.h)]  
   
 ### Example  
  The following code example sets each rebar band to be the same width.  
   
- [!code-cpp[NVC_MFC_CReBarCtrl_s1#2](../../mfc/reference/codesnippet/CPP/crebarctrl-class_13.cpp)]  
+ [!code-cpp[NVC_MFC_CReBarCtrl_s1#2](../../mfc/reference/codesnippet/cpp/crebarctrl-class_13.cpp)]  
   
 ##  <a name="crebarctrl__setbarinfo"></a>  CReBarCtrl::SetBarInfo  
  Implements the behavior of the Win32 message [RB_SETBARINFO](http://msdn.microsoft.com/library/windows/desktop/bb774513), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
@@ -753,7 +753,7 @@ BOOL SetBarInfo(REBARINFO* prbi);
  Nonzero if successful; otherwise zero.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CReBarCtrl#14](../../mfc/reference/codesnippet/CPP/crebarctrl-class_14.cpp)]  
+ [!code-cpp[NVC_MFC_CReBarCtrl#14](../../mfc/reference/codesnippet/cpp/crebarctrl-class_14.cpp)]  
   
 ##  <a name="crebarctrl__setbkcolor"></a>  CReBarCtrl::SetBkColor  
  Implements the behavior of the Win32 message [RB_SETBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb774515), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  

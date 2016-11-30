@@ -66,4 +66,5 @@ This topic explains what you do to use RFX in relation to what the framework doe
  [Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)   
  [CRecordset Class](../../mfc/reference/crecordset-class.md)   
  [CFieldExchange Class](../../mfc/reference/cfieldexchange-class.md)   
- [Macros, Global Functions, and Global Variables](../../mfc/reference/macros-global-functions-and-global-variables.md)
+ [Macros, Global Functions, and Global Variables](../../mfc/reference/mfc-macros-and-globals.md)
+

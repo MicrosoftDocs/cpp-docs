@@ -605,7 +605,7 @@ virtual void OnPrepareDC(
  Call the base class version of `OnPrepareDC` at the beginning of your override.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#183](../../mfc/codesnippet/CPP/cview-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#183](../../mfc/codesnippet/cpp/cview-class_1.cpp)]  
   
 ##  <a name="cview__onprepareprinting"></a>  CView::OnPreparePrinting  
  Called by the framework before a document is printed or previewed.  
@@ -635,11 +635,11 @@ virtual BOOL OnPreparePrinting(CPrintInfo* pInfo);
 ### Example  
   Override `OnPreparePrinting` and call `DoPreparePrinting` from the override so that the framework will display a Print dialog box and create a printer DC for you.  
   
- [!code-cpp[NVC_MFCDocView#184](../../mfc/codesnippet/CPP/cview-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#184](../../mfc/codesnippet/cpp/cview-class_2.cpp)]  
   
  If you know how many pages the document contains, set the maximum page in `OnPreparePrinting` before calling `DoPreparePrinting`. The framework will display the maximum page number in the "to" box of the Print dialog box.  
   
- [!code-cpp[NVC_MFCDocView#185](../../mfc/codesnippet/CPP/cview-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#185](../../mfc/codesnippet/cpp/cview-class_3.cpp)]  
   
 ##  <a name="cview__onprint"></a>  CView::OnPrint  
  Called by the framework to print or preview a page of the document.  
@@ -677,7 +677,7 @@ virtual void OnPrint(
 ### Example  
  The following is a skeleton for an overridden `OnPrint` function:  
   
- [!code-cpp[NVC_MFCDocView#186](../../mfc/codesnippet/CPP/cview-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDocView#186](../../mfc/codesnippet/cpp/cview-class_4.cpp)]  
   
  For another example, see [CRichEditView::PrintInsideRect](../../mfc/reference/cricheditview-class.md#cricheditview__printinsiderect).  
   

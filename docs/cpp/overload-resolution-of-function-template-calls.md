@@ -101,4 +101,4 @@ void f(T1, T2)
 ## See Also  
  [Name Resolution](../cpp/templates-and-name-resolution.md)   
  [typename](../cpp/typename.md)   
- [Template Argument Deduction](../Topic/Template%20Argument%20Deduction.md)
+ 

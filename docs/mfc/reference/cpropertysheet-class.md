@@ -158,7 +158,7 @@ void AddPage(CPropertyPage* pPage);
  If you call `AddPage` after displaying the property page, the tab row will reflect the newly added page.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#129](../../mfc/codesnippet/CPP/cpropertysheet-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#129](../../mfc/codesnippet/cpp/cpropertysheet-class_1.cpp)]  
   
 ##  <a name="cpropertysheet__construct"></a>  CPropertySheet::Construct  
  Constructs a `CPropertySheet` object.  
@@ -226,7 +226,7 @@ void Construct(
 ### Example  
  The following example demonstrates under what circumstances you would call `Construct`.  
   
- [!code-cpp[NVC_MFCDocView#130](../../mfc/codesnippet/CPP/cpropertysheet-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#130](../../mfc/codesnippet/cpp/cpropertysheet-class_2.cpp)]  
   
 ##  <a name="cpropertysheet__cpropertysheet"></a>  CPropertySheet::CPropertySheet  
  Constructs a `CPropertySheet` object.  
@@ -295,7 +295,7 @@ CPropertySheet(
  You can display watermark and/or header images automatically if you use the third or fourth prototypes of `CPropertySheet`, above, and you pass valid values for the `hbmWatermark`, `hpalWatermark`, and/or `hbmHeader` parameters.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#131](../../mfc/codesnippet/CPP/cpropertysheet-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#131](../../mfc/codesnippet/cpp/cpropertysheet-class_3.cpp)]  
   
 ##  <a name="cpropertysheet__create"></a>  CPropertySheet::Create  
  Displays a modeless property sheet.  
@@ -333,9 +333,9 @@ virtual BOOL Create(CWnd* pParentWnd = NULL,
  To display a modal property sheet, call [DoModal](#cpropertysheet__domodal) instead.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#132](../../mfc/codesnippet/CPP/cpropertysheet-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDocView#132](../../mfc/codesnippet/cpp/cpropertysheet-class_4.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#133](../../mfc/codesnippet/CPP/cpropertysheet-class_5.cpp)]  
+ [!code-cpp[NVC_MFCDocView#133](../../mfc/codesnippet/cpp/cpropertysheet-class_5.cpp)]  
   
 ##  <a name="cpropertysheet__domodal"></a>  CPropertySheet::DoModal  
  Displays a modal property sheet.  
@@ -397,7 +397,7 @@ void EnableStackedTabs(BOOL bStacked);
  You must call `EnableStackedTabs` when you create a modal or a modeless property sheet. To incorporate this style in a `CPropertySheet`-derived class, write a message handler for `WM_CREATE`. In the overridden version of [CWnd::OnCreate](../../mfc/reference/cwnd-class.md#cwnd__oncreate), call **EnableStackedTabs( FALSE )** before calling the base class implementation.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#134](../../mfc/codesnippet/CPP/cpropertysheet-class_6.cpp)]  
+ [!code-cpp[NVC_MFCDocView#134](../../mfc/codesnippet/cpp/cpropertysheet-class_6.cpp)]  
   
 ##  <a name="cpropertysheet__enddialog"></a>  CPropertySheet::EndDialog  
  Terminates the property sheet.  
@@ -449,7 +449,7 @@ CPropertyPage* GetActivePage() const;
  Use this member function to perform some action on the active page.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#135](../../mfc/codesnippet/CPP/cpropertysheet-class_7.cpp)]  
+ [!code-cpp[NVC_MFCDocView#135](../../mfc/codesnippet/cpp/cpropertysheet-class_7.cpp)]  
   
 ##  <a name="cpropertysheet__getpage"></a>  CPropertySheet::GetPage  
  Returns a pointer to the specified page in this property sheet.  
@@ -521,7 +521,7 @@ CTabCtrl* GetTabControl() const;
  For example, call this member function if you want to add bitmaps to each of the tabs during initialization.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#136](../../mfc/codesnippet/CPP/cpropertysheet-class_8.cpp)]  
+ [!code-cpp[NVC_MFCDocView#136](../../mfc/codesnippet/cpp/cpropertysheet-class_8.cpp)]  
   
 ##  <a name="cpropertysheet__m_psh"></a>  CPropertySheet::m_psh  
  A structure whose members store the characteristics of [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546).  
@@ -532,7 +532,7 @@ CTabCtrl* GetTabControl() const;
  For more information on this structure, including a listing of its members, see **PROPSHEETHEADER** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#143](../../mfc/codesnippet/CPP/cpropertysheet-class_9.cpp)]  
+ [!code-cpp[NVC_MFCDocView#143](../../mfc/codesnippet/cpp/cpropertysheet-class_9.cpp)]  
   
 ##  <a name="cpropertysheet__mapdialogrect"></a>  CPropertySheet::MapDialogRect  
  Converts the dialog-box units of a rectangle to screen units.  
@@ -602,7 +602,7 @@ void PressButton(int nButton);
  A call to `PressButton` will not send the [PSN_APPLY](http://msdn.microsoft.com/library/windows/desktop/bb774552) notification from a property page to the framework. To send this notification, call [CPropertyPage::OnOK](../../mfc/reference/cpropertypage-class.md#cpropertypage__onok).  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#137](../../mfc/codesnippet/CPP/cpropertysheet-class_10.cpp)]  
+ [!code-cpp[NVC_MFCDocView#137](../../mfc/codesnippet/cpp/cpropertysheet-class_10.cpp)]  
   
 ##  <a name="cpropertysheet__removepage"></a>  CPropertySheet::RemovePage  
  Removes a page from the property sheet and destroys the associated window.  
@@ -665,7 +665,7 @@ void SetFinishText(LPCTSTR lpszText);
  Call `SetFinishText` to display the text on the Finish command button and hide the Next and Back buttons after the user completes action on the last page of the wizard.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#138](../../mfc/codesnippet/CPP/cpropertysheet-class_11.cpp)]  
+ [!code-cpp[NVC_MFCDocView#138](../../mfc/codesnippet/cpp/cpropertysheet-class_11.cpp)]  
   
 ##  <a name="cpropertysheet__settitle"></a>  CPropertySheet::SetTitle  
  Specifies the property sheet's caption (the text displayed in the title bar of a frame window).  
@@ -687,7 +687,7 @@ void SetTitle(
  By default, a property sheet uses the caption parameter in the property sheet constructor.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#139](../../mfc/codesnippet/CPP/cpropertysheet-class_12.cpp)]  
+ [!code-cpp[NVC_MFCDocView#139](../../mfc/codesnippet/cpp/cpropertysheet-class_12.cpp)]  
   
 ##  <a name="cpropertysheet__setwizardbuttons"></a>  CPropertySheet::SetWizardButtons  
  Enables or disables the Back, Next, or Finish button in a wizard property sheet.  
@@ -716,11 +716,11 @@ void SetWizardButtons(DWORD dwFlags);
 ### Example  
  A `CPropertySheet` has three wizard property pages: `CStylePage`, `CColorPage`, and `CShapePage`.  The code fragment below shows how to enable and disable the **Back** and **Next** buttons on the wizard property page.  
   
- [!code-cpp[NVC_MFCDocView#140](../../mfc/codesnippet/CPP/cpropertysheet-class_13.cpp)]  
+ [!code-cpp[NVC_MFCDocView#140](../../mfc/codesnippet/cpp/cpropertysheet-class_13.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#141](../../mfc/codesnippet/CPP/cpropertysheet-class_14.cpp)]  
+ [!code-cpp[NVC_MFCDocView#141](../../mfc/codesnippet/cpp/cpropertysheet-class_14.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#138](../../mfc/codesnippet/CPP/cpropertysheet-class_11.cpp)]  
+ [!code-cpp[NVC_MFCDocView#138](../../mfc/codesnippet/cpp/cpropertysheet-class_11.cpp)]  
   
 ##  <a name="cpropertysheet__setwizardmode"></a>  CPropertySheet::SetWizardMode  
  Establishes a property page as a wizard.  
@@ -737,7 +737,7 @@ void SetWizardMode();
  `SetWizardMode` sets the PSH_WIZARD flag.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#142](../../mfc/codesnippet/CPP/cpropertysheet-class_15.cpp)]  
+ [!code-cpp[NVC_MFCDocView#142](../../mfc/codesnippet/cpp/cpropertysheet-class_15.cpp)]  
   
 ## See Also  
  [MFC Sample CMNCTRL1](../../top/visual-cpp-samples.md)   

@@ -142,7 +142,7 @@ explicit CBrush(
  The constructor with a `CBitmap` parameter constructs a patterned brush. The parameter identifies a bitmap. The bitmap is assumed to have been created by using [CBitmap::CreateBitmap](../../mfc/reference/cbitmap-class.md#cbitmap__createbitmap), [CBitmap::CreateBitmapIndirect](../../mfc/reference/cbitmap-class.md#cbitmap__createbitmapindirect), [CBitmap::LoadBitmap](../../mfc/reference/cbitmap-class.md#cbitmap__loadbitmap), or [CBitmap::CreateCompatibleBitmap](../../mfc/reference/cbitmap-class.md#cbitmap__createcompatiblebitmap). The minimum size for a bitmap to be used in a fill pattern is 8 pixels by 8 pixels.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#21](../../mfc/codesnippet/CPP/cbrush-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#21](../../mfc/codesnippet/cpp/cbrush-class_1.cpp)]  
   
 ##  <a name="cbrush__createbrushindirect"></a>  CBrush::CreateBrushIndirect  
  Initializes a brush with a style, color, and pattern specified in a [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) structure.  
@@ -164,7 +164,7 @@ BOOL CreateBrushIndirect(const LOGBRUSH* lpLogBrush);
  A brush created using a monochrome (1 plane, 1 bit per pixel) bitmap is drawn using the current text and background colors. Pixels represented by a bit set to 0 will be drawn with the current text color. Pixels represented by a bit set to 1 will be drawn with the current background color.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#22](../../mfc/codesnippet/CPP/cbrush-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#22](../../mfc/codesnippet/cpp/cbrush-class_2.cpp)]  
   
 ##  <a name="cbrush__createdibpatternbrush"></a>  CBrush::CreateDIBPatternBrush  
  Initializes a brush with the pattern specified by a device-independent bitmap (DIB).  
@@ -219,7 +219,7 @@ BOOL CreateDIBPatternBrush(
 - [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574)  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#23](../../mfc/codesnippet/CPP/cbrush-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#23](../../mfc/codesnippet/cpp/cbrush-class_3.cpp)]  
   
 ##  <a name="cbrush__createhatchbrush"></a>  CBrush::CreateHatchBrush  
  Initializes a brush with the specified hatched pattern and color.  
@@ -256,7 +256,7 @@ BOOL CreateHatchBrush(
  The brush can subsequently be selected as the current brush for any device context.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#24](../../mfc/codesnippet/CPP/cbrush-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDocView#24](../../mfc/codesnippet/cpp/cbrush-class_4.cpp)]  
   
 ##  <a name="cbrush__createpatternbrush"></a>  CBrush::CreatePatternBrush  
  Initializes a brush with a pattern specified by a bitmap.  
@@ -284,7 +284,7 @@ BOOL CreatePatternBrush(CBitmap* pBitmap);
  For information about using [CreatePatternBrush](http://msdn.microsoft.com/library/windows/desktop/dd183508), a Windows function, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#25](../../mfc/codesnippet/CPP/cbrush-class_5.cpp)]  
+ [!code-cpp[NVC_MFCDocView#25](../../mfc/codesnippet/cpp/cbrush-class_5.cpp)]  
   
 ##  <a name="cbrush__createsolidbrush"></a>  CBrush::CreateSolidBrush  
  Initializes a brush with a specified solid color.  
@@ -328,7 +328,7 @@ BOOL CreateSysColorBrush(int nIndex);
  When an application has finished using the brush created by `CreateSysColorBrush`, it should select the brush out of the device context.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#26](../../mfc/codesnippet/CPP/cbrush-class_6.cpp)]  
+ [!code-cpp[NVC_MFCDocView#26](../../mfc/codesnippet/cpp/cbrush-class_6.cpp)]  
   
 ##  <a name="cbrush__fromhandle"></a>  CBrush::FromHandle  
  Returns a pointer to a `CBrush` object when given a handle to a Windows [HBRUSH](#cbrush__operator_hbrush) object.  
@@ -376,7 +376,7 @@ int GetLogBrush(LOGBRUSH* pLogBrush);
  For example, call `GetLogBrush` to match the particular color or pattern of a bitmap.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#27](../../mfc/codesnippet/CPP/cbrush-class_7.cpp)]  
+ [!code-cpp[NVC_MFCDocView#27](../../mfc/codesnippet/cpp/cbrush-class_7.cpp)]  
   
 ##  <a name="cbrush__operator_hbrush"></a>  CBrush::operator HBRUSH  
  Use this operator to get the attached Windows GDI handle of the `CBrush` object.  
@@ -395,7 +395,7 @@ int GetLogBrush(LOGBRUSH* pLogBrush);
  For more information about using graphic objects, see [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#28](../../mfc/codesnippet/CPP/cbrush-class_8.cpp)]  
+ [!code-cpp[NVC_MFCDocView#28](../../mfc/codesnippet/cpp/cbrush-class_8.cpp)]  
   
 ## See Also  
  [MFC Sample PROPDLG](../../top/visual-cpp-samples.md)   

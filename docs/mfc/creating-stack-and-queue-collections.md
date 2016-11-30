@@ -51,7 +51,7 @@ This article explains how to create other data structures, such as [stacks](#_co
   
      The following example shows how to add member functions to push elements on to the stack, peek at the top element of the stack, and pop the top element from the stack:  
   
-     [!code-cpp[NVC_MFCCollections#20](../mfc/codesnippet/CPP/creating-stack-and-queue-collections_1.h)]  
+     [!code-cpp[NVC_MFCCollections#20](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_1.h)]  
   
  Note that this approach exposes the underlying `CObList` class. The user can call any `CObList` member function, whether it makes sense for a stack or not.  
   
@@ -64,7 +64,7 @@ This article explains how to create other data structures, such as [stacks](#_co
   
      The following example shows how you can append member functions to add an element to the end of the queue and get the element from the front of the queue.  
   
-     [!code-cpp[NVC_MFCCollections#21](../mfc/codesnippet/CPP/creating-stack-and-queue-collections_2.h)]  
+     [!code-cpp[NVC_MFCCollections#21](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_2.h)]  
   
 ## See Also  
  [Collections](../mfc/collections.md)

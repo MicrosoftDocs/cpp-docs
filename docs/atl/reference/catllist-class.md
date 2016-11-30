@@ -129,7 +129,7 @@ POSITION AddHead(INARGTYPE   element);
  If the first version is used, an empty element is created using its default constructor, rather than its copy constructor.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#13](../../atl/codesnippet/CPP/catllist-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#13](../../atl/codesnippet/cpp/catllist-class_1.cpp)]  
   
 ##  <a name="catllist__addheadlist"></a>  CAtlList::AddHeadList  
  Call this method to add an existing list to the head of the list.  
@@ -146,7 +146,7 @@ void AddHeadList(const CAtlList<E, ETraits>* plNew);
  The list pointed to by `plNew` is inserted at the start of the existing list. In debug builds, an assertion failure will occur if `plNew` is equal to NULL.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#14](../../atl/codesnippet/CPP/catllist-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#14](../../atl/codesnippet/cpp/catllist-class_2.cpp)]  
   
 ##  <a name="catllist__addtail"></a>  CAtlList::AddTail  
  Call this method to add an element to the tail of this list.  
@@ -167,7 +167,7 @@ POSITION AddTail(INARGTYPE   element);
  If the first version is used, an empty element is created using its default constructor, rather than its copy constructor. The element is added to the end of the list, and so it now becomes the tail. This method can be used with an empty list.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#15](../../atl/codesnippet/CPP/catllist-class_3.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#15](../../atl/codesnippet/cpp/catllist-class_3.cpp)]  
   
 ##  <a name="catllist__addtaillist"></a>  CAtlList::AddTailList  
  Call this method to add an existing list to the tail of this list.  
@@ -184,7 +184,7 @@ void AddTailList(const CAtlList<E, ETraits>* plNew);
  The list pointed to by `plNew` is inserted after the last element (if any) in the list object. The last element in the `plNew` list therefore becomes the tail. In debug builds, an assertion failure will occur if *plNew* is equal to NULL.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#16](../../atl/codesnippet/CPP/catllist-class_4.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#16](../../atl/codesnippet/cpp/catllist-class_4.cpp)]  
   
 ##  <a name="catllist__assertvalid"></a>  CAtlList::AssertValid  
  Call this method to confirm the list is valid.  
@@ -197,7 +197,7 @@ void AssertValid() const;
  In debug builds, an assertion failure will occur if the list object is not valid. To be valid, an empty list must have both the head and tail pointing to NULL, and a list that is not empty must have both the head and tail pointing to valid addresses.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#17](../../atl/codesnippet/CPP/catllist-class_5.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#17](../../atl/codesnippet/cpp/catllist-class_5.cpp)]  
   
 ##  <a name="catllist__catllist"></a>  CAtlList::CAtlList  
  The constructor.  
@@ -214,7 +214,7 @@ CAtlList(UINT nBlockSize = 10) throw();
  The constructor for the `CAtlList` object. The block size is a measure of the amount of memory allocated when a new element is required. Larger block sizes reduce calls to memory allocation routines, but use more resources.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#18](../../atl/codesnippet/CPP/catllist-class_6.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#18](../../atl/codesnippet/cpp/catllist-class_6.cpp)]  
   
 ##  <a name="catllist___dtorcatllist"></a>  CAtlList::~CAtlList  
  The destructor.  
@@ -249,7 +249,7 @@ POSITION Find(INARGTYPE element,  POSITION posStartAfter = NULL) const throw();
  In debug builds, an assertion failure will occur if the list object is not valid, or if the `posStartAfter` value is out of range.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#19](../../atl/codesnippet/CPP/catllist-class_7.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#19](../../atl/codesnippet/cpp/catllist-class_7.cpp)]  
   
 ##  <a name="catllist__findindex"></a>  CAtlList::FindIndex  
  Call this method to obtain the position of an element, given an index value.  
@@ -271,7 +271,7 @@ POSITION FindIndex(size_t iElement) const throw();
  In debug builds, an assertion failure will occur if the list object is not valid.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#20](../../atl/codesnippet/CPP/catllist-class_8.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#20](../../atl/codesnippet/cpp/catllist-class_8.cpp)]  
   
 ##  <a name="catllist__getat"></a>  CAtlList::GetAt  
  Call this method to return the element at a specified position in the list.  
@@ -348,7 +348,7 @@ POSITION GetHeadPosition() const throw();
  If the list is empty, the value returned is NULL.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#21](../../atl/codesnippet/CPP/catllist-class_9.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#21](../../atl/codesnippet/cpp/catllist-class_9.cpp)]  
   
 ##  <a name="catllist__getnext"></a>  CAtlList::GetNext  
  Call this method to return the next element from the list.  
@@ -434,7 +434,7 @@ POSITION GetTailPosition() const throw();
  If the list is empty, the value returned is NULL.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#22](../../atl/codesnippet/CPP/catllist-class_10.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#22](../../atl/codesnippet/cpp/catllist-class_10.cpp)]  
   
 ##  <a name="catllist__inargtype"></a>  CAtlList::INARGTYPE  
  Type used when an element is passed as an input argument.  
@@ -464,7 +464,7 @@ POSITION InsertAfter(POSITION pos,  INARGTYPE element);
  In debug builds, an assertion failure will occur if the list isn't valid, if the insert fails, or if an attempt is made to insert the element after the tail.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#23](../../atl/codesnippet/CPP/catllist-class_11.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#23](../../atl/codesnippet/cpp/catllist-class_11.cpp)]  
   
 ##  <a name="catllist__insertbefore"></a>  CAtlList::InsertBefore  
  Call this method to insert a new element into the list before the specified position.  
@@ -487,7 +487,7 @@ POSITION InsertBefore(POSITION pos,  INARGTYPE element);
  In debug builds, an assertion failure will occur if the list isn't valid, if the insert fails, or if an attempt is made to insert the element before the head.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#24](../../atl/codesnippet/CPP/catllist-class_12.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#24](../../atl/codesnippet/cpp/catllist-class_12.cpp)]  
   
 ##  <a name="catllist__isempty"></a>  CAtlList::IsEmpty  
  Call this method to determine if the list is empty.  
@@ -500,7 +500,7 @@ bool IsEmpty() const throw();
  Returns true if the list contains no objects, otherwise false.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#25](../../atl/codesnippet/CPP/catllist-class_13.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#25](../../atl/codesnippet/cpp/catllist-class_13.cpp)]  
   
 ##  <a name="catllist__movetohead"></a>  CAtlList::MoveToHead  
  Call this method to move the specified element to the head of the list.  
@@ -517,7 +517,7 @@ void MoveToHead(POSITION pos) throw();
  The specified element is moved from its current position to the head of the list. In debug builds, an assertion failure will occur if `pos` is equal to NULL.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#26](../../atl/codesnippet/CPP/catllist-class_14.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#26](../../atl/codesnippet/cpp/catllist-class_14.cpp)]  
   
 ##  <a name="catllist__movetotail"></a>  CAtlList::MoveToTail  
  Call this method to move the specified element to the tail of the list.  
@@ -566,7 +566,7 @@ void RemoveAt(POSITION pos) throw();
  In debug builds, an assertion failure will occur if the list is not valid or if removing the element causes the list to access memory which isn't part of the list structure.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#27](../../atl/codesnippet/CPP/catllist-class_15.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#27](../../atl/codesnippet/cpp/catllist-class_15.cpp)]  
   
 ##  <a name="catllist__removehead"></a>  CAtlList::RemoveHead  
  Call this method to remove the element at the head of the list.  
@@ -582,7 +582,7 @@ E RemoveHead();
  The head element is deleted from the list, and memory is freed. A copy of the element is returned. In debug builds, an assertion failure will occur if the list is empty.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#28](../../atl/codesnippet/CPP/catllist-class_16.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#28](../../atl/codesnippet/cpp/catllist-class_16.cpp)]  
   
 ##  <a name="catllist__removeheadnoreturn"></a>  CAtlList::RemoveHeadNoReturn  
  Call this method to remove the element at the head of the list without returning a value.  
@@ -611,7 +611,7 @@ E RemoveTail();
  The tail element is deleted from the list, and memory is freed. A copy of the element is returned. In debug builds, an assertion failure will occur if the list is empty.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#29](../../atl/codesnippet/CPP/catllist-class_17.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#29](../../atl/codesnippet/cpp/catllist-class_17.cpp)]  
   
 ##  <a name="catllist__removetailnoreturn"></a>  CAtlList::RemoveTailNoReturn  
  Call this method to remove the element at the tail of the list without returning a value.  
@@ -644,7 +644,7 @@ void SetAt(POSITION pos,  INARGTYPE element);
  Replaces the existing value with `element`. In debug builds, an assertion failure will occur if `pos` is equal to NULL.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#30](../../atl/codesnippet/CPP/catllist-class_18.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#30](../../atl/codesnippet/cpp/catllist-class_18.cpp)]  
   
 ##  <a name="catllist__swapelements"></a>  CAtlList::SwapElements  
  Call this method to swap elements in the list.  
@@ -664,7 +664,7 @@ void SwapElements(POSITION pos1,  POSITION pos2) throw();
  Swaps the elements at the two positions specified. In debug builds, an assertion failure will occur if either position value is equal to NULL.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#31](../../atl/codesnippet/CPP/catllist-class_19.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#31](../../atl/codesnippet/cpp/catllist-class_19.cpp)]  
   
 ## See Also  
  [CList Class](../../mfc/reference/clist-class.md)   

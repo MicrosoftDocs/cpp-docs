@@ -214,7 +214,7 @@ int GetSize() const;
  The overloaded subscript ( `[]`) operator returns a single `CString` specified by the zero-based index in `nIndex`.  
   
 ```  
-CString& operator[ ](int nIndex);
+CString& operator[ ](int nindex);
 ```  
   
 ### Parameters  

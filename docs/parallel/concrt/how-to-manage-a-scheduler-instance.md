@@ -43,19 +43,20 @@ Scheduler instances let you associate specific scheduling policies with various 
   
 1.  Create a [concurrency::SchedulerPolicy](../../parallel/concrt/reference/schedulerpolicy-class.md) object that contains the policy values for the scheduler to use.  
   
-2.  Call the [concurrency::CurrentScheduler::Create](reference/CurrentScheduler-class.md#CurrentScheduler__Create) method or the [concurrency::Scheduler::Create](reference/Scheduler-class.md#Scheduler__Create) method to create a scheduler instance.  
+
+2.  Call the [concurrency::CurrentScheduler::Create](reference/currentscheduler-class.md#currentscheduler__create_method) method or the [concurrency::Scheduler::Create](reference/scheduler-class.md#scheduler__create_method) method to create a scheduler instance.  
   
-     If you use the `Scheduler::Create` method, call the [concurrency::Scheduler::Attach](reference/Scheduler-class.md#Scheduler__Attach) method when you need to associate the scheduler with the current context.  
+     If you use the `Scheduler::Create` method, call the [concurrency::Scheduler::Attach](reference/scheduler-class.md#scheduler__attach_method) method when you need to associate the scheduler with the current context.  
   
 3.  Call the [CreateEvent](http://msdn.microsoft.com/library/windows/desktop/ms682396) function to create a handle to a non-signaled, auto-reset event object.  
   
-4.  Pass the handle to the event object that you just created to the [concurrency::CurrentScheduler::RegisterShutdownEvent](reference/CurrentScheduler-class.md#CurrentScheduler__RegisterShutdownEvent) method or the [concurrency::Scheduler::RegisterShutdownEvent](reference/Scheduler-class.md#Scheduler__RegisterShutdownEvent) method. This registers the event to be set when the scheduler is destroyed.  
+4.  Pass the handle to the event object that you just created to the [concurrency::CurrentScheduler::RegisterShutdownEvent](reference/currentscheduler-class.md#currentscheduler__registershutdownevent_method) method or the [concurrency::Scheduler::RegisterShutdownEvent](reference/scheduler-class.md#scheduler__registershutdownevent_method) method. This registers the event to be set when the scheduler is destroyed.  
   
 5.  Perform the tasks that you want the current scheduler to schedule.  
   
-6.  Call the [concurrency::CurrentScheduler::Detach](reference/CurrentScheduler-class.md#CurrentScheduler__Detach) method to detach the current scheduler and restore the previous scheduler as the current one.  
+6.  Call the [concurrency::CurrentScheduler::Detach](reference/currentscheduler-class.md#currentscheduler__detach_method) method to detach the current scheduler and restore the previous scheduler as the current one.  
   
-     If you use the `Scheduler::Create` method, call the [concurrency::Scheduler::Release](reference/Scheduler-class.md#Scheduler__Release) method to decrement the reference count of the `Scheduler` object.  
+     If you use the `Scheduler::Create` method, call the [concurrency::Scheduler::Release](reference/scheduler-class.md#scheduler__release_method) method to decrement the reference count of the `Scheduler` object.  
   
 7.  Pass the handle to the event to the [WaitForSingleObject](http://msdn.microsoft.com/library/windows/desktop/ms687032) function to wait for the scheduler to shut down.  
   
@@ -66,7 +67,7 @@ Scheduler instances let you associate specific scheduling policies with various 
   
  The first example uses the [concurrency::CurrentScheduler](../../parallel/concrt/reference/currentscheduler-class.md) class to create a scheduler instance and associate it with the current context. The second example uses the [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) class to perform the same task. Typically, the `CurrentScheduler` class is used to work with the current scheduler. The second example, which uses the `Scheduler` class, is useful when you want to control when the scheduler is associated with the current context or when you want to associate specific schedulers with specific tasks.  
   
- [!code-cpp[concrt-scheduler-instance#1](../../parallel/concrt/codesnippet/CPP/how-to-manage-a-scheduler-instance_1.cpp)]  
+ [!code-cpp[concrt-scheduler-instance#1](../../parallel/concrt/codesnippet/cpp/how-to-manage-a-scheduler-instance_1.cpp)]  
   
  This example produces the following output.  
   

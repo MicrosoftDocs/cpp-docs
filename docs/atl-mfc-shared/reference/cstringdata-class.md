@@ -213,7 +213,7 @@ void Release() throw();
   
  For example, the following code would call `CStringData::Release` for the string data object associated with `str1`:  
   
- [!code-cpp[NVC_ATLMFC_Utilities#104](../../atl-mfc-shared/codesnippet/CPP/cstringdata-class_1.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#104](../../atl-mfc-shared/codesnippet/cpp/cstringdata-class_1.cpp)]  
   
 ##  <a name="cstringdata__unlock"></a>  CStringData::Unlock  
  Unlocks the character buffer of the associated string object.  

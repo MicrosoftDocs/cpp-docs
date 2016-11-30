@@ -109,7 +109,7 @@ CMFCRibbonCustomizeDialog(
 ### Example  
  The following example demonstrates how to construct a `CMFCRibbonCustomizeDialog` object.  
   
- [!code-cpp[NVC_MFC_RibbonApp#18](../../mfc/reference/codesnippet/CPP/cmfcribboncustomizedialog-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#18](../../mfc/reference/codesnippet/cpp/cmfcribboncustomizedialog-class_1.cpp)]  
   
 ### Remarks  
  The constructor instantiates a [CMFCRibbonCustomizePropertyPage Class](../../mfc/reference/cmfcribboncustomizepropertypage-class.md) object and adds it to the collection of property sheet pages.  

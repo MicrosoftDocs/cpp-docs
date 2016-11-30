@@ -73,8 +73,8 @@ template <typename   T>
 |Name|Description|  
 |----------|-----------------|  
 |[CAutoPtr::operator T*](#cautoptr__operator_t_star)|The cast operator.|  
-|[CAutoPtr::operator =](#cautoptr__operator__eq)|The assignment operator.|  
-|[CAutoPtr::operator ->](#cautoptr__operator_-_gt)|The pointer-to-member operator.|  
+|[CAutoPtr::operator =](#cautoptr__operator_eq)|The assignment operator.|  
+|[CAutoPtr::operator ->](#cautoptr__operator_ptr)|The pointer-to-member operator.|  
   
 ### Public Data Members  
   
@@ -97,7 +97,7 @@ template <typename   T>
  **Header:** atlbase.h  
   
 ## Example  
- [!code-cpp[NVC_ATL_Utilities#74](../../atl/codesnippet/CPP/cautoptr-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#74](../../atl/codesnippet/cpp/cautoptr-class_1.cpp)]  
   
 ##  <a name="cautoptr__attach"></a>  CAutoPtr::Attach  
  Call this method to take ownership of an existing pointer.  
@@ -189,7 +189,7 @@ T* m_p;
 ### Remarks  
  This member variable holds the pointer information.  
   
-##  <a name="cautoptr__operator__eq"></a>  CAutoPtr::operator =  
+##  <a name="cautoptr__operator_eq"></a>  CAutoPtr::operator =  
  The assignment operator.  
   
 ```

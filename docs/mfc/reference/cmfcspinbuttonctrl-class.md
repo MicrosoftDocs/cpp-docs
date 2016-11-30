@@ -64,7 +64,7 @@ class CMFCSpinButtonCtrl : public CSpinButtonCtrl
 ## Example  
  The following example demonstrates how to create an object of the `CMFCSpinButtonCtrl` class and use its `Create` method.  
   
- [!code-cpp[NVC_MFC_RibbonApp#25](../../mfc/reference/codesnippet/CPP/cmfcspinbuttonctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#25](../../mfc/reference/codesnippet/cpp/cmfcspinbuttonctrl-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

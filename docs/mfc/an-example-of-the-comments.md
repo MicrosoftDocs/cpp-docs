@@ -38,7 +38,7 @@ translation.priority.ht:
 # An Example of the Comments
 The following partial listing of class `CChildFrame` uses most of the standard comments that MFC employs in its classes to divide class members by the ways they are used:  
   
- [!code-cpp[NVC_MFCListView#5](../atl/reference/codesnippet/CPP/an-example-of-the-comments_1.h)]  
+ [!code-cpp[NVC_MFCListView#5](../atl/reference/codesnippet/cpp/an-example-of-the-comments_1.h)]  
   
  These comments consistently mark sections of the class declaration that contain similar kinds of class members. Keep in mind that these are MFC conventions, not set rules.  
   

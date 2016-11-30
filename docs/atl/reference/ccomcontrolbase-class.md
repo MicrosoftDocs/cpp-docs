@@ -205,7 +205,7 @@ virtual HRESULT ControlQueryInterface(const IID& iid,
  Only handles interfaces in the COM map table.  
   
 ### Example  
- [!code-cpp[NVC_ATL_COM#15](../../atl/codesnippet/CPP/ccomcontrolbase-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_COM#15](../../atl/codesnippet/cpp/ccomcontrolbase-class_1.cpp)]  
   
 ##  <a name="ccomcontrolbase__doesverbactivate"></a>  CComControlBase::DoesVerbActivate  
  Checks that the `iVerb` parameter used by `IOleObjectImpl::DoVerb` either activates the control's user interface ( `iVerb` equals `OLEIVERB_UIACTIVATE`), defines the action taken when the user double-clicks the control ( `iVerb` equals `OLEIVERB_PRIMARY`), displays the control ( `iVerb` equals `OLEIVERB_SHOW`), or activates the control ( `iVerb` equals **OLEIVERB_INPLACEACTIVATE**).  
@@ -256,9 +256,9 @@ HRESULT DoVerbProperties(LPCRECT /* prcPosRect */,  HWND hwndParent);
  One of the standard HRESULT values.  
   
 ### Example  
- [!code-cpp[NVC_ATL_COM#19](../../atl/codesnippet/CPP/ccomcontrolbase-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_COM#19](../../atl/codesnippet/cpp/ccomcontrolbase-class_2.cpp)]  
   
- [!code-cpp[NVC_ATL_COM#20](../../atl/codesnippet/CPP/ccomcontrolbase-class_3.h)]  
+ [!code-cpp[NVC_ATL_COM#20](../../atl/codesnippet/cpp/ccomcontrolbase-class_3.h)]  
   
 ##  <a name="ccomcontrolbase__fireviewchange"></a>  CComControlBase::FireViewChange  
  Call this method to tell the container to redraw the control, or notify the registered advise sinks that the control's view has changed.  
@@ -274,7 +274,7 @@ HRESULT FireViewChange();
  If the control is active (the control class data member [CComControlBase::m_bInPlaceActive](#ccomcontrolbase__m_binplaceactive) is **TRUE**), notifies the container that you want to redraw the entire control. If the control is inactive, notifies the control's registered advise sinks (through the control class data member [CComControlBase::m_spAdviseSink](#ccomcontrolbase__m_spadvisesink)) that the control's view has changed.  
   
 ### Example  
- [!code-cpp[NVC_ATL_COM#21](../../atl/codesnippet/CPP/ccomcontrolbase-class_4.cpp)]  
+ [!code-cpp[NVC_ATL_COM#21](../../atl/codesnippet/cpp/ccomcontrolbase-class_4.cpp)]  
   
 ##  <a name="ccomcontrolbase__getambientappearance"></a>  CComControlBase::GetAmbientAppearance  
  Retrieves **DISPID_AMBIENT_APPEARANCE**, the current appearance setting for the control: 0 for flat and 1 for 3D.  
@@ -291,7 +291,7 @@ HRESULT GetAmbientAppearance(short& nAppearance);
  One of the standard HRESULT values.  
   
 ### Example  
- [!code-cpp[NVC_ATL_COM#22](../../atl/codesnippet/CPP/ccomcontrolbase-class_5.h)]  
+ [!code-cpp[NVC_ATL_COM#22](../../atl/codesnippet/cpp/ccomcontrolbase-class_5.h)]  
   
 ##  <a name="ccomcontrolbase__getambientautoclip"></a>  CComControlBase::GetAmbientAutoClip  
  Retrieves **DISPID_AMBIENT_AUTOCLIP**, a flag indicating whether the container supports automatic clipping of the control display area.  
@@ -930,7 +930,7 @@ SIZE m_sizeExtent;
   
  This size is scaled by the display. The control's physical size is specified in the `m_sizeNatural` data member and is fixed.  
   
- You can convert the size to pixels with the global function [AtlHiMetricToPixel](http://msdn.microsoft.com/Library/00c3af58-7298-4082-9a2e-5b68a8cec6fd).  
+ You can convert the size to pixels with the global function [AtlHiMetricToPixel](http://msdn.microsoft.com/library/00c3af58-7298-4082-9a2e-5b68a8cec6fd).  
   
 ##  <a name="ccomcontrolbase__m_sizenatural"></a>  CComControlBase::m_sizeNatural  
  The physical size of the control in HIMETRIC units (each unit is 0.01 millimeters).  
@@ -946,7 +946,7 @@ SIZE m_sizeNatural;
   
  This size is fixed, while the size in `m_sizeExtent` is scaled by the display.  
   
- You can convert the size to pixels with the global function [AtlHiMetricToPixel](http://msdn.microsoft.com/Library/00c3af58-7298-4082-9a2e-5b68a8cec6fd).  
+ You can convert the size to pixels with the global function [AtlHiMetricToPixel](http://msdn.microsoft.com/library/00c3af58-7298-4082-9a2e-5b68a8cec6fd).  
   
 ##  <a name="ccomcontrolbase__m_spadvisesink"></a>  CComControlBase::m_spAdviseSink  
  A direct pointer to the advisory connection on the container (the container's [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513)).  

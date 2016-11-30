@@ -65,7 +65,7 @@ class CWinApp : public CWinThread
 |[CWinApp::CloseAllDocuments](#cwinapp__closealldocuments)|Closes all open documents.|  
 |[CWinApp::CreatePrinterDC](#cwinapp__createprinterdc)|Creates a printer device context.|  
 |[CWinApp::DelRegTree](#cwinapp__delregtree)|Deletes a specified key and all its subkeys.|  
-|[CWinApp::DoMessageBox](#cwinapp__domessagebox)|Implements [AfxMessageBox]--brokenlink--(../Topic/not%20found.md#afxmessagebox) for the application.|  
+|[CWinApp::DoMessageBox](#cwinapp__domessagebox)|Implements [AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox) for the application.|  
 |[CWinApp::DoWaitCursor](#cwinapp__dowaitcursor)|Turns the wait cursor on and off.|  
 |[CWinApp::EnableD2DSupport](#cwinapp__enabled2dsupport)|Enables application `D2D` support. Call this method before the main window is initialized.|  
 |[CWinApp::EnableHtmlHelp](#cwinapp__enablehtmlhelp)|Implements HTMLHelp for the application, rather than WinHelp.|  
@@ -176,13 +176,13 @@ class CWinApp : public CWinThread
   
  In addition to the `CWinApp` member functions, the Microsoft Foundation Class Library provides the following global functions to access your `CWinApp` object and other global information:  
   
-- [AfxGetApp]--brokenlink--(../Topic/not%20found.md#afxgetapp) Obtains a pointer to the `CWinApp` object.  
+- [AfxGetApp](application-information-and-management.md#afxgetapp) Obtains a pointer to the `CWinApp` object.  
   
-- [AfxGetInstanceHandle]--brokenlink--(../Topic/not%20found.md#afxgetinstancehandle) Obtains a handle to the current application instance.  
+- [AfxGetInstanceHandle](application-information-and-management.md#afxgetinstancehandle) Obtains a handle to the current application instance.  
   
-- [AfxGetResourceHandle]--brokenlink--(../Topic/not%20found.md#afxgetresourcehandle) Obtains a handle to the application's resources.  
+- [AfxGetResourceHandle](.application-information-and-management.md#afxgetresourcehandle) Obtains a handle to the application's resources.  
   
-- [AfxGetAppName]--brokenlink--(../Topic/not%20found.md#afxgetappname) Obtains a pointer to a string containing the application's name. Alternately, if you have a pointer to the `CWinApp` object, use `m_pszExeName` to get the application's name.  
+- [AfxGetAppName](application-information-and-management.md#afxgetappname) Obtains a pointer to a string containing the application's name. Alternately, if you have a pointer to the `CWinApp` object, use `m_pszExeName` to get the application's name.  
   
  See [CWinApp: The Application Class](../../mfc/cwinapp-the-application-class.md) for more on the `CWinApp` class, including an overview of the following:  
   
@@ -223,7 +223,7 @@ void AddDocTemplate(CDocTemplate* pTemplate);
  You should add all document templates to an application before you call [RegisterShellFileTypes](#cwinapp__registershellfiletypes).  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#35](../../mfc/reference/codesnippet/CPP/cwinapp-class_1.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#35](../../mfc/reference/codesnippet/cpp/cwinapp-class_1.cpp)]  
   
 ##  <a name="cwinapp__addtorecentfilelist"></a>  CWinApp::AddToRecentFileList  
  Call this member function to add `lpszPathName` to the MRU file list.  
@@ -242,7 +242,7 @@ virtual void AddToRecentFileList(LPCTSTR lpszPathName);
  The framework calls this member function when it opens a file or executes the Save As command to save a file with a new name.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#36](../../mfc/reference/codesnippet/CPP/cwinapp-class_2.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#36](../../mfc/reference/codesnippet/cpp/cwinapp-class_2.cpp)]  
   
 ##  <a name="cwinapp__applicationrecoverycallback"></a>  CWinApp::ApplicationRecoveryCallback  
  Called by the framework when the application unexpectedly exits.  
@@ -346,7 +346,7 @@ LONG DelRegTree(
  Call this function to delete the specified key and its subkeys.  
   
 ##  <a name="cwinapp__domessagebox"></a>  CWinApp::DoMessageBox  
- The framework calls this member function to implement a message box for the global function [AfxMessageBox]--brokenlink--(../Topic/not%20found.md#afxmessagebox).  
+ The framework calls this member function to implement a message box for the global function [AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox).  
   
 ```  
 virtual int DoMessageBox(
@@ -392,7 +392,7 @@ virtual void DoWaitCursor(int nCode);
  For an easier, more streamlined way to implement a wait cursor, use `CWaitCursor`.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#37](../../mfc/reference/codesnippet/CPP/cwinapp-class_3.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#37](../../mfc/reference/codesnippet/cpp/cwinapp-class_3.cpp)]  
   
 ##  <a name="cwinapp__enabled2dsupport"></a>  CWinApp::EnableD2DSupport  
  [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
@@ -436,7 +436,7 @@ void EnableShellOpen();
  Call the `RegisterShellFileTypes` member function in conjunction with this function, or provide a .REG file with your application for manual registration of document types.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#38](../../mfc/reference/codesnippet/CPP/cwinapp-class_4.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#38](../../mfc/reference/codesnippet/cpp/cwinapp-class_4.cpp)]  
   
 ##  <a name="cwinapp__enabletaskbarinteraction"></a>  CWinApp::EnableTaskbarInteraction  
  Enables Taskbar interaction.  
@@ -473,7 +473,7 @@ virtual int ExitInstance();
  The default implementation of this function writes framework options to the application's .INI file. Override this function to clean up when your application terminates.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#39](../../mfc/reference/codesnippet/CPP/cwinapp-class_5.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#39](../../mfc/reference/codesnippet/cpp/cwinapp-class_5.cpp)]  
   
 ##  <a name="cwinapp__getapplicationrecoveryparameter"></a>  CWinApp::GetApplicationRecoveryParameter  
  Retrieves the input parameter for the application recovery method.  
@@ -631,7 +631,7 @@ BOOL GetPrinterDeviceDefaults(struct tagPDA* pPrintDlg);
  Retrieves the current printer defaults from the Windows .INI file as necessary, or uses the last printer configuration set by the user in Print Setup.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#40](../../mfc/reference/codesnippet/CPP/cwinapp-class_6.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#40](../../mfc/reference/codesnippet/cpp/cwinapp-class_6.cpp)]  
   
 ##  <a name="cwinapp__getprofilebinary"></a>  CWinApp::GetProfileBinary  
  Call this member function to retrieve binary data from an entry within a specified section of the application's registry or .INI file.  
@@ -670,7 +670,7 @@ BOOL GetProfileBinary(
 >  The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#41](../../mfc/reference/codesnippet/CPP/cwinapp-class_7.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#41](../../mfc/reference/codesnippet/cpp/cwinapp-class_7.cpp)]  
   
  For an additional example, see [CWinApp::WriteProfileBinary](#cwinapp__writeprofilebinary).  
   
@@ -706,7 +706,7 @@ UINT GetProfileInt(
 >  The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#42](../../mfc/reference/codesnippet/CPP/cwinapp-class_8.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#42](../../mfc/reference/codesnippet/cpp/cwinapp-class_8.cpp)]  
   
  For an additional example, see [CWinApp::WriteProfileInt](#cwinapp__writeprofileint).  
   
@@ -739,7 +739,7 @@ CString GetProfileString(
 >  The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#43](../../mfc/reference/codesnippet/CPP/cwinapp-class_9.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#43](../../mfc/reference/codesnippet/cpp/cwinapp-class_9.cpp)]  
   
  For another example, see the example for [CWinApp::GetProfileInt](#cwinapp__getprofileint).  
   
@@ -812,7 +812,7 @@ virtual BOOL InitInstance();
 >  MFC applications must be initialized as single threaded apartment (STA). If you call [CoInitializeEx](http://msdn.microsoft.com/library/windows/desktop/ms695279) in your `InitInstance` override, specify `COINIT_APARTMENTTHREADED` (rather than `COINIT_MULTITHREADED`). For more information, see PRB: MFC Application Stops Responding When You Initialize the Application as a Multithreaded Apartment (828643) at [http://support.microsoft.com/default.aspxscid=kb;en-us;828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643).  
   
 ### Example  
- [!code-cpp[NVC_MFCListView#9](../../atl/reference/codesnippet/CPP/cwinapp-class_10.cpp)]  
+ [!code-cpp[NVC_MFCListView#9](../../atl/reference/codesnippet/cpp/cwinapp-class_10.cpp)]  
   
 ##  <a name="cwinapp__istaskbarinteractionenabled"></a>  CWinApp::IsTaskbarInteractionEnabled  
  Tells whether Windows 7 Taskbar interaction is enabled.  
@@ -856,7 +856,7 @@ HCURSOR LoadCursor(UINT nIDResource) const;
  Use the [LoadStandardCursor](#cwinapp__loadstandardcursor) or [LoadOEMCursor](#cwinapp__loadoemcursor) member function to access the predefined Windows cursors.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#44](../../mfc/reference/codesnippet/CPP/cwinapp-class_11.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#44](../../mfc/reference/codesnippet/cpp/cwinapp-class_11.cpp)]  
   
 ##  <a name="cwinapp__loadicon"></a>  CWinApp::LoadIcon  
  Loads the icon resource named by `lpszResourceName` or specified by `nIDResource` from the executable file.  
@@ -909,9 +909,9 @@ HCURSOR LoadOEMCursor(UINT nIDCursor) const;
  Use the `LoadOEMCursor` or [LoadStandardCursor](#cwinapp__loadstandardcursor) member function to access the predefined Windows cursors.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#45](../../mfc/reference/codesnippet/CPP/cwinapp-class_12.h)]  
+ [!code-cpp[NVC_MFCWindowing#45](../../mfc/reference/codesnippet/cpp/cwinapp-class_12.h)]  
   
- [!code-cpp[NVC_MFCWindowing#46](../../mfc/reference/codesnippet/CPP/cwinapp-class_13.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#46](../../mfc/reference/codesnippet/cpp/cwinapp-class_13.cpp)]  
   
 ##  <a name="cwinapp__loadoemicon"></a>  CWinApp::LoadOEMIcon  
  Loads the Windows predefined icon resource specified by `nIDIcon`.  
@@ -976,7 +976,7 @@ HCURSOR LoadStandardCursor(LPCTSTR lpszCursorName) const;
  Use the `LoadStandardCursor` or [LoadOEMCursor](#cwinapp__loadoemcursor) member function to access the predefined Windows cursors.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#47](../../mfc/reference/codesnippet/CPP/cwinapp-class_14.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#47](../../mfc/reference/codesnippet/cpp/cwinapp-class_14.cpp)]  
   
 ##  <a name="cwinapp__loadstandardicon"></a>  CWinApp::LoadStandardIcon  
  Loads the Windows predefined icon resource that `lpszIconName` specifies.  
@@ -1077,10 +1077,10 @@ HINSTANCE m_hInstance;
 ```  
   
 ### Remarks  
- The `m_hInstance` data member is a handle to the current instance of the application running under Windows. This is returned by the global function [AfxGetInstanceHandle]--brokenlink--(../Topic/not%20found.md#afxgetinstancehandle). `m_hInstance` is a public variable of type `HINSTANCE`.  
+ The `m_hInstance` data member is a handle to the current instance of the application running under Windows. This is returned by the global function [AfxGetInstanceHandle](application-information-and-management.md#afxgetinstancehandle). `m_hInstance` is a public variable of type `HINSTANCE`.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#55](../../mfc/reference/codesnippet/CPP/cwinapp-class_15.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#55](../../mfc/reference/codesnippet/cpp/cwinapp-class_15.cpp)]  
   
 ##  <a name="cwinapp__m_lpcmdline"></a>  CWinApp::m_lpCmdLine  
  Corresponds to the `lpCmdLine` parameter passed by Windows to `WinMain`.  
@@ -1093,7 +1093,7 @@ LPTSTR m_lpCmdLine;
  Points to a null-terminated string that specifies the command line for the application. Use `m_lpCmdLine` to access any command-line arguments the user entered when the application was started. `m_lpCmdLine` is a public variable of type `LPTSTR`.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#52](../../mfc/reference/codesnippet/CPP/cwinapp-class_16.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#52](../../mfc/reference/codesnippet/cpp/cwinapp-class_16.cpp)]  
   
 ##  <a name="cwinapp__m_nautosaveinterval"></a>  CWinApp::m_nAutosaveInterval  
  The length of time in milliseconds between autosaves.  
@@ -1116,7 +1116,7 @@ int m_nCmdShow;
  You should pass `m_nCmdShow` as an argument when you call [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#cwnd__showwindow) for your application's main window. `m_nCmdShow` is a public variable of type `int`.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#56](../../mfc/reference/codesnippet/CPP/cwinapp-class_17.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#56](../../mfc/reference/codesnippet/cpp/cwinapp-class_17.cpp)]  
   
 ##  <a name="cwinapp__m_pactivewnd"></a>  CWinApp::m_pActiveWnd  
  Use this data member to store a pointer to the main window of the OLE container application that has your OLE server application in-place activated.  
@@ -1146,15 +1146,15 @@ LPCTSTR m_pszAppName;
 ### Remarks  
  The application name can come from the parameter passed to the [CWinApp](#cwinapp__cwinapp) constructor, or, if not specified, to the resource string with the ID of **AFX_IDS_APP_TITLE**. If the application name is not found in the resource, it comes from the program's .EXE filename.  
   
- Returned by the global function [AfxGetAppName]--brokenlink--(../Topic/not%20found.md#afxgetappname). `m_pszAppName` is a public variable of type **const char\***.  
+ Returned by the global function [AfxGetAppName](application-information-and-management.md#afxgetappname). `m_pszAppName` is a public variable of type **const char\***.  
   
 > [!NOTE]
 >  If you assign a value to `m_pszAppName`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:  
   
- [!code-cpp[NVC_MFCWindowing#57](../../mfc/reference/codesnippet/CPP/cwinapp-class_18.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#57](../../mfc/reference/codesnippet/cpp/cwinapp-class_18.cpp)]  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#65](../../mfc/reference/codesnippet/CPP/cwinapp-class_19.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#65](../../mfc/reference/codesnippet/cpp/cwinapp-class_19.cpp)]  
   
 ##  <a name="cwinapp__m_pszexename"></a>  CWinApp::m_pszExeName  
  Contains the name of the application's executable file without an extension.  
@@ -1169,7 +1169,7 @@ LPCTSTR m_pszExeName;
 > [!NOTE]
 >  If you assign a value to `m_pszExeName`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:  
   
- [!code-cpp[NVC_MFCWindowing#58](../../mfc/reference/codesnippet/CPP/cwinapp-class_20.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#58](../../mfc/reference/codesnippet/cpp/cwinapp-class_20.cpp)]  
   
 ##  <a name="cwinapp__m_pszhelpfilepath"></a>  CWinApp::m_pszHelpFilePath  
  Contains the path to the application's Help file.  
@@ -1184,7 +1184,7 @@ LPCTSTR m_pszHelpFilePath;
 > [!NOTE]
 >  If you assign a value to `m_pszHelpFilePath`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:  
   
- [!code-cpp[NVC_MFCWindowing#59](../../mfc/reference/codesnippet/CPP/cwinapp-class_21.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#59](../../mfc/reference/codesnippet/cpp/cwinapp-class_21.cpp)]  
   
 ##  <a name="cwinapp__m_pszprofilename"></a>  CWinApp::m_pszProfileName  
  Contains the name of the application's .INI file.  
@@ -1199,7 +1199,7 @@ LPCTSTR m_pszProfileName;
 > [!NOTE]
 >  If you assign a value to `m_pszProfileName`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:  
   
- [!code-cpp[NVC_MFCWindowing#60](../../mfc/reference/codesnippet/CPP/cwinapp-class_22.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#60](../../mfc/reference/codesnippet/cpp/cwinapp-class_22.cpp)]  
   
 ##  <a name="cwinapp__m_pszregistrykey"></a>  CWinApp::m_pszRegistryKey  
  Used to determine where, in the registry or INI file, application profile settings are stored.  
@@ -1215,7 +1215,7 @@ LPCTSTR m_pszRegistryKey;
   
  If you assign a value to `m_pszRegistryKey`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:  
   
- [!code-cpp[NVC_MFCWindowing#61](../../mfc/reference/codesnippet/CPP/cwinapp-class_23.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#61](../../mfc/reference/codesnippet/cpp/cwinapp-class_23.cpp)]  
   
 ##  <a name="cwinapp__m_pszappid"></a>  CWinApp::m_pszAppID  
  Application User Model ID.  
@@ -1256,7 +1256,7 @@ virtual BOOL OnDDECommand(LPTSTR lpszCommand);
  The default implementation checks whether the command is a request to open a document and, if so, opens the specified document. The Windows File Manager usually sends such DDE command strings when the user double-clicks a data file. Override this function to handle other DDE execute commands, such as the command to print.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#48](../../mfc/reference/codesnippet/CPP/cwinapp-class_24.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#48](../../mfc/reference/codesnippet/cpp/cwinapp-class_24.cpp)]  
   
 ##  <a name="cwinapp__onfilenew"></a>  CWinApp::OnFileNew  
  Implements the `ID_FILE_NEW` command.  
@@ -1271,9 +1271,9 @@ afx_msg void OnFileNew();
  See [Technical Note 22](../../mfc/tn022-standard-commands-implementation.md) for information on default behavior and guidance on how to override this member function.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#49](../../mfc/reference/codesnippet/CPP/cwinapp-class_25.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#49](../../mfc/reference/codesnippet/cpp/cwinapp-class_25.cpp)]  
   
- [!code-cpp[NVC_MFCWindowing#50](../../mfc/reference/codesnippet/CPP/cwinapp-class_26.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#50](../../mfc/reference/codesnippet/cpp/cwinapp-class_26.cpp)]  
   
 ##  <a name="cwinapp__onfileopen"></a>  CWinApp::OnFileOpen  
  Implements the `ID_FILE_OPEN` command.  
@@ -1288,9 +1288,9 @@ afx_msg void OnFileOpen();
  For information on default behavior and guidance on how to override this member function, see [Technical Note 22](../../mfc/tn022-standard-commands-implementation.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#49](../../mfc/reference/codesnippet/CPP/cwinapp-class_25.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#49](../../mfc/reference/codesnippet/cpp/cwinapp-class_25.cpp)]  
   
- [!code-cpp[NVC_MFCWindowing#50](../../mfc/reference/codesnippet/CPP/cwinapp-class_26.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#50](../../mfc/reference/codesnippet/cpp/cwinapp-class_26.cpp)]  
   
 ##  <a name="cwinapp__onfileprintsetup"></a>  CWinApp::OnFilePrintSetup  
  Implements the **ID_FILE_PRINT_SETUP** command.  
@@ -1305,9 +1305,9 @@ afx_msg void OnFilePrintSetup();
  For information on default behavior and guidance on how to override this member function, see [Technical Note 22](../../mfc/tn022-standard-commands-implementation.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#49](../../mfc/reference/codesnippet/CPP/cwinapp-class_25.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#49](../../mfc/reference/codesnippet/cpp/cwinapp-class_25.cpp)]  
   
- [!code-cpp[NVC_MFCWindowing#50](../../mfc/reference/codesnippet/CPP/cwinapp-class_26.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#50](../../mfc/reference/codesnippet/cpp/cwinapp-class_26.cpp)]  
   
 ##  <a name="cwinapp__onhelp"></a>  CWinApp::OnHelp  
  Handles F1 Help within the application (using the current context).  
@@ -1394,7 +1394,7 @@ virtual BOOL OnIdle(LONG lCount);
 ### Example  
  The following two examples show how to use `OnIdle`. The first example processes two idle tasks using the `lCount` argument to prioritize the tasks. The first task is high priority, and you should do it whenever possible. The second task is less important and should be done only when there is a long pause in user input. Note the call to the base-class version of `OnIdle`. The second example manages a group of idle tasks with different priorities.  
   
- [!code-cpp[NVC_MFCWindowing#51](../../mfc/reference/codesnippet/CPP/cwinapp-class_27.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#51](../../mfc/reference/codesnippet/cpp/cwinapp-class_27.cpp)]  
   
 ##  <a name="cwinapp__opendocumentfile"></a>  CWinApp::OpenDocumentFile  
  The framework calls this method to open the named [CDocument](../../mfc/reference/cdocument-class.md) file for the application.  
@@ -1420,7 +1420,7 @@ BOOL bAddToMRU = TRUE);
  If a document that has that name is already open, the first frame window that contains that document will get the focus. If an application supports multiple document templates, the framework uses the file name extension to find the appropriate document template to try to load the document. If successful, the document template then creates a frame window and view for the document.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#52](../../mfc/reference/codesnippet/CPP/cwinapp-class_16.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#52](../../mfc/reference/codesnippet/cpp/cwinapp-class_16.cpp)]  
   
 ##  <a name="cwinapp__parsecommandline"></a>  CWinApp::ParseCommandLine  
  Call this member function to parse the command line and send the parameters, one at a time, to [CCommandLineInfo::ParseParam](../../mfc/reference/ccommandlineinfo-class.md#ccommandlineinfo__parseparam).  
@@ -1890,7 +1890,7 @@ virtual void WinHelp(
  The framework will automatically close the WinHelp application when your application terminates.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#53](../../mfc/reference/codesnippet/CPP/cwinapp-class_28.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#53](../../mfc/reference/codesnippet/cpp/cwinapp-class_28.cpp)]  
   
 ##  <a name="cwinapp__writeprofilebinary"></a>  CWinApp::WriteProfileBinary  
  Call this member function to write binary data into the specified section of the application's registry or .INI file.  
@@ -1922,7 +1922,7 @@ BOOL WriteProfileBinary(
 ### Example  
  This example uses `CWinApp* pApp = AfxGetApp();` to get at the CWinApp class illustrating a way that `WriteProfileBinary` and `GetProfileBinary` can be used from any function in an MFC application.  
   
- [!code-cpp[NVC_MFCWindowing#54](../../mfc/reference/codesnippet/CPP/cwinapp-class_29.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#54](../../mfc/reference/codesnippet/cpp/cwinapp-class_29.cpp)]  
   
  For another example, see the example for [CWinApp::GetProfileBinary](#cwinapp__getprofilebinary).  
   
@@ -1952,7 +1952,7 @@ BOOL WriteProfileInt(
 ### Example  
  This example uses `CWinApp* pApp = AfxGetApp();` to get at the CWinApp class illustrating a way that `WriteProfileString`, `WriteProfileInt`, `GetProfileString`, and `GetProfileInt` can be used from any function in an MFC application.  
   
- [!code-cpp[NVC_MFCWindowing#43](../../mfc/reference/codesnippet/CPP/cwinapp-class_9.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#43](../../mfc/reference/codesnippet/cpp/cwinapp-class_9.cpp)]  
   
  For another example, see the example for [CWinApp::GetProfileInt](#cwinapp__getprofileint).  
   
@@ -1980,7 +1980,7 @@ BOOL WriteProfileString(
  Nonzero if successful; otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#43](../../mfc/reference/codesnippet/CPP/cwinapp-class_9.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#43](../../mfc/reference/codesnippet/cpp/cwinapp-class_9.cpp)]  
   
  For another example, see the example for [CWinApp::GetProfileInt](#cwinapp__getprofileint).  
   

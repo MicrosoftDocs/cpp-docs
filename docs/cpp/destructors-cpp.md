@@ -241,6 +241,3 @@ ps->~String();     // Virtual call
 ```  
   
  The notation for explicit calls to destructors, shown in the preceding, can be used regardless of whether the type defines a destructor. This allows you to make such explicit calls without knowing if a destructor is defined for the type. An explicit call to a destructor where none is defined has no effect.  
-  
-## See Also  
- [Special Member Functions](../misc/special-member-functions-cpp.md)

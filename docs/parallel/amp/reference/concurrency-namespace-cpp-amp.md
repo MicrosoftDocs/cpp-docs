@@ -91,7 +91,7 @@ namespace Concurrency;
 |[operator+ Operator (C++ AMP)](concurrency-namespace-operators-amp.md#operator_add)|Computes the component-wise sum of the specified arguments.|  
 |[operator- Operator (C++ AMP)](concurrency-namespace-operators-amp.md#operator-)|Computes the component-wise difference between the specified arguments.|  
 |[operator* Operator (C++ AMP)](concurrency-namespace-operators-amp.md#operator_star)|Computes the component-wise product of the specified arguments.|  
-|[operator/ Operator (C++ AMP)](concurrency-namespace-operators-amp.md#operator_div)2.md)|Computes the component-wise quotient of the specified arguments.|  
+|[operator/ Operator (C++ AMP)](concurrency-namespace-operators-amp.md#operator_div)|Computes the component-wise quotient of the specified arguments.|  
 |[operator% Operator (C++ AMP)](concurrency-namespace-operators-amp.md#operator_mod)|Computes the modulus of the first specified argument by the second specified argument.|  
   
 ### Functions  

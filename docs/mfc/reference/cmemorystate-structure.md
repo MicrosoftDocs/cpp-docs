@@ -113,7 +113,7 @@ CMemoryState();
 ```  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#18](../../mfc/codesnippet/CPP/cmemorystate-structure_1.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#18](../../mfc/codesnippet/cpp/cmemorystate-structure_1.cpp)]  
   
 ##  <a name="cmemorystate__difference"></a>  CMemoryState::Difference  
  Compares two `CMemoryState` objects, then stores the difference into this `CMemoryState` object.  
@@ -164,7 +164,7 @@ void DumpStatistics() const;
 ```  
   
 ### Remarks  
- The report, which is printed on the [afxDump](http://msdn.microsoft.com/Library/4b3cfa3f-fb75-456a-9d99-a5601acbcb11) device, shows the following:  
+ The report, which is printed on the [afxDump](http://msdn.microsoft.com/library/4b3cfa3f-fb75-456a-9d99-a5601acbcb11) device, shows the following:  
   
  A sample report gives information on the number (or amount) of:  
   
@@ -182,20 +182,20 @@ void DumpStatistics() const;
   
 -   total memory currently used by the program (in bytes)  
   
- Free blocks are the number of blocks whose deallocation was delayed if `afxMemDF` was set to **delayFreeMemDF**. For more information, see [afxMemDF]--brokenlink--(../Topic/not%20found.md#afxmemdf), in the "MFC Macros and Globals" section. See [Types of Blocks on the Debug Heap](http://msdn.microsoft.com/en-us/db2e7f62-0679-4b39-a23f-26f2c2f407c5) for more information on these block types.  
+ Free blocks are the number of blocks whose deallocation was delayed if `afxMemDF` was set to **delayFreeMemDF**. For more information, see [afxMemDF](diagnostic-services.md#afxmemdf), in the "MFC Macros and Globals" section. See [Types of Blocks on the Debug Heap](http://msdn.microsoft.com/en-us/db2e7f62-0679-4b39-a23f-26f2c2f407c5) for more information on these block types.  
   
 ### Example  
   The following code should be placed in *projname*App.cpp. Define the following global variables:  
   
- [!code-cpp[NVC_MFC_Utilities#40](../../mfc/codesnippet/CPP/cmemorystate-structure_2.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#40](../../mfc/codesnippet/cpp/cmemorystate-structure_2.cpp)]  
   
  In the `InitInstance` function, add the line:  
   
- [!code-cpp[NVC_MFC_Utilities#41](../../mfc/codesnippet/CPP/cmemorystate-structure_3.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#41](../../mfc/codesnippet/cpp/cmemorystate-structure_3.cpp)]  
   
  Add a handler for the `ExitInstance` function and use the following code:  
   
- [!code-cpp[NVC_MFC_Utilities#42](../../mfc/codesnippet/CPP/cmemorystate-structure_4.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#42](../../mfc/codesnippet/cpp/cmemorystate-structure_4.cpp)]  
   
  You can now run the program in Debug mode to see the output of the `DumpStatistics` function.  
   

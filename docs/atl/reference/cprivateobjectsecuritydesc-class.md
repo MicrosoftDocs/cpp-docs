@@ -67,7 +67,7 @@ class CPrivateObjectSecurityDesc : public CSecurityDesc
   
 |||  
 |-|-|  
-|[operator =](#cprivateobjectsecuritydesc__operator__eq)|Assignment operator.|  
+|[operator =](#cprivateobjectsecuritydesc__operator_eq)|Assignment operator.|  
   
 ## Remarks  
  This class, derived from [CSecurityDesc](../../atl/reference/csecuritydesc-class.md), provides methods for creating and managing the security descriptor of a private object.  
@@ -206,7 +206,7 @@ bool Get(SECURITY_INFORMATION si,
 ### Remarks  
  The security descriptor is a structure and associated data that contains the security information for a securable object.  
   
-##  <a name="cprivateobjectsecuritydesc__operator__eq"></a>  CPrivateObjectSecurityDesc::operator =  
+##  <a name="cprivateobjectsecuritydesc__operator_eq"></a>  CPrivateObjectSecurityDesc::operator =  
  Assignment operator.  
   
 ```

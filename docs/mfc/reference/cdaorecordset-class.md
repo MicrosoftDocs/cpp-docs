@@ -207,7 +207,7 @@ virtual void AddNew();
   
 -   In a dynaset-type recordset, where the new record is inserted is not guaranteed. This behavior changed with Microsoft Jet 3.0 for reasons of performance and concurrency. If your goal is to make the newly added record the current record, get the bookmark of the last modified record and move to that bookmark:  
   
- [!code-cpp[NVC_MFCDatabase#1](../../mfc/codesnippet/CPP/cdaorecordset-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#1](../../mfc/codesnippet/cpp/cdaorecordset-class_1.cpp)]  
   
 -   In a table-type recordset for which an index has been specified, records are returned in their proper place in the sort order. If no index has been specified, new records are returned at the end of the recordset.  
   
@@ -411,7 +411,7 @@ virtual void DoFieldExchange(CDaoFieldExchange* pFX);
   
  When you declare your derived recordset class with ClassWizard, the wizard writes an override of `DoFieldExchange` for you, which resembles the following example:  
   
- [!code-cpp[NVC_MFCDatabase#2](../../mfc/codesnippet/CPP/cdaorecordset-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#2](../../mfc/codesnippet/cpp/cdaorecordset-class_2.cpp)]  
   
 ##  <a name="cdaorecordset__edit"></a>  CDaoRecordset::Edit  
  Call this member function to allow changes to the current record.  
@@ -506,7 +506,7 @@ virtual BOOL Find(
  `lpszFilter`  
  A string expression (like the **WHERE** clause in a SQL statement without the word **WHERE**) used to locate the record. For example:  
   
- [!code-cpp[NVC_MFCDatabase#3](../../mfc/codesnippet/CPP/cdaorecordset-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#3](../../mfc/codesnippet/cpp/cdaorecordset-class_3.cpp)]  
   
 ### Return Value  
  Nonzero if matching records are found, otherwise 0.  
@@ -825,7 +825,7 @@ virtual CString GetDefaultDBName();
   
  The following example illustrates the use of the double backslash (\\\\) in the string, as is required for the string to be interpreted correctly.  
   
- [!code-cpp[NVC_MFCDatabase#4](../../mfc/codesnippet/CPP/cdaorecordset-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#4](../../mfc/codesnippet/cpp/cdaorecordset-class_4.cpp)]  
   
 ##  <a name="cdaorecordset__getdefaultsql"></a>  CDaoRecordset::GetDefaultSQL  
  The framework calls this member function to get the default SQL statement on which the recordset is based.  
@@ -1371,7 +1371,7 @@ BOOL IsFieldNull(void* pv);
 > [!NOTE]
 >  In certain situations, using `IsFieldNull` can be inefficient, as the following code example illustrates:  
   
- [!code-cpp[NVC_MFCDatabase#5](../../mfc/codesnippet/CPP/cdaorecordset-class_5.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#5](../../mfc/codesnippet/cpp/cdaorecordset-class_5.cpp)]  
   
 > [!NOTE]
 >  If you are using dynamic record binding, without deriving from `CDaoRecordset`, be sure to use **VT_NULL** as shown in the example.  
@@ -1961,13 +1961,13 @@ void SetFieldDirty(
   
  Using **NULL** for the first argument of the function will apply the function to all **outputColumn** fields, not **param** fields in `CDaoFieldExchange`. For instance, the call  
   
- [!code-cpp[NVC_MFCDatabase#6](../../mfc/codesnippet/CPP/cdaorecordset-class_6.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#6](../../mfc/codesnippet/cpp/cdaorecordset-class_6.cpp)]  
   
  will set only **outputColumn** fields to **NULL**; **param** fields will be unaffected.  
   
  To work on a **param**, you must supply the actual address of the individual **param** you want to work on, such as:  
   
- [!code-cpp[NVC_MFCDatabase#7](../../mfc/codesnippet/CPP/cdaorecordset-class_7.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#7](../../mfc/codesnippet/cpp/cdaorecordset-class_7.cpp)]  
   
  This means you cannot set all **param** fields to **NULL**, as you can with **outputColumn** fields.  
   
@@ -2005,7 +2005,7 @@ void SetFieldNull(
   
  Using **NULL** for the first argument of the function will apply the function only to **outputColumn** fields, not **param** fields in `CDaoFieldExchange`. For instance, the call  
   
- [!code-cpp[NVC_MFCDatabase#8](../../mfc/codesnippet/CPP/cdaorecordset-class_8.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#8](../../mfc/codesnippet/cpp/cdaorecordset-class_8.cpp)]  
   
  will set only **outputColumn** fields to **NULL**; **param** fields will be unaffected.  
   

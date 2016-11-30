@@ -82,7 +82,7 @@ class CMFCRibbonCustomizePropertyPage: public CMFCPropertyPage
 ## Example  
  The following example demonstrates how to construct a `CMFCRibbonCustomizePropertyPage` object and to add a custom category.  
   
- [!code-cpp[NVC_MFC_RibbonApp#22](../../mfc/reference/codesnippet/CPP/cmfcribboncustomizepropertypage-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#22](../../mfc/reference/codesnippet/cpp/cmfcribboncustomizepropertypage-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

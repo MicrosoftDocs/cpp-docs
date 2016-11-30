@@ -115,10 +115,10 @@ i++) {
 ```  
   
 > [!NOTE]
->  One of the accelerators that are returned by `accelerator::get_all` is the CPU accelerator. You cannot execute code on the CPU accelerator. To filter out the CPU accelerator, compare the value of the [device_path](reference/accelerator-class.md#accelerator__device_path) property of the accelerator that's returned by `accelerator::get_all` with the value of the [accelerator::cpu_accelerator](reference/accelerator-class.md#accelerator__cpu_accelerator). For more information, see the "Special Accelerators" section in this article.  
+>  One of the accelerators that are returned by `accelerator::get_all` is the CPU accelerator. You cannot execute code on the CPU accelerator. To filter out the CPU accelerator, compare the value of the [device_path](reference/accelerator-class.md#accelerator__device_path_data_member) property of the accelerator that's returned by `accelerator::get_all` with the value of the [accelerator::cpu_accelerator](reference/accelerator-class.md#accelerator__cpu_accelerator_data_member). For more information, see the "Special Accelerators" section in this article.  
   
 ## Shared Memory  
- Shared memory is memory that can be accessed by both the CPU and the accelerator. The use of shared memory eliminates or significantly reduces the overhead of copying data between the CPU and the accelerator. Although the memory is shared, it cannot be accessed concurrently by both the CPU and the accelerator, and doing so causes undefined behavior. The accelerator property [supports_cpu_shared_memory](reference/accelerator-class.md#accelerator__supports_cpu_shared_memory) returns `true` if the accelerator supports shared memory, and the [default_cpu_access_type](reference/accelerator-class.md#accelerator__default_cpu_access_type) property gets the default [access_type](reference/concurrency-namespace-enums-amp.md#access_type) for memory allocated on the `accelerator`—for example, `array`s associated with the `accelerator`, or `array_view` objects accessed on the `accelerator`.  
+ Shared memory is memory that can be accessed by both the CPU and the accelerator. The use of shared memory eliminates or significantly reduces the overhead of copying data between the CPU and the accelerator. Although the memory is shared, it cannot be accessed concurrently by both the CPU and the accelerator, and doing so causes undefined behavior. The accelerator property [supports_cpu_shared_memory](reference/accelerator-class.md#accelerator__supports_cpu_shared_memory_data_member) returns `true` if the accelerator supports shared memory, and the [default_cpu_access_type](reference/accelerator-class.md#accelerator__default_cpu_access_type_data_member) property gets the default [access_type](../topic/access_type%20enumeration.md) for memory allocated on the `accelerator`—for example, `array`s associated with the `accelerator`, or `array_view` objects accessed on the `accelerator`.  
   
  The C++ AMP runtime automatically chooses the best default `access_type` for each `accelerator`, but the performance characteristics (bandwidth and latency) of shared memory can be worse than those of dedicated (non-shared) accelerator memory when reading from the CPU, writing from the CPU, or both. If shared memory performs as well as dedicated memory for reading and writing from the CPU, the runtime defaults to `access_type_read_write`; otherwise, the runtime chooses a more conservative default `access_type`, and allows the app to override it if the memory access patterns of its computation kernels benefit from a different `access_type`.  
   
@@ -188,7 +188,7 @@ accelerator chosen_one;
   
 ## Using Multiple Accelerators  
  There are two ways to use multiple accelerators in your app:  
-  
+
 -   You can pass `accelerator_view` objects to the calls to the [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) method.  
   
 -   You can construct an `array` object using a specific `accelerator_view` object. The C+AMP runtime will pick up the `accelerator_view` object from the captured `array` object in the lambda expression.  

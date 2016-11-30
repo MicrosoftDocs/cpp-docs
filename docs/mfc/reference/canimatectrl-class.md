@@ -114,7 +114,7 @@ CAnimateCtrl();
  You must call the [Create](#canimatectrl__create) member function before you can perform any other operations on the object you create.  
   
 ### Example  
- [!code-cpp[NVC_MFCControlLadenDialog#56](../../mfc/codesnippet/CPP/canimatectrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#56](../../mfc/codesnippet/cpp/canimatectrl-class_1.cpp)]  
   
 ##  <a name="canimatectrl__close"></a>  CAnimateCtrl::Close  
  Closes the AVI clip that was previously opened in the animation control (if any) and removes it from memory.  
@@ -323,5 +323,5 @@ BOOL Stop();
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CAnimateCtrl::Create](#canimatectrl__create)   
- [ON_CONTROL](http://msdn.microsoft.com/Library/2cb7ebdf-296b-4606-b191-3449835003db)
+ [ON_CONTROL](http://msdn.microsoft.com/library/2cb7ebdf-296b-4606-b191-3449835003db)
 

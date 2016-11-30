@@ -76,7 +76,7 @@ class CMFCCaptionButton : public CObject
 ## Example  
  The following example demonstrates how to construct a `CMFCCaptionButton` object and set the mini size of the title bar.  
   
- [!code-cpp[NVC_MFC_RibbonApp#43](../../mfc/reference/codesnippet/CPP/cmfccaptionbutton-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#43](../../mfc/reference/codesnippet/cpp/cmfccaptionbutton-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

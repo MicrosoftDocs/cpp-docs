@@ -66,7 +66,7 @@ template <class Worker>  class CNonStatelessWorker
   
 |Name|Description|  
 |----------|-----------------|  
-|[CNonStatelessWorker::Execute](#cnonstatelessworker__execute)|Implementation of [WorkerArchetype::Execute](workerarchetype-class.md#execute).|  
+|[CNonStatelessWorker::Execute](#cnonstatelessworker__execute)|Implementation of [WorkerArchetype::Execute](workerarchetype-class.md#workerarchetype__execute).|  
 |[CNonStatelessWorker::Initialize](#cnonstatelessworker__initialize)|Implementation of [WorkerArchetype::Initialize](worker-archetype.md#workerarchetype_initialize).|  
 |[CNonStatelessWorker::Terminate](#cnonstatelessworker__terminate)|Implementation of [WorkerArchetype::Terminate](worker-archetype.md#workerarchetype_terminate).|  
   
@@ -79,7 +79,8 @@ template <class Worker>  class CNonStatelessWorker
  **Header:** atlutil.h  
   
 ##  <a name="cnonstatelessworker__execute"></a>  CNonStatelessWorker::Execute  
- Implementation of [WorkerArchetype::Execute](workerarchetype-class.md#execute).  
+ Implementation of [WorkerArchetype::Execute](workerarchetype-class.md#workerarchetype__execute).  
+
   
 ```
 void Execute(
@@ -89,7 +90,8 @@ void Execute(
 ```  
   
 ### Remarks  
- This method creates an instance of the *Worker* class on the stack and calls [Initialize](worker-archetype.md#workerarchetype_initialize) on that object. If the initialization is successful, this method also calls [Execute](workerarchetype-class.md#execute) and [Terminate](worker-archetype.md#workerarchetype_terminate) on the same object.  
+ This method creates an instance of the *Worker* class on the stack and calls [Initialize](worker-archetype.md#workerarchetype_initialize) on that object. If the initialization is successful, this method also calls [Execute](workerarchetype-class.md#workerarchetype__execute) and [Terminate](worker-archetype.md#workerarchetype_terminate) on the same object.  
+
   
 ##  <a name="cnonstatelessworker__initialize"></a>  CNonStatelessWorker::Initialize  
  Implementation of [WorkerArchetype::Initialize](worker-archetype.md#workerarchetype_initialize).  

@@ -38,7 +38,7 @@ The keyword `constexpr` was introduced in C++11 and improved in C++14. It means 
   
 ## Syntax  
   
-```vb  
+```cpp  
 constexpr  literal-type  identifier = constant-expression;constexpr  literal-type  identifier { constant-expression };constexpr literal-type identifier(params );constexpr ctor (params);  
 ```  
   

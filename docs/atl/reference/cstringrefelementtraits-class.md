@@ -109,7 +109,7 @@ static int CompareElementsOrdered(
  The second string element.  
   
 ### Return Value  
- Zero if the strings are identical, < 0 if `str1` is less than `str2`, or > 0 if `str1` is greater than `str2`. The [CStringT::Compare](cstringt-class.md#compare) method is used to perform the comparisons.  
+ Zero if the strings are identical, < 0 if `str1` is less than `str2`, or > 0 if `str1` is greater than `str2`. The [CStringT::Compare](cstringt-class.md#cstringt__compare) method is used to perform the comparisons.  
   
 ##  <a name="cstringrefelementtraits__hash"></a>  CStringRefElementTraits::Hash  
  Call this static function to calculate a hash value for the given string element.  
