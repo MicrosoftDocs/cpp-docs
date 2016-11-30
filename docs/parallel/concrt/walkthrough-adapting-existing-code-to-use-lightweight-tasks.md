@@ -77,20 +77,16 @@ Parameters = 50, 100
   
  [!code-cpp[concrt-migration-lwt#5](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_5.cpp)]  
   
-<<<<<<< HEAD
+
 5.  Replace the call to `CreateThread` with a call to the [concurrency::CurrentScheduler::ScheduleTask](reference/currentscheduler-class.md#currentscheduler__scheduletask_method) method.  
-=======
-5.  Replace the call to `CreateThread` with a call to the [concurrency::CurrentScheduler::ScheduleTask](reference/CurrentScheduler-class.md#CurrentScheduler__ScheduleTask) method.  
->>>>>>> master
+
   
  [!code-cpp[concrt-migration-lwt#6](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_6.cpp)]  
   
-<<<<<<< HEAD
+
 6.  Replace the call to `WaitForSingleObject` with a call to the [concurrency::event::wait](reference/event-class.md#event__wait_method) method to wait for the task to finish.  
-=======
-6.  Replace the call to `WaitForSingleObject` with a call to the [concurrency::event::wait](reference/event-class.md#event__wait) method to wait for the task to finish.  
->>>>>>> master
-  
+
+ 
  [!code-cpp[concrt-migration-lwt#7](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_7.cpp)]  
   
 7.  Remove the call to `CloseHandle`.  
@@ -99,11 +95,9 @@ Parameters = 50, 100
   
  [!code-cpp[concrt-migration-lwt#8](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_8.cpp)]  
   
-<<<<<<< HEAD
 9. At the end of the `MyThreadFunction` function, call the [concurrency::event::set](reference/event-class.md#event__set_method) method to signal to the main application that the task has finished.  
-=======
-9. At the end of the `MyThreadFunction` function, call the [concurrency::event::set](reference/event-class.md#event__set) method to signal to the main application that the task has finished.  
->>>>>>> master
+
+
   
  [!code-cpp[concrt-migration-lwt#9](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_9.cpp)]  
   

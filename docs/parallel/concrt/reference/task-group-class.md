@@ -147,6 +147,7 @@ task_group_status run_and_wait(
   
 ### Return Value  
  An indication of whether the wait was satisfied or the task group was canceled, due to either an explicit cancel operation or an exception being thrown from one of its tasks. For more information, see [task_group_status](concurrency-namespace-enums.md#task_group_status_enumeration).  
+
   
 ### Remarks  
  Note that one or more of the tasks scheduled to this `task_group` object may execute inline on the calling context.  
@@ -194,6 +195,7 @@ task_group_status wait();
   
 ### Return Value  
  An indication of whether the wait was satisfied or the task group was canceled, due to either an explicit cancel operation or an exception being thrown from one of its tasks. For more information, see [task_group_status](concurrency-namespace-enums.md#task_group_status_enumeration).  
+
   
 ### Remarks  
  Note that one or more of the tasks scheduled to this `task_group` object may execute inline on the calling context.  

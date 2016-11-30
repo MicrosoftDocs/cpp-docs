@@ -62,6 +62,7 @@ This example shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/e
 
  To support cancellation, the `HttpRequest`, `HttpRequestBuffersCallback`, and `HttpRequestStringCallback` classes use cancellation tokens. The `HttpRequestBuffersCallback` and `HttpRequestStringCallback` classes use the [concurrency::cancellation_token::register_callback](reference/cancellation-token-class.md#cancellation_token__register_callback_method) method to enable the task completion event to respond to cancellation. This cancellation callback aborts the download. For more info about cancellation, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl).  
 
+
   
 #### To Define the HttpRequest Class  
   
@@ -112,7 +113,9 @@ This example shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/e
   
     > [!TIP]
 
+
     >  If your app does not require support for cancellation, pass [concurrency::cancellation_token::none](reference/cancellation-token-class.md#cancellation_token__none_method) to the `HttpRequest::GetAsync` and `HttpRequest::PostAsync` methods.  
+
 
   
 7.  In MainPage.xaml.cpp, implement the `MainPage::ProcessHttpRequest` method.  

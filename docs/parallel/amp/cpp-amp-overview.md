@@ -264,6 +264,7 @@ for (int i = 0; i <5; i++)
 |Copy|Explicit and deep copy at definition.|Implicit copy when it is accessed by the kernel function.|  
 |Data retrieval|By copying the array data back to an object on the CPU thread.|By direct access of the `array_view` object or by calling the [array_view::synchronize Method](reference/array-view-class.md#array_view__synchronize_method) to continue accessing the data on the original container.|  
 
+
   
 ### Shared memory with array and array_view  
  Shared memory is memory that can be accessed by both the CPU and the accelerator. The use of shared memory eliminates or significantly reduces the overhead of copying data between the CPU and the accelerator. Although the memory is shared, it cannot be accessed concurrently by both the CPU and the accelerator, and doing so causes undefined behavior.  
@@ -395,6 +396,7 @@ void AddArraysWithFunction() {
  You can gain additional acceleration by using tiling. Tiling divides the threads into equal rectangular subsets or *tiles*. You determine the appropriate tile size based on your data set and the algorithm that you are coding. For each thread, you have access to the *global* location of a data element relative to the whole `array` or `array_view` and access to the *local* location relative to the tile. Using the local index value simplifies your code because you don't have to write the code to translate index values from global to local. To use tiling, call the [extent::tile Method](reference/extent-class.md#extent__tile_method) on the compute domain in the `parallel_for_each` method, and use a [tiled_index](../../parallel/amp/reference/tiled-index-class.md) object in the lambda expression.  
   
  In typical applications, the elements in a tile are related in some way, and the code has to access and keep track of values across the tile. Use the [tile_static Keyword](../../cpp/tile-static-keyword.md) keyword and the [tile_barrier::wait Method](reference/tile-barrier-class.md#tile_barrier__wait_method) to accomplish this. A variable that has the `tile_static` keyword has a scope across an entire tile, and an instance of the variable is created for each tile. You must handle synchronization of tile-thread access to the variable. The [tile_barrier::wait Method](reference/tile-barrier-class.md#tile_barrier__wait_method) stops execution of the current thread until all the threads in the tile have reached the call to `tile_barrier::wait`. So you can accumulate values across the tile by using `tile_static` variables. Then you can finish any computations that require access to all the values.  
+
   
  The following diagram represents a two-dimensional array of sampling data that is arranged in tiles.  
   

@@ -91,7 +91,7 @@ class accelerator_view;
   
  Physical devices can be shared among many client threads. Client threads can cooperatively use the same `accelerator_view` object of an accelerator, or each client can communicate with a compute device via an independent `accelerator_view` object for isolation from other client threads.  
   
- An `accelerator_view` object can have one of two [queuing_mode Enumeration](concurrency-namespace-enums-amp.md#queuing_mode_enumeration) states. If the queuing mode is `immediate`, commands like `copy` and `parallel_for_each` are sent to the corresponding accelerator device as soon as they return to the caller. If the queuing mode is `deferred`, such commands are queued up on a command queue that corresponds to the `accelerator_view` object. Commands are not actually sent to the device until `flush()` is called.  
+ An `accelerator_view` object can have one of two [queuing_mode Enumeration](concurrency-namespace-enums-amp.md#queuing-mode-enumeration) states. If the queuing mode is `immediate`, commands like `copy` and `parallel_for_each` are sent to the corresponding accelerator device as soon as they return to the caller. If the queuing mode is `deferred`, such commands are queued up on a command queue that corresponds to the `accelerator_view` object. Commands are not actually sent to the device until `flush()` is called.  
   
 ## Requirements  
  **Header:** amprt.h  
@@ -314,4 +314,4 @@ Destroys the accelerator_view object.
   
  
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

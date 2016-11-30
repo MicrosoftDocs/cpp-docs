@@ -267,6 +267,7 @@ GPU Threads window
      There are 313 tiles allocated for this computation. Each tile contains 32 threads. Because local GPU debugging occurs on a software emulator, there are four active GPU threads. The four threads execute the instructions simultaneously and then move on together to the next instruction.  
   
      In the GPU threads window, there are four GPU threads active and 28 GPU threads blocked at the [tile_barrier::wait](reference/tile-barrier-class.md#tile_barrier__wait_method) statement defined at about line 21 (`t_idx.barrier.wait();`). All 32 GPU threads belong to the first tile, `tile[0]`. An arrow points to the row that includes the current thread. To switch to a different thread, use one of the following methods:  
+
   
     -   In the row for the thread to switch to in the GPU Threads window, open the shortcut menu and choose **Switch To Thread**. If the row represents more than one thread, you will switch to the first thread according to the thread coordinates.  
   
@@ -288,6 +289,7 @@ GPU Threads window
 Parallel Stacks window  
   
      32 threads went from `_kernel_stub` to the lambda statement in the `parallel_for_each` function call and then to the `sum_kernel_tiled` function, where the parallel reduction occurs. 28 out of the 32 threads have progressed to the [tile_barrier::wait](reference/tile-barrier-class.md#tile_barrier__wait_method) statement and remain blocked at line 22, whereas the other 4 threads remain active in the `sum_kernel_tiled` function at line 30.  
+
   
      You can inspect the properties of a GPU thread that are available in the GPU Threads window in the rich DataTip of the Parallel Stacks window. To do this, rest the mouse pointer on the stack frame of **sum_kernel_tiled**. The following illustration shows the DataTip.  
   
@@ -379,6 +381,7 @@ Frozen threads in the GPU Threads window
 1.  On the shortcut menu for one of the threads in the **GPU Threads** window, choose **Group By**, **Address**.  
   
      The threads in the GPU Threads window are grouped by address. The address corresponds to the instruction in disassembly where each group of threads is located. 24 threads are at line 22 where the [tile_barrier::wait Method](reference/tile-barrier-class.md#tile_barrier__wait_method) is executed. 12 threads are at the instruction for the barrier at line 32. Four of these threads are flagged. Eight threads are at the breakpoint at line 30. Four of these threads are frozen. The following illustration shows the grouped threads in the GPU Threads window.  
+
   
      ![GPU Threads window with threads grouped by Address](../../parallel/amp/media/campl.png "campl")  
 Grouped threads in the GPU Threads window  

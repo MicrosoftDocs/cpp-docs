@@ -119,6 +119,7 @@ This document describes how best to make effective use of the Parallel Patterns 
 
  When you work directly with a task group object, use the [concurrency::task_group::cancel](reference/task-group-class.md#task_group__cancel_method) or [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#structured_task_group__cancel_method) methods to cancel the work that belongs to that task group. To cancel a parallel algorithm, for example, `parallel_for`, create a parent task group and cancel that task group. For example, consider the following function, `parallel_find_any`, which searches for a value in an array in parallel.  
 
+
   
  [!code-cpp[concrt-parallel-array-search#2](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_7.cpp)]  
   
@@ -189,6 +190,7 @@ Container 1: Freeing resources...Exiting program...
 
  When possible, do not perform blocking operations before you call the [concurrency::task_group::cancel](reference/task-group-class.md#task_group__cancel_method) or [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#structured_task_group__cancel_method) method to cancel parallel work.  
 
+
   
  When a task performs a cooperative blocking operation, the runtime can perform other work while the first task waits for data. The runtime reschedules the waiting task when it unblocks. The runtime typically reschedules tasks that were more recently unblocked before it reschedules tasks that were less recently unblocked. Therefore, the runtime could schedule unnecessary work during the blocking operation, which leads to decreased performance. Accordingly, when you perform a blocking operation before you cancel parallel work, the blocking operation can delay the call to `cancel`. This causes other tasks to perform unnecessary work.  
   
@@ -197,7 +199,9 @@ Container 1: Freeing resources...Exiting program...
  [!code-cpp[concrt-blocking-cancel#1](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_13.cpp)]  
   
 
+
  The `new` operator performs a heap allocation, which might block. The runtime performs other work only when the task performs a cooperative blocking call, such as a call to [concurrency::critical_section::lock](reference/critical-section-class.md#critical_section__lock_method).  
+
 
   
  The following example shows how to prevent unnecessary work, and thereby improve performance. This example cancels the task group before it allocates the storage for the `Answer` object.  
@@ -264,6 +268,7 @@ Container 1: Freeing resources...Exiting program...
  Because the `object` variable is passed by value, any state changes that occur to this variable do not appear in the original copy.  
   
  The following example uses the [concurrency::task_group::wait](reference/task-group-class.md#task_group__wait_method) method to make sure that the task finishes before the `perform_action` function returns.  
+
 
   
  [!code-cpp[concrt-lambda-lifetime#3](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_22.cpp)]  

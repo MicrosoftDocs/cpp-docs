@@ -114,7 +114,9 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
  `task` is a template class. The type parameter `T` is the type of the result that is produced by the task. This type can be `void` if the task does not return a value. `T` cannot use the `const` modifier.  
   
 
+<<<<<<< HEAD
  When you create a task, you provide a *work function* that performs the task body. This work function comes in the form of a lambda function, function pointer, or function object. To wait for a task to finish without obtaining the result, call the [concurrency::task::wait](reference/task-class.md#task__wait) method. The `task::wait` method returns a [concurrency::task_status](reference/concurrency-namespace-enums.md#task_group_status_enumeration) value that describes whether the task was completed or canceled. To get the result of the task, call the [concurrency::task::get](reference/task-class.md#task__get) method. This method calls `task::wait` to wait for the task to finish, and therefore blocks execution of the current thread until the result is available.  
+
 
   
  The following example shows how to create a task, wait for its result, and display its value. The examples in this documentation use lambda functions because they provide a more succinct syntax. However, you can also use function pointers and function objects when you use tasks.  
@@ -160,7 +162,9 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
  These features enable you to execute one or more tasks when the first task completes. For example, you can create a continuation that compresses a file after the first task reads it from disk.  
   
 
+
  The following example modifies the previous one to use the [concurrency::task::then](reference/task-class.md#task__then) method to schedule a continuation that prints the value of the antecedent task when it is available.  
+
 
   
  [!code-cpp[concrt-basic-continuation#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_5.cpp)]  
@@ -293,7 +297,6 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
  The `task_group` class is thread-safe. Therefore you can add tasks to a `task_group` object from multiple threads and wait on or cancel a `task_group` object from multiple threads. The construction and destruction of a `structured_task_group` object must occur in the same lexical scope. In addition, all operations on a `structured_task_group` object must occur on the same thread. The exception to this rule is the [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#structured_task_group__cancel_method) and [concurrency::structured_task_group::is_canceling](reference/structured-task-group-class.md#structured_task_group__is_canceling_method) methods. A child task can call these methods to cancel the parent task group or check for cancelation at any time.  
   
  You can run additional tasks on a `task_group` object after you call the [concurrency::task_group::wait](reference/task-group-class.md#task_group__wait_method) or [concurrency::task_group::run_and_wait](reference/task-group-class.md#task_group__run_and_wait_method) method. Conversely, if you run additional tasks on a `structured_task_group` object after you call the [concurrency::structured_task_group::wait](reference/structured-task-group-class.md#structured_task_group__wait_method) or [concurrency::structured_task_group::run_and_wait](reference/structured-task-group-class.md#structured_task_group__run_and_wait_method) methods, then the behavior is undefined.  
-
   
  Because the `structured_task_group` class does not synchronize across threads, it has less execution overhead than the `task_group` class. Therefore, if your problem does not require that you schedule work from multiple threads and you cannot use the `parallel_invoke` algorithm, the `structured_task_group` class can help you write better performing code.  
   

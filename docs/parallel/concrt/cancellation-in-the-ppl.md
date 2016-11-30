@@ -58,6 +58,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
   
 -   Use the [concurrency::cancellation_token::none](reference/cancellation-token-class.md#cancellation_token__none_method) method when you call a constructor or function that takes a `cancellation_token` object but you do not want the operation to be cancellable. Also, if you do not pass a cancellation token to the [concurrency::task](../../parallel/concrt/reference/task-class.md) constructor or the [concurrency::create_task](reference/concurrency-namespace-functions.md#create_task) function, that task is not cancellable.  
 
+
   
 ##  <a name="top"></a> In this Document  
   

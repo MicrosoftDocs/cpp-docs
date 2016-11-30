@@ -122,4 +122,4 @@ scoped_d3d_access_lock& operator= (scoped_d3d_access_lock&& _Other);
 
 ## See Also  
  [concurrency::direct3d Namespace](concurrency-direct3d-namespace.md)
->>>>>>> master
+

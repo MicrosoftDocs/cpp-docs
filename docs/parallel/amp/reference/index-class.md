@@ -77,6 +77,7 @@ class index;
 |----------|-----------------|  
 |[index::rank Constant](reference/index-class.md#rank_constant)|Stores the rank of the `index` object.|  
 
+
   
 ## Inheritance Hierarchy  
  `index`  

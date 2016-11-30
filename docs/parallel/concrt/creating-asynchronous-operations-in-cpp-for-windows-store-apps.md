@@ -160,6 +160,7 @@ This document describes some of the key points to keep in mind when you use the 
 -   Use [concurrency::task_continuation_context::use_arbitrary](reference/task-continuation-context-class.md#task_continuation_context__use_arbitrary_method) to specify that the continuation runs on a background thread.  
   
 -   Use [concurrency::task_continuation_context::use_current](reference/task-continuation-context-class.md#task_continuation_context__use_current_method) to specify that the continuation runs on the thread that called `task::then`.  
+
   
  You can pass a `task_continuation_context` object to the [task::then](reference/task-class.md#task__then_method) method to explicitly control the execution context of the continuation or you can pass the task to another apartment and then call the `task::then` method to implicitly control the execution context.  
   

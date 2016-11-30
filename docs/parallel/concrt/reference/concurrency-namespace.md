@@ -245,12 +245,11 @@ namespace concurrency;
 |[wait Function](concurrency-namespace-functions.md#wait)|Pauses the current context for a specified amount of time.|  
 |[when_all Function](concurrency-namespace-functions.md#when_all)|Creates a task that will complete successfully when all of the tasks supplied as arguments complete successfully.|  
 |[when_any Function](concurrency-namespace-functions.md#when_any)|Overloaded. Creates a task that will complete successfully when any of the tasks supplied as arguments completes successfully.|  
->>>>>>> master
   
 ### Operators  
   
 |Name|Description|  
-|----------|-----------------|  
+|----------|-----------------| 
 
 |[operator!= Operator](concurrency-namespace-operators.md#operator_neq)|Tests if the `concurrent_vector` object on the left side of the operator is not equal to the `concurrent_vector` object on the right side.|  
 |[operator&& Operator](concurrency-namespace-operators.md#operator_amp_amp)|Overloaded. Creates a task that will complete succesfully when both of the tasks supplied as arguments complete successfully.|  

@@ -94,6 +94,7 @@ The Concurrency Runtime uses C++ exception handling to communicate many kinds of
   
 
  [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) is an important runtime exception type that relates to `task`. The runtime throws `task_canceled` when you call `task::get` and that task is canceled. (Conversely, `task::wait` returns [task_status::canceled](reference/concurrency-namespace-enums.md#task_group_status_enumeration) and does not throw.) You can catch and handle this exception from a task-based continuation or when you call `task::get`. For more information about task cancellation, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
+
   
 > [!CAUTION]
 >  Never throw `task_canceled` from your code. Call [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) instead.  
@@ -112,8 +113,9 @@ The Concurrency Runtime uses C++ exception handling to communicate many kinds of
 >  Make sure that you understand the effects that exceptions have on dependent tasks. For recommended practices about how to use exception handling with tasks or parallel algorithms, see the [Understand how Cancellation and Exception Handling Affect Object Destruction](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md#object-destruction) section in the Best Practices in the Parallel Patterns Library topic.  
   
  For more information about task groups, see [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md). For more information about parallel algorithms, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
-  
+
  When you throw an exception in the body of a work function that you pass to a [concurrency::task_group](reference/task-group-class.md) or [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) object, the runtime stores that exception and marshals it to the context that calls [concurrency::task_group::wait](reference/task-group-class.md#task_group__wait_method), [concurrency::structured_task_group::wait](reference/structured-task-group-class.md#structured_task_group__wait_method), [concurrency::task_group::run_and_wait](reference/task-group-class.md#task_group__run_and_wait_method), or [concurrency::structured_task_group::run_and_wait](reference/structured-task-group-class.md#structured_task_group__run_and_wait_method). The runtime also stops all active tasks that are in the task group (including those in child task groups) and discards any tasks that have not yet started.  
+
   
  The following example shows the basic structure of a work function that throws an exception. The example uses a `task_group` object to print the values of two `point` objects in parallel. The `print_point` work function prints the values of a `point` object to the console. The work function throws an exception if the input value is `NULL`. The runtime stores this exception and marshals it to the context that calls `task_group::wait`.  
   

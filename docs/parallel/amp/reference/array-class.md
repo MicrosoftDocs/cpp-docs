@@ -73,6 +73,7 @@ friend class array;
 |[array::get_associated_accelerator_view Method](#array__get_associated_accelerator_view_method)|Gets the second [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the [array](../../../parallel/amp/reference/array-class.md) object.|  
 |[array::get_cpu_access_type Method](#array__get_cpu_access_type_method)|Returns the [access_type](access_type%20enumeration.md) of the array. This method can be accessed only on the CPU.|  
 |[array::get_extent Method](#array__get_extent_method)|Returns the [extent](../../../parallel/amp/reference/extent-class.md) object of the array.|  
+
 |[array::reinterpret_as Method](#array__reinterpret_as_method)|Returns a one-dimensional array that contains all the elements in the `array` object.|  
 |[array::section Method](#array__section_method)|Returns a subsection of the [array](../../../parallel/amp/reference/array-class.md) object that is at the specified origin and, optionally, that has the specified extent.|  
 |[array::view_as Method](#array__view_as_method)|Returns an [array_view](../../../parallel/amp/reference/array-view-class.md) object that is constructed from the `array` object.|  
