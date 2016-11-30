@@ -80,7 +80,7 @@ class CComMultiThreadModel
  **Header:** atlbase.h  
   
 ##  <a name="ccommultithreadmodel__autocriticalsection"></a>  CComMultiThreadModel::AutoCriticalSection  
- When using `CComMultiThreadModel`, the `typedef` name `AutoCriticalSection` references class [CComAutoCriticalSection](iccomautocriticalsection-class.md), which provides methods for obtaining and releasing ownership of a critical section object.  
+ When using `CComMultiThreadModel`, the `typedef` name `AutoCriticalSection` references class [CComAutoCriticalSection](ccomautocriticalsection-class.md), which provides methods for obtaining and releasing ownership of a critical section object.  
   
 ```
 typedef CComAutoCriticalSection AutoCriticalSection;

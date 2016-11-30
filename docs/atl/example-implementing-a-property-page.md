@@ -117,7 +117,7 @@ This example shows how to build a property page that displays (and allows you to
   
  [!code-cpp[NVC_ATL_Windowing#77](../atl/codesnippet/cpp/example-implementing-a-property-page_5.h)]  
   
- The base class implementation of the [Activate](../atl/reference/ipropertypageimpl-class.md#ipropertypageimpl__activate.md) method is responsible for creating the dialog box and its controls, so you can override this method and add your own initialization after calling the base class:  
+ The base class implementation of the [Activate](../atl/reference/ipropertypageimpl-class.md#ipropertypageimpl__activate) method is responsible for creating the dialog box and its controls, so you can override this method and add your own initialization after calling the base class:  
   
  [!code-cpp[NVC_ATL_Windowing#78](../atl/codesnippet/cpp/example-implementing-a-property-page_6.h)]  
   
@@ -129,7 +129,7 @@ This example shows how to build a property page that displays (and allows you to
  [!code-cpp[NVC_ATL_Windowing#79](../atl/codesnippet/cpp/example-implementing-a-property-page_7.h)]  
   
 > [!NOTE]
->  The check against [m_bDirty](../atl/reference/ipropertypageimpl-class.md#ipropertypageimpl__m_bdirty.md) at the beginning of this implementation is an initial check to avoid unnecessary updates of the objects if **Apply** is called more than once. There are also checks against each of the property values to ensure that only changes result in a method call to the **Document**.  
+>  The check against [m_bDirty](../atl/reference/ipropertypageimpl-class.md#ipropertypageimpl__m_bdirty) at the beginning of this implementation is an initial check to avoid unnecessary updates of the objects if **Apply** is called more than once. There are also checks against each of the property values to ensure that only changes result in a method call to the **Document**.  
   
 > [!NOTE]
 > **Document** exposes **FullName** as a read-only property. To update the file name of the document based on changes made to the property page, you have to use the **Save** method to save the file with a different name. Thus, the code in a property page doesn't have to limit itself to getting or setting properties.  

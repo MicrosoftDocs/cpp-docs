@@ -42,8 +42,6 @@ These functions provide useful debugging and trace facilities.
 |[AtlReportError](http://msdn.microsoft.com/library/86b046a5-ea18-4ecf-9aab-40fc1eab847c)|Sets up **IErrorInfo** to provide error details to a client.|  
 |[AtlThrow](http://msdn.microsoft.com/library/2bd111da-8170-488d-914a-c9bf6b6765f7)|Throws a `CAtlException`.|  
 |[AtlThrowLastWin32](http://msdn.microsoft.com/library/8bce8e56-c7cd-4ebb-8c62-80ebc63a3d07)|Call this function to signal an error based on the result of the Windows function `GetLastError`.|  
-|[AtlTraceLoadSettings](../../misc/atltraceloadsettings.md)|Call this function to load trace settings from a file.|  
-|[AtlTraceSaveSettings](../../misc/atltracesavesettings.md)|Call this function to save the current trace settings to a file.|  
   
 ##  <a name="atlhresultfromlasterror"></a>  AtlHresultFromLastError  
  Returns the calling thread's last-error code value in the form of an HRESULT.  

@@ -60,7 +60,7 @@ class CTime
 |----------|-----------------|  
 |[CTime::Format](#ctime__format)|Converts a `CTime` object into a formatted string — based on the local time zone.|  
 |[CTime::FormatGmt](#ctime__formatgmt)|Converts a `CTime` object into a formatted string — based on UTC.|  
-|[CTime::GetAsDBTIMESTAMP](#ctime__getasdbtimestamp)|Converts the time information stored in the `CTime` object to a Win32-compatible <xref:System.Data.OleDb.OleDbTypequalifyHint%3DFalse%26autoUpgrade%3DTrue> structure.|  
+|[CTime::GetAsDBTIMESTAMP](#ctime__getasdbtimestamp)|Converts the time information stored in the `CTime` object to a Win32-compatible DBTIMESTAMP structure.|  
 |[CTime::GetAsSystemTime](#ctime__getassystemtime)|Converts the time information stored in the `CTime` object to a Win32-compatible [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure.|  
 |[CTime::GetCurrentTime](#ctime__getcurrenttime)|Creates a `CTime` object that represents the current time (static member function).|  
 |[CTime::GetDay](#ctime__getday)|Returns the day represent by the `CTime` object.|  

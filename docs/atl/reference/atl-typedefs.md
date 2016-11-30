@@ -52,7 +52,7 @@ The Active Template Library includes the following typedefs.
 |[CPathA](#cpatha)|A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CStringA`.|  
 |[CPathW](#cpathw)|A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CStringW`.|  
 |[CSimpleValArray](#csimplevalarray)|Represents an array for storing simple types.|  
-|[DefaultThreadTraits](../../atl/reference/defaultthreadtraits-class.md)|The default thread traits class.|  
+|[DefaultThreadTraits](#defaultthreadtraits)|The default thread traits class.|  
 |[LPCURL](#lpcurl)|A pointer to a constant [CUrl](../../atl/reference/curl-class.md) object.|  
 |[LPURL](#lpurl)|A pointer to a [CUrl](../../atl/reference/curl-class.md) object.|  
   
