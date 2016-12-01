@@ -56,14 +56,6 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C2619](../../error-messages/compiler-errors-2/compiler-error-c2619.md)  
   
- [Compiler Error C2620](http://msdn.microsoft.com/en-us/896fb9b4-d333-49d6-88d0-560f1df20b2d)  
-  
- [Compiler Error C2621](http://msdn.microsoft.com/en-us/87b17f17-8fd1-4d94-8851-41d715f7d6e9)  
-  
- [Compiler Error C2622](http://msdn.microsoft.com/en-us/25432ec8-9ddf-4af2-bbb0-c3ff89e54fa8)  
-  
- [Compiler Error C2623](http://msdn.microsoft.com/en-us/3af76b8c-2697-4517-b400-df580c9a04ba)  
-  
  [Compiler Error C2624](../../error-messages/compiler-errors-2/compiler-error-c2624.md)  
   
  [Compiler Error C2626](../../error-messages/compiler-errors-2/compiler-error-c2626.md)  
@@ -183,7 +175,5 @@ The articles in this part of the documentation contain information about a subse
  [Compiler Error C2695](../../error-messages/compiler-errors-2/compiler-error-c2695.md)  
   
  [Compiler Error C2696](../../error-messages/compiler-errors-2/compiler-error-c2696.md)  
-  
- [Compiler Error C2697](../Topic/Compiler%20Error%20C2697.md)  
   
  [Compiler Error C2698](../../error-messages/compiler-errors-2/compiler-error-c2698.md)

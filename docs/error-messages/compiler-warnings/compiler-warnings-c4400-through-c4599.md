@@ -187,7 +187,6 @@ The articles in this part of the documentation contain information about a subse
 |[Compiler Warning (level 4) C4517](../../error-messages/compiler-warnings/compiler-warning-level-4-c4517.md)|access-declarations are deprecated; member using-declarations provide a better alternative|  
 |[Compiler Warning (level 1) C4518](../../error-messages/compiler-warnings/compiler-warning-level-1-c4518.md)|'specifier': storage-class or type specifier(s) unexpected here; ignored|  
 |Compiler warning C4519|default template arguments are only allowed on a class template|  
-|[Compiler Warning (level 3) C4520](../../error-messages/compiler-warnings/compiler-warning-level-3-c4520.md)|'class': multiple default constructors specified|  
 |[Compiler Warning (level 3) C4521](../../error-messages/compiler-warnings/compiler-warning-level-3-c4521.md)|'class': multiple copy constructors specified|  
 |[Compiler Warning (level 3) C4522](../../error-messages/compiler-warnings/compiler-warning-level-3-c4522.md)|'class': multiple assignment operators specified|  
 |[Compiler Warning (level 3) C4523](../../error-messages/compiler-warnings/compiler-warning-level-3-c4523.md)|'class': multiple destructors specified|  

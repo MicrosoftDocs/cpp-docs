@@ -50,7 +50,7 @@ using :: unqualified-id
 ```  
   
 ## Remarks  
- The name becomes a synonym for an entity declared elsewhere. It allows an *individual* name from a specific namespace to be used without [explicit qualification](../misc/explicit-qualification.md). This is in contrast to the `using` directive, which allows *all* the names in a namespace to be used without qualification. See [using Directive](../misc/using-directive-cpp.md) for more information. This keyword is also used for [type aliases](../cpp/aliases-and-typedefs-cpp.md).  
+ The name becomes a synonym for an entity declared elsewhere. It allows an *individual* name from a specific namespace to be used without explicit qualification. This is in contrast to the `using` directive, which allows *all* the names in a namespace to be used without qualification. See [using directives](../cpp/namespaces-cpp.md#using_directives) for more information. This keyword is also used for [type aliases](../cpp/aliases-and-typedefs-cpp.md).  
   
 ## Example  
  A using declaration can be used in a class definition.  

@@ -35,13 +35,14 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiler Error C3813
-a property declaration can only appear within the definition of a managed or WinRTtype  
+a property declaration can only appear within the definition of a managed or WinRT type  
   
- A [property](../../misc/property.md) can only be declared within a managed or Windows Runtime type. Native types do not support the `property` keyword.  
+A [property](../../dotnet/how-to-use-properties-in-cpp-cli.md) can only be declared within a managed or Windows Runtime type. Native types do not support the `property` keyword.  
   
- The following sample generates C3813 and shows how to fix it:  
+## Example  
+The following sample generates C3813 and shows how to fix it:  
   
-```  
+```cpp  
 // C3813.cpp  
 // compile by using: cl /c /clr C3813.cpp  
 class A  

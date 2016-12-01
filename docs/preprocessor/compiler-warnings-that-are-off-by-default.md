@@ -108,7 +108,6 @@ The compiler includes warnings that are turned off by default because most users
 |C4767 (level 4)|section name 'symbol' is longer than 8 characters and will be truncated by the linker|  
 |C4786 (level 3)|'symbol' : object name was truncated to 'number' characters in the debug information|  
 |[C4820](../error-messages/compiler-warnings/compiler-warning-level-4-c4820.md) (level 4)|'bytes' bytes padding added after construct 'member_name'|  
-|[C4826](../error-messages/compiler-warnings/compiler-warning-level-2-c4826.md) (level 2)|conversion from 'type1' to 'type2' is sign-extended. This may cause unexpected runtime behavior|  
 |[C4837](../error-messages/compiler-warnings/compiler-warning-level-4-c4837.md) (level 4)|trigraph detected: '??%c' replaced by '%c'|  
 |[C4905](../error-messages/compiler-warnings/compiler-warning-level-1-c4905.md) (level 1)|wide string literal cast to 'LPSTR'|  
 |[C4906](../error-messages/compiler-warnings/compiler-warning-level-1-c4906.md) (level 1)|string literal cast to 'LPWSTR'|  

@@ -37,10 +37,10 @@ translation.priority.ht:
 # Compiler Error C3155
 attributes are not allowed in a property indexer  
   
- An indexed property was declared incorrectly. For more information, see [How to: Use Indexed Properties](../../misc/how-to-use-indexed-properties.md).  
+An indexed property was declared incorrectly. For more information, see [How to: Use Properties in C++/CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md).  
   
 ## Example  
- The following sample generates C3155.  
+The following sample generates C3155.  
   
 ```  
 // C3155.cpp  

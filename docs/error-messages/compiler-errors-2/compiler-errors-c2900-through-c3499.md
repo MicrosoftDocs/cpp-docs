@@ -51,7 +51,7 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C2920](../../error-messages/compiler-errors-2/compiler-error-c2920.md)  
   
- [Compiler Error C2921](../../error-messages/compiler-errors-2/compiler-errors-c2900-through-c3499.md)  
+ [Compiler Error C2921](../../error-messages/compiler-errors-2/compiler-error-c2921.md)  
   
  [Compiler Error C2947](../../error-messages/compiler-errors-2/compiler-error-c2947.md)  
   
@@ -64,6 +64,8 @@ The articles in this part of the documentation contain information about a subse
  [Compiler Error C2958](../../error-messages/compiler-errors-2/compiler-error-c2958.md)  
   
  [Compiler Error C2959](../../error-messages/compiler-errors-2/compiler-error-c2959.md)  
+  
+ [Compiler Error C2962](../../error-messages/compiler-errors-2/compiler-error-c2962.md)  
   
  [Compiler Error C2970](../../error-messages/compiler-errors-2/compiler-error-c2970.md)  
   
@@ -132,8 +134,6 @@ The articles in this part of the documentation contain information about a subse
  [Compiler Error C3163](../../error-messages/compiler-errors-2/compiler-error-c3163.md)  
   
  [Compiler Error C3174](../../error-messages/compiler-errors-2/compiler-error-c3174.md)  
-  
- [Compiler Error C3186](../../error-messages/compiler-errors-2/compiler-error-c3186.md)  
   
  [Compiler Error C3187](../../error-messages/compiler-errors-2/compiler-error-c3187.md)  
   

@@ -38,11 +38,12 @@ translation.priority.mt:
 # Compiler Error C3365
 operator 'operator' : differing operands of type 'type1' and 'type2'  
   
- An attempt was made to compose delegates with different types.  See [How to: Compose Delegates](../../misc/how-to-compose-delegates.md) for more information about delegates.  
+An attempt was made to compose delegates with different types.  See [How to: Define and Use Delegates (C++/CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md) for more information about delegates.  
   
- The following sample generates C3365:  
+## Example  
+The following sample generates C3365:  
   
-```  
+```cpp  
 // C3365.cpp  
 // compile with: /clr  
 delegate void D1();  
