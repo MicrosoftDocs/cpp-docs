@@ -654,7 +654,7 @@ void synchronize() const restrict(cpu);
   
 ### Parameters  
  `_Access_type`  
- The intended [access_type](../../../parallel/concrt/reference/concurrency-namespace-enums.md#access_type_enumeration) on the target [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
+ The intended [access_type](../../../parallel/concrt/reference/concurrency-namespace-enums.md#access_type) on the target [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
   
 ##  <a name="array_view__synchronize_async_method"></a>  array_view::synchronize_async Method  
  Asynchronously synchronizes any modifications made to the [array_view](../../../parallel/amp/reference/array-view-class.md) object back to its source data.  
@@ -668,7 +668,7 @@ concurrency::completion_future synchronize_async() const restrict(cpu);
   
 ### Parameters  
  `_Access_type`  
- The intended [access_type](../../../parallel/concrt/reference/concurrency-namespace-enums.md#access_type_enumeration) on the target [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
+ The intended [access_type](../../../parallel/concrt/reference/concurrency-namespace-enums.md#access_type) on the target [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
   
 ### Return Value  
  A future upon which to wait for the operation to complete.  

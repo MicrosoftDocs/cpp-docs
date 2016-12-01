@@ -198,7 +198,7 @@ _Tuple_type<_Rank>   operator*(
  The component-wise product of the specified arguments.  
   
 
-##  <a name="operator_"></a>  operator/   
+##  <a name="operator_div"></a>  operator/   
  Computes the component-wise quotient of the specified arguments.  
   
 ```  

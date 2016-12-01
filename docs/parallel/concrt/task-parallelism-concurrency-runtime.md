@@ -61,7 +61,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
 -   Use [concurrency:: HYPERLINK "http://msdn.microsoft.com/library/system.threading.tasks.task.whenall(v=VS.110).aspx" when_all](reference/concurrency-namespace-functions.md#when_all) to create a task that completes after every member of a set of tasks completes. Use [concurrency::when_any](reference/concurrency-namespace-functions.md#when_all) to create a task that completes after one member of a set of tasks completes.  
 
   
--   Tasks and task groups can participate in the Parallel Patterns Library (PPL) cancellation mechanism. For more information, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
+-   Tasks and task groups can participate in the Parallel Patterns Library (PPL) cancellation mechanism. For more information, see [Cancellation in the PPL](cancellation-in-the-ppl.md).  
   
 -   To learn how the runtime handles exceptions that are thrown by tasks and task groups, see [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).  
   
@@ -109,7 +109,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
  For more information about lambda expressions, see [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md).  
   
 ##  <a name="task-class"></a> The task Class  
- You can use the [concurrency::task](../../parallel/concrt/reference/task-class.md) class to compose tasks into a set of dependent operations. This composition model is supported by the notion of *continuations*. A continuation enables code to be executed when the previous, or *antecedent*, task completes. The result of the antecedent task is passed as the input to the one or more continuation tasks. When an antecedent task completes, any continuation tasks that are waiting on it are scheduled for execution. Each continuation task receives a copy of the result of the antecedent task. In turn, those continuation tasks may also be antecedent tasks for other continuations, thereby creating a chain of tasks. Continuations help you create arbitrary-length chains of tasks that have specific dependencies among them. In addition, a task can participate in cancellation either before a tasks starts or in a cooperative manner while it is running. For more information about this cancellation model, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
+ You can use the [concurrency::task](../../parallel/concrt/reference/task-class.md) class to compose tasks into a set of dependent operations. This composition model is supported by the notion of *continuations*. A continuation enables code to be executed when the previous, or *antecedent*, task completes. The result of the antecedent task is passed as the input to the one or more continuation tasks. When an antecedent task completes, any continuation tasks that are waiting on it are scheduled for execution. Each continuation task receives a copy of the result of the antecedent task. In turn, those continuation tasks may also be antecedent tasks for other continuations, thereby creating a chain of tasks. Continuations help you create arbitrary-length chains of tasks that have specific dependencies among them. In addition, a task can participate in cancellation either before a tasks starts or in a cooperative manner while it is running. For more information about this cancellation model, see [Cancellation in the PPL](cancellation-in-the-ppl.md).  
   
  `task` is a template class. The type parameter `T` is the type of the result that is produced by the task. This type can be `void` if the task does not return a value. `T` cannot use the `const` modifier.  
   
@@ -287,7 +287,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
   
  Use `parallel_invoke` when you have several independent tasks that you want to execute at the same time, and you must wait for all tasks to finish before you continue. This technique is often referred to as *fork and join* parallelism. Use `task_group` when you have several independent tasks that you want to execute at the same time, but you want to wait for the tasks to finish at a later time. For example, you can add tasks to a `task_group` object and wait for the tasks to finish in another function or from another thread.  
   
- Task groups support the concept of cancellation. Cancellation enables you to signal to all active tasks that you want to cancel the overall operation. Cancellation also prevents tasks that have not yet started from starting. For more information about cancellation, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
+ Task groups support the concept of cancellation. Cancellation enables you to signal to all active tasks that you want to cancel the overall operation. Cancellation also prevents tasks that have not yet started from starting. For more information about cancellation, see [Cancellation in the PPL](cancellation-in-the-ppl.md).  
   
  The runtime also provides an exception-handling model that enables you to throw an exception from a task and handle that exception when you wait for the associated task group to finish. For more information about this exception-handling model, see [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).  
   
@@ -308,7 +308,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
   
  To manage task handles for cases where you have a variable number of tasks, use a stack-allocation routine such as [_malloca](../../c-runtime-library/reference/malloca.md) or a container class, such as std::[vector](../../standard-library/vector-class.md).  
   
- Both `task_group` and `structured_task_group` support cancellation. For more information about cancellation, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
+ Both `task_group` and `structured_task_group` support cancellation. For more information about cancellation, see [Cancellation in the PPL](cancellation-in-the-ppl.md).  
   
 ##  <a name="example"></a> Example  
  The following basic example shows how to work with task groups. This example uses the `parallel_invoke` algorithm to perform two tasks concurrently. Each task adds sub-tasks to a `task_group` object. Note that the `task_group` class allows for multiple tasks to add tasks to it concurrently.  
