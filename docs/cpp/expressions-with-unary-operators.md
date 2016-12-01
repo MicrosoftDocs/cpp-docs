@@ -43,7 +43,7 @@ Unary operators act on only one operand in an expression. The unary operators ar
   
 -   [Unary plus operator (+)](../cpp/unary-plus-and-negation-operators-plus-and.md)  
   
--   [Unary negation operator (–)](../misc/unary-negation-operator.md)  
+-   [Unary negation operator (–)](../cpp/unary-plus-and-negation-operators-plus-and.md)  
   
 -   [Logical negation operator (!)](../cpp/logical-negation-operator-exclpt.md)  
   

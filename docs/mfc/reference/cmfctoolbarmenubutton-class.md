@@ -79,7 +79,7 @@ class CMFCToolBarMenuButton : public CMFCToolBarButton
 |[CMFCToolBarMenuButton::OnBeforeDrag](#cmfctoolbarmenubutton__onbeforedrag)|Specifies whether the button can be dragged. (Overrides [CMFCToolBarButton::OnBeforeDrag](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__onbeforedrag).)|  
 |[CMFCToolBarMenuButton::OnCalculateSize](#cmfctoolbarmenubutton__oncalculatesize)|Called by the framework to calculate the size of the button for the specified device context and docking state. (Overrides [CMFCToolBarButton::OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__oncalculatesize).)|  
 |[CMFCToolBarMenuButton::OnCancelMode](#cmfctoolbarmenubutton__oncancelmode)|Called by the framework to handle the [WM_CANCELMODE](http://msdn.microsoft.com/library/windows/desktop/ms632615) message. (Overrides [CMFCToolBarButton::OnCancelMode](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__oncancelmode).)|  
-|[CMFCToolBarMenuButton::OnChangeParentWnd](#cmfctoolbarmenubutton__onchangeparentwnd)|Called by the framework when the button is inserted into a new toolbar. (Overrides [CMFCToolBarButton::OnChangeParentWnd]--brokenlink--(../Topic/CMFCToolBarButton%20Class.md#cmfctoolbarbutton__onchangeparentwnd).)|  
+|[CMFCToolBarMenuButton::OnChangeParentWnd](#cmfctoolbarmenubutton__onchangeparentwnd)|Called by the framework when the button is inserted into a new toolbar. (Overrides [CMFCToolBarButton::OnChangeParentWnd](cmfctoolbarbutton-class.md#cmfctoolbarbutton__onchangeparentwnd).)|  
 |[CMFCToolBarMenuButton::OnClick](#cmfctoolbarmenubutton__onclick)|Called by the framework when the user clicks the mouse button. (Overrides [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__onclick).)|  
 |[CMFCToolBarMenuButton::OnClickMenuItem](#cmfctoolbarmenubutton__onclickmenuitem)|Called by the framework when the user selects an item in the pop-up menu.|  
 |[CMFCToolBarMenuButton::OnContextHelp](#cmfctoolbarmenubutton__oncontexthelp)|Called by the framework when the parent toolbar handles a `WM_HELPHITTEST` message. (Overrides [CMFCToolBarButton::OnContextHelp](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__oncontexthelp).)|  
@@ -111,15 +111,15 @@ class CMFCToolBarMenuButton : public CMFCToolBarButton
 ## Remarks  
  A `CMFCToolBarMenuButton` can appear as a menu, a menu item that has a sub-menu, a button that either executes a command or displays a menu, or a button that displays only a menu. You determine the behavior and appearance of the menu button by specifying parameters such as the image, text, menu handle, and command ID that is associated with the button in the constructor `CMFCToolbarMenuButton::CMFCToolbarMenuButton`.  
   
- A custom class derived from the `CMFCToolbarMenuButton` class must use the [DECLARE_SERIAL]--brokenlink--(../Topic/not%20found.md#declare_serial) macro. The [DECLARE_DYNCREATE]--brokenlink--(../Topic/not%20found.md#declare_dyncreate) macro generates an error when the application closes.  
+ A custom class derived from the `CMFCToolbarMenuButton` class must use the [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) macro. The [DECLARE_DYNCREATE](run-time-object-model-services.md#declare_dyncreate) macro generates an error when the application closes.  
   
 ## Example  
  The following example demonstrates how to configure a `CMFCToolBarMenuButton` object. The code illustrates how to specify that the drop-down menu is in palette mode, and specify the ID for the tear-off bar that is created when the user drags the menu button off of a menu bar. This code snippet is part of the [Word Pad sample](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_WordPad#10](../../mfc/reference/codesnippet/CPP/cmfctoolbarmenubutton-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_WordPad#10](../../mfc/reference/codesnippet/cpp/cmfctoolbarmenubutton-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
- [CObject]--brokenlink--(../Topic/CObject%20Class.md)  
+ [CObject](cobject-class.md)  
   
  [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)  
   
@@ -170,7 +170,7 @@ CMFCToolBarMenuButton(
 ### Example  
  The following example demonstrates how to construct an object of the `CMFCToolBarMenuButton` class. This code snippet is part of the [Word Pad sample](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_WordPad#9](../../mfc/reference/codesnippet/CPP/cmfctoolbarmenubutton-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_WordPad#9](../../mfc/reference/codesnippet/cpp/cmfctoolbarmenubutton-class_2.cpp)]  
   
 ##  <a name="cmfctoolbarmenubutton__comparewith"></a>  CMFCToolBarMenuButton::CompareWith  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -244,7 +244,7 @@ virtual CMFCPopupMenu* CreatePopupMenu();
 ### Remarks  
  This method is called by the framework to prepare the display of the drop-down menu associated with the button.  
   
- The default implementation just constructs and returns a new `CMFCPopupMenu` object. Override this method if you want to use a derived type of [CMFCPopupMenu Class]--brokenlink--(../Topic/CMFCPopupMenu%20Class.md) or to perform additional initialization.  
+ The default implementation just constructs and returns a new `CMFCPopupMenu` object. Override this method if you want to use a derived type of [CMFCPopupMenu Class](cmfcpopupmenu-class.md) or to perform additional initialization.  
   
 ##  <a name="cmfctoolbarmenubutton__drawdocumenticon"></a>  CMFCToolBarMenuButton::DrawDocumentIcon  
  Draws a document icon on the menu button.  

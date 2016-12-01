@@ -144,7 +144,7 @@ class CMFCRibbonCategory : public CObject
   
  The following diagram shows a figure of the Home category from the RibbonApp sample application.  
   
- ![CMFCRibbonCategory image](../../mfc/reference/media/cmfcribboncategory.png "CMFCRibbonCategory")  
+ ![CMFCRibbonCategory image](../../mfc/reference/media/cmfcribboncategory.png "cmfcribboncategory")  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -199,7 +199,7 @@ CMFCRibbonPanel* AddPanel(
 ### Example  
  The following example demonstrates how to use the `AddPanel` method in the `CMFCRibbonCategory` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#10](../../mfc/reference/codesnippet/CPP/cmfcribboncategory-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#10](../../mfc/reference/codesnippet/cpp/cmfcribboncategory-class_1.cpp)]  
   
 ##  <a name="cmfcribboncategory__cmfcribboncategory"></a>  CMFCRibbonCategory::CMFCRibbonCategory  
  Constructs and initializes a [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md) object.  
@@ -1152,7 +1152,7 @@ void SetCollapseOrder(
 ### Example  
  The following example demonstrates how to use the `SetCollapseOrder` method in the `CMFCRibbonCategory` class. The example shows how to construct an array for the collapse order, and how to set the collapse order to the ribbon category.  
   
- [!code-cpp[NVC_MFC_RibbonApp#13](../../mfc/reference/codesnippet/CPP/cmfcribboncategory-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#13](../../mfc/reference/codesnippet/cpp/cmfcribboncategory-class_2.cpp)]  
   
 ##  <a name="cmfcribboncategory__setdata"></a>  CMFCRibbonCategory::SetData  
  Sets the user-defined data to be associated with the ribbon category.  

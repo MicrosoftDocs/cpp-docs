@@ -64,7 +64,7 @@ BOOL AFXAPI AfxOleCanExitApp();
  An application should not terminate if there are outstanding references to its objects. The global functions `AfxOleLockApp` and `AfxOleUnlockApp` increment and decrement, respectively, a counter of references to the application's objects. The application should not terminate when this counter is nonzero. If the counter is nonzero, the application's main window is hidden (not destroyed) when the user chooses Close from the system menu or Exit from the File menu. The framework calls this function in **CFrameWnd::OnClose**.  
   
 ### Example  
- [!code-cpp[NVC_MFCAutomation#2](../../mfc/codesnippet/CPP/application-control_1.cpp)]  
+ [!code-cpp[NVC_MFCAutomation#2](../../mfc/codesnippet/cpp/application-control_1.cpp)]  
   
 ##  <a name="afxolegetmessagefilter"></a>  AfxOleGetMessageFilter  
  Retrieves the application's current message filter.  
@@ -80,9 +80,9 @@ COleMessageFilter* AFXAPI  AfxOleGetMessageFilter();
  Call this function to access the current `COleMessageFilter`-derived object, just as you would call `AfxGetApp` to access the current application object.  
   
 ### Example  
- [!code-cpp[NVC_MFCAutomation#3](../../mfc/codesnippet/CPP/application-control_2.cpp)]  
+ [!code-cpp[NVC_MFCAutomation#3](../../mfc/codesnippet/cpp/application-control_2.cpp)]  
   
- [!code-cpp[NVC_MFCAutomation#4](../../mfc/codesnippet/CPP/application-control_3.cpp)]  
+ [!code-cpp[NVC_MFCAutomation#4](../../mfc/codesnippet/cpp/application-control_3.cpp)]  
   
 ##  <a name="afxolegetuserctrl"></a>  AfxOleGetUserCtrl  
  Retrieves the current user-control flag.  
@@ -128,7 +128,7 @@ void  AFXAPI  AfxOleLockApp();
  Call `AfxOleLockApp` from any object that exposes OLE interfaces, if it would be undesirable for that object to be destroyed while still being used by a client application. Also call `AfxOleUnlockApp` in the destructor of any object that calls `AfxOleLockApp` in the constructor. By default, `COleDocument` (and derived classes) automatically lock and unlock the application.  
   
 ### Example  
- [!code-cpp[NVC_MFCAutomation#5](../../mfc/codesnippet/CPP/application-control_4.cpp)]  
+ [!code-cpp[NVC_MFCAutomation#5](../../mfc/codesnippet/cpp/application-control_4.cpp)]  
   
 ##  <a name="afxoleunlockapp"></a>  AfxOleUnlockApp  
  Decrements the framework's count of active objects in the application.  

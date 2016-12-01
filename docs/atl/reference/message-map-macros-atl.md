@@ -84,7 +84,7 @@ ALT_MSG_MAP(msgMapID)
 ### Remarks  
  ATL identifies each message map by a number. The default message map (declared with the `BEGIN_MSG_MAP` macro) is identified by 0. An alternate message map is identified by `msgMapID`.  
   
- Message maps are used to process messages sent to a window. For example, [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) allows you to specify the identifier of a message map in the containing object. [CContainedWindow::WindowProc](ccontainedwindowt-class.md#windowproc) then uses this message map to direct the contained window's messages either to the appropriate handler function or to another message map. For a list of macros that declare handler functions, see [BEGIN_MSG_MAP](#begin_msg_map).  
+ Message maps are used to process messages sent to a window. For example, [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) allows you to specify the identifier of a message map in the containing object. [CContainedWindow::WindowProc](ccontainedwindowt-class.md#ccontainedwindowt__windowproc) then uses this message map to direct the contained window's messages either to the appropriate handler function or to another message map. For a list of macros that declare handler functions, see [BEGIN_MSG_MAP](#begin_msg_map).  
   
  Always begin a message map with `BEGIN_MSG_MAP`. You can then declare subsequent alternate message maps.  
   
@@ -95,11 +95,11 @@ ALT_MSG_MAP(msgMapID)
 ### Example  
  The following example shows the default message map and one alternate message map, each containing one handler function:  
   
- [!code-cpp[NVC_ATL_Windowing#98](../../atl/codesnippet/CPP/message-map-macros-atl_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#98](../../atl/codesnippet/cpp/message-map-macros-atl_1.h)]  
   
  The next example shows two alternate message maps. The default message map is empty.  
   
- [!code-cpp[NVC_ATL_Windowing#99](../../atl/codesnippet/CPP/message-map-macros-atl_2.h)]  
+ [!code-cpp[NVC_ATL_Windowing#99](../../atl/codesnippet/cpp/message-map-macros-atl_2.h)]  
   
 ##  <a name="begin_msg_map"></a>  BEGIN_MSG_MAP  
  Marks the beginning of the default message map.  
@@ -113,7 +113,8 @@ BEGIN_MSG_MAP(theClass)
  [in] The name of the class containing the message map.  
   
 ### Remarks  
- [CWindowImpl::WindowProc](cwindowimpl-class.md#windowproc) uses the default message map to process messages sent to the window. The message map directs messages either to the appropriate handler function or to another message map.  
+ [CWindowImpl::WindowProc](cwindowimpl-class.md#cwindowimpl__windowproc) uses the default message map to process messages sent to the window. The message map directs messages either to the appropriate handler function or to another message map.  
+
   
  The following macros map a message to a handler function. This function must be defined in `theClass`.  
   
@@ -156,17 +157,17 @@ BEGIN_MSG_MAP(theClass)
 |[REFLECTED_NOTIFY_RANGE_CODE_HANDLER](#reflected_notify_range_code_handler)|Maps a reflected **WM_NOTIFY** message to a handler function, based on the notification code and a contiguous range of control identifiers.|  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#102](../../atl/codesnippet/CPP/message-map-macros-atl_3.h)]  
+ [!code-cpp[NVC_ATL_Windowing#102](../../atl/codesnippet/cpp/message-map-macros-atl_3.h)]  
   
  When a `CMyExtWindow` object receives a `WM_PAINT` message, the message is directed to `CMyExtWindow::OnPaint` for the actual processing. If `OnPaint` indicates the message requires further processing, the message will then be directed to the default message map in `CMyBaseWindow`.  
   
  In addition to the default message map, you can define an alternate message map with [ALT_MSG_MAP](#alt_msg_map). Always begin a message map with `BEGIN_MSG_MAP`. You can then declare subsequent alternate message maps. The following example shows the default message map and one alternate message map, each containing one handler function:  
   
- [!code-cpp[NVC_ATL_Windowing#98](../../atl/codesnippet/CPP/message-map-macros-atl_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#98](../../atl/codesnippet/cpp/message-map-macros-atl_1.h)]  
   
  The next example shows two alternate message maps. The default message map is empty.  
   
- [!code-cpp[NVC_ATL_Windowing#99](../../atl/codesnippet/CPP/message-map-macros-atl_2.h)]  
+ [!code-cpp[NVC_ATL_Windowing#99](../../atl/codesnippet/cpp/message-map-macros-atl_2.h)]  
   
  The [END_MSG_MAP](#end_msg_map) macro marks the end of the message map. Note that there is always exactly one instance of `BEGIN_MSG_MAP` and `END_MSG_MAP`.  
   
@@ -238,7 +239,7 @@ CHAIN_MSG_MAP(theChainClass)
  For more information about using message maps in ATL, see [Message Maps](../../atl/message-maps-atl.md).  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#107](../../atl/codesnippet/CPP/message-map-macros-atl_4.h)]  
+ [!code-cpp[NVC_ATL_Windowing#107](../../atl/codesnippet/cpp/message-map-macros-atl_4.h)]  
   
  This example illustrates the following:  
   
@@ -260,7 +261,8 @@ CHAIN_MSG_MAP_DYNAMIC(dynaChainID)
  [in] The unique identifier for an object's message map.  
   
 ### Remarks  
- `CHAIN_MSG_MAP_DYNAMIC` directs messages, at run time, to the default message map in another object. The object and its message map are associated with *dynaChainID*, which you define through [CDynamicChain::SetChainEntry](cdynamicchain-class.md#setchainentry). You must derive your class from `CDynamicChain` in order to use `CHAIN_MSG_MAP_DYNAMIC`. For an example, see the [CDynamicChain](../../atl/reference/cdynamicchain-class.md) overview.  
+ `CHAIN_MSG_MAP_DYNAMIC` directs messages, at run time, to the default message map in another object. The object and its message map are associated with *dynaChainID*, which you define through [CDynamicChain::SetChainEntry](cdynamicchain-class.md#cdynamicchain__setchainentry). You must derive your class from `CDynamicChain` in order to use `CHAIN_MSG_MAP_DYNAMIC`. For an example, see the [CDynamicChain](../../atl/reference/cdynamicchain-class.md) overview.  
+
   
 > [!NOTE]
 >  Always begin a message map with [BEGIN_MSG_MAP](#begin_msg_map). You can then declare subsequent alternate message maps with `ALT_MSG_MAP`. The [END_MSG_MAP](#end_msg_map) macro marks the end of the message map. Every message map must have exactly one instance of `BEGIN_MSG_MAP` and `END_MSG_MAP`.  
@@ -287,7 +289,7 @@ CHAIN_MSG_MAP_MEMBER(theChainMember)
  For more information about using message maps in ATL, see [Message Maps](../../atl/message-maps-atl.md).  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#108](../../atl/codesnippet/CPP/message-map-macros-atl_5.h)]  
+ [!code-cpp[NVC_ATL_Windowing#108](../../atl/codesnippet/cpp/message-map-macros-atl_5.h)]  
   
  This example illustrates the following:  
   
@@ -335,7 +337,7 @@ code,
 ### Remarks  
  `COMMAND_HANDLER` maps a [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) message to the specified handler function, based on the notification code and the control identifier. For example:  
   
- [!code-cpp[NVC_ATL_Windowing#119](../../atl/codesnippet/CPP/message-map-macros-atl_6.h)]  
+ [!code-cpp[NVC_ATL_Windowing#119](../../atl/codesnippet/cpp/message-map-macros-atl_6.h)]  
   
  Any function specified in a `COMMAND_HANDLER` macro must be defined as follows:  
   
@@ -425,7 +427,7 @@ DECLARE_EMPTY_MSG_MAP()
 ### Remarks  
  `DECLARE_EMPTY_MSG_MAP` is a convenience macro that calls the macros [BEGIN_MSG_MAP](#begin_msg_map) and [END_MSG_MAP](#end_msg_map) to create an empty message map:  
   
- [!code-cpp[NVC_ATL_Windowing#122](../../atl/codesnippet/CPP/message-map-macros-atl_7.h)]  
+ [!code-cpp[NVC_ATL_Windowing#122](../../atl/codesnippet/cpp/message-map-macros-atl_7.h)]  
   
 ##  <a name="default_reflection_handler"></a>  DEFAULT_REFLECTION_HANDLER  
  Provides a default handler for the child window (control) that will receive reflected messages; the handler will properly pass unhandled messages to `DefWindowProc`.  
@@ -451,11 +453,11 @@ END_MSG_MAP()
 ### Example  
  The following example shows the default message map and one alternate message map, each containing one handler function:  
   
- [!code-cpp[NVC_ATL_Windowing#98](../../atl/codesnippet/CPP/message-map-macros-atl_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#98](../../atl/codesnippet/cpp/message-map-macros-atl_1.h)]  
   
  The next example shows two alternate message maps. The default message map is empty.  
   
- [!code-cpp[NVC_ATL_Windowing#99](../../atl/codesnippet/CPP/message-map-macros-atl_2.h)]  
+ [!code-cpp[NVC_ATL_Windowing#99](../../atl/codesnippet/cpp/message-map-macros-atl_2.h)]  
   
 ##  <a name="forward_notifications"></a>  FORWARD_NOTIFICATIONS  
  Forwards notification messages to the parent window.  
@@ -500,7 +502,7 @@ MESSAGE_HANDLER(Â
  For more information about using message maps in ATL, see [Message Maps](../../atl/message-maps-atl.md).  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#129](../../atl/codesnippet/CPP/message-map-macros-atl_8.h)]  
+ [!code-cpp[NVC_ATL_Windowing#129](../../atl/codesnippet/cpp/message-map-macros-atl_8.h)]  
   
 ##  <a name="message_range_handler"></a>  MESSAGE_RANGE_HANDLER  
  Similar to [MESSAGE_HANDLER](#message_handler), but maps a range of Windows messages to a single handler function.  
@@ -575,7 +577,7 @@ NOTIFY_HANDLER(Â
  For more information about using message maps in ATL, see [Message Maps](../../atl/message-maps-atl.md).  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#130](../../atl/codesnippet/CPP/message-map-macros-atl_9.h)]  
+ [!code-cpp[NVC_ATL_Windowing#130](../../atl/codesnippet/cpp/message-map-macros-atl_9.h)]  
   
 ##  <a name="notify_id_handler"></a>  NOTIFY_ID_HANDLER  
  Similar to [NOTIFY_HANDLER](#notify_handler), but maps a [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583) message based only on the control identifier.  

@@ -56,7 +56,7 @@ This topic demonstrates how to debug an application that uses C++ Accelerated Ma
   
 -   Read [C++ AMP Overview](../../parallel/amp/cpp-amp-overview.md).  
   
--   Make sure that line numbers are displayed in the text editor. For more information, see [How to: Display Line Numbers in the Editor](http://msdn.microsoft.com/Library/40b38559-b8de-4041-91f2-68986767c976).  
+-   Make sure that line numbers are displayed in the text editor. For more information, see [How to: Display Line Numbers in the Editor](http://msdn.microsoft.com/library/40b38559-b8de-4041-91f2-68986767c976).  
   
 -   Make sure you are running [!INCLUDE[win8](../../build/reference/includes/win8_md.md)] or [!INCLUDE[winserver8](../../build/reference/includes/winserver8_md.md)] to support debugging on the software emulator.  
   
@@ -222,7 +222,7 @@ This topic demonstrates how to debug an application that uses C++ Accelerated Ma
   
 4.  Set breakpoints on the lines of code shown in the following illustration (approximately lines 67 line 70).  
   
-     ![CPU breakpoints](../../parallel/amp/media/campcpubreakpoints.png "CampCpuBreakpoints")  
+     ![CPU breakpoints](../../parallel/amp/media/campcpubreakpoints.png "campcpubreakpoints")  
 CPU breakpoints  
   
 5.  On the menu bar, choose **Debug**, **Start Debugging**.  
@@ -248,7 +248,7 @@ CPU breakpoints
   
 6.  Set a breakpoint at line 30, as shown in the following illustration.  
   
-     ![GPU breakpoints](../../parallel/amp/media/campgpubreakpoints.png "CampGpuBreakpoints")  
+     ![GPU breakpoints](../../parallel/amp/media/campgpubreakpoints.png "campgpubreakpoints")  
 GPU breakpoint  
   
 7.  On the menu bar, choose **Debug**, **Start Debugging**. The breakpoints in the CPU code at lines 67 and 70 are not executed during GPU debugging because those lines of code are executed on the CPU.  
@@ -261,12 +261,13 @@ GPU breakpoint
   
 2.  Dock the GPU Threads window at the bottom of Visual Studio. Choose the **Expand Thread Switch** button to display the tile and thread text boxes. The GPU Threads window shows the total number of active and blocked GPU threads, as shown in the following illustration.  
   
-     ![GPU Threads window with 4 active threads](../../parallel/amp/media/campc.PNG "CampC")  
+     ![GPU Threads window with 4 active threads](../../parallel/amp/media/campc.png "campc")  
 GPU Threads window  
   
      There are 313 tiles allocated for this computation. Each tile contains 32 threads. Because local GPU debugging occurs on a software emulator, there are four active GPU threads. The four threads execute the instructions simultaneously and then move on together to the next instruction.  
   
-     In the GPU threads window, there are four GPU threads active and 28 GPU threads blocked at the [tile_barrier::wait](reference/tile_barrier-class.md#tile_barrier__wait) statement defined at about line 21 (`t_idx.barrier.wait();`). All 32 GPU threads belong to the first tile, `tile[0]`. An arrow points to the row that includes the current thread. To switch to a different thread, use one of the following methods:  
+     In the GPU threads window, there are four GPU threads active and 28 GPU threads blocked at the [tile_barrier::wait](reference/tile-barrier-class.md#tile_barrier__wait_method) statement defined at about line 21 (`t_idx.barrier.wait();`). All 32 GPU threads belong to the first tile, `tile[0]`. An arrow points to the row that includes the current thread. To switch to a different thread, use one of the following methods:  
+
   
     -   In the row for the thread to switch to in the GPU Threads window, open the shortcut menu and choose **Switch To Thread**. If the row represents more than one thread, you will switch to the first thread according to the thread coordinates.  
   
@@ -284,14 +285,15 @@ GPU Threads window
   
 3.  Make sure that **Threads** is selected in the list in the upper-left corner. In the following illustration, the Parallel Stacks window shows a call-stack focused view of the GPU threads that you saw in the GPU Threads window.  
   
-     ![Parallel Stacks window with 4 active threads](../../parallel/amp/media/campd.png "CampD")  
+     ![Parallel Stacks window with 4 active threads](../../parallel/amp/media/campd.png "campd")  
 Parallel Stacks window  
   
-     32 threads went from `_kernel_stub` to the lambda statement in the `parallel_for_each` function call and then to the `sum_kernel_tiled` function, where the parallel reduction occurs. 28 out of the 32 threads have progressed to the [tile_barrier::wait](reference/tile_barrier-class.md#tile_barrier__wait) statement and remain blocked at line 22, whereas the other 4 threads remain active in the `sum_kernel_tiled` function at line 30.  
+     32 threads went from `_kernel_stub` to the lambda statement in the `parallel_for_each` function call and then to the `sum_kernel_tiled` function, where the parallel reduction occurs. 28 out of the 32 threads have progressed to the [tile_barrier::wait](reference/tile-barrier-class.md#tile_barrier__wait_method) statement and remain blocked at line 22, whereas the other 4 threads remain active in the `sum_kernel_tiled` function at line 30.  
+
   
      You can inspect the properties of a GPU thread that are available in the GPU Threads window in the rich DataTip of the Parallel Stacks window. To do this, rest the mouse pointer on the stack frame of **sum_kernel_tiled**. The following illustration shows the DataTip.  
   
-     ![DataTip for Parallel Stacks window](../../parallel/amp/media/campe.png "CampE")  
+     ![DataTip for Parallel Stacks window](../../parallel/amp/media/campe.png "campe")  
 GPU thread DataTip  
   
      For more information about the Parallel Stacks window, see [Using the Parallel Stacks Window](/visualstudio/debugger/using-the-parallel-stacks-window).  
@@ -314,7 +316,7 @@ GPU thread DataTip
   
      Select the **localA[localIdx[0]]** column header to sort the column. The following illustration shows the results of sorting by **localA[localIdx[0]]**.  
   
-     ![Parallel Watch window with sorted results](../../parallel/amp/media/campf.PNG "CampF")  
+     ![Parallel Watch window with sorted results](../../parallel/amp/media/campf.png "campf")  
  Results of sort  
   
      You can export the content in the Parallel Watch window to Excel by choosing the Excel button and then choosing **Open in Excel**. If you have Excel installed on your development computer, this opens an Excel worksheet that contains the content.  
@@ -336,7 +338,7 @@ GPU thread DataTip
   
      The following illustration shows the four active flagged threads in the GPU Threads window.  
   
-     ![GPU Threads window with flagged threads](../../parallel/amp/media/campg.PNG "CampG")  
+     ![GPU Threads window with flagged threads](../../parallel/amp/media/campg.png "campg")  
 Active threads in the GPU Threads window  
   
      The Parallel Watch window and the DataTip of the Parallel stacks window both indicate the flagged threads.  
@@ -345,13 +347,13 @@ Active threads in the GPU Threads window
   
      Choose the Show Flagged Only button on any of the windows or on the **Debug Location** toolbar. The following illustration shows the Show Flagged Only button on the **Debug Location** toolbar.  
   
-     ![Debug Location toolbar with Show Only Flagged icon](../../parallel/amp/media/camph.png "CampH")  
+     ![Debug Location toolbar with Show Only Flagged icon](../../parallel/amp/media/camph.png "camph")  
 Show Flagged Only button  
   
      Now the GPU Threads, Parallel Watch, and Parallel Stacks windows display only the flagged threads.  
   
 ## Freezing and Thawing GPU Threads  
- You can freeze (suspend) and thaw (resume) GPU threads from either the GPU Threads window or the Parallel Watch window. You can freeze and thaw CPU threads the same way; for information, see [How to: Use the Threads Window](http://msdn.microsoft.com/Library/adfbe002-3d7b-42a9-b42a-5ac0903dfc25).  
+ You can freeze (suspend) and thaw (resume) GPU threads from either the GPU Threads window or the Parallel Watch window. You can freeze and thaw CPU threads the same way; for information, see [How to: Use the Threads Window](http://msdn.microsoft.com/library/adfbe002-3d7b-42a9-b42a-5ac0903dfc25).  
   
 ### To freeze and thaw GPU threads  
   
@@ -363,7 +365,7 @@ Show Flagged Only button
   
      The following illustration of the GPU Threads window shows that all four threads are frozen.  
   
-     ![GPU Threads windows showing frozen threads](../../parallel/amp/media/campk.PNG "CampK")  
+     ![GPU Threads windows showing frozen threads](../../parallel/amp/media/campk.png "campk")  
 Frozen threads in the GPU Threads window  
   
      Similarly, the Parallel Watch window shows that all four threads are frozen.  
@@ -378,9 +380,10 @@ Frozen threads in the GPU Threads window
   
 1.  On the shortcut menu for one of the threads in the **GPU Threads** window, choose **Group By**, **Address**.  
   
-     The threads in the GPU Threads window are grouped by address. The address corresponds to the instruction in disassembly where each group of threads is located. 24 threads are at line 22 where the [tile_barrier::wait Method](reference/tile_barrier-class.md#tile_barrier__wait) is executed. 12 threads are at the instruction for the barrier at line 32. Four of these threads are flagged. Eight threads are at the breakpoint at line 30. Four of these threads are frozen. The following illustration shows the grouped threads in the GPU Threads window.  
+     The threads in the GPU Threads window are grouped by address. The address corresponds to the instruction in disassembly where each group of threads is located. 24 threads are at line 22 where the [tile_barrier::wait Method](reference/tile-barrier-class.md#tile_barrier__wait_method) is executed. 12 threads are at the instruction for the barrier at line 32. Four of these threads are flagged. Eight threads are at the breakpoint at line 30. Four of these threads are frozen. The following illustration shows the grouped threads in the GPU Threads window.  
+
   
-     ![GPU Threads window with threads grouped by Address](../../parallel/amp/media/campl.PNG "CampL")  
+     ![GPU Threads window with threads grouped by Address](../../parallel/amp/media/campl.png "campl")  
 Grouped threads in the GPU Threads window  
   
 2.  You can also perform the **Group By** operation by opening the shortcut menu for the data grid of the Parallel Watch window, choosing **Group By**, and then choosing the menu item that corresponds to how you want to group the threads.  
@@ -401,7 +404,7 @@ Grouped threads in the GPU Threads window
 ## See Also  
  [C++ AMP Overview](../../parallel/amp/cpp-amp-overview.md)   
  [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code)   
- [How to: Use the GPU Threads Window](http://msdn.microsoft.com/Library/c647c502-a9f0-48e0-a430-976744a5fa51)   
- [How to: Use the Parallel Watch Window](http://msdn.microsoft.com/Library/28004d9b-420c-48f7-b80e-ab1519802558)   
- [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/LinkID=253987&clcid=0x409)
+ [How to: Use the GPU Threads Window](http://msdn.microsoft.com/library/c647c502-a9f0-48e0-a430-976744a5fa51)   
+ [How to: Use the Parallel Watch Window](http://msdn.microsoft.com/library/28004d9b-420c-48f7-b80e-ab1519802558)   
+ [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/linkid=253987&clcid=0x409)
 

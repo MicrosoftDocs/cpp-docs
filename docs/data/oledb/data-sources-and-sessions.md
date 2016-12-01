@@ -37,7 +37,7 @@ translation.priority.ht:
 # Data Sources and Sessions
 The following figure shows the classes that support connecting to and accessing a data source. Each class is based on a standard OLE DB component implementation.  
   
- ![Data source and session classes](../../data/oledb/media/vcdatasourcesessionclasses.gif "vcDataSourceSessionClasses")  
+ ![Data source and session classes](../../data/oledb/media/vcdatasourcesessionclasses.gif "vcdatasourcesessionclasses")  
 Data Source and Session Classes  
   
  The classes are:  

@@ -53,7 +53,7 @@ A [CStatusBar](../mfc/reference/cstatusbar-class.md) object is a control bar wit
   
  The following figure shows a status bar that displays several indicators.  
   
- ![Status bar](../mfc/media/vc37dy1.gif "vc37DY1")  
+ ![Status bar](../mfc/media/vc37dy1.gif "vc37dy1")  
 A Status Bar  
   
  Like the toolbar, the status-bar object is embedded in its parent frame window and is constructed automatically when the frame window is constructed. The status bar, like all control bars, is destroyed automatically as well when the parent frame is destroyed.  

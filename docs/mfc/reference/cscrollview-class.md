@@ -165,7 +165,7 @@ void FillOutsideRect(
  Use `FillOutsideRect` in your scroll view's `OnEraseBkgnd` handler function to prevent excessive background repainting.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#164](../../mfc/codesnippet/CPP/cscrollview-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#164](../../mfc/codesnippet/cpp/cscrollview-class_1.cpp)]  
   
 ##  <a name="cscrollview__getdevicescrollposition"></a>  CScrollView::GetDeviceScrollPosition  
  Call `GetDeviceScrollPosition` when you need the current horizontal and vertical positions of the scroll boxes in the scroll bars.  
@@ -258,7 +258,7 @@ void ResizeParentToFit(BOOL bShrinkOnly = TRUE);
   
  `ResizeParentToFit` assumes that the size of the view window has been set. If the view window size has not been set when `ResizeParentToFit` is called, you will get an assertion. To ensure that this does not happen, make the following call before calling `ResizeParentToFit`:  
   
- [!code-cpp[NVC_MFCDocView#165](../../mfc/codesnippet/CPP/cscrollview-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#165](../../mfc/codesnippet/cpp/cscrollview-class_2.cpp)]  
   
 ##  <a name="cscrollview__scrolltoposition"></a>  CScrollView::ScrollToPosition  
  Call `ScrollToPosition` to scroll to a given point in the view.  
@@ -294,7 +294,7 @@ void SetScaleToFitSize(SIZE sizeTotal);
   
  `SetScaleToFitSize` assumes that the size of the view window has been set. If the view window size has not been set when `SetScaleToFitSize` is called, you will get an assertion. To ensure that this does not happen, make the following call before calling `SetScaleToFitSize`:  
   
- [!code-cpp[NVC_MFCDocView#165](../../mfc/codesnippet/CPP/cscrollview-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#165](../../mfc/codesnippet/cpp/cscrollview-class_2.cpp)]  
   
 ##  <a name="cscrollview__setscrollsizes"></a>  CScrollView::SetScrollSizes  
  Call `SetScrollSizes` when the view is about to be updated.  
@@ -336,18 +336,18 @@ void SetScrollSizes(
   
  You will typically obtain size information from the view's associated document by calling a document member function, perhaps called `GetMyDocSize`, that you supply with your derived document class. The following code shows this approach:  
   
- [!code-cpp[NVC_MFCDocView#166](../../mfc/codesnippet/CPP/cscrollview-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#166](../../mfc/codesnippet/cpp/cscrollview-class_3.cpp)]  
   
  Alternatively, you might sometimes need to set a fixed size, as in the following code:  
   
- [!code-cpp[NVC_MFCDocView#167](../../mfc/codesnippet/CPP/cscrollview-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDocView#167](../../mfc/codesnippet/cpp/cscrollview-class_4.cpp)]  
   
  You must set the mapping mode to any of the Windows mapping modes except `MM_ISOTROPIC` or `MM_ANISOTROPIC`. If you want to use an unconstrained mapping mode, call the `SetScaleToFitSize` member function instead of `SetScrollSizes`.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#168](../../mfc/codesnippet/CPP/cscrollview-class_5.cpp)]  
+ [!code-cpp[NVC_MFCDocView#168](../../mfc/codesnippet/cpp/cscrollview-class_5.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#169](../../mfc/codesnippet/CPP/cscrollview-class_6.cpp)]  
+ [!code-cpp[NVC_MFCDocView#169](../../mfc/codesnippet/cpp/cscrollview-class_6.cpp)]  
   
 ## See Also  
  [MFC Sample DIBLOOK](../../top/visual-cpp-samples.md)   

@@ -79,7 +79,7 @@ SQL (Structured Query Language) is a way to communicate with a relational databa
   
  If the classes cannot recognize a user-supplied statement in `CRecordset::Open`, it is interpreted as a table name.  
   
- For an explanation of how the framework constructs SQL statements, see [Recordset: How Recordsets Select Records (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md) and [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordset’s-sql-statement-odbc.md).  
+ For an explanation of how the framework constructs SQL statements, see [Recordset: How Recordsets Select Records (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md) and [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).  
   
  SQL databases use data types similar to those used in C and C++. For a discussion of these similarities, see [SQL: SQL and C++ Data Types (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md).  
   
@@ -94,7 +94,7 @@ SQL (Structured Query Language) is a way to communicate with a relational databa
   
  The following topics provide more information about how the database classes use SQL:  
   
--   [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordset’s-sql-statement-odbc.md)  
+-   [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)  
   
 -   [SQL: SQL and C++ Data Types (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)  
   

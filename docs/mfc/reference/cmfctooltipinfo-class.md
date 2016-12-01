@@ -75,7 +75,7 @@ class CMFCToolTipInfo
 ## Example  
  The following example demonstrates how to set the values of the various member variables in the `CMFCToolTipInfo` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#42](../../mfc/reference/codesnippet/CPP/cmfctooltipinfo-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#42](../../mfc/reference/codesnippet/cpp/cmfctooltipinfo-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CMFCToolTipInfo](../../mfc/reference/cmfctooltipinfo-class.md)  

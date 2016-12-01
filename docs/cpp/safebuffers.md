@@ -56,11 +56,11 @@ __declspec( safebuffers )
 >  Buffer security checks provide important security protection and have a negligible affect on performance. Therefore, we recommend that you do not suppress them, except in the rare case where the performance of a function is a critical concern and the function is known to be safe.  
   
 ## Inline Functions  
- A *primary function* can use an [inlining](../cpp/inline-functions-cpp.md) keyword to insert a copy of a *secondary function*. If the __`declspec(safebuffers)` keyword is applied to a function, buffer overrun detection is suppressed for that function. However, inlining affects the \_\_`declspec(safebuffers)` keyword in the following ways.  
+ A *primary function* can use an [inlining](inline-functions-cpp.md) keyword to insert a copy of a *secondary function*. If the __`declspec(safebuffers)` keyword is applied to a function, buffer overrun detection is suppressed for that function. However, inlining affects the \_\_`declspec(safebuffers)` keyword in the following ways.  
   
  Suppose the **/GS** compiler option is specified for both functions, but the primary function specifies the __`declspec(safebuffers)` keyword. The data structures in the secondary function make it eligible for security checks, and the function does not suppress those checks. In this case:  
   
--   Specify the [__forceinline](../cpp/inline-functions-cpp.md) keyword on the secondary function to force the compiler to inline that function regardless of compiler optimizations.  
+-   Specify the [__forceinline](inline-functions-cpp.md) keyword on the secondary function to force the compiler to inline that function regardless of compiler optimizations.  
   
 -   Because the secondary function is eligible for security checks, security checks are also applied to the primary function even though it specifies the __`declspec(safebuffers)` keyword.  
   
@@ -95,5 +95,5 @@ int wmain() {
 ## See Also  
  [__declspec](../cpp/declspec.md)   
  [Keywords](../cpp/keywords-cpp.md)   
- [inline, __inline, \__forceinline](../cpp/inline-functions-cpp.md)   
+ [inline, __inline, \__forceinline](inline-functions-cpp.md)   
  [strict_gs_check](../preprocessor/strict-gs-check.md)

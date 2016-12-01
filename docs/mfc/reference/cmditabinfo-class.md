@@ -82,7 +82,7 @@ class CMDITabInfo
 ## Example  
  The following example demonstrates how to set the values of the various member variables in `CMDITabInfo` class.  
   
- [!code-cpp[NVC_MFC_MDITab#1](../../mfc/reference/codesnippet/CPP/cmditabinfo-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_MDITab#1](../../mfc/reference/codesnippet/cpp/cmditabinfo-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CMDITabInfo](../../mfc/reference/cmditabinfo-class.md)  

@@ -58,7 +58,7 @@ By default, a record view is associated with a single recordset object, whose fi
   
 3.  Empty the combo box of any previous contents.  
   
-4.  Move through all records in the recordset, calling [CComboBox::AddString](../mfc/reference/ccombobox-class.md#ccombobox__addstring.md) for each string from the current record you want to add to the combo box.  
+4.  Move through all records in the recordset, calling [CComboBox::AddString](../mfc/reference/ccombobox-class.md#ccombobox__addstring) for each string from the current record you want to add to the combo box.  
   
 5.  Initialize the selection in the combo box.  
   

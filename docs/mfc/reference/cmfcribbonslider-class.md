@@ -77,7 +77,7 @@ class CMFCRibbonSlider : public CMFCRibbonBaseElement
 ## Example  
  The following example demonstrates how to use various methods in the `CMFCRibbonSlider` class to set the properties of the slider. The example shows how to construct a `CMFCRibbonSlider` object, display zoom buttons, set the current position of the slider control, and set the range of values for the slider control.  
   
- [!code-cpp[NVC_MFC_RibbonApp#12](../../mfc/reference/codesnippet/CPP/cmfcribbonslider-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#12](../../mfc/reference/codesnippet/cpp/cmfcribbonslider-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

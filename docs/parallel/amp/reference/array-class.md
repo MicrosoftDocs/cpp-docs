@@ -71,8 +71,9 @@ friend class array;
 |[array::data Method](#array__data_method)|Returns a pointer to the raw data of the array.|  
 |[array::get_accelerator_view Method](#array__get_accelerator_view_method)|Returns the [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) object that represents the location where the array is allocated. This property can be accessed only on the CPU.|  
 |[array::get_associated_accelerator_view Method](#array__get_associated_accelerator_view_method)|Gets the second [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the [array](../../../parallel/amp/reference/array-class.md) object.|  
-|[array::get_cpu_access_type Method](#array__get_cpu_access_type_method)|Returns the [access_type](access_type%20Enumeration.md) of the array. This method can be accessed only on the CPU.|  
-|[array::get_extent Method](#array__get_extent_method)|Returns the [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object of the array.|  
+|[array::get_cpu_access_type Method](#array__get_cpu_access_type_method)|Returns the [access_type](access_type%20enumeration.md) of the array. This method can be accessed only on the CPU.|  
+|[array::get_extent Method](#array__get_extent_method)|Returns the [extent](../../../parallel/amp/reference/extent-class.md) object of the array.|  
+
 |[array::reinterpret_as Method](#array__reinterpret_as_method)|Returns a one-dimensional array that contains all the elements in the `array` object.|  
 |[array::section Method](#array__section_method)|Returns a subsection of the [array](../../../parallel/amp/reference/array-class.md) object that is at the specified origin and, optionally, that has the specified extent.|  
 |[array::view_as Method](#array__view_as_method)|Returns an [array_view](../../../parallel/amp/reference/array-view-class.md) object that is constructed from the `array` object.|  
@@ -98,7 +99,7 @@ friend class array;
 |----------|-----------------|  
 |[array::accelerator_view Data Member](#array__accelerator_view_data_member)|Gets the [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) object that represents the location where the array is allocated. This property can be accessed only on the CPU.|  
 |[array::associated_accelerator_view Data Member](#array__associated_accelerator_view_data_member)|Gets the second [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the [array](../../../parallel/amp/reference/array-class.md) object.|  
-|[array::cpu_access_type Data Member](#array__cpu_access_type_data_member)|Gets the [access_type](access_type%20Enumeration.md) that represents how the CPU can access the storage of the array.|  
+|[array::cpu_access_type Data Member](#array__cpu_access_type_data_member)|Gets the [access_type](access_type%20enumeration.md) that represents how the CPU can access the storage of the array.|  
 |[array::extent Data Member](#array__extent_data_member)|Gets the extent that defines the shape of the array.|  
   
 ## Remarks  
@@ -467,7 +468,7 @@ array(
  An [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) object that specifies the location of the array.  
   
  `_Cpu_access_type`  
- The desired [access_type](access_type%20Enumeration.md)  for the array on the CPU. This parameter has a default value of `access_type_auto` leaving the CPU `access_type` determination to the runtime. The actual CPU `access_type` for the array can be queried using the `get_cpu_access_type` method.  
+ The desired [access_type](access_type%20enumeration.md)  for the array on the CPU. This parameter has a default value of `access_type_auto` leaving the CPU `access_type` determination to the runtime. The actual CPU `access_type` for the array can be queried using the `get_cpu_access_type` method.  
   
  `_Extent`  
  The extent in each dimension of the array.  
@@ -547,7 +548,7 @@ const value_type* data() const restrict(amp,
  A pointer to the raw data of the array.  
   
 ##  <a name="array__extent_data_member"></a>  array::extent Data Member  
- Gets the [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object that defines the shape of the [array](../../../parallel/amp/reference/array-class.md).  
+ Gets the [extent](../../../parallel/amp/reference/extent-class.md) object that defines the shape of the [array](../../../parallel/amp/reference/array-class.md).  
   
 ```  
 __declspec(property(get= get_extent)) Concurrency::extent<_Rank> extent;  
@@ -585,7 +586,7 @@ access_type get_cpu_access_type() const restrict(cpu);
 ### Return Value  
   
 ##  <a name="array__get_extent_method"></a>  array::get_extent Method  
- Returns the [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object of the [array](../../../parallel/amp/reference/array-class.md).  
+ Returns the [extent](../../../parallel/amp/reference/extent-class.md) object of the [array](../../../parallel/amp/reference/array-class.md).  
   
 ```  
 Concurrency::extent<_Rank> get_extent() const restrict(amp,cpu);
@@ -658,18 +659,18 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
  Returns the element that is at the specified index.  
   
 ```  
-value_type& operator[] (
+value_type& operator[]  (
     const index<_Rank>& _Index) restrict(amp,cpu);
 
  
-const value_type& operator[] (
+const value_type& operator[]  (
     const index<_Rank>& _Index) const restrict(amp,cpu);
 
  
-typename details::_Projection_result_type<value_type,_Rank>::_Result_type operator[](int _I) restrict(amp,cpu);
+typename details::_Projection_result_type<value_type,_Rank>::_Result_type operator[](int _i) restrict(amp,cpu);
 
  
-typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type operator[](int _I) const restrict(amp,cpu);
+typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type operator[](int _i) const restrict(amp,cpu);
 ```  
   
 ### Parameters  
@@ -798,7 +799,7 @@ array_view<const value_type,3> section(
  The least significant component of the extent of this section.  
   
  `_Ext`  
- The [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object that specifies the extent of the section. The origin is 0.  
+ The [extent](../../../parallel/amp/reference/extent-class.md) object that specifies the extent of the section. The origin is 0.  
   
  `_Idx`  
  The [index](../../../parallel/amp/reference/index-class.md) object that specifies the location of the origin. The subsection is the rest of the extent.  
@@ -816,7 +817,7 @@ array_view<const value_type,3> section(
  The rank of the section.  
   
  `_Section_extent`  
- The [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object that specifies the extent of the section.  
+ The [extent](../../../parallel/amp/reference/extent-class.md) object that specifies the extent of the section.  
   
  `_Section_origin`  
  The [index](../../../parallel/amp/reference/index-class.md) object that specifies the location of the origin.  

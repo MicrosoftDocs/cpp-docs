@@ -39,7 +39,7 @@ Whenever a control wishes to notify its container that some action (determined b
   
  The Microsoft Foundation Class Library offers a programming model optimized for firing events. In this model, "event maps" are used to designate which functions fire which events for a particular control. Event maps contain one macro for each event. For example, an event map that fires a stock Click event might look like this:  
   
- [!code-cpp[NVC_MFCAxCtl#16](../../mfc/reference/codesnippet/CPP/event-maps_1.cpp)]  
+ [!code-cpp[NVC_MFCAxCtl#16](../../mfc/reference/codesnippet/cpp/event-maps_1.cpp)]  
   
  The **EVENT_STOCK_CLICK** macro indicates that the control will fire a stock Click event every time it detects a mouse click. For a more detailed listing of other stock events, see the article [ActiveX Controls: Events](../../mfc/mfc-activex-controls-events.md). Macros are also available to indicate custom events.  
   
@@ -127,7 +127,7 @@ EVENT_CUSTOM(pszName, pfnFire,  vtsParams)
 ### Remarks  
  The `vtsParams` parameter is a space-separated list of values from the **VTS_** constants. One or more of these values separated by spaces (not commas) specifies the function's parameter list. For example:  
   
- [!code-cpp[NVC_MFCActiveXControl#13](../../mfc/codesnippet/CPP/event-maps_2.cpp)]  
+ [!code-cpp[NVC_MFCActiveXControl#13](../../mfc/codesnippet/cpp/event-maps_2.cpp)]  
   
  specifies a list containing a 32-bit integer representing an RGB color value, followed by a pointer to the **IFontDisp** interface of an OLE font object.  
   
@@ -194,7 +194,7 @@ EVENT_CUSTOM_ID(
 ### Remarks  
  The `vtsParams` argument is a space-separated list of values from the **VTS_** constants. One or more of these values separated by spaces, not commas, specifies the function's parameter list. For example:  
   
- [!code-cpp[NVC_MFCActiveXControl#13](../../mfc/codesnippet/CPP/event-maps_2.cpp)]  
+ [!code-cpp[NVC_MFCActiveXControl#13](../../mfc/codesnippet/cpp/event-maps_2.cpp)]  
   
  specifies a list containing a 32-bit integer representing an RGB color value, followed by a pointer to the **IFontDisp** interface of an OLE font object.  
   

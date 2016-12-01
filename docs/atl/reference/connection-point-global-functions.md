@@ -78,7 +78,7 @@ HRESULT     AtlAdvise(
  The sink implements the outgoing interface supported by the connection point. The client uses the `pdw` cookie to remove the connection by passing it to [AtlUnadvise](#atlunadvise).  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#91](../../atl/codesnippet/CPP/connection-point-global-functions_1.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#91](../../atl/codesnippet/cpp/connection-point-global-functions_1.cpp)]  
   
 ##  <a name="atlunadvise"></a>  AtlUnadvise  
  Terminates the connection established through [AtlAdvise](#atladvise).  
@@ -107,7 +107,7 @@ HRESULT     AtlUnadvise(
  A standard HRESULT value.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#96](../../atl/codesnippet/CPP/connection-point-global-functions_2.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#96](../../atl/codesnippet/cpp/connection-point-global-functions_2.cpp)]  
   
 ##  <a name="atladvisesinkmap"></a>  AtlAdviseSinkMap  
  Call this function to advise or unadvise all entries in the object's sink event map.  
@@ -131,7 +131,7 @@ HRESULT AtlAdviseSinkMap(
  A standard HRESULT value.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#92](../../atl/codesnippet/CPP/connection-point-global-functions_3.h)]  
+ [!code-cpp[NVC_ATL_Windowing#92](../../atl/codesnippet/cpp/connection-point-global-functions_3.h)]  
   
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)   

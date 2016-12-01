@@ -52,6 +52,7 @@ variable
  [in] The variable to be bound to the bookmark column.  
   
 ## Example  
+
 ```cpp
 class CArtistsBookmark
 {

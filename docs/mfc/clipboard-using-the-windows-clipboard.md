@@ -46,7 +46,7 @@ This topic describes how to use the standard Windows Clipboard API within your M
   
  [Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md) explains how to handle menu commands in your application by mapping the menu command to a handler function. As long as your application does not define handler functions for the Clipboard commands on the Edit menu, they remain disabled. To write handler functions for the Cut and Copy commands, implement selection in your application. To write a handler function for the Paste command, query the Clipboard to see whether it contains data in a format your application can accept. For example, to enable the Copy command, you might write a handler something like the following:  
   
- [!code-cpp[NVC_MFCListView#2](../atl/reference/codesnippet/CPP/clipboard-using-the-windows-clipboard_1.cpp)]  
+ [!code-cpp[NVC_MFCListView#2](../atl/reference/codesnippet/cpp/clipboard-using-the-windows-clipboard_1.cpp)]  
   
  The Cut, Copy, and Paste commands are only meaningful in certain contexts. The Cut and Copy commands should be enabled only when something is selected, and the Paste command only when something is in the Clipboard. You can provide this behavior by defining update handler functions that enable or disable these commands depending on the context. For more information, see [How to Update User-Interface Objects](../mfc/how-to-update-user-interface-objects.md).  
   

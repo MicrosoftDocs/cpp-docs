@@ -143,7 +143,7 @@ CMFCRibbonSeparator(BOOL bIsHoriz = FALSE);
 ### Example  
  The following example demonstrates how to construct an object of the `CMFCRibbonSeparator` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#19](../../mfc/reference/codesnippet/CPP/cmfcribbonseparator-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#19](../../mfc/reference/codesnippet/cpp/cmfcribbonseparator-class_1.cpp)]  
   
 ##  <a name="cmfcribbonseparator__copyfrom"></a>  CMFCRibbonSeparator::CopyFrom  
  A copy method that sets a separator's member variables from another object.  

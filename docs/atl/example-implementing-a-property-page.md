@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Example: Implementing a Property Page
-This example shows how to build a property page that displays (and allows you to change) properties of the [Document Classes](../mfc/document-classes.md) interface. This interface is exposed by documents in Visual Studio's [Common Environment Object Model Examples](http://msdn.microsoft.com/Library/919cdb58-9f6d-45e6-a0f1-9ca8f6e7051f) (although the property page that you'll create won't care where the objects it manipulates come from as long as they support the correct interface).  
+This example shows how to build a property page that displays (and allows you to change) properties of the [Document Classes](../mfc/document-classes.md) interface. This interface is exposed by documents in Visual Studio's [Common Environment Object Model Examples](http://msdn.microsoft.com/library/919cdb58-9f6d-45e6-a0f1-9ca8f6e7051f) (although the property page that you'll create won't care where the objects it manipulates come from as long as they support the correct interface).  
   
  The example is based on the [ATLPages sample](../top/visual-cpp-samples.md).  
   
@@ -76,7 +76,7 @@ This example shows how to build a property page that displays (and allows you to
 ##  <a name="vcconediting_the_dialog_resource"></a> Editing the Dialog Resource  
  Now that your property page has been generated, you'll need to add a few controls to the dialog resource representing your page. Add an edit box, a static text control, and a check box and set their IDs as shown below:  
   
- ![Editing a dialog resource](../atl/media/ppgresourcelabeled.gif "PPGResourceLabeled")  
+ ![Editing a dialog resource](../atl/media/ppgresourcelabeled.gif "ppgresourcelabeled")  
   
  These controls will be used to display the file name of the document and its read-only status.  
   
@@ -86,7 +86,7 @@ This example shows how to build a property page that displays (and allows you to
 ##  <a name="vcconadding_message_handlers"></a> Adding Message Handlers  
  With the controls in place, you can add message handlers to update the dirty status of the page when the value of either of the controls changes:  
   
- [!code-cpp[NVC_ATL_Windowing#73](../atl/codesnippet/CPP/example-implementing-a-property-page_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#73](../atl/codesnippet/cpp/example-implementing-a-property-page_1.h)]  
   
  This code responds to changes made to the edit control or check box by calling [IPropertyPageImpl::SetDirty](../atl/reference/ipropertypageimpl-class.md#ipropertypageimpl__setdirty), which informs the page site that the page has changed. Typically the page site will respond by enabling or disabling an **Apply** button on the property page frame.  
   
@@ -96,16 +96,16 @@ This example shows how to build a property page that displays (and allows you to
 ##  <a name="vcconhousekeeping"></a> Housekeeping  
  Now add a couple of `#import` statements to DocProperties.h so that the compiler knows about the **Document** interface:  
   
- [!code-cpp[NVC_ATL_Windowing#74](../atl/codesnippet/CPP/example-implementing-a-property-page_2.h)]  
+ [!code-cpp[NVC_ATL_Windowing#74](../atl/codesnippet/cpp/example-implementing-a-property-page_2.h)]  
   
  You'll also need to refer to the `IPropertyPageImpl` base class; add the following `typedef` to the **CDocProperties** class:  
   
- [!code-cpp[NVC_ATL_Windowing#75](../atl/codesnippet/CPP/example-implementing-a-property-page_3.h)]  
+ [!code-cpp[NVC_ATL_Windowing#75](../atl/codesnippet/cpp/example-implementing-a-property-page_3.h)]  
   
 ##  <a name="vcconoverriding_ipropertypageimpl_setobjects"></a> Overriding IPropertyPageImpl::SetObjects  
  The first `IPropertyPageImpl` method that you need to override is [SetObjects](../atl/reference/ipropertypageimpl-class.md#ipropertypageimpl__setobjects). Here you'll add code to check that only a single object has been passed and that it supports the **Document** interface that you're expecting:  
   
- [!code-cpp[NVC_ATL_Windowing#76](../atl/codesnippet/CPP/example-implementing-a-property-page_4.h)]  
+ [!code-cpp[NVC_ATL_Windowing#76](../atl/codesnippet/cpp/example-implementing-a-property-page_4.h)]  
   
 > [!NOTE]
 >  It makes sense to support only a single object for this page because you will allow the user to set the file name of the object — only one file can exist at any one location.  
@@ -115,21 +115,21 @@ This example shows how to build a property page that displays (and allows you to
   
  In this case you should add the following members to the class since you'll also use the initial property values for comparison when users of the page apply their changes:  
   
- [!code-cpp[NVC_ATL_Windowing#77](../atl/codesnippet/CPP/example-implementing-a-property-page_5.h)]  
+ [!code-cpp[NVC_ATL_Windowing#77](../atl/codesnippet/cpp/example-implementing-a-property-page_5.h)]  
   
- The base class implementation of the [Activate](../atl/reference/ipropertypageimpl-class.md#ipropertypageimpl__activate.md) method is responsible for creating the dialog box and its controls, so you can override this method and add your own initialization after calling the base class:  
+ The base class implementation of the [Activate](../atl/reference/ipropertypageimpl-class.md#ipropertypageimpl__activate) method is responsible for creating the dialog box and its controls, so you can override this method and add your own initialization after calling the base class:  
   
- [!code-cpp[NVC_ATL_Windowing#78](../atl/codesnippet/CPP/example-implementing-a-property-page_6.h)]  
+ [!code-cpp[NVC_ATL_Windowing#78](../atl/codesnippet/cpp/example-implementing-a-property-page_6.h)]  
   
  This code uses the COM methods of the **Document** interface to get the properties that you're interested in. It then uses the Win32 API wrappers provided by [CDialogImpl](../atl/reference/cdialogimpl-class.md) and its base classes to display the property values to the user.  
   
 ##  <a name="vcconoverride_ipropertypageimpl_apply"></a> Overriding IPropertyPageImpl::Apply  
  When users want to apply their changes to the objects, the property page site will call the [Apply](../atl/reference/ipropertypageimpl-class.md#ipropertypageimpl__apply) method. This is the place to do the reverse of the code in **Activate** — whereas **Activate** took values from the object and pushed them into the controls on the property page, **Apply** takes values from the controls on the property page and pushes them into the object.  
   
- [!code-cpp[NVC_ATL_Windowing#79](../atl/codesnippet/CPP/example-implementing-a-property-page_7.h)]  
+ [!code-cpp[NVC_ATL_Windowing#79](../atl/codesnippet/cpp/example-implementing-a-property-page_7.h)]  
   
 > [!NOTE]
->  The check against [m_bDirty](../atl/reference/ipropertypageimpl-class.md#ipropertypageimpl__m_bDirty.md) at the beginning of this implementation is an initial check to avoid unnecessary updates of the objects if **Apply** is called more than once. There are also checks against each of the property values to ensure that only changes result in a method call to the **Document**.  
+>  The check against [m_bDirty](../atl/reference/ipropertypageimpl-class.md#ipropertypageimpl__m_bdirty) at the beginning of this implementation is an initial check to avoid unnecessary updates of the objects if **Apply** is called more than once. There are also checks against each of the property values to ensure that only changes result in a method call to the **Document**.  
   
 > [!NOTE]
 > **Document** exposes **FullName** as a read-only property. To update the file name of the document based on changes made to the property page, you have to use the **Save** method to save the file with a different name. Thus, the code in a property page doesn't have to limit itself to getting or setting properties.  
@@ -148,7 +148,7 @@ This example shows how to build a property page that displays (and allows you to
   
  Implement the method as shown below:  
   
- [!code-cpp[NVC_ATL_Windowing#80](../atl/codesnippet/CPP/example-implementing-a-property-page_8.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#80](../atl/codesnippet/cpp/example-implementing-a-property-page_8.cpp)]  
   
 ##  <a name="vcconcreating_a_macro"></a> Creating a Macro  
  Once you've built the project, you can test the property page and the helper object using a simple macro that you can create and run in the Visual Studio development environment. This macro will create a helper object, then call its **ShowPage** method using the ProgID of the **DocProperties** property page and the **IUnknown** pointer of the document currently active in the Visual Studio editor. The code you need for this macro is shown below:  

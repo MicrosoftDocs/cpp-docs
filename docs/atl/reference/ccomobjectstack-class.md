@@ -80,7 +80,7 @@ template <class  Base>  class CComObjectStack
   
  The following example shows how to create a COM object used inside a function:  
   
- [!code-cpp[NVC_ATL_COM#42](../../atl/codesnippet/CPP/ccomobjectstack-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_COM#42](../../atl/codesnippet/cpp/ccomobjectstack-class_1.cpp)]  
   
  The temporary object `Tempobj` is pushed onto the stack and automatically disappears when the function finishes.  
   
@@ -123,7 +123,7 @@ CComObjectStack();
 ```  
   
 ### Remarks  
- Frees all allocated resources and calls [FinalRelease](ccomobjectrootex-class.md#finalrelease).  
+ Frees all allocated resources and calls [FinalRelease](ccomobjectrootex-class.md#ccomobjectrootex__finalrelease).  
   
 ##  <a name="ccomobjectstack__m_hresfinalconstruct"></a>  CComObjectStack::m_hResFinalConstruct  
  Contains the `HRESULT` returned from calling `FinalConstruct` during construction of the `CComObjectStack` object.  

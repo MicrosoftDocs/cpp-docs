@@ -336,7 +336,7 @@ BOOL DrawShadow(
 ### Example  
  The following example demonstrates how to use the `DrawShadow` method of the `CDrawingManager` class. This code snippet is part of the [Prop Sheet Demo sample](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_PropSheetDemo#1](../../mfc/reference/codesnippet/CPP/cdrawingmanager-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_PropSheetDemo#1](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_1.cpp)]  
   
 ##  <a name="cdrawingmanager__fill4colorsgradient"></a>  CDrawingManager::Fill4ColorsGradient  
  Fills a rectangular area with two color gradients.  
@@ -414,7 +414,7 @@ void FillGradient(
 ### Example  
  The following example demonstrates how to use the `FillGradient` method of the `CDrawingManager` class. This code snippet is part of the [MS Office 2007 Demo sample](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_MSOffice2007Demo#12](../../mfc/reference/codesnippet/CPP/cdrawingmanager-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_MSOffice2007Demo#12](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_2.cpp)]  
   
 ##  <a name="cdrawingmanager__fillgradient2"></a>  CDrawingManager::FillGradient2  
  Fills a rectangular area with a specified color gradient.  
@@ -446,7 +446,7 @@ void FillGradient2 (
 ### Example  
  The following example demonstrates how to use the `FillGradient2` method of the `CDrawingManager` class. This code snippet is part of the [New Controls sample](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_NewControls#37](../../mfc/reference/codesnippet/CPP/cdrawingmanager-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_NewControls#37](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_3.cpp)]  
   
 ##  <a name="cdrawingmanager__grayrect"></a>  CDrawingManager::GrayRect  
  Fills a rectangle with a specified gray color.  
@@ -512,7 +512,7 @@ BOOL HighlightRect(
  `TRUE` if the method is successful; otherwise `FALSE`.  
   
 ### Remarks  
- If `nPercentage` is between 0 and 99, `HighlightRect` uses the alpha blending algorithm. For more information about alpha blending, see [Alpha Blending Lines and Fills](http://msdn.microsoft.com/Library/5440f48c-3ac9-44c3-b170-c1c110bdbab8). If `nPercentage` is -1, this method uses the default highlight level. If `nPercentage` is 100, this method does nothing and returns `TRUE`.  
+ If `nPercentage` is between 0 and 99, `HighlightRect` uses the alpha blending algorithm. For more information about alpha blending, see [Alpha Blending Lines and Fills](http://msdn.microsoft.com/library/5440f48c-3ac9-44c3-b170-c1c110bdbab8). If `nPercentage` is -1, this method uses the default highlight level. If `nPercentage` is 100, this method does nothing and returns `TRUE`.  
   
  The method uses the parameter `nTolerance` to determine whether to highlight the rectangular area. To highlight the rectangle, the difference between the background color of your application and `clrTransparent` must be less than `nTolerance` in each color component (red, green, and blue).  
   
@@ -540,7 +540,7 @@ static COLORREF __stdcall HLStoRGB_ONE(
  The RGB representation of the HLS color provided.  
   
 ### Remarks  
- A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/LinkID=119126).  
+ A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/linkid=119126).  
   
  This method and the `CDrawingManager::HLStoRGB_TWO` method perform the same operation, but require different values for the `H` parameter. In this method, `H` is a percentage of the circle. In the `CDrawingManager::HLStoRGB_TWO` method, `H` is a degree value between 0 and 360, which both represent red. For example, with `HLStoRGB_ONE`, a value of 0.25 for `H` is equivalent to a value of 90 with `HLStoRGB_TWO`.  
   
@@ -568,7 +568,7 @@ static COLORREF __stdcall HLStoRGB_TWO(
  The RGB representation of the HLS color provided.  
   
 ### Remarks  
- A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/LinkID=119126).  
+ A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/linkid=119126).  
   
  This method and the [CDrawingManager::HLStoRGB_ONE](#cdrawingmanager__hlstorgb_one) method perform the same operation, but require different values for the `H` parameter. In this method, `H` is a degree value between 0 and 360, which both represent red. In the [CDrawingManager::HLStoRGB_ONE](#cdrawingmanager__hlstorgb_one) method, `H` is a percentage of the circle. For example, with `HLStoRGB_ONE`, a value of 0.25 for `H` is equivalent to a value of 90 with `HLStoRGB_TWO`.  
   
@@ -595,7 +595,7 @@ static COLORREF __stdcall HSVtoRGB(
  The RGB representation of the HSV color provided.  
   
 ### Remarks  
- A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/LinkID=119126).  
+ A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/linkid=119126).  
   
 ##  <a name="cdrawingmanager__huetorgb"></a>  CDrawingManager::HuetoRGB  
  Converts a hue value to a red, green, or blue component.  
@@ -766,7 +766,7 @@ static void __stdcall RGBtoHSL(
 |[out] `L`|A pointer to a double where the method stores the lightness for the color.|  
   
 ### Remarks  
- A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/LinkID=119126).  
+ A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/linkid=119126).  
   
  The returned value for `H` is represented as a fraction between 0 and 1 where both 0 and 1 represent red. The returned values for `S` and `L` are numbers between 0 and 1.  
   
@@ -795,7 +795,7 @@ static void __stdcall RGBtoHSV(
  A pointer to a double where this method stores the resulting value for the color.  
   
 ### Remarks  
- A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/LinkID=119126).  
+ A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/linkid=119126).  
   
  The returned value for `H` is a number between 0 and 360 where both 0 and 360 indicate red. The return values for `S` and `V` are numbers between 0 and 1.  
   

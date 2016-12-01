@@ -83,7 +83,7 @@ The standard relationship among a document, its view, and its frame window is de
   
  The following figure, divided into parts a, b, and c, shows the three user-interface models in the order presented above.  
   
- ![Multiple&#45;view user interfaces](../mfc/media/vc37a71.gif "vc37A71")  
+ ![Multiple&#45;view user interfaces](../mfc/media/vc37a71.gif "vc37a71")  
 Multiple-View User Interfaces  
   
  The framework provides these models by implementing the New Window command and by providing class [CSplitterWnd](../mfc/reference/csplitterwnd-class.md), as discussed in [Splitter Windows](#_core_splitter_windows). You can implement other models using these as your starting point. For sample programs that illustrate different configurations of views, frame windows, and splitters, see [MFC Samples](../top/visual-cpp-samples.md).  

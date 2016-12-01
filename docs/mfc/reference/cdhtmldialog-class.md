@@ -276,7 +276,7 @@ void DDX_DHtml_AxControl(
  The data member, of type `VARIANT`, [COleVariant](../../mfc/reference/colevariant-class.md), or [CComVariant](../../atl/reference/ccomvariant-class.md), that holds the value exchanged with the ActiveX control property.  
   
 ### Example  
- [!code-cpp[NVC_MFCHtmlHttp#1](../../mfc/reference/codesnippet/CPP/cdhtmldialog-class_1.cpp)]  
+ [!code-cpp[NVC_MFCHtmlHttp#1](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_1.cpp)]  
   
 ##  <a name="cdhtmldialog__ddx_dhtml_checkbox"></a>  CDHtmlDialog::DDX_DHtml_CheckBox  
  Exchanges data between a member variable and a check box on an HTML page.  
@@ -299,7 +299,7 @@ void DDX_DHtml_CheckBox(
  The value being exchanged.  
   
 ### Example  
- [!code-cpp[NVC_MFCHtmlHttp#2](../../mfc/reference/codesnippet/CPP/cdhtmldialog-class_2.cpp)]  
+ [!code-cpp[NVC_MFCHtmlHttp#2](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_2.cpp)]  
   
 ##  <a name="cdhtmldialog__ddx_dhtml_elementtext"></a>  CDHtmlDialog::DDX_DHtml_ElementText  
  Exchanges data between a member variable and any HTML element property on an HTML page.  
@@ -448,7 +448,7 @@ void DDX_DHtml_SelectValue(
  The value being exchanged.  
   
 ### Example  
- [!code-cpp[NVC_MFCHtmlHttp#3](../../mfc/reference/codesnippet/CPP/cdhtmldialog-class_3.cpp)]  
+ [!code-cpp[NVC_MFCHtmlHttp#3](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_3.cpp)]  
   
 ##  <a name="cdhtmldialog__destroymodeless"></a>  CDHtmlDialog::DestroyModeless  
  Detaches a modeless dialog box from the `CDHtmlDialog` object and destroys the object.  
@@ -679,7 +679,7 @@ HRESULT GetElementInterface(
  A standard `HRESULT` value.  
   
 ### Example  
- [!code-cpp[NVC_MFCHtmlHttp#4](../../mfc/reference/codesnippet/CPP/cdhtmldialog-class_4.cpp)]  
+ [!code-cpp[NVC_MFCHtmlHttp#4](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_4.cpp)]  
   
 ##  <a name="cdhtmldialog__getelementproperty"></a>  CDHtmlDialog::GetElementProperty  
  Retrieves the value of the property identified by `dispid` from the HTML element identified by `szElementId`.  
@@ -848,7 +848,7 @@ UINT m_nHtmlResID;
 ```  
   
 ### Example  
- [!code-cpp[NVC_MFCHtmlHttp#5](../../mfc/reference/codesnippet/CPP/cdhtmldialog-class_5.cpp)]  
+ [!code-cpp[NVC_MFCHtmlHttp#5](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_5.cpp)]  
   
 ##  <a name="cdhtmldialog__m_pbrowserapp"></a>  CDHtmlDialog::m_pBrowserApp  
  A pointer to a Web browser application.  
@@ -879,7 +879,7 @@ LPTSTR m_szHtmlResID;
 ```  
   
 ### Example  
- [!code-cpp[NVC_MFCHtmlHttp#6](../../mfc/reference/codesnippet/CPP/cdhtmldialog-class_6.cpp)]  
+ [!code-cpp[NVC_MFCHtmlHttp#6](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_6.cpp)]  
   
 ##  <a name="cdhtmldialog__navigate"></a>  CDHtmlDialog::Navigate  
  Navigates to the resource identified by the URL that is specified by `lpszURL`.  

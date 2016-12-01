@@ -208,9 +208,9 @@ CDatabase();
 ### Example  
  This example illustrates using `CDatabase` in a `CDocument`-derived class.  
   
- [!code-cpp[NVC_MFCDatabase#9](../../mfc/codesnippet/CPP/cdatabase-class_1.h)]  
+ [!code-cpp[NVC_MFCDatabase#9](../../mfc/codesnippet/cpp/cdatabase-class_1.h)]  
   
- [!code-cpp[NVC_MFCDatabase#10](../../mfc/codesnippet/CPP/cdatabase-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#10](../../mfc/codesnippet/cpp/cdatabase-class_2.cpp)]  
   
 ##  <a name="cdatabase__close"></a>  CDatabase::Close  
  Call this member function if you want to disconnect from a data source.  
@@ -225,7 +225,7 @@ virtual void Close();
  All pending `AddNew` or **Edit** statements of recordsets using the database are canceled, and all pending transactions are rolled back. Any recordsets dependent on the `CDatabase` object are left in an undefined state.  
   
 ### Example  
- [!code-cpp[NVC_MFCDatabase#12](../../mfc/codesnippet/CPP/cdatabase-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#12](../../mfc/codesnippet/cpp/cdatabase-class_3.cpp)]  
   
 ##  <a name="cdatabase__committrans"></a>  CDatabase::CommitTrans  
  Call this member function upon completing transactions.  
@@ -264,7 +264,7 @@ void ExecuteSQL(LPCTSTR lpszSQL);
  Most of your commands for a data source are issued through recordset objects, which support commands for selecting data, inserting new records, deleting records, and editing records. However, not all ODBC functionality is directly supported by the database classes, so you may at times need to make a direct SQL call with `ExecuteSQL`.  
   
 ### Example  
- [!code-cpp[NVC_MFCDatabase#13](../../mfc/codesnippet/CPP/cdatabase-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#13](../../mfc/codesnippet/cpp/cdatabase-class_4.cpp)]  
   
 ##  <a name="cdatabase__getbookmarkpersistence"></a>  CDatabase::GetBookmarkPersistence  
  Call this member function to determine the persistence of bookmarks on a recordset object after certain operations.  
@@ -394,7 +394,7 @@ BOOL IsOpen() const;
  Under some circumstances, however, you may need to use the handle directly. For example, if you need to call ODBC API functions directly rather than through class `CDatabase`, you may need a connection handle to pass as a parameter. See the code example below.  
   
 ### Example  
- [!code-cpp[NVC_MFCDatabase#15](../../mfc/codesnippet/CPP/cdatabase-class_5.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#15](../../mfc/codesnippet/cpp/cdatabase-class_5.cpp)]  
   
 ##  <a name="cdatabase__onsetoptions"></a>  CDatabase::OnSetOptions  
  The framework calls this member function when directly executing a SQL statement with the `ExecuteSQL` member function.  
@@ -465,7 +465,7 @@ virtual BOOL Open(
  It is possible for a connection attempt to time out if, for example, the DBMS host is unavailable. If the connection attempt fails, **Open** throws a `CDBException`.  
   
 ### Example  
- [!code-cpp[NVC_MFCDatabase#14](../../mfc/codesnippet/CPP/cdatabase-class_6.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#14](../../mfc/codesnippet/cpp/cdatabase-class_6.cpp)]  
   
 ##  <a name="cdatabase__openex"></a>  CDatabase::OpenEx  
  Call this member function to initialize a newly constructed `CDatabase` object.  
@@ -508,7 +508,7 @@ virtual BOOL OpenEx(
  It is possible for a connection attempt to time out if, for example, the DBMS host is unavailable. If the connection attempt fails, `OpenEx` throws a `CDBException`.  
   
 ### Example  
- [!code-cpp[NVC_MFCDatabase#11](../../mfc/codesnippet/CPP/cdatabase-class_7.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#11](../../mfc/codesnippet/cpp/cdatabase-class_7.cpp)]  
   
 ##  <a name="cdatabase__rollback"></a>  CDatabase::Rollback  
  Call this member function to reverse the changes made during a transaction.  

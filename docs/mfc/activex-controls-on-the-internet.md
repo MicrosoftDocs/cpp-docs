@@ -116,13 +116,13 @@ ActiveX controls are the updated version of the OLE control specification. Contr
   
      The code excerpt below is a simple example of progressively displaying data in an edit control. Note the use of flag **BSCF_FIRSTDATANOTIFICATION** to clear the edit control.  
   
-     [!code-cpp[NVC_MFCActiveXControl#1](../mfc/codesnippet/CPP/activex-controls-on-the-internet_1.cpp)]  
+     [!code-cpp[NVC_MFCActiveXControl#1](../mfc/codesnippet/cpp/activex-controls-on-the-internet_1.cpp)]  
   
      Note that you must include AFXCMN.H to use the `CListCtrl` class.  
   
 4.  When your control's overall state changes (for example, from loading to initialized or user interactive), call `COleControl::InternalSetReadyState`. If your control has only one data path property, you can add code on **BSCF_LASTDATANOTIFICATION** to notify the container that your download is complete. For example:  
   
-     [!code-cpp[NVC_MFCActiveXControl#2](../mfc/codesnippet/CPP/activex-controls-on-the-internet_2.cpp)]  
+     [!code-cpp[NVC_MFCActiveXControl#2](../mfc/codesnippet/cpp/activex-controls-on-the-internet_2.cpp)]  
   
 5.  Override `OnProgress`. In `OnProgress`, you are passed a number showing the maximum range and a number showing how far along the current download is. You can use these numbers to display status such as percent complete to the user.  
   
@@ -138,19 +138,19 @@ ActiveX controls are the updated version of the OLE control specification. Contr
   
 4.  Declare a member variable of your `CDataPathProperty`-derived class to your ActiveX control class.  
   
-     [!code-cpp[NVC_MFCActiveXControl#3](../mfc/codesnippet/CPP/activex-controls-on-the-internet_3.h)]  
+     [!code-cpp[NVC_MFCActiveXControl#3](../mfc/codesnippet/cpp/activex-controls-on-the-internet_3.h)]  
   
 5.  Implement the **Get/Set** methods. For **Get**, return the string. For `Set`, load the property and call `SetModifiedFlag`.  
   
-     [!code-cpp[NVC_MFCActiveXControl#4](../mfc/codesnippet/CPP/activex-controls-on-the-internet_4.cpp)]  
+     [!code-cpp[NVC_MFCActiveXControl#4](../mfc/codesnippet/cpp/activex-controls-on-the-internet_4.cpp)]  
   
 6.  In [DoPropExchange](../mfc/reference/colecontrol-class.md#colecontrol__dopropexchange), add the following line:  
   
-     [!code-cpp[NVC_MFCActiveXControl#5](../mfc/codesnippet/CPP/activex-controls-on-the-internet_5.cpp)]  
+     [!code-cpp[NVC_MFCActiveXControl#5](../mfc/codesnippet/cpp/activex-controls-on-the-internet_5.cpp)]  
   
 7.  Override [ResetData](../mfc/reference/cdatapathproperty-class.md#cdatapathproperty__resetdata) to notify the property to reset its control by adding this line:  
   
-     [!code-cpp[NVC_MFCActiveXControl#6](../mfc/codesnippet/CPP/activex-controls-on-the-internet_6.cpp)]  
+     [!code-cpp[NVC_MFCActiveXControl#6](../mfc/codesnippet/cpp/activex-controls-on-the-internet_6.cpp)]  
   
 ## Deciding Whether to Derive from CDataPathProperty or CCachedDataPathProperty  
  The previous example describes steps for deriving your control's property from `CDataPathProperty`. This is a good choice if you are downloading real-time data that frequently changes, and for which you do not need to keep all the data, but only the current value. An example is a stock ticker control.  
@@ -161,7 +161,7 @@ ActiveX controls are the updated version of the OLE control specification. Contr
   
  In your ActiveX control class, you can use this memory mapped file in `OnDraw` to display the data. In your ActiveX control `CCachedDataPathProperty`-derived class, override the member function `OnDataAvailable` and invalidate the control, after calling the base class implementation.  
   
- [!code-cpp[NVC_MFCActiveXControl#7](../mfc/codesnippet/CPP/activex-controls-on-the-internet_7.cpp)]  
+ [!code-cpp[NVC_MFCActiveXControl#7](../mfc/codesnippet/cpp/activex-controls-on-the-internet_7.cpp)]  
   
 ## Downloading Data Asynchronously Using ActiveX Controls  
  Downloading data over a network should be done asynchronously. The advantage of doing so is that if a large amount of data is transferred or if the connection is slow, the download process will not block other processes on the client.  
@@ -212,7 +212,7 @@ ActiveX controls are the updated version of the OLE control specification. Contr
   
  If you are adding asynchronous property support to an existing control, you will need to add the ready state property and the `ReadyStateChange` event yourself. In the constructor for your control, add:  
   
- [!code-cpp[NVC_MFCActiveXControl#8](../mfc/codesnippet/CPP/activex-controls-on-the-internet_8.cpp)]  
+ [!code-cpp[NVC_MFCActiveXControl#8](../mfc/codesnippet/cpp/activex-controls-on-the-internet_8.cpp)]  
   
  You will update the ready state as your code is downloaded by calling [COleControl::InternalSetReadyState](../mfc/reference/colecontrol-class.md#colecontrol__internalsetreadystate). One place you could call `InternalSetReadyState` is from the `OnProgress` override of `CDataPathProperty`-derived class.  
   

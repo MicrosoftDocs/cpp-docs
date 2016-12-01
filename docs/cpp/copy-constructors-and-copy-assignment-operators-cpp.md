@@ -69,12 +69,10 @@ b = a;
   
 -   By using the assignment operator `operator=` together with a reference to the class type as the return type and the parameter that is passed by `const` reference—for example `ClassName& operator=(const ClassName& x);`.  
   
--   By using the copy constructor. For more information about the copy constructor, see [Rules for Declaring Constructors](../misc/rules-for-declaring-constructors.md).  
+-   By using the copy constructor.   
   
  If you do not declare a copy constructor, the compiler generates a member-wise copy constructor for you.  If you do not declare a copy assignment operator, the compiler generates a member-wise copy assignment operator for you. Declaring a copy constructor does not suppress the compiler-generated copy assignment operator, nor vice versa. If you implement either one, we recommend that you also implement the other one so that the meaning of the code is clear.  
-  
- Member-wise assignment is covered in more detail in [(NOTINBUILD) Memberwise Assignment and Initialization](http://msdn.microsoft.com/en-us/94048213-8b49-4416-8069-b1b7a6f271f9).  
-  
+   
  The copy constructor takes an argument of type *class-name***&**, where *class-name* is the name of the class for which the constructor is defined. For example:  
   
 ```cpp  
@@ -108,5 +106,3 @@ int main()
   
  For more information about overloaded assignment operators, see [Assignment](../cpp/assignment.md).  
   
-## See Also  
- [Special Member Functions](../misc/special-member-functions-cpp.md)

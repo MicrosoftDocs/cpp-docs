@@ -71,7 +71,7 @@ class CMFCImagePaintArea : public CButton
 ## Example  
  The following example demonstrates how to construct an object of the `CMFCImagePaintArea` class, set the current drawing color, set the current drawing mode, and set the bitmap image for the picture area.  
   
- [!code-cpp[NVC_MFC_RibbonApp#37](../../mfc/reference/codesnippet/CPP/cmfcimagepaintarea-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#37](../../mfc/reference/codesnippet/cpp/cmfcimagepaintarea-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -111,7 +111,7 @@ IMAGE_EDIT_MODE GetMode() const;
 ```  
   
 ### Return Value  
- An `IMAGE_EDIT_MODE` value that specifies the current drawing mode.  
+ An [IMAGE_EDIT_MODE](cmfcimagepaintarea-image-edit-mode-enumeration.md) value that specifies the current drawing mode.  
   
 ##  <a name="cmfcimagepaintarea__setbitmap"></a>  CMFCImagePaintArea::SetBitmap  
  Sets the bitmap image for the picture area.  
@@ -147,7 +147,7 @@ void SetColor(COLORREF color);
 ### Remarks  
  When you select a color from the image editor palette bar or color picker, the framework calls this method to update the current drawing color. The initial drawing color is black (a `COLORREF` value of 0).  
   
- The drawing color is used by the image editor dialog box for all drawing modes except for `IMAGE_EDIT_MODE_COLOR`. For more information about drawing modes, see [CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration](../../mfc/reference/cmfcimagepaintarea-class.md#cmfcimagepaintarea__image_edit_mode%20enumeration).  
+ The drawing color is used by the image editor dialog box for all drawing modes except for `IMAGE_EDIT_MODE_COLOR`. For more information about drawing modes, see [CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration](cmfcimagepaintarea-image-edit-mode-enumeration.md).  
   
 ##  <a name="cmfcimagepaintarea__setmode"></a>  CMFCImagePaintArea::SetMode  
  Sets the current drawing mode.  
@@ -161,7 +161,7 @@ void SetMode(IMAGE_EDIT_MODE mode);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `mode`|An `IMAGE_EDIT_MODE` value that specifies the current drawing mode.|  
+|[in] `mode`|An [IMAGE_EDIT_MODE](cmfcimagepaintarea-image-edit-mode-enumeration.md) value that specifies the current drawing mode.|  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

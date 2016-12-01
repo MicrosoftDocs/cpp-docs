@@ -105,7 +105,7 @@ Property pages are implemented as separate COM objects, which allow them to be s
   
 1.  Replace the `Apply` function in PolyProp.h with the following code:  
   
-     [!code-cpp[NVC_ATL_Windowing#58](../atl/codesnippet/CPP/adding-a-property-page-atl-tutorial-part-6_1.h)]  
+     [!code-cpp[NVC_ATL_Windowing#58](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_1.h)]  
   
  A property page can have more than one client attached to it at a time, so the `Apply` function loops around and calls `put_Sides` on each client with the value retrieved from the edit box. You are using the [CComQIPtr](../atl/reference/ccomqiptr-class.md) class, which performs the `QueryInterface` on each object to obtain the `IPolyCtl` interface from the **IUnknown** interface (stored in the `m_ppUnk` array).  
   
@@ -131,7 +131,7 @@ Property pages are implemented as separate COM objects, which allow them to be s
   
 1.  Add the following code in Polyprop.cpp to the `OnEnChangeSides` method (deleting any code that the wizard put there):  
   
-     [!code-cpp[NVC_ATL_Windowing#59](../atl/codesnippet/CPP/adding-a-property-page-atl-tutorial-part-6_2.cpp)]  
+     [!code-cpp[NVC_ATL_Windowing#59](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_2.cpp)]  
   
  `OnEnChangeSides` will be called when a **WM_COMMAND** message is sent with the **EN_CHANGE** notification for the `IDC_SIDES` control. `OnEnChangeSides` then calls `SetDirty` and passes `TRUE` to indicate the property page is now dirty and the **Apply** button should be enabled.  
   
@@ -142,11 +142,11 @@ Property pages are implemented as separate COM objects, which allow them to be s
   
 1.  Open PolyCtl.h and add this line to the property map:  
   
-     [!code-cpp[NVC_ATL_Windowing#60](../atl/codesnippet/CPP/adding-a-property-page-atl-tutorial-part-6_3.h)]  
+     [!code-cpp[NVC_ATL_Windowing#60](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_3.h)]  
   
  The control's property map now looks like this:  
   
- [!code-cpp[NVC_ATL_Windowing#61](../atl/codesnippet/CPP/adding-a-property-page-atl-tutorial-part-6_4.h)]  
+ [!code-cpp[NVC_ATL_Windowing#61](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_4.h)]  
   
  You could have added a `PROP_PAGE` macro with the CLSID of your property page, but if you use the `PROP_ENTRY` macro as shown, the `Sides` property value is also saved when the control is saved.  
   

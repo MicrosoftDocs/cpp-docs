@@ -144,7 +144,7 @@ INT_PTR Add(CObject* newElement);
 ### Example  
   See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#75](../../mfc/codesnippet/CPP/cobarray-class_1.cpp)]  
+ [!code-cpp[NVC_MFCCollections#75](../../mfc/codesnippet/cpp/cobarray-class_1.cpp)]  
   
  The results from this program are as follows:  
   
@@ -187,7 +187,7 @@ INT_PTR Append(const CObArray& src);
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#76](../../mfc/codesnippet/CPP/cobarray-class_2.cpp)]  
+ [!code-cpp[NVC_MFCCollections#76](../../mfc/codesnippet/cpp/cobarray-class_2.cpp)]  
   
 ##  <a name="cobarray__copy"></a>  CObArray::Copy  
  Call this member function to overwrite the elements of the given array with the elements of another array of the same type.  
@@ -217,7 +217,7 @@ void Copy(const CObArray& src);
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#77](../../mfc/codesnippet/CPP/cobarray-class_3.cpp)]  
+ [!code-cpp[NVC_MFCCollections#77](../../mfc/codesnippet/cpp/cobarray-class_3.cpp)]  
   
 ##  <a name="cobarray__cobarray"></a>  CObArray::CObArray  
  Constructs an empty `CObject` pointer array.  
@@ -241,7 +241,7 @@ CObArray();
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**CWordArray( );**|  
   
 ### Example  
- [!code-cpp[NVC_MFCCollections#78](../../mfc/codesnippet/CPP/cobarray-class_4.cpp)]  
+ [!code-cpp[NVC_MFCCollections#78](../../mfc/codesnippet/cpp/cobarray-class_4.cpp)]  
   
 ##  <a name="cobarray__elementat"></a>  CObArray::ElementAt  
  Returns a temporary reference to the element pointer within the array.  
@@ -333,7 +333,7 @@ CObject* GetAt(INT_PTR nIndex) const;
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#79](../../mfc/codesnippet/CPP/cobarray-class_5.cpp)]  
+ [!code-cpp[NVC_MFCCollections#79](../../mfc/codesnippet/cpp/cobarray-class_5.cpp)]  
   
 ##  <a name="cobarray__getcount"></a>  CObArray::GetCount  
  Returns the number of array elements.  
@@ -364,7 +364,7 @@ INT_PTR GetCount() const;
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#80](../../mfc/codesnippet/CPP/cobarray-class_6.cpp)]  
+ [!code-cpp[NVC_MFCCollections#80](../../mfc/codesnippet/cpp/cobarray-class_6.cpp)]  
   
 ##  <a name="cobarray__getdata"></a>  CObArray::GetData  
  Use this member function to gain direct access to the elements in the array.  
@@ -399,7 +399,7 @@ const CObject** GetData() const;
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#81](../../mfc/codesnippet/CPP/cobarray-class_7.cpp)]  
+ [!code-cpp[NVC_MFCCollections#81](../../mfc/codesnippet/cpp/cobarray-class_7.cpp)]  
   
 ##  <a name="cobarray__getsize"></a>  CObArray::GetSize  
  Returns the size of the array.  
@@ -427,7 +427,7 @@ INT_PTR GetSize() const;
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#82](../../mfc/codesnippet/CPP/cobarray-class_8.cpp)]  
+ [!code-cpp[NVC_MFCCollections#82](../../mfc/codesnippet/cpp/cobarray-class_8.cpp)]  
   
 ##  <a name="cobarray__getupperbound"></a>  CObArray::GetUpperBound  
  Returns the current upper bound of this array.  
@@ -460,7 +460,7 @@ INT_PTR GetUpperBound() const;
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#83](../../mfc/codesnippet/CPP/cobarray-class_9.cpp)]  
+ [!code-cpp[NVC_MFCCollections#83](../../mfc/codesnippet/cpp/cobarray-class_9.cpp)]  
   
 ##  <a name="cobarray__insertat"></a>  CObArray::InsertAt  
  Inserts an element (or all the elements in another array) at a specified index.  
@@ -514,7 +514,7 @@ void InsertAt(
 ### Example  
   See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#84](../../mfc/codesnippet/CPP/cobarray-class_10.cpp)]  
+ [!code-cpp[NVC_MFCCollections#84](../../mfc/codesnippet/cpp/cobarray-class_10.cpp)]  
   
  The results from this program are as follows:  
   
@@ -542,10 +542,10 @@ BOOL IsEmpty() const;
  These subscript operators are a convenient substitute for the `SetAt` and `GetAt` functions.  
   
 ```  
-CObject*& operator[](INT_PTR nIndex);
+CObject*& operator[](int_ptr nindex);
 
  
-CObject* operator[](INT_PTR nIndex) const;
+CObject* operator[](int_ptr nindex) const;
 
  
 ```  
@@ -559,17 +559,17 @@ CObject* operator[](INT_PTR nIndex) const;
   
 |Class|Operator|  
 |-----------|--------------|  
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|**BYTE& operator [](INT_PTR** `nIndex` **\);**<br /><br /> **BYTE operator [](INT_PTR** `nIndex` **\) const;**|  
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**DWORD& operator [](INT_PTR** `nIndex` **\);**<br /><br /> **DWORD operator [](INT_PTR** `nIndex` **\) const;**|  
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void\*& operator [](INT_PTR** `nIndex` **\);**<br /><br /> **void\* operator [](INT_PTR** `nIndex` **\) const;**|  
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**CString& operator [](INT_PTR** `nIndex` **\);**<br /><br /> **CString operator [](INT_PTR** `nIndex` **\) const;**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**UINT& operator [](INT_PTR** `nIndex` **\);**<br /><br /> **UINT operator [](INT_PTR** `nIndex` **\) const;**|  
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**WORD& operator [](INT_PTR** `nIndex` **\);**<br /><br /> **WORD operator [](INT_PTR** `nIndex` **\) const;**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**BYTE& operator [](int_ptr** `nindex` **\);**<br /><br /> **BYTE operator [](int_ptr** `nindex` **\) const;**|  
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**DWORD& operator [](int_ptr** `nindex` **\);**<br /><br /> **DWORD operator [](int_ptr** `nindex` **\) const;**|  
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void\*& operator [](int_ptr** `nindex` **\);**<br /><br /> **void\* operator [](int_ptr** `nindex` **\) const;**|  
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|**CString& operator [](int_ptr** `nindex` **\);**<br /><br /> **CString operator [](int_ptr** `nindex` **\) const;**|  
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**UINT& operator [](int_ptr** `nindex` **\);**<br /><br /> **UINT operator [](int_ptr** `nindex` **\) const;**|  
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**WORD& operator [](int_ptr** `nindex` **\);**<br /><br /> **WORD operator [](int_ptr** `nindex` **\) const;**|  
   
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#88](../../mfc/codesnippet/CPP/cobarray-class_11.cpp)]  
+ [!code-cpp[NVC_MFCCollections#88](../../mfc/codesnippet/cpp/cobarray-class_11.cpp)]  
   
 ##  <a name="cobarray__removeall"></a>  CObArray::RemoveAll  
  Removes all the pointers from this array but does not actually delete the `CObject` objects.  
@@ -597,7 +597,7 @@ void RemoveAll();
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#85](../../mfc/codesnippet/CPP/cobarray-class_12.cpp)]  
+ [!code-cpp[NVC_MFCCollections#85](../../mfc/codesnippet/cpp/cobarray-class_12.cpp)]  
   
 ##  <a name="cobarray__removeat"></a>  CObArray::RemoveAt  
  Removes one or more elements starting at a specified index in an array.  
@@ -636,7 +636,7 @@ void RemoveAt(
 ### Example  
   See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#112](../../mfc/codesnippet/CPP/cobarray-class_13.cpp)]  
+ [!code-cpp[NVC_MFCCollections#112](../../mfc/codesnippet/cpp/cobarray-class_13.cpp)]  
   
  The results from this program are as follows:  
   
@@ -679,7 +679,7 @@ void SetAt(
 ### Example  
   See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#86](../../mfc/codesnippet/CPP/cobarray-class_14.cpp)]  
+ [!code-cpp[NVC_MFCCollections#86](../../mfc/codesnippet/cpp/cobarray-class_14.cpp)]  
   
  The results from this program are as follows:  
   
@@ -722,7 +722,7 @@ void SetAtGrow(
 ### Example  
   See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
   
- [!code-cpp[NVC_MFCCollections#87](../../mfc/codesnippet/CPP/cobarray-class_15.cpp)]  
+ [!code-cpp[NVC_MFCCollections#87](../../mfc/codesnippet/cpp/cobarray-class_15.cpp)]  
   
  The results from this program are as follows:  
   

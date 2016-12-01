@@ -120,7 +120,7 @@ CMFCPropertyGridFileProperty(
 ### Example  
  The following example demonstrates how to create an object using the constructor of the `CMFCPropertyGridFileProperty` class. This example is part of the [Visual Studio Demo sample](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#22](../../mfc/codesnippet/CPP/cmfcpropertygridfileproperty-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#22](../../mfc/codesnippet/cpp/cmfcpropertygridfileproperty-class_1.cpp)]  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

@@ -51,7 +51,7 @@ The database classes provide a simpler interface to a [data source](../../data/o
   
 -   Allocate storage for any results the call returns.  
   
--   Pass an ODBC **HDBC** or **HSTMT** handle, depending on the parameter signature of the function. Use the [AFXGetHENV](http://msdn.microsoft.com/Library/d8be2a8e-b93a-460f-affb-cf65b2f3dc10) macro to retrieve the ODBC handle.  
+-   Pass an ODBC **HDBC** or **HSTMT** handle, depending on the parameter signature of the function. Use the [AFXGetHENV](http://msdn.microsoft.com/library/d8be2a8e-b93a-460f-affb-cf65b2f3dc10) macro to retrieve the ODBC handle.  
   
      Member variables **CDatabase::m_hdbc** and **CRecordset::m_hstmt** are available so that you do not need to allocate and initialize these yourself.  
   
@@ -61,7 +61,8 @@ The database classes provide a simpler interface to a [data source](../../data/o
   
  For more information about these steps, see the [Open Database Connectivity (ODBC)](https://msdn.microsoft.com/en-us/library/ms710252.aspx) SDK in the MSDN documentation.  
   
- In addition to these steps, you need to take extra steps to check function return values, ensure that your program is not waiting for an asynchronous call to finish, and so on. You can simplify these last steps by using the `AFX_SQL_ASYNC` and `AFX_SQL_SYNC` macros.  
+ In addition to these steps, you need to take extra steps to check function return values, ensure that your program is not waiting for an asynchronous call to finish, and so on. You can simplify these last steps by using the `AFX_SQL_ASYNC` and `AFX_SQL_SYNC` macros. For more information, see [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md) in the *MFC Reference*.  
+
   
 ## See Also  
  [ODBC Basics](../../data/odbc/odbc-basics.md)

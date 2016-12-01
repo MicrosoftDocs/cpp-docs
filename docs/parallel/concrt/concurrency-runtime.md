@@ -120,10 +120,10 @@ The Concurrency Runtime for C++ helps you write robust, scalable, and responsive
 |||  
 |-|-|  
 |[Async programming patterns and tips in Hilo (Windows Store apps using C++ and XAML)](http://msdn.microsoft.com/library/windows/apps/jj160321.aspx)|Learn how we used the Concurrency Runtime to implement asynchronous operations in Hilo, a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app using C++ and XAML.|  
-|[Code samples for the Concurrency Runtime and Parallel Pattern Library in Visual Studio 2010](http://go.microsoft.com/fwlink/LinkID=183875)|Provides sample applications and utilities that demonstrate the Concurrency Runtime.|  
-|[Parallel Programming in Native Code blog](http://go.microsoft.com/fwlink/LinkID=183873)|Provides additional in-depth blog articles about parallel programming in the Concurrency Runtime.|  
-|[Parallel Computing in C++ and Native Code forum](http://go.microsoft.com/fwlink/LinkID=183874)|Enables you to participate in community discussions about the Concurrency Runtime.|  
-|[Parallel Programming](http://msdn.microsoft.com/Library/4d83c690-ad2d-489e-a2e0-b85b898a672d)|Teaches you about the parallel programming model that is available in the [!INCLUDE[dnprdnshort](../../error-messages/tool-errors/includes/dnprdnshort_md.md)].|  
+|[Code samples for the Concurrency Runtime and Parallel Pattern Library in Visual Studio 2010](http://go.microsoft.com/fwlink/linkid=183875)|Provides sample applications and utilities that demonstrate the Concurrency Runtime.|  
+|[Parallel Programming in Native Code blog](http://go.microsoft.com/fwlink/linkid=183873)|Provides additional in-depth blog articles about parallel programming in the Concurrency Runtime.|  
+|[Parallel Computing in C++ and Native Code forum](http://go.microsoft.com/fwlink/linkid=183874)|Enables you to participate in community discussions about the Concurrency Runtime.|  
+|[Parallel Programming](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)|Teaches you about the parallel programming model that is available in the [!INCLUDE[dnprdnshort](../../error-messages/tool-errors/includes/dnprdnshort_md.md)].|  
   
 ## See Also  
  [Reference](../../parallel/concrt/reference/reference-concurrency-runtime.md)

@@ -128,7 +128,7 @@ BEGIN_DHTML_EVENT_MAP_INLINE(className)
 ### Remarks  
  Add a DHTML event map to your class to provide information to **CDHtmlDialog** that can be used to route events fired by HTML elements or ActiveX controls in a web page to handler functions in your class.  
   
- Place the `BEGIN_DHTML_EVENT_MAP` macro in the class's definition (.h) file followed by `DHTML_EVENT` macros for the events the class is to handle (for example, `DHTML_EVENT_ONMOUSEOVER` for mouseover events). Use the [END_DHTML_EVENT_MAP_INLINE](http://msdn.microsoft.com/Library/0cfec092-20ee-49f3-bc38-56d6a5572db2) macro to mark the end of the event map. These macros implement the following function:  
+ Place the `BEGIN_DHTML_EVENT_MAP` macro in the class's definition (.h) file followed by `DHTML_EVENT` macros for the events the class is to handle (for example, `DHTML_EVENT_ONMOUSEOVER` for mouseover events). Use the [END_DHTML_EVENT_MAP_INLINE](http://msdn.microsoft.com/library/0cfec092-20ee-49f3-bc38-56d6a5572db2) macro to mark the end of the event map. These macros implement the following function:  
   
  `virtual const DHtmlEventMapEntry* GetDHtmlEventMap();`  
   
@@ -748,7 +748,7 @@ BEGIN_DHTML_URL_EVENT_MAP()
  Put `BEGIN_DHTML_URL_EVENT_MAP` in the implementation file of your [CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md)-derived class. Follow it with [embedded DHTML event maps](#begin_embed_dhtml_event_map) and [URL entries](#begin_url_entries), and then close it with [END_DHTML_URL_EVENT_MAP](#end_dhtml_url_event_map). Include the [DECLARE_DHTML_URL_EVENT_MAP](#declare_dhtml_url_event_map) macro within the class definition.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#196](../../mfc/codesnippet/CPP/dhtml-event-maps_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#196](../../mfc/codesnippet/cpp/dhtml-event-maps_1.cpp)]  
   
 ##  <a name="begin_embed_dhtml_event_map"></a>  BEGIN_EMBED_DHTML_EVENT_MAP  
  Starts the definition of an embedded DHTML event map in a multipage dialog.  
@@ -768,7 +768,7 @@ BEGIN_EMBED_DHTML_EVENT_MAP(className, mapName)
 ### Remarks  
  Because a multipage DHTML dialog consists of multiple HTML pages, each of which can raise DHTML events, embedded event maps are used to map events to handlers on a per-page basis.  
   
- Embedded event maps within a DHTML and URL event map consist of a `BEGIN_EMBED_DHTML_EVENT_MAP` macro followed by [DHTML_EVENT]--brokenlink--(../Topic/not%20found.md#dhtml_event_maps) macros and an [END_EMBED_DHTML_EVENT_MAP](#end_embed_dhtml_event_map) macro.  
+ Embedded event maps within a DHTML and URL event map consist of a `BEGIN_EMBED_DHTML_EVENT_MAP` macro followed by [DHTML_EVENT](dhtml-event-maps.md#dhtml_event) macros and an [END_EMBED_DHTML_EVENT_MAP](dhtml-event-maps.md#end_embed_dhtml_event_map) macro.  
   
  Each embedded event map requires a corresponding [URL event entry](#url_event_entry) to map *mapName* (specified in `BEGIN_EMBED_DHTML_EVENT_MAP`) to a URL or HTML resource.  
   

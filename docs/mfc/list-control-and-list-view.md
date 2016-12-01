@@ -53,7 +53,7 @@ For convenience, MFC encapsulates the list control in two ways. You can use list
   
  To obtain a reference to the `CListCtrl` underlying a `CListView`, call `GetListCtrl` from your list view class:  
   
- [!code-cpp[NVC_MFCListView#4](../atl/reference/codesnippet/CPP/list-control-and-list-view_1.cpp)]  
+ [!code-cpp[NVC_MFCListView#4](../atl/reference/codesnippet/cpp/list-control-and-list-view_1.cpp)]  
   
  This topic describes both ways to use the list control.  
   

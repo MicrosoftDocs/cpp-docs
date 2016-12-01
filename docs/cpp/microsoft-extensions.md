@@ -66,6 +66,3 @@ translation.priority.ht:
   
  *based-type*:  
  *name*  
-  
-## See Also  
- [Grammar Summary](../misc/grammar-summary-cpp.md)

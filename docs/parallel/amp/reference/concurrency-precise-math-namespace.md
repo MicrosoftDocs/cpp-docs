@@ -34,7 +34,8 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Concurrency::precise_math Namespace
-Functions in the `precise_math` namespace are C99 compliant. Both single precision and double precision versions of each function are included. For example, `acos` is the double-precision version and `acosf` is the single-precision version. These functions, including the single-precision functions, require extended double-precision support on the accelerator. You can use the [accelerator::supports_double_precision Data Member](concurrency-precise-math-namespace-functions.md#accelerator::supports_double_precision%20Data%20Member.md) to determine if you can run these functions on a specific accelerator.  
+Functions in the `precise_math` namespace are C99 compliant. Both single precision and double precision versions of each function are included. For example, `acos` is the double-precision version and `acosf` is the single-precision version. These functions, including the single-precision functions, require extended double-precision support on the accelerator. You can use the [accelerator::supports_double_precision Data Member](accelerator-class.md#accelerator__supports_double_precision_data_member) to determine if you can run these functions on a specific accelerator. 
+
   
 ## Syntax  
   
@@ -104,7 +105,7 @@ namespace precise_math;
 |[fmaxf Function](concurrency-precise-math-namespace-functions.md#fmaxf_function)|Determine the maximum numeric value of the arguments|  
 |[fmin Function](concurrency-precise-math-namespace-functions.md#fmin_function)|Overloaded. Determine the minimum numeric value of the arguments|  
 |[fminf Function](concurrency-precise-math-namespace-functions.md#fminf_function)|Determine the minimum numeric value of the arguments|  
-|[fmod Function (C++ AMP)](concurrency-precise-math-namespace-functions.md#fmod%20Function%20\(C++%20AMP\).md)|Overloaded. Calculates the floating-point remainder of _X/_Y|  
+|[fmod Function (C++ AMP)](concurrency-precise-math-namespace-functions.md#fmod_function)|Overloaded. Calculates the floating-point remainder of _X/_Y|  
 |[fmodf Function](concurrency-precise-math-namespace-functions.md#fmodf_function)|Calculates the floating-point remainder of _X/_Y|  
 |[fpclassify Function](concurrency-precise-math-namespace-functions.md#fpclassify_function)|Overloaded. Classifies the argument value as NaN, infinite, normal, subnormal, zero|  
 |[frexp Function](concurrency-precise-math-namespace-functions.md#frexp_function)|Overloaded. Gets the mantissa and exponent of _X|  

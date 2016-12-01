@@ -59,7 +59,7 @@ This topic explains how to use the RFX function calls that make up the body of y
   
 -   (Optional) In the `RFX_Text` function, you sometimes use a fifth parameter to specify the data type of a column.  
   
-For an example of when you might make special use of the parameters, see [Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md).  
+ For more information, see the RFX functions under [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md) in the *Class Library Reference*. For an example of when you might make special use of the parameters, see [Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md).  
   
 ##  <a name="_core_rfx_data_types"></a> RFX Data Types  
  The class library supplies RFX functions for transferring many different data types between the data source and your recordsets. The following list summarizes the RFX functions by data type. In cases where you must write your own RFX function calls, select from these functions by data type.  
@@ -77,7 +77,8 @@ For an example of when you might make special use of the parameters, see [Record
 |`RFX_Text`|`CString`|  
 |`RFX_Date`|`CTime`|  
   
-For information about how C++ data types map to SQL data types, see the table ANSI SQL Data Types Mapped to C++ Data Types in [SQL: SQL and C++ Data Types (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md).  
+
+ For more information, see the RFX function documentation under [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md) in the *Class Library Reference*. For information about how C++ data types map to SQL data types, see the table ANSI SQL Data Types Mapped to C++ Data Types in [SQL: SQL and C++ Data Types (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md).  
   
 ## See Also  
  [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)   

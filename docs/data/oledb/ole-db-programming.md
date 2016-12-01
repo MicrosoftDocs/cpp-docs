@@ -59,4 +59,4 @@ This home page is your starting point for information about the Microsoft OLE DB
 |Data-bound controls (ADO and RDO) conceptual topics|[Data-Bound Controls (ADO and RDO)](../../data/ado-rdo/data-bound-controls-ado-and-rdo.md)|  
   
 ## See Also  
- [Data Access](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b)
+ [Data Access](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)

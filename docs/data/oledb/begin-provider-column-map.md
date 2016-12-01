@@ -54,7 +54,7 @@ theClass
 ## Example  
  Here is a sample provider column map:  
   
- [!code-cpp[NVC_OLEDB_Provider#4](../../data/oledb/codesnippet/CPP/begin-provider-column-map_1.h)]  
+ [!code-cpp[NVC_OLEDB_Provider#4](../../data/oledb/codesnippet/cpp/begin-provider-column-map_1.h)]  
   
 ## Requirements  
  **Header:** atldb.h  

@@ -65,7 +65,7 @@ This topic applies to the MFC ODBC classes.
 |Member function|Description|  
 |---------------------|-----------------|  
 |[CheckRowsetError](../../mfc/reference/crecordset-class.md#crecordset__checkrowseterror)|Virtual function that handles any errors that occur during fetching.|  
-|[DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#crecordset__dofieldexchange)|Implements bulk record field exchange. Called automatically to transfers multiple rows of data from the data source to the recordset object.|  
+|[DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#crecordset__dobulkfieldexchange)|Implements bulk record field exchange. Called automatically to transfers multiple rows of data from the data source to the recordset object.|  
 |[GetRowsetSize](../../mfc/reference/crecordset-class.md#crecordset__getrowsetsize)|Retrieves the current setting for the rowset size.|  
 |[GetRowsFetched](../../mfc/reference/crecordset-class.md#crecordset__getrowsfetched)|Tells how many rows were actually retrieved after a given fetch. In most cases, this is the rowset size, unless an incomplete rowset was fetched.|  
 |[GetRowStatus](../../mfc/reference/crecordset-class.md#crecordset__getrowstatus)|Returns a fetch status for a particular row within a rowset.|  
@@ -158,5 +158,6 @@ void MultiRowSet::DoBulkFieldExchange( CFieldExchange* pFX )
   
 ## See Also  
  [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)   
- [CRecordset::m_nFields](../../mfc/reference/crecordset-class.md#crecordset__m_n_fields)   
- [CRecordset::m_nParams](../../mfc/reference/crecordset-class.md#crecordset__m_n_params)
+ [CRecordset::m_nFields](../../mfc/reference/crecordset-class.md#crecordset__m_nfields)   
+ [CRecordset::m_nParams](../../mfc/reference/crecordset-class.md#crecordset__m_nparams)
+

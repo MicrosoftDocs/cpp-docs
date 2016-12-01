@@ -70,7 +70,7 @@ Visual C++ provides several ways to manage string data:
 > [!NOTE]
 >  which the compiler treats as a Unicode string. For example, the following code:  
   
- [!code-cpp[NVC_ATLMFC_Utilities#187](../atl-mfc-shared/codesnippet/CPP/string-data-management_1.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#187](../atl-mfc-shared/codesnippet/cpp/string-data-management_1.cpp)]  
   
 > [!NOTE]
 >  is translated as a Unicode string if **_UNICODE** is defined or as an ANSI string if not. For more information, see the article [Unicode and Multibyte Character Set (MBCS) Support](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md).  
@@ -78,7 +78,7 @@ Visual C++ provides several ways to manage string data:
  A `CString` object can store up to **INT_MAX** (2,147,483,647) characters. The **TCHAR** data type is used to get or set individual characters inside a `CString` object. Unlike character arrays, the `CString` class has a built-in memory allocation capability. This allows `CString` objects to automatically grow as needed (that is, you do not have to worry about growing a `CString` object to fit longer strings).  
   
 ##  <a name="_core_cstrings_and_const_char_pointers"></a> CStrings and const char Pointers  
- A `CString` object also can act like a literal C-style string (an `PCXSTR`, which is the same as **const char\*** if not under Unicode). The [CSimpleStringT::operator PCXSTR](../atl-mfc-shared/reference/csimplestringt-class.md#csimplestringt__operator%20pcxstr) conversion operator allows `CString` objects to be freely substituted for character pointers in function calls. The **CString( LPCWSTR** `pszSrc` **)** constructor allows character pointers to be substituted for `CString` objects.  
+ A `CString` object also can act like a literal C-style string (an `PCXSTR`, which is the same as **const char\*** if not under Unicode). The [CSimpleStringT::operator PCXSTR](../atl-mfc-shared/reference/csimplestringt-class.md#csimplestringt__operator_pcxstr) conversion operator allows `CString` objects to be freely substituted for character pointers in function calls. The **CString( LPCWSTR** `pszSrc` **)** constructor allows character pointers to be substituted for `CString` objects.  
   
  No attempt is made to fold `CString` objects. If you make two `CString` objects containing `Chicago`, for example, the characters in `Chicago` are stored in two places. (This may not be true of future versions of MFC, so you should not depend on it.)  
   

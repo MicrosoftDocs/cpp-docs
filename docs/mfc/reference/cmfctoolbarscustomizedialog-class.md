@@ -98,7 +98,7 @@ class CMFCToolBarsCustomizeDialog : public CPropertySheet
 ## Example  
  The following example demonstrates how to use various methods in the `CMFCToolBarsCustomizeDialog` class. The example shows how to replace a toolbar button in the list box of commands on the **Commands** page, enable creating new toolbars by using the **Customize** dialog box, and display the **Customization** dialog box. This code snippet is part of the [IE Demo sample](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_IEDemo#4](../../mfc/reference/codesnippet/CPP/cmfctoolbarscustomizedialog-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_IEDemo#4](../../mfc/reference/codesnippet/cpp/cmfctoolbarscustomizedialog-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -154,7 +154,7 @@ void AddButton(
 ### Example  
  The following example demonstrates how to use the `AddButton` method of the `CMFCToolBarsCustomizeDialog` class. This code snippet is part of the [Slider sample](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_Slider#1](../../mfc/reference/codesnippet/CPP/cmfctoolbarscustomizedialog-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_Slider#1](../../mfc/reference/codesnippet/cpp/cmfctoolbarscustomizedialog-class_2.cpp)]  
   
 ##  <a name="cmfctoolbarscustomizedialog__addmenu"></a>  CMFCToolBarsCustomizeDialog::AddMenu  
  Loads a menu from the resources and calls [CMFCToolBarsCustomizeDialog::AddMenuCommands](#cmfctoolbarscustomizedialog__addmenucommands) to add that menu to the list of commands on the **Commands** page.  
@@ -231,7 +231,7 @@ BOOL AddToolBar(
 ### Example  
  The following example demonstrates how to use the `AddToolBar` method in the `CMFCToolBarsCustomizeDialog` class. This code snippet is part of the [Word Pad sample](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_WordPad#11](../../mfc/reference/codesnippet/CPP/cmfctoolbarscustomizedialog-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_WordPad#11](../../mfc/reference/codesnippet/cpp/cmfctoolbarscustomizedialog-class_3.cpp)]  
   
 ### Remarks  
  The control that is used to represent each command is a [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md) object. After you add the toolbar, you can replace the button with a control of a derived type by calling [CMFCToolBarsCustomizeDialog::ReplaceButton](#cmfctoolbarscustomizedialog__replacebutton).  
@@ -303,7 +303,7 @@ CMFCToolBarsCustomizeDialog(
 ### Example  
  The following example demonstrates how to construct an object of the `CMFCToolBarsCustomizeDialog` class. This code snippet is part of the [Custom Pages sample](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_CustomPages#3](../../mfc/reference/codesnippet/CPP/cmfctoolbarscustomizedialog-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_CustomPages#3](../../mfc/reference/codesnippet/cpp/cmfctoolbarscustomizedialog-class_4.cpp)]  
   
 ##  <a name="cmfctoolbarscustomizedialog__create"></a>  CMFCToolBarsCustomizeDialog::Create  
  Displays the **Customization** dialog box.  
@@ -668,7 +668,7 @@ void ReplaceButton(
 ### Example  
  The following example demonstrates how to use the `ReplaceButton` method in the `CMFCToolBarsCustomizeDialog` class. This code snippet is part of the [Visual Studio Demo sample](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#34](../../mfc/codesnippet/CPP/cmfctoolbarscustomizedialog-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#34](../../mfc/codesnippet/cpp/cmfctoolbarscustomizedialog-class_5.cpp)]  
   
 ##  <a name="cmfctoolbarscustomizedialog__setusercategory"></a>  CMFCToolBarsCustomizeDialog::SetUserCategory  
  Specifies which category in the list of categories on the **Commands** page is the user category. You must call this function before you call [CMFCToolBarsCustomizeDialog::Create](#cmfctoolbarscustomizedialog__create).  

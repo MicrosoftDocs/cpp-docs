@@ -60,7 +60,7 @@ class CTime
 |----------|-----------------|  
 |[CTime::Format](#ctime__format)|Converts a `CTime` object into a formatted string — based on the local time zone.|  
 |[CTime::FormatGmt](#ctime__formatgmt)|Converts a `CTime` object into a formatted string — based on UTC.|  
-|[CTime::GetAsDBTIMESTAMP](#ctime__getasdbtimestamp)|Converts the time information stored in the `CTime` object to a Win32-compatible <xref:System.Data.OleDb.OleDbTypequalifyHint%3DFalse%26autoUpgrade%3DTrue> structure.|  
+|[CTime::GetAsDBTIMESTAMP](#ctime__getasdbtimestamp)|Converts the time information stored in the `CTime` object to a Win32-compatible DBTIMESTAMP structure.|  
 |[CTime::GetAsSystemTime](#ctime__getassystemtime)|Converts the time information stored in the `CTime` object to a Win32-compatible [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure.|  
 |[CTime::GetCurrentTime](#ctime__getcurrenttime)|Creates a `CTime` object that represents the current time (static member function).|  
 |[CTime::GetDay](#ctime__getday)|Returns the day represent by the `CTime` object.|  
@@ -138,7 +138,7 @@ bool operator==(CTime time) const throw();
  These operators compare two absolute times and return **true** if the condition is true; otherwise **false**.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#161](../../atl-mfc-shared/codesnippet/CPP/ctime-class_1.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#161](../../atl-mfc-shared/codesnippet/cpp/ctime-class_1.cpp)]  
   
 ##  <a name="ctime__ctime"></a>  CTime::CTime  
  Creates a new `CTime` object initialized with the specified time.  
@@ -207,10 +207,10 @@ CTime() throw();
  MS-DOS date and time values to be converted to a date/time value and copied into the new `CTime` object.  
   
  `st`  
- A [SYSTEMTIME](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/d6609fff-1931-4818-8a26-f042630af0b0/locales/en-US) structure to be converted to a date/time value and copied into the new `CTime` object.  
+ A [SYSTEMTIME](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/d6609fff-1931-4818-8a26-f042630af0b0/locales/en-us) structure to be converted to a date/time value and copied into the new `CTime` object.  
   
  `ft`  
- A [FILETIME](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/979ce746-dc17-4147-89f8-41d05c5fcc5f/locales/en-US) structure to be converted to a date/time value and copied into the new `CTime` object.  
+ A [FILETIME](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/979ce746-dc17-4147-89f8-41d05c5fcc5f/locales/en-us) structure to be converted to a date/time value and copied into the new `CTime` object.  
   
  dbts  
  A reference to a <xref:System.Data.OleDb.OleDbTypequalifyHint%3DFalse%26autoUpgrade%3DTrue> structure containing the current local time.  
@@ -249,7 +249,7 @@ CTime() throw();
  For more information, see the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) and [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. Also see the [MS-DOS Date and Time](http://msdn.microsoft.com/library/windows/desktop/ms724503) entry in the [!INCLUDE[winsdkshort](../../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#148](../../atl-mfc-shared/codesnippet/CPP/ctime-class_2.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#148](../../atl-mfc-shared/codesnippet/cpp/ctime-class_2.cpp)]  
   
 ##  <a name="ctime__format"></a>  CTime::Format  
  Call this member function to create a formatted representation of the date-time value.  
@@ -279,7 +279,7 @@ CString Format(UINT nFormatID) const;
  This method throws an exception if the date-time value to format does not range from midnight, January 1, 1970 through December 31, 3000 Universal Coordinated Time (UTC).  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#149](../../atl-mfc-shared/codesnippet/CPP/ctime-class_3.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#149](../../atl-mfc-shared/codesnippet/cpp/ctime-class_3.cpp)]  
   
 ##  <a name="ctime__formatgmt"></a>  CTime::FormatGmt  
  Generates a formatted string that corresponds to this `CTime` object.  
@@ -329,7 +329,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
  Stores the resulting time in the referenced `dbts` structure. The **DBTIMESTAMP** data structure initialized by this function will have its **fraction** member set to zero.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#150](../../atl-mfc-shared/codesnippet/CPP/ctime-class_4.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#150](../../atl-mfc-shared/codesnippet/cpp/ctime-class_4.cpp)]  
   
 ##  <a name="ctime__getassystemtime"></a>  CTime::GetAsSystemTime  
  Call this member function to convert the time information stored in the `CTime` object to a Win32–compatible [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure.  
@@ -349,7 +349,7 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
  `GetAsSystemTime` stores the resulting time in the referenced *timeDest* structure. The `SYSTEMTIME` data structure initialized by this function will have its **wMilliseconds** member set to zero.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#151](../../atl-mfc-shared/codesnippet/CPP/ctime-class_5.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#151](../../atl-mfc-shared/codesnippet/cpp/ctime-class_5.cpp)]  
   
 ##  <a name="ctime__getcurrenttime"></a>  CTime::GetCurrentTime  
  Returns a `CTime` object that represents the current time.  
@@ -365,7 +365,7 @@ static
  Returns the current system date and time in Coordinated Universal Time (UTC).  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#152](../../atl-mfc-shared/codesnippet/CPP/ctime-class_6.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#152](../../atl-mfc-shared/codesnippet/cpp/ctime-class_6.cpp)]  
   
 ##  <a name="ctime__getday"></a>  CTime::GetDay  
  Returns the day represent by the `CTime` object.  
@@ -384,7 +384,7 @@ int
  This function calls `GetLocalTm`, which uses an internal, statically allocated buffer. The data in this buffer is overwritten because of calls to other `CTime` member functions.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#153](../../atl-mfc-shared/codesnippet/CPP/ctime-class_7.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#153](../../atl-mfc-shared/codesnippet/cpp/ctime-class_7.cpp)]  
   
 ##  <a name="ctime__getdayofweek"></a>  CTime::GetDayOfWeek  
  Returns the day of the week represented by the `CTime` object.  
@@ -403,7 +403,7 @@ int
  This function calls `GetLocalTm`, which uses an internal statically allocated buffer. The data in this buffer is overwritten because of calls to other `CTime` member functions.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#154](../../atl-mfc-shared/codesnippet/CPP/ctime-class_8.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#154](../../atl-mfc-shared/codesnippet/cpp/ctime-class_8.cpp)]  
   
 ##  <a name="ctime__getgmttm"></a>  CTime::GetGmtTm  
  Gets a **struct tm** that contains a decomposition of the time contained in this `CTime` object.  
@@ -431,7 +431,7 @@ struct
  `ptm` cannot be `NULL`. If you want to revert to the old behavior, in which `ptm` could be `NULL` to indicate that an internal, statically allocated buffer should be used, then undefine `_SECURE_ATL`.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#155](../../atl-mfc-shared/codesnippet/CPP/ctime-class_9.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#155](../../atl-mfc-shared/codesnippet/cpp/ctime-class_9.cpp)]  
   
 ##  <a name="ctime__gethour"></a>  CTime::GetHour  
  Returns the hour represented by the `CTime` object.  
@@ -450,7 +450,7 @@ int
  This function calls `GetLocalTm`, which uses an internal statically allocated buffer. The data in this buffer is overwritten because of calls to other `CTime` member functions.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#156](../../atl-mfc-shared/codesnippet/CPP/ctime-class_10.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#156](../../atl-mfc-shared/codesnippet/cpp/ctime-class_10.cpp)]  
   
 ##  <a name="ctime__getlocaltm"></a>  CTime::GetLocalTm  
  Gets a **struct tm** containing a decomposition of the time contained in this `CTime` object.  
@@ -478,7 +478,7 @@ struct
  `ptm` cannot be `NULL`. If you want to revert to the old behavior, in which `ptm` could be `NULL` to indicate that an internal, statically allocated buffer should be used, then undefine `_SECURE_ATL`.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#157](../../atl-mfc-shared/codesnippet/CPP/ctime-class_11.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#157](../../atl-mfc-shared/codesnippet/cpp/ctime-class_11.cpp)]  
   
 ##  <a name="ctime__getminute"></a>  CTime::GetMinute  
  Returns the minute represented by the `CTime` object.  
@@ -551,7 +551,7 @@ __time64_t
  **GetTime** will return the number of seconds between the current `CTime` object and January 1, 1970.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#158](../../atl-mfc-shared/codesnippet/CPP/ctime-class_12.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#158](../../atl-mfc-shared/codesnippet/cpp/ctime-class_12.cpp)]  
   
 ##  <a name="ctime__getyear"></a>  CTime::GetYear  
  Returns the year represented by the `CTime` object.  
@@ -615,7 +615,7 @@ CTime operator+(CTimeSpan timeSpan) const throw();
  `CTime` objects represent absolute time, `CTimeSpan` objects represent relative time. The first two operators allow you to add and subtract `CTimeSpan` objects to and from `CTime` objects. The third operator allows you to subtract one `CTime` object from another to yield a `CTimeSpan` object.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#159](../../atl-mfc-shared/codesnippet/CPP/ctime-class_13.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#159](../../atl-mfc-shared/codesnippet/cpp/ctime-class_13.cpp)]  
   
 ##  <a name="ctime__operator__add_eq_-_eq"></a>  CTime::operator +=, -=  
  These operators add and subtract a `CTimeSpan` object to and from this `CTime` object.  
@@ -638,7 +638,7 @@ CTime& operator+=(CTimeSpan span) throw();
  These operators allow you to add and subtract a `CTimeSpan` object to and from this `CTime` object.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#160](../../atl-mfc-shared/codesnippet/CPP/ctime-class_14.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#160](../../atl-mfc-shared/codesnippet/cpp/ctime-class_14.cpp)]  
   
 ##  <a name="ctime__serialize64"></a>  CTime::Serialize64  
   

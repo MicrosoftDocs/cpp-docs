@@ -57,7 +57,8 @@ class CComAutoCriticalSection : public CComCriticalSection
 ## Remarks  
  `CComAutoCriticalSection` is similar to class [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md), except `CComAutoCriticalSection` automatically initializes the critical section object in the constructor.  
   
- Typically, you use `CComAutoCriticalSection` through the `typedef` name [AutoCriticalSection](ccommultithreadmodel-class.md#autocriticalsection). This name references `CComAutoCriticalSection` when [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) is being used.  
+ Typically, you use `CComAutoCriticalSection` through the `typedef` name [AutoCriticalSection](ccommultithreadmodel-class.md#ccommultithreadmodel__autocriticalsection). This name references `CComAutoCriticalSection` when [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) is being used.  
+
   
  The `Init` and `Term` methods from [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) are not available when using this class.  
   

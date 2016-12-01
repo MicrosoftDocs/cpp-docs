@@ -49,21 +49,21 @@ class accelerator_view;
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view::accelerator_view Constructor](#accelerator_view_ctor)|Initializes a new instance of the `accelerator_view` class.|  
-|[accelerator_view::~accelerator_view Destructor](#accelerator_view_dtor)|Destroys the `accelerator_view` object.|  
+|[accelerator_view::accelerator_view Constructor](#accelerator_view__ctor)|Initializes a new instance of the `accelerator_view` class.|  
+|[accelerator_view::~accelerator_view Destructor](#accelerator_view__dtor)|Destroys the `accelerator_view` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view::create_marker Method](#create_marker)|Returns a future to track the completion of all commands submitted so far to this `accelerator_view` object.|  
-|[accelerator_view::flush Method](#flush)|Submits all pending commands queued to the `accelerator_view` object to the accelerator for execution.|  
-|[accelerator_view::get_accelerator Method](#get_accelerator)|Returns the `accelerator` object for the `accelerator_view` object.|  
-|[accelerator_view::get_is_auto_selection Method](#get_is_auto_selection)|Returns a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the `accelerator_view` object is passed to a parallel_for_each function.|  
-|[accelerator_view::get_is_debug Method](#get_is_debug)|Returns a Boolean value that indicates whether the `accelerator_view` object has the DEBUG layer enabled for extensive error reporting.|  
-|[accelerator_view::get_queuing_mode Method](#get_queuing_mode)|Returns the queuing mode for the `accelerator_view` object.|  
-|[accelerator_view::get_version Method](#get_version)|Returns the version of the `accelerator_view`.|  
-|[accelerator_view::wait Method](#wait)|Waits for all commands submitted to the `accelerator_view` object to finish.|  
+|[accelerator_view::create_marker Method](#accelerator_view__create_marker_method)|Returns a future to track the completion of all commands submitted so far to this `accelerator_view` object.|  
+|[accelerator_view::flush Method](#accelerator_view__flush_method)|Submits all pending commands queued to the `accelerator_view` object to the accelerator for execution.|  
+|[accelerator_view::get_accelerator Method](#accelerator_view__get_accelerator_method)|Returns the `accelerator` object for the `accelerator_view` object.|  
+|[accelerator_view::get_is_auto_selection Method](#accelerator_view__get_is_auto_selection_method)|Returns a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the `accelerator_view` object is passed to a [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each_function).|  
+|[accelerator_view::get_is_debug Method](#accelerator_view__get_is_debug_method)|Returns a Boolean value that indicates whether the `accelerator_view` object has the DEBUG layer enabled for extensive error reporting.|  
+|[accelerator_view::get_queuing_mode Method](#accelerator_view__get_queuing_mode_method)|Returns the queuing mode for the `accelerator_view` object.|  
+|[accelerator_view::get_version Method](#accelerator_view__get_version_method)|Returns the version of the `accelerator_view`.|  
+|[accelerator_view::wait Method](#accelerator_view__wait_method)|Waits for all commands submitted to the `accelerator_view` object to finish.|  
   
 ### Public Operators  
   
@@ -77,11 +77,11 @@ class accelerator_view;
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view::accelerator Data Member](#accelerator)|Gets the `accelerator` object for the `accelerator_view` object.|  
-|[accelerator_view::is_auto_selection Data Member](#is_auto_selection)|Gets a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the `accelerator_view` object is passed to a parallel_for_each function.|  
-|[accelerator_view::is_debug Data Member](#is_debug)|Gets a Boolean value that indicates whether the `accelerator_view` object has the DEBUG layer enabled for extensive error reporting.|  
-|[accelerator_view::queuing_mode Data Member](#queuing_mode)|Gets the queuing mode for the `accelerator_view` object.|  
-|[accelerator_view::version Data Member](#version)|Gets the version of the accelerator.|  
+|[accelerator_view::accelerator Data Member](#accelerator_view__accelerator_data_member)|Gets the `accelerator` object for the `accelerator_view` object.|  
+|[accelerator_view::is_auto_selection Data Member](#accelerator_view__is_auto_selection_data_member)|Gets a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the `accelerator_view` object is passed to a [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each_function).|  
+|[accelerator_view::is_debug Data Member](#accelerator_view__is_debug_data_member)|Gets a Boolean value that indicates whether the `accelerator_view` object has the DEBUG layer enabled for extensive error reporting.|  
+|[accelerator_view::queuing_mode Data Member](#accelerator_view__queuing_mode_data_member)|Gets the queuing mode for the `accelerator_view` object.|  
+|[accelerator_view::version Data Member](#accelerator_view__version_data_member)|Gets the version of the accelerator.|  
   
 ## Inheritance Hierarchy  
  `accelerator_view`  
@@ -314,4 +314,4 @@ Destroys the accelerator_view object.
   
  
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

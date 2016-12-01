@@ -94,5 +94,3 @@ int main()
   
  Classes containing member functions can have many declarations, but the member functions themselves must have only one definition in a program. Multiple definitions cause an error message at link time. If a class contains inline function definitions, the function definitions must be identical to observe this "one definition" rule.  
   
-## See Also  
- [Member Functions](../misc/member-functions-cpp.md)

@@ -209,7 +209,7 @@ class CWindow
 |Name|Description|  
 |----------|-----------------|  
 |[CWindow::operator HWND](#cwindow__operator_hwnd)|Converts the `CWindow` object to an `HWND`.|  
-|[CWindow::operator =](#cwindow__operator__eq)|Assigns an `HWND` to the `CWindow` object.|  
+|[CWindow::operator =](#cwindow__operator_eq)|Assigns an `HWND` to the `CWindow` object.|  
   
 ### Public Data Members  
   
@@ -273,7 +273,7 @@ void Attach(HWND hWndNew) throw();
  [in] The handle to a window.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#1](../../atl/codesnippet/CPP/cwindow-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#1](../../atl/codesnippet/cpp/cwindow-class_1.cpp)]  
   
 ##  <a name="cwindow__beginpaint"></a>  CWindow::BeginPaint  
  Prepares the window for painting.  
@@ -286,7 +286,7 @@ HDC BeginPaint(LPPAINTSTRUCT lpPaint) throw();
  See [BeginPaint](http://msdn.microsoft.com/library/windows/desktop/dd183362) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#2](../../atl/codesnippet/CPP/cwindow-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#2](../../atl/codesnippet/cpp/cwindow-class_2.cpp)]  
   
 ##  <a name="cwindow__bringwindowtotop"></a>  CWindow::BringWindowToTop  
  Brings the window to the top of the Z order.  
@@ -299,7 +299,7 @@ BOOL BringWindowToTop() throw();
  See [BringWindowToTop](http://msdn.microsoft.com/library/windows/desktop/ms632673) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#3](../../atl/codesnippet/CPP/cwindow-class_3.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#3](../../atl/codesnippet/cpp/cwindow-class_3.cpp)]  
   
 ##  <a name="cwindow__centerwindow"></a>  CWindow::CenterWindow  
  Centers the window against a given window.  
@@ -316,7 +316,7 @@ BOOL CenterWindow(HWND hWndCenter = NULL) throw();
  **TRUE** if the window is successfully centered; otherwise, **FALSE**.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#4](../../atl/codesnippet/CPP/cwindow-class_4.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#4](../../atl/codesnippet/cpp/cwindow-class_4.cpp)]  
   
 ##  <a name="cwindow__changeclipboardchain"></a>  CWindow::ChangeClipboardChain  
  Removes the window from the chain of Clipboard viewers.  
@@ -513,7 +513,7 @@ BOOL DestroyWindow() throw();
  It does not destroy the `CWindow` object itself.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#5](../../atl/codesnippet/CPP/cwindow-class_5.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#5](../../atl/codesnippet/cpp/cwindow-class_5.cpp)]  
   
 ##  <a name="cwindow__detach"></a>  CWindow::Detach  
  Detaches [m_hWnd](#cwindow__m_hwnd) from the `CWindow` object and sets `m_hWnd` to **NULL**.  
@@ -526,7 +526,7 @@ HWND Detach() throw();
  The `HWND` associated with the `CWindow` object.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#6](../../atl/codesnippet/CPP/cwindow-class_6.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#6](../../atl/codesnippet/cpp/cwindow-class_6.cpp)]  
   
 ##  <a name="cwindow__dlgdirlist"></a>  CWindow::DlgDirList  
  Fills a list box with the names of all files matching a specified path or file name.  
@@ -619,7 +619,7 @@ BOOL EnableWindow(BOOL bEnable = TRUE) throw();
  See [EnableWindow](http://msdn.microsoft.com/library/windows/desktop/ms646291) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#7](../../atl/codesnippet/CPP/cwindow-class_7.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#7](../../atl/codesnippet/cpp/cwindow-class_7.cpp)]  
   
 ##  <a name="cwindow__endpaint"></a>  CWindow::EndPaint  
  Marks the end of painting.  
@@ -632,7 +632,7 @@ void EndPaint(LPPAINTSTRUCT lpPaint) throw();
  See [EndPaint](http://msdn.microsoft.com/library/windows/desktop/dd162598) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#2](../../atl/codesnippet/CPP/cwindow-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#2](../../atl/codesnippet/cpp/cwindow-class_2.cpp)]  
   
 ##  <a name="cwindow__flashwindow"></a>  CWindow::FlashWindow  
  Flashes the window once.  
@@ -655,7 +655,7 @@ BOOL GetClientRect(LPRECT lpRect) const throw();
  See [GetClientRect](http://msdn.microsoft.com/library/windows/desktop/ms633503) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#8](../../atl/codesnippet/CPP/cwindow-class_8.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#8](../../atl/codesnippet/cpp/cwindow-class_8.cpp)]  
   
 ##  <a name="cwindow__getdc"></a>  CWindow::GetDC  
  Retrieves a device context for the client area.  
@@ -668,7 +668,7 @@ HDC GetDC() throw();
  See [GetDC](http://msdn.microsoft.com/library/windows/desktop/dd144871) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#9](../../atl/codesnippet/CPP/cwindow-class_9.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#9](../../atl/codesnippet/cpp/cwindow-class_9.cpp)]  
   
 ##  <a name="cwindow__getdcex"></a>  CWindow::GetDCEx  
  Retrieves a device context for the client area and allows clipping options.  
@@ -810,7 +810,7 @@ DWORD GetExStyle() const throw();
  To retrieve the regular window styles, call [GetStyle](#cwindow__getstyle).  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#10](../../atl/codesnippet/CPP/cwindow-class_10.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#10](../../atl/codesnippet/cpp/cwindow-class_10.cpp)]  
   
 ##  <a name="cwindow__getfont"></a>  CWindow::GetFont  
  Retrieves the window's current font by sending a [WM_GETFONT](http://msdn.microsoft.com/library/windows/desktop/ms632624) message to the window.  
@@ -900,7 +900,7 @@ HWND GetParent() const throw();
  See [GetParent](http://msdn.microsoft.com/library/windows/desktop/ms633510) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#11](../../atl/codesnippet/CPP/cwindow-class_11.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#11](../../atl/codesnippet/cpp/cwindow-class_11.cpp)]  
   
 ##  <a name="cwindow__getscrollinfo"></a>  CWindow::GetScrollInfo  
  Retrieves the parameters of a scroll bar.  
@@ -948,7 +948,7 @@ DWORD GetStyle() const throw();
  To retrieve the extended window styles, call [GetExStyle](#cwindow__getexstyle).  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#12](../../atl/codesnippet/CPP/cwindow-class_12.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#12](../../atl/codesnippet/cpp/cwindow-class_12.cpp)]  
   
 ##  <a name="cwindow__getsystemmenu"></a>  CWindow::GetSystemMenu  
  Creates a copy of the system menu for modification.  
@@ -991,7 +991,7 @@ HWND GetTopWindow() const throw();
  See [GetTopWindow](http://msdn.microsoft.com/library/windows/desktop/ms633514) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#13](../../atl/codesnippet/CPP/cwindow-class_13.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#13](../../atl/codesnippet/cpp/cwindow-class_13.cpp)]  
   
 ##  <a name="cwindow__getupdaterect"></a>  CWindow::GetUpdateRect  
  Retrieves the coordinates of the smallest rectangle that completely encloses the update region.  
@@ -1044,7 +1044,7 @@ HDC GetWindowDC() throw();
  See [GetWindowDC](http://msdn.microsoft.com/library/windows/desktop/dd144947) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#14](../../atl/codesnippet/CPP/cwindow-class_14.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#14](../../atl/codesnippet/cpp/cwindow-class_14.cpp)]  
   
 ##  <a name="cwindow__getwindowlong"></a>  CWindow::GetWindowLong  
  Retrieves a 32-bit value at a specified offset into the extra window memory.  
@@ -1098,7 +1098,7 @@ DWORD GetWindowProcessID() throw();
  See [GetWindowThreadProcessID](http://msdn.microsoft.com/library/windows/desktop/ms633522) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#15](../../atl/codesnippet/CPP/cwindow-class_15.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#15](../../atl/codesnippet/cpp/cwindow-class_15.cpp)]  
   
 ##  <a name="cwindow__getwindowrect"></a>  CWindow::GetWindowRect  
  Retrieves the window's bounding dimensions.  
@@ -1174,7 +1174,7 @@ DWORD GetWindowThreadID() throw();
  See [GetWindowThreadProcessID](http://msdn.microsoft.com/library/windows/desktop/ms633522) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#16](../../atl/codesnippet/CPP/cwindow-class_16.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#16](../../atl/codesnippet/cpp/cwindow-class_16.cpp)]  
   
 ##  <a name="cwindow__getwindowword"></a>  CWindow::GetWindowWord  
  Retrieves a 16-bit value at a specified offset into the extra window memory.  
@@ -1207,7 +1207,7 @@ BOOL HideCaret() throw();
  See [HideCaret](http://msdn.microsoft.com/library/windows/desktop/ms648403) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#17](../../atl/codesnippet/CPP/cwindow-class_17.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#17](../../atl/codesnippet/cpp/cwindow-class_17.cpp)]  
   
 ##  <a name="cwindow__hilitemenuitem"></a>  CWindow::HiliteMenuItem  
  Highlights or removes the highlight from a top-level menu item.  
@@ -1234,7 +1234,7 @@ BOOL Invalidate(BOOL bErase = TRUE) throw();
  Passes **NULL** for the `RECT` parameter to the `InvalidateRect` Win32 function.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#18](../../atl/codesnippet/CPP/cwindow-class_18.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#18](../../atl/codesnippet/cpp/cwindow-class_18.cpp)]  
   
 ##  <a name="cwindow__invalidaterect"></a>  CWindow::InvalidateRect  
  Invalidates the client area within the specified rectangle.  
@@ -1301,7 +1301,7 @@ BOOL IsIconic() const throw();
  See [IsIconic](http://msdn.microsoft.com/library/windows/desktop/ms633527) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#19](../../atl/codesnippet/CPP/cwindow-class_19.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#19](../../atl/codesnippet/cpp/cwindow-class_19.cpp)]  
   
 ##  <a name="cwindow__isparentdialog"></a>  CWindow::IsParentDialog  
  Determines if the parent window of the control is a dialog window.  
@@ -1324,7 +1324,7 @@ BOOL IsWindow() throw();
  See [IsWindow](http://msdn.microsoft.com/library/windows/desktop/ms633528) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#20](../../atl/codesnippet/CPP/cwindow-class_20.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#20](../../atl/codesnippet/cpp/cwindow-class_20.cpp)]  
   
 ##  <a name="cwindow__iswindowenabled"></a>  CWindow::IsWindowEnabled  
  Determines whether the window is enabled for input.  
@@ -1337,7 +1337,7 @@ BOOL IsWindowEnabled() const throw();
  See [IsWindowEnabled](http://msdn.microsoft.com/library/windows/desktop/ms646303) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#21](../../atl/codesnippet/CPP/cwindow-class_21.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#21](../../atl/codesnippet/cpp/cwindow-class_21.cpp)]  
   
 ##  <a name="cwindow__iswindowvisible"></a>  CWindow::IsWindowVisible  
  Determines the window's visibility state.  
@@ -1350,7 +1350,7 @@ BOOL IsWindowVisible() const throw();
  See [IsWindowVisible](http://msdn.microsoft.com/library/windows/desktop/ms633530) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#22](../../atl/codesnippet/CPP/cwindow-class_22.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#22](../../atl/codesnippet/cpp/cwindow-class_22.cpp)]  
   
 ##  <a name="cwindow__iswindowunicode"></a>  CWindow::IsWindowUnicode  
  Determines whether the specified window is a native Unicode window.  
@@ -1363,7 +1363,7 @@ BOOL IsWindowUnicode() throw();
  See [IsWindowUnicode](http://msdn.microsoft.com/library/windows/desktop/ms633529) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#23](../../atl/codesnippet/CPP/cwindow-class_23.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#23](../../atl/codesnippet/cpp/cwindow-class_23.cpp)]  
   
 ##  <a name="cwindow__iszoomed"></a>  CWindow::IsZoomed  
  Determines whether the window is maximized.  
@@ -1439,7 +1439,7 @@ int MessageBox(LPCTSTR lpszText,
  See [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#24](../../atl/codesnippet/CPP/cwindow-class_24.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#24](../../atl/codesnippet/cpp/cwindow-class_24.cpp)]  
   
 ##  <a name="cwindow__modifystyle"></a>  CWindow::ModifyStyle  
  Modifies the window styles of the `CWindow` object.  
@@ -1479,7 +1479,7 @@ BOOL ModifyStyle(DWORD dwRemove,
  To modify a window's extended styles, call [ModifyStyleEx](#cwindow__modifystyleex).  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#25](../../atl/codesnippet/CPP/cwindow-class_25.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#25](../../atl/codesnippet/cpp/cwindow-class_25.cpp)]  
   
 ##  <a name="cwindow__modifystyleex"></a>  CWindow::ModifyStyleEx  
  Modifies the extended window styles of the `CWindow` object.  
@@ -1519,7 +1519,7 @@ BOOL ModifyStyleEx(DWORD dwRemove,
  To modify windows using regular window styles, call [ModifyStyle](#cwindow__modifystyle).  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#26](../../atl/codesnippet/CPP/cwindow-class_26.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#26](../../atl/codesnippet/cpp/cwindow-class_26.cpp)]  
   
 ##  <a name="cwindow__movewindow"></a>  CWindow::MoveWindow  
  Changes the window's size and position.  
@@ -1566,7 +1566,7 @@ BOOL OpenClipboard() throw();
 ```operator HWND() const throw();
 ```  
   
-##  <a name="cwindow__operator__eq"></a>  CWindow::operator =  
+##  <a name="cwindow__operator_eq"></a>  CWindow::operator =  
  Assigns an `HWND` to the `CWindow` object by setting the [m_hWnd](#cwindow__m_hwnd) member to `hWnd`.  
   
 ```
@@ -1588,7 +1588,7 @@ BOOL PostMessage(UINT message,
  Returns without waiting for the thread to process the message.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#27](../../atl/codesnippet/CPP/cwindow-class_27.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#27](../../atl/codesnippet/cpp/cwindow-class_27.cpp)]  
   
 ##  <a name="cwindow__prevdlgctrl"></a>  CWindow::PrevDlgCtrl  
  Sets the keyboard focus to the previous control in the dialog box.  
@@ -1674,7 +1674,7 @@ throw()
  See [RedrawWindow](http://msdn.microsoft.com/library/windows/desktop/dd162911) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#28](../../atl/codesnippet/CPP/cwindow-class_28.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#28](../../atl/codesnippet/cpp/cwindow-class_28.cpp)]  
   
 ##  <a name="cwindow__releasedc"></a>  CWindow::ReleaseDC  
  Releases a device context.  
@@ -1687,7 +1687,7 @@ int ReleaseDC(HDC hDC);
  See [ReleaseDC](http://msdn.microsoft.com/library/windows/desktop/dd162920) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#9](../../atl/codesnippet/CPP/cwindow-class_9.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#9](../../atl/codesnippet/cpp/cwindow-class_9.cpp)]  
   
 ##  <a name="cwindow__resizeclient"></a>  CWindow::ResizeClient  
  Resizes the window to the specified client area size.  
@@ -1781,7 +1781,7 @@ static LRESULT SendMessage(HWND hWnd,
  See [SendMessage](http://msdn.microsoft.com/library/windows/desktop/ms644950) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#29](../../atl/codesnippet/CPP/cwindow-class_29.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#29](../../atl/codesnippet/cpp/cwindow-class_29.cpp)]  
   
 ##  <a name="cwindow__sendmessagetodescendants"></a>  CWindow::SendMessageToDescendants  
  Sends the specified message to all immediate children of the `CWindow` object.  
@@ -1834,7 +1834,7 @@ HWND SetActiveWindow() throw();
  See [SetActiveWindow](http://msdn.microsoft.com/library/windows/desktop/ms646311) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#30](../../atl/codesnippet/CPP/cwindow-class_30.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#30](../../atl/codesnippet/cpp/cwindow-class_30.cpp)]  
   
 ##  <a name="cwindow__setcapture"></a>  CWindow::SetCapture  
  Sends all subsequent mouse input to the window.  
@@ -1903,7 +1903,7 @@ HWND SetFocus() throw();
  See [SetFocus](http://msdn.microsoft.com/library/windows/desktop/ms646312) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#31](../../atl/codesnippet/CPP/cwindow-class_31.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#31](../../atl/codesnippet/cpp/cwindow-class_31.cpp)]  
   
 ##  <a name="cwindow__setfont"></a>  CWindow::SetFont  
  Changes the window's current font by sending a [WM_SETFONT](http://msdn.microsoft.com/library/windows/desktop/ms632642) message to the window.  
@@ -1977,7 +1977,7 @@ HWND SetParent(HWND hWndNewParent) throw();
  See [SetParent](http://msdn.microsoft.com/library/windows/desktop/ms633541) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#32](../../atl/codesnippet/CPP/cwindow-class_32.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#32](../../atl/codesnippet/cpp/cwindow-class_32.cpp)]  
   
 ##  <a name="cwindow__setredraw"></a>  CWindow::SetRedraw  
  Sets or clears the redraw flag by sending a [WM_SETREDRAW](http://msdn.microsoft.com/library/windows/desktop/dd145219) message to the window.  
@@ -1994,7 +1994,7 @@ void SetRedraw(BOOL bRedraw = TRUE) throw();
  Call `SetRedraw` to allow changes to be redrawn or to prevent changes from being redrawn.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#33](../../atl/codesnippet/CPP/cwindow-class_33.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#33](../../atl/codesnippet/cpp/cwindow-class_33.cpp)]  
   
 ##  <a name="cwindow__setscrollinfo"></a>  CWindow::SetScrollInfo  
  Sets the parameters of a scroll bar.  
@@ -2134,7 +2134,7 @@ BOOL SetWindowText(LPCTSTR lpszString) throw();
  See [SetWindowText](http://msdn.microsoft.com/library/windows/desktop/ms633546) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#34](../../atl/codesnippet/CPP/cwindow-class_34.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#34](../../atl/codesnippet/cpp/cwindow-class_34.cpp)]  
   
 ##  <a name="cwindow__setwindowword"></a>  CWindow::SetWindowWord  
  Sets a 16-bit value at a specified offset into the extra window memory.  
@@ -2157,7 +2157,7 @@ BOOL ShowCaret() throw();
  See [ShowCaret](http://msdn.microsoft.com/library/windows/desktop/ms648406) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#35](../../atl/codesnippet/CPP/cwindow-class_35.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#35](../../atl/codesnippet/cpp/cwindow-class_35.cpp)]  
   
 ##  <a name="cwindow__showownedpopups"></a>  CWindow::ShowOwnedPopups  
  Shows or hides the pop-up windows owned by the window.  
@@ -2190,7 +2190,7 @@ BOOL ShowWindow(int nCmdShow) throw();
  See [ShowWindow](http://msdn.microsoft.com/library/windows/desktop/ms633548) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#36](../../atl/codesnippet/CPP/cwindow-class_36.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#36](../../atl/codesnippet/cpp/cwindow-class_36.cpp)]  
   
 ##  <a name="cwindow__showwindowasync"></a>  CWindow::ShowWindowAsync  
  Sets the show state of a window created by a different thread.  
@@ -2213,7 +2213,7 @@ BOOL UpdateWindow() throw();
  See [UpdateWindow](http://msdn.microsoft.com/library/windows/desktop/dd145167) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#37](../../atl/codesnippet/CPP/cwindow-class_37.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#37](../../atl/codesnippet/cpp/cwindow-class_37.cpp)]  
   
 ##  <a name="cwindow__validaterect"></a>  CWindow::ValidateRect  
  Validates the client area within the specified rectangle.  

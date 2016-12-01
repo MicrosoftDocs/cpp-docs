@@ -227,7 +227,7 @@ BOOL Attach(HMENU hMenu);
  If the menu you want to manipulate is already associated with a window, you can use the [CWnd::GetMenu](../../mfc/reference/cwnd-class.md#cwnd__getmenu) function to get a handle to the menu.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#21](../../mfc/reference/codesnippet/CPP/cmenu-class_1.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#21](../../mfc/reference/codesnippet/cpp/cmenu-class_1.cpp)]  
   
 ##  <a name="cmenu__checkmenuitem"></a>  CMenu::CheckMenuItem  
  Adds check marks to or removes check marks from menu items in the pop-up menu.  
@@ -300,7 +300,7 @@ BOOL CheckMenuRadioItem(
  At the same time, the function unchecks all other menu items in the associated group and clears the radio-item type flag for those items. The checked item is displayed using a radio button (or bullet) bitmap instead of a check mark bitmap.  
   
 ### Example  
-  See the example for [ON_COMMAND_RANGE](http://msdn.microsoft.com/Library/c52719fc-dd6e-48c9-af79-383f48d608e0).  
+  See the example for [ON_COMMAND_RANGE](http://msdn.microsoft.com/library/c52719fc-dd6e-48c9-af79-383f48d608e0).  
   
 ##  <a name="cmenu__cmenu"></a>  CMenu::CMenu  
  Creates an empty menu and attaches it to a `CMenu` object.  
@@ -340,7 +340,7 @@ BOOL CreateMenu();
  Before exiting, an application must free system resources associated with a menu if the menu is not assigned to a window. An application frees a menu by calling the [DestroyMenu](#cmenu__destroymenu) member function.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#22](../../mfc/reference/codesnippet/CPP/cmenu-class_2.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#22](../../mfc/reference/codesnippet/cpp/cmenu-class_2.cpp)]  
   
 ##  <a name="cmenu__createpopupmenu"></a>  CMenu::CreatePopupMenu  
  Creates a pop-up menu and attaches it to the `CMenu` object.  
@@ -405,7 +405,7 @@ static void PASCAL DeleteTempMap();
  `DeleteTempMap` detaches the Windows menu object attached to a temporary `CMenu` object before deleting the `CMenu` object.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#23](../../mfc/reference/codesnippet/CPP/cmenu-class_3.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#23](../../mfc/reference/codesnippet/cpp/cmenu-class_3.cpp)]  
   
 ##  <a name="cmenu__destroymenu"></a>  CMenu::DestroyMenu  
  Destroys the menu and any Windows resources that were used.  
@@ -437,7 +437,7 @@ HMENU Detach();
  The `m_hMenu` data member is set to **NULL**.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#21](../../mfc/reference/codesnippet/CPP/cmenu-class_1.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#21](../../mfc/reference/codesnippet/cpp/cmenu-class_1.cpp)]  
   
 ##  <a name="cmenu__drawitem"></a>  CMenu::DrawItem  
  Called by the framework when a visual aspect of an owner-drawn menu changes.  
@@ -458,7 +458,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Example  
  The following code is from the MFC [CTRLTEST](../../top/visual-cpp-samples.md) sample:  
   
- [!code-cpp[NVC_MFCWindowing#24](../../mfc/reference/codesnippet/CPP/cmenu-class_4.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#24](../../mfc/reference/codesnippet/cpp/cmenu-class_4.cpp)]  
   
 ##  <a name="cmenu__enablemenuitem"></a>  CMenu::EnableMenuItem  
  Enables, disables, or dims a menu item.  
@@ -497,7 +497,7 @@ UINT EnableMenuItem(
  When an application specifies the **MF_BYCOMMAND** flag, Windows checks all pop-up menu items that are subordinate to the `CMenu`; therefore, unless duplicate menu items are present, using the `CMenu` of the menu bar is sufficient.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#25](../../mfc/reference/codesnippet/CPP/cmenu-class_5.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#25](../../mfc/reference/codesnippet/cpp/cmenu-class_5.cpp)]  
   
 ##  <a name="cmenu__fromhandle"></a>  CMenu::FromHandle  
  Returns a pointer to a `CMenu` object given a Windows handle to a menu.  
@@ -646,7 +646,7 @@ BOOL GetMenuItemInfo(
  This member function implements the behavior of the of the Win32 function [GetMenuItemInfo](http://msdn.microsoft.com/library/windows/desktop/ms647980), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. Note that in the MFC implementation of `GetMenuItemInfo`, you do not use a handle to a menu.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#26](../../mfc/reference/codesnippet/CPP/cmenu-class_6.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#26](../../mfc/reference/codesnippet/cpp/cmenu-class_6.cpp)]  
   
 ##  <a name="cmenu__getmenustate"></a>  CMenu::GetMenuState  
  Returns the status of the specified menu item or the number of items in a pop-up menu.  
@@ -690,7 +690,7 @@ UINT GetMenuState(
 - **MF_UNCHECKED** Acts as a toggle with **MF_CHECKED** to remove a check mark next to the item. When the application supplies check-mark bitmaps (see the `SetMenuItemBitmaps` member function), the "check mark off" bitmap is displayed. Note that the value of this constant is 0; an application should not test against 0 for failure when using this value.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#27](../../mfc/reference/codesnippet/CPP/cmenu-class_7.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#27](../../mfc/reference/codesnippet/cpp/cmenu-class_7.cpp)]  
   
 ##  <a name="cmenu__getmenustring"></a>  CMenu::GetMenuString  
  Copies the label of the specified menu item to the specified buffer.  
@@ -831,7 +831,7 @@ BOOL InsertMenu(
  If the active multiple document interface (MDI) child window is maximized and an application inserts a pop-up menu into the MDI application's menu by calling this function and specifying the **MF_BYPOSITION** flag, the menu is inserted one position farther left than expected. This happens because the Control menu of the active MDI child window is inserted into the first position of the MDI frame window's menu bar. To position the menu properly, the application must add 1 to the position value that would otherwise be used. An application can use the **WM_MDIGETACTIVE** message to determine whether the currently active child window is maximized.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#28](../../mfc/reference/codesnippet/CPP/cmenu-class_8.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#28](../../mfc/reference/codesnippet/cpp/cmenu-class_8.cpp)]  
   
 ##  <a name="cmenu__insertmenuitem"></a>  CMenu::InsertMenuItem  
  Inserts a new menu item at the specified position in a menu.  
@@ -880,7 +880,7 @@ BOOL LoadMenu(UINT nIDResource);
  Before exiting, an application must free system resources associated with a menu if the menu is not assigned to a window. An application frees a menu by calling the [DestroyMenu](#cmenu__destroymenu) member function.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#29](../../mfc/reference/codesnippet/CPP/cmenu-class_9.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#29](../../mfc/reference/codesnippet/cpp/cmenu-class_9.cpp)]  
   
 ##  <a name="cmenu__loadmenuindirect"></a>  CMenu::LoadMenuIndirect  
  Loads a resource from a menu template in memory and attaches it to the `CMenu` object.  
@@ -908,7 +908,7 @@ BOOL LoadMenuIndirect(const void* lpMenuTemplate);
  Before exiting, an application must free system resources associated with a menu if the menu is not assigned to a window. An application frees a menu by calling the [DestroyMenu](#cmenu__destroymenu) member function.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#30](../../mfc/reference/codesnippet/CPP/cmenu-class_10.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#30](../../mfc/reference/codesnippet/cpp/cmenu-class_10.cpp)]  
   
 ##  <a name="cmenu__m_hmenu"></a>  CMenu::m_hMenu  
  Specifies the `HMENU` handle of the Windows menu attached to the `CMenu` object.  
@@ -939,7 +939,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### Example  
  The following code is from the MFC [CTRLTEST](../../top/visual-cpp-samples.md) sample:  
   
- [!code-cpp[NVC_MFCWindowing#31](../../mfc/reference/codesnippet/CPP/cmenu-class_11.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#31](../../mfc/reference/codesnippet/cpp/cmenu-class_11.cpp)]  
   
 ##  <a name="cmenu__modifymenu"></a>  CMenu::ModifyMenu  
  Changes an existing menu item at the position specified by `nPosition`.  
@@ -1181,9 +1181,9 @@ BOOL SetMenuItemBitmaps(
  The Windows **GetMenuCheckMarkDimensions** function retrieves the dimensions of the default check mark used for menu items. The application uses these values to determine the appropriate size for the bitmaps supplied with this function. Get the size, create your bitmaps, and then set them.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#32](../../mfc/reference/codesnippet/CPP/cmenu-class_12.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#32](../../mfc/reference/codesnippet/cpp/cmenu-class_12.cpp)]  
   
- [!code-cpp[NVC_MFCWindowing#33](../../mfc/reference/codesnippet/CPP/cmenu-class_13.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#33](../../mfc/reference/codesnippet/cpp/cmenu-class_13.cpp)]  
   
 ##  <a name="cmenu__setmenuiteminfo"></a>  CMenu::SetMenuItemInfo  
  Changes information about a menu item.  
@@ -1243,7 +1243,7 @@ BOOL TrackPopupMenu(
  A floating pop-up menu can appear anywhere on the screen.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#34](../../mfc/reference/codesnippet/CPP/cmenu-class_14.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#34](../../mfc/reference/codesnippet/cpp/cmenu-class_14.cpp)]  
   
 ##  <a name="cmenu__trackpopupmenuex"></a>  CMenu::TrackPopupMenuEx  
  Displays a floating pop-up menu at the specified location and tracks the selection of items on the pop-up menu.  

@@ -142,7 +142,7 @@ CStdioFile(
  If the file cannot be opened or created, the constructor throws a `CFileException*`.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#37](../../atl-mfc-shared/reference/codesnippet/CPP/cstdiofile-class_1.cpp)]  
+ [!code-cpp[NVC_MFCFiles#37](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_1.cpp)]  
   
 ##  <a name="cstdiofile__m_pstream"></a>  CStdioFile::m_pStream  
  The `m_pStream` data member is the pointer to an open file as returned by the C run-time function `fopen`.  
@@ -224,7 +224,7 @@ virtual BOOL ReadString(
 >  The `CString` version of this function removes the `'\n'` if present; the `LPTSTR` version does not.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#38](../../atl-mfc-shared/reference/codesnippet/CPP/cstdiofile-class_2.cpp)]  
+ [!code-cpp[NVC_MFCFiles#38](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_2.cpp)]  
   
 ##  <a name="cstdiofile__seek"></a>  CStdioFile::Seek  
  Repositions the pointer in a previously opened file.  
@@ -261,7 +261,7 @@ virtual ULONGLONG Seek(
 ### Example  
  The following example shows how to use `Seek` to move the pointer 1000 bytes from the beginning of the `cfile` file. Note that `Seek` does not read data, so you must subsequently call [CStdioFile::ReadString](#cstdiofile__readstring) to read data.  
   
- [!code-cpp[NVC_MFCFiles#39](../../atl-mfc-shared/reference/codesnippet/CPP/cstdiofile-class_3.cpp)]  
+ [!code-cpp[NVC_MFCFiles#39](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_3.cpp)]  
   
 ##  <a name="cstdiofile__writestring"></a>  CStdioFile::WriteString  
  Writes data from a buffer to the file associated with the `CStdioFile` object.  
@@ -284,7 +284,7 @@ virtual void WriteString(LPCTSTR lpsz);
  This method throws a `CFileException*` in response to file system errors.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#40](../../atl-mfc-shared/reference/codesnippet/CPP/cstdiofile-class_4.cpp)]  
+ [!code-cpp[NVC_MFCFiles#40](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_4.cpp)]  
   
 ## See Also  
  [CFile Class](../../mfc/reference/cfile-class.md)   

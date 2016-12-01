@@ -60,7 +60,7 @@ Class
 ## Example  
  Here is a sample property set map:  
   
- [!code-cpp[NVC_OLEDB_Provider#3](../../data/oledb/codesnippet/CPP/begin-propset-map_1.h)]  
+ [!code-cpp[NVC_OLEDB_Provider#3](../../data/oledb/codesnippet/cpp/begin-propset-map_1.h)]  
   
 ## Requirements  
  **Header:** atldb.h  

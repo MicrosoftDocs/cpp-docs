@@ -55,6 +55,7 @@ Insert "Search Results" summary here.
   
  **Add control based on**  
  Sets the control to be based on a Windows control type by adding a [CContainedWindow](ccontainedwindowt-class.md) data member to the class implementing the control. It also adds a message map and message handler functions to handle Windows messages for the control. Choose from the list the type of Windows control you want to create, if any.  
+
   
 -   `Button`  
   

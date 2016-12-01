@@ -53,7 +53,7 @@ During the life cycle of a dialog box, the user invokes the dialog box, typicall
   
 -   [Using a dialog template in memory](../mfc/using-a-dialog-template-in-memory.md)  
   
--   [Setting the dialog box's background color](../mfc/setting-the-dialog-box’s-background-color.md)  
+-   [Setting the dialog box's background color](../mfc/setting-the-dialog-boxs-background-color.md)  
   
 -   [Initializing the dialog box](../mfc/initializing-the-dialog-box.md)  
   

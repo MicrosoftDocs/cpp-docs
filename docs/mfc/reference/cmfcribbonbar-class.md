@@ -233,7 +233,7 @@ CMFCRibbonCategory* AddCategory(
 ### Example  
  The following example demonstrates how to use the `AddCategory` method in the `CMFCRibbonBar` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#5](../../mfc/reference/codesnippet/CPP/cmfcribbonbar-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#5](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_1.cpp)]  
   
 ##  <a name="cmfcribbonbar__addcontextcategory"></a>  CMFCRibbonBar::AddContextCategory  
  Creates and initializes a new context category for the ribbon bar.  
@@ -344,7 +344,7 @@ CMFCRibbonMainPanel* AddMainCategory(
 ### Example  
  The following example demonstrates how to use the `AddMainCategory` method in the `CMFCRibbonBar` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#4](../../mfc/reference/codesnippet/CPP/cmfcribbonbar-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#4](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_2.cpp)]  
   
 ##  <a name="cmfcribbonbar__addprintpreviewcategory"></a>  CMFCRibbonBar::AddPrintPreviewCategory  
  Creates a print preview category on the ribbon bar.  
@@ -441,7 +441,7 @@ BOOL Create(
 ### Example  
  The following example demonstrates how to use the `Create` method of the `CMFCRibbonBar` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#1](../../mfc/reference/codesnippet/CPP/cmfcribbonbar-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#1](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_3.cpp)]  
   
 ##  <a name="cmfcribbonbar__createex"></a>  CMFCRibbonBar::CreateEx  
  Creates a window for the ribbon bar.  
@@ -1495,7 +1495,7 @@ void SetApplicationButton(
 ### Example  
  The following example demonstrates how to use the `SetApplicationButton` method in the `CMFCRibbonBar` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#3](../../mfc/reference/codesnippet/CPP/cmfcribbonbar-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#3](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_4.cpp)]  
   
 ##  <a name="cmfcribbonbar__setelementkeys"></a>  CMFCRibbonBar::SetElementKeys  
  Sets the keytips for all ribbon elements that have the specified command ID.  
@@ -1580,7 +1580,7 @@ void SetQuickAccessCommands(
 ### Example  
  The following example demonstrates how to use the `SetQuickAccessCommands` method in the `CMFCRibbonBar` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#8](../../mfc/reference/codesnippet/CPP/cmfcribbonbar-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#8](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_5.cpp)]  
   
 ##  <a name="cmfcribbonbar__setquickaccessdefaultstate"></a>  CMFCRibbonBar::SetQuickAccessDefaultState  
  Sets the quick access toolbar to the default state.  
@@ -1599,7 +1599,7 @@ void SetQuickAccessDefaultState(const CMFCRibbonQuickAccessToolBarDefaultState& 
 ### Example  
  The following example demonstrates how to use the `SetQuickAccessDefaultState` method in the `CMFCRibbonBar` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#9](../../mfc/reference/codesnippet/CPP/cmfcribbonbar-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#9](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_6.cpp)]  
   
 ##  <a name="cmfcribbonbar__setquickaccesstoolbarontop"></a>  CMFCRibbonBar::SetQuickAccessToolbarOnTop  
  Positions the quick access toolbar above or below the ribbon bar.  

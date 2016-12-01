@@ -148,5 +148,5 @@ This article explains the exception-handling mechanisms available in MFC. Two me
   
 ## See Also  
  [C++ Exception Handling](../cpp/cpp-exception-handling.md)   
- [How Do I: Create my Own Custom Exception Classes](http://go.microsoft.com/fwlink/LinkId=128045)
+ [How Do I: Create my Own Custom Exception Classes](http://go.microsoft.com/fwlink/linkid=128045)
 

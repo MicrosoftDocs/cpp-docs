@@ -43,7 +43,7 @@ As with most dialog boxes, the exchange of data between the property sheet and t
   
  The following example illustrates exchanging data between a view and two pages of a property sheet:  
   
- [!code-cpp[NVC_MFCDocView#4](../mfc/codesnippet/CPP/exchanging-data_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#4](../mfc/codesnippet/cpp/exchanging-data_1.cpp)]  
   
 ## See Also  
  [Property Sheets](../mfc/property-sheets-mfc.md)

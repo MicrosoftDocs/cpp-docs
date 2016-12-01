@@ -105,7 +105,7 @@ CProgressCtrl();
  After constructing the `CProgressCtrl` object, call `CProgressCtrl::Create` to create the progress bar control.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CProgressCtrl#1](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl#1](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_1.cpp)]  
   
 ##  <a name="cprogressctrl__create"></a>  CProgressCtrl::Create  
  Creates a progress bar control and attaches it to a `CProgressCtrl` object.  
@@ -142,7 +142,7 @@ virtual BOOL Create(
  You construct a `CProgressCtrl` object in two steps. First, call the constructor, which creates the `CProgressCtrl` object, and then call **Create**, which creates the progress bar control.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CProgressCtrl#2](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl#2](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_2.cpp)]  
   
 ##  <a name="cprogressctrl__createex"></a>  CProgressCtrl::CreateEx  
  Creates a control (a child window) and associates it with the `CProgressCtrl` object.  
@@ -222,7 +222,7 @@ int GetPos();
  The position of the progress bar control is not the physical location on the screen, but rather is between the upper and lower range indicated in [SetRange](#cprogressctrl__setrange).  
   
 ### Example  
- [!code-cpp[NVC_MFC_CProgressCtrl#3](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl#3](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_3.cpp)]  
   
 ##  <a name="cprogressctrl__getrange"></a>  CProgressCtrl::GetRange  
  Gets the current lower and upper limits, or range, of the progress bar control.  
@@ -244,7 +244,7 @@ void GetRange(
  This function copies the values of the lower and upper limits to the integers referenced by `nLower` and `nUpper`, respectively.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CProgressCtrl#4](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl#4](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_4.cpp)]  
   
 ##  <a name="cprogressctrl__getstate"></a>  CProgressCtrl::GetState  
  Gets the state of the current progress bar control.  
@@ -270,12 +270,12 @@ int GetState() const;
 ### Example  
  The following code example defines the variable, `m_progressCtrl`, that is used to programmatically access the progress bar control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_5.h)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_5.h)]  
   
 ### Example  
  The following code example retrieves the state of the current progress bar control.  
   
- [!code-cpp[NVC_MFC_CProgressCtrl_s1#5](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl_s1#5](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_6.cpp)]  
   
 ##  <a name="cprogressctrl__getstep"></a>  CProgressCtrl::GetStep  
  Retrieves the step increment for the progress bar of the current progress bar control.  
@@ -297,12 +297,12 @@ int GetStep() const;
 ### Example  
  The following code example defines the variable, `m_progressCtrl`, that is used to programmatically access the progress bar control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_5.h)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_5.h)]  
   
 ### Example  
  The following code example retrieves the step increment of the current progress bar control.  
   
- [!code-cpp[NVC_MFC_CProgressCtrl_s1#3](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_7.cpp)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl_s1#3](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_7.cpp)]  
   
 ##  <a name="cprogressctrl__offsetpos"></a>  CProgressCtrl::OffsetPos  
  Advances the progress bar control's current position by the increment specified by `nPos` and redraws the bar to reflect the new position.  
@@ -319,7 +319,7 @@ int OffsetPos(int nPos);
  The previous position of the progress bar control.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CProgressCtrl#5](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_8.cpp)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl#5](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_8.cpp)]  
   
 ##  <a name="cprogressctrl__setbarcolor"></a>  CProgressCtrl::SetBarColor  
  Sets the color of the progress indicator bar in the current progress bar control.  
@@ -345,12 +345,12 @@ COLORREF SetBarColor(COLORREF clrBar);
 ### Example  
  The following code example defines the variable, `m_progressCtrl`, that is used to programmatically access the progress bar control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_5.h)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_5.h)]  
   
 ### Example  
  The following code example changes the color of the progress bar to red, green, blue, or the default.  
   
- [!code-cpp[NVC_MFC_CProgressCtrl_s1#1](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_9.cpp)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_9.cpp)]  
   
 ##  <a name="cprogressctrl__setbkcolor"></a>  CProgressCtrl::SetBkColor  
  Sets the background color for the progress bar.  
@@ -367,7 +367,7 @@ COLORREF SetBkColor(COLORREF clrNew);
  The [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value indicating the previous background color, or **CLR_DEFAULT** if the background color is the default color.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CProgressCtrl#6](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_10.cpp)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl#6](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_10.cpp)]  
   
 ##  <a name="cprogressctrl__setmarquee"></a>  CProgressCtrl::SetMarquee  
  Turns marquee mode on or off for the current progress bar control.  
@@ -396,12 +396,12 @@ BOOL SetMarquee(
 ### Example  
  The following code example defines the variable, `m_progressCtrl`, that is used to programmatically access the progress bar control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_5.h)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_5.h)]  
   
 ### Example  
  The following code example starts and stops the marquee scrolling animation.  
   
- [!code-cpp[NVC_MFC_CProgressCtrl_s1#2](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_11.cpp)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_11.cpp)]  
   
 ##  <a name="cprogressctrl__setpos"></a>  CProgressCtrl::SetPos  
  Sets the progress bar control's current position as specified by `nPos` and redraws the bar to reflect the new position.  
@@ -421,7 +421,7 @@ int SetPos(int nPos);
  The position of the progress bar control is not the physical location on the screen, but rather is between the upper and lower range indicated in [SetRange](#cprogressctrl__setrange).  
   
 ### Example  
- [!code-cpp[NVC_MFC_CProgressCtrl#7](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_12.cpp)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl#7](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_12.cpp)]  
   
 ##  <a name="cprogressctrl__setrange"></a>  CProgressCtrl::SetRange  
  Sets the upper and lower limits of the progress bar control's range and redraws the bar to reflect the new ranges.  
@@ -448,7 +448,7 @@ void SetRange32(
  The member function `SetRange32` sets the 32-bit range for the progress control.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CProgressCtrl#8](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_13.cpp)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl#8](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_13.cpp)]  
   
 ##  <a name="cprogressctrl__setstate"></a>  CProgressCtrl::SetState  
  Sets the state of the current progress bar control.  
@@ -472,12 +472,12 @@ int SetState(int iState);
 ### Example  
  The following code example defines the variable, `m_progressCtrl`, that is used to programmatically access the progress bar control. This variable is used in the next example.  
   
- [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_5.h)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_5.h)]  
   
 ### Example  
  The following code example sets the state of the current progress bar control to Paused or In Progress.  
   
- [!code-cpp[NVC_MFC_CProgressCtrl_s1#4](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_14.cpp)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl_s1#4](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_14.cpp)]  
   
 ##  <a name="cprogressctrl__setstep"></a>  CProgressCtrl::SetStep  
  Specifies the step increment for a progress bar control.  
@@ -499,7 +499,7 @@ int SetStep(int nStep);
  The default step increment is 10.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CProgressCtrl#9](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_15.cpp)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl#9](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_15.cpp)]  
   
 ##  <a name="cprogressctrl__stepit"></a>  CProgressCtrl::StepIt  
  Advances the current position for a progress bar control by the step increment and redraws the bar to reflect the new position.  
@@ -515,7 +515,7 @@ int StepIt();
  The step increment is set by the `CProgressCtrl::SetStep` member function.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CProgressCtrl#10](../../mfc/reference/codesnippet/CPP/cprogressctrl-class_16.cpp)]  
+ [!code-cpp[NVC_MFC_CProgressCtrl#10](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_16.cpp)]  
   
 ## See Also  
  [MFC Sample CMNCTRL2](../../top/visual-cpp-samples.md)   

@@ -143,7 +143,7 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 ## Example  
  The following example derives a class from `CMDIFrameWndEx`. This code snippet comes from the [DrawClient Sample: MFC Ribbon-Based OLE Object Drawing Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_DrawClient#1](../../mfc/reference/codesnippet/CPP/cmdiframewndex-class_1.h)]  
+ [!code-cpp[NVC_MFC_DrawClient#1](../../mfc/reference/codesnippet/cpp/cmdiframewndex-class_1.h)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -299,7 +299,7 @@ virtual CMDIChildWndEx* CreateDocumentWindow(
   
  In this example, `g_strStartViewName` could be the name of a "virtual document" (for example, "Start Page") that is not actually loaded from a disk file. Therefore we need special processing to handle that case.  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#13](../../mfc/codesnippet/CPP/cmdiframewndex-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#13](../../mfc/codesnippet/cpp/cmdiframewndex-class_2.cpp)]  
   
 ##  <a name="cmdiframewndex__createnewwindow"></a>  CMDIFrameWndEx::CreateNewWindow  
  Called by the framework to create a new window.  
@@ -346,7 +346,7 @@ void DockPane(
 ### Example  
  The following example demonstrates the use of the `DockPane` method. This code snippet comes from the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#4](../../mfc/codesnippet/CPP/cmdiframewndex-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#4](../../mfc/codesnippet/cpp/cmdiframewndex-class_3.cpp)]  
   
 ##  <a name="cmdiframewndex__dockpaneleftof"></a>  CMDIFrameWndEx::DockPaneLeftOf  
  Docks one pane to the left of another pane.  
@@ -373,7 +373,7 @@ BOOL DockPaneLeftOf(
 ### Example  
  The following example shows how the `DockPaneLeftOf` method is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#5](../../mfc/codesnippet/CPP/cmdiframewndex-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#5](../../mfc/codesnippet/cpp/cmdiframewndex-class_4.cpp)]  
   
 ##  <a name="cmdiframewndex__enableautohidepanes"></a>  CMDIFrameWndEx::EnableAutoHidePanes  
  Enables auto-hide mode for panes when they are docked at the specified sides of the main frame window.  
@@ -400,7 +400,7 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 ### Example  
  The following example shows how the `EnableAutoHidePanes` method is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#6](../../mfc/codesnippet/CPP/cmdiframewndex-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#6](../../mfc/codesnippet/cpp/cmdiframewndex-class_5.cpp)]  
   
 ### Remarks  
   
@@ -423,7 +423,7 @@ BOOL EnableDocking(DWORD dwDockStyle);
 ### Example  
  The following example shows how the `EnableDocking` method is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#7](../../mfc/codesnippet/CPP/cmdiframewndex-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#7](../../mfc/codesnippet/cpp/cmdiframewndex-class_6.cpp)]  
   
 ##  <a name="cmdiframewndex__enablefullscreenmainmenu"></a>  CMDIFrameWndEx::EnableFullScreenMainMenu  
  Shows or hides the main menu in full-screen mode.  
@@ -503,7 +503,7 @@ void EnableMDITabbedGroups(
 ### Example  
  The following example shows how `EnableMDITabbedGroups` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#8](../../mfc/codesnippet/CPP/cmdiframewndex-class_7.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#8](../../mfc/codesnippet/cpp/cmdiframewndex-class_7.cpp)]  
   
 ##  <a name="cmdiframewndex__enablemditabs"></a>  CMDIFrameWndEx::EnableMDITabs  
  Enables or disables the MDI Tabs feature for the MDI frame window. When enabled, the frame window displays a tab for each MDI child window.  
@@ -551,7 +551,7 @@ void EnableMDITabs(
 ### Example  
  The following example shows how `EnableMDITabs` is used in the [MDITabsDemo Sample: MFC Tabbed MDI Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_MDITabsDemo#3](../../mfc/reference/codesnippet/CPP/cmdiframewndex-class_8.cpp)]  
+ [!code-cpp[NVC_MFC_MDITabsDemo#3](../../mfc/reference/codesnippet/cpp/cmdiframewndex-class_8.cpp)]  
   
 ##  <a name="cmdiframewndex__enablemditabslastactiveactivation"></a>  CMDIFrameWndEx::EnableMDITabsLastActiveActivation  
  Specifies whether the last active tab should be opened when the user closes the current tab.  
@@ -613,7 +613,7 @@ void EnablePaneMenu(
 ### Example  
  The following example shows how `EnablePaneMenu` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#9](../../mfc/codesnippet/CPP/cmdiframewndex-class_9.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#9](../../mfc/codesnippet/cpp/cmdiframewndex-class_9.cpp)]  
   
 ##  <a name="cmdiframewndex__enablewindowsdialog"></a>  CMDIFrameWndEx::EnableWindowsDialog  
  Inserts a menu item whose command ID calls a [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) dialog box.  
@@ -652,7 +652,7 @@ void EnableWindowsDialog(
 ### Example  
  The following example shows how `EnableWindowsDialog` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#10](../../mfc/codesnippet/CPP/cmdiframewndex-class_10.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#10](../../mfc/codesnippet/cpp/cmdiframewndex-class_10.cpp)]  
   
 ##  <a name="cmdiframewndex__getactivepopup"></a>  CMDIFrameWndEx::GetActivePopup  
  Returns a pointer to the currently displayed popup menu.  
@@ -989,7 +989,7 @@ virtual BOOL LoadMDIState(LPCTSTR lpszProfileName);
 ### Example  
  The following example shows how `LoadMDIState` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#11](../../mfc/codesnippet/CPP/cmdiframewndex-class_11.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#11](../../mfc/codesnippet/cpp/cmdiframewndex-class_11.cpp)]  
   
 ##  <a name="cmdiframewndex__mditabmovetonextgroup"></a>  CMDIFrameWndEx::MDITabMoveToNextGroup  
  Moves the active tab from the currently active tabbed window to the next or previous tabbed group.  
@@ -1019,7 +1019,7 @@ void MDITabNewGroup(BOOL bVert=TRUE);
 ### Example  
  The following example shows how `MDITabNewGroup` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#12](../../mfc/codesnippet/CPP/cmdiframewndex-class_12.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#12](../../mfc/codesnippet/cpp/cmdiframewndex-class_12.cpp)]  
   
 ##  <a name="cmdiframewndex__m_bcancovertcontrolbartomdichild"></a>  CMDIFrameWndEx::m_bCanCovertControlBarToMDIChild  
  Specifies whether docking panes can be converted to MDI child windows.  
@@ -1036,7 +1036,7 @@ BOOL m_bCanCovertControlBarToMDIChild;
 ### Example  
  The following example shows how `m_bCanCovertControlBarToMDIChild` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#13](../../mfc/codesnippet/CPP/cmdiframewndex-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#13](../../mfc/codesnippet/cpp/cmdiframewndex-class_2.cpp)]  
   
 ##  <a name="cmdiframewndex__m_bdisablesetredraw"></a>  CMDIFrameWndEx::m_bDisableSetRedraw  
  Enables or disables redraw optimization for MDI child windows.  
@@ -1329,7 +1329,7 @@ virtual BOOL OnShowMDITabContextMenu(
 ### Example  
  The following example shows how `OnShowMDITabContextMenu` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#14](../../mfc/codesnippet/CPP/cmdiframewndex-class_13.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#14](../../mfc/codesnippet/cpp/cmdiframewndex-class_13.cpp)]  
   
 ##  <a name="cmdiframewndex__onshowpanes"></a>  CMDIFrameWndEx::OnShowPanes  
  Called by the framework to show or hide panes.  
@@ -1537,7 +1537,7 @@ virtual BOOL SaveMDIState(LPCTSTR lpszProfileName);
 ### Example  
  The following example shows how `SaveMDIState` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#15](../../mfc/codesnippet/CPP/cmdiframewndex-class_14.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#15](../../mfc/codesnippet/cpp/cmdiframewndex-class_14.cpp)]  
   
 ##  <a name="cmdiframewndex__setprintpreviewframe"></a>  CMDIFrameWndEx::SetPrintPreviewFrame  
  Sets the print preview frame window.  
@@ -1611,7 +1611,7 @@ void ShowPane(
 ### Example  
  The following example shows how `ShowPane` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#16](../../mfc/codesnippet/CPP/cmdiframewndex-class_15.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#16](../../mfc/codesnippet/cpp/cmdiframewndex-class_15.cpp)]  
   
 ##  <a name="cmdiframewndex__showwindowsdialog"></a>  CMDIFrameWndEx::ShowWindowsDialog  
  Creates a [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) box and opens it.  
@@ -1623,7 +1623,7 @@ void ShowWindowsDialog();
 ### Example  
  The following example shows how `ShowWindowsDialog` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#18](../../mfc/codesnippet/CPP/cmdiframewndex-class_16.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#18](../../mfc/codesnippet/cpp/cmdiframewndex-class_16.cpp)]  
   
 ##  <a name="cmdiframewndex__tabbeddocumenttocontrolbar"></a>  CMDIFrameWndEx::TabbedDocumentToControlBar  
  Converts the specified tabbed document to a docking pane.  
@@ -1645,7 +1645,7 @@ virtual BOOL TabbedDocumentToControlBar(CMDIChildWndEx* pMDIChildWnd);
 ### Example  
  The following example shows how `TabbedDocumentToControlBar` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#19](../../mfc/codesnippet/CPP/cmdiframewndex-class_17.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#19](../../mfc/codesnippet/cpp/cmdiframewndex-class_17.cpp)]  
   
 ##  <a name="cmdiframewndex__updatecaption"></a>  CMDIFrameWndEx::UpdateCaption  
  Called by the framework to update the window frame caption.  

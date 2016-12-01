@@ -53,19 +53,19 @@ In addition to standard push buttons, a toolbar can also have drop-down buttons.
   
 1.  Once your `CToolBarCtrl` object has been created, set the `TBSTYLE_EX_DRAWDDARROWS` style, using the following code:  
   
-     [!code-cpp[NVC_MFCControlLadenDialog#36](../mfc/codesnippet/CPP/using-drop-down-buttons-in-a-toolbar-control_1.cpp)]  
+     [!code-cpp[NVC_MFCControlLadenDialog#36](../mfc/codesnippet/cpp/using-drop-down-buttons-in-a-toolbar-control_1.cpp)]  
   
 2.  Set the `TBSTYLE_DROPDOWN` style for any new ([InsertButton](../mfc/reference/ctoolbarctrl-class.md#ctoolbarctrl__insertbutton) or [AddButtons](../mfc/reference/ctoolbarctrl-class.md#ctoolbarctrl__addbuttons)) or existing ([SetButtonInfo](../mfc/reference/ctoolbarctrl-class.md#ctoolbarctrl__setbuttoninfo)) buttons that will be drop-down buttons. The following example demonstrates modifying an existing button in a `CToolBarCtrl` object:  
   
-     [!code-cpp[NVC_MFCControlLadenDialog#37](../mfc/codesnippet/CPP/using-drop-down-buttons-in-a-toolbar-control_2.cpp)]  
+     [!code-cpp[NVC_MFCControlLadenDialog#37](../mfc/codesnippet/cpp/using-drop-down-buttons-in-a-toolbar-control_2.cpp)]  
   
 3.  Add a `TBN_DROPDOWN` handler to the parent class of the toolbar object.  
   
-     [!code-cpp[NVC_MFCControlLadenDialog#38](../mfc/codesnippet/CPP/using-drop-down-buttons-in-a-toolbar-control_3.cpp)]  
+     [!code-cpp[NVC_MFCControlLadenDialog#38](../mfc/codesnippet/cpp/using-drop-down-buttons-in-a-toolbar-control_3.cpp)]  
   
 4.  In the new handler, display the appropriate popup menu. The following code demonstrates one method:  
   
-     [!code-cpp[NVC_MFCControlLadenDialog#39](../mfc/codesnippet/CPP/using-drop-down-buttons-in-a-toolbar-control_4.cpp)]  
+     [!code-cpp[NVC_MFCControlLadenDialog#39](../mfc/codesnippet/cpp/using-drop-down-buttons-in-a-toolbar-control_4.cpp)]  
   
 ## See Also  
  [Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)   

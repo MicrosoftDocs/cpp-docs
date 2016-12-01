@@ -47,7 +47,7 @@ An "item" in a list control ([CListCtrl](../mfc/reference/clistctrl-class.md)) c
   
  To create a list control, you need to supply image lists to be used when you insert new items into the list. The following example demonstrates this procedure, where `m_pImagelist` is a pointer of type `CImageList` and `m_listctrl` is a `CListCtrl` data member.  
   
- [!code-cpp[NVC_MFCControlLadenDialog#19](../mfc/codesnippet/CPP/list-items-and-image-lists_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#19](../mfc/codesnippet/cpp/list-items-and-image-lists_1.cpp)]  
   
  However, if you don't plan to display icons in your list view or list control, you don't need image lists.  
   

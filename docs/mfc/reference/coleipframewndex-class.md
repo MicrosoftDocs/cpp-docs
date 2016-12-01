@@ -103,7 +103,7 @@ class COleIPFrameWndEx : public COleIPFrameWnd
 ## Example  
  The following example demonstrates how to subclass an instance of the `COleIPFrameWndEx` class and over ride its methods. The example shows how to over ride the `OnDestory` method, the `RepositionFrame` method, the `RecalcLayout` method, and the `CalcWindowRect` method. This code snippet is part of the [Word Pad sample](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_WordPad#1](../../mfc/reference/codesnippet/CPP/coleipframewndex-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_WordPad#1](../../mfc/reference/codesnippet/cpp/coleipframewndex-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

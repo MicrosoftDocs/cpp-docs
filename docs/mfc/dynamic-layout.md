@@ -36,11 +36,11 @@ With MFC in [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)], you can create
 ## Specifying dynamic layout settings for an MFC dialog box  
  When the user resizes a dialog, the controls in the dialog can resize or move in the X and Y directions. The change in size or position of a control when the user resizes a dialog is called dynamic layout. For example, the following is a dialog before being resized:  
   
- ![Dialog before being resized.](../mfc/media/mfcdynamiclayout4.PNG "MFCDynamicLayout4")  
+ ![Dialog before being resized.](../mfc/media/mfcdynamiclayout4.png "mfcdynamiclayout4")  
   
  After being resized, the listbox area is increased to show more items, and the buttons are moved along with the bottom right corner:  
   
- ![Dialog after being resized.](../mfc/media/mfcdynamiclayout5.PNG "MFCDynamicLayout5")  
+ ![Dialog after being resized.](../mfc/media/mfcdynamiclayout5.png "mfcdynamiclayout5")  
   
  You can control dynamic layout by specifying the details for each control in the Resource Editor in the IDE, or you can do so programmatically by accessing the CMFCDynamicLayout object for a particular control and setting the properties.  
   
@@ -51,17 +51,17 @@ With MFC in [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)], you can create
   
 1.  With an MFC project open, open the dialog you want to work with in the dialog editor.  
   
-     ![Open the dialog in the resource editor.](../mfc/media/mfcdynamiclayout3.PNG "MFCDynamicLayout3")  
+     ![Open the dialog in the resource editor.](../mfc/media/mfcdynamiclayout3.png "mfcdynamiclayout3")  
   
 2.  Select a control and in the properties window, set its dynamic layout properties. The **Dynamic Layout** section in the properties window contains the properties **Moving Type**, **Sizing Type**, and, depending on the values selected for those properties, specific properties that define how much controls move or change size. **Moving Type** determines how a control is moved as the size of the dialog is changed; **Sizing Type** determines how a control is resized as the size of the dialog is changed. **Moving Type** and **Sizing Type** may be **Horizontal**, **Vertical**, **Both**, or **None** depending on the dimensions that you want to change dynamically. Horizontal is the X dimension; Vertical is the Y direction.  
   
 3.  If you want a control such as a button to be at a fixed size and stay in place at the bottom right, as is common for the **OK** or **Cancel** buttons, set the **Sizing Type** to **None**, and set the **Moving Type** to **Both**. For the **Moving X** and **Moving Y** values under **Moving Type**, set 100% to cause the control to stay a fixed distance from the bottom right corner.  
   
-     ![Dynamic Layout](../mfc/media/mfcdynamiclayout1.PNG "MFCDynamicLayout1")  
+     ![Dynamic Layout](../mfc/media/mfcdynamiclayout1.png "mfcdynamiclayout1")  
   
 4.  Suppose you also have a control that you want to expand as the dialog expands. Typically, a user might expand a dialog in order to expand a multiline editbox to increase the size of the text area, or they might expand a list control to see more data. For this case, set the **Sizing Type** to Both, and set the **Moving Type** to none. Then, set the **Sizing X** and **Sizing Y** values to 100.  
   
-     ![Dynamic Layout Settings](../mfc/media/mfcdynamiclayout2.PNG "MFCDynamicLayout2")  
+     ![Dynamic Layout Settings](../mfc/media/mfcdynamiclayout2.png "mfcdynamiclayout2")  
   
 5.  Experiment with other values that might make sense for your controls. A dialog with a one-line textbox might have the **Sizing Type** set to **Horizontal** only, for example.  
   
@@ -79,7 +79,7 @@ With MFC in [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)], you can create
 
  ```  
   
-3.  For the first control to which you want to add dynamic behavior, use the static methods on the dynamic layout class to create the [MoveSettings](../mfc/reference/cmfcdynamiclayout-class.md#cmfcdynamiclayout__movesettings%20structure) structure that encodes the way the control should be adjusted. You do this by first choosing the appropriate static method: [CMFCDynamicLayout::MoveHorizontal](../mfc/reference/cmfcdynamiclayout-class.md#cmfcdynamiclayout__movehorizontal), [CMFCDynamicLayout::MoveVertical](../mfc/reference/cmfcdynamiclayout-class.md#cmfcdynamiclayout__movevertical), [CMFCDynamicLayout::MoveNone](../mfc/reference/cmfcdynamiclayout-class.md#cmfcdynamiclayout__movenone), or [CMFCDynamicLayout::MoveHorizontalAndVertical](../mfc/reference/cmfcdynamiclayout-class.md#cmfcdynamiclayout__movehorizontalandvertical). You pass in a percentage for the horizontal and/or vertical aspects of the move. These static methods all return a newly created MoveSettings object that you can use to specify a control's move behavior.  
+3.  For the first control to which you want to add dynamic behavior, use the static methods on the dynamic layout class to create the [MoveSettings](../mfc/reference/cmfcdynamiclayout-class.md#cmfcdynamiclayout__movesettings_structure) structure that encodes the way the control should be adjusted. You do this by first choosing the appropriate static method: [CMFCDynamicLayout::MoveHorizontal](../mfc/reference/cmfcdynamiclayout-class.md#cmfcdynamiclayout__movehorizontal), [CMFCDynamicLayout::MoveVertical](../mfc/reference/cmfcdynamiclayout-class.md#cmfcdynamiclayout__movevertical), [CMFCDynamicLayout::MoveNone](../mfc/reference/cmfcdynamiclayout-class.md#cmfcdynamiclayout__movenone), or [CMFCDynamicLayout::MoveHorizontalAndVertical](../mfc/reference/cmfcdynamiclayout-class.md#cmfcdynamiclayout__movehorizontalandvertical). You pass in a percentage for the horizontal and/or vertical aspects of the move. These static methods all return a newly created MoveSettings object that you can use to specify a control's move behavior.  
   
      Keep in mind that 100 means move exactly as much as the dialog changes size, which causes a control's edge to stay a fixed distance from the new border.  
   
@@ -88,7 +88,7 @@ With MFC in [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)], you can create
 
  ```  
   
-4.  Do the same thing for the size behavior, which uses the [SizeSettings](../mfc/reference/cmfcdynamiclayout-class.md#cmfcdynamiclayout__sizesettings%20structure) type. For example, to specify that a control does not change size when the dialog resizes, use the following code:  
+4.  Do the same thing for the size behavior, which uses the [SizeSettings](../mfc/reference/cmfcdynamiclayout-class.md#cmfcdynamiclayout__sizesettings_structure) type. For example, to specify that a control does not change size when the dialog resizes, use the following code:  
   
  ```  
     SizeSettings sizeSettings = CMFCDynamicLayout::SizeNone();

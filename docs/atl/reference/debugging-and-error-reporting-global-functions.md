@@ -37,13 +37,11 @@ These functions provide useful debugging and trace facilities.
   
 |||  
 |-|-|  
-|[AtlHresultFromLastError](http://msdn.microsoft.com/Library/74530d7d-3c91-484c-acf3-aff755715d66)|Returns a `GetLastError` error code in the form of an HRESULT.|  
-|[AtlHresultFromWin32](http://msdn.microsoft.com/Library/63add2dd-274c-4e72-a98c-040b93413a2f)|Converts a Win32 error code into an HRESULT.|  
-|[AtlReportError](http://msdn.microsoft.com/Library/86b046a5-ea18-4ecf-9aab-40fc1eab847c)|Sets up **IErrorInfo** to provide error details to a client.|  
-|[AtlThrow](http://msdn.microsoft.com/Library/2bd111da-8170-488d-914a-c9bf6b6765f7)|Throws a `CAtlException`.|  
-|[AtlThrowLastWin32](http://msdn.microsoft.com/Library/8bce8e56-c7cd-4ebb-8c62-80ebc63a3d07)|Call this function to signal an error based on the result of the Windows function `GetLastError`.|  
-|[AtlTraceLoadSettings](../../misc/atltraceloadsettings.md)|Call this function to load trace settings from a file.|  
-|[AtlTraceSaveSettings](../../misc/atltracesavesettings.md)|Call this function to save the current trace settings to a file.|  
+|[AtlHresultFromLastError](http://msdn.microsoft.com/library/74530d7d-3c91-484c-acf3-aff755715d66)|Returns a `GetLastError` error code in the form of an HRESULT.|  
+|[AtlHresultFromWin32](http://msdn.microsoft.com/library/63add2dd-274c-4e72-a98c-040b93413a2f)|Converts a Win32 error code into an HRESULT.|  
+|[AtlReportError](http://msdn.microsoft.com/library/86b046a5-ea18-4ecf-9aab-40fc1eab847c)|Sets up **IErrorInfo** to provide error details to a client.|  
+|[AtlThrow](http://msdn.microsoft.com/library/2bd111da-8170-488d-914a-c9bf6b6765f7)|Throws a `CAtlException`.|  
+|[AtlThrowLastWin32](http://msdn.microsoft.com/library/8bce8e56-c7cd-4ebb-8c62-80ebc63a3d07)|Call this function to signal an error based on the result of the Windows function `GetLastError`.|  
   
 ##  <a name="atlhresultfromlasterror"></a>  AtlHresultFromLastError  
  Returns the calling thread's last-error code value in the form of an HRESULT.  
@@ -72,7 +70,7 @@ AtlHresultFromWin32{
  Converts a Win32 error code into an HRESULT, using the macro **HRESULT_FROM_WIN32**.  
   
 > [!NOTE]
->  Instead of using **HRESULT_FROM_WIN32(GetLastError())**, use the function [AtlHresultFromLastError](http://msdn.microsoft.com/Library/74530d7d-3c91-484c-acf3-aff755715d66).  
+>  Instead of using **HRESULT_FROM_WIN32(GetLastError())**, use the function [AtlHresultFromLastError](http://msdn.microsoft.com/library/74530d7d-3c91-484c-acf3-aff755715d66).  
   
 ##  <a name="atlreporterror"></a>  AtlReportError  
  Sets up the `IErrorInfo` interface to provide error information to clients of the object.  
@@ -161,7 +159,7 @@ HRESULT     WINAPI
  The string *lpszDesc* is used as the text description of the error. When the client receives the `hRes` you return from `AtlReportError`, the client can access the **IErrorInfo** structure for details about the error.  
   
 ### Example  
- [!code-cpp[NVC_ATL_COM#52](../../atl/codesnippet/CPP/debugging-and-error-reporting-global-functions_1.cpp)]  
+ [!code-cpp[NVC_ATL_COM#52](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_1.cpp)]  
   
 > [!CAUTION]
 >  Do not use `AtlReportError` in C++ catch handlers. Some overrides of these functions use the ATL string conversion macros internally, which in turn use the `_alloca` function internally. Using `AtlReportError` in a C++ catch handler can cause exceptions in C++ catch handlers.  
@@ -193,7 +191,7 @@ __declspec(noreturn) inline void AtlThrow(HRESULT hr);
  For ATL projects, it is possible to provide your own implementation of this function to be used by ATL in the event of a failure. To do this, define your own function with the same signature as `AtlThrow` and #define `AtlThrow` to be the name of your function. This must be done before including atlexcept.h (which means that it must be done prior to including any ATL headers since atlbase.h includes atlexcept.h). Attribute your function `__declspec(noreturn)` to avoid spurious SAL warnings.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#95](../../atl/codesnippet/CPP/debugging-and-error-reporting-global-functions_2.h)]  
+ [!code-cpp[NVC_ATL_Windowing#95](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_2.h)]  
   
 ##  <a name="atlthrowlastwin32"></a>  AtlThrowLastWin32  
  Call this function to signal an error based on the result of the Windows function `GetLastError`.  

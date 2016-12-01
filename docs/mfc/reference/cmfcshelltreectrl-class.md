@@ -81,8 +81,8 @@ class CMFCShellTreeCtrl : public CTreeCtrl
 ## Example  
  The following example demonstrates how to create an object of the `CMFCShellTreeCtrl` class. This code snippet is part of the [Explorer sample](../../top/visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_Explorer#4](../../mfc/reference/codesnippet/CPP/cmfcshelltreectrl-class_1.h)]  
-[!code-cpp[NVC_MFC_Explorer#5](../../mfc/reference/codesnippet/CPP/cmfcshelltreectrl-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_Explorer#4](../../mfc/reference/codesnippet/cpp/cmfcshelltreectrl-class_1.h)]  
+[!code-cpp[NVC_MFC_Explorer#5](../../mfc/reference/codesnippet/cpp/cmfcshelltreectrl-class_2.cpp)]  
   
 ##  <a name="cmfcshelltreectrl__enableshellcontextmenu"></a>  CMFCShellTreeCtrl::EnableShellContextMenu  
  Enables the shortcut menu.  

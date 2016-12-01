@@ -87,7 +87,7 @@ CInternetException(DWORD dwError);
  The error that caused the exception.  
   
 ### Remarks  
- To throw a CInternetException, call the MFC global function [AfxThrowInternetException](http://msdn.microsoft.com/Library/c9645b10-9541-48b2-8b0c-94ca33fed3cb).  
+ To throw a CInternetException, call the MFC global function [AfxThrowInternetException](http://msdn.microsoft.com/library/c9645b10-9541-48b2-8b0c-94ca33fed3cb).  
   
 ##  <a name="cinternetexception__m_dwcontext"></a>  CInternetException::m_dwContext  
  The context value associated with the related Internet operation.  

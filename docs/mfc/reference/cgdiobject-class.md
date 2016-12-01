@@ -166,7 +166,7 @@ static void PASCAL DeleteTempMap();
  `DeleteTempMap` detaches the Windows GDI object attached to a temporary `CGdiObject` object before deleting the `CGdiObject` object.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#175](../../mfc/codesnippet/CPP/cgdiobject-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#175](../../mfc/codesnippet/cpp/cgdiobject-class_1.cpp)]  
   
 ##  <a name="cgdiobject__detach"></a>  CGdiObject::Detach  
  Detaches a Windows GDI object from a `CGdiObject` object and returns a handle to the Windows GDI object.  

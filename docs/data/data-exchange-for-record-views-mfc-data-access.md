@@ -54,7 +54,7 @@ When you use [Add Class](../mfc/reference/adding-an-mfc-odbc-consumer.md) to map
   
  The following figure shows the relationship between DDX and RFX (or DFX) for record views.  
   
- ![Dialog&#45;data exchange and record&#45;field exchange](../data/media/vc37xt1.gif "vc37XT1")  
+ ![Dialog&#45;data exchange and record&#45;field exchange](../data/media/vc37xt1.gif "vc37xt1")  
 Dialog Data Exchange and Record Field Exchange  
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../mfc/dialog-data-exchange-and-validation.md). For more information about RFX, see [Record Field Exchange (RFX)](../data/odbc/record-field-exchange-rfx.md).  

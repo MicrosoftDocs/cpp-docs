@@ -83,7 +83,7 @@ class COleDateTime
 |[COleDateTime::SetTime](#coledatetime__settime)|Sets the value of this `COleDateTime` object to the specified time-only value.|  
   
 ### Public Operators  
-  
+
 |Name|Description|  
 |----------|-----------------|  
 |[COleDateTime::operator ==, COleDateTime::operator <, etc.](#coledatetime_relational_operators)|Compare two `COleDateTime` values.|  
@@ -128,7 +128,7 @@ class COleDateTime
   
  To avoid problems, specify a four-digit date. For example:  
   
- [!code-cpp[NVC_ATLMFC_Utilities#1](../../atl-mfc-shared/codesnippet/CPP/coledatetime-class_1.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#1](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_1.cpp)]  
   
  Basic arithmetic operations for the `COleDateTime` values use the companion class [COleDateTimeSpan](../../atl-mfc-shared/reference/coledatetimespan-class.md). `COleDateTimeSpan` values define a time interval. The relationship between these classes is similar to the one between [CTime](../../atl-mfc-shared/reference/ctime-class.md) and [CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md).  
   
@@ -164,12 +164,12 @@ bool operator>=(const COleDateTime& date) const throw();
 >  An ATLASSERT will occur if either of the two operands is invalid.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#13](../../atl-mfc-shared/codesnippet/CPP/coledatetime-class_2.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#13](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_2.cpp)]  
   
 ### Example  
  The operators **>=**, **\<=**, **>**, and **<**, will assert if the `COleDateTime` object is set to null.  
   
- [!code-cpp[NVC_ATLMFC_Utilities#170](../../atl-mfc-shared/codesnippet/CPP/coledatetime-class_3.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#170](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_3.cpp)]  
   
 ##  <a name="coledatetime__coledatetime"></a>  COleDateTime::COleDateTime  
  Constructs a `COleDateTime` object.  
@@ -228,7 +228,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
  MS-DOS date and time values to be converted to a date/time value and copied into the new `COleDateTime` object.  
   
  `dbts`  
- A reference to a <xref:System.Data.OleDb.OleDbTypequalifyHint%3DFalse%26autoUpgrade%3DTrue> structure containing the current local time.  
+ A reference to a [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) structure containing the current local time.  
   
 ### Remarks  
  All these constructors create new `COleDateTime` objects initialized to the specified value. The following table shows valid ranges for each date and time component:  
@@ -274,7 +274,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
 >  The constructor using **DBTIMESTAMP** parameter is only available when OLEDB.h is included.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#2](../../atl-mfc-shared/codesnippet/CPP/coledatetime-class_4.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#2](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_4.cpp)]  
   
 ##  <a name="coledatetime__format"></a>  COleDateTime::Format  
  Creates a formatted representation of the date/time value.  
@@ -332,7 +332,7 @@ CString Format(UINT nFormatID) const;
  This form formats the value by using the format string which contains special formatting codes that are preceded by a percent sign (%), as in `printf`. The formatting string is a resource. The ID of this string resource is passed as the parameter. For more information about the formatting codes, see [strftime, wcsftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) in the *Run-Time Library Reference*.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#3](../../atl-mfc-shared/codesnippet/CPP/coledatetime-class_5.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#3](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_5.cpp)]  
   
 ##  <a name="coledatetime__getasdbtimestamp"></a>  COleDateTime::GetAsDBTIMESTAMP  
  Call this method to obtain the time in the `COleDateTime` object as a **DBTIMESTAMP** data structure.  
@@ -343,7 +343,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
   
 ### Parameters  
  `dbts`  
- A reference to a <xref:System.Data.OleDb.OleDbTypequalifyHint%3DFalse%26autoUpgrade%3DTrue> structure.  
+ A reference to a [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) structure.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -352,7 +352,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
  Stores the resulting time in the referenced `dbts` structure. The **DBTIMESTAMP** data structure initialized by this function will have its **fraction** member set to zero.  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#4](../../atl-mfc-shared/codesnippet/CPP/coledatetime-class_6.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#4](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_6.cpp)]  
   
 ##  <a name="coledatetime__getassystemtime"></a>  COleDateTime::GetAsSystemTime  
  Call this method to obtain the time in the `COleDateTime` object as a `SYSTEMTIME` data structure.  
@@ -398,7 +398,7 @@ static COleDateTime WINAPI GetCurrentTime() throw();
 ```  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#5](../../atl-mfc-shared/codesnippet/CPP/coledatetime-class_7.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#5](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_7.cpp)]  
   
 ##  <a name="coledatetime__getday"></a>  COleDateTime::GetDay  
  Gets the day of the month represented by this date/time value.  
@@ -430,7 +430,7 @@ int GetDay() const throw();
 - [GetDayOfYear](#coledatetime__getdayofyear)  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#6](../../atl-mfc-shared/codesnippet/CPP/coledatetime-class_8.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#6](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_8.cpp)]  
   
 ##  <a name="coledatetime__getdayofweek"></a>  COleDateTime::GetDayOfWeek  
  Gets the day of the month represented by this date/time value.  
@@ -462,7 +462,7 @@ int GetDayOfWeek() const throw();
 - [GetDayOfYear](#coledatetime__getdayofyear)  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#7](../../atl-mfc-shared/codesnippet/CPP/coledatetime-class_9.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#7](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_9.cpp)]  
   
 ##  <a name="coledatetime__getdayofyear"></a>  COleDateTime::GetDayOfYear  
  Gets the day of the year represented by this date/time value.  
@@ -494,7 +494,7 @@ int GetDayOfYear() const throw();
 - [GetDayOfWeek](#coledatetime__getdayofweek)  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#8](../../atl-mfc-shared/codesnippet/CPP/coledatetime-class_10.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#8](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_10.cpp)]  
   
 ##  <a name="coledatetime__gethour"></a>  COleDateTime::GetHour  
  Gets the hour represented by this date/time value.  
@@ -526,7 +526,7 @@ int GetHour() const throw();
 - [GetDayOfYear](#coledatetime__getdayofyear)  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#9](../../atl-mfc-shared/codesnippet/CPP/coledatetime-class_11.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#9](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_11.cpp)]  
   
 ##  <a name="coledatetime__getminute"></a>  COleDateTime::GetMinute  
  Gets the minute represented by this date/time value.  
@@ -693,7 +693,7 @@ DateTimeStatus GetStatus() const throw();
  For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#10](../../atl-mfc-shared/codesnippet/CPP/coledatetime-class_12.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#10](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_12.cpp)]  
   
 ##  <a name="coledatetime__getyear"></a>  COleDateTime::GetYear  
  Gets the year represented by this date/time value.  
@@ -827,7 +827,7 @@ COleDateTimeSpan operator-(const COleDateTime& date) const throw();
  For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#12](../../atl-mfc-shared/codesnippet/CPP/coledatetime-class_13.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#12](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_13.cpp)]  
   
 ##  <a name="coledatetime__operator__add_eq_-_eq"></a>  COleDateTime::operator +=, -=  
  Add and subtract a **ColeDateTime** value from this `COleDateTime` object.  
@@ -983,7 +983,7 @@ int SetDate(int nYear,
  For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
 ### Example  
- [!code-cpp[NVC_ATLMFC_Utilities#11](../../atl-mfc-shared/codesnippet/CPP/coledatetime-class_14.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#11](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_14.cpp)]  
   
 ##  <a name="coledatetime__setdatetime"></a>  COleDateTime::SetDateTime  
  Sets the date and time of this `COleDateTime` object.  

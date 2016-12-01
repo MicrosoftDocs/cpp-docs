@@ -48,13 +48,13 @@ By default, a list control arranges all items in a standard grid fashion. Howeve
   
  The following example implements four working areas (`rcWorkAreas`), of equal size with a 10-pixel-wide border around each working area, in a list control (`m_WorkAreaListCtrl`).  
   
- [!code-cpp[NVC_MFCControlLadenDialog#20](../mfc/codesnippet/CPP/implementing-working-areas-in-list-controls_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#20](../mfc/codesnippet/cpp/implementing-working-areas-in-list-controls_1.cpp)]  
   
  The call to [ApproximateViewRect](../mfc/reference/clistctrl-class.md#clistctrl__approximateviewrect) was made to get an estimate of the total area required to display all items in one region. This estimate is then divided into four regions and padded with a 5-pixel-wide border.  
   
  The next example assigns the existing list items to each group (`rcWorkAreas`) and refreshes the control view (`m_``WorkAreaListCtrl`) to complete the effect.  
   
- [!code-cpp[NVC_MFCControlLadenDialog#21](../mfc/codesnippet/CPP/implementing-working-areas-in-list-controls_2.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#21](../mfc/codesnippet/cpp/implementing-working-areas-in-list-controls_2.cpp)]  
   
 ## See Also  
  [Using CListCtrl](../mfc/using-clistctrl.md)   

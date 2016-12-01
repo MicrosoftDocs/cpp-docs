@@ -52,9 +52,7 @@ The Visual C++ samples listed below demonstrate different functionalities across
   
  [Windows Hardware development samples](http://code.msdn.microsoft.com/windowshardware/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B&f%5B0%5D.Text=C%2B%2B)  
   
- [STL Samples](../misc/standard-template-library-samples.md)  
-  
- [!INCLUDE[note_security_samplecode](../top/includes/note_security_samplecode_md.md)]  
+ [!INCLUDE[note_security_samplecode](includes/note_security_samplecode_md.md)]  
   
 ## See Also  
  [Visual C++ Reference](http://msdn.microsoft.com/en-us/1ba03b5c-8229-4f63-b08c-6c12141d6ab1)

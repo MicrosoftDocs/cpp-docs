@@ -149,7 +149,7 @@ CButton();
 ```  
   
 ### Example  
- [!code-cpp[NVC_MFC_CButton#1](../../mfc/reference/codesnippet/CPP/cbutton-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CButton#1](../../mfc/reference/codesnippet/cpp/cbutton-class_1.cpp)]  
   
 ##  <a name="cbutton__create"></a>  CButton::Create  
  Creates the Windows button control and attaches it to the `CButton` object.  
@@ -200,7 +200,7 @@ virtual BOOL Create(
 - **WS_TABSTOP** To include the button in the tabbing order  
   
 ### Example  
- [!code-cpp[NVC_MFC_CButton#2](../../mfc/reference/codesnippet/CPP/cbutton-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_CButton#2](../../mfc/reference/codesnippet/cpp/cbutton-class_2.cpp)]  
   
 ##  <a name="cbutton__drawitem"></a>  CButton::DrawItem  
  Called by the framework when a visual aspect of an owner-drawn button has changed.  
@@ -219,7 +219,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
  Also see the [BS_](../../mfc/reference/button-styles.md) style values.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CButton#3](../../mfc/reference/codesnippet/CPP/cbutton-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_CButton#3](../../mfc/reference/codesnippet/cpp/cbutton-class_3.cpp)]  
   
 ##  <a name="cbutton__getbitmap"></a>  CButton::GetBitmap  
  Call this member function to get the handle of a bitmap, previously set with [SetBitmap](#cbutton__setbitmap), that is associated with a button.  
@@ -234,7 +234,7 @@ HBITMAP GetBitmap() const;
  A handle to a bitmap. **NULL** if no bitmap is previously specified.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CButton#4](../../mfc/reference/codesnippet/CPP/cbutton-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_CButton#4](../../mfc/reference/codesnippet/cpp/cbutton-class_4.cpp)]  
   
 ##  <a name="cbutton__getbuttonstyle"></a>  CButton::GetButtonStyle  
  Retrieves information about the button control style.  
@@ -249,7 +249,7 @@ UINT GetButtonStyle() const;
  Returns the button styles for this `CButton` object. This function returns only the [BS_](../../mfc/reference/button-styles.md) style values, not any of the other window styles.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CButton#5](../../mfc/reference/codesnippet/CPP/cbutton-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_CButton#5](../../mfc/reference/codesnippet/cpp/cbutton-class_5.cpp)]  
   
 ##  <a name="cbutton__getcheck"></a>  CButton::GetCheck  
  Retrieves the check state of a radio button or check box.  
@@ -272,7 +272,7 @@ int GetCheck() const;
  If the button has any other style, the return value is **BST_UNCHECKED**.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CButton#6](../../mfc/reference/codesnippet/CPP/cbutton-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_CButton#6](../../mfc/reference/codesnippet/cpp/cbutton-class_6.cpp)]  
   
 ##  <a name="cbutton__getcursor"></a>  CButton::GetCursor  
  Call this member function to get the handle of a cursor, previously set with [SetCursor](#cbutton__setcursor), that is associated with a button.  
@@ -287,7 +287,7 @@ HCURSOR GetCursor();
  A handle to a cursor image. **NULL** if no cursor is previously specified.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CButton#7](../../mfc/reference/codesnippet/CPP/cbutton-class_7.cpp)]  
+ [!code-cpp[NVC_MFC_CButton#7](../../mfc/reference/codesnippet/cpp/cbutton-class_7.cpp)]  
   
 ##  <a name="cbutton__geticon"></a>  CButton::GetIcon  
  Call this member function to get the handle of an icon, previously set with [SetIcon](#cbutton__seticon), that is associated with a button.  
@@ -302,7 +302,7 @@ HICON GetIcon() const;
  A handle to an icon. **NULL** if no icon is previously specified.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CButton#8](../../mfc/reference/codesnippet/CPP/cbutton-class_8.cpp)]  
+ [!code-cpp[NVC_MFC_CButton#8](../../mfc/reference/codesnippet/cpp/cbutton-class_8.cpp)]  
   
 ##  <a name="cbutton__getidealsize"></a>  CButton::GetIdealSize  
  Retrieves the ideal size for the button control.  
@@ -515,7 +515,7 @@ UINT GetState() const;
  A button control with the `BS_3STATE` or `BS_AUTO3STATE` button style creates a check box that has a third state that is named the indeterminate state. The indeterminate state indicates that the check box is neither checked nor unchecked.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CButton#9](../../mfc/reference/codesnippet/CPP/cbutton-class_9.cpp)]  
+ [!code-cpp[NVC_MFC_CButton#9](../../mfc/reference/codesnippet/cpp/cbutton-class_9.cpp)]  
   
 ##  <a name="cbutton__gettextmargin"></a>  CButton::GetTextMargin  
  Call this method to get the text margin of the `CButton` object.  
@@ -571,7 +571,7 @@ HBITMAP SetBitmap(HBITMAP hBitmap);
  You are responsible for releasing the bitmap when you are done with it.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CButton#4](../../mfc/reference/codesnippet/CPP/cbutton-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_CButton#4](../../mfc/reference/codesnippet/cpp/cbutton-class_4.cpp)]  
   
 ##  <a name="cbutton__setbuttonstyle"></a>  CButton::SetButtonStyle  
  Changes the style of a button.  
@@ -593,7 +593,7 @@ void SetButtonStyle(
  Use the `GetButtonStyle` member function to retrieve the button style. The low-order word of the complete button style is the button-specific style.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CButton#5](../../mfc/reference/codesnippet/CPP/cbutton-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_CButton#5](../../mfc/reference/codesnippet/cpp/cbutton-class_5.cpp)]  
   
 ##  <a name="cbutton__setcheck"></a>  CButton::SetCheck  
  Sets or resets the check state of a radio button or check box.  
@@ -616,7 +616,7 @@ void SetCheck(int nCheck);
  This member function has no effect on a pushbutton.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CButton#6](../../mfc/reference/codesnippet/CPP/cbutton-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_CButton#6](../../mfc/reference/codesnippet/cpp/cbutton-class_6.cpp)]  
   
 ##  <a name="cbutton__setcursor"></a>  CButton::SetCursor  
  Call this member function to associate a new cursor with the button.  
@@ -650,7 +650,7 @@ HCURSOR SetCursor(HCURSOR hCursor);
  Unlike [CBitmapButton](../../mfc/reference/cbitmapbutton-class.md), which uses four bitmaps per button, `SetCursor` uses only one cursor per the button. When the button is pressed, the cursor appears to shift down and to the right.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CButton#7](../../mfc/reference/codesnippet/CPP/cbutton-class_7.cpp)]  
+ [!code-cpp[NVC_MFC_CButton#7](../../mfc/reference/codesnippet/cpp/cbutton-class_7.cpp)]  
   
 ##  <a name="cbutton__setdropdownstate"></a>  CButton::SetDropDownState  
  Sets the drop-down state of the current split button control.  
@@ -676,12 +676,12 @@ BOOL SetDropDownState(BOOL fDropDown);
 ### Example  
  The following code example defines the variable, `m_splitButton`, that is used to programmatically access the split button control. This variable is used in the following example.  
   
- [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/CPP/cbutton-class_10.h)]  
+ [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]  
   
 ### Example  
  The following code example sets the state of the split button control to indicate that the drop-down arrow is pushed.  
   
- [!code-cpp[NVC_MFC_CButton_s1#6](../../mfc/reference/codesnippet/CPP/cbutton-class_11.cpp)]  
+ [!code-cpp[NVC_MFC_CButton_s1#6](../../mfc/reference/codesnippet/cpp/cbutton-class_11.cpp)]  
   
 ##  <a name="cbutton__setelevationrequired"></a>  CButton::SetElevationRequired  
  Sets the state of the current button control to `elevation required`, which is necessary for the control to display an elevated security icon.  
@@ -700,7 +700,7 @@ BOOL SetElevationRequired(BOOL fElevationRequired);
  `true` if this method is successful; otherwise, `false`.  
   
 ### Remarks  
- If a button or command link control requires elevated security permission to perform an action, set the control to `elevation required` state. Subsequently, Windows displays the User Account Control (UAC) shield icon on the control. For more information, see "User Account Control" at [MSDN](http://go.microsoft.com/fwlink/LinkId=18507).  
+ If a button or command link control requires elevated security permission to perform an action, set the control to `elevation required` state. Subsequently, Windows displays the User Account Control (UAC) shield icon on the control. For more information, see "User Account Control" at [MSDN](http://go.microsoft.com/fwlink/linkid=18507).  
   
  This method sends the [BCM_SETSHIELD](http://msdn.microsoft.com/library/windows/desktop/bb775979) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -736,7 +736,7 @@ HICON SetIcon(HICON hIcon);
  Unlike [CBitmapButton](../../mfc/reference/cbitmapbutton-class.md), which uses four bitmaps per button, `SetIcon` uses only one icon per the button. When the button is pressed, the icon appears to shift down and to the right.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CButton#8](../../mfc/reference/codesnippet/CPP/cbutton-class_8.cpp)]  
+ [!code-cpp[NVC_MFC_CButton#8](../../mfc/reference/codesnippet/cpp/cbutton-class_8.cpp)]  
   
 ##  <a name="cbutton__setimagelist"></a>  CButton::SetImageList  
  Call this method to set the image list of the `CButton` object.  
@@ -779,12 +779,12 @@ BOOL SetNote(LPCTSTR lpszNote);
 ### Example  
  The following code example defines the variable, `m_cmdLink`, that is used to programmatically access the command link control. This variable is used in the following example.  
   
- [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/CPP/cbutton-class_10.h)]  
+ [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]  
   
 ### Example  
  The following code example sets the note text for the command link control.  
   
- [!code-cpp[NVC_MFC_CButton_s1#7](../../mfc/reference/codesnippet/CPP/cbutton-class_12.cpp)]  
+ [!code-cpp[NVC_MFC_CButton_s1#7](../../mfc/reference/codesnippet/cpp/cbutton-class_12.cpp)]  
   
 ##  <a name="cbutton__setsplitglyph"></a>  CButton::SetSplitGlyph  
  Associates a specified glyph with the current split button control.  
@@ -854,12 +854,12 @@ BOOL SetSplitInfo(PBUTTON_SPLITINFO pInfo);
 ### Example  
  The following code example defines the variable, `m_splitButton`, that is used to programmatically access the split button control.  
   
- [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/CPP/cbutton-class_10.h)]  
+ [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]  
   
 ### Example  
  The following code example changes the glyph that is used for the split button drop-down arrow. The example substitutes an up-pointing triangle glyph for the default down-pointing triangle glyph. The glyph that is displayed depends on the character that you specify in the `himlGlyph` member of the `BUTTON_SPLITINFO` structure. The down-pointing triangle glyph is specified by a character '6' and the up-pointing triangle glyph is specified by a character '5'. For comparison, see the convenience method, [CButton::SetSplitGlyph](#cbutton__setsplitglyph).  
   
- [!code-cpp[NVC_MFC_CButton_s1#4](../../mfc/reference/codesnippet/CPP/cbutton-class_13.cpp)]  
+ [!code-cpp[NVC_MFC_CButton_s1#4](../../mfc/reference/codesnippet/cpp/cbutton-class_13.cpp)]  
   
 ##  <a name="cbutton__setsplitsize"></a>  CButton::SetSplitSize  
  Sets the bounding rectangle of the drop-down component of the current split button control.  
@@ -887,12 +887,12 @@ BOOL SetSplitSize(LPSIZE pSize);
 ### Example  
  The following code example defines the variable, `m_splitButton`, that is used to programmatically access the split button control. This variable is used in the following example.  
   
- [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/CPP/cbutton-class_10.h)]  
+ [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]  
   
 ### Example  
  The following code example doubles the size of the split button drop-down arrow.  
   
- [!code-cpp[NVC_MFC_CButton_s1#5](../../mfc/reference/codesnippet/CPP/cbutton-class_14.cpp)]  
+ [!code-cpp[NVC_MFC_CButton_s1#5](../../mfc/reference/codesnippet/cpp/cbutton-class_14.cpp)]  
   
 ##  <a name="cbutton__setsplitstyle"></a>  CButton::SetSplitStyle  
  Sets the style of the current split button control.  
@@ -920,12 +920,12 @@ BOOL SetSplitStyle(UINT uSplitStyle);
 ### Example  
  The following code example defines the variable, `m_splitButton`, that is used to programmatically access the split button control.  
   
- [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/CPP/cbutton-class_10.h)]  
+ [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]  
   
 ### Example  
  The following code example sets the style of the split button drop-down arrow. The `BCSS_ALIGNLEFT` style displays the arrow on the left side of the button, and the `BCSS_STRETCH` style retains the drop-down arrow's proportions when you resize the button.  
   
- [!code-cpp[NVC_MFC_CButton_s1#3](../../mfc/reference/codesnippet/CPP/cbutton-class_15.cpp)]  
+ [!code-cpp[NVC_MFC_CButton_s1#3](../../mfc/reference/codesnippet/cpp/cbutton-class_15.cpp)]  
   
 ##  <a name="cbutton__setstate"></a>  CButton::SetState  
  Sets whether a button control is highlighted or not.  
@@ -944,7 +944,7 @@ void SetState(BOOL bHighlight);
  A button control is automatically highlighted when the user clicks and holds the left mouse button. The highlighting is removed when the user releases the mouse button.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CButton#9](../../mfc/reference/codesnippet/CPP/cbutton-class_9.cpp)]  
+ [!code-cpp[NVC_MFC_CButton#9](../../mfc/reference/codesnippet/cpp/cbutton-class_9.cpp)]  
   
 ##  <a name="cbutton__settextmargin"></a>  CButton::SetTextMargin  
  Call this method to set the text margin of the `CButton` object.  

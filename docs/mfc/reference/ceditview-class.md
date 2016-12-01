@@ -105,7 +105,7 @@ class CEditView : public CCtrlView
   
  To change this limit in your control, override the `OnCreate()` function for your `CEditView` class and insert the following line of code:  
   
- [!code-cpp[NVC_MFCDocView#65](../../mfc/codesnippet/CPP/ceditview-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#65](../../mfc/codesnippet/cpp/ceditview-class_1.cpp)]  
   
  Objects of type `CEditView` (or of types derived from `CEditView`) have the following limitations:  
   
@@ -212,7 +212,7 @@ CEdit& GetEditCtrl() const;
 >  Using the `CEdit` object can change the state of the underlying Windows edit control. For example, you should not change the tab settings using the [CEdit::SetTabStops](../../mfc/reference/cedit-class.md#cedit__settabstops) function because `CEditView` caches these settings for use both in the edit control and in printing. Instead, use [CEditView::SetTabStops](#ceditview__settabstops).  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#66](../../mfc/codesnippet/CPP/ceditview-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#66](../../mfc/codesnippet/cpp/ceditview-class_2.cpp)]  
   
 ##  <a name="ceditview__getprinterfont"></a>  CEditView::GetPrinterFont  
  Call `GetPrinterFont` to get a pointer to a [CFont](../../mfc/reference/cfont-class.md) object that describes the current printer font.  
@@ -427,7 +427,7 @@ void SetTabStops(int nTabStops);
 ### Example  
  This code fragment sets the tab stops in the control to every fourth character by carefully measuring the font the control uses.  
   
- [!code-cpp[NVC_MFCDocView#67](../../mfc/codesnippet/CPP/ceditview-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#67](../../mfc/codesnippet/cpp/ceditview-class_3.cpp)]  
   
 ##  <a name="ceditview__unlockbuffer"></a>  CEditView::UnlockBuffer  
  Call this member function to unlock the buffer.  

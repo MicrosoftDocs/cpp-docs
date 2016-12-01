@@ -37,7 +37,7 @@ translation.priority.ht:
   
  MFC provides two functions for giving a bitmap the appearance of a disabled control.  
   
- ![Comparison of gray and original icon versions](../../mfc/reference/media/vcgraybitmap.gif "vcGrayBitmap")  
+ ![Comparison of gray and original icon versions](../../mfc/reference/media/vcgraybitmap.gif "vcgraybitmap")  
   
 |||  
 |-|-|  
@@ -48,7 +48,7 @@ translation.priority.ht:
   
  MFC also provides two functions for replacing a bitmap's background with a dithered pattern.  
   
- ![Comparison of dithered and original icon versions](../../mfc/reference/media/vcditheredbitmap.gif "vcDitheredBitmap")  
+ ![Comparison of dithered and original icon versions](../../mfc/reference/media/vcditheredbitmap.gif "vcditheredbitmap")  
   
 |||  
 |-|-|  
@@ -86,10 +86,10 @@ void AFXAPI AfxDrawGrayBitmap(
 ### Remarks  
  A bitmap drawn with `AfxDrawGrayBitmap` will have the appearance of a disabled control.  
   
- ![Comparison of gray and original icon versions](../../mfc/reference/media/vcgraybitmap.gif "vcGrayBitmap")  
+ ![Comparison of gray and original icon versions](../../mfc/reference/media/vcgraybitmap.gif "vcgraybitmap")  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#191](../../mfc/codesnippet/CPP/gray-and-dithered-bitmap-functions_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#191](../../mfc/codesnippet/cpp/gray-and-dithered-bitmap-functions_1.cpp)]  
   
 ##  <a name="afxgetgraybitmap"></a>  AfxGetGrayBitmap  
  Copies a gray version of a bitmap.  
@@ -114,10 +114,10 @@ void AFXAPI AfxGetGrayBitmap(
 ### Remarks  
  A bitmap copied with `AfxGetGrayBitmap` will have the appearance of a disabled control.  
   
- ![Comparison of gray and original icon versions](../../mfc/reference/media/vcgraybitmap.gif "vcGrayBitmap")  
+ ![Comparison of gray and original icon versions](../../mfc/reference/media/vcgraybitmap.gif "vcgraybitmap")  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#193](../../mfc/codesnippet/CPP/gray-and-dithered-bitmap-functions_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#193](../../mfc/codesnippet/cpp/gray-and-dithered-bitmap-functions_2.cpp)]  
   
 ##  <a name="afxdrawditheredbitmap"></a>  AfxDrawDitheredBitmap  
  Draws a bitmap, replacing its background with a dithered (checker) pattern.  
@@ -154,10 +154,10 @@ void AFXAPI AfxDrawDitheredBitmap(
 ### Remarks  
  The source bitmap is drawn on the destination DC with a two-color ( `cr1` and `cr2`) checkered pattern replacing the bitmap's background. The background of the source bitmap is defined as its white pixels and all pixels matching the color of the pixel in the upper-left corner of the bitmap.  
   
- ![Comparison of dithered and original icon versions](../../mfc/reference/media/vcditheredbitmap.gif "vcDitheredBitmap")  
+ ![Comparison of dithered and original icon versions](../../mfc/reference/media/vcditheredbitmap.gif "vcditheredbitmap")  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#190](../../mfc/codesnippet/CPP/gray-and-dithered-bitmap-functions_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#190](../../mfc/codesnippet/cpp/gray-and-dithered-bitmap-functions_3.cpp)]  
   
 ##  <a name="afxgetditheredbitmap"></a>  AfxGetDitheredBitmap  
  Copies a bitmap, replacing its background with a dithered (checker) pattern.  
@@ -186,10 +186,10 @@ void AFXAPI AfxGetDitheredBitmap(
 ### Remarks  
  The source bitmap is copied to the destination bitmap with a two-color ( `cr1` and `cr2`) checkered pattern replacing the source bitmap's background. The background of the source bitmap is defined as its white pixels and all pixels matching the color of the pixel in the upper-left corner of the bitmap.  
   
- ![Comparison of dithered and original icon versions](../../mfc/reference/media/vcditheredbitmap.gif "vcDitheredBitmap")  
+ ![Comparison of dithered and original icon versions](../../mfc/reference/media/vcditheredbitmap.gif "vcditheredbitmap")  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#192](../../mfc/codesnippet/CPP/gray-and-dithered-bitmap-functions_4.cpp)]  
+ [!code-cpp[NVC_MFCDocView#192](../../mfc/codesnippet/cpp/gray-and-dithered-bitmap-functions_4.cpp)]  
   
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

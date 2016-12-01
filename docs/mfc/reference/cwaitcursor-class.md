@@ -85,7 +85,7 @@ class CWaitCursor
  **Header:** afxwin.h  
   
 ## Example  
- [!code-cpp[NVC_MFCWindowing#62](../../mfc/reference/codesnippet/CPP/cwaitcursor-class_1.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#62](../../mfc/reference/codesnippet/cpp/cwaitcursor-class_1.cpp)]  
   
 ##  <a name="cwaitcursor__cwaitcursor"></a>  CWaitCursor::CWaitCursor  
  To display a wait cursor, just declare a `CWaitCursor` object before the code that performs the lengthy operation.  
@@ -105,7 +105,7 @@ CWaitCursor();
 >  Because of how their constructors and destructors work, `CWaitCursor` objects are always declared as local variables — they're never declared as global variables, nor are they allocated with **new**.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#63](../../mfc/reference/codesnippet/CPP/cwaitcursor-class_2.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#63](../../mfc/reference/codesnippet/cpp/cwaitcursor-class_2.cpp)]  
   
 ##  <a name="cwaitcursor__restore"></a>  CWaitCursor::Restore  
  To restore the wait cursor, call this function after performing an operation, such as displaying a message box or dialog box, which might change the wait cursor to another cursor.  
@@ -120,7 +120,7 @@ void Restore();
  If you need to restore the wait cursor while in a function other than the one in which the `CWaitCursor` object is declared, you can call [CCmdTarget::RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#ccmdtarget__restorewaitcursor).  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#64](../../mfc/reference/codesnippet/CPP/cwaitcursor-class_3.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#64](../../mfc/reference/codesnippet/cpp/cwaitcursor-class_3.cpp)]  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
@@ -128,7 +128,7 @@ void Restore();
  [CCmdTarget::EndWaitCursor](../../mfc/reference/ccmdtarget-class.md#ccmdtarget__endwaitcursor)   
  [CCmdTarget::RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#ccmdtarget__restorewaitcursor)   
  [CWinApp::DoWaitCursor](../../mfc/reference/cwinapp-class.md#cwinapp__dowaitcursor)   
- [How Do I: Change the Mouse Cursor in an Microsoft Foundation Class Application](http://go.microsoft.com/fwlink/LinkID=128044)
+ [How Do I: Change the Mouse Cursor in an Microsoft Foundation Class Application](http://go.microsoft.com/fwlink/linkid=128044)
 
 
 

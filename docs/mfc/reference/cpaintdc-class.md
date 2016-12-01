@@ -97,7 +97,7 @@ explicit CPaintDC(CWnd* pWnd);
  An exception (of type `CResourceException`) is thrown if the Windows [GetDC](http://msdn.microsoft.com/library/windows/desktop/dd144871) call fails. A device context may not be available if Windows has already allocated all of its available device contexts. Your application competes for the five common display contexts available at any given time under Windows.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#97](../../mfc/codesnippet/CPP/cpaintdc-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#97](../../mfc/codesnippet/cpp/cpaintdc-class_1.cpp)]  
   
 ##  <a name="cpaintdc__m_hwnd"></a>  CPaintDC::m_hWnd  
  The `HWND` to which this `CPaintDC` object is attached.  
@@ -110,7 +110,7 @@ HWND m_hWnd;
  `m_hWnd` is a protected variable of type `HWND`.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#98](../../mfc/codesnippet/CPP/cpaintdc-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#98](../../mfc/codesnippet/cpp/cpaintdc-class_2.cpp)]  
   
 ##  <a name="cpaintdc__m_ps"></a>  CPaintDC::m_ps  
  `m_ps` is a public member variable of type [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md).  

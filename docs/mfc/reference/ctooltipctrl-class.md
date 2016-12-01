@@ -276,7 +276,7 @@ CToolTipCtrl();
  You must call **Create** after constructing the object.  
   
 ### Example  
- [!code-cpp[NVC_MFCControlLadenDialog#74](../../mfc/codesnippet/CPP/ctooltipctrl-class_1.h)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#74](../../mfc/codesnippet/cpp/ctooltipctrl-class_1.h)]  
   
 ##  <a name="ctooltipctrl__deltool"></a>  CToolTipCtrl::DelTool  
  Removes the tool specified by `pWnd` and `nIDTool` from the collection of tools supported by a tool tip control.  
@@ -337,7 +337,7 @@ BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;
 ### Example  
  The following code example retrieves information about the current tooltip window.  
   
- [!code-cpp[NVC_MFC_CToolBarCtrl_s1#6](../../mfc/reference/codesnippet/CPP/ctooltipctrl-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_CToolBarCtrl_s1#6](../../mfc/reference/codesnippet/cpp/ctooltipctrl-class_2.cpp)]  
   
 ##  <a name="ctooltipctrl__getdelaytime"></a>  CToolTipCtrl::GetDelayTime  
  Retrieves the initial, pop-up, and reshow durations currently set for a tool tip control.  
@@ -587,7 +587,7 @@ void Popup();
 ### Example  
  The following code example displays a tooltip window.  
   
- [!code-cpp[NVC_MFC_CToolBarCtrl_s1#7](../../mfc/reference/codesnippet/CPP/ctooltipctrl-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_CToolBarCtrl_s1#7](../../mfc/reference/codesnippet/cpp/ctooltipctrl-class_3.cpp)]  
   
 ##  <a name="ctooltipctrl__relayevent"></a>  CToolTipCtrl::RelayEvent  
  Passes a mouse message to a tool tip control for processing.  

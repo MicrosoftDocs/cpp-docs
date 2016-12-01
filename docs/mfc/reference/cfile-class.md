@@ -134,7 +134,7 @@ virtual void Abort();
  If you used **new** to allocate the `CFile` object on the heap, then you must delete it after closing the file. **Abort** sets `m_hFile` to `CFile::hFileNull`.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#5](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_1.cpp)]  
+ [!code-cpp[NVC_MFCFiles#5](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_1.cpp)]  
   
 ##  <a name="cfile__cfile"></a>  CFile::CFile  
  Constructs and initializes a `CFile` object.  
@@ -237,7 +237,7 @@ CAtlTransactionManager* pTM);
 ### Example  
  The following code shows how to use a `CFile`.  
   
- [!code-cpp[NVC_MFCFiles#4](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_2.cpp)]  
+ [!code-cpp[NVC_MFCFiles#4](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_2.cpp)]  
   
 ##  <a name="cfile__close"></a>  CFile::Close  
  Closes the file associated with this object and makes the file unavailable for reading or writing.  
@@ -302,7 +302,7 @@ virtual CString GetFileName() const;
 ### Example  
  This code fragment opens the SYSTEM.INI file in your WINDOWS directory. If found, the example will print out the name and path and title, as shown under Output:  
   
- [!code-cpp[NVC_MFCFiles#6](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_3.cpp)]  
+ [!code-cpp[NVC_MFCFiles#6](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_3.cpp)]  
   
 ##  <a name="cfile__getfilepath"></a>  CFile::GetFilePath  
  Call this member function to retrieve the full path of a specified file.  
@@ -357,7 +357,7 @@ virtual ULONGLONG GetLength() const;
  The length of the file.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#7](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_4.cpp)]  
+ [!code-cpp[NVC_MFCFiles#7](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_4.cpp)]  
   
 ##  <a name="cfile__getposition"></a>  CFile::GetPosition  
  Obtains the current value of the file pointer, which can be used in subsequent calls to `Seek`.  
@@ -372,7 +372,7 @@ virtual ULONGLONG GetPosition() const;
  The file pointer.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#8](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_5.cpp)]  
+ [!code-cpp[NVC_MFCFiles#8](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_5.cpp)]  
   
 ##  <a name="cfile__getstatus"></a>  CFile::GetStatus  
  This method retrieves status information related to a given `CFile` object instance or a given file path.  
@@ -438,7 +438,7 @@ static BOOL PASCAL GetStatus(
  `};`  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#10](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_6.cpp)]  
+ [!code-cpp[NVC_MFCFiles#10](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_6.cpp)]  
   
 ##  <a name="cfile__hfilenull"></a>  CFile::hFileNull  
  Determines the presence of a valid file handle for the `CFile` object.  
@@ -452,7 +452,7 @@ static AFX_DATA const HANDLE hFileNull;
   
  The following example demonstrates this operation:  
   
- [!code-cpp[NVC_MFCFiles#22](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_7.cpp)]  
+ [!code-cpp[NVC_MFCFiles#22](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_7.cpp)]  
   
 ##  <a name="cfile__lockrange"></a>  CFile::LockRange  
  Locks a range of bytes in an open file, throwing an exception if the file is already locked.  
@@ -479,7 +479,7 @@ virtual void LockRange(
 >  This function is not available for the `CMemFile`-derived class.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#12](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_8.cpp)]  
+ [!code-cpp[NVC_MFCFiles#12](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_8.cpp)]  
   
 ##  <a name="cfile__m_hfile"></a>  CFile::m_hFile  
  Contains the operating-system file handle for an open file.  
@@ -550,9 +550,9 @@ virtual BOOL Open(
 |ptr to `CFileException`|Yes|**FALSE**|initialized to describe error|  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#13](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_9.cpp)]  
+ [!code-cpp[NVC_MFCFiles#13](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_9.cpp)]  
   
- [!code-cpp[NVC_MFCFiles#14](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_10.cpp)]  
+ [!code-cpp[NVC_MFCFiles#14](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_10.cpp)]  
   
 ##  <a name="cfile__operator_handle"></a>  CFile::operator HANDLE  
  Use this operator to pass a handle to a `CFile` object to functions such as [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) and [GetFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724320) that expect a `HANDLE`.  
@@ -582,7 +582,7 @@ virtual UINT Read(
  The number of bytes transferred to the buffer. Note that for all `CFile` classes, the return value may be less than `nCount` if the end of file was reached.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#15](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_11.cpp)]  
+ [!code-cpp[NVC_MFCFiles#15](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_11.cpp)]  
   
  For another example see [CFile::Open](#cfile__open).  
   
@@ -607,7 +607,7 @@ static void PASCAL Remove(
  The **Remove** member function throws an exception if the connected file is open or if the file cannot be removed. This is equivalent to the DEL command.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#17](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_12.cpp)]  
+ [!code-cpp[NVC_MFCFiles#17](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_12.cpp)]  
   
 ##  <a name="cfile__rename"></a>  CFile::Rename  
  This static function renames the specified file.  
@@ -633,7 +633,7 @@ static void PASCAL Rename(
  Directories cannot be renamed. This is equivalent to the REN command.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#18](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_13.cpp)]  
+ [!code-cpp[NVC_MFCFiles#18](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_13.cpp)]  
   
 ##  <a name="cfile__seek"></a>  CFile::Seek  
  Repositions the file pointer in an open file.  
@@ -671,7 +671,7 @@ UINT nFrom);
  The exception handler for this method must delete the exception object after the exception is processed.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#9](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_14.cpp)]  
+ [!code-cpp[NVC_MFCFiles#9](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_14.cpp)]  
   
 ##  <a name="cfile__seektobegin"></a>  CFile::SeekToBegin  
  Sets the value of the file pointer to the beginning of the file.  
@@ -684,7 +684,7 @@ void SeekToBegin();
  `SeekToBegin()` is equivalent to `Seek( 0L, CFile::begin )`.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#19](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_15.cpp)]  
+ [!code-cpp[NVC_MFCFiles#19](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_15.cpp)]  
   
 ##  <a name="cfile__seektoend"></a>  CFile::SeekToEnd  
  Sets the value of the file pointer to the logical end of the file.  
@@ -700,7 +700,7 @@ ULONGLONG SeekToEnd();
  `SeekToEnd()` is equivalent to `CFile::Seek( 0L, CFile::end )`.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#19](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_15.cpp)]  
+ [!code-cpp[NVC_MFCFiles#19](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_15.cpp)]  
   
 ##  <a name="cfile__setfilepath"></a>  CFile::SetFilePath  
  Call this function to specify the path of the file; for example, if the path of a file is not available when a [CFile](../../mfc/reference/cfile-class.md) object is constructed, call `SetFilePath` to provide it.  
@@ -719,7 +719,7 @@ virtual void SetFilePath(LPCTSTR lpszNewName);
 > `SetFilePath` does not open the file or create the file; it simply associates the `CFile` object with a path name, which can then be used.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#20](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_16.cpp)]  
+ [!code-cpp[NVC_MFCFiles#20](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_16.cpp)]  
   
 ##  <a name="cfile__setlength"></a>  CFile::SetLength  
  Call this function to change the length of the file.  
@@ -738,7 +738,7 @@ virtual void SetLength(ULONGLONG dwNewLen);
 >  With `CMemFile`, this function could throw a `CMemoryException` object.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#11](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_17.cpp)]  
+ [!code-cpp[NVC_MFCFiles#11](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_17.cpp)]  
   
 ##  <a name="cfile__setstatus"></a>  CFile::SetStatus  
  Sets the status of the file associated with this file location.  
@@ -766,7 +766,7 @@ static void PASCAL SetStatus(
  Please note that when you make a call to `SetStatus` in an attempt to change only the attributes of the file, and the **m_mtime** member of the file status structure is nonzero, the attributes may also be affected (changing the time stamp may have side effects on the attributes). If you want to only change the attributes of the file, first set the **m_mtime** member of the file status structure to zero and then make a call to `SetStatus`.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#21](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_18.cpp)]  
+ [!code-cpp[NVC_MFCFiles#21](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_18.cpp)]  
   
 ##  <a name="cfile__unlockrange"></a>  CFile::UnlockRange  
  Unlocks a range of bytes in an open file.  
@@ -791,7 +791,7 @@ virtual void UnlockRange(
 >  This function is not available for the `CMemFile`-derived class.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#12](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_8.cpp)]  
+ [!code-cpp[NVC_MFCFiles#12](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_8.cpp)]  
   
 ##  <a name="cfile__write"></a>  CFile::Write  
  Writes data from a buffer to the file associated with the `CFile` object.  
@@ -813,7 +813,7 @@ virtual void Write(
  **Write** throws an exception in response to several conditions, including the disk-full condition.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#16](../../atl-mfc-shared/reference/codesnippet/CPP/cfile-class_19.cpp)]  
+ [!code-cpp[NVC_MFCFiles#16](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_19.cpp)]  
   
  In addition, see the examples for [CFile::CFile](#cfile__cfile) and [CFile::Open](#cfile__open).  
   

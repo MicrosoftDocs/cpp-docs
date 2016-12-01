@@ -52,7 +52,7 @@ The Active Template Library includes the following typedefs.
 |[CPathA](#cpatha)|A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CStringA`.|  
 |[CPathW](#cpathw)|A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CStringW`.|  
 |[CSimpleValArray](#csimplevalarray)|Represents an array for storing simple types.|  
-|[DefaultThreadTraits](../../atl/reference/defaultthreadtraits-class.md)|The default thread traits class.|  
+|[DefaultThreadTraits](#defaultthreadtraits)|The default thread traits class.|  
 |[LPCURL](#lpcurl)|A pointer to a constant [CUrl](../../atl/reference/curl-class.md) object.|  
 |[LPURL](#lpurl)|A pointer to a [CUrl](../../atl/reference/curl-class.md) object.|  
   
@@ -99,6 +99,12 @@ typedef ATL::_ATL_WIN_MODULE70 _ATL_WIN_MODULE;
 ### Remarks  
  Used by any ATL projects which use windowing features. Based on [_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md).  
   
+##  <a name="atl_url_port"></a>  ATL_URL_PORT 
+  The type used by [CUrl](curl-class.md) for specifying a port number.
+```  
+typedef WORD ATL_URL_PORT;
+```  
+
 ##  <a name="ccomdispatchdriver"></a>  CComDispatchDriver  
  This class manages COM interface pointers.  
   

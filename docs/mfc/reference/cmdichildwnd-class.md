@@ -79,7 +79,7 @@ class CMDIChildWnd : public CFrameWnd
   
 -   Indirectly construct it through a document template.  
   
- Before you call **Create** or `LoadFrame`, you must construct the frame-window object on the heap using the C++ **new** operator. Before calling **Create** you can also register a window class with the [AfxRegisterWndClass]--brokenlink--(../Topic/not%20found.md#afxregisterwndclass) global function to set the icon and class styles for the frame.  
+ Before you call **Create** or `LoadFrame`, you must construct the frame-window object on the heap using the C++ **new** operator. Before calling **Create** you can also register a window class with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function to set the icon and class styles for the frame.  
   
  Use the **Create** member function to pass the frame's creation parameters as immediate arguments.  
   
@@ -141,7 +141,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `lpszClassName`  
- Points to a null-terminated character string that names the Windows class (a [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure). The class name can be any name registered with the [AfxRegisterWndClass](http://msdn.microsoft.com/Library/62c7d4b1-7a29-4abb-86f7-dec541659db0) global function. Should be **NULL** for a standard `CMDIChildWnd`.  
+ Points to a null-terminated character string that names the Windows class (a [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure). The class name can be any name registered with the [AfxRegisterWndClass](http://msdn.microsoft.com/library/62c7d4b1-7a29-4abb-86f7-dec541659db0) global function. Should be **NULL** for a standard `CMDIChildWnd`.  
   
  `lpszWindowName`  
  Points to a null-terminated character string that represents the window name. Used as text for the title bar.  
@@ -169,14 +169,14 @@ virtual BOOL Create(
 ### Example  
  Example 1:  
   
- [!code-cpp[NVC_MFCWindowing#7](../../mfc/reference/codesnippet/CPP/cmdichildwnd-class_1.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#7](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_1.cpp)]  
   
 ### Example  
  Example 2:  
   
- [!code-cpp[NVC_MFCWindowing#8](../../mfc/reference/codesnippet/CPP/cmdichildwnd-class_2.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#8](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_2.cpp)]  
   
- [!code-cpp[NVC_MFCWindowing#9](../../mfc/reference/codesnippet/CPP/cmdichildwnd-class_3.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#9](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_3.cpp)]  
   
 ##  <a name="cmdichildwnd__getmdiframe"></a>  CMDIChildWnd::GetMDIFrame  
  Call this function to return the MDI parent frame.  
@@ -218,7 +218,7 @@ void MDIDestroy();
  The member function removes the title of the child window from the frame window and deactivates the child window.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#10](../../mfc/reference/codesnippet/CPP/cmdichildwnd-class_4.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#10](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_4.cpp)]  
   
 ##  <a name="cmdichildwnd__mdimaximize"></a>  CMDIChildWnd::MDIMaximize  
  Call this member function to maximize an MDI child window.  
@@ -231,7 +231,7 @@ void MDIMaximize();
  When a child window is maximized, Windows resizes it to make its client area fill the client area of the frame window. Windows places the child window's Control menu in the frame's menu bar so that the user can restore or close the child window and adds the title of the child window to the frame-window title.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#11](../../mfc/reference/codesnippet/CPP/cmdichildwnd-class_5.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#11](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_5.cpp)]  
   
 ##  <a name="cmdichildwnd__mdirestore"></a>  CMDIChildWnd::MDIRestore  
  Call this member function to restore an MDI child window from maximized or minimized size.  
@@ -241,7 +241,7 @@ void MDIRestore();
 ```  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#12](../../mfc/reference/codesnippet/CPP/cmdichildwnd-class_6.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#12](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_6.cpp)]  
   
 ##  <a name="cmdichildwnd__sethandles"></a>  CMDIChildWnd::SetHandles  
  Sets the handles for menu and accelerator resources.  

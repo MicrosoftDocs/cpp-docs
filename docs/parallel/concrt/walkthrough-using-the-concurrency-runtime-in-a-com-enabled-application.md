@@ -66,73 +66,77 @@ This document demonstrates how to use the Concurrency Runtime in an application 
 ### Using COM with the Parallel Patterns Library  
  When you use COM with a component in the Parallel Patterns Library (PPL), for example, a task group or parallel algorithm, call `CoInitializeEx` before you use the COM library during each task or iteration, and call `CoUninitialize` before each task or iteration finishes. The following example shows how to manage the lifetime of the COM library with a [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) object.  
   
- [!code-cpp[concrt-parallel-scripts#1](../../parallel/concrt/codesnippet/CPP/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_1.cpp)]  
+ [!code-cpp[concrt-parallel-scripts#1](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_1.cpp)]  
   
  You must make sure that the COM library is correctly freed when a task or parallel algorithm is canceled or when the task body throws an exception. To guarantee that the task calls `CoUninitialize` before it exits, use a `try-finally` block or the *Resource Acquisition Is Initialization* (RAII) pattern. The following example uses a `try-finally` block to free the COM library when the task completes or is canceled, or when an exception is thrown.  
   
- [!code-cpp[concrt-parallel-scripts#2](../../parallel/concrt/codesnippet/CPP/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_2.cpp)]  
+ [!code-cpp[concrt-parallel-scripts#2](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_2.cpp)]  
   
  The following example uses the RAII pattern to define the `CCoInitializer` class, which manages the lifetime of the COM library in a given scope.  
   
- [!code-cpp[concrt-parallel-scripts#3](../../parallel/concrt/codesnippet/CPP/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_3.cpp)]  
+ [!code-cpp[concrt-parallel-scripts#3](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_3.cpp)]  
   
  You can use the `CCoInitializer` class to automatically free the COM library when the task exits, as follows.  
   
- [!code-cpp[concrt-parallel-scripts#4](../../parallel/concrt/codesnippet/CPP/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_4.cpp)]  
+ [!code-cpp[concrt-parallel-scripts#4](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_4.cpp)]  
   
  For more information about cancellation in the Concurrency Runtime, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
   
 ### Using COM with Asynchronous Agents  
- When you use COM with asynchronous agents, call `CoInitializeEx` before you use the COM library in the [concurrency::agent::run](reference/agent-class.md#agent__run) method for your agent. Then call `CoUninitialize` before the `run` method returns. Do not use COM management routines in the constructor or destructor of your agent, and do not override the [concurrency::agent::start](reference/agent-class.md#agent__start) or [concurrency::agent::done](reference/agent-class.md#agent__done) methods because these methods are called from a different thread than the `run` method.  
+
+ When you use COM with asynchronous agents, call `CoInitializeEx` before you use the COM library in the [concurrency::agent::run](reference/agent-class.md#agent__run_method) method for your agent. Then call `CoUninitialize` before the `run` method returns. Do not use COM management routines in the constructor or destructor of your agent, and do not override the [concurrency::agent::start](reference/agent-class.md#agent__start_method) or [concurrency::agent::done](reference/agent-class.md#agent__done_method) methods because these methods are called from a different thread than the `run` method.  
+
   
  The following example shows a basic agent class, named `CCoAgent`, which manages the COM library in the `run` method.  
   
- [!code-cpp[concrt-parallel-scripts#5](../../parallel/concrt/codesnippet/CPP/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_5.cpp)]  
+ [!code-cpp[concrt-parallel-scripts#5](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_5.cpp)]  
   
  A complete example is provided later in this walkthrough.  
   
 ### Using COM with Lightweight Tasks  
  The document [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md) describes the role of lightweight tasks in the Concurrency Runtime. You can use COM with a lightweight task just as you would with any thread routine that you pass to the `CreateThread` function in the Windows API. This is shown in the following example.  
   
- [!code-cpp[concrt-parallel-scripts#6](../../parallel/concrt/codesnippet/CPP/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_6.cpp)]  
+ [!code-cpp[concrt-parallel-scripts#6](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_6.cpp)]  
   
 ## An Example of a COM-Enabled Application  
  This section shows a complete COM-enabled application that uses the `IScriptControl` interface to execute a script that computes the n<sup>th</sup> Fibonacci number. This example first calls the script from the main thread, and then uses the PPL and agents to call the script concurrently.  
   
  Consider the following helper function, `RunScriptProcedure`, which calls a procedure in an `IScriptControl` object.  
   
- [!code-cpp[concrt-parallel-scripts#7](../../parallel/concrt/codesnippet/CPP/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_7.cpp)]  
+ [!code-cpp[concrt-parallel-scripts#7](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_7.cpp)]  
   
  The `wmain` function creates an `IScriptControl` object, adds script code to it that computes the n<sup>th</sup> Fibonacci number, and then calls the `RunScriptProcedure` function to run that script.  
   
- [!code-cpp[concrt-parallel-scripts#8](../../parallel/concrt/codesnippet/CPP/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_8.cpp)]  
+ [!code-cpp[concrt-parallel-scripts#8](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_8.cpp)]  
   
 ### Calling the Script from the PPL  
- The following function, `ParallelFibonacci`, uses the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm to call the script in parallel. This function uses the `CCoInitializer` class to manage the lifetime of the COM library during every iteration of the task.  
+
+ The following function, `ParallelFibonacci`, uses the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for_function) algorithm to call the script in parallel. This function uses the `CCoInitializer` class to manage the lifetime of the COM library during every iteration of the task.  
+
   
- [!code-cpp[concrt-parallel-scripts#9](../../parallel/concrt/codesnippet/CPP/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_9.cpp)]  
+ [!code-cpp[concrt-parallel-scripts#9](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_9.cpp)]  
   
  To use the `ParallelFibonacci` function with the example, add the following code before the `wmain` function returns.  
   
- [!code-cpp[concrt-parallel-scripts#10](../../parallel/concrt/codesnippet/CPP/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_10.cpp)]  
+ [!code-cpp[concrt-parallel-scripts#10](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_10.cpp)]  
   
 ### Calling the Script from an Agent  
  The following example shows the `FibonacciScriptAgent` class, which calls a script procedure to compute the n<sup>th</sup> Fibonacci number. The `FibonacciScriptAgent` class uses message passing to receive, from the main program, input values to the script function. The `run` method manages the lifetime of the COM library throughout the task.  
   
- [!code-cpp[concrt-parallel-scripts#11](../../parallel/concrt/codesnippet/CPP/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_11.cpp)]  
+ [!code-cpp[concrt-parallel-scripts#11](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_11.cpp)]  
   
  The following function, `AgentFibonacci`, creates several `FibonacciScriptAgent` objects and uses message passing to send several input values to those objects.  
   
- [!code-cpp[concrt-parallel-scripts#12](../../parallel/concrt/codesnippet/CPP/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_12.cpp)]  
+ [!code-cpp[concrt-parallel-scripts#12](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_12.cpp)]  
   
  To use the `AgentFibonacci` function with the example, add the following code before the `wmain` function returns.  
   
- [!code-cpp[concrt-parallel-scripts#13](../../parallel/concrt/codesnippet/CPP/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_13.cpp)]  
+ [!code-cpp[concrt-parallel-scripts#13](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_13.cpp)]  
   
 ### The Complete Example  
  The following code shows the complete example, which uses parallel algorithms and asynchronous agents to call a script procedure that computes Fibonacci numbers.  
   
- [!code-cpp[concrt-parallel-scripts#14](../../parallel/concrt/codesnippet/CPP/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_14.cpp)]  
+ [!code-cpp[concrt-parallel-scripts#14](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_14.cpp)]  
   
  The example produces the following sample output.  
   

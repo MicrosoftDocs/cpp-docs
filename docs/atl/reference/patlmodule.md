@@ -51,7 +51,7 @@ __declspec(selectany) CAtlModule* _pAtlModule
  Methods on this global variable can be used to provide the functionality that the (now obsolete) class [CComModule](../../atl/reference/ccommodule-class.md) provided in Visual C++ 6.0.  
   
 ## Example  
- [!code-cpp[NVC_ATL_Windowing#97](../../atl/codesnippet/CPP/patlmodule_1.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#97](../../atl/codesnippet/cpp/patlmodule_1.cpp)]  
   
 ## Requirements  
  **Header:** atlbase.h  

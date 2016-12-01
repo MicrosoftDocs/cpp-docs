@@ -62,7 +62,7 @@ class CComSafeArrayBound : public SAFEARRAYBOUND
   
 |||  
 |-|-|  
-|[operator =](#ccomsafearraybound__operator__eq)|Sets the `CComSafeArrayBound` to a new value.|  
+|[operator =](#ccomsafearraybound__operator_eq)|Sets the `CComSafeArrayBound` to a new value.|  
   
 ## Remarks  
  This class is a wrapper for the **SAFEARRAYBOUND** structure used by [CComSafeArray](../../atl/reference/ccomsafearray-class.md). It provides methods for querying and setting the upper and lower bounds of a single dimension of a `CComSafeArray` object and the number of elements it contains. A multidimensional `CComSafeArray` object uses an array of `CComSafeArrayBound` objects, one for each dimension. Therefore, when using methods such as [GetCount](#ccomsafearraybound__getcount), be aware that this method will not return the total number of elements in a multidimensional array.  
@@ -125,7 +125,7 @@ LONG GetUpperBound() const throw();
 ### Remarks  
  The upper bound depends on the number of elements and the lower bound value. For example, if the lower bound is 0 and the number of elements is 10, the upper bound will automatically be set to 9.  
   
-##  <a name="ccomsafearraybound__operator__eq"></a>  CComSafeArrayBound::operator =  
+##  <a name="ccomsafearraybound__operator_eq"></a>  CComSafeArrayBound::operator =  
  Sets the `CComSafeArrayBound` to a new value.  
   
 ```

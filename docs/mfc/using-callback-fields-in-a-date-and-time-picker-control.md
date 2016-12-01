@@ -72,14 +72,14 @@ In addition to the standard format characters that define date and time picker f
   
  The following example is one method of supplying the size of the callback string:  
   
- [!code-cpp[NVC_MFCControlLadenDialog#8](../mfc/codesnippet/CPP/using-callback-fields-in-a-date-and-time-picker-control_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#8](../mfc/codesnippet/cpp/using-callback-fields-in-a-date-and-time-picker-control_1.cpp)]  
   
  Once the size of the current callback field has been calculated, you must supply a value for the field. This is done in the handler for the **DTN_FORMAT** notification.  
   
 ## Handling the DTN_FORMAT Notification  
  The **DTN_FORMAT** notification is used by the application to request the character string that will be substituted. The following example demonstrates one possible method:  
   
- [!code-cpp[NVC_MFCControlLadenDialog#9](../mfc/codesnippet/CPP/using-callback-fields-in-a-date-and-time-picker-control_2.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#9](../mfc/codesnippet/cpp/using-callback-fields-in-a-date-and-time-picker-control_2.cpp)]  
   
 > [!NOTE]
 >  The pointer to the **NMDATETIMEFORMAT** structure is found by casting the first parameter of the notification handler to the proper type.  

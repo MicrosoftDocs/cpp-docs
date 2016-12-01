@@ -40,19 +40,19 @@ This example demonstrates how to use [concurrency::parallel_for](reference/concu
 ## Example  
  The following example shows the `matrix_multiply` function, which computes the product of two square matrices.  
   
- [!code-cpp[concrt-parallel-matrix-multiply#1](../../parallel/concrt/codesnippet/CPP/how-to-write-a-parallel-for-loop_1.cpp)]  
+ [!code-cpp[concrt-parallel-matrix-multiply#1](../../parallel/concrt/codesnippet/cpp/how-to-write-a-parallel-for-loop_1.cpp)]  
   
 ## Example  
  The following example shows the `parallel_matrix_multiply` function, which uses the `parallel_for` algorithm to perform the outer loop in parallel.  
   
- [!code-cpp[concrt-parallel-matrix-multiply#2](../../parallel/concrt/codesnippet/CPP/how-to-write-a-parallel-for-loop_2.cpp)]  
+ [!code-cpp[concrt-parallel-matrix-multiply#2](../../parallel/concrt/codesnippet/cpp/how-to-write-a-parallel-for-loop_2.cpp)]  
   
  This example parallelizes the outer loop only because it performs enough work to benefit from the overhead for parallel processing. If you parallelize the inner loop, you will not receive a gain in performance because the small amount of work that the inner loop performs does not overcome the overhead for parallel processing. Therefore, parallelizing the outer loop only is the best way to maximize the benefits of concurrency on most systems.  
   
 ## Example  
  The following more complete example compares the performance of the `matrix_multiply` function versus the `parallel_matrix_multiply` function.  
   
- [!code-cpp[concrt-parallel-matrix-multiply#3](../../parallel/concrt/codesnippet/CPP/how-to-write-a-parallel-for-loop_3.cpp)]  
+ [!code-cpp[concrt-parallel-matrix-multiply#3](../../parallel/concrt/codesnippet/cpp/how-to-write-a-parallel-for-loop_3.cpp)]  
   
  The following sample output is for a computer that has four processors.  
   
@@ -69,4 +69,5 @@ parallel: 1311
 ## See Also  
  [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)   
  [parallel_for Function](reference/concurrency-namespace-functions.md#parallel_for)
+
 

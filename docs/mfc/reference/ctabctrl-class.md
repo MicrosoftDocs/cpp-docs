@@ -125,7 +125,7 @@ void AdjustRect(
  Pointer to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure that specifies the given rectangle and receives the calculated rectangle.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CTabCtrl#1](../../mfc/reference/codesnippet/CPP/ctabctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CTabCtrl#1](../../mfc/reference/codesnippet/cpp/ctabctrl-class_1.cpp)]  
   
 ##  <a name="ctabctrl__create"></a>  CTabCtrl::Create  
  Creates a tab control and attaches it to an instance of a `CTabCtrl` object.  
@@ -172,7 +172,7 @@ virtual BOOL Create(
  To create a tab control with extended window styles, call [CTabCtrl::CreateEx](#ctabctrl__createex) instead of **Create**.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CTabCtrl#2](../../mfc/reference/codesnippet/CPP/ctabctrl-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_CTabCtrl#2](../../mfc/reference/codesnippet/cpp/ctabctrl-class_2.cpp)]  
   
 ##  <a name="ctabctrl__createex"></a>  CTabCtrl::CreateEx  
  Creates a control (a child window) and associates it with the `CTabCtrl` object.  
@@ -242,7 +242,7 @@ BOOL DeleteItem(int nItem);
  Nonzero if successful; otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CTabCtrl#3](../../mfc/reference/codesnippet/CPP/ctabctrl-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_CTabCtrl#3](../../mfc/reference/codesnippet/cpp/ctabctrl-class_3.cpp)]  
   
 ##  <a name="ctabctrl__deselectall"></a>  CTabCtrl::DeselectAll  
  Resets items in a tab control, clearing any that were pressed.  
@@ -374,7 +374,7 @@ BOOL GetItem(
  Application-defined data associated with the tab. If there are more than four bytes of application-defined data per tab, an application must define a structure and use it instead of the `TCITEM` structure. The first member of the application-defined structure must be a [TCITEMHEADER](http://msdn.microsoft.com/library/windows/desktop/bb760556)structure. The **TCITEMHEADER** structure is identical to the `TCITEM` structure, but without the **lParam** member. The difference between the size of your structure and the size of the **TCITEMHEADER** structure should equal the number of extra bytes per tab.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CTabCtrl#4](../../mfc/reference/codesnippet/CPP/ctabctrl-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_CTabCtrl#4](../../mfc/reference/codesnippet/cpp/ctabctrl-class_4.cpp)]  
   
 ##  <a name="ctabctrl__getitemcount"></a>  CTabCtrl::GetItemCount  
  Retrieves the number of tabs in the tab control.  
@@ -587,7 +587,7 @@ LONG InsertItem(
  Zero-based index of the new tab if successful; otherwise – 1.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CTabCtrl#5](../../mfc/reference/codesnippet/CPP/ctabctrl-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_CTabCtrl#5](../../mfc/reference/codesnippet/cpp/ctabctrl-class_5.cpp)]  
   
 ##  <a name="ctabctrl__removeimage"></a>  CTabCtrl::RemoveImage  
  Removes the specified image from a tab control's image list.  

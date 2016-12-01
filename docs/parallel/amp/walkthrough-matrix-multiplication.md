@@ -59,13 +59,13 @@ This step-by-step walkthrough demonstrates how to use C++ AMP to accelerate the 
 ## Multiplication without tiling  
  In this section, consider the multiplication of two matrices, A and B, which are defined as follows:  
   
- ![3&#45;by&#45;2 matrix](../../parallel/amp/media/campmatrixanontiled.PNG "CampMatrixANonTiled")  
+ ![3&#45;by&#45;2 matrix](../../parallel/amp/media/campmatrixanontiled.png "campmatrixanontiled")  
   
- ![2&#45;by&#45;3 matrix](../../parallel/amp/media/campmatrixbnontiled.PNG "CampMatrixBNonTiled")  
+ ![2&#45;by&#45;3 matrix](../../parallel/amp/media/campmatrixbnontiled.png "campmatrixbnontiled")  
   
  A is a 3-by-2 matrix and B is a 2-by-3 matrix. The product of multiplying A by B is the following 3-by-3 matrix. The product is calculated by multiplying the rows of A by the columns of B element by element.  
   
- ![3&#45;by&#45;3 matrix](../../parallel/amp/media/campmatrixproductnontiled.PNG "CampMatrixProductNonTiled")  
+ ![3&#45;by&#45;3 matrix](../../parallel/amp/media/campmatrixproductnontiled.png "campmatrixproductnontiled")  
   
 ### To multiply without using C++ AMP  
   
@@ -128,7 +128,7 @@ This step-by-step walkthrough demonstrates how to use C++ AMP to accelerate the 
  
     parallel_for_each(
  product.extent, 
- [=](index<2> idx) restrict(amp) {  
+ [=] (index<2> idx) restrict(amp) {  
     int row = idx[0];  
     int col = idx[1];  
     for (int inner = 0; inner <2; inner++) {  
@@ -184,27 +184,28 @@ getchar();
   
 -   You can create `tile_static` variables. Access to data in `tile_static` space can be many times faster than access to data in the global space. An instance of a `tile_static` variable is created for each tile, and all threads in the tile have access to the variable. The primary benefit of tiling is the performance gain due to `tile_static` access.  
   
--   You can call the [tile_barrier::wait](reference/tile_barrier-class.md#tile_barrier__wait) method to stop all of the threads in one tile at a specified line of code. You cannot guarantee the order that the threads will run in, only that all of the threads in one tile will stop at the call to `tile_barrier::wait` before they continue execution.  
+-   You can call the [tile_barrier::wait](reference/tile-barrier-class.md#tile_barrier__wait_method) method to stop all of the threads in one tile at a specified line of code. You cannot guarantee the order that the threads will run in, only that all of the threads in one tile will stop at the call to `tile_barrier::wait` before they continue execution.  
+
   
 -   You have access to the index of the thread relative to the entire `array_view` object and the index relative to the tile. By using the local index, you can make your code easier to read and debug.  
   
  To take advantage of tiling in matrix multiplication, the algorithm must partition the matrix into tiles and then copy the tile data into `tile_static` variables for faster access. In this example, the matrix is partitioned into submatrices of equal size. The product is found by multiplying the submatrices. The two matrices and their product in this example are:  
   
- ![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixatiled.PNG "CampMatrixATiled")  
+ ![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixatiled.png "campmatrixatiled")  
   
- ![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixbtiled.PNG "CampMatrixBTiled")  
+ ![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixbtiled.png "campmatrixbtiled")  
   
- ![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixproducttiled.PNG "CampMatrixProductTiled")  
+ ![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixproducttiled.png "campmatrixproducttiled")  
   
  The matrices are partitioned into four 2x2 matrices, which are defined as follows:  
   
- ![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixapartitioned.PNG "CampMatrixAPartitioned")  
+ ![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixapartitioned.png "campmatrixapartitioned")  
   
- ![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixbpartitioned.PNG "CampMatrixBPartitioned")  
+ ![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixbpartitioned.png "campmatrixbpartitioned")  
   
  The product of A and B can now be written and calculated as follows:  
   
- ![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixproductpartitioned.PNG "CampMatrixProductPartitioned")  
+ ![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixproductpartitioned.png "campmatrixproductpartitioned")  
   
  Because matrices `a` through `h` are 2x2 matrices, all of the products and sums of them are also 2x2 matrices. It also follows that A*B is a 4x4 matrix, as expected. To quickly check the algorithm, calculate the value of the element in the first row, first column in the product. In the example, that would be the value of the element in the first row and first column of `ae + bg`. You only have to calculate the first column, first row of `ae` and `bg` for each term. That value for `ae` is `1*1 + 2*5 = 11`. The value for `bg` is `3*1 + 4*5 = 23`. The final value is `11 + 23 = 34`, which is correct.  
   

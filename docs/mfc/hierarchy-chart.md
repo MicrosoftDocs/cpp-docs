@@ -39,17 +39,17 @@ translation.priority.ht:
 # Hierarchy Chart
 The following illustration represents the MFC classes derived from `CObject`:  
   
- ![Classes Derived From CObject](../mfc/media/mfc_heirarchy_chart1of3.png "MFC_Heirarchy_Chart1of3")  
+ ![Classes Derived From CObject](../mfc/media/mfc_heirarchy_chart1of3.png "mfc_heirarchy_chart1of3")  
   
  The following illustration represents the MFC classes derived from `CWnd` and `CCmdTarget`:  
   
- ![Classes Derived From CCmdTarget or CWnd](../mfc/media/mfc_heirarchy_chart2of3.png "MFC_Heirarchy_Chart2of3")  
+ ![Classes Derived From CCmdTarget or CWnd](../mfc/media/mfc_heirarchy_chart2of3.png "mfc_heirarchy_chart2of3")  
   
  The following illustration represents the MFC classes not derived from `CObject`:  
   
- ![Classes Not Derived From CObject](../mfc/media/mfc_heirarchy_chart3of3.png "MFC_Heirarchy_Chart3of3")  
+ ![Classes Not Derived From CObject](../mfc/media/mfc_heirarchy_chart3of3.png "mfc_heirarchy_chart3of3")  
   
- You can download the complete chart from the following location: [http://go.microsoft.com/fwlink/LinkId=112301](http://go.microsoft.com/fwlink/LinkId=112301).  
+ You can download the complete chart from the following location: [http://go.microsoft.com/fwlink/LinkId=112301](http://go.microsoft.com/fwlink/linkid=112301).  
   
 ## See Also  
  [Hierarchy Chart Categories](../mfc/hierarchy-chart-categories.md)   

@@ -665,7 +665,7 @@ union  {  member-list  }
   
  Names declared in an anonymous union are used directly, like nonmember variables. Therefore, the names declared in an anonymous union must be unique in the surrounding scope.  
   
- In addition to the restrictions listed in [Union Member Data](../misc/union-member-data.md), anonymous unions are subject to additional restrictions:  
+ In addition to the restrictions for named unions, anonymous unions are subject to additional restrictions:  
   
 -   They must also be declared as **static** if declared in file or namespace scope.  
   
@@ -676,6 +676,5 @@ union  {  member-list  }
 ## See Also  
  [Classes and Structs](../cpp/classes-and-structs-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   
- [Anonymous Unions](../misc/anonymous-unions.md)   
  [class](../cpp/class-cpp.md)   
  [struct](../cpp/struct-cpp.md)

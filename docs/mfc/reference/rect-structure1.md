@@ -64,7 +64,7 @@ typedef struct tagRECT {
  Specifies the y-coordinate of the lower-right corner of a rectangle.  
   
 ## Example  
- [!code-cpp[NVC_MFC_Utilities#38](../../mfc/codesnippet/CPP/rect-structure1_1.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#38](../../mfc/codesnippet/cpp/rect-structure1_1.cpp)]  
   
 ## Requirements  
  **Header:** windef.h  

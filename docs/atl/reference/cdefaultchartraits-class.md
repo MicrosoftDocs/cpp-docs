@@ -80,7 +80,7 @@ static wchar_t CharToLower(wchar_t x);
  The character to convert to lowercase.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#132](../../atl/codesnippet/CPP/cdefaultchartraits-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#132](../../atl/codesnippet/cpp/cdefaultchartraits-class_1.cpp)]  
   
 ##  <a name="cdefaultchartraits__chartoupper"></a>  CDefaultCharTraits::CharToUpper  
  Call this function to convert a character to uppercase.  

@@ -146,7 +146,7 @@ BOOL AutoLoad(
  Use the `AutoLoad` function to initialize an owner-draw button in a dialog box as a bitmap button. Instructions for using this function are in the remarks for the [CBitmapButton](../../mfc/reference/cbitmapbutton-class.md) class.  
   
 ### Example  
- [!code-cpp[NVC_MFCControlLadenDialog#75](../../mfc/codesnippet/CPP/cbitmapbutton-class_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#75](../../mfc/codesnippet/cpp/cbitmapbutton-class_1.cpp)]  
   
 ##  <a name="cbitmapbutton__cbitmapbutton"></a>  CBitmapButton::CBitmapButton  
  Creates a `CBitmapButton` object.  
@@ -159,7 +159,7 @@ CBitmapButton();
  After creating the C++ `CBitmapButton` object, call [CButton::Create](../../mfc/reference/cbutton-class.md#cbutton__create) to create the Windows button control and attach it to the `CBitmapButton` object.  
   
 ### Example  
- [!code-cpp[NVC_MFCControlLadenDialog#57](../../mfc/codesnippet/CPP/cbitmapbutton-class_2.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#57](../../mfc/codesnippet/cpp/cbitmapbutton-class_2.cpp)]  
   
 ##  <a name="cbitmapbutton__loadbitmaps"></a>  CBitmapButton::LoadBitmaps  
  Use this function when you want to load bitmap images identified by their resource names or ID numbers, or when you cannot use the `AutoLoad` function because, for example, you are creating a bitmap button that is not part of a dialog box.  
@@ -208,7 +208,7 @@ BOOL LoadBitmaps(
  Nonzero if successful; otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_MFCControlLadenDialog#58](../../mfc/codesnippet/CPP/cbitmapbutton-class_3.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#58](../../mfc/codesnippet/cpp/cbitmapbutton-class_3.cpp)]  
   
 ##  <a name="cbitmapbutton__sizetocontent"></a>  CBitmapButton::SizeToContent  
  Call this function to resize a bitmap button to the size of the bitmap.  
@@ -218,7 +218,7 @@ void SizeToContent();
 ```  
   
 ### Example  
- [!code-cpp[NVC_MFCControlLadenDialog#59](../../mfc/codesnippet/CPP/cbitmapbutton-class_4.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#59](../../mfc/codesnippet/cpp/cbitmapbutton-class_4.cpp)]  
   
 ## See Also  
  [MFC Sample CTRLTEST](../../top/visual-cpp-samples.md)   

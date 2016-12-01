@@ -79,7 +79,7 @@ At the heart of the MFC framework are the concepts of document and view. A docum
   
  In a running application, these objects cooperatively respond to user actions, bound together by commands and other messages. A single application object manages one or more document templates. Each document template creates and manages one or more documents (depending on whether the application is SDI or MDI). The user views and manipulates a document through a view contained inside a frame window. The following figure shows the relationships among these objects for an SDI application.  
   
- ![Objects in a running SDI application](../mfc/media/vc386v1.gif "vc386V1")  
+ ![Objects in a running SDI application](../mfc/media/vc386v1.gif "vc386v1")  
 Objects in a Running SDI Application  
   
  The rest of this family of articles explains how the framework tools, the MFC Application Wizard, and the resource editors, create these objects, how they work together, and how you use them in your programming. Documents, views, and frame windows are discussed in more detail in [Window Objects](../mfc/window-objects.md) and [Document/View Architecture](../mfc/document-view-architecture.md).  

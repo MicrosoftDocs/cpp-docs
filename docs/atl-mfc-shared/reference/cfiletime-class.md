@@ -159,7 +159,7 @@ static CFileTime GetCurrentTime() throw();
  Returns the current system date and time in Coordinated Universal Time (UTC) format.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#41](../../atl-mfc-shared/reference/codesnippet/CPP/cfiletime-class_1.cpp)]  
+ [!code-cpp[NVC_MFCFiles#41](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_1.cpp)]  
   
 ##  <a name="cfiletime__gettime"></a>  CFileTime::GetTime  
  Call this method to retrieve the time from the `CFileTime` object.  
@@ -202,7 +202,7 @@ static const ULONGLONG Millisecond = 10000;
 ```  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#44](../../atl-mfc-shared/reference/codesnippet/CPP/cfiletime-class_2.cpp)]  
+ [!code-cpp[NVC_MFCFiles#44](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_2.cpp)]  
   
 ##  <a name="cfiletime__minute"></a>  CFileTime::Minute  
  A static data member storing the number of 100-nanosecond intervals that make up one minute.  
@@ -290,7 +290,7 @@ bool operator<(CFileTime ft) const throw();
  Returns **true** if the first object is less (earlier in time) than the second, **false** otherwise.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#43](../../atl-mfc-shared/reference/codesnippet/CPP/cfiletime-class_3.cpp)]  
+ [!code-cpp[NVC_MFCFiles#43](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_3.cpp)]  
   
 ##  <a name="cfiletime__operator__lt__eq"></a>  CFileTime::operator &lt;=  
  This operator compares two `CFileTime` objects to determine equality or the lesser.  
@@ -408,7 +408,7 @@ CFileTime UTCToLocal() const throw();
  Returns a `CFileTime` object containing the time in local file time format.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#42](../../atl-mfc-shared/reference/codesnippet/CPP/cfiletime-class_4.cpp)]  
+ [!code-cpp[NVC_MFCFiles#42](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_4.cpp)]  
   
 ##  <a name="cfiletime__week"></a>  CFileTime::Week  
  A static data member storing the number of 100-nanosecond intervals that make up one week.  

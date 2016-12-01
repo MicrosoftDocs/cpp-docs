@@ -44,9 +44,9 @@ When Automation was first introduced in early 1993, it was capable of being used
  Such a variety of COM does now exist. DCOM (for "distributed COM") has shipped with versions of Windows NT beginning with version 4.0 and including Windows 2000. Since late 1996, it has also been available for Windows 9x. In both cases, DCOM comprises a set of replacement and additional DLLs, with some utilities, which provide both local and remote COM capabilities. It is therefore now an inherent part of Win32-based platforms, and will be made available on other platforms by other organizations over time.  
   
 ## In This Section  
- [Where Does Remote Automation Fit In]--brokenlink--(../Topic/Where%20Does%20Remote%20Automation%20Fit%20In.md)  
+ [Where Does Remote Automation Fit In](where-does-remote-automation-fit-in-q.md)  
   
- [What Does Remote Automation Provide]--brokenlink--(../Topic/What%20Does%20Remote%20Automation%20Provide.md)  
+ [What Does Remote Automation Provide](what-does-remote-automation-provide-q.md)  
   
 ## See Also  
  [Remote Automation](../mfc/remote-automation.md)

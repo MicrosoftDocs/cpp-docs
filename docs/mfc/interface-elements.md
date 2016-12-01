@@ -38,7 +38,7 @@ This document describes interface elements that were introduced in [!INCLUDE[vs_
   
  The following illustration shows an application that was built by using the new interface elements.  
   
- ![MFC Feature Pack example application](../mfc/media/mfc_featurepack.png "MFC_FeaturePack")  
+ ![MFC Feature Pack example application](../mfc/media/mfc_featurepack.png "mfc_featurepack")  
   
 ## Window Docking  
  Window docking functionality resembles the window docking that the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] graphical user interface uses.  

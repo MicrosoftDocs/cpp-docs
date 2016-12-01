@@ -58,7 +58,7 @@ MFC supplies support for a subset of the Microsoft Messaging Application Program
   
 2.  Manually add the following to your document's message map:  
   
-     [!code-cpp[NVC_MFCDocView#9](../mfc/codesnippet/CPP/mapi-support-in-mfc_1.cpp)]  
+     [!code-cpp[NVC_MFCDocView#9](../mfc/codesnippet/cpp/mapi-support-in-mfc_1.cpp)]  
   
     > [!NOTE]
     >  This message map works for a document derived from either **CDocument** or **COleDocument** — it picks up the correct base class in either case, even though the message map is in your derived document class.  

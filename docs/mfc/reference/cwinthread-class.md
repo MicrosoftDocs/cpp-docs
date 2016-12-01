@@ -100,7 +100,7 @@ class CWinThread : public CCmdTarget
   
  The `CWinThread` class is necessary to make your code and MFC fully thread-safe. Thread-local data used by the framework to maintain thread-specific information is managed by `CWinThread` objects. Because of this dependence on `CWinThread` to handle thread-local data, any thread that uses MFC must be created by MFC. For example, a thread created by the run-time function [_beginthread, _beginthreadex](../../c-runtime-library/reference/beginthread-beginthreadex.md) cannot use any MFC APIs.  
   
- To create a thread, call [AfxBeginThread]--brokenlink--(../Topic/not%20found.md#afxbeginthread). There are two forms, depending on whether you want a worker or user-interface thread. If you want a user-interface thread, pass to `AfxBeginThread` a pointer to the `CRuntimeClass` of your `CWinThread`-derived class. If you want to create a worker thread, pass to `AfxBeginThread` a pointer to the controlling function and the parameter to the controlling function. For both worker threads and user-interface threads, you can specify optional parameters that modify priority, stack size, creation flags, and security attributes. `AfxBeginThread` will return a pointer to your new `CWinThread` object.  
+ To create a thread, call [AfxBeginThread](application-information-and-management.md#afxbeginthread). There are two forms, depending on whether you want a worker or user-interface thread. If you want a user-interface thread, pass to `AfxBeginThread` a pointer to the `CRuntimeClass` of your `CWinThread`-derived class. If you want to create a worker thread, pass to `AfxBeginThread` a pointer to the controlling function and the parameter to the controlling function. For both worker threads and user-interface threads, you can specify optional parameters that modify priority, stack size, creation flags, and security attributes. `AfxBeginThread` will return a pointer to your new `CWinThread` object.  
   
  Instead of calling `AfxBeginThread`, you can construct a `CWinThread`-derived object and then call `CreateThread`. This two-stage construction method is useful if you want to reuse the `CWinThread` object between successive creation and terminations of thread executions.  
   
@@ -154,7 +154,7 @@ CWinThread();
 ```  
   
 ### Remarks  
- To begin the thread's execution, call the [CreateThread](#cwinthread__createthread) member function. You will usually create threads by calling [AfxBeginThread](http://msdn.microsoft.com/Library/e9e8684d-24f7-4599-8fdf-1f4f560a753b), which will call this constructor and `CreateThread`.  
+ To begin the thread's execution, call the [CreateThread](#cwinthread__createthread) member function. You will usually create threads by calling [AfxBeginThread](http://msdn.microsoft.com/library/e9e8684d-24f7-4599-8fdf-1f4f560a753b), which will call this constructor and `CreateThread`.  
   
 ##  <a name="cwinthread__exitinstance"></a>  CWinThread::ExitInstance  
  Called by the framework from within a rarely overridden [Run](#cwinthread__run) member function to exit this instance of the thread, or if a call to [InitInstance](#cwinthread__initinstance) fails.  
@@ -229,7 +229,7 @@ virtual BOOL InitInstance();
 ### Remarks  
  Typically, you override `InitInstance` to perform tasks that must be completed when a thread is first created.  
   
- This member function is used only in user-interface threads. Perform initialization of worker threads in the controlling function passed to [AfxBeginThread]--brokenlink--(../Topic/not%20found.md#afxbeginthread).  
+ This member function is used only in user-interface threads. Perform initialization of worker threads in the controlling function passed to [AfxBeginThread](application-information-and-management.md#afxbeginthread).  
   
 ##  <a name="cwinthread__isidlemessage"></a>  CWinThread::IsIdleMessage  
  Override this function to keep **OnIdle** from being called after specific messages are generated.  
@@ -250,7 +250,7 @@ virtual BOOL IsIdleMessage(MSG* pMsg);
   
  If an application has created a short timer, **OnIdle** will be called frequently, causing performance problems. To improve such an application's performance, override `IsIdleMessage` in the application's `CWinApp`-derived class to check for `WM_TIMER` messages as follows:  
   
- [!code-cpp[NVC_MFCDocView#189](../../mfc/codesnippet/CPP/cwinthread-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#189](../../mfc/codesnippet/cpp/cwinthread-class_1.cpp)]  
   
  Handling `WM_TIMER` in this fashion will improve performance of applications that use short timers.  
   
@@ -287,7 +287,7 @@ DWORD m_nThreadID;
  The **m_nThreadID** data member is a public variable of type `DWORD`. It is only valid if underlying thread currently exists.  
   
 ### Example  
-  See the example for [AfxGetThread]--brokenlink--(../Topic/not%20found.md#afxgetthread).  
+  See the example for [AfxGetThread](application-information-and-management.md#afxgetthread).  
   
 ##  <a name="cwinthread__m_pactivewnd"></a>  CWinThread::m_pActiveWnd  
  Use this data member to store a pointer to your thread's active window object.  

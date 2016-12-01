@@ -131,7 +131,7 @@ void CSections::DoFieldExchange(CFieldExchange* pFX)
   
 -   An initialization for each field data member  
   
--   An initialization for the [m_nFields](../../mfc/reference/crecordset-class.md#crecordset__m_n_fields) data member, which contains the number of field data members  
+-   An initialization for the [m_nFields](../../mfc/reference/crecordset-class.md#crecordset__m_nfields) data member, which contains the number of field data members  
   
  The constructor for the `CSections` recordset example looks like this:  
   
@@ -154,8 +154,9 @@ CSections::CSections(CDatabase* pdb)
 ```  
 m_nFields += 3;  
 ```  
-  
- This is the code for adding three new fields. If you add any parameter data members, you must initialize the [m_nParams](../../mfc/reference/crecordset-class.md#crecordset__m_n_params) data member, which contains the number of parameter data members. Put the `m_nParams` initialization outside the brackets.  
+
+ This is the code for adding three new fields. If you add any parameter data members, you must initialize the [m_nParams](../../mfc/reference/crecordset-class.md#crecordset__m_nparams) data member, which contains the number of parameter data members. Put the `m_nParams` initialization outside the brackets.  
+
   
 ## See Also  
  [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)

@@ -48,11 +48,11 @@ When a program executes, a number of abnormal conditions and errors called "exce
   
  Several macros included with the Microsoft Foundation Class Library will set up exception handlers. A number of other global functions help to throw specialized exceptions and terminate programs, if necessary. These macros and global functions fall into the following categories:  
   
-- [Exception macros](#_mfc_exception_macros), which structure your exception handler.  
+- Exception macros, which structure your exception handler.  
   
-- [Exception-throwing functions](#_mfc_exception.2d.throwing_functions), which generate exceptions of specific types.  
+- Exception-throwing functions), which generate exceptions of specific types.  
   
-- [Termination functions](#_mfc_termination_functions), which cause program termination.  
+- Termination functions, which cause program termination.  
   
  For examples and more details, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   
@@ -67,7 +67,7 @@ When a program executes, a number of abnormal conditions and errors called "exce
 |[AND_CATCH_ALL](#and_catch_all)|Designates a block of code for catching all other additional exception types thrown in a preceding **TRY** block.|  
 |[END_CATCH](#end_catch)|Ends the last **CATCH** or `AND_CATCH` code block.|  
 |[END_CATCH_ALL](#end_catch_all)|Ends the last `CATCH_ALL` code block.|  
-|[THROW](#throw_mfc_)|Throws a specified exception.|  
+|[THROW](#throw)|Throws a specified exception.|  
 |[THROW_LAST](#throw_last)|Throws the currently handled exception to the next outer handler.|  
   
 ### Exception-Throwing Functions  
@@ -150,7 +150,7 @@ CATCH(exception_class, exception_object_pointer_name)
  For more information on exceptions and the **CATCH** macro, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCExceptions#26](../../mfc/codesnippet/CPP/exception-processing_1.cpp)]  
+ [!code-cpp[NVC_MFCExceptions#26](../../mfc/codesnippet/cpp/exception-processing_1.cpp)]  
   
 ##  <a name="catch_all"></a>  CATCH_ALL  
  Defines a block of code that catches all exception types thrown in the preceding **TRY** block.  
@@ -235,7 +235,7 @@ END_CATCH
 END_CATCH_ALL  
 ```  
   
-##  <a name="throw__mfc_"></a>  THROW (MFC)  
+##  <a name="throw"></a>  THROW (MFC)  
  Throws the specified exception.  
   
 ```   
@@ -372,7 +372,7 @@ void AFXAPI AfxThrowOleDispatchException(
  The information provided to this function can be displayed by the driving application (Microsoft Visual Basic or another OLE automation client application).  
   
 ### Example  
- [!code-cpp[NVC_MFCExceptions#25](../../mfc/codesnippet/CPP/exception-processing_2.cpp)]  
+ [!code-cpp[NVC_MFCExceptions#25](../../mfc/codesnippet/cpp/exception-processing_2.cpp)]  
   
 ##  <a name="afxthrowoleexception"></a>  AfxThrowOleException  
  Creates an object of type `COleException` and throws an exception.  

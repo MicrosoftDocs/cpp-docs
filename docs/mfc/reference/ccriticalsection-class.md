@@ -143,7 +143,7 @@ BOOL Lock(DWORD dwTimeout);
 ### Example  
  This example demonstrates the nested critical section approach by controlling access to a shared resource (the static `_strShared` object) using a shared `CCriticalSection` object. The `SomeMethod` function demonstrates updating a shared resource in a safe manner.  
   
- [!code-cpp[NVC_MFC_Utilities#11](../../mfc/codesnippet/CPP/ccriticalsection-class_1.h)]  
+ [!code-cpp[NVC_MFC_Utilities#11](../../mfc/codesnippet/cpp/ccriticalsection-class_1.h)]  
   
 ##  <a name="ccriticalsection__m_sect"></a>  CCriticalSection::m_sect  
  Contains a critical section object that is used by all `CCriticalSection` methods.  

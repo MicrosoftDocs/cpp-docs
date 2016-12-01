@@ -118,7 +118,7 @@ void AttachDispatch(
  This function releases any `IDispatch` pointer that is already attached to the `COleDispatchDriver` object.  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#3](../../mfc/codesnippet/CPP/coledispatchdriver-class_1.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#3](../../mfc/codesnippet/cpp/coledispatchdriver-class_1.cpp)]  
   
 ##  <a name="coledispatchdriver__coledispatchdriver"></a>  COleDispatchDriver::COleDispatchDriver  
  Constructs a `COleDispatchDriver` object.  
@@ -182,7 +182,7 @@ BOOL CreateDispatch(
  Nonzero on success; otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#4](../../mfc/codesnippet/CPP/coledispatchdriver-class_2.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#4](../../mfc/codesnippet/cpp/coledispatchdriver-class_2.cpp)]  
   
 ##  <a name="coledispatchdriver__detachdispatch"></a>  COleDispatchDriver::DetachDispatch  
  Detaches the current `IDispatch` connection from this object.  
@@ -200,7 +200,7 @@ LPDISPATCH DetachDispatch();
  For more information about the `LPDISPATCH` type, see [Implementing the IDispatch Interface](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#5](../../mfc/codesnippet/CPP/coledispatchdriver-class_3.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#5](../../mfc/codesnippet/cpp/coledispatchdriver-class_3.cpp)]  
   
 ##  <a name="coledispatchdriver__getproperty"></a>  COleDispatchDriver::GetProperty  
  Gets the object property specified by `dwDispID`.  
@@ -225,7 +225,7 @@ void GetProperty(
  Address of the variable that will receive the property value. It must match the type specified by `vtProp`.  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#6](../../mfc/codesnippet/CPP/coledispatchdriver-class_4.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#6](../../mfc/codesnippet/cpp/coledispatchdriver-class_4.cpp)]  
   
 ##  <a name="coledispatchdriver__invokehelper"></a>  COleDispatchDriver::InvokeHelper  
  Calls the object method or property specified by `dwDispID`, in the context specified by `wFlags`.  
@@ -279,7 +279,7 @@ void AFX_CDECL InvokeHelper(
 |**VT_VARIANT**|**VARIANT**|  
 |**VT_UNKNOWN**|`LPUNKNOWN`|  
   
- The `pbParamInfo` argument is a space-separated list of **VTS_** constants. One or more of these values, separated by spaces (not commas), specifies the function's parameter list. Possible values are listed with the [EVENT_CUSTOM]--brokenlink--(../Topic/not%20found.md#event_custom) macro.  
+ The `pbParamInfo` argument is a space-separated list of **VTS_** constants. One or more of these values, separated by spaces (not commas), specifies the function's parameter list. Possible values are listed with the [EVENT_CUSTOM](event-maps.md#event_custom) macro.  
   
  This function converts the parameters to **VARIANTARG** values, then invokes the [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx) method. If the call to `Invoke` fails, this function will throw an exception. If the `SCODE` (status code) returned by **IDispatch::Invoke** is `DISP_E_EXCEPTION`, this function throws a [COleException](../../mfc/reference/coleexception-class.md) object; otherwise it throws a [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).  
   
@@ -301,7 +301,7 @@ BOOL m_bAutoRelease;
  For more information on releasing COM objects, see [Implementing Reference Counting](http://msdn.microsoft.com/library/windows/desktop/ms693431) and [IUnknown::Release](http://msdn.microsoft.com/library/windows/desktop/ms682317) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#9](../../mfc/codesnippet/CPP/coledispatchdriver-class_5.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#9](../../mfc/codesnippet/cpp/coledispatchdriver-class_5.cpp)]  
   
 ##  <a name="coledispatchdriver__m_lpdispatch"></a>  COleDispatchDriver::m_lpDispatch  
  The pointer to the `IDispatch` interface attached to this `COleDispatchDriver`.  
@@ -336,7 +336,7 @@ const COleDispatchDriver& operator=(const COleDispatchDriver& dispatchSrc);
 ```   
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#8](../../mfc/codesnippet/CPP/coledispatchdriver-class_6.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#8](../../mfc/codesnippet/cpp/coledispatchdriver-class_6.cpp)]  
   
 ##  <a name="coledispatchdriver__releasedispatch"></a>  COleDispatchDriver::ReleaseDispatch  
  Releases the `IDispatch` connection. For more information, see [Implementing the IDispatch Interface](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945)  
@@ -371,7 +371,7 @@ void AFX_CDECL SetProperty(
  A single parameter of the type specified by `vtProp`.  
   
 ### Example  
- [!code-cpp[NVC_MFCOleContainer#7](../../mfc/codesnippet/CPP/coledispatchdriver-class_7.cpp)]  
+ [!code-cpp[NVC_MFCOleContainer#7](../../mfc/codesnippet/cpp/coledispatchdriver-class_7.cpp)]  
   
 ## See Also  
  [MFC Sample CALCDRIV](../../top/visual-cpp-samples.md)   

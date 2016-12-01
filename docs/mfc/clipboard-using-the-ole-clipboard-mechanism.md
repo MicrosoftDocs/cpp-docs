@@ -49,7 +49,7 @@ OLE uses standard formats and some OLE-specific formats for transferring data th
   
  For example, to enable the Cut command, you might write a handler something like the following:  
   
- [!code-cpp[NVC_MFCListView#3](../atl/reference/codesnippet/CPP/clipboard-using-the-ole-clipboard-mechanism_1.cpp)]  
+ [!code-cpp[NVC_MFCListView#3](../atl/reference/codesnippet/cpp/clipboard-using-the-ole-clipboard-mechanism_1.cpp)]  
   
 ## What do you want to know more about  
   

@@ -239,7 +239,7 @@ virtual BOOL Create(
  For more on dynamic splitter windows, see "Splitter Windows" in the article [Multiple Document Types, Views, and Frame Windows](../../mfc/multiple-document-types-views-and-frame-windows.md), [Technical Note 29](../../mfc/tn029-splitter-windows.md), and the [CSplitterWnd](../../mfc/reference/csplitterwnd-class.md) class overview.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#125](../../mfc/reference/codesnippet/CPP/csplitterwnd-class_1.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#125](../../mfc/reference/codesnippet/cpp/csplitterwnd-class_1.cpp)]  
   
 ##  <a name="csplitterwnd__createscrollbarctrl"></a>  CSplitterWnd::CreateScrollBarCtrl  
  Called by the framework to create a shared scroll bar control.  
@@ -350,7 +350,7 @@ virtual BOOL CreateView(
  The framework also calls this member function to create new panes when the user of a dynamic splitter window splits a pane, row, or column.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#4](../../mfc/reference/codesnippet/CPP/csplitterwnd-class_2.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#4](../../mfc/reference/codesnippet/cpp/csplitterwnd-class_2.cpp)]  
   
 ##  <a name="csplitterwnd__csplitterwnd"></a>  CSplitterWnd::CSplitterWnd  
  Call to construct a `CSplitterWnd` object.  
@@ -647,7 +647,7 @@ int IdFromRowCol(
  This member function is used for creating nonviews as panes and may be called before the pane exists.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#5](../../mfc/reference/codesnippet/CPP/csplitterwnd-class_3.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#5](../../mfc/reference/codesnippet/cpp/csplitterwnd-class_3.cpp)]  
   
 ##  <a name="csplitterwnd__ischildpane"></a>  CSplitterWnd::IsChildPane  
  Determines whether `pWnd` is currently a child pane of this splitter window.  
@@ -804,7 +804,7 @@ void SetColumnInfo(
  When the framework displays the splitter window, it lays out the panes in columns and rows according to their ideal dimensions, working from the upper-left to the lower-right corner of the splitter window's client area.  
   
 ### Example  
- [!code-cpp[NVC_MFCWindowing#6](../../mfc/reference/codesnippet/CPP/csplitterwnd-class_4.cpp)]  
+ [!code-cpp[NVC_MFCWindowing#6](../../mfc/reference/codesnippet/cpp/csplitterwnd-class_4.cpp)]  
   
 ##  <a name="csplitterwnd__setrowinfo"></a>  CSplitterWnd::SetRowInfo  
  Call to set the specified row information.  

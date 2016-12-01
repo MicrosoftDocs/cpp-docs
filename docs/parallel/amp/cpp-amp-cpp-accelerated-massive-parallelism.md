@@ -57,9 +57,9 @@ C++ AMP (C++ Accelerated Massive Parallelism) accelerates the execution of your 
  [restrict (C++ AMP)](../../cpp/restrict-cpp-amp.md)  
   
 ## Other Resources  
- [Parallel Programming in Native Code Blog](http://go.microsoft.com/fwlink/p/LinkId=238472)  
+ [Parallel Programming in Native Code Blog](http://go.microsoft.com/fwlink/p/linkid=238472)  
   
- [C++ AMP sample projects for download](http://go.microsoft.com/fwlink/p/LinkId=248508)  
+ [C++ AMP sample projects for download](http://go.microsoft.com/fwlink/p/linkid=248508)  
   
- [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/LinkID=253987&clcid=0x409)
+ [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/linkid=253987&clcid=0x409)
 

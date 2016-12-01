@@ -31,7 +31,7 @@ manager: "ghogen"
 |[expf Function](#expf_function)|[expm1 Function](#expm1_function)|[expm1f Function](#expm1f_function)|  
 |[fabs Function](#fabs_function)|[fabsf Function](#fabsf_function)|[floor Function](#floor_function)|  
 |[floorf Function](#floorf_function)|[fmax Function](#fmax_function)|[fmaxf Function](#fmaxf_function)|  
-|[fmin Function](#fmin_function)|[fminf Function](#fminf_function)|[fmod Function (C++ AMP)](#fmod_function__c_add_add_amp_)|  
+|[fmin Function](#fmin_function)|[fminf Function](#fminf_function)|[fmod Function](#fmod_function)|  
 |[fmodf Function](#fmodf_function)|[fpclassify Function](#fpclassify_function)|[frexp Function](#frexp_function)|  
 |[frexpf Function](#frexpf_function)|[hypot Function](#hypot_function)|[hypotf Function](#hypotf_function)|  
 |[ilogb Function](#ilogb_function)|[ilogbf Function](#ilogbf_function)|[isfinite Function](#isfinite_function)|  
@@ -882,7 +882,7 @@ inline float fminf(
 ### Return Value  
  Return the minimum numeric value of the arguments  
   
-##  <a name="fmod_function__c_add_add_amp_"></a>  fmod Function (C++ AMP)  
+##  <a name="fmod_function"></a>  fmod Function (C++ AMP)  
  Computes the remainder of the first specified argument divided by the second specified argument.  
   
 ```  

@@ -38,11 +38,10 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Destructors (C++)
-"Destructor" functions are the inverse of constructor functions. They are called when objects are destroyed (deallocated). Designate a function as a class's destructor by preceding the class name with a tilde (`~`). For example, the destructor for class `String` is declared: `~String()`.  
-  
- In a /clr compilation, the destructor has a special role in releasing managed and unmanaged resources. See [Destructors and finalizers in How to: Define and consume classes and structs (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) for more information.  
-  
- The destructor is commonly used to "clean up" when an object is no longer necessary. Consider the following declaration of a `String` class:  
+A destructor is a member function that is invoked automatically when the object goes out of scope or is explicitly destroyed by a call to `delete`. A destructor has the same name as the class, preceded by a tilde (`~`). For example, the destructor for class `String` is declared: `~String()`. 
+If you do not define a destructor, the compiler will provide a default one; for many classes this is sufficient. You only need to define a custom destructor when the class stores handles to system resources that need to be released, or pointers that own the memory they point to.
+
+Consider the following declaration of a `String` class:  
   
 ```  
 // spec1_destructors.cpp  
@@ -87,15 +86,11 @@ int main() {
 ## Delcaring destructors  
  Destructors are functions with the same name as the class but preceded by a tilde (`~`)  
   
- The first form of the syntax is used for destructors declared or defined inside a class declaration; the second form is used for destructors defined outside a class declaration.  
-  
  Several rules govern the declaration of destructors. Destructors:  
   
 -   Do not accept arguments.  
   
--   Cannot specify any return type (including `void`).  
-  
--   Cannot return a value using the `return` statement.  
+-   Do not return a value (or `void`).  
   
 -   Cannot be declared as **const**, `volatile`, or **static**. However, they can be invoked for the destruction of objects declared as **const**, `volatile`, or **static**.  
   
@@ -103,31 +98,29 @@ int main() {
   
 ## Using destructors  
  Destructors are called when one of the following events occurs:  
-  
--   An object allocated using the **new** operator is explicitly deallocated using the **delete** operator. When objects are deallocated using the **delete** operator, memory is freed for the "most derived object," or the object that is a complete object and not a subobject representing a base class. This "most-derived object" deallocation is guaranteed to work only with virtual destructors. Deallocation may fail in multiple-inheritance situations where the type information does not correspond to the underlying type of the actual object.  
-  
+
 -   A local (automatic) object with block scope goes out of scope.  
+
+-   An object allocated using the **new** operator is explicitly deallocated using **delete**.   
   
 -   The lifetime of a temporary object ends.  
   
 -   A program ends and global or static objects exist.  
   
--   The destructor is explicitly called using the destructor function's fully qualified name. (For more information, see [Explicit Destructor Calls](../misc/explicit-destructor-calls.md).)  
+-   The destructor is explicitly called using the destructor function's fully qualified name.
   
- The cases described in the preceding list ensure that all objects can be destroyed with user-defined methods.  
+ Destructors can freely call class member functions and access class member data.
   
- If a base class or data member has an accessible destructor, and if a derived class does not declare a destructor, the compiler generates one. This compiler-generated destructor calls the base class destructor and the destructors for members of the derived type. Default destructors are public. (For more information about accessibility, see [Access Specifiers for Base Classes](../misc/access-specifiers-for-base-classes.md).)  
-  
- Destructors can freely call class member functions and access class member data. When a virtual function is called from a destructor, the function called is the function for the class currently being destroyed. (For more information, see [Order of Destruction](../misc/order-of-destruction.md).)  
-  
- There are two restrictions on the use of destructors. The first restriction is that you cannot take the address of a destructor. The second is that derived classes do not inherit their base class's destructors. Instead, as previously explained, they always override the base class's destructors.  
+ There are two restrictions on the use of destructors:
+ - you cannot take its address
+-  derived classes do not inherit the destructor of their base class.
   
 ## Order of destruction  
  When an object goes out of scope or is deleted, the sequence of events in its complete destruction is as follows:  
   
 1.  The class's destructor is called, and the body of the destructor function is executed.  
   
-2.  Destructors for nonstatic member objects are called in the reverse order in which they appear in the class declaration. The optional member initialization list used in construction of these members does not affect the order of (construction or) destruction. (For more information about initializing members, see [Initializing Bases and Members](http://msdn.microsoft.com/en-us/2f71377e-2b6b-49da-9a26-18e9b40226a1).)  
+2.  Destructors for nonstatic member objects are called in the reverse order in which they appear in the class declaration. The optional member initialization list used in construction of these members does not affect the order of construction or destruction.   
   
 3.  Destructors for nonvirtual base classes are called in the reverse order of declaration.  
   
@@ -248,6 +241,3 @@ ps->~String();     // Virtual call
 ```  
   
  The notation for explicit calls to destructors, shown in the preceding, can be used regardless of whether the type defines a destructor. This allows you to make such explicit calls without knowing if a destructor is defined for the type. An explicit call to a destructor where none is defined has no effect.  
-  
-## See Also  
- [Special Member Functions](../misc/special-member-functions-cpp.md)

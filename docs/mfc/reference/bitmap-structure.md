@@ -103,4 +103,4 @@ typedef struct tagBITMAP {  /* bm */
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CBitmap::CreateBitmapIndirect](../../mfc/reference/cbitmap-class.md#cbitmap__createbitmapindirect.md)
+ [CBitmap::CreateBitmapIndirect](../../mfc/reference/cbitmap-class.md#cbitmap__createbitmapindirect)

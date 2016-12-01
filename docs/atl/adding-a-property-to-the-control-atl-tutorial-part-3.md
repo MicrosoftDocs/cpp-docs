@@ -59,15 +59,15 @@ translation.priority.ht:
   
 1.  From Solution Explorer, open PolyCtl.h and add the following line after the definition of `m_clrFillColor`:  
   
-     [!code-cpp[NVC_ATL_Windowing#44](../atl/codesnippet/CPP/adding-a-property-to-the-control-atl-tutorial-part-3_1.h)]  
+     [!code-cpp[NVC_ATL_Windowing#44](../atl/codesnippet/cpp/adding-a-property-to-the-control-atl-tutorial-part-3_1.h)]  
   
 2.  Set the default value of `m_nSides`. Make the default shape a triangle by adding a line to the constructor in PolyCtl.h:  
   
-     [!code-cpp[NVC_ATL_Windowing#45](../atl/codesnippet/CPP/adding-a-property-to-the-control-atl-tutorial-part-3_2.h)]  
+     [!code-cpp[NVC_ATL_Windowing#45](../atl/codesnippet/cpp/adding-a-property-to-the-control-atl-tutorial-part-3_2.h)]  
   
 3.  Implement the `Get` and `Put` methods. The `get_Sides` and `put_Sides` function declarations have been added to PolyCtl.h. Replace the code in PolyCtl.cpp for `get_Sides` and `put_Sides` with the following code:  
   
-     [!code-cpp[NVC_ATL_Windowing#46](../atl/codesnippet/CPP/adding-a-property-to-the-control-atl-tutorial-part-3_3.cpp)]  
+     [!code-cpp[NVC_ATL_Windowing#46](../atl/codesnippet/cpp/adding-a-property-to-the-control-atl-tutorial-part-3_3.cpp)]  
   
  The `get_Sides` method returns the current value of the `Sides` property through the `pVal` pointer. In the `put_Sides` method, the code ensures the user is setting the `Sides` property to an acceptable value. The minimum must be 2, and because an array of points will be used for each side, 100 is a reasonable limit for a maximum value.  
   

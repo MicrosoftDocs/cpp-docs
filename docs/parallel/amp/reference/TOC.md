@@ -10,7 +10,7 @@
 ### [array Class](array-class.md)
 ### [array_view Class](array-view-class.md)
 ### [completion_future Class](completion-future-class.md)
-### [extent Class (C++ AMP)](extent-class-cpp-amp.md)
+### [extent Class (C++ AMP)](extent-class.md)
 ### [index Class](index-class.md)
 ### [invalid_compute_domain Class](invalid-compute-domain-class.md)
 ### [out_of_memory Class](out-of-memory-class.md)
