@@ -55,12 +55,13 @@ This example shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/e
 ## Defining the HttpRequest, HttpRequestBuffersCallback, and HttpRequestStringCallback Classes  
  When you use the `IXMLHTTPRequest2` interface to create web requests over HTTP, you implement the `IXMLHTTPRequest2Callback` interface to receive the server response and react to other events. This example defines the `HttpRequest` class to create web requests, and the `HttpRequestBuffersCallback` and `HttpRequestStringCallback` classes to process responses. The `HttpRequestBuffersCallback` and `HttpRequestStringCallback` classes support the `HttpRequest` class; you work only with the `HttpRequest` class from application code.  
   
- The `GetAsync`, `PostAsync` methods of the `HttpRequest` class enable you to start HTTP GET and POST operations, respectively. These methods use the `HttpRequestStringCallback` class to read the server response as a string. The `SendAsync` and `ReadAsync` methods enable you to stream large content in chunks. These methods each return [concurrency::task](../../parallel/concrt/reference/task-class-concurrency-runtime.md) to represent the operation. The `GetAsync` and `PostAsync` methods produce `task<std::wstring>` value, where the `wstring` part represents the server’s response. The `SendAsync` and `ReadAsync` methods produce `task<void>` values; these tasks complete when the send and read operations complete.  
+ The `GetAsync`, `PostAsync` methods of the `HttpRequest` class enable you to start HTTP GET and POST operations, respectively. These methods use the `HttpRequestStringCallback` class to read the server response as a string. The `SendAsync` and `ReadAsync` methods enable you to stream large content in chunks. These methods each return [concurrency::task](../../parallel/concrt/reference/task-class.md) to represent the operation. The `GetAsync` and `PostAsync` methods produce `task<std::wstring>` value, where the `wstring` part represents the server’s response. The `SendAsync` and `ReadAsync` methods produce `task<void>` values; these tasks complete when the send and read operations complete.  
   
  Because the `IXMLHTTPRequest2` interfaces act asynchronously, this example uses [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) to create a task that completes after the callback object completes or cancels the download operation. The `HttpRequest` class creates a task-based continuation from this task to set the final result. The `HttpRequest` class uses a task-based continuation to ensure that the continuation task runs even if the previous task produces an error or is canceled. For more information about task-based continuations, see [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)  
   
 
- To support cancellation, the `HttpRequest`, `HttpRequestBuffersCallback`, and `HttpRequestStringCallback` classes use cancellation tokens. The `HttpRequestBuffersCallback` and `HttpRequestStringCallback` classes use the [concurrency::cancellation_token::register_callback](reference/cancellation_token-class.md#cancellation_token__register_callback_method) method to enable the task completion event to respond to cancellation. This cancellation callback aborts the download. For more info about cancellation, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl).  
+ To support cancellation, the `HttpRequest`, `HttpRequestBuffersCallback`, and `HttpRequestStringCallback` classes use cancellation tokens. The `HttpRequestBuffersCallback` and `HttpRequestStringCallback` classes use the [concurrency::cancellation_token::register_callback](reference/cancellation-token-class.md#cancellation_token__register_callback_method) method to enable the task completion event to respond to cancellation. This cancellation callback aborts the download. For more info about cancellation, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl).  
+
 
   
 #### To Define the HttpRequest Class  
@@ -112,7 +113,9 @@ This example shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/e
   
     > [!TIP]
 
-    >  If your app does not require support for cancellation, pass [concurrency::cancellation_token::none](reference/cancellation_token-class.md#cancellation_token__none_method) to the `HttpRequest::GetAsync` and `HttpRequest::PostAsync` methods.  
+
+    >  If your app does not require support for cancellation, pass [concurrency::cancellation_token::none](reference/cancellation-token-class.md#cancellation_token__none_method) to the `HttpRequest::GetAsync` and `HttpRequest::PostAsync` methods.  
+
 
   
 7.  In MainPage.xaml.cpp, implement the `MainPage::ProcessHttpRequest` method.  
@@ -134,5 +137,5 @@ This example shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/e
  [Asynchronous programming in C++](http://msdn.microsoft.com/en-us/512700b7-7863-44cc-93a2-366938052f31)   
  [Creating Asynchronous Operations in C++ for Windows Store Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)   
  [Quickstart: Connecting using XML HTTP Request (IXMLHTTPRequest2)](http://msdn.microsoft.com/en-us/cc7aed53-b2c5-4d83-b85d-cff2f5ba7b35)   
- [task Class (Concurrency Runtime)](../../parallel/concrt/reference/task-class-concurrency-runtime.md)   
+ [task Class (Concurrency Runtime)](../../parallel/concrt/reference/task-class.md)   
  [task_completion_event Class](../../parallel/concrt/reference/task-completion-event-class.md)

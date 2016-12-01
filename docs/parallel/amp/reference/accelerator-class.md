@@ -153,7 +153,7 @@ static const wchar_t cpu_accelerator[];
 ```  
   
 ##  <a name="accelerator__create_view_method"></a>  accelerator::create_view Method  
- Creates and returns an `accelerator_view` object on this accelerator, using the specified queuing mode. When the queuing mode is not specified, the new `accelerator_view` uses the [queuing_mode::immediate](../../../parallel/concrt/reference/concurrency-namespace-enums.md#queuing_mode) queuing mode.  
+ Creates and returns an `accelerator_view` object on this accelerator, using the specified queuing mode. When the queuing mode is not specified, the new `accelerator_view` uses the [queuing_mode::immediate](../../../parallel/concrt/reference/concurrency-namespace-enums.md#queuing_mode_enumeration) queuing mode.  
   
 ```  
 accelerator_view create_view(queuing_mode qmode = queuing_mode_automatic);

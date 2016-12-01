@@ -161,7 +161,7 @@ class CWnd : public CCmdTarget
 |[CWnd::GetLayeredWindowAttributes](#cwnd__getlayeredwindowattributes)|Retrieves the opacity and transparency color key of a layered window.|  
 |[CWnd::GetMenu](#cwnd__getmenu)|Retrieves a pointer to the specified menu.|  
 |[CWnd::GetNextDlgGroupItem](#cwnd__getnextdlggroupitem)|Searches for the next (or previous) control within a group of controls.|  
-|[CWnd::GetNextDlgTabItem](#cwnd__getnextdlgtabitem)|Retrieves the first control with the [WS_TABSTOP](../../mfc/reference/cwnd-class.md#cwnd__window_styles) style that follows (or precedes) the specified control.|  
+|[CWnd::GetNextDlgTabItem](#cwnd__getnextdlgtabitem)|Retrieves the first control with the [WS_TABSTOP](window-styles.md) style that follows (or precedes) the specified control.|  
 |[CWnd::GetNextWindow](#cwnd__getnextwindow)|Returns the next (or previous) window in the window manager's list.|  
 |[CWnd::GetOleControlSite](#cwnd__getolecontrolsite)|Retrieves the custom site for the specified ActiveX control.|  
 |[CWnd::GetOpenClipboardWindow](#cwnd__getopenclipboardwindow)|Retrieves a pointer to the window that currently has the Clipboard open.|  
@@ -315,7 +315,7 @@ class CWnd : public CCmdTarget
 |[CWnd::OnChangeCbChain](#cwnd__onchangecbchain)|Notifies that a specified window is being removed from the chain.|  
 |[CWnd::OnChangeUIState](#cwnd__onchangeuistate)|Called when the user interface (UI) state should be changed.|  
 |[CWnd::OnChar](#cwnd__onchar)|Called when a keystroke translates to a non-system character.|  
-|[CWnd::OnCharToItem](#cwnd__onchartoitem)|Called by a child list box with the [LBS_WANTKEYBOARDINPUT](../../mfc/reference/cwnd-class.md#cwnd__list-box_styles) style in response to a [WM_CHAR](#cwnd__onchar) message.|  
+|[CWnd::OnCharToItem](#cwnd__onchartoitem)|Called by a child list box with the [LBS_WANTKEYBOARDINPUT](list-box-styles.md) style in response to a [WM_CHAR](#cwnd__onchar) message.|  
 |[CWnd::OnChildActivate](#cwnd__onchildactivate)|Called for multiple document interface (MDI) child windows whenever the size or position of `CWnd` changes or `CWnd` is activated.|  
 |[CWnd::OnChildNotify](#cwnd__onchildnotify)|Called by a parent window to give a notifying control a chance to respond to a control notification.|  
 |[CWnd::OnClipboardUpdate](#cwnd__onclipboardupdate)|Called when the contents of the clipboard have changed.|  
@@ -3176,7 +3176,7 @@ COleControlSiteOrWnd* GetNextDlgGroupItem(
 |Standard window|Contains just an `HWND`. The `m_hWnd` member of `COleControlSiteOrWnd` is set to the `HWND` of the window, and the **m_pSite** member is **NULL**.|  
   
 ##  <a name="cwnd__getnextdlgtabitem"></a>  CWnd::GetNextDlgTabItem  
- Retrieves a pointer to the first control that was created with the [WS_TABSTOP](../../mfc/reference/window-styles.md) style and that precedes or follows the specified control.  
+ Retrieves a pointer to the first control that was created with the [WS_TABSTOP](window-styles.md) style and that precedes or follows the specified control.  
   
 ```  
 CWnd* GetNextDlgTabItem(

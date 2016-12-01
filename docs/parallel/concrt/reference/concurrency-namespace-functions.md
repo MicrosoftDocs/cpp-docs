@@ -1585,9 +1585,9 @@ auto when_all(
  A task that completes sucessfully when all of the input tasks have completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>>`. If the input tasks are of type `void` the output task will also be a `task<void>`.  
   
 ### Remarks  
- `when_all` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](../../../parallel/concrt/reference/task-class-concurrency-runtime.md#task__wait_method), it is safe to call this function in a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app on the ASTA (Application STA) thread.  
+ `when_all` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](../../../parallel/concrt/reference/task-class.md#task__wait_method), it is safe to call this function in a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app on the ASTA (Application STA) thread.  
   
- If one of the tasks is canceled or throws an exception, the returned task will complete early, in the canceled state, and the exception, if one is encoutered, will be thrown if you call [task::get](../../../parallel/concrt/reference/task-class-concurrency-runtime.md#task__get_method) or `task::wait` on that task.  
+ If one of the tasks is canceled or throws an exception, the returned task will complete early, in the canceled state, and the exception, if one is encoutered, will be thrown if you call [task::get](../../../parallel/concrt/reference/task-class.md#task__get_method) or `task::wait` on that task.  
   
  For more information, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
@@ -1632,7 +1632,7 @@ auto when_any(
  A task that completes successfully when any one of the input tasks has completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::pair<T, size_t>>>`, where the first element of the pair is the result of the completing task, and the second element is the index of the task that finished. If the input tasks are of type `void` the output is a `task<size_t>`, where the result is the index of the completing task.  
   
 ### Remarks  
- `when_any` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](../../../parallel/concrt/reference/task-class-concurrency-runtime.md#task__wait_method), it is safe to call this function in a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app on the ASTA (Application STA) thread.  
+ `when_any` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](../../../parallel/concrt/reference/task-class.md#task__wait_method), it is safe to call this function in a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app on the ASTA (Application STA) thread.  
   
  For more information, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   

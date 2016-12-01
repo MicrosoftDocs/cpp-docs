@@ -56,7 +56,8 @@ class accelerator_view_removed : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view_removed::get_view_removed_reason Method](reference/accelerator_view_removed-class.md#accelerator_view_removed__get_view_removed_reason_method)|Returns an HRESULT error code indicating the cause of the `accelerator_view` object's removal.|  
+|[accelerator_view_removed::get_view_removed_reason Method](reference/accelerator-view-removed-class.md#accelerator_view_removed__get_view_removed_reason_method)|Returns an HRESULT error code indicating the cause of the `accelerator_view` object's removal.|  
+
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -71,7 +72,7 @@ class accelerator_view_removed : public runtime_exception;
  **Namespace:** Concurrency  
 
 ## <a name="accelerator_view_removed_ctor"></a> accelerator_view_removed::accelerator_view_removed Constructor
-Initializes a new instance of the [accelerator_view_removed](reference/accelerator-view-removed-class.md) class.  
+Initializes a new instance of the [accelerator_view_removed](accelerator-view-removed-class.md) class.  
   
 ### Syntax  
   
@@ -105,4 +106,4 @@ HRESULT get_view_removed_reason() const throw();
   
  
 ## See Also  
- [Concurrency Namespace (C++ AMP)](concurrency-namespace-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

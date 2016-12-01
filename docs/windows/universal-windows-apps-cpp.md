@@ -55,5 +55,5 @@ Univeral Windows Platform (UWP) apps embody a set of design principles that emph
  The [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] provides the low-level COM interfaces by which ISO C++ code can access the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] in an exception-free environment. In most cases, we recommend that you use C++/CX instead of the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] for [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] app development. For information about the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)], see [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
   
 ## See Also  
- [Visual C++](../visual-cpp-in-visual-studio.md)
+ [Visual C++](../top/visual-cpp-in-visual-studio.md)
 

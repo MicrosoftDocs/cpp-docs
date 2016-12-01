@@ -88,7 +88,7 @@ class CComSafeArray
 |Name|Description|  
 |----------|-----------------|  
 |[CComSafeArray::operator LPSAFEARRAY](#ccomsafearray__operator_lpsafearray)|Casts a value to a **SAFEARRAY** pointer.|  
-|[CComSafeArray::operator](ccomsafearray-class.md#ccomsafearray__operator)|Retrieves an element from the array.|  
+|[CComSafeArray::operator\[\]](ccomsafearray-class.md#ccomsafearray__operator_at)|Retrieves an element from the array.|  
 |[CComSafeArray::operator =](#ccomsafearray__operator_eq)|Assignment operator.|  
 
   
@@ -515,7 +515,7 @@ HRESULT MultiDimSetAt(
 ### Remarks  
  This is a multidimensional version of [CComSafeArray::SetAt](#ccomsafearray__setat).  
   
-##  <a name="ccomsafearray__operator_at"></a>  CComSafeArray::operator []  
+##  <a name="ccomsafearray__operator_at"></a>  CComSafeArray::operator \[\]  
  Retrieves an element from the array.  
   
 ```

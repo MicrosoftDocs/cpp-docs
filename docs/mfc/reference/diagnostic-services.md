@@ -64,7 +64,7 @@ The Microsoft Foundation Class Library supplies many diagnostic services that ma
   
  [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/diagnostic-services_1.cpp)]  
   
- in your implementation file, all calls to **new** will store the filename and line number where the memory allocation took place. The function [CMemoryState::DumpAllObjectsSince](cmemorystate-class.md#cmemorystate__dumpallobjectssince) will display this extra information, allowing you to identify memory leaks. Refer also to the class [CDumpContext](../../mfc/reference/cdumpcontext-class.md) for additional information on diagnostic output.  
+ in your implementation file, all calls to **new** will store the filename and line number where the memory allocation took place. The function [CMemoryState::DumpAllObjectsSince](cmemorystate-structure.md#cmemorystate__dumpallobjectssince) will display this extra information, allowing you to identify memory leaks. Refer also to the class [CDumpContext](../../mfc/reference/cdumpcontext-class.md) for additional information on diagnostic output.  
   
  In addition, the C run-time library also supports a set of diagnostic functions you can use to debug your applications. For more information, see [Debug Routines](../../c-runtime-library/debug-routines.md) in the Run-Time Library Reference.  
   
@@ -307,7 +307,7 @@ throw COleException*
 ```  
   
 ### Remarks  
- If it is an error, the function throws an exception. If the passed `SCODE` is **E_OUTOFMEMORY**, the function throws a [CMemoryException](../../mfc/reference/cmemoryexception-class.md) by calling [AfxThrowMemoryException](diagnostic-services.md#afxthrowmemoryexception). Otherwise, the function throws a [COleException](../../mfc/reference/coleexception-class.md) by calling [AfxThrowOleException](diagnostic-services.md#afxthrowoleexception).  
+ If it is an error, the function throws an exception. If the passed `SCODE` is **E_OUTOFMEMORY**, the function throws a [CMemoryException](../../mfc/reference/cmemoryexception-class.md) by calling [AfxThrowMemoryException](exception-processing.md#afxthrowmemoryexception). Otherwise, the function throws a [COleException](../../mfc/reference/coleexception-class.md) by calling [AfxThrowOleException](exception-processing.md#afxthrowoleexception).  
   
  This function can be used to check the return values of calls to OLE functions in your application. By testing the return value with this function in your application, you can properly react to error conditions with a minimal amount of code.  
   

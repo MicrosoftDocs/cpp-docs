@@ -95,7 +95,7 @@ class extent;
 
 
 ## <a name="contains"></a> extent::contains Method 
-Indicates whether the specified [index](reference/index-class.md) value is contained within the `extent' object.  
+Indicates whether the specified [index](index-class.md) value is contained within the `extent' object.  
   
 ### Syntax  
   

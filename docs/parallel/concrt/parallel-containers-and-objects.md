@@ -160,11 +160,12 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
 -   The `concurrent_queue` class provides iterator support that is not concurrency-safe.  
   
 
--   The `concurrent_queue` class does not provide the `front` or `pop` methods. The `concurrent_queue` class replaces these methods by defining the [try_pop](reference/concurrent_queue-class.md#concurrent_queue__try_pop_method) method.  
+-   The `concurrent_queue` class does not provide the `front` or `pop` methods. The `concurrent_queue` class replaces these methods by defining the [try_pop](reference/concurrent-queue-class.md#concurrent_queue__try_pop_method) method.  
   
 -   The `concurrent_queue` class does not provide the `back` method. Therefore, you cannot reference the end of the queue.  
   
--   The `concurrent_queue` class provides the [unsafe_size](reference/concurrent_queue-class.md#concurrent_queue__unsafe_size_method) method instead of the `size` method. The `unsafe_size` method is not concurrency-safe.  
+-   The `concurrent_queue` class provides the [unsafe_size](reference/concurrent-queue-class.md#concurrent_queue__unsafe_size_method) method instead of the `size` method. The `unsafe_size` method is not concurrency-safe.  
+
   
 ###  <a name="queue-safety"></a> Concurrency-Safe Operations  
  All methods that enqueue to or dequeue from a `concurrent_queue` object are concurrency-safe.  
@@ -173,9 +174,9 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 |||  
 |-|-|  
+|[empty](reference/concurrent-queue-class.md#concurrent_queue__empty_method)|[push](reference/concurrent-queue-class.md#concurrent_queue__push_method)|  
+|[get_allocator](reference/concurrent-queue-class.md#concurrent_queue__get_allocator_method)|[try_pop](reference/concurrent-queue-class.md#concurrent_queue__try_pop_method)|  
 
-|[empty](reference/concurrent_queue-class.md#concurrent_queue__empty_method)|[push](reference/concurrent_queue-class.md#concurrent_queue__push_method)|  
-|[get_allocator](reference/concurrent_queue-class.md#concurrent_queue__get_allocator_method)|[try_pop](reference/concurrent_queue-class.md#concurrent_queue__try_pop_method)|  
 
   
  Although the `empty` method is concurrency-safe, a concurrent operation may cause the queue to grow or shrink before the `empty` method returns.  
@@ -184,9 +185,9 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 |||  
 |-|-|  
+|[clear](reference/concurrent-queue-class.md#concurrent_queue__clear_method)|[unsafe_end](reference/concurrent-queue-class.md#concurrent_queue__unsafe_end_method)|  
+|[unsafe_begin](reference/concurrent-queue-class.md#concurrent_queue__unsafe_begin_method)|[unsafe_size](reference/concurrent-queue-class.md#concurrent_queue__unsafe_size_method)|  
 
-|[clear](reference/concurrent_queue-class.md#concurrent_queue__clear_method)|[unsafe_end](reference/concurrent_queue-class.md#concurrent_queue__unsafe_end_method)|  
-|[unsafe_begin](reference/concurrent_queue-class.md#concurrent_queue__unsafe_begin_method)|[unsafe_size](reference/concurrent_queue-class.md#concurrent_queue__unsafe_size_method)|  
 
   
 ###  <a name="queue-iterators"></a> Iterator Support  
@@ -229,11 +230,10 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 |||||  
 |-|-|-|-|  
-
-|[at](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__at_method)|`count`|`find`|[key_eq](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__key_eq_method)|  
+|[at](reference/concurrent-unordered-map-class.md#concurrent_unordered_map__at_method)|`count`|`find`|[key_eq](reference/concurrent-unordered-map-class.md#concurrent_unordered_map__key_eq_method)|  
 |`begin`|`empty`|`get_allocator`|`max_size`|  
-|`cbegin`|`end`|`hash_function`|[operator&#91;&#93;](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__operator_at_operator)|  
-|`cend`|`equal_range`|[insert](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__insert_method)|`size`|  
+|`cbegin`|`end`|`hash_function`|[operator&#91;&#93;](reference/concurrent-unordered-map-class.md#concurrent_unordered_map__operator_at_operator)|  
+|`cend`|`equal_range`|[insert](reference/concurrent-unordered-map-class.md#concurrent_unordered_map__insert_method)|`size`|  
   
  Although the `count` method can be called safely from concurrently running threads, different threads can receive different results if a new value is simultaneously inserted into the container.  
   
@@ -242,8 +242,8 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
 ||||  
 |-|-|-|  
 |`clear`|`max_load_factor`|`rehash`|  
+|`load_factor`|[operator=](reference/concurrent-unordered-map-class.md#concurrent_unordered_map__operator_eq_operator) 
 
-|`load_factor`|[operator=](reference/concurrent_unordered_map-class.md#concurrent_unordered_map__operator_eq_operator) 
 
   
  In addition to these methods, any method that begins with `unsafe_` is also not concurrency-safe.  
@@ -253,8 +253,8 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
 ##  <a name="unordered_multimap"></a> concurrent_unordered_multimap Class  
  The [concurrency::concurrent_unordered_multimap](../../parallel/concrt/reference/concurrent-unordered-multimap-class.md) class closely resembles the `concurrent_unordered_map` class except that it allows for multiple values to map to the same key. It also differs from `concurrent_unordered_map` in the following ways:  
   
+-   The [concurrent_unordered_multimap::insert](reference/concurrent-unordered-multimap-class.md#concurrent_unordered_multimap__insert_method) method returns an iterator instead of `std::pair<iterator, bool>`.  
 
--   The [concurrent_unordered_multimap::insert](reference/concurrent_unordered_multimap-class.md#concurrent_unordered_multimap__insert_method) method returns an iterator instead of `std::pair<iterator, bool>`.  
   
 -   The `concurrent_unordered_multimap` class does not provide `operator[]` nor the `at` method.  
   
@@ -276,7 +276,9 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
 ##  <a name="unordered_multiset"></a> concurrent_unordered_multiset Class  
  The [concurrency::concurrent_unordered_multiset](../../parallel/concrt/reference/concurrent-unordered-multiset-class.md) class closely resembles the `concurrent_unordered_set` class except that it allows for duplicate values. It also differs from `concurrent_unordered_set` in the following ways:  
   
--   The [concurrent_unordered_multiset::insert](reference/concurrent_unordered_multiset-class.md#concurrent_unordered_multiset__insert_method) method returns an iterator instead of `std::pair<iterator, bool>`.  
+
+-   The [concurrent_unordered_multiset::insert](reference/concurrent-unordered-multiset-class.md#concurrent_unordered_multiset__insert_method) method returns an iterator instead of `std::pair<iterator, bool>`.  
+
   
 -   The `concurrent_unordered_multiset` class does not provide `operator[]` nor the `at` method.  
   

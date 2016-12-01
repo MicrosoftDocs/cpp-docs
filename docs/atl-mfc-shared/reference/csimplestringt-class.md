@@ -144,14 +144,11 @@ class CSimpleStringT
 |[CSimpleStringT::operator =](#csimplestringt__operator_eq)|Assigns a new value to a `CSimpleStringT` object.|  
   
 ### Remarks  
- `CSimpleStringT` is the base class for the various string classes supported by Visual C++. It provides minimal support for memory management of the string object and basic buffer manipulation. For more advanced string objects, see [CStringT Class](../../atl-mfc-shared/reference/cstringt-class).  
+ `CSimpleStringT` is the base class for the various string classes supported by Visual C++. It provides minimal support for memory management of the string object and basic buffer manipulation. For more advanced string objects, see [CStringT Class](../../atl-mfc-shared/reference/cstringt-class.md).  
   
 ### Requirements  
  **Header:** atlsimpstr.h  
-  
-## See Also  
- [Hierarchy Chart](../../mfc/hierarchy-chart)   
- [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes)
+
 
 ## <a name="csimplestringt__append"></a> CSimpleStringT::Append
 Appends a `CSimpleStringT` object to an existing `CSimpleStringT` object.  
@@ -335,7 +332,7 @@ void Empty() throw();
   
 ```  
 ### Remarks  
- For more information, see [Strings: CString Exception Cleanup](../cstringt-exception-cleanup.md).  
+ For more information, see [Strings: CString Exception Cleanup](../cstring-exception-cleanup.md).  
   
 ## Example  
  The following example demonstrates the use of `CSimpleStringT::Empty`.  
@@ -1169,3 +1166,8 @@ Destroys a `CSimpleStringT` object.
   
 ### Requirements  
  **Header:** atlsimpstr.h  
+
+  
+## See Also  
+ [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
+ [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

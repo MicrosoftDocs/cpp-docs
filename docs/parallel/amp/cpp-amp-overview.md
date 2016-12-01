@@ -183,7 +183,7 @@ std::cout <<a[idx] <<"\n";
 ```  
   
 ### extent Class  
- The [extent Class](../../parallel/amp/reference/extent-class-cpp-amp.md) specifies the length of the data in each dimension of the `array` or `array_view` object. You can create an extent and use it to create an `array` or `array_view` object. You can also retrieve the extent of an existing `array` or `array_view` object. The following example prints the length of the extent in each dimension of an `array_view` object.  
+ The [extent Class](../../parallel/amp/reference/extent-class.md) specifies the length of the data in each dimension of the `array` or `array_view` object. You can create an extent and use it to create an `array` or `array_view` object. You can also retrieve the extent of an existing `array` or `array_view` object. The following example prints the length of the extent in each dimension of an `array_view` object.  
   
 ```cpp  
  
@@ -262,7 +262,8 @@ for (int i = 0; i <5; i++)
 |Shape|Rectangular.|Rectangular.|  
 |Data storage|Is a data container.|Is a data wrapper.|  
 |Copy|Explicit and deep copy at definition.|Implicit copy when it is accessed by the kernel function.|  
-|Data retrieval|By copying the array data back to an object on the CPU thread.|By direct access of the `array_view` object or by calling the [array_view::synchronize Method](reference/array_view-class.md#array_view__synchronize_method) to continue accessing the data on the original container.|  
+|Data retrieval|By copying the array data back to an object on the CPU thread.|By direct access of the `array_view` object or by calling the [array_view::synchronize Method](reference/array-view-class.md#array_view__synchronize_method) to continue accessing the data on the original container.|  
+
 
   
 ### Shared memory with array and array_view  
@@ -394,7 +395,8 @@ void AddArraysWithFunction() {
 
  You can gain additional acceleration by using tiling. Tiling divides the threads into equal rectangular subsets or *tiles*. You determine the appropriate tile size based on your data set and the algorithm that you are coding. For each thread, you have access to the *global* location of a data element relative to the whole `array` or `array_view` and access to the *local* location relative to the tile. Using the local index value simplifies your code because you don't have to write the code to translate index values from global to local. To use tiling, call the [extent::tile Method](reference/extent-class.md#extent__tile_method) on the compute domain in the `parallel_for_each` method, and use a [tiled_index](../../parallel/amp/reference/tiled-index-class.md) object in the lambda expression.  
   
- In typical applications, the elements in a tile are related in some way, and the code has to access and keep track of values across the tile. Use the [tile_static Keyword](../../cpp/tile-static-keyword.md) keyword and the [tile_barrier::wait Method](reference/tile_barrier-class.md#tile_barrier__wait_method) to accomplish this. A variable that has the `tile_static` keyword has a scope across an entire tile, and an instance of the variable is created for each tile. You must handle synchronization of tile-thread access to the variable. The [tile_barrier::wait Method](reference/tile_barrier-class.md#tile_barrier__wait_method) stops execution of the current thread until all the threads in the tile have reached the call to `tile_barrier::wait`. So you can accumulate values across the tile by using `tile_static` variables. Then you can finish any computations that require access to all the values.  
+ In typical applications, the elements in a tile are related in some way, and the code has to access and keep track of values across the tile. Use the [tile_static Keyword](../../cpp/tile-static-keyword.md) keyword and the [tile_barrier::wait Method](reference/tile-barrier-class.md#tile_barrier__wait_method) to accomplish this. A variable that has the `tile_static` keyword has a scope across an entire tile, and an instance of the variable is created for each tile. You must handle synchronization of tile-thread access to the variable. The [tile_barrier::wait Method](reference/tile-barrier-class.md#tile_barrier__wait_method) stops execution of the current thread until all the threads in the tile have reached the call to `tile_barrier::wait`. So you can accumulate values across the tile by using `tile_static` variables. Then you can finish any computations that require access to all the values.  
+
   
  The following diagram represents a two-dimensional array of sampling data that is arranged in tiles.  
   

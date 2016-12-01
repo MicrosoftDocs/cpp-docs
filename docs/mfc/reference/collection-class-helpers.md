@@ -54,7 +54,7 @@ The collection classes `CMap`, `CList`, and `CArray` use templated global helper
 |[SerializeElements](#serializeelements)|Stores or retrieves elements to or from an archive.|  
   
 ##  <a name="compareelements"></a>  CompareElements  
- Called directly by [CList::Find](clist-class.md#not_found.md#clist__find and indirectly by [cmap__lookup](cmap-class.md.md#cmap__lookup) and [cmap__operator &#91;&#93;](cmap-class.md#cmap__operator).  
+ Called directly by [CList::Find](clist-class.md#not_found.md#clist__find and indirectly by [cmap__lookup](cmap-class.md#cmap__lookup) and [cmap__operator &#91;&#93;](cmap-class.md#cmap__operator_at).  
   
 ```  
  
@@ -154,8 +154,7 @@ void  AFXAPI DumpElements(
   
  The default implementation does nothing. If the elements of your collection are derived from `CObject`, your override will typically iterate through the collection's elements, calling `Dump` for each element in turn.  
   
- For information on diagnostics and on the `Dump` function, see [Debugging MFC Applications](../mfc-debugging-techniques.md).  
-  
+
 ##  <a name="hashkey"></a>  HashKey  
  Calculates a hash value for the given key.  
   
@@ -175,7 +174,7 @@ AFX_INLINE UINT AFXAPI HashKey(ARG_KEY  key);
  The key's hash value.  
   
 ### Remarks  
- This function is called directly by [CMap::RemoveKey](cmap-class.md#cmap__removekey) and indirectly by [CMap::Lookup](cmap-class.md#cmap__lookup) and [CMap::Operator &#91;&#93;](cmap-class.md#operator&#91;&#93;).
+ This function is called directly by [CMap::RemoveKey](cmap-class.md#cmap__removekey) and indirectly by [CMap::Lookup](cmap-class.md#cmap__lookup) and [CMap::Operator &#91;&#93;](cmap-class.md#cmap__operator_at).
   
  The default implementation creates a hash value by shifting `key` right by four positions. Override this function so that it returns hash values appropriate for your application.  
   
@@ -222,7 +221,7 @@ void AFXAPI SerializeElements(CArchive& ar, TYPE* pElements, INT_PTR nCount);
  See the example in the article [Collections: How to Make a Type-Safe Collection](../how-to-make-a-type-safe-collection.md).  
   
 ## See Also  
- [Macros and Globals](../mfc-macros-and-globals.md)   
+ [Macros and Globals](mfc-macros-and-globals.md)   
  [CMap Class](cmap-class.md)   
  [CList Class](clist-class.md)   
  [CArray Class](carray-class.md)

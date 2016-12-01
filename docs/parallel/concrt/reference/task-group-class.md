@@ -28,7 +28,7 @@ class task_group;
 ## Remarks  
  Unlike the heavily restricted `structured_task_group` class, the `task_group` class is much more general construct. It does not have any of the restrictions described by [structured_task_group](structured-task-group-class.md). `task_group` objects may safely be used across threads and utilized in free-form ways. The disadvantage of the `task_group` construct is that it may not perform as well as the `structured_task_group` construct for tasks which perform small amounts of work.  
   
- For more information, see [Task Parallelism](task-parallelism-concurrency-runtime.md).  
+ For more information, see [Task Parallelism](../task-parallelism-concurrency-runtime.md).  
   
 ## Inheritance Hierarchy  
  `task_group`  
@@ -146,7 +146,8 @@ task_group_status run_and_wait(
  A function which will be called to invoke the body of the work. This may be a lambda expression or other object which supports a version of the function call operator with the signature `void operator()()`.  
   
 ### Return Value  
- An indication of whether the wait was satisfied or the task group was canceled, due to either an explicit cancel operation or an exception being thrown from one of its tasks. For more information, see [task_group_status](concurrency_namespace_enums.md#task_group_status).  
+ An indication of whether the wait was satisfied or the task group was canceled, due to either an explicit cancel operation or an exception being thrown from one of its tasks. For more information, see [task_group_status](concurrency-namespace-enums.md#task_group_status_enumeration).  
+
   
 ### Remarks  
  Note that one or more of the tasks scheduled to this `task_group` object may execute inline on the calling context.  
@@ -193,7 +194,8 @@ task_group_status wait();
 ```  
   
 ### Return Value  
- An indication of whether the wait was satisfied or the task group was canceled, due to either an explicit cancel operation or an exception being thrown from one of its tasks. For more information, see [task_group_status](concurrency_namespace_enums.md#task_group_status).  
+ An indication of whether the wait was satisfied or the task group was canceled, due to either an explicit cancel operation or an exception being thrown from one of its tasks. For more information, see [task_group_status](concurrency-namespace-enums.md#task_group_status_enumeration).  
+
   
 ### Remarks  
  Note that one or more of the tasks scheduled to this `task_group` object may execute inline on the calling context.  

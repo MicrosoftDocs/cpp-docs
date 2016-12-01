@@ -53,7 +53,7 @@ The following table lists structures that are called from various member functio
 |[CDaoQueryDefInfo Structure](../../mfc/reference/cdaoquerydefinfo-structure.md)|[RGNDATA Structure](../../mfc/reference/rgndata-structure.md)|  
 |[CDaoRelationFieldInfo Structure](../../mfc/reference/cdaorelationfieldinfo-structure.md)|[SOCKADDR Structure](../../mfc/reference/sockaddr-structure.md)|  
 |[CDaoRelationInfo Structure](../../mfc/reference/cdaorelationinfo-structure.md)|[SOCKADDR_IN Structure](../../mfc/reference/sockaddr-in-structure.md)|  
-|[CDaoTableDefInfo Structure](../../mfc/reference/cdaotabledefinfo-structure.md)|[SYSTEMTIME Structure](systemtime%20structure.xml)
+|[CDaoTableDefInfo Structure](../../mfc/reference/cdaotabledefinfo-structure.md)|[SYSTEMTIME Structure](systemtime-structure1.md)
 |[CDaoWorkspaceInfo Structure](../../mfc/reference/cdaoworkspaceinfo-structure.md)|[WINDOWPLACEMENT Structure](../../mfc/reference/windowplacement-structure.md)|  
 |[CODBCFieldInfo Structure](../../mfc/reference/codbcfieldinfo-structure.md)|[WINDOWPOS Structure](../../mfc/reference/windowpos-structure1.md)  
 |[COLORADJUSTMENT Structure](../../mfc/reference/coloradjustment-structure.md)|[WSADATA Structure](../../mfc/reference/wsadata-structure.md)|  

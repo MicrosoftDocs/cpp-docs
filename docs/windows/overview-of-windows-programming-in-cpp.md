@@ -114,4 +114,4 @@ You can use Visual C++ to write a wide variety of programs that run on a Windows
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Visual C++](../visual-cpp-in-visual-studio.md)|Parent topic for MSDN Library content about C++.|
+|[Visual C++](../top/visual-cpp-in-visual-studio.md)|Parent topic for MSDN Library content about C++.|

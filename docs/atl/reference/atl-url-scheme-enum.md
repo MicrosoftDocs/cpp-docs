@@ -37,7 +37,7 @@ translation.priority.ht:
 
 # ATL_URL_SCHEME  
 
-The members of this enumeration provide constants for the schemes understood by [CUrl](../Topic/CUrl%20Class.md).  
+The members of this enumeration provide constants for the schemes understood by [CUrl](curl-class.md).  
   
 ## Syntax  
   
@@ -60,6 +60,6 @@ The members of this enumeration provide constants for the schemes understood by 
  **Header:** atlutil.h  
   
 ## See Also  
- [Concepts](../active-template-library-concepts.md)   
+ [Concepts](../active-template-library-atl-concepts.md)   
  [CUrl::SetScheme](curl-class.md#curl__setscheme)   
  [CUrl::GetScheme](curl-class.md#curl__getscheme)

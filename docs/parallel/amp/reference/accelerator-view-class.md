@@ -314,4 +314,4 @@ Destroys the accelerator_view object.
   
  
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

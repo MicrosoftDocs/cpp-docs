@@ -91,10 +91,10 @@ scoped_d3d_access_lock(// [3] move constructor
   
 ## Construction  
  [1] Constructor  
- Acquires a D3D access lock on the given [accelerator_view](reference/accelerator-view-class.md) object. Construction blocks until the lock is acquired.  
+ Acquires a D3D access lock on the given [accelerator_view](accelerator-view-class.md) object. Construction blocks until the lock is acquired.  
   
  [2] Constructor  
- Adopt a D3D access lock from the given [accelerator_view](reference/accelerator-view-class.md) object.  
+ Adopt a D3D access lock from the given [accelerator_view](accelerator-view-class.md) object.  
   
  [3] Move Constructor  
  Takes an existing D3D access lock from another `scoped_d3d_access_lock` object. Construction does not block.  
@@ -122,4 +122,4 @@ scoped_d3d_access_lock& operator= (scoped_d3d_access_lock&& _Other);
 
 ## See Also  
  [concurrency::direct3d Namespace](concurrency-direct3d-namespace.md)
->>>>>>> master
+

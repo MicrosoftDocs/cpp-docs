@@ -56,7 +56,8 @@ This document explains the role of cancellation in the Parallel Patterns Library
   
 -   A value-based continuation inherits the cancellation token of its antecedent task. A task-based continuation never inherits the token of its antecedent task.  
   
--   Use the [concurrency::cancellation_token::none](reference/cancellation-token-class.md#cancellation_token__none_method) method when you call a constructor or function that takes a `cancellation_token` object but you do not want the operation to be cancellable. Also, if you do not pass a cancellation token to the [concurrency::task](../../parallel/concrt/reference/task-class-concurrency-runtime.md) constructor or the [concurrency::create_task](reference/concurrency-namespace-functions.md#create_task) function, that task is not cancellable.  
+-   Use the [concurrency::cancellation_token::none](reference/cancellation-token-class.md#cancellation_token__none_method) method when you call a constructor or function that takes a `cancellation_token` object but you do not want the operation to be cancellable. Also, if you do not pass a cancellation token to the [concurrency::task](../../parallel/concrt/reference/task-class.md) constructor or the [concurrency::create_task](reference/concurrency-namespace-functions.md#create_task) function, that task is not cancellable.  
+
 
   
 ##  <a name="top"></a> In this Document  
@@ -84,7 +85,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
   
  [!code-cpp[concrt-task-tree#1](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_1.cpp)]  
   
- You can also use the [concurrency::task_group](reference/task-group-class.md) class to create a similar work tree. The [concurrency::task](../../parallel/concrt/reference/task-class-concurrency-runtime.md) class also supports the notion of a tree of work. However, a `task` tree is a dependency tree. In a `task` tree, future works completes after current work. In a task group tree, internal work completes before outer work. For more information about the differences between tasks and task groups, see [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
+ You can also use the [concurrency::task_group](reference/task-group-class.md) class to create a similar work tree. The [concurrency::task](../../parallel/concrt/reference/task-class.md) class also supports the notion of a tree of work. However, a `task` tree is a dependency tree. In a `task` tree, future works completes after current work. In a task group tree, internal work completes before outer work. For more information about the differences between tasks and task groups, see [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
  [[Top](#top)]  
   
@@ -281,7 +282,7 @@ Caught 50
 |[Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)|Provides an overview of the Parallel Patterns Library.|  
   
 ## Reference  
- [task Class (Concurrency Runtime)](../../parallel/concrt/reference/task-class-concurrency-runtime.md)  
+ [task Class (Concurrency Runtime)](../../parallel/concrt/reference/task-class.md)  
   
  [cancellation_token_source Class](../../parallel/concrt/reference/cancellation-token-source-class.md)  
   

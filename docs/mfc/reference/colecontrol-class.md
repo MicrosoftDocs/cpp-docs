@@ -1174,7 +1174,7 @@ virtual HRESULT GetClassID(LPCLSID pclsid) = 0;
  Nonzero if the call was not successful; otherwise 0.  
   
 ### Remarks  
- Usually implemented by the [IMPLEMENT_OLECREATE_EX](run-time-object-model-services.md#implement_olecreate_ex macro).  
+ Usually implemented by the [IMPLEMENT_OLECREATE_EX](class-factories-and-licensing.md#implement_olecreate_ex macro).  
   
 ##  <a name="colecontrol__getclientoffset"></a>  COleControl::GetClientOffset  
  Retrieves the difference between the upper left corner of the control's rectangular area and the upper left corner of its client area.  

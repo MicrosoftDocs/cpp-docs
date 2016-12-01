@@ -87,7 +87,7 @@
 ### [static_partitioner Class](static-partitioner-class.md)
 ### [structured_task_group Class](structured-task-group-class.md)
 ### [target_block Class](target-block-class.md)
-### [task Class (Concurrency Runtime)](task-class-concurrency-runtime.md)
+### [task Class (Concurrency Runtime)](task-class.md)
 ### [task_canceled Class](task-canceled-class.md)
 ### [task_completion_event Class](task-completion-event-class.md)
 ### [task_continuation_context Class](task-continuation-context-class.md)

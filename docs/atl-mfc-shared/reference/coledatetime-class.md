@@ -83,7 +83,7 @@ class COleDateTime
 |[COleDateTime::SetTime](#coledatetime__settime)|Sets the value of this `COleDateTime` object to the specified time-only value.|  
   
 ### Public Operators  
-  
+
 |Name|Description|  
 |----------|-----------------|  
 |[COleDateTime::operator ==, COleDateTime::operator <, etc.](#coledatetime_relational_operators)|Compare two `COleDateTime` values.|  
@@ -228,7 +228,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
  MS-DOS date and time values to be converted to a date/time value and copied into the new `COleDateTime` object.  
   
  `dbts`  
- A reference to a <xref:System.Data.OleDb.OleDbTypequalifyHint%3DFalse%26autoUpgrade%3DTrue> structure containing the current local time.  
+ A reference to a [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) structure containing the current local time.  
   
 ### Remarks  
  All these constructors create new `COleDateTime` objects initialized to the specified value. The following table shows valid ranges for each date and time component:  
@@ -343,7 +343,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
   
 ### Parameters  
  `dbts`  
- A reference to a <xref:System.Data.OleDb.OleDbTypequalifyHint%3DFalse%26autoUpgrade%3DTrue> structure.  
+ A reference to a [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) structure.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  

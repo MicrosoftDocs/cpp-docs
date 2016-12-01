@@ -424,7 +424,7 @@ __declspec(property(get= get_extent)) Concurrency::extent<_Rank> extent;
 ```  
   
 ##  <a name="array_view__get_extent_method"></a>  array_view::get_extent Method  
- Returns the [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object of the [array_view](../../../parallel/amp/reference/array-view-class.md) object.  
+ Returns the [extent](../../../parallel/amp/reference/extent-class.md) object of the [array_view](../../../parallel/amp/reference/array-view-class.md) object.  
   
 ```  
 Concurrency::extent<_Rank> get_extent() const restrict(cpu, amp);
@@ -609,7 +609,7 @@ array_view section(
  The least significant component of the extent of this section.  
   
  `_Ext`  
- The [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object that specifies the extent of the section. The origin is 0.  
+ The [extent](../../../parallel/amp/reference/extent-class.md) object that specifies the extent of the section. The origin is 0.  
   
  `_Idx`  
  The [index](../../../parallel/amp/reference/index-class.md) object that specifies the location of the origin. The subsection is the rest of the extent.  
@@ -627,7 +627,7 @@ array_view section(
  The rank of the section.  
   
  `_Section_extent`  
- The [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object that specifies the extent of the section.  
+ The [extent](../../../parallel/amp/reference/extent-class.md) object that specifies the extent of the section.  
   
  `_Section_origin`  
  The [index](../../../parallel/amp/reference/index-class.md) object that specifies the location of the origin.  

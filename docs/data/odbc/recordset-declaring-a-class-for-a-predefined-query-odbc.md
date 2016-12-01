@@ -73,7 +73,7 @@ This topic applies to the MFC ODBC classes.
   
 4.  Manually add initializations for the new field data members in the recordset class constructor.  
   
-     You must also increment the initialization value for the [m_nFields](../../mfc/reference/crecordset-class.md#crecordset__m_n_fields) data member. The wizard writes the initialization, but it only covers the field data members it adds for you. For example:  
+     You must also increment the initialization value for the [m_nFields](../../mfc/reference/crecordset-class.md#crecordset__m_nfields) data member. The wizard writes the initialization, but it only covers the field data members it adds for you. For example:  
   
     ```  
     m_nFields += 6;  
@@ -134,7 +134,7 @@ CDelinquents::CDelinquents(CDatabase* pdb)
 }  
 ```  
   
- Note the initializations for [m_nFields](../../mfc/reference/crecordset-class.md#crecordset__m_n_fields) and [m_nParams](../../mfc/reference/crecordset-class.md#crecordset__m_n_params). The wizard initializes `m_nFields`; you initialize `m_nParams`.  
+ Note the initializations for [m_nFields](../../mfc/reference/crecordset-class.md#crecordset__m_nfields) and [m_nParams](../../mfc/reference/crecordset-class.md#crecordset__m_nparams). The wizard initializes `m_nFields`; you initialize `m_nParams`.  
   
  The next example shows the RFX functions in `CDelinquents::DoFieldExchange`:  
   

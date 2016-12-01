@@ -82,7 +82,8 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_index::get_tile_extent Method](#tiled_index__get_tile_extent)|Returns an [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object that has the values of the [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+|[tiled_index::get_tile_extent Method](#tiled_index__get_tile_extent)|Returns an [extent](../../../parallel/amp/reference/extent-class.md) object that has the values of the [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+
 
   
 ### Public Constants  
@@ -105,7 +106,7 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_index::tile_extent Data Member](#tile_extent)|Gets an [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object that has the values of the [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) template arguments [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+|[tiled_index::tile_extent Data Member](#tile_extent)|Gets an [extent](../../../parallel/amp/reference/extent-class.md) object that has the values of the [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) template arguments [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
 
   
 ## Inheritance Hierarchy  

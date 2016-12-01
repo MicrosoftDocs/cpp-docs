@@ -410,7 +410,7 @@ void DeflateRect(
  A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) or [CSize](csize-class.md) that specifies the number of units to deflate `CRect`. The `cx` value specifies the number of units to deflate the left and right sides and the `cy` value specifies the number of units to deflate the top and bottom.  
   
  `lpRect`  
- Points to a [RECT](../../mfc/reference/rect-structure.md) structure or `CRect` that specifies the number of units to deflate each side.  
+ Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` that specifies the number of units to deflate each side.  
   
  *l*  
  Specifies the number of units to deflate the left side of `CRect`.  

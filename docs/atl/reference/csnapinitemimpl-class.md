@@ -265,7 +265,7 @@ CComBSTR m_bstrDisplayName;
 ```  
   
 ##  <a name="csnapinitemimpl__m_scopedataitem"></a>  CSnapInItemImpl::m_scopeDataItem  
- The <xref:Microsoft.CLRAdmin.SCOPEDATAITEMqualifyHint%3DFalse%26autoUpgrade%3DTrue> structure of the snap-in data object.  
+ The `SCOPEDATAITEM` structure of the snap-in data object.  
   
 ```
 SCOPEDATAITEM m_scopeDataItem;

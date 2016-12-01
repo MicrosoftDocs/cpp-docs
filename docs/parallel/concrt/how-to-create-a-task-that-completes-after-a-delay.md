@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Create a Task that Completes After a Delay
-This example shows how to use the [concurrency::task](../../parallel/concrt/reference/task-class-concurrency-runtime.md), [concurrency::cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md), [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md), [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md), [concurrency::timer](../../parallel/concrt/reference/timer-class.md), and [concurrency::call](../../parallel/concrt/reference/call-class.md) classes to create a task that completes after a delay. You can use this method to build loops that occasionally poll for data, introduce timeouts, delay handling of user input for a predetermined time, and so on.  
+This example shows how to use the [concurrency::task](../../parallel/concrt/reference/task-class.md), [concurrency::cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md), [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md), [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md), [concurrency::timer](../../parallel/concrt/reference/timer-class.md), and [concurrency::call](../../parallel/concrt/reference/call-class.md) classes to create a task that completes after a delay. You can use this method to build loops that occasionally poll for data, introduce timeouts, delay handling of user input for a predetermined time, and so on.  
   
 ## Example  
  The following example shows the `complete_after` and `cancel_after_timeout` functions. The `complete_after` function creates a `task` object that completes after the specified delay. It uses a `timer` object and a `call` object to set a `task_completion_event` object after the specified delay. By using the `task_completion_event` class, you can define a task that completes after a thread or another task signals that a value is available. When the event is set, listener tasks complete and their continuations are scheduled to run.  
@@ -65,7 +65,7 @@ This example shows how to use the [concurrency::task](../../parallel/concrt/refe
   
 ## See Also  
  [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)   
- [task Class (Concurrency Runtime)](../../parallel/concrt/reference/task-class-concurrency-runtime.md)   
+ [task Class (Concurrency Runtime)](../../parallel/concrt/reference/task-class.md)   
  [cancellation_token_source Class](../../parallel/concrt/reference/cancellation-token-source-class.md)   
  [cancellation_token Class](../../parallel/concrt/reference/cancellation-token-class.md)   
  [task_completion_event Class](../../parallel/concrt/reference/task-completion-event-class.md)   

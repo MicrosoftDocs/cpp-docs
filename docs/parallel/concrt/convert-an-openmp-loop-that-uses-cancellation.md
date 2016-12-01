@@ -41,7 +41,8 @@ Some parallel loops do not require that all iterations be executed. For example,
   
 ## Example  
 
- This example uses both OpenMP and the Concurrency Runtime to implement a parallel version of the [std::any_of](http://msdn.microsoft.com/library/c0a685f6-8242-42c6-b1bc-3956d25ae535) algorithm. The OpenMP version of this example uses a flag to coordinate among all parallel loop iterations that the condition has been met. The version that uses the Concurrency Runtime uses the [concurrency::structured_task_group::cancel](reference/structured_task_group-class.md#structured_task_group__cancel_method) method to stop the overall operation when the condition is met.  
+ This example uses both OpenMP and the Concurrency Runtime to implement a parallel version of the [std::any_of](http://msdn.microsoft.com/library/c0a685f6-8242-42c6-b1bc-3956d25ae535) algorithm. The OpenMP version of this example uses a flag to coordinate among all parallel loop iterations that the condition has been met. The version that uses the Concurrency Runtime uses the [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#structured_task_group__cancel_method) method to stop the overall operation when the condition is met.  
+
   
  [!code-cpp[concrt-openmp#2](../../parallel/concrt/codesnippet/cpp/convert-an-openmp-loop-that-uses-cancellation_1.cpp)]  
   
