@@ -74,7 +74,7 @@ class CMFCShellListCtrl : public CMFCListCtrl
  A [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) object can be associated with a `CMFCShellListCtrl` object to create a complete Explorer window. Then, selecting an item in the `CMFCShellTreeCtrl` will cause the `CMFCShellListCtrl` object to list the contents of the selected item.  
   
 ## Example  
- The following example demonstrates how to create an object of the `CMFCShellListCtrl` class and how to display the parent folder of the currently displayed folder. This code snippet is part of the [Explorer sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to create an object of the `CMFCShellListCtrl` class and how to display the parent folder of the currently displayed folder. This code snippet is part of the [Explorer sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_Explorer#1](../../mfc/reference/codesnippet/cpp/cmfcshelllistctrl-class_1.h)]  
 [!code-cpp[NVC_MFC_Explorer#2](../../mfc/reference/codesnippet/cpp/cmfcshelllistctrl-class_2.cpp)]  

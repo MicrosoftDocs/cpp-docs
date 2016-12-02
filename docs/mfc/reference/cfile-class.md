@@ -819,7 +819,7 @@ virtual void Write(
  In addition, see the examples for [CFile::CFile](#cfile__cfile) and [CFile::Open](#cfile__open).  
   
 ## See Also  
- [MFC Sample DRAWCLI](../../top/visual-cpp-samples.md)   
+ [MFC Sample DRAWCLI](../../visual-cpp-samples.md)   
  [CObject Class](../../mfc/reference/cobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CStdioFile Class](../../mfc/reference/cstdiofile-class.md)   

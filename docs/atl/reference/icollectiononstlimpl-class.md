@@ -162,5 +162,5 @@ CollType m_coll;
 ```  
   
 ## See Also  
- [ATLCollections Sample](../../top/visual-cpp-samples.md)   
+ [ATLCollections Sample](../../visual-cpp-samples.md)   
  [Class Overview](../../atl/atl-class-overview.md)

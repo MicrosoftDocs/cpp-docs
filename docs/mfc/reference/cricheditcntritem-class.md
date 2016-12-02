@@ -67,7 +67,7 @@ class CRichEditCntrItem : public COleClientItem
   
  This Windows Common control (and therefore the [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) and related classes) is available only to programs running under Windows 95/98 and Windows NT versions 3.51 and later.  
   
- For an example of using rich edit container items in an MFC application, see the [WORDPAD](../../top/visual-cpp-samples.md) sample application.  
+ For an example of using rich edit container items in an MFC application, see the [WORDPAD](../../visual-cpp-samples.md) sample application.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -119,7 +119,7 @@ void SyncToRichEditObject(REOBJECT& reo);
  For more information, see [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ## See Also  
- [MFC Sample WORDPAD](../../top/visual-cpp-samples.md)   
+ [MFC Sample WORDPAD](../../visual-cpp-samples.md)   
  [COleClientItem Class](../../mfc/reference/coleclientitem-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CRichEditDoc Class](../../mfc/reference/cricheditdoc-class.md)   

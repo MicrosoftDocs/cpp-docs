@@ -68,7 +68,7 @@ Specifies which restrictions you support on a particular schema rowset.
   
  For information on implementing schema rowset support, see [Supporting Schema Rowsets](../../data/oledb/supporting-schema-rowsets.md).  
   
- For an example of an provider that supports schema rowsets, see the [UpdatePV](../../top/visual-cpp-samples.md) sample.  
+ For an example of an provider that supports schema rowsets, see the [UpdatePV](../../visual-cpp-samples.md) sample.  
   
  For more information on schema rowsets, see [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) in the *OLE DB Programmer's Reference* in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -80,4 +80,4 @@ Specifies which restrictions you support on a particular schema rowset.
  [IDBSchemaRowsetImpl Class Members](http://msdn.microsoft.com/en-us/e74f6f82-541c-42e7-b4c6-e2d4656a0649)   
  [Schema Rowset Classes and Typedef Classes](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)   
  [Supporting Schema Rowsets](../../data/oledb/supporting-schema-rowsets.md)   
- [UpdatePV](../../top/visual-cpp-samples.md)
+ [UpdatePV](../../visual-cpp-samples.md)

@@ -355,8 +355,8 @@ virtual void Revoke();
  For more information, see [RevokeDragDrop](http://msdn.microsoft.com/library/windows/desktop/ms692643) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ## See Also  
- [MFC Sample HIERSVR](../../top/visual-cpp-samples.md)   
- [MFC Sample OCLIENT](../../top/visual-cpp-samples.md)   
+ [MFC Sample HIERSVR](../../visual-cpp-samples.md)   
+ [MFC Sample OCLIENT](../../visual-cpp-samples.md)   
  [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [COleDropSource Class](../../mfc/reference/coledropsource-class.md)

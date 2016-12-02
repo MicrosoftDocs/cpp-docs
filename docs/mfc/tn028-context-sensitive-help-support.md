@@ -164,7 +164,7 @@ HID_MY_COMMAND    0x10096
   
  This format is compatible with the Help compiler's facility, which maps context IDs (the numbers on the right side) with topic names (the symbols on the left side).  
   
- The source code for MAKEHM is available in the MFC Programming Utilities sample [MAKEHM](../top/visual-cpp-samples.md).  
+ The source code for MAKEHM is available in the MFC Programming Utilities sample [MAKEHM](../visual-cpp-samples.md).  
   
 ## Adding Help Support After Running the MFC Application Wizard  
  The best way to add Help to your application is to check the "Context-sensitive Help" option on the Advanced Features page of the MFC Application Wizard before creating your application. That way the MFC Application Wizard automatically adds the necessary message map entries to your `CWinApp`-derived class to support Help.  

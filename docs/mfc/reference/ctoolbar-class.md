@@ -650,9 +650,9 @@ void SetSizes(
  [!code-cpp[NVC_MFCListView#8](../../atl/reference/codesnippet/cpp/ctoolbar-class_4.cpp)]  
   
 ## See Also  
- [MFC Sample CTRLBARS](../../top/visual-cpp-samples.md)   
- [MFC Sample DLGCBR32](../../top/visual-cpp-samples.md)   
- [MFC Sample DOCKTOOL](../../top/visual-cpp-samples.md)   
+ [MFC Sample CTRLBARS](../../visual-cpp-samples.md)   
+ [MFC Sample DLGCBR32](../../visual-cpp-samples.md)   
+ [MFC Sample DOCKTOOL](../../visual-cpp-samples.md)   
  [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CToolBarCtrl Class](../../mfc/reference/ctoolbarctrl-class.md)   

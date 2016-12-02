@@ -247,7 +247,7 @@ virtual BOOL OnApplyScale(
 >  Before the common OLE Object Properties dialog box is displayed, the framework calls this function with a **NULL** for `pItem` and a – 1 for `nCurrentScale`. This is done to determine if the scaling controls should be enabled.  
   
 ## See Also  
- [MFC Sample CIRC](../../top/visual-cpp-samples.md)   
+ [MFC Sample CIRC](../../visual-cpp-samples.md)   
  [COleDialog Class](../../mfc/reference/coledialog-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [COleDialog Class](../../mfc/reference/coledialog-class.md)   

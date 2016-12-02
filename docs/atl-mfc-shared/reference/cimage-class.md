@@ -1504,8 +1504,8 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage, int xDest, int yDest,
 
   
 ## See Also  
- [MMXSwarm Sample](../../top/visual-cpp-samples.md)   
- [SimpleImage Sample](../../top/visual-cpp-samples.md)   
+ [MMXSwarm Sample](../../visual-cpp-samples.md)   
+ [SimpleImage Sample](../../visual-cpp-samples.md)   
  [Device-Independent Bitmaps](http://msdn.microsoft.com/library/windows/desktop/dd183562)   
  [CreateDIBSection](http://msdn.microsoft.com/library/windows/desktop/dd183494)   
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)
