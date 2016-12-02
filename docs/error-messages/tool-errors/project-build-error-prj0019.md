@@ -43,4 +43,4 @@ A tool returned an error code from
   
  See [Troubleshooting Custom Build Steps and Build Events](../../ide/troubleshooting-build-customizations.md) for more information.  
   
- This error can also occur when you are running as a member of the Users group and Administrative access is needed. For more information, see [Running as a Member of the Users Group](../../running-as-a-member-of-the-users-group.md).
+ This error can also occur when you are running as a member of the Users group and Administrative access is needed. For more information, see [Running as a Member of the Users Group](../../top/running-as-a-member-of-the-users-group.md).

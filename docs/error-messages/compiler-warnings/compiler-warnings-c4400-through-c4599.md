@@ -200,7 +200,6 @@ The articles in this part of the documentation contain information about a subse
 |[Compiler Warning (level 4) C4536](../../error-messages/compiler-warnings/compiler-warning-level-4-c4536.md)|'typename': type-name exceeds meta-data limit of 'character_limit' characters|  
 |[Compiler Warning (level 1) C4537](../../error-messages/compiler-warnings/compiler-warning-level-1-c4537.md)|'object': '.' applied to non-UDT type|  
 |[Compiler Warning (level 3) C4538](../../error-messages/compiler-warnings/compiler-warning-level-3-c4538.md)|'type': const/volatile qualifiers on this type are not supported|  
-|[Compiler Warning (level 1) C4539](../Topic/Compiler%20Warning%20\(level%201\)%20C4539.md)|'character': a universal-character-name specifies an invalid character|  
 |[Compiler Warning (level 1) C4540](../../error-messages/compiler-warnings/compiler-warning-level-1-c4540.md)|dynamic_cast used to convert to inaccessible or ambiguous base; run-time test will fail ('type1' to 'type2')|  
 |[Compiler Warning (level 1) C4541](../../error-messages/compiler-warnings/compiler-warning-level-1-c4541.md)|'identifier' used on polymorphic type 'type' with /GR-; unpredictable behavior may result|  
 |Compiler warning (level 1) C4542|Skipping generation of merged injected text file, cannot write %$M file: '%s': %$e|  

@@ -38,13 +38,14 @@ translation.priority.mt:
 # Compiler Warning C4950
 'type_or_member' : marked as obsolete  
   
- A member or type was marked as obsolete with the [ObsoleteAttribute](frlrfSystemObsoleteAttributeClassTopic).  
+A member or type was marked as obsolete with the <xref:System.ObsoleteAttribute> attribute.  
   
- C4950 is always issued as an error.  You can turn off this warning with the `#pragma warning` or **/wd**; see [warning](../../preprocessor/warning.md) or [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning Level)](../../build/reference/compiler-option-warning-level.md) for more information.  
+C4950 is always issued as an error. You can turn off this warning by using the [warning](../../preprocessor/warning.md) pragma directive or the [/wd](../../build/reference/compiler-option-warning-level.md) compiler option.  
   
- The following sample generates C4950:  
+## Example  
+The following sample generates C4950:  
   
-```  
+```cpp  
 // C4950.cpp  
 // compile with: /clr  
 using namespace System;  
