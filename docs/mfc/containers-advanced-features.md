@@ -43,11 +43,11 @@ translation.priority.ht:
 # Containers: Advanced Features
 This article describes the steps necessary to incorporate optional advanced features into existing container applications. These features are:  
   
--   [An application that is both a container and a server](#_core_creating_a_container.2f.server_application)  
+-   [An application that is both a container and a server](#_core_creating_a_container_server_application)  
   
 -   [An OLE link to an embedded object](#_core_links_to_embedded_objects)  
   
-##  <a name="_core_creating_a_container.2f.server_application"></a> Creating a Container/Server Application  
+##  <a name="_core_creating_a_container_server_application"></a> Creating a Container/Server Application  
  A container/server application is an application that acts as both a container and a server. Microsoft Word for Windows is an example of this. You can embed Word for Windows documents in other applications, and you can also embed items in Word for Windows documents. The process for modifying your container application to be both a container and a full server (you cannot create a combination container/miniserver application) is similar to the process for creating a full server.  
   
  The article [Servers: Implementing a Server](../mfc/servers-implementing-a-server.md) lists a number of tasks required to implement a server application. If you convert a container application to a container/server application, then you need to perform some of those same tasks, adding code to the container. The following lists the important things to consider:  

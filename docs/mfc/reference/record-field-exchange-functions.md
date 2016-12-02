@@ -46,7 +46,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Record Field Exchange Functions
-This topic lists the Record Field Exchange ([RFX](#_mfc_rfx_functions_.28.odbc.29), [Bulk RFX](#_mfc_bulk_rfx_functions_.28.odbc.29), and [DFX](#_mfc_dfx_functions_.28.dao.29)) functions used to automate the transfer of data between a recordset object and its data source and to perform other operations on the data.  
+This topic lists the Record Field Exchange (RFX, Bulk RFX, and DFX) functions used to automate the transfer of data between a recordset object and its data source and to perform other operations on the data.  
   
  If you are using the ODBC-based classes and you have implemented bulk row fetching, you must manually override the `DoBulkFieldExchange` member function of `CRecordset` by calling the Bulk RFX functions for each data member corresponding to a data source column.  
   

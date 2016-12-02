@@ -262,7 +262,8 @@ D2D1_RADIAL_GRADIENT_BRUSH_PROPERTIES m_RadialGradientBrushProperties;
 ##  <a name="cd2dradialgradientbrush__operator_id2d1radialgradientbrush_star"></a>  CD2DRadialGradientBrush::operator ID2D1RadialGradientBrush*  
  Returns ID2D1RadialGradientBrush interface  
   
-```  operator ID2D1RadialGradientBrush*();
+```  
+operator ID2D1RadialGradientBrush*();
 ```   
   
 ### Return Value  

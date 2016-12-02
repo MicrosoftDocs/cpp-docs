@@ -51,7 +51,7 @@ class CD2DBitmapBrush : public CD2DBrush;
 |Name|Description|  
 |----------|-----------------|  
 |[CD2DBitmapBrush::CD2DBitmapBrush](#cd2dbitmapbrush__cd2dbitmapbrush)|Overloaded. Constructs a CD2DBitmapBrush object from file.|  
-|[CD2DBitmapBrush::~CD2DBitmapBrush](#cd2dbitmapbrush__dtorcd2dbitmapbrush)|The destructor. Called when a D2D bitmap brush object is being destroyed.|  
+|[CD2DBitmapBrush::~CD2DBitmapBrush](#cd2dbitmapbrush__dtor)|The destructor. Called when a D2D bitmap brush object is being destroyed.|  
   
 ### Public Methods  
   
@@ -103,7 +103,7 @@ class CD2DBitmapBrush : public CD2DBrush;
 ## Requirements  
  **Header:** afxrendertarget.h  
   
-##  <a name="cd2dbitmapbrush___dtorcd2dbitmapbrush"></a>  CD2DBitmapBrush::~CD2DBitmapBrush  
+##  <a name="cd2dbitmapbrush__dtor"></a>  CD2DBitmapBrush::~CD2DBitmapBrush  
  The destructor. Called when a D2D bitmap brush object is being destroyed.  
   
 ```  
@@ -300,7 +300,8 @@ D2D1_BITMAP_BRUSH_PROPERTIES* m_pBitmapBrushProperties;
 ##  <a name="cd2dbitmapbrush__operator_id2d1bitmapbrush_star"></a>  CD2DBitmapBrush::operator ID2D1BitmapBrush*  
  Returns ID2D1BitmapBrush interface  
   
-```  operator ID2D1BitmapBrush*();
+```  
+operator ID2D1BitmapBrush*();
 ```   
   
 ### Return Value  

@@ -3959,7 +3959,8 @@ CPoint OffsetWindowOrg(
 ##  <a name="cdc__operator_hdc"></a>  CDC::operator HDC  
  Use this operator to retrieve the device context handle of the `CDC` object.  
   
-```  operator HDC() const;
+```  
+operator HDC() const;
 
  
 ```  

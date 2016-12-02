@@ -160,7 +160,7 @@ CPair *PGetNextAssoc(const CPair* pAssoc);
   
 ### Parameters  
  *pAssoc*  
- Points to a map entry returned by a previous [PGetNextAssoc](#vclrfcmapstringtostringpgetnextassoc) or [PGetFirstAssoc](#cmapstringtostring__pgetfirstassoc) call.  
+ Points to a map entry returned by a previous [PGetNextAssoc](#cmapstringtostring__pgetnextassoc) or [PGetFirstAssoc](#cmapstringtostring__pgetfirstassoc) call.  
   
 ### Return Value  
  A pointer to the next entry in the map; see [CMapStringToString::CPair](#cmapstringtostring__cpair). If the element is the last in the map, the value is **NULL**.  

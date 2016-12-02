@@ -213,7 +213,8 @@ ID2D1SolidColorBrush* m_pSolidColorBrush;
 ##  <a name="cd2dsolidcolorbrush__operator_id2d1solidcolorbrush_star"></a>  CD2DSolidColorBrush::operator ID2D1SolidColorBrush*  
  Returns ID2D1SolidColorBrush interface  
   
-```  operator ID2D1SolidColorBrush*();
+```  
+operator ID2D1SolidColorBrush*();
 ```   
   
 ### Return Value  

@@ -118,7 +118,8 @@ BOOL IsNull() const;
 ##  <a name="cd2dsizef__operator_csize"></a>  CD2DSizeF::operator CSize  
  Converts CD2DSizeF to CSize object.  
   
-```  operator CSize();
+```  
+operator CSize();
 ```   
   
 ### Return Value  

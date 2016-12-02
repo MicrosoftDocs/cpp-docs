@@ -53,7 +53,7 @@ ATL provides the ATLPath class for manipulating paths in the form of [CPathT](cp
 |[ATLPath::IsPrefix](#atlpath__isprefix)|This function is an overloaded wrapper for [PathIsPrefix](http://msdn.microsoft.com/library/windows/desktop/bb773650).|  
 |[ATLPath::IsRelative](#atlpath__isrelative)|This function is an overloaded wrapper for [PathIsRelative](http://msdn.microsoft.com/library/windows/desktop/bb773660).|  
 |[ATLPath::IsRoot](#atlpath__isroot)|This function is an overloaded wrapper for [PathIsRoot](http://msdn.microsoft.com/library/windows/desktop/bb773674).|  
-|[ATLPath::IsSameRoot](#atlpath__issameRoot)|This function is an overloaded wrapper for [PathIsSameRoot](http://msdn.microsoft.com/library/windows/desktop/bb773687).|  
+|[ATLPath::IsSameRoot](#atlpath__issameroot)|This function is an overloaded wrapper for [PathIsSameRoot](http://msdn.microsoft.com/library/windows/desktop/bb773687).|  
 |[ATLPath::IsUNC](#atlpath__isunc)|This function is an overloaded wrapper for [PathIsUNC](http://msdn.microsoft.com/library/windows/desktop/bb773712).|  
 |[ATLPath::IsUNCServer](#atlpath__isuncserver)|This function is an overloaded wrapper for [PathIsUNCServer](http://msdn.microsoft.com/library/windows/desktop/bb773722).|  
 |[ATLPath::IsUNCServerShare](#atlpath__isuncservershare)|This function is an overloaded wrapper for [PathIsUNCServerShare](http://msdn.microsoft.com/library/windows/desktop/bb773723).|  

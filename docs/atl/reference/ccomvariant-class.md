@@ -54,7 +54,7 @@ class CComVariant : public tagVARIANT
 |Name|Description|  
 |----------|-----------------|  
 |[CComVariant::CComVariant](#ccomvariant__ccomvariant)|The constructor.|  
-|[CComVariant::~CComVariant](#ccomvariant__dtorccomvariant)|The destructor.|  
+|[CComVariant::~CComVariant](#ccomvariant__dtor)|The destructor.|  
   
 ### Public Methods  
   
@@ -179,7 +179,7 @@ CComVariant(const CComBSTR& bstrSrc);
 ### Remarks  
  The destructor manages cleanup by calling [CComVariant::Clear](#ccomvariant__clear).  
   
-##  <a name="ccomvariant___dtorccomvariant"></a>  CComVariant::~CComVariant  
+##  <a name="ccomvariant__dtor"></a>  CComVariant::~CComVariant  
  The destructor.  
   
 ```

@@ -809,7 +809,8 @@ CD2DTextFormat* m_pTextFormatDefault;
 ##  <a name="crendertarget__operator_id2d1rendertarget_star"></a>  CRenderTarget::operator ID2D1RenderTarget*  
  Returns ID2D1RenderTarget interface  
   
-```  operator ID2D1RenderTarget*();
+```  
+operator ID2D1RenderTarget*();
 ```   
   
 ### Return Value  

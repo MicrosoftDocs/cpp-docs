@@ -649,7 +649,8 @@ int OffsetRgn(
 ##  <a name="crgn__operator_hrgn"></a>  CRgn::operator HRGN  
  Use this operator to get the attached Windows GDI handle of the `CRgn` object.  
   
-```  operator HRGN() const;
+```  
+operator HRGN() const;
 
  
 ```  

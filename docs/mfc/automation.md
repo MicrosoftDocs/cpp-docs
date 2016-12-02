@@ -104,9 +104,7 @@ Automation (formerly known as OLE Automation) makes it possible for one applicat
 -   [Add an Automation class](../mfc/automation-servers.md)  
   
 -   [Use type libraries](../mfc/automation-clients-using-type-libraries.md)  
-  
--   [Pass parameters in Automation](#_core_automation_topics)  
-  
+   
 -   [Access automation servers](../mfc/automation-servers.md)  
   
 -   [Write automation clients in C++](../mfc/automation-clients.md)  

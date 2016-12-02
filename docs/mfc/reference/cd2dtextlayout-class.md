@@ -215,7 +215,8 @@ IDWriteTextLayout* m_pTextLayout;
 ##  <a name="cd2dtextlayout__operator_idwritetextlayout_star"></a>  CD2DTextLayout::operator IDWriteTextLayout*  
  Returns IDWriteTextLayout interface  
   
-```  operator IDWriteTextLayout*();
+```  
+operator IDWriteTextLayout*();
 ```   
   
 ### Return Value  

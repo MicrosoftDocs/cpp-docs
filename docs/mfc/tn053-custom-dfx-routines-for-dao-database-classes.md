@@ -66,7 +66,7 @@ translation.priority.ht:
 > [!NOTE]
 >  DFX and dynamic binding are not mutually exclusive, so a hybrid use of static and dynamic binding can be used.  
   
- **Example 1 — Use of DAO Record Field Exchange only**  
+## <a name="_mfcnotes_tn053_examples"></a> Example 1 — Use of DAO Record Field Exchange only  
   
  (assumes `CDaoRecordset` — derived class `CMySet` already open)  
   
@@ -129,7 +129,7 @@ PopUpEmployeeData(emp.m_strFirstName,
     varPhoto);
 ```  
   
- **How DFX Works**  
+## <a name="_mfcnotes_tn053_how_dfx_works"></a> How DFX Works  
   
  The DFX mechanism works in a similar fashion to the record field exchange (RFX) mechanism used by the MFC ODBC classes. The principles of DFX and RFX are the same but there are numerous internal differences. The design of the DFX functions was such that virtually all the code is shared by the individual DFX routines. At the highest level DFX only does a few things.  
   

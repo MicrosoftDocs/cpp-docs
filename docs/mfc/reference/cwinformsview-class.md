@@ -63,7 +63,7 @@ class CWinFormsView : public CView;
   
 |Name||  
 |----------|-|  
-|[CWinFormsView::operator Control^](#cwinformsview__operator_control^)|Casts a type as a pointer to a Windows Forms control.|  
+|[CWinFormsView::operator Control^](#cwinformsview__operator_control)|Casts a type as a pointer to a Windows Forms control.|  
   
 ## Remarks  
  MFC uses the `CWinFormsView` class to host a .NET Framework Windows Forms control within an MFC view. The control is a child of the native view and occupies the entire client area of the MFC view. The result is similar to a `CFormView` view, allowing you to take advantage of the Windows Forms designer and run time to create rich form-based views.  
@@ -74,7 +74,7 @@ class CWinFormsView : public CView;
 >  MFC Windows Forms integration works only in projects which link dynamically with MFC (projects in which AFXDLL is defined).  
   
 > [!NOTE]
->  CWinFormsView does not support the MFC splitter window ( [CSplitterWnd Class](../../mfc/reference/csplitterwnd-class.md)). Currently only the Windows Forms Splitter control ( <xref:System.Windows.Forms.SplitterqualifyHint%3DFalse%26autoUpgrade%3DTrue>) is supported.  
+>  CWinFormsView does not support the MFC splitter window ( [CSplitterWnd Class](../../mfc/reference/csplitterwnd-class.md)). Currently only the Windows Forms Splitter control is supported.  
   
 ## Requirements  
  **Header:** afxwinforms.h  
@@ -114,10 +114,11 @@ System::Windows::Forms::Control^ GetControl() const;
 ### Remarks  
  For an example of how to use Windows Forms, see [Using a Windows Form User Control in MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md).  
   
-##  <a name="cwinformsview__operator_control_xor"></a>  CWinFormsView::operator Control^  
+##  <a name="cwinformsview__operator_control"></a>  CWinFormsView::operator Control^  
  Casts a type as a pointer to a Windows Forms control.  
   
-```  operator System::Windows::Forms::Control^() const;
+```  
+operator System::Windows::Forms::Control^() const;
 
  
 ```  

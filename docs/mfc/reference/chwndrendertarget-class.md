@@ -177,7 +177,8 @@ ID2D1HwndRenderTarget* m_pHwndRenderTarget;
 ##  <a name="chwndrendertarget__operator_id2d1hwndrendertarget_star"></a>  CHwndRenderTarget::operator ID2D1HwndRenderTarget*  
  Returns ID2D1HwndRenderTarget interface.  
   
-```  operator ID2D1HwndRenderTarget*();
+```  
+operator ID2D1HwndRenderTarget*();
 ```   
   
 ### Return Value  

@@ -196,7 +196,8 @@ HINTERNET m_hFile;
 ##  <a name="cinternetfile__operator_hinternet"></a>  CInternetFile::operator HINTERNET  
  Use this operator to get the Windows handle for the current Internet session.  
   
-```  operator HINTERNET() const;
+```  
+operator HINTERNET() const;
 
  
 ```  

@@ -231,7 +231,8 @@ CAnimationVariable m_yValue;
 ##  <a name="canimationpoint__operator_cpoint"></a>  CAnimationPoint::operator CPoint  
  Converts a CAnimationPoint to a CPoint.  
   
-```  operator CPoint();
+```  
+operator CPoint();
 ```   
   
 ### Return Value  

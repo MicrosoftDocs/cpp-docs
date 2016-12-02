@@ -125,7 +125,8 @@ HANDLE m_hObject;
 ##  <a name="csyncobject__operator_handle"></a>  CSyncObject::operator HANDLE  
  Use this operator to get the handle of the `CSyncObject` object.  
   
-```  operator HANDLE() const;
+```  
+operator HANDLE() const;
 
  
 ```  

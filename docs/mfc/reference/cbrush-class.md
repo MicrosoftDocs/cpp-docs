@@ -381,7 +381,8 @@ int GetLogBrush(LOGBRUSH* pLogBrush);
 ##  <a name="cbrush__operator_hbrush"></a>  CBrush::operator HBRUSH  
  Use this operator to get the attached Windows GDI handle of the `CBrush` object.  
   
-```  operator HBRUSH() const;
+```  
+operator HBRUSH() const;
 
  
 ```  

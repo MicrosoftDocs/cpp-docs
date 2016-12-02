@@ -141,7 +141,7 @@ void* Reallocate(
  Returns a pointer to the start of the newly allocated memory block.  
   
 ### Remarks  
- Call [IAtlMemMgr::Free](#iatlmemmgr__free) or [IAtlMemMgr::Reallocate](#vclrfiatlmemmgrreallocate) to free the memory allocated by this method.  
+ Call [IAtlMemMgr::Free](#iatlmemmgr__free) or [IAtlMemMgr::Reallocate](#iatlmemmgr__reallocate) to free the memory allocated by this method.  
   
  Conceptually this method frees the existing memory and allocates a new memory block. In reality, the existing memory may be extended or otherwise reused.  
   

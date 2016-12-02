@@ -520,7 +520,7 @@ bool operator>(const CComCurrency& cur) const;
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#68](../../atl/codesnippet/cpp/ccomcurrency-class_16.cpp)]  
   
-##  <a name="ccomcurrency__operator_gt__eq"></a>  CComCurrency::operator &gt;=  
+##  <a name="ccomcurrency__operator_gt_eq"></a>  CComCurrency::operator &gt;=  
  This operator compares two `CComCurrency` objects to determine equality or the larger.  
   
 ```

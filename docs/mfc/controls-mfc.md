@@ -72,7 +72,7 @@ Controls are objects that users can interact with to enter or manipulate data. T
 ##  <a name="_core_finding_information_about_windows_common_controls"></a> Finding Information About Windows Common Controls  
  The table below briefly describes each of the Windows common controls, including the control's MFC wrapper class.  
   
-### Windows Common Controls and MFC Classes  
+### <a name="_core_windows_common_controls_and_mfc_classes"></a>  Windows Common Controls and MFC Classes  
   
 |Control|MFC class|Description|New in Windows 95|  
 |-------------|---------------|-----------------|------------------------|  

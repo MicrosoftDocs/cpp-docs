@@ -826,7 +826,8 @@ HIMAGELIST GetSafeHandle() const;
 ##  <a name="cimagelist__operator_himagelist"></a>  CImageList::operator HIMAGELIST  
  Use this operator to get the attached handle of the `CImageList` object.  
   
-```  operator HIMAGELIST() const;
+```  
+operator HIMAGELIST() const;
 
  
 ```  

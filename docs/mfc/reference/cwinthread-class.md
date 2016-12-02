@@ -341,7 +341,8 @@ virtual BOOL OnIdle(LONG lCount);
 ##  <a name="cwinthread__operator_handle"></a>  CWinThread::operator HANDLE  
  Retrieves the handle of the `CWinThread` object.  
   
-```  operator HANDLE() const;
+```  
+operator HANDLE() const;
 
  
 ```  

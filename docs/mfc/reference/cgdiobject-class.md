@@ -332,7 +332,8 @@ BOOL operator==(const CGdiObject& obj) const;
 ##  <a name="cgdiobject__operator_hgdiobj"></a>  CGdiObject::operator HGDIOBJ  
  Retrieves a `HANDLE` to the attached Windows GDI object; otherwise **NULL** if no object is attached.  
   
-```  operator HGDIOBJ() const;
+```  
+operator HGDIOBJ() const;
 
  
 ```  

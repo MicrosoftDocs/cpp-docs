@@ -161,7 +161,8 @@ CInternetSession* GetSession() const;
 ##  <a name="cinternetconnection__operator_hinternet"></a>  CInternetConnection::operator HINTERNET  
  Use this operator to get the API-level handle for the current Internet session.  
   
-```  operator HINTERNET() const;
+```  
+operator HINTERNET() const;
 
  
 ```  

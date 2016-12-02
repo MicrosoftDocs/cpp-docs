@@ -100,7 +100,8 @@ CD2DPointU(
 ##  <a name="cd2dpointu__operator_cpoint"></a>  CD2DPointU::operator CPoint  
  Converts CD2DPointU to CPoint object.  
   
-```  operator CPoint();
+```  
+operator CPoint();
 ```   
   
 ### Return Value  

@@ -85,8 +85,8 @@ class CArchive
   
 |Name|Description|  
 |----------|-----------------|  
-|[CArchive::operator &lt;&lt;](#carchive__operator__lt__lt_)|Stores objects and primitive types to the archive.|  
-|[CArchive::operator &gt;&gt;](#carchive__operator__gt__gt_)|Loads objects and primitive types from the archive.|  
+|[CArchive::operator &lt;&lt;](#carchive__operator_lt_lt)|Stores objects and primitive types to the archive.|  
+|[CArchive::operator &gt;&gt;](#carchive__operator_gt_gt)|Loads objects and primitive types from the archive.|  
   
 ### Public Data Members  
   
@@ -333,7 +333,7 @@ CDocument* m_pDocument;
 ### Example  
  [!code-cpp[NVC_MFCSerialization#35](../../mfc/codesnippet/cpp/carchive-class_11.cpp)]  
   
-##  <a name="carchive__operator__lt__lt_"></a>  CArchive::operator &lt;&lt;  
+##  <a name="carchive__operator_lt_lt"></a>  CArchive::operator &lt;&lt;  
  Stores the indicated object or primitive type to the archive.  
   
 ```  
@@ -404,7 +404,7 @@ CArchive& operator<<(LONGLONG dwdw);
   
  [!code-cpp[NVC_MFCSerialization#32](../../mfc/codesnippet/cpp/carchive-class_13.cpp)]  
   
-##  <a name="carchive__operator__gt__gt_"></a>  CArchive::operator &gt;&gt;  
+##  <a name="carchive__operator_gt_gt"></a>  CArchive::operator &gt;&gt;  
  Loads the indicated object or primitive type from the archive.  
   
 ```  

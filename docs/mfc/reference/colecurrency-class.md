@@ -69,13 +69,13 @@ class COleCurrency
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator =](#colecurrency__operator__eq)|Copies a `COleCurrency` value.|  
-|[operator +, -](#colecurrency__operator_add)|Adds, subtracts, and changes sign of `COleCurrency` values.|  
-|[operator +=, -=](#colecurrency__operator_add__eq)|Adds and subtracts a `COleCurrency` value from this `COleCurrency` object.|  
+|[operator =](#colecurrency__operator_eq)|Copies a `COleCurrency` value.|  
+|[operator +, -](#colecurrency__operator_plus_minus)|Adds, subtracts, and changes sign of `COleCurrency` values.|  
+|[operator +=, -=](#colecurrency__operator_plus_minus_eq)|Adds and subtracts a `COleCurrency` value from this `COleCurrency` object.|  
 |[operator */](#colecurrency__operator_star)|Scales a `COleCurrency` value by an integer value.|  
-|[operator *=, /=](#colecurrency__operator_star_eq)|Scales this `COleCurrency` value by an integer value.|  
-|[operator <<](#colecurrency__operator__lt__lt_and__gt__gt_)|Outputs a `COleCurrency` value to `CArchive` or `CDumpContext`.|  
-|[operator >>](#colecurrency__operator__lt__lt_and__gt__gt_)|Inputs a `COleCurrency` object from `CArchive`.|  
+|[operator *=, /=](#colecurrency__operator_star_div_eq)|Scales this `COleCurrency` value by an integer value.|  
+|[operator <<](#colecurrency__operator_stream)|Outputs a `COleCurrency` value to `CArchive` or `CDumpContext`.|  
+|[operator >>](#colecurrency__operator_stream)|Inputs a `COleCurrency` object from `CArchive`.|  
 |[operator CURRENCY](#colecurrency__operator_currency)|Converts a `COleCurrency` value into a **CURRENCY**.|  
 |[operator ==, <, <=, etc.](#colecurrency_relational_operators)|Compares two `COleCurrency` values.|  
   
@@ -231,15 +231,15 @@ CurrencyStatus GetStatus() const;
   
 - [COleCurrency](#colecurrency__colecurrency)  
   
-- [operator =](#colecurrency__operator__eq)  
+- [operator =](#colecurrency__operator_eq)  
   
-- [operator + -](#colecurrency__operator_+,_-)  
+- [operator + -](#colecurrency__operator_plus_minus)  
   
-- [operator += and -=](#colecurrency__operator_+_eq,_-_eq)  
+- [operator += and -=](#colecurrency__operator_plus_minus_eq)  
   
 - [operator * /](#colecurrency__operator_star)  
   
-- [operator *= and /=](#colecurrency__operator_star_eq)  
+- [operator *= and /=](#colecurrency__operator_star_div_eq)  
   
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#12](../../mfc/codesnippet/cpp/colecurrency-class_3.cpp)]  
@@ -288,20 +288,20 @@ enum CurrencyStatus{
   
 - [COleCurrency](#colecurrency__colecurrency)  
   
-- [operator =](#colecurrency__operator__eq)  
+- [operator =](#colecurrency__operator_eq)  
   
-- [operator +, -](#colecurrency__operator_+,_-)  
+- [operator +, -](#colecurrency__operator_plus_minus)  
   
-- [operator +=, -=](#colecurrency__operator_+_eq,_-_eq)  
+- [operator +=, -=](#colecurrency__operator_plus_minus_eq)  
   
 - [operator */](#colecurrency__operator_star)  
   
-- [operator *=, /=](#colecurrency__operator_*_eq,___eq)  
+- [operator *=, /=](#colecurrency__operator_star_div_eq)  
   
     > [!CAUTION]
     >  This data member is for advanced programming situations. You should use the inline member functions [GetStatus](#colecurrency__getstatus) and [SetStatus](#colecurrency__setstatus). See `SetStatus` for further cautions regarding explicitly setting this data member.  
   
-##  <a name="colecurrency__operator__eq"></a>  COleCurrency::operator =  
+##  <a name="colecurrency__operator_eq"></a>  COleCurrency::operator =  
  These overloaded assignment operators copy the source currency value into this **COleCurrency** object.  
   
 ```  
@@ -328,7 +328,7 @@ const COleCurrency& operator=(const VARIANT& varSrc);
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#15](../../mfc/codesnippet/cpp/colecurrency-class_4.cpp)]  
   
-##  <a name="colecurrency__operator__add"></a>  COleCurrency::operator +, -  
+##  <a name="colecurrency__operator_plus_minus"></a>  COleCurrency::operator +, -  
  These operators allow you to add and subtract two **COleCurrency** values to and from each other and to change the sign of a **COleCurrency** value.  
   
 ```  
@@ -357,7 +357,7 @@ COleCurrency operator-() const;
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#16](../../mfc/codesnippet/cpp/colecurrency-class_5.cpp)]  
   
-##  <a name="colecurrency__operator__add_eq_eq"></a>  COleCurrency::operator +=, -=  
+##  <a name="colecurrency__operator_plus_minus_eq"></a>  COleCurrency::operator +=, -=  
  Allow you to add and subtract a **COleCurrency** value to and from this **COleCurrency** object.  
   
 ```  
@@ -404,7 +404,7 @@ COleCurrency operator/(long nOperand) const;
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#18](../../mfc/codesnippet/cpp/colecurrency-class_7.cpp)]  
   
-##  <a name="colecurrency__operator_star__eq__eq"></a>  COleCurrency::operator *=, /=  
+##  <a name="colecurrency__operator_star_div_eq"></a>  COleCurrency::operator *=, /=  
  Allow you to scale this **COleCurrency** value by an integral value.  
   
 ```  
@@ -426,7 +426,7 @@ const COleCurrency& operator/=(long nOperand);
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#19](../../mfc/codesnippet/cpp/colecurrency-class_8.cpp)]  
   
-##  <a name="colecurrency__operator__lt__lt_and__gt__gt_"></a>  COleCurrency::operator &lt;&lt;, &gt;&gt;  
+##  <a name="colecurrency__operator_stream"></a>  COleCurrency::operator &lt;&lt;, &gt;&gt;  
  Supports diagnostic dumping and storing to an archive.  
   
 ```  
@@ -451,7 +451,8 @@ friend CArchive& operator>>(
 ##  <a name="colecurrency__operator_currency"></a>  COleCurrency::operator CURRENCY  
  Returns a `CURRENCY` structure whose value is copied from this **COleCurrency** object.  
   
-```  operator CURRENCY() const;
+```  
+operator CURRENCY() const;
 
  
 ```  
@@ -598,7 +599,7 @@ void SetStatus(Â    CurrencyStatus  status Â);
 - **COleCurrency::null**Â Â Â Indicates that this **COleCurrency** object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ **NULL**.)  
   
     > [!CAUTION]
-    >  This function is for advanced programming situations. This function does not alter the data in this object. It will most often be used to set the status to null or invalid. Note that the assignment operator ( [operator =](#colecurrency__operator__eq)) and [SetCurrency](#colecurrency__setcurrency) do set the status to of the object based on the source value(s).  
+    >  This function is for advanced programming situations. This function does not alter the data in this object. It will most often be used to set the status to null or invalid. Note that the assignment operator ( [operator =](#colecurrency__operator_eq)) and [SetCurrency](#colecurrency__setcurrency) do set the status to of the object based on the source value(s).  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

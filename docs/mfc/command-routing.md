@@ -52,7 +52,7 @@ Your responsibility in working with commands is limited to making message-map co
   
  How expensive is this routing mechanism Compared to what your handler does in response to a command, the cost of the routing is low. Bear in mind that the framework generates commands only when the user interacts with a user-interface object.  
   
-### Standard Command Route  
+### <a name="_core_standard_command_route"></a> Standard Command Route  
   
 |When an object of this type receives a command . . .|It gives itself and other command-target objects a chance to handle the command in this order:|  
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------------|  
