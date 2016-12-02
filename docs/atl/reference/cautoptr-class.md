@@ -216,7 +216,7 @@ CAutoPtr<T>& operator= (CAutoPtr<TSrc>& p);
 ### Example  
  See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md).  
   
-##  <a name="cautoptr__operator_-_gt"></a>  CAutoPtr::operator -&gt;  
+##  <a name="cautoptr__operator_ptr"></a>  CAutoPtr::operator -&gt;  
  The pointer-to-member operator.  
   
 ```

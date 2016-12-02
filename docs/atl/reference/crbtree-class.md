@@ -319,7 +319,7 @@ CPair* GetPrev(POSITION& pos) throw();
  The position counter, returned by a previous call to methods such as [CRBTree::GetHeadPosition](#crbtree__getheadposition) or [CRBTree::FindFirstKeyAfter](#crbtree__findfirstkeyafter).  
   
 ### Return Value  
- Returns a pointer to the previous [CPair](#crbtree_cpair_class) value stored in the tree.  
+ Returns a pointer to the previous [CPair](#crbtree__cpair_class) value stored in the tree.  
   
 ### Remarks  
  Updates the current position counter, `pos`. If there are no more entries in the tree, the position counter is set to NULL.  

@@ -91,7 +91,7 @@ CComCritSecLock(
 ### Remarks  
  Initializes the critical section object.  
   
-##  <a name="ccomcritseclock___dtor"></a>  CComCritSecLock::~CComCritSecLock  
+##  <a name="ccomcritseclock__dtor"></a>  CComCritSecLock::~CComCritSecLock  
  The destructor.  
   
 ```

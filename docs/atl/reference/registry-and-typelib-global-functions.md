@@ -52,7 +52,33 @@ These functions provide support for loading and registering a type library.
 |-|-|  
 |[AtlGetPerUserRegistration](#atlgetperuserregistration)|Retrieves whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.|  
 |[AtlSetPerUserRegistration](#atlsetperuserregistration)|Sets whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.|  
+
+
+## <a name="atlgetperuserregistration"></a> AtlGetPerUserRegistration
+Use this function to determine whether the application redirects registry access to the **HKEY_CURRENT_USER** (**HKCU**) node.  
   
+## Syntax  
+  
+```  
+ATLINLINE ATLAPI AtlGetPerUserRegistration(  
+   bool* pEnabled  
+);  
+```  
+  
+### Parameters  
+ [out] `pEnabled`  
+ `TRUE` indicates that the registry information is directed to the **HKCU** node; `FALSE` indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** (**HKCR**).  
+  
+### Return Value  
+ `S_OK` if the method is successful, otherwise the `HRESULT` error code if an error occurs.  
+  
+### Remarks  
+ Registry redirection is not enabled by default. If you enable this option, registry access is redirected to **HKEY_CURRENT_USER\Software\Classes**.  
+  
+ The redirection is not global. Only the MFC and ATL frameworks are affected by this registry redirection.  
+  
+
+
 ##  <a name="atlregistertypelib"></a>  AtlRegisterTypeLib  
  This function is called to register a type library.  
   
@@ -72,8 +98,32 @@ ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This helper function is utilized by [AtlComModuleUnregisterServer](#atlcomunregisterserver) and [CAtlComModule::RegisterTypeLib](../../atl/reference/catlcommodule-class.md#catlcommodule__registertypelib).  
+ This helper function is utilized by [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver) and [CAtlComModule::RegisterTypeLib](../../atl/reference/catlcommodule-class.md#catlcommodule__registertypelib).  
   
+## <a name="atlsetperuserregistration"></a> AtlSetPerUserRegistration
+Sets whether the application redirects registry access to the **HKEY_CURRENT_USER** (**HKCU**) node.  
+  
+## Syntax  
+  
+```  
+ATLINLINE ATLAPI AtlSetPerUserRegistration(  
+   bool bEnable  
+);  
+```  
+  
+### Parameters  
+ [in] `bEnable`  
+ `TRUE` indicates that the registry information is directed to the **HKCU** node; `FALSE` indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** (**HKCR**).  
+  
+### Return Value  
+ `S_OK` if the method is successful, otherwise the `HRESULT` error code if an error occurs.  
+  
+### Remarks  
+ Registry redirection is not enabled by default. If you enable this option, registry access is redirected to **HKEY_CURRENT_USER\Software\Classes**.  
+  
+ The redirection is not global. Only the MFC and ATL frameworks are affected by this registry redirection.  
+  
+
 ##  <a name="atlunregistertypelib"></a>  AtlUnRegisterTypeLib  
  This function is called to unregister a type library.  
   
