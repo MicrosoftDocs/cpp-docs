@@ -68,7 +68,7 @@ The Microsoft Foundation Class Library supports dockable toolbars. A dockable to
   
 -   [Dynamically resizing the toolbar](#_core_dynamically_resizing_the_toolbar)  
   
--   [Setting wrap positions for a fixed-style toolbar](#_core_setting_wrap_positions_for_a_fixed.2d.style_toolbar)  
+-   [Setting wrap positions for a fixed-style toolbar](#_core_setting_wrap_positions_for_a_fixed_style_toolbar)  
   
  See the MFC General sample [DOCKTOOL](../top/visual-cpp-samples.md) for examples.  
   
@@ -113,7 +113,7 @@ The Microsoft Foundation Class Library supports dockable toolbars. A dockable to
   
  You can also use [CToolBar::GetButtonStyle](../mfc/reference/ctoolbar-class.md#ctoolbar__getbuttonstyle) to return a state and style for buttons on your toolbars. A button's style determines how the button appears and how it responds to user input; the state tells whether the button is in a wrapped state.  
   
-##  <a name="_core_setting_wrap_positions_for_a_fixed.2d.style_toolbar"></a> Setting Wrap Positions for a Fixed-Style Toolbar  
+##  <a name="_core_setting_wrap_positions_for_a_fixed_style_toolbar"></a> Setting Wrap Positions for a Fixed-Style Toolbar  
  For a toolbar with the size fixed style, designate toolbar button indexes at which the toolbar will wrap. The following code shows how to do this in your main frame window's `OnCreate` override:  
   
  [!code-cpp[NVC_MFCDocViewSDI#10](../mfc/codesnippet/cpp/docking-and-floating-toolbars_1.cpp)]  

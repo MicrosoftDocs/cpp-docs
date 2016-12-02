@@ -55,7 +55,7 @@ The MFC array collection classes — both template-based and not — use indexes
   
 -   [Iterating a map](#_core_to_iterate_a_map)  
   
-### To iterate an array  
+### <a name="_core_to_iterate_an_array"></a> To iterate an array  
   
 1.  Use sequential index numbers with the `GetAt` member function:  
   
@@ -69,7 +69,7 @@ The MFC array collection classes — both template-based and not — use indexes
   
      This operator exists in both **const** and non-**const** versions. The **const** version, which is invoked for **const** arrays, can appear only on the right side of an assignment statement.  
   
-### To iterate a list  
+### <a name="_core_to_iterate_a_list"></a> To iterate a list  
   
 1.  Use the member functions `GetHeadPosition` and `GetNext` to work your way through the list:  
   
@@ -77,7 +77,7 @@ The MFC array collection classes — both template-based and not — use indexes
   
      This example uses a typed pointer list to contain pointers to `CPerson` objects. The list declaration resembles the one for the array in the procedure [To iterate an array](#_core_to_iterate_an_array) but is derived from class `CObList`. `GetNext` returns a pointer to a `CPerson` object.  
   
-### To iterate a map  
+### <a name="_core_to_iterate_a_map"></a> To iterate a map  
   
 1.  Use `GetStartPosition` to get to the beginning of the map and `GetNextAssoc` to repeatedly get the next key and value from the map, as shown by the following example:  
   

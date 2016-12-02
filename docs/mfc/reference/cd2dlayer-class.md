@@ -196,7 +196,8 @@ ID2D1Layer* m_pLayer;
 ##  <a name="cd2dlayer__operator_id2d1layer_star"></a>  CD2DLayer::operator ID2D1Layer*  
  Returns ID2D1Layer interface  
   
-```  operator ID2D1Layer* ();
+```  
+operator ID2D1Layer* ();
 ```  
   
 ### Return Value  

@@ -71,7 +71,7 @@ class CWinFormsControl : public CWnd
 |Name|Description|  
 |----------|-----------------|  
 |[CWinFormsControl::operator -&gt;](#cwinformscontrol__operator_-_gt_)|Replaces [CWinFormsControl::GetControl](#cwinformscontrol__getcontrol) in expressions.|  
-|[CWinFormsControl::operator TManagedControl^](#cwinformscontrol__operator_tmanagedcontrol^)|Casts a type as a pointer to a Windows Forms control.|  
+|[CWinFormsControl::operator TManagedControl^](#cwinformscontrol__operator_tmanagedcontrol)|Casts a type as a pointer to a Windows Forms control.|  
   
 ## Remarks  
  The `CWinFormsControl` class provides the basic functionality for hosting of a Windows Forms control.  
@@ -209,7 +209,7 @@ inline TManagedControl^  operator->() const;
   
  For more information on Windows Forms, see [Using a Windows Form User Control in MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md).  
   
-##  <a name="cwinformscontrol__operator_tmanagedcontrol_xor"></a>  CWinFormsControl::operator TManagedControl^  
+##  <a name="cwinformscontrol__operator_tmanagedcontrol"></a>  CWinFormsControl::operator TManagedControl^  
  Casts a type as a pointer to a Windows Forms control.  
   
 ```  

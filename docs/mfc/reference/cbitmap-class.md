@@ -409,7 +409,8 @@ BOOL LoadOEMBitmap(UINT nIDBitmap);
 ##  <a name="cbitmap__operator_hbitmap"></a>  CBitmap::operator HBITMAP  
  Use this operator to get the attached Windows GDI handle of the `CBitmap` object.  
   
-```  operator HBITMAP() const;
+```  
+operator HBITMAP() const;
 
  
 ```  

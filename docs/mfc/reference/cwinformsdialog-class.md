@@ -72,7 +72,7 @@ class CWinFormsDialog :
 |Name||  
 |----------|-|  
 |[CWinFormsDialog::operator -&gt;](#cwinformsdialog__operator_-_gt_)|Replaces [CWinFormsDialog::GetControl](#cwinformsdialog__getcontrol) in expressions.|  
-|[CWinFormsDialog::operator TManagedControl^](#cwinformsdialog__operator_tmanagedcontrol^)|Casts a type as a reference to a Windows Forms user control.|  
+|[CWinFormsDialog::operator TManagedControl^](#cwinformsdialog__operator_tmanagedcontrol)|Casts a type as a reference to a Windows Forms user control.|  
   
 ## Remarks  
  `CWinFormsDialog` is a wrapper for an MFC dialog class ( [CDialog](../../mfc/reference/cdialog-class.md)) that hosts a Windows Forms user control. This allows the display of .NET Framework controls on a modal or modeless MFC dialog box.  

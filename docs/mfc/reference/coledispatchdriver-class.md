@@ -332,7 +332,8 @@ const COleDispatchDriver& operator=(const COleDispatchDriver& dispatchSrc);
 ##  <a name="coledispatchdriver__operator_lpdispatch"></a>  COleDispatchDriver::operator LPDISPATCH  
  Accesses the underlying `IDispatch` pointer of the `COleDispatchDriver` object.  
   
-```  operator LPDISPATCH();
+```  
+operator LPDISPATCH();
 ```   
   
 ### Example  

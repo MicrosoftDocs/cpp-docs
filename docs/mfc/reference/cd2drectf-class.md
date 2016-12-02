@@ -126,7 +126,8 @@ BOOL IsNull() const;
 ##  <a name="cd2drectf__operator_crect"></a>  CD2DRectF::operator CRect  
  Converts CD2DRectF to CRect object.  
   
-```  operator CRect();
+```  
+operator CRect();
 ```   
   
 ### Return Value  

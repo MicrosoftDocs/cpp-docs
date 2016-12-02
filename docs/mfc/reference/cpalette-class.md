@@ -233,7 +233,8 @@ UINT GetPaletteEntries(
 ##  <a name="cpalette__operator_hpalette"></a>  CPalette::operator HPALETTE  
  Use this operator to get the attached Windows GDI handle of the `CPalette` object.  
   
-```  operator HPALETTE() const;
+```  
+operator HPALETTE() const;
 
  
 ```  

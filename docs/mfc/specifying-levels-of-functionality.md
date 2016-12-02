@@ -49,7 +49,8 @@ This article describes how to add the following levels of functionality to your 
   
  For a general description of `CObject` functionality, see the article [Deriving a Class from CObject](../mfc/deriving-a-class-from-cobject.md).  
   
-#### To add run-time class information  
+-   [Run-time class information](#_core_to_add_run.2d.time_class_information)  
+#### <a name="_core_to_add_run.2d.time_class_information"></a> To add run-time class information  
   
 1.  Derive your class from `CObject`, as described in the [Deriving a Class from CObject](../mfc/deriving-a-class-from-cobject.md) article.  
   
@@ -64,7 +65,7 @@ This article describes how to add the following levels of functionality to your 
 > [!NOTE]
 >  Always put `IMPLEMENT_DYNAMIC` in the implementation file (.CPP) for your class. The `IMPLEMENT_DYNAMIC` macro should be evaluated only once during a compilation and therefore should not be used in an interface file (.H) that could potentially be included in more than one file.  
   
-#### To add dynamic creation support  
+#### <a name="_core_to_add_dynamic_creation_support"></a> To add dynamic creation support  
   
 1.  Derive your class from `CObject`.  
   
@@ -74,7 +75,7 @@ This article describes how to add the following levels of functionality to your 
   
 4.  Use the `IMPLEMENT_DYNCREATE` macro in the class implementation file.  
   
-#### To add serialization support  
+#### <a name="_core_to_add_serialization_support"></a> To add serialization support  
   
 1.  Derive your class from `CObject`.  
   

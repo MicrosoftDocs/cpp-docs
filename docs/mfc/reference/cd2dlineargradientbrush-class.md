@@ -234,7 +234,8 @@ ID2D1LinearGradientBrush* m_pLinearGradientBrush;
 ##  <a name="cd2dlineargradientbrush__operator_id2d1lineargradientbrush_star"></a>  CD2DLinearGradientBrush::operator ID2D1LinearGradientBrush*  
  Returns ID2D1LinearGradientBrush interface  
   
-```  operator ID2D1LinearGradientBrush*();
+```  
+operator ID2D1LinearGradientBrush*();
 ```   
   
 ### Return Value  

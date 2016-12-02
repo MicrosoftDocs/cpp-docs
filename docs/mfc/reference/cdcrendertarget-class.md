@@ -165,7 +165,8 @@ ID2D1DCRenderTarget* m_pDCRenderTarget;
 ##  <a name="cdcrendertarget__operator_id2d1dcrendertarget_star"></a>  CDCRenderTarget::operator ID2D1DCRenderTarget*  
  Returns ID2D1DCRenderTarget interface  
   
-```  operator ID2D1DCRenderTarget*();
+```  
+operator ID2D1DCRenderTarget*();
 ```   
   
 ### Return Value  

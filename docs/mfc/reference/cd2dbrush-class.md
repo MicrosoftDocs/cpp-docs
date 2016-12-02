@@ -209,7 +209,8 @@ CD2DBrushProperties* m_pBrushProperties;
 ##  <a name="cd2dbrush__operator_id2d1brush_star"></a>  CD2DBrush::operator ID2D1Brush*  
  Returns ID2D1Brush interface  
   
-```  operator ID2D1Brush*();
+```  
+operator ID2D1Brush*();
 ```   
   
 ### Return Value  

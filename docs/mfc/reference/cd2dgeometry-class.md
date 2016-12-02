@@ -401,7 +401,8 @@ ID2D1Geometry* m_pGeometry;
 ##  <a name="cd2dgeometry__operator_id2d1geometry_star"></a>  CD2DGeometry::operator ID2D1Geometry*  
  Returns ID2D1Geometry interface  
   
-```  operator ID2D1Geometry*();
+```  
+operator ID2D1Geometry*();
 ```   
   
 ### Return Value  

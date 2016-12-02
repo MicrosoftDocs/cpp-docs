@@ -998,7 +998,8 @@ void operator=(const CAsyncSocket& rSrc);
 ##  <a name="casyncsocket__operator_socket"></a>  CAsyncSocket::operator SOCKET  
  Use this operator to retrieve the **SOCKET** handle of the `CAsyncSocket` object.  
   
-```  operator SOCKET() const;
+```  
+operator SOCKET() const;
 
  
 ```  

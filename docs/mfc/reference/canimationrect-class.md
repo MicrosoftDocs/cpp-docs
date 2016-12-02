@@ -343,7 +343,8 @@ CAnimationVariable m_topValue;
 ##  <a name="canimationrect__operator_rect"></a>  CAnimationRect::operator RECT  
  Converts a CAnimationRect to RECT.  
   
-```  operator RECT();
+```  
+operator RECT();
 ```   
   
 ### Return Value  

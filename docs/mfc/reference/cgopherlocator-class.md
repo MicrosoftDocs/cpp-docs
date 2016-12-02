@@ -148,7 +148,8 @@ BOOL GetLocatorType(DWORD& dwRef) const;
 ##  <a name="cgopherlocator__operator_lpctstr"></a>  CGopherLocator::operator LPCTSTR  
  This useful casting operator provides an efficient method to access the null-terminated C string contained in a `CGopherLocator` object.  
   
-```  operator LPCTSTR () const;
+```  
+operator LPCTSTR () const;
 
  
 ```  

@@ -1002,7 +1002,8 @@ BOOL ModifyMenu(
 ##  <a name="cmenu__operator_hmenu"></a>  CMenu::operator HMENU  
  Use this operator to retrieve the handle of the `CMenu` object.  
   
-```  operator HMENU() const;
+```  
+operator HMENU() const;
 
  
 ```  

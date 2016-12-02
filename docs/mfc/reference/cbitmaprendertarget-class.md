@@ -145,7 +145,8 @@ ID2D1BitmapRenderTarget* m_pBitmapRenderTarget;
 ##  <a name="cbitmaprendertarget__operator_id2d1bitmaprendertarget_star"></a>  CBitmapRenderTarget::operator ID2D1BitmapRenderTarget*  
  Returns ID2D1BitmapRenderTarget interface  
   
-```  operator ID2D1BitmapRenderTarget*();
+```  
+operator ID2D1BitmapRenderTarget*();
 ```   
   
 ### Return Value  

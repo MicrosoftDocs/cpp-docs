@@ -501,7 +501,8 @@ CStdioFile* OpenURL(
 ##  <a name="cinternetsession__operator_hinternet"></a>  CInternetSession::operator HINTERNET  
  Use this operator to get the Windows handle for the current Internet session.  
   
-```  operator HINTERNET() const;
+```  
+operator HINTERNET() const;
 
  
 ```  
