@@ -82,8 +82,8 @@ friend class array;
   
 |Name|Description|  
 |----------|-----------------|  
-|[array::operator std::vector&lt;value_type&gt; Operator](#array__operator_std__vector_lt__value_type_gt__operator)|Uses `copy(*this, vector)` to implicitly convert the array to a std::[vector](../../../standard-library/vector-class.md) object.|  
-|[array::operator() Operator](#array__operator___operator)|Returns the element value that is specified by the parameters.|  
+|[array::operator std::vector&lt;value_type&gt; Operator](#array__operator_vec)|Uses `copy(*this, vector)` to implicitly convert the array to a std::[vector](../../../standard-library/vector-class.md) object.|  
+|[array::operator() Operator](#array__operator_call)|Returns the element value that is specified by the parameters.|  
 |[array::operator[] Operator](#array__operator_at_operator)|Returns the element that is at the specified index.|  
 |[array::operator= Operator](#array__operator_eq_operator)|Copies the contents of the specified `array` object into this one.|  
   
@@ -595,7 +595,7 @@ Concurrency::extent<_Rank> get_extent() const restrict(amp,cpu);
 ### Return Value  
  The `extent` object of the [array](../../../parallel/amp/reference/array-class.md).  
   
-##  <a name="array__operator_std__vector_lt__value_type_gt__operator"></a>  array::operator std::vector&lt;value_type&gt; Operator  
+##  <a name="array__operator_vec"></a>  array::operator std::vector&lt;value_type&gt; Operator  
  Uses `copy(*this, vector)` to implicitly convert the array to a std::vector object.  
   
 ```  operator std::vector<value_type>() const restrict(cpu);
@@ -608,7 +608,7 @@ Concurrency::extent<_Rank> get_extent() const restrict(amp,cpu);
 ### Return Value  
  An object of type `vector<T>` that contains a copy of the data that is contained in the array.  
   
-##  <a name="array__operator___operator"></a>  array::operator() Operator  
+##  <a name="array__operator_call"></a>  array::operator() Operator  
  Returns the element value that is specified by the parameters.  
   
 ```  
@@ -659,12 +659,16 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
  Returns the element that is at the specified index.  
   
 ```  
-value_type& operator[]  (
-    const index<_Rank>& _Index) restrict(amp,cpu);
+value_type& operator\[\]  
+(
+    const index<_Rank>& _Index) restrict(amp,cpu
+    );
 
  
-const value_type& operator[]  (
-    const index<_Rank>& _Index) const restrict(amp,cpu);
+const value_type& operator\[\]  
+(
+    const index<_Rank>& _Index) const restrict(amp,cpu
+);
 
  
 typename details::_Projection_result_type<value_type,_Rank>::_Result_type operator[](int _i) restrict(amp,cpu);

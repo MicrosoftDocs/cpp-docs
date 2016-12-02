@@ -28,8 +28,6 @@ f1_keywords:
   - "C4051"
   - "C4052"
   - "C4053"
-  - "C4054"
-  - "C4055"
   - "C4057"
   - "C4060"
   - "C4063"
@@ -166,8 +164,6 @@ The articles in this part of the documentation contain information about a subse
 |Compiler warning (level 1) C4051|type conversion; possible loss of data|  
 |Compiler warning (level 4) C4052|function declarations different; one contains variable arguments|  
 |Compiler warning (level 4) C4053|one void operand for '?:'|  
-|Compiler warning (level 1 and level 4) C4054|'conversion': from function pointer 'type1' to data pointer 'type2'|  
-|Compiler warning (level 1 and level 4) C4055|'conversion': from data pointer 'type1' to function pointer 'type2'|  
 |[Compiler Warning (level 2) C4056](../../error-messages/compiler-warnings/compiler-warning-level-2-c4056.md)|overflow in floating-point constant arithmetic|  
 |Compiler warning (level 4) C4057|'operator': 'identifier1' differs in indirection to slightly different base types from 'identifier2'|  
 |Compiler warning C4060|switch statement contains no 'case' or 'default' labels|  

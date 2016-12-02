@@ -42,30 +42,30 @@ translation.priority.ht:
 # _bittest, _bittest64
 **Microsoft Specific**  
   
- Generates the `bt` instruction, which examines the bit in position `b` of address `a`, and returns the value of that bit.  
+Generates the `bt` instruction, which examines the bit in position `b` of address `a`, and returns the value of that bit.  
   
 ## Syntax  
   
 ```  
 unsigned char _bittest(  
-   long *a,  
+   long const *a,  
    long b  
 );  
 unsigned char _bittest64(  
-   __int64 *a,  
+   __int64 const *a,  
    __int64 b  
 );  
 ```  
   
-#### Parameters  
- [in] `a`  
- A pointer to the memory to examine.  
+### Parameters  
+[in] `a`  
+A pointer to the memory to examine.  
   
- [in] `b`  
- The bit position to test.  
+[in] `b`  
+The bit position to test.  
   
-## Return Value  
- The bit at the position specified.  
+### Return Value  
+The bit at the position specified.  
   
 ## Requirements  
   
@@ -75,11 +75,11 @@ unsigned char _bittest64(
 |`_bittest64`|ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
   
 ## Remarks  
- This routine is only available as an intrinsic.  
+This routine is only available as an intrinsic.  
   
 ## Example  
   
-```  
+```cpp  
 // bittest.cpp  
 // processor: x86, ARM, x64  
   
@@ -117,7 +117,7 @@ Binary representation:
 0000000000000010011000010110010  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

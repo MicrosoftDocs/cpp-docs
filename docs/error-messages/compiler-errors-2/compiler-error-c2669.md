@@ -37,11 +37,12 @@ translation.priority.ht:
 # Compiler Error C2669
 member function not allowed in anonymous union  
   
- Anonymous unions cannot have member functions.  
+[Anonymous unions](../../cpp/unions.md#anonymous_unions) cannot have member functions.  
   
- The following sample generates C2669:  
+## Example  
+The following sample generates C2669:  
   
-```  
+```cpp  
 // C2669.cpp  
 struct X {  
    union {  
@@ -53,5 +54,3 @@ struct X {
 };  
 ```  
   
-## See Also  
- [Anonymous Unions](../../misc/anonymous-unions.md)

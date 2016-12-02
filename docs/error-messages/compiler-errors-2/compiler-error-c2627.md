@@ -37,7 +37,7 @@ translation.priority.ht:
 # Compiler Error C2627
 'function' : member function not allowed in anonymous union  
   
- An [anonymous union](../../misc/anonymous-unions.md) cannot have member functions.  
+ An [anonymous union](../../cpp/unions.md#anonymous_unions) cannot have member functions.  
   
  The following sample generates C2627:  
   

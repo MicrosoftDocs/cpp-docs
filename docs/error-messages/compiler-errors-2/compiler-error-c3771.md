@@ -38,16 +38,16 @@ translation.priority.mt:
 # Compiler Error C3771
 "identifier" : friend declaration cannot be found in the nearest namespace scope  
   
- The class template declaration for the specified template *identifier* cannot be found within the current namespace.  
+The class template declaration for the specified template *identifier* cannot be found within the current namespace.  
   
 ### To correct this error  
   
 -   Ensure that the class template declaration for the template identifier is defined in the current namespace or that the template identifier is a fully-qualified name.  
   
 ## Example  
- The following code example declares a class template and function in namespace `NA`, but attempts to declare a friend function template in namespace `NB`.  
+The following code example declares a class template and function in namespace `NA`, but attempts to declare a friend function template in namespace `NB`.  
   
-```  
+```cpp  
 // C3771.cpp   
 // compile with: /c  
   
@@ -68,4 +68,4 @@ namespace NB {
 ```  
   
 ## See Also  
- [Template Specifications](../Topic/Template%20Specifications.md)
+[Templates](../../cpp/templates-cpp.md)  

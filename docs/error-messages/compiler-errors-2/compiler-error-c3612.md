@@ -37,11 +37,12 @@ translation.priority.ht:
 # Compiler Error C3612
 'type': a sealed class cannot be abstract  
   
- Types defined with `value` (or [__value](../../misc/value.md)) are sealed by default and a class is abstract unless it implements all methods of its base. A sealed abstract class can neither be a base class nor can it be instantiated.  
+Types defined by using `value` are sealed by default, and a class is abstract unless it implements all methods of its base. A sealed abstract class can neither be a base class nor can it be instantiated.  
   
- For more information, see [Classes and Structs](../../windows/classes-and-structs-cpp-component-extensions.md).  
+For more information, see [Classes and Structs](../../windows/classes-and-structs-cpp-component-extensions.md).  
   
- The following sample generates C3612:  
+## Example  
+The following sample generates C3612:  
   
 ```  
 // C3612.cpp  

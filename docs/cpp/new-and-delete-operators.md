@@ -47,10 +47,10 @@ C++ supports dynamic allocation and deallocation of objects using the [new](../c
   
  For a list of the library files that comprise the C Runtime Library and the Standard C++ Library, see [CRT Library Features](../c-runtime-library/crt-library-features.md).  
   
-## The new operator  
+##  <a id="new_operator"> </a> The new operator  
  When a statement such as the following is encountered in a program, it translates into a call to the function `operator new`:  
   
-```  
+```cpp  
 char *pch = new char[BUFFER_SIZE];  
 ```  
   
@@ -74,7 +74,7 @@ The two scopes for `operator new` functions are described in the following table
   
  An **operator new** function defined for a class is a static member function (which cannot, therefore, be virtual) that hides the global **operator new** function for objects of that class type. Consider the case where **new** is used to allocate and set memory to a given value:  
   
-```  
+```cpp  
 // spec1_the_operator_new_function1.cpp  
 #include <malloc.h>  
 #include <memory.h>  
@@ -104,7 +104,7 @@ int main()
   
  The argument supplied in parentheses to **new** is passed to `Blanks::operator new` as the `chInit` argument. However, the global **operator new** function is hidden, causing code such as the following to generate an error:  
   
-```  
+```cpp  
 Blanks *SomeBlanks = new Blanks;  
 ```  
   
@@ -112,7 +112,7 @@ Blanks *SomeBlanks = new Blanks;
   
  Beginning with Visual C++ 5.0, the compiler supports member array **new** and **delete** operators in a class declaration. For example:  
   
-```  
+```cpp  
 // spec1_the_operator_new_function2.cpp  
 class MyClass  
 {  
@@ -136,7 +136,7 @@ int main()
 ### Handling insufficient memory  
  Testing for failed memory allocation can be done with code such as the following:  
   
-```  
+```cpp  
 // insufficient_memory_conditions.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -153,14 +153,14 @@ int main() {
   
  There is another ways to handle failed memory allocation requests: write a custom recovery routine to handle such a failure, then register your function by calling the [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) run-time function.  
   
-## The delete operator  
+##  <a id="delete_operator"> </a> The delete operator  
  Memory that is dynamically allocated using the **new** operator can be freed using the **delete** operator. The delete operator calls the **operator delete** function, which frees memory back to the available pool. Using the **delete** operator also causes the class destructor (if there is one) to be called.  
   
  There are global and class-scoped **operator delete** functions. Only one **operator delete** function can be defined for a given class; if defined, it hides the global **operator delete** function. The global **operator delete** function is always called for arrays of any type.  
   
  The global **operator delete** function. Two forms exist for the  global **operator delete**  and class-member **operator delete** functions:  
   
-```  
+```cpp  
 void operator delete( void * );  
 void operator delete( void *, size_t );  
 ```  
@@ -173,7 +173,7 @@ void operator delete( void *, size_t );
   
  The following example shows user-defined **operator new** and **operator delete** functions designed to log allocations and deallocations of memory:  
   
-```  
+```cpp  
 // spec1_the_operator_delete_function1.cpp  
 // compile with: /EHsc  
 // arguments: 3  
@@ -226,7 +226,7 @@ int main( int argc, char *argv[] ) {
   
  Beginning with Visual C++ 5.0, the compiler supports member array **new** and **delete** operators in a class declaration. For example:  
   
-```  
+```cpp  
 // spec1_the_operator_delete_function2.cpp  
 // compile with: /c  
 class X  {  

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error C3772
 "name" : invalid friend template declaration  
   
- It is invalid to declare a friend of a class template specialization. You cannot declare an explicit or partial specialization of a class template and in the same statement declare a friend of that specialization. The *name* placeholder identifies the invalid declaration.  
+It is invalid to declare a friend of a class template specialization. You cannot declare an explicit or partial specialization of a class template and in the same statement declare a friend of that specialization. The *name* placeholder identifies the invalid declaration.  
   
 ### To correct this error  
   
@@ -49,7 +49,7 @@ translation.priority.mt:
 ## Example  
  The following code example fails because it declares a friend of a partial specialization of a class template.  
   
-```  
+```cpp  
 // c3772.cpp  
 // compile with: /c  
   
@@ -78,6 +78,5 @@ class X {
 ```  
   
 ## See Also  
- [Template Specifications](../Topic/Template%20Specifications.md)   
- [Template Specialization](../../cpp/template-specialization-cpp.md)   
- [Explicit Specialization of Class Templates](../Topic/Explicit%20Specialization%20of%20Class%20Templates.md)
+[Templates](../../cpp/templates-cpp.md)   
+[Template Specialization](../../cpp/template-specialization-cpp.md)   

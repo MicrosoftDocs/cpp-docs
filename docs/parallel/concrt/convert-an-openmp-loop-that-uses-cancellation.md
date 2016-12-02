@@ -59,7 +59,7 @@ Using the Concurrency Runtime...
   
  In both versions of this example, if the array contains more than one copy of the value to search for, multiple loop iterations can each simultaneously set the result and cancel the overall operation. You can use a synchronization primitive, such as a critical section, if your problem requires that only one task performs work when a condition is met.  
   
- You can also use exception handling to cancel tasks that use the PPL. For more information about cancellation, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
+ You can also use exception handling to cancel tasks that use the PPL. For more information about cancellation, see [Cancellation in the PPL](cancellation-in-the-ppl.md).  
   
  For more information about `parallel_for_each` and other parallel algorithms, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).  
   
@@ -70,6 +70,6 @@ Using the Concurrency Runtime...
   
 ## See Also  
  [Migrating from OpenMP to the Concurrency Runtime](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)   
- [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation)   
+ [Cancellation in the PPL](cancellation-in-the-ppl.md)   
  [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)
 

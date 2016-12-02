@@ -128,7 +128,7 @@ This step-by-step walkthrough demonstrates how to use C++ AMP to accelerate the 
  
     parallel_for_each(
  product.extent, 
- [=] (index<2> idx) restrict(amp) {  
+ [=]  (index<2> idx) restrict(amp) {  
     int row = idx[0];  
     int col = idx[1];  
     for (int inner = 0; inner <2; inner++) {  

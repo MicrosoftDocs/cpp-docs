@@ -37,12 +37,12 @@ translation.priority.ht:
 # Compiler Error C3799
 indexed property cannot have an empty parameter list  
   
- An indexed property was declared incorrectly.  See [How to: Use Indexed Properties](../../misc/how-to-use-indexed-properties.md) for more information.  
+An indexed property was declared incorrectly. For more information, see [How to: Use Properties in C++/CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md).  
   
 ## Example  
- The following sample generates C3799.  
+The following sample generates C3799 and shows how to fix it.  
   
-```  
+```cpp  
 // C3799.cpp  
 // compile with: /clr /c  
 ref struct C {  
