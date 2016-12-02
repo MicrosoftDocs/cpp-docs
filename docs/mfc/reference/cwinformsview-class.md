@@ -74,7 +74,7 @@ class CWinFormsView : public CView;
 >  MFC Windows Forms integration works only in projects which link dynamically with MFC (projects in which AFXDLL is defined).  
   
 > [!NOTE]
->  CWinFormsView does not support the MFC splitter window ( [CSplitterWnd Class](../../mfc/reference/csplitterwnd-class.md)). Currently only the Windows Forms Splitter control ( <xref:System.Windows.Forms.SplitterqualifyHint%3DFalse%26autoUpgrade%3DTrue>) is supported.  
+>  CWinFormsView does not support the MFC splitter window ( [CSplitterWnd Class](../../mfc/reference/csplitterwnd-class.md)). Currently only the Windows Forms Splitter control is supported.  
   
 ## Requirements  
  **Header:** afxwinforms.h  

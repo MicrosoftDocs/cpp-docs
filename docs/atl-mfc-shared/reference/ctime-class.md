@@ -213,7 +213,7 @@ CTime() throw();
  A [FILETIME](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/979ce746-dc17-4147-89f8-41d05c5fcc5f/locales/en-us) structure to be converted to a date/time value and copied into the new `CTime` object.  
   
  dbts  
- A reference to a <xref:System.Data.OleDb.OleDbTypequalifyHint%3DFalse%26autoUpgrade%3DTrue> structure containing the current local time.  
+ A reference to a DBTIMESTAMP structure containing the current local time.  
   
 ### Remarks  
  Each constructor is described below:  
@@ -312,7 +312,7 @@ CString FormatGmt(UINT nFormatID) const;
  See the example for [CTime::Format](#ctime__format).  
   
 ##  <a name="ctime__getasdbtimestamp"></a>  CTime::GetAsDBTIMESTAMP  
- Call this member function to convert the time information stored in the `CTime` object to a Win32–compatible <xref:System.Data.OleDb.OleDbTypequalifyHint%3DFalse%26autoUpgrade%3DTrue> structure.  
+ Call this member function to convert the time information stored in the `CTime` object to a Win32–compatible DBTIMESTAMP structure.  
   
 ```  
 bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
@@ -320,7 +320,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
   
 ### Parameters  
  `dbts`  
- A reference to a <xref:System.Data.OleDb.OleDbTypequalifyHint%3DFalse%26autoUpgrade%3DTrue> structure containing the current local time.  
+ A reference to a DBTIMESTAMP structure containing the current local time.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  

@@ -948,7 +948,7 @@ CString GetEmptyText() const;
 ```  
   
 ### Return Value  
- A [CString](../using-cstring.md) that contains the text to display if the control is empty.  
+ A [CString](../../atl-mfc-shared/reference/cstringt-class.md) that contains the text to display if the control is empty.  
   
 ### Remarks  
  This method sends the [LVM_GETEMPTYTEXT](http://msdn.microsoft.com/library/windows/desktop/bb774921) message, which is described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
