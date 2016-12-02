@@ -74,7 +74,7 @@ A *conversion* produces a new value of some type from a value of a different typ
   
  When two or more user-defined conversions that perform the same conversion are available at a conversion site, the conversion is said to be ambiguous. Such ambiguities are an error because the compiler can't determine which one of the available conversions it should choose. However, it's not an error just to define multiple ways of performing the same conversion because the set of available conversions can be different at different locations in the source code—for example, depending on which header files are included in a source file. As long as only one conversion is available at the conversion site, there is no ambiguity. There are several ways that ambiguous conversions can arise, but the most common ones are:  
   
--   Multiple inheritance. The conversion is defined in more than one base class. For more information, see [(NOTINBUILD) Ambiguity](http://msdn.microsoft.com/en-us/0b399cab-40a7-4e79-9278-05f40139a0e1).  
+-   Multiple inheritance. The conversion is defined in more than one base class. 
   
 -   Ambiguous function call. The conversion is defined as a conversion constructor of the target type and as a conversion function of the source type. For more information, see [Conversion functions](#ConvFunc).  
   

@@ -53,10 +53,8 @@ auto declarator initializer;
   
 -   [auto](../cpp/auto-cpp.md) describes the new definition of the `auto` keyword.  
   
--   [(NOTINBUILD)auto Keyword (Storage-Class Specifier)](http://msdn.microsoft.com/en-us/c7d0cecf-393d-4058-a6e6-b39e31d9edb0) describes the original definition of the `auto` keyword.  
   
 -   [/Zc:auto (Deduce Variable Type)](../build/reference/zc-auto-deduce-variable-type.md) describes the compiler option that tells the compiler which definition of the `auto` keyword to use.  
   
 ## See Also  
- [(NOTINBUILD)Storage-Class Specifiers](http://msdn.microsoft.com/en-us/10b3d22d-cb40-450b-994b-08cf9a211b6c)   
  [Keywords](../cpp/keywords-cpp.md)

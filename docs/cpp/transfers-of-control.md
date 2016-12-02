@@ -72,5 +72,3 @@ int main()
   
  The objects `total` and `ch`, declared in the block that serves as the *statement* of the `while` statement, are destroyed when that block is exited using the `break` statement.  
   
-## See Also  
- [(NOTINBUILD) Declaration of Automatic Objects](http://msdn.microsoft.com/en-us/81f941e9-c1b1-4d1c-a28d-70b6ee9765db)

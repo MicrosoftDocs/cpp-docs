@@ -52,7 +52,7 @@ This document identifies common type conversion problems and describes how you c
 |`float`|`double`|  
   
 ### Narrowing conversions (coercion)  
- The compiler performs narrowing conversions implicitly, but it warns you about potential data loss. Take these warnings very seriously. If you are certain that no data loss will occur because the values in the larger variable will always fit in the smaller variable, then add an explicit cast so that the compiler will no longer issue a warning. If you are not sure that the conversion is safe, add to your code some kind of runtime check to handle possible data loss so that it does not cause your program to produce incorrect results. For suggestions about how to handle this scenario, see [(NOTINBUILD)How to: Handle Narrowing Conversions (C++)](http://msdn.microsoft.com/en-us/e483237e-501e-4a12-ac24-51526f6ddeaa).  
+ The compiler performs narrowing conversions implicitly, but it warns you about potential data loss. Take these warnings very seriously. If you are certain that no data loss will occur because the values in the larger variable will always fit in the smaller variable, then add an explicit cast so that the compiler will no longer issue a warning. If you are not sure that the conversion is safe, add to your code some kind of runtime check to handle possible data loss so that it does not cause your program to produce incorrect results. 
   
  Any conversion from a floating point type to an integral type is a narrowing conversion because the fractional portion of the floating point value is discarded and lost.  
   

@@ -105,4 +105,4 @@ class DerivedClass: public BaseClass
 ## See Also  
  [final Specifier](../cpp/final-specifier.md)   
  [Keywords](../cpp/keywords-cpp.md)   
- [(NOTINBUILD) C++ Type Names](http://msdn.microsoft.com/en-us/b53ba470-e583-4e5c-b634-6018f6110674)
+ 

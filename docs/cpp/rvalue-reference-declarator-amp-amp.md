@@ -142,7 +142,7 @@ T* factory(A1&& a1, A2&& a2)
 }  
 ```  
   
- This example uses rvalue references as the parameters to the `factory` function. The purpose of the [std::forward](../standard-library/memory-functions.md#forward) function is to forward the parameters of the factory function to the constructor of the template class.  
+ This example uses rvalue references as the parameters to the `factory` function. The purpose of the [std::forward](../standard-library/utility-functions.md#forward) function is to forward the parameters of the factory function to the constructor of the template class.  
   
  The following example shows the `main` function that uses the revised `factory` function to create instances of the `W`, `X`, `Y`, and `Z` classes. The revised `factory` function forwards its parameters (either lvalues or rvalues) to the appropriate class constructor.  
   
@@ -257,7 +257,7 @@ In g(MemoryBlock&&).
   
 -   **You can cast an lvalue to an rvalue reference.**  
   
- The STL [std::move](../standard-library/memory-functions.md#move) function enables you to convert an object to an rvalue reference to that object. Alternatively, you can use the `static_cast` keyword to cast an lvalue to an rvalue reference, as shown in the following example:  
+ The STL [std::move](../standard-library/utility-functions.md#move) function enables you to convert an object to an rvalue reference to that object. Alternatively, you can use the `static_cast` keyword to cast an lvalue to an rvalue reference, as shown in the following example:  
   
 ```  
 // cast-reference.cpp  

@@ -81,5 +81,3 @@ int main()
 }  
 ```  
   
-## See Also  
- [(NOTINBUILD)Special Member Functions](http://msdn.microsoft.com/en-us/82223d73-64cb-4923-b678-78f9568ff3ca)
