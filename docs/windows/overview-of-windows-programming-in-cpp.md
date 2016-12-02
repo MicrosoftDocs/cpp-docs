@@ -67,7 +67,7 @@ You can use Visual C++ to write a wide variety of programs that run on a Windows
   
  For more information on all of these concepts, see [Guide to Windows Universal Apps](http://go.microsoft.com/fwlink/?LinkId=534605).  
   
-##  <a name="BK_Win32"></a> Desktop, Server, and Cloud Apps and Games  
+##  <a name="BK_Native"></a> Desktop, Server, and Cloud Apps and Games  
  In the cloud you can write Azure native code assemblies in C++ and call into them from Web Roles that are created in C#. For more information, see [Azure SDK](http://go.microsoft.com/fwlink/p/?LinkId=256416).  
   
  To learn the basics of writing Windows client applications for the desktop, see [Developing Windows Applications in C++](http://msdn.microsoft.com/vstudio//hh304489) and [Introduction to Windows Programming in C++](http://msdn.microsoft.com/library/windows/desktop/ff381398\(v=vs.85\).aspx).  

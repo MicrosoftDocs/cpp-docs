@@ -82,7 +82,7 @@ The `Platform::Array<T>` type in [!INCLUDE[cppwrt_short](../build/reference/incl
 ```  
   
  *qualifiers* [optional]  
- One or more of these storage class specifiers: [mutable](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [static](../misc/static-cpp.md).  
+ One or more of these storage class specifiers: [mutable](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [static](../cpp/static-members-cpp.md).  
   
  `array-type`  
  The type of the array variable. Valid types are [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] classes and fundamental types, ref classes and structs, value classes and structs, and native pointers (`type``*`).  
@@ -141,7 +141,7 @@ int main() {
 ```  
   
  *qualifiers* [optional]  
- One or more of these storage class specifiers: [mutable](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [static](../misc/static-cpp.md).  
+ One or more of these storage class specifiers: [mutable](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [static](../cpp/static-members-cpp.md).  
   
  `array-type`  
  The type of the array variable. Valid types are [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] classes and fundamental types, ref classes and structs, value classes and structs, native pointers (`type``*`), and native POD (plain old data) types.  

@@ -55,7 +55,7 @@ translation.priority.mt:
   
 -   [initonly](../dotnet/initonly-cpp-cli.md)  
   
--   `internal` (see [Member Visibility](../misc/member-visibility.md))  
+-   `internal`   
   
 -   [literal](../windows/literal-cpp-component-extensions.md)  
   

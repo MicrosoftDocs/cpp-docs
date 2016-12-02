@@ -75,10 +75,6 @@ You can use Visual C++ in the Visual Studio integrated development environment (
   
 7.  In the file in the editor, type a valid C++ program that uses the Standard C++ Library, or copy one of the sample programs and paste it in the file.  
   
-     For example, you can use the [set::find](../misc/set-find-stl-samples.md) sample program, which is one of the the Standard Template Library samples that are included in Help.  
-  
-     If you use the sample program, notice the `using namespace std;` directive. This directive enables the program to use `cout` and `endl` without requiring fully qualified names (`std::cout` and `std::endl`).  
-  
 8.  Save the file.  
   
 9. On the **Build** menu, click **Build Solution**.  

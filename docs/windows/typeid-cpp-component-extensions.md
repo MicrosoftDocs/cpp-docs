@@ -95,8 +95,6 @@ type::typeid
   
  `typeid` also works with native types, although it will still return a System::Type.  To get a type_info structure, use [typeid Operator](../cpp/typeid-operator.md).  
   
- `typeid` is the sucessor to [__typeof](../misc/typeof.md) in the previous **/clr** syntax.  
-  
 ### Requirements  
  Compiler option: **/clr**  
   

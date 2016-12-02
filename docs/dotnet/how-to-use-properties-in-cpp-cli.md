@@ -110,8 +110,6 @@ int main() {
   
  If you use a default indexed property, you can access the data structure just by referring to the class name, but if you use a user-defined indexed property, you must to specify the property name to access the data structure.  
   
- For information about how to access a default indexer by using the `this` pointer, see [Semantics of the this Pointer in Value and Reference Types](../misc/semantics-of-the-this-pointer-in-value-and-reference-types.md).  
-  
  For information about how to consume an indexer that's written in C#, see [How to: Consume a C# Indexer (C++/CLI)](../dotnet/how-to-consume-a-csharp-indexer-cpp-cli.md).  
   
  This code sample shows how to use default and user-defined indexed properties:  

@@ -64,8 +64,6 @@ For applicable runtimes, the *friend assemblies* language feature makes types th
   
  Access to all types in an assembly must be explicitly granted.  For example, assembly C does not have access to all types in assembly A if assembly C references assembly B and assembly B has access to all types in assembly A.  
   
- For information about how to specify the accessibility of types outside an assembly, see [Type Visibility](../misc/type-visibility.md).  
-  
  For information about how to sign—that is, how to give a strong name to—an assembly that is built by using the Visual C++ compiler, see [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).  
   
  As an alternative to using the friend assemblies feature, you can use <xref:System.Security.Permissions.StrongNameIdentityPermission> to restrict access to individual types.  

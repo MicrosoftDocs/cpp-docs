@@ -72,4 +72,4 @@ public:
   
 ## See Also  
  [Member Declarations within a Class or Interface (C++/CLI)](../dotnet/member-declarations-within-a-class-or-interface-cpp-cli.md)   
- [Member Visibility](../misc/member-visibility.md)
+ 

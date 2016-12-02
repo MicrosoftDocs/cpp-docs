@@ -54,4 +54,3 @@ Normally, when you are working in the Menu editor, a menu resource is displayed 
 ## See Also  
  [Creating Pop-up Menus](../windows/creating-pop-up-menus.md)   
  [Menu Editor](../mfc/menu-editor.md)   
- [Menus](_win32_Menus)

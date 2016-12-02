@@ -43,7 +43,7 @@ This topic discusses issues that arise when compiling native code with **/clr** 
 ## Known Issues Compiling Library Projects with /clr  
  Visual Studio contains some known issues when compiling library projects with **/clr**:  
   
--   Your code may query types at runtime with [CRuntimeClass::FromName](../mfc/reference/cruntimeclass-structure.md#cruntimeclass_fromname). However, if a type is in an MSIL .dll (compiled with **/clr**), the call to `FromName` may fail if it occurs before the static constructors run in the managed .dll (you will not see this problem if the FromName call happens after code has executed in the managed .dll). To work around this problem, you can force the construction of the managed static constructor by defining a function in the managed .dll, exporting it, and invoking it from the native MFC application. For example:  
+-   Your code may query types at runtime with [CRuntimeClass::FromName](../mfc/reference/cruntimeclass-structure.md#cruntimeclass__fromname). However, if a type is in an MSIL .dll (compiled with **/clr**), the call to `FromName` may fail if it occurs before the static constructors run in the managed .dll (you will not see this problem if the FromName call happens after code has executed in the managed .dll). To work around this problem, you can force the construction of the managed static constructor by defining a function in the managed .dll, exporting it, and invoking it from the native MFC application. For example:  
   
     ```  
     // Extension DLL Header file:  
@@ -134,7 +134,7 @@ COMObj2->Method(args);  // C++ equivalent
  Exporting DLL data is error-prone, and not recommended. This is because the data section of a DLL is not guaranteed to be initialized until some managed portion of the DLL has been executed. Reference metadata with [#using Directive](../preprocessor/hash-using-directive-cpp.md).  
   
 ### Type Visibility  
- Native types are now private by default. In Visual C++ .NET 2002 and Visual C++ 2003, native types were public by default. This can result in a native type not being visible outside the DLL. Resolve this error by adding `public` to these types. See [Type and Member Visibility](../misc/type-and-member-visibility.md) for more information.  
+ Native types are now private by default. In Visual C++ .NET 2002 and Visual C++ 2003, native types were public by default. This can result in a native type not being visible outside the DLL. Resolve this error by adding `public` to these types.  
   
 ### Floating Point and Alignment Issues  
  `__controlfp` is not supported on the common language runtime (see [_control87, _controlfp, \__control87_2](../c-runtime-library/reference/control87-controlfp-control87-2.md) for more information). The CLR will also not respect [align](../cpp/align-cpp.md).  
@@ -150,7 +150,7 @@ COMObj2->Method(args);  // C++ equivalent
  When moving from native to MSIL, you will notice an increase in the size of your working set. This is because the common language runtime provides many features to ensure that programs run correctly. If your **/clr** application is not running correctly, you may want to enable C4793 (off by default), see [Compiler Warning (level 1 and 3) C4793](../error-messages/compiler-warnings/compiler-warning-level-1-and-3-c4793.md) for more information.  
   
 ### Program Crashes on Shutdown  
- In some cases, the CLR can shutdown before your managed code is finished running. Using `std::set_terminate` and `SIGTERM` can cause this. See [signal Constants](../c-runtime-library/signal-constants.md) and [set_terminate](../c-runtime-library/set-terminate-crt.md) for more information.  
+ In some cases, the CLR can shutdown before your managed code is finished running. Using `std::set_terminate` and `SIGTERM` can cause this. See [signal Constants](../c-runtime-library/signal-constants.md) and [set_terminate](../c-runtime-library/abnormal-termination.md) for more information.  
   
 ## Using New Visual C++ Features  
  After your application compiles, links, and runs, you can begin using .NET features in any module compiled with **/clr**. For more information, see [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md).  
