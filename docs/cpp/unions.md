@@ -654,7 +654,7 @@ int main()
  ![Storage of data in a numeric type union](../cpp/media/vc38ul1.png "vc38UL1")  
 Storage of Data in NumericType Union  
   
-##  <a id="anonymous_unions"> </a> Anonymous unions  
+## <a name="anonymous_unions"></a> Anonymous unions  
  Anonymous unions are unions that are declared without a *class-name* or *declarator-list*.  
   
 ```cpp  

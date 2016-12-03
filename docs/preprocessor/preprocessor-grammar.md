@@ -118,7 +118,7 @@ translation.priority.ht:
  Any sequence of text  
   
 > [!NOTE]
->  The following nonterminals are expanded in Appendix A, [Grammar Summary](../misc/grammar-summary-cpp.md), of the *C++ Language Reference*: `constant`, `constant`-*expression*, *identifier*, *keyword*, `operator`, and `punctuator`.  
+>  The following nonterminals are expanded in the [Lexical Conventions](../cpp/lexical-conventions.md) section of the *C++ Language Reference*: `constant`, `constant`-*expression*, *identifier*, *keyword*, `operator`, and `punctuator`.  
   
 ## See Also  
  [Grammar Summary (C/C++)](../preprocessor/grammar-summary-c-cpp.md)
