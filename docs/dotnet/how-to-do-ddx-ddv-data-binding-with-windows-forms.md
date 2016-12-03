@@ -43,7 +43,7 @@ translation.priority.ht:
 ## Example  
  The following is an example of DDX/DDV data binding of an MFC string `m_str` with the user-defined `NameText` property of a .NET user control.  
   
- The control is created when [CDialog::OnInitDialog](../mfc/reference/cwnd-class.md#cdialog__oninitdialog) calls `CMyDlg::DoDataExchange` for the first time, so any code that references `m_UserControl` must come after the `DDX_ManagedControl` call.  
+ The control is created when [CDialog::OnInitDialog](../mfc/reference/cdialog-class.md#cdialog__oninitdialog) calls `CMyDlg::DoDataExchange` for the first time, so any code that references `m_UserControl` must come after the `DDX_ManagedControl` call.  
   
  You can implement this code in the MFC01 application you created in [How to: Create the User Control and Host in a Dialog Box](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md).  
   

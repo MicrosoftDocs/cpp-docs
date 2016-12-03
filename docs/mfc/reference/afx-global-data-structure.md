@@ -277,12 +277,12 @@ void EnableAccessibilitySupport(BOOL bEnable=TRUE);
 ### Remarks  
  Active Accessibility is a COM-based technology that improves the way programs and the Windows operating system work together with assistive technology products. It provides reliable methods for exposing information about user interface elements. However, a newer accessibility model called Microsoft UI Automation is now available. For a comparison of the two technologies, see [UI Automation and Microsoft Active Accessibility](http://msdn.microsoft.com/library/87bee662-0a3e-4232-a421-20e7a5968321).  
   
- Use the [AFX_GLOBAL_DATA::IsAccessibilitySupport](#afx_global_data__isaccessibilitysupport.md) method to determine whether Microsoft Active Accessibility support is enabled.  
+ Use the [AFX_GLOBAL_DATA::IsAccessibilitySupport](#afx_global_data__isaccessibilitysupport) method to determine whether Microsoft Active Accessibility support is enabled.  
   
  
 ## See Also  
  [UI Automation and Microsoft Active Accessibility](http://msdn.microsoft.com/library/87bee662-0a3e-4232-a421-20e7a5968321)   
- [AFX_GLOBAL_DATA::IsAccessibilitySupport](#afx_global_data__isaccessibilitysupport.md)
+ [AFX_GLOBAL_DATA::IsAccessibilitySupport](#afx_global_data__isaccessibilitysupport)
 
 ## <a name="afx_global_data__excludetag"></a> AFX_GLOBAL_DATA::ExcludeTag
 Removes the specified XML tag pair from a specified buffer.  
@@ -362,7 +362,7 @@ ID2D1Factory* GetDirect2dFactory();
 ### Return Value  
  A pointer to ID2D1Factory interface if creation of a factory succeeds, or NULL if creation fails or current Operation System don't have D2D support.  
   
-AFX_GLOBAL_DATA::GetHandCursor
+## <a name="afx_global_data__gethandcursor"></a>  AFX_GLOBAL_DATA::GetHandCursor
 Retrieves the predefined cursor that resembles a hand and whose identifier is `IDC_HAND`.  
   
   
@@ -479,7 +479,7 @@ BOOL IsAccessibilitySupport() const;
 ### Remarks  
  Microsoft Active Accessibility was the earlier solution for making applications accessible. Microsoft UI Automation is the new accessibility model for Microsoft Windows and is intended to address the needs of assistive technology products and automated testing tools. For more information, see [UI Automation and Microsoft Active Accessibility](http://msdn.microsoft.com/library/87bee662-0a3e-4232-a421-20e7a5968321).  
   
- Use the [AFX_GLOBAL_DATA::EnableAccessibilitySupport](#afx_global_data__enableaccessibilitysupport.md) method to enable or disable Active Accessibility support.  
+ Use the [AFX_GLOBAL_DATA::EnableAccessibilitySupport](#afx_global_data__enableaccessibilitysupport) method to enable or disable Active Accessibility support.  
   
 
 ## See Also  

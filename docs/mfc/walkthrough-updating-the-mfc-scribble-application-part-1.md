@@ -43,9 +43,9 @@ This walkthrough demonstrates how to modify an existing MFC application to use t
  This walkthrough modifies the classic Scribble 1.0 MFC sample that lets you use the mouse to create line drawings. This part of the walkthrough shows how to modify the Scribble sample so that it displays a ribbon bar. [Part 2](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md) adds more buttons to the ribbon bar.  
   
 ## Prerequisites  
- [Visual C++ Samples](../top/visual-cpp-samples.md)  
+ [Visual C++ Samples](../visual-cpp-samples.md)  
   
- [Visual C++ Samples](../top/visual-cpp-samples.md)  
+ [Visual C++ Samples](../visual-cpp-samples.md)  
   
 ##  <a name="top"></a> Sections  
  This part of the walkthrough has the following sections:  
@@ -62,7 +62,7 @@ This walkthrough demonstrates how to modify an existing MFC application to use t
   
 - [Setting the Look of the Application](#setlook)  
   
-##  <a name="replaceClass"></a> Replacing the Base Classes  
+##  <a name="replaceclass"></a> Replacing the Base Classes  
  To convert an application that supports a menu to an application that supports a ribbon, you must derive the application, frame window, and toolbar classes from updated base classes. (We suggest that you do not modify the original Scribble sample; instead, clean the Scribble project, copy it to another directory, and then modify the copy.)  
   
 #### To replace the base classes in the Scribble application  
@@ -137,7 +137,7 @@ This walkthrough demonstrates how to modify an existing MFC application to use t
   
  [[Sections](#top)]  
   
-##  <a name="addBitmap"></a> Adding Bitmaps to the Project  
+##  <a name="addbitmap"></a> Adding Bitmaps to the Project  
  The next four steps of this walkthrough require bitmap resources. You can obtain appropriate bitmaps in various ways:  
   
 -   Use the [Resource Editors](../mfc/resource-editors.md) to invent your own bitmaps. Or use the resource editors to assemble bitmaps from the portable network graphics (.png) images that are included with [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)]. These images are in the `VS2008ImageLibrary` directory.  
@@ -182,7 +182,7 @@ This walkthrough demonstrates how to modify an existing MFC application to use t
   
  [[Sections](#top)]  
   
-##  <a name="addRibbon"></a> Adding a Ribbon Resource to the Project  
+##  <a name="addribbon"></a> Adding a Ribbon Resource to the Project  
  When you convert an application that uses menus to an application that uses a ribbon, you do not have to remove or disable the existing menus. Instead, you create a ribbon resource, add ribbon buttons, and then associate the new buttons with the existing menu items. Although the menus are no longer visible, messages from the ribbon bar are routed through the menus. In addition, menu shortcuts continue to work.  
   
  A ribbon consists of the Application button, which is the large button on the upper-left side of the ribbon, and one or more category tabs. Each category tab contains one or more panels that act as containers for ribbon buttons and controls. The following procedure shows how to create a ribbon resource and then customize the Application button.  
@@ -233,7 +233,7 @@ This walkthrough demonstrates how to modify an existing MFC application to use t
   
  [[Sections](#top)]  
   
-##  <a name="createInstance"></a> Creating an Instance of the Ribbon Bar  
+##  <a name="createinstance"></a> Creating an Instance of the Ribbon Bar  
  The following steps show how to create an instance of the ribbon bar when your application starts. To add a ribbon bar to an application, declare the ribbon bar in the mainfrm.h file. Then, in the mainfrm.cpp file, write code to load the ribbon resource.  
   
 #### To create an instance of the ribbon bar  
@@ -257,7 +257,7 @@ This walkthrough demonstrates how to modify an existing MFC application to use t
   
  [[Sections](#top)]  
   
-##  <a name="addCategory"></a> Customizing the Ribbon Resource  
+##  <a name="addcategory"></a> Customizing the Ribbon Resource  
  Now that you have created the Application button, you can add elements to the ribbon.  
   
 > [!NOTE]
@@ -275,7 +275,7 @@ This walkthrough demonstrates how to modify an existing MFC application to use t
   
  [[Sections](#top)]  
   
-##  <a name="setLook"></a> Setting the Look of the Application  
+##  <a name="setlook"></a> Setting the Look of the Application  
  A *visual manager* is a global object that controls all drawing for an application. Because the original Scribble application uses the Office 2000 user interface (UI) style, the application may look old-fashioned. You can reset the application to use the Office 2007 visual manager so that it resembles an Office 2007 application.  
   
 #### To set the look of the application  

@@ -93,7 +93,7 @@ The Concurrency Runtime uses C++ exception handling to communicate many kinds of
 >  You can use the [concurrency::task_completion_event::set_exception](../../parallel/concrt/reference/task-completion-event-class.md) method to associate an exception with a task completion event. The document [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md) describes the [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) class in greater detail.  
   
 
- [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) is an important runtime exception type that relates to `task`. The runtime throws `task_canceled` when you call `task::get` and that task is canceled. (Conversely, `task::wait` returns [task_status::canceled](reference/concurrency-namespace-enums.md#task_group_status_enumeration) and does not throw.) You can catch and handle this exception from a task-based continuation or when you call `task::get`. For more information about task cancellation, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
+ [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) is an important runtime exception type that relates to `task`. The runtime throws `task_canceled` when you call `task::get` and that task is canceled. (Conversely, `task::wait` returns [task_status::canceled](reference/concurrency-namespace-enums.md#task_group_status_enumeration) and does not throw.) You can catch and handle this exception from a task-based continuation or when you call `task::get`. For more information about task cancellation, see [Cancellation in the PPL](cancellation-in-the-ppl.md).  
 
   
 > [!CAUTION]
@@ -166,7 +166,7 @@ The operation timed out.
  [[Top](#top)]  
   
 ##  <a name="cancellation"></a> Cancellation  
- Not all exceptions indicate an error. For example, a search algorithm might use exception handling to stop its associated task when it finds the result. For more information about how to use cancellation mechanisms in your code, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
+ Not all exceptions indicate an error. For example, a search algorithm might use exception handling to stop its associated task when it finds the result. For more information about how to use cancellation mechanisms in your code, see [Cancellation in the PPL](../../parallel/concrt/cancellation-in-the-ppl.md).  
   
  [[Top](#top)]  
   
@@ -208,7 +208,7 @@ the status of the agent is: done
  [Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)   
  [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)   
  [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)   
- [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation)   
+ [Cancellation in the PPL](cancellation-in-the-ppl.md)   
  [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)   
  [Asynchronous Agents](../../parallel/concrt/asynchronous-agents.md)
 

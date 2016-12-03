@@ -29,8 +29,10 @@ manager: "ghogen"
 |[erfinvf Function](#erfinvf_function)|[exp Function](#exp_function)|[exp10 Function](#exp10_function)|  
 |[exp10f Function](#exp10f_function)|[exp2 Function](#exp2_function)|[exp2f Function](#exp2f_function)|  
 |[expf Function](#expf_function)|[expm1 Function](#expm1_function)|[expm1f Function](#expm1f_function)|  
-|[fabs Function](#fabs_function)|[fabsf Function](#fabsf_function)|[floor Function](#floor_function)|  
-|[floorf Function](#floorf_function)|[fmax Function](#fmax_function)|[fmaxf Function](#fmaxf_function)|  
+|[fabs Function](#fabs_function)|[fabsf Function](#fabsf_function)|[floor Function](#floor_function)| 
+|[fdim Function](#fdim_function)|[fdimf Function](#fdimf_function)|| 
+|[floorf Function](#floorf_function)|[fma Function](#fma_function)|[fmaf Function](#fmaf_function)|
+[fmax Function](#fmax_function)|[fmaxf Function](#fmaxf_function)|| 
 |[fmin Function](#fmin_function)|[fminf Function](#fminf_function)|[fmod Function](#fmod_function)|  
 |[fmodf Function](#fmodf_function)|[fpclassify Function](#fpclassify_function)|[frexp Function](#frexp_function)|  
 |[frexpf Function](#frexpf_function)|[hypot Function](#hypot_function)|[hypotf Function](#hypotf_function)|  
@@ -764,6 +766,45 @@ inline float fabsf(float _X) restrict(amp);
   
 ### Return Value  
  Returns the absolute value of the argument  
+
+## <a name="fdim_function"></a> fdim Function  
+Computes the positive difference between the arguments.
+```  
+inline float fdim(
+   float _X,
+   float _Y
+) restrict(amp);
+inline double fdim(
+   double _X,
+   double _Y
+) restrict(amp);
+``` 
+### Parameters
+`_X`
+Floating-point value
+`_Y`
+Floating-point value
+
+
+### Return Value
+The difference between _X and _Y if _X is greater than _Y; otherwise, +0.
+ 
+## <a name="fdimf_function"></a> fdimf Function
+Computes the positive difference between the arguments.
+```
+inline float fdimf(
+   float _X,
+   float _Y
+) restrict(amp);
+```
+### Parameters
+`_X`
+Floating-point value
+`_Y`
+Floating-point value
+
+### Return Value
+The difference between _X and _Y if _X is greater than _Y; otherwise, +0. 
   
 ##  <a name="floor_function"></a>  floor Function  
  Calculates the floor of the argument  
@@ -795,6 +836,52 @@ inline float floorf(float _X) restrict(amp);
   
 ### Return Value  
  Returns the floor of the argument  
+
+## <a name="fma_function"> fma Function  
+Computes the product of the first and second specified arguments, then adds the third specified argument to the result; the entire computation is performed as a single operation.
+```
+inline float fma(
+   float _X,
+   float _Y,
+   float _Z
+) restrict(amp);
+
+inline double fma(
+   double _X,
+   double _Y,
+   double _Z
+) restrict(amp);
+```
+### Parameters
+`_X`
+The first floating-point argument.
+`_Y`
+The second floating-point argument.
+`_Z`
+The third floating-point argument.
+
+### Return Value
+The result of the expression (_X * _Y) + _Z. The entire computation is performed as a single operation; that is, the sub-expressions are calculated to infinite precision, and only the final result is rounded. 
+
+## <a name="fmaf_function"></a> fmaf Function  
+Computes the product of the first and second specified arguments, then adds the third specified argument to the result; the entire computation is performed as a single operation.
+```
+inline float fmaf(
+   float _X,
+   float _Y,
+   float _Z
+) restrict(amp);
+```  
+### Parameters
+`_X`
+The first floating-point argument.
+`_Y`
+The second floating-point argument.
+`_Z`
+The third floating-point argument.
+
+### Return Value
+The result of the expression (_X * _Y) + _Z. The entire computation is performed as a single operation; that is, the sub-expressions are calculated to infinite precision, and only the final result is rounded.
   
 ##  <a name="fmax_function"></a>  fmax Function  
  Determine the maximum numeric value of the arguments  

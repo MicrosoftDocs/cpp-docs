@@ -77,7 +77,7 @@ int i = minimum(a, b);
   
  The rules for how the compiler performs type deduction in function templates are based on the rules for ordinary functions. For more information, see [Overload Resolution of Function Template Calls](../cpp/overload-resolution-of-function-template-calls.md).  
   
-## Type parameters  
+## <a id="type_parameters"></a> Type parameters  
  In the `minimum` template above, note that the type parameter `T` is not qualified in any way until it is used in the function call parameters, where the const and reference qualifiers are added.  
   
  There is no practical limit to the number of type parameters. Separate multiple parameters by commas:  
@@ -160,7 +160,7 @@ MyArray<MyClass*, 10> arr;
   
  Other kinds of values including pointers and references can be passed in as non-type parameters. For example, you can pass in a pointer to a function or function object to customize some operation inside the template code.  
   
-## Templates as template parameters  
+## <a id="template_parameters"></a> Templates as template parameters  
  A template can be a template parameter. In this example, MyClass2 has two template parameters: a typename parameter `T` and a template parameter `Arr`:  
   
 ```cpp  

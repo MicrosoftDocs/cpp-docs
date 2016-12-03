@@ -35,9 +35,6 @@ translation.priority.ht:
 # new (new slot in vtable)  (C++ Component Extensions)
 The `new` keyword indicates that a virtual member will get a new slot in the vtable.  
   
-> [!NOTE]
->  The `new` keyword has many uses and meanings. For more information, see the disambiguation topic [new](../misc/new.md).  
-  
 ## All Runtimes  
  (There are no remarks for this language feature that apply to all runtimes.)  
   

@@ -381,7 +381,8 @@ int GetLogBrush(LOGBRUSH* pLogBrush);
 ##  <a name="cbrush__operator_hbrush"></a>  CBrush::operator HBRUSH  
  Use this operator to get the attached Windows GDI handle of the `CBrush` object.  
   
-```  operator HBRUSH() const;
+```  
+operator HBRUSH() const;
 
  
 ```  
@@ -398,7 +399,7 @@ int GetLogBrush(LOGBRUSH* pLogBrush);
  [!code-cpp[NVC_MFCDocView#28](../../mfc/codesnippet/cpp/cbrush-class_8.cpp)]  
   
 ## See Also  
- [MFC Sample PROPDLG](../../top/visual-cpp-samples.md)   
+ [MFC Sample PROPDLG](../../visual-cpp-samples.md)   
  [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CBitmap Class](../../mfc/reference/cbitmap-class.md)   

@@ -155,7 +155,8 @@ CRITICAL_SECTION m_sect;
 ##  <a name="ccriticalsection__operator_critical_section_star"></a>  CCriticalSection::operator CRITICAL_SECTION*  
  Retrieves a **CRITICAL_SECTION** object.  
   
-```  operator CRITICAL_SECTION*();
+```  
+operator CRITICAL_SECTION*();
 ```   
   
 ### Remarks  

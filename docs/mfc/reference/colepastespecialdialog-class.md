@@ -363,7 +363,7 @@ OLEUIPASTESPECIAL m_ps;
  For more information, see the [OLEUIPASTESPECIAL](http://msdn.microsoft.com/library/windows/desktop/ms692434) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ## See Also  
- [MFC Sample OCLIENT](../../top/visual-cpp-samples.md)   
+ [MFC Sample OCLIENT](../../visual-cpp-samples.md)   
  [COleDialog Class](../../mfc/reference/coledialog-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [COleDialog Class](../../mfc/reference/coledialog-class.md)

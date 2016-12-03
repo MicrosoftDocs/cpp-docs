@@ -81,7 +81,7 @@ template<typename E,  class ETraits = CElementTraits<E>>  class CAtlArray
   
 |||  
 |-|-|  
-|[operator &#91;&#93;](#operator__at)|Call this operator to return a reference to an element in the array.|  
+|[operator &#91;&#93;](#catlarray__operator_at)|Call this operator to return a reference to an element in the array.|  
 
   
 ### Typedefs  
@@ -481,9 +481,9 @@ void SetAtGrow(size_t iElement,  INARGTYPE element);
  [!code-cpp[NVC_ATL_Utilities#12](../../atl/codesnippet/cpp/catlarray-class_12.cpp)]  
   
 ## See Also  
- [MMXSwarm Sample](../../top/visual-cpp-samples.md)   
- [DynamicConsumer Sample](../../top/visual-cpp-samples.md)   
- [UpdatePV Sample](../../top/visual-cpp-samples.md)   
- [Marquee Sample](../../top/visual-cpp-samples.md)   
+ [MMXSwarm Sample](../../visual-cpp-samples.md)   
+ [DynamicConsumer Sample](../../visual-cpp-samples.md)   
+ [UpdatePV Sample](../../visual-cpp-samples.md)   
+ [Marquee Sample](../../visual-cpp-samples.md)   
  [CArray Class](../../mfc/reference/carray-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)

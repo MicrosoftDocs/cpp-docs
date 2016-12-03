@@ -144,7 +144,7 @@ DECLARE_DHTML_EVENT_MAP()
   
  Use [BEGIN_DHTML_EVENT_MAP](#begin_dhtml_event_map) or [BEGIN_DHTML_EVENT_MAP_INLINE](#begin_dhtml_event_map_inline) to implement the map.  
   
- [DECLARE_DHTML_EVENT_MAP](#vcrefdeclare_dhtml_event_map_crosslib) declares the following function:  
+ [DECLARE_DHTML_EVENT_MAP](#declare_dhtml_event_map) declares the following function:  
   
  `virtual const DHtmlEventMapEntry* GetDHtmlEventMap( );`  
   

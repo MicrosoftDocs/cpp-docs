@@ -256,7 +256,8 @@ CAnimationVariable m_rValue;
   
 ##  <a name="canimationcolor__operator_colorref"></a>  CAnimationColor::operator COLORREF  
   
-```  operator COLORREF();
+```  
+operator COLORREF();
 ```   
   
 ### Return Value  

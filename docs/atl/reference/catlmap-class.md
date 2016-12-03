@@ -343,7 +343,7 @@ void GetNextAssoc(
   
 ### Parameters  
  `pos`  
- The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#vclrfcatlmapgetnextassoc) or [CAtlMap::GetStartPosition](#catlmap__getstartposition).  
+ The position counter, returned by a previous call to [CAtlMap::GetNextAssoc](#catlmap__getnextassoc) or [CAtlMap::GetStartPosition](#catlmap__getstartposition).  
   
  `key`  
  Template parameter specifying the type of the map's key.  
@@ -685,6 +685,6 @@ V
  The value element type.  
   
 ## See Also  
- [Marquee Sample](../../top/visual-cpp-samples.md)   
- [UpdatePV Sample](../../top/visual-cpp-samples.md)   
+ [Marquee Sample](../../visual-cpp-samples.md)   
+ [UpdatePV Sample](../../visual-cpp-samples.md)   
  [Class Overview](../../atl/atl-class-overview.md)

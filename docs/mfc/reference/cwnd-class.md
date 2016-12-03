@@ -8719,7 +8719,8 @@ BOOL OpenClipboard();
 ##  <a name="cwnd__operator_hwnd"></a>  CWnd::operator HWND  
  Use this operator to get the handle to the `CWnd` object.  
   
-```  operator HWND() const;
+```  
+operator HWND() const;
 
  
 ```  

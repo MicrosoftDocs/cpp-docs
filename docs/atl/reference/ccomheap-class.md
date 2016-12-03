@@ -147,7 +147,7 @@ virtual __declspec(allocator) void* Reallocate(
  Implemented using [CoTaskMemRealloc](http://msdn.microsoft.com/library/windows/desktop/ms687280).  
   
 ## See Also  
- [DynamicConsumer Sample](../../top/visual-cpp-samples.md)   
+ [DynamicConsumer Sample](../../visual-cpp-samples.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [CWin32Heap Class](../../atl/reference/cwin32heap-class.md)   
  [CLocalHeap Class](../../atl/reference/clocalheap-class.md)   

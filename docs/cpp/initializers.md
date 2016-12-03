@@ -241,7 +241,7 @@ int main() {
   
 -   a non-static data member is initialized using an equals sign  
   
--   class, struct, and union members are initialized by copy initialization during aggregate initialization. See [Aggregate initialization](../cpp/initializers.md#INIT_AggInit) for examples.  
+-   class, struct, and union members are initialized by copy initialization during aggregate initialization. See [Aggregate initialization](#agginit) for examples.  
   
  The following code shows several examples of copy initialization:  
   
@@ -283,7 +283,7 @@ regex r = "a.*b"; // the constructor is explicit; same error
 shared_ptr<int> sp = new int(1729); // the constructor is explicit; same error  
 ```  
   
- In some cases, if the copy constructor of the class is deleted or inaccessible, copy initialization causes a compiler error. See [(NOTINBUILD) Explicit Initialization](http://msdn.microsoft.com/en-us/c89724f8-ddd3-4d77-b86d-77fcd8bd8595) for more information.  
+ In some cases, if the copy constructor of the class is deleted or inaccessible, copy initialization causes a compiler error. 
   
 ### Direct initialization  
  Direct initialization is initialization using (non-empty) braces or parentheses. Unlike copy initialization, it can invoke explicit constructors. It occurs in the following cases:  
@@ -377,7 +377,7 @@ int main() {
 }  
 ```  
   
-### Aggregate initialization  
+### <a name="agginit"></a> Aggregate initialization  
  Aggregate initialization is a form of list initialization for arrays or class types (often structs or unions) that have:  
   
 -   no private or protected members  

@@ -311,7 +311,8 @@ int GetLogFont(LOGFONT* pLogFont);
 ##  <a name="cfont__operator_hfont"></a>  CFont::operator HFONT  
  Use this operator to get the Windows GDI handle of the font attached to the `CFont` object.  
   
-```  operator HFONT() const;
+```  
+operator HFONT() const;
 
  
 ```  
@@ -328,7 +329,7 @@ int GetLogFont(LOGFONT* pLogFont);
  [!code-cpp[NVC_MFCDocView#77](../../mfc/codesnippet/cpp/cfont-class_8.cpp)]  
   
 ## See Also  
- [MFC Sample HIERSVR](../../top/visual-cpp-samples.md)   
+ [MFC Sample HIERSVR](../../visual-cpp-samples.md)   
  [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

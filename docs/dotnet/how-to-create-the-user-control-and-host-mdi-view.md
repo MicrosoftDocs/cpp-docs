@@ -97,7 +97,7 @@ The following steps show how to create a .NET Framework user control, author the
     };  
     ```  
   
-     If you want add additional views to your MDI application, you will need to call [CWinApp::AddDocTemplate](../Topic/CWinApp::AddDocTemplate.md) for each view you create.  
+     If you want add additional views to your MDI application, you will need to call [CWinApp::AddDocTemplate](../mfc/reference/cwinapp-class.md#cwinapp__adddoctemplate) for each view you create.  
   
 7.  Modify the MFC02View.cpp file to change CView to CWinFormsView in the IMPLEMENT_DYNCREATE macro and message map and replace the existing empty constructor with the constructor shown below:  
   

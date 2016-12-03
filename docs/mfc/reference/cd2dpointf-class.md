@@ -100,7 +100,8 @@ CD2DPointF(
 ##  <a name="cd2dpointf__operator_cpoint"></a>  CD2DPointF::operator CPoint  
  Converts CD2DPointF to CPoint object.  
   
-```  operator CPoint();
+```  
+operator CPoint();
 ```   
   
 ### Return Value  

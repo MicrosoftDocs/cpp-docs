@@ -182,7 +182,7 @@ This document describes how to create a custom message block type that orders in
      The `propagate_message` method enables the `priority_buffer` class to act as a message receiver, or target. This method receives the message that is offered by the provided source block and inserts that message into the priority queue. The `propagate_message` method then asynchronously sends all output messages to the target blocks.  
   
 
-     The runtime calls this method when you call the [concurrency::asend](reference/concurrency-namespace-functions.md#asend_function) function or when the message block is connected to other message blocks.  
+     The runtime calls this method when you call the [concurrency::asend](reference/concurrency-namespace-functions.md#asend) function or when the message block is connected to other message blocks.  
 
   
 18. In the `protected` section, define the `send_message` method.  

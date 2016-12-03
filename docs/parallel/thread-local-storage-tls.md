@@ -130,4 +130,3 @@ __declspec( thread ) int tls_i = 1;
   
 ## See Also  
  [Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)   
- [Rules and Limitations for TLS](../misc/rules-and-limitations-for-tls.md)

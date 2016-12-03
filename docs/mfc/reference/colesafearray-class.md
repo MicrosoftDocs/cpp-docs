@@ -489,7 +489,8 @@ void Lock();
 ##  <a name="colesafearray__operator_lpcvariant"></a>  COleSafeArray::operator LPCVARIANT  
  Call this casting operator to access the underlying **VARIANT** structure for this `COleSafeArray` object.  
   
-```  operator LPCVARIANT() const;
+```  
+operator LPCVARIANT() const;
 
  
 ```  
@@ -497,7 +498,8 @@ void Lock();
 ##  <a name="colesafearray__operator_lpvariant"></a>  COleSafeArray::operator LPVARIANT  
  Call this casting operator to access the underlying **VARIANT** structure for this `COleSafeArray` object.  
   
-```  operator LPVARIANT();
+```  
+operator LPVARIANT();
 ```   
   
 ### Remarks  

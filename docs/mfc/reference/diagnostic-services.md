@@ -72,7 +72,7 @@ The Microsoft Foundation Class Library supplies many diagnostic services that ma
   
 |||  
 |-|-|  
-|[ASSERT](#assert_mfc))|Prints a message and then aborts the program if the specified expression evaluates to **FALSE** in the Debug version of the library.|  
+|[ASSERT](#assert))|Prints a message and then aborts the program if the specified expression evaluates to **FALSE** in the Debug version of the library.|  
 |[ASSERT_KINDOF](#assert_kindof)|Tests that an object is an object of the specified class or of a class derived from the specified class.|  
 |[ASSERT_VALID](#assert_valid)|Tests the internal validity of an object by calling its `AssertValid` member function; typically overridden from `CObject`.|  
 |[DEBUG_NEW](#debug_new)|Supplies a filename and line number for all object allocations in Debug mode to help find memory leaks.|  
@@ -104,7 +104,7 @@ The Microsoft Foundation Class Library supplies many diagnostic services that ma
 |[AfxDoForAllClasses](#afxdoforallclasses)|Performs a specified function on all `CObject`-derived classes that support run-time type checking.|  
 |[AfxDoForAllObjects](#afxdoforallobjects)|Performs a specified function on all `CObject`-derived objects that were allocated with **new**.|  
   
-##  <a name="assert__mfc"></a>  ASSERT (MFC)  
+##  <a name="assert"></a>  ASSERT
  Evaluates its argument.  
   
 ```   
@@ -174,7 +174,7 @@ ASSERT_VALID(pObject)
 ### Remarks  
  `ASSERT_VALID` calls the `AssertValid` member function of the object passed as its argument.  
   
- In the Release version of MFC, `ASSERT_VALID` does nothing. In the Debug version, it validates the pointer, checks against **NULL**, and calls the object's own `AssertValid` member functions. If any of these tests fails, an alert message is displayed in the same manner as [ASSERT](#assert_mfc).  
+ In the Release version of MFC, `ASSERT_VALID` does nothing. In the Debug version, it validates the pointer, checks against **NULL**, and calls the object's own `AssertValid` member functions. If any of these tests fails, an alert message is displayed in the same manner as [ASSERT](#assert).  
   
 > [!NOTE]
 >  This function is available only in the Debug version of MFC.  
@@ -194,7 +194,7 @@ ASSERT_VALID(pObject)
 ### Remarks  
  You can use `DEBUG_NEW` everywhere in your program that you would ordinarily use the **new** operator to allocate heap storage.  
   
- In debug mode (when the **_DEBUG** symbol is defined), `DEBUG_NEW` keeps track of the filename and line number for each object that it allocates. Then, when you use the [CMemoryState::DumpAllObjectsSince](cmemorystate-class.md#cmemorystate__dumpallobjectssince) member function, each object allocated with `DEBUG_NEW` is shown with the filename and line number where it was allocated.  
+ In debug mode (when the **_DEBUG** symbol is defined), `DEBUG_NEW` keeps track of the filename and line number for each object that it allocates. Then, when you use the [CMemoryState::DumpAllObjectsSince](cmemorystate-structure.md#cmemorystate__dumpallobjectssince) member function, each object allocated with `DEBUG_NEW` is shown with the filename and line number where it was allocated.  
   
  To use `DEBUG_NEW`, insert the following directive into your source files:  
   

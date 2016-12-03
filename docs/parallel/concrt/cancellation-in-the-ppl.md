@@ -155,7 +155,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
 
 >  Use the [concurrency::cancellation_token::none](reference/cancellation-token-class.md#cancellation_token__none_method) method when you call a constructor or function that takes a `cancellation_token` object and you do not want the operation to be cancellable.  
   
- You can also provide a cancellation token to the constructor of a `task_group` or `structured_task_group` object. An important aspect of this is that child task groups inherit this cancellation token. For an example that demonstrates this concept by using the [concurrency::run_with_cancellation_token](reference/concurrency-namespace-functions.md#run_with_cancellation_token_function) function to run to call `parallel_for`, see [Canceling Parallel Algorithms](#algorithms) later in this document.  
+ You can also provide a cancellation token to the constructor of a `task_group` or `structured_task_group` object. An important aspect of this is that child task groups inherit this cancellation token. For an example that demonstrates this concept by using the [concurrency::run_with_cancellation_token](reference/concurrency-namespace-functions.md#run_with_cancellation_token) function to run to call `parallel_for`, see [Canceling Parallel Algorithms](#algorithms) later in this document.  
   
  [[Top](#top)]  
   

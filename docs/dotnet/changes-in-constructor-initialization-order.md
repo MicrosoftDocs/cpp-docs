@@ -128,4 +128,4 @@ private:
 ## See Also  
  [Managed Types (C++/CL)](../dotnet/managed-types-cpp-cl.md)   
  [Constructors](../cpp/constructors-cpp.md)   
- [Constructor Initializers](../misc/constructor-initializers.md)
+ 

@@ -197,7 +197,8 @@ CAnimationVariable m_value;
 ##  <a name="canimationvalue__operator_double"></a>  CAnimationValue::operator DOUBLE  
  Provides conversion between CAnimationValue and DOUBLE.  
   
-```  operator DOUBLE();
+```  
+operator DOUBLE();
 ```   
   
 ### Return Value  
@@ -209,7 +210,8 @@ CAnimationVariable m_value;
 ##  <a name="canimationvalue__operator_int32"></a>  CAnimationValue::operator INT32  
  Provides conversion between CAnimationValue and INT32.  
   
-```  operator INT32();
+```  
+operator INT32();
 ```   
   
 ### Return Value  

@@ -75,17 +75,17 @@ Automation (formerly known as OLE Automation) makes it possible for one applicat
   
 ## Automation Samples  
   
--   [AUTOCLIK](../top/visual-cpp-samples.md) Use this sample to learn Automation techniques and as a foundation for learning Remote Automation.  
+-   [AUTOCLIK](../visual-cpp-samples.md) Use this sample to learn Automation techniques and as a foundation for learning Remote Automation.  
   
--   [ACDUAL](../top/visual-cpp-samples.md) Adds dual interfaces to an Automation server application.  
+-   [ACDUAL](../visual-cpp-samples.md) Adds dual interfaces to an Automation server application.  
   
--   [CALCDRIV](../top/visual-cpp-samples.md) Automation client application driving MFCCALC.  
+-   [CALCDRIV](../visual-cpp-samples.md) Automation client application driving MFCCALC.  
   
--   [INPROC](../top/visual-cpp-samples.md) Demonstrates an In-Process Automation server application.  
+-   [INPROC](../visual-cpp-samples.md) Demonstrates an In-Process Automation server application.  
   
--   [IPDRIVE](../top/visual-cpp-samples.md) Automation client application driving INPROC.  
+-   [IPDRIVE](../visual-cpp-samples.md) Automation client application driving INPROC.  
   
--   [MFCCALC](../top/visual-cpp-samples.md) Demonstrates an Automation client application.  
+-   [MFCCALC](../visual-cpp-samples.md) Demonstrates an Automation client application.  
   
 ## What do you want to know more about  
   
@@ -104,9 +104,7 @@ Automation (formerly known as OLE Automation) makes it possible for one applicat
 -   [Add an Automation class](../mfc/automation-servers.md)  
   
 -   [Use type libraries](../mfc/automation-clients-using-type-libraries.md)  
-  
--   [Pass parameters in Automation](#_core_automation_topics)  
-  
+   
 -   [Access automation servers](../mfc/automation-servers.md)  
   
 -   [Write automation clients in C++](../mfc/automation-clients.md)  

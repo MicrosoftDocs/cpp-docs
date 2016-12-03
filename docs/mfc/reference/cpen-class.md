@@ -348,7 +348,8 @@ int GetLogPen(LOGPEN* pLogPen);
 ##  <a name="cpen__operator_hpen"></a>  CPen::operator HPEN  
  Gets the attached Windows GDI handle of the `CPen` object.  
   
-```  operator HPEN() const;
+```  
+operator HPEN() const;
 
  
 ```  

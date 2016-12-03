@@ -41,9 +41,9 @@ Classes that conform to the *worker* archetype provide the code to process work 
   
 |Method|Description|  
 |------------|-----------------|  
-|[Initialize](#workerarchetype__initialize)|Called to initialize the worker object before any requests are passed to [Execute](#workerarchetype_execute).|  
+|[Initialize](#workerarchetype__initialize)|Called to initialize the worker object before any requests are passed to [Execute](#workerarchetype__execute).|  
 |[Execute](#workerarchetype__execute)|Called to process a work item.|  
-|[Terminate](#workerarchetype__terminate)|Called to uninitialize the worker object after all requests have been passed to [Execute](#workerarchetype_execute).|  
+|[Terminate](#workerarchetype__terminate)|Called to uninitialize the worker object after all requests have been passed to [Execute](#workerarchetype__execute).|  
   
 |Typedef|Description|  
 |-------------|-----------------|  

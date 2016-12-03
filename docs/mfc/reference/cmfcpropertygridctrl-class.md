@@ -179,7 +179,7 @@ class CMFCPropertyGridCtrl : public CWnd
  ![Property List PropertySheet](../../mfc/reference/media/proplist.png "proplist")  
   
 ## Example  
- The following example demonstrates how to configure a property grid control object by using various methods in the `CMFCPropertyGridCtrl` class. The example demonstrates how to enable the header control, enable the description area, and set the appearance of the property grid control. The example also shows how to set the alphabetic mode for the control whereby the control sorts all the properties it contains by their property name, and how to set the custom colors for various elements of the property grid control. This example is part of the [New Controls sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to configure a property grid control object by using various methods in the `CMFCPropertyGridCtrl` class. The example demonstrates how to enable the header control, enable the description area, and set the appearance of the property grid control. The example also shows how to set the alphabetic mode for the control whereby the control sorts all the properties it contains by their property name, and how to set the custom colors for various elements of the property grid control. This example is part of the [New Controls sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_NewControls#14](../../mfc/reference/codesnippet/cpp/cmfcpropertygridctrl-class_1.h)]  
 [!code-cpp[NVC_MFC_NewControls#16](../../mfc/reference/codesnippet/cpp/cmfcpropertygridctrl-class_2.cpp)]  
@@ -345,7 +345,7 @@ virtual BOOL Create(
  To create a property grid control, first call [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridctrl__cmfcpropertygridctrl) to construct a property grid object. Then call `CMFCPropertyGridCtrl::Create`.  
   
 ### Example  
- The following example demonstrates how to use the `Create` method in `CMFCPropertyGridCtrl` class. This example is part of the [New Controls sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to use the `Create` method in `CMFCPropertyGridCtrl` class. This example is part of the [New Controls sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_NewControls#15](../../mfc/reference/codesnippet/cpp/cmfcpropertygridctrl-class_6.cpp)]  
   
@@ -1030,7 +1030,7 @@ BOOL IsShowDragContext() const;
  The user can resize the name and value columns of a property grid control by dragging the split bar that is between the columns. If the drag context is displayed, the name and value columns are resized as long as the user drags the split bar. Otherwise, the split bar moves but the columns are not redrawn until the drag operation is completed.  
   
 ##  <a name="cmfcpropertygridctrl__isvsdotnetlook"></a>  CMFCPropertyGridCtrl::IsVSDotNetLook  
- Indicates whether the appearance of the property grid control is in the style of [!INCLUDE[vsprvslong](../../error-messages/compiler-errors-1/includes/vsprvslong_md.md)].  
+ Indicates whether the appearance of the property grid control is in the style of Visual Studio .NET.  
   
 ```  
 BOOL IsVSDotNetLook() const;
@@ -1039,10 +1039,10 @@ BOOL IsVSDotNetLook() const;
 ```  
   
 ### Return Value  
- `TRUE` if the property grid control is in the style of [!INCLUDE[vsprvslong](../../error-messages/compiler-errors-1/includes/vsprvslong_md.md)]; otherwise, `FALSE`.  
+ `TRUE` if the property grid control is in the style of Visual Studio .NET; otherwise, `FALSE`.  
   
 ### Remarks  
- Use the [CMFCPropertyGridCtrl::SetVSDotNetLook](#cmfcpropertygridctrl__setvsdotnetlook) method to set the property grid control to the style of [!INCLUDE[vsprvslong](../../error-messages/compiler-errors-1/includes/vsprvslong_md.md)].  
+ Use the [CMFCPropertyGridCtrl::SetVSDotNetLook](#cmfcpropertygridctrl__setvsdotnetlook) method to set the property grid control to the style of Visual Studio .NET.  
   
 ##  <a name="cmfcpropertygridctrl__markmodifiedproperties"></a>  CMFCPropertyGridCtrl::MarkModifiedProperties  
  Specifies how to display modified properties.  
@@ -1365,7 +1365,7 @@ void SetShowDragContext(BOOL bShowDragContext = TRUE);
  The user can resize the name and value columns of a property grid control by dragging the split bar that is between the columns. If the drag context is displayed, the name and value columns are resized as long as the user drags the split bar. Otherwise, the split bar moves but the columns are not redrawn until the drag operation is completed.  
   
 ##  <a name="cmfcpropertygridctrl__setvsdotnetlook"></a>  CMFCPropertyGridCtrl::SetVSDotNetLook  
- Sets the appearance of the property grid control to the style that is used in [!INCLUDE[vsprvslong](../../error-messages/compiler-errors-1/includes/vsprvslong_md.md)].  
+ Sets the appearance of the property grid control to the style that is used in Visual Studio .NET.  
   
 ```  
 void SetVSDotNetLook(BOOL bSet=TRUE);
@@ -1373,7 +1373,7 @@ void SetVSDotNetLook(BOOL bSet=TRUE);
   
 ### Parameters  
  [in] `bSet`  
- `TRUE` to set the property grid control to the style that is used in [!INCLUDE[vsprvslong](../../error-messages/compiler-errors-1/includes/vsprvslong_md.md)]; otherwise, `FALSE`. The default value is `TRUE`.  
+ `TRUE` to set the property grid control to the style that is used in Visual Studio .NET; otherwise, `FALSE`. The default value is `TRUE`.  
   
 ### Remarks  
   

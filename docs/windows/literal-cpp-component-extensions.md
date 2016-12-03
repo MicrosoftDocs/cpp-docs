@@ -60,7 +60,7 @@ A variable (data member) marked as `literal` in a **/clr** compilation is the na
   
  A variable marked `static const` will not be available in metadata to other compilers.  
   
- For more information, see [Static](../misc/static-cpp.md) and [const](../cpp/const-cpp.md).  
+ For more information, see [Static](../cpp/storage-classes-cpp.md) and [const](../cpp/const-cpp.md).  
   
  `literal` is a context-sensitive keyword. See [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md) for more information.  
   

@@ -112,6 +112,6 @@ virtual BOOL OpenURL(LPCTSTR lpszURL);
  Returns **TRUE** on success, **FALSE** on failure.  
   
 ## See Also  
- [HTMLEdit Sample](../../top/visual-cpp-samples.md)   
+ [HTMLEdit Sample](../../visual-cpp-samples.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

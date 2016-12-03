@@ -194,7 +194,8 @@ ID2D1TessellationSink* Open();
 ##  <a name="cd2dmesh__operator_id2d1mesh_star"></a>  CD2DMesh::operator ID2D1Mesh*  
  Returns ID2D1Mesh interface  
   
-```  operator ID2D1Mesh*();
+```  
+operator ID2D1Mesh*();
 ```   
   
 ### Return Value  

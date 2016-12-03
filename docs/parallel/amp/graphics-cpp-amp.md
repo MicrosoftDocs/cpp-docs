@@ -162,7 +162,7 @@ void createTextureWithBPC() { *// Create the source data.
 |texture\<T,2>|2048|  
   
 ### Reading from Texture Objects  
- You can read from a `texture` object by using [texture::operator\[\]](reference/texture-class.md#texture__operator_at), [texture::operator() Operator](reference/texture-class.md#texture__operator_call), or [texture::get Method](reference/texture-class.md#texture__get). [texture::operatorOperator](reference/texture-class.md#texture__operator.md) and [texture::operator() Operator](reference/texture-class.md#texture__operator\(\)%20Operator.md) return a value, not a reference. Therefore, you cannot write to a `texture` object by using `texture::operator\[\]`.  
+ You can read from a `texture` object by using [texture::operator\[\]](reference/texture-class.md#texture__operator_at), [texture::operator() Operator](reference/texture-class.md#texture__operator_call), or [texture::get Method](reference/texture-class.md#texture__get). The two operators return a value, not a reference. Therefore, you cannot write to a `texture` object by using `texture::operator\[\]`.  
   
 ```cpp  
  
@@ -419,7 +419,7 @@ void write2ComponentTexture() {
 
 }  
 ```  
- Texture views whose elements are based on floating-point types—for example, float, float_2, or float_4—can also be read by using texture sampling to take advantage of hardware support for various filtering modes and addressing modes. C++ AMP supports the two filtering modes that are most common in compute scenarios—point-filtering (nearest-neighbor) and linear-filtering (weighted average)—and four addressing modes—wrapped, mirrored, clamped, and border. For more information about filtering modes, see [filter_mode Enumeration](reference/concurrency-namespace-enums-amp.md#filter_mode); for more information about addressing modes, see [address_mode Enumeration](reference/concurrency-namespace-enums-amp.md#address_mode_enumeration).  
+ Texture views whose elements are based on floating-point types—for example, float, float_2, or float_4—can also be read by using texture sampling to take advantage of hardware support for various filtering modes and addressing modes. C++ AMP supports the two filtering modes that are most common in compute scenarios—point-filtering (nearest-neighbor) and linear-filtering (weighted average)—and four addressing modes—wrapped, mirrored, clamped, and border. For more information about addressing modes, see [address_mode Enumeration](reference/concurrency-namespace-enums-amp.md#address_mode).  
   
  In addition to modes that C++ AMP supports directly, you can access other filtering modes and addressing modes of the underlying platform by using the interop APIs to adopt a texture sampler that was created by using the platform APIs directly. For example, Direct3D supports other filtering modes such as anisotropic filtering, and can apply a different addressing mode to each dimension of a texture. You could create a texture sampler whose coordinates are wrapped vertically, mirrored horizontally, and sampled with anisotropic filtering by using the Direct3D APIs, and then leverage the sampler in your C++ AMP code by using the `make_sampler` interop API. For more information see [Texture Sampling in C++ AMP](http://blogs.msdn.com/b/nativeconcurrency/archive/2013/07/18/texture-sampling-in-c-amp.aspx) on the Parallel Programming in Native Code blog.  
   

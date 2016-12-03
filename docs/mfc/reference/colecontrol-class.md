@@ -1174,7 +1174,7 @@ virtual HRESULT GetClassID(LPCLSID pclsid) = 0;
  Nonzero if the call was not successful; otherwise 0.  
   
 ### Remarks  
- Usually implemented by the [IMPLEMENT_OLECREATE_EX](class-factories-and-licensing.md#implement_olecreate_ex macro).  
+ Usually implemented by the [IMPLEMENT_OLECREATE_EX](class-factories-and-licensing.md#implement_olecreate_ex).  
   
 ##  <a name="colecontrol__getclientoffset"></a>  COleControl::GetClientOffset  
  Retrieves the difference between the upper left corner of the control's rectangular area and the upper left corner of its client area.  
@@ -3469,8 +3469,8 @@ virtual LRESULT WindowProc(
  Call this function to dispatch specific messages through the control's message map.  
   
 ## See Also  
- [MFC Sample CIRC3](../../top/visual-cpp-samples.md)   
- [MFC Sample TESTHELP](../../top/visual-cpp-samples.md)   
+ [MFC Sample CIRC3](../../visual-cpp-samples.md)   
+ [MFC Sample TESTHELP](../../visual-cpp-samples.md)   
  [COlePropertyPage Class](../../mfc/reference/colepropertypage-class.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

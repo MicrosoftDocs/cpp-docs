@@ -89,7 +89,7 @@ class CArray :
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator&#91;&#93;](#carray__operator_[])|Sets or gets the element at the specified index.|  
+|[operator&#91;&#93;](#carray__operator_at)|Sets or gets the element at the specified index.|  
   
 ## Remarks  
  Array indexes always start at position 0. You can decide whether to fix the upper bound or enable the array to expand when you add elements past the current bound. Memory is allocated contiguously to the upper bound, even if some elements are null.  
@@ -393,7 +393,7 @@ BOOL IsEmpty() const;
 ### Return Value  
  Nonzero if the array contains no elements; otherwise 0.  
   
-##  <a name="carray__operator__at"></a>  CArray::operator []  
+##  <a name="carray__operator_at"></a>  CArray::operator \[\]  
  These subscript operators are a convenient substitute for the [SetAt](#carray__setat) and [GetAt](#carray__getat) functions.  
   
 ```  
@@ -562,7 +562,7 @@ void SetSize(
   See the example for [GetData](#carray__getdata).  
   
 ## See Also  
- [MFC Sample COLLECT](../../top/visual-cpp-samples.md)   
+ [MFC Sample COLLECT](../../visual-cpp-samples.md)   
  [CObject Class](../../mfc/reference/cobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CObArray Class](../../mfc/reference/cobarray-class.md)   

@@ -211,7 +211,8 @@ IDWriteTextFormat* m_pTextFormat;
 ##  <a name="cd2dtextformat__operator_idwritetextformat_star"></a>  CD2DTextFormat::operator IDWriteTextFormat*  
  Returns IDWriteTextFormat interface  
   
-```  operator IDWriteTextFormat*();
+```  
+operator IDWriteTextFormat*();
 ```   
   
 ### Return Value  

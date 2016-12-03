@@ -319,7 +319,8 @@ void GetByteArrayFromVariantArray(CByteArray& bytes);
 ##  <a name="colevariant__operator_lpcvariant"></a>  COleVariant::operator LPCVARIANT  
  This casting operator returns a `VARIANT` structure whose value is copied from this `COleVariant` object.  
   
-```  operator LPCVARIANT() const;
+```  
+operator LPCVARIANT() const;
 
  
 ```  
@@ -329,7 +330,8 @@ void GetByteArrayFromVariantArray(CByteArray& bytes);
 ##  <a name="colevariant__operator_lpvariant"></a>  COleVariant::operator LPVARIANT  
  Call this casting operator to access the underlying `VARIANT` structure for this `COleVariant` object.  
   
-```  operator LPVARIANT();
+```  
+operator LPVARIANT();
 ```   
   
 ### Remarks  

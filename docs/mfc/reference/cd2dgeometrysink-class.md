@@ -260,7 +260,8 @@ ID2D1GeometrySink* m_pSink;
 ##  <a name="cd2dgeometrysink__operator_id2d1geometrysink_star"></a>  CD2DGeometrySink::operator ID2D1GeometrySink*  
  Returns ID2D1GeometrySink interface  
   
-```  operator ID2D1GeometrySink*();
+```  
+operator ID2D1GeometrySink*();
 ```   
   
 ### Return Value  

@@ -381,7 +381,7 @@ CPair *PGetNextAssoc(const CPair* pAssocRet);
   
 ### Parameters  
  *pAssocRet*  
- Points to a map entry returned by a previous [PGetNextAssoc](#vclrfcmappgetnextassoc) or [CMap::PGetFirstAssoc](#cmap__pgetfirstassoc) call.  
+ Points to a map entry returned by a previous [PGetNextAssoc](#cmap__pgetnextassoc) or [CMap::PGetFirstAssoc](#cmap__pgetfirstassoc) call.  
   
 ### Return Value  
  A pointer to the next entry in the map; see [CMap::CPair](#cmap__cpair). If the element is the last in the map, the value is **NULL**.  
@@ -480,7 +480,7 @@ void SetAt(
  [!code-cpp[NVC_MFCCollections#62](../../mfc/codesnippet/cpp/cmap-class_7.cpp)]  
   
 ## See Also  
- [MFC Sample COLLECT](../../top/visual-cpp-samples.md)   
+ [MFC Sample COLLECT](../../visual-cpp-samples.md)   
  [CObject Class](../../mfc/reference/cobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

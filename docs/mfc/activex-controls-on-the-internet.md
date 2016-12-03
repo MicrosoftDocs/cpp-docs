@@ -216,7 +216,7 @@ ActiveX controls are the updated version of the OLE control specification. Contr
   
  You will update the ready state as your code is downloaded by calling [COleControl::InternalSetReadyState](../mfc/reference/colecontrol-class.md#colecontrol__internalsetreadystate). One place you could call `InternalSetReadyState` is from the `OnProgress` override of `CDataPathProperty`-derived class.  
   
- Then, follow the steps in [Creating a New ActiveX Control](#_core_how_do_i_create_a_new_activex_control.3f).  
+
   
 ## See Also  
  [MFC Internet Programming Tasks](../mfc/mfc-internet-programming-tasks.md)   

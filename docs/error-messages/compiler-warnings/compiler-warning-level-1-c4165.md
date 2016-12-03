@@ -23,11 +23,12 @@ manager: "ghogen"
 # Compiler Warning (level 1) C4165
 'HRESULT' is being converted to 'bool'; are you sure this is what you want?  
   
- When using an [HRESULT](_com_hresults) in an [if](../../cpp/if-else-statement-cpp.md) statement, the HRESULT will be converted to a [bool](../../cpp/bool-cpp.md) unless you explicitly test for the variable as an HRESULT. This warning is off by default.  
+When using an HRESULT in an [if](../../cpp/if-else-statement-cpp.md) statement, the HRESULT will be converted to a [bool](../../cpp/bool-cpp.md) unless you explicitly test for the variable as an HRESULT. This warning is off by default.  
   
- The following sample generates C4165  
+## Example  
+The following sample generates C4165  
   
-```  
+```cpp  
 // C4165.cpp  
 // compile with: /W1  
 #include <windows.h>  

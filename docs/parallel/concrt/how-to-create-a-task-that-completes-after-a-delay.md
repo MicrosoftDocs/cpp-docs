@@ -51,7 +51,7 @@ This example shows how to use the [concurrency::task](../../parallel/concrt/refe
   
  [!code-cpp[concrt-task-delay#2](../../parallel/concrt/codesnippet/cpp/how-to-create-a-task-that-completes-after-a-delay_2.cpp)]  
   
- When you use this technique to cancel tasks after a delay, any unstarted tasks will not start after the overall task is canceled. However, it is important for any long-running tasks to respond to cancellation in a timely manner. For more information about task cancellation, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
+ When you use this technique to cancel tasks after a delay, any unstarted tasks will not start after the overall task is canceled. However, it is important for any long-running tasks to respond to cancellation in a timely manner. For more information about task cancellation, see [Cancellation in the PPL](cancellation-in-the-ppl.md).  
   
 ## Example  
  Here is the complete code for this example:  
@@ -72,5 +72,5 @@ This example shows how to use the [concurrency::task](../../parallel/concrt/refe
  [timer Class](../../parallel/concrt/reference/timer-class.md)   
  [call Class](../../parallel/concrt/reference/call-class.md)   
  [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)   
- [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation)
+ [Cancellation in the PPL](cancellation-in-the-ppl.md)
 

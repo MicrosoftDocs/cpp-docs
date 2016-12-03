@@ -108,4 +108,4 @@ public:
   
 ## See Also  
  [Member Declarations within a Class or Interface (C++/CLI)](../dotnet/member-declarations-within-a-class-or-interface-cpp-cli.md)   
- [How to: Use Indexed Properties](../misc/how-to-use-indexed-properties.md)
+ 

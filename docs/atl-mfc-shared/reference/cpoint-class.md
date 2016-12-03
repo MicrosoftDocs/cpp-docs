@@ -366,7 +366,7 @@ CSize operator-(POINT point) const throw();
  [!code-cpp[NVC_ATLMFC_Utilities#34](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_7.cpp)]  
   
 ## See Also  
- [MFC Sample MDI](../../top/visual-cpp-samples.md)   
+ [MFC Sample MDI](../../visual-cpp-samples.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [POINT Structure](../../mfc/reference/point-structure1.md)   
  [CRect Class](../../atl-mfc-shared/reference/crect-class.md)   

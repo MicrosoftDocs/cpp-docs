@@ -76,4 +76,3 @@ translation.priority.ht:
   
 ## See Also  
  [Menu Editor](../mfc/menu-editor.md)   
- [Menus](_win32_Menus)

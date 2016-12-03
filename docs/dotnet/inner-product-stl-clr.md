@@ -50,7 +50,7 @@ template<class _InIt1, class _InIt2, class _Ty, class _Fn21,
 ```  
   
 ## Remarks  
- This function behaves the same as the STL numeric function `inner_product`. For more information, see [inner_product](../Topic/inner_product.md).  
+ This function behaves the same as the STL numeric function `inner_product`. For more information, see [inner_product](../standard-library/numeric-functions.md#inner_product).  
   
 ## Requirements  
  **Header:** \<cliext/numeric>  

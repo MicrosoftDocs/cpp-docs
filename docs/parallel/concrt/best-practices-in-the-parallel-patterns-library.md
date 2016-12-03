@@ -135,7 +135,7 @@ This document describes how best to make effective use of the Parallel Patterns 
   
  For the complete version of this example, see [How to: Use Exception Handling to Break from a Parallel Loop](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md).  
   
- For more general information about the cancellation and exception-handling mechanisms that are provided by the PPL, see [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation) and [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).  
+ For more general information about the cancellation and exception-handling mechanisms that are provided by the PPL, see [Cancellation in the PPL](cancellation-in-the-ppl.md) and [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).  
   
  [[Top](#top)]  
   
@@ -290,7 +290,7 @@ Container 1: Freeing resources...Exiting program...
  [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)   
  [Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)   
  [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)   
- [Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation)   
+ [Cancellation in the PPL](cancellation-in-the-ppl.md)   
  [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)   
  [Walkthrough: Creating an Image-Processing Network](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)   
  [How to: Use parallel_invoke to Write a Parallel Sort Routine](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)   

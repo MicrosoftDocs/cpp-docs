@@ -15,7 +15,8 @@ manager: "ghogen"
 # Concurrency::direct3d namespace functions (AMP)
 ||||  
 |-|-|-|  
-|[abs Function](#abs_function)|[clamp Function](#clamp_function)|[countbits Function](#countbits_function)|  
+|[abs Function](#abs_function)|[clamp Function](#clamp_function)|[countbits Function](#countbits_function)|
+|[create_accelerator_view Function](#create_accelerator_view_function)|||
 |[d3d_access_lock Function](#d3d_access_lock_function)|[d3d_access_try_lock Function](#d3d_access_try_lock_function)|[d3d_access_unlock Function](#d3d_access_unlock_function)|  
 |[firstbithigh Function](#firstbithigh_function)|[firstbitlow Function](#firstbitlow_function)|[get_buffer Function](#get_buffer_function)|  
 |[imax Function](#imax_function)|[imin Function](#imin_function)|[is_timeout_disabled Function](#is_timeout_disabled_function)|  
@@ -80,6 +81,46 @@ inline unsigned int countbits(unsigned int _X) restrict(amp);
   
 ### Return Value  
  Returns the number of set bits in _X  
+
+## <a name="create_accelerator_view_function"></a> create_accelerator_view Function
+Creates an [accelerator_view](accelerator-view-class.md) object from a pointer to a Direct3D device interface.  
+  
+## Syntax  
+  
+```  
+accelerator_view create_accelerator_view(  
+    IUnknown * _D3D_device  
+    queuing_mode _Qmode = queuing_mode_automatic);  
+  
+accelerator_view create_accelerator_view(  
+    accelerator& _Accelerator,  
+    bool _Disable_timeout  
+    queuing_mode _Qmode = queuing_mode_automatic);  
+```  
+  
+#### Parameters  
+ `_Accelerator`  
+ The accelerator on which the new accelerator_view is to be created.  
+  
+ `_D3D_device`  
+ The pointer to the Direct3D device interface.  
+  
+ `_Disable_timeout`  
+ A Boolean parameter that specifies whether timeout should be disabled for the newly created accelerator_view. This corresponds to the D3D11_CREATE_DEVICE_DISABLE_GPU_TIMEOUT flag for Direct3D device creation and is used to indicate if the operating system should allow workloads that take more than 2 seconds to execute without resetting the device per the Windows timeout detection and recovery mechanism. Use of this flag is recommended if you need to perform time consuming tasks on the accelerator_view.  
+  
+ `_Qmode`  
+ The [queuing_mode](concurrency-namespace-enums-amp.md#queuing_mode) to be used for the newly created accelerator_view. This parameter has a default value of `queuing_mode_automatic`.  
+  
+## Return Value  
+ The `accelerator_view` object created from the passed Direct3D device interface.  
+  
+## Remarks  
+ This function creates a new `accelerator_view` object from an existing pointer to a Direct3D device interface. If the function call succeeds, the reference count of the parameter is incremented by means of an `AddRef` call to the interface. You can safely release the object when it is no longer required in your DirectX code. If the method call fails, a [runtime_exception](../Topic/runtime_exception%20Class.md) is thrown.  
+  
+ The `accelerator_view` object that you create by using this function is thread safe. You must synchronize concurrent use of the `accelerator_view` object. Unsynchronized concurrent usage of the `accelerator_view` object and the raw ID3D11Device interface causes undefined behavior.  
+  
+ The C++ AMP runtime provides detailed error information in debug mode by using the D3D Debug layer if you use the `D3D11_CREATE_DEVICE_DEBUG` flag.  
+  
   
 ##  <a name="d3d_access_lock_function"></a>  d3d_access_lock Function  
  Acquire a lock on an accelerator_view for the purpose of safely performing D3D operations on resources shared with the accelerator_view. The accelerator_view and all C++ AMP resources associated with this accelerator_view internally take this lock when performing operations and will block while another thread holds the D3D access lock. This lock is non-recursive: It is undefined behavior to call this function from a thread that already holds the lock. It is undefined behavior to perform operations on the accelerator_view or any data container associated with the accelerator_view from the thread that holds the D3D access lock. See also scoped_d3d_access_lock, a RAII-style class for a scope-based D3D access lock.  

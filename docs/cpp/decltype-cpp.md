@@ -205,5 +205,3 @@ int main()
   
  decltype(auto) requires Visual Studio 2015 or later  
   
-## See Also  
- [(NOTINBUILD)Simple Type Names](http://msdn.microsoft.com/en-us/333f45cb-2c72-4d81-8e59-e346b05f55e3)

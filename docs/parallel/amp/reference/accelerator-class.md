@@ -60,7 +60,7 @@ class accelerator;
 |[accelerator::get_all Method](#accelerator__get_all_method)|Returns a vector of `accelerator` objects that represent all the available accelerators.|  
 |[accelerator::get_auto_selection_view Method](#accelerator__get_auto_selection_view_method)|Returns the auto-selection `accelerator_view`.|  
 |[accelerator::get_dedicated_memory Method](#accelerator__get_dedicated_memory_method)|Returns the dedicated memory for the `accelerator`, in kilobytes.|  
-|[accelerator::get_default_cpu_access_type Method](#accelerator__get_default_cpu_access_type_method)|Returns the default [access_type](../../../parallel/concrt/reference/concurrency-namespace-enums.md#access_type_enumeration) for buffers created on this accelerator.|  
+|[accelerator::get_default_cpu_access_type Method](#accelerator__get_default_cpu_access_type_method)|Returns the default [access_type](../../../parallel/concrt/reference/concurrency-namespace-enums.md#access_type_enumeration for buffers created on this accelerator.|  
 |[accelerator::get_default_view Method](#accelerator__get_default_view_method)|Returns the default `accelerator_view` object that is associated with the `accelerator`.|  
 |[accelerator::get_description Method](#accelerator__get_description_method)|Returns a short description of the `accelerator` device.|  
 |[accelerator::get_device_path Method](#accelerator__get_device_path_method)|Returns the path of the device.|  
@@ -72,7 +72,7 @@ class accelerator;
 |[accelerator::get_supports_limited_double_precision Method](#accelerator__get_supports_limited_double_precision_method)|Determines whether the `accelerator` has limited support for double-precision math.|  
 |[accelerator::get_version Method](#accelerator__get_version_method)|Returns the version of the `accelerator`.|  
 |[accelerator::set_default Method](#accelerator__set_default_method)|Returns the path of the default accelerator.|  
-|[accelerator::set_default_cpu_access_type Method](#accelerator__set_default_cpu_access_type_method)|Sets the default CPU [access_type](../../../parallel/concrt/reference/concurrency-namespace-enums.md#access_type_enumeration) for arrays and implicit memory allocations made on this `accelerator`.|  
+|[accelerator::set_default_cpu_access_type Method](#accelerator__set_default_cpu_access_type_method)|Sets the default CPU [access_type](../../../parallel/concrt/reference/concurrency-namespace-enums.md#access_type_enumeration for arrays and implicit memory allocations made on this `accelerator`.|  
   
 ### Public Operators  
   
@@ -89,7 +89,7 @@ class accelerator;
 |[accelerator::cpu_accelerator Data Member](#accelerator__cpu_accelerator_data_member)|Gets a string constant for the CPU `accelerator`.|  
 |[accelerator::dedicated_memory Data Member](#accelerator__dedicated_memory_data_member)|Gets the dedicated memory for the `accelerator`, in kilobytes.|  
 |[accelerator::default_accelerator Data Member](#accelerator__default_accelerator_data_member)|Gets a string constant for the default `accelerator`.|  
-|[accelerator::default_cpu_access_type Data Member](#accelerator__default_cpu_access_type_data_member)|Gets or sets the default CPU [access_type](../../../parallel/concrt/reference/concurrency-namespace-enums.md#access_type_enumeration) for arrays and implicit memory allocations made on this `accelerator`.|  
+|[accelerator::default_cpu_access_type Data Member](#accelerator__default_cpu_access_type_data_member)|Gets or sets the default CPU [access_type](../../../parallel/concrt/reference/concurrency-namespace-enums.md#access_type_enumeration for arrays and implicit memory allocations made on this `accelerator`.|  
 |[accelerator::default_view Data Member](#accelerator__default_view_data_member)|Gets the default `accelerator_view` object that is associated with the `accelerator`.|  
 |[accelerator::description Data Member](#accelerator__description_data_member)|Gets a short description of the `accelerator` device.|  
 |[accelerator::device_path Data Member](#accelerator__device_path_data_member)|Gets the path of the device.|  
@@ -181,7 +181,7 @@ static const wchar_t default_accelerator[];
 ```  
   
 ##  <a name="accelerator__default_cpu_access_type_data_member"></a>  accelerator::default_cpu_access_type Data Member  
- The default cpu [access_type](../../../parallel/concrt/reference/concurrency-namespace-enums.md#access_type_enumeration) for arrays and implicit memory allocations made on this this `accelerator`.  
+ The default cpu [access_type](../../../parallel/concrt/reference/concurrency-namespace-enums.md#access_type_enumeration for arrays and implicit memory allocations made on this this `accelerator`.  
   
 ```  
 __declspec(property(get= get_default_cpu_access_type)) access_type default_cpu_access_type;  

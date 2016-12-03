@@ -132,4 +132,3 @@ In modern C++ programming, the Standard Library includes *smart pointers*, which
  [Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
  [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)   
- [(NOTINBUILD)Overview: Memory Management in C++](http://msdn.microsoft.com/en-us/2201885d-3d91-4a6e-aaa6-7a554e0362a8)

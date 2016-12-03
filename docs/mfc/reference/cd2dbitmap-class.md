@@ -414,7 +414,8 @@ UINT m_uiResID;
 ##  <a name="cd2dbitmap__operator_id2d1bitmap_star"></a>  CD2DBitmap::operator ID2D1Bitmap*  
  Returns ID2D1Bitmap interface  
   
-```  operator ID2D1Bitmap*();
+```  
+operator ID2D1Bitmap*();
 ```   
   
 ### Return Value  

@@ -665,7 +665,7 @@ virtual BOOL OnRenderFileData(
 ### Remarks  
  The specified format is one previously placed in the `COleDataSource` object using the [DelayRenderData](../../mfc/reference/coledatasource-class.md#coledatasource__delayrenderdata) member function for delayed rendering. The default implementation of this function simply returns **FALSE**.  
   
- This is an advanced overridable. Override this function to provide your data in the requested format and medium. Depending on your data, you might want to override one of the other versions of this function instead. If you want to handle multiple storage mediums, override [OnRenderData](#coleserveritem__onrenderdata). If your data is in a file, or is of variable size, override [OnRenderFileData](#_mfc_coleserveritem.3a3a.onrenderfiledata).  
+ This is an advanced overridable. Override this function to provide your data in the requested format and medium. Depending on your data, you might want to override one of the other versions of this function instead. If you want to handle multiple storage mediums, override [OnRenderData](#coleserveritem__onrenderdata). If your data is in a file, or is of variable size, override [OnRenderFileData](#coleserveritem__onrenderfiledata).  
   
  For more information, see [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) and [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -848,7 +848,7 @@ void SetItemName(LPCTSTR lpszItemName);
  The name must be unique within the document. When a server application is called to edit a linked item, the application uses this name to find the item. You do not need to call this function for embedded items.  
   
 ## See Also  
- [MFC Sample HIERSVR](../../top/visual-cpp-samples.md)   
+ [MFC Sample HIERSVR](../../visual-cpp-samples.md)   
  [CDocItem Class](../../mfc/reference/cdocitem-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [COleClientItem Class](../../mfc/reference/coleclientitem-class.md)   

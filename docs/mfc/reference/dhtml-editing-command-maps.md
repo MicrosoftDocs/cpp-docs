@@ -31,7 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # DHTML Editing Command Maps
-The following macros can be used to map DHTML editing commands in [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)-derived classes. For an example of their use, see [HTMLEdit Sample](../../top/visual-cpp-samples.md).  
+The following macros can be used to map DHTML editing commands in [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)-derived classes. For an example of their use, see [HTMLEdit Sample](../../visual-cpp-samples.md).  
   
 ### DHTML Editing Command Map Macros  
   
@@ -62,7 +62,7 @@ DECLARE_DHTMLEDITING_CMDMAP(className)
  Use [BEGIN_DHTMLEDITING_CMDMAP](#begin_dhtmlediting_cmdmap) to implement the map.  
   
 ### Example  
- See [HTMLEdit Sample](../../top/visual-cpp-samples.md).  
+ See [HTMLEdit Sample](../../visual-cpp-samples.md).  
   
 ##  <a name="begin_dhtmlediting_cmdmap"></a>  BEGIN_DHTMLEDITING_CMDMAP  
  Starts the definition of a DHTML editing command map within a class.  
@@ -91,7 +91,7 @@ END_DHTMLEDITING_CMDMAP()
  Use in conjunction with [BEGIN_DHTMLEDITING_CMDMAP](#begin_dhtmlediting_cmdmap).  
   
 ### Example  
- See [HTMLEdit Sample](../../top/visual-cpp-samples.md).  
+ See [HTMLEdit Sample](../../visual-cpp-samples.md).  
   
 ##  <a name="dhtmlediting_cmd_entry"></a>  DHTMLEDITING_CMD_ENTRY  
  Maps a command ID to an HTML editing command.  
@@ -108,7 +108,7 @@ DHTMLEDITING_CMD_ENTRY(cmdID,  dhtmlcmdID)
  The HTML editing command to which `cmdID` maps (such as **IDM_COPY**).  
   
 ### Example  
- See [HTMLEdit Sample](../../top/visual-cpp-samples.md).  
+ See [HTMLEdit Sample](../../visual-cpp-samples.md).  
   
 ##  <a name="dhtmlediting_cmd_entry_func"></a>  DHTMLEDITING_CMD_ENTRY_FUNC  
  Maps a command ID to an HTML editing command and message handler.  
@@ -128,7 +128,7 @@ DHTMLEDITING_CMD_ENTRY_FUNC(cmdID, dhtmlcmdID,  member_func_name)
  The name of the message-handler function to which the command is mapped.  
   
 ### Example  
- See [HTMLEdit Sample](../../top/visual-cpp-samples.md).  
+ See [HTMLEdit Sample](../../visual-cpp-samples.md).  
   
 ##  <a name="dhtmlediting_cmd_entry_type"></a>  DHTMLEDITING_CMD_ENTRY_TYPE  
  Maps a command ID to an HTML editing command and user interface element.  
@@ -148,7 +148,7 @@ DHTMLEDITING_CMD_ENTRY_TYPE(cmdID  ,   dhtmlcmdID  ,    elemType)
  The user interface element type; one of **AFX_UI_ELEMTYPE_NORMAL**, **AFX_UI_ELEMTYPE_CHECKBOX**, or **AFX_UI_ELEMTYPE_RADIO**.  
   
 ### Example  
- See [HTMLEdit Sample](../../top/visual-cpp-samples.md).  
+ See [HTMLEdit Sample](../../visual-cpp-samples.md).  
   
 ##  <a name="dhtmlediting_cmd_entry_func_type"></a>  DHTMLEDITING_CMD_ENTRY_FUNC_TYPE  
  Maps a command ID to an HTML editing command, message handler, and user interface element.  
@@ -171,7 +171,7 @@ DHTMLEDITING_CMD_ENTRY_FUNC_TYPE(cmdID, dhtmlcmdID, member_func_name,  elemType)
  The user interface element type; one of **AFX_UI_ELEMTYPE_NORMAL**, **AFX_UI_ELEMTYPE_CHECKBOX**, or **AFX_UI_ELEMTYPE_RADIO**.  
   
 ### Example  
- See [HTMLEdit Sample](../../top/visual-cpp-samples.md).  
+ See [HTMLEdit Sample](../../visual-cpp-samples.md).  
   
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

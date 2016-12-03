@@ -77,8 +77,6 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C2825](../../error-messages/compiler-errors-2/compiler-error-c2825.md)  
   
- [Compiler Error C2826](../Topic/Compiler%20Error%20C2826.md)  
-  
  [Compiler Error C2827](../../error-messages/compiler-errors-2/compiler-error-c2827.md)  
   
  [Compiler Error C2828](../../error-messages/compiler-errors-2/compiler-error-c2828.md)  
@@ -139,8 +137,6 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C2865](../../error-messages/compiler-errors-2/compiler-error-c2865.md)  
   
- [Compiler Error C2866](../Topic/Compiler%20Error%20C2866.md)  
-  
  [Compiler Error C2867](../../error-messages/compiler-errors-2/compiler-error-c2867.md)  
   
  [Compiler Error C2868](../../error-messages/compiler-errors-2/compiler-error-c2868.md)  
@@ -196,5 +192,3 @@ The articles in this part of the documentation contain information about a subse
  [Compiler Error C2897](../../error-messages/compiler-errors-2/compiler-error-c2897.md)  
   
  [Compiler Error C2898](../../error-messages/compiler-errors-2/compiler-error-c2898.md)  
-  
- [Compiler Error C2899](../../error-messages/compiler-errors-2/compiler-error-c2899.md)

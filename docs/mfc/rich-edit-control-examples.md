@@ -31,7 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Rich Edit Control Examples
-The MFC OLE sample [WORDPAD](../top/visual-cpp-samples.md) uses the `CRichEditView`, `CRichEditDoc`, and `CRichEditCntrItem` classes. By extension, it uses the [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md). For a quick description of these three classes, see [Classes Related to Rich Edit Controls](../mfc/classes-related-to-rich-edit-controls.md).  
+The MFC OLE sample [WORDPAD](../visual-cpp-samples.md) uses the `CRichEditView`, `CRichEditDoc`, and `CRichEditCntrItem` classes. By extension, it uses the [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md). For a quick description of these three classes, see [Classes Related to Rich Edit Controls](../mfc/classes-related-to-rich-edit-controls.md).  
   
 ## See Also  
  [Using CRichEditCtrl](../mfc/using-cricheditctrl.md)   

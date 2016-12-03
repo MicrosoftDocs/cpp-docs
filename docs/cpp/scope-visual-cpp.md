@@ -141,7 +141,7 @@ class Account *Checking = new class Account( Account );
 > [!NOTE]
 >  The reuse of identifier names as shown in this example is considered poor programming style.  
   
- For more information about pointers, see [Derived Types](http://msdn.microsoft.com/en-us/aa14183c-02fe-4d81-95fe-beddb0c01c7c). For information about declaration and initialization of class objects, see [Classes, Structures, and Unions](../cpp/classes-and-structs-cpp.md). For information about using the **new** and **delete** free-store operators, see [Special Member Functions](../misc/special-member-functions-cpp.md).  
+ For more information about pointers, see [Derived Types](http://msdn.microsoft.com/en-us/aa14183c-02fe-4d81-95fe-beddb0c01c7c). For information about declaration and initialization of class objects, see [Classes, Structures, and Unions](../cpp/classes-and-structs-cpp.md). For information about using the **new** and **delete** free-store operators, see [new and delete operators](new-and-delete-operators.md).  
   
 ## Hiding names with file scope  
  You can hide names with file scope by explicitly declaring the same name in block scope. However, file-scope names can be accessed using the scope-resolution operator (`::`).  

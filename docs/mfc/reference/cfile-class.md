@@ -557,7 +557,8 @@ virtual BOOL Open(
 ##  <a name="cfile__operator_handle"></a>  CFile::operator HANDLE  
  Use this operator to pass a handle to a `CFile` object to functions such as [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) and [GetFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724320) that expect a `HANDLE`.  
   
-```  operator HANDLE() const;
+```  
+operator HANDLE() const;
 
  
 ```  
@@ -818,7 +819,7 @@ virtual void Write(
  In addition, see the examples for [CFile::CFile](#cfile__cfile) and [CFile::Open](#cfile__open).  
   
 ## See Also  
- [MFC Sample DRAWCLI](../../top/visual-cpp-samples.md)   
+ [MFC Sample DRAWCLI](../../visual-cpp-samples.md)   
  [CObject Class](../../mfc/reference/cobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CStdioFile Class](../../mfc/reference/cstdiofile-class.md)   

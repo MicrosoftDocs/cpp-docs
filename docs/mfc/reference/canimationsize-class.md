@@ -231,7 +231,8 @@ CAnimationVariable m_cyValue;
 ##  <a name="canimationsize__operator_csize"></a>  CAnimationSize::operator CSize  
  Converts a CAnimationSize to a CSize.  
   
-```  operator CSize();
+```  
+operator CSize();
 ```   
   
 ### Return Value  

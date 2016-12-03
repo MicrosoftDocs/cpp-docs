@@ -37,10 +37,10 @@ translation.priority.ht:
 # Compiler Error C3914
 a default property cannot be static  
   
- A default property was declared incorrectly.  For more information, see [How to: Use Indexed Properties](../../misc/how-to-use-indexed-properties.md).  
+A default property was declared incorrectly.  For more information, see [How to: Use Properties in C++/CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md).  
   
 ## Example  
- The following sample generates C3914.  
+The following sample generates C3914 and shows how to fix it.  
   
 ```  
 // C3914.cpp  

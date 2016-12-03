@@ -18,7 +18,7 @@ manager: "ghogen"
 |[acos Function (fast_math)](#acos_function)|[acosf Function (fast_math)](#acosf_function)|[asin Function (fast_math)](#asin_function)|  
 |[asinf Function (fast_math)](#asinf_function)|[atan Function (fast_math)](#atan_function)|[atan2 Function (fast_math)](#atan2_function)|  
 |[atan2f Function (fast_math)](#atan2f_function)|[atanf Function (fast_math)](#atanf_function)|[ceil Function (fast_math)](#ceil_function)|  
-|[ceilf Function (fast_math)](#ceilf_function)|[cos Function (fast_math)](#cos_function_)|[cosf Function (fast_math)](#cosf_function)|  
+|[ceilf Function (fast_math)](#ceilf_function)|[cos Function (fast_math)](#cos_function)|[cosf Function (fast_math)](#cosf_function)|  
 |[cosh Function (fast_math)](#cosh_function)|[coshf Function (fast_math)](#coshf_function)|[exp Function (fast_math)](#exp_function)|  
 |[exp2 Function (fast_math)](#exp2_function)|[exp2f Function (fast_math)](#exp2f_function)|[expf Function (fast_math)](#expf_function)|  
 |[fabs Function (fast_math)](#fabs_function)|[fabsf Function (fast_math)](#fabsf_function)|[floor Function (fast_math)](#floor_function)|  
@@ -216,7 +216,7 @@ inline float coshf(float _X) restrict(amp);
 ### Return Value  
  Returns the hyperbolic cosine value of the argument  
   
-##  <a name="cos_function_"></a>  cos Function  (fast_math)  
+##  <a name="cos_function"></a>  cos Function  (fast_math)  
  Calculates the cosine of the argument  
   
 ```  
