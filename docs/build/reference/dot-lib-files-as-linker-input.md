@@ -49,7 +49,7 @@ LINK accepts COFF standard libraries and COFF import libraries, both of which us
   
 ### To add .lib files as linker input in the development environment  
   
-1.  Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).  
+1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
 2.  Click the **Linker** folder.  
   
@@ -59,7 +59,7 @@ LINK accepts COFF standard libraries and COFF import libraries, both of which us
   
 ### To programmatically add .lib files as linker input  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalDependencies%2A>.  
+-   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalDependencies>.  
   
 ## Example  
  The following sample shows how to build and use a .lib file:  

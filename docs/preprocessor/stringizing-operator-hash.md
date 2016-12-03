@@ -47,18 +47,18 @@ The number-sign or "stringizing" operator (**#**) converts macro parameters to s
 > [!NOTE]
 >  The Microsoft C (versions 6.0 and earlier) extension to the ANSI C standard that previously expanded macro formal arguments appearing inside string literals and character constants is no longer supported. Code that relied on this extension should be rewritten using the stringizing (**#**) operator.  
   
- White space preceding the first token of the actual argument and following the last token of the actual argument is ignored. Any white space between the tokens in the actual argument is reduced to a single white space in the resulting string literal. Thus, if a comment occurs between two tokens in the actual argument, it is reduced to a single white space. The resulting string literal is automatically concatenated with any adjacent string literals from which it is separated only by white space.  
+White space preceding the first token of the actual argument and following the last token of the actual argument is ignored. Any white space between the tokens in the actual argument is reduced to a single white space in the resulting string literal. Thus, if a comment occurs between two tokens in the actual argument, it is reduced to a single white space. The resulting string literal is automatically concatenated with any adjacent string literals from which it is separated only by white space.  
   
- Further, if a character contained in the argument usually requires an escape sequence when used in a string literal (for example, the quotation mark (**"**) or backslash (**\\**) character), the necessary escape backslash is automatically inserted before the character.  
+Further, if a character contained in the argument usually requires an escape sequence when used in a string literal (for example, the quotation mark (**"**) or backslash (**\\**) character), the necessary escape backslash is automatically inserted before the character.  
   
- The Visual C++ stringizing operator may not behave as expected in all situations; see [16.3.2 The # Operator](../misc/16-3-2-the-hash-operator.md) for more information.  
+The Visual C++ stringizing operator does not behave correctly when it is used with strings that include escape sequences. In this situation, the compiler generates [Compiler Error C2017](../error-messages/compiler-errs-1/compiler-error-c2017.md).  
   
 ## Example  
- The following example shows a macro definition that includes the stringizing operator and a main function that invokes the macro:  
+The following example shows a macro definition that includes the stringizing operator and a main function that invokes the macro:  
   
- Such invocations would be expanded during preprocessing, producing the following code:  
+Such invocations would be expanded during preprocessing, producing the following code:  
   
-```  
+```cpp  
 int main() {  
    printf_s( "In quotes in the printf function call\n" "\n" );  
    printf_s( "\"In quotes when printed to the screen\"\n" "\n" );  
@@ -66,7 +66,7 @@ int main() {
 }  
 ```  
   
-```  
+```cpp  
 // stringizer.cpp  
 #include <stdio.h>  
 #define stringer( x ) printf_s( #x "\n" )  
@@ -84,9 +84,9 @@ In quotes in the printf function call
 ```  
   
 ## Example  
- The following sample shows how you can expand a macro parameter:  
+The following sample shows how you can expand a macro parameter:  
   
-```  
+```cpp  
 // stringizer_2.cpp  
 // compile with: /E  
 #define F abc  

@@ -193,7 +193,7 @@ The following tables show Visual C++ features that are available in Visual Studi
 |Code map debugging||||X|  
   
 ## See Also  
- [Installing Visual Studio 2015](../Topic/Installing%20Visual%20Studio%202015.md)   
- [What's New in Visual Studio 2015](/visualstudio/ide/what-s-new-in-visual-studio-2015)   
+ [Install Visual Studio](/visualstudio/install/install-visual-studio)   
+ [What's New in Visual Studio](/visualstudio/ide/whats-new-in-visual-studio)   
  [Visual C++ Project Types](../ide/visual-cpp-project-types.md)   
  [Visual Database Tools Editions](http://msdn.microsoft.com/en-us/a7689adc-f16b-4cc7-b6fe-39ca0c711161)
