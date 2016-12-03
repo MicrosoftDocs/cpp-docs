@@ -104,10 +104,10 @@ The [!INCLUDE[vcprvc](build/includes/vcprvc_md.md)] programming language and dev
  [Parallel Programming](parallel/parallel-programming-in-visual-cpp.md)  
  Learn how to use the Parallel Patterns Library, C++ AMP, OpenMP, and other features that are related to multithreading on Windows.  
   
- [Security Best Practices](security-best-practices-for-cpp.md)  
+ [Security Best Practices](security/security-best-practices-for-cpp.md)  
  Learn how to protect applications from malicious code and unauthorized use.  
   
- [Cloud and Web Programming](cloud-and-web-programming-in-visual-cpp.md)  
+ [Cloud and Web Programming](cloud/cloud-and-web-programming-in-visual-cpp.md)  
  In C++, you have several options for connecting to the web and the cloud.  
   
  [Data Access](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b)  
