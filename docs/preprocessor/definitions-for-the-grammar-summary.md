@@ -37,13 +37,13 @@ translation.priority.ht:
 # Definitions for the Grammar Summary
 Terminals are endpoints in a syntax definition. No other resolution is possible. Terminals include the set of reserved words and user-defined identifiers.  
   
- Nonterminals are placeholders in the syntax. Most are defined elsewhere in this syntax summary. Definitions can be recursive. The following nonterminals are defined in the [Grammar Summary](../misc/grammar-summary-cpp.md) of the *C++ Language Reference*:  
+Nonterminals are placeholders in the syntax. Most are defined elsewhere in this syntax summary. Definitions can be recursive. The following nonterminals are defined in the [Lexical Conventions](../cpp/lexical-conventions.md) section of the *C++ Language Reference*:  
   
- `constant`, *constant-expression*, *identifier*, *keyword*, `operator`, `punctuator`  
+`constant`, *constant-expression*, *identifier*, *keyword*, `operator`, `punctuator`  
   
- An optional component is indicated by the subscripted opt. For example, the following indicates an optional expression enclosed in curly braces:  
+An optional component is indicated by the subscripted opt. For example, the following indicates an optional expression enclosed in curly braces:  
   
- **{** *expression*opt **}**  
+**{** *expression*opt **}**  
   
 ## See Also  
- [Grammar Summary (C/C++)](../preprocessor/grammar-summary-c-cpp.md)
+[Grammar Summary (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

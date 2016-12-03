@@ -59,4 +59,4 @@ Isolated applications are applications that have manifests built into the progra
   
 ## See Also  
  [Isolated Applications](http://msdn.microsoft.com/library/aa375190)   
- [Side-by-side Assemblies](_win32_side_by_side_assemblies)
+ [About Side-by-Side Assemblies](http://msdn.microsoft.com/library/ff951640)
