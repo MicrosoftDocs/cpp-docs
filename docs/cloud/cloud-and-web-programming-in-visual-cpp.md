@@ -53,5 +53,5 @@ In C++, you have several options for connecting to the web and the cloud.
  Windows API that you can use in Windows desktop apps to connect to the Internet.  
   
 ## See Also  
- [Visual C++](visual-cpp-in-visual-studio.md)   
+ [Visual C++](../visual-cpp-in-visual-studio.md)   
  [Connecting to networks and web services (Windows Store apps using C#/VB/C++ and XAML)](http://msdn.microsoft.com/library/windows/apps/br229573.aspx)
