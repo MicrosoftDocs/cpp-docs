@@ -37,9 +37,9 @@ translation.priority.ht:
 # Tab Controls and Property Sheets
 Property sheets are multiple-page dialogs or "tab dialogs" that can display up to 24 dialog template resources to the user. For examples of property sheets, see the Windows Display Properties dialog box or the following MFC sample application:  
   
- [CMNCTRL1: Demonstrates Common Control Classes, Part 1](../top/visual-cpp-samples.md)  
+ [CMNCTRL1: Demonstrates Common Control Classes, Part 1](../visual-cpp-samples.md)  
   
- [CMNCTRL2: Demonstrates Common Control Classes, Part 2](../top/visual-cpp-samples.md)  
+ [CMNCTRL2: Demonstrates Common Control Classes, Part 2](../visual-cpp-samples.md)  
   
  Property sheets can be easily implemented using the MFC class [CPropertySheet](../mfc/reference/cpropertysheet-class.md).  
   

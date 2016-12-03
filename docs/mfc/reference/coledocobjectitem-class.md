@@ -283,7 +283,7 @@ virtual void Release(OLECLOSE dwCloseOption = OLECLOSE_NOSAVE);
  Does not destroy the client item.  
   
 ## See Also  
- [MFC Sample MFCBIND](../../top/visual-cpp-samples.md)   
+ [MFC Sample MFCBIND](../../visual-cpp-samples.md)   
  [COleClientItem Class](../../mfc/reference/coleclientitem-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [COleClientItem Class](../../mfc/reference/coleclientitem-class.md)   

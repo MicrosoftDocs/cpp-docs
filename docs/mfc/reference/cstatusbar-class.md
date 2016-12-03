@@ -468,8 +468,8 @@ BOOL SetPaneText(
  [!code-cpp[NVC_MFCDocView#178](../../mfc/codesnippet/cpp/cstatusbar-class_3.cpp)]  
   
 ## See Also  
- [MFC Sample CTRLBARS](../../top/visual-cpp-samples.md)   
- [MFC Sample DLGCBR32](../../top/visual-cpp-samples.md)   
+ [MFC Sample CTRLBARS](../../visual-cpp-samples.md)   
+ [MFC Sample DLGCBR32](../../visual-cpp-samples.md)   
  [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CStatusBarCtrl Class](../../mfc/reference/cstatusbarctrl-class.md)   

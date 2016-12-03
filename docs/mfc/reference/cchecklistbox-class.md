@@ -340,7 +340,7 @@ void SetCheckStyle(UINT nStyle);
  For information on these styles, see [Button Styles](../../mfc/reference/button-styles.md).  
   
 ## See Also  
- [MFC Sample TSTCON](../../top/visual-cpp-samples.md)   
+ [MFC Sample TSTCON](../../visual-cpp-samples.md)   
  [CListBox Class](../../mfc/reference/clistbox-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CListBox Class](../../mfc/reference/clistbox-class.md)

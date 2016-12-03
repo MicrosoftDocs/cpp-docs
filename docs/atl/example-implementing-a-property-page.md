@@ -35,7 +35,7 @@ translation.priority.ht:
 # Example: Implementing a Property Page
 This example shows how to build a property page that displays (and allows you to change) properties of the [Document Classes](../mfc/document-classes.md) interface. This interface is exposed by documents in Visual Studio's [Common Environment Object Model Examples](http://msdn.microsoft.com/library/919cdb58-9f6d-45e6-a0f1-9ca8f6e7051f) (although the property page that you'll create won't care where the objects it manipulates come from as long as they support the correct interface).  
   
- The example is based on the [ATLPages sample](../top/visual-cpp-samples.md).  
+ The example is based on the [ATLPages sample](../visual-cpp-samples.md).  
   
  To complete this example, you will:  
   
@@ -179,5 +179,5 @@ End Module
   
 ## See Also  
  [Property Pages](../atl/atl-com-property-pages.md)   
- [ATLPages Sample](../top/visual-cpp-samples.md)
+ [ATLPages Sample](../visual-cpp-samples.md)
 

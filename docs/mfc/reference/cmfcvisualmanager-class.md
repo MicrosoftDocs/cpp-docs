@@ -268,7 +268,7 @@ CMFCVisualManager::GetInstance ()->RedrawAll ();
 ```  
   
 ## Example  
- The following example demonstrates how to retrieve the default values of a `CMFCVisualManager` object. This code snippet is part of the [Tasks Pane sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to retrieve the default values of a `CMFCVisualManager` object. This code snippet is part of the [Tasks Pane sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_TasksPane#1](../../mfc/reference/codesnippet/cpp/cmfcvisualmanager-class_1.h)]  
   
@@ -3836,7 +3836,7 @@ virtual void OnFillBarBackground(
  The default implementation of this method fills the background of the bar with the 3d background color from the global variable `afxGlobalData`. Override this method in a derived visual manager to customize the background of a pane.  
   
 ### Example  
- The following example demonstrates how to use the `OnFillBarBackground` in the `CMFCVisualManager` class. This code snippet is part of the [Outlook Demo sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to use the `OnFillBarBackground` in the `CMFCVisualManager` class. This code snippet is part of the [Outlook Demo sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_OutlookDemo#4](../../mfc/reference/codesnippet/cpp/cmfcvisualmanager-class_2.cpp)]  
   

@@ -80,7 +80,7 @@ Copy policy classes are [utility classes](../atl/utility-classes.md) used to ini
 -   The **_CopyInterface** class provides an implementation for copying interface pointers following standard COM rules. Once again this class allows only homogeneous copying, so it uses simple assignment and a call to `AddRef` to perform the copy.  
   
 ## Custom Implementations  
- Typically, you'll need to define your own copy policy classes for heterogeneous copying (that is, conversion between data types). For some examples of custom copy policy classes, look at the files VCUE_Copy.h and VCUE_CopyString.h in the [ATLCollections](../top/visual-cpp-samples.md) sample. These files contain two template copy policy classes, `GenericCopy` and `MapCopy`, plus a number of specializations of `GenericCopy` for different data types.  
+ Typically, you'll need to define your own copy policy classes for heterogeneous copying (that is, conversion between data types). For some examples of custom copy policy classes, look at the files VCUE_Copy.h and VCUE_CopyString.h in the [ATLCollections](../visual-cpp-samples.md) sample. These files contain two template copy policy classes, `GenericCopy` and `MapCopy`, plus a number of specializations of `GenericCopy` for different data types.  
   
 ### GenericCopy  
  `GenericCopy` allows you to specify the *SourceType* and `DestinationType` as template arguments. Here's the most general form of the `GenericCopy` class from VCUE_Copy.h:  
@@ -96,5 +96,5 @@ Copy policy classes are [utility classes](../atl/utility-classes.md) used to ini
   
 ## See Also  
  [Implementing an STL-Based Collection](../atl/implementing-an-stl-based-collection.md)   
- [ATLCollections Sample](../top/visual-cpp-samples.md)
+ [ATLCollections Sample](../visual-cpp-samples.md)
 

@@ -295,7 +295,7 @@ UINT SetPaletteEntries(
  For more information on the Windows structure **PALETTEENTRY**, see [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ## See Also  
- [MFC Sample DIBLOOK](../../top/visual-cpp-samples.md)   
+ [MFC Sample DIBLOOK](../../visual-cpp-samples.md)   
  [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CPalette::GetPaletteEntries](#cpalette__getpaletteentries)   

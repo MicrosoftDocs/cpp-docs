@@ -329,7 +329,7 @@ operator HFONT() const;
  [!code-cpp[NVC_MFCDocView#77](../../mfc/codesnippet/cpp/cfont-class_8.cpp)]  
   
 ## See Also  
- [MFC Sample HIERSVR](../../top/visual-cpp-samples.md)   
+ [MFC Sample HIERSVR](../../visual-cpp-samples.md)   
  [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

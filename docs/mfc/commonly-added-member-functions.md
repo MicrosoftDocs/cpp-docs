@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Commonly Added Member Functions
-If your dialog box contains pushbuttons other than OK or Cancel, you need to write message-handler member functions in your dialog class to respond to the control-notification messages they generate. For an example, see the [Scribble](../top/visual-cpp-samples.md) sample program. You can also handle control-notification messages from other controls in your dialog box.  
+If your dialog box contains pushbuttons other than OK or Cancel, you need to write message-handler member functions in your dialog class to respond to the control-notification messages they generate. For an example, see the [Scribble](../visual-cpp-samples.md) sample program. You can also handle control-notification messages from other controls in your dialog box.  
   
 ## See Also  
  [Dialog Boxes](../mfc/dialog-boxes.md)   

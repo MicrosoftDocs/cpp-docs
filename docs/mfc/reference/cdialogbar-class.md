@@ -152,7 +152,7 @@ virtual BOOL Create(
  [!code-cpp[NVC_MFCMessageMaps#13](../../mfc/reference/codesnippet/cpp/cdialogbar-class_1.cpp)]  
   
 ## See Also  
- [MFC Sample CTRLBARS](../../top/visual-cpp-samples.md)   
+ [MFC Sample CTRLBARS](../../visual-cpp-samples.md)   
  [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CFormView Class](../../mfc/reference/cformview-class.md)   

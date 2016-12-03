@@ -175,7 +175,7 @@ void UpdateRegistry(
  For more information, see [Implementing the IDispatch Interface](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945).  
   
 ## See Also  
- [MFC Sample HIERSVR](../../top/visual-cpp-samples.md)   
+ [MFC Sample HIERSVR](../../visual-cpp-samples.md)   
  [COleObjectFactory Class](../../mfc/reference/coleobjectfactory-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [COleServerDoc Class](../../mfc/reference/coleserverdoc-class.md)   

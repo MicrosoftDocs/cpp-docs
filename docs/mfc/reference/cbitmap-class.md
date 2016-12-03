@@ -465,7 +465,7 @@ CSize SetBitmapDimension(
  The GDI does not use these values except to return them when an application calls the [GetBitmapDimension](#cbitmap__getbitmapdimension) member function.  
   
 ## See Also  
- [MFC Sample MDI](../../top/visual-cpp-samples.md)   
+ [MFC Sample MDI](../../visual-cpp-samples.md)   
  [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

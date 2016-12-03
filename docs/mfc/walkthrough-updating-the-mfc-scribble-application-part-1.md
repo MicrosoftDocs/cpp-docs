@@ -43,9 +43,9 @@ This walkthrough demonstrates how to modify an existing MFC application to use t
  This walkthrough modifies the classic Scribble 1.0 MFC sample that lets you use the mouse to create line drawings. This part of the walkthrough shows how to modify the Scribble sample so that it displays a ribbon bar. [Part 2](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md) adds more buttons to the ribbon bar.  
   
 ## Prerequisites  
- [Visual C++ Samples](../top/visual-cpp-samples.md)  
+ [Visual C++ Samples](../visual-cpp-samples.md)  
   
- [Visual C++ Samples](../top/visual-cpp-samples.md)  
+ [Visual C++ Samples](../visual-cpp-samples.md)  
   
 ##  <a name="top"></a> Sections  
  This part of the walkthrough has the following sections:  
