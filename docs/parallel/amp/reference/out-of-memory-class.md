@@ -63,6 +63,25 @@ class out_of_memory : public runtime_exception;
  **Header:** amprt.h  
   
  **Namespace:** Concurrency  
+## <a name=""></a> out_of_memory::out_of_memory Constructor
+ Initializes a new instance of the class.  
+  
+### Syntax  
+  
+```  
+explicit out_of_memory(  
+    const char * _Message ) throw();  
+  
+out_of_memory () throw();  
+```  
+  
+### Parameters  
+ `_Message`  
+ A description of the error.  
+  
+### Return Value  
+ A new instance of the `out_of_memory` class.  
+  
   
 ## See Also  
  [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)

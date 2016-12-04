@@ -14,7 +14,6 @@
 ### [index Class](index-class.md)
 ### [invalid_compute_domain Class](invalid-compute-domain-class.md)
 ### [out_of_memory Class](out-of-memory-class.md)
-### [queuing_mode Enumeration](queuing-mode-enumeration.md)
 ### [runtime_exception Class](runtime-exception-class.md)
 ### [tile_barrier Class](tile-barrier-class.md)
 ### [tiled_extent Class](tiled-extent-class.md)

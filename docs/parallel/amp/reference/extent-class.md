@@ -48,6 +48,11 @@ class extent;
 ### Parameters  
  `_Rank`  
  The rank of the `extent` object.  
+
+ ## Requirements  
+ **Header:** amp.h  
+  
+ **Namespace:** Concurrency  
   
 ## Members  
   
@@ -55,46 +60,46 @@ class extent;
   
 |Name|Description|  
 |----------|-----------------|  
-|[extent::extent Constructor](#extent_ctor)|Initializes a new instance of the `extent` class.|  
+|[extent::extent Constructor](#extent__ctor)|Initializes a new instance of the `extent` class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[extent::contains Method](reference/extent-class.md#extent__contains_method)|Verifies that the specified `extent` object has the specified rank.|  
-|[extent::size Method](reference/extent-class.md#extent__size_method)|Returns the total linear size of the extent (in units of elements).|  
-|[extent::tile Method](reference/extent-class.md#extent__tile_method)|Produces a `tiled_extent` object with the tile extents given by specified dimensions.|  
+|[extent::contains Method](#extent__contains_method)|Verifies that the specified `extent` object has the specified rank.|  
+|[extent::size Method](#extent__size_method)|Returns the total linear size of the extent (in units of elements).|  
+|[extent::tile Method](#extent__tile_method)|Produces a `tiled_extent` object with the tile extents given by specified dimensions.|  
 
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[extent::operator- Operator](#operator_min)|Returns a new `extent` object that's created by subtracting the `index` elements from the corresponding `extent` elements.|  
-|[extent::operator-- Operator](#operator_min_min)|Decrements each element of the `extent` object.|  
-|[extent::operator(mod)= Operator](#operator_mod)=)|Calculates the modulus (remainder) of each element in the `extent` object when that element is divided by a number.|  
-|[extent::operator*= Operator](#operator_star_eq)|Multiplies each element of the `extent` object by a number.|  
-|[extent::operator/= Operator](#operator_min_eq)|Divides each element of the `extent` object by a number.|  
-|[extent::operatorOperator](#operator_operator)|Returns the element that's at the specified index.|  
-|[extent::operator+ Operator](#operator_add)|Returns a new `extent` object that's created by adding the corresponding `index` and `extent` elements.|  
-|[extent::operator++ Operator](#operator_add_add)|Increments each element of the `extent` object.|  
-|[extent::operator+= Operator](#operator_add_eq)|Adds the specified number to each element of the `extent` object.|  
-|[extent::operator= Operator](#operator_eq)|Copies the contents of another `extent` object into this one.|  
-|[extent::operator-= Operator](#operator_min_eq)|Subtracts the specified number from each element of the `extent` object.|  
+|[extent::operator- Operator](#extent__operator_min)|Returns a new `extent` object that's created by subtracting the `index` elements from the corresponding `extent` elements.|  
+|[extent::operator-- Operator](#extent__operator_min_min)|Decrements each element of the `extent` object.|  
+|[extent::operator(mod)= Operator](#extent__operator_mod)=)|Calculates the modulus (remainder) of each element in the `extent` object when that element is divided by a number.|  
+|[extent::operator*= Operator](#extent__operator_star_eq)|Multiplies each element of the `extent` object by a number.|  
+|[extent::operator/= Operator](#extent__operator_min_eq)|Divides each element of the `extent` object by a number.|  
+|[extent::operator\[\]](#extent__operator_at)|Returns the element that's at the specified index.|  
+|[extent::operator+ Operator](#extent__operator_add)|Returns a new `extent` object that's created by adding the corresponding `index` and `extent` elements.|  
+|[extent::operator++ Operator](#extent__operator_add_add)|Increments each element of the `extent` object.|  
+|[extent::operator+= Operator](#extent__operator_add_eq)|Adds the specified number to each element of the `extent` object.|  
+|[extent::operator= Operator](#extent__operator_eq)|Copies the contents of another `extent` object into this one.|  
+|[extent::operator-= Operator](#extent__operator_min_eq)|Subtracts the specified number from each element of the `extent` object.|  
 
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[extent::rank Constant](reference/extent-class.md#extent__rank_constant)|Gets the rank of the `extent` object.|  
+|[extent::rank Constant](#extent__rank_constant)|Gets the rank of the `extent` object.|  
 
   
 ## Inheritance Hierarchy  
  `extent`  
 
 
-## <a name="contains"></a> extent::contains Method 
+## <a name="extent__contains_method"></a> extent::contains Method 
 Indicates whether the specified [index](index-class.md) value is contained within the `extent' object.  
   
 ### Syntax  
@@ -110,7 +115,7 @@ bool contains( const index<rank>& _Index ) const restrict(amp,cpu);
 ### Return Value  
  `true` if the specified `index` value is contained in the `extent` object; otherwise, `false`.  
   
-##  <a name="extent_ctor"></a> extent::extent Constructor  
+##  <a name="extent__ctor"></a> extent::extent Constructor  
 Initializes a new instance of the `extent' class.  
   
 ### Syntax  
@@ -162,7 +167,7 @@ explicit extent(
   
  If an array is used to construct an `extent` object, the length of the array must match the rank of the `extent` object.  
   
-##  <a name="operator_mod"></a> extent::operator(mod)= Operator 
+##  <a name="extent__operator_mod"></a> extent::operator(mod)= Operator 
 Calculates the modulus (remainder) of each element in the `extent' when that element is divided by a number.  
   
 ### Syntax  
@@ -178,7 +183,7 @@ extent<_Rank>&  operator%= (int _Rhs ) restrict(cpu, direct3d);
 ### Return Value  
  The `extent` object.  
   
-##  <a name="operator_star_eq"></a> extent::operator*= Operator  
+##  <a name="extent__operator_star_eq"></a> extent::operator*= Operator  
 Multiplies each element in the `extent' object by the specified number.  
   
 ### Syntax  
@@ -211,7 +216,7 @@ extent<_Rank>  operator+(
 ### Return Value  
  The new `extent` object.  
   
-##  <a name="operator_add_add"></a> extent::operator++ Operator  
+##  <a name="extent__operator_add_add"></a> extent::operator++ Operator  
 Increments each element of the `extent' object.  
   
 ### Syntax  
@@ -227,7 +232,7 @@ extent<_Rank>  operator++(
 ### Return Value  
  For the prefix operator, the `extent` object (`*this`). For the suffix operator, a new `extent` object.  
   
-##  <a name="operator_add_eq"></a> extent::operator+= Operator  
+##  <a name="extent__operator_add_eq"></a> extent::operator+= Operator  
 Adds the specified number to each element of the `extent' object.  
   
 ### Syntax  
@@ -250,7 +255,7 @@ extent<_Rank>&  operator+= (
 ### Return Value  
  The resulting `extent` object.  
   
-##  <a name="operator_min"></a> extent::operator- Operator  
+##  <a name="extent__operator_min"></a> extent::operator- Operator  
 Creates a new `extent` object by subtracting each element in the specified `index` object from the corresponding element in this `extent` object.  
   
 ### Syntax  
@@ -267,7 +272,7 @@ extent<_Rank>  operator-(
 ### Return Value  
  The new `extent` object.  
   
-##  <a name="operator_min_min"></a> extent::operator-- Operator  
+##  <a name="extent__operator_min_min"></a> extent::operator-- Operator  
 Decrements each element in the `extent' object.  
   
 ### Syntax  
@@ -283,7 +288,7 @@ extent<_Rank>  operator--(
 ### Return Value  
  For the prefix operator, the `extent` object (`*this`). For the suffix operator, a new `extent` object.  
   
-##  <a name="operator_div_eq"></a> extent::operator/= Operator  
+##  <a name="extent__operator_div_eq"></a> extent::operator/= Operator  
 Divides each element in the `extent' object by the specified number.  
   
 ### Syntax  
@@ -300,7 +305,7 @@ extent<_Rank>&  operator/= (
 ### Return Value  
  The `extent` object.  
   
-##  <a name="operator_min_eq"></a> extent::operator-= Operator  
+##  <a name="extent__operator_min_eq"></a> extent::operator-= Operator  
 Subtracts the specified number from each element of the `extent' object.  
   
 ### Syntax  
@@ -323,7 +328,7 @@ extent<_Rank>&  operator-= (
 ### Return Value  
  The resulting `extent` object.  
   
-##  <a name="operator_eq"></a> extent::operator= Operator  
+##  <a name="extent__operator_eq"></a> extent::operator= Operator  
 Copies the contents of another `extent' object into this one.  
   
 ### Syntax  
@@ -340,7 +345,7 @@ extent<_Rank>&  operator= (
 ### Return Value  
  A reference to this `extent` object.  
   
-##  <a name="operator_operator"></a> extent::operator Operator 
+##  <a name="extent__operator_at"></a> extent::operator \[\] 
 Returns the element that's at the specified index.  
   
 ### Syntax  
@@ -358,7 +363,7 @@ int&  operator[] ( unsigned int _Index ) restrict(amp,cpu);
 ### Return Value  
  The element that's at the specified index.  
   
-##  <a name="rank"></a> extent::rank Constant  
+##  <a name="extent__rank_constant"></a> extent::rank Constant  
 Stores the rank of the `extent' object.  
   
 ### Syntax  
@@ -367,22 +372,46 @@ Stores the rank of the `extent' object.
 static const int rank = _Rank;  
 ```  
   
-##  <a name="size"></a> extent::size Method  
+##  <a name="extent__size_method"></a> extent::size Method  
 Returns the total linear size of the `extent` object (in units of elements).  
   
 ### Syntax  
-  
+
 ```  
 unsigned int size() const restrict(amp,cpu);  
 ```  
   
-### Return Value  
-  
- 
-## Requirements  
- **Header:** amp.h  
-  
- **Namespace:** Concurrency  
+## <a name="extent__tile_method"></a> extent::tile Method
+Produces a tiled_extent object with the specified tile dimensions.
+
+```
+template <
+   int _Dim0
+>
+tiled_extent<_Dim0> tile() const ;
+
+template <
+   int _Dim0,
+   int _Dim1
+>
+tiled_extent<_Dim0, _Dim1> tile() const ;
+
+template <
+   int _Dim0,
+   int _Dim1,
+   int _Dim2
+>
+tiled_extent<_Dim0, _Dim1, _Dim2> tile() const ;
+```  
+### Parameters
+`_Dim0`
+The most significant component of the tiled extent.
+`_Dim1`
+The next-to-most-significant component of the tiled extent.
+`_Dim2`
+The least significant component of the tiled extent.
+
+
   
 ## See Also  
  [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

@@ -192,11 +192,11 @@ This document describes how to create a custom message block type that orders in
      The `send_message` method resembles `propagate_message`. However it sends the output messages synchronously instead of asynchronously.  
   
 
-     The runtime calls this method during a synchronous send operation, such as when you call the [concurrency::send](reference/concurrency-namespace-functions.md#send_function) function.  
+     The runtime calls this method during a synchronous send operation, such as when you call the [concurrency::send](reference/concurrency-namespace-functions.md#send) function.  
   
  The `priority_buffer` class contains constructor overloads that are typical in many message block types. Some constructor overloads take [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) or [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) objects, which enable the message block to be managed by a specific task scheduler. Other constructor overloads take a filter function. Filter functions enable message blocks to accept or reject a message on the basis of its payload. For more information about message filters, see [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md). For more information about task schedulers, see [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md).  
   
- Because the `priority_buffer` class orders messages by priority and then by the order in which messages are received, this class is most useful when it receives messages asynchronously, for example, when you call the [concurrency::asend](reference/concurrency-namespace-functions.md#asend_function) function or when the message block is connected to other message blocks.  
+ Because the `priority_buffer` class orders messages by priority and then by the order in which messages are received, this class is most useful when it receives messages asynchronously, for example, when you call the [concurrency::asend](reference/concurrency-namespace-functions.md#asend) function or when the message block is connected to other message blocks.  
   
  [[Top](#top)]  
   
