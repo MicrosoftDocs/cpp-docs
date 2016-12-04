@@ -85,6 +85,6 @@ This section provides conceptual and task-based topics to help you program using
  [MFC Reference](../mfc/mfc-desktop-applications.md)  
  Provides reference material for the MFC Library, a set of classes that constitute an application framework, which is the framework of an application written for the Windows API.  
   
- [MFC Samples](../top/visual-cpp-samples.md)  
+ [MFC Samples](../visual-cpp-samples.md)  
  Provides links to samples that show how to use MFC in desktop applications, DLLs, database applications, controls, Web applications, and more.
 

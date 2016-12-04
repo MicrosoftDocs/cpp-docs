@@ -118,3 +118,9 @@
       - name: Text and Strings
         tocHref: /cpp/text/
         topicHref: /cpp/text/text-and-strings
+      - name: Security
+        tocHref: /cpp/security
+        topicHref: /cpp/security/security-best-practices-for-cpp
+      - name: Cloud and Web
+        tocHref: /cpp/cloud
+        topicHref: /cpp/cloud/cloud-and-web-programming-in-visual-cpp

@@ -101,7 +101,7 @@ class COleIPFrameWndEx : public COleIPFrameWnd
 |[COleIPFrameWndEx::InitUserToobars](#coleipframewndex__initusertoobars)|Tells the framework to initialize a range of control IDs that are assigned to user-defined toolbars.|  
   
 ## Example  
- The following example demonstrates how to subclass an instance of the `COleIPFrameWndEx` class and over ride its methods. The example shows how to over ride the `OnDestory` method, the `RepositionFrame` method, the `RecalcLayout` method, and the `CalcWindowRect` method. This code snippet is part of the [Word Pad sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to subclass an instance of the `COleIPFrameWndEx` class and over ride its methods. The example shows how to over ride the `OnDestory` method, the `RepositionFrame` method, the `RecalcLayout` method, and the `CalcWindowRect` method. This code snippet is part of the [Word Pad sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_WordPad#1](../../mfc/reference/codesnippet/cpp/coleipframewndex-class_1.cpp)]  
   

@@ -40,7 +40,7 @@ A non-MFC DLL is a DLL that does not use MFC internally, and the exported functi
   
 ## What do you want to do?  
   
--   [Create a Win32 DLL](../Topic/How%20to:%20Create%20a%20Windows%20Desktop%20Application.md)  
+-   [Walkthrough: Creating and Using a Dynamic Link Library](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)  
   
 -   [Export from a DLL](../build/exporting-from-a-dll.md)  
   

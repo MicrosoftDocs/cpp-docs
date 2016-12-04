@@ -71,7 +71,7 @@ BEGIN_COM_MAP(x)
 
   
 ### Example  
- From the ATL [BEEPER](../../top/visual-cpp-samples.md) sample:  
+ From the ATL [BEEPER](../../visual-cpp-samples.md) sample:  
   
  [!code-cpp[NVC_ATL_COM#1](../../atl/codesnippet/cpp/com-map-macros_1.h)]  
   

@@ -53,7 +53,7 @@ This article outlines how to make your application a drop target. Implementing a
     |`OnDrop`|Handling of data being dropped into the specified window.|  
     |`OnScrollBy`|Special behavior for when scrolling is necessary in the target window.|  
   
- See the MAINVIEW.CPP file that is part of the MFC OLE sample [OCLIENT](../top/visual-cpp-samples.md) for an example of how these functions work together.  
+ See the MAINVIEW.CPP file that is part of the MFC OLE sample [OCLIENT](../visual-cpp-samples.md) for an example of how these functions work together.  
   
  For more information, see:  
   

@@ -130,7 +130,7 @@ PAINTSTRUCT m_ps;
   See the example for [CPaintDC::m_hWnd](#cpaintdc__m_hwnd).  
   
 ## See Also  
- [MFC Sample MDI](../../top/visual-cpp-samples.md)   
+ [MFC Sample MDI](../../visual-cpp-samples.md)   
  [CDC Class](../../mfc/reference/cdc-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

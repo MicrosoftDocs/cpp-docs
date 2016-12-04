@@ -307,7 +307,7 @@ void SetAtGrow(
  For more detailed remarks, see [CObArray::SetAtGrow](../../mfc/reference/cobarray-class.md#cobarray__setatgrow).  
   
 ## See Also  
- [MFC Sample COLLECT](../../top/visual-cpp-samples.md)   
+ [MFC Sample COLLECT](../../visual-cpp-samples.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CPtrArray Class](../../mfc/reference/cptrarray-class.md)   
  [CObArray Class](../../mfc/reference/cobarray-class.md)
