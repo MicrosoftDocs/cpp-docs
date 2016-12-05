@@ -61,7 +61,7 @@ translation.priority.mt:
 ## See Also  
  [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/Library/77dfe576-2962-407e-af13-82255df725a1)   
  [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/Library/f9e130a6-8117-49c4-839c-c988f641dc14)   
- [Makecert.exe (Certificate Creation Tool)](../Topic/Makecert.exe%20\(Certificate%20Creation%20Tool\).md)   
+ [Makecert.exe (Certificate Creation Tool)](https://msdn.microsoft.com/library/windows/desktop/aa386968)   
  [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)   
  [Deploying Applications, Services, and Components](/visualstudio/deployment/deploying-applications-services-and-components)   
  [Windows Installer Deployment](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)   
