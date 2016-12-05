@@ -1,5 +1,5 @@
 ---
-title: "Visual C++ change history 2003 - 20151 | Microsoft Docs"
+title: "Visual C++ change history 2003 - 2015 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -52,7 +52,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
 4.  [Concurrency Runtime Breaking Changes](#BK_ConcRT)  
   
-## Visual C++ 2015 Conformance Changes  
+## <a name="VC_2015"></a> Visual C++ 2015 Conformance Changes  
   
 ###  <a name="BK_CRT"></a> C Runtime Library (CRT)  
   
@@ -307,7 +307,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
     |has_trivial_move_assign|is_trivially_move_assignable|  
     |has_trivial_destructor|is_trivially_destructible|  
   
--   **launch::any and launch::sync policies** The nonstandard launch::any and launch::sync policies were removed. Instead, for launch::any, use launch:async &#124; launch:deferred. For launch::sync, use launch::deferred. See [launch Enumeration](../standard-library/future-enumerations.md#launch).  
+-   **launch::any and launch::sync policies** The nonstandard launch::any and launch::sync policies were removed. Instead, for launch::any, use launch:async &#124; launch:deferred. For launch::sync, use launch::deferred. See [launch Enumeration](../standard-library/future-enums.md#launch_enumeration).  
   
 ####  <a name="BK_MFC"></a> MFC and ATL  
   
@@ -330,7 +330,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
  Fortunately, these differences  have little or no impact on most of your source code and when source code or other changes are needed to address these differences,  fixes are usually small and straight-forward. We've included many examples of previously-acceptable source code that might need to be changed *(before)* and the fixes to correct them *(after)*.  
   
- Although these differences can affect your source code or other build artifacts, they don't affect binary compatibility between updates to Visual C++ versions. A more-severe kind of change, the  *breaking change* can affect binary compatibility, but these kinds of binary compatibility breaks only occur between major versions of Visual C++. For example, between Visual C++ 2013 and Visual C++ 2015. For information on the breaking changes that occurred between Visual C++ 2013 and Visual C++ 2015, see [Breaking Changes in Visual C++ 2015](../porting/visual-cpp-change-history-2003-20151.md).  
+ Although these differences can affect your source code or other build artifacts, they don't affect binary compatibility between updates to Visual C++ versions. A more-severe kind of change, the  *breaking change* can affect binary compatibility, but these kinds of binary compatibility breaks only occur between major versions of Visual C++. For example, between Visual C++ 2013 and Visual C++ 2015. For information on the breaking changes that occurred between Visual C++ 2013 and Visual C++ 2015, see [Visual C++ 2015 Conformance Changes](#VC_2015).  
   
 -   [Conformance Improvements in Visual C++ 2015](#VS_RTM)  
   
@@ -2843,7 +2843,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
 -   bool is now a proper type ([Compiler Error C2632](../error-messages/compiler-errors-2/compiler-error-c2632.md)).  
   
--   A UDC can now create ambiguity with overloaded operators ([C2666](8364d15-c6eb-439a-9088-e04a0176692b)).  
+-   A UDC can now create ambiguity with overloaded operators ([C2666](../error-messages/compiler-errors-2/compiler-error-c2666.md)).  
   
 -   More expressions are now considered valid null pointer constants ([Compiler Error C2668](../error-messages/compiler-errors-2/compiler-error-c2668.md)).  
   
@@ -2872,5 +2872,4 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
 -   The compiler now reports unreachable code (C4702).  
   
 ## See Also  
- [Getting Started](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md)   
- [Breaking Changes in Visual C++ 2013](https://msdn.microsoft.com/library/hh409293.aspx)
+[What's New for Visual C++ in Visual Studio](../cpp/what-s-new-for-visual-cpp-in-visual-studio.md)

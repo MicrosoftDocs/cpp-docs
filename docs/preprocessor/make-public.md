@@ -54,7 +54,7 @@ Indicates that a native type should have public assembly accessibility.
   
 `make_public` must be specified at global scope and is only in effect from the point at which it is declared through to the end of the source code file.  
   
-The native type may be implicitly or explicitly private; see [Type Visibility](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_type_visibility) for more information.  
+The native type may be implicitly or explicitly private; see [Type Visibility](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) for more information.  
   
 ## Example  
 The following sample is the contents of a .h file that contains the definitions for two native structs.  
