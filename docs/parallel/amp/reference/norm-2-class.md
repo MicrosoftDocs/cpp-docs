@@ -77,7 +77,7 @@ class norm_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|[norm_2::norm_2 Constructor](#norm_2__norm_2_constructor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[norm_2::norm_2 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -136,7 +136,7 @@ class norm_2;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="norm_2__norm_2_constructor"></a>  norm_2::norm_2 Constructor  
+##  <a name="ctor"></a>  norm_2::norm_2 Constructor  
  Default constructor, initializes all elements with 0.  
   
 ```  

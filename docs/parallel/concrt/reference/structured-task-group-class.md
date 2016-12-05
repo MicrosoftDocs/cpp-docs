@@ -186,7 +186,7 @@ structured_task_group(cancellation_token _CancellationToken);
 ### Remarks  
  The constructor that takes a cancellation token creates a `structured_task_group` that will be canceled when the source associated with the token is canceled. Providing an explicit cancellation token also isolates this structured task group from participating in an implicit cancellation from a parent group with a different token or no token.  
   
-##  <a name="structured_task_group___dtorstructured_task_group_destructor"></a>  structured_task_group::~structured_task_group Destructor  
+##  <a name="dtor"></a>  structured_task_group::~structured_task_group Destructor  
  Destroys a `structured_task_group` object. You are expected to call either the `wait` or `run_and_wait` method on the object prior to the destructor executing, unless the destructor is executing as a result of stack unwinding due to an exception.  
   
 ```

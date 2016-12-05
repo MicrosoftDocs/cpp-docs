@@ -100,7 +100,7 @@ static void __cdecl Block();
   
  This method can throw a variety of exceptions, including [scheduler_resource_allocation_error](../../../parallel/concrt/reference/scheduler-resource-allocation-error-class.md).  
   
-##  <a name="context___dtorcontext_destructor"></a>  Context::~Context Destructor  
+##  <a name="dtor"></a>  Context::~Context Destructor  
   
 ```
 virtual ~Context();

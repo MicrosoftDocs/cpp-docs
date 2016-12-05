@@ -170,7 +170,7 @@ choice(
   
  Move construction is not performed under a lock, which means that it is up to the user to make sure that there are no light-weight tasks in flight at the time of moving. Otherwise, numerous races can occur, leading to exceptions or inconsistent state.  
   
-##  <a name="choice___dtorchoice_destructor"></a>  choice::~choice Destructor  
+##  <a name="dtor"></a>  choice::~choice Destructor  
  Destroys the `choice` messaging block.  
   
 ```  

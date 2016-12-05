@@ -68,7 +68,7 @@ class cancellation_token_registration;
   
  **Namespace:** concurrency  
   
-##  <a name="cancellation_token_registration___dtorcancellation_token_registration_destructor"></a>  cancellation_token_registration::~cancellation_token_registration Destructor  
+##  <a name="dtor"></a>  cancellation_token_registration::~cancellation_token_registration Destructor  
   
 ```
 ~cancellation_token_registration();

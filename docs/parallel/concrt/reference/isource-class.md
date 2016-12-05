@@ -145,7 +145,7 @@ virtual message<T>* consume(
 ### Remarks  
  The `consume` method is similar to `accept`, but must always be preceded by a call to `reserve` that returned `true`.  
   
-##  <a name="isource___dtorisource_destructor"></a>  ISource::~ISource Destructor  
+##  <a name="dtor"></a>  ISource::~ISource Destructor  
  Destroys the `ISource` object.  
   
 ```

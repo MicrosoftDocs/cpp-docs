@@ -112,7 +112,7 @@ class texture;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="texture___dtortexture_destructor"></a>  texture::~texture Destructor  
+##  <a name="dtor"></a>  texture::~texture Destructor  
  Destroys the [texture](texture-class.md) object.  
   
 ```  

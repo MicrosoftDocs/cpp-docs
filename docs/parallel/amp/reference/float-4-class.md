@@ -317,7 +317,7 @@ class float_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[float_4::float_4 Constructor](#float_4__float_4_constructor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[float_4::float_4 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -620,7 +620,7 @@ class float_4;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="float_4__float_4_constructor"></a>  float_4::float_4 Constructor  
+##  <a name="ctor"></a>  float_4::float_4 Constructor  
  Default constructor, initializes all elements with 0.  
   
 ```  

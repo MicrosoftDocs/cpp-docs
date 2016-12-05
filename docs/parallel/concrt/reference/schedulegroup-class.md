@@ -124,7 +124,7 @@ virtual unsigned int Release() = 0;
   
  A schedule group is associated with a particular scheduler instance. You must ensure that all references to the schedule group are released before all references to the scheduler are released, because the latter could result in the scheduler being destroyed. Doing otherwise results in undefined behavior.  
   
-##  <a name="schedulegroup___dtorschedulegroup_destructor"></a>  ScheduleGroup::~ScheduleGroup Destructor  
+##  <a name="dtor"></a>  ScheduleGroup::~ScheduleGroup Destructor  
   
 ```
 virtual ~ScheduleGroup();

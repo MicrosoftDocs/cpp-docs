@@ -399,7 +399,7 @@ virtual void resume_propagation() = 0;
 source_block();
 ```  
   
-##  <a name="source_block___dtorsource_block_destructor"></a>  source_block::~source_block Destructor  
+##  <a name="dtor"></a>  source_block::~source_block Destructor  
  Destroys the `source_block` object.  
   
 ```

@@ -121,7 +121,7 @@ class unorm_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unorm_3::unorm_3 Constructor](#unorm_3__unorm_3_constructor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[unorm_3::unorm_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -225,7 +225,7 @@ class unorm_3;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="unorm_3__unorm_3_constructor"></a>  unorm_3::unorm_3 Constructor  
+##  <a name="ctor"></a>  unorm_3::unorm_3 Constructor  
  Default constructor, initializes all elements with 0.  
   
 ```  

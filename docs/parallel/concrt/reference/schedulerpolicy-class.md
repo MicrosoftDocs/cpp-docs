@@ -140,7 +140,7 @@ SchedulerPolicy(
   
  The third constructor is a copy constructor. Often, the most convenient way to define a new scheduler policy is to copy an existing policy and modify it using the `SetPolicyValue` or `SetConcurrencyLimits` methods.  
   
-##  <a name="schedulerpolicy___dtorschedulerpolicy_destructor"></a>  SchedulerPolicy::~SchedulerPolicy Destructor  
+##  <a name="dtor"></a>  SchedulerPolicy::~SchedulerPolicy Destructor  
  Destroys a scheduler policy.  
   
 ```

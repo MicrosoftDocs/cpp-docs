@@ -60,7 +60,7 @@ class affinity_partitioner;
   
  **Namespace:** concurrency  
   
-##  <a name="affinity_partitioner___dtoraffinity_partitioner_destructor"></a>  affinity_partitioner::~affinity_partitioner Destructor  
+##  <a name="dtor"></a>  affinity_partitioner::~affinity_partitioner Destructor  
  Destroys an `affinity_partitioner` object.  
   
 ```

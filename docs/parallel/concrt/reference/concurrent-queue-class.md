@@ -152,7 +152,7 @@ concurrent_queue(_InputIterator _Begin,
   
  The fourth constructor specifies values supplied by the iterator range [ `_Begin`, `_End`).  
   
-##  <a name="concurrent_queue___dtorconcurrent_queue_destructor"></a>  concurrent_queue::~concurrent_queue Destructor  
+##  <a name="dtor"></a>  concurrent_queue::~concurrent_queue Destructor  
  Destroys the concurrent queue.  
   
 ```

@@ -77,7 +77,7 @@ class float_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|[float_2::float_2 Constructor](#float_2__float_2_constructor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[float_2::float_2 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -136,7 +136,7 @@ class float_2;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="float_2__float_2_constructor"></a>  float_2::float_2 Constructor  
+##  <a name="ctor"></a>  float_2::float_2 Constructor  
  Default constructor, initializes all elements with 0.  
   
 ```  

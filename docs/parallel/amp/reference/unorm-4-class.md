@@ -317,7 +317,7 @@ class unorm_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unorm_4::unorm_4 Constructor](#unorm_4__unorm_4_constructor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[unorm_4::unorm_4 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -620,7 +620,7 @@ class unorm_4;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="unorm_4__unorm_4_constructor"></a>  unorm_4::unorm_4 Constructor  
+##  <a name="ctor"></a>  unorm_4::unorm_4 Constructor  
  Default constructor, initializes all elements with 0.  
   
 ```  

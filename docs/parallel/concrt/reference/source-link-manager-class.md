@@ -196,7 +196,7 @@ void set_bound(size_t _MaxLinks);
 source_link_manager();
 ```  
   
-##  <a name="source_link_manager___dtorsource_link_manager_destructor"></a>  source_link_manager::~source_link_manager Destructor  
+##  <a name="dtor"></a>  source_link_manager::~source_link_manager Destructor  
  Destroys the `source_link_manager` object.  
   
 ```

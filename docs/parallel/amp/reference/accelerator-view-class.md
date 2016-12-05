@@ -56,7 +56,6 @@ class accelerator_view;
   
 |Name|Description|  
 |----------|-----------------|  
-<<<<<<< HEAD
 |[accelerator_view::create_marker Method](#create_marker)|Returns a future to track the completion of all commands submitted so far to this `accelerator_view` object.|  
 |[accelerator_view::flush Method](#flush)|Submits all pending commands queued to the `accelerator_view` object to the accelerator for execution.|  
 |[accelerator_view::get_accelerator Method](#get_accelerator)|Returns the `accelerator` object for the `accelerator_view` object.|  
@@ -65,16 +64,6 @@ class accelerator_view;
 |[accelerator_view::get_queuing_mode Method](#get_queuing_mode)|Returns the queuing mode for the `accelerator_view` object.|  
 |[accelerator_view::get_version Method](#get_version)|Returns the version of the `accelerator_view`.|  
 |[accelerator_view::wait Method](#wait)|Waits for all commands submitted to the `accelerator_view` object to finish.|  
-=======
-|[accelerator_view::create_marker Method](#accelerator_view__create_marker)|Returns a future to track the completion of all commands submitted so far to this `accelerator_view` object.|  
-|[accelerator_view::flush Method](#accelerator_view__flush)|Submits all pending commands queued to the `accelerator_view` object to the accelerator for execution.|  
-|[accelerator_view::get_accelerator Method](#accelerator_view__get_accelerator)|Returns the `accelerator` object for the `accelerator_view` object.|  
-|[accelerator_view::get_is_auto_selection Method](#accelerator_view__get_is_auto_selection)|Returns a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the `accelerator_view` object is passed to a [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each).|  
-|[accelerator_view::get_is_debug Method](#accelerator_view__get_is_debug)|Returns a Boolean value that indicates whether the `accelerator_view` object has the DEBUG layer enabled for extensive error reporting.|  
-|[accelerator_view::get_queuing_mode Method](#accelerator_view__get_queuing_mode)|Returns the queuing mode for the `accelerator_view` object.|  
-|[accelerator_view::get_version Method](#accelerator_view__get_version)|Returns the version of the `accelerator_view`.|  
-|[accelerator_view::wait Method](#accelerator_view__wait)|Waits for all commands submitted to the `accelerator_view` object to finish.|  
->>>>>>> master
   
 ### Public Operators  
   
@@ -119,11 +108,7 @@ Gets the accelerator object for the accelerator_view object.
 __declspec(property(get= get_accelerator)) Concurrency::accelerator accelerator;  
 ```  
   
-<<<<<<< HEAD
 ## <a name="ctor"></a> accelerator_view::accelerator_view Constructor
-=======
-## <a name="accelerator_view__ctor"></a> accelerator_view::accelerator_view Constructor
->>>>>>> master
 Initializes a new instance of the accelerator_view class by copying an existing `accelerator_view` object.  
   
 ### Syntax  
@@ -316,12 +301,8 @@ void wait();
 #### Remarks  
  If the [queuing_mode](concurrency-namespace-enums-amp.md#queuing_mode) is `immediate`, this method returns immediately without blocking.  
   
-<<<<<<< HEAD
 ##  <a name="dtor"></a> accelerator_view::~accelerator_view Destructor
-=======
-##  <a name="accelerator_view__dtor"></a> accelerator_view::~accelerator_view Destructor
->>>>>>> master
-Destroys the accelerator_view object.  
+ Destroys the accelerator_view object.  
   
 #### Syntax  
   

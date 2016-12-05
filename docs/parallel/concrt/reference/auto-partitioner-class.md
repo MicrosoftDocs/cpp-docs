@@ -60,7 +60,7 @@ class auto_partitioner;
   
  **Namespace:** concurrency  
   
-##  <a name="auto_partitioner___dtorauto_partitioner_destructor"></a>  auto_partitioner::~auto_partitioner Destructor  
+##  <a name="dtor"></a>  auto_partitioner::~auto_partitioner Destructor  
  Destroys a `auto_partitioner` object.  
   
 ```

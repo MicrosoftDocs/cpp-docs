@@ -104,7 +104,7 @@ agent(ScheduleGroup& _PGroup);
 ### Remarks  
  The runtime uses the default scheduler if you do not specify the `_PScheduler` or `_PGroup` parameters.  
   
-##  <a name="agent___dtoragent_destructor"></a>  agent::~agent Destructor  
+##  <a name="dtor"></a>  agent::~agent Destructor  
  Destroys the agent.  
   
 ```

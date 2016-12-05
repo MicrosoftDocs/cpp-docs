@@ -115,7 +115,7 @@ class texture_view<const value_type, _Rank> : public details::_Texture_base<valu
   
  **Namespace:** concurrency::graphics  
   
-##  <a name="texture_view___dtortexture_view_destructor"></a>  texture_view::~texture_view Destructor  
+##  <a name="dtor"></a>  texture_view::~texture_view Destructor  
  Destroys the `texture_view` instance.  
   
 ```  

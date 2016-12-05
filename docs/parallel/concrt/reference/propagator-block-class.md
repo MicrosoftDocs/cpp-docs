@@ -207,7 +207,7 @@ virtual message_status propagate_message(
 propagator_block();
 ```  
   
-##  <a name="propagator_block___dtorpropagator_block_destructor"></a>  propagator_block::~propagator_block Destructor  
+##  <a name="dtor"></a>  propagator_block::~propagator_block Destructor  
  Destroys a `propagator_block` object.  
   
 ```

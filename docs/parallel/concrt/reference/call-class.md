@@ -135,7 +135,7 @@ call(
   
  The type `filter_method` is a functor with signature `bool (T const &)` which is invoked by this `call` messaging block to determine whether or not it should accept an offered message.  
   
-##  <a name="call___dtorcall_destructor"></a>  call::~call Destructor  
+##  <a name="dtor"></a>  call::~call Destructor  
  Destroys the `call` messaging block.  
   
 ```

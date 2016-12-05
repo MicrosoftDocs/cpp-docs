@@ -244,7 +244,7 @@ timer(
 ### Remarks  
  The runtime uses the default scheduler if you do not specify the `_Scheduler` or `_ScheduleGroup` parameters.  
   
-##  <a name="timer___dtortimer_destructor"></a>  timer::~timer Destructor  
+##  <a name="dtor"></a>  timer::~timer Destructor  
  Destroys a `timer` messaging block.  
   
 ```

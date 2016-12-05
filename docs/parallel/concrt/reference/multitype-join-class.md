@@ -202,7 +202,7 @@ multitype_join(
   
  Move construction is not performed under a lock, which means that it is up to the user to make sure that there are no light-weight tasks in flight at the time of moving. Otherwise, numerous races can occur, leading to exceptions or inconsistent state.  
   
-##  <a name="multitype_join___dtormultitype_join_destructor"></a>  multitype_join::~multitype_join Destructor  
+##  <a name="dtor"></a>  multitype_join::~multitype_join Destructor  
  Destroys the `multitype_join` messaging block.  
   
 ```  

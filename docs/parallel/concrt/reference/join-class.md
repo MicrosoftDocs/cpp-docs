@@ -173,7 +173,7 @@ join(
   
  The type `filter_method` is a functor with signature `bool (T const &)` which is invoked by this `join` messaging block to determine whether or not it should accept an offered message.  
   
-##  <a name="join___dtorjoin_destructor"></a>  join::~join Destructor  
+##  <a name="dtor"></a>  join::~join Destructor  
  Destroys the `join` block.  
   
 ```

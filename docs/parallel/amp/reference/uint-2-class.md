@@ -78,7 +78,7 @@ class uint_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|[uint_2::uint_2 Constructor](#uint_2__uint_2_constructor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[uint_2::uint_2 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -143,7 +143,7 @@ class uint_2;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="uint_2__uint_2_constructor"></a>  uint_2::uint_2 Constructor  
+##  <a name="ctor"></a>  uint_2::uint_2 Constructor  
  Default constructor, initializes all elements with 0.  
   
 ```  

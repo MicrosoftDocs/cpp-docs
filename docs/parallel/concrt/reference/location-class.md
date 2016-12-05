@@ -75,7 +75,7 @@ class location;
   
  **Namespace:** concurrency  
   
-##  <a name="location___dtorlocation_destructor"></a>  location::~location Destructor  
+##  <a name="dtor"></a>  location::~location Destructor  
  Destroys a `location` object.  
   
 ```

@@ -146,7 +146,7 @@ ordered_message_processor();
 ### Remarks  
  This `ordered_message_processor` will not schedule asynchronous or synchronous handlers until the `initialize` function is called.  
   
-##  <a name="ordered_message_processor___dtorordered_message_processor_destructor"></a>  ordered_message_processor::~ordered_message_processor Destructor  
+##  <a name="dtor"></a>  ordered_message_processor::~ordered_message_processor Destructor  
  Destroys the `ordered_message_processor` object.  
   
 ```

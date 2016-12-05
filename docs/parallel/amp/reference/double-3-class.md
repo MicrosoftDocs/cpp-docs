@@ -121,7 +121,7 @@ class double_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[double_3::double_3 Constructor](#double_3__double_3_constructor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[double_3::double_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -226,7 +226,7 @@ class double_3;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="double_3__double_3_constructor"></a>  double_3::double_3 Constructor  
+##  <a name="ctor"></a>  double_3::double_3 Constructor  
  Default constructor, initializes all elements with 0.  
   
 ```  

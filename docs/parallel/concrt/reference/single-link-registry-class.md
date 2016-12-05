@@ -149,7 +149,7 @@ virtual bool remove(_EType _Link);
 single_link_registry();
 ```  
   
-##  <a name="single_link_registry___dtorsingle_link_registry_destructor"></a>  single_link_registry::~single_link_registry Destructor  
+##  <a name="dtor"></a>  single_link_registry::~single_link_registry Destructor  
  Destroys the `single_link_registry` object.  
   
 ```

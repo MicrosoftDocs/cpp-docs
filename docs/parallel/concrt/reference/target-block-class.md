@@ -299,7 +299,7 @@ void sync_send(_Inout_opt_ message<_Source_type>* _PMessage);
 target_block();
 ```  
   
-##  <a name="target_block___dtortarget_block_destructor"></a>  target_block::~target_block Destructor  
+##  <a name="dtor"></a>  target_block::~target_block Destructor  
  Destroys the `target_block` object.  
   
 ```

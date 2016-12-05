@@ -115,7 +115,7 @@ void lock_read();
 reader_writer_lock();
 ```  
   
-##  <a name="reader_writer_lock___dtorreader_writer_lock_destructor"></a>  reader_writer_lock::~reader_writer_lock Destructor  
+##  <a name="dtor"></a>  reader_writer_lock::~reader_writer_lock Destructor  
  Destroys the `reader_writer_lock` object.  
   
 ```

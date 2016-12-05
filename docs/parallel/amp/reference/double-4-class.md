@@ -317,7 +317,7 @@ class double_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[double_4::double_4 Constructor](#double_4__double_4_constructor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[double_4::double_4 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -620,7 +620,7 @@ class double_4;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="double_4__double_4_constructor"></a>  double_4::double_4 Constructor  
+##  <a name="ctor"></a>  double_4::double_4 Constructor  
  Default constructor, initializes all elements with 0.  
   
 ```  

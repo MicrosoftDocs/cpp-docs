@@ -155,7 +155,7 @@ virtual void link_target_notification(_Inout_ ITarget<T>* _PTarget);
  `_PTarget`  
  A pointer to the newly linked target.  
   
-##  <a name="overwrite_buffer___dtoroverwrite_buffer_destructor"></a>  overwrite_buffer::~overwrite_buffer Destructor  
+##  <a name="dtor"></a>  overwrite_buffer::~overwrite_buffer Destructor  
  Destroys the `overwrite_buffer` messaging block.  
   
 ```

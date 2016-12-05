@@ -129,7 +129,7 @@ message(
 ### Remarks  
  The constructor that takes a pointer to a `message` object as an argument throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if the parameter `_Msg` is `NULL`.  
   
-##  <a name="message___dtormessage_destructor"></a>  message::~message Destructor  
+##  <a name="dtor"></a>  message::~message Destructor  
  Destroys the `message` object.  
   
 ```

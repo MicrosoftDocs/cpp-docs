@@ -119,7 +119,7 @@ combinable(const combinable& _Copy);
   
  The third constructor is the copy constructor.  
   
-##  <a name="combinable___dtorcombinable_destructor"></a>  combinable::~combinable Destructor  
+##  <a name="dtor"></a>  combinable::~combinable Destructor  
  Destroys a `combinable` object.  
   
 ```

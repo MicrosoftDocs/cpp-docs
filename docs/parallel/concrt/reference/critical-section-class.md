@@ -92,7 +92,7 @@ class critical_section;
 critical_section();
 ```  
   
-##  <a name="critical_section___dtorcritical_section_destructor"></a>  critical_section::~critical_section Destructor  
+##  <a name="dtor"></a>  critical_section::~critical_section Destructor  
  Destroys a critical section.  
   
 ```

@@ -329,7 +329,7 @@ unbounded_buffer(
   
  The type `filter_method` is a functor with signature `bool (_Type const &)` which is invoked by this `unbounded_buffer` messaging block to determine whether or not it should accept an offered message.  
   
-##  <a name="unbounded_buffer___dtorunbounded_buffer_destructor"></a>  unbounded_buffer::~unbounded_buffer Destructor  
+##  <a name="dtor"></a>  unbounded_buffer::~unbounded_buffer Destructor  
  Destroys the `unbounded_buffer` messaging block.  
   
 ```  

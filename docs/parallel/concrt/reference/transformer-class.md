@@ -282,7 +282,7 @@ transformer(
   
  The type `filter_method` is a functor with signature `bool (_Input const &)` which is invoked by this `transformer` messaging block to determine whether or not it should accept an offered message.  
   
-##  <a name="transformer___dtortransformer_destructor"></a>  transformer::~transformer Destructor  
+##  <a name="dtor"></a>  transformer::~transformer Destructor  
  Destroys the `transformer` messaging block.  
   
 ```

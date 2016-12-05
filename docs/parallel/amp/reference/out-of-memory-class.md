@@ -50,7 +50,7 @@ class out_of_memory : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[out_of_memory::out_of_memory Constructor] --brokenlink-- (#out_of_memory::out_of_memory%20Constructor.md)|Initializes a new instance of the `out_of_memory` class.|  
+|[out_of_memory::out_of_memory Constructor](#ctor)|Initializes a new instance of the `out_of_memory` class.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -63,7 +63,7 @@ class out_of_memory : public runtime_exception;
  **Header:** amprt.h  
   
  **Namespace:** Concurrency  
-## <a name=""></a> out_of_memory::out_of_memory Constructor
+## <a name="ctor"></a> out_of_memory::out_of_memory Constructor
  Initializes a new instance of the class.  
   
 ### Syntax  

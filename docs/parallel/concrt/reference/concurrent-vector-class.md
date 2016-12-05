@@ -325,7 +325,7 @@ concurrent_vector(_InputIterator _Begin,
   
  The last constructor specifies values supplied by the iterator range [ `_Begin`, `_End`).  
   
-##  <a name="concurrent_vector___dtorconcurrent_vector_destructor"></a>  concurrent_vector::~concurrent_vector Destructor  
+##  <a name="dtor"></a>  concurrent_vector::~concurrent_vector Destructor  
  Erases all elements and destroys this concurrent vector.  
   
 ```

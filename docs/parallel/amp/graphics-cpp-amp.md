@@ -162,11 +162,7 @@ void createTextureWithBPC() { *// Create the source data.
 |texture\<T,2>|2048|  
   
 ### Reading from Texture Objects  
-<<<<<<< HEAD
  You can read from a `texture` object by using [texture::operator\[\]](reference/texture-class.md#texture__operator_at), [texture::operator() Operator](reference/texture-class.md#texture__operator_call), or [texture::get Method](reference/texture-class.md#get). The two operators return a value, not a reference. Therefore, you cannot write to a `texture` object by using `texture::operator\[\]`.  
-=======
- You can read from a `texture` object by using [texture::operator\[\]](reference/texture-class.md#texture__operator_at), [texture::operator() Operator](reference/texture-class.md#texture__operator_call), or [texture::get Method](reference/texture-class.md#texture__get_method). The two operators return a value, not a reference. Therefore, you cannot write to a `texture` object by using `texture::operator\[\]`.  
->>>>>>> master
   
 ```cpp  
  
@@ -430,12 +426,7 @@ void write2ComponentTexture() {
  Texture views also support the reading of mipmaps. Read-only texture views (those that have a const element type) offer the most flexibility because a range of mip-levels that is determined at instantiation can be dynamically sampled, and because elements that have 1, 2, or 4 components are supported. Read-write texture views that have elements that have one component also support mipmaps, but only of a level that's determined at instantiation. For more information, see [Texture with Mipmaps](http://blogs.msdn.com/b/nativeconcurrency/archive/2013/08/22/texture-with-mipmaps.aspx) on the Parallel Programming in Native Code blog.  
   
 ### Writing to Texture View Objects  
-<<<<<<< HEAD
  Use the [texture_view::get Method](reference/texture-view-class.md#get) to write to the underlying `texture` through the `texture_view` object. A texture view can be read-only, read-write, or write-only. For a texture view to be writable it must have an element type that is non-const; for a texture view to be readable and writable, its element type must also have only one component. Otherwise, the texture view is read-only. You can only access one mipmap level of a texture at a time through a texture view, and the level is specified when the view is instantiated.  
-=======
- Use the [texture_view::get Method](reference/texture-view-class.md#texture_view__get_method) to write to the underlying `texture` through the `texture_view` object. A texture view can be read-only, read-write, or write-only. For a texture view to be writable it must have an element type that is non-const; for a texture view to be readable and writable, its element type must also have only one component. Otherwise, the texture view is read-only. You can only access one mipmap level of a texture at a time through a texture view, and the level is specified when the view is instantiated.  
->>>>>>> master
-
   
  This example shows how to write to the second-most detailed mipmap level of a texture that has 4 mipmap levels. The most detailed mipmap level is level 0.  
   

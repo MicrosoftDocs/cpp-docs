@@ -51,7 +51,7 @@ This document demonstrates how to use the Concurrency Runtime to move the work t
   
 -   [Cancellation in the PPL](cancellation-in-the-ppl.md)  
   
- We also recommend that you understand the basics of MFC application development and [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] before you start this walkthrough. For more information about MFC, see [MFC Desktop Applications](../../mfc/mfc-desktop-applications.md). For more information about [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)], see [GDI+]--brokenlink--(_gdiplus_GDI_start_cpp).  
+ We also recommend that you understand the basics of MFC application development and [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] before you start this walkthrough. For more information about MFC, see [MFC Desktop Applications](../../mfc/mfc-desktop-applications.md). For more information about [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)], see [GDI+](https://msdn.microsoft.com/en-us/library/windows/desktop/ms533798).  
   
 ##  <a name="top"></a> Sections  
  This walkthrough contains the following sections:  

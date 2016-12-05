@@ -86,7 +86,7 @@ _CRTIMP event();
   
 ### Remarks  
   
-##  <a name="event___dtorevent_destructor"></a>  event::~event Destructor  
+##  <a name="dtor"></a>  event::~event Destructor  
  Destroys an event.  
   
 ```

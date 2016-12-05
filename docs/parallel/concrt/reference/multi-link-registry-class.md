@@ -136,7 +136,7 @@ virtual size_t count();
 multi_link_registry();
 ```  
   
-##  <a name="multi_link_registry___dtormulti_link_registry_destructor"></a>  multi_link_registry::~multi_link_registry Destructor  
+##  <a name="dtor"></a>  multi_link_registry::~multi_link_registry Destructor  
  Destroys the `multi_link_registry` object.  
   
 ```

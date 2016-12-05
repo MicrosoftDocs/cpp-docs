@@ -249,7 +249,7 @@ Scheduler();
   
  You can also create a scheduler explicitly through either the `CurrentScheduler::Create` method or the `Scheduler::Create` method.  
   
-##  <a name="scheduler___dtorscheduler_destructor"></a>  Scheduler::~Scheduler Destructor  
+##  <a name="dtor"></a>  Scheduler::~Scheduler Destructor  
  An object of the `Scheduler` class is implicitly destroyed when all external references to it cease to exist.  
   
 ```

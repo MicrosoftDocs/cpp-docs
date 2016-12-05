@@ -277,7 +277,7 @@ single_assignment(
   
  The type `filter_method` is a functor with signature `bool (T const &)` which is invoked by this `single_assignment` messaging block to determine whether or not it should accept an offered message.  
   
-##  <a name="single_assignment___dtorsingle_assignment_destructor"></a>  single_assignment::~single_assignment Destructor  
+##  <a name="dtor"></a>  single_assignment::~single_assignment Destructor  
  Destroys the `single_assignment` messaging block.  
   
 ```

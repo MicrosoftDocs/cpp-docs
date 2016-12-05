@@ -317,7 +317,7 @@ class int_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[int_4::int_4 Constructor](#int_4__int_4_constructor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[int_4::int_4 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -627,7 +627,7 @@ class int_4;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="int_4__int_4_constructor"></a>  int_4::int_4 Constructor  
+##  <a name="ctor"></a>  int_4::int_4 Constructor  
  Default constructor, initializes all elements with 0.  
   
 ```  

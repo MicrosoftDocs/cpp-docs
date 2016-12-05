@@ -76,7 +76,7 @@ class cancellation_token_source;
   
  **Namespace:** concurrency  
   
-##  <a name="cancellation_token_source___dtorcancellation_token_source_destructor"></a>  cancellation_token_source::~cancellation_token_source Destructor  
+##  <a name="dtor"></a>  cancellation_token_source::~cancellation_token_source Destructor  
   
 ```
 ~cancellation_token_source();

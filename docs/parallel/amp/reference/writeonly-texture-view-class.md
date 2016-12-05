@@ -102,7 +102,7 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="writeonly_texture_view___dtorwriteonly_texture_view_destructor"></a>  writeonly_texture_view::~writeonly_texture_view Destructor  
+##  <a name="dtor"></a>  writeonly_texture_view::~writeonly_texture_view Destructor  
  Destroys the [writeonly_texture_view](writeonly-texture-view-class.md) object.  
   
 ```  

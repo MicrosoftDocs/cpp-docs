@@ -60,7 +60,7 @@ class simple_partitioner;
   
  **Namespace:** concurrency  
   
-##  <a name="simple_partitioner___dtorsimple_partitioner_destructor"></a>  simple_partitioner::~simple_partitioner Destructor  
+##  <a name="dtor"></a>  simple_partitioner::~simple_partitioner Destructor  
  Destroys a `simple_partitioner` object.  
   
 ```

@@ -90,7 +90,7 @@ class ITarget;
   
  **Namespace:** concurrency  
   
-##  <a name="itarget___dtoritarget_destructor"></a>  ITarget::~ITarget Destructor  
+##  <a name="dtor"></a>  ITarget::~ITarget Destructor  
  Destroys the `ITarget` object.  
   
 ```

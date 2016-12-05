@@ -60,7 +60,7 @@ class static_partitioner;
   
  **Namespace:** concurrency  
   
-##  <a name="static_partitioner___dtorstatic_partitioner_destructor"></a>  static_partitioner::~static_partitioner Destructor  
+##  <a name="dtor"></a>  static_partitioner::~static_partitioner Destructor  
  Destroys a `static_partitioner` object.  
   
 ```

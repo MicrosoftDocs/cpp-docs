@@ -176,7 +176,7 @@ task_group(
 ### Remarks  
  The constructor that takes a cancellation token creates a `task_group` that will be canceled when the source associated with the token is canceled. Providing an explicit cancellation token also isolates this task group from participating in an implicit cancellation from a parent group with a different token or no token.  
   
-##  <a name="task_group___dtortask_group_destructor"></a>  task_group::~task_group Destructor  
+##  <a name="dtor"></a>  task_group::~task_group Destructor  
  Destroys a `task_group` object. You are expected to call the either the `wait` or `run_and_wait` method on the object prior to the destructor executing, unless the destructor is executing as the result of stack unwinding due to an exception.  
   
 ```  

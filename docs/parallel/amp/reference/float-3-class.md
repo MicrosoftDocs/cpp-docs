@@ -123,7 +123,7 @@ class float_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[float_3::float_3 Constructor](#float_3__float_3_constructor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[float_3::float_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -228,7 +228,7 @@ class float_3;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="float_3__float_3_constructor"></a>  float_3::float_3 Constructor  
+##  <a name="ctor"></a>  float_3::float_3 Constructor  
  Default constructor, initializes all elements with 0.  
   
 ```  

@@ -121,7 +121,7 @@ class uint_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[uint_3::uint_3 Constructor](#uint_3__uint_3_constructor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[uint_3::uint_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -232,7 +232,7 @@ class uint_3;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="uint_3__uint_3_constructor"></a>  uint_3::uint_3 Constructor  
+##  <a name="ctor"></a>  uint_3::uint_3 Constructor  
  Default constructor, initializes all elements with 0.  
   
 ```  
