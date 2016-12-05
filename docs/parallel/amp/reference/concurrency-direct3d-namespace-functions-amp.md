@@ -115,7 +115,7 @@ accelerator_view create_accelerator_view(
  The `accelerator_view` object created from the passed Direct3D device interface.  
   
 ## Remarks  
- This function creates a new `accelerator_view` object from an existing pointer to a Direct3D device interface. If the function call succeeds, the reference count of the parameter is incremented by means of an `AddRef` call to the interface. You can safely release the object when it is no longer required in your DirectX code. If the method call fails, a [runtime_exception](../Topic/runtime_exception%20Class.md) is thrown.  
+ This function creates a new `accelerator_view` object from an existing pointer to a Direct3D device interface. If the function call succeeds, the reference count of the parameter is incremented by means of an `AddRef` call to the interface. You can safely release the object when it is no longer required in your DirectX code. If the method call fails, a [runtime_exception](runtime-exception-class.md) is thrown.  
   
  The `accelerator_view` object that you create by using this function is thread safe. You must synchronize concurrent use of the `accelerator_view` object. Unsynchronized concurrent usage of the `accelerator_view` object and the raw ID3D11Device interface causes undefined behavior.  
   

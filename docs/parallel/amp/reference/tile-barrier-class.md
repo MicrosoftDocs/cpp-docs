@@ -37,7 +37,7 @@ translation.priority.ht:
 # tile_barrier Class
 Synchronizes the execution of threads that are running in the thread group (the tile) by using `wait` methods. Only the runtime can instantiate this class.  
   
-## Syntax  
+### Syntax 
   
 ```  
 class tile_barrier;  
@@ -49,16 +49,16 @@ class tile_barrier;
   
 |Name|Description|  
 |----------|-----------------|  
-## <a name=""></a>  tile_barrier Constructor](#tile_barrier__ctor)|Initializes a new instance of the `tile_barrier` class.|  
+|[tile_barrier Constructor](#tile_barrier__ctor)|Initializes a new instance of the `tile_barrier` class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[tile_barrier::wait Method](#tile_barrier__wait)|Instructs all threads in the thread group (tile) to stop executing until all threads in the tile have finished waiting.|  
-|[tile_barrier::wait_with_all_memory_fence Method](#tile_barrier__wait_with_all_memory_fence)|Blocks execution of all threads in a tile until all memory accesses have been completed and all threads in the tile have reached this call.|  
-|[tile_barrier::wait_with_global_memory_fence Method](#tile_barrier__wait_with_global_memory_fence)|Blocks execution of all threads in a tile until all global memory accesses have been completed and all threads in the tile have reached this call.|  
-|[tile_barrier::wait_with_tile_static_memory_fence Method](#tile_barrier__wait_with_tile_static_memory_fence)|Blocks execution of all threads in a tile until all `tile_static` memory accesses have been completed and all threads in the tile have reached this call.|  
+|[tile_barrier::wait Method](#tile_barrier__wait_method)|Instructs all threads in the thread group (tile) to stop executing until all threads in the tile have finished waiting.|  
+|[tile_barrier::wait_with_all_memory_fence Method](#tile_barrier__wait_with_all_memory_fence_method)|Blocks execution of all threads in a tile until all memory accesses have been completed and all threads in the tile have reached this call.|  
+|[tile_barrier::wait_with_global_memory_fence Method](#tile_barrier__wait_with_global_memory_fence_method)|Blocks execution of all threads in a tile until all global memory accesses have been completed and all threads in the tile have reached this call.|  
+|[tile_barrier::wait_with_tile_static_memory_fence Method](#tile_barrier__wait_with_tile_static_memory_fence_method)|Blocks execution of all threads in a tile until all `tile_static` memory accesses have been completed and all threads in the tile have reached this call.|  
 
   
 ## Inheritance Hierarchy  
@@ -70,12 +70,51 @@ class tile_barrier;
  **Namespace:** Concurrency  
 
 ## <a name="tile_barrier__ctor"></a>  tile_barrier Constructor  
- 
-## <a name="tile_barrier__wait"></a>  wait   
-## <a name="tile_barrier__wait_with_all_memory_fence"></a>  wait_with_all_memory_fence   
-## <a name="tile_barrier__wait_with_global_memory_fence"></a>  wait_with_global_memory_fence   
-## <a name="tile_barrier__wait_with_tile_static_memory_fence"></a>  wait_with_tile_static_memory_fence   
-
+ Initializes a new instance of the class by copying an existing one.  
+  
+### Syntax 
+  
+```  
+tile_barrier(  
+    const tile_barrier& _Other ) restrict(amp,cpu);  
+```  
+  
+### Parameters  
+ `_Other`  
+ The `tile_barrier` object to copy.  
+## <a name="tile_barrier__wait_method"></a>  wait 
+Instructs all threads in the thread group (tile) to stop execution until all threads in the tile have finished waiting.  
+  
+### Syntax 
+  
+```  
+void wait() const restrict(amp);  
+```    
+## <a name="tile_barrier__wait_with_all_memory_fence_method"></a>  wait_with_all_memory_fence   
+Blocks execution of all threads in a tile until all threads in a tile have reached this call. This ensures that all memory accesses are visible to other threads in the thread tile, and have been executed in program order.  
+  
+### Syntax 
+  
+```  
+void wait_with_all_memory_fence() const restrict(amp);  
+```  
+  
+## <a name="tile_barrier__wait_with_global_memory_fence_method"></a>  wait_with_global_memory_fence   
+Blocks execution of all threads in a tile until all threads in a tile have reached this call. This ensures that all global memory accesses are visible to other threads in the thread tile, and have been executed in program order.  
+  
+### Syntax 
+  
+```  
+void wait_with_global_memory_fence() const  restrict(amp);  
+```
+## <a name="tile_barrier__wait_with_tile_static_memory_fence_method"></a>  wait_with_tile_static_memory_fence   
+Blocks execution of all threads in a tile until all threads in a tile have reached this call. This ensures that `tile_static`memory accesses are visible to other threads in the thread tile, and have been executed in program order.  
+  
+### Syntax 
+  
+```  
+void wait_with_tile_static_memory_fence() const restrict(amp);  
+```  
   
 ## See Also  
  [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)

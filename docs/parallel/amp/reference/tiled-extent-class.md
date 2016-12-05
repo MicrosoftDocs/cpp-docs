@@ -35,7 +35,7 @@ translation.priority.ht:
 # tiled_extent Class
 A `tiled_extent` object is an `extent` object of one to three dimensions that subdivides the extent space into one-, two-, or three-dimensional tiles.  
   
-## Syntax  
+### Syntax  
   
 ```  
 template <
@@ -57,7 +57,7 @@ template <
 class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;  
 ```  
   
-#### Parameters  
+### Parameters  
  `_Dim0`  
  The length of the most significant dimension.  
   
@@ -73,7 +73,7 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_extent::tiled_extent Constructor](#tiled_extent_ctor)|Initializes a new instance of the `tiled_extent` class.|  
+|[tiled_extent::tiled_extent Constructor](#tiled_extent__ctor)|Initializes a new instance of the `tiled_extent` class.|  
 
   
 ### Public Methods  
@@ -116,15 +116,114 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
   
  **Namespace:** Concurrency  
 
-## <a name="tiled_extent_ctor"> </a>  tiled_extent Constructor  
+## <a name="tiled_extent__ctor"> </a>  tiled_extent Constructor  
+Initializes a new instance of the `tiled_extent` class.  
+  
+### Syntax  
+  
+```  
+tiled_extent();  
+  
+tiled_extent(  
+    const Concurrency::extent<rank>& _Other );  
+  
+tiled_extent(  
+    const tiled_extent& _Other );  
+```  
+  
+### Parameters  
+ `_Other`  
+ The `extent` or `tiled_extent` object to copy.  
+  
+
+  
+
 ## <a name="tiled_extent__get_tile_extent"> </a>  get_tile_extent   
+Returns an `extent` object that captures the values of the `tiled_extent` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.  
+  
+### Syntax  
+  
+```  
+Concurrency::extent<rank> get_tile_extent() const restrict(amp,cpu);  
+```  
+  
+### Return Value  
+ An `extent` object that captures the dimensions of this `tiled_extent` instance.  
+  
+
 ## <a name="tiled_extent__pad"> </a>  pad   
+Returns a new `tiled_extent` object with extents adjusted up to be evenly divisible by the tile dimensions.  
+  
+### Syntax  
+  
+```  
+tiled_extent pad() const;  
+```  
+  
+### Return Value  
+ The new `tiled_extent` object, by value. 
 ## <a name="tiled_extent__truncate"> </a>  truncate   
-## <a name="operator_eq"> </a>  operator=   
+Returns a new `tiled_extent` object with extents adjusted down to be evenly divisible by the tile dimensions.  
+  
+### Syntax  
+  
+```  
+tiled_extent truncate() const;  
+```  
+  
+### Return Value  
+ Returns a new `tiled_extent` object with extents adjusted down to be evenly divisible by the tile dimensions.  
+
+## <a name="tiled_extent__operator_eq"> </a>  operator=   
+Copies the contents of the specified `tiled_index` object into this one.  
+  
+### Syntax  
+  
+```  
+tiled_extent&  operator= (  
+    const tiled_extent& _Other ) restrict (amp, cpu);  
+```  
+  
+### Parameters  
+ `_Other`  
+ The `tiled_index` object to copy from.  
+  
+### Return Value  
+ A reference to this `tiled_index` instance.  
+
 ## <a name="tiled_extent__tile_dim0"> </a>  tile_dim0   
+Stores the length of the most significant dimension.  
+  
+### Syntax  
+  
+```  
+static const int tile_dim0 = _Dim0;  
+```  
+  
 ## <a name="tiled_extent__tile_dim1"> </a>  tile_dim1   
+Stores the length of the next-to-most significant dimension.  
+  
+### Syntax  
+  
+```  
+static const int tile_dim1 = _Dim1;  
+```  
 ## <a name="tiled_extent__tile_dim2"> </a>  tile_dim2   
+Stores the length of the least significant dimension.  
+  
+### Syntax  
+  
+```  
+static const int tile_dim2 = _Dim2;  
+```  
 ## <a name="tiled_extent__tile_extent"> </a>  tile_extent   
+  Gets an `extent` object that captures the values of the `tiled_extent` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.  
+  
+### Syntax  
+  
+```  
+__declspec(property(get= get_tile_extent)) Concurrency::extent<rank> tile_extent;  
+```  
   
   
 ## See Also  

@@ -61,7 +61,7 @@ friend class array;
 |Name|Description|  
 |----------|-----------------|  
 |[array::array Constructor](#array__array_constructor)|Initializes a new instance of the `array` class.|  
-|[array::~array Destructor](#array___dtorarray_destructor)|Destroys the `array` object.|  
+|[array::~array Destructor](#array__dtor)|Destroys the `array` object.|  
   
 ### Public Methods  
   
@@ -71,8 +71,8 @@ friend class array;
 |[array::data Method](#array__data_method)|Returns a pointer to the raw data of the array.|  
 |[array::get_accelerator_view Method](#array__get_accelerator_view_method)|Returns the [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) object that represents the location where the array is allocated. This property can be accessed only on the CPU.|  
 |[array::get_associated_accelerator_view Method](#array__get_associated_accelerator_view_method)|Gets the second [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the [array](../../../parallel/amp/reference/array-class.md) object.|  
-|[array::get_cpu_access_type Method](#array__get_cpu_access_type_method)|Returns the [access_type](access_type%20enumeration.md) of the array. This method can be accessed only on the CPU.|  
-|[array::get_extent Method](#array__get_extent_method)|Returns the [extent](../../../parallel/amp/reference/extent-class.md) object of the array.|  
+|[array::get_cpu_access_type Method](#array__get_cpu_access_type_method)|Returns the [access_type](concurrency-namespace-enums-amp.md#access_type) of the array. This method can be accessed only on the CPU.|  
+|[array::get_extent Method](#array__get_extent_method)|Returns the [extent](extent-class.md) object of the array.|  
 
 |[array::reinterpret_as Method](#array__reinterpret_as_method)|Returns a one-dimensional array that contains all the elements in the `array` object.|  
 |[array::section Method](#array__section_method)|Returns a subsection of the [array](../../../parallel/amp/reference/array-class.md) object that is at the specified origin and, optionally, that has the specified extent.|  
@@ -99,7 +99,7 @@ friend class array;
 |----------|-----------------|  
 |[array::accelerator_view Data Member](#array__accelerator_view_data_member)|Gets the [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) object that represents the location where the array is allocated. This property can be accessed only on the CPU.|  
 |[array::associated_accelerator_view Data Member](#array__associated_accelerator_view_data_member)|Gets the second [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the [array](../../../parallel/amp/reference/array-class.md) object.|  
-|[array::cpu_access_type Data Member](#array__cpu_access_type_data_member)|Gets the [access_type](access_type%20enumeration.md) that represents how the CPU can access the storage of the array.|  
+|[array::cpu_access_type Data Member](#array__cpu_access_type_data_member)|Gets the [access_type](concurrency-namespace-enums-amp.md#access_type) that represents how the CPU can access the storage of the array.|  
 |[array::extent Data Member](#array__extent_data_member)|Gets the extent that defines the shape of the array.|  
   
 ## Remarks  
@@ -127,7 +127,7 @@ friend class array;
   
  **Namespace:** Concurrency  
   
-##  <a name="array___dtorarray_destructor"></a>  array::~array Destructor  
+##  <a name="array__dtor"></a>  array::~array Destructor  
  Destroys the `array` object.  
   
 ```  
@@ -468,7 +468,7 @@ array(
  An [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) object that specifies the location of the array.  
   
  `_Cpu_access_type`  
- The desired [access_type](access_type%20enumeration.md)  for the array on the CPU. This parameter has a default value of `access_type_auto` leaving the CPU `access_type` determination to the runtime. The actual CPU `access_type` for the array can be queried using the `get_cpu_access_type` method.  
+ The desired [access_type](concurrency-namespace-enums-amp.md#access_type)  for the array on the CPU. This parameter has a default value of `access_type_auto` leaving the CPU `access_type` determination to the runtime. The actual CPU `access_type` for the array can be queried using the `get_cpu_access_type` method.  
   
  `_Extent`  
  The extent in each dimension of the array.  
@@ -719,7 +719,42 @@ array& operator= (
 ```  
 static const int rank = _Rank;  
 ```  
-  
+## <a name="array__reinterpret_as_method"></a> array::reinterpret_as Method
+Reinterprets the array through a one-dimensional array_view, which optionally may have a different value type than the source array.
+
+### Syntax
+``` 
+template <
+   typename _Value_type2
+>
+array_view<_Value_type2,1> reinterpret_as()restrict(amp,cpu);
+
+template <
+   typename _Value_type2
+>
+array_view<const _Value_type2,1> reinterpret_as() const restrict(amp,cpu);
+``` 
+### Parameters
+`_Value_type2`
+The data type of the returned data.
+
+### Return Value
+An array_view or const array_view object that is based on the array, with the element type reinterpreted from T to ElementType and the rank reduced from N to 1.
+
+### Remarks
+Sometimes it is convenient to view a multi-dimensional array as if it is a linear, one-dimensional array, possibly with a different value type than the source array. You can use this method to achieve this.
+**Caution** Reinterpreting an array object by using a different value type is a potentially unsafe operation. We recommend that you use this functionality carefully. 
+
+The following code provides an example.
+
+```cpp  
+struct RGB { float r; float g; float b; };
+
+array<RGB,3>  a = ...; 
+array_view<float,1> v = a.reinterpret_as<float>(); 
+
+assert(v.extent == 3*a.extent);
+```   
 ##  <a name="array__section_method"></a>  array::section Method  
  Returns a subsection of the [array](../../../parallel/amp/reference/array-class.md) object that is at the specified origin and, optionally, that has the specified extent.  
   

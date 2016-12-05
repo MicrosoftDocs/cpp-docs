@@ -50,11 +50,11 @@ class task_continuation_context : public details::_ContextCallback;
   
 |Name|Description|  
 |----------|-----------------|  
-|[task_continuation_context::get_current_winrt_context Method](reference/task-continuation-context-class.md#task_continuation_context__get_current_winrt_context_method)|Returns a task continuation context object that represents the current winrt thread context.|  
+|[task_continuation_context::get_current_winrt_context Method](#task_continuation_context__get_current_winrt_context_method)|Returns a task continuation context object that represents the current winrt thread context.|  
 |[task_continuation_context::use_arbitrary Method](#task_continuation_context__use_arbitrary_method)|Creates a task continuation context which allows the Runtime to choose the execution context for a continuation.|  
 |[task_continuation_context::use_current Method](#task_continuation_context__use_current_method)|Returns a task continuation context object that represents the current execution context.|  
 |[task_continuation_context::use_default Method](#task_continuation_context__use_default_method)|Creates the default task continuation context.|  
-|[task_continuation_context::use_synchronous_execution Method](reference/task-continuation-context-class.md#task_continuation_context__use_synchronous_execution_method)|Returns a task continuation context object that represents the synchronous execution context.|  
+|[task_continuation_context::use_synchronous_execution Method](#task_continuation_context__use_synchronous_execution_method)|Returns a task continuation context object that represents the synchronous execution context.|  
   
 ## Inheritance Hierarchy  
  `_ContextCallback`  
@@ -66,7 +66,7 @@ class task_continuation_context : public details::_ContextCallback;
   
  **Namespace:** concurrency  
 
-## <a name="task_continuation_context__get_current_winrt_context"></a> get_current_winrt_context
+## <a name="task_continuation_context__get_current_winrt_context_method"></a> get_current_winrt_context
  Returns a task continuation context object that represents the current WinRT thread context.  
   
 ## Syntax  
@@ -137,7 +137,7 @@ static task_continuation_context use_default();
   
  A continuation on a non-apartment aware task will execute in a context the Runtime chooses.  
 
-## <a name="task_continuation_context__use_synchronous_execution"></a> task_continuation_context::use_synchronous_execution  
+## <a name="task_continuation_context__use_synchronous_execution_method"></a> task_continuation_context::use_synchronous_execution  
 Returns a task continuation context object that represents the synchronous execution context.  
   
 ## Syntax  
