@@ -62,7 +62,7 @@ Nearly all drawing in your application occurs in the view's `OnDraw` member func
   
  The example prints whatever string it gets from the document, centered in the view. If the `OnDraw` call is for screen drawing, the `CDC` object passed in `pDC` is a `CPaintDC` whose constructor has already called `BeginPaint`. Calls to drawing functions are made through the device-context pointer. For information about device contexts and drawing calls, see class [CDC](../mfc/reference/cdc-class.md) in the *MFC Reference* and [Working with Window Objects](../mfc/working-with-window-objects.md).  
   
- For more examples of how to write `OnDraw`, see the [MFC Samples](../top/visual-cpp-samples.md).  
+ For more examples of how to write `OnDraw`, see the [MFC Samples](../visual-cpp-samples.md).  
   
 ## See Also  
  [Using Views](../mfc/using-views.md)

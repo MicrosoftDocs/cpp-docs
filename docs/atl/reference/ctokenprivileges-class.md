@@ -303,7 +303,7 @@ CTokenPrivileges& operator= (const TOKEN_PRIVILEGES& rPrivileges) throw(...);
  Casts a value to a pointer to the [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) structure.  
   
 ## See Also  
- [Security Sample](../../top/visual-cpp-samples.md)   
+ [Security Sample](../../visual-cpp-samples.md)   
  [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630)   
  [LUID](http://msdn.microsoft.com/library/windows/desktop/aa379261)   
  [LUID_AND_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379263)   

@@ -57,7 +57,7 @@ This topic describes how to create a basic agent-based application. In this walk
   
 - [Using the file_reader Class in the Application](#useagentclass)  
   
-##  <a name="createApplication"></a> Creating the Console Application  
+##  <a name="createapplication"></a> Creating the Console Application  
  This section shows how to create a Visual C++ console application that references the header files that the program will use.  
   
 #### To create a Visual C++ application by using the Win32 Console Application Wizard  
@@ -78,7 +78,7 @@ This topic describes how to create a basic agent-based application. In this walk
   
  [[Top](#top)]  
   
-##  <a name="createAgentClass"></a> Creating the file_reader Class  
+##  <a name="createagentclass"></a> Creating the file_reader Class  
  This section shows how to create the `file_reader` class. The runtime schedules each agent to perform work in its own context. Therefore, you can create an agent that performs work synchronously, but interacts with other components asynchronously. The `file_reader` class reads data from a given input file and sends data from that file to a given target component.  
   
 #### To create the file_reader class  
@@ -128,7 +128,7 @@ This topic describes how to create a basic agent-based application. In this walk
   
  [[Top](#top)]  
   
-##  <a name="useAgentClass"></a> Using the file_reader Class in the Application  
+##  <a name="useagentclass"></a> Using the file_reader Class in the Application  
  This section shows how to use the `file_reader` class to read the contents of a text file. It also shows how to create a [concurrency::call](../../parallel/concrt/reference/call-class.md) object that receives this file data and calculates its Adler-32 checksum.  
   
 #### To use the file_reader class in your application  

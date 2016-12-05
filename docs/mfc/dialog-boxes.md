@@ -81,7 +81,7 @@ Applications for Windows frequently communicate with the user through dialog box
   
 -   [Dialog boxes in OLE](../mfc/dialog-boxes-in-ole.md)  
   
--   Create an application whose user interface is a dialog box: see the [CMNCTRL1](../top/visual-cpp-samples.md) or [CMNCTRL2](../top/visual-cpp-samples.md) sample programs. The Application Wizard provides this option as well.  
+-   Create an application whose user interface is a dialog box: see the [CMNCTRL1](../visual-cpp-samples.md) or [CMNCTRL2](../visual-cpp-samples.md) sample programs. The Application Wizard provides this option as well.  
   
 -   [Samples](../mfc/dialog-sample-list.md)  
   

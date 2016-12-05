@@ -132,7 +132,7 @@ virtual INT_PTR DoModal();
  All links and/or embeddings are updated unless the user selects the Cancel button.  
   
 ## See Also  
- [MFC Sample OCLIENT](../../top/visual-cpp-samples.md)   
+ [MFC Sample OCLIENT](../../visual-cpp-samples.md)   
  [COleLinksDialog Class](../../mfc/reference/colelinksdialog-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [COleLinksDialog Class](../../mfc/reference/colelinksdialog-class.md)

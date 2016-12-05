@@ -66,7 +66,7 @@ Retrieves data from the current row and places it into the specified buffer.
  A standard `HRESULT`.  
   
 ## Remarks  
- For an example of how to use this function, see the [MultiRead sample](../../top/visual-cpp-samples.md).  
+ For an example of how to use this function, see the [MultiRead sample](../../visual-cpp-samples.md).  
   
 ## Requirements  
  **Header:** atldbcli.h  

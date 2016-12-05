@@ -92,7 +92,7 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
   
 |Name|Description|  
 |----------|-----------------|  
-|[array_view::operator() Operator](#array_view__operator___operator)|Returns the value of the element that is specified by the parameter or parameters.|  
+|[array_view::operator() Operator](#array_view__operator_call)|Returns the value of the element that is specified by the parameter or parameters.|  
 |[array_view::operator[] Operator](#array_view__operator_at_operator)|Returns the element that is specified by the parameters.|  
 |[array_view::operator= Operator](#array_view__operator_eq_operator)|Copies the contents of the specified `array_view` object into this one.|  
   
@@ -376,7 +376,7 @@ array_view(
  A pointer to the source data that will be copied into the new array.  
   
 ##  <a name="array_view__copy_to_method"></a>  array_view::copy_to Method  
- Copies the contents of the [array_view](../../../parallel/amp/reference/array-view-class.md) object to the specified destination object by calling `copy(*this, dest)`.  
+ Copies the contents of the `array_view` object to the specified destination object by calling `copy(*this, dest)`.  
   
 ```  
 void copy_to(
@@ -459,7 +459,7 @@ accelerator_view get_source_accelerator_view() const;
   
 ### Return Value  
   
-##  <a name="array_view__operator___operator"></a>  array_view::operator() Operator  
+##  <a name="array_view__operator_call"></a>  array_view::operator() Operator  
  Returns the value of the element that is specified by the parameter or parameters.  
   
 ```  
@@ -559,7 +559,46 @@ static const int rank = _Rank;
 ```  
 void refresh() const restrict(cpu);
 ```  
+## <a name="array_view__reinterpret_as_method"></a> array_view::reinterpret_as Method
+Reinterprets the array_view through a one-dimensional array_view, which as an option can have a different value type than the source array_view.  
   
+### Syntax  
+  
+```  
+template <  
+    typename _Value_type2  
+>  
+array_view< _Value_type2, _Rank> reinterpret_as() const restrict(amp,cpu);  
+  
+template <  
+    typename _Value_type2  
+>  
+array_view<const _Value_type2, _Rank> reinterpret_as() const restrict(amp,cpu);  
+```  
+  
+### Parameters  
+ `_Value_type2`  
+ The data type of the new `array_view` object.  
+  
+### Return Value  
+ An `array_view` object or a const `array_view` object that is based on this `array_view`, with the element type converted from `T` to `_Value_type2`, and the rank reduced from *N* to 1.  
+  
+### Remarks  
+ Sometimes it is convenient to view a multi-dimensional array as a linear, one-dimensional array, which may have a different value type than the source array. You can achieve this on an `array_view` by using this method.  
+  
+**Warning** Reinterpeting an array_view object by using a different value type is a potentially unsafe operation. This functionality should be used with care.  
+  
+ Here's an example:  
+  
+```cpp  
+struct RGB { float r; float g; float b; };  
+  
+array<RGB,3>  a = ...;   
+array_view<float,1> v = a.reinterpret_as<float>();   
+  
+assert(v.extent == 3*a.extent);  
+```  
+    
 ##  <a name="array_view__section_method"></a>  array_view::section Method  
  Returns a subsection of the [array_view](../../../parallel/amp/reference/array-view-class.md) object that's at the specified origin and, optionally, that has the specified extent.  
   
@@ -654,7 +693,7 @@ void synchronize() const restrict(cpu);
   
 ### Parameters  
  `_Access_type`  
- The intended [access_type](../../../parallel/concrt/reference/concurrency-namespace-enums.md#access_type) on the target [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
+ The intended [access_type](concurrency-namespace-enums-amp.md#access_type) on the target [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
   
 ##  <a name="array_view__synchronize_async_method"></a>  array_view::synchronize_async Method  
  Asynchronously synchronizes any modifications made to the [array_view](../../../parallel/amp/reference/array-view-class.md) object back to its source data.  
@@ -668,7 +707,7 @@ concurrency::completion_future synchronize_async() const restrict(cpu);
   
 ### Parameters  
  `_Access_type`  
- The intended [access_type](../../../parallel/concrt/reference/concurrency-namespace-enums.md#access_type) on the target [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
+ The intended [access_type](concurrency-namespace-enums-amp.md#access_type) on the target [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
   
 ### Return Value  
  A future upon which to wait for the operation to complete.  

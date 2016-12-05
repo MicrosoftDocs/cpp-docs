@@ -15,7 +15,7 @@ manager: "ghogen"
 # Concurrency::graphics namespace enums
 |||  
 |-|-|  
-|[address_mode Enumeration](#address_mode)|[filter_mode Enumeration](#filter_mode)|  
+|[_mode Enumeration](#address_mode)|[filter_mode Enumeration](#filter_mode)|  
   
 ##  <a name="address_mode"></a>  address_mode Enumeration  
  Enumeration type use to denote address modes supported for texture sampling.  

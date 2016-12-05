@@ -461,8 +461,8 @@ virtual void UpdateModifiedFlag();
  This allows the framework to prompt the user to save the document before closing, even if the native data in the document has not been modified.  
   
 ## See Also  
- [MFC Sample CONTAINER](../../top/visual-cpp-samples.md)   
- [MFC Sample MFCBIND](../../top/visual-cpp-samples.md)   
+ [MFC Sample CONTAINER](../../visual-cpp-samples.md)   
+ [MFC Sample MFCBIND](../../visual-cpp-samples.md)   
  [CDocument Class](../../mfc/reference/cdocument-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

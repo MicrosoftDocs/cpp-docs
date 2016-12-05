@@ -406,6 +406,6 @@ HRESULT Write(
  The first three forms call [WriteFile](http://msdn.microsoft.com/library/windows/desktop/aa365747), the last calls [WriteFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365748) to write data to the file. Use [CAtlFile::Seek](#catlfile__seek) to move the file pointer.  
   
 ## See Also  
- [Marquee Sample](../../top/visual-cpp-samples.md)   
+ [Marquee Sample](../../visual-cpp-samples.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [CHandle Class](../../atl/reference/chandle-class.md)

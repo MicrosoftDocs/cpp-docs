@@ -75,7 +75,7 @@ class index;
   
 |Name|Description|  
 |----------|-----------------|  
-|[index::rank Constant](reference/index-class.md#rank_constant)|Stores the rank of the `index` object.|  
+|[index::rank Constant](#rank_constant)|Stores the rank of the `index` object.|  
 
 
   
@@ -83,7 +83,7 @@ class index;
  `index`  
   
 ## Remarks  
- The `index` structure represents a coordinate vector of *N* integers that specifies a unique position in an *N*-dimensional space. The values in the vector are ordered from most significant to least significant. You can retrieve the values of the components using [index::operator= Operator](operator_eq).  
+ The `index` structure represents a coordinate vector of *N* integers that specifies a unique position in an *N*-dimensional space. The values in the vector are ordered from most significant to least significant. You can retrieve the values of the components using [index::operator= Operator](#operator_eq).  
   
 ## Requirements  
  **Header:** amp.h  
@@ -145,7 +145,7 @@ index operator--(
    int
 ) restrict(amp,cpu);
 ```  
-### Return valuesReturn Value
+### Return values
 For the prefix operator, the index object (*this). For the suffix operator, a new index object.
 
 ## <a name="operator_mod_eq"></a>  operator(mod)=   

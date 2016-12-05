@@ -80,7 +80,7 @@ class unbounded_buffer : public propagator_block<multi_link_registry<ITarget<   
 |[unbounded_buffer::reserve_message Method](#unbounded_buffer__reserve_message_method)|Reserves a message previously offered by this `unbounded_buffer` messaging block. (Overrides [source_block::reserve_message](source-block-class.md#source_block__reserve_message_method).)|  
 |[unbounded_buffer::resume_propagation Method](#unbounded_buffer__resume_propagation_method)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](source-block-class.md#source_block__resume_propagation_method).)|  
 |[unbounded_buffer::send_message Method](#unbounded_buffer__send_message_method)|Synchronously passes a message from an `ISource` block to this `unbounded_buffer` messaging block. It is invoked by the `send` method, when called by a source block.|  
-|[unbounded_buffer::supports_anonymous_source Method](#unbounded_buffer__supports_anonymous_source_method)|Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked. (Overrides [ITarget::supports_anonymous_source](../Topic/ITarget-class.md#itarget__supports_anonymous_source_method).)|  
+|[unbounded_buffer::supports_anonymous_source Method](#unbounded_buffer__supports_anonymous_source_method)|Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked. (Overrides [ITarget::supports_anonymous_source](itarget-class.md#itarget__supports_anonymous_source_method).)|  
   
 ## Remarks  
  For more information, see [Asynchronous Message Blocks](../asynchronous-message-blocks.md).  
@@ -193,7 +193,7 @@ virtual message_status propagate_message(
  A pointer to the source block offering the message.  
   
 ### Return Value  
- A [message_status](concurrency_namespace_Enumerations) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md#message_status_enumeration) indication of what the target decided to do with the message.  
   
 ##  <a name="unbounded_buffer__propagate_output_messages_method"></a>  unbounded_buffer::propagate_output_messages Method  
  Places the `message``_PMessage` in this `unbounded_buffer` messaging block and tries to offer it to all of the linked targets.  
@@ -274,7 +274,7 @@ virtual message_status send_message(
  A pointer to the source block offering the message.  
   
 ### Return Value  
- A [message_status](concurrency_namespace_Enumerations) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md#message_status_enumeration) indication of what the target decided to do with the message.  
   
 ##  <a name="unbounded_buffer__supports_anonymous_source_method"></a>  unbounded_buffer::supports_anonymous_source Method  
  Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked.  

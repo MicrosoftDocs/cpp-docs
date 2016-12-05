@@ -58,7 +58,7 @@ A `collection` is a COM object that provides an interface that allows access to 
  [ATL](../atl/active-template-library-atl-concepts.md)  
  Provides links to conceptual topics on how to program using the Active Template Library.  
   
- [ATLCollections Sample](../top/visual-cpp-samples.md)  
+ [ATLCollections Sample](../visual-cpp-samples.md)  
  A sample that demonstrates the use of `ICollectionOnSTLImpl` and `CComEnumOnSTL`, and the implementation of custom copy policy classes.  
   
 ## See Also  

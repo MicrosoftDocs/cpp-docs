@@ -70,7 +70,7 @@ class CRichEditDoc : public COleServerDoc
   
  This Windows Common control (and therefore the [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) and related classes) is available only to programs running under Windows 95/98 and Windows NT versions 3.51 and later.  
   
- For an example of using a rich edit document in an MFC application, see the [WORDPAD](../../top/visual-cpp-samples.md) sample application.  
+ For an example of using a rich edit document in an MFC application, see the [WORDPAD](../../visual-cpp-samples.md) sample application.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -151,7 +151,7 @@ BOOL m_bRTF;
 ```  
   
 ## See Also  
- [MFC Sample WORDPAD](../../top/visual-cpp-samples.md)   
+ [MFC Sample WORDPAD](../../visual-cpp-samples.md)   
  [COleServerDoc Class](../../mfc/reference/coleserverdoc-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CRichEditView Class](../../mfc/reference/cricheditview-class.md)   

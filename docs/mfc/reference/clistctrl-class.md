@@ -3968,7 +3968,7 @@ BOOL Update(int nItem);
   See the example for [CListCtrl::GetSelectedCount](#clistctrl__getselectedcount).  
   
 ## See Also  
- [MFC Sample ROWLIST](../../top/visual-cpp-samples.md)   
+ [MFC Sample ROWLIST](../../visual-cpp-samples.md)   
  [CWnd Class](cwnd-class.md)   
  [Hierarchy Chart](../hierarchy-chart.md)   
  [CImageList Class](cimagelist-class.md)
