@@ -60,24 +60,24 @@ class ordered_message_processor : public message_processor<T>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ordered_message_processor::ordered_message_processor Constructor](#ordered_message_processor__ordered_message_processor_constructor)|Constructs an `ordered_message_processor` object.|  
-|[ordered_message_processor::~ordered_message_processor Destructor](#ordered_message_processor___dtorordered_message_processor_destructor)|Destroys the `ordered_message_processor` object.|  
+|[ordered_message_processor::ordered_message_processor Constructor](#ctor)|Constructs an `ordered_message_processor` object.|  
+|[ordered_message_processor::~ordered_message_processor Destructor](#ctor)|Destroys the `ordered_message_processor` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[ordered_message_processor::async_send Method](#ordered_message_processor__async_send_method)|Asynchronously queues up messages and starts a processing task, if this has not been done already. (Overrides [message_processor::async_send](../../../parallel/concrt/reference/message-processor-class.md#message_processor__async_send_method).)|  
-|[ordered_message_processor::initialize Method](#ordered_message_processor__initialize_method)|Initializes the `ordered_message_processor` object with the appropriate callback function, scheduler and schedule group.|  
-|[ordered_message_processor::initialize_batched_processing Method](#ordered_message_processor__initialize_batched_processing_method)|Initialize batched message processing|  
-|[ordered_message_processor::sync_send Method](#ordered_message_processor__sync_send_method)|Synchronously queues up messages and starts a processing task, if this has not been done already. (Overrides [message_processor::sync_send](../../../parallel/concrt/reference/message-processor-class.md#message_processor__sync_send_method).)|  
-|[ordered_message_processor::wait Method](#ordered_message_processor__wait_method)|A processor-specific spin wait used in destructors of message blocks to make sure that all asynchronous processing tasks have time to finish before destroying the block. (Overrides [message_processor::wait](../../../parallel/concrt/reference/message-processor-class.md#message_processor__wait_method).)|  
+|[ordered_message_processor::async_send Method](#async_send)|Asynchronously queues up messages and starts a processing task, if this has not been done already. (Overrides [message_processor::async_send](../../../parallel/concrt/reference/message-processor-class.md#async_send).)|  
+|[ordered_message_processor::initialize Method](#initialize)|Initializes the `ordered_message_processor` object with the appropriate callback function, scheduler and schedule group.|  
+|[ordered_message_processor::initialize_batched_processing Method](#initialize_batched_processing)|Initialize batched message processing|  
+|[ordered_message_processor::sync_send Method](#sync_send)|Synchronously queues up messages and starts a processing task, if this has not been done already. (Overrides [message_processor::sync_send](../../../parallel/concrt/reference/message-processor-class.md#sync_send).)|  
+|[ordered_message_processor::wait Method](#wait)|A processor-specific spin wait used in destructors of message blocks to make sure that all asynchronous processing tasks have time to finish before destroying the block. (Overrides [message_processor::wait](../../../parallel/concrt/reference/message-processor-class.md#wait).)|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[ordered_message_processor::process_incoming_message Method](#ordered_message_processor__process_incoming_message_method)|The processing function that is called asynchronously. It dequeues messages and begins processing them. (Overrides [message_processor::process_incoming_message](../../../parallel/concrt/reference/message-processor-class.md#message_processor__process_incoming_message_method).)|  
+|[ordered_message_processor::process_incoming_message Method](#process_incoming_message)|The processing function that is called asynchronously. It dequeues messages and begins processing them. (Overrides [message_processor::process_incoming_message](../../../parallel/concrt/reference/message-processor-class.md#process_incoming_message).)|  
   
 ## Inheritance Hierarchy  
  [message_processor](../../../parallel/concrt/reference/message-processor-class.md)  
@@ -89,7 +89,7 @@ class ordered_message_processor : public message_processor<T>;
   
  **Namespace:** concurrency  
   
-##  <a name="ordered_message_processor__async_send_method"></a>  ordered_message_processor::async_send Method  
+##  <a name="async_send"></a>  ordered_message_processor::async_send Method  
  Asynchronously queues up messages and starts a processing task, if this has not been done already.  
   
 ```
@@ -100,7 +100,7 @@ virtual void async_send(_Inout_opt_ message<T>* _Msg);
  `_Msg`  
  A pointer to a message.  
   
-##  <a name="ordered_message_processor__initialize_method"></a>  ordered_message_processor::initialize Method  
+##  <a name="initialize"></a>  ordered_message_processor::initialize Method  
  Initializes the `ordered_message_processor` object with the appropriate callback function, scheduler and schedule group.  
   
 ```
@@ -120,7 +120,7 @@ void initialize(
  `_Handler`  
  The handler functor invoked during callback.  
   
-##  <a name="ordered_message_processor__initialize_batched_processing_method"></a>  ordered_message_processor::initialize_batched_processing Method  
+##  <a name="initialize_batched_processing"></a>  ordered_message_processor::initialize_batched_processing Method  
  Initialize batched message processing  
   
 ```
@@ -136,7 +136,7 @@ virtual void initialize_batched_processing(
  `_Propagator`  
  The propagator functor invoked during callback.  
   
-##  <a name="ordered_message_processor__ordered_message_processor_constructor"></a>  ordered_message_processor::ordered_message_processor Constructor  
+##  <a name="ctor"></a>  ordered_message_processor::ordered_message_processor Constructor  
  Constructs an `ordered_message_processor` object.  
   
 ```
@@ -156,14 +156,14 @@ virtual ~ordered_message_processor();
 ### Remarks  
  Waits for all outstanding asynchronous operations before destroying the processor.  
   
-##  <a name="ordered_message_processor__process_incoming_message_method"></a>  ordered_message_processor::process_incoming_message Method  
+##  <a name="process_incoming_message"></a>  ordered_message_processor::process_incoming_message Method  
  The processing function that is called asynchronously. It dequeues messages and begins processing them.  
   
 ```
 virtual void process_incoming_message();
 ```  
   
-##  <a name="ordered_message_processor__sync_send_method"></a>  ordered_message_processor::sync_send Method  
+##  <a name="sync_send"></a>  ordered_message_processor::sync_send Method  
  Synchronously queues up messages and starts a processing task, if this has not been done already.  
   
 ```
@@ -174,7 +174,7 @@ virtual void sync_send(_Inout_opt_ message<T>* _Msg);
  `_Msg`  
  A pointer to a message.  
   
-##  <a name="ordered_message_processor__wait_method"></a>  ordered_message_processor::wait Method  
+##  <a name="wait"></a>  ordered_message_processor::wait Method  
  A processor-specific spin wait used in destructors of message blocks to make sure that all asynchronous processing tasks have time to finish before destroying the block.  
   
 ```

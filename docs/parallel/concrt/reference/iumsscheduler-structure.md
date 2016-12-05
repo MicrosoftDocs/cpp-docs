@@ -49,10 +49,10 @@ struct IUMSScheduler : public IScheduler;
   
 |Name|Description|  
 |----------|-----------------|  
-|[IUMSScheduler::SetCompletionList Method](#iumsscheduler__setcompletionlist_method)|Assigns an `IUMSCompletionList` interface to a UMS thread scheduler.|  
+|[IUMSScheduler::SetCompletionList Method](#setcompletionlist)|Assigns an `IUMSCompletionList` interface to a UMS thread scheduler.|  
   
 ## Remarks  
- If you are implementing a custom scheduler that communicates with the Resource Manager, and you want UMS threads to be handed to your scheduler instead of ordinary Win32 threads, you should provide an implementation of the `IUMSScheduler` interface. In addition, you should set the policy value for the scheduler policy key `SchedulerKind` to be `UmsThreadDefault`. If the policy specifies UMS thread, the `IScheduler` interface that is passed as a parameter to the [IResourceManager::RegisterScheduler](../../../parallel/concrt/reference/iresourcemanager-structure.md#iresourcemanager__registerscheduler_method) method must be an `IUMSScheduler` interface.  
+ If you are implementing a custom scheduler that communicates with the Resource Manager, and you want UMS threads to be handed to your scheduler instead of ordinary Win32 threads, you should provide an implementation of the `IUMSScheduler` interface. In addition, you should set the policy value for the scheduler policy key `SchedulerKind` to be `UmsThreadDefault`. If the policy specifies UMS thread, the `IScheduler` interface that is passed as a parameter to the [IResourceManager::RegisterScheduler](../../../parallel/concrt/reference/iresourcemanager-structure.md#registerscheduler) method must be an `IUMSScheduler` interface.  
   
  The Resource Manager is able to hand you UMS threads only on operating systems that have the UMS feature. 64-bit operating systems with version Windows 7 and higher support UMS threads. If you create a scheduler policy with the `SchedulerKind` key set to the value `UmsThreadDefault` and the underlying platform does not support UMS, the value of the `SchedulerKind` key on that policy will be changed to the value `ThreadScheduler`. You should always read back this policy value before expecting to receive UMS threads.  
   
@@ -68,7 +68,7 @@ struct IUMSScheduler : public IScheduler;
   
  **Namespace:** concurrency  
   
-##  <a name="iumsscheduler__setcompletionlist_method"></a>  IUMSScheduler::SetCompletionList Method  
+##  <a name="setcompletionlist"></a>  IUMSScheduler::SetCompletionList Method  
  Assigns an `IUMSCompletionList` interface to a UMS thread scheduler.  
   
 ```

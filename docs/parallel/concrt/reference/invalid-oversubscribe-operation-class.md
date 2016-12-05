@@ -49,7 +49,7 @@ class invalid_oversubscribe_operation : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_oversubscribe_operation::invalid_oversubscribe_operation Constructor](#invalid_oversubscribe_operation__invalid_oversubscribe_operation_constructor)|Overloaded. Constructs an `invalid_oversubscribe_operation` object.|  
+|[invalid_oversubscribe_operation::invalid_oversubscribe_operation Constructor](#ctor)|Overloaded. Constructs an `invalid_oversubscribe_operation` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -61,7 +61,7 @@ class invalid_oversubscribe_operation : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="invalid_oversubscribe_operation__invalid_oversubscribe_operation_constructor"></a>  invalid_oversubscribe_operation::invalid_oversubscribe_operation Constructor  
+##  <a name="ctor"></a>  invalid_oversubscribe_operation::invalid_oversubscribe_operation Constructor  
  Constructs an `invalid_oversubscribe_operation` object.  
   
 ```  

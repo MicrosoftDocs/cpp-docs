@@ -49,16 +49,16 @@ class ScheduleGroup;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ScheduleGroup::~ScheduleGroup Destructor](#schedulegroup___dtorschedulegroup_destructor)||  
+|[ScheduleGroup::~ScheduleGroup Destructor](#ctor)||  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[ScheduleGroup::Id Method](#schedulegroup__id_method)|Returns an identifier for the schedule group that is unique within the scheduler to which the group belongs.|  
-|[ScheduleGroup::Reference Method](#schedulegroup__reference_method)|Increments the schedule group reference count.|  
-|[ScheduleGroup::Release Method](#schedulegroup__release_method)|Decrements the scheduler group reference count.|  
-|[ScheduleGroup::ScheduleTask Method](#schedulegroup__scheduletask_method)|Schedules a light-weight task within the schedule group.|  
+|[ScheduleGroup::Id Method](#id)|Returns an identifier for the schedule group that is unique within the scheduler to which the group belongs.|  
+|[ScheduleGroup::Reference Method](#reference)|Increments the schedule group reference count.|  
+|[ScheduleGroup::Release Method](#release)|Decrements the scheduler group reference count.|  
+|[ScheduleGroup::ScheduleTask Method](#scheduletask)|Schedules a light-weight task within the schedule group.|  
   
 ## Inheritance Hierarchy  
  `ScheduleGroup`  
@@ -68,7 +68,7 @@ class ScheduleGroup;
   
  **Namespace:** concurrency  
   
-##  <a name="schedulegroup__id_method"></a>  ScheduleGroup::Id Method  
+##  <a name="id"></a>  ScheduleGroup::Id Method  
  Returns an identifier for the schedule group that is unique within the scheduler to which the group belongs.  
   
 ```
@@ -78,7 +78,7 @@ virtual unsigned int Id() const = 0;
 ### Return Value  
  An identifier for the schedule group that is unique within the scheduler to which the group belongs.  
   
-##  <a name="schedulegroup__operator_delete_operator"></a>  ScheduleGroup::operator delete Operator  
+##  <a name="operator_delete"></a>  ScheduleGroup::operator delete Operator  
  A `ScheduleGroup` object is destroyed internally by the runtime when all external references to it are released. It cannot be explicitly deleted.  
   
 ```
@@ -96,7 +96,7 @@ void operator delete(
  `_PObject`  
  A pointer to the object to be deleted.  
   
-##  <a name="schedulegroup__reference_method"></a>  ScheduleGroup::Reference Method  
+##  <a name="reference"></a>  ScheduleGroup::Reference Method  
  Increments the schedule group reference count.  
   
 ```
@@ -107,9 +107,9 @@ virtual unsigned int Reference() = 0;
  The newly incremented reference count.  
   
 ### Remarks  
- This is typically used to manage the lifetime of the schedule group for composition. When the reference count of a schedule group falls to zero, the schedule group is deleted by the runtime. A schedule group created using either the [CurrentScheduler::CreateScheduleGroup](../../../parallel/concrt/reference/currentscheduler-class.md#currentscheduler__createschedulegroup_method) method, or the [Scheduler::CreateScheduleGroup](../../../parallel/concrt/reference/scheduler-class.md#scheduler__createschedulegroup_method) method starts out with a reference count of one.  
+ This is typically used to manage the lifetime of the schedule group for composition. When the reference count of a schedule group falls to zero, the schedule group is deleted by the runtime. A schedule group created using either the [CurrentScheduler::CreateScheduleGroup](../../../parallel/concrt/reference/currentscheduler-class.md#createschedulegroup) method, or the [Scheduler::CreateScheduleGroup](../../../parallel/concrt/reference/scheduler-class.md#createschedulegroup) method starts out with a reference count of one.  
   
-##  <a name="schedulegroup__release_method"></a>  ScheduleGroup::Release Method  
+##  <a name="release"></a>  ScheduleGroup::Release Method  
  Decrements the scheduler group reference count.  
   
 ```
@@ -130,7 +130,7 @@ virtual unsigned int Release() = 0;
 virtual ~ScheduleGroup();
 ```  
   
-##  <a name="schedulegroup__scheduletask_method"></a>  ScheduleGroup::ScheduleTask Method  
+##  <a name="scheduletask"></a>  ScheduleGroup::ScheduleTask Method  
  Schedules a light-weight task within the schedule group.  
   
 ```

@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # tiled_index Class
-Provides an index into a [tiled_extent](../../../parallel/amp/reference/tiled-extent-class.md) object. This class has properties to access elements relative to the local tile origin and relative to the global origin. For more information about tiled spaces, see [Using Tiles](../../../parallel/amp/using-tiles.md).  
+Provides an index into a [tiled_extent](tiled-extent-class.md) object. This class has properties to access elements relative to the local tile origin and relative to the global origin. For more information about tiled spaces, see [Using Tiles](../../../parallel/amp/using-tiles.md).  
   
 ## Syntax  
   
@@ -75,14 +75,14 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_index::tiled_index Constructor](#tiled_index__ctor)|Initializes a new instance of the `tile_index` class.|  
+|[tiled_index::tiled_index Constructor](#ctor)|Initializes a new instance of the `tile_index` class.|  
 
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_index::get_tile_extent Method](#tiled_index__get_tile_extent)|Returns an [extent](../../../parallel/amp/reference/extent-class.md) object that has the values of the [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+|[tiled_index::get_tile_extent Method](#tiled_index__get_tile_extent)|Returns an [extent](extent-class.md) object that has the values of the [tiled_index](tiled-index-class.md) template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
 
 
   
@@ -90,11 +90,11 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_index::barrier Constant](#tiled_index__barrier)|Stores a [tile_barrier](../../../parallel/amp/reference/tile-barrier-class.md) object that represents a barrier in the current tile of threads.|  
+|[tiled_index::barrier Constant](#tiled_index__barrier)|Stores a [tile_barrier](tile-barrier-class.md) object that represents a barrier in the current tile of threads.|  
 |||  
-|[tiled_index::global Constant](#tiled_index__global)|Stores an [index](../../../parallel/amp/reference/index-class.md) object of rank 1, 2, or 3 that represents the global index in a [grid](http://msdn.microsoft.com/en-us/f7d1b6a6-586c-4345-b09a-bfc26c492cb0) object.|  
-|[tiled_index::local Constant](#tiled_index__local)|Stores an `index` object of rank 1, 2, or 3 that represents the relative index in the current tile of a [tiled_extent](../../../parallel/amp/reference/tiled-extent-class.md) object.|  
-|[tiled_index::rank Constant](#tiled_index__rank)|Stores the rank of the [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) object.|  
+|[tiled_index::global Constant](#tiled_index__global)|Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the global index in a [grid](http://msdn.microsoft.com/en-us/f7d1b6a6-586c-4345-b09a-bfc26c492cb0) object.|  
+|[tiled_index::local Constant](#tiled_index__local)|Stores an `index` object of rank 1, 2, or 3 that represents the relative index in the current tile of a [tiled_extent](tiled-extent-class.md) object.|  
+|[tiled_index::rank Constant](#tiled_index__rank)|Stores the rank of the [tiled_index](tiled-index-class.md) object.|  
 |[tiled_index::tile Constant](#tiled_index__tile)|Stores an `index` object of rank 1, 2, or 3 that represents the coordinates of the current tile of a `tiled_extent` object.|  
 |[tiled_index::tile_dim0 Constant](#tiled_index__tile_dim0)|Stores the length of the most significant dimension.|  
 |[tiled_index::tile_dim1 Constant](#tiled_index__tile_dim1)|Stores the length of the next-to-most significant dimension.|  
@@ -106,7 +106,7 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_index::tile_extent Data Member](#tile_extent)|Gets an [extent](../../../parallel/amp/reference/extent-class.md) object that has the values of the [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) template arguments [tiled_index](../../../parallel/amp/reference/tiled-index-class.md) template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+|[tiled_index::tile_extent Data Member](#tile_extent)|Gets an [extent](extent-class.md) object that has the values of the [tiled_index](tiled-index-class.md) template arguments [tiled_index](tiled-index-class.md) template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
 
   
 ## Inheritance Hierarchy  
@@ -265,4 +265,4 @@ __declspec(property(get= get_tile_extent)) extent<rank> tile_extent;
 ```  
   
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

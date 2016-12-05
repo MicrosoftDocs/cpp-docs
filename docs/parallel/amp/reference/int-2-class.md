@@ -120,7 +120,7 @@ class int_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|[int_2::size Constant](#int_2__size_constant)||  
+|[int_2::size Constant](#int_2__size)||  
   
 ### Public Data Members  
   
@@ -205,11 +205,11 @@ explicit inline int_2(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="int_2__size_constant"></a>  int_2::size Constant  
+##  <a name="int_2__size"></a>  int_2::size Constant  
   
 ```  
 static const int size = 2;  
 ```  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

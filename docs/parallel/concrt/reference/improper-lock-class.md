@@ -49,7 +49,7 @@ class improper_lock : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[improper_lock::improper_lock Constructor](#improper_lock__improper_lock_constructor)|Overloaded. Constructs an `improper_lock exception`.|  
+|[improper_lock::improper_lock Constructor](#ctor)|Overloaded. Constructs an `improper_lock exception`.|  
   
 ## Remarks  
  Typically, this exception is thrown when an attempt is made to acquire a non-reentrant lock recursively on the same context.  
@@ -64,7 +64,7 @@ class improper_lock : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="improper_lock__improper_lock_constructor"></a>  improper_lock::improper_lock Constructor  
+##  <a name="ctor"></a>  improper_lock::improper_lock Constructor  
  Constructs an `improper_lock exception`.  
   
 ```

@@ -60,22 +60,22 @@ class message : public ::Concurrency::details::_Runtime_object;
   
 |Name|Description|  
 |----------|-----------------|  
-|[message::message Constructor](#message__message_constructor)|Overloaded. Constructs a `message` object.|  
-|[message::~message Destructor](#message___dtormessage_destructor)|Destroys the `message` object.|  
+|[message::message Constructor](#ctor)|Overloaded. Constructs a `message` object.|  
+|[message::~message Destructor](#ctor)|Destroys the `message` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[message::add_ref Method](#message__add_ref_method)|Adds to the reference count for the `message` object. Used for message blocks that need reference counting to determine message lifetimes.|  
-|[message::msg_id Method](#message__msg_id_method)|Returns the ID of the `message` object.|  
-|[message::remove_ref Method](#message__remove_ref_method)|Subtracts from the reference count for the `message` object. Used for message blocks that need reference counting to determine message lifetimes.|  
+|[message::add_ref Method](#add_ref)|Adds to the reference count for the `message` object. Used for message blocks that need reference counting to determine message lifetimes.|  
+|[message::msg_id Method](#msg_id)|Returns the ID of the `message` object.|  
+|[message::remove_ref Method](#remove_ref)|Subtracts from the reference count for the `message` object. Used for message blocks that need reference counting to determine message lifetimes.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[message::payload Data Member](#message__payload_data_member)|The payload of the `message` object.|  
+|[message::payload Data Member](#payload)|The payload of the `message` object.|  
   
 ## Remarks  
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  
@@ -88,7 +88,7 @@ class message : public ::Concurrency::details::_Runtime_object;
   
  **Namespace:** concurrency  
   
-##  <a name="message__add_ref_method"></a>  message::add_ref Method  
+##  <a name="add_ref"></a>  message::add_ref Method  
  Adds to the reference count for the `message` object. Used for message blocks that need reference counting to determine message lifetimes.  
   
 ```
@@ -98,7 +98,7 @@ long add_ref();
 ### Return Value  
  The new value of the reference count.  
   
-##  <a name="message__message_constructor"></a>  message::message Constructor  
+##  <a name="ctor"></a>  message::message Constructor  
  Constructs a `message` object.  
   
 ```
@@ -136,7 +136,7 @@ message(
 virtual ~message();
 ```  
   
-##  <a name="message__msg_id_method"></a>  message::msg_id Method  
+##  <a name="msg_id"></a>  message::msg_id Method  
  Returns the ID of the `message` object.  
   
 ```
@@ -146,14 +146,14 @@ runtime_object_identity msg_id() const;
 ### Return Value  
  The `runtime_object_identity` of the `message` object.  
   
-##  <a name="message__payload_data_member"></a>  message::payload Data Member  
+##  <a name="payload"></a>  message::payload Data Member  
  The payload of the `message` object.  
   
 ```
 T const payload;
 ```  
   
-##  <a name="message__remove_ref_method"></a>  message::remove_ref Method  
+##  <a name="remove_ref"></a>  message::remove_ref Method  
  Subtracts from the reference count for the `message` object. Used for message blocks that need reference counting to determine message lifetimes.  
   
 ```

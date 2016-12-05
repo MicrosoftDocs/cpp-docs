@@ -113,7 +113,7 @@ class norm_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|[norm_2::size Constant](#norm_2__size_constant)||  
+|[norm_2::size Constant](#norm_2__size)||  
   
 ### Public Data Members  
   
@@ -215,11 +215,11 @@ explicit inline norm_2(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="norm_2__size_constant"></a>  norm_2::size Constant  
+##  <a name="norm_2__size"></a>  norm_2::size Constant  
   
 ```  
 static const int size = 2;  
 ```  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

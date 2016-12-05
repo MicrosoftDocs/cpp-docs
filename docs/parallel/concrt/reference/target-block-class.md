@@ -63,35 +63,35 @@ class target_block : public ITarget<typename _SourceLinkRegistry::type::source_t
   
 |Name|Description|  
 |----------|-----------------|  
-|[target_block::target_block Constructor](#target_block__target_block_constructor)|Constructs a `target_block` object.|  
-|[target_block::~target_block Destructor](#target_block___dtortarget_block_destructor)|Destroys the `target_block` object.|  
+|[target_block::target_block Constructor](#ctor)|Constructs a `target_block` object.|  
+|[target_block::~target_block Destructor](#ctor)|Destroys the `target_block` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[target_block::propagate Method](#target_block__propagate_method)|Asynchronously passes a message from a source block to this target block.|  
-|[target_block::send Method](#target_block__send_method)|Synchronously passes a message from a source block to this target block.|  
+|[target_block::propagate Method](#propagate)|Asynchronously passes a message from a source block to this target block.|  
+|[target_block::send Method](#send)|Synchronously passes a message from a source block to this target block.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[target_block::async_send Method](#target_block__async_send_method)|Asynchronously sends a message for processing.|  
-|[target_block::decline_incoming_messages Method](#target_block__decline_incoming_messages_method)|Indicates to the block that new messages should be declined.|  
-|[target_block::enable_batched_processing Method](#target_block__enable_batched_processing_method)|Enables batched processing for this block.|  
-|[target_block::initialize_target Method](#target_block__initialize_target_method)|Initializes the base object. Specifically, the `message_processor` object needs to be initialized.|  
-|[target_block::link_source Method](#target_block__link_source_method)|Links a specified source block to this `target_block` object.|  
-|[target_block::process_input_messages Method](#target_block__process_input_messages_method)|Processes messages that are received as inputs.|  
-|[target_block::process_message Method](#target_block__process_message_method)|When overridden in a derived class, processes a message that was accepted by this `target_block` object.|  
-|[target_block::propagate_message Method](#target_block__propagate_message_method)|When overridden in a derived class, this method asynchronously passes a message from an `ISource` block to this `target_block` object. It is invoked by the `propagate` method, when called by a source block.|  
-|[target_block::register_filter Method](#target_block__register_filter_method)|Registers a filter method that will be invoked on every message received.|  
-|[target_block::remove_sources Method](#target_block__remove_sources_method)|Unlinks all sources after waiting for outstanding asynchronous send operations to complete.|  
-|[target_block::send_message Method](#target_block__send_message_method)|When overridden in a derived class, this method synchronously passes a message from an `ISource` block to this `target_block` object. It is invoked by the `send` method, when called by a source block.|  
-|[target_block::sync_send Method](#target_block__sync_send_method)|Synchronously send a message for processing.|  
-|[target_block::unlink_source Method](#target_block__unlink_source_method)|Unlinks a specified source block from this `target_block` object.|  
-|[target_block::unlink_sources Method](#target_block__unlink_sources_method)|Unlinks all source blocks from this `target_block` object. (Overrides [ITarget::unlink_sources](../../../parallel/concrt/reference/itarget-class.md#itarget__unlink_sources_method).)|  
-|[target_block::wait_for_async_sends Method](#target_block__wait_for_async_sends_method)|Waits for all asynchronous propagations to complete.|  
+|[target_block::async_send Method](#async_send)|Asynchronously sends a message for processing.|  
+|[target_block::decline_incoming_messages Method](#decline_incoming_messages)|Indicates to the block that new messages should be declined.|  
+|[target_block::enable_batched_processing Method](#enable_batched_processing)|Enables batched processing for this block.|  
+|[target_block::initialize_target Method](#initialize_target)|Initializes the base object. Specifically, the `message_processor` object needs to be initialized.|  
+|[target_block::link_source Method](#link_source)|Links a specified source block to this `target_block` object.|  
+|[target_block::process_input_messages Method](#process_input_messages)|Processes messages that are received as inputs.|  
+|[target_block::process_message Method](#process_message)|When overridden in a derived class, processes a message that was accepted by this `target_block` object.|  
+|[target_block::propagate_message Method](#propagate_message)|When overridden in a derived class, this method asynchronously passes a message from an `ISource` block to this `target_block` object. It is invoked by the `propagate` method, when called by a source block.|  
+|[target_block::register_filter Method](#register_filter)|Registers a filter method that will be invoked on every message received.|  
+|[target_block::remove_sources Method](#remove_sources)|Unlinks all sources after waiting for outstanding asynchronous send operations to complete.|  
+|[target_block::send_message Method](#send_message)|When overridden in a derived class, this method synchronously passes a message from an `ISource` block to this `target_block` object. It is invoked by the `send` method, when called by a source block.|  
+|[target_block::sync_send Method](#sync_send)|Synchronously send a message for processing.|  
+|[target_block::unlink_source Method](#unlink_source)|Unlinks a specified source block from this `target_block` object.|  
+|[target_block::unlink_sources Method](#unlink_sources)|Unlinks all source blocks from this `target_block` object. (Overrides [ITarget::unlink_sources](../../../parallel/concrt/reference/itarget-class.md#unlink_sources).)|  
+|[target_block::wait_for_async_sends Method](#wait_for_async_sends)|Waits for all asynchronous propagations to complete.|  
   
 ## Inheritance Hierarchy  
  [ITarget](../../../parallel/concrt/reference/itarget-class.md)  
@@ -103,7 +103,7 @@ class target_block : public ITarget<typename _SourceLinkRegistry::type::source_t
   
  **Namespace:** concurrency  
   
-##  <a name="target_block__async_send_method"></a>  target_block::async_send Method  
+##  <a name="async_send"></a>  target_block::async_send Method  
  Asynchronously sends a message for processing.  
   
 ```
@@ -114,7 +114,7 @@ void async_send(_Inout_opt_ message<_Source_type>* _PMessage);
  `_PMessage`  
  A pointer to the message being sent.  
   
-##  <a name="target_block__decline_incoming_messages_method"></a>  target_block::decline_incoming_messages Method  
+##  <a name="decline_incoming_messages"></a>  target_block::decline_incoming_messages Method  
  Indicates to the block that new messages should be declined.  
   
 ```
@@ -124,14 +124,14 @@ void decline_incoming_messages();
 ### Remarks  
  This method is called by the destructor to ensure that new messages are declined while destruction is in progress.  
   
-##  <a name="target_block__enable_batched_processing_method"></a>  target_block::enable_batched_processing Method  
+##  <a name="enable_batched_processing"></a>  target_block::enable_batched_processing Method  
  Enables batched processing for this block.  
   
 ```
 void enable_batched_processing();
 ```  
   
-##  <a name="target_block__initialize_target_method"></a>  target_block::initialize_target Method  
+##  <a name="initialize_target"></a>  target_block::initialize_target Method  
  Initializes the base object. Specifically, the `message_processor` object needs to be initialized.  
   
 ```
@@ -147,7 +147,7 @@ void initialize_target(
  `_PScheduleGroup`  
  The schedule group to be used for scheduling tasks.  
   
-##  <a name="target_block__link_source_method"></a>  target_block::link_source Method  
+##  <a name="link_source"></a>  target_block::link_source Method  
  Links a specified source block to this `target_block` object.  
   
 ```
@@ -161,7 +161,7 @@ virtual void link_source(_Inout_ ISource<_Source_type>* _PSource);
 ### Remarks  
  This function should not be called directly on a `target_block` object. Blocks should be connected together using the `link_target` method on `ISource` blocks, which will invoke the `link_source` method on the corresponding target.  
   
-##  <a name="target_block__process_input_messages_method"></a>  target_block::process_input_messages Method  
+##  <a name="process_input_messages"></a>  target_block::process_input_messages Method  
  Processes messages that are received as inputs.  
   
 ```
@@ -171,14 +171,14 @@ virtual void process_input_messages(_Inout_ message<_Source_type>* _PMessage);
 ### Parameters  
  `_PMessage`  
   
-##  <a name="target_block__process_message_method"></a>  target_block::process_message Method  
+##  <a name="process_message"></a>  target_block::process_message Method  
  When overridden in a derived class, processes a message that was accepted by this `target_block` object.  
   
 ```
 virtual void process_message(message<_Source_type> *);
 ```  
   
-##  <a name="target_block__propagate_method"></a>  target_block::propagate Method  
+##  <a name="propagate"></a>  target_block::propagate Method  
  Asynchronously passes a message from a source block to this target block.  
   
 ```
@@ -200,7 +200,7 @@ virtual message_status propagate(
 ### Remarks  
  The method throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if either the `_PMessage` or `_PSource` parameter is `NULL`.  
   
-##  <a name="target_block__propagate_message_method"></a>  target_block::propagate_message Method  
+##  <a name="propagate_message"></a>  target_block::propagate_message Method  
  When overridden in a derived class, this method asynchronously passes a message from an `ISource` block to this `target_block` object. It is invoked by the `propagate` method, when called by a source block.  
   
 ```
@@ -219,7 +219,7 @@ virtual message_status propagate_message(
 ### Return Value  
  A [message_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
-##  <a name="target_block__register_filter_method"></a>  target_block::register_filter Method  
+##  <a name="register_filter"></a>  target_block::register_filter Method  
  Registers a filter method that will be invoked on every message received.  
   
 ```
@@ -230,7 +230,7 @@ void register_filter(filter_method const& _Filter);
  `_Filter`  
  The filter method.  
   
-##  <a name="target_block__remove_sources_method"></a>  target_block::remove_sources Method  
+##  <a name="remove_sources"></a>  target_block::remove_sources Method  
  Unlinks all sources after waiting for outstanding asynchronous send operations to complete.  
   
 ```
@@ -240,7 +240,7 @@ void remove_sources();
 ### Remarks  
  All target blocks should call this routine to remove the sources in their destructor.  
   
-##  <a name="target_block__send_method"></a>  target_block::send Method  
+##  <a name="send"></a>  target_block::send Method  
  Synchronously passes a message from a source block to this target block.  
   
 ```
@@ -266,7 +266,7 @@ virtual message_status send(
   
  When `send` returns, the message has either already been accepted, and transferred into the target block, or it has been declined by the target.  
   
-##  <a name="target_block__send_message_method"></a>  target_block::send_message Method  
+##  <a name="send_message"></a>  target_block::send_message Method  
  When overridden in a derived class, this method synchronously passes a message from an `ISource` block to this `target_block` object. It is invoked by the `send` method, when called by a source block.  
   
 ```
@@ -281,7 +281,7 @@ virtual message_status send_message(
 ### Remarks  
  By default, this block returns `declined` unless overridden by a derived class.  
   
-##  <a name="target_block__sync_send_method"></a>  target_block::sync_send Method  
+##  <a name="sync_send"></a>  target_block::sync_send Method  
  Synchronously send a message for processing.  
   
 ```
@@ -292,7 +292,7 @@ void sync_send(_Inout_opt_ message<_Source_type>* _PMessage);
  `_PMessage`  
  A pointer to the message being sent.  
   
-##  <a name="target_block__target_block_constructor"></a>  target_block::target_block Constructor  
+##  <a name="ctor"></a>  target_block::target_block Constructor  
  Constructs a `target_block` object.  
   
 ```
@@ -306,7 +306,7 @@ target_block();
 virtual ~target_block();
 ```  
   
-##  <a name="target_block__unlink_source_method"></a>  target_block::unlink_source Method  
+##  <a name="unlink_source"></a>  target_block::unlink_source Method  
  Unlinks a specified source block from this `target_block` object.  
   
 ```
@@ -317,14 +317,14 @@ virtual void unlink_source(_Inout_ ISource<_Source_type>* _PSource);
  `_PSource`  
  A pointer to the `ISource` block that is to be unlinked.  
   
-##  <a name="target_block__unlink_sources_method"></a>  target_block::unlink_sources Method  
+##  <a name="unlink_sources"></a>  target_block::unlink_sources Method  
  Unlinks all source blocks from this `target_block` object.  
   
 ```
 virtual void unlink_sources();
 ```  
   
-##  <a name="target_block__wait_for_async_sends_method"></a>  target_block::wait_for_async_sends Method  
+##  <a name="wait_for_async_sends"></a>  target_block::wait_for_async_sends Method  
  Waits for all asynchronous propagations to complete.  
   
 ```

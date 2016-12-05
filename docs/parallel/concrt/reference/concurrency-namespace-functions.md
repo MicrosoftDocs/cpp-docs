@@ -1432,7 +1432,7 @@ inline void swap(
  The concurrent vector providing the elements to be swapped, or the vector whose elements are to be exchanged with those of the concurrent vector `_A`.  
   
 ### Remarks  
- The template function is an algorithm specialized on the container class `concurrent_vector` to execute the member function `_A`. [concurrent_vector::swap](../../../parallel/concrt/reference/concurrent-vector-class.md#concurrent_vector__swap_method)( `_B`). These are instances of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function, `template <class T> void swap(T&, T&)`, in the algorithm class works by assignment and is a slow operation. The specialized version in each container is much faster as it can work with the internal representation of the container class.  
+ The template function is an algorithm specialized on the container class `concurrent_vector` to execute the member function `_A`. [concurrent_vector::swap](../../../parallel/concrt/reference/concurrent-vector-class.md#swap)( `_B`). These are instances of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function, `template <class T> void swap(T&, T&)`, in the algorithm class works by assignment and is a slow operation. The specialized version in each container is much faster as it can work with the internal representation of the container class.  
   
  This method is not concurrency-safe. You must ensure that no other threads are performing operations on either of the concurrent vectors when you call this method.  
   
@@ -1585,9 +1585,9 @@ auto when_all(
  A task that completes sucessfully when all of the input tasks have completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>>`. If the input tasks are of type `void` the output task will also be a `task<void>`.  
   
 ### Remarks  
- `when_all` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](../../../parallel/concrt/reference/task-class.md#task__wait_method), it is safe to call this function in a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app on the ASTA (Application STA) thread.  
+ `when_all` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](../../../parallel/concrt/reference/task-class.md#wait), it is safe to call this function in a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app on the ASTA (Application STA) thread.  
   
- If one of the tasks is canceled or throws an exception, the returned task will complete early, in the canceled state, and the exception, if one is encoutered, will be thrown if you call [task::get](../../../parallel/concrt/reference/task-class.md#task__get_method) or `task::wait` on that task.  
+ If one of the tasks is canceled or throws an exception, the returned task will complete early, in the canceled state, and the exception, if one is encoutered, will be thrown if you call [task::get](../../../parallel/concrt/reference/task-class.md#get) or `task::wait` on that task.  
   
  For more information, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
@@ -1632,7 +1632,7 @@ auto when_any(
  A task that completes successfully when any one of the input tasks has completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::pair<T, size_t>>>`, where the first element of the pair is the result of the completing task, and the second element is the index of the task that finished. If the input tasks are of type `void` the output is a `task<size_t>`, where the result is the index of the completing task.  
   
 ### Remarks  
- `when_any` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](../../../parallel/concrt/reference/task-class.md#task__wait_method), it is safe to call this function in a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app on the ASTA (Application STA) thread.  
+ `when_any` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](../../../parallel/concrt/reference/task-class.md#wait), it is safe to call this function in a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app on the ASTA (Application STA) thread.  
   
  For more information, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   

@@ -49,7 +49,7 @@ class operation_timed_out : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[operation_timed_out::operation_timed_out Constructor](#operation_timed_out__operation_timed_out_constructor)|Overloaded. Constructs an `operation_timed_out` object.|  
+|[operation_timed_out::operation_timed_out Constructor](#ctor)|Overloaded. Constructs an `operation_timed_out` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -61,7 +61,7 @@ class operation_timed_out : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="operation_timed_out__operation_timed_out_constructor"></a>  operation_timed_out::operation_timed_out Constructor  
+##  <a name="ctor"></a>  operation_timed_out::operation_timed_out Constructor  
  Constructs an `operation_timed_out` object.  
   
 ```

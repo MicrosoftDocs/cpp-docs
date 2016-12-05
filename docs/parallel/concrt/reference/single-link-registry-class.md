@@ -54,18 +54,18 @@ class single_link_registry : public network_link_registry<_Block>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[single_link_registry::single_link_registry Constructor](#single_link_registry__single_link_registry_constructor)|Constructs a `single_link_registry` object.|  
-|[single_link_registry::~single_link_registry Destructor](#single_link_registry___dtorsingle_link_registry_destructor)|Destroys the `single_link_registry` object.|  
+|[single_link_registry::single_link_registry Constructor](#ctor)|Constructs a `single_link_registry` object.|  
+|[single_link_registry::~single_link_registry Destructor](#ctor)|Destroys the `single_link_registry` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[single_link_registry::add Method](#single_link_registry__add_method)|Adds a link to the `single_link_registry` object. (Overrides [network_link_registry::add](../../../parallel/concrt/reference/network-link-registry-class.md#network_link_registry__add_method).)|  
-|[single_link_registry::begin Method](#single_link_registry__begin_method)|Returns an iterator to the first element in the `single_link_registry` object. (Overrides [network_link_registry::begin](../../../parallel/concrt/reference/network-link-registry-class.md#network_link_registry__begin_method).)|  
-|[single_link_registry::contains Method](#single_link_registry__contains_method)|Searches the `single_link_registry` object for a specified block. (Overrides [network_link_registry::contains](../../../parallel/concrt/reference/network-link-registry-class.md#network_link_registry__contains_method).)|  
-|[single_link_registry::count Method](#single_link_registry__count_method)|Counts the number of items in the `single_link_registry` object. (Overrides [network_link_registry::count](../../../parallel/concrt/reference/network-link-registry-class.md#network_link_registry__count_method).)|  
-|[single_link_registry::remove Method](#single_link_registry__remove_method)|Removes a link from the `single_link_registry` object. (Overrides [network_link_registry::remove](../../../parallel/concrt/reference/network-link-registry-class.md#network_link_registry__remove_method).)|  
+|[single_link_registry::add Method](#add)|Adds a link to the `single_link_registry` object. (Overrides [network_link_registry::add](../../../parallel/concrt/reference/network-link-registry-class.md#add).)|  
+|[single_link_registry::begin Method](#begin)|Returns an iterator to the first element in the `single_link_registry` object. (Overrides [network_link_registry::begin](../../../parallel/concrt/reference/network-link-registry-class.md#begin).)|  
+|[single_link_registry::contains Method](#contains)|Searches the `single_link_registry` object for a specified block. (Overrides [network_link_registry::contains](../../../parallel/concrt/reference/network-link-registry-class.md#contains).)|  
+|[single_link_registry::count Method](#count)|Counts the number of items in the `single_link_registry` object. (Overrides [network_link_registry::count](../../../parallel/concrt/reference/network-link-registry-class.md#count).)|  
+|[single_link_registry::remove Method](#remove)|Removes a link from the `single_link_registry` object. (Overrides [network_link_registry::remove](../../../parallel/concrt/reference/network-link-registry-class.md#remove).)|  
   
 ## Inheritance Hierarchy  
  [network_link_registry](../../../parallel/concrt/reference/network-link-registry-class.md)  
@@ -77,7 +77,7 @@ class single_link_registry : public network_link_registry<_Block>;
   
  **Namespace:** concurrency  
   
-##  <a name="single_link_registry__add_method"></a>  single_link_registry::add Method  
+##  <a name="add"></a>  single_link_registry::add Method  
  Adds a link to the `single_link_registry` object.  
   
 ```
@@ -91,7 +91,7 @@ virtual void add(_EType _Link);
 ### Remarks  
  The method throws an [invalid_link_target](../../../parallel/concrt/reference/invalid-link-target-class.md) exception if there is already a link in this registry.  
   
-##  <a name="single_link_registry__begin_method"></a>  single_link_registry::begin Method  
+##  <a name="begin"></a>  single_link_registry::begin Method  
  Returns an iterator to the first element in the `single_link_registry` object.  
   
 ```
@@ -104,7 +104,7 @@ virtual iterator begin();
 ### Remarks  
  The end state is indicated by a `NULL` link.  
   
-##  <a name="single_link_registry__contains_method"></a>  single_link_registry::contains Method  
+##  <a name="contains"></a>  single_link_registry::contains Method  
  Searches the `single_link_registry` object for a specified block.  
   
 ```
@@ -118,7 +118,7 @@ virtual bool contains(_EType _Link);
 ### Return Value  
  `true` if the link was found, `false` otherwise.  
   
-##  <a name="single_link_registry__count_method"></a>  single_link_registry::count Method  
+##  <a name="count"></a>  single_link_registry::count Method  
  Counts the number of items in the `single_link_registry` object.  
   
 ```
@@ -128,7 +128,7 @@ virtual size_t count();
 ### Return Value  
  The number of items in the `single_link_registry` object.  
   
-##  <a name="single_link_registry__remove_method"></a>  single_link_registry::remove Method  
+##  <a name="remove"></a>  single_link_registry::remove Method  
  Removes a link from the `single_link_registry` object.  
   
 ```
@@ -142,7 +142,7 @@ virtual bool remove(_EType _Link);
 ### Return Value  
  `true` if the link was found and removed, `false` otherwise.  
   
-##  <a name="single_link_registry__single_link_registry_constructor"></a>  single_link_registry::single_link_registry Constructor  
+##  <a name="ctor"></a>  single_link_registry::single_link_registry Constructor  
  Constructs a `single_link_registry` object.  
   
 ```

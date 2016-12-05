@@ -54,23 +54,23 @@ class combinable;
   
 |Name|Description|  
 |----------|-----------------|  
-|[combinable::combinable Constructor](#combinable__combinable_constructor)|Overloaded. Constructs a new `combinable` object.|  
-|[combinable::~combinable Destructor](#combinable___dtorcombinable_destructor)|Destroys a `combinable` object.|  
+|[combinable::combinable Constructor](#ctor)|Overloaded. Constructs a new `combinable` object.|  
+|[combinable::~combinable Destructor](#ctor)|Destroys a `combinable` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[combinable::clear Method](#combinable__clear_method)|Clears any intermediate computational results from a previous usage.|  
-|[combinable::combine Method](#combinable__combine_method)|Computes a final value from the set of thread-local sub-computations by calling the supplied combine functor.|  
-|[combinable::combine_each Method](#combinable__combine_each_method)|Computes a final value from the set of thread-local sub-computations by calling the supplied combine functor once per thread-local sub-computation. The final result is accumulated by the function object.|  
-|[combinable::local Method](#combinable__local_method)|Overloaded. Returns a reference to the thread-private sub-computation.|  
+|[combinable::clear Method](#clear)|Clears any intermediate computational results from a previous usage.|  
+|[combinable::combine Method](#combine)|Computes a final value from the set of thread-local sub-computations by calling the supplied combine functor.|  
+|[combinable::combine_each Method](#combine_each)|Computes a final value from the set of thread-local sub-computations by calling the supplied combine functor once per thread-local sub-computation. The final result is accumulated by the function object.|  
+|[combinable::local Method](#local)|Overloaded. Returns a reference to the thread-private sub-computation.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[combinable::operator= Operator](#combinable__operator_eq_operator)|Assigns to a `combinable` object from another `combinable` object.|  
+|[combinable::operator= Operator](#operator_eq)|Assigns to a `combinable` object from another `combinable` object.|  
   
 ## Remarks  
  For more information, see [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md).  
@@ -83,14 +83,14 @@ class combinable;
   
  **Namespace:** concurrency  
   
-##  <a name="combinable__clear_method"></a>  combinable::clear Method  
+##  <a name="clear"></a>  combinable::clear Method  
  Clears any intermediate computational results from a previous usage.  
   
 ```
 void clear();
 ```  
   
-##  <a name="combinable__combinable_constructor"></a>  combinable::combinable Constructor  
+##  <a name="ctor"></a>  combinable::combinable Constructor  
  Constructs a new `combinable` object.  
   
 ```
@@ -126,7 +126,7 @@ combinable(const combinable& _Copy);
 ~combinable();
 ```  
   
-##  <a name="combinable__combine_method"></a>  combinable::combine Method  
+##  <a name="combine"></a>  combinable::combine Method  
  Computes a final value from the set of thread-local sub-computations by calling the supplied combine functor.  
   
 ```
@@ -144,7 +144,7 @@ T combine(_Function _FnCombine) const;
 ### Return Value  
  The final result of combining all the thread-private sub-computations.  
   
-##  <a name="combinable__combine_each_method"></a>  combinable::combine_each Method  
+##  <a name="combine_each"></a>  combinable::combine_each Method  
  Computes a final value from the set of thread-local sub-computations by calling the supplied combine functor once per thread-local sub-computation. The final result is accumulated by the function object.  
   
 ```
@@ -159,7 +159,7 @@ void combine_each(_Function _FnCombine) const;
  `_FnCombine`  
  The functor that is used to combine one sub-computation. Its signature is `void (T)` or `void (const T&)`, and must be associative and commutative.  
   
-##  <a name="combinable__local_method"></a>  combinable::local Method  
+##  <a name="local"></a>  combinable::local Method  
  Returns a reference to the thread-private sub-computation.  
   
 ```
@@ -175,7 +175,7 @@ T& local(bool& _Exists);
 ### Return Value  
  A reference to the thread-private sub-computation.  
   
-##  <a name="combinable__operator_eq_operator"></a>  combinable::operator= Operator  
+##  <a name="operator_eq"></a>  combinable::operator= Operator  
  Assigns to a `combinable` object from another `combinable` object.  
   
 ```

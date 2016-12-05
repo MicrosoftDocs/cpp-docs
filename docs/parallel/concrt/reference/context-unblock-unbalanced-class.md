@@ -49,7 +49,7 @@ class context_unblock_unbalanced : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[context_unblock_unbalanced::context_unblock_unbalanced Constructor](#context_unblock_unbalanced__context_unblock_unbalanced_constructor)|Overloaded. Constructs a `context_unblock_unbalanced` object.|  
+|[context_unblock_unbalanced::context_unblock_unbalanced Constructor](#ctor)|Overloaded. Constructs a `context_unblock_unbalanced` object.|  
   
 ## Remarks  
  Calls to the `Block` and `Unblock` methods of a `Context` object must always be properly paired. The Concurrency Runtime allows the operations to happen in either order. For example, a call to `Block` can be followed by a call to `Unblock`, or vice-versa. This exception would be thrown if, for instance, two calls to the `Unblock` method were made in a row, on a `Context` object which was not blocked.  
@@ -64,7 +64,7 @@ class context_unblock_unbalanced : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="context_unblock_unbalanced__context_unblock_unbalanced_constructor"></a>  context_unblock_unbalanced::context_unblock_unbalanced Constructor  
+##  <a name="ctor"></a>  context_unblock_unbalanced::context_unblock_unbalanced Constructor  
  Constructs a `context_unblock_unbalanced` object.  
   
 ```  

@@ -120,7 +120,7 @@ class uint_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|[uint_2::size Constant](#uint_2__size_constant)||  
+|[uint_2::size Constant](#uint_2__size)||  
   
 ### Public Data Members  
   
@@ -205,11 +205,11 @@ explicit inline uint_2(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="uint_2__size_constant"></a>  uint_2::size Constant  
+##  <a name="uint_2__size"></a>  uint_2::size Constant  
   
 ```  
 static const int size = 2;  
 ```  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

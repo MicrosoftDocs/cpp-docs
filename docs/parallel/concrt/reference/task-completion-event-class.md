@@ -59,14 +59,14 @@ class task_completion_event<void>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[task_completion_event::task_completion_event Constructor](#task_completion_event__task_completion_event_constructor)|Constructs a `task_completion_event` object.|  
+|[task_completion_event::task_completion_event Constructor](#ctor)|Constructs a `task_completion_event` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[task_completion_event::set Method](#task_completion_event__set_method)|Overloaded. Sets the task completion event.|  
-|[task_completion_event::set_exception Method](#task_completion_event__set_exception_method)|Overloaded. Propagates an exception to all tasks associated with this event.|  
+|[task_completion_event::set Method](#set)|Overloaded. Sets the task completion event.|  
+|[task_completion_event::set_exception Method](#set_exception)|Overloaded. Propagates an exception to all tasks associated with this event.|  
   
 ## Remarks  
  Use a task created from a task completion event when your scenario requires you to create a task that will complete, and thereby have its continuations scheduled for execution, at some point in the future. The `task_completion_event` must have the same type as the task you create, and calling the set method on the task completion event with a value of that type will cause the associated task to complete, and provide that value as a result to its continuations.  
@@ -83,7 +83,7 @@ class task_completion_event<void>;
   
  **Namespace:** concurrency  
   
-##  <a name="task_completion_event__set_method"></a>  task_completion_event::set Method  
+##  <a name="set"></a>  task_completion_event::set Method  
  Sets the task completion event.  
   
 ```
@@ -102,7 +102,7 @@ bool set() const ;
 ### Remarks  
  In the presence of multiple or concurrent calls to `set`, only the first call will succeed and its result (if any) will be stored in the task completion event. The remaining sets are ignored and the method will return false. When you set a task completion event, all the tasks created from that event will immediately complete, and its continuations, if any, will be scheduled. Task completion objects that have a `_ResultType` other than `void` will pass the value                          to their continuations.  
   
-##  <a name="task_completion_event__set_exception_method"></a>  task_completion_event::set_exception Method  
+##  <a name="set_exception"></a>  task_completion_event::set_exception Method  
  Propagates an exception to all tasks associated with this event.  
   
 ```
@@ -119,7 +119,7 @@ __declspec(noinline) bool set_exception(std::exception_ptr _ExceptionPtr) const 
   
 ### Return Value  
   
-##  <a name="task_completion_event__task_completion_event_constructor"></a>  task_completion_event::task_completion_event Constructor  
+##  <a name="ctor"></a>  task_completion_event::task_completion_event Constructor  
  Constructs a `task_completion_event` object.  
   
 ```

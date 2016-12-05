@@ -49,7 +49,7 @@ class unsupported_feature : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unsupported_feature::unsupported_feature Constructor](#unsupported_feature__ctor)|Constructs a new instance of the `unsupported_feature` exception.|  
+|[unsupported_feature::unsupported_feature Constructor](#ctor)|Constructs a new instance of the `unsupported_feature` exception.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -83,4 +83,4 @@ unsupported_feature() throw();
  **Namespace:** Concurrency  
   
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

@@ -181,7 +181,7 @@ class double_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[double_3::size Constant](#double_3__size_constant)||  
+|[double_3::size Constant](#double_3__size)||  
   
 ### Public Data Members  
   
@@ -292,11 +292,11 @@ explicit inline double_3(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="double_3__size_constant"></a>  double_3::size Constant  
+##  <a name="double_3__size"></a>  double_3::size Constant  
   
 ```  
 static const int size = 3;  
 ```  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

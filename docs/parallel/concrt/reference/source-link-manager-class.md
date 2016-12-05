@@ -63,22 +63,22 @@ class source_link_manager;
   
 |Name|Description|  
 |----------|-----------------|  
-|[source_link_manager::source_link_manager Constructor](#source_link_manager__source_link_manager_constructor)|Constructs a `source_link_manager` object.|  
-|[source_link_manager::~source_link_manager Destructor](#source_link_manager___dtorsource_link_manager_destructor)|Destroys the `source_link_manager` object.|  
+|[source_link_manager::source_link_manager Constructor](#ctor)|Constructs a `source_link_manager` object.|  
+|[source_link_manager::~source_link_manager Destructor](#ctor)|Destroys the `source_link_manager` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[source_link_manager::add Method](#source_link_manager__add_method)|Adds a source link to the `source_link_manager` object.|  
-|[source_link_manager::begin Method](#source_link_manager__begin_method)|Returns an iterator to the first element in the `source_link_manager` object.|  
-|[source_link_manager::contains Method](#source_link_manager__contains_method)|Searches the `network_link_registry` within this `source_link_manager` object for a specified block.|  
-|[source_link_manager::count Method](#source_link_manager__count_method)|Counts the number of linked blocks in the `source_link_manager` object.|  
-|[source_link_manager::reference Method](#source_link_manager__reference_method)|Acquires a reference on the `source_link_manager` object.|  
-|[source_link_manager::register_target_block Method](#source_link_manager__register_target_block_method)|Registers the target block that holds this `source_link_manager` object.|  
-|[source_link_manager::release Method](#source_link_manager__release_method)|Releases the reference on the `source_link_manager` object.|  
-|[source_link_manager::remove Method](#source_link_manager__remove_method)|Removes a link from the `source_link_manager` object.|  
-|[source_link_manager::set_bound Method](#source_link_manager__set_bound_method)|Sets the maximum number of source links that can be added to this `source_link_manager` object.|  
+|[source_link_manager::add Method](#add)|Adds a source link to the `source_link_manager` object.|  
+|[source_link_manager::begin Method](#begin)|Returns an iterator to the first element in the `source_link_manager` object.|  
+|[source_link_manager::contains Method](#contains)|Searches the `network_link_registry` within this `source_link_manager` object for a specified block.|  
+|[source_link_manager::count Method](#count)|Counts the number of linked blocks in the `source_link_manager` object.|  
+|[source_link_manager::reference Method](#reference)|Acquires a reference on the `source_link_manager` object.|  
+|[source_link_manager::register_target_block Method](#register_target_block)|Registers the target block that holds this `source_link_manager` object.|  
+|[source_link_manager::release Method](#release)|Releases the reference on the `source_link_manager` object.|  
+|[source_link_manager::remove Method](#remove)|Removes a link from the `source_link_manager` object.|  
+|[source_link_manager::set_bound Method](#set_bound)|Sets the maximum number of source links that can be added to this `source_link_manager` object.|  
   
 ## Remarks  
  Currently, the source blocks are reference counted. This is a wrapper on a `network_link_registry` object that allows concurrent access to the links and provides the ability to reference the links through callbacks. Message blocks ( `target_block`s or `propagator_block`s) should use this class for their source links.  
@@ -91,7 +91,7 @@ class source_link_manager;
   
  **Namespace:** concurrency  
   
-##  <a name="source_link_manager__add_method"></a>  source_link_manager::add Method  
+##  <a name="add"></a>  source_link_manager::add Method  
  Adds a source link to the `source_link_manager` object.  
   
 ```
@@ -102,7 +102,7 @@ void add(_EType _Link);
  `_Link`  
  A pointer to a block to be added.  
   
-##  <a name="source_link_manager__begin_method"></a>  source_link_manager::begin Method  
+##  <a name="begin"></a>  source_link_manager::begin Method  
  Returns an iterator to the first element in the `source_link_manager` object.  
   
 ```
@@ -115,7 +115,7 @@ iterator begin();
 ### Remarks  
  The end state of the iterator is indicated by a `NULL` link.  
   
-##  <a name="source_link_manager__contains_method"></a>  source_link_manager::contains Method  
+##  <a name="contains"></a>  source_link_manager::contains Method  
  Searches the `network_link_registry` within this `source_link_manager` object for a specified block.  
   
 ```
@@ -129,7 +129,7 @@ bool contains(_EType _Link);
 ### Return Value  
  `true` if the specified block was found, `false` otherwise.  
   
-##  <a name="source_link_manager__count_method"></a>  source_link_manager::count Method  
+##  <a name="count"></a>  source_link_manager::count Method  
  Counts the number of linked blocks in the `source_link_manager` object.  
   
 ```
@@ -139,14 +139,14 @@ size_t count();
 ### Return Value  
  The number of linked blocks in the `source_link_manager` object.  
   
-##  <a name="source_link_manager__reference_method"></a>  source_link_manager::reference Method  
+##  <a name="reference"></a>  source_link_manager::reference Method  
  Acquires a reference on the `source_link_manager` object.  
   
 ```
 void reference();
 ```  
   
-##  <a name="source_link_manager__register_target_block_method"></a>  source_link_manager::register_target_block Method  
+##  <a name="register_target_block"></a>  source_link_manager::register_target_block Method  
  Registers the target block that holds this `source_link_manager` object.  
   
 ```
@@ -157,14 +157,14 @@ void register_target_block(_Inout_ ITarget<typename _Block::source_type>* _PTarg
  `_PTarget`  
  The target block holding this `source_link_manager` object.  
   
-##  <a name="source_link_manager__release_method"></a>  source_link_manager::release Method  
+##  <a name="release"></a>  source_link_manager::release Method  
  Releases the reference on the `source_link_manager` object.  
   
 ```
 void release();
 ```  
   
-##  <a name="source_link_manager__remove_method"></a>  source_link_manager::remove Method  
+##  <a name="remove"></a>  source_link_manager::remove Method  
  Removes a link from the `source_link_manager` object.  
   
 ```
@@ -178,7 +178,7 @@ bool remove(_EType _Link);
 ### Return Value  
  `true` if the link was found and removed, `false` otherwise.  
   
-##  <a name="source_link_manager__set_bound_method"></a>  source_link_manager::set_bound Method  
+##  <a name="set_bound"></a>  source_link_manager::set_bound Method  
  Sets the maximum number of source links that can be added to this `source_link_manager` object.  
   
 ```
@@ -189,7 +189,7 @@ void set_bound(size_t _MaxLinks);
  `_MaxLinks`  
  The maximum number of links.  
   
-##  <a name="source_link_manager__source_link_manager_constructor"></a>  source_link_manager::source_link_manager Constructor  
+##  <a name="ctor"></a>  source_link_manager::source_link_manager Constructor  
  Constructs a `source_link_manager` object.  
   
 ```

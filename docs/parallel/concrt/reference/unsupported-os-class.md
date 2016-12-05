@@ -49,7 +49,7 @@ class unsupported_os : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unsupported_os::unsupported_os Constructor](#unsupported_os__unsupported_os_constructor)|Overloaded. Constructs an `unsupported_os` object.|  
+|[unsupported_os::unsupported_os Constructor](#ctor)|Overloaded. Constructs an `unsupported_os` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -61,7 +61,7 @@ class unsupported_os : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="unsupported_os__unsupported_os_constructor"></a>  unsupported_os::unsupported_os Constructor  
+##  <a name="ctor"></a>  unsupported_os::unsupported_os Constructor  
  Constructs an `unsupported_os` object.  
   
 ```

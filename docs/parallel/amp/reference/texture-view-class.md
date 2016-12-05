@@ -76,34 +76,34 @@ class texture_view<const value_type, _Rank> : public details::_Texture_base<valu
   
 |Name|Description|  
 |----------|-----------------|  
-|[texture_view::texture_view Constructor](#texture_view__texture_view_constructor)|Overloaded. Constructs a `texture_view` instance.|  
-|[texture_view::~texture_view Destructor](#texture_view___dtortexture_view_destructor)|Destroys the `texture_view` instance.|  
+|[texture_view::texture_view Constructor](#ctor)|Overloaded. Constructs a `texture_view` instance.|  
+|[texture_view::~texture_view Destructor](#ctor)|Destroys the `texture_view` instance.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[texture_view::gather_alpha Method](#texture_view__gather_alpha_method)|Overloaded. Samples the texture at the specified coordinates by using the specified sampling configuration and returns the alpha (w) components of the four sampled texels.|  
-|[texture_view::gather_blue Method](#texture_view__gather_blue_method)|Overloaded. Samples the texture at the specified coordinates by using the specified sampling configuration and returns the blue (z) components of the four sampled texels.|  
-|[texture_view::gather_green Method](#texture_view__gather_green_method)|Overloaded. Samples the texture at the specified coordinates by using the specified sampling configuration and returns the green (y) components of the four sampled texels.|  
-|[texture_view::gather_red Method](#texture_view__gather_red_method)|Overloaded. Samples the texture at the specified coordinates by using the specified sampling configuration and returns the red (x) components of the four sampled texels.|  
-|[texture_view::get Method](#texture_view__get_method)|Overloaded. Gets the element value by index.|  
-|[texture_view::sample Method](#texture_view__sample_method)|Overloaded. Samples the texture at the specified coordinates and level of detail by using the specified sampling configuration.|  
-|[texture_view::set Method](#texture_view__set_method)|Sets the value of an element by index.|  
+|[texture_view::gather_alpha Method](#gather_alpha)|Overloaded. Samples the texture at the specified coordinates by using the specified sampling configuration and returns the alpha (w) components of the four sampled texels.|  
+|[texture_view::gather_blue Method](#gather_blue)|Overloaded. Samples the texture at the specified coordinates by using the specified sampling configuration and returns the blue (z) components of the four sampled texels.|  
+|[texture_view::gather_green Method](#gather_green)|Overloaded. Samples the texture at the specified coordinates by using the specified sampling configuration and returns the green (y) components of the four sampled texels.|  
+|[texture_view::gather_red Method](#gather_red)|Overloaded. Samples the texture at the specified coordinates by using the specified sampling configuration and returns the red (x) components of the four sampled texels.|  
+|[texture_view::get Method](#get)|Overloaded. Gets the element value by index.|  
+|[texture_view::sample Method](#sample)|Overloaded. Samples the texture at the specified coordinates and level of detail by using the specified sampling configuration.|  
+|[texture_view::set Method](#set)|Sets the value of an element by index.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[texture_view::operator() Operator](#texture_view__operator___operator)|Overloaded. Gets the element value by index.|  
-|[texture_view::operator[] Operator](#texture_view__operator_at_operator)|Overloaded. Gets the element value by index.|  
-|[texture_view::operator= Operator](#texture_view__operator_eq_operator)|Overloaded. Assignment operator.|  
+|[texture_view::operator() Operator](#operator__)|Overloaded. Gets the element value by index.|  
+|[texture_view::operator[] Operator](#operator_at)|Overloaded. Gets the element value by index.|  
+|[texture_view::operator= Operator](#operator_eq)|Overloaded. Assignment operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[texture_view::value_type Data Member](#texture_view__value_type_data_member)|The value type of the elements of the `texture_view`.|  
+|[texture_view::value_type Data Member](#value_type)|The value type of the elements of the `texture_view`.|  
   
 ## Inheritance Hierarchy  
  `_Texture_base`  
@@ -122,7 +122,7 @@ class texture_view<const value_type, _Rank> : public details::_Texture_base<valu
 ~texture_view() restrict(amp, cpu);
 ```  
   
-##  <a name="texture_view__texture_view_constructor"></a>  texture_view::texture_view Constructor  
+##  <a name="ctor"></a>  texture_view::texture_view Constructor  
  Constructs a `texture_view` instance.  
   
 ```  
@@ -183,7 +183,7 @@ texture_view(// [7] copy constructor
  `_Mip_levels`  
  The number of mipmap levels accessible through the `texture_view`.  
   
-##  <a name="texture_view__gather_red_method"></a>  texture_view::gather_red Method  
+##  <a name="gather_red"></a>  texture_view::gather_red Method  
  Samples the texture at the specified coordinates by using the specified sampling configuration and returns the red (x) components of the four sampled texels.  
   
 ```  
@@ -212,7 +212,7 @@ const gather_return_type gather_red(
 ### Return Value  
  A rank 4 short vector containing the red (x) component of the 4 sampled texel values.  
   
-##  <a name="texture_view__gather_green_method"></a>  texture_view::gather_green Method  
+##  <a name="gather_green"></a>  texture_view::gather_green Method  
  Samples the texture at the specified coordinates by using the specified sampling configuration and returns the green (y) components of the four sampled texels.  
   
 ```  
@@ -241,7 +241,7 @@ const gather_return_type gather_green(
 ### Return Value  
  A rank 4 short vector containing the green (y) component of the 4 sampled texel values.  
   
-##  <a name="texture_view__gather_blue_method"></a>  texture_view::gather_blue Method  
+##  <a name="gather_blue"></a>  texture_view::gather_blue Method  
  Samples the texture at the specified coordinates by using the specified sampling configuration and returns the blue (z) components of the four sampled texels.  
   
 ```  
@@ -270,7 +270,7 @@ const gather_return_type gather_blue(
 ### Return Value  
  A rank 4 short vector containing the red (x) component of the 4 sampled texel values.  
   
-##  <a name="texture_view__gather_alpha_method"></a>  texture_view::gather_alpha Method  
+##  <a name="gather_alpha"></a>  texture_view::gather_alpha Method  
  Samples the texture at the specified coordinates by using the specified sampling configuration and returns the alpha (w) components of the four sampled texels.  
   
 ```  
@@ -299,7 +299,7 @@ const gather_return_type gather_alpha(
 ### Return Value  
  A rank 4 short vector containing the alpha (w) component of the 4 sampled texel values.  
   
-##  <a name="texture_view__get_method"></a>  texture_view::get Method  
+##  <a name="get"></a>  texture_view::get Method  
  Gets the value of the element at the specified index.  
   
 ```  
@@ -322,7 +322,7 @@ value_type get(
 ### Return Value  
  The value of the element.  
   
-##  <a name="texture_view__operator_eq_operator"></a>  texture_view::operator= Operator  
+##  <a name="operator_eq"></a>  texture_view::operator= Operator  
  Assigns a view of the same texture as the specified `texture_view` to this `texture_view` instance.  
   
 ```  
@@ -349,7 +349,7 @@ texture_view<const value_type, _Rank>& operator= (// [3] copy constructor
 ### Return Value  
  A reference to this `texture_view` instance.  
   
-##  <a name="texture_view__operator_at_operator"></a>  texture_view::operator[] Operator  
+##  <a name="operator_at"></a>  texture_view::operator[] Operator  
  Returns the element value by index.  
   
 ```  
@@ -375,7 +375,7 @@ value_type operator[] (int _I0) const restrict(amp);
 ### Return Value  
  The element value indexed by `_Index`.  
   
-##  <a name="texture_view__operator___operator"></a>  texture_view::operator() Operator  
+##  <a name="operator__"></a>  texture_view::operator() Operator  
  Returns the element value by index.  
   
 ```  
@@ -432,7 +432,7 @@ value_type operator() (
 ### Return Value  
  The element value indexed by `_Index`.  
   
-##  <a name="texture_view__sample_method"></a>  texture_view::sample Method  
+##  <a name="sample"></a>  texture_view::sample Method  
  Samples the texture at the specified coordinates and level of detail by using the specified sampling configuration.  
   
 ```  
@@ -470,7 +470,7 @@ value_type sample(
 ### Return Value  
  The interpolated sample value.  
   
-##  <a name="texture_view__set_method"></a>  texture_view::set Method  
+##  <a name="set"></a>  texture_view::set Method  
  Sets the value of the element at the specified index to the specified value.  
   
 ```  
@@ -486,7 +486,7 @@ void set(
  `value`  
  The value to set the element to.  
   
-##  <a name="texture_view__value_type_data_member"></a>  texture_view::value_type Data Member  
+##  <a name="value_type"></a>  texture_view::value_type Data Member  
  The value type of the elements of the texture_view.  
   
 ```  
@@ -494,4 +494,4 @@ typedef typename const value_type value_type;
 ```  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

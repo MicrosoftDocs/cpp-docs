@@ -49,7 +49,7 @@ class scheduler_not_attached : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[scheduler_not_attached::scheduler_not_attached Constructor](#scheduler_not_attached__scheduler_not_attached_constructor)|Overloaded. Constructs a `scheduler_not_attached` object.|  
+|[scheduler_not_attached::scheduler_not_attached Constructor](#ctor)|Overloaded. Constructs a `scheduler_not_attached` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -61,7 +61,7 @@ class scheduler_not_attached : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="scheduler_not_attached__scheduler_not_attached_constructor"></a>  scheduler_not_attached::scheduler_not_attached Constructor  
+##  <a name="ctor"></a>  scheduler_not_attached::scheduler_not_attached Constructor  
  Constructs a `scheduler_not_attached` object.  
   
 ```

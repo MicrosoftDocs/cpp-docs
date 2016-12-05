@@ -477,7 +477,7 @@ class norm_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[norm_4::size Constant](#norm_4__size_constant)||  
+|[norm_4::size Constant](#norm_4__size)||  
   
 ### Public Data Members  
   
@@ -711,11 +711,11 @@ explicit inline norm_4(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="norm_4__size_constant"></a>  norm_4::size Constant  
+##  <a name="norm_4__size"></a>  norm_4::size Constant  
   
 ```  
 static const int size = 4;  
 ```  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

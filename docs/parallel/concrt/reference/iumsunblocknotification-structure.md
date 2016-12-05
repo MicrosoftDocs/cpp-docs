@@ -49,8 +49,8 @@ struct IUMSUnblockNotification;
   
 |Name|Description|  
 |----------|-----------------|  
-|[IUMSUnblockNotification::GetContext Method](#iumsunblocknotification__getcontext_method)|Returns the `IExecutionContext` interface for the execution context associated with the thread proxy which has unblocked. Once this method returns and the underlying execution context has been rescheduled via a call to the `IThreadProxy::SwitchTo` method, this interface is no longer valid.|  
-|[IUMSUnblockNotification::GetNextUnblockNotification Method](#iumsunblocknotification__getnextunblocknotification_method)|Returns the next `IUMSUnblockNotification` interface in the chain returned from the method `IUMSCompletionList::GetUnblockNotifications`.|  
+|[IUMSUnblockNotification::GetContext Method](#getcontext)|Returns the `IExecutionContext` interface for the execution context associated with the thread proxy which has unblocked. Once this method returns and the underlying execution context has been rescheduled via a call to the `IThreadProxy::SwitchTo` method, this interface is no longer valid.|  
+|[IUMSUnblockNotification::GetNextUnblockNotification Method](#getnextunblocknotification)|Returns the next `IUMSUnblockNotification` interface in the chain returned from the method `IUMSCompletionList::GetUnblockNotifications`.|  
   
 ## Inheritance Hierarchy  
  `IUMSUnblockNotification`  
@@ -60,7 +60,7 @@ struct IUMSUnblockNotification;
   
  **Namespace:** concurrency  
   
-##  <a name="iumsunblocknotification__getcontext_method"></a>  IUMSUnblockNotification::GetContext Method  
+##  <a name="getcontext"></a>  IUMSUnblockNotification::GetContext Method  
  Returns the `IExecutionContext` interface for the execution context associated with the thread proxy which has unblocked. Once this method returns and the underlying execution context has been rescheduled via a call to the `IThreadProxy::SwitchTo` method, this interface is no longer valid.  
   
 ```
@@ -70,7 +70,7 @@ virtual IExecutionContext* GetContext() = 0;
 ### Return Value  
  An `IExecutionContext` interface for the execution context to a thread proxy which has unblocked.  
   
-##  <a name="iumsunblocknotification__getnextunblocknotification_method"></a>  IUMSUnblockNotification::GetNextUnblockNotification Method  
+##  <a name="getnextunblocknotification"></a>  IUMSUnblockNotification::GetNextUnblockNotification Method  
  Returns the next `IUMSUnblockNotification` interface in the chain returned from the method `IUMSCompletionList::GetUnblockNotifications`.  
   
 ```

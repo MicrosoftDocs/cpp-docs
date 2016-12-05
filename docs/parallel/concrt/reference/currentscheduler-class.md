@@ -49,16 +49,16 @@ class CurrentScheduler;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CurrentScheduler::Create Method](#currentscheduler__create_method)|Creates a new scheduler whose behavior is described by the `_Policy` parameter and attaches it to the calling context. The newly created scheduler will become the current scheduler for the calling context.|  
-|[CurrentScheduler::CreateScheduleGroup Method](#currentscheduler__createschedulegroup_method)|Overloaded. Creates a new schedule group within the scheduler associated with the calling context. The version that takes the parameter `_Placement` causes tasks within the newly created schedule group to be biased towards executing at the location specified by that parameter.|  
-|[CurrentScheduler::Detach Method](#currentscheduler__detach_method)|Detaches the current scheduler from the calling context and restores the previously attached scheduler as the current scheduler, if one exists. After this method returns, the calling context is then managed by the scheduler that was previously attached to the context using either the `CurrentScheduler::Create` or `Scheduler::Attach` method.|  
-|[CurrentScheduler::Get Method](#currentscheduler__get_method)|Returns a pointer to the scheduler associated with the calling context, also referred to as the current scheduler.|  
-|[CurrentScheduler::GetNumberOfVirtualProcessors Method](#currentscheduler__getnumberofvirtualprocessors_method)|Returns the current number of virtual processors for the scheduler associated with the calling context.|  
-|[CurrentScheduler::GetPolicy Method](#currentscheduler__getpolicy_method)|Returns a copy of the policy that the current scheduler was created with.|  
-|[CurrentScheduler::Id Method](#currentscheduler__id_method)|Returns a unique identifier for the current scheduler.|  
-|[CurrentScheduler::IsAvailableLocation Method](#currentscheduler__isavailablelocation_method)|Determines whether a given location is available on the current scheduler.|  
-|[CurrentScheduler::RegisterShutdownEvent Method](#currentscheduler__registershutdownevent_method)|Causes the Windows event handle passed in the `_ShutdownEvent` parameter to be signaled when the scheduler associated with the current context shuts down and destroys itself. At the time the event is signaled, all work that had been scheduled to the scheduler is complete. Multiple shutdown events can be registered through this method.|  
-|[CurrentScheduler::ScheduleTask Method](#currentscheduler__scheduletask_method)|Overloaded. Schedules a light-weight task within the scheduler associated with the calling context. The light-weight task will be placed in a schedule group determined by the runtime. The version that takes the parameter `_Placement` causes the task to be biased towards executing at the specified location.|  
+|[CurrentScheduler::Create Method](#create)|Creates a new scheduler whose behavior is described by the `_Policy` parameter and attaches it to the calling context. The newly created scheduler will become the current scheduler for the calling context.|  
+|[CurrentScheduler::CreateScheduleGroup Method](#createschedulegroup)|Overloaded. Creates a new schedule group within the scheduler associated with the calling context. The version that takes the parameter `_Placement` causes tasks within the newly created schedule group to be biased towards executing at the location specified by that parameter.|  
+|[CurrentScheduler::Detach Method](#detach)|Detaches the current scheduler from the calling context and restores the previously attached scheduler as the current scheduler, if one exists. After this method returns, the calling context is then managed by the scheduler that was previously attached to the context using either the `CurrentScheduler::Create` or `Scheduler::Attach` method.|  
+|[CurrentScheduler::Get Method](#get)|Returns a pointer to the scheduler associated with the calling context, also referred to as the current scheduler.|  
+|[CurrentScheduler::GetNumberOfVirtualProcessors Method](#getnumberofvirtualprocessors)|Returns the current number of virtual processors for the scheduler associated with the calling context.|  
+|[CurrentScheduler::GetPolicy Method](#getpolicy)|Returns a copy of the policy that the current scheduler was created with.|  
+|[CurrentScheduler::Id Method](#id)|Returns a unique identifier for the current scheduler.|  
+|[CurrentScheduler::IsAvailableLocation Method](#isavailablelocation)|Determines whether a given location is available on the current scheduler.|  
+|[CurrentScheduler::RegisterShutdownEvent Method](#registershutdownevent)|Causes the Windows event handle passed in the `_ShutdownEvent` parameter to be signaled when the scheduler associated with the current context shuts down and destroys itself. At the time the event is signaled, all work that had been scheduled to the scheduler is complete. Multiple shutdown events can be registered through this method.|  
+|[CurrentScheduler::ScheduleTask Method](#scheduletask)|Overloaded. Schedules a light-weight task within the scheduler associated with the calling context. The light-weight task will be placed in a schedule group determined by the runtime. The version that takes the parameter `_Placement` causes the task to be biased towards executing at the specified location.|  
   
 ## Remarks  
  If there is no scheduler (see [Scheduler](../../../parallel/concrt/reference/scheduler-class.md)) associated with the calling context, many methods within the `CurrentScheduler` class will result in attachment of the process' default scheduler. This may also imply that the process' default scheduler is created during such a call.  
@@ -71,7 +71,7 @@ class CurrentScheduler;
   
  **Namespace:** concurrency  
   
-##  <a name="currentscheduler__create_method"></a>  CurrentScheduler::Create Method  
+##  <a name="create"></a>  CurrentScheduler::Create Method  
  Creates a new scheduler whose behavior is described by the `_Policy` parameter and attaches it to the calling context. The newly created scheduler will become the current scheduler for the calling context.  
   
 ```
@@ -85,13 +85,13 @@ static void __cdecl Create(const SchedulerPolicy& _Policy);
 ### Remarks  
  The attachment of the scheduler to the calling context implicitly places a reference count on the scheduler.  
   
- After a scheduler is created with the `Create` method, you must call the [CurrentScheduler::Detach](#currentscheduler__detach_method) method at some point in the future in order to allow the scheduler to shut down.  
+ After a scheduler is created with the `Create` method, you must call the [CurrentScheduler::Detach](#detach) method at some point in the future in order to allow the scheduler to shut down.  
   
  If this method is called from a context that is already attached to a different scheduler, the existing scheduler is remembered as the previous scheduler, and the newly created scheduler becomes the current scheduler. When you call the `CurrentScheduler::Detach` method at a later point, the previous scheduler is restored as the current scheduler.  
   
  This method can throw a variety of exceptions, including [scheduler_resource_allocation_error](../../../parallel/concrt/reference/scheduler-resource-allocation-error-class.md) and [invalid_scheduler_policy_value](../../../parallel/concrt/reference/invalid-scheduler-policy-value-class.md).  
   
-##  <a name="currentscheduler__createschedulegroup_method"></a>  CurrentScheduler::CreateScheduleGroup Method  
+##  <a name="createschedulegroup"></a>  CurrentScheduler::CreateScheduleGroup Method  
  Creates a new schedule group within the scheduler associated with the calling context. The version that takes the parameter `_Placement` causes tasks within the newly created schedule group to be biased towards executing at the location specified by that parameter.  
   
 ```
@@ -110,11 +110,11 @@ static ScheduleGroup* __cdecl CreateScheduleGroup(location& _Placement);
 ### Remarks  
  This method will result in the process' default scheduler being created and/or attached to the calling context if there is no scheduler currently associated with the calling context.  
   
- You must invoke the [Release](../../../parallel/concrt/reference/schedulegroup-class.md#schedulegroup__release_method) method on a schedule group when you are done scheduling work to it. The scheduler will destroy the schedule group when all work queued to it has completed.  
+ You must invoke the [Release](../../../parallel/concrt/reference/schedulegroup-class.md#release) method on a schedule group when you are done scheduling work to it. The scheduler will destroy the schedule group when all work queued to it has completed.  
   
  Note that if you explicitly created this scheduler, you must release all references to schedule groups within it, before you release your reference on the scheduler, by detaching the current context from it.  
   
-##  <a name="currentscheduler__detach_method"></a>  CurrentScheduler::Detach Method  
+##  <a name="detach"></a>  CurrentScheduler::Detach Method  
  Detaches the current scheduler from the calling context and restores the previously attached scheduler as the current scheduler, if one exists. After this method returns, the calling context is then managed by the scheduler that was previously attached to the context using either the `CurrentScheduler::Create` or `Scheduler::Attach` method.  
   
 ```
@@ -126,9 +126,9 @@ static void __cdecl Detach();
   
  If there is no scheduler attached to the calling context, calling this method will result in a [scheduler_not_attached](../../../parallel/concrt/reference/scheduler-not-attached-class.md) exception being thrown.  
   
- Calling this method from a context that is internal to and managed by a scheduler, or a context that was attached using a method other than the [Scheduler::Attach](../../../parallel/concrt/reference/scheduler-class.md#scheduler__attach_method) or [CurrentScheduler::Create](#currentscheduler__create_method) methods, will result in an [improper_scheduler_detach](../../../parallel/concrt/reference/improper-scheduler-detach-class.md) exception being thrown.  
+ Calling this method from a context that is internal to and managed by a scheduler, or a context that was attached using a method other than the [Scheduler::Attach](../../../parallel/concrt/reference/scheduler-class.md#attach) or [CurrentScheduler::Create](#create) methods, will result in an [improper_scheduler_detach](../../../parallel/concrt/reference/improper-scheduler-detach-class.md) exception being thrown.  
   
-##  <a name="currentscheduler__get_method"></a>  CurrentScheduler::Get Method  
+##  <a name="get"></a>  CurrentScheduler::Get Method  
  Returns a pointer to the scheduler associated with the calling context, also referred to as the current scheduler.  
   
 ```
@@ -141,7 +141,7 @@ static Scheduler* __cdecl Get();
 ### Remarks  
  This method will result in the process' default scheduler being created and/or attached to the calling context if there is no scheduler currently associated with the calling context. No additional reference is placed on the `Scheduler` object returned by this method.  
   
-##  <a name="currentscheduler__getnumberofvirtualprocessors_method"></a>  CurrentScheduler::GetNumberOfVirtualProcessors Method  
+##  <a name="getnumberofvirtualprocessors"></a>  CurrentScheduler::GetNumberOfVirtualProcessors Method  
  Returns the current number of virtual processors for the scheduler associated with the calling context.  
   
 ```
@@ -156,7 +156,7 @@ static unsigned int __cdecl GetNumberOfVirtualProcessors();
   
  The return value from this method is an instantaneous sampling of the number of virtual processors for the scheduler associated with the calling context. This value can be stale the moment it is returned.  
   
-##  <a name="currentscheduler__getpolicy_method"></a>  CurrentScheduler::GetPolicy Method  
+##  <a name="getpolicy"></a>  CurrentScheduler::GetPolicy Method  
  Returns a copy of the policy that the current scheduler was created with.  
   
 ```
@@ -169,7 +169,7 @@ static SchedulerPolicy __cdecl GetPolicy();
 ### Remarks  
  This method will result in the process' default scheduler being created and/or attached to the calling context if there is no scheduler currently associated with the calling context.  
   
-##  <a name="currentscheduler__id_method"></a>  CurrentScheduler::Id Method  
+##  <a name="id"></a>  CurrentScheduler::Id Method  
  Returns a unique identifier for the current scheduler.  
   
 ```
@@ -182,7 +182,7 @@ static unsigned int __cdecl Id();
 ### Remarks  
  This method will not result in scheduler attachment if the calling context is not already associated with a scheduler.  
   
-##  <a name="currentscheduler__isavailablelocation_method"></a>  CurrentScheduler::IsAvailableLocation Method  
+##  <a name="isavailablelocation"></a>  CurrentScheduler::IsAvailableLocation Method  
  Determines whether a given location is available on the current scheduler.  
   
 ```
@@ -201,7 +201,7 @@ static bool __cdecl IsAvailableLocation(const location& _Placement);
   
  Note that the return value is an instantaneous sampling of whether the given location is available. In the presence of multiple schedulers, dynamic resource management can add or take away resources from schedulers at any point. Should this happen, the given location can change availability.  
   
-##  <a name="currentscheduler__registershutdownevent_method"></a>  CurrentScheduler::RegisterShutdownEvent Method  
+##  <a name="registershutdownevent"></a>  CurrentScheduler::RegisterShutdownEvent Method  
  Causes the Windows event handle passed in the `_ShutdownEvent` parameter to be signaled when the scheduler associated with the current context shuts down and destroys itself. At the time the event is signaled, all work that had been scheduled to the scheduler is complete. Multiple shutdown events can be registered through this method.  
   
 ```
@@ -215,7 +215,7 @@ static void __cdecl RegisterShutdownEvent(HANDLE _ShutdownEvent);
 ### Remarks  
  If there is no scheduler attached to the calling context, calling this method will result in a [scheduler_not_attached](../../../parallel/concrt/reference/scheduler-not-attached-class.md) exception being thrown.  
   
-##  <a name="currentscheduler__scheduletask_method"></a>  CurrentScheduler::ScheduleTask Method  
+##  <a name="scheduletask"></a>  CurrentScheduler::ScheduleTask Method  
  Schedules a light-weight task within the scheduler associated with the calling context. The light-weight task will be placed in a schedule group determined by the runtime. The version that takes the parameter `_Placement` causes the task to be biased towards executing at the specified location.  
   
 ```

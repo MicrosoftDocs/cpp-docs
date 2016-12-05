@@ -47,7 +47,7 @@ class completion_future;
   
 |Name|Description|  
 |----------|-----------------|  
-|[completion_future::completion_future Constructor](#completion_future_ctor)|Initializes a new instance of the `completion_future` class.|  
+|[completion_future::completion_future Constructor](#ctor)|Initializes a new instance of the `completion_future` class.|  
 |[completion_future::~completion_future Destructor](#~completion_future_dtor)|Destroys the `completion_future` object.|  
   
 ### Public Methods  

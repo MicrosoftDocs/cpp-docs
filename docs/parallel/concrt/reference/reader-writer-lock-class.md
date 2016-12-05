@@ -56,18 +56,18 @@ class reader_writer_lock;
   
 |Name|Description|  
 |----------|-----------------|  
-|[reader_writer_lock::reader_writer_lock Constructor](#reader_writer_lock__reader_writer_lock_constructor)|Constructs a new `reader_writer_lock` object.|  
-|[reader_writer_lock::~reader_writer_lock Destructor](#reader_writer_lock___dtorreader_writer_lock_destructor)|Destroys the `reader_writer_lock` object.|  
+|[reader_writer_lock::reader_writer_lock Constructor](#ctor)|Constructs a new `reader_writer_lock` object.|  
+|[reader_writer_lock::~reader_writer_lock Destructor](#ctor)|Destroys the `reader_writer_lock` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[reader_writer_lock::lock Method](#reader_writer_lock__lock_method)|Acquires the reader-writer lock as a writer.|  
-|[reader_writer_lock::lock_read Method](#reader_writer_lock__lock_read_method)|Acquires the reader-writer lock as a reader. If there are writers, active readers have to wait until they are done. The reader simply registers an interest in the lock and waits for writers to release it.|  
-|[reader_writer_lock::try_lock Method](#reader_writer_lock__try_lock_method)|Attempts to acquire the reader-writer lock as a writer without blocking.|  
-|[reader_writer_lock::try_lock_read Method](#reader_writer_lock__try_lock_read_method)|Attempts to acquire the reader-writer lock as a reader without blocking.|  
-|[reader_writer_lock::unlock Method](#reader_writer_lock__unlock_method)|Unlocks the reader-writer lock based on who locked it, reader or writer.|  
+|[reader_writer_lock::lock Method](#lock)|Acquires the reader-writer lock as a writer.|  
+|[reader_writer_lock::lock_read Method](#lock_read)|Acquires the reader-writer lock as a reader. If there are writers, active readers have to wait until they are done. The reader simply registers an interest in the lock and waits for writers to release it.|  
+|[reader_writer_lock::try_lock Method](#try_lock)|Attempts to acquire the reader-writer lock as a writer without blocking.|  
+|[reader_writer_lock::try_lock_read Method](#try_lock_read)|Attempts to acquire the reader-writer lock as a reader without blocking.|  
+|[reader_writer_lock::unlock Method](#unlock)|Unlocks the reader-writer lock based on who locked it, reader or writer.|  
   
 ## Remarks  
  For more information, see [Synchronization Data Structures](../../../parallel/concrt/synchronization-data-structures.md).  
@@ -80,7 +80,7 @@ class reader_writer_lock;
   
  **Namespace:** concurrency  
   
-##  <a name="reader_writer_lock__lock_method"></a>  reader_writer_lock::lock Method  
+##  <a name="lock"></a>  reader_writer_lock::lock Method  
  Acquires the reader-writer lock as a writer.  
   
 ```
@@ -96,7 +96,7 @@ void lock();
   
  If the lock is already held by the calling context, an [improper_lock](../../../parallel/concrt/reference/improper-lock-class.md) exception will be thrown.  
   
-##  <a name="reader_writer_lock__lock_read_method"></a>  reader_writer_lock::lock_read Method  
+##  <a name="lock_read"></a>  reader_writer_lock::lock_read Method  
  Acquires the reader-writer lock as a reader. If there are writers, active readers have to wait until they are done. The reader simply registers an interest in the lock and waits for writers to release it.  
   
 ```
@@ -108,7 +108,7 @@ void lock_read();
   
  If there are writers waiting on the lock, the reader will wait until all writers in line have acquired and released the lock. This lock is biased towards writers and can starve readers under a continuous load of writers.  
   
-##  <a name="reader_writer_lock__reader_writer_lock_constructor"></a>  reader_writer_lock::reader_writer_lock Constructor  
+##  <a name="ctor"></a>  reader_writer_lock::reader_writer_lock Constructor  
  Constructs a new `reader_writer_lock` object.  
   
 ```
@@ -158,7 +158,7 @@ Destroys a `reader_writer_lock` object and releases the lock supplied in its con
 class scoped_lock_read;
 ```  
   
-##  <a name="reader_writer_lock__try_lock_method"></a>  reader_writer_lock::try_lock Method  
+##  <a name="try_lock"></a>  reader_writer_lock::try_lock Method  
  Attempts to acquire the reader-writer lock as a writer without blocking.  
 
 ## reader_writer_lock::scoped_lock_read::scoped_lock_read Constructor
@@ -179,7 +179,7 @@ Destroys a `scoped_lock_read` object and releases the lock supplied in its const
 ~scoped_lock_read();
 ```  
   
-## <a name="reader_writer_lock__try_lock_method"></a> reader_writer_lock::try_lock Method
+## <a name="try_lock"></a> reader_writer_lock::try_lock Method
 ```
 bool try_lock();
 ```  
@@ -187,7 +187,7 @@ bool try_lock();
 ### Return Value  
  If the lock was acquired, the value `true`; otherwise, the value `false`.  
   
-##  <a name="reader_writer_lock__try_lock_read_method"></a>  reader_writer_lock::try_lock_read Method  
+##  <a name="try_lock_read"></a>  reader_writer_lock::try_lock_read Method  
  Attempts to acquire the reader-writer lock as a reader without blocking.  
   
 ```
@@ -197,7 +197,7 @@ bool try_lock_read();
 ### Return Value  
  If the lock was acquired, the value `true`; otherwise, the value `false`.  
   
-##  <a name="reader_writer_lock__unlock_method"></a>  reader_writer_lock::unlock Method  
+##  <a name="unlock"></a>  reader_writer_lock::unlock Method  
  Unlocks the reader-writer lock based on who locked it, reader or writer.  
   
 ```

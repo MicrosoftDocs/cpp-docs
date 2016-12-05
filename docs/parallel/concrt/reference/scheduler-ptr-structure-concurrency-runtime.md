@@ -47,20 +47,20 @@ struct scheduler_ptr;
   
 |Name|Description|  
 |----------|-----------------|  
-|[scheduler_ptr::scheduler_ptr Constructor (Concurrency Runtime)](#scheduler_ptr__scheduler_ptr_constructor__concurrency_runtime_)|Overloaded. Creates a scheduler pointer from shared_ptr to scheduler|  
+|[scheduler_ptr::scheduler_ptr Constructor (Concurrency Runtime)](#ctor)|Overloaded. Creates a scheduler pointer from shared_ptr to scheduler|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[scheduler_ptr::get Method (Concurrency Runtime)](#scheduler_ptr__get_method__concurrency_runtime_)|Returns the raw pointer to the scheduler|  
+|[scheduler_ptr::get Method (Concurrency Runtime)](#get)|Returns the raw pointer to the scheduler|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[scheduler_ptr::operator bool Operator (Concurrency Runtime)](#scheduler_ptr__operator_bool_operator__concurrency_runtime_)|Test whether the scheduler pointer is non-null|  
-|[scheduler_ptr::operator-&gt; Operator (Concurrency Runtime)](#scheduler_ptr__operator-_gt__operator__concurrency_runtime_)|Behave like a pointer|  
+|[scheduler_ptr::operator bool Operator (Concurrency Runtime)](#operator_bool_operator)|Test whether the scheduler pointer is non-null|  
+|[scheduler_ptr::operator-&gt; Operator (Concurrency Runtime)](#operator-_gt__operator)|Behave like a pointer|  
   
 ## Inheritance Hierarchy  
  `scheduler_ptr`  
@@ -70,7 +70,7 @@ struct scheduler_ptr;
   
  **Namespace:** concurrency  
   
-##  <a name="scheduler_ptr__get_method__concurrency_runtime_"></a>  scheduler_ptr::get Method (Concurrency Runtime)  
+##  <a name="get"></a>  scheduler_ptr::get Method (Concurrency Runtime)  
  Returns the raw pointer to the scheduler  
   
 ```
@@ -79,13 +79,13 @@ scheduler_interface* get() const;
   
 ### Return Value  
   
-##  <a name="scheduler_ptr__operator_bool_operator__concurrency_runtime_"></a>  scheduler_ptr::operator bool Operator (Concurrency Runtime)  
+##  <a name="operator_bool"></a>  scheduler_ptr::operator bool Operator (Concurrency Runtime)  
  Test whether the scheduler pointer is non-null  
   
 ```operator bool() const;
 ```  
   
-##  <a name="scheduler_ptr__operator-_gt__operator__concurrency_runtime_"></a>  scheduler_ptr::operator-&gt; Operator (Concurrency Runtime)  
+##  <a name="scheduler_ptr__operator-_gt__operator"></a>  scheduler_ptr::operator-&gt; Operator (Concurrency Runtime)  
  Behave like a pointer  
   
 ```
@@ -94,7 +94,7 @@ scheduler_interface* operator->() const;
   
 ### Return Value  
   
-##  <a name="scheduler_ptr__scheduler_ptr_constructor__concurrency_runtime_"></a>  scheduler_ptr::scheduler_ptr Constructor (Concurrency Runtime)  
+##  <a name="ctor"></a>  scheduler_ptr::scheduler_ptr Constructor (Concurrency Runtime)  
  Creates a scheduler pointer from shared_ptr to scheduler  
   
 ```

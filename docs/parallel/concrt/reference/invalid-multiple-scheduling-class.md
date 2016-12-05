@@ -49,7 +49,7 @@ class invalid_multiple_scheduling : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_multiple_scheduling::invalid_multiple_scheduling Constructor](#invalid_multiple_scheduling__invalid_multiple_scheduling_constructor)|Overloaded. Constructs an `invalid_multiple_scheduling` object.|  
+|[invalid_multiple_scheduling::invalid_multiple_scheduling Constructor](#ctor)|Overloaded. Constructs an `invalid_multiple_scheduling` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -61,7 +61,7 @@ class invalid_multiple_scheduling : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="invalid_multiple_scheduling__invalid_multiple_scheduling_constructor"></a>  invalid_multiple_scheduling::invalid_multiple_scheduling Constructor  
+##  <a name="ctor"></a>  invalid_multiple_scheduling::invalid_multiple_scheduling Constructor  
  Constructs an `invalid_multiple_scheduling` object.  
   
 ```

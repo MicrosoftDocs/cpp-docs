@@ -180,7 +180,7 @@ class unorm_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unorm_3::size Constant](#unorm_3__size_constant)||  
+|[unorm_3::size Constant](#unorm_3__size)||  
   
 ### Public Data Members  
   
@@ -303,11 +303,11 @@ explicit inline unorm_3(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="unorm_3__size_constant"></a>  unorm_3::size Constant  
+##  <a name="unorm_3__size"></a>  unorm_3::size Constant  
   
 ```  
 static const int size = 3;  
 ```  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

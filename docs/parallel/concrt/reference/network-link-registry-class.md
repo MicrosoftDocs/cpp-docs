@@ -63,11 +63,11 @@ class network_link_registry;
   
 |Name|Description|  
 |----------|-----------------|  
-|[network_link_registry::add Method](#network_link_registry__add_method)|When overridden in a derived class, adds a link to the `network_link_registry` object.|  
-|[network_link_registry::begin Method](#network_link_registry__begin_method)|When overridden in a derived class, returns an iterator to the first element in the `network_link_registry` object.|  
-|[network_link_registry::contains Method](#network_link_registry__contains_method)|When overridden in a derived class, searches the `network_link_registry` object for a specified block.|  
-|[network_link_registry::count Method](#network_link_registry__count_method)|When overridden in a derived class, returns the number of items in the `network_link_registry` object.|  
-|[network_link_registry::remove Method](#network_link_registry__remove_method)|When overridden in a derived class, removes a specified block from the `network_link_registry` object.|  
+|[network_link_registry::add Method](#add)|When overridden in a derived class, adds a link to the `network_link_registry` object.|  
+|[network_link_registry::begin Method](#begin)|When overridden in a derived class, returns an iterator to the first element in the `network_link_registry` object.|  
+|[network_link_registry::contains Method](#contains)|When overridden in a derived class, searches the `network_link_registry` object for a specified block.|  
+|[network_link_registry::count Method](#count)|When overridden in a derived class, returns the number of items in the `network_link_registry` object.|  
+|[network_link_registry::remove Method](#remove)|When overridden in a derived class, removes a specified block from the `network_link_registry` object.|  
   
 ## Remarks  
  The `network link registry` is not safe for concurrent access.  
@@ -80,7 +80,7 @@ class network_link_registry;
   
  **Namespace:** concurrency  
   
-##  <a name="network_link_registry__add_method"></a>  network_link_registry::add Method  
+##  <a name="add"></a>  network_link_registry::add Method  
  When overridden in a derived class, adds a link to the `network_link_registry` object.  
   
 ```
@@ -91,7 +91,7 @@ virtual void add(_EType _Link) = 0;
  `_Link`  
  A pointer to a block to be added.  
   
-##  <a name="network_link_registry__begin_method"></a>  network_link_registry::begin Method  
+##  <a name="begin"></a>  network_link_registry::begin Method  
  When overridden in a derived class, returns an iterator to the first element in the `network_link_registry` object.  
   
 ```
@@ -104,7 +104,7 @@ virtual iterator begin() = 0;
 ### Remarks  
  The end state of the iterator is indicated by a `NULL` link.  
   
-##  <a name="network_link_registry__contains_method"></a>  network_link_registry::contains Method  
+##  <a name="contains"></a>  network_link_registry::contains Method  
  When overridden in a derived class, searches the `network_link_registry` object for a specified block.  
   
 ```
@@ -118,7 +118,7 @@ virtual bool contains(_EType _Link) = 0;
 ### Return Value  
  `true` if the block was found, `false` otherwise.  
   
-##  <a name="network_link_registry__count_method"></a>  network_link_registry::count Method  
+##  <a name="count"></a>  network_link_registry::count Method  
  When overridden in a derived class, returns the number of items in the `network_link_registry` object.  
   
 ```
@@ -128,7 +128,7 @@ virtual size_t count() = 0;
 ### Return Value  
  The number of items in the `network_link_registry` object.  
   
-##  <a name="network_link_registry__remove_method"></a>  network_link_registry::remove Method  
+##  <a name="remove"></a>  network_link_registry::remove Method  
  When overridden in a derived class, removes a specified block from the `network_link_registry` object.  
   
 ```

@@ -49,8 +49,8 @@ class static_partitioner;
   
 |Name|Description|  
 |----------|-----------------|  
-|[static_partitioner::static_partitioner Constructor](#static_partitioner__static_partitioner_constructor)|Constructs a `static_partitioner` object.|  
-|[static_partitioner::~static_partitioner Destructor](#static_partitioner___dtorstatic_partitioner_destructor)|Destroys a `static_partitioner` object.|  
+|[static_partitioner::static_partitioner Constructor](#ctor)|Constructs a `static_partitioner` object.|  
+|[static_partitioner::~static_partitioner Destructor](#ctor)|Destroys a `static_partitioner` object.|  
   
 ## Inheritance Hierarchy  
  `static_partitioner`  
@@ -67,7 +67,7 @@ class static_partitioner;
 ~static_partitioner();
 ```  
   
-##  <a name="static_partitioner__static_partitioner_constructor"></a>  static_partitioner::static_partitioner Constructor  
+##  <a name="ctor"></a>  static_partitioner::static_partitioner Constructor  
  Constructs a `static_partitioner` object.  
   
 ```

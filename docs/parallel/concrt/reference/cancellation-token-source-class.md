@@ -49,24 +49,24 @@ class cancellation_token_source;
   
 |Name|Description|  
 |----------|-----------------|  
-|[cancellation_token_source::cancellation_token_source Constructor](#cancellation_token_source__cancellation_token_source_constructor)|Overloaded. Constructs a new `cancellation_token_source`. The source can be used to flag cancellation of some cancelable operation.|  
-|[cancellation_token_source::~cancellation_token_source Destructor](#cancellation_token_source___dtorcancellation_token_source_destructor)||  
+|[cancellation_token_source::cancellation_token_source Constructor](#ctor)|Overloaded. Constructs a new `cancellation_token_source`. The source can be used to flag cancellation of some cancelable operation.|  
+|[cancellation_token_source::~cancellation_token_source Destructor](#ctor)||  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[cancellation_token_source::cancel Method](#cancellation_token_source__cancel_method)|Cancels the token. Any `task_group`, `structured_task_group`, or `task` which utilizes the token will be canceled upon this call and throw an exception at the next interruption point.|  
-|[cancellation_token_source::create_linked_source Method](#cancellation_token_source__create_linked_source_method)|Overloaded. Creates a `cancellation_token_source` which is canceled when the provided token is canceled.|  
-|[cancellation_token_source::get_token Method](#cancellation_token_source__get_token_method)|Returns a cancellation token associated with this source. The returned token can be polled for cancellation or provide a callback if and when cancellation occurs.|  
+|[cancellation_token_source::cancel Method](#cancel)|Cancels the token. Any `task_group`, `structured_task_group`, or `task` which utilizes the token will be canceled upon this call and throw an exception at the next interruption point.|  
+|[cancellation_token_source::create_linked_source Method](#create_linked_source)|Overloaded. Creates a `cancellation_token_source` which is canceled when the provided token is canceled.|  
+|[cancellation_token_source::get_token Method](#get_token)|Returns a cancellation token associated with this source. The returned token can be polled for cancellation or provide a callback if and when cancellation occurs.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[cancellation_token_source::operator!= Operator](#cancellation_token_source__operator_neq_operator)||  
-|[cancellation_token_source::operator= Operator](#cancellation_token_source__operator_eq_operator)||  
-|[cancellation_token_source::operator== Operator](#cancellation_token_source__operator_eq_eq_operator)||  
+|[cancellation_token_source::operator!= Operator](#operator_neq)||  
+|[cancellation_token_source::operator= Operator](#operator_eq)||  
+|[cancellation_token_source::operator== Operator](#operator_eq_eq)||  
   
 ## Inheritance Hierarchy  
  `cancellation_token_source`  
@@ -82,14 +82,14 @@ class cancellation_token_source;
 ~cancellation_token_source();
 ```  
   
-##  <a name="cancellation_token_source__cancel_method"></a>  cancellation_token_source::cancel Method  
+##  <a name="cancel"></a>  cancellation_token_source::cancel Method  
  Cancels the token. Any `task_group`, `structured_task_group`, or `task` which utilizes the token will be canceled upon this call and throw an exception at the next interruption point.  
   
 ```
 void cancel() const;
 ```  
   
-##  <a name="cancellation_token_source__cancellation_token_source_constructor"></a>  cancellation_token_source::cancellation_token_source Constructor  
+##  <a name="ctor"></a>  cancellation_token_source::cancellation_token_source Constructor  
  Constructs a new `cancellation_token_source`. The source can be used to flag cancellation of some cancelable operation.  
   
 ```
@@ -103,7 +103,7 @@ cancellation_token_source(cancellation_token_source&& _Src);
 ### Parameters  
  `_Src`  
   
-##  <a name="cancellation_token_source__create_linked_source_method"></a>  cancellation_token_source::create_linked_source Method  
+##  <a name="create_linked_source"></a>  cancellation_token_source::create_linked_source Method  
  Creates a `cancellation_token_source` which is canceled when the provided token is canceled.  
   
 ```
@@ -128,7 +128,7 @@ static cancellation_token_source create_linked_source(_Iter _Begin, _Iter _End);
 ### Return Value  
  A `cancellation_token_source` which is canceled when the token provided by the `_Src` parameter is canceled.  
   
-##  <a name="cancellation_token_source__get_token_method"></a>  cancellation_token_source::get_token Method  
+##  <a name="get_token"></a>  cancellation_token_source::get_token Method  
  Returns a cancellation token associated with this source. The returned token can be polled for cancellation or provide a callback if and when cancellation occurs.  
   
 ```
@@ -138,7 +138,7 @@ cancellation_token get_token() const;
 ### Return Value  
  A cancellation token associated with this source.  
   
-##  <a name="cancellation_token_source__operator_neq_operator"></a>  cancellation_token_source::operator!= Operator  
+##  <a name="operator_neq"></a>  cancellation_token_source::operator!= Operator  
   
 ```
 bool operator!= (const cancellation_token_source& _Src) const;
@@ -149,7 +149,7 @@ bool operator!= (const cancellation_token_source& _Src) const;
   
 ### Return Value  
   
-##  <a name="cancellation_token_source__operator_eq_operator"></a>  cancellation_token_source::operator= Operator  
+##  <a name="operator_eq"></a>  cancellation_token_source::operator= Operator  
   
 ```
 cancellation_token_source& operator= (const cancellation_token_source& _Src);
@@ -162,7 +162,7 @@ cancellation_token_source& operator= (cancellation_token_source&& _Src);
   
 ### Return Value  
   
-##  <a name="cancellation_token_source__operator_eq_eq_operator"></a>  cancellation_token_source::operator== Operator  
+##  <a name="operator_eq_eq"></a>  cancellation_token_source::operator== Operator  
   
 ```
 bool operator== (const cancellation_token_source& _Src) const;

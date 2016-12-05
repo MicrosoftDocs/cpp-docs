@@ -49,7 +49,7 @@ The Concurrency Runtime provides several data structures that let you synchroniz
 ##  <a name="critical_section"></a> critical_section  
  The [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) class represents a cooperative mutual exclusion object that yields to other tasks instead of preempting them. Critical sections are useful when multiple threads require exclusive read and write access to shared data.  
 
- The `critical_section` class is non-reentrant. The [concurrency::critical_section::lock](reference/critical-section-class.md#critical_section__lock_method) method throws an exception of type [concurrency::improper_lock](../../parallel/concrt/reference/improper-lock-class.md) if it is called by the thread that already owns the lock.  
+ The `critical_section` class is non-reentrant. The [concurrency::critical_section::lock](reference/critical-section-class.md#lock) method throws an exception of type [concurrency::improper_lock](../../parallel/concrt/reference/improper-lock-class.md) if it is called by the thread that already owns the lock.  
 
 
   
@@ -58,9 +58,9 @@ The Concurrency Runtime provides several data structures that let you synchroniz
   
 |Method|Description|  
 |------------|-----------------|  
-|[lock](reference/critical-section-class.md#critical_section__lock_method)|Acquires the critical section. The calling context blocks until it acquires the lock.|  
-|[try_lock](reference/critical-section-class.md#critical_section__try_lock_method)|Tries to acquire the critical section, but does not block.|  
-|[unlock](reference/critical-section-class.md#critical_section__unlock_method)|Releases the critical section.|  
+|[lock](reference/critical-section-class.md#lock)|Acquires the critical section. The calling context blocks until it acquires the lock.|  
+|[try_lock](reference/critical-section-class.md#try_lock)|Tries to acquire the critical section, but does not block.|  
+|[unlock](reference/critical-section-class.md#unlock)|Releases the critical section.|  
   
  [[Top](#top)]  
   
@@ -73,7 +73,7 @@ The Concurrency Runtime provides several data structures that let you synchroniz
   
  When a thread that must write to a shared resource acquires a reader/writer lock, other threads that also must access the resource are blocked until the writer releases the lock. The `reader_writer_lock` class is an example of a *write-preference* lock, which is a lock that unblocks waiting writers before it unblocks waiting readers.  
   
- Like the `critical_section` class, the `reader_writer_lock` class is non-reentrant. The [concurrency::reader_writer_lock::lock](reference/reader-writer-lock-class.md#reader_writer_lock__lock_method) and [concurrency::reader_writer_lock::lock_read](reference/reader-writer-lock-class.md#reader_writer_lock__lock_read_method) methods throw an exception of type `improper_lock` if they are called by a thread that already owns the lock.  
+ Like the `critical_section` class, the `reader_writer_lock` class is non-reentrant. The [concurrency::reader_writer_lock::lock](reference/reader-writer-lock-class.md#lock) and [concurrency::reader_writer_lock::lock_read](reference/reader-writer-lock-class.md#lock_read) methods throw an exception of type `improper_lock` if they are called by a thread that already owns the lock.  
 
 
   
@@ -85,11 +85,11 @@ The Concurrency Runtime provides several data structures that let you synchroniz
   
 |Method|Description|  
 |------------|-----------------|  
-|[lock](reference/reader-writer-lock-class.md#reader_writer_lock__lock_method)|Acquires read/write access to the lock.|  
-|[try_lock](reference/reader-writer-lock-class.md#reader_writer_lock__try_lock_method)|Tries to acquire read/write access to the lock, but does not block.|  
-|[lock_read](reference/reader-writer-lock-class.md#reader_writer_lock__lock_read_method)|Acquires read-only access to the lock.|  
-|[try_lock_read](reference/reader-writer-lock-class.md#reader_writer_lock__try_lock_read_method)|Tries to acquire read-only access to the lock, but does not block.|  
-|[unlock](reference/reader-writer-lock-class.md#reader_writer_lock__unlock_method)|Releases the lock.|  
+|[lock](reference/reader-writer-lock-class.md#lock)|Acquires read/write access to the lock.|  
+|[try_lock](reference/reader-writer-lock-class.md#try_lock)|Tries to acquire read/write access to the lock, but does not block.|  
+|[lock_read](reference/reader-writer-lock-class.md#lock_read)|Acquires read-only access to the lock.|  
+|[try_lock_read](reference/reader-writer-lock-class.md#try_lock_read)|Tries to acquire read-only access to the lock, but does not block.|  
+|[unlock](reference/reader-writer-lock-class.md#unlock)|Releases the lock.|  
   
  [[Top](#top)]  
   
@@ -115,10 +115,10 @@ The Concurrency Runtime provides several data structures that let you synchroniz
 |Method|Description|  
 |------------|-----------------|  
 
-|[wait](reference/event-class.md#event__wait_method)|Waits for the event to become signaled.|  
-|[set](reference/event-class.md#event__set_method)|Sets the event to the signaled state.|  
-|[reset](reference/event-class.md#event__reset_method)|Sets the event to the non-signaled state.|  
-|[wait_for_multiple](reference/event-class.md#event__wait_for_multiple_method)|Waits for multiple events to become signaled.|  
+|[wait](reference/event-class.md#wait)|Waits for the event to become signaled.|  
+|[set](reference/event-class.md#set)|Sets the event to the signaled state.|  
+|[reset](reference/event-class.md#reset)|Sets the event to the non-signaled state.|  
+|[wait_for_multiple](reference/event-class.md#wait_for_multiple)|Waits for multiple events to become signaled.|  
 
   
 ### Example  

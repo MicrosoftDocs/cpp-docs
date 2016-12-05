@@ -46,7 +46,7 @@ class scoped_d3d_access_lock;
 |Name|Description|  
 |----------|-----------------|  
 |[scoped_d3d_access_lock::scoped_d3d_access_lock Constructor](#scoped_d3d_access_lock__scoped_d3d_access_lock_ctor|Overloaded. Constructs a `scoped_d3d_access_lock` object. The lock is released when this object goes out of scope.|  
-|[scoped_d3d_access_lock::~scoped_d3d_access_lock Destructor](#scoped_d3d_access_lock__dtor)|Releases the D3D access lock on the associated `accelerator_view` object.|  
+|[scoped_d3d_access_lock::~scoped_d3d_access_lock Destructor](#scoped_d3dtor)|Releases the D3D access lock on the associated `accelerator_view` object.|  
   
 ### Public Operators  
   
@@ -100,7 +100,7 @@ scoped_d3d_access_lock(// [3] move constructor
  Takes an existing D3D access lock from another `scoped_d3d_access_lock` object. Construction does not block.  
 
   
-##  <a name="scoped_d3d_access_lock__dtor"></a>  scoped_d3d_access_lock::~scoped_d3d_access_lock Destructor  
+##  <a name="scoped_d3dtor"></a>  scoped_d3d_access_lock::~scoped_d3d_access_lock Destructor  
  Releases the D3D access lock on the associated `accelerator_view` object.  
   
 ```  

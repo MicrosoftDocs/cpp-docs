@@ -484,7 +484,7 @@ class int_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[int_4::size Constant](#int_4__size_constant)||  
+|[int_4::size Constant](#int_4__size)||  
   
 ### Public Data Members  
   
@@ -697,11 +697,11 @@ explicit inline int_4(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="int_4__size_constant"></a>  int_4::size Constant  
+##  <a name="int_4__size"></a>  int_4::size Constant  
   
 ```  
 static const int size = 4;  
 ```  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

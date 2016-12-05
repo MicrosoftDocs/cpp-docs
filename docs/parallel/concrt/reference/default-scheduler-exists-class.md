@@ -49,7 +49,7 @@ class default_scheduler_exists : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[default_scheduler_exists::default_scheduler_exists Constructor](#default_scheduler_exists__default_scheduler_exists_constructor)|Overloaded. Constructs a `default_scheduler_exists` object.|  
+|[default_scheduler_exists::default_scheduler_exists Constructor](#ctor)|Overloaded. Constructs a `default_scheduler_exists` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -61,7 +61,7 @@ class default_scheduler_exists : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="default_scheduler_exists__default_scheduler_exists_constructor"></a>  default_scheduler_exists::default_scheduler_exists Constructor  
+##  <a name="ctor"></a>  default_scheduler_exists::default_scheduler_exists Constructor  
  Constructs a `default_scheduler_exists` object.  
   
 ```

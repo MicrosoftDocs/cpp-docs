@@ -54,7 +54,7 @@ class index;
   
 |Name|Description|  
 |----------|-----------------|  
-|[index::index Constructor](#index_ctor)|Initializes a new instance of the `index` class.|  
+|[index::index Constructor](#ctor)|Initializes a new instance of the `index` class.|  
   
 ### Public Operators  
   
@@ -75,7 +75,7 @@ class index;
   
 |Name|Description|  
 |----------|-----------------|  
-|[index::rank Constant](#rank_constant)|Stores the rank of the `index` object.|  
+|[index::rank Constant](#rank)|Stores the rank of the `index` object.|  
 
 
   
@@ -278,10 +278,10 @@ The number to subtract.
 ### Return Value
 The index object.   
 
-## <a name="rank_constant"></a>  Rank  
+## <a name="rank"></a>  Rank  
   Gets the rank of the index object.
 ```
 static const int rank = _Rank;
 ``` 
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)
