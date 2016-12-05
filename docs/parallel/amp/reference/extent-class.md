@@ -69,7 +69,6 @@ class extent;
 |[extent::contains Method](#contains)|Verifies that the specified `extent` object has the specified rank.|  
 |[extent::size Method](#size)|Returns the total linear size of the extent (in units of elements).|  
 |[extent::tile Method](#tile)|Produces a `tiled_extent` object with the tile extents given by specified dimensions.|  
-
   
 ### Public Operators  
   
@@ -93,13 +92,12 @@ class extent;
 |Name|Description|  
 |----------|-----------------|  
 |[extent::rank Constant](#rank)|Gets the rank of the `extent` object.|  
-
   
 ## Inheritance Hierarchy  
  `extent`  
 
 
-## <a name="contains"></a> extent::contains Method 
+## <a name="extent__contains_method"></a> extent::contains Method 
 Indicates whether the specified [index](index-class.md) value is contained within the `extent' object.  
   
 ### Syntax  
@@ -363,7 +361,7 @@ int&  operator[] ( unsigned int _Index ) restrict(amp,cpu);
 ### Return Value  
  The element that's at the specified index.  
   
-##  <a name="rank"></a> extent::rank Constant  
+##  <a name="extent__rank_constant"></a> extent::rank Constant  
 Stores the rank of the `extent' object.  
   
 ### Syntax  
@@ -372,7 +370,7 @@ Stores the rank of the `extent' object.
 static const int rank = _Rank;  
 ```  
   
-##  <a name="size"></a> extent::size Method  
+##  <a name="extent__size_method"></a> extent::size Method  
 Returns the total linear size of the `extent` object (in units of elements).  
   
 ### Syntax  

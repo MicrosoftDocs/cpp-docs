@@ -56,6 +56,7 @@ class accelerator;
   
 |Name|Description|  
 |----------|-----------------|  
+<<<<<<< HEAD
 |[accelerator::create_view Method](#create_view)|Creates and returns an `accelerator_view` object on this accelerator.|  
 |[accelerator::get_all Method](#get_all)|Returns a vector of `accelerator` objects that represent all the available accelerators.|  
 |[accelerator::get_auto_selection_view Method](#get_auto_selection_view)|Returns the auto-selection `accelerator_view`.|  
@@ -73,6 +74,25 @@ class accelerator;
 |[accelerator::get_version Method](#get_version)|Returns the version of the `accelerator`.|  
 |[accelerator::set_default Method](#set_default)|Returns the path of the default accelerator.|  
 |[accelerator::set_default_cpu_access_type Method](#set_default_cpu_access_type)|Sets the default CPU [access_type](concurrency-namespace-enums-amp.md#access_type)for arrays and implicit memory allocations made on this `accelerator`.|  
+=======
+|[accelerator::create_view Method](#accelerator__create_view_method)|Creates and returns an `accelerator_view` object on this accelerator.|  
+|[accelerator::get_all Method](#accelerator__get_all_method)|Returns a vector of `accelerator` objects that represent all the available accelerators.|  
+|[accelerator::get_auto_selection_view Method](#accelerator__get_auto_selection_view_method)|Returns the auto-selection `accelerator_view`.|  
+|[accelerator::get_dedicated_memory Method](#accelerator__get_dedicated_memory_method)|Returns the dedicated memory for the `accelerator`, in kilobytes.|  
+|[accelerator::get_default_cpu_access_type Method](#accelerator__get_default_cpu_access_type_method)|Returns the default [access_type](concurrency-namespace-enums-amp.md#access_type) for buffers created on this accelerator.|  
+|[accelerator::get_default_view Method](#accelerator__get_default_view_method)|Returns the default `accelerator_view` object that is associated with the `accelerator`.|  
+|[accelerator::get_description Method](#accelerator__get_description_method)|Returns a short description of the `accelerator` device.|  
+|[accelerator::get_device_path Method](#accelerator__get_device_path_method)|Returns the path of the device.|  
+|[accelerator::get_has_display Method](#accelerator__get_has_display_method)|Determines whether the `accelerator` is attached to a display.|  
+|[accelerator::get_is_debug Method](#accelerator__get_is_debug_method)|Determines whether the `accelerator` has the DEBUG layer enabled for extensive error reporting.|  
+|[accelerator::get_is_emulated Method](#accelerator__get_is_emulated_method)|Determines whether the `accelerator` is emulated.|  
+|[accelerator::get_supports_cpu_shared_memory Method](#accelerator__get_supports_cpu_shared_memory_method)|Determines whether the `accelerator` supports shared memory|  
+|[accelerator::get_supports_double_precision Method](#accelerator__get_supports_double_precision_method)|Determines whether the `accelerator` is attached to a display.|  
+|[accelerator::get_supports_limited_double_precision Method](#accelerator__get_supports_limited_double_precision_method)|Determines whether the `accelerator` has limited support for double-precision math.|  
+|[accelerator::get_version Method](#accelerator__get_version_method)|Returns the version of the `accelerator`.|  
+|[accelerator::set_default Method](#accelerator__set_default_method)|Returns the path of the default accelerator.|  
+|[accelerator::set_default_cpu_access_type Method](#accelerator__set_default_cpu_access_type_method)|Sets the default CPU [access_type](concurrency-namespace-enums-amp.md#access_type)for arrays and implicit memory allocations made on this `accelerator`.|  
+>>>>>>> master
   
 ### Public Operators  
   
@@ -86,6 +106,7 @@ class accelerator;
   
 |Name|Description|  
 |----------|-----------------|  
+<<<<<<< HEAD
 |[accelerator::cpu_accelerator Data Member](#cpu_accelerator)|Gets a string constant for the CPU `accelerator`.|  
 |[accelerator::dedicated_memory Data Member](#dedicated_memory)|Gets the dedicated memory for the `accelerator`, in kilobytes.|  
 |[accelerator::default_accelerator Data Member](#default_accelerator)|Gets a string constant for the default `accelerator`.|  
@@ -102,6 +123,24 @@ class accelerator;
 |[accelerator::supports_double_precision Data Member](#supports_double_precision)|Indicates whether the accelerator supports double-precision math.|  
 |[accelerator::supports_limited_double_precision Data Member](#supports_limited_double_precision)|Indicates whether the accelerator has limited support for double-precision math.|  
 |[accelerator::version Data Member](#version)|Gets the version of the `accelerator`.|  
+=======
+|[accelerator::cpu_accelerator Data Member](#accelerator__cpu_accelerator_data_member)|Gets a string constant for the CPU `accelerator`.|  
+|[accelerator::dedicated_memory Data Member](#accelerator__dedicated_memory_data_member)|Gets the dedicated memory for the `accelerator`, in kilobytes.|  
+|[accelerator::default_accelerator Data Member](#accelerator__default_accelerator_data_member)|Gets a string constant for the default `accelerator`.|  
+|[accelerator::default_cpu_access_type Data Member](#accelerator__default_cpu_access_type_data_member)|Gets or sets the default CPU [access_type](concurrency-namespace-enums-amp.md#access_type)for arrays and implicit memory allocations made on this `accelerator`.|  
+|[accelerator::default_view Data Member](#accelerator__default_view_data_member)|Gets the default `accelerator_view` object that is associated with the `accelerator`.|  
+|[accelerator::description Data Member](#accelerator__description_data_member)|Gets a short description of the `accelerator` device.|  
+|[accelerator::device_path Data Member](#accelerator__device_path_data_member)|Gets the path of the device.|  
+|[accelerator::direct3d_ref Data Member](#accelerator__direct3d_ref_data_member)|Gets a string constant for a Direct3D reference `accelerator`.|  
+|[accelerator::direct3d_warp Data Member](#accelerator__direct3d_warp_data_member)|Gets the string constant for an [accelerator](../../../parallel/amp/reference/accelerator-class.md) object that you can use for executing C++ AMP code on multi-core CPUs that use Streaming SIMD Extensions (SSE).|  
+|[accelerator::has_display Data Member](#accelerator__has_display_data_member)|Gets a Boolean value that indicates whether the `accelerator` is attached to a display.|  
+|[accelerator::is_debug Data Member](#accelerator__is_debug_data_member)|Indicates whether the `accelerator` has the DEBUG layer enabled for extensive error reporting.|  
+|[accelerator::is_emulated Data Member](#accelerator__is_emulated_data_member)|Indicates whether the `accelerator` is emulated.|  
+|[accelerator::supports_cpu_shared_memory Data Member](#accelerator__supports_cpu_shared_memory_data_member)|Indicates whether the `accelerator` supports shared memory.|  
+|[accelerator::supports_double_precision Data Member](#accelerator__supports_double_precision_data_member)|Indicates whether the accelerator supports double-precision math.|  
+|[accelerator::supports_limited_double_precision Data Member](#accelerator__supports_limited_double_precision_data_member)|Indicates whether the accelerator has limited support for double-precision math.|  
+|[accelerator::version Data Member](#accelerator__version_data_member)|Gets the version of the `accelerator`.|  
+>>>>>>> master
   
 ## Inheritance Hierarchy  
  `accelerator`  
@@ -152,7 +191,11 @@ accelerator(const accelerator& _Other);
 static const wchar_t cpu_accelerator[];  
 ```  
   
+<<<<<<< HEAD
 ##  <a name="create_view"></a>  accelerator::create_view Method  
+=======
+##  <a name="accelerator__create_view_method"></a>  accelerator::create_view Method  
+>>>>>>> master
  Creates and returns an `accelerator_view` object on this accelerator, using the specified queuing mode. When the queuing mode is not specified, the new `accelerator_view` uses the [queuing_mode::immediate](concurrency-namespace-enums-amp.md#queuing_mode) queuing mode.  
   
 ```  
@@ -180,7 +223,11 @@ __declspec(property(get= get_dedicated_memory)) size_t dedicated_memory;
 static const wchar_t default_accelerator[];  
 ```  
   
+<<<<<<< HEAD
 ##  <a name="default_cpu_access_type"></a>  accelerator::default_cpu_access_type Data Member  
+=======
+##  <a name="accelerator__default_cpu_access_type_data_member"></a>  accelerator::default_cpu_access_type Data Member  
+>>>>>>> master
  The default cpu [access_type](concurrency-namespace-enums-amp.md#access_type)for arrays and implicit memory allocations made on this this `accelerator`.  
   
 ```  

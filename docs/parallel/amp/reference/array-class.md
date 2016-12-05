@@ -62,7 +62,6 @@ friend class array;
 |----------|-----------------|  
 |[array::array Constructor](#ctor)|Initializes a new instance of the `array` class.|  
 |[array::~array Destructor](#dtor)|Destroys the `array` object.|  
-  
 ### Public Methods  
   
 |Name|Description|  
@@ -73,7 +72,6 @@ friend class array;
 |[array::get_associated_accelerator_view Method](#get_associated_accelerator_view)|Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the [array](array-class.md) object.|  
 |[array::get_cpu_access_type Method](#get_cpu_access_type)|Returns the [access_type](concurrency-namespace-enums-amp.md#access_type) of the array. This method can be accessed only on the CPU.|  
 |[array::get_extent Method](#get_extent)|Returns the [extent](extent-class.md) object of the array.|  
-
 |[array::reinterpret_as Method](#reinterpret_as)|Returns a one-dimensional array that contains all the elements in the `array` object.|  
 |[array::section Method](#section)|Returns a subsection of the [array](array-class.md) object that is at the specified origin and, optionally, that has the specified extent.|  
 |[array::view_as Method](#view_as)|Returns an [array_view](array-view-class.md) object that is constructed from the `array` object.|  

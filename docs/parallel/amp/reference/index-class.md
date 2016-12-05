@@ -76,8 +76,6 @@ class index;
 |Name|Description|  
 |----------|-----------------|  
 |[index::rank Constant](#rank)|Stores the rank of the `index` object.|  
-
-
   
 ## Inheritance Hierarchy  
  `index`  

@@ -81,8 +81,7 @@ class unbounded_buffer : public propagator_block<multi_link_registry<ITarget<   
 |[unbounded_buffer::resume_propagation Method](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
 |[unbounded_buffer::send_message Method](#send_message)|Synchronously passes a message from an `ISource` block to this `unbounded_buffer` messaging block. It is invoked by the `send` method, when called by a source block.|  
 |[unbounded_buffer::supports_anonymous_source Method](#supports_anonymous_source)|Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked. (Overrides [ITarget::supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|  
-  
-## Remarks  
+
  For more information, see [Asynchronous Message Blocks](../asynchronous-message-blocks.md).  
   
 ## Inheritance Hierarchy  

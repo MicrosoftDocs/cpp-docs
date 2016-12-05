@@ -93,8 +93,13 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
 |Name|Description|  
 |----------|-----------------|  
 |[array_view::operator() Operator](#array_view__operator_call)|Returns the value of the element that is specified by the parameter or parameters.|  
+<<<<<<< HEAD
 |[array_view::operator[] Operator](#operator_at)|Returns the element that is specified by the parameters.|  
 |[array_view::operator= Operator](#operator_eq)|Copies the contents of the specified `array_view` object into this one.|  
+=======
+|[array_view::operator[] Operator](#array_view__operator_at_operator)|Returns the element that is specified by the parameters.|  
+|[array_view::operator= Operator](#array_view__operator_eq_operator)|Copies the contents of the specified `array_view` object into this one.|  
+>>>>>>> master
   
 ### Public Constants  
   
@@ -375,7 +380,11 @@ array_view(
  `_Src`  
  A pointer to the source data that will be copied into the new array.  
   
+<<<<<<< HEAD
 ##  <a name="copy_to"></a>  array_view::copy_to Method  
+=======
+##  <a name="array_view__copy_to_method"></a>  array_view::copy_to Method  
+>>>>>>> master
  Copies the contents of the `array_view` object to the specified destination object by calling `copy(*this, dest)`.  
   
 ```  
@@ -559,7 +568,11 @@ static const int rank = _Rank;
 ```  
 void refresh() const restrict(cpu);
 ```  
+<<<<<<< HEAD
 ## <a name="reinterpret_as"></a> array_view::reinterpret_as Method
+=======
+## <a name="array_view__reinterpret_as_method"></a> array_view::reinterpret_as Method
+>>>>>>> master
 Reinterprets the array_view through a one-dimensional array_view, which as an option can have a different value type than the source array_view.  
   
 ### Syntax  
@@ -599,8 +612,13 @@ array_view<float,1> v = a.reinterpret_as<float>();
 assert(v.extent == 3*a.extent);  
 ```  
     
+<<<<<<< HEAD
 ##  <a name="section"></a>  array_view::section Method  
  Returns a subsection of the [array_view](array-view-class.md) object that's at the specified origin and, optionally, that has the specified extent.  
+=======
+##  <a name="array_view__section_method"></a>  array_view::section Method  
+ Returns a subsection of the [array_view](../../../parallel/amp/reference/array-view-class.md) object that's at the specified origin and, optionally, that has the specified extent.  
+>>>>>>> master
   
 ```  
 array_view section(
@@ -693,7 +711,11 @@ void synchronize() const restrict(cpu);
   
 ### Parameters  
  `_Access_type`  
+<<<<<<< HEAD
  The intended [access_type](concurrency-namespace-enums-amp.md#access_type) on the target [accelerator_view](accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
+=======
+ The intended [access_type](concurrency-namespace-enums-amp.md#access_type) on the target [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
+>>>>>>> master
   
 ##  <a name="synchronize_async"></a>  array_view::synchronize_async Method  
  Asynchronously synchronizes any modifications made to the [array_view](array-view-class.md) object back to its source data.  
@@ -707,7 +729,11 @@ concurrency::completion_future synchronize_async() const restrict(cpu);
   
 ### Parameters  
  `_Access_type`  
+<<<<<<< HEAD
  The intended [access_type](concurrency-namespace-enums-amp.md#access_type) on the target [accelerator_view](accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
+=======
+ The intended [access_type](concurrency-namespace-enums-amp.md#access_type) on the target [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
+>>>>>>> master
   
 ### Return Value  
  A future upon which to wait for the operation to complete.  

@@ -105,7 +105,7 @@ runtime_exception(
   
 ### Return Value  
  The `runtime_exception` object.  
-  
+
 ## <a name="dtor"></a>  ~runtime_exception Destructor  
 Destroys the object.  
   

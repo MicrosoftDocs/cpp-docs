@@ -50,6 +50,7 @@ class unsupported_feature : public runtime_exception;
 |Name|Description|  
 |----------|-----------------|  
 |[unsupported_feature::unsupported_feature Constructor](#ctor)|Constructs a new instance of the `unsupported_feature` exception.|  
+
   
 ## Inheritance Hierarchy  
  `exception`  

@@ -39,8 +39,7 @@ Returns a unique file name.
   
 ## Syntax  
   
-```  
-  
+```    
       function GetUniqueFileName(   
    strDirectory,   
    strFileName    
@@ -55,7 +54,7 @@ Returns a unique file name.
  File name to check.  
   
 ## Return Value  
- The file name indicated in `strFileName` if unique; otherwise this function returns `strFileName`, appended with a number from 1 to 9999999, to make it unique. If `strFileName` is not provided, this function returns a unique file name by using [GetTempName Method](jsmthGetTempName).  
+ The file name indicated in `strFileName` if unique; otherwise this function returns `strFileName`, appended with a number from 1 to 9999999, to make it unique. If `strFileName` is not provided, this function returns a unique file name by using the `GetTempName` method.  
   
 ## Remarks  
  Returns a unique file name.  
